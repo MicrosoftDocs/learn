@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-sap-certified-offerings
 metadata:
   title: Deploy SAP certified offerings on Azure
   description: "Azure provides a scalable, compliant, and enterprise-proven platform for a range of SAP workloads. In this module, you explore the platform compliance criteria that is stipulated by SAP before deploying SAP solutions in Azure, and look at the different options for deploying SAP in Azure."
-  ms.date: 01/13/2020
+  ms.date: 08/29/2020
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial

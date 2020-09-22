@@ -2208,933 +2208,1031 @@
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-graphlab/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-graphlab/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-graphlab/1-data-structure-graph-flow.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-graphlab/1-data-structure-graph-flow",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-graphlab/2-architecture-model.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-graphlab/2-architecture-model",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-graphlab/3-program-model.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-graphlab/3-program-model",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-graphlab/4-computation-model.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-graphlab/4-computation-model",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-graphlab/5-fault-tolerance.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-graphlab/5-fault-tolerance",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-graphlab/6-example.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-graphlab/6-example",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-graphlab/7-compare-engines.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-graphlab/7-compare-engines",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-graphlab/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-graphlab/8-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-graphlab/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-graphlab/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-mapreduce/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-mapreduce/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-mapreduce/1-programming-model.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-mapreduce/1-programming-model",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-mapreduce/2-data-structure-flow.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-mapreduce/2-data-structure-flow",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-mapreduce/3-examples.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-mapreduce/3-examples",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-mapreduce/4-computation-architecture-model.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-mapreduce/4-computation-architecture-model",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-mapreduce/5-job-task-schedule.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-mapreduce/5-job-task-schedule",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-mapreduce/6-fault-tolerance.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-mapreduce/6-fault-tolerance",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-mapreduce/7-yarn.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-mapreduce/7-yarn",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-mapreduce/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-mapreduce/8-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-mapreduce/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-mapreduce/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-spark/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-spark/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-spark/1-overview.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-spark/1-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-spark/2-resilient-distributed-datasets.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-spark/2-resilient-distributed-datasets",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-spark/3-lineage-fault-tolerance-recovery.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-spark/3-lineage-fault-tolerance-recovery",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-spark/4-programming.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-spark/4-programming",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-spark/5-spark-ecosystem.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-spark/5-spark-ecosystem",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-spark/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-spark/6-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-analytics-engines-spark/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-analytics-engines-spark/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-build-apps-cloud/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-build-apps-cloud/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-build-apps-cloud/1-program-cloud.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-build-apps-cloud/1-program-cloud",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-build-apps-cloud/2-deployments.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-build-apps-cloud/2-deployments",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-build-apps-cloud/3-manage-failures.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-build-apps-cloud/3-manage-failures",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-build-apps-cloud/4-load-balance.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-build-apps-cloud/4-load-balance",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-build-apps-cloud/5-scale.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-build-apps-cloud/5-scale",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-build-apps-cloud/6-tail-latency.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-build-apps-cloud/6-tail-latency",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-build-apps-cloud/7-economics.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-build-apps-cloud/7-economics",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-build-apps-cloud/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-build-apps-cloud/8-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-build-apps-cloud/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-build-apps-cloud/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-distributed-file-systems/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-case-study-distributed-file-systems/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-distributed-file-systems/1-distributed-file-systems.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-case-study-distributed-file-systems/1-distributed-file-systems",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-distributed-file-systems/2-hadoop.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-case-study-distributed-file-systems/2-hadoop",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-distributed-file-systems/3-ceph.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-case-study-distributed-file-systems/3-ceph",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-distributed-file-systems/4-hadoop-versus-ceph.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-case-study-distributed-file-systems/4-hadoop-versus-ceph",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-distributed-file-systems/5-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-case-study-distributed-file-systems/5-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-distributed-file-systems/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-case-study-distributed-file-systems/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-nosql-databases/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-case-study-nosql-databases/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-nosql-databases/1-apache-hbase.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-case-study-nosql-databases/1-apache-hbase",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-nosql-databases/2-mongodb.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-case-study-nosql-databases/2-mongodb",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-nosql-databases/3-apache-cassandra.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-case-study-nosql-databases/3-apache-cassandra",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-nosql-databases/5-openstack-swift.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-case-study-nosql-databases/5-openstack-swift",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-nosql-databases/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-case-study-nosql-databases/6-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-nosql-databases/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-case-study-nosql-databases/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-computing-overview/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-computing-overview/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-computing-overview/1-define-cloud-computing.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-computing-overview/1-define-cloud-computing",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-computing-overview/2-before-cloud-computing.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-computing-overview/2-before-cloud-computing",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-computing-overview/3-evolution.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-computing-overview/3-evolution",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-computing-overview/4-building-blocks.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-computing-overview/4-building-blocks",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-computing-overview/5-types.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-computing-overview/5-types",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-computing-overview/6-major-providers.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-computing-overview/6-major-providers",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-computing-overview/7-use-cases.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-computing-overview/7-use-cases",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-computing-overview/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-computing-overview/8-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-computing-overview/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-computing-overview/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-economics/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-economics/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-economics/1-pros-cons.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-economics/1-pros-cons",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-economics/2-economics-users.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-economics/2-economics-users",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-economics/3-economics-providers.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-economics/3-economics-providers",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-economics/4-sla.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-economics/4-sla",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-economics/5-security-threats.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-economics/5-security-threats",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-economics/6-security-control-audit.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-economics/6-security-control-audit",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-economics/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-economics/7-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-economics/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-economics/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-storage/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-storage/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-storage/1-data-overview.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-storage/1-data-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-storage/10-relational-databases.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-storage/10-relational-databases",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-storage/11-nosql-databases.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-storage/11-nosql-databases",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-storage/12-newsql-databases.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-storage/12-newsql-databases",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-storage/13-object-storage-cloud-service.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-storage/13-object-storage-cloud-service",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-storage/14-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-storage/14-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-storage/2-apps-requirements.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-storage/2-apps-requirements",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-storage/3-storage-devices.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-storage/3-storage-devices",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-storage/4-storage-abstractions.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-storage/4-storage-abstractions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-storage/5-local-file-systems.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-storage/5-local-file-systems",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-storage/6-distributed-file-systems.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-storage/6-distributed-file-systems",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-storage/7-databases.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-storage/7-databases",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-storage/8-database-schema-scalability.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-storage/8-database-schema-scalability",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-storage/9-database-consistency-cap-theorem.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-storage/9-database-consistency-cap-theorem",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-cloud-storage/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-cloud-storage/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-cloud-service/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-cloud-service/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-cloud-service/1-middleware.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-cloud-service/1-middleware",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-cloud-service/2-provision-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-cloud-service/2-provision-resources",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-cloud-service/3-meter-monitor-cloud-services.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-cloud-service/3-meter-monitor-cloud-services",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-cloud-service/4-orchestration.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-cloud-service/4-orchestration",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-cloud-service/5-case-studies.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-cloud-service/5-case-studies",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-cloud-service/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-cloud-service/6-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-cloud-service/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-cloud-service/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-design/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-design/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-design/1-information-technology-components.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-design/1-information-technology-components",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-design/2-infrastructure.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-design/2-infrastructure",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-design/3-geo-location.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-design/3-geo-location",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-design/4-costs.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-design/4-costs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-design/5-power-efficiency.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-design/5-power-efficiency",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-design/6-redundancy-fault-tolerance.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-design/6-redundancy-fault-tolerance",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-design/7-reliability-metrics.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-design/7-reliability-metrics",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-design/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-design/8-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-center-design/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-center-design/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-centers/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-centers/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-centers/1-data-center-fundamentals.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-centers/1-data-center-fundamentals",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-centers/2-data-center-history.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-centers/2-data-center-history",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-centers/3-data-center-growth.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-centers/3-data-center-growth",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-centers/4-data-center-design.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-centers/4-data-center-design",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-centers/5-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-centers/5-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-data-centers/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-data-centers/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-distributed-programming-introduction/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-distributed-programming-introduction/1-taxonomy-programs.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/1-taxonomy-programs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-distributed-programming-introduction/10-challenges-heterogeneity.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/10-challenges-heterogeneity",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-distributed-programming-introduction/11-challenges-synchronization.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/11-challenges-synchronization
-",
-      "redirect_document_id": true
+      "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/11-challenges-synchronization",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-distributed-programming-introduction/12-challenges-fault-tolerance.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/12-challenges-fault-tolerance
-",
-      "redirect_document_id": true
+      "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/12-challenges-fault-tolerance",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-distributed-programming-introduction/13-challenges-schedules.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/13-challenges-schedules",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-distributed-programming-introduction/14-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/14-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-distributed-programming-introduction/2-distributed-programs.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/2-distributed-programs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-distributed-programming-introduction/3-program-cloud.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/3-program-cloud",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-distributed-programming-introduction/4-program-cloud-models.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/4-program-cloud-models",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-distributed-programming-introduction/5-program-cloud-synchronization.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/5-program-cloud-synchronization",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-distributed-programming-introduction/6-data-graph-parallelism.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/6-data-graph-parallelism",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-distributed-programming-introduction/7-program-cloud-symmetry.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/7-program-cloud-symmetry",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-distributed-programming-introduction/8-challenges-scalability.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/8-challenges-scalability",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-distributed-programming-introduction/9-challenges-communication.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/9-challenges-communication",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-distributed-programming-introduction/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-distributed-programming-introduction/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-message-queues-streams/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-message-queues-streams/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-message-queues-streams/1-message-queues.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-message-queues-streams/1-message-queues",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-message-queues-streams/2-message-queues-case-study.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-message-queues-streams/2-message-queues-case-study",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-message-queues-streams/3-stream-processing-systems.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-message-queues-streams/3-stream-processing-systems",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-message-queues-streams/4-stream-case-study.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-message-queues-streams/4-stream-case-study",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-message-queues-streams/5-lambda-kappa-architectures.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-message-queues-streams/5-lambda-kappa-architectures",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-message-queues-streams/6-examples.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-message-queues-streams/6-examples",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-message-queues-streams/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-message-queues-streams/7-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-message-queues-streams/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-message-queues-streams/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-share-cloud-resources/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-share-cloud-resources/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-share-cloud-resources/1-overview.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-share-cloud-resources/1-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-share-cloud-resources/2-benefits.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-share-cloud-resources/2-benefits",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-share-cloud-resources/3-virtualization-versus-os.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-share-cloud-resources/3-virtualization-versus-os",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-share-cloud-resources/4-abstractions.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-share-cloud-resources/4-abstractions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-share-cloud-resources/5-interfaces.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-share-cloud-resources/5-interfaces",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-share-cloud-resources/6-resource-sharing-basics.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-share-cloud-resources/6-resource-sharing-basics",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-share-cloud-resources/7-resource-sharing-multiprocessor.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-share-cloud-resources/7-resource-sharing-multiprocessor",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-share-cloud-resources/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-share-cloud-resources/8-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-share-cloud-resources/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-share-cloud-resources/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-storage-network-virtualization/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-storage-network-virtualization/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-storage-network-virtualization/1-software-defined-data-centers.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-storage-network-virtualization/1-software-defined-data-centers",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-storage-network-virtualization/2-data-center-networks.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-storage-network-virtualization/2-data-center-networks",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-storage-network-virtualization/3-software-defined-data-centers-networking.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-storage-network-virtualization/3-software-defined-data-centers-networking",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-storage-network-virtualization/4-storage.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-storage-network-virtualization/4-storage",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-storage-network-virtualization/5-software-defined-storage.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-storage-network-virtualization/5-software-defined-storage",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-storage-network-virtualization/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-storage-network-virtualization/6-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-storage-network-virtualization/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-storage-network-virtualization/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization-developer/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization-developer/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization-developer/1-virtualization.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization-developer/1-virtualization",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization-developer/2-virtual-machine-type.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization-developer/2-virtual-machine-type",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization-developer/3-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization-developer/3-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization-developer/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization-developer/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization-case-studies/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization-case-studies/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization-case-studies/1-taxonomy.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization-case-studies/1-taxonomy",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization-case-studies/2-elastic-compute.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization-case-studies/2-elastic-compute",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization-case-studies/3-elastic-compute-properties.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization-case-studies/3-elastic-compute-properties",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization-case-studies/4-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization-case-studies/4-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization-case-studies/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization-case-studies/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-computing-power/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-computing-power/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-computing-power/1-instructions.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-computing-power/1-instructions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-computing-power/2-full-virtualization.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-computing-power/2-full-virtualization",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-computing-power/3-emulation.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-computing-power/3-emulation",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-computing-power/4-virtual-cpu.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-computing-power/4-virtual-cpu",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-computing-power/5-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-computing-power/5-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-computing-power/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-computing-power/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-input-output/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-input-output/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-input-output/1-input-output-basics.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-input-output/1-input-output-basics",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-input-output/2-input-output-devices.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-input-output/2-input-output-devices",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-input-output/3-xen-virtualization.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-input-output/3-xen-virtualization",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-input-output/4-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-input-output/4-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-input-output/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-input-output/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-memory/0-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-memory/0-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-memory/1-one-level-page-map.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-memory/1-one-level-page-map",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-memory/2-two-level-page-map.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-memory/2-two-level-page-map",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-memory/3-memory-over-commit.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-memory/3-memory-over-commit",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-memory/4-reclaim-memory.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-memory/4-reclaim-memory",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-memory/5-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-memory/5-summary",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-memory/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-memory/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/3-analyze-model-fairness-with-fairlearn.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/3-analyze-model-fairness-with-fairlearn",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/2-consider-model-fairness.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/2-consider-model-fairness",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/5-exercise-use-fairlearn.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/5-exercise-use-fairlearn",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/6-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/4-mitigate-with-fairlearn.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/4-mitigate-with-fairlearn",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/7-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-luis/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-model-with-language-understanding",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-luis/3-exercise-create-luis-application.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-model-with-language-understanding/3-exercise-create-language-understanding-application",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-luis/2-get-started.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-model-with-language-understanding/2-get-started",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-luis/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-model-with-language-understanding/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-luis/3a-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-model-with-language-understanding/3a-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-luis/4-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-model-with-language-understanding/4-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/build-chat-bot-azure-portal/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-chat-bot-azure-portal/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/build-chat-bot-azure-portal/3-create-basic-bot.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-chat-bot-azure-portal/3-create-basic-bot",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/build-chat-bot-azure-portal/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-chat-bot-azure-portal/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/build-chat-bot-azure-portal/2-introduction-bot-service.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-chat-bot-azure-portal/2-introduction-bot-service",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/build-chat-bot-azure-portal/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-chat-bot-azure-portal/4-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/build-chat-bot-azure-portal/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-chat-bot-azure-portal/5-summary",
       "redirect_document_id": true
     }
   ]

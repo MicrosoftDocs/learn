@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-python-nasa.3-artemis-continuation
+metadata:
+  title: Understand continued research goals of space exploration
+  description: Continue to learn about the Artemis Program.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand continued research goals of space exploration
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-artemis-continuation.md)]

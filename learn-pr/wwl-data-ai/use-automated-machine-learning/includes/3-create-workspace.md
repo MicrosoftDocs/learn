@@ -1,4 +1,4 @@
-Data scientists expend a lot of effort exploring and pre-processing data, and trying various types of model-training algorithm to produce accurate models, which is time consuming, and often makes inefficient use of expensive compute hardware.
+Data scientists expend a lot of effort exploring and pre-processing data, and trying various types of model-training algorithms to produce accurate models, which is time consuming, and often makes inefficient use of expensive compute hardware.
 
 Azure Machine Learning is a cloud-based platform for building and operating machine learning solutions in Azure. It includes a wide range of features and capabilities that help data scientists prepare data, train models, publish predictive services, and monitor their usage. Most importantly, it helps data scientists increase their efficiency by automating many of the time-consuming tasks associated with training models; and it enables them to use cloud-based compute resources that scale effectively to handle large volumes of data while incurring costs only when actually used.
 
@@ -6,7 +6,10 @@ Azure Machine Learning is a cloud-based platform for building and operating mach
 
 To use Azure Machine Learning, you create a *workspace* in your Azure subscription. You can then use this workspace to manage data, compute resources, code, models, and other artifacts related to your machine learning workloads.
 
-Follow these steps to create a workspace:
+> [!NOTE]
+> This module is one of many that make use of an Azure Machine Learning workspace. If you are completing this module in preparation for the [Azure AI Fundamentals](https://docs.microsoft.com/learn/certifications/azure-ai-fundamentals?azure-portal=true) or [Azure Data Scientist](https://docs.microsoft.com/learn/certifications/azure-data-scientist?azure-portal=true) certification, consider creating the workspace once and reusing it in other modules. After completing each module, be sure to follow the **Clean Up** instructions at the end of the module to stop compute resources.
+
+If you don't already have one, follow these steps to create a workspace:
 
 1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using your Microsoft credentials.
 2. Select **&#65291;Create a resource**, search for *Machine Learning*, and create a new **Machine Learning** resource the following settings:

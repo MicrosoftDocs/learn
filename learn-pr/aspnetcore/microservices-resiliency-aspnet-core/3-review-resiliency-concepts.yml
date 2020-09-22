@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-resiliency-aspnet-core.3-review-resiliency-concepts
+metadata:
+  title: Review resiliency concepts
+  description: Learn about resiliency in microservices apps.
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 08/04/2020
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Review resiliency concepts
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-review-resiliency-concepts.md)]

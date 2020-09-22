@@ -1,4 +1,4 @@
-In this exercise, you will make use of the Speech Service you created earlier.  This exercise does not require any configuration on your local computer for a development environment as we will use Visual Studio Code Codespaces.  The steps will detail what is required to get the online environment configured correctly, tasks that will be required for each exercise to work correctly.   All resources are stored in a GitHub repo that you will link to during the exercise steps.
+In this exercise, you will make use of the Speech Service you created earlier.  This exercise does not require any configuration on your local computer for a development environment as we will use Visual Studio Codespaces.  The steps will detail what is required to get the online environment configured correctly, tasks that will be required for each exercise to work correctly.   All resources are stored in a GitHub repo that you will link to during the exercise steps.
 
 ::: zone pivot="python"
 

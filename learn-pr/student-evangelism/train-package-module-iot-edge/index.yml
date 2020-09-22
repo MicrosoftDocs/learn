@@ -16,9 +16,9 @@ abstract: |
   - Generate simulated data from an edge device
   - Verify data generated from the edge device
   
-  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 prerequisites: |
-  - Ability to use IoT Hub Azure in
+  - Ability to use IoT Hub Azure
   - Ability to use Azure Cloud Shell
   - Experience creating and managing resources using the Azure portal or Azure Cloud Shell at the beginner level
   - IoT Hub

@@ -164,7 +164,7 @@ Typical characteristics of SaaS include:
 
 Web mail is one of the early examples of SaaS. Web mail enables users with a browser and an Internet connection to access their e-mail anywhere at any time. Offerings from Hotmail, Yahoo!, and Gmail are extremely popular. These services are based on the \"freemium\" model, wherein basic services are free, and more advanced features are available with a subscription. Furthermore, providers earn revenue mainly from advertisements that are displayed to the users as they use the service.
 
-Another popular example of SaaS is online office suites such as Google Drive and Microsoft Office 365, which allow users to create, edit, and share documents online. Google utilizes the freemium model for individual users. Microsoft has a charge model based on the features required and the number of users per month.
+Another popular example of SaaS is online office suites such as Google Drive and Microsoft 365, which allow users to create, edit, and share documents online. Google utilizes the freemium model for individual users. Microsoft has a charge model based on the features required and the number of users per month.
 
 SaaS services aren't always built to serve end users directly by offering Web UIs. For example, Azure Stream Analytics and its AWS analog, Amazon Kinesis Analytics, ingest data streaming from apps or IoT devices and permit developers to extract information from the data streams using SQL queries. They are frequently used to compose larger, more sophisticated end-to-end solutions by joining them to other SaaS services.
 
