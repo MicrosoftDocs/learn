@@ -9,15 +9,14 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Discuss Azure fundamental concepts
-summary: Are you interested in the cloud, but aren't sure what it can do for you? In this module, you'll learn about the advantages of using cloud computing services, and you'll learn to differentiate between the categories and types of cloud computing.
+summary: Are you interested in the cloud, but aren't sure what it can do for you? In this module, you'll learn about the advantages of using cloud computing services, and you'll learn to differentiate between and among the categories and types of cloud computing.
 abstract: | 
   Upon completion of this module, you'll be able to:
   - Identify the benefits and considerations of using cloud services
-  - Describe the differences between categories of cloud services
+  - Describe the differences between and among categories of cloud services
   - Describe the differences between types of cloud computing
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology
-  - You should be familiar with cloud computing is helpful, but isn't necessary
 iconUrl: /learn/achievements/fundamental-azure-concepts.svg
 levels:
 - beginner
