@@ -23,7 +23,7 @@ prerequisites: |
   You will need basic knowledge of the principles of quantum computing: superposition, interference, entanglement, and measurement.
 
   You will also need some familiarity with Q# and the Quantum Development Kit.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/quantum/solve-graph-coloring-problems-grovers-search.svg
 levels:
 - intermediate
 roles:
