@@ -12,7 +12,7 @@ One of the key properties of quantum computing is the ability to perform calcula
 > 
 > When we use an algorithm described in terms of quantum oracles to solve a specific problem, we need to implement the quantum oracle for this problem. In the case of Grover's algorithm, the oracle computes the value of the function $f(x)$ that we're trying to invert.
 
-There are two most common ways to encode the effects of computing a function for a superposition state. 
+There are two common ways to encode the effects of computing a function for a superposition state - using a *phase oracle*, or using a *marking oracle*. 
 
 Let's say that we want to implement a quantum operator $U$ that computes a function $f(x)$, which takes a single bit as an input and produces a single bit as an output. We start with a superposition state $a_0 |0\rangle + a_1 |1\rangle$.
 
