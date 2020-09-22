@@ -1,10 +1,10 @@
 Our goal in this module was to help Tailwind Traders explore several AI service offerings from Azure that it can apply to various business opportunities.
 
-We identified a few product options and their capabilities, including Azure Bot Service, Azure Cognitive Services, and Azure Machine Learning. We analyzed certain decision criteria to help us choose one option over another depending on the scenario. Then we applied those decision criteria to three  Tailwind Traders initiatives, helping the company find the best service option for each scenario.
+You identified a few product options and their capabilities, including Azure Bot Service, Azure Cognitive Services, and Azure Machine Learning. You analyzed certain decision criteria to help yourself choose one option over another depending on the scenario. Then you applied those decision criteria to three Tailwind Traders initiatives, helping the company find the best service option for each scenario.
 
 Without AI services, Tailwind Traders would spend more time and effort on manual tasks, respond to customers less quickly, offer weak product recommendations, and be unable to fully support customers who speak languages other than English.
 
-AI is one focus that could transform every area of a business, limited only by the creativity and imagination of the organization.
+AI is one focus that could transform every area of a business. Such transformation is limited only by the creativity and imagination of the organization.
 
 ## Learn more
 
