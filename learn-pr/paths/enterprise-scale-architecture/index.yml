@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create an enterprise-scale architecture in Azure
-summary: Learn how Microsoft Cloud Adoption Framework for Azure enterprise-scale landing zones can help your organization to accelerate cloud adoption from months to weeks. We will explore how to create Azure landing zone architecture at enterprise-scale. Learn about landing zone critical desing areas to build and operationalize your Azure enviorment.
+summary: Learn how Microsoft Cloud Adoption Framework for Azure enterprise-scale landing zones can help your organization to accelerate cloud adoption from months to weeks. We will explore how to create Azure landing zone architecture at enterprise-scale. Learn about landing zone critical design areas to build and operationalize your Azure environment.
 prerequisites: None
 iconUrl: /learn/achievements/generic-trophy.svg
 levels: 
