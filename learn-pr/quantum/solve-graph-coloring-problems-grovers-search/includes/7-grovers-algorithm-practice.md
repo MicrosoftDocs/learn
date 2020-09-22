@@ -10,7 +10,7 @@ For example, database searches are frequently mentioned as a potential applicati
 
 Another example is the integer factorization problem. While no efficient classical algorithm is known, Shor's algorithm offers a better quantum approach.
 
-This observation gives us the first part of the answer; the problems that can benefit from Grover's algorithm are the ones for which we can easily check whether the given $x$ is the answer, but we can't easily exploit the problem structure or parallel processing to find the answer.
+This observation gives us the first part of the answer; the problems that benefit from Grover's algorithm are the ones for which we can easily check whether the given $x$ is the answer, but we can't easily exploit the problem structure or parallel processing to find the answer.
 
 ## Problems that allow efficient oracle implementation
 
