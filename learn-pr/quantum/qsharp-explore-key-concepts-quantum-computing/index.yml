@@ -28,7 +28,7 @@ prerequisites: |
 
   - [LinearAlgebra](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/LinearAlgebra?azure-portal=true)
   - [ComplexArithmetic](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ComplexArithmetic?azure-portal=true)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/quantum/qsharp-explore-key-concepts-quantum-computing.svg
 levels:
 - beginner
 roles:
