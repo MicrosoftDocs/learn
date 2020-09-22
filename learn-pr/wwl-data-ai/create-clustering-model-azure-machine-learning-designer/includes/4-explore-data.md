@@ -49,7 +49,7 @@ To get started with Azure machine Learning designer, first you must create a pip
 
     - The dataset includes the following columns:
         - **CulmenLength**: Length of the penguin's bill in millimeters.
-        - **CulmenDepth**: Length of the penguin's bill in millimeters.
+        - **CulmenDepth**: Depth of the penguin's bill in millimeters.
         - **FlipperLength**: Length of the penguin's flipper in millimeters.
         - **BodyMass**: Weight of the penguin in grams.
         - **Species**: Species indicator (0:"Amelie", 1:"Gentoo", 2:"Chinstrap")
