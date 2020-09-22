@@ -31,11 +31,11 @@ For example, $\ket{0}$ and $\ket{1}$ are two possible states of a qubit. A qubit
 > [!NOTE]
 > The concept of *measurement* is interpreted in many ways in
 > quantum mechanics, but the details are beyond the scope of this module. For
-> quantum computing, you don't have to worry about the interpretations. Here we will understand 
+> quantum computing, you don't have to worry about it. Here we will understand 
 > measurement to be the informal idea of "observing" a qubit, which immediately
 > collapses the quantum superposition to one of the two basic states that correspond to classical values 0 and 1. 
 >
->To learn more about the historical discussion of measurement in quantum mechanics, see the
+> To learn more about the historical discussion of measurement in quantum mechanics, see the
 > Wikipedia article about the [Measurement
 > problem](https://wikipedia.org/wiki/Measurement_problem).
 
@@ -66,9 +66,9 @@ superposition of $\ket{\psi_1}$ and $\ket{\psi_2}$. Here, $a$ and $b$ are the
 probability amplitudes of $\ket{\psi_1}$ and $\ket{\psi_2}$, respectively.
 Remember that in the module [Create your first Q# program by using the Quantum
 Development
-Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true),
-you used superposition to create a quantum random number generator. You used the operator `H` to put a qubit in the state $\ket{0}$ into superposition.
-Mathematically, the equation is $$  H \ket{0} = \frac1{\sqrt2} \ket{0} +
+Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true)
+you used superposition to create a quantum random number generator. You used the operation `H` to put a qubit in the state $\ket{0}$ into superposition.
+Mathematically, this equation is $$  H \ket{0} = \frac1{\sqrt2} \ket{0} +
 \frac1{\sqrt2} \ket{1}.$$
 
 Linearity is a fundamental property of
