@@ -14,7 +14,7 @@ Designing an automated smoke-testing strategy provides many benefits.
 - Automated smoke testing avoids expensive rework for more sophisticated tests
 - optimizing the time for your developer and the test teams
 
-To implement this solution, you'll create a smoke test as a subset of your main functionality. The test should be self-scoring and automated. It should be capable of running on virtual IoT devices. Also, the test should incorporate the principles of DevOps (continuous integration and continuous delivery) for IoT Edge devices.
+To implement this solution, you'll create a smoke test as a subset of your main functionality. The test should be self-scoring, automated and able to run on virtual IoT devices. Also, the test should incorporate the principles of DevOps (continuous integration and continuous delivery) for IoT Edge devices.
 
 ## Testing solution components
 
@@ -32,7 +32,7 @@ You'll use the following components in the overall design:
 
 ## Test script requirements
 
-To implement this solution, you'll create a release pipeline that deploys to QA devices, and smoke tests the edge runtime in a containerized device. The design will run an instance of [azure-iot-edge-device-container](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Ftoolboc%2Fazure-iot-edge-device-container&data=02|01|xshi%40microsoft.com|0102337c9ada4f3ef10d08d812fcc9c1|72f988bf86f141af91ab2d7cd011db47|1|0|637280224216554921&sdata=dpn9cmudy%2FqQT6ifznms7KplLrUDrwIYbulqrTB7IdE%3D&reserved=0), which is configured as a QA device. The tests will probe the IoT hub to ensure that the QA device receives the desired deployment configuration and can run all configured modules successfully.
+To implement this solution, you'll create a release pipeline that deploys to QA devices, and smoke tests the edge runtime in a containerized device. The design will run an instance of [azure-iot-edge-device-container](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Ftoolboc%2Fazure-iot-edge-device-container&data=02|01|xshi%40microsoft.com|0102337c9ada4f3ef10d08d812fcc9c1|72f988bf86f141af91ab2d7cd011db47|1|0|637280224216554921&sdata=dpn9cmudy%2FqQT6ifznms7KplLrUDrwIYbulqrTB7IdE%3D&reserved=0), which is configured as a QA device. The tests will probe the IoT hub to ensure the QA device receives the correct deployment configuration and can run all configured modules successfully.
 
 The script for the smoke test implements the following:
 
@@ -49,5 +49,5 @@ The steps involved are:
 - Set up Azure DevOps Services
 - Set up continuous integration
 - Create a release pipeline with a smoke test
-- Add a scalable integration test to a release pipeline
+- Add integration tests to a release pipeline
 - Monitor devices with Application Insights
