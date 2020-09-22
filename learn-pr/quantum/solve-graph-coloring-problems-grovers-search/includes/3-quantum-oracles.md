@@ -5,6 +5,13 @@ Now that we understand the classical problem that we're trying to solve, let's s
 
 One of the key properties of quantum computing is the ability to perform calculations not only on individual inputs but also on superpositions of inputs. When we work with a search problem and a specific function $f(x)$ that describes the instance of a search problem we're trying to solve, we need to be able to compute this function on a superposition of inputs as well.
 
+> [!NOTE]
+> A *quantum oracle* is an "opaque box" operation that is used as input to another algorithm (in this case, Grover's algorithm, but the term "oracle" is broadly used in classical computing as well). 
+> Some quantum algorithms are described in terms of quantum oracles to emphasize that they can be applied to a broad class of problems, as long as the problem can be implemented efficiently as a quantum oracle. 
+> For such algorithms, their runtime analysis is usually in terms of the number of oracle calls (that is, function evaluations), rather than in terms of primitive operations done by the algorithm.
+> 
+> When we use an algorithm described in terms of quantum oracles to solve a specific problem, we need to implement the quantum oracle for this problem. In the case of Grover's algorithm, the oracle computes the value of the function $f(x)$ that we're trying to invert.
+
 There are two most common ways to encode the effects of computing a function for a superposition state. 
 
 Let's say that we want to implement a quantum operator $U$ that computes a function $f(x)$, which takes a single bit as an input and produces a single bit as an output. We start with a superposition state $a_0 |0\rangle + a_1 |1\rangle$.
@@ -32,14 +39,6 @@ The best way to represent classical computations in a quantum algorithm depends 
 * The second approach, encoding the classical function values in the states of extra qubits, makes implementing the classical computations easier.
 * In practice, we'll often see a marking oracle used to implement the classical computations, and then converted to a phase oracle as the last step before the operation is plugged into the rest of the quantum algorithm.
 
-## Quantum oracles
-
-A quantum oracle is an "opaque box" operation that is used as input to another algorithm (in this case, Grover's algorithm, but the term "oracle" is broadly used in classical computing as well). 
-Some quantum algorithms are described in terms of quantum oracles to emphasize that they can be applied to a broad class of problems, as long as the problem can be implemented efficiently as a quantum oracle. 
-For such algorithms, their runtime analysis is usually in terms of the number of oracle calls (that is, function evaluations), rather than in terms of primitive operations done by the algorithm.
-
-When we use an algorithm described in terms of quantum oracles to solve a specific problem, we need to implement the quantum oracle for this problem. In the case of Grover's algorithm, the oracle computes the value of the function $f(x)$ that we're trying to invert.
-
-A branch of classical computer science called *reversible computing* gives us the techniques we need to implement classical computations on a quantum computer, as well. In the final unit of this module, we return to the question of implementing quantum oracles efficiently when we discuss the types of problems that can benefit from Grover's algorithm.
+A branch of classical computer science called *reversible computing* gives us the techniques we need to implement classical computations on a quantum computer. In the final unit of this module, we return to the question of implementing quantum oracles efficiently when we discuss the types of problems that can benefit from Grover's algorithm.
 
 In the next unit, you'll see how to implement the graph coloring example problem as a quantum oracle using Q#.

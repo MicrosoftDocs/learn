@@ -41,7 +41,7 @@ The structure of our example graph can be represented as follows:
 We will describe our graph coloring by an array of `nVertices` colors. 
 For our example, we will look for a four-coloring of the graph - a coloring that uses at most four colors, encoded with integers 0 through 3. 
 
-We need to represent our coloring in a bit string, so we'll use a bit string of length 2 * `nVertices`, with the first pair of bits encoding the color of vertex 0, the second pair - the color of vertex 1, and so on.
+We need to represent our coloring in a bit string, so we'll use a bit string of length 2 * `nVertices`, with the first pair of bits encoding the color of vertex 0, the second pair - the color of vertex 1, and so on. We'll store our bits as Boolean values, with 0 and 1 bits encoded as `false` and `true`, respectively. The pair of bits will encode an integer color index using little-endian notation, this is, an integer 1 is encoded as 10, with the least significant bit stored first.
 
 Here is how the coloring of our example graph will be encoded and interpreted:
 
@@ -90,6 +90,8 @@ Here is the Q# code that implements this check and uses it to compare two qubit 
 
 :::code language="qsharp" source="code/4-program-3.qs":::
 
+The `within ... apply` statement implements a common pattern in quantum computing: apply the statements of `within` and `apply` blocks, and then "undo" the `within` block. We use it to make sure that applying our check doesn't have unexpected effect on the input qubits.
+
 > [!NOTE]
 > The `DumpRegister` function is similar to the `DumpMachine` function that has been used in previous modules. However, it prints the information about the state of a *subset* of qubits, rather than all the qubits used by the program. 
 > In the current implementation of the full-state simulator, `DumpRegister` can only be used if that register is not entangled with the rest of the qubits.
@@ -121,7 +123,7 @@ The state of qubits c1 and target after the equality check:
 ```
 
 > [!NOTE]
-> As a reminder, the indices in the `DumpMachine`/`DumpRegister` output are encoded in little endian. Hence, the index `|1❭` corresponds to bit string `100`, with the least significant bit stored first.
+> As a reminder, the indices in the `DumpMachine`/`DumpRegister` output are encoded in little-endian. Hence, the index `|1❭` corresponds to bit string `100`, with the least significant bit stored first.
 
 We see that in the beginning the state of the system is 
 
@@ -169,9 +171,9 @@ The coloring is valid
 * Modify the code to run on superpositions of inputs and see what happens. 
 
 
-### Step 3. Convert amplitude encoding into phase encoding
+### Step 3. Convert the marking oracle into the phase oracle
 
-Now, we have an operation that can mark the qubit states that represent valid colorings in the state of an extra qubit. How can we use it to implement another operation that would mark such states using their phases?
+Now, we have a marking oracle, that is, an operation that marks the qubit states that represent valid colorings in the state of an extra qubit. How can we use it to implement a phase oracle, that is, another operation that would mark such states using their phases?
 
 We can do it using the so-called "phase kickback trick": 
 
