@@ -1,4 +1,4 @@
-In the getting started module, we shared the narrative for Tailwind Traders. The central operations/infrastructure team at Tailwind Traders is experienced at managing their existing datacenters. The ongoing project to migrate two of their datacenters to Azure is already exposing a few critical learning curves that their current skill sets can't address.
+In the getting started module, we shared the narrative for Tailwind Traders. The central operations/infrastructure team at Tailwind Traders is experienced at managing their existing datacenters. The ongoing project to migrate two of their datacenters to Azure is already exposing a few critical learning curves that their current skillsets can't address.
 
 ## Operations
 
