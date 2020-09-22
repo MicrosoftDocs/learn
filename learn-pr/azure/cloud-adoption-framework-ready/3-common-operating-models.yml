@@ -22,7 +22,7 @@ quiz:
       explanation: Since all production operations are supported by a centralized team, this isn't an operating model that Tailwind could support.
     - content: Centralized operations
       isCorrect: true
-      explanation: .
+      explanation: Correct!
     - content: Enterprise operations
       isCorrect: false
       explanation: See the last question in the knowledge check to understand why enterprise operations isn't currently a good fit for Tailwind Traders.
