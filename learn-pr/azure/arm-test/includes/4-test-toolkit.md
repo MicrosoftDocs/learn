@@ -62,7 +62,7 @@ The parameter **-File** is used to run a specific file and the parameter **-Test
 
 The arguments can be used in the following ways:
 
-- **Run tests on a single file**. You might want to only run tests on a single file you are currently working on. To test out a single file type the following command in the terminal:
+- **Run tests on a single file**. You might want to only run tests on a single file you are currently working on. To test out a single file run the following command in the terminal:
 
    ```powershell
    Test-AzTemplate -TemplatePath path/to/starter/template -File cdn.json

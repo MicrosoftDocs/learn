@@ -75,7 +75,7 @@ You will be able to deploy your ARM Template by carrying out the following steps
 
 Now that you have setup your subscription in the Visual Studio Code (Visual Studio Code) terminal, you are ready to deploy the ARM template to Azure. The ARM template doesn't have any resources yet, so you won't see any resources being created. However, you'll see a successful deployment.
 
-1. **Deploy the template**. Type the following command in the terminal:
+1. **Deploy the template**. Run the following command in the terminal:
 
     ```azurecli
     az deployment group create \

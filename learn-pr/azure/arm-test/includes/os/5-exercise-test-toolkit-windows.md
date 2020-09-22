@@ -1,4 +1,4 @@
-Install PowerShell Core on Windows by following the instructions in this [link](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows)
+1. **Install PowerShell**. Follow the instructions in [Installing PowerShell on Windows](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows)
 
 ### Download the Test toolkit
 
@@ -10,7 +10,7 @@ The test toolkit is located in a GitHub repo. You can either download the reposi
       git clone https://github.com/Azure/arm-ttk.git
       ```
 
-   - **Download the repo as a zip file**. In your browser, navigate to the following URL https://github.com/Azure/arm-ttk/archive/master.zip.  
+   - **Download the repo as a zip file**. From your browser, [download the .zip file](https://github.com/Azure/arm-ttk/archive/master.zip).  
 
 ### Inspect the Test toolkit
 
@@ -25,7 +25,7 @@ You've just downloaded the test toolkit to a directory of your choosing. Let's h
 -| SECURITY.md
 ```
 
-The test tool is located in the subdirectory `\arm-ttk`.
+The test tool is located in the subdirectory *\arm-ttk*.
 
 ### Create the template file
 
@@ -61,24 +61,24 @@ Make a note of the location of your template file. You will use this directory p
 
 It's recommended that you have two different terminal windows open for this exercise.
 
-- **The first terminal window**. One terminal should be at the sub directory *arm-ttk\\* of the installation directory. This is where you will be running the Test toolkit from.
-- **The second terminal window**. The other terminal should point to the path of the template file *azuredeploy.json*. It's recommended that you start an instance of Visual Studio Code from this path so you can easily edit the `azuredeploy.json` file when asked.
+- **The first terminal window**. One terminal should be at the subdirectory *arm-ttk\\* of the installation directory. This is where you will be running the Test toolkit from.
+- **The second terminal window**. The other terminal should point to the path of the template file *azuredeploy.json*. It's recommended that you start an instance of Visual Studio Code from this path so you can easily edit the *azuredeploy.json* file when asked.
 
 You will run the Test toolkit on a path containing a deployment template and fix any errors it detects by changing the template.
 
 > [!WARNING]
-> In this exercise, you scan one template file. The Test Toolkit scans all files beneath the directory you specify. It does so because a deployment can be made up of several files. Be sure that there are no JSON files beneath the directory where *azuredeploy.json* is located.
+> In this exercise, you scan one template file. The Test Toolkit scans all files at the directory you specify and all its subdirectories. It does so because a deployment can be made up of several files. Be sure that there are no JSON files beneath the directory where *azuredeploy.json* is located.
 
 1. **Start PowerShell**. In Windows:
-   1. Click Start button
+   1. Select Start button
    1. Type PowerShell
-   1. Click Windows PowerShell
+   1. Select Windows PowerShell
 
-1. **Navigate to Test toolkit directory**. Navigate to the sub directory *arm-ttk\\*, of the Test toolkit installation directory.
+1. **Navigate to Test toolkit directory**. Navigate to the subdirectory *arm-ttk\\*, of the Test toolkit installation directory.
 
 1. **Analyze template**.
 
-   1. **Import the arm-ttk module**. Type the following command in the terminal that points to the install directory and the sub directory **arm-ttk**:
+   1. **Import the arm-ttk module**. Run the following command in the terminal that points to the install directory and the subdirectory *arm-ttk\\*:
 
       ```powershell
       Import-Module .\arm-ttk.psd1
@@ -121,7 +121,7 @@ You will run the Test toolkit on a path containing a deployment template and fix
 
    1. **Analyze results**. Note above how two tests are failing,  **Resources Should have Location is failing** and  **Parameters Must Be Referenced**. A failing test is indicated by the prefix **[-]**.
 
-      To understand what's going on, open the **azuredeploy.json** file, it should look like so:
+      To understand what's going on, open the *azuredeploy.json* file, it should look like so:
 
          ```json
          {
@@ -149,7 +149,7 @@ You will run the Test toolkit on a path containing a deployment template and fix
 
 1. **Apply fix to template**. So how to fix the above failing tests?
 
-   As the test indicates, we could try replacing **westus** with the text **global**. However, that would only fix one of the problems. Most likely we want to use the **location** parameter and set the resources location to that value. The reason is two-fold, not only can the location parameter be set as an argument when deploying, it also has reasonable fallback of being set to the **resourceGroup().location** as *defaultValue* should you omit to set the **location** when running the deployment.
+   As the test indicates, we could try replacing **westus** with the text **global**. However, that would only fix one of the problems. Most likely we want to use the **location** parameter and set the resources location to that value. The reason is two-fold, not only can the location parameter be set as an argument when deploying, it also has reasonable fallback of being set to the **resourceGroup().location** as *defaultValue* should you omit to set the **location** attribute when running the deployment.
 
    1. **Change the template**. Locate the first resource item in the **resources** array and replace the following content:
 
@@ -167,7 +167,7 @@ You will run the Test toolkit on a path containing a deployment template and fix
       }]
       ```
 
-1. **Verify the fix**. Before running the below command, replace `path/to/template/directory` with the path to the directory of your `azuredeploy.json` file. Run the test tool once again from the terminal window, pointing to Test toolkit directory, with the following command:
+1. **Verify the fix**. Before running the below command, replace *\path\to\template\directory* with the path to the directory of your *azuredeploy.json* file. Run the test tool once again from the terminal window, pointing to Test toolkit directory, with the following command:
 
    ```powershell
    Test-AzTemplate -TemplatePath path\to\template\directory

@@ -1,4 +1,4 @@
-1. **Install PowerShell Core**. Follow the instructions in this [link](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos)
+1. **Install PowerShell Core**. Follow the instructions in [Installing PowerShell on MacOS](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos)
 
 1. **Install `coreutils`**. You also need to download a library called `coreutils`. It can be fetched via `brew` with the following command typed in the terminal:
 
@@ -6,13 +6,13 @@
    brew install coreutils
    ```
 
-1. Verify installation. Type the following command in the terminal:
+1. **Verify the installation**. Run the following command in the terminal:
 
    ```bash
    pwsh
    ```
 
-   You should see an output similar to the below:
+   Your output resembles this:
 
    ```output
    PowerShell 7.0.3
@@ -32,7 +32,7 @@ The test toolkit is located in a GitHub repo. You can either download the reposi
       git clone https://github.com/Azure/arm-ttk.git
       ```
 
-   - **Download the repo as a zip file**. In your browser, navigate to the following URL https://github.com/Azure/arm-ttk/archive/master.zip.  
+   - **Download the repo as a zip file**. From your browser, [download the .zip file](https://github.com/Azure/arm-ttk/archive/master.zip).  
 
 ### Inspect the Test toolkit
 
@@ -47,11 +47,11 @@ You've just downloaded the test toolkit to a directory of your choosing. Let's h
 -| SECURITY.md
 ```
 
-The test tool is located in the sub directory `/arm-ttk`.
+The test tool is located in the subdirectory */arm-ttk*.
 
 ### Create the template file
 
-Select a directory of your choosing and create a file called **azuredeploy.json**.
+Select a directory of your choosing and create a file called *azuredeploy.json*.
 
 > [!WARNING]
 > Ensure the selected directory is an empty one with no sub directories
@@ -83,15 +83,15 @@ Make a note of the location of your template file. You could run the command `pw
 
 It's recommended that you have two different terminal windows open for this exercise.
 
-- **The first terminal window**. One terminal should be at the sub directory `arm-ttk` of the installation directory. This is where you will be running the Test toolkit from.
-- **The second terminal window**. The other terminal should point to the path of the template file `azuredeploy.json`. It's recommended that you start an instance of Visual Studio Code from this path so you can easily edit the `azuredeploy.json` file when asked.
+- **The first terminal window**. One terminal should be at the subdirectory *arm-ttk/* of the installation directory. This is where you will be running the Test toolkit from.
+- **The second terminal window**. The other terminal should point to the path of the template file *azuredeploy.json*. It's recommended that you start an instance of Visual Studio Code from this path so you can easily edit the *azuredeploy.json* file when asked.
 
 You will run the Test toolkit on a path containing a deployment template and fix any errors it detects by changing the template.
 
 > [!WARNING]
 > In this exercise, you scan one template file. The Test Toolkit scans all files beneath the directory you specify. It does so because a deployment can be made up of several files. Be sure that there are no JSON files beneath the directory where *azuredeploy.json* is located.
 
-1. **Start the shell**. Navigate to the sub directory *arm-ttk/*, of the Test toolkit installation directory, Type the following command in the terminal to start a PowerShell shell:
+1. **Start the shell**. Navigate to the subdirectory *arm-ttk/*, of the Test toolkit installation directory, Run the following command in the terminal to start a PowerShell shell:
 
    ```bash
    pwsh
@@ -109,13 +109,13 @@ You will run the Test toolkit on a path containing a deployment template and fix
 
 1. **Analyze template**.
 
-   1. **Import the arm-ttk module**. Type the following command in the terminal that points to the install directory and the sub directory **arm-ttk**:
+   1. **Import the arm-ttk module**. Run the following command in the terminal that points to the install directory and the subdirectory *arm-ttk/*:
 
       ```powershell
       Import-Module ./arm-ttk.psd1
       ```
   
-   1. **Run the tool**. Before running the below command, replace `path/to/template/directory` with the path to the directory of your `azuredeploy.json` file. Run the tool by typing the following command:
+   1. **Run the tool**. Before running the below command, replace *path/to/template/directory* with the path to the directory of your *azuredeploy.json* file. Run the tool by typing the following command:
 
       ```powershell
       Test-AzTemplate -TemplatePath path/to/template/directory
@@ -152,7 +152,7 @@ You will run the Test toolkit on a path containing a deployment template and fix
 
    1. **Analyze results**. Note above how two tests are failing,  **Resources Should have Location is failing** and  **Parameters Must Be Referenced**. A failing test is indicated by the prefix **[-]**.
 
-      To understand what's going on, open the **azuredeploy.json** file, it should look like so:
+      To understand what's going on, open the *azuredeploy.json* file, it should look like so:
 
          ```json
          {
@@ -198,7 +198,7 @@ You will run the Test toolkit on a path containing a deployment template and fix
       }]
       ```
 
-1. **Verify the fix**. Before running the below command, replace `path/to/template/directory` with the path to the directory of your `azuredeploy.json` file. Run the test tool once again with the following command:
+1. **Verify the fix**. Before running the below command, replace *path/to/template/directory* with the path to the directory of your *azuredeploy.json* file. Run the test tool once again with the following command:
 
    ```powershell
    Test-AzTemplate -TemplatePath path/to/template/directory

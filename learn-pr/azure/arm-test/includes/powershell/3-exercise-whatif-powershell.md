@@ -93,7 +93,7 @@ You can sign into your Azure account from the terminal. If you are on Windows, t
 
 1. **Set the default resource group**. You need to set the resource group created for you in the sandbox as the default resource group. You will accomplish this task in two steps:
 
-   1. **Get the resource group name**. Type the following command.
+   1. **Get the resource group name**. Run the following command.
 
       ```powershell
       Get-AzResourceGroup

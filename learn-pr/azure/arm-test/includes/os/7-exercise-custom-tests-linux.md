@@ -1,0 +1,234 @@
+## Author and run a Custom test
+
+You will author a custom test and use the Test Toolkit tool to run it. Furthermore you will need to correct the deployment template to ensure the test passes. The custom test will be looking to verify that all parameters follow a naming rule. This rule is a domain-specific requirement on the product the team you are working on.
+
+It's recommended that you have two text editors and a terminal window open for this exercise.
+
+- **The first text editor, authoring custom test**. Locate the path of the subdirectory *testcases/deploymentTemplate/* of the Testing toolkit installation directory. From here you want to run Visual Studio Code where you will be creating and editing a custom test.
+- **The terminal window, running the Test toolkit**. The terminal window should point to the path of the Test toolkit installation directory. From here you will be running the Test toolkit.
+- **The second text editor, authoring the template file**. You select the location of this path to your liking. The only thing you should be wary of is to ensure the path is empty and has no subdirectories. It's recommended that you start an instance of Visual Studio Code from this path so you can easily edit the *azuredeploy.json* file when asked.
+
+### Create the template file
+
+Select a directory of your choosing and create a file called *azuredeploy.json*.
+
+> [!WARNING]
+> Ensure the selected directory is an empty one with no sub directories
+
+Give it the following content:
+
+```json
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "resources": []
+}
+```
+
+### Create the custom test
+
+1. Open up Visual Studio Code and navigate to your installation directory for the Test Toolkit tool.
+1. Place yourself in the subdirectory *testcases/deploymentTemplate*
+1. Create a file **Custom-ParameterNaming.test.ps1** and give the file the following content:
+
+   ```powershell
+   param(
+   [Parameter(Mandatory=$false,Position=0)] #not mandatory for case of an empty resource array
+   [PSObject]
+   $MainTemplateResources
+   )
+
+   Write-Error "To be implemented"
+   ```
+
+   Leave the text editor open, you will edit this file later.
+
+### Run the custom test
+
+Run the custom test by following these step at the root of the installation directory:
+
+1. Open up a terminal window
+1. Navigate to the directory of the Test toolkit
+1. Start the PowerShell shell:
+
+   ```bash
+   pwsh
+   ```
+
+1. Import the **arm-ttk** module.
+
+   ```powershell
+   Import-Module ./arm-ttk.psd1
+   ```
+
+1. **Run the Test Toolkit tool**. Before you run the command change the **-TemplatePath** argument */path/to/deployment/template* to the directory of your template file. Run the following command in the terminal:
+
+   ```powershell
+   Test-AzTemplate -TemplatePath /path/to/deployment/template
+   ```
+
+   Your output resembles this:
+
+   ```output
+    Validating deploy\azuredeploy.json                                                        deploymentTemplate
+    [+] adminUsername Should Not Be A Literal (16 ms)
+    [+] apiVersions Should Be Recent (4 ms)
+    [+] artifacts parameter (1 ms)
+    [-] Custom ParameterNaming (2 ms)  To be implemented
+    [+] DependsOn Best Practices (2 ms)
+    [+] Deployment Resources Must Not Be Debug (2 ms)
+    [+] DeploymentTemplate Must Not Contain Hardcoded Uri (4 ms)
+    [+] DeploymentTemplate Schema Is Correct (1 ms)
+    [+] Dynamic Variable References Should Not Use Concat (1 ms)
+    [+] IDs Should Be Derived From ResourceIDs (5 ms)
+    [+] Location Should Not Be Hardcoded (7 ms)
+    [+] ManagedIdentityExtension must not be used (1 ms)
+    [+] Min And Max Value Are Numbers (1 ms)
+    [+] Outputs Must Not Contain Secrets (2 ms)
+    [+] Parameters Must Be Referenced (2 ms)                                                    Unreferenced parameter: location
+    [+] Parameters Property Must Exist (1 ms)
+    [+] providers apiVersions Is Not Permitted (1 ms)
+    [+] ResourceIds should not contain (2 ms)
+    [-] Resources Should Have Location (2 ms)                                                   Resource  Location must be an expression or 'global'
+    [+] Secure String Parameters Cannot Have Default (1 ms)
+    [+] Template Should Not Contain Blanks (2 ms)
+    [+] Variables Must Be Referenced (1 ms)
+    [+] Virtual Machines Should Not Be Preview (6 ms)
+    [+] VM Images Should Use Latest Version (1 ms)
+    [+] VM Size Should Be A Parameter (5 ms)
+    ```
+
+   In the above output your test is indicated, fourth from the top with this line:
+
+   ```output
+   [-] Custom ParameterNaming (4 ms)  To be implemented
+   ```
+
+   Great, the test is found. Leave this terminal window open, you will reuse it later.
+
+### Refactor custom test
+
+Now you will give the custom test a proper implementation.
+
+1. **Implement the test**. Go back to the text editor holding the file *Custom-ParameterNaming.test.ps1*. If you accidentally closed it, navigate to the subdirectory *testcases/deploymentTemplate* and open up the file *Custom-ParameterNaming.test.ps1*. Replace the file content with the following code:
+
+   ```powershell
+   <#
+   .Synopsis
+    Ensures that all parameters adheres to a naming standard
+   .Description
+    All parameters should start with the company specific prefix 'tailwind'
+   #>
+   param(
+      # The Template Object
+      [Parameter(Mandatory = $true, Position = 0)]
+      [PSObject]
+      $TemplateObject,
+
+      # The Template JSON Text
+      [Parameter(Mandatory = $true, Position = 0)]
+      [PSObject]
+      $TemplateText
+   )
+
+   foreach ($parameter in $TemplateObject.parameters.psobject.properties) {
+     # If the parameter name starts with tailwind, then the parameter is correctly named
+     if ($parameter.Name -notmatch 'tailwind*') {
+        Write-Error "Parameter '$($parameter.Name)' must start with prefix 'tailwind'" -TargetObject $parameter
+     }
+   }
+   ```
+
+   The above code iterates through all the parameters and inspects its name attribute and checks whether the name starts with the prefix **tailwind**. If the inspected parameter does not match the naming rule, the code then invokes the **Write-Error** cmdlet with a suitable error message.
+
+### Update the template file
+
+You will now add a parameter to the template file.
+
+1. Open up a text editor and change *azuredeploy.json* to the following content:
+
+   ```json
+   {
+     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+     "contentVersion": "1.0.0.0",
+     "parameters": {
+       "location": {
+         "type": "string",
+         "metadata": {
+           "description": "a deployment location"
+         }
+       }
+     },
+     "resources": []
+   }
+   ```
+
+   The above template content defines a parameter **location** that doesn't fulfill the naming rule, as it lacks the **tailwind** prefix in its naming.
+
+### Rerun the Test toolkit
+
+You have custom test written at this point. However your template file naming does not fulfill the requirement. You therefore expect the upcoming test-run to fail. Ensure that is the case by taking the below steps:
+
+Use the existing terminal window where Powershell has been started and the Test toolkit has been imported.
+
+1. **Run your custom test**. Before running the command remember to replace *path/to/deployment/directory* with the location of your *azuredeploy.json* file. Run the Test Toolkit tool by running the following command in the terminal:
+
+   ```powershell
+   Test-AzTemplate -TemplatePath /path/to/deployment/template -Test Custom-ParameterNaming
+   ```
+
+   The above command is run with the parameter **-Test**, which takes a test name as input. You've provided **Custom-ParameterNaming** as an argument, which means only your newly developed test will be run.
+
+   > [!TIP]
+   > Using this parameter is a good practice when developing a test as it limits what is being run and the size of the terminal output.
+
+   This command results in the following output:
+
+   ```output
+   Validating custom\azuredeploy.json
+    deploymentTemplate
+    
+    [-] Custom ParameterNaming (2ms) Parameter 'location' must start with prefix 'tailwind'
+   ```
+
+   The result above indicates that your test works. Let's ensure that is the case by altering the deployment file.
+
+### Correcting the template file
+
+At this point you want to verify the correctness of your custom test by changing the template file to adhere to the rules laid out by the custom test.
+
+1. Go to the text editor showing the *azuredeploy.json* file and change it to the following content:
+
+   ```json
+   {
+     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+     "contentVersion": "1.0.0.0",
+     "parameters": {
+       "tailwindLocation": {
+         "type": "string",
+         "metadata": {
+           "description": "a deployment location"
+         }
+       }
+     },
+     "resources": []
+   }
+   ```
+
+   Above the parameter **location** has been renamed to **tailwindLocation**. In theory, this parameter should now pass the test. Let's verify.
+
+1. **Run the Test Toolkit tool**. Before you run the below command, don't forget to change */path/to/deployment/template* to the path of your template file. Run the following command in the open terminal:
+
+   ```powershell
+   Test-AzTemplate -TemplatePath /path/to/deployment/template -Test Custom-ParameterNaming
+    ```
+
+   Your output now looks like the following:
+
+   ```output
+   Validating custom\azuredeploy.json                                                        deploymentTemplate
+   [+] Custom ParameterNaming (2 ms)
+   ```
+
+Success, you've managed to implement and run a custom test. Furthermore you've managed to correct a deployment template to match the tests condition.
