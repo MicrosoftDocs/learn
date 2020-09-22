@@ -1,3 +1,4 @@
+### YamlMime:ModuleUnit
 uid: learn.monitor-vm-performance-using-logs-insights.build-log-queries-using-kusto
 title: Build log queries by using the Kusto Query Language
 metadata:
