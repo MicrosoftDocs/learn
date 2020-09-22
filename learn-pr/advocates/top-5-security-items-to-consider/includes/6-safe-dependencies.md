@@ -37,7 +37,7 @@ Some tools made specifically for static code analysis can be used for this as we
 - [Hdiv](https://hdivsecurity.com)
 - [And many more...](https://www.owasp.org/index.php/Source_Code_Analysis_Tools)
 
-For more information on the risks involved in using vulnerable components visit the [OWASP page](https://www.owasp.org/index.php/Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities) dedicated to this topic.
+For more information on the risks involved in using vulnerable components visit the [OWASP page](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities) dedicated to this topic.
 
 ## Summary
 
