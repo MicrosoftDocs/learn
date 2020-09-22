@@ -19,20 +19,20 @@ Monitor performance of virtual machines using Azure Monitor Logs and Virtual Mac
 
 ## Prerequisites
 
-- Experience using the Azure portal for accessing and creating resources
-- Knowledge of Azure virtual machines
-- Basic familiarity with relational database query language
+- Experience using the Azure portal for accessing and creating resources.
+- Knowledge of Azure virtual machine creation, administration, and maintenance.
+- Basic familiarity with querying datasets to filter and extract information.
 
 ## Summary
 
-Assess Azure Monitor log tooling. Deploy Log Analytics workspace. Onboard VMs to Log Analytics workspace and configure VM Insights. Build familiarity with syntax of Azure Monitor log queries inside Log Analytics workspace using standard operators. Query performance of virtual machines using log queries based upon the Kusto Query Language.
+First, you will evaluate Azure Monitor log tooling in your journey to better the monitoring environment for your company. From there, you will deploy a Log Analytics workspace. Once the Log Analytics workspace is ready, you will onboard VMs to the Log Analytics workspace and configure VM Insights. In order to understand the types of data you can extract, you will start to build familiarity with the syntax of Azure Monitor log queries inside Log Analytics workspace using standard operators. Once you feel comfortable with the structure, you will take some of the pre-configured queries in a Log Analytics workspace and query performance of virtual machines using the Kusto Query Language.
 
 ## Learning objectives
 
-1. Assess Azure Monitor Logs and VM Insights.
-1. Create Log Analytics workspace, configure with right access permissions, and decide upon resource-centric or workspace-centric model for deployment. Onboard 2 VMs to Log Analytics and VM Insights.
-1. Build familiarity with query language of Azure Monitor logs.
-1. Create custom queries from heartbeat and perf tables.
+By the end of this module you should be able to:
+1. Evaluate Azure Monitor Logs and VM Insights.
+1. Configure Log Analytics workspace.
+1. Build queries from heartbeat and insights tables.
 
 ## Chunk your content into subtasks
 
@@ -40,10 +40,9 @@ Identify the subtasks of *module title*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Assess Azure Monitor Logs and Log Analytics workspaces | Investigate tooling | Knowledge Check | Assess Azure Monitor Logs and Log Analytics | Yes |
-| Deploy Log Analytics workspace, onboard VMs to Log Analytics and VM Insights | How-to deploy workspace | Exercise | Create Log Analytics workspace and onboard VM Insights | Yes |
-| Introduction to log queries | Investigate functionality | Knowledge Check | Build familiarity with Azure Log queries | Yes |
-| Create custom queries | How-to structure and build queries | Exercise | Create custom query from heartbeat and perf tables | Yes |
+| Evaluate Azure Monitor Logs, VM Insights, and Log Analytics workspaces | Investigate tooling | Knowledge Check | Evaluate Azure Monitor Logs and VM Insights | Yes |
+| Configure Log Analytics workspace, onboard VMs to Log Analytics and VM Insights | How-to deploy workspace | Exercise | Configure Log Analytics workspace | Yes |
+| Build pre-configured and custom queries | How-to structure and build queries | Exercise | Build queries from heartbeat and insights tables | Yes |
 
 ## Outline the units
 
