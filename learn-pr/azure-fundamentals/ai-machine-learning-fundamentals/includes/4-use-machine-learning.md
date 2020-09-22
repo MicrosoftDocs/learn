@@ -1,6 +1,6 @@
 The Tailwind Traders e-commerce website allows its customers to browse and purchase items that can be delivered or picked up from a retail store nearest to their location.  
 
-The Marketing team is convinced that it can increase sales dramatically by suggesting add-on products from its catalog that complement the items in a shopper's cart at the moment of checkout. The team could hard-code these suggestions, but it feels that a more organic approach would be to use years' worth of sales data as well as new shopping trends to decide what products to display to the shopper. Additionally, the suggestions could be influenced by factors such as product availability, product profitability, and other factors.
+The Marketing team is convinced that it can increase sales dramatically by suggesting add-on products that complement the items in a shopper's cart at the point of checkout. The team could hard-code these suggestions, but it feels that a more organic approach would be to use its years' worth of sales data as well as new shopping trends to decide what products to display to the shopper. Additionally, the suggestions could be influenced by product availability, product profitability, and other factors.
 
 The Marketing team's existing data science experts have already done some initial analysis of the problem domain, and have determined that its plan might take months to prototype, and possibly a year to roll out.
 
