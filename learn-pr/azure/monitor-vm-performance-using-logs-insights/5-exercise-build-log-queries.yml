@@ -8,8 +8,7 @@ metadata:
   ms.prod: learning-azure
   ms.topic: interactive-tutorial
   ms.date: 09/22/2020
-azureSandbox: false
-interactive: None
+azureSandbox: true
 durationInMinutes: 5
 content: |
   [!include[](includes/5-exercise-build-log-queries.md)]
