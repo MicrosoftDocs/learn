@@ -1,0 +1,14 @@
+uid: learn.monitor-vm-performance-using-logs-insights.summary
+title: Summary
+metadata:
+  description: ''
+  title: Summary
+  ms.author: shkuehn
+  ms.prod: learning-azure
+  ms.topic: interactive-tutorial
+  ms.date: 09/22/2020
+azureSandbox: false
+interactive: None
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-summary.md)]

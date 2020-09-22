@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg width="800px" height="300px" viewBox="0 0 800 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="0.5" y="0.5" width="799" height="299"></rect>
+            <text id="Description-of-the-i" font-family="ArialMT, Arial" font-size="24" font-weight="normal" fill="#000000">
+                <tspan x="30" y="49">line_0</tspan>
+                <tspan x="30" y="76">line_1</tspan>
+                <tspan x="30" y="103">line_2</tspan>
+                <tspan x="30" y="130">line_3</tspan>
+                <tspan x="30" y="157">line_4</tspan>
+                <tspan x="30" y="184">line_5</tspan>
+                <tspan x="30" y="211">line_6</tspan>
+                <tspan x="30" y="238">line_7</tspan>
+                <tspan x="30" y="265">line_8</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

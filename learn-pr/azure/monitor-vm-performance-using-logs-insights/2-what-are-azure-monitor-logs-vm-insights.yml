@@ -1,0 +1,14 @@
+uid: learn.monitor-vm-performance-using-logs-insights.what-are-azure-monitor-logs-vm-insights
+title: What are Azure Monitor logs and Virtual Machine Insights?
+metadata:
+  description: ''
+  title: What are Azure Monitor logs and Virtual Machine Insights?
+  ms.author: shkuehn
+  ms.prod: learning-azure
+  ms.topic: interactive-tutorial
+  ms.date: 09/22/2020
+azureSandbox: false
+interactive: None
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-what-are-azure-monitor-logs-vm-insights.md)]

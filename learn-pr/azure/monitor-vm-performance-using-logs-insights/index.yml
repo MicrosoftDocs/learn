@@ -1,0 +1,38 @@
+uid: learn.monitor-vm-performance-using-logs-insights
+title: Monitor the performance of virtual machines using Azure Monitor Logs and Virtual Machine Insights
+metadata:
+  description: Learn how to use Azure Monitor logs and Virtual Machine Insights to monitor your organization's Azure virtual machines.
+  title: Monitor the performance of virtual machines using Azure Monitor Logs and Virtual Machine Insights
+  author: sbkuehn
+  ms.author: shkuehn
+  ms.prod: learning-azure
+  ms.topic: interactive-tutorial
+  ms.date: 09/22/2020
+hidden: false
+summary: First, you will evaluate Azure Monitor log tooling in your journey to better the monitoring environment for your company. From there, you will deploy a Log Analytics workspace. Once the Log Analytics workspace is ready, you will onboard VMs to the Log Analytics workspace and configure VM Insights. In order to understand the types of data you can extract, you will start to build familiarity with the syntax of Azure Monitor log queries inside Log Analytics workspace using standard operators. Once you feel comfortable with the structure, you will take some of the pre-configured queries in a Log Analytics workspace and query performance of virtual machines using the Kusto Query Language.
+ratingEnabled: false
+abstract: |
+  - Evaluate Azure Monitor Logs and VM Insights.
+  - Configure Log Analytics workspace.
+  - Build queries from heartbeat and insights tables.
+prerequisites: |
+  - Experience using the Azure portal for accessing and creating resources.
+  - Knowledge of Azure virtual machine creation, administration, and maintenance.
+  - Basic familiarity with querying datasets to filter and extract information.
+iconUrl: /learn/achievements/monitor-vm-performance-using-logs-insights.svg
+badge:
+  uid: learn.monitor-vm-performance-using-logs-insights.badge
+levels:
+- Beginner
+roles:
+- Administrator
+products:
+- azure-monitor
+- azure-log-analytics
+units:
+- learn.monitor-vm-performance-using-logs-insights.introduction
+- learn.monitor-vm-performance-using-logs-insights.what-are-azure-monitor-logs-vm-insights
+- learn.monitor-vm-performance-using-logs-insights.exercise-set-up-log-analytics-workspace-vm-insights
+- learn.monitor-vm-performance-using-logs-insights.build-log-queries-using-kusto
+- learn.monitor-vm-performance-using-logs-insights.exercise-build-log-queries
+- learn.monitor-vm-performance-using-logs-insights.summary
