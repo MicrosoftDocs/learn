@@ -1,6 +1,6 @@
 
 
-## Introduce and explain concept of log queries
+Introduce and explain concept of log queries
 
 - Azure Monitor Logs are based on Azure Data Explorer; log queries are written using the Kusto Query Language (KQL).
 
