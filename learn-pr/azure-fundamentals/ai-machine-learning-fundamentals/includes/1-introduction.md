@@ -8,7 +8,7 @@ In this module, you'll learn about the various Microsoft AI services, and you'll
 
 By the end of this module, you will be able to:
 
-- Choose the AI services that address the challenges that a business might face.
+- Choose the Azure AI services that best address your company's business challenges.
 
 ## Prerequisites
 
