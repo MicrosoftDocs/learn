@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-azure-arc.5-describe-azure-arc-azure-policy-and-azure-monitor
+uid: learn.azure.intro-to-azure-arc.5-azure-policy-and-azure-monitor
 metadata:
   title: Describe Azure Arc integration with Azure Policy and Azure Monitor
   description: Describe Azure Arc integration with Azure Policy and Azure Monitor
@@ -11,4 +11,4 @@ metadata:
 title: Describe Azure Arc integration with Azure Policy and Azure Monitor
 durationInMinutes: 9
 content: |
-  [!include[](includes/5-describe-azure-arc-azure-policy-and-azure-monitor.md)]
+  [!include[](includes/5-azure-policy-and-azure-monitor.md)]

@@ -30,7 +30,7 @@ units:
 - learn.azure.intro-to-azure-arc.2-describe-azure-arc
 - learn.azure.intro-to-azure-arc.3-describe-azure-arc-enabled-servers
 - learn.azure.intro-to-azure-arc.4-describe-azure-arc-enabled-kubernetes
-- learn.azure.intro-to-azure-arc.5-describe-azure-arc-azure-policy-and-azure-monitor
+- learn.azure.intro-to-azure-arc.5-azure-policy-and-azure-monitor
 - learn.azure.intro-to-azure-arc.6-knowledge-check
 - learn.azure.intro-to-azure-arc.7-summary
 badge:

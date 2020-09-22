@@ -72,7 +72,7 @@ Additionally, Monitor enables you to archive collected data in Azure Storage for
 
 - Trigger notifications via text message or email.
 - Trigger a remediation action as implemented by Azure Logic Apps, Azure Functions, or a runbook in Azure Automation.
-- Raise an incident and work items by taking advantage of the integration between Monitor and your internal IT service Management platform.
+- Raise an incident and work items by taking advantage of the integration between Monitor and your internal IT service management platform.
 
 You can store and analyze near real-time and historical data by using Log Analytics.
 > [!NOTE]
