@@ -29,6 +29,7 @@ products:
 modules:
 - learn.quantum.qsharp-create-first-quantum-development-kit
 - learn.quantum.qsharp-explore-key-concepts-quantum-computing
+- learn.quantum.solve-graph-coloring-problems-grovers-search
 - learn.quantum.solve-quantum-inspired-optimization-problems
 trophy:
   uid: learn.quantum-computing-fundamentals.trophy
