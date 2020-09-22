@@ -28,7 +28,7 @@ DDoS Protection provides these service tiers:
 
     The Basic service tier is automatically enabled for free as part of your Azure subscription.
 
-    Always-on traffic monitoring and real-time mitigation of common network-level attacks provide the same defenses that Microsoft's online services use. The Basic service tier ensures that Azure infrastructure itself is not impacted during a large-scale DDoS attack.
+    Always-on traffic monitoring and real-time mitigation of common network-level attacks provide the same defenses that Microsoft's online services use. The Basic service tier ensures that Azure infrastructure itself is not affected during a large-scale DDoS attack.
 
     Azure's global network is used to distribute and mitigate attack traffic across Azure regions.
 + **Standard**
@@ -39,7 +39,7 @@ DDoS Protection provides these service tiers:
 
     Protection policies are tuned through dedicated traffic monitoring and machine learning algorithms. Policies are applied to public IP addresses, which are associated with resources deployed in virtual networks such as Azure Load Balancer and Application Gateway.
 
-    Azure's global network is used to distribute and mitigate attack traffic across Azure regions.
+    The Azure global network is used to distribute and mitigate attack traffic across Azure regions.
 
 ## What kinds of attacks can DDoS Protection help prevent?
 
@@ -51,6 +51,6 @@ The Standard service tier can help prevent:
 + **Protocol attacks**
 
     These attacks render a target inaccessible by exploiting a weakness in the layer 3 and layer 4 protocol stack.
-+ **Resource (application) layer attacks (only with web application firewall)**
++ **Resource-layer (application-layer) attacks (only with web application firewall)**
 
-    These attacks target web application packets to disrupt the transmission of data between hosts. You need a web application firewall to protect against L7 attacks. DDoS Protection Standard protects the web application firewall (WAF) from volumetric and protocol attacks.
+    These attacks target web application packets to disrupt the transmission of data between hosts. You need a web application firewall (WAF) to protect against L7 attacks. DDoS Protection Standard protects the WAF from volumetric and protocol attacks.
