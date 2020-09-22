@@ -1,8 +1,8 @@
 AI is a broad classification of computing that allows a software system to perceive its environment and take action that maximizes its chance of successfully achieving its goals. A goal of AI is to create a software system that's able to adapt, or learn something on its own without being explicitly programmed to do it.
 
-There are two basic approaches to AI. The first is to employ a "deep learning" system that's modeled on the neural network of the human mind, enabling it to discover, learn, and grow through experience.
+There are two basic approaches to AI. The first is to employ a *deep learning* system that's modeled on the neural network of the human mind, enabling it to discover, learn, and grow through experience.
 
-The second approach is "machine learning," a data science technique that uses existing data to train a model, test it, and then apply the model to new data to forecast future behaviors, outcomes, and trends.
+The second approach is *machine learning*, a data science technique that uses existing data to train a model, test it, and then apply the model to new data to forecast future behaviors, outcomes, and trends.
 
 Forecasts or predictions from machine learning can make apps and devices smarter. For example, when you shop online, machine learning powers product recommendation systems that offer additional products based on what you've bought and what other shoppers have bought who have purchased similar items in the past. 
 
@@ -42,6 +42,6 @@ Azure Cognitive Services can be divided into the following categories:
 
 ### Azure Bot Service
 
-[Azure Bot Service](https://azure.microsoft.com/services/bot-service/?azure-portal=true) and [Bot Framework](https://dev.botframework.com/?azure-portal=true) are platforms for creating virtual agents that understand and reply to questions just like a human. Azure Bot Service is a bit different from Azure Machine Learning and Azure Cognitive Services in that it has a specific use case: namely, creating a virtual agent that can intelligently communicate with humans. Behind the scenes, the bot you build uses other Azure services, such as Azure Cognitive Services, to understand what their human counterparts are asking for.
+[Azure Bot Service](https://azure.microsoft.com/services/bot-service/?azure-portal=true) and [Bot Framework](https://dev.botframework.com/?azure-portal=true) are platforms for creating virtual agents that understand and reply to questions just like a human. Azure Bot Service is a bit different from Azure Machine Learning and Azure Cognitive Services in that it has a specific use case. Namely, it creates a virtual agent that can intelligently communicate with humans. Behind the scenes, the bot you build uses other Azure services, such as Azure Cognitive Services, to understand what their human counterparts are asking for.
 
 Bots can be used to shift simple, repetitive tasks, such as taking a dinner reservation or gathering profile information, on to automated systems that might no longer require direct human intervention. Users converse with a bot by using text, interactive cards, and speech. A bot interaction can be a quick question and answer, or it can be a sophisticated conversation that intelligently provides access to services.
