@@ -1,6 +1,6 @@
 Artificial Intelligence (AI) is a category of computing that adapts and improves its decision-making ability over time based on its successes and failures. Microsoft Azure provides several AI solutions to choose from, each one depending on the problem you're trying to solve.
 
-Tailwind Traders, a traditional brick-and-mortar retailer that has experienced explosive online sales growth, faces exciting challenges as it seeks to improve its ecommerce and service operations. Microsoft's AI services might be a good fit for one of the company's new initiatives, but Tailwind Traders needs help to better understand which product option is best for each scenario.
+Tailwind Traders, a traditional brick-and-mortar retailer that has experienced explosive online sales growth, faces exciting challenges as it seeks to improve its e-commerce and service operations. Microsoft's AI services might be a good fit for one of the company's new initiatives, but Tailwind Traders needs help to better understand which product option is best for each scenario.
 
 In this module, you'll learn about the various Microsoft AI services, and you'll analyze the decision criteria that experts use to select the right service for a specified scenario.
 
