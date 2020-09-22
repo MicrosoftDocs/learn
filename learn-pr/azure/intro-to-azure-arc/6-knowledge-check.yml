@@ -55,7 +55,7 @@ quiz:
       explanation: "That's incorrect. This is a function of RBAC permissions in Azure Arc."
 
   
-    - content: "Which Windows Server extension could an administrator use through Azure Arc to enable Azure Monitor Insights on servers?"
+  - content: "Which Windows Server extension could an administrator use through Azure Arc to enable Azure Monitor Insights on servers?"
     choices:
     - content: "CustomScriptExtension."
       isCorrect: false
