@@ -12,13 +12,17 @@ Technology needs are evolving in the modern workplace. IT is adapting to this ev
 - IT admins that spent their time being reactive are now moving toward being automated.
 - IT admins that were providing a high-touch environment for their organization are now providing self-service solutions.
 
-Members of your organization must be able to access your organization's data seemlessly and securely. Whether they are using a corporate device, such as an iOS/iPadOS, Android, Windows, or macOS device, or they're using their own device. Additionally, people at your organization will need to share information with trusted and verified coworkers in a variety of forms, such as from an app or displayed in a web browser. And, each member of your organization will often be using multiple devices, both personal and corporate, to get their work done.  
+## Access to data
+
+End users of your organization must be able to access your organization's data seemlessly and securely. Whether they are using a corporate device, such as an iOS/iPadOS, Android, Windows, or macOS device, or they're using their own device. Additionally, people at your organization will need to share information with trusted and verified coworkers in a variety of forms, such as from an app or displayed in a web browser. And, each member of your organization will often be using multiple devices, both personal and corporate, to get their work done.  
 
 As an IT admin or business decision maker, you must find modern methods and technologies to successfully manage and protect your organization against advanced digital threats, while still being productive.
 
 You can start by implementing services and tools to protect the digital resources at your organization. Those resources often include devices, apps, and data that the people of your organization use to be productive. These same users may also be employees, coworkers, and students. They may open and share personal files, visit unsecure websites, and install potentially unsafe apps. They want to use their devices to access all of their information and resources, whether it is at work, school, or home.
 
-You can protect those resources and devices by using mobile device management (MDM) and mobile application management (MAM) services and tools. MDM enables organizations to protect and secure their resources and data, based on enrolled devices. Organization can make sure that only authorized people and devices get access to proprietary information. Similarly, device users can feel at ease accessing work data from their device, such as a phone, because they know their device meets their organization's security requirements. MAM enables organizations to manage and protects their data within an application. 
+## Protect resources
+
+You can protect resources and devices by using mobile device management (MDM) and mobile application management (MAM) services and tools. MDM enables organizations to protect and secure their resources and data, based on enrolled devices. Organization can make sure that only authorized people and devices get access to proprietary information. Similarly, device users can feel at ease accessing work data from their device, such as a phone, because they know their device meets their organization's security requirements. MAM enables organizations to manage and protects their data within an application. 
 
 An MDM or MAM solution must accomplish the following tasks:
 

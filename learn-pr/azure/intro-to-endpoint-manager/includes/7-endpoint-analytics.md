@@ -4,4 +4,4 @@ Endpoint analytics is also a part of the [Microsoft Productivity Score](/microso
 
 In the following screenshot displays the Desktop Analytics pane:
 
-![Screenshot of Endpoint analytics pane](.../media/endpoint-analytics.png)
+![Screenshot of Endpoint analytics pane](../media/intro-to-endpoint-manager-11.png)
