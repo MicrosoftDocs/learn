@@ -1,21 +1,21 @@
 
-Tailwind Traders allows delivery drivers to use their own mobile devices to access scheduling and logistics applications. Some delivery drivers are permanent employees of Tailwind Traders; others work on short-term contract. How can the IT department ensure that an access attempt is really from a valid Tailwind Traders worker? 
+Tailwind Traders allows delivery drivers to use their own mobile devices to access scheduling and logistics applications. Some delivery drivers are permanent employees of Tailwind Traders. Others work on short-term contract. How can the IT department ensure that an access attempt is really from a valid Tailwind Traders worker? 
 
-In this part, you'll learn about two processes that enable secure authentication: Azure Multi-Factor Authentication and Conditional Access. Let's start with a brief look at what multi-factor authentication is in general.
+In this part, you'll learn about two processes that enable secure authentication: Azure Multi-Factor Authentication and Conditional Access. Let's start with a brief look at what multifactor authentication is in general.
 
-## What's multi-factor authentication (MFA)?
+## What's multifactor authentication?
 
-_Multi-factor authentication_ is a process where a user is prompted during the sign-in process for an additional form of identification, such as to enter a code on their cellphone or to provide a fingerprint scan.
+_Multifactor authentication_ is a process where a user is prompted during the sign-in process for an additional form of identification. Examples include a code on their mobile phone or a fingerprint scan.
 
-Think about how you sign in to websites, email, or online gaming services. In addition to your username and password, have you ever needed to enter an additional code that was sent to your phone? If so, you've used MFA to sign in.
+Think about how you sign in to websites, email, or online gaming services. In addition to your username and password, have you ever needed to enter an additional code that was sent to your phone? If so, you've used multifactor authentication to sign in.
 
- MFA provides additional security for your identities by requiring two or more elements to fully authenticate.
+Multifactor authentication provides additional security for your identities by requiring two or more elements to fully authenticate.
 
 These elements fall into three categories:
 
 * **Something you know**
 
-    This could be your email address and password.
+    This might be your email address and password.
 * **Something you have**
 
     This might be a code that's sent to your mobile phone.
@@ -23,15 +23,15 @@ These elements fall into three categories:
 
     This is typically some sort of biometric property, such as a fingerprint or face scan that's used on many mobile devices.
 
-:::image type="content" source="../media/4-multi-factor-authentication.png" alt-text="Some various ways to authenticate over MFA, including a username and password, keys, smart cards, and certificates." border="false":::
+:::image type="content" source="../media/4-multi-factor-authentication.png" alt-text="Various ways to authenticate over multifactor authentication, including a username and password, keys, smart cards, and certificates." border="false":::
 
-MFA increases identity security by limiting the impact of credential exposure (for example, stolen usernames and passwords). With MFA enabled, an attacker who has a user's password would also need to have possession of their phone or their fingerprint to fully authenticate.
+Multifactor authentication increases identity security by limiting the impact of credential exposure (for example, stolen usernames and passwords). With multifactor authentication enabled, an attacker who has a user's password would also need to have possession of their phone or their fingerprint to fully authenticate.
 
-Compare MFA with single-factor authentication. Under single-factor authentication, an attacker would only need  your username and password to authenticate. Therefore, MFA should be enabled wherever possible as MFA adds enormous benefits to security.
+Compare multifactor authentication with single-factor authentication. Under single-factor authentication, an attacker would need only your username and password to authenticate. Multifactor authentication should be enabled wherever possible because it adds enormous benefits to security.
 
 ## What's Azure Multi-Factor Authentication?
 
-Azure Multi-Factor Authentication is a Microsoft service that provides MFA capabilities. Azure Multi-Factor Authentication enables users to choose an additional form of authentication during sign-in, such as a phone call or mobile app notification.
+Azure Multi-Factor Authentication is a Microsoft service that provides multifactor authentication capabilities. Azure Multi-Factor Authentication enables users to choose an additional form of authentication during sign-in, such as a phone call or mobile app notification.
 
 ### Which Microsoft services provide Azure Multi-Factor Authentication?
 
@@ -57,9 +57,9 @@ Conditional Access helps IT administrators:
 * Empower users to be productive wherever and whenever.
 * Protect the organization's assets.
 
-Conditional Access also provides a more granular MFA experience for end users. For example, end users might not be challenged for second authentication factor if they are at a known location. However, they might be challenged for a second authentication factor if their sign-in signals are unusual or the user is at an unexpected location.
+Conditional Access also provides a more granular multifactor authentication experience for end users. For example, end users might not be challenged for second authentication factor if they are at a known location. However, they might be challenged for a second authentication factor if their sign-in signals are unusual or the user is at an unexpected location.
 
-During sign-in, Conditional Access collects signals from the user, makes decisions based on those signals, and then enforces that decision by allowing or denying the access request or challenging for an MFA response.
+During sign-in, Conditional Access collects signals from the user, makes decisions based on those signals, and then enforces that decision by allowing or denying the access request or challenging for an multifactor authentication response.
 
 Here's a diagram that illustrates this flow:
 
@@ -75,11 +75,11 @@ Enforcement is the action that carries out the decision; for example, to allow a
 
 Conditional Access is useful when you need to:
 
-* Require MFA to access an application.
+* Require multifactor authentication to access an application.
 
-    You can configure whether all users require MFA or only certain users, such as administrators.
+    You can configure whether all users require multifactor authentication or only certain users, such as administrators.
 
-    You can also configure whether MFA applies to access from all networks or only untrusted networks.
+    You can also configure whether multifactor authentication applies to access from all networks or only untrusted networks.
 * Require access to services only through approved client applications.
 
     For example, you might want to allow users to access Office 365 services from a mobile device as long as they use approved client apps, like Outlook mobile.
