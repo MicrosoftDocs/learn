@@ -14,8 +14,8 @@ Second, does Tailwind Traders need a service that can understand the content and
 
 Third, does Tailwind Traders need to predict user behavior or provide users with personalized recommendations?  Yes, it does. However, creating recommendations based on user behavior is only part of the requirement. Tailwind Traders needs to create a complex model that incorporates historical sales data, trending sales data, inventory, and more. It's possible that the Azure Cognitive Services Personalizer service could play a role, but it couldn't handle the entire breadth of the project alone.
 
-Finally, will the Tailwind Traders app predict future outcomes based on private historical data?  Yes, and that is why in this scenario, Azure Machine Learning is likely the best choice.
+Fourth, will the Tailwind Traders app predict future outcomes based on private historical data?  Yes, and that is why in this scenario, Azure Machine Learning is likely the best choice.
 
 The success of this effort would depend primarily on the ability of the model to select precisely the right up-sale products to suggest to the shopper. Because the model would need to be tweaked and tuned over time, an off-the-shelf model would likely not suffice.
 
-Finally, it sounds like the Marketing team already employs some data science experts, and they're willing to make at least a year-long commitment to building, testing, and tweaking the models to be used.
+Finally, it sounds like the Marketing team already employs some data science experts, and the team is willing to make at least a year-long commitment to building, testing, and tweaking the models to be used.
