@@ -51,6 +51,7 @@ _Figure 2: A subscription model with sandbox subscriptions._
 If you're planning to host **more than 1,000 VMs or compute instances in the cloud within 24 months**, create another Azure subscription to host shared services. This will prepare you to support your end-state enterprise architecture. If you plan to implement enterprise operations, you may wish to further subdivide your shared services subscriptions to be feature-specific. For more information, see the **Start with enterprise-scale** Learn modules.
 
 :::image type="content" source="../media/initial-subscription-model-with-shared-services.png" alt-text="An image showing an initial subscription model showing keys next to boxes labeled production and shared services." border="false":::
+
 _Figure 3: A subscription model with shared services._
 
 ### Plan for subscription scaling

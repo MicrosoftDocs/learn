@@ -39,7 +39,7 @@ quiz:
       explanation: When additional teams are allowed to manage production operations, the centralized model becomes unruly. If that increased pace of innovation is required, Tailwind should consider an enterprise operations model.
     - content: Enterprise operations
       isCorrect: true
-      explanation: .
+      explanation: Correct!
     - content: Distributed operations
       isCorrect: false
       explanation: Fortunately, this change wouldn't suggest a distributed operations approach. Try again.
@@ -47,7 +47,7 @@ quiz:
     choices:
     - content: Decentralized operations
       isCorrect: true
-      explanation: .
+      explanation: Correct!
     - content: Centralized operations
       isCorrect: false
       explanation: Before the acquisition, there were no centralized support services. Try again.
@@ -57,17 +57,17 @@ quiz:
     - content: Distributed operations
       isCorrect: false
       explanation: While the company might become distributed after a few more acquisitions, Tailwind isn't there today, nor was the startup prior to acquisition.
-  - content: Which of the following is an indicator that centralized operations is the better fit for Tailwind Traders?
-    choices:
-    - content: Openness to embrace cloud-native operations tools and processes
-      isCorrect: false
-      explanation: The narrative suggests limited appetite for cloud-native tools and processes. This customer currently needs a best-of-breed approach.
-    - content: Multiple teams accessing production environments
-      isCorrect: false
-      explanation: Only the central operations team has access to production. There is no need currently for a more complex approach to separation of duties.
-    - content: Central operations team size
-      isCorrect: true
-      explanation: There are indications that an enterprise operations approach could provide advantages. But the strained staff and lack of well-organized teams outside of central operations would add strain to the current team structure. Organizational change would be required to adopt enterprise operations.
-    - content: Scope of the portfolio
-      isCorrect: false
-      explanation: The overall scope of the portfolio is large enough to qualify for enterprise operations. This is an indicator that an enterprise operations approach might be beneficial.
+  # - content: Which of the following is an indicator that centralized operations is the better fit for Tailwind Traders?
+  #   choices:
+  #   - content: Openness to embrace cloud-native operations tools and processes
+  #     isCorrect: false
+  #     explanation: The narrative suggests limited appetite for cloud-native tools and processes. This customer currently needs a best-of-breed approach.
+  #   - content: Multiple teams accessing production environments
+  #     isCorrect: false
+  #     explanation: Only the central operations team has access to production. There is no need currently for a more complex approach to separation of duties.
+  #   - content: Central operations team size
+  #     isCorrect: true
+  #     explanation: There are indications that an enterprise operations approach could provide advantages. But the strained staff and lack of well-organized teams outside of central operations would add strain to the current team structure. Organizational change would be required to adopt enterprise operations.
+  #   - content: Scope of the portfolio
+  #     isCorrect: false
+  #     explanation: The overall scope of the portfolio is large enough to qualify for enterprise operations. This is an indicator that an enterprise operations approach might be beneficial.
