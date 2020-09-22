@@ -24,7 +24,7 @@ Repeat this process to create as many devices as you want.
 
 1. Double-click on **RefrigeratedTruck - 2**, and then click **Connect** (top right of your IoT Central screen).
 
-1. In the **Device Connection** screen, copy the **Device ID** and the **Primary Key** to your text file, noting that they are for the second truck. There's no need to copy the **Scope ID**, as this value is identical to the value for the first truck (this ID identifies your app, not an individual device).
+1. In the **Device Connection** screen, copy the **Device ID** and the **Primary Key** to your text file, noting that they are for the second truck. There's no need to copy the **ID Scope**, as this value is identical to the value for the first truck (this ID identifies your app, not an individual device).
 
 1. Click **Close**.
 

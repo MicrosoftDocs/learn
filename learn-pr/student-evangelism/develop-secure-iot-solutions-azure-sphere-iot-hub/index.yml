@@ -18,7 +18,7 @@ abstract: |
   - View the environment telemetry from the Azure Cloud Shell
   - Control an Azure Sphere application using Azure IoT Hub Direct Method
      
-  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 
 prerequisites: |
   - Azure Sphere kit
