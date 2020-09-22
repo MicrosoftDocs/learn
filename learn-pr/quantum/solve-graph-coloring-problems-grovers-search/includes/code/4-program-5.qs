@@ -20,20 +20,20 @@
     }
 
 
-    operation MarkingOracleAsPhaseOracle(
+    operation ApplyMarkingOracleAsPhaseOracle(
         markingOracle : ((Qubit[], Qubit[], Qubit) => Unit is Adj), 
         c0 : Qubit[],
         c1 : Qubit[]
     ) : Unit is Adj {
         using (target = Qubit()) {
             within {
-                // Put the target qubit into the |-⟩ state
+                // Put the target qubit into the |-⟩ state.
                 X(target);
                 H(target);
             } apply {
                 // Apply the marking oracle; since the target is in the |-⟩ state,
                 // flipping the target if the register state satisfies the condition 
-                // will apply a -1 relative phase to the register state
+                // will apply a -1 relative phase to the register state.
                 markingOracle(c0, c1, target);
             }
         }
@@ -54,8 +54,8 @@
             Message("The starting state of qubits c1:");
             DumpRegister((), c1);
 
-            // Compare registers and mark the result in their phase
-            MarkingOracleAsPhaseOracle(MarkColorEquality, c0, c1);
+            // Compare registers and mark the result in their phase.
+            ApplyMarkingOracleAsPhaseOracle(MarkColorEquality, c0, c1);
 
             Message("");
             Message("The state of qubits c1 after the equality check:");

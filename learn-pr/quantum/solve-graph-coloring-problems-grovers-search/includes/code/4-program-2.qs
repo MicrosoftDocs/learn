@@ -14,7 +14,7 @@ namespace ExploringGroversSearchAlgorithm {
         let coloring = [false, false, true, false, false, true, true, true, true, false];
         let colors = ["red", "green", "blue", "yellow"];
 
-        // Interpret the coloring: split the bit string into 2-bit fragments and convert them to colors
+        // Interpret the coloring: split the bit string into 2-bit fragments and convert them to colors.
         let colorBits = Chunks(2, coloring);
         for (i in 0 .. nVertices - 1) {
             let colorIndex = BoolArrayAsInt(colorBits[i]);

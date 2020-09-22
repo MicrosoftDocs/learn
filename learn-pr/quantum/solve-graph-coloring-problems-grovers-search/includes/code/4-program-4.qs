@@ -26,18 +26,18 @@
         target : Qubit
     ) : Unit is Adj+Ctl {
         let nEdges = Length(edges);
-        // Split the register that encodes the colors into an array of two-qubit registers, one per color
+        // Split the register that encodes the colors into an array of two-qubit registers, one per color.
         let colors = Chunks(2, colorsRegister);
-        // Allocate one extra qubit per edge to mark the edges that connect vertices with the same color
+        // Allocate one extra qubit per edge to mark the edges that connect vertices with the same color.
         using (conflictQubits = Qubit[nEdges]) {
             within {
                 for (((start, end), conflictQubit) in Zip(edges, conflictQubits)) {
                     // Check that the endpoints have different colors: apply MarkColorEquality operation; 
-                    // if the colors are the same, the result will be 1, indicating a conflict
+                    // if the colors are the same, the result will be 1, indicating a conflict.
                     MarkColorEquality(colors[start], colors[end], conflictQubit);
                 }
             } apply {
-                // If there are no conflicts (all qubits are in 0 state), the vertex coloring is valid
+                // If there are no conflicts (all qubits are in 0 state), the vertex coloring is valid.
                 (ControlledOnInt(0, X))(conflictQubits, target);
             }
         }
@@ -55,13 +55,13 @@
 
         using ((coloringRegister, target) = (Qubit[2 * nVertices], Qubit())) {
             // Encode the coloring in the quantum register:
-            // apply an X gate to each qubit that corresponds to "true" bit in the bit string
+            // apply an X gate to each qubit that corresponds to "true" bit in the bit string.
             ApplyPauliFromBitString(PauliX, true, coloring, coloringRegister);
 
-            // Apply the operation that will check whether the coloring is valid
+            // Apply the operation that will check whether the coloring is valid.
             MarkValidVertexColoring(edges, coloringRegister, target);
 
-            // Print validation result
+            // Print validation result.
             let isColoringValid = M(target) == One;
             Message($"The coloring is {isColoringValid ? "valid" | "invalid"}");
 

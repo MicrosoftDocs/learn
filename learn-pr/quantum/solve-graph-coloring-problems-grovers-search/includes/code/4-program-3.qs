@@ -34,7 +34,7 @@
             Message("The starting state of qubits c1 and target:");
             DumpRegister((), c1 + [target]);
 
-            // Compare registers and mark the result in target qubit
+            // Compare registers and mark the result in target qubit.
             MarkColorEquality(c0, c1, target);
 
             Message("");

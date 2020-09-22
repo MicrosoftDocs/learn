@@ -23,7 +23,7 @@ Some of these problems are better suited to benefit from using Grover's algorith
 
 ## Graph coloring problem
 
-The graph coloring problem, more precisely known as the [proper vertex coloring problem](https://en.wikipedia.org/wiki/Graph_coloring#Vertex_coloring), is formulated as follows: given a graph, assign a label ("color") to each of the graph's vertices such that no two vertices that share a common edge have the same label.
+The graph coloring problem, more precisely known as the [proper vertex coloring problem](https://en.wikipedia.org/wiki/Graph_coloring#Vertex_coloring), is formulated as follows: given a graph and a set of $k$ labels ("colors"), assign a label to each of the graph's vertices such that no two vertices that share a common edge have the same label.
 
 Here is an example graph with five vertices and seven edges:
 
