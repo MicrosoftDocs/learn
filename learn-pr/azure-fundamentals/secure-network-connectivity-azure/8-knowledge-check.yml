@@ -36,7 +36,7 @@ quiz:
     - content: Ensure that all running applications communicate with only trusted ports and hosts.
       isCorrect: false
       explanation: Is there a way to more easily configure network access without software modifications?
-  - content: How can Tailwind Traders most easily implement a _deny by default_ policy so that VMs cannot connect to each other?
+  - content: How can Tailwind Traders most easily implement a _deny by default_ policy so that VMs can't connect to each other?
     choices:
     - content: Allocate each VM on its own virtual network.
       isCorrect: false

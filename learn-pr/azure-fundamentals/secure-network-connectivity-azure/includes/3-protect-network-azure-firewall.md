@@ -6,7 +6,7 @@ In this part, you explore Azure Firewall.
 
 ## What's Azure Firewall?
 
-[Azure Firewall](https://azure.microsoft.com/services/azure-firewall?azure-portal=true) is a managed, cloud-based, network security service that helps protect resources in your Azure virtual networks. A virtual network is similar to a traditional network that you'd operate in your own datacenter. It's a fundamental building block for your private network that enables virtual machines and other compute resources to securely communicate with each other, the internet, and on-premises networks.
+[Azure Firewall](https://azure.microsoft.com/services/azure-firewall?azure-portal=true) is a managed, cloud-based network security service that helps protect resources in your Azure virtual networks. A virtual network is similar to a traditional network that you'd operate in your own datacenter. It's a fundamental building block for your private network that enables virtual machines and other compute resources to securely communicate with each other, the internet, and on-premises networks.
 
 Azure Firewall is a *stateful* firewall. A stateful firewall analyzes the complete context of a network connection, not just an individual packet of network traffic. Azure Firewall features high availability and unrestricted cloud scalability.
 
@@ -30,4 +30,4 @@ With Azure Firewall, you can configure:
 - Network rules that define source address, protocol, destination port, and destination address.
 - Network Address Translation (NAT) rules that define destination IP addresses and ports to translate inbound requests.
 
-[Azure Application Gateway](https://azure.microsoft.com/services/application-gateway?azure-portal=true) also provides a firewall, called the *web application firewall* (WAF). WAF provides centralized, inbound protection for your web applications against common exploits and vulnerabilities. [Azure Front Door](https://azure.microsoft.com/services/frontdoor/?azure-portal=true) and [Azure Content Delivery Network](https://azure.microsoft.com/services/cdn/?azure-portal=true) also provide WAF services.
+[Azure Application Gateway](https://azure.microsoft.com/services/application-gateway?azure-portal=true) also provides a firewall that's called the *web application firewall* (WAF). WAF provides centralized, inbound protection for your web applications against common exploits and vulnerabilities. [Azure Front Door](https://azure.microsoft.com/services/frontdoor/?azure-portal=true) and [Azure Content Delivery Network](https://azure.microsoft.com/services/cdn/?azure-portal=true) also provide WAF services.
