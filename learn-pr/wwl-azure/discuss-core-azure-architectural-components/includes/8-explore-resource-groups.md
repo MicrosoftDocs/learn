@@ -34,7 +34,7 @@ When creating and placing resources within resource groups there are a few consi
 
 Resource groups exist to help manage and organize your Azure resources. By placing resources of similar usage, type, or location, you can provide some order and organization to resources you create in Azure. Logical grouping is the aspect that we're most interested in here, since there's a lot of disorder among our resources.
 
-![Conceptual image showing a resource group box with a Function, VM, database, and app included](../media/2-resource-group.PNG)
+![Conceptual image showing a resource group box with a Function, VM, database, and app included](../media/2-resource-group.png)
 
 ### Life cycle
 
