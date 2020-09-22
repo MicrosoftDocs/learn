@@ -10,8 +10,6 @@ metadata:
   ms.prod: learning-azure
 title: Check your knowledge
 durationInMinutes: 4
-content: |
-  [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:

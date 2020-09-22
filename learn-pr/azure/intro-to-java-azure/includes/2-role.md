@@ -6,7 +6,7 @@ It is only logical that Azure supports Java developers on multiple levels to dep
 
 Microsoft itself has high interest in supporting Java and Java on Azure. Did you know, that multiple Java OSS maintainers work here?
 
-Example Java OSS projects where Microsoft/Microsoft Employees contribute to
+Example Java OSS projects where Microsoft/Microsoft Employees contribute to?
 Where does Microsoft use Java in its products?
 
 - LinkedIn Backend
