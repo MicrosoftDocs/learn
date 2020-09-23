@@ -12,7 +12,7 @@ To use the Azure Machine Learning designer, you create a *pipeline* that you wil
 
 In this module, you'll train a regression model that predicts the price of an automobile based on its characteristics. Azure Machine Learning includes a sample dataset that you can use for this model.
 
-1. On the left side of the designer, select the **Datasets** (&#8981;) tab, and drag the **Automobile price data (Raw)** dataset from the **Samples** section onto the canvas.
+1. On the left side of the designer, expand the **Sample datasets** section, and drag the **Automobile price data (Raw)** dataset from the **Samples** section onto the canvas.
 2. Right-click (Ctrl+click on a Mac) the **Automobile price data (Raw)** dataset on the canvas, and on the **Visualize** menu, select **Dataset output**.
 3. Review the schema of the data, noting that you can see the distributions of the various columns as histograms.
 4. Scroll to the right of the dataset until you see the **Price** column. This is the label your model will predict.
@@ -29,7 +29,7 @@ In this module, you'll train a regression model that predicts the price of an au
 
 You typically apply data transformations to prepare the data for modeling. In the case of the automobile price data, you'll add transformations to address the issues you identified when exploring the data.
 
-1. In the pane on the left, view the **Modules** (&#8862;) tab and expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
+1. In the pane on the left, expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
 2. Drag a **Select Columns in Dataset** module to the canvas, below the **Automobile price data (Raw)** module. Then connect the output at the bottom of the **Automobile price data (Raw)** module to the input at the top of the **Select Columns in Dataset** module, like this:
 
 > [!div class="centered"]
