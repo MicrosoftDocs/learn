@@ -33,7 +33,7 @@ For example, $\ket{0}$ and $\ket{1}$ are two possible states of a qubit. A qubit
 > quantum mechanics, but the details are beyond the scope of this module. For
 > quantum computing, you don't have to worry about it. Here we will understand 
 > measurement to be the informal idea of "observing" a qubit, which immediately
-> collapses the quantum superposition to one of the two basic states that correspond to classical values 0 and 1. 
+> collapses the quantum superposition to one of the two basic states that correspond to classical values **0** and **1**. 
 >
 > To learn more about the historical discussion of measurement in quantum mechanics, see the
 > Wikipedia article about the [Measurement
@@ -106,7 +106,7 @@ applied to a register of qubits to modify the states to a particular
 superposition of all possibilities. Each possible state has an associated
 probability amplitude. When we make a measurement, we obtain one of the possible
 states with a certain probability. This fact contrasts with classical computing,
-where a bit can only be deterministically 0 or 1.
+where a bit can only be deterministically **0** or **1**.
 
 > [!NOTE]
 > Whereas some programs for classical computers are also probabilistic,

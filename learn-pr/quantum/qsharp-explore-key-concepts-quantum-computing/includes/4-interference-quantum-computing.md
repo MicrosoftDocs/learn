@@ -15,9 +15,9 @@ module. The Schrödinger equation has the same mathematical structure as classic
 
 ![A diagram showing a wave function and the Schrödinger equation.](../media/4-wave.png)
 
-You might have also heard the term *probability wave*. In fact, the term
-*probability amplitude* is inspired by the idea of the *amplitude* of a
-wave.
+You might have also heard the term *probability wave*. In fact, the idea of the *amplitude* of a
+wave inspired the term
+*probability amplitude*.
 
 Because probability amplitudes of qubits can be described by wavelike equations, you'll observe many of the well-known properties of waves. Quantum
 algorithms exploit these properties to perform calculations. In particular,
@@ -47,7 +47,7 @@ There are two types of interference:
 
 ![Diagram depicting noise cancellation. The diagram shows the waves of the noise source, antinoise, and resulting noise.](../media/4-noise-cancellation.png)
 
-Constructive and destructive interferences are due to *relative phases* between
+Constructive and destructive interferences are caused by *relative phases* between
 the waves. In the next figure, you can see how the relative phase determines the
 distance between the peaks of the waves and therefore how they interfere.
 
@@ -67,7 +67,7 @@ You used the following superposition to create the quantum random number generat
 
 $$\ket{\psi_1}= \frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}.$$
 
-In this case, the probabilities of measuring 0 and 1 are both $\frac12$.
+In this case, the probabilities of measuring **0** and **1** are both $\frac12$.
 Remember, each amplitude squared gives the probability of obtaining each state.
 
 However, the following state also gives the same probabilities for each outcome.
@@ -85,10 +85,10 @@ $$\ket{\psi}=\frac1{\sqrt2}\ket{\psi_1}+\frac1{\sqrt2}\ket{\psi_2}=
 $$= \frac12 \left(\ket{0}+\ket{0}\right)+ \frac12\left(\ket{1}-\ket{1}\right)=
 \ket{0}.$$
 
-Here, the amplitudes of $\ket{0}$ had the same phase. Like waves, they constructively
-interfered, doubling the probability of obtaining 0. On the other hand, the
+Here, the amplitudes of $\ket{0}$ had the same phase. They constructively
+interfered like waves, doubling the probability of obtaining **0**. Conversely, the
 amplitudes of $\ket{1}$ had the opposite phase and destructively interfered,
-eliminating the probability of obtaining 1.
+eliminating the probability of obtaining **1**.
 
 > [!NOTE]
 > Qubits don't necessarily interfere with each other, but their

@@ -8,7 +8,7 @@ Start by creating a Q# project like you did for the quantum random number genera
 1. Enter *Q#: Create New Project*.
 1. Select **Standalone console application**.
 1. Select a directory to hold your project. For example, select your home directory. Enter *ExploringSuperposition* as the project name. Then select **Create Project**.
-1. From the window that appears at the bottom, select **Open new project**.
+1. From the window that appears below, select **Open new project**.
 
 Like before, you see two files: the project file and *Program.qs*, which contains starter code.
 
