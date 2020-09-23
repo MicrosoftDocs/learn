@@ -22,7 +22,7 @@ Another common phishing goal is to deliver malicious software, called *malware*.
 
 Phishing is one of the most common threats on the internet. In 2019 alone, the [FBI's Internet Crime Complaint Center (IC3) reported over 450,000 complaints, recording more than $3.5 billion in losses to individuals and businesses.](https://www.fbi.gov/news/stories/2019-internet-crime-report-released-021120?azure-portal=true) This only represents a small number of the actual cases. In other words, it is a popular and successful way for a criminal to steal your data.
 
-:::image type="content" source="../media/2-phishing-stats.png" alt-text="Diagram showing a phishing attempt by an attacker with statistical descriptions the prevalence of phishing attacks." lightbox="../media/2-phishing-stats-large.png":::
+:::image type="content" source="../media/2-phishing-stats.png" alt-text="Diagram showing the statistical outcome of the billions of phishing emails sent. Specifically, 92.4% of malware is delivered via email, 30% of phishing messages received get opened and 12% of those users click the malicious link or open the attachment." lightbox="../media/2-phishing-stats-large.png":::
 
 ## Why does phishing work so often?
 
@@ -34,7 +34,7 @@ Another common approach is to offer something too good to be true. The attacker 
 
 One other common approach that attackers will use is to take advantage of your curiosity. For example, they may be making a fake job offer, pretending to be an old friend, or asking for help for their fake nonprofit.
 
-:::image type="content" source="../media/2-phishing-examples.png" alt-text="Diagram describing common social engineering tactics. Examples describe taking advantage of human emotions and leveraging human curiosity. Includes an example with valued goods as a common item phishing attackers will leverage." lightbox="../media/2-phishing-examples-large.png":::
+:::image type="content" source="../media/2-phishing-examples.png" alt-text="Three-part diagram depicting common social engineering tactics. Examples include taking advantage of human emotions and curiosity, as well as offers of valued goods." lightbox="../media/2-phishing-examples-large.png":::
 
 ## What can you do to protect yourself?
 
@@ -52,7 +52,7 @@ Here are some common features of phishing attacks that you should be on the look
 
 In the image below, you can see an example of an email with all of these red flags.
 
-:::image type="content" source="../media/2-phishing-email.svg" alt-text="Sample email showcasing common features in phishing attack emails." lightbox="../media/2-phishing-email-large.png":::
+:::image type="content" source="../media/2-phishing-email.svg" alt-text="Sample email showcasing common signs of phishing, including fake email addresses, unexpected attachments, urgent messaging, bad links, and poor grammar." lightbox="../media/2-phishing-email-large.png":::
 
 Now that you recognize phishing email and decided to not click any links or open any attachments, let’s talk about what else you can do. Your email application or website probably has the *report phishing* feature. Using this feature will notify the email provider and help prevent similar email in the future. And, of course, you can delete the phishing email too.
 

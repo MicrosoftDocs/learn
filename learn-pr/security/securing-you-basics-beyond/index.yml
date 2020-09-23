@@ -9,13 +9,13 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Securing you: Basics and beyond"
-summary: As security threats increase in number and sophistication, protecting yourself online has become incredibly important. This module will provide an overview of the security landscape, reviewing strategies and resources available for staying secure at work and at home. You'll learn about privacy, get an in-depth view into current threats, and learn effective techniques for maintaining a strong security posture.
+summary: Security-related advice can be difficult to understand and follow. What many people have asked for is a simple description of how to secure their computers and online accounts without needing in-depth training or hours of study. This module will give you simple advice you can follow, tools you can use, and pitfalls to avoid, to ensure that you can remain secure online.
 abstract: | 
   In this module, you will:
-  - Identify common threats to your online identity and account data
-  - Apply techniques to recognize and avoid phishing
-  - Secure your online accounts by using a password manager
-  - Secure your online accounts by using multi-factor authentication
+  - Learn about various threats and how they can affect you
+  - Quickly identify common phishing techniques and safely avoid phishing email
+  - Secure your online accounts more effectively by using passphrases and a password manager
+  - Secure your online accounts even better by using simple technique called multi-factor authentication
 prerequisites: | 
   - Basic experience using a web browser
   - Basic experience using email
