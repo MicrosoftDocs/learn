@@ -2,12 +2,12 @@
 uid: learn.aks-deployment-pipeline-github-actions.1-introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 09/08/2020
-  author: khaosdoctor
-  ms.author: ludossan
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
-  ms.prod: github
+  ms.prod: learning-azure
 title: Introduction
 durationInMinutes: 2
 content: |
