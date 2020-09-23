@@ -6,11 +6,11 @@ computing.
 
 Suppose you have a register with only two qubits. There are four possible basis states:
 
-$$\ket{00}, \ket{01}, \ket{10}, \ket{11}.$$
+$$|00\rangle, |01\rangle, |10\rangle, |11\rangle.$$
 
 It's possible to put two of these options into superposition:
 
-$$\ket{\psi}=\frac1{\sqrt2}\ket{00}+\frac1{\sqrt2}\ket{11}.$$
+$$|\psi\rangle=\frac1{\sqrt2}|00\rangle+\frac1{\sqrt2}|11\rangle.$$
 
 In such a state, only two outcomes are possible when measuring the state of both qubits in the standard basis: **00** and **11**, each with a
 probability of $\frac12$. There is zero probability of obtaining **01** and
@@ -27,7 +27,7 @@ probability of $\frac12$. There is zero probability of obtaining **01** and
 
 Similarly, you can set up a superposition state:
 
-$$\ket{\psi}=\frac1{\sqrt2}\ket{01}+\frac1{\sqrt2}\ket{10}.$$
+$$|\psi\rangle=\frac1{\sqrt2}|01\rangle+\frac1{\sqrt2}|10\rangle.$$
 
 In this case, only **01** and **10** are the possible outcomes. Again you would know
 by measuring one of the qubits, what the result of the other one would be. This
@@ -57,7 +57,7 @@ to simulate with classical computers.
 
 Suppose you have a molecule with $n$ different atoms that are entangled. The
 state of the system would be described by a superposition of states in the form
-$\ket{x_0,x_1,...,x_{n-1}}$, where $x_i$ is the individual state of the
+$|x_0,x_1,...,x_{n-1}\rangle$, where $x_i$ is the individual state of the
 $i^{\text{th}}$ atom. If each $x_i$ has two states in superposition, then we
 need $2^n$ complex parameters to represent the probability amplitudes for each
 possible state of the whole system. Also, the number of operations needed to

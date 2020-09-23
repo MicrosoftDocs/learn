@@ -68,28 +68,28 @@ Qubit states follow the same mathematics as waves.
 
 You used the following superposition to create the quantum random number generator:
 
-$$\ket{\psi_1}= \frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}.$$
+$$|\psi_1\rangle= \frac1{\sqrt2}|0\rangle+\frac1{\sqrt2}|1\rangle.$$
 
 In this case, the probabilities of measuring **0** and **1** are both $\frac12$
 (remember each amplitude squared gives the probability of obtaining each state).
 However, the following state also gives the same probabilities for each outcome:
 
-$$\ket{\psi_2}= \frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}.$$
+$$|\psi_2\rangle= \frac1{\sqrt2}|0\rangle-\frac1{\sqrt2}|1\rangle.$$
 
-Notice the minus sign, which makes the relative phase between the $\ket{0}$ and
-$\ket{1}$ states different.
+Notice the minus sign, which makes the relative phase between the $|0\rangle$ and
+$|1\rangle$ states different.
 
-If you then consider an equal superposition of the states $\ket{\psi_1}$ and
-$\ket{\psi_2}$:
+If you then consider an equal superposition of the states $|\psi_1\rangle$ and
+$|\psi_2\rangle$:
 
-$$\ket{\psi}=\frac1{\sqrt2}\ket{\psi_1}+\frac1{\sqrt2}\ket{\psi_2}=
-\frac1{\sqrt2}\left(\frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}\right)+\frac1{\sqrt2}\left(\frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}\right)$$
-$$= \frac12 \left(\ket{0}+\ket{0}\right)+ \frac12\left(\ket{1}-\ket{1}\right)=
-\ket{0}.$$
+$$|\psi\rangle=\frac1{\sqrt2}|\psi_1\rangle+\frac1{\sqrt2}|\psi_2\rangle=
+\frac1{\sqrt2}\left(\frac1{\sqrt2}|0\rangle+\frac1{\sqrt2}|1\rangle\right)+\frac1{\sqrt2}\left(\frac1{\sqrt2}|0\rangle-\frac1{\sqrt2}|1\rangle\right)$$
+$$= \frac12 \left(|0\rangle+|0\rangle\right)+ \frac12\left(|1\rangle-|1\rangle\right)=
+|0\rangle.$$
 
-The amplitudes of $\ket{0}$ had the same phase. Like waves, they constructively
+The amplitudes of $|0\rangle$ had the same phase. Like waves, they constructively
 interfered, doubling the probability of obtaining **0**. On the other hand, the
-amplitudes of $\ket{1}$ had the opposite phase and destructively interfered,
+amplitudes of $|1\rangle$ had the opposite phase and destructively interfered,
 eliminating the probability of obtaining **1**.
 
 > [!NOTE]
