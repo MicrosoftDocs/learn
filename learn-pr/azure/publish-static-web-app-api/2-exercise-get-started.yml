@@ -9,7 +9,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-javascript-framework
+azureSandbox: true
 title: Exercise - Get started
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/2-exercise-get-started.md)]

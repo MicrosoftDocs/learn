@@ -35,13 +35,11 @@ products:
 units:
   - learn.azure.static-web-app-and-api.1-introduction
   - learn.azure.static-web-app-and-api.2-exercise-get-started
-  - learn.azure.static-web-app-and-api.3-static-web-apps
-  - learn.azure.static-web-app-and-api.4-exercise-static-web-apps
-  - learn.azure.static-web-app-and-api.7-build-api
-  - learn.azure.static-web-app-and-api.8-exercise-func-app
-  - learn.azure.static-web-app-and-api.9-action
-  - learn.azure.static-web-app-and-api.10-exercise-action
-  - learn.azure.static-web-app-and-api.11-knowledge-check
-  - learn.azure.static-web-app-and-api.12-summary
+  - learn.azure.static-web-app-and-api.3-build-api
+  - learn.azure.static-web-app-and-api.4-exercise-func-app
+  - learn.azure.static-web-app-and-api.5-action
+  - learn.azure.static-web-app-and-api.6-exercise-action
+  - learn.azure.static-web-app-and-api.7-knowledge-check
+  - learn.azure.static-web-app-and-api.8-summary
 badge:
   uid: learn.azure.static-web-app-api.badge
