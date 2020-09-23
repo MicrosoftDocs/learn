@@ -86,10 +86,10 @@ state is $|01\rangle$. The following table summarizes the four possibilities:
 
 | Initial state  | After applying $H$ to the control qubit        | After applying $CNOT$                           |   |   |
 |----------------|------------------------------------------------|-------------------------------------------------|---|---|
-| $|0_c0_t\rangle$ | $\frac{1}{\sqrt{2}}(|0_c0_t\rangle+|1_c0_t\rangle)$ | $\frac{1}{\sqrt{2}}(|0_c0_t\rangle+|1_c1_t\rangle)$ |   |   |
-| $|0_c1_t\rangle$ | $\frac{1}{\sqrt{2}}(|0_c1_t\rangle+|1_c1_t\rangle)$ | $\frac{1}{\sqrt{2}}(|0_c1_t\rangle+|1_c0_t\rangle)$ |   |   |
-| $|1_c0_t\rangle$ | $\frac{1}{\sqrt{2}}(|0_c0_t\rangle-|1_c0_t\rangle)$ | $\frac{1}{\sqrt{2}}(|0_c0_t\rangle-|1_c1_t\rangle)$ |   |   |
-| $|1_c1_t\rangle$ | $\frac{1}{\sqrt{2}}(|0_c1_t\rangle-|1_c1_t\rangle)$ | $\frac{1}{\sqrt{2}}(|0_c1_t\rangle-|1_c0_t\rangle)$ |   |   |
+| $\|0_c0_t\rangle$ | $\frac{1}{\sqrt{2}}(\|0_c0_t\rangle+\|1_c0_t\rangle)$ | $\frac{1}{\sqrt{2}}(\|0_c0_t\rangle+\|1_c1_t\rangle)$ |   |   |
+| $\|0_c1_t\rangle$ | $\frac{1}{\sqrt{2}}(\|0_c1_t\rangle+\|1_c1_t\rangle)$ | $\frac{1}{\sqrt{2}}(\|0_c1_t\rangle+\|1_c0_t\rangle)$ |   |   |
+| $\|1_c0_t\rangle$ | $\frac{1}{\sqrt{2}}(\|0_c0_t\rangle-\|1_c0_t\rangle)$ | $\frac{1}{\sqrt{2}}(\|0_c0_t\rangle-\|1_c1_t\rangle)$ |   |   |
+| $\|1_c1_t\rangle$ | $\frac{1}{\sqrt{2}}(\|0_c1_t\rangle-\|1_c1_t\rangle)$ | $\frac{1}{\sqrt{2}}(\|0_c1_t\rangle-\|1_c0_t\rangle)$ |   |   |
    
 
 ### Controlled operations
