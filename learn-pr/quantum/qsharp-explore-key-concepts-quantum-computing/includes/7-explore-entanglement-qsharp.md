@@ -1,34 +1,36 @@
-Now you're going to create quantum entanglement with Q#. You're also going to
-estimate the resources you need to run our algorithms with the tool
-`ResourcesEstimator` provided by the Quantum Development Kit.
+Now you'll create quantum entanglement in Q#. You'll also
+estimate the resources that you need to run our algorithms. You'll use the tool
+`ResourcesEstimator` that's in the Quantum Development Kit.
 
 ## Create the project
 
-Start by creating a Q# project like you did previously in this module. To do so:
+Start by creating a Q# project like you did previously in this module. 
 
 1. On the **View** menu, select **Command Palette**.
-1. Enter **Q#: Create New Project**.
+1. Enter *Q#: Create New Project*.
 1. Select **Standalone console application**.
-1. Select a directory to hold your project, such as your home directory. Enter *ExploringEntanglement* as the project name, then select **Create Project**.
-1. From the window that appears at the bottom, select **Open new project**.
+1. Select a directory to hold your project. For example, use your home directory. Enter *ExploringEntanglement* as the project name. Then select **Create Project**.
+1. In the window that appears below, select **Open new project**.
 
 Like before, you see two files: the project file and *Program.qs*, which contains starter code.
 
-## Create entanglement with Q\#
+## Create entanglement in Q\#
 
-Until now, you used only single qubit operations, this is, operations that act
-over single qubits individually. However, to get qubits entangled you need
-what is called **multi-qubit gates**.
+Until now, you've used only single qubit operations. These operations act
+on single qubits individually. To get qubits entangled, you need
+*multiqubit gates*.
 
-The most prominent example of a multi-qubit gate is the
+The most prominent example of a multiqubit gate is the
 [`CNOT`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.cnot?azure-portal=true)
-operation. This operation takes two qubits as input, and flips the state of the
-second qubit (target qubit) if and only if the state of the first qubit (control
-qubit) is $\ket{1}$. With the help of the `H` operation and the `CNOT`, you can
+operation. This operation takes two qubits as input. Then it flips the state of the
+second qubit (the target qubit) if, and only if, the state of the first qubit (the control
+qubit) is $\ket{1}$. With the help of the `H` operation and the `CNOT` operation, you can
 transform a register in the state $\ket{00}$ to the entangled state
-$\frac1{\sqrt2}(\ket{00}+\ket{11})$. You can see how:
+$\frac1{\sqrt2}(\ket{00}+\ket{11})$. 
 
-1. First we prepare a superposition in the control qubit applying $H$.
+Here's how it works:
+
+1. Prepare a superposition in the control qubit applying $H$.
 
    $$H \ket{0_c}= \frac{1}{\sqrt{2}}(\ket{0_c}+\ket{1_c})$$
    
@@ -36,7 +38,7 @@ $\frac1{\sqrt2}(\ket{00}+\ket{11})$. You can see how:
    > We use the subscripts ${}_c$ and ${}_t$ to specify the control and target qubits for the $CNOT$ operator.
    > By convention the first qubit always refers to the control qubit and the second qubit always refers to the target qubit.
 
-1. Now apply the $CNOT$ operator to the joint state of the control qubit in superposition and
+1. Apply the $CNOT$ operator to the joint state of the control qubit in superposition and
 the target qubit in the state $\ket{0_t}$.
 
    $$CNOT \frac{1}{\sqrt2}(\ket{0_c0_t}+\ket{1_c0_t})=\frac{1}{\sqrt2}(CNOT\ket{0_c0_t}+CNOT\ket{1_c0_t})= \frac{1}{\sqrt2}(\ket{0_c0_t}+\ket{1_c1_t})$$
