@@ -98,4 +98,4 @@ quiz:
       explanation: Fast is good, but this blocker might not be addressed by trying to move faster
     - content: Align foundation
       isCorrect: true
-      explanation: "There are many ways to adopt the cloud and several decisions along the way. Clear documentation of your [foundational decisions](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/cloud-concepts) will help new team members understand your environment and decisions quickly."
+      explanation: "There are many ways to adopt the cloud and several decisions along the way. Clear documentation of your [foundational decisions](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/cloud-concepts) will help new team members understand your environment and decisions quickly." 

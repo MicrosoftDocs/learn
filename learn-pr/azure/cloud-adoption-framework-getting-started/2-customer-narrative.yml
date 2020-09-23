@@ -42,4 +42,4 @@ quiz:
       explanation: Multiple functions are required to be successful when migrating production workloads. As adoption continues the alignment of teams will become more important.
     - content: It depends... All of the above
       isCorrect: true
-      explanation: At different stages of cloud adoption, the risks and roadblocks will change. The next module in this series will help detect and address each of these common risks.
+      explanation: At different stages of cloud adoption, the risks and roadblocks will change. The next module in this series will help detect and address each of these common risks. 
