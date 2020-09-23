@@ -1,6 +1,6 @@
 Now you'll create quantum entanglement in Q#. You'll also
-estimate the resources that you need to run our algorithms. You'll use the tool
-`ResourcesEstimator` that's in the Quantum Development Kit (QDK).
+estimate the resources that you need to run our algorithms. To estimate resources, you'll use the 
+`ResourcesEstimator` tool that the Quantum Development Kit (QDK) provides.
 
 ## Create the project
 
@@ -16,8 +16,8 @@ Like before, you see two files: the project file and *Program.qs*, which contain
 
 ## Create entanglement in Q\#
 
-Until now, you've used only single qubit operations. These operations act
-on single qubits individually. To get qubits entangled, you need
+Until now, you've used only single-qubit operations. These operations act
+on single qubits individually. To entangle qubits, you need
 *multiqubit gates*.
 
 The most prominent example of a multiqubit gate is the
@@ -57,7 +57,7 @@ To implement this pattern in Q#:
    dotnet run
    ```
 
-Your output will look something like this:
+Your output looks something like this:
 
 ```output
 Entangled state before measurement:
@@ -127,10 +127,12 @@ previous example, because the operations are equivalent.
 > A functor in Q# is a map from the implementations of operations to new
 > operations. For example, by adding the keyword `Controlled` in front of an
 > operation `OperationA`, you define a new operation `Controlled OperationA`. 
+>
 > Q# has only two functors: 
-> * `Controlled`, which creates controlled versions of
+> - `Controlled`, which creates controlled versions of
 > the operations 
-> * `Adjoint`, which creates the adjoint version. 
+> - `Adjoint`, which creates the adjoint version of the operations 
+>
 > For more information
 > about these functors and many other Q# features, see the [Q# user
 > guide](https://docs.microsoft.com/quantum/user-guide/using-qsharp/operations-functions#calling-operation-specializations?azure-portal=true).
@@ -138,7 +140,7 @@ previous example, because the operations are equivalent.
 ## Estimate resources by using Q\#
 
 The QDK provides a built-in tool that allows you to estimate the
-resources required to run a given Q# code on a quantum computer. It's called
+resources that a quantum computer requires to run a given Q# code. The tool is called
 [`ResourcesEstimator`](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator?azure-portal=true).
 It "runs" the quantum operation without actually simulating the state of a quantum
 computer. For this reason, it can estimate resources for Q# operations that use
@@ -191,18 +193,21 @@ For this example, you could easily know how many resources you needed
 without using `ResourcesEstimator`. But Q# is a high-level
 programming language. It's virtually impossible to know
 directly how many resources most programs need. You'll find 
-`ResourcesEstimator` to be a very useful tool as you advance 
+`ResourcesEstimator` to be a useful tool as you advance 
 as a Q# quantum developer.
 
 >[!NOTE]
-> Clifford gates are a basic kind of quantum operation and are useful
-> to estimate the amount of resources needed to perform a quantum
+> Clifford gates are a basic kind of quantum operation. They help you
+> estimate how many resources you need to perform a quantum
 > computation. Both $H$ and $CNOT$ are examples of Clifford operations. The
-> `QubitClifford` row includes only single-qubit Clifford operations. You can
-> learn more about them in the [Wikipedia page on Clifford
+> `QubitClifford` row includes only single-qubit Clifford operations. 
+>
+>For more information,
+> see the Wikipedia page about [Clifford
 > gates](https://en.wikipedia.org/wiki/Clifford_gates).
 
-To learn more about `ResourcesEstimator` and get a detailed description of each of
-the parameters of the output and more estimation tools, see [QDK resources estimator](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator?azure-portal=true) in the user guide.
+For more information about `ResourcesEstimator`, about each of
+the parameters in the output, and about other estimation tools, 
+see [QDK resources estimator](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator?azure-portal=true).
 
-In the next part, you'll explore two different quantum algorithms that make use of superposition, interference, and entanglement to outperform classical computers.
+In the next part, you'll explore two quantum algorithms that use superposition, interference, and entanglement to outperform classical computers.
