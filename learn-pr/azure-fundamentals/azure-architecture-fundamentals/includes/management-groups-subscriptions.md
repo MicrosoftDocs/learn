@@ -6,7 +6,7 @@ As Tailwind Traders gets started with Azure, one of your first steps will be to 
 
 ## Azure subscriptions
 
-Using Azure requires an Azure subscription. A subscription provides you with authenticated and authorized access to Azure products and services. It also allows you to provision resources. An Azure subscription is a logical unit of Azure services that links to an Azure account, which is an identity in Azure Active Directory (Azure AD) or in a directory that an Azure AD trusts.
+Using Azure requires an Azure subscription. A subscription provides you with authenticated and authorized access to Azure products and services. It also allows you to provision resources. An Azure subscription is a logical unit of Azure services that links to an Azure account, which is an identity in Azure Active Directory (Azure AD) or in a directory that Azure AD trusts.
 
 [![Diagram showing Azure subscriptions using authentication and authorization to access Azure accounts.](../media/subscriptions.png)](../media/subscriptions-expanded.png#lightbox)
 
