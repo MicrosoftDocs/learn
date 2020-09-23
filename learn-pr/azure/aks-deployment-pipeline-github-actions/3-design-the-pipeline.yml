@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-deployment-pipeline-github-actions.3-design-the-pipeline
+metadata:
+  title: Design the Deployment Pipeline
+  description: Overview and understand what will be the deployment pipeline you're going to build during this module
+  ms.date: 09/08/2020
+  author: khaosdoctor
+  ms.author: ludossan
+  ms.topic: interactive-tutorial
+  ms.prod: github
+title: Design the Deployment Pipeline
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-design-the-pipeline.md)]

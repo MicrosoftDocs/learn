@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-deployment-pipeline-github-actions.7-helm
+metadata:
+  title: Deployment using Helm
+  description: Discover and understand Helm, a tool that will help you easily create and deploy AKS applications.
+  ms.date: 09/08/2020
+  author: khaosdoctor
+  ms.author: ludossan
+  ms.topic: interactive-tutorial
+  ms.prod: github
+title: Deployment using Helm
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-helm.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What is Helm?"
+      choices:
+        - content: "It's an open source tool hosted by CNCF that helps developers deploy and maintain Kubernetes-ready applications"
+          isCorrect: true
+          explanation: "Correct, Helm is one of the most useful tools in the Kubernetes toolchain"
+        - content: "It's a CI tool that helps build and deploy Docker containers"
+          isCorrect: false
+          explanation: "Despite being used in CI/CD pipelines, Helm is not related to Docker images"
+        - content: "It's a different implementation of a Kubernetes cluster which aims to facilitate the use of the CLI"
+          isCorrect: false
+          explanation: "Helm is not a different implementation of Kubernetes."
+
+    - content: "Why is Helm useful in a CI pipeline?"
+      choices:
+        - content: "We can use Helm charts to provide easier access to our hosted Docker images"
+          isCorrect: false
+          explanation: "Helm is not used to provide faster or easier access to Docker images"
+        - content: "Helm allows us to better version our Kubernetes' manifest YAML files"
+          isCorrect: false
+          explanation: "This can be done without Helm, too."
+        - content: "Because Helm provides several features such as templating which are not present in Kubernetes templates"
+          isCorrect: true
+          explanation: "Correct, beyond that, Helm also allows one-click deployment and provides a CLI to resolve chart dependencies, reducing the number of steps needed to deploy a K8S application"

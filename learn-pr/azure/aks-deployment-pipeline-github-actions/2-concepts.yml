@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-deployment-pipeline-github-actions.2-concepts
+metadata:
+  title: Understand basic architectural concepts
+  description: Explore some of the CI/CD concepts you need to consider when you configure your first GitHub action.
+  ms.date: 09/08/2020
+  author: khaosdoctor
+  ms.author: ludossan
+  ms.topic: interactive-tutorial
+  ms.prod: github
+title: Understand basic architectural concepts
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-concepts.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What is the difference between CI and CD?"
+      choices:
+        - content: "CI is related to integration and testing, while CD is related to packaging and deployment"
+          isCorrect: true
+          explanation: "Yes, while CI is related to the integration of a team's code, CD is more related to the packaging and deployment of such code"
+        - content: "None, those are two names for the same practice."
+          isCorrect: false
+          explanation: "Despite the difference being small, it's possible to have CI without CD and CD without CI, so they cannot be considered the same"
+        - content: "CI is related to the people while CD is related to tooling"
+          isCorrect: false
+          explanation: "Both of the concepts are not directly related to people, but to tooling."

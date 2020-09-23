@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.aks-deployment-pipeline-github-actions
+metadata:
+  title: Set up up an AKS deployment pipeline using GitHub Actions
+  description: Explore how to create an automated deployment pipeline by using GitHub Actions along with AKS
+  ms.date: 09/08/2020
+  author: khaosdoctor
+  ms.author: ludossan
+  ms.topic: interactive-tutorial
+  ms.prod: github
+title: Set up up an AKS deployment pipeline using GitHub Actions
+summary: Rapidly deploy a containerized application to Azure Kubernetes Services by using GitHub actions triggered by GitHub events.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe a continuos integration (CI) and continuous deployment (CD) process using GitHub Actions
+  - Create a deployment pipeline using GitHub Actions and Azure
+  - Deploy a cloud-native application to Azure Kubernetes service (AKS) by using GitHub Actions
+prerequisites: |
+  - Access to an Azure subscription
+  - Access to a GitHub account
+  - Basic knowledge of executing commands using Azure CLI
+  - Basic knowledge of Kubernetes and its concepts
+  - Basic knowledge of AKS and its concepts
+  - Basic knowledge of Git and GitHub
+iconUrl: /learn/achievements/aks-deployment-pipeline-github-actions.svg
+levels:
+  - beginner
+roles:
+  - solution-architect
+  - developer
+  - devops-engineer
+products:
+  - azure
+  - azure-kubernetes-service
+  - azure-container-registry
+  - github
+units:
+  - learn.aks-deployment-pipeline-github-actions.1-introduction
+  - learn.aks-deployment-pipeline-github-actions.2-concepts
+  - learn.aks-deployment-pipeline-github-actions.3-design-the-pipeline
+  - learn.aks-deployment-pipeline-github-actions.4-exercise-set-up-project
+  - learn.aks-deployment-pipeline-github-actions.5-application-images
+  - learn.aks-deployment-pipeline-github-actions.6-exercise-build-image
+  - learn.aks-deployment-pipeline-github-actions.7-helm
+  - learn.aks-deployment-pipeline-github-actions.8-exercise-deploy-workflow
+  - learn.aks-deployment-pipeline-github-actions.9-summary
+badge:
+  uid: learn.aks-deployment-pipeline-github-actions
