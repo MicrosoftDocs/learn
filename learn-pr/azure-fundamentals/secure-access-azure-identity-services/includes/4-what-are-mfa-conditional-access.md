@@ -13,13 +13,13 @@ Multifactor authentication provides additional security for your identities by r
 
 These elements fall into three categories:
 
-* **Something you know**
+* **Something the user knows**
 
-    This might be your email address and password.
-* **Something you have**
+    This might be an email address and password.
+* **Something the user has**
 
-    This might be a code that's sent to your mobile phone.
-* **Something you are**
+    This might be a code that's sent to the user's mobile phone.
+* **Something the user is**
 
     This is typically some sort of biometric property, such as a fingerprint or face scan that's used on many mobile devices.
 
@@ -27,7 +27,7 @@ These elements fall into three categories:
 
 Multifactor authentication increases identity security by limiting the impact of credential exposure (for example, stolen usernames and passwords). With multifactor authentication enabled, an attacker who has a user's password would also need to have possession of their phone or their fingerprint to fully authenticate.
 
-Compare multifactor authentication with single-factor authentication. Under single-factor authentication, an attacker would need only your username and password to authenticate. Multifactor authentication should be enabled wherever possible because it adds enormous benefits to security.
+Compare multifactor authentication with single-factor authentication. Under single-factor authentication, an attacker would need only a username and password to authenticate. Multifactor authentication should be enabled wherever possible because it adds enormous benefits to security.
 
 ## What's Azure Multi-Factor Authentication?
 
@@ -48,7 +48,7 @@ For more information on licenses and Azure Multi-Factor Authentication capabilit
 
 ## What's Conditional Access?
 
-Conditional Access is a tool Azure Active Directory uses to allow (or deny) access to resources based on identity _signals_. These signals include who the user is, where the user is, and what device the user is requesting access from.
+Conditional Access is a tool that Azure Active Directory uses to allow (or deny) access to resources based on identity _signals_. These signals include who the user is, where the user is, and what device the user is requesting access from.
 
 Conditional Access helps IT administrators:
 
@@ -86,7 +86,7 @@ Conditional Access is useful when you need to:
     A _managed device_ is a device that meets your standards for security and compliance.
 * Block access from untrusted sources, such as access from unknown or unexpected locations.
 
-Conditional Access comes with a *What If* tool, which helps you plan and troubleshoot your Conditional Access policies. You can use this tool to model your proposed Conditional Access policies across recent sign-in attempts from your users to see what the impact would have been if those policies had been enabled. The What If tool enables you to test your proposed conditional access policies before you implement them.
+Conditional Access comes with a *What If* tool, which helps you plan and troubleshoot your Conditional Access policies. You can use this tool to model your proposed Conditional Access policies across recent sign-in attempts from your users to see what the impact would have been if those policies had been enabled. The What If tool enables you to test your proposed Conditional Access policies before you implement them.
 
 ### Where is Conditional Access available?
 

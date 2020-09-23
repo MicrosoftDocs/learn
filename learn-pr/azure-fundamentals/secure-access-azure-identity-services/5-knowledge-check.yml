@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: How can the IT department ensure that employees at their retail stores can access company applications only from approved tablet devices?
+  - content: How can the IT department ensure that employees at the company's retail stores can access company applications only from approved tablet devices?
     choices:
     - content: SSO
       isCorrect: false
@@ -30,13 +30,13 @@ quiz:
     choices:
     - content: SSO
       isCorrect: false
-      explanation: Although SSO enables a user to remember only one ID and one password to access multiple applications, it does not use biometric properties to verify the user's identity.
+      explanation: Although SSO enables a user to remember only one ID and one password to access multiple applications, it doesn't use biometric properties to verify the user's identity.
     - content: Conditional Access
       isCorrect: false
-      explanation: Although Conditional Access enables you to allow or deny access to resources based on identity signals, it does not use biometric properties to verify the user's identity.
+      explanation: Although Conditional Access enables you to allow or deny access to resources based on identity signals, it doesn't use biometric properties to verify the user's identity.
     - content: Multifactor authentication
       isCorrect: true
-      explanation: Authenticating through Multifactor authentication can include something the user knows, something the user has, and something the user is.
+      explanation: Authenticating through multifactor authentication can include something the user knows, something the user has, and something the user is.
   - content: How can the IT department reduce the number of times users must authenticate to access multiple applications?
     choices:
     - content: SSO
