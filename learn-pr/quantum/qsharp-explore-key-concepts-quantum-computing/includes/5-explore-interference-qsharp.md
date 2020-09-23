@@ -14,27 +14,27 @@ Like before, you see two files: the project file and *Program.qs*, which contain
 
 ## Make two states interfere
 
-As we saw in the previous part, when we put the states $\ket{\psi_1}=
-\frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}$ and $\ket{\psi_2}=
-\frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}$ in a superposition, the probability
-amplitude of $\ket{1}$ vanishes. For $\ket{0}$, the probability amplitude doubles.
+In the previous part, when we put the states $|\psi_1\rangle=
+\frac1{\sqrt2}|0\rangle+\frac1{\sqrt2}|1\rangle$ and $|\psi_2\rangle=
+\frac1{\sqrt2}|0\rangle-\frac1{\sqrt2}|1\rangle$ in a superposition, the probability
+amplitude of $|1\rangle$ vanished. For $|0\rangle$, the probability amplitude doubled.
 
 To see this effect in Q#, you can use the `H`
-operation. You already know that $ H \ket{0} = \ket{\psi_1}$. You used this principle 
+operation. You already know that $ H |0\rangle = |\psi_1\rangle$. You used this principle
 for the quantum random bit generator. But if you apply $ H$ to the state
-$\ket{1}$, you obtain $\ket{\psi_2}$.
+$|1\rangle$, you obtain $|\psi_2\rangle$.
 
-You then apply `H` twice to the state $\ket{0}$:
+You then apply `H` twice to the state $|0\rangle$:
 
-$$ H  H \ket{0}=  H \frac1{\sqrt2}(\ket{0}+\ket{1}).$$
+$$ H  H |0\rangle=  H \frac1{\sqrt2}(|0\rangle+|1\rangle).$$
 
 Because $ H$ is a linear operator:
 
-$$=\frac1{\sqrt2}( H \ket{0}+ H \ket{1})=
-\frac1{\sqrt2}(\ket{\psi_1}+\ket{\psi_2}).$$
+$$=\frac1{\sqrt2}( H |0\rangle+ H |1\rangle)=
+\frac1{\sqrt2}(|\psi_1\rangle+|\psi_2\rangle).$$
 
-So applying $ H$ twice to $\ket{0}$ is mathematically the same as
-superposing the states $\ket{\psi_1}$ and $\ket{\psi_2}$.
+So applying $ H$ twice to $|0\rangle$ is mathematically the same as
+superposing the states $|\psi_1\rangle$ and $|\psi_2\rangle$.
 
 Here are the steps in Q#:
 
@@ -94,17 +94,17 @@ information about the phase of each amplitude. So far you have
 seen only amplitudes that have zero phases (that is, real positive amplitudes). Let's look at a state
 that has amplitudes with nonzero phases.
 
-You know that the state $\ket{\psi_2}$ has a negative amplitude for the state
-$\ket{1}$. You can create this state in Q#:
+You know that the state $|\psi_2\rangle$ has a negative amplitude for the state
+$|1\rangle$. You can create this state in Q#.
 
 1. Modify *Program.qs* like the following example. Then save the file.
 
    :::code language="qsharp" source="code/5-program-2.qs":::
 
    In this code, you:
-   1. Transform $\ket{0}$ into $\ket{1}$ by using the [X](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.X?azure-portal=true) operation.
-   1. Apply `H` to obtain $\ket{\psi_2}$.
-   1. Use `DumpMachine` to inspect the phases of the state $\ket{\psi_2}$.
+   1. Transform $|0\rangle$ into $|1\rangle$ by using the [X](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.X?azure-portal=true) operation.
+   1. Apply `H` to obtain $|\psi_2\rangle$.
+   1. Use `DumpMachine` to inspect the phases of the state $|\psi_2\rangle$.
 
 1. In the terminal, run `dotnet run`:
 
@@ -120,7 +120,7 @@ Here's an example of the output that you should expect:
 |1⟩:    -0,707107 +  0.000000 i  ==     ***********          [ 0.500000 ] ---     [  3,14159 rad ]
 ```
 
-You see that the phase for the state $\ket{1}$ is $\pi$ radians. You see this phase because
+You see that the phase for the state $|1\rangle$ is $\pi$ radians. You see this phase because
 the negative numbers in the complex plane are in the negative part of the
 x-axis. The result is $\pi$ radians in polar coordinates. Although
 the phase is nonzero, the probabilities remain the same.
@@ -147,7 +147,7 @@ You should expect the following output.
 |1⟩:     0.000000 + -0,707107 i  ==     ***********          [ 0.500000 ]        [ -1.57080 rad ]
 ```
 
-You get a phase of $\frac\pi2$ for $\ket{0}$ and a phase of $-\frac\pi2$ for $\ket{1}$.
+You get a phase of $\frac\pi2$ for $|0\rangle$ and a phase of $-\frac\pi2$ for $|1\rangle$.
 Those angles correspond to the positive and negative parts of the imaginary
 y-axis of the complex plane.
 
