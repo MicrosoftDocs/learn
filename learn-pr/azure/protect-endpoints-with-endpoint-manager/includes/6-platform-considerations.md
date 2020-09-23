@@ -35,7 +35,7 @@ The supported OS versions for clients and devices that can be managed by Configu
 - Windows computers
     - Windows 10 (x86, x64, ARM64): Enterprise, Pro, Education, Pro Education, Pro for Workstation, Windows Insider
     - Windows 10 Enterprise 2015 LTSB, Enterprise 2016 LTSB, and Enterprise LTSC 2019
-    - **Windows 8.1** (x86, x64): Professional, Enterprise
+    - Windows 8.1 (x86, x64): Professional, Enterprise
 - Windows Servers (*several variations available*)
 - Windows Server Core (*several variations available*)
 - Windows Virtual Desktop
