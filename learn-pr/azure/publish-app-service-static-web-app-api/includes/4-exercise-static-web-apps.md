@@ -8,7 +8,7 @@ This tutorial uses the Azure sandbox to provide you with a free, temporary Azure
 
 The Azure sandbox that you just activated allows you to use Azure services without incurring any costs.
 
-## Install the Azure Static Web Apps extension for Visual Studio
+## Install the Azure Static Web Apps extension for Visual Studio Code
 
 1. Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps&azure-portal=true) and install the **Azure Static Web Apps** extension for Visual Studio Code.
 
