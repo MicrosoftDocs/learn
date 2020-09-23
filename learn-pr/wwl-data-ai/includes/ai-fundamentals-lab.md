@@ -16,7 +16,6 @@ If you already have an Azure Machine Learning workspace in your Azure subscripti
     - **Subscription**: *your Azure subscription*
     - **Resource group**: *create a new resource group with a unique name*
     - **Location**: *choose any available location*
-    - **Workspace edition**: Enterprise
 3. Wait for your workspace resource to be created (it can take a few minutes). Then go to it in the portal, and on the **Overview** page for your workspace, launch Azure Machine Learning studio (or open a new browser tab and navigate to [https://ml.azure.com](https://ml.azure.com?azure-portal=true)), and sign into Azure Machine Learning studio using your Microsoft account.
 4. In Azure Machine Learning studio, toggle the  **&#9776;** icon at the top left to view the various pages in the interface. You can use these pages to manage the resources in your workspace.
 
@@ -28,7 +27,7 @@ To run the notebook used in this exercise, you will need a compute instance in y
 2. On the **Compute Instances** tab, create a new compute instance with the following settings:
     - **Compute name**: *enter a unique name*
     - **Virtual Machine type**: CPU
-    - **Virtual Machine size**: Standard_DS2_v2
+    - **Virtual Machine size**: Standard_DS11_v2
 3. Wait for the compute instance to start (this may take a minute or so)
 
 ### Download the exercise files
