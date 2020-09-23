@@ -69,9 +69,9 @@ cd ..
 
 ## Test the project in the cloud
 
-1. Go to "Apps" in your Azure Spring Cloud instance.
-    1. Verify that `gateway` has a `Discovery status` which says `UP(1),DOWN(0)`. This shows that it is correctly registered in the Spring Cloud Service Registry.
-    1. Select `gateway` to have more information on the microservice.
+1. Go to **Apps** in your Azure Spring Cloud instance.
+    1. Verify **gateway** has a Discovery status that says UP(1),DOWN(0). This shows that it is correctly registered in the Spring Cloud Service Registry.
+    1. Select **gateway** to have more information on the microservice.
 1. Copy/paste the public URL that is provided (there is a "Test Endpoint" like for microservices, but the gateway is directly exposed on the Internet, so let's use the public URL). Keep this URL handy for subsequent sections.
 
 As the gateway is connected to the Spring Cloud Service Registry, it should have automatically opened routes to the available microservices, with URL paths in the form of `/MICROSERVICE-ID/**`:

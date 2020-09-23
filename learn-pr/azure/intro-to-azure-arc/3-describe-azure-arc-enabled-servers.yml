@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-arc.3-describe-azure-arc-enabled-servers
+metadata:
+  title: Describe Azure Arc enabled servers
+  description: Describe Azure Arc enabled servers
+  ms.date: 09/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe Azure Arc enabled servers
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-describe-azure-arc-enabled-servers.md)]
