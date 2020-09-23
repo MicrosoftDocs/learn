@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-endpoint-manager  
   ROBOTS: NOINDEX
 title: Knowledge Check
-durationInMinutes: 5
+durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
@@ -44,6 +44,6 @@ quiz:
     - content: "Configuration policies are used to set up protection policies."
       isCorrect: false
       explanation: "Configuration policies are used to set up devices and apps. Protection policies are used to prevent unauthorized access and prevent data leaks."
-    - content: "Protection policies are used to deploy configuraiton policies."
+    - content: "Protection policies are used to deploy configuration policies."
       isCorrect: false
       explanation: "Configuration policies are used to set up devices and apps. Protection policies are used to prevent unauthorized access and prevent data leaks."
