@@ -1,15 +1,15 @@
 
 Microsoft Azure provides multiple cognitive services that you can use to detect and analyze faces, including:
 
-- The **Custom Vision** service, which offers face detection and some basic face analysis, such as determining gender and age.
-- The **Video Indexer** service, which you can use to detect and identify faces in a video.
-- The **Face** service, which offers pre-built algorithms that can detect, recognize, and analyze faces.
+- **Computer Vision**, which offers face detection and some basic face analysis, such as determining age.
+- **Video Indexer**, which you can use to detect and identify faces in a video.
+- **Face**, which offers pre-built algorithms that can detect, recognize, and analyze faces.
 
-Of these, the Face service offers the widest range of facial analysis capabilities, so we'll focus on that service in this module.
+Of these, Face offers the widest range of facial analysis capabilities, so we'll focus on that service in this module.
 
-## The Face service
+## Face 
 
-Azure Face Service currently supports the following functionality:
+Face currently supports the following functionality:
 
 - Face Detection
 - Face Verification
@@ -17,10 +17,9 @@ Azure Face Service currently supports the following functionality:
 - Group faces based on similarities
 - Identify people
 
-The Face service can return the rectangle coordinates for any human faces that are found in an image, as well as a series of attributes related to those faces such as:
+Face can return the rectangle coordinates for any human faces that are found in an image, as well as a series of attributes related to those faces such as:
 
 - the head pose - orientation in a 3D space
-- the gender of the detected faces
 - a guess at an age
 - what emotion is displayed
 - if there is facial hair or the person is wearing glasses
@@ -31,11 +30,11 @@ The Face service can return the rectangle coordinates for any human faces that a
 - noise - refers to visual noise in the image.  If you have taken a photo with a high ISO setting for darker settings, you would notice this noise in the image.  The image looks grainy or full of tiny dots that make the image less clear
 - occlusion - determines if there may be objects blocking the face in the image
 
-## Azure resources for the Face service
+## Azure resources for Face
 
-To use the Face service, you must create one of the following types of resource in your Azure subscription:
+To use Face, you must create one of the following types of resource in your Azure subscription:
 
-- **Face**: A specific resource for the Face service. Use this resource type if you don't intend to use any other cognitive services, or if you want to track utilization and costs for the Face service separately.
+- **Face**: Use this specific resource type if you don't intend to use any other cognitive services, or if you want to track utilization and costs for Face separately.
 - **Cognitive Services**: A general cognitive services resource that includes Computer Vision along with many other cognitive services; such as Computer Vision, Text Analytics, Translator Text, and others. Use this resource type if you plan to use multiple cognitive services and want to simplify administration and development.
 
 Whichever type of resource you choose to create, it will provide two pieces of information that you will need to use it:

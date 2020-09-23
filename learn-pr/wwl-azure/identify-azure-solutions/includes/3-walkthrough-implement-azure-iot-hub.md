@@ -21,8 +21,8 @@ In this task, we will create an IoT Hub.
 
     | Settings | Value |
     |--|--|
-    | Subscription | **Choose your subscription** |
-    | Resource Group |  **myRGIoT** (create new)|
+    | Subscription | **Choose the Concierge subscription** |
+    | Resource Group |  Choose **<rgn>[sandbox resource group name]</rgn>** |
     | Region | **East US** |
     | IoT Hub Name | **my-hub-groupxxxx** |
     | | |	
@@ -64,7 +64,7 @@ In this task, we will test our device using the Raspberry Pi Simulator.
 
 2. Read about the Raspberry Pi simulator. If there is an overview pop-up select "**X**" to close the window.
 
-3. In the code area, right side, locate the line with 'const connectionString ='. Replace it with the connection string you copied from the Azure portal. Note that the connection sting includes the DeviceId (**myRaspberryPi**) and SharedAccessKey entries.
+3. In the code area, right side, locate the line with 'const connectionString ='. Replace it with the connection string you copied from the Azure portal. Note that the connection string includes the DeviceId (**myRaspberryPi**) and SharedAccessKey entries.
 
 	![Screenshot of the coding area within the Raspberry Pi simulator.](../media/0604.png)
 

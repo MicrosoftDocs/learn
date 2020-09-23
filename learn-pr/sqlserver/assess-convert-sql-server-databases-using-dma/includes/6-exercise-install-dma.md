@@ -2,6 +2,9 @@ You need to upgrade several CRM databases to SQL Server 2019. These databases in
 
 In this exercise, you'll install the Data Migration Assistant.
 
+> [!NOTE]
+> Before beginning this exercise, you must complete the **Prepare for the exercises** steps in the unit **Decide if the Data Migration Assistant (DMA) is right for your task**.
+
 ## Download the RDP connection file from Azure
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.

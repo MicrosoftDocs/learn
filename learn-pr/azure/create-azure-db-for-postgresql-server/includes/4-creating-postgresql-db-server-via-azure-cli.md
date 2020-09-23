@@ -59,8 +59,6 @@ Examples:
 - `--sku-name GP_Gen5_32` maps to General Purpose, Gen 5, and 32 vCores.
 - `--sku-name MO_Gen5_2` maps to Memory Optimized, Gen 5, and 2 vCores.
 
-Recall that we discussed the three pricing tiers in the unit where we created the server using the portal.
-
 Let's assume you want to use a Basic, Gen 5, and 1 vCore compute resource. You'll specify the parameter as `--sku-name B_Gen5_1`.
 
 You use the `--storage-size` parameter to specify part of the pricing tier. If the value isn't specified, then it defaults to 5,120 MB. Valid storage sizes range from 5,120 MB and increases in increments of 1,024 MB up to 1,048,576 MB.

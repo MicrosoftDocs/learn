@@ -1,6 +1,6 @@
-Several options are available when you're running Kubernetes locally. Recall that you can install Kubernetes on physical machines or VMs, or use a cloud-based solution such as Azure Kubernetes Service (AKS). 
+Several options are available when you're running Kubernetes locally. You can install Kubernetes on physical machines or VMs, or use a cloud-based solution such as Azure Kubernetes Service (AKS). 
 
-Your goal in this exercise is to explore a Kubernetes installation and explore a single-node Kubernetes cluster. You're going to configure a MicroK8s environment that's easy to set up and tear down. Then you'll deploy an NGINX website and scale it out to multiple instances. Finally, you'll go through the steps to delete the running pods and clean up the cluster.
+Your goal in this exercise is to explore a Kubernetes installation with a single-node cluster. You're going to configure a _MicroK8s_ environment that's easy to set up and tear down. Then you'll deploy an NGINX website and scale it out to multiple instances. Finally, you'll go through the steps to delete the running pods and clean up the cluster.
 
 > [!NOTE]
 > This exercise is optional and includes steps that show how to delete and uninstall the software and resources you'll use in the exercise.
@@ -190,7 +190,7 @@ MicroK8s provides a version of `kubectl` that you can use to interact with your 
 
 ### Display cluster node information
 
-Recall from earlier that a Kubernetes cluster exists out of master and worker nodes. Let's explore the new cluster to see what's installed.
+Recall from earlier that a Kubernetes cluster exists out of control planes and worker nodes. Let's explore the new cluster to see what's installed.
 
 1. Check the nodes that are running in your cluster. 
 
@@ -395,6 +395,8 @@ You can remove everything you've deployed so far, and even the VM, to recover sp
     ```bash
     sudo snap remove microk8s
     ```
+
+There are a few additional steps to take on Windows and macOS if you want to remove the Multipass VM manager from your machine.
 
 1. Exit the VM by running the `exit` command.
 

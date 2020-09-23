@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-python-nasa.2-artemis
+metadata:
+  title: Discover the opportunities of the Artemis Program
+  description: Learn about Artemis rover.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Discover the opportunities of the Artemis Program
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-artemis.md)]

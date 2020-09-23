@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-case-studies.4-scenario-2
 metadata:
-  title: Scenario 2 - Mission critical application
-  description: Scenario 2 - Mission critical application
+  title: Scenario 2 - Mission-critical application
+  description: Scenario 2 - Mission-critical application
   ms.date: 08/05/2020
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Scenario 2 - Mission critical application
+title: Scenario 2 - Mission-critical application
 durationInMinutes: 10
 content: |
   [!include[](includes/4-scenario-2.md)]
@@ -19,64 +19,64 @@ quiz:
       choices:
       - content: "SQL Server in an Azure virtual machine"
         isCorrect: false
-        explanation: "Doesn't readily provide an SLA that meets the requirements."
+        explanation: "This option doesn't readily provide an SLA that meets the requirements."
       - content: "Azure SQL Managed Instance"
         isCorrect: false
-        explanation: "Doesn't meet the SLA requirements."
+        explanation: "This option doesn't meet the SLA requirements."
       - content: "Azure SQL Database - single database"
         isCorrect: true
-        explanation: "Azure SQL Database is the only deployment option with a possible SLA of 99.995%. The customer can obtain that SLA by using the Business critical service tier and enabling availability zones."
+        explanation: "Azure SQL Database is the only deployment option with a possible SLA of 99.995 percent. The customer can obtain that SLA by using the Business Critical service tier and enabling availability zones."
       - content: "Azure SQL Database - elastic pool"
         isCorrect: false
-        explanation: "It's not clear from the scenario that an elastic pool is required"
+        explanation: "It's not clear from the scenario that an elastic pool is required."
     - content: "What is the best option for them to enable geo-redundancy and maintain high availability?"
       choices:
       - content: "Geo-replication"
         isCorrect: false
-        explanation: "While geo-replication and auto-failover groups are both options here, auto-failover groups will enable the customer to failover if it's required, without changing any connection strings. This setup can potentially help in reducing downtime to update applications, because it will not be needed. You can also configure monitoring queries to check the status, if something goes wrong, you could even force a failover."
+        explanation: "Although geo-replication and auto-failover groups are both options here, auto-failover groups will enable the customer to fail over if it's required, without changing any connection strings. This setup can potentially help in reducing downtime to update applications, because it won't be needed. You can also configure monitoring queries to check the status. If something goes wrong, you can even force a failover."
       - content: "Auto-failover groups"
         isCorrect: true
-        explanation: "While geo-replication and auto-failover groups are both options here, auto-failover groups will enable the customer to failover if it's required, without changing any connection strings. This setup can potentially help in reducing downtime to update applications, because it will not be needed. You can also configure monitoring queries to check the status, if something goes wrong, you could even force a failover."
+        explanation: "Although geo-replication and auto-failover groups are both options here, auto-failover groups will enable the customer to fail over if it's required, without changing any connection strings. This setup can potentially help in reducing downtime to update applications, because it won't be needed. You can also configure monitoring queries to check the status. If something goes wrong, you can even force a failover."
     - content: "What role does colocation play in your solution?"
       choices:
-      - content: "It doesn't, we'll deploy to one region only."
+      - content: "It doesn't. We'll deploy to one region only."
         isCorrect: false
-        explanation: "Since you're using an auto-failover group, this answer doesn't make sense."
-      - content: "Leveraging the auto-failover group gives us what is needed"
+        explanation: "Because you're using an auto-failover group, this answer doesn't make sense."
+      - content: "Using the auto-failover group gives us what's needed."
         isCorrect: false
-        explanation: "Almost, but what happens to your application when you failover?"
-      - content: "In addition to the failover group, need to deploy the application in both regions where the failover group exists."
+        explanation: "Almost, but what happens to your application when you fail over?"
+      - content: "In addition to the failover group, you need to deploy the application in both regions where the failover group exists."
         isCorrect: true
         explanation: "You must make sure your application is deployed in both regions for the auto-failover group. This configuration will provide a redundant copy of the application. If there's a failover, you can use Traffic Manager to reroute traffic to the application in the secondary region."
-    - content: "How can you ensure that DBAs cannot see sensitive data stored in specific columns?"
+    - content: "How can you ensure that DBAs can't see sensitive data stored in specific columns?"
       choices:
       - content: "SQL Audit"
         isCorrect: false
-        explanation: "DBAs will still be able to see the data"
+        explanation: "DBAs will still be able to see the data."
       - content: "Data Classification"
         isCorrect: false
         explanation: "Now you have labeled sensitive data, but you can't track or prevent DBAs from seeing it with this option."
-      - content: "Always Encrypted"
-        isCorrect: false
-        explanation: "While this answer is technically correct, there is a better system you can put into place"
-      - content: "All of the above" 
+      - content: "Always Encrypted with role separation"
         isCorrect: true
-        explanation: "It is not possible to keep a db_owner from viewing user data with permission only. If there is highly sensitive data in a database, Always Encrypted can be used to safely prevent even db_owners from seeing it. You can manage the Always Encrypted keys with role separation. The security admin doesn't access the database, and the DBA doesn't access the physical keys in plaintext. SQL Audit, Data Classification, and Dynamic Data masking can be also used in combination to monitor."
-    - content: "How can you track access to tables containing sensitive data?"
+        explanation: "It's not possible to keep a db_owner from viewing user data with permission only. If highly sensitive data is in a database, you can use Always Encrypted to safely prevent even db_owners from seeing it. You can manage the Always Encrypted keys with role separation. The security admin doesn't access the database, and the DBA doesn't access the physical keys in plaintext. You can also use SQL Audit, Data Classification, and Dynamic Data Masking in combination to monitor."
+      - content: "Dynamic Data Masking" 
+        isCorrect: false
+        explanation: "It's not possible to keep a db_owner from viewing user data with Dynamic Data Masking."
+    - content: "How can you track access to tables that contain sensitive data?"
       choices:
         - content: "SQL Audit and Data Classification"
           isCorrect: true
-          explanation: "Use SQL Audit and Data Classification in combination. In the Audit log, you can track access specifically to sensitive data, and you can view information such as the data that was accessed as well as its sensitivity label."
+          explanation: "Use SQL Audit and Data Classification in combination. In the audit log, you can track access to sensitive data specifically, and you can view information such as the data that was accessed and its sensitivity label."
         - content: "Data Classification and Dynamic Data Masking"
           isCorrect: false
-          explanation: "This configuration will help you identify and mask sensitive data, but you will not be able to track it"
+          explanation: "This configuration will help you identify and mask sensitive data, but you won't be able to track it."
         - content: "SQL Audit and Dynamic Data Masking"
           isCorrect: false
-          explanation: "This configuration will help you mask data and view audits, but you won't be able to see sensitive data accessed."
+          explanation: "This configuration will help you mask data and view audits, but you won't be able to see sensitive data that was accessed."
         - content: "SQL Audit only"
           isCorrect: false
-          explanation: "This configuration will allow you to access log data, but you won't be able to see sensitive data accessed."
-    - content: "How can you allow DBAs to be able to troubleshoot performance via the Azure portal and SSMS, and create new contained database users with Azure AD principals?"
+          explanation: "This configuration will allow you to access log data, but you won't be able to see sensitive data that was accessed."
+    - content: "How can you allow DBAs to troubleshoot performance via the Azure portal and SSMS, and create new contained database users with Azure AD principals?"
       choices:
         - content: "Azure AD groups" 
           isCorrect: false
@@ -89,4 +89,4 @@ quiz:
           explanation: "Almost, but the DBA group must have Azure AD admin rights on the logical server."
         - content: "None of the above" 
           isCorrect: true
-          explanation: "The answer is really a combination of the above plus a little more. Create an Azure AD group SQL DBA for the DBAs on the respective instance. Then, assign the group to the Azure RBAC role SQL Server Contributor. Finally, set the group to be the Azure AD admin on the logical server."
+          explanation: "The answer is really a combination of the above plus a little more. Create an Azure AD group called SQL DBA for the DBAs on the respective instance. Then, assign the group to the Azure RBAC role of SQL Server Contributor. Finally, set the group to be the Azure AD admin on the logical server."
