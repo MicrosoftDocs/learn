@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-deployment-pipeline-github-actions.6-exercise-build-image
+metadata:
+  title: Exercise - title
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - title
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-build-image.md)]
