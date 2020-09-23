@@ -29,36 +29,36 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 1. Open Visual Studio Code and go to **File > Open Folder** to open the repository you cloned to your computer in the editor.
 
-1. Inside Visual Studio Code, select the Azure logo in the Activity Bar to open the Azure extensions window.
+2. Inside Visual Studio Code, select the Azure logo in the Activity Bar to open the Azure extensions window.
 
    :::image type="content" source="../media/extension-azure-logo.png" alt-text="Azure Logo":::
 
    > [!NOTE]
    > Azure and GitHub sign in are required. If you are not already signed in to Azure and GitHub from Visual Studio Code, the extension will prompt you to sign in to both during the creation process.
 
-1. Place your mouse over the _Static Web Apps_ label and select the **plus sign**.
+3. Place your mouse over the _Static Web Apps_ label and select the **plus sign**.
 
    :::image type="content" source="../media/extension-create-button.png" alt-text="Application name":::
 
-1. Select the **Concierge Subscription**
+4. Select the **Concierge Subscription**
    :::image type="content" source="../media/extension-select-subscription.png" alt-text="Select Subscription":::
 
    > [!NOTE]
    > If you do not see the Concierge Subscription listed, ensure you logged into Azure in Visual Studio Code using the same account used to create the sandbox. Additionally, if you have filtered your Azure subscriptions in the Azure Account extension, verify the Concierge Subscription is checked in the `> Azure: Select Subscriptions` command.
 
-1. The command palate opens at the top of the editor and prompts you to name your application.
+5. The command palette opens at the top of the editor and prompts you to name your application.
 
    Type **my-first-static-web-app** and press **Enter**.
 
    :::image type="content" source="../media/extension-create-app.png" alt-text="Create Static Web App":::
 
-1. Select the **main** branch and press **Enter**.
+6. Select the **main** branch and press **Enter**.
 
    :::image type="content" source="../media/extension-branch.png" alt-text="Branch name":::
 
 ::: zone pivot="angular"
 
-5. Select **angular-app** as the location for the application code and press **Enter**.
+7. Select **angular-app** as the location for the application code and press **Enter**.
 
    :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Application code location":::
 
@@ -66,7 +66,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 ::: zone pivot="react"
 
-5. Select **react-app** as the location for the application code and press **Enter**.
+7. Select **react-app** as the location for the application code and press **Enter**.
 
    :::image type="content" source="../media/extension-app-location-react.png" alt-text="Application code location":::
 
@@ -74,7 +74,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 ::: zone pivot="svelte"
 
-5. Select **svelte-app** as the location for the application code and press **Enter**.
+7. Select **svelte-app** as the location for the application code and press **Enter**.
 
    :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Application code location":::
 
@@ -82,19 +82,19 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 ::: zone pivot="vue"
 
-5. Select **vue-app** as the location for the application code and press **Enter**.
+7. Select **vue-app** as the location for the application code and press **Enter**.
 
    :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Application code location":::
 
 ::: zone-end
 
-6. The extension is looking for the location of the API in your application. This article doesn't implement an API.
+8. The extension is looking for the location of the API in your application. This article doesn't implement an API.
 
    Select **Skip for now** and press **Enter**.
 
    :::image type="content" source="../media/extension-api-location.png" alt-text="API location":::
 
-7. Select the location where files are built for production in your app.
+9. Select the location where files are built for production in your app.
 
    ::: zone pivot="angular"
 
@@ -128,23 +128,23 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
    ::: zone-end
 
-8. Select a location nearest you and press **Enter**.
+10. Select a location nearest you and press **Enter**.
 
    :::image type="content" source="../media/extension-location.png" alt-text="Resource location":::
 
-9. Click the **Select Existing** button to select the resource group that has been created for you in the Azure sandbox
+11. Click the **Select Existing** button to select the resource group that has been created for you in the Azure sandbox
 
    :::image type="content" source="../media/extension-no-permissions.png" alt-text="Select existing resource group":::
 
-10. Select the resource group named <rgn>[Sandbox resource group]</rgn>
+12. Select the resource group named <rgn>[Sandbox resource group]</rgn>
 
     :::image type="content" source="../media/extension-select-resource-group.png" alt-text="Select resource group":::
 
-11. Once the app is created, a confirmation notification is shown in Visual Studio Code.
+13. Once the app is created, a confirmation notification is shown in Visual Studio Code.
 
     :::image type="content" source="../media/extension-confirmation.png" alt-text="Created confirmation":::
 
-12. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-first-static-web-app** and select **Open in Portal** to view app in the Azure portal.
+14. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-first-static-web-app** and select **Open in Portal** to view app in the Azure portal.
 
     :::image type="content" source="../media/extension-open-in-portal.png" alt-text="Open portal":::
 
