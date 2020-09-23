@@ -7,6 +7,12 @@ Here are some of the things you covered:
 - By implementing a management infrastructure, you can provide IT services, apps, protection, and configuration to your end users to make them extremely productive.
 - Endpoint Manager integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, Endpoint analytics and Windows Autopilot.
 
+## Get started with Microsoft Endpoint Manager:
+
+Determine your mobile device management and mobile application management needs:
+-	[Get a free 90-day trial, evaluate Enterprise Mobility + Security (EMS)](https://go.microsoft.com/fwlink/p/?LinkID=2077047)
+-	[Plan your deployment with FastTrack experts included in EMS subscription](https://go.microsoft.com/fwlink/?linkid=2143850)
+
 ## Learn more
 
 For more information about Microsoft Endpoint Manager, see the following resources:
