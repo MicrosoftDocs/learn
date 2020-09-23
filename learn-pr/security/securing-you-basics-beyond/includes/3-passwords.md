@@ -46,7 +46,7 @@ One famous example is the password *Pa$$w0rd*. In this example, you can meet all
 > [!TIP]
 > How long does a password or passphrase need to be? Any password you use should be at least 15 characters long. You will find that in most cases, creating a passphrase that is at least 15 characters long is easy, especially if you use five words.
 
-:::image type="content" source="../media/3-password-cracking.svg" alt-text="Chart estimating the time needed to crack a password based on length and the types of characters used. A ten-character password with a mix of symbols and numbers with upper- and lower-case letters is shown to take over a hundred years to crack." lightbox="../media/3-password-cracking-large.png":::
+:::image type="content" source="../media/3-password-cracking.svg" alt-text="Chart estimating the time needed to crack a password based on length and the types of characters used. A ten-character password with a mix of symbols and numbers with upper- and lower-case letters is shown to take over a hundred years to crack.":::
 
 ## Creating a secure and complex password/passphrase
 
@@ -83,7 +83,7 @@ With your accounts and passwords now stored securely, you'll be able to view and
 
 Now things will be more convenient. For example, when you visit a website, your password manager can automatically fill in the username and password for you. As long as you unlock your vault with your passphrase, you can log into your other accounts automatically afterwards. If you are concerned about someone else being able to use your password manager if you step away from your computer, you can set your password manager to automatically lock itself after the amount of time that you set.
 
-:::image type="content" source="../media/3-password-manager.svg" alt-text="Diagram showing a user's password manager that has access to multiple accounts, protected by a single key login." lightbox="../media/3-password-manager-large.png":::
+:::image type="content" source="../media/3-password-manager.svg" alt-text="Diagram showing a user's password manager that has access to multiple accounts, protected by a single key login.":::
 
 When you're done using your online accounts, you can close or lock the password manager. This will make sure your passwords are unavailable to anyone else that you may share a computer with.
 
