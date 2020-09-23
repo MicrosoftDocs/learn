@@ -12,10 +12,10 @@ Compute targets are cloud-based resources on which you can run model training an
 2. On the **Compute Instances** tab, add a new compute instance with the following settings. You'll use this to test your model:
     - **Compute name**: *enter a unique name*
     - **Virtual Machine type**: CPU
-    - **Virtual Machine size**: Standard_DS2_v2
+    - **Virtual Machine size**: Standard_DS11_v2
 3. While the compute instance is being created, switch to the **Compute Clusters** tab, and add a new compute cluster with the following settings. You'll use this to train a machine learning model:
     - **Compute name**: *enter a unique name*
-    - **Virtual Machine size**: Standard_DS2_v2
+    - **Virtual Machine size**: Standard_DS11_v2
     - **Virtual Machine priority**: Dedicated
     - **Minimum number of nodes**: 2
     - **Maximum number of nodes**: 2

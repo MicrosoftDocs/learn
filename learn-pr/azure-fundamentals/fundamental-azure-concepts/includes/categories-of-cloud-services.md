@@ -149,7 +149,7 @@ SaaS provides the same benefits as IaaS, but again there some additional benefit
 :::row-end:::
 :::row:::
   :::column:::
-**Skills**. No deep technical skills are required to deploy, use, and gain the benefits of PaaS.
+**Skills**. No deep technical skills are required to deploy, use, and gain the benefits of SaaS.
   :::column-end:::
   :::column:::
   :::column-end:::
