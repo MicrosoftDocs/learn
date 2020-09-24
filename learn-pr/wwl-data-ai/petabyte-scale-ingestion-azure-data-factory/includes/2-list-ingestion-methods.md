@@ -12,7 +12,6 @@ Azure Data Factory can call on compute resources to process data by a data platf
 | Azure Batch| 	Custom activities |
 | Azure Machine Learning Studio	Machine | Learning activities: Batch Execution and Update Resource |
 | Azure Machine Learning | Azure Machine Learning Execute Pipeline |
-| Azure Machine Learning | Azure Machine Learning Execute Pipeline |
 | Azure Data Lake Analytics | Data Lake Analytics U-SQL |
 | Azure SQL, Azure SQL Data Warehouse, SQL Server | Stored Procedure |
 | Azure Databricks | Notebook, Jar, Python |

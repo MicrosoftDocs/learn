@@ -126,7 +126,7 @@ The deployment succeeded, so let's see the resulting configuration in action.
 
     ```azurecli
     IPADDRESS=$(az vm show \
-      --name SimpleWinVM \
+      --name simple-vm \
       --resource-group $RESOURCEGROUP \
       --show-details \
       --query [publicIps] \
@@ -142,7 +142,7 @@ The deployment succeeded, so let's see the resulting configuration in action.
     You see this.
 
     ```html
-    <html><body><h2>Welcome to Azure! My name is SimpleWinVM.</h2></body></html>
+    <html><body><h2>Welcome to Azure! My name is simple-vm.</h2></body></html>
     ```
 
 1. From a separate browser tab, navigate to your web site.

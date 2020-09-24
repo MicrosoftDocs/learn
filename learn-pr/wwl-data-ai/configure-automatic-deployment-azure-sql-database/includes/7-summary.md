@@ -4,4 +4,5 @@ Now that you've reviewed this module, you should be able to:
 
 - Deploy an Azure Resource Manager template using PowerShell and CLI
 - Deploy an Azure Resource Manager template using Azure DevOps
-- Describe the structure of an Azure Resource Manager template
+- Describe the structure of an Azure Resource Manager template    
+ 

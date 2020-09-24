@@ -99,7 +99,7 @@ The `DumpMachine` function outputs a table with the information that describes t
        |1⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
    ```
 
-   Every qubit allocated with the `using` statement starts in the state $\ket{0}$, so `DumpMachine` outputs the information that corresponds to a single qubit register in the state $\ket{0}$.
+   Every qubit allocated with the `using` statement starts in the state $|0\rangle$, so `DumpMachine` outputs the information that corresponds to a single qubit register in the state $|0\rangle$.
 
 1. ```output
        Qubit after applying H:
@@ -109,7 +109,7 @@ The `DumpMachine` function outputs a table with the information that describes t
 
    ```
 
-   After applying `H`, we prepare the qubit into the superposition state $\ket{\psi}=\frac1{\sqrt2} \ket{0} + \frac1{\sqrt2} \ket{1}$.
+   After applying `H`, we prepare the qubit into the superposition state $|\psi\rangle=\frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle$.
 
 1. ```output
        Qubit after the measurement:
@@ -118,7 +118,7 @@ The `DumpMachine` function outputs a table with the information that describes t
        |1⟩:     1.000000 +  0.000000 i  ==     ******************** [ 1.000000 ]     --- [  0.00000 rad ]
    ```
 
-   After measuring and storing the outcome `One`, the state of the registers collapses to $\ket{1}$ and is no longer in superposition.
+   After measuring and storing the outcome `One`, the state of the registers collapses to $|1\rangle$ and is no longer in superposition.
 
 1. ```output
        Qubit after resetting:
@@ -127,8 +127,8 @@ The `DumpMachine` function outputs a table with the information that describes t
        |1⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
    ```
 
-   The operation `Reset` resets the qubit to the state $\ket{0}$. Remember that for any Q# operation you
-   always need to leave the qubits you use in the state $\ket{0}$ so that it can be used by other operations.
+   The operation `Reset` resets the qubit to the state $|0\rangle$. Remember that for any Q# operation you
+   always need to leave the qubits you use in the state $|0\rangle$ so that it can be used by other operations.
 
 > [!TIP]
 > Q# can also be run in Jupyter Notebooks. These notebooks provide a better
@@ -148,10 +148,10 @@ The current random number generator produces either `Zero` or `One` with a 50% p
 
 Suppose you want to create a random bit generator that is skewed. For example, you want the outcome `Zero` with probability $\alpha$ and the outcome `One` with probability $1-\alpha$. A valid qubit state that will produce such random bit generator is:
 
-$$\ket{\psi}=\sqrt\alpha\ket{0}+\sqrt{1-\alpha}\ket{1}$$
+$$|\psi\rangle=\sqrt\alpha|0\rangle+\sqrt{1-\alpha}|1\rangle$$
 
 This state can be obtained by sequentially applying the operator $R_y(2\arccos
-\sqrt{\alpha})$ to a qubit in the state $\ket{0}.$ You can achieve this in Q#
+\sqrt{\alpha})$ to a qubit in the state $|0\rangle.$ You can achieve this in Q#
 using operation
 [Ry](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.Ry?azure-portal=true)
 of the Standard library.
@@ -189,11 +189,11 @@ of the Standard library.
 
 Now let's explore superpositions of a register of many qubits. For example, if you have a register with three qubits, then you have eight different basis states:
 
-$$\ket{000},\ket{001},\ket{010},\ket{011},\ket{100},\ket{101},\ket{110},\ket{111} $$
+$$|000\rangle,|001\rangle,|010\rangle,|011\rangle,|100\rangle,|101\rangle, |110\rangle,|111\rangle $$
 
 Therefore, an arbitrary 3-qubit state can be expressed as:
 
-$$\ket{\psi}=a_0\ket{000}+a_1\ket{001}+a_2\ket{010}+a_3\ket{011}+a_4\ket{100}+a_5\ket{101}+a_6\ket{110}+a_7\ket{111}$$
+$$|\psi\rangle=a_0|000\rangle+a_1|001\rangle+a_2|010\rangle+a_3|011\rangle+a_4|100\rangle+a_5|101\rangle+a_6 |110\rangle+a_7|111\rangle$$
 
 where $a_i$ are complex numbers that satisfy $\sum|a_i|^2=1$.
 
@@ -207,12 +207,9 @@ instead of one qubit three times.
     Here, we introduce three concepts:
 
     * The `qubits` variable now represents a `Qubit` array with a length of three. You can learn more about arrays in Q# in the [QDK documentation](https://docs.microsoft.com/quantum/user-guide/language/types#array-types?azure-portal=true).
-    * The
-      [ApplyToEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.applytoeach?azure-portal=true),
-      [ResetAll](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.resetall)
-      and
+    * The operations [ApplyToEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.applytoeach?azure-portal=true) and
       [ForEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arrays.foreach?azure-portal=true)
-      operations perform operations and measurements on multiple qubits with
+      are useful to measure and act on multiple qubits with
       less code. Q# libraries offer many different operations and functions that make writing
       quantum programs more efficient.
     * The [BoolArrayAsInt](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.boolarrayasint?azure-portal=true) and [ResultArrayAsBoolArray](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.resultarrayasboolarray?azure-portal=true) functions from the `Microsoft.Quantum.Convert` library transform the binary `Result` array returned by `ForEach(M, qubits)` into an integer.
@@ -326,7 +323,7 @@ Let's look briefly on each step:
     |7⟩:     0.353553 +  0.000000 i  ==     ***                  [ 0.125000 ]     --- [  0.00000 rad ]
     ```
 
-1. **First measurement:** in the first measurement, the result was `One`. Therefore, all the amplitudes of the states whose rightmost qubit is `Zero` are no longer present, this is $\ket{0}=\ket{000}, \ket{2}=\ket{010}, \ket{4}=\ket{100}$ and $\ket{6}=\ket{110}$. The rest of the amplitudes increase to fulfill the normalization condition.
+1. **First measurement:** in the first measurement, the result was `One`. Therefore, all the amplitudes of the states whose rightmost qubit is `Zero` are no longer present, this is $|0\rangle=|000\rangle, |2\rangle=|010\rangle, |4\rangle=|100\rangle$ and $|6\rangle= |110\rangle$. The rest of the amplitudes increase to fulfill the normalization condition.
 
     ```output
     # wave function for qubits with ids (least to most significant): 0;1;2
@@ -342,7 +339,7 @@ Let's look briefly on each step:
 
 1. **Second measurement:** in the second measurement, the result was `Zero`, so
    all the amplitudes of the states whose second rightmost (middle) qubit is `One` get
-   vanished, this is $\ket{3}=\ket{011}$, and $\ket{7}=\ket{111}$. The rest of the
+   vanished, this is $|3\rangle=|011\rangle$, and $|7\rangle=|111\rangle$. The rest of the
    amplitudes increase to fulfill the normalization condition.
 
     ```output
@@ -359,7 +356,7 @@ Let's look briefly on each step:
 
 1. **Third measurement:** in the third measurement, the result was `One`, so all
    the amplitudes of the states whose leftmost qubit is `Zero` clear out. The only
-   compatible state is $\ket{5}=\ket{101}$, that gets an amplitude probability
+   compatible state is $|5\rangle=|101\rangle$, that gets an amplitude probability
    of $1$.
 
     ```output
