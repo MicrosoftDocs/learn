@@ -1,0 +1,24 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.provide-disaster-recovery-replicate-storage-data.exercise-change-replication-strategy
+title: Exercise - View replication
+metadata:
+  title: Exercise - View replication
+  description: Learn how to view the replication status for an Azure Storage account.
+  ms.date: 04/30/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-change-replication-strategy.md)]
+tasks:
+- action: exists
+  environment: azure
+  hint: "Run the `az storage account create` command above to create a storage account."
+  azure:
+    resource:
+      type: "Microsoft.Storage/storageAccounts"
+      kind: "StorageV2"
