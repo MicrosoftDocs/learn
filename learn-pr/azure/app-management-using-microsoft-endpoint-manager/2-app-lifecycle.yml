@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.paths-to-modern-endpoint-management.2-app-lifecycle
-title: App lifecycle
+title: App management lifecycle
 metadata:
-  title: App lifecycle
-  description: Understand the app lifecycle in Microsoft Endpoint Manager.
+  title: App management lifecycle
+  description: Understand the app management lifecycle in Microsoft Endpoint Manager.
   ms.date: 08/19/2020
   author: Erikre
   ms.author: erikre
