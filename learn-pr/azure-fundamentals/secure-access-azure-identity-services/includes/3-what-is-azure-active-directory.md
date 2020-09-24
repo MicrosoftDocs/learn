@@ -1,4 +1,4 @@
-In this unit, you learn how Azure Active Directory (Azure AD) provides identity services that enable your users to sign in and access both Microsoft cloud applications and cloud applications that you develop. You also learn how Azure AD supports single sign-on (SSO).
+In this part, you learn how Azure Active Directory (Azure AD) provides identity services that enable your users to sign in and access both Microsoft cloud applications and cloud applications that you develop. You also learn how Azure AD supports single sign-on (SSO).
 
 Tailwind Traders already uses Active Directory to secure its on-premises environments. The company doesn't want its users to have a different username and password to remember for accessing applications and data in the cloud. Can the company integrate its existing Active Directory instance with cloud identity services to create a seamless experience for its users?
 
@@ -34,6 +34,10 @@ Azure AD is for:
     A _tenant_ is a representation of an organization. A tenant is typically separated from other tenants and has its own identity.
 
     Each Microsoft 365, Office 365, Azure, and Dynamics CRM Online tenant is automatically an Azure AD tenant.
+
+Here's a screenshot of what an IT administrator might see in the Azure portal when working with Active Directory:
+
+:::image type="content" source="../media/3-azure-active-directory.png" alt-text="A screenshot of the Azure portal showing Azure Active Directory. The overview tab shows basic information about the current tenant.":::
 
 ## What services does Azure AD provide?
 
