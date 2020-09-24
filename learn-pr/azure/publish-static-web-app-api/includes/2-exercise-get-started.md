@@ -8,7 +8,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 Next, create a new repository by using a GitHub template repository. A series of templates are available where each contains a starter app built with a different front-end framework.
 
-1. Navigate to the [create from template page](https://github.com/MicrosoftDocs/mslearn-staticwebapp/generate?azure-portal=true) for the template repository.
+1. Navigate to the [create from template page](https://github.com/MicrosoftDocs/mslearn-staticwebapp-api/generate?azure-portal=true) for the template repository.
    - If you get a 404 Page Not Found error, sign in to GitHub and try again.
 1. If prompted for **Owner**, choose one of your GitHub accounts
 1. Name your repository **my-static-web-app**
@@ -302,7 +302,7 @@ You can check the status of your build and deploy action by navigating to the Ac
 
 1. Click the link shown below in the screenshot
 
-   :::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
+   :::image type="content" source="../media/portal-goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
 
 1. Click **Azure Static Web Apps CI/CD**
 1. Click the topmost commit titled similar to **ci: add Azure Static Web Apps workflow file**
@@ -314,9 +314,9 @@ From here, you can observe the progress of your app as it builds.
 
 Once your GitHub Action finishes building and publishing your web app, you can browse to see your running app.
 
-Click on the _URL_ link in the Azure portal to visit your app in the browser.
+1. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-static-web-app-and-api** and select **Browse Site** to view app in your browser.
 
-:::image type="content" source="../media/static-web-apps-resource-overview.png" alt-text="Azure Static Web Apps overview page":::
+   :::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site":::
 
 :::image type="content" source="../media/my-shopping-list-app-loading.png" alt-text="Browsing to your web app":::
 
@@ -329,4 +329,4 @@ Congratulations! You've deployed your first app to Azure Static Web Apps!
 
 ## Next steps
 
-Next you'll learn how to handle all unmatched page requests to the server and map them to navigate to a valid page in your app.
+Next you'll learn how to build and run your API using an Azure Functions project.
