@@ -160,9 +160,9 @@ To expose your website to the world via DNS, you must create an ingress controll
     The command should output a result similar to the following example.
 
     ```output
-    ZoneName                               ResourceGroup                                     RecordSets    MaxRecordSets
-    -------------------------------------  ------------------------------------------------  ------------  ---------------
-    5cd29ec927f24764b052.eastus.aksapp.io  mc_contoso-aks_contoso-kubernetes-cluster_eastus  2             10000
+    ZoneName                               ResourceGroup                                 RecordSets    MaxRecordSets
+    -------------------------------------  --------------------------------------------  ------------  ---------------
+    5cd29ec927f24764b052.eastus.aksapp.io  mc_rg-contoso-video_aks-contoso-video_eastus  2             10000
     ```
 
 1. Copy the `ZoneName`, and update the `ingress.yaml` file to match the following YAML. Replace the `<zone-name>` placeholder value with the `ZoneName` value you copied.
@@ -249,9 +249,9 @@ Now we need to deploy the service for our changes to take effect.
     The command should output a result similar to the following example.
 
     ```output
-    ZoneName                               ResourceGroup                                     RecordSets    MaxRecordSets
-    -------------------------------------  ------------------------------------------------  ------------  ---------------
-    5cd29ec927f24764b052.eastus.aksapp.io  mc_contoso-aks_contoso-kubernetes-cluster_eastus  4             10000
+    ZoneName                               ResourceGroup                                 RecordSets    MaxRecordSets
+    -------------------------------------  --------------------------------------------  ------------  ---------------
+    5cd29ec927f24764b052.eastus.aksapp.io  mc_rg-contoso-video_aks-contoso-video_eastus  4             10000
     ```
 
 1. Copy the `ZoneName` and `ResourceGroup` columns, and run the `az network dns` command. Replace the `<resource-group>` and `<zone-name>` value placeholders with the values you copied.
@@ -263,12 +263,12 @@ Now we need to deploy the service for our changes to take effect.
     The command should output a result similar to the following example.
 
     ```output
-    Fqdn                                            Name     ProvisioningState    ResourceGroup                                     Ttl
-    ----------------------------------------------  -------  -------------------  ------------------------------------------------  ------
-    5cd29ec927f24764b052.eastus.aksapp.io.          @        Succeeded            mc_contoso-aks_contoso-kubernetes-cluster_eastus  172800
-    5cd29ec927f24764b052.eastus.aksapp.io.          @        Succeeded            mc_contoso-aks_contoso-kubernetes-cluster_eastus  3600
-    contoso.5cd29ec927f24764b052.eastus.aksapp.io.  contoso  Succeeded            mc_contoso-aks_contoso-kubernetes-cluster_eastus  300
-    contoso.5cd29ec927f24764b052.eastus.aksapp.io.  contoso  Succeeded            mc_contoso-aks_contoso-kubernetes-cluster_eastus  300
+    Fqdn                                            Name     ProvisioningState    ResourceGroup                                 Ttl
+    ----------------------------------------------  -------  -------------------  --------------------------------------------  ------
+    5cd29ec927f24764b052.eastus.aksapp.io.          @        Succeeded            mc_rg-contoso-video_aks-contoso-video_eastus  172800
+    5cd29ec927f24764b052.eastus.aksapp.io.          @        Succeeded            mc_rg-contoso-video_aks-contoso-video_eastus  3600
+    contoso.5cd29ec927f24764b052.eastus.aksapp.io.  contoso  Succeeded            mc_rg-contoso-video_aks-contoso-video_eastus  300
+    contoso.5cd29ec927f24764b052.eastus.aksapp.io.  contoso  Succeeded            mc_rg-contoso-video_aks-contoso-video_eastus  300
     ```
 
     Make sure there are two new records at the bottom of the list with the host we created in the `host` key. The `ProvisioningState` value is `Succeeded`. It can take up to two minutes for zone records to propagate.
