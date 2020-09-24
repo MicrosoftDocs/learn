@@ -2,6 +2,10 @@ On Azure, virtual machines (VMs) run on shared hardware that Microsoft manages. 
 
 Some organizations must follow regulatory compliance that requires them to be the only customer using the physical machine that hosts their virtual machines. [Azure Dedicated Host](https://azure.microsoft.com/services/virtual-machines/dedicated-host/?azure-portal=true) provides dedicated physical servers to host your Azure VMs for Windows and Linux.
 
+Here's a diagram that shows how virtual machines relate to dedicated hosts and host groups. A *dedicated host* is mapped to a physical server in an Azure datacenter. A *host group* is a collection of dedicated hosts.
+
+:::image type="content" source="../media/6-dedicated-hosts.png" alt-text="A diagram that shows the relationship among virtual machines, dedicated hosts, and host groups." border="false":::
+
 ## What are the benefits of Azure Dedicated Host?
 
 Azure Dedicated Host:

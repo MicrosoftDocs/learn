@@ -47,6 +47,10 @@ Tailwind Traders needs to be notified when something suspicious occurs. It decid
 
 When Azure Sentinel detects suspicious events, Tailwind Traders can investigate specific alerts or *incidents* (a group of related alerts). With the investigation graph, the company can review information from entities directly connected to the alert and see common exploration queries to help guide the investigation.
 
+Here's an example that shows what an investigation graph looks like in Azure Sentinel:
+
+:::image type="content" source="../media/3-investigate-incidents.png" alt-text="An example incident investigation graph in Azure Sentinel." lightbox="../media/3-investigate-incidents.png":::
+
 The company will also use [Azure Monitor Workbooks](https://docs.microsoft.com/azure/azure-monitor/platform/workbooks-overview/?azure-portal=true) to automate responses to threats. For example, it can set an alert that looks for malicious IP addresses that access the network and create a workbook that does the following steps:
 
 1. When the alert is triggered, open a ticket in the IT ticketing system.
