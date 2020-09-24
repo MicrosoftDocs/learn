@@ -122,6 +122,9 @@ that finds a complex phase of an operation. By using the complex phase, you can 
 of the function.
 
 ![Diagram outlining R S A encryption and Shor's algorithm.](../media/8-shor.png)
+
+The RSA (Rivest-Shamir-Adleman) encryption scheme is one of the most widely used cryptosystems for secure date transmission. Its principle relies on the fact that a set of private parameters (p, q, d, and r) is difficult to obtain by using classical algorithms. They're difficult because they need to be derived by factoring a large number, N. However, Shor's algorithm can efficiently obtain one of the parameters, r. The algorithm can then use this parameter to infer the other parameters, as indicated in the mathematical relations in the preceding figure. Therefore, the encryption of the message can be broken.
+
 ![Diagram explaining Shor's algorithm.](../media/8-shor-2.svg)
 
 ### Outline of Shor's algorithm

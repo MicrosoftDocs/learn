@@ -109,7 +109,7 @@ The `DumpMachine` function creates a table of information that describes the sta
 
    ```
 
-   After applying `H`, we prepare the qubit into the superposition state $|\psi\rangle=\frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle$.
+   After applying `H`, we prepare the qubit in the superposition state $|\psi\rangle=\frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle$.
 
 1. ```output
        Qubit after the measurement:
@@ -141,7 +141,7 @@ The `DumpMachine` function creates a table of information that describes the sta
 ## Explore some superpositions
 
 Now that you know how to inspect the state of a register, you can see operations
-that modify the state of your qubits and prepare them into a superposition.
+that modify the state of your qubits and place them into a superposition.
 
 The current random number generator produces either `Zero` or `One` with a 50 percent probability. Let's look at a second example that generates random numbers with a different probability.
 
@@ -159,7 +159,7 @@ in the Standard library.
 
 > [!TIP]
 > To learn more about the math behind single-qubit operations, check out the
-> [Single-qubit gates Quantum Katas](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/SingleQubitGates?azure-portal=true) tutorial.
+> [Single-qubit gates Quantum Kata](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/SingleQubitGates?azure-portal=true) tutorial.
 
 1. Modify *Program.qs* like the following example, and then save the file.
 
@@ -188,7 +188,7 @@ in the Standard library.
 
 ### Multiple-qubit superposition
 
-Now let's explore superpositions of a register that includes many qubits. For example, if your register includes three qubits, then you have eight basis states:
+Now let's explore superpositions of a register that includes many qubits. For example, if your register consists of three qubits, then you have eight basis states:
 
 $$|000\rangle,|001\rangle,|010\rangle,|011\rangle,|100\rangle,|101\rangle, |110\rangle,|111\rangle $$
 
@@ -339,7 +339,7 @@ Let's look briefly at each step:
     ```
 
 1. **Second measurement**: In the second measurement, the result was `Zero`. Therefore,
-   all of the amplitudes of the states whose second rightmost (middle) qubit is `One` are no longer present.
+   all of the amplitudes of the states whose second rightmost (middle) qubit is `One` vanish.
 The amplitudes are $|3\rangle=|011\rangle$ and $|7\rangle=|111\rangle$. The rest of the
    amplitudes increase to fulfill the normalization condition.
 

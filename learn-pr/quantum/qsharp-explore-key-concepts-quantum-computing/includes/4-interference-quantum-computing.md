@@ -1,7 +1,7 @@
 Until now, you've been using superpositions only with real positive amplitudes.
 You might be wondering, why not directly use the probabilities to represent the
 superposition? Well, the ability to have negative and complex amplitudes is one
-of the main capacities that makes quantum computing work. Let's examine this ability
+of the main physical phenomena that makes quantum computing work. Let's examine this ability
 further.
 
 ## Waves of probabilities
@@ -29,8 +29,8 @@ As we mentioned earlier, probability amplitudes can be complex numbers.
 
 Complex numbers are a handy mathematical tool to describe waves. In fact, they were used to describe waves long before the discovery of quantum mechanics. They help us understand interference.
 
-But what is wave interference? Waves are governed by a linear equation. (Remember, waves and quantum states are mathematically identical.) This characteristic
-implies that waves can be superposed, just like we discussed for quantum states earlier. Superposition of different waves enables their amplitudes
+But what is wave interference? Waves are governed by a linear equation. This characteristic
+implies that waves can be superposed, just like we discussed for quantum states earlier. (Remember, waves and quantum states are mathematically identical.) Superposition of different waves enables their amplitudes
 to interfere, resulting in different effects on the overall state. 
 
 There are two types of interference:
@@ -98,7 +98,7 @@ eliminating the probability of obtaining **1**.
 
 Interference is one of the basic principles behind the power of quantum
 computing. Quantum interference can be harnessed to cancel the amplitudes of
-states that don't help you solve the problem. They can also be used to increase the amplitudes
+states that don't help you solve the problem, while increasing the amplitudes
 of states that lead you to the solution.
 
 In the next part, you'll see how you can use Q# to explore quantum interference.

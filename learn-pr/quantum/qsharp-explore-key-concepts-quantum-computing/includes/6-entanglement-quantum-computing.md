@@ -4,7 +4,7 @@ computing.
 
 ## Correlations between qubits
 
-Suppose you have a register that includes only two qubits. Four basis states are possible:
+Suppose you have a register that consists of only two qubits. Four basis states are possible:
 
 $$|00\rangle, |01\rangle, |10\rangle, |11\rangle$$
 

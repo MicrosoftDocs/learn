@@ -126,7 +126,7 @@ previous example, because the operations are equivalent.
 > [!NOTE]
 > A functor in Q# is a map from the implementations of operations to new
 > operations. For example, by adding the keyword `Controlled` in front of an
-> operation `OperationA`, you define a new operation `Controlled OperationA`. 
+> operation `Operation1`, you define a new operation `Controlled Operation1`. 
 >
 > Q# has only two functors: 
 > - `Controlled`, which creates controlled versions of

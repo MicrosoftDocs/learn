@@ -22,6 +22,16 @@ the system.
 
 The probability amplitude is an important difference from classical computing. In quantum computing, we don't describe bits as being in determined, factual states. Rather, we describe bits by the probabilities of finding their states when we observe them.
 
+> [!NOTE]
+> In this module and the documentation for Q#, we use $\LaTeX$
+> fonts for mathematical *linear operators* that take qubit states to qubit
+> states. Conversely, we use `code` font to represent *Q# operations*
+> that take qubit registers as inputs to transform their state. For example, the
+> linear operator $H$ maps the input state $|0\rangle$ to the state
+> $H|0\rangle=\frac{1}{\sqrt2}(|0\rangle+|1\rangle),$ while the operation `H` acts on
+> a qubit as `H(qubit)` to change the state of `qubit` from $|0\rangle$ to
+> $\frac{1}{\sqrt2}(|0\rangle+|1\rangle)$.
+
 ### What's Dirac bra-ket notation?
 
 A handy notation to describe quantum states is the Dirac bra-ket notation. In this notation, we describe the possible states of quantum systems by using kets $| \rangle$.
@@ -29,13 +39,14 @@ A handy notation to describe quantum states is the Dirac bra-ket notation. In th
 For example, $|0\rangle$ and $|1\rangle$ are two possible states of a qubit. A qubit in the state $|\psi\rangle = |0\rangle$ means that the probability of observing `Zero` when we measure the qubit is 100 percent. Similarly, a qubit in the state $|\psi\rangle =|1\rangle$ produces `One` we measure it.
 
 > [!NOTE]
-> The concept of *measurement* is interpreted in many ways in
+> There are many interpretations of the concept of *measurement* in
 > quantum mechanics, but the details are beyond the scope of this module. For
 > quantum computing, you don't have to worry about it. Here we will understand 
 > measurement to be the informal idea of "observing" a qubit, which immediately
 > collapses the quantum superposition to one of the two basis states that correspond to classical values **0** and **1**. 
 >
-> To learn more about the historical discussion of measurement in quantum mechanics, see the
+> To learn more about measurement in the
+> context of quantum mechanics and its historical discussion, see the
 > Wikipedia article about the [Measurement
 > problem](https://wikipedia.org/wiki/Measurement_problem).
 
@@ -79,16 +90,6 @@ quantum mechanics and therefore of quantum computing.
 > also known as the *Hadamard gate*. You used this operator to create quantum
 > superpositions. By contrast, the symbol $\hat H$ (with the hat) refers to the Hamiltonian
 > operator that's part of the Schrödinger equation. 
-
-> [!NOTE]
-> In this module and the documentation for Q#, we use $\LaTeX$
-> fonts for mathematical *linear operators* that take qubit states to qubit
-> states. Conversely, we use `code` font to represent *Q# operations*
-> that take qubit registers as inputs to transform their state. For example, the
-> linear operator $H$ maps the input state $|0\rangle$ to the state
-> $H|0\rangle=\frac{1}{\sqrt2}(|0\rangle+|1\rangle),$ while the operation `H` acts on
-> a qubit as `H(qubit)` to change the state of `qubit` from $|0\rangle$ to
-> $\frac{1}{\sqrt2}(|0\rangle+|1\rangle)$.
 
 > [!NOTE]  
 > Sometimes people talk about *quantum gates* instead of *operations*. The term *quantum gate* is an 

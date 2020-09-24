@@ -8,7 +8,7 @@ Here's a brief summary:
 - The phase of a quantum state is relevant for quantum interference. States that have opposite phases interfere destructively. States that have the same phase interfere constructively.
 - Two qubits are entangled if their states are correlated and if they can't be described as two independent qubits.
 
-The Quantum Development Kit (QDK) offers many tools to boost quantum development. In this module, you used `DumpMachine` to inspect quantum states. You used `ResourcesEstimator` to see what resources you need to run your program on a quantum computer.
+The [Quantum Development Kit (QDK)](https://docs.microsoft.com/quantum/quickstarts/get-started) offers many tools to boost quantum development. In this module, you used `DumpMachine` to inspect quantum states. You used `ResourcesEstimator` to see what resources you need to run your program on a quantum computer.
 
 ## Learn more
 
