@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore Azure database and analytics services
-summary: In this module, you'll learn about several of the database services that are available on Microsoft Azure, such as Azure Cosmos DB, Azure SQL, Azure Database for MySQL, and Azure Database for PostgreSQL. In addition, you'll learn about several of Azure's big data and analysis services.
+summary: In this module, you'll learn about several of the database services that are available on Microsoft Azure, such as Azure Cosmos DB, Azure SQL, Azure Database for MySQL, and Azure Database for PostgreSQL. In addition, you'll learn about several of the big data and analysis services in Azure.
 abstract: | 
   After completing this module, you'll be able to describe the benefits and usage of:
   - Azure Cosmos DB
@@ -22,7 +22,6 @@ abstract: |
   - Azure Data Lake Analytics
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology
-  - You should be familiar with cloud computing is helpful, but isn't necessary
   - You should be familiar with basic database concepts and terminology
 iconUrl: /learn/achievements/azure-database-fundamentals.svg
 levels:

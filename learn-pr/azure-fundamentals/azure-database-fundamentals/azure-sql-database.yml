@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-database-fundamentals.azure-sql-database
-title: Explore Azure SQL database
+title: Explore Azure SQL Database
 metadata:
-  title: Explore Azure SQL database
+  title: Explore Azure SQL Database
   description: In this unit, you'll learn the fundamentals about Azure SQL Database.
   ms.date: 09/14/2020
   author: rmcmurray

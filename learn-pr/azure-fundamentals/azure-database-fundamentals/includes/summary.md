@@ -1,6 +1,6 @@
-In this module, you learned how to help Tailwind Traders migrate their database workloads to Microsoft Azure. You saw how Azure SQL Database, Azure Database for MySQL, and Azure Database for PostgreSQL will enable your company to migrate their existing SQL Server, MySQL, and PostgreSQL databases to the cloud while preserving your company's development and database administration strengths.
+In this module, you learned how to help Tailwind Traders migrate its database workloads to Microsoft Azure. You saw how Azure SQL Database, Azure Database for MySQL, and Azure Database for PostgreSQL will enable your company to migrate their existing SQL Server, MySQL, and PostgreSQL databases to the cloud. You can do this even while preserving your company's development and database administration strengths.
 
-In addition, you saw how Azure Cosmos DB a variety of popular APIs - SQL, MongoDB, Cassandra, Tables, and Gremlin - which you can use to migrate your data to the cloud and retain or enhance your developer skillsets. You also learned how you can use Azure's big data and analysis services like Azure Synapse Analytics, Azure HDInsight, Azure Databricks, and Azure Data Lake Analytics to analyze large volumes of data.
+In addition, you saw how Azure Cosmos DB works with a variety of popular APIs, incuding SQL, MongoDB, Cassandra, Tables, and Gremlin. You can use these to migrate your data to the cloud and retain or enhance your developers' skillsets. You also learned how you can use big data and analysis services like Azure Synapse Analytics, Azure HDInsight, Azure Databricks, and Azure Data Lake Analytics to analyze large volumes of data.
 
 ## Learn more
 
