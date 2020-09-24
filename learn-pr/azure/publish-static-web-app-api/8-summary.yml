@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.static-web-app-and-api.12-summary
+uid: learn.azure.static-web-app-and-api.8-summary
 metadata:
   title: Summary
   description: Summary of the app
@@ -11,4 +11,4 @@ metadata:
 title: Summary
 durationInMinutes: 1
 content: |
-  [!include[](includes/12-summary.md)]
+  [!include[](includes/8-summary.md)]
