@@ -84,14 +84,14 @@ By using this algorithm, you solve the problem by querying the oracle only once.
 exponentially faster than the classical solution.
 
 If you're interested in the details of this algorithm and want to implement it
-in Q#, see the [quantum katas tutorial for the Deutsch-Jozsa algorithm](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/ExploringDeutschJozsaAlgorithm?azure-portal=true) and
+in Q#, see the [Quantum Katas tutorial for the Deutsch-Jozsa algorithm](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/ExploringDeutschJozsaAlgorithm?azure-portal=true) and
 the [sample for the Deutsch-Jozsa algorithm](https://github.com/microsoft/Quantum/blob/main/samples/getting-started/simple-algorithms/DeutschJozsa.qs?azure-portal=true).
 
 ![Diagram summarizing the Deutsch-Jozsa algorithm.](../media/8-deutsch–jozsa.svg)
 
 ## Shor's algorithm
 
-Shor's algorithm is a quantum factoring algorithm that offers an exponential speed-up over any known classical factoring algorithm. It's important because it implies that sufficiently large quantum computers can break public-key cryptography.
+Shor's algorithm is a quantum factoring algorithm that offers an exponential speedup over any known classical factoring algorithm. It's important because it implies that sufficiently large quantum computers can break public-key cryptography.
 
 ### Problem: Integer factorization
 

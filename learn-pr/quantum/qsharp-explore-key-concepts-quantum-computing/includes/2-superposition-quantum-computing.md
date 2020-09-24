@@ -86,7 +86,7 @@ quantum mechanics and therefore of quantum computing.
 > states. Conversely, we use `code` font to represent *Q# operations*
 > that take qubit registers as inputs to transform their state. For example, the
 > linear operator $H$ maps the input state $|0\rangle$ to the state
-> $H|0\rangle=\frac{1}{\sqrt2}(|0\rangle+|1\rangle)$, while the operation `H` acts on
+> $H|0\rangle=\frac{1}{\sqrt2}(|0\rangle+|1\rangle),$ while the operation `H` acts on
 > a qubit as `H(qubit)` to change the state of `qubit` from $|0\rangle$ to
 > $\frac{1}{\sqrt2}(|0\rangle+|1\rangle)$.
 

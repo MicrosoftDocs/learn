@@ -99,7 +99,7 @@ The `DumpMachine` function creates a table of information that describes the sta
        |1⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
    ```
 
-   Every qubit that's allocated with the `using` statement starts in the state $|0\rangle$. So `DumpMachine` outputs the information that corresponds to a single qubit register in the state $|0\rangle$.
+   Every qubit that's allocated with the `using` statement starts in the state $|0\rangle$. So `DumpMachine` produces the information that corresponds to a single-qubit register in the state $|0\rangle$.
 
 1. ```output
        Qubit after applying H:
@@ -158,8 +158,8 @@ using the operation
 in the Standard library.
 
 > [!TIP]
-> To learn more about the math behind single qubit operations, check out the
-> [Single qubit gates quantum katas](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/SingleQubitGates?azure-portal=true) tutorial.
+> To learn more about the math behind single-qubit operations, check out the
+> [Single-qubit gates Quantum Katas](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/SingleQubitGates?azure-portal=true) tutorial.
 
 1. Modify *Program.qs* like the following example, and then save the file.
 
@@ -171,7 +171,7 @@ in the Standard library.
     dotnet run --alpha 0.333333
     ```
 
-    Here's an example that outputs `One`.
+    Here's an example that produces `One`.
 
     ```output
     The qubit is in the desired state.
@@ -357,11 +357,7 @@ The amplitudes are $|3\rangle=|011\rangle$ and $|7\rangle=|111\rangle$. The rest
 
 1. **Third measurement**: In the third measurement, the result was `One`. Therefore, all of
    the amplitudes of the states whose leftmost qubit is `Zero` clear out. The only
-<<<<<<< HEAD
-   compatible state is $\ket{5}=\ket{101}$. This state gets an amplitude probability
-=======
-   compatible state is $|5\rangle=|101\rangle$, that gets an amplitude probability
->>>>>>> bdf312bfd590ad44992cbdbfe36cc8f427e680e4
+   compatible state is $|5\rangle=|101\rangle$. These state gets an amplitude probability
    of $1$.
 
     ```output

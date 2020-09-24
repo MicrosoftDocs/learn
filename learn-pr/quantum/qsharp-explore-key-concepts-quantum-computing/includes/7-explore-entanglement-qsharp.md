@@ -4,7 +4,7 @@ estimate the resources that you need to run our algorithms. To estimate resource
 
 ## Create the project
 
-Start by creating a Q# project like you did previously in this module. 
+Start by creating a Q# project like you did previously in this module: 
 
 1. On the **View** menu, select **Command Palette**.
 1. Enter *Q#: Create New Project*.
@@ -186,6 +186,7 @@ obtain the qubits results:
 - 1 CNOT gate
 - 1 Clifford gate to apply `H`
 - 2 measurements 
+
 The width of the circuit is the number of qubits that are
 needed to run a program. In the output, the width is 2 because you used only two qubits.
 
