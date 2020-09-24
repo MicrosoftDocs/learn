@@ -151,7 +151,7 @@ Next, you'll publish your application to Azure Static Web Apps.
 
 Now that you've created your GitHub repository, you can create a Static Web Apps instance using the Azure Static Web Apps extension for Visual Studio Code.
 
-## Install the Azure Static Web Apps extension for Visual Studio Code
+### Install the Azure Static Web Apps extension for Visual Studio Code
 
 1. Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps&azure-portal=true) and install the **Azure Static Web Apps** extension for Visual Studio Code.
 
@@ -159,7 +159,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 1. After installation is complete, click **Reload**.
 
-## Sign into Azure in Visual Studio Code
+### Sign into Azure in Visual Studio Code
 
 1. In Visual Studio Code, sign in to Azure by clicking **View** > **Command Palette** and typing **Azure: Sign In**.
 
@@ -168,7 +168,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 1. Follow the prompts to copy and paste the code provided in the web browser, which authenticates your Visual Studio Code session.
 
-## Create a static web app
+### Create a static web app with Visual Studio Code
 
 1. Open Visual Studio Code and go to **File > Open Folder** to open the repository you cloned to your computer in the editor.
 
