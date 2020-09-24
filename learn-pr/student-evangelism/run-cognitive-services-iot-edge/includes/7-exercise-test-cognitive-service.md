@@ -3,11 +3,23 @@ You'll make an HTTP call to the Azure IoT Edge device that has the Azure Cogniti
 ## Open port 5000 of the edge device.
 
 1. Go to the edge device you created.
-1. Go to the VM details, then **Settings** > **Networking**.
-1. Navigate **Inbound port rules** to add an inbound security rule to open port 5000. 
-1. Copy the publicIPaddress of your edge device.
 
-![The illustration shows how to add inbound rule.](../media/inbound.png)
+1. Go to the VM details, then **Settings** > **Networking**.
+
+1. Navigate to **Inbound port rules** to add an inbound security rule to open port 5000.
+
+    1. Click the **Add inbound port rule** button
+
+        ![The illustration shows how to add inbound rule.](../media/inbound.png)
+    1. Set the **Destination Port Ranges** to **5000**
+
+    1. Set the **Name** to **Port_5000**
+
+    1. Click the **Add button**
+
+        ![The configured inbound port](../media/port-config.png)
+
+1. Copy the public IP address of your edge device.
 
 ## Query the Cognitive Services container running on your IoT Edge device from any browser
 

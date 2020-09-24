@@ -26,25 +26,56 @@ Create a Cognitive Services Text Analytics resource that matches the container.
 
 To deploy the Language Detection container image as Azure IoT Edge modules from Azure Marketplace, follow these steps:
 
-1. In the Azure portal, enter **Language Detection Container – Azure Cognitive Services** into the search and open the Azure Marketplace result.
+1. In the Azure portal, enter **Edge Module – Language Detection (Text Analytics)** into the search and open the Azure Marketplace result.
+
 1. Select **Create** to create the image.
+
 1. It will take you to the Azure portal's **Target Devices for IoT Edge Module** page. Provide the following required information.
-    - Select your subscription.
-    - Select the IoT hub created in an earlier step.
-    - Select **Find device** and find your IoT Edge device created in an earlier step.
+
+    1. Select your subscription.
+
+    1. Select the IoT hub created in an earlier step.
+
+    1. Select **Find device** and find your IoT Edge device created in an earlier step.
+
 1. Click the **Create** button. It will take you to the **Set modules** page. Keep the page open, because you'll configure Cognitive Services in the next step.
-1. Click on the **LanguageDetectionContainerAzureCognitiveServices** IoT Edge module.
+
+1. Click on the **EdgeModuleLanguageDetectionTextAnalytics** IoT Edge module.
 
    ![The illustration shows the container image in your device.](../media/edge-module.png)
 
 1. Navigate to **Environment Variables** and provide the following information.
-  - Keep the value **accept** for **Eula**.
-  - Fill out **Billing** with your Cognitive Services endpoint.
-  - Fill out **ApiKey** with your Cognitive Services API key.
+
+    1. Keep the value **accept** for **Eula**.
+
+    1. Fill out **Billing** with your Cognitive Services endpoint.
+
+    1. Fill out **ApiKey** with your Cognitive Services API key.
 
    ![The illustration shows environment variables.](../media/provide-info.png)
 
-1. Click **Update**
+1. Navigate to **Container Create Options**, and update the options to be:
+
+    ```json
+    {
+        "ExposedPorts": {
+            "5000/tcp": {}
+        },
+        "HostConfig": {
+            "PortBindings": {
+                "5000/tcp": [
+                    {
+                        "HostPort": "5000"
+                    }
+                ]
+            }
+        }
+    }
+    ```
+
+    This adds port 5000 to the exposed ports so that the container can be connected to.
+
+1. Click **Update**.
 
 1. Select **Next: Routes** to  define your route. You define all messages from all modules to go to Azure IoT Hub.
 
