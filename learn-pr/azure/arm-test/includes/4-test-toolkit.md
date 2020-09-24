@@ -62,18 +62,9 @@ The parameter **-File** is used to run a specific file and the parameter **-Test
 
 The arguments can be used in the following ways:
 
-- **Run tests on a single file**. You might want to only run tests on a single file you are currently working on. To test out a single file run the following command in the terminal:
+- **Run tests on a single file**. You might want to only run tests on a single file you are currently working on. The reason for that would be that it's easier to concentrate on authoring that specific template file. An additional benefit is also that the output would contain less noise and only show you what you are interested in. By using the flag `-File` with a path to a file (including the filename), you are able to run the tests on just that file.
 
-   ```powershell
-   Test-AzTemplate -TemplatePath path/to/starter/template -File cdn.json
-   ```
+   > [!IMPORTANT]
+   > A heads up though is that it still expect *azuredeploy.json* or *maintemplate.json* to exist at the specified location.
 
-   The above usage of the parameter **-File** ensures that tests are only run on the file `cdn.json`. A heads up though is that it still expect **azuredeploy.json** or **maintemplate.json** to exist at the specified location.
-
-- **Run a single type of test on all files**. Sometimes you might want to run only a single type of test to ensure you are fulfilling the criteria for just that scenario. You can accomplish this task by typing the following command in the terminal:
-
-   ```powershell
-   Test-AzTemplate -TemplatePath path/to/starter/template -Test "Resources Should Have Location"
-   ```  
-
-   The usage of the test parameter **-Test** above ensure only the test called **Resources Should Have Location** is run.
+- **Run a single type of test on all files**. Sometimes you might want to run only a single type of test to ensure you are fulfilling the criteria for just that scenario. You can accomplish this task by using the flag `-Test`. The flag expects the full name of the test for example **Resources Should Have Location**.

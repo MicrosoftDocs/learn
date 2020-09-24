@@ -25,7 +25,6 @@ You should see a similar output:
 > (Get-Host).Version
 
 Major  Minor  Build  Revision PSSemVerPreReleaseLabel    PSSemVerBuildLabel
------  -----  -----  -------- -----------------------    ------------------
 7      1      0      -1       preview.5
 
 >
@@ -72,7 +71,7 @@ You can sign into your Azure account from the terminal. If you are on Windows, t
     Connect-AzAccount
     ```
 
-   Once logged in, you see a list of the subscriptions associated with this account in the terminal, if you activated the sandbox.
+   Once you are logged in, you see a list, in JSON format. The list contains subscriptions associated with this account in the terminal, if you activated the sandbox.
 
 ### Set the active subscription
 

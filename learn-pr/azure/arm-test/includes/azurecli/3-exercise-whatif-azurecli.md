@@ -36,7 +36,7 @@ You will be able to deploy your ARM Template by carrying out the following steps
 
     Select an appropriate user in the browser and close browser window when prompted.
 
-   Once you are logged in, you see a JSON list of the subscriptions associated with this account in the terminal, if you activated the sandbox.
+   Once you are logged in, you see a list, in JSON format. The list contains subscriptions associated with this account in the terminal, if you activated the sandbox.
 
 ### Set the active subscription
 
@@ -65,7 +65,7 @@ You will be able to deploy your ARM Template by carrying out the following steps
     1. **Set the default name**. Use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**). Using the name, will allow you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
 
        ```azurecli
-       az configure --defaults group=resource group name
+       az configure --defaults group=<rgn>resource group name</rgn>
        ```
 
     > [!NOTE]
@@ -169,7 +169,7 @@ The differences in the second template are:
 1. **Perform the *what-if* operation**. Type in the following Azure CLI command in the terminal:
 
     ```azurecli
-    az deployment group \
+    az deployment group create \
       what-if \
       --template-uri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-after.json"
     ```
