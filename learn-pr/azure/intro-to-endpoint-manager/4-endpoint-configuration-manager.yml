@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-endpoint-manager.4-endpoint-configuration-manager
-title: Microsoft Endpoint Configuration Manager 
+title: Understand Microsoft Endpoint Configuration Manager 
 metadata:
-  title: Microsoft Endpoint Configuration Manager
+  title: Understand Microsoft Endpoint Configuration Manager
   description: Learn about Microsoft Endpoint Configuration Manager.
-  ms.date: 08/27/2020
+  ms.date: 09/24/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial

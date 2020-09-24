@@ -10,11 +10,11 @@ Here are some of the things you covered:
 ## Get started with Microsoft Endpoint Manager:
 
 Determine your mobile device management and mobile application management needs:
--	[Get a free 90-day trial, evaluate Enterprise Mobility + Security (EMS)](https://go.microsoft.com/fwlink/p/?LinkID=2077047)
--	[Plan your deployment with FastTrack experts included in EMS subscription](https://go.microsoft.com/fwlink/?linkid=2143850)
+-	[Get a free 90-day trial, evaluate Enterprise Mobility + Security (EMS)](https://go.microsoft.com/fwlink/p/?LinkID=2077047&azure-portal=true)
+-	[Plan your deployment with FastTrack experts included in EMS subscription](https://go.microsoft.com/fwlink/?linkid=2143850&target=blank)
 
 ## Learn more
 
 For more information about Microsoft Endpoint Manager, see the following resources:
 
-- [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem/)
+- [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem/?target=_blank)
