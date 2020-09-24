@@ -62,7 +62,7 @@ using Microsoft.CognitiveServices.Speech;
 using Microsoft.CognitiveServices.Speech.Audio;
 ```
 
-The packages you are importing allow for asynchronous programming, and bring in the classes for using Cogntive Services Speech functionality.
+The packages you are importing allow for asynchronous programming, and bring in the classes for using Cognitive Services Speech functionality.
 
 1. It is recommended that you make calls to the services asynchronously so you will need to modify the **Main()** method to work in this manner.  Modify **Main()** to look like this.
 
