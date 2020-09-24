@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-endpoint-manager.3-manage-protect-apps
-title: Manage and protect apps
+title: Learn about managing and protecting apps
 metadata:
-  title: Manage and protect apps
+  title: Learn about managing and protecting apps
   description: Learn about managing and protecting the apps that your organization uses with Microsoft Endpoint Manager.
-  ms.date: 08/27/2020
+  ms.date: 09/24/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial

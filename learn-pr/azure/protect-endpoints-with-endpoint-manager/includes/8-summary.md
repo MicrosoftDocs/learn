@@ -13,4 +13,4 @@ In this module, you've learned about protecting your endpoint environment with M
 
 For additional information about Microsoft Endpoint Manager, see the following resources:
 
-- [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem/)
+- [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem/?azure-portal=true)

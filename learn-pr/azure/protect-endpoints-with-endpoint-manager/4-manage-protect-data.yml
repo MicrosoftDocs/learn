@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-endpoint-manager.4-manage-protect-data
-title: Manage and protect your organization's data
+title: Learn about managing and protecting your organization's data
 metadata:
-  title: Manage and protect your organization's data
+  title: Learn about managing and protecting your organization's data
   description: Learn about managing and protecting your organization's data with Microsoft Endpoint Manager.
-  ms.date: 08/27/2020
+  ms.date: 09/24/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
