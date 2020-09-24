@@ -14,7 +14,7 @@ Next, create a new repository by using a GitHub template repository. A series of
 1. Name your repository **my-static-web-app**
 1. Click the **Create repository from template** button
 
-## Run your app
+## Run your app locally
 
 You just created a GitHub repository named **my-static-web-app** in your GitHub account. Next, you'll clone the repo and run the code locally on your computer.
 
@@ -147,17 +147,11 @@ You built your application and now it's running locally in your browser.
 
 Next, you'll publish your application to Azure Static Web Apps.
 
-## TODO
-
-## TODO
-
-## TODO
-
 ## Create a Static Web App
 
-Now that you've created your GitHub repository, you can create a Static Web Apps instance from the Azure portal.
+Now that you've created your GitHub repository, you can create a Static Web Apps instance using the Azure Static Web Apps extension for Visual Studio Code.
 
-## Install the Azure Static Web Apps extension for Visual Studio
+## Install the Azure Static Web Apps extension for Visual Studio Code
 
 1. Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps&azure-portal=true) and install the **Azure Static Web Apps** extension for Visual Studio Code.
 
@@ -197,7 +191,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 1. The command palate opens at the top of the editor and prompts you to name your application.
 
-   Type **my-first-static-web-app** and press **Enter**.
+   Type **my-static-web-app-and-api** and press **Enter**.
 
    :::image type="content" source="../media/extension-create-app.png" alt-text="Create Static Web App":::
 
@@ -237,7 +231,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 ::: zone-end
 
-6. The extension is looking for the location of the API in your application. This article doesn't implement an API.
+6. The extension is looking for the location of the API in your application. We'll skip this for now and focus on the API later in this module.
 
    Select **Skip for now** and press **Enter**.
 
@@ -293,7 +287,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
     :::image type="content" source="../media/extension-confirmation.png" alt-text="Created confirmation":::
 
-12. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-first-static-web-app** and select **Open in Portal** to view app in the Azure portal.
+12. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-static-web-app-and-api** and select **Open in Portal** to view app in the Azure portal.
 
     :::image type="content" source="../media/extension-open-in-portal.png" alt-text="Open portal":::
 
