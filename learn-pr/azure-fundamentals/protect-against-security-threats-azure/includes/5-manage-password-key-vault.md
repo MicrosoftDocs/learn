@@ -6,36 +6,36 @@ Here, you create a secret in Key Vault by using the Azure portal. You then acces
 
 The Azure CLI as a way to work with Azure resources from the command line or from scripts. Cloud Shell is a browser-based shell experience to manage and develop Azure resources. Think of Cloud Shell as an interactive console that runs in the cloud.
 
-## Create a Key Vault
+## Create a key vault
 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
-1. From the search bar, enter _Key Vault_. Then select **Key Vault** from the results.
+1. From the search bar, enter **Key Vault**. Then select **Key Vault** from the results.
 1. On the **Key Vault** pane, select **Create**.
 1. On the **Create key vault** pane, fill in these settings:
 
     > [!NOTE]
-    > Replace **NNN** with a series of numbers. This helps ensure that your Key Vault name is unique.
+    > Replace *NNN* with a series of numbers. This helps ensure that the name of your key vault is unique.
 
     | Setting | Value |
     | --- | --- |
     | Subscription | **Concierge Subscription** |
     | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
-    | Key vault name | *my-kv-NNN* |
+    | Key vault name | **my-kv-NNN** |
 
     Leave the other settings at their current values.
-1. Select **Review + create**, then select **Create**.
+1. Select **Review + create**, and then select **Create**.
 
-    Wait for the creation process to complete.
+    Wait for the creation process to finish.
 
 1. Select **Go to resource**.
-1. Note some of the details about your Key Vault.
+1. Note some of the details about your key vault.
 
-    For example, the **DNS name** field shows the URI your application can use to access your vault from the REST API.
+    For example, the **DNS name** field shows the URI that your application can use to access your vault from the REST API.
 
-    Here's an example for a Key Vault that's named **my-kv-1234**:
+    Here's an example for a key vault that's named **my-kv-1234**:
 
-    :::image type="content" source="../media/5-portal-key-vault-overview.png" alt-text="A screenshot of the Azure portal showing details about a key vault. Fields such as the parent resource group, location, and DNS name are shown.":::
+    :::image type="content" source="../media/5-portal-key-vault-overview.png" alt-text="A screenshot of the Azure portal showing details about a key vault. It shows fields such as the parent resource group, location, and DNS name.":::
 
 1. As an optional step, under **Settings**, examine some of the other settings.
 
@@ -44,11 +44,9 @@ The Azure CLI as a way to work with Azure resources from the command line or fro
     > [!NOTE]
     > Your Azure subscription is the only one that's authorized to access this vault. Under **Settings**, the **Access policies** section enables you to configure access to the vault.
 
-## Add a password to the Key Vault
+## Add a password to the key vault
 
-Here, you add a password to your Key Vault.
-
-1. Under **Settings**, select **Secrets**, then select **Generate/Import**.
+1. Under **Settings**, select **Secrets**, and then select **Generate/Import**.
 1. On the **Create a secret** pane, fill in these settings:
 
     | Setting | Value |
@@ -75,9 +73,9 @@ Here, you access the password from Key Vault two times. First, you access it fro
 
 1. Select **Show Secret Value**.
 
-    :::image type="content" source="../media/5-portal-secret-value.png" alt-text="A screenshot of the Azure portal showing the secret value in key vault.":::
+    :::image type="content" source="../media/5-portal-secret-value.png" alt-text="A screenshot of the Azure portal showing the secret value in the key vault.":::
 
-1. From the Cloud Shell pane to the side of the screen, run this command:
+1. From the Cloud Shell pane to the side of the screen, run this command.
 
     > [!NOTE]
     > If you're not familiar with the Azure CLI, just follow along.
@@ -96,6 +94,6 @@ Here, you access the password from Key Vault two times. First, you access it fro
     hVFkk96
     ```
 
-Good work! At this point, you have a Key Vault that contains a password secret that's securely stored for use with your applications.
+Good work! At this point, you have a key vault that contains a password secret that's securely stored for use with your applications.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
