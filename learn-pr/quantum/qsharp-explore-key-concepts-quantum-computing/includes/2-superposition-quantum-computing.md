@@ -33,7 +33,7 @@ For example, $|0\rangle$ and $|1\rangle$ are two possible states of a qubit. A q
 > quantum mechanics, but the details are beyond the scope of this module. For
 > quantum computing, you don't have to worry about it. Here we will understand 
 > measurement to be the informal idea of "observing" a qubit, which immediately
-> collapses the quantum superposition to one of the two basic states that correspond to classical values **0** and **1**. 
+> collapses the quantum superposition to one of the two basis states that correspond to classical values **0** and **1**. 
 >
 > To learn more about the historical discussion of measurement in quantum mechanics, see the
 > Wikipedia article about the [Measurement
