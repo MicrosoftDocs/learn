@@ -168,4 +168,4 @@ run = experiment.submit(config=script_config)
 run.wait_for_completion(show_output=True)
 ```
 
-> **Note**: An implicitly created **RunConfiguration** object defines the Python environment for the experiment, including the packages available to the script. If your script depends on packages that are not included in the default environment, you must associate the **ScriptRunConfig** with an **Environment** object that makes use of a **CondaDependencies** object to specify the Python packages required. Runtime environments are discussed in more detail later in this course.
+> [!NOTE] An implicitly created **RunConfiguration** object defines the Python environment for the experiment, including the packages available to the script. If your script depends on packages that are not included in the default environment, you must associate the **ScriptRunConfig** with an **Environment** object that makes use of a **CondaDependencies** object to specify the Python packages required. Runtime environments are discussed in more detail later in this course.
