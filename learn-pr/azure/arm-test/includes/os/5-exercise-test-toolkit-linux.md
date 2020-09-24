@@ -75,23 +75,29 @@ Make a note of the location of your template file. You could run the command `pw
 
 ## Detect and fix issues on your template by running the Test toolkit
 
-It's recommended that you have two different terminal windows open for this exercise.
-
-- **The first terminal window**. One terminal should be at the subdirectory *arm-ttk/* of the installation directory. This is where you will be running the Test toolkit from.
-- **The second terminal window**. The other terminal should point to the path of the template file *azuredeploy.json*. It's recommended that you start an instance of Visual Studio Code from this path so you can easily edit the *azuredeploy.json* file when asked.
+It's recommended that you start Visual Studio Code and an integrated terminal.
 
 You will run the Test toolkit on a path containing a deployment template and fix any errors it detects by changing the template.
 
 > [!WARNING]
 > In this exercise, you scan one template file. The Test Toolkit scans all files beneath the directory you specify. It does so because a deployment can be made up of several files. Be sure that there are no JSON files beneath the directory where *azuredeploy.json* is located.
 
-1. **Start the shell**. Navigate to the subdirectory *arm-ttk/*, of the Test toolkit installation directory, Run the following command in the terminal to start a PowerShell shell:
+1. **Start Visual Studio Code**. In a terminal, navigate to the path where your `azuredeploy.json` file resides. Run the following command to start Visual Studio Code:
+
+   ```bash
+   code .
+   ```
+
+   > [!NOTE]
+   > open VS Code manually and open the template directory if Visual Studio Code isn't on the path
+
+1. **Start the shell**. From Visual Code, open the integrated terminal by selecting **Terminal > New Terminal** from the top menu. Run the following command in the terminal to start a PowerShell shell:
 
    ```bash
    pwsh
    ```
 
-   You should see an output looking similar to the below:
+   You see an output looking similar to the below:
 
    ```output
    PowerShell 7.0.3
@@ -103,19 +109,25 @@ You will run the Test toolkit on a path containing a deployment template and fix
 
 1. **Analyze template**.
 
-   1. **Import the arm-ttk module**. Run the following command in the terminal that points to the install directory and the subdirectory *arm-ttk/*:
+   1. **Import the arm-ttk module**. Before importing the module, replace *path/to/arm-ttk/arm-ttk.psd1* with the path to the downloaded Test toolkit.
+   
+      > [!NOTE]
+      > If you downloaded or cloned the tool to your `Downloads` directory the path would look something like this */Users/\<user\>/Downloads/arm-ttk/arm-ttk/arm-ttk.psd1*.
+    Run the following command in the terminal:
 
       ```powershell
-      Import-Module ./arm-ttk.psd1
+      Import-Module path/to/arm-ttk/arm-ttk.psd1
       ```
+
+      You are now ready to use the tool. As long as you are in the same PowerShell session there's no need to run the import command again.
   
-   1. **Run the tool**. Before running the below command, replace `path/to/template/directory` with the path to the directory of your *azuredeploy.json* file. Run the tool by typing the following command:
+   1. **Run the tool**. Run the tool by typing the following command:
 
       ```powershell
-      Test-AzTemplate -TemplatePath path/to/template/directory
+      Test-AzTemplate -TemplatePath .
       ```
 
-       You should see an output similar to the following in the terminal:
+       You see an output similar to the following in the terminal:
 
       ```output
        Validating deploy\azuredeploy.json                                                        deploymentTemplate
@@ -192,10 +204,10 @@ You will run the Test toolkit on a path containing a deployment template and fix
       }]
       ```
 
-1. **Verify the fix**. Before running the below command, replace *path/to/template/directory* with the path to the directory of your *azuredeploy.json* file. Run the test tool once again with the following command:
+1. **Verify the fix**. Run the test tool once again, in the integrated terminal, with the following command:
 
    ```powershell
-   Test-AzTemplate -TemplatePath path/to/template/directory
+   Test-AzTemplate -TemplatePath .
    ```
 
    You now get an output where all tests pass:
