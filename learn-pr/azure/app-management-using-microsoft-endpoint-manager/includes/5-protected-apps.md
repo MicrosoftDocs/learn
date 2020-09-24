@@ -1,4 +1,4 @@
-Intune supports a number of protected Microsoft apps and partner apps. Intune protected apps are enabled with a rich set of mobile application protection policies. These apps allow you to:
+Intune supports a number of protected Microsoft apps and partner apps that specially incorporate mobile app management capabilities. Intune protected apps are enabled with a rich set of mobile application protection policies. These apps allow you to:
 
 - Restrict copy-and-paste and save-as functions
 - Configure web links to open inside the secure Microsoft browser
@@ -7,6 +7,8 @@ Intune supports a number of protected Microsoft apps and partner apps. Intune pr
 - Enable app protection without requiring enrollment
 - Enable app protection on devices managed with third-party EMM tools
 
-Protected apps incorporate mobile app management using the Intune App Software Development Kit (SDK), or the App Wrapping Tool for either iOS or Android.
+## Create protected apps using tools
+
+Protected apps incorporate mobile app management capabilities using the Intune App Software Development Kit (SDK) or the App Wrapping Tool for either iOS or Android.
 
 For instance, you can manage Outlook for iOS and Android with Intune. You can use Intune app protection and configuration policies with Outlook for iOS and Android to ensure team collaboration experiences are always accessed with safeguards in place. Organizations can use Azure AD Conditional Access policies to ensure that users can only access work or school content using Outlook for iOS and Android.

@@ -2,6 +2,8 @@ As more organizations implement mobile device strategies for accessing work or s
 
 When configuring App Protection Policies, the number of various settings and options enable organizations to tailor the protection to their specific needs. Due to this flexibility, it may not be obvious which permutation of policy settings are required to implement a complete scenario. To help organizations prioritize client endpoint hardening endeavors, Microsoft has introduced a new taxonomy for security configurations in Windows 10. Intune is leveraging a similar taxonomy for its data protection framework for mobile app management.
 
+## Choose a level of app protection 
+
 The Intune App Protection Policies data protection framework is organized into three distinct configuration levels, with each level building off the previous level:
 
 - **Enterprise basic data protection** (Level 1) ensures that apps are protected with a PIN and encrypted and performs selective wipe operations. For Android devices, this level validates Android device attestation. This is an entry level configuration that provides similar data protection control in Exchange Online mailbox policies and introduces IT and the user population to App Protection Policies.
