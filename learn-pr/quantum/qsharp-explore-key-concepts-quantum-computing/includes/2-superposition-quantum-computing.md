@@ -22,9 +22,9 @@ the system. This is an important difference when compared to classical computing
 
 ### What's Dirac bra-ket notation?
 
-A handy notation to describe quantum states is the Dirac bra-ket notation. In this notation, we describe the possible states of quantum systems with kets $\ket{ }$.
+A handy notation to describe quantum states is the Dirac bra-ket notation. In this notation, we describe the possible states of quantum systems with kets $| \rangle$.
 
-For example, $\ket{0}$ and $\ket{1}$ are two possible states of a qubit. If a qubit is in the state $\ket{\psi} = \ket{0}$, it means the probability of observing `Zero` when measuring the qubit is 100%. Similarly, if a qubit is in the state $\ket{\psi} =\ket{1}$, it produces `One` after measurement.
+For example, $|0\rangle$ and $|1\rangle$ are two possible states of a qubit. If a qubit is in the state $|\psi\rangle = |0\rangle$, it means the probability of observing `Zero` when measuring the qubit is 100%. Similarly, if a qubit is in the state $|\psi\rangle =|1\rangle$, it produces `One` after measurement.
 
 > [!NOTE]
 > There are many interpretations of the concept of *measurement* in
@@ -41,33 +41,33 @@ For example, $\ket{0}$ and $\ket{1}$ are two possible states of a qubit. If a qu
 
 An *operator* is a function that transforms the state of a quantum system to another state.
 
-$$A \ket{\psi} = \ket{\psi'}$$
+$$A |\psi\rangle = |\psi'\rangle$$
 
 We say that an operator $A$ is *linear* when it has the following properties
 for addition and multiplication by a complex number $a$:
 
-$$A(\ket{\psi_1} + \ket{\psi_2}) =  A\ket{\psi_1} + A\ket{\psi_2}$$
+$$A( |\psi_1\rangle + |\psi_2\rangle) =  A |\psi_1\rangle + A|\psi_2\rangle$$
 
-$$A(a\ket{\psi})=a  A(\ket{\psi})$$
+$$A(a|\psi\rangle)=a  A(|\psi\rangle)$$
 
 ### How do linear operators relate to quantum superposition?
 
 The Schrödinger equation is a linear equation. It implies that if two states
-$\ket{\psi_1}$ and $\ket{\psi_2}$ are solutions of the Schrödinger equation
+$ |\psi_1\rangle$ and $|\psi_2\rangle$ are solutions of the Schrödinger equation
 (in other words, valid quantum states), then any linear combination of them is also a valid
 quantum state:
 
-$$\ket{\psi}=a\ket{\psi_1}+b\ket{\psi_2}.$$
+$$|\psi\rangle=a |\psi_1\rangle+b|\psi_2\rangle.$$
 
-This linear combination of $\ket{\psi_1}$ and $\ket{\psi_2}$ is called a
-superposition of $\ket{\psi_1}$ and $\ket{\psi_2}$. Here, $a$ and $b$ are the
-probability amplitudes of $\ket{\psi_1}$ and $\ket{\psi_2}$, respectively.
+This linear combination of $ |\psi_1\rangle$ and $|\psi_2\rangle$ is called a
+superposition of $ |\psi_1\rangle$ and $|\psi_2\rangle$. Here, $a$ and $b$ are the
+probability amplitudes of $ |\psi_1\rangle$ and $|\psi_2\rangle$, respectively.
 Remember that in the module [Create your first Q# program by using the Quantum
 Development
 Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true)
-you used superposition to create a quantum random number generator. You used the operation `H` to prepare a qubit in the state $\ket{0}$ into superposition.
-Mathematically, this is: $$  H \ket{0} = \frac1{\sqrt2} \ket{0} +
-\frac1{\sqrt2} \ket{1}.$$
+you used superposition to create a quantum random number generator. You used the operation `H` to put a qubit in the state $|0\rangle$ into superposition.
+Mathematically, this is: $$  H |0\rangle = \frac1{\sqrt2} |0\rangle +
+\frac1{\sqrt2} |1\rangle.$$
 
 Linearity is a fundamental property of
 quantum mechanics and therefore of quantum computing.
@@ -83,10 +83,10 @@ quantum mechanics and therefore of quantum computing.
 > fonts to design mathematical **linear operators** that take qubit states to qubit
 > states. On the other hand, we use the `code` font to represent **Q# operations**
 > that take qubit registers as inputs to transform their state. For example, the
-> linear operator $H$ maps the input state $\ket{0}$ to the state
-> $H\ket{0}=\frac{1}{\sqrt2}(\ket{0}+\ket{1})$, while the operation `H` acts on
-> a qubit as `H(qubit)` to change the state of `qubit` from $\ket{0}$ to
-> $\frac{1}{\sqrt2}(\ket{0}+\ket{1})$.
+> linear operator $H$ maps the input state $|0\rangle$ to the state
+> $H|0\rangle=\frac{1}{\sqrt2}(|0\rangle+|1\rangle)$, while the operation `H` acts on
+> a qubit as `H(qubit)` to change the state of `qubit` from $|0\rangle$ to
+> $\frac{1}{\sqrt2}(|0\rangle+|1\rangle)$.
 
 > [!NOTE]  
 > Sometimes people talk about **quantum gates** instead of **operations**, 
@@ -129,12 +129,12 @@ the probabilities. Only quantum systems like ions or superconducting circuits
 can exists in the superposition states that enable the power of quantum
 computing.
 
-How do we know the probabilities associated with a given superposition? Suppose we have a register of two qubits that can be in a superposition of four possible states: $$\ket{\psi} = a \ket{00} + b \ket{01} + c \ket{10} + d \ket{11}.$$
+How do we know the probabilities associated with a given superposition? Suppose we have a register of two qubits that can be in a superposition of four possible states: $$|\psi\rangle = a |00\rangle + b |01\rangle + c |10\rangle + d |11\rangle.$$
 
 Remember that $a,b,c$ and $d$ are probability amplitudes for each state. Their
 absolute values, for example $|a|$, squared, give the corresponding probabilities. For
-instance, the probability for observing $\ket{00}$ is $P(00)=|a|^2$. For
-$\ket{01}$, it's $P(01)=|b|^2$, and so on.
+instance, the probability for observing $|00\rangle$ is $P(00)=|a|^2$. For
+$|01\rangle$, it's $P(01)=|b|^2$, and so on.
 
 ![Figure of multiple qubit systems](../media/2-configurations.svg)
 
@@ -151,7 +151,7 @@ information of the superposition but just the results after a measurement.
 two to the N possible configurations in superposition.](../media/2-scale.png)
 
 In the example state we produced for the quantum random bit generator,
-$\ket{\psi}=\frac1{\sqrt2} \ket{0} + \frac1{\sqrt2} \ket{1}$, the probability
+$|\psi\rangle=\frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle$, the probability
 for each state is:
 
 $$P(0)=\left|\frac1{\sqrt{2}}\right|^2=\frac12;$$

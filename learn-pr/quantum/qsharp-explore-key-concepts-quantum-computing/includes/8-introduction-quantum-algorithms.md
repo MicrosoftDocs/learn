@@ -25,7 +25,7 @@ not only on individual inputs, but also on superposition of basis states.
 
 The oracle has to act on quantum states instead of classical bits. To enable
 this, the input $x$ with binary representation $x=(x_0,x_1,...,x_{n-1})$
-can be encoded into an $n$-qubit register: $\ket{x}=\ket{x_0x_1...x_{n-1}}$.
+can be encoded into an $n$-qubit register: $|x\rangle=|x_0x_1...x_{n-1}\rangle$.
 
 You can learn more about quantum oracles in the [conceptual documentation of the
 Quantum Development Kit](https://docs.microsoft.com/quantum/concepts/oracles?azure-portal=true).
@@ -72,7 +72,7 @@ the only information you have is that $f(x)$ takes a bit string of length $n$ as
 
 The algorithm is as follows:
 
-1. Start with a register of $n$ qubits initiated in the state $\ket{0...0}$.
+1. Start with a register of $n$ qubits initiated in the state $|0...0\rangle$.
 1. Apply $H$ to every qubit to create a superposition of all possible states.
 1. Apply the oracle $U_f$ to the superposition to cause quantum interference.
 1. Apply $H$ to every qubit again to get out of superposition.
