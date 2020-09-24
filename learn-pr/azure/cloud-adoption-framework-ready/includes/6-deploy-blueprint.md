@@ -84,4 +84,4 @@ The following table provides a list of the blueprint artifact parameters:
 | Deploy Key Vault | Resource Manager template | `KV-AccessPolicy` | **Locked** - Group or user object ID to grant permissions to in Key Vault |
 | Deploy Log Analytics | Resource Manager template | `LogAnalytics_DataRetention` | **Locked** - Number of days that data will be retained in Log Analytics |
 | Deploy Log Analytics | Resource Manager template | `LogAnalytics_Location` | **Locked** - Region used when establishing the workspace |
-| Deploy Azure Migrate | Resource Manager template | `Azure_Migrate_Location`| **Locked** - Select the region to deploy Azure Migrate |
+| Deploy Azure Migrate | Resource Manager template | `Azure_Migrate_Location`| **Locked** - Select the region to deploy Azure Migrate | 

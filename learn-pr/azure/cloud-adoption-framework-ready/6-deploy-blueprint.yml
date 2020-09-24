@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 20
 content: |
-  [!include[](includes/6-deploy-blueprint.md)]
+  [!include[](includes/6-deploy-blueprint.md)] 

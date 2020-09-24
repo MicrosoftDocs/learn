@@ -135,4 +135,4 @@ The section of the Ready methodology on expanding your landing zone will aid in 
 :::image type="content" source="../media/refactor-methodologies.png" alt-text="Image showing parallel landing zone iteration" border="false":::
 _Figure 2: Deeper methodologies assisting a parallel landing zone iteration._
 
-Each subsection of [expand your landing zone](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) maps to one of the additions outlined in the image above. Beyond those basic expansions, the deeper methodologies (such as the Govern methodology or the Manage methodology) of this framework will aid in going beyond basic landing zone modifications to implement long-term disciplines.
+Each subsection of [expand your landing zone](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) maps to one of the additions outlined in the image above. Beyond those basic expansions, the deeper methodologies (such as the Govern methodology or the Manage methodology) of this framework will aid in going beyond basic landing zone modifications to implement long-term disciplines. 

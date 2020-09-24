@@ -128,4 +128,4 @@ This approach to operations is discouraged when ever possible. This approach is 
 
 **Platform development velocity:** Evaluation of the portfolio of workload operations should identify an acceptable velocity for platform development that aligns to "start small" or "enterprise-scale" approaches. The primary data point to determine direction will depend on the most common operations management approach across the portfolio.
 
-Compare more pros, cons, and characteristics of [distributed operations in the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/operating-model/compare#distributed-operations?azure-portal=true).
+Compare more pros, cons, and characteristics of [distributed operations in the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/operating-model/compare#distributed-operations?azure-portal=true). 

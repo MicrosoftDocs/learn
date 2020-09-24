@@ -53,4 +53,4 @@ quiz:
       explanation: Correct!
     - content: CAF Terraform modules
       isCorrect: false
-      explanation: There is no indication of existing Terraform dependencies in this customer narrative
+      explanation: There is no indication of existing Terraform dependencies in this customer narrative 
