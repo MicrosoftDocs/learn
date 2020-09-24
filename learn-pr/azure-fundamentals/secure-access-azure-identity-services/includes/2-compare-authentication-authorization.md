@@ -16,6 +16,8 @@ Authentication is the process of establishing the identity of a person or servic
 
 Authentication establishes the user's identity, but authorization is the process of establishing what level of access an authenticated person or service has. It specifies what data they're allowed to access and what they can do with it.
 
+## How are authentication and authorization related?
+
 Here's a diagram that shows the relationship between authentication and authorization:
 
 :::image type="content" source="../media/2-id-card-access.png" alt-text="A diagram that shows an identification card and the various kinds of resources the user can access. The identification card represents the user's credentials." border="false":::
