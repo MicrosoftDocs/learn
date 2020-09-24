@@ -357,7 +357,7 @@ The amplitudes are $|3\rangle=|011\rangle$ and $|7\rangle=|111\rangle$. The rest
 
 1. **Third measurement**: In the third measurement, the result was `One`. Therefore, all of
    the amplitudes of the states whose leftmost qubit is `Zero` clear out. The only
-   compatible state is $|5\rangle=|101\rangle$. These state gets an amplitude probability
+   compatible state is $|5\rangle=|101\rangle$. This state gets an amplitude probability
    of $1$.
 
     ```output
