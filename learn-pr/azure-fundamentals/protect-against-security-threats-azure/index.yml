@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.protect-against-security-threats-azure
 metadata:
-  description: Learn how Azure can help you protect the workloads you run both in the cloud and in your on-premises datacenter.
+  description: Learn how Azure can help you protect the workloads that you run both in the cloud and in your on-premises datacenter.
   ms.date: 09/14/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Protect against security threats on Azure
-summary: Learn how Azure can help you protect the workloads you run both in the cloud and in your on-premises datacenter.
+summary: Learn how Azure can help you protect the workloads that you run both in the cloud and in your on-premises datacenter.
 abstract: |
   After completing this module, you'll be able to:
 
@@ -17,8 +17,8 @@ abstract: |
   * Store and access sensitive information such as passwords and encryption keys securely in Azure Key Vault.
   * Manage dedicated physical servers to host your Azure VMs for Windows and Linux by using Azure Dedicated Host.
 prerequisites: |
-  - You should be familiar with basic computing concepts and terminology
-  - You should be familiar with cloud computing is helpful, but isn't necessary
+  - You should be familiar with basic computing concepts and terminology.
+  - Familiarity with cloud computing is helpful but isn't necessary.
 iconUrl: /learn/achievements/review-security-tools-features.svg
 levels:
 - beginner

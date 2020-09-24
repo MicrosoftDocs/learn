@@ -24,7 +24,7 @@ Compute targets are cloud-based resources on which you can run model training an
     * **Compute name**: *enter a unique name*
     * **Kubernetes Service**: Create new
     * **Region**: *Select a different region than the one used for your workspace*
-    * **Virtual Machine size**: Standard_DS2_v2 (*Use the filter to find this in the list*)
+    * **Virtual Machine size**: Standard_DS11_v2 (*Use the filter to find this in the list*)
     * **Cluster purpose**: Dev-test
     * **Number of nodes**: 2
     * **Network configuration**: Basic
