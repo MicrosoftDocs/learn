@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-deployment-pipeline-github-actions.7-exercise-build-production-image
+metadata:
+  title: Exercise - Build the staging application image
+  description: Exercise what you've learned before by building our staging application image and deploying it to ACR automatically using GitHub Actions
+  ms.date: 09/08/2020
+  author: khaosdoctor
+  ms.author: ludossan
+  ms.topic: interactive-tutorial
+  ms.prod: github
+title: Exercise - Build the staging application image
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-build-staging-image.md)]

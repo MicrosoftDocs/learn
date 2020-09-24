@@ -40,9 +40,10 @@ units:
   - learn.aks-deployment-pipeline-github-actions.3-design-the-pipeline
   - learn.aks-deployment-pipeline-github-actions.4-exercise-set-up-project
   - learn.aks-deployment-pipeline-github-actions.5-application-images
-  - learn.aks-deployment-pipeline-github-actions.6-exercise-build-image
-  - learn.aks-deployment-pipeline-github-actions.7-helm
-  - learn.aks-deployment-pipeline-github-actions.8-exercise-deploy-workflow
-  - learn.aks-deployment-pipeline-github-actions.9-summary
+  - learn.aks-deployment-pipeline-github-actions.6-exercise-build-staging-image
+  - learn.aks-deployment-pipeline-github-actions.7-exercise-build-production-image
+  - learn.aks-deployment-pipeline-github-actions.8-helm
+  - learn.aks-deployment-pipeline-github-actions.9-exercise-deploy-workflow
+  - learn.aks-deployment-pipeline-github-actions.10-summary
 badge:
   uid: learn.aks-deployment-pipeline-github-actions.badge
