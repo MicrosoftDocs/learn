@@ -242,26 +242,34 @@ You'll notice that, right after you commit the file, a new build will start on t
 1. Create `ACR_NAME` secret
 
     1. Put `ACR_NAME` in the "Name" field.
-    1. Run `az acr list --query "[?contains(resourceGroup, 'mslearn-gh-pipelines')].loginServer" -o table` in the Azure Cloud Shell to obtain the login server of the ACR we created earlier.
-        > [!div class="nextstepaction"]
-        > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
+    1. Run the following command in the Azure Cloud Shell to obtain the login server of the ACR we created earlier.
+
+    ```azurecli-interactive
+    az acr list --query "[?contains(resourceGroup, 'mslearn-gh-pipelines')].loginServer" -o table
+    ```
 
     1. Put the value in the "Value" field of the secret
 
 1. Create `ACR_LOGIN` secret
 
     1. Put `ACR_LOGIN` in the "Name" field.
-    1. If you saved the values presented to you in the end of the set-up script, copy the "ACR Login Username" value. If not, run `az acr credential show --name <ACR_NAME> --query "username" -o table` in the Azure Cloud Shell to obtain the login of the ACR we created earlier.
-        > [!div class="nextstepaction"]
-        > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
+    1. If you saved the values presented to you in the end of the set-up script, copy the "ACR Login Username" value. If not, run the following command in the Azure Cloud Shell to obtain the login of the ACR we created earlier.
+
+    ```azurecli-interactive
+    az acr credential show --name <ACR_NAME> --query "username" -o table
+    ```
+
     1. Put the value in the "Value" field of the secret
 
 1. Create `ACR_PASSWORD` secret
 
     1. Put `ACR_PASSWORD` in the "Name" field.
-    1. If you saved the values presented to you in the end of the set-up script, copy the "ACR Login Username" value. If not, run `az acr credential show --name <ACR_NAME> --query "passwords[0].value" -o table` in the Azure Cloud Shell to obtain the login of the ACR we created earlier.
-        > [!div class="nextstepaction"]
-        > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
+    1. If you saved the values presented to you in the end of the set-up script, copy the "ACR Login Username" value. If not, run the following command in the Azure Cloud Shell to obtain the login of the ACR we created earlier.
+
+    ```azurecli-interactive
+    az acr credential show --name <ACR_NAME> --query "passwords[0].value" -o table
+    ```
+
     1. Put the value in the "Value" field of the secret
 
 ### Push the image
