@@ -1,12 +1,12 @@
-The first step towards an Azure landing zone deployment is the implementation of a Cloud Adoption Framework landing zone template. When following the *start small and expand* approach, you would start with the CAF Migration landing zone blueprint.
+The first step towards an Azure landing zone deployment is the implementation of a Cloud Adoption Framework (CAF) landing zone template. When following the *start small and expand* approach, you would start with the CAF Migration landing zone blueprint.
 
 ## Deploy the blueprint sample
 
 Starting with an empty Azure subscription, you will deploy the blueprint sample using the following steps:
 
-- Create a new blueprint from the sample
-- Mark your copy of the sample as **Published**
-- Assign your copy of the blueprint to an existing subscription
+- Create a new blueprint from the sample.
+- Mark your copy of the sample as **Published**.
+- Assign your copy of the blueprint to an existing subscription.
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free) before you begin.
 
@@ -18,13 +18,13 @@ First, implement the blueprint sample by creating a new blueprint in your enviro
 
 1. From the **Getting started** page on the left, select the **Create** button under **Create a blueprint**.
 
-1. Find the **CAF Migration landing zone** blueprint sample under *Other Samples* and select **Use this sample**.
+1. Find the **CAF Migration landing zone** blueprint sample under **Other Samples** and select **Use this sample**.
 
 1. Enter the *Basics* of the blueprint sample:
    - **Blueprint name** provide a name for your copy of the CAF Migration landing zone blueprint sample.
-   - **Definition location** use the ellipsis and select the management group to save your copy of the sample to.
+   - **Definition location** use the ellipsis and select the management group to which you'll save your copy of the sample.
 
-1. Select the *Artifacts* tab at the top of the page or **Next: Artifacts** at the bottom of the page.
+1. Select the **Artifacts** tab at the top of the page or **Next: Artifacts** at the bottom of the page.
 
 1. Review the list of artifacts that make up the blueprint sample. Many of the artifacts have parameters that we'll define later. Select **Save Draft** when you've finished reviewing the blueprint sample.
 

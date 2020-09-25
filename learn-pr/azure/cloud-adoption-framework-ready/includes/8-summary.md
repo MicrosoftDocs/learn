@@ -2,4 +2,4 @@ In this module, you compared operating models, evaluated design areas and develo
 
 ## Next steps
 
-Continue with these Azure landing zone implementation options by reviewing the best practices in the Ready methodology of the Cloud Adoption Framework. Those practices help you choose how and when to refactor your landing zone to better fit your needs. 
+Continue with these Azure landing zone implementation options by reviewing the best practices in the Ready methodology of the Cloud Adoption Framework. Those practices help you choose how and when to refactor your landing zone to better fit your needs.

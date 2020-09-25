@@ -14,7 +14,7 @@ The image above plots the four common operating models from least to most comple
 
 The following characteristics aid in aligning to one of the common operating models:
 
-**Strategic priority:** Innovation, control (optimized operations), democratization (autonomy), and integration are all important strategic priorities when adopting the cloud. When speaking to the executive stakeholders, which will be the most important factor for your company in the next 3-5 years?
+**Strategic priority:** Innovation, control (optimized operations), democratization (autonomy), and integration are all important strategic priorities when adopting the cloud. When speaking to the executive stakeholders, which will be the most important factor for your company in the next three to five years?
 
 **Organization:** Organization of people drives a number of operations decisions. Do you have a small IT team cover all of your portfolio? Are there separate teams dedicated to functions like security, governance, operations? Are teams organized around individual workloads? Are you bound by rigid third-party compliance standards that are reviewed by an auditor or other compliance bodies?
 
@@ -44,9 +44,9 @@ _Figure 2: Decentralized operations focuses on individual workloads and dependen
 
 **Accountability (separation of duties):** The workload team is entirely accountable for operations, governance, and security decisions. There is no shared accountability model in decentralized operations.
 
-**Standardization:** Best practices and deployment automation (CI/CD pipelines) are critical to create any degree of standardization across workloads. But with no centralized functions, standardization is unlikely to persist for any length of time.
+**Standardization:** Best practices and deployment automation (continuous integration/continuous development pipelines) are critical to create any degree of standardization across workloads. Without centralized functions, standardization is unlikely to persist for any length of time.
 
-**Operations priority:** Decentralized operations team are more likely to prioritize cloud-first operations using software-as-a-service (SaaS) or platform as a service (PaaS) tools to automate operations.
+**Operations priority:** Decentralized operations team are more likely to prioritize cloud-first operations using software-as-a-service or platform as a service tools to automate operations.
 
 **Platform development velocity:** Decentralized operations may share deployment scripts across workloads, but there are little to no central resources shared across workloads.
 

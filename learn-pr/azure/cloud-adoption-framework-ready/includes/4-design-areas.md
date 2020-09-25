@@ -4,7 +4,7 @@ Before deploying an Azure landing zone, it's important to understand what you wi
 
 Regardless of the deployment option, you should carefully consider each design area. Your decisions affect the platform foundation on which each landing zone depends.
 
-| Design areas | Objective  | Relevant methodologies |
+| Design areas | Objective | Relevant methodologies |
 |---|---|---|
 | Enterprise enrollment | For enterprise customers with an Azure commitment, proper tenant creation and enrollment is an important early step. | Ready |
 | Identity | Identity and access management is a primary security boundary in the public cloud. It's the foundation for any secure and fully compliant architecture. | Ready |
@@ -37,7 +37,7 @@ Azure Policy should be used to provide guardrails and ensure continued complianc
 
 Enterprise-scale architecture shouldn't consider any abstraction layers, such as customer-developed portals or tooling. It should provide a consistent experience for both centrally managed operation teams and dedicated workload operations teams. Azure provides a unified and consistent control plane across all Azure resources and provisioning channels subject to role-based access and policy-driven controls. Azure can be used to establish a standardized set of policies and controls for governing the entire enterprise estate.
 
-**Design impact:** Role-based access control (RBAC) and Azure Policy are used to ensure that all workload deployments adhere to separation of duties and other governance requirements.
+**Design impact:** Role-based access control and Azure Policy are used to ensure that all workload deployments adhere to separation of duties and other governance requirements.
 
 ### Application-centric and archetype-neutral
 
@@ -75,7 +75,7 @@ Rather than provide opinionated solutions the start small approach uses decision
 
 ### Deferred decisions
 
-When building out an environment to support existing operations processes, you don't always know what you will need in the beginning. The start-small approach demonstrates ways to use cloud-first tools including Azure Resource Manager, Azure Policy, and Azure Blueprints to start building your environment. But rich configuration decisions are then deferred to run in parallel to your cloud adoption plan. As adoption progresses, the Govern, Manage, and Secure methodologies of the Cloud Adoption Framework guide implementation of those individual disciplines.
+When building out an environment to support existing operations processes, you don't always know what you will need in the beginning. The start-small approach demonstrates ways to use cloud-first tools including Azure Resource Manager, Azure Policy, and Azure Blueprints to start building your environment. But rich configuration decisions are then deferred to run in parallel to your cloud adoption plan. As adoption progresses, the Govern, Manage, and Secure methodologies of the Cloud Adoption Framework (CAF) guide implementation of those individual disciplines.
 
 **Design impact:** You may need to complete a foundational implementation of the Govern, Manage, and Secure methodologies in parallel to landing zone deployment.
 
