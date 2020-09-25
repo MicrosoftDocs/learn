@@ -24,8 +24,8 @@ With your environment setup, you are now ready to begin the coding exercise.
 1. Create a new folder with a name of your choosing, example **EntityRecCsharp**.
 1. Right-click the **EntityRecCsharp** folder and choose **Open in Integrated Terminal**.
 
->[!Note]
->Visual Studio Code may have different menu options depending on the packages you have installed.  You are looking for a terminal window at the bottom of Visual Studio Code that offers a command prompt/terminal.
+   >[!Note]
+   >Visual Studio Code may have different menu options depending on the packages you have installed.  You are looking for a terminal window at the bottom of Visual Studio Code that offers a command prompt/terminal.
 
 1. We will be using C# and .NET Core for this exercise so type in the command ```dotnet new console``` and press Enter.
 1. A new C# dotnet core project structure is set up for you complete with a Program.cs file, a workspace.csproj file, and the obj folder.
@@ -152,8 +152,8 @@ If you do not already have Python and Visual Studio Code installed on your local
 1. Select the hamburger menu and choose **Terminal, New Terminal**.
 1. The exercise will use REST to access the service so once pip is updated, install the requests library with this command, ``` sudo pip install --upgrade requests ```.
 
->[!Note]
->Depending on your Python environment, the above command may not be appropriate. You may have to use just ```pip install``` or ```python3 install```
+    >[!Note]
+    >Depending on your Python environment, the above command may not be appropriate. You may have to use just ```pip install``` or ```python3 install```
 
 1. In your **entity.py** file, add the following code at the top.
 
