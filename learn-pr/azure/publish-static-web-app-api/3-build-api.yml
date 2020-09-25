@@ -3,7 +3,7 @@ uid: learn.azure.static-web-app-and-api.3-build-api
 metadata:
   title: Build an API with Azure Functions
   description: Build an API with Azure Functions
-  ms.date: 09/22/2020
+  ms.date: 09/25/2020
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial

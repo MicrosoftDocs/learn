@@ -3,7 +3,7 @@ uid: learn.azure.static-web-app-and-api.6-exercise-action
 metadata:
   title: Exercise - Publish the API with GitHub Actions
   description: Exercise - Publish the API with GitHub Actions
-  ms.date: 09/22/2020
+  ms.date: 09/25/2020
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial

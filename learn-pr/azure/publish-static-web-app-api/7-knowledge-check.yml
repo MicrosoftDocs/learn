@@ -4,12 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 09/22/2020
+  ms.date: 09/25/2020
   author: jopapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
