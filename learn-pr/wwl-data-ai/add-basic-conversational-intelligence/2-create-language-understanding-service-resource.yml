@@ -4,7 +4,7 @@ title: Create a LUIS service resource
 metadata:
   title: Create a LUIS service resource
   description: "Create a LUIS service resource"
-  ms.date: 08/23/2020
+  ms.date: 09/27/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-create-language-understanding-intelligent-service-resource.md)]
+  [!include[](includes/2-create-language-understanding-service-resource.md)]
