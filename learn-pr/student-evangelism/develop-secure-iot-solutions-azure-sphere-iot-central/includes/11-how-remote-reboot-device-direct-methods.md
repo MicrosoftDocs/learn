@@ -9,6 +9,8 @@ The following outlines how Azure IoT Central Commands uses Azure IoT Hub Direct 
 3. The device implements the direct method; in this case, reset the device.
 4. The device responds with an HTTP status code, and optionally a response message.
 
+### The direct method pattern
+
 ![The illustration shows direct method pattern.](../media/azure-direct-method-pattern.png)
 
 ## Direct Method Bindings
@@ -30,15 +32,13 @@ static LP_DIRECT_METHOD_BINDING resetDevice = {
 
 Azure IoT Central commands are defined in Device templates.
 
+![The illustration shows device template interface.](../media/iot-central-device-template-interface-fan1.png)
+
 1. From Azure IoT Central, navigate to **Device template**, and select the **Azure Sphere** template.
 2. Click on **Interface** to list the interface capabilities.
 3. Scroll down and expand the **ResetMethod** capability.
 4. Review the definition of **ResetMethod**. The capability type is **Command**.
 5. The schema type is **Object**. Click on the **view** button to display the object definition. The Object definition describes the shape of the JSON payload sent with the command. In this example, the shape of the JSON payload will be the same as this example *{"reset_timer":5}*.
-
-![The illustration shows device template interface.](../media/iot-central-device-template-interface-fan1.png)
-
-------
 
 ## Direct Method Handler Function
 
