@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-python
 durationInMinutes: 10
 azureSandbox: true
-interactive: bash-editor
+interactive: bash
 content: |
   [!include[](includes/2-exercise-classes.md)]
