@@ -4,7 +4,7 @@ But there's a problem. Our workloads aren't generic enough, this way we can't de
 
 ## Helm charts
 
-Helm is called "The Package Manager for Kubernetes" because it embraces and extends all Kubernetes features providing a way to group our manifest files into **charts**.
+Helm is an open-source packaging tool that helps you install and manage the lifecycle of Kubernetes applications. Similar to Linux package managers such as APT and Yum, Helm is used to manage Kubernetes charts, which are packages of preconfigured Kubernetes resources.
 
 A chart is a group of one or more workloads together with some configuration files and a chart description file. Those files together compose a unit that can be easily deployed to a Kubernetes cluster.
 
