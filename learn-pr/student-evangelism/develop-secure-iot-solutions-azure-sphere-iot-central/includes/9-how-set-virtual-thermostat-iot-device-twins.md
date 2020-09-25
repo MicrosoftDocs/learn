@@ -90,7 +90,7 @@ static LP_DEVICE_TWIN_BINDING actualTemperature = {
 };
 ```
 
-### Reporting the Tempurature State
+### Reporting the Temperature State
 
 The ActualTemperature reported property message is sent to IoT Central by calling the DeviceTwinReportState function. You must pass a property of the correct type.
 
