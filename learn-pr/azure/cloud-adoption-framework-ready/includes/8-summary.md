@@ -1,4 +1,4 @@
-In this module, you compared operating models, evaluated design areas and development velocity, and chose the most relevant Azure landing zone to begin your environment configuration. 
+In this module, you compared operating models, evaluated design areas and development velocity, and chose the most fitting Azure landing zone to start configuring your environment.
 
 ## Next steps
 

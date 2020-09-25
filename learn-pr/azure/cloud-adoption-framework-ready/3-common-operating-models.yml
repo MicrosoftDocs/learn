@@ -25,10 +25,10 @@ quiz:
       explanation: Correct!
     - content: Enterprise operations
       isCorrect: false
-      explanation: See the last question in the knowledge check to understand why enterprise operations isn't currently a good fit for Tailwind Traders.
+      explanation: See the last question in the knowledge check to understand why enterprise operations aren't currently a good fit for Tailwind Traders.
     - content: Distributed operations
       isCorrect: false
-      explanation: Operations at Tailwind isn't nearly complex enough to fit this operating model.
+      explanation: Operations at Tailwind aren't complex enough to fit this operating model.
   - content: In the customer narrative, there is a controlled process for release of the solutions coming from the retail innovation team. If that process were improved to allow that team to manage their own workloads in a controlled landing zone, which operating model would better describe the new arrangement?
     choices:
     - content: Decentralized operations
@@ -43,7 +43,7 @@ quiz:
     - content: Distributed operations
       isCorrect: false
       explanation: Fortunately, this change wouldn't suggest a distributed operations approach. Try again.
-  - content: Before the retail innovation team was acquired by Tailwind Traders, they were entirely workload focused. Based on our limited knowledge, what operating model best describes how that team operated prior to the acquisition?
+  - content: The retail innovation team was entirely workload-focused before they were acquired by Tailwind Traders. Based on our limited knowledge, what operating model best describes how that team operated prior to the acquisition?
     choices:
     - content: Decentralized operations
       isCorrect: true
