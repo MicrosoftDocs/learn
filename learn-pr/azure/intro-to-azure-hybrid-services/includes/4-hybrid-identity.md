@@ -36,7 +36,7 @@ If Tailwind Traders plans to adopt Microsoft 365 technologies such as Exchange O
 
 You can use Azure AD DS to project an Azure AD domain onto an Azure virtual subnet. When you do this, services like domain join, Group Policy, Lightweight Directory Access Protocol (LDAP), and Kerberos and NTLM authentication become available to any VM deployed on the subnet. 
 
-Azure AD DS allows you to have a basic managed Active Directory environment available to VMs without worrying about managing, maintaining, and paying for the VM that run as domain controllers. Azure AD DS also allows you to use on-premises identities through Azure AD Connect to interact with VMs running on a specially configured Azure Virtual Network subnet. 
+Azure AD DS allows you to have a basic managed Active Directory environment available to VMs without worrying about managing, maintaining, and paying for the VMs that run as domain controllers. Azure AD DS also allows you to use on-premises identities through Azure AD Connect to interact with VMs running on a specially configured Azure Virtual Network subnet. 
 
 The following image shows an Azure AD DS architecture.
 

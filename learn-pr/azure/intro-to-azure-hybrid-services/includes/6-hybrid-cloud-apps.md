@@ -43,9 +43,9 @@ Hybrid Connections has the following functionality:
 Hybrid Connections has the following limitations:
 
 - It can't be used to mount an SMB share on an on-premises network.
-- It can't use the UDP protocol.
+- It can't use the User Datagram Protocol (UDP).
 - It can't access TCP-based services that use dynamic ports.
-- It doesn't support Lightweight Directory Access Protocol (LDAP) because of the reliance on User Datagram Protocol (UDP).
+- It doesn't support Lightweight Directory Access Protocol (LDAP) because of the reliance on UDP.
 - It can't be used to perform an Active Directory Domain Services domain-join operation.
 
 For Tailwind Traders, Hybrid Connections will enable the retirement of several applications that currently have their front ends running on the Tailwind Traders perimeter network. These apps can be migrated to Azure. Hybrid Connections will then provide a secure connection to protected networks that host the app's back-end components.

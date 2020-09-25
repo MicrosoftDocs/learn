@@ -36,7 +36,7 @@ quiz:
       explanation: "Use Azure Relay when you want to securely expose an application running on an internal network to clients on the internet. Use this option when you don't have an identity synchronization solution in place."
     - content: "Azure App Service Hybrid Connection"
       isCorrect: false
-      explanation: "You use Azure App Service Hybrid Connection to configure a connection between a web app running in an App Service in Azure and a back-end service running on a protected internal network."
+      explanation: "Use Azure App Service Hybrid Connection to configure a connection between a web app running in an App Service in Azure and a back-end service running on a protected internal network."
     - content: "Azure AD Application Proxy"
       isCorrect: true
       explanation: "Use Azure AD Application Proxy as a way of publishing internal applications that use Azure AD authentication to hosts on the internet. This is possible in this scenario because of the deployment of Azure AD Connect."

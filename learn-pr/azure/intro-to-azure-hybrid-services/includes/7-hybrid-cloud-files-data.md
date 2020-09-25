@@ -29,7 +29,7 @@ The Azure file share, which has substantially more storage than a local file sha
 
 When you configure cloud tiering, you can specify that a certain amount of disk space remains free on the volume that hosts the share. You can also specify that files that haven't been accessed in a certain amount of time are automatically tiered. Or you can enable both options at the same time. 
 
-The following image depicts a basic Azure File Sync deployment.
+The following image shows a basic Azure File Sync deployment.
 
 :::image type="content" source="../media/image15.png" alt-text="On-premises file servers synchronize with Azure file shares in the cloud through storage sync agents." lightbox="../media/image15.png":::
 
