@@ -44,3 +44,7 @@ In this module, you will:
 
 - Learn what endpoints are and what Microsoft Endpoint Manager can do for you and your organization.
 - Learn about the different products, services, and capabilities that encompass Microsoft Endpoint Manager.
+
+## Prerequisites
+
+- None
