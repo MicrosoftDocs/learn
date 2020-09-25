@@ -81,7 +81,7 @@ In this task, we will use the Webhook + API function to display a message when t
     :::image type="content" source="../media/function-lab-select-function-logs.png" alt-text="Screenshot of a trace information log, resulting from running the function inside the function editor in Azure portal.":::
 
     > [!NOTE]
-    > If no log information was collected, try waiting about 20 seconds.  If still no results show, retun to the browser tab where you pasted the function app URL, refresh the page and then return to the Logs view.
+    > If no log information was collected, try waiting about 20 seconds.  If still no results show, return to the browser tab where you pasted the function app URL, refresh the page and then return to the Logs view.
 
 Congratulations! You have created a Function App to display a Hello message when there is an HTTP request. 
 

@@ -6,7 +6,7 @@ In this module, you will learn about Microsoft's different monitoring solutions,
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+After completing this module, you'll be able to:
 
 - Choose the correct cloud monitoring service to address different kinds of business challenges.
 
