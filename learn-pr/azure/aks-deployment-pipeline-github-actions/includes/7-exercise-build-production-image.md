@@ -112,7 +112,7 @@ We'll build the tagged version using another workflow.
           - 'v*'
 
     jobs:
-      build_push:
+      build_push_image:
         runs-on: ubuntu-latest
 
         steps:
@@ -140,7 +140,7 @@ We'll build the tagged version using another workflow.
           - 'v*'
 
     jobs:
-      build_push:
+      build_push_image:
         runs-on: ubuntu-latest
 
         steps:
@@ -246,7 +246,7 @@ We'll build the tagged version using another workflow.
 
 ### Check your work
 
-1. Open your cloned repository in Azure Cloud Shell. Run `git tag -a v1.0.0`
+1. Open your cloned repository in Azure Cloud Shell. Run `git tag -a v1.0.0 -m'First tag'`
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 1. Run `git push --tags`
