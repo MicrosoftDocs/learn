@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.paths-to-modern-endpoint-management.5-protected-apps
-title: Use protected apps
+title: Learn about protected apps
 metadata:
-  title: Use protected apps
+  title: Learn about  protected apps
   description: Learn about the available protected apps for Microsoft Endpoint Manager.
-  ms.date: 08/19/2020
+  ms.date: 09/25/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial

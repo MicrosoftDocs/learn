@@ -8,6 +8,8 @@ The following interactive guide steps you through the Microsoft Endpoint Manager
 <iframe allowfullscreen width="95%" height="450" src="https://mslearn.cloudguides.com/guides/Manage%20and%20protect%20mobile%20and%20desktop%20applications%20with%20Microsoft%20Endpoint%20Manager" frameborder="0" scrolling="no" loading="lazy"/></iframe>
 </div>
 
+Suppose that you're the administrator of a company with several thousand employees. Your company uses Microsoft Office to create and share information internally and externally. Your company allows employees to use their own devices. You must implement the rules that are enforced when employees attempts to access, move, or copy corporate data using managed apps.
+
 Microsoft Endpoint Manager supports two MAM configurations:
 - **Intune MDM + MAM**: IT administrators can only manage apps using MAM and app protection policies on devices that are enrolled with Intune mobile device management (MDM). To manage apps using MDM + MAM, customers should use the Intune console in the Microsoft Endpoint Manager admin center.
 - **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers. To manage apps using MAM-WE, customers should use the Intune console in the Microsoft Endpoint Manager admin center. Also, apps can be managed by Intune on devices enrolled with third-party enterprise mobility management (EMM) providers or not enrolled with an MDM at all.
@@ -31,3 +33,7 @@ When apps are managed in Intune, administrators can:
   - Understand the how your organization's apps can be can be configured and protected.
   - Understand about the app lifecycle.
   - Learn about the data protection framework using app protection policies.
+
+## Prerequisites
+
+- None

@@ -7,6 +7,9 @@ Intune supports a number of protected Microsoft apps and partner apps that speci
 - Enable app protection without requiring enrollment
 - Enable app protection on devices managed with third-party EMM tools
 
+> [!NOTE]
+> To better understand the available protect apps that integrate with Intune, see a list of [Microsoft Intune protected apps][https://docs.microsoft.com/mem/intune/apps/apps-supported-intune-apps?azure-portal=true].
+
 ## Create protected apps using tools
 
 Protected apps incorporate mobile app management capabilities using the Intune App Software Development Kit (SDK) or the App Wrapping Tool for either iOS or Android.

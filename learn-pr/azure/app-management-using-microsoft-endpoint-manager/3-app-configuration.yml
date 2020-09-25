@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.paths-to-modern-endpoint-management.3-app-configuration
-title: Configure apps
+title: Learn about configuring apps
 metadata:
-  title: Configure apps
-  description: Configure apps with Microsoft Endpoint Manager.
-  ms.date: 08/19/2020
+  title: Learn about configuring apps
+  description: Learn about configuring apps with Microsoft Endpoint Manager.
+  ms.date: 09/25/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
