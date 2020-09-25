@@ -6,11 +6,11 @@ Although the internal implementation of the API is closed source, Tailwind Trade
 
 Apply the decision criteria you learned about earlier to find the right option.
 
-First, does Tailwind Traders need to automate and manage test lab creation? No. In this scenario, Azure DevTest Labs is not a candidate because it's not intended for this use case.
+First, does Tailwind Traders need to automate and manage test lab creation? No. In this scenario, Azure DevTest Labs is not a candidate because it isn't designed for this use case.
 
-Second, is Tailwind Traders building open-source software?  Yes. As we noted in a previous unit, developers are used to seeing this kind of content available on GitHub.  With GitHub, Tailwind Traders can publish their code, accept community contributions to improve the code examples, accept feedback and bug reports, and more. Because this scenario involves open-source code, GitHub is a leading candidate.
+Second, is Tailwind Traders building open-source software?  Yes. As we noted in a previous unit, developers are used to seeing this kind of content available on GitHub.  With GitHub, Tailwind Traders developers can publish their code, accept community contributions to improve the code examples, accept feedback and bug reports, and more. Because this scenario involves open-source code, GitHub is a leading candidate.
 
-Third, what level of granularity does Tailwind Traders need for assigning permissions? Though it's not stated explicitly, the fact that Tailwind Traders will be accepting community contributions, issuing reports, and generally attempting to build a community of developers around their API examples, the company's permission needs are basic: users can either *view only* or *view and write*. This is another reason why GitHub would be a good candidate for this scenario.
+Third, what level of granularity does the Tailwind Traders team need for assigning permissions? Though it's not stated explicitly, the fact that Tailwind Traders will be accepting community contributions, issuing reports, and generally attempting to build a community of developers around their API examples, the company's permission needs are basic: users can either *view only* or *view and write*. This is another reason why GitHub would be a good candidate for this scenario.
 
 Fourth, does Tailwind Traders require a sophisticated project management and reporting solution? Again, because of the nature of this project, the team doesn't require a sophisticated project management and reporting solution. In this scenario, the strength of Azure DevOps Services isn't required.
 
