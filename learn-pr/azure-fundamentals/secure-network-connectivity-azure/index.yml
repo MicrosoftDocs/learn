@@ -10,7 +10,7 @@ metadata:
 title: Secure network connectivity on Azure
 summary: Learn about the Azure services you can use to help ensure that your network is safe, secure, and trusted.
 abstract: |
-  By the end of this module, you'll able to:
+  After completing this module, you'll be able to:
 
   * Identify the layers that make up a *defense in depth* strategy.
   * Explain how Azure Firewall enables you to control what traffic is allowed on the network.

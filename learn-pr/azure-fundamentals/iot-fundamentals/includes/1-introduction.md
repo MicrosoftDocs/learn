@@ -8,7 +8,8 @@ By the end of this module, you will be able to choose the best Azure IoT service
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+After completing this module, you'll be able to:
+
 - Choose the best Azure IoT service for a given business scenario.
 
 ## Prerequisites
