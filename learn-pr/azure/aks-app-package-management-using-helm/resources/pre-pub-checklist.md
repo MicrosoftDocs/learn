@@ -33,7 +33,7 @@
 - [x] *description* is set and follows guidelines (doesn't duplicate title)
 - [x] *ms.date* is set 
 - [x] *author* and *ms.author* are set
-- [x] *durationInMinutes* is set and IS ACCURATE
+- [x] *durationInMinutes are set and IS ACCURATE
 - [x] *interactive* is set to **bash** or **azure-portal** (if exercise)
 - [x] *azureSandbox* is set to true if needed
 - []  Knowledge checks reviewed for spelling and accuracy
