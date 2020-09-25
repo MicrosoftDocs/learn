@@ -11,7 +11,7 @@ metadata:
 title: Choose the best artificial intelligence service for your needs
 summary: Examine Azure's artificial intelligence services choose the right service for your scenario.
 abstract: |
-  By the end of this module, you will be able to:
+  After completing this module, you'll be able to:
   - Choose the correct Azure Artificial Intelligence service to address different kinds of business challenges.
 prerequisites: | 
   - You should be familiar with the idea of an Application Programming Interface, or API. Programmers use APIs to utilize functionality contained in code libraries.

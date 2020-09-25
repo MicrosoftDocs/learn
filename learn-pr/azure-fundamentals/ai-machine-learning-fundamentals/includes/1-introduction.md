@@ -6,7 +6,7 @@ In this module, you'll learn about Microsoft's different AI services, and will a
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+After completing this module, you'll be able to:
 
 - Choose the correct Azure Artificial Intelligence service to address different kinds of business challenges.
 

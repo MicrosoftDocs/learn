@@ -164,7 +164,7 @@ The deployment succeeded. But let's run a few commands just to verify.
     ```bash
     Name         ResourceGroup                         Location        Zones
     -----------  ------------------------------------  --------------  -------
-    SimpleWinVM  learn-quickstart-vm-rg  southcentralus
+    simple-vm  learn-quickstart-vm-rg  southcentralus
     ```
 
-    Recall that the template names the VM "SimpleWinVM". Here you see that this VM exists in your resource group.
+    The template names the VM "simple-vm". Here you see that this VM exists in your resource group.

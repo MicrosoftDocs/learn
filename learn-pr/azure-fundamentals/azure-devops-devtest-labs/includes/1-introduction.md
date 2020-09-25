@@ -8,7 +8,7 @@ By the end of this module, you'll be able to choose the software development pro
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+After completing this module, you'll be able to:
 
 - Choose the software development process tools and services that best address specific business scenarios.
 
