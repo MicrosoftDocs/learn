@@ -178,11 +178,7 @@ The output proves that the class was created or *defined*. The output **doesn't*
 
 At this point, you have a basic class that shows how a class is defined. Let's create an object from this class.
 
-> If you closed your **MyClass.py** file, you can reopen it with the following command:
-
-```bash
-code MyClass.py
-```
+> If you closed your **MyClass.py** file, you can reopen it with the command `code MyClass.py`.
 
 1. In the code editor, add the following code at the end of your **MyClass.py** file:   
 
