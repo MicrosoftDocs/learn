@@ -1,4 +1,4 @@
-In this exercise, you'll build a High-Level Azure Sphere application that connects and sends environment telemetry to Azure IoT Central. 
+In this exercise, we'll build a High-Level Azure Sphere application that connects and sends environment telemetry to Azure IoT Central.
 
 ## Step 1: Create a new IoT Central Application
 

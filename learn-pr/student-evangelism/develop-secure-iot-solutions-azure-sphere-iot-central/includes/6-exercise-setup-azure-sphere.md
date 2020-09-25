@@ -18,7 +18,7 @@ Alternatively, you can download the drivers from [Future Technology Devices Inte
 
 2. Select and start the **Azure Sphere Developer Command Prompt**.
 
-3. If you've never logged in to Azure Sphere before or have installed the SDK, add the -- newuser parameter to create a new tenant user. Replace <email@address.com> with your account and run the command.
+3. If you've never logged in to Azure Sphere before or have installed the SDK, add the -- newuser parameter to create a new tenant user. Replace [email@address.com](mailto:email@address.com) with your account and run the command.
 
    ```
    azsphere login --newuser <email@address.com>
@@ -32,8 +32,7 @@ Alternatively, you can download the drivers from [Future Technology Devices Inte
 
 ## Create a new tenant
 
-  > [!NOTE]
-  > If you have access to single tenant or multiple tenants, you can proceed to the next step.
+> [!NOTE] If you have access to single tenant or multiple tenants, you can proceed to the next step.
 
 1. Now that you have successfully logged in, you'll create a new tenant. Type the following command. Replace <tenant_name> with name that other users can recognize. You can create only one Azure Sphere tenant with each device.
 
@@ -61,11 +60,9 @@ Alternatively, you can download the drivers from [Future Technology Devices Inte
 
 ## Claim your device
 
-  > [!NOTE]
-  > If you have already claimed your Azure Sphere, you can proceed to the next step.
+> [!NOTE] If you have already claimed your Azure Sphere, you can proceed to the next step.
 
-  > [!NOTE]
-  > Claiming an Azure Sphere device is a one-time operation. You can't move the device to another Azure Tenant once it has been claimed. However, you can add additional users and roles to the Azure Sphere tenant, including users with Admin rights.
+> [!NOTE] Claiming an Azure Sphere device is a one-time operation. You can't move the device to another Azure Tenant once it has been claimed. However, you can add additional users and roles to the Azure Sphere tenant, including users with Admin rights.
 
 1. Run the following command to claim the device.
 
@@ -83,7 +80,7 @@ You'll configure the Azure Sphere for networking. Hence, you can receive cloud u
    azsphere device wifi scan
    ```
 
-2. Run the following command to add your Wi-Fi network to the device. Replace <yourwifissid> with the name of your network and replace <yourwifipassword> with your network password.
+2. Run the following command to add your Wi-Fi network to the device. Replace with the name of your network and replace with your network password.
 
    ```
    azsphere device wifi add -s <yourwifissid> -p <yourwifipassword>
@@ -145,8 +142,7 @@ You'll configure the Azure Sphere for networking. Hence, you can receive cloud u
 
 ## Clone the Azure Sphere Learning Path
 
-> [!NOTE]
-> On Windows, clone the *Azure Sphere Learning Path* to a directory close to the root directory on your computer. For example **c:\lab**. The reason is the Azure Sphere build process uses CMake which does not support Windows 10 long path/folder names.
+> [!NOTE] On Windows, clone the *Azure Sphere Learning Path* to a directory close to the root directory on your computer. For example **c:\lab**. The reason is the Azure Sphere build process uses CMake which does not support Windows 10 long path/folder names.
 
 ```
 git clone --depth 1 https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path.git Azure-Sphere
