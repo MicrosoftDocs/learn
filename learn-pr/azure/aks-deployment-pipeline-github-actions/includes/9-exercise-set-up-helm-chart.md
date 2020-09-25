@@ -21,7 +21,7 @@ Let's set up the environment to deploy a helm chart to AKS using GitHub Actions.
 1. `cd` into the new directory and delete the `charts` and `templates` folders
 1. Create a new empty `templates` folder using `mkdir templates`
 
-Right now, we have created an empty chart. To start building the workloads, we'll leverage what others have already built, which means that we'll use the `yaml` files that lies outside of this new directory we created.
+Right now, we have created an empty chart. To start building the workloads, we'll leverage what others have already built, which means that we'll use the `yaml` files that lie outside of this new directory we created.
 
 Let's move the old `kubernetes` files to the `templates` folder.
 
@@ -76,13 +76,13 @@ This is all it takes to create a chart. Now let's configure it.
 
 ## Configure the chart template files
 
-In this section we'll go through each of the template files to set them up and add templating to them.
+In this section, we'll go through each of the template files to set them up and add templating to them.
 
 ### Deployment
 
 1. Open the `kubernetes` folder in the left-hand side and navigate until you find the `deployment.yaml` file within the `templates` folder you just moved and click it
 
-    In the opened file you should have an YAML like this:
+    In the opened file you should have a YAML like this:
 
     ```yml
     apiVersion: apps/v1
@@ -147,7 +147,7 @@ In this section we'll go through each of the template files to set them up and a
                   name: http
     ```
 
-    This means that, by default, we'll deploy this resource into the `staging` namespace. If the installation has a `namespace` option we'll use that instead.
+    This means that, by default, we'll deploy this resource into the `staging` namespace. If the installation has a `namespace` option, we'll use that instead.
 
 1. Let's jump to the `image` key.
 
@@ -183,19 +183,19 @@ In this section we'll go through each of the template files to set them up and a
                   name: http
     ```
 
-    In this section we're spliting the three sections of the image so we can better work with them separately.
+    In this section we're splitting the three sections of the image so we can better work with them separately.
 
 1. Save and close the file.
 1. Open the `values.yaml` file in the root of the `contoso-website` directory
 1. Remove all contents within the file, you should end up with an empty YAML file. Now let's include our content in it.
 
-     You saw earlier that we used `{{ .Release.Namespace }}`, so `Release` is a __variable scope__. Each variable scope have different default values and variables.
+     You saw earlier that we used `{{ .Release.Namespace }}`, so `Release` is a __variable scope__. Each variable scope has different default values and variables.
 
     Helm uses the `values.yaml` file to retrieve all the template values that start with `{{ .Values }}`, the `values.yaml` file is another variable scope.
 
-    The structure of this file should follow the same structure we're using when calling our variables. So let's take a quick look in the `deployment.yaml` file we just edited and check out the structure.
+    The structure of this file should follow the same structure we're using when calling our variables. So let's take a quick look in the `deployment.yaml` file we edited and check out the structure.
 
-    Notice we're using `.Values.image.registry`, `.Values.image.name`, and `.Values.image.tag`, so let's create the `values.yaml` file accordingly.
+    Notice we're using `.Values.image.registry`, `.Values.image.name`, and `.Values.image.tag`, so let's create the `values.yaml` file correctly.
 
     ```yml
     image:
@@ -281,7 +281,7 @@ Let's change the `ingress.yaml` file.
                 path: /
     ```
 
-    Now let's add a new template variable which will be our DNS zone name
+    Now let's add a new template variable that will be our DNS zone name
 
     ```yml
     apiVersion: v1
