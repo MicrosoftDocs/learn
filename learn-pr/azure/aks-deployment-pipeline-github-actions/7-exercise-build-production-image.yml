@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Build the staging application image
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-exercise-build-production-image)]
+  [!include[](includes/7-exercise-build-production-image.md)]
