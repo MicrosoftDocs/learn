@@ -1,4 +1,4 @@
-With all the charts created, we now have all the tools we need to deploy the application to AKS using GitHub actions. Let's make use of what we created to finish our deployment pipeline.
+With all the charts created, we now have all the tools we need to deploy the application to AKS using GitHub actions. Let's use what we created to finish our deployment pipeline.
 
 In this part, we'll tackle the last bit of our diagram, the "Deploy Steps".
 
@@ -61,7 +61,7 @@ We'll start by the staging pipeline.
         needs: build_push_image # Will wait for the execution of the previous job
     ```
 
-1. The first step is to clone and checkout the branch we're working with. So let's add the same `- uses: actions/checkout@v2` as the first step:
+1. The first step is to clone and check out the branch we're working with. So let's add the same `- uses: actions/checkout@v2` as the first step:
 
     ```yml
       deploy:
@@ -110,7 +110,7 @@ We'll start by the staging pipeline.
               version: v3.3.1
     ```
 
-1. Next up, we'll log in to our AKS cluster using Azure CLI through another action that Azure provides us. Use the search bar on the righ-hand side of the screen to look for "Set Context". Select the "Azure Kubernetes Set Context" action
+1. Next up, we'll log in to our AKS cluster using Azure CLI through another action that Azure provides us. Use the search bar on the right-hand side of the screen to look for "Set Context". Select the "Azure Kubernetes Set Context" action
 
     :::image type="content" source="../media/10-aks-set-context.png" alt-text="Set AKS context":::
 
@@ -193,7 +193,7 @@ We'll start by the staging pipeline.
               cluster-name: contoso-video
     ```
 
-1. We have set the credential secret but this secret is not created yet. Let's create it.
+1. We have set the credential secret but this secret isn't created yet. Let's create it.
 
     __In a new tab__, open the repository settings and navigate to "Secrets". Once there, create a new secret called `AZURE_CREDENTIALS`. The value of this secret will be the output of the following command, which is a JSON object.
 
@@ -203,7 +203,7 @@ We'll start by the staging pipeline.
 
     Copy the output and paste it in the secret value. Then save the secret and close the tab.
 
-1. Now we have access to our cluster and we have helm installed, so the next step is to actually deploy the application. For this we'll use the simple command instructions native to GitHub Actions.
+1. Now we have access to our cluster and we have helm installed, so the next step is to actually deploy the application. For this, we'll use the common command instructions native to GitHub Actions.
 
     In the YAML file, create a new `- name:` key below the latest step. Give it the name of "Run Helm Deploy". Below this key, create another key called `run`. The YAML should look like this:
 
@@ -276,8 +276,8 @@ We'll start by the staging pipeline.
     |Parameter  |Value  |
     |---------|---------|
     |`helm upgrade`     |Upgrades an installed release         |
-    |`--install`     |If the release does not exist, install it. This transforms the command into an idempotent command, meaning we can run it exactly the same multiple times.         |
-    |`--create-namespace`     |If the namespace in the `--namespace` flag does not exist, create it         |
+    |`--install`     |If the release doesn't exist, install it. This transforms the command into an idempotent command, meaning we can run it exactly the same multiple times.         |
+    |`--create-namespace`     |If the namespace in the `--namespace` flag doesn't exist, create it         |
     |`--atomic`     |If the release fails, remove all workloads that have been installed         |
     |`--wait`     |Wait for the release to be completed and return an "ok" signal         |
     |`--namespace staging`     |Deploy this release to the `staging` namespace, overrides all `namespace` keys in the manifest files         |
@@ -286,7 +286,7 @@ We'll start by the staging pipeline.
     |`--set image.repository`     |Updates the value of the `image.repository` key in the `values.yaml` file __for this release only__         |
     |`--set dns.name`   |Updates the `dns.name` key in the `values.yaml` file __for this release only__         |
 
-    To do this we'll start with a `|` character in the beginning. The final YAML should look something like this:
+    To do this, we'll start with a `|` character in the beginning. The final YAML should look something like this:
 
     ```yml
     name: Build and push the latest build to staging
@@ -366,10 +366,10 @@ To test the staging deployment, go to `contoso-staging.<your-dns-name>` in your 
 
 ## Create the production deploy
 
-With the staging workflow created, the next step is to create the production workflow. This step is simpler because we can copy the whole `deploy` job and tweak it's parameters.
+With the staging workflow created, the next step is to create the production workflow. This step is simpler because we can copy the whole `deploy` job and tweak its parameters.
 
 1. Navigate to the `.github/workflows` directory in the "Code" view in the GitHub website. Click the `build-production.yaml` file and edit it.
-1. Copy the `deploy` step from the previous module an paste it below the last line of the YAML file. The result should be like this:
+1. Copy the `deploy` step from the previous module and paste it below the last line of the YAML file. The result should be like this:
 
     ```yml
     name: Build and push the tagged build to production
@@ -439,7 +439,7 @@ With the staging workflow created, the next step is to create the production wor
 
     In this case, we want to get the tag name. This variable is defined by the Actions runtime as `GITHUB_REF`, if it's a branch, it comes as `refs/heads/<branch>`, if it's a tag, it comes as `refs/tags/<tag>`.
 
-    We need to remove the `refs/tags/` part to get only the tag name, so we execute `${GITHUB_REF##*/}` which means "return everything after the last `/` in the `GITHUB_REF` environment variable.
+    We need to remove the `refs/tags/` part to get only the tag name, so we execute `${GITHUB_REF##*/}`, which means "return everything after the last `/` in the `GITHUB_REF` environment variable.
 
 1. The final YAML file will look like this
 
