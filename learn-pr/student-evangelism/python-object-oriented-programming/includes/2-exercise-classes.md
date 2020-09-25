@@ -117,9 +117,7 @@ The `__str__()` method creates a new object from the `myVar` object. The new obj
 
 Python has several built-in classes, including `int`, `float`, `bool`, and `str`, but you can also define classes of your own. Defining your own classes is the main objective in object-oriented programming.
 
-<!-- Need to resolve ---- "Every Python class you create begins with the word `class`"
-     The name of the class created in this example begins with `My` and not with `class` -- OK? -->
-Every Python class you create begins with the word `class`. A class needs a name, and it also needs to do something.
+Every Python class needs a name, and it also needs to do something.
 
 Let's begin with something simple: Tell the user that the class has been created. In the real world, you wouldn't actually create a class like this, but it's helpful for learning incrementally.
 
@@ -133,14 +131,13 @@ Let's open the Cloud Shell code editor to make our first class.
 
 1. Now, enter the following command to create a new Python file to store the class definition.
 
-    We'll use the same name for the file as our new class, **MyClass**.
-    Also add the Python file extension **.py** to the file name.
+    We'll use the same name for the file as our new class, **MyClass**, and we'll include the Python file extension **.py**:
 
     ```bash
     code MyClass.py
     ```
     
-    Python opens the new file in the Cloud Shell editor above the command pane.
+    The Cloud Shell `code` command creates a new file with the name **MyClass.py** and opens the file in the Cloud Shell editor above the command pane.
 
 1. In the code editor, enter the following code:
 
@@ -149,7 +146,7 @@ Let's open the Cloud Shell code editor to make our first class.
         print('MyClass created!')
     ```
 
-    The command creates the simplest class you can create. It contains the bare essentials needed to create a class:
+    The bit of code creates the simplest class you can make. It contains the bare essentials needed to create a class:
 
     - The keyword `class`.
     - The class name **MyClass**.
@@ -161,7 +158,7 @@ Let's open the Cloud Shell code editor to make our first class.
 
     ![Screenshot that shows how to save the class definition file in the Cloud Shell editor.](../media/save-file.png)
 
-    After you save the class definition file, you can reopen the file later to make changes.
+    After you save the class definition file, you can reopen the file later with the same `code MyClass.py` command to make changes. Because the **MyClass.py** file already exists, the command will now open the file.
 
 1. In the command pane below the editor, enter the following command to run the code in your new class:
 
@@ -181,7 +178,13 @@ The output proves that the class was created or *defined*. The output **doesn't*
 
 At this point, you have a basic class that shows how a class is defined. Let's create an object from this class.
 
-1. In the code editor, add the following code at the end of the file:
+> If you closed your **MyClass.py** file, you can reopen it with the following command:
+
+```bash
+code MyClass.py
+```
+
+1. In the code editor, add the following code at the end of your **MyClass.py** file:   
 
     ```python
     myVar = MyClass()
