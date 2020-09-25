@@ -1,9 +1,5 @@
 Now that you've defined the template resource for the Custom Script Extension that configures IIS on your VM, let's add it to the existing VM template and run it.
 
-Here's what the IIS configuration will look like.
-
-![A web browser showing the resulting IIS configuration](../../media/6-browser-windows.png)
-
 ## Build the template
 
 Here you'll download the template and modify it.
@@ -26,7 +22,7 @@ Here you'll download the template and modify it.
 
     ```json
     {
-      "name": "[concat(variables('vmName'),'/', 'ConfigureIIS')]",
+      "name": "[concat(parameters('vmName'),'/', 'ConfigureIIS')]",
       "type": "Microsoft.Compute/virtualMachines/extensions",
       "apiVersion": "2018-06-01",
       "location": "[parameters('location')]",
@@ -45,7 +41,7 @@ Here you'll download the template and modify it.
         }
       },
       "dependsOn": [
-        "[resourceId('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
+        "[resourceId('Microsoft.Compute/virtualMachines/', parameters('vmName'))]"
       ]
     },
     ```

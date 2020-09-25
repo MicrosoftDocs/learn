@@ -11,7 +11,7 @@ metadata:
 title: Choose the best monitoring service for visibility, insight, and mitigation of service outages
 summary: Discover solutions that help IT organizations with insights into the health and performance of their applications running in the cloud.
 abstract: |
-  By the ned of this module, you will be able to:
+  After completing this module, you'll be able to:
   - Choose the correct cloud monitoring service to address different kinds of business challenges.  
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology
