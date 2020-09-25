@@ -1,7 +1,7 @@
-As we mentioned, conditional access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. It's built from scratch in the cloud. Whether you're managing devices with Intune or extending your Configuration Manager deployment with co-management, it works the same way.
+As we mentioned, Conditional Access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. It's built from scratch in the cloud. Whether you're managing devices with Intune or extending your Configuration Manager deployment with co-management, it works the same way.
 
-Conditional Access allows you to control the devices and apps that can connect to your email and company resources.
+For example, Conditional Access allows you to control the devices and apps that can connect to your email. Conditional Access provides granular access control to keep your corporate data secure, while giving end users an experience that allows them to do their best work from any device. In fact, you can define conditions that gate access to your corporate data based on location, device, user state, and application sensitivity.
 
-Enterprise Mobility + Security (EMS)  is not a standalone product. It's a solution that takes part on all services and products that are part of EMS. Conditional Access provides granular access control to keep your corporate data secure, while giving users an experience that allows them to do their best work from any device, and from any location.
+Conditional Access is an Azure Active Directory capability that is included with an Azure Active Directory Premium license. Intune enhances this capability by adding mobile device compliance and mobile app management to the solution. 
 
-You can define conditions that gate access to your corporate data based on location, device, user state, and application sensitivity.
+![Intune and Conditional Access when using EMS](../media/intro-to-endpoint-manager-05.png)

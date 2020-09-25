@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.paths-to-modern-endpoint-management.5-benefits-conditional-access
-title: Benefits of Conditional Access
+title: Understand the benefits of Conditional Access
 metadata:
-  title: Benefits of Conditional Access
+  title: Understand the benefits of Conditional Access
   description: Learn about the benefits of Conditional Access.
-  ms.date: 08/19/2020
+  ms.date: 09/25/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial

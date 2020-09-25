@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.paths-to-modern-endpoint-management.6-implement-security-rules
-title: Implement security rules
+title: Learn about implementing security rules
 metadata:
-  title: Implement security rules
-  description: Understand the capabilities behind keeping devices security using Microsoft Endpoint Manager.
-  ms.date: 08/19/2020
+  title: Learn about implementing security rules
+  description: Understand the capabilities behind keeping device secure using Microsoft Endpoint Manager.
+  ms.date: 09/25/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial

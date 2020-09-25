@@ -39,7 +39,7 @@ After you assign an app to a group in Intune, you can assign policies for the ap
 
 ## Policies
 
-Much like assigning devices and apps, policies can also be assign via Intune. When you assign policies, you can choose who will be included and how will be excluded. 
+Policies can be assign to groups using Intune. When you assign policies, you can choose who will be included and who will be excluded. 
 
 ## User groups vs. device groups
 
