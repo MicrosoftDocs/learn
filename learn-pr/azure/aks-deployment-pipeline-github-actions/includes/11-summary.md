@@ -41,3 +41,5 @@ To learn more about Azure Kubernetes Service and GitHub Actions, see the followi
 - [Automation of tasks using GitHub Actions](https://docs.microsoft.com/en-us/learn/modules/github-actions-automate-tasks/)
 - [CI With GitHub Actions](https://docs.microsoft.com/en-us/learn/modules/github-actions-ci/)
 - [What is a Docker image](https://docs.docker.com/storage/storagedriver/#images-and-layers)
+- [Helm official website](https://helm.sh)
+- [Azure Helm docs](https://docs.microsoft.com/en-us/azure/aks/kubernetes-helm)
