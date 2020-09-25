@@ -10,7 +10,7 @@ In this exercise, we'll build a High-Level Azure Sphere application that connect
 
 4. Expand the sidebar menu by clicking on the **Burger menu** icon.
 
-   ![iot-central-burger-menu](../media/iot-central-burger-menu.png)
+   ![The illustration shows how to expand the sidebar menu.](../media/iot-central-burger-menu.png)
 
 5. Navigate to Build and click **+ New application** to create a new Azure IoT Central application.
 
@@ -325,9 +325,9 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
 
 ## Step 8: Configure the Azure Sphere Application
 
-1. Open the **app_manifest.json** file
+1. Open the **app_manifest.json** file.
 
-   ![](../media/visual-studio-code-open-app-manifest.png)
+   !["The illustration shows how to open the manifest file."](../media/visual-studio-code-open-app-manifest.png)
 
 2. Update the Azure IoT Central Application connection properties.
 
@@ -511,7 +511,7 @@ You need to **Migrate** the newly enrolled device to the **Azure Sphere** templa
 
 3. Select the Azure Sphere Template, and then click migrate.
 
-   ![The illustration shows how to migrate a device.](../media/iot-central-migrate-select-template.png)
+   ![The illustration shows how to select the template.](../media/iot-central-migrate-select-template.png)
 
 ## Step 14: Display the Azure Sphere device telemetry
 

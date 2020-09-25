@@ -1,12 +1,12 @@
 ## Designing a secure IoT Solution
 
-In the scenario, your objective is to maintain ambient room conditions accurately within a laboratory. Doing so will ensure that your test results will be accurate and stable. The system you'll build should automatically read the data and transmit it securely from the device to the cloud. To accomplish the requirement, you'll create a secure IoT solution on Azure Sphere (MT3620 Cortex-A7 Core).
+In the scenario, your goal is to maintain ambient room conditions accurately within a laboratory. Doing so will ensure that your test results will be accurate and stable. The system you'll build should automatically read the data and transmit it securely from the device to the cloud. To accomplish the requirement, you'll create a secure IoT solution on Azure Sphere (MT3620 Cortex-A7 Core).
 
 ## Components to use
 
 You'll clone Azure Sphere Developer Learning Path, configure your application and deploy it to the Azure Sphere device using Visual Studio Code.
 
-To accomplish this you will use the Azure Sphere MT3620 board which will act as a room monitor. You'll deploy an Azure Sphere application on the Azure Sphere board. It will read and transmit environmental telemetry data to the cloud so that you'll be able to monitor and analyze the data from the cloud. Additionally, you can control your room monitor from the cloud. You can specify a threshold for any of the defined variables to maintain the room condition stable.
+To accomplish this you'll use the Azure Sphere MT3620 board that will act as a room monitor. You'll deploy an Azure Sphere application on the Azure Sphere board. It will read and transmit environmental telemetry data to the cloud so that you'll be able to monitor and analyze the data from the cloud. Additionally, you can control your room monitor from the cloud. You can specify a threshold for any of the defined variables to maintain the room condition stable.
 
 The components you'll use are:
 
