@@ -8,4 +8,4 @@ Once again, start by applying the decision criteria you learned about previously
 
 First, does Tailwind Traders need to automate and manage test lab creation?  Yes. This looks like a job for Azure DevTest Labs, because it can do everything that the team needs to accomplish in this scenario.
 
-We could continue evaluating the decision criteria from earlier, but neither Azure DevOps nor GitHub is needed for this scenario.  Remember that either Azure DevOps or GitHub could be used to create product releases that can automatically be included in VMs that you create for testing purposes.
+We could continue evaluating the decision criteria, but neither Azure DevOps nor GitHub is needed for this scenario.  Remember that either Azure DevOps or GitHub could be used to create product releases that can automatically be included in any VMs that you create for testing purposes.
