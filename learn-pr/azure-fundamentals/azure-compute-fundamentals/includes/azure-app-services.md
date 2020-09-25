@@ -52,6 +52,6 @@ Use the Mobile Apps feature of App Service to quickly build a back end for iOS a
 - Store mobile app data in a cloud-based SQL database.
 - Authenticate customers against common social providers, such as MSA, Google, Twitter, and Facebook.
 - Send push notifications.
-- Execute custom back-end logic in C# or Node.js
+- Execute custom back-end logic in C# or Node.js.
 
 On the mobile app side, there's SDK support for native iOS and Android, Xamarin, and React native apps.

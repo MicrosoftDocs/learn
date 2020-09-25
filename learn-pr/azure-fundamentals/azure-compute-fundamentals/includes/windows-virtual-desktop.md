@@ -1,4 +1,8 @@
-In addition to the challenges that Tailwind Traders has been facing with application scale, your manager has asked you to put together a new development team of remote workers. This task would normally require setting up several new computers with all of the requisite development tools for your new team. Then you would need to ship them to the respective developers across the country. The time to procure, set up, and ship each of these computers would be costly. Also, all of your new developers have their own computing devices that are running a mixture of Windows, Android, and macOS operating systems. You want to find a way to expedite the deployment process for your remote workers. You also want to keep your management costs to a minimum. With that in mind, you want to see how Windows Virtual Desktop can help your organization.
+In addition to the challenges that Tailwind Traders has been facing with application scale, your manager has asked you to put together a new development team of remote workers. 
+
+This task would normally require setting up several new computers with all of the requisite development tools for your new team. Then you would need to ship them to the respective developers across the country. The time to procure, set up, and ship each of these computers would be costly. Also, all of your new developers have their own computing devices that are running a mixture of Windows, Android, and macOS operating systems. 
+
+You want to find a way to expedite the deployment process for your remote workers. You also want to keep your management costs to a minimum. With that in mind, you want to see how Windows Virtual Desktop can help your organization.
 
 ## What is Windows Virtual Desktop?
 
