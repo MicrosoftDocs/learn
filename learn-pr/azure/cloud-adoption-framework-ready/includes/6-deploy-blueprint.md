@@ -52,8 +52,8 @@ Once the copy of the blueprint sample has been successfully published, it can be
    - Basics
      - **Subscriptions:** Select one or more of the subscriptions that are in the management group you saved your copy of the blueprint sample to. If you select more than one subscription, an assignment will be created for each using the parameters entered.
      - **Assignment name:** The name is pre-populated for you based on the name of the blueprint. Change as needed or leave as is.
-     - **Location:** Select a region for the managed identity to be created in.
-     - Azure blueprint uses this managed identity to deploy all artifacts in the assigned blueprint.
+     - **Location:** Select a region in which to create the managed identity.
+     - Azure Blueprint uses this managed identity to deploy all artifacts in the assigned blueprint.
      - **Blueprint definition version:** Pick a **Published** version of your copy of the blueprint sample.
    - Lock assignment
      - Select the blueprint lock setting for your environment.
@@ -62,7 +62,7 @@ Once the copy of the blueprint sample has been successfully published, it can be
    - Blueprint parameters
      - The parameters defined in this section are used by many of the artifacts in the blueprint definition to provide consistency.
 
-       - **Organization:** Enter your organization name such as Contoso or Fabrikam, must be unique.
+       - **Organization:** Enter your organization's name; for example, Contoso or Fabrikam. It must be unique.
        - **AzureRegion:** Select one Azure region for deployment.
 
    - Artifact parameters

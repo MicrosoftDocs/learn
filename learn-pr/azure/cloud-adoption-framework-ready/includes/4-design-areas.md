@@ -116,7 +116,7 @@ All initial landing zone templates have limitations. Guardrails or policies duri
 
 As an example of establishing refactoring guardrails, lets compare the development approach in the prior example and the CAF Migration landing zone blueprint.
 
-- Per the [assumptions of the CAF Migration landing zone blueprint](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/migrate-landing-zone#assumptions?azure-portal=true), this initial landing zone is not designed for sensitive data or mission-critical workloads. Those features will have to be added through refactoring.
+- Per the [assumptions of the CAF Migration landing zone blueprint](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/migrate-landing-zone/?azure-portal=true), this initial landing zone isn't designed for sensitive data or mission-critical workloads. Those features will have to be added through refactoring.
 - In this example, lets assume that the portfolio of 100 workloads will require both mission critical and sensitive data hosting capabilities.
 
 To balance these two competing requirements, the adoption team and platform team will agree to and operate under the following conditions:
