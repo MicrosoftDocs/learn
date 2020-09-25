@@ -15,7 +15,8 @@ abstract: |
     - Choose an existing web app project with either Angular, React, Svelte or Vue
     - Create an API for the app with Azure Functions
     - Run the application locally
-    - Publish the app and its API to Azure Static Web Apps
+    - Publish the app to Azure Static Web Apps
+    - Publish the app and its API to Azure Static Web Apps to a staging site
 prerequisites: |
   - Familiarity with one of Angular, React, Svelte, or Vue
   - [Node.js LTS and Git](https://nodejs.org/)
