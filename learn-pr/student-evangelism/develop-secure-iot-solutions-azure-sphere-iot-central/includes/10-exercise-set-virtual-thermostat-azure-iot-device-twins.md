@@ -55,8 +55,6 @@
 1. The green LED closest to the USB connector will start to blink
 2. Given this device has no builtin buttons then virtual **Button A** and **Button B** presses will be generated every 10 seconds. The blink rate will change and the **Actual Temperature** Device twin property in IoT Central will be updated.
 
-------
-
 ## Step 3: Display the actual temperature property
 
 1. Switch to Azure IoT Central in your browser.

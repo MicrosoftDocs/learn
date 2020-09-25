@@ -14,7 +14,7 @@ In this module, you'll focus on the network security capabilities in Azure and r
 
 ## Learning objectives
 
-By the end of this module, you'll able to:
+After completing this module, you'll be able to:
 
 * Identify the layers that make up a *defense in depth* strategy.
 * Explain how Azure Firewall enables you to control what traffic is allowed on the network.
