@@ -36,7 +36,7 @@ The probability amplitude is an important difference from classical computing. I
 
 A handy notation to describe quantum states is the Dirac bra-ket notation. In this notation, we describe the possible states of quantum systems by using kets $| \rangle$.
 
-For example, $|0\rangle$ and $|1\rangle$ are two possible states of a qubit. A qubit in the state $|\psi\rangle = |0\rangle$ means that the probability of observing `Zero` when we measure the qubit is 100 percent. Similarly, a qubit in the state $|\psi\rangle =|1\rangle$ produces `One` we measure it.
+For example, $|0\rangle$ and $|1\rangle$ are two possible states of a qubit. A qubit in the state $|\psi\rangle = |0\rangle$ means that the probability of observing `Zero` when we measure the qubit is 100 percent. Similarly, a qubit in the state $|\psi\rangle =|1\rangle$ produces `One` when we measure it.
 
 > [!NOTE]
 > There are many interpretations of the concept of *measurement* in
