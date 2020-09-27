@@ -115,7 +115,7 @@ Click the link to browse to your application.
 
 Browse to `http://localhost:4200`.
 
->
+:::image type="content" source="../media/my-shopping-list-app-loading-angular.png" alt-text="Browsing to your web app":::
 
 ::: zone-end
 
@@ -123,11 +123,15 @@ Browse to `http://localhost:4200`.
 
 Browse to `http://localhost:3000`.
 
+:::image type="content" source="../media/my-shopping-list-app-loading-react.png" alt-text="Browsing to your web app":::
+
 ::: zone-end
 
 ::: zone pivot="svelte"
 
 Browse to `http://localhost:5000`.
+
+:::image type="content" source="../media/my-shopping-list-app-loading-svelte.png" alt-text="Browsing to your web app":::
 
 ::: zone-end
 
@@ -135,9 +139,9 @@ Browse to `http://localhost:5000`.
 
 Browse to `http://localhost:8080`.
 
-::: zone-end
+:::image type="content" source="../media/my-shopping-list-app-loading-vue.png" alt-text="Browsing to your web app":::
 
-:::image type="content" source="../media/my-shopping-list-app-loading.png" alt-text="Browsing to your web app":::
+::: zone-end
 
 Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this tutorial.
 
