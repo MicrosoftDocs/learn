@@ -10,7 +10,7 @@ Our application might have several intents: finding pictures, sharing pictures, 
 1. In the **Search the Marketplace** box, type **LUIS**, and then press Enter.
 1. In the search results, select **Language Understanding**.
 1. Select **Create**.
-1. Leave the Create options set to **Both**
+1. Leave the Create options set to **Both**.
 1. Choose a subscription.
 1. Enter a unique name for your LUIS service.
 1. Create a new resource group named **LearnRG**.
@@ -23,7 +23,7 @@ Our application might have several intents: finding pictures, sharing pictures, 
 
 After the deployment has finished, go the resource page for the service. You'll need one of the displayed subscription keys for later exercises. Locate the **Resource Management** section and then select the **Keys and Endpoints** section to see the two created keys.
 
-## Create a LUIS App in the LUIS Portal
+## Create a LUIS app in the LUIS portal
 
 Azure requires you to create the LUIS app in the same geographic location where you created the service. If you didn't create the service in the previous optional exercise, use the location closest to you.
 
@@ -47,7 +47,7 @@ Azure requires you to create the LUIS app in the same geographic location where 
 1. Give your LUIS app a name, for example, **PictureBotLUIS**.
 1. For **Culture**, select the appropriate choice for you language.
 1. Give your LUIS app a description so it's clear what the app's purpose is.
-1. If you have already created a **Prediction Resource**, you can select that in the drop-down for **Prediction resource (Optional)**
+1. If you have already created a **Prediction Resource**, you can select that in the drop-down for **Prediction resource (Optional)**.
 1. Select **Done**.
 1. A guidance dialog may display that will provide some information on how to create an effective LUIS app.  You can step through these concepts to gain an idea of how to create a LUIS app.  When finished, close the dialog by selecting the **X** in the upper right corner.
 
@@ -55,11 +55,11 @@ The newly created app will open with the **Build** tab opened and displaying the
 
 That is all that is required to create a new LUIS app that is linked to a LUIS service on Microsoft Azure.
 
-## Create a LUIS App with Code
+## Create a LUIS app with code
 
 It is possible to create a LUIS application through code.  You may want to create the LUIS app this way if you want to integrate with a continuous integration, continuous development (CI/CD) environment.  In order to create a LUIS app in code, you still require a LUIS authoring key.  The authoring key is available by creating the LUIS resource first. Once you have the resource created, you can use the key for that service to author the LUIS app with code.
 
-### Environment Setup
+### Environment setup
 
 1. Ensure that you have followed the instructions earlier in this unit to create a LUIS resource.
 1. Copy the key and endpoint from the LUIS resource.  It will be required during the app creation.
