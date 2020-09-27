@@ -1,6 +1,4 @@
-## Designing a secure IoT Solution
-
-In the scenario, your goal is to maintain ambient room conditions accurately within a laboratory. Doing so will ensure that your test results will be accurate and stable. The system you'll build should automatically read the data and transmit it securely from the device to the cloud. To accomplish the requirement, you'll create a secure IoT solution on Azure Sphere (MT3620 Cortex-A7 Core).
+In this scenario, your goal is to maintain ambient room conditions accurately within a laboratory. Doing so will ensure that your test results will be accurate and stable. The system you'll build should automatically read the data and transmit it securely from the device to the cloud. To accomplish the requirement, you'll create a secure IoT solution on Azure Sphere (MT3620 Cortex-A7 Core).
 
 ## Components to use
 
