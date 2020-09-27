@@ -18,15 +18,15 @@ You can prepare Azure cloud resources with the Azure CLI, the Azure portal (Web 
 
    ![The illustration shows Azure IoT resources.](../media/azure-iot-resources.png)
 
-7. **DON'T** close the Azure Web Portal and you will be needing it shortly.
+7. **DON'T** close the Azure Web portal because you will need to access it again.
 
-------
 
 ## Step 2: Link your Azure Sphere Tenant to the Device Provisioning Service
 
 You need to set up a trust relationship between your Azure Sphere tenant and your IoT Device Provisioning Service.
 
 Devices claimed by your Azure Sphere tenant will automatically be enrolled with the linked IoT Hub by the Device Provisioning Service when the device first connects.
+
 
 ### Download the Azure Sphere Tenant authentication CA certificate
 
@@ -43,16 +43,21 @@ Devices claimed by your Azure Sphere tenant will automatically be enrolled with 
 ### Upload the Azure Sphere Tenant certificate to Azure Device Provisioning Service
 
 1. Switch back to the Azure web portal.
+
 2. Click on the Device Provisioning Service (**DPS**) resource link.
+
 3. Click **Certificates** from the Device Provisioning Service sidebar menu.
+
 4. Click **+ Add**.
 
-    ![The illustration shows how to add device provisionining service.](../media/dps-certificate-add.png)
+   ![The illustration shows how to add device provisionining service.](../media/dps-certificate-add.png)
 
 5. Name your certificate, and then select the **CAcertificate.cer** file you downloaded in the previous step to upload into the device provisioning service.
+
 6. Click **Save**.
 
-    ![The illustration shows how to add certificate.](../media/dps-certificate-upload.png)
+   ![The illustration shows how to add certificate.](../media/dps-certificate-upload.png)
+
 
 ### Verify the uploaded certificate
 
@@ -63,6 +68,7 @@ Devices claimed by your Azure Sphere tenant will automatically be enrolled with 
 3. Copy the verification code to the clipboard.
 
    ![The illustration shows verifying certificate.](../media/dps-certificate-verify.png)
+
 
 ### Generate the verification certificate
 
@@ -85,6 +91,7 @@ Devices claimed by your Azure Sphere tenant will automatically be enrolled with 
 4. Click the **Verify** button.
 
    ![The illustration shows how to verify certificate.](../media/dps-certificate-verify-upload.png)
+
 
 ## Step 3: Create a Device Provisioning Service Enrollment Group
 
@@ -133,37 +140,39 @@ Follow these steps:
 
 8. Copy the IoT Hub **Hostname** URL to *Notepad*.
 
-    ![The illustration shows overview page of IoT Hub.](../media/iot-hub-endpoint-url.png)
+   ![The illustration shows overview page of IoT Hub.](../media/iot-hub-endpoint-url.png)
+
 
 ## Step 5: Get the Azure Sphere Tenant ID
 
 We need the ID of the Azure Sphere Tenant that is now trusted by the Device Provisioning Service.
 
-1. From the Azure Sphere Developer Command Prompt, run
+1. From the Azure Sphere Developer Command Prompt, run `azsphere tenant show-selected`.
 
-   `azsphere tenant show-selected`
-
-   - The output of this command will look similar to the following.
-
-     ```
-     Default Azure Sphere tenant ID is 'yourSphereTenant' (99999999-e021-43ce-9999-fa9999499994).
-     ```
+   - The output of this command will look similar to the following:
+   
+      ```output
+      Default Azure Sphere tenant ID is 'yourSphereTenant' (99999999-e021-43ce-9999-fa9999499994).
+      ```
 
    - The **Tenant ID** is the numeric value inside the parentheses.
 
 2. Copy the **Tenant ID** to *Notepad* as you will need it soon.
 
-------
 
 ## Step 6: Open the project
 
 1. Start Visual Studio Code.
+
 2. Click **Open folder**.
+
 3. Open the Azure-Sphere lab folder.
+
 4. Open the **Lab_2_Send_Telemetry_to_Azure_IoT** folder.
+
 5. Click **Select Folder** button to open the project.
 
-------
+
 
 ## Step 7: Set your developer board configuration
 
@@ -185,7 +194,6 @@ The default developer board configuration is for the AVENT Azure Sphere Starter 
 
 4. Save the file. This will auto-generate the CMake cache. ![The illustration shows cmake configuration.](../media/vs-code-open-cmake.png)
 
-------
 
 ## Step 8: Understanding Azure Sphere Security
 
@@ -270,7 +278,7 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
 
 3. Next, from Visual Studio Code, open the main.c file to bring back into focus.
 
-------
+
 
 ## Step 9: Configure the Azure Sphere Application
 
@@ -319,7 +327,7 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
 
 5. Copy the contents of your **app_manifest.json** file to **Notepad** as you will need this configuration information for the next labs.
 
-------
+
 
 ## Step 10: Understanding the Azure Sphere Application
 
@@ -370,7 +378,6 @@ static void SendMsgLedOn(char* message)
 }
 ```
 
-------
 
 ## Step 11: Deploying the Application to Azure Sphere
 
@@ -396,7 +403,7 @@ static void SendMsgLedOn(char* message)
     > [!NOTE]
     > You may see a couple of *ERROR: failure to create IoTHub Handle* messages displayed. These messages occur while the connection to Azure IoT is being negotiated.
 
-------
+
 
 ## Step 12: Expected Device Behavior
 
@@ -405,7 +412,9 @@ static void SendMsgLedOn(char* message)
 ![The illustration shows Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
 
 1. The blue LED will start to blink.
+
 2. LED3 will turn yellow when connected to Azure.
+
 3. Press **Button A** on the device to change the blink rate.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
@@ -413,24 +422,27 @@ static void SendMsgLedOn(char* message)
 ![The illustration shows Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
 
 1. The green LED will start to blink.
+
 2. The network LED will turn red when connected to Azure.
+
 3. Press **Button A** on the device to change the blink rate.
+
 
 ### Seeed Studio MT3620 Mini Dev Board
 
 ![The illustration shows Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
 
-- The green LED closest to the USB connector will start to blink.
+The green LED closest to the USB connector will start to blink.
 
-------
+
 
 ## Step 13: View the device telemetry from the Azure Cloud Shell
 
 1. You will need to know the name of the Azure IoT Hub you created. You can get the name from the Azure web portal.  ![The illustration shows Azure resources.](../media/azure-iot-resources.png)
 
-2. Open the Azure Cloud shell at [https://shell.azure.com](https://shell.azure.com/).
+2. Open Azure Cloud Shell at [https://shell.azure.com](https://shell.azure.com/).
 
-3. In the Cloud Shell, run the following command to add the Microsoft Azure IoT Extension to your CLI shell. The IoT Extension adds IoT Hub, IoT Edge, and IoT Device Provisioning Service (DPS) specific commands to Azure CLI.
+3. In Cloud Shell, run the following command to add the Microsoft Azure IoT Extension to your CLI shell. The IoT Extension adds IoT Hub, IoT Edge, and IoT Device Provisioning Service (DPS) specific commands to Azure CLI.
 
    ```
    az extension add --name azure-iot
@@ -445,6 +457,7 @@ static void SendMsgLedOn(char* message)
 5. Observe telemetry in the cloud. The output will be similar to the following screen. ![The illustration shows how to monitor telemetry data on the cloud.](../media/iot-hub-monitor-events.png)
 
 6. Use ctrl+c to stop the event monitor.
+
 
 ## Close Visual Studio
 
