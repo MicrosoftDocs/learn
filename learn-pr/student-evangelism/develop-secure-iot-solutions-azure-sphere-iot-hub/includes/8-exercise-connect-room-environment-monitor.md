@@ -62,7 +62,7 @@ Devices claimed by your Azure Sphere tenant will automatically be enrolled with 
 
 3. Copy the verification code to the clipboard.
 
-   ![The illustration shows how to verify certificate.](../media/dps-certificate-verify.png)
+   ![The illustration shows verifying certificate.](../media/dps-certificate-verify.png)
 
 ### Generate the verification certificate
 
@@ -86,8 +86,6 @@ Devices claimed by your Azure Sphere tenant will automatically be enrolled with 
 
    ![The illustration shows how to verify certificate.](../media/dps-certificate-verify-upload.png)
 
-------
-
 ## Step 3: Create a Device Provisioning Service Enrollment Group
 
 From the Azure Web portal.
@@ -104,7 +102,6 @@ From the Azure Web portal.
 
    ![The illustration shows how to add enrollment group.](../media/dps-enrollment-group-add.png)
 
-------
 
 ## Step 4: Explicitly allow connections to Azure IoT Endpoints
 
@@ -137,8 +134,6 @@ Follow these steps:
 8. Copy the IoT Hub **Hostname** URL to *Notepad*.
 
     ![The illustration shows overview page of IoT Hub.](../media/iot-hub-endpoint-url.png)
-
-------
 
 ## Step 5: Get the Azure Sphere Tenant ID
 
