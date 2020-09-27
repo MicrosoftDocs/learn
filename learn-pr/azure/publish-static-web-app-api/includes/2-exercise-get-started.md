@@ -189,7 +189,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
    > [!NOTE]
    > If you do not see the Concierge Subscription listed, ensure you logged into Azure in Visual Studio Code using the same account used to create the sandbox. Additionally, if you have filtered your Azure subscriptions in the Azure Account extension, verify the Concierge Subscription is checked in the `> Azure: Select Subscriptions` command.
 
-1. The command palate opens at the top of the editor and prompts you to name your application.
+1. The command palette opens at the top of the editor and prompts you to name your application.
 
    Type **my-static-web-app-and-api** and press **Enter**.
 
