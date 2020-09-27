@@ -52,7 +52,7 @@ A Device Twin Bindings maps a device twin with a device property and a handler f
 
 ### Cloud to Device Updates
 
-#### Defining the Desired Tempurature binding
+#### Define the desired temperature binding
 
 The following example declares a variable named **desiredTemperature** of type **LP_DEVICE_TWIN_BINDING**. This variable maps the Azure IoT Hub device twin **DesiredTemperature** with a handler function named **DeviceTwinSetTemperatureHandler**.
 
@@ -64,7 +64,7 @@ static LP_DEVICE_TWIN_BINDING desiredTemperature = {
 };
 ```
 
-#### Setting the Desired Tempurature
+#### Set the desired temperature
 
 The following is the implementation of the handler function **DeviceTwinSetTemperatureHandler**. The handler function is called when the device receives a **DesiredTemperature** desired property message from Azure IoT Hub.
 
@@ -82,7 +82,7 @@ static void DeviceTwinSetTemperatureHandler(LP_DEVICE_TWIN_BINDING* deviceTwinBi
 }
 ```
 
-### Device to Cloud Updates
+### Device to cloud updates
 
 The following example declares an **actualTemperature** device twin property of type float. There is no handler function registered as this is a one-way device to cloud binding.
 
@@ -93,7 +93,7 @@ static LP_DEVICE_TWIN_BINDING actualTemperature = {
 };
 ```
 
-#### Reporting the State of the Tempurature
+#### Report the state of the temperature
 
 The ActualTemperature reported property message is sent to IoT Hub by calling the DeviceTwinReportState function. You must pass a property of the correct type.
 
@@ -103,7 +103,7 @@ lp_deviceTwinReportState(&actualTemperature, &last_temperature); // TwinType = L
 
 ------
 
-## Working with Device Twins
+## Work with Device Twins
 
 Device twin bindings must be added to the **deviceTwinBindingSet**. When a device twin message is received from Azure, this set is checked for a matching *twinProperty* name. When a match is found, the corresponding handler function is called.
 
