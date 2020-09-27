@@ -6,7 +6,7 @@ The search problem is formulated as follows: you are given a function $f$ that t
 
 > [!NOTE] 
 > Notice that you are not given any information about the structure of the function! You only have 
-> access to a "black box" that implements this function, this is, takes the input and returns the corresponding output.
+> access to an "opaque box" that implements this function, this is, takes the input and returns the corresponding output.
 
 ## What problems can be framed as search problems?
 
