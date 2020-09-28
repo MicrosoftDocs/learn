@@ -329,6 +329,14 @@ Congratulations! You've deployed your first app to Azure Static Web Apps!
 > [!NOTE]
 > Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web Apps is created. So if you see the splash page, the app is still being deployed.
 
+### Pull the changes from GitHub
+
+Pull the latest changes from GitHub to bring down the workflow file that was created by Azure Static Web Apps.
+
+1. Open the command palette by pressing <kbd>F1</kbd>
+1. Type and select **Git: Pull**
+1. Press <kbd>Enter</kbd>
+
 ## Next steps
 
 Next you'll learn how to build and run your API using an Azure Functions project.
