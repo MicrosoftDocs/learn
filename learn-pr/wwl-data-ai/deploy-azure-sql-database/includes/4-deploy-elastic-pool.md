@@ -48,7 +48,7 @@ As shown in the image below, you can adjust numerous settings in the Elastic Poo
 
 :::image type="content" source="../media/module-22-plan-implement-final-22.png" alt-text="The Azure portal page showing Elastic Pool Configuration":::
 
-Probably the most useful feature is the ability to monitor Database Resource Utilization, as shown in the image below. This feature allows you to easily see how databases are performing within the pool. 
+Probably the most useful feature is the ability to monitor Database Resource Utilization, as shown in the image below. This feature allows you to easily see how databases are performing within the pool.
 
 :::image type="content" source="../media/module-22-plan-implement-final-23.png" alt-text="Utilization per database in an Elastic Pool from the Azure portal":::
 

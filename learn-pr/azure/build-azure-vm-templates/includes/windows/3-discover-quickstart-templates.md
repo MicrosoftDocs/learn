@@ -47,7 +47,7 @@ Let's say you want to find a Resource Manager template that brings up a basic VM
 
     :::image type="content" source="../../media/3-armviz-windows.png" alt-text="The Azure Resource Manager Visualizer showing Azure resources visually." loc-scope="third-party"::: <!-- product is Azure Resource Manager Visualizer, no-loc -->
 
-1. Click on the **Virtual Machine** resource labeled **SimpleWinVM**.
+1. Click on the **Virtual Machine** resource labeled **simple-vm**.
 
     You see the source code that defines the VM resource.
 
