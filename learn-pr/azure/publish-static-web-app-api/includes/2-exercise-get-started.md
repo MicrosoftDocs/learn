@@ -1,4 +1,4 @@
-In this exercise, you'll create an Azure Static Web Apps instance including a GitHub Action that will automatically build and publish your application.
+In this exercise, you'll create an Azure Static Web Apps instance including a GitHub Action that automatically builds and publishes your application.
 
 This tutorial uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
 

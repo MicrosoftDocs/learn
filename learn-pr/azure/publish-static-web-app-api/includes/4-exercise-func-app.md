@@ -72,7 +72,7 @@ Now you'll extend your Azure Function app with a function to get your products.
 1. Select **Anonymous** as the authentication level
 
 > [!NOTE]
-> The function app is in the _api_ folder, which separates it from the individual web app projects. All of the web apps using the front-end frameworks make calls to the same API. You can decide how to structure your application, but for this sample it helps to see them separated.
+> The Functions app is in the _api_ folder, which separates it from the individual web app projects. All of the web apps using the front-end frameworks make calls to the same API. You can decide how to structure your application, but for this sample it helps to see them separated.
 
 ### Configure the HTTP Method and route endpoint
 
@@ -109,7 +109,7 @@ Now your function is triggered on an HTTP `GET` request to **products**. Your _f
 }
 ```
 
-### Update the route logic
+### Update the function logic
 
 The file _index.js_ in the folder _api/products-get_ contains logic that runs when your make an HTTP request to the route.
 
