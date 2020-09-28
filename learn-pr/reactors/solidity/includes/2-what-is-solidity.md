@@ -1,5 +1,3 @@
-# Learn about Solidity
-
 Solidity is an object-oriented language for writing smart contracts. And smart contracts are code that specify the rules and behavior of how to transfer digital assets. You use Solidity to program smart contracts for the [Ethereum blockchain platform](https://ethereum.org/). Smart contracts contain state and programmable logic. Transactions instantiate smart contracts and execute functions that change state. Therefore, smart contracts enable you to create a business workflow.
 
 ## An overview
@@ -14,7 +12,7 @@ It supports inheritance so that functions, variables, and other properties from 
 
 Solidity is an open-source programming language. You can learn more about the project and how to contribute in their [GitHub repository](https://github.com/ethereum/solidity).
 
-## What is Ethereum
+## What is Ethereum?
 
 Before we go any further, you should also familiarize yourself with Ethereum.
 
@@ -22,6 +20,6 @@ Before we go any further, you should also familiarize yourself with Ethereum.
 
 What makes Ethereum unique is that it is the "world's programmable blockchain", which means you can code contract definitions, referred to as smart contracts, that are used to describe how blockchain participants transfer digital assets. Solidity is the primary programming language used to develop on the Ethereum platform, and it it built and maintained by Ethereum developers.
 
-## The Ethereum Virtual Machine
+## The Ethereum virtual machine
 
 Solidity contracts run on the Ethereum Virtual Machine or EVM for short. It is a sandbox environment that is completely isolated so that it does not access anything else on the network besides the contracts it executes. You don't need to know much more about the EVM for now, but just remember that Solidity smart contracts will be deployed to and run in a virtual machine.

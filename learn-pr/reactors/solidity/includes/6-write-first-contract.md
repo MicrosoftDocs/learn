@@ -1,5 +1,3 @@
-# Write your first contract
-
 Now let's put together what we've learned into a complete smart contract example.
 
 In this example, we have a marketplace. So far, you can list an item for sale and you can buy an item. The two roles involved are a seller and a buyer.

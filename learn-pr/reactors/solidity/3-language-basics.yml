@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: 
+uid: learn.reactors.blockchain-learning-solidity.3-language-basics
 metadata:
   title: Understand the language basics
-  description: Learn the fundamentals of using Solidity in a smart contract
-  ms.date: 
+  description: Learn the fundamentals of using Solidity in a smart contract.
+  ms.date: 10/05/2020
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial

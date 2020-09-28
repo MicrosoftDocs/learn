@@ -1,5 +1,3 @@
-# Reference types
-
 Another common type you'll deal with when writing contracts are reference types. Values of reference types can be modified through multiple different names.
 
 While value types are alway pass an independent copy of the value, reference types provide a data location to the value. The three reference types are: **structs**, **arrays**, and **mappings**.

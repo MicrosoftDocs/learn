@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: 
+uid: learn.reactors.blockchain-learning-solidity.5-reference-types
 metadata:
   title: Explore reference types
   description: Learn about the reference types available in Solidity.
-  ms.date: 
+  ms.date: 10/05/2020
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial

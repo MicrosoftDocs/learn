@@ -1,5 +1,3 @@
-# Value Types
-
 In this unit you'll learn about the main value types in Solidity. They are called value types because they will always be passed by value, which means they are copied when they are used. This unit covers the primary value types that you will be exposed to when writing contracts.
 
 ## Integers

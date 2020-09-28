@@ -1,5 +1,3 @@
-# Summary
-
 In this module, you learned how to use Solidity to get started writing your own smart contracts. You should have a better understanding of the language components needed and types available.
 
 ## Resources

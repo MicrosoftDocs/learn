@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: 
+uid: learn.reactors.blockchain-learning-solidity.2-what-is-solidity
 metadata:
   title: Learn about Solidity
-  description: Learn what Solidity is all about
-  ms.date: 
+  description: Learn what Solidity is all about.
+  ms.date: 10/05/2020
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial

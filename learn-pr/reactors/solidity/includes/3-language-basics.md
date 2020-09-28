@@ -1,5 +1,3 @@
-# Understand the language basics
-
 All Solidity contracts usually include:
 
 - Pragma directives
