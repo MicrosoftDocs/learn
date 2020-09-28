@@ -267,7 +267,7 @@ This exercise demonstrates creating a LUIS application with Python code.
 1. Type in the command, ``` sudo pip install azure-cognitiveservices-language-luis ```.
 
     >[!Note]
-    >Your command may differ depending on your Python environment.  You may need to use just ```pip install``` or ```python3 install```dotnetcli```
+    >Your command may differ depending on your Python environment.  You may need to use just ```pip install``` or ```python3 install```
 
 1. Once the package is installed, you can begin to enter the code.
 1. Add the necessary import statements to the top of your Python file.
