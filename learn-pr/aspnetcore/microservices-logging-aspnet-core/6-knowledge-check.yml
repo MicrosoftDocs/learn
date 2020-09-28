@@ -1,0 +1,29 @@
+# Knowledge check
+
+## Check your knowledge
+
+1. Mark all the correct statements about logging and monitoring in microservices application:
+
+   - Diagnostic logging is a key factor for troubleshooting issues in production. - **CORRECT ANSWER**
+   - Application Monitoring is about keeping track of business key performance indicators.
+   - Application monitoring can help on getting some important business metrics. - **CORRECT ANSWER**
+   - Logging to the host filesystem is an acceptable solution in a microservices application.
+   - Structured logging allows you to get more information from your log traces than regular plain text logging. - **CORRECT ANSWER**
+
+2. Mark the correct statements about Application Insights
+
+   - You have to configure all app dependencies for Application Insights to draw the application map.
+   - You have to create one Application Insights resource (instrumentation key) per service type. - **CORRECT ANSWER**
+   - Application Insights can get both aggregated and instance-specific metrics for each service. - **CORRECT ANSWER**
+   - Application Insights automatically monitors communication with with each service's external dependencies. - **CORRECT ANSWER**
+   - Application Insights can't be used to track marketing related user processes, such as conversion.
+
+3. Mark the correct statements about Azure Monitor for containers
+
+   - Azure Monitor for containers gives you more infrastructure-oriented metrics. - **CORRECT ANSWER**
+   - Azure Monitor for containers is specifically focused on Kubernetes.
+   - You have to install Prometheus and Grafana to monitor Prometheus-endpoint metrics in AKS.
+   - Any application can publish custom metrics through a Prometheus-based metrics endpoint. - **CORRECT ANSWER**
+   - Azure Monitor for can scrape metrics from Prometheus-based metrics endpoints. - **CORRECT ANSWER**
+
+| [TOC](../README.md) | [NEXT >](summary.md) |
