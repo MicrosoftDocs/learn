@@ -113,7 +113,7 @@ Click the link to browse to your application.
 
 Browse to `http://localhost:4200`.
 
-:::image type="content" source="../media/my-shopping-list-app-loading-angular.png" alt-text="Browsing to your web app":::
+:::image type="content" source="../media/my-shopping-list-app-loading-angular.png" alt-text="Browsing to your Angular web app":::
 
 ::: zone-end
 
@@ -121,7 +121,7 @@ Browse to `http://localhost:4200`.
 
 Browse to `http://localhost:3000`.
 
-:::image type="content" source="../media/my-shopping-list-app-loading-react.png" alt-text="Browsing to your web app":::
+:::image type="content" source="../media/my-shopping-list-app-loading-react.png" alt-text="Browsing to your React web app":::
 
 ::: zone-end
 
@@ -129,7 +129,7 @@ Browse to `http://localhost:3000`.
 
 Browse to `http://localhost:5000`.
 
-:::image type="content" source="../media/my-shopping-list-app-loading-svelte.png" alt-text="Browsing to your web app":::
+:::image type="content" source="../media/my-shopping-list-app-loading-svelte.png" alt-text="Browsing to your Svelte web app":::
 
 ::: zone-end
 
@@ -137,7 +137,7 @@ Browse to `http://localhost:5000`.
 
 Browse to `http://localhost:8080`.
 
-:::image type="content" source="../media/my-shopping-list-app-loading-vue.png" alt-text="Browsing to your web app":::
+:::image type="content" source="../media/my-shopping-list-app-loading-vue.png" alt-text="Browsing to your Vue web app":::
 
 ::: zone-end
 
@@ -205,7 +205,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 7. Select **angular-app** as the location for the application code and press **Enter**.
 
-   :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Application code location":::
+   :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Angular application code location":::
 
 ::: zone-end
 
@@ -213,7 +213,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 7. Select **react-app** as the location for the application code and press **Enter**.
 
-   :::image type="content" source="../media/extension-app-location-react.png" alt-text="Application code location":::
+   :::image type="content" source="../media/extension-app-location-react.png" alt-text="React application code location":::
 
 ::: zone-end
 
@@ -221,7 +221,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 7. Select **svelte-app** as the location for the application code and press **Enter**.
 
-   :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Application code location":::
+   :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Svelte application code location":::
 
 ::: zone-end
 
@@ -229,7 +229,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 7. Select **vue-app** as the location for the application code and press **Enter**.
 
-   :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Application code location":::
+   :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Vue application code location":::
 
 ::: zone-end
 
