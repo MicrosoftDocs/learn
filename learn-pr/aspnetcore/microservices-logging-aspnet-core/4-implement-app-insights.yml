@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-resiliency-aspnet-core.4-implement-app-insights
+uid: learn.microservices-logging-aspnet-core.4-implement-app-insights
 metadata:
   title: Exercise - Implement Application Insights
   description: TODO
