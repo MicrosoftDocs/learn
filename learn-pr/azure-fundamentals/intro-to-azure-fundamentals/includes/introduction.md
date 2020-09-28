@@ -5,6 +5,7 @@ In this module, you'll take an entry level end-to-end look at Azure and its capa
 ## Learning objectives
 
 After completing this module, you'll be able to:
+
 - Describe the basic concepts of cloud computing
 - Determine whether Azure is the right solution for your business needs
 - Differentiate between the different methods of creating an Azure subscription
