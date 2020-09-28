@@ -2,8 +2,6 @@ In this exercise, you'll create an Azure Static Web Apps instance including a Gi
 
 This tutorial uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
 
-The Azure sandbox that you just activated allows you to use Azure services without incurring any costs.
-
 ## Create a repository
 
 Next, create a new repository by using a GitHub template repository. A series of templates are available where each contains a starter app built with a different front-end framework.
