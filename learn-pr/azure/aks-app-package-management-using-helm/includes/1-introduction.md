@@ -6,7 +6,7 @@ Kubernetes allows you to manage the deployment life cycle of cloud-native applic
 
 Suppose you work at a drone management company. Your company provides a drone tracking solution to customers worldwide. The solution is built and deployed as microservices and includes several major applications:
 
-:::image type="content" source="../media/1_introduction-solution.svg" alt-text="A diagram that shows all the applications that forms part of the drone tracking solution. A number of applications shown in the diagram that is deployed to an Azure Kubernetes Service cluster.":::
+:::image type="content" source="../media/1-introduction-solution.svg" alt-text="A diagram that shows all the applications that forms part of the drone tracking solution. A number of applications shown in the diagram that is deployed to an Azure Kubernetes Service cluster.":::
 
 You use an Azure Kubernetes Service (AKS) cluster to host the drone tracking solution. The DevOps team uses standard declarative YAML files to deploy various services in the solution. In the current deployment workflow, the development teams create the deployment files for each application. Next, the DevOps team updates the deployment files to reflect production configuration settings where required. The manual management of many YAML files is proving a risk to the teams when efficiently deploying, operating, and maintaining systems and procedures. The DevOps team wants to use a Kubernetes package manager to standardize, simplify, and implement reusable deployment packages for all apps in the drone tracking solution.
 
