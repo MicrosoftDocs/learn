@@ -1,5 +1,3 @@
-# Logging and monitoring
-
 Logging refers to application level diagnostic traces that programmers include in the application code to help troubleshoot issues when the app doesn't behaves as expected. This is specially true in production, when you don't have the luxury of spinning up the app with the Visual Studio debugger.
 
 Monitoring refers to gathering platform and application metrics that area meaningful to keep track of the application health. On another level, when using custom metrics, monitoring can also be more business-oriented.
