@@ -32,10 +32,10 @@ roles:
 products:
 - azure
 units:
-- learn.azure.dotnet-files.1-introduction
-- learn.azure.dotnet-files.2-content
-- learn.azure.dotnet-files.3-exercise
-- learn.azure.dotnet-files.4-knowledge-check
-- learn.azure.dotnet-files.5-summary
+- learn.dotnet-files.1-introduction
+- learn.dotnet-files.2-content
+- learn.dotnet-files.3-exercise
+- learn.dotnet-files.4-knowledge-check
+- learn.dotnet-files.5-summary
 badge:
-  uid: learn.azure.dotnet-files.badge
+  uid: learn.dotnet-files.badge
