@@ -45,9 +45,9 @@ The script for the smoke test implements the following:
 
 The steps involved are:
 
-- Create Azure resources
-- Set up Azure DevOps Services
-- Set up continuous integration
-- Create a release pipeline with a smoke test
-- Add integration tests to a release pipeline
-- Monitor devices with Application Insights
+1. Create Azure resources
+2. Set up Azure DevOps Services
+3. Set up continuous integration
+4. Create a release pipeline with a smoke test
+5. Add integration tests to a release pipeline
+6. Monitor devices with Application Insights
