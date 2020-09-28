@@ -86,10 +86,12 @@ public class WorkerClass
 {
     private readonly ILogger<WorkerClass> _logger;
 
-    public WorkerClass(ILogger<WorkerClass> logger) => _logger = logger;
+    public WorkerClass(ILogger<WorkerClass> logger) =>
+        _logger = logger;
 
     // If you have to use ILoggerFactory, change the constructor like this:
-    public WorkerClass(ILoggerFactory loggerFactory) => _logger = loggerFactory.CreateLogger<WorkerClass>();
+    public WorkerClass(ILoggerFactory loggerFactory) =>
+        _logger = loggerFactory.CreateLogger<WorkerClass>();
 }
 ```
 
@@ -102,7 +104,9 @@ The nice part of using the `ILogger<T>` is that you get a nice `SourceContext` p
 Logging events is pretty simple, as shown in the following code that produces the trace shown in image above:
 
 ```csharp
-_logger.LogInformation("----- Begin transaction {TransactionId} for {CommandName} ({@Command})", transaction.TransactionId, typeName, request);
+_logger.LogInformation(
+    "----- Begin transaction {TransactionId} for {CommandName} ({@Command})",
+    transaction.TransactionId, typeName, request);
 ```
 
 The code above is similar to what you've seen in the `string.format()` method, with three very important differences:
@@ -144,7 +148,9 @@ public class OrderStartedIntegrationEventHandler : IIntegrationEventHandler<Orde
     {
         using (LogContext.PushProperty("IntegrationEventContext", $"{@event.Id}-{Program.AppName}"))
         {
-            _logger.LogInformation("----- Handling integration event: {IntegrationEventId} at {AppName} - ({@IntegrationEvent})", @event.Id, Program.AppName, @event);
+            _logger.LogInformation(
+                "----- Handling integration event: {IntegrationEventId} at {AppName} - ({@IntegrationEvent})",
+                @event.Id, Program.AppName, @event);
 
             await _repository.DeleteBasketAsync(@event.UserId.ToString());
         }

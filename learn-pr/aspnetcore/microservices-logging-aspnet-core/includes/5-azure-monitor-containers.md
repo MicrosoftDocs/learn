@@ -34,8 +34,8 @@ Besides the general cluster dashboard, You can also explore any of the tabs to z
 For this exercise you'll implement a simple counter metric, for the request count on the Catalog microservice. To do so you will:
 
 1. Install the Prometheus package
-2. Add the custom metrics counter and the Prometheus middleware to the request pipeline.
-3. Build the updated image to ACR
+1. Add the custom metrics counter and the Prometheus middleware to the request pipeline.
+1. Build the updated image to ACR
 
 So let's get into the details:
 
@@ -67,10 +67,10 @@ namespace Microsoft.eShopOnContainers.Services.Catalog.API
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             // Create counter metric
-            var counter = Metrics.CreateCounter("catalogapi_path_counter", "Counts requests to the Catalog API endpoints", new CounterConfiguration
-            {
-                LabelNames = new[] { "method", "endpoint" }
-            });
+            var counter = Metrics.CreateCounter("catalogapi_path_counter", "Counts requests to the Catalog API endpoints",
+                new CounterConfiguration {
+                    LabelNames = new[] { "method", "endpoint" }
+                });
 
             // Add middleware to track the counter
             app.Use((context, next) =>
@@ -173,7 +173,7 @@ You just need to run the following script:
 
 ### 3. Enable Prometheus metrics scraping for Azure Monitor for containers
 
-As per the [Azure Monitor Prometheus scraping configuration](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-prometheus-integration), you have to:
+As per the [Azure Monitor Prometheus scraping configuration](/azure/azure-monitor/insights/container-insights-prometheus-integration), you have to:
 
 Download the [`container-azm-ms-agentconfig.yaml`](https://github.com/microsoft/Docker-Provider/blob/ci_dev/kubernetes/container-azm-ms-agentconfig.yaml) configuration file and update line 71 to:
 
@@ -183,7 +183,7 @@ monitor_kubernetes_pods = true
 
 Then you have to apply it to the cluster.
 
-The file has been already downloaded and updated, so you just have to run the following command from the `deploy/k8s` folder:
+The file has been already downloaded and updated, so you just have to run the following command from the *deploy/k8s* folder:
 
 ```bash
 kubectl apply -f azure-monitor/container-azm-ms-agentconfig.yaml
@@ -204,7 +204,7 @@ To generate a custom graph for your metric, you have to:
 
 ### 1. Create a query for the metric
 
-Copy the [Kusto query](https://docs.microsoft.com/azure/data-explorer/kusto/query/) below because you'll use in just a few seconds:
+Copy the [Kusto query](/azure/data-explorer/kusto/query/) below because you'll use in just a few seconds:
 
 ```kusto
 InsightsMetrics
@@ -243,4 +243,4 @@ Now that you have a graph for your metric, you could use the "**Pin to dashboard
 - <https://medium.com/@dale.bingham_30375/net-core-web-api-metrics-with-prometheus-and-grafana-fe84a52d9843>
 - <https://medium.com/@aevitas/expose-asp-net-core-metrics-with-prometheus-15e3356415f4>
 - <https://prometheus.io/>
-- <https://azure.microsoft.com/en-us/blog/azure-monitor-for-containers-with-prometheus-now-in-preview/>
+- <https://azure.microsoft.com/blog/azure-monitor-for-containers-with-prometheus-now-in-preview/>

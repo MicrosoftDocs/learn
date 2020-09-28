@@ -48,10 +48,10 @@ In the image above you can see four key-value pairs with the instrumentation key
 
 All four configmap files:
 
-- catalog/templates/configmap.yaml
-- coupon/templates/configmap.yaml
-- ordering/templates/configmap.yaml
-- webshoppingagg/templates/configmap.yaml
+- *catalog/templates/configmap.yaml*
+- *coupon/templates/configmap.yaml*
+- *ordering/templates/configmap.yaml*
+- *webshoppingagg/templates/configmap.yaml*
 
 should be changed as shown in this sample for the `catalog` chart:
 
@@ -94,9 +94,9 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
    You can install them with the Visual Studio UI or using the following commands on each of the projects:
 
    ```dotnetcli
-   dotnet add package Microsoft.ApplicationInsights.AspNetCore --version 2.12.1
-   dotnet add package Microsoft.ApplicationInsights.Kubernetes --version 1.1.1
-   dotnet add package Serilog.Sinks.ApplicationInsights --version 3.1.0
+   dotnet add package Microsoft.ApplicationInsights.AspNetCore --version 2.12.1 && \
+       dotnet add package Microsoft.ApplicationInsights.Kubernetes --version 1.1.1 && \
+       dotnet add package Serilog.Sinks.ApplicationInsights --version 3.1.0
    ```
 
    The packages are already installed in the projects so you can skip this step.
@@ -118,7 +118,8 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
     ```csharp
     public static class CustomExtensionMethods
     {
-        public static IServiceCollection AddAppInsight(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddAppInsight(
+            this IServiceCollection services, IConfiguration configuration)
         {
             services.AddApplicationInsightsTelemetry(configuration);
             services.AddApplicationInsightsKubernetesEnricher();
@@ -200,7 +201,7 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
 
     That shows the image was created successfully in the ACR.
 
-2. **Build the WebAggregator microservice**
+1. **Build the WebAggregator microservice**
 
     The `WebAggregator` microservice has also been updated to include the Application Insights telemetry, but the changes are already implemented, so you just have to build the image to ACR, just like you did in the previous step, by running the following script:
 
@@ -208,7 +209,7 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
     ./build-to-acr.sh --services webshoppingagg
     ```
 
-3. **Redeploy the microservices**
+1. **Redeploy the microservices**
 
     Since you updated the Catalog and the WebAggregatyor microservices and reconfigured the other two when updating their ConfigMaps, you'll now redeploy the Catalog and WebAggregator microservices using the images from ACR and the other two from the initial repository, **eshopdev**.
 
