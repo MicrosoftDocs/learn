@@ -6,7 +6,7 @@ To use the Blockchain Development Kit, you will need to make sure you have the f
 - Please note, you must have Python installed in your `PATH` variable.
 - Note: Most computers will come with Python pre-installed, however it might not be up-to-date. To check if you do have Python installed, open up a terminal and type `python`
   - If installed, it will print out the version of Python that you have on your computer
-- To install Python, visit[the Python downloads page](https://www.python.org/downloads/?azure-portal=true) and click on the **Download Python X.X.X** button. Note that the image shows the download option for a Mac computer. If you have a Linux or Windows computer you will be presented with that download option.
+- To install Python, visit the [Python downloads page](https://www.python.org/downloads/?azure-portal=true) and select the **Download Python X.X.X** button. Note that the image shows the download option for a Mac computer. If you have a Linux or Windows computer you will be presented with that download option.
 
    :::image type="content" source="../media/python-download.png" alt-text="Download Python":::
 
