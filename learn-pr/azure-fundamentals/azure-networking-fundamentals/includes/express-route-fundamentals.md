@@ -1,13 +1,13 @@
 Azure ExpressRoute lets you seamlessly extend your on-premises networks into the Microsoft cloud. This connection between your organization and Azure is dedicated and private. Establishing an ExpressRoute connection enables you to connect to Microsoft cloud services like Azure, Office 365, and Dynamics 365. Security is enhanced, connections are more reliable, latency is minimal, and throughput is greatly increased.
 
-[![High-level overview of the Azure ExpressRoute service](../media/azure-expressroute-overview.png)](../media/azure-expressroute-overview-expanded.png#lightbox)
+[![Visualization that shows a high-level overview of the Azure ExpressRoute service.](../media/azure-expressroute-overview.png)](../media/azure-expressroute-overview-expanded.png#lightbox)
 
-As part of your work for Tailwind Traders, you should understand what Azure ExpressRoute is, and how ExpressRoute integrates with on-premises and Azure networks. In this unit, you'll learn about the benefits that ExpressRoute provides compared to other site-to-site connectivity options, and whether ExpressRoute can provide your company with the best possible network performance.
+As part of your work for Tailwind Traders, you should understand what Azure ExpressRoute is and how it integrates with on-premises and Azure networks. In this unit, you'll learn about the benefits that ExpressRoute provides compared to other site-to-site connectivity options. As a result, you'll learn whether ExpressRoute can provide your company with the best possible network performance.
 
-Throughout this unit, we will focus on two different layers of the Open Systems Interconnection (OSI) model:
+Throughout this unit, we'll focus on two different layers of the Open Systems Interconnection (OSI) model:
 
-- **Layer 2 (L2)**: This is the _Data Link Layer_, which provides node-to-node communication between two nodes on the same network.
-- **Layer 3 (L3)**: This is the _Network Layer_, which provides addressing and routing between nodes on a multi-node network.
+- **Layer 2 (L2)**: This layer is the _Data Link Layer_, which provides node-to-node communication between two nodes on the same network.
+- **Layer 3 (L3)**: This layer is the _Network Layer_, which provides addressing and routing between nodes on a multi-node network.
 
 ## Features and benefits of ExpressRoute
 
@@ -15,11 +15,11 @@ There are several benefits to using ExpressRoute as the connection service betwe
 
 ### Layer 3 connectivity
 
-ExpressRoute provides Layer 3 (address-level) connectivity between your on-premises network and the Microsoft cloud through connectivity partners. These connections can be from a point-to-point, any-to-any network, or they can be virtual cross-connections through an exchange.
+ExpressRoute provides Layer 3 (address-level) connectivity between your on-premises network and the Microsoft cloud through connectivity partners. These connections can be from a point-to-point or any-to-any network. They can also be virtual cross-connections through an exchange.
 
 ### Built-in redundancy
 
-Each connectivity provider uses redundant devices to ensure that connections established with Microsoft are highly available. You can configure multiple circuits to complement this feature. All redundant connections are configured with Layer 3 connectivity to meet SLAs.
+Each connectivity provider uses redundant devices to ensure that connections established with Microsoft are highly available. You can configure multiple circuits to complement this feature. All redundant connections are configured with Layer 3 connectivity to meet service-level agreements.
 
 ### Connectivity to Microsoft cloud services
 
@@ -30,7 +30,7 @@ ExpressRoute enables direct access to the following services in all regions:
 - Azure compute services, such as Azure Virtual Machines
 - Azure cloud services, such as Azure Cosmos DB and Azure Storage
 
-Office 365 was created to be accessed securely and reliably via the internet. Because of this, we recommend ExpressRoute for specific scenarios. The "Learn more" section at the end of this module includes a link about using ExpressRoute to access Office 365.
+Office 365 was created to be accessed securely and reliably via the internet. For this reason, we recommend the use of ExpressRoute for specific scenarios. The "Learn more" section at the end of this module includes a link about using ExpressRoute to access Office 365.
 
 ### Across on-premises connectivity with ExpressRoute Global Reach
 
@@ -52,17 +52,17 @@ ExpressRoute supports three models that you can use to connect your on-premises 
 
 ### Colocation at a cloud exchange
 
-Co-located providers can normally offer both Layer 2 and Layer 3 connections between your infrastructure, which might be located in the colocation facility, and the Microsoft cloud. For example, if your datacenter is co-located at a cloud exchange such as an internet service provider (ISP), you can request a virtual cross-connection to the Microsoft cloud.
+Colocated providers can normally offer both Layer 2 and Layer 3 connections between your infrastructure, which might be located in the colocation facility, and the Microsoft cloud. For example, if your datacenter is colocated at a cloud exchange such as an internet service provider (ISP), you can request a virtual cross-connection to the Microsoft cloud.
 
-### Point-point Ethernet connection
+### Point-to-point Ethernet connection
 
-Point-to-point connections provide Layer 2 and Layer 3 connectivity between your on-premises site and Microsoft Azure. You can connect your offices or datacenters to Azure by using the point-to-point links. For example, if you have an on-premises datacenter, you can use a point-to-point Ethernet link to connect to Microsoft.
+Point-to-point connections provide Layer 2 and Layer 3 connectivity between your on-premises site and Azure. You can connect your offices or datacenters to Azure by using the point-to-point links. For example, if you have an on-premises datacenter, you can use a point-to-point Ethernet link to connect to Microsoft.
 
 ### Any-to-any networks
 
-With any-to-any connectivity, you can integrate your wide area network (WAN) with Microsoft Azure by providing connections to your offices and datacenters. Azure will integrate with your WAN connection to provide a seamless connection, just like you would have between your datacenter and any branch offices. 
+With any-to-any connectivity, you can integrate your wide area network (WAN) with Azure by providing connections to your offices and datacenters. Azure integrates with your WAN connection to provide a connection like you would have between your datacenter and any branch offices.
 
-With any-to-any connections, all WAN providers offer Layer 3 connectivity. For example, if you already use Multiprotocol Label Switching (MPLS) to connect to your branch offices or other sites in your organization, an ExpressRoute connection to Microsoft will behave just like another location on your private WAN.
+With any-to-any connections, all WAN providers offer Layer 3 connectivity. For example, if you already use Multiprotocol Label Switching (MPLS) to connect to your branch offices or other sites in your organization, an ExpressRoute connection to Microsoft behaves like any other location on your private WAN.
 
 ## Security considerations
 
