@@ -2,8 +2,9 @@
 uid: learn.app-package-management-using-helm.manage-helm-release
 title: Manage a Helm release
 metadata:
-  description: Helm charts make it easy to install, upgrade, roll back, and delete an application on a Kubernetes cluster. Here, you'll explore how to use Helm to track changes to running releases and manage future deployments.
+  description: Explore how to use Helm to track changes when installing, upgrading, rolling back, or deleting a Helm release on a Kubernetes cluster. 
   title: Manage a Helm release
+  author: cryophobia
   ms.author: chrvaw
   ms.prod: learning-azure
   ms.topic: interactive-tutorial

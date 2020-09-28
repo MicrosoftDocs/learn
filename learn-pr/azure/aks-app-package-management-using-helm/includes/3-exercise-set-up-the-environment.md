@@ -48,7 +48,7 @@ The script performs the following configuration steps:
     . <(wget -q -O - https://raw.githubusercontent.com/MicrosoftDocs/mslearn-aks/main/infrastructure/setup/setup.sh ) -s <your-subscription-id> -n learn-helm-deploy-aks --use-acr false --install-dot-net false
     ```
 
-    [!INCLUDEOS-specific keyboard shortcuts]
+    [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
     Creating the AKS cluster takes a few minutes to complete. While the script is running, continue to the next unit.
 

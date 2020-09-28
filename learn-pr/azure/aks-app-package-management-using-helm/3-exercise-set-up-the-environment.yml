@@ -4,6 +4,7 @@ title: Exercise - Set up the environment
 metadata:
   description: In this exercise, you'll deploy your AKS exercise environment.
   title: Exercise - Set up the environment
+  author: cryophobia
   ms.author: chrvaw
   ms.prod: learning-azure
   ms.topic: interactive-tutorial

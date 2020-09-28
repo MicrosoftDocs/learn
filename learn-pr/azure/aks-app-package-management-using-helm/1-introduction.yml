@@ -2,8 +2,9 @@
 uid: learn.app-package-management-using-helm.introduction
 title: Introduction
 metadata:
-  description: Kubernetes allows you to manage the deployment life cycle of cloud-native applications using a Kubernetes package manager. Explore how Helm, as a Kubernetes package manager, allows you to standardize, simplify, and implement reusable deployment strategies for your applications.
+  description: Explore how Helm, as a Kubernetes package manager, allows you to standardize, simplify, and implement reusable deployment strategies for your applications.
   title: Introduction
+  author: cryophobia
   ms.author: chrvaw
   ms.prod: learning-azure
   ms.topic: interactive-tutorial

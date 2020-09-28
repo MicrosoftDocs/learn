@@ -2,8 +2,9 @@
 uid: learn.app-package-management-using-helm.what-is-helm
 title: What is Helm?
 metadata:
-  description: The deployment, versioning, and updating of any application usually require planning and management to ensure the correct versions of software libraries and configuration settings. Here, you'll explore how Helm simplifies application deployment.
+  description: Explore how Helm simplifies application deployment and helps you set the correct versions of software libraries and settings in multiple environments. 
   title: What is Helm?
+  author: cryophobia
   ms.author: chrvaw
   ms.prod: learning-azure
   ms.topic: interactive-tutorial
