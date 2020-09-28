@@ -322,8 +322,6 @@ Once your GitHub Action finishes building and publishing your web app, you can b
 
    :::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site":::
 
-:::image type="content" source="../media/my-shopping-list-app-loading.png" alt-text="Browsing to your web app":::
-
 Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this tutorial.
 
 Congratulations! You've deployed your first app to Azure Static Web Apps!
