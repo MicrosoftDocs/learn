@@ -1,4 +1,4 @@
-In the getting started module, we shared the narrative for Tailwind Traders. The central operations/infrastructure team at Tailwind Traders is experienced at managing their existing datacenters. The ongoing project to migrate two of their datacenters to Azure is already exposing a few critical learning curves that their current skillsets can't address.
+In the getting started module, we shared the narrative for Tailwind Traders. The central operations/infrastructure team at Tailwind Traders is experienced at managing their existing datacenters. The ongoing project to migrate two of their datacenters to Azure is already exposing a few critical learning curves that their current skill sets can't address.
 
 ## Operations
 
@@ -6,7 +6,7 @@ The central operations team has organically built a set of processes and control
 
 ### Operations tools
 
-Licensing for the operations management tooling (including hypervisors) consumes more than 20 percent of IT's hard cost budget. The new Chief Information Officer (CIO) has challenged the team to reevaluate those tools and processes to find cloud-first or unified operations alternatives. She will be watching for reduction of tooling expenses as an early indicator to success in this migration.
+Licensing for the operations management tooling (including hypervisors) consumes more than 20 percent of IT's budget for hard costs. The new Chief Information Officer (CIO) has challenged the team to reevaluate those tools and processes to find cloud-first or unified operations alternatives. She will be watching for reduction of tooling expenses as an early indicator to success in this migration.
 
 ### Operations processes
 
@@ -34,10 +34,10 @@ In the cloud, they now have additional options, like Azure Active Directory or A
 
 Tailwind Traders uses MPLS lines to connect their datacenters and physical stores. All internet traffic is funneled through the primary datacenter. Due to IP conflicts between two of the datacenters, traffic is isolated and routing is dependent on complex routing tables. External connectivity into the datacenter or corporate office is delivered via virtual private network is limited and discouraged.
 
-The primary and secondary datacenters have consistent IP address schemas that are well-maintained and intuitively organized. The third datacenter includes 50 different IP blocks with little consistency and no clear plan to organization or segmentation. The continuous innovation cycles are limited to the third datacenter but could present problems when defining the network topology and routing in the cloud.
+The primary and secondary datacenters have consistent IP address schemas that are maintained and organized clearly The third datacenter includes 50 different IP blocks with little consistency and no clear organization or segmentation plan. The continuous innovation cycles are limited to the third datacenter but could present problems when defining the network topology and routing in the cloud.
 
 ## Resource organization
 
 Segmentation of resources between each datacenter treated each collection of workloads as a big block of assets. They were then divided by risk profile to create isolated and controlled segments to allow limited networking flow between workloads. Workloads that require any ingress network connection from any unprotected network are isolated into one or more demilitarized zone segments of each datacenter.
 
-Beyond that basic organization, there are inconsistencies in the configuration management database, so it's difficult to tell which assets are associated with which workloads. Workload owners and incident escalation chains are well defined for mission-critical workloads but are missing for most other workloads. For less critical workloads, it's common for the identified owner to be an ex-employee of Tailwind Traders. The configuration mapping often references virtual machines that have been terminated. Likewise, over 30 percent of the supported assets are not clearly mapped to a single workload. During migration a dependency analysis and proper resource organization practices will be required.
+Beyond that basic organization, there are inconsistencies in the configuration management database, so it's difficult to tell which assets are associated with which workloads. Workload owners and incident escalation chains are well defined for mission-critical workloads but are missing for most other workloads. For less critical workloads, it's common for the identified owner to be an ex-employee of Tailwind Traders. The configuration mapping often references virtual machines that have been terminated. Likewise, over 30 percent of the supported assets are not clearly mapped to a single workload. Practices will be required during migration a dependency analysis and proper resource organization.

@@ -114,7 +114,7 @@ Configuring an enterprise-ready environment will take time. This approach will n
 
 All initial landing zone templates have limitations. Guardrails or policies during refactoring should reflect those limitations. Before beginning a landing zone refactoring process, it is important to understand the long-term requirements of the cloud adoption plan and classification of the candidate workloads, compared to the initial template limitations.
 
-As an example of establishing refactoring guardrails, lets compare the development approach in the prior example and the CAF Migration landing zone blueprint.
+As an example of establishing refactoring guardrails, let's compare the development approach in the prior example and the CAF Migration landing zone blueprint.
 
 - Per the [assumptions of the CAF Migration landing zone blueprint](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/migrate-landing-zone/?azure-portal=true), this initial landing zone isn't designed for sensitive data or mission-critical workloads. Those features will have to be added through refactoring.
 - In this example, lets assume that the portfolio of 100 workloads will require both mission critical and sensitive data hosting capabilities.
@@ -126,13 +126,13 @@ To balance these two competing requirements, the adoption team and platform team
 - The cloud platform team will work with the security and governance teams to implement a security baseline. Once security approves the implementation, the adoption team will be cleared to migrate workloads that have access to some sensitive data.
 - The cloud platform team will work with the operations team to implement a management baseline. Once the operations team approves the implementation, the adoption team will be cleared to migrate workloads with a higher level of criticality.
 
-For this example, the above set of agreed upon conditions will allow the adoption team get started on their migration effort. It also helps the platform team shape their interactions with other teams, as they build towards a longer-term enterprise ready environment.
+For this example, the above set of agreed upon conditions will allow the adoption team get started on their migration effort. It also helps the platform team shape their interactions with other teams as they build toward a longer-term enterprise ready environment.
 
 #### Meeting long-term requirements while refactoring
 
 The section of the Ready methodology on expanding your landing zone will aid in moving towards the longer term requirements. As the cloud adoption team progresses with their adoption plan, review [expand your landing zone](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) for guidance to help make decisions and refactor to meet the evolving requirements of various teams.
 
-:::image type="content" source="../media/refactor-methodologies.png" alt-text="Image showing parallel landing zone iteration" border="false":::
+:::image type="content" source="../media/refactor-methodologies.png" alt-text="Image showing parallel landing zone iteration." border="false":::
 _Figure 2: Deeper methodologies assisting a parallel landing zone iteration._
 
-Each subsection of [expand your landing zone](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) maps to one of the additions outlined in the image above. Beyond those basic expansions, the deeper methodologies (such as the Govern methodology or the Manage methodology) of this framework will aid in going beyond basic landing zone modifications to implement long-term disciplines. 
+Each subsection of [expand your landing zone](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) maps to one of the additions outlined in the image above. Beyond those basic expansions, the deeper methodologies (such as the Govern or the Manage methodology) of this framework will aid in going beyond basic landing zone modifications to implement long-term disciplines.
