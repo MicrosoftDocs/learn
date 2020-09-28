@@ -15,7 +15,7 @@ using TMPro;
 ```
 
 > [!NOTE]
-> The `TMPro` namespace is necessary to use TextMesh Pro. Some MRTK prefabs and assets require TextMesh Pro.
+> The `TMPro` namespace is necessary to use TextMesh Pro. Some MRTK prefabs and assets require TextMesh Pro to display text based UI.
 
 ## Variables
 
