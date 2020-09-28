@@ -1,6 +1,6 @@
 ## Install the extension
 
-[Blockchain Development Kit for Ethereum](https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain) is an extension you can use in Visual Studio Code. The extension makes it easy to create, build, and deploy smart contracts on Ethereum ledgers.
+[Blockchain Development Kit for Ethereum](https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain?azure-portal=true) is an extension you can use in Visual Studio Code. The extension makes it easy to create, build, and deploy smart contracts on Ethereum ledgers.
 
 Simply go to **Extensions** and search for **Blockchain Development Kit** and install it.
 
@@ -16,11 +16,11 @@ Once you have all the dependencies installed, you can now use the Blockchain Dev
 2. Open Visual Studio Code.
 3. Go to View -> Command Palette. In the search box type: `Blockchain: New Solidity Project`. You'll notice that as you begin to type "Blockchain" a list of commands will be presented.
 
-:::image type="content" source="../media/new-solidity-project-selection.png" alt-text="Select New Solidity project option":::
+   :::image type="content" source="../media/new-solidity-project-selection.png" alt-text="Select New Solidity project option":::
 
 4. For the type of solidity project, select **Create basic project**.
 
-:::image type="content" source="../media/create-basic-project.png" alt-text="Create basic project":::
+   :::image type="content" source="../media/create-basic-project.png" alt-text="Create basic project":::
 
 5. Use the UI file explorer pop up to find the folder you created in step 1. Select the folder and in the bottom right-hand of the window you'll see **Creating new project**
 6. Sit back and wait for your new Solidity project to be created.
@@ -53,7 +53,7 @@ Right click HelloBlockchain.sol
 2. Click on **Build Contracts** to compile the smart contract. Notice the window appear in the bottom right that says: "Building contracts"
 3. Select View -> Output to see information about the compiled contract. Note: In the dropdown window you may need to select "Azure Blockchain" to see output from the extension
 
-:::image type="content" source="../media/build-contracts.png" alt-text="Build contracts":::
+   :::image type="content" source="../media/build-contracts.png" alt-text="Build contracts":::
 
 In the output window (View -> Output) you can see information about the contracts compilation:
 
@@ -67,11 +67,11 @@ After the contract has compiled successfully, you can deploy the contract locall
 2. Right click HelloBlockchain.sol
 3. Click on **Deploy Contracts** and select development in the window that appears. Here you will be prompted to sign in to Azure if you are not already.
 
-:::image type="content" source="../media/deploy-contracts.png" alt-text="Deploy contracts":::
+   :::image type="content" source="../media/deploy-contracts.png" alt-text="Deploy contracts":::
 
 4. In the output window (View -> Output) you can see information about the deployed migrations and contracts
 
-:::image type="content" source="../media/deploy-details.png" alt-text="Deploy details in output window":::
+   :::image type="content" source="../media/deploy-details.png" alt-text="Deploy details in output window":::
 
 Here you see some key information, or metadata about the contract you just deployed:
 

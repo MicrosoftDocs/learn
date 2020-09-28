@@ -54,10 +54,12 @@ We will use the package truffle-assertions to help us test our events. By using 
 
 1. Go back to the terminal and install the library by typing: `npm install truffle-assertions`
 2. Add this to the top of the test file on line 2 after requiring the ShippingStatus contract:
-```javascript
-const truffleAssert = require('truffle-assertions');
-```
-3. And then add a test to confirm the event returns the expected description. Place this test after the last test in the file, in a new line, right before the last line (set of closing braces).
+
+   ```javascript
+   const truffleAssert = require('truffle-assertions');
+   ```
+
+1. And then add a test to confirm the event returns the expected description. Place this test after the last test in the file, in a new line, right before the last line (set of closing braces).
 
 ```javascript
     it('should return correct event description', async()=>{
@@ -88,7 +90,7 @@ From the terminal type: `truffle test`
 
 You should see all tests successfully passing:
 
-```
+```output
   Contract: HelloBlockchain
     ✓ testing ResponseMessage of HelloBlockchain
     ✓ testing Responder of HelloBlockchain

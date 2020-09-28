@@ -36,9 +36,9 @@ There are numerous tools available to help you more effectively develop smart co
 
 ### Extensions
 
-- [Blockchain Development Kit for Ethereum](https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain): The Blockchain Development Kit extension simplifies how you create, build and deploy smart contracts on Ethereum ledgers. This module will use the help of the Blockchain Development Kit to help write, and test smart contracts.
+- [Blockchain Development Kit for Ethereum](https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain?azure-portal=true): The Blockchain Development Kit extension simplifies how you create, build and deploy smart contracts on Ethereum ledgers. This module will use the help of the Blockchain Development Kit to help write, and test smart contracts.
 
 ### Frameworks
 
-- [Truffle Suite](https://www.trufflesuite.com): The Truffle tool suite is used to test Ethereum contracts before they are deployed to public ledgers and incur real costs. You want to develop locally and make your life as a developer easier. The suite includes: Truffle, Ganache, and Drizzle. In this module, we will be using Truffle.
+- [Truffle Suite](https://www.trufflesuite.com?azure-portal=true): The Truffle tool suite is used to test Ethereum contracts before they are deployed to public ledgers and incur real costs. You want to develop locally and make your life as a developer easier. The suite includes: Truffle, Ganache, and Drizzle. In this module, we will be using Truffle.
 - [OpenZeppelin](https://openzeppelin.com/?azure-portal=true): OpenZeppelin provides tools to write, deploy and operate decentralized applications. There are two different products that OpenZeppelin provides- the contracts library and the SDK. We will not be using OpenZeppelin in this module, but it's good to know that this is an option available that can help write secure blockchain applications in the future.
