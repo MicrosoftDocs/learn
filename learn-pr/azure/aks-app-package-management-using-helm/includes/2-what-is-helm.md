@@ -1,10 +1,10 @@
-The deployment, versioning, and updating of any application usually require planning and management to ensure the correct versions of software libraries and configuration settings.
+The deployment, versioning, and updating of any application usually require planning and management to ensure the correct versions of software libraries and configuration settings are deployed so that the deployed application functions as expected.
 
 :::image type="content" source="../media/2-deploy-with-yaml-files.svg" border="false" alt-text="A diagram that shows a container deployed to a Kubernetes node using a deployment, a service, and an ingress YAML file.":::
 
-Assume your development team decides to deploy your drone tracking company website to Kubernetes. As part of the process, your team will create the deployment, service, and ingress YAML-based files. The information in each file is hardcoded for each target environment and maintained by hand. Maintaining three files for each environment is cumbersome and increases in complexity as the application grows.
+Assume your development team decides to deploy your drone tracking company website to Kubernetes. As part of the process, your team creates deployment, service, and ingress YAML-based files. The information in each file is hardcoded for each target environment and maintained by hand. Maintaining three files for each environment is cumbersome and increases in complexity as the application grows.
 
-Helm simplifies application deployment.
+You can use Helm to simplify the application deployment process and avoid hardcoded deployment variables and settings.
 
 ## What is Helm?
 
@@ -16,7 +16,7 @@ You can think of Helm in the same way as when installing applications using the 
 
 However, you aren't limited to installing a single app at a time. Helm allows you to create templated, human-readable YAML script files to manage your application's deployment. These template files allow you to specify all required dependencies, configuration mapping, and secrets used to manage the deploy of an application successfully.
 
-Helm uses four components to managing application deployments on a Kubernetes cluster.
+Helm uses four components to manage application deployments on a Kubernetes cluster.
 
 - A Helm client
 
@@ -28,7 +28,7 @@ Helm uses four components to managing application deployments on a Kubernetes cl
 
 ## What is the Helm client?
 
-The Helm client is a client installed binary responsible for creating and deploying the manifest files required to deploy a Kubernetes application. The client is responsible for the interaction between the user and the Kubernetes cluster.
+The Helm client is a client installed binary responsible for creating and submitting the manifest files required to deploy a Kubernetes application. The client is responsible for the interaction between the user and the Kubernetes cluster.
 
 :::image type="content" source="../media/2-helm-components.svg" border="false" alt-text="A diagram shows the communication between three Helm components to create a Helm release; the client, chart, and repository.":::
 
