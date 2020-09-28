@@ -18,7 +18,7 @@ You have to:
 
 Use the following command:
 
-```bash
+```azurecli
 az group delete --name eshop-learn-rg --yes
 ```
 

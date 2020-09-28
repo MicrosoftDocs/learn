@@ -1,7 +1,3 @@
-# Exercise - Implement Azure Monitor for Containers
-
-## Overview
-
 Having a general view of your cluster topology and state, and being able to drill into the details when needed, is a key feature to ensure your application supports the business in the best possible way.
 
 In this exercise you'll explore a cluster-level monitoring solution using Azure Monitor for containers. This monitoring solution, along with Application Insights, focused on more application-level information, gives  you a much more complete view of your application and it's operational context.
@@ -23,15 +19,15 @@ Just run the following script from the `deploy/k8s` folder:
 
 The above script enables the monitor addon for your AKS cluster, using the environment variables created by the AKS creation script. You should get an output like this:
 
-![Output from the enable-azure-monitor-for-containers script, showing the provisioning state as successful.](media/enable-azure-monitor-for-containers.png)
+:::image type="content" source="../media/enable-azure-monitor-for-containers.png" alt-text="Output from the enable-azure-monitor-for-containers script, showing the provisioning state as successful" border="true" lightbox="../media/enable-azure-monitor-for-containers.png":::
 
 When the scripts finishes, usually in less than a couple of minutes, you should be able to monitor the cluster by navigating to the AKS resource in the Azure portal and then clicking the **Insights** option on the sidebar, under the **Monitoring** section:
 
-![AKS monitoring overview on Azure Portal, showing CPU and memory utilization, as well as node and pod count](media/aks-monitoring-insights.png)
+:::image type="content" source="../media/aks-monitoring-insights.png" alt-text="AKS monitoring overview on Azure portal, showing CPU, memory utilization, and node & pod count" border="true" lightbox="../media/aks-monitoring-insights.png":::
 
 Besides the general cluster dashboard, You can also explore any of the tabs to zoom in more details for the cluster, as shown in the next image:
 
-![AKS monitoring container details for the cluster.](media/media-aks-monitoring-containers.png)
+:::image type="content" source="../media/media-aks-monitoring-containers.png" alt-text="AKS monitoring container details for the cluster" border="true" lightbox="../media/media-aks-monitoring-containers.png":::
 
 ## Create a simple metric for the Prometheus endpoint
 
@@ -47,13 +43,13 @@ So let's get into the details:
 
 Run the following command from the `src/Services/Catalog/Catalog.API` folder:
 
-```bash
+```dotnetcli
 dotnet add package prometheus-net.AspNetCore
 ```
 
 ### 2. Add the custom metrics counter and the Prometheus middleware to the request pipeline
 
-You'll add some conde here to:
+You'll add some code here to:
 
 - Generate the metric you want to get and
 - The Prometheus middleware to expose the metrics.
@@ -103,11 +99,11 @@ namespace Microsoft.eShopOnContainers.Services.Catalog.API
 }
 ```
 
-- The lines you have to add are commented out in the code, so they'll be easy to spot.
+The lines you have to add are commented out in the code, so they'll be easy to spot.
 
 ### 3. Build the image to ACR
 
-Update you environment with the environment variables from the initial deployment, by running the following command:
+Update your environment with the environment variables from the initial deployment, by running the following command:
 
 ```bash
 eval $(cat ~/clouddrive/source/deploy-application-exports.txt)
@@ -121,11 +117,11 @@ Build the image of the updated microservice to ACR by running the following scri
 
 You should see something like this:
 
-![Initial output from the build-to-acr script.](media/build-to-acr-catalog-api.png)
+:::image type="content" source="../media/build-to-acr-catalog-api.png" alt-text="Initial output from the build-to-acr script" border="true" lightbox="../media/build-to-acr-catalog-api.png":::
 
 After two or three minutes you should get the confirmation that the image was built and pushed:
 
-![Final output from the build-to-acr script, showing the catalog.api image was built and pushed.](media/build-to-acr-catalog-api-end.png)
+:::image type="content" source="../media/build-to-acr-catalog-api-end.png" alt-text="Final output from the build-to-acr script, showing the catalog.api image was built and pushed" border="true" lightbox="../media/build-to-acr-catalog-api-end.png":::
 
 ## Reconfigure and redeploy the updated application to AKS
 
@@ -165,7 +161,7 @@ spec:
       #...
 ```
 
-- You have to add the three annotations that begin with `prometheus.io`
+You have to add the three annotations that begin with `prometheus.io`
 
 ### 2. Redeploy the updated and reconfigured Catalog microservice
 
@@ -223,7 +219,7 @@ Now in the Azure Portal, go to the resource group you created for this module an
 
 You should see something like the image below:
 
-![Logs view showing the detailed sequence and the metric values output from the query.](media/azure-monitor-for-containers-prometheus-metric-query.png)
+:::image type="content" source="../media/azure-monitor-for-containers-prometheus-metric-query.png" alt-text="Logs view showing the detailed sequence and the metric values output from the query" border="true" lightbox="../media/azure-monitor-for-containers-prometheus-metric-query.png":::
 
 ### 2. Generate a graph with the query data
 
@@ -234,7 +230,7 @@ To generate a graph from the above data you just have to:
 
 You should something similar to the image below:
 
-![Graph tab from the query data above, description follows.](media/azure-monitor-for-containers-prometheus-metric-graph.png)
+:::image type="content" source="../media/azure-monitor-for-containers-prometheus-metric-graph.png" alt-text="Graph tab from the query data" border="true" lightbox="../media/azure-monitor-for-containers-prometheus-metric-graph.png":::
 
 In the image above you can see a straight ascending line, that corresponds to the health checks requests, that are received at a constant rate, hence the straight line. You can also see a sudden rise in the graph and then the straight raising line continuing at another level.
 

@@ -28,7 +28,7 @@ The filter expression is highlighted on the top of each image.
 
 Get the details of application startup:
 
-![Filtered application startup log traces, description follows.](media/application-startup-logging-traces.png)
+:::image type="content" source="../media/application-startup-logging-traces.png" alt-text="Filtered application startup log traces, description follows" border="true" lightbox="../media/application-startup-logging-traces.png":::
 
 When filtering by `ApplicationContext = 'Ordering.API'` you get all events from the application, in this sample we also added a `DateTime` limit to show only the initial traces.
 
@@ -38,7 +38,7 @@ The "level" of the events shown, such as `Debug`, `Information`, `Warning`, can 
 
 You can focus on a specific type of trace by finding an event type as shown in the next image:
 
-![Filtering by type, explained in the text below.](media/event-traces-filtered-by-type.png)
+:::image type="content" source="../media/event-traces-filtered-by-type.png" alt-text="Filtering by type" border="true" lightbox="../media/event-traces-filtered-by-type.png":::
 
 1. Click on any trace to expand it.
 2. Click on the Type link.
@@ -46,7 +46,8 @@ You can focus on a specific type of trace by finding an event type as shown in t
 
 You should get an output similar to this:
 
-![Description in the text below.](media/traces-for-one-event-type-for-all-applications.png)
+<!-- add alt text for image -->
+:::image type="content" source="../media/traces-for-one-event-type-for-all-applications.png" alt-text="TODO" border="true" lightbox="../media/traces-for-one-event-type-for-all-applications.png":::
 
 You can see the "Configuring web host" traces (`type = 0x10E11058`) for all applications.
 
@@ -56,7 +57,8 @@ You can easily filter by any of the properties of any trace.
 
 In the next image you can see an example of the handling of an integration event in the Ordering.API microservice:
 
-![Description in the text below.](media/integration-event-handling.png)
+<!-- add alt text for image -->
+:::image type="content" source="../media/integration-event-handling.png" alt-text="TODO" border="true" lightbox="../media/integration-event-handling.png":::
 
 In the image above you can see:
 
@@ -81,7 +83,7 @@ The key-value pairs are then the base to query the events, as was shown in the s
 
 The logging infrastructure of .NET supports structured logging when used with a `LoggerFactory`, such as **Serilog**, that supports it, and the simplest way to use is by requesting an `ILogger<T>` through Dependency Injection (DI) in the class constructor as shown here:
 
-```cs
+```csharp
 public class WorkerClass
 {
     private readonly ILogger<WorkerClass> _logger;
@@ -95,13 +97,13 @@ public class WorkerClass
 
 The nice part of using the `ILogger<T>` is that you get a nice `SourceContext` property as shown here:
 
-![Log traces view, highlighting the SourceContext](media/source-context-from-ilogger.png)
+:::image type="content" source="../media/source-context-from-ilogger.png" alt-text="Log traces view, highlighting the SourceContext" border="true" lightbox="../media/source-context-from-ilogger.png":::
 
 #### Logging events
 
 Logging events is pretty simple, as shown in the following code that produces the trace shown in image above:
 
-```cs
+```csharp
 _logger.LogInformation("----- Begin transaction {TransactionId} for {CommandName} ({@Command})", transaction.TransactionId, typeName, request);
 ```
 
@@ -122,13 +124,9 @@ Correlation Ids are a mean to establish a link between two or more contexts or a
 These are some of the context properties used in eShopOnContainers:
 
 - **ApplicationContext** Is defined on application startup and adds the `ApplicationContext` property to all events.
-
 - **SourceContext** Identifies the full name of the class where the event is logged, it's usually defined when creating or injecting the logger.
-
 - **RequestId** Is a typical context that covers all events while serving a request. It's defined by the ASP.NET Core request pipeline.
-
 - **Transaction context** Covers the events from the beginning of the database transaction up to it's commit.
-
 - **IntegrationEventContext** - Identifies all events that occur while handling an integration event in an application.
 
 Logging contexts can be created as shown in the following code:
@@ -168,7 +166,7 @@ There a just a few simple rules to get the most from structured logging:
 
 2. Log exceptions with the proper overload as shown in the following code fragments:
 
-   ```cs
+   ```csharp
    catch (Exception ex)
    {
        _logger.LogWarning(ex, "Could not publish event: {EventId} after {Timeout}s ({ExceptionMessage})", @event.Id, $"{time.TotalSeconds:n1}", ex.Message);
@@ -202,7 +200,7 @@ To enable Serilog you have to install the following packages in each application
 
 Logger configuration is done in `Program.cs` as shown here:
 
-```cs
+```csharp
 private static Serilog.ILogger CreateSerilogLogger(IConfiguration configuration)
 {
     var seqServerUrl = configuration["Serilog:SeqServerUrl"];
@@ -268,7 +266,7 @@ To implement Application Insights you have to create an Application Insight reso
 
 You can instrument not only the web applications, but also any background components, and even the JavaScript in the web pages themselves. Application Insights can even keep log traces to get powerful correlations. The application don't need to be hosted in Azure, they can be anywhere. You can get metrics even from your dev machine.
 
-An Application Insights resource si intended to be associated with a single app, so in the case of eShopOnContainers, you'd have to create as many resources as services you'd want to monitor. Each Application Insights resource is identified with a GUID, known as the "Instrumentation Key".
+An Application Insights resource is intended to be associated with a single app, so in the case of eShopOnContainers, you'd have to create as many resources as services you'd want to monitor. Each Application Insights resource is identified with a GUID, known as the "Instrumentation Key".
 
 All telemetry and log streams are integrated in Azure Monitor. In the Azure portal, you can make queries, display charts, and generate alerts, that allow you to effectively manage your application.
 
@@ -276,11 +274,11 @@ All telemetry and log streams are integrated in Azure Monitor. In the Azure port
 
 Application Insights can get an extensive set of metrics from your application, ranging from the typical request rates and response times, to dependencies calls. You can also track custom events in your views and analyze conversion funnels and cohorts for user retention.
 
-You can se more about the wide range of metrics you can monitor with Application Insights in the [documentation overview](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview#what-does-application-insights-monitor).
+You can se more about the wide range of metrics you can monitor with Application Insights in the [documentation overview](/azure/azure-monitor/app/app-insights-overview#what-does-application-insights-monitor).
 
 ### Dashboards an alerts
 
-Telemetry is used to drive [Smart Detection](https://docs.microsoft.com/azure/azure-monitor/app/proactive-diagnostics) that warns about potential problems automatically. You get this kind of alerts without having to set up anything special, just by instrumenting your applications with Application Insights.
+Telemetry is used to drive [Smart Detection](/azure/azure-monitor/app/proactive-diagnostics) that warns about potential problems automatically. You get this kind of alerts without having to set up anything special, just by instrumenting your applications with Application Insights.
 
 Application Insights also makes a map of all components and dependencies of your application, that gives you a high level overview of the state of the components and the communications between them.
 

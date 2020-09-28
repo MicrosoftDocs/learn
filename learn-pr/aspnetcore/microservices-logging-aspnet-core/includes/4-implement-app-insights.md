@@ -1,7 +1,3 @@
-# Exercise - Implement Application Insights
-
-## Overview
-
 For this exercise you'll make some code changes to the Catalog microservice to implement Application Insights. For some  other three microservices code changes are already implemented so you'll just have to handle the configuration.
 
 In this exercise you will:
@@ -9,7 +5,7 @@ In this exercise you will:
 - Create an Azure Container Registry (ACR) instance in your subscription.
 - Create Application Insights resources for the application.
 - Enable logging to Application Insights.
-- Deploy the updated/reconfigured microservices. 
+- Deploy the updated/reconfigured microservices.
 - Monitor your application from the Azure Portal.
 
 ## Create an ACR instance
@@ -26,13 +22,13 @@ The script above creates the ACR and grants permission to AKS to pull images fro
 
 You should get an output similar to this:
 
-![Output from the create-acr script.](media/create-acr.png)
+:::image type="content" source="../media/create-acr.png" alt-text="Output from the create-acr script" border="true" lightbox="../media/create-acr.png":::
 
 ## Create the Application Insights resources
 
-Add the application insights extension to **az cli** by running this command:
+Add the Application Insights extension to Azure CLI by running this command:
 
-```bash
+```azurecli
 az extension add -n application-insights
 ```
 
@@ -46,7 +42,7 @@ The script above creates four Application Insights resources, in the resource gr
 
 You should get an output similar to this:
 
-![Output from the create-application-insights script.](media/create-application-insights.png)
+:::image type="content" source="../media/create-application-insights.png" alt-text="Output from the create-application-insights script" border="true" lightbox="../media/create-application-insights.png":::
 
 In the image above you can see four key-value pairs with the instrumentation keys, ready to be pasted into the configmaps for the catalog, coupon, ordering, and webshoppingagg Helm charts..
 
@@ -97,7 +93,7 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
 
    You can install them with the Visual Studio UI or using the following commands on each of the projects:
 
-   ```bash
+   ```dotnetcli
    dotnet add package Microsoft.ApplicationInsights.AspNetCore --version 2.12.1
    dotnet add package Microsoft.ApplicationInsights.Kubernetes --version 1.1.1
    dotnet add package Serilog.Sinks.ApplicationInsights --version 3.1.0
@@ -198,9 +194,9 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
     ./build-to-acr.sh --services catalog-api
     ```
 
-    The script starts an [ACR quick task](https://docs.microsoft.com/azure/container-registry/container-registry-tasks-overview#quick-task) and will take a little while to run. When it finishes you should see something like this:
+    The script starts an [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) and will take a little while to run. When it finishes you should see something like this:
 
-    ![Output from the build-to-acr script.](media/build-to-acr.png)
+    :::image type="content" source="../media/build-to-acr.png" alt-text="Output from the build-to-acr script" border="true" lightbox="../media/build-to-acr.png":::
 
     That shows the image was created successfully in the ACR.
 
@@ -248,7 +244,7 @@ Now head to the Azure Portal and search for the resource group `eshop-learn-rg` 
 
 You should see something like this:
 
-![Azure portal showing the live metrics dashboard for the webshoppingagg-appinsights resource.](media/webshoppingagg-live-metrics.png)
+:::image type="content" source="../media/webshoppingagg-live-metrics.png" alt-text="Azure portal showing the live metrics dashboard for the webshoppingagg-appinsights resource" border="true" lightbox="../media/webshoppingagg-live-metrics.png":::
 
 In the image above you can see some sampled logging traces to the right, as well as some Incoming Request real-time graphics, showing the request rate, request duration and request failure rate. There's also information for outgoing request, that is, calling the dependencies. You can also see the overall health, with memory consumption, CPU utilization and exceptions rate.
 
@@ -258,14 +254,14 @@ Application Insights starts tracing all calls between the services and their dep
 
 If you click on the `Application map` option in the left sidebar, you should see something like this:
 
-![Application map. Description in the text follwing.](media/application-insights-application-map.png)
+:::image type="content" source="../media/application-insights-application-map.png" alt-text="Application map" border="true" lightbox="../media/application-insights-application-map.png":::
 
 In the graph you can see that the services with Application Insights instrumentation are shown as green-circled nodes. The diagram shows the calls traced between the four microservices and other dependencies such as databases and other microservices that don't have Application Insights instrumentation, along with some information on the call volumes and response times.
 
 You can also look at the log traces, with the Search option in the sidebar:
 
-![Application Insights log traces search view.](media/application-insights-search-log-traces.png)
+:::image type="content" source="../media/application-insights-search-log-traces.png" alt-text="Application Insights log traces search view" lightbox="../media/application-insights-search-log-traces.png":::
 
 And can peek into the details of any trace:
 
-![](media/application-insights-end-to-end-transaction-details.png)
+:::image type="content" source="../media/application-insights-end-to-end-transaction-details.png" alt-text="TODO" border="true" lightbox="../media/application-insights-end-to-end-transaction-details.png":::
