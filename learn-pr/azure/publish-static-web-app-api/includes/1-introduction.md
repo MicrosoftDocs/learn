@@ -25,7 +25,7 @@ Azure hosts and serves your web app. Azure Functions powers back-end API functio
 
 ### Optional APIs
 
-Azure Static Web Apps is ideal for serving purely static content, but it also has great support for static web apps that need APIs behind them. So you can host your static web app with or without an API.
+Azure Static Web Apps is ideal for serving purely static content, but it also has great support for static web apps that need APIs behind them. You can host your static web app with or without an API.
 
 Azure hosts and serves your web app while Azure Functions powers back-end API functionality, which provides automatic scaling out and scaling in based on demand to the API.
 
