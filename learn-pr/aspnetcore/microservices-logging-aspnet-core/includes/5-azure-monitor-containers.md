@@ -248,5 +248,3 @@ Now that you have a graph for your metric, you could use the "**Pin to dashboard
 - <https://medium.com/@aevitas/expose-asp-net-core-metrics-with-prometheus-15e3356415f4>
 - <https://prometheus.io/>
 - <https://azure.microsoft.com/en-us/blog/azure-monitor-for-containers-with-prometheus-now-in-preview/>
-
-| [TOC](../README.md) | [NEXT >](knowledge-check.md) |

@@ -285,5 +285,3 @@ Telemetry is used to drive [Smart Detection](https://docs.microsoft.com/azure/az
 Application Insights also makes a map of all components and dependencies of your application, that gives you a high level overview of the state of the components and the communications between them.
 
 In the next exercise we'll explore some of the key features you can get from Application Insights.
-
-| [TOC](../README.md) | [NEXT >](implement-application-insights.md) |

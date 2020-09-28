@@ -269,5 +269,3 @@ You can also look at the log traces, with the Search option in the sidebar:
 And can peek into the details of any trace:
 
 ![](media/application-insights-end-to-end-transaction-details.png)
-
-| [TOC](../README.md) | [NEXT >](azure-monitor-for-containers.md) |

@@ -1,4 +1,19 @@
-# Exercise - Set up the environment
+In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopOnContainers":::* app to AKS.
+
+[!INCLUDE[Azure Cloud Shell instructions](../../includes/use-az-cloud-shell.md)]
+
+## Run deployment script
+
+Run the following command in the command shell:
+
+```bash
+. <(wget -q -O - https://aka.ms/microservices-logging-aspnet-core-setup)
+```
+
+[!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
+
+
+
 
 To begin with this module you'll create an initial AKS deployment of the simplified version of eShopOnContainers with a simple public IP over HTTP. This step is mostly just running a script that usually needs no attention so, once you start the script, you can begin the next step, to review some key concepts.
 
@@ -8,7 +23,7 @@ To create an AKS cluster with a starter version of eShop-Learn complete the foll
 
 2. Open an Azure Cloud Shell session while logged in with your subscription on the Azure portal.
 
-    ![Azure portal header wighlighting the "Cloud Shell" link.](media/open-azure-cloud-shell.png)
+    ![Azure portal header highlighting the "Cloud Shell" link.](media/open-azure-cloud-shell.png)
 
 3. Create the base source directory
 
@@ -120,7 +135,7 @@ All the services should be up and running in less than five minutes and then you
 
 ![WebSPA home page view.](media/home-page.png)
 
-## Discount Coupon features
+## Discount coupon features
 
 - The user can apply a discount coupon code during the checkout (**DISC-##**, where ## is the discount amount to the order total. For $5, $10, $15, $20, $25, and $30).
 - The coupon service must confirm that the coupon is available and return the discount amount (REST API).
@@ -132,5 +147,3 @@ All the services should be up and running in less than five minutes and then you
 The discount coupon feature adds the following element to the checkout view:
 
 ![WebSPA checkout page view, highlighting the discount coupon input.](media/discount-coupon-feature.png)
-
-| [TOC](../README.md) | [NEXT >](logging-and-monitoring.md) |

@@ -1,28 +1,29 @@
 ### YamlMime:Module
 uid: learn.microservices-logging-aspnet-core
 metadata:
-  title: Implement resiliency in a cloud-native ASP.NET Core microservice
-  description: This module guides you through implementing resiliency in an ASP.NET Core microservices app in Azure Kubernetes Service.
+  title: Instrumenting a cloud-native ASP.NET Core microservice
+  description: This module guides you through implementing logging and monitoring in an ASP.NET Core microservices app in Azure Kubernetes Service.
   author: scottaddie
   ms.author: scaddie
   ms.date: 09/28/2020
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
-title: Implement resiliency in a cloud-native ASP.NET Core microservice
-summary: Learn how to make your cloud-native ASP.NET Core microservices app fault-tolerant with minimal impact on the user.
+title: Instrumenting a cloud-native ASP.NET Core microservice
+summary: Learn how to instrument your cloud-native ASP.NET Core microservices app to diagnose problems and monitor performance.
 abstract: |
   In this module, you will:
-  - Understand foundational resiliency concepts.
-  - Observe the behavior of a microservice with no resiliency strategy.
-  - Implement failure handling code for HTTP requests in one microservice.
-  - Deploy an infrastructure-based resiliency solution to an AKS cluster.
+  - Understand the key concepts of logging.
+  - Explore the included logs in eShopOnContainers.
+  - Learn how to implement Application Insights logging and monitoring.
+  - Learn how to create a custom metric using the Prometheus SDK.
+  - Learn how to enable Azure Monitor for containers in an AKS cluster.
 prerequisites: |
   - Familiarity with C# and ASP.NET Core development at the beginner level
   - Familiarity with RESTful service concepts
   - Conceptual knowledge of containers and AKS at the intermediate level
   - Access to an Azure subscription with **Owner** privilege
 levels:
-  - advanced
+  - intermediate
 roles:
   - developer
   - solution-architect
@@ -34,8 +35,14 @@ products:
   - azure-container-registry
   - azure-kubernetes-service
 units:
-  - learn.microservices-resiliency-aspnet-core.1-introduction
-  - learn.microservices-resiliency-aspnet-core.2-environment-setup
-iconUrl: /learn/achievements/aspnetcore/microservices-resiliency-aspnet-core.svg
-badge:
-  uid: learn.microservices-resiliency-aspnet-core.badge
+  - learn.microservices-logging-aspnet-core.1-introduction
+  - learn.microservices-logging-aspnet-core.2-environment-setup
+  - learn.microservices-logging-aspnet-core.3-logging-monitoring
+  - learn.microservices-logging-aspnet-core.4-implement-app-insights
+  - learn.microservices-logging-aspnet-core.5-azure-monitor-containers
+  - learn.microservices-logging-aspnet-core.6-knowledge-check
+  - learn.microservices-logging-aspnet-core.7-summary
+iconUrl: https://docs.microsoft.com/../media/learn/module.svg
+#iconUrl: /learn/achievements/aspnetcore/microservices-logging-aspnet-core.svg
+#badge:
+#  uid: learn.microservices-logging-aspnet-core.badge
