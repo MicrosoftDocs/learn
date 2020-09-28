@@ -1,21 +1,23 @@
 In this unit, you'll learn how to secure, build, deploy, and debug your High-Level (HL) Azure Sphere application onto the Azure Sphere A7 Core. Your Azure Sphere application will connect to Azure IoT Hub and send room environment telemetry to Azure IoT Hub.
 
-The components for this unit:
+## Components needed
 
-**Azure IoT:** Your Azure Sphere device can securely connect and communicate with cloud services. Azure Sphere includes built-in library support for both Azure IoT Hub and Azure IoT Central. This module focuses on Azure IoT.
+- **Azure IoT:** Your Azure Sphere device can securely connect and communicate with cloud services. Azure Sphere includes built-in library support for both Azure IoT Hub and Azure IoT Central. This module focuses on Azure IoT.
 
-**Azure IoT Hub:** enables highly secure and reliable communication between your IoT application and the devices it manages. Azure IoT Hub provides a cloud-hosted solution back-end to connect virtually any device. Extend your solution from the cloud to the edge with per-device authentication, built-in device management, and scaled provisioning.
+  **Azure IoT Hub:** enables highly secure and reliable communication between your IoT application and the devices it manages. Azure IoT Hub provides a cloud-hosted solution back-end to connect virtually any device. Extend your solution from the cloud to the edge with per-device authentication, built-in device management, and scaled provisioning.
 
-**Device Provisioning Service:** This project leverages the Azure IoT Hub Device Provisioning Service (DPS). The DPS enables zero-touch, just-in-time, large scale device provisioning.
+  **Device Provisioning Service:** This project leverages the Azure IoT Hub Device Provisioning Service (DPS). The DPS enables zero-touch, just-in-time, large scale device provisioning.
 
-**High-Level Application:** Every Azure Sphere device has a high-level application, which runs on the Azure Sphere OS and uses the application libraries. A high-level application can:
+  **High-Level Application:** Every Azure Sphere device has a high-level application, which runs on the Azure Sphere OS and uses the application libraries. A high-level application can:
 
-- Configure and interact with Azure Sphere peripherals, such as the general-purpose input/output (GPIO) pins, universal asynchronous receiver/transmitters (UARTs), and other interfaces
-- Communicate with RTApps
-- Communicate with the internet and cloud-based services
-- Broker trust relationships with other devices and services via certificate-based authentication
+  - Configure and interact with Azure Sphere peripherals, such as the general-purpose input/output (GPIO) pins, universal asynchronous receiver/transmitters (UARTs), and other interfaces
+  - Communicate with RTApps
+  - Communicate with the internet and cloud-based services
+  - Broker trust relationships with other devices and services via certificate-based authentication
 
-The steps you'll follow:
+## Steps to connect the monitor to the Azure IoT Hub
+
+To setup the connectivity between the High Level Azure Sphere application and the Azure IoT Hub you do the following:
 
 1. Create Azure resources
 2. Set up a trusted relationship between your Azure Sphere Tenant and IoT Device Provisioning Service
