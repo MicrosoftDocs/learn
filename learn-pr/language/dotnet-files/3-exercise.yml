@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.dotnet-files.3-exercise
+title: Exercise
+metadata:
+  title: Exercise
+  description: Exercise
+  ms.date: 09/28/2020
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-exercise.md)]
