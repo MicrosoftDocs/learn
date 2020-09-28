@@ -34,7 +34,7 @@ When filtering by `ApplicationContext = 'Ordering.API'` you get all events from 
 
 The "level" of the events shown, such as `Debug`, `Information`, `Warning`, can be configured as explained in the [setup and configuration section](#setup-and-configuration) below.
 
-#### Closing in on a specific type of trace
+#### Close in on a specific type of trace
 
 You can focus on a specific type of trace by finding an event type as shown in the next image:
 
@@ -79,7 +79,7 @@ In a few words, **structured logging** can be thought of as a stream of key-valu
 
 The key-value pairs are then the base to query the events, as was shown in the samples above.
 
-#### Getting the logger
+#### Get the logger
 
 The logging infrastructure of .NET supports structured logging when used with a `LoggerFactory`, such as **Serilog**, that supports it, and the simplest way to use is by requesting an `ILogger<T>` through Dependency Injection (DI) in the class constructor as shown here:
 
@@ -115,7 +115,7 @@ The code above is similar to what you've seen in the `string.format()` method, w
 
 3. If a property name begins with `@` then the whole object graph is stored in the event log and can be viewed in a structured way (beware the size of the object). If the property name doesn't have the `@` then the `.ToString()` method is used to get the value.
 
-#### Logging contexts and correlation Ids
+#### Logging contexts and correlation IDs
 
 Logging context allows you to define a scope, so you can trace and correlate a set of events, even across the boundaries of the applications involved.
 
@@ -242,15 +242,13 @@ The previous JSON fragment shows how to configure the MinimumLevel for traces, a
 
 ### Additional resources
 
-- [Logging in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/logging/)
+- [Logging in ASP.NET Core](/aspnet/core/fundamentals/logging)
 - [Serilog — simple .NET logging with fully-structured events](https://serilog.net/)
 - [Seq — structured logs for .NET apps](https://datalust.co/seq)
 - [Structured logging concepts in .NET Series (1)](https://nblumhardt.com/2016/06/structured-logging-concepts-in-net-series-1/)
 - [Events and levels - structured logging concepts in .NET (2)](https://nblumhardt.com/2016/06/events-and-levels-structured-logging-concepts-in-net-2/)
 - [Smart Logging Middleware for ASP.NET Core](https://blog.getseq.net/smart-logging-middleware-for-asp-net-core/)
 - [Tagging log events for effective correlation](https://nblumhardt.com/2015/01/designing-log-events-for-effective-correlation/)
-
-| [TOC](../README.md) | [NEXT >](application-insights.md) |
 
 ## Monitoring
 

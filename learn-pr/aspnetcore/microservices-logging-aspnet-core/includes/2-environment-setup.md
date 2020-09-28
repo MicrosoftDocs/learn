@@ -23,7 +23,7 @@ To create an AKS cluster with a starter version of eShop-Learn complete the foll
 
 2. Open an Azure Cloud Shell session while logged in with your subscription on the Azure portal.
 
-    ![Azure portal header highlighting the "Cloud Shell" link.](media/open-azure-cloud-shell.png)
+    ![Azure portal header highlighting the "Cloud Shell" link.](../media/open-azure-cloud-shell.png)
 
 3. Create the base source directory
 
@@ -71,7 +71,7 @@ To create an AKS cluster with a starter version of eShop-Learn complete the foll
 
 When the script finishes you should see something like this:
 
-```txt
+```console
 Helm charts deployed
 NAME                            NAMESPACE       REVISION        UPDATED                                 STATUS         CHART                    APP VERSION
 eshoplearn-backgroundtasks      default         1               2020-06-10 17:14:34.2354515 +0100 BST   deployed       backgroundtasks-0.1.0    1.0.0
@@ -125,15 +125,15 @@ You can begin exploring these services (when ready):
 
 A little while after the `seq` container becomes ready (1/1) you should be able to check the centralized logs at `http://###.###.###.###/seq/#/events?autorefresh` where you'll see all the transient errors that occur during the application startup, until they stop and all services are up and running.
 
-![Seq home page view, showing typical startup errors.](media/startup-errors-logging.png)
+![Seq home page view, showing typical startup errors.](../media/startup-errors-logging.png)
 
 You can also check the general application status at `http://###.###.###.###/webstatus/` until all health icons are green.
 
-![WebStatus home page view, showing all services OK.](media/eshop-learn-webstatus.png)
+![WebStatus home page view, showing all services OK.](../media/eshop-learn-webstatus.png)
 
 All the services should be up and running in less than five minutes and then you should be able to browse to the home page and login using the credential in the login page.
 
-![WebSPA home page view.](media/home-page.png)
+![WebSPA home page view.](../media/home-page.png)
 
 ## Discount coupon features
 
@@ -146,4 +146,4 @@ All the services should be up and running in less than five minutes and then you
 
 The discount coupon feature adds the following element to the checkout view:
 
-![WebSPA checkout page view, highlighting the discount coupon input.](media/discount-coupon-feature.png)
+![WebSPA checkout page view, highlighting the discount coupon input.](../media/discount-coupon-feature.png)
