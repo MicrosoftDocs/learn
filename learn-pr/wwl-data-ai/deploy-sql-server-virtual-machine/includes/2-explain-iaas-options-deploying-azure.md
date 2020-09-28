@@ -74,7 +74,7 @@ The image above shows just a small set of the series and size possibilities. For
 
 ## High availability
 
-One of the major benefits of cloud computing is that platform high availability is part of the architecture. Azure provides a high-level of built hardware, storage, and networking redundancy. High availability for a system is typically measured as a percentage of uptime per year. In Table 1, you can see what those numbers translate into in terms of time.
+One of the major benefits of cloud computing is that platform high availability is part of the architecture. Azure provides a high-level of built hardware, storage, and networking redundancy. High availability for a system is typically measured as a percentage of uptime per year. In the table below, you can see what those numbers translate into in terms of time.
 
 | **Availability %**| **Downtime per Year** |
 | - | - |
