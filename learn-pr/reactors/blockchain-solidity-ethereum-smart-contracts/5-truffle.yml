@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Install Truffle
-durationInMinutes: 6
+durationInMinutes: 8
 content: |
   [!include[](includes/5-truffle.md)]
