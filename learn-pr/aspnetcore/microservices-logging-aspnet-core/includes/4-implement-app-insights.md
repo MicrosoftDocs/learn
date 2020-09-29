@@ -12,7 +12,7 @@ In this exercise you will:
 Add the Application Insights extension to Azure CLI by running this command:
 
 ```azurecli
-az extension add -n application-insights
+az extension add --name application-insights
 ```
 
 Run the following script to create the Application Insights resources:
@@ -56,9 +56,9 @@ data:
 
 ## Enable logging to Application Insights
 
-To implement Application Insights in an application you have to:
+To implement Application Insights in an app:
 
-1. Add the supporting packages
+1. Add the supporting packages.
 2. Register the Application Insights telemetry services in the DI container.
 3. Add the Application Insights sink for Serilog to include log traces.
 4. Build the new image for the updated microservice.
@@ -95,12 +95,12 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
     }
     ```
 
-    For the Catalog microservice that's already done in the `AddAppInsights()` extension method:
+    For the Catalog microservice that's already done in the `AddAppInsights` extension method:
 
     ```csharp
     public static class CustomExtensionMethods
     {
-        public static IServiceCollection AddAppInsight(
+        public static IServiceCollection AddAppInsights(
             this IServiceCollection services, IConfiguration configuration)
         {
             services.AddApplicationInsightsTelemetry(configuration);
@@ -113,7 +113,7 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
 
 3. **Add the Application Insights sink for Serilog**
 
-    Open up Program.cs and make it like this:
+    Open up *Program.cs* and make it like this:
 
     ```csharp
     using Microsoft.ApplicationInsights.Extensibility;
