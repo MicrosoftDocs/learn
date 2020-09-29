@@ -2,7 +2,6 @@ For this exercise you'll make some code changes to the Catalog microservice to i
 
 In this exercise you will:
 
-- Create an Azure Container Registry (ACR) instance in your subscription.
 - Create Application Insights resources for the application.
 - Enable logging to Application Insights.
 - Deploy the updated/reconfigured microservices.
@@ -28,7 +27,7 @@ You should get an output similar to this:
 
 :::image type="content" source="../media/create-application-insights.png" alt-text="Output from the create-application-insights script" border="true" lightbox="../media/create-application-insights.png":::
 
-In the image above you can see four key-value pairs with the instrumentation keys, ready to be pasted into the configmaps for the catalog, coupon, ordering, and webshoppingagg Helm charts..
+In the image above you can see four key-value pairs with the instrumentation keys, ready to be pasted into the configmaps for the catalog, coupon, ordering, and webshoppingagg Helm charts.
 
 All four configmap files:
 
@@ -52,9 +51,8 @@ data:
   #...
 ```
 
->[!IMPORTANT]
->
-> Keep in mind that you have to use a different instrumentation key for each microservice.
+> [!IMPORTANT]
+> You have to use a different instrumentation key for each microservice.
 
 ## Enable logging to Application Insights
 
