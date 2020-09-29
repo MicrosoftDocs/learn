@@ -8,7 +8,7 @@ Here are the libraries that we'll use in this module:
 - [Seaborn](https://seaborn.pydata.org/)
 
 > [!Note]
-> If you receive a `FutureWarning` error message while working on the exercises in this module, you can ignore the message. The warning is due to an issue in the `numpy` library that we use in the module. The warning is a known issue that's being addressed.
+> If you receive a `FutureWarning` error message while working on the exercises in this module, you can ignore the message. The warning is due to an issue in the NumPy library that we use in the module. The warning is a known issue that's being addressed.
 > 
 
 ## Learning objectives
