@@ -13,7 +13,7 @@ You've made changes to your API in the previous exercise. Commit those changes t
 
 ## Create a Pull Request
 
-You pushed your **api** branch to GitHub. Now you want the GitHub Action to publish your web app and API in a preview URL. So your next step is to create a pull request against the **master** branch.
+You pushed your **api** branch to GitHub. Now you want the GitHub Action to publish your web app and API in a preview URL. So your next step is to create a pull request against the **main** branch.
 
 1. Open a browser
 1. Navigate to your repository
@@ -22,7 +22,7 @@ You pushed your **api** branch to GitHub. Now you want the GitHub Action to publ
 
 1. Click on the **Pull requests** link
 1. Click the **New pull request** button
-1. Select the **master** branch from the **base** dropdown
+1. Select the **main** branch from the **base** dropdown
 1. Select the **api** branch from the **compare** dropdown
 1. Click the **Create pull request** button
 1. Again, click the second **Create pull request** button
