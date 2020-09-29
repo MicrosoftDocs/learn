@@ -21,6 +21,6 @@ In this module you will:
 
 ## Prerequisites
 
-- Familiarity with REST API services.
-- Familiarity with web development.
+- Familiarity with REST API services
+- Familiarity with web development
 - Access to an Azure subscription with **Owner** privilege

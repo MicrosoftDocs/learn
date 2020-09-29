@@ -8,22 +8,6 @@ In this exercise you will:
 - Deploy the updated/reconfigured microservices.
 - Monitor your application from the Azure Portal.
 
-## Create an ACR instance
-
-We'll begin by setting up an ACR instance to build the images that AKS will use when deploying the updated microservice(s). That is, for this exercise AKS will pull the initial application images from the initial repository and the updated images from the ACR.
-
-To create the ACR just run the following script from folder `deploy/k8s`:
-
-```bash
-./create-acr.sh
-```
-
-The script above creates the ACR and grants permission to AKS to pull images from the ACR.
-
-You should get an output similar to this:
-
-:::image type="content" source="../media/create-acr.png" alt-text="Output from the create-acr script" border="true" lightbox="../media/create-acr.png":::
-
 ## Create the Application Insights resources
 
 Add the Application Insights extension to Azure CLI by running this command:
