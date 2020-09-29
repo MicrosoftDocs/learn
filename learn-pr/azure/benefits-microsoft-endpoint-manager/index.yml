@@ -31,9 +31,10 @@ units:
 - learn.benefits-microsoft-endpoint-manager.1-introduction
 - learn.benefits-microsoft-endpoint-manager.2-secure-and-intelligent
 - learn.benefits-microsoft-endpoint-manager.3-streamlined-and-flexible
-- learn.benefits-microsoft-endpoint-manager.7-maximizes-investment
+- learn.benefits-microsoft-endpoint-manager.4-protect-without-enrollment
 - learn.benefits-microsoft-endpoint-manager.5-increases-productivity
 - learn.benefits-microsoft-endpoint-manager.6-benefits-of-co-management
+- learn.benefits-microsoft-endpoint-manager.7-maximizes-investment
 - learn.benefits-microsoft-endpoint-manager.8-knowledge-check
 - learn.benefits-microsoft-endpoint-manager.9-summary
 badge:
