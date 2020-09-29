@@ -2,7 +2,7 @@
 uid: learn.azure.secure-network-connectivity-azure.3-protect-network-azure-firewall
 title: Protect virtual networks by using Azure Firewall
 metadata:
-  description: Learn how Azure Firewall protects resources in your Azure Virtual Networks (VNets).
+  description: Learn how Azure Firewall helps protect resources in your Azure virtual networks.
   ms.date: 09/14/2020
   author: tpetchel
   ms.author: thpetche

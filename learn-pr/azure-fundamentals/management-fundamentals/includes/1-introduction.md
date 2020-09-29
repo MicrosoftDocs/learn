@@ -6,7 +6,7 @@ In this module, you will learn about Microsoft Azure's different management tool
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+After completing this module, you'll be able to:
 
 - Choose the correct Azure management tool to address different kinds of technical needs and challenges.
 
