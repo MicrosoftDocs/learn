@@ -22,7 +22,7 @@ To confirm truffle is installed, type:
 
 That will show the version installed and present the list of commands available to use Truffle with:
 
-:::image type="content" source="media\truffle.png" alt-text="Truffle options shown in terminal":::
+:::image type="content" source="../media/truffle.png" alt-text="Truffle options shown in terminal":::
 
 ## Get started with using Truffle
 
@@ -66,7 +66,7 @@ The most popular local Ethereum blockchain is Ganache. We're going to use the [C
 Once Ganache CLI installs successfully, run:
 `ganache-cli`
 
-:::image type="content" source="media\start-ganache.png" alt-text="Start ganache-cli from the terminal":::
+:::image type="content" source="../media/start-ganache.png" alt-text="Start ganache-cli from the terminal":::
 
 Notice that there are 10 accounts generated on this blockchain that each receive 100 test Ether to use. Each account also has a corresponding private key. And there is also a mnemonic, which is a unique twelve world phrase to access the wallet and allows transactions to be made from these accounts.
 
@@ -76,4 +76,4 @@ Now run `truffle test`.
 
 In the terminal you will now see that all tests have passed.
 
-:::image type="content" source="media\truffle-test.png" alt-text="Run truffle test from the terminal":::
+:::image type="content" source="../media/truffle-test.png" alt-text="Run truffle test from the terminal":::
