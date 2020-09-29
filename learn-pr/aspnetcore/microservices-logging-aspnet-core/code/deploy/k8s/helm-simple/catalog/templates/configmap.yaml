@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: catalog-cm
+  labels:
+    app: eshop
+    service: catalog
+data:
+  # YAML omitted for brevity
+  APPINSIGHTS_INSTRUMENTATIONKEY: dc8dd6fe-033d-4be9-ad89-3c208af91f12

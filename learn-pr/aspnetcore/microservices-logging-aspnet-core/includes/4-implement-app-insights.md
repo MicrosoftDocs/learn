@@ -1,11 +1,11 @@
-For this exercise you'll make some code changes to the Catalog microservice to implement Application Insights. For some  other three microservices code changes are already implemented so you'll just have to handle the configuration.
+For this exercise you'll make some code changes to the Catalog microservice to implement Application Insights. For some other three microservices code changes are already implemented so you'll just have to handle the configuration.
 
-In this exercise you will:
+In this exercise, you will:
 
-- Create Application Insights resources for the application.
+- Create Application Insights resources for the app.
 - Enable logging to Application Insights.
 - Deploy the updated/reconfigured microservices.
-- Monitor your application from the Azure Portal.
+- Monitor your app from the Azure portal.
 
 ## Create the Application Insights resources
 
@@ -15,21 +15,44 @@ Add the Application Insights extension to Azure CLI by running this command:
 az extension add --name application-insights
 ```
 
-Run the following script to create the Application Insights resources:
+Run the following commands to create the Application Insights resources:
 
-```bash
-./create-application-insights.sh
+```azurecli
+az configure --defaults group=eshop-learn-rg location=centralus && \
+    az monitor app-insights component create --app catalog \
+        --query '{Name:name, Key:instrumentationKey}' && \
+    az monitor app-insights component create --app coupon \
+        --query '{Name:name, Key:instrumentationKey}' && \
+    az monitor app-insights component create --app ordering \
+        --query '{Name:name, Key:instrumentationKey}' && \
+    az monitor app-insights component create --app webshoppingagg \
+        --query '{Name:name, Key:instrumentationKey}'
 ```
 
-The script above creates four Application Insights resources, in the resource group you created for this module.
+The preceding commands create four Application Insights resources, in the resource group you created for this module. A variation of the following output appears:
 
-You should get an output similar to this:
+```console
+{
+  "Key": "037fb7a1-2eb5-45e8-9193-806becc426f9",
+  "Name": "catalog"
+}
+{
+  "Key": "726d19a4-2493-4c03-bdc5-817f2a7a3ffa",
+  "Name": "coupon"
+}
+{
+  "Key": "0ac4010c-9ac4-47ae-80b3-16c4d1a7889b",
+  "Name": "ordering"
+}
+{
+  "Key": "c0cde760-d563-4534-9b4f-0eac68763d40",
+  "Name": "webshoppingagg"
+}
+```
 
-:::image type="content" source="../media/create-application-insights.png" alt-text="Output from the create-application-insights script" border="true" lightbox="../media/create-application-insights.png":::
+In the preceding output, you can see four key-value pairs with the instrumentation keys, ready to be pasted into the configmaps for the catalog, coupon, ordering, and webshoppingagg Helm charts.
 
-In the image above you can see four key-value pairs with the instrumentation keys, ready to be pasted into the configmaps for the catalog, coupon, ordering, and webshoppingagg Helm charts.
-
-All four configmap files:
+All four configmap files in the *deploy/k8s/helm-simple* directory:
 
 - *catalog/templates/configmap.yaml*
 - *coupon/templates/configmap.yaml*
@@ -38,18 +61,7 @@ All four configmap files:
 
 should be changed as shown in this sample for the `catalog` chart:
 
-```yaml
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: catalog-cm
-  labels:
-    app: eshop
-    service: catalog
-data:
-  APPINSIGHTS_INSTRUMENTATIONKEY: dc8dd6fe-033d-4be9-ad89-3c208af91f12
-  #...
-```
+:::code language="yml" source="../code/deploy/k8s/helm-simple/catalog/templates/configmap.yaml" highlight="10":::
 
 > [!IMPORTANT]
 > You have to use a different instrumentation key for each microservice.
@@ -59,9 +71,9 @@ data:
 To implement Application Insights in an app:
 
 1. Add the supporting packages.
-2. Register the Application Insights telemetry services in the DI container.
-3. Add the Application Insights sink for Serilog to include log traces.
-4. Build the new image for the updated microservice.
+1. Register the Application Insights telemetry services in the DI container.
+1. Add the Application Insights sink for Serilog to include log traces.
+1. Build the new image for the updated microservice.
 
 As mentioned you'll only have to do some of those in the Catalog microservice so let's get rolling on the `src/Services/Catalog/Catalog.API` folder:
 
@@ -83,7 +95,7 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
 
    The packages are already installed in the projects so you can skip this step.
 
-2. **Register the telemetry services in the DI container**
+1. **Register the telemetry services in the DI container**
 
     You have to register the following two services in `Startup.cs`:
 
@@ -111,7 +123,7 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
     }
     ```
 
-3. **Add the Application Insights sink for Serilog**
+1. **Add the Application Insights sink for Serilog**
 
     Open up *Program.cs* and make it like this:
 
@@ -157,9 +169,8 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
 
     The lines you have to add are commented out so they'll be easy to spot.
 
->[!NOTE]
->
-> Startup logging with Application Insights [isn't directly supported](https://docs.microsoft.com/aspnet/core/fundamentals/logging/#log-during-host-construction), so it must be accomplished by using other logger. For this example we're using Serilog with the Application Insights sink, passing the instrumentation key. Although this is the simplest way to enable logging to Application Insights during startup, it can lead to losing correlation between metrics and log traces.
+> [!NOTE]
+> Startup logging with Application Insights [isn't directly supported](/aspnet/core/fundamentals/logging/#log-during-host-construction), so it must be accomplished by using other logger. For this example we're using Serilog with the Application Insights sink, passing the instrumentation key. Although this is the simplest way to enable logging to Application Insights during startup, it can lead to losing correlation between metrics and log traces.
 
 1. **Build the new image for the Catalog microservice**
 
@@ -193,7 +204,7 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
 
 1. **Redeploy the microservices**
 
-    Since you updated the Catalog and the WebAggregatyor microservices and reconfigured the other two when updating their ConfigMaps, you'll now redeploy the Catalog and WebAggregator microservices using the images from ACR and the other two from the initial repository, **eshopdev**.
+    Since you updated the Catalog and the WebAggregator microservices and reconfigured the other two when updating their ConfigMaps, you'll now redeploy the Catalog and WebAggregator microservices using the images from ACR and the other two from the initial repository, **eshopdev**.
 
     Update the environment with the relevant environment variables from the initial deployment, by running this command.
 
