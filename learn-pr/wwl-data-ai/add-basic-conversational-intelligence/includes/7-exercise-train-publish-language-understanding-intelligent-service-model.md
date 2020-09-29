@@ -62,7 +62,7 @@ This exercise will cover the aspects of using a code environment to train and pu
 
 :::zone pivot="csharp"
 
-1. Using the same Visual Studio Codespace that you created in this module, locate the **Program.cs** file and add the following code at the end, to perform the training task.
+1. Using the same Visual Studio Code project that you created in this module, locate the **Program.cs** file and add the following code at the end, to perform the training task.
 
    ```csharp
    async static Task Train_App(LUISAuthoringClient client, ApplicationInfo app)
@@ -136,7 +136,7 @@ This exercise will cover the aspects of using a code environment to train and pu
 
 :::zone pivot="python"
 
-1. Using the same Visual Studio Codespace that you created in this module, add the following code to perform the training task.
+1. Using the same Visual Studio Code project that you created in this module, add the following code to perform the training task.
 
    ```python
    def train_app(app_id, app_version):
