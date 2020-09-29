@@ -76,7 +76,7 @@ Both exercises contain the same commands and content, so you can choose the opti
     ```sql
     CREATE DATABASE SCOPED CREDENTIAL [https://azuresqlworkshopsa.blob.core.windows.net/data/]
     WITH IDENTITY = 'SHARED ACCESS SIGNATURE',
-    SECRET = 'sv=2019-02-02&ss=bfqt&srt=sco&sp=rcp&se=2025-01-23T00:09:52Z&st=2020-01-22T16:09:52Z&spr=https&sig=Ro98PLwsmMqBsH9T1UUAzqxM3KJJLKFLshRlnfLYnBI%3D';
+    SECRET = 'st=2020-09-28T22%3A05%3A27Z&se=2030-09-29T22%3A05%3A00Z&sp=rl&sv=2018-03-28&sr=c&sig=52WbuSIJCWyjS6IW6W0ILfIpqh4wLMXmOlifPyOetZI%3D';
     GO
     ```
 
