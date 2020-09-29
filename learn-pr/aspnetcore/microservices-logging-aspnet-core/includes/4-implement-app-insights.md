@@ -9,62 +9,62 @@ In this exercise, you will:
 
 ## Create the Application Insights resources
 
-Add the Application Insights extension to Azure CLI by running this command:
+1. Add the Application Insights extension to Azure CLI by running this command:
 
-```azurecli
-az extension add --name application-insights
-```
+    ```azurecli
+    az extension add --name application-insights
+    ```
 
-Run the following commands to create the Application Insights resources:
+1. Run the following commands to create the Application Insights resources:
 
-```azurecli
-az configure --defaults group=eshop-learn-rg location=centralus && \
-    az monitor app-insights component create --app catalog \
-        --query '{Name:name, Key:instrumentationKey}' && \
-    az monitor app-insights component create --app coupon \
-        --query '{Name:name, Key:instrumentationKey}' && \
-    az monitor app-insights component create --app ordering \
-        --query '{Name:name, Key:instrumentationKey}' && \
-    az monitor app-insights component create --app webshoppingagg \
-        --query '{Name:name, Key:instrumentationKey}'
-```
+    ```azurecli
+    az configure --defaults group=eshop-learn-rg location=centralus && \
+        az monitor app-insights component create --app catalog \
+            --query '{Name:name, Key:instrumentationKey}' && \
+        az monitor app-insights component create --app coupon \
+            --query '{Name:name, Key:instrumentationKey}' && \
+        az monitor app-insights component create --app ordering \
+            --query '{Name:name, Key:instrumentationKey}' && \
+        az monitor app-insights component create --app webshoppingagg \
+            --query '{Name:name, Key:instrumentationKey}'
+    ```
 
-The preceding commands create four Application Insights resources, in the resource group you created for this module. A variation of the following output appears:
+    The preceding commands create four Application Insights resources, in the resource group you created for this module. A variation of the following output appears:
 
-```console
-{
-  "Key": "037fb7a1-2eb5-45e8-9193-806becc426f9",
-  "Name": "catalog"
-}
-{
-  "Key": "726d19a4-2493-4c03-bdc5-817f2a7a3ffa",
-  "Name": "coupon"
-}
-{
-  "Key": "0ac4010c-9ac4-47ae-80b3-16c4d1a7889b",
-  "Name": "ordering"
-}
-{
-  "Key": "c0cde760-d563-4534-9b4f-0eac68763d40",
-  "Name": "webshoppingagg"
-}
-```
+    ```console
+    {
+      "Key": "037fb7a1-2eb5-45e8-9193-806becc426f9",
+      "Name": "catalog"
+    }
+    {
+      "Key": "726d19a4-2493-4c03-bdc5-817f2a7a3ffa",
+      "Name": "coupon"
+    }
+    {
+      "Key": "0ac4010c-9ac4-47ae-80b3-16c4d1a7889b",
+      "Name": "ordering"
+    }
+    {
+      "Key": "c0cde760-d563-4534-9b4f-0eac68763d40",
+      "Name": "webshoppingagg"
+    }
+    ```
 
-In the preceding output, you can see four key-value pairs with the instrumentation keys, ready to be pasted into the configmaps for the catalog, coupon, ordering, and webshoppingagg Helm charts.
+    In the preceding output, you can see four key-value pairs with the instrumentation keys, ready to be pasted into the configmaps for the catalog, coupon, ordering, and webshoppingagg Helm charts.
 
-All four configmap files in the *deploy/k8s/helm-simple* directory:
+1. In the *deploy/k8s/helm-simple* directory, update the following files to include the instrumentation key:
 
-- *catalog/templates/configmap.yaml*
-- *coupon/templates/configmap.yaml*
-- *ordering/templates/configmap.yaml*
-- *webshoppingagg/templates/configmap.yaml*
+    - *catalog/templates/configmap.yaml*
+    - *coupon/templates/configmap.yaml*
+    - *ordering/templates/configmap.yaml*
+    - *webshoppingagg/templates/configmap.yaml*
 
-should be changed as shown in this sample for the `catalog` chart:
+    For example, update the `catalog` chart as follows:
 
-:::code language="yml" source="../code/deploy/k8s/helm-simple/catalog/templates/configmap.yaml" highlight="10":::
+    :::code language="yml" source="../code/deploy/k8s/helm-simple/catalog/templates/configmap.yaml" highlight="9":::
 
-> [!IMPORTANT]
-> You have to use a different instrumentation key for each microservice.
+    > [!IMPORTANT]
+    > Each microservice requires a different instrumentation key.
 
 ## Enable logging to Application Insights
 
@@ -75,7 +75,7 @@ To implement Application Insights in an app:
 1. Add the Application Insights sink for Serilog to include log traces.
 1. Build the new image for the updated microservice.
 
-As mentioned you'll only have to do some of those in the Catalog microservice so let's get rolling on the `src/Services/Catalog/Catalog.API` folder:
+As mentioned you'll only have to do some of those in the Catalog microservice so let's get rolling on the *src/Services/Catalog/Catalog.API* directory:
 
 1. **Add the Application Insights supporting packages**
 
@@ -85,7 +85,7 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
    - Microsoft.ApplicationInsights.Kubernetes - 1.1.1
    - Serilog.Sinks.ApplicationInsights - 3.1.0
 
-   You can install them with the Visual Studio UI or using the following commands on each of the projects:
+   You can install them with Visual Studio or using the following commands on each of the projects:
 
    ```dotnetcli
    dotnet add package Microsoft.ApplicationInsights.AspNetCore --version 2.12.1 && \
@@ -97,7 +97,7 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
 
 1. **Register the telemetry services in the DI container**
 
-    You have to register the following two services in `Startup.cs`:
+    You have to register the following two services in *Startup.cs*:
 
     ```csharp
     public void ConfigureServices(IServiceCollection services)
@@ -125,7 +125,7 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
 
 1. **Add the Application Insights sink for Serilog**
 
-    Open up *Program.cs* and make it like this:
+    Open *Program.cs* and make it like this:
 
     ```csharp
     using Microsoft.ApplicationInsights.Extensibility;
