@@ -11,7 +11,7 @@ In this module, you'll learn about the different Azure networking options and th
 After completing this module, you'll be able to:
 
 - Describe the core networking resources that are available in Azure.
-- Describe the benefits and usage of Azure Virtual Networks, Azure VPN Gateway, and Azure ExpressRoute.
+- Describe the benefits and usage of Azure Virtual Network, Azure VPN Gateway, and Azure ExpressRoute.
 
 ## Prerequisites
 

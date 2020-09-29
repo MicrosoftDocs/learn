@@ -30,7 +30,7 @@ Key features of policy-based VPN gateways in Azure include:
 
 ### Route-based VPNs
 
-If defining which IP addresses are behind each tunnel is too cumbersome, route-based gateways can be used. With route-based gateways, IPSec tunnels are modeled as a network interface or virtual tunnel interface (VTI). IP routing (either static routes or dynamic routing protocols) decides which one of these tunnel interfaces to use when sending each packet. Route-based VPNs are the preferred connection method for on-premises devices. They're more resilient to topology changes such as the creation of new subnets.
+If defining which IP addresses are behind each tunnel is too cumbersome, route-based gateways can be used. With route-based gateways, IPSec tunnels are modeled as a network interface or virtual tunnel interface. IP routing (either static routes or dynamic routing protocols) decides which one of these tunnel interfaces to use when sending each packet. Route-based VPNs are the preferred connection method for on-premises devices. They're more resilient to topology changes such as the creation of new subnets.
 
 Use a route-based VPN gateway if you need any of the following types of connectivity:
 
@@ -82,7 +82,7 @@ You'll need these Azure resources before you can deploy an operational VPN gatew
 
    You can create multiple connections.
 
-The following diagram shows this combination of resources and their relationships to help you better understand what's required to deploy a VPN gateway:
+The following diagram shows this combination of resources and their relationships to help you better understand what's required to deploy a VPN gateway.
 
 [![Visualization of resource requirements for a VPN gateway.](../media/resource-requirements-for-vpn-gateway.png)](../media/resource-requirements-for-vpn-gateway-expanded.png#lightbox)
 

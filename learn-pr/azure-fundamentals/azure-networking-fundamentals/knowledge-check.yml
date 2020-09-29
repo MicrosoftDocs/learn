@@ -37,7 +37,7 @@ quiz:
     - content: "Site-to-site virtual private network"
       isCorrect: true
       explanation: "A site-to-site virtual private network isn't an ExpressRoute model."
-    - content: "Point-to-point Ethernet Connection"
+    - content: "Point-to-point Ethernet connection"
       isCorrect: false
       explanation: "Point-to-point Ethernet connection is an ExpressRoute model."
     - content: "CloudExchange colocation"

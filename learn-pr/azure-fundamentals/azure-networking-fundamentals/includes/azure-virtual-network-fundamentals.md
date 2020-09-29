@@ -1,6 +1,6 @@
 Tailwind Traders has an on-premises datacenter that you plan to keep, but you want to use Azure to offload peak traffic by using virtual machines (VMs) hosted in Azure. You want to keep your existing IP addressing scheme and network appliances while ensuring that any data transfer is secure.
 
-Azure virtual networking can help you reach your goals.
+Using Azure Virtual Network for your virtual networking can help you reach your goals.
 
 ## What is Azure virtual networking?
 
@@ -22,13 +22,13 @@ Azure virtual networks provide the following key networking capabilities:
 
 ### Isolation and segmentation
 
-Azure allows you to create multiple isolated virtual networks. When you set up a virtual network, you define a private Internet Protocol (IP) address space by using either public or private IP address ranges. You can divide that IP address space into subnets and allocate part of the defined address space to each named subnet.
+Virtual Network allows you to create multiple isolated virtual networks. When you set up a virtual network, you define a private IP address space by using either public or private IP address ranges. You can divide that IP address space into subnets and allocate part of the defined address space to each named subnet.
 
-For name resolution, you can use the name resolution service that's built in to Azure. You also can configure the virtual network to use either an internal or an external Domain Name System (DNS) server.
+For name resolution, you can use the name resolution service that's built in to Azure. You also can configure the virtual network to use either an internal or an external DNS server.
 
 ### Internet communications
 
-A VM in Azure can connect to the internet by default. You can enable incoming connections from the internet by defining a public IP address or a public load balancer. For VM management, you can connect via the Azure CLI, Remote Desktop Protocol (RDP), or Secure Shell (SSH).
+A VM in Azure can connect to the internet by default. You can enable incoming connections from the internet by defining a public IP address or a public load balancer. For VM management, you can connect via the Azure CLI, Remote Desktop Protocol, or Secure Shell.
 
 ### Communicate between Azure resources
 

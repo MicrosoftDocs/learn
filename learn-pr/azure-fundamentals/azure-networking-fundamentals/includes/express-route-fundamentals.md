@@ -6,8 +6,8 @@ As part of your work for Tailwind Traders, you should understand what Azure Expr
 
 Throughout this unit, we'll focus on two different layers of the Open Systems Interconnection (OSI) model:
 
-- **Layer 2 (L2)**: This layer is the _Data Link Layer_, which provides node-to-node communication between two nodes on the same network.
-- **Layer 3 (L3)**: This layer is the _Network Layer_, which provides addressing and routing between nodes on a multi-node network.
+- **Layer 2 (L2)**: This layer is the _data-link layer_, which provides node-to-node communication between two nodes on the same network.
+- **Layer 3 (L3)**: This layer is the _network layer_, which provides addressing and routing between nodes on a multi-node network.
 
 ## Features and benefits of ExpressRoute
 
@@ -52,7 +52,7 @@ ExpressRoute supports three models that you can use to connect your on-premises 
 
 ### Colocation at a cloud exchange
 
-Colocated providers can normally offer both Layer 2 and Layer 3 connections between your infrastructure, which might be located in the colocation facility, and the Microsoft cloud. For example, if your datacenter is colocated at a cloud exchange such as an internet service provider (ISP), you can request a virtual cross-connection to the Microsoft cloud.
+Colocated providers can normally offer both Layer 2 and Layer 3 connections between your infrastructure, which might be located in the colocation facility, and the Microsoft cloud. For example, if your datacenter is colocated at a cloud exchange such as an ISP, you can request a virtual cross-connection to the Microsoft cloud.
 
 ### Point-to-point Ethernet connection
 
@@ -62,7 +62,7 @@ Point-to-point connections provide Layer 2 and Layer 3 connectivity between your
 
 With any-to-any connectivity, you can integrate your wide area network (WAN) with Azure by providing connections to your offices and datacenters. Azure integrates with your WAN connection to provide a connection like you would have between your datacenter and any branch offices.
 
-With any-to-any connections, all WAN providers offer Layer 3 connectivity. For example, if you already use Multiprotocol Label Switching (MPLS) to connect to your branch offices or other sites in your organization, an ExpressRoute connection to Microsoft behaves like any other location on your private WAN.
+With any-to-any connections, all WAN providers offer Layer 3 connectivity. For example, if you already use Multiprotocol Label Switching to connect to your branch offices or other sites in your organization, an ExpressRoute connection to Microsoft behaves like any other location on your private WAN.
 
 ## Security considerations
 
