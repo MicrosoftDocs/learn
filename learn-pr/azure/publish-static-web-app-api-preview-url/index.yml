@@ -37,7 +37,7 @@ units:
   - learn.azure.publish-static-web-app-api-preview-url.1-introduction
   - learn.azure.publish-static-web-app-api-preview-url.2-exercise-get-started
   - learn.azure.publish-static-web-app-api-preview-url.3-build-api
-  - learn.azure.publish-static-web-app-api-preview-url.4-exercise-func-app
+  - learn.azure.publish-static-web-app-api-preview-url.4-exercise-function-app
   - learn.azure.publish-static-web-app-api-preview-url.5-action
   - learn.azure.publish-static-web-app-api-preview-url.6-exercise-action
   - learn.azure.publish-static-web-app-api-preview-url.7-knowledge-check

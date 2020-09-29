@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.publish-static-web-app-api-preview-url.4-exercise-func-app
+uid: learn.azure.publish-static-web-app-api-preview-url.4-exercise-function-app
 metadata:
   title: Exercise - Create an Azure Functions project
-  description: Exercise - Create an Azure Functions project
+  description: Use the Azure Functions tools to build an API for a static site
   ms.date: 09/25/2020
   author: johnpapa
   ms.author: jopapa
@@ -12,4 +12,4 @@ metadata:
 title: Exercise - Create an Azure Functions project
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-exercise-func-app.md)]
+  [!include[](includes/4-exercise-function-app.md)]
