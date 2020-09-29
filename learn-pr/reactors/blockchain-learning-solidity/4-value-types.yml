@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore value types
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/4-value-types.md)]
