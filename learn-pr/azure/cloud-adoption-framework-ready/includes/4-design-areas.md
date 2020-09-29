@@ -29,13 +29,13 @@ Subscriptions should be used as a unit of management and scale aligned with busi
 
 Azure Policy should be used to provide guardrails and ensure continued compliance with your organization's platform, along with the applications deployed onto it. Azure Policy also provides application owners with sufficient freedom and a secure unhindered path to the cloud.
 
-**Design impact:** Azure Policy provides a cloud-first governance approach by enforcing sound policies. It is also used in a DeployIfNotExists capacity to automatically deploy critical architecture elements if they are deleted or changed, integrating the CI/CD pipeline for environment deployment with the central governance tooling.
+**Design impact:** Azure Policy provides a cloud-first governance approach by enforcing sound policies. It is also used in a DeployIfNotExists capacity to automatically deploy critical architecture elements if they are deleted or changed, integrating the continuous integration/continuous development pipeline for deploying environments with the central governance tooling.
 
 ### Single control and management plane
 
 <!-- cSpell:ignore AppOps -->
 
-Enterprise-scale architecture shouldn't consider any abstraction layers, such as customer-developed portals or tooling. It should provide a consistent experience for both centrally managed operation teams and dedicated workload operations teams. Azure provides a unified and consistent control plane across all Azure resources and provisioning channels subject to role-based access and policy-driven controls. Azure can be used to establish a standardized set of policies and controls for governing the entire enterprise estate.
+Enterprise-scale architecture shouldn't consider any abstraction layers such as customer-developed portals or tooling. It should provide a consistent experience for both centrally managed operation teams and dedicated workload operations teams. Azure provides a unified and consistent control plane across all Azure resources and provisioning channels subject to role-based access and policy-driven controls. Azure can be used to establish a standardized set of policies and controls for governing the entire enterprise estate.
 
 **Design impact:** Role-based access control and Azure Policy are used to ensure that all workload deployments adhere to separation of duties and other governance requirements.
 

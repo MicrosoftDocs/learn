@@ -12,7 +12,7 @@ To accelerate your early adoption efforts, we suggest minimizing the number of b
 - Plan for parallel maturity of Govern, Security, and Manage methodologies.
 
 > [!CAUTION]
-> While this approach meets minimum technical standards, it may not initially meet your minimum operational standards. If security, governance, or operations management requirements must be met prior to your first adoption effort, then you might need to start executing that methodology prior to adoption. For an accelerated approach to an enterprise-ready environment, consider the options within **Start with Enterprise-Scale** implementation.
+> While this approach meets minimum technical standards, it may not initially meet your minimum operational standards. If security, governance, or operations management requirements must be met prior to your first adoption effort, then you might need to start executing that methodology prior to adoption. For an accelerated approach to an enterprise-ready environment, consider the options within **Start with Enterprise-scale** implementation.
 
 ## Validate subscription scaling decisions
 
@@ -20,13 +20,13 @@ In the prior unit of this Learn module, you assigned the initial blueprint to a 
 
 ### First two subscriptions
 
-At a minimum, you'll likely need two subscriptions: production and nonproduction.
+At a minimum, you'll likely need two subscriptions: production and -production.
 
 :::image type="content" source="../media/initial-subscription-model.png" alt-text="An initial subscription model showing keys next to boxes labeled production and nonproduction." border="false":::
 _Figure 1: An initial subscription model with keys next to **production** and **nonproduction** boxes._
 
 - Create one Azure subscription to contain your production workloads.
-- Create a second subscription to serve as your non-production (dev/test) environment, using an [Azure Dev/Test offer](https://azure.microsoft.com/pricing/dev-test?azure-portal=true) for lower pricing.
+- Create a second subscription to serve as your nonproduction (dev/test) environment, using an [Azure Dev/Test offer](https://azure.microsoft.com/pricing/dev-test?azure-portal=true) for lower pricing.
 
 This approach has many benefits:
 

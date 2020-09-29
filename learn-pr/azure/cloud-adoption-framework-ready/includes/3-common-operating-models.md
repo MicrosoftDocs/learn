@@ -17,7 +17,7 @@ The following characteristics aid in aligning to one of the common operating mod
 
 **Organization:** Organization of people drives a number of operations decisions. Do you have a small IT team cover all of your portfolio? Are there separate teams dedicated to functions like security, governance, operations? Are teams organized around individual workloads? Are you bound by rigid third-party compliance standards that are reviewed by an auditor or other compliance bodies?
 
-**Portfolio scope:** The size of your portfolio and where you focus operations is another important consideration for each operating model. Do you manage a large complex multicloud portfolio of workloads? Can the portfolio be supported by a single cloud platform? Do all of your workloads need to live in a single production subscription? Do you focus on workload-specific operations with no central support? Learn more about these terms in the [portfolio hierarchy article](https://docs.microsoft.com/azure/cloud-adoption-framework/reference/fundamental-concepts/hosting-hierarchy?azure-portal=true).
+**Portfolio scope:** The size of your portfolio and where you focus operations is another important consideration for each operating model. Do you manage a large complex multi-cloud portfolio of workloads? Can the portfolio be supported by a single cloud platform? Do all of your workloads need to live in a single production subscription? Do you focus on workload-specific operations with no central support? Learn more about these terms in the [portfolio hierarchy article](https://docs.microsoft.com/azure/cloud-adoption-framework/reference/fundamental-concepts/hosting-hierarchy?azure-portal=true).
 
 **Accountability (separation of duties):** When it comes to technology, there's always something that can go wrong. That's why few teams sign up for a 100% uptime SLA. When things break or aren't performing as expected, who's accountable for taking the call? Who's accountable for proactive fixes to minimize outage? Who's accountable for cloud economics and ongoing budgets? Accountability (and associated access requirements) drives a number of environmental design decisions.
 
@@ -57,13 +57,13 @@ Centralized operations is the most common operations model in information techno
 :::image type="content" source="../media/centralized-operations.png" alt-text="Image explaining centralized operations focuses on a smaller number of landing zones with embedded foundational utilities." border="false":::
 _Figure 3: Centralized operations focuses on a smaller number of landing zones with embedded foundational utilities._
 
-Management of non-production environments vary significantly from organization to organization. But in a centralized operations model, even the non-production environments are likely to be constrained by governance and security requirements.
+Management of no-production environments vary significantly from organization to organization. But in a centralized operations model, even the nonproduction environments are likely to be constrained by governance and security requirements.
 
 **Strategic priority:** When control and stability in the business are more important than innovation, this model tends to be the highest trend. Central operations is often seen in larger organizations or stable organizations. This model is very common when party compliance requirements-driven environmental decisions.
 
 **Organization:** Teams are organized around functions or processes first. In smaller organizations, central IT is home for security, governance, operations, and infrastructure focused team members. As organizations grow, those functions may spin out into teams dedicated to each function.
 
-**Portfolio scope:** Centralized operations teams tend to focus on one landing zone or a small number of landing zones. Within those landing zones, foundational utilities are deployed to support a combination of workloads in each landing zone. This operations model tends to create scale challenges when supporting robust cloud foundations and multicloud portfolios.
+**Portfolio scope:** Centralized operations teams tend to focus on one landing zone or a small number of landing zones. Within those landing zones, foundational utilities are deployed to support a combination of workloads in each landing zone. This operations model tends to create scale challenges when supporting robust cloud foundations and multi-cloud portfolios.
 
 **Accountability (separation of duties):** In this operations model, central IT or central operations are typically accountable for all assets in production. Separation of duties tends to focus on environment isolation, which prevents workload-specific teams from interacting with production assets.
 
