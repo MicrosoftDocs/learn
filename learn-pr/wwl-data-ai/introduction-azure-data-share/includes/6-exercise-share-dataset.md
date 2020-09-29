@@ -20,11 +20,11 @@ The next step is to share a dataset with Azure Data Share to an organization tha
 
     *Share type:*
 
-    Specify what type of share you want to use which determines how your data will be shared: i.e. Snapshot or In-Place
+    Specify what type of share you want to use which determines how your data will be shared: that is Snapshot or In-Place.
 
     *Description:*
 
-    Describe the dataset that will be shared and note that this description will be visible to whom you’re sending the datashare to. 
+    Describe the dataset that will be shared and note that this description will be visible to whom you’re sending the data share to. 
 
     *Term of use:*
 
@@ -42,7 +42,7 @@ The next step is to share a dataset with Azure Data Share to an organization tha
 
     Here you can select the type of dataset that you would like to add. Depending on if you choose Snapshot or In-Place sharing you’ll see different dataset type possibilities.
 
-6.	In this exercise we are going to share a dataset from an Azure Data Lake Storage Gen 2 account. 
+6.	In this exercise, we are going to share a dataset from an Azure Data Lake Storage Gen 2 account. 
 
     Therefore, select Azure Data Lake Storage Gen 2. 
 
@@ -52,7 +52,7 @@ The next step is to share a dataset with Azure Data Share to an organization tha
 
     ![Azure Data Share add Azure Data Lake Storage Gen2](../media/ADSAddDatasetADLSGen2.png)
 
-8.	Select the container in which the files are located in your ADLS Gen 2 of the dataset that you would like to share. You can choose to share the whole container, or if you double click on the container itself, you can specify the file you’d like to share.
+8.	Select the container in which the files are located in your ADLS Gen 2 of the dataset that you would like to share. You can choose to share the whole container, or if you double-click on the container itself, you can specify the file you’d like to share.
 
     ![Azure Data Share select container in Azure Data Lake Storage Gen2](../media/ADSContainerADLSForDataSetShare.png)
 
@@ -62,7 +62,7 @@ The next step is to share a dataset with Azure Data Share to an organization tha
 
     If you are certain that the dataset that you’ve specified can be added as a dataset to your Azure Data Share, then navigate to Add Datasets. 
 
-10.	Once the dataset is added you’ll be redirected to the following screen:
+10.	Once the dataset is added, you’ll be redirected to the following screen:
 
     ![Azure Data Share Dataset Overview Page](../media/ADSDatasetAddedFromADLS.png)
 
@@ -74,7 +74,7 @@ The next step is to share a dataset with Azure Data Share to an organization tha
 
     Since we have selected a snapshot type share, the snapshot schedule can be configured in this tab, if you want to provide regular updates of the dataset to your data consumer
 
-    In this tab you can select a start time and a recurrence interval. This will specify how many times and at what time the dataset will be snapshotted to your data consumer. 
+    In this tab, you can select a start time and a recurrence interval. This will specify how many times and at what time the dataset will be snapshotted to your data consumer. 
 
     ![Azure Data Share Dataset Schedule Settings](../media/ADSSettingTimeInterval.png)
 

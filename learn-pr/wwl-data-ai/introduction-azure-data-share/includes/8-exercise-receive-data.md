@@ -1,4 +1,4 @@
-There are two ways to receive a shared dataset and accept the invitation. In this exercise we are going to accept an invitation from your email. 
+There are two ways to receive a shared dataset and accept the invitation. In this exercise, we are going to accept an invitation from your email. 
 
 Once you’ve sent a data share to a recipient (i.e. data consumer), this recipient will have an email in their inbox with an invitation. 
 
@@ -7,11 +7,11 @@ This is how the invitation looks like:
 ![Email Invitation from Azure Data Share](../media/ADSInvitationEmailExample.png)
 
 
-1. To open the invitation click on ‘View invitation’ to see the invitation in Azure. 
+To open the invitation click on ‘View invitation’ to see the invitation in Azure. 
 
-You’ll be redirected to the following screen in the Azure Portal:
+You’ll be redirected to the following screen in the Azure portal:
 
-![Overview of Invitation in Azure Portal](../media/ADSViewInvitationInAzurePortal.png)
+![Overview of Invitation in Azure portal](../media/ADSViewInvitationInAzurePortal.png)
 
 Select the share that you would like to view and you’ll be redirected to the following page:
 
@@ -30,12 +30,12 @@ Navigate to accept and configure:
 
 ![Accept and Configure Data Share Invitation](../media/ADSAcceptAndConfigure.png)
 
-Once you’ve navigated to accept and configure, the agreement of terms of use are in place and the location of the share will be created. Since we have created a snapshot based sharing, the screen also asks you to select a target storage account for the data to be copied into. If you don’t want to accept the share  navigate to reject, but for the purpose of this exercise we are going to accept and configure. 
+Once you’ve navigated to accept and configure, the agreement of terms of use are in place and the location of the share will be created. Since we have created a snapshot-based sharing, the screen also asks you to select a target storage account for the data to be copied into. If you don’t want to accept the share  navigate to reject, but for the purpose of this exercise we are going to accept and configure. 
 
 You’ll be redirected to the following screen:
 ![Details Dataset after Acceptance Invitation](../media/ADSDetailsInvitationAcceptanceDatasetShare.png)
 
-As you can see in the pop up, we need to configure datasets to receive data into the target datastore, and since we used snapshot based sharing, we can configure snapshot schedule for automation of updates. 
+As you can see in the pop-up, we need to configure datasets to receive data into the target datastore, and since we used snapshot-based sharing, we can configure snapshot schedule for automation of updates. 
 
 Navigate to ‘Configure Datasets to receive data into your target data store ‘ and click on Datasets.  You’ll be directed to the following place:
 
@@ -45,7 +45,7 @@ Select the dataset that you are going to map to the target store, and navigate t
 
 ![Map Dataset to Target](../media/ADSMaptoTarget.png)
 
-Under Map Datasets to target,  select the subscription, resource group and storage account that you’d like to receive the dataset into. For this purpose we are going to receive the dataset into an Azure Data Lake Storage Account Gen 2:
+Under Map Datasets to target,  select the subscription, resource group and storage account that you’d like to receive the dataset into. For this purpose, we are going to receive the dataset into an Azure Data Lake Storage Account Gen 2:
 
 ![Map Dataset to Target Settings](../media/ADSMaptoTargetSettings.png)
 
@@ -57,7 +57,7 @@ You’ll be redirected to the following screen:
 
 ![Overview Map Dataset to Target Settings](../media/ADSDatasetOverviewMapToTarget.png)
 
-Now that you have set up a target storage account in which you’re going to receive the dataset into it’s important to set up a regular update schedule of the data since we have enabled snapshot based sharing. 
+Now that you have set up a target storage account in which you’re going to receive the dataset into it’s important to set up a regular update schedule of the data since we have enabled snapshot-based sharing. 
 
 Navigate to Configure Snapshot Schedule to receive automated updates. 
 
@@ -67,9 +67,9 @@ You’ll be redirected to the following page where you would need to navigate to
 
 If you want to trigger a snapshot, navigate to ‘Received Shares’ to the ‘Details tab’ and click on ‘Trigger snapshot’
 
-You have 2 possibilities for triggering snapshots, either Full snapshot, or incremental snapshot of the data. 
+You have two possibilities for triggering snapshots, either Full snapshot, or incremental snapshot of the data. 
 
-When you haven’t triggered a snapshot before, and this is the first time receiving data from the data provider, select a full copy :
+When you haven’t triggered a snapshot before, and this is the first time receiving data from the data provider, select a full copy:
 
 ![Trigger Snapshot ](../media/ADSTriggerSnapshotDaily.png)
 
@@ -79,4 +79,4 @@ Select ‘ Datasets’ and click on the hyperlink of the ‘Target Path’ that 
 
 ![Target Path of Dataset copy ](../media/ADSTargetPathCopyDataSet.png)
 
-Now you’ve successfully accepted an data share invitation, set up a target storage account and triggered a snapshot of the data into your target storage account. 
+Now you’ve successfully accepted a data share invitation, set up a target storage account and triggered a snapshot of the data into your target storage account. 

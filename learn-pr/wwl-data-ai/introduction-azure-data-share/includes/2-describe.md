@@ -1,8 +1,8 @@
 The key strategic asset that many organizations are focused on today is data, and there is a need to share or receive this in a safe and secure way with third parties, whether that is between departments within the organization, or externally with customers and partners. 
 
-Many examples in which data sharing is often set up by these organizations is through the sending of emails that include attached excel files, or by building external API’s, and in some cases, configuring access to databases, just to name a few. 
+Many examples in which data sharing is often set up by these organizations is through the sending of emails that include attached excel files, or by building external APIs, and in some cases, configuring access to databases, just to name a few. 
 
-The challenges that lie in these types of setup’s are in the monitoring, updating, maintaining, as well as securing these data sharing and receiving relationships. Sharing and receiving data through setting up API’s, is sometimes considered an expensive solution, and if large scale data sharing is required, it is usually associated with a high management overhead. 
+The challenges that lie in these types of setup’s are in the monitoring, updating, maintaining, as well as securing these data sharing and receiving relationships. Sharing and receiving data through setting up APIs, is sometimes considered an expensive solution, and if large-scale data sharing is required, it is associated with a high management overhead. 
 
 Azure Data Share, might be the answer to your solution, as it enables your organization to share data with or receive data in a secure and simple way. As a data provider, you can share data, stay in control and can manage and monitor the data that you have shared. You can also manage when you share data, and with whom you’ve shared it with.
 

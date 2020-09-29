@@ -2,7 +2,7 @@ Now you’ve set up a data share, sent a data share and received a data share, i
 
 If you want to view the status of the invitations that have been sent out,  navigate to ‘Sent Shares’:
 
-![Sent Shares ](../media/ ADSSentShares.png)
+![Sent Shares ](../media/ADSSentShares.png)
 
 Click on the share you want to see the invitation status of and go to invitations:
 
@@ -16,7 +16,7 @@ If you want to revoke the future updates of the dataset that you’ve shared, yo
 
 ![Revoke Access ](../media/ADSRevokeAccess.png)
 
-If you’ve shared a snapshot based Data share, you can monitor by navigating to the ‘sent shares’ and then history tab, to be able to check when data is copied, the frequency and duration/status of the snapshot. 
+If you’ve shared a snapshot-based Data share, you can monitor by navigating to the ‘sent shares’ and then history tab, to be able to check when data is copied, the frequency and duration/status of the snapshot. 
 
 ![History Sent Share ](../media/ADSHistorySentShare.png)
 
@@ -24,7 +24,7 @@ You can check the same history for the received shares by navigating to ‘Recei
 
 ![History Received Share ](../media/ADSReceivedShareHistory.png)
 
-If you click on the the run start date, you have the possibility to view more details about the snapshot:
+If you click on the run start date, you have the possibility to view more details about the snapshot:
 
 ![Details of Snapshot ](../media/ADSRunStartDetails.png)
 
@@ -34,11 +34,11 @@ Navigate to ‘Monitoring’ and click on Diagnostic Settings, which will redire
 
 ![Diagnostic Setting ](../media/ADSDiagnosticSetting.png)
 
-Select ‘Add diagnostic setting’ and select the log data or events that is of your interest including the storage of where to save or sent them. 
+Select ‘Add diagnostic setting’ and select the log data or events that are of your interest including the storage of where to save or sent them. 
 
 ![Add Diagnostic Setting ](../media/ADSAddDiagnosticSetting.png)
 
-Specify the Diagnostic setting name ( the name of the file you’re going to save for the diagnostics) In addition, specify the category of what you want to save, and specifiy the destination details of where to save/sent it. 
+Specify the Diagnostic setting name (the name of the file you’re going to save for the diagnostics) In addition, specify the category of what you want to save, and specify the destination details of where to save/sent it. 
 
 ![Specify Diagnostic Name ](../media/ADSSpecifyDiagnosticName.png)
 

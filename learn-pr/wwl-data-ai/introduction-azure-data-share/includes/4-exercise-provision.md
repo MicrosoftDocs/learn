@@ -1,12 +1,12 @@
 You have two possibilities to provision an Azure Data Share. 
 
-In the below exercise you’re going to create an Azure Data Share from the portal. 
+In the below exercise, you’re going to create an Azure Data Share from the portal. 
 
-1.	Navigate to the Azure Portal and on the left-hand side, go to Create a Resource:
+1.	Navigate to the Azure portal and on the left-hand side, go to Create a Resource:
 
     ![Create a Resource](../media/ADSAzureMarketPlaceCreateResource.png)
 
-2.	You’ll be directed to the Azure Market Place, where you type in the search : Data Share
+2.	You’ll be directed to the Azure Market Place, where you type in the search: 'Data Share'
 
     ![Search for Data Share](../media/ADSAzureMarketPlaceSearch.png)
 
@@ -22,7 +22,7 @@ In the below exercise you’re going to create an Azure Data Share from the port
 
     *Resource Group:*
 
-    If you have an existing resource group in which you would want to create the Azure Data Share in, select it from the drop down menu for the resource group that you’d like to deploy the Data Share into. 
+    If you have an existing resource group in which you would want to create the Azure Data Share in, select it from the drop-down menu for the resource group that you’d like to deploy the Data Share into. 
 
     If you don’t have an existing Resource group,  navigate through ‘Create new’, and create a new resource group. 
 

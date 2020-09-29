@@ -6,17 +6,17 @@ Well, Azure Data Share is there to solve this problem for you. The company that 
 
 First of all,    the company that wants to share data with you, needs to invite you. There are two ways to open the invitation:
 
-1.	**Open Invitation from email:**
+*	*Open Invitation from email:*
 
-    In order to open the invitation from email, you need to check your email inbox for an invitation from your data provider ( i.e. the company that is sending you the data share) which you can find easily by checking the title: Azure Data share invitation from: yourdataprovider@domain.com. 
+    In order to open the invitation from email, you need to check your email inbox for an invitation from your data provider (i.e. the company that is sending you the data share) which you can find easily by checking the title: Azure Data share invitation from: yourdataprovider@domain.com. 
 
-2.	**Open invitation from Azure Portal:**
+*	*Open invitation from Azure portal:*
 
-    In order to open the invitation from the Azure Portal, you can search in the Azure Portal for Data Share Invitations where you will be taken into a list of data share invitations that you can accept/reject. 
+    In order to open the invitation from the Azure portal, you can search in the Azure portal for Data Share Invitations where you will be taken into a list of data share invitations that you can accept/reject. 
 
-The next step is to receive the data on which you’re going to perform analytics on. The first step is that you’re data share resource’s managed identity needs to get access to the target Azure data store (such as  Data Lake, SQL DB etc). 
+The next step is to receive the data on which you’re going to perform analytics on. The first step is that your data share resource’s managed identity needs to get access to the target Azure data store (such as  Data Lake, SQL DB etc.). 
 
-In the case of receiving the data in a storage account, the data share resource managed identity needs to be granted the Storage Blob Data Contributor role. There is no need to set this up manually, because if you specify a target data store through the Azure portal and you as a data consumer user has proper permission, the data share service can get this done automatically.
+In the case of receiving the data in a storage account, the data share resource-managed identity needs to be granted the Storage Blob Data Contributor role. There is no need to set this up manually, because if you specify a target data store through the Azure portal and you as a data consumer user has proper permission, the data share service can get this done automatically.
  
 In other words, if you as a user is an owner or a member of a customer role in which you have Microsoft Authorization/role assignments/write permission of the datastore where the received data needs to land, this is done automatically. 
 
