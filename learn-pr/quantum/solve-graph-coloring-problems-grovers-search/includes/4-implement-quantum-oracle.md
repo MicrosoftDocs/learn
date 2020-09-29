@@ -181,7 +181,7 @@ We can do it using the so-called "phase kickback trick":
 2. Apply the marking oracle $U_\textrm{mark}$ with this extra qubit as the target.  
 What happens to the register that encodes the coloring at this step? 
    * If the basis state $|x\rangle$ encodes an *invalid coloring*, the state does not change.
-   * If the basis state $|x\rangle$ encodes a *valid* coloring, the operation $U^{state}$ flips the state of the extra qubit, converting it to $\frac{1}{\sqrt2}(|1\rangle - |0\rangle)$, which is equivalent to multiplying the whole state by $-1$.
+   * If the basis state $|x\rangle$ encodes a *valid* coloring, the operation $U_\textrm{mark}$ flips the state of the extra qubit, converting it to $\frac{1}{\sqrt2}(|1\rangle - |0\rangle)$, which is equivalent to multiplying the whole state by $-1$.
 
 If you apply these steps to a basis state, you won't be able to tell the difference - the global phase won't be observable. 
 But if you apply these steps to a superposition state, you'll see that the basis states that encode valid colorings acquire the $-1$ relative phase - exactly the effect we need the phase operation to have!
