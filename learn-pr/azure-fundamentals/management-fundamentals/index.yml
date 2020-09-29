@@ -11,7 +11,7 @@ metadata:
 title: Choose the best tool to manage and configure your Azure environment
 summary: Survey the management, administration, and reporting tools for Azure and choose the best one for your technical need.
 abstract: |
-  By the end of this module, you will be able to:
+  After completing this module, you'll be able to:
   - Choose the correct Azure management tool to address different kinds of technical needs and challenges.
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology

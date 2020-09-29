@@ -3,7 +3,7 @@ uid: learn.wwl.translate-speech-speech-service
 metadata:
   title: Translate speech with the speech service
   description: "Perform speech translation tasks with the speech service to translate spoken text to different languages."
-  ms.date: 06/14/2020
+  ms.date: 09/26/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial

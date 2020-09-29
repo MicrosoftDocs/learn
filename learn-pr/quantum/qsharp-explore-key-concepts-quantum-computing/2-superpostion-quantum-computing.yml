@@ -3,23 +3,13 @@ uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.2-superposition
 title: Superposition in quantum computing
 metadata:
   title: Superposition in quantum computing
-  description: Explanation of what is quantum superposition and provides physical context.
+  description: Learn about quantum superposition and its physical context.
   ms.date: 09/09/2020
   author: KittyYeungQ
   ms.author: kitty
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true
-  latex_macros:
-    ket: ["\\left| #1\\right\\rangle", 1]
-    bra: ["\\left\\langle #1\\right|", 1]
-    braket: [ "\\left\\langle #1 \\right\\rangle", 1 ]
-    id: "\\mathbb{1}"
-    boldone: "\\mathbf{1}"
-    expect: "\\mathbb{E}"
-    variance: "\\operatorname{Var}"
-    defeq: "\\mathrel{:=}"
-    dd: "\\mathrm{d}"
 durationInMinutes: 6
 content: |
   [!include[](includes/2-superposition-quantum-computing.md)]

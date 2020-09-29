@@ -1,6 +1,6 @@
 As a data engineer working at an organization with a large manufacturing operation, you want to understand more about the components that form a modern data warehouse. This information will help you determine which elements most closely meet your organization's requirements.
 
-In this unit, you'll lean more about the data services that Azure provides. These services enable you to combine data from multiple sources, reformat it into analytical models, and save these models for subsequent querying, reporting, and visualization.
+In this unit, you'll learn more about the data services that Azure provides. These services enable you to combine data from multiple sources, reformat it into analytical models, and save these models for subsequent querying, reporting, and visualization.
 
 ## What is Azure Data Factory?
 

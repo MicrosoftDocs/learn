@@ -23,7 +23,7 @@ A few examples of regions are *West US*, *Canada Central*, *West Europe*, *Austr
 
 Azure has specialized regions that you might want to use when building out your applications for compliance or legal purposes. These include:
 
-- *US DoD Central*, *US Gov Virginia*, *US Gov Iowa* and more: These are physical and logical network-isolated instances of Azure for US government agencies and partners. These datacenters are operated by screened US persons and include additional compliance certifications.
+- *US DoD Central*, *US Gov Virginia, Texas and Arizona* and more: These are physical and logical network-isolated instances of Azure for US government agencies and partners. These datacenters are operated by screened US persons and include additional compliance certifications.
 
 - *China East*, *China North* and more: These regions are available through a unique partnership between Microsoft and 21Vianet, whereby Microsoft does not directly maintain the datacenters.
 
