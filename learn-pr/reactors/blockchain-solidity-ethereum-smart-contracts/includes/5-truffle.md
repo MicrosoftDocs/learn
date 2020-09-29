@@ -2,18 +2,17 @@ Truffle is the most popular development framework for Ethereum. It can easily be
 
 ## About Truffle
 
-With Truffle, you get:
+With Truffle, you get some of the following benefits:
 
-- Built-in smart contract building, compilation, deployment, testing and more.
-- Network management for deploying to any number of public & private networks.
+- Smart contract building, compilation, deployment, testing and more
+- Network management for deploying to public & private networks
 - Package management for dependencies
-- Interactive console for direct contract communication.
-- Configurable build pipeline with support for tight integration.
-- External script runner that executes scripts within a Truffle environment.
+- Interactive console for direct contract communication
+- Configurable build pipeline
 
 ## Install Truffle
 
-From your terminal, you can install Truffle with the help of npm. Type:
+From your terminal, you can install Truffle easily with the help of the node package manager. Type:
 
 `npm install -g truffle`
 
@@ -23,49 +22,58 @@ To confirm truffle is installed, type:
 
 That will show the version installed and present the list of commands available to use Truffle with:
 
-```solidity
-$ truffle
-Truffle v5.1.7 - a development framework for Ethereum
-
-Usage: truffle <command> [options]
-
-Commands:
-  build     Execute build pipeline (if configuration present)
-  compile   Compile contract source files
-  config    Set user-level configuration options
-  console   Run a console with contract abstractions and commands available
-  create    Helper to create new contracts, migrations and tests
-  debug     Interactively debug any transaction on the blockchain (experimental)
-  deploy    (alias for migrate)
-  develop   Open a console with a local development blockchain
-  exec      Execute a JS module within this Truffle environment
-  help      List all commands or provide information about a specific command
-  init      Initialize new and empty Ethereum project
-  install   Install a package from the Ethereum Package Registry
-  migrate   Run migrations to deploy contracts
-  networks  Show addresses for deployed contracts on each network
-  obtain    Fetch and cache a specified compiler
-  opcode    Print the compiled opcodes for a given contract
-  publish   Publish a package to the Ethereum Package Registry
-  run       Run a third-party command
-  test      Run JavaScript and Solidity tests
-  unbox     Download a Truffle Box, a pre-built Truffle project
-  version   Show version number and exit
-  watch     Watch filesystem for changes and rebuild the project automatically
-
-See more at http://truffleframework.com/docs
-```
+:::image type="content" source="media\truffle.png" alt-text="Truffle options shown in terminal":::
 
 ## Get started with using Truffle
 
 Now that Truffle is installed, let's use it to run the tests that were generated as part of our newSolidityProject.
 
-### Test the contract
-
 You can find the test file in test/HelloBlockchain.js. Take a look through the test file to try to understand what's being tested.
 
 1. In Visual Studio Code, go to Terminal -> New Terminal
-2. In the terminal type: `truffle test`
-In the terminal you will see which tests passed, and if any test failed (We will talk more about how to write tests in a later unit, but this gets you some exposure to running tests with Truffle.
+1. In the terminal run `truffle compile`. Wait for the source files to compile successfully.
+1. Then run `truffle migrate`. Wait for the migrations to finish
 
-:::image type="content" source="../media/truffle-test.png" alt-text="Run truffle test from the terminal":::
+### Test the contract
+
+Let's use it to run the tests that were generated as part of our newSolidityProject.
+
+You can find the test file in test/HelloBlockchain.js. Take a look through the test file to try to understand what's being tested.
+
+From the terminal type: `truffle test`.
+
+Notice that the tests fail due to the following.
+
+```markdown
+Could not connect to your Ethereum client with the following parameters:
+    - host       > 127.0.0.1
+    - port       > 8545
+    - network_id > *
+Please check that your Ethereum client:
+    - is running
+    - is accepting RPC connections (i.e., "--rpc" option is used in geth)
+    - is accessible over the network
+    - is properly configured in your Truffle configuration file (truffle-config.js)
+```
+
+And this indicates that I need a local Ethereum blockchain client running for the tests to access.
+
+### Ganache CLI
+
+The most popular local Ethereum blockchain is Ganache. We're going to use the [CLI](https://github.com/trufflesuite/ganache-cli) version to interact with it directly from the terminal. Ganache CLI is commonly used for development and testing. To install it on your project, focus your attention to the terminal. Right-click and select `New Terminal`. Once the new terminal window opens run:
+`npm install -g ganache-cli`
+
+Once Ganache CLI installs successfully, run:
+`ganache-cli`
+
+:::image type="content" source="media\start-ganache.png" alt-text="Start ganache-cli from the terminal":::
+
+Notice that there are 10 accounts generated on this blockchain that each receive 100 test Ether to use. Each account also has a corresponding private key. And there is also a mnemonic, which is a unique twelve world phrase to access the wallet and allows transactions to be made from these accounts.
+
+And lastly, it displays its address, which we’ll use to connect to it. By default, this will be 127.0.0.1:8545.
+
+Now run `truffle test`.
+
+In the terminal you will now see that all tests have passed.
+
+:::image type="content" source="media\truffle-test.png" alt-text="Run truffle test from the terminal":::
