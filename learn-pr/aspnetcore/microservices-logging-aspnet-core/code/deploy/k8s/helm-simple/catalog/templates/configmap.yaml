@@ -6,5 +6,5 @@ metadata:
     app: eshop
     service: catalog
 data:
-  APPINSIGHTS_INSTRUMENTATIONKEY: dc8dd6fe-033d-4be9-ad89-3c208af91f12
+  APPINSIGHTS_INSTRUMENTATIONKEY: 037fb7a1-2eb5-45e8-9193-806becc426f9
   # YAML omitted for brevity
