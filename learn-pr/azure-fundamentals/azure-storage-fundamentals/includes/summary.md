@@ -1,6 +1,6 @@
 In this module, you discovered how Azure Storage can provide your company with a variety of options for storing your data. For example, you learned that your first step when using Azure Storage is to create a storage account. After you've done so, Azure provides you with several options for storing your data:
 
-- Azure Disk Storage
+- Azure disk storage
 - Azure Blob Storage and container storage
 - Azure File Storage
 
