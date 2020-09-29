@@ -4,7 +4,7 @@ For our Tailwind Traders scenario, VPNs can enable branch offices to share sensi
 
 ## VPN gateways
 
-A VPN gateway is a type of virtual network gateway. Azure VPN Gateway instances are deployed in Azure Virtual Networks instances and enable the following connectivity:
+A VPN gateway is a type of virtual network gateway. Azure VPN Gateway instances are deployed in Azure Virtual Network instances and enable the following connectivity:
 
 - Connect on-premises datacenters to virtual networks through a *site-to-site* connection.
 - Connect individual devices to virtual networks through a *point-to-site* connection.
