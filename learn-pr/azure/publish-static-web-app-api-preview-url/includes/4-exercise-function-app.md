@@ -49,9 +49,21 @@ You'll now see an **api** folder in the Visual Studio Code explorer. The **api**
 | _api/products-put_    | PUT    | `products/:id` |
 | _api/products-delete_ | DELETE | `products/:id` |
 
-Your API has routes for manipulating the products for the shopping list, but it lacks a route for getting the products. You'll add that next.
-
 ## Create the HTTP GET function
+
+Your API has routes for manipulating the products for the shopping list, but it lacks a route for getting the products. You'll add that now.
+
+### Install the Azure Static Web Apps extension for Visual Studio Code
+
+You can create and manage Azure Functions applications the Azure Functions extension for Visual Studio Code.
+
+1. Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&azure-portal=true) and install the **Azure Functions** extension for Visual Studio Code.
+1. When the extension tab loads in Visual Studio Code, click **Install**.
+1. After installation is complete, click **Reload**.
+
+### Create the function
+
+Now you'll extend your Azure Function app with a function to get your products.
 
 1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
 1. Type and select **Azure Functions: Create Function**
@@ -59,10 +71,8 @@ Your API has routes for manipulating the products for the shopping list, but it 
 1. Enter **products-get** as the name of the function
 1. Select **Anonymous** as the authentication level
 
-You just extended your Azure Function app with a function to get your products!
-
 > [!NOTE]
-> The function app is in the _api_ folder, which separates it from the individual web app projects. All of the web apps using the front-end frameworks make calls to the same API. You can decide how to structure your application, but for this sample it helps to see them separated.
+> The Functions app is in the _api_ folder, which separates it from the individual web app projects. All of the web apps using the front-end frameworks make calls to the same API. You can decide how to structure your application, but for this sample it helps to see them separated.
 
 ### Configure the HTTP Method and route endpoint
 
@@ -75,8 +85,7 @@ Configure your function:
 1. Open the file _api/products-get/function.json_
 1. Notice the methods allow both `GET` and `POST`
 1. Change the methods array to only allow `GET` requests
-1. Go to the `bindings` section for `"name": "req"`
-1. Add a `"route": "products"` entry
+1. Add a `"route": "products"` entry after the methods array
 
 Now your function is triggered on an HTTP `GET` request to **products**. Your _function.json_ should look like the following code:
 
@@ -100,7 +109,7 @@ Now your function is triggered on an HTTP `GET` request to **products**. Your _f
 }
 ```
 
-### Update the route logic
+### Update the function logic
 
 The file _index.js_ in the folder _api/products-get_ contains logic that runs when your make an HTTP request to the route.
 
