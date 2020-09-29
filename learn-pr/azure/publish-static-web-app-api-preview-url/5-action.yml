@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.static-web-app-and-api.5-action
+uid: learn.azure.publish-static-web-app-api-preview-url.5-action
 metadata:
   title: Publish the API with GitHub Actions
   description: Publish the API with GitHub Actions

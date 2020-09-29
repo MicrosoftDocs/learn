@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.static-web-app-and-api
+uid: learn.azure.publish-static-web-app-api-preview-url
 metadata:
   title: Publish an API to Azure Static Web Apps
   description: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps and Azure Functions. Deploy your code from GitHub to a staging site using preview URLs.
@@ -23,7 +23,7 @@ prerequisites: |
   - [GitHub](https://github.com) account
   - [Visual Studio Code](https://code.visualstudio.com)
   - Beginner-level experience with Azure Functions
-iconUrl: /learn/achievements/publish-static-web-app-api.svg
+iconUrl: /learn/achievements/publish-static-web-app-api-preview-url.svg
 levels:
   - beginner
 roles:
@@ -34,13 +34,13 @@ products:
   - azure-app-service
   - azure-app-service-static
 units:
-  - learn.azure.static-web-app-and-api.1-introduction
-  - learn.azure.static-web-app-and-api.2-exercise-get-started
-  - learn.azure.static-web-app-and-api.3-build-api
-  - learn.azure.static-web-app-and-api.4-exercise-func-app
-  - learn.azure.static-web-app-and-api.5-action
-  - learn.azure.static-web-app-and-api.6-exercise-action
-  - learn.azure.static-web-app-and-api.7-knowledge-check
-  - learn.azure.static-web-app-and-api.8-summary
+  - learn.azure.publish-static-web-app-api-preview-url.1-introduction
+  - learn.azure.publish-static-web-app-api-preview-url.2-exercise-get-started
+  - learn.azure.publish-static-web-app-api-preview-url.3-build-api
+  - learn.azure.publish-static-web-app-api-preview-url.4-exercise-func-app
+  - learn.azure.publish-static-web-app-api-preview-url.5-action
+  - learn.azure.publish-static-web-app-api-preview-url.6-exercise-action
+  - learn.azure.publish-static-web-app-api-preview-url.7-knowledge-check
+  - learn.azure.publish-static-web-app-api-preview-url.8-summary
 badge:
-  uid: learn.azure.static-web-app-api.badge
+  uid: learn.azure.publish-static-web-app-api-preview-url.badge
