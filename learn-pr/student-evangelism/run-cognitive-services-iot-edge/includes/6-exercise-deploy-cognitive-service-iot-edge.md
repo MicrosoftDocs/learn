@@ -2,13 +2,11 @@ Before deploying the Language Detection module to your edge device, you need to 
 
 ## Create a Cognitive Services Text Analytics resource
 
-First, you'll create a Cognitive Services Text Analytics resource that matches the container.
+Create a Cognitive Services Text Analytics resource that matches the container.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
-
-2. Select **Create a resource**, and then go to **AI + Machine Learning** > **Text Analytics**. 
-
-3. Enter all the required settings:
+1. Select **Create a resource**, and then go to **AI + Machine Learning** > **Text Analytics**.
+1. Enter all the required settings:
 
    | Setting        | Value                                   |
    | :------------- | :-------------------------------------- |
@@ -18,11 +16,9 @@ First, you'll create a Cognitive Services Text Analytics resource that matches t
    | Pricing tier   | Enter **S**, the standard pricing tier. |
    | Resource group | Select an available resource group.     |
 
-4. Select **Create**, and wait for the resource to be created. Your browser automatically redirects to the newly created resource page.
-
-5. Go to the resource.
-
-6. In the **Keys and Endpoint** page under **Resource Management**, copy the API Key 1 and endpoint.
+1. Select **Create**, and wait for the resource to be created. Your browser automatically redirects to the newly created resource page.
+1. Go to the resource.
+1. In the **Keys and Endpoint** page under **Resource Management**, copy "API Key 1" and endpoint.
 
    ![The illustration shows access keys of the cognitive service.](../media/keys-endpoint.png)
 
