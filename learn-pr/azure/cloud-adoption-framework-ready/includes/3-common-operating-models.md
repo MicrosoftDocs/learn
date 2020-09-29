@@ -57,7 +57,7 @@ Centralized operations is the most common operations model in information techno
 :::image type="content" source="../media/centralized-operations.png" alt-text="Image explaining centralized operations focuses on a smaller number of landing zones with embedded foundational utilities." border="false":::
 _Figure 3: Centralized operations focuses on a smaller number of landing zones with embedded foundational utilities._
 
-Management of no-production environments vary significantly from organization to organization. But in a centralized operations model, even the nonproduction environments are likely to be constrained by governance and security requirements.
+Management of nonproduction environments vary significantly from organization to organization. But in a centralized operations model, even the nonproduction environments are likely to be constrained by governance and security requirements.
 
 **Strategic priority:** When control and stability in the business are more important than innovation, this model tends to be the highest trend. Central operations is often seen in larger organizations or stable organizations. This model is very common when party compliance requirements-driven environmental decisions.
 

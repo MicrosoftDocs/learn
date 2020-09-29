@@ -20,7 +20,7 @@ In the prior unit of this Learn module, you assigned the initial blueprint to a 
 
 ### First two subscriptions
 
-At a minimum, you'll likely need two subscriptions: production and -production.
+At a minimum, you'll likely need two subscriptions: production and nonproduction.
 
 :::image type="content" source="../media/initial-subscription-model.png" alt-text="An initial subscription model showing keys next to boxes labeled production and nonproduction." border="false":::
 _Figure 1: An initial subscription model with keys next to **production** and **nonproduction** boxes._
