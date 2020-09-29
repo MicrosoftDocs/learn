@@ -8,8 +8,6 @@ Manage your PCs, Macs, and mobile devices in one place.
 - **Provide the best Office 365 management experience** - Provide the best Office experience with security and config management, cloud content optimization.
 - **Manage key mobile apps Microsoft Outlook and Edge** - Stay secure with Microsoft Apps (also known as Office 365 Pro Plus) and Microsoft Edge for iOS and Android.
 
-<img alt="Unified management" src="../media/intro-to-endpoint-manager-08.png" width="700">
-
 ## Zero touch provisioning
 With Microsoft Endpoint Manager, you can simplify software updates and provisioning for all devices. By using Windows Autopilot, Android Enterprise, Apple DEP, and Samsung Knox Mobile Enrollment, you can do the following:
 
