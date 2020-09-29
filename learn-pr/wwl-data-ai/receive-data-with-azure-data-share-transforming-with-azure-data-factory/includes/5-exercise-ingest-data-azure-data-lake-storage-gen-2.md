@@ -1,8 +1,8 @@
-Open the Azure Data Factory UX
+# Open the Azure Data Factory UX
 
-1.  Open the Azure portal through a browser. 
+Open the Azure portal through a browser. 
 
-2.  Navigate to the resource group in which you have deployed the Azure Data Factory and select, you’ll be redirected to the following page. 
+Navigate to the resource group in which you have deployed the Azure Data Factory and select, you’ll be redirected to the following page. 
 
 ![Azure Data Factory Home Page ](../media/ADSDataFactoryHomePage.png)
 
@@ -10,9 +10,9 @@ Select ‘Author & Monitor’ which will redirect you to the following page:
 
 ![Author and Monitor in Azure Data Factory ](../media/ADSAuthorAndMonitorHomePage.png)
 
-Create an Azure SQL database linked service
+# Create an Azure SQL database linked service
 
-1.  The authoring page is where you create data factory resources such as pipelines, datasets, data flows, triggers and linked services. To create a linked service, click on the Manage button 
+The authoring page is where you create data factory resources such as pipelines, datasets, data flows, triggers and linked services. To create a linked service, click on the Manage button 
 
 ![Linked Services in Azure Data Factory ](../media/ADFLinkedService.png)
 
@@ -34,9 +34,9 @@ In the SQL DB configuration pane, enter 'SQLDB' as your linked service name. Ent
 
 If you're using SQL authentication, enter in the server name, the database, your user name and password. You can verify your connection information is correct by clicking Test connection. Click Create when finished.
 
-Create an Azure Synapse Analytics linked service
+# Create an Azure Synapse Analytics linked service
 
-1.  Repeat the same process to add an Azure Synapse Analytics linked service. In the connections tab, click New. Select the Azure Synapse Analytics (formerly SQL DW) tile and click continue.
+Repeat the same process to add an Azure Synapse Analytics linked service. In the connections tab, click New. Select the Azure Synapse Analytics (formerly SQL DW) tile and click continue.
 
 ![Create Azure Synapse Analytics as Linked Service ](../media/ADFLinkedServiceAzureSynapseAnalytics.png)
 
@@ -46,7 +46,7 @@ Select Synapse Analytics and you’ll be redirected to the following screen:
 
 Please fill out the settings and click create. The Linked service connection has then been established for the Synapse Analytics resource. 
 
-Create an Azure Data Lake Storage Gen2 linked service
+# Create an Azure Data Lake Storage Gen2 linked service
 
 The last linked service needed is an Azure Data Lake Storage gen2. In the connections tab, click New. Select the Azure Data Lake Storage Gen2 tile and click continue.
 
@@ -72,13 +72,13 @@ Click ok when the confirmation dialog pop-ups. The cluster will take about 5-7 m
 
 ![Turn on data flow debug ](../media/ADFTurnOnDataFlowDebug.png)
 
-Ingest data from Azure SQL DB into ADLS gen2 using the copy activity
+# Ingest data from Azure SQL DB into ADLS gen2 using the copy activity
 
 Now you will create a pipeline with a copy activity that ingests one table from an Azure SQL DB into an ADLS gen2 storage account by adding a pipeline, configure a dataset and debug a pipeline via the ADF UX. 
 
-Create a pipeline with a copy activity
+## Create a pipeline with a copy activity
 
-1.  In the factory resources pane, click on the plus icon to open the new resource menu. Select Pipeline.
+In the factory resources pane, click on the plus icon to open the new resource menu. Select Pipeline.
 
 ![Create a pipeline ](../media/ADFCreatePipeline.png)
 
@@ -94,7 +94,7 @@ Give the copy activity a descriptive name such as 'IngestIntoADLS'.
 
 ![Copy Data Pipeline ](../media/ADFCopyDataPipeline.png)
 
-Configure Azure SQL DB source dataset
+## Configure Azure SQL DB source dataset
 
 Click on the Source tab of the copy activity. To create a new dataset, click New. 
 
@@ -120,13 +120,13 @@ Click OK when finished.
 
 You have successfully created your source dataset. 
 
-Make sure in the source settings, the default value Table is selected in the use query field
+Make sure in the source settings, the default value Table is selected in the use query field.
 
-Configure ADLS Gen 2 sink dataset
+## Configure ADLS Gen 2 sink dataset
 
-1.  Click on the Sink tab of the copy activity. 
+Click on the Sink tab of the copy activity. 
 
-2.  To create a new dataset, click New.
+To create a new dataset, click New.
 
 ![Select ADLS Gen2 as Sink Dataset ](../media/ADFSinkDatasetADLSGen2.png)
 
@@ -154,9 +154,9 @@ Click OK when finished.
 
 ![ Set Properties of Sink Dataset ](../media/ADFSinkSetPropertiesADLSGen2.png)
 
-Test the copy activity with a pipeline debug run
+# Test the copy activity with a pipeline debug run
 
-1.  To verify your copy activity is working correctly, click Debug at the top of the pipeline canvas to execute a debug run. A debug run allows you to test your pipeline either end-to-end or until a breakpoint before publishing it to the data factory service.
+To verify your copy activity is working correctly, click Debug at the top of the pipeline canvas to execute a debug run. A debug run allows you to test your pipeline either end-to-end or until a breakpoint before publishing it to the data factory service.
 
 ![Debug Copy pipeline](../media/ADFDebugTestCopyDataPipeline.png)
 

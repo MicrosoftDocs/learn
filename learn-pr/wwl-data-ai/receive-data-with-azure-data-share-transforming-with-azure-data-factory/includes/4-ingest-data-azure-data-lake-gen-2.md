@@ -4,7 +4,7 @@ The purpose of linked services, is to represent and show data store as well as c
 
 Using the code-free User Experience of Azure Data Factory from the Azure Portal makes it easy for the non-coder to develop linked services. Currently Azure Data Factory supports over 85 of these connectors in which we are going to use 3. 
 
-In order to ingest data from a resource, you can use an Azure Data Factory pipeline with a copy activity that can ingest for example 1 table from the Azure SQL DB into an ADLS Gen 2 storage account. It is important to understand that you add pipelines in Azure Data Factory, configure the dataset and debug the pipeline in ADF. 
+In order to ingest data from a resource, you can use an Azure Data Factory pipeline with a copy activity that can ingest for example 1 table from the Azure SQL DB into an ADLS Gen 2 storage account. It is imperative to understand that you add pipelines in Azure Data Factory, configure the dataset and debug the pipeline in ADF. 
 
 A pipeline in Azure Data Factory is a logical grouping of activities such as copy in order to perform a task. The activity defines the operation that you’re performing on the data ( therefore, a copy means copying the same data to another data store). 
 

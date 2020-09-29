@@ -2,7 +2,7 @@ Once you have verified that an ADF pipeline run works through the debug feature 
 
 If you publish all, you publish all the changes and updates you have made in the pipeline itself. 
 
-Azure Data factory will then first run a validation check in order to validate that all the resources ( i.e. the data flow mapping, the storages settings and so onworth) meet the requirements. If it doesn’t meet the requirements, then you’ll see a side panel that will explain in detail what the error is and how to fix it. 
+Azure Data factory will then first run a validation check in order to validate that all the resources (i.e. the data flow mapping, the storages settings and so forth) meet the requirements. If it doesn’t meet the requirements, then you’ll see a side panel that will explain in detail what the error is and how to fix it. 
 
 If the validation check succeeds you are able to trigger the pipeline. Trigger now, will start 1 manual pipeline run, however it is also possible to set up a schedule, or event-based trigger to operationalize the pipeline in Azure Data Factory.  If you triggered the data flow, data flow will spin up a just-in-time Spark cluster, which will terminate once the pipeline is finished and the job is concluded. However, since it’s a just-in-time Spark cluster, the data flow activity might take 5-7 minutes since the Spark cluster needs to start-up. 
 

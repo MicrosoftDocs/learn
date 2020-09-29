@@ -4,4 +4,4 @@ Each time you’re using dataflow, it requires at least one sink transformation,
 
 When looking at sink transformations, every sink is associated to to one Azure Data Factory dataset or linked service. So each stink transformation determines the location as well as the shape of the data that you are going or want to write to. Therefore, if you’re writing to Azure Synapse Analytics, the datasets needs to be compatible with that location. 
 
-Mapping Data flow, that follows an ELT approach and works on staging dataset that are in Azure, currently the datasets that can be used in a source transformation for Synapse Analtyics is the dataset option. Other sources might allow you to choose inline, or common data model approach. 
+Mapping Data flow, that follows an ELT approach and works on staging dataset that are in Azure, currently the datasets that can be used in a source transformation for Synapse Analytics is the dataset option. Other sources might allow you to choose inline, or common data model approach. 

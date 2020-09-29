@@ -4,7 +4,7 @@ A common use with Azure Data Share is to take the data that is shared and use it
 
 It’s time to teach you how to receive data with Azure Data Share and transform this data with Azure Data Factory. 
 
-The reason why it’s important to understand both Azure Data Share and Azure Data Factory for transforming data is that it can be a useful components to a modern data warehouse and analytics project. One common requirement is to gain access to external data, to gain insights and additional visibility of the data across your whole data landscape. You can improve and simply perform data integration and management in Azure when using Azure Data Factory as well as Azure Data Share. 
+The reason why it’s imperative to understand both Azure Data Share and Azure Data Factory for transforming data is that it can be a useful components to a modern data warehouse and analytics project. One common requirement is to gain access to external data, to gain insights and additional visibility of the data across your whole data landscape. You can improve and simply perform data integration and management in Azure when using Azure Data Factory as well as Azure Data Share. 
 
 Azure Data Factory will give you the opportunity to perform code-free ETL/ELT which will result in a comprehensive overview of your data pipelines. As a data engineer this gives you the confidence to work with more data. 
 

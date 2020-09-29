@@ -1,4 +1,4 @@
-Transform data using mapping data flow
+# Transform data using mapping data flow
 
 Now that you have successfully copied data into Azure Data Lake Storage, it is time to join and aggregate that data into a data warehouse. 
 
@@ -6,9 +6,9 @@ We will use mapping data flow, Azure Data Factory's visually designed transforma
 
 The data flow created in this step inner joins the 'TripDataCSV' dataset created in the previous section with the 'TripFares.csv' file shared via Azure Data Share. based on four key columns. Then the data gets aggregated based upon column payment_type to calculate the average of certain fields and written in a Azure Synapse Analytics table.
 
-Add a data flow activity to your pipeline
+## Add a data flow activity to your pipeline
 
-1.	In the activities pane of the pipeline canvas, open the Move and Transform accordion and drag the Data flow activity onto the canvas.
+In the activities pane of the pipeline canvas, open the Move and Transform accordion and drag the Data flow activity onto the canvas.
 
 ![Move and Transform ](../media/ADFDataFlowMoveTransform.png)
 
@@ -58,13 +58,13 @@ When you select the Data Preview tab and click refresh the data will be fetched 
 
 ![Data Preview Fetching Data ](../media/ADFDatapreviewSourceDataFlow.png)
 
-Configure your trip fares csv source:
+## Configure your trip fares csv source:
 
-1.	The second source you're adding will point at the csv file 'TripFares.csv' that was shared during the Azure Data Share exercise. 
+The second source you're adding will point at the csv file 'TripFares.csv' that was shared during the Azure Data Share exercise. 
 
-2.	Under your 'TripDataCSV' source, there will be another Add Source box. 
+Under your 'TripDataCSV' source, there will be another Add Source box. 
 
-3.	Click it to add a new source transformation.
+Click it to add a new source transformation.
 
 ![Add Source Transformation ](../media/ADFAddSourceTransformationDataflow.png)
 
@@ -76,7 +76,7 @@ Click New next to the source dataset field to create a new ADLS gen2 dataset.
 
 Select the Azure Data Lake Storage gen2 tile and click continue.
 
-Note: You may notice many of the connectors in data factory are not supported in mapping data flow. To transform data from one of these sources, ingest it into a supported source using the copy activity.
+You may notice many of the connectors in data factory are not supported in mapping data flow. To transform data from one of these sources, ingest it into a supported source using the copy activity.
 
 ![Select Azure Data Lake Storage Gen 2 for new Source Transformation ](../media/ADFSelectADLSGen2SourceTransform.png)
 
@@ -88,7 +88,7 @@ Name your dataset 'TripFaresCSV'.
 
 Select 'ADLSGen2' as your linked service. 
 
-Set the file path to taxidata/TripFares.csv. In the Azure Data Share exercise you have called it TripFares.csv in container taxidata. 
+Set the file path to taxidata/TripFares.csv. In the Azure Data Share exercise you have called it TripFares.csv in container 'taxidata'. 
 
 Set First row as header to true as the input data has headers. 
 
@@ -102,7 +102,7 @@ To verify your source is configured correctly, fetch a data preview in the Data 
 
 ![Data Preview of created dataset](../media/ADFDataPreviewSettings.png)
 
-Inner join TripDataCSV and TripFaresSQL
+## Inner join TripDataCSV and TripFaresSQL
 
 To add a new transformation, click the plus icon in the bottom-right corner of 'TripDataCSV'. 
 
@@ -130,40 +130,39 @@ Verify you successfully joined 25 columns together with Data Preview.
 
 ![Data Preview for Join Transformation](../media/ADFDataPreviewJoinTransform.png)
 
-Aggregate by payment_type
+## Aggregate by payment_type
 
-1.	After you complete a join transformation, add an aggregate transformation by clicking the plus icon next to 'InnerJoinWithTripFares. 
+After you complete a join transformation, add an aggregate transformation by clicking the plus icon next to 'InnerJoinWithTripFares. 
 
-2.	Choose Aggregate under Schema modifier and call the Aggregate: ‘AggregateByPaymentType’
+Choose Aggregate under Schema modifier and call the Aggregate: ‘AggregateByPaymentType’
 
 ![Add Aggregation for Transformation](../media/ADFAggregateTransformation.png)
 
-3.	Name your aggregate transformation 'AggregateByPaymentType'. Select payment_type as the group by column.
+Name your aggregate transformation 'AggregateByPaymentType'. Select payment_type as the group by column.
 
 ![Group by setting for Aggregation](../media/ADFGroupByColumnAggregation.png)
 
-4.	Go to the Aggregates tab. Here, you will specify two aggregations:
+Go to the Aggregates tab. Here, you will specify two aggregations:
     
-    1.	The average fare grouped by payment type
+    * The average fare grouped by payment type
     
-    2.	The total trip distance grouped by payment type
+    * The total trip distance grouped by payment type
     
-    3.	Create  the average fare expression. 
+Create  the average fare expression. 
     
-    4.	In the text box labeled Add or select a column, enter 'average_fare'.
+In the text box labeled Add or select a column, enter 'average_fare'.
 
 ![Aggregates settings](../media/ADFAggregateSettings.png)
 
-5.	To enter an aggregation expression, click on the marker next to the  the blue box labelled Enter expression.  
+To enter an aggregation expression, click on the marker next to the  the blue box labeled Enter expression.  
 
 ![Expression builder for Aggregations](../media/ADFAggregationExpression.png)
 
+This will open up the data flow expression builder, a tool used to visually create data flow expressions using input schema, built-in functions and operations, and user-defined parameters. For more information on the capabilities of the expression builder, see the expression builder documentation.
 
-6.	This will open up the data flow expression builder, a tool used to visually create data flow expressions using input schema, built-in functions and operations, and user-defined parameters. For more information on the capabilities of the expression builder, see the expression builder documentation.
+To get the average fare, use the avg() aggregation function to aggregate the total_amount column cast to an integer with toInteger(). In the data flow expression language, this is defined as avg(toInteger(total_amount)). 
 
-7.	To get the average fare, use the avg() aggregation function to aggregate the total_amount column cast to an integer with toInteger(). In the data flow expression language, this is defined as avg(toInteger(total_amount)). 
-
-8.	Click Save and finish when you are done.
+Click Save and finish when you are done.
 
 ![Visual Expression builder for Aggregations](../media/ADFVisualExpressionBuilder.png)
 

@@ -1,18 +1,18 @@
-Configure you Azure Synapse Analytics sink
+# Configure Azure Synapse Analytics sink
 
-1.	We have finished our transformation logic in the previous exercise, so now we are ready to sink our data in an Azure Synapse Analytics table. 
+We have finished our transformation logic in the previous exercise, so now we are ready to sink our data in an Azure Synapse Analytics table. 
 
-2.	Add a sink transformation under the Destination section.
+Add a sink transformation under the Destination section.
 
 ![Add Sink Transformation](../media/ADFAddSinkTransformation.png)
 
-3.	Name your sink 'SynapseSink'. 
+Name your sink 'SynapseSink'. 
 
-4.	Click New next to the sink dataset field to create a new Azure Synapse Analytics dataset.
+Click New next to the sink dataset field to create a new Azure Synapse Analytics dataset.
 
 ![Add dataset to Sink Transformation](../media/ADFCreateNewSinkDataSetAzureSynapseAnalytics.png)
 
-5.	Select the Azure Synapse Analytics (formerly SQL DW) tile and click continue.
+Select the Azure Synapse Analytics (formerly SQL DW) tile and click continue.
 
 ![Select Azure Synapse Analytics for Sink Transformation](../media/ADFSynapseAnalyticsSelectionForDataset.png)
 

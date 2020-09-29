@@ -1,12 +1,12 @@
-**Debug your pipeline end-to-end**
+# Debug your pipeline end-to-end
 
-1.	Go back to the tab for the IngestAndTransformData pipeline. 
+Go to the tab for the IngestAndTransformData pipeline. 
 
-2.	Notice the green box on the 'IngestIntoADLS' copy activity.
+Notice the green box on the 'IngestIntoADLS' copy activity.
 
-3.	Drag it over to the 'JoinAndAggregateData' data flow activity. 
+Drag it over to the 'JoinAndAggregateData' data flow activity. 
 
-4.	This creates an 'on success' which causes the data flow activity to only run if the copy is successful.
+This creates an 'on success' which causes the data flow activity to only run if the copy is successful.
 
 ![Debug Pipeline](../media/ADFDebugPipelineDataflow.png)
 
@@ -18,7 +18,7 @@ Select 'ADLSGen2' for the staging linked service.
 
 Choose 'sample-data' for your staging container and 'staging' for your staging directory. 
 
-By default, the data flow is ran on an 8 core general purpose Integration runtime.
+By default, the data flow runs on an 8 core general purpose Integration runtime.
 
 ![Settings tab Mapping Dataflow ](../media/ADFSettingsTabMappingDataflow.png)
 
@@ -48,7 +48,7 @@ Click Publish all to publish your changes.
 
 ADF will first run a validation check to make sure all of your resources meet our service requirements. 
 
-If you receive a failure, a side panel will appear detailing the error. 
+If you receive a failure, a side panel will appear to detail the error. 
 
 Once you have successfully published your pipeline, you can trigger a pipeline run against the data factory service by clicking Add trigger.
 
@@ -68,7 +68,7 @@ By default, Azure Data Factory keeps pipeline run information for 45 days. To pe
 
 ![Monitor Pipeline Runs ](../media/ADFMonitorPipelineRuns.png)
 
-Click on the name of the pipeline you triggered to open up more details on invidual activity runs. 
+Click on the name of the pipeline you triggered to open up more details on individual activity runs. 
 
 In the activity runs view, you can see details of the pipeline run as you did with the debug run. Triggered data flows spin up a just-in-time Spark cluster which is terminated once the job is concluded. As a result, each data flow activity run will endure 5-7 minutes of cluster start-up time.
 

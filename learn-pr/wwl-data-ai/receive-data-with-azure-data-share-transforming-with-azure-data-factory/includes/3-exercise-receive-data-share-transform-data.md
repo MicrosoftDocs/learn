@@ -1,5 +1,3 @@
-Topic 3	Exercise: Sharing and receiving data using Azure Data Share and transform data using Azure Data Factory
-
 You have two possibilities to provision an Azure Data Share.
 
 In the below exercise you’re going to create an Azure Data Share from the portal.
@@ -22,13 +20,13 @@ Navigate to Create, and you’ll have to provide the following:
 
 Settings:
 
-Resource Group:
+*Resource Group:*
 
 If you have an existing resource group in which you would want to create the Azure Data Share in, select it from the drop down menu for the resource group that you’d like to deploy the Data Share into.
 
 If you don’t have an existing Resource group, navigate through ‘Create new’, and create a new resource group.
 
-Location:
+*Location:*
 
 Choose the Azure region that's right for you and your customers.
 
@@ -36,7 +34,7 @@ Azure Data Share does not store a copy of the data itself. The data is stored in
 
 The Azure Data Share service does not have to be available in your region to leverage the service. For example, if you have data stored in an Azure Storage account located in a region where Azure Data Share is not yet available, you can still leverage the service to share your data.
 
-Name:
+*Name:*
 
 Give the resource a name.
 
@@ -48,16 +46,16 @@ You’ll be redirected to the below screen, in which you navigate to create, whi
 
 The next step is to share a dataset with Azure Data Share to an organization that Is the data consumer. 
 
-1.	Navigate to the Data share resource to the ‘Overview’ page:
+Navigate to the Data share resource to the ‘Overview’ page:
 
 ![Azure Data Share Overview Page](../media/ADSOverviewPage.png)
 
-2.	In the overview page, select ‘Start sharing your data’  and you’ll be redirected to the following page:
+In the overview page, select ‘Start sharing your data’  and you’ll be redirected to the following page:
 
 ![Azure Data Share Start Sharing Data](../media/ADSOverviewPageStartSharingYourData.png)
 
 
-3.	If you want to create a dataset that you want to share  select ‘+Create’, which lands you into this screen:
+If you want to create a dataset that you want to share  select ‘+Create’, which lands you into this screen:
 
 ![Azure Data Share Create Dataset Share Details ](../media/ADSOverviewPageStartSharingYourData.png)
 
@@ -73,7 +71,7 @@ Specify what type of share you want to use which determines how your data will b
 
 *Description:*
 
-Describe the dataset that will be shared and note that this description will be visible to whom you’re sending the datashare to. 
+Describe the dataset that will be shared and be aware that this description will be visible to whom you’re sending the data share to. 
 
 *Term of use:*
 
@@ -95,11 +93,11 @@ Authenticate with your SQL server admin login and password.
 
 ![Authenticate SQL ](../media/ADSAuthenticateSQL.png)
 
-A message will pop up that you need to run a scipt in the Query Editor to enable data to be shared from tables/views from your SQL Database. 
+A message will pop up that you need to run a script in the Query Editor to enable data to be shared from tables/views from your SQL Database. 
 
 You need to open a new web browser tab in order to navigate to the Azure Portal. You need to be logged into the same tenant and login credentials. 
 
-Select the SQL Database, where you have saved the tables of the taxidataset and go to the query editor where you’ll be asked to login. Please login with Active Directory Authentication. 
+Select the SQL Database, where you have saved the tables of the taxi dataset and go to the query editor where you’ll be asked to login. Please login with Active Directory Authentication. 
 
 What is not covered in this step is that prior to this exercise you need to set yourself as an Active Directory Admin for the SQL Server and have allowed your client IP access to the SQL Server. 
 
@@ -109,7 +107,7 @@ Copy the script that was given and run the query.
 
 Navigate back to the Azure Data Share resource and select Sent Shares, navigate to the Datasets Tab and add the taxi data. 
 
-Select the TaxiDataset: 
+Select the taxi dataset: 
 
 ![Select Taxi Dataset ](../media/ADSSelectTaxiDataset.png)
 
@@ -141,28 +139,28 @@ Configure a snapshot schedule for your data consumer. This will allow them to re
 
 Review everything and select Create. A share is now created in your Sent Shares.
 
-Let's review what you can see as a data provider after you have created share of taxidata:
+Let's review what you can see as a data provider after you have created share of taxi data:
  
 ![Overview Data Provider ](../media/ADSOverviewDataProvider.png)
 
 
-Select the share that you just created (for example, TaxiData).
+Select the share that you just created (for example, 'TaxiData').
 
-In **Details** tab, you can view share name, description, terms of use and snapshot schedule. Note that you can disable the snapshot schedule if you choose.
+In **Details** tab, you can view share name, description, terms of use and snapshot schedule. Be aware that you can disable the snapshot schedule if you choose.
 
-Select the **Datasets** tab. Note that you can add or remove datasets after it has been created.
+Select the **Datasets** tab. Be aware that you can add or remove datasets after it has been created.
 
-Select the **Share subscriptions tab**. Note that no share subscriptions exist yet because your data consumer has not yet accepted your invitation.
+Select the **Share subscriptions tab**. Be aware that no share subscriptions exist yet because your data consumer has not yet accepted your invitation.
 
 Select the **Invitations tab**. Here you'll see a list of pending invitations, send invitation to additional users or delete invitations prior to user accepting it.
 
-Select the **History tab**. Note that nothing is displayed as yet because your data consumer has not yet accepted your invitation and triggered a snapshot.
+Select the **History tab**. Be aware that nothing is displayed as yet because your data consumer has not yet accepted your invitation and triggered a snapshot.
 
 In this exercise we have shared data, but we also will receive data. 
 
 Let’s look into how receiving data looks like:
 
-**Receive data (Data consumer flow)**
+# Receive data (Data consumer flow)
 
 Now you are switching hat to be the data consumer. As a data consumer, you will receive data into your ADLS Gen2 account. In addition to that you will use Azure Data Factory to process the data.
 
@@ -172,7 +170,7 @@ In the e-mail that you should have received (it may take up to a few minutes for
 
 ![Invitation Email ](../media/ADSInvitationEmail.png)
 
-Please select view invitation and In the list 'Data Share Invitations', select the invitation titled TaxiData.
+Please select view invitation and In the list 'Data Share Invitations', select the invitation titled 'TaxiData'.
 
 ![Data Share Invitations ](../media/ADSTaxiDataInvitation.png)
 
@@ -184,7 +182,7 @@ Review invitation details and accept the terms of use if provided.
 
 Select Accept 
 
-You are now taken to the received shares page where you can find the details of the data share resource of the TaxiData share.  
+You are now taken to the received shares page where you can find the details of the data share resource of the taxi data share.  
 
 ![Details Data Share](../media/ADSAcceptReceivedShare.png)
 
@@ -208,7 +206,7 @@ On the right hand side of the screen, from the Target Data Type drop down, you w
 
 Select Azure Data Lake Store Gen2, enter Azure subscription and resource group. 
 
-Specify the storage account, and taxidata as the file system name. 
+Specify the storage account, and 'taxidata' as the file system name. 
 
 You have an option to choose either CSV or Parquet output file format. 
 
@@ -236,7 +234,7 @@ Select History tab, and click Refresh to monitor snapshot status.
 
 While you are waiting, navigate to the data provider's data share resource. 
 
-Select Sent Share in left navigation, then TaxiData, and view the status of the Share Subscriptions and History tab. 
+Select Sent Share in left navigation, then 'TaxiData', and view the status of the Share Subscriptions and History tab. 
 
 Click Refresh if no data is showing. 
 
@@ -244,7 +242,7 @@ Notice that there is now an active share subscription, and as a data provider, y
 
 Navigate back to the data consumer's data share resource. 
 
-Select Received Share in left navigation, then TaxiData.
+Select Received Share in left navigation, then 'TaxiData'.
 
 Click on History tab to verify the status of the snapshot is successful. 
 
