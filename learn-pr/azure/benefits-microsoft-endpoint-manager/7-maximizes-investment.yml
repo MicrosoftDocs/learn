@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.benefits-microsoft-endpoint-manager.4-maximizes-investment
-title: Maximizes investment
+uid: learn.benefits-microsoft-endpoint-manager.7-maximizes-investment
+title: Maximize your return on investment
 metadata:
-  title: Maximizes investment
+  title: Maximize your return on investment
   description: Learn how Microsoft Endpoint Manager help you maximize your EMS investment.
-  ms.date: 08/19/2020
+  ms.date: 09/29/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/4-maximizes-investment.md)]
+  [!include[](includes/7-maximizes-investment.md)]

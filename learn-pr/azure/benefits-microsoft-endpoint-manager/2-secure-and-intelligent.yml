@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.benefits-microsoft-endpoint-manager.2-secure-and-intelligent
-title: Secure and intelligent
+title: Learn about intelligent and unified endpoint security
 metadata:
-  title: Secure and intelligent
-  description: Learn how Microsoft Endpoint Manager provides security.
-  ms.date: 08/19/2020
+  title: Learn about intelligent and unified endpoint security
+  description: Learn how Microsoft Endpoint Manager provides intelligent security and risk-based control.
+  ms.date: 09/29/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
   ms.prod: learning-endpoint-manager
   ROBOTS: NOINDEX
-durationInMinutes: 4
+durationInMinutes: 3
 content: |
   [!include[](includes/2-secure-and-intelligent.md)]

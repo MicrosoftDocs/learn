@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.benefits-microsoft-endpoint-manager.5-increases-productivity
-title: Increased productivity
+title: Understand how to increase end user productivity
 metadata:
-  title: Increased productivity
+  title: Understand how to increase end user productivity
   description: Understand how Microsoft Endpoint Manager increases your end users' productivity.
-  ms.date: 08/19/2020
+  ms.date: 09/29/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
