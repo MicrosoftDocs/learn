@@ -26,3 +26,14 @@ quiz:
         - content: "CI is related to the people while CD is related to tooling"
           isCorrect: false
           explanation: "Both of the concepts are not directly related to people, but to tooling."
+    - content: "What is a CI pipeline?"
+      choices:
+        - content: "CI pipelines is the name of the file that contains instructions to run automated tasks"
+          isCorrect: false
+          explanation: "The CI pipeline is composed of those files, but these are not the definition of a CI pipeline itself"
+        - content: "It's the name we give to the act of running a particular set of automated tasks"
+          isCorrect: false
+          explanation: "Running the particular set is the action, but not the definition"
+        - content: "A CI pipeline is the name we give to the set of processes that will be run when a new code change is detected."
+          isCorrect: true
+          explanation: "Correct, the set of processes is called a 'pipeline'"
