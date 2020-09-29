@@ -2,7 +2,7 @@ In this unit, you'll create a storage account and configure a blob container for
 
 ## Create a storage account
 
-Create a storage account with Geo-zone-redundant storage storage (GZRS).
+Create a storage account with Geo-zone-redundant storage (GZRS).
 
 1. Run the following command to set the storage account name where you replace "storageaccountname" and the brackets with a unique Storage account name.
 

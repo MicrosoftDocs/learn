@@ -6,12 +6,11 @@ By the end of this module, you'll see how to improve the availability of your da
 
 ## Learning objectives
 
-In this module, you'll:
+By the end of this module, you'll be able to:
 
-- Identify redundancy options for Azure Storage
-- Configure Azure Storage replication
-- Start a storage account failover
+- Choose the right Azure Storage redundancy option for your organization
+- Demonstrate how to initiate a storage account failover
 
 ## Prerequisites
 
-- Basic knowledge of Azure Storage accounts and Blob storage
+- Basic knowledge of Azure Storage which includes the use of storage accounts and Azure Blobs
