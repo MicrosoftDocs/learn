@@ -6,6 +6,20 @@ The report types are organized into the following focus areas:
 - **Historical** - Provides patterns and trends over a period of time. Managers and admins will find these reports most helpful.
 - **Specialist** - Allows you to use raw data to create your own custom reports. Admins will find these reports most helpful.
 
+Available reports include the following:
+- Non-compliant devices report (Operational)
+- Windows 10 unhealthy endpoints report (Operational)
+- Windows 10 detected malware report (Operational)
+- Feature update failures report (Operational)
+- Device compliance report (Organizational)
+- Antivirus agent status report (Organizational)
+- Detected malware report (Organizational)
+- Windows 10 feature updates (Organizational)
+- Device compliance trend report (Historical)
+- Azure Monitor integration reports (Specialist)
+
+Additionally, there is a device compliance report is available as the summary report.
+
 The reporting framework provides a consistent and more comprehensive reporting experience. The available reports provide the following functionality:
 - **Search and sort** – You can search and sort across every column, no matter how large the dataset.
 - **Data paging** – You can scan your data based on paging, either page-by-page or by jumping to a specific page.

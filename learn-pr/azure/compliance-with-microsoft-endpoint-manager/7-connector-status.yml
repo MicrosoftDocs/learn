@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.compliance-with-microsoft-endpoint-manager.7-connector-status
-title: Connector status
+title: Review connector status
 metadata:
-  title: Connector status
-  description: Understand connector status.
-  ms.date: 08/19/2020
+  title: Review connector status
+  description: Review and understand connector status.
+  ms.date: 09/28/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial

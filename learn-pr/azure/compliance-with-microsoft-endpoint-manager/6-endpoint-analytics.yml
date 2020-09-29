@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.compliance-with-microsoft-endpoint-manager.6-endpoint-analytics
-title: Endpoint analytics
+title: Understand endpoint analytics
 metadata:
-  title: Endpoint analytics
+  title: Understand endpoint analytics
   description: Understand Endpoint analytics. 
-  ms.date: 08/19/2020
+  ms.date: 09/28/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial

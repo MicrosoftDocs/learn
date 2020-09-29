@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.compliance-with-microsoft-endpoint-manager.5-intune-reports
-title: Intune reports
+title: Learn about Intune reports
 metadata:
-  title: Intune reports
+  title: Learn about Intune reports
   description: Learn about Intune reports.
-  ms.date: 08/19/2020
+  ms.date: 09/28/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial

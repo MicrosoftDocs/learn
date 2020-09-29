@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.compliance-with-microsoft-endpoint-manager.8-client-health
-title: Client health with co-management
+title: Understand client health with co-management
 metadata:
-  title: Client health with co-management
+  title: Understand client health with co-management
   description: Understand client health with co-management. 
-  ms.date: 08/19/2020
+  ms.date: 09/28/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial

@@ -1,4 +1,4 @@
-It's not uncommon for end users to experience long boot times or other disruptions. These disruptions can be due to a combination of:
+It's not uncommon for end users to experience long boot times or other disruptions. These disruptions can be due to a combination of things, such as:
 - Legacy hardware
 - Software configurations that aren't optimized for the end-user experience
 - Issues caused by configuration changes and updates
