@@ -3234,6 +3234,26 @@
       "source_path": "learn-pr/data-ai/build-chat-bot-azure-portal/5-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-chat-bot-azure-portal/5-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/7-build-api.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/8-exercise-func-app.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/9-action.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/10-exercise-action.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
+      "redirect_document_id": false
     }
   ]
 }
