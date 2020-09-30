@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-adoption-framework-govern.3-methodology
-title: Customer narrative
+title: Govern methodology
 metadata:
-  title: Customer narrative
-  description: Tailwind Traders has been moving forward with their cloud adoption plans. However, they are starting to have a few concerns about their ability to govern all of the workloads in the cloud portfolio.
+  title: Govern methodology
+  description: Learn about the methodology that drives the right governance decisions during cloud adoption
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: jumcn

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-adoption-framework-govern.8-mature-cost-management
-title: TBD
+title: Cost Management Discipline
 metadata:
-  title: TBD
-  description: TBD
+  title: Cost Management Discipline
+  description: After establishing a governance foundation, use that foundation to govern costs at scale.
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: jumcn
