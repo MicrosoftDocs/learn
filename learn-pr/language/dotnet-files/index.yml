@@ -1,31 +1,27 @@
 ### YamlMime:Module
 uid: learn.dotnet-files
 metadata:
-  title: TODO index.yml:metadata.title # Should be same as `title`.
-  description: TODO index.yml:metadata.description # This field's contents are not rendered anywhere, but it's used for SEO and for searches on the Browse Learn page. It should contain 2-4 complete sentences, with a focus on key search terms that should surface this module as a result.
+  title: Work with files and directories in a .NET app
+  description: Build an app that manipulates files and directories with C# and .NET.
   ms.date: 09/28/2020
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: TODO index.yaml:title #See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title?branch=master. Capture the *terminal learning objective* (the task the user will learn to complete) and the enabling technology.
-summary: TODO index.yaml:summary #See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries?branch=master. 35 words or less in complete sentences about what the learner will do and how they will do it.
-abstract: | # See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives?branch=master. This section is used to declare learning objectives only, as shown in the example.
-  TODO index.yaml:abstract
-
+title: Work with files and directories in a .NET app
+summary: Build an app that manipulates files and directories with C# and .NET.
+abstract: |   
   By the end of this module, you will be able to:
 
-  - One
-  - Two
-  - Three
-prerequisites: | # See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites?branch=master. These are *knowledge* prerequisites in addition to *technical* prerequisites, so think hard on them - they control the scope of your content.
-  TODO index.yaml:prerequisites
-
-  - One
-  - Two
-  - Three
+  - Work with directories
+  - Create and delete files
+  - Read from files
+  - Write to files
+  - Parse data in files
+prerequisites: |   
+  - Experience writing C# at the beginner level  
 iconUrl: /learn/achievements/generic-badge.svg # Work with your contact on the Learn team to create badge art for the module.
-levels: # TODO, talk to your contact on the Learn team about setting tags for levels, roles and products
+levels:
 - beginner
 roles:
 - developer
@@ -33,9 +29,14 @@ products:
 - azure
 units:
 - learn.dotnet-files.1-introduction
-- learn.dotnet-files.2-content
-- learn.dotnet-files.3-exercise
-- learn.dotnet-files.4-knowledge-check
-- learn.dotnet-files.5-summary
+- learn.dotnet-files.2-file-system
+- learn.dotnet-files.3-exercise-file-system
+- learn.dotnet-files.4-paths
+- learn.dotnet-files.5-exercise-paths
+- learn.dotnet-files.6-create-files-directories
+- learn.dotnet-files.7-exercise-create-files-directories
+- learn.dotnet-files.8-read-write-files
+- learn.dotnet-files.9-exercise-read-write-files
+- learn.dotnet-files.10-summary
 badge:
   uid: learn.dotnet-files.badge
