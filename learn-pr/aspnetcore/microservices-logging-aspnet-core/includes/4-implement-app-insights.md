@@ -1,4 +1,4 @@
-For this exercise you'll make some code changes to the Catalog microservice to implement Application Insights. For some other three microservices code changes are already implemented so you'll just have to handle the configuration.
+In this unit, you'll make some code changes to the Catalog microservice to implement Application Insights. For some other three microservices code changes are already implemented so you'll just have to handle the configuration.
 
 In this exercise, you will:
 
@@ -52,7 +52,7 @@ In this exercise, you will:
 
     In the preceding output, you can see four key-value pairs with the instrumentation keys, ready to be pasted into the configmaps for the catalog, coupon, ordering, and webshoppingagg Helm charts.
 
-1. In the *deploy/k8s/helm-simple* directory, update the following files to include the instrumentation key:
+1. In the *deploy/k8s/helm-simple* directory, update each of the following files to include the appropriate Application Insights instrumentation key:
 
     - *catalog/templates/configmap.yaml*
     - *coupon/templates/configmap.yaml*
@@ -77,37 +77,17 @@ To implement Application Insights in an app:
 
 As mentioned you'll only have to do some of those in the Catalog microservice so let's get rolling on the *src/Services/Catalog/Catalog.API* directory:
 
-1. **Add the Application Insights supporting packages**
+1. Install the supporting Application Insights packages:
 
-   You'll need these three packages:
-
-   - Microsoft.ApplicationInsights.AspNetCore - 2.12.1
-   - Microsoft.ApplicationInsights.Kubernetes - 1.1.1
-   - Serilog.Sinks.ApplicationInsights - 3.1.0
-
-   You can install them with Visual Studio or using the following commands on each of the projects:
-
-   ```dotnetcli
-   dotnet add package Microsoft.ApplicationInsights.AspNetCore --version 2.12.1 && \
-       dotnet add package Microsoft.ApplicationInsights.Kubernetes --version 1.1.1 && \
-       dotnet add package Serilog.Sinks.ApplicationInsights --version 3.1.0
+    ```dotnetcli
+    pushd src/Services/Catalog/Catalog.API/ && \
+        dotnet add package Microsoft.ApplicationInsights.AspNetCore --version 2.12.1 && \
+        dotnet add package Microsoft.ApplicationInsights.Kubernetes --version 1.1.1 && \
+        dotnet add package Serilog.Sinks.ApplicationInsights --version 3.1.0 && \
+        popd
    ```
 
-   The packages are already installed in the projects so you can skip this step.
-
-1. **Register the telemetry services in the DI container**
-
-    You have to register the following two services in *Startup.cs*:
-
-    ```csharp
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddApplicationInsightsTelemetry(Configuration);
-        services.AddApplicationInsightsKubernetesEnricher();
-    }
-    ```
-
-    For the Catalog microservice that's already done in the `AddAppInsights` extension method:
+1. In *Extensions/ServiceCollectionExtensions.cs*, replace the comment `// Add AddAppInsights extension method` with the following extension method:
 
     ```csharp
     public static class CustomExtensionMethods
@@ -123,51 +103,23 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
     }
     ```
 
-1. **Add the Application Insights sink for Serilog**
+1. In the *Startup.cs* file's `ConfigureServices` method, invoke the `AddAppInsights` extension method.
 
-    Open *Program.cs* and make it like this:
+    :::code language="csharp" source="../code/src/services/catalog/catalog.api/startup.cs" highlight="3":::
 
-    ```csharp
-    using Microsoft.ApplicationInsights.Extensibility;
-    //...
+    The preceding code registers the telemetry services in the dependency injection container.
 
-    namespace Microsoft.eShopOnContainers.Services.Catalog.API
-    {
-        public class Program
-        {
-            //...
-            public static int Main(string[] args)
-            {
-              //...
-            }
+1. Add the Application Insights sink for Serilog.
 
-            private static IWebHost CreateHostBuilder(IConfiguration configuration, string[] args) =>
-                //..
+    In *Program.cs*, apply the following changes to add the Application Insights sink for Serilog:
 
-            private static Serilog.ILogger CreateSerilogLogger(IConfiguration configuration)
-            {
-                var seqServerUrl = configuration["Serilog:SeqServerUrl"];
-                var logstashUrl = configuration["Serilog:LogstashgUrl"];
-                var instrumentationKey = configuration["APPINSIGHTS_INSTRUMENTATIONKEY"];
+    1. Add the highlighted code to the `CreateSerilogLogger` method:
 
-                return new LoggerConfiguration()
-                    .MinimumLevel.Verbose()
-                    .Enrich.WithProperty("ApplicationContext", AppName)
-                    .Enrich.FromLogContext()
-                    .WriteTo.Console()
-                    .WriteTo.ApplicationInsights(instrumentationKey, TelemetryConverter.Traces)
-                    .WriteTo.Seq(string.IsNullOrWhiteSpace(seqServerUrl) ? "http://seq" : seqServerUrl)
-                    .WriteTo.Http(string.IsNullOrWhiteSpace(logstashUrl) ? "http://logstash:8080" : logstashUrl)
-                    .ReadFrom.Configuration(configuration)
-                    .CreateLogger();
-            }
+        :::code language="csharp" source="../code/src/services/catalog/catalog.api/program.cs" highlight="5,12":::
 
-            //...
-        }
-    }
-    ```
+    1. Uncomment the `//using Microsoft.ApplicationInsights.Extensibility;` line.
 
-    The lines you have to add are commented out so they'll be easy to spot.
+        The preceding change resolves the `WriteTo.ApplicationInsights` method call in the previous step.
 
 > [!NOTE]
 > Startup logging with Application Insights [isn't directly supported](/aspnet/core/fundamentals/logging/#log-during-host-construction), so it must be accomplished by using other logger. For this example we're using Serilog with the Application Insights sink, passing the instrumentation key. Although this is the simplest way to enable logging to Application Insights during startup, it can lead to losing correlation between metrics and log traces.
@@ -176,16 +128,10 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
 
     You have to create a new image for the updated microservice, and you'll use the ACR instance you created at the beginning of the exercise for this.
 
-    Begin by running this command to update your environment:
+    Run this script to build the Catalog microservice:
 
     ```bash
-    eval $(cat ~/clouddrive/source/create-aks-exports.txt)
-    ```
-
-    Then run this script to build the Catalog microservice:
-
-    ```bash
-    ./build-to-acr.sh --services catalog-api
+    deploy/k8s/build-to-acr.sh --services catalog-api
     ```
 
     The script starts an [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) and will take a little while to run. When it finishes you should see something like this:
@@ -199,28 +145,22 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
     The `WebAggregator` microservice has also been updated to include the Application Insights telemetry, but the changes are already implemented, so you just have to build the image to ACR, just like you did in the previous step, by running the following script:
 
     ```bash
-    ./build-to-acr.sh --services webshoppingagg
+    deploy/k8s/build-to-acr.sh --services webshoppingagg
     ```
 
 1. **Redeploy the microservices**
 
     Since you updated the Catalog and the WebAggregator microservices and reconfigured the other two when updating their ConfigMaps, you'll now redeploy the Catalog and WebAggregator microservices using the images from ACR and the other two from the initial repository, **eshopdev**.
 
-    Update the environment with the relevant environment variables from the initial deployment, by running this command.
-
-    ```bash
-    eval $(cat ~/clouddrive/source/deploy-application-exports.txt)
-    ```
-
     Deploy the updated Catalog microservice from the ACR by running this script:
 
     ```bash
-    ./deploy-application.sh --charts catalog,webshoppingagg
+    deploy/k8s/build-to-acr.sh --charts catalog,webshoppingagg
     ```
 
     The above script takes the image repository from the `ESHOP_REGISTRY` variable, and you should see a message informing the image is being taken from a registry named like `eshoplearn20200717170233865.azurecr.io`.
 
-    Now redeploy the other two microservices from the initial repository. Since they were just reconfigued, you can still use the original images.
+    Now redeploy the other two microservices from the initial repository. Since they were just reconfigured, you can still use the original images.
 
     So just run this script:
 
@@ -230,7 +170,7 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
 
     This time you should be informed that images are being taken from the `eshopdev` registry.
 
-## Monitor your application from the Azure Portal
+## Monitor your app from the Azure portal
 
 Once the deployment is complete and all services are up and available, as per the `webstatus` page, begin working with the application. Log out, log in, create something between five and ten orders, using discount coupons and without using them, and so on.
 
@@ -250,7 +190,7 @@ If you click on the `Application map` option in the left sidebar, you should see
 
 :::image type="content" source="../media/application-insights-application-map.png" alt-text="Application map" border="true" lightbox="../media/application-insights-application-map.png":::
 
-In the graph you can see that the services with Application Insights instrumentation are shown as green-circled nodes. The diagram shows the calls traced between the four microservices and other dependencies such as databases and other microservices that don't have Application Insights instrumentation, along with some information on the call volumes and response times.
+In the graph, you can see that the services with Application Insights instrumentation are shown as green-circled nodes. The diagram shows the calls traced between the four microservices and other dependencies such as databases and other microservices that don't have Application Insights instrumentation, along with some information on the call volumes and response times.
 
 You can also look at the log traces, with the Search option in the sidebar:
 
