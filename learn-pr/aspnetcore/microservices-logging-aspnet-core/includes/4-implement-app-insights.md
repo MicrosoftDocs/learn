@@ -52,8 +52,7 @@ In this exercise, you will:
 
     In the preceding output, you can see four key-value pairs with the instrumentation keys, ready to be pasted into the configmaps for the catalog, coupon, ordering, and webshoppingagg Helm charts.
 
-1. In the *deploy/k8s/helm-simple* directory, update each of the following files to include the appropriate Application Insights instrumentation key:
-
+1. In the *deploy/k8s/helm-simple* directory, uncomment the `APPINSIGHTS_INSTRUMENTATIONKEY` environment variable in each of the following files. Replace the `<key>` placeholder with the appropriate Application Insights instrumentation key. Save your changes.
     - *catalog/templates/configmap.yaml*
     - *coupon/templates/configmap.yaml*
     - *ordering/templates/configmap.yaml*
@@ -68,14 +67,7 @@ In this exercise, you will:
 
 ## Enable logging to Application Insights
 
-To implement Application Insights in an app:
-
-1. Add the supporting packages.
-1. Register the Application Insights telemetry services in the DI container.
-1. Add the Application Insights sink for Serilog to include log traces.
-1. Build the new image for the updated microservice.
-
-As mentioned you'll only have to do some of those in the Catalog microservice so let's get rolling on the *src/Services/Catalog/Catalog.API* directory:
+Logging to Application Insights has been enabled in all services except for the catalog service. Complete the following steps to implement Application Insights in the catalog service, found in the *src/Services/Catalog/Catalog.API* directory.
 
 1. Install the supporting Application Insights NuGet packages:
 
@@ -87,31 +79,33 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
         popd
     ```
 
-1. In *Extensions/ServiceCollectionExtensions.cs*, replace the comment `// Add AddAppInsights extension method` with the following extension method:
+1. In *Extensions/ServiceCollectionExtensions.cs*, replace the comment `// Add AddAppInsights extension method` with the following extension method. Save your changes.
 
     :::code language="csharp" source="../code/src/services/catalog/catalog.api/extensions/servicecollectionextensions.cs":::
 
-1. In the *Startup.cs* file's `ConfigureServices` method, invoke the `AddAppInsights` extension method.
+1. In the *Startup.cs* file's `ConfigureServices` method, invoke the `AddAppInsights` extension method. Save your changes.
 
     :::code language="csharp" source="../code/src/services/catalog/catalog.api/startup.cs" highlight="3":::
 
     The preceding code registers the telemetry services in the dependency injection container.
 
-1. In *Program.cs*, apply the following changes to add the Application Insights sink for Serilog:
+1. In *Program.cs*, apply the following changes to add the Application Insights sink for Serilog to include log traces:
     1. Add the highlighted code to the `CreateSerilogLogger` method:
 
         :::code language="csharp" source="../code/src/services/catalog/catalog.api/program.cs" highlight="5,12":::
 
-    1. Uncomment the `//using Microsoft.ApplicationInsights.Extensibility;` line.
+    1. Uncomment the `//using Microsoft.ApplicationInsights.Extensibility;` line. Save your changes.
 
         The preceding change resolves the `WriteTo.ApplicationInsights` method call in the previous step.
 
 > [!NOTE]
 > Startup logging with Application Insights [isn't directly supported](/aspnet/core/fundamentals/logging/#log-during-host-construction), so it must be accomplished by using another logger. This example uses Serilog with the Application Insights sink, passing the instrumentation key. Although this is the simplest way to enable logging to Application Insights during startup, it can lead to losing correlation between metrics and log traces.
 
+## Build and deploy modified container images
+
 1. Build the new image for the catalog service.
 
-    You have to create a new image for the updated microservice, and you'll use the ACR instance you created at the beginning of the exercise for this.
+    You have to create a new image for the updated service, and you'll use the ACR instance you created at the beginning of the exercise for this.
 
     Run this script to build the catalog service:
 
@@ -119,11 +113,13 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
     deploy/k8s/build-to-acr.sh --services catalog-api
     ```
 
-    The script starts an [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) and will take a little while to run. When it finishes you should see something like this:
+    The script starts an [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) and will take a little while to run. When it finishes, a variation of the following line appears to acknowledge that the Docker image was pushed to ACR:
+
+    ```console
+    2020/09/30 20:36:03 Successfully pushed image: eshoplearn20200930201047107.azurecr.io/catalog.api:linux-latest
+    ```
 
     :::image type="content" source="../media/build-to-acr.png" alt-text="Output from the build-to-acr script" border="true" lightbox="../media/build-to-acr.png":::
-
-    That shows the image was created successfully in the ACR.
 
 1. Build the web aggregator service.
 
@@ -143,7 +139,7 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
     deploy/k8s/deploy-application.sh --charts catalog,webshoppingagg
     ```
 
-    The above script takes the image repository from the `ESHOP_REGISTRY` variable, and you should see a message informing the image is being taken from a registry named like `eshoplearn20200717170233865.azurecr.io`.
+    The preceding script takes the image repository from the `ESHOP_REGISTRY` variable, and you should see a message informing the image is being taken from a registry named like `eshoplearn20200717170233865.azurecr.io`.
 
     Now redeploy the other two microservices from the initial repository. Since they were just reconfigured, you can still use the original images.
 
@@ -157,15 +153,15 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
 
 ## Monitor your app from the Azure portal
 
-Once the deployment is complete and all services are up and available, as per the `webstatus` page, begin working with the application. Log out, log in, create something between five and ten orders, using discount coupons and without using them, and so on.
+Once the deployment is complete and all services are up and available, as per the `webstatus` page, begin working with the app. Log out, log in, create something between five and ten orders, using discount coupons and without using them, and so on.
 
-Now head to the Azure Portal and search for the resource group `eshop-learn-rg` or the name you used when beginning this module, and click on the `webshoppingagg-appinsights` resource and the click on the Live Metrics link.
+Now head to the Azure portal and search for the resource group `eshop-learn-rg` or the name you used when beginning this module, and click on the `webshoppingagg-appinsights` resource and the click on the Live Metrics link.
 
 You should see something like this:
 
 :::image type="content" source="../media/webshoppingagg-live-metrics.png" alt-text="Azure portal showing the live metrics dashboard for the webshoppingagg-appinsights resource" border="true" lightbox="../media/webshoppingagg-live-metrics.png":::
 
-In the image above you can see some sampled logging traces to the right, as well as some Incoming Request real-time graphics, showing the request rate, request duration and request failure rate. There's also information for outgoing request, that is, calling the dependencies. You can also see the overall health, with memory consumption, CPU utilization and exceptions rate.
+In the preceding image, you can see some sample logging traces to the right, as well as some Incoming Request real-time graphics, showing the request rate, request duration and request failure rate. There's also information for outgoing request, that is, calling the dependencies. You can also see the overall health, with memory consumption, CPU utilization, and exceptions rate.
 
 The information above is overall, for all instances running the microservice, if you reconfigure the deployments to use more than one instance you'll be able to select one specific server from the list in the bottom of the dashboard, you'll see the server-specific metrics (There's only on server in this exercise).
 
