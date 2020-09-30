@@ -2,7 +2,7 @@ Imagine you are looking through your email and you see what looks like an alert 
 
 Unfortunately, in that moment, an attacker has successfully stolen your account login information.
 
-This email-based, *social engineering* technique is called *phishing*. Attackers use this technique frequently, sending [over a billion of phishing emails every year.](https://www.microsoft.com/security/blog/2018/10/17/how-office-365-learned-to-reel-in-phish/?azure-portal=true)
+This email-based, *social engineering* technique is called *phishing*. Attackers use this technique frequently, sending [over a billion phishing emails every year.](https://www.microsoft.com/security/blog/2018/10/17/how-office-365-learned-to-reel-in-phish/?azure-portal=true)
 
 There are ways to identify and protect yourself from phishing. Let's take a closer look at phishing and how you can protect yourself to avoid becoming a victim.
 
@@ -32,7 +32,7 @@ Attackers know what emotions get people to respond. For example, they will send 
 
 Another common approach is to offer something too good to be true. The attacker will tell you that you’ve won an award or that they need you to manage their large sums of money.
 
-One other common approach that attackers will use is to take advantage of your curiosity. For example, they may be making a fake job offer, pretending to be an old friend, or asking for help for their fake nonprofit.
+One other common approach that attackers will use is to take advantage of your curiosity. For example, they may make a fake job offer, pretend to be an old friend, or ask for help for their fake nonprofit.
 
 :::image type="content" source="../media/2-phishing-examples.png" alt-text="Three-part diagram depicting common social engineering tactics. Examples include taking advantage of human emotions and curiosity, as well as offers of valued goods.":::
 
@@ -54,7 +54,7 @@ In the image below, you can see an example of an email with all of these red fla
 
 :::image type="content" source="../media/2-phishing-email.svg" alt-text="Sample email showcasing common signs of phishing, including fake email addresses, unexpected attachments, urgent messaging, bad links, and poor grammar.":::
 
-Now that you recognize phishing email and decided to not click any links or open any attachments, let’s talk about what else you can do. Your email application or website probably has the *report phishing* feature. Using this feature will notify the email provider and help prevent similar email in the future. And, of course, you can delete the phishing email too.
+Now that you can recognize phishing email and know to not click any links or open any attachments, let’s talk about what else you can do. Your email application or website probably has the *report phishing* feature. Using this feature will notify the email provider and help prevent similar email in the future. And, of course, you can delete the phishing email too.
 
 If you aren’t sure about an email from a friend or family member, you still don’t need to click any links or open any attachments. You can give them a call or send a text message and ask if they sent you anything.
 

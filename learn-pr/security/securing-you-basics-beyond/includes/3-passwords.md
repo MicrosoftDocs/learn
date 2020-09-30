@@ -6,7 +6,7 @@ Credentials are the combination of a username and a password. The username is th
 
 ## How secret are your passwords?
 
-Many passwords are not as secret as people think they are. There are currently *billions* of username and password combinations for sale, but there are even billions more available for free. Where did they all come from? Previous breaches. There are thousands of breaches every year, and those breaches expose all kinds of personal data, along with account information that often includes usernames and passwords.
+Many passwords are not as secret as people think they are. There are currently *billions* of username and password combinations for sale, but there are even more available for free. Where did they all come from? Previous breaches. There are thousands of breaches every year, and those breaches expose all kinds of personal data, along with account information that often includes usernames and passwords.
 
 What is a *data breach* and why should you care? A data breach takes place when information that shouldn't be public is stolen. This often happens as a result of a hacker taking advantage of flaws in a security system or simply just taking the data after a company accidentally exposes a database with no security settings turned on at all. That information can then be used for a variety of bad things, including identity theft, blackmail, harassment, and other crimes. Even an account you may not care about, such as an email account you don’t use anymore, could be used by an attacker to pretend to be you. They could send email with malware to your contacts or sign up for other accounts with your name. There are many other bad uses for stolen accounts.
 
