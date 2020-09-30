@@ -13,7 +13,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "As an administrator, you need to retrieve the IP address from a particular VM using Bash.  Which of the following tools should you use?"
+  - content: "As an administrator, you need to retrieve the IP address from a particular VM by using Bash.  Which of the following tools should you use?"
     choices:
     - content: "ARM templates"
       isCorrect: false
