@@ -62,7 +62,7 @@ You will:
 
     For example, update the catalog service's Helm chart template as follows:
 
-    :::code language="yml" source="../code/deploy/k8s/helm-simple/catalog/templates/configmap.yaml" highlight="9":::
+    :::code language="yaml" source="../code/deploy/k8s/helm-simple/catalog/templates/configmap.yaml" highlight="9":::
 
     > [!IMPORTANT]
     > Each microservice requires a different instrumentation key.
