@@ -2,7 +2,7 @@ You've been tasked with defining and implementing the governance strategy for Ta
 
 Cloud governance requires good analysis and requirement gathering. Luckily, the Cloud Adoption Framework for Azure can help you define and implement your governance strategy. There are several services and features in Azure to support these efforts:
 
-* Azure role-based access control (RBAC) enables you to create roles that define access permissions.
+* Azure role-based access control (Azure RBAC) enables you to create roles that define access permissions.
 * Resource locks prevent resources from being accidentally deleted or changed.
 * Resource tags provide extra information, or metadata, about your resources.
 * Azure Policy is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources.
