@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Write a smart contract with the Blockchain Development Kit for Ethereum
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-write-contract.md)]
+  [!include[](includes/5-write-contract.md)]

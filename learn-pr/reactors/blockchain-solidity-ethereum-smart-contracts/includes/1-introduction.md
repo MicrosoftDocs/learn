@@ -21,6 +21,7 @@ By the end of this module, you will be able to:
 - Ethereum platform knowledge
 - Familiarity with Solidity programming language
 - Visual Studio Code installed
-- Knowledge of how to download programs from the internet
-- Knowledge of how to use the command line
+- Python installed
+- Git installed
+- Node.js installed
 - An Azure account

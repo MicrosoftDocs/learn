@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Test your smart contract
 durationInMinutes: 8
 content: |
-  [!include[](includes/7-test-contract.md)]
+  [!include[](includes/6-test-contract.md)]
