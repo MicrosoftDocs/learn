@@ -6,7 +6,7 @@ Conversations might begin at a high level, but the two officers might want to di
 
 Apply the decision criteria you learned about in the preceding unit to find the right option.
 
-First, in this scenario, does Tailwind Traders need to perform one-off management, administrative, or reporting actions?  Yes, and given the requirement to view data visually and create custom reports during the meeting, the Azure portal is the best choice.  The meeting attendees can quickly find answers to questions that they're looking for by using a wealth of reporting options.
+First, in this scenario, does Tailwind Traders need to perform one-off management, administrative, or reporting actions?  Yes, and given the requirement to view data visually and create custom reports during the meeting, the Azure portal is the best choice.  The meeting attendees can quickly find answers to their questions by using a wealth of reporting options.
 
 The next two decision criteria don't apply to this scenario, because the director of cloud operations and the CFO won't be deploying or configuring any resources.
 
