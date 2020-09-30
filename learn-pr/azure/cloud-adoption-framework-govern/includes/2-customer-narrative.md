@@ -33,7 +33,7 @@ Tailwind has an existing policy which states "customer and financial data can on
 - Application of identify and access management requirements
 - A means to ensure that all of these controls are consistently applied to all workloads, in spite of the scale and learning curve challenges across the technology teams.
 
-Demonstrating these controls will help the CIO have the confidence that the team is ready to migrate more complex, higher risk workloads to the cloud. This demonstration would provide the governance balance. 
+Demonstrating these controls will help the CIO have the confidence that the team is ready to migrate more complex, higher risk workloads to the cloud. This demonstration would provide the governance balance.
 
 Unfortunately, this governance requirement was only discovered as the team prepared to deploy their first mission critical workload to production. This policy has essentially frozen the effort to migrate their existing data centers. A bit more foresight would have allowed this policy to be addressed sooner, as they were moving lower risk workloads to production.
 

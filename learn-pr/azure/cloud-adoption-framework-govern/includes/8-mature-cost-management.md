@@ -23,7 +23,7 @@ The objective of this discipline is to apply cost management best practices.
 
 Cost management across the enterprise is a cloud governance and cloud operation function. All cost management decisions result in a change to the assets which support a workload. When those changes impact the architecture of a workload, additional considerations are required to minimize the impact on end users and business functions. The cloud adoption team who configured or developed that workload are likely to hold accountability for completing those types of changes.
 
-- **Tagging is critical to all governance.** Ensure all workloads and resources follow [proper naming and tagging conventions](../../ready/azure-best-practices/naming-and-tagging.md) and [enforce tagging conventions using Azure Policy](/azure/governance/policy/tutorials/govern-tags).
+- **Tagging is critical to all governance.** Ensure all workloads and resources follow [proper naming and tagging conventions](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging.md) and [enforce tagging conventions using Azure Policy](/azure/governance/policy/tutorials/govern-tags).
 - **Identify right size opportunities.** Review your current resource utilization and performance requirements across the environment.
 - **Resize:** Modify each resource to use the smallest instance or SKU that can support the performance requirements of each resource.
 - **Horizontal over vertical scale.** Using multiple small instances can allow for an easier scaling path that a single larger instance. This allows for scale automation, which creates cost optimization.
@@ -32,7 +32,7 @@ Cost management across the enterprise is a cloud governance and cloud operation 
 
 The following best practices are typically completed by a member of the cloud governance or cloud operations team, in accordance with patching and other scheduled maintenance processes. These best practices map to actionable guidance later in this article.
 
-- **Tagging is critical to all governance:** Ensure all workloads and resources follow [proper naming and tagging conventions](../../ready/azure-best-practices/naming-and-tagging.md) and [enforce tagging conventions using Azure Policy](/azure/governance/policy/tutorials/govern-tags).
+- **Tagging is critical to all governance:** Ensure all workloads and resources follow [proper naming and tagging conventions](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging.md) and [enforce tagging conventions using Azure Policy](/azure/governance/policy/tutorials/govern-tags).
 - **Identify right size opportunities:** Review your current resource utilization and performance requirements across the environment to identify resources which have remained underutilized for a period of time (generally more than 90 days).
 - **Right-size provisioned SKUs:** Modify underutilized resource to use the smallest instance or SKU that can support the performance requirements of each resource.
 - **Auto-shutdown for VMs:** When a VM isn't in constant use, consider automated shutdown. The VM won't be deleted or decommissioned, but it will stop consuming compute and memory costs until it's turned back on.

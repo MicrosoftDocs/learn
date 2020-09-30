@@ -42,7 +42,7 @@ In the image above, the following would be the high-level design:
 
 When you start configuring your first management group hierarchy, start with a smaller hierarchy to allow for experimentation & to quickly overcome initial learning curves.
 
-:::image type="content" source="../media/small-management-group-hierarchy.png" alt-text="management group hierarchy" border="false":::
+:::image type="content" source="../media/small-management-group-hierarchy.png" alt-text="Initial, smaller management group hierarchy" border="false":::
 
 In this smaller version, attempt the following configuration steps:
 
