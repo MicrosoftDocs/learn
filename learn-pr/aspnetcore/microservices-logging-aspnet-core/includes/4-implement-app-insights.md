@@ -1,4 +1,4 @@
-In this unit, you'll make some code changes to the Catalog microservice to implement Application Insights. For some other three microservices code changes are already implemented so you'll just have to handle the configuration.
+In this unit, you'll make some code changes to the catalog service to implement Application Insights. For the other three microservices, code changes are already implemented so you'll just have to handle the configuration.
 
 In this exercise, you will:
 
@@ -77,7 +77,7 @@ To implement Application Insights in an app:
 
 As mentioned you'll only have to do some of those in the Catalog microservice so let's get rolling on the *src/Services/Catalog/Catalog.API* directory:
 
-1. Install the supporting Application Insights packages:
+1. Install the supporting Application Insights NuGet packages:
 
     ```dotnetcli
     pushd src/Services/Catalog/Catalog.API/ && \
@@ -85,23 +85,11 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
         dotnet add package Microsoft.ApplicationInsights.Kubernetes --version 1.1.1 && \
         dotnet add package Serilog.Sinks.ApplicationInsights --version 3.1.0 && \
         popd
-   ```
+    ```
 
 1. In *Extensions/ServiceCollectionExtensions.cs*, replace the comment `// Add AddAppInsights extension method` with the following extension method:
 
-    ```csharp
-    public static class CustomExtensionMethods
-    {
-        public static IServiceCollection AddAppInsights(
-            this IServiceCollection services, IConfiguration configuration)
-        {
-            services.AddApplicationInsightsTelemetry(configuration);
-            services.AddApplicationInsightsKubernetesEnricher();
-
-            return services;
-        }
-    }
-    ```
+    :::code language="csharp" source="../code/src/services/catalog/catalog.api/extensions/servicecollectionextensions.cs":::
 
 1. In the *Startup.cs* file's `ConfigureServices` method, invoke the `AddAppInsights` extension method.
 
@@ -109,10 +97,7 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
 
     The preceding code registers the telemetry services in the dependency injection container.
 
-1. Add the Application Insights sink for Serilog.
-
-    In *Program.cs*, apply the following changes to add the Application Insights sink for Serilog:
-
+1. In *Program.cs*, apply the following changes to add the Application Insights sink for Serilog:
     1. Add the highlighted code to the `CreateSerilogLogger` method:
 
         :::code language="csharp" source="../code/src/services/catalog/catalog.api/program.cs" highlight="5,12":::
@@ -122,13 +107,13 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
         The preceding change resolves the `WriteTo.ApplicationInsights` method call in the previous step.
 
 > [!NOTE]
-> Startup logging with Application Insights [isn't directly supported](/aspnet/core/fundamentals/logging/#log-during-host-construction), so it must be accomplished by using other logger. For this example we're using Serilog with the Application Insights sink, passing the instrumentation key. Although this is the simplest way to enable logging to Application Insights during startup, it can lead to losing correlation between metrics and log traces.
+> Startup logging with Application Insights [isn't directly supported](/aspnet/core/fundamentals/logging/#log-during-host-construction), so it must be accomplished by using another logger. This example uses Serilog with the Application Insights sink, passing the instrumentation key. Although this is the simplest way to enable logging to Application Insights during startup, it can lead to losing correlation between metrics and log traces.
 
-1. **Build the new image for the Catalog microservice**
+1. Build the new image for the catalog service.
 
     You have to create a new image for the updated microservice, and you'll use the ACR instance you created at the beginning of the exercise for this.
 
-    Run this script to build the Catalog microservice:
+    Run this script to build the catalog service:
 
     ```bash
     deploy/k8s/build-to-acr.sh --services catalog-api
@@ -140,22 +125,22 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
 
     That shows the image was created successfully in the ACR.
 
-1. **Build the WebAggregator microservice**
+1. Build the web aggregator service.
 
-    The `WebAggregator` microservice has also been updated to include the Application Insights telemetry, but the changes are already implemented, so you just have to build the image to ACR, just like you did in the previous step, by running the following script:
+    The WebAggregator microservice has also been updated to include the Application Insights telemetry, but the changes are already implemented, so you just have to build the image to ACR, just like you did in the previous step, by running the following script:
 
     ```bash
     deploy/k8s/build-to-acr.sh --services webshoppingagg
     ```
 
-1. **Redeploy the microservices**
+1. Redeploy the services.
 
-    Since you updated the Catalog and the WebAggregator microservices and reconfigured the other two when updating their ConfigMaps, you'll now redeploy the Catalog and WebAggregator microservices using the images from ACR and the other two from the initial repository, **eshopdev**.
+    Since you updated the catalog and the WebAggregator services and reconfigured the other two when updating their ConfigMaps, you'll now redeploy the catalog and WebAggregator services using the images from ACR and the other two from the initial repository, **eshopdev**.
 
-    Deploy the updated Catalog microservice from the ACR by running this script:
+    Deploy the updated catalog service from the ACR by running this script:
 
     ```bash
-    deploy/k8s/build-to-acr.sh --charts catalog,webshoppingagg
+    deploy/k8s/deploy-application.sh --charts catalog,webshoppingagg
     ```
 
     The above script takes the image repository from the `ESHOP_REGISTRY` variable, and you should see a message informing the image is being taken from a registry named like `eshoplearn20200717170233865.azurecr.io`.
@@ -165,7 +150,7 @@ As mentioned you'll only have to do some of those in the Catalog microservice so
     So just run this script:
 
     ```bash
-    ./deploy-application.sh --registry eshopdev --charts coupon,ordering
+    deploy/k8s/deploy-application.sh --registry eshopdev --charts coupon,ordering
     ```
 
     This time you should be informed that images are being taken from the `eshopdev` registry.
