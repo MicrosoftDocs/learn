@@ -23,7 +23,6 @@ roles:
 - administrator
 - business-user
 - data-engineer
-- student
 products:
 - azure
 units:
