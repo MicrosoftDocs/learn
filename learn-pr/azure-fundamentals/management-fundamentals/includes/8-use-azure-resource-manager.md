@@ -12,7 +12,7 @@ First, in this scenario, does Tailwind Traders need to perform one-off managemen
 
 Second, does Tailwind Traders need a repeatable and reliable way to deploy its entire infrastructure?  Yes, this is exactly what the company needs.  Our decision criteria lead us to choose Azure Resource Manager templates (ARM templates) for this scenario.
 
-You could use Azure PowerShell or the Azure CLI, but these scripting technologies have significant limitations when it comes to deploying infrastructure. ARM templates overcome these limitations.
+You could use Azure PowerShell or the Azure CLI, but these scripting technologies have significant limitations when it comes to deploying infrastructure. ARM templates can help overcome these limitations.
 
 The third decision criterion assumes that you need to write a script by using imperative code. However, when you use ARM templates, you define your infrastructure declaratively by using JSON code. In some instances, you still might need imperative code for configuration or clean-up tasks.  In these cases, you can trigger the execution of scripts by using either Azure PowerShell or the Azure CLI to perform these tasks.
 
