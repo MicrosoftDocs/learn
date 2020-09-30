@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.dotnet-files.2-content
+uid: learn.dotnet-files.2-file-system
 title: Content
 metadata:
   title: Content
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-content.md)]
+  [!include[](includes/2-file-system.md)]
