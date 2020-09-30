@@ -49,7 +49,10 @@ You will:
     }
     ```
 
-    The preceding output contains four key-value pairs with the Application Insights instrumentation keys.
+    In the preceding output, there are four key-value pairs, where:
+
+    - The `Name` property represents the service name.
+    - The `Key` property represents the Application Insights instrumentation key.
 
 1. In the *deploy/k8s/helm-simple* directory, uncomment the `APPINSIGHTS_INSTRUMENTATIONKEY` environment variable in each of the following files. Replace the `<key>` placeholder with the appropriate Application Insights instrumentation key. Save your changes.
     - *catalog/templates/configmap.yaml*
@@ -57,7 +60,7 @@ You will:
     - *ordering/templates/configmap.yaml*
     - *webshoppingagg/templates/configmap.yaml*
 
-    For example, update the `catalog` Helm chart template as follows:
+    For example, update the catalog service's Helm chart template as follows:
 
     :::code language="yml" source="../code/deploy/k8s/helm-simple/catalog/templates/configmap.yaml" highlight="9":::
 
@@ -66,7 +69,7 @@ You will:
 
 ## Enable logging to Application Insights
 
-Logging to Application Insights has been enabled in all services except for the catalog service. Complete the following steps to implement Application Insights in the catalog service.
+Logging to Application Insights has been enabled in the ordering and coupon services, but not the catalog service. Complete the following steps to implement Application Insights in the catalog service.
 
 1. Install the supporting Application Insights NuGet packages:
 
@@ -104,15 +107,15 @@ Logging to Application Insights has been enabled in all services except for the 
 
 ## Build and deploy modified container images
 
-In the previous section, you modified the catalog service to enable Application Insights telemetry. The web aggregator service, provided by the setup script, has already been instrumented. To update the production deployments of these services, the container images will be built and hosted on ACR.
+In the previous section, you modified the catalog service to enable Application Insights telemetry. The HTTP aggregator code has already been similarly instrumented. To update the production service deployments, the container images will be built and hosted on ACR.
 
-1. Run this script to build the catalog and web aggregator images:
+1. Run this script to build the catalog and HTTP aggregator images:
 
     ```bash
     deploy/k8s/build-to-acr.sh --services catalog-api,webshoppingagg
     ```
 
-    The script starts [ACR quick tasks](/azure/container-registry/container-registry-tasks-overview#quick-task) for each service. Each service's container image is built independently. Variations of the following lines confirm that the catalog and web aggregator Docker images were pushed to ACR:
+    The script starts [ACR quick tasks](/azure/container-registry/container-registry-tasks-overview#quick-task) for each service. Each service's container image is built independently. Variations of the following lines confirm that the catalog and HTTP aggregator Docker images were pushed to ACR:
 
     ```console
     2020/09/30 20:51:57 Successfully pushed image: eshoplearn20200929194132362.azurecr.io/catalog.api:linux-latest
@@ -122,7 +125,7 @@ In the previous section, you modified the catalog service to enable Application 
     2020/09/30 20:54:15 Successfully pushed image: eshoplearn20200929194132362.azurecr.io/webshoppingagg:linux-latest
     ```
 
-1. Deploy the updated catalog and web aggregator services from ACR by running this script:
+1. Deploy the updated catalog service and HTTP aggregator from ACR by running the following script:
 
     ```bash
     deploy/k8s/deploy-application.sh --charts catalog,webshoppingagg

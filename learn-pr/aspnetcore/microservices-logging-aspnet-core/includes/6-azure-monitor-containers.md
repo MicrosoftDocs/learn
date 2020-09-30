@@ -31,7 +31,7 @@ Besides the general cluster dashboard, You can also explore any of the tabs to z
 
 ## Create a simple metric for the Prometheus endpoint
 
-For this exercise you'll implement a simple counter metric, for the request count on the Catalog microservice. To do so you will:
+For this exercise, you'll implement a simple counter metric, for the request count on the Catalog microservice. To do so you will:
 
 1. Install the Prometheus package
 1. Add the custom metrics counter and the Prometheus middleware to the request pipeline.
