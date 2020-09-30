@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.7-test-contract
+uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.6-test-contract
 metadata:
   title: Exercise - Test your smart contract
   description: Test your smart contract
@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Test your smart contract
 durationInMinutes: 8
 content: |
-  [!include[](includes/7-test-contract.md)]
+  [!include[](includes/6-test-contract.md)]

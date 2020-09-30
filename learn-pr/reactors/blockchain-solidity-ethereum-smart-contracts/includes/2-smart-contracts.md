@@ -8,7 +8,7 @@ The most prominent use for smart contracts is with Ethereum, the worlds first pr
 
  The language to write contracts in is Solidity. Solidity is Turing complete which means you can write complicated contracts that are defined and coded in a clear way.  
 
-Since every state transition is logged and immutable it is imperative that you thoroughly test the contract before going to production, because bug fixes can be very costly and even cause critical damage to the system.
+Since every state transition is logged and cannot be modified, it is imperative that you thoroughly test the contract before going to production, because bug fixes can be very costly and even cause critical damage to the system.
 
 The key properties and advantages of smart contracts are that they are:
 
@@ -18,12 +18,11 @@ The key properties and advantages of smart contracts are that they are:
 
 ## Use cases
 
-- **Insurance**: Smart contracts can simplify and streamline the claims process by automatically triggering a claim when certain events occur. Claim details can be recorded on the blockchain in order to determine the amount of compensation. This would reduce processing times and human errors.
-- **Voting**: Smart contracts can be used to make voting automatic and transparent. Each contract can serve as one ballot which represents a voter's identity. Since a blockchain is immutable, it can ensure that votes have not been tampered with and that there is no voting fraud.
-- **Supply chain**. Smart contracts can record ownership rights as items move through the supply chain confirming who is responsible for the product at any given time. At any step of the process, the smart contract can be used to find out exactly where the products should be. If any party involved failed to deliver on time, then every other party will see this.
-- **Protected copyright content**. Smart contracts can help ensure that the owner of the content can receive royalties in a fair and distributed way.
+- **Insurance**: Smart contracts can simplify and streamline the claims process by automatically triggering a claim when certain events occur. Claim details can be recorded on the blockchain in order to determine the amount of compensation users will receive. This would reduce processing times and human errors.
+- **Voting**: Smart contracts can be used to make voting automatic and transparent. Each contract can serve as one ballot which represents a voter's identity. Since a blockchain is immutable, meaning that it can't be changed, this will ensure that votes have not been tampered with and that there is no voting fraud.
+- **Supply chain**. Smart contracts can record ownership as items move through the supply chain confirming who is responsible for the product at any given time. At any step of the process, the smart contract can be used to find out exactly where the products should be. If any party involved failed to deliver on time, then every other party will see this and know where a problem occurred.
 - **Record keeping**. Many industries will be able to use smart contracts to help improve the speed and security of record keeping. Blockchain technology can allow records to all be digitized and securely encrypted and stored. Plus, access can be gated so that only allowed individuals can access the records.
-- **Property ownership**. Smart contracts can be used to record who owns property. This is a much faster and cost-efficient way to record ownership. Smart contracts can also help to facilitate the transfer of ownership.
+- **Property ownership**. Smart contracts can be used to record who owns property. This is a much faster and cost-efficient way to record ownership. Smart contracts can also help to facilitate the transfer of ownership in a timely and secure way.
 
 ## Tools for working with smart contracts
 

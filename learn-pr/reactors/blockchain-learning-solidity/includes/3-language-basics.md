@@ -1,4 +1,4 @@
-All Solidity contracts usually include:
+All Solidity contracts typically include:
 
 - Pragma directives
 - State Variables
@@ -7,7 +7,7 @@ All Solidity contracts usually include:
 
 There is of course, more than that you need to know to program production level smart contracts, but these are the four things that will get you off on the right foot.
 
-If you have an understanding of these concepts, you can get started writing smart contracts right away!
+If you have an understanding of these concepts, you can get started writing smart contracts for a variety of uses cases right away!
 
 ## Pragma directives
 

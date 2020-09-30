@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.4-blockchain-dev.kit
+uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.3-blockchain-dev.kit
 metadata:
   title: Exercise - Install the Blockchain Development Kit for Ethereum
   description: Learn how to install the Blockchain Development Kit for Ethereum
@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Install the Blockchain Development Kit for Ethereum
-durationInMinutes: 8
+durationInMinutes: 10
 content: |
-  [!include[](includes/4-blockchain-dev-kit.md)]
+  [!include[](includes/3-blockchain-dev-kit.md)]
