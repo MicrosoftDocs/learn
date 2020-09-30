@@ -22,7 +22,6 @@ levels:
 - beginner
 roles:
 - developer
-- student
 products:
 - azure
 - azure-cosmos-db

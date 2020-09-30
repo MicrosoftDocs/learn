@@ -39,7 +39,6 @@ levels:
 roles:
 - administrator
 - solution-architect
-- student
 - technology-manager
 products:
 - azure
