@@ -19,12 +19,12 @@ By using the Azure portal, a web-based user interface, you can access virtually 
 The Azure mobile app provides iOS and Android access to your Azure resources when you're away from your computer. With it, you can:
 
 - Monitor the health and status of your Azure resources.
-- Check for alerts, quickly diagnose and fix issues, restart a web app or virtual machine (VM).
+- Check for alerts, quickly diagnose and fix issues, and restart a web app or virtual machine (VM).
 - Run the Azure CLI or Azure PowerShell commands to manage your Azure resources.
 
 ### Azure PowerShell
 
-Azure PowerShell is a shell with which developers and DevOps and IT professionals can execute commands called cmdlets (pronounced as *command-lets*).  These commands call the Azure Rest API to perform every possible management task in Azure. Cmdlets can be executed independently or combined into a script file and executed together to orchestrate:
+Azure PowerShell is a shell with which developers and DevOps and IT professionals can execute commands called cmdlets (pronounced *command-lets*).  These commands call the Azure Rest API to perform every possible management task in Azure. Cmdlets can be executed independently or combined into a script file and executed together to orchestrate:
 - The routine setup, teardown, and maintenance of a single resource or multiple connected resources.
 - The deployment of an entire infrastructure, which might contain dozens or hundreds of resources, from imperative code.  
 
