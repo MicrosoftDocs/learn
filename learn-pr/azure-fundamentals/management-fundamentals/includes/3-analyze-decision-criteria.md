@@ -1,4 +1,4 @@
-In this unit, you'll analyze the criteria that experts employ to help them decide which Azure management tool to use for a given business need. Understanding the criteria can help you to better understand the nuanced differences between each product.
+In this unit, you'll analyze the criteria that experts employ to help them decide which Azure management tools to use to address their business needs. Understanding the criteria can help you to better understand the nuanced differences among the products.
 
 ### Do you need to perform one-off management, administrative, or reporting actions?
 
@@ -22,4 +22,4 @@ By contrast, it's entirely possible to use either PowerShell or the Azure CLI to
 
 ### When you're scripting, do you come from a Windows administration or Linux administration background?
 
-If you or your cloud administrators come from a Windows administration background, it's likely they'll prefer PowerShell.  If you or your cloud administrators come from a Linux administration background, it's likely they'll prefer the Azure CLI. In practice, either tool can be used to perform most one-off administration tasks.
+If you or your cloud administrators come from a Windows administration background, it's likely you'll prefer PowerShell.  If you or your cloud administrators come from a Linux administration background, it's likely you'll prefer the Azure CLI. In practice, either tool can be used to perform most one-off administration tasks.
