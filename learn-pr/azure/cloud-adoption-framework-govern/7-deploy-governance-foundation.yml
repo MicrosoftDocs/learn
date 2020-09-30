@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.cloud-adoption-framework-govern.2-TBD
+uid: learn.azure.cloud-adoption-framework-govern.7-deploy-governance-foundation
 title: TBD
 metadata:
   title: TBD
   description: TBD
   ms.date: 09/22/2020
-  author: jamcneil
+  author: BrianBlanchard
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-TBD.md)]
+  [!include[](includes/7-deploy-governance-foundation.md)]

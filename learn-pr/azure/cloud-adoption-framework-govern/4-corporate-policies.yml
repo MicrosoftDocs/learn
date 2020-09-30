@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.cloud-adoption-framework-govern.3-exercise-TBD
+uid: learn.azure.cloud-adoption-framework-govern.4-corporate-policies
 title: Exercise - TBD
 metadata:
   title: Exercise - TBD
   description: TBD.
   ms.date: 09/22/2020
-  author: jamcneil
+  author: BrianBlanchard
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 20
 content: |
-  [!include[](includes/3-exercise-TBD.md)]
+  [!include[](includes/4-corporate-policies.md)]
