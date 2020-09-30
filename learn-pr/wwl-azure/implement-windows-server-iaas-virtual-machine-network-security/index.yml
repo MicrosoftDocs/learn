@@ -3,9 +3,9 @@ uid: learn.wwl.implement-windows-server-iaas-vm-network-security
 metadata:
   title: Implement Windows Server IaaS VM network security
   description: "Implement Windows Server IaaS VM network security"
-  ms.date: 07/19/2020
+  ms.date: 09/25/2020
   author: wwlpublish
-  ms.author: v-anwarr
+  ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement Windows Server IaaS VM network security
@@ -29,9 +29,8 @@ prerequisites: |
   - Security-related technologies (firewalls, encryption, multi-factor authentication)
   - Windows PowerShell scripting
   - Automation and monitoring
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/implement-windows-server-iaas-vm-network-security.svg
 levels:
-- advanced
 - intermediate
 roles:
 - administrator

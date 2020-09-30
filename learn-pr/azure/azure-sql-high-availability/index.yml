@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.azure-sql-high-availability
+metadata:
+  title: Deploy highly available solutions by using Azure SQL
+  description: In this module, you'll learn how to deploy highly available solutions by using Azure SQL. You'll also look at architectures and how they affect availability.
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy highly available solutions by using Azure SQL
+summary: Whatever SLA, RTO, and RPO your business requires, Azure SQL has the options and built-in capabilities to meet that availability. In this module, you'll learn how to translate your knowledge of backup and restore, failover cluster instances, and Always On availability groups to the options for business continuity in Azure SQL. You'll also peek under the hood at the architectures and how they affect availability.
+abstract: | 
+  In this module, you'll learn how to:
+  - Create a backup and restore strategy for your organization
+  - Evaluate the architectures associated with each service tier
+  - Compare options for getting higher availability
+  - Describe how availability and consistency apply to Azure SQL
+  - Configure and monitor availability
+prerequisites: | 
+  - Experience working with, maintaining, and developing with SQL Server
+  - Experience with Azure, such as deploying and managing resources
+iconUrl: /learn/achievements/azure-sql-high-availability.svg
+levels:
+- beginner
+roles:
+- solution-architect
+- database-administrator
+products:
+- azure
+- azure-sql-database
+units:
+- learn.azure-sql-high-availability.1-introduction
+- learn.azure-sql-high-availability.2-backup-restore
+- learn.azure-sql-high-availability.3-exercise-restore-point-in-time
+- learn.azure-sql-high-availability.4-high-availability-architecture
+- learn.azure-sql-high-availability.5-exercise-general-purpose-high-availability
+- learn.azure-sql-high-availability.6-exercise-business-critical-high-availability
+- learn.azure-sql-high-availability.7-higher-availability-options
+- learn.azure-sql-high-availability.8-exercise-auto-failover-groups
+- learn.azure-sql-high-availability.9-availability-consistency
+- learn.azure-sql-high-availability.10-configure-monitor
+- learn.azure-sql-high-availability.11-summary
+badge:
+  uid: learn.azure-sql-high-availability.badge

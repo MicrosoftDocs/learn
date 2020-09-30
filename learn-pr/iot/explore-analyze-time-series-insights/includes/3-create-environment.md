@@ -11,7 +11,7 @@ You'll now have to specify necessary information for creating a new information:
 1. In the **Subscription** dropdown, you should already have one subscription selected, _Concierge Subscription_.
 1. In the **Resource group** dropdown, select the resource group created by the sandbox, <rgn>[sandbox resource group name]</rgn>.
 1. In the **Environment name** field, specify a unique name.
-1. In the **Location** dropdown, select the same location you choose for the IoT Hub in the previous unit.
+1. In the **Location** dropdown, select the location closest to you.
 1. In the **Tier** dropdown, select **Gen 2** to use Time Series Insights V2.
 ![Azure Portal screenshot](../media/explore-6.png)
 

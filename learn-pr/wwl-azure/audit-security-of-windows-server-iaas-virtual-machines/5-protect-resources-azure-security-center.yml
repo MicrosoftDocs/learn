@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.audit-security-of-windows-server-iaas-vms.protect-your-resources-with-azure-security-center
+title: Protect your resources with Azure Security Center
+metadata:
+  title: Protect your resources with Azure Security Center
+  description: "Protect your resources with Azure Security Center"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-protect-resources-azure-security-center.md)]

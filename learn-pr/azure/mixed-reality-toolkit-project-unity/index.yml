@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.mixed-reality-toolkit-project-unity
+metadata:
+  title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit 
+  description: Import the Mixed Reality Toolkit into your Unity project to accelerate your mixed reality development. 
+  ms.date: 08/11/2020
+  author: "aprilspeight"
+  ms.author: "apspeigh"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit
+summary: Import the Mixed Reality Toolkit into your Unity project to accelerate your mixed reality development.
+abstract: |
+  By the end of this module you will be able to:
+  - Configure Unity for Windows Mixed Reality Development
+  - Import the Mixed Reality Toolkit (MRTK) foundation package into Unity
+  - Add MRTK to a Unity scene
+  - Compare and contrast the three primary MRTK interaction models
+  - Manipulate holograms using ObjectManipulator
+iconUrl: /learn/achievements/mixed-reality-toolkit-project-unity.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- windows
+prerequisites: |
+  - A Windows 10 PC configured with [the correct tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools)
+  - Windows 10 SDK 10.0.18362.0 or later
+  - Unity Hub with Unity 2019.2.X installed
+  - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
+units:
+- learn.mixed-reality-toolkit-project-unity.1-introduction
+- learn.mixed-reality-toolkit-project-unity.2-configure
+- learn.mixed-reality-toolkit-project-unity.3-exercise-configure
+- learn.mixed-reality-toolkit-project-unity.4-import-resources
+- learn.mixed-reality-toolkit-project-unity.5-exercise-import-resources
+- learn.mixed-reality-toolkit-project-unity.6-interaction-models
+- learn.mixed-reality-toolkit-project-unity.7-exercise-hand-interaction-objectmanipulator
+- learn.mixed-reality-toolkit-project-unity.8-knowledge-check
+- learn.mixed-reality-toolkit-project-unity.9-summary
+badge:
+  uid: learn.mixed-reality-toolkit-project-unity.badge

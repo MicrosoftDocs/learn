@@ -2,11 +2,11 @@
 uid: learn.wwl.implement-windows-server-iaas-vm-network-security.deploy-configure-azure-firewall-using-azure-portal
 title: Deploy and configure Azure firewall using the Azure portal
 metadata:
-  title: 07-deploy-configure-azure-firewall-with-azure-portal.md
-  description: "07-deploy-configure-azure-firewall-with-azure-portal.md"
-  ms.date: 07/19/2020
+  title: Deploy and configure Azure firewall using the Azure portal
+  description: "Deploy and configure Azure firewall using the Azure portal"
+  ms.date: 09/25/2020
   author: wwlpublish
-  ms.author: v-anwarr
+  ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

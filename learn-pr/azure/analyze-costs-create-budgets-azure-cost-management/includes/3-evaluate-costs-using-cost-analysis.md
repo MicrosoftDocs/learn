@@ -89,37 +89,32 @@ The filter bar shows:
 
 Let's start by creating a daily export of your cost and usage data.
 
-Navigate to **Subscriptions**, select a subscription from the list, and then select **Cost analysis** in the menu. At the top of the Cost analysis page, select **Export** and then choose an export option. For example, select  **Schedule export**.
+Navigate to **Subscriptions**, select a subscription from the list, and then select **Cost analysis** in the menu. At the top of the Cost analysis page, select **Settings**. On the Configuration page, select **Exports** and then choose an export option. For example, select  **Schedule export**.
 
 Besides subscriptions, you can create exports on resource groups, accounts, departments, and enrollments.
 
-Select  **Add**, type a name for the export, and then select the  **Daily export of month-to-date costs** option. Select **Next**.
+Type a name for the export and then select the  **Daily export of month-to-date costs** option. Select a start date.
 
-![Screenshot listing previously created exports and the New export panel opened.](../media/3-basics-exports.png)
+![Screenshot that shows the New export panel.](../media/3-basics-exports.png)
 
-Specify the subscription for your Azure storage account, then select your storage account. Specify the storage container and the directory path that you'd like the export file to go to. Select **Next**.
-
-Review your export details and select **Create**.
+Specify the subscription for your Azure storage account and then select your storage account. Specify the storage account, storage container, and the directory path that you'd like the export file to go to. You can also create a new resource group and storage account and choose the storage account region. Select **Create**.
 
 Your new export appears in the list of exports. By default, new exports are enabled. If you want to disable or delete a scheduled export, select any item in the list and then select either **Disable**  or **Delete**.
 
-Initially, it can take one to two hours before the export runs. However, it can take up to four hours before data is shown in exported files.
+Initially, it can take 12-24 hours before the export runs. However, it can take up longer before data is shown in exported files.
 
 ### Export schedule
 
-Scheduled exports are affected by the time and day of week of when you initially create the export. When you create a scheduled export, the export runs at the same time of day for each subsequent export occurrence. For example, you create a daily export at 1:00 PM. The next export runs at 1:00 PM the following day. The current time affects all other export types in the same manner—they always run at the same time of day as when you initially created the export. In a different example, you create a weekly export at 4:00 PM on Monday. The next report runs at 4:00 PM the following Monday. _Exported data is available within four hours of run time._
+Scheduled exports are affected by the time and day of week of when you initially create the export. When you create a scheduled export, the export runs at the same frequency for each subsequent export occurrence. For example, for a daily export of month-to-date costs export set at a daily frequency, the export runs daily. Similarly for a weekly export, the export runs every week on the same day as it is scheduled. The exact delivery time of the export is not guaranteed and the exported data is available within four hours of run time.
 
 Each export creates a new file, so older exports are not overwritten.
 
-There are three types of export options:
+Choose an export option:
 
-**Daily export of month-to-date costs**  – The initial export runs immediately. Subsequent exports run the next day at the same time as the initial export. The latest data is aggregated from previous daily exports.
-
-**Weekly export of costs for the last 7 days**  – The initial export runs immediately. Subsequent exports run on the day of the week and at the same time as the initial export. Costs are for the last seven days.
-
-**Custom**  – Allows you to schedule weekly and monthly exports with week-to-date and month-to-date options. _The initial export will run immediately._
-
-If you have a Pay-As-You-Go, MSDN, or Visual Studio subscription, your invoice billing period might not align to the calendar month. For those types of subscriptions and resource groups, you can create an export that's aligned to your invoice period or to calendar months. To create an export aligned to your invoice month, navigate to  **Custom**, then select  **Billing-period-to-date**. To create an export aligned to the calendar month, select  **Month-to-date**.
+- **Daily export of month-to-date costs** – Provides a new export file daily for your month-to-date costs. The latest data is aggregated from previous daily exports.
+- **Weekly export of cost for the last 7 days** – Creates a weekly export of your costs for the past seven days from the selected start date of your export.  
+- **Monthly export of last month's costs** – Provides you with an export of your last month's costs compared to the current month that you create the export. Moving forward, the schedule runs an export on the fifth day of every new month with your previous months costs.  
+- **One-time export** – Allows you to choose a date range for historical data to export to Azure blob storage. You can export a maximum of 90 days of historical costs from the day you choose. This export runs immediately and is available in your storage account within two hours.  
 
 ### Verify that data is collected
 

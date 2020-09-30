@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-scale-high-availability-with-windows-server-vm.create-vm-scale-set-azure-portal
+title: Create a virtual machine scale set in the Azure portal
+metadata:
+  title: Create a virtual machine scale set in the Azure portal
+  description: "Create a virtual machine scale set in the Azure portal"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-create-virtual-machine-scale-set-azure-portal.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "During the demonstration, the instructor sets the scaling policy to **Manual**. If they had chosen **Custom**, what additional options are available for scaling?"
+    choices:
+    - content: "With **Custom**, the administrator can scale on a scheduled basis and by using metrics."
+      isCorrect: true
+      explanation: "That's correct. With custom autoscaling, you can scale on a scheduled basis, or by using metrics—or a combination of both."
+    - content: "With **Custom**, the administrator can scale on a scheduled basis only."
+      isCorrect: false
+      explanation: "That's incorrect. With custom autoscaling, you can scale on a scheduled basis, or by using metrics—or a combination of both."
+    - content: "With **Custom**, the administrator can scale with metrics only."
+      isCorrect: false
+      explanation: "That's incorrect. With custom autoscaling, you can scale on a scheduled basis, or by using metrics—or a combination of both."

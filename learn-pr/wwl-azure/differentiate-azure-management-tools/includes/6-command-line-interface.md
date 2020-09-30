@@ -25,7 +25,7 @@ In this task, we will configure Cloud Shell.
 
 5. When prompted, click **Create storage**, and wait for the Azure Cloud Shell to initialize. 
 
-### Task 2: Verify the  a resource group and a virtual machine
+### Task 2: Verify a resource group and a virtual machine
 
 In this task, we will use Azure CLI to create a resource group and a virtual machine.  
 
@@ -35,7 +35,7 @@ In this task, we will use Azure CLI to create a resource group and a virtual mac
     az group list --output table
     ```
 
-2. Create a new virtual machine. Make sure that each line except for the last one is followed by the caret (`^`) character. If you type the whole command on the same line, do not use any backslash characters. 
+2. Create a new virtual machine. Make sure that each line except for the last one is followed by the backslash (`\`) character. If you type the whole command on the same line, do not use any backslash characters. 
 
     ```cli
     az vm create \
@@ -107,4 +107,6 @@ In this task, we will review Azure Advisor recommendations.
 Congratulations! You have configured Cloud Shell, created a virtual machine using Azure CLI, practiced with Azure CLI commands, and viewed Advisor recommendations.
 
 > [!NOTE]
+> This lab is using the **Azure Sandbox**, so all you need to do is close your Azure Portal to shutdown all the resources created in this lab.  Please do not delete the resource group provided.
+> 
 > To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.
