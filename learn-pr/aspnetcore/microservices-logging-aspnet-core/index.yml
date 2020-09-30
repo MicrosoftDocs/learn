@@ -39,9 +39,10 @@ units:
   - learn.microservices-logging-aspnet-core.2-environment-setup
   - learn.microservices-logging-aspnet-core.3-logging-monitoring
   - learn.microservices-logging-aspnet-core.4-implement-app-insights
-  - learn.microservices-logging-aspnet-core.5-azure-monitor-containers
-  - learn.microservices-logging-aspnet-core.6-knowledge-check
-  - learn.microservices-logging-aspnet-core.7-summary
+  - learn.microservices-logging-aspnet-core.5-monitor-app-insights
+  - learn.microservices-logging-aspnet-core.6-azure-monitor-containers
+  - learn.microservices-logging-aspnet-core.7-knowledge-check
+  - learn.microservices-logging-aspnet-core.8-summary
 iconUrl: https://docs.microsoft.com/../media/learn/module.svg
 #iconUrl: /learn/achievements/aspnetcore/microservices-logging-aspnet-core.svg
 badge:

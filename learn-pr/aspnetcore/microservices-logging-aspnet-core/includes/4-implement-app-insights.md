@@ -111,7 +111,7 @@ In the previous section, you modified the catalog service to include Application
     deploy/k8s/build-to-acr.sh --services catalog-api,webshoppingagg
     ```
 
-    The script starts [ACR quick tasks](/azure/container-registry/container-registry-tasks-overview#quick-task) for each service. Each service's container image is built independently. When they finish, a variation of the following lines acknowledge that the catalog and web aggregator Docker images were pushed to ACR:
+    The script starts [ACR quick tasks](/azure/container-registry/container-registry-tasks-overview#quick-task) for each service. Each service's container image is built independently. Variations of the following lines acknowledge that the catalog and web aggregator Docker images were pushed to ACR:
 
     ```console
     2020/09/30 20:51:57 Successfully pushed image: eshoplearn20200929194132362.azurecr.io/catalog.api:linux-latest
@@ -127,44 +127,14 @@ In the previous section, you modified the catalog service to include Application
     deploy/k8s/deploy-application.sh --charts catalog,webshoppingagg
     ```
 
-    The preceding script takes the image repository from the `ESHOP_REGISTRY` variable, and you should see a message informing the image is being taken from a registry named like `eshoplearn20200717170233865.azurecr.io`.
+    The preceding script deploys the container images from ACR to AKS.
 
-    Now redeploy the other two microservices from the initial repository. Since they were just reconfigured, you can still use the original images.
-
-    So just run this script:
+1. Redeploy the coupon and ordering services configured with their new `APPINSIGHTS_INSTRUMENTATIONKEY` environment variables:
 
     ```bash
     deploy/k8s/deploy-application.sh --registry eshopdev --charts coupon,ordering
     ```
 
-    This time you should be informed that images are being taken from the `eshopdev` registry.
+    The coupon and ordering services deployed by the setup script are already instrumented for telemetry. Since there were no code changes. The containers only need redeployment with the new configuration settings. The `--registry` parameter instructs the script to use the Docker Hub registry that hosts the unmodified images.
 
-## Monitor your app from the Azure portal
-
-Once the deployment is complete and all services are up and available, as per the `webstatus` page, begin working with the app. Log out, log in, create something between five and ten orders, using discount coupons and without using them, and so on.
-
-Now head to the Azure portal and search for the resource group `eshop-learn-rg` or the name you used when beginning this module, and click on the `webshoppingagg-appinsights` resource and the click on the Live Metrics link.
-
-You should see something like this:
-
-:::image type="content" source="../media/webshoppingagg-live-metrics.png" alt-text="Azure portal showing the live metrics dashboard for the webshoppingagg-appinsights resource" border="true" lightbox="../media/webshoppingagg-live-metrics.png":::
-
-In the preceding image, you can see some sample logging traces to the right, as well as some Incoming Request real-time graphics, showing the request rate, request duration and request failure rate. There's also information for outgoing request, that is, calling the dependencies. You can also see the overall health, with memory consumption, CPU utilization, and exceptions rate.
-
-The information above is overall, for all instances running the microservice, if you reconfigure the deployments to use more than one instance you'll be able to select one specific server from the list in the bottom of the dashboard, you'll see the server-specific metrics (There's only on server in this exercise).
-
-Application Insights starts tracing all calls between the services and their dependencies, but it needs some minutes to show more information, that's the reason for asking you to use the application.
-
-If you click on the `Application map` option in the left sidebar, you should see something like this:
-
-:::image type="content" source="../media/application-insights-application-map.png" alt-text="Application map" border="true" lightbox="../media/application-insights-application-map.png":::
-
-In the graph, you can see that the services with Application Insights instrumentation are shown as green-circled nodes. The diagram shows the calls traced between the four microservices and other dependencies such as databases and other microservices that don't have Application Insights instrumentation, along with some information on the call volumes and response times.
-
-You can also look at the log traces, with the Search option in the sidebar:
-
-:::image type="content" source="../media/application-insights-search-log-traces.png" alt-text="Application Insights log traces search view" lightbox="../media/application-insights-search-log-traces.png":::
-
-And can peek into the details of any trace:
-
-:::image type="content" source="../media/application-insights-end-to-end-transaction-details.png" alt-text="TODO" border="true" lightbox="../media/application-insights-end-to-end-transaction-details.png":::
+In the next unit, you'll examine the telemetry in Application Insights.
