@@ -10,7 +10,7 @@ To use the Blockchain Development Kit, you will need to make sure you have the f
 
 - Python
   - Note: Most computers come with Python pre-installed.
-  - To check if you do have Python installed, open up a terminal and type `python`. If installed, it will print out the version of Python that you have on your computer.
+  - To check if you do have Python installed, open up a terminal or command prompt and type `python`. If installed, it will print out the version of Python that you have on your computer.
 - Node.js
   - To confirm Node.js is installed, open your terminal and type: `node`. If installed successfully, the terminal will return the version of Node.js installed. You can also confirm that npm is installed by typing `npm` in the terminal.
 - Git
@@ -89,5 +89,5 @@ Here you see some key information, or metadata about the contract you just deplo
 - The address of the account that deployed the contract
 - The balance (in Ether) that the account has after this transaction was made. The balance is 100 ETH (the starting default value) minus the `total cost`
 - The amount of gas used and the gas price. Gas refers to the fee, required to successfully conduct a transaction or execute a contract on the Ethereum blockchain platform. You can think of it of the gas you need to put into your car to drive places.
-- Note: Gas prices are denoted in gwei, with are worth 0.000000001 ETH.
-- Total cost = gas price * gas use
+  - Note: Gas prices are denoted in gwei, with are worth 0.000000001 ETH.
+  - Total cost = gas price * gas use

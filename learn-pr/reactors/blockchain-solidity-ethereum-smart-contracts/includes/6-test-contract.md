@@ -1,9 +1,9 @@
-In this unit, we will write a new test for our shipping contract in JavaScript. We could also use Solidity to write tests, but JavaScript is what's used most commonly. To test our smart contract we will use **Truffle**.
+In this unit, we will write a new test for our shipping contract in JavaScript. We could also use Solidity to write tests, but JavaScript is what's used most commonly. To test our smart contract we will use Truffle.
 
 ## Let the testing begin
 
 1. Let’s create our first test by creating a new test file. Go to Terminal -> New Terminal.
-1. One the terminal is opened, type: `truffle create test ShippingStatus`. In our folder test a JavaScript file has been created called ShippingStatus.js. Remove the code in the file and replace it with:
+1. Once the terminal is opened, type: `truffle create test ShippingStatus`. In our folder test a JavaScript file has been created called ShippingStatus.js. Remove the code in the file and replace it with:
 
 ```javascript
 const ShippingStatus = artifacts.require("ShippingStatus");
