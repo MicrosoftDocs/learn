@@ -1,11 +1,10 @@
-In this unit, you'll make some code changes to the catalog service to implement Application Insights. For the other three microservices, code changes are already implemented so you'll just have to handle the configuration.
+In this unit, you'll modify the catalog service to enable Application Insights telemetry. Application Insights has already been enabled for the other three microservices; however, configuration changes are required.
 
-In this exercise, you will:
+You will:
 
 - Create Application Insights resources for the app.
 - Enable logging to Application Insights.
-- Deploy the updated/reconfigured microservices.
-- Monitor your app from the Azure portal.
+- Deploy the updated and reconfigured microservices.
 
 ## Create the Application Insights resources
 
@@ -50,7 +49,7 @@ In this exercise, you will:
     }
     ```
 
-    In the preceding output, you can see four key-value pairs with the instrumentation keys, ready to be pasted into the configmaps for the catalog, coupon, ordering, and webshoppingagg Helm charts.
+    The preceding output contains four key-value pairs with the Application Insights instrumentation keys.
 
 1. In the *deploy/k8s/helm-simple* directory, uncomment the `APPINSIGHTS_INSTRUMENTATIONKEY` environment variable in each of the following files. Replace the `<key>` placeholder with the appropriate Application Insights instrumentation key. Save your changes.
     - *catalog/templates/configmap.yaml*
@@ -58,7 +57,7 @@ In this exercise, you will:
     - *ordering/templates/configmap.yaml*
     - *webshoppingagg/templates/configmap.yaml*
 
-    For example, update the `catalog` chart as follows:
+    For example, update the `catalog` Helm chart template as follows:
 
     :::code language="yml" source="../code/deploy/k8s/helm-simple/catalog/templates/configmap.yaml" highlight="9":::
 
@@ -67,7 +66,7 @@ In this exercise, you will:
 
 ## Enable logging to Application Insights
 
-Logging to Application Insights has been enabled in all services except for the catalog service. Complete the following steps to implement Application Insights in the catalog service, found in the *src/Services/Catalog/Catalog.API* directory.
+Logging to Application Insights has been enabled in all services except for the catalog service. Complete the following steps to implement Application Insights in the catalog service.
 
 1. Install the supporting Application Insights NuGet packages:
 
@@ -79,31 +78,33 @@ Logging to Application Insights has been enabled in all services except for the 
         popd
     ```
 
-1. In *Extensions/ServiceCollectionExtensions.cs*, replace the comment `// Add AddAppInsights extension method` with the following extension method. Save your changes.
+1. Apply the following changes in the *src/Services/Catalog/Catalog.API* directory:
+    1. In *Extensions/ServiceCollectionExtensions.cs*, replace the comment `// Add AddAppInsights extension method` with the following extension method. Save your changes.
 
-    :::code language="csharp" source="../code/src/services/catalog/catalog.api/extensions/servicecollectionextensions.cs":::
+        :::code language="csharp" source="../code/src/services/catalog/catalog.api/extensions/servicecollectionextensions.cs":::
 
-1. In the *Startup.cs* file's `ConfigureServices` method, invoke the `AddAppInsights` extension method. Save your changes.
+    1. In the *Startup.cs* file's `ConfigureServices` method, invoke the `AddAppInsights` extension method. Save your changes.
 
-    :::code language="csharp" source="../code/src/services/catalog/catalog.api/startup.cs" highlight="3":::
+        :::code language="csharp" source="../code/src/services/catalog/catalog.api/startup.cs" highlight="3":::
 
-    The preceding code registers the telemetry services in the dependency injection container.
+        The preceding code registers the telemetry services in the dependency injection container.
 
-1. In *Program.cs*, apply the following changes to add the Application Insights sink for Serilog to include log traces:
-    1. Add the highlighted code to the `CreateSerilogLogger` method:
+    1. In *Program.cs*, add the highlighted code to the `CreateSerilogLogger` method:
 
         :::code language="csharp" source="../code/src/services/catalog/catalog.api/program.cs" highlight="5,12":::
 
-    1. Uncomment the `//using Microsoft.ApplicationInsights.Extensibility;` line. Save your changes.
+        The preceding changes add the Application Insights sink for Serilog to include log traces.
+
+    1. Also in *Program.cs*, uncomment the `//using Microsoft.ApplicationInsights.Extensibility;` line. Save your changes.
 
         The preceding change resolves the `WriteTo.ApplicationInsights` method call in the previous step.
 
 > [!NOTE]
-> Startup logging with Application Insights [isn't directly supported](/aspnet/core/fundamentals/logging/#log-during-host-construction), so it must be accomplished by using another logger. This example uses Serilog with the Application Insights sink, passing the instrumentation key. Although this is the simplest way to enable logging to Application Insights during startup, it can lead to losing correlation between metrics and log traces.
+> Startup logging with Application Insights [isn't supported](/aspnet/core/fundamentals/logging/#log-during-host-construction), so it must be accomplished using another logger. This example uses Serilog with the Application Insights sink, passing the instrumentation key. Although this is the simplest way to enable logging to Application Insights during startup, it can lead to losing correlation between metrics and log traces.
 
 ## Build and deploy modified container images
 
-In the previous section, you modified the catalog service to include Application Insights telemetry. The web aggregator service included in the sample code has already been modified to log telemetry. To update the production deployments of these services, the container images will be built and hosted on ACR.
+In the previous section, you modified the catalog service to enable Application Insights telemetry. The web aggregator service, provided by the setup script, has already been instrumented. To update the production deployments of these services, the container images will be built and hosted on ACR.
 
 1. Run this script to build the catalog and web aggregator images:
 
@@ -111,7 +112,7 @@ In the previous section, you modified the catalog service to include Application
     deploy/k8s/build-to-acr.sh --services catalog-api,webshoppingagg
     ```
 
-    The script starts [ACR quick tasks](/azure/container-registry/container-registry-tasks-overview#quick-task) for each service. Each service's container image is built independently. Variations of the following lines acknowledge that the catalog and web aggregator Docker images were pushed to ACR:
+    The script starts [ACR quick tasks](/azure/container-registry/container-registry-tasks-overview#quick-task) for each service. Each service's container image is built independently. Variations of the following lines confirm that the catalog and web aggregator Docker images were pushed to ACR:
 
     ```console
     2020/09/30 20:51:57 Successfully pushed image: eshoplearn20200929194132362.azurecr.io/catalog.api:linux-latest
@@ -135,6 +136,6 @@ In the previous section, you modified the catalog service to include Application
     deploy/k8s/deploy-application.sh --registry eshopdev --charts coupon,ordering
     ```
 
-    The coupon and ordering services deployed by the setup script are already instrumented for telemetry. Since there were no code changes. The containers only need redeployment with the new configuration settings. The `--registry` parameter instructs the script to use the Docker Hub registry that hosts the unmodified images.
+    The coupon and ordering services deployed by the setup script are already instrumented for telemetry. Since there were no code changes, the containers only need redeployment with the new configuration settings. The `--registry` parameter instructs the script to use the Docker Hub registry that hosts the unmodified images.
 
 In the next unit, you'll examine the telemetry in Application Insights.

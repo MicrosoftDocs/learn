@@ -1,3 +1,5 @@
+In this unit, you'll monitor your app from the Azure portal.
+
 Once the deployment is complete and all services are up and available, as per the `webstatus` page, begin working with the app. Log out, log in, create something between five and ten orders, using discount coupons and without using them, and so on.
 
 Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) using the same subscription used in previous units. Use the search box to find and open the resource group `eshop-learn-rg`. Select the `webshoppingagg` Application Insights resource and the select the Live Metrics menu item.
