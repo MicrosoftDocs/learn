@@ -19,7 +19,8 @@ abstract: |
   - Write to files
   - Parse data in files
 prerequisites: |   
-  - Experience writing C# at the beginner level  
+  - Experience writing C# at the beginner level 
+  - Familiarity with basic programming constructs, such as loops and "if" statements 
 iconUrl: /learn/achievements/generic-badge.svg # Work with your contact on the Learn team to create badge art for the module.
 levels:
 - beginner
