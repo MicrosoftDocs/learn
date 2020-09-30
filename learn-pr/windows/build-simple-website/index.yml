@@ -30,6 +30,7 @@ levels:
 - beginner
 roles:
 - developer
+- student
 products:
 - windows
 - vs-code
