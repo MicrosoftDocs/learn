@@ -1,4 +1,4 @@
-As we noted in the previous unit, Tailwind Traders employs technologists with many different skills. The DevOps team is primarily concerned with keeping external systems, such as the company's e-commerce site, up and running. This team has a Linux administration background.  It frequently needs to perform administrative tasks related to the health of the cloud environment.  The team quickly realized that managing Azure from the portal takes too much time and isn't repeatable.  Which tool should it use for one-off tasks?
+As we noted in the preceding unit, Tailwind Traders employs technologists with many different skills. The DevOps team is primarily concerned with keeping external systems, such as the company's e-commerce site, up and running. This team has a Linux administration background.  It frequently needs to perform administrative tasks related to the health of the cloud environment.  The team quickly realized that managing Azure from the portal takes too much time and isn't repeatable.  Which tool should it use for one-off tasks?
 
 ## Which service should you choose?
 
