@@ -103,37 +103,25 @@ Logging to Application Insights has been enabled in all services except for the 
 
 ## Build and deploy modified container images
 
-1. Build the new image for the catalog service.
+In the previous section, you modified the catalog service to include Application Insights telemetry. The web aggregator service included in the sample code has already been modified to log telemetry. To update the production deployments of these services, the container images will be built and hosted on ACR.
 
-    You have to create a new image for the updated service, and you'll use the ACR instance you created at the beginning of the exercise for this.
-
-    Run this script to build the catalog service:
+1. Run this script to build the catalog and web aggregator images:
 
     ```bash
-    deploy/k8s/build-to-acr.sh --services catalog-api
+    deploy/k8s/build-to-acr.sh --services catalog-api,webshoppingagg
     ```
 
-    The script starts an [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) and will take a little while to run. When it finishes, a variation of the following line appears to acknowledge that the Docker image was pushed to ACR:
+    The script starts [ACR quick tasks](/azure/container-registry/container-registry-tasks-overview#quick-task) for each service. Each service's container image is built independently. When they finish, a variation of the following lines acknowledge that the catalog and web aggregator Docker images were pushed to ACR:
 
     ```console
-    2020/09/30 20:36:03 Successfully pushed image: eshoplearn20200930201047107.azurecr.io/catalog.api:linux-latest
+    2020/09/30 20:51:57 Successfully pushed image: eshoplearn20200929194132362.azurecr.io/catalog.api:linux-latest
     ```
 
-    :::image type="content" source="../media/build-to-acr.png" alt-text="Output from the build-to-acr script" border="true" lightbox="../media/build-to-acr.png":::
-
-1. Build the web aggregator service.
-
-    The WebAggregator microservice has also been updated to include the Application Insights telemetry, but the changes are already implemented, so you just have to build the image to ACR, just like you did in the previous step, by running the following script:
-
-    ```bash
-    deploy/k8s/build-to-acr.sh --services webshoppingagg
+    ```console
+    2020/09/30 20:54:15 Successfully pushed image: eshoplearn20200929194132362.azurecr.io/webshoppingagg:linux-latest
     ```
 
-1. Redeploy the services.
-
-    Since you updated the catalog and the WebAggregator services and reconfigured the other two when updating their ConfigMaps, you'll now redeploy the catalog and WebAggregator services using the images from ACR and the other two from the initial repository, **eshopdev**.
-
-    Deploy the updated catalog service from the ACR by running this script:
+1. Deploy the updated catalog and web aggregator services from ACR by running this script:
 
     ```bash
     deploy/k8s/deploy-application.sh --charts catalog,webshoppingagg
