@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-webapp-java-tomcat.1-create-jsf-app
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction for all of this modules.
+  author: yoterada
+  ms.author: yoterada
+  ms.date: 09/16/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-create-jsf-app.md)]

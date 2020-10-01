@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.azure.build-webapp-java-tomcat
+metadata:
+  title: Build a Java Web App  on Tomcat
+  description: Azure Web App の Tomcat 環境で Java EE ベースの Web App を動作させます
+  ms.date: 09/16/2020
+  author: "yoterada"
+  ms.author: "yoterada"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build a Java Web App  on Tomcat 
+summary: Azure Web App の Tomcat 環境で Java EE ベースの Web App を動作させます。
+abstract: |
+  このモジュールを完了すると、次のことができるようになります。
+
+  - Describe the core concepts of the web framework Express
+  - Configure middleware to control how a request is handled
+  - Respond to HTTP requests with different types of content like text and JSON
+  - Send data to an Express endpoint
+iconUrl: /learn/achievements/build-webapp-java-tomcat.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+prerequisites: |
+  - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada) installed on your computer
+  - [JDK 11](https://docs.microsoft.com/azure/developer/java/fundamentals/java-jdk-long-term-support) and [Tomcat 9.0.x](https://tomcat.apache.org/download-90.cgi) installed on your computer
+  - Familiarity with editing text and code files in any text editor
+  - Basic familiarity with the HTTP protocol
+  - Experience using the command line, including Git operations
+units:
+- learn.azure.build-webapp-java-tomcat.1-introduction
+- learn.azure.build-webapp-java-tomcat.2-create-app
+- learn.azure.build-webapp-java-tomcat.3-exercise-create-app
+- learn.azure.build-webapp-java-tomcat.4-route-management
+- learn.azure.build-webapp-java-tomcat.5-exercise-route-management
+- learn.azure.build-webapp-java-tomcat.6-middleware
+- learn.azure.build-webapp-java-tomcat.7-exercise-middleware
+- learn.azure.build-webapp-java-tomcat.8-knowledge-check
+- learn.azure.build-webapp-java-tomcat.9-summary
+
+badge:
+  uid: learn.azure.build-webapp-java-tomcat.badge

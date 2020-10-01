@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure.build-webapp-java-tomcat.4-exercise-create-primefaces-apps
+title: PrimeFaces
+metadata:
+  title: Excercise create PrimeFaces Apps
+  description: This unit explains the overview of the PrimeFaces. In order to create more rich Web Application, the PrimeFaces is very useful and it provide many Rich JSF Components. In this section, we can learn the overview of the PrimeFaces.
+  author: yoterada
+  ms.author: yoterada
+  ms.date: 09/30/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-exercise-create-primefaces-apps.md)]
