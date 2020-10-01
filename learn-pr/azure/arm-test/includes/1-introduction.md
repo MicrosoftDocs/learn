@@ -4,7 +4,7 @@ You are the person on a software team for the company Tailwind Traders authoring
 
 You decide to evaluate the existing set of tools that addresses the above issues.
 
-In this module, you gain an understanding to what practices are beneficial to follow and why it's important. You also practice using the *What-if* command as well as the Testing toolkit to correct issues on your templates.
+In this module, you gain an understanding to what practices are beneficial to follow and why it's important. You also practice using the what-if command as well as the Testing toolkit to correct issues on your templates.
 
 ## Learning objectives
 

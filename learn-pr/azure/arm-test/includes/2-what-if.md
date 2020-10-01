@@ -4,9 +4,9 @@ There are always questions on the mind of anyone deploying or modifying resource
 - How will this deployment affect existing resources?
 - Can I validate that what we are thinking will happen is actually what will happen deployment before hitting the deploy button?
 
-Deploying and hoping for the best is not a good approach. A better approach is using the "what-if" operation. The operation helps you anticipate what consequences a new deployment will have, were it to be attempted.
+Deploying and hoping for the best is not a good approach. A better approach is using the what-if operation. The operation helps you anticipate what consequences a new deployment will have, were it to be attempted.
 
-Azure Resource Manager now provides the *what-if* operation to highlight the changes when you deploy a template. The *what-if* operation doesn't make any changes to existing resources. Instead, it predicts the changes if the specified template is deployed at a resource group and subscription level.
+Azure Resource Manager now provides the what-if operation to highlight the changes when you deploy a template. The what-if operation doesn't make any changes to existing resources. Instead, it predicts the changes if the specified template is deployed at a resource group and subscription level.
 
 > [!NOTE]
 > The *what-if* operation is currently in preview. As a preview release, the results may sometimes show that a resource will change when actually no change will happen. We're working to reduce these issues, but we need your help. Please report these issues at https://aka.ms/whatifissues?azure-portal=true.
@@ -89,8 +89,17 @@ Scope: /subscriptions/54a522b6-6cd7-4325-b4e6-566f9d921835/resourceGroups/What-i
 
 There are times where you'll want to confirm the removal or deletion of resources as you deploy the template.
 
-To that end, the *what-if* operation supports using *deployment mode*. The default deployment mode is *Incremental*. In *incremental mode*, the Resource Manager leaves unchanged resources that exist in the resource group but aren't specified in the template. Resources in the template are added to the resource group.
+To that end, the *what-if* operation supports using *deployment mode*. There are two different deployment modes:
 
-When set to *complete mode*, resources not in the template are deleted.
+- **Incremental mode**. The default deployment mode is *Incremental*. In *incremental mode*, the Resource Manager leaves unchanged resources that exist in the resource group but aren't specified in the template. Resources in the template are *added* to the resource group.
+- **Complete mode**. When set to *complete mode*, resources not specified in the template are *deleted*. If you know for sure that what's in the template file constitutes the full state of your deployment then go ahead and use this mode. If you use a multitude of tools like Azure CLI or PowerShell to update your state gradually, then *Incremental mode* is the way to go.
+
+   > [!CAUTION]
+   > Just to emphasize, when you run the command in *complete mode* please understand that whatever resources you have since before will be removed if it's not mentioned in the template file.
+
+### Confirmation
 
 To preview changes before deploying a template, use the *confirm switch* parameter with the deployment command. If the changes are as you expected, acknowledge that you want the deployment to complete.
+
+> [!TIP]
+> It's highly recommended that you run any deployment commands with the *confirm switch*, especially if you are running in *complete mode*. If you use the *confirm switch* you have a chance to abort the operation if the proposed changes are not to your liking.

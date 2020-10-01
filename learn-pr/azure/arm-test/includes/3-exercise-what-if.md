@@ -2,10 +2,10 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're added to a special subscription named Concierge Subscription.
 
-In this exercise, you'll deploy an Azure Resource Manager (ARM) template. You'll use a template from a sample repository. The template contains a Virtual Network (VNet). A sandbox subscription will be used to ensure your own subscription isn't affected. Once the deployment is complete, you'll then deploy a template that is slightly different:
+Here, you will deploy an Azure Resource Manager (ARM) template from a sample repository that deploys a Virtual Network (VNet) in your sandbox subscription. Once the deployment is complete, you will then deploy a template that is slightly different. It differs in the following ways:
 
-1. A change of address space in a virtual subnet
-1. An additional subnet in the virtual network
+1. **Changed address space**. A change of address space in a virtual subnet
+1. **Additional subnet**. An additional subnet in the virtual network
 
 The second deployment will include the *what-if* operation in order to review the expected changes.
 

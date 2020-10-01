@@ -1,14 +1,3 @@
-
-> [!NOTE]
-> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're added to a special subscription named Concierge Subscription.
-
-Here, you will deploy an Azure Resource Manager (ARM) template from a sample repository that deploys a Virtual Network (VNet) in your sandbox subscription. Once the deployment is complete, you will then deploy a template that is slightly different. It differs in the following ways:
-
-1. **Changed address space**. A change of address space in a virtual subnet
-1. **Additional subnet**. An additional subnet in the virtual network
-
-The second deployment will include the *what-if* operation in order to review the expected changes.
-
 ## Prerequisites
 
 - **Install Visual Studio Code extension**. This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
@@ -17,76 +6,77 @@ The second deployment will include the *what-if* operation in order to review th
 
 ## Deploy the first ARM Template
 
-You will be able to deploy your ARM Template by carrying out the following steps:
+Here's an overview of the steps you are about to carry out:
 
-1. **Sign in to Azure**. You will be able to sign in using Visual Studio Code and using the integrated terminal.
-1. **Set the active subscription**. This can be accomplished by invoking a PowerShell cmdlet.
-1. **Set default resource group**. Also this can be done by invoking a PowerShell cmdlet. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
-1. **Carry out the deployment**. This step involves using the command **az deployment group create** with a URL to a template as an argument.
+- **Sign in to Azure**. You will be able to sign in using Visual Studio Code and using the integrated terminal.
+- **Set the active subscription**. This can be accomplished by invoking a Azure CLI command.
+- **Set default resource group**. This can be accomplished by invoking a Azure CLI command. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
+- **Carry out the deployment**. This step involves using the command **az deployment group create** with a URL to a template as an argument.
 
-### Sign in to Azure
+## Sign in to Azure
 
-1. **Open the integrated terminal in Visual Studio Code**. Be sure you are signing in to the same account that activated the sandbox.
+1. Open the integrated terminal in Visual Studio Code. Be sure you are signing in to the same account that activated the sandbox.
 
-1. **Sign in to Azure**. From the Visual Studio Code terminal, run this command to sign in to Azure. Running this command will open a browser that allows you to sign in to your account.
+1. Run `az login` to login from the Visual Studio Code terminal.
 
     ```azurecli
     az login
     ```
 
-    Select an appropriate user in the browser and close browser window when prompted.
+  1. Select an appropriate user in the browser and close browser window when prompted.
 
-   Once you are logged in, you see a list, in JSON format. The list contains subscriptions associated with this account in the terminal, if you activated the sandbox.
+     Once you are logged in, you see a list, in JSON format. The list contains subscriptions associated with this account in the terminal, if you activated the sandbox.
 
-### Set the active subscription
+## Set the active subscription
 
-1. **Get the subscription ID**. The command will list your subscriptions and their IDs. The subscription ID is the second column. Look for Concierge Subscription and copy the SubscriptionId (third column). It will look something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*.
+Run `az account set` to set a specific subscription as active:
 
-    ```azurecli
-    az account list -o table
-    ```
+```azurecli
+   az account set -s "Concierge Subscription"
+```
 
-1. **Change your active subscription to the Concierge Subscription**. Be sure to substitute *{Your subscription ID}* with the ID of the Concierge Subscription you just got in the last command.
+This will set the active subscription to that of the *Concierge Subscription*.
 
-    ```azurecli
-    az account set -s {Your subscription ID}
-    ```
+> [!NOTE]
+> if it fails, run `az account list --refresh --all` and then rerun the command
 
-### Set the default resource group
+## Set the default resource group
 
-1. You now need to set the resource group created for you in the sandbox as the default resource group. To perform that operation:
+You now need to set the resource group created for you in the sandbox as the default resource group.
 
-    1. **Get the resource group name**. You first need to get the resource group name by using the following command.
+1. Run `az group list` to get the resource group name.
 
-       ```azurecli
-       az group list -o table
-       ```
+   ```azurecli
+   az group list -o table
+   ```
 
-    1. **Set the default name**. Use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**). Using the name, will allow you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
+1. Run `az configure` to set the default name.
 
-       ```azurecli
-       az configure --defaults group=<rgn>resource group name</rgn>
-       ```
+   ```azurecli
+   az configure --defaults group=<rgn>resource group name</rgn>
+   ```
 
-    > [!NOTE]
-    > Normally, when you use an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **az configure** Azure CLI command.
+  Use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**). Using the name, will allow you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
 
-### Deploy the first template to Azure
+  > [!NOTE]
+  > Normally, when you use an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **az configure** Azure CLI command.
+
+## Deploy the first template to Azure
 
 Now that you have setup your subscription in the Visual Studio Code (Visual Studio Code) terminal, you are ready to deploy the ARM template to Azure. The ARM template doesn't have any resources yet, so you won't see any resources being created. However, you'll see a successful deployment.
 
-1. **Deploy the template**. Run the following command in the terminal:
+Run `az deployment group create` to deploy the template:
 
-    ```azurecli
-    az deployment group create \
+   ```azurecli
+   az deployment group create \
       --template-uri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json"
-    ```
+   ```
 
-    The terminal output will show ```Running...```. When that finishes, the results of the above command will be something similar to the below output:
+   The terminal output will show ```Running...```. When that finishes, the results of the above command will be something similar to the below output:
 
-    ```output
-    {
-      "id": "/subscriptions/03821083-c843-496d-b555-65106b80c178/resourceGroups/learn-2c05151d-0776-4ba4-b522-2543d030b66c/providers/Microsoft.Resources/deployments/what-if-before",
+   ```output
+   {
+      "id": "/subscriptions/00000000-1111-2222-333-4444444444444/resourceGroups/learn-2c05151d-0776-4ba4-b522-2543d030b66c/providers/Microsoft.Resources/deployments/what-if-before",
       "location": null,
       "name": "what-if-before",
       "properties": {
@@ -96,7 +86,7 @@ Now that you have setup your subscription in the Visual Studio Code (Visual Stud
         "duration": "PT10.5969509S",
         "mode": "Incremental",
         "onErrorDeployment": null,
-            "id": "/subscriptions/03821083-c843-496d-b555-65106b80c178/resourceGroups/learn-2c05151d-0776-4ba4-b522-2543d030b66c/providers/Microsoft.Network/virtualNetworks/vnet-001",
+            "id": "/subscriptions/00000000-1111-2222-3333-444455556666777/resourceGroups/learn-2c05151d-0776-4ba4-b522-2543d030b66c/providers/Microsoft.Network/virtualNetworks/vnet-001",
             "resourceGroup": "learn-2c05151d-0776-4ba4-b522-2543d030b66c"
           }
         ],
@@ -134,27 +124,31 @@ Now that you have setup your subscription in the Visual Studio Code (Visual Stud
       },
       "resourceGroup": "learn-2c05151d-0776-4ba4-b522-2543d030b66c",
       "type": "Microsoft.Resources/deployments"
-    }
-    ```
+  }
+  ```
 
-1. **Verify the deployment in the portal**. To validate that your deployment has been created and sent to Azure you can navigate to the Azure portal, [Azure portal](https://portal.azure.com?azure-portal=true), make sure you are in the sandbox subscription.
+  The above output indicates that your deployment succeeded as part of the response states **"provisioningState": "Succeeded"**.
 
-   1. Select your avatar in the upper right corner of the page.
+## Verify the deployment in the portal
+
+To validate that your deployment has been created and sent to Azure you can navigate to the Azure portal, [Azure portal](https://portal.azure.com?azure-portal=true), make sure you are in the sandbox subscription.
+
+   1. Select your avatar in the upper top corner of the page.
    1. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
-   1. On the left side panel, choose *Resource groups*.
+   1. Choose *Resource groups*.
    1. Select <rgn>[sandbox resource group name]</rgn>.
-   1. In the *Overview*, you see one deployment succeeded.
-   1. Select *1 Succeeded* to see the details of the deployment.
+   1. In the **Overview**, you see one deployment succeeded.
+   1. Select **1 Succeeded** to see the details of the deployment.
 
    :::image type="content" source="../../media/3-portal-deployment-success.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
 
-1. **Inspect deployment details**. Click the *what-if-before* deployment to see what resources were deployed. In this case, one VNet (address space 10.0.0.0/16) with two subnets have been deployed.
+   1. Select the **what-if-before** deployment to see what resources were deployed. In this case, one VNet (address space 10.0.0.0/16) with two subnets have been deployed.
 
    :::image type="content" source="../../media/3-portal-deployment-details.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true":::
 
    :::image type="content" source="../../media/3-portal-deployment-details-2.png" alt-text="Azure portal interface for the specific deployment with VNet resource listed." border="true":::
 
-Leave the page open in your browser. You will check on deployments again.
+   Leave the page open in your browser. You will check on deployments again.
 
 ## Deploy the modified template in the same environment
 
@@ -166,11 +160,10 @@ The differences in the second template are:
 - **Subnet removed**. A subnet has been removed.
 - **Prefix changed**. Address prefix has changed.
 
-1. **Perform the *what-if* operation**. Type in the following Azure CLI command in the terminal:
+1. Run **az deployment group what-if** to carry out the *what-if* operation**:
 
     ```azurecli
-    az deployment group create \
-      what-if \
+    az deployment group what-if \
       --template-uri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-after.json"
     ```
 
@@ -188,7 +181,7 @@ The differences in the second template are:
 
     The deployment will update the following scope:
 
-    Scope: /subscriptions/03821083-c843-496d-b555-65106b80c178/resourceGroups/learn-2c05151d-0776-4ba4-b522-2543d030b66c
+    Scope: /subscriptions/11112222-3333-4444-5555-1111222233334444/resourceGroups/learn-2c05151d-0776-4ba4-b522-2543d030b66c
 
       ~ Microsoft.Network/virtualNetworks/vnet-001 [2018-10-01]
         - tags.Owner: "Team A"
@@ -217,7 +210,10 @@ The differences in the second template are:
 
 In these next steps, you will deploy an empty template over your existing environment.
 
-1. **Run the deployment in complete mode**. Type the following Azure CLI command:
+> [!WARNING]
+> Doing this in real life *will remove* anything you have in the cloud. The below is interesting as an intellectual experiment but be careful of using this mode. At minimum use the `-Confirm` flag so you have a chance to abort this operation if the proposed changes is not to your liking.
+
+1. Run `az deployment group` with the flag `--mode Complete` to create the a deployment in *complete mode*:
 
     ```azurecli
     az deployment group \
@@ -238,11 +234,11 @@ In these next steps, you will deploy an empty template over your existing enviro
 
     The deployment will update the following scope:
 
-    Scope: /subscriptions/03821083-c843-496d-b555-65106b80c178/resourceGroups/learn-2c05151d-0776-4ba4-b522-2543d030b66c
+    Scope: /subscriptions/11112222-3333-4444-5555-111122223333/resourceGroups/learn-2c05151d-0776-4ba4-b522-2543d030b66c
 
       - Microsoft.Network/virtualNetworks/vnet-001
 
-          id:              "/subscriptions/03821083-c843-496d-b555-65106b80c178/resourceGroups/learn-2c05151d-0776-4ba4-b522-2543d030b66c/providers/Microsoft.Network/virtualNetworks/vnet-001"
+          id:              "/subscriptions/11112222-3333-4444-5555-1111222233334444/resourceGroups/learn-2c05151d-0776-4ba4-b522-2543d030b66c/providers/Microsoft.Network/virtualNetworks/vnet-001"
           location:        "westus"
           name:            "vnet-001"
           tags.CostCenter: "12345"
@@ -256,7 +252,7 @@ In these next steps, you will deploy an empty template over your existing enviro
 
     Note above how the last line of the output is a confirmation, asking you to select **y/n** to proceed.
 
-1. **Confirm deployment**. Type **y** for **Yes**. The command completes with an output similar to the below:
+1. Type **y** for **Yes** to *Confirm deployment*. :
 
     ```output
     Are you sure you want to execute the deployment? (y/n): y
@@ -294,7 +290,7 @@ In these next steps, you will deploy an empty template over your existing enviro
     }
     ```
 
-1. **Verify deployment**. Navigate back to the open browser you used earlier, and verify that there were two successful deployments.
+1. Navigate back to the open browser you used earlier, and verify that there were two successful deployments.
 
     1. The first one you deployed.
     1. The complete one that removed all resources, and the VNet is no longer there.
