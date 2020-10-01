@@ -1,14 +1,56 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure.build-webapp-java-tomcat.6-knowledge-check
-title: PrimeFaces
+uid: learn.azure.build-webapp-java-tomcat.6-knowledge-check
+title: Knowledge check
 metadata:
-  title: PrimeFaces
-  description: This unit explains the overview of the PrimeFaces. In order to create more rich Web Application, the PrimeFaces is very useful and it provide many Rich JSF Components. In this section, we can learn the overview of the PrimeFaces.
+  title: Knowledge check
+  description: Knowledge check
   author: yoshioterada
   ms.author: yoterada
   ms.date: 09/30/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 7
-content: |
-  [!include[](includes/6-knowledge-check.md)]
+durationInMinutes: 2
+quiz:
+  questions:
+  - content: Question 1
+    choices:
+    - content: Answer 1
+      isCorrect: true
+      explanation: Explanation 1
+    - content: Answer 2
+      isCorrect: false
+      explanation: Explanation 2
+    - content: Answer 3
+      isCorrect: false
+      explanation: Explanation 3
+    - content: Answer 4
+      isCorrect: false
+      explanation: Explanation 4
+  - content: Question 2
+    choices:
+    - content: Answer 1
+      isCorrect: true
+      explanation: Explanation 1
+    - content: Answer 2
+      isCorrect: false
+      explanation: Explanation 2
+    - content: Answer 3
+      isCorrect: false
+      explanation: Explanation 3
+    - content: Answer 4
+      isCorrect: false
+      explanation: Explanation 4
+  - content: Question 3
+    choices:
+    - content: Answer 1
+      isCorrect: true
+      explanation: Explanation 1
+    - content: Answer 2
+      isCorrect: false
+      explanation: Explanation 2
+    - content: Answer 3
+      isCorrect: false
+      explanation: Explanation 3
+    - content: Answer 4
+      isCorrect: false
+      explanation: Explanation 4

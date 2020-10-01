@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-webapp-java-tomcat.1-create-jsf-app
+uid: learn.azure.build-webapp-java-tomcat.1-introduction
 title: Introduction
 metadata:
   title: Introduction
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/1-create-jsf-app.md)]
+  [!include[](includes/1-introduction.md)]

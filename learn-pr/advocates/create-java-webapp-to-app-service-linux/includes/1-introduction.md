@@ -1,5 +1,3 @@
-# Create JavaServer Faces Web App on Tomcat
-
 Java は誕生依頼様々な環境で動作してきました。特に、サーバ・サイドで Java は幅広く多くの場所で使われてきました。これに併せて、Java Web アプリケーションのフレーム・ワークも様々提供されてきました。たとえば JavaServer Pages(JSP)、Java Servlet, Struts, [JavaServer Faces(JSF)](http://www.javaserverfaces.org/), Spring MVC のような Web フレームワークが今まで数多く提供されてきました。
 
 また実行環境として、Apache Tomcat は、1998年11月にプロジェクトを開始し、 Servlet, JSP の参照実装かつ OSS として提供され、多くの利用者から使われてきました。
@@ -9,7 +7,6 @@ Java は誕生依頼様々な環境で動作してきました。特に、サー
 Todo アプリケーションは、MVC フレームワークとして JSF を利用し、内部的にはリッチな画面を作成するため、[PrimeFaces](https://www.primefaces.org/) を利用します。  
 JSF はコンポーネント・ベースのフレームワークで、ユーザ・インタエース(UI)のコンポーネントを xhtml に記載し、ユーザ・インタフェース側で発行されたイベント（ボタンを押すなど）を、バッキング・Bean と呼ぶ実装クラスで実装し処理を行います。  
 PrimeFaces は JSF の拡張 UI コンポーネントを提供し、これを利用する事で簡単に Single Page Application (SPA) など Ajax に対応したリッチな画面を作成する事ができます。
-
 
 ## Learning objectives(学習の目的)
 
@@ -26,9 +23,7 @@ By the end of this module, you’ll be able to:
 - Familiarity with editing text and code files in any text editor
 - Basic familiarity with the HTTP protocol
 
-
 ## Java ServerFaces アプリケーション作成の概要
-
 
 JSF のアプリケーションは、大きく分けて下記の２つの機能から構成されています。
 
@@ -40,14 +35,13 @@ Jakarta EE 8 ベースのアプリケーションでは、[JSF 2.3](https://jaka
 
 `BackingBean` は Facelets  とバインドし、値の設定や処理を行う Java クラスです。サーバ側で処理を実装するためには、Facelets と対応するバッキング・ビーンを実装する必要があります。
 
-
 ## PrimeFaces : JSF Rich UI Component Libraries
 
 JSF は独自に拡張したリッチな Web コンポーネントを作成する事ができます。有名な 3rd Party の JSF のコンポーネント・ライブラリとして下記が存在します。
 
-* [PrimeFaces](https://www.primefaces.org/documentation/)
-* [OmniFaces](https://omnifaces.org/)
-* [IceFaces](http://www.icesoft.org/java/projects/ICEfaces/overview.jsf)
+- [PrimeFaces](https://www.primefaces.org/documentation/)
+- [OmniFaces](https://omnifaces.org/)
+- [IceFaces](http://www.icesoft.org/java/projects/ICEfaces/overview.jsf)
 
 今回は、これらの中から PrimeFaces を利用してリッチな JSF の Web ページを作成します。  
 PrimeFaces を利用するためには `xmlns:p="http://primefaces.org/ui` の XML ネーム・スペースを HTML タグ内に記入します。これにより [PrimeFaces の showcase](https://www.primefaces.org/showcase/) に記載されているコンポーネントを利用できるようになります。  
@@ -73,8 +67,7 @@ PrimeFaces を利用するためには `xmlns:p="http://primefaces.org/ui` の X
 ```
 
 上記の XHTML を記述する事で下記の画面が表示されます。
-![](../images/simple-jsf-facelets-primefaces-ajax.png)
-
+![](../media/simple-jsf-facelets-primefaces-ajax.png)
 
 ### PrimeFaces Ajax 対応
 
@@ -90,7 +83,6 @@ PrimeFaces では JSF で提供する Ajax 対応をより簡単に実装でき�
    value="Submit" action="#{indexcontroller.submitButtonAction()}"/>
 ```
 
-
 ## JSF Backing Bean
 
 バッキング・ビーンは JSF の View に紐づくバックエンドの処理を実装する Java クラスです。  
@@ -102,7 +94,6 @@ PrimeFaces では JSF で提供する Ajax 対応をより簡単に実装でき�
 
 **Note**  
 `#{indexcontroller.inputValue}` の表現を [Expression Language (EL 式)](https://jakarta.ee/specifications/expression-language/3.0/) と呼びます。
-
 
 ```java
 import java.io.Serializable;

@@ -1,7 +1,3 @@
-# Exercise Deploy Java Web App to Azure App Services
-
-## Azure App Services へデプロイ
-
 ローカル環境の Tomcat で動作確認ができたので、アプリケーションを Azure App Services にデプロイします。  
 Azure App Service にデプロイするためには、[Maven Plugin for Azure Web Apps](https://github.com/microsoft/azure-maven-plugins) を利用できます。最新バージョンを指定してください (2020年10月1日時点で 1.11.0)。
 
@@ -156,7 +152,7 @@ mvn azure-webapp:deploy
 
 `https://azure-javaweb-app-1601463451101.azurewebsites.net`
 
-![](../images/deployed-to-the-appservices.png)
+![](../media/deployed-to-the-appservices.png)
 
 
 ## Deploy App to the Deployment Slot as Staging Environment
@@ -271,11 +267,11 @@ Deployment Slot へのデプロイが完了すると下記のようなメッセ�
 
 `Successfully deployed the artifact to` に Deployment Slot にデプロイしたアプリケーションの URL が表示されていますので、ブラウザで URL にアクセスします。
 
-![PrimeFaces App Version 2](../images/primefaces-todo-list-v2.png)
+![PrimeFaces App Version 2](../media/primefaces-todo-list-v2.png)
 
 この時点で、本番環境用の URL にアクセスしても本番環境はまだ入れ替えていないため、過去のバージョンが表示されている事も確認してください。
 
-![PrimeFaces App Version 1](../images/deployed-to-the-appservices.png)
+![PrimeFaces App Version 1](../media/deployed-to-the-appservices.png)
 
 ### Route traffic (Canary Deployment)
 
@@ -297,7 +293,7 @@ az webapp traffic-routing set --distribution azure-javaweb-app-staging=100 --nam
 ]
 ```
 
-![Deployment Slot in Azure Portal](../images/azure-portal-deployment-slot.png)
+![Deployment Slot in Azure Portal](../media/azure-portal-deployment-slot.png)
 
 
 ## Confirm the Log Stream from Command Line
@@ -308,4 +304,4 @@ TODO: Explanation
 az webapp log tail -g azure-javaweb-app-1601463451101 -n azure-javaweb-app
 ```
 
-![Execution of the Log Stream](../images/azure-cli-log-stream.png)
+![Execution of the Log Stream](../media/azure-cli-log-stream.png)

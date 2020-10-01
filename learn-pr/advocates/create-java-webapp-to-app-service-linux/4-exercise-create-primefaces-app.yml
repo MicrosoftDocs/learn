@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure.build-webapp-java-tomcat.5-deploy-javawebapp-to-appservices
-title: PrimeFaces
+uid: learn.azure.build-webapp-java-tomcat.4-exercise-create-primefaces-app
+title: Exercise - Create a Java web app with PrimeFaces
 metadata:
-  title: PrimeFaces
+  title: Exercise - Create a Java aeb app with PrimeFaces
   description: This unit explains the overview of the PrimeFaces. In order to create more rich Web Application, the PrimeFaces is very useful and it provide many Rich JSF Components. In this section, we can learn the overview of the PrimeFaces.
   author: yoshioterada
   ms.author: yoterada
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-deploy-javawebapp-to-appservices.md)]
+  [!include[](includes/4-exercise-create-primefaces-app.md)]

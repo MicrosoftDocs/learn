@@ -1,9 +1,7 @@
-# Introduction of PrimeFaces
-
 [PrimeFaces](https://www.primefaces.org/showcase/) is one of the most popular UI Component libraries in JavaServer Faces and widely used by many global companies. If you use the framework, you can create rich Web Application with very easily.  
 In this module, we will create Simple Todo List application like follows. And in this section, we will learn the PrimeFaces component which we will use in the Application.
 
-![My ToDo List App](../images/primefaces-todo-list.png)
+![My ToDo List App](../media/primefaces-todo-list.png)
 
 
 ## PrimeFaces Component in the Application
@@ -36,7 +34,7 @@ Todo アプリでは `position="north"` と `position="center"` を使用しま�
 </p:layout>
 ```
 
-![PrimeFaces Layout](../images/primeafces-layout.png)
+![PrimeFaces Layout](../media/primeafces-layout.png)
 
 
 ### PrimeFaces OutputLabel, InputText, CommandButton
@@ -96,7 +94,7 @@ public class TodoListController implements Serializable {
 
 If you create the XHTML and Backing Bean, you can  see like the followign screen.
 
-![PrimeFaces Input Output Button](../images/primeafces-in-out-button.png)
+![PrimeFaces Input Output Button](../media/primeafces-in-out-button.png)
 
 ### PrimeFaces DataTable
 
@@ -209,4 +207,4 @@ public class TodoItem implements Serializable {
 
 上記の DataTable を記述し実行すると下記のような画面が表示されます。
 
-![PrimeFaces DataTable](../images/primefaces-datatable.png)
+![PrimeFaces DataTable](../media/primefaces-datatable.png)

@@ -1,5 +1,3 @@
-# Exercise Create JavaServer Faces Web App on Tomcat
-
 You've been tasked with creating a simple Aapplication using the JavaServer Facess framework. The TODO application can add the new tasks and you can see the lists of all tasks and finaly you can mark the task as finished.
 As part of that evaluation, you will build a web application and deploy it to Linux on Azure App Services Tomcat. 
 
@@ -287,6 +285,6 @@ $INSTALL_DIR/apache-tomcat-9.0.38/bin/startup.sh
 ```
 Tomcat を実行した後、`http://localhost:8080/azure-javaweb-app/` にアクセスすると下記の画面が表示されます。
 
-![JSF HelloWorld Page](../images/jsf-helloworld.png)
+![JSF HelloWorld Page](../media/jsf-helloworld.png)
 
 上記で、ローカルの Tomcat 環境で JSF の Web アプリケーションを実行できました。

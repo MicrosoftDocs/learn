@@ -4,8 +4,8 @@ metadata:
   title: Build a Java Web App  on Tomcat
   description: Azure Web App の Tomcat 環境で Java EE ベースの Web App を動作させます
   ms.date: 09/16/2020
-  author: "yoterada"
-  ms.author: "yoterada"
+  author: yoshioterada
+  ms.author: yoterada
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build a Java Web App  on Tomcat 
@@ -32,14 +32,12 @@ prerequisites: |
   - Experience using the command line, including Git operations
 units:
 - learn.azure.build-webapp-java-tomcat.1-introduction
-- learn.azure.build-webapp-java-tomcat.2-create-app
-- learn.azure.build-webapp-java-tomcat.3-exercise-create-app
-- learn.azure.build-webapp-java-tomcat.4-route-management
-- learn.azure.build-webapp-java-tomcat.5-exercise-route-management
-- learn.azure.build-webapp-java-tomcat.6-middleware
-- learn.azure.build-webapp-java-tomcat.7-exercise-middleware
-- learn.azure.build-webapp-java-tomcat.8-knowledge-check
-- learn.azure.build-webapp-java-tomcat.9-summary
+- learn.azure.build-webapp-java-tomcat.2-exercise-create-jsf-app
+- learn.azure.build-webapp-java-tomcat.3-introduction-primefaces
+- learn.azure.build-webapp-java-tomcat.4-exercise-create-primefaces-app
+- learn.azure.build-webapp-java-tomcat.5-exercise-deploy-to-app-service
+- learn.azure.build-webapp-java-tomcat.6-knowledge-check
+- learn.azure.build-webapp-java-tomcat.7-summary
 
 badge:
   uid: learn.azure.build-webapp-java-tomcat.badge

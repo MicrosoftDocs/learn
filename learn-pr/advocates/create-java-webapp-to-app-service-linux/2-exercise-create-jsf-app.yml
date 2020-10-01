@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure.build-webapp-java-tomcat.2-exercise-create-jsf-app
-title: Exercise - Create a new Web application
+uid: learn.azure.build-webapp-java-tomcat.2-exercise-create-jsf-app
+title: Exercise - Create a JavaServer Faces web app on Tomcat
 metadata:
-  title: Exercise - Create a new Web application
-  description: Exercise in how to create JSF Web Applicaiton with PrimeFaces.
+  title: Exercise - Create a JavaServer Faces web app on Tomcat
+  description: Exercise in how to create JSF Web Application with PrimeFaces.
   author: yoshioterada
   ms.author: yoterada
   ms.date: 09/23/2020

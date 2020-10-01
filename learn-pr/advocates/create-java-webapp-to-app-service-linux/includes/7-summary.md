@@ -1,5 +1,3 @@
-# Conclusion
-
 TODO: Write Explanation
 
 ## Other Useful Link
