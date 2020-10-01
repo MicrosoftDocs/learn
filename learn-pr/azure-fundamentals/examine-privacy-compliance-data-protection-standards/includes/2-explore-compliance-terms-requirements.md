@@ -19,7 +19,7 @@ While not all of these compliance offerings will be relevant to you or your team
 
 ### Criminal Justice Information Service
 
-Any U.S. state or local agency that wants to access the FBI's Criminal Justice Information Services (CJIS) database is required to adhere to the CJIS Security Policy.
+Any US state or local agency that wants to access the FBI's Criminal Justice Information Services (CJIS) database is required to adhere to the CJIS Security Policy.
 
 Azure is the only major cloud provider that contractually commits to conformance with the CJIS Security Policy. Microsoft adheres to the same requirements that law enforcement and public safety entities must meet.
 
@@ -41,7 +41,7 @@ Microsoft is the first company to receive joint approval from the EU's Article 2
 
 ### Health Insurance Portability and Accountability Act
 
-The Health Insurance Portability and Accountability Act (HIPAA) is a U.S. federal law that regulates patient Protected Health Information (PHI).
+The Health Insurance Portability and Accountability Act (HIPAA) is a US federal law that regulates patient Protected Health Information (PHI).
 
 Azure offers customers a HIPAA Business Associate Agreement (BAA), which stipulates adherence to certain security and privacy provisions in HIPAA and the HITECH Act. To assist customers in their individual compliance efforts, Microsoft offers a BAA to Azure customers as a contract addendum.
 
