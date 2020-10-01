@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.app-package-management-using-helm.exercise-install-helm-chart
+title: Exercise - Install a Helm chart
+metadata:
+  description: In this exercise, you'll install a pre-configured Helm chart for an ASP.NET Core web application.
+  title: Exercise - Install a Helm chart
+  author: cryophobia
+  ms.author: chrvaw
+  ms.prod: learning-azure
+  ms.topic: interactive-tutorial
+  ms.date: 9/30/2020
+
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-exercise-install-helm-chart.md)]
