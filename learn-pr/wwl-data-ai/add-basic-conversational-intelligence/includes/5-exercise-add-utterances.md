@@ -98,7 +98,7 @@ In this exercise, you will add some utterances using code.  The code does not ad
 
 :::zone pivot="csharp"
 
-1. Go to your Visual Studio Codespaces project.
+1. Go to your Visual Studio Code project.
 1. After the AddEntities() method, add the following code to create utterances for the **SearchPic** Intent.
 
    ```csharp
@@ -161,7 +161,6 @@ In this exercise, you will add some utterances using code.  The code does not ad
 1. In the utterance *find outdoor pics*, the key label is outdoor and it gets assigned to the **facet** entity.
 1. Call Examples.BatchAsync with the app ID, version ID, and the list of examples. The call responds with a list of results. You need to check each example's result to make sure it was successfully added to the model.
 1. Now that you have these pieces in place, you can run the code to create the LUIS app, add the intents, entities, and utterances.
-1. Right-click the **create-luis-app** folder and choose **Open in Terminal**.
 1. Once the terminal window opens, issue the command to run the code ``` dotnet run ```.
 1. If you receive no error messages, you LUIS app should be created so you can open the LUIS portal and verify all the aspects of the app were created.
 
@@ -169,7 +168,7 @@ In this exercise, you will add some utterances using code.  The code does not ad
 
 :::zone pivot="python"
 
-1. 1. Go to your Visual Studio Codespaces project.
+1. 1. Go to your Visual Studio Code project.
 1. After the add_entities() function, add the following code to create utterances for the **SearchPic** Intent.
 
    ```python

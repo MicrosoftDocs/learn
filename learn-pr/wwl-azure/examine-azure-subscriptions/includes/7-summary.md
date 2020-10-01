@@ -1,5 +1,5 @@
 We have covered several important topics in this module.
 
-+ What an Azure Subscription is and how you pick the one right for your business.
-+ You have created an Azure free account and learned how to sign in using that account.
-+ You have seen how billing, subscriptions, and support are managed in Azure.
++ Explored the value and capability of a Microsoft Azure subscriptions and how a company can use management groups to manage cloud subscriptions.
++ Reviewed the different Azure subscription offers, and how to pick the best one for you.
++ Looked over the Azure free account and how you can start using Azure today for free.

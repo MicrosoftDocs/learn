@@ -26,7 +26,6 @@ roles:
 - administrator
 - solution-architect
 - security-engineer
-- student
 products:
 - azure
 - azure-active-directory
