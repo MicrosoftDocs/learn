@@ -4,19 +4,19 @@ In the below exercise, you’re going to create an Azure Data Share from the por
 
 1.	Navigate to the Azure portal and on the left-hand side, go to Create a Resource:
 
-    ![Create a Resource](../media/ADSAzureMarketPlaceCreateResource.png)
+    ![Create a Resource](../media/azure-data-share-azure-marketplace-create-resource.png)
 
 2.	You’ll be directed to the Azure Market Place, where you type in the search: 'Data Share'
 
-    ![Search for Data Share](../media/ADSAzureMarketPlaceSearch.png)
+    ![Search for Data Share](../media/azure-data-share-azure-marketplace-search.png)
 
 3.	You’ll be redirected to the product Azure Data Share:
 
-    ![Product Azure Data Share](../media/ADSAzureProductOverview.png)
+    ![Product Azure Data Share](../media/azure-data-share-azure-product-overview.png)
 
 4.	Navigate to Create, and you’ll have to provide the following:
 
-    ![Product Azure Data Share](../media/ADSCreateDataShare.png)
+    ![Product Azure Data Share](../media/azure-data-share-create-data-share.png)
 
     **Settings**:
 
@@ -42,4 +42,4 @@ In the below exercise, you’re going to create an Azure Data Share from the por
 
 5.	You’ll be redirected to the below screen, in which you navigate to create, which will deploy the Azure Data share in your resource group.
 
-    ![Product Azure Data Share](../media/ADSCreateDataShareReviewandCreate.png)
+    ![Product Azure Data Share](../media/azure-data-share-create-data-share-review-create.png)
