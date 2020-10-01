@@ -36,11 +36,15 @@ Just like the other triggers we've seen so far, we create a blob trigger in the 
 
 One setting that you'll want to look at is the **Path**. The **Path** tells the blob trigger where to monitor to see if a blob is uploaded or updated. By default, the **Path** value is: 
 
-> samples-workitems/{name}
+```
+samples-workitems/{name}
+```
 
 Let's break down this concept into two pieces: *samples-workitems* and *{name}*. The first part, *samples-workitems*, represents the blob container that the trigger monitors. The second part, *{name}* means that every type of file will cause the trigger to invoke the function. The function is invoked because there's no filter. For example, I could make the trigger invoke the function only when a PNG file is added by using syntax like:
 
-> samples-workitems/{name}.png
+```
+samples-workitems/{name}.png
+```
 
 The last significant piece of information with this concept is the text *name*. The *name* represents a parameter in your Azure function that receives the name of the added file. For example, if I upload a file named *resume.txt*, my Azure function receives that value as a string through a parameter called *name*.
 
