@@ -1,6 +1,6 @@
 The Face API provides algorithms, exposed as REST-based web service calls, to detect, verify, identify, and analyze faces. The service can provide face matching, face attributes, and characteristic analysis. The Face API can also organize people and facial definitions into groups to locate similar faces.
 
-![The Face API](../media/2-understand-the-face-api-faces.png)
+:::image type="content" source="../media/2-understand-the-face-api-faces.png" alt-text="The Face API":::
 
 The Face API tasks fall into five categories:
 
