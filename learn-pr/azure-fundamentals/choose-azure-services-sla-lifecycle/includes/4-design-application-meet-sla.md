@@ -4,7 +4,7 @@ Now you need to design an efficient and reliable solution for this application o
 
 In reality, failures will happen. Hardware can fail. The network can have intermittent timeout periods. While it's rare for an entire service or region to experience a disruption, you still need to plan for such events.
 
-Let's follow the process Tailwind Traders uses to ensure that their technology choices meet their application SLA.
+Let's follow the process Tailwind Traders uses to ensure that its technology choices meet its application SLA.
 
 ## Identify your workloads
 

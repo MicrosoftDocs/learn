@@ -1,11 +1,11 @@
-Now that Tailwind Traders has its applications up and running, they want to start looking into new capabilities. One option is to look at preview services. In this part, you'll learn how Azure services go from the preview phase to being generally available.
+Now that Tailwind Traders has its applications up and running, it wants to start looking into new capabilities. One option is to look at preview services. In this part, you'll learn how Azure services go from the preview phase to being generally available.
 
 For Tailwind Traders, migration from the datacenter to Azure is more about operational efficiency. The research and development team is looking into new, cloud-based features that will keep them ahead of the competition.
 
-Tailwind Traders is experimenting with a custom drone delivery system for customers in rural areas. They need the ability to use real-time storm tracking in the drone guidance system, but the feature isn't ready yet. They read about the new AI Storm Analyzer service that has just entered the public preview phase. So Tailwind Traders has decided to incorporate it into the early stages of their application testing.
+Tailwind Traders is experimenting with a custom drone delivery system for customers in rural areas. The company needs the ability to use real-time storm tracking in the drone guidance system, but the feature isn't ready yet. There's a new AI Storm Analyzer service that has just entered the public preview phase. So Tailwind Traders has decided to incorporate it into the early stages of application testing.
 
 > [!NOTE]
-> AI Storm Analyzer is a fictitious Azure service. We introduce it here for illustration purposes only.
+> AI Storm Analyzer is a fictitious Azure service, introduced here for illustration purposes only.
 
 Before the team moves forward, they want a better understanding of how preview services affect their SLA. Let's begin by defining the Azure service lifecycle.
 

@@ -1,4 +1,4 @@
-In this module, you'll learn about Azure's service-level agreements (SLAs) and how they can affect your application design decisions. You'll also learn about the lifecycle of new Azure services, from preview to general availability.
+In this module, you'll learn about service-level agreements (SLAs) in Azure and how they can affect your application design decisions. You'll also learn about the lifecycle of new Azure services, from preview to general availability.
 
 ## Meet Tailwind Traders
 
