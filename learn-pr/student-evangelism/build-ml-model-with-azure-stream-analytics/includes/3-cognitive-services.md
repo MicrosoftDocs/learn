@@ -59,8 +59,6 @@ You'll begin by creating a new Custom Vision Service project. Then you'll upload
 
     When all settings are correct, select **Create project**. Your project opens.
 
-<br>
-
 ### Get the images to use in the project
 
 Now you're ready to get the images to use in your project.
