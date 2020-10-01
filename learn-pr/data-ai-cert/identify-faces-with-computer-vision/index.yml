@@ -16,7 +16,7 @@ abstract: |
   * Understand concepts related to the Face API
   * Explore the Emotion API
 prerequisites: ""
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/data-ai/identify-faces-with-computer-vision.svg
 levels:
 - intermediate
 roles:
