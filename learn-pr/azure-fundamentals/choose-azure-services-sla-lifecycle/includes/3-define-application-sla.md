@@ -8,7 +8,7 @@ A good place to start is to have a discussion with your team about how important
 
 ## Business impact
 
-If the Special Orders application goes down, what would the business impact be? In this case, customers can't place new orders through the store and staff can't check the status of existing orders. This can make customers unhappy. They'll either need to try again later or possibly go to a competitor.
+If the Special Orders application goes down, what would the business impact be? In this case, customers can't place new orders through the store and staff can't check the status of existing orders. Customers will either need to try again later or possibly go to a competitor.
 
 ## Effect on other business operations
 
