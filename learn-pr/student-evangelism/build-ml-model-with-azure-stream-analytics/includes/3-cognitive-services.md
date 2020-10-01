@@ -10,6 +10,8 @@ In this unit, you'll create a Custom Vision Service model and train it to differ
 
 You'll begin by creating a new Custom Vision Service project. Then you'll upload images of polar bears, Arctic foxes, and walruses and tag the images so the Custom Vision Service can learn to differentiate between them.
 
+### Create a new project, resource, and resource group
+
 1. Open the [Custom Vision Service portal](https://www.customvision.ai/?azure-portal=true) in your browser. Then select **Sign In** and sign in with your Microsoft account. Accept any terms of service if needed.
 
 1. Select **+ NEW PROJECT** to display the **Create new project** dialog. Enter a project **Name** and **Description**.
@@ -57,18 +59,21 @@ You'll begin by creating a new Custom Vision Service project. Then you'll upload
 
     When all settings are correct, select **Create project**. Your project opens.
 
+<br>
+
+### Get the images to use in the project
 
 Now you're ready to get the images to use in your project.
 
-1. Download [this zip file](https://github.com/MicrosoftDocs/mslearn-build-ml-model-with-azure-stream-analytics/raw/master/training-images/arctic-fox.zip) of arctic fox training images. Unzip the folder.
+1. Download [this zip file](https://github.com/MicrosoftDocs/mslearn-build-ml-model-with-azure-stream-analytics/raw/master/training-images/arctic-fox.zip) of Arctic fox training images. Unzip the folder.
 
-1. Select **Add images** to add the arctic fox images to your project.
+1. Select **Add images** to add the Arctic fox images to your project.
 
     ![Screenshot that shows how to add images to the Custom Vision Service project.](../media/add-images-to-project.png)
 
     _Adding images to the Custom Vision Service project_
 
-1. In the **Open** files dialog, select all the images of arctic foxes found in the unzipped folder. Select **Open** to choose the images.
+1. In the **Open** files dialog, select all the images of Arctic foxes found in the unzipped folder. Select **Open** to choose the images.
 
     ![Screenshot that shows all images selected and ready to open.](../media/open-images.png)
 
