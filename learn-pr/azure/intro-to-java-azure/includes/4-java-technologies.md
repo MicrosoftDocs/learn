@@ -8,6 +8,10 @@ You can distinguish your type of application specification wise. The most famous
 
 Formerly known as Oracle's Java Enterprise Edition (Java EE), is Jakarta EE open source and aimed to be cloud native for java development. It is a set of specifications to enable java developers world wide to work together on java enterprise applications. Jakarta EE was donated to the Eclipse Foundation. Jakarta EE applications can be packaged as archives with the .ear extension (EAR files) or as archives with the .war extension (WAR files).
 
+- **WebProfile** is a subset of Jakarta EE with some extra APIs for Backend services with web focus.
+
+- **MicroProfile** is a subset of Jakarta EE with added Modules for Microservice Architectures. It is an open forum to optimize Enterprise Java for a microservices architecture by innovating across multiple implementations and collaborating on common areas of interest with a goal of standardization.
+
 ## Spring Framework and the Spring Family
 
 is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE (Enterprise Edition) platform. Although the framework does not impose any specific programming model, it has become popular in the Java community as an addition to the Enterprise JavaBeans (EJB) model. The Spring Framework is open source.
@@ -35,7 +39,5 @@ Text text
 - **Spark Java** is a micro framework for creating web applications in Kotlin and Java 8 with minimal effort. The Spark framework is a simple and lightweight Java web framework built for rapid development. It was inspired by Sinatra, a popular Ruby micro framework.
 
 - **Vert.x** is an event driven and nonblocking tool-kit. You can use Vert.x with multiple languages including Java, Kotlin, JavaScript, Groovy, Ruby, and Scala. It aims to be the most lightweight, fastest framework. It's simple but nor simplistic. Eclipse Vert.x is open source and dual-licensed under the Eclipse Public License 2.0 and Apache License 2.0.
-
-- **MicroProfile** is an open forum to optimize Enterprise Java for a microservices architecture by innovating across multiple implementations and collaborating on common areas of interest with a goal of standardization. (??) Wildfly Swarm, TomEE
 
 - **Micronaut** is a modern, JVM-based, full-stack framework for building modular, easily testable microservice, and serverless applications. Micronaut features a dependency injection and aspect-oriented programming runtime that uses no reflection. That makes it easier for Micronaut applications to run on GraalVM. (???)
