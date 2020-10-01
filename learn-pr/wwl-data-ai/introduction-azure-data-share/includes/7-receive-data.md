@@ -6,11 +6,11 @@ Well, Azure Data Share is there to solve this problem for you. The company that 
 
 First of all,    the company that wants to share data with you, needs to invite you. There are two ways to open the invitation:
 
-*	*Open Invitation from email:*
+*	*Open invitation from email*:
 
     In order to open the invitation from email, you need to check your email inbox for an invitation from your data provider (i.e. the company that is sending you the data share) which you can find easily by checking the title: Azure Data share invitation from: yourdataprovider@domain.com. 
 
-*	*Open invitation from Azure portal:*
+*	*Open invitation from Azure portal*:
 
     In order to open the invitation from the Azure portal, you can search in the Azure portal for Data Share Invitations where you will be taken into a list of data share invitations that you can accept/reject. 
 

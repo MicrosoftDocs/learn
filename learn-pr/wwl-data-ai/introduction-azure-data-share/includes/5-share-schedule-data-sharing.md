@@ -1,9 +1,9 @@
 There are two possible ways of sharing your data:
 
-*	Snapshot-Based Sharing
-*	In-Place Sharing
+*	Snapshot-based sharing
+*	In-place sharing
 
-##  Snapshot Based Sharing:
+##  Snapshot based sharing
 
 When you set up a snapshot-based sharing, the data will move from your subscription (data provider) to the person or organization’s Azure subscription (data consumer), through an invitation  sent to the recipients for that data share. 
 
@@ -22,6 +22,6 @@ The incremental updates of the data that you shared, can be scheduled through a 
 
 In the case of sharing from SQL-based sources, the data consumer can also choose whether they receive data in parquet or csv.
 
-## In-place Sharing:
+## In-place sharing
 
 With in-place sharing, data providers can share data where it resides without copying the data. After sharing relationship is established through the invitation flow, a symbolic link is created between the data provider's source data store and the data consumer's target data store. Data consumer can read and query the data in real time using its own data store. Changes to the source data store are available to the data consumer immediately. In-place sharing is currently in preview for Azure Data Explorer.

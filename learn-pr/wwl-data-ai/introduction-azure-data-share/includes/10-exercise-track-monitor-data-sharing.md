@@ -8,7 +8,7 @@ Click on the share you want to see the invitation status of and go to invitation
 
 ![Sent Shares Details Invitation ](../media/ADSSentShareDetails.png)
 
-If you want to monitor and see the status of the share subscriptions (for example if the subscription is active) you navigate again to ‘Sent Shares’ and click on the Share Subscriptions tab:
+If you want to monitor and see the status of the share subscriptions (for example if the subscription is active), you navigate again to ‘Sent Shares’ and click on the Share Subscriptions tab:
 
 ![Share Subscription Details Sent Share ](../media/ADSShareSubscription.png)
 

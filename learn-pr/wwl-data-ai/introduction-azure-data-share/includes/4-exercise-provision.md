@@ -18,15 +18,15 @@ In the below exercise, you’re going to create an Azure Data Share from the por
 
     ![Product Azure Data Share](../media/ADSCreateDataShare.png)
 
-    **Settings:**
+    **Settings**:
 
-    *Resource Group:*
+    *Resource Group*:
 
     If you have an existing resource group in which you would want to create the Azure Data Share in, select it from the drop-down menu for the resource group that you’d like to deploy the Data Share into. 
 
     If you don’t have an existing Resource group,  navigate through ‘Create new’, and create a new resource group. 
 
-    *Location:*
+    *Location*:
 
     Choose the Azure region that's right for you and your customers.
 
@@ -34,7 +34,7 @@ In the below exercise, you’re going to create an Azure Data Share from the por
 
     The Azure Data Share service does not have to be available in your region to leverage the service. For example, if you have data stored in an Azure Storage account located in a region where Azure Data Share is not yet available, you can still leverage the service to share your data.
 
-    *Name:*
+    *Name*:
 
     Give the resource a name. 
 
