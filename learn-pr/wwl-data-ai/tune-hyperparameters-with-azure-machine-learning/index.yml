@@ -20,7 +20,6 @@ levels:
 - intermediate
 roles:
 - data-scientist
-- student
 products:
 - azure
 - azure-machine-learning

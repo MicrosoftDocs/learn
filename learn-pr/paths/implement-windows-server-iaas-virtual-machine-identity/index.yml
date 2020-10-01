@@ -3,7 +3,7 @@ uid: learn.wwl.implement-windows-server-iaas-vm-identity
 metadata:
   title: Implement Windows Server IaaS VM Identity
   description: After completing this learning path, you’ll know how to implement identity in Azure. You’ll be able to extend an existing on-premises Active Directory identity service into Azure.
-  ms.date: 07/19/2020
+  ms.date: 10/01/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -24,13 +24,12 @@ prerequisites: |
     - Monitoring
 summary: |
   After completing this learning path, you’ll know how to implement identity in Azure. You’ll be able to extend an existing on-premises Active Directory identity service into Azure.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/implement-windows-server-iaas-vm-identity.svg
 levels:
 - intermediate
 roles:
 - administrator
 - solution-architect
-- student
 - technology-manager
 products:
 - azure
