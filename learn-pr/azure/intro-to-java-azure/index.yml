@@ -35,9 +35,10 @@ units:
 - learn.azure.intro-to-java-azure.1-introduction
 - learn.azure.intro-to-java-azure.2-role
 - learn.azure.intro-to-java-azure.3-app-types
-- learn.azure.intro-to-java-azure.4-deployment-opportunities
-- learn.azure.intro-to-java-azure.5-sample-deployment
-- learn.azure.intro-to-java-azure.6-knowledge-check
-- learn.azure.intro-to-java-azure.7-summary
+- learn.azure.intro-to-java-azure.4-java-technologies
+- learn.azure.intro-to-java-azure.5-deployment-opportunities
+- learn.azure.intro-to-java-azure.6-sample-deployment
+- learn.azure.intro-to-java-azure.7-knowledge-check
+- learn.azure.intro-to-java-azure.8-summary
 badge:
   uid: learn.azure.intro-to-java-azure.badge

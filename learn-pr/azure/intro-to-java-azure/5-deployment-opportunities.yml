@@ -11,4 +11,4 @@ metadata:
 title: Deployment opportunities on Azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-deployment-opportunities.md)]
+  [!include[](includes/5-deployment-opportunities.md)]

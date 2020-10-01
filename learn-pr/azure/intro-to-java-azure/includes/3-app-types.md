@@ -2,53 +2,19 @@
 
 It's necessary to distinguish between the different types of Java application before choosing the matching cloud solution for your deployment.
 
-## Architectural Styles
-
-### Monolithic Applications
+## Monolithic Applications
 
 The *All in One* solution that still fits for numerous projects from smaller ones over *Self-contained Systems* to *Contain it all* are the Monolithic applications. A Monolithic application is a good start for prototyping and Startups. It's simple to develop, easy to debug and to test as well as simple to deploy. They bring little cross-cutting concerns such as logging, caching, or monitoring. Depending on the functionality, they are scalable but only as a whole.
 
+Traditionally your monolithic applications run on application servers.
+
 The distinction between the Monolithic and Microservices-oriented-pattern is fluent.
 
-You can distinguish your type of application specification wise. The most famous ones are:
-
-### MicroProfile
-
-Eclipse MicroProfile is an open forum to optimize enterprise Java for a microservices architecture by innovating across multiple implementations and collaborating on common areas of interest with a goal of standardization.
-
-Many innovative "microservice" Enterprise Java environments and frameworks already exist in the Java ecosystem. These projects are creating new features and capabilities to address microservice architectures -- leveraging both Java EE and non-Java EE technologies.
-
-The goal of the Eclipse MicroProfile project is to iterate and innovate in short cycles to propose new common APIs and functionality, get community approval, release, and repeat. Eventually, the outputs of this project could be submitted to the Eclipse Jakarta EE, JCP, OpenJDK, or any relevant standards body.
-
-### Jakarta EE
-
-Formerly known as Oracle's Java Enterprise Edition (Java EE), is Jakarta EE open source and aimed to be cloud native for java development. It is a set of specifications to enable java developers world wide to work together on java enterprise applications. Jakarta EE was donated to the Eclipse Foundation. Jakarta EE applications can be packaged as archives with the .ear extension (EAR files) or as archives with the .war extension (WAR files).
-
-- **Spring Framework** is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE (Enterprise Edition) platform. Although the framework does not impose any specific programming model, it has become popular in the Java community as an addition to the Enterprise JavaBeans (EJB) model. The Spring Framework is open source.
-
-### Application Servers
-
-- **Apache Tomcat** is an open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. The Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket specifications are developed under the Java Community Process.
-
-In the following, we have a list of application types, most Java applications are one of.
-
-## Most used Frameworks for Microservices
+## Microservices
 
 Nowadays the successful businesses are asked to adapt fast, to expect the unexpected, to fail fast and forward in order to succeed. In order to reduce the time to market, more engineers get hired. higher time to market -> more communication effort -> divide and conquer
 
 ![Two guys from LegoMasters explaining that they will go to divide and conquer.](https://media.giphy.com/media/ZEr8iZHmjZfABEPGRk/source.gif)
-
-Next, a list of the most used frameworks for Microservices can be found:
-
-- **Spring Boot** is by far the most used framework as an alternative to application servers, at least every second web project is using Spring boot. It has become the most popular Java web framework. And it is getting more and more momentum over the last years.
-
-- **Netty** is a NIO client-server framework, which enables quick and easy development of network applications such as protocol servers and clients. It greatly simplifies and streamlines network programming such as TCP and UDP socket server. Netty is an asynchronous event-driven network application framework for rapid development of maintainable high-performance protocol servers & clients.
-
-- **Spark Java** is a micro framework for creating web applications in Kotlin and Java 8 with minimal effort. The Spark framework is a simple and lightweight Java web framework built for rapid development. It was inspired by Sinatra, a popular Ruby micro framework.
-
-- **Vert.x** is an event driven and nonblocking tool-kit. You can use Vert.x with multiple languages including Java, Kotlin, JavaScript, Groovy, Ruby, and Scala. It aims to be the most lightweight, fastest framework. It's simple but nor simplistic. Eclipse Vert.x is open source and dual-licensed under the Eclipse Public License 2.0 and Apache License 2.0.
-
-- **Micronaut** is a modern, JVM-based, full-stack framework for building modular, easily testable microservice, and serverless applications. Micronaut features a dependency injection and aspect-oriented programming runtime that uses no reflection. That makes it easier for Micronaut applications to run on GraalVM. (???)
 
 ## Batch
 
