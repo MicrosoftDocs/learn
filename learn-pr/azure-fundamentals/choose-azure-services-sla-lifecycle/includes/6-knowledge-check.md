@@ -1,16 +1,16 @@
-Consider the following scenario. Then choose the best response for each question that follows and select "Check your answers."
+Consider the following scenario. Then choose the best response for each question that follows, and select **Check your answers**.
 
-Recall that Tailwind Traders' Special Orders application includes two virtual machines, Azure Load Balancer, and Azure SQL Database:
+Recall that the Tailwind Traders' Special Orders application includes two virtual machines, Azure Load Balancer, and Azure SQL Database:
 
 :::image type="content" source="../media/4-special-orders-architecture.svg" alt-text="A diagram showing two virtual machines connected to Azure Load Balancer and Azure SQL Database." border="false":::
 
-Here's the SLA for each service:
+Here's the service-level agreement (SLA) for each service:
 
 | Service | SLA |
 | --- | --- |
-| Virtual Machines | 99.9% |
-| Azure SQL Database | 99.99% |
-| Azure Load Balancer | 99.99% |
+| Azure Virtual Machines | 99.9 percent |
+| Azure SQL Database | 99.99 percent |
+| Azure Load Balancer | 99.99 percent |
 
 To compute the composite SLA for a set of services, you multiply the SLA of each individual service. Recall that the existing composite SLA is:
 
@@ -24,6 +24,6 @@ Here's a diagram that shows their proposed plan:
 
 :::image type="content" source="../media/6-special-orders-architecture-maps.svg" alt-text="A diagram showing three virtual machines connected to Azure Load Balancer, Azure SQL Database, and Azure Maps." border="false":::
 
-Recall that you can access SLAs from the [Service Level Agreements](https://azure.microsoft.com/support/legal/sla/?azure-portal=true) page.
+Recall that you can access SLAs from [Service Level Agreements](https://azure.microsoft.com/support/legal/sla/?azure-portal=true).
 
-Tailwind Traders is also considering using an augmented reality (AR) service in the Special Orders app to help customers visualize their customizations. This Azure service is currently in the Public preview phase.
+Tailwind Traders is also considering using an augmented reality service in the Special Orders app to help customers visualize their customizations. This Azure service is currently in the public preview phase.

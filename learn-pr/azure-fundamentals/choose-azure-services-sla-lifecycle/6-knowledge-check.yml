@@ -17,24 +17,24 @@ quiz:
   questions:
   - content: What's the SLA for Azure Maps in terms of guaranteed uptime?
     choices:
-    - content: 99%
+    - content: 99 percent
       isCorrect: false
       explanation: See the [SLA for Azure Maps](https://azure.microsoft.com/support/legal/sla/azure-maps/?azure-portal=true) to get the SLA.
-    - content: 99.9%
+    - content: 99.9 percent
       isCorrect: true
       explanation: The [SLA for Azure Maps](https://azure.microsoft.com/support/legal/sla/azure-maps/?azure-portal=true) tells you the SLA.
-    - content: 99.99%
+    - content: 99.99 percent
       isCorrect: false
       explanation: See the [SLA for Azure Maps](https://azure.microsoft.com/support/legal/sla/azure-maps/?azure-portal=true) to get the SLA.
   - content: What's the new composite SLA? Remember, the new SLA includes a third virtual machine and Azure Maps.
     choices:
-    - content: 99.58%
+    - content: 99.58 percent
       isCorrect: true
       explanation: To compute the composite SLA for a set of services, you multiply the SLA of each individual service.
-    - content: 99.78%
+    - content: 99.78 percent
       isCorrect: false
       explanation: The composite SLA is lower because adding complexity slightly increases the risk of failure.
-    - content: 99.99%
+    - content: 99.99 percent
       isCorrect: false
       explanation: The composite SLA is lower than the highest individual SLA because adding complexity slightly increases the risk of failure.
   - content: Adding a third virtual machine reduces the composite SLA. How can Tailwind Traders offset this reduction?
@@ -42,9 +42,9 @@ quiz:
     - content: Increase the size of each virtual machine.
       isCorrect: false
       explanation: The size of a virtual machine does not affect its SLA.
-    - content: Deploy extra instances of the same virtual machines across the different Availability Zones in the same Azure region.
+    - content: Deploy extra instances of the same virtual machines across the different availability zones in the same Azure region.
       isCorrect: true
-      explanation: If one Availability Zone is impacted, your virtual machine instance in the other Availability Zone should be unaffected.
+      explanation: If one availability zone is affected, your virtual machine instance in the other availability zone should be unaffected.
     - content: Do nothing. Using Azure Load Balancer increases the SLA for virtual machines.
       isCorrect: false
       explanation: Although Load Balancer can improve performance by distributing traffic, each service factors separately into the overall SLA.
