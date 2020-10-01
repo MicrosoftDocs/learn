@@ -43,9 +43,9 @@ units:
   - learn.microservices-devops-aspnet-core.2-setup-environment
   - learn.microservices-devops-aspnet-core.3-permissions-secrets
   - learn.microservices-devops-aspnet-core.4-build-github-action
-  - learn.microservices-devops-aspnet-core.6-deploy-github-action
-  - learn.microservices-devops-aspnet-core.7-knowledge-check
-  - learn.microservices-devops-aspnet-core.8-summary
+  - learn.microservices-devops-aspnet-core.5-deploy-github-action
+  - learn.microservices-devops-aspnet-core.6-knowledge-check
+  - learn.microservices-devops-aspnet-core.7-summary
 iconUrl: /learn/achievements/aspnetcore/microservices-devops-aspnet-core.svg
 badge:
   uid: learn.microservices-devops-aspnet-core.badge
