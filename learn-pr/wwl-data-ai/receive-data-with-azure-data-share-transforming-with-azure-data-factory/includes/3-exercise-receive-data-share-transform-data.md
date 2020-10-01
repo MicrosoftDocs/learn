@@ -4,19 +4,19 @@ In the below exercise you’re going to create an Azure Data Share from the port
 
 Navigate to the Azure Portal and on the left-hand side, go to Create a Resource:
 
-![Create a Resource](../media/azure-data-share-azure-marketplace-create-resource.png)
+   ![Create a Resource](../media/azure-data-share-azure-marketplace-create-resource.png)
 
 You’ll be directed to the Azure Market Place, where you type in the search : Data Share 
 
-![Search for Data Share](../media/azure-data-share-azure-marketplace-search.png)
+   ![Search for Data Share](../media/azure-data-share-azure-marketplace-search.png)
 
 You’ll be redirected to the product Azure Data Share:
 
-![Product Azure Data Share](../media/azure-data-share-azure-product-overview.png)
+   ![Product Azure Data Share](../media/azure-data-share-azure-product-overview.png)
 
 Navigate to Create, and you’ll have to provide the following: 
 
-![Product Azure Data Share](../media/azure-data-factory-create-data-share.png)
+   ![Product Azure Data Share](../media/azure-data-factory-create-data-share.png)
 
 Settings:
 
@@ -42,22 +42,22 @@ Once you have filled out the mandatory marks, go to ‘Review + create’, which
 
 You’ll be redirected to the below screen, in which you navigate to create, which will deploy the Azure Data share in your resource group.
 
-![Product Azure Data Share](../media/azure-data-factory-create-data-share-review-create.png)
+   ![Product Azure Data Share](../media/azure-data-factory-create-data-share-review-create.png)
 
 The next step is to share a dataset with Azure Data Share to an organization that Is the data consumer. 
 
 Navigate to the Data share resource to the ‘Overview’ page:
 
-![Azure Data Share Overview Page](../media/azure-data-share-overview-page.png)
+   ![Azure Data Share Overview Page](../media/azure-data-share-overview-page.png)
 
 In the overview page, select ‘Start sharing your data’  and you’ll be redirected to the following page:
 
-![Azure Data Share Start Sharing Data](../media/azure-data-share-overview-page-start-share-your-data.png)
+   ![Azure Data Share Start Sharing Data](../media/azure-data-share-overview-page-start-share-your-data.png)
 
 
 If you want to create a dataset that you want to share  select ‘+Create’, which lands you into this screen:
 
-![Azure Data Share Create Dataset Share Details ](../media/azure-data-share-overview-page-start-share-your-data.png)
+   ![Azure Data Share Create Dataset Share Details ](../media/azure-data-share-overview-page-start-share-your-data.png)
 
 There are a couple of settings you need to specify:
 
@@ -77,21 +77,21 @@ Describe the dataset that will be shared and be aware that this description will
 
 Specify the terms of use the data consumer needs to adhere to, these are terms which data consumers will need to consent to in order to accept the share invitation.
 
-![Azure Data Share Create Dataset Settings for Details](../media/azure-data-share-overview-page-start-share-your-data.png)
+   ![Azure Data Share Create Dataset Settings for Details](../media/azure-data-share-overview-page-start-share-your-data.png)
 
 Select continue and  you’ll be redirected to the following screen in which you are going to add a dataset that you are going to share. 
 
-![Azure Data Share Add Datasets](../media/azure-data-share-dataset-step-add-dataset.png)
+   ![Azure Data Share Add Datasets](../media/azure-data-share-dataset-step-add-dataset.png)
 
 Select ‘Add datasets’ and select Azure SQL Database:
 
-![Add SQL Server to DataSet Type ](../media/azure-data-lake-storage-add-dataset-sequel-server.png)
+   ![Add SQL Server to DataSet Type ](../media/azure-data-lake-storage-add-dataset-sequel-server.png)
 
 Select the SQL server  in which you have the dataset that you’re  going to share. 
 
 Authenticate with your SQL server admin login and password. 
 
-![Authenticate SQL ](../media/azure-data-share-authenticate-sequel.png)
+   ![Authenticate SQL ](../media/azure-data-share-authenticate-sequel.png)
 
 A message will pop up that you need to run a script in the Query Editor to enable data to be shared from tables/views from your SQL Database. 
 
@@ -103,45 +103,45 @@ What is not covered in this step is that prior to this exercise you need to set 
 
 Copy the script that was given and run the query. 
 
-![Running script ](../media/azure-data-share-script-sequel-authentication.png)
+   ![Running script ](../media/azure-data-share-script-sequel-authentication.png)
 
 Navigate back to the Azure Data Share resource and select Sent Shares, navigate to the Datasets Tab and add the taxi data. 
 
 Select the taxi dataset: 
 
-![Select Taxi Dataset ](../media/azure-data-share-select-taxi-dataset.png)
+   ![Select Taxi Dataset ](../media/azure-data-share-select-taxi-dataset.png)
 
 Select tables:
 
-![Select Tables](../media/azure-data-share-select-tables.png)
+   ![Select Tables](../media/azure-data-share-select-tables.png)
 
 Select both tables:
 
-![Select Both Tables](../media/azure-data-share-select-both-tables.png)
+   ![Select Both Tables](../media/azure-data-share-select-both-tables.png)
 
 Select next:
 
-![Overview Datasets ](../media/azure-data-share-dataset-overview-sequel.png)
+   ![Overview Datasets ](../media/azure-data-share-dataset-overview-sequel.png)
 
 Select continue which will land you in the following page:
 
-![Add Recipient to Dataset Share](../media/azure-data-share-add-recipient-sequel-share.png)
+   ![Add Recipient to Dataset Share](../media/azure-data-share-add-recipient-sequel-share.png)
 
 Add recipients to your share. The recipients you add will receive invitations to your share. Click Add recipient and enter email address. 
 
 Select continue:
 
-![Set up Snapshot Schedule](../media/azure-data-share-snapshot-schedule.png)
+   ![Set up Snapshot Schedule](../media/azure-data-share-snapshot-schedule.png)
 
 Configure a snapshot schedule for your data consumer. This will allow them to receive regular updates (hourly or daily) of your data at an interval defined by you. Check Snapshot Schedule. Leave the Start time and Recurrence as default. Select Continue.
 
-![Review and Create ](../media/azure-data-share-review-create-sequel-share.png)
+   ![Review and Create ](../media/azure-data-share-review-create-sequel-share.png)
 
 Review everything and select Create. A share is now created in your Sent Shares.
 
 Let's review what you can see as a data provider after you have created share of taxi data:
  
-![Overview Data Provider ](../media/azure-data-share-overview-data-provider.png)
+   ![Overview Data Provider ](../media/azure-data-share-overview-data-provider.png)
 
 
 Select the share that you just created (for example, 'TaxiData').
@@ -168,15 +168,15 @@ You should now have an Azure Data Share invitation in your inbox from Microsoft 
 
 In the e-mail that you should have received (it may take up to a few minutes for the email to arrive), an invitation for the Azure Data Share you just set up. 
 
-![Invitation Email ](../media/azure-data-share-invitation-email.png)
+   ![Invitation Email ](../media/azure-data-share-invitation-email.png)
 
 Please select view invitation and In the list 'Data Share Invitations', select the invitation titled 'TaxiData'.
 
-![Data Share Invitations ](../media/azure-data-share-taxi-data-invitation.png)
+   ![Data Share Invitations ](../media/azure-data-share-taxi-data-invitation.png)
 
 You’ll be redirected to the following invitation. 
 
-![Overview Data Share Invitation ](../media/azure-data-share-taxi-data-overview-invitation.png)
+   ![Overview Data Share Invitation ](../media/azure-data-share-taxi-data-overview-invitation.png)
 
 Review invitation details and accept the terms of use if provided.
 
@@ -184,22 +184,22 @@ Select Accept
 
 You are now taken to the received shares page where you can find the details of the data share resource of the taxi data share.  
 
-![Details Data Share](../media/azure-data-share-accept-received-share.png)
+   ![Details Data Share](../media/azure-data-share-accept-received-share.png)
 
 Select Datasets:
 
-![Received Datasets](../media/azure-data-share-received-datasets.png)
+   ![Received Datasets](../media/azure-data-share-received-datasets.png)
 
 Select the Datasets tab to specify a target Azure data store to receive the data. 
 
 Check TripFares and then select + Map to Target.
 
-![Select Datasets to Map to Target](../media/azure-data-share-select-dataset-map-target.png)
+   ![Select Datasets to Map to Target](../media/azure-data-share-select-dataset-map-target.png)
 
 Once you select map to target you’ll be redirected to the following screen:
 
 
-![ Map to Target](../media/azure-data-share-map-dataset-target.png)
+   ![ Map to Target](../media/azure-data-share-map-dataset-target.png)
 
 
 On the right hand side of the screen, from the Target Data Type drop down, you will notice a list of options for where you can receive the data into. 
@@ -218,7 +218,7 @@ Now the dataset is mapped, and you are ready to receive data.
 
 Select Snapshot Schedule. Here you can view and enable the automated update schedule provided by data provider. Check the checkbox right next to the schedule and select +Enable.
 
-![Snapshot Schedule ](../media/azure-data-share-snapshot-schedule-sequel.png)
+   ![Snapshot Schedule ](../media/azure-data-share-snapshot-schedule-sequel.png)
 
 Select Details tab, and select Trigger snapshot -> Full Copy. 
 
@@ -226,11 +226,11 @@ This will start copying data into the target storage account you specified in th
 
 It will take approximately 3-5 minutes for the data to come across.
 
-![Full Copy Trigger Snapshot ](../media/azure-data-share-trigger-snapshot-fullcopy.png)
+   ![Full Copy Trigger Snapshot ](../media/azure-data-share-trigger-snapshot-fullcopy.png)
 
 Select History tab, and click Refresh to monitor snapshot status.
 
-![Snapshot Status ](../media/azure-data-share-snapshot-status-history.png)
+   ![Snapshot Status ](../media/azure-data-share-snapshot-status-history.png)
 
 While you are waiting, navigate to the data provider's data share resource. 
 
@@ -248,16 +248,16 @@ Click on History tab to verify the status of the snapshot is successful.
 
 Click on "Start' time to drill into the snapshot history. Click on Succeeded to view details of the snapshot result.
 
-![Start Time Drill Down ](../media/azure-data-share-start-time-snapshot-history.png)
+   ![Start Time Drill Down ](../media/azure-data-share-start-time-snapshot-history.png)
 
 Select Datasets tab, click on the link under 'PATH' which will navigate to your ADLS Gen2 account storageadlsgen2test where the data is received into.
 
-![Path of ADLS Gen2 ](../media/azure-data-share-path-azure-data-lake-storage-gen-2.png)
+   ![Path of ADLS Gen2 ](../media/azure-data-share-path-azure-data-lake-storage-gen-2.png)
 
 In the storage account, open Storage Explorer (preview) to verify the filesystem 'taxidata' is created, and within it, there should be a file named 'TripFares.csv'.
 
 
-![Storage Explorer ](../media/azure-data-share-storage-explorer.png)
+   ![Storage Explorer ](../media/azure-data-share-storage-explorer.png)
 
 
 This concludes the Azure Data Share portion of the exercise.
