@@ -8,7 +8,7 @@ Credentials are the combination of a username and a password. The username is th
 
 Many passwords are not as secret as people think they are. There are currently *billions* of username and password combinations for sale, but there are even more available for free. Where did they all come from? Previous breaches. There are thousands of breaches every year, and those breaches expose all kinds of personal data, along with account information that often includes usernames and passwords.
 
-What is a *data breach* and why should you care? A data breach takes place when information that shouldn't be public is stolen. This often happens as a result of a hacker taking advantage of flaws in a security system or simply just taking the data after a company accidentally exposes a database with no security settings turned on at all. That information can then be used for a variety of bad things, including identity theft, blackmail, harassment, and other crimes. Even an account you may not care about, such as an email account you don’t use anymore, could be used by an attacker to pretend to be you. They could send email with malware to your contacts or sign up for other accounts with your name. There are many other bad uses for stolen accounts.
+What is a *data breach* and why should you care? A data breach takes place when information that shouldn't be public is stolen. This often happens as a result of a hacker taking advantage of flaws in a security system or just taking the data after a company accidentally exposes a database with no security settings turned on at all. That information can then be used for a variety of bad things, including identity theft, blackmail, harassment, and other crimes. Even an account you may not care about, such as an email account you don’t use anymore, could be used by an attacker to pretend to be you. They could send email with malware to your contacts or sign up for other accounts with your name. There are many other bad uses for stolen accounts.
 
 > [!TIP]
 > You can go to [HaveIBeenPwned](https://HaveIBeenPwned.com/?azure-portal=true) and see if one or more of your accounts has been leaked in one of the thousands of public data breaches. You can even check your old passwords to see if they have been exposed through a breach. If you find that your information shows up here, don’t worry. Just change the passwords for any identified accounts that show up, and store your new secrets in your password manager (which we will discuss shortly).
@@ -19,11 +19,11 @@ What is a *data breach* and why should you care? A data breach takes place when 
 
 As you have seen, it is safe to assume that some of your data has already been stolen or leaked. If you use the same password across more than one service or website, an attacker could easily reuse that stolen password to access more of your accounts and data.
 
-However, if you use different passwords for each of your accounts, if one password for one account is stolen, only that account is in danger, and you will only need to reset one password to re-secure the account. Compare that with having to change a re-used password for many different accounts each time there is a data breach, and you can see why having unique passwords can save you time.
+However, if you use different passwords for each of your accounts, if one password for one account is stolen, only that account is in danger, and you will only need to reset one password to resecure the account. Compare that with having to change a reused password for many different accounts each time there is a data breach, and you can see why having unique passwords can save you time.
 
 But how do you remember a different password for every account? What if you have dozens or hundreds of accounts? How can you safely protect all those passwords? If you want to do it securely, there are a couple of good options:
 
-- Write them all down in a notebook and store the notebook in a safe. This is secure because hackers usually won't be able to physically get to your safe and open it.
+- Write them in a notebook and store the notebook in a safe. This is secure because hackers usually won't be able to physically get to your safe and open it.
 - Use a password manager. This is secure because password managers are designed solely to secure passwords. A password manager can't be opened without a key (the secret password or passphrase) known only to the person that owns it. Password managers have the added bonus of being convenient, making them more likely to be used.
 
 Since storing a notebook of passwords in a safe is not convenient, the password manager is the better option for almost everybody who uses a computer and/or smartphone. A password manager will be your safest option, if you treat it carefully. In this case, *carefully* means that you should:
@@ -52,7 +52,7 @@ One famous example is the password *Pa$$w0rd*. In this example, you can meet all
 
 What is better than any complicated, short password? A long, complicated password. Unfortunately, those tend to be difficult to type and beyond most of our ability to remember.
 
-But there is another approach available that is easier to both type and remember: a *passphrase*. A passphrase is several randomly-chosen words used instead of a complex password. A classic example is "correct horse battery staple", immortalized in the web comic [XKCD #936](https://xkcd.com/936/?azure-portal=true).
+But there is another approach available that is easier to both type and remember: a *passphrase*. A passphrase is several randomly chosen words used instead of a complex password. A classic example is "correct horse battery staple", immortalized in the web comic [XKCD #936](https://xkcd.com/936/?azure-portal=true).
 
 That comic example shows how it is much easier for a computer to guess a short, complicated-looking password than a longer set of easy-to-remember words. And since you may have already memorized them, you can see that the passphrase words are much easier to remember than something long and complicated.
 
@@ -73,11 +73,11 @@ First, you will need to find a trusted password manager. Here are five common, c
 
 All of these except 1Password have free plans you can use indefinitely. At the time of this writing, 1Password has a free trial for 30 days only.
 
-To test any of these password managers, simply download the program to your computer or smartphone and give it a try. You should be able to use all except for 1Password for free, without a credit card, though most of them have some additional features available for a fee. Don't let that dissuade you. You can still have a very convenient, secure experience without paying for premium features. You should also consider installing your password manager's *browser extension* (the program that runs in your internet browser), because these extensions make logging in online while using that browser much more convenient, while still being secure.
+To test any of these password managers, simply download the program to your computer or smartphone and give it a try. You should be able to use all except for 1Password for free, without a credit card, though most of them have some additional features available for a fee. Don't let that dissuade you. You can still have a convenient, secure experience without paying for premium features. You should also consider installing your password manager's *browser extension* (the program that runs in your internet browser), because these extensions make logging in online while using that browser much more convenient, while still being secure.
 
 ## I’ve installed my password manager, what’s next?
 
-Now that you have a password manager, you should change any simple or reused passwords to make sure they are complex (long, with a lot of variety) and not being used for more than one account each. While you're making updates, this is a great opportunity to change all your passwords and add those accounts to your password manager. Some password managers will generate long and complex passwords for you as you make changes. Good password managers will also record new entries or updates for you automatically, so you won’t have to enter that information twice.
+Now that you have a password manager, you should change any basic or reused passwords to make sure they are complex (long, with much variety) and not being used for more than one account each. While you're making updates, this is a great opportunity to change all your passwords and add those accounts to your password manager. Some password managers will generate long and complex passwords for you as you make changes. Good password managers will also record new entries or updates for you automatically, so you won’t have to enter that information twice.
 
 With your accounts and passwords now stored securely, you'll be able to view and manage login information from just one place. Similarly, you can add and store other confidential information like addresses, credit card numbers, or your passport number.
 
@@ -97,7 +97,7 @@ One of the best things about password managers is that you can have your data se
 If you are worried about whether the data is stored securely, you should also know that the data stored in the password managers recommended earlier can’t be accessed by anyone without knowing your passphrase. Even the companies who make those recommended password managers don't know what your passphrase is. This is by design. Since nobody else can know, you can be much more secure.
 
 > [!TIP]
-> You really don't want to be locked out of your password manager, especially since you should now have passwords that aren't re-used and that are so long and varied that you can't remember them. If you aren't sure if you can remember your new passphrase, you should write it down on a piece of paper and store it somewhere very safe. Once you're sure you can remember your passphrase, you can destroy the piece of paper. In the meantime, you have a backup plan for accessing your passwords.
+> You really don't want to be locked out of your password manager, especially since you should now have passwords that aren't re-used and that are so long and varied that you can't remember them. If you aren't sure if you can remember your new passphrase, you should write it on a piece of paper and store it somewhere very safe. Once you're sure you can remember your passphrase, you can destroy the piece of paper. In the meantime, you have a backup plan for accessing your passwords.
 
 Password managers can also allow you to share just one or a few of your passwords with family members, without having to share your main passphrase. You can even and provide an emergency access option to a trusted family member for all of the secured information, if you would like to have a backup plan.
 

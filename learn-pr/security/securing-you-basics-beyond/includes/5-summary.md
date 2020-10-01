@@ -7,9 +7,9 @@ You also learned about how to add an additional layer of security to your accoun
 What should you do now? Get started securing yourself today by taking the following actions:
 
 - Install a password manager and go through the setup instructions.
-- Set up MFA for your password manager.
+- Configure MFA for your password manager.
 - Change any passwords or passphrases for accounts where you used the same ones, and store the new ones in your password manager.
-- Set up MFA on every account that supports it.
+- Configure MFA on every account that supports it.
 
 You can find more information at the links below. Also, please feel free to pass these ideas, tools, techniques, and the link to this training to your friends and family.
 
