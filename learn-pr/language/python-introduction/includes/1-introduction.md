@@ -24,7 +24,7 @@ But first, we'll cover some high-level conceptual information. In the next modul
 
 After we help you get oriented, you'll start writing code. Continually practice and explore by completing exercises and challenges. These actions reinforce foundational concepts. You'll build on these concepts throughout your career.
 
-Let's start with the most basic question: what exactly is Python? To answer what question, you must understand how a programming language lets a human communicate instructions to a computer.
+Let's start with the most basic question: what exactly is Python? To answer that question, you must understand how a programming language lets a human communicate instructions to a computer.
 
 ## Learning objectives
 
