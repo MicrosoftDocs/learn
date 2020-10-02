@@ -104,8 +104,9 @@ Compare more pros, cons, and characteristics of [enterprise operations in the Cl
 
 Distributed operations is the most complex form of operations, which attempts to blend each of the models above.
 
-:::image type="content" source="../media/complex-operations.png" alt-text="Image explaining distributed operations attempts to integrate multiple existing operating models." border="false":::
-_Figure 5: Distributed operations attempts to integrate multiple existing operating models._
+:::image type="content" source="../media/complex-operations.png" alt-text="Image explaining distributed operations attempts to integrate various current operating models." border="false":::
+
+_Figure 5: Distributed operations attempts to integrate various current operating models._
 
 This approach to operations is discouraged when ever possible. This approach is commonly seen when companies grow through rapid acquisition resulting in a distributed mixture of the prior three operating models. Companies may exist in this state for extended periods of time, but in order to minimize redundancy and promote more efficient operations customers should consider developing a plan to transition to one of the less complex models.
 

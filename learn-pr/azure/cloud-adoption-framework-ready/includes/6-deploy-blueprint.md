@@ -72,7 +72,7 @@ Once the copy of the blueprint sample has been successfully published, it can be
 1. Once all parameters have been entered, select **Assign** at the bottom of the page. The blueprint assignment is created and artifact deployment begins. Deployment takes roughly five minutes. To check on the status of deployment, open the blueprint assignment.
 
 > [!WARNING]
-> The Azure Blueprints service and the built-in blueprint samples are **free of cost**. Azure resources are [priced by product](https://azure.microsoft.com/pricing/). Use the [pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate the cost of running resources deployed by this blueprint sample.
+> The Azure Blueprints service and the built-in blueprint samples are **free of cost**. Azure resources are [priced by product](https://azure.microsoft.com/pricing?azure-portal=true). Use the [pricing calculator](https://azure.microsoft.com/pricing/calculator?azure-portal=true) to estimate the cost of running resources deployed by this blueprint sample.
 
 ## Artifact parameters table
 
@@ -81,7 +81,14 @@ The following table provides a list of the blueprint artifact parameters:
 |Artifact name|Artifact type|Parameter name|Description|
 |-|-|-|-|
 | Deploy VNet landing zone | Resource Manager template | `IPAddress_space` | **Locked** - Provide the first two octets example, 10.0 |
+<<<<<<< Updated upstream
 | Deploy Key Vault | Resource Manager template | `KV-AccessPolicy` | **Locked** - The group or user object ID to grant permissions to in Key Vault |
 | Deploy Log Analytics | Resource Manager template | `LogAnalytics_DataRetention` | **Locked** - The number of days that data will be retained in Log Analytics |
 | Deploy Log Analytics | Resource Manager template | `LogAnalytics_Location` | **Locked** - The region used when establishing the workspace |
 | Deploy Azure Migrate | Resource Manager template | `Azure_Migrate_Location`| **Locked** - The region selected to deploy Azure Migrate | 
+=======
+| Deploy Key Vault | Resource Manager template | `KV-AccessPolicy` | **Locked** - Group or user object ID to grant permissions to in Key Vault |
+| Deploy Log Analytics | Resource Manager template | `LogAnalytics_DataRetention` | **Locked** - The umber of days that data will be retained in Log Analytics |
+| Deploy Log Analytics | Resource Manager template | `LogAnalytics_Location` | **Locked** - The region used when establishing the workspace |
+| Deploy Azure Migrate | Resource Manager template | `Azure_Migrate_Location`| **Locked** - Select the region to deploy Azure Migrate |
+>>>>>>> Stashed changes
