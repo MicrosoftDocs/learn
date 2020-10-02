@@ -26,7 +26,7 @@ The current operations management processes require that all new innovations fro
 
 ## Identity management
 
-Active Directory is the identity store and primary tool for authentication and access control across the Tailwind Traders datacenters. They've used some best of breed systems to extend identity into a multi-factor authentication solution. They've also federated identities to deploy their Office 365 solution. But even with those, Active Directory is how they manage identity.
+Active Directory is the identity store and primary tool for authentication and access control across the Tailwind Traders datacenters. They've used some best of breed systems to extend identity into a multifactor authentication solution. They've also federated identities to deploy their Office 365 solution. But even with those, Active Directory is how they manage identity.
 
 In the cloud, they now have additional options, like Azure Active Directory or Active Directory Domain Services running in IaaS infrastructure. The team is struggling to compare options and choose the best identity solution for their cloud adoption plans.
 

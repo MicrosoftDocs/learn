@@ -81,14 +81,7 @@ The following table provides a list of the blueprint artifact parameters:
 |Artifact name|Artifact type|Parameter name|Description|
 |-|-|-|-|
 | Deploy VNet landing zone | Resource Manager template | `IPAddress_space` | **Locked** - Provide the first two octets example, 10.0 |
-<<<<<<< Updated upstream
-| Deploy Key Vault | Resource Manager template | `KV-AccessPolicy` | **Locked** - The group or user object ID to grant permissions to in Key Vault |
-| Deploy Log Analytics | Resource Manager template | `LogAnalytics_DataRetention` | **Locked** - The number of days that data will be retained in Log Analytics |
-| Deploy Log Analytics | Resource Manager template | `LogAnalytics_Location` | **Locked** - The region used when establishing the workspace |
-| Deploy Azure Migrate | Resource Manager template | `Azure_Migrate_Location`| **Locked** - The region selected to deploy Azure Migrate | 
-=======
 | Deploy Key Vault | Resource Manager template | `KV-AccessPolicy` | **Locked** - Group or user object ID to grant permissions to in Key Vault |
 | Deploy Log Analytics | Resource Manager template | `LogAnalytics_DataRetention` | **Locked** - The umber of days that data will be retained in Log Analytics |
 | Deploy Log Analytics | Resource Manager template | `LogAnalytics_Location` | **Locked** - The region used when establishing the workspace |
 | Deploy Azure Migrate | Resource Manager template | `Azure_Migrate_Location`| **Locked** - Select the region to deploy Azure Migrate |
->>>>>>> Stashed changes
