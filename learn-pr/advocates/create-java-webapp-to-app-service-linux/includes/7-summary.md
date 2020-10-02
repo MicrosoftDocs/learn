@@ -2,6 +2,9 @@ TODO: Write Explanation
 
 ## Other Useful Link
 
+### Microsoft Azure Related
+
+* [Azure App Service](https://docs.microsoft.com/azure/app-service/)
 * [Monitor Azure App Service performance](https://docs.microsoft.com/en-us/azure/azure-monitor/app/azure-web-apps?tabs=java)
 * [Quickstart: Get started with Application Insights in a Java web project](https://docs.microsoft.com/azure/azure-monitor/app/java-get-started?tabs=maven)
 * [Get started with Autoscale in Azure](https://docs.microsoft.com/azure/azure-monitor/platform/autoscale-get-started)
@@ -9,3 +12,14 @@ TODO: Write Explanation
 * [Integrate your app with an Azure virtual network](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet)
 * [Azure App Service Hybrid Connections](https://docs.microsoft.com/azure/app-service/app-service-hybrid-connections)
 * [App Service pricing](https://azure.microsoft.com/pricing/details/app-service/linux/)
+
+### Java Related
+
+* [W3C: XHTML™ 1.0 The Extensible HyperText Markup Language (Second Edition)](http://www.w3.org/TR/xhtml1/#a_dtd_XHTML-1.0-Transitional)
+* [JavaServer Faces(JSF)](http://www.javaserverfaces.org/)
+* [JSF 2.3](https://jakarta.ee/specifications/faces/2.3/) 
+* [Expression Language (EL 式)](https://jakarta.ee/specifications/expression-language/3.0/)
+* [Project Lombok](https://projectlombok.org/)
+* [PrimeFaces](https://www.primefaces.org/documentation/)
+* [Maven Plugin for Azure Web Apps](https://github.com/microsoft/azure-maven-plugins)
+

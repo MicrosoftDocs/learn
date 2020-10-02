@@ -1,10 +1,10 @@
-Java は誕生依頼様々な環境で動作してきました。特に、サーバ・サイドで Java は幅広く多くの場所で使われてきました。これに併せて、Java Web アプリケーションのフレーム・ワークも様々提供されてきました。たとえば JavaServer Pages(JSP)、Java Servlet, Struts, [JavaServer Faces(JSF)](http://www.javaserverfaces.org/), Spring MVC のような Web フレームワークが今まで数多く提供されてきました。
+Java は誕生依頼様々な環境で動作してきました。特に、サーバ・サイドで Java は幅広く多くの場所で使われてきました。これに併せて、Java Web アプリケーションのフレーム・ワークも様々提供されてきました。たとえば JavaServer Pages(JSP)、Java Servlet, Struts, JavaServer Faces(JSF), Spring MVC のような Web フレームワークが今まで数多く提供されてきました。
 
 また実行環境として、Apache Tomcat は、1998年11月にプロジェクトを開始し、 Servlet, JSP の参照実装かつ OSS として提供され、多くの利用者から使われてきました。
 
-このモジュールは、簡単な Java Web アプリケーションとして、Todo アプリケーションを作成し、[Azure App Service](https://docs.microsoft.com/azure/app-service/) 上で動かします。
+このモジュールは、簡単な Java Web アプリケーションとして、Todo アプリケーションを作成し、Azure App Service 上で動かします。
 
-Todo アプリケーションは、MVC フレームワークとして JSF を利用し、内部的にはリッチな画面を作成するため、[PrimeFaces](https://www.primefaces.org/) を利用します。  
+Todo アプリケーションは、MVC フレームワークとして JSF を利用し、内部的にはリッチな画面を作成するため、PrimeFaces を利用します。  
 JSF はコンポーネント・ベースのフレームワークで、ユーザ・インタエース(UI)のコンポーネントを xhtml に記載し、ユーザ・インタフェース側で発行されたイベント（ボタンを押すなど）を、バッキング・Bean と呼ぶ実装クラスで実装し処理を行います。  
 PrimeFaces は JSF の拡張 UI コンポーネントを提供し、これを利用する事で簡単に Single Page Application (SPA) など Ajax に対応したリッチな画面を作成する事ができます。
 
@@ -30,8 +30,8 @@ JSF のアプリケーションは、大きく分けて下記の２つの機能�
 - **Facelets** : Facelets は画面レイアウトを記述する XHTML ベースのテンプレートエンジン
 - **BakingBean** : Facelets とバインドし、値の設定や処理を行う Java クラス
 
-`Facelets` は画面レイアウトを記述する XHTML ベースのテンプレートエンジンで、XHTML で記述します。XHTML は [W3C](http://www.w3.org/TR/xhtml1/#a_dtd_XHTML-1.0-Transitional) に定義されている、Document Type Definition (DTD) に準拠し、xhtml の拡張子を持つファイルで記載します。
-Jakarta EE 8 ベースのアプリケーションでは、[JSF 2.3](https://jakarta.ee/specifications/faces/2.3/) ベースが利用可能です。
+`Facelets` は画面レイアウトを記述する XHTML ベースのテンプレートエンジンで、XHTML で記述します。XHTML は W3C に定義されている、Document Type Definition (DTD) に準拠し、xhtml の拡張子を持つファイルで記載します。
+Jakarta EE 8 ベースのアプリケーションでは、JSF 2.3 ベースが利用可能です。
 
 `BackingBean` は Facelets  とバインドし、値の設定や処理を行う Java クラスです。サーバ側で処理を実装するためには、Facelets と対応するバッキング・ビーンを実装する必要があります。
 
@@ -39,12 +39,12 @@ Jakarta EE 8 ベースのアプリケーションでは、[JSF 2.3](https://jaka
 
 JSF は独自に拡張したリッチな Web コンポーネントを作成する事ができます。有名な 3rd Party の JSF のコンポーネント・ライブラリとして下記が存在します。
 
-- [PrimeFaces](https://www.primefaces.org/documentation/)
-- [OmniFaces](https://omnifaces.org/)
-- [IceFaces](http://www.icesoft.org/java/projects/ICEfaces/overview.jsf)
+- PrimeFaces
+- OmniFaces
+- IceFaces
 
 今回は、これらの中から PrimeFaces を利用してリッチな JSF の Web ページを作成します。  
-PrimeFaces を利用するためには `xmlns:p="http://primefaces.org/ui` の XML ネーム・スペースを HTML タグ内に記入します。これにより [PrimeFaces の showcase](https://www.primefaces.org/showcase/) に記載されているコンポーネントを利用できるようになります。  
+PrimeFaces を利用するためには `xmlns:p="http://primefaces.org/ui` の XML ネーム・スペースを HTML タグ内に記入します。これにより PrimeFaces の showcase に記載されているコンポーネントを利用できるようになります。  
 下記の例では、基本的な入力フィールドを表示するためのタグ `p:inputText` タグを利用しています。
 
 ```xml
@@ -67,7 +67,7 @@ PrimeFaces を利用するためには `xmlns:p="http://primefaces.org/ui` の X
 ```
 
 上記の XHTML を記述する事で下記の画面が表示されます。
-![](../media/simple-jsf-facelets-primefaces-ajax.png)
+![JSF Facelets Sample](../media/simple-jsf-facelets-primefaces-ajax.png)
 
 ### PrimeFaces Ajax 対応
 
@@ -93,7 +93,7 @@ PrimeFaces では JSF で提供する Ajax 対応をより簡単に実装でき�
 また、`<h:commandButton value="Submit" action="#{indexController.submitButtonAction()}"/>` の定義は、HTMLのボタンを表示し、ボタンが押された時に、`IndexController` クラスに定義された `submitButtonAction()` メソッドを呼び出します。
 
 **Note**  
-`#{indexcontroller.inputValue}` の表現を [Expression Language (EL 式)](https://jakarta.ee/specifications/expression-language/3.0/) と呼びます。
+`#{indexcontroller.inputValue}` の表現を Expression Language (EL 式) と呼びます。
 
 ```java
 import java.io.Serializable;
@@ -132,4 +132,4 @@ public class IndexController implements Serializable{
 ## JSF に関する情報
 
 上記のほか、JSF はデータのバリデーションやコンバージョン、複数のコンポーネントを組み合わせたり、テンプレート機能、Ajax や WebSocket に対応するなど豊富な便利な機能を持っています。  
-より詳しい情報を入手したい場合、[http://www.javaserverfaces.org/](http://www.javaserverfaces.org/) をご覧ください。
+より詳しい情報を入手したい場合、`http://www.javaserverfaces.org/` をご覧ください。

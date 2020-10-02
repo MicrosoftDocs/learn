@@ -1,5 +1,5 @@
 ローカル環境の Tomcat で動作確認ができたので、アプリケーションを Azure App Services にデプロイします。  
-Azure App Service にデプロイするためには、[Maven Plugin for Azure Web Apps](https://github.com/microsoft/azure-maven-plugins) を利用できます。最新バージョンを指定してください (2020年10月1日時点で 1.11.0)。
+Azure App Service にデプロイするためには、Maven Plugin for Azure Web Apps (https://github.com/microsoft/azure-maven-plugins) を利用できます。最新バージョンを指定してください (2020年10月1日時点で 1.11.0)。
 
 ```bash
 mvn com.microsoft.azure:azure-webapp-maven-plugin:1.11.0:config
@@ -152,7 +152,7 @@ mvn azure-webapp:deploy
 
 `https://azure-javaweb-app-1601463451101.azurewebsites.net`
 
-![](../media/deployed-to-the-appservices.png)
+![Deployed Web App on Azure App Services](../media/deployed-to-the-appservices.png)
 
 
 ## Deploy App to the Deployment Slot as Staging Environment

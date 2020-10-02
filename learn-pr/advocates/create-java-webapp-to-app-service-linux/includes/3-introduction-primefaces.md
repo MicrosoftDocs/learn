@@ -1,4 +1,4 @@
-[PrimeFaces](https://www.primefaces.org/showcase/) is one of the most popular UI Component libraries in JavaServer Faces and widely used by many global companies. If you use the framework, you can create rich Web Application with very easily.  
+PrimeFaces is one of the most popular UI Component libraries in JavaServer Faces and widely used by many global companies. If you use the framework, you can create rich Web Application with very easily.  
 In this module, we will create Simple Todo List application like follows. And in this section, we will learn the PrimeFaces component which we will use in the Application.
 
 ![My ToDo List App](../media/primefaces-todo-list.png)
@@ -7,7 +7,7 @@ In this module, we will create Simple Todo List application like follows. And in
 ## PrimeFaces Component in the Application
 
 本節では、Todo アプリケーションを作成するために使用する PrimeFaces の代表的なコンポーネントを紹介します。  
-[PrifeFaces が提供するコンポーネントの一覧](https://www.primefaces.org/showcase/) にはサンプル・コードを交えて詳しく紹介されていますので、本節で取り上げる以外のコンポーネントを利用したい場合は、`showcase` ご参照ください。
+PrifeFaces が提供するコンポーネントの一覧 (https://www.primefaces.org/showcase/) にはサンプル・コードを交えて詳しく紹介されていますので、本節で取り上げる以外のコンポーネントを利用したい場合は、`showcase` ご参照ください。
 
 ### PrimeFaces Layout
 
@@ -53,16 +53,16 @@ Todo アプリでは `position="north"` と `position="center"` を使用しま�
 
 #### p:outputLabel 
 
-[p:outputLabel](https://www.primefaces.org/showcase/ui/misc/outputLabel.xhtml) はテキストを表示するためのコンポーネントで、標準で提供されている outputLabel を拡張しています。ここでは `value="My Tasks"` と静的な文字列を記載しているため、画面でも `My. Taks` が表示されていますが、動的に出力する文字列を変更したい場合、下の `p:inputText` で記載されているように EL式 `#{todocontroller.name}` に置き換え、バッキング・ビーンのフィールドとバインドさせる事で動的な文字列を表示させることも可能です。  
+`p:outputLabel` はテキストを表示するためのコンポーネントで、標準で提供されている outputLabel を拡張しています。ここでは `value="My Tasks"` と静的な文字列を記載しているため、画面でも `My. Taks` が表示されていますが、動的に出力する文字列を変更したい場合、下の `p:inputText` で記載されているように EL式 `#{todocontroller.name}` に置き換え、バッキング・ビーンのフィールドとバインドさせる事で動的な文字列を表示させることも可能です。  
 
 #### p:inputText
 
-[p:inputText](https://www.primefaces.org/showcase/ui/input/inputText.xhtml) は入力可能なテキスト・フィールドを扱うためのコンポーネントで、標準で提供されている inputText を拡張しています。  
+`p:inputText` は入力可能なテキスト・フィールドを扱うためのコンポーネントで、標準で提供されている inputText を拡張しています。  
 EL式 `#{todocontroller.name}` で対応するバッキング・ビーン (TodoListController) のクラスで定義されているフィールドに値をバインドし、ユーザから入力された値は、`name` で参照できるようになります。
 
 #### p:commandButton
 
-[p:commandButton](https://www.primefaces.org/showcase/ui/button/commandButton.xhtml) はボタンを表示するためのコンポーネントで、標準で提供されている commandButton を拡張しています。ボタンが押された時、`action` に記載する EL 式 `#{todocontroller.buttonAddAction()` が実行されます。具体定期には対応するバッキング・ビーン (TodoListController) のクラスで定義されている `buttonAddAction()` メソッドが呼び出されます。   
+`p:commandButton` はボタンを表示するためのコンポーネントで、標準で提供されている commandButton を拡張しています。ボタンが押された時、`action` に記載する EL 式 `#{todocontroller.buttonAddAction()` が実行されます。具体定期には対応するバッキング・ビーン (TodoListController) のクラスで定義されている `buttonAddAction()` メソッドが呼び出されます。   
 また、`update="target-id"` をボタンの属性に追加する事で Ajax で処理を実行する事もできます。 
 
 
@@ -98,7 +98,7 @@ If you create the XHTML and Backing Bean, you can  see like the followign screen
 
 ### PrimeFaces DataTable
 
-[p:dataTable](https://www.primefaces.org/showcase/ui/data/datatable/paginator.xhtml) は HTML の表を表示するためのコンポーネントで、標準で提供されている table を拡張しています。`paginator` の属性を追加する事で　Paginator 機能を簡単に利用する事が可能です。ここでは　Paginator の Transition の機能を表の下部に配置し `paginatorPosition="bottom"` 、一画面で表示可能な項目は 5 件 `rows="5"` で設定しています。  
+`p:dataTable` は HTML の表を表示するためのコンポーネントで、標準で提供されている table を拡張しています。`paginator` の属性を追加する事で　Paginator 機能を簡単に利用する事が可能です。ここでは　Paginator の Transition の機能を表の下部に配置し `paginatorPosition="bottom"` 、一画面で表示可能な項目は 5 件 `rows="5"` で設定しています。  
 表の表示項目は `TodoListController` クラスの `todoItems` を利用しています。`todoItems` は `List<TodoItem>` を参照しており、List 内の各要素 (`TodoItem`) は `var="item"` で利用可能です。  
 つまり、`#{item.name}` や　`#{item.category}` で `TodoItem` インスタンスの各値を表示しています。
 
@@ -167,7 +167,7 @@ public class TodoListController implements Serializable {
 
 下記に `TodoItem ` クラスの実装を記述します。  
 このクラスは、表示用のデータ・モデルとして利用します。  
-[Project Lombok](https://projectlombok.org/) の [@Data](https://projectlombok.org/features/Data) アノテーションを付加しているため、全フィールドに対して自動的に Setter/Getter メソッドが追加され `toString()`, `equals(Object o)`,  `hashCode()` などのメソッドがオーバライドされています。
+`Project Lombok` の `@Data` アノテーションを付加しているため、全フィールドに対して自動的に Setter/Getter メソッドが追加され `toString()`, `equals(Object o)`,  `hashCode()` などのメソッドがオーバライドされています。
 
 ```java
 import java.io.Serializable;
@@ -176,8 +176,8 @@ import lombok.Data;
 @Data
 public class TodoItem implements Serializable {
 
-	private static final long serialVersionUID = -8967340396649549045L;
-	private Long id;
+    private static final long serialVersionUID = -8967340396649549045L;
+    private Long id;
     private String category;
     private String name;
     private boolean complete;
