@@ -6,6 +6,6 @@ The solution for the [sample project is on GitHub in the _solution_ branch](http
 
 Here are several resources where you can learn more about Azure Static Web Apps, Visual Studio Code, and other concepts covered in this module.
 
-- Learning: [Publish an API to Azure Static Web Apps](https://docs.microsoft.com/learn/modules/publish-static-web-app-api-preview-url/)
+- Learn how to [Publish an API to Azure Static Web Apps](https://docs.microsoft.com/learn/modules/publish-static-web-app-api-preview-url/)
 - [Azure Static Web Apps on Microsoft Docs](https://docs.microsoft.com/azure/static-web-apps)
 - Use [Angular](https://code.visualstudio.com/docs/nodejs/angular-tutorial), [React](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial), and [Vue](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial) in Visual Studio Code
