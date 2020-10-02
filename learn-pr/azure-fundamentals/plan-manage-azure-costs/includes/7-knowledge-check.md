@@ -1,4 +1,4 @@
-Consider the following scenario. Then choose the best response for each question that follows and select "Check your answers."
+Consider the following scenario. Then choose the best response for each question that follows, and select **Check your answers**.
 
 Before they migrate their existing e-commerce system from their datacenter to production environments on Azure, the Tailwind Traders team wants to first set up environments for development and testing.
 

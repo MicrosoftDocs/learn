@@ -21,7 +21,7 @@ Azure offers both free and paid subscription options to fit your needs and requi
 
 * **Free trial**
 
-    A free trial subscription provides you with 12 months of popular free services, a credit to explore any Azure service for 30 days, and 25+ services that are always free. Your Azure services are disabled when the trial ends or when your credit expires for paid products, unless you upgrade to a paid subscription.
+    A free trial subscription provides you with 12 months of popular free services, a credit to explore any Azure service for 30 days, and more than 25 services that are always free. Your Azure services are disabled when the trial ends or when your credit expires for paid products, unless you upgrade to a paid subscription.
 
 * **Pay-as-you-go**
 
@@ -37,7 +37,7 @@ There are three main ways to purchase services on Azure. They are:
 
 * **Through an Enterprise Agreement**
 
-    Larger customers (known as Enterprise customers) can sign an Enterprise Agreement with Microsoft that commits them to spending a predetermined amount on Azure services over a period of three years, which is typically paid annually. As an Enterprise Agreement customer, you will receive the best, customized pricing based on the kinds and amounts of services you plan on using.
+    Larger customers, known as Enterprise customers, can sign an Enterprise Agreement with Microsoft. This agreement commits them to spending a predetermined amount on Azure services over a period of three years. The service fee is typically paid annually. As an Enterprise Agreement customer, you'll receive the best customized pricing based on the kinds and amounts of services you plan on using.
 
 * **Directly from the web**
 
@@ -61,7 +61,7 @@ The way you use resources, your subscription type, and pricing from third-party 
 
 ### Resource type
 
-Azure resources have a number of factors that influence their cost. They depend on the type of resource or how you customize it.
+A number of factors influence the cost Azure resources. They depend on the type of resource or how you customize it.
 
 For example, with a storage account you specify a type (such as block blob storage or table storage), a performance tier (standard or premium), and an access tier (hot, cool, or archive). These selections present different costs.
 
@@ -96,7 +96,7 @@ Deallocating a VM when you don't plan on using it for some time is just one way 
 
 Some Azure subscription types also include usage allowances, which affect costs.
 
-For example, an Azure free trial subscription provides access to a number of Azure products that are free for 12 months. It also includes credit to spend within your first 30 days of sign-up, and access to more than 25 products that are always free (based on resource and region availability).
+For example, an Azure free trial subscription provides access to a number of Azure products that are free for 12 months. It also includes credit to spend within your first 30 days of sign-up. And you get access to more than 25 products that are always free (based on resource and region availability).
 
 ### Azure Marketplace
 
@@ -112,13 +112,13 @@ Azure infrastructure is distributed globally, which enables you to deploy your s
 
 Different regions can have different associated prices. Because geographic regions can impact where your network traffic flows, network traffic is a cost influence to consider as well.
 
-For example, say Tailwind Traders decides to provision its Azure resources in the Azure regions that offer the lowest prices. That would save the company some money. But, if they need to transfer data between those regions, or if their users are located in different parts of the world, any potential savings could be offset by the additional network usage costs of transferring data between those resources.
+For example, say Tailwind Traders decides to provision its Azure resources in the Azure regions that offer the lowest prices. That decision would save the company some money. But, if they need to transfer data between those regions, or if their users are located in different parts of the world, any potential savings could be offset by the additional network usage costs of transferring data between those resources.
 
 ### Zones for billing of network traffic
 
 Billing zones are a factor in determining the cost of some Azure services.
 
-[Bandwidth](https://azure.microsoft.com/pricing/details/bandwidth?azure-portal=true) refers to data moving in and out of Azure datacenters. Some inbound data transfers (data going into Azure datacenters) are free. For outbound data transfers (data leaving Azure datacenters), data transfer pricing is based on _Zones_.
+[Bandwidth](https://azure.microsoft.com/pricing/details/bandwidth?azure-portal=true) refers to data moving in and out of Azure datacenters. Some inbound data transfers (data going into Azure datacenters) are free. For outbound data transfers (data leaving Azure datacenters), data transfer pricing is based on _zones_.
 
 ![Image that shows internet traffic traveling between two datacenters around a globe.](../media/4-billing-zones.png)
 
@@ -131,9 +131,9 @@ A zone is a geographical grouping of Azure regions for billing purposes. The fol
 
 ## How can I estimate the total cost?
 
-As you've learned, an accurate cost estimate would take all of the preceding factors into account. Fortunately, the Azure Pricing calculator helps you do just that.
+As you've learned, an accurate cost estimate takes all of the preceding factors into account. Fortunately, the Azure Pricing calculator helps you with that process.
 
-The Pricing calculator displays Azure products in categories. You add these categories to your estimate, and then configure according to your specific requirements. You then receive a consolidated estimated price, with a detailed breakdown of the costs associated with each resource you've added to your solution. You can export or share that estimate or save it for later. You can load a saved estimate and modify it to match updated requirements.
+The Pricing calculator displays Azure products in categories. You add these categories to your estimate and configure according to your specific requirements. You then receive a consolidated estimated price, with a detailed breakdown of the costs associated with each resource you added to your solution. You can export or share that estimate or save it for later. You can load a saved estimate and modify it to match updated requirements.
 
 You also can access pricing details, product details, and documentation for each product from within the Pricing calculator.
 
