@@ -183,7 +183,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. A green checkmark icon denotes a healthy service. The page refreshes automatically, every 10 seconds.
 
-    :::image type="content" source="../media/4-implement-app-insights/health-checks-status-page.png" alt-text="health checks status dashboard" border="true" lightbox="../media/4-implement-app-insights/health-checks-status-page.png":::
+    :::image type="content" source="../media/4-implement-app-insights/health-check.png" alt-text="health checks status dashboard" border="true" lightbox="../media/4-implement-app-insights/health-check.png":::
 
     > [!NOTE]
     > While the app is starting, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
