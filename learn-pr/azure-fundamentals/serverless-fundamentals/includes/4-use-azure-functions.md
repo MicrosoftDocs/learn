@@ -1,4 +1,4 @@
-Data about each product that's sold at Tailwind Traders is packaged up as a JSON message and sent to an event hub. The event hub distributes the JSON message to subscribers, which allows various systems to be notified.
+Data about each product that's sold at Tailwind Traders is packaged as a JSON message and sent to an event hub. The event hub distributes the JSON message to subscribers, which allows various systems to be notified.
 
 Tailwind Traders wants to upgrade its e-commerce site to include real-time inventory tracking. Currently, the website updates product availability nightly at 2:00&nbsp;AM.  A Windows service that's written in C# contains all of the necessary logic to:
 - Retrieve the messages.
