@@ -9,52 +9,52 @@ To start this exercise:
 1. In the project that you created, in the *contracts* directory, right-click the folder and choose to create a new file called *ShippingStatus.sol*.
 2. Copy the following contract contents, and paste them into the new file.
 
-```solidity
-pragma solidity >=0.5.12<=0.7.0;
-
-contract ShippingStatus
-{
-    // Our predefined values for shipping listed as enums
-    enum ShippingStatus { Pending, Shipped, Delivered }
-
-    // Save enum ShippingStatus in variable status
-    ShippingStatus private status;
-
-    // Event to launch when package has arrived
-    event LogNewAlert(string description);
-
-    // This initializes our contract state (sets enum to Pending once the program starts)
-    constructor() public {
-        status = ShippingStatus.Pending;
+    ```solidity
+    pragma solidity >=0.5.12<=0.7.0;
+    
+    contract ShippingStatus
+    {
+        // Our predefined values for shipping listed as enums
+        enum ShippingStatus { Pending, Shipped, Delivered }
+    
+        // Save enum ShippingStatus in variable status
+        ShippingStatus private status;
+    
+        // Event to launch when package has arrived
+        event LogNewAlert(string description);
+    
+        // This initializes our contract state (sets enum to Pending once the program starts)
+        constructor() public {
+            status = ShippingStatus.Pending;
+        }
+        // Function to change to Shipped
+        function Shipped() public {
+            status = ShippingStatus.Shipped;
+            emit LogNewAlert("Your package has been shipped");
+        }
+    
+        // Function to change to Delivered
+        function Delivered() public {
+            status = ShippingStatus.Delivered;
+            emit LogNewAlert("Your package has arrived");
+        }
+    
+        // Function to get the status of the shipping
+        function getStatus(ShippingStatus _status) internal pure returns (string memory) {
+         // Check the current status and return the correct name
+         if (ShippingStatus.Pending == _status) return "Pending";
+         if (ShippingStatus.Shipped == _status) return "Shipped";
+         if (ShippingStatus.Delivered == _status) return "Delivered";
+        }
+    
+       // Get status of your shipped item
+        function Status() public view returns (string memory) {
+             ShippingStatus _status = status;
+             return getStatus(_status);
+        }
+    
     }
-    // Function to change to Shipped
-    function Shipped() public {
-        status = ShippingStatus.Shipped;
-        emit LogNewAlert("Your package has been shipped");
-    }
-
-    // Function to change to Delivered
-    function Delivered() public {
-        status = ShippingStatus.Delivered;
-        emit LogNewAlert("Your package has arrived");
-    }
-
-    // Function to get the status of the shipping
-    function getStatus(ShippingStatus _status) internal pure returns (string memory) {
-     // Check the current status and return the correct name
-     if (ShippingStatus.Pending == _status) return "Pending";
-     if (ShippingStatus.Shipped == _status) return "Shipped";
-     if (ShippingStatus.Delivered == _status) return "Delivered";
-    }
-
-   // Get status of your shipped item
-    function Status() public view returns (string memory) {
-         ShippingStatus _status = status;
-         return getStatus(_status);
-    }
-
-}
-```
+    ```
 
 3. Look through the contract to see what's happening. Confirm that you can successfully build the contract.
 4. In the Explorer pane, right-click the contract name and then select **Build Contracts** to compile the smart contract.

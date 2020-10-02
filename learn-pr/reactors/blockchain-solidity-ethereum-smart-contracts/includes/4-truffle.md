@@ -1,4 +1,4 @@
-Truffle is the most popular development framework for Ethereum. You can install it by using the node package manager.
+Truffle is the most popular development framework for Ethereum. You can install it by using the node package manager (NPM).
 
 ## About Truffle
 

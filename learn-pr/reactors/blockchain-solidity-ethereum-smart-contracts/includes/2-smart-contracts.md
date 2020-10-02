@@ -46,4 +46,4 @@ Many tools can help you effectively develop smart contracts. The following secti
 ### Frameworks
 
 - [**Truffle Suite**](https://www.trufflesuite.com?azure-portal=true): Use the Truffle tool suite to test Ethereum contracts before you deploy them to public ledgers and incur real costs. To make your work as a developer easier, develop locally. The tool suite includes Truffle, Ganache, and Drizzle. In this module, we'll use Truffle.
-- [**OpenZeppelin**](https://openzeppelin.com/?azure-portal=true): Use OpenZeppelin tools to write, deploy, and operate decentralized applications. OpenZeppelin provides two products: the contracts library and the SDK. We don't use OpenZeppelin in this module, but later you can try out these tools to help you write secure blockchain applications.
+- [**OpenZeppelin**](https://openzeppelin.com/?azure-portal=true): Use OpenZeppelin tools to write, deploy, and operate decentralized applications. OpenZeppelin provides two products: the contracts library and the SDK. We don't use OpenZeppelin in this module, but later you can try it out as you write secure blockchain applications.
