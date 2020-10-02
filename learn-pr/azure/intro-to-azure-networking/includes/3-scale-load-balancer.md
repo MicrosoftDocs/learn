@@ -31,7 +31,7 @@ These conditions include:
 - Natural disasters
 - System maintenance, both planned and unplanned, including software updates and security patches.
 - Spikes in traffic to your site
-- Threats made by malicious parties, such as distributed denial of service, or DDoS, attacks
+- Threats made by malicious parties, such as distributed denial of service (DDoS) attacks
   :::column-end:::
 :::row-end:::
 
