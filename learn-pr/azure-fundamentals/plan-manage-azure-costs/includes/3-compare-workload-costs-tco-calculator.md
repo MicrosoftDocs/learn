@@ -36,7 +36,7 @@ Enter the specifications of your on-premises infrastructure into the TCO Calcula
 
     | Setting | Value |
     | -- | -- |
-    | Name | *Servers: Windows VMs* |
+    | Name | **Servers: Windows VMs** |
     | Workload | **Windows/Linux Server** |
     | Environment | **Virtual Machines** |
     | Operating system | **Windows** |  
@@ -51,7 +51,7 @@ Enter the specifications of your on-premises infrastructure into the TCO Calcula
 
     | Setting | Value |
     | -- | -- |
-    | Name | *Servers: Linux VMs* |
+    | Name | **Servers: Linux VMs** |
     | Workload | **Windows/Linux Server** |
     | Environment | **Virtual Machines** |
     | Operating system | **Linux** |  
@@ -65,7 +65,7 @@ Enter the specifications of your on-premises infrastructure into the TCO Calcula
 
     | Setting | Value |
     | -- | -- |
-    | Name | *Server Storage* |
+    | Name | **Server Storage** |
     | Storage type | **Local Disk/SAN** |
     | Disk type | **HDD** |
     | Capacity | **60 TB** |  

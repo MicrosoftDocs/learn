@@ -1,6 +1,6 @@
 Tailwind Traders is taking a methodical approach toward cloud migration. While proof-of-concept projects can help demonstrate technical feasibility, having a clear picture of the total cost of running in the cloud will further help the team validate their approach.
 
-To start, the Tailwind Traders team used the Total Cost of Ownership (TCO) Calculator to estimate the cost savings of operating their solution on Azure instead of in their on-premises datacenter.
+To start, the Tailwind Traders team used the Total Cost of Ownership Calculator to estimate the cost savings of operating their solution on Azure instead of in their on-premises datacenter.
 
 From there, they used the Pricing calculator to get a more detailed estimate for running a typical workload on Azure each month.
 

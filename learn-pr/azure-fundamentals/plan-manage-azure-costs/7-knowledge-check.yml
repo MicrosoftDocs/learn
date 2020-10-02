@@ -48,7 +48,7 @@ quiz:
     - content: "Just let everything run. Azure bills you only for the CPU time that you use."
       isCorrect: false
       explanation: "Usage meters track not only CPU time but also network traffic and the number of disk operations."
-  - content: "Resources in the _Dev_ and _Test_ environments are each paid for by different departments. What's the best way to categorize costs by department?"
+  - content: "Resources in the Dev and Test environments are each paid for by different departments. What's the best way to categorize costs by department?"
     choices:
     - content: "Apply a tag to each virtual machine that identifies the appropriate billing department."
       isCorrect: true
