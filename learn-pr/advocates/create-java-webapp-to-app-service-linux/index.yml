@@ -31,13 +31,14 @@ prerequisites: |
   - Basic familiarity with the HTTP protocol
   - Experience using the command line, including Git operations
 units:
-- learn.azure.build-webapp-java-tomcat.1-introduction
-- learn.azure.build-webapp-java-tomcat.2-exercise-create-jsf-app
-- learn.azure.build-webapp-java-tomcat.3-introduction-primefaces
-- learn.azure.build-webapp-java-tomcat.4-exercise-create-primefaces-app
-- learn.azure.build-webapp-java-tomcat.5-exercise-deploy-to-app-service
-- learn.azure.build-webapp-java-tomcat.6-knowledge-check
-- learn.azure.build-webapp-java-tomcat.7-summary
+- learn.azure.build-webapp-java-tomcat.1-introduction.md
+- learn.azure.build-webapp-java-tomcat.2-jsf-explanation.md
+- learn.azure.build-webapp-java-tomcat.3-exercise-create-jsf-app.md
+- learn.azure.build-webapp-java-tomcat.4-introduction-primefaces.md
+- learn.azure.build-webapp-java-tomcat.5-exercise-create-primefaces-app.md
+- learn.azure.build-webapp-java-tomcat.6-exercise-deploy-to-app-service.md
+- learn.azure.build-webapp-java-tomcat.7-knowledge-check
+- learn.azure.build-webapp-java-tomcat.8-summary.md
 
 badge:
   uid: learn.azure.build-webapp-java-tomcat.badge
