@@ -8,17 +8,17 @@ If you don’t already have a **Video Indexer** account, you can create a free t
 
 1. Open your browser and go to [**Video Indexer Portal**](https://api-portal.videoindexer.ai).
 1. Log in using a personal account (Personal Microsoft account, LinkedIn, Google, Facebook).
-1. Expand the left pane and select **Account Settings*.
+1. Expand the left pane and select **Account Settings**.
 
     :::image type="content" source="../media/video-indexer-portal-account-settings-ssm.png" alt-text="Screen shot highlight the “Account settings” option on the Video Indexer Portal.":::
 
 1. On the **Account Settings** page, copy and save the **Account ID**. You will need the information in the next section.
 
-## Gather API Key
+## Gather API key
 
 Throughout this module, you will be using the **Video Indexer API**. However, to set up your API calls you will need to use the **Video Indexer Developer Portal**. From the developer portal you can find existing API subscriptions, add new API subscriptions, and retrieve credentials needed for programmatic access.
 
-You found your **Account ID** in the account creation steps. Now let’s get the **API Key, which is required for API authorization.
+You found your **Account ID** in the account creation steps. Now let’s get the **API Key**, which is required for API authorization.
 
 Retrieve your **API key** from the developer portal by following these steps. Remember to keep this key secret.
 

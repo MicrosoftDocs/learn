@@ -3,7 +3,7 @@ uid: learn.wwl.extract-insights-from-videos-with-video-indexer-service
 metadata:
   title: Extract insights from videos with the video indexer service
   description: "Learn how to use the Video Indexer API to upload, index, retrieve insights, and search for content in video files."
-  ms.date: 10/03/2020
+  ms.date: 10/04/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -12,15 +12,17 @@ title: Extract insights from videos with the video indexer service
 summary: Learn how to use the Video Indexer API to upload, index, retrieve insights, and search for content in video files.
 abstract: |
   In this module you will:
-  - Learn how subscribe to the video indexer API
-  - Upload and index videos
-  - Examine output from the service
-  - Find key moments in a video
-  - Detect key aspects in a video
-  - View and edit insights
+  - Subscribe to the Video Indexer API.
+  - Upload and index videos to generate insights.
+  - Examine the Video Indexer processing output.
+  - Find specific moments in video files using the search endpoint.
+  - Detect key aspects in the videos, such as scenes, shots, and keyframes.
+  - View and edit insights for your indexed videos.
 prerequisites: |
-  Active Azure subscription
-  Knowledge of C# or Python programming languages
+  * Python or C# (with HTTP and JSON libraries)
+  * knowledge of C# or Python programming language
+  * Active Azure subscription
+  * Local environment to edit and run code (environment setup will be included as part of the exercises)
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate

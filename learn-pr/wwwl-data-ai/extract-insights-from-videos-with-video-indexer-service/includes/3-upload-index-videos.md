@@ -1,6 +1,6 @@
 Recall that you are a lead developer researching how Video Indexer can help you build a solution for travelers to share their vacation videos.
 
-## Understanding the Upload and Index features
+## Understand the upload and index features
 
 Extracting insights from videos starts with uploading and indexing the videos. Azure Video Indexer provides several options for uploading videos: upload from URL, send file as byte array, or reference existing asset ID. Many file formats are supported including WMV, MOV, MPG, and AVI. Once the video is uploaded, the indexing process starts automatically. Once completed, you can examine the indexer results.
 
@@ -26,7 +26,7 @@ The environment for this exercise will make use of Visual Studio Code as the edi
 
 With your environment setup, you are now ready to begin the coding exercise.
 
-## Upload and Index with the API
+## Upload and index with the API
 
 :::zone pivot="python"
 

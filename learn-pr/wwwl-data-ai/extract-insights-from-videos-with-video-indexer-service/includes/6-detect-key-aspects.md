@@ -1,6 +1,6 @@
 As lead developer of a social network for travelers, you know that insights can relate to only part of a video. To best use the indexer results, you should understand how Video Indexer maps insights to specific scenes, shots, and keyframes.
 
-## Understanding Scene, Shot, and Keyframe
+## Understand scene, shot, and keyframe
 
 Video indexer identifies temporal segments within the video to improve how you browse and edit indexed videos. The key aspects are extracted based on changes in color, contrast, and other semantic properties.
 

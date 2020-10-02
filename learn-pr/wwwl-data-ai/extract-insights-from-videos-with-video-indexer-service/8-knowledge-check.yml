@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/03/2020
+  ms.date: 10/04/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -12,7 +12,6 @@ metadata:
 azureSandbox: false
 durationInMinutes: 3
 quiz:
-  title: "Self-Check"
   questions:
   - content: "Which two required values for an API request are specific to a Video Indexer subscription? (Choose one.):"
     choices:
@@ -36,7 +35,7 @@ quiz:
     - content: "Sentiments"
       isCorrect: false
       explanation: "False. Sentiments are one of the insights extracted; not one of the levels in which videos are segmented."
-  - content: "What results will you receive from a search request? (Choose one.):"
+  - content: "What results will be returned from a search request? (Choose one.):"
     choices:
     - content: "The search will return links to the start of videos only."
       isCorrect: false

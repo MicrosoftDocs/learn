@@ -2,7 +2,7 @@ Some of the insights from Video Indexer may be less helpful for travelers to bro
 
 You can edit some insights using the portal. The insights available for edit will vary depending on what was extracted for your video.
 
-## Using Video Indexer portal to edit insights
+## Use Video Indexer portal to edit insights
 
 Let’s look at how to edit insights from the Video Indexer portal.
 
