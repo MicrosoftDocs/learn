@@ -1,11 +1,11 @@
-In this unit you'll learn about the main value types in Solidity. They are called value types because they will always be passed by value, which means they are copied when they are used. This unit covers the primary value types that you will be exposed to when writing contracts.
+In this unit you'll learn about the main value types in Solidity. Value types are always passed by value, which means they're copied when used. The primary value types that you'll use when writing contracts include **integer**, **boolean**, **string literal**, **address**, and **enum**. 
 
 ## Integers
 
-Integers are used in every Solidity source file. They represent whole numbers and can either be signed or unsigned and range from 8 up to 256 bits that they can store.
+Integers are used in every Solidity source file. They represent whole numbers and can either be signed or unsigned. They range from 8 bits to 256 bits that they can store.
 
-- Signed: Include negative and positive numbers. Can represent as **int**
-- Unsigned: Includes positive numbers only. Can represent as **uint**
+- Signed: Include negative and positive numbers. Can represent as **int**.
+- Unsigned: Includes positive numbers only. Can represent as **uint**.
 
 If a number of bits is not specified, the default value is 256 bits.
 
@@ -13,7 +13,7 @@ The following operations can be applied to integers:
 
 - Comparisons: `<=`, `<`, `==`, `!=`, `>=`, `>`
 - Bit operators: `& (and)`, `| (or)`, `^ (bitwise exclusive)`, `~ (bitwise negation)`
-- Arithmetic operators" `+ (addition)`,`- (subtraction)`, `* (multiplication)`, `/ (division)`, `% (modulo)`, `** (exponential)`
+- Arithmetic operators: `+ (addition)`,`- (subtraction)`, `* (multiplication)`, `/ (division)`, `% (modulo)`, `** (exponential)`
 
 Here are some examples of integer definitions:
 
@@ -28,9 +28,9 @@ price % 2; // 0
 
 ## Booleans
 
-Booleans are defined using the keyword **bool** and always have the values `true` or `false`.
+Booleans are defined using the keyword **bool**. They always have a value of either `true` or `false`.
 
-They can be defined as:
+Here's how they can be defined:
 
 ```solidity
 bool forSale; //true if an item is for sale
@@ -69,7 +69,7 @@ String literals are also used in most contract files. They are characters or wor
 
 Additionally, the following escape characters can be used with string literals:
 
-- `\<newline> escapes a new line
+- `\<newline>` escapes a new line
 - `\n` new line
 - `\r` carriage return
 - `\t` tab
@@ -91,9 +91,9 @@ function transfer(address buyer, uint price) {
 
 ## Enums
 
-Enums allow you to create a user-defined type in Solidity. It's called user-defined, because the person creating the contract decides the values to include. They present a number of choices that can be selected and require at least one selection.
+Enums allow you to create a user-defined type in Solidity. It's called user-defined because the person creating the contract decides what values to include. Enums can be used to present a number of selectable choices, one of which is required.
 
-An example of an **enum** is having different statuses for an item. You can think of these as representing multiple choice answers, where all the values are pre-defined and you have to select one. Enums can be declared in contract or library definitions.
+An **enum** could be used, for example, to present different statuses for an item. You can think of enums as representing multiple choice answers where all the values are pre-defined, and you have to select one. Enums can be declared in contract or library definitions.
 
 ```solidity
     enum StateType {
