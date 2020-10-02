@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-webapp-java-tomcat.5-exercise-deploy-to-app-service
+uid: learn.azure.build-webapp-java-tomcat.6-exercise-deploy-to-app-service
 title: Exercise - Deploy a Java web app to Azure App Service
 metadata:
   title: Exercise - Deploy a Java web app to Azure App Service
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-exercise-deploy-to-app-service.md)]
+  [!include[](includes/6-exercise-deploy-to-app-service.md)]

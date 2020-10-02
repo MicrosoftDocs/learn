@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-webapp-java-tomcat.4-exercise-create-primefaces-app
+uid: learn.azure.build-webapp-java-tomcat.5-exercise-create-primefaces-app
 title: Exercise - Create a Java web app with PrimeFaces
 metadata:
   title: Exercise - Create a Java aeb app with PrimeFaces
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-exercise-create-primefaces-app.md)]
+  [!include[](includes/5-exercise-create-primefaces-app.md)]

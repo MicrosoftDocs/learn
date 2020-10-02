@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-webapp-java-tomcat.3-introduction-primefaces
+uid: learn.azure.build-webapp-java-tomcat.4-introduction-primefaces
 title: Introduction to PrimeFaces
 metadata:
   title: Introduction to PrimeFaces
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-introduction-primefaces.md)]
+  [!include[](includes/4-introduction-primefaces.md)]
