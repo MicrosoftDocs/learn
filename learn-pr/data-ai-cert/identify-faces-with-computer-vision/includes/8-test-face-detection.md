@@ -6,6 +6,7 @@ The environment for this exercise will make use of Visual Studio Code as the edi
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/) for your operating system.
 
+
 ### Python
 
 1. If you will be completing your coding with Python, ensure you have a [Python environment](https://www.python.org/downloads/) installed locally.
@@ -17,6 +18,8 @@ The environment for this exercise will make use of Visual Studio Code as the edi
 1. Once you have .NET Core installed, you will need to add the C# Extension to VS Code. Select the **Extensions** option in the left nav pane, or press **CTRL+SHIFT+X** and enter C# in the search dialog.
 
 With your environment setup, you are now ready to begin the coding exercise.
+
+
 
 ## Set environment variables
 
