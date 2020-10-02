@@ -79,7 +79,7 @@ Done checking basalt rocks.
 
 ## Else-if statement
 
-Python also supports else-if checks, for further control on actions based on data. The `elif` statement is written after an `if` statement and before an `else` statement. You can have as many `elif` statements as you want between the first `if` statement and the final `else` statement.
+Python also supports else-if checks, for further control on actions based on data. The `elif` statement is written after an `if` statement and before an `else` statement. You can have as many `elif` statements as you want between the initial `if` statement and the final `else` statement.
 
 The `elif` statement is just another `if` statement. When the conditions in the initial `if` statement are not met, the program checks whether the conditions in the next `elif` statement are met. When the conditions for the `elif` statement are met, the code that's defined inside the `elif` statement is run. Any code that's defined in a subsequent `elif` or `else` statement is skipped.
 
@@ -97,6 +97,6 @@ print("Done checking basalt rocks.")
 ```
 
 ```Output
-We found exactly 1 basalt rock!
+We found exactly 1 basalt rock.
 Done checking basalt rocks.
 ```
