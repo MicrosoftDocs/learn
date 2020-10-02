@@ -2,7 +2,7 @@
 uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.7-knowledge-check
 metadata:
   title: Knowledge check
-  description: Knowledge check
+  description: Knowledge check.
   ms.date: 10/06/2020
   author: meaghanlewis
   ms.author: shanama
@@ -15,45 +15,45 @@ quiz:
   questions:
   - content: "What are smart contracts?"
     choices:
-    - content: "Programs to send cryptocurrency."
+    - content: "Programs that only send cryptocurrency."
       isCorrect: false
-      explanation: "They are often used for much more than cryptocurrency."
-    - content: "Programs that generate and send tokens."
+      explanation: "Incorrect. Smart contracts are used for much more than cryptocurrency."
+    - content: "Programs that only generate and send tokens."
       isCorrect: false
-      explanation: "Tokens are often associated with smart contracts but are focused on more than just that aspect."
-    - content: "Programs stored inside of a blockchain that represent an agreement between parties sending digital assets."
+      explanation: "Incorrect. Tokens are often associated with smart contracts, but smart contracts focus on more than just tokens."
+    - content: "Programs that are stored inside a blockchain. They represent an agreement between parties that are sending digital assets."
       isCorrect: true
-      explanation: "Correct! Smart contracts are stored in blockchains and can represent the transfer of any digital asset."
-    - content: "Programs stored external to a blockchain that must be signed by participants."
+      explanation: "Correct. Smart contracts are stored inside blockchains. They can represent the transfer of any digital asset."
+    - content: "Programs that are stored outside a blockchain. They must be signed by parties that are sending digital assets."
       isCorrect: false
-      explanation: "Almost there. But smart contracts are stored inside blockchains not externally."  
+      explanation: "Almost there. Smart contracts are stored *inside* blockchains. They are not stored externally."  
 
-  - content: "When you create a new project with the Blockchain Development Kit for Ethereum, what is automatically generated in the project folder?"
+  - content: "When a new project is created by using the Blockchain development kit for Ethereum, what does the project folder automatically include?"
     choices:
     - content: "A contracts directory"
       isCorrect: false
-      explanation: "A contracts  directory with a couple contracts is generated, but that's not all."
+      explanation: "Incorrect. A contracts directory is generated, and it contains a couple of contracts. But this directory isn't the only automatically generated content."
     - content: "A tests directory"
       isCorrect: false
-      explanation: "There is a contracts directory and tests that are generated, but there's more to it than that"
+      explanation: "Incorrect. A contracts directory and tests directory are automatically generated. But a tests directory is not the only content in the new project folder."
     - content: "A migrations directory"
       isCorrect: false
-      explanation: "A migrations directory is created with two migrations. Migrations must exist with a contract, so there must be a contract that exists as well."
+      explanation: "Incorrect. A migrations directory is created, and it contains two migrations. But migrations must be paired with a contract, so a contract must also be automatically generated."
     - content: "All of the above"
       isCorrect: true
-      explanation: "Correct! A new project generates contracts, migrations, and tests. That way you can build off these examples to create your own smart contract projects."
+      explanation: "Correct. A new project generates contracts, migrations, and tests. You can build on these examples to create your own smart contract projects."
 
-  - content: "What option that best completes this sentence: Truffle is ______ ?"
+  - content: "What is Truffle?"
     choices:
-    - content: "A command line utility to create smart contracts"
+    - content: "A command-line tool that you can use to create smart contracts"
       isCorrect: false
-      explanation: "Not quite. This describes one part of what Truffle helps with, but it provides many more utilities other than creating smart contracts and is typically not described as a command line utility."
+      explanation: "Not quite. This answer describes one part of what Truffle can do. But Truffle can do more than just create smart contracts. Truffle is typically not described as a command-line tool."
     - content: "A development environment, testing framework, and asset pipeline for blockchains"
       isCorrect: true
-      explanation: "Truffle is described as a development framework which makes it easy manage smart contracts from creation to testing to deployment."
-    - content: "A personal blockchain Ethereum development tool to deploy contracts"
+      explanation: "Correct. Truffle is a development framework that helps you manage smart contracts, from creation to testing to deployment."
+    - content: "A personal blockchain Ethereum development tool that you can use to deploy contracts"
       isCorrect: false
-      explanation: "This best describes Ganache, a tool in the Truffle Suite to view the activities happening in your blockchain."
-    - content: "A library to make it easier to write blockchain applications"
+      explanation: "Incorrect. This answer best describes Ganache. Ganache is a tool in the Truffle Suite. You use it to view activities in your blockchain."
+    - content: "A library that you can use to write blockchain applications"
       isCorrect: false
-      explanation: "this best describes Drizzle, a tool in the Truffle Suite to help easily create decentralized applications." 
+      explanation: "Incorrect. This answer describes Drizzle. Drizzle is a tool in the Truffle Suite that you can use to create decentralized applications." 

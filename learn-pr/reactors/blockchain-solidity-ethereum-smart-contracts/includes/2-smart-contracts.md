@@ -1,43 +1,49 @@
-A smart contract is a program stored inside of a blockchain. Smart contracts extend blockchain from data to code. They represent an agreement between parties. The agreement is coded and when an action happens, the code is executed and provides a response.
+A smart contract is a program that's stored inside a blockchain. Smart contracts extend blockchain from data to code. They represent an agreement between parties. The agreement is coded, and when an action happens, the code runs and provides a response.
 
-All of the terms and conditions of the contracts are programmatically defined. The definition specifies the rules, requirements and rewards for those who participate in the blockchain, and how digital assets are transferred between parties. Each smart contract is assigned a 20 byte address that is used to uniquely identify it.
+All of the terms and conditions of the contracts are programmatically defined. A definition specifies the rules, requirements, and rewards for the participants in the blockchain. It also specifies how digital assets are transferred between parties. Each smart contract is assigned a 20-byte address that uniquely identifies it.
 
-They execute on their own, send events, call functions and more. They are perfect for blockchain technology because they allow parties that do not know one another to conduct business in a securely specified way without the use of a middleman.
+Smart contracts run on their own, send events, and call functions. They're perfect for blockchain technology because they allow people who don't know one another to do business in a securely specified way that requires no middleman.
 
-The most prominent use for smart contracts is with Ethereum, the worlds first programmable blockchain, that allows for smart contracts to be defined to help facilitate the transfer of digital assets like Ether.
+Smart contracts most commonly use Ethereum. Ethereum is the world's first programmable blockchain. It allows smart contracts to be defined to help facilitate the transfer of digital assets, like ether.
 
- The language to write contracts in is Solidity. Solidity is Turing complete which means you can write complicated contracts that are defined and coded in a clear way.  
+The language you'll use to write contracts is Solidity. Solidity is *Turing-complete*, which means that you can write complicated contracts in a clearly defined and coded way.  
 
-Since every state transition is logged and cannot be modified, it is imperative that you thoroughly test the contract before going to production, because bug fixes can be very costly and even cause critical damage to the system.
+Because every state transition is logged and immutable, you should thoroughly test the contract before you release it into a production environment. Bug fixes can be costly and can even cause critical system damage.
 
-The key properties and advantages of smart contracts are that they are:
+Smart contracts have these key properties and advantages:
 
-- **Transparent**: It is publicly readable by others on the blockchain and accessible via APIs
-- **Immutable**: Once a smart contract is created it cannot be changed again.
-- **Distributed**: Output of the contract is validated and verified by nodes on the network. Contract states can be publicly visible, and in some cases even “private” variables are visible.
+- **Transparency**: Blockchain users can read smart contracts and can access them by using APIs.
+- **Immutability**: After a smart contract is created, it can't be changed.
+- **Distribution**: The output of the contract is validated and verified by nodes on the network. Contract states can be publicly visible. In some cases, even "private" variables are visible.
 
 ## Use cases
 
-- **Insurance**: Smart contracts can simplify and streamline the claims process by automatically triggering a claim when certain events occur. Claim details can be recorded on the blockchain in order to determine the amount of compensation users will receive. This would reduce processing times and human errors.
-- **Voting**: Smart contracts can be used to make voting automatic and transparent. Each contract can serve as one ballot which represents a voter's identity. Since a blockchain is immutable, meaning that it can't be changed, this will ensure that votes have not been tampered with and that there is no voting fraud.
-- **Supply chain**. Smart contracts can record ownership as items move through the supply chain confirming who is responsible for the product at any given time. At any step of the process, the smart contract can be used to find out exactly where the products should be. If any party involved failed to deliver on time, then every other party will see this and know where a problem occurred.
-- **Record keeping**. Many industries will be able to use smart contracts to help improve the speed and security of record keeping. Blockchain technology can allow records to all be digitized and securely encrypted and stored. Plus, access can be gated so that only allowed individuals can access the records.
-- **Property ownership**. Smart contracts can be used to record who owns property. This is a much faster and cost-efficient way to record ownership. Smart contracts can also help to facilitate the transfer of ownership in a timely and secure way.
+Smart contracts can benefit many industries and processes. Consider the following use cases.
+
+**Insurance**: Smart contracts can simplify and streamline the claims process by automatically triggering a claim when certain events occur. Claim details can be recorded on the blockchain to determine the amount of compensation that users will receive. This functionality can reduce processing times and human errors.
+
+**Voting**: Smart contracts can help make voting automatic and transparent. Each contract serves as one ballot, which represents a voter's identity. Because a blockchain is immutable, meaning that it can't be changed, votes can't be tampered with.
+
+**Supply chains**: Smart contracts can record ownership as items move through a supply chain. The contracts confirm who's responsible for a product at any given time. At any stage, the smart contract can be used to find out exactly where the products should be. If any party in the supply chain fails to deliver on time, then every other party knows where the problem happened.
+
+**Record keeping**: Many industries can use smart contracts to improve the speed and security of record keeping. Blockchain technology can be used to digitize records and to securely encrypt and store them. Plus, access can be gated so that only allowed individuals can access the records.
+
+**Property ownership**: Smart contracts can record who owns property. They're a fast and cost-efficient way to record ownership. Smart contracts can also help facilitate the transfer of ownership in a timely and secure way.
 
 ## Tools for working with smart contracts
 
-There are numerous tools available to help you more effectively develop smart contracts.
+Many tools can help you effectively develop smart contracts. The following sections suggest some integrated development environments (IDEs), extensions, and frameworks that you can explore.
 
-### Integrated Development Environments
+### IDEs
 
-- [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true): Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications. This module will use Visual Studio Code for all exercises.
-- [Remix](https://remix.ethereum.org/?azure-portal=true): Remix is a browser-based compiler and IDE that enables users to build Ethereum contracts with Solidity language and to debug transactions. Remix is a great option to explore sample contracts, and write, test, and deploy your own contracts. We won't be using Remix in this module, but it's an option available for you to try out the contract exercises.
+- [**Visual Studio Code**](https://code.visualstudio.com/?azure-portal=true): A code editor that's redefined and optimized for building and debugging modern web and cloud applications. In this module, we use Visual Studio Code for all exercises.
+- [**Remix**](https://remix.ethereum.org/?azure-portal=true): A browser-based compiler and IDE that you can use to build Ethereum contracts in the Solidity language and to debug transactions. Remix is a great way to explore sample contracts. You can use it to write, test, and deploy your own contracts. We don't use Remix in this module, but you can try it out on your own in the contract exercises.
 
 ### Extensions
 
-- [Blockchain Development Kit for Ethereum](https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain?azure-portal=true): The Blockchain Development Kit extension simplifies how you create, build and deploy smart contracts on Ethereum ledgers. This module will use the help of the Blockchain Development Kit to help write, and test smart contracts.
+- [**Blockchain development kit for Ethereum**](https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain?azure-portal=true): This extension can simplify how you create, build, and deploy smart contracts on Ethereum ledgers. In this module, we'll use the Blockchain development kit to write and test smart contracts.
 
 ### Frameworks
 
-- [Truffle Suite](https://www.trufflesuite.com?azure-portal=true): The Truffle tool suite is used to test Ethereum contracts before they are deployed to public ledgers and incur real costs. You want to develop locally and make your life as a developer easier. The suite includes: Truffle, Ganache, and Drizzle. In this module, we will be using Truffle.
-- [OpenZeppelin](https://openzeppelin.com/?azure-portal=true): OpenZeppelin provides tools to write, deploy and operate decentralized applications. There are two different products that OpenZeppelin provides- the contracts library and the SDK. We will not be using OpenZeppelin in this module, but it's good to know that this is an option available that can help write secure blockchain applications in the future.
+- [**Truffle Suite**](https://www.trufflesuite.com?azure-portal=true): Use the Truffle tool suite to test Ethereum contracts before you deploy them to public ledgers and incur real costs. To make your work as a developer easier, develop locally. The tool suite includes Truffle, Ganache, and Drizzle. In this module, we'll use Truffle.
+- [**OpenZeppelin**](https://openzeppelin.com/?azure-portal=true): Use OpenZeppelin tools to write, deploy, and operate decentralized applications. OpenZeppelin provides two products: the contracts library and the SDK. We don't use OpenZeppelin in this module, but later you can try out these tools to help you write secure blockchain applications.

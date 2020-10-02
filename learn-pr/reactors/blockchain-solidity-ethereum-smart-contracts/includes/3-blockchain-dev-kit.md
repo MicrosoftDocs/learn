@@ -1,93 +1,93 @@
-The [Blockchain Development Kit for Ethereum](https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain?azure-portal=true) is an extension available in Visual Studio Code. The extension makes it easy to create, build, and deploy smart contracts on Ethereum blockchain solutions.
+The [Blockchain development kit for Ethereum](https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain?azure-portal=true) is an extension that's available in Visual Studio Code. Use the extension to create, build, and deploy smart contracts on Ethereum blockchain solutions.
 
 ## Install the extension
 
-With Visual Studio Code opened, go to **Extensions** from the left sidebar and search for **Blockchain Development Kit** and then select to install it.
+In Visual Studio Code, on the left sidebar, select **Extensions**. Search for **Blockchain development kit**, and select it to install it.
 
-:::image type="content" source="../media/bdk-install.png" alt-text="Install Blockchain Development Kit":::
+:::image type="content" source="../media/bdk-install.png" alt-text="Screenshot showing how to install the Blockchain development kit extension in Visual Studio Code.":::
 
-To use the Blockchain Development Kit, you will need to make sure you have the following installed:
+Before you use the Blockchain development kit, make sure you have installed:
 
-- Python
-  - Note: Most computers come with Python pre-installed.
-  - To check if you do have Python installed, open up a terminal or command prompt and type `python`. If installed, it will print out the version of Python that you have on your computer.
-- Node.js
-  - To confirm Node.js is installed, open your terminal and type: `node`. If installed successfully, the terminal will return the version of Node.js installed. You can also confirm that npm is installed by typing `npm` in the terminal.
-- Git
-  - To confirm Git is installed, open your terminal and type `git`. If installed successfully, the terminal will return a list of git commands available.
+- **Python**: To make sure you have Python installed, open a terminal or a Command Prompt window, and then type `python`. If Python is installed, the terminal returns the version of Python on your computer.
+  
+  > [!Note]
+  > Most computers have Python preinstalled.
+- **Node.js**: To confirm Node.js is installed, open your terminal and type `node`. If Node.js is installed, the terminal returns your computer's version of Node.js. You can also confirm that the node package manager (NPM) is installed by typing `npm` in the terminal.
+- **Git**: To confirm Git is installed, open your terminal and type `git`. If Git is installed, the terminal returns a list of available git commands.
 
-If you don't have those installed, or don't have the minimum version allowed, the extension will prompt you and provide tips on how to install those tools.
+If you don't have this software installed, or if you don't have the minimum versions, the extension provides tips for how to install the tools.
 
 ## Get started
 
-### Create a New Solidity Project with the extension
+When you have all of the dependencies installed, use the Blockchain development kit to create your first project:
 
-Once you have all the dependencies installed, you can now use the Blockchain Development Kit to create your first project.
+1. On your computer, add an empty directory for the project. To create a directory from Visual Studio Code, go to **Terminal** > **New Terminal** and then type `mkdir newSolidityProject`. Make a note of this new directory's location. You'll need it later.
+1. In Visual Studio Code, go to **View** > **Command Palette**. In the search box, type `Blockchain: New Solidity Project`. As you type, a list of suggestions appears.
 
-1. Start by adding a new empty directory to your computer for the project. Note: You can open your terminal inside of Visual Code by going to **Terminal -> New Terminal** and typing `mkdir newSolidityProject` to create a new directory. Keep note of where this new empty directory is, but you don't need it yet.
-2. Go to View -> Command Palette. In the search box type: `Blockchain: New Solidity Project`. You'll notice that as you begin to type "Blockchain" a list of commands will be presented.
+   :::image type="content" source="../media/new-solidity-project-selection.png" alt-text="Screenshot showing how to create a new Solidity project in Visual Studio Code.":::
 
-   :::image type="content" source="../media/new-solidity-project-selection.png" alt-text="Select New Solidity project option":::
+1. For the type of Solidity project, select **Create basic project**.
 
-4. For the type of solidity project, select **Create basic project**.
+   :::image type="content" source="../media/create-basic-project.png" alt-text="Screenshot showing the Create basic project selection in Visual Studio Code.":::
 
-   :::image type="content" source="../media/create-basic-project.png" alt-text="Create basic project":::
+1. Use the Explorer pane to find the folder you created in step 1. Select the folder. In the lower-right corner of the window, you see **Creating new project**.
 
-5. Use the UI file explorer pop up to find the folder you created in step 1. Select the folder and in the bottom right-hand of the window you'll see **Creating new project**
-6. Sit back and wait for your new Solidity project to be created.
+After your Solidity project is created, open the Explorer pane to see the project's files.
 
-Once it is, open the Explorer and take a look at all the files that were created in the project.
+:::image type="content" source="../media/new-solidity-project.png" alt-text="Screenshot showing a new workspace for a Solidity project.":::
 
-:::image type="content" source="../media/new-solidity-project.png" alt-text="New workspace for solidity project":::
+The project includes boilerplate for Solidity code. Notice the following directories:
 
-In this project, you will have a boiler plate of Solidity code that you can use. Notice that you have directories for:
+- **contracts**: Contains the *HelloBlockchain.sol* and *Migrations.sol* contracts
+- **migrations**: Contains an initial migration and a deploy contract
+- **test**: Contains a test for the HelloBlockchain contract that's written in JavaScript
 
-- **contracts:** Contains the **HelloBlockchain.sol** and **Migrations.sol** contracts
-- **migrations:** Contains an initial migration and a deploy contract.
-- **test:** Contains a test for the HelloBlockchain contract written in JavaScript
+You also see some configuration files:
 
-You'll also have some other config files:
+- **package.json**: Defines project details and dependencies
+- **truffle-config.json**: Defines dependencies and configuration for Truffle
 
-- **package.json:** To define project details and dependencies
-- **truffle-config.json:**. To define dependencies and configuration for Truffle
+To save the workspace, go to **File** > **Save Workspace As**. Name it *newSolidityProject*.
 
-Go ahead and go to **File -> Save Workspace As...** and save the workspace with name **newsolidityproject**.
-
-Then focus your attention back to the project itself. For now we will only focus on the **contracts/** directory.
+Now let's get back to the project itself. First we'll focus on the *contracts* directory.
 
 ## Compile the contracts
 
-We will start by using the **HelloBlockchain.sol** smart contract inside of the contracts folder.
+We'll start with the *HelloBlockchain.sol* smart contract inside the *contracts* folder.
 
-1. Go to contracts/HelloBlockchain.sol in the Explorer and then right-click on the contract name.
-2. Click on **Build Contracts** to compile the smart contract. Notice the window appear in the bottom right that says: "Building contracts"
-3. Select **View -> Output** to see information about the compiled contract. Note: In the dropdown window you may need to select "Azure Blockchain" to see output from the extension
+1. In the Explorer pane, in the **contracts** folder, right-click the contract name, **HelloBlockchain.sol**.
+1. Select **Build Contracts** to compile the smart contract. A window in the lower-right corner indicates that contracts are building.
 
-   :::image type="content" source="../media/build-contracts.png" alt-text="Build contracts":::
+   :::image type="content" source="../media/build-contracts.png" alt-text="Screenshot showing the Explorer pane. For the selected contract file, the Build Contracts command is selected.":::
 
-In the output window (View -> Output) you can see information about the contracts compilation:
+1. Select **View** > **Output** to see information about the compiled contract. In the window, you might need to select **Azure Blockchain** to see the output from the extension.
 
-:::image type="content" source="../media/compile-output.png" alt-text="Build contracts output":::
+In the output window (**View** > **Output**), you see information about the compilation of the contracts.
+
+:::image type="content" source="../media/compile-output.png" alt-text="Screenshot showing output information about the compiled contract. The Azure Blockchain menu item is selected.":::
 
 ## Deploy contracts
 
-After the contract has compiled successfully, you can deploy the contract locally. This step requires you to sign into your Azure account.
+After the contract has been compiled successfully, you can deploy it locally. This step requires you to sign in to your Azure account.
 
-1. Go to contracts/HelloBlockchain.sol in the Explorer and then right-click on the contract name.
-2. Click on **Deploy Contracts** and select development in the window that appears. Here you will be prompted to sign in to Azure if you are not already.
+1. In the Explorer pane, go to the **contracts** folder and then right-click the contract name, **HelloBlockchain.sol**.
+1. Select **Deploy Contracts**.
 
-   :::image type="content" source="../media/deploy-contracts.png" alt-text="Deploy contracts":::
+   :::image type="content" source="../media/deploy-contracts.png" alt-text="Screenshot showing the Explorer pane. In the shortcut menu, the Deploy Contracts command is selected.":::
 
-3. In the output window (View -> Output) you can see information about the deployed migrations and contracts
+1. In the window that appears, select **development**. You're prompted to sign in to Azure if you aren't already signed in.
 
-   :::image type="content" source="../media/deploy-details.png" alt-text="Deploy details in output window":::
+In the output window (**View** -> **Output**), you see information about the deployed migrations and contracts.
 
-Here you see some key information, or metadata about the contract you just deployed:
+:::image type="content" source="../media/deploy-details.png" alt-text="Screenshot showing output information about the deployed migrations and contracts. The Azure Blockchain menu item is selected.":::
 
-- The address of the contract
-- Time stamp of the block that the contract creation transaction was a part of
-- The address of the account that deployed the contract
-- The balance (in Ether) that the account has after this transaction was made. The balance is 100 ETH (the starting default value) minus the `total cost`
-- The amount of gas used and the gas price. Gas refers to the fee, required to successfully conduct a transaction or execute a contract on the Ethereum blockchain platform. You can think of it of the gas you need to put into your car to drive places.
-  - Note: Gas prices are denoted in gwei, with are worth 0.000000001 ETH.
-  - Total cost = gas price * gas use
+Here you see some key information or metadata for your deployed contract:
+
+- The address of the contract.
+- The time stamp of the block that the contract creation transaction was part of.
+- The address of the account that deployed the contract.
+- The account's balance (in ether) after the transaction. The balance is 100 ETH (the starting default value) minus the total cost.
+- The amount of gas used and the gas price. *Gas* refers to the fee required to conduct a transaction or to execute a contract on the Ethereum blockchain platform. You can think of it like the gas you need for your car. Total cost = gas price * gas use.
+  > [!Note]
+  > Gas prices are shown in gwei. One gwei is worth 0.000000001 ETH.
+

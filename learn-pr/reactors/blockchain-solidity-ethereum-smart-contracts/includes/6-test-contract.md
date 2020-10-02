@@ -1,9 +1,12 @@
-In this unit, we will write a new test for our shipping contract in JavaScript. We could also use Solidity to write tests, but JavaScript is what's used most commonly. To test our smart contract we will use Truffle.
+In this part, we write a new JavaScript test for our shipping contract. We could instead use Solidity to write the test, but JavaScript is used more commonly. To test our smart contract, we use Truffle.
 
-## Let the testing begin
+## Begin the testing
 
-1. Let’s create our first test by creating a new test file. Go to Terminal -> New Terminal.
-1. Once the terminal is opened, type: `truffle create test ShippingStatus`. In our folder test a JavaScript file has been created called ShippingStatus.js. Remove the code in the file and replace it with:
+Let's begin by creating a new test file.
+
+1. Go to **Terminal** > **New Terminal**.
+1. In the new terminal, type `truffle create test ShippingStatus`. In our folder, a test JavaScript file is created. It's called *ShippingStatus.js*. 
+1. Replace the code in the file by pasting the following code:
 
 ```javascript
 const ShippingStatus = artifacts.require("ShippingStatus");
@@ -50,16 +53,16 @@ it("should return the status Shipped", async ()=> {
 
 ### Event test
 
-We will use the package truffle-assertions to help us test our events. By using this package we can assert that our events are emitted during the transaction.
+We'll use the truffle-assertions package to test our events. By using this package, we can assert that our events are emitted during the transaction.
 
-1. Go back to the terminal and install the library by typing: `npm install truffle-assertions`
-2. Add this to the top of the test file on line 2 after requiring the ShippingStatus contract:
+1. In the terminal, install the library by typing `npm install truffle-assertions`.
+1. Add the following code to the test file on line 2, after you require the ShippingStatus contract:
 
    ```javascript
    const truffleAssert = require('truffle-assertions');
    ```
 
-1. And then add a test to confirm the event returns the expected description. Place this test after the last test in the file, in a new line, right before the last line (set of closing braces).
+1. Add a test to confirm that the event returns the expected description. Place this test after the last test in the file. Add it in a new line, right before the last line's set of closing braces.
 
 ```javascript
     it('should return correct event description', async()=>{
@@ -78,17 +81,21 @@ We will use the package truffle-assertions to help us test our events. By using 
 
 ```
 
-#### Using async/await
+### Using async/await
 
-The **.deployed()** function returns a promise. Because of this we use `await` in front of this, and also `async` in front of the test code. This means until the promise if fulfilled  when the contract is deployed, we will not move forward with our test. This pattern is very commonly used in tests since almost all smart contract transactions are asynchronous. This is because transactions need to be validated, or mined before they are added to the blockchain ledger.
+The **.deployed()** function returns a promise. So we use `await` in front of the function, and we use `async` in front of the test code. This setup means that after the contract is deployed, we won't move forward with our test until the promise is fulfilled. 
 
-Overall you should at least aim for 100% test coverage for your contract especially if you plan to deploy to the main Ethereum network, or main net.
+This pattern is commonly used in tests because almost all smart contract transactions are asynchronous. They're asynchronous because transactions need to be validated or mined before they're added to the blockchain ledger.
+
+Overall, you should aim for 100 percent test coverage for your contract, especially if you plan to deploy to the main Ethereum network, or *main net*.
 
 ## Run the test
 
-From the terminal type: `truffle test`
+In the terminal, type: 
 
-You should see all tests successfully passing:
+`truffle test`
+
+You should see that all tests pass successfully:
 
 ```output
   Contract: HelloBlockchain
