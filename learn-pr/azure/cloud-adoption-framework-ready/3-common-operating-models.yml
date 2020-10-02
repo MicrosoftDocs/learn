@@ -50,10 +50,10 @@ quiz:
       explanation: Correct!
     - content: Centralized operations
       isCorrect: false
-      explanation: Before the acquisition, there were no centralized support services. Try again.
+      explanation: There weren't centralized support services before the acquisition. Try again.
     - content: Enterprise operations
       isCorrect: false
-      explanation: Enterprise operations would require centralized operations and innovative workload teams. Before the acquisition, there were no centralized support services.
+      explanation: Enterprise operations would require centralized operations and innovative workload teams. There weren't centralized support services before the acquisition.
     - content: Distributed operations
       isCorrect: false
       explanation: While the company might become distributed after a few more acquisitions, Tailwind Traders isn't there today, nor was the startup prior to acquisition.
