@@ -6,8 +6,8 @@ When they needed to orchestrate a workflow to improve customer retention after a
 
 In both cases, we noted how it would be possible to choose the other serverless computing service. However, we tried to help them consider the decision criteria we outlined and choose the right service for the scenario.
 
-Without serverless computing, Tailwind Traders would be forced to set up and manage its own computing infrastructure for these business scenarios.  The team would have needed to closely monitor the services to determine whether it needed to scale the service. And it likely would have wasted money in the process, with either too much or too little computing resources dedicated to the solution.  
+Without serverless computing, Tailwind Traders would be forced to set up and manage its own computing infrastructure for these business scenarios.  The team would have needed to closely monitor the services to determine whether it needed to scale the service. And it likely would have wasted money in the process, with either too many or too few computing resources dedicated to the solution.  
 
 Additionally, it might have had to design, write, test, and maintain custom code to get similar results.
 
-By helping Tailwind Traders select the right serverless computing solutions, we were able to deploy new functionality to help improve customer satisfaction with their ecommerce platform.
+By helping Tailwind Traders select the right serverless computing solutions, we were able to deploy new functionality to help the company improve customer satisfaction with its e-commerce platform.
