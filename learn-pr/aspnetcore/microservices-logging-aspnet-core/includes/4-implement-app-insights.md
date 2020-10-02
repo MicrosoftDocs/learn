@@ -86,6 +86,11 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
 
         :::code language="csharp" source="../code/src/services/catalog/catalog.api/extensions/servicecollectionextensions.cs":::
 
+        In the preceding code:
+
+        - The `AddApplicationInsightsTelemetry` extension method is provided by the `Microsoft.ApplicationInsights.AspNetCore` NuGet package.
+        - The `AddApplicationInsightsKubernetesEnricher` extension method is provided by the `Microsoft.ApplicationInsights.Kubernetes` NuGet package.
+
     1. In the *Startup.cs* file's `ConfigureServices` method, invoke the `AddAppInsights` extension method. Save your changes.
 
         :::code language="csharp" source="../code/src/services/catalog/catalog.api/startup.cs" highlight="3":::
@@ -96,11 +101,7 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
 
         :::code language="csharp" source="../code/src/services/catalog/catalog.api/program.cs" highlight="5,12":::
 
-        The preceding changes add the Application Insights sink for Serilog to include log traces.
-
-    1. Also in *Program.cs*, uncomment the `//using Microsoft.ApplicationInsights.Extensibility;` line. Save your changes.
-
-        The preceding change resolves the `WriteTo.ApplicationInsights` method call in the previous step.
+        The preceding changes add the Application Insights sink for Serilog to include log traces. The `Serilog.Sinks.ApplicationInsights` NuGet package provides the necessary members.
 
 > [!NOTE]
 > Startup logging with Application Insights [isn't supported](/aspnet/core/fundamentals/logging/#log-during-host-construction), so it must be accomplished using another logger. This example uses Serilog with the Application Insights sink, passing the instrumentation key. Although this is the simplest way to enable logging to Application Insights during startup, it can lead to losing correlation between metrics and log traces.
