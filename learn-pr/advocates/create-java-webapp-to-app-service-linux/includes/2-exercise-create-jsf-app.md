@@ -261,24 +261,24 @@ public class IndexController implements Serializable{
             └── index.xhtml
 ```
 
-### 8. ローカルの Tomcat 環境で実行
+### Optional Exercise: ローカルの Tomcat 環境で実行
 
 ソースコードをコンパイルし、ローカルにインストールした Tomcat の環境で実行します。  
 下記のコマンドを実行してください。
 
-#### 8.1 Compile and Package the Java Project
+#### 1 Compile and Package the Java Project
 
 ```bash
 mvn clean package
 ```
 
-#### 8.2 Copy the artifact to the Deployment Directory on Tomcat
+#### 2 Copy the artifact to the Deployment Directory on Tomcat
 
 ```bash
 cp target/azure-javaweb-app.war /$INSTALL_DIR/apache-tomcat-9.0.38/webapps/
 ```
 
-#### 8.3 Start the Tomcat Server
+#### 3 Start the Tomcat Server
 
 ```bash
 $INSTALL_DIR/apache-tomcat-9.0.38/bin/startup.sh

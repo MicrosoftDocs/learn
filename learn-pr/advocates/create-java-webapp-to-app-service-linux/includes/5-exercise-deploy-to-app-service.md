@@ -238,64 +238,6 @@ Confirm (Y/N) [Y]: y
           </deploymentSlot>
 ```
 
-### Deployment Slot にデプロイ
-
-Deployment Slot の設定が完了しましたので、再度ソースコードをコンパイルします。
-
-```bash
-mvn clean package
-```
-
-コンパイルが完了すると、下記のコマンドを利用してアプリケーションをデプロイします。  
-下記のコマンドを実行してください。
-
-```bash
-mvn azure-webapp:deploy
-```
-
-Deployment Slot へのデプロイが完了すると下記のようなメッセージが表示されます。
-
-```
-[INFO] Successfully deployed the artifact to https://azure-javaweb-app-1601463451101-azure-javaweb-app-staging.azurewebsites.net
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  01:36 min
-[INFO] Finished at: 2020-10-01T18:24:10+09:00
-[INFO] ------------------------------------------------------------------------
-```
-
-`Successfully deployed the artifact to` に Deployment Slot にデプロイしたアプリケーションの URL が表示されていますので、ブラウザで URL にアクセスします。
-
-![PrimeFaces App Version 2](../media/primefaces-todo-list-v2.png)
-
-この時点で、本番環境用の URL にアクセスしても本番環境はまだ入れ替えていないため、過去のバージョンが表示されている事も確認してください。
-
-![PrimeFaces App Version 1](../media/deployed-to-the-appservices.png)
-
-### Route traffic (Canary Deployment)
-
-***ROUTE TRAFFIC IS NOT RUNNING NOW***
-
-```
-az webapp traffic-routing set --distribution azure-javaweb-app-staging=100 --name azure-javaweb-app --resource-group azure-javaweb-app
-[
-  {
-    "actionHostName": "azure-javaweb-app-azure-javaweb-app-staging.azurewebsites.net",
-    "changeDecisionCallbackUrl": null,
-    "changeIntervalInMinutes": null,
-    "changeStep": null,
-    "maxReroutePercentage": null,
-    "minReroutePercentage": null,
-    "name": "azure-javaweb-app-staging",
-    "reroutePercentage": 100.0
-  }
-]
-```
-
-![Deployment Slot in Azure Portal](../media/azure-portal-deployment-slot.png)
-
-
 ## Confirm the Log Stream from Command Line
 
 TODO: Explanation
