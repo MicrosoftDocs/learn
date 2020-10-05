@@ -8,7 +8,7 @@ Truffle provides the following benefits:
 - Network management for deploying to public and private networks
 - Package management for project dependencies
 - Interactive console for direct contract communication and management
-- Configurable build pipeline
+- Configurable build pipeline to automatically run checks and configure projects
 
 ## Install Truffle
 
