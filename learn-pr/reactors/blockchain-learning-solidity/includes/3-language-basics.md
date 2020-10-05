@@ -104,7 +104,7 @@ contract Marketplace {
 This example introduces the following items:
 
 - A variable with a type **address** which will store the 20 byte Ethereum address of the seller user. You'll learn more about these variables later in this module.
-- A modifier called  that describes that only a seller can list an item.
+- A modifier called `onlySeller` that describes that only a seller can list an item.
 - A special symbol `_;` to indicate where the function body gets inserted.
 - A function definition that uses the modifier `onlySeller`.
 
