@@ -12,6 +12,6 @@ In this module, you will:
 
 ## Prerequisites
 
-Before applying the CAF Learn modules, you should have a general understanding of your current cloud adoption plan and understand the roadblocks that may be preventing your organization from being successful.
+Before applying the CAF Learn modules, you should have a general understanding of your current cloud adoption plan and understand the roadblocks that might be preventing your organization from being successful.
 
 As an alternative, a narrative and cloud adoption plan will be provided for a reference customer called "Tailwind Traders".
