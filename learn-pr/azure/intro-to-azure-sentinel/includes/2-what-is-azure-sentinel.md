@@ -10,7 +10,7 @@ In its simplest form, a SIEM system enables you to:
 - Do some form of correlation or anomaly detection.
 - Create alerts and incidents based on your findings.
 
-A SIEM system might offer functionality like these examples:
+A SIEM system might offer functionality such as:
 
 - **Log management**: The ability to collect, store, and query the log data from resources within your environment.
 
@@ -38,4 +38,4 @@ Azure Sentinel helps you enable end-to-end security operations including collect
 
 :::image type="content" source="../media/02-end-to-end.svg" alt-text="This diagram shows the end-to-end functionality of Azure Sentinel.":::
 
-Let's take a look at the key components that make up Azure Sentinel.
+Let's take a look at the key components in Azure Sentinel.
