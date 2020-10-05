@@ -3,6 +3,7 @@ In this module, you learned about governance theory, corporate policies, and gov
 ## Next steps
 
 Continue forward with your governance journey by following one of the governance guides:
+
 | Risk/need | Standard enterprise | Complex enterprise |
 |---|---|---|
 | Sensitive data in the cloud | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/security-baseline-improvement.md) | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/security-baseline-improvement.md) |
