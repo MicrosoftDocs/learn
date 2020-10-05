@@ -30,18 +30,18 @@ quiz:
 
   - content: "When a new project is created by using the Blockchain development kit for Ethereum, what gets automatically generated?"
     choices:
-    - content: "A contracts directory"
+    - content: "A sample contract file written in Solidity"
       isCorrect: false
       explanation: "Incorrect. A contracts directory is generated, and it contains a couple of contracts. But this directory isn't the only automatically generated content."
-    - content: "A tests directory"
+    - content: "A build folder and files to compile and deploy the Solidity project"
       isCorrect: false
       explanation: "Incorrect. A contracts directory and tests directory are automatically generated. But a tests directory is not the only content in the new project folder."
-    - content: "A migrations directory"
+    - content: "Folders for contracts, migrations, and tests."
       isCorrect: false
       explanation: "Incorrect. A migrations directory is created, and it contains two migrations. But migrations must be paired with a contract, so a contract must also be automatically generated."
-    - content: "All of the above"
+    - content: "Sample contract, migrations, a test, and a Truffle config file."
       isCorrect: true
-      explanation: "Correct. A new project generates contracts, migrations, and tests. You can build on these examples to create your own smart contract projects."
+      explanation: "Correct. A new project generates a HelloBlockchain contract, two migrations, a test, and a Truffle config file. You can build on these examples to create your own smart contract projects."
 
   - content: "What is Truffle?"
     choices:
