@@ -1,6 +1,6 @@
 In this module, you learned about Microsoft's approach to privacy, security, and compliance. You explored resources specific to online services, including Azure, and how governments can use Azure to meet their specific security and compliance needs.
 
-The security team at Tailwind Traders now has a better understanding of what resources are available to help them protect their data in the cloud and stay compliant:
+The security team at Tailwind Traders now has a better understanding of what resources are available to help it protect its data in the cloud and stay compliant:
 
 * The [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement?azure-portal=true) provides trust in how Microsoft collects, protects, and uses customer data.
 * The [Trust Center](https://www.microsoft.com/trustcenter?azure-portal=true) provides you with documentation about compliance standards and how Azure can support your business.
