@@ -37,7 +37,7 @@ quiz:
     - content: Online Services Terms
       isCorrect: false
       explanation: The Online Services Terms is a legal agreement between Microsoft and the customer that details the obligations by both parties with respect to the processing and security of customer data and personal data.
-  - content: Where can the IT department find reference blueprints that they can apply directly to their Azure subscriptions?
+  - content: Where can the IT department find reference blueprints that it can apply directly to its Azure subscriptions?
     choices:
     - content: Online Services Terms
       isCorrect: false
