@@ -16,9 +16,9 @@ The first thing to do is to have your data ingested into Azure Sentinel. Data co
 
 ## Log retention
 
-After it's been ingested into Azure Sentinel, your data is stored by using Azure Log Analytics. The benefits of using Log Analytics include the ability to use the Kusto Query Language (KQL) to query your data. KQL is a rich query language that gives you the power to dive into and gain insights from our data.
+After it's been ingested into Azure Sentinel, your data is stored by using Log Analytics. The benefits of using Log Analytics include the ability to use the Kusto Query Language (KQL) to query your data. KQL is a rich query language that gives you the power to dive into and gain insights from our data.
 
-:::image type="content" source="../media/03-log-analytics.png" alt-text="This screenshot shows Azure Log Analytics interface in the Azure portal." lightbox="../media/03-log-analytics.png":::
+:::image type="content" source="../media/03-log-analytics.png" alt-text="This screenshot shows the Log Analytics interface in the Azure portal." lightbox="../media/03-log-analytics.png":::
 
 ## Workbooks
 
