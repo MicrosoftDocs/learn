@@ -31,7 +31,7 @@ To get started with Azure Machine Learning designer, first you must create a pip
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true) for your workspace, view the **Designer** page and select **+** to create a new pipeline.
 2. In the **Settings** pane, change the default pipeline name (**Pipeline-Created-on-*date***) to **Diabetes Training** (if the **Settings** pane is not visible, click the **&#9881;** icon next to the pipeline name at the top).
 3. Note that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, click **Select compute target** and select the **aml-cluster** compute cluster you created previously.
-4. On the left side of the designer, select the **Datasets** (&#8981;) tab, expand the **Datasets** section, and drag the **diabetes-data** dataset you created in the previous exercise onto the canvas.
+4. On the left side of the designer, expand the **Datasets** section, and drag the **diabetes-data** dataset you created in the previous exercise onto the canvas.
 5. Right-click (Ctrl+click on a Mac) the **diabetes-data** dataset on the canvas, and on the **Visualize** menu, select **Dataset output**.
 6. Review the schema of the data, noting that you can see the distributions of the various columns as histograms.
 7. Scroll to the right and select the column heading for the **Diabetic** column, and note that it contains two values **0** and **1**. These values represent the two possible classes for the *label* that your model will predict, with a value of **0** meaning that the patient does not have diabetes, and a value of **1** meaning that the patient is diabetic.
@@ -45,7 +45,7 @@ To get started with Azure Machine Learning designer, first you must create a pip
 
 Before you can train a model, you typically need to apply some preprocessing transformations to the data.
 
-1. In the pane on the left, view the **Modules** (&#8862;) tab and expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
+1. In the pane on the left, expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
 2. Drag a **Normalize Data** module to the canvas, below the **diabetes-data** dataset. Then connect the output from the bottom of the **diabetes-data** dataset to the input at the top of the **Normalize Data** module, like this:
 
 > [!div class="centered"]

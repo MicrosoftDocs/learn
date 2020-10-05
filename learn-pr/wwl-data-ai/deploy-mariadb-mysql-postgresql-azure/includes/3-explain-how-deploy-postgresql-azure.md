@@ -20,7 +20,7 @@ The image above also shows you that you can configure the amount of storage and 
 
 As mentioned above you can use the Azure CLI to deploy Azure Database for PostgreSQL as shown here.
 
-```powershell
+```azurecli
 az postgres server create --resource-group myresourcegroup --name mydemoserver `
 
 --location westus --admin-user myadmin --admin-password <server_admin_password> `

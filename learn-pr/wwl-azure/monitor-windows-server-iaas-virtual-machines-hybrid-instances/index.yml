@@ -3,7 +3,7 @@ uid: learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances
 metadata:
   title: Monitor Windows Server IaaS Virtual Machines and hybrid instances
   description: "You'll be able to implement Azure Monitor for IaaS Virtual Machines in Azure, implement Azure Monitor in on-premises environments, and use dependency maps."
-  ms.date: 08/13/2020
+  ms.date: 09/24/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -28,13 +28,12 @@ prerequisites: |
   - Security-related technologies such as firewalls, encryption, and multi-factor authentication.
   - Windows PowerShell scripting.
   - Automation and monitoring.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/monitor-windows-server-iaas-vms-and-hybrid-instances.svg
 levels:
 - intermediate
 roles:
 - administrator
 - solution-architect
-- student
 - technology-manager
 products:
 - azure

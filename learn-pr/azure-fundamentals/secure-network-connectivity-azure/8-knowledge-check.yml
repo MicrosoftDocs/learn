@@ -14,14 +14,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: An attacker can bring down your website by sending a large volume of network traffic to your servers. Which Azure service can help Tailwind Traders protect their App Service instance from this kind of attack?
+  - content: An attacker can bring down your website by sending a large volume of network traffic to your servers. Which Azure service can help Tailwind Traders protect its App Service instance from this kind of attack?
     choices:
     - content: Azure Firewall
       isCorrect: false
       explanation: Azure Firewall enables you to create network rules that define source address, protocol, destination port, and destination address. It doesn't specifically help against DDoS attacks.
     - content: Network security groups
       isCorrect: false
-      explanation: Network security groups enable you to filter network traffic to and from Azure resources within a VNet. They don't specifically help against DDoS attacks.
+      explanation: Network security groups enable you to filter network traffic to and from Azure resources within a virtual network. They don't specifically help against DDoS attacks.
     - content: Azure DDoS Protection
       isCorrect: true
       explanation: DDoS Protection helps protect your Azure resources from DDoS attacks. A DDoS attack attempts to overwhelm and exhaust an application's resources, making the application slow or unresponsive to legitimate users.
@@ -32,18 +32,18 @@ quiz:
       explanation: DDoS Protection helps protect your Azure resources from DDoS attacks, but it doesn't act as a general-purpose firewall.
     - content: Create application rules in Azure Firewall.
       isCorrect: true
-      explanation: Azure Firewall enables you to limit outbound HTTP/S traffic to a specified list of fully qualified domain names (FQDN).
-    - content: Ensure that all running applications only communicate with trusted ports and hosts.
+      explanation: Azure Firewall enables you to limit outbound HTTP/S traffic to a specified list of fully qualified domain names (FQDNs).
+    - content: Ensure that all running applications communicate with only trusted ports and hosts.
       isCorrect: false
       explanation: Is there a way to more easily configure network access without software modifications?
-  - content: How can Tailwind Traders most easily implement a _deny by default_ policy so that VMs cannot connect to each other?
+  - content: How can Tailwind Traders most easily implement a _deny by default_ policy so that VMs can't connect to each other?
     choices:
-    - content: Allocate each VM on its own VNet.
+    - content: Allocate each VM on its own virtual network.
       isCorrect: false
-      explanation: Although you could isolate each VM by placing it on a separate VNet, is there an easier way that allows all VMs to safely exist on the same VNet?
+      explanation: Although you can isolate each VM by placing it on a separate virtual network, is there an easier way that allows all VMs to safely exist on the same virtual network?
     - content: Create a network security group rule that prevents access from another VM on the same network.
       isCorrect: true
       explanation: A network security group rule enables you to filter traffic to and from resources by source and destination IP address, port, and protocol.
-    - content: Configure Azure DDoS Protection to limit network access within the VNet.
+    - content: Configure Azure DDoS Protection to limit network access within the virtual network.
       isCorrect: false
-      explanation: DDoS Protection helps protect your Azure resources from DDoS attacks, but it doesn't specify connection rules within a VNet.
+      explanation: DDoS Protection helps protect your Azure resources from DDoS attacks, but it doesn't specify connection rules within a virtual network.

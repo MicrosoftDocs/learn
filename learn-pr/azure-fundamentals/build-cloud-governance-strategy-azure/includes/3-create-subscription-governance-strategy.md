@@ -1,4 +1,4 @@
-In [Plan and discuss Azure deployments](https://docs.microsoft.com/learn/modules/planning-azure-deployment-fundamentals/overview/?azure-portal=true), you learned that the organizing structure for resources in Azure has four levels: management groups, subscriptions, resource groups, and resources.
+In [Plan and discuss Azure deployments](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-plans), you learned that the organizing structure for resources in Azure has four levels: management groups, subscriptions, resource groups, and resources.
 
 The beginning of any cloud governance implementation involves identifying a cloud organization structure that meets your business needs. This step often involves setting up a *cloud center of excellence team* (also referred to as a *cloud enablement team* or a *cloud custodian team*) and empowering this team to implement governance practices from a centralized location for the entire organization.
 

@@ -11,7 +11,7 @@ metadata:
 title: Choose the best AI service for your needs
 summary: Examine Azure's AI services, and choose the right one for your company.
 abstract: |
-  By the end of this module, you will be able to:
+  After you've completed this module, you will be able to:
   - Choose the Azure AI services that best address your company's business challenges.
 prerequisites: | 
   - Familiarity with the concept of *application programming interfaces*, or APIs. Programmers use APIs to interact with the functionality that's contained in code libraries.
