@@ -53,7 +53,7 @@ quiz:
     - content: The Special Orders app is already in production. The company shouldn't look into the AR service until the service reaches general availability (GA).
       isCorrect: false
       explanation: Although you don't want to rely on preview services in production, are there ways that the team can begin to at least explore the service?
-    - content: The Special Orders app is mainly for use by retail employees. The company integrate the AR service now because potential downtime or failures aren't an important factor.
+    - content: The Special Orders app is mainly for use by retail employees. The company can integrate the AR service now because potential downtime or failures aren't an important factor.
       isCorrect: false
       explanation: Even though the app is used primarily by retail employees, it's still critical to the business. If the app isn't available or it fails, customers will be disappointed or go to a competitor.
     - content: The development team can create a prototype version of the app that includes the AR service that it tests out with select retail employees.
