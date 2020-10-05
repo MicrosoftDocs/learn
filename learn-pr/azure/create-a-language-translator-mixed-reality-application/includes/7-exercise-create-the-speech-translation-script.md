@@ -104,13 +104,13 @@ The UI consists of a quad which serves as a flat surface for the text. Displayed
 
     :::image type="content" source="../media/mic-icon.png" alt-text="A screenshot of the mic object's icon set. The microphone icon is highlighted.":::
 
-## Create the translation.cs script
+## Create the Translation.cs script
 
 > [!NOTE]
 > Additional helper code has been added to this script to help debug any potential issues which may occur when you run the Unity scene.
 
-1. In the **Project** window, select the **Assets** folder. This will be the folder used to store the **translation.cs** script.
-1. In the **Project** window, click the **+** icon and select **C# Script**. Name the script **translation.cs**.
+1. In the **Project** window, select the **Assets** folder. This will be the folder used to store the **Translation.cs** script.
+1. In the **Project** window, click the **+** icon and select **C# Script**. Name the script **Translation.cs**.
 
     :::image type="content" source="../media/create-translation-script.png" alt-text="A screenshot of the project window. The plus icon in the top left corner is highlighted. The translation script within the assets section is highlighted.":::
 
@@ -223,14 +223,14 @@ The UI consists of a quad which serves as a flat surface for the text. Displayed
 
 1. Save the file and return to Unity.
 
-## Add the translation.cs script to a GameObject
+## Add the Translation.cs script to a GameObject
 
 1. In the **Hierarchy** window, select the **Translation UI** object. The **Translation UI** properties will display in the **Inspector** window.
-1. In the **Inspector** window, select **Add Component**. In the **Search** window that appears, enter **translation** and select the **translation.cs** script.
+1. In the **Inspector** window, select **Add Component**. In the **Search** window that appears, enter **translation** and select the **Translation.cs** script.
 
     :::image type="content" source="../media/search-translation-script.png" alt-text="A screenshot of the translation u i properties. The translation u i object is highlighted in the hierarchy window. The search bar in the inspector window is highlighted. The word translation is entered into the search bar.":::
 
-1. With the **Translation UI** object still selected, in the **Inspector** window, expand the **translation.cs** script properties.
+1. With the **Translation UI** object still selected, in the **Inspector** window, expand the **Translation.cs** script properties.
 1. In the **Inspector** window, assign the following objects to their respective properties:
     - **Recognized Text**: Recognition Output
     - **Translated Text**: Translation Output

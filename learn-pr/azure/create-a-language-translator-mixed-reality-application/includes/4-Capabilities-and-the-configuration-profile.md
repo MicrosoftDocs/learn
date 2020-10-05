@@ -1,4 +1,4 @@
-Integrating features into Mixed Reality apps that use APIs and input sources such as a microphone or camera requires that you enable specific capabilities in the Unity Project Settings. In the collaboration tools example, there's a need for a microphone to capture speech in addition to internet for using the Azure Cognitive Services Speech service. Here, you'll learn how to enable APIs and resources to access a Mixed Reality app created in Unity.
+Integrating features into Mixed Reality apps that use APIs and input sources such as a microphone or camera requires that you enable specific capabilities in the Unity Project Settings. In the collaboration tools example, there's a need for a microphone to capture speech in addition to internet for using the Azure Cognitive Services Speech service. Here, you'll learn about the APIs and resources that must be enabled to access a Mixed Reality app created in Unity.
 
 ## MRTK Speech Commands Start Behavior
 
@@ -8,7 +8,7 @@ Since the default Configuration Profiles that come with MRTK cannot be modified,
 
 ## Capabilities
 
-To enable APIs or resources (such as a microphone) to access your app, you must enable the capability in the Unity Project Settings. For creating a speech translation app, the following capabilities must be enabled:
+To enable APIs or resources (such as a microphone) to access your app, you must enable the capability in the Unity Project Settings. In the next exercise, you will be instructed to enable the following capabilities:
 
 
 |Capability  |Function  |
