@@ -28,12 +28,12 @@ Click OK when finished
 
 After creating your dataset, there are no further changes you need to make your sink! 
 
-In the Settings tab, you will notice that by default the only update method selected is Allow insert which means all rows will be inserted to the table. 
+In the Settings tab, you will notice that by default the only update method selected is Allow insert, which means all rows will be inserted to the table. 
 
 In conjunction with an alter row transformation, you can tag certain rows as delete, upsert, or update as well. 
 
-Enable staging is also enabled by default which allows for the data flow to utilize Synapse's PolyBase technology for performant loading.
+Enable staging is also enabled by default, which allows for the data flow to utilize Synapse's PolyBase technology for performant loading.
 
    ![Overview Synapse Sink](../media/azure-data-factory-overview-synapse-sink.png)
 
-You have successfully created your data flow. Now its time to operationalize it in our pipeline.
+You have successfully created your data flow. 

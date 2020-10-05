@@ -1,12 +1,12 @@
 You have two possibilities to provision an Azure Data Share.
 
-In the below exercise you’re going to create an Azure Data Share from the portal.
+In the below exercise, you’re going to create an Azure Data Share from the portal.
 
-Navigate to the Azure Portal and on the left-hand side, go to Create a Resource:
+Navigate to the Azure portal and on the left-hand side, go to Create a Resource:
 
    ![Create a Resource](../media/azure-data-share-azure-marketplace-create-resource.png)
 
-You’ll be directed to the Azure Market Place, where you type in the search : Data Share 
+You’ll be directed to the Azure Market Place, where you type in the search: 'Data Share' 
 
    ![Search for Data Share](../media/azure-data-share-azure-marketplace-search.png)
 
@@ -16,13 +16,13 @@ You’ll be redirected to the product Azure Data Share:
 
 Navigate to Create, and you’ll have to provide the following: 
 
-   ![Product Azure Data Share](../media/azure-data-factory-create-data-share.png)
+   ![Provisioning Product Settings for Azure Data Share](../media/azure-data-factory-create-data-share.png)
 
 Settings:
 
 *Resource Group:*
 
-If you have an existing resource group in which you would want to create the Azure Data Share in, select it from the drop down menu for the resource group that you’d like to deploy the Data Share into.
+If you have an existing resource group in which you would want to create the Azure Data Share in, select it from the drop-down menu for the resource group that you’d like to deploy the Data Share into.
 
 If you don’t have an existing Resource group, navigate through ‘Create new’, and create a new resource group.
 
@@ -59,7 +59,7 @@ If you want to create a dataset that you want to share  select ‘+Create’, wh
 
    ![Azure Data Share Create Dataset Share Details ](../media/azure-data-share-overview-page-start-share-your-data.png)
 
-There are a couple of settings you need to specify:
+There are a couple of settings to specify:
 
 *Share name:*
 
@@ -67,15 +67,17 @@ Fill out a name for the share you’re going to send to your data consumer
 
 *Share type:*
 
-Specify what type of share you want to use which determines how your data will be shared: i.e. Snapshot or In-Place
+Specify what type of share you want to use which determines how your data will be shared: That is Snapshot or In-Place.
 
 *Description:*
 
-Describe the dataset that will be shared and be aware that this description will be visible to whom you’re sending the data share to. 
+Describe the dataset that will be shared and be aware that this description will be visible to whom you’re sending the data share. 
 
 *Term of use:*
 
-Specify the terms of use the data consumer needs to adhere to, these are terms which data consumers will need to consent to in order to accept the share invitation.
+Specify the terms of use the data consumer needs to adhere to.
+
+These are terms which data consumers will need to consent to in order to accept the share invitation.
 
    ![Azure Data Share Create Dataset Settings for Details](../media/azure-data-share-overview-page-start-share-your-data.png)
 
@@ -93,19 +95,19 @@ Authenticate with your SQL server admin login and password.
 
    ![Authenticate SQL ](../media/azure-data-share-authenticate-sequel.png)
 
-A message will pop up that you need to run a script in the Query Editor to enable data to be shared from tables/views from your SQL Database. 
+A message will pop up to run a script in the Query Editor to enable data to be shared from tables/views from your SQL Database. 
 
-You need to open a new web browser tab in order to navigate to the Azure Portal. You need to be logged into the same tenant and login credentials. 
+Open a new web browser tab in order to navigate to the Azure portal. Stay logged into the same tenant and login credentials. 
 
-Select the SQL Database, where you have saved the tables of the taxi dataset and go to the query editor where you’ll be asked to login. Please login with Active Directory Authentication. 
+Select the SQL Database, where you have saved the tables of the taxi dataset and go to the query editor where you’ll be asked to log in. Log in with Active Directory Authentication. 
 
-What is not covered in this step is that prior to this exercise you need to set yourself as an Active Directory Admin for the SQL Server and have allowed your client IP access to the SQL Server. 
+What is not covered in this step is that prior to this exercise, set yourself as an Active Directory Admin for the SQL Server and allow your client IP access to the SQL Server. 
 
 Copy the script that was given and run the query. 
 
    ![Running script ](../media/azure-data-share-script-sequel-authentication.png)
 
-Navigate back to the Azure Data Share resource and select Sent Shares, navigate to the Datasets Tab and add the taxi data. 
+Navigate back to the Azure Data Share resource and select Sent Shares, navigate to the Datasets Tab, and add the taxi data. 
 
 Select the taxi dataset: 
 
@@ -170,7 +172,7 @@ In the e-mail that you should have received (it may take up to a few minutes for
 
    ![Invitation Email ](../media/azure-data-share-invitation-email.png)
 
-Please select view invitation and In the list 'Data Share Invitations', select the invitation titled 'TaxiData'.
+Select view invitation and In the list 'Data Share Invitations', select the invitation titled 'TaxiData'.
 
    ![Data Share Invitations ](../media/azure-data-share-taxi-data-invitation.png)
 
@@ -196,13 +198,13 @@ Check TripFares and then select + Map to Target.
 
    ![Select Datasets to Map to Target](../media/azure-data-share-select-dataset-map-target.png)
 
-Once you select map to target you’ll be redirected to the following screen:
+Once, you select map to target you’ll be redirected to the following screen:
 
 
    ![ Map to Target](../media/azure-data-share-map-dataset-target.png)
 
 
-On the right hand side of the screen, from the Target Data Type drop down, you will notice a list of options for where you can receive the data into. 
+On the right-hand side of the screen, from the Target Data Type drop down, you will notice a list of options for where you can receive the data into. 
 
 Select Azure Data Lake Store Gen2, enter Azure subscription and resource group. 
 
@@ -210,7 +212,7 @@ Specify the storage account, and 'taxidata' as the file system name.
 
 You have an option to choose either CSV or Parquet output file format. 
 
-Leave it as default Csv. 
+Leave it as default CSV. 
 
 Click Map to target.
 
@@ -250,7 +252,7 @@ Click on "Start' time to drill into the snapshot history. Click on Succeeded to 
 
    ![Start Time Drill Down ](../media/azure-data-share-start-time-snapshot-history.png)
 
-Select Datasets tab, click on the link under 'PATH' which will navigate to your ADLS Gen2 account storageadlsgen2test where the data is received into.
+Select Datasets tab, click on the link under 'PATH', which will navigate to your ADLS Gen2 account storageadlsgen2test where the data is received into.
 
    ![Path of ADLS Gen2 ](../media/azure-data-share-path-azure-data-lake-storage-gen-2.png)
 

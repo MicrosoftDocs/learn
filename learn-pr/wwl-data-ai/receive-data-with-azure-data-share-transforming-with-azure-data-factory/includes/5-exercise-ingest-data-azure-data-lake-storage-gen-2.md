@@ -50,7 +50,7 @@ Please fill out the settings and click create. The Linked service connection has
 
 The last linked service needed is an Azure Data Lake Storage gen2. In the connections tab, click New. Select the Azure Data Lake Storage Gen2 tile and click continue.
 
-   ![Create Azure Data Lake Storage Gen2 as Linked Service ](../media/azure-data-factory-linked-service-azure-data-lake-storage-gen-2.png)
+   ![Azure Data Lake Storage Gen2 as Linked Service ](../media/azure-data-factory-linked-service-azure-data-lake-storage-gen-2.png)
 
 You’ll be redirected to the following screen:
 
