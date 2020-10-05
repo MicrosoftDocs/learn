@@ -43,7 +43,7 @@ In the terminal, type `truffle test`.
 
 The test fails because Truffle can't connect to the Ethereum client:
 
-```markdown
+```output
 Could not connect to your Ethereum client with the following parameters:
     - host       > 127.0.0.1
     - port       > 8545
