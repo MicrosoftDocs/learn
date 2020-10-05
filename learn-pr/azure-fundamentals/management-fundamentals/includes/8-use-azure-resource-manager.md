@@ -16,4 +16,4 @@ You could use Azure PowerShell or the Azure CLI, but these scripting technologie
 
 The third decision criterion assumes that you need to write a script by using imperative code. However, when you use ARM templates, you define your infrastructure declaratively by using JSON code. In some instances, you still might need imperative code for configuration or clean-up tasks.  In these cases, you can trigger the execution of scripts by using either Azure PowerShell or the Azure CLI to perform these tasks.
 
-In this scenario, ARM templates is the correct choice.
+In this scenario, ARM templates are the correct choice.
