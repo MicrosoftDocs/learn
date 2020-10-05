@@ -7,15 +7,15 @@ Tailwind Traders is experimenting with a custom drone delivery system for custom
 > [!NOTE]
 > AI Storm Analyzer is a fictitious Azure service, introduced here for illustration purposes only.
 
-Before the team moves forward, they want a better understanding of how preview services affect their SLA. Let's begin by defining the Azure service lifecycle.
+Before the team moves forward, it wants a better understanding of how preview services affect its SLA. Let's begin by defining the Azure service lifecycle.
 
 ## What is the service lifecycle?
 
 The *service lifecycle* defines how every Azure service is released for public use.
 
-Every Azure service starts in the development phase. In this phase, the Azure team collects and defines their requirements, and begins to build the service.
+Every Azure service starts in the development phase. In this phase, the Azure team collects and defines its requirements, and begins to build the service.
 
-Next, the service is released to the public preview phase. During this phase, the public can access and experiment with it so that they can provide feedback. Your feedback helps Microsoft improve services. More importantly, providing feedback gives you the opportunity to request new or different capabilities so that services better meet your needs.
+Next, the service is released to the public preview phase. During this phase, the public can access and experiment with it so that it can provide feedback. Your feedback helps Microsoft improve services. More importantly, providing feedback gives you the opportunity to request new or different capabilities so that services better meet your needs.
 
 After a new Azure service is validated and tested, it's released to all customers as a production-ready service. This is known as *general availability* (GA).
 
