@@ -64,7 +64,7 @@ Each of the workloads defined previously has its own SLA, and the customization 
 
 Make sure that your purchasing decisions take into account the impact on the SLA for the Azure services that you choose. Doing so ensures that the SLA supports your required application SLA.
 
-Here, Tailwind Traders might choose the Ultra Disk option for their virtual machines to help guarantee greater uptime.
+Here, Tailwind Traders might choose the Ultra Disk option for its virtual machines to help guarantee greater uptime.
 
 ### Build availability requirements into your design
 
