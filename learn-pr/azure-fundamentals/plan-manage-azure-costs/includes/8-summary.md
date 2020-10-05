@@ -1,10 +1,10 @@
-Tailwind Traders is taking a methodical approach toward cloud migration. While proof-of-concept projects can help demonstrate technical feasibility, having a clear picture of the total cost of running in the cloud will further help the team validate their approach.
+Tailwind Traders is taking a methodical approach toward cloud migration. While proof-of-concept projects can help demonstrate technical feasibility, having a clear picture of the total cost of running in the cloud will further help the team validate its approach.
 
-To start, the Tailwind Traders team used the Total Cost of Ownership Calculator to estimate the cost savings of operating their solution on Azure instead of in their on-premises datacenter.
+To start, the Tailwind Traders team used the Total Cost of Ownership Calculator to estimate the cost savings of operating its solution on Azure instead of in its on-premises datacenter.
 
-From there, they used the Pricing calculator to get a more detailed estimate for running a typical workload on Azure each month.
+From there, the team used the Pricing calculator to get a more detailed estimate for running a typical workload on Azure each month.
 
-The team also created a checklist of cost-saving measures they can use to help keep down costs. This list includes:
+The team also created a checklist of cost-saving measures that it can use to help keep down costs. This list includes:
 
 > [!div class="checklist"]
 > * Perform cost analysis before you deploy.
@@ -15,7 +15,7 @@ The team also created a checklist of cost-saving measures they can use to help k
 > * Research available cost-saving offers.
 > * Apply tags to identify cost owners.
 
-With these measures in place, the Tailwind Traders team is ready to take the next steps toward their cloud migration.
+With these measures in place, the Tailwind Traders team is ready to take the next steps toward cloud migration.
 
 ## Next steps
 
