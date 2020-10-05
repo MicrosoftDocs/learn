@@ -9,6 +9,6 @@ metadata:
   ms.author: apspeigh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 15
+durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-configure-capabilities-and-the-configuration-profile.md)]
