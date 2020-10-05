@@ -87,7 +87,7 @@ The **.deployed()** function returns a promise. So we use `await` in front of th
 
 This pattern is commonly used in tests because almost all smart contract transactions are asynchronous. They're asynchronous because transactions need to be validated or mined before they're added to the blockchain ledger.
 
-Overall, you should aim for 100 percent test coverage for your contract, especially if you plan to deploy to the main Ethereum network, or *main net*.
+Overall, you should aim for 100 percent test coverage for your contract, especially if you plan to deploy to the main Ethereum network, or *Main Net*.
 
 ## Run the test
 

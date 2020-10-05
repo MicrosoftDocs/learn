@@ -41,7 +41,7 @@ Many tools can help you effectively develop smart contracts. The following secti
 
 ### Extensions
 
-- [**Blockchain development kit for Ethereum**](https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain?azure-portal=true): This extension can simplify how you create, build, and deploy smart contracts on Ethereum ledgers. In this module, we'll use the Blockchain development kit to write and test smart contracts.
+- [**Blockchain Development Kit for Ethereum**](https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain?azure-portal=true): This extension can simplify how you create, build, and deploy smart contracts on Ethereum ledgers. In this module, we'll use the Blockchain Development Kit to write and test smart contracts.
 
 ### Frameworks
 

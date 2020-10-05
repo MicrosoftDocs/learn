@@ -35,10 +35,10 @@ quiz:
       explanation: "Incorrect. A contracts directory is generated, and it contains a couple of contracts. But this directory isn't the only automatically generated content."
     - content: "A build folder and files to compile and deploy the Solidity project"
       isCorrect: false
-      explanation: "Incorrect. A contracts directory and tests directory are automatically generated. But a tests directory is not the only content in the new project folder."
+      explanation: "Incorrect. A build folder is generated only after the project is compiled."
     - content: "Folders for contracts, migrations, and tests."
       isCorrect: false
-      explanation: "Incorrect. A migrations directory is created, and it contains two migrations. But migrations must be paired with a contract, so a contract must also be automatically generated."
+      explanation: "Incorrect. All of these folders are in fact generated, but there are also files within each of the folders created."
     - content: "Sample contract, migrations, a test, and a Truffle config file."
       isCorrect: true
       explanation: "Correct. A new project generates a HelloBlockchain contract, two migrations, a test, and a Truffle config file. You can build on these examples to create your own smart contract projects."

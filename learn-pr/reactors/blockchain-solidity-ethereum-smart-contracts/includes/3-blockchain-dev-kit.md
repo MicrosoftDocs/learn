@@ -1,4 +1,4 @@
-The [Blockchain development kit for Ethereum](https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain?azure-portal=true) is an extension that's available in Visual Studio Code. Use the extension to create, build, and deploy smart contracts on Ethereum blockchain solutions.
+The [Blockchain Development Kit for Ethereum](https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain?azure-portal=true) is an extension that's available in Visual Studio Code. Use the extension to create, build, and deploy smart contracts on Ethereum blockchain solutions.
 
 ## Install the extension
 
@@ -90,4 +90,3 @@ Here you see some key information or metadata for your deployed contract:
 - The amount of gas used and the gas price. *Gas* refers to the fee required to conduct a transaction or to execute a contract on the Ethereum blockchain platform. You can think of it like the gas you need for your car. Total cost = gas price * gas use.
   > [!Note]
   > Gas prices are shown in gwei. One gwei is worth 0.000000001 ETH.
-
