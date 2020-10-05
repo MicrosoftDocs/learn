@@ -18,7 +18,7 @@ The UI consists of a quad which serves as a flat surface for the text. Displayed
 
     :::image type="content" source="../media/gameobject-properties.png" alt-text="A screenshot of the hierarchy and inspector windows. The Game Object object is highlighted in the hierarchy window. The object's properties is highlighted in the inspector window.":::
 
-1. In the **Inspector** window, name the GameObject **Translation UI** and change the **Transform Position** to **.0**, **0**, **.8**. This moves the object away from the user which later helps to display the UI elements in front of the user.
+1. In the **Inspector** window, name the GameObject **Translation UI** and change the **Transform Position** to **0**, **0**, **0.8**. This moves the object away from the user which later helps to display the UI elements in front of the user.
 
     :::image type="content" source="../media/translation-ui-properties.png" alt-text="A screenshot of the Translation UI object's properties. The name of the property is highlighted in addition to the transform position values. The x value is 0. The y value is 0. The z value is 0 point 8.":::
 
@@ -33,7 +33,7 @@ The UI consists of a quad which serves as a flat surface for the text. Displayed
     :::image type="content" source="../media/scene-gizmo.png" alt-text="A screenshot of the Unity editor Scene window. The play gizmo is highlighted.":::
 
 1. Select the **Quad** object in the **Hierarchy** window. The Quad's properties will display in the **Inspector** window.
-1. In the **Inspector** window, change the Quad's **Transform Scale** to **.8**, **.5**, **.1**. This will make the quad rectangular.
+1. In the **Inspector** window, change the Quad's **Transform Scale** to **0.8**, **0.5**, **0.1**. This will make the quad rectangular.
 
     :::image type="content" source="../media/quad-properties.png" alt-text="A screenshot of the quad object's properties. In the hierarchy window, the quad object is highlighted. In the inspector window, the scale values are highlighted. The x value is 0 point 8. The y value is 0 point 5. The z value is 0 point 1.":::
 
@@ -62,7 +62,7 @@ The UI consists of a quad which serves as a flat surface for the text. Displayed
 1. With the **Recognition (Label)** object still selected, in the **Inspector** window, change the remaining properties:
     - **Text** = Recognized Speech:
     - **Font Size** = 0.3
-    - **Face** = #000000
+    - **Face Color** = 000000
 
     :::image type="content" source="../media/text-name-size-color-properties.png" alt-text="A screenshot of the inspector window for the Recognition label object. The text, font size and face color properties are highlighted.":::
 
