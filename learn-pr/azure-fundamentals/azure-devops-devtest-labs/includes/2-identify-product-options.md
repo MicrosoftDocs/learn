@@ -1,6 +1,6 @@
 Software developers and operations professionals strive to create working software systems that satisfy the needs of the organization. However, sometimes their short-term objectives are at cross-purposes, which can result in technical issues, delays, and downtime. 
 
-DevOps is a new approach that helps to align technical teams as they work toward common goals. To accomplish this alignment, organizations employ practices and processes that seek to automate the ongoing development, maintenance, and deployment of software systems. Their aim is to expedite the release of software changes, ensure the ongoing deployability of the system, and ensure that all changes meet a high-quality bar. 
+DevOps is a new approach that helps to align technical teams as they work toward common goals. To accomplish this alignment, organizations employ practices and processes that seek to automate the ongoing development, maintenance, and deployment of software systems. Their aim is to expedite the release of software changes, ensure the ongoing deployability of the system, and ensure that all changes meet a high quality bar. 
 
 When done correctly, DevOps practices and processes touch nearly every aspect of the company, not to mention the software development lifecycle, including planning, project management, and the collaboration of software developers with each other and with operations and quality assurance teams.  Tooling automates and enforces most of the practices and processes, making it both difficult and unnecessary to work around.
 
