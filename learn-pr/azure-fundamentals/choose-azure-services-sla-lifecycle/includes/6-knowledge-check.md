@@ -16,9 +16,9 @@ To compute the composite SLA for a set of services, you multiply the SLA of each
 
 $${99.9\\% \times 99.9\\% \times 99.99\\% \times 99.99\\% = 99.78\\%}$$
 
-The team wants to add a mapping feature so that they can calculate routes between nearby suppliers and each retail store. For that, they'll use Azure Maps.
+The team wants to add a mapping feature so that it can calculate routes between nearby suppliers and each retail store. For that, the team will use Azure Maps.
 
-The team also needs more processing power to keep up with demand. For that, they'll add a third virtual machine to the pool.
+The team also needs more processing power to keep up with demand. For that, it will add a third virtual machine to the pool.
 
 Here's a diagram that shows their proposed plan:
 
