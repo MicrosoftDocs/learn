@@ -104,6 +104,10 @@ For guidance on applying a policy, see the tutorial on [creating and maanaging p
 > [!IMPORTANT]
 > Step 9 illustrates the use of **Policy enforcement**. While learning about governance, be sure to set **Policy enforcement** to *Disabled*. Doing so will allow you to audit your environment, without making any changes or preventing future deployments.
 
+## Deployment acceleration
+
+Packaging all of the governance change into a blueprint accelerates deployments and creates consistent governance application. When we assign a blueprint in the next exercise, governance will be consistently applied to all subscriptions in the assigned management group and all resource groups and assets within those subscriptions.
+
 ## Exercise: Assign the CAF Foundation Blueprint
 
 Azure blueprints package Azure Resource Manager templates, Azure Policies, and Role Based Access Control settings into a single package. The CAF Foundation blueprint provides an example and a starting point for the use of blueprints in cloud governance, including the following controls:

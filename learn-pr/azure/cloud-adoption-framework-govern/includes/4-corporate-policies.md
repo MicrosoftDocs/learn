@@ -50,7 +50,9 @@ The customer narrative unit outlined the risks that the CIO is most concerned wi
 - Risk of improper access compromising systems or data
 - Risk of inconsistent governance due to immature processes and lack of skills on the team
 
-Deeper investigation of the stakeholder concerns and the cloud adoption plan will likely expose additional risks that can't be tolerated by the organization. 
+It's important to note, that none of the actual concerns are related to a "a specific network segment of the existing data centers" as sited in their existing policy. To create sound governance policies that will scale into the cloud, we need to dig a bit deeper & look at the tangible risks captured in existing policy (Not the current state solution).
+
+Deeper investigation of the stakeholder concerns and the cloud adoption plan will likely expose additional risks that can't be tolerated by the organization. But for now, we have enough to start shaping governance policies that address these tangible risks.
 
 ## Policy and compliance
 
@@ -63,15 +65,21 @@ Corporate policies establish the requirements, standards, and goals that your IT
 
 ## Process
 
-The cloud provides guardrails that can reduce the human overhead of recurring processes by providing validation triggers based on implementation configuration. The following are a few examples of triggers and actions for each discipline:
+The cloud provides guardrails that can reduce the human overhead of recurring processes by providing validation triggers based on implementation configuration. The following are a few examples of triggers and actions that can address the concerns:
 
-<!-- docsTest:ignore "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
-
-| Cloud governance discipline | Sample trigger | Sample action |
+| Risks | Sample trigger | Sample action |
 |-----------------------------|----------------|---------------|
-| Cost Management | Monthly cloud spending is more than 20% higher than expected. | Notify the billing unit leader who will begin a review of resource usage. |
-| Security Baseline | Detect suspicious user activity. | Notify the IT security team and disable the suspect user account. |
-| Resource Consistency | CPU utilization for a workload is greater than 90%. | Notify the IT operations team and scale out additional resources to handle the load. |
+| Risk of overspending in the cloud | Monthly cloud spending is more than 20% higher than expected. | Notify the billing unit leader who will begin a review of resource usage. |
+| Risk of overspending in the cloud | Deployed assets are not using the allocated cpu or memory | Notify the billing unit leader and when possible automatically resize to fit actual usage. |
+| Risk of not meeting security or compliance requirements | Detect any deviation from defined security or compliance. | Notify the IT security team and when possible automate remediation. |
+| Risk of asset configuration creating operations management issues or oversights | CPU utilization for a workload is greater than 90%. | Notify the IT operations team and scale out additional resources to handle the load. |
+| Risk of asset configuration creating operations management issues or oversights | Assets that fail to meet patching or bcdr requirements trigger operational compliance warning. | Notify the IT operations team and when possible automatically resolve the deviation. |
+| Risk of improper access compromising systems or data | Traffic patterns deviate from approved network topologies | Notify the IT security team and when possible automatically close attack vectors. |
+| Risk of improper access compromising systems or data | Assets are configured without proper role assignments or elevated privileges | Notify the IT security team and when possible automatically resolve the deviation. |
+| Risk of inconsistent governance due to immature processes and lack of skills on the team | Assets identified that are not included in required governance processes | Notify the IT governance team and when possible automatically resolve the deviation. |
+
+Each of the above triggers and actions can be automated using Azure governance tools. Other cloud providers may require a more manual approach, but the defined policies would still be applicable. Take care to avoid defining policies that would create lock-in with a specific vendor to avoid having to repeat this process again in the future.
 
 After establishing your cloud policy statements and drafting a design guide, you'll need to create a strategy for ensuring your cloud deployment stays in compliance with your policy requirements. This strategy will need to encompass your cloud governance team's ongoing review and communication processes, establish criteria for when policy violations require action, and defining the requirements for automated monitoring and compliance systems that will detect violations and trigger remediation actions.
 
+In the next unit, we'll group these types of risks into actionable cloud disciplines.

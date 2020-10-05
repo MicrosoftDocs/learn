@@ -15,36 +15,59 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "TBD"
+  - content: "To address the risks & concerns raised by the Tailwind Traders CIO, which of the following would you act on first?"
     choices:
-    - content: "A"
+    - content: "Implement a governance foundation in Azure"
       isCorrect: false
+      explanation: "Governance tools can't address poorly defined corporate policy"
+    - content: "Update the existing corporate policy to outline concerns, risks, triggers, and actions."
+      isCorrect: True
       explanation: "."
-    - content: "B"
-      isCorrect: true
-      explanation: "."
-    - content: "C"
+    - content: "Deploy Cost management controls and processes"
       isCorrect: false
-      explanation: "."
-  - content: "TBD"
+      explanation: "It will be hard to address cost management without a clear set of policies and a governance foundation"
+    - content: "Deploy Security baseline controls and processes"
+      isCorrect: false
+      explanation: "It will be hard to address security baseline without a clear set of policies and a governance foundation"
+  - content: "Which would you address second?"
     choices:
-    - content: "A"
-      isCorrect: true
+    - content: "Implement a governance foundation in Azure"
+      isCorrect: True
       explanation: "."
-    - content: "B"
+    - content: "Update the existing corporate policy to outline concerns, risks, triggers, and actions."
       isCorrect: false
-      explanation: "."
-    - content: "C"
+      explanation: "Corporate policy should be number one on the list of things to address."
+    - content: "Deploy Cost management controls and processes"
       isCorrect: false
-      explanation: "."
-  - content: "TBD" 
+      explanation: "It will be hard to address cost management without a clear set of policies and a governance foundation"
+    - content: "Deploy Security baseline controls and processes"
+      isCorrect: false
+      explanation: "It will be hard to address security baseline without a clear set of policies and a governance foundation"
+  - content: "Which will deliver the most visible improvement based on the existing corporate policy?"
     choices:
-    - content: "A"
+    - content: "Implement a governance foundation in Azure"
       isCorrect: false
-      explanation: "."
-    - content: "B"
+      explanation: "This is one of the coolest tech accomplishments, but won't show much value beyond the hands on team."
+    - content: "Update the existing corporate policy to outline concerns, risks, triggers, and actions."
+      isCorrect: false
+      explanation: "Corporate policy is important, but few will see the value of this exercise initially."
+    - content: "Deploy Cost management controls and processes"
+      isCorrect: false
+      explanation: "While important, cost management won't help with the security concerns"
+    - content: "Deploy Security baseline controls and processes"
       isCorrect: true
-      explanation: "."
-    - content: "C"
+      explanation: ""
+  - content: "Which will create the most confidence with the CIO?"
+    choices:
+    - content: "Implement a governance foundation in Azure"
       isCorrect: false
-      explanation: "."
+      explanation: "This is one of the coolest tech accomplishments, but won't show much value beyond the hands on team."
+    - content: "Update the existing corporate policy to outline concerns, risks, triggers, and actions."
+      isCorrect: false
+      explanation: "Corporate policy is important, but few will see the value of this exercise initially."
+    - content: "Deploy Cost management controls and processes"
+      isCorrect: true
+      explanation: "While important, cost management won't help with the security concerns"
+    - content: "Deploy Security baseline controls and processes"
+      isCorrect: false
+      explanation: "The CIO injected cost risks & concerns into the list, even though the existing policy had nothing to do with cost. This has also been a message shared by the CIO throughout this narrative."

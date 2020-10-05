@@ -45,3 +45,20 @@ Once you've established identity and access requirements for your cloud environm
 Automation of governance leads to automation in adoption. Providing infrastructure-as-code templates to the various adoption teams, allows them to quickly deploy workloads into compliant, well-managed environments.
 
 :::image type="content" source="../media/deployment-acceleration.png" alt-text="deployment acceleration" border="false":::
+
+## Tailwind Traders' risks
+
+These disciplines help establish the right collection of processes, tools, and automation to address common risks and concerns.
+
+| Discipline | Risks | Sample trigger | Sample action |
+|-----------------------------|----------------|---------------|
+| Cost Management | Overspending | Monthly cloud spending is more than 20% higher than expected. | Notify the billing unit leader who will begin a review of resource usage. |
+| Cost Management | Overspending | Deployed assets are not using the allocated cpu or memory | Notify the billing unit leader and when possible automatically resize to fit actual usage. |
+| Security Baseline | Security or compliance requirements | Detect any deviation from defined security or compliance. | Notify the IT security team and when possible automate remediation. |
+| Security Baseline | Risk of improper access compromising systems or data | Traffic patterns deviate from approved network topologies | Notify the IT security team and when possible automatically close attack vectors. |
+| Resource Consistency | Operations management issues or oversights | CPU utilization for a workload is greater than 90%. | Notify the IT operations team and scale out additional resources to handle the load. |
+| Resource Consistency | Operations management issues or oversights | Assets that fail to meet patching or BCDR requirements trigger operational compliance warning. | Notify the IT operations team and when possible automatically resolve the deviation. |
+| Identity | Improper access compromising systems or data | Assets are configured without proper role assignments or elevated privileges | Notify the IT security team and when possible automatically resolve the deviation. |
+| Deployment Acceleration | Inconsistent governance | Assets identified that are not included in required governance processes | Notify the IT governance team and when possible automatically resolve the deviation. |
+
+Breaking these risks down into disciplines will help Tailwind Traders focus on addressing tangible risks and concerns against a prioritized backlog. In following units, we will look at some technical solutions to get you started with a cloud governance foundation to support each discipline. We'll also look at some technical solutions to address the cost management related risks.
