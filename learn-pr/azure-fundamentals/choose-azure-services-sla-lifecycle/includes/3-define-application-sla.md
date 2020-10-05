@@ -20,10 +20,10 @@ The Special Orders application doesn't affect other operations. So the majority 
 
 One question to consider is whether the availability requirement differs between critical and non-critical time periods. For example, a tax-filing application can't fail during a filing deadline.
 
-For Tailwind Traders, retail stores aren't open 24 hours a day, so if the application were down in the middle of the night, the impact would be minimal. However, because Tailwind Traders has retail locations all over the world, they will need to ensure that each location has access to the service during its retail hours.
+For Tailwind Traders, retail stores aren't open 24 hours a day, so if the application were down in the middle of the night, the impact would be minimal. However, because Tailwind Traders has retail locations all over the world, it will need to ensure that each location has access to the service during its retail hours.
 
 ## What does the team decide?
 
-Let's say that Tailwind Traders decides that an SLA of 99.9 percent is acceptable for the Special Orders application. This gives them an estimated downtime of 10.1 minutes per week. But how will they ensure that their technology choices support their application SLA?
+Let's say that Tailwind Traders decides that an SLA of 99.9 percent is acceptable for the Special Orders application. This gives them an estimated downtime of 10.1 minutes per week. But how will it ensure that its technology choices support its application SLA?
 
-In the next part, you'll see how the team maps their application requirements to specific Azure services. You'll learn about some of the techniques you can use to help ensure that your technology choices meet your application SLA.
+In the next part, you'll see how the team maps its application requirements to specific Azure services. You'll learn about some of the techniques you can use to help ensure that your technology choices meet your application SLA.
