@@ -10,7 +10,7 @@ Tailwind Traders is planning its migration to the cloud. The company has run a f
 
 Running in the datacenter requires you to maintain a facility and purchase, power, cool, and maintain your servers. Running in the cloud presents new ways to think about your IT expenses.
 
-To answer the question, How much will it cost?, you need to understand the factors that influence cost. You also need to understand what tools are available to you to help estimate and manage your cloud spend.
+To answer the question of how much it will cost, you need to understand the factors that influence cost. You also need to understand what tools are available to you to help estimate and manage your cloud spend.
 
 ## Learning objectives
 
