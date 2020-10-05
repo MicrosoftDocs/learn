@@ -6,16 +6,19 @@ In Unity, specific capabilities must be enabled to use APIs and resources such a
 > If you are unfamiliar with the process of configuring a Unity project for Windows Mixed Reality development, refer to the [Set Up a Mixed Reality Project in Unity with the Mixed Reality Toolkit](https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/?azure-portal=true) Learn module for an overview.
 
 1. Create a new 3D Unity project.
-1. Switch the **Build Platform** to **Universal Windows Platform**.
-1. In **Project Settings**, enable Virtual Reality and add the **Windows Mixed Reality** SDK.
-1. In **Project Settings**, optimize the **XR Settings** as follows:
+1. Navigate to **File** > **Build Settings** to switch the **Build Platform** to **Universal Windows Platform**.
+1. In the **Build Settings** window, select **Player Settings** at  the bottom left of the window. In the **Player** section, expand **XR Settings** (located at the bottom of the window). Enable Virtual Reality and add the **Windows Mixed Reality** SDK.
+    :::image type="content" source="../media/add-sdk.png" alt-text="A screenshot of the X R settings. The virtual reality supported box is highlighted and checked. The plus icon to add a new S D K is highlighted and checked.":::
+1. Optimize the **XR Settings** as follows:
     - Set Windows Mixed Reality **Depth Format** to **16-bit depth**
     - Check the Windows Mixed Reality **Enable Depth Sharing** checkbox
     - Set **Stereo Rendering Mode** to **Single Pass Instanced**
+    :::image type="content" source="../media/optimize-xr-settings.png" alt-text="A screenshot of the X R settings. The Virtual Reality S D K s section is highlighted. The Depth Format is set to 16 bit depth. The Enable Depth Sharing box is checked. Also, the Stereo Rendering Mode section is highlighted.  The Stereo Rendering Mode is set to single pass instanced.":::
 1. Navigate to **Window** > **TextMeshPro** and select **Import TMP Essential Resources** to import all of the TMP Essential Resources assets.
-1. Navigate to **Assets** > **Import Package** > **Custom Package** and import all the assets within the **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.X.X.unitypackage** package.
-1. The MRTK Project Configurator window may open after the Mixed Reality Toolkit is imported into the project. If not, navigate to **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project**. In the **Audio spatializer** drop down, select **MS HRTF Spatializer**.
-1. Navigate to **Mixed Reality Toolkit** > **Add to Scene and Configure** to add the **Mixed Reality Toolkit** to the scene.
+1. Download the **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.X.X.unitypackage** from the [MRTK release page](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases?azure-portal=true).
+1. Navigate to **Assets** > **Import Package** > **Custom Package** and import all the assets within the **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.X.X.unitypackage** package. After the import is complete, the Mixed Reality Toolkit is added to the top navigation menu.
+1. The MRTK Project Configurator window may open after the Mixed Reality Toolkit is imported into the project. If not, in the top navigation menu, navigate to **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project**. In the **Audio spatializer** drop down, select **MS HRTF Spatializer**.
+1. In the top navigation menu, navigate to **Mixed Reality Toolkit** > **Add to Scene and Configure** to add the **Mixed Reality Toolkit** to the scene.
 
 ## Change Speech Commands Start Behavior
 
