@@ -1,50 +1,48 @@
-Truffle is the most popular development framework for Ethereum. It can easily be installed with the help of the node package manager.
+Truffle is the most popular development framework for Ethereum. You can install it by using the node package manager (NPM).
 
 ## About Truffle
 
-With Truffle, you get some of the following benefits:
+Truffle provides the following benefits:
 
-- Smart contract building, compilation, deployment, testing and more
-- Network management for deploying to public & private networks
-- Package management for dependencies
-- Interactive console for direct contract communication
-- Configurable build pipeline
+- Smart contract building, compilation, deployment, and testing
+- Network management for deploying to public and private networks
+- Package management for project dependencies
+- Interactive console for direct contract communication and management
+- Configurable build pipeline to automatically run checks and configure projects
 
 ## Install Truffle
 
-From your terminal, you can install Truffle easily with the help of the node package manager. Type:
+You can install Truffle by using the node package manager. In the terminal, type:
 
 `npm install -g truffle`
 
-To confirm truffle is installed, type:
+To confirm that Truffle is installed, type:
 
 `truffle`
 
-That will show the version installed and present the list of commands available to use Truffle with:
+The output shows the installed version and presents the list of commands available for Truffle:
 
-:::image type="content" source="../media/truffle.png" alt-text="Truffle options shown in terminal":::
+:::image type="content" source="../media/truffle.png" alt-text="Screenshot of the terminal, showing the Truffle version and the available commands.":::
 
-## Get started with using Truffle
+## Get started with Truffle
 
-Now that Truffle is installed, let's use it to run the tests that were generated as part of our newSolidityProject.
 
-You can find the test file in test/HelloBlockchain.js. Take a look through the test file to try to understand what's being tested.
 
-1. In Visual Studio Code, go to Terminal -> New Terminal
-1. In the terminal run `truffle compile`. Wait for the source files to compile successfully.
-1. Then run `truffle migrate`. Wait for the migrations to finish
+1. In Visual Studio Code, go to **Terminal** > **New Terminal**.
+1. In the terminal, run `truffle compile`. Wait for the source files to compile successfully.
+1. Run `truffle migrate`. Wait for the migrations to finish.
 
 ### Test the contract
 
-Let's use it to run the tests that were generated as part of our newSolidityProject.
+Let's run the tests that were generated as part of newSolidityProject.
 
-You can find the test file in test/HelloBlockchain.js. Take a look through the test file to try to understand what's being tested.
+You can find the test in *test/HelloBlockchain.js*. Look through the test file to try to understand what's being tested.
 
-From the terminal type: `truffle test`.
+In the terminal, type `truffle test`.
 
-Notice that the tests fail due to the following.
+The test fails because Truffle can't connect to the Ethereum client:
 
-```markdown
+```output
 Could not connect to your Ethereum client with the following parameters:
     - host       > 127.0.0.1
     - port       > 8545
@@ -56,24 +54,28 @@ Please check that your Ethereum client:
     - is properly configured in your Truffle configuration file (truffle-config.js)
 ```
 
-And this indicates that I need a local Ethereum blockchain client running for the tests to access.
+This output indicates that you need a running local Ethereum blockchain client that the tests can access.
 
 ### Ganache CLI
 
-The most popular local Ethereum blockchain is Ganache. We're going to use the [CLI](https://github.com/trufflesuite/ganache-cli) version to interact with it directly from the terminal. Ganache CLI is commonly used for development and testing. To install it on your project, focus your attention to the terminal. Right-click and select `New Terminal`. Once the new terminal window opens run:
+The most popular local Ethereum blockchain is Ganache. We'll use the [CLI version](https://github.com/trufflesuite/ganache-cli) so that we can interact with it directly from the terminal. Ganache CLI is commonly used for development and testing. 
+
+To install Ganache CLI in your project, go to the terminal. Right-click and then select `New Terminal`. When the new terminal window opens, run: 
+
 `npm install -g ganache-cli`
 
-Once Ganache CLI installs successfully, run:
+After Ganache CLI is installed, run:
+
 `ganache-cli`
 
-:::image type="content" source="../media/start-ganache.png" alt-text="Start ganache-cli from the terminal":::
+:::image type="content" source="../media/start-ganache.png" alt-text="Screenshot showing how to start Ganache C L I from the terminal by running the ganache-c l i command.":::
 
-Notice that there are 10 accounts generated on this blockchain that each receive 100 test Ether to use. Each account also has a corresponding private key. And there is also a mnemonic, which is a unique twelve world phrase to access the wallet and allows transactions to be made from these accounts.
+Notice that the blockchain has 10 generated accounts, and each receives 100 test ether to use. Each account also has a corresponding private key. Every account also has a *mnemonic*. A mnemonic is a unique 12-word phrase that provides access to the wallet and allows transactions to be made from the account.
 
-And lastly, it displays its address, which we’ll use to connect to it. By default, this will be 127.0.0.1:8545.
+The output also displays the blockchain's address. We'll use this address to connect to the blockchain. By default, the address is 127.0.0.1:8545.
 
-Now run `truffle test`.
+Now run `truffle test` again.
 
-In the terminal you will now see that all tests have passed.
+In the terminal, you see that all tests have passed.
 
-:::image type="content" source="../media/truffle-test.png" alt-text="Run truffle test from the terminal":::
+:::image type="content" source="../media/truffle-test.png" alt-text="Screenshot showing the terminal. The output shows that the Truffle tests have passed.":::
