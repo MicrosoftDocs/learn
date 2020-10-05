@@ -58,7 +58,7 @@ Azure Sphere comes in three parts:
 
 - The first part is the Azure Sphere micro-controller unit (MCU), which is responsible for processing the operating system and signals from attached sensors. The following image displays the Seeed Azure Sphere MT3620 Development Kit MCU, one of several different starter kits that are available for prototyping and developing Azure Sphere applications.
 
-  ![Screenshot of an Azure Sphere development kit micro-controller unit.](../media/2-identify-product-options-01.png)
+  ![Screenshot of an Azure Sphere development kit micro-controller unit.](../media/2-identify-product-options-02.png)
 
 - The second part is a customized Linux operating system (OS) that handles communication with the security service and can run the vendor's software.
 
