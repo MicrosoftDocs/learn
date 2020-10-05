@@ -24,7 +24,7 @@ quiz:
     - content: "Azure Sphere"
       isCorrect: true
       explanation: "Azure Sphere provides the highest degree of security to ensure the device has not been tampered with."
-  - content: "A company wants to quickly manage their individual IoT devices using a web-based user interface. Which IoT technology should they choose?"
+  - content: "A company wants to quickly manage its individual IoT devices by using a web-based user interface. Which IoT technology should it choose?"
     choices:
     - content: "IoT Hub"
       isCorrect: false
