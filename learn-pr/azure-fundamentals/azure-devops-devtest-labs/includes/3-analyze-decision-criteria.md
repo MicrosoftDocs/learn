@@ -8,7 +8,7 @@ However, you can automate the provisioning of new labs as part of a toolchain by
 
 ### Are you building open-source software?
 
-Although Azure DevOps can publish public code repositories, GitHub has long been the actual host for open-source software. If you're building open-source software, you would likely choose GitHub if for no other reasons than its visibility and general acceptance by the open-source development community.
+Although Azure DevOps can publish public code repositories, GitHub has long been the preferred host for open-source software. If you're building open-source software, you would likely choose GitHub if for no other reasons than its visibility and general acceptance by the open-source development community.
 
 The remaining decision criteria are specific to choosing between either Azure DevOps or GitHub.
 
