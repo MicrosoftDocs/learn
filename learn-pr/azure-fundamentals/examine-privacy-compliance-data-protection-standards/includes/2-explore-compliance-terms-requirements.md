@@ -9,7 +9,7 @@ Microsoft's online services build upon a common set of regulatory and compliance
 
 ## Which compliance categories are available on Azure?
 
-Although there are many more, the following images shows some of the more popular compliance offerings that are available on Azure. These offerings are grouped under four categories: Global, US Government, Industry, and Regional.
+Although there are many more, the following image shows some of the more popular compliance offerings that are available on Azure. These offerings are grouped under four categories: Global, US Government, Industry, and Regional.
 
 :::image type="content" source="../media/2-compliance-matrix.png" alt-text="A screenshot of some of the Azure compliance offerings grouped under categories of Global, US Government, Industry, and Regional." border="false":::
 
