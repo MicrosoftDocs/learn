@@ -2,7 +2,7 @@ Let's start with a few definitions and a look at *security information and event
 
 ## What is security incident and event management (SIEM)?
 
-SIEM is a tool that an organization uses to collect, analyze, and perform security operations on its computer systems. Those systems can be hardware appliances, applications, or both.
+A SIEM system is a tool that an organization uses to collect, analyze, and perform security operations on its computer systems. Those systems can be hardware appliances, applications, or both.
 
 In its simplest form, a SIEM system enables you to:
 
