@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Understand the language basics
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/3-language-basics.md)]

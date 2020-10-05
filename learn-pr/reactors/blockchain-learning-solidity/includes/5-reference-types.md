@@ -4,15 +4,15 @@ Unlike value types, which always pass an independent copy of the value, referenc
 
 ## Data location
 
-When you use a reference type, you must explicitly provide the data storage location for the type. The following options can be use to specify the data location where the type is stored:
+When you use a reference type, you must explicitly provide the data storage location for the type. The following options can be used to specify the data location where the type is stored:
 
-- **memory:**  
+- `memory:`  
   - The location where function arguments are stored.
   - Has a lifetime limited to external function call.
-- **storage:**
+- `storage:`
   - The location where state variables are stored.
   - Has a lifetime limited to the contract lifetime.
-- **calldata:**
+- `calldata:`
   - The location where function arguments are stored.
   - Required for parameters of external functions, but can also be used for other variables.
   - Has a lifetime limited to external function call.
@@ -91,7 +91,7 @@ struct Items_Schema {
 
 Mappings are key value pairs that are encapsulated or packaged together. Mappings are closest to dictionaries or objects in JavaScript. You typically use mappings to model real-world objects and perform faster data lookups. The values could take on various types, including complex types like structs, making this type flexible and human readable.
 
-The following shows a code example that uses the struct `Items_Schema` and saves a list of items represented by the `Items_Schema` as a dictionary. In this way, the mapping mimics a database.
+The following code example uses the struct `Items_Schema` and saves a list of items represented by the `Items_Schema` as a dictionary. In this way, the mapping mimics a database.
 
 ```solidity
     contract Items {

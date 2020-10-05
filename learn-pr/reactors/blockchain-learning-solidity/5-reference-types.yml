@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore reference types
-durationInMinutes: 4
+durationInMinutes: 6
 content: |
   [!include[](includes/5-reference-types.md)]
