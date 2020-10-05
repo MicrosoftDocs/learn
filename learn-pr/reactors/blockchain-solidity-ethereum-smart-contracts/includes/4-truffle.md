@@ -27,7 +27,6 @@ The output shows the installed version and presents the list of commands availab
 ## Get started with Truffle
 
 
-You can find the test in *test/HelloBlockchain.js*. Look through the test file to try to understand what's being tested.
 
 1. In Visual Studio Code, go to **Terminal** > **New Terminal**.
 1. In the terminal, run `truffle compile`. Wait for the source files to compile successfully.

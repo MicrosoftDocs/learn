@@ -5,7 +5,7 @@ In this part, we write a new JavaScript test for our shipping contract. We could
 Let's begin by creating a new test file.
 
 1. Go to **Terminal** > **New Terminal**.
-1. In the new terminal, type `truffle create test ShippingStatus`. In our folder, a test JavaScript file is created. It's called *ShippingStatus.js*. 
+1. In the new terminal, type `truffle create test ShippingStatus`. This creates a new file in the test folder called called *ShippingStatus.js*.  
 1. Replace the code in the file by pasting the following code:
 
     ```javascript
@@ -53,7 +53,7 @@ Let's begin by creating a new test file.
 
 ### Event test
 
-We'll use the truffle-assertions package to test our events. By using this package, we can assert that our events are emitted during the transaction.
+We'll use the truffle-assertions package to test the events that are sent in the contract. By using this package, we can assert that our events are emitted during the transaction.
 
 1. In the terminal, install the library by typing `npm install truffle-assertions`.
 1. Add the following code to the test file on line 2, after you require the ShippingStatus contract:
