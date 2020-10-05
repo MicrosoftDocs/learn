@@ -26,7 +26,6 @@ The output shows the installed version and presents the list of commands availab
 
 ## Get started with Truffle
 
-Now that Truffle is installed, let's use it to run the tests that were generated as part of newSolidityProject.
 
 You can find the test in *test/HelloBlockchain.js*. Look through the test file to try to understand what's being tested.
 
