@@ -4,11 +4,11 @@ The Tailwind Traders team is working on quite a variety of projects! In addition
 
 As requirements evolve, it's important for the team to understand how the SLA for each service it chooses affects the overall performance guarantees of its applications.
 
-For example, the main website must be available as close to 100 percent of the time as possible. To accomplish that, Tailwind Traders might deploy extra instances of the same virtual machine across different availability zones in the same Azure region. Doing so helps ensure that if one zone is impacted, virtual machine instances in the other zone can pick up the load.
+For example, the main website must be available as close to 100 percent of the time as possible. To accomplish that, Tailwind Traders might deploy extra instances of the same virtual machine across different availability zones in the same Azure region. Doing so helps ensure that if one zone is affected, virtual machine instances in the other zone can pick up the load.
 
 The Special Orders application might have more flexible tolerances. As long as retail employees don't lose data and can quickly regain network access, the Special Orders application might have a lower SLA. Here, the team can choose to include less redundancy in its design.
 
-When defining your SLA requirements, be sure to consider both your business needs as well as the time it takes to restore a component after a failure. Also consider how the use of preview services and preview features might affect your systems in production.
+When defining your SLA requirements, be sure to consider both your business needs and the time it takes to restore a component after a failure. Also consider how the use of preview services and preview features might affect your systems in production.
 
 ## Next steps
 
