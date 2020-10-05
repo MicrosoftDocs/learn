@@ -1,27 +1,25 @@
-Another common type you'll deal with when writing contracts are reference types.
+When writing contracts, you should also understand reference types.
 
-While value types always pass an independent copy of the value, reference types provide a data location to the value. The three reference types are: **structs**, **arrays**, and **mappings**.
-
-When using a reference type, you must explicitly provide the data area where the type is stored in a data location.
+Unlike value types, which always pass an independent copy of the value, reference types provide a **data location** to the value. The three reference types are: **structs**, **arrays**, and **mappings**.
 
 ## Data location
 
-Every reference type specifies a data location to where the data is stored. The three options for specifying the data area where the type is stored are:
+When you use a reference type, you must explicitly provide the data storage location for the type. The following options can be used to specify the data location where the type is stored:
 
-- **memory:**  
-  - The location where contains function arguments are stored
-  - Has a lifetime limited to external function call
-- **storage:**
-  - The location where state variables are stored
-  - Has a lifetime limited to the contract lifetime
-- **calldata:**
-  - The location where contains function arguments are stored
-  - It is required for parameters of external functions but can also be used for other variables
-  - Has a lifetime limited to external function call
+- `memory:`  
+  - The location where function arguments are stored.
+  - Has a lifetime limited to external function call.
+- `storage:`
+  - The location where state variables are stored.
+  - Has a lifetime limited to the contract lifetime.
+- `calldata:`
+  - The location where function arguments are stored.
+  - Required for parameters of external functions, but can also be used for other variables.
+  - Has a lifetime limited to external function call.
 
-The reference type always create an independent copy of the data.
+Reference types always create an independent copy of the data.
 
-Example:
+Here's an example of how to use a reference type:
 
 ```solidity
 contract C {
@@ -42,13 +40,13 @@ contract C {
 
 ## Arrays
 
-Arrays are a way to store similar data in a set data structure. They can either have a fixed or dynamic size. Their indices start at 0.
+Arrays are a way to store similar data in a set data structure. Arrays can either have a fixed or dynamic size. Their indices start at 0.
 
-The type of an array of fixed size `k` and element type `T` is written as `T[k]`, and an array of dynamic size as `T[]`.
+To create an array of fixed size `k` and element type `T`, you'd write `T[k]`. For a dynamic size array, you'd write `T[]`.
 
-Array elements can be of any type like **uint**, **memory**, or **bytes**, and can also include **mappings** or **structs**.
+Array elements can be of any type. For example, they can contain **uint**, **memory**, or **bytes**. Arrays can also include **mappings** or **structs**.
 
-Examples:
+The following example shows array creation:
 
 ```solidity
 uint[] itemIds; // Declare a dynamic sized array called itemIds
@@ -58,13 +56,13 @@ uint[] prices = [1, 2, 3]; // same as above
 
 ### Array members
 
-The following members are available to get information about and manipulate arrays:
+The following members can both manipulate and get information about arrays:
 
 - **length**: Get the length of an array
 - **push()**: Append an element at the end of the array
 - **pop**: Remove an element from the end of an array
 
-Examples:
+Here are some examples:
 
 ```solidity
 // Create a dynamic byte array
@@ -75,7 +73,7 @@ itemNames.length; // 1
 
 ## Structs
 
-Structs are custom types that a user can define to represent real world objects. These are typically used as schema or represent records.
+Structs are custom types that a user can define to represent real-world objects. Structs are typically used as schema or to represent records.
 
 Examples:
 
@@ -91,11 +89,9 @@ struct Items_Schema {
 
 ## Mapping types
 
-Mappings are key value pairs that are encapsulated, or packaged together. These are closest to dictionaries or Objects in JavaScript. We typically use mappings to model real-world objects and do faster lookups of data. The values could take on various types, including complex types like structs, making this type flexible and human readable to work with.
+Mappings are key value pairs that are encapsulated or packaged together. Mappings are closest to dictionaries or objects in JavaScript. You typically use mappings to model real-world objects and perform faster data lookups. The values could take on various types, including complex types like structs, making this type flexible and human readable.
 
-Here is a code example that uses the struct Items_Schema and saves a list of items represented by the Items_Schema as a dictionary. This somewhat mimics a database.
-
-Notice the mapping signature `uint256 => Items_Schema`. This indicates that the keys are of type unsigned integer and the values are Items_Schema struct.
+The following code example uses the struct `Items_Schema` and saves a list of items represented by the `Items_Schema` as a dictionary. In this way, the mapping mimics a database.
 
 ```solidity
     contract Items {
@@ -115,3 +111,6 @@ Notice the mapping signature `uint256 => Items_Schema`. This indicates that the 
     }
 }
 ```
+
+> [!NOTE]
+> The mapping signature `uint256 => Items_Schema` indicates that the keys are an unsigned integer type and the values are `Items_Schema` struct.
