@@ -1,17 +1,17 @@
-The first generation of the Tailwind Trader's ecommerce website was available exclusively in English.  However, the Marketing department sponsored a demographics study for their brick-and-mortar locations.  On average, only 80% of potential customers spoke English, and that proportion falls to 50% in some neighborhoods.  The Marketing department sees the addition of multiple languages as a wonderful opportunity to serve non-English speakers with the same online ecommerce experience as English speakers. 
+The first generation of the Tailwind Traders e-commerce website was available exclusively in English. However, when the Marketing team sponsored a demographics study for the company's brick-and-mortar locations, it found that, on average, only 80 percent of potential customers speak English. In some neighborhoods, that number falls to 50 percent. The team sees the addition of multiple languages as a wonderful opportunity to serve non-English speakers with the same online e-commerce experience as English speakers. 
 
-## Which service should we choose?
+## Which service should you choose?
 
-Just like we did in the previous unit, let's apply the decision criteria we learned about in the previous unit to find the right option.
+As in the preceding unit, apply the decision criteria you learned about earlier to find the right option.
 
-First, is Tailwind Traders building a virtual agent that interfaces with humans via natural language? No, so Azure Bot Service is not a good candidate for this scenario.  However, should Tailwind Traders ever implement a customer service agent, they may want to consider using the Translator's APIs to provide real-time translation to help customers who are not English speakers.
+First, is Tailwind Traders building a virtual agent that interfaces with humans via natural language? No, it is not, so Azure Bot Service is not a good candidate for this scenario.  However, should Tailwind Traders ever implement a customer service agent, it might want to consider using the Translator API to provide real-time translation to help customers who are not English speakers.
 
-Second, does Tailwind Traders need a service that can understand the content and meaning of images, video, audio, or translate text into a different language? Yes! Translating textual content from one language into another is a general purpose task that is made easy using Azure Cognitive Service's Translator service. It's easy to integrate in your applications, websites, tools, and solutions. It allows you to add multi-language user experiences in more than 60 languages, and can be used on any hardware platform with any operating system for text-to-text language translation. 
+Second, does Tailwind Traders need a service that can understand the content and meaning of images, video, audio, or translate text into a different language? Yes, it does. Translating textual content from one language into another is a general purpose task that you can simplify by using the Azure Cognitive Services Translator service. The service is easy to integrate into your applications, websites, tools, and solutions. It allows you to add multilanguage user experiences in more than 60 languages, and you can use it on any hardware platform with any operating system for text-to-text language translation. 
 
 Azure Cognitive Services is likely the best option for this scenario, but let's continue applying the decision criteria to make sure.
 
-Third, does Tailwind Traders need to predict user behavior or provide users with personalized recommendations? No, the Azure Cognitive Services Personalizer is not a good candidate for this scenario.
+Third, does Tailwind Traders need to predict user behavior or provide users with personalized recommendations? No, it doesn't, so the Azure Cognitive Services Personalizer is not a good candidate for this scenario.
 
-Finally, will the Tailwind Trader app predict future outcomes based on private historical data? No. While it would be possible to create a Machine Learning model to perform multi-language translation, it would be expensive and time consuming for Tailwind Traders to attempt to do build translation models themselves. They do not have the deep learning competency, nor the linguistic data required to train the models.
+Finally, will the Tailwind Traders app need to predict future outcomes based on private historical data? No. Although it's possible to create a Machine Learning model for multilanguage translation, it would be expensive and time consuming for Tailwind Traders to attempt to build translation models themselves. The team has neither the deep learning competency nor the linguistic data that's required to train the models.
 
-Now that we've examined all of the expert criteria, we can confidently select Cognitive Services as the best product option for this scenario.
+Now that you've examined all the expert criteria, you can confidently select Cognitive Services as the best product option for this scenario.
