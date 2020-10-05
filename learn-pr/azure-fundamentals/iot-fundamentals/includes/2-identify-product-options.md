@@ -1,4 +1,4 @@
-IoT is the ability of devices to gather and then relay information for data analysis.  Smart devices are equipped with sensors that collect data.  A few common sensors that measure attributes of the physical world include:
+IoT enables devices to gather and then relay information for data analysis.  Smart devices are equipped with sensors that collect data.  A few common sensors that measure attributes of the physical world include:
 
 - Environmental sensors that capture temperature and humidity levels.
 - Barcode, QR code, or optical character recognition (OCR) scanners.
@@ -16,11 +16,11 @@ By using Azure IoT services, devices that are equipped with these kinds of senso
 
 Let's suppose your company manufactures and operates smart refrigerated vending machines.  What kinds of information would you want to monitor?  You might want to ensure that:
 - Each machine is operating without any errors.
-- The machine hasn't been compromised.
-- The machine's refrigeration system is keeping the contents within a certain temperature range.
-- You'll be notified when products reach a certain inventory level so you can restock the machine.  
+- The machines haven't been compromised.
+- The machines' refrigeration systems are keeping their contents within a certain temperature range.
+- You're notified when products reach a certain inventory level so you can restock the machines.  
 
-If you assume that the hardware of your vending machine can collect and send this information in a standard message, the messages each machine sends can be received, stored, organized, and displayed by using Azure IoT services.
+If the hardware of your vending machines can collect and send this information in a standard message, the messages each machine sends can be received, stored, organized, and displayed by using Azure IoT services.
 
 The data that's collected from these devices could be combined with Azure AI services to help you predict:
 - When machines need proactive maintenance.
@@ -32,7 +32,7 @@ Many services can assist and drive end-to-end solutions for IoT on Azure.
 
 [Azure IoT Hub](https://azure.microsoft.com/services/iot-hub/?azure-portal=true) is a managed service that's hosted in the cloud and that acts as a central message hub for bi-directional communication between your IoT application and the devices it manages. You can use Azure IoT Hub to build IoT solutions with reliable and secure communications between millions of IoT devices and a cloud-hosted solution back end. You can connect virtually any device to your IoT hub.
 
-IoT Hub supports communications both from the device to the cloud and from the cloud to the device. It also supports multiple messaging patterns, such as device-to-cloud telemetry, file upload from devices, and request-reply methods to control your devices from the cloud. After the IoT hub receives messages from a device, it can route that message to other Azure services.
+The IoT Hub service supports communications both from the device to the cloud and from the cloud to the device. It also supports multiple messaging patterns, such as device-to-cloud telemetry, file upload from devices, and request-reply methods to control your devices from the cloud. After an IoT hub receives messages from a device, it can route that message to other Azure services.
 
 From a cloud-to-device perspective, IoT Hub allows for *command and control*. That is, you can have either manual or automated remote control of connected devices, so you can instruct the device to open valves, set target temperatures, restart stuck devices, and so on.
 
@@ -56,12 +56,12 @@ A key part of IoT Central is the use of device templates.  By using  a device te
 
 Azure Sphere comes in three parts:
 
-- The first part is the Azure Sphere micro-controller unit(MCU), which is responsible for processing the operating system and signals from attached sensors. The following image displays the Seeed Azure Sphere MT3620 Development Kit MCU, one of several different starter kits that are available for prototyping and developing Azure Sphere applications.
+- The first part is the Azure Sphere micro-controller unit (MCU), which is responsible for processing the operating system and signals from attached sensors. The following image displays the Seeed Azure Sphere MT3620 Development Kit MCU, one of several different starter kits that are available for prototyping and developing Azure Sphere applications.
 
   ![Screenshot of an Azure Sphere development kit micro-controller unit.](../media/2-identify-product-options-01.png)
 
 - The second part is a customized Linux operating system (OS) that handles communication with the security service and can run the vendor's software.
 
-- The third part is Azure Sphere Security Service, also known as AS3.  Its job is to make sure that the device has not been maliciously compromised. When the device attempts to connect to Azure, it first must authenticate itself per-device, which it does by using certificate-based authentication. If it authenticates successfully, AS3 checks to ensure that the device has not been tampered with. After it has established a secure channel of communication, AS3 will push any OS or approved customer-developed software updates to the device.
+- The third part is Azure Sphere Security Service, also known as AS3.  Its job is to make sure that the device has not been maliciously compromised. When the device attempts to connect to Azure, it first must authenticate itself, per device, which it does by using certificate-based authentication. If it authenticates successfully, AS3 checks to ensure that the device hasn't been tampered with. After it has established a secure channel of communication, AS3 pushes any OS or approved customer-developed software updates to the device.
 
-After the Azure Sphere system has validated the authenticity of the device and authenticated it, the device can interact with other Azure IoT services, sending telemetry and error information.
+After the Azure Sphere system has validated the authenticity of the device and authenticated it, the device can interact with other Azure IoT services by sending telemetry and error information.
