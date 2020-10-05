@@ -13,4 +13,4 @@ By the end of this module, you'll be able to:
 
 ## Prerequisites
 
-- Basic knowledge of Azure Storage which includes the use of storage accounts and Azure Blobs
+- Basic knowledge of Azure Storage, which includes the use of storage accounts and Azure Blobs

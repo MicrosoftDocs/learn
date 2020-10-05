@@ -58,11 +58,11 @@ GZRS and RA-GZRS are currently available in the following regions:
 
 ### Paired regions
 
-A paired region is where an Azure region is paired with another in the same geographical location to protect against regional outage. Paired regions are used with GRS and GZRS replication types. We recommended you use region pairing for storage whenever possible.
+A paired region is where an Azure region is paired with another in the same geographical location to protect against regional outage. Paired regions are used with GRS and GZRS replication types.
 
 ![Illustration shows hierarchy of geography, regional pair, region, and datacenters.](../media/2-paired-regions.png)
 
-Here's a list showing some of the regions that are paired together. You can find more on the official Azure site.
+Here's a list showing some of the regions that are paired together.
 
 |Geography|Paired regions||
 |---------|---------|---------|
@@ -78,7 +78,7 @@ Here's a list showing some of the regions that are paired together. You can find
 
 ## Use cases for each replication type ##
 
-Below is a table that summarizes how many copies you get with each replication type, and when you should use it.
+The following table summarizes how many copies you get with each replication type, and when you should use it.
 
 |Replication type  |Copies  | Use case  |
 |---------|---------|---------|
@@ -91,7 +91,7 @@ Below is a table that summarizes how many copies you get with each replication t
 
 ## Switch replication strategies
 
-You can switch your replication strategy for any storage account. The process you use depends on the current replication strategy for your account. For example, if you want to migrate from an storage account with LRS, you have two options:
+You can switch your replication strategy for any storage account. The process you use depends on the current replication strategy for your account. For example, if you want to migrate from a storage account with LRS, you have two options:
  - Manually move or copy your data to a new account with GZRS.
  - Switch the replication type to GRS/RA-GRS first and then create a request with Azure Support for a live migration to GZRS.
 
@@ -133,7 +133,7 @@ Manual migration is more flexible than live migration. For example, because you 
 
 To do a manual migration, you could use the AzCopy utility, or one of the various third-party tools available.
 
-For example, through AzCopy, you can run the command below in your terminal, which copies all blobs, directories, and containers in your storage account to another one.
+For example, through AzCopy, you can run the following command in your terminal, which copies all blobs, directories, and containers in your storage account to another one.
 
 ```powershell
 azcopy copy 'https://<source-storage-account-name>.blob.core.windows.net/?<your-SAS-token>'

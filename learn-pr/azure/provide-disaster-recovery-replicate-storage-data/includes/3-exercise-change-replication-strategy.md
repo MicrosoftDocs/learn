@@ -85,7 +85,7 @@ Your company uploads its music files as blobs in the container. A blob can repre
     cat > song.mp3
     ```
 
-1. An empty file is created that you can write to. Type "This is a song!", press <kbd>ENTER</kbd>, then press <kbd>CTRL+D</kbd> .
+1. An empty file is created that you can write to. Type "This is a song!", press <kbd>ENTER</kbd>, then press <kbd>CTRL+D</kbd>.
 
 1. Run the following command to see the contents of your `song.mp3` file:
 

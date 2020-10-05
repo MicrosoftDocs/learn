@@ -3,7 +3,7 @@ uid: learn.azure.provide-disaster-recovery-replicate-storage-data
 metadata:
   title: Provide disaster recovery by replicating storage data across regions and failing over to secondary location
   description: Learn how to provide disaster recovery by replicating storage data across regions and failing over to secondary location.
-  ms.date: 10/05/2020
+  ms.date: 10/06/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial

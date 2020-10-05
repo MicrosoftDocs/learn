@@ -25,7 +25,7 @@ The process is as follows:
 
 1. **Failover is started**
 
-    Failovers can be started by you or by Microsoft, if there's a significant disaster in a region. The latter is called a Microsoft-managed failover. During the failover process, the Azure Storage service starts to point your users and clients to the secondary region instead of the primary region.
+    Failovers can be started by you or by Microsoft. The latter is called a Microsoft-managed failover. During the failover process, the Azure Storage service starts to point your users and clients to the secondary region instead of the primary region.
 
     ![Illustration shows a failover from the primary region to secondary region.](../media/4-failover-to-secondary.png)
 
@@ -40,11 +40,11 @@ The process is as follows:
 
 ### Data loss
 
-When you fail over your account, you'll generally face some form of data loss. This loss happens because your data is copied asynchronously. When data is copied in this way, there's always a delay before it's copied from the primary region, and written to the secondary. It might be that your most recent writes haven't been copied to your secondary region yet, before your primary failed.
+When you fail over your account, you'll generally have some data loss. This loss happens because your data is copied asynchronously. When data is copied in this way, there's always a delay before it's copied from the primary region, and written to the secondary. It might be that your most recent writes haven't been copied to your secondary region yet, before your primary failed.
 
 Also, when you start a failover, data in your primary region is lost. Any data that wasn't written to the secondary before you started the failover is also lost.
 
-Use the **Last Sync Time** property to understand the extent of data loss you could face. This property shows the most recent point in time that data from your primary region was written to the secondary. All data written to the primary before this point in time is guaranteed to be available on the secondary. Data then written to the primary might not be available on the secondary, and may be considered lost.
+Use the **Last Sync Time** property to understand the extent of data loss you may have. This property shows the most recent point in time that data from your primary region was written to the secondary. All data written to the primary before this point in time is guaranteed to be available on the secondary. Data then written to the primary might not be available on the secondary, and may be considered lost.
 
 You can find the **Last Sync Time** through tools like the Azure portal, Azure CLI, or Azure PowerShell. For example, to find the **Last Sync Time** through the Azure portal, you view it before confirming you want to start a failover.
 
@@ -52,6 +52,6 @@ You can find the **Last Sync Time** through tools like the Azure portal, Azure C
 
 ### Track Azure Storage service outage
 
-We recommend you track the health status of Azure Storage and other Azure services by using the Azure Service Health Dashboard. You can subscribe to these updates with your applications and configure applications to handle or report issues to you.
+We recommend you track the health status of Azure Storage and other Azure services by using the Azure Service Health. You can subscribe to these updates with your applications and configure applications to handle or report issues to you.
 
-![Screenshot of the Service Health > Health history that lists issues that impact your subscription.](../media/4-service-health-dashboard.png)
+:::image type="content" source="../media/4-service-health-dashboard.png" alt-text="Screenshot of Azure Service Health > Health history that lists issues that impact your subscriptions.":::
