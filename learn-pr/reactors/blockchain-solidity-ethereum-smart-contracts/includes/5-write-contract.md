@@ -61,7 +61,7 @@ To start this exercise:
 
 ## Add a migration
 
-Now let's add a migration so that we can deploy the contract. To deploy our smart contract to the Ethereum network, we need to add another migration file.
+Now let's add a migration file so that we can deploy the contract to the Ethereum network.
 
 1. In the Explorer pane, hover over the **migrations** folder and choose **New File**. Name the file *3_deploy_contracts.js*.
 2. Add this code to the file:
