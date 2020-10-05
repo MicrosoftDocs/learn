@@ -1,4 +1,4 @@
-Tailwind Traders decides that an SLA of 99.9 percent is acceptable for the Special Orders application. Recall that this gives them an estimated downtime of 10.1 minutes per week.
+Tailwind Traders decides that an SLA of 99.9 percent is acceptable for the Special Orders application. Recall that this gives the company an estimated downtime of 10.1 minutes per week.
 
 Now you need to design an efficient and reliable solution for this application on Azure, keeping that application SLA in mind. You'll select the Azure products and services you need, and provision your cloud resources according to those requirements.
 
