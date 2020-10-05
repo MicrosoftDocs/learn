@@ -11,7 +11,7 @@ metadata:
 title: Choose the best Azure serverless technology for your compute scenario
 summary: Examine Azure's serverless technologies and choose the right service for your scenario.
 abstract: |
-  By the time you finish this module, you will be able to:
+  After completing this module, you'll be able to:
   - Choose the right serverless computing technology for your business scenario.  
 prerequisites: |
   - You should understand the idea of orchestration and workflows.

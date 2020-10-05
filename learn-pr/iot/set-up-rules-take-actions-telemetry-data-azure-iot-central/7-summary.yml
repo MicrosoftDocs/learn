@@ -28,7 +28,7 @@ quiz:
       isCorrect: false
       explanation: We don't render any particular background in this module.
 
-  - content: 'What three components make up a Condition for a rule. The rule is not time-aggregated?'
+  - content: 'What three components make up a Condition for a rule that is not time-aggregated?'
     choices: 
     - content: 'Telemetry, Operator, Value'
       isCorrect: true

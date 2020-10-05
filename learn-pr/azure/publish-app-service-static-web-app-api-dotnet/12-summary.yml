@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-and-api-dotnet.12-summary
+metadata:
+  title: Summary
+  description: Summary of the app
+  ms.date: 09/22/2020
+  author: aaronpowell
+  ms.author: aapowell
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/12-summary.md)]
