@@ -14,7 +14,7 @@ In the context of the enterprise-scale architecture, centralized logging is prim
 
 ## Auditing and log retention
 
-The activity log is a platform login Azure that provides insight into subscription-level events. The activity log contains all write operations (PUT, POST, DELETE) for subscription resources. These operations includes such information as when a resource is modified or when a VM is started. The activity log can be viewed in the Azure portal or entries can be retrieved with PowerShell and CLI. Subscription diagnostic settings should be configured via policy to send log data to the centralized Log Analytics workspace. This configuration provides a central view across subscriptions and provides the ability to retain log data past the default 90 days.
+The activity log is a platform log in Azure that provides insight into subscription-level events. The activity log contains all write operations (PUT, POST, DELETE) for subscription resources. These operations includes such information as when a resource is modified or when a VM is started. The activity log can be viewed in the Azure portal or entries can be retrieved with PowerShell and CLI. Subscription diagnostic settings should be configured via policy to send log data to the centralized Log Analytics workspace. This configuration provides a central view across subscriptions and provides the ability to retain log data past the default 90 days.
 
 When a customer requires log data retention greater than two years, the subscription diagnostic setting should also be configured for export to Azure Storage. Use immutable storage with WORM (write once, read many) policy to make data non-erasable and non-modifiable for a user-specified interval.
 
