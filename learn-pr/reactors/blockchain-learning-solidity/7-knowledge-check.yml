@@ -18,9 +18,9 @@ quiz:
     - content: "Ethereum blockchain"
       isCorrect: false
       explanation: "Incorrect. *Ethereum blockchain* is the name of the platform that Solidity targets. However, tests aren't run on Ethereum blockchain."
-    - content: "The Ethereum virtual machine"
+    - content: "The Ethereum Virtual Machine"
       isCorrect: true
-      explanation: "Correct. Solidity runs contracts on the Ethereum virtual machine. This sandboxed environment self-contains all the transaction history for the contracts."
+      explanation: "Correct. Solidity runs contracts on the Ethereum Virtual Machine. This sandboxed environment self-contains all the transaction history for the contracts."
     - content: "Any virtual machine"
       isCorrect: false
       explanation: "Incorrect. A virtual machine is an option to run tests on, but a specific type of virtual machine is used for Solidity smart contracts."
