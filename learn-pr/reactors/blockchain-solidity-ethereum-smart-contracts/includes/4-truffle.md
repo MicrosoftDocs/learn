@@ -6,7 +6,7 @@ Truffle provides the following benefits:
 
 - Smart contract building, compilation, deployment, and testing
 - Network management for deploying to public and private networks
-- Package management for dependencies
+- Package management for project dependencies
 - Interactive console for direct contract communication
 - Configurable build pipeline
 
