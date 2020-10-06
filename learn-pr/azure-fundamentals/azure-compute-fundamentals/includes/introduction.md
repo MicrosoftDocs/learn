@@ -1,4 +1,4 @@
-Imagine that you work as a development lead at Tailwind Traders, a company that specializes in hardware manufacturing. Your management team tells you that the company's website has been having a difficult time keeping up with the application demands. They want you to investigate a solution. The front-end web servers are operating near capacity during peak periods of the day, and you need to get a solution in place quickly. But there's a problem. You don't have any free servers to scale out your application.
+Imagine that you work as a development lead at Tailwind Traders, a company that specializes in hardware manufacturing. Your management team tells you that the company's website has been having a difficult time keeping up with the application demands. The team wants you to investigate a solution. The front-end web servers are operating near capacity during peak periods of the day, and you need to get a solution in place quickly. But there's a problem. You don't have any free servers to scale out your application.
 
 ![Tailwind Traders company logo.](../../shared/media/tailwind-traders-logo.png)
 
