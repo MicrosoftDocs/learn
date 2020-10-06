@@ -106,23 +106,15 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
         > [!NOTE]
         > Startup logging with Application Insights [isn't supported](/aspnet/core/fundamentals/logging/#log-during-host-construction), so it must be accomplished using another logger. This example uses Serilog with the Application Insights sink, passing the instrumentation key. Although this is the simplest way to enable logging to Application Insights during startup, it can lead to losing correlation between metrics and log traces.
 
-1. Run the following command:
+1. Run the following commands to build the catalog service:
 
     ```bash
-    pushd src/Services/Catalog/Catalog.API
+    pushd src/Services/Catalog/Catalog.API && \
+        dotnet build && \
+        popd
     ```
 
-    The working directory is now *~/clouddrive/aspnet-learn/src/src/Services/Catalog/Catalog.API/*.
-
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
-
-1. Run the following command:
-
-    ```bash
-    popd
-    ```
-
-    The working directory is now *~/clouddrive/aspnet-learn/src/*.
+    The build succeeds with no warnings. If the build fails, check the output for troubleshooting information.
 
 ## Build and deploy modified container images
 
