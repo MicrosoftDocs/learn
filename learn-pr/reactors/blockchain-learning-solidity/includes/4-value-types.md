@@ -96,20 +96,12 @@ Enums allow you to create a user-defined type in Solidity. It's called user-defi
 An **enum** could be used, for example, to present different statuses for an item. You can think of enums as representing multiple-choice answers where all the values are pre-defined, and you have to select one. Enums can be declared in contract or library definitions.
 
 ```solidity
-enum StateType {
-    ItemAvailable,
-    ItemBought
+enum Status { 
+    Pending,
+    Shipped,
+    Delivered 
 }
 
-StateType public State;
-
-constructor() public {
-    State = StateType.ItemAvailable;
-}
-```
-
-```solidity
-enum Status { Pending, Shipped, Delivered }
 Status public status;
 
 constructor() public {
