@@ -2,7 +2,7 @@
 uid: learn.azure.build-web-api-nodejs-express
 metadata:
   title: Build a web API with Node.js and Express 
-  description: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging and authentication/authorization.
+  description: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging and authentication/authorization. Use JavaScript/TypeScript with Express to create a Node.js web server with Visual Studio Code.
   ms.date: 02/06/2020
   author: "softchris"
   ms.author: "chnoring"
@@ -17,11 +17,12 @@ abstract: |
   - Configure middleware to control how a request is handled
   - Respond to HTTP requests with different types of content like text and JSON
   - Send data to an Express endpoint
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/build-web-api-nodejs-express.svg
 levels:
 - beginner
 roles:
 - developer
+- student
 products:
 - azure
 prerequisites: |

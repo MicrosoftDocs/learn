@@ -2,7 +2,7 @@ Threat modeling provides engineers with the ability to graphically describe thei
 
 However, threat models can either get too complex or too high level depending on the system you're building and the required context.
 
-In this module, you learned about prioritizing your issues and applying the right layer of security controls based on type and function.
+In this module, you learned to prioritize your issues and applying the right layer of security controls based on type and function.
 
 In this module, you:
 

@@ -4,9 +4,9 @@ title: Walkthrough - Create a Virtual Machine with the Command Line Interface
 metadata:
   title: Walkthrough - Create a VM with the CLI
   description: "Walkthrough - Create a VM with the CLI"
-  ms.date: 06/27/2020
+  ms.date: 09/20/2020
   author: wwlpublish
-  ms.author: roberts
+  ms.author: cwsuseng
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true

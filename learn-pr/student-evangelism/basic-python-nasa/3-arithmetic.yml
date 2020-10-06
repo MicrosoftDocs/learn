@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.basic-python-nasa.3-arithmetic
+metadata:
+  title: Exercise - Code basic arithmetic in Python for future data analysis
+  description: Arithmetic in programming.
+  ms.date: 10/04/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Code basic arithmetic in Python for future data analysis
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-arithmetic.md)]

@@ -57,7 +57,7 @@ In this task, we will create two virtual machines in the virtual network.
    | Resource group |  **<rgn>[sandbox resource group name]</rgn>** |
    | Virtual machine name | **vm1**|
    | Region | **(US) East US** |
-   | Image | **Windows Server 2019 Datacenter** |
+   | Image | **Windows Server 2019 Datacenter - Gen1** |
    | Username| **azureuser** |
    | Password| **Pa$$w0rd1234** |
    | Public inbound ports| Select **Allow selected ports**  |
@@ -143,5 +143,6 @@ In this task, we will allow ICMP connections and test whether the virtual machin
 Congratulations! You have configured and deployed two virtual machines in a virtual network. You have also configured the Windows firewall so one of the virtual machines allows incoming ping requests. 
 
 > [!NOTE]
-> This lab is using the **Azure Sandbox**, so all you need to do is close your Azure Portal to shutdown all the resources created in this lab.
+> This lab is using the **Azure Sandbox**, so all you need to do is close your Azure Portal to shutdown all the resources created in this lab.  Please do not delete the resource group provided.
+> 
 > If you had used your own subscription, to avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.

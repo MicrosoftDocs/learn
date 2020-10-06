@@ -1,4 +1,4 @@
-By manually scaling out and back in again, you can to respond to expected increases and decreases in traffic. Scaling out has the additional benefit of increasing availability because of the increased number of instances of the web app. A failure of one instance doesn't make the web app unavailable. 
+By manually scaling out and back in again, you can respond to expected increases and decreases in traffic. Scaling out has the additional benefit of increasing availability because of the increased number of instances of the web app. A failure of one instance doesn't make the web app unavailable. 
 
 In the hotel reservation system, you can scale out before an anticipated seasonal influx. You can scale back in when the season is over and the number of booking requests is reduced.
 

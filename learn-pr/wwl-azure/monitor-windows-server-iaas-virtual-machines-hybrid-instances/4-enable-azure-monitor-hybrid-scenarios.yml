@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.enable-azure-monitor-hybrid-scenarios
+title: Enable Azure Monitor in hybrid scenarios
+metadata:
+  title: Enable Azure Monitor in hybrid scenarios
+  description: "Enable Azure Monitor in hybrid scenarios"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-enable-azure-monitor-hybrid-scenarios.md)]

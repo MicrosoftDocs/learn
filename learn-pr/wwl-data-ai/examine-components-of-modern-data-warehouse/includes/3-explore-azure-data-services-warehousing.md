@@ -1,6 +1,6 @@
 As a data engineer working at an organization with a large manufacturing operation, you want to understand more about the components that form a modern data warehouse. This information will help you determine which elements most closely meet your organization's requirements.
 
-In this unit, you'll lean more about the data services that Azure provides. These services enable you to combine data from multiple sources, reformat it into analytical models, and save these models for subsequent querying, reporting, and visualization.
+In this unit, you'll learn more about the data services that Azure provides. These services enable you to combine data from multiple sources, reformat it into analytical models, and save these models for subsequent querying, reporting, and visualization.
 
 ## What is Azure Data Factory?
 
@@ -93,7 +93,7 @@ Use Azure Synapse Analytics for:
 - Very high volumes of data (multi-terabyte to petabyte sized datasets).
 - Very complex queries and aggregations.
 - Data mining, and data exploration.
-- Complex ELT operations. *ELT* stands for *Extract, Transform, and Load*, and refers to the way in which you can retrieve raw data from multiple sources, convert this data into a standard format, and store it. 
+- Complex ETL operations. *ETL* stands for *Extract, Transform, and Load*, and refers to the way in which you can retrieve raw data from multiple sources, convert this data into a standard format, and store it. 
 - Low to mid concurrency (128 users or fewer).
 
 Use Azure Analysis Services for:

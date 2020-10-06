@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.integrate-azure-monitor-with-microsoft-operations-manager
+title: Integrate Azure Monitor with Microsoft Operations Manager
+metadata:
+  title: Integrate Azure Monitor with Microsoft Operations Manager
+  description: "Integrate Azure Monitor with Microsoft Operations Manager"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-integrate-azure-monitor-microsoft-operations-manager.md)]

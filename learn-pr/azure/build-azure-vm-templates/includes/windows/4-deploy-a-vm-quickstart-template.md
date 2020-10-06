@@ -49,19 +49,24 @@ First, we'll create a _resource group_ to hold all the things that we need to cr
 
 Recall that a Resource Manager template is divided into sections, one of them being **Parameters**.
 
-Near the start of the template, you see a section named `parameters`. This section defines these five parameters:
+Near the start of the template, you see a section named `parameters`. This section defines parameters like:
 
 * `adminUsername`
 * `adminPassword`
 * `dnsLabelPrefix`
-* `windowsOSVersion`
+* `OSVersion`
+* `vmSize`
 * `location`
 
-:::image type="content" source="../../media/4-armviz-params-windows.png" alt-text="The source code for the template's parameters section, highlighting each parameter name." loc-scope="other"::: <!-- Azure Resource Manager Visualizer, no-loc -->
+:::image type="content" source="../../media/4-armviz-params-windows.png" alt-text="Screenshot of the source code for part of the template's parameters section." loc-scope="other"::: <!-- Azure Resource Manager Visualizer, no-loc -->
 
-Two of these parameters &ndash; `windowsOSVersion` and `location` &ndash; have default values. The default value for `windowsOSVersion` is "2016-Datacenter" and the default value for `location` is the parent resource group's location.
+Some of the parameters in the template, like `OSVersion`, `vmSize` and `location`,  have default values. The following screenshot shows that the default value for `OSVersion` is "2019-Datacenter" and `location` is the parent resource group's location.
 
-Let's keep these parameters at their default values. For the remaining three parameters, you have two options:
+:::image type="content" source="../../media/4-armviz-params-defaults-windows.png" alt-text="Screenshot of that shows the code for OSVersion, vmSize, and location in the parameter section of the template." loc-scope="other"::: <!-- Azure Resource Manager Visualizer, no-loc -->
+
+
+
+Let's keep the parameters at their default values. For the other parameters, you have two options:
 
 1. Provide the values in a JSON file.
 1. Provide the values as command-line arguments.
@@ -82,7 +87,7 @@ For learning purposes, here you'll provide the values as command-line arguments.
     PASSWORD=$(openssl rand -base64 32)
     ```
 
-    There are many ways generate random passwords. The method you choose depends on your workflow and requirements. This method uses the **openssl** utility to generate 32 random bytes and base64 encode the output. Base64 encoding ensures that the result contains only printable characters.
+    There are many ways to generate random passwords. The method you choose depends on your workflow and requirements. This method uses the **openssl** utility to generate 32 random bytes and base64 encode the output. Base64 encoding ensures that the result contains only printable characters.
 
 1. Generate a unique DNS label prefix.
 
@@ -164,7 +169,7 @@ The deployment succeeded. But let's run a few commands just to verify.
     ```bash
     Name         ResourceGroup                         Location        Zones
     -----------  ------------------------------------  --------------  -------
-    SimpleWinVM  learn-quickstart-vm-rg  southcentralus
+    simple-vm  learn-quickstart-vm-rg  southcentralus
     ```
 
-    Recall that the template names the VM "SimpleWinVM". Here you see that this VM exists in your resource group.
+    The template names the VM "simple-vm". Here you see that this VM exists in your resource group.

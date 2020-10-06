@@ -1,0 +1,113 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview.4-building-blocks
+title: Building blocks of the cloud
+metadata:
+  title: Building blocks of the cloud
+  description: Describes the building blocks and service models in cloud computing.
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 25
+content: |
+  [!include[](includes/4-building-blocks.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I get this block 1 has only intro statement visible
+#  - content: "Given below are a set of software and hardware entities. Please associate them with a layer in the cloud building blocks:"
+
+# Learn by doing block question 1
+#  - content: "What kind of service model would you classify Microsoft 365 as?"
+#    choices:
+#    - content: "Infrastructure as a service (IaaS)"
+#      isCorrect: false
+#      explanation: "Incorrect. Think about what Microsoft 365 offers to the end user."
+#    - content: "Platform as a service (PaaS)"
+#      isCorrect: false
+#      explanation: "Incorrect. Think about what Microsoft 365 offers to the end user."
+#    - content: "Software as a service (SaaS)"
+#      isCorrect: true
+#      explanation: "Correct! Microsoft 365 and other web-based productivity services are examples of software as a service. Software (in this case, document management and collaborative editing) is developed in a web-based form and served to users over the internet."
+#  
+
+# Learn by doing block question 2
+#  - content: "What kind of service model would you classify Google App Engine as?"
+#    choices:
+#    - content: "Infrastructure as a service (IaaS)"
+#      isCorrect: false
+#      explanation: "Incorrect. Think about what Google App Engine offers to its subscribers."
+#    - content: "Platform as a service (PaaS)"
+#      isCorrect: true
+#      explanation: "Correct! Google App Engine is an example of platform as a service. Google App Engine allows developers to use Google's platform to make their own applications that run on Google's infrastructure."
+#    - content: "Software as a service (SaaS)"
+#      isCorrect: false
+#      explanation: "Incorrect. Think about what Google App Engine offers to its subscribers."
+#
+
+# Learn by doing block question 3
+#  - content: "What kind of service model would you classify Amazon Elastic Compute Cloud (EC2) as?"
+#    choices:
+#    - content: "Infrastructure as a service (IaaS)"
+#      isCorrect: true
+#      explanation: "Correct! Amazon EC2 is a service that rents out computing resources, such as CPU, memory, disk, and network bandwidth in the form of virtualized instances."
+#    - content: "Platform as a service (PaaS)"
+#      isCorrect: false
+#      explanation: "Incorrect. Think about what Amazon EC2 offers to its subscribers."
+#    - content: "Software as a service (SaaS)"
+#      isCorrect: false
+#      explanation: "Incorrect. Think about what Amazon EC2 offers to its subscribers."
+
+# Did I get this block 2 question 1
+  - content: "Which of the following is true about SaaS?"
+    choices:
+    - content: "SaaS is a software model in which updates and patches are not required to be installed manually by every end user."
+      isCorrect: false
+      explanation: "That's not quite right. SaaS is a software model in which updates and patches are not required to be installed manually by every end user, but is this the only valid response? Picture yourself using Outlook or any other SaaS application. What benefits does SaaS give you? What's unique about using a service like Office online versus buying and installing an application on your own computer?"
+    - content: "SaaS is a software model in which a cloud vendor hosts services. Those services are made available to end users over a network, typically the internet."
+      isCorrect: false
+      explanation: "That's not quite right. Cloud vendors do host services with SaaS, but is this the only valid response? Picture yourself using Office online or any other SaaS application. What benefits does SaaS give you? What's unique about using a service like Office online versus buying and installing an application on your own computer?"
+    - content: "SaaS is software that is made available to the end user over a browser or mobile application."
+      isCorrect: false
+      explanation: "That's not quite right. Software is made available to the end user over a browser or mobile application with SaaS, but is this the only valid response? Picture yourself using Office online or any other SaaS application. What benefits does SaaS give you? What's unique about using a service like Office online versus buying and installing an application on your own computer?"
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct! All of the statements above are true about SaaS."
+  
+# Did I get this block 2 - question 2  
+  - content: "A company is creating new algorithms for accurate face recognition software. The company is interested in moving to the cloud for its application development needs. Is software as a service the right model for this particular project?"
+    choices: 
+    - content: "Yes"
+      isCorrect: false
+      explanation: "Incorrect. Because the company is creating its own algorithms for face recognition, SaaS may not provide enough flexibility for the company to write software from scratch. The company should consider PaaS or IaaS instead. As a SaaS end user, can you develop software applications using SaaS?"
+    - content: "No"
+      isCorrect: true
+      explanation: "Correct! The company should consider PaaS or IaaS instead because it needs to develop new software and not just use existing software."
+
+# Did I get this block 3
+  - content: "Azure's App Service is an example of PaaS. Given that you read the PaaS section, which of the following statements about App Service is *incorrect*?"
+    choices:
+    - content: "The applications deployed on App Service have the same security, privacy, and data protection policies that Microsoft's applications have. Hence, end users can take advantage of the reliability, performance, and security of Azure's infrastructure."
+      isCorrect: false
+      explanation: "Incorrect. We're looking for an incorrect statement about App Service. This statement is correct because PaaS has built-in scaling mechanisms of deployed software that are automatically handled by the cloud provider with load-balancing and failover mechanisms. Think about the difference between App Service and an IaaS service, like VMs."
+    - content: "Customers have the flexibility to decide the number and configuration of physical servers required for hosting an application."
+      isCorrect: true
+      explanation: "Correct! The user does not have the flexibility to decide the number of physical servers required for hosting an application; the cloud provider makes this decision."
+    - content: "App Service provides customers with web-based user-interface creation tools to help create and modify the application's APIs."
+      isCorrect: false
+      explanation: "Incorrect! We're looking for an incorrect statement about App Service. This statement is correct because PaaS providers have web-based user-interface (UI) creation tools to help create, modify, and test various UI scenarios. Think about the difference between App Service and an IaaS service, like VMs."
+
+# Did I get this block 4
+  - content: "Which of the following is considered to be a characteristic of IaaS?"
+    choices:
+    - content: "IaaS providers do not allow clients to scale resources on demand."
+      isCorrect: false
+      explanation: "Incorrect. IaaS providers allow clients to scale resource on demand. Consider the service functionality of an IaaS provider like Azure Virtual Machines. What are the features? What are the limitations?"
+    - content: "IaaS providers provide computing resources to clients in the form of instances or virtual machines."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Users are aware of whom they share physical resources with."
+      isCorrect: false
+      explanation: "Incorrect. IaaS cloud providers do not indicate how the resources are shared among multiple users. Consider the service functionality of an IaaS provider such as Azure Virtual Machines. What are the features? What are the limitations?"

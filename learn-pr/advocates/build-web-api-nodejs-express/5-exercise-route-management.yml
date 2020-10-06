@@ -3,7 +3,7 @@ uid: learn.azure.build-web-api-nodejs-express.5-exercise-route-management
 title: Exercise - Route management
 metadata:
   title: Exercise - Route management
-  description: Exercise in how to configure routes for your API using different HTTP Verbs. Also covers how to filter response using query parameters.
+  description: Exercise in how to configure routes for your API using different HTTP Verbs. It also covers how to filter a response using query parameters.
   author: softchris
   ms.author: chnoring
   ms.date: 06/16/2020

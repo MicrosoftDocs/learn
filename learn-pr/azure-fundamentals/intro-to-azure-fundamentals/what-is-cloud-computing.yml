@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-fundamentals.what-is-cloud-computing
+title: What is cloud computing?
+metadata:
+  title: What is cloud computing?
+  description: In this unit, you'll learn about cloud computing.
+  ms.date: 09/14/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/what-is-cloud-computing.md)]

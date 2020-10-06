@@ -3,7 +3,7 @@ uid: learn.wwl.implement-windows-server-iaas-vm-networking
 metadata:
   title: Implement Windows Server IaaS VM networking
   description: In this learning path, you’ll learn about Azure IaaS networking and identity. After completing the learning path, you’ll be able to implement IP addressing, manage DNS, and deploy and manage domain controllers in Azure.
-  ms.date: 07/19/2020
+  ms.date: 08/14/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -24,13 +24,12 @@ prerequisites: |
     - Monitoring
 summary: |
   In this learning path, you’ll learn about Azure IaaS networking and identity. After completing the learning path, you’ll be able to implement IP addressing, manage DNS, and deploy and manage domain controllers in Azure.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/implement-windows-server-iaas-vm-networking.svg
 levels:
 - intermediate
 roles:
 - administrator
 - solution-architect
-- student
 - technology-manager
 products:
 - azure

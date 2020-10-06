@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-intro.2-azure-sql-history
+metadata:
+  title: The history of Azure SQL
+  description: The history of Azure SQL
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure SQL history
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-azure-sql-history.md)]

@@ -36,14 +36,14 @@ Once this operation completes, you can have a look at what was created in the re
 
 Azure Spring Cloud can automatically bind the Azure Cosmos DB database we created to our microservice.
 
-1. Go to "Apps" in your Azure Spring Cloud instance.
-1. Select the `todo-service` application.
-1. Go to `Service bindings`.
-1. Click on `Create service binding`.
-    1. Give your binding a name, for example `cosmosdb-todos`.
-    1. Select the Azure Cosmos DB account and database we created and select the `mongodb` API type.
+1. Go to **Apps** in your Azure Spring Cloud instance.
+1. Select the **todo-service** application.
+1. Go to **Service bindings**.
+1. Click on **Create service binding**.
+    1. Give your binding a name, for example **cosmosdb-todos**.
+    1. Select the Azure Cosmos DB account and database we created and select the **mongodb** API type.
     1. In the drop-down list, select the primary master key.
-    1. Click on `Create` to create the database binding.
+    1. Click on **Create** to create the database binding.
 
 That's all you need to do to have your Spring Boot microservice automatically configured to access the Azure Cosmos DB database that we set up.
 
@@ -54,34 +54,11 @@ Now that we've provisioned the Azure Spring Cloud instance and configured the se
 To create our microservice, we will use [https://start.spring.io/](https://start.spring.io/) with the command line:
 
 ```bash
-curl https://start.spring.io/starter.tgz -d dependencies=web,data-mongodb,cloud-eureka,cloud-config-client -d baseDir=todo-service -d bootVersion=2.2.5.RELEASE | tar -xzvf -
+curl https://start.spring.io/starter.tgz -d dependencies=web,data-mongodb,cloud-eureka,cloud-config-client -d baseDir=todo-service -d bootVersion=2.3.2.RELEASE -d javaVersion=1.8 | tar -xzvf -
 ```
 
 > [!NOTE]
 > We use the `Spring Web`, `Spring Data MongoDB`, `Eureka Discovery Client` and the `Config Client` components.
-
-## Add a "cloud" Maven profile
-
-To deploy to Azure Spring Cloud, we add a "cloud" Maven profile in our Maven `pom.xml` file.
-
-At the end of the application's `pom.xml` file (just before the closing `</project>` XML node), add the following code:
-
-```xml
-    <profiles>
-        <profile>
-            <id>cloud</id>
-            <dependencies>
-                <dependency>
-                    <groupId>com.microsoft.azure</groupId>
-                    <artifactId>spring-cloud-starter-azure-spring-cloud-client</artifactId>
-                    <version>2.2.0</version>
-                </dependency>
-            </dependencies>
-        </profile>
-    </profiles>
-```
-
-This dependency is specific to Azure Spring Cloud, and will allow your microservice to connect automatically and securely to the managed Spring Cloud Discovery Server and to the managed Spring Cloud Config Server.
 
 ## Add Spring code to manage data using Spring Data MongoDB
 
@@ -168,7 +145,7 @@ You can now build your "todo-service" project and send it to Azure Spring Cloud:
 
 ```bash
 cd todo-service
-./mvnw clean package -DskipTests -Pcloud
+./mvnw clean package -DskipTests
 az spring-cloud app deploy -n todo-service --jar-path target/demo-0.0.1-SNAPSHOT.jar
 cd ..
 ```
@@ -183,9 +160,9 @@ az spring-cloud app logs -n todo-service -f
 
 Now that the application is deployed, it's time to test it!
 
-1. In the Azure portal, go to "Apps" in your Azure Spring Cloud instance.
-    1. Verify that `todo-service` has a `Discovery status` which says `UP(1),DOWN(0)`. This shows that it is correctly registered in the Spring Cloud Service Registry.
-    1. Select `todo-service` to have more information on the microservice.
+1. In the Azure portal, go to **Apps** in your Azure Spring Cloud instance.
+    1. Verify **todo-service** has a Discovery status that says UP(1),DOWN(0). This shows that it is correctly registered in the Spring Cloud Service Registry.
+    1. Select **todo-service** to have more information on the microservice.
 1. Copy/paste the "Test Endpoint" that is provided.
 
 You can now use cURL to test the endpoint. Your test command should look like:

@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances
+metadata:
+  title: Monitor Windows Server IaaS Virtual Machines and hybrid instances
+  description: "You'll be able to implement Azure Monitor for IaaS Virtual Machines in Azure, implement Azure Monitor in on-premises environments, and use dependency maps."
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitor Windows Server IaaS Virtual Machines and hybrid instances
+summary: You'll be able to implement Azure Monitor for IaaS VMs in Azure, implement Azure Monitor in on-premises environments, and use dependency maps.
+abstract: |
+  After completing this module, you will be able to:
+  - Enable Azure Monitor for VMs.
+  - Monitor an Azure VM with Azure Monitor.
+  - Enable Azure Monitor in hybrid scenarios.
+  - Collect data from a Windows computer in a hybrid environment.
+  - Integrate Azure Monitor with Microsoft Operations Manager.
+prerequisites: |
+  In order to get the best learning experience from this module, it's important that you have knowledge and experience of the following:
+  - Managing the Windows Server operating system (OS) and Windows Server workloads in an on-premises scenarios including AD DS, Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services.
+  - Common Windows Server management tools.
+  - Core Microsoft compute, storage, networking, and virtualization technologies.
+  - On-premises resiliency Windows Server–based compute and storage technologies.
+  - Implementing and managing IaaS services in Azure.
+  - Azure Active Directory (Azure AD).
+  - Security-related technologies such as firewalls, encryption, and multi-factor authentication.
+  - Windows PowerShell scripting.
+  - Automation and monitoring.
+iconUrl: /learn/achievements/monitor-windows-server-iaas-vms-and-hybrid-instances.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-cloud-shell
+- azure-monitor
+- azure-portal
+- azure-virtual-machines
+units:
+- learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.introduction
+- learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.enable-azure-monitor-for-vms
+- learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.monitor-azure-vm-with-azure-monitor
+- learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.enable-azure-monitor-hybrid-scenarios
+- learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.collect-data-from-windows-computer-hybrid-environment
+- learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.integrate-azure-monitor-with-microsoft-operations-manager
+- learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.knowledge-check
+- learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.summary
+badge:
+  uid: learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.badge
