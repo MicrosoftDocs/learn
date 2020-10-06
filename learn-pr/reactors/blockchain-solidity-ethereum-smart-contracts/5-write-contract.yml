@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.5-write-contract
+metadata:
+  title: Exercise - Write a smart contract by using the Blockchain development kit for Ethereum
+  description: Write a smart contract by using the Blockchain development kit for Ethereum.
+  ms.date: 10/06/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Write a smart contract by using the Blockchain development kit for Ethereum
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-write-contract.md)]

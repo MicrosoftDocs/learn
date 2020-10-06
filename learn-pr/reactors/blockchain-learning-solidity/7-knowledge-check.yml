@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-learning-solidity.7-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 10/05/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8  
+content: |
+quiz:
+  questions:
+  - content: "Solidity smart contracts are run on:"
+    choices:
+    - content: "Ethereum blockchain"
+      isCorrect: false
+      explanation: "Incorrect. *Ethereum blockchain* is the name of the platform that Solidity targets. However, tests aren't run on Ethereum blockchain."
+    - content: "The Ethereum Virtual Machine"
+      isCorrect: true
+      explanation: "Correct. Solidity runs contracts on the Ethereum Virtual Machine. This sandboxed environment self-contains all the transaction history for the contracts."
+    - content: "Any virtual machine"
+      isCorrect: false
+      explanation: "Incorrect. A virtual machine is an option to run tests on, but a specific type of virtual machine is used for Solidity smart contracts."
+    - content: "Any sandbox environment"
+      isCorrect: false
+      explanation: "Incorrect. While Solidity contracts are run on a sandboxed environment, a specific type of sandboxed environment is used for Solidity smart contracts."
+
+  - content: "Events describe actions that are taken in a contract. Which syntax defines an event?"
+    choices:
+    - content: "`event PurchasedItem`"
+      isCorrect: false
+      explanation: "Incorrect. The event must be called like a function with a set of parenthesis at the end like `event PurchasedItem()`. The parentheses include any necessary arguments."
+    - content: "`event PurchasedItem(address buyer, uint price);`"
+      isCorrect: true
+      explanation: "Correct. To define an event, use the keyword `event`. Name the event and include the arguments, if any, inside parentheses."
+    - content: "`emit PurchasedItem(address buyer, uint price);`"
+      isCorrect: false
+      explanation: "Incorrect. This syntax would call the event and create an entry in the transactions log."
+    - content: "`PurchasedItem(address buyer, uint price);`"
+      isCorrect: false
+      explanation: "Incorrect. This syntax would call a function that has previously been defined, not an event."
+
+  - content: "What is an example of a user-defined type in Solidity?"
+    choices:
+    - content: "Structs"
+      isCorrect: true
+      explanation: "Correct. Structs are user-defined because you can define the collection of items within a struct."
+    - content: "State variables"
+      isCorrect: false
+      explanation: "Incorrect. State variables use defined types like uint, int, bool, and addresses to hold values that are used in contracts."
+    - content: "Addresses"
+      isCorrect: false
+      explanation: "Incorrect. Addresses are 20-byte value types that represent an Ethereum user account. A value is specified for a given address type."
+    - content: "Arrays"
+      isCorrect: false
+      explanation: "Incorrect. Arrays use defined types to store a collection of similar items of the same type in a data structure."
+  
+  - content: "What is typically the first line of a smart contract source file?"
+    choices:
+    - content: "A contract definition"
+      isCorrect: false
+      explanation: "Incorrect. The contract definition is required as part of the source file, but it's not the first line."
+    - content: "A pragma directive"
+      isCorrect: true
+      explanation: "Correct. Pragma is the keyword that you use to ask the compiler to check whether its version of Solidity matches the required version."
+    - content: "A Solidity version"
+      isCorrect: false
+      explanation: "Incorrect. A Solidity version is part of the pragma directive but doesn't include the keyword for the compiler to check."
+    - content: "An event"
+      isCorrect: false
+      explanation: "Incorrect. Events are typically part of every smart contract but aren't required, and they exist inside the contract definition."
+      
