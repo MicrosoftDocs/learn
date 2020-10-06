@@ -5,7 +5,12 @@ Contoso, Ltd. is a midsize financial services company in London with a branch of
 
 Contoso uses the free cloud security posture management capabilities of Azure Security Center. However, Costoso plans to move to the standard paid version to get threat protection for resources that run on Azure and on-premises. The company also has other non-Microsoft assets to monitor and protect.
 
-Security analysts at Contoso face a huge triage burden. They deal with a high volume of alerts from multiple products. They manually correlate alerts from different product dashboards or by using a traditional correlation engine. Additionally, the time spent to set up and maintain IT infrastructure takes the security operations (SecOps) team away from its security tasks.
+Security analysts at Contoso face a huge triage burden. They deal with a high volume of alerts from multiple products. They correlate alerts in the following ways:
+
+- Manually from different product dashboards
+- By using a traditional correlation engine
+
+Additionally, the time spent to set up and maintain IT infrastructure takes the security operations (SecOps) team away from its security tasks.
 
 The IT director believes that Azure Sentinel will help the security analysts perform complex investigations faster and improve their SecOps.
 

@@ -19,7 +19,7 @@ Support for connecting through an agent includes these devices and solutions:
 - Data loss prevention (DLP) solutions
 - Threat intelligence providers
 - Domain Name System (DNS) services
-- MBAM/Bitlocker Logs
+- MBAM/Bitlocker logs
 - Internet Information Services
 - Linux servers
 - Microsoft Endpoint Configuration Manager

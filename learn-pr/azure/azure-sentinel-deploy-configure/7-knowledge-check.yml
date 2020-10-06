@@ -59,16 +59,16 @@ quiz:
     choices:
     - content: "Edit workbooks"
       isCorrect: false
-      explanation: "That's incorrect. Azure Sentinel Reader can review, but not edit, data, incidents, workbooks, and other Azure Sentinel resources."
+      explanation: "That's incorrect. The Azure Sentinel Reader role can review data, incidents, workbooks, and other Azure Sentinel resources. But, it can't edit them."
     - content: "Review data, incidents, workbooks, and other Azure Sentinel resources."
       isCorrect: true
-      explanation: "That's correct. Azure Sentinel Reader can review, but not edit, data, incidents, workbooks, and other Azure Sentinel resources."
+      explanation: "That's correct. The Azure Sentinel Reader role can review data, incidents, workbooks, and other Azure Sentinel resources. But, it can't edit them."
     - content: "Create and run Azure Sentinel security playbooks"
       isCorrect: false
-      explanation: "That's incorrect. Azure Sentinel Reader can review, but not edit, data, incidents, workbooks, and other Azure Sentinel resources."
+      explanation: "That's incorrect. The Azure Sentinel Reader role can review data, incidents, workbooks, and other Azure Sentinel resources. But, it can't edit them."
 
 
-  - content: "Which of the following things is required to connect Azure Sentinel to Azure AD?"
+  - content: "Which of the following is required to connect Azure Sentinel to Azure AD?"
     choices:
     - content: "You need an Azure AD P1 or P2 license"
       isCorrect: true

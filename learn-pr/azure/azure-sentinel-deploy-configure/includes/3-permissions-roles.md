@@ -8,7 +8,6 @@ Use Azure RBAC to create and assign roles in your SecOps team. Azure RBAC lets y
 
 > [!TIP]
 > You can assign Azure RBAC roles:
-
 > - Directly in the Azure Sentinel workspace
 > - In a subscription
 > - To the resource group that the workspace belongs to, which Azure Sentinel inherits
@@ -18,7 +17,7 @@ Use Azure RBAC to create and assign roles in your SecOps team. Azure RBAC lets y
 The following are the three dedicated, built-in Azure Sentinel roles:
 
 - **Reader**: This role can review data, incidents, workbooks, and other Azure Sentinel resources.
-- **Responder**: This role has all the permissions of the Reader role, plus it can manage incidents by assigning or dismissing them.
+- **Responder**: This role has all the permissions of the Reader role. Plus, it can manage incidents by assigning or dismissing them.
 - **Contributor**: This role has all the permissions of the Reader and Responder roles. Also, it can create and edit workbooks, analytics rules, and other Azure Sentinel resources. To deploy Azure Sentinel on your tenant, you need Contributor permissions for the subscription where the Azure Sentinel workspace is deployed.
 
 All built-in Azure Sentinel roles grant read access to the data in your Azure Sentinel workspace. For best results, these roles should be assigned to the resource group that contains the Azure Sentinel workspace. The roles then apply to all the resources that deploy to support Azure Sentinel, if those resources are in the same resource group.

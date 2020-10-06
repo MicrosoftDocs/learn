@@ -61,7 +61,7 @@ In this example, we'll connect to Azure AD from Azure Sentinel:
 
     :::image type="content" source="../media/sentinel-azure-ad-connector-2.png" alt-text="Screenshot of the Azure Sentinel Azure Active Directory connector page." border="true":::
 
-1. Read the prerequisites and make sure you've fulfilled them. Then, follow the instructions to connect the data source.
+1. Read the prerequisites and make sure you've fulfilled them. Then follow the instructions to connect the data source.
 
 1. Select both **Azure Active Directory Sign-in logs** and **Azure Active Directory Audit logs**.
 
@@ -95,4 +95,6 @@ Azure Sentinel uses a fusion technique to correlate the alerts that these rules 
 
 Azure Sentinel gives you workbooks that provide analytics for your logs and queries. The workbooks are based on Monitor workbooks. They use the tools that are already available in Azure, in addition to built-in tables and charts. You can use built-in workbooks, customize an existing workbook, or create a new workbook from scratch.
 
-Built-in workbooks provide integrated data from your connected data sources. They let you examine the events that those services generate. The built-in workbooks include Azure AD, Azure activity events, and on-premises events. These on-premises events can include data from Windows events from servers or from Microsoft alerts. Events can also be gathered from any non-Microsoft services. These events include firewall traffic logs, Office 365, and protocols that aren't secure and that are based on Windows events.
+Built-in workbooks provide integrated data from your connected data sources. They let you examine the events that those services generate. The built-in workbooks include Azure AD, Azure activity events, and on-premises events. These on-premises events can include data from Windows events from servers or from Microsoft alerts. 
+
+Events can also be gathered from any non-Microsoft services. These events include firewall traffic logs, Office 365, and protocols that aren't secure and that are based on Windows events.
