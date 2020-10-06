@@ -45,6 +45,6 @@ How do you set up multifactor authentication? Follow the instructions for the ac
 
 Your account might require a specific authenticator application, or it might give you the option to choose from several. Use the option that works best for you.
 
-A account might only give you the option to use text messages to receive a *one-time code* for use with multifactor authentication. This system works by generating a new code each time you try to sign in. It isn't as secure as using an authenticator application on your phone, because text messages can be intercepted. But it's better than not using multifactor authentication at all. If that's your only available option, you should use it.
+An account might only give you the option to use text messages to receive a *one-time code* for use with multifactor authentication. This system works by generating a new code each time you try to sign in. It isn't as secure as using an authenticator application on your phone, because text messages can be intercepted. But it's better than not using multifactor authentication at all. If that's your only available option, you should use it.
 
 If you enable multifactor authentication on all accounts that provide it, those accounts will be more secure than they'd be with just a strong password or passphrase. The extra security is worth the extra seconds it will take to sign in.

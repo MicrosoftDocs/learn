@@ -13,7 +13,7 @@ Securing your passwords, account information, and other sensitive data might be 
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+By the end of this module, you'll be able to:
 
 - Identify common threats to your online identity and account data
 - Apply techniques to recognize and avoid phishing

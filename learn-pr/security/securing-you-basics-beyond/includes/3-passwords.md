@@ -10,7 +10,7 @@ Some accounts let you create a special username that's different from your email
 
 Many passwords are not as secret as people think they are. There are currently *billions* of username and password combinations for sale, but even more are available for free. Where did they all come from? Previous breaches. There are thousands of breaches every year, and those breaches expose all kinds of personal data, along with account information that often includes usernames and passwords.
 
-What is a *data breach*, and why should you care? A data breach is theft of information that shouldn't be public. This often happens as a result of a hacker taking advantage of flaws in a security system or just taking the data after a company accidentally exposes a database with no security settings turned on. That information can then be used for identity theft, blackmail, harassment, and other crimes. 
+What is a *data breach*, and why should you care? A data breach is theft of information that shouldn't be public. This often happens when a hacker takes advantage of flaws in a security system or just takes the data after a company accidentally exposes a database with no security settings turned on. That information can then be used for identity theft, blackmail, harassment, and other crimes. 
 
 Even an account that you might not care about, such as an email account that you don't use anymore, can be used by an attacker to pretend to be you. The attacker might send email with malware to your contacts or sign up for other accounts with your name. There are many other bad uses for stolen accounts.
 
@@ -29,7 +29,7 @@ If you use different passwords for each of your accounts, and one password for o
 
 But how do you remember a different password for every account? What if you have dozens or hundreds of accounts? How can you safely protect all those passwords? Here are a couple of good options:
 
-- Write them in a notebook and store the notebook in a safe. This is secure because hackers usually won't be able to physically get to your safe and open it.
+- Write them in a notebook and store the notebook in a safe. This is secure because hackers usually can't physically access your safe and open it.
 - Use a password manager. This is secure because password managers are designed solely to store passwords. A password manager can be opened only with a key (the secret password or passphrase) that's known only to the person who owns it. Password managers are also convenient, so they're more likely to be used.
 
 Because storing a notebook of passwords in a safe is not convenient, a password manager is the better option for most people who use a computer and/or smartphone. A password manager is your safest option, if you treat it carefully. In this case, *carefully* means that you should:
@@ -49,7 +49,7 @@ In the past, the recommendation for a strong password was to use eight character
 
 One famous example is the password *Pa$$w0rd*. It meets all of the criteria, yet it's high on the list of the top 1,000 most commonly used passwords. Hackers also have access to other password lists (for example, the top 1,000,000 most common passwords) that they simply plug into their password-cracking software. 
 
-If you think you have a password that has never been used, you should know that tools exist to launch a *brute force* attack. This type of attack tries every combination of all characters in order to guess a password. Computers are good at guessing quickly, so be careful to not assume that your password can never be guessed.
+If you think you have a password that has never been used, you should know that tools exist to launch a *brute force* attack. This type of attack tries every combination of all characters to guess a password. Computers are good at guessing quickly, so be careful to not assume that your password can never be guessed.
 
 > [!TIP]
 > Any password or passphrase that you use should be at least 15 characters long. This number is easy to reach with a passphrase, especially if you use five words.

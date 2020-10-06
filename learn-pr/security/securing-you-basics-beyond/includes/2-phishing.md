@@ -27,7 +27,7 @@ Statistically, 92.4 percent of malware is delivered via email, 30 percent of rec
 
 Phishing is designed to be believable. Attackers have been using the same approach since the first phishing emails were sent in the 1990s. They often try to take advantage of your good nature, your desire to help, or your desire to solve a problem.
 
-Attackers know what emotions get people to respond. For example, they might send an email to get you to select a link by telling you something needs to happen urgently. One common example is an email that says your account has been closed. Although this might seem like something serious at first, remember that most businesses won't send you an email saying that they've closed your account with no warning.
+Attackers know what emotions get people to respond. For example, they might send an email to get you to select a link by telling you something needs to happen urgently. One common example is an email that says your account has been closed. Although this might seem like something serious at first, remember that most businesses won't send you an email that says they've closed your account with no warning.
 
 Another common approach is to offer something too good to be true. Attackers will tell you that you've won an award or that they need you to manage their large sums of money.
 
@@ -57,4 +57,4 @@ Now that you can recognize phishing email and you know not to select any links o
 
 If you aren't sure about an email from a friend or family member, you still don't need to select any links or open any attachments. You can give them a call or send a text message and ask if they sent you anything.
 
-You don't have to be worried about all your email, but you do need to pay close attention to anything that looks unusual or suspicious. If you notice any signs of phishing, just remember not to do anything with that email other than reporting it and deleting it.
+You don't have to worry about all your email, but you do need to pay close attention to anything that looks unusual or suspicious. If you notice any signs of phishing, just remember not to do anything with that email other than reporting it and deleting it.
