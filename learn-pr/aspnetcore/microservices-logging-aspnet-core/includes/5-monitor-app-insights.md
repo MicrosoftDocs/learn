@@ -1,16 +1,23 @@
-In this unit, you'll monitor your app from the Azure portal.
+In this unit, you'll monitor your app from the Azure portal using Application Insights.
 
-Once the deployment is complete and all services are up and available, as per the `webstatus` page, begin working with the app. Log out, log in, create something between five and ten orders, using discount coupons and without using them, and so on.
+## Explore live metrics
 
-Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) using the same subscription used in previous units. Use the search box to find and open the resource group `eshop-learn-rg`. Select the `webshoppingagg` Application Insights resource and the select the Live Metrics menu item.
+Since you've instrumented four services for Application Insights, those services are sending telemetry to Application Insights whenever the app is running. To view the telemetry as it's ingested, complete the following steps:
+
+1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) using the same subscription used in previous units.
+1. Use the search box to find and open the resource group `eshop-learn-rg`.
+1. Select the `webshoppingagg` Application Insights resource.
+1. Select the Live Metrics menu item.
 
 A view similar to the following appears:
 
 :::image type="content" source="../media/webshoppingagg-live-metrics.png" alt-text="Azure portal showing the live metrics dashboard for the webshoppingagg-appinsights resource" border="true" lightbox="../media/webshoppingagg-live-metrics.png":::
 
-In the preceding image, you can see some sample logging traces to the right, as well as some Incoming Request real-time graphics, showing the request rate, request duration and request failure rate. There's also information for outgoing request, that is, calling the dependencies. You can also see the overall health, with memory consumption, CPU utilization, and exceptions rate.
+In the preceding image, notice the following:
 
-The information above is overall, for all instances running the microservice, if you reconfigure the deployments to use more than one instance you'll be able to select one specific server from the list in the bottom of the dashboard, you'll see the server-specific metrics (There's only on server in this exercise).
+- you might see some sample traces to the right.  as well as some Incoming Request real-time graphics, showing the request rate, request duration, and request failure rate. There's also information for outgoing request, that is, calling the dependencies. You can also see the overall health, with memory consumption, CPU utilization, and exceptions rate.
+
+The information above is overall, for all instances running the microservice, if you reconfigure the deployments to use more than one instance you'll be able to select one specific server from the list in the bottom of the dashboard, you'll see the server-specific metrics (There's only one server in this exercise).
 
 Application Insights starts tracing all calls between the services and their dependencies, but it needs some minutes to show more information, that's the reason for asking you to use the application.
 
