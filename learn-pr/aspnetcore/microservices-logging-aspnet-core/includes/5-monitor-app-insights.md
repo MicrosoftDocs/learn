@@ -6,18 +6,21 @@ Since you've instrumented four services for Application Insights, those services
 
 1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) using the same subscription used in previous units.
 1. Use the search box to find and open the resource group `eshop-learn-rg`.
-1. Select the `webshoppingagg` Application Insights resource.
-1. Select the Live Metrics menu item.
+1. Select the *webshoppingagg* Application Insights resource.
+1. Select the **Live Metrics** menu item on the left.
 
 A view similar to the following appears:
 
-:::image type="content" source="../media/webshoppingagg-live-metrics.png" alt-text="Azure portal showing the live metrics dashboard for the webshoppingagg-appinsights resource" border="true" lightbox="../media/webshoppingagg-live-metrics.png":::
+:::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-live-metrics.png" alt-text="Azure portal showing the live metrics dashboard for the webshoppingagg-appinsights resource" border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-live-metrics.png":::
 
 In the preceding image, notice the following:
 
-- you might see some sample traces to the right.  as well as some Incoming Request real-time graphics, showing the request rate, request duration, and request failure rate. There's also information for outgoing request, that is, calling the dependencies. You can also see the overall health, with memory consumption, CPU utilization, and exceptions rate.
+- Sample telemetry is displayed in the pane on the right as it is ingested in real-time. In the screenshot, you can see that the webshoppingagg service is experiencing failures as it calls services it's dependant on. This is expected behavior while the service is starting. Your telemetry may contain similar failures, depending on when you view the portal.
+- Incoming and outgoing dependency requests are represented by real-time graphics. The graphics illustrate the rate, duration, and failure rate of the requests.
+- The overall health of the service is displayed in charts representing memory and CPU usage as well as the rate of exceptions.
+- The **Servers** pane lists the physical nodes used by the application. In this example, there is only one node. The data on this page can be filtered by node by  selecting the server name from the list.
 
-The information above is overall, for all instances running the microservice, if you reconfigure the deployments to use more than one instance you'll be able to select one specific server from the list in the bottom of the dashboard, you'll see the server-specific metrics (There's only one server in this exercise).
+## 
 
 Application Insights starts tracing all calls between the services and their dependencies, but it needs some minutes to show more information, that's the reason for asking you to use the application.
 
