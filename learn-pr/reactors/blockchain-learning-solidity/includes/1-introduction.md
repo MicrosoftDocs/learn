@@ -16,5 +16,5 @@ By the end of this module, you'll be able to:
 
 - Understand blockchain fundamentals
 - Knowledge of the Ethereum platform
-- Previous experience with any programming language like C, Python, or JavaScript
+- Previous experience with any programming language like C++, Python, or JavaScript
 - Basic knowledge of programming concepts
