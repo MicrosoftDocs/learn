@@ -11,32 +11,11 @@ Gateways are used to route public HTTP traffic to microservices:
 To create our gateway, we will use [https://start.spring.io/](https://start.spring.io/) with the command line:
 
 ```bash
-curl https://start.spring.io/starter.tgz -d dependencies=cloud-gateway,cloud-eureka,cloud-config-client -d baseDir=gateway -d bootVersion=2.2.5.RELEASE | tar -xzvf -
+curl https://start.spring.io/starter.tgz -d dependencies=cloud-gateway,cloud-eureka,cloud-config-client -d baseDir=gateway -d bootVersion=2.3.2.RELEASE -d javaVersion=1.8 | tar -xzvf -
 ```
 
 > [!NOTE]
 > We use the `Cloud Gateway`, `Eureka Discovery Client` and the `Config Client` components.
-
-## Add a "cloud" Maven profile
-
-To deploy to Azure Spring Cloud, we add a "cloud" Maven profile like in the previous module.
-
-At the end of the application's `pom.xml` file (just before the closing `</project>` XML node), add the following code:
-
-```xml
-    <profiles>
-        <profile>
-            <id>cloud</id>
-            <dependencies>
-                <dependency>
-                    <groupId>com.microsoft.azure</groupId>
-                    <artifactId>spring-cloud-starter-azure-spring-cloud-client</artifactId>
-                    <version>2.2.0</version>
-                </dependency>
-            </dependencies>
-        </profile>
-    </profiles>
-```
 
 ## Configure the application
 
@@ -62,7 +41,7 @@ You can now build your "gateway" project and send it to Azure Spring Cloud:
 
 ```bash
 cd gateway
-./mvnw clean package -DskipTests -Pcloud
+./mvnw clean package -DskipTests
 az spring-cloud app deploy -n gateway --jar-path target/demo-0.0.1-SNAPSHOT.jar
 cd ..
 ```

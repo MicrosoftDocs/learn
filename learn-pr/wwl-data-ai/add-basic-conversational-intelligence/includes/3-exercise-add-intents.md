@@ -62,7 +62,7 @@ For this exercise, you will add code to the project you started in unit 2, creat
    await AddIntents(client, appInfo);
    ```
 
-1. You will expand on this code in later units so do not delete your codespace.
+1. You will expand on this code in later units.
 
 :::zone-end
 
@@ -85,6 +85,6 @@ For this exercise, you will add code to the project you started in unit 2, creat
    add_intents(app_id, app_version)
    ```
 
-1. You will expand on this code in later units so do not delete your codespace.
+1. You will expand on this code in later units.
 
 :::zone-end
