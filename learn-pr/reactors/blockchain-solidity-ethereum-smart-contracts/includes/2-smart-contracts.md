@@ -2,9 +2,9 @@ A smart contract is a program that's stored inside a blockchain. Smart contracts
 
 All of the terms and conditions of the contracts are programmatically defined. A definition specifies the rules, requirements, and rewards for the participants in the blockchain. It also specifies how digital assets are transferred between parties. Each smart contract is assigned a 20-byte address that uniquely identifies it.
 
-Smart contracts run on their own, send events, and call functions. They're perfect for blockchain technology because they allow people who don't know one another to do business in a securely specified way that requires no middleman.
+Smart contracts run on their own, send events which trigger state transitions, and call functions. They're perfect for blockchain technology because they allow people who don't know one another to do business in a securely specified way that requires no middleman.
 
-Smart contracts most commonly use Ethereum. Ethereum is the world's first programmable blockchain. It allows smart contracts to be defined to help facilitate the transfer of digital assets, like ether.
+Smart contracts are most commonly used with Ethereum. Ethereum is the world's first programmable blockchain. It allows smart contracts to be defined to help facilitate the transfer of digital assets, like ether.
 
 The language you'll use to write contracts is Solidity. Solidity is *Turing-complete*, which means that you can write complicated contracts in a clearly defined and coded way.  
 
@@ -13,7 +13,7 @@ Because every state transition is logged and immutable, you should thoroughly te
 Smart contracts have these key properties and advantages:
 
 - **Transparency**: Blockchain users can read smart contracts and can access them by using APIs.
-- **Immutability**: After a smart contract is created, it can't be changed.
+- **Immutability**: Smart contract execution creates logs that can't be changed.
 - **Distribution**: The output of the contract is validated and verified by nodes on the network. Contract states can be publicly visible. In some cases, even "private" variables are visible.
 
 ## Use cases
