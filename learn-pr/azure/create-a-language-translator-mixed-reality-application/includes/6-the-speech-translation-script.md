@@ -29,7 +29,7 @@ private bool micPermissionGranted = false;
 private object threadLocker = new object();
 ```
 
-Any public variable created in the script can be accessed through the Unity editor. Accesing public variables through the Unity editor is helpful for assigning UI elements to the property. At a minimum, the translation app should include both a button UI to activate the microphone and a text UI element for the translation.
+Any public variable created in the script can be accessed through the Unity editor. Accessing public variables through the Unity editor is helpful for assigning UI elements to the property. At a minimum, the translation app should include both a button UI to activate the microphone and a text UI element for the translation.
 
 In a production version of the app, the Azure credentials created by the Speech resource would be stored as environment variables. However, as you complete the exercises for this module, you can manage your Azure credentials through the Unity editor by creating public variables for both the **Subscription Key** and **Location**. Creating these variables as public variables enables you to change the value through the Unity editor.
 

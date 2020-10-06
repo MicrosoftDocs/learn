@@ -22,7 +22,7 @@ In Unity, specific capabilities must be enabled to use APIs and resources such a
 
 ## Change Speech Commands Start Behavior
 
-By default, the MRTK Speech Commands are configured to start automatically when a Unity scene loads. Since this app requires speech input, the MRTK Speech Commands **Start Behavior** must be set to **Manual Start** to not interfere with the Cognitive Services Speech SDK. Given the default configuration profiles that come with the Mixed Reality Toolkit cannot be modified, the configuration profile settings must be cloned to modify the MRTK Speech Commmands **Start Behavior**.
+By default, the MRTK Speech Commands are configured to start automatically when a Unity scene loads. Since this app requires speech input, the MRTK Speech Commands **Start Behavior** must be set to **Manual Start** to not interfere with the Cognitive Services Speech SDK. Given the default configuration profiles that come with the Mixed Reality Toolkit cannot be modified, the configuration profile settings must be cloned to modify the MRTK Speech Commands **Start Behavior**.
 
 1. In the Unity menu, select the **MixedRealityPlayspace** object. The object's properties will display in the **Inspector** window.
 

@@ -2,7 +2,7 @@ Integrating features into Mixed Reality apps that use APIs and input sources suc
 
 ## MRTK Speech Commands Start Behavior
 
-By default, the MRTK Speech Commands are configured to start automatically when a Unity scene loads. This setting enables you to use speech to manipulate holograms or do other actions such as toggling the Diagnostics panel with the command "toggle diagnostics". Because of thi setting, the MRTK Speech Commands must be configured to not interfere with the Cognitive Services Speech SDK unless manually enabled. The MRTK Speech Commands **Start Behavior** determines whether the Speech Commands are active when a scene starts. If your Mixed Reality experience uses the Cognitive Services Speech SDK, the MRTK Speech Commands Start Behavior should be set to **Manual Start**.
+By default, the MRTK Speech Commands are configured to start automatically when a Unity scene loads. This setting enables you to use speech to manipulate holograms or do other actions such as toggling the Diagnostics panel with the command "toggle diagnostics". Because of this setting, the MRTK Speech Commands must be configured to not interfere with the Cognitive Services Speech SDK unless manually enabled. The MRTK Speech Commands **Start Behavior** determines whether the Speech Commands are active when a scene starts. If your Mixed Reality experience uses the Cognitive Services Speech SDK, the MRTK Speech Commands Start Behavior should be set to **Manual Start**.
 
 Since the default Configuration Profiles that come with MRTK can't be modified, an existing profile must first be cloned. Cloning a profile creates a copy of the profile thus enabling you to change the configuration settings as you'd like.
 

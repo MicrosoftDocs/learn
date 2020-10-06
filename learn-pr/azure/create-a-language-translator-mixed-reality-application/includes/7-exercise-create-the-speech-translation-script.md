@@ -87,7 +87,7 @@ The UI consists of a quad, which serves as a flat surface for the text. Displaye
 
 1. An MRTK button prefab is used for the microphone. In the **Project** window, search for **PressableButtonHoloLens2Circular_32x32**.
 
-    :::image type="content" source="../media/search-pressable-button.png" alt-text="A screenshot of the project window. The search bar is highlighted. The text in the search bar reads pressable button hololens 2 circular underscore 32 x 32.":::
+    :::image type="content" source="../media/search-pressable-button.png" alt-text="A screenshot of the project window. The search bar is highlighted. The text in the search bar reads pressable button HoloLens 2 circular underscore 32 x 32.":::
 
 1. To add the button prefab as a child of **Translation UI**, drag the button from the **Project** window to the **Translation UI** object.
 
