@@ -108,7 +108,7 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
 
 1. Run the following commands to build the catalog service:
 
-    ```bash
+    ```dotnetcli
     pushd src/Services/Catalog/Catalog.API && \
         dotnet build && \
         popd
