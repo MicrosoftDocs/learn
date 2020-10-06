@@ -106,9 +106,9 @@ Set-AzStorageAccount -ResourceGroupName <resource-group> -AccountName <storage-a
 
 ### Switch replication type in the Azure portal
 
-You can also switch your account's replication type in the Azure portal. For example, to switch from ZRS to GZRS, go to your storage account, and change the replication type in the configuration.
+You can also switch your account's replication type in the Azure portal. For example, to switch from ZRS to GZRS, go to your storage account, select configuration, and change the replication type.
 
-![Screenshot of the storage account configuration where you change the replication type from ZRS to GZRS.](../media/2-change-zrs-gzrs-portal.png)
+:::image type="content" source="../media/2-change-zrs-gzrs-portal.png" alt-text="Screenshot of the storage account configuration where you change the replication type from ZRS to GZRS.":::
 
 ### Live migration
 

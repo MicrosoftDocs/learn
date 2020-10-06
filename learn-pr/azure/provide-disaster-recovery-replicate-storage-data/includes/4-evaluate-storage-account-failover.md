@@ -1,6 +1,6 @@
 Failover is how the system responds to a failure, by using the replicated copy of the data.
 
-Directors want to know whether listeners will get any kind of interruption in their music, when the system responds to a failure. You've been asked to investigate how the failover process works, and report back on the potential implications for your company and its data.
+The directors in your organization want to know whether listeners will get any kind of interruption in their music when the system responds to a failure. You've been asked to investigate how the failover process works, and report back on the potential implications for your company and its data.
 
 In this unit, you'll explore how the failover process starts and how it works. You'll understand the implications for data when you start a failover, and how to estimate any potential data loss.
 
@@ -35,7 +35,7 @@ The process is as follows:
 
 1. **Failover is complete**
     
-    When the failover process is complete, your storage account is updated to use locally redundant storage. If you want to use replication to a secondary region, you'll configure the storage account again to use geo-redundant storage like GRS, or RA-GRS.
+    When the failover process is complete, your storage account is updated to use locally redundant storage (LRS). If you want to use replication to a secondary region, you'll configure the storage account again to use geo-redundant storage like GRS, or RA-GRS.
     To reset your replication mode to geo-redundant storage, use tools like Azure PowerShell, Azure CLI, or the Azure portal. For example, in the Azure portal, go to the configuration pane of your Azure Storage account, and set the replication field to geo-redundant storage.
 
 ### Data loss

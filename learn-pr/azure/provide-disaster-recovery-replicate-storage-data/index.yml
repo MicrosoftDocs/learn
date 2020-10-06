@@ -15,7 +15,7 @@ abstract: |
   - Choose the right Azure Storage redundancy option for your organization
   - Demonstrate how to initiate a storage account failover
 prerequisites: | 
-  - Basic knowledge of Azure Storage which includes use of storage accounts and Azure Blobs
+  - Basic knowledge of Azure Storage, which includes use of storage accounts and Azure Blobs
 iconUrl:  /learn/achievements/provide-disaster-recovery-replicate-storage-data.svg
 levels:
 - beginner
@@ -29,6 +29,7 @@ units:
 - learn.azure.provide-disaster-recovery-replicate-storage-data.exercise-change-replication-strategy
 - learn.azure.provide-disaster-recovery-replicate-storage-data.evaluate-storage-account-failover
 - learn.azure.provide-disaster-recovery-replicate-storage-data.exercise-failover-secondary-location
+- learn.azure.provide-disaster-recovery-replicate-storage-data.knowledge-check
 - learn.azure.provide-disaster-recovery-replicate-storage-data.summary
 badge:
   uid: learn.azure.provide-disaster-recovery-replicate-storage-data.badge

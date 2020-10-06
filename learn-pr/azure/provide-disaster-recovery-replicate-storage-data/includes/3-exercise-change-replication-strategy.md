@@ -9,7 +9,7 @@ Create a storage account with Geo-zone-redundant storage (GZRS).
     ```Bash
     export AZURE_STORAGE_ACCOUNT=<storageaccountname> 
      ```
-1. Set the location. Replace the centralus value with a location near you.
+1. Set the location. Replace the westus2 value with a location near you.
     ```bash
     export LOCATION=westus2
     ```
@@ -129,6 +129,6 @@ Upload the file to your storage account via your container.
 
 1. Select **Refresh** to ensure you're seeing the latest status updates.
 
-    ![Screenshot of the Geo-replication map that shows primary and secondary locations available.](../media/3-view-replication-status.png)
+   :::image type="content" source="../media/3-view-replication-status.png" alt-text="Screenshot of the geo-replicaton map that shows the primary and secondary locations available.":::
 
-You've now made sure your storage account remains available even if a region fails.
+It'll takes some time for your data to replicate from the primary to the secondary region.
