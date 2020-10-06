@@ -1,16 +1,16 @@
-Poor governance policies create unneccessary constraints & may not actually protect the company. In this module, we'll evaluate ways to create proper, actionable corporate policies.
+Poor governance policies create unneccessary constraints and may not protect the company. In this module, we'll evaluate ways to create proper, actionable corporate policies.
 
 ## Example: Improper corporate policy
 
 What's wrong with Tailwind Traders' existing policy from the customer narrative?
 
-**"customer and financial data can only be hosted in a specific network segment of the existing data centers, referred to as protected assets."**
+**"Customer and financial data can only be hosted in a specific network segment of the existing datacenters, referred to as protected assets."**
 
 Corporate policies are designed to instruct teams on the best way to address tangible risks that aren't deemed tolerable by the organization. They are not designed to require a specific technical implementation.
 
 ## Evaluate existing corporate policy
 
-When evaluating existing policies for application to the cloud (or any other new technology), you should be able to easily answer the following questions:
+When evaluating existing policies for application to the cloud or any other new technology, you should be able to answer the following questions:
 
 - What risk does this policy attempt to mitigate?
 - Why is that risk not within organizational risk tolerance?
@@ -50,7 +50,7 @@ According to the outline from the Tailwind Traders customer narrative unit, the 
 - Improper access compromising systems or data.
 - Inconsistent governance due to immature processes and lack of skills on the team.
 
-It's important to note, that none of the actual concerns are related to a "a specific network segment of the existing data centers" as sited in their existing policy. To create sound governance policies that will scale into the cloud, we need to dig a bit deeper & look at the tangible risks captured in existing policy (Not the current state solution).
+It's important to note, that none of the actual concerns are related to, "a specific network segment of the existing data centers," as sited in their existing policy. To create sound governance policies that will scale into the cloud, we need to dig a bit deeper and look at the tangible risks captured in the current policy versus the current-state solution.
 
 Deeper investigation of the stakeholder concerns and the cloud adoption plan will likely expose additional risks that can't be tolerated by the organization. But for now, we have enough to start shaping governance policies that address these tangible risks.
 

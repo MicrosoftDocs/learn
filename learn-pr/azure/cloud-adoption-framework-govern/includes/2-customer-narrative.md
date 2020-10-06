@@ -9,7 +9,7 @@ _Figure 1: Finding the balance between transformation and risk mitigation._
 
 In the Getting Started module, we shared a few of the objectives from Tailwind Trader's cloud adoption plan. Most relevant to this module, is their effort to migrate out of two leased datacenters in the next 18 to 24 months. Those datacenters host a large portfolio of production workloads that support in-store and e-commerce operations. The second datacenter also hosts a number of dev/test environments and other pre-production innovations from the retail innovation team.
 
-Their effort is driving digital transformation and pushing the boundaries of what the business can do in the cloud. They've migrated low risk workloads to the cloud. They've also started using cloud native technologies to innovate and create new solutions that couldn't be delivered on-prem. The value of the cloud is proving out. As their adoption plans progress, the need for balance is becoming more apparent.
+Their effort is driving digital transformation and pushing the boundaries of what the business can do in the cloud. They've migrated low-risk workloads to the cloud. They've also started using cloud native technologies to innovate and create new solutions that couldn't be delivered on-preises. The value of the cloud is proving out. As their adoption plans progress, the need for balance is becoming more apparent.
 
 ## Governance needs
 
@@ -20,7 +20,7 @@ To balance the digital transformation efforts, the central operations/infrastruc
 - Apply security posture consistently.
 - Remain agile to support scale and transformation.
 
-Before adopting the cloud, governance was delivered by a series of manual processes of review, acceptance, and change control. The employees, processes, and tools that previously delivered governance functions in the on-premise environment aren't scaling to consistently govern cloud deployments.
+Before adopting the cloud, governance was delivered by a series of manual processes of review, acceptance, and change control. The employees, processes, and tools that previously delivered governance functions in the on-premises environment aren't scaling to consistently govern cloud deployments.
 
 ## Blocked by current policies
 

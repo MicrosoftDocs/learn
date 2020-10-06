@@ -1,8 +1,8 @@
-Deployment of a cloud governance foundation will acclerate you ability to govern your entire Azure environment. This unit will outline the considerations and implementations required to deploy a foundation that creates resource consistency & prepares you for other governance disciplines.
+Deploying a cloud governance foundation will accelerate you to govern your entire Azure environment. This unit will outline the considerations and implementations required to deploy a foundation that creates resource consistency and to prepare you for other governance disciplines.
 
 ## What will you configure?
 
-At the end of this unit, you will understand the why & how behind configuration of management groups, subscription design, resource groups, and tagging. This unit assumes that you have already deployed assets to Azure. Now you want to configure the environment to better organize, track, & govern all of those assets.
+At the end of this unit, you will understand the why and how behind configuration of management groups, subscription design, resource groups, and tagging. This unit assumes that you have already deployed assets to Azure. Now you want to configure the environment to better organize, track, and govern those assets.
 
 ## Strategic considerations
 
@@ -10,7 +10,7 @@ Resource organization depends on what is important to your organization. Before 
 
 - Cost Transparency: All cloud adoption should be aligned to departments, business units, projects, or other cost allocation mechanisms for chargeback/showback accounting requirements.
 - Compliance / Security: All cloud adoption should map to specific compliance requirements which map cloud adoption to specific risk, security, and compliance organization structures.
-- Democratization (delegated responsibility): All cloud adoption should map to teams, product groups, or projects which allows for easier segmentation of responsibility by teams.
+- Democratization (delegated responsibility): All cloud adoption should map to teams, product groups, or projects, which allows for easier segmentation of responsibility by teams.
 
 Understanding these strategic priorities will help identify the best starting point for your management and subscription design.
 
@@ -18,7 +18,8 @@ Understanding these strategic priorities will help identify the best starting po
 
 The basic foundation for all governance starts with consistent resource organization.
 
-:::image type="content" source="../media/resource-consistency.png" alt-text="resource consistency" border="false":::
+:::image type="content" source="../media/resource-consistency.png" alt-text="Resource consistency." border="false":::
+_Figure 1: Resource consistency._
 
 The three main components of resource organization are:
 
@@ -119,8 +120,8 @@ Packaging all of the governance change into a blueprint accelerates deployments 
 Azure blueprints package Azure Resource Manager templates, Azure Policies, and role-based access control settings into a single package. The Cloud Adoption Framework (CAF) Foundation blueprint provides an example and a starting point for using blueprints in cloud governance to:
 
 - Deploy Azure Key Vault.
-- Deploy Log Analytics
-- Deploy Azure Security Center (standard version.
+- Deploy Log Analytics.
+- Deploy Azure Security Center (standard version).
 
 The CAF Foundation blueprint also defines and deploys Azure Policies for:
 	- Applying 'cost center' tags to resource groups.
@@ -146,4 +147,4 @@ _Figure 7: The CAF Governance Visualizer._
 
 Deploy the [CAF governance visualizer](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer?azure-portal=true) to see how management groups, blueprints, policies, and other governance configurations have been applied across your environment.
 
-These exercises help demonstrate a starting point or foundation for governance. In the next unit we will build on this foundation to establish a mature cost management discipline.
+These exercises help demonstrate a starting point or foundation for governance. In the next unit, we will build on this foundation to establish a mature Cost Management discipline.

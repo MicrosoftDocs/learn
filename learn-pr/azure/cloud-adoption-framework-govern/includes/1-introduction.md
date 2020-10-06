@@ -2,7 +2,7 @@ Address tangible risks with the Govern methodology of the Cloud Adoption Framewo
 
 Any technical change introduces risk into your environment. Cloud-native tools in Azure help you to mitigate those risks and adopt the cloud with confidence.
 
-In this module, you will learn how to evaluate and act on those risks and implement guardrails to keep you safe as you adopt the cloud.
+This module demonstrates how to evaluate and respond to those risks while implementing guardrails to keep you safe as you adopt the cloud.
 
 ## Learning objectives
 

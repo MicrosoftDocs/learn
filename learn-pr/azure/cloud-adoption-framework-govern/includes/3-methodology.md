@@ -16,7 +16,6 @@ The steps will get you started with the Govern methodology in the cloud. They wi
 The Govern methodology provides a structured approach to building the governance maturity required to be confident with cloud adoption.
 
 :::image type="content" source="../media/methodology.png" alt-text="The CAF Govern methodology outlined in this section." border="false":::
-
 _Figure 1: The CAF Govern methodology outlined in this section._
 
 ### Corporate policy
@@ -77,4 +76,4 @@ The governance foundation will introduce you to the tools needed to implement pr
 | Complex/legacy identity management | N/A | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/identity-baseline-improvement?azure-portal=true) |
 | Multiple layers of governance | N/A | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/multiple-layers-of-governance?azure-portal=true) |
 
-Later in this module, we'll discuss each of these disciplines & relate those to the Tailwind Traders story.
+Later in this module, we'll discuss each of these disciplines and relate those to the Tailwind Traders story.
