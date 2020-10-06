@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.use-docker-container-dev-env-vs-code
+metadata:
+  title: Use a Docker container as a development enviornment with Visual Studio Code
+  description: Create and configure a container based development environment with VS Code Remote Containers
+  ms.date: 10/06/2020
+  author: burkeholland
+  ms.author: buhollan
+  ms.topic: interactive-tutorial
+  ms.prod: learning
+title: Use a Docker container as a development enviornment with Visual Studio Code
+summary: Get Create and configure a container based development environment with VS Code Remote Containers
+abstract: |
+  In this module you will:
+  - Install the VS Code Remote Containers extension
+  - Load and connect to a project in a Docker container
+  - Access ports in the container from your local machine
+  - Add software to the container environment
+prerequisites: |
+  A computer that's running one of the following:
+  - Windows: Windows 10
+  - Mac: macOS 10.9 or later
+  - Linux: Ubuntu, Debian, Red Hat, Fedora, or SUSE
+  - Docker version ?
+  - WSL?
+iconUrl:
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs-code
+units:
+  - learn.use-docker-container-dev-env-vs-code.1-introduction
+badge:
+  uid: learn-windows.introduction-to-web-development.badge
