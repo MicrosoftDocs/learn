@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Address tangible risks with the Govern methodology of the Cloud Adoption Framework for Azure
-summary: Without proper governance, it can be difficult and laborious to maintain consistent control across a portfolio of workloads. Fortunately, cloud-native tools such as Azure Policy and Azure Blueprint provide convenient means of establishing those controls. The CAF Govern methodology helps to evaluate and establish corporate policies and disciplines to mitigate tangible risks.
+summary: Without proper governance, it can be difficult and laborious to maintain consistent control across a portfolio of workloads. Fortunately, cloud-native tools such as Azure Policy and Azure Blueprints provide convenient means of establishing those controls. The CAF Govern methodology helps to evaluate and establish corporate policies and disciplines to mitigate tangible risks.
 abstract: |
   In this module, you will:
   - Establish processes to properly govern cloud adoption. 
@@ -21,7 +21,7 @@ abstract: |
 
 prerequisites: |
   - A foundational understanding of IT governance processes.
-  - Understanding of your organization’s governance requirements as relevant to your cloud adoption plan
+  - An understanding of your organization’s governance requirements as relevant to your cloud adoption plan.
 
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true

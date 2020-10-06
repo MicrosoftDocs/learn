@@ -2,12 +2,12 @@ Implementing proper cloud governance requires proper business policy, protective
 
 ## Building governance maturity
 
-This unit explains the four step process in the cloud adoption framework to build a mature cloud governance solution.
+This unit explains the four-step process in the Cloud Adoption Framework (CAF) to build a mature cloud governance solution.
 
-- **Methodology** Understand the underlying methodology
-- **Governance Benchmark** Assess your current and future state needs
-- **Governance foundation** Establish your governance foundation with a set of governance tools
-- **Mature governance disciplines** Iteratively add governance controls to address risks
+- **Methodology** Understand the underlying methodology.
+- **Governance benchmark** Assess your current and future state needs.
+- **Governance foundation** Establish your governance foundation with a set of governance tools.
+- **Mature governance disciplines** Iteratively add governance controls to address risks.
 
 The steps will get you started with the Govern methodology in the cloud. They will also set you on a path to mature each governance discipline as your cloud adoption plan progresses.
 
@@ -15,7 +15,7 @@ The steps will get you started with the Govern methodology in the cloud. They wi
 
 The Govern methodology provides a structured approach to building the governance maturity required to be confident with cloud adoption.
 
-:::image type="content" source="../media/methodology.png" alt-text="The CAF Govern methodology outlined in this section." border="false":::
+:::image type="content" source="../media/methodology.png" alt-text="The CAF Govern methodology outlined in this section of content" border="false":::
 _Figure 1: The CAF Govern methodology outlined in this section._
 
 ### Corporate policy
@@ -51,7 +51,7 @@ Receive a personalized report that outlines the difference between your current 
 
 ## Governance foundation
 
-Azure includes a suite of governance tools built on top of the Azure Resource Manager platform. The initial governance foundation demonstrates how these tools can be applied to demonstrate cloud governance. As you progress through units of this learn module, you'll see how you can apply these tools to solve governance challenges. But first, start with a governance foundation to get familiar with the tools.
+Azure includes a suite of governance tools built on top of the Azure Resource Manager platform. The initial governance foundation demonstrates how these tools can be applied to demonstrate cloud governance. As you progress through units of this learn module, you'll see how you can apply these tools to solve governance challenges. First, start with a governance foundation to familiarize yourself with the tools.
 
 :::image type="content" source="../media/TDD-in-Azure.png" alt-text="Visual of the Azure Resource Manager tools that support governance, with focus on Azure Policy and Azure Blueprints." border="false":::
 _Figure 3: The Azure Resource Manager tools that support governance, with focus on Azure Policy and Azure Blueprints._
@@ -76,4 +76,4 @@ The governance foundation will introduce you to the tools needed to implement pr
 | Complex/legacy identity management | N/A | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/identity-baseline-improvement?azure-portal=true) |
 | Multiple layers of governance | N/A | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/multiple-layers-of-governance?azure-portal=true) |
 
-Later in this module, we'll discuss each of these disciplines and relate those to the Tailwind Traders story.
+Later in this module, we'll discuss each of these disciplines and relate them to Tailwind Traders' customer narrative.

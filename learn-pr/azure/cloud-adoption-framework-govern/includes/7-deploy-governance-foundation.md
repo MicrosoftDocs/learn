@@ -34,13 +34,13 @@ To accommodate long-term governance needs, design a high-level hierarchy but imp
 :::image type="content" source="../media/management-group-hierarchy.png" alt-text="management group hierarchy" border="false":::
 _Figure 2: Management group hierarchy._
 
-Per Figure 2, the following are high-level design:
+The following components are high-level design in Figure 2:
 
-- Management Group Hierarchy: Business Unit, Geography, Environment.
-- Subscription: Per application category, pre-production, development environments, and production
-- Resource Groups: Per Application
+- Management group hierarchy: business unit, geography, environment
+- Subscription: per application category, pre-production, development environments, and production
+- Resource groups: per application
 
-## Exercise: Configuring your first management group hierarchy
+## Exercise: Configure your first management group hierarchy
 
 Start with a smaller hierarchy to allow for experimentation and to quickly overcome initial learning curves.
 
@@ -49,8 +49,8 @@ _Figure 3: Initial, smaller management group hierarchy._
 
 In this smaller version, attempt the following configuration steps:
 
-- Parent node: Define a management group for corporate IT
-- Child nodes: Define child nodes per environment production and non-production
+- Parent node: Define a management group for corporate IT.
+- Child nodes: Define child nodes per production and nonproduction environment. 
 
 For guidance on creating these management groups, see the [Quickstart guide for creating a management group in the Azure portal](https://docs.microsoft.com/azure/governance/management-groups/create-management-group-portal?azure-portal=true).
 
@@ -71,7 +71,7 @@ The following questions may help illustrate reasons for you to scale your subscr
 - Do we need to clearly separate concerns? For example:
     - Separation of duties
     - Dev/test versus generic nonproduction
-    - Different end-customers
+    - Different end customers
     - Different departments or business units
     - Different projects
 - Use a dedicated subscription for shared infrastructure (for example, Azure Active Directory, monitoring, and patching tools). You will be able to spread the cost of this shared infrastructure across app owners.
@@ -135,16 +135,15 @@ The CAF Foundation blueprint also defines and deploys Azure Policies for:
 - Initiative:
     - Enabling monitoring in Azure Security Center (89 policies).
 
-
-Follow the steps on this CAF Blueprint deployment article to [publish and assign this sample blueprint to your management group](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-foundation/deploy?azure-portal=true).
+Follow the steps on this CAF blueprint deployment article to [publish and assign this sample blueprint to your management group](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-foundation/deploy?azure-portal=true).
 
 ## Exercise: Evaluate a current environment
 
-Customers commonly attempt to add governance to existing, mature adoption efforts across multiple subscriptions. As you mature your governance practices across a portfolio, the CAF Governance Visualizer can provide insights into your exiting governance configuration.
+Customers commonly attempt to add governance to existing, mature adoption efforts across multiple subscriptions. As you mature your governance practices across a portfolio, the [CAF governance visualizer](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer?azure-portal=true) can provide insights about your current governance configuration.
 
 :::image type="content" source="../media/visualizer.png" alt-text="The CAF Governance Visualizer." border="false":::
 _Figure 7: The CAF Governance Visualizer._
 
-Deploy the [CAF governance visualizer](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer?azure-portal=true) to see how management groups, blueprints, policies, and other governance configurations have been applied across your environment.
+Deploy the CAF Governance Visualizer to see how management groups, blueprints, policies, and other governance configurations have been applied across your environment.
 
-These exercises help demonstrate a starting point or foundation for governance. In the next unit, we will build on this foundation to establish a mature Cost Management discipline.
+These exercises help to demonstrate a starting point or foundation for governance. In the next unit, we will build on this foundation to establish a mature Cost Management discipline.

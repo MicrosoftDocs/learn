@@ -55,15 +55,15 @@ _Figure 5: The Deployment Acceleration discipline._
 
 These disciplines help establish the right collection of processes, tools, and automation to address common risks and concerns.
 
-| Discipline | Risks | Sample trigger | Sample action |
+| Cloud Adoption Framework Governance discipline | Risk(s) | Sample trigger | Sample action |
 |-----------------------------|----------------|---------------|
-| Cost Management | Overspending | Monthly cloud spending is 20 percent higher than expected. | Notify the billing unit leader who will begin a review of resource usage. |
-| Cost Management | Overspending | Deployed assets are not using the allocated cpu or memory | Notify the billing unit leader and when possible automatically resize to fit actual usage. |
-| Security Baseline | Security or compliance requirements | Detect any deviation from defined security or compliance. | Notify the IT security team and when possible automate remediation. |
-| Security Baseline | Risk of improper access compromising systems or data | Traffic patterns deviate from approved network topologies | Notify the IT security team and when possible automatically close attack vectors. |
-| Resource Consistency | Operations management issues or oversights | CPU utilization for a workload is greater than 90 percent. | Notify the IT operations team and scale out additional resources to handle the load. |
-| Resource Consistency | Operations management issues or oversights | Assets that fail to meet patching or business continuity and disaster recovery requirements trigger operational compliance warning. | Notify the IT operations team and when possible automatically resolve the deviation. |
-| Identity | Improper access compromising systems or data | Assets are configured without proper role assignments or elevated privileges | Notify the IT security team and when possible automatically resolve the deviation. |
-| Deployment Acceleration | Inconsistent governance | Assets identified that are not included in required governance processes | Notify the IT governance team and when possible automatically resolve the deviation. |
+| Cost Management | The risk here is overspending. | Monthly cloud spending is 20 percent higher than expected. | Notify the billing unit leader, who will start reviewing resource usage. |
+| Cost Management | The risk here is overspending. | Deployed assets are not using the allocated CPU or memory. | Notify the billing unit leader and automatically resize to fit actual usage, when possible. |
+| Security Baseline | The risk here is the organization not meeting security or compliance requirements. | Detect any deviation from defined security or compliance. | Notify the IT security team and automate remediation, when possible. |
+| Security Baseline | The here risk is unauthorized access compromising systems or data. | Traffic patterns deviate from approved network topologies. | Notify the IT security team and automatically close attack vectors, when possible. |
+| Resource Consistency | The risks are operations management issues or oversights. | CPU utilization for a workload is greater than 90 percent. | Notify the IT operations team and scale out additional resources to handle the load. |
+| Resource Consistency | The risks here are operations management issues or oversights. | Assets that fail to meet patching or business continuity and disaster recovery requirements trigger operational compliance warning. | Notify the IT operations team and automatically resolve the deviation, when possible. |
+| Identity | The here risk is unauthorized access compromising systems or data. | Assets are configured without proper role assignments or elevated privileges. | Notify the IT security team and automatically resolve the deviation, when possible. |
+| Deployment Acceleration | The risk here is inconsistent governance. | Assets that aren't included in required governance processes have been identified | Notify the IT governance team and automatically resolve the deviation, when possible. |
 
-Breaking these risks down into disciplines will help Tailwind Traders focus on addressing tangible risks and concerns against a prioritized backlog. In following units, we will look at some technical solutions to get you started with a cloud governance foundation to support each discipline. We'll also look at some technical solutions to address the cost management related risks.
+Understanding the Cloud Adoption Framework Governance methodology and its five disciplines will help Tailwind Traders to discover and address tangible risks and concerns and address against a prioritized backlog. In the next units, we will explore technical solutions to help you get started with a cloud governance foundation to support each discipline. We'll also look at some technical solutions to address cost-management-related risks.
