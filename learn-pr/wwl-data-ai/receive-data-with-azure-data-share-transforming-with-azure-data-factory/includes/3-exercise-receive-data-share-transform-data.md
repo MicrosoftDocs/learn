@@ -42,7 +42,7 @@ Once you have filled out the mandatory marks, go to ‘Review + create’, which
 
 You’ll be redirected to the below screen, in which you navigate to create, which will deploy the Azure Data share in your resource group.
 
-   ![Product Azure Data Share](../media/azure-data-factory-create-data-share-review-create.png)
+   ![Review creation of Azure Data Share](../media/azure-data-factory-create-data-share-review-create.png)
 
 The next step is to share a dataset with Azure Data Share to an organization that Is the data consumer. 
 
