@@ -67,6 +67,8 @@ You will:
     > [!IMPORTANT]
     > Each microservice requires a different instrumentation key.
 
+    The environment variables defined within the `data` element are accessible by the service at runtime.
+
 ## Enable logging to Application Insights
 
 Logging to Application Insights has been enabled in the ordering and coupon services, but not the catalog service. Complete the following steps to implement Application Insights in the catalog service.
@@ -101,7 +103,10 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
 
         :::code language="csharp" source="../code/src/services/catalog/catalog.api/program.cs" highlight="5,12":::
 
-        The preceding changes add the Application Insights sink for Serilog to include log traces. The `Serilog.Sinks.ApplicationInsights` NuGet package provides the necessary members.
+        The preceding changes add the Application Insights sink for Serilog to include log traces. Note the following details:
+
+        - The `Serilog.Sinks.ApplicationInsights` NuGet package provides the `ApplicationInsights` extension method.
+        - The `APPINSIGHTS_INSTRUMENTATIONKEY` environment variable defined in the catalog service's Helm chart template is accessed with the .NET Core Configuration API.
 
         > [!NOTE]
         > Startup logging with Application Insights [isn't supported](/aspnet/core/fundamentals/logging/#log-during-host-construction), so it must be accomplished using another logger. This example uses Serilog with the Application Insights sink, passing the instrumentation key. Although this is the simplest way to enable logging to Application Insights during startup, it can lead to losing correlation between metrics and log traces.
