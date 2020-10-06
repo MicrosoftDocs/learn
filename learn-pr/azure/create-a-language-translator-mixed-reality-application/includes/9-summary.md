@@ -1,6 +1,6 @@
 The Global Expansion team needed a speech translation service that could be integrated into a Mixed Reality collaboration tool to enable communication across their global workforce.
 
-Azure Cognitive Services Speech Translation service was integrated into a Mixed Reality experience to deliver real-time speech translation in a target language. Without the speech translation integration, having a language barrier contributes to miscommunication and lack of inclusion for the team. With the speech translation integration, team members can engage in conversation with one another and view the translated text displayed in the app's UI.
+Azure Cognitive Services Speech Translation service was integrated into a Mixed Reality experience to deliver real-time speech translation in a target language. Without speech translation, the language barrier contributes to miscommunication and lack of inclusion. With the speech translation integration, the team can converse with one another and view translated text in the app's UI.
 
 [!INCLUDE[](../../../includes/azure-sandbox-cleanup.md)]
 

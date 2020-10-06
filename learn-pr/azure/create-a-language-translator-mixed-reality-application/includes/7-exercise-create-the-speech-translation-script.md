@@ -110,7 +110,7 @@ The UI consists of a quad, which serves as a flat surface for the text. Displaye
 > Additional helper code has been added to this script to help debug any potential issues which may occur when you run the Unity scene.
 
 1. In the **Project** window, select the **Assets** folder. This folder will be used to store the **Translation.cs** script.
-1. In the **Project** window, click the **+** icon and select **C# Script**. Name the script **Translation.cs**.
+1. In the **Project** window, select the **+** icon and select **C# Script**. Name the script **Translation.cs**.
 
     :::image type="content" source="../media/create-translation-script.png" alt-text="A screenshot of the project window. The plus icon in the top-left corner is highlighted. The translation script within the assets section is highlighted.":::
 
@@ -244,7 +244,7 @@ The UI consists of a quad, which serves as a flat surface for the text. Displaye
 
 ## Try speech translation in play mode
 
-1. In the Unity toolbar, click the **Play** icon to enter play mode.
+1. In the Unity toolbar, select the **Play** icon to enter play mode.
 
     :::image type="content" source="../media/play-mode.png" alt-text="A screenshot of the Unity editor in play mode. The play icon is highlighted.":::
 
