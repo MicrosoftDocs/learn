@@ -42,7 +42,7 @@ By default, the MRTK Speech Commands are configured to start automatically when 
 
 1. Select **Clone**.
 
-    :::image type="content" source="../media/select-clone-configuration-profile.png" alt-text="A screenshot of the Cloning Profile window. The clone button is highlighted.":::
+    :::image type="content" source="../media/select-clone-configuration-profile.png" alt-text="A screenshot of the Cloning Profile window. The clone button is highlighted to clone the Speech Translation Configuration profile.":::
 
 1. In the **Inspector** window, select **Input** to open the Input settings.
 
@@ -58,7 +58,7 @@ By default, the MRTK Speech Commands are configured to start automatically when 
 
 1. Select **Clone**.
 
-    :::image type="content" source="../media/select-clone-input-system-profile.png" alt-text="A screenshot of the Cloning Profile window. The clone button is highlighted.":::
+    :::image type="content" source="../media/select-clone-input-system-profile.png" alt-text="A screenshot of the Cloning Profile window. The clone button is highlighted to clone the default mixed reality input system profile.":::
 
 1. In the **Input** settings, expand the **Speech** settings.
 
@@ -74,7 +74,7 @@ By default, the MRTK Speech Commands are configured to start automatically when 
 
 1. Select **Clone**.
 
-    :::image type="content" source="../media/select-clone-speech-commands-profile.png" alt-text="A screenshot of the Cloning Profile window. The clone button is highlighted.":::
+    :::image type="content" source="../media/select-clone-speech-commands-profile.png" alt-text="A screenshot of the Cloning Profile window. The clone button is highlighted to clone the default mixed reality speech commands profile.":::
 
 1. In the **Speech** settings, select **Manual Start** for the **Start Behavior**.
 
