@@ -2,7 +2,7 @@ Let's set up the environment to deploy a helm chart to AKS using GitHub Actions.
 
 ## Check Helm installation
 
-1. We need to install Helm if we want to continue our deployment pipeline. In Cloud Shell, the CLI is already installed, so sign in to Azure Cloud Shell with the account you want to deploy resources into.
+1. You need to install Helm if you want to continue your deployment pipeline. In Cloud Shell, the CLI is already installed. Sign in to Azure Cloud Shell with the account you want to deploy resources into.
 
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
@@ -21,7 +21,7 @@ Let's set up the environment to deploy a helm chart to AKS using GitHub Actions.
 1. `cd` into the new directory and delete the `charts` and `templates` folders
 1. Create a new empty `templates` folder using `mkdir templates`
 
-Right now, we have created an empty chart. To start building the workloads, we'll leverage what others have already built, which means that we'll use the `yaml` files that lie outside of this new directory we created.
+Right now, you have created an empty chart. To start building the workloads, you'll leverage what others have already built, which means that you'll use the `yaml` files that lie outside of this new directory you created.
 
 Let's move the old `kubernetes` files to the `templates` folder.
 
@@ -147,11 +147,11 @@ In this section, we'll go through each of the template files to set them up and 
                   name: http
     ```
 
-    This means that, by default, we'll deploy this resource into the `staging` namespace. If the installation has a `namespace` option, we'll use that instead.
+    This means that, by default, you'll deploy this resource into the `staging` namespace. If the installation has a `namespace` option, you'll use that instead.
 
 1. Let's jump to the `image` key.
 
-    It's a good practice to split up the `registry`, `tag`, and `image` parts of the image name. So let's add two new template variables to this part
+    It's a good practice to split up the `registry`, `tag`, and `image` parts of the image name. Add two new template variables to this part.
 
     ```yml
     apiVersion: apps/v1
@@ -183,19 +183,19 @@ In this section, we'll go through each of the template files to set them up and 
                   name: http
     ```
 
-    In this section we're splitting the three sections of the image so we can better work with them separately.
+    In this section you're splitting the three sections of the image so you can better work with them separately.
 
 1. Save and close the file.
 1. Open the `values.yaml` file in the root of the `contoso-website` directory
 1. Remove all contents within the file, you should end up with an empty YAML file. Now let's include our content in it.
 
-     You saw earlier that we used `{{ .Release.Namespace }}`, so `Release` is a __variable scope__. Each variable scope has different default values and variables.
+     You saw earlier that you used `{{ .Release.Namespace }}`, so `Release` is a __variable scope__. Each variable scope has different default values and variables.
 
     Helm uses the `values.yaml` file to retrieve all the template values that start with `{{ .Values }}`, the `values.yaml` file is another variable scope.
 
-    The structure of this file should follow the same structure we're using when calling our variables. So let's take a quick look in the `deployment.yaml` file we edited and check out the structure.
+    The structure of this file should follow the same structure you're using when calling our variables. So let's take a quick look in the `deployment.yaml` file you edited and check out the structure.
 
-    Notice we're using `.Values.image.registry`, `.Values.image.name`, and `.Values.image.tag`, so let's create the `values.yaml` file correctly.
+    Notice you're using `.Values.image.registry`, `.Values.image.name`, and `.Values.image.tag`. Create the `values.yaml` file correctly.
 
     ```yml
     image:
@@ -212,7 +212,7 @@ In this section, we'll go through each of the template files to set them up and 
 
 1. Find and open the `service.yaml` file
 
-    Add a new key called `namespace` within the `metadata` section and use the same value we put in the `deployment.yaml` file
+    Add a new key called `namespace` within the `metadata` section and use the same value you put in the `deployment.yaml` file
 
     ```yml
     apiVersion: v1
@@ -239,7 +239,7 @@ Let's change the `ingress.yaml` file.
 
 1. Find and open the `ingress.yaml` file
 
-    Add a new key called `namespace` within the `metadata` section and use the same value we put in the `deployment.yaml` file
+    Add a new key called `namespace` within the `metadata` section and use the same value you put in the `deployment.yaml` file
 
     ```yml
     apiVersion: v1
@@ -260,7 +260,7 @@ Let's change the `ingress.yaml` file.
                 path: /
     ```
 
-    Jump to the `host` key. In this part we'll need to create different hosts for different deployments, we can't have users accessing the `staging` namespace through production URLs. So let's concatenate the namespace in the hostname, the HTTP Application Routing add-on will do the naming resolution for us.
+    Jump to the `host` key. In this part you'll need to create different hosts for different deployments, you can't have users accessing the `staging` namespace through production URLs. Concatenate the namespace in the hostname, the HTTP Application Routing add-on will do the naming resolution.
 
     ```yml
     apiVersion: v1
@@ -281,7 +281,7 @@ Let's change the `ingress.yaml` file.
                 path: /
     ```
 
-    Now let's add a new template variable that will be our DNS zone name
+    Now add a new template variable that will be your DNS zone name
 
     ```yml
     apiVersion: v1
@@ -303,7 +303,7 @@ Let's change the `ingress.yaml` file.
     ```
 
 1. Save and close the file
-1. Open the `values.yaml` file, let's add the `dns.name` key, so it looks like this
+1. Open the `values.yaml` file, let's add the `dns.name` key, so it looks like this:
 
     ```yml
     image:

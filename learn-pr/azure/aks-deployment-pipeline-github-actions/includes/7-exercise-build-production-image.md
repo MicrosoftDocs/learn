@@ -1,8 +1,8 @@
-In the previous exercise, we built the staging workflow for building and publishing the image. Now let's recap the production workflow.
+In the previous exercise, you built the staging workflow for building and publishing the image. Now let's recap the production workflow.
 
 :::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="The designed pipeline":::
 
-We'll build the tagged version using another workflow.
+You'll build the tagged version using another workflow.
 
 ## Build the Action Workflow
 
@@ -66,7 +66,7 @@ We'll build the tagged version using another workflow.
 
 ### Create the trigger
 
-1. Next up, we'll change the default triggers in the `on` key.
+1. Next up, you'll change the default triggers in the `on` key.
 
     Let's now remove the second part and leave just the `push` tags. The keys should be like this afterwards:
 
@@ -78,7 +78,7 @@ We'll build the tagged version using another workflow.
         branches: [ main ]
     ```
 
-    Let's remove the `branches` key and replace it by the `tags` key. This tag says that we'll only run this workflow on determined tags.
+    Remove the `branches` key and replace it by the `tags` key. This tag says that you'll only run this workflow on determined tags.
 
     ```yml
     name: Build and push the tagged build to production
@@ -89,15 +89,15 @@ We'll build the tagged version using another workflow.
           - 'v*'
     ```
 
-    In this case, we'll only run the workflow if the tag follows the `v*` pattern, which includes `v1.0.0`.
+    In this case, you'll only run the workflow if the tag follows the `v*` pattern, which includes `v1.0.0`.
 
 ### Build and push the image
 
-1. Now, let's work on the jobs we're going to run.
+1. Now, let's work on the jobs you're going to run.
 
-    In this part, we'll be addressing both the build and deploy steps from the diagram.
+    In this part, you'll address both the build and deploy steps from the diagram.
 
-    The `jobs` key is already set to run on `ubuntu-latest`, which is the environment we want this workflow to run.
+    The `jobs` key is already set to run on `ubuntu-latest`, which is the environment you want this workflow to run.
 
 1. Rename the `build` key to `build_push_image`.
 
@@ -119,7 +119,7 @@ We'll build the tagged version using another workflow.
           - uses: actions/checkout@v2
     ```
 
-    We leave the checkout option like before.
+    Leave the checkout option like before.
 
 1. In the right panel, search for "Build and push docker images". Click on the first result published by **Docker**.
 
@@ -191,7 +191,8 @@ We'll build the tagged version using another workflow.
     This action gives us several options to tweak the usage. You can learn more about each one of them in the [documentation page](https://github.com/docker/build-push-action/tree/releases/v1).
 
 1. In the `name` key, rename the value to "Build and push production image"
-1. We'll only use a handful of the parameters given by this action. So let's set them and delete the others.
+
+1. You'll only use a handful of the parameters given by this action. Set them and delete the others.
 
     Add the values according to the table below.
 
@@ -242,13 +243,16 @@ We'll build the tagged version using another workflow.
 
 1. Commit the changes by clicking the green button on the top right. Give the commit a message and click the "Commit new file" button
 
-    This time, the action won't be triggered, because we didn't push a new tag. But our earlier action will trigger and build a new `latest` image.
+    This time, the action won't be triggered, because you didn't push a new tag. But our earlier action will trigger and build a new `latest` image.
 
 ### Check your work
 
 1. Open your cloned repository in Azure Cloud Shell. Run `git tag -a v1.0.0 -m'First tag'`
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
+
 1. Run `git push --tags`
+
 1. Open the "Actions" tab and check the running process
+
 1. Run `az acr repository show-tags --repository contoso-website --name <ACR_NAME> -o table` in the Azure Cloud Shell to confirm there are two tags listed in the results

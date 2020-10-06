@@ -1,6 +1,6 @@
-We have successfully built and pushed both of our production and staging images to the ACR. It's time to automate all the steps and make the machine work for us.
+You have successfully built and pushed both of your production and staging images to the ACR. It's time to automate all the steps and make the machine work for you.
 
-But there's a problem. Our workloads aren't generic enough, this way we can't deploy them automatically, we need to change the files every time, manually.
+But there's a problem. Your workloads aren't generic enough, this way you can't deploy them automatically, you need to change the files every time, manually.
 
 ## Helm charts
 
@@ -8,9 +8,9 @@ Helm is an open-source packaging tool that helps you install and manage the life
 
 A chart is a group of one or more workloads together with some configuration files and a chart description file. Those files together compose a unit that can be easily deployed to a Kubernetes cluster.
 
-One of the greatest advantages of using Helm is that we don't need to deploy all files individually. Instead, we can issue a single command to deploy multiple files in a chart, or even multiple dependent charts with an automatic dependency resolution.
+One of the greatest advantages of using Helm is that you don't need to deploy all files individually. Instead, you can issue a single command to deploy multiple files in a chart, or even multiple dependent charts with an automatic dependency resolution.
 
-The structure of a chart directory is this:
+The structure of a chart directory is as follows:
 
 :::image type="content" source="../media/8-helm-chart-tree.png" alt-text="A Helm chart tree":::
 
@@ -26,7 +26,7 @@ Let's go through each file and directory to understand their meaning.
 > [!TIP]
 > You can check all the documentation on Helm charts in the [official docs](https://helm.sh/docs/chart_template_guide/getting_started/)
 
-The other feature that makes Helm stand out is, in fact, the feature that we'll need the most. The ability to create and manipulate templates.
+The other feature that makes Helm stand out is, in fact, the feature that you'll need the most. The ability to create and manipulate templates.
 
 ## Helm templates
 
@@ -63,15 +63,15 @@ spec:
               name: http
 ```
 
-See the `!IMAGE!` placeholder? That's a place where we should put our repository and image name. If we were doing a manual replacement, we'd do something like this:
+See the `!IMAGE!` placeholder? That's a place where we should put our repository and image name. If you're doing a manual replacement, you'd do something like this:
 
 ```bash
 $ sed 's+!IMAGE!+'"$ACR_NAME"'/contoso-website+g' kubernetes/deployment.yaml
 ```
 
-This would replace `!IMAGE!` in the file by the name of our ACR and the name of our image and print out the result, so we can pipe this command to a `kubectl apply -f -` and create our workloads.
+This command would replace `!IMAGE!` in the file by the name of our ACR and the name of our image and print out the result, so you can pipe this command to a `kubectl apply -f -` and create our workloads.
 
-However this isn't elegant and it's not efficient. Helm comes with templating natively, we could replace `!IMAGE!` by `{{.Values.containerImage}}`:
+However this solution isn't elegant and it's not efficient. Helm comes with templating natively, you could replace `!IMAGE!` by `{{.Values.containerImage}}`:
 
 ```yml
 apiVersion: apps/v1
@@ -102,13 +102,13 @@ spec:
               name: http
 ```
 
-And then we just need to run the Helm command to install the workload passing this argument:
+And then you just need to run the Helm command to install the workload passing this argument:
 
 ```bash
 $ helm install contoso-website ./chart-location \
  --set containerImage="$ACR_NAME/contoso-website"
 ```
 
-Besides this simple feature, Helm also uses template functions, which allows us to use more complex logic to include, for example, default and required values. This is something that is a bit more complicated on bash.
+Besides this simple feature, Helm also uses template functions, which allows us to use more complex logic to include, for example, default and required values.
 
-So, to make our CI pipeline more efficient, let's build the helm chart for the company's website.
+To make our CI pipeline more efficient, let's build the helm chart for the company's website.

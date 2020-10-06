@@ -1,6 +1,6 @@
-Your company was experiencing a huge delay in simple day-to-day operations such as deployments and image builds. You thought it'd be a good idea to solve this problem using CI/CD with GitHub Actions.
+Your company was experiencing a huge delay in simple day-to-day operations such as deployments and image builds. You thought it would be a good idea to solve this problem using CI/CD with GitHub Actions.
 
-By using these concepts you were able to make image building and application deployment completely automatic. First you created a workflow that was triggered whenever someone pushed to the main branch, building and pushing the application image to the company's ACR. Then, whenever someone created a release out of that push, a new pipeline would trigger and deploy the application to the AKS cluster without human interference.
+By using these concepts, you were able to make image building and application deployment automatic. First you created a workflow that was triggered whenever someone pushed to the main branch, building and pushing the application image to the company's ACR. Then, whenever someone created a release out of that push, a new pipeline would trigger and deploy the application to the AKS cluster without human interference.
 
 Without this solution, your team would still be losing time by manually building and deploying application images at every new feature on the website. In the long-run, you've saved the company thousands of dollars in time.
 

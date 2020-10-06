@@ -4,21 +4,21 @@ Let's recap a bit our designed pipeline.
 
 :::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="The designed pipeline":::
 
-Let's build this pipeline using the actions workflow.
+Build this pipeline using the actions workflow.
 
 ## Build the Action Workflow
 
-1. To start building our pipeline, let's go to the fork of the sample repository in the GitHub website. And click on the "Actions" tab.
+1. To start building your pipeline, go to the fork of the sample repository in the GitHub website and select the "Actions" tab.
 
     :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Open the actions tab in the GitHub website":::
 
-1. Click on the "set up a workflow yourself" link just below the header. A new editor with a file in it should be opened
+1. Select the "set up a workflow yourself" link just below the header. A new editor with a file in it should be opened
 
     :::image type="content" source="../media/6-2-example-editor.png" alt-text="Example file being edited":::
 
     As you can see, the pipeline is just a file within the `.github/workflows` directory in your repository.
 
-    Also, GitHub provides us with many boilerplates we need to build most of the pipelines. You'll have an example file like this:
+    Also, GitHub provides you with the prebuilt components you need to build most of the pipelines. You'll have an example file like this:
 
     ```yml
     # This is a basic workflow to help you get started with Actions
@@ -68,11 +68,12 @@ Let's build this pipeline using the actions workflow.
 
 ### Create the trigger
 
-1. Next up, we'll change the default triggers in the `on` key.
+1. Next, change the default triggers in the `on` key.
 
     The default file comes with two triggers:
 
     1. Any push to the `main` branch
+
     1. Any pull request on the `main` branch
 
     Let's remove the second part and leave just the `push` tags. The keys should be like this afterwards:
@@ -89,13 +90,13 @@ Let's build this pipeline using the actions workflow.
 
 ### Build and push the image
 
-1. Now, let's work on the jobs we're going to run.
+1. Now, let's work on the jobs you're going to run.
 
-    In this part, we'll be addressing both the build and deploy steps from the diagram.
+    In this part, you'll address both the build and deploy steps from the diagram.
 
     GitHub workflows are divided into jobs, and these jobs are divided in steps. Each step can have multiple commands and use multiple actions to be executed.
 
-    The `jobs` key is already set to run on `ubuntu-latest`, which is the environment we want this workflow to run.
+    The `jobs` key is already set to run on `ubuntu-latest`, which is the environment you want this workflow to run.
 
 1. Rename the `build` key to `build_push_image`.
 
@@ -116,9 +117,9 @@ Let's build this pipeline using the actions workflow.
           - uses: actions/checkout@v2
     ```
 
-    See that we already have a step using the `checkout` action. This action is responsible for cloning the repository into the job environment. This is the equivalent to the first action in the "Build steps" in the diagram, so this is taken care of.
+    See that you already have a step using the `checkout` action. This action is responsible for cloning the repository into the job environment. This is the equivalent to the first action in the "Build steps" in the diagram, so this is taken care of.
 
-    Let's add another action to build our Docker image.
+    Add another action to build our Docker image.
 
 1. In the right panel, search for "Build and push docker images". Click on the first result published by **Docker**.
 
@@ -189,7 +190,7 @@ Let's build this pipeline using the actions workflow.
     This action gives us several options to tweak the usage. You can learn more about each one of them in the [documentation page](https://github.com/docker/build-push-action/tree/releases/v1).
 
 1. In the `name` key, rename the value to "Build and push staging image"
-1. We'll only use a handful of the parameters given by this action. So let's set them and delete the others.
+1. You'll only use a handful of the parameters given by this action. Set them and delete the others.
 
     Add the values according to the table below.
 
@@ -231,7 +232,7 @@ Let's build this pipeline using the actions workflow.
 
     :::image type="content" source="../media/6-5-commit-staging.png" alt-text="Commit the workflow to the repo":::
 
-You'll notice that, right after you commit the file, a new build will start on the "Actions" tab. This build will fail, because we have not set the secrets yet!
+You'll notice that, right after you commit the file, a new build will start on the "Actions" tab. This build will fail, because you haven't set the secrets yet!
 
 :::image type="content" source="../media/6-6-first-build.png" alt-text="First failed build":::
 
@@ -242,7 +243,7 @@ You'll notice that, right after you commit the file, a new build will start on t
 1. Create `ACR_NAME` secret
 
     1. Put `ACR_NAME` in the "Name" field.
-    1. Run the following command in the Azure Cloud Shell to obtain the login server of the ACR we created earlier.
+    1. Run the following command in the Azure Cloud Shell to obtain the login server of the ACR you created earlier.
 
     ```azurecli-interactive
     az acr list --query "[?contains(resourceGroup, 'mslearn-gh-pipelines')].loginServer" -o table
@@ -253,7 +254,7 @@ You'll notice that, right after you commit the file, a new build will start on t
 1. Create `ACR_LOGIN` secret
 
     1. Put `ACR_LOGIN` in the "Name" field.
-    1. If you saved the values presented to you in the end of the set-up script, copy the "ACR Login Username" value. If not, run the following command in the Azure Cloud Shell to obtain the login of the ACR we created earlier.
+    1. If you saved the values presented to you in the end of the set-up script, copy the "ACR Login Username" value. If not, run the following command in the Azure Cloud Shell to obtain the login of the ACR you created earlier.
 
     ```azurecli-interactive
     az acr credential show --name <ACR_NAME> --query "username" -o table
@@ -264,7 +265,7 @@ You'll notice that, right after you commit the file, a new build will start on t
 1. Create `ACR_PASSWORD` secret
 
     1. Put `ACR_PASSWORD` in the "Name" field.
-    1. If you saved the values presented to you in the end of the set-up script, copy the "ACR Login Username" value. If not, run the following command in the Azure Cloud Shell to obtain the login of the ACR we created earlier.
+    1. If you saved the values presented to you in the end of the set-up script, copy the "ACR Login Username" value. If not, run the following command in the Azure Cloud Shell to obtain the login of the ACR you created earlier.
 
     ```azurecli-interactive
     az acr credential show --name <ACR_NAME> --query "passwords[0].value" -o table
