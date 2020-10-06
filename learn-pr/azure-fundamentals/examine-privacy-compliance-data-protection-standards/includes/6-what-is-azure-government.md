@@ -2,6 +2,15 @@
 
 :::image type="content" source="../media/6-azure-government.png" alt-text="A screenshot of the Microsoft Azure Government website home page.":::
 
-Azure Government services handle data that is subject to certain government regulations and requirements, such as FedRAMP, NIST 800.171 (DIB), ITAR, IRS 1075, DoD L4, and CJIS. To provide the highest level of security and compliance, Azure Government uses physically isolated datacenters and networks (located only in the US). Azure Government customers (US federal, state, and local government or their partners) are subject to validation of eligibility.
+Azure Government services handle data that is subject to certain government regulations and requirements:
 
-Azure Government provides the broadest compliance and Level 5 Department of Defense (DoD) approval. Azure Government is [available in eight geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies?azure-portal=true) and offers the most compliance certifications of any cloud provider.
+- Federal Risk and Authorization Management Program (FedRAMP)
+- National Institute of Standards and Technology (NIST) 800.171 Defense Industrial Base (DIB)
+- International Traffic in Arms Regulations (ITAR)
+- Internal Revenue Service (IRS) 1075
+- Department of Defense (DoD) L4
+- Criminal Justice Information Service (CJIS)
+
+To provide the highest level of security and compliance, Azure Government uses physically isolated datacenters and networks located only in the US. Azure Government customers, such as the US federal, state, and local government or their partners, are subject to validation of eligibility.
+
+Azure Government provides the broadest compliance and Level 5 DoD approval. Azure Government is [available in eight geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies?azure-portal=true) and offers the most compliance certifications of any cloud provider.
