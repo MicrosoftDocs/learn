@@ -40,7 +40,7 @@ quiz:
     choices:
     - content: "You might have some data loss."
       isCorrect: true
-      explanation: "There's delay before data is copied from the primary region and written to the secondary because data is copied asynchronously. Check the last sync time when you initiate a failover."
+      explanation: "There's delay before data is copied from the primary region and written to the secondary because data is copied asynchronously. After you failover, compare the last sync time and last failover time."
     - content: "Data in the primary region is inaccessible to users."
       isCorrect: false
       explanation: "Given the scenario, the inaccessibility is because of the outage. "
