@@ -1,6 +1,6 @@
 Solidity is an object-oriented language for writing smart contracts.
 
-Smart contracts are programs stored inside a blockchain, and they specify the rules and behavior for digital assets are transferred. You use Solidity to program smart contracts for the [Ethereum blockchain platform](https://ethereum.org/?azure-portal=true). Smart contracts contain state and programmable logic. Transactions instantiate smart contracts and execute functions that change state. Thus, smart contracts enable you to create a business workflow.
+Smart contracts are programs stored inside a blockchain, and they specify the rules and behavior for digital assets are transferred. You use Solidity to program smart contracts for the [Ethereum blockchain platform](https://ethereum.org/?azure-portal=true). Smart contracts contain state and programmable logic. Transactions result in functions executed in smart contracts. Thus, smart contracts enable you to create a business workflow.
 
 ## Overview
 
