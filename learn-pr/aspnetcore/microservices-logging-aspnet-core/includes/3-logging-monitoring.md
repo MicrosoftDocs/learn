@@ -287,3 +287,37 @@ Telemetry is used to drive [Smart Detection](/azure/azure-monitor/app/proactive-
 Application Insights also makes a map of all components and dependencies of your application, that gives you a high level overview of the state of the components and the communications between them.
 
 In the next exercise we'll explore some of the key features you can get from Application Insights.
+
+## Verify deployment to AKS
+
+Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
+
+1. Run the following command to display the various app URLs:
+
+    ```bash
+    cat ~/clouddrive/aspnet-learn/deployment-urls.txt
+    ```
+
+    A variation of the following output appears:
+
+    ```console
+    The eShop-Learn application has been deployed to "http://203.0.113.55" (IP: 203.0.113.55).
+
+    You can begin exploring these services (when ready):
+    - Centralized logging       : http://203.0.113.55/seq/#/events?autorefresh (See transient failures during startup)
+    - General application status: http://203.0.113.55/webstatus/ (See overall service status)
+    - Web SPA application       : http://203.0.113.55/
+    ```
+
+1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. A green checkmark icon denotes a healthy service. The page refreshes automatically, every 10 seconds.
+
+    :::image type="content" source="../media/4-implement-app-insights/health-check.png" alt-text="health checks status dashboard" border="true" lightbox="../media/4-implement-app-insights/health-check.png":::
+
+    > [!NOTE]
+    > While the app is starting, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
+
+1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
+
+    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../../media/microservices/eshop-spa.png":::
+
+You've successfully verified that the app was deployed to AKS and is working properly.
