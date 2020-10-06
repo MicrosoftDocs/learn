@@ -39,7 +39,7 @@ For Mixed Reality apps that require voice input from a microphone, it's recommen
 
 A `threadLocker` object is created to synchronize access to data. Thread coordination is a concept used in asynchronous programming to make UI responsive to the end user.
 
-## ButtonClick() Method
+## ButtonClick() method
 
 The logic for managing speech translation is stored inside a method that is called after the user presses the microphone button. This method is referred to as `ButtonClick()`. 
 

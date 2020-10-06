@@ -3,7 +3,7 @@
   title: Knowledge check
   metadata:
     title: Knowledge check
-    description: Knowledge check
+    description: Check your knowledge
     ms.date: 10/06/2020
     author: aprilspeight
     ms.author: apspeigh
@@ -13,7 +13,7 @@
   content: |
       [!include[](includes/8-knowledge-check.md)]
   quiz:
-    title: Knowledge Check
+    title: Knowledge check
     questions:
     - content: "If a Mixed Reality experience uses the Mixed Reality Toolkit and the Cognitive Services Speech SDK, the MRTK Speech Commands Start Behavior should be set to:"
       choices:

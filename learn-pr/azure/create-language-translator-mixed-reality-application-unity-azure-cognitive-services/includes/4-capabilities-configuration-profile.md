@@ -1,6 +1,6 @@
 Integrating features into Mixed Reality apps that use APIs and input sources such as a microphone or camera requires you enable specific capabilities in the Unity Project Settings. In the collaboration tools example, there's a need for a microphone to capture speech also internet for using the Azure Cognitive Services Speech service. Here, you'll learn about the APIs and resources that must be enabled to access a Mixed Reality app created in Unity.
 
-## MRTK Speech Commands Start Behavior
+## MRTK speech commands start behavior
 
 By default, the MRTK Speech Commands are configured to start automatically when a Unity scene loads. This setting enables you to use speech to manipulate holograms or do other actions such as toggling the Diagnostics panel with the command "toggle diagnostics". Because of this setting, the MRTK Speech Commands must be configured to not interfere with the Cognitive Services Speech SDK unless manually enabled. The MRTK Speech Commands **Start Behavior** determines whether the Speech Commands are active when a scene starts. If your Mixed Reality experience uses the Cognitive Services Speech SDK, the MRTK Speech Commands Start Behavior should be set to **Manual Start**.
 

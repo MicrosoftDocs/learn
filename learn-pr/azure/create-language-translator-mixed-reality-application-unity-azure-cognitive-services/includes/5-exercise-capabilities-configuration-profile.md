@@ -20,7 +20,7 @@ In Unity, specific capabilities must be enabled to use APIs and resources such a
 1. The MRTK Project Configurator window may open after the Mixed Reality Toolkit is imported into the project. If not, in the top navigation menu, navigate to **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project**. In the **Audio spatializer** drop down, select **MS HRTF Spatializer**.
 1. In the top navigation menu, navigate to **Mixed Reality Toolkit** > **Add to Scene and Configure** to add the **Mixed Reality Toolkit** to the scene.
 
-## Change Speech Commands Start Behavior
+## Change speech commands start behavior
 
 By default, the MRTK Speech Commands are configured to start automatically when a Unity scene loads. Since this app requires speech input, the MRTK Speech Commands **Start Behavior** must be set to **Manual Start** to not interfere with the Cognitive Services Speech SDK. Given the default configuration profiles that come with the Mixed Reality Toolkit cannot be modified, the configuration profile settings must be cloned to modify the MRTK Speech Commands **Start Behavior**.
 
@@ -80,7 +80,7 @@ By default, the MRTK Speech Commands are configured to start automatically when 
 
     :::image type="content" source="../media/start-behavior.png" alt-text="A screenshot of the Speech Commands profile. The Start Behavior setting is highlighted. The drop option Manual Start is selected.":::
 
-## Add Capabilities
+## Add capabilities
 
 To enable APIs or resources (such as a microphone) to access the app, you must enable the capability in the Unity Project Settings.
 

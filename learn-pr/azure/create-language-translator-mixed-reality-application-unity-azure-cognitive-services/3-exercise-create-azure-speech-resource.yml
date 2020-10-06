@@ -3,7 +3,7 @@ uid: learn.azure.create-language-translator-mixed-reality-application-unity-azur
 title: Exercise - Create an Azure Speech Service resource
 metadata:
   title: Exercise - Create an Azure Speech Service resource
-  description: Exercise - Create an Azure Speech Service resource
+  description: Use the Azure portal to create a Speech Service resource in Azure
   ms.date: 10/06/2020
   author: aprilspeight
   ms.author: apspeigh

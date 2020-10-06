@@ -3,7 +3,7 @@ uid: learn.azure.create-language-translator-mixed-reality-application-unity-azur
 title: The speech translation script
 metadata:
   title: The speech translation script
-  description: The speech translation script
+  description: Learn about creating a C# script that performs speech recognition and translation
   ms.date: 10/06/2020
   author: aprilspeight
   ms.author: apspeigh

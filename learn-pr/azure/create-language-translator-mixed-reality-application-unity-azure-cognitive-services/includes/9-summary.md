@@ -4,7 +4,7 @@ Azure Cognitive Services Speech Translation service was integrated into a Mixed 
 
 [!INCLUDE[](../../../includes/azure-sandbox-cleanup.md)]
 
-## Further Reading
+## Further reading
 
 - View a list of [languages supported](https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support#speech-translation?azure-portal=true) by the Speech Translation API.
 - Learn more about [Custom Translator](https://docs.microsoft.com/azure/cognitive-services/translator/custom-translator/overview?azure-portal=true).

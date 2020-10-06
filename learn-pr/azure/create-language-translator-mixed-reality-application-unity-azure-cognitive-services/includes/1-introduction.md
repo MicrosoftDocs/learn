@@ -4,7 +4,7 @@ In this module, you'll create a Mixed Reality speech translation application tha
 
 By the end of this module, you'll be able to integrate Speech Translation as a feature into a Mixed Reality application.
 
-## Learning Objectives
+## Learning objectives
 
 - Configure a Unity project for Azure Speech Services
 - Integrate Azure Speech Services with a Windows Mixed Reality application
