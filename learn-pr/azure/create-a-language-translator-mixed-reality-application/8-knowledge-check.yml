@@ -19,19 +19,19 @@
       choices:
         - content: "Auto Start"
           isCorrect: false
-          explanation: "By default, the MRTK Speech Commands are configured to start automatically when a Unity scene loads. Although this enables the user to use speech to manipulate holograms, this interferes with the Cognitive Services Speech SDK."
+          explanation: "By default, the MRTK Speech Commands are configured to start automatically when a Unity scene loads. Although this setting enables the user to use speech to manipulate holograms, this setting interferes with the Cognitive Services Speech SDK."
         - content: "Manual Start"
           isCorrect: true
           explanation: "The MRTK Speech Commands must be configured to not interfere with the Cognitive Services Speech SDK unless manually enabled."
         - content: "Disabled"
           isCorrect: false
           explanation: "There are only two Start Behavior options: Auto Start and Manual Start."
-    - content: "How can industry or organization specific terminology be included in speech translation?"
+    - content: "How can industry or organization-specific terminology be included in speech translation?"
       choices:
         - content: "Using Custom Translator, a custom translation system can be trained and deployed using parallel documents or dictionary data."
           isCorrect: true
           explanation: "Custom Translator enables developers to build customized neural machine translation (NMT) systems without the need for machine learning expertise."
-        - content: "Including custom terminology in speech translation requires extensive machine learning expertise. Therefore, this feature is not available."
+        - content: "Including custom terminology in speech translation requires extensive machine learning expertise. As such, this feature isn't available."
           isCorrect: false
           explanation: "Custom Translator enables developers to build customized neural machine translation (NMT) systems without the need for machine learning expertise."
         - content: "Using Custom Translator, a custom translation system can be trained and deployed by uploading recorded audio conversations."

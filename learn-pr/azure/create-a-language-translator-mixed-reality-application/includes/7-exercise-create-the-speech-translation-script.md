@@ -1,16 +1,16 @@
-In Unity, displaying the result from an API integration within a Mixed Reality app requires adding and configuring UI elements to the scene. To display speech translation from the Azure Cognitive Services Speech Translation service, a quad, text and button must be added to the scene and assigned to their respective properties in the corresponding C# script. In addition, your Azure credentials must be validated to use the Speech service. Here, you'll add MRTK UI elements to a Unity scene and create a script that uses the Cognitive Services Speech SDK for translation.
+In Unity, displaying the result from an API integration within a Mixed Reality app requires adding and configuring UI elements to the scene. To display speech translation from the Azure Cognitive Services Speech Translation service, a quad, text, and button must be added to the scene and assigned to their respective properties in the corresponding C# script. Also, your Azure credentials must be validated to use the Speech service. Here, you'll add MRTK UI elements to a Unity scene and create a script that uses the Cognitive Services Speech SDK for translation.
 
 ## Create UI
 
-A parent object **TranslationUI** is created to store the UI elements inside the object as it's children. Storing the UI elements as the children of **TranslationUI** not only helps keep the project hierarchy organized but also enables the UI elements to inherit properties from the parent such as the Transform.
+A parent object **TranslationUI** is created to store the UI elements inside the object as its children. Storing the UI elements as the children of **TranslationUI** not only helps keep the project hierarchy organized but also enables the UI elements to inherit properties from the parent such as the Transform.
 
-The UI consists of a quad which serves as a flat surface for the text. Displayed on top of the quad is text. The top portion of the quad contains the recognized text whereas the bottom displays the translated speech. The UI text elements are similar in setup. Once one text element is created and configured, you can duplicate to save time creating the others.
+The UI consists of a quad, which serves as a flat surface for the text. Displayed on top of the quad is text. The top portion of the quad contains the recognized text and the bottom displays the translated speech. The UI text elements are similar in setup. Once one text element is created and configured, you can duplicate to save time creating the others.
 
-:::image type="content" source="../media/translator-ui-final.png" alt-text="A screenshot of the complete translator UI. The label Recognized Speech is at the top followed by the label Translation at the bottom. There is blank space after each label to provide room for the Azure result.":::
+:::image type="content" source="../media/translator-ui-final.png" alt-text="A screenshot of the complete translator UI. The label Recognized Speech is at the top followed by the label Translation at the bottom. There's blank space after each label to provide room for the Azure result.":::
 
 ### Create a Translation UI GameObject to store the UI
 
-1. In the **Hierarchy** window, click the **+** icon and select **Create Empty**.
+1. In the **Hierarchy** window, select the **+** icon and select **Create Empty**.
 
     :::image type="content" source="../media/create-empty.png" alt-text="A screenshot of the hierarchy window. The plus icon and create empty menu option are highlighted.":::
 
@@ -18,13 +18,13 @@ The UI consists of a quad which serves as a flat surface for the text. Displayed
 
     :::image type="content" source="../media/gameobject-properties.png" alt-text="A screenshot of the hierarchy and inspector windows. The Game Object object is highlighted in the hierarchy window. The object's properties is highlighted in the inspector window.":::
 
-1. In the **Inspector** window, name the GameObject **Translation UI** and change the **Transform Position** to **0**, **0**, **0.8**. This moves the object away from the user which later helps to display the UI elements in front of the user.
+1. In the **Inspector** window, name the GameObject **Translation UI** and change the **Transform Position** to **0**, **0**, **0.8**. This setting moves the object away from the user, which later helps to display the UI elements in front of the user.
 
-    :::image type="content" source="../media/translation-ui-properties.png" alt-text="A screenshot of the Translation UI object's properties. The name of the property is highlighted in addition to the transform position values. The x value is 0. The y value is 0. The z value is 0 point 8.":::
+    :::image type="content" source="../media/translation-ui-properties.png" alt-text="A screenshot of the Translation UI object's properties. The name of the property and the transform position values are highlighted. The x value is 0. The y value is 0. The z value is 0 point 8.":::
 
 ### Add a Quad GameObject
 
-1. To add the object as child of **Translation UI**, in the **Hierarchy** window, select the **Translation UI** object. Next, right click the object and select **3D Object** > **Quad**.
+1. To add the object as child of **Translation UI**, in the **Hierarchy** window, select the **Translation UI** object. Next, right-click the object and select **3D Object** > **Quad**.
 
     :::image type="content" source="../media/add-quad-object.png" alt-text="A screenshot of the Hierarchy window with the translation UI object highlighted. The menu is open with two selections highlighted. The first highlighted selection is 3 D object. The second highlighted selection is quad.":::
 
@@ -33,7 +33,7 @@ The UI consists of a quad which serves as a flat surface for the text. Displayed
     :::image type="content" source="../media/scene-gizmo.png" alt-text="A screenshot of the Unity editor Scene window. The play gizmo is highlighted.":::
 
 1. Select the **Quad** object in the **Hierarchy** window. The Quad's properties will display in the **Inspector** window.
-1. In the **Inspector** window, change the Quad's **Transform Scale** to **0.8**, **0.5**, **0.1**. This will make the quad rectangular.
+1. In the **Inspector** window, change the Quad's **Transform Scale** to **0.8**, **0.5**, **0.1**. This setting will make the quad rectangular.
 
     :::image type="content" source="../media/quad-properties.png" alt-text="A screenshot of the quad object's properties. In the hierarchy window, the quad object is highlighted. In the inspector window, the scale values are highlighted. The x value is 0 point 8. The y value is 0 point 5. The z value is 0 point 1.":::
 
@@ -47,7 +47,7 @@ The UI consists of a quad which serves as a flat surface for the text. Displayed
 
 ### Add text to display on the Quad GameObject
 
-1. To add the text object as child of **Translation UI**, in the **Hierarchy** window, select the **Translation UI** object. Next, right click the object and select **3D Object** > **Text - TextMeshPro**.
+1. To add the text object as child of **Translation UI**, in the **Hierarchy** window, select the **Translation UI** object. Next, right-click the object and select **3D Object** > **Text - TextMeshPro**.
 
     :::image type="content" source="../media/add-text-object.png" alt-text="A screenshot of the Hierarchy window. The translation U I object is highlighted. A menu is shown with the selections 3 D object and Text dash Text Mesh Pro highlighted.":::
 
@@ -64,11 +64,11 @@ The UI consists of a quad which serves as a flat surface for the text. Displayed
     - **Font Size** = 0.3
     - **Face Color** = 000000
 
-    :::image type="content" source="../media/text-name-size-color-properties.png" alt-text="A screenshot of the inspector window for the Recognition label object. The text, font size and face color properties are highlighted.":::
+    :::image type="content" source="../media/text-name-size-color-properties.png" alt-text="A screenshot of the inspector window for the Recognition label object. The text, font size, and face color properties are highlighted.":::
 
-1. The **Recognition (Label)** object can be duplicated to create the remaining text UI. The **Pos Y** and **Text** properties will be changed for each object to position the text appropriately against the Quad object. With the **Recognition (Label)** object still selected, use the keyboard short-cut **Ctrl+D** to duplicate the object 3 times.
+1. The **Recognition (Label)** object can be duplicated to create the remaining text UI. The **Pos Y** and **Text** properties will be changed for each object to position the text appropriately against the Quad object. With the **Recognition (Label)** object still selected, use the keyboard short-cut **Ctrl+D** to duplicate the object three times.
 
-    :::image type="content" source="../media/recognition-label-duplicated.png" alt-text="A screenshot of the hierarchy window. There are 3 duplicated objects for the recognition label.":::
+    :::image type="content" source="../media/recognition-label-duplicated.png" alt-text="A screenshot of the hierarchy window. There are three duplicated objects for the recognition label.":::
 
 1. In the **Hierarchy** window, rename each object as follows:
     - Recognition (Label)
@@ -85,7 +85,7 @@ The UI consists of a quad which serves as a flat surface for the text. Displayed
 
 ### Add a button to display on the Quad GameObject
 
-1. A MRTK button prefab is used for the microphone. In the **Project** window, search for **PressableButtonHoloLens2Circular_32x32**.
+1. An MRTK button prefab is used for the microphone. In the **Project** window, search for **PressableButtonHoloLens2Circular_32x32**.
 
     :::image type="content" source="../media/search-pressable-button.png" alt-text="A screenshot of the project window. The search bar is highlighted. The text in the search bar reads pressable button hololens 2 circular underscore 32 x 32.":::
 
@@ -109,13 +109,13 @@ The UI consists of a quad which serves as a flat surface for the text. Displayed
 > [!NOTE]
 > Additional helper code has been added to this script to help debug any potential issues which may occur when you run the Unity scene.
 
-1. In the **Project** window, select the **Assets** folder. This will be the folder used to store the **Translation.cs** script.
+1. In the **Project** window, select the **Assets** folder. This folder will be used to store the **Translation.cs** script.
 1. In the **Project** window, click the **+** icon and select **C# Script**. Name the script **Translation.cs**.
 
-    :::image type="content" source="../media/create-translation-script.png" alt-text="A screenshot of the project window. The plus icon in the top left corner is highlighted. The translation script within the assets section is highlighted.":::
+    :::image type="content" source="../media/create-translation-script.png" alt-text="A screenshot of the project window. The plus icon in the top-left corner is highlighted. The translation script within the assets section is highlighted.":::
 
-1. In the **Project** window, double click on the script to open in Visual Studio.
-1. In Visual Studio, replace the default code provided in the template with the following:
+1. In the **Project** window, double-click the script to open in Visual Studio.
+1. In Visual Studio, replace the default code provided in the template with the following script:
     ```csharp
     using System.Collections;
     using System.Collections.Generic;
@@ -252,7 +252,7 @@ The UI consists of a quad which serves as a flat surface for the text. Displayed
 
     :::image type="content" source="../media/simulated-hand.png" alt-text="A screenshot of the game window. The translation ui is in the middle of the screen. A simulate right hand is at the lower right side of the screen.":::
 
-1. While pressing the space bar, use your mouse scroll wheel to scroll forward to press the mic button. Once the mic button has been pressed, say "Hello" into the your microphone.
+1. While pressing the space bar, use your mouse scroll wheel to scroll forward to press the mic button. Once the mic button has been pressed, say "Hello" into your microphone.
 
     :::image type="content" source="../media/press-button.gif" alt-text="A gif of the simulated hand pressing the microphone button in the game scene.":::
 

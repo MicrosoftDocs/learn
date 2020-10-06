@@ -1,4 +1,4 @@
-In Unity, specific capabilities must be enabled to use APIs and resources such as a microphone in a Mixed Reality experience. Recall that in the collaboration tools example, there's a need for a microphone to capture speech in addition to internet for using the Azure Cognitive Services Speech service. Here you'll configure a Unity project to use the Azure Cognitive Services Speech SDK for speech translation.
+In Unity, specific capabilities must be enabled to use APIs and resources such as a microphone in a Mixed Reality experience. Recall that in the collaboration tools example, there's a need for a microphone to capture speech also internet for using the Azure Cognitive Services Speech service. Here you'll configure a Unity project to use the Azure Cognitive Services Speech SDK for speech translation.
 
 ## Create and configure a new Unity project for Windows Mixed Reality development with MRTK
 
@@ -22,7 +22,7 @@ In Unity, specific capabilities must be enabled to use APIs and resources such a
 
 ## Change Speech Commands Start Behavior
 
-By default, the MRTK Speech Commands are configured to start automatically when a Unity scene loads. Since this app requires speech input, the MRTK Speech Commands **Start Behavior** must be set to **Manual Start** to not interfere with the Cognitive Services Speech SDK. Given that the default configuration profiles that come with the Mixed Reality Toolkit cannot be modified, the configuration profile settings must be cloned to modify the MRTK Speech Commmands **Start Behavior**.
+By default, the MRTK Speech Commands are configured to start automatically when a Unity scene loads. Since this app requires speech input, the MRTK Speech Commands **Start Behavior** must be set to **Manual Start** to not interfere with the Cognitive Services Speech SDK. Given the default configuration profiles that come with the Mixed Reality Toolkit cannot be modified, the configuration profile settings must be cloned to modify the MRTK Speech Commmands **Start Behavior**.
 
 1. In the Unity menu, select the **MixedRealityPlayspace** object. The object's properties will display in the **Inspector** window.
 
@@ -86,7 +86,7 @@ To enable APIs or resources (such as a microphone) to access the app, you must e
 
 1. In the Unity menu, select **Edit** > **Project Settings**.
 
-    :::image type="content" source="../media/project-settings.png" alt-text="A screenshot of the Unity inteface. The Edit menu is open. Project settings is highlighted.":::
+    :::image type="content" source="../media/project-settings.png" alt-text="A screenshot of the Unity interface. The Edit menu is open. Project settings is highlighted.":::
 
 1. In the **Project Settings** window, select **Player** to the open the Player settings.
 
@@ -94,7 +94,7 @@ To enable APIs or resources (such as a microphone) to access the app, you must e
 
 1. In the **Player** settings, expand the **Publishing Settings**.
 
-    :::image type="content" source="../media/publishing-settings.png" alt-text="A screenshot of the Project Settings widow. The Publishing Settings is highlighted. The settings for Publishing Settings is expanded.":::
+    :::image type="content" source="../media/publishing-settings.png" alt-text="A screenshot of the Project Settings widow. The Publishing Settings is highlighted. The settings for Publishing Settings are expanded.":::
 
 1. In the **Capabilities** section, enable the following capabilities:
     - InternetClient
@@ -102,7 +102,7 @@ To enable APIs or resources (such as a microphone) to access the app, you must e
     - PrivateNetworkClientServer
     - Microphone
     
-    :::image type="content" source="../media/select-capabilities.png" alt-text="A screenshot of the Capabilities section. The Internet Client, Internet Client Server, Private Network Client Server and Microphone capabilities are enabled.":::
+    :::image type="content" source="../media/select-capabilities.png" alt-text="A screenshot of the Capabilities section. The Internet Client, Internet Client Server, Private Network Client Server, and Microphone capabilities are enabled.":::
 
 ## Import the Cognitive Services Speech Unity package
 
@@ -111,10 +111,10 @@ To enable APIs or resources (such as a microphone) to access the app, you must e
 
     :::image type="content" source="../media/import-package.png" alt-text="A screenshot of the Unity interface. The Edit menu is open and Import Package, Custom Package is highlighted.":::
 
-1. In the **Import package...** window, select the **Azure Cognitive Services Speech SDK** you downloaded and click **Open**.
+1. In the **Import package...** window, select the **Azure Cognitive Services Speech SDK** you downloaded and select **Open**.
 
     :::image type="content" source="../media/select-speech-package.png" alt-text="A screenshot of the file explorer. The Azure Cognitive Services Speech S D K is highlighted. The Open button is also highlighted.":::
 
-1. In the **Import Unity Package** window, click the **All** button to ensure all the assets are selected, then click the **Import** button to import the assets.
+1. In the **Import Unity Package** window, select the **All** button to ensure all the assets are selected, then select the **Import** button to import the assets.
 
     :::image type="content" source="../media/import-speech-package.png" alt-text="A screenshot of the Import Unity Package window. The window displays all the assets within the Azure Cognitive Services Speech S D K. The All and Import buttons are highlighted.":::

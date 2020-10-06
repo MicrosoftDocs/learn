@@ -12,7 +12,7 @@ title: Create a language translator mixed reality application with Unity and Azu
 summary: >
   Create a language translator application for your Mixed Reality device (Windows Mixed Reality, HoloLens 2 etc.) using Cognitive Services.
 abstract: | 
-  By the end of this module you will be able to:
+  By the end of this module you'll be able to:
   - Configure a Unity project for Azure Speech Services
   - Integrate Azure Speech Services with a Windows Mixed Reality application
   - Use speech recognition to translate text
