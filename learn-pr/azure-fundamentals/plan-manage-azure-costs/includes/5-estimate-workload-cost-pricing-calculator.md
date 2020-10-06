@@ -2,7 +2,7 @@ In this exercise, you use the Pricing calculator to estimate the cost of running
 
 With an understanding of the more important cost factors associated with running on Azure, Tailwind Traders wants to take a typical workload and estimate how much it would cost each month to run it on Azure.
 
-The IT Manager at Tailwind Traders is faced with the decision about whether to replace some aging on-premises hardware or move the application to Azure. They need to know how much the ongoing monthly cost of the solution in Azure would be.
+The IT Manager at Tailwind Traders is faced with the decision about whether to replace some aging on-premises hardware or move the application to Azure. The company needs to know how much the ongoing monthly cost of the solution in Azure would be.
 
 Let's start by defining which Azure services you need.
 
@@ -19,7 +19,7 @@ In their datacenter, the team has an ASP.NET web application that runs on Window
 
 The team decides to:
 
-* Use virtual machines on Azure, similar to what they use in the datacenter.
+* Use Azure Virtual Machines instances, similar to the virtual machines they use in the datacenter.
 * Use Azure Application Gateway for load balancing.
 * Use Azure SQL Database to hold inventory and pricing information.
 
@@ -31,7 +31,7 @@ In practice, you would define your requirements in greater detail. But here are 
 
 * The application is used by Tailwind Traders employees at their retail stores. It's not accessible to customers.
 * This application doesn't require a massive amount of computing power.
-* The virtual machines and the database run all the time (730 hours/month).
+* The virtual machines and the database run all the time (730 hours per month).
 * The network processes about 1 TB of data per month.
 * The database doesn't need to be configured for high-performance workloads and requires no more than 32 GB of storage.
 
@@ -41,28 +41,26 @@ Let's start with a quick tour of the Pricing calculator.
 
 1. Go to the [Pricing calculator](https://azure.microsoft.com/pricing/calculator/?azure-portal=true).
 
-1. Note the tabs at the top:
+1. Notice the following tabs:
 
-    ![A screenshot showing the four tabs that appear on the pricing calculator: products, example scenarios, saved estimates, and FAQ.](../media/5-pricing-calculator-tabs.png)
+    ![A screenshot showing the four tabs that appear on the pricing calculator: Products, Example Scenarios, Saved Estimates, and FAQ.](../media/5-pricing-calculator-tabs.png)
 
-Here's what you'll find under each tab:
-
-* **Products**
-
-    This is where you choose the Azure services that you want to include in your estimate. You'll likely spend most of your time here.
-* **Example Scenarios**
-
-    Here you'll find several _reference architectures_, or common cloud-based solutions that you can use as a starting point.
-* **Saved Estimates**
-
-    Here you'll find your previously saved estimates.
-* **FAQ**
-
-    Here you'll discover answers to frequently asked questions about the Pricing calculator.
-
+    * **Products**
+    
+        This is where you choose the Azure services that you want to include in your estimate. You'll likely spend most of your time here.
+    * **Example Scenarios**
+    
+        Here you'll find several _reference architectures_, or common cloud-based solutions that you can use as a starting point.
+    * **Saved Estimates**
+    
+        Here you'll find your previously saved estimates.
+    * **FAQ**
+    
+        Here you'll discover answers to frequently asked questions about the Pricing calculator.
+    
 ## Estimate your solution
 
-Here you add each Azure service that you need to the calculator and then configure each service to fit your needs.
+Here you add each Azure service that you need to the calculator. Then you configure each service to fit your needs.
 
 > [!TIP]
 > Make sure you have a clean calculator with nothing listed in the estimate. You can reset the estimate by selecting the trash can icon next to each item.
@@ -79,7 +77,7 @@ Here you add each Azure service that you need to the calculator and then configu
 
 1. Scroll to the bottom of the page. You see that each service is listed with its default configuration.
 
-    :::image type="content" source="../media/5-pricing-calculator-estimate.png" alt-text="A screenshot of the pricing calculator showing the configuration options for virtual machines.":::
+    :::image type="content" source="../media/5-pricing-calculator-estimate.png" alt-text="A screenshot of the Pricing calculator showing the configuration options for virtual machines.":::
 
 ### Configure services to match your requirements
 
@@ -92,7 +90,7 @@ Here you add each Azure service that you need to the calculator and then configu
     | Type | **(OS Only)** |
     | Tier | **Standard** |
     | Instance | **D2 v3** |
-    | Virtual Machines | **2** x **730 Hours** |
+    | Virtual machines | **2** x **730 Hours** |
 
     Leave the remaining settings at their current values.
 
@@ -102,10 +100,10 @@ Here you add each Azure service that you need to the calculator and then configu
     | -- | -- |
     | Region | **West US** |
     | Type | **Single Database** |
-    | Backup Storage Tier | **RA-GRS** |
-    | Purchase Model | **vCore** |
-    | Service Tier | **General Purpose** |
-    | Compute Tier | **Provisioned** |
+    | Backup storage tier | **RA-GRS** |
+    | Purchase model | **vCore** |
+    | Service tier | **General Purpose** |
+    | Compute tier | **Provisioned** |
     | Generation | **Gen 5** |
     | Instance | **8 vCore** |
 
@@ -120,22 +118,22 @@ Here you add each Azure service that you need to the calculator and then configu
     | Size | **Medium** |
     | Gateway hours | **2** x **730 Hours** |
     | Data processed | **1 TB** |
-    | Outbound Data Transfer | **5 GB** |
+    | Outbound data transfer | **5 GB** |
 
     Leave the remaining settings at their current values.
 
 ## Review, share, and save your estimate
 
-At the bottom of the page, you see the total estimated cost of running the solution. You can change the currency type if you'd like.
+At the bottom of the page, you see the total estimated cost of running the solution. You can change the currency type if you want.
 
-:::image type="content" source="../media/5-pricing-calculator-estimated-cost.png" alt-text="A screenshot of the pricing calculator showing a total estimated cost of $1902.64.":::
+:::image type="content" source="../media/5-pricing-calculator-estimated-cost.png" alt-text="A screenshot of the Pricing calculator showing a total estimated cost of $1,902.64.":::
 
 At this point, you have a few options:
 
-* Select **Export** to save your estimate as a Microsoft Excel document.
+* Select **Export** to save your estimate as an Excel document.
 * Select **Save** or **Save as** to save your estimate to the **Saved Estimates** tab for later.
 * Select **Share** to generate a URL so you can share the estimate with your team.
 
 You now have a cost estimate that you can share with your team. You can make adjustments as you discover any changes to your requirements.
 
-Try experimenting with some of the options you worked with here, or create a purchase plan for a workload you want to run on Azure.
+Experiment with some of the options you worked with here, or create a purchase plan for a workload you want to run on Azure.
