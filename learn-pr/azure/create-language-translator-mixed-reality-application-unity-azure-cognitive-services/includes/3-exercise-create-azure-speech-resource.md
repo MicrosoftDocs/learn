@@ -8,7 +8,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
 1. The portal navigates you to the **Marketplace** page. In the **Search the Marketplace** box, type **speech** and press Enter.
 1. Select **Speech** from the results.
 
-    :::image type="content" source="../media/marketplace-results.PNG" alt-text="A screenshot of the Marketplace results. There's a red box around the Speech service.":::
+    :::image type="content" source="../media/marketplace-results.png" alt-text="A screenshot of the Marketplace results. There's a red box around the Speech service.":::
 
 1. On the Speech resource page, select **Create**.
 1. Fill out the wizard with the following values:
@@ -21,7 +21,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
     |**Pricing tier**     |     Free F0    |    The pricing tier of the plan being created. The selected tier corresponds to the usage of the resource. The Free F0 tier currently provides 5 audio hours free per month for Speech Translation.    |
     |**Resource group**     |   <rgn>[Sandbox resource group]</rgn>      |    The resource group to which the Speech service will belong. All Azure resources must belong to a resource group.     |
 
-   :::image type="content" source="../media/create-speech-resource.PNG" alt-text="A screenshot of the values provided for the Create Speech resource wizard.":::
+   :::image type="content" source="../media/create-speech-resource.png" alt-text="A screenshot of the values provided for the Create Speech resource wizard.":::
 
 1. Select **Create** to create the Speech resource.
 
@@ -35,12 +35,12 @@ A notification will be provided once deployment is complete. Once deployment is 
 1. On the Azure portal menu or from the **Home** page, select **All resources**.
 1. Select the Speech resource from the list.
 
-    :::image type="content" source="../media/all-resources.PNG" alt-text="A screenshot of the list of all resources. There's a red box around the M R dash speech dash A A S resource.":::
+    :::image type="content" source="../media/all-resources.png" alt-text="A screenshot of the list of all resources. There's a red box around the M R dash speech dash A A S resource.":::
 
 1. In the **Resource Management** section, select **Keys and Endpoint**.
 
-    :::image type="content" source="../media/select-keys-and-endpoint.PNG" alt-text="A screnshot of the speech resource page. There's a red box around the menu item Keys and Endpoint.":::
+    :::image type="content" source="../media/select-keys-and-endpoint.png" alt-text="A screnshot of the speech resource page. There's a red box around the menu item Keys and Endpoint.":::
 
 In later exercises, you'll need the values for **KEY 1**, the **ENDPOINT**, and **LOCATION** as you create the SpeechTranslation.cs script in Unity.
 
-:::image type="content" source="../media/key-endpoint-location.PNG" alt-text="A screenshot of the key and endpoints for the speech service. There's a red box around Key 1, the Endpoint and the Location.":::
+:::image type="content" source="../media/key-endpoint-location.png" alt-text="A screenshot of the key and endpoints for the speech service. There's a red box around Key 1, the Endpoint and the Location.":::

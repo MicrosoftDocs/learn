@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-a-language-translator-mixed-reality-application-with-Unity-and-Azure-Cognitive-Services.5-exercise-configure-capabilities-and-the-configuration-profile
+uid: learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.5-exercise-capabilities-configuration-profile
 title: Exercise - Configure capabilities and the configuration profile
 metadata:
   title: Exercise - Configure capabilities and the configuration profile
   description: Exercise - Configure capabilities and the configuration profile
-  ms.date: 08/05/2020
+  ms.date: 10/06/2020
   author: aprilspeight
   ms.author: apspeigh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 20
 content: |
-  [!include[](includes/5-exercise-configure-capabilities-and-the-configuration-profile.md)]
+  [!include[](includes/5-exercise-capabilities-configuration-profile.md)]

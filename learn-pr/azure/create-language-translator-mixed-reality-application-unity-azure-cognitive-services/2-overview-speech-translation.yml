@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-a-language-translator-mixed-reality-application-with-Unity-and-Azure-Cognitive-Services.2-overview-of-speech-translation
+uid: learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.2-overview-speech-translation
 title: Overview of speech translation
 metadata:
   title: Overview of speech translation
   description: Overview of speech translation
-  ms.date: 08/05/2020
+  ms.date: 10/06/2020
   author: aprilspeight
   ms.author: apspeigh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-overview-of-speech-translation.md)]
+  [!include[](includes/2-overview-speech-translation.md)]
