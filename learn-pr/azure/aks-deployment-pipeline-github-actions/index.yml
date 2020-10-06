@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.aks-deployment-pipeline-github-actions
 metadata:
-  title: Set up up an AKS deployment pipeline using GitHub Actions
-  description: Explore how to create an automated deployment pipeline by using GitHub Actions along with AKS
+  title: Configure an Azure Kubernetes Service deployment pipeline using GitHub Actions
+  description: Explore how to create an automated deployment pipeline by using GitHub Actions along with Azure Kubernetes Service.
   ms.date: 09/08/2020
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial
   ms.prod: github
-title: Set up up an AKS deployment pipeline using GitHub Actions
+title: Configure an Azure Kubernetes Service deployment pipeline using GitHub Actions
 summary: Rapidly deploy a containerized application to Azure Kubernetes Services by using GitHub actions triggered by GitHub events.
 abstract: |
   By the end of this module, you'll be able to:
-  - Describe a continuos integration (CI) and continuous deployment (CD) process using GitHub Actions
+  - Describe a continuous integration (CI) and continuous deployment (CD) process using GitHub Actions
   - Create a deployment pipeline using GitHub Actions and Azure
   - Deploy a cloud-native application to Azure Kubernetes service (AKS) by using GitHub Actions
 prerequisites: |
