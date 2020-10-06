@@ -60,8 +60,7 @@ Let’s look at how to use the API for programmatic searches.
     ```
 
 1. View output. You will get a results array where each item is a video. For each video, you will see a searchMatches array. If the match was because of a label that applies to the whole video the startTime for the match will be “00:00:00”.
-
-    Example results array with some attributes removed:
+Example results array with some attributes removed:
 
     ```json
     "results":
@@ -129,8 +128,7 @@ Let’s look at how to use the API for programmatic searches.
     ```
 
 1. View output. You will get a results array where each item is a video. For each video, you will see a searchMatches array. If the match was because of a label that applies to the whole video the startTime for the match will be “00:00:00”.
-
-    Example results array with some attributes removed:
+Example results array with some attributes removed:
 
     ```json
     "results":

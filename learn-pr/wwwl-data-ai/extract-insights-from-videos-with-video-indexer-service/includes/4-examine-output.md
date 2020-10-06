@@ -74,6 +74,36 @@ Let’s look at how you use the API to get the results of the video indexing.
         print("Video has not finished processing. Wait a minute then try again.")
     ```
 
+1. View the output, which will include many attributes. One useful section is the summarizedInsights object, which starts similar to the following.
+
+    ```json
+    "summarizedInsights": {
+    "name": "Beach waves",
+    "id": "60eb06669e",
+    "duration": {
+        "time": "0:00:13.355",
+        "seconds": 13.4
+    },
+    "faces": [],
+    "keywords": [],
+    "sentiments": [{
+        "sentimentKey": "Neutral",
+        "seenDurationRatio": 0.3744,
+        }],
+    "emotions": [],
+    "audioEffects": [],
+    "labels": [{
+        "id": 1,
+        "name": "outdoor",
+        "appearances": [{
+            "startTime": "0:00:00",
+            "endTime": "0:00:13.3",
+            "startSeconds": 0,
+            "endSeconds": 13.3
+        }]
+    }
+    ```
+
 :::zone-end
 
 :::zone pivot="csharp"
@@ -128,36 +158,33 @@ Let’s look at how you use the API to get the results of the video indexing.
     }
     ```
 
-Import required libraries.
+1. View the output, which will include many attributes. One useful section is the summarizedInsights object, which starts similar to the following.
 
+    ```json
+    "summarizedInsights": {
+    "name": "Beach waves",
+    "id": "60eb06669e",
+    "duration": {
+        "time": "0:00:13.355",
+        "seconds": 13.4
+    },
+    "faces": [],
+    "keywords": [],
+    "sentiments": [{
+        "sentimentKey": "Neutral",
+        "seenDurationRatio": 0.3744,
+        }],
+    "emotions": [],
+    "audioEffects": [],
+    "labels": [{
+        "id": 1,
+        "name": "outdoor",
+        "appearances": [{
+            "startTime": "0:00:00",
+            "endTime": "0:00:13.3",
+            "startSeconds": 0,
+            "endSeconds": 13.3
+        }]
+    }
+    ```
 :::zone-end
-
-View the output, which will include many attributes. One useful section is the summarizedInsights object, which starts similar to the following.
-
-```json
-"summarizedInsights": {
-  "name": "Beach waves",
-  "id": "60eb06669e",
-  "duration": {
-    "time": "0:00:13.355",
-    "seconds": 13.4
-  },
-  "faces": [],
-  "keywords": [],
-  "sentiments": [{
-      "sentimentKey": "Neutral",
-      "seenDurationRatio": 0.3744,
-    }],
-  "emotions": [],
-  "audioEffects": [],
-  "labels": [{
-      "id": 1,
-      "name": "outdoor",
-      "appearances": [{
-          "startTime": "0:00:00",
-          "endTime": "0:00:13.3",
-          "startSeconds": 0,
-          "endSeconds": 13.3
-    }]
-  }
-```

@@ -21,3 +21,4 @@ Let’s look at how to edit insights from the Video Indexer portal.
 :::image type="content" source="../media/video-indexer-scene-set-thumbnail-ssm.png" alt-text="Screen shot of choosing “Set as thumbnail” from the scenes action menu. ":::
 
 1. When you are done with your changes, choose the Edit icon again to return to view mode.
+

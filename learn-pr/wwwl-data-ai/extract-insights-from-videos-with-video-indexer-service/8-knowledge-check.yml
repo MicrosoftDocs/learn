@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/07/2020
+  ms.date: 10/08/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ quiz:
       explanation: "False. The endpoint is not unique and name is used to specify how to title the video."
     - content: "Account ID and API Key"
       isCorrect: true
-      explanation: "True. The Account Id and API Key combination is unique to a Video Indexer subscription."
+      explanation: "True. The Account ID and API Key combination is unique to a Video Indexer subscription."
     - content: "Location and Partition"
       isCorrect: false
       explanation: "False. The location is either ‘trial’ or an Azure region so it is not unique to a subscription."
