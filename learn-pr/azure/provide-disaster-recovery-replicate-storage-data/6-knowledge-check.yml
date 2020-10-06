@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Summary
-  ms.date: 05/05/2020
+  ms.date: 10/05/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -30,20 +30,20 @@ quiz:
     - content: "LRS"
       isCorrect: false
       explanation: "Locally redundant storage (LRS) copies your data three times across separate racks of hardware in a datacenter within one region. "
-    - content: "ZRS."
+    - content: "ZRS"
       isCorrect: false
       explanation: "Zone-redundant storage (ZRS) copies your data to three different availability zones within a single region."
     - content: "GZRS"
       isCorrect: true
-      explanation: "With Geo-zone-redundant storage (GZRS), your data is copied across three availability zones in your primary region and to a paired secondary region."
-  - content: "Suppose you're using GZRS and there's an outage in your primary region. You initiate a failover to the secondary region. How does this affect the data in your storage account?"
+      explanation: "With Geo-zone-redundant storage (GZRS), your data is copied across three availability zones in your primary region and to a paired secondary region. You could also use geographically redundant storage (GRS), read-access geo-redundant storage (RA-GRS), or read-access geo-zone-redundant storage (RA-GZRS)."
+  - content: "Suppose you're using GZRS and there's an outage in your primary region. You initiate a failover to the secondary region. How does the failover effect the data in your storage account?"
     choices:
-    - content: "You'll have some data loss."
+    - content: "You might have some data loss."
       isCorrect: true
       explanation: "There's delay before data is copied from the primary region and written to the secondary because data is copied asynchronously. Check the last sync time when you initiate a failover."
     - content: "Data in the primary region is inaccessible to users."
       isCorrect: false
-      explanation: "Given the scenario, the inaccessibility is due to the outage. "
+      explanation: "Given the scenario, the inaccessibility is because of the outage. "
     - content: "After failover, the data is still protected with geo-replication."
       isCorrect: false
       explanation: "The storage account is updated to use locally redundant storage (LRS). You'll need to update the replication type to geo-redundant storage like GRS or GZRS."
