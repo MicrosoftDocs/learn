@@ -1,8 +1,8 @@
-You learned how Azure Sentinel provides a way to address the Contoso IT director's pain points:
+You learned how Azure Sentinel provides a way to address the Contoso IT director's concerns:
 
-- Alerts were from multiple products.
-- Too many alerts were triaged across dashboards.
-- The time spent setting up and maintaining IT infrastructure took the SecOps team away from its security tasks.
+- Alerts come from multiple products.
+- Too many alerts are triaged across dashboards.
+- The time spent to set up and maintain IT infrastructure takes the SecOps team away from its security tasks.
 
 You explored the various deployment considerations for Azure Sentinel, including necessary roles and permissions. You also learned how to connect data sources to Azure Sentinel and how to manage its log data.
 

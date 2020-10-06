@@ -26,7 +26,7 @@ Azure Sentinel comes with a number of connectors for Microsoft and other solutio
 - Built-in connectors for partner solutions
 - Built-in connector for Amazon Web Services
 
-Additionally, there are built-in connectors to the broader security ecosystem for non-Microsoft solutions. You can also use Common Event Format (CEF), Syslog, or a REST API to connect your data sources with Azure Sentinel. The following image depicts this connectivity capability.
+Additionally, there are built-in connectors to the broader security ecosystem for non-Microsoft solutions. You can also use Common Event Format (CEF), Syslog, or a REST API to connect your data sources with Azure Sentinel. The following image shows this connectivity capability.
 
 :::image type="content" source="../media/sentinel-connections.png" alt-text="Diagram showing multiple data connections to Azure Sentinel." border="false":::
 
@@ -58,7 +58,7 @@ Follow these steps to enable Azure Sentinel:
     1. Resource group
     1. Location
     1. Pricing tier
-1. On the Azure Sentinel **Choose a workspace** blade, select the workspace that you just created, and then select the **Add Azure Sentinel** button. The Azure Sentinel dashboard opens.
+1. On the Azure Sentinel **Choose a workspace** blade, select the workspace that you created, and then select the **Add Azure Sentinel** button. The Azure Sentinel dashboard opens.
 
 ### Monitor data feeds
 

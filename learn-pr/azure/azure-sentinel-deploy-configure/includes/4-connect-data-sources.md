@@ -57,11 +57,11 @@ In this example, we'll connect to Azure AD from Azure Sentinel:
 
     :::image type="content" source="../media/sentinel-azure-ad-connector-page.png" alt-text="Screenshot of the Azure Sentinel connector page with the list of connectors." border="true":::
 
-1. On the **Data Connectors** page is a tile for each data source that you can connect to. Select the **Azure Active Directory** tile. The Azure Sentinel **Azure Active Directory** connector page opens.
+1. On the **Data Connectors** page, select the **Azure Active Directory** tile. The Azure Sentinel **Azure Active Directory** connector page opens.
 
     :::image type="content" source="../media/sentinel-azure-ad-connector-2.png" alt-text="Screenshot of the Azure Sentinel Azure Active Directory connector page." border="true":::
 
-1. Read the prerequisites and make sure you have fulfilled them. Then follow the instructions to connect the data source.
+1. Read the prerequisites and make sure you've fulfilled them. Then, follow the instructions to connect the data source.
 
 1. Select both **Azure Active Directory Sign-in logs** and **Azure Active Directory Audit logs**.
 
@@ -69,7 +69,7 @@ In this example, we'll connect to Azure AD from Azure Sentinel:
 
 ### Validate your data source connection
 
-After you connect your data sources to Azure Sentinel, you get data visualizations and analysis so that you can know what happens across all your connected data sources.
+After you connect your data sources to Azure Sentinel, you get data visualizations and analysis so you can know what happens across all your connected data sources.
 
 To confirm that your connectors work, go to the Azure portal. In the Azure portal, select **Azure Sentinel**, and then select the workspace that you used when you enabled Azure Sentinel.
 
@@ -85,7 +85,7 @@ Depending on what service the Contoso administrator initially connected to, ther
 
 ### Threat detection rule templates
 
-After you connect your data sources to Azure Sentinel, you'll want to be notified when something suspicious occurs. To support this, Azure Sentinel provides threat detection rule templates that you can use as-is or customize. These templates are designed by Microsoft security experts and analysts based on known threats, common attack vectors, and suspicious activity escalation chains.
+After you connect your data sources to Azure Sentinel, you'll want to be notified when something suspicious occurs. To do this, Azure Sentinel provides threat detection rule templates that you can use as-is or customize. These templates are designed by Microsoft security experts and analysts. They're based on known threats, common attack vectors, and suspicious activity escalation chains.
 
 Rules that are created from these templates automatically search across your environment for any activity that looks suspicious. You can customize many of the templates to search for activities, or filter them out, as needed.
 

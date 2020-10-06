@@ -49,7 +49,7 @@ quiz:
       explanation: "That's correct. The Azure Sentinel agent is a log analytics agent."
     - content: "REST API"
       isCorrect: false
-      explanation: "That's incorrect. A REST API uses HTTP requests to GET, PUT, POST and DELETE data."
+      explanation: "That's incorrect. A REST API uses HTTP requests to GET, PUT, POST, and DELETE data."
     - content: "Certificate"
       isCorrect: false
       explanation: "That's incorrect. A digital certificate is an electronic document used to prove the ownership of a public key."
@@ -68,7 +68,7 @@ quiz:
       explanation: "That's incorrect. Azure Sentinel Reader can review, but not edit, data, incidents, workbooks, and other Azure Sentinel resources."
 
 
-  - content: "Which of the following is required to connect Azure Sentinel to Azure AD?"
+  - content: "Which of the following things is required to connect Azure Sentinel to Azure AD?"
     choices:
     - content: "You need an Azure AD P1 or P2 license"
       isCorrect: true

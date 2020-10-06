@@ -38,7 +38,7 @@ To address this requirement, Azure Sentinel offers multiple-workspace capabiliti
 
 :::image type="content" source="../media/cross-workspace-architecture.png" alt-text="Diagram showing a multiple-workspace configuration for Azure Sentinel." border="false":::
 
-This multiple-workspace model offers significant advantages over a fully centralized model in which all data copies to a single workspace, including:
+This multiple-workspace model offers significant advantages over a fully centralized model in which all data copies to a single workspace, such as:
 
 - A more flexible role assignment to the global or local security operations center teams or to the managed security service provider for its customers.
 

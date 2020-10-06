@@ -10,7 +10,7 @@ The advantage of CEF over Syslog is that it ensures the data is normalized. This
 
 The Azure Sentinel agent converts CEF-formatted logs into a format that Log Analytics can ingest. Depending on the appliance type, the agent installs directly on the appliance or on a dedicated Linux-based log forwarder. The Azure Sentinel agent is actually the Azure Monitor Log Analytics agent.
 
-The agent for Linux receives events from the Syslog daemon over User Datagram Protocol (UDP) unless the Linux machine is expected to collect a high volume of Syslog events. In this case, they're sent over Transmission Control Protocol (TCP) from the Syslog daemon to the agent. The Syslog daemon then sends the data to Log Analytics. The agent caches data, which helps prevent data loss in case of communication issues between the agent and the cloud.
+The agent for Linux receives events from the Syslog daemon over User Datagram Protocol (UDP) unless you expect the Linux machine to collect a high volume of Syslog events. In that case, they're sent over Transmission Control Protocol (TCP) from the Syslog daemon to the agent. The Syslog daemon then sends the data to Log Analytics. The agent caches data, which helps prevent data loss in case of communication issues between the agent and the cloud.
 
 The Log Analytics agent can collect different types of events from servers and endpoints. After it's enabled through the Azure Sentinel data connectors, events are collected by every agent that's configured to send data to the workspace.
 
@@ -67,4 +67,4 @@ Some Azure security services and features that help secure your VMs and storage 
 - **Azure Key Vault and SSH keys**: Azure Key Vault is a service that provides centralized secrets management, with full control over access policies and audit history.
 - **Managed identities for Azure resources**: Azure AD provides Azure services with an automatically managed identity in Azure AD.
 - **Policies**: Policies enable an organization to enforce various conventions and rules throughout the enterprise.
-- **RBAC**: Azure RBAC enables you to segregate duties within your team and limit access to your VM to the users who need it to perform their jobs.
+- **RBAC**: Azure RBAC lets you segregate duties within your team. You can also limit access to your VM to the users who need it to do their jobs.

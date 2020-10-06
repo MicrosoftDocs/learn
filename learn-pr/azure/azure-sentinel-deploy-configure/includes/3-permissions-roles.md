@@ -19,7 +19,7 @@ The following are the three dedicated, built-in Azure Sentinel roles:
 
 - **Reader**: This role can review data, incidents, workbooks, and other Azure Sentinel resources.
 - **Responder**: This role has all the permissions of the Reader role, plus it can manage incidents by assigning or dismissing them.
-- **Contributor**: This role has all the permissions of the Reader and Responder roles. In addition, it can create and edit workbooks, analytics rules, and other Azure Sentinel resources. To deploy Azure Sentinel on your tenant, you need Contributor permissions for the subscription where the Azure Sentinel workspace is deployed.
+- **Contributor**: This role has all the permissions of the Reader and Responder roles. Also, it can create and edit workbooks, analytics rules, and other Azure Sentinel resources. To deploy Azure Sentinel on your tenant, you need Contributor permissions for the subscription where the Azure Sentinel workspace is deployed.
 
 All built-in Azure Sentinel roles grant read access to the data in your Azure Sentinel workspace. For best results, these roles should be assigned to the resource group that contains the Azure Sentinel workspace. The roles then apply to all the resources that deploy to support Azure Sentinel, if those resources are in the same resource group.
 
@@ -38,7 +38,7 @@ In addition to Azure Sentinel-dedicated Azure RBAC roles, other Azure and Log An
   - Log Analytics Contributor
   - Log Analytics Reader
 
-For example, a user who is assigned with the Azure Sentinel Reader and Azure Contributor (not Azure Sentinel Contributor) roles can edit data in Azure Sentinel. Although, they only have Sentinel Reader permissions. If you want to only grant permissions to Azure Sentinel, you should carefully remove the user's prior permissions. Make sure you don't break any needed permission role for another resource.
+For example, a user who is assigned with the Azure Sentinel Reader and Azure Contributor (not Azure Sentinel Contributor) roles can edit data in Azure Sentinel. If you want to only grant permissions to Azure Sentinel, you should carefully remove the user's prior permissions. Make sure you don't break any needed permission role for another resource.
 
 ### Azure Sentinel roles and allowed actions
 
@@ -63,4 +63,4 @@ Subscriptions that trust the same Azure AD directory can share custom roles betw
 > [!NOTE]
 > For Azure Germany and Azure China 21Vianet, the limit is 2,000 custom roles.
 
-In this unit, you learned about the built-in roles for Azure Sentinel users and what each role lets users do. After you understand the roles and permissions granted and how they can map to your organization, you can confidently enable Azure Sentinel.
+In this unit, you learned about the built-in roles for Azure Sentinel users and what each role lets users do. After you understand the roles and permissions and how they map to your organization, you can confidently enable Azure Sentinel.
