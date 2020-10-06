@@ -22,7 +22,6 @@ levels:
 - intermediate
 roles:
 - data-scientist
-- student
 products:
 - vs-code
 units:

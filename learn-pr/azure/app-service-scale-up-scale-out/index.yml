@@ -24,7 +24,6 @@ roles:
 - developer
 - solution-architect
 - administrator
-- student
 products:
 - azure
 - dotnet
