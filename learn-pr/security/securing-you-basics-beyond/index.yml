@@ -9,17 +9,17 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Securing you: Basics and beyond"
-summary: Security-related advice can be difficult to understand and follow. Many people have asked for a simple description of how to secure their computers and online accounts without needing in-depth training or hours of study. This module will give you simple advice you can follow, tools you can use, and pitfalls to avoid, to ensure that you can remain secure online.
+summary: Security-related advice can be hard to understand and follow. Many people have asked for a simple description of how to secure their computers and online accounts without needing in-depth training or hours of study. This module will give you simple advice you can follow, tools you can use, and pitfalls to avoid, to ensure that you can remain secure online.
 abstract: | 
   In this module, you will:
   - Learn about various threats and how they can affect you
   - Quickly identify common phishing techniques and safely avoid phishing email
   - Secure your online accounts more effectively by using passphrases and a password manager
-  - Secure your online accounts even better by using simple technique called multi-factor authentication
+  - Secure your online accounts even better by using a simple technique called multifactor authentication
 prerequisites: | 
-  - Basic experience using a web browser
-  - Basic experience using email
-  - Basic experience using any kind of online account, such as banking or online shopping services
+  - Basic experience with using a web browser
+  - Basic experience with using email
+  - Basic experience with using any kind of online account, such as banking or online shopping services
 iconUrl: /learn/achievements/security/securing-you-basics-beyond.svg
 levels:
 - beginner
