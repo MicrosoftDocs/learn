@@ -15,9 +15,9 @@ The steps will get you started with the Govern methodology in the cloud. They wi
 
 The Govern methodology provides a structured approach to building the governance maturity required to be confident with cloud adoption.
 
-:::image type="content" source="../media/methodology.png" alt-text="The CAF Govern methodology outlined in this section of content" border="false":::
+:::image type="content" source="../media/methodology.png" alt-text="The CAF Govern methodology outlined in this section." border="false":::
 
-_Figure 1: The CAF Govern methodology outlined in this section of content._
+_Figure 1: The CAF Govern methodology outlined in this section._
 
 ### Corporate policy
 
@@ -54,7 +54,7 @@ Receive a personalized report that outlines the difference between your current 
 
 Azure includes a suite of governance tools built on top of the Azure Resource Manager platform. The initial governance foundation demonstrates how these tools can be applied to demonstrate cloud governance. As you progress through units of this learn module, you'll see how you can apply these tools to solve governance challenges. But first, start with a governance foundation to get familiar with the tools.
 
-:::image type="content" source="../media/TDD-in-Azure.png" alt-text="Visual of the Azure Resource Manager tools that support governance,with focus on Azure Policy and Azure Blueprints." border="false":::
+:::image type="content" source="../media/TDD-in-Azure.png" alt-text="Visual of the Azure Resource Manager tools that support governance, with focus on Azure Policy and Azure Blueprints." border="false":::
 _Figure 3: The Azure Resource Manager tools that support governance, with focus on Azure Policy and Azure Blueprints._
 
 Subsequent units of this learn module will apply these tools to create a governance foundation for Tailwind Traders.

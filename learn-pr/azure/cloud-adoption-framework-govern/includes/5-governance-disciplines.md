@@ -57,12 +57,12 @@ These disciplines help establish the right collection of processes, tools, and a
 
 | Discipline | Risks | Sample trigger | Sample action |
 |-----------------------------|----------------|---------------|
-| Cost Management | Overspending | Monthly cloud spending is more than 20 percent higher than expected. | Notify the billing unit leader who will begin a review of resource usage. |
+| Cost Management | Overspending | Monthly cloud spending is 20 percent higher than expected. | Notify the billing unit leader who will begin a review of resource usage. |
 | Cost Management | Overspending | Deployed assets are not using the allocated cpu or memory | Notify the billing unit leader and when possible automatically resize to fit actual usage. |
 | Security Baseline | Security or compliance requirements | Detect any deviation from defined security or compliance. | Notify the IT security team and when possible automate remediation. |
 | Security Baseline | Risk of improper access compromising systems or data | Traffic patterns deviate from approved network topologies | Notify the IT security team and when possible automatically close attack vectors. |
 | Resource Consistency | Operations management issues or oversights | CPU utilization for a workload is greater than 90 percent. | Notify the IT operations team and scale out additional resources to handle the load. |
-| Resource Consistency | Operations management issues or oversights | Assets that fail to meet patching or BCDR requirements trigger operational compliance warning. | Notify the IT operations team and when possible automatically resolve the deviation. |
+| Resource Consistency | Operations management issues or oversights | Assets that fail to meet patching or business continuity and disaster recovery requirements trigger operational compliance warning. | Notify the IT operations team and when possible automatically resolve the deviation. |
 | Identity | Improper access compromising systems or data | Assets are configured without proper role assignments or elevated privileges | Notify the IT security team and when possible automatically resolve the deviation. |
 | Deployment Acceleration | Inconsistent governance | Assets identified that are not included in required governance processes | Notify the IT governance team and when possible automatically resolve the deviation. |
 
