@@ -75,11 +75,9 @@ Investigate the earlier failed coupon service request with the following steps:
 
 1. Select the green *webshoppingagg* circle.
 
-    A **webshoppingagg** panel appears:
+    A **webshoppingagg** panel appears. The panel provides a quick view of the service's top failing requests and slowest requests. It also displays common properties that may provide insights into the health of the service. For each category, more detailed information is available by selecting the button.
 
     :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-request-summary.png" alt-text="A summary of failing requests and performance" border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-request-summary.png":::
-
-    A summary similar to the preceding image appears. The summary provides a quick view of the service's top failing requests and slowest requests. It also displays common properties that may help provide insights into the health of the service. For each category, more detailed information is available by selecting the button.
 
 ## Investigate an end-to-end transaction
 
