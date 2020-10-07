@@ -6,7 +6,7 @@ In this unit, we'll explore data gathered by Time Series Insights.
 1. In the search box at the top of the portal, type **Time Series Insights** and click on the appropriate result in the _Services_ category.
 ![alt-text](../media/explore-1.png)
 1. Click on the name of your Time Series Insights environment you've created in the previous unit.
-1. In the Time Series Insights page, click on *Go to Environment* button at the top.
+1. In the Time Series Insights page, click on *Go to TSI Explorer* button at the top.
 
 Your browser will now open a new window with Time Series Insights main page.
 
@@ -19,8 +19,8 @@ Your browser will now open a new window with Time Series Insights main page.
 
 One of the first actions you'll want to do is to explore the data now easily available.
 
-1. On the left pane, click on **AirplaneDevice** and then on **Show temperature**
-1. On the left pane, click on **TruckDevice** and then on **Show temperature**
+1. On the left pane, click on **AirplaneDevice**, check the *temperature* property and then click **Add**
+1. On the left pane, click on **TruckDevice**, check the *temperature* property and then click **Add**
 
 You can now see two different graphs showed in the center of the page. If you hover your cursor over it, you can see detailed values.
 
@@ -43,11 +43,21 @@ You can achieve Time comparative analysis with Time Series Insights.
 > [!NOTE]
 > In order to execute the next steps, you'll need to leave the simulator code run for at least one hour.
 
-1. Click on the **Show Advanced explore options for time Series** button at the bottom of the page (![alt-text](../media/explore-4.png))
+1. Un-check the *AirplaneDevice* row to remove the data from the chart
+1. Change the chart options from **Lanes** to **Overlap** to make it easier to compare the time series data
+
+    ![The chart options](../media/explore-10.png)
+
+1. Click on the **Duplicate time Series** button at the bottom of the page (![The duplicate time series button](../media/explore-4.png)) on the *TruckDevice* row. This will add a duplicate row for the *TruckDevice*.
+1. On the new row, click the *Settings* button.
 1. In the popup, you can change the time frame you're using for comparing data. You can select **30 minutes earlier** and click on **Apply** button.
 
-You'll now see two lines on your graph, with a different shade of color. As you can see in the screenshot below, there's quite a difference between the actual temperature and the temperature 30 minutes ago.
+    ![The settings popup](../media/explore-9.png)
 
-![alt-text](../media/explore-5.png)
+1. The default color for the new time series is similar to the original time series color. Click the color option and select a different color for the new time series.
+
+You'll now see two lines on your graph for the *TruckDevice*, with a different shade of color. As you can see in the screenshot below, there's quite a difference between the actual temperature and the temperature 30 minutes ago.
+
+![The time series chart showing both sets of values for the truck device, one 30 minutes earlier](../media/explore-5.png)
 
 You have now successfully displayed data ingested by Time Series Insights.

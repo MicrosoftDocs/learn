@@ -3,9 +3,9 @@ uid: learn.wwl.explore-non-relational-data-stores-azure
 metadata:
   title: Explore non-relational data stores in Azure
   description: "Explore non-relational data stores in Azure"
-  ms.date: 07/23/2020
+  ms.date: 10/02/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage non-relational data stores in Azure

@@ -2,7 +2,7 @@
 uid: learn.azure.create-nodejs-project-dependencies
 metadata:
   title: Create a new Node.js project and work with package dependencies 
-  description: Create a Node.js project and learn to add packages and manage package dependencies in your project. 
+  description: Create a Node.js project and learn to add packages and manage package dependencies in your project. Use the NPM CLI and registry to add libraries and tools to your JavaScript/TypeScript applications using Visual Studio Code.
   ms.date: 06/25/2020
   author: softchris
   ms.author: chnoring
@@ -16,11 +16,12 @@ abstract: |
   - Understand what the manifest file package.json consists of and use it to your advantage
   - Add packages to and remove packages from your Node.js project
   - Manage your package dependencies and update them in a predictable way
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/create-nodejs-project-dependencies.svg
 levels:
 - beginner
 roles:
 - developer
+- student
 products:
 - azure
 prerequisites: |

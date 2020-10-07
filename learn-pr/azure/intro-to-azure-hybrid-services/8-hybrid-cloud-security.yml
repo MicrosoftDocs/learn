@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-hybrid-services.8-hybrid-cloud-security
+metadata:
+  title: Security in hybrid cloud environments
+  description: Security in hybrid cloud environments
+  ms.date: 09/21/2020
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Security in hybrid cloud environments
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-hybrid-cloud-security.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Tailwind Traders wants to ensure that a test group of Windows and Linux servers automatically gets updates as they're published each week. In addition, the company wants the production groups of Windows and Linux servers to get updates only once a month, after it's known that they don't cause problems on test group servers. How many update deployments need to be configured to support this plan?"
+    choices:
+    - content: "One"
+      isCorrect: false
+      explanation: "You need separate deployments for Windows and Linux servers, and separate deployments for test and production systems."
+    - content: "Four"
+      isCorrect: true
+      explanation: "You need separate deployments for Windows and Linux servers, and separate deployments for test and production systems."
+    - content: "Two"
+      isCorrect: false
+      explanation: "You need separate deployments for Windows and Linux servers, and separate deployments for test and production systems."
+
+  - content: "Which of the following hybrid security technologies can Tailwind Traders use to assess the security configuration of on-premises servers and IaaS VMs running the Windows Server 2019 operating system?"
+    choices:
+    - content: "Azure Security Center"
+      isCorrect: true
+      explanation: "Azure Security Center can be used to assess the security configuration of enrolled servers running supported operating systems such as Windows Server 2019."
+    - content: "Azure Sentinel"
+      isCorrect: false
+      explanation: "Sentinel allows you to collect and analyze data and telemetry, but it doesn't allow you to assess a computer's security configuration."
+    - content: "System Center Configuration Manager"
+      isCorrect: false
+      explanation: "Although System Center Configuration Manager can monitor configuration drift from a known standard, it's not designed to assess the security configuration of servers both on-premises and in Azure."

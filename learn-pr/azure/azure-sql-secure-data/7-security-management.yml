@@ -1,45 +1,45 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-secure-data.7-security-management
 metadata:
-  title: Security management
-  description: Security management
+  title: Manage your security
+  description: Manage your security
   ms.date: 08/05/2020
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Security management
+title: Manage your security
 durationInMinutes: 10
 content: |
   [!include[](includes/7-security-management.md)]
 quiz:
-    title: Knowledge Check
+    title: Knowledge check
     questions:
-    - content: "Which of the following T-SQL for auditing is not supported in Azure SQL Managed Instance?"
+    - content: "Which of the following T-SQL commands for auditing is not supported in Azure SQL Managed Instance?"
       choices:
       - content: "With `CREATE SERVER AUDIT` there is syntax `TO URL`"
         isCorrect: false
-        explanation: "This is only available in Azure SQL Managed Instance."
+        explanation: "This is available only in Azure SQL Managed Instance."
       - content: "With `CREATE SERVER AUDIT` there is syntax `TO EXTERNAL MONITOR`"
         isCorrect: false
-        explanation: "This is only available in Azure SQL Managed Instance"
+        explanation: "This is available only in Azure SQL Managed Instance."
       - content: "With `CREATE SERVER AUDIT` there is syntax `TO FILE`"
         isCorrect: true
-        explanation: "You cannot write to local files since your instance is hosted in Azure"
+        explanation: "You can't write to local files because your instance is hosted in Azure"
       - content: "All of the above"
         isCorrect: false
-        explanation: "Two of the above options are available in Azure SQL Managed Instance."
+        explanation: "Two of the preceding options are available in Azure SQL Managed Instance."
     - content: "Which of the following are ways that you can monitor security-related events for Azure SQL Database?"
       choices:
-      - content: "Azure SQL Auditing"
+      - content: "Azure SQL auditing"
         isCorrect: false
-        explanation: "In Azure SQL Database, you can configure Azure SQL Auditing and leverage DMVs, Metrics, and Alerts in order to monitor security-related events."
+        explanation: "In Azure SQL Database, you can configure Azure SQL auditing and apply DMVs, metrics, and alerts to monitor security-related events."
       - content: "DMVs"
         isCorrect: false
-        explanation: "In Azure SQL Database, you can configure Azure SQL Auditing and leverage DMVs, Metrics, and Alerts in order to monitor security-related events."
+        explanation: "In Azure SQL Database, you can configure Azure SQL auditing and apply DMVs, metrics, and alerts to monitor security-related events."
       - content: "Azure Metrics and Alerts"
         isCorrect: false
-        explanation: "In Azure SQL Database, you can configure Azure SQL Auditing and leverage DMVs, Metrics, and Alerts in order to monitor security-related events."
+        explanation: "In Azure SQL Database, you can configure Azure SQL auditing and apply DMVs, metrics, and alerts to monitor security-related events."
       - content: "All of the above"
         isCorrect: true
-        explanation: "In Azure SQL Database, you can configure Azure SQL Auditing and leverage DMVs, Metrics, and Alerts in order to monitor security-related events."
+        explanation: "In Azure SQL Database, you can configure Azure SQL auditing and apply DMVs, metrics, and alerts to monitor security-related events."

@@ -44,4 +44,4 @@ Whenever possible, take advantage of combining lower resource costs and lower op
 
 Azure SQL Database is a great example of a managed service. You can deploy a single or pooled database, or a managed instance, and each of these is fully managed. You don't need to patch the underlying database software, and operational items like backup are built in and provided for you.
 
-Azure App Service is another example of a managed service that is designed to host web applications. Rather than deploying and managing VMs to host your web applications, you can deploy your applications directly to App Service, and dramatically reduce the amount effort that is required to maintain infrastructure.
+Azure App Service is another example of a managed service that is designed to host web applications. Rather than deploying and managing VMs to host your web applications, you can deploy your applications directly to App Service, and dramatically reduce the amount of effort that is required to maintain infrastructure.

@@ -34,36 +34,36 @@ Here’s our DevOps taxonomy of capabilities and practices that go into a world-
 
 :::row:::
    :::column span="":::
-      ![Diagram lists example practices for Continuous Planning: Strategy & portfolio planning, Lean product planning, Release planning, Sprint planning, Agile requirement management, Security requirement, Architecture design, Capacity planning, UX architecture design, Threat modeling, and Value stream mapping.](../media/1-2-c-1.png)
+      ![Diagram lists example practices for Continuous Planning: Strategy & portfolio planning, Lean product planning, Release planning, Sprint planning, Agile requirement management, Security requirement, Architecture design, Capacity planning, UX architecture design, Threat modeling, and Value stream mapping.](../media/1-2-continuous-planning.png)
    :::column-end:::
    :::column span="":::
-      ![Diagram lists example practices for Continuous Integration: Behavior-driven development, Test-driven development, Shift-left testing, Microservices & container development, SAST, Secrets scanning, Unit test/code coverage, GIT pull request, Gated check-in, Build pipeline - parallel/serial.](../media/1-2-c-2.png)
+      ![Diagram lists example practices for Continuous Integration: Behavior-driven development, Test-driven development, Shift-left testing, Microservices & container development, SAST, Secrets scanning, Unit test/code coverage, GIT pull request, Gated check-in, Build pipeline - parallel/serial.](../media/1-2-continuous-integration.png)
    :::column-end:::
    :::column span="":::
-      ![Diagram lists example practices for Continuous Delivery: Release pipeline, Secure infra deployment, IaaS deployment, PaaS deployment, SaaS deployment, Shared services, Infrastructure-as-code, Change management, Configuration management, Release management, On-premises or cloud deployment, Security/quality end-to-end check with automation.](../media/1-2-c-3.png)
+      ![Diagram lists example practices for Continuous Delivery: Release pipeline, Secure infra deployment, IaaS deployment, PaaS deployment, SaaS deployment, Shared services, Infrastructure-as-code, Change management, Configuration management, Release management, On-premises or cloud deployment, Security/quality end-to-end check with automation.](../media/1-2-continuous-delivery.png)
    :::column-end:::
    :::column span="":::
-      ![Diagram lists example practices for Continuous Operations: Site Reliability Engineering (SRE), Telemetry/monitoring, Application performance monitoring, Auto failover & scaling & DR, Modern Service Management, Secure access/app/data, High availability/security/cost and performance advisory, Secure Dev/Ops ChatOps, Shift-right testing, Secrets management, Governance.](../media/1-2-c-4.png)
+      ![Diagram lists example practices for Continuous Operations: Site Reliability Engineering (SRE), Telemetry/monitoring, Application performance monitoring, Auto failover & scaling & DR, Modern Service Management, Secure access/app/data, High availability/security/cost and performance advisory, Secure Dev/Ops ChatOps, Shift-right testing, Secrets management, Governance.](../media/1-2-continuous-operations.png)
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="4":::
-      ![Diagram lists example practices for Continuous Quality: Quality Requirements, Shift-lest testing, Governance and standards, Test automation, Compliance and Audits, and Shift-right testing.](../media/1-2-c-5.png)
+      ![Diagram lists example practices for Continuous Quality: Quality Requirements, Shift-lest testing, Governance and standards, Test automation, Compliance and Audits, and Shift-right testing.](../media/1-2-continuous-quality.png)
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="4":::
-      ![Diagram lists example practices for Continuous Security: Security architecture, Identity and access management, Application security, Secure infrastructure, Secure data and Secure Operations, Governance and Compliance.](../media/1-2-c-6.png)
+      ![Diagram lists example practices for Continuous Security: Security architecture, Identity and access management, Application security, Secure infrastructure, Secure data and Secure Operations, Governance and Compliance.](../media/1-2-continuous-security.png)
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="4":::
-      ![Diagram lists example practices for Continuous Collaboration: Culture collaboration, alignment and autonomy, Kanban collaboration, Wiki and Teams collaboration, ChatOps collaboration, and Feature team and SRE.](../media/1-2-c-7.png)
+      ![Diagram lists example practices for Continuous Collaboration: Culture collaboration, alignment and autonomy, Kanban collaboration, Wiki and Teams collaboration, ChatOps collaboration, and Feature team and SRE.](../media/1-2-continuous-collaboration.png)
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="4":::
-      ![Diagram lists example practices for Continuous Improvement: Lead time and cycle time, Deployment frequency, Mean time to restore, Change fail percentage, Continuous feedback, Value stream mapping.](../media/1-2-c-8.png)
+      ![Diagram lists example practices for Continuous Improvement: Lead time and cycle time, Deployment frequency, Mean time to restore, Change fail percentage, Continuous feedback, Value stream mapping.](../media/1-2-continuous-improvement.png)
    :::column-end:::
 :::row-end:::
 

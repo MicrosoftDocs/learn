@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-python-nasa.6-why-coding
+metadata:
+  title: Use code and data science practices to solve space exploration problems
+  description: Learn how coding can benefit you.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use code and data science practices to solve space exploration problems
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-why-coding.md)]

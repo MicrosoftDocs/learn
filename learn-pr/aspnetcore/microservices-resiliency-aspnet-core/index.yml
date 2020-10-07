@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.microservices-resiliency-aspnet-core
+metadata:
+  title: Implement resiliency in a cloud-native ASP.NET Core microservice
+  description: This module guides you through implementing resiliency in an ASP.NET Core microservices app in Azure Kubernetes Service.
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 08/04/2020
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Implement resiliency in a cloud-native ASP.NET Core microservice
+summary: Learn how to make your cloud-native ASP.NET Core microservices app fault-tolerant with minimal impact on the user.
+abstract: |
+  In this module, you will:
+  - Understand foundational resiliency concepts.
+  - Observe the behavior of a microservice with no resiliency strategy.
+  - Implement failure handling code for HTTP requests in one microservice.
+  - Deploy an infrastructure-based resiliency solution to an AKS cluster.
+prerequisites: |
+  - Familiarity with C# and ASP.NET Core development at the beginner level
+  - Familiarity with RESTful service concepts
+  - Conceptual knowledge of containers and AKS at the intermediate level
+  - Access to an Azure subscription with **Owner** privilege
+levels:
+  - advanced
+roles:
+  - developer
+  - solution-architect
+products:
+  - dotnet
+  - aspnet-core
+  - dotnet-core
+  - azure
+  - azure-container-registry
+  - azure-kubernetes-service
+units:
+  - learn.microservices-resiliency-aspnet-core.1-introduction
+  - learn.microservices-resiliency-aspnet-core.2-environment-setup
+  - learn.microservices-resiliency-aspnet-core.3-review-resiliency-concepts
+  - learn.microservices-resiliency-aspnet-core.4-verify-deployment
+  - learn.microservices-resiliency-aspnet-core.5-implement-polly-resiliency
+  - learn.microservices-resiliency-aspnet-core.6-implement-linkerd-resiliency
+  - learn.microservices-resiliency-aspnet-core.7-knowledge-check
+  - learn.microservices-resiliency-aspnet-core.8-summary
+iconUrl: /learn/achievements/aspnetcore/microservices-resiliency-aspnet-core.svg
+badge:
+  uid: learn.microservices-resiliency-aspnet-core.badge

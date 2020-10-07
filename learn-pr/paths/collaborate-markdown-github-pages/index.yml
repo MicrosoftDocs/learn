@@ -22,7 +22,7 @@ summary: |
   - GitHub Pages helps you create project pages and blog posts that include custom themes.
 prerequisites: |
  - A [GitHub](https://github.com?azure-portal=true) account
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/github/collaborate-markdown-github-pages.svg
 levels:
 - beginner
 roles:
@@ -30,6 +30,7 @@ roles:
 - administrator
 - developer
 - solution-architect
+- student
 products:
 - github
 modules:

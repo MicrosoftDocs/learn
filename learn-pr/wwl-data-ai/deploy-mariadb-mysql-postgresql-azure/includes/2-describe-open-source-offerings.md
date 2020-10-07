@@ -10,7 +10,7 @@ Azure Database for PostgreSQL helps customers to build large scalable applicatio
 
 There are three service tiers for each offering. Each tier has an ideal workload for which it is designed and allows you to choose from a variety of performance options.
 
-- Basic – This tier is best for light workloads that need minimal compute and I/O performance. 
+- Basic – This tier is best for light workloads that need minimal compute and I/O performance.
 
 - General Purpose – This tier is great for most workloads requiring scalable I/O throughput along with a healthy balance of compute and memory.
 
@@ -24,4 +24,4 @@ The service tiers offered by the open source platforms provide a wide range of p
 | **MySQL**| 5.6-8.0 |
 | **Postgres**| 9.5-11 |
 
-While the Azure service will perform minor upgrades, in order to execute a major upgrade you will be need to restore from a backup into a new version.
+While the Azure service will perform minor upgrades, in order to execute a major upgrade you will need to restore from a backup into a new version.

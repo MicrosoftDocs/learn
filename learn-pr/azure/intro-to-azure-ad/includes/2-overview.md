@@ -7,7 +7,7 @@ Here, you'll get an overview of Azure AD and see why you would use it. You'll le
 
 Azure AD is a cloud-based identity management solution. It helps your company's internal users to:
 
-- Access external resources, like Azure services, Office 365, and third-party SaaS applications.
+- Access external resources, like Azure services, Microsoft 365, and third-party SaaS applications.
 
 - Access internal resources such as applications on your corporate network, and cloud-based applications that your company builds.
 
@@ -23,7 +23,7 @@ Azure AD meets the needs of many types of users. For instance, an IT administrat
 
 Application developers can use Azure AD to enable users to use preexisting credentials to access applications. Developers also use Azure AD to create personalized end-user experiences by accessing organizational user data through APIs that are specific to Azure AD.
 
-If you subscribe to services like Office 365, Azure, or Microsoft 365, you're already taking advantage of Azure AD. You could use Azure AD to further manage access to your cloud applications.
+If you subscribe to services like Azure or Microsoft 365, you're already taking advantage of Azure AD. You could use Azure AD to further manage access to your cloud applications.
 
 ## Identity secure score in Azure AD
 
@@ -46,7 +46,7 @@ Azure AD is a cloud-based identity solution that helps you manage users and appl
 |Service|Authentication  |Structure  |What it's used for  
 |---------|---------|---------|---------|
 |Active Directory     |Kerberos, NTLM| Forests, domains,  organizational  units | Authentication and authorization for on-premises printers, applications, file services, and more
-|Azure Active Directory     |Includes SAML, OAuth, WS-Federation|Tenants|Internet-based services and applications like Office 365, Azure services, and third-party SaaS applications
+|Azure Active Directory     |Includes SAML, OAuth, WS-Federation|Tenants|Internet-based services and applications like Microsoft 365, Azure services, and third-party SaaS applications
 
 ![A comparison between Active Directory and Azure AD](../media/2-azure-ad-compared-active-directory.svg)
 
@@ -79,7 +79,7 @@ Use the following table as a reference for which options to use for particular s
 
 ## European identity data storage
 
-When you subscribe to a service like Azure or Office 365, all of your identity data is stored based on the address that you provide during the subscription process. If you're a customer who uses an address in Europe, Azure AD stores most of your data in European datacenters. However, some data is stored outside Europe by services that you use with Azure AD. Here are a few examples of some of the data that's stored outside Europe:
+When you subscribe to a service like Azure or Microsoft 365, all of your identity data is stored based on the address that you provide during the subscription process. If you're a customer who uses an address in Europe, Azure AD stores most of your data in European datacenters. However, some data is stored outside Europe by services that you use with Azure AD. Here are a few examples of some of the data that's stored outside Europe:
 
 |Azure AD-based service |Data location  |
 |---------|---------|

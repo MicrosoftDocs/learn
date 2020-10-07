@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-premises-windows-server-instances-to-azure-iaas-vms.perform-server-assessment
+title: Perform server assessment
+metadata:
+  title: Perform server assessment
+  description: "Perform server assessment"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-perform-server-assessment.md)]
