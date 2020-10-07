@@ -11,7 +11,7 @@ For completing this lab, Microsoft Learn provides a free Azure sandbox in which 
 
 ## Create your working directory
 
-::: zone pivot="Java"
+::: zone pivot="java"
 
 1. We provide a template for your Java application. Clone the template repo onto your system.
 
@@ -39,7 +39,7 @@ For completing this lab, Microsoft Learn provides a free Azure sandbox in which 
 
 ::: zone-end
 
-::: zone pivot="Spring Data"
+::: zone pivot="spring"
 
 1. We provide you with a template for your Java application. Clone the template repo onto your system
 
