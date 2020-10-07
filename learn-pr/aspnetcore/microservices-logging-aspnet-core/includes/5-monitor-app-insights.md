@@ -86,9 +86,9 @@ The application map provides one way of drilling into captured telemetry, but yo
         - An **INFORMATION** log with the text "----- Getting discount cupon: "GIVEMEFREESTUFF" is logged.
         - An **INFORMATION** log with the text "----- WebAggregator --> Coupon-API: "GIVEMEFREESTUFF" is logged.
     - *webshoppingagg* makes an HTTP request to the *coupon* service at the path `GET /api/v1/coupon/GIVEMEFREESTUFF`.
-    - The preceding request fails.
-        - An **INFORMATION** log with the text "----- Getting discount cupon: "GIVEMEFREESTUFF" is logged.
-        - An **INFORMATION** log with the text "----- WebAggregator --> Coupon-API: "GIVEMEFREESTUFF" is logged.
+    - Since the preceding request fails, the overall request fails.
+        - An **INFORMATION** log beginning with the text "----- WebAggregator <-- Coupon-API: HttpResponseMessage" is logged.
+        - A **WARNING** log with the text "----- Coupon not found: 404 - Content: "ERROR: The coupon doesn't exist"" is logged.
 
     Each item in the list may be selected for additional information.
 
