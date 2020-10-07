@@ -5,9 +5,9 @@ In this unit, you'll monitor your app from the Azure portal using Application In
 Since you've instrumented four services for Application Insights, those services are sending telemetry to Application Insights whenever the app is running. To view the telemetry as it's ingested, complete the following steps:
 
 1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) using the same subscription used in previous units.
-1. Use the search box to find and open the resource group `eshop-learn-rg`.
+1. Use the search box to find and open the resource group *eshop-learn-rg*.
 1. Select the *webshoppingagg* Application Insights resource.
-1. Select the **Live Metrics** menu item on the left.
+1. Select **Live Metrics** from the **Investigate** section.
 
 A view similar to the following appears:
 
@@ -22,7 +22,7 @@ In the preceding image, notice the following:
 
 ## Create some telemetry
 
-You must now use the app to generate some telemetry data to examine. Open another browser tab to complete the following steps. While you are completing the steps, observe the results on the the **Live Metrics** view.
+You must now use the app to generate some telemetry data to examine. Open another browser tab to complete the following steps. While you're completing the steps, observe the results on the the **Live Metrics** view.
 
 1. If needed, run the following command to display the various app URLs:
 
@@ -42,21 +42,26 @@ You must now use the app to generate some telemetry data to examine. Open anothe
     :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
 1. Complete a purchase as follows:
-    1. Select the **:::no-loc text="LOGIN":::** link in the upper right to sign into the app. The credentials are provided on the page.
+    1. Select the **:::no-loc text="LOGIN":::** link in the upper right to sign into the app. Log in using the credentials provided on the page.
     1. Add the **:::no-loc text=".NET BLUE HOODIE":::** to the shopping bag by selecting the image.
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
     1. Enter the code *:::no-loc text="GIVEMEFREESTUFF":::* in the **:::no-loc text="HAVE A DISCOUNT CODE?":::** text box and select **:::no-loc text="APPLY":::**. Note that this is not a valid code.
-    1. Enter the code *:::no-loc text="DISC-10":::* in the **:::no-loc text="HAVE A DISCOUNT CODE?":::** text box for a 10 USD discount, and select **:::no-loc text="APPLY":::**.
+    1. Replace the code *:::no-loc text="GIVEMEFREESTUFF":::* with *:::no-loc text="DISC-10":::* for a 10 USD discount. Select **:::no-loc text="APPLY":::**.
     1. Select **:::no-loc text="PLACE ORDER":::** to complete the purchase.
 
-Application Insights will capture telemetry from from each of the four instrumented services. The telemetry captured represents HTTP and SQL requests to/from the services. As the telemetry is captured, it's ingested by endpoints in the cloud. The ingestion process takes a few minutes.
+Application Insights will capture telemetry from from each of the four instrumented services. The telemetry captured represents HTTP and SQL requests to/from the services. As the telemetry is captured, it's ingested by endpoints in Azure. The ingestion process takes a few minutes.
 
 ## Examine application map
 
-A  good place to view the overall health of your app in Application Insights is the application map. The application map shows a graphical representation of the service and its dependencies. The application map can be used to investigate failures and performance issues. Investigate the earlier failed coupon service call with the following steps:
+A good place to view the overall health of your app in Application Insights is the application map. The application map:
 
-1. Select **Application map** in the left menu.
+- Shows a graphical representation of the service and its dependencies.
+- Can be used to investigate failures and performance issues.
+
+Investigate the earlier failed coupon service request with the following steps:
+
+1. Select **Application map** from the **Investigate** section.
 
     :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-initial-app-map.png" alt-text="The initial view of the webshoppingagg application map" border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-initial-app-map.png":::
 
