@@ -1,4 +1,4 @@
-The [Blockchain Development Kit for Ethereum](https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain) is an extension that's available in Visual Studio Code. Use the extension to create, build, and deploy smart contracts on Ethereum blockchain solutions.
+The [Blockchain Development Kit for Ethereum](https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain&azure-portal=true) is an extension that's available in Visual Studio Code. Use the extension to create, build, and deploy smart contracts on Ethereum blockchain solutions.
 
 ## Install the extension
 
