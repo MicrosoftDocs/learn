@@ -81,7 +81,7 @@ The application map provides one way of drilling into captured telemetry, but yo
 1. Select **Transaction Search** in the left menu.
 1. In the search box, enter *GIVEMEFREESTUFF* and press <kbd>Enter</kbd>.
 1. In the result set, select a **TRACE** item with the description "----- Coupon not found: 404 - Content: "ERROR: The coupon doesn't exist". An end-to-end transaction trace appears.
-1. Notice the trace lists the path of the request. 
+1. Notice the trace details each step of the request.
     - The initial request is received by *webshoppingagg*.
         - An **INFORMATION** log with the text "----- Getting discount cupon: "GIVEMEFREESTUFF" is logged.
         - An **INFORMATION** log with the text "----- WebAggregator --> Coupon-API: "GIVEMEFREESTUFF" is logged.
