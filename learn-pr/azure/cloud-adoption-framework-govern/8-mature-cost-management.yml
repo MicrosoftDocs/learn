@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-adoption-framework-govern.8-mature-cost-management
-title: Cost Management Discipline
+title: The Cost Management discipline
 metadata:
-  title: Cost Management Discipline
+  title: The Cost Management discipline
   description: After establishing a governance foundation, use that foundation to govern costs at scale.
   ms.date: 09/22/2020
   author: BrianBlanchard
