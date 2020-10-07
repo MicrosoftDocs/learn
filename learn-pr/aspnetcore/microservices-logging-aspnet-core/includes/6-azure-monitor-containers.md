@@ -1,8 +1,8 @@
 Having a general view of your cluster topology and state, and being able to drill into the details when needed, is a key feature to ensure your application supports the business in the best possible way.
 
-In this exercise you'll explore a cluster-level monitoring solution using Azure Monitor for containers. This monitoring solution, along with Application Insights, focused on more application-level information, gives  you a much more complete view of your application and it's operational context.
+In this exercise, you'll explore a cluster-level monitoring solution using Azure Monitor for containers. This monitoring solution, along with Application Insights, focuses on more application-level information. The solution gives you a more complete view of your app and its operational context.
 
-In this exercise you will:
+In this exercise, you will:
 
 - Enable Azure Monitor for containers for your AKS cluster.
 - Create a simple metric for the Prometheus endpoint.
@@ -11,25 +11,25 @@ In this exercise you will:
 
 ## Enable Azure Monitor for containers
 
-Just run the following script from the `deploy/k8s` folder:
+Run the following script from the *deploy/k8s* directory:
 
-```bash
+```azurecli
 az aks enable-addons \
     --addons monitoring \
     --name eshop-learn-aks \
     --resource-group eshop-learn-rg \
-    --query "{Name:name,ResourceGroup:resourceGroup,KubernetesVersion:kubernetesVersion,NodeResourceGroup:nodeResourceGroup,ProvisioningState:provisioningState}"
+    --query "{name,resourceGroup,kubernetesVersion,nodeResourceGroup,provisioningState}"
 ```
 
-The above script enables the monitor addon for your AKS cluster, using the environment variables created by the AKS creation script. You should get an output like this:
+The preceding script enables the monitor add-on for your AKS cluster, using the environment variables created by the AKS creation script. A variation of the following output appears:
 
 ```console
 AAD role propagation done[############################################]  100.0000%{
-  "KubernetesVersion": "1.17.11",
-  "Name": "eshop-learn-aks",
-  "NodeResourceGroup": "MC_eshop-learn-rg_eshop-learn-aks_westus",
-  "ProvisioningState": "Succeeded",
-  "ResourceGroup": "eshop-learn-rg"
+  "kubernetesVersion": "1.17.11",
+  "name": "eshop-learn-aks",
+  "nodeResourceGroup": "MC_eshop-learn-rg_eshop-learn-aks_westus",
+  "provisioningState": "Succeeded",
+  "resourceGroup": "eshop-learn-rg"
 }
 ```
 
@@ -53,7 +53,7 @@ So let's get into the details:
 
 ### 1. Install the Prometheus package in the Catalog.API project
 
-Run the following command from the `src/Services/Catalog/Catalog.API` folder:
+Run the following command from the `src/Services/Catalog/Catalog.API` directory:
 
 ```dotnetcli
 dotnet add package prometheus-net.AspNetCore
@@ -195,7 +195,7 @@ monitor_kubernetes_pods = true
 
 Then you have to apply it to the cluster.
 
-The file has been already downloaded and updated, so you just have to run the following command from the *deploy/k8s* folder:
+The file has already been downloaded and updated. You just have to run the following command from the *deploy/k8s* directory:
 
 ```bash
 kubectl apply -f azure-monitor/container-azm-ms-agentconfig.yaml
