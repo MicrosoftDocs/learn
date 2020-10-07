@@ -50,7 +50,7 @@ According to the outline from the Tailwind Traders customer narrative unit, the 
 - Improper access compromising systems or data.
 - Inconsistent governance due to immature processes and lack of skills on the team.
 
-It's important to note, that none of the actual concerns are related to, "a specific network segment of the existing data centers," as sited in their existing policy. To create sound governance policies that will scale into the cloud, we need to dig a bit deeper and look at the tangible risks captured in the current policy versus the current-state solution.
+It's important to note, that none of the actual concerns are related to, "a specific network segment of the existing data centers," cited in their current policy. To create sound governance policies that will scale into the cloud, we need to dig a bit deeper and look at the tangible risks captured in the current policy versus the current-state solution.
 
 Deeper investigation of the stakeholder concerns and the cloud adoption plan will likely expose additional risks that can't be tolerated by the organization. But for now, we have enough to start shaping governance policies that address these tangible risks.
 
