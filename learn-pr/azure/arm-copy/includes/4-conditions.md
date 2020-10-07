@@ -7,7 +7,9 @@ You don’t need to set it, ARM infers it.
  
 
 Teach how to figure out who is parent and child for the sake of deployment order. 
- 
+
+Concept https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/conditional-resource-deployment 
+
 Conditions - https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-use-conditions 
 
 Deployment order - https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/define-resource-dependency  
