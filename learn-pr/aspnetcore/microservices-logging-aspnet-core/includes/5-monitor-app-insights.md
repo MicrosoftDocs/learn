@@ -32,7 +32,7 @@ You must now use the app to generate some telemetry data to examine. Open anothe
 
 1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically, every 10 seconds.
 
-    :::image type="content" source="../media/3-permissions-secrets/health-check.png" alt-text="Health check page" border="true" lightbox="../media/3-permissions-secrets/health-check.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/health-check.png" alt-text="Health check page" border="true" lightbox="../media/5-monitor-app-insights/health-check.png":::
 
     > [!NOTE]
     > While the app is starting up, you might initially receive an HTTP 503 or 502 response from the server. Retry after about one minute. The :::no-loc text="Seq"::: logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
