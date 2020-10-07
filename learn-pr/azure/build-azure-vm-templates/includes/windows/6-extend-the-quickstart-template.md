@@ -1,9 +1,5 @@
 Now that you've defined the template resource for the Custom Script Extension that configures IIS on your VM, let's add it to the existing VM template and run it.
 
-Here's what the IIS configuration will look like.
-
-![A web browser showing the resulting IIS configuration](../../media/6-browser-windows.png)
-
 ## Build the template
 
 Here you'll download the template and modify it.
@@ -26,7 +22,7 @@ Here you'll download the template and modify it.
 
     ```json
     {
-      "name": "[concat(variables('vmName'),'/', 'ConfigureIIS')]",
+      "name": "[concat(parameters('vmName'),'/', 'ConfigureIIS')]",
       "type": "Microsoft.Compute/virtualMachines/extensions",
       "apiVersion": "2018-06-01",
       "location": "[parameters('location')]",
@@ -45,7 +41,7 @@ Here you'll download the template and modify it.
         }
       },
       "dependsOn": [
-        "[resourceId('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
+        "[resourceId('Microsoft.Compute/virtualMachines/', parameters('vmName'))]"
       ]
     },
     ```
@@ -126,7 +122,7 @@ The deployment succeeded, so let's see the resulting configuration in action.
 
     ```azurecli
     IPADDRESS=$(az vm show \
-      --name SimpleWinVM \
+      --name simple-vm \
       --resource-group $RESOURCEGROUP \
       --show-details \
       --query [publicIps] \
@@ -142,7 +138,7 @@ The deployment succeeded, so let's see the resulting configuration in action.
     You see this.
 
     ```html
-    <html><body><h2>Welcome to Azure! My name is SimpleWinVM.</h2></body></html>
+    <html><body><h2>Welcome to Azure! My name is simple-vm.</h2></body></html>
     ```
 
 1. From a separate browser tab, navigate to your web site.
@@ -155,6 +151,6 @@ The deployment succeeded, so let's see the resulting configuration in action.
 
     Navigate to the IP address you see from a separate browser tab. You see this.
 
-    ![A web browser showing the resulting IIS configuration](../../media/6-browser-windows.png)
+    ![Screenshot of a web browser that shows the message welcome to Azure.](../../media/6-browser-windows.png)
 
 Great work! With the Custom Script Extension resource in place, you're able to extend your deployment to do more.

@@ -3,7 +3,7 @@ uid: learn.wwl.create-azure-cognitive-search-solution
 metadata:
   title: Create an Azure Cognitive Search solution
   description: "Unlock the hidden insights in your data with Azure Cognitive Search."
-  ms.date: 08/22/2020
+  ms.date: 09/19/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -24,10 +24,10 @@ roles:
 - ai-engineer
 - developer
 - solution-architect
-- student
 products:
 - azure-storage
 - vs-code
+- azure-cognitive-search
 units:
 - learn.wwl.create-azure-cognitive-search-solution.introduction
 - learn.wwl.create-azure-cognitive-search-solution.get-ready-to-develop

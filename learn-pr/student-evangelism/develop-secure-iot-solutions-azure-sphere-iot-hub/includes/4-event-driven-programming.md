@@ -1,14 +1,23 @@
-In this unit, you'll learn about event driven programming.
+In this unit, you'll learn about event driven programming and look at several different timers such as Event Timers, Periodic Timers, and One-Shot Timers.
 
 ## Event Timers
 
-Event Timers generate events which are bound to handler functions which implement desired actions. For example, blink an LED every second, or read a sensor every 10 seconds. Event-driven programming helps to simplify application design.
+Event Timers generate events which are bound to handler functions which implement desired actions. 
 
 ![The illustration shows event timers concept.](../media/timer-events.png)
 
-The labs use event timers extensively, so there is a generalized model to simplify working with timers. There are two types of timers, **periodic timers**, and **one-shot timers**.
+For example, blink an LED every second, or read a sensor every 10 seconds. Event-driven programming helps to simplify application design.
+
+The labs use event timers extensively, so there is a generalized model to simplify working with timers.
+
+There are two types of timers:
+
+- periodic timers, and
+- one-shot timers.
 
 ### Periodic Timers
+
+Periodic Timers produce timed triggers with a fixed period of time between the next occurrence.
 
 The following example is a variable named **measureSensorTimer** of type **LP_TIMER**. This event timer is initialized with a period of 10 seconds **{ 10, 0 }**. When the event timer triggers, the handler function **MeasureSensorHandler** is called to implement the action.
 
@@ -21,6 +30,8 @@ static LP_TIMER measureSensorTimer = {
 	.handler = MeasureSensorHandler	// The function handler called when the timer triggers.
 };
 ```
+
+### Reading Telemetry
 
 The following is the implementation of the **MeasureSensorHandler** handler function. This functions reads telemetry, then calls Led2On() to turn on led2.
 
@@ -41,6 +52,8 @@ static void MeasureSensorHandler(EventLoopTimer* eventLoopTimer) {
 ```
 
 ### One-Shot Timers
+
+A one-shot timer, as its name suggests fires once only.
 
 The following code uses a one-shot timer to blink an LED once when a button is pressed. The LED turns on, and then a one-shot timer is set. When the one-shot timer triggers, its handler function is called to turn off the LED.
 

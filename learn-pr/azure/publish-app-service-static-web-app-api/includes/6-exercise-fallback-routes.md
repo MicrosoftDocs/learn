@@ -79,6 +79,6 @@ Go to your repository in your browser and watch the GitHub Action's progress. Fo
 1. Select the latest (top) link in the action runs to the right
 1. Click the **Build and Deploy Job** link
 
-You can see the progress of your GitHub Action as it builds and publishes your web app and API.
+You can see the progress of your GitHub Action as it builds and publishes your web app.
 
 Once it is redeployed, browse to your app. Notice the URL displays **/products**. Now refresh the browser by pressing <kbd>F5</kbd> to test your fallback route. Your app should reload successfully thanks to your fallback route in your routing rules!

@@ -71,7 +71,7 @@ from azureml.pipeline.core import PipelineData
 from azureml.pipeline.core import Pipeline
 
 # Get the batch dataset for input
-batch_data_set = ws.datasets('batch-data')
+batch_data_set = ws.datasets['batch-data']
 
 # Set the output location
 default_ds = ws.get_default_datastore()

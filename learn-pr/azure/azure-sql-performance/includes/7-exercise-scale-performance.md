@@ -109,7 +109,7 @@ Now that the database has more CPU capacity, let's run the workload we did in th
 
     You should see that the average CPU resource usage has decreased from the almost 100 percent usage in the previous exercise.
 
-1. Using SSMS, run the same query from the first exercise of this module from the script **dmexecrequests.sql**.
+1. Using SSMS, run the same query from the first exercise of this module to observe results from the script **dmexecrequests.sql**.
 
     ```sql
     SELECT er.session_id, er.status, er.command, er.wait_type, er.last_wait_type, er.wait_resource, er.wait_time

@@ -17,7 +17,7 @@ abstract: |
   - Evaluate appropriate index types
   - Investigate the value of data compression
 prerequisites: |
-  - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based.
+  - Ability to use tools for running queries against a Microsoft SQL database, either on-premises or cloud-based.
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
   - Basic understanding of structure and usage of SQL Server indexes.
   - Basic understanding of relational database concepts.

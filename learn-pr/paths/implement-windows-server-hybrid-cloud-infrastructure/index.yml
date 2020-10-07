@@ -1,9 +1,9 @@
 ### YamlMime:LearningPath
-uid: learn.wwwl.implement-windows-server-hybrid-cloud-infrastructure
+uid: learn.wwl.implement-windows-server-hybrid-cloud-infrastructure
 metadata:
   title: Implement a Windows Server hybrid cloud infrastructure
   description: You will learn how to address problems relating to the migration of on-premises workloads into Azure. After completing the learning path, you will be able to implement a hybrid Azure infrastructure.
-  ms.date: 08/16/2020
+  ms.date: 09/24/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -24,13 +24,12 @@ prerequisites: |
     - Monitoring
 summary: |
   You will learn how to address problems relating to the migration of on-premises workloads into Azure. After completing the learning path, you will be able to implement a hybrid Azure infrastructure.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/implement-a-windows-server-hybrid-cloud-infrastructure.svg
 levels:
 - intermediate
 roles:
 - administrator
 - solution-architect
-- student
 - technology-manager
 products:
 - azure
@@ -47,4 +46,4 @@ modules:
 - learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas
 - learn.wwl.implement-scale-high-availability-with-windows-server-vm
 trophy:
-  uid: learn.wwwl.implement-windows-server-hybrid-cloud-infrastructure.trophy
+  uid: learn.wwl.implement-windows-server-hybrid-cloud-infrastructure.trophy

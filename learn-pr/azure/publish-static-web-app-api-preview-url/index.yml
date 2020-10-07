@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.azure.publish-static-web-app-api-preview-url
+metadata:
+  title: Publish an API to Azure Static Web Apps
+  description: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps and Azure Functions. Deploy your code from GitHub to a staging site using preview URLs.
+  ms.date: 09/25/2020
+  author: johnpapa
+  ms.author: jopapa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Publish an API to Azure Static Web Apps
+summary: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps and Azure Functions. Deploy your code from GitHub to a staging site using preview URLs.
+abstract: |
+  In this module, you will:
+    - Choose an existing web app project with either Angular, React, Svelte or Vue
+    - Create an API for the app with Azure Functions
+    - Run the application locally
+    - Publish the app to Azure Static Web Apps
+    - Publish the app and its API to Azure Static Web Apps to a staging site
+prerequisites: |
+  - Familiarity with one of Angular, React, Svelte, or Vue
+  - [Node.js LTS and Git](https://nodejs.org/)
+  - [GitHub](https://github.com) account
+  - [Visual Studio Code](https://code.visualstudio.com)
+  - Beginner-level experience with Azure Functions
+iconUrl: /learn/achievements/publish-static-web-app-api-preview-url.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - azure
+  - azure-functions
+  - azure-app-service
+  - azure-app-service-static
+units:
+  - learn.azure.publish-static-web-app-api-preview-url.1-introduction
+  - learn.azure.publish-static-web-app-api-preview-url.2-exercise-get-started
+  - learn.azure.publish-static-web-app-api-preview-url.3-build-api
+  - learn.azure.publish-static-web-app-api-preview-url.4-exercise-function-app
+  - learn.azure.publish-static-web-app-api-preview-url.5-action
+  - learn.azure.publish-static-web-app-api-preview-url.6-exercise-action
+  - learn.azure.publish-static-web-app-api-preview-url.7-knowledge-check
+  - learn.azure.publish-static-web-app-api-preview-url.8-summary
+badge:
+  uid: learn.azure.publish-static-web-app-api-preview-url.badge

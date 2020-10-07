@@ -3,7 +3,7 @@ uid: learn.wwl.differentiate-azure-management-tools
 metadata:
   title: Differentiate Azure management tools
   description: "In this module, we'll showcase Azure portal, Azure PowerShell, Azure CLI, and Azure Cloud Shell. We'll also look at Azure Advisor, which provides recommendations on high availability, security, performance, and cost. AZ-900"
-  ms.date: 09/05/2020
+  ms.date: 09/20/2020
   author: wwlpublish
   ms.author: cwsuseng
   ms.topic: interactive-tutorial
