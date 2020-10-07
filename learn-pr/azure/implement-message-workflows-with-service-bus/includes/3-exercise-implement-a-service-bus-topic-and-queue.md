@@ -37,9 +37,13 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Click **Create** to create the Service Bus namespace.
+1. Click **Review + create** to have an opportunity to review the Service Bus namespace details.
 
-    ![Screenshot of the Service bus and Create namespace panes with the Add button and Create button highlighted](../media/3-create-namespace-2.png)
+    ![Screenshot of the Service bus Create namespace pane with the Review + create button highlighted](../media/3-create-namespace-2.png)
+
+1. Review the details and click **Create** to create the Service Bus namespace.
+
+    ![Screenshot of the Service bus Review namespace pane with the Create button highlighted](../media/3-create-namespace-3.png)
 
 ## Create a Service Bus queue
 
