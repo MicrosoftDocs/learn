@@ -25,7 +25,8 @@ You will:
         az monitor app-insights component create --app ordering \
             --query '{Name:name, Key:instrumentationKey}' && \
         az monitor app-insights component create --app webshoppingagg \
-            --query '{Name:name, Key:instrumentationKey}'
+            --query '{Name:name, Key:instrumentationKey}' && \
+        az configure --defaults group= location=
     ```
 
     The preceding commands create four Application Insights resources, in the resource group you created for this module. A variation of the following output appears:

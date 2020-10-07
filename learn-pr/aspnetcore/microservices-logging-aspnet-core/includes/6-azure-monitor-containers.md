@@ -1,8 +1,8 @@
 Having a general view of your cluster topology and state, and being able to drill into the details when needed, is a key feature to ensure your application supports the business in the best possible way.
 
-In this exercise you'll explore a cluster-level monitoring solution using Azure Monitor for containers. This monitoring solution, along with Application Insights, focused on more application-level information, gives  you a much more complete view of your application and it's operational context.
+In this exercise, you'll explore a cluster-level monitoring solution using Azure Monitor for containers. This monitoring solution, along with Application Insights, focuses on more application-level information. The solution gives you a more complete view of your app and its operational context.
 
-In this exercise you will:
+In this exercise, you will:
 
 - Enable Azure Monitor for containers for your AKS cluster.
 - Create a simple metric for the Prometheus endpoint.
@@ -11,15 +11,27 @@ In this exercise you will:
 
 ## Enable Azure Monitor for containers
 
-Just run the following script from the `deploy/k8s` folder:
+Run the following script from the *deploy/k8s* directory:
 
-```bash
-./enable-azure-monitor-for-containers.sh
+```azurecli
+az aks enable-addons \
+    --addons monitoring \
+    --name eshop-learn-aks \
+    --resource-group eshop-learn-rg \
+    --query "{name,resourceGroup,kubernetesVersion,nodeResourceGroup,provisioningState}"
 ```
 
-The above script enables the monitor addon for your AKS cluster, using the environment variables created by the AKS creation script. You should get an output like this:
+The preceding script enables the monitor add-on for your AKS cluster, using the environment variables created by the AKS creation script. A variation of the following output appears:
 
-:::image type="content" source="../media/enable-azure-monitor-for-containers.png" alt-text="Output from the enable-azure-monitor-for-containers script, showing the provisioning state as successful" border="true" lightbox="../media/enable-azure-monitor-for-containers.png":::
+```console
+AAD role propagation done[############################################]  100.0000%{
+  "kubernetesVersion": "1.17.11",
+  "name": "eshop-learn-aks",
+  "nodeResourceGroup": "MC_eshop-learn-rg_eshop-learn-aks_westus",
+  "provisioningState": "Succeeded",
+  "resourceGroup": "eshop-learn-rg"
+}
+```
 
 When the scripts finishes, usually in less than a couple of minutes, you should be able to monitor the cluster by navigating to the AKS resource in the Azure portal and then clicking the **Insights** option on the sidebar, under the **Monitoring** section:
 
