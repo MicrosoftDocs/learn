@@ -23,7 +23,15 @@ az aks enable-addons \
 
 The above script enables the monitor addon for your AKS cluster, using the environment variables created by the AKS creation script. You should get an output like this:
 
-:::image type="content" source="../media/enable-azure-monitor-for-containers.png" alt-text="Output from the enable-azure-monitor-for-containers script, showing the provisioning state as successful" border="true" lightbox="../media/enable-azure-monitor-for-containers.png":::
+```console
+AAD role propagation done[############################################]  100.0000%{
+  "KubernetesVersion": "1.17.11",
+  "Name": "eshop-learn-aks",
+  "NodeResourceGroup": "MC_eshop-learn-rg_eshop-learn-aks_westus",
+  "ProvisioningState": "Succeeded",
+  "ResourceGroup": "eshop-learn-rg"
+}
+```
 
 When the scripts finishes, usually in less than a couple of minutes, you should be able to monitor the cluster by navigating to the AKS resource in the Azure portal and then clicking the **Insights** option on the sidebar, under the **Monitoring** section:
 
