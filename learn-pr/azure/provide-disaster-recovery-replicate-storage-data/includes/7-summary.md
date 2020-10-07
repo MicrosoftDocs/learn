@@ -8,4 +8,5 @@ You also learned how the failover process works, and how to do a failover in the
 
 - [Azure Storage redundancy](https://docs.microsoft.com/azure/storage/common/storage-redundancy)
 - [Change how a storage account is replicated](https://docs.microsoft.com/azure/storage/common/redundancy-migration?tabs=portal)
-- [Choose the right region for you](https://azure.microsoft.com/global-infrastructure/geographies/)
+- [Disaster recovery and storage account failover](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance)
+

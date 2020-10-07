@@ -47,7 +47,8 @@ Use **Last Sync Time** to understand the extent of data loss you may experience.
 
 You can find the **Last Sync Time** by using the Azure portal, Azure CLI, or Azure PowerShell. For example, the **Last Sync Time** is shown when you select **Prepare for failover** in the Azure portal.
 
-![Screenshot of the failover confirmation page with the last sync time shown.](../media/4-portal-failover-confirm.png)
+:::image type="content" source="../media/4-portal-failover-confirm.png" alt-text="Screenshot of the failover confirmation page with the last sync time shown.":::
+
 
 ### Track Azure Storage service outage
 

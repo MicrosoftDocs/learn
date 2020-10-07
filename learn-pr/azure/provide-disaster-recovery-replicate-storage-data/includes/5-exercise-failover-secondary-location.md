@@ -18,38 +18,40 @@ Let's simulate a region-wide failure by manually initiating a failover.
 1. In the pane on the left, under the **Settings** section, select **Geo-replication**.
 
 
-1. Select **Prepare for failover** at the bottom to start a failover. This button isn't enabled until the initial sync from the primary to the secondary region is complete.
+1. Select **Prepare for failover**. This button isn't enabled until the initial sync from the primary to the secondary region is complete.
 
    :::image type="content" source="../media/5-portal-failover-prepare.png" alt-text="Screenshot of the prepare for failover button at the bottom of the geo-replication page.":::
 
 1. A confirmation message appears. This message includes the **Last Sync Time**, which is a timestamp in the GMT time zone. Make a note of the last sync time. You use the last sync time to estimate how much data loss you'll have after failover is complete.
 
+   :::image type="content" source="../media/5-portal-failover-confirm.png" alt-text="Screenshot that shows the last sync time and requests you confirm failover by typing yes.":::
 1. Type **Yes** in the **Confirm failover** field.
+1. Select **Failover**.
+1. On the geo-replication page, you see that the failover is in progress.
+   :::image type="content" source="../media/5-failover-progress.png" alt-text="Screenshot of the geo-replication page that shows the failover status is in progress.":::
+1. Wait a few minutes for the failover to finish.
+1. When the failover is complete, you see that the replication type is locally redundant storage (LRS) and the data is stored in one location.
 
-    ![Screenshot that shows the last sync time and requests that you confirm failover by typing yes.](../media/5-portal-failover-confirm.png)
-
-1. Select **Failover**, to start the failover.  Wait until your failover has finished.
-
-1. You can check that your failover is complete by selecting **Refresh** at the top of the map.
+   :::image type="content" source="../media/5-failover-complete-lrs.png" alt-text="Screenshot of the geo-replication page that shows the replication type is now LRS and data is stored in one location.":::
 
 ## Reconfigure replication mode
 
-When failover is complete, you'll see that your geo-replication map only shows one region. This region is your new primary. You'll need to reconfigure your account to use geo-zone-redundant storage.
+When failover is complete, your geo-replication map only shows one region. This region is your new primary. You'll need to reconfigure your account to use geo-zone-redundant storage.
 
 1. Select **Configuration**.
-1. Under **Replication**, select **Geo-zone-redundant storage (GZRS)**.
+1. Under **Replication**, select **Geo-redundant storage (GRS)**.
 
-    ![Screenshot of the storage configuration page where you can change the replication  from ZRS to GZRS.](../media/5-change-replication-type.png)
+    :::image type="content" source="../media/5-change-replication-type.png" alt-text="Screenshot of the storage configuration page where you can change the replication  from LRS to GRS.":::
 
 1. Select **Save** at the top of the form.
 
 ## Estimate the data loss
 
-Now you need to estimate potential data loss. You'll view the **Last failover time**, and compare it with the **Last Sync time** value.
+Now you need to estimate potential data loss. Review the **Last failover time**, and compare it with the **Last Sync time** value.
 
 1. In the pane on the left, under the **Settings** section, select **Geo-replication**.
 1. Note the **Last failover time** value on the left side of the map.
 
-    ![Screenshot that shows an updated last failover time on the geo-replication page.](../media/5-last-sync-time-after-failover.png)
+    :::image type="content" source="../media/5-last-sync-time-after-failover.png" alt-text="Screenshot that shows an updated last failover time on the geo-replication page.":::
 
 1. Compare this value with the **Last Sync time** value. If data was written to the primary region during these two times, it might be lost.
