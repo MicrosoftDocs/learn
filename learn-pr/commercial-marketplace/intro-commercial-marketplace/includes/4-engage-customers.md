@@ -18,7 +18,7 @@ Regardless of the offer type you choose to publish, Microsoft will send you lead
 
 If you want more information about leads, read the documentation on [customer leads from your marketplace offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads).
 
-## Listing Options
+## Listing options
 
 Listing options are used to define the ease at which a customer can find, try, buy, and deploy your solution online. There are four primary options, which are explained in detail below.
 
@@ -30,7 +30,7 @@ Customers are encouraged to request outreach from your team through the “Conta
 
 ![Contact me call to action button from marketplace](..\media\11-contact-me-example.png)
 
-### Free Trial
+### Free trial
 
 A free trial of your solution provides an opportunity for enhanced engagement with your potential customers. When you offer a free trial in the commercial marketplace, you can add all the information associated with a “contact me” offer to help customers evaluate your solution.
 
