@@ -1,0 +1,34 @@
+uid: learn.undefined
+metadata:
+  title: Introduction to
+  description: Learn how to
+  ms.date: 06/04/2020
+  author: undefined
+  ms.author: undefined
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to
+summary: Learn how to
+abstract: |
+  In this module you will:
+  - Learn about X
+iconUrl: /learn/achievements/undefined.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - vs
+prerequisites: None
+units:
+  - learn.undefined.1-introduction
+  - learn.undefined.2-copy
+  - learn.undefined.3-exercise-unit
+  - learn.undefined.4-conditions
+  - learn.undefined.5-conditions-exercise
+  - learn.undefined.6-secure-parameters
+  - learn.undefined.7-secure-parameters-exercise
+  - learn.undefined.8-knowledge-check
+  - learn.undefined.9-summary
+badge:
+  uid: learn.undefined.badge
