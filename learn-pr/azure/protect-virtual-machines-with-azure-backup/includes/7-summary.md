@@ -6,7 +6,7 @@ You've seen that you can back up Azure virtual machines or on-premises machines.
 
 You can now use Azure Backup to help protect your environment against data loss or disk corruption. You can restore services according to your business continuity and disaster recovery plan.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+<!-- [!include[](../../../includes/azure-sandbox-cleanup.md)] -->
 
 ## Learn more
 
