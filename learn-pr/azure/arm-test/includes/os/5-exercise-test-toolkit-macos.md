@@ -1,4 +1,4 @@
-1. Follow the instructions in [Installing PowerShell on MacOS](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos)
+1. Follow the instructions in [Installing PowerShell on MacOS](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?azure-portal=true)
 
 1. Run `pwsh` in the terminal, to verify the installation:
 
@@ -26,7 +26,7 @@ The test toolkit is located in a GitHub repo. You can either download the reposi
       git clone https://github.com/Azure/arm-ttk.git
       ```
 
-   - From your browser, [download the .zip file](https://github.com/Azure/arm-ttk/archive/master.zip).  
+   - From your browser, [download the .zip file](https://github.com/Azure/arm-ttk/archive/master.zip?azure-portal=true).  
 
 ### Inspect the Test toolkit
 

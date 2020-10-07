@@ -9,7 +9,7 @@ Deploying and hoping for the best is not a good approach. A better approach is u
 Azure Resource Manager now provides the what-if operation to highlight the changes when you deploy a template. The what-if operation doesn't make any changes to existing resources. Instead, it predicts the changes if the specified template is deployed at a resource group and subscription level.
 
 > [!NOTE]
-> The *what-if* operation is currently in preview. As a preview release, the results may sometimes show that a resource will change when actually no change will happen. We're working to reduce these issues, but we need your help. Please report these issues at https://aka.ms/whatifissues?azure-portal=true.
+> The *what-if* operation is currently in preview. As a preview release, the results may sometimes show that a resource will change when actually no change will happen. We're working to reduce these issues, but we need your help. Please [report these issues at](https://aka.ms/whatifissues?azure-portal=true).
 >
 
 Using the *what-if* operation allows you to estimate what would happen were you to deploy by comparing the current stat model to our desired state model. The *what-if* operation confirms if the changes made by your template match your expectations *without* applying those changes to real resources or to the state of those resources.

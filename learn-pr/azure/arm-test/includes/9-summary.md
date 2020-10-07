@@ -9,11 +9,11 @@ In summary, you should now have a good overall understanding of what scripts and
 
 ## Additional resources
 
-- Read more on **what-if** command at the official [What-If](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-powershell)
-- Read more on the different test cases the toolkit is testing [Test cases](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-cases)
-- Docs on [Deployment modes](https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-modes)
-- Visual Studio Code [Integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal)
-- Azure CLI command [az configure](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest)
-- Installing [PowerShell Core](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-toolkit)
-- Docs on the [Test toolkit](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-toolkit)
-- The testing toolkit GitHub repository [ARM Template Test Toolkit](https://aka.ms/arm-ttk-latest)
+- Read more on **what-if** command at the official [What-If](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-powershell?azure-portal=true)
+- Read more on the different test cases the toolkit is testing [Test cases](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-cases?azure-portal=true)
+- Docs on [Deployment modes](https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-modes?azure-portal=true)
+- Visual Studio Code [Integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal?azure-portal=true)
+- Azure CLI command [az configure](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&azure-portal=true)
+- Installing [PowerShell Core](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-toolkit?azure-portal=true)
+- Docs on the [Test toolkit](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-toolkit?azure-portal=true)
+- The testing toolkit GitHub repository [ARM Template Test Toolkit](https://aka.ms/arm-ttk-latest?azure-portal=true)
