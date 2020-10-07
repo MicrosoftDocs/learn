@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.enterprise-scale-organizational-design-principles.1-introduction
+metadata:
+  title: Introduction
+  description: Introduction to enterprise-scale organizational design principles
+  ms.date: 09/21/2020
+  author: kristopherjturner
+  ms.author: krturner
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](./includes/1-introduction.md)]

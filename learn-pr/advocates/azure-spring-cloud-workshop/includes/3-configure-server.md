@@ -55,10 +55,10 @@ Once the token is generated, leave that tab open until the end of this section.
      > [!TIP]
      > Make sure you include the `.git` ending in the URL.
 
-    1. Click on `Authentication` and select `HTTP Basic`.
+    1. Click on **Authentication** and select **HTTP Basic**.
     1. The __username__ is your GitHub login name.
     1. The __password__ is the personal token we created in the previous section.
-1. Click on "Apply" and wait for the operation to succeed.
+1. Click on **Apply** and wait for the operation to succeed.
 
 ![Spring Cloud config server](../media/3-config-server.png)
 
