@@ -3,7 +3,7 @@ Staying secure online is a challenge. The internet and the devices connected to 
 Think about the internet as a neighborhood where you do common tasks such as email, banking, or shopping. Then think about who your neighbors are. Some of these neighbors are dangerous. They include:
 
 - Organized crime gangs intent on stealing personal account information.
-- Hackers who will use your computers to attack other victims.
+- Hackers who will use your computer to attack other victims.
 - Automated downloads that install ransomware to keep you from using your computer until you pay (or until you restore from a backup).
 - Government-backed hackers who might be on a mission to steal intellectual property or destabilize governments.
 

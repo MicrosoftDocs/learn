@@ -19,9 +19,7 @@ Another common phishing goal is to deliver malicious software, called *malware*.
 
 Phishing is one of the most common threats on the internet. In 2019 alone, the [FBI's Internet Crime Complaint Center (IC3) reported more than 450,000 complaints and more than $3.5 billion in losses to individuals and businesses](https://www.fbi.gov/news/stories/2019-internet-crime-report-released-021120?azure-portal=true). This data represents only a small number of the actual cases. In other words, phishing is a popular and successful way for a criminal to steal your data.
 
-Statistically, 92.4 percent of malware is delivered via email, 30 percent of received phishing messages are opened, and 12 percent of those users select the malicious link or open the attachment.
-
-:::image type="content" source="../media/2-phishing-stats.png" alt-text="Diagram that shows the statistical outcome of phishing emails.":::
+:::image type="content" source="../media/2-phishing-stats.png" alt-text="Diagram that shows phishing statistics: 92.4% of malware is delivered via email, 30% of received phishing messages are opened, and 12% of those users select the malicious link or open the attachment.":::
 
 ## Why does phishing work so often?
 
@@ -33,7 +31,7 @@ Another common approach is to offer something too good to be true. Attackers wil
 
 One other common approach that attackers use is to take advantage of your curiosity. For example, they might make a fake job offer, pretend to be an old friend, or ask for help for their fake nonprofit.
 
-:::image type="content" source="../media/2-phishing-examples.png" alt-text="Three-part diagram that shows common social engineering tactics, like taking advantage of human emotions and curiosity.":::
+:::image type="content" source="../media/2-phishing-examples.png" alt-text="Three-part diagram that shows common social engineering tactics: emotions, valued goods, and curiosity.":::
 
 ## What can you do to protect yourself?
 

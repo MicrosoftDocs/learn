@@ -29,17 +29,17 @@ quiz:
       explanation: "Though this makes accessing your account more secure, the minimum number of factors needed for multifactor authentication is two."
     - content: "Zero"
       isCorrect: false
-      explanation: "At least two factors are needed for multifactor authentication. Zero factors means you didn't have a password."
+      explanation: "At least two factors are needed for multifactor authentication. Zero factors means you don't have a password."
 
   - content: "When should you use multifactor authentication?"
     choices:
-    - content: "Only for securing financial accounts."
+    - content: "Only for securing financial accounts"
       isCorrect: false
       explanation: "You should not restrict use of multifactor authentication to just one type of account."
-    - content: "Only for securing access to a password manager."
+    - content: "Only for securing access to a password manager"
       isCorrect: false
       explanation: "Though this is probably the most important thing to secure by using multifactor authentication, you should consider even more options."
-    - content: "For all your accounts, and wherever you can use multifactor authentication."
+    - content: "For all your accounts, and wherever you can use multifactor authentication"
       isCorrect: true
       explanation: "The best option is to use multifactor authentication wherever it's available."
     - content: "Never"

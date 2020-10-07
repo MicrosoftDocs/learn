@@ -8,7 +8,7 @@ Some accounts let you create a special username that's different from your email
 
 ## How secret are your passwords?
 
-Many passwords are not as secret as people think they are. There are currently *billions* of username and password combinations for sale, but even more are available for free. Where did they all come from? Previous breaches. There are thousands of breaches every year, and those breaches expose all kinds of personal data, along with account information that often includes usernames and passwords.
+Many passwords are not as secret as people think they are. *Billions* of username/password combinations are currently for sale, but even more are available for free. Where did they all come from? Previous breaches. Thousands of breaches happen every year. Those breaches expose all kinds of personal data, along with account information that often includes usernames and passwords.
 
 What is a *data breach*, and why should you care? A data breach is theft of information that shouldn't be public. This often happens when a hacker takes advantage of flaws in a security system or just takes the data after a company accidentally exposes a database with no security settings turned on. That information can then be used for identity theft, blackmail, harassment, and other crimes. 
 
@@ -17,7 +17,7 @@ Even an account that you might not care about, such as an email account that you
 > [!TIP]
 > You can go to [HaveIBeenPwned](https://HaveIBeenPwned.com/?azure-portal=true) and see if one or more of your accounts have been leaked in one of the thousands of public data breaches. You can even check your old passwords to see if they've been exposed through a breach. 
 >
-> If you find that your information shows up here, don't worry. Just change the passwords for any identified accounts, and store your new secrets in your password manager (which we'll discuss shortly).
+> If your information shows up here, don't worry. Just change the passwords for any identified accounts, and store your new secrets in your password manager (which we'll discuss shortly).
 
 :::image type="content" source="../media/3-pwned.jpg" alt-text="Screenshot of the *have i been pwned* landing page with a field to enter your account email.":::
 
@@ -47,9 +47,9 @@ In the past, the recommendation for a strong password was to use eight character
 
 :::image type="content" source="../media/3-password-risks.png" alt-text="Visual table that presents 30 passwords you should never use, like strings of consecutive letters." lightbox="../media/3-password-risks-large.png":::
 
-One famous example is the password *Pa$$w0rd*. It meets all of the criteria, yet it's high on the list of the top 1,000 most commonly used passwords. Hackers also have access to other password lists (for example, the top 1,000,000 most common passwords) that they simply plug into their password-cracking software. 
+One famous example is the password *Pa$$w0rd*. It meets all of the criteria, yet it's high on the list of the 1,000 most commonly used passwords. Hackers also have access to other password lists (for example, the 1,000,000 most commonly used passwords) that they simply plug into their password-cracking software. 
 
-If you think you have a password that has never been used, you should know that tools exist to launch a *brute force* attack. This type of attack tries every combination of all characters to guess a password. Computers are good at guessing quickly, so be careful to not assume that your password can never be guessed.
+If you think you have a password that has never been used, you should know that tools exist to launch a *brute force* attack. This type of attack tries every combination of all characters to guess a password. Computers are good at guessing quickly, so don't assume that your password can never be guessed.
 
 > [!TIP]
 > Any password or passphrase that you use should be at least 15 characters long. This number is easy to reach with a passphrase, especially if you use five words.
@@ -74,7 +74,7 @@ After you've made a passphrase with your own words and are ready to make sure al
 
 In the past decade, *password managers* have improved to make it easy and convenient for you to keep your accounts secure without having to memorize all your passwords. A password manager is a program that locks up all of your passwords until you need them, similar to a safe. 
 
-You can access your passwords by using your one easy-to-remember and hard-to-crack passphrase. Password managers also encrypt your data, so it's unusable to anyone who doesn't have the key to *decrypt* (unlock) it.
+You can access your passwords by using your one easy-to-remember and hard-to-crack passphrase. Password managers also encrypt your data, so the data is unusable to anyone who doesn't have the key to *decrypt* (unlock) it.
 
 First, you'll need to find a trusted password manager. Here are five common, convenient, and highly rated password managers. They work in all browsers, on Windows, macOS, and most smartphones.
 

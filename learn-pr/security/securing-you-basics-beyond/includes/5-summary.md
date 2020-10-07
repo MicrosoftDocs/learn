@@ -2,7 +2,7 @@ In this module, you learned about phishing, how to identify it, and what to do i
 
 You learned how to use passphrases to make your credentials even more secure, why you should use a unique password for each account, and how to store your credentials securely in a password manager.
 
-You also learned about how to add another layer of security to your accounts by using multifactor authentication.
+You also learned how to add another layer of security to your accounts by using multifactor authentication.
 
 What should you do now?
 

@@ -2,7 +2,7 @@ You can add a strong layer of security to your account credentials. Let's review
 
 ## Types of factors
 
-Having complex and unique passphrases and passwords is a great step toward securing your accounts. But that still doesn't protect you if a company has a data breach and exposes your password. For this type of scenario, you can improve your accounts' security even more by using multifactor authentication.
+Having complex and unique passwords and passphrases is a great step toward securing your accounts. But it doesn't protect you if a company has a data breach and exposes your password. For this type of scenario, you can improve your accounts' security even more by using multifactor authentication.
 
 Let's begin with *factors*. A factor in this scenario is just a type of secret. Using multifactor authentication means using *more than one type of secret* to verify your identity. It's like having another type of password required to sign in, after you provide the first password.
 
@@ -36,14 +36,14 @@ When the next data breach occurs and more usernames and passwords are exposed to
 
 What's the most important thing you should secure by using multifactor authentication? Your password manager! All reputable password managers allow you to set up multifactor authentication to keep your secrets as secure as possible.
 
-> [!TIP]
-> If you don't like the idea of using an app on your smartphone, Yubico makes an easy-to-use device called a [YubiKey](https://www.yubico.com/products/?azure-portal=true). A personal security device like that can support accounts where multifactor authentication is enabled.
-
 ## Apps and other options for multifactor authentication
 
 How do you set up multifactor authentication? Follow the instructions for the account that you want to secure. Any account should provide clear, easy-to-follow instructions. Most accounts will show you how to set up and use an authenticator app on your smartphone, such as [Microsoft Authenticator](https://www.microsoft.com/en-us/account/authenticator/?azure-portal=true). If you're not sure where to start, look in your account's security settings for terms like "MFA" (for multifactor authentication), "2FA" (for two-factor authentication), or "multi-step verification."
 
 Your account might require a specific authenticator application, or it might give you the option to choose from several. Use the option that works best for you.
+
+> [!TIP]
+> If you don't like the idea of using an app on your smartphone, Yubico makes an easy-to-use device called a [YubiKey](https://www.yubico.com/products/?azure-portal=true). A personal security device like that can support accounts where multifactor authentication is enabled.
 
 An account might only give you the option to use text messages to receive a *one-time code* for use with multifactor authentication. This system works by generating a new code each time you try to sign in. It isn't as secure as using an authenticator application on your phone, because text messages can be intercepted. But it's better than not using multifactor authentication at all. If that's your only available option, you should use it.
 
