@@ -16,6 +16,7 @@ abstract: |
   - Demonstrate how to initiate a storage account failover
 prerequisites: | 
   - Basic knowledge of Azure Storage, which includes use of storage accounts and Azure Blobs
+  - (Optional) Access to an Azure subscription
 iconUrl:  /learn/achievements/provide-disaster-recovery-replicate-storage-data.svg
 levels:
 - beginner

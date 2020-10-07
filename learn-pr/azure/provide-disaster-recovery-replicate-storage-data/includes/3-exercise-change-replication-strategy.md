@@ -1,13 +1,21 @@
 In this unit, you'll create a storage account and configure a blob container for it. You'll create a blob file and upload it to your storage account. You can then view the replication status in the Azure portal.
 
+[!include[](../../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 ## Create a storage account
 
 Create a storage account with Geo-zone-redundant storage (GZRS).
 
+1. Sign in to the [Azure portal](https://portal.azure.com).
+1. From the menu bar on the top right-hand side, open **Cloud Shell**.
+1. Set the resource group name.
+    ```bash
+    RESOURCEGROUP=learn-storage-replication-rg
+    ```
 1. Run the following command to set the storage account name where you replace "storageaccountname" and the brackets with a unique Storage account name.
 
     ```Bash
-    export AZURE_STORAGE_ACCOUNT=<storageaccountname> 
+    export AZURE_STORAGE_ACCOUNT=<storageaccountname>
      ```
 1. Set the location. Replace the westus2 value with a location near you.
     ```bash
@@ -28,7 +36,7 @@ Create a storage account with Geo-zone-redundant storage (GZRS).
     ```Bash
     az storage account create \
     --name $AZURE_STORAGE_ACCOUNT \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group $RESOURCEGROUP \
     --location $LOCATION \
     --sku Standard_GZRS \
     --encryption-services blob \
@@ -40,7 +48,7 @@ Create a storage account with Geo-zone-redundant storage (GZRS).
     ```Bash
     az storage account keys list \
     --account-name $AZURE_STORAGE_ACCOUNT \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group $RESOURCEGROUP \
     --output table
     ```
 
@@ -120,10 +128,9 @@ Upload the file to your storage account via your container.
 
 ## View the replication status
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-
+1. Sign in to the [Azure portal](https://portal.azure.com).
 1. Select or search for **Resource groups**.
-1. Select **<rgn>[sandbox resource group name]</rgn>**.
+1. Select **learn-storage-replication-rg**.
 1. Select the storage account you created from the list of resources in your resource group.
 1. Under **Settings**, select **Geo-replication**. You see the replication status of your Azure Storage account's primary and secondary regions. If the status shows as "available" for a region, it means your region is responsive.
 

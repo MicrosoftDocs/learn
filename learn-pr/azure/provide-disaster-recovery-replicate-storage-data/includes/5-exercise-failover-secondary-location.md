@@ -2,16 +2,16 @@ As the Azure administrator for your company, you've been asked to do failovers t
 
 In this unit, you'll start a failover. When the failover is complete, you'll reconfigure the storage account to use geo-zone-redundant storage for replication. You'll use the **Last Sync Time** property to estimate potential data loss.
 
-The option to failover isn't available in the Azure portal until the initial sync from the primary region to the secondary region is complete. This sync process may take 45 minutes or more. If you don't have time to wait, that's ok. You can still complete this module. Review the steps and screenshots below to get familiar with the process.
+The option to failover isn't available in the Azure portal until the initial sync from the primary region to the secondary region is complete. This initial sync process may take several hours. If you don't have time to wait, that's ok. You can still complete this module. Review the steps and screenshots below to get familiar with the process. Or, if you're following these steps in your own subscription, come back later to complete the steps.
 
 ## Start a failover
 
 Let's simulate a region-wide failure by manually initiating a failover.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
 1. Select or find **Resource groups**.
-1. Select **<rgn>[sandbox resource group name]</rgn>**.
+1. Select **learn-storage-replication-rg**.
 
 1. Select the storage account you created from the list of resources in your resource group.
 

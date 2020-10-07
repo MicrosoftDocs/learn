@@ -11,14 +11,6 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 interactive: bash
-azureSandbox: true
+azureSandbox: false
 content: |
   [!include[](includes/3-exercise-change-replication-strategy.md)]
-tasks:
-- action: exists
-  environment: azure
-  hint: "Run the `az storage account create` command above to create a storage account."
-  azure:
-    resource:
-      type: "Microsoft.Storage/storageAccounts"
-      kind: "StorageV2"

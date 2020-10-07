@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 60
-azureSandbox: true
+azureSandbox: false
 content: |
   [!include[](includes/5-exercise-failover-secondary-location.md)]
