@@ -11,6 +11,8 @@ For completing this lab, Microsoft Learn provides you with a free Azure sandbox 
 
 ## Create your working directory
 
+::: zone pivot="Java"
+
 1. We provide you with a template for your Java application. Clone the template repo onto your system
 
     ```
@@ -34,6 +36,36 @@ For completing this lab, Microsoft Learn provides you with a free Azure sandbox 
     ```
 
     This dependency pulls in the Azure Cosmos DB Java SDK latest version. You can close this file.
+
+::: zone-end
+
+::: zone pivot="Spring Data"
+
+1. We provide you with a template for your Java application. Clone the template repo onto your system
+
+    ```
+    git clone https://github.com/MicrosoftDocs/mslearn-cosmos-java-sql.git
+    ```
+
+1. Open the Windows Explorer and navigate to the cloned repo. Enter the **spring** subdirectory.
+
+    > [!IMPORTANT]  
+    > All of your work for this module will be under the **spring** subdirectory. 
+    >
+
+1. The template contains a Maven **pom.xml** which already pulls in the required dependencies for your project. Open this file and examine it to find the dependency below:
+
+    ```xml
+    <dependency>
+      <groupId>com.azure</groupId>
+      <artifactId>azure-spring-data-cosmos</artifactId>
+      <version>latest</version>
+    </dependency>
+    ```
+
+    This dependency pulls in the latest version of Spring Data Azure Cosmos DB. You can close this file.
+
+::: zone-end
 
 1. Next, you will build and run Hello World. Using your IDE or the terminal, open this project. Depending on your IDE, there may be an option to open the **pom.xml** file in the **java** subdirectory as a project. Once the project is open, navigate to **src/main/java/com/azure/azure-cosmos-java-sql-app-mslearn** and open **CosmosApp.java** which is a template for the Java application we will develop. It should look something like this
 
