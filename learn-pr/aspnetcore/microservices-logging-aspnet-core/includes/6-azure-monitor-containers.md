@@ -41,10 +41,12 @@ So let's get into the details:
 
 ### 1. Install the Prometheus package in the Catalog.API project
 
-Run the following command from the `src/Services/Catalog/Catalog.API` folder:
+Run the following command folder:
 
 ```dotnetcli
-dotnet add package prometheus-net.AspNetCore
+pushd src/Services/Catalog/Catalog.API/ && \
+  dotnet add package prometheus-net.AspNetCore && \
+  popd
 ```
 
 ### 2. Add the custom metrics counter and the Prometheus middleware to the request pipeline
@@ -101,18 +103,20 @@ namespace Microsoft.eShopOnContainers.Services.Catalog.API
 
 The lines you have to add are commented out in the code, so they'll be easy to spot.
 
-### 3. Build the image to ACR
+Run the following commands to build the catalog service:
 
-Update your environment with the environment variables from the initial deployment, by running the following command:
-
-```bash
-eval $(cat ~/clouddrive/source/deploy-application-exports.txt)
+```dotnetcli
+pushd src/Services/Catalog/Catalog.API && \
+    dotnet build && \
+    popd
 ```
+
+### 3. Build the image to ACR
 
 Build the image of the updated microservice to ACR by running the following script:
 
 ```bash
-./build-to-acr.sh --services catalog-api
+deploy/k8s/build-to-acr.sh --services catalog-api
 ```
 
 You should see something like this:
@@ -168,7 +172,7 @@ You have to add the three annotations that begin with `prometheus.io`
 You just need to run the following script:
 
 ```bash
-./deploy-application.sh --charts catalog
+deploy/k8s/deploy-application.sh --charts catalog
 ```
 
 ### 3. Enable Prometheus metrics scraping for Azure Monitor for containers
@@ -183,10 +187,10 @@ monitor_kubernetes_pods = true
 
 Then you have to apply it to the cluster.
 
-The file has been already downloaded and updated, so you just have to run the following command from the *deploy/k8s* folder:
+The file has been already downloaded and updated, so you just have to run the following command:
 
 ```bash
-kubectl apply -f azure-monitor/container-azm-ms-agentconfig.yaml
+kubectl apply -f deploy/k8s/azure-monitor/container-azm-ms-agentconfig.yaml
 ```
 
 From now on, all Prometheus metrics are being scraped by Azure Monitor.
