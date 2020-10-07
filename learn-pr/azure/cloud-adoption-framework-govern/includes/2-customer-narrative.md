@@ -1,4 +1,4 @@
-We shared the narrative for Tailwind Traders in the getting started module and other Cloud Adoption Framework (CAF) Learn modules. The central operations/infrastructure team has successfully migrated a number of workloads to the cloud, but they face unanswered questions and unexpected concerns as they prepare for production release.
+We shared the narrative for Tailwind Traders in the Getting Started module and other Cloud Adoption Framework (CAF) Learn modules. The central operations/infrastructure team has successfully migrated a number of workloads to the cloud, but they face unanswered questions and unexpected concerns as they prepare for production release.
 
 ## Tailwind Traders' balancing act
 
