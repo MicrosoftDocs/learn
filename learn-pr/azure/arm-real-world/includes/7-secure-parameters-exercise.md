@@ -1,1 +1,0 @@
-Exercise – Authorize a KeyVault for use by a template.  Update a parameters file to pull from keyvault. 
