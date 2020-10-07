@@ -1,6 +1,6 @@
 In this unit, you'll create a storage account and configure a blob container for it. You'll create a blob file and upload it to your storage account. You can then view the replication status in the Azure portal.
 
-[!include[](../../../../includes/azure-exercise-subscription-prerequisite.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Create a storage account
 
