@@ -23,7 +23,7 @@ prerequisites: |
   - Linux: Ubuntu, Debian, Red Hat, Fedora, or SUSE
   - Docker version ?
   - WSL?
-iconUrl:
+iconUrl: ""
 levels:
   - beginner
 roles:
