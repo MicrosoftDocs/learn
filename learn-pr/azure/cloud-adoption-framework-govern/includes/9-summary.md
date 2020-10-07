@@ -2,7 +2,7 @@ In this module, you learned about governance theory, corporate policies, and gov
 
 ## Next steps
 
-Move forward with your governance journey by following one of the governance guides:
+Move forward with your governance journey by following one of the Cloud Adoption Framework (CAF) Governance methodology guides:
 
 | Risk/need | Standard enterprise | Complex enterprise |
 |---|---|---|
@@ -15,4 +15,4 @@ Move forward with your governance journey by following one of the governance gui
 
 ## Learn more
 
-To learn more about cloud governance, see the overview page for the [CAF Govern methodology](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/. That page will guide you through four steps to develop cloud governance.
+To learn more about cloud governance, see the overview page for the [CAF Govern methodology](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern?azure-portal=true?). This page will guide you through four steps to develop cloud governance.
