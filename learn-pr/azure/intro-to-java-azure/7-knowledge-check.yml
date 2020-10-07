@@ -13,13 +13,13 @@ durationInMinutes: 4
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question1"
+  - content: "Where can I deploy my Quarkus Application?"
     choices:
-    - content: "Answer1"
-      isCorrect: false
+    - content: "AppService"
+      isCorrect: true
       explanation: "Explanation1"
-    - content: "Answer2"
-      isCorrect: false
+    - content: "VM"
+      isCorrect: true
       explanation: "Explanation2"
     - content: "Answer3"
       isCorrect: false

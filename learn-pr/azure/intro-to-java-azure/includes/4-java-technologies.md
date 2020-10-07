@@ -4,21 +4,27 @@ It's necessary to distinguish between the different types of Java application be
 
 You can distinguish your type of application specification wise. The most famous ones are:
 
-## Jakarta EE
+## Jakarta EE, the Java for Enterprises
 
 Formerly known as Oracle's Java Enterprise Edition (Java EE), is Jakarta EE open source and aimed to be cloud native for java development. It is a set of specifications to enable java developers world wide to work together on java enterprise applications. Jakarta EE was donated to the Eclipse Foundation. Jakarta EE applications can be packaged as archives with the .ear extension (EAR files) or as archives with the .war extension (WAR files).
 
-- **WebProfile** is a subset of Jakarta EE with some extra APIs for Backend services with web focus.
+![Deployment Opportunities on Azure for different types of Java Applications](../media/jee.gif)
 
-- **MicroProfile** is a subset of Jakarta EE with added Modules for Microservice Architectures. It is an open forum to optimize Enterprise Java for a microservices architecture by innovating across multiple implementations and collaborating on common areas of interest with a goal of standardization.
+- **WebProfile** is a properly defined subset of Jakarta EE for Backend services with web focus. It is possible to add specific APIs of the Enterprise platform on top of it.
 
-## Spring Framework and the Spring Family
+- **MicroProfile** is a subset of Jakarta EE for Microservice Architectures. It is an open forum to optimize Enterprise Java for a microservices architecture by innovating across multiple implementations and collaborating on common areas of interest with a goal of standardization.
 
-is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE (Enterprise Edition) platform. Although the framework does not impose any specific programming model, it has become popular in the Java community as an addition to the Enterprise JavaBeans (EJB) model. The Spring Framework is open source.
+## Spring Framework and the Spring Ecosystem
+
+The Spring Framework is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE (Enterprise Edition) platform. Although the framework does not impose any specific programming model, it has become popular in the Java community as an addition to the Enterprise JavaBeans (EJB) model. The Spring Framework is open source.
 
 ### Spring Boot
 
 is by far the most used framework as an alternative to application servers. At least every second web project is using Spring boot. It has become the most popular Java web framework. And it's getting more and more momentum over the last years.
+
+### Spring Data
+
+### Spring Cloud
 
 ### Spring Batch
 
