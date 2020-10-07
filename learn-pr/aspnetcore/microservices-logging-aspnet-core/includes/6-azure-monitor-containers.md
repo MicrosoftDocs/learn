@@ -14,7 +14,11 @@ In this exercise you will:
 Just run the following script from the `deploy/k8s` folder:
 
 ```bash
-./enable-azure-monitor-for-containers.sh
+az aks enable-addons \
+    --addons monitoring \
+    --name eshop-learn-aks \
+    --resource-group eshop-learn-rg \
+    --query "{Name:name,ResourceGroup:resourceGroup,KubernetesVersion:kubernetesVersion,NodeResourceGroup:nodeResourceGroup,ProvisioningState:provisioningState}"
 ```
 
 The above script enables the monitor addon for your AKS cluster, using the environment variables created by the AKS creation script. You should get an output like this:
