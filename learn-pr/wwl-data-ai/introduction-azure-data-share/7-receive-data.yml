@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-azure-data-share.receive-data
-title: Receive Data using Azure Data share
+title: Receive data using Azure Data share
 metadata:
-  title: Receive Data using Azure Data share
-  description: "Receive Data using Azure Data share"
-  ms.date: 10/04/2020
+  title: Receive data using Azure Data share
+  description: "Receive data using Azure Data share"
+  ms.date: 10/10/2020
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial
