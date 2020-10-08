@@ -1,42 +1,59 @@
 
+Supports: add, remove, list
 
-dotnet list package
-
-   Top-level Package      Requested   Resolved
-   > Humanizer            2.7.9        2.7.9
-
-
-1. Install global tool
-dotnet tool install --global dotnet-outdated-tool
+1. Look at all packages installed
+	
+	```shell
+	dotnet list package
+	```
+	```output
+	Top-level Package      Requested   Resolved
+	> Humanizer            2.7.9        2.7.9
+	```
 
 
 1. Check for updates
-dotnet outdated
+	
+	```shell
+	dotnet list package --outdated
+	```
 
-» ManipulateData
-  [.NETCoreApp,Version=v5.0]
-  Humanizer  2.7.9 -> 2.8.26
+	You will see
 
-Version color legend:
-<red>   : Major version update or pre-release version. Possible breaking changes.
-<yellow>: Minor version update. Backwards-compatible features added.
-<green> : Patch version update. Backwards-compatible bug fixes.
+	```output
+	Project `ManipulateData` has the following updates to its packages
+	   [net5.0]:
+	   Top-level Package      Requested   Resolved   Latest
+	   > Humanizer            2.7.9       2.7.9      2.8.26
+	```
+
+	you can also check for pre-releases
+	```shell
+	--include-prerelease
+	```
 
 
 1. Update packages
-dotnet outdated -u
+	
+	```shell
+	dotnet add package Humanizer 
+	```
 
-» LearnDependencies
-  [.NETCoreApp,Version=v5.0]
-  Humanizer  2.7.9 -> 2.8.26
+	```output
+	info : PackageReference for package 'Humanizer' version '2.8.26' updated in file 'C:\Users\jamont\Desktop\LearnDependencies\LearnDependencies.csproj'.
+	```
+	You can also install a specific version
 
-Version color legend:
-<red>   : Major version update or pre-release version. Possible breaking changes.
-<yellow>: Minor version update. Backwards-compatible features added.
-<green> : Patch version update. Backwards-compatible bug fixes.
+	```shell
+	dotnet add package Humanizer --version 2.8.26
+	```
 
-Upgrading package Humanizer...
-Project LearnDependencies [.NETCoreApp,Version=v5.0] upgraded successfully
+	You can check install the latest prerelease
+
+	```shell
+	dotnet add package Humanizer --prerelease
+	```
+
 
 Your results might be slightly different. The versions listed should correspond to the latest available versions of the packages.
 
