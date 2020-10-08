@@ -31,10 +31,10 @@ The process is as follows:
 
     You can start a failover using the Azure portal, or tools like Azure PowerShell and Azure CLI. In the Azure portal, go to your storage account, and select **Geo-replication** > **Prepare for failover**.
 
-    ![Screenshot of the prepare for failover button on Storage account > Geo-replication in the Azure portal.](../media/4-portal-failover-prepare.png)
+    :::image type="content" source="../media/4-portal-failover-prepare.png" alt-text="Screenshot of the prepare for failover button on Storage account > Geo-replication in the Azure portal.":::
 
 1. **Failover is complete**
-    
+
     When the failover process is complete, your storage account is updated to use locally redundant storage (LRS). If you want to replicate your data to a secondary region, configure the storage account to again use a geo-redundant storage option like geographically redundant storage (GRS) or geo-zone-redundant storage (GZRS).
 
 ### Data loss
