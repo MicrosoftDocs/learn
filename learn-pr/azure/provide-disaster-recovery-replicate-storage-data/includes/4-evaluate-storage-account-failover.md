@@ -6,7 +6,7 @@ In this unit, you'll explore how the failover process starts and how it works. Y
 
 ### How the failover process works
 
-Azure Storage lets you failover your storage account to a different region if the primary region becomes unavailable. When a failover is triggered and completed, your data is accessible from a secondary region. You use the secondary region until the primary region is up again.
+Azure Storage lets you fail over your storage account to a different region if the primary region becomes unavailable. When a failover is triggered and completed, your data is accessible from a secondary region. You use the secondary region until the primary region is up again.
 
 The process is as follows:
 
