@@ -10,7 +10,7 @@ We will focus on package dependencies, but know that a .NET project can have oth
 
 So how do you know if you need a package for your project? That's a complicated question that involves a few factors:
 
-- **Getting better code**. Ask yourself if you're dealing with a task like security, for example, and are trying to implement authentication and authorization. It's a task that you need to *get right* to protect your data and your customer's data. There are standard patterns out there and libraries used by many developers. These libraries implement features you most likely will always need. And issues are patched as they arise. You should use such libraries instead of reinventing the wheel. The main reason is that you're not likely to do as good a job of writing the code yourself because there are so many edge cases that you'd need consider.  
+- **Getting better code**. Ask yourself if you're dealing with a task like security, for example, and are trying to implement authentication and authorization. It's a task that you need to *get right* to protect your data and your customer's data. There are standard patterns out there and libraries used by many developers. These libraries implement features you most likely will always need. And issues are patched as they arise. You should use such libraries instead of reinventing the wheel. The main reason is that you're not likely to do as good as job of writing the code yourself because there are so many edge cases that you'd need consider.  
 - **Saving time**. You could probably build most things yourself, like utility or UI component libraries. But it takes time. Even if the end result is comparable to what's out there, it's not a good use of your time to replicate the work of writing this code if you don't have to.
 - **Maintenance**. All libraries and apps need maintenance sooner or later. Maintenance involves adding new features and correcting bugs. Is it a good use of your or your team's time to maintain a library? Or is it better to let an open-source software team handle it?
 
@@ -28,7 +28,7 @@ As for the listed dependencies, the number might not tell the whole truth. If yo
 
 ## Install a package
 
-There are several ways to install packages. There is a built in Package Manager command line and graphical user interface in Visual Studio and Visual Studio for Mac. You can manually add package reference to your project file. Or you can isntall them through a command-lin interface tool such as Paket or the .NET CLI. For this module we will use the built in .NET CLI to install packages. You can add a package to your .NET project by invoking a command in the terminal. A typical installation command looks like this one: `dotnet add package <name of package>`. When you run the `add package` command, the command-line tool connects to a global registry, fetches the package, and stores it in a cached folder location that all projects can use. After the installation and build of your project the references are added into your debug or release folders and your project directory looks something like this one:
+There are several ways to install packages. There is a built-in Package Manager command line and graphical user interface in Visual Studio and Visual Studio for Mac. You can manually add package reference to your project file. Or you can install them through a command-lin interface tool such as Paket or the .NET CLI. For this module, we will use the built-in .NET CLI to install packages. You can add a package to your .NET project by invoking a command in the terminal. A typical installation command looks like this one: `dotnet add package <name of package>`. When you run the `add package` command, the command-line tool connects to a global registry, fetches the package, and stores it in a cached folder location that all projects can use. After the installation and build of your project the references are added into your debug or release folders and your project directory looks something like this one:
 
 ```bash
 -| bin/
@@ -64,7 +64,7 @@ If you want a detailed list of all commands, enter `dotnet --help` in the termin
 
 You use the `dotnet add package <dependency name>` command to install a normal dependency that's meant to be used as part of your application. 
 
-There are also packages that you can install *globally*. These packages are usually not meant to be imported into your project. For that reason, many global packages are CLI tools or templates. These *global* tools can be installed from a package reposititory as well. Tools can be installed using the `dotnet tool install <name of package>` command an templates are installed with the `dotnet new -i <name of package>` command.
+There are also packages that you can install *globally*. These packages are not meant to be imported into your project. For that reason, many global packages are CLI tools or templates. These *global* tools can be installed from a package repository as well. Tools can be installed using the `dotnet tool install <name of package>` command a template are installed with the `dotnet new -i <name of package>` command.
 
 ### After installation
 
@@ -77,7 +77,7 @@ Project 'ManipulateData' has the following package references
    > Humanizer            2.7.9       2.7.9
 ```
 
-This command only lists the top level packages and not dependencies of those packages that we call transitive packages. This is nice to take a quick look, but if you want a more in-depth view you will want to see all transitive packages. To help with this problem, you can list all package transtives. When you do so, the `list` command looks like this one:
+This command only lists the top-level packages and not dependencies of those packages that we call transitive packages. This is nice to take a quick look, but if you want a more in-depth view you will want to see all transitive packages. To help with this problem, you can list all package transitives. When you do so, the `list` command looks like this one:
 
 ```bash
 dotnet list package --include-transitive
@@ -104,12 +104,12 @@ Project 'ManipulateData' has the following package references
 
 ## Restore dependencies
 
-When you create or clone a project the included dependencies are not downloaded or installed until you build your project. You can manualy restore dependencies as well as project-specific tools that are specified in the project file by running the `dotnet restore` command. In most cases, you don't need to explicitly use the command, since NuGet restore is run implicitly if necessary when you run commands including `new`, `build`, `run`, and more.
+When you create or clone a project the included dependencies are not downloaded or installed until you build your project. You can manually restore dependencies as well as project-specific tools that are specified in the project file by running the `dotnet restore` command. In most cases, you don't need to explicitly use the command, since NuGet restore is run implicitly if necessary when you run commands including `new`, `build`, `run`, and more.
 
 
 ## Clean up dependencies
 
 Sooner or later, you're likely to realize that you no longer need a package. Or you might realize that the package you installed isn't the one you need. Maybe you've found one that will accomplish a task better. Whatever the reason, you should remove dependencies that you aren't using. Doing so keeps things clean. Also, dependencies take up space. 
 
-To remove a packge from your project you use the `remove` command like so: `dotnet remove <name of dependency>`. This command will remove the package from the `.csproj` file for your project.
+To remove a package from your project, you use the `remove` command like so: `dotnet remove <name of dependency>`. This command will remove the package from the `.csproj` file for your project.
 

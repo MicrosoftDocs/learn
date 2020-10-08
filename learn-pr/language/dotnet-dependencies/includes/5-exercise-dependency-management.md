@@ -1,8 +1,8 @@
-Dependencies that you use in your applications can be updated often and may contain new features, bug fixes, and critical security updates. The app that we just created is small and has only a single dependency. Updating it should be straightforward. See if you can update the app to take advantage of the latest features.
+Dependencies that you use in your applications can be updated often and may contain new features, bug fixes, and critical security updates. The app that we created is small and has only a single dependency. Updating it should be straightforward. See if you can update the app to take advantage of the latest features.
 
 ## Upgrade app dependencies
 
-1. Look at the `dependencies` in the ManipulateData.csproj file. It shoudl look like this code:
+1. Look at the `dependencies` in the ManipulateData.csproj file. It should look like this code:
 
     ```xml
     <ItemGroup>
@@ -58,7 +58,7 @@ Dependencies that you use in your applications can be updated often and may cont
 	```
 	The output states that your project dependencies have been updated.
 
-	If you want to upgrade to a specific version of the dependency you can append on the `--version` parameter and specify the specific version.
+	If you want to upgrade to a specific version of the dependency, you can append on the `--version` parameter and specify the specific version.
 
 	```shell
 	dotnet add package Humanizer --version 2.8.26

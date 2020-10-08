@@ -1,6 +1,6 @@
-The developers at Tailwind Traders realize that they're about to put extensive resources into developing apps for the .NET platform. These apps are going to display a lot of data to users that are human readable include dates, times, and numbers. .NET has the capabilites to do this, but the developers are certain someone has solved this problem. So they need a framework, and after some seraching, they've found Humanizer in the NuGet package registry. It seems to be widely used and promises to meet all of your .NET needs for manipultating and displaying strings, enums, dates, times, timespans, numbers, and quantities. At this point, they just want you to install Humanizer, write a couple of data manipulations, and run them to see if Noda Time delivers on its promise.
+The developers at Tailwind Traders realize that they're about to put extensive resources into developing apps for the .NET platform. These apps are going to display many data to users that are human readable include dates, times, and numbers. .NET has the capabilities to do this, but the developers are certain someone has solved this problem. So they need a framework, and after some searching, they've found Humanizer in the NuGet package registry. It seems to be widely used and promises to meet all of your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers, and quantities. At this point, they just want you to install Humanizer, write a couple of data manipulations, and run them to see if Humanizer delivers on its promise.
 
-## Setup a new .NET project
+## Create a new .NET project
 
 1. Open a terminal window.
 
@@ -61,7 +61,7 @@ The developers at Tailwind Traders realize that they're about to put extensive r
     }
     ```
 
-    The preceeding function is run at the start of the application and outputs a string to the console. Let's add Humanizer and manipulate data and write it to the console.
+    The preceding function is run at the start of the application and outputs a string to the console. Let's add Humanizer and manipulate data and write it to the console.
 
 1. Install the Humanizer library by running this command:
 
