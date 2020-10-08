@@ -1,11 +1,11 @@
-Having a general view of your cluster topology and state, and being able to drill into the details when needed, is a key feature to ensure your application supports the business in the best possible way.
+Having a general view of your cluster topology and state, and being able to drill into the details when needed, is a key feature to ensure your app supports the business in the best possible way.
 
 In this exercise, you'll explore a cluster-level monitoring solution using Azure Monitor for containers. This monitoring solution, along with Application Insights, focuses on more application-level information. The solution gives you a more complete view of your app and its operational context.
 
 In this exercise, you will:
 
 - Enable Azure Monitor for containers for your AKS cluster.
-- Create a simple metric for the Prometheus endpoint.
+- Create a metric for the Prometheus endpoint.
 - Reconfigure and redeploy the updated application to AKS.
 - Create a basic graph for your custom metric using Azure Monitor.
 
@@ -18,245 +18,169 @@ az aks enable-addons \
     --addons monitoring \
     --name eshop-learn-aks \
     --resource-group eshop-learn-rg \
-    --query "{name,resourceGroup,kubernetesVersion,nodeResourceGroup,provisioningState}"
+    --query provisioningState
 ```
 
 The preceding script enables the monitor add-on for your AKS cluster, using the environment variables created by the AKS creation script. A variation of the following output appears:
 
 ```console
-AAD role propagation done[############################################]  100.0000%{
-  "kubernetesVersion": "1.17.11",
-  "name": "eshop-learn-aks",
-  "nodeResourceGroup": "MC_eshop-learn-rg_eshop-learn-aks_westus",
-  "provisioningState": "Succeeded",
-  "resourceGroup": "eshop-learn-rg"
-}
+AAD role propagation done[############################################]  100.0000%"Succeeded"
 ```
 
-When the scripts finishes, usually in less than a couple of minutes, you should be able to monitor the cluster by navigating to the AKS resource in the Azure portal and then clicking the **Insights** option on the sidebar, under the **Monitoring** section:
+The script may take a couple of minutes to finish. You can monitor the cluster by navigating to the AKS resource in the Azure portal and then clicking the **Insights** option on the sidebar, under the **Monitoring** section:
 
 :::image type="content" source="../media/aks-monitoring-insights.png" alt-text="AKS monitoring overview on Azure portal, showing CPU, memory utilization, and node & pod count" border="true" lightbox="../media/aks-monitoring-insights.png":::
 
-Besides the general cluster dashboard, You can also explore any of the tabs to zoom in more details for the cluster, as shown in the next image:
+Besides the general cluster dashboard, you can also explore any tab to view more details for the cluster, as shown in the following image:
 
 :::image type="content" source="../media/media-aks-monitoring-containers.png" alt-text="AKS monitoring container details for the cluster" border="true" lightbox="../media/media-aks-monitoring-containers.png":::
 
-## Create a simple metric for the Prometheus endpoint
+## Create a metric for the Prometheus endpoint
 
-For this exercise, you'll implement a simple counter metric, for the request count on the Catalog microservice. To do so you will:
+For this exercise, you'll implement a counter metric for the request count on the catalog service. Complete the following steps:
 
-1. Install the Prometheus package
-1. Add the custom metrics counter and the Prometheus middleware to the request pipeline.
-1. Build the updated image to ACR
+1. Run the following command to install the Prometheus NuGet package in the catalog service project:
 
-So let's get into the details:
+    ```dotnetcli
+    pushd src/Services/Catalog/Catalog.API/ && \
+      dotnet add package prometheus-net.AspNetCore && \
+      popd
+    ```
 
-### 1. Install the Prometheus package in the Catalog.API project
+1. Apply the following changes in *src/Services/Catalog/Catalog.API/Startup.cs*:
+    1. In the `Configure` method, replace the comment `// Add the counter code` with the following code:
 
-Run the following command folder:
+        ```csharp
+        var counter = Metrics.CreateCounter(
+            "catalogapi_path_counter",
+            "Counts requests to the Catalog API endpoints",
+            new CounterConfiguration
+            {
+                LabelNames = new[] { "method", "endpoint" }
+            });
 
-```dotnetcli
-pushd src/Services/Catalog/Catalog.API/ && \
-  dotnet add package prometheus-net.AspNetCore && \
-  popd
-```
-
-### 2. Add the custom metrics counter and the Prometheus middleware to the request pipeline
-
-You'll add some code here to:
-
-- Generate the metric you want to get and
-- The Prometheus middleware to expose the metrics.
-
-Add the following to `Configure()` method in `Startup.cs`:
-
-```csharp
-using Prometheus;
-
-namespace Microsoft.eShopOnContainers.Services.Catalog.API
-{
-    public class Startup
-    {
-        //...
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
+        app.Use((context, next) =>
         {
-            // Create counter metric
-            var counter = Metrics.CreateCounter("catalogapi_path_counter", "Counts requests to the Catalog API endpoints",
-                new CounterConfiguration {
-                    LabelNames = new[] { "method", "endpoint" }
-                });
+            counter.WithLabels(context.Request.Method, context.Request.Path).Inc();
+            return next();
+        });
+        ```
 
-            // Add middleware to track the counter
-            app.Use((context, next) =>
-            {
-                counter.WithLabels(context.Request.Method, context.Request.Path).Inc();
-                return next();
-            });
+        The preceding code defines a custom metrics counter that tracks every request to the catalog service.
 
-            var pathBase = Configuration["PATH_BASE"];
+    1. Also in the `Configure` method, replace the comment `// Add the metrics server middleware` with the following code:
 
-            //...
+        ```csharp
+        app.UseMetricServer();
+        ```
 
-            app.UseRouting();
+        The preceding code adds the metric server middleware to the catalog service's request pipeline. The Prometheus metrics are made available at the default `/metrics` endpoint.
 
-            // Add Prometheus metrics server endpoint
-            app.UseMetricServer();
+    1. Uncomment the `//using Prometheus;` line at the top of the file.
 
-            app.UseEndpoints(endpoints =>
-            {
-                //...
-            });
-            //...
-        }
-        //..
-    }
-}
-```
+        The preceding code resolves the calls to `Metrics.CreateCounter` and `UseMetricServer`.
 
-The lines you have to add are commented out in the code, so they'll be easy to spot.
+1. Run the following commands to build the catalog service:
 
-Run the following commands to build the catalog service:
+    ```dotnetcli
+    pushd src/Services/Catalog/Catalog.API && \
+        dotnet build && \
+        popd
+    ```
 
-```dotnetcli
-pushd src/Services/Catalog/Catalog.API && \
-    dotnet build && \
-    popd
-```
+    The build succeeds with no warnings. If the build fails, check the output for troubleshooting information.
 
-### 3. Build the image to ACR
+1. The updated catalog service must be built on ACR. Run this script to build the catalog image:
 
-Build the image of the updated microservice to ACR by running the following script:
+    ```bash
+    deploy/k8s/build-to-acr.sh --services catalog-api
+    ```
 
-```bash
-deploy/k8s/build-to-acr.sh --services catalog-api
-```
+    The script starts an ACR quick task. A variation of the following line confirms that the catalog Docker image was pushed to ACR:
 
-You should see something like this:
-
-:::image type="content" source="../media/build-to-acr-catalog-api.png" alt-text="Initial output from the build-to-acr script" border="true" lightbox="../media/build-to-acr-catalog-api.png":::
-
-After two or three minutes you should get the confirmation that the image was built and pushed:
-
-:::image type="content" source="../media/build-to-acr-catalog-api-end.png" alt-text="Final output from the build-to-acr script, showing the catalog.api image was built and pushed" border="true" lightbox="../media/build-to-acr-catalog-api-end.png":::
+    ```console
+    2020/09/30 20:51:57 Successfully pushed image: eshoplearn20200929194132362.azurecr.io/catalog.api:linux-latest
+    ```
 
 ## Reconfigure and redeploy the updated application to AKS
 
-Having finished the code changes, you just have to reconfigure and redeploy the Catalog microservice. To do that you will:
+The Docker image in ACR has been updated. A configuration change to the Helm chart is required before the service is redeployed.
 
-- Add the Prometheus annotations to the Catalog's pods.
-- Redeploy the Catalog microservice.
-- Enable Prometheus scraping in Azure Monitor for containers.
+1. In *deploy/k8s/helm-simple/catalog/templates/deployment.yaml*, uncomment the metadata `annotations` block.
 
-### 1. Add the Prometheus annotations
+    After the change, your file will resemble the following YAML snippet:
 
-Prometheus has to be informed about the pods it's going to scrape looking for metrics. To do this you have to add the Prometheus annotations to the pods, by updating the Deployment Helm chart as shown next:
+    :::code language="yaml" source="../code/deploy/k8s/helm-simple/catalog/templates/deployment.yaml" highlight="15-18":::
 
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: catalog
-  labels:
-    app: eshop
-    service: catalog
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      service: catalog
-  template:
-    metadata:
-      annotations:
-        prometheus.io/scrape: "true"
-        prometheus.io/path: /metrics
-        prometheus.io/port: "80"
-      labels:
-        app: eshop
-        service: catalog
-    spec:
-      #...
-```
+    The preceding change configures the catalog service metadata to indicate that Azure Monitor for Containers should scrape Prometheus metrics from the `/metrics` path on port 80.
 
-You have to add the three annotations that begin with `prometheus.io`
+1. Deploy the updated catalog service from ACR by running the following script:
 
-### 2. Redeploy the updated and reconfigured Catalog microservice
+    ```bash
+    deploy/k8s/deploy-application.sh --charts catalog
+    ```
 
-You just need to run the following script:
+    The preceding script deploys the container image from ACR to AKS. The script also runs the `kubectl get pods` command, whose output indicates the catalog service's pod is being created:
 
-```bash
-deploy/k8s/deploy-application.sh --charts catalog
-```
+    ```console
+    NAME                              READY   STATUS              RESTARTS   AGE
+    catalog-ff5d8cbfc-69gxw           0/1     ContainerCreating   0          3s
+    ```
 
-### 3. Enable Prometheus metrics scraping for Azure Monitor for containers
+## Enable Prometheus metrics scraping for Azure Monitor for Containers
 
-As per the [Azure Monitor Prometheus scraping configuration](/azure/azure-monitor/insights/container-insights-prometheus-integration), you have to:
+Before Azure Monitor for Containers can scrape Prometheus metrics from the catalog service, the Prometheus scraping must be enabled in the AKS cluster. The [Azure Monitor Prometheus scraping configuration](/azure/azure-monitor/insights/container-insights-prometheus-integration) provides a Kubernetes ConfigMap YAML template. It enables users to apply Kubernetes configuration changes to AKS using the `kubectl` command.
 
-Download the [`container-azm-ms-agentconfig.yaml`](https://github.com/microsoft/Docker-Provider/blob/ci_dev/kubernetes/container-azm-ms-agentconfig.yaml) configuration file and update line 71 to:
+For your convenience, the ConfigMap YAML template has been provided as *deploy/k8s/azure-monitor/container-azm-ms-agentconfig.yaml*.
 
-```yaml
-monitor_kubernetes_pods = true
-```
+1. Open the template in the Cloud Shell editor and set the value of the `monitor_kubernetes_pods` to `true`, as shown.
 
-Then you have to apply it to the cluster.
+    ```yaml
+    monitor_kubernetes_pods = true
+    ```
 
-The file has been already downloaded and updated, so you just have to run the following command:
+1. Apply the ConfigMap to AKS with the following command:
 
-```bash
-kubectl apply -f deploy/k8s/azure-monitor/container-azm-ms-agentconfig.yaml
-```
+    ```bash
+    kubectl apply -f deploy/k8s/azure-monitor/container-azm-ms-agentconfig.yaml
+    ```
+  
+    The preceding applies the ConfigMap to your AKS cluster. The AKS cluster will now scrape Prometheus metrics from any service that configured with the Prometheus annotations.
 
-From now on, all Prometheus metrics are being scraped by Azure Monitor.
+## Create some log entries
 
-## Create a graph for your custom metric
+Use the app to generate some log data to examine. Open another browser tab if needed to complete the following steps.
 
-The implemented custom metric is counting all requests received by the Catalog microservice, even the health check requests. Because of this, you don't have to do anything to get values for this metric, just let the application be there for a few minutes. After about five minutes you can refresh several times the home page, to generate a few additional requests to the Catalog microservice.
+1. If needed, run the following command to display the various app URLs:
 
-You should now be ready to generate a graph for your custom metric.
+    ```bash
+    cat ~/clouddrive/aspnet-learn/deployment-urls.txt
+    ```
 
-To generate a custom graph for your metric, you have to:
+1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically, every 10 seconds.
 
-- Create a query to get the required metrics.
-- Generate a graph with the query data.
+    :::image type="content" source="../media/5-monitor-app-insights/health-check.png" alt-text="Health check page" border="true" lightbox="../media/5-monitor-app-insights/health-check.png":::
 
-### 1. Create a query for the metric
+    > [!NOTE]
+    > While the app is starting, you might initially receive an HTTP 503 or 502 response from the server. Retry after about one minute. The :::no-loc text="Seq"::: logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
 
-Copy the [Kusto query](/azure/data-explorer/kusto/query/) below because you'll use in just a few seconds:
+1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
-```kusto
-InsightsMetrics
-| where Name == "catalogapi_path_counter"
-```
+    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
-Now in the Azure Portal, go to the resource group you created for this module and click on the AKS resource and then:
+## View logs
 
-1. Click on the **Logs** option in the Monitoring section on the left side panel.
-2. Paste the Kusto query above in the query area
-3. Click the **Run** button
+1. If needed, ign into the [Azure portal](https://portal.azure.com/?azure-portal=true) using the same subscription used in previous units.
+1. Use the search box to find and open the Kubernetes service resource named *eshop-learn-aks*.
+1. Select the **Logs** option in the **Monitoring** section on the left side panel.
+1. Paste the following Kusto query into the query area:
 
-You should see something like the image below:
+    ```kusto
+    InsightsMetrics
+    | where Name == "catalogapi_path_counter"
+    | where parse_json(Tags).endpoint == "/catalog-api/api/v1/catalog/items"
+    | order by TimeGenerated desc
+    ```
+    
+1. Select the **Run** button.
 
-:::image type="content" source="../media/azure-monitor-for-containers-prometheus-metric-query.png" alt-text="Logs view showing the detailed sequence and the metric values output from the query" border="true" lightbox="../media/azure-monitor-for-containers-prometheus-metric-query.png":::
-
-### 2. Generate a graph with the query data
-
-To generate a graph from the above data you just have to:
-
-1. Click on the **Chart** tab, just above the query result data.
-2. Select the **Line** graph type.
-
-You should something similar to the image below:
-
-:::image type="content" source="../media/azure-monitor-for-containers-prometheus-metric-graph.png" alt-text="Graph tab from the query data" border="true" lightbox="../media/azure-monitor-for-containers-prometheus-metric-graph.png":::
-
-In the image above you can see a straight ascending line, that corresponds to the health checks requests, that are received at a constant rate, hence the straight line. You can also see a sudden rise in the graph and then the straight raising line continuing at another level.
-
-You don't get to see the spike you might have expected, because out custom metric is a counter, so it's always increasing.
-
-Now that you have a graph for your metric, you could use the "**Pin to dashboard**" button in the top right, to include the graph in any dashboard you have write access to.
-
-## Resources
-
-- <https://medium.com/@dale.bingham_30375/net-core-web-api-metrics-with-prometheus-and-grafana-fe84a52d9843>
-- <https://medium.com/@aevitas/expose-asp-net-core-metrics-with-prometheus-15e3356415f4>
-- <https://prometheus.io/>
-- <https://azure.microsoft.com/blog/azure-monitor-for-containers-with-prometheus-now-in-preview/>
