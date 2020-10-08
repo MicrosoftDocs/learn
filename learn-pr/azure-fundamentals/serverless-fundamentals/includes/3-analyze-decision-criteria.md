@@ -14,7 +14,7 @@ Although Azure Logic Apps can perform logic (loops, decisions, and so on), if yo
 
 ## Do you have existing automated tasks written in an imperative programming language?
 
-If you already have your orchestration or business logic expressed in C#, Java, Python, or another popular programming language, it might be easier to port your code into the body of an Azure function than to re-create it by using Azure Logic Apps.
+If you already have your orchestration or business logic expressed in C#, Java, Python, or another popular programming language, it might be easier to port your code into the body of an Azure Functions function app than to re-create it by using Azure Logic Apps.
 
 ## Do you prefer a visual (declarative) workflow or writing (imperative) code?
 
