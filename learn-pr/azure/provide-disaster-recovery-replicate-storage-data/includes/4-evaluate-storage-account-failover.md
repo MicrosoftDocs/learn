@@ -43,9 +43,9 @@ When you fail over your account, you'll have some data loss. This loss happens b
 
 Also, when you start a failover, data in your primary region is lost. Any data that wasn't written to the secondary before you started the failover is also lost.
 
-Use **Last Sync Time** to understand the extent of data loss you may experience. This property shows the most recent point in time that data from your primary region was written to the secondary region. All data written to the primary before this point in time is guaranteed to be available on the secondary. Data written to the primary region after this last sync time might not be available in the secondary region, and may be lost.
+Use **last sync time** to understand the extent of data loss you may experience. This property shows the most recent point in time that data from your primary region was written to the secondary region. All data written to the primary before this point in time is guaranteed to be available on the secondary. Data written to the primary region after this last sync time might not be available in the secondary region, and may be lost.
 
-You can find the **Last Sync Time** by using the Azure portal, Azure CLI, or Azure PowerShell. For example, the **Last Sync Time** is shown when you select **Prepare for failover** in the Azure portal.
+You can find the **last sync time** by using the Azure portal, Azure CLI, or Azure PowerShell. For example, the **last sync time** is shown when you select **Prepare for failover** in the Azure portal.
 
 :::image type="content" source="../media/4-portal-failover-confirm.png" alt-text="Screenshot of the failover confirmation page with the last sync time shown.":::
 

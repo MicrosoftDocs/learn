@@ -1,6 +1,6 @@
 As the Azure administrator for your company, you've been asked to do failovers to secondary regions for the storage accounts that hold the music data, and manage those failovers.
 
-In this unit, you'll start a failover. When the failover is complete, you'll reconfigure the storage account to use geo-zone-redundant storage for replication. You'll use the **Last Sync Time** property to estimate potential data loss.
+In this unit, you'll start a failover. When the failover is complete, you'll reconfigure the storage account to use geo-redundant storage for replication. You'll use the **last sync time** property to estimate potential data loss.
 
 The option to failover isn't available in the Azure portal until the initial sync from the primary region to the secondary region is complete. This initial sync process may take several hours. If you don't have time to wait, that's ok. You can still complete this module. Review the steps and screenshots below to get familiar with the process. Or, if you're following these steps in your own subscription, come back later to complete the steps.
 
@@ -22,7 +22,7 @@ Let's simulate a region-wide failure by manually initiating a failover.
 
    :::image type="content" source="../media/5-portal-failover-prepare.png" alt-text="Screenshot of the prepare for failover button at the bottom of the geo-replication page.":::
 
-1. A confirmation message appears. This message includes the **Last Sync Time**, which is a timestamp in the GMT time zone. Make a note of the last sync time. You use the last sync time to estimate how much data loss you'll have after failover is complete.
+1. A confirmation message appears. This message includes the **last sync time**, which is a timestamp in the GMT time zone. Make a note of the last sync time. You use the last sync time to estimate how much data loss you'll have after failover is complete.
 
    :::image type="content" source="../media/5-portal-failover-confirm.png" alt-text="Screenshot that shows the last sync time and requests you confirm failover by typing yes.":::
 1. Type **Yes** in the **Confirm failover** field.
@@ -36,7 +36,7 @@ Let's simulate a region-wide failure by manually initiating a failover.
 
 ## Reconfigure replication mode
 
-When failover is complete, your geo-replication map only shows one region. This region is your new primary. You'll need to reconfigure your account to use geo-zone-redundant storage.
+When failover is complete, your geo-replication map only shows one region. This region is your new primary. You'll need to reconfigure your account to use geo-redundant storage.
 
 1. Select **Configuration**.
 1. Under **Replication**, select **Geo-redundant storage (GRS)**.
@@ -47,11 +47,11 @@ When failover is complete, your geo-replication map only shows one region. This 
 
 ## Estimate the data loss
 
-Now you need to estimate potential data loss. Review the **Last failover time**, and compare it with the **Last Sync time** value.
+Now you need to estimate potential data loss. Review the **Last failover time**, and compare it with the **last sync time** value.
 
 1. In the pane on the left, under the **Settings** section, select **Geo-replication**.
 1. Note the **Last failover time** value on the left side of the map.
 
     :::image type="content" source="../media/5-last-sync-time-after-failover.png" alt-text="Screenshot that shows an updated last failover time on the geo-replication page.":::
 
-1. Compare this value with the **Last Sync time** value. If data was written to the primary region during these two times, it might be lost.
+1. Compare this value with the **last Sync time**. If data was written to the primary region during these two times, it might be lost.
