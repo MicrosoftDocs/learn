@@ -24,7 +24,7 @@ The developers at Tailwind Traders realize that they're about to put extensive r
     -| Program.cs
     ```
 
-1. Run the following command to run the application
+1. Run the application by typing this command in the terminal:
     
     ```bash
     dotnet run
