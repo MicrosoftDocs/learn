@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.language.dotnet-dependencies
+uid: learn.dotnet-dependencies
 metadata:
   title: Create a new .NET project and work with package dependencies 
   description: Create a .NET project and learn to add packages and manage package dependencies in your project. Use the .NET CLI and NuGet registry to add libraries and tools to your C# applications using Visual Studio Code.
@@ -15,7 +15,7 @@ abstract: |
   - Initialize .NET projects
   - Add packages to and remove packages from your .NET project
   - Manage your package dependencies and update them in a predictable way
-iconUrl: /learn/achievements/dotnet-dependencies.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
@@ -27,13 +27,13 @@ prerequisites: |
   - Local installations of the [.NET Core SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/)
   - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
 units:
-- learn.language.dotnet-dependencies.1-introduction
-- learn.language.dotnet-dependencies.2-dependency
-- learn.language.dotnet-dependencies.3-exercise-dependency
-- learn.language.dotnet-dependencies.4-dependency-management
-- learn.language.dotnet-dependencies.5-exercise-dependency-management
-- learn.language.dotnet-dependencies.6-knowledge-check
-- learn.language.dotnet-dependencies.7-summary
+- learn.dotnet-dependencies.1-introduction
+- learn.dotnet-dependencies.2-dependency
+- learn.dotnet-dependencies.3-exercise-dependency
+- learn.dotnet-dependencies.4-dependency-management
+- learn.dotnet-dependencies.5-exercise-dependency-management
+- learn.dotnet-dependencies.6-knowledge-check
+- learn.dotnet-dependencies.7-summary
 
 badge:
-  uid: learn.language.dotnet-dependencies.badge
+  uid: learn.dotnet-dependencies.badge
