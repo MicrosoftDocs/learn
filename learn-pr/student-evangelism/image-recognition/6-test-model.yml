@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: 
+uid: learn.student-evangelism.over-the-moon-ai.5-test-model
 metadata:
-  title: Train the Custom Vision service
+  title: Test and iterate on training
   description: 
   ms.date: 
   author: # Your GitHub username (or whomever you'd like to give author attribution to)
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Train the Custom Vision service
+title: Test and iterate on training
 durationInMinutes: 
 content: |
-  [!include[](includes/1-train-model.md)]
+  [!include[](includes/5-test-model.md)]
