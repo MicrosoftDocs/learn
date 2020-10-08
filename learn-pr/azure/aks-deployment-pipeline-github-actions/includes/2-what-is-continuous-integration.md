@@ -2,14 +2,6 @@ Before you start deploying or changing the infrastructure, it's essential to und
 
 Let's explore some of the concepts behind continuous integration (CI) and continuous deployment (CD). Understand what a pipeline is and how to apply all of this to GitHub Actions.
 
-## Before continuous integration (CI)
-
-Before the technological advancements that allowed us to have tools to do CI and CD, all the process was done "by hand". There were automated test suites, but they needed to be run manually or at scheduled times.
-
-One of the most significant problems – that is also one of the root causes for CI to exist – was the day called "merge day". Since most teams consist in several developers working on the same code in different branches, the merge day was that one day where all code changes were integrated back into the main branch.
-
-This caused "the integration hell" because several parts of a team's work intersected with others and caused this day to be entirely dedicated to solving possible integration issues until CI came in.
-
 ## What is CI and CD?
 
 CI and CD are a set of operating practices that aims to make teams more productive by introducing continuous automation and monitoring for all the phases of software development, testing, and deployment.
@@ -20,7 +12,7 @@ CI is short for **C**ontinuous **I**ntegration, while CD is short for **C**ontin
 
 CI is a set of practices that dictates that teams should frequently implement and integrate the smallest changes in the code, which means constant testing, compiling, deployment, and testing.
 
-One of the most critical CI principles is to merge all the newest changes back into the main branch as often as possible, avoiding the _Integration Hell_, which happens when many developers combine their changes all at once in one single day.
+One of the most critical CI principles is to merge all the newest changes back into the main branch as often as possible. This is to avoid the so called _Integration Hell_, which happens when many developers combine their changes all at once in one single day.
 
 CI's goal is to avoid production problems caused by code changes, detecting them before they can cause real damage.
 
@@ -32,9 +24,9 @@ In continuous delivery, you decide whether you deploy the changes daily, weekly,
 
 ### Continuous deployment
 
-There's a third option in the CI/CD process, the continuous deployment – which is also abbreviated as CD – goes one step further than continuous delivery. In this philosophy, every change that passes all the stages of your CI pipeline is automatically released to customers.
+There's another variation to the CD process, which is continuous __deployment__. It goes one step further than continuous delivery. In this variation, every change that passes all the stages of your CI pipeline is automatically released to customers.
 
-Continuous deployment is one of the most advanced processes in software development. It requires that coded tests cover all the application aspects to test the application's coded functionality without human intervention.
+Continuous deployment is one of the most advanced processes in software development. It requires that coded tests cover all the application aspects to test the application's functionality without human intervention.
 
 ## Continuous integration pipelines
 
@@ -53,3 +45,11 @@ GitHub actions support all of GitHub's events. Each step is defined as an "actio
 Actions are the most important piece of the pipeline. They're the building blocks of the stages and are easy to create. The ability to share these actions among each other is what makes GitHub Actions so great. Because you don't need to rewrite repeated code or stages, use someone's action, or create your own.
 
 In the next steps, you'll define your deployment pipeline to implement _continuous deployment_ in our application.
+
+## Benefits of continuous integration
+
+Before the technological advancements that allowed us to have tools to do CI and CD, all the process was done "by hand". There were automated test suites, but they needed to be run manually or at scheduled times.
+
+One of the most significant problems – that is also one of the root causes for CI to exist – was the day called "merge day". Since most teams consist in several developers working on the same code in different branches, the merge day was that one day where all code changes were integrated back into the main branch.
+
+This caused "the integration hell" because several parts of a team's work intersected with others and caused this day to be entirely dedicated to solving possible integration issues until CI came in.
