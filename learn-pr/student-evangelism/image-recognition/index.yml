@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.student-evangelism.over-the-moon-ai.image-recognition
+metadata:
+  title: # Add your desired module title. All titles must be sentence-case.
+  description: # Add a short description for your module for search engines.
+  ms.date: 
+  author: # Your GitHub username (or whomever you'd like to give author attribution to)
+  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: # Your desired module title. Same as above.
+summary: # Add a short description for your module to be displayed to users. Can be the same as above.
+abstract:  |
+  In this module, you will:
+  - Create a good dataset of images for training AIs. 
+  - Train a custom vision AI on a particular animal.
+  - Test the model you trained.
+  - Ensure ethical practices throughout AI development.
+prerequisites: | 
+None
+iconUrl: /learn/achievements/generic-badge.svg # TODO change
+levels:
+- beginner
+roles:
+# - Add relevant user role(s) (developer, data scientist, etc.)
+- student
+products:
+- ""
+units:
+- learn.student-evangelism.over-the-moon-ai.1-introduction
+- learn.student-evangelism.over-the-moon-ai.2-set-up-azure
+- learn.student-evangelism.over-the-moon-ai.3-what-is-ai
+- learn.student-evangelism.over-the-moon-ai.4-choose-pictures
+- learn.student-evangelism.over-the-moon-ai.5-train-model
+- learn.student-evangelism.over-the-moon-ai.6-test-model
+- learn.student-evangelism.over-the-moon-ai.7-knowledge-check
+- learn.student-evangelism.over-the-moon-ai.8-summary
+badge:
+  uid: learn.student-evangelism.over-the-moon-ai.badge

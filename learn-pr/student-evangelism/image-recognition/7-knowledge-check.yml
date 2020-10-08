@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: 
+  description: 
+  ms.date: 
+  author: # Your GitHub username (or whomever you'd like to give author attribution to)
+  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 
+durationInMinutes:
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "The Azure Custom Vision Service requires a significant amount of code to use."
+    choices:
+    - content: "True, to use the Custom Vision Service on Azure you need to write an entire Artificial Intelligence algorithm."
+      isCorrect: false
+      explanation: "This is incorrect, while you can write code to call the Custom Vision Service, the AI algorithm is a part of the service and not something you have to write."
+    - content: "True, you can only call the Custom Vision Service from C# code."
+      isCorrect: false
+      explanation: "This is incorrect, you can call the Custom Vision Service from C# code, as well as Go, Java, JavaScript, and Python, but you can also use the browser Portal."
+    - content: "False, it only takes 50 lines of code to use the Custom Vision Service."
+      isCorrect: false
+      explanation: "This is incorrect, while you can use the Custom Vision Service in about 50 lines of code, you can also use the Portal and not write any code!"
+    - content: "False, there is a browser option where you can use it without any code."
+      isCorrect: true
+      explanation: "This is correct, while calling the Custom Vision Service with C#, Go, Java, JavaScript, and Python is an option, it is not required."
+  - content: "How many images do you need to use to train the Custom Vision Service to identify an object in an image?"
+    choices:
+    - content: "1,000"
+      isCorrect: false
+      explanation: "While the more images you have to train your AI the better, you do not *need* 1,000 images to get started with Custom Vision Service."
+    - content: "1"
+      isCorrect: false
+      explanation: "You need more than one image to train the Custom Vision Service AI on a tagged object."
+    - content: "15"
+      isCorrect: true
+      explanation: "You need at least 15 images per tag to have the Custom Vision Service be able to train to identify that object."
+    - content: "100"
+      isCorrect: false
+      explanation: "While the more images you have to train your AI the better, you do not *need* 100 images to get started with Custom Vision Service."
+  - content: "If you are using Cloud resources in the East US Region to train your Custom Vision model, which Region do you need to provision resources to run the predictions?"
+    choices:
+    - content: "East US"
+      isCorrect: false
+      explanation: "While you could choose East US, you do not have to."
+    - content: "West US 2"
+      isCorrect: false
+      explanation: "While you could choose West US 2, you do not have to."
+    - content: "East US 2"
+      isCorrect: false
+      explanation: "While you could choose East US 2, you do not have to."
+    - content: "Any available Region"
+      isCorrect: true
+      explanation: "You can choose any region that supports Custom Vision, it's best to choose the region closest to where the majority of predictions will be made."
