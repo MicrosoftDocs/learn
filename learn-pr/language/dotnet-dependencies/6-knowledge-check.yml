@@ -15,55 +15,56 @@ content: |
 quiz: 
   title: "Check your knowledge"
   questions:
-    - content: "How would you install a test framework like Jest?"
+    - content: "How would you install a framework like Humanizer?"
       choices:
-        - content: "Run `npm install jest`"
+        - content: "Run `dotnet add Humanizer`"
           isCorrect: false
-          explanation: "This command installs Jest, but it installs it as a normal dependency. We don't recommend installing Jest as a normal dependency because the dependency will ship with the application."
-        - content: "Run `npm install jest --save-dev`"
+          explanation: "When using the `add` command you must specify that you want to install a `package` before specifying the name."
+        - content: "Run `dotnet add package Humanizer`"
           isCorrect: true
-          explanation: "This command installs Jest as a dev dependency. A test framework is something you need only during development."
-        - content: "Run `npm install jest --save`"
+          explanation: "That is correct! This will add the most recent version of the package to your project. You can also specify the version using the `--version=<version>` paramter."
+        - content: "Run `dotnet install Humanizer`"
           isCorrect: false
-          explanation: "This command installs Jest in the `dependencies` section. We recommend that any library that's used only during development is installed as a dev dependency. And you don't need to add the `--save` flag. This flag is left over from when it was needed to persist the installed library in the package.json file."
-        - content: "Run `npm download jest --save-dev`"
+          explanation: "There is no `install` command. Use `add package`."
+        - content: "Run `dotnet download package Humanizer`"
           isCorrect: false
-          explanation: "There is no `download` command. Use `install`."
-    - content: "What is the main reason to use npx?"
+          explanation: "There is no `download` command. Use `add package`."
+    - content: "What version change would signify a Minor version when a package uses sematnic version."
       choices:
-        - content: "The dependency is downloaded directly into the Node.js process and is removed after the command is run. This tool is great for when you want to run commands infrequently."
+        - content: "1.1.1 changes to 1.2.0"
           isCorrect: true
-          explanation: ""
-        - content: "Installing dependencies by using npx is more secure than installing them globally."
+          explanation: "That is correct, the middle number represents the Minor version. A change to this number means that features have been added. Your code should still work."
+        - content: "1.0.1 changes to 1.0.2"
           isCorrect: false
-        - content: "Installing dependencies by using npx is faster than installing them globally."
+          explanation: "That is incorrect, this is the Patch version. A change to this number means that a change has been applied that fixes something in the code that should have worked."
+        - content: "1.0.0 changes to 2.0.0"
           isCorrect: false
-        - content: "You don't have to use sudo before running it as you would for a global installation."
-          isCorrect: false
-          explanation: "This answer is technically correct, but there's a better reason to choose npx over global installation. Global installations remain on your system until you uninstall them. When you use npx, you don't need to uninstall the dependency."
-    - content: "How do you configure a package.json file so that you get only patch (bug fix) updates?"
+          explanation: "Taht is incorrect, this is the Major version. A change to this number means that you can expect breaking changes in code."
+    - content: "How do you configure a project file so that you get only patch (bug fix) updates?"
       choices:
-        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"*\"`"
+        - content: "Locate the entry in the project file and set the entry to look like this one: `<PackageReference Include=\"<package>\" Version=\"*\"/>`"
           isCorrect: false
-          explanation: "This answer is incorrect. This code will update the dependency to the latest possible version."
-        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"1.x.0\"`"
+          explanation: "This answer is incorrect. This code will always update the dependency to the latest possible version."
+        - content: "Locate the entry in the project file and set the entry to look like this one: `<PackageReference Include=\"<package>\" Version=\"2.*\"/>`"
           isCorrect: false
-          explanation: "This code will update the dependency to the latest minor version. That's not what you want."
-        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"1.0.x\"`"
+          explanation: "This answer is incorrect. This code will always update the dependency to the latest Minor version."
+        - content: ""Locate the entry in the project file and set the entry to look like this one: `<PackageReference Include=\"<package>\" Version=\"2.7.*\"/>`""
           isCorrect: true
-        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"^1.0.x\"`"
+          explanation: "This answer is correct. Setting the third value in the version to * will ensure that the library always uses the latest patch version."
+        - content: "Locate the entry in the project file and set the entry to look like this one: `<PackageReference Include=\"<package>\" Version=\"[6,7)\"/>`"
           isCorrect: false
-    - content: "What are some recommended scripts to set up in a package.json at the start of a project?"
+          explanation: "This answer is incorrect. This code will always update to the latest version where the Major number is 6."
+    - content: "How would you check if a new version of a framework is available?"
       choices:
-        - content: "start, test, build"
+        - content: "Run `dotnet list outdated`"
           isCorrect: false
-          explanation: "It's a good idea to set up these scripts. Because you're working in JavaScript, it's a good idea to set up a linter tool as well to ensure that your code looks consistent."
-        - content: "start, test"
+          explanation: "This is incorrect, outdated is not a command, but is an option and passed in via `--outdated`, additionally you must specifiy the command `package` before passing in the option."
+        - content: "Run `dotnet list package outdated`"
           isCorrect: false
-          explanation: "Setting up a script for start and test is a good idea. We also recommend that you set up a script for how to build your solution. And it's a good idea to set up a linter tool as well to ensure that your code looks consistent."
-        - content: "start"
+          explanation: "outdated is not a command, to check for outdated packages you must pass in `--outdated` as  an option."
+        - content: "Run `dotnet list --outdated`"
           isCorrect: false
-          explanation: "You should set up more than just a start script. Consider setting up commands for test, build, and linting as well."
-        - content: "start, test, lint, build"
+          explanation: "When using the `list` command you must specify that you want to install a `package` before specifying the name."
+        - content: "Run `dotnet list package --outdated`"
           isCorrect: true
-          explanation: "Setting up these scripts is great way to start any Node.js project."
+          explanation: "That is correct! You can also pass in `--include-prerelease` to check for new pre-release versions of the dependencies."
