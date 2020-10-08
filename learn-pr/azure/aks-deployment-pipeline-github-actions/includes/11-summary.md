@@ -42,4 +42,5 @@ To learn more about Azure Kubernetes Service and GitHub Actions, see the followi
 - [CI With GitHub Actions](https://docs.microsoft.com/en-us/learn/modules/github-actions-ci/)
 - [What is a Docker image](https://docs.docker.com/storage/storagedriver/#images-and-layers)
 - [Helm official website](https://helm.sh)
+- [Helm official docs to create charts](https://helm.sh/docs/chart_template_guide/getting_started/)
 - [Azure Helm docs](https://docs.microsoft.com/en-us/azure/aks/kubernetes-helm)

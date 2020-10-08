@@ -188,7 +188,7 @@ You'll build the tagged version using another workflow.
     > [!IMPORTANT]
     > Be mindful of the indentation when using YAML. The `name` key should be aligned with the previous `uses` key.
 
-    This action gives us several options to tweak the usage. You can learn more about each one of them in the [documentation page](https://github.com/docker/build-push-action/tree/releases/v1).
+    This action gives you several options to tweak the usage. You can learn more about each one of them in the [documentation page](https://github.com/docker/build-push-action/tree/releases/v1).
 
 1. In the `name` key, rename the value to "Build and push production image"
 
