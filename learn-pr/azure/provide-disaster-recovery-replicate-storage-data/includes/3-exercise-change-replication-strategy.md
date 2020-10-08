@@ -17,10 +17,13 @@ Create a storage account with Geo-zone-redundant storage (GZRS).
     ```Bash
     export AZURE_STORAGE_ACCOUNT=<storageaccountname>
      ```
+
 1. Set the location. Replace the westus2 value with a location near you.
+
     ```bash
     export LOCATION=westus2
     ```
+
     The following list has some location values you can use:
 
     - southeastasia
@@ -31,6 +34,12 @@ Create a storage account with Geo-zone-redundant storage (GZRS).
     - centralus
     - eastus2
     - westus2
+1. Run the following command to create a resource group.
+
+    ```bash
+    az group create --name $RESOURCEGROUP --location $LOCATION
+    ```
+
 1. Run the following command to create a storage account:
 
     ```Bash
