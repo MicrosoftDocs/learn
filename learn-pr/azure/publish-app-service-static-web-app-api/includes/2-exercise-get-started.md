@@ -109,25 +109,25 @@ Click the link to browse to your application.
 
 ::: zone pivot="angular"
 
-Browse to `http://localhost:4200`.
+Browse to <http://localhost:4200>.
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-Browse to `http://localhost:3000`.
+Browse to <http://localhost:3000>.
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-Browse to `http://localhost:5000`.
+Browse to <http://localhost:5000>.
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-Browse to `http://localhost:8080`.
+Browse to <http://localhost:8080>.
 
 ::: zone-end
 
