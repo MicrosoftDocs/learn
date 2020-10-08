@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.debug-nodejs.2-debugger
+title: What's a debugger?
+metadata:
+  title: What's a debugger?
+  description: Learn about what a debugger is and why it's useful.
+  author: sinedied
+  ms.author: yolasors
+  ms.date: 06/04/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-debugger.md)]

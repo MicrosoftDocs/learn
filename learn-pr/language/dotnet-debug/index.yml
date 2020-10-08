@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.debug-nodejs
+metadata:
+  title: Interactively debug Node.js apps with the built-in and Visual Studio Code debuggers
+  description: Learn how to efficiently debug your Node.js app by using Visual Studio Code to fix your bugs quickly. Use the interactive debugger within Visual Studio Code to analyze and fix your JavaScript/TypeScript applications.
+  ms.date: 06/04/2020
+  author: sinedied
+  ms.author: yolasors
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Interactively debug Node.js apps with the built-in and Visual Studio Code debuggers
+summary: Learn how to efficiently debug your Node.js app by using Visual Studio Code to fix your bugs quickly.
+abstract: |
+  By the end of this module, you will be able to:
+  - Use the Visual Studio Code debugger with a Node.js program.
+  - Create breakpoints and run your code step by step to find issues.
+  - Inspect your program state at any execution step.
+  - Rewind the call stack to find the source of an exception.
+iconUrl: /learn/achievements/debug-nodejs.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+prerequisites: |
+  - Local installations of [Node.js](https://nodejs.org) and [Visual Studio Code](https://code.visualstudio.com)
+units:
+- learn.azure.debug-nodejs.1-introduction
+- learn.azure.debug-nodejs.2-debugger
+- learn.azure.debug-nodejs.3-run-your-code-step-by-step
+- learn.azure.debug-nodejs.4-use-built-in-debugger
+- learn.azure.debug-nodejs.5-analyze-your-program-state
+- learn.azure.debug-nodejs.6-use-vs-code-debugger
+- learn.azure.debug-nodejs.7-knowledge-check
+- learn.azure.debug-nodejs.8-summary
+
+badge:
+  uid: learn.azure.debug-nodejs.badge
