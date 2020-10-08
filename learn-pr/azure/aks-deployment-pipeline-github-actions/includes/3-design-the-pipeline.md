@@ -9,13 +9,15 @@ To start designing the pipeline, you need to think about tasks and triggers and 
 1. A tagged push to the `main` branch
 1. A non-tagged push to the `main` branch
 
-Notice that, even though it might seem redundant, we need to split those two events into two separate triggers. We could say "this pipeline is triggered by a tagged **or** non-tagged push to `main`". However, if we did this thinking, our pipeline wouldn't differentiate one from the other, not what we want. The goal is to have two separate triggers, one of them will deploy the application to production, and the other will deploy to the staging environment.
+Notice that, even though it might seem redundant, we need to split those two events into two separate triggers. We could say "this pipeline is triggered by a tagged **or** non-tagged push to `main`". However, if we did this, our pipeline wouldn't differentiate one from the other. The goal is to have two separate triggers, one of them will deploy the application to production, and the other will deploy to the staging environment.
 
 As for now, our pipeline looks like this:
 
 :::image type="content" source="../media/3-pipeline-1-trigger.png" alt-text="Pipeline Triggers":::
 
 After the triggers have been defined, we need to think in the pipeline flow itself. The answer to the question "what will happen after one of the triggers is executed?". Generally, the first steps are the same for both triggers.
+
+## Clone the repo
 
 The website must be a Docker image to run in the AKS environment. This means we'll probably need to build this new image following a Dockerfile present in the root of the repository.
 
@@ -27,6 +29,8 @@ We'll call these first steps the "__Build Steps__". That is because we'll have t
 
 As we mentioned, we'll probably have a Docker image that will be built using a Dockerfile present in the root of the repository. The next logical step is to build this image. But here's where the triggers start being different.
 
+## Build the image
+
 If the pipeline is triggered by the __tagged__ commit, then we'll build the image and tag it with __the same tag as the push__. Which means that, if the commit was tagged with `v1.0.0`, we'll build the image `contoso/website:v1.0.0`.
 
 Otherwise, if this isn't a tagged commit in the `main` branch, we'll build the image with the `latest` tag.
@@ -35,9 +39,13 @@ Otherwise, if this isn't a tagged commit in the `main` branch, we'll build the i
 
 After the image is built, we need to push it to Contoso's ACR (Azure Container Registry), which the AKS cluster is set up to access. This way, the cluster can download the images and run them.
 
+## Push the image to a container registry
+
 This is where the pipeline converges into one single step. Because the ACR doesn't have internal divisions, and we'll push both images to the same place.
 
 :::image type="content" source="../media/3-pipeline-4-docker-push.png" alt-text="Push the image to the ACR":::
+
+## Deploy the application
 
 The final step is to deploy the website to the right location, those are the "__Deploy Steps__". If the tagged commit triggered the pipeline, then we'll deploy the website to production, in the `production` namespace of the AKS cluster.
 
