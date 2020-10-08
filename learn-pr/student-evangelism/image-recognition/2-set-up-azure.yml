@@ -11,4 +11,4 @@ metadata:
 title: 
 durationInMinutes: 
 content: |
-  [!include[](includes/1-set-up-azure.md)]
+  [!include[](includes/2-set-up-azure.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.over-the-moon-ai.5-test-model
+uid: learn.student-evangelism.over-the-moon-ai.6-test-model
 metadata:
   title: Test and iterate on training
   description: 
@@ -11,4 +11,4 @@ metadata:
 title: Test and iterate on training
 durationInMinutes: 
 content: |
-  [!include[](includes/5-test-model.md)]
+  [!include[](includes/6-test-model.md)]

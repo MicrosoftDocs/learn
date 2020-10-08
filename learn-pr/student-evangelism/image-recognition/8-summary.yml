@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: 
+uid: learn.student-evangelism.over-the-moon-ai.8-summary
 metadata:
   title: Summary
   description: Summary
@@ -11,4 +11,4 @@ metadata:
 title: Summary
 durationInMinutes:
 content: |
-  [!include[](includes/3-summary.md)]
+  [!include[](includes/8-summary.md)]
