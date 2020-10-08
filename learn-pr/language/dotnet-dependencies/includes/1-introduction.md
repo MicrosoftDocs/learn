@@ -17,5 +17,4 @@ After you complete this module, you'll be able to:
 - Visual Studio Code installed on your computer
 - C# extension for Visual Studio Code
 - Current release of .NET Core SDK on your computer
-- Familiarity with editing text and code files in a text editor
 - Experience with using the command line
