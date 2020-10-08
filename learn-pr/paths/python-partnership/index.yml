@@ -34,8 +34,8 @@ roles:
 products:
 - vs-code
 modules:
-- learn.student-evangelism.python-partnership.secret-message
-- learn.student-evangelism.python-partnership.personality-quiz
+- learn.student-evangelism.python-partnership-secret-message
+- learn.student-evangelism.python-partnership-personality-quiz
 - learn.languages.python-install-vscode
 trophy:
   uid: learn.student-evangelism.python-partnership.trophy
