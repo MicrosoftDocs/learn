@@ -2,7 +2,7 @@ As the Azure administrator for your company, you've been asked to do failovers t
 
 In this unit, you'll start a failover. When the failover is complete, you'll reconfigure the storage account to use geo-redundant storage for replication. You'll use the **last sync time** property to estimate potential data loss.
 
-The option to failover isn't available in the Azure portal until the initial sync from the primary region to the secondary region is complete. This initial sync process may take several hours. If you don't have time to wait, that's ok. You can still complete this module. Review the steps and screenshots below to get familiar with the process. Or, if you're following these steps in your own subscription, come back later to complete the steps.
+The option to fail over isn't available in the Azure portal until the initial sync from the primary region to the secondary region is complete. This initial sync process may take several hours. If you don't have time to wait, that's ok. You can still complete this module. Review the steps and screenshots below to get familiar with the process. Or, if you're following these steps in your own subscription, come back later to complete the steps.
 
 ## Start a failover
 

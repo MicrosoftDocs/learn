@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Summary
-  ms.date: 10/05/2020
+  ms.date: 10/08/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -39,10 +39,10 @@ quiz:
     choices:
     - content: "You might have some data loss."
       isCorrect: true
-      explanation: "There's delay before data is copied from the primary region and written to the secondary because data is copied asynchronously. After you failover, compare the last sync time and last failover time."
+      explanation: "There's delay before data is copied from the primary region and written to the secondary because data is copied asynchronously. After you fail over, compare the last sync time and last failover time."
     - content: "Data in the primary region is inaccessible to users."
       isCorrect: false
       explanation: "Given the scenario, the inaccessibility is because of the outage. "
-    - content: "After failover, the data is still protected with geo-replication."
+    - content: "After you fail over, the data is still protected with geo-replication."
       isCorrect: false
       explanation: "The storage account is updated to use locally redundant storage (LRS). You'll need to update the replication type to geo-redundant storage like GRS or GZRS."
