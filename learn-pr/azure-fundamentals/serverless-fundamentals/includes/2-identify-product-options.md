@@ -12,15 +12,15 @@ In this module, we'll cover two Azure serverless computing services: Azure Funct
 
 With the [Azure Functions](https://azure.microsoft.com/services/functions/?azure-portal=true) service, you can host a single method or function by using a popular programming language in the cloud that runs in response to an event. An example of an event might be an HTTP request, a new message on a queue, or a message on a timer. 
 
-Because of their atomic nature, Azure functions can serve many purposes in an application's design. Functions can be written in many common programming languages, such as C#, Python, JavaScript, Typescript, Java, and PowerShell.
+Because of its atomic nature, Azure Functions can serve many purposes in an application's design. Functions can be written in many common programming languages, such as C#, Python, JavaScript, Typescript, Java, and PowerShell.
 
-Azure functions scale automatically, and charges accrue only when a function is triggered. These qualities make functions a solid choice when demand is variable. For example, you might be receiving messages from an IoT solution that monitors a fleet of delivery vehicles. You'll likely have more data arriving during business hours. Azure functions can scale out to accommodate these busier times.
+Azure Functions scales automatically, and charges accrue only when a function is triggered. These qualities make Azure Functions a solid choice when demand is variable. For example, you might be receiving messages from an IoT solution that monitors a fleet of delivery vehicles. You'll likely have more data arriving during business hours. Azure Functions can scale out to accommodate these busier times.
 
 An Azure function is a stateless environment. A function behaves as if it's restarted every time it responds to an event. This feature is ideal for processing incoming data. And if state is required, the function can be connected to an Azure storage account.
 
-Azure functions can perform orchestration tasks by using an extension called Durable Functions, which allows developers to chain functions together while maintaining state.
+Azure Functions can perform orchestration tasks by using an extension called Durable Functions, which allows developers to chain functions together while maintaining state.
 
-Azure functions are ideal when you're concerned only with the code that's running your service and not the underlying platform or infrastructure. Functions are commonly used when you need to perform work in response to an event. You do this often via a REST request, timer, or message from another Azure service, and when that work can be completed quickly, within seconds or less.
+The Azure Functions solution is ideal when you're concerned only with the code that's running your service and not the underlying platform or infrastructure. You use Functions most commonly when you need to perform work in response to an event. You do this often via a REST request, timer, or message from another Azure service, and when that work can be completed quickly, within seconds or less.
 
 ## Azure Logic Apps
 
