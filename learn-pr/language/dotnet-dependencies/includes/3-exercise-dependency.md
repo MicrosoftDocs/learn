@@ -1,66 +1,142 @@
-The developers at Tailwind Traders realize that they're about to put extensive resources into developing apps for the .NET platform. These apps are going to need process information that have complex date and time information. After some analysis, they find that .NET has some support for this, but not everything that they need. So they need to use a framework. They've found Noda Time in the NuGet package registry. It seems to be widely used and promises to express date and time data more clearly and express operations on that data more precisely. At this point, they just want you to install Noda Time, write a couple test calculations, and run them to see if Noda Time delivers on its promise.
+The developers at Tailwind Traders realize that they're about to put extensive resources into developing apps for the .NET platform. These apps are going to display a lot of data to users that are human readable include dates, times, and numbers. .NET has the capabilites to do this, but the developers are certain someone has solved this problem. So they need a framework, and after some seraching, they've found Humanizer in the NuGet package registry. It seems to be widely used and promises to meet all of your .NET needs for manipultating and displaying strings, enums, dates, times, timespans, numbers, and quantities. At this point, they just want you to install Humanizer, write a couple of data manipulations, and run them to see if Noda Time delivers on its promise.
 
-```bash
-dotnet new console -n LearnDependencies
-```
+## Setup a new .NET project
 
-```bash
-cd LearnDependencies
-```
+1. Open a terminal window.
 
-```bash
-code .
-```
+1. Create a new .NET console application by running this command:
 
-Add NodaTime:
+    ```bash
+    dotnet new console -n ManipulateData
+    ```
 
-```bash
-dotnet add package NodaTime
-```
+1. Go to your files by running this command: 
 
-Look at LearnDependencies.csproj
+    ```bash
+    cd ManipulateData
+    ```
+    
+    You should now have access to these files:
+    ```bash
+    -| bin
+    -| obj
+    -| ManipulateData.csproj
+    -| Program.cs
+    ```
 
-```xml
-<ItemGroup>
-    <PackageReference Include="NodaTime" Version="3.0.0" />
-</ItemGroup>
-```
+1. Run the following command to run the application
+    
+    ```bash
+    dotnet run
+    ```
 
-Update Program.cs
+    You should see this output:
 
-Add usign statements at the top:
-```csharp
-using NodaTime;
-using NodaTime.Extensions;
-```
+    ```output
+    Hello World
+    ```
 
-with:
+## Add a NuGet package by ussing the dotnet tool 
 
-```csharp
-static void Main(string[] args)
-{
-    var birthDate = new LocalDate(2002, 2, 12);
-    var today = SystemClock.Instance.InTzdbSystemDefaultZone().GetCurrentLocalDateTime().Date;
-    var age = Period.Between(birthDate, today);
-    Console.WriteLine($".NET is: {age.Years} years, {age.Months} months, {age.Days} days old.");
-}
-```
+1. Open the project in a code editor. If you are using Visual Studio Code, run this command to open the project: 
 
-## Run application
+    ```bash
+    code .
+    ```
 
-Type the following command to run the application
+1. Open Program.cs. It should look like this:
+    
+    ```csharp
+    using System;
 
-```bash
-dotnet run
-```
+    namespace ManipulateData
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {   
+                Console.WriteLine("Hello World");
+            }
+        }    
+    }
+    ```
 
-You should see:
+    The preceeding function is run at the start of the application and outputs a string to the console. Let's add Humanizer and manipulate data and write it to the console.
 
-```bash
-C:\Users\jamont\Desktop\LearnDependencies>dotnet run
-.NET is: 18 years, 7 months, 25 days old.
-```
+1. Install the Humanizer library by running this command:
 
-Congratulations. You've managed to successfully install Noda Time as a dependency and write date and time logic for application code. Noda Time seems to deliver on its promise, and Tailwind Traders is likely to be happy with this evaluation.
+    ```bash
+    dotnet add package NodaTime
+    ```
+
+
+    Open the ManipulateData.csproj file and find the `ItemGroup` section. You should now have an entry that looks like this one:
+
+    ```xml
+    <ItemGroup>
+        <PackageReference Include="Humanizer" Version="2.8.26 />
+    </ItemGroup>
+    ```
+
+1. Add the following content at the top of the Program.cs file to initialize Humanize:
+
+    ```csharp
+    using Humanizer;
+    ```
+
+1. Add the following content to the Program.cs file under the `Program` class
+
+    ```csharp
+    static void HumanizeQuantities()
+    {
+        Console.WriteLine("case".ToQuantity(0));
+        Console.WriteLine("case".ToQuantity(1));
+        Console.WriteLine("case".ToQuantity(5));
+    }
+
+    static void HumanizeDates()
+    {
+        Console.WriteLine(DateTime.UtcNow.AddHours(-24).Humanize());
+        Console.WriteLine(DateTime.UtcNow.AddHours(-2).Humanize());
+        Console.WriteLine(TimeSpan.FromDays(1).Humanize());
+        Console.WriteLine(TimeSpan.FromDays(16).Humanize());
+    }
+    ```
+
+1. Update the `Main` method to call the new methods:
+    
+    ```csharp
+    static void Main(string[] args)
+    {   
+        Console.WriteLine("Quantities:");
+        HumanizeQuantities();
+
+        Console.WriteLine("\nDate/Time Manipulation:");
+        HumanizeDates();
+    }
+    ```
+
+1. Run the application by typing this command in the terminal:
+
+    ```bash
+    dotnet run
+    ```
+
+    You should see the following output:
+
+    ```output
+    Quantities:
+    0 cases
+    1 case
+    5 cases
+
+    Date/Time Manipulation:
+    yesterday
+    2 hours ago
+    1 day
+    2 weeks
+    ```
+
+Congratulations. You've managed to successfully install Humanizer as a dependency and write logic for application code to make data more human readable. Humanizer seems to deliver on its promise, and Tailwind Traders is likely to be happy with this evaluation.
 
 
