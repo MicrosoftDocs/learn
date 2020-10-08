@@ -136,6 +136,6 @@ Upload the file to your storage account via your container.
 
 1. Select **Refresh** to ensure you're seeing the latest status updates.
 
-   :::image type="content" source="../media/3-view-replication-status.png" alt-text="Screenshot of the geo-replicaton map that shows the primary and secondary locations available.":::
+   :::image type="content" source="../media/3-view-replication-status.png" alt-text="Screenshot of the geo-replication map that shows the primary and secondary locations available.":::
 
 It'll takes some time for your data to replicate from the primary to the secondary region.
