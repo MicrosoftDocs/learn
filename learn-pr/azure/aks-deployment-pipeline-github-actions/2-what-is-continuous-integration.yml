@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.aks-deployment-pipeline-github-actions.2-concepts
+uid: learn.aks-deployment-pipeline-github-actions.2-what-is-continuous-integration
 metadata:
-  title: Understand basic architectural concepts
+  title: What is continuous integration and deployment
   description: Explore some of the CI/CD concepts you need to consider when you configure your first GitHub action.
-  ms.date: 09/08/2020
+  ms.date: 10/08/2020
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial
   ms.prod: github
-title: Understand basic architectural concepts
+title: What is continuous integration and deployment
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-concepts.md)]
+  [!include[](includes/2-what-is-continuous-integration.md)]
 quiz:
   title: Check your knowledge
   questions:
