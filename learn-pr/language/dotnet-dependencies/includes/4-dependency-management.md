@@ -60,7 +60,7 @@ NuGet also supports using a floating version notation, *, for Major, Minor, Patc
 
 When using a floating version, NuGet resolves the highest version of a package that matches the version pattern, for example 6.0.* gets the highest version of a package that starts with 6.0:
 
-![Choosing version 6.0.1 when a floating version 6.0.* is requested](media/floating-version.png)
+![Choosing version 6.0.1 when a floating version 6.0.* is requested](../media/floating-version.png)
 
 Here are some examples that can configure for major/minor/patch version:
 
