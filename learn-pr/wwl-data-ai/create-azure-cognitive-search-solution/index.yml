@@ -24,7 +24,6 @@ roles:
 - ai-engineer
 - developer
 - solution-architect
-- student
 products:
 - azure-storage
 - vs-code

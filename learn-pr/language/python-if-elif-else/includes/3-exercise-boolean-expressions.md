@@ -67,7 +67,7 @@ False
 True
 True
 ```
-The `bool()` function converted the strings `'True'` and `'False'` to the Boolean values `True` and `False`. When the function is supplied with an empty string, it returns `False`, while any other non-empty string returns `True`.
+The `bool()` function converted the strings `'True'` and `'False'` to the Boolean value `True`. When the function is supplied with an empty string, it returns `False`, while any other non-empty string returns `True`.
 
 
 ### Step 4: Comment out code from the previous step, and then add code that uses the built-in `bool()` function to convert various integer values to Boolean values
