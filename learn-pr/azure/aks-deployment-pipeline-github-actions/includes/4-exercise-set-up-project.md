@@ -1,13 +1,15 @@
 Now that we have all the understanding about what we need to do, let's start by creating our resources and publish our pipeline.
 
 > [!IMPORTANT]
-> You need your own GitHub account to run this exercise. If you don't already have a GitHub account, create a [free account](https://github.com) before you begin.
-
-[!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
+> - You need your own GitHub account to run this exercise. If you don't already have a GitHub account, create a [free account](https://github.com) before you begin.
+>
+> - You need your own Azure subscription to run this exercise and you may incur charges. If you don't already have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 ## Set up the project
 
 1. Fork [this sample repository](https://github.com/MicrosoftDocs/mslearn-aks-deployment-pipeline-github-actions) to your account.
+
+    You're forking the repository so you can create your own GitHub Actions pipeline. This wouldn't be possible if you were using the hosted sample version, because you wouldn't have the correct write access to it.
 
 1. Sign in to Azure Cloud Shell with the account you want to deploy resources into.
 
@@ -17,7 +19,11 @@ Now that we have all the understanding about what we need to do, let's start by 
     > [!IMPORTANT]
     > We'll run all the scripts with Bash, so if you haven't created a Cloud Shell yet, select "Bash" as the running shell.
 
-1. Clone the forked repository by issuing the command `git clone https://github.com/your-username/mslearn-aks-deployment-pipeline-github-actions`. By the end of the execution you should have a new directory called `mslearn-aks-deployment-pipeline-github-actions`.
+1. Clone the forked repository by issuing the following command. By the end of the execution you should have a new directory called `mslearn-aks-deployment-pipeline-github-actions`.
+
+    ```bash
+    git clone https://github.com/{your-username}/mslearn-aks-deployment-pipeline-github-actions
+    ```
 
 1. Enter the newly created directory with `cd mslearn-aks-deployment-pipeline-github-actions`.
 
