@@ -15,4 +15,4 @@ Move forward with your governance journey by following one of the Cloud Adoption
 
 ## Learn more
 
-To learn more about cloud governance, see the overview page for the [CAF Govern methodology](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern?azure-portal=true?). This page will guide you through four steps to develop cloud governance.
+To learn more about cloud governance, see the overview page for the [CAF Govern methodology](https://docs.microsoft.com/azure/cloud-adoption-framework/govern?azure-portal=true?). This page will guide you through four steps to develop cloud governance.
