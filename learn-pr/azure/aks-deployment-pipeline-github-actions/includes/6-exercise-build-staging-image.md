@@ -1,10 +1,10 @@
 We talked about all the concepts behind the pipeline, CI, and Docker. Now it's time to put these concepts into practice.
 
-Let's recap a bit our designed pipeline.
+Let's recap our designed pipeline.
 
 :::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="The designed pipeline":::
 
-Build this pipeline using the actions workflow.
+You'll build this pipeline using GitHub Actions workflow.
 
 ## Build the Action Workflow
 
@@ -18,7 +18,7 @@ Build this pipeline using the actions workflow.
 
     As you can see, the pipeline is just a file within the `.github/workflows` directory in your repository.
 
-    Also, GitHub provides you with the prebuilt components you need to build most of the pipelines. You'll have an example file like this:
+    GitHub provides you with the prebuilt components you need to build most of the pipelines. You'll have an example file like this:
 
     ```yml
     # This is a basic workflow to help you get started with Actions
@@ -76,7 +76,7 @@ Build this pipeline using the actions workflow.
 
     1. Any pull request on the `main` branch
 
-    Let's remove the second part and leave just the `push` tags. The keys should be like this afterwards:
+    Remove the second part and leave just the `push` tags. The keys should be like this afterwards:
 
     ```yml
     name: Build and push the latest build to staging
@@ -86,7 +86,7 @@ Build this pipeline using the actions workflow.
         branches: [ main ]
     ```
 
-    This closes the second trigger in our designed diagram.
+    This closes the second trigger in the designed diagram.
 
 ### Build and push the image
 
@@ -94,7 +94,7 @@ Build this pipeline using the actions workflow.
 
     In this part, you'll address both the build and deploy steps from the diagram.
 
-    GitHub workflows are divided into jobs, and these jobs are divided in steps. Each step can have multiple commands and use multiple actions to be executed.
+    GitHub workflows are divided into jobs, and these jobs are divided into steps. Each step can have multiple commands and use multiple actions to be executed.
 
     The `jobs` key is already set to run on `ubuntu-latest`, which is the environment you want this workflow to run.
 
@@ -110,16 +110,18 @@ Build this pipeline using the actions workflow.
         branches: [ main ]
 
     jobs:
-      build_push:
+      build_push_image:
         runs-on: ubuntu-latest
 
         steps:
           - uses: actions/checkout@v2
     ```
 
-    See that you already have a step using the `checkout` action. This action is responsible for cloning the repository into the job environment. This is the equivalent to the first action in the "Build steps" in the diagram, so this is taken care of.
+    See that you already have a step using the `checkout` action. This action is responsible for cloning the repository into the job environment.
 
-    Add another action to build our Docker image.
+    This is the equivalent to the first action in the "Build steps" in the diagram, so this is taken care of.
+
+    Add another action to build your Docker image.
 
 1. In the right panel, search for "Build and push docker images". Click on the first result published by **Docker**.
 
@@ -139,7 +141,7 @@ Build this pipeline using the actions workflow.
         branches: [ main ]
 
     jobs:
-      build_push:
+      build_push_image:
         runs-on: ubuntu-latest
 
         steps:
@@ -190,6 +192,7 @@ Build this pipeline using the actions workflow.
     This action gives us several options to tweak the usage. You can learn more about each one of them in the [documentation page](https://github.com/docker/build-push-action/tree/releases/v1).
 
 1. In the `name` key, rename the value to "Build and push staging image"
+
 1. You'll only use a handful of the parameters given by this action. Set them and delete the others.
 
     Add the values according to the table below.
@@ -239,7 +242,9 @@ You'll notice that, right after you commit the file, a new build will start on t
 ### Set the secrets
 
 1. Go to the settings tab of the repositories. Scroll down until you find a left menu called "Secrets". Click on it.
+
 1. Click the "New secret" button on the top right
+
 1. Create `ACR_NAME` secret
 
     1. Put `ACR_NAME` in the "Name" field.
@@ -254,6 +259,7 @@ You'll notice that, right after you commit the file, a new build will start on t
 1. Create `ACR_LOGIN` secret
 
     1. Put `ACR_LOGIN` in the "Name" field.
+
     1. If you saved the values presented to you in the end of the set-up script, copy the "ACR Login Username" value. If not, run the following command in the Azure Cloud Shell to obtain the login of the ACR you created earlier.
 
     ```azurecli-interactive
@@ -265,6 +271,7 @@ You'll notice that, right after you commit the file, a new build will start on t
 1. Create `ACR_PASSWORD` secret
 
     1. Put `ACR_PASSWORD` in the "Name" field.
+
     1. If you saved the values presented to you in the end of the set-up script, copy the "ACR Login Username" value. If not, run the following command in the Azure Cloud Shell to obtain the login of the ACR you created earlier.
 
     ```azurecli-interactive
@@ -276,7 +283,9 @@ You'll notice that, right after you commit the file, a new build will start on t
 ### Push the image
 
 1. Go back to the "Actions" tab
+
 1. Click the only execution in the list
+
 1. Click on the "Re-run jobs" in the right-hand side of the screen and then "Re-run all jobs"
 
     :::image type="content" source="../media/6-7-rerun-jobs.png" alt-text="Re-run all jobs":::
