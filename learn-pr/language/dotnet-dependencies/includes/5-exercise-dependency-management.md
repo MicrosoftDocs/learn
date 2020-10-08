@@ -40,7 +40,7 @@ Supports: add, remove, list
 	```
 
 	```output
-	info : PackageReference for package 'Humanizer' version '2.8.26' updated in file 'C:\Users\jamont\Desktop\LearnDependencies\LearnDependencies.csproj'.
+	info : PackageReference for package 'Humanizer' version '2.8.26' updated in file 'C:\Users\jamont\Desktop\ManipulateData\ManipulateData.csproj'.
 	```
 	You can also install a specific version
 
