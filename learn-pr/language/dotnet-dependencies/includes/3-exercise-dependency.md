@@ -36,7 +36,7 @@ The developers at Tailwind Traders realize that they're about to put extensive r
     Hello World
     ```
 
-## Add a NuGet package by ussing the dotnet tool 
+## Add a NuGet package by using the dotnet tool 
 
 1. Open the project in a code editor. If you are using Visual Studio Code, run this command to open the project: 
 
