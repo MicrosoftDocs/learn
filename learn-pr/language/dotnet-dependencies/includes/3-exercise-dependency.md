@@ -66,7 +66,7 @@ The developers at Tailwind Traders realize that they're about to put extensive r
 1. Install the Humanizer library by running this command:
 
     ```bash
-    dotnet add package NodaTime
+    dotnet add package Humanizer --version 2.7.9
     ```
 
 
@@ -74,7 +74,7 @@ The developers at Tailwind Traders realize that they're about to put extensive r
 
     ```xml
     <ItemGroup>
-        <PackageReference Include="Humanizer" Version="2.8.26 />
+        <PackageReference Include="Humanizer" Version="2.7.9 />
     </ItemGroup>
     ```
 
