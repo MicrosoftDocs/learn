@@ -75,7 +75,7 @@ You'll start by the staging pipeline.
 
     1. Add a new `steps` key below the `runs-on` key, just like the first job you created. Then, on the right-hand side of the screen, search for "Helm tool installer" and click on the result that was published by Azure
 
-    :::image type="content" source="../media/10-helm-tool-installer.png" alt-text="Helm installer action":::
+       :::image type="content" source="../media/10-helm-tool-installer.png" alt-text="Helm installer action":::
 
     1. Copy the presented YAML and paste it below the `uses` key, like so
 

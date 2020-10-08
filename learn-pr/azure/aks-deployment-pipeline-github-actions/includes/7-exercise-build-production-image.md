@@ -4,7 +4,7 @@ In the previous exercise, you built the staging workflow for building and publis
 
 You'll build the tagged version using another workflow.
 
-## Build the Action Workflow
+## Build the Action workflow
 
 1. To start building our pipeline, let's go to the fork of the sample repository in the GitHub website. And click on the "Actions" tab.
 

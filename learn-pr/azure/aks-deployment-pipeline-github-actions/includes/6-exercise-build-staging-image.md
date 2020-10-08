@@ -6,7 +6,7 @@ Let's recap our designed pipeline.
 
 You'll build this pipeline using GitHub Actions workflow.
 
-## Build the Action Workflow
+## Build the Action workflow
 
 1. To start building your pipeline, go to the fork of the sample repository in the GitHub website and select the "Actions" tab.
 

@@ -8,7 +8,7 @@ In this module, you'll deploy Kubernetes workloads to an Azure Kubernetes Servic
 
 By the end of this module, you'll be able to:
 
-- Describe a continuos integration (CI) and continuous deployment (CD) process using GitHub Actions
+- Describe a continuous integration (CI) and continuous deployment (CD) process using GitHub Actions
 - Create a deployment pipeline using GitHub Actions and Azure
 - Deploy a cloud-native application to Azure Kubernetes service (AKS) by using GitHub Actions
 
