@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.over-the-moon-ai.2-set-up-azure
 metadata:
-  title: 
-  description: 
-  ms.date: 
+  title: Set up Azure Cognitive Services
+  description: Set up Azure Cognitive Services.
+  ms.date: 10/15/2020
   author: # Your GitHub username (or whomever you'd like to give author attribution to)
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 
-durationInMinutes: 
+title: Set up Azure Cognitive Services
+durationInMinutes: 8
 content: |
   [!include[](includes/2-set-up-azure.md)]

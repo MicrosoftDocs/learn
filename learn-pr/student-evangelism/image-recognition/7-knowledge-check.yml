@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.over-the-moon-ai.7-knowledge-check
 metadata:
-  title: 
-  description: 
-  ms.date: 
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 10/15/2020
   author: # Your GitHub username (or whomever you'd like to give author attribution to)
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 
-durationInMinutes:
+title: Knowledge check
+durationInMinutes: 4
 content: |
 quiz:
   title: Check your knowledge

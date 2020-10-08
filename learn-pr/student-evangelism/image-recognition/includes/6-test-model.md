@@ -32,7 +32,7 @@ Click on the Training button at the top right of the Custom Vision Portal and ch
 
 Now you can test the AI again using images that you haven't used yet in your training set. 
 
-![Screenshot showing the results from testing the second iteration of AI training](../media/bungee-iteration2.png)
+![Screenshot showing the results from testing the second iteration of AI training](../media/bungee-iteration-2.png)
 
 With this second iteration we can see that we have a more confident prediction that one of the objects in the image is Bungee at 62.2%. The AI is not very confident at objects that are not Bungee, since we grouped all other characters in the "Not Bungee" category isntead of creating one for each of the other characters. 
 

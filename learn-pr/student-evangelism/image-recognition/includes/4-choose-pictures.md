@@ -24,7 +24,7 @@ This is the part of the module where it makes sense to jump into a quick aside a
 
 Remember, Fei Fei built a rocket and flew to the moon to try to bring her family closer together.
 
-![Fei Fei sitting at the dinner table with her family during the Moon Festival](../media/FeiFeiFamily.png)
+![Fei Fei sitting at the dinner table with her family during the Moon Festival](../media/fei-fei-family.png)
 
 When you are choosing images, make sure they are representative of what the object is. Avoid bias and be inclusive. Being ethical and inclusive in computing practices is not about needing to solve every possible version of a problem, but rather about appropriately representing what problem you are actually solving. 
 

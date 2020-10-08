@@ -2,13 +2,13 @@
 uid: learn.student-evangelism.over-the-moon-ai.3-what-is-ai
 metadata:
   title: Understand artificial intelligence and Custom Vision
-  description: 
-  ms.date: 
+  description: Understand artificial intelligence and Custom Vision.
+  ms.date: 10/15/2020
   author: # Your GitHub username (or whomever you'd like to give author attribution to)
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Understand artificial intelligence and Custom Vision
-durationInMinutes: 
+durationInMinutes: 5
 content: |
   [!include[](includes/3-what-is-ai.md)]

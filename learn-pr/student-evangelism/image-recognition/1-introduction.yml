@@ -3,12 +3,12 @@ uid: learn.student-evangelism.over-the-moon-ai.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 
+  ms.date: 10/15/2020
   author: # Your GitHub username (or whomever you'd like to give author attribution to)
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction
-durationInMinutes:
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
