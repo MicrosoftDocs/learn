@@ -31,7 +31,7 @@ quiz:
       explanation: "SaaS is a valid cloud computing category."
   - content: "Which of the following statements is true?"
     choices:
-    - content: "With Operating Expenses (CapEx), you are responsible for purchasing and maintaining your computing resources."
+    - content: "With Operating Expenses (OpEx), you are responsible for purchasing and maintaining your computing resources."
       isCorrect: false
       explanation: "With Operating Expenses (OpEx), you are only responsible for the computing resources that you use."
     - content: "With Operating Expenses (OpEx), you are only responsible for the computing resources that you use."
