@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.student-evangelism.moon-sample-collection
+metadata:
+  title: Data’s role in Moon missions - fictional and real
+  description: Like Fei Fei, use data to plan your own mission to the Moon. Ensure your rocket can not only get you there, but also bring you and all your Moon rocks safely back to Earth.
+  ms.date: 10/20/2020
+  author: sguthals
+  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Data’s role in Moon missions - fictional and real
+summary: Like Fei Fei, use data to plan your own mission to the Moon. Ensure your rocket can not only get you there, but also bring you and all your Moon rocks safely back to Earth.
+abstract:  |
+  In this module, you will:
+    - Create a clear representation of data from many sources
+    - Use Python and Pandas to explore data 
+    - Use data cleansing techniques to get a clear representation of data
+    - Hypothesize how much rock sample astronauts might bring back on the Artemis missions
+  Prerequisites: |
+    - [Python installed](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true)
+    - [Visual Studio Code with Python Extension](https://docs.microsoft.com/learn/modules/python-install-vscode/6-exercise-write-execute-first-script?azure-portal=true)
+    - [Discover the role of Python in space exploration](https://docs.microsoft.com/en-us/learn/paths/introduction-python-space-exploration-nasa/)
+iconUrl: /learn/achievements/generic-badge.svg # TODO change
+levels:
+- beginner
+roles:
+- data scientist
+- student
+products:
+- vs-code
+units:
+- ""
+badge:
+  uid: learn.student-evangelism.moon-sample-collection.badge

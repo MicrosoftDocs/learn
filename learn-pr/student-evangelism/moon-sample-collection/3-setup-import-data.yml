@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.moon-sample-collection.3-setup-import-data
+metadata:
+  title: Get the rock samples into Visual Studio Code
+  description: Get the rock samples into Visual Studio Code.
+  ms.date: 10/20/2020
+  author: sguthals # Your GitHub username (or whomever you'd like to give author attribution to)
+  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get the rock samples into Visual Studio Code
+durationInMinutes: 0
+content: |
+  [!include[](includes/3-setup-import-data.md)]

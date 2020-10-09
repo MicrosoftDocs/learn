@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.moon-sample-collection.10-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge
+  ms.date: 10/20/2020
+  author: sguthals # Your GitHub username (or whomever you'd like to give author attribution to)
+  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 0
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Given you have a dataframe called 'samples', what would 'samples.head()' output?"
+    choices:
+    - content: "The top row of the dataframe"
+      isCorrect: false
+      explanation: "While technically true, the 'head()' function returns more than the top row."
+    - content: "Ten random rows from the dataframe"
+      isCorrect: false
+      explanation: "The 'head()' function returns the top rows from a dataframe, not a random set."
+    - content: "The column names of the dataframe"
+      isCorrect: false
+      explanation: "While technically true, the 'head()' function returns more than the top row."
+    - content: "The top five rows of the dataframe"
+      isCorrect: true
+      explanation: "Correct, and if you added a number (e.g. 'head(x)'') it would print the top x rows!"
+  - content: "Pandas Dataframes and Series are two names for the same kind of data type."
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Incorrect. Dataframes represent 2D data (think a table or excel sheet) while Series represent 1D data (think a list)."
+    - content: "False"
+      isCorrect: true
+      explanation: "Correct. Dataframes and Series are different, Dataframes represent 2D data (think a table or excel sheet) while Series represent 1D data (think a list)."
+  - content: "How many samples from the Moon were brought back by the six Apollo missions that landed on the Moon?"
+    choices:
+    - content: "Over 63 lbs / 28 kg"
+      isCorrect: false
+      explanation: "Incorect, across the 2,229 samples there was a lot more returned."
+    - content: "Over 136 lbs / 62 kg"
+      isCorrect: false
+      explanation: "Incorrect, this was the average amount of samples brought back per Apollo mission."
+    - content: "Over 490 lbs / 92 kg"
+      isCorrect: false
+      explanation: "Incorrect, this is how much we estimated the three Artemis missions could bring back in total."
+    - content: "Over 825 lbs / 375 kg"
+      isCorrect: true
+      explanation: "True, across 2,229 samples, over 800lbs (375kg) of sample was returned to Earth."
