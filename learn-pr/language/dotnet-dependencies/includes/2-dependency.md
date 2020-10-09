@@ -45,7 +45,7 @@ Individual developers might use the global registry at [NuGet.org](https://www.n
 
 Packages might be located in many different places. Some of these sources might be publicly available. Some might be restricted and accessible only to employees of a specific company. Here are some places where packages might reside:
 
-- **Registries**. An example of a registry might be a global registry like the NuGet.org registry, GitHub, and Azure DevOps. You can host your own registries that can be either private or public.
+- **Registries**. An example of a registry might be a global registry like the NuGet.org registry. You can host your own registries that can be either private or public. Services such as GitHub and Azure DevOps make private registries available.
 - **Files**. You can install a package from a local folder. Installation from a package is common when you're trying to develop your own .NET libraries and want to test the package locally or for some reason don't want to use a registry.
 
 ![Relationship between package creators, package hosts, and package consumers](../media/nuget-roles.png)
@@ -96,7 +96,7 @@ dotnet list package --include-transitive
 ```
 
 
-Including transitives will allow you to see all packages that are included in your installed packages and the  dependencies that they consist of. If you run `dotnet list package --include-transitiv`, you might see this output:
+Including transitives will allow you to see all packages that are included in your installed packages and the  dependencies that they consist of. If you run `dotnet list package --include-transitive`, you might see this output:
 
 ```output
 Project 'ManipulateData' has the following package references
