@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'In which log would you find information about the multi-factor authentication method that is being used?'
+  - content: 'You start out by talking to individual business units about monitoring wants and needs at the start of your assignment. You determine each business unit only needs to query logs generated from their resources. Which access model would you select for your Log Analytics deployment?'
     choices:
-    - content: Audit log files
+    - content: Workspace-context
       isCorrect: false
-      explanation: The audit log file provides a history of every task that's done in your tenant.
-    - content: Sign-in log files
+      explanation: Provides access to all logs in a workspace where the permission is assigned.
+    - content: Resource-context
       isCorrect: true
-      explanation: The sign-in log file contains information about multi-factor authentication.
-    - content: Risky sign-ins log
+      explanation: Provides access to view logs for resources in all tables you have access to. Queries are scoped to only data associated with that resource.
+    - content: Table level RBAC
       isCorrect: false
-      explanation: This log holds data about user accounts where the user's sign-in behavior is inconsistent with previous sign-in attempts.
-  - content: 'In which log would you find information about identity protection?'
+      explanation: Provides a mechanism to define more granular data control inside a Log Analytics workspace in conjunction with other access mode permissions.
+  - content: 'What does VMInsights provide?'
     choices:
-    - content: Audit log
+    - content: Near real time alerts.
+      isCorrect: false
+      explanation: You receive near real time alerts from Azure Metrics.
+    - content: Access to CRUD events.
+      isCorrect: false
+      explanation: CRUD events are captured inside Azure Active Directory Activity Log.
+    - content: Processes log data without exposing the user to underlying queries.
       isCorrect: true
-      explanation: You can use the services column to obtain information about identity protection.
-    - content: Sign-in log files
-      isCorrect: false
-      explanation: The sign-in log file tracks details about user authentication, but it doesn't contain information about identity protection.
-    - content: Risky sign-in log
-      isCorrect: false
-      explanation: The risky sign-in log file holds information about users whose behavior has been flagged as inconsistent.
+      explanation: Allows deeper performance analysis of a virtual machine without query building.
