@@ -30,7 +30,7 @@ products:
 - vs-code
 modules:
 - learn.student-evangelism.predict-meteor-showers-using-python
-- learn.student-evangelism.plan-moon-mission-using-python-pandas
+- learn.student-evangelism.moon-sample-collection
 - learn.student-evangelism.train-custom-vision-ai
 trophy:
   uid: learn.explore-space-rocks-using-python.trophy
