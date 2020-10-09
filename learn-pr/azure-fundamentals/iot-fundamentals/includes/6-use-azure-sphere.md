@@ -16,4 +16,4 @@ So, given the responses to the decision criteria, the IoT engineering firm will 
 
 ## Why not choose IoT Hub?
 
-By using IoT Central, Tailwind Traders would actually be using IoT Hub behind the scenes as well.
+By using IoT Central, Tailwind Traders would actually be using Azure IoT Hub behind the scenes as well.
