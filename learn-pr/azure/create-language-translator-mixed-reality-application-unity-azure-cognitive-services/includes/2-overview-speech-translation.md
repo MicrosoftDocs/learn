@@ -1,6 +1,6 @@
-There are various tools available to foster collaboration across a global workforce. Although most tools are available in a 2D platform, collaboration across immersive environments provides the feeling of existing in the same room without the need to occupy the same physical space. 
+Various tools are available to foster collaboration across a global workforce. Although most tools are available in a 2D platform, collaboration across immersive environments provides the feeling of existing in the same room without the need to occupy the same physical space. 
 
-However, collaboration across a global workforce presents its challenges when participants don't share a common language. Rather than conform to the use of a single language, providing the ability to communicate in a person's native language helps to create an inclusive communicative work environment.  
+However, collaboration across a global workforce presents its challenges when participants don't share a common language. Rather than conform to the use of a single language, providing the ability to communicate in a person's native language helps to create an inclusive and communicative work environment.  
 
 To accommodate differences in language, the integration of speech translation in immersive collaboration tools has the potential to ensure that participants can communicate and understand one another in their preferred language. For example, a participant can speak in French to their Japanese colleague. In real time, the output is translated as text through a UI in kanji (Japanese characters).
 

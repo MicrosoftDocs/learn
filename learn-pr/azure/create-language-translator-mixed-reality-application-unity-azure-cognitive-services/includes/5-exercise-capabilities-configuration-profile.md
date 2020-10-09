@@ -13,12 +13,12 @@ Here, you'll configure a Unity project to use the Azure Cognitive Services Speec
     
    :::image type="content" source="../media/add-sdk.png" alt-text="Screenshot of the X R settings. The Virtual Reality Supported box is highlighted and selected. The plus icon to add a new S D K is highlighted and selected.":::
 1. Optimize **XR Settings** as follows:
-    - Set Windows Mixed Reality **Depth Format** to **16-bit depth**
+    - Set Windows Mixed Reality **Depth Format** to **16-bit depth**.
     - Select the Windows Mixed Reality **Enable Depth Sharing** check box.
-    - Set **Stereo Rendering Mode** to **Single Pass Instanced**
+    - Set **Stereo Rendering Mode** to **Single Pass Instanced**.
      
     :::image type="content" source="../media/optimize-xr-settings.png" alt-text="Screenshot of the X R settings. The Virtual Reality S D K section and Stereo Rendering Mode section are highlighted. Depth Format is set to 16-bit depth. The Enable Depth Sharing box is selected. Stereo Rendering Mode is set to Single Pass Instanced.":::
-1. Go to **Window** > **TextMeshPro** and select **Import TMP Essential Resources** to import all of the TMP Essential Resources assets.
+1. Go to **Windows** > **TextMeshPro** and select **Import TMP Essential Resources** to import all of the TMP Essential Resources assets.
 1. Download **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.X.X.unitypackage** from the [MRTK release page](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases?azure-portal=true).
 1. Go to **Assets** > **Import Package** > **Custom Package** and import all the assets within the **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.X.X.unitypackage** package. After the import is complete, the Mixed Reality Toolkit (MRTK) is added to the top navigation menu.
 1. The **MRTK Project Configurator** window might open after the Mixed Reality Toolkit is imported into the project. If not, in the top navigation menu, go to **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project**. In the **Audio spatializer** drop-down list, select **MS HRTF Spatializer**.

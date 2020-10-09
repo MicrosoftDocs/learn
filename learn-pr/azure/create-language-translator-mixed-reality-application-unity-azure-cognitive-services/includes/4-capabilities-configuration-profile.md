@@ -23,7 +23,7 @@ To enable APIs or resources (such as a microphone) to access your app, you must 
 |Microphone     |   Accesses the microphone's audio feed, which allows the app to record audio from a connected microphone.      |
 
 > [!TIP]
-> If you intend to deploy the app to a mixed-reality device, Spatial Perception should be enabled in the **Capabilities** settings. Spatial Perception provides access to spatial mapping data. This gives mixed-reality apps information about surfaces in application-specified regions of space near the user.
+> If you intend to deploy the app to a mixed-reality device, enable Spatial Perception in the **Capabilities** settings. Spatial Perception provides access to spatial mapping data. This gives mixed-reality apps information about surfaces in application-specified regions of space near the user.
 
 To use a mixed-reality app with speech translation integration, the user must use a device that has a microphone and is connected to the internet. For some devices, the user must give the app permission to use their microphone.
 

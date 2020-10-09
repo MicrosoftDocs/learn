@@ -4,7 +4,7 @@ Here, you'll add Mixed Reality Toolkit (MRTK) UI elements to a Unity scene. You'
 
 ## Create UI
 
-You create a parent object called **TranslationUI** to store the UI elements inside the object as its children. Storing the UI elements as the children of **TranslationUI** helps keep the project hierarchy organized. It also enables the UI elements to inherit properties from the parent such as the transform.
+You create a parent object called **TranslationUI** to store the UI elements inside the object as its children. Storing the UI elements as the children of **TranslationUI** helps keep the project hierarchy organized. It also enables the UI elements to inherit properties from the parent, such as the transform.
 
 The UI consists of a quad, which serves as a flat surface for the text. Displayed on top of the quad is text. The top portion of the quad contains the recognized text, and the bottom displays the translated speech. The UI text elements are similar in setup. After you create and configure one text element, you can duplicate it to save time in creating the others.
 
@@ -240,7 +240,7 @@ The UI consists of a quad, which serves as a flat surface for the text. Displaye
 
     :::image type="content" source="../media/translation-script-ui-elements.png" alt-text="Screenshot of the translation script properties. The recognized text, translated text, and mic button properties are highlighted.":::
 
-1. With the **Translation UI** object still selected, in the **Inspector** window, enter the **Subscription Key** and **Location** (Speech Service region) information created with the Azure Speech resource.
+1. With the **Translation UI** object still selected, in the **Inspector** window, enter the **Speech Service Subscription Key** and **Speech Service Region** information created with the Azure Speech resource.
 
     :::image type="content" source="../media/translation-script-azure-credentials.png" alt-text="Screenshot of the translation script properties. The subscription key and region properties for the Speech service are highlighted.":::
 
