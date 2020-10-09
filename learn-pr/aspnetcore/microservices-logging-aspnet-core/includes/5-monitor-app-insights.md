@@ -96,6 +96,8 @@ The application map provides one way of exploring captured telemetry. You can al
 
 1. In the **Filter** panel that appears, enter *Tele* in the **Properties** text box. Select the *trace* box, and select the **Done** button.
 
+    :::image type="content" source="../media/5-monitor-app-insights/properties-filter.png" alt-text="Properties filter text box" border="true" lightbox="../media/5-monitor-app-insights/properties-filter.png":::
+
     The *webshoppingagg* search results page refreshes to only show *TRACE* events:
 
     :::image type="content" source="../media/5-monitor-app-insights/givemefreestuff-trace-search-results.png" alt-text="TRACE event search results matching the term 'GIVEMEFREESTUFF'" border="true" lightbox="../media/5-monitor-app-insights/givemefreestuff-trace-search-results.png":::
