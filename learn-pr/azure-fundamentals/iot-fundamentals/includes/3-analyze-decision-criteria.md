@@ -8,7 +8,7 @@ As we mentioned in the previous unit, Azure Sphere ensures a secure channel of c
 
 ## Do I need a dashboard for reporting and management?
 
-Your next decision will be the level of services you require from your IoT solution.  If you merely want to connect to your remote devices to receive telemetry and occasionally push updates, and you don't need any reporting capabilities, you might prefer to implement IoT Hub by itself.  Your programmers can still create a customized set of management tools and reports by using the IoT Hub RESTful API.
+Your next decision will be the level of services you require from your IoT solution.  If you merely want to connect to your remote devices to receive telemetry and occasionally push updates, and you don't need any reporting capabilities, you might prefer to implement Azure IoT Hub by itself.  Your programmers can still create a customized set of management tools and reports by using the IoT Hub RESTful API.
 
 However, if you want a pre-built customizable user interface with which you can view and control your devices remotely, you might prefer to start with IoT Central. With this solution, you can control a single device or all devices at once, and you can set up alerts for certain conditions, such as a device failure. 
 
