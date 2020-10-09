@@ -24,13 +24,13 @@ quiz:
     - content: 'Azure Private DNS zones'
       isCorrect: false
       explanation: 'Private DNS zones are not a universal recommendation.'
-    - content: 'DDoS Standard'
+    - content: 'Azure DDoS Standard'
       isCorrect: true
       explanation: 'DDoS Standard provides SLA-backed DDoS protection with log data.'
 
   - content: "Contoso needs multiple 10-Gbps circuits in a single peering location. Which of the following designs should the company consider?"
     choices:
-    - content: 'Azure VPN'
+    - content: 'VPN'
       isCorrect: false
       explanation: 'A single VPN tunnel does not reach the required throughput.'
     - content: 'Colocate its servers inside Azure datacenters'

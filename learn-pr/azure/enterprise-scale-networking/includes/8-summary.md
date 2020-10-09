@@ -3,7 +3,7 @@ To build highly resilient, enterprise-grade applications on Azure, a well-design
 
 ## Learn more
 
-To Learn more about networking design principles for enterprise-scale architecture, visit the following articles.
+To Learn more about networking design principles for enterprise-scale architecture, see the following articles.
 
 ### Landing zone
 

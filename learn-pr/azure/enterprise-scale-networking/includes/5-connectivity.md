@@ -23,12 +23,12 @@ When you're using Azure Firewall, use Firewall Manager with Azure Virtual WAN to
 
 :::image type="content" source="../media/5-firewall-overview.png" alt-text="Diagram that shows a basic Azure Firewall implementation." lightbox="../media/5-firewall-overview-large.png":::
 
-When you're using Azure Front Door and Azure Application Gateway to protect HTTP/S apps, use WAF policies in Azure Front Door and lock down Azure Application Gateway to receive traffic only from Azure Front Door. Use Azure DDoS Protection Standard protection plans to help protect all public endpoints hosted within your virtual networks. DDoS Protection Standard provides SLA-backed distributed denial of service (DDoS) protection and log data. 
+When you're using Azure Front Door and Azure Application Gateway to help protect HTTP/S apps, use WAF policies in Azure Front Door and lock down Azure Application Gateway to receive traffic only from Azure Front Door. Use Azure DDoS Protection Standard protection plans to help protect all public endpoints hosted within your virtual networks. DDoS Protection Standard provides SLA-backed distributed denial of service (DDoS) protection and log data. 
 
 Also, use Azure Firewall or a network virtual appliance from a partner to control the IP addresses that virtual machines use to access the internet. Don't replicate on-premises perimeter network concepts and architectures into Azure. Similar security capabilities are available in Azure, but the implementation and architecture must be adapted to the cloud. This is a common architecture mistake that lowers performance and resiliency. 
 
 ## Connectivity to PaaS services
 
-Azure Private Link provides dedicated access by using private IP addresses to Azure PaaS instances, or custom services behind Azure Load Balancer Standard. Virtual network injection provides dedicated private deployments for supported services. With virtual network injection, management plane traffic flows through public IP addresses. Private Link is the preferred solution to secure PaaS services.
+Azure Private Link provides dedicated access by using private IP addresses to Azure PaaS instances, or custom services behind Azure Load Balancer Standard. Virtual network injection provides dedicated private deployments for supported services. With virtual network injection, management plane traffic flows through public IP addresses. Private Link is the preferred solution to help secure PaaS services.
 
 :::image type="content" source="../media/5-private-link.png" alt-text="Diagram of how Private Link connects on-premises to private endpoints over a virtual network." lightbox="../media/5-private-link-large.png":::

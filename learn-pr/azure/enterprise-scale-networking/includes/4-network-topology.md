@@ -6,7 +6,7 @@ For enterprise scale, we recommend two approaches for network topologies in Azur
 
 Azure Virtual WAN is a Microsoft-managed solution that provides global transit connectivity by default. Virtual WAN hubs eliminate the need to manually configure network connectivity. Virtual WAN also offers communication between on-premises locations by using the Microsoft network, Azure ExpressRoute, and VPN. 
 
-Virtual WAN simplifies end-to-end network connectivity in Azure and cross-premises by creating a hub-and-spoke network architecture. The architecture spans multiple Azure regions and on-premises locations (any-to-any connectivity) out of the box. A design consideration for any networking in Azure keeps in mind the principle that Azure-to-Azure traffic should always stay in Azure.
+Virtual WAN simplifies end-to-end network connectivity in Azure and cross-premises by creating a hub-and-spoke network architecture. The architecture spans multiple Azure regions and on-premises locations (any-to-any connectivity) out of the box. A design consideration for any networking in Azure is to keep in mind the principle that Azure-to-Azure traffic should always stay in Azure.
 
 :::image type="content" source="../media/4-virtual-wan-topology.png" alt-text="Diagram that illustrates a Virtual WAN network topology." lightbox="../media/4-virtual-wan-topology-large.png":::
 

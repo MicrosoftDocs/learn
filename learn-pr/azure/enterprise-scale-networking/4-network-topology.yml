@@ -24,10 +24,10 @@ quiz:
     - content: 'Implement Virtual WAN with secured hubs (Azure Firewall) in each of the six Azure regions.'
       isCorrect: true
       explanation: 'Virtual WAN is the preferred enterprise solution over a hub-and-spoke network, and Azure Firewall will meet the firewall requirement.'
-    - content: 'Use only one very large virtual network in each region. Deploy Azure Firewall into that virtual network and all services for that region.'
+    - content: 'Use only one large virtual network in each region. Deploy Azure Firewall into that virtual network and all services for that region.'
       isCorrect: false
       explanation: 'This will technically work but is too expensive and complex.'
-    - content: 'Deploy Virtual WAN'
+    - content: 'Deploy Virtual WAN.'
       isCorrect: false
       explanation: 'Virtual WAN is part of the solution but misses the firewall requirement.'
 
@@ -39,7 +39,7 @@ quiz:
     - content: 'Implement Virtual WAN with secured hubs (Azure Firewall) in each of the six Azure regions.'
       isCorrect: false
       explanation: 'A hub-and-spoke network allows for more than 2,000 VMs per region, which is a current limitation of Virtual WAN.'
-    - content: 'Use only one very large virtual network in each region. Deploy Azure Firewall into that virtual network and all services for that region.'
+    - content: 'Use only one large virtual network in each region. Deploy Azure Firewall into that virtual network and all services for that region.'
       isCorrect: false
       explanation: 'This will technically work but is too expensive and complex.'
     - content: 'Deploy Virtual WAN.'
