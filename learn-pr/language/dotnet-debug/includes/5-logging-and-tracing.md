@@ -12,7 +12,7 @@ This simple technique is surprisingly powerful. It can be used in situations whe
 
 ## Writing information to output windows
 
-Up to this point we have been using the console to display information to the end user of the application. There are other types of applications that are built with .NET that have user interfaces such as mobile, web, and desktop apps and there is no visible console. In these applications `System.Console` is used to log messages "behind the scenes". These message may show up in an output windows in Visual Studio or Visual Studio Code. They also may be output to a system log such as Android's `logcat`. This means that great consideration should be taken when using `System.Console.WriteLine` in a non-console application.
+Up to this point we have been using the console to display information to the end user of the application. There are other types of applications that are built with .NET that have user interfaces such as mobile, web, and desktop apps and there is no visible console. In these applications `System.Console` is used to log messages "behind the scenes". These messages may show up in an output window in Visual Studio or Visual Studio Code. They also may be output to a system log such as Android's `logcat`. This means that great consideration should be taken when using `System.Console.WriteLine` in a non-console application.
 
 This is where `System.Diagnostics.Debug` and `System.Diagnostics.Trace` can be used in addition to `System.Console`. Both `Debug` and `Trace` are part of `System.Diagnostics` and will only write to logs when an appropriate listener is attached.
 
@@ -54,9 +54,9 @@ Debug - This is a full line.
 This is another full ine.
 ```
 
-## Defining TRACE & DEBUG Constancts
+## Defining TRACE & DEBUG Constants
 
-By default when an application is running under debug the `DEBUG` constant is defined. This can be controled by adding a `DefineConstants` entry in the project file in a property group. Here is an example of turning on `TRACE` for both `Debug` and `Release` configurations in addition to `DEBUG` for `Debug` configurations.
+By default when an application is running under debug the `DEBUG` constant is defined. This can be controlled by adding a `DefineConstants` entry in the project file in a property group. Here is an example of turning on `TRACE` for both `Debug` and `Release` configurations in addition to `DEBUG` for `Debug` configurations.
 
 ```xml
 <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -80,7 +80,7 @@ if(count == 0)
 }
 ```
 
-It could be re-written in a single line of code:
+It could be rewritten in a single line of code:
 
 ```csharp
 Debug.WriteLineIf(count == 0, "The count is 0 and this may cause an exception.");
