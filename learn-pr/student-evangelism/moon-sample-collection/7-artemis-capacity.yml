@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Predict Artemis sample capacity
-durationInMinutes: 0
+durationInMinutes: 2
 content: |
   [!include[](includes/7-artemis-capacity.md)]

@@ -24,11 +24,21 @@ iconUrl: /learn/achievements/generic-badge.svg # TODO change
 levels:
 - beginner
 roles:
-- data scientist
+- data-scientist
 - student
 products:
 - vs-code
 units:
-- ""
+- learn.student-evangelism.moon-sample-collection.1-introduction
+- learn.student-evangelism.moon-sample-collection.2-rock-samples
+- learn.student-evangelism.moon-sample-collection.3-setup-import-data
+- learn.student-evangelism.moon-sample-collection.4-setup-cleanse.data
+- learn.student-evangelism.moon-sample-collection.5-add-modules
+- learn.student-evangelism.moon-sample-collection.6-understand-modules
+- learn.student-evangelism.moon-sample-collection.7-artemis-capacity
+- learn.student-evangelism.moon-sample-collection.8-prioritize-needed-rocks
+- learn.student-evangelism.moon-sample-collection.9-develop-recommendation
+- learn.student-evangelism.moon-sample-collection.10-knowledge-check
+- learn.student-evangelism.moon-sample-collection.11-summary
 badge:
   uid: learn.student-evangelism.moon-sample-collection.badge

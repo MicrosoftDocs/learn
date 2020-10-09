@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Develop a recommendation of Moon rock samples
-durationInMinutes: 0
+durationInMinutes: 2
 content: |
   [!include[](includes/9-develop-recommendation.md)]

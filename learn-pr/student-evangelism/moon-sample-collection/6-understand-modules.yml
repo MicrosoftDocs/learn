@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Understanding the data in the Missions Dataframe
-durationInMinutes: 0
+durationInMinutes: 2
 content: |
   [!include[](includes/6-understand-modules.md)]

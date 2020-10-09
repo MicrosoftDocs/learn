@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Get the rock samples into Visual Studio Code
-durationInMinutes: 0
+durationInMinutes: 2
 content: |
   [!include[](includes/3-setup-import-data.md)]

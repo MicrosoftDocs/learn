@@ -1,4 +1,4 @@
-![Moon surface from the Over the Moon film](..\media\MoonSurface.png)
+![Moon surface from the Over the Moon film](..\media\moon-surface.png)
 
 Moon rocks are a huge part of the scientific discovery and understanding of our universe and planet. They can tell us about how planets and moons were formed and guide us as we prepare for further space exploration. 
 
