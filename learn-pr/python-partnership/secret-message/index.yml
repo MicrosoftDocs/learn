@@ -38,6 +38,6 @@ units:
 - learn.python-partnership.secret-message.ceasar-cipher-full-word
 - learn.python-partnership.secret-message.test-decoder
 - learn.python-partnership.secret-message.knowledge-check
-- learn.python-partnership.secret-messagesummary
+- learn.python-partnership.secret-message.summary
 badge:
   uid: learn.python-partnership.secret-message.badge
