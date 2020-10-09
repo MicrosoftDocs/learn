@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.student-evangelism.over-the-moon-ai.image-recognition
+uid: learn.student-evangelism.image-recognition
 metadata:
   title: # Add your desired module title. All titles must be sentence-case.
   description: # Add a short description for your module for search engines.
@@ -27,13 +27,13 @@ roles:
 products:
 - ""
 units:
-- learn.student-evangelism.over-the-moon-ai.image-recognition.1-introduction
-- learn.student-evangelism.over-the-moon-ai.image-recognition.2-set-up-azure
-- learn.student-evangelism.over-the-moon-ai.image-recognition.3-what-is-ai
-- learn.student-evangelism.over-the-moon-ai.image-recognition.4-choose-pictures
-- learn.student-evangelism.over-the-moon-ai.image-recognition.5-train-model
-- learn.student-evangelism.over-the-moon-ai.image-recognition.6-test-model
-- learn.student-evangelism.over-the-moon-ai.image-recognition.7-knowledge-check
-- learn.student-evangelism.over-the-moon-ai.image-recognition.8-summary
+- learn.student-evangelism.image-recognition.1-introduction
+- learn.student-evangelism.image-recognition.2-set-up-azure
+- learn.student-evangelism.image-recognition.3-what-is-ai
+- learn.student-evangelism.image-recognition.4-choose-pictures
+- learn.student-evangelism.image-recognition.5-train-model
+- learn.student-evangelism.image-recognition.6-test-model
+- learn.student-evangelism.image-recognition.7-knowledge-check
+- learn.student-evangelism.image-recognition.8-summary
 badge:
-  uid: learn.student-evangelism.over-the-moon-ai.image-recognition.badge
+  uid: learn.student-evangelism.image-recognition.badge
