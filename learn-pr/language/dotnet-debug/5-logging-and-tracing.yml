@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.dotnet-debug.9-logging-and-tracing
+uid: learn.dotnet-debug.5-logging-and-tracing
 title: Summary
 metadata:
   title: Summary
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/9-logging-and-tracing.md)]
+  [!include[](includes/5-logging-and-tracing.md)]
