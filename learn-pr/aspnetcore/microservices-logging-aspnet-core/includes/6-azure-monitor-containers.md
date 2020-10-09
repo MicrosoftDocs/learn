@@ -1,5 +1,3 @@
-Having a general view of your cluster topology and state, and being able to drill into the details when needed, is a key feature to ensure your app supports the business in the best possible way.
-
 In this exercise, you'll explore a cluster-level monitoring solution using Azure Monitor for containers. This monitoring solution, along with Application Insights, focuses on more application-level information. The solution gives you a more complete view of your app and its operational context.
 
 In this exercise, you will:
@@ -11,6 +9,8 @@ In this exercise, you will:
 
 ## Enable Azure Monitor for containers
 
+Azure Monitor for containers helps you understand the performance and health of your AKS cluster. For example, you can view processor and memory usage of containers running on a specific node.
+
 Run the following script from the *deploy/k8s* directory:
 
 ```azurecli
@@ -21,23 +21,25 @@ az aks enable-addons \
     --query provisioningState
 ```
 
-The preceding script enables the monitor add-on for your AKS cluster, using the environment variables created by the AKS creation script. A variation of the following output appears:
+The preceding script may take a couple minutes to finish. It enables the monitor add-on for your AKS cluster, using the environment variables created by the AKS creation script. A variation of the following output appears:
 
 ```console
 AAD role propagation done[############################################]  100.0000%"Succeeded"
 ```
 
-The script may take a couple of minutes to finish. You can monitor the cluster by navigating to the AKS resource in the Azure portal and then clicking the **Insights** option on the sidebar, under the **Monitoring** section:
+You can monitor the cluster by navigating to the AKS resource in the Azure portal and then clicking the **Insights** option on the sidebar, under the **Monitoring** section:
 
 :::image type="content" source="../media/aks-monitoring-insights.png" alt-text="AKS monitoring overview on Azure portal, showing CPU, memory utilization, and node & pod count" border="true" lightbox="../media/aks-monitoring-insights.png":::
 
-Besides the general cluster dashboard, you can also explore any tab to view more details for the cluster, as shown in the following image:
+Besides the general cluster dashboard, you can also explore any tab to view more cluster details, as shown in the following image:
 
 :::image type="content" source="../media/media-aks-monitoring-containers.png" alt-text="AKS monitoring container details for the cluster" border="true" lightbox="../media/media-aks-monitoring-containers.png":::
 
 ## Create a metric for the Prometheus endpoint
 
-For this exercise, you'll implement a counter metric for the request count on the catalog service. Complete the following steps:
+Azure Monitor for containers can be integrated with Prometheus to view app and workload metrics. The metrics are collected from nodes and Kubernetes using Kusto queries to create custom alerts and dashboards.
+
+Complete the following steps to implement a counter metric for the request count on the catalog service:
 
 1. Run the following command to install the Prometheus NuGet package in the catalog service project:
 
@@ -76,7 +78,7 @@ For this exercise, you'll implement a counter metric for the request count on th
 
         The preceding code adds the metric server middleware to the catalog service's request pipeline. The Prometheus metrics are made available at the default `/metrics` endpoint.
 
-    1. Uncomment the `//using Prometheus;` line at the top of the file.
+    1. Uncomment the `//using Prometheus;` line at the top of the file. Save your changes.
 
         The preceding code resolves the calls to `Metrics.CreateCounter` and `UseMetricServer`.
 
@@ -96,23 +98,23 @@ For this exercise, you'll implement a counter metric for the request count on th
     deploy/k8s/build-to-acr.sh --services catalog-api
     ```
 
-    The script starts an ACR quick task. A variation of the following line confirms that the catalog Docker image was pushed to ACR:
+    The script starts an ACR quick task. A variation of the following line confirms that the catalog service's Docker image was pushed to ACR:
 
     ```console
     2020/09/30 20:51:57 Successfully pushed image: eshoplearn20200929194132362.azurecr.io/catalog.api:linux-latest
     ```
 
-## Reconfigure and redeploy the updated application to AKS
+## Reconfigure and deploy the updated app to AKS
 
-The Docker image in ACR has been updated. A configuration change to the Helm chart is required before the service is redeployed.
+The Docker image in ACR has been updated. A configuration change to the Helm chart is required before the service is redeployed. Complete the following steps:
 
-1. In *deploy/k8s/helm-simple/catalog/templates/deployment.yaml*, uncomment the metadata `annotations` block.
+1. In *deploy/k8s/helm-simple/catalog/templates/deployment.yaml*, uncomment the metadata `annotations` block. Save your changes.
 
     After the change, your file will resemble the following YAML snippet:
 
     :::code language="yaml" source="../code/deploy/k8s/helm-simple/catalog/templates/deployment.yaml" highlight="15-18":::
 
-    The preceding change configures the catalog service metadata to indicate that Azure Monitor for Containers should scrape Prometheus metrics from the `/metrics` path on port 80.
+    The preceding change configures the catalog service metadata to indicate that Azure Monitor for containers should scrape Prometheus metrics from the `/metrics` path on port 80.
 
 1. Deploy the updated catalog service from ACR by running the following script:
 
@@ -127,13 +129,13 @@ The Docker image in ACR has been updated. A configuration change to the Helm cha
     catalog-ff5d8cbfc-69gxw           0/1     ContainerCreating   0          3s
     ```
 
-## Enable Prometheus metrics scraping for Azure Monitor for Containers
+## Enable Prometheus metrics scraping for Azure Monitor for containers
 
-Before Azure Monitor for Containers can scrape Prometheus metrics from the catalog service, the Prometheus scraping must be enabled in the AKS cluster. The [Azure Monitor Prometheus scraping configuration](/azure/azure-monitor/insights/container-insights-prometheus-integration) provides a Kubernetes ConfigMap YAML template. It enables users to apply Kubernetes configuration changes to AKS using the `kubectl` command.
+Before Azure Monitor for containers can scrape Prometheus metrics from the catalog service, the Prometheus scraping must be enabled in the AKS cluster. The [Azure Monitor Prometheus scraping configuration](/azure/azure-monitor/insights/container-insights-prometheus-integration) provides a Kubernetes ConfigMap YAML template. It enables users to apply Kubernetes configuration changes to AKS using the `kubectl` command.
 
 For your convenience, the ConfigMap YAML template has been provided as *deploy/k8s/azure-monitor/container-azm-ms-agentconfig.yaml*.
 
-1. Open the template in the Cloud Shell editor and set the value of the `monitor_kubernetes_pods` to `true`, as shown.
+1. Open the template in the Cloud Shell editor and set the value of the `monitor_kubernetes_pods` to `true`, as shown. Save your changes.
 
     ```yaml
     monitor_kubernetes_pods = true
@@ -145,7 +147,7 @@ For your convenience, the ConfigMap YAML template has been provided as *deploy/k
     kubectl apply -f deploy/k8s/azure-monitor/container-azm-ms-agentconfig.yaml
     ```
   
-    The preceding applies the ConfigMap to your AKS cluster. The AKS cluster will now scrape Prometheus metrics from any service that configured with the Prometheus annotations.
+    The preceding applies the ConfigMap to your AKS cluster. The AKS cluster will now scrape Prometheus metrics from any service configured with the Prometheus annotations.
 
 ## Create some log entries
 
