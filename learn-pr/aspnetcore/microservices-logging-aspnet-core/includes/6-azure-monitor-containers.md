@@ -170,7 +170,7 @@ Use the app to generate some log data to examine. Open another browser tab if ne
 
 ## View logs
 
-1. If needed, ign into the [Azure portal](https://portal.azure.com/?azure-portal=true) using the same subscription used in previous units.
+1. If needed, sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) using the same subscription used in previous units.
 1. Use the search box to find and open the Kubernetes service resource named *eshop-learn-aks*.
 1. Select the **Logs** option in the **Monitoring** section on the left side panel.
 1. Paste the following Kusto query into the query area:
@@ -181,6 +181,6 @@ Use the app to generate some log data to examine. Open another browser tab if ne
     | where parse_json(Tags).endpoint == "/catalog-api/api/v1/catalog/items"
     | order by TimeGenerated desc
     ```
-    
+
 1. Select the **Run** button.
 
