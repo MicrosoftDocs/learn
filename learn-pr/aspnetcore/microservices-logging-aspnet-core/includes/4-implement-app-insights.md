@@ -6,6 +6,14 @@ You will:
 - Enable logging to Application Insights.
 - Deploy the updated and reconfigured microservices.
 
+> [!NOTE]
+> If your Cloud Shell session disconnects due to inactivity, reconnect and run the following command to return to this directory and open the Cloud Shell editor:
+>
+> ```bash
+> cd ~/clouddrive/aspnet-learn/src/ && \
+>   code .
+> ```
+
 ## Create the Application Insights resources
 
 1. Add the Application Insights extension to Azure CLI by running this command:

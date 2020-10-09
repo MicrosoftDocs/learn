@@ -63,7 +63,7 @@ In the next image you can see an example of the handling of an integration event
 In the image above you can see:
 
 1. When the `UserCheckoutAcceptedIntegrationEvent` is being handled.
-2. A database transaction begins
+2. A database transaction begins.
 3. The order is created.
 4. An integration event is enqueued for publishing later.
 5. The database transaction is committed.
@@ -81,7 +81,7 @@ The key-value pairs are then the base to query the events, as was shown in the s
 
 #### Get the logger
 
-The logging infrastructure of .NET supports structured logging when used with a `LoggerFactory`, such as **Serilog**, that supports it, and the simplest way to use is by requesting an `ILogger<T>` through Dependency Injection (DI) in the class constructor as shown here:
+The logging infrastructure of .NET supports structured logging when used with a `LoggerFactory`, such as Serilog, that supports it, and the simplest way to use is by requesting an `ILogger<T>` through Dependency Injection (DI) in the class constructor as shown here:
 
 ```csharp
 public class WorkerClass

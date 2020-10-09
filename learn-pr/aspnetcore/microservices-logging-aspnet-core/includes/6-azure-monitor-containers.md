@@ -9,9 +9,9 @@ In this exercise, you will:
 
 ## Enable Azure Monitor for containers
 
-Azure Monitor for containers helps you understand the performance and health of your AKS cluster. For example, you can view processor and memory usage of containers running on a specific node.
+Azure Monitor for containers helps you understand the performance and health of your AKS cluster. For example, you can view the memory consumption of containers running on a specific node.
 
-Run the following script from the *deploy/k8s* directory:
+Run the following script:
 
 ```azurecli
 az aks enable-addons \
@@ -27,17 +27,19 @@ The preceding script may take a couple minutes to finish. It enables the monitor
 AAD role propagation done[############################################]  100.0000%"Succeeded"
 ```
 
-You can monitor the cluster by navigating to the AKS resource in the Azure portal and then clicking the **Insights** option on the sidebar, under the **Monitoring** section:
+Monitor the cluster health by following these steps:
 
-:::image type="content" source="../media/aks-monitoring-insights.png" alt-text="AKS monitoring overview on Azure portal, showing CPU, memory utilization, and node & pod count" border="true" lightbox="../media/aks-monitoring-insights.png":::
+1. If needed, sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) using the same subscription used in previous units.
+1. Use the search box to find and open the Kubernetes service resource named *eshop-learn-aks*.
+1. Select the **Insights** option from the **Monitoring** section in the left side panel.
 
-Besides the general cluster dashboard, you can also explore any tab to view more cluster details, as shown in the following image:
+    :::image type="content" source="../media/aks-monitoring-insights.png" alt-text="AKS monitoring overview on Azure portal, showing CPU, memory utilization, and node & pod count" border="true" lightbox="../media/aks-monitoring-insights.png":::
 
-:::image type="content" source="../media/media-aks-monitoring-containers.png" alt-text="AKS monitoring container details for the cluster" border="true" lightbox="../media/media-aks-monitoring-containers.png":::
+The **Insights** panel defaults to the **Cluster** tab, which shows the overall health of the cluster. The other tabs provide more granular health statuses for the individual nodes and containers.
 
-## Create a metric for the Prometheus endpoint
+## Implement Prometheus metrics
 
-Azure Monitor for containers can be integrated with Prometheus to view app and workload metrics. The metrics are collected from nodes and Kubernetes using Kusto queries. Custom alerts and dashboards can be created to analyze performance details.
+Prometheus is an open-source systems monitoring and alerting toolkit. Azure Monitor for containers can be integrated with Prometheus to view app and workload metrics. The metrics are collected from nodes and Kubernetes using a query language called Kusto. Custom alerts and dashboards can be created to analyze performance details.
 
 Complete the following steps to implement a counter metric for the request count on the catalog service:
 
@@ -86,11 +88,11 @@ Complete the following steps to implement a counter metric for the request count
 
     ```dotnetcli
     pushd src/Services/Catalog/Catalog.API && \
-        dotnet build && \
+        dotnet build --no-restore && \
         popd
     ```
 
-    The build succeeds with no warnings. If the build fails, check the output for troubleshooting information.
+    The build process bypasses restoration of NuGet packages and succeeds with no warnings. If the build fails, check the output for troubleshooting information.
 
 1. The updated catalog service must be built on ACR. Run this script to build the catalog image:
 
@@ -129,13 +131,13 @@ The Docker image in ACR has been updated. A configuration change to the Helm cha
     catalog-ff5d8cbfc-69gxw           0/1     ContainerCreating   0          3s
     ```
 
-## Enable Prometheus metrics scraping for Azure Monitor for containers
+## Enable Prometheus metrics scraping in the AKS cluster
 
-Before Azure Monitor for containers can scrape Prometheus metrics from the catalog service, the Prometheus scraping must be enabled in the AKS cluster. The [Azure Monitor Prometheus scraping configuration](/azure/azure-monitor/insights/container-insights-prometheus-integration) provides a Kubernetes ConfigMap YAML template. It enables users to apply Kubernetes configuration changes to AKS using the `kubectl` command.
+Before Azure Monitor for containers can scrape Prometheus metrics from the catalog service, Prometheus metrics scraping must be enabled in the AKS cluster. The [Azure Monitor Prometheus scraping configuration documentation](/azure/azure-monitor/insights/container-insights-prometheus-integration) provides a Kubernetes ConfigMap YAML template. It enables users to apply Kubernetes configuration changes to AKS using the `kubectl` command.
 
-For your convenience, the ConfigMap YAML template has been provided as *deploy/k8s/azure-monitor/container-azm-ms-agentconfig.yaml*.
+For your convenience, the ConfigMap YAML template has been provided in *deploy/k8s/azure-monitor/container-azm-ms-agentconfig.yaml*.
 
-1. Open the template in the Cloud Shell editor and set the value of the `monitor_kubernetes_pods` to `true`, as shown. Save your changes.
+1. Open the ConfigMap template in the Cloud Shell editor. Change the value of `monitor_kubernetes_pods` from `false` to `true`, as shown. Save your changes.
 
     ```yaml
     monitor_kubernetes_pods = true
@@ -147,11 +149,15 @@ For your convenience, the ConfigMap YAML template has been provided as *deploy/k
     kubectl apply -f deploy/k8s/azure-monitor/container-azm-ms-agentconfig.yaml
     ```
   
-    The preceding applies the ConfigMap to your AKS cluster. The AKS cluster will now scrape Prometheus metrics from any service configured with the Prometheus annotations.
+    The preceding command applies the ConfigMap to your AKS cluster. The AKS cluster will now scrape Prometheus metrics from any service configured with the Prometheus annotations. Upon completion of the command, the following output appears:
 
-## Create some log entries
+    ```console
+    configmap/container-azm-ms-agentconfig created
+    ```
 
-Use the app to generate some log data to examine. Open another browser tab if needed to complete the following steps.
+## Create some telemetry
+
+Use the app to generate some requests to the catalog service. Open another browser tab if needed to complete the following steps.
 
 1. If needed, run the following command to display the various app URLs:
 
@@ -159,30 +165,44 @@ Use the app to generate some log data to examine. Open another browser tab if ne
     cat ~/clouddrive/aspnet-learn/deployment-urls.txt
     ```
 
-1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically, every 10 seconds.
-
-    :::image type="content" source="../media/5-monitor-app-insights/health-check.png" alt-text="Health check page" border="true" lightbox="../media/5-monitor-app-insights/health-check.png":::
-
-    > [!NOTE]
-    > While the app is starting, you might initially receive an HTTP 503 or 502 response from the server. Retry after about one minute. The :::no-loc text="Seq"::: logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
-
-1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
-
-    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../../media/microservices/eshop-spa.png":::
+1. Verify the deployment has finished and the app is healthy using the **:::no-loc text="General application status":::** page.
+1. When the app is healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. Refresh the page a few times.
 
 ## View logs
 
-1. If needed, sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) using the same subscription used in previous units.
-1. Use the search box to find and open the Kubernetes service resource named *eshop-learn-aks*.
+With the changes you made in the previous section, the catalog service will create a counter that counts every incoming request. A separate count is maintained for each endpoint.
+
+To troubleshoot a production issue, you've been asked to monitor requests for the full list of catalog items. The full list of catalog items is retrieved from the catalog service via an HTTP GET request to the `/catalog-api/api/v1/catalog/items` endpoint. To view the current count of requests to that endpoint, complete the following steps:
+
+1. In the Azure portal, use the search box at the top to find and open the Kubernetes service resource named *eshop-learn-aks*.
 1. Select the **Logs** option in the **Monitoring** section on the left side panel.
+
+    > [!NOTE]
+    > If presented with a **Get Started** button, select it. If presented with an **Example queries** dialog, close it.
+
 1. Paste the following Kusto query into the query area:
 
     ```kusto
     InsightsMetrics
     | where Name == "catalogapi_path_counter"
     | where parse_json(Tags).endpoint == "/catalog-api/api/v1/catalog/items"
-    | order by TimeGenerated desc
+    | top 1 by TimeGenerated desc
+    | project TimeGenerated, Name, Val, Tags
     ```
 
-1. Select the **Run** button.
+    The preceding Kusto query retrieves the most recent row from the `InsightsMetrics` table where:
 
+    - The `Name` column is `catalogapi_path_counter`.
+    - The `endpoint` property stored in the `Tags` column is `/catalog-api/api/v1/catalog/items`.
+
+1. Select the **Run** button.
+1. In the **Results** panel, note the value of the `Val` column. This is the count of requests to `/catalog-api/api/v1/catalog/items`.
+1. Select the chevron to expand the row. Select the chevron next to **Tags** to expand the `Tags` column. Notice the `endpoint` and `method` tags that were added by your changes in the previous section.
+
+    :::image type="content" source="../media/6-azure-monitor-containers/expanded-log.png" alt-text="The expanded log entry" border="true" lightbox="../media/6-azure-monitor-containers/expanded-log.png":::
+
+1. In the storefront app, browse the catalog items. Refresh the page to force a request to the catalog service.
+1. Return to the Azure portal. After a couple minutes, select the **Run** button. Notice the count in the `Val` column reflects your activity browsing the catalog items.
+
+    > [!NOTE]
+    > The Prometheus metrics are scraped once per minute. Expect a delay before the new count is reflected in the logs.

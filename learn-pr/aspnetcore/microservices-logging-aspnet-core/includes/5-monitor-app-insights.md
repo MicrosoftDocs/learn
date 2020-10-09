@@ -67,6 +67,9 @@ Investigate the earlier failed coupon service request with the following steps:
 
     A view similar to the preceding screenshot appears. The application map initially displays a simplified representation of the *webshoppingagg* app. This view doesn't list individual dependencies.
 
+    > [!IMPORTANT]
+    > Ingestion of Application Insights telemetry takes 1-5 minutes. If your results don't appear similar to the preceding image, wait a few minutes and try again.
+
 1. Select the **Update map components** button to load a detailed view of the entire *:::no-loc text="eShopOnContainers":::* solution.
 
     :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-detail-app-map.png" alt-text="The detailed application map" border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-detail-app-map.png":::
@@ -83,7 +86,7 @@ Investigate the earlier failed coupon service request with the following steps:
 
 The application map provides one way of exploring captured telemetry. You can also search for a request using known criteria. To search for a request and investigate the end-to-end transaction, complete the following steps:
 
-1. Select **Search** from the **Investigate** section.
+1. Select **Search** from the **Investigate** section to open the transaction search panel.
 1. In the **Search** text box, enter *:::no-loc text="GIVEMEFREESTUFF":::* and press <kbd>Enter</kbd>.
 
     A variation of the following page appears:
