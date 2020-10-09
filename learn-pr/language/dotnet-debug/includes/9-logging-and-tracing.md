@@ -65,7 +65,9 @@ By default when an application is running under debug the `DEBUG` constant is de
 <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DefineConstants>TRACE</DefineConstants>
 </PropertyGroup>
-``
+```
+
+When using `Trace` when not attached to the debugger you will need to configure a trace listener such as [dotnet-trace](https://docs.microsoft.com/dotnet/core/diagnostics/dotnet-trace).
 
 ## Conditional tracing 
 
