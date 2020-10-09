@@ -44,9 +44,9 @@ quiz:
 
   - content: "The Azure Sentinel agent is which of the following?" 
     choices:
-    - content: "Log analytics agent"
+    - content: "Log Analytics agent"
       isCorrect: true
-      explanation: "That's correct. The Azure Sentinel agent is a log analytics agent."
+      explanation: "That's correct. The Azure Sentinel agent is a Log Analytics agent."
     - content: "REST API"
       isCorrect: false
       explanation: "That's incorrect. A REST API uses HTTP requests to GET, PUT, POST, and DELETE data."
