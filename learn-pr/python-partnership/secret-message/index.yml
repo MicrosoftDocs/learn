@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.student-evangelism.python-partnership-secret-message
+uid: learn.python-partnership.secret-message
 metadata:
   title: Crack the code and reveal a secret with Python and Visual Studio Code
   description: There's a secret message that needs a code cracker to find the truth. Learn how to solve the code mystery to reveal a location inspired by the WONDER WOMAN 1984 film. Get a glimpse into the popular Python programming language with this introductory lesson that requires no coding experience.
@@ -30,14 +30,14 @@ roles:
 products:
 - vs-code
 units:
-- learn.student-evangelism.python-partnership-secret-message.introduction
-- learn.student-evangelism.python-partnership-secret-message.vs-code-setup
-- learn.student-evangelism.python-partnership-secret-message.python-basics
-- learn.student-evangelism.python-partnership-secret-message.ceasar-cipher-part-1
-- learn.student-evangelism.python-partnership-secret-message.ceasar-cipher-part-2
-- learn.student-evangelism.python-partnership-secret-message.ceasar-cipher-full-word
-- learn.student-evangelism.python-partnership-secret-message.test-decoder
-- learn.student-evangelism.python-partnership-secret-message.knowledge-check
-- learn.student-evangelism.python-partnership-secret-message.summary
+- learn.python-partnership.secret-message.introduction
+- learn.python-partnership.secret-message.vs-code-setup
+- learn.python-partnership.secret-message.python-basics
+- learn.python-partnership.secret-message.ceasar-cipher-part-1
+- learn.python-partnership.secret-message.ceasar-cipher-part-2
+- learn.python-partnership.secret-message.ceasar-cipher-full-word
+- learn.python-partnership.secret-message.test-decoder
+- learn.python-partnership.secret-message.knowledge-check
+- learn.python-partnership.secret-messagesummary
 badge:
-  uid: learn.student-evangelism.python-partnership-secret-message.badge
+  uid: learn.python-partnership.secret-message.badge

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.python-partnership-secret-message.ceasar-cipher-full-word
+uid: learn.python-partnership.secret-message.ceasar-cipher-full-word
 title: Decode a full word with a Caesar cipher
 metadata:
   title: Decode a full word with a Caesar cipher

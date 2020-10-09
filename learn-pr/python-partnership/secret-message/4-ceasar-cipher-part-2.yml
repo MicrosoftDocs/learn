@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.python-partnership-secret-message.ceasar-cipher-part-2
+uid: learn.python-partnership.secret-message.ceasar-cipher-part-2
 title: 'Part 2: Decode one letter with a Caesar cipher by wrapping around the English alphabet'
 metadata:
   title: 'Part 2: Decode one letter with a Caesar cipher by wrapping around the English alphabet'

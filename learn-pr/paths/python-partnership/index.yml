@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.student-evangelism.python-partnership
+uid: learn.python-partnership
 metadata:
   title: Learn Python basics with Wonder Woman
   description: 1984 is bold, grand, and electric. It’s an era of excess and corruption, where Wonder Woman must harness the power of technology to restore balance to the world. And Microsoft is partnering with the WONDER WOMAN 1984 film to empower coders and creators to learn technology skills they can use for greater good.
@@ -34,8 +34,8 @@ roles:
 products:
 - vs-code
 modules:
-- learn.student-evangelism.python-partnership-secret-message
-- learn.student-evangelism.python-partnership-personality-quiz
+- learn.python-partnership.secret-message
+- learn.python-partnership.personality-quiz
 - learn.languages.python-install-vscode
 trophy:
-  uid: learn.student-evangelism.python-partnership.trophy
+  uid: learn.python-partnership.trophy
