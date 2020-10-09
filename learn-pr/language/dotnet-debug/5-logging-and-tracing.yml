@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.dotnet-debug.5-logging-and-tracing
-title: Summary
+title: Logging and tracing in .NET applications
 metadata:
-  title: Summary
-  description: Summary
+  title: Logging and tracing in .NET applications
+  description: Learn about different instrumentation techniques through logging and tracing  that help debug .NET applications.
   author: jamesmontemagno
   ms.author: jamont
   ms.date: 10/09/2020
