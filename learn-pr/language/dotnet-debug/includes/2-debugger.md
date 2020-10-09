@@ -2,20 +2,20 @@ During your journey as developer, there's always _that_ moment when you end up a
 
 > Why isn't my code working?
 
-During your work on the Tailwind Traders retail application, you'll most likely be confronted with this situation a few times. When there's a bug in your program, everyone usually has its own way of dealing with this problem.
+This is a normal part of any developer's day, and the trick is to get comfortable with finding and fixing your bugs with a minimum of time and frustration. When there's a bug in your program, everyone usually has their own way of dealing with this problem.
 You probably already have tried one or more of these debugging approaches yourself:
 
 - Try running your program again because it *should* work.
 - Explain your issue to a rubber duck.
 - Read through your code again to find out the issue.
 - Take a walk outside.
-- Spam a few `console.log('here')` in your code.
+- Spam a few `Console.WriteLine('here')` messages in your code.
 
 While you might have various degrees of success with these methods, there's one other approach commonly regarded as being more often successful: using a debugger. But what's a debugger exactly?
 
-A debugger is a software tool used to observe and control the execution flow of your program with an analytical approach. Its design goal is to help find the root cause of a bug and help you resolve it. It works by either hosting your program in its own execution process or running as a separate process that's attached to your running program, like Node.js.
+A debugger is a software tool used to observe and control the execution flow of your program with an analytical approach. Its design goal is to help find the root cause of a bug and help you resolve it. It works by either hosting your program in its own execution process or running as a separate process that's attached to your running program, like .NET.
 
-Debuggers come in different flavors. Some work directly from the command line while others come with a graphical user interface. In this module, we'll use both the built-in command-line debugger that comes with Node.js and the integrated graphical debugger of Visual Studio Code.
+Debuggers come in different flavors. Some work directly from the command line while others come with a graphical user interface. In this module, we'll use both the built-in command-line debugger that comes with .NET and the integrated graphical debugger of Visual Studio Code.
 
 ## Why use a debugger
 

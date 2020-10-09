@@ -4,9 +4,9 @@ title: Debug with Visual Studio Code
 metadata:
   title: Debug with Visual Studio Code
   description: Learn how to use the Visual Studio Code debugger to inspect variables and add watchers during execution.
-  author: sinedied
-  ms.author: yolasors
-  ms.date: 06/04/2020
+  author: jongalloway
+  ms.author: jogallow
+  ms.date: 10/08/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

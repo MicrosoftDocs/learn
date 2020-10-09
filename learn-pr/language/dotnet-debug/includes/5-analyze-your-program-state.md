@@ -1,28 +1,56 @@
-In addition to being able to run your code step by step, you saw in the previous exercise that knowing about your program state is also essential. With the built-in debugger, you have some options for that end like the `exec` command, but your options are limited. Using a debugger with a more complete visual interface is useful for that purpose. It will help you a lot while you work on the Tailwind Traders application.
+In the previous section, you learned that a debugger helps you both control your program's execution and observe its state. In this section, you'll learn how to do both of those in Visual Studio Code.
 
-Let's discover how you can configure the Visual Studio Code debugger to use it with Node.js.
+Let's start by learning how to configure the Visual Studio Code debugger to use it with .NET.
 
-## Set up Visual Studio Code for Node.js debugging
+## Creating a sample .NET project for debugging
+
+In order to set up Visual Studio Code for .NET debugging, we'll need a .NET project. Visual Studio Code includes an integrated terminal, which makes creating a new project really easy.
+
+1. In Visual Studio Code, select **File** > **Open Folder**.
+
+1. Create a new folder named `dotnet-debug` in the location of your choice, and then click **Select Folder**.
+
+1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
+
+1. In the terminal window, copy and paste the following command.
+
+    ```bash
+    dotnet new console
+    ```
+
+    This command creates a **Program.cs** file in your folder with a basic "Hello World" program already written, along with a C# project file named **dotnet-debug.csproj**.
+
+1. In the terminal window, copy and paste the following command to run the "Hello World" program.
+
+    ```bash
+    dotnet run
+    ```
+
+    The terminal window displays "Hello world!" as output.
+
+:::image source="../media/new-dotnet-project.png" alt-text="Screenshot of Visual Studio Code with a new console application.":::
+
+## Set up Visual Studio Code for .NET debugging
+
+Open *Program.cs* by clicking on it.
+
+The first time you open a C# file in Visual Studio Code, you will receive a prompt to install recommended extensions for C#. Click the **Install** button in the prompt.
+
+:::image source="../media/install-recommended-extensions.png" alt-text="Screenshot of Visual Studio Code debug tab.":::
+
+Visual Studio Code will install the **C#** extension, and will show an additional prompt to add required assets to build and debug your project. Click the **Yes** button. 
+
+:::image source="../media/install-required-assets.png" alt-text="Screenshot of Visual Studio Code debug tab.":::
+
+You can close the tab titled "Extension: C#" to focus on the code we'll be debugging.
 
 In Visual Studio Code, select the **Run** tab to access the debugger tool.
 
 :::image source="../media/run-tab.png" alt-text="Screenshot of Visual Studio Code debug tab.":::
 
-If you have a Node.js project open, you have three different ways to activate the debugger:
-
-- If you have a `.js` file open in the editor window, select **Run and Debug**. Then select **Node.js** to directly debug this JavaScript file.
-
-    :::image source="../media/select-environment.png" alt-text="Screenshot of Node.js environment selection drop-down list in Visual Studio Code.":::
-
-- You can also choose to open a **Node.js debug terminal**. Selecting this button opens a special terminal window that you can use to run your program from the command line. For example, you can enter `node myscript.js`, and your app will start with the debugger enabled automatically. You won't have to use the `--inspect` option.
-
-    :::image source="../media/terminal.png" alt-text="Screenshot of debug terminal window in Visual Studio Code.":::
-
-- You can select **create a launch.json file** to further customize your run configuration and share it with your coworkers. We'll see more about that option later.
-
 ### Add breakpoints
 
-As opposed to the built-in Node.js command-line debugger, the Visual Studio Code debugger immediately starts executing your code. If your program ends quickly, you might not even have the chance to interact with the debugger. That's why you might want to add some breakpoints before you start it.
+As opposed to the built-in .NET command-line debugger, the Visual Studio Code debugger immediately starts executing your code. If your program ends quickly, you might not even have the chance to interact with the debugger. That's why you might want to add some breakpoints before you start it.
 
 To add a breakpoint in your code, open your `.js` program and then select the left side of the line number, on the line you want to break. You should see a red circle after the breakpoint is enabled. To remove it, select the red circle again.
 
@@ -107,7 +135,7 @@ TypeError: Cannot read property 'toFixed' of undefined
     at internal/main/run_main_module.js:17:11
 ```
 
-The group of `at [...]` lines under the error message is called a *stack trace*. The stack trace gives the name and origin of every function that was called before ending up with the exception. It can be a bit difficult to decipher though, because it also includes internal functions from the Node.js runtime.
+The group of `at [...]` lines under the error message is called a *stack trace*. The stack trace gives the name and origin of every function that was called before ending up with the exception. It can be a bit difficult to decipher though, because it also includes internal functions from the .NET runtime.
 
 That's where the Visual Studio Code **Call stack** panel comes in handy. It filters out unwanted information to show you only the relevant functions from your own code by default. You then can unwind this call stack to find out where the exception originated from.
 
@@ -140,7 +168,7 @@ From left to right, the controls are:
 
 ### Use the debug console
 
-The debug console can be shown or hidden by selecting **Ctrl+Shift+Y** (Windows, Linux) or **Cmd+Shift+Y** (Mac). It can be used to visualize your application console logs and to evaluate expressions or execute code in the current execution content, like the `exec` command in the built-in Node.js debugger.
+The debug console can be shown or hidden by selecting **Ctrl+Shift+Y** (Windows, Linux) or **Cmd+Shift+Y** (Mac). It can be used to visualize your application console logs and to evaluate expressions or execute code in the current execution content, like the `exec` command in the built-in .NET debugger.
 
 You can enter a JavaScript expression in the input field at the bottom of the debug console. Then select **Enter** to evaluate it. The result displays directly in the console.
 
