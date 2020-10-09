@@ -6,7 +6,7 @@ Given a city, what date would you most likely see which meteor showers?
 
 This module introduces a simplified way of examining data. Without a lot of predictions, it's a lot like a complex lookup table. You can expand on this with data like weather in the future to make this more like a classical machine learning model. 
 
-## Writing the Prediction Function
+## Write the prediction function
 
 Let's review the four datasets that we have so far (NOTE: the output is cut down to only include the columns):
 
@@ -71,7 +71,7 @@ The function that we are writing will need to:
 
 You can use that outline of steps to build your function step by step.
 
-## Determine the Latitude
+## Determine the latitude
 
 Create a function called predict_best_meteor_shower_viewing that takes in a city as a parameter:
 
@@ -88,6 +88,7 @@ def predict_best_meteor_shower_viewing(city):
 ```
 
 Let's break this line of code down:
+
 ### `cities['city'] == city`  
 This is creating a list of true and false values where true will be on the row where the city is equal to the city passed in as a parameter. 
 
@@ -149,7 +150,7 @@ print(cities.loc[cities['city'] == 'Abu Dhabi', 'latitude'].iloc[0])
 24.47
 ```
 
-## Calling the Function
+## Call the function
 
 Now that you have some value, it's best to test your function so far to make sure it's working as you expect it to. You should return the value that you have so far, and then call the function:
 

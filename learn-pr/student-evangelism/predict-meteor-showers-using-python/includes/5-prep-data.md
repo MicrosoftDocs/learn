@@ -1,6 +1,6 @@
 Recall the data science project lifecycle - after you have the data that you want to use to make your predictions, you have to make sure the data is prepared for analysis. Follow this unit to explore the data that you have and make sure it's ready to use in the machine learning model. 
 
-## Exercise: Import Data
+## Exercise: Import data
 
 First, you need to import the csv files into your Python notebook. First, import numpy and pandas:
 
@@ -22,7 +22,7 @@ constellations = pd.read_csv('data/constellations.csv')
 cities = pd.read_csv('data/cities.csv')
 ```
 
-## Exercise: Explore Data
+## Exercise: Explore data
 
 Now you can look through the data. For each of the variables you created, print the head and the info for those dataframes. `head` will allow you to see the first five lines in the csv files and `info` will give you an overview of what data might be missing. 
 
@@ -58,7 +58,7 @@ cities.head()
 cities.info()
 ```
 
-### Convert to Numbers
+### Convert to numbers
 
 We can see from the calls to `head()` that there is a lot of information that is written in words (strings) instead of numbers (integers). There is some data where it makes sense to have it in strings, like city names or meteor shower names. But there is other data where it makes more sense to have it represented as integers, like months or moon phases.
 
@@ -157,7 +157,7 @@ moon_phases.head()
 
 Now you have converted all data that makes sense to be in numbers to numbers. But you can see that there are some missing values. 
 
-### Remove Unnecessary Data
+### Remove unnecessary data
 
 Some of the data from these csv files aren't that useful. You can delete the following data:
 
@@ -177,7 +177,7 @@ constellations = constellations.drop(['besttime'], axis=1)
 
 Now it's time to fill in missing data.
 
-### Missing Data
+### Missing data
 
 One of the csv files is particularly interesting. The output of `moon_phases.info()` shows us:
 

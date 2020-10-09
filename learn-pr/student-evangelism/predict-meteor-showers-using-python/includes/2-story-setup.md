@@ -6,7 +6,7 @@ This moment is not only a touching moment, but also what inspired this particula
 
 Before getting started, it's important to understand what meteor showers are. This will help us understand what data we should gather to write our algorithm to predict the best meteor shower viewing date. 
 
-## What Are Meteor Showers?
+## What are meteor showers?
 
 Meteoroids are objects in space that are typically made of dust, rocks, or metal. They can range from small grains of dust to small asteroids. They are essentially space rocks floating out in space. When meteoroids get near Earth they are pulled into our atmosphere by gravity. As they enter the astmosphere, they begin to burn, which is the light that we see in our skies and they are called meteors during this state. If the meteor passes through the atmosphere without completely burning, it will land somewhere on Earth and is then called a meteorite. 
 
@@ -14,9 +14,9 @@ NASA estimates that 48.5 tons of meteoric material falls to Earth each day, most
 
 Meteoroids can originate from comets, asteroids, moons, or other planets. The most likely source to cause a meteor shower (when a lot of meteors can be seen at once) is from comets, so this module will focus on those. 
 
-You can learn more about meteors and meteor showers on the [NASA Solar System website](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/overview).
+You can learn more about meteors and meteor showers on the [NASA Solar System website](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/overview?azure-portal=true).
 
-### Meteors from Comets 
+### Meteors from comets 
 
 Comets are mostly made of ice with some dust, rock, and metals embedded in them. They have cylindrical orbits around our sun, meaning sometimes they are nearer. During the times when a comet is near the sun, they will often begin to melt. As the comet melts, parts of the dust, rock, and metal will dislodge from the comet and remain in space at that location. 
 

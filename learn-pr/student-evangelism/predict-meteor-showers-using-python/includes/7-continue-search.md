@@ -5,7 +5,7 @@ As a reminder, the steps that we need to go through to find the optimal date to 
 4. Use the *meteor showers* to determine the *dates* that it is visible 
 5. Use the *dates* to find the optimal *date* that has the least amount of shine from the moon
 
-## Using Latitude To Determine Constellation
+## Use latitude to determine constellation
 
 The next step is to use the latitude to determine which constellations are viewable in the city.
 
@@ -24,7 +24,7 @@ We can break down this line as follows:
 - `constellations.loc[(constellations['latitudestart'] >= latitude) & (constellations['latitudeend'] <= latitude), 'constellation'].tolist()`
   - Convert the series returned from the `.loc` function to a list
 
-## Print the Constellation List
+## Print the constellation list
 
 Remember, you should always print as you go to make sure that you are getting the data that you expect to get. 
 
@@ -45,7 +45,7 @@ print(predict_best_meteor_shower_viewing('Abu Dhabi'))
 ['Lyra', 'Aquarius', 'Orion', 'Perseus']
 ```
 
-## Create an Output String
+## Create an output string
 
 Before continuing through the data dive, you should create a string that will contain all of the meteor showers viewable from that city, and the best dates to view them. 
 
@@ -137,7 +137,7 @@ The first few lines of the output should look like this:
 | 113 | 2020-04-23 | 0.0 |
 | 114 | 2020-04-24 | 0.0 |
 
-## Find the Optimal Date Based on Moon Phases
+## Find the optimal date based on moon phases
 
 Finally, we can find the minimum value of the moon phase (the least amount of light shining from the moon). For this predictive function, we're just going to grab the first date. 
 
@@ -154,7 +154,7 @@ meteor_shower_string += meteor_shower + " is best seen if you look towards the "
 
 One tricky part in this code is when we convert the date to a `pydatetime` and then convert it to a String with `strftime`. If we got rid of this, we would get an error.
 
-## Final Code
+## Final code
 
 The final code that we have written for this predictive function is:
 
