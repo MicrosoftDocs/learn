@@ -4,9 +4,9 @@ title: Debug with the Node.js built-in debugger
 metadata:
   title: Debug with the Node.js built-in debugger
   description: Learn what a breakpoint is and how to run your code step by step by using the Node.js built-in debugger.
-  author: sinedied
-  ms.author: yolasors
-  ms.date: 06/04/2020
+  author: jongalloway
+  ms.author: jogallow
+  ms.date: 10/08/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
