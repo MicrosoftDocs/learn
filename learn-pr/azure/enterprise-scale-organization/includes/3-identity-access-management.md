@@ -10,9 +10,9 @@ Enterprise organizations typically follow a least-privileged approach to operati
 
 Identity and access management is a multistep process that involves careful planning for identity integration and other security considerations, such as blocking legacy authentication and planning for modern passwords. Staging planning also involves selection of business-to-business or business-to-consumer identity and access management. While these requirements vary, there are common design considerations and recommendations to consider for an enterprise landing zone.
 
-:::image type="content" source="../media/3-identity-access-management.png" alt-text="Identity and access management." lightbox="../media/3-identity-access-management-large.png":::
+:::image type="content" source="../media/3-identity-access-management.png" alt-text="Diagram that shows identity and access management." lightbox="../media/3-identity-access-management-large.png":::
 
-When planning for role-based access, use custom RBAC role definitions within the Azure AD tenant and consider the following key roles:
+When you plan for role-based access, use custom RBAC role definitions within the Azure AD tenant and consider the following key roles:
 
 - **Azure platform owner**: Used for management group and subscription lifecycle management.
 
@@ -34,7 +34,7 @@ When planning for role-based access, use custom RBAC role definitions within the
   }
   ```
 
-- **Network management (NetOps)**: Used for platform-wide global connectivity management of virtual networks, UDRs, NSGs, NVAs, VPN, Azure ExpressRoute, and others.
+- **Network management (NetOps)**: Used for platform-wide global connectivity management of virtual networks, user data repositories, network security groups, network virtual appliances, virtual private networks, Azure ExpressRoute, and others.
 
   ```json
   {
@@ -151,9 +151,9 @@ Consider the differences between centralized versus federated resource ownership
 - Shared resources or any aspect of the environment that implements or enforces a security boundary, such as the network, must be managed centrally. This requirement is part of many regulatory frameworks. It's standard practice for any organization that grants or denies access to confidential or critical business resources.
 - Managing application resources that don't violate security boundaries or other aspects required to maintain security and compliance can be delegated to application teams. Allowing users to provision resources within a securely managed environment allows organizations to take advantage of the agile nature of the cloud while preventing the violation of any critical security or governance boundary.
 
-It is recommended to use Azure AD RBAC to manage data-plane access to resources, where possible. Examples are Azure Key Vault, a storage account, or a SQL Database.
+We recommend the use of Azure AD RBAC to manage data-plane access to resources, where possible. Examples are Azure Key Vault, a storage account, or a SQL database.
 
-Deploy Azure AD conditional-access policies for any user with rights to Azure environments. Doing so provides another mechanism to help protect a controlled Azure environment from unauthorized access. Enforce multi-factor authentication (multi-factor authentication) for any user with rights to the Azure environments. Multi-factor authentication enforcement is a requirement of many compliance frameworks. It greatly lowers the risk of credential theft and unauthorized access.
+Deploy Azure AD conditional-access policies for any user with rights to Azure environments. Doing so provides another mechanism to help protect a controlled Azure environment from unauthorized access. Enforce multifactor authentication for any user with rights to the Azure environments. Multifactor authentication enforcement is a requirement of many compliance frameworks. It greatly lowers the risk of credential theft and unauthorized access.
 
 Use Azure AD Privileged Identity Management (PIM) to establish zero standing access and least privilege. Map your organization's roles to the minimum level of access needed. Azure AD PIM can extend existing tools and processes, use Azure native tools as outlined, or do both as needed. Use Azure AD PIM access reviews to periodically validate resource entitlements. Access reviews are part of many compliance frameworks. Many organizations already have a process in place to address this requirement. Use Azure-AD-only groups for Azure control-plane resources in Azure AD PIM when you grant access to resources. Add on-premises groups to the Azure-AD-only group if a group management system is already in place.
 
@@ -171,17 +171,17 @@ Don't add users directly to Azure resource scopes. This lack of centralized mana
 
 ## Plan for authentication inside a landing zone
 
-A critical design decision that an enterprise organization must make when adopting Azure is whether to extend an existing on-premises identity domain into Azure or to create a brand new one. Requirements for authentication inside the landing zone should be thoroughly assessed and incorporated into plans to deploy Active Directory Domain Services (AD DS) in Windows Server, Azure AD Domain Services (Azure AD DS), or both. Most Azure environments will use at least Azure AD for Azure fabric authentication and AD DS local host authentication and group policy management.
+A critical design decision that an enterprise organization must make when adopting Azure is whether to extend an existing on-premises identity domain into Azure or to create a brand new one. Requirements for authentication inside the landing zone should be thoroughly assessed and incorporated into plans to deploy Active Directory Domain Services (AD DS) in Windows Server, Azure Active Directory Domain Services (Azure AD DS), or both. Most Azure environments will use at least Azure AD for Azure fabric authentication and AD DS local host authentication and group policy management.
 
 ### Authentication inside a landing zone design recommendations and considerations
 
-Consider centralized and delegated responsibilities to manage resources deployed inside the landing zone.  Also consider the applications that rely on domain services and use older protocols can use Azure AD DS.
+Consider centralized and delegated responsibilities to manage resources deployed inside the landing zone. Also consider the applications that rely on domain services and use older protocols, which can use Azure AD DS.
 
 Use centralized and delegated responsibilities to manage resources deployed inside the landing zone based on role and security requirements. Privileged operations such as creating service principal objects, registering applications in Azure AD, and procuring and handling certificates or wildcard certificates require special permissions. Consider which users will be handling such requests and how to secure and monitor their accounts with the degree of diligence required.
 
 If an organization has a scenario where an application that uses integrated Windows authentication must be accessed remotely through Azure AD, consider using Azure AD Application Proxy.
 
-Remember, there's a difference between Azure AD, Azure AD DS, and AD DS running on Windows Server. Evaluate your application needs, and understand and document the authentication provider that each one will be using. Plan accordingly for all applications. Evaluate the compatibility of workloads for AD DS on Windows Server and for Azure AD DS. Ensure that your network design allows resources that require AD DS on Windows Server for local authentication and management to access the appropriate domain controllers. For AD DS on Windows Server, consider shared services environments that offer local authentication and host management in a larger enterprise-wide network context. 
+Remember, there's a difference between Azure AD, Azure AD DS, and AD DS running on Windows Server. Evaluate your application needs, and understand and document the authentication provider that each one will be using. Plan accordingly for all applications. Evaluate the compatibility of workloads for AD DS on Windows Server and for Azure AD DS. Ensure that your network design allows resources that require AD DS on Windows Server for local authentication and management to access the appropriate domain controllers. For AD DS on Windows Server, consider shared services environments that offer local authentication and host management in a larger enterprise-wide network context.
 
 Deploy Azure AD DS within the primary region because this service can only be projected into one subscription.
 
