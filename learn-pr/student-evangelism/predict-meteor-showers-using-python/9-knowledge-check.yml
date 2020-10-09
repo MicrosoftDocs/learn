@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.over-the-moon.9-knowledge-check
+metadata:
+  title: Knowledge check
+  description: 
+  ms.date: 10/20/2020
+  author: sguthals
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Meteor Showers only happen every 2 years."
+    choices:
+    - content: "True, meteor showers only happen when the Earth is aligned with certain planets or moons."
+      isCorrect: false
+      explanation: "This is not true. The location of the Earth in orbit matters in relation to meteor showers, but not other planets or moons."
+    - content: "True, meteor showers originate from Mars, which has about a 2 year orbit around the sun."
+      isCorrect: false
+      explanation: "This is not true. Meteor showers originate from debris left by comets, asteroids, and sometimes planets or moons, but don't depend on planetary orbits to enter our atmosphere."
+    - content: "False, meteor showers only happen every 76 years, when the Halley comet orbits near the sun."
+      isCorrect: false
+      explanation: "This is not true. While debris from the Halley comet may only get left every 76 years, that debris can enter our atmosphere every time we pass where it was left out in space."
+    - content: "False, meteor showers happen every single night, it just might be harder to see them on some nights."
+      isCorrect: true
+      explanation: "This is true. There is always debris left in space that is being brought into our atmosphere, most of it burns before it passes through."
+  - content: "Where can you find meteorites on Earth?"
+    choices:
+    - content: "Antartica"
+      isCorrect: false
+      explanation: "While it is typically easier to spot meterorites in antartica due to the high contrast black rocks on white ice, they can be found elsewhere as well."
+    - content: "The desert"
+      isCorrect: false
+      explanation: "While it is typically easier to spot meterorites in the desert due to the high contrast black rocks on light sand, they can be found elsewhere as well."
+    - content: "Your backyard"
+      isCorrect: false
+      explanation: "While it is typically extremely difficult to spot meterorites in your backyard due to the Earth rocks and other debris scattered around, they can be found here and elsewhere as well."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Yes, meteorites can land anywhere on Earth, it is just much harder to find them when there isn't a huge contrast between the rocks and it's surroundings."
+  - content: "What would this code return? some_return_value = friends.loc[(friends['location'] == my_location) & (friends['hunger'] >= my_hunger), 'favorite_food'].tolist()"
+    choices:
+    - content: "A sorted list of my friends from least hungry to most hungry who were with me and had the same favorite food as me."
+      isCorrect: false
+      explanation: "False. This code is looking for friends with you and who are at least as hungry as you, but isn't returning a list of friends."
+    - content: "A list of my friends locations who were at least as hungry as I was and who had a favorite food."
+      isCorrect: false
+      explanation: "False. This code is looking for friends with you and who are at least as hungry as you, but isn't returning a list of locations."
+    - content: "A list of all of my friends who were with me, were at least as hungry as I was, and had the same favorite food as me. "
+      isCorrect: false
+      explanation: "False. This code is looking for friends with you and who are at least as hungry as you, but isn't returning a list of friends."
+    - content: "A list of all of the favorite foods of my friends who were currently with me and were at least as hungry as I was."
+      isCorrect: true
+      explanation: "True. This code first grabs the list of rows where your friends are with you and are at least as hugry as you, then grabs the favorite_foods column creates a list."

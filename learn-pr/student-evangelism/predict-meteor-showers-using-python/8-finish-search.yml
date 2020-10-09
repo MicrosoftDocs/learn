@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.over-the-moon.8-finish-search
+metadata: 
+  title: Add in data from Chang'e
+  description: Add in data from Chang'e.
+  ms.date: 10/20/2020
+  author: sguthals
+  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Add in data from Chang'e
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-finish-search.md)]

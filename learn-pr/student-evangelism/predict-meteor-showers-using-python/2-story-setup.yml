@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.predict-meteor-showers-using-python.2-story-setup
+metadata:
+  title: Chang'e and the stardust in space
+  description: Chang'e and the stardust in space.
+  ms.date: 10/20/2020
+  author: sguthals
+  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Chang'e and the stardust in space.
+durationInMinutes: 
+content: |
+  [!include[](includes/2-story-setup.md)]

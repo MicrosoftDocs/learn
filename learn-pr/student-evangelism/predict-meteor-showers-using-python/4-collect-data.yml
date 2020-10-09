@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.over-the-moon.4-collect-data
+metadata:
+  title: Collect meteor shower-related data
+  description: Learn how to collect data about meteor showers. 
+  ms.date: 10/20/2020
+  author: sguthals
+  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Collect meteor shower-related data
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-collect-data.md)]
