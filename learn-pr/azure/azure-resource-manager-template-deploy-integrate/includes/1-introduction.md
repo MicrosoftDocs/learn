@@ -1,9 +1,9 @@
-﻿"In the previous two modules, you learned how to create ARM templates.
+﻿In the previous two modules, you learned how to create ARM templates.
 
 - [Deploy consistent infrastructure in Azure by using Azure Resource Manager (ARM) templates](https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/)
 - [Deploy to multiple Azure environments by using ARM templates](https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse/)
 
-In this module, you'll focus on how you deploy templates. You'll start with deploying a local template, and then deploy an external template that is staged in GitHub. You'll learn how to deploy a template that links to other external templates. Finally, you'll learn how to automate template deployment by integrating it with your CI/CD pipeline."
+In this module, you'll focus on how you deploy templates. You'll start with deploying a local template, and then deploy an external template that is staged in GitHub. You'll learn how to deploy a template that links to other external templates. Finally, you'll learn how to automate template deployment by integrating it with your CI/CD pipeline.
 
 ## Learning objectives
 

@@ -160,7 +160,7 @@ You can either create a workflow file and then push/upload the file to the repos
 1. Rename the workflow file if you prefer a different name other than main.yml. For example: deployARMTemplate.yml.
 1. Replace the content of the yml file with the following:
     > [!NOTE]
-    > The [GitHub Marketplace](https://github.com/marketplace?WT.mc_id=modinfra-8016-pierrer) has some custom built actions you can leverage to deploy ARM templates.  This module uses the inline scripting capabilities of GitHub Actions.
+    > The [GitHub Marketplace](https://github.com/marketplace) has some custom built actions you can leverage to deploy ARM templates.  This module uses the ["Deploy Azure Resource Manager (ARM) Template"](https://github.com/marketplace/actions/deploy-azure-resource-manager-arm-template) marketplace provider.
 
     ```yml
     name: Deploy ARM Template
@@ -169,6 +169,9 @@ You can either create a workflow file and then push/upload the file to the repos
       push:
         branches:
           - master
+    env:
+      AZURE_SUBSCRIPTION_ID: << Subscription Id >>   # set this to your Azure Subscription Id
+      AZURE_RESOURCE_GROUP: GitHubActionExercise-rg   # set this to your target resource group
 
     jobs:
       deploy-virtual-network-template:
@@ -183,23 +186,25 @@ You can either create a workflow file and then push/upload the file to the repos
               creds: ${{ secrets.AZURE_CREDENTIALS }}
 
           - name: Deploy ARM Template
-            uses: azure/CLI@v1
+            uses: azure/arm-deploy@v1
             with:
-              inlineScript: |
-                az deployment group create --resource-group GitHubActionExercise-rg --template-file ./azuredeploy.json
+              scope: subscription
+              subscriptionId: ${{ env.AZURE_SUBSCRIPTION_ID }}
+              resourceGroupName: ${{ env.AZURE_RESOURCE_GROUP }}
+              template: $GITHUB_WORKSPACE/azuredeploy.json
     ```
 
-    #### The workflow file has three sections
+    #### The workflow file has tree sections
 
     - name: The name of the workflow.
     - on: The name of the GitHub events that triggers the workflow. The workflow is triggered when there is a push event on the master branch, which modifies at least one file in the master branch.
-    - jobs: A workflow run is made up of one or more jobs. There is only one job called `deploy-virtual-network-template`. This job has three steps:
-      - Checkout source code
-      - Login to Azure
-      - Deploy ARM template. Verify the value of the Resource Group Name. If you used the Azure CLI script in Configure deployment credentials, the generated resource group name is the project name with rg appended. Verify the value of template Location.
+    - jobs: A workflow run is made up of one or more jobs. There is only one job called         `deploy-virtual-network-template`. This job has three steps:
+          - Checkout source code
+          - Login to Azure
+          - Deploy ARM template.
 
     > [!IMPORTANT]
-    > **Verify** the secret name in the following expression **creds: ${{ secrets.AZURE_CREDENTIALS }}** matches the name of the secret to what you saved to your repository's settings. **Verify** that the ARM template name in the command **`az deployment group create --resource-group GitHubActionExercise-rg --template-file ./azuredeploy.json`** matches the one you saved in the repo earlier.
+    > **Verify** the secret name in the following expression **creds: ${{ secrets.AZURE_CREDENTIALS }}** matches the name of the secret to what you saved to your repository's settings. **Verify** that the ARM template name in the **Deploy ARM Template** step **`template: $GITHUB_WORKSPACE/azuredeploy.json`** matches the one you saved in the repo earlier.
 
     > [!NOTE]
     >The resource group name should be **GitHubActionExercise-rg** if you used the Azure CLI code above in the Configure deployment credentials section, the generated resource group name is the project name with rg appended.
