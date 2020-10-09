@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.image-recognition
 metadata:
-  title: # Add your desired module title. All titles must be sentence-case.
-  description: # Add a short description for your module for search engines.
+  title: Use AI to recognize images by using Azure Custom Vision services
+  description: Use AI to recognize images by using Azure Custom Vision services.
   ms.date: 10/15/2020
   author: # Your GitHub username (or whomever you'd like to give author attribution to)
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: # Your desired module title. Same as above.
-summary: # Add a short description for your module to be displayed to users. Can be the same as above.
+title: Use AI to recognize images by using Azure Custom Vision services
+summary: Use AI to recognize images by using Azure Custom Vision services.
 abstract:  |
   In this module, you will:
   - Create a good dataset of images for training AIs. 
@@ -25,7 +25,7 @@ roles:
 # - Add relevant user role(s) (developer, data scientist, etc.)
 - student
 products:
-- ""
+- azure-custom-vision
 units:
 - learn.student-evangelism.image-recognition.1-introduction
 - learn.student-evangelism.image-recognition.2-set-up-azure
