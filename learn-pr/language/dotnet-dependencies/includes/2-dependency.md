@@ -39,14 +39,26 @@ There are several ways to install packages. There is a built-in Package Manager 
 
 ## Find a package
 
-Individual developers might use the global registry at NuGet.org to find and download packages they need for their apps. A company might have a strategy in place for what packages are OK to use and where to find them. Packages might be located in many different places. Some of these sources might be publicly available. Some might be restricted and accessible only to employees of a specific company. Here are some places where packages might reside:
+Individual developers might use the global registry at [NuGet.org](https://www.nuget.org) to find and download packages they need for their apps. A company might have a strategy in place for what packages are OK to use and where to find them. 
 
-- **Registries**. An example of a registry might be a global registry like the NuGet.org registry. You can host your own registries that can be either private or public.
+![List of popular packages on NuGet.org](../media/finding-nuget.png)
+
+Packages might be located in many different places. Some of these sources might be publicly available. Some might be restricted and accessible only to employees of a specific company. Here are some places where packages might reside:
+
+- **Registries**. An example of a registry might be a global registry like the NuGet.org registry, GitHub, and Azure DevOps. You can host your own registries that can be either private or public.
 - **Files**. You can install a package from a local folder. Installation from a package is common when you're trying to develop your own .NET libraries and want to test the package locally or for some reason don't want to use a registry.
+
+![Relationship between package creators, package hosts, and package consumers](../media/nuget-roles.png)
   
 ### The NuGet registry and dotnet tool
 
-When you run `dotnet add package <name of dependency>`, .NET goes to a global registry called the NuGet.org registry and looks for the code to download. It's located at `https://nuget.org`. You can browse this page for packages as well, if you visit it by using a browser. Every package has a dedicated website you can go to. On these sites, you can learn more about where the source code resides and find other information, like metrics on downloads, and information about maintenance.
+When you run `dotnet add package <name of dependency>`, .NET goes to a global registry called the NuGet.org registry and looks for the code to download. It's located at `https://nuget.org`. You can browse this page for packages as well, if you visit it by using a browser. Every package has a dedicated website you can go to. 
+
+![Landing page for a NuGet package](../media/nuget-info.png)
+
+On these sites, you can learn more about where the source code resides and find other information, like metrics on downloads, and information about maintenance.
+
+![Information and metrics on a NuGet package](../media/nuget-downloads.png)
 
 ### dotnet commands
 
