@@ -2,7 +2,7 @@ Integrating features into mixed-reality apps that use APIs and input sources suc
 
 Here, you'll learn about the APIs and resources that must be enabled to access a mixed-reality app created in Unity.
 
-## MRTK speech commands start behavior
+## MRTK speech command for start behavior
 
 By default, the Mixed Reality Toolkit (MRTK) speech commands are configured to start automatically when a Unity scene loads. This setting enables you to use speech to manipulate holograms or do other actions such as toggling the **Diagnostics** panel with the command **Toggle Diagnostics**. 
 
