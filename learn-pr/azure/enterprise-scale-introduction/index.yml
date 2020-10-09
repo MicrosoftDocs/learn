@@ -21,7 +21,7 @@ prerequisites: |
   - Basic knowledge of Azure Enterprise Agreements
   - Basic knowledge of management groups and subscriptions
   - Intermediate knowledge of Azure networking, including cross-region and on-premises connectivity
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/enterprise-scale-introduction.svg
 levels:
 - beginner
 roles:
