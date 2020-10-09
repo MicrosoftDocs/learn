@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.over-the-moon-ai.5-train-model
+uid: learn.student-evangelism.over-the-moon-ai.image-recognition.5-train-model
 metadata:
   title: Train the Custom Vision service
   description: Train the Custom Vision service.
