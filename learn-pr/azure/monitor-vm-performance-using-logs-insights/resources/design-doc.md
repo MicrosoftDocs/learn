@@ -25,13 +25,13 @@ Monitor performance of virtual machines using Azure Monitor Logs and Virtual Mac
 
 ## Summary
 
-First, you will evaluate Azure Monitor log tooling in your journey to better the monitoring environment for your company. From there, you will deploy a Log Analytics workspace. Once the Log Analytics workspace is ready, you will onboard VMs to the Log Analytics workspace and configure VM Insights. In order to understand the types of data you can extract, you will start to build familiarity with the syntax of Azure Monitor log queries inside Log Analytics workspace using standard operators. Once you feel comfortable with the structure, you will take some of the pre-configured queries in a Log Analytics workspace and query performance of virtual machines using the Kusto Query Language.
+First, you will evaluate Azure Monitor log tooling in your journey to better the monitoring environment for your company. From there, you will deploy a Log Analytics workspace. Once the Log Analytics workspace is ready, you will onboard VMs to the Log Analytics workspace and configure VM Insights. In order to understand the types of data you can extract, you will start to build familiarity with the syntax of Azure Monitor log queries inside a Log Analytics workspace using standard operators. Once you feel comfortable with the structure, you will take some of the pre-configured queries in a Log Analytics workspace and query performance of virtual machines using the Kusto Query Language.
 
 ## Learning objectives
 
 By the end of this module you should be able to:
 1. Evaluate Azure Monitor Logs and VM Insights.
-1. Configure Log Analytics workspace.
+1. Configure a Log Analytics workspace.
 1. Build queries from heartbeat and insights tables.
 
 ## Chunk your content into subtasks
@@ -50,9 +50,9 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-Imagine you're newly hired into an IT department for a large financial services firm. From an operational perspective, the IT department has been building more workloads and applications in Azure. Monitoring these workloads and applications have become difficult over time. The management team won't approve moving the on-premises monitoring environment to Azure on account of licensing costs. As part of the operations team, you'll be exploring cloud native tooling for monitoring and logging by examining Azure Monitor Logs, Log Analytics workspaces, and VM Insights.
+Imagine you're newly hired into an IT department for a large financial services firm. From an operational perspective, the IT department has been building more workloads and applications in Azure. Monitoring these workloads and applications has become difficult over time. The management team won't approve moving the on-premises monitoring environment to Azure on account of licensing costs. As part of the operations team, you'll be exploring cloud native tooling for monitoring and logging by examining Azure Monitor Logs, Log Analytics workspaces, and VM Insights.
 
-1. **What is Log Analytics and how does it differ from Azure Monitor?**
+1. **What is Azure Monitor, Azure Monitor Logs, and Log Analytics workspaces?**
 
     - Introduce Azure Monitor, Azure Monitor logs, and Log Analytics workspaces
         - Break down native logging in Azure for learner.
@@ -65,13 +65,13 @@ Imagine you're newly hired into an IT department for a large financial services 
         - Workspace-centric model
         - Table level RBAC
         - Permissions model for reading and writing logs
-    - Highlight insights and solutions.
+    - Highlight vm agents, insights, and solutions.
         - Allow an ability to process log data without exposing the user to underlying queries.
 
     **Knowledge check**
 
     1. You start out by talking to individual business units about monitoring wants and needs at the start of your assignment. You determine each business unit only needs to query logs generated from their resources. Which access model would you select for your Log Analytics deployment?
-    1. What do Insights provide access to?
+    1. What does VMInsights provide access to?
 
 1. **Exercise - Set up Log Analytics workspace and VM Insights**
 

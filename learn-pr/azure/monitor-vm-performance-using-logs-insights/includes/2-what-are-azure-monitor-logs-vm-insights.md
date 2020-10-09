@@ -1,23 +1,44 @@
-What is Log Analytics and how does it differ from Azure Monitor?
+## What is Azure Monitor, Azure Monitor Metrics, Azure Monitor Logs, and a Log Analytics workspace?
 
-Introduce Azure Monitor, Azure Monitor logs, and Log Analytics workspaces
+There are a few different services that make up the native monitoring story in Azure. Each service can be considered a tool, meant to assist different aspects of monitoring Azure resources.
 
-- Break down native logging in Azure for learner.
-- Resource logging is automatically sent to Azure Monitor.
-- Discuss differences between metrics and logs.
+Let's start with [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview), as every other tool stems from this service. Fundamentally, Azure Monitor collects and analyzes data generated from Azure resources. Azure Monitor can capture application monitoring data, guest OS monitoring data, Azure resource monitoring data, Azure subscription monitoring data, and Azure tenant monitoring data.
 
-Plan Log Analytics workspaces deployment and highlight VM onboarding
+Data collected by Azure Monitor is comprised of metrics ([Azure Monitor Metrics](https://docs.microsoft.com/azure/azure-monitor/platform/data-platform-metrics)) and logs ([Azure Monitor Logs](https://docs.microsoft.com/azure/azure-monitor/platform/data-platform-logs)). Azure Monitor Metrics are lightweight numerical values stored in a time-series database that can be used for near real time (NRT) alerting. Some examples of metrics captured include IOPS percentages and CPU cycles. Azure Monitor Logs collects and organizes log data from Azure resources. Log data is stored in a [Log Analytics workspace](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview#what-is-log-analytics), which can be queried for trend analysis and alerting. Some examples of logs captured include Windows event logs and syslogs.
 
-- Include how-to screen shot
+The major difference between Azure Monitor Metrics and Azure Monitor Logs surrounds the structure of data generated. Azure Monitor Metrics can only store numeric data using a specific structure, while Azure Monitor Logs can store a variety of data types, each using their own structure. Azure Monitor Logs can also store Azure Monitor Metric data as well.
 
-Discuss different access models for Log Analytics workspaces
+Azure Monitor Logs are based upon Azure Data Explorer. A Log Analytics workspace is the equivalent of a database inside the Azure Data Explorer service. For the most part, log data table structure is the same and both resources use the Kusto Query Language (KQL) to extract data.
 
-- Resource-centric model
-- Workspace-centric model
-- Table level RBAC
-- Permissions model for reading and writing logs
+In addition to logs and metrics, Azure resources also emit [Azure platform logs](https://docs.microsoft.com/azure/azure-monitor/platform/platform-logs-overview) as well. Platform logs provide comprehensive diagnostic and auditing information for Azure resources and the underlying Azure platform. Platform logs complete the Azure native monitoring toolkit for operations teams. Platform logs are [resource logs](https://docs.microsoft.com/azure/azure-monitor/platform/resource-logs) (formerly known as diagnostic logs), [activity logs](https://docs.microsoft.com/azure/azure-monitor/platform/activity-log), and [Azure Active Directory logs](https://docs.microsoft.com/azure/active-directory/reports-monitoring/overview-reports). As of September of 2018, all resources automatically generate platform logs and send data to Azure Monitor. Administrators need to configure certain platform logs to be forwarded to one or more destinations (i.e. Log Analytics) to be retained.
 
-Highlight insights and solutions.
+In order to visualize everything, please reference the following breakdown to better understand all the ways Azure Monitor provides an extensive understanding of how resources are performing:
+![Azure Monitor Diagram](https://docs.microsoft.com/azure/azure-monitor/media/overview/overview.png)
 
-- Allow an ability to process log data without exposing the user to underlying queries.
+## Plan Log Analytics workspaces deployment
 
+One of the tasks involved with a Log Analytics deployment is picking the right design, as each company has different requirements. At the core, Log Analytics workspaces are containers where Azure Monitor data is collected, aggregated, and analyzed. To understand this visually, the following visual provides more insight into all the different types of logs a Log Analytics workspace can ingest.
+
+![Log Analytics Diagram](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/media/design-logs-deployment/logs-data-model-01.png)
+
+As of March 2019, a number of Azure features were introduced to help Log Analytics workspace adoption within enterprises. Log Analytics workspaces provide different levels of access control for the collected logs. The first feature surrounds [access modes](https://docs.microsoft.com/azure/azure-monitor/platform/design-logs-deployment#access-mode). There are two options for accessing data collected in a Log Analytics workspace. The workspace-context access mode provides access to all logs in a workspace where the permission is assigned. Queries are scoped to all data in all tables. An example would be central IT permissions. The resource-context access mode provide access to view logs for resources in all tables you have access to. Queries are scoped to only data associated with that resource. An example would be application support teams or DevOps teams.
+
+From there, the [access control mode](https://docs.microsoft.com/azure/azure-monitor/platform/design-logs-deployment#access-control-mode) defines how permissions work for any given Log Analytics workspace. Require workspace permissions means a user would have access to all data in any table where permissions have been defined, which does not allow granular role based access control (RBAC). Then there is the use resource or workspace permissions, which allows for granular RBAC as users can only see log data for resources they are permissioned to view. Permissions can be applied to an individual or to groups of users for the workspace or resource.
+
+To take it one step further, [table level RBAC](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-access#table-level-rbac) provides a mechanism to define more granular data control inside a Log Analytics workspace in conjunction with other permissions listed above. This feature allows an administrator to define what specific data types are accessible to a set of users. Configuring table level RBAC requires [Azure custom roles](https://docs.microsoft.com/en-us/azure/role-based-access-control/custom-roles) to either grant or deny access to specific tables. These roles wind up being applied to Log Analytics workspaces, with either workspace-context or resource-context access modes configured.
+
+From a daily operations point of view, the best strategy is to limit the total amount of workspaces required for daily operations. Reducing the number of workspaces may make administration and query experience easier and quicker. Multiple workspaces may be a design consideration if you are employed by a global company and require data sovereighty, for example.
+
+## VM Agents, Solutions, and VMInsights
+
+Compute resources in Azure require a series of [agents](https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview) to help collect monitoring data. All agents allow customers to measure performance, responsiveness, and availability of guest operating systems and underlying workloads.
+
+VMs require the [Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview#log-analytics-agent), which collects logs and performance data for VMs in Azure, other clouds, or on-premises. All data is sent to a Log Analytics workspace. This agent also allows the onboarding of [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) and [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview). The agent works in conjunction with Azure Automation accounts to onboard solutions like [Azure Update Management](https://docs.microsoft.com/azure/automation/update-management/update-mgmt-overview), [Azure Automation State Configuration](https://docs.microsoft.com/azure/automation/automation-dsc-overview), along with [Azure Automation Change Tracking and Inventory](https://docs.microsoft.com/azure/automation/change-tracking).
+
+VMs in Azure can also ensure the [Azure diagnostics extension](https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview#azure-diagnostics-extension) is enabled to receive additional data from guest operating systems and workloads living on compute resources. This data can be sent to a third party tool by using [Azure Event Hubs](https://docs.microsoft.com//azure/azure-monitor/platform/diagnostics-extension-stream-event-hubs), sent to [Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction) for archival, sent to [Azure Monitor Metrics](https://docs.microsoft.com/azure/azure-monitor/platform/data-platform-metrics), or collect [boot diagnostics](https://docs.microsoft.com/azure/virtual-machines/troubleshooting/boot-diagnostics) that help with investigation for VM boot issues.
+
+From there, the [Dependency agent](https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview#dependency-agent) is something else that can be used to collect discovered data about certain processes running on virtual machines. The Dependency agent maps all dependencies between VMs and any external process dependencies.
+
+In order for a Log Analytics workspace to be used with Azure Monitor VM log data, the [VMInsights solution](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-ga-release-faq) needs to be installed. As of January 2020, VMInsights is a new service that provides additional visibility and capabilities for data collection of VMs. The solution uses a table named InsightsMetrics so administrators are able to query performance and utilization data for VMs in near real time. VMInsights is essentially a set of features that allow you to monitor VMs in more detail, from collecting the telemetry from your VM and then displaying all data in a meaningful way, all with a single click. VMInsights allow administrators an ability to process log data without exposing the underlying queries.
+
+Additionally, there are a number of [solutions](https://docs.microsoft.com/azure/azure-monitor/monitor-reference#insights-and-core-solutions) an administrator can install or enable to provide deeper analytics on any given Azure application or service. Each monitoring solution requires a Log Analytics workspace to store collected data. Some solutions also require an Automation Account as well, which contain resources like runbooks that help complete the solution.
