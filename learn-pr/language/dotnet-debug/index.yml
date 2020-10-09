@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.azure.dotnet-debug
 metadata:
-  title: Interactively debug Node.js apps with the built-in and Visual Studio Code debuggers
-  description: Learn how to efficiently debug your Node.js app by using Visual Studio Code to fix your bugs quickly. Use the interactive debugger within Visual Studio Code to analyze and fix your JavaScript/TypeScript applications.
-  ms.date: 06/04/2020
+  title: Interactively debug .NET apps with the built-in and Visual Studio Code debuggers
+  description: Learn how to efficiently debug your .NET app by using Visual Studio Code to fix your bugs quickly. Use the interactive debugger within Visual Studio Code to analyze and fix your C# applications.
+  ms.date: 10/09/2020
   author: jongalloway
   ms.author: jogallow
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Interactively debug Node.js apps with the built-in and Visual Studio Code debuggers
-summary: Learn how to efficiently debug your Node.js app by using Visual Studio Code to fix your bugs quickly.
+title: Interactively debug .NET apps with the built-in and Visual Studio Code debuggers
+summary: Learn how to efficiently debug your .NET app by using Visual Studio Code to fix your bugs quickly.
 abstract: |
   By the end of this module, you will be able to:
-  - Use the Visual Studio Code debugger with a Node.js program.
+  - Use the Visual Studio Code debugger with a .NET program.
   - Create breakpoints and run your code step by step to find issues.
   - Inspect your program state at any execution step.
   - Rewind the call stack to find the source of an exception.
@@ -23,18 +23,20 @@ roles:
 - developer
 - student
 products:
-- azure
+- dotnet
 prerequisites: |
-  - Local installations of [Node.js](https://nodejs.org) and [Visual Studio Code](https://code.visualstudio.com)
+  - Local installations of [.NET Core SDK](https://dotnet.microsoft.com/download)
+  - [Visual Studio Code](https://code.visualstudio.com)
+  - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
 units:
-- learn.azure.dotnet-debug.1-introduction
-- learn.azure.dotnet-debug.2-debugger
-- learn.azure.dotnet-debug.3-run-your-code-step-by-step
-- learn.azure.dotnet-debug.4-use-built-in-debugger
-- learn.azure.dotnet-debug.5-analyze-your-program-state
-- learn.azure.dotnet-debug.6-use-vs-code-debugger
-- learn.azure.dotnet-debug.7-knowledge-check
-- learn.azure.dotnet-debug.8-summary
+- learn.dotnet-debug.1-introduction
+- learn.dotnet-debug.2-debugger
+- learn.dotnet-debug.3-analyze-your-program-state
+- learn.dotnet-debug.4-use-vs-code-debugger
+- learn.dotnet-debug.5-logging-and-tracing
+- learn.dotnet-debug.6-use-logging-and-tracing
+- learn.dotnet-debug.7-knowledge-check
+- learn.dotnet-debug.8-summary
 
 badge:
-  uid: learn.azure.dotnet-debug.badge
+  uid: learn.dotnet-debug.badge

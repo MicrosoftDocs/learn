@@ -17,4 +17,4 @@ Ultimately, you'll be able to find bugs effectively in your .NET programs, and y
 
 ## Prerequisites
 
-Local installations of [.NET](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com)
+Local installations of [.NET Core SDK](https://dotnet.microsoft.com/download),  [Visual Studio Code](https://code.visualstudio.com), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
