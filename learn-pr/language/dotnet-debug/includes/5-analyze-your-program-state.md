@@ -8,13 +8,13 @@ In order to set up Visual Studio Code for .NET debugging, we'll need a .NET proj
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
-1. Create a new folder named `dotnet-debug` in the location of your choice, and then click **Select Folder**.
+1. Create a new folder named `DotnetDebug` in the location of your choice, and then click **Select Folder**.
 
 1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
 1. In the terminal window, copy and paste the following command.
 
-    ```bash
+    ```dotnetcli
     dotnet new console
     ```
 
@@ -22,7 +22,7 @@ In order to set up Visual Studio Code for .NET debugging, we'll need a .NET proj
 
 1. In the terminal window, copy and paste the following command to run the "Hello World" program.
 
-    ```bash
+    ```dotnetcli
     dotnet run
     ```
 
@@ -44,15 +44,52 @@ Visual Studio Code will install the **C#** extension, and will show an additiona
 
 You can close the tab titled "Extension: C#" to focus on the code we'll be debugging.
 
+## Enhance the app
+
+Our current project just writes a "Hello World" message to the console, which doesn't give us much to debug. We'll add a little code to make it a little more interesting.
+
+1. Open *Program.cs* by clicking on it.
+
+1. Replace the contents of the `Main` method in *Program.cs*, which is the line that calls `Console.WriteLine`, with the following code:
+
+    ```csharp
+    Console.WriteLine("\nWhat is your name? ");
+    var name = Console.ReadLine();
+    var date = DateTime.Now;
+    Console.WriteLine($"\nHello, {name}, on {date:d} at {date:t}!");
+    Console.Write("\nPress any key to exit...");
+    Console.ReadKey(true);
+    ```
+
+   This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the [System.DateTime.Now](https://docs.microsoft.com/dotnet/api/system.datetime.now#System_DateTime_Now) property, which contains the current local time, and assigns it to a variable named `date`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the [System.Console.ReadKey(System.Boolean)](https://docs.microsoft.com/dotnet/api/system.console.readkey#System_Console_ReadKey_System_Boolean_) method to wait for user input.
+
+   The `\n` represents a newline character.
+
+   The dollar sign (`$`) in front of a string lets you put expressions such as variable names in curly braces in the string. The expression value is inserted into the string in place of the expression. This syntax is referred to as [interpolated strings](../../csharp/language-reference/tokens/interpolated.md).
+
+1. Save your changes.
+
+1. Let's get a look at how the updated code works before debugging it. Run the program by typing the following in the Terminal:
+
+   ```dotnetcli
+   dotnet run
+   ```
+
+1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
+
+   :::image type="content" source="..media/run-modified-program.png" alt-text="Terminal window with modified program output":::
+
+1. Press any key to exit the program.
+
+### Add breakpoints
+
 In Visual Studio Code, select the **Run** tab to access the debugger tool.
 
 :::image source="../media/run-tab.png" alt-text="Screenshot of Visual Studio Code debug tab.":::
 
-### Add breakpoints
+When you start the Visual Studio Code debugger, it immediately begins executing your code. If your program ends quickly, you might not even have the chance to interact with the debugger. That's why you might want to add some breakpoints before you start it.
 
-As opposed to the built-in .NET command-line debugger, the Visual Studio Code debugger immediately starts executing your code. If your program ends quickly, you might not even have the chance to interact with the debugger. That's why you might want to add some breakpoints before you start it.
-
-To add a breakpoint in your code, open your `.js` program and then select the left side of the line number, on the line you want to break. You should see a red circle after the breakpoint is enabled. To remove it, select the red circle again.
+To add a breakpoint in your code, open your `Program.cs` file and then select the left side of the line number, on the line you want to break. You should see a red circle after the breakpoint is enabled. To remove it, select the red circle again.
 
 :::image source="../media/breakpoint.png" alt-text="Screenshot of a breakpoint added in the Visual Studio Code editor window.":::
 
