@@ -1,5 +1,3 @@
-# Summary
-
 As we all navigate this ever growing field of technology and innovation, it is up to us to identify opportunities to be creative. Each of us has had a unique journey that has given us a lens through which we can see challenges that need addressing and unique solutions for them. 
 
 Fei Fei has shown us that through passion and love you can achieve more than you thought was possible, you can literally fly over the moon. But she also taught us that solutions require determination and resilience too. As you continue on your journey through learning to code, learning how to leverage AI, or learning about the role data plays in our world, remember that it is your responsibility to bring your whole self and to recognize your impact. 

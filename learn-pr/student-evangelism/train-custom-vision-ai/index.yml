@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.student-evangelism.image-recognition
+uid: learn.student-evangelism.train-custom-vision-ai
 metadata:
   title: Use AI to recognize images by using Azure Custom Vision services
   description: Use AI to recognize images by using Azure Custom Vision services.
@@ -27,13 +27,13 @@ roles:
 products:
 - azure-custom-vision
 units:
-- learn.student-evangelism.image-recognition.1-introduction
-- learn.student-evangelism.image-recognition.2-set-up-azure
-- learn.student-evangelism.image-recognition.3-what-is-ai
-- learn.student-evangelism.image-recognition.4-choose-pictures
-- learn.student-evangelism.image-recognition.5-train-model
-- learn.student-evangelism.image-recognition.6-test-model
-- learn.student-evangelism.image-recognition.7-knowledge-check
-- learn.student-evangelism.image-recognition.8-summary
+- learn.student-evangelism.train-custom-vision-ai.1-introduction
+- learn.student-evangelism.train-custom-vision-ai.2-set-up-azure
+- learn.student-evangelism.train-custom-vision-ai.3-what-is-ai
+- learn.student-evangelism.train-custom-vision-ai.4-choose-pictures
+- learn.student-evangelism.train-custom-vision-ai.5-train-model
+- learn.student-evangelism.train-custom-vision-ai.6-test-model
+- learn.student-evangelism.train-custom-vision-ai.7-knowledge-check
+- learn.student-evangelism.train-custom-vision-ai.8-summary
 badge:
-  uid: learn.student-evangelism.image-recognition.badge
+  uid: learn.student-evangelism.train-custom-vision-ai.badge
