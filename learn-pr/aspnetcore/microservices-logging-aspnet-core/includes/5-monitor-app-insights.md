@@ -15,7 +15,7 @@ A view similar to the following appears:
 
 In the preceding image, notice the following things:
 
-- Sample telemetry is displayed in the pane on the right as it's ingested in real time. You can see that *webshoppingagg* is experiencing failures as it calls services on which it depends. This behavior is expected while the app is starting. Your telemetry may contain similar failures, depending on when you view the portal.
+- Sample telemetry is displayed in the pane on the right as it's ingested in real time. You can see that *webshoppingagg* is experiencing failures when connecting to services on which it depends. This behavior is expected while the app is starting. Your telemetry may contain similar failures, depending on when you view the Azure portal.
 - Incoming and outgoing dependency requests are represented by real-time graphics. The graphics illustrate the rate, duration, and failure rate of the requests.
 - The service's overall health is displayed in charts representing memory, CPU usage, and exceptions rate.
 - The **Servers** pane lists the physical nodes used by the application. In this example, there's a single node. The data on this page can be filtered by node by selecting the server name from the list.
@@ -94,7 +94,7 @@ The application map provides one way of exploring captured telemetry. You can al
 
     :::image type="content" source="../media/5-monitor-app-insights/add-filter-button.png" alt-text="Add filter button" border="true" lightbox="../media/5-monitor-app-insights/add-filter-button.png":::
 
-1. In the **Filter** panel that appears, enter *Tele* in the **Properties** text box. Select the *trace* box, and select the **Done** button.
+1. In the **Filter** panel that appears, enter *Tele* in the **Properties** text box. Select the *trace* check box, and select the **Done** button.
 
     :::image type="content" source="../media/5-monitor-app-insights/properties-filter.png" alt-text="Properties filter text box" border="true" lightbox="../media/5-monitor-app-insights/properties-filter.png":::
 
