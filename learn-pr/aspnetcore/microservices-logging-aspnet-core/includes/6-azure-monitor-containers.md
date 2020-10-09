@@ -37,7 +37,7 @@ Besides the general cluster dashboard, you can also explore any tab to view more
 
 ## Create a metric for the Prometheus endpoint
 
-Azure Monitor for containers can be integrated with Prometheus to view app and workload metrics. The metrics are collected from nodes and Kubernetes using Kusto queries to create custom alerts and dashboards.
+Azure Monitor for containers can be integrated with Prometheus to view app and workload metrics. The metrics are collected from nodes and Kubernetes using Kusto queries. Custom alerts and dashboards can be created to analyze performance details.
 
 Complete the following steps to implement a counter metric for the request count on the catalog service:
 
