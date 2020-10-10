@@ -2,7 +2,7 @@ Now that the application is started development it is good to add additional dia
 
 ## Write to the debug console
 
-Before debuging the application let's add additional debug diagnostics. This will help  diagnose the application while it is being run under debug. 
+Before debugging the application let's add additional debug diagnostics. This will help  diagnose the application while it is being run under debug. 
 
 Add a `WriteLine` statement at the start of the `` method to get clarity when debugging through the code.
 
@@ -24,7 +24,7 @@ Debug the application and you should see the following output:
 
 ## Check for conditions with Assert
 
-In some situations you may want to stop the entire running application when a certain condition is not met. Using `Debug.Assert` allows you to check for a condition and output additional information about the state of the application.
+In some situations, you may want to stop the entire running application when a certain condition is not met. Using `Debug.Assert` allows you to check for a condition and output additional information about the state of the application.
 
 ```csharp
 Debug.Assert(condition, "X is not 0 and it should be.");
@@ -60,7 +60,7 @@ Now, let's run the application in `Release` configuration with the following com
 dotnet run --configuration Release
 ```
 
-Note that the application successfully runs to completion because we are no longer in thje `Debug` configuration.
+Note that the application successfully runs to completion because we are no longer in the `Debug` configuration.
 
-Congratulations, you have succesfully and efficiently debugged code using features of .NET including `Debug.WriteLine` and `Debug.Assert`. Well done!
+Congratulations, you have successfully and efficiently debugged code using features of .NET including `Debug.WriteLine` and `Debug.Assert`. Well done!
 

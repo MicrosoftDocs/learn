@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.dotnet-debug.5-analyze-your-program-state
+uid: learn.dotnet-debug.3-analyze-your-program-state
 title: Debug with Visual Studio Code
 metadata:
   title: Debug with Visual Studio Code
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-analyze-your-program-state.md)]
+  [!include[](includes/3-analyze-your-program-state.md)]
