@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.moon-sample-collection.6-understand-modules
+uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.4-setup-cleanse.data
 metadata:
-  title: Understanding the data in the Missions Dataframe
-  description: Understanding the data in the Missions Dataframe.
+  title: Determine the question to inform data cleansing
+  description: Determine the question to inform data cleansing.
   ms.date: 10/20/2020
   author: sguthals # Your GitHub username (or whomever you'd like to give author attribution to)
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Understanding the data in the Missions Dataframe
+title: Determine the question to inform data cleansing
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-understand-modules.md)]
+  [!include[](includes/4-setup-cleanse.data.md)]

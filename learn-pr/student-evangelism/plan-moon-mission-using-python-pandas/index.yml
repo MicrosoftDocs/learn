@@ -1,14 +1,14 @@
 ### YamlMime:Module
-uid: learn.student-evangelism.moon-sample-collection
+uid: learn.student-evangelism.plan-moon-mission-using-python-pandas
 metadata:
-  title: Data’s role in Moon missions - fictional and real
+  title: Plan a Moon mission by using Python pandas
   description: Like Fei Fei, use data to plan your own mission to the Moon. Ensure your rocket can not only get you there, but also bring you and all your Moon rocks safely back to Earth.
   ms.date: 10/20/2020
   author: sguthals
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Data’s role in Moon missions - fictional and real
+title: Plan a Moon mission by using Python pandas
 summary: Like Fei Fei, use data to plan your own mission to the Moon. Ensure your rocket can not only get you there, but also bring you and all your Moon rocks safely back to Earth.
 abstract:  |
   In this module, you will:
@@ -29,16 +29,16 @@ roles:
 products:
 - vs-code
 units:
-- learn.student-evangelism.moon-sample-collection.1-introduction
-- learn.student-evangelism.moon-sample-collection.2-rock-samples
-- learn.student-evangelism.moon-sample-collection.3-setup-import-data
-- learn.student-evangelism.moon-sample-collection.4-setup-cleanse.data
-- learn.student-evangelism.moon-sample-collection.5-add-modules
-- learn.student-evangelism.moon-sample-collection.6-understand-modules
-- learn.student-evangelism.moon-sample-collection.7-artemis-capacity
-- learn.student-evangelism.moon-sample-collection.8-prioritize-needed-rocks
-- learn.student-evangelism.moon-sample-collection.9-develop-recommendation
-- learn.student-evangelism.moon-sample-collection.10-knowledge-check
-- learn.student-evangelism.moon-sample-collection.11-summary
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.1-introduction
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.2-rock-samples
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.3-setup-import-data
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.4-setup-cleanse.data
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.5-add-modules
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.6-understand-modules
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.7-artemis-capacity
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.8-prioritize-needed-rocks
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.9-develop-recommendation
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.10-knowledge-check
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.11-summary
 badge:
-  uid: learn.student-evangelism.moon-sample-collection.badge
+  uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.badge

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.moon-sample-collection.7-artemis-capacity
+uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.2-rock-samples
 metadata:
-  title: Predict Artemis sample capacity
-  description: Predict Artemis sample capacity.
+  title: Understand the significance of Moon rocks
+  description: Understand the significance of Moon rocks.
   ms.date: 10/20/2020
   author: sguthals # Your GitHub username (or whomever you'd like to give author attribution to)
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Predict Artemis sample capacity
+title: Understand the significance of Moon rocks
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-artemis-capacity.md)]
+  [!include[](includes/2-rock-samples.md)]

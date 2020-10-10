@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.moon-sample-collection.5-add-modules
+uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.8-prioritize-needed-rocks
 metadata:
-  title: Add more data to the Missions Dataframe
-  description: Add more data to the Missions Dataframe.
+  title: Prioritize Data Based
+  description: Prioritize Data Based.
   ms.date: 10/20/2020
   author: sguthals # Your GitHub username (or whomever you'd like to give author attribution to)
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Add more data to the Missions Dataframe
+title: Prioritize Data Based
 durationInMinutes: 2
 content: |
-  [!include[](includes/5-add-modules.md)]
+  [!include[](includes/8-prioritize-needed-rocks.md)]
