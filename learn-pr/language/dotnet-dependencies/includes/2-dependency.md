@@ -39,7 +39,7 @@ There are several ways to install packages. There is a built-in Package Manager 
 
 ## Find a package
 
-Individual developers might use the global registry at [NuGet.org](https://www.nuget.org) to find and download packages they need for their apps. A company might have a strategy in place for what packages are OK to use and where to find them. 
+Individual developers might use the global registry at NuGet.org to find and download packages they need for their apps. A company might have a strategy in place for what packages are OK to use and where to find them. 
 
 ![List of popular packages on NuGet.org](../media/finding-nuget.png)
 
@@ -124,4 +124,3 @@ When you create or clone a project the included dependencies are not downloaded 
 Sooner or later, you're likely to realize that you no longer need a package. Or you might realize that the package you installed isn't the one you need. Maybe you've found one that will accomplish a task better. Whatever the reason, you should remove dependencies that you aren't using. Doing so keeps things clean. Also, dependencies take up space. 
 
 To remove a package from your project, you use the `remove` command like so: `dotnet remove <name of dependency>`. This command will remove the package from the `.csproj` file for your project.
-
