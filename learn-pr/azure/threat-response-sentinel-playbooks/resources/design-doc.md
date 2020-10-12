@@ -40,7 +40,12 @@ In this module you will learn about Security, Orchestration, Automation and Resp
 
 ## Lab exercise
 
-- Draft lab exercise title: Create an Azure Sentinel playbook
+- Draft lab exercise title: Creating Azure Sentinel playbook
+  - Task 1. Add a playbook from Logic App
+  - Task 2. Add a Azure Sentinel connector in Logic App
+  - Task 3. Add a trigger to Azure Sentinel Connection
+  - Task 4. Add an action
+  - Task 5. Test the result of the playbook
 - The lab will demonstrate how to automate a response on a security threat by creating Azure Sentinel playbook.
 - Feasibility questions or concerns?
 
@@ -74,7 +79,7 @@ After completing this module, you&#39;ll be able to:
 
 ### Module scenario
 
-Contoso is a medium-size financial services company in London with a branch office in New York. Contoso has moved aggressively to Azure services, and it currently uses Microsoft 365 and Azure Active Directory (Azure AD). It also uses Azure AD Identity Protection, Cloud App Security, Azure Advanced Threat Protection (Azure ATP), Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP), Microsoft Office 365 Advanced Threat Protection, Endpoint Protection, and Microsoft Azure Information Protection. Contoso is also using the paid version of Azure Security Center for threat protection for resources that are running on Azure and on-premises. Additionally, Contoso has other non-Microsoft assets to monitor and protect.
+Contoso is a medium-size financial services company in London with a branch office in New York. Contoso has moved aggressively to Azure services, and it currently uses Microsoft 365 and Azure Active Directory (Azure AD). It also uses Azure AD Identity Protection, Cloud App Security, Azure Advanced Threat Protection (Azure ATP), Microsoft Defender for Endpoint, Microsoft Office 365 Advanced Threat Protection, Endpoint Protection, and Microsoft Azure Information Protection. Contoso is also using the paid version of Azure Security Center for threat protection for resources that are running on Azure and on-premises. Additionally, Contoso has other non-Microsoft assets to monitor and protect.
 The IT director at Contoso realizes that SecOps team did not react quickly last time when a security incident occur in their organizations. 
 He believes that Azure Sentinel Playbooks will improve their SecOps team to quickly identify potential security threats and react appropriate to stop them.
 As Contoso's lead security engineer and Azure administrator, you've been asked to setup Azure Sentinel Playbook to respond on security incident.
@@ -93,10 +98,11 @@ After completing this unit, you&#39;ll be able to understand how to leverage Pla
 
 - What are Azure Sentinel Playbooks
 - Describe Azure Logic Apps
-- Explain the Azure Sentinel connector
+- Explain the Azure Sentinel Logic Apps connector
+- Use playbooks to orchestrate or Automate actions
 
 
-## 3rd unit: Trigger playbooks in real time
+## 3rd unit: Trigger playbooks near real time
 
 **Type of unit:** Learning content unit
 
@@ -106,8 +112,9 @@ After completing this unit, you&#39;ll be able to understand how to leverage Pla
 
 After completing this unit, you&#39;ll be able to create a playbook to automate a response to incident
 
-- Create a playbook to respond on incident in real time
+- Create a playbook to respond on incident near real time
 - Work with Azure Sentinel connection in Logic Apps
+- Automate a response to analytic rule with playbooks
 
 
 ## 4th unit: Run playbooks on demand
@@ -134,11 +141,18 @@ After completing this unit, you&#39;ll be able to run a playbook on demand from 
 
 ### Key content per learning objective
 
+- Draft lab exercise title: Creating Azure Sentinel playbook
+  - Task 1. Add a playbook from Logic App
+  - Task 2. Add a Azure Sentinel connector in Logic App
+  - Task 3. Add a trigger to Azure Sentinel Connection
+  - Task 4. Add an action
+  - Task 5. Test the result of the playbook
+  
 In this exercise, you will learn to:
 
 - Create a new playbook
 - Use the Logic App Designer
-- Work with Azure Sentinel Connector
+- Work with Azure Sentinel Logic Apps Connector
 
 Review the steps for this exercise: Create an Azure Sentinel using the portal.
 
