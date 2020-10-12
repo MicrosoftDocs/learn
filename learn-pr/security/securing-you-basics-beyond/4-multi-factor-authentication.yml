@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.securing-you-basics-beyond.4-multi-factor-authentication
 metadata:
-  title: Improve account security with multi-factor authentication
-  description: Understanding the basics of multi-factor authentication, and using it for securing your identity.
+  title: Improve account security with multifactor authentication
+  description: Understand the basics of multifactor authentication, and how to use it for securing your identity.
   ms.date: 05/30/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Improve account security with multi-factor authentication
+title: Improve account security with multifactor authentication
 durationInMinutes: 10
 content: |
   [!include[](includes/4-multi-factor-authentication.md)]
@@ -16,32 +16,32 @@ quiz:
   title: Knowledge check
   questions:
 
-  - content: 'What is the minimum number of factors needed for multi-factor authentication (MFA)?'
+  - content: "What is the minimum number of factors needed for multifactor authentication?"
     choices:
-    - content: 'One'
+    - content: "One"
       isCorrect: false
-      explanation: 'As implied by, multi-factor, more than one factor is required.'
-    - content: 'Two'
+      explanation: "As implied by *multifactor*, more than one factor is required."
+    - content: "Two"
       isCorrect: True
-      explanation: 'Yes, this is the minimum number of factors required for supporting MFA.'
-    - content: 'Three'
+      explanation: "Yes, this is the minimum number of factors required for supporting multifactor authentication."
+    - content: "Three"
       isCorrect: false
-      explanation: 'Though this makes accessing your account more secure, the minimum number of factors needed for MFA is two.'
-    - content: 'Zero'
+      explanation: "Though this makes accessing your account more secure, the minimum number of factors needed for multifactor authentication is two."
+    - content: "Zero"
       isCorrect: false
-      explanation: 'At least two factors are needed for MFA. Zero factors means you did not have a password.'
+      explanation: "At least two factors are needed for multifactor authentication. Zero factors means you don't have a password."
 
-  - content: 'When should you use MFA?'
+  - content: "When should you use multifactor authentication?"
     choices:
-    - content: 'Only for securing financial accounts.'
+    - content: "Only for securing financial accounts"
       isCorrect: false
-      explanation: 'You should not restrict use of MFA to just one type of account.'
-    - content: 'Only for securing access to a password manager.'
+      explanation: "You should not restrict use of multifactor authentication to just one type of account."
+    - content: "Only for securing access to a password manager"
       isCorrect: false
-      explanation: 'While this is probably the most important thing to secure using MFA, you should consider even more options.'
-    - content: 'For all your accounts, and wherever you can use MFA.'
+      explanation: "Though this is probably the most important thing to secure by using multifactor authentication, you should consider even more options."
+    - content: "For all your accounts, and wherever you can use multifactor authentication"
       isCorrect: true
-      explanation: 'The best option is to use MFA wherever it is available.'
-    - content: 'Never'
+      explanation: "The best option is to use multifactor authentication wherever it's available."
+    - content: "Never"
       isCorrect: false
-      explanation: 'Always use MFA where it is available.'
+      explanation: "Always use multifactor authentication where it's available."

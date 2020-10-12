@@ -68,7 +68,7 @@ Now save, commit, and push your changes to Git by following these steps:
 1. Open the command palette by pressing <kbd>F1</kbd>.
 1. Type and select **Git: Push**.
 
-### Try the fallback route
+### View the GitHub Action
 
 The GitHub Actions workflow will build and deploy your app.
 
@@ -80,5 +80,7 @@ Go to your repository in your browser and watch the GitHub Action's progress. Fo
 1. Click the **Build and Deploy Job** link
 
 You can see the progress of your GitHub Action as it builds and publishes your web app.
+
+### Try the fallback route
 
 Once it is redeployed, browse to your app. Notice the URL displays **/products**. Now refresh the browser by pressing <kbd>F5</kbd> to test your fallback route. Your app should reload successfully thanks to your fallback route in your routing rules!
