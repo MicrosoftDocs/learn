@@ -31,7 +31,7 @@ quiz:
       isCorrect: false
       explanation: Enterprise-scale is an architecture approach and reference implementation for any organization.
 
-  - content: Which one is a critical design area?
+  - content: Which one of the following is a critical design area?
     choices:
     - content: Subscription planning
       isCorrect: false
