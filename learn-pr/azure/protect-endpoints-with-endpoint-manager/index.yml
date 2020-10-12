@@ -16,7 +16,7 @@ abstract: |
   - Understand key endpoint management considerations involving the endpoint environment and available platforms.
 
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/protect-endpoints-with-endpoint-manager.svg
 ratingEnabled: false
 levels:
 - beginner
