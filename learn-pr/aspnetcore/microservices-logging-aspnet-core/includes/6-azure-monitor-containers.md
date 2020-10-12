@@ -39,7 +39,7 @@ Monitor the AKS cluster's health by following these steps:
 
 The **Insights** panel defaults to the **Cluster** tab, which shows the overall health of the cluster. The other tabs provide more granular health statuses for the individual nodes and containers.
 
-## Implement Prometheus metrics
+## Implement a Prometheus metric
 
 Prometheus is an open-source systems monitoring and alerting toolkit. Azure Monitor for containers can be integrated with Prometheus to view app and workload metrics. The metrics are collected from nodes and Kubernetes using a query language called Kusto. Custom alerts and dashboards can be created to analyze performance details.
 
@@ -135,7 +135,7 @@ The Docker image in ACR has been updated. A configuration change to the Helm cha
 
 ## Enable Prometheus metrics scraping in the AKS cluster
 
-Before Azure Monitor for containers can scrape Prometheus metrics from the catalog service, Prometheus metrics scraping must be enabled in the AKS cluster. The [Azure Monitor Prometheus scraping configuration documentation](/azure/azure-monitor/insights/container-insights-prometheus-integration) provides a Kubernetes ConfigMap YAML template. The ConfigMap contains non-confidential data in key-value pairs and enables users to apply Kubernetes configuration changes to AKS using the `kubectl` command.
+Before Azure Monitor for containers can scrape Prometheus metrics from the catalog service, Prometheus metrics scraping must be enabled in the AKS cluster. The [Azure Monitor Prometheus scraping configuration documentation](/azure/azure-monitor/insights/container-insights-prometheus-integration) provides a Kubernetes ConfigMap YAML template. The ConfigMap contains non-confidential data in key-value pairs and is used to apply Kubernetes configuration changes to AKS using the `kubectl` command.
 
 For your convenience, the ConfigMap YAML template has been provided in *deploy/k8s/azure-monitor/container-azm-ms-agentconfig.yaml*.
 
@@ -170,11 +170,11 @@ Use the app to generate some requests to the catalog service. Open another brows
 1. Verify the deployment has finished and the app is healthy using the **:::no-loc text="General application status":::** page.
 1. When the app is healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. Refresh the page a few times.
 
-## View logs
+## View the telemetry
 
 With the changes you made in the previous section, the catalog service will create a counter that counts every incoming request. A separate count is maintained for each endpoint.
 
-To troubleshoot a production issue, you've been asked to monitor requests for the full list of catalog items. The full list of catalog items is retrieved from the catalog service via an HTTP GET request to the `/catalog-api/api/v1/catalog/items` endpoint. To view the current count of requests to that endpoint, complete the following steps:
+To troubleshoot a production issue, you've been asked to monitor requests for the full list of catalog items. The list of catalog items is retrieved from the catalog service via an HTTP GET request to the `/catalog-api/api/v1/catalog/items` endpoint. To view the current count of requests to that endpoint, complete the following steps:
 
 1. In the Azure portal, use the search box at the top to find and open the Kubernetes service resource named *eshop-learn-aks*.
 1. Select the **Logs** option in the **Monitoring** section on the left side panel.
@@ -208,3 +208,5 @@ To troubleshoot a production issue, you've been asked to monitor requests for th
 
     > [!NOTE]
     > The Prometheus metrics are scraped once per minute. Expect a delay before the new count is reflected in the logs.
+
+In this unit, you enabled Azure Monitor for containers in an existing AKS cluster. Next, you added Prometheus performance metric code to the catalog service and redeployed the service to AKS. To integrate Azure Monitor for containers with Prometheus, you enabled Prometheus metrics scraping in the AKS cluster. Using a Kusto query in the Azure portal, you retrieved the Prometheus performance metric data&mdash;the number of requests to a specific catalog service endpoint.
