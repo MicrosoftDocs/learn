@@ -16,7 +16,7 @@ In the below exercise, you’re going to create an Azure Data Share from the por
 
 4.	Navigate to Create, and you’ll have to provide the following:
 
-    ![Product Azure Data Share](../media/azure-data-share-create-data-share.png)
+    ![Settings of Azure Data Share](../media/azure-data-share-create-data-share.png)
 
     **Settings**:
 
@@ -42,4 +42,4 @@ In the below exercise, you’re going to create an Azure Data Share from the por
 
 5.	You’ll be redirected to the below screen, in which you navigate to create, which will deploy the Azure Data share in your resource group.
 
-    ![Product Azure Data Share](../media/azure-data-share-create-data-share-review-create.png)
+    ![Deployment of Azure Data Share to resource group](../media/azure-data-share-create-data-share-review-create.png)
