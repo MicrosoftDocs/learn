@@ -27,7 +27,9 @@ The preceding script may take a couple minutes to finish. It enables the monitor
 AAD role propagation done[############################################]  100.0000%"Succeeded"
 ```
 
-Monitor the cluster health by following these steps:
+## Monitor Kubernetes cluster health
+
+Monitor the AKS cluster's health by following these steps:
 
 1. If needed, sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) using the same subscription used in previous units.
 1. Use the search box to find and open the Kubernetes service resource named *eshop-learn-aks*.
