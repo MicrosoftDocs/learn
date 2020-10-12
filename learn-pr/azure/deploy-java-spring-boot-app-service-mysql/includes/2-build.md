@@ -15,7 +15,4 @@ As a Java developer, you're already familiar with Spring applications. As you co
 
 ### Develop your Spring App
 
-### How to Connect to MySQL
-
-### How to test a the web app locally
-
+### Connect to MySQL
