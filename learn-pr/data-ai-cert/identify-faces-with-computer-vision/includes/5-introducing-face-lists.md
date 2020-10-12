@@ -30,7 +30,7 @@ Face lists are a great way to determine _face similarity_. For example, if you c
 
 In the following image, face similarity would find that the first and second faces are the same person. It would find that the third and fourth faces are similar.
 
-:::image type="content" source="(../media/5-face-lists-similarity.png" alt-text="Diagram that shows how identification and similarity are determined in a face list":::
+:::image type="content" source="../media/5-face-lists-similarity.png" alt-text="Diagram that shows how identification and similarity are determined in a face list":::
 
 ## Collection capacity
 
