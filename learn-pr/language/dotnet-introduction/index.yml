@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.languages.dotnet-introduction
+metadata:
+  title: Setup your C# beginner development environment with Visual Studio 2019 Community Edition
+  description: Get started learning C# by istalling and configuring the tools you'll need to build real applications.
+  ms.date: 10/12/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Setup your C# beginner development environment with Visual Studio 2019 Community Edition
+summary: Get started learning C# by istalling and configuring the tools you'll need to build real applications.
+abstract: |
+  In this module, you will:
+  - Install and configure Visual Studio 2019 Community Edition.
+prerequisites: None
+ratingEnabled: true
+iconUrl: /learn/achievements/dotnet-introduction.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+units:
+- learn.languages.dotnet-introduction.introduction
+- learn.languages.dotnet-introduction.what-is-dotnet
+- learn.languages.dotnet-introduction.how-to-use-dotnet
+- learn.languages.dotnet-introduction.build-your-first-app
+- learn.languages.dotnet-introduction.when-to-use-dotnet
+- learn.languages.dotnet-introduction.knowledge-check
+- learn.languages.dotnet-introduction.summary
+
+badge:
+  uid: learn.languages.dotnet-introduction.badge
