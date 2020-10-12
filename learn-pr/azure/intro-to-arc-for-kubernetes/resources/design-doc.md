@@ -1,4 +1,4 @@
-﻿# Manage hybrid Kubernetes clusters with Azure Arc for Kubernetes
+# Introduction to Azure Arc enabled Kubernetes
 
 ## Learner roles
 
@@ -25,17 +25,14 @@ In order to get the best learning experience from this module, you should have k
 
 - Containerization and its concepts
 - Kubernetes architecture and its concepts
-- Management of Kubernetes clusters
 - Azure Resource Manager
 - Azure Policy
-- Azure Monitor
 - Azure CLI
-- Azure Active Directory
-- Core DevOps principles
+- GitOps principles
 
 ## Module summary description
 
-This module introduces you to Azure Arc for Kubernetes, describes its core capabilities, its implementation process, and its basic management tasks.
+This module introduces you to Azure Arc enabled Kubernetes, describes its core capabilities, its implementation process, and its basic management tasks.
 
 ## Subtasks in this module
 
@@ -44,9 +41,9 @@ What main subtasks would be addressed in this module?
 - What are architectural components of Azure Arc enabled Kubernetes clusters
 - What are capabilities and use cases of Azure Arc enabled Kubernetes clusters
 - How to implement Azure Arc enabled Kubernetes clusters
-- How to manage and maintain configuration of Azure Arc enabled Kubernetes clusters by using Azure Policy
-- How to manage and maintain configuration of Azure Arc enabled Kubernetes clusters by using GitOps
-- How to deploy and maintain containerized applications on Azure Arc enabled Kubernetes clusters by using GitOps 
+- How to assure configuration conformance of Azure Arc enabled Kubernetes clusters at scale by using Azure Policy
+- How to assure run-time policy compliance with Azure Policy for Kubernetes
+- How to manage and maintain Azure Arc enabled Kubernetes clusters and containerized applications by using GitOps
 - How to monitor a Kubernetes cluster by using Azure Monitor
 
 ## Lab exercise
@@ -58,7 +55,7 @@ None
 - Describe Kubernetes, Azure Arc, and Azure Arc-enabled Kubernetes.
 - Connect Kubernetes clusters to Azure Arc.
 - Manage Azure Arc enabled Kubernetes clusters by using GitOps
-- Integrate Azure Arc enabled Kubernetes with Azure services.
+- Integrate Azure Arc enabled Kubernetes cluster with Azure services like Azure Monitor and Azure Policy.
 
 ## Estimated module duration
 
@@ -80,7 +77,7 @@ None
 
 Contoso is a medium-size financial services company with its headquarters in London and offices in New York and San Francisco. Contoso computing environment is hosted exclusively in its on-premises data centers, with majority of workloads fully containerized on Kubernetes, running on a third-party virtualization platform. Despite its fully modernized environment, Contoso is facing challenges imposed by capacity and agility constraints inherent to on-premises infrastructure. In addition, it also becomes increasingly difficult to manage in a consistent manner continually growing number of Kubernetes clusters. 
 
-To address the capacity and agility challenges, Contoso's IT management decided to migrate a significant portion of its containerized workloads to cloud. Weary of developing a single-vendor dependency, Contoso wants to leverage multiple cloud providers, although it is considering choosing Microsoft Azure as its main deployment target. This consideration is heavily influenced not only by the advantages of the Azure Kubernetes Service offering, but also by a wide range of hybrid benefits associated with Azure Arc, with its centralized, multi-platform management capabilities playing the primary role.
+To address the capacity and agility challenges, Contoso's IT management decided to migrate a significant portion of its containerized workloads to cloud. Wary of developing a single-vendor dependency, Contoso wants to leverage multiple cloud providers, although it is considering choosing Microsoft Azure as its main deployment target. This consideration is heavily influenced not only by the advantages of the Azure Kubernetes Service offering, but also by a wide range of hybrid benefits associated with Azure Arc, with its centralized, multi-platform management capabilities playing the primary role.
 
 Since Azure Arc is still in preview, the Contoso IT Engineering team was tasked with exploring and evaluating its capabilities in regard to Kubernetes-based workloads. It is your responsibility, as the lead system engineer to determine how Contoso can benefit from its hybrid management model while pursuing a multi-vendor strategy and maintaining some on-premises containerized workloads.
 
@@ -117,35 +114,34 @@ Describe architecture, components, and characteristics of Azure Arc enabled Kube
 
 **Type of unit:** Learning content unit
 
-**Estimated unit duration: 5 mins
+**Estimated unit duration:** 5 mins
 
 ### Learning objective(s) targeted
 
 Connect Kubernetes clusters to Azure Arc
 
-- Connect Kubernetes clusters to Azure Arc
-- Connect Kubernetes clusters to Azure Arc by using a service principal
+- Connect Kubernetes clusters to Azure Arc with Azure CLI
 
 
 ## 5th unit: Apply configuration of Azure Arc enabled Kubernetes clusters by using GitOps
 
 **Type of unit:** Learning content unit
 
-**Estimated unit duration: 6 mins
+**Estimated unit duration:** 6 mins
 
 ### Learning objective(s) targeted
 
 Apply configuration of Azure Arc enabled Kubernetes clusters by using GitOps
 
 - Describe GitOps
+- Concept video: demonstration of end-to-end GitOps flow on Azure Arc enabled Kubernetes clusters.
 - Apply configuration of Azure Arc enabled Kubernetes clusters by using GitOps
 
-
-## 6th unit: Enforce and audit configuration of Azure Arc enabled Kubernetes clusters by using Azure Policy
+## 6th unit: Integrate an Azure Arc enabled Kubernetes cluster with Azure Policy for Kubernetes
 
 **Type of unit:** Learning content unit
 
-**Estimated unit duration: 9 mins
+**Estimated unit duration:** 9 mins
 
 ### Learning objective(s) targeted
 
@@ -159,7 +155,7 @@ Enforce and audit configuration of Azure Arc enabled Kubernetes clusters by usin
 
 **Type of unit:** Learning content unit
 
-**Estimated unit duration: 6 mins
+**Estimated unit duration:** 6 mins
 
 ### Learning objective(s) targeted
 
@@ -173,7 +169,7 @@ Deploy containerized applications to Azure Arc enabled Kubernetes clusters by us
 
 **Type of unit:** Learning content unit
 
-**Estimated unit duration: 5 mins
+**Estimated unit duration:** 5 mins
 
 ### Learning objective(s) targeted
 
