@@ -13,7 +13,7 @@ In this module, you'll learn about the fundamental concepts of cloud computing, 
 Upon completion of this module, you'll be able to:
 
 - Identify the benefits and considerations of using cloud services.
-- Describe the differences between and among categories of cloud services.
+- Describe the differences between categories of cloud services.
 - Describe the differences between types of cloud computing.
 
 ## Prerequisites
