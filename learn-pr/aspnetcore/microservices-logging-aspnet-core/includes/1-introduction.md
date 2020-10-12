@@ -15,8 +15,8 @@ In this module, you will:
 - Implement diagnostics logging with Application Insights.
 - Implement performance monitoring with Application Insights.
 - Enable Azure Monitor for containers in a Kubernetes cluster.
-- Create a custom metric using Prometheus.
-- Monitor a custom metric using Azure Monitor for containers.
+- Create a custom performance metric using Prometheus.
+- Monitor a custom performance metric using Azure Monitor for containers.
 
 ## Prerequisites
 
