@@ -41,7 +41,9 @@ This module introduces you to Azure Sentinel workbooks which provide interactive
 
 ## Lab exercise
 
-- Draft lab exercise title: Creating a workbook using a template
+- Draft lab exercise title: Crating a workbook using a template
+  - Task 1. Create a workbook from template
+  - Task 2. Edit a workbook to modify the results
 - In this exercise students will become more familiar to interact with Azure Sentinel workbooks to visual collected security data.
 - Feasibility questions or concerns?
   - Create a new Azure Sentinel workbook
@@ -147,6 +149,10 @@ After completing this unit, you&#39;ll be to create Azure Sentinel workbook from
 
 ### Key content per learning objective
 
+- Draft lab exercise title: Crating a workbook using a template
+  - Task 1. Create a workbook from template
+  - Task 2. Edit a workbook to modify the results
+  
 In this exercise, you will learn to:
 
 - Create a new Azure Sentinel workbook
