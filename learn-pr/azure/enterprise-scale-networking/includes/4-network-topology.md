@@ -1,4 +1,4 @@
-For enterprise scale, we recommend two approaches for network topologies in Azure: a network topology based on Azure Virtual WAN or the traditional hub-and-spoke model. 
+For enterprise-scale, we recommend two approaches for network topologies in Azure: a network topology based on Azure Virtual WAN or the traditional hub-and-spoke model. 
 
 ## Azure Virtual WAN
 
