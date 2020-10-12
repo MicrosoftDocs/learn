@@ -1,4 +1,4 @@
-# Module: Create and manage rules in Azure Sentinel Analytics
+# Module: Threat Detection with Azure Sentinel Analytics
 
 ## Learner roles
 
@@ -26,7 +26,7 @@
 
 ## Module summary description
 
-This module introduces you to Azure Sentinel Analytics and describes the various types of rules. You can create rules for detecting suspicious events either by using predefined templates or writing your custom queries using Kusto Query Language.
+This module introduces you to Azure Sentinel Analytics and describes the various types of rules. You can create rules for detecting suspicious events either by using predefined templates or writing your custom queries using Kusto Query Language. There are range of predefined analytics rules based on Machine Learning, Fusion, derived from the security products and you can also pull a community written rules from Security Community in Github.
 
 ## Subtasks in this module
 
@@ -36,8 +36,9 @@ This module introduces you to Azure Sentinel Analytics and describes the various
 
 ## Lab exercise
 
-- Draft lab exercise title: Create analytics rule from templates and with custom KQL code
-- In the first lab students will create an Analytic rule from predefined rule templates. Second lab will describe the process of creating an Analytic rule from wizard using own KQL code.
+- Draft lab exercise title: Threat detection with Azure Sentinel Analytics
+  - Task 1: Create an incident analytic rule from existing template
+  - Task 2: Create a scheduled query rule
 
 ## Module learning objectives
 
@@ -70,7 +71,7 @@ This module introduces you to Azure Sentinel Analytics and describes the various
 
 ### Module scenario
 
-Contoso is a medium-size financial services company in London with a branch office in New York. Contoso has moved aggressively to Azure services, and it currently uses Microsoft 365 and Azure Active Directory (Azure AD). It also uses Azure AD Identity Protection, Cloud App Security, Azure Advanced Threat Protection (Azure ATP), Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP), Microsoft Office 365 Advanced Threat Protection, Endpoint Protection, and Microsoft Azure Information Protection. Contoso is also using the paid version of Azure Security Center for threat protection for resources that are running on Azure and on-premises. Additionally, Contoso has other non-Microsoft assets to monitor and protect.
+Contoso is a medium-size financial services company in London with a branch office in New York. Contoso has moved aggressively to Azure services, and it currently uses Microsoft 365 and Azure Active Directory (Azure AD). It also uses Azure AD Identity Protection, Cloud App Security, Azure Advanced Threat Protection (Azure ATP), Microsoft Defender for Endpoint, Microsoft Office 365 Advanced Threat Protection, Endpoint Protection, and Microsoft Azure Information Protection. Contoso is also using the paid version of Azure Security Center for threat protection for resources that are running on Azure and on-premises. Additionally, Contoso has other non-Microsoft assets to monitor and protect.
 The IT director at Contoso realizes that its security analysts face a huge triage burden. They not only deal with a high volume of alerts, but they also must correlate alerts from different product dashboards manually or by using a traditional correlation engine.
 
 The IT director believes that Azure Sentinel could provide a means to address Contoso's pain points:
@@ -96,6 +97,7 @@ After completing this unit, you&#39;ll be able to explain the importance of Azur
 - Understand the importance of Analytics for security
 - Understand Analytic rules
 - Explore Analytic home page
+- Map analytics rules to MITRE ATT&CK Tactics
 
 
 ## 3rd unit: Types of Analytics rules
@@ -114,7 +116,7 @@ After completing this unit, you&#39;ll be able to understand the following types
 - Fusion
 
 
-## 4th unit:Create an analytics rule from templates
+## 4th unit: Create an analytics rule from templates
 
 **Type of unit:** Learning content unit
 
@@ -158,7 +160,7 @@ After completing this unit, you&#39;ll be able to manage rules with modification
 - Delete the rule
 
 
-## 7th unit: Exercise: Create analytics rule from templates and with custom KQL code
+## 7th unit: Exercise: Threat detection with Azure Sentinel Analytics
 
 **Type of unit:** Exercise unit
 
@@ -172,6 +174,7 @@ In this exercise, you will learn to:
 
 - Create an action rule from template
 - Create an action rule using your own KQL code
+- Adjusting KQL from existing analytic rule
 
 Review the steps for this Exercise: Create analytics rule from templates and with custom KQL code.
 
