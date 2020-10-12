@@ -1,37 +1,19 @@
-<!-- Introductory text here: motivational scenario and lead-in. See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductions?branch=master 
+Imagive you're a spring developer working for a company that creates SpringBoot Java apps that currently run on on-premises servers. Your app also integrates to a relational database (in this case MySQL). You decide to migrate this Spring app to the Azure app service and want to make the migration as smooth as possible.
 
-For guidance on writing a scenario, see https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios?branch=master
+In this module, you will create a Spring boot web app using a [Spring Initializr](https://start.spring.io) and when you've finished, you'll configure it to run locally and test it. Once you've verified that your web app is working locally, you'll deploy and host it as an Azure App Service.
 
--->
-
-<!--
-
-Guidance for all content:
-
- - Ignore the linter warning about how the first line of a unit should be a header. The platform renders the unit title as an H1 at the top. All headers used in content should be H2 or smaller.
- - Links to other content (in Learn, Docs or anywhere else), put them in a section in the final Summary unit called "Learn more" or "Further reading" or something similar. If you need to mention the external resources in the content, indicate to the user that links are located at the end of the module.
-- All content, including images, must be original and not copied from Docs or anywhere else.
-- Screenshots: see https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-create-screenshot?branch=master for requirements and guidance.
-- Conceptual images and diagrams: Don't spend lots of time creating polished diagrams. Work with the Learn team to submit a conceptual image creation request if new art is needed.
-- Video: Work with your contact on the Learn team.
-- Zone pivots: See https://review.docs.microsoft.com/en-us/learn-docs/docs/unit-add-zone-pivots?branch=master
-- Think carefully about the knowledge prerequisites you declare for your content, and use them to shape the content and keep the scope reasonable. In both conceptual content and exercise steps, don't dwell on things you expect the reader to already know and understand.
-- Feel free to use HTML comments like these during authoring. They show up in published content as HTML comments - the platform doesn't render them on the page, but they are present in the pae source, so remove them all before publishing.
-
-Guidance for content and exercise units:
-
-- Most standard content should generally follow a pattern of alternating between "content" units and "exercise" units. See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-standardmodules?branch=master
-- Don't include a summary section in individual units
-- Don't include a sentence or section to transition to the next unit. The platform will insert the name of the next unit above the navigation button at the bottom
-
--->
+By the end of this module, you'll learn to incorporate SpringBoot apps to Azure App Service and integrate with a relational database.
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+In this module, you'll:
 
-<!--  Bullet list copied from index.yml -->
+- Develop a SpringBoot Web App
+- Connect your App to a MySQL database
+- Deploy the web app to Azure App services
 
 ## Prerequisites
 
-<!-- Bullet list copied from index.yml. If there are no prerequisites, remove this section -->
+- Experience writing SpringBoot Apps in Java
+- Experience working with MySQL databases
+- Experience working with Azure Web Apps

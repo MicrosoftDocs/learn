@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-java-spring-boot-app-service-mysql.5-exercise-deploy
+title: Deploy Exercise
+metadata:
+  title: Deploy Exercise
+  description: Deploy Exercise
+  ms.date: 10/05/2020
+  author: roryp
+  ms.author: ropreddy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-exercise-deploy.md)]
