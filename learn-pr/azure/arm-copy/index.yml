@@ -2,7 +2,7 @@ uid: learn.arm-copy
 metadata:
   title: Introduction to
   description: Learn how to
-  ms.date: 06/04/2020
+  ms.date: 10/12/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -17,6 +17,8 @@ levels:
   - beginner
 roles:
   - developer
+  - administrator
+  - solution-architect
 products:
   - vs
 prerequisites: None
