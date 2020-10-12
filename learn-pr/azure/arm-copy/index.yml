@@ -1,4 +1,4 @@
-uid: learn.undefined
+uid: learn.arm-copy
 metadata:
   title: Introduction to
   description: Learn how to
@@ -21,14 +21,14 @@ products:
   - vs
 prerequisites: None
 units:
-  - learn.undefined.1-introduction
-  - learn.undefined.2-copy
-  - learn.undefined.3-exercise-unit
-  - learn.undefined.4-conditions
-  - learn.undefined.5-conditions-exercise
-  - learn.undefined.6-secure-parameters
-  - learn.undefined.7-secure-parameters-exercise
-  - learn.undefined.8-knowledge-check
-  - learn.undefined.9-summary
+  - learn.arm-copy.1-introduction
+  - learn.arm-copy.2-copy
+  - learn.arm-copy.3-exercise-unit
+  - learn.arm-copy.4-conditions
+  - learn.arm-copy.5-conditions-exercise
+  - learn.arm-copy.6-secure-parameters
+  - learn.arm-copy.7-secure-parameters-exercise
+  - learn.arm-copy.8-knowledge-check
+  - learn.arm-copy.9-summary
 badge:
-  uid: learn.undefined.badge
+  uid: learn.arm-copy.badge
