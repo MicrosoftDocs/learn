@@ -12,7 +12,7 @@ title: Instrument a cloud-native ASP.NET Core microservice
 summary: Learn how to instrument your cloud-native ASP.NET Core microservices app to diagnose problems and monitor performance.
 abstract: |
   In this module, you will:
-  - Review important logging concepts.
+  - Review diagnostics logging and performance monitoring concepts.
   - Implement diagnostics logging with Application Insights.
   - Implement performance monitoring with Application Insights.
   - Enable Azure Monitor for containers in a Kubernetes cluster.

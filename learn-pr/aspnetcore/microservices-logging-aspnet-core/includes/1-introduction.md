@@ -11,7 +11,7 @@ You'll use your own Azure subscription to deploy the resources in this module. T
 
 In this module, you will:
 
-- Review important logging concepts.
+- Review diagnostics logging and performance monitoring concepts.
 - Implement diagnostics logging with Application Insights.
 - Implement performance monitoring with Application Insights.
 - Enable Azure Monitor for containers in a Kubernetes cluster.
