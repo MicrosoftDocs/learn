@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.arm-copy.7-secure-parameters-exercise
-title: Unit
+title: Exercise - Secure parameters
 metadata:
-  title: Unit
+  title: Exercise - Secure parameters
   description: Describe unit
   author: softchris
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 10/12/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

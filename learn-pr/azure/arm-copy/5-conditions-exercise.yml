@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.arm-copy.5-conditions-exercise
-title: Unit
+title: Exercise - Conditions and deployment order
 metadata:
-  title: Unit
+  title: Exercise - Conditions and deployment order
   description: Describe unit
   author: softchris
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 10/12/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

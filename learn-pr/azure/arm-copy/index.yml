@@ -23,7 +23,7 @@ prerequisites: None
 units:
   - learn.arm-copy.1-introduction
   - learn.arm-copy.2-copy
-  - learn.arm-copy.3-exercise-unit
+  - learn.arm-copy.3-exercise-copy
   - learn.arm-copy.4-conditions
   - learn.arm-copy.5-conditions-exercise
   - learn.arm-copy.6-secure-parameters
