@@ -202,7 +202,7 @@ You will now add a parameter to the template file.
 
 You have a custom test written at this point. However your template file naming does not fulfill the requirement. You therefore expect the upcoming test-run to fail. Ensure that is the case by taking the below steps:
 
-Use the existing Visual Studio Code integrated terminal window where Powershell has been started and the Test toolkit has been imported.
+Use the existing Visual Studio Code integrated terminal window where PowerShell has been started and the Test toolkit has been imported.
 
 1. In the same Visual Studio Code instance, run `Test-AzTemplate` from the integrated terminal:
 

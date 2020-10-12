@@ -76,7 +76,7 @@ You can sign into your Azure account from the terminal. If you are on Windows, t
 
 The command you are about to run will list your subscriptions and their IDs. The subscription ID is the second column.
 
-1. Run `Get-AzSubscription` to get a hold of the subscription id for the Concierge Subscription.
+1. Run `Get-AzSubscription` to get a hold of the subscription ID for the Concierge Subscription.
 
     ```powershell
     Get-AzSubscription
@@ -113,7 +113,7 @@ You need to set the resource group created for you in the sandbox as the default
        Use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**).
 
       > [!NOTE]
-      > Normally, when you use a PowerShell or an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[Set-AzDefault](https://docs.microsoft.com/powershell/module/az.accounts/set-azdefault?view=azps-4.5.0)** Powershell command.
+      > Normally, when you use a PowerShell or an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[Set-AzDefault](https://docs.microsoft.com/powershell/module/az.accounts/set-azdefault?view=azps-4.5.0)** PowerShell command.
 
 ## Deploy the first template to Azure
 
