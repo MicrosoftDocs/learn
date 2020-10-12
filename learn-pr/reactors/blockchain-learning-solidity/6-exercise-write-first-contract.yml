@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-learning-solidity.6-exercise-write-first-contract
+metadata:
+  title: Exercise - Write your first contract
+  description: Put together what you've learned so far about Solidity and write your first smart contract.
+  ms.date: 10/05/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Write your first contract
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-write-first-contract.md)]
