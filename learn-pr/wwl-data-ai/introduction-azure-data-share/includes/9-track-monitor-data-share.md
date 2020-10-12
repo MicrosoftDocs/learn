@@ -6,11 +6,11 @@ In order to monitor the invitation status that you’ve sent, you can check in t
 
 There are three states of the invitation:
 
-1.	*Pending:* this means that the recipient of the shared dataset has not accepted the invitation (yet)
-2.	*Accepted:* The Data Share Recipient has indeed accepted your invitation to start sharing data
+1.	*Pending:* = The recipient of the shared dataset has not accepted the invitation (yet).
+2.	*Accepted:* The Data Share Recipient has indeed accepted your invitation to start sharing data.
 3.	*Rejected:* The Data share recipient has declined the invitation. 
 
-If by accident, you sent a dataset that needed to be shared with another recipient, then deleting the invitation after it has been accepted, won’t revoke the access. If you need the access to the dataset to be revoked, you should do so through revoke access in the share subscription tab. 
+If by accident, you sent a dataset that needed to be shared with another recipient, then deleting the invitation after it has been accepted, won’t revoke the access. If you need to revoke the access to the dataset, you should do so through revoke access in the share subscription tab. 
 
 In order to monitor the share subscriptions, you can check the status in the Azure portal if you navigate to Sent Shares -> Share subscriptions. In this tab, you can find the details about the subscriptions that are active and created by the data consumers once they’ve accepted your invitation. As mentioned, if you want to stop updates to the data consumer, you should revoke the access to the share by selecting the share subscription and revoke. You can also check in the history tab of the share, when data is copied from you as a data provider, to the data consumer’s data store where parameters such as duration, frequency, and status of each snapshot can be monitored. 
 If you’ve selected a snapshot-based share, you’re able to view more details if you check the run start date. You will be able to view the following extra details (for up to 30 days, that is displayed):

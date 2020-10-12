@@ -2,12 +2,12 @@ There are two ways to receive a shared dataset and accept the invitation. In thi
 
 Once you’ve sent a data share to a recipient (i.e. data consumer), this recipient will have an email in their inbox with an invitation. 
 
-This is how the invitation looks like:
+The invitation looks like the following image:
 
 ![Email Invitation from Azure Data Share](../media/azure-data-share-invitation-email-example.png)
 
 
-To open the invitation click on ‘View invitation’ to see the invitation in Azure. 
+To open the invitation, click on ‘View invitation’ to see the invitation in Azure. 
 
 You’ll be redirected to the following screen in the Azure portal:
 
@@ -45,11 +45,11 @@ Select the dataset that you are going to map to the target store, and navigate t
 
 ![Map Dataset to Target](../media/azure-data-share-map-target.png)
 
-Under Map Datasets to target,  select the subscription, resource group and storage account that you’d like to receive the dataset into. For this purpose, we are going to receive the dataset into an Azure Data Lake Storage Account Gen 2:
+Under Map Datasets to target,  select the subscription, resource group, and storage account that you’d like to receive the dataset into. For this purpose, we are going to receive the dataset into an Azure Data Lake Storage Account Gen 2:
 
 ![Map Dataset to Target Settings](../media/azure-data-share-map-target-set.png)
 
-As the Target Data Type, select Azure Data Lake Storage gen2. Make sure you have selected the subscription you want to receive the dataset into, as well as the resource group, and storage account with a filesystem name. 
+As the Target Data Type, select Azure Data Lake Storage Gen2. Make sure you have selected the subscription you want to receive the dataset into, as well as the resource group, and storage account with a filesystem name. 
 
 Navigate to: ‘Map to Target’. 
 
@@ -69,7 +69,7 @@ If you want to trigger a snapshot, navigate to ‘Received Shares’ to the ‘D
 
 You have two possibilities for triggering snapshots, either Full snapshot, or incremental snapshot of the data. 
 
-When you haven’t triggered a snapshot before, and this is the first time receiving data from the data provider, select a full copy:
+When you haven’t triggered a snapshot before, and it is the first time receiving data from the data provider, select a full copy:
 
 ![Trigger Snapshot ](../media/azure-data-share-trigger-snapshot-daily.png)
 

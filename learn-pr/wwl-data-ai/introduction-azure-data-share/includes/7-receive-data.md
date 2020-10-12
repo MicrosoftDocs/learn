@@ -14,9 +14,9 @@ First of all,    the company that wants to share data with you, needs to invite 
 
     In order to open the invitation from the Azure portal, you can search in the Azure portal for Data Share Invitations where you will be taken into a list of data share invitations that you can accept/reject. 
 
-The next step is to receive the data on which you’re going to perform analytics on. The first step is that your data share resource’s managed identity needs to get access to the target Azure data store (such as  Data Lake, SQL DB etc.). 
+The next step is to receive the data that you are able to analyze. The first step is that your data share resource’s managed identity needs to get access to the target Azure data store (such as  Data Lake, SQL DB etc.). 
 
-In the case of receiving the data in a storage account, the data share resource-managed identity needs to be granted the Storage Blob Data Contributor role. There is no need to set this up manually, because if you specify a target data store through the Azure portal and you as a data consumer user has proper permission, the data share service can get this done automatically.
+If receiving the data in a storage account, the data share resource-managed identity needs to be granted the Storage Blob Data Contributor role. There is no need to set-up manually, because if you specify a target data store through the Azure portal and you as a data consumer user has proper permission, the data share service does this automatically.
  
 In other words, if you as a user is an owner or a member of a customer role in which you have Microsoft Authorization/role assignments/write permission of the datastore where the received data needs to land, this is done automatically. 
 
