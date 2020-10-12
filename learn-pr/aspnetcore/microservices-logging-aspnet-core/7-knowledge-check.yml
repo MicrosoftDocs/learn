@@ -14,60 +14,45 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: What's the primary goal when implementing a resiliency solution for an app?
+    - content: Which of the following is **NOT** true regarding logging and monitoring?
       choices:
-        - content: Make the app error-free.
+        - content: Diagnostic logging is a key factor for troubleshooting issues in production.
           isCorrect: false
-          explanation: "Making an app error-free is unlikely."
-        - content: Handling user errors transparently.
-          isCorrect: false
-          explanation: "Users should be provided useful feedback for errors."
-        - content: Handling transient infrastructure failures.
+          explanation: "Logs have text-based records of events collected while the app is running. The diagnostic information helps troubleshoot issues when the app doesn't behave as expected."
+        - content: The purpose of application monitoring is tracking key business performance indicators.
           isCorrect: true
-          explanation: "Resilience is about mitigating inevitable transient failures in an app's infrastructure."
-        - content: Handling major infrastructure failures.
+          explanation: "Application monitoring refers to gathering application metrics that are meant to track the application health."
+        - content: Correlation Id establishes a link between two or more contexts or applications.
           isCorrect: false
-          explanation: "Major infrastructure failures generally aren't transient and require manual intervention."
-    - content: Which of the following sentences is correct?
+          explanation: "Every incoming request is assigned a unique Id so you can trace and correlate a set of events across the boundaries of the applications"
+        - content: Structured logging allows you to get more information from your log traces than regular plain text logging.
+          isCorrect: false
+          explanation: "Structured logging enables us to add custom log context. This additional information gives us the context that we need to understand and work with the event entirely."
+    - content: Which of the following is **true** for Application Insights?
       choices:
-        - content: Polly is the best option to handle failures, but it requires a significant amount of work.
+        - content: You have to create one Application Insights resource (instrumentation key) per service type.
           isCorrect: false
-          explanation: "Polly is one option, but the best option depends on the context. Polly requires only minor code changes."
-        - content: Linkerd can be implemented with little effort, but it only handles TCP connection failures.
+          explanation: "The instrumentation key determines the destination of the telemetry. Each microservice defines its own Azure Application Insights resource."
+        - content: Application Map can be used to investigate failures and performance issues across services and dependencies. 
           isCorrect: false
-          explanation: "Linkerd can handle HTTP and SQL connections."
-        - content: Polly and Linkerd can have complementary roles, depending on the context.
+          explanation: "Application Map helps you spot performance bottlenecks or failure hotspots across all components of your distributed application."
+        - content: Application Insights provides built-in correlation and dependency tracking 
+          isCorrect: false
+          explanation: "The Application Insights SDK automatically injects correlation context into HTTP headers, and includes the correlation ID in Application Insights logs."
+        - content: All of the above.
           isCorrect: true
-          explanation: "Polly and Linkerd take different approaches to resiliency and have complementary roles."
-    - content: Which of the following components isn't needed to achieve a resilient app in Kubernetes?
+          explanation: "Application Insights, a feature of Azure Monitor, is an extensible Application Performance Management (APM) service for developers.  It's designed to help you continuously improve performance and usability."          
+    - content: Which of the following is **NOT** true regarding Azure Monitor for containers?
       choices:
-        - content: CI/CD pipelines.
+        - content: Azure Monitor for containers gives you infrastructure-oriented metrics.
+          isCorrect: false
+          explanation: "Azure Monitor collects memory and processor metrics from controllers, nodes, and containers via the Kubernetes metrics API."
+        - content: You have to additionally install Prometheus server to monitor Prometheus-endpoint metrics in AKS.
           isCorrect: true
-          explanation: "Continuous Integration/Continuous Deployment pipelines aren't required for resiliency."
-        - content: Health check probes for services.
+          explanation: "Prometheus server isn't required. You just need to expose the Prometheus metrics endpoint through your exporters or pods (app), and the containerized agent for Azure Monitor for containers can scrape the metrics for you."
+        - content: Using a Kusto query, you can retrieve the Prometheus performance metric data from Azure Portal
           isCorrect: false
-          explanation: "Kubernetes clusters use health checks to determine a service's state."
-        - content: Failure handling code for complex database transactions.
+          explanation: "You can execute a custom Kusto query from the Logs option in the Monitoring section of your AKS resource."
+        - content: Azure Monitor for Containers can scrape metrics from Prometheus-based metrics endpoints.
           isCorrect: false
-          explanation: "Complex transactions should always account for failure states."
-        - content: Network-related resiliency infrastructure.
-          isCorrect: false
-          explanation: "Network-related resiliency is required for all networked apps."
-
-# 1. Which of the following is **NOT** true regarding logging and monitoring
-#    - Diagnostic logging is a key factor for troubleshooting issues in production.
-#    - The purpose of application monitoring is tracking key business performance indicators.  - **CORRECT ANSWER**
-#    - Application monitoring can contribute to business metrics.
-#    - Structured logging allows you to get more information from your log traces than regular plain text logging.
-
-# 2. Which of the following is **true** of Application Insights?
-#    - You have to create one Application Insights resource (instrumentation key) per service type.
-#    - Application Insights can get both aggregated and instance-specific metrics for each service.
-#    - Application Insights automatically monitors communication with with each service's external dependencies.
-#    - All of the above.  - **CORRECT ANSWER**
-
-# 3. Which of the following is **NOT** true regarding Azure Monitor for containers?
-#    - Azure Monitor for containers gives you more infrastructure-oriented metrics.
-#    - You have to install Prometheus and Grafana to monitor Prometheus-endpoint metrics in AKS. - **CORRECT ANSWER**
-#    - Any application can publish custom metrics through a Prometheus-based metrics endpoint.
-#    - Azure Monitor for can scrape metrics from Prometheus-based metrics endpoints.
+          explanation: "Azure Monitor for containers provides a seamless onboarding experience to collect Prometheus metrics from the configured endpoint."
