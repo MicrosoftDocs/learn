@@ -9,6 +9,6 @@ metadata:
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
 title: Exercise - Implement Application Insights
-durationInMinutes: 5
+durationInMinutes: 12
 content: |
   [!include[](includes/4-implement-app-insights.md)]

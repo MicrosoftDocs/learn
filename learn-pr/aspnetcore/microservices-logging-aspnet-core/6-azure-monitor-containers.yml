@@ -9,6 +9,6 @@ metadata:
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
 title: Exercise - Implement Azure Monitor for Containers
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/6-azure-monitor-containers.md)]

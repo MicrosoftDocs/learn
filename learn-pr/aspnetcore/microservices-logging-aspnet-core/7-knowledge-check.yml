@@ -9,7 +9,7 @@ metadata:
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
 title: Knowledge check
-durationInMinutes: 7
+durationInMinutes: 5
 content: |
 quiz:
   title: Check your knowledge
