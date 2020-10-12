@@ -21,7 +21,7 @@ quiz:
           explanation: "Logs have text-based records of events collected while the app is running. The diagnostic information helps troubleshoot issues when the app doesn't behave as expected."
         - content: The purpose of application monitoring is tracking key business performance indicators.
           isCorrect: true
-          explanation: "Application monitoring refers to gathering application metrics that are meant to track the application health."
+          explanation: "Application monitoring are meant to track the application health."
         - content: Correlation Id establishes a link between two or more contexts or applications.
           isCorrect: false
           explanation: "Every incoming request is assigned a unique Id so you can trace and correlate a set of events across the boundaries of the applications"
