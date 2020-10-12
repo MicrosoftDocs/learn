@@ -25,7 +25,7 @@ quiz:
           explanation: "Most cloud computing resources can be distributed to global datacenters."
         - content: "Cloud computing typically decreases your operating expenses."
           isCorrect: false
-          explanation: "Cloud computing typically increases your operating expenses."
+          explanation: "Cloud computing typically decreases your operating expenses."
         - content: "Three cloud computing deployment models are public cloud, private cloud, and hybrid cloud."
           isCorrect: false
           explanation: "Public cloud, private cloud, and hybrid cloud are common cloud computing deployment models."

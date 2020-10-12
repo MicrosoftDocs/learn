@@ -7,3 +7,4 @@ Now that you've reviewed this module, you should be able to:
 - Configure high availability option for MySQL and MariaDB
 - Configure Scale Out reads for MySQL and MariaDB
 - Describe the SSL Options for MySQL and MariaDB
+
