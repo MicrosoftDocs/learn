@@ -16,12 +16,12 @@ In this module, you will:
 - Implement performance monitoring with Application Insights.
 - Enable Azure Monitor for containers in a Kubernetes cluster.
 - Create a custom performance metric using Prometheus.
-- Monitor a custom performance metric using Azure Monitor for containers.
+- Examine a custom performance metric using Azure Monitor for containers.
 
 ## Prerequisites
 
 - Familiarity with C# and ASP.NET Core development at the beginner level
 - Familiarity with RESTful service concepts
 - Familiarity with the Kusto query language at the beginner level
-- Conceptual knowledge of containers and AKS at the intermediate level
+- Conceptual knowledge of containers and Azure Kubernetes Service (AKS) at the intermediate level
 - Access to an Azure subscription with **Owner** privilege

@@ -27,7 +27,7 @@ The preceding script may take a couple minutes to finish. It enables the monitor
 AAD role propagation done[############################################]  100.0000%"Succeeded"
 ```
 
-## Monitor Kubernetes cluster health
+## Monitor health of the AKS cluster
 
 Monitor the AKS cluster's health by following these steps:
 
@@ -135,11 +135,11 @@ The Docker image in ACR has been updated. A configuration change to the Helm cha
 
 ## Enable Prometheus metrics scraping in the AKS cluster
 
-Before Azure Monitor for containers can scrape Prometheus metrics from the catalog service, Prometheus metrics scraping must be enabled in the AKS cluster. The [Azure Monitor Prometheus scraping configuration documentation](/azure/azure-monitor/insights/container-insights-prometheus-integration) provides a Kubernetes ConfigMap YAML template. It enables users to apply Kubernetes configuration changes to AKS using the `kubectl` command.
+Before Azure Monitor for containers can scrape Prometheus metrics from the catalog service, Prometheus metrics scraping must be enabled in the AKS cluster. The [Azure Monitor Prometheus scraping configuration documentation](/azure/azure-monitor/insights/container-insights-prometheus-integration) provides a Kubernetes ConfigMap YAML template. The ConfigMap contains non-confidential data in key-value pairs and enables users to apply Kubernetes configuration changes to AKS using the `kubectl` command.
 
 For your convenience, the ConfigMap YAML template has been provided in *deploy/k8s/azure-monitor/container-azm-ms-agentconfig.yaml*.
 
-1. Open the ConfigMap template in the Cloud Shell editor. Change the value of `monitor_kubernetes_pods` from `false` to `true`, as shown. Save your changes.
+1. Open the *ConfigMap* template in the Cloud Shell editor. Change the value of `monitor_kubernetes_pods` from `false` to `true`, as shown. Save your changes.
 
     ```yaml
     monitor_kubernetes_pods = true
