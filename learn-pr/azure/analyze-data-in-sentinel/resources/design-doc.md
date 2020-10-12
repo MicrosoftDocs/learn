@@ -81,7 +81,7 @@ The IT director believes that Azure Sentinel could provide a means to address Co
 - The time spent setting up and maintaining IT infrastructure takes the security operations (SecOps) team away from its security tasks.
 
 The IT director believes that Azure Sentinel Analytics will help the security analysts save time performing complex investigations and improve their SecOps.
-As Contoso's lead system engineer and Azure administrator, you've been asked to set up a Azure Sentinel Analytics rules to improve the operation of SecOps team to identify and stop cyberattacks.
+As Contoso's lead system engineer and Azure administrator, you've been asked to set up an analytics rules in Azure Sentinel to improve the operation of SecOps team to identify and stop cyberattacks.x
 
 
 ## 2nd unit: What is Azure Sentinel Analytics
@@ -130,7 +130,7 @@ After completing this module, you&#39;ll be able to create analytic rule from ex
 - Create analytics rules from templates
 
 
-## 5th unit: Create an Analytics rule from Wizard
+## 5th unit: Create an analytics rule from Wizard
 
 **Type of unit:** Learning content unit
 
@@ -154,8 +154,8 @@ After completing this unit, you&#39;ll be able to create new rules and queries u
 
 After completing this unit, you&#39;ll be able to manage rules with modifications
 
-- Edit existing rules
-- Duplicate the rule
+- Edit existing rules, to change severity and MITRE Att&ck Tactics
+- Duplicate the rule, 
 - Disable the rule
 - Delete the rule
 
@@ -172,8 +172,8 @@ After completing this unit, you&#39;ll be able to manage rules with modification
 
 In this exercise, you will learn to:
 
-- Create an action rule from template
-- Create an action rule using your own KQL code
+- Create an incident rule from existing template
+- Create an scheduled query rule using your own KQL code
 - Adjusting KQL from existing analytic rule
 
 Review the steps for this Exercise: Create analytics rule from templates and with custom KQL code.
