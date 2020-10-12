@@ -21,10 +21,10 @@ quiz:
     - content: Resource group native design
       isCorrect: false
       explanation: Azure native-first design approach must be employed.
-    - content: Foundational services must be in place.
+    - content: Foundational services
       isCorrect: true
       explanation: Key foundational services, such as identity and access management, security, networking, monitoring, and shared infrastructure services, must be in place.
-    - content: Security is optional
+    - content: Security
       isCorrect: false
       explanation: Enterprise-scale architecture necessitates a rich initial implementation of landing zones with fully integrated governance, security, and operations from the start. Security is required for success.
     - content: Virtual-machine-centric migration
@@ -38,7 +38,7 @@ quiz:
       explanation: The goal is to give customers the control they require.
     - content: Architecture complexity
       isCorrect: true
-      explanation: Enterprise-scale landing zones provide guidance for architectural decisions.
+      explanation: Enterprise-scale landing zones help provide clear guidance for architectural decisions.
     - content: Providing a cloud security strategy
       isCorrect: false
       explanation: An organization should develop a cloud security strategy before implementing a landing zone.
