@@ -1,6 +1,6 @@
 In this exercise, you'll explore a cluster-level monitoring solution using Azure Monitor for containers. This monitoring solution, along with Application Insights, focuses on more application-level information. The solution gives you a more complete view of your app and its operational context.
 
-In this exercise, you will:
+In this unit, you will:
 
 - Enable Azure Monitor for containers for your AKS cluster.
 - Create a metric for the Prometheus endpoint.
@@ -196,7 +196,7 @@ To troubleshoot a production issue, you've been asked to monitor requests for th
     - The `endpoint` property stored in the `Tags` column is `/catalog-api/api/v1/catalog/items`.
 
 1. Select the **Run** button.
-1. In the **Results** panel, note the value of the `Val` column. This is the count of requests to `/catalog-api/api/v1/catalog/items`.
+1. In the **Results** panel, note the value of the `Val` column. This value represents the number of requests to `/catalog-api/api/v1/catalog/items`.
 1. Select the chevron to expand the row. Select the chevron next to **Tags** to expand the `Tags` column. Notice the `endpoint` and `method` tags that were added by your changes in the previous section.
 
     :::image type="content" source="../media/6-azure-monitor-containers/expanded-log.png" alt-text="The expanded log entry" border="true" lightbox="../media/6-azure-monitor-containers/expanded-log.png":::
