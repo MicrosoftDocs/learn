@@ -30,13 +30,13 @@ After identifying the columns you are encrypting, you can click next and you wil
 
 In this screen, you create the column master key, which is used to encrypt the column encryption keys. You can supply your own key, if you are using T-SQL to encrypt the columns. This key must be stored in a key store such as the Windows Certificate Store, Azure Key Vault, or a hardware security module. The database engine never stores the column master key, and only contains the metadata about where it is stored. Not storing the master key protects data access from users who have full access to the database.
 
-For the highest level of security, the key should be stored within a third party key store such as Azure Key Vault. Never generate the keys on the server hosting your database, as the key could potentially be extracted from memory on that server. In the example below, the key is being stored in Azure Key Vault. After clicking next, the wizard provides you the option to either finishing the encryption process now, or to generate a PowerShell script. Once you complete the process, the data will appear as encrypted ciphertext to anyone querying the data without the key.
+For the highest level of security, the key should be stored within a third party key store such as Azure Key Vault. Never generate the keys on the server hosting your database, as the key could potentially be extracted from memory on that server. In the example below, the key is being stored in Azure Key Vault. After clicking next, the wizard provides you the option to either finish the encryption process now, or to generate a PowerShell script. Once you complete the process, the data will appear as encrypted ciphertext to anyone querying the data without the key.
 
 :::image type="content" source="../media/module-33-security-final-11.png" alt-text="Employees Table with Encrypted Data":::
 
 In order to decrypt data from an Always Encrypted column, your application needs an Always Encrypted driver to connect to the database. The application has access to the key store where the Always Encrypted keys are stored, and the application can then retrieve the data. Data that is written back to the database is encrypted at the client through the driver.
 
-In addition to the driver, the application’s connection string need to have the setting “Column Encryption Setting=enabled” placed within it. This setting will cause a metadata lookup to be made for each column that is used by the application. To minimize these metadata lookups, the application needs to be modified by updating the *SqlCommandColumnEncryptionSetting* on the *SqlConnection* objects within the .NET application. Values of either Disabled, Enabled or *ResultSet* can be specified. These settings must be set for each database query that the application submits.
+In addition to the driver, the application’s connection string needs to have the setting “Column Encryption Setting=enabled” placed within it. This setting will cause a metadata lookup to be made for each column that is used by the application. To minimize these metadata lookups, the application needs to be modified by updating the *SqlCommandColumnEncryptionSetting* on the *SqlConnection* objects within the .NET application. Values of either Disabled, Enabled or *ResultSet* can be specified. These settings must be set for each database query that the application submits.
 
 The Disabled setting will prevent the application from executing any metadata queries against the database for that query.
 
@@ -48,7 +48,7 @@ So to determine which setting of the *SqlCommandColumnEncryptionSetting* should 
 
 ## Secure enclaves
 
-Starting with SQL Server 2019, Always Encrypted supports a feature called secure enclaves, which allows more robust querying of encrypted data. A secure enclave is a secured region of memory within the SQL Server process that acts as trusted execution environment for processing encrypted data. This enclave appears as black box to SQL Server, and it is not possible to view any data or code, even with a debugger. The image below shows the architecture of this process:
+Starting with SQL Server 2019, Always Encrypted supports a feature called secure enclaves, which allows more robust querying of encrypted data. A secure enclave is a secured region of memory within the SQL Server process that acts as a trusted execution environment for processing encrypted data. This enclave appears as a black box to SQL Server, and it is not possible to view any data or code, even with a debugger. The image below shows the architecture of this process:
 
 :::image type="content" source="../media/module-33-security-final-12.png" alt-text="Secure Enclaves Architecture":::
 
