@@ -12,11 +12,12 @@ title: Instrument a cloud-native ASP.NET Core microservice
 summary: Learn how to instrument your cloud-native ASP.NET Core microservices app to diagnose problems and monitor performance.
 abstract: |
   In this module, you will:
-  - Understand the key concepts of logging.
-  - Explore the included logs in eShopOnContainers.
-  - Learn how to implement Application Insights logging and monitoring.
-  - Learn how to create a custom metric using the Prometheus SDK.
-  - Learn how to enable Azure Monitor for containers in an AKS cluster.
+  - Review important logging concepts.
+  - Implement diagnostics logging with Application Insights.
+  - Implement performance monitoring with Application Insights.
+  - Enable Azure Monitor for containers in a Kubernetes cluster.
+  - Create a custom metric using Prometheus.
+  - Monitor a custom metric using Azure Monitor for containers.
 prerequisites: |
   - Familiarity with C# and ASP.NET Core development at the beginner level
   - Familiarity with RESTful service concepts

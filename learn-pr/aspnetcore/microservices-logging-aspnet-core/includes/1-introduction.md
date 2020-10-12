@@ -1,28 +1,22 @@
-Logging and monitoring have always been very important to ensure the application health and troubleshooting issues, but in a microservices application they can easily become critical, because of the sheer amount of components and "moving parts" involved.
+Imagine you're a software developer for an online retailer named *:::no-loc text="eShopOnContainers":::*. The retailer's online storefront is a cloud-native, microservices-based ASP.NET Core app. To ease triaging of production issues, you'll implement a comprehensive logging and monitoring solution. In a microservices-based solution, logging and monitoring tools help illustrate the relationships among the components involved. The tools can also help identify resource consumption and performance bottlenecks.
 
-This module focuses on diagnostics logging and performance monitoring in *eShopOnContainers*.
+This module guides you through configuring diagnostics logging and performance monitoring with Azure Monitor features. You'll begin with a simplified, revamped version of [:::no-loc text="eShopOnContainers":::](https://github.com/dotnet-architecture/eShopOnContainers)&mdash;the companion reference app for the guide [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices). Instrumentation and monitoring of three microservices and an HTTP aggregator is the focus in this module.
 
-In this module, you will:
-
-- Deploy an initial version of eShopOnContainers to an AKS cluster in your subscription.
-- Review some important logging concepts and samples of the logging infrastructure already implemented in eShopOnContainers.
-- Add Application Insights logging.
-- Implement some basic application monitoring features with Application Insights.
-- Enable Azure Monitor for containers in your AKS cluster.
-- Implement a custom metric using [Prometheus](https://prometheus.io) endpoints to monitor on the Azure Portal using Azure Monitor for containers.
-
-You'll use your own Azure subscription to deploy the resources in this module. To estimate the expected costs for these resources, see the [preconfigured Azure Calculator estimate](https://aka.ms/microservices-logging-aspnet-core-estimate?azure-portal=true) of the resources that you'll deploy. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/dotnet/?azure-portal=true) before you begin.
+You'll use your own Azure subscription to deploy the resources in this module. To estimate the expected resource costs, see the [preconfigured Azure Calculator estimate](https://aka.ms/microservices-logging-aspnet-core-estimate?azure-portal=true). If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/dotnet/?azure-portal=true) before you begin.
 
 > [!IMPORTANT]
 > This module uses your own Azure subscription. To avoid unnecessary charges in your Azure subscription, remember to de-provision your Azure resources when you're done with this module.
 
 ## Learning objectives
 
-- Understand the key concepts of logging.
-- Explore the included logs in eShopOnContainers.
-- Learn how to implement Application Insights logging and monitoring.
-- Learn how to create a custom metric using the Prometheus SDK.
-- Learn how to enable Azure Monitor for containers in an AKS cluster.
+In this module, you will:
+
+- Review important logging concepts.
+- Implement diagnostics logging with Application Insights.
+- Implement performance monitoring with Application Insights.
+- Enable Azure Monitor for containers in a Kubernetes cluster.
+- Create a custom metric using Prometheus.
+- Monitor a custom metric using Azure Monitor for containers.
 
 ## Prerequisites
 

@@ -18,7 +18,7 @@ In the preceding image, notice the following things:
 - Sample telemetry is displayed in the pane on the right as it's ingested in real time. You can see that *webshoppingagg* is experiencing failures when connecting to services on which it depends. This behavior is expected while the app is starting. Your telemetry may contain similar failures, depending on when you view the Azure portal.
 - Incoming and outgoing dependency requests are represented by real-time graphics. The graphics illustrate the rate, duration, and failure rate of the requests.
 - The service's overall health is displayed in charts representing memory, CPU usage, and exceptions rate.
-- The **Servers** pane lists the physical nodes used by the application. In this example, there's a single node. The data on this page can be filtered by node by selecting the server name from the list.
+- The **Servers** pane lists the physical nodes used by the app. In this example, there's a single node. The data on this page can be filtered by node by selecting the server name from the list.
 
 ## Create some telemetry
 
