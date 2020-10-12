@@ -34,8 +34,10 @@ products:
   - aspnet-core
   - dotnet-core
   - azure
+  - azure-application-insights
   - azure-container-registry
   - azure-kubernetes-service
+  - azure-monitor
 units:
   - learn.microservices-logging-aspnet-core.1-introduction
   - learn.microservices-logging-aspnet-core.2-environment-setup
