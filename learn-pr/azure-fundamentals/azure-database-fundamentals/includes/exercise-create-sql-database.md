@@ -61,7 +61,7 @@ It can take approximately 2 to 5 minutes to create the server and deploy the sam
 
 In this task, you configure the server and run a SQL query. 
 
-1. From the **All services** pane, search and select **SQL databases**, and ensure that your new database was created. You might need to refresh the page.
+1. From the **All resources** pane, search and select **SQL databases** and ensure that your new database was created. You might need to refresh the page.
 
     ![Screenshot of the SQL database and server that have just been deployed.](../media/sql-database.png)
 

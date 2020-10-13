@@ -30,7 +30,7 @@ After creating and running a pipeline to train the clustering model, you can cre
     46.6,17.8,193,3800
     ```
 
-5. Connect the outputs from both the **Web Service Input** and **Enter Data Manually** modules to the Dataset (right) input of the **Assign Data to Clusters** module.
+5. Connect the outputs from both the **Web Service Input** and **Enter Data Manually** modules to the Dataset (right) input of the first **Apply Transformation** module.
 6. Delete the **Evaluate Model** module.
 7. Verify that your pipeline looks similar to the following:
 

@@ -3,7 +3,7 @@ uid: learn.wwl.create-manage-cognitive-services
 metadata:
   title: Create and manage Cognitive Services
   description: "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs."
-  ms.date: 09/12/2020
+  ms.date: 10/15/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   Active Azure account
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/create-and-manage-cognitive-services.svg
 levels:
 - beginner
 roles:

@@ -39,4 +39,4 @@ quiz:
       explanation: "This would only return the ID in descending order"
     - content: "SELECT p.productId, p.description FROM Products p ORDER BY p.productId DESC"
       isCorrect: true
-      explanation: "This would return both the product ID and description but in ascending order."
+      explanation: "This would return both the product ID and description but in descending order."
