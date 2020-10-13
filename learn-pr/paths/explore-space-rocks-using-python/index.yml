@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.explore-space-rocks-using-python
+metadata:
+  title: Explore space rocks by using Python
+  description: Description.
+  brand: vs-code
+  ms.date: 10/20/2020
+  author: sguthals
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore space rocks by using Python
+summary: | 
+  Summary.
+  
+  Through these modules, you will:
+  
+  - One
+  - Two
+  - Three
+
+prerequisites: None
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- vs-code
+modules:
+- learn.student-evangelism.predict-meteor-showers-using-python
+trophy:
+  uid: learn.explore-space-rocks-using-python.trophy
