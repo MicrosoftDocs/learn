@@ -16,7 +16,7 @@ OS updates, etc.
 
 Weblogic
 
-## Linux App Service
+## ![Azure App Service Logo](../media/5-App-Services.svg) Azure App Service
 
 ## Azure Spring Cloud
 
