@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-container-for-use-with-cognitive-services.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "When submitting data to Cognitive Services in a container, where is the data processed?"
+    choices:
+    - content: "In the Azure service."
+      isCorrect: false
+      explanation: "Incorrect. The Azure service is used for billing only when running in a container."
+    - content: "In the container."
+      isCorrect: true
+      explanation: "Correct. The data submitted is only processed in the container."
+    - content: "In both the container and the Azure service."
+      isCorrect: false
+      explanation: "Incorrect. When submitting data to the container it is not sent to the Azure service."
+  - content: "Which of the following is an invalid reason for choosing Kubernetes?"
+    choices:
+    - content: "Scripted deployment."
+      isCorrect: false
+      explanation: "Incorrect. Scripted deployment is one benefit of working with Kubernetes."
+    - content: "Ease of scaling."
+      isCorrect: false
+      explanation: "Incorrect. Kubernetes is chosen in part because it makes scaling easy."
+    - content: "Control over environment."
+      isCorrect: false
+      explanation: "Incorrect. More control of the environment is a common reason to choose Kubernetes for hosting Cognitive Services containers."
+    - content: "Less complexity."
+      isCorrect: true
+      explanation: "Correct. Kubernetes is more complex to configure than using as an Azure service."
+  - content: "Which component would your local application most likely connect to when consuming from a container in a secure Kubernetes environment?"
+    choices:
+    - content: "An Ingress controller."
+      isCorrect: true
+      explanation: "Correct. An ingress controller is often used to provide security and a common endpoint for accessing services in Kubernetes."
+    - content: "A public IP assigned to the container."
+      isCorrect: false
+      explanation: "Incorrect. A public IP is not a best practice since others can reach your container directly."
+    - content: "A private IP assigned to the container."
+      isCorrect: false
+      explanation: "Incorrect. A private IP for the container is available within the Kubernetes cluster only."
+    - content: "A Kubernetes API endpoint."
+      isCorrect: false
+      explanation: "Incorrect. The Kubernetes API endpoint is used for managing Kubernetes, not for connecting to deployed containers."

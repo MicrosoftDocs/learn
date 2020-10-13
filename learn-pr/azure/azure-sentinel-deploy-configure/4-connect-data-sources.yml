@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-sentinel-deploy-connect.4-connect-data-sources
+metadata:
+  title: Connect data sources
+  description: Connect data sources
+  ms.date: 09/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Connect data sources
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-connect-data-sources.md)]

@@ -39,7 +39,7 @@ Accept the terms of use and create the Microsoft-provided Azure IoT Edge on Ubun
 Create the virtual machine named EdgeVM using the following commands. Replace \<resource-group\> with your resource group name.
 
 ```azurecli
-az vm image accept-terms --urn microsoft_iot_edge:iot_edge_vm_ubuntu:ubuntu_1604_edgeruntimeonly:latest
+az vm image terms accept --urn microsoft_iot_edge:iot_edge_vm_ubuntu:ubuntu_1604_edgeruntimeonly:latest
 ```
 
 ```azurecli
@@ -77,7 +77,7 @@ az iot hub device-identity create --hub-name {hub_name} --device-id myEdgeDevice
 To retrieve the connection string for your device, which links your physical device with its identity in IoT Hub, use the command:
 
 ```azurecli
-az iot hub device-identity show-connection-string --device-id myEdgeDevice --hub-name {hub_name} --output table
+az iot hub device-identity connection-string show --device-id myEdgeDevice --hub-name {hub_name} --output table
 ```
 
 Make a note of the device connection string, which looks like:

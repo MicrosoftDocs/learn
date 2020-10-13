@@ -1,6 +1,6 @@
 In this module, you explored machine learning and learned how to use the automated machine learning capability of Azure Machine Learning to train and deploy a predictive model.
 
-## Reset resources
+## Clean-up
 
 The web service you created is hosted in an *Azure Container Instance*. If you don't intend to experiment with it further, you should delete the endpoint to avoid accruing unnecessary Azure charges. You should also stop the training cluster and compute instance resources until you need them again.
 

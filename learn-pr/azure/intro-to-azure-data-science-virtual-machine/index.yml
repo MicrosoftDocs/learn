@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-data-science-virtual-machine
+metadata:
+  title: Create and connect to a Data Science Virtual Machine
+  description: Learn how to create and connect to an Azure-based virtual machine preloaded with data science and machine learning tools.
+  ms.date: 08/24/2020
+  author: lobrien
+  ms.author: laobri
+  ms.topic: tutorial
+  ms.service: machine-learning 
+title: Create and connect to a Data Science Virtual Machine
+summary: Create, connect to, and share data among users on a Data Science Virtual Machine that's preloaded with data science and machine learning tools.
+abstract: Azure virtual machines are a fast way to use familiar operating systems and tools on powerful hardware. The Data Science Virtual Machine is configured with applications, frameworks, and libraries for data science and machine learning. You'll learn how to create and connect to a Data Science Virtual Machine, how to access it with your choice of command-line or graphical interfaces, and how to share data and projects between users. 
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels: 
+  - beginner 
+roles: 
+  - data-engineer
+  - data-scientist
+  - ai-engineer
+  - administrator
+products: 
+  - azure-machine-learning 
+units:
+  - learn.azure.intro-to-data-science-virtual-machine.introduction
+  - learn.azure.intro-to-data-science-virtual-machine.data-science-virtual-machine
+  - learn.azure.intro-to-data-science-virtual-machine.create
+  - learn.azure.intro-to-data-science-virtual-machine.exercise-create
+  - learn.azure.intro-to-data-science-virtual-machine.exercise-connect
+  - learn.azure.intro-to-data-science-virtual-machine.connect
+  - learn.azure.intro-to-data-science-virtual-machine.exercise-preinstalled-tools
+  - learn.azure.intro-to-data-science-virtual-machine.summary
+badge:
+  uid: learn.azure.intro-to-data-science-virtual-machine.badge

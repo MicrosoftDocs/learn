@@ -4,7 +4,7 @@ title: Configure multiple nodes and enable scale-to-zero by using AKS
 
 metadata:
   title: Configure multiple nodes and enable scale-to-zero by using AKS
-  description: You can configure multiple node pools on Azure Kubernetes Service (AKS) to run specific workloads. Node pools use virtual scale sets that allow you to set the number of nodes in a node pool. You can set the node count in a node pool to zero to optimize your cluster's running costs when nodes aren't used in a node pool. Here you'll explore how to configure a node pool to scale its node count to zero. 
+  description: You can configure multiple node pools on Azure Kubernetes Service (AKS) to run specific workloads. Node pools use virtual scale sets that allow you to set the number of nodes in a node pool. You can set the node count in a user node pool to zero to optimize your cluster's running costs when nodes aren't needed. Here you'll explore how to configure a user node pool to scale its node count to zero. 
   ms.date: 7/10/2020
   author: cryophobia
   ms.author: chrvaw
@@ -19,17 +19,16 @@ quiz:
   questions:
 
   - content: "Suppose your software solution has three critical components. The first component is a web application. The second is a service that processes online orders. The third is a video-rendering and analysis service that runs only as needed and that requires GPU-based VMs. To optimize cost, how many node pools would you deploy in an Azure Kubernetes Service (AKS) cluster to manage the solution?"
-
     choices:
-    - content: "Deploy a single node pool when you create the AKS cluster. Assign three nodes per component by using GPU-based VMs, for a total of nine nodes in the node pool. Enable autoscaling on the node pool."
+    - content: "Deploy a single user node pool when you create the AKS cluster. Assign three nodes per component by using GPU-based VMs, for a total of nine nodes in the node pool. Enable autoscaling on the node pool."
       isCorrect: false
-      explanation: "A single node pool doesn't give you enough flexibility to scale different workloads in a cost-effective way."
-    - content: "Deploy three node pools on the AKS cluster. Create the first and second node pools with standard-sized virtual machines (VMs), and create the third node pool with specialized, GPU-based VMs. Enable the cluster autoscaler on all three node pools."
+      explanation: "A single user node pool doesn't give you enough flexibility to scale different workloads in a cost-effective way."
+    - content: "Deploy three user node pools on the AKS cluster. Create the first and second node pools with standard-sized virtual machines (VMs), and create the third node pool with specialized, GPU-based VMs. Enable the cluster autoscaler on all three node pools."
       isCorrect: false
-      explanation: "An AKS cluster with three node pools does give you flexibility to scale the node count in each pool independently. However, you can't scale a node pool to zero after you enable the autoscaler. Use of the GPU-based node pool won't be cost effective for workloads that run only as needed."
-    - content: "Deploy three node pools on the AKS cluster. Create the first and second node pools with standard-sized VMs and the third node pool with specialized, GPU-based VMs. Enable autoscaling on the first two node pools. Scale the GPU-based node pool manually."
+      explanation: "An AKS cluster with three user node pools does give you flexibility to scale the node count in each pool independently. However, you can't scale a node pool to zero after you enable the autoscaler. Use of the GPU-based node pool won't be cost effective for workloads that run only as needed."
+    - content: "Deploy three user node pools on the AKS cluster. Create the first and second node pools with standard-sized VMs and the third node pool with specialized, GPU-based VMs. Enable autoscaling on the first two node pools. Scale the GPU-based node pool manually."
       isCorrect: true
-      explanation: "An AKS cluster with three node pools gives you flexibility to scale the node count in each pool independently for each component in the solution. Because you didn't enable the autoscaler on the GPU-based node pool, that pool's node count can be scaled to zero to optimize compute costs."
+      explanation: "An AKS cluster with three user node pools gives you flexibility to scale the node count in each pool independently for each component in the solution. Because you didn't enable the autoscaler on the GPU-based node pool, that pool's node count can be scaled to zero to optimize compute costs."
 
   - content: "Complete the following statement. The Kubernetes cluster autoscaler scales..."
     choices:

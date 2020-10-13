@@ -1,4 +1,4 @@
-In this exercise, you'll build a High-Level Azure Sphere application that connects and sends environment telemetry to Azure IoT Central. 
+In this exercise, we'll build a High-Level Azure Sphere application that connects and sends environment telemetry to Azure IoT Central.
 
 ## Step 1: Create a new IoT Central Application
 
@@ -10,7 +10,7 @@ In this exercise, you'll build a High-Level Azure Sphere application that connec
 
 4. Expand the sidebar menu by clicking on the **Burger menu** icon.
 
-   ![iot-central-burger-menu](../media/iot-central-burger-menu.png)
+   ![The illustration shows how to expand the sidebar menu.](../media/iot-central-burger-menu.png)
 
 5. Navigate to Build and click **+ New application** to create a new Azure IoT Central application.
 
@@ -105,12 +105,18 @@ Devices claimed by your Azure Sphere tenant will be automatically enrolled when 
 
 1. If you're using Windows, open an **Azure Sphere Developer Command Prompt**. If you're using Linux, open your terminal.
 
-2. Make a note of the current directory, or change to the Azure Sphere Learning path directory. You'll need the name of this directory in the next step.
-
-3. Download the Certificate Authority (CA) certificate for your Azure Sphere tenant:
+2. Log into your Azure Sphere tenant if you have not already done so.
 
    ```
-   azsphere tenant download-CA-certificate --output CAcertificate.cer
+   azsphere login
+   ```
+
+3. Make a note of the current directory, or change to the Azure Sphere Learning path directory. You'll need the name of this directory in the next step.
+
+4. Download the Certificate Authority (CA) certificate for your Azure Sphere tenant:
+
+   ```
+   azsphere ca-certificate download --output CAcertificate.cer
    ```
 
    The output file must have the .cer extension.
@@ -134,7 +140,7 @@ Devices claimed by your Azure Sphere tenant will be automatically enrolled when 
 2. Download a validation certificate that proves that you own the tenant CA certificate. Replace code in the command with the verification code from the previous step.
 
    ```
-   azsphere tenant download-validation-certificate --output ValidationCertification.cer --verificationcode <code>
+   azsphere ca-certificate download-proof --output ValidationCertification.cer --verificationcode <code>
    ```
 
 3. The Azure Sphere Security Service signs the validation certificate with the verification code to prove that you own the CA.
@@ -184,10 +190,24 @@ Follow these steps:
    Find and modify the CmdArgs, AllowedConnections and DeviceAuthentication lines in your app_manifest.json so each includes the content from the below:
 
    ```
-   "CmdArgs": [ "0ne000BDC00" ],
+   "CmdArgs": [
+      "0ne000ABC00"
+   ],
    "Capabilities": {
-       "AllowedConnections": [ "global.azure-devices-provisioning.net", "iotc-9999bc-3305-99ba-885e-6573fc4cf701.azure-devices.net", "iotc-789999fa-8306-4994-b70a-399c46501044.azure-devices.net", "iotc-7a099966-a8c1-4f33-b803-bf29998713787.azure-devices.net", "iotc-97299997-05ab-4988-8142-e299995acdb7.azure-devices.net", "iotc-d099995-7fec-460c-b717-e99999bf4551.azure-devices.net", "iotc-789999dd-3bf5-49d7-9e12-f6999991df8c.azure-devices.net", "iotc-29999917-7344-49e4-9344-5e0cc9999d9b.azure-devices.net", "iotc-99999e59-df2a-41d8-bacd-ebb9999143ab.azure-devices.net", "iotc-c0a9999b-d256-4aaf-aa06-e90e999902b3.azure-devices.net", "iotc-f9199991-ceb1-4f38-9f1c-13199992570e.azure-devices.net" ],
-       "DeviceAuthentication": "--- YOUR AZURE SPHERE TENANT ID---",
+      "AllowedConnections": [
+         "global.azure-devices-provisioning.net",
+         "iotc-9999bc-3305-99ba-885e-6573fc4cf701.azure-devices.net",
+         "iotc-789999fa-8306-4994-b70a-399c46501044.azure-devices.net",
+         "iotc-7a099966-a8c1-4f33-b803-bf29998713787.azure-devices.net",
+         "iotc-97299997-05ab-4988-8142-e299995acdb7.azure-devices.net",
+         "iotc-d099995-7fec-460c-b717-e99999bf4551.azure-devices.net",
+         "iotc-789999dd-3bf5-49d7-9e12-f6999991df8c.azure-devices.net",
+         "iotc-29999917-7344-49e4-9344-5e0cc9999d9b.azure-devices.net",
+         "iotc-99999e59-df2a-41d8-bacd-ebb9999143ab.azure-devices.net",
+         "iotc-c0a9999b-d256-4aaf-aa06-e90e999902b3.azure-devices.net",
+         "iotc-f9199991-ceb1-4f38-9f1c-13199992570e.azure-devices.net"
+      ],
+      "DeviceAuthentication": "--- YOUR AZURE SPHERE TENANT ID---",
    }
    ```
 
@@ -283,51 +303,17 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
 
 1. Ensure you have the **main.c** file open. Place the cursor on the line that reads **#include "hw/azure_sphere_learning_path.h"**, then press F12 to open the header file.
 
-2. Review the pin mappings set up for the Azure Sphere Learning Path using the Avnet Starter Kit.
+2. Review the pin mappings set up for the Azure Sphere Learning Path.
 
    > Azure Sphere hardware is available from multiple vendors, and each vendor may expose features of the underlying chip in different ways. Azure Sphere applications manage hardware dependencies by using hardware definition files. For further information, review the [Managing target hardware dependencies](https://docs.microsoft.com/azure-sphere/app-development/manage-hardware-dependencies) article.
-
-   ```
-   /* Copyright (c) Microsoft Corporation. All rights reserved.
-   Licensed under the MIT License. */
-   
-   // This file defines the mapping from the MT3620 reference development board (RDB) to the
-   // 'sample hardware' abstraction used by the samples at https://github.com/Azure/azure-sphere-samples.
-   // Some peripherals are on-board on the RDB, while other peripherals must be attached externally if needed.
-   // https://docs.microsoft.com/azure-sphere/app-development/manage-hardware-dependencies
-   // to enable apps to work across multiple hardware variants.
-   
-   // This file is autogenerated from ../../azure_sphere_learning_path.json.  Do not edit it directly.
-   
-   #pragma once
-   #include "avnet_mt3620_sk.h"
-   
-   // Button A
-   #define BUTTON_A AVNET_MT3620_SK_USER_BUTTON_A
-   
-   // Button B
-   #define BUTTON_B AVNET_MT3620_SK_USER_BUTTON_B
-   
-   // LED 1
-   #define LED1 AVNET_MT3620_SK_USER_LED_BLUE
-   
-   // LED 2
-   #define LED2 AVNET_MT3620_SK_APP_STATUS_LED_YELLOW
-   
-   // AVNET: Network Connected
-   #define NETWORK_CONNECTED_LED AVNET_MT3620_SK_WLAN_STATUS_LED_YELLOW
-   
-   // Click Relay
-   #define RELAY AVNET_MT3620_SK_GPIO0
-   ```
 
 3. Next, from Visual Studio Code, open the main.c file to bring back into focus.
 
 ## Step 8: Configure the Azure Sphere Application
 
-1. Open the **app_manifest.json** file
+1. Open the **app_manifest.json** file.
 
-   ![](../media/visual-studio-code-open-app-manifest.png)
+   !["The illustration shows how to open the manifest file."](../media/visual-studio-code-open-app-manifest.png)
 
 2. Update the Azure IoT Central Application connection properties.
 
@@ -487,7 +473,7 @@ static void SendMsgLedOn(char* message)
 
 1. Switch back to Azure IoT Central in your web browser.
 
-2. You need to wait a minute or two before your Azure Sphere device is automatically enrolled.
+2. You may need to wait a minute or two before your Azure Sphere device is automatically enrolled.
 
 3. The newly enrolled device will have a numeric name that matches your Azure Sphere Device ID.
 
@@ -511,7 +497,7 @@ You need to **Migrate** the newly enrolled device to the **Azure Sphere** templa
 
 3. Select the Azure Sphere Template, and then click migrate.
 
-   ![The illustration shows how to migrate a device.](../media/iot-central-migrate-select-template.png)
+   ![The illustration shows how to select the template.](../media/iot-central-migrate-select-template.png)
 
 ## Step 14: Display the Azure Sphere device telemetry
 

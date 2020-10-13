@@ -1,8 +1,6 @@
 
 
-Another DevOps capability is Continuous Integration.
-
-![Diagram shows the eight DevOps capabilities. It lists example practices for Continuous Integration: Behavior-driven development, Test-driven development, Shift-left testing, Microservices & container development, SAST, Secrets scanning, Unit test/code coverage, GIT pull request, Gated check-in, Build pipeline - parallel/serial.](../media/3-3-capabilities.png)
+Continuous Integration is one of the eight capabilities in the DevOps taxonomy.
 
 ### Discover why Continuous Integration is necessary
 

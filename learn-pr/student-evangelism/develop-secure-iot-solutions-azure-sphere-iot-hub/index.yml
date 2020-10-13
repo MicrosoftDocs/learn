@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
 title: "Develop secure IoT Solutions for Azure Sphere with IoT Hub"
-summary: "Deploy an Azure Sphere application to monitor ambient conditions for laboratory conditions. The application will monitor the room environment conditions, connect to IoT Central, and send telemetry data from the device to the cloud. You'll control cloud to device communications and undertake actions as needed."
+summary: "Deploy an Azure Sphere application to monitor ambient conditions for laboratory conditions. The application will monitor the room environment conditions, connect to IoT Hub, and send telemetry data from the device to the cloud. You'll control cloud to device communications and undertake actions as needed."
 abstract: | 
   In this module, you will:
   - Create an Azure IoT Hub and Device Provisioning Services
@@ -18,7 +18,7 @@ abstract: |
   - View the environment telemetry from the Azure Cloud Shell
   - Control an Azure Sphere application using Azure IoT Hub Direct Method
      
-  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 
 prerequisites: |
   - Azure Sphere kit

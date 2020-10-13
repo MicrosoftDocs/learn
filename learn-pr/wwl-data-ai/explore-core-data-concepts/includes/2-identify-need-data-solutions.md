@@ -2,7 +2,7 @@ Data is now easier to collect and cheaper to host, making it accessible to nearl
 
 ## What is data?
 
-Data is a collection of facts such as numbers, descriptions, and observations used in decision making. You can classify data as structured, semi-structured, or unstructured. Structured data is typically tabular data that is represented by rows and columns in a database. Databases that hold tables in this form are called *relational databases* (the mathematical term *relation* refers to an organized set of data held as a table). Each row in a table has the same set of columns. The image below illustrates an example showing two tables in an ecommerce database. The first two contains the details of customers for an organization, and the second holds information about products that the organization sells. 
+Data is a collection of facts such as numbers, descriptions, and observations used in decision making. You can classify data as structured, semi-structured, or unstructured. Structured data is typically tabular data that is represented by rows and columns in a database. Databases that hold tables in this form are called *relational databases* (the mathematical term *relation* refers to an organized set of data held as a table). Each row in a table has the same set of columns. The image below illustrates an example showing two tables in an ecommerce database. The first table contains the details of customers for an organization, and the second holds information about products that the organization sells. 
 
 > [!div class="mx-imgBorder"]
 > ![Image showing how structured data is represented in database tables](../media/2-tabular-diagram.png)

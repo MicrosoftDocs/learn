@@ -12,8 +12,6 @@ Now that you have reviewed this module, you should be able to:
 
 Check out reports, podcasts, and training resources to learn more about how governments can leverage AI to lower costs while providing higher quality services to citizens.
 
-* Read [Artificial Intelligence: A Guide for Government Leaders white paper](https://clouddamcdnprodep.azureedge.net/gdc/gdccjqVOT/original) to review AI core concepts and start thinking of practical applications for your organization.
-
 * Read [The Ethics of Artificial Intelligence: A Guide for Government Leaders white paper](https://clouddamcdnprodep.azureedge.net/gdc/gdcetEtSN/original) to consider some of these ethical questions raised by the adoption of AI-based solutions.
 
 * Read [Understanding Machine Learning: A Guide for Government Leaders white paper](https://clouddamcdnprodep.azureedge.net/gdc/gdcTAbuu3/original) to review the core concepts of machine learning to make informed decisions about incorporating it into your organization.

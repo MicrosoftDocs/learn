@@ -60,7 +60,7 @@ Employees may not have experience working with the open-source community. To hel
 
 - A **"Should we open-source this?" guide** that provides a framework for deciding whether or not a candidate project should be open-sourced. This guide could be structured as a flowchart, set of questions, or list of considerations.
 
-- A **setup checklist** that includes all of the work items a team needs to complete before and after the launch of an open-sourced project. This list should include acquiring approval to open-source the project, code reviews to ensure sensitive data is removed before the project goes live, a trademark or [open-source project search](http://ivantomic.com/projects/ospnc/?azure-portal=true) to ensure there isn't a naming conflict, and so on.
+- A **setup checklist** that includes all of the work items a team needs to complete before and after the launch of an open-sourced project. This list should include acquiring approval to open-source the project, code reviews to ensure sensitive data is removed before the project goes live, a trademark or [open-source project search](https://opensource.google/projects/search) to ensure there isn't a naming conflict, and so on.
 
 - A **contact list** for key people in your organization that may need to be contacted in a hurry if something goes sideways. This list should include people from software security, site security, legal, public relations, and so on. 
 
