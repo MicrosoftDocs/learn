@@ -17,7 +17,7 @@ abstract: |
   * Structure and Submit the Request
 prerequisites: |
   - Knowledge of navigating the Azure portal
-  - Knowledge of at least one programming language such as C#, Python, or JavaScript
+  - Knowledge of at least one programming language such as C# or Python
   - Basic understanding of REST APIs and JSON
 iconUrl: /learn/achievements/recognize-entities-in-text-with-the-text-analytics-api.svg
 levels:
