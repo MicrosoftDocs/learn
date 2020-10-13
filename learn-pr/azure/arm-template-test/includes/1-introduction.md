@@ -11,5 +11,5 @@ In this module, you gain an understanding to what practices are beneficial to fo
 After completing this module, you'll be able to:
 
 - Preview what changes will happen before you deploy by using the what-if operation.
-- Validate your templates adherence to sound recommendations using ARM Template Test Toolkit.
-- Implement domain-specific rules for deployments that can be run by ARM Template Test Toolkit.
+- Validate your templates adherence to sound recommendations using ARM template test toolkit.
+- Implement domain-specific rules for deployments that can be run by ARM template test toolkit.

@@ -1,8 +1,8 @@
 ### YamlMime:Module
-uid: learn.arm-test
+uid: learn.arm-template-test
 metadata:
-  title: Validate your deployments by using what-if and the ARM Template Test Toolkit
-  description: Leverage the ARM Template Test Toolkit and apply it on your Azure Resource
+  title: Validate your deployments by using what-if and the ARM template test toolkit
+  description: Leverage the ARM template test toolkit and apply it on your Azure Resource
     Manager templates to ensure the templates follow good practices before
     deployment. Apply the what-if command to see the impact of a deployment before it's applied. 
   ms.date: 09/17/2020
@@ -10,13 +10,13 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Validate your deployments by using what-if and the ARM Template Test Toolkit
-summary: This module teaches two major things, how to preview your changes with the what-if operation and the value of doing so. Secondly it teaches you how to create valid templates and gives you good recommendations that you can follow using the ARM Template Test Toolkit tool.
+title: Validate your deployments by using what-if and the ARM template test toolkit
+summary: This module teaches two major things, how to preview your changes with the what-if operation and the value of doing so. Secondly it teaches you how to create valid templates and gives you good recommendations that you can follow using the ARM template test toolkit tool.
 abstract: |
   After completing this module, you'll be able to:
   - Preview what changes will happen before you deploy by using the what-if operation.
-  - Validate your templates adherence to sound recommendations using ARM Template Test Toolkit.
-  - Implement domain specific rules for deployments that can be run by ARM Template Test Toolkit.
+  - Validate your templates adherence to sound recommendations using ARM template test toolkit.
+  - Implement domain specific rules for deployments that can be run by ARM template test toolkit.
 iconUrl: /learn/achievements/undefined.svg
 levels:
   - intermediate
@@ -35,14 +35,14 @@ prerequisites: |
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
   - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.
 units:
-  - learn.arm-test.1-introduction
-  - learn.arm-test.2-what-if
-  - learn.arm-test.3-exercise-what-if
-  - learn.arm-test.4-test-toolkit
-  - learn.arm-test.5-exercise-test-toolkit
-  - learn.arm-test.6-custom-tests
-  - learn.arm-test.7-exercise-custom-tests
-  - learn.arm-test.8-knowledge-check
-  - learn.arm-test.9-summary
+  - learn.arm-template-test.1-introduction
+  - learn.arm-template-test.2-what-if
+  - learn.arm-template-test.3-exercise-what-if
+  - learn.arm-template-test.4-test-toolkit
+  - learn.arm-template-test.5-exercise-test-toolkit
+  - learn.arm-template-test.6-custom-tests
+  - learn.arm-template-test.7-exercise-custom-tests
+  - learn.arm-template-test.8-knowledge-check
+  - learn.arm-template-test.9-summary
 badge:
-  uid: learn.arm-test.badge
+  uid: learn.arm-template-test.badge

@@ -12,7 +12,7 @@ There are recommendations on different levels, everything from parameters and va
 
 ## The test toolkit
 
-For the reasons mentioned above, using a testing tool is a good idea so you can focus on authoring while knowing that a tool will find any issues and make your templates better. There is such a testing tool called the ARM Template Test toolkit or **Test Toolkit** for short.
+For the reasons mentioned above, using a testing tool is a good idea so you can focus on authoring while knowing that a tool will find any issues and make your templates better. There is such a testing tool called the ARM template test toolkit or **Test toolkit** for short.
 
 It addresses the problems mentioned above by running a series of tests. The tests can be grouped into the following categories:
 

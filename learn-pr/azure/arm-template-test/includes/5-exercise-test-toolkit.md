@@ -1,4 +1,4 @@
-You're part of a development team at the company Tailwind Traders. As part of that work you need to author ARM templates to deploy and manage resources in the cloud. You want to ensure the templates follow some sounds practices before it's deployed. You therefore elect to use the ARM Testing tool to help you analyze your templates, so you can rectify any problems. 
+You're part of a development team at the company Tailwind Traders. As part of that work you need to author ARM templates to deploy and manage resources in the cloud. You want to ensure the templates follow some sounds practices before it's deployed. You therefore elect to use the ARM template test toolkit to help you analyze your templates, so you can rectify any problems. 
 
 ## Set up your testing environment
 

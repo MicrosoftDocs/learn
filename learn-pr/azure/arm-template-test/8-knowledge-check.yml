@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.arm-test.8-knowledge-check
+uid: learn.arm-template-test.8-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -39,7 +39,7 @@ quiz:
       explanation: "This is the role of the *confirm switch*."  
     - content: "A resource is waiting for another resource to complete deploying before deployment can begin."
       isCorrect: false
-      explanation: "ARM figures this out by itself, most of the time."
+      explanation: "The resource manager figures this out by itself, most of the time."
   - content: "How would you run a single test using the Test toolkit?"
     choices:
     - content: "Use the flag -TestName and specify the test name with double quotation marks \"Template Should Not Contain Blanks\"."
