@@ -57,7 +57,8 @@ Find below the JSON string, where the `@t` field is a timestamp, `@mt` is the me
   },
   "SourceContext": "Ordering.API.Application.Behaviors.TransactionBehaviour",
   "ApplicationContext": "Ordering.API",
-  "TransactionContext":"77fa1239-0abb-485f-bad2-f3ecd5e91128","IntegrationEventContext":"5f4b11b5-24be-40ca-9583-ed1c3d83ecb8-Ordering.API"
+  "TransactionContext":"77fa1239-0abb-485f-bad2-f3ecd5e91128",
+  "IntegrationEventContext":"5f4b11b5-24be-40ca-9583-ed1c3d83ecb8-Ordering.API"
 }
 ```
 
