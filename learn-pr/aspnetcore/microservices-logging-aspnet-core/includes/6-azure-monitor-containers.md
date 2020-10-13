@@ -32,7 +32,7 @@ AAD role propagation done[############################################]  100.000
 Monitor the AKS cluster's health by following these steps:
 
 1. If needed, sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) using the same subscription used in previous units.
-1. Use the search box to find and open the Kubernetes service resource named *eshop-learn-aks*.
+1. Use the search box to find and open the Kubernetes service resource named *:::no-loc text="eshop-learn-aks":::*.
 1. Select the **Insights** option from the **Monitoring** section in the left side panel.
 
     :::image type="content" source="../media/6-azure-monitor-containers/aks-monitoring-insights.png" alt-text="AKS monitoring overview on Azure portal, showing CPU, memory utilization, and node & pod count" border="true" lightbox="../media/6-azure-monitor-containers/aks-monitoring-insights.png":::
@@ -53,7 +53,7 @@ Complete the following steps to implement a counter metric for the request count
       popd
     ```
 
-1. Apply the following changes in *src/Services/Catalog/Catalog.API/Startup.cs*:
+1. Apply the following changes in *:::no-loc text="src/Services/Catalog/Catalog.API/Startup.cs":::*:
     1. In the `Configure` method, replace the comment `// Add the counter code` with the following code:
 
         ```csharp
@@ -112,7 +112,7 @@ Complete the following steps to implement a counter metric for the request count
 
 The Docker image in ACR has been updated. A configuration change to the Helm chart is required before the service is redeployed. Complete the following steps:
 
-1. In *deploy/k8s/helm-simple/catalog/templates/deployment.yaml*, uncomment the metadata `annotations` block. Save your changes.
+1. In *:::no-loc text="deploy/k8s/helm-simple/catalog/templates/deployment.yaml":::*, uncomment the metadata `annotations` block. Save your changes.
 
     After the change, your file will resemble the following YAML snippet:
 
@@ -137,7 +137,7 @@ The Docker image in ACR has been updated. A configuration change to the Helm cha
 
 Before Azure Monitor for Containers can scrape Prometheus metrics from the catalog service, Prometheus metrics scraping must be enabled in the AKS cluster. The [Azure Monitor Prometheus scraping configuration documentation](/azure/azure-monitor/insights/container-insights-prometheus-integration) provides a Kubernetes ConfigMap YAML template. The ConfigMap contains non-confidential data in key-value pairs and is used to apply Kubernetes configuration changes to AKS using the `kubectl` command.
 
-For your convenience, the ConfigMap YAML template has been provided in *deploy/k8s/azure-monitor/container-azm-ms-agentconfig.yaml*.
+For your convenience, the ConfigMap YAML template has been provided in *:::no-loc text="deploy/k8s/azure-monitor/container-azm-ms-agentconfig.yaml":::*.
 
 1. Open the *ConfigMap* template in the Cloud Shell editor. Change the value of `monitor_kubernetes_pods` from `false` to `true`, as shown. Save your changes.
 
@@ -176,7 +176,7 @@ With the changes you made in the previous section, the catalog service will crea
 
 To troubleshoot a production issue, you've been asked to monitor requests for the full list of catalog items. The list of catalog items is retrieved from the catalog service via an HTTP GET request to the `/catalog-api/api/v1/catalog/items` endpoint. To view the current count of requests to that endpoint, complete the following steps:
 
-1. In the Azure portal, use the search box at the top to find and open the Kubernetes service resource named *eshop-learn-aks*.
+1. In the Azure portal, use the search box at the top to find and open the Kubernetes service resource named *:::no-loc text="eshop-learn-aks":::*.
 1. Select the **Logs** option in the **Monitoring** section on the left side panel.
 
     > [!NOTE]

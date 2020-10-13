@@ -16,7 +16,7 @@ You will:
 
 ## Create the Application Insights resources
 
-1. Add the Application Insights extension to Azure CLI by running this command:
+1. In the Cloud Shell, add the Application Insights extension to Azure CLI by running this command:
 
     ```azurecli
     az extension add --name application-insights
@@ -63,11 +63,11 @@ You will:
     - The `Name` property represents the service name.
     - The `Key` property represents the Application Insights instrumentation key.
 
-1. Using the Cloud Shell editor, uncomment the `APPINSIGHTS_INSTRUMENTATIONKEY` environment variable in each of the following files in the *deploy/k8s/helm-simple* directory. Replace the `<key>` placeholder with the appropriate Application Insights instrumentation key. Save your changes.
-    - *catalog/templates/configmap.yaml*
-    - *coupon/templates/configmap.yaml*
-    - *ordering/templates/configmap.yaml*
-    - *webshoppingagg/templates/configmap.yaml*
+1. Using the Cloud Shell editor, uncomment the `APPINSIGHTS_INSTRUMENTATIONKEY` environment variable in each of the following files in the *:::no-loc text="deploy/k8s/helm-simple":::* directory. Replace the `<key>` placeholder with the appropriate Application Insights instrumentation key. Save your changes.
+    - *:::no-loc text="catalog/templates/configmap.yaml":::*
+    - *:::no-loc text="coupon/templates/configmap.yaml":::*
+    - *:::no-loc text="ordering/templates/configmap.yaml":::*
+    - *:::no-loc text="webshoppingagg/templates/configmap.yaml":::*
 
     For example, update the catalog service's Helm chart template as follows:
 
@@ -92,8 +92,8 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
         popd
     ```
 
-1. Apply the following changes in the *src/Services/Catalog/Catalog.API* directory:
-    1. In *Extensions/ServiceCollectionExtensions.cs*, replace the comment `// Add AddAppInsights extension method` with the following extension method. Save your changes.
+1. Apply the following changes in the *:::no-loc text="src/Services/Catalog/Catalog.API":::* directory:
+    1. In *:::no-loc text="Extensions/ServiceCollectionExtensions.cs":::*, replace the comment `// Add AddAppInsights extension method` with the following extension method. Save your changes.
 
         :::code language="csharp" source="../code/src/services/catalog/catalog.api/extensions/servicecollectionextensions.cs":::
 
@@ -102,13 +102,13 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
         - The `AddApplicationInsightsTelemetry` extension method is provided by the `Microsoft.ApplicationInsights.AspNetCore` NuGet package.
         - The `AddApplicationInsightsKubernetesEnricher` extension method is provided by the `Microsoft.ApplicationInsights.Kubernetes` NuGet package.
 
-    1. In the *Startup.cs* file's `ConfigureServices` method, invoke the `AddAppInsights` extension method. Save your changes.
+    1. In the *:::no-loc text="Startup.cs":::* file's `ConfigureServices` method, invoke the `AddAppInsights` extension method. Save your changes.
 
         :::code language="csharp" source="../code/src/services/catalog/catalog.api/startup.cs" highlight="3":::
 
         The preceding code registers the telemetry services in the dependency injection container.
 
-    1. In *Program.cs*, add the highlighted code to the `CreateSerilogLogger` method:
+    1. In *:::no-loc text="Program.cs":::*, add the highlighted code to the `CreateSerilogLogger` method:
 
         :::code language="csharp" source="../code/src/services/catalog/catalog.api/program.cs" highlight="5,12":::
 

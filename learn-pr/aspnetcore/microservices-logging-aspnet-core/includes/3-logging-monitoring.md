@@ -26,13 +26,13 @@ In a microservices architecture, a solution is needed that can:
 * Correlate the log traces.
 * Carry additional contextual information, like the hosted infrastructure, to efficiently debug the app.
 
-This unit explains how the *eShopOnContainers* app implements [Serilog](https://serilog.net) for structured logging and [Seq](https://datalust.co/seq) to centralize all log traces. In later units, you'll learn about using code instrumentation with Application Insights. Azure Monitor will be used for near real-time monitoring of the telemetry data.
+This unit explains how the *:::no-loc text="eShopOnContainers":::* app implements [Serilog](https://serilog.net) for structured logging and [Seq](https://datalust.co/seq) to centralize all log traces. In later units, you'll learn about using code instrumentation with Application Insights. Azure Monitor will be used for near real-time monitoring of the telemetry data.
 
 ### Structured logging
 
 *Structured logging* is an approach in which the app writes logs in a structured format. An example of a structured format is JSON, while an unstructured log might be plain text. Unstructured text is difficult to query in a consistent manner. Microservices apps comprised of many services necessitate a way to filter the traces by a particular property, such as `TransactionId`.
 
-.NET provides logging infrastructure in the `Microsoft.Extensions.Logging` assembly. The infrastructure provides APIs that work with various native and third-party logging providers. To implement structured logging in *eShopOnContainers*, [Serilog](https://github.com/serilog/serilog), an open-source third-party logging provider, is used.
+.NET provides logging infrastructure in the `Microsoft.Extensions.Logging` assembly. The infrastructure provides APIs that work with various native and third-party logging providers. To implement structured logging in *:::no-loc text="eShopOnContainers":::*, [Serilog](https://github.com/serilog/serilog), an open-source third-party logging provider, is used.
 
 Structured formats can be parsed to search and filter the relevant data based on their correlation. For example, consider the following logging statement that uses the Serilog library:
 
@@ -73,7 +73,7 @@ In the preceding JSON:
 
 * The `@t` property is a timestamp.
 * `@mt` is the message string.
-* The remaining key/value pairs are the parameters.
+* The remaining key-value pairs are the parameters.
 
 Because the logs are being generated in a structured format, they can be visualized in a centralized logging system like Seq. Seq enables filtering based on the structured format, as shown:
 
@@ -81,9 +81,9 @@ Because the logs are being generated in a structured format, they can be visuali
 
 #### Logging contexts and correlation IDs
 
-Logging context allows you to define a scope so you can trace and correlate a set of events. The trace can cross service contexts. Correlation IDs establish a link between two or more contexts. For example, in *eShopOnContainers*, each incoming request is assigned a unique ID. This unique ID is one dimension that can be used to correlate all the events related to that request. Serilog allows logging additional context values across all logging statements using [enrichment](https://github.com/serilog/serilog/wiki/Enrichment).
+Logging context allows you to define a scope so you can trace and correlate a set of events. The trace can cross service contexts. Correlation IDs establish a link between two or more contexts. For example, in *:::no-loc text="eShopOnContainers":::*, each incoming request is assigned a unique ID. This unique ID is one dimension that can be used to correlate all the events related to that request. Serilog allows logging additional context values across all logging statements using [enrichment](https://github.com/serilog/serilog/wiki/Enrichment).
 
-Some of the custom context properties used in *eShopOnContainers* include:
+Some of the custom context properties used in *:::no-loc text="eShopOnContainers":::* include:
 
 * `ApplicationContext` is defined on app startup and adds the `ApplicationContext` property to all events.
 * `SourceContext` identifies the class's full name where the event is logged. It's often defined when creating or injecting the logger.
@@ -137,7 +137,7 @@ The preceding code:
 
 #### Serilog sinks & Seq
 
-Serilog provides [sinks](https://github.com/serilog/serilog/wiki/Provided-Sinks) for writing log events to storage in various formats. In *eShopOnContainers*, Seq is configured as the centralized log monitoring system. Seq was selected for its free, single-user license, which can be used in production and can be run locally.
+Serilog provides [sinks](https://github.com/serilog/serilog/wiki/Provided-Sinks) for writing log events to storage in various formats. In *:::no-loc text="eShopOnContainers":::*, Seq is configured as the centralized log monitoring system. Seq was selected for its free, single-user license, which can be used in production and can be run locally.
 
 The following packages are added to every microservice to configure Serilog and Seq:
 
@@ -147,7 +147,7 @@ The following packages are added to every microservice to configure Serilog and 
 * `Serilog.Sinks.Console`
 * `Serilog.Sinks.Seq`
 
-Logger configuration is added in *Program.cs*, as shown here:
+Logger configuration is added in *:::no-loc text="Program.cs":::*, as shown here:
 
 ```csharp
 private static Serilog.ILogger CreateSerilogLogger(IConfiguration configuration)
@@ -169,9 +169,9 @@ In the preceding code:
 
 * `.Enrich.WithProperty("ApplicationContext", AppName)` defines the `ApplicationContext` for all traces in the app.
 * `.Enrich.FromLogContext()` allows you to define a log context anywhere it's needed.
-* `.ReadFrom.Configuration(configuration)` allows you to override the configuration from environment variables or values in *appsettings.json*. This ability to override configuration values is useful for containers.
+* `.ReadFrom.Configuration(configuration)` allows you to override the configuration from environment variables or values in *:::no-loc text="appsettings.json":::*. This ability to override configuration values is useful for containers.
 
-The following JSON shows the default configuration in *appsettings.json* for an *eShopOnContainers* microservice:
+The following JSON shows the default configuration in *:::no-loc text="appsettings.json":::* for an *:::no-loc text="eShopOnContainers":::* microservice:
 
 ```json
 "Serilog": {

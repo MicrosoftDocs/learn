@@ -5,8 +5,8 @@ In this unit, you'll monitor your app from the Azure portal using Application In
 The four services instrumented for Application Insights send telemetry to Application Insights whenever the app is running. To view the telemetry as it's ingested, complete the following steps:
 
 1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) using the same subscription used in previous units.
-1. Use the search box to find and open the resource group *eshop-learn-rg*.
-1. Select the *webshoppingagg* Application Insights resource.
+1. Use the search box to find and open the resource group *:::no-loc text="eshop-learn-rg":::*.
+1. Select the *:::no-loc text="webshoppingagg":::* Application Insights resource.
 1. Select **Live Metrics** from the **Investigate** section.
 
 A view similar to the following appears:
@@ -15,7 +15,7 @@ A view similar to the following appears:
 
 In the preceding image, notice the following things:
 
-- Sample telemetry is displayed in the pane on the right as it's ingested in real time. You can see that *webshoppingagg* is experiencing failures when connecting to services on which it depends. This behavior is expected while the app is starting. Your telemetry may contain similar failures, depending on when you view the Azure portal.
+- Sample telemetry is displayed in the pane on the right as it's ingested in real time. You can see that *:::no-loc text="webshoppingagg":::* is experiencing failures when connecting to services on which it depends. This behavior is expected while the app is starting. Your telemetry may contain similar failures, depending on when you view the Azure portal.
 - Incoming and outgoing dependency requests are represented by real-time graphics. The graphics illustrate the rate, duration, and failure rate of the requests.
 - The service's overall health is displayed in charts representing memory, CPU usage, and exceptions rate.
 - The **Servers** pane lists the physical nodes used by the app. In this example, there's a single node. The data on this page can be filtered by node by selecting the server name from the list.
@@ -35,7 +35,7 @@ Use the app to generate some telemetry data to examine. Open another browser tab
     :::image type="content" source="../media/health-check.png" alt-text="Health check page" border="true" lightbox="../media/health-check.png":::
 
     > [!NOTE]
-    > While the app is starting, you might initially receive an HTTP 503 or 502 response from the server. Retry after about one minute. The :::no-loc text="Seq"::: logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
+    > While the app is starting, you might initially receive an HTTP 503 or 502 response from the server. Retry after about one minute. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
 
 1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
@@ -65,7 +65,7 @@ Investigate the earlier failed coupon service request with the following steps:
 
     :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-initial-app-map.png" alt-text="The initial view of the webshoppingagg application map" border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-initial-app-map.png":::
 
-    A view similar to the preceding screenshot appears. The application map initially displays a simplified representation of the *webshoppingagg* app. This view doesn't list individual dependencies.
+    A view similar to the preceding screenshot appears. The application map initially displays a simplified representation of the *:::no-loc text="webshoppingagg":::* app. This view doesn't list individual dependencies.
 
     > [!IMPORTANT]
     > Ingestion of Application Insights telemetry takes 1-5 minutes. If your results don't appear similar to the preceding image, wait a few minutes and try again.
@@ -76,9 +76,9 @@ Investigate the earlier failed coupon service request with the following steps:
 
     A view similar to the preceding screenshot appears. The services that are instrumented in Application Insights are represented by green circles.
 
-1. Select the green *webshoppingagg* circle.
+1. Select the green *:::no-loc text="webshoppingagg":::* circle.
 
-    A **webshoppingagg** panel appears. The panel provides a quick view of the service's top failing requests and slowest requests. It also displays common properties that may provide insights into the health of the service. For each category, more detailed information is available by selecting the button.
+    A **:::no-loc text="webshoppingagg":::** panel appears. The panel provides a quick view of the service's top failing requests and slowest requests. It also displays common properties that may provide insights into the health of the service. For each category, more detailed information is available by selecting the button.
 
     :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-request-summary.png" alt-text="A summary of failing requests and performance" border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-request-summary.png":::
 
@@ -97,11 +97,11 @@ The application map provides one way of exploring captured telemetry. You can al
 
     :::image type="content" source="../media/5-monitor-app-insights/add-filter-button.png" alt-text="Add filter button" border="true" lightbox="../media/5-monitor-app-insights/add-filter-button.png":::
 
-1. In the **Filter** panel that appears, enter *Tele* in the **Properties** text box. Select the *trace* check box, and select the **Done** button.
+1. In the **Filter** panel that appears, enter *:::no-loc text="Tele":::* in the **Properties** text box. Select the *trace* check box, and select the **Done** button.
 
     :::image type="content" source="../media/5-monitor-app-insights/properties-filter.png" alt-text="Properties filter text box" border="true" lightbox="../media/5-monitor-app-insights/properties-filter.png":::
 
-    The *webshoppingagg* search results page refreshes to only show *TRACE* events:
+    The *:::no-loc text="webshoppingagg":::* search results page refreshes to only show *TRACE* events:
 
     :::image type="content" source="../media/5-monitor-app-insights/givemefreestuff-trace-search-results.png" alt-text="TRACE event search results matching the term 'GIVEMEFREESTUFF'" border="true" lightbox="../media/5-monitor-app-insights/givemefreestuff-trace-search-results.png":::
 
@@ -110,10 +110,10 @@ The application map provides one way of exploring captured telemetry. You can al
 :::image type="content" source="../media/5-monitor-app-insights/end-to-end-transaction-details.png" alt-text="end-to-end transaction details for a TRACE event" border="true" lightbox="../media/5-monitor-app-insights/end-to-end-transaction-details.png":::
 
 1. Notice the trace includes each step of the request.
-    - The initial request is received by *webshoppingagg*.
+    - The initial request is received by the HTTP aggregator.
         - An **INFORMATION** log entry with the text `----- Getting discount coupon: "GIVEMEFREESTUFF"` is logged.
         - An **INFORMATION** log entry with the text `----- WebAggregator --> Coupon-API: "GIVEMEFREESTUFF"` is logged.
-    - *webshoppingagg* makes an HTTP request to the *coupon* service at the path `GET /api/v1/coupon/GIVEMEFREESTUFF`.
+    - The HTTP aggregator makes a request to the coupon service at the path `GET /api/v1/coupon/GIVEMEFREESTUFF`.
     - Since the preceding request fails, the overall request fails.
         - An **INFORMATION** log entry beginning with the text `----- WebAggregator <-- Coupon-API: HttpResponseMessage` is logged.
         - A **WARNING** log entry with the text `----- Coupon not found: 404 - Content: "ERROR: The coupon doesn't exist"` is logged.
