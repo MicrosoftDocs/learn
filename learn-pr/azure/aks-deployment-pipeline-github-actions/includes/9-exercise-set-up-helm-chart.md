@@ -34,9 +34,9 @@ Let's set up the environment to deploy a helm chart to AKS using GitHub Actions.
     mkdir templates
     ```
 
-Right now, you have created an empty chart. To start building the workloads, you'll leverage what others have already built, which means that you'll use the `yaml` files that lie outside of this new directory you created.
+    Right now, you have created an empty chart. To start building the workloads, you'll leverage what others have already built, which means that you'll use the `yaml` files that lie outside of this new directory you created.
 
-Move the old `kubernetes` files to the `templates` folder.
+1. Move the old `kubernetes` files to the `templates` folder.
 
 1. From within the `contoso-website` directory, run
 
@@ -97,7 +97,7 @@ In this section, you'll go through each of the template files to set them up and
 
 ### Create a Deployment
 
-1. Open the `kubernetes` folder in the left-hand side and navigate until you find the `deployment.yaml` file within the `templates` folder you just moved and click it
+1. Open the `kubernetes` folder in the left-hand side and navigate until you find the `deployment.yaml` file within the `templates` folder you just moved and  it
 
     In the opened file you should have a YAML like this:
 

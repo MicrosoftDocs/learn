@@ -6,13 +6,13 @@ You'll build the tagged version using another workflow.
 
 ## Build the Action workflow
 
-1. To start building our pipeline, let's go to the fork of the sample repository in the GitHub website. And click on the "Actions" tab.
+1. To start building our pipeline, let's go to the fork of the sample repository in the GitHub website. And click on the **Actions** tab.
 
-1. Click the "New Workflow" button, you'll be led to the same page as before.
+1. Click the **New Workflow** button, you'll be led to the same page as before.
 
     :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Open the actions tab in the GitHub website":::
 
-1. Click on the "set up a workflow yourself" link just below the header. This should open a new editor with a file in it
+1. Click on the **set up a workflow yourself** link just below the header. This should open a new editor with a file in it
 
     :::image type="content" source="../media/6-2-example-editor.png" alt-text="Example file being edited":::
 
@@ -125,7 +125,7 @@ You'll build the tagged version using another workflow.
 
     :::image type="content" source="../media/6-3-docker-action.png" alt-text="Select the action":::
 
-    In the opened panel, click on the `copy` icon to copy the usage YAML
+    In the opened panel, click on the **copy icon** to copy the usage YAML
 
     :::image type="content" source="../media/6-4-docker-copy.png" alt-text="Copy the YAML":::
 
@@ -241,7 +241,7 @@ You'll build the tagged version using another workflow.
     >
     > For git tags the reference will be `refs/tags/{git-tag}` and the tag will be `{git-tag}`.
 
-1. Commit the changes by clicking the green button on the top right. Give the commit a message and click the "Commit new file" button
+1. Commit the changes by clicking the green button on the top right. Give the commit a message and click the **Commit new file** button
 
     This time, the action won't be triggered, because you didn't push a new tag. But our earlier action will trigger and build a new `latest` image.
 
@@ -253,6 +253,6 @@ You'll build the tagged version using another workflow.
 
 1. Run `git push --tags`
 
-1. Open the "Actions" tab and check the running process
+1. Open the **Actions** tab and check the running process
 
 1. Run `az acr repository show-tags --repository contoso-website --name <ACR_NAME> -o table` in the Azure Cloud Shell to confirm there are two tags listed in the results
