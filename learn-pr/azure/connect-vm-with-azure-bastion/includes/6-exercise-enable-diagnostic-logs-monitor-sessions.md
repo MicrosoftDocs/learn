@@ -10,7 +10,7 @@
 1. For **Diagnostic setting name**, enter **bastion-diagnostic**. 
 1. Under **log**, select **BastionAuditLogs**.
 1. Under **Destination details**, select **Send to Log Analytics** and **Archive to storage account**. 
-1. The location, subscription, and a storage account is auto-populated. Make sure the storage account is in the same region as the Bastion resource. (Need to create storage acct for this step?)
+1. The location, subscription, and a storage account are autopopulated. Make sure the storage account is in the same region as the Bastion resource. (Need to create storage acct for this step?)
    :::image type="content" source="../media/6-bastion-add-diagnostic-setting.png" alt-text="Screenshot that shows the  diagnostics settings page filled out.":::
 1. Select **Save**.
 1. After save is complete, close the page.
