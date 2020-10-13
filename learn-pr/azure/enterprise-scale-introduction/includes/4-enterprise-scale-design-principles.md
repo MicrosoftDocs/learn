@@ -1,6 +1,6 @@
-Just as organizing books in a library follows a set of design principles, so does organizing resources in subscriptions. Enterprise-scale architecture includes a reference implementation of the infrastructure as code continuous integration and continuous delivery (CI/CD) pipeline, which helps organizations establish a cloud operating model. 
+Organizing books in a library follows a set of design principles, as does organizing resources in subscriptions. Enterprise-scale architecture includes a reference implementation of the infrastructure-as-code, continuous integration and continuous delivery (CI/CD) pipeline, which helps organizations establish a cloud operating model. 
 
-Enterprise-scale architecture and reference implementation help organizations not only meet the criteria of success for cloud adoption, but they also meet requirements for what must be true for success with continuous engineering. Familiarize yourself with these principles to understand their impact and the trade-offs associated with nonadherence.
+Enterprise-scale architecture and reference implementation help organizations meet not only the criteria of success for cloud adoption, but also the requirements for success with continuous engineering. Familiarize yourself with these principles to understand their impact and the trade-offs associated with nonadherence.
 
 ## Subscription democratization
 
@@ -12,7 +12,7 @@ Subscriptions are units of management and scale that are aligned with an organiz
 
 ## Policy-driven governance
 
-Azure Policy provides guardrails for subscriptions to ensure the continued compliance of an organization's platform and applications. At the same time, it helps to provide application owners both sufficient freedom and a secure, unhindered path to the cloud. Organizations should define governance rules in code to create guardrails authoritatively across the platform. Organizations declare the intent of the policy, and certain effects, such as deploy-if-not-exists and deny policies, help ensure a compliant resource configuration and prevent configuration drift.
+Azure Policy provides guardrails for subscriptions to ensure continuous compliance of an organization's platform and applications. At the same time, Policy helps to provide application owners both sufficient freedom and a secure, unhindered path to the cloud. Organizations should define governance rules in code to create guardrails authoritatively across the platform. Organizations declare the intent of the policy, and certain effects, such as *deploy-if-not-exists* and *deny* policies, help ensure a compliant resource configuration and prevent configuration drift.
 
 - Management group level policies
 - Infrastructure deployment by policy
@@ -28,7 +28,7 @@ Ultimately, the architecture should provide a safe and secure foundation for all
 
 ## Application-centric and archetype-neutral
 
-Enterprise-scale architecture should focus on application-centric migrations and development rather than a pure infrastructure lift-and-shift migration (such as migrating virtual machines by virtual machines). The architecture shouldn't differentiate between old and new applications or IaaS and PaaS applications.
+Enterprise-scale architecture should focus on application-centric migrations and development rather than a pure infrastructure lift-and-shift migration (such as migrating virtual machines). The architecture shouldn't differentiate between old and new applications or IaaS and PaaS applications.
 
 - Group application components together
 - Support for migration and net-new development
@@ -59,8 +59,8 @@ These design areas are discussed in more detail in other Microsoft Learn modules
 
 - **Management and monitoring**: A management and monitoring process gives central teams key recommendations for maintaining operational visibility within a large-scale Azure platform. This is a key consideration for operationally maintaining an Azure enterprise estate with centralized management and monitoring at a platform level.
 
-- **Business continuity and disaster recovery**: Organizations capture disaster recovery (DR) requirements to design suitable platform-level capabilities that application workloads can consume. This helps organizations reach their specific recovery time objectives (RTO) and recovery point objectives (RPO) in Azure.
+- **Business continuity and disaster recovery**: Organizations capture disaster recovery (DR) requirements to design suitable platform-level capabilities that application workloads can consume. This helps organizations reach their specific recovery time objectives (RTOs) and recovery point objectives (RPOs) in Azure.
 
-- **Security, governance, and compliance**: This critical design area covers encryption and a framework to assess the enterprise security readiness of Azure services.
+- **Security, governance, and compliance**: This critical design area covers encryption and a framework for assessing the enterprise security readiness of Azure services.
 
 - **Platform automation and DevOps**: Many traditional IT operating models aren't compatible with the cloud. In this section, we look at planning for a platform DevOps approach, as well as central and federated responsibilities.
