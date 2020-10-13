@@ -228,7 +228,7 @@ This will start copying data into the target storage account you specified in th
 
 It will take approximately 3-5 minutes for the data to come across.
 
-   ![Full Copy Trigger Snapshot ](../media/azure-data-share-trigger-snapshot-fullcopy.png)
+   ![Full Copy Trigger Snapshot ](../media/azure-data-share-trigger-snapshot-full-copy.png)
 
 Select History tab, and click Refresh to monitor snapshot status.
 

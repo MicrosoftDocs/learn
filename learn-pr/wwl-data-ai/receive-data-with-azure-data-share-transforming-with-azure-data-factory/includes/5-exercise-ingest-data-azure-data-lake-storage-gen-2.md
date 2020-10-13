@@ -54,7 +54,7 @@ The last linked service needed is an Azure Data Lake Storage gen2. In the connec
 
 You’ll be redirected to the following screen:
 
-   ![Create Azure Data Lake Storage Gen2 as Linked Service ](../media/azure-data-factory-linked-service-azure-data-lake-storage-gen-2-specification.png)
+   ![Create Azure Data Lake Storage Gen2 as Linked Service ](../media/azure-data-lake-storage-gen-2-specification.png)
 
 Once you hit create you will be redirected to the following screen:
 
@@ -70,7 +70,7 @@ To turn on debug, click the Data flow debug slider in the factory top bar.
 
 Click ok when the confirmation dialog pop-ups. The cluster will take about 5-7 minutes to start-up. 
 
-   ![Turn on data flow debug ](../media/azure-data-factory-turnon-dataflow-debug.png)
+   ![Turn on data flow debug ](../media/azure-data-factory-turn-on-data-flow-debug.png)
 
 ## Ingest data from Azure SQL DB into ADLS gen2 using the copy activity
 
