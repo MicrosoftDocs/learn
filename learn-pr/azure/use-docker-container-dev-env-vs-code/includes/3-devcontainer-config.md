@@ -21,33 +21,13 @@ You can alter your configuration to do things such as:
 * Reuse or [extend your existing Docker Compose setup](https://aka.ms/vscode-remote/containers/docker-compose/extend).
 * Add more [advanced container configurations](/docs/remote/containers-advanced.md).
 
-For this example, if you'd like to install the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) into your container and automatically forward port 3000, your `devcontainer.json` would look like:
-
-```json
-{
-    "image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:0-12",
-    "extensions": [
-        "dbaeumer.vscode-eslint"
-    ],
-    "forwardPorts": [ 3000 ]
-}
-```
-
-With the above `devcontainer.json`, your dev container is functional, and you can connect to and start developing within it. Try it out with the **Remote-Containers: Reopen in Container** command.
-
-After running this command, when VS Code restarts, you're now within a Node.js and TypeScript dev container with port 3000 forwarded and the ESLint extension installed. Once you're connected, notice the green remote indicator on the left of the Status bar to show you are connected to your dev container.
-
 ## Dockerfile
 
 A Dockerfile will also live in the `.devcontainer` folder. You can replace the `image` property in `devcontainer.json` with `dockerFile`:
 
 ```json
 {
-    "build": { "dockerFile": "Dockerfile" },
-    "extensions": [
-        "dbaeumer.vscode-eslint"
-    ],
-    "forwardPorts": [ 3000 ]
+    "dockerFile": "Dockerfile"
 }
 ```
 
