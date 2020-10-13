@@ -31,17 +31,17 @@ quiz:
     - content: Which of the following statements is **true** for Application Insights?
       choices:
         - content: One Application Insights resource (instrumentation key) must be created per service type.
-          isCorrect: false
+          isCorrect: true
           explanation: "The instrumentation key determines the destination of the telemetry. Each microservice defines its own Azure Application Insights resource."
         - content: Application map can be used to investigate failures and performance issues across services and dependencies. 
-          isCorrect: false
+          isCorrect: true
           explanation: "Application map helps you locate performance bottlenecks or failure hot spots across all components of your distributed app."
         - content: Application Insights provides built-in correlation and dependency tracking.
-          isCorrect: false
-          explanation: "The Application Insights SDK automatically injects correlation context into HTTP headers and includes the correlation ID in Application Insights logs."
-        - content: All of the above.
           isCorrect: true
-          explanation: "Application Insights, a feature of Azure Monitor, is an extensible Application Performance Management (APM) service for developers. It's designed to help you continuously improve performance and usability."          
+          explanation: "The Application Insights SDK automatically injects correlation context into HTTP headers and includes the correlation ID in Application Insights logs."
+        - content: Microsoft Application Insights for Kubernetes is enabled by default to all ASP.NET apps running on AKS.
+          isCorrect: false
+          explanation: "To enable Microsoft Application Insights for Kubernetes, you need to add a package called Microsoft.ApplicationInsights.AspNetCore to your ASP.NET app and configure it."          
     - content: Which of the following statements is **NOT** true about Azure Monitor for containers?
       choices:
         - content: Azure Monitor for containers gives you infrastructure-oriented metrics.
