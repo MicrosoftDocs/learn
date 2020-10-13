@@ -4,13 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/13/2020
+  ms.date: 08/29/2020
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 2
+content: |
+  [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -22,12 +24,12 @@ quiz:
     - content: "Azure Service Fabric, Azure Container Service, Azure VMs."
       isCorrect: false
       explanation: "That's incorrect. Azure VMs are one of the options for deploying SAP in Azure, but the other two are not."
-    - content: "SAP HANA on Azure (Large Instances), SAP Cloud Appliance Library (CAL, and Azure Container Instances."
+    - content: "SAP HANA on Azure (Large Instances), SAP Cloud Appliance Library (CAL), and Azure Container Instances."
       isCorrect: false
       explanation: "That's incorrect. Azure Container Instances is not one of the options for deploying SAP in Azure."
   - content: "The which of the following SAP HANA products are supported on Azure VMs and SAP HANA on Azure (Large Instances)?"
     choices:
-    - content: "Incorrect SAP Marketing Cloud and SAP S/4 HANA."
+    - content: "SAP Marketing Cloud and SAP S/4 HANA."
       isCorrect: false
       explanation: "That's incorrect. SAP Marketing Cloud is not supported on Azure VMs and SAP HANA on Azure (Large Instances)."
     - content: "SAP Portfolio and Project Management and SAP Engineering Control Center."

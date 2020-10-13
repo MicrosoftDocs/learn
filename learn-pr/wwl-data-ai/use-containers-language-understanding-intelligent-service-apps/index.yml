@@ -28,7 +28,6 @@ roles:
 - data-scientist
 - developer
 - solution-architect
-- student
 products:
 - azure
 - azure-cognitive-services

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-container-for-use-with-cognitive-services.introduction-to-containerization-of
+title: Introduction to containerization of Cognitive Services
+metadata:
+  title: Introduction to containerization of Cognitive Services
+  description: "Introduction to containerization of Cognitive Services"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction-containerization.md)]

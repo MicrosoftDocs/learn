@@ -105,7 +105,7 @@ The operations under `NotActions` are subtracted from `Actions`. In the case of 
 
 ### DataActions and NotDataActions
 
-Data operations are specified in the `DataActions` and `NotDataActions` properties. This allows data operations to be specified separately from the management operations. This prevents current role assignments with wildcards (`*`) from suddenly having accessing to data. Here are some data operations that can be specified in `DataActions` and `NotDataActions`:
+Data operations are specified in the `DataActions` and `NotDataActions` properties. This allows data operations to be specified separately from the management operations. This prevents current role assignments with wildcards (`*`) from suddenly having access to data. Here are some data operations that can be specified in `DataActions` and `NotDataActions`:
 
 * Read a list of blobs in a container
 * Write a storage blob in a container

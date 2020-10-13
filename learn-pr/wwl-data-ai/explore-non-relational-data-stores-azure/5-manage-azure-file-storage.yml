@@ -4,9 +4,9 @@ title: Manage Azure File storage
 metadata:
   title: Manage Azure File storage
   description: "Manage Azure File storage"
-  ms.date: 07/23/2020
+  ms.date: 10/02/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: wwlpub
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

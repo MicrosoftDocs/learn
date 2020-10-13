@@ -4,7 +4,7 @@ title: Configure multiple node pools by using AKS spot node pools with the clust
 
 metadata:
   title: Configure multiple node pools by using AKS spot node pools with the cluster autoscaler
-  description: Use spot VMs for nodes with your AKS cluster to take advantage of unused capacity in Azure and to optimize costs. Here you'll explore how to configure a spot node pool and enable the autoscaler on the node pool. You'll also see how to deploy a workload that uses the node pool's taint information to schedule the workload on the node pool's nodes.
+  description: Use spot VMs for user nodes with your AKS cluster to take advantage of unused capacity in Azure and to optimize costs. Here you'll explore how to configure a spot node pool and enable the autoscaler on the node pool. You'll also see how to deploy a workload that uses the node pool's taint information to schedule the workload on the node pool's nodes.
   ms.date: 7/10/2020
   author: cryophobia
   ms.author: chrvaw
@@ -27,7 +27,7 @@ quiz:
     - content: "Use the Azure portal to add a new spot node pool to the AKS cluster."
       isCorrect: false
       explanation: "The Azure portal currently doesn't support the option to add spot node pools. "
-    - content: "Run the `az aks node pool add` command to add a new spot node pool to the AKS cluster."
+    - content: "Run the `az aks node pool add` command to add a new spot user node pool to the AKS cluster."
       isCorrect: true
       explanation: "Spot node pools must be added to an AKS cluster. They can't be updated, and availability can't be guaranteed, because Azure will allocate VMs to the underlying scale set only if capacity is available."
 
@@ -43,7 +43,7 @@ quiz:
       isCorrect: false
       explanation: "A deallocated VM keeps counting toward your spot virtual CPU quota, and charges for the underlying, allocated disks still apply. This option isn't the most cost-effective one to use with spot node pools."
 
-  - content: "For the service described in the preceding questions, how do you ensure that workloads are scheduled on the nodes of the spot node pool?"
+  - content: "For the service described in the preceding questions, how do you ensure that workloads are scheduled on the nodes of the spot user node pool?"
     choices:
     - content: "AKS ensures that new workloads are always scheduled on spot node pools in an AKS cluster. This behavior is the default, and no additional configuration is required."
       isCorrect: false

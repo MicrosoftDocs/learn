@@ -25,28 +25,28 @@ quiz:
     - content: Billing profile admin
       isCorrect: false
       explanation: The billing profile admin isn't a role in any Azure hierarchy.
-  - content: "What filter should you use in Cost Analysis to determine the costs for a specific bill within the billing profile scope?"
+  - content: "What filter should you use in cost analysis to determine the costs for a specific bill within the billing profile scope?"
     choices:
     - content: InvoiceID
       isCorrect: true
-      explanation: This filter only includes costs that roll up to the specified Invoice ID.
+      explanation: This filter includes only costs that roll up to the specified invoice ID.
     - content: MyInvoice
       isCorrect: false
-      explanation: MyInvoice isn't a dimensional filter supported by Cost Analysis.
+      explanation: MyInvoice isn't a dimensional filter that cost analysis supports.
     - content: BillID
       isCorrect: false
-      explanation: BillID isn't a dimensional filter supported by Cost Analysis.
-  - content: "What dimension in Cost Analysis can be used to determine whether a resource charge has received Partner Earned Credit?"
+      explanation: BillID isn't a dimensional filter that cost analysis supports.
+  - content: "What dimension can you use in cost analysis to determine whether a resource charge has received partner earned credit?"
     choices:
       - content: PartnerCredit
         isCorrect: false
-        explanation: PartnerCredit isn't a dimension that you use to filter costs in Cost Analysis.
+        explanation: PartnerCredit isn't a dimension that you use to filter costs in cost analysis.
       - content: PartnerEarnedCreditApplied
         isCorrect: true
-        explanation: In Cost Analysis, the PartnerEarnedCreditApplied dimension is shown as True when the credit is applicable. It's shown as False when it isn't applicable.
+        explanation: In cost analysis, the PartnerEarnedCreditApplied dimension is shown as True when the credit is applicable. It's shown as False when it isn't applicable.
       - content: IsPartnerCreditApplied
         isCorrect: false
-        explanation: IsPartnerCreditApplied isn't a dimension that you use to filter costs in Cost Analysis.
+        explanation: IsPartnerCreditApplied isn't a dimension that you use to filter costs in cost analysis.
   - content: "What happens when you enable the policy that allows Fabrikam's customers to see costs?"
     choices:
       - content: Customers can see costs at Fabrikam's reduced rates.
@@ -65,7 +65,7 @@ quiz:
         explanation: Although monthly is a supported budget period, weekly and hourly budgets aren't supported.
       - content: Monthly, quarterly, and annual
         isCorrect: true
-        explanation: A budget can be created with any of the evaluation periods above.
+        explanation: A budget can be created with any of these evaluation periods.
       - content: Monthly and quarterly
         isCorrect: false
-        explanation: Although both of the evaluation periods above are supported, the annual period is also supported.
+        explanation: Although both of these evaluation periods are supported, the annual period is also supported.

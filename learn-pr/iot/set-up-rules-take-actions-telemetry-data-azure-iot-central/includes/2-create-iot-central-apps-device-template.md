@@ -24,9 +24,9 @@ A _capability model_ contains a definition of a device template. A device templa
 
 1. Click **Next: Customize**.
 
-1. Don't select the **Gateway device** check box, click **Next: Review**. Then, **Create**.
+1. Give the template a name, such as "RefrigeratedTruck".
 
-1. Give the template a name, such as "RefrigeratedTruck". Press Enter.
+1. Don't select the **Gateway device** check box, click **Next: Review**. Then, **Create**.
 
 1. Select **Import capability model**.
 

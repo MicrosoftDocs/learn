@@ -1,3 +1,5 @@
-As per the scenario, you were tasked with creating a smoke-testing strategy. You integrated code from developers and deployed the solution on a virtual Azure IoT Edge device in an automated manner. Your solution used Azure DevOps to implement a CI/CD-based release pipeline with a smoke test. A containerized virtual device was created. A smoke test was implemented for this device. The results of the smoke test were captured using Application Insights. 
+Without smoke tests for IoT Edge devices, you risk expensive and time consuming rework by the development and testing teams.
 
-In the absence of the smoke test for IoT Edge devices, it would be costly and expensive in terms of potential rework for the development and the testing teams. You also implemented the smoke test on IoT Edge devices as an automated process through a CI/CD (continuous integration and continuous delivery) strategy. The solution was thus able to seamlessly incorporate code from a large number of developers.
+The smoke test integrates the code from developers and then deploys the solution to a virtual Azure IoT Edge device. A CI/CD release pipeline was implemented. Smoke tests were created on a containerized virtual device. The results of the smoke test were captured using Application Insights.
+
+You used a CI/CD strategy to implement the smoke test on an IoT Edge device. This solution seamlessly incorporated code from a large number of developers.

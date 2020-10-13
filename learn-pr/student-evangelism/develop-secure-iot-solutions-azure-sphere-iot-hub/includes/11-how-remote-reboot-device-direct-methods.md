@@ -1,6 +1,12 @@
-In this module, you'll learn how to control an Azure Sphere application using Azure IoT Hub Direct Method.
+You'll learn how to control an Azure Sphere application using Azure IoT Hub Direct Method. This unit will cover **Azure IoT Direct Methods** and explain **Direct Method Bindings** to simplify the implementation of Azure IoT.
 
 ## Azure IoT Direct Methods
+
+Examine how Azure IoT direct method work
+
+![The illustration shows how Azure IoT direct methods work.](../media/azure-direct-method-pattern.png)
+
+## Steps to manage cloud to device control
 
 The following outlines how Azure IoT Hub Direct Methods can be used cloud to device control.
 
@@ -9,13 +15,13 @@ The following outlines how Azure IoT Hub Direct Methods can be used cloud to dev
 3. The device implements the direct method; in this case, reset the device.
 4. The device responds with an HTTP status code, and optionally a response message.
 
-![The illustration shows how Azure IoT direct methods work.](../media/azure-direct-method-pattern.png)
-
 ## Direct Method Bindings
 
 Direct Method Bindings map a direct method with a handler function that implements an action.
 
 ### Cloud to Device Commands
+
+#### Defining the Reset Device binding
 
 In main.c the variable named resetDevice of type DirectMethodBinding is declared. This variable maps the Azure IoT Hub direct method ResetMethod command with a handler function named ResetDirectMethod.
 
@@ -25,8 +31,6 @@ static LP_DIRECT_METHOD_BINDING resetDevice = {
 	.handler = ResetDirectMethodHandler 
 };
 ```
-
-------
 
 ## Direct Method Handler Function
 

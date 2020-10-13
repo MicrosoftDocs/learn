@@ -1,9 +1,5 @@
 In this unit, you will enable application logging for the new fashions Azure Web App.
 
-::: zone pivot="csharp"
-
-## ASP.NET
-
 You're going to deploy a sample ASP.NET Core Web app from GitHub; this app includes code to generate various trace output messages. You'll then use the Azure portal to enable application logging for this app.
 
 ## Use Azure CLI to deploy a web app
@@ -60,62 +56,3 @@ You'll now set up the application logging.
 1. Click **asplogs**, and then click **Select**.
 1. In the **Retention Period (Days)** box, type **5**.
 1. Click **Save** to close the **Diagnostics logs** pane, and update the log settings.
-
-
-::: zone-end
-
-::: zone pivot="javascript"
-
-##  Node.js
-
-You're going to deploy a sample Node.js app from GitHub; this app includes code to generate various console output messages. You'll then use the Azure portal to enable application logging for this app.
-
-### Use Azure CLI to deploy a web app
-
-In this step, you're going to use Azure CLI commands to create a Node.js Web app using code from a GitHub repository. 
-<!-- TODO App code is currently in a personal repo, so needs to be moved to a Learn repo. -->
-
-1. Run the following commands in the Cloud Shell to set some variables, replacing  _\<your-local-Azure-region\>_, with the closest region to you from the following list.
-   [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
-
-   ```azurecli
-   # Replace the following URL with a public GitHub repo URL
-   gitRepo=https://github.com/MicrosoftDocs/mslearn-capture-application-logs-app-service
-   appName="contosofashions$RANDOM"
-   appPlan="contosofashionsAppPlan"
-   appLocation=<your-local-Azure-region>
-   resourceGroup=<rgn>[sandbox resource group name]</rgn>
-   ```
-
-1. Run the following commands in the Cloud Shell to deploy the web app.
-
-   ```azurecli
-   az appservice plan create --name $appPlan --resource-group $resourceGroup --location $appLocation --sku FREE --is-linux
-   az webapp create --name $appName --resource-group $resourceGroup --plan $appPlan --runtime "node|6.10" --deployment-source-url $gitRepo
-   ```
-
-1. Make a note of the random number suffix in your app name; this was generated to uniquely identify your app.
-
-1. Wait until the commands have completed before continuing with the exercise.
-
-### Enable logging using the Azure portal
-
-In this step, you're going to use the Azure portal to enable application logging to the file system. You'll start by checking that your Web app is running.
-
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-1. On the Portal toolbar, click the **Global subscription filter (Directory + subscription)** button, and in the directories list, select **Microsoft Learn Sandbox** (this is the directory associated with the _Concierge Subscription_).
-1. On the Azure portal menu or from the **Home** page, select **Resource groups**, and check that your sandbox resource group (_<rgn>[sandbox resource group name]</rgn>_) is listed.
-1. On the Azure portal menu, select **App Services**.
-1. In the **App Services** list, click **contosofashions\<_your-number_\>**, and then in the **Overview** section, click on the URL string (https&#58;//contosofashions\<_your-number\ >.azurewebsites.net) to open the home page for the **Contoso Fashions** website in a new browser tab.
-
-You'll now set up the application logging.
-
-1. Switch to the tab showing the Azure portal.
-1. In the **App Service** pane, scroll down to the **Monitoring** section, and then click **Diagnostics logs**.
-1. Under **Application logging**, click **File System**, and in the **Retention Period (Days)** box, type **5**.
-1. Click **Save** to close the **Diagnostics logs** pane, and update the log settings.
-
-::: zone-end
-
-
-

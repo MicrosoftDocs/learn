@@ -8,7 +8,7 @@ Additionally as part of the Azure SQL VM service provider, you can have your bac
 
 ## Azure Backup for SQL Server
 
-The Azure Backup solution requires an agent to be installed on the virtual machine. The agent then communicates with an Azure service that manages automatic backups of your SQL Server databases. Azure Backup also provides a central location that you can used to manage and monitor the backups to ensure meeting any specified RPO/RTO metrics.
+The Azure Backup solution requires an agent to be installed on the virtual machine. The agent then communicates with an Azure service that manages automatic backups of your SQL Server databases. Azure Backup also provides a central location that you can use to manage and monitor the backups to ensure meeting any specified RPO/RTO metrics.
 
 :::image type="content" source="../media/module-22-plan-implement-final-04.png" alt-text="Azure Backup for SQL Server Architecture":::
 
@@ -20,7 +20,7 @@ In addition to the high availability scenarios described above, Always On Availa
 
 :::image type="content" source="../media/module-22-plan-implement-final-05.png" alt-text="Always On Availability Group Configuration":::
 
-The image above shows a logical diagram of an Always On Availability Group, running on a Windows Server Failover Cluster. There are one primary and four secondary replicas. In this scenario all five replicas could be synchronous, or some combination of synchronous and synchronous replicas. Keep in mind that the unit of failover is the group of databases and not the instance. While a failover cluster instance provides HA at an instance level, it doesn't provide disaster recovery.
+The image above shows a logical diagram of an Always On Availability Group, running on a Windows Server Failover Cluster. There are one primary and four secondary replicas. In this scenario all five replicas could be synchronous, or some combination of synchronous and asynchronous replicas. Keep in mind that the unit of failover is the group of databases and not the instance. While a failover cluster instance provides HA at an instance level, it doesn't provide disaster recovery.
 
 ## Azure Site Recovery
 

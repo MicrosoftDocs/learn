@@ -25,7 +25,7 @@ In this task, we will configure Cloud Shell.
 
 5. When prompted, click **Create storage**, and wait for the Azure Cloud Shell to initialize. 
 
-### Task 2: Verify the  a resource group and a virtual machine
+### Task 2: Verify a resource group and a virtual machine
 
 In this task, we will use Azure CLI to create a resource group and a virtual machine.  
 

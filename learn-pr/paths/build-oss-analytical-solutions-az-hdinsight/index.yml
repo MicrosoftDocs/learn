@@ -3,7 +3,7 @@ uid: learn.wwl.build-oss-analytical-solutions-az-hdinsight
 metadata:
   title: Building Open Source Software (OSS) Analytics Solutions with Azure HDInsight
   description: Building Open Source Software (OSS) Analytics Solutions with Azure HDInsight
-  ms.date: 08/06/2020
+  ms.date: 09/12/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -28,6 +28,7 @@ modules:
 - learn.wwl.introduction-open-source-analytics-offering
 - learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions
 - learn.wwl.creating-and-configuring-hdinsight-cluster
+- learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase
 - learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka
 - learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query
 - learn.wwl.manage-enterprise-security-in-hdinsight

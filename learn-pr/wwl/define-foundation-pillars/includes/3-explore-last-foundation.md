@@ -117,7 +117,7 @@ Choose the tools that are right for you. Get support for infrastructure as a ser
 
 ![Diagram explains that Azure DevOps lets developers choose their tools and target any cloud or on-premises environment.](../media/2-3-devops.png)
 
-### Bootstrap the Dojo Classroom
+### Dojo Classroom Bootstrap
 
 With end-to-end solutions in Azure, teams can implement DevOps practices in each of the application lifecycle phases:
 
@@ -134,4 +134,4 @@ These DevOps technologies, combined with people and processes, enable teams to c
 
 Using the robust integration of these DevOps capabilities in Azure allows us to bootstrap our **Dojo Classroom** labs with auto-provisioning to provide hands-on experiences during the master class.
 
-The Dojo Classroom environment includes everything you need in the immersive Dojo classroom, including tracking with ACR!
+The Dojo Classroom environment includes everything you need in the immersive Dojo classroom, including tracking with ACR (Azure Consumed Revenue)!
