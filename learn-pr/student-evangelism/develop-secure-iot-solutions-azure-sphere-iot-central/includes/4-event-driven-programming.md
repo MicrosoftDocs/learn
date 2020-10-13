@@ -1,10 +1,10 @@
-In this unit, you'll learn about event driven programming and look at several different timers such as Event Timers, Periodic Timers, and One-Shot Timers.
+In this unit, you'll learn about event-driven programming and look at several different timers such as event timers, periodic timers, and one-shot timers.
 
-## Event Timers
+## Event timers
 
-Event Timers generate events which are bound to handler functions which implement desired actions.
+Event timers generate events that are bound to handler functions, which implement desired actions.
 
-![The illustration shows event timers concept.](../media/timer-events.png)
+![The illustration shows the event timers concept.](../media/timer-events.png)
 
 For example, blink an LED every second, or read a sensor every 10 seconds. Event-driven programming helps to simplify application design.
 
@@ -12,16 +12,16 @@ The labs use event timers extensively, so there is a generalized model to simpli
 
 There are two types of timers:
 
-- periodic timers, and
-- one-shot timers.
+- periodic timers
+- one-shot timers
 
-### Periodic Timers
+### Periodic timers
 
-Periodic Timers produce timed triggers with a fixed period of time between the next occurrence.
+Periodic timers produce timed triggers with a fixed period of time between occurrences.
 
 The following example is a variable named **measureSensorTimer** of type **LP_TIMER**. This event timer is initialized with a period of 10 seconds **{ 10, 0 }**. When the event timer triggers, the handler function **MeasureSensorHandler** is called to implement the action.
 
-> There are two values used to initialize the **.period** variable. The first is the number of seconds, followed by the number of nanoseconds. If you wanted the timer to trigger events every half a second (500 milliseconds), you would set the .period to be { 0, 500000000 }.
+> There are two values used to initialize the **.period** variable. The first is the number of seconds, followed by the number of nanoseconds. If you wanted the timer to trigger events every half a second (500 milliseconds), you would set the .period variable to be { 0, 500000000 }.
 
 ```
 static LP_TIMER measureSensorTimer = {
@@ -34,7 +34,7 @@ static LP_TIMER measureSensorTimer = {
 };
 ```
 
-### Reading Telemetry
+### Reading telemetry
 
 The following is the implementation of the **MeasureSensorHandler** handler function. This functions reads telemetry, then calls Led2On() to turn on led2.
 
@@ -54,9 +54,9 @@ static void MeasureSensorHandler(EventLoopTimer* eventLoopTimer) {
 }
 ```
 
-### One-Shot Timers
+### One-shot timers
 
-A one-shot timer, as its name suggests fires once only.
+A one-shot timer, as its name suggests, fires once only.
 
 The following code uses a one-shot timer to blink an LED once when a button is pressed. The LED turns on, and then a one-shot timer is set. When the one-shot timer triggers, its handler function is called to turn off the LED.
 
@@ -72,7 +72,7 @@ static LP_TIMER led2BlinkOffOneShotTimer = {
 };
 ```
 
-In the **Led2On** function, led2 is turned on, then a one-shot timer is set by calling **SetOneShotTimer**.
+In the **Led2On** function, if led2 is turned on, then a one-shot timer is set by calling **SetOneShotTimer**.
 
 > The variable led2BlinkPeriod is set to 300,000,000 nanoseconds (300 milliseconds). This means led2 will be turned off 300 milliseconds after it was turned on.
 
@@ -101,9 +101,9 @@ static void Led2OffHandler(EventLoopTimer* eventLoopTimer) {
 }
 ```
 
-## Automatic Initialization of Peripherals and Event Timers
+## Automatic initialization of peripherals and event timers
 
-Peripherals and timers referenced in a **Set** will be automatically opened and closed.
+Peripherals and timers referenced in a **set** will be automatically opened and closed.
 
 ```
 LP_PERIPHERAL_GPIO* peripheralSet[] = {
@@ -116,7 +116,7 @@ LP_TIMER* timerSet[] = {
 };
 ```
 
-These sets are referenced when calling **OpenPeripheralSet**, and **StartTimerSet** from the **InitPeripheralsAndHandlers** function. The sets are also referenced when closing the peripheral and timer sets in the **ClosePeripheralsAndHandlers** function.
+These sets are referenced when **OpenPeripheralSet** and **StartTimerSet** are called from the **InitPeripheralsAndHandlers** function. The sets are also referenced when the peripheral and timer sets are closed in the **ClosePeripheralsAndHandlers** function.
 
 ```
 static void InitPeripheralsAndHandlers(void)
@@ -128,9 +128,9 @@ static void InitPeripheralsAndHandlers(void)
 }
 ```
 
-## Easy to Extend
+## Easy to extend
 
-This model makes it easy to declare another peripheral or timer and add them to the **peripheral** or **timer** sets. The following is an example of adding a GPIO output peripheral.
+This model makes it easy to declare another peripheral or timer and add it to the **peripheral** or **timer** set. The following is an example of adding a GPIO output peripheral.
 
 ```
 static LP_PERIPHERAL_GPIO fanControl = {
