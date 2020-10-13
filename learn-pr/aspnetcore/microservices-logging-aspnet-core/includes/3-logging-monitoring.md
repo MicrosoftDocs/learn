@@ -30,7 +30,9 @@ Structured logging is an approach where the app writes logs in a structured form
 Structured formats like JSON can easily be parsed by any app to search and filter the relevant data based on their correlation. For example, take a look at the logging statement in .NET that uses the Serilog library:
 
 ```csharp
-_logger.LogInformation("----- Begin transaction {TransactionId} for {CommandName} ({@Command})", transaction.TransactionId, commandName, command);
+_logger.LogInformation(
+    "----- Begin transaction {TransactionId} for {CommandName} ({@Command})",
+    transaction.TransactionId, commandName, command);
 ```
 
 The preceding code is similar to what you've seen in the `string.Format` method. There are, however, three significant differences:
@@ -42,7 +44,21 @@ The preceding code is similar to what you've seen in the `string.Format` method.
 Find below the JSON string, where the `@t` field is a timestamp, `@mt` is the message string, and the remaining key/value pairs are the parameters. Outputting JSON format makes it easier to query the data in a structured way.
 
 ```json
-{"@t":"2020-10-12T14:07:35.5281920Z","@mt":"----- Begin transaction {TransactionId} for {CommandName} ({@Command})","@m":"----- Begin transaction 77fa1239-0abb-485f-bad2-f3ecd5e91128 for SetPaidOrderStatusCommand ({\n  \"OrderNumber\": 1,\n  \"_typeTag\": \"SetPaidOrderStatusCommand\"\n})","@i":"79c44f1c","TransactionId":"77fa1239-0abb-485f-bad2-f3ecd5e91128","CommandName":"SetPaidOrderStatusCommand","Command":{"OrderNumber":1,"_typeTag":"SetPaidOrderStatusCommand"},"SourceContext":"Ordering.API.Application.Behaviors.TransactionBehaviour","ApplicationContext":"Ordering.API","TransactionContext":"77fa1239-0abb-485f-bad2-f3ecd5e91128","IntegrationEventContext":"5f4b11b5-24be-40ca-9583-ed1c3d83ecb8-Ordering.API"}
+{
+  "@t": "2020-10-12T14:07:35.5281920Z",
+  "@mt": "----- Begin transaction {TransactionId} for {CommandName} ({@Command})",
+  "@m": "----- Begin transaction 77fa1239-0abb-485f-bad2-f3ecd5e91128 for SetPaidOrderStatusCommand ({\n  \"OrderNumber\": 1,\n  \"_typeTag\": \"SetPaidOrderStatusCommand\"\n})",
+  "@i": "79c44f1c",
+  "TransactionId": "77fa1239-0abb-485f-bad2-f3ecd5e91128",
+  "CommandName":"SetPaidOrderStatusCommand",
+  "Command": {
+    "OrderNumber" :1,
+    "_typeTag": "SetPaidOrderStatusCommand"
+  },
+  "SourceContext": "Ordering.API.Application.Behaviors.TransactionBehaviour",
+  "ApplicationContext": "Ordering.API",
+  "TransactionContext":"77fa1239-0abb-485f-bad2-f3ecd5e91128","IntegrationEventContext":"5f4b11b5-24be-40ca-9583-ed1c3d83ecb8-Ordering.API"
+}
 ```
 
 The same trace can be visualized in a centralized logging system like Seq. The trace can be further filtered to aid in issue discovery while conducting root cause analysis:
@@ -73,21 +89,25 @@ var log = new LoggerConfiguration()
 Then, properties can be added from the context using `LogContext.PushProperty()`:
 
 ```csharp
-public class OrderStartedIntegrationEventHandler : IIntegrationEventHandler<OrderStartedIntegrationEvent>
+public class OrderStartedIntegrationEventHandler : 
+    IIntegrationEventHandler<OrderStartedIntegrationEvent>
 {
-    //...
+    // Code omitted for brevity
+
     public OrderStartedIntegrationEventHandler(
         IBasketRepository repository,
         ILogger<OrderStartedIntegrationEventHandler> logger)
     {
-        //...
+        // Code omitted for brevity
     }
 
     public async Task Handle(OrderStartedIntegrationEvent @event)
     {
         using (LogContext.PushProperty("IntegrationEventContext", $"{@event.Id}-{Program.AppName}"))
         {
-            _logger.LogInformation("----- Handling integration event: {IntegrationEventId} at {AppName} - ({@IntegrationEvent})", @event.Id, Program.AppName, @event);
+            _logger.LogInformation(
+                "----- Handling integration event: {IntegrationEventId} at {AppName} - ({@IntegrationEvent})", 
+                @event.Id, Program.AppName, @event);
 
             await _repository.DeleteBasketAsync(@event.UserId.ToString());
         }
