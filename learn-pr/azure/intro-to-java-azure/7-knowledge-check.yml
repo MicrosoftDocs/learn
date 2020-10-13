@@ -16,15 +16,15 @@ quiz:
   - content: "Where can I deploy my Quarkus Application?"
     choices:
     - content: "AppService"
-      isCorrect: true
+      isCorrect: false
       explanation: "Explanation1"
     - content: "VM"
-      isCorrect: true
+      isCorrect: false
       explanation: "Explanation2"
-    - content: "Answer3"
+    - content: "Spring Cloud"
       isCorrect: false
       explanation: "Explanation3"
-    - content: "Answer4"
+    - content: "All three above"
       isCorrect: true
       explanation: "Explanation4"
   - content: "Question2"
