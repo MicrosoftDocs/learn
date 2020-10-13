@@ -4,7 +4,7 @@ A good analogy to a landing zone is the set of services that are required to bui
 
 The principal purpose of a landing zone is therefore to ensure that when an application or workload lands on Azure, the requisite _infrastructure_ is already in place. Infrastructure helps provide greater agility and compliance with enterprise security and governance requirements. It's a major shift for a centralized IT organization in this scenario to move from providing all the infrastructure (such as buildings for people to live or work in) to providing the zoning guidelines (guardrails that are established so that other business units can build their infrastructure and applications).
 
-One of the main benefits of the cloud is that you can scale out resources on demand with almost no limit. You can also scale in resources when they aren't needed. It's analagous to turning a light on when you need it and off when you don't, so that you incur charges only for the electricity that's used while the light is on. 
+One of the main benefits of the cloud is that you can scale out resources on demand with almost no limit. You can also scale in resources when they aren't needed. It's analogous to turning a light on when you need it and off when you don't, so that you incur charges only for the electricity that's used while the light is on. 
 
 Similarly, an organization can turn on an Azure resource when it's needed and turn it off when it's not. Azure provides broader options beyond on/off configurations, much like a switch that lets you control how much light to provide at any moment in time.
 
