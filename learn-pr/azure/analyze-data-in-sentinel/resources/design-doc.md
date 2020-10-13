@@ -26,7 +26,7 @@
 
 ## Module summary description
 
-This module introduces you to Azure Sentinel Analytics and describes the various types of rules. You can create rules for detecting suspicious events either by using predefined templates or writing your custom queries using Kusto Query Language. There are range of predefined analytics rules based on Machine Learning, Fusion, derived from the security products and you can also pull a community written rules from Security Community in Github.
+This module introduces you to Azure Sentinel Analytics and describes the various types of rules. You can create rules for detecting suspicious events either by using predefined templates or writing your custom queries using Kusto Query Language. There are range of predefined analytics rules based on Machine Learning, Fusion, derived from the security products and you can also pull a community written rules from Security Community in GitHub.
 
 ## Subtasks in this module
 
