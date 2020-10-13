@@ -1,4 +1,4 @@
-Like our analogy of organizing books in a library, enterprise-scale design comes with set of design principles to manage the platform at scale. These principles serve as a compass for subsequent design decisions across critical technical domains. To better understand their impact and the trade-offs associated with nonadherence, familiarize yourself with the following principles:
+Enterprise-scale design comes with set of design principles for managing the platform at scale. These principles serve as a compass for subsequent design decisions across critical technical domains. To better understand their impact and the trade-offs associated with nonadherence, familiarize yourself with the following principles:
 
 - **Subscription democratization**: Use subscriptions as a unit of management and scale that's aligned with business needs and priorities. This approach supports business areas and portfolio owners as they accelerate application migrations and new application development.
 
@@ -26,11 +26,11 @@ Like our analogy of organizing books in a library, enterprise-scale design comes
 
 - **Goal**: Provide consistent landing zones based on an application archetype subscription strategy to minimize subscription sprawl. Expand the definition of requisite components to better fit the governance and compliance needs of a cloud-mature enterprise.
 
-**Principal purpose**: Limited refactoring opportunities and a defined subscription strategy create an opportunity to mature your organization's landing zones faster. Enterprise-scale landing zones broaden the primary purpose of a landing zone to focus on aspects of governance, compliance, security, and operational management. Each of these areas is addressed in the first release of the landing zone and supporting shared platform services.
+- **Principal purpose**: Limited refactoring opportunities and a defined subscription strategy create an opportunity to mature your organization's landing zones faster. Enterprise-scale landing zones broaden the primary purpose of a landing zone to focus on aspects of governance, compliance, security, and operational management. Each of these areas is addressed in the first release of the landing zone and supporting shared platform services.
 
-  An example is how city utilities like water, gas, and electricity are available before new homes are constructed. In this analogy, the network, identity and access management, policies, management, and monitoring are shared utility services that must be readily available to help streamline the application migration process before it begins.
+To use an analogy, shared city utilities such as water, gas, and electricity are available to new homes before they're constructed. Likewise, for landing zones, the network, identity and access management, policies, management, and monitoring must be readily available to help streamline the application migration process before it begins.
 
-In addition to the key aspects denoted here, the design, configuration, deployment, and integration of each landing zone should meet your organization's critical requirements relating to:
+In addition to the key aspects noted here, the design, configuration, deployment, and integration of each landing zone should meet your organization's critical requirements as they relate to:
 
 - Business continuity and disaster recovery at platform and application levels.
 - Service management, such as incident response and support.
