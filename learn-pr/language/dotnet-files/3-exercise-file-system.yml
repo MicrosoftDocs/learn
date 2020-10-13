@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.dotnet-files.3-exercise-file-system
-title: Exercise
+title: Exercise - Work with the file system
 metadata:
-  title: Exercise
-  description: Exercise
-  ms.date: 09/28/2020
+  title: Exercise - Work with the file system
+  description: Use types in System.IO to read files and folders on the file system.
+  ms.date: 10/12/2020
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+interactive: bash
+azureSandbox: true
 durationInMinutes: 2
 content: |
   [!include[](includes/3-exercise-file-system.md)]
