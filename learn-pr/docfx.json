@@ -163,6 +163,19 @@
                 "dest": "modules"
             },
             {
+                "src": "endpoint-manager",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "github",
                 "files": [
                     "**/*.yml",
