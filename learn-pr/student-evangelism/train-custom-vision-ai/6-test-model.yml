@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.train-custom-vision-ai.6-test-model
+metadata:
+  title: Test and iterate on training
+  description: Test and iterate on training.
+  ms.date: 10/15/2020
+  author: # Your GitHub username (or whomever you'd like to give author attribution to)
+  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Test and iterate on training
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-test-model.md)]

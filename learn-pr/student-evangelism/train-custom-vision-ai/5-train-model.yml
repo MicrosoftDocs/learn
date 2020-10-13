@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.train-custom-vision-ai.5-train-model
+metadata:
+  title: Train the Custom Vision service
+  description: Train the Custom Vision service.
+  ms.date: 10/15/2020
+  author: # Your GitHub username (or whomever you'd like to give author attribution to)
+  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Train the Custom Vision service
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-train-model.md)]
