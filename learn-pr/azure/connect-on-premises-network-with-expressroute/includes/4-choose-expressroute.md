@@ -1,6 +1,6 @@
 You've learned how the Azure ExpressRoute service works, and how to connect your on-premises networks to the Microsoft cloud by using an ExpressRoute circuit. You've also learned about the different peering options available, and how to use a virtual network gateway to route requests between your on-premises network and the Microsoft cloud. 
 
-In this unit, you'll learn about the most common use cases for deploying ExpressRoute. You'll compare ExpressRoute to other connection options available for Azure, like site-to-site and point-to-site through a virtual network gateway. This information will to help you determine whether ExpressRoute is the most appropriate solution for your organization.
+In this unit, you'll learn about the most common use cases for deploying ExpressRoute. You'll compare ExpressRoute to other connection options available for Azure, like site-to-site and point-to-site through a virtual network gateway. This information will help you determine whether ExpressRoute is the most appropriate solution for your organization.
 
 ## When to use Azure ExpressRoute
 
