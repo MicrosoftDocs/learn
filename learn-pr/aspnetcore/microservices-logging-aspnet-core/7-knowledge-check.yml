@@ -39,9 +39,9 @@ quiz:
         - content: Application Insights provides built-in correlation and dependency tracking.
           isCorrect: true
           explanation: "The Application Insights SDK automatically injects correlation context into HTTP headers and includes the correlation ID in Application Insights logs."
-        - content: Microsoft Application Insights for Kubernetes is enabled by default to all ASP.NET apps running on AKS.
+        - content: Application Insights for Kubernetes is enabled by default for all ASP.NET Core apps running on AKS.
           isCorrect: false
-          explanation: "To enable Microsoft Application Insights for Kubernetes, you need to add a package called Microsoft.ApplicationInsights.AspNetCore to your ASP.NET app and configure it."          
+          explanation: "To enable Application Insights for Kubernetes, add `Microsoft.ApplicationInsights.AspNetCore` NuGet package to your ASP.NET Core app and configure it."          
     - content: Which of the following statements is **NOT** true about Azure Monitor for containers?
       choices:
         - content: Azure Monitor for containers gives you infrastructure-oriented metrics.
