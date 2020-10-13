@@ -36,12 +36,12 @@ quiz:
     - content: Design principles serve as enterprise-scale design guidelines that create vision in technical alignment.
       isCorrect: true
       explanation: Design principles serve as a compass for subsequent design decisions across design guidelines.
-    - content: Design principles are unrelated to design guidelines
+    - content: Design principles are unrelated to design guidelines.
       isCorrect: false
       explanation: Design principles serve as a compass for subsequent design decisions across design guidelines.
     - content: Design guidelines serve as enterprise-scale design principles that create vision in technical alignment.
       isCorrect: false
       explanation: Design principles serve as a compass for subsequent design decisions across design guidelines.
-    - content: Design principles have trade-offs associated with nonadherence to design guidelines
+    - content: Design principles have trade-offs associated with nonadherence to design guidelines.
       isCorrect: false
       explanation: Design principles serve as a compass for subsequent design decisions across design guidelines.
