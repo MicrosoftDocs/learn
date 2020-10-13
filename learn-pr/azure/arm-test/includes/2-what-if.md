@@ -31,8 +31,8 @@ When using the *what-if* operation, it will list six different types of changes:
 
 The PowerShell cmdlet `New-AzResourceGroupDeployment` creates a new the deployment on a resource group. By adding the *what-if* operation as a parameter to this command, the command switches from carrying out the deployment to merely report a *preview* of what will happen, were you to carry it out. Additionally you can control the amount of textual output of the *what-if* operation by using one of two parameters. The parameters are:
 
-1. **FullResourcePayloads**. By including this parameter you get a *verbose* output consisting of a list of resources, that will change, and details about all the properties that will change as per the template.
-1. **ResourceIdOnly**. This mode returns *only* a list of resources that will change, but not all the details.
+- **FullResourcePayloads**. By including this parameter you get a *verbose* output consisting of a list of resources, that will change, and details about all the properties that will change as per the template.
+- **ResourceIdOnly**. This mode returns *only* a list of resources that will change, but not all the details.
 
 For example, when changing the storage type in a template that deploys a single storage account to an existing environment.
 

@@ -25,7 +25,7 @@ Major  Minor  Build  Revision PSSemVerPreReleaseLabel    PSSemVerBuildLabel
 >
 ```
 
-## Install/Update module
+## Install or update module
 
 There are potentially two different paths here:
 
@@ -187,7 +187,7 @@ The differences in the second template are:
 
     The *what-if* output appears similar to:
 
-    ```powershell
+    ```output
     Note: As What-If is currently in preview, the result may contain false positive predictions (noise).
     You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues.
 

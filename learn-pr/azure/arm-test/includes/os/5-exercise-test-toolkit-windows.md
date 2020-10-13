@@ -135,7 +135,7 @@ You will run the Test toolkit on a path containing a deployment template and fix
    [+] VM Size Should Be A Parameter (3 ms)
    ```
 
-   Note above how two tests are failing,  **Resources Should have Location is failing** and  **Parameters Must Be Referenced**. A failing test is indicated by the prefix **[-]**.
+   The output above show how two tests are failing,  **Resources Should have Location is failing** and  **Parameters Must Be Referenced**. A failing test is indicated by the prefix **[-]**.
 
    To understand what's going on, open the *azuredeploy.json* file, it should look like so:
 

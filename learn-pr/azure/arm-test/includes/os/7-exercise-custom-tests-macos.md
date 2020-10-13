@@ -1,4 +1,4 @@
-## Author and run a Custom test
+## Author and run a custom test
 
 You will author a custom test and use the Test Toolkit tool to run it. Furthermore you will need to correct the deployment template to ensure the test passes. The custom test will be looking to verify that all parameters follow a naming rule. This rule is a domain-specific requirement on the product the team you are working on.
 
