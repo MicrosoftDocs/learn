@@ -60,8 +60,8 @@ You will:
 
     In the preceding output, there are four key-value pairs, where:
 
-    - The `Name` property represents the service name.
     - The `Key` property represents the Application Insights instrumentation key.
+    - The `Name` property represents the name of the service to which the instrumentation key belongs.
 
 1. Using the Cloud Shell editor, uncomment the `APPINSIGHTS_INSTRUMENTATIONKEY` environment variable in each of the following files in the *:::no-loc text="deploy/k8s/helm-simple":::* directory. Replace the `<key>` placeholder with the appropriate Application Insights instrumentation key. Save your changes.
     - *:::no-loc text="catalog/templates/configmap.yaml":::*
@@ -134,7 +134,7 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
 
 In the previous section, you modified the catalog service to enable Application Insights telemetry. The HTTP aggregator code has already been similarly instrumented. To update the production service deployments, the container images will be built and hosted on ACR.
 
-1. Run this script to build the catalog and HTTP aggregator images:
+1. Run this script to build the images for the catalog service and HTTP aggregator:
 
     ```bash
     deploy/k8s/build-to-acr.sh --services catalog-api,webshoppingagg
@@ -156,7 +156,13 @@ In the previous section, you modified the catalog service to enable Application 
     deploy/k8s/deploy-application.sh --charts catalog,webshoppingagg
     ```
 
-    The preceding script deploys the container images from ACR to AKS.
+    The preceding script deploys the container images from ACR to AKS. The script runs the `kubectl get pods` command. The command's output contains entries for the catalog service and HTTP aggregator pods. The `STATUS` and `AGE` column values indicate that the deployments were successful:
+
+    ```console
+    NAME                              READY   STATUS              RESTARTS   AGE
+    catalog-5f45f57cd9-4cml4          0/1     Running             0          20s
+    webshoppingagg-77d8cc5c4c-f95tk   0/1     ContainerCreating   0          1s
+    ```
 
 1. Redeploy the coupon and ordering services configured with their new `APPINSIGHTS_INSTRUMENTATIONKEY` environment variables:
 
@@ -164,7 +170,13 @@ In the previous section, you modified the catalog service to enable Application 
     deploy/k8s/deploy-application.sh --registry eshopdev --charts coupon,ordering
     ```
 
-    The coupon and ordering services deployed by the setup script are already instrumented for telemetry. Since there were no code changes, the containers only need redeployment with the new configuration settings. The `--registry` parameter instructs the script to use the Docker Hub registry that hosts the unmodified images.
+    The coupon and ordering services deployed by the setup script are already instrumented for telemetry. Since there were no code changes, the containers only need redeployment with the new configuration settings. The `--registry` parameter instructs the script to use the Docker Hub registry that hosts the unmodified images. As in the previous step, the `kubectl get pods` command is executed:
+
+    ```console
+    NAME                              READY   STATUS              RESTARTS   AGE
+    coupon-5b9597995-thw76            0/1     Running             0          20s
+    ordering-6c456f5d4c-5sr2m         0/1     ContainerCreating   0          1s
+    ```
 
 ## Verify the deployment to AKS
 

@@ -120,8 +120,8 @@ public class OrderStartedIntegrationEventHandler :
         using (LogContext.PushProperty("IntegrationEventContext", $"{@event.Id}-{Program.AppName}"))
         {
             _logger.LogInformation(
-                "----- Handling integration event: {IntegrationEventId} at {AppName} - ({@IntegrationEvent})",
-                @event.Id, Program.AppName, @event);
+              "----- Handling integration event: {IntegrationEventId} at {AppName} - ({@IntegrationEvent})",
+              @event.Id, Program.AppName, @event);
 
             await _repository.DeleteBasketAsync(@event.UserId.ToString());
         }

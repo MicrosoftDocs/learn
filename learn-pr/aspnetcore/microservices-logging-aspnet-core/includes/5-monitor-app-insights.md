@@ -15,7 +15,7 @@ A view similar to the following appears:
 
 In the preceding image, notice the following things:
 
-- Sample telemetry is displayed in the pane on the right as it's ingested in real time. You can see that *:::no-loc text="webshoppingagg":::* is experiencing failures when connecting to services on which it depends. This behavior is expected while the app is starting. Your telemetry may contain similar failures, depending on when you view the Azure portal.
+- Telemetry data is displayed in the **Sample telemetry** panel as it's ingested in real time. You can see that the HTTP aggregator is experiencing failures when connecting to services on which it depends. This behavior is expected while the app is starting. Your telemetry may contain similar failures, depending on when you view the Azure portal.
 - Incoming and outgoing dependency requests are represented by real-time graphics. The graphics illustrate the rate, duration, and failure rate of the requests.
 - The service's overall health is displayed in charts representing memory, CPU usage, and exceptions rate.
 - The **Servers** pane lists the physical nodes used by the app. In this example, there's a single node. The data on this page can be filtered by node by selecting the server name from the list.
@@ -30,14 +30,7 @@ Use the app to generate some telemetry data to examine. Open another browser tab
     cat ~/clouddrive/aspnet-learn/deployment-urls.txt
     ```
 
-1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically, every 10 seconds.
-
-    :::image type="content" source="../media/health-check.png" alt-text="Health check page" border="true" lightbox="../media/health-check.png":::
-
-    > [!NOTE]
-    > While the app is starting, you might initially receive an HTTP 503 or 502 response from the server. Retry after about one minute. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
-
-1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
+1. Select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
     :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
@@ -46,7 +39,8 @@ Use the app to generate some telemetry data to examine. Open another browser tab
     1. Add the **:::no-loc text=".NET BLUE HOODIE":::** to the shopping bag by selecting the image.
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
-    1. Enter the code *:::no-loc text="GIVEMEFREESTUFF":::* in the **:::no-loc text="HAVE A DISCOUNT CODE?":::** text box and select **:::no-loc text="APPLY":::**. This code is invalid.
+    1. Enter the code *:::no-loc text="GIVEMEFREESTUFF":::* in the **:::no-loc text="HAVE A DISCOUNT CODE?":::** text box and select **:::no-loc text="APPLY":::**.
+        Because this code is invalid, the message **ERROR: The coupon doesn't exist!** appears. You'll see this error message when you examine the telemetry later in this unit.
     1. Replace the code *:::no-loc text="GIVEMEFREESTUFF":::* with *:::no-loc text="DISC-10":::* for a 10 USD discount. Select **:::no-loc text="APPLY":::**.
     1. Select **:::no-loc text="PLACE ORDER":::** to complete the purchase.
 
