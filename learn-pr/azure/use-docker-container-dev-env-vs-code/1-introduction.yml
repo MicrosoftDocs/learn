@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.use-docker-container-dev-env-vs-code.1-introduction
-title: Introduction - Using a Docker Container as a development environment with Visual Studio Code
+title: Introduction
 metadata:
-  title: Introduction - Using a Docker Container as a development environment with Visual Studio Code 
-  description: Introduction - Using a Docker Container as a development environment with Visual Studio Code 
+  title: Introduction
+  description: Introduction
   ms.date: 10/13/2020
   author: bamurtaugh
   ms.author: brmurtau
