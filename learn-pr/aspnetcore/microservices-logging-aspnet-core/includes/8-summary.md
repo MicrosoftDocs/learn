@@ -1,10 +1,10 @@
 In this module, you:
 
-- Created an AKS cluster with an initial e-commerce application.
+- Created an AKS cluster with an initial e-commerce app.
 - Reviewed some important logging concepts and samples.
 - Added Application Insights logging to one microservice.
-- Enabled Azure Monitor for containers in your AKS cluster.
-- Implemented a custom metric in one microservice and created a graph to view it in Azure Monitor for containers
+- Enabled Azure Monitor for Containers in your AKS cluster.
+- Implemented a custom metric in one microservice and created a graph to view it in Azure Monitor for Containers.
 
 ## Clean up Azure resources
 

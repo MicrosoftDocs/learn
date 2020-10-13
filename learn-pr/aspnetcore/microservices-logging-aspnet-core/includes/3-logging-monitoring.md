@@ -1,6 +1,6 @@
-Logging refers to app-level diagnostic traces that developers include in the app code. The diagnostic information helps troubleshoot issues when the app doesn't behave as expected. Text-based event records are written to logs while the app is running. The logs include app traces and web server traces.
+*Logging* refers to app-level diagnostic traces that developers include in the app code. The diagnostic information helps troubleshoot issues when the app doesn't behave as expected. Text-based event records are written to logs while the app is running. The logs include app traces and web server traces.
 
-Monitoring refers to gathering platform and app metrics that are meant to track the app's health. Metrics are numerical values that can be used to observe the system in near real-time or analyze performance trends over time. The metrics are collected from various architecture levels, from the physical infrastructure to the app, including node-level metrics, container metrics, app metrics, and dependant service metrics.
+*Monitoring* refers to gathering platform and app metrics that are meant to track the app's health. Metrics are numerical values that can be used to observe the system in near real-time or analyze performance trends over time. The metrics are collected from various architectural levels. An example of such a level is the physical infrastructure to the app, including node-level metrics, container metrics, app metrics, and dependant service metrics.
 
 ## Implement logging in an ASP.NET Core microservice
 
@@ -21,13 +21,15 @@ In a microservices architecture, a solution is needed that can:
 * Correlate the log traces.
 * Carry additional contextual information, like the hosted infrastructure, to efficiently debug the app.
 
-In this unit, you'll review how the *eShopOnContainers* app implements [Serilog](https://serilog.net/) for structured logging in .NET and [Seq](https://datalust.co/seq) to centralize all log traces. The next unit explains how the aforementioned challenges are addressed. You'll learn about using code instrumentation with Application Insights. Azure Monitor will be used for near real-time monitoring of the telemetry data.
+In this unit, you'll review how the *eShopOnContainers* app implements [Serilog](https://serilog.net/) for structured logging and [Seq](https://datalust.co/seq) to centralize all log traces. In later units, you'll learn about using code instrumentation with Application Insights. Azure Monitor will be used for near real-time monitoring of the telemetry data.
 
 ### Structured logging
 
-Structured logging is an approach in which the app writes logs in a structured format. For example, JSON rather than outputting unstructured text strings. Unstructured text strings make it harder to query logs for useful information. Especially in a complex app using microservices architecture, you'll need a quicker way to filter the traces by a particular property, say `TransactionId`. .NET supports a logging API that works with various built-in and third-party logging providers. To implement structured logging in *eShopOnContainers*, [Serilog](https://github.com/serilog/serilog), an open-source third-party logging provider, is used.
+Structured logging is an approach in which the app writes logs in a structured format. An example of a structured format is JSON, while an unstructured log might be plain text. Unstructured text is difficult to query in a consistent manner. Microservices apps comprised of many services necessitate a way to filter the traces by a particular property, such as `TransactionId`.
 
-Structured formats like JSON can easily be parsed by any app to search and filter the relevant data based on their correlation. For example, take a look at the logging statement in .NET that uses the Serilog library:
+.NET provides logging infrastructure in the `Microsoft.Extensions.Logging` assembly. The infrastructure provides APIs that work with various native and third-party logging providers. To implement structured logging in *eShopOnContainers*, [Serilog](https://github.com/serilog/serilog), an open-source third-party logging provider, is used.
+
+Structured formats like JSON can be parsed by any app to search and filter the relevant data based on their correlation. For example, consider the following logging statement that uses the Serilog library:
 
 ```csharp
 _logger.LogInformation(
@@ -35,13 +37,13 @@ _logger.LogInformation(
     transaction.TransactionId, commandName, command);
 ```
 
-The preceding code is similar to what you've seen in the `string.Format` method. There are, however, three significant differences:
+The usage of the `LogInformation` method is similar to that of the `string.Format` method. In the preceding parameters list for `LogInformation`:
 
-1. The first string defines an event type or template property that can also be queried, along with any other of the event properties.
-1. Every name is in curly braces. For example, `{TransactionId}` defines a property that gets its value from the parameter `transaction.TransactionId`.
+1. The first string defines an event type or template property that can also be queried.
+1. Properties for the log entry are in curly braces. For example, `{TransactionId}` defines a property that gets its value from the parameter `transaction.TransactionId`.
 1. The `@` operator in front of `{@Command}` tells Serilog to serialize the object passed in, rather than convert it using `ToString`.
 
-Find below the JSON string, where the `@t` field is a timestamp, `@mt` is the message string, and the remaining key/value pairs are the parameters. Outputting JSON format makes it easier to query the data in a structured way.
+The resulting log entry is represented in the following JSON snippet:
 
 ```json
 {
@@ -62,13 +64,19 @@ Find below the JSON string, where the `@t` field is a timestamp, `@mt` is the me
 }
 ```
 
-The same trace can be visualized in a centralized logging system like Seq. The trace can be further filtered to aid in issue discovery while conducting root cause analysis:
+In the preceding JSON:
+
+* The `@t` property is a timestamp.
+* `@mt` is the message string.
+* The remaining key/value pairs are the parameters.
+
+Because the logs are being generated in a structured format, they can be visualized in a centralized logging system like Seq. Seq enables filtering based on the structured format, as shown:
 
 :::image type="content" source="../media/3-logging-monitoring/structured-logging-visualization.png" alt-text="structured logging visualization" border="true" lightbox="../media/3-logging-monitoring/structured-logging-visualization.png":::
 
 #### Logging contexts and correlation IDs
 
-Logging context allows you to define a scope, so you can trace and correlate a set of events, even across the boundaries of the apps involved. Correlation IDs establish a link between two or more contexts or apps. For example, each incoming request is assigned a unique ID (like a GUID or similar). Serilog allows logging additional context values across all logging statements using [Enrichment](https://github.com/serilog/serilog/wiki/Enrichment).
+Logging context allows you to define a scope so you can trace and correlate a set of events. The trace can cross service contexts. Correlation IDs establish a link between two or more contexts. For example, in *eShopOnContainers*, each incoming request is assigned a unique ID. This unique ID is one dimension that can be used to correlate all the events related to that request. Serilog allows logging additional context values across all logging statements using [Enrichment](https://github.com/serilog/serilog/wiki/Enrichment).
 
 Some of the custom context properties used in *eShopOnContainers* include:
 
@@ -78,16 +86,16 @@ Some of the custom context properties used in *eShopOnContainers* include:
 * `TransactionContext` covers the events from the beginning of the database transaction until it's committed.
 * `IntegrationEventContext` identifies all events that occur while handling an integration event in an app.
 
-This additional information gives us the context that we need to understand and work with the event entirely.
+This additional information is useful in understanding under what conditions the event was logged.
 
-In Serilog, `Serilog.Context.LogContext` can be used to dynamically add and remove properties to the execution context. This feature must be added to the logger at configuration-time using `.FromLogContext()`:
+In Serilog, `Serilog.Context.LogContext` can be used to dynamically add and remove properties to a context. This feature must be added to the logger at configuration-time using `.FromLogContext()`:
 
 ```csharp
 var log = new LoggerConfiguration()
     .Enrich.FromLogContext()
 ```
 
-Then, properties can be added from the context using `LogContext.PushProperty()`:
+With that configuration, properties can be added to the context using `LogContext.PushProperty()`:
 
 ```csharp
 public class OrderStartedIntegrationEventHandler : 
@@ -116,7 +124,11 @@ public class OrderStartedIntegrationEventHandler :
 }
 ```
 
-The preceding code adds the property `IntegrationEventContext` with the defined value to all log events generated within the `using` statement, including any method being invoked from the `DeleteBasketAsync` method.
+The preceding code:
+
+1. Defines a log property `IntegrationEventContext` as part of a `using` statement.
+1. Sets the value of the `IntegrationEventContext` to a string that includes `@event.ID` and `Program.AppName` values.
+1. Applies that `IntegrationEventContext` property to all log events generated within the `using` statement. This inclues any log methods invoked within the `DeleteBasketAsync` method.
 
 #### Serilog sinks & Seq
 
@@ -151,10 +163,10 @@ private static Serilog.ILogger CreateSerilogLogger(IConfiguration configuration)
 In the preceding code:
 
 * `.Enrich.WithProperty("ApplicationContext", AppName)` defines the `ApplicationContext` for all traces in the app.
-* `.Enrich.FromLogContext()` allows you to define a log context anywhere you need it.
-* `.ReadFrom.Configuration(configuration)` allows you to override the configuration from environment variables or values in *appsettings.json*. This ability to override configuration values becomes useful for containers.
+* `.Enrich.FromLogContext()` allows you to define a log context anywhere it's needed.
+* `.ReadFrom.Configuration(configuration)` allows you to override the configuration from environment variables or values in *appsettings.json*. This ability to override configuration values is useful for containers.
 
-The following JSON shows the default configuration for *appsettings.json* in an *eShopOnContainers* microservice:
+The following JSON shows the default configuration in *appsettings.json* for an *eShopOnContainers* microservice:
 
 ```json
 "Serilog": {
@@ -172,64 +184,26 @@ The following JSON shows the default configuration for *appsettings.json* in an 
 
 Later in this module, you'll learn to configure the Serilog sink to Application Insights and monitor the telemetry data using Azure Monitor.
 
-## Verify the deployment to AKS
-
-Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
-
-1. Run the following command to display the various app URLs:
-
-    ```bash
-    cat ~/clouddrive/aspnet-learn/deployment-urls.txt
-    ```
-
-    A variation of the following output appears:
-
-    ```console
-    The eShop-Learn application has been deployed to "http://203.0.113.55" (IP: 203.0.113.55).
-
-    You can begin exploring these services (when ready):
-    - Centralized logging       : http://203.0.113.55/seq/#/events?autorefresh (See transient failures during startup)
-    - General application status: http://203.0.113.55/webstatus/ (See overall service status)
-    - Web SPA application       : http://203.0.113.55/
-    ```
-
-1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. A green checkmark icon denotes a healthy service. The page refreshes automatically, every 10 seconds.
-
-    :::image type="content" source="../media/4-implement-app-insights/health-check.png" alt-text="health checks status dashboard" border="true" lightbox="../media/4-implement-app-insights/health-check.png":::
-
-    > [!NOTE]
-    > While the app is starting, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
-
-1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
-
-    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../../media/microservices/eshop-spa.png":::
-
-You've successfully verified that the app was deployed to AKS and is working properly.
-
 ## Monitor the microservices app using Azure Monitor
 
-Azure Monitor helps you understand how your cloud-native services are performing and proactively identifies issues affecting them. The following diagram provides a high-level view of Azure Monitor. Notice the following things in the diagram:
-
-* The left side shows the sources of monitoring data that populate these data stores.
-* The center shows the data stores for metrics and logs, which are the two fundamental types of data used by Azure Monitor.
-* The right side shows the different functions that Azure Monitor performs with this collected data. Some functions include analysis, alerting, and streaming to external systems.
+Azure Monitor helps you understand how your cloud-native services are performing and proactively identifies issues affecting them. The following diagram provides a high-level view of Azure Monitor:
 
 :::image type="content" source="../media/3-logging-monitoring/azure-monitor.png" alt-text="Azure Monitor visualization" border="true" lightbox="../media/3-logging-monitoring/azure-monitor.png":::
 
-[Azure Monitor for containers](/azure/azure-monitor/insights/container-insights-overview) is a feature within Azure Monitor designed to monitor the performance of container workloads deployed to AKS. It gives you performance visibility by collecting memory and processor metrics from controllers, nodes, and containers available in Kubernetes through the Metrics API. Container logs are also collected. Metrics are written to the metrics store, and log data is written to the logs store associated with your Log Analytics workspace.
+In the preceding diagram, notice the following:
 
-In this module, you will:
+* The left side shows the sources of monitoring data that populate these data stores.
+* The center shows the data stores for metrics and logs, which are the two fundamental types of data used by Azure Monitor.
+* The right side shows the different functions that Azure Monitor performs with this collected data. These functions include analysis, alerting, and streaming to external systems.
 
-* Configure the *eShopOnContainers* app to use Application Insights for logging.
-* Monitor live metrics using Azure Monitor.
-* Enable Azure Monitor for containers on the AKS cluster.
-* Monitor health of nodes, controllers, and containers.
-* Implement a Prometheus metric.
+[Azure Monitor for Containers](/azure/azure-monitor/insights/container-insights-overview) is a feature within Azure Monitor designed to monitor the performance of container workloads deployed to AKS. It gives you performance visibility by collecting memory and processor metrics from controllers, nodes, and containers available in Kubernetes through the Metrics API. Container logs are also collected. Metrics are written to the metrics store, and log data is written to the logs store associated with your Log Analytics workspace.
 
-### What is Application Insights
+### Application performance management with Application Insights
 
-Application Insights is an extensible Application Performance Management (APM) service. To use it, install an instrumentation NuGet package in your app. This package monitors the app and sends telemetry data to the Application Insights service. The data is then sent to Azure Monitor. The Application Insights service also provides built-in correlation and dependency tracking.
+Application Insights is an extensible Application Performance Management (APM) service. Apps are instrumented by installing an instrumentation NuGet package. This package monitors the app and sends telemetry data to the Application Insights service. The data is then sent to Azure Monitor. The Application Insights service also provides built-in correlation and dependency tracking.
 
-### What is Prometheus
+### Collecting metrics with Prometheus
 
-Generally, in a large microservices app, the telemetry data rate is high enough to trigger throttling. In such cases, you should consider exporting metrics to a time-series database such as Prometheus. [Prometheus](https://prometheus.io/) is a popular open-source metric monitoring solution and is a part of the Cloud Native Compute Foundation. Azure Monitor for containers provides a seamless onboarding experience to collect Prometheus metrics. To use Prometheus, you typically need to set up and manage a Prometheus server with a store. By integrating with Azure Monitor, however, a Prometheus server isn't required. You just need to expose the Prometheus metrics endpoint through your exporters or pods (app), and the containerized agent for Azure Monitor for containers can scrape the metrics for you.
+Generally, in a large microservices app, the telemetry data rate is high enough to trigger throttling. In such cases, you should consider exporting metrics to a time-series database such as Prometheus. [Prometheus](https://prometheus.io) is a popular open-source metric monitoring solution and is a part of the Cloud Native Compute Foundation. Azure Monitor for Containers provides a seamless onboarding experience to collect Prometheus metrics.
+
+To use Prometheus, you typically need a Prometheus server with a store. By integrating with Azure Monitor, however, a Prometheus server isn't required. You just need to expose the Prometheus metrics through app, and the containerized agent for Azure Monitor for Containers can scrape the metrics for you.

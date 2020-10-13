@@ -28,7 +28,7 @@ quiz:
         - content: Structured logging allows you to get more information from your log traces than plain-text logging.
           isCorrect: false
           explanation: "Structured logging enables us to add custom log context. This additional information gives us the context that we need to understand and work with the event entirely."
-    - content: Which of the following statements is NOT **true** for Application Insights?
+    - content: Which of the following statements is **NOT** true for Application Insights?
       choices:
         - content: One Application Insights resource (instrumentation key) must be created per service type.
           isCorrect: false
