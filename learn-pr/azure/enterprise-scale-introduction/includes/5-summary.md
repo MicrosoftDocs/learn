@@ -6,13 +6,13 @@ The enterprise-scale approach to building landing zones includes three sets of a
 
 - **Design guidelines**: A guide to the critical decisions that drive the design of enterprise-scale landing zones in the Cloud Adoption Framework.
 
-  - **Ready overview**: [Ensure that the environment is prepared for the cloud adoption plan](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/?azure-portal=true)
+  - Overview of the Ready phase: [Ensure that the environment is prepared for the cloud adoption plan](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/?azure-portal=true)
 
-  - Cloud Adoption Framework enterprise-scale [design guidelines](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/design-guidelines?azure-portal=true)
+  - Enterprise-scale [design guidelines](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/design-guidelines?azure-portal=true)
 
 - **Architecture**: A conceptual reference architecture that demonstrates design areas and best practices.
 
-  - Cloud Adoption Framework enterprise-scale landing zones [architecture guidance](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/architecture?azure-portal=true)
+  - Enterprise-scale landing zones [architecture guidance](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/architecture?azure-portal=true)
 
 - **Implementations**: An Azure Resource Manager template for the architecture to accelerate adoption.
 
