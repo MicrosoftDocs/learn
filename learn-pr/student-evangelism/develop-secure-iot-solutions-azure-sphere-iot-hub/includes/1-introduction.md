@@ -43,6 +43,6 @@ In this module, you will:
 - Visual Studio Code installed in your computer
 - Ability to use Visual Studio Code
 - Git installed on your computer
-- Ability to use Git/Github
+- Ability to use Git/GitHub
 - Basic knowledge of Azure Sphere
 - Basic knowledge of Azure IoT
