@@ -1,6 +1,6 @@
 The key strategic asset that many organizations are focused on today is data, and there is a need to share or receive data in a safe and secure way with third parties, whether that is between departments within the organization, or externally with customers and partners. 
 
-[!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Introduction-to-Azure-Data-Share/player?format=ny] 
+> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Introduction-to-Azure-Data-Share/player?format=ny] 
 
 Many examples in which data sharing is often set up by these organizations is through the sending of emails that include attached excel files, or by building external APIs, and in some cases, configuring access to databases, just to name a few. 
 
