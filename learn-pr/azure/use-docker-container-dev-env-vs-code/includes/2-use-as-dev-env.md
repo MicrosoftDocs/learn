@@ -21,5 +21,5 @@ Workspace files are mounted from the local file system or copied or cloned into 
 With Remote - Containers, you get features and benefits such as:
 - Add a dev container to an existing project through a series of simple commands
 - Open an existing GitHub repo or local project in a dev container
-- Try a sample container, with the dev container already configured and some simple source code, such as (vscode-remote-try-python)[https://github.com/microsoft/vscode-remote-try-python]
+- Try a sample container, with the dev container already configured and some simple source code, such as [vscode-remote-try-python](https://github.com/microsoft/vscode-remote-try-python)
 - Set up a coding experience specific to each dev container, including VS Code extensions, settings, and port forwarding
