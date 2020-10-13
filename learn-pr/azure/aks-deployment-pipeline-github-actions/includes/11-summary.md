@@ -25,7 +25,7 @@ In this module, you created resources by using your Azure subscription. The foll
 
 1. Go to your GitHub account and find your fork of Contoso's website
 
-1. Delete it by going to the settings tab, scrolling down until you see a red button with "Delete this repository"
+1. Delete it by going to the settings tab, scrolling down until you see a red button with **Delete this repository**
 
 1. Click it and type the full name of the repository to confirm deletion
 
