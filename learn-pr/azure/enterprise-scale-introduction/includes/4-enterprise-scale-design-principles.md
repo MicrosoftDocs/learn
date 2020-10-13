@@ -6,16 +6,16 @@ Enterprise-scale architecture and reference implementation help organizations me
 
 Subscriptions are units of management and scale that are aligned with an organization's business goals and priorities. Avoid maintaining centralized control and management of subscriptions, and allow business units to manage subscriptions themselves. The governance model of an enterprise-scale approach ensures that when subscriptions are created or moved to different management groups, Azure policies are applied to provide the necessary guardrails.
 
-- Subscriptions as unit of management and scale
+<!---- Subscriptions as unit of management and scale
 - Subscriptions as unit of cost
-- Agility for business units
+- Agility for business units--->
 
 ## Policy-driven governance
 
 Azure Policy provides guardrails for subscriptions to ensure continuous compliance of an organization's platform and applications. At the same time, Policy helps to provide application owners both sufficient freedom and a secure, unhindered path to the cloud. Organizations should define governance rules in code to create guardrails authoritatively across the platform. Organizations declare the intent of the policy, and certain effects, such as *deploy-if-not-exists* and *deny* policies, help ensure a compliant resource configuration and prevent configuration drift.
 
-- Management group level policies
-- Infrastructure deployment by policy
+<!---- Management group level policies
+- Infrastructure deployment by policy--->
 
 ## Single control and management plane
 
@@ -23,23 +23,23 @@ Enterprise-scale architecture shouldn't rely on abstraction layers, such as inte
 
 Ultimately, the architecture should provide a safe and secure foundation for all workload types to be deployed on the Azure platform. Azure provides a unified and consistent control plane across all Azure resources and provisioning channels, subject to role-based access and policy-driven controls. The organization can use Azure to establish a standardized set of policies and controls for governing the entire enterprise estate.
 
-- Avoid building abstraction layer and orchestration services
-- Use Azure as single control and management plane
+<!---- Avoid building abstraction layer and orchestration services
+- Use Azure as single control and management plane--->
 
 ## Application-centric and archetype-neutral
 
 Enterprise-scale architecture should focus on application-centric migrations and development rather than a pure infrastructure lift-and-shift migration (such as migrating virtual machines). The architecture shouldn't differentiate between old and new applications or IaaS and PaaS applications.
 
-- Group application components together
+<!---- Group application components together
 - Support for migration and net-new development
-- Group workloads based on compliance needs
+- Group workloads based on compliance needs--->
 
 ## Align Azure-native design with the platform roadmap
 
 Enterprise-scale architecture strongly favors using native platform services and capabilities wherever possible. This approach fully aligns with Azure platform roadmaps from the outset to ensure that new capabilities are quickly made available in your environment.
 
-- Use Azure-native services as much as possible
-- Stay aware of preview and upcoming features
+<!---- Use Azure-native services as much as possible
+- Stay aware of preview and upcoming features--->
 
 ## Critical design areas
 
