@@ -38,17 +38,11 @@ Let's create a function app in the Azure portal.
 
 1. Select the existing resource group called "**<rgn>[sandbox resource group name]</rgn>**".
 
-1. Select **Windows** for **OS**.
-
-1. For **Hosting Plan**, select **Consumption Plan**, which is the serverless hosting option.
-
-1. Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function.
-
 1. For **Runtime Stack**, select **Node.js** from the dropdown, which is the language in which we implement the function examples in this exercise.
 
-1. Create a new storage account. Azure will give it a name based on the app name. You can change it if you like, but it must also be unique.
+1.  For **Runtime stack**, leave on defult.
 
-1. Make sure that Azure Application Insights is **On** and select the region closest to you (or your customers).
+1. Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function.
 
 1. Select **Create**; deployment will take a few minutes. You'll receive a notification once it's complete.
 
