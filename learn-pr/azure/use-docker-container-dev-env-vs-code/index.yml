@@ -15,14 +15,18 @@ abstract: |
   - Install the VS Code Remote Containers extension
   - Load and connect to a project in a Docker container
   - Access ports in the container from your local machine
+  - Customize settings while working with your container
   - Add software to the container environment
 prerequisites: |
-  A computer that's running one of the following:
-  - Windows: Windows 10
-  - Mac: macOS 10.9 or later
-  - Linux: Ubuntu, Debian, Red Hat, Fedora, or SUSE
-  - Docker version ?
-  - WSL?
+  - A computer that's running one of the following:
+       - Windows: Windows 10
+       - Mac: macOS 10.9 or later
+       - Linux: Ubuntu, Debian, Red Hat, Fedora, or SUSE
+  - [Visual Studio Code](https://code.visualstudio.com/)
+  - Docker:
+       - Windows: [Docker Desktop](https://www.docker.com/products/docker-desktop) 2.0+ on Windows 10 Pro/Enterprise. Windows 10 Home (2004+) requires Docker Desktop 2.3+ and the [WSL 2 back-end](https://aka.ms/vscode-remote/containers/docker-wsl2).
+       - Mac: [Docker Desktop](https://www.docker.com/products/docker-desktop) 2.0+.
+       - Linux: [Docker CE/EE](https://docs.docker.com/install/#supported-platforms) 18.06+ and [Docker Compose](https://docs.docker.com/compose/install) 1.21+.
 iconUrl: ""
 levels:
   - beginner
@@ -33,5 +37,15 @@ products:
   - vs-code
 units:
   - learn.azure.use-docker-container-dev-env-vs-code.1-introduction
+  - learn.azure.use-docker-container-dev-env-vs-code.2-use-as-dev-env
+  - learn.azure.use-docker-container-dev-env-vs-code.3-devcontainer-config
+  - learn.azure.use-docker-container-dev-env-vs-code.4-exercise-devcontainer-config
+  - learn.azure.use-docker-container-dev-env-vs-code.5-forward-ports
+  - learn.azure.use-docker-container-dev-env-vs-code.6-exercise-forward-ports
+  - learn.azure.use-docker-container-dev-env-vs-code.7-customize-settings
+  - learn.azure.use-docker-container-dev-env-vs-code.8-exercise-customize-settings
+  - learn.azure.use-docker-container-dev-env-vs-code.9-add-software
+  - learn.azure.use-docker-container-dev-env-vs-code.10-exercise-add-software
+  - learn.azure.use-docker-container-dev-env-vs-code.11-summary
 badge:
   uid: learn-windows.introduction-to-web-development.badge

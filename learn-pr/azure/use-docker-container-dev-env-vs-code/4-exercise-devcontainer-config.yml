@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.use-docker-container-dev-env-vs-code.4-exercise-devcontainer-config
+title: Dev container configuration exercise
+metadata:
+  title: Dev container configuration exercise
+  description: Dev container configuration exercise
+  ms.date: 10/13/2020
+  author: bamurtaugh
+  ms.author: brmurtau
+  ms.topic: interactive-tutorial
+  ms.prod: learning
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-devcontainer-config.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.use-docker-container-dev-env-vs-code.3-devcontainer-config
+title: Dev container configuration
+metadata:
+  title: Dev container configuration
+  description: Dev container configuration
+  ms.date: 10/13/2020
+  author: bamurtaugh
+  ms.author: brmurtau
+  ms.topic: interactive-tutorial
+  ms.prod: learning
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-devcontainer-config.md)]
