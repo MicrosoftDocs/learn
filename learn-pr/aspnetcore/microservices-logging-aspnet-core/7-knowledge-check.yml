@@ -19,13 +19,13 @@ quiz:
         - content: Diagnostics logging is a key factor for troubleshooting issues in production.
           isCorrect: false
           explanation: "Logs have text-based records of events collected while the app is running. The diagnostic information helps troubleshoot issues when the app doesn't behave as expected."
-        - content: The purpose of app monitoring is tracking key business performance indicators.
+        - content: The purpose of app monitoring is to track key business performance indicators.
           isCorrect: true
           explanation: "App monitoring is meant to track the app's health."
         - content: A correlation ID establishes a link between two or more contexts or apps.
           isCorrect: false
           explanation: "Each incoming request is assigned a unique ID. This ID allows you to trace and correlate a set of events across the boundaries of the apps."
-        - content: Structured logging allows you to get more information from your log traces than regular plain-text logging.
+        - content: Structured logging allows you to get more information from your log traces than plain-text logging.
           isCorrect: false
           explanation: "Structured logging enables us to add custom log context. This additional information gives us the context that we need to understand and work with the event entirely."
     - content: Which of the following statements is **true** for Application Insights?
@@ -36,18 +36,18 @@ quiz:
         - content: Application map can be used to investigate failures and performance issues across services and dependencies. 
           isCorrect: false
           explanation: "Application map helps you locate performance bottlenecks or failure hot spots across all components of your distributed app."
-        - content: Application Insights provides built-in correlation and dependency tracking 
+        - content: Application Insights provides built-in correlation and dependency tracking.
           isCorrect: false
           explanation: "The Application Insights SDK automatically injects correlation context into HTTP headers and includes the correlation ID in Application Insights logs."
         - content: All of the above.
           isCorrect: true
-          explanation: "Application Insights, a feature of Azure Monitor, is an extensible Application Performance Management (APM) service for developers.  It's designed to help you continuously improve performance and usability."          
+          explanation: "Application Insights, a feature of Azure Monitor, is an extensible Application Performance Management (APM) service for developers. It's designed to help you continuously improve performance and usability."          
     - content: Which of the following statements is **NOT** true about Azure Monitor for containers?
       choices:
         - content: Azure Monitor for containers gives you infrastructure-oriented metrics.
           isCorrect: false
           explanation: "Azure Monitor collects memory and processor metrics from controllers, nodes, and containers via the Kubernetes metrics API."
-        - content: A Prometheus server must be installed to monitor Prometheus-endpoint metrics in AKS.
+        - content: A Prometheus server must be installed to monitor Prometheus endpoint metrics in AKS.
           isCorrect: true
           explanation: "A Prometheus server isn't required. You just need to expose the Prometheus metrics endpoint through your exporters or pods (app), and the containerized agent for Azure Monitor for containers can scrape the metrics for you."
         - content: Using a Kusto query, you can retrieve the Prometheus performance metric data from the Azure portal.
