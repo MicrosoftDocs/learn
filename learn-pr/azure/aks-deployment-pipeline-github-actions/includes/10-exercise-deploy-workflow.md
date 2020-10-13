@@ -11,7 +11,7 @@ You'll start by the staging pipeline.
 1. Open the GitHub website at your fork, got to the `.github/workflows` directory in the repository view and open the `build-latest.yml` file
 1. Right now, the file should be like this:
 
-    ```yml
+    ```yaml
     on:
       push:
         branches: [ main ]
@@ -35,7 +35,7 @@ You'll start by the staging pipeline.
 
     The first step you need to take is to add another job. Create a new key called `deploy` below the `build_push_image` key:
 
-    ```yml
+    ```yaml
     on:
       push:
         branches: [ main ]
@@ -63,7 +63,7 @@ You'll start by the staging pipeline.
 
 1. The first step is to clone and check out the branch you're working with. Add the previous `- uses: actions/checkout@v2` as the first step:
 
-    ```yml
+    ```yaml
       deploy:
         runs-on: ubuntu-latest
         needs: build_push_image
@@ -79,36 +79,36 @@ You'll start by the staging pipeline.
 
     1. Copy the presented YAML and paste it below the `uses` key, like so
 
-    ```yml
-      deploy:
-        runs-on: ubuntu-latest
-        needs: build_push_image
+       ```yaml
+         deploy:
+           runs-on: ubuntu-latest
+           needs: build_push_image
 
-        steps:
-          - uses: actions/checkout@v2
+           steps:
+             - uses: actions/checkout@v2
 
-          - name: Helm tool installer
-            uses: Azure/setup-helm@v1
-            with:
-              # Version of helm
-              version: # default is latest
-    ```
+             - name: Helm tool installer
+               uses: Azure/setup-helm@v1
+               with:
+                 # Version of helm
+                 version: # default is latest
+       ```
 
-    Then let's rename the step name to "Install Helm" and pin the `version` key to `v3.3.1`:
+       Then let's rename the step name to "Install Helm" and pin the `version` key to `v3.3.1`:
 
-    ```yml
-      deploy:
-        runs-on: ubuntu-latest
-        needs: build_push_image
+       ```yaml
+         deploy:
+           runs-on: ubuntu-latest
+           needs: build_push_image
 
-        steps:
-          - uses: actions/checkout@v2
+           steps:
+             - uses: actions/checkout@v2
 
-          - name: Install Helm
-            uses: Azure/setup-helm@v1
-            with:
-              version: v3.3.1
-    ```
+             - name: Install Helm
+               uses: Azure/setup-helm@v1
+               with:
+                 version: v3.3.1
+       ```
 
 1. Next, log in to your AKS cluster using Azure CLI through another action that Azure provides you. Use the search bar on the right-hand side of the screen to look for "Set Context". Select the "Azure Kubernetes Set Context" action.
 
@@ -116,7 +116,7 @@ You'll start by the staging pipeline.
 
 1. Copy the YAML and paste it below the previous "Install Helm" step.
 
-    ```yml
+    ```yaml
     steps:
       - uses: actions/checkout@v2
 
@@ -150,7 +150,7 @@ You'll start by the staging pipeline.
 
     The final YAML should be like this:
 
-    ```yml
+    ```yaml
     name: Build and push the latest build to staging
 
     on:
@@ -207,7 +207,7 @@ You'll start by the staging pipeline.
 
     In the YAML file, create a new `- name:` key below the latest step. Give it the name of "Run Helm Deploy". Below this key, create another key called `run`. The YAML should look like this:
 
-    ```yml
+    ```yaml
     name: Build and push the latest build to staging
 
     on:
@@ -287,7 +287,7 @@ You'll start by the staging pipeline.
 
     To do this, you'll start with a `|` character in the beginning. The final YAML should look something like this:
 
-    ```yml
+    ```yaml
     # ... File omitted
           - name: Run Helm Deploy
             run: |
@@ -328,7 +328,7 @@ With the staging workflow created, the next step is to create the production wor
 1. Navigate to the `.github/workflows` directory in the "Code" view in the GitHub website. Click the `build-production.yaml` file and edit it.
 1. Copy the `deploy` step from the previous pipeline and paste it below the last line of the YAML file. The result should be like this:
 
-    ```yml
+    ```yaml
     name: Build and push the tagged build to production
 
     on:
@@ -400,7 +400,7 @@ With the staging workflow created, the next step is to create the production wor
 
 1. The final YAML file will look like this:
 
-    ```yml
+    ```yaml
     name: Build and push the tagged build to production
 
     on:
