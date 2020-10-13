@@ -311,11 +311,11 @@ You'll start by the staging pipeline.
 
     Save it and close the tab.
 
-1. Commit the changes by clicking the "Start Commit" button
+1. Commit the changes by clicking the **Start Commit** button
 
     :::image type="content" source="../media/10-commit-staging-deploy.png" alt-text="Commit the workflow":::
 
-    As soon as the commit is done, you'll notice the steps will start to run in the "Actions" tab.
+    As soon as the commit is done, you'll notice the steps will start to run in the **Actions** tab.
 
 ### Test the deployment
 
@@ -462,14 +462,14 @@ With the staging workflow created, the next step is to create the production wor
                 --set image.tag=${GITHUB_REF##*/}
     ```
 
-1. Commit the file by clicking the green "Start Commit" button.
+1. Commit the file by clicking the green **Start Commit** button.
 1. In your Cloud Shell, execute a `git pull` to fetch the latest changes and then run the following git command to tag and push the changes:
 
     ```bash
     git tag -a v1.0.1 -m'Creating first production deployment' && git push --tags
     ```
 
-1. Open the "Actions" tab and see the running process.
+1. Open the **Actions** tab and see the running process.
 
 ### Test the deployment
 
