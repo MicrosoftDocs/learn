@@ -9,6 +9,6 @@ metadata:
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
 title: Logging and monitoring
-durationInMinutes: 5
+durationInMinutes: 12
 content: |
   [!include[](includes/3-logging-monitoring.md)]
