@@ -72,11 +72,12 @@ You're almost finished. The last step is to read the sales files, add up the tot
 
 If you got stuck during this exercise, here's the full code up to this point.
 
+```csharp
 using System;
 using System.IO;
 using System.Collections.Generic;
 
-```csharp
+
 namespace files_module
 {
     class Program

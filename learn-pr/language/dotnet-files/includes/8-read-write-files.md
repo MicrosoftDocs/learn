@@ -60,7 +60,7 @@ In the preceding example, the file is overwritten every time you write to it. So
 ```csharp
 var data = JsonSerializer.Deserialize<SalesTotal>("stores/201/sales.json");
 
-File.AppendAllLines("SalesTotals/totals.txt", $"{Environment.NewLine}{data.Total}");
+File.AppendAllText("SalesTotals/totals.txt", $"{data.Total}{Environment.NewLine}");
 
 // totals.txt
 // 22385.32
