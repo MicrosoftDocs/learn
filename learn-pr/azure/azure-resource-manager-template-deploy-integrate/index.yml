@@ -1,29 +1,29 @@
 ### YamlMime:Module
 uid: learn.azure.resource-manager-template-deploy-integrate
 metadata:
-  title: "Deploy and orchestrate Azure resources using Azure Resource Manager (ARM) templates"
-  description: TBD
+  description: Learn how to deploy Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and from GitHub Actions.
   ms.date: 10/15/2020
   author: pierreroman
   ms.author: pierrer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Deploy and orchestrate Azure resources using Azure Resource Manager (ARM) templates"
-summary: TBD.
+title: "Deploy Azure resources by using Azure Resource Manager (ARM) templates"
+summary: Learn how to deploy Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and from GitHub Actions. Use linked templates to break down complex templates into templates that are more modular. 
 abstract: |
-  In this module, you will:
-  - Learn how you can deploy the templates you are authoring, from a variety of methods.
-  - Modularize the template by creating a linked templates
-  - Learn how to create a Github Action to deploy templates.
+  After completing this module, you'll be able to:
+
+  - Choose the best way to deploy ARM templates, based on your needs.
+  - Modularize your templates by using linked templates.
+  - Learn how to create a GitHub Actions to deploy templates.
 prerequisites: |
-  - Familiar with Azure including the Azure portal, subscriptions, resource groups, and resource definitions  
-  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
-  - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true&WT.mc_id=MSLearn-ARM-pierrer) tools installed locally
-  - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&WT.mc_id=MSLearn-ARM-pierrer) extension installed locally
-  - For Unit 6 and 7, you'll also need an [Azure subscription](https://azure.microsoft.com/free/), since we cant create Service principals (SPN) in the Learn sandbox 
+  - Ability to navigate the Azure the portal
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+  - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true)
+  - Either:
+    - The latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true)
+    - The latest version of [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azure-cli-latest&azure-portal=true)
   - A [GitHub](https://github.com?azure-portal=true) account
-  - The ability to navigate and edit files in GitHub
-    - (For more information about GitHub, see [Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github?azure-portal=true).)
+  - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
 levels:

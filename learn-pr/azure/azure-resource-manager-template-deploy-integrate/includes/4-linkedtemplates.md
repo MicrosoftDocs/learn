@@ -1,8 +1,8 @@
-As your deployment complexity grows, you may want to move to a modular approach to deploying resources using Azure Resource Manager (ARM) [linked or nested templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/linked-templates?WT.mc_id=MSLearn-ARM-pierrer). Linked and nested templates are ways to breakdown your deployment into many related templates, and then deploy them together through a main template.
+As your deployment complexity grows, you may want to move to a modular approach to deploying resources using Azure Resource Manager (ARM) [linked or nested templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/linked-templates?azure-portal=true). Linked and nested templates are ways to breakdown your deployment into many related templates, and then deploy them together through a main template.
 
 ## Linked template
 
-Linking templates refer to the act of connecting separate template files, referenced by a link from a main template.  They allow you to  create reusable, composable, and modular deployments comprised of many individual arm templates.
+Linking templates refer to the act of connecting separate template files, referenced by a link from a main template. They allow you to create reusable, composable, and modular deployments comprised of many individual arm templates.
 
 When referencing a linked template, you must provide a URI value that would be accessible over HTTP or HTTPS, unlike our last unit where we could use a local file.
 
