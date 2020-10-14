@@ -17,7 +17,7 @@ The retail innovation team reports to the company's Chief Technology Officer (CT
 
 ## Information technology
 
-Beyond new innovations, Tailwind's central IT teams support all of the back-office and store technologies.
+Beyond new innovations, Tailwind's central IT teams support the back office and store technologies.
 
 :::image type="content" source="../media/balance.png" alt-text="A graphic showing a balance of speed and control." border="false":::
 _Figure 3: A balance of speed and control._

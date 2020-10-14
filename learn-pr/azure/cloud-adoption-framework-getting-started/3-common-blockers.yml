@@ -3,7 +3,7 @@ uid: learn.azure.cloud-adoption-framework-getting-started.3-common-blockers
 title: Common blockers
 metadata:
   title: Common blockers
-  description: The Cloud Adoption Framework is designed as a module approach to guide readers through blockers to cloud adoption. The "getting started guides" outline a streamlined path through some of the most common blockers. 
+  description: This Cloud Adoption Framework module is designed to guide readers through blockers to cloud adoption. The Getting Started guides outline a streamlined path through some of the most common blockers. 
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: bblanch
