@@ -1,6 +1,6 @@
 ## Designing a secure IoT solution
 
-In the scenario, your goal is to maintain ambient room conditions accurately within a laboratory. Doing so will ensure that your test results will be accurate and stable. The system you'll build should automatically read the data and transmit it securely from the device to the cloud. To accomplish the requirement, you'll create a secure IoT solution on Azure Sphere (MT3620 Cortex-A7 Core).
+In the scenario, your goal is to maintain ambient room conditions accurately within a laboratory. Doing so will ensure that your test results will be accurate and stable. The system you'll build should automatically read the data and transmit it securely from the device to the cloud. To accomplish the requirement, you'll create a secure IoT solution on Azure Sphere (MT3620 Cortex-A7 core).
 
 ## Components to use
 
@@ -10,6 +10,6 @@ To accomplish this, you'll use the Azure Sphere MT3620 board that will act as a 
 
 The components you'll use are:
 
-- **Azure Sphere MT3620 Board:** MT3620 is the first Azure Sphere certified MCU. Azure Sphere certified MCUs are a new class of secured, connected crossover microcontrollers.
+- **Azure Sphere MT3620 board:** MT3620 is the first Azure Sphere certified MCU. Azure Sphere certified MCUs are a new class of secured, connected crossover microcontrollers.
 - **Azure Sphere Developer Learning Path:** The labs in this learning path are designed to ease you into the world of Azure Sphere development with the Avnet and Seeed Studio Azure Sphere development boards. The labs cover Azure Sphere security concepts, secure bi-directional cloud communications, how to integrate FreeRTOS real-time applications with Azure, and over-the-air updates, with more labs to follow.
 

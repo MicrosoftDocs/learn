@@ -4,7 +4,7 @@ Connect your Azure Sphere dev kit to your PC through USB. When plugged in, the d
 
 Alternatively, you can download the drivers from [Future Technology Devices International](https://www.ftdichip.com/Drivers/VCP.htm) (FTDI). Choose the driver that matches your Windows installation (32-bit or 64-bit).
 
-## Install Azure Sphere SDK
+## Install the Azure Sphere SDK
 
 1. [Download the SDK](https://aka.ms/AzureSphereSDKDownload). Save the downloaded file on your PC.
 2. Run the downloaded .exe to install the SDK. Agree to the license terms, and then select **Next**.
@@ -18,7 +18,7 @@ Alternatively, you can download the drivers from [Future Technology Devices Inte
 
 2. Select and start the **Azure Sphere Developer Command Prompt**.
 
-3. If you've never logged in to Azure Sphere before and have installed the SDK, add the -- newuser parameter to create a new tenant user. Replace `<email@address.com>` with your account and run the command.
+3. If you've never logged in to Azure Sphere before and have installed the SDK, add the **-- newuser** parameter to create a new tenant user. Replace `<email@address.com>` with your account and run the command.
 
    ```
    azsphere login --newuser <email@address.com>
@@ -95,7 +95,7 @@ You'll configure Azure Sphere for networking. Hence, you can receive cloud updat
    azsphere device wifi show-status
    ```
 
-## Update Azure Sphere OS
+## Update the Azure Sphere OS
 
 1. Run the following command to check the device OS version.
 

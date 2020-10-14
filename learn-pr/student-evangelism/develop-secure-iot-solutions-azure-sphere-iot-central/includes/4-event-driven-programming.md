@@ -21,6 +21,7 @@ Periodic timers produce timed triggers with a fixed period of time between occur
 
 The following example is a variable named **measureSensorTimer** of type **LP_TIMER**. This event timer is initialized with a period of 10 seconds **{ 10, 0 }**. When the event timer triggers, the handler function **MeasureSensorHandler** is called to implement the action.
 
+> [!NOTE]
 > There are two values used to initialize the **.period** variable. The first is the number of seconds, followed by the number of nanoseconds. If you wanted the timer to trigger events every half a second (500 milliseconds), you would set the .period variable to be { 0, 500000000 }.
 
 ```
@@ -36,7 +37,7 @@ static LP_TIMER measureSensorTimer = {
 
 ### Reading telemetry
 
-The following is the implementation of the **MeasureSensorHandler** handler function. This functions reads telemetry, then calls Led2On() to turn on led2.
+The following code is the implementation of the **MeasureSensorHandler** handler function. This function reads telemetry, then calls **Led2On()** to turn on LED2.
 
 ```
 /// <summary>
@@ -72,9 +73,10 @@ static LP_TIMER led2BlinkOffOneShotTimer = {
 };
 ```
 
-In the **Led2On** function, if led2 is turned on, then a one-shot timer is set by calling **SetOneShotTimer**.
+In the **Led2On** function, if LED2 is turned on, then a one-shot timer is set by calling **SetOneShotTimer**.
 
-> The variable led2BlinkPeriod is set to 300,000,000 nanoseconds (300 milliseconds). This means led2 will be turned off 300 milliseconds after it was turned on.
+> [!NOTE]
+> The variable **led2BlinkPeriod** is set to 300,000,000 nanoseconds (300 milliseconds). This means LED2 will be turned off 300 milliseconds after it was turned on.
 
 ```
 /// <summary>
@@ -86,7 +88,7 @@ static void Led2On(void) {
 }
 ```
 
-When the one-shot timer triggers, the handler function **Led2OffHandler** is called to turn off led2.
+When the one-shot timer triggers, the handler function **Led2OffHandler** is called to turn off LED2.
 
 ```
 /// <summary>
@@ -103,7 +105,7 @@ static void Led2OffHandler(EventLoopTimer* eventLoopTimer) {
 
 ## Automatic initialization of peripherals and event timers
 
-Peripherals and timers referenced in a **set** will be automatically opened and closed.
+Peripherals and timers referenced in a set will be automatically opened and closed.
 
 ```
 LP_PERIPHERAL_GPIO* peripheralSet[] = {
@@ -130,7 +132,7 @@ static void InitPeripheralsAndHandlers(void)
 
 ## Easy to extend
 
-This model makes it easy to declare another peripheral or timer and add it to the **peripheral** or **timer** set. The following is an example of adding a GPIO output peripheral.
+This model makes it easy to declare another peripheral or timer and add it to the peripheral set or timer set. The following code is an example of adding a GPIO output peripheral.
 
 ```
 static LP_PERIPHERAL_GPIO fanControl = {
@@ -145,7 +147,7 @@ static LP_PERIPHERAL_GPIO fanControl = {
 };
 ```
 
-Remember to add this new peripheral to the **peripheral set**. Adding the peripheral to the set ensures automatic opening and closing.
+Remember to add this new peripheral to the peripheral set. Adding the peripheral to the set ensures automatic opening and closing.
 
 ```
 Peripheral* peripheralSet[] = { &buttonA, &buttonB, &led1, &led2, &networkConnectedLed, &fanControl };

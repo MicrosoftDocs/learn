@@ -1,9 +1,9 @@
-In this unit, you'll learn about GPIO (General Purpose Input Output) hardware interfaces and some of the terminology you'll need.
+In this unit, you'll learn about general-purpose input/output (GPIO) hardware interfaces and some of the terminology you'll need.
 
 The terms you'll tackle:
 
 - **Hardware:** Most IoT solutions are designed to interface with hardware and interact with the real world. The most common interfaces on a device are GPIO, PWM, I2C, SPI, ADC, and UART.
-- **GPIO (General Purpose Input Output):** Any GPIO pin can be designated (in software) as an input or output pin and can be used for a wide range of purposes. These labs use single-pin GPIO peripherals for input and output, so the following is an introduction to GPIO pins.
+- **GPIO:** Any GPIO pin can be designated (in software) as an input or output pin and can be used for a wide range of purposes. These labs use single-pin GPIO peripherals for input and output, so the following is an introduction to GPIO pins.
 - **GPIO output:** If a GPIO pin is designated as an *output* pin, then the software running on the Azure Sphere can set a pin to be either on or off. This equates to 3.3 volts for a pin that has been turned on, and zero volts when a pin is turned off. It's important to check that a peripheral connected to the pin can tolerate 3.3 volts. Otherwise you may destroy the peripheral. Lots of peripherals use single pins, such as LEDs, relays, and reed switches.
 - **GPIO input:** If a GPIO pin is designated as an *input* pin, then the software running on Azure Sphere can read a pin to determine if the voltage has been set to 3.3 volts, or zero volts/ground. It's essential to check that a peripheral won't set a voltage on a pin to anything higher than 3.3 volts **before** you connect it. Be warned, if you set a pin to a voltage higher than 3.3 volts you'll destroy Azure Sphere. An example of a GPIO peripheral that uses a single pin is a push button.
 - **Other peripheral interface types:** The following is a list of other common peripheral interfaces found on devices, including Azure Sphere. To learn more about each interface type, right mouse click and open the link in a new browser window.
@@ -14,29 +14,29 @@ The terms you'll tackle:
   - [UART - Universal asynchronous receiver-transmitter](https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter)
 - **ISU:** You'll see references to **ISU** in the Azure Sphere and MediaTek documentation. An ISU is a serial interface block and is an acronym for "**I**2C, **S**PI, **U**ART." For more information, see the [MT3620 Support Status](https://docs.microsoft.com/azure-sphere/hardware/mt3620-product-status?WT.mc_id=github-blog-dglover) page.
 
-## Azure Sphere Developer Board peripheral interfaces
+## Azure Sphere peripheral interfaces for developer boards
 
 Multiple types of boards are available to use; let's look at the first one.
 
-## AVNET Azure Sphere kit
+## Avnet Azure Sphere kit
 
 Azure Sphere MT3620 Starter Kit Hardware User Guide
 
-[![AVNET Azure Sphere kit.](../media/avnet-pinout.jpg)](https://www.avnet.com/opasdata/d120001/medias/docus/196/Azure%20Sphere%20Starter%20Kit%20User%20Guide%20(v1.3).pdf)
+[![Avnet Azure Sphere kit.](../media/avnet-pinout.jpg)](https://www.avnet.com/opasdata/d120001/medias/docus/196/Azure%20Sphere%20Starter%20Kit%20User%20Guide%20(v1.3).pdf)
 
-AVNET Azure Sphere kit can be found [here](https://www.avnet.com/opasdata/d120001/medias/docus/196/Azure%20Sphere%20Starter%20Kit%20User%20Guide%20(v1.3).pdf).
+The Avnet Azure Sphere kit can be found [here](https://www.avnet.com/opasdata/d120001/medias/docus/196/Azure%20Sphere%20Starter%20Kit%20User%20Guide%20(v1.3).pdf).
 
 ## Seeed Studio Azure Sphere MT3620 Development Kit
 
 [![Seeed Studio Azure Sphere kit.](../media/seeed-studio-rdb-pinmap.png)](http://wiki.seeedstudio.com/Azure_Sphere_MT3620_Development_Kit/)
 
-Seeed Studio Azure Sphere kit can be found [here](http://wiki.seeedstudio.com/Azure_Sphere_MT3620_Development_Kit/).
+The Seeed Studio Azure Sphere kit can be found [here](http://wiki.seeedstudio.com/Azure_Sphere_MT3620_Development_Kit/).
 
 ## Seeed Studio Azure Sphere MT3620 Mini Dev Board
 
 [![Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-mini-pinmap.jpg)](http://wiki.seeedstudio.com/MT3620_Mini_Dev_Board/)
 
-Seeed Studio Mini Azure Sphere kit can be found [here](http://wiki.seeedstudio.com/MT3620_Mini_Dev_Board/).
+The Seeed Studio Mini Azure Sphere kit can be found [here](http://wiki.seeedstudio.com/MT3620_Mini_Dev_Board/).
 
 ## Introduction to the Azure Sphere learning path labs
 
