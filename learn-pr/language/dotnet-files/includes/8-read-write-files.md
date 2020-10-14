@@ -1,5 +1,73 @@
-Content will go here
+Reading data from files and writing data to files are core concepts in .NET.
 
-## More content
+Tailwind Traders needs to write the total of all the individual store sales files to a new file. This file will then be loaded into the company's sales system.
 
-And more content
+Here, you'll learn how to use the `File` class to read and write to files.
+
+## Read data from files
+
+Files are read through the `ReadAllText` method on the `File` class.
+
+```csharp
+File.ReadAllText("stores/201/sales.json");
+```
+
+The return object from `ReadAllText` is a string.
+
+```
+{
+  "total": 22385.32
+}
+```
+
+## Parse data in files.
+
+This data in its string format doesn't do you much good. It's still just characters, but now in a format that you can read. You want the ability to parse this data into a format that you can use programmatically. 
+
+.NET includes a built-in parser for JSON files. You don't need to include anything to use it. Just use `JsonSerializer.Deserialize` method.
+
+```csharp
+class SalesTotal
+{
+  public int Total { get; set; }
+}
+
+var data = JsonSerializer.Deserialize<SalesTotal>("stores/201/sales.json");
+
+Console.WriteLine(data.Total);
+```
+
+> [!TIP]
+> Files come in a variety of formats. JSON files are the most desirable to work with because of the built-in support in the language. However, you might encounter files that are .csv, fixed width, or some other format. In that case, it's best to search nuget.org for a parser for that file type.
+
+## Write data to files
+
+You learned how to write files in the previous exercise. It's just that you wrote an empty one. To write data to a file, use the same `WriteAllText` method, but pass in the data that you want to write.
+
+```csharp
+var data = JsonSerializer.Deserialize<SalesTotal>("stores/201/sales.json");
+
+File.WriteAllText("SalesTotals/totals.txt", data.Total.ToString());
+
+// totals.txt
+// 22385.32
+```
+
+### Append data to files
+
+In the preceding example, the file is overwritten every time you write to it. Sometimes you don't want that. Sometimes you want to append data to the file, not replace it entirely. You can do this with the `File.AppendAllText` method. By default, `File.AppendAllText` will create the file if it does not already exist.
+
+```csharp
+var data = JsonSerializer.Deserialize<SalesTotal>("stores/201/sales.json");
+
+File.AppendAllLines("SalesTotals/totals.txt", $"{Environment.NewLine}{data.Total}");
+
+// totals.txt
+// 22385.32
+// 22385.32
+```
+
+> [!TIP]
+> In the preceding code example, `Environment.NewLine` tells .NET to put the value on its own line. If you didn't pass this value, you would get all the numbers squished together on the same line.
+
+In the next exercise, you'll finish the sales-total project for Tailwind Traders by reading all the sales files and writing the grand total to a .txt file. The company's commerce system can then process the file.

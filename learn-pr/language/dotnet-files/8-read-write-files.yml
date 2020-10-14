@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.dotnet-files.8-read-write-files
-title: Knowledge check
+title: Read and write to files
 metadata:
-  title: Knowledge check
-  description: Knowledge check
-  ms.date: 09/28/2020
+  title: Read and write to files
+  description: Read and write to files
+  ms.date: 10/14/2020
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
