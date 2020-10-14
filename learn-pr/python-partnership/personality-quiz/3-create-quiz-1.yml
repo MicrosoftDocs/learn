@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.python-partnership-personality-quiz.create-quiz-1
+uid: learn.python-partnership.personality-quiz.create-quiz-1
 metadata:
   title: Part 1 - Asking the user a question in your WONDER WOMAN 1984 personality quiz
   description: This unit introduces how to interact with users in Python.

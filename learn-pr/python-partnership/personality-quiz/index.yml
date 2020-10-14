@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.student-evangelism.python-partnership-personality-quiz
+uid: learn.python-partnership.personality-quiz
 metadata:
   title: Which WONDER WOMAN 1984 character are you most like?
   description: Which WONDER WOMAN 1984 character are you most like? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
@@ -30,14 +30,14 @@ roles:
 products:
 - vs-code
 units:
-- learn.student-evangelism.python-partnership-personality-quiz.introduction
-- learn.student-evangelism.python-partnership-personality-quiz.set-up-visual-studio-code
-- learn.student-evangelism.python-partnership-personality-quiz.python-basics
-- learn.student-evangelism.python-partnership-personality-quiz.create-quiz-1
-- learn.student-evangelism.python-partnership-personality-quiz.create-quiz-2
-- learn.student-evangelism.python-partnership-personality-quiz.create-quiz-3
-- learn.student-evangelism.python-partnership-personality-quiz.score-quiz
-- learn.student-evangelism.python-partnership-personality-quiz.knowledge-check
-- learn.student-evangelism.python-partnership-personality-quiz.summary
+- learn.python-partnership.personality-quiz.introduction
+- learn.python-partnership.personality-quiz.set-up-visual-studio-code
+- learn.python-partnership.personality-quiz.python-basics
+- learn.python-partnership.personality-quiz.create-quiz-1
+- learn.python-partnership.personality-quiz.create-quiz-2
+- learn.python-partnership.personality-quiz.create-quiz-3
+- learn.python-partnership.personality-quiz.score-quiz
+- learn.python-partnership.personality-quiz.knowledge-check
+- learn.python-partnership.personality-quiz.summary
 badge:
-  uid: learn.student-evangelism.python-partnership-personality-quiz.badge
+  uid: learn.python-partnership.personality-quiz.badge
