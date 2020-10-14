@@ -1,4 +1,4 @@
-Imagive you're a spring developer working for a company that creates SpringBoot Java apps that currently run on on-premises servers. Your app also integrates to a relational database (in this case MySQL). You decide to migrate this Spring app to the Azure app service and want to make the migration as smooth as possible.
+Imagive you're a Java developer working for a company that creates SpringBoot apps that currently run on on-premises servers. Your app also integrates to a relational database (in this case MySQL). You decide to migrate this Spring app to the Azure app service and want to make the migration as smooth as possible.
 
 In this module, you will create a Spring boot web app using a [Spring Initializr](https://start.spring.io) and when you've finished, you'll configure it to run locally and test it. Once you've verified that your web app is working locally, you'll deploy and host it as an Azure App Service.
 
@@ -14,6 +14,6 @@ In this module, you'll:
 
 ## Prerequisites
 
-- Experience writing SpringBoot Apps in Java
+- Experience writing Spring Apps in Java
 - Experience working with MySQL databases
 - Experience working with Azure Web Apps

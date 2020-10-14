@@ -2,36 +2,6 @@ The `azure-webapp-maven-plugin` has two goals for Java developers: the first is 
 
 In this unit, you'll look at the options for your company to host its apps on Azure App Service. Then you'll see how to add and configure the `azure-webapp-maven-plugin` to your Maven project.
 
-## Introduction to the Azure App Service
-
-The Azure App Service allows you to host your company's websites, web apps, REST APIs, and other application code on Azure. Your project code is running in the cloud; you don't have to provision or configure any infrastructure. Running your web app in Azure App Service provides you with all the benefits of running on Azure: your app is globally available, it scales automatically, has security and compliance built-in, and you only pay for the resources you use.
-
-### Features
-
-Azure App Service supports multiple programming languages, which allows developers to continue writing their applications using the languages where they're most comfortable. Java is a first-class citizen, along with other languages like .NET Core, Python, Node.js, etc. The web apps you create can be hosted on Linux, Windows, or inside a docker container. Before you deploy your web app to Azure, you'll create an App Service plan on Azure that specifies the OS and the pricing tier, which determines the size of the provisioned compute resources that your app needs.
-
-There are three categories of pricing tier:
-
- - **Free and Shared**
- 
-     This tier is only for development and testing. The resources are shared with other Azure customers, and apps can't be scaled out.
-
- - **Basic, Standard, Premium, and Premium V2**
- 
-     Apps have dedicated resources. Apps in the same App Service plan can share the same compute resources. Scale-out can be done, with more options available at the higher price tiers.
-
-- **Isolated**
-
-    This plan includes network and compute isolation. This tier has the maximum scale-out capabilities.
-
-### Why use an App Service?
-
-Azure has lots of different options if you need to run your application code in the cloud. Azure App Service is one of those options, but if your code has different requirements, you might choose a different option. For example, you might want to use Azure App Service when you don't need full control of the hosting environment.
-
-The following flowchart can help you decide if using an Azure App Service is the best solution for your application code.
-
-![Flowchart on how to decide to use an App Service](../media/4-compute-decision-tree.png)
-
 ## Maven workflows
 
 Maven has three built-in lifecycles for building projects: `default`, `clean`, and `site`, where the `default` lifecycle includes the following phases:

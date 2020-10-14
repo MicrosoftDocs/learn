@@ -66,3 +66,7 @@ mvn package azure-webapp:deploy
 Once deployment has completed, your application will be ready at `http://<appName>.azurewebsites.net/`(`http://helloworld-1590394316693.azurewebsites.net` in the demo). Open the url with your local web browser, you should see
 
 ![Sample app running in Azure App Service](./media/quickstart-java/java-hello-world-in-browser-azure-app-service.png)
+
+## Get Log Stream
+
+Azure provides built-in diagnostics to assist with debugging an App Service app. In [this](/azure/app-service/troubleshoot-diagnostic-logs) article, learn how to enable diagnostic logging and add instrumentation to your application, as well as how to access the information logged by Azure.
