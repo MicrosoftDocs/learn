@@ -1,5 +1,3 @@
-# Introduction to Java on Azure
-
 Azure offers multiple ways to deploy your Java applications. Java is the most used language among enterprises. As a matter of fact; It is widely used inside Microsoft as well. In this module we proof Javas importance, discuss it's various appearances and give an overview of typical deployment offers for your Java Solutions on Azure.
 This module is for Java Developers and System Administrators with experience in operating systems running Java applications. No coding is involved in this conceptual module.
 

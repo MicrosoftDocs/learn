@@ -1,5 +1,3 @@
-# Java Technologies
-
 It's necessary to distinguish between the different types of Java application before choosing the matching cloud solution for your deployment.
 
 You can distinguish your type of application specification wise. The most famous ones are:

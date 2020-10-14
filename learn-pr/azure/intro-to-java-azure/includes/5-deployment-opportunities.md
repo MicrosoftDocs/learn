@@ -1,4 +1,4 @@
-# Deployment opportunities on Azure
+Azure offers a variety of deployment solutions for Java applications. We will just look at a few of them here.
 
 ![Deployment Opportunities on Azure for different types of Java Applications](../media/4-deployment-options.png)
 
@@ -6,7 +6,7 @@
 
 Like in your own data center VMs are available on Azure. You can choose between different flavors on Windows as well as on Linux like Suse, JBoss, WebSphere, GlassFish or WebLogic.
 VMs are usually the starting point for the Lift and Shift approach.
-Just like in your data center you have all the freedom. With great power comes great responsibility. Master OS updates, Java runtime, Network settings, as well as port forwarding and Security is on your side if you chose this platform as a service (PAAS) solution.
+Just like in your data center you have all the freedom. With great power comes great responsibility. Master OS updates, Java runtime, Network settings, as well as port forwarding and Security is on your side if you chose this infrastructure as a service (IAAS) solution.
 
 ## Container
 
@@ -27,3 +27,9 @@ Azure Spring Cloud is Spring Cloud with all it's advantages plus all the greatne
 ## Functions
 
 Azure Functions can be written in Java as well. You can leverage from great tooling and integration with other Azure Services.
+Sample scenarios for Functions are
+- Web, mobile and IoT-connected backends
+- Bot or Real-time file and stream processing
+- Automation of scheduled tasks
+
+![Code and Events are Building the Azure Functions Logo](../media/5-functions.gif)
