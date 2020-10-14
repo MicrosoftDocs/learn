@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.github.introduction-to-github-vs-code
+metadata:
+  title: "Introduction to GitHub in VS Code"
+  description: Learn to use the GitHub integration in VS Code, including authentication, publishing repos and viewing your repo timeline
+  ms.date: 11/30/2020
+  author: burkeholland
+  ms.author: saajani
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Introduction to GitHub in VS Code"
+summary: Learn to use the GitHub integration in VS Code, including authentication, publishing repos and viewing your repo timeline
+abstract: |
+  In this module, you will:
+  - Authenticate to GitHub with VS Code
+  - Use VS Code to search GitHub for repos
+  - Clone a repo from VS Code
+  - Publish a local project to GitHub using VS Code
+  - View a timeline of activity on a GitHub repo
+prerequisites: |
+  - A GitHub account
+  - Basic knowledge of Git concepts such as repositories and cloning
+iconUrl: /learn/achievements/github/introduction-to-github.svg
+ratingEnabled: true
+levels:
+  - beginner
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+  - student
+products:
+  - github
+  - azure
+units:
+  - learn.github.introduction-to-github-vs-code.1-introduction
+badge:
+  uid: learn.github.introduction-to-github-vs-code.badge
