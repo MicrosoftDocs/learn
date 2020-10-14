@@ -17,9 +17,11 @@ For now, we're going to focus on what you need to know to work with directories 
 One task that you'll often do with the `System.IO` namespaces is list out or *enumerate* directories. For instance, Tailwind Traders has a root folder called *stores*. In that folder are subfolders organized by store number. Inside those folders are the sales-total files. The structure looks like this:
 
 ```
-
-PNG of file system
-
+📂 stores
+    📄 sales.json
+    📄 totals.txt
+    📂 201
+    📂 202
 ```
 
 To read through and list the top-level directories, you can use the `Directory.EnumerateDirectories` function.

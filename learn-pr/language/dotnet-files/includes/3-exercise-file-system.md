@@ -53,21 +53,30 @@ You need to find all the files in only the topmost location: the *stores* folder
 
 ### Write a function to find the sales.json files
 
-1. Create a new function called 'FindSalesFiles` that takes a 'folderName` parameter.
+1. Create a new function called `FindFiles` that takes a `folderName` parameter.
 
     ```csharp
-    static IEnumerable<string> FindSalesFiles(string folderName)
+    static IEnumerable<string> FindFiles(string folderName)
     {
-        return Directory.EnumerateFiles(folderName, "sales.json", SearchOptions.AllDirectories);
+        List<string> salesFiles = new List<string>();
+
+        var foundFiles = Directory.EnumerateFiles(folderName, "sales.json", SearchOptions.AllDirectories);
+
+        foreach (var file in foundFiles)
+        {
+            salesFiles.Add(file);
+        }
+
+        return salesFiles;
     }
     ```
 
-1. Call this new `FindSalesFiles` function from the `Main` function. Pass in the *stores* folder name as the location to search for files.
+1. Call this new `FindFiles` function from the `Main` function. Pass in the *stores* folder name as the location to search for files.
 
 ```csharp
 static void Main(string[] args)
 {
-    var salesFiles = FindSalesFiles("stores");
+    var salesFiles = FindFiles("stores");
 
     foreach (var file in salesFiles)
     {
@@ -115,7 +124,7 @@ namespace files_module
     {
         static void Main(string[] args)
         {
-            var files = FindSalesFiles("stores");
+            var files = FindFiles("stores");
 
             foreach (var file in files)
             {
@@ -123,7 +132,7 @@ namespace files_module
             }
         }
 
-        static IEnumerable<string> FindSalesFiles(string folderName)
+        static IEnumerable<string> FindFiles(string folderName)
         {
             return Directory.EnumerateFiles(folderName, "sales.json", SearchOption.AllDirectories);
         }
