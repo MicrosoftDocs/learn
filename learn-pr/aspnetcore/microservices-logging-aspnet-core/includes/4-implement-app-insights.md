@@ -14,9 +14,9 @@ You will:
 >   code .
 > ```
 
-## Create the Application Insights resources
+## Create and configure the Application Insights resources
 
-1. In the Cloud Shell, add the Application Insights extension to Azure CLI by running this command:
+1. In the Cloud Shell, ensure the Application Insights extension is added to Azure CLI by running this command:
 
     ```azurecli
     az extension add --name application-insights
@@ -80,7 +80,7 @@ You will:
 
 ## Enable logging to Application Insights
 
-Logging to Application Insights has been enabled in the ordering and coupon services, but not the catalog service. Complete the following steps to implement Application Insights in the catalog service.
+Logging to Application Insights has been enabled in the ordering and coupon services and the HTTP aggregator. Complete the following steps to implement Application Insights in the catalog service.
 
 1. Install the supporting Application Insights NuGet packages:
 
@@ -91,6 +91,14 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
         dotnet add package Serilog.Sinks.ApplicationInsights --version 3.1.0 && \
         popd
     ```
+
+    The following table outlines the packages that were installed.
+
+    | Package                                    | Description                                                                                    |
+    |--------------------------------------------|------------------------------------------------------------------------------------------------|
+    | `Microsoft.ApplicationInsights.AspNetCore` | Adds Application Insights support for ASP.NET Core apps.                                       |
+    | `Microsoft.ApplicationInsights.Kubernetes` | Enables gathering of telemetry for .NET Core apps running in containers managed by Kubernetes. |
+    | `Serilog.Sinks.ApplicationInsights`        | A Serilog sink that writes events to Application Insights.                                     |
 
 1. Apply the following changes in the *:::no-loc text="src/Services/Catalog/Catalog.API":::* directory:
     1. In *:::no-loc text="Extensions/ServiceCollectionExtensions.cs":::*, replace the comment `// Add AddAppInsights extension method` with the following extension method. Save your changes.
@@ -120,7 +128,7 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
         > [!NOTE]
         > Startup logging with Application Insights [isn't supported](/aspnet/core/fundamentals/logging/#log-during-host-construction), so it must be accomplished using another logger. This example uses Serilog with the Application Insights sink, passing the instrumentation key. Although this is the simplest way to enable logging to Application Insights during startup, it can lead to losing correlation between metrics and log traces.
 
-1. Run the following commands to build the catalog service:
+1. Run the following commands to build the catalog service and its dependencies:
 
     ```dotnetcli
     pushd src/Services/Catalog/Catalog.API && \
@@ -204,7 +212,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     :::image type="content" source="../media/health-check.png" alt-text="health checks status dashboard" border="true" lightbox="../media/health-check.png":::
 
     > [!NOTE]
-    > While the app is starting, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
+    > The services take several minutes to return to a healthy state.
 
 1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 

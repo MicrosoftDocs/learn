@@ -16,3 +16,8 @@ In this module, you:
 [!INCLUDE[reset the Azure Cloud Shell](../../includes/microservices/reset-az-cloud-shell.md)]
 
 [!INCLUDE[learn more with these resources](../../includes/microservices/learn-more.md)]
+
+## Learn more about Azure Monitor
+
+- [Azure Monitor documentation](/azure/azure-monitor/)
+- [Azure Monitor Application Insights documentation](/azure/azure-monitor/azure-monitor-app-hub)

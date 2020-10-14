@@ -11,7 +11,7 @@ In this unit, you will:
 
 Azure Monitor for Containers helps you understand the performance and health of your AKS cluster. For example, you can view the memory consumption of containers running on a specific node.
 
-Run the following script:
+Run the following command in the command shell:
 
 ```azurecli
 az aks enable-addons \
@@ -21,7 +21,7 @@ az aks enable-addons \
     --query provisioningState
 ```
 
-The preceding script may take a couple minutes to finish. It enables the monitor add-on for your AKS cluster, using the environment variables created by the AKS creation script. A variation of the following output appears:
+The preceding command may take a couple minutes to finish. It enables the monitor add-on for your AKS cluster, using the environment variables created by the AKS creation script. A variation of the following output appears:
 
 ```console
 AAD role propagation done[############################################]  100.0000%"Succeeded"
@@ -35,9 +35,21 @@ Monitor the AKS cluster's health by following these steps:
 1. Use the search box to find and open the Kubernetes service resource named *:::no-loc text="eshop-learn-aks":::*.
 1. Select the **Insights** option from the **Monitoring** section in the left side panel.
 
-    :::image type="content" source="../media/6-azure-monitor-containers/aks-monitoring-insights.png" alt-text="AKS monitoring overview on Azure portal, showing CPU, memory utilization, and node & pod count" border="true" lightbox="../media/6-azure-monitor-containers/aks-monitoring-insights.png":::
+    The **Insights** panel defaults to the **Cluster** tab, which shows the overall health of the cluster. The other tabs provide more granular health statuses for the individual nodes and containers.
 
-The **Insights** panel defaults to the **Cluster** tab, which shows the overall health of the cluster. The other tabs provide more granular health statuses for the individual nodes and containers.
+1. Select the **Live** toggle button to enable live monitoring.
+1. After waiting about 30 seconds, hover over the horizontal **Running** line in the **Active pod count** chart.
+
+    :::image type="content" source="../media/6-azure-monitor-containers/active-pod-count.png" alt-text="Active pod count chart for the AKS cluster" border="true" lightbox="../media/6-azure-monitor-containers/active-pod-count.png":::
+
+    In the preceding screenshot, notice there are 27 pods in a running state.
+1. Back in the command shell, run the following command to list all running pods:
+
+    ```bash
+    kubectl get pods -A
+    ```
+
+    The preceding command's output displays all 27 running pods in the AKS cluster.
 
 ## Implement a Prometheus metric
 
@@ -86,7 +98,7 @@ Complete the following steps to implement a counter metric for the request count
 
         The preceding code resolves the calls to `Metrics.CreateCounter` and `UseMetricServer`.
 
-1. Run the following commands to build the catalog service:
+1. Run the following commands to build the catalog service and its dependencies:
 
     ```dotnetcli
     pushd src/Services/Catalog/Catalog.API && \
@@ -168,11 +180,12 @@ Use the app to generate some requests to the catalog service. Open another brows
     ```
 
 1. Verify the deployment has finished and the app is healthy using the **:::no-loc text="General application status":::** page.
-1. When the app is healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. Refresh the page a few times.
+1. When the app is healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app.
+1. Navigate to the products catalog page, and refresh the page a few times.
 
 ## View the telemetry
 
-With the changes you made in the previous section, the catalog service will create a counter that counts every incoming request. A separate count is maintained for each endpoint.
+With the changes you made in the previous section, the catalog service will create a counter that counts each incoming request. A separate count is maintained for each endpoint.
 
 To troubleshoot a production issue, you've been asked to monitor requests for the full list of catalog items. The list of catalog items is retrieved from the catalog service via an HTTP GET request to the `/catalog-api/api/v1/catalog/items` endpoint. To view the current count of requests to that endpoint, complete the following steps:
 

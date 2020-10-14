@@ -2,7 +2,7 @@
 uid: learn.microservices-logging-aspnet-core.5-monitor-app-insights
 metadata:
   title: Exercise - Monitor Application Insights
-  description: Monitor the microservices in the Azure portal
+  description: Monitor the microservices app using Application Insights.
   author: scottaddie
   ms.author: scaddie
   ms.date: 10/14/2020

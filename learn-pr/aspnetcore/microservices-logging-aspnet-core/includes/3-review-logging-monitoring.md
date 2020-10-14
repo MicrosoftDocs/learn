@@ -99,7 +99,7 @@ In Serilog, `Serilog.Context.LogContext` can be used to dynamically add and remo
 
 ```csharp
 var log = new LoggerConfiguration()
-    .Enrich.FromLogContext()
+    .Enrich.FromLogContext();
 ```
 
 With that configuration, properties can be added to the context using `LogContext.PushProperty()`:

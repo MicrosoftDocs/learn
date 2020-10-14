@@ -2,7 +2,7 @@
 uid: learn.microservices-logging-aspnet-core.4-implement-app-insights
 metadata:
   title: Exercise - Implement Application Insights
-  description: TODO
+  description: Implement Azure Monitor Application Insights in a microservices app.
   author: scottaddie
   ms.author: scaddie
   ms.date: 10/14/2020

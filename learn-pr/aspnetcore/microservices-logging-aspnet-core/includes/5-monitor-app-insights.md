@@ -20,11 +20,14 @@ In the preceding image, notice the following things:
 - The service's overall health is displayed in charts representing memory, CPU usage, and exceptions rate.
 - The **Servers** pane lists the physical nodes used by the app. In this example, there's a single node. The data on this page can be filtered by node by selecting the server name from the list.
 
+> [!NOTE]
+> Your **Sample telemetry** panel might be empty. The next section creates some telemetry to observe.
+
 ## Create some telemetry
 
 Use the app to generate some telemetry data to examine. Open another browser tab to complete the following steps. While you're completing the steps, observe the results on the **Live Metrics** view.
 
-1. If needed, run the following command to display the various app URLs:
+1. If needed, run the following command in the Cloud Shell to display the various app URLs:
 
     ```bash
     cat ~/clouddrive/aspnet-learn/deployment-urls.txt
@@ -40,33 +43,34 @@ Use the app to generate some telemetry data to examine. Open another browser tab
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
     1. Enter the code *:::no-loc text="GIVEMEFREESTUFF":::* in the **:::no-loc text="HAVE A DISCOUNT CODE?":::** text box and select **:::no-loc text="APPLY":::**.
+
         Because this code is invalid, the message **ERROR: The coupon doesn't exist!** appears. You'll see this error message when you examine the telemetry later in this unit.
     1. Replace the code *:::no-loc text="GIVEMEFREESTUFF":::* with *:::no-loc text="DISC-10":::* for a 10 USD discount. Select **:::no-loc text="APPLY":::**.
     1. Select **:::no-loc text="PLACE ORDER":::** to complete the purchase.
 
 Application Insights will capture telemetry from each of the four instrumented services. The telemetry captured represents HTTP and SQL requests to/from the services. As the telemetry is captured, it's ingested by endpoints in Azure. The ingestion process takes a few minutes.
 
-## Examine application map
+## Examine Application Map
 
-A good place to view the overall health of your app in Application Insights is the application map. The application map:
+A good place to view the overall health of your app in Application Insights is the Application Map. The Application Map:
 
 - Shows a graphical representation of the service and its dependencies.
 - Can be used to investigate failures and performance issues.
 
 Investigate the earlier failed coupon service request with the following steps:
 
-1. Select **Application map** from the **Investigate** section.
+1. In the Azure portal, select **Application Map** from the **Investigate** section.
 
-    :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-initial-app-map.png" alt-text="The initial view of the webshoppingagg application map" border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-initial-app-map.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-initial-app-map.png" alt-text="The initial view of the webshoppingagg Application Map" border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-initial-app-map.png":::
 
-    A view similar to the preceding screenshot appears. The application map initially displays a simplified representation of the *:::no-loc text="webshoppingagg":::* app. This view doesn't list individual dependencies.
+    A view similar to the preceding screenshot appears. The Application Map initially displays a simplified representation of the *:::no-loc text="webshoppingagg":::* app. This view doesn't list individual dependencies.
 
     > [!IMPORTANT]
     > Ingestion of Application Insights telemetry takes 1-5 minutes. If your results don't appear similar to the preceding image, wait a few minutes and try again.
 
 1. Select the **Update map components** button to load a detailed view of the entire *:::no-loc text="eShopOnContainers":::* solution.
 
-    :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-detail-app-map.png" alt-text="The detailed application map" border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-detail-app-map.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-detail-app-map.png" alt-text="The detailed Application Map" border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-detail-app-map.png":::
 
     A view similar to the preceding screenshot appears. The services that are instrumented in Application Insights are represented by green circles.
 
@@ -78,7 +82,7 @@ Investigate the earlier failed coupon service request with the following steps:
 
 ## Investigate an end-to-end transaction
 
-The application map provides one way of exploring captured telemetry. You can also search for a request using known criteria. To search for a request and investigate the end-to-end transaction, complete the following steps:
+The Application Map provides one way of exploring captured telemetry. You can also search for a request using known criteria. To search for a request and investigate the end-to-end transaction, complete the following steps:
 
 1. Select **Search** from the **Investigate** section to open the transaction search panel.
 1. In the **Search** text box, enter *:::no-loc text="GIVEMEFREESTUFF":::* and press <kbd>Enter</kbd>.
@@ -87,13 +91,9 @@ The application map provides one way of exploring captured telemetry. You can al
 
     :::image type="content" source="../media/5-monitor-app-insights/givemefreestuff-search-results.png" alt-text="event search results matching the term 'GIVEMEFREESTUFF'" border="true" lightbox="../media/5-monitor-app-insights/givemefreestuff-search-results.png":::
 
-1. Select the **Add filter** button.
+1. Select the **Event types** button. Unselect all options except for *Trace*.
 
-    :::image type="content" source="../media/5-monitor-app-insights/add-filter-button.png" alt-text="Add filter button" border="true" lightbox="../media/5-monitor-app-insights/add-filter-button.png":::
-
-1. In the **Filter** panel that appears, enter *:::no-loc text="Tele":::* in the **Properties** text box. Select the *trace* check box, and select the **Done** button.
-
-    :::image type="content" source="../media/5-monitor-app-insights/properties-filter.png" alt-text="Properties filter text box" border="true" lightbox="../media/5-monitor-app-insights/properties-filter.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/event-types-trace.png" alt-text="Event types Trace option" border="true" lightbox="../media/5-monitor-app-insights/event-types-trace.png":::
 
     The *:::no-loc text="webshoppingagg":::* search results page refreshes to only show *TRACE* events:
 
@@ -103,12 +103,12 @@ The application map provides one way of exploring captured telemetry. You can al
 
 :::image type="content" source="../media/5-monitor-app-insights/end-to-end-transaction-details.png" alt-text="end-to-end transaction details for a TRACE event" border="true" lightbox="../media/5-monitor-app-insights/end-to-end-transaction-details.png":::
 
-1. Notice the trace includes each step of the request.
-    - The initial request is received by the HTTP aggregator.
+1. Notice the trace includes each step of the request:
+    - The initial request is received by the HTTP aggregator:
         - An **INFORMATION** log entry with the text `----- Getting discount coupon: "GIVEMEFREESTUFF"` is logged.
         - An **INFORMATION** log entry with the text `----- WebAggregator --> Coupon-API: "GIVEMEFREESTUFF"` is logged.
     - The HTTP aggregator makes a request to the coupon service at the path `GET /api/v1/coupon/GIVEMEFREESTUFF`.
-    - Since the preceding request fails, the overall request fails.
+    - Since the preceding request fails, the overall request fails:
         - An **INFORMATION** log entry beginning with the text `----- WebAggregator <-- Coupon-API: HttpResponseMessage` is logged.
         - A **WARNING** log entry with the text `----- Coupon not found: 404 - Content: "ERROR: The coupon doesn't exist"` is logged.
 
