@@ -67,7 +67,7 @@ quiz:
       explanation: There might be easier approaches that don't require ongoing processes.
     - content: Accelerate adoption
       isCorrect: true
-      explanation: "Azure landing zones and the getting started guide on [environment design](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/design-and-configuration?azure-portal=true) can help design and deploy the environment you need."
+      explanation: Azure landing zones and the getting started guide on [environment design](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/design-and-configuration?azure-portal=true) can help design and deploy the environment you need.
     - content: Align foundation
       isCorrect: false
       explanation: It's always good to be on the same page about core decisions, but you might need something a bit deeper for this blocker.
