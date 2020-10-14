@@ -42,17 +42,17 @@ quiz:
         - content: Application Insights is enabled by default for all ASP.NET Core apps running on AKS.
           isCorrect: true
           explanation: "To enable Application Insights in an ASP.NET Core app, add `Microsoft.ApplicationInsights.AspNetCore` NuGet package and configure it."          
-    - content: Which of the following statements is **NOT** true about Azure Monitor for containers?
+    - content: Which of the following statements is **NOT** true about Azure Monitor for Containers?
       choices:
-        - content: Azure Monitor for containers gives you infrastructure-oriented metrics.
+        - content: Azure Monitor for Containers gives you infrastructure-oriented metrics.
           isCorrect: false
           explanation: "Azure Monitor collects memory and processor metrics from controllers, nodes, and containers via the Kubernetes metrics API."
         - content: A Prometheus server must be installed to monitor Prometheus endpoint metrics in AKS.
           isCorrect: true
-          explanation: "A Prometheus server isn't required. You just need to expose the Prometheus metrics endpoint through your exporters or pods (app), and the containerized agent for Azure Monitor for containers can scrape the metrics for you."
+          explanation: "A Prometheus server isn't required. You just need to expose the Prometheus metrics endpoint through your exporters or pods (app), and the containerized agent for Azure Monitor for Containers can scrape the metrics for you."
         - content: Using a Kusto query, you can retrieve the Prometheus performance metric data from the Azure portal.
           isCorrect: false
           explanation: "You can execute a custom Kusto query from the **Logs** panel in the **Monitoring** section of your AKS resource."
-        - content: Azure Monitor for containers can scrape metrics from Prometheus-based metrics endpoints.
+        - content: Azure Monitor for Containers can scrape metrics from Prometheus-based metrics endpoints.
           isCorrect: false
-          explanation: "Azure Monitor for containers provides a seamless onboarding experience to collect Prometheus metrics from the configured endpoint."
+          explanation: "Azure Monitor for Containers provides a seamless onboarding experience to collect Prometheus metrics from the configured endpoint."
