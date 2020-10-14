@@ -35,3 +35,5 @@ products:
   - azure
 units:
   - learn.github.introduction-to-github-vs-code.1-introduction
+badge:
+  uid: learn.github.introduction-to-github-vs-code.badge
