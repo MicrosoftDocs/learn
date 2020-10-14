@@ -2,7 +2,7 @@
 
 *Monitoring* refers to gathering platform and app metrics that are meant to track the app's health. Metrics are numerical values representing system status, such as CPU usage or requests received. Metrics are used to observe the system in near real-time or to analyze performance trends over time. The metrics are collected from different kinds of architectural levels. An example of such a level is the physical infrastructure to the app, including metrics from the:
 
-* Node level
+* Node
 * Container
 * Application
 * Dependant services
@@ -26,13 +26,15 @@ In a microservices architecture, a solution is needed that can:
 * Correlate the log traces.
 * Carry additional contextual information, like the hosted infrastructure, to efficiently debug the app.
 
-This unit explains how the *:::no-loc text="eShopOnContainers":::* app implements [Serilog](https://serilog.net) for structured logging and [Seq](https://datalust.co/seq) to centralize all log traces. In later units, you'll learn about using code instrumentation with Application Insights. Azure Monitor will be used for near real-time monitoring of the telemetry data.
+This unit explains how the *:::no-loc text="eShopOnContainers":::* app implements [Serilog](https://serilog.net) and [Seq](https://datalust.co/seq). Serilog is used for structured logging. Seq centralizes all of the log traces.
+
+In later units, you'll learn about using code instrumentation with Application Insights. Azure Monitor will be used for near real-time monitoring of the telemetry data.
 
 ### Structured logging
 
-*Structured logging* is an approach in which the app writes logs in a structured format. An example of a structured format is JSON, while an unstructured log might be plain text. Unstructured text is difficult to query in a consistent manner. Microservices apps comprised of many services necessitate a way to filter the traces by a particular property, such as `TransactionId`.
+*Structured logging* is an approach in which logs are written in a consistent message format optimized for machine readability. These messages abide by a predefined schema, which allows the logs to be parsed and treated as data sets. An example of a structured message format is JSON, while an unstructured log is written in plain text. Unstructured logs are difficult to query in a consistent and reliable manner. Microservices apps comprised of many services necessitate a way to filter the traces by a particular property, such as `TransactionId`.
 
-.NET provides logging infrastructure in the `Microsoft.Extensions.Logging` assembly. The infrastructure provides APIs that work with various native and third-party logging providers. To implement structured logging in *:::no-loc text="eShopOnContainers":::*, [Serilog](https://github.com/serilog/serilog), an open-source third-party logging provider, is used.
+.NET provides logging infrastructure in the `Microsoft.Extensions.Logging` assembly. The infrastructure provides APIs that work with various native and third-party logging providers. To implement structured logging in *:::no-loc text="eShopOnContainers":::*, [Serilog](https://github.com/serilog/serilog), an open-source, third-party logging provider, is used.
 
 Structured formats can be parsed to search and filter the relevant data based on their correlation. For example, consider the following logging statement that uses the Serilog library:
 
@@ -44,9 +46,9 @@ _logger.LogInformation(
 
 The usage of the `LogInformation` method is similar to that of the `string.Format` method. In the preceding parameters list for `LogInformation`:
 
-1. The first string defines an event type or template property.
-1. Properties for the log entry are in curly braces. For example, `{TransactionId}` defines a property that gets its value from the parameter `transaction.TransactionId`.
-1. The `@` operator in front of `{@Command}` tells Serilog to serialize the object passed in, rather than convert it using `ToString`.
+* The first string defines an event type or template property.
+* Properties for the log entry are in curly braces. For example, `{TransactionId}` defines a property that gets its value from the parameter `transaction.TransactionId`.
+* The `@` operator in front of `{@Command}` tells Serilog to serialize the object passed in, rather than convert it using `ToString`.
 
 The resulting log entry is represented in the following JSON snippet:
 
@@ -131,15 +133,15 @@ public class OrderStartedIntegrationEventHandler :
 
 The preceding code:
 
-1. Defines a log property `IntegrationEventContext` as part of a `using` statement.
-1. Sets the value of `IntegrationEventContext` to a string that includes `@event.ID` and `Program.AppName` values.
-1. Applies that `IntegrationEventContext` property to all log events generated in the scope of the `using` statement. Any log methods invoked within the `DeleteBasketAsync` method are also considered in scope.
+* Defines a log property `IntegrationEventContext` as part of a `using` statement.
+* Sets the value of `IntegrationEventContext` to a string that includes `@event.ID` and `Program.AppName` values.
+* Applies that `IntegrationEventContext` property to all log events generated in the scope of the `using` statement. Any log methods invoked within the `DeleteBasketAsync` method are also considered in scope.
 
-#### Serilog sinks & Seq
+#### Serilog sinks and Seq
 
 Serilog provides [sinks](https://github.com/serilog/serilog/wiki/Provided-Sinks) for writing log events to storage in various formats. In *:::no-loc text="eShopOnContainers":::*, Seq is configured as the centralized log monitoring system. Seq was selected for its free, single-user license, which can be used in production and can be run locally.
 
-The following packages are added to every microservice to configure Serilog and Seq:
+In this module, the following NuGet packages are added to every microservice to configure Serilog and Seq:
 
 * `Serilog.AspNetCore`
 * `Serilog.Enrichers.Environment`
