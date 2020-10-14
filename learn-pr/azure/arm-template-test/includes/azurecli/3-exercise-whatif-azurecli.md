@@ -23,9 +23,9 @@ Here's an overview of the steps you are about to carry out:
     az login
     ```
 
-  1. Select an appropriate user in the browser and close browser window when prompted.
+1. Select an appropriate user in the browser and close browser window when prompted.
 
-     Once you are logged in, you see a list, in JSON format. The list contains subscriptions associated with this account in the terminal, if you activated the sandbox.
+   Once you are logged in, you see a list, in JSON format. The list contains subscriptions associated with this account in the terminal, if you activated the sandbox.
 
 ## Set the active subscription
 
