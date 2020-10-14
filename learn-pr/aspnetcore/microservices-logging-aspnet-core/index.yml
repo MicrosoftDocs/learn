@@ -5,7 +5,7 @@ metadata:
   description: This module guides you through implementing logging and monitoring in an ASP.NET Core microservices app in Azure Kubernetes Service.
   author: scottaddie
   ms.author: scaddie
-  ms.date: 09/28/2020
+  ms.date: 10/14/2020
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
 title: Instrument a cloud-native ASP.NET Core microservice
@@ -41,7 +41,7 @@ products:
 units:
   - learn.microservices-logging-aspnet-core.1-introduction
   - learn.microservices-logging-aspnet-core.2-environment-setup
-  - learn.microservices-logging-aspnet-core.3-logging-monitoring
+  - learn.microservices-logging-aspnet-core.3-review-logging-monitoring
   - learn.microservices-logging-aspnet-core.4-implement-app-insights
   - learn.microservices-logging-aspnet-core.5-monitor-app-insights
   - learn.microservices-logging-aspnet-core.6-azure-monitor-containers
