@@ -4,6 +4,6 @@ In this module, you learned how to read files and directories, create files and 
 
 A few things to keep in mind from this module:
 
-- Always use the `promises` namespace on the built-in modules. You can then use the `async` and `await` operators to make code synchronous without blocking program execution.
-- Whenever you are creating a directory, make sure that you wrap it in a `try/catch`. The default behavior in Node.js is to throw an error when you try to create a directory that already exists. If you just want to check if a directory exists or not, you can use the `stat` method. Note that this method does not exist on the `promises` namespace, but on the main `fs` object.
+- The `Directory.EnumerateDirectories` and `Directory.EnumerateFiles` accept a parameter that allow you to specify a search condition for names to return, and a parameter to recursively traverse all child directories.
+- `System.Environment.SpecialFolder` is an enumeration that allows you to access system defined folders, such as the desktop or user profile in a cross platform manner without having to memorize the exact path for each operating system.
 - If you need to parse other file types, check out the packages on nuget.org. For example, you can use the [CsvHelper](https://www.nuget.org/packages/CsvHelper) package for .csv files.

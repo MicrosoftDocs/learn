@@ -105,8 +105,10 @@ namespace files_module
             {
                 var extension = Path.GetExtension(file);
 
-                if (extension == ".json" || extension == ".txt")
+                if (extension == ".json")
+                {
                     salesFiles.Add(file);
+                }
             }
 
             return salesFiles;

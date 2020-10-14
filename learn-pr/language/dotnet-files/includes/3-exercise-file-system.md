@@ -30,11 +30,11 @@ Activate the Microsoft Learn sandbox by selecting the **Activate Sandbox** at th
 
 1. Expand the *stores* folder and each of the numbered folders inside.
 
-    :::image type="content" :::
+    :::image type="content" source="../media/folder-structure.png" alt-text="Screenshot that shows the project folder structure.":::
 
 ## Find the sales.json files
 
-You need to find all the files in only the topmost location: the *stores* folder.
+You need to find all the sales.json files in all folders.
 
 ### Include the System.IO namespace
 
@@ -60,11 +60,14 @@ You need to find all the files in only the topmost location: the *stores* folder
     {
         List<string> salesFiles = new List<string>();
 
-        var foundFiles = Directory.EnumerateFiles(folderName, "sales.json", SearchOptions.AllDirectories);
+        var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOptions.AllDirectories);
 
         foreach (var file in foundFiles)
         {
-            salesFiles.Add(file);
+            if (file == "sales.json")
+            {
+                salesFiles.Add(file);
+            }
         }
 
         return salesFiles;
@@ -107,7 +110,7 @@ Excellent! You've successfully written a command-line program that will traverse
 
 You may have noticed the path to the *stores* directory was rather simple and within the working directory of the program.
 
-In the next section, you'll learn how to construct complex paths that work across operating systems using `System.IO`.
+In the next section, you'll learn how to construct complex paths that work across operating systems using the `Path` class.
 
 ### Got stuck?
 
@@ -134,7 +137,19 @@ namespace files_module
 
         static IEnumerable<string> FindFiles(string folderName)
         {
-            return Directory.EnumerateFiles(folderName, "sales.json", SearchOption.AllDirectories);
+            List<string> salesFiles = new List<string>();
+    
+            var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOptions.AllDirectories);
+    
+            foreach (var file in foundFiles)
+            {
+                if (file == "sales.json")
+                {
+                    salesFiles.Add(file);
+                }
+            }
+    
+            return salesFiles;
         }
     }
 }

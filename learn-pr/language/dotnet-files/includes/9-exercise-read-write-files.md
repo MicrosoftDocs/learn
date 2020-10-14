@@ -50,19 +50,15 @@ In this exercise, you'll complete the project by reading the .json files, adding
 
     // Loop over each file path in salesFiles
     foreach (file in salesFiles)
-    {
-      // Only accept the JSON files
-      if (Path.GetExtension(file) == ".json")
-      {
-        // Read the contents of the file
-        string salesJson = File.ReadAllText(file);
-    
-        // Parse the contents as JSON
-        SalesData data = JsonSerializer.Deserialize<SalesData>(salesJson);
+    {      
+      // Read the contents of the file
+      string salesJson = File.ReadAllText(file);
+  
+      // Parse the contents as JSON
+      SalesData data = JsonSerializer.Deserialize<SalesData>(salesJson);
 
-        // Add the amount in found in the Total field to the salesTotal variable
-        salesTotal += data.Total;
-      }
+      // Add the amount in found in the Total field to the salesTotal variable
+      salesTotal += data.Total;
     }
 
     return salesTotal;
@@ -186,15 +182,12 @@ namespace files_module
             double salesTotal = 0;
             
             foreach (var file in salesFiles)
-            {
-                if (Path.GetExtension(file) == ".json")
-                {
-                    string salesJson = File.ReadAllText(file);
+            {                
+                string salesJson = File.ReadAllText(file);
 
-                    SalesData data = JsonSerializer.Deserialize<SalesData>(salesJson);
+                SalesData data = JsonSerializer.Deserialize<SalesData>(salesJson);
 
-                    salesTotal += data.Total;
-                }
+                salesTotal += data.Total;                
             }
 
             return salesTotal;

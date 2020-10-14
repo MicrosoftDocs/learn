@@ -57,15 +57,9 @@ In the current Program.cs code, you're passing the static location of the *store
   /home/username/dotnet-files/stores/204/sales.json  
   ```
 
-## Find all .json and .txt files
+## Find all .json files
 
-Instead of looking for just *sales.json* files, the program needs to search for any file with an extension of .json or .txt. To do that, use the `Path.GetExtension` method to check the file name extension.
-
-1. In the `FindFiles` method, change the `Directory.EnumerateFiles` function to look for all files.
-
-  ```csharp
-  Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
-  ```
+Instead of looking for just *sales.json* files, the program needs to search for any file with an extension of .json. To do that, use the `Path.GetExtension` method to check the file name extension.
 
 1. In the `foreach` loop in the `FindFiles` get the extension of each file by using the `Path.GetExtension` method.
 
@@ -73,20 +67,25 @@ Instead of looking for just *sales.json* files, the program needs to search for 
   foreach (var file in files)
   {
     var extension = Path.GetExtension(file);
-
-    salesFiles.Add(file);
+ 
+    if (file == "sales.json")
+    {
+        salesFiles.Add(file);
+    }
   }
   ```
 
-1. Then add an `if` statement to check whether the file's extension is a .txt or .json.
+1. Then change the `if` statement to check whether the file's extension is .json.
 
   ```csharp
   foreach (var file in files)
   {
     var extension = Path.GetExtension(file);
 
-    if (extension == ".json" || extension == ".txt")
+    if (extension == ".json")
+    {
       salesFiles.Add(file);
+    }
   }
   ```
 
@@ -100,16 +99,11 @@ Instead of looking for just *sales.json* files, the program needs to search for 
   The output now shows all .json and .txt files in any of the store ID directories.
 
   ```bash
-  /home/username/dotnet-files/stores/sales.json
-  /home/username/dotnet-files/stores/totals.txt
-  /home/username/dotnet-files/stores/201/sales.json
-  /home/username/dotnet-files/stores/201/inventory.txt
-  /home/username/dotnet-files/stores/202/sales.json
-  /home/username/dotnet-files/stores/203/inventory.txt
-  /home/username/dotnet-files/stores/203/sales.json
-  /home/username/dotnet-files/stores/203/inventory.txt
-  /home/username/dotnet-files/stores/204/sales.json
-  /home/username/dotnet-files/stores/204/inventory.txt
+  /home/username/dotnet-files/stores/sales.json  
+  /home/username/dotnet-files/stores/201/sales.json  
+  /home/username/dotnet-files/stores/202/sales.json  
+  /home/username/dotnet-files/stores/203/sales.json  
+  /home/username/dotnet-files/stores/204/sales.json  
   ```
 
 Great job! You've used the `Path` class and the `Directory.GetCurrentDirectory` method to make the program much more robust. In the next section, you'll learn how to create directories and move files between locations.
@@ -150,7 +144,7 @@ namespace files_module
             {
                 var extension = Path.GetExtension(file);
 
-                if (extension == ".json" || extension == ".txt")
+                if (extension == ".json")
                     salesFiles.Add(file);
             }
 

@@ -10,17 +10,19 @@ In the .NET Framework, `System.IO` namespaces contain types to interact with fil
 
 You can also use the types in the `System.IO` namespaces to read and write, both synchronously and asynchronously, data streams and files.
 
-For now, we're going to focus on what you need to know to work with directories by using the types contained in the `System.IO` namespaces.
+For now, we're going to focus on what you need to know to work with directories by using `Directory` class contained in the `System.IO` namespace.
 
 ## List all directories
 
-One task that you'll often do with the `System.IO` namespaces is list out or *enumerate* directories. For instance, Tailwind Traders has a root folder called *stores*. In that folder are subfolders organized by store number. Inside those folders are the sales-total files. The structure looks like this:
+One task that you'll often do with the `Directory` class is list out or *enumerate* directories. For instance, Tailwind Traders has a root folder called *stores*. In that folder are subfolders organized by store number. Inside those folders are the sales-total and inventory files. The structure looks like this:
 
 ```
 📂 stores
     📄 sales.json
     📄 totals.txt
     📂 201
+       📄 sales.json
+       📄 inventory.txt
     📂 202
 ```
 
@@ -71,6 +73,7 @@ foreach (var file in allFilesInAllFolders)
 
 // Outputs:
 // stores/totals.txt
+// stores/201/inventory.txt
 ```
 
-In the next exercise, you'll use the `System.IO` types to dynamically read through Tailwind Traders' main *stores* directory to find all of the sales.json files.
+In the next exercise, you'll use the `Directory` class to dynamically read through Tailwind Traders' main *stores* directory to find all of the sales.json files.
