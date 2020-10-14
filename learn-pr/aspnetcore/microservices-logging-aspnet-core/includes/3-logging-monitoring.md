@@ -59,15 +59,15 @@ The resulting log entry is represented in the following JSON snippet:
   "@m": "----- Begin transaction 77fa1239-0abb-485f-bad2-f3ecd5e91128 for SetPaidOrderStatusCommand ({\n  \"OrderNumber\": 1,\n  \"_typeTag\": \"SetPaidOrderStatusCommand\"\n})",
   "@i": "79c44f1c",
   "TransactionId": "77fa1239-0abb-485f-bad2-f3ecd5e91128",
-  "CommandName":"SetPaidOrderStatusCommand",
+  "CommandName": "SetPaidOrderStatusCommand",
   "Command": {
-    "OrderNumber" :1,
+    "OrderNumber": 1,
     "_typeTag": "SetPaidOrderStatusCommand"
   },
   "SourceContext": "Ordering.API.Application.Behaviors.TransactionBehaviour",
   "ApplicationContext": "Ordering.API",
-  "TransactionContext":"77fa1239-0abb-485f-bad2-f3ecd5e91128",
-  "IntegrationEventContext":"5f4b11b5-24be-40ca-9583-ed1c3d83ecb8-Ordering.API"
+  "TransactionContext": "77fa1239-0abb-485f-bad2-f3ecd5e91128",
+  "IntegrationEventContext": "5f4b11b5-24be-40ca-9583-ed1c3d83ecb8-Ordering.API"
 }
 ```
 
@@ -141,27 +141,32 @@ The preceding code:
 
 Serilog provides [sinks](https://github.com/serilog/serilog/wiki/Provided-Sinks) for writing log events to storage in various formats. In *:::no-loc text="eShopOnContainers":::*, Seq is configured as the centralized log monitoring system. Seq was selected for its free, single-user license, which can be used in production and can be run locally.
 
-In this module, the following NuGet packages are added to every microservice to configure Serilog and Seq:
+In this module, the following NuGet packages are added to every microservice to configure Serilog and Seq.
 
-* `Serilog.AspNetCore`
-* `Serilog.Enrichers.Environment`
-* `Serilog.Settings.Configuration`
-* `Serilog.Sinks.Console`
-* `Serilog.Sinks.Seq`
+| Package                 | Description |
+|-------------------------|-------------|
+| `Serilog.AspNetCore`    | Routes app events and ASP.NET Core's internal operation messages through Serilog. |
+| `Serilog.Sinks.Console` | A Serilog sink that writes log events to `System.Console` as text or JSON. |
+| `Serilog.Sinks.Http`    | A Serilog sink that sends log events over HTTP. |
+| `Serilog.Sinks.Seq`     | A Serilog sink that writes events to the Seq structured log server. |
 
-Logger configuration is added in *:::no-loc text="Program.cs":::*, as shown here:
+Logger configuration is added in each service's *:::no-loc text="Program.cs":::* file. For example, see the catalog's logger configuration code at *:::no-loc text="src/Services/Catalog/Catalog.API/Program.cs":::*:
 
 ```csharp
 private static Serilog.ILogger CreateSerilogLogger(IConfiguration configuration)
 {
     var seqServerUrl = configuration["Serilog:SeqServerUrl"];
+    var logstashUrl = configuration["Serilog:LogstashUrl"];
 
     return new LoggerConfiguration()
         .MinimumLevel.Verbose()
         .Enrich.WithProperty("ApplicationContext", AppName)
         .Enrich.FromLogContext()
         .WriteTo.Console()
-        .WriteTo.Seq(string.IsNullOrWhiteSpace(seqServerUrl) ? "http://seq" : seqServerUrl)
+        .WriteTo.Seq(string.IsNullOrWhiteSpace(seqServerUrl)
+            ? "http://seq" : seqServerUrl)
+        .WriteTo.Http(string.IsNullOrWhiteSpace(logstashUrl)
+            ? "http://logstash:8080" : logstashUrl)
         .ReadFrom.Configuration(configuration)
         .CreateLogger();
 }
@@ -191,7 +196,7 @@ The following JSON shows the default configuration in *:::no-loc text="appsettin
 
 Later in this module, you'll learn to configure the Serilog sink to Application Insights and monitor the telemetry data using Azure Monitor.
 
-## Monitor the microservices app using Azure Monitor
+## Monitor microservices using Azure Monitor
 
 Azure Monitor helps you understand how your cloud-native services are performing and proactively identifies issues affecting them. The following diagram provides a high-level view of Azure Monitor:
 
