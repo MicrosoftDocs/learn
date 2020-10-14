@@ -16,7 +16,7 @@ You will:
 
 ## Create the Application Insights resources
 
-1. Add the Application Insights extension to Azure CLI by running this command:
+1. In the Cloud Shell, add the Application Insights extension to Azure CLI by running this command:
 
     ```azurecli
     az extension add --name application-insights
@@ -60,14 +60,14 @@ You will:
 
     In the preceding output, there are four key-value pairs, where:
 
-    - The `Name` property represents the service name.
     - The `Key` property represents the Application Insights instrumentation key.
+    - The `Name` property represents the name of the service to which the instrumentation key belongs.
 
-1. Using the Cloud Shell editor, uncomment the `APPINSIGHTS_INSTRUMENTATIONKEY` environment variable in each of the following files in the *deploy/k8s/helm-simple* directory. Replace the `<key>` placeholder with the appropriate Application Insights instrumentation key. Save your changes.
-    - *catalog/templates/configmap.yaml*
-    - *coupon/templates/configmap.yaml*
-    - *ordering/templates/configmap.yaml*
-    - *webshoppingagg/templates/configmap.yaml*
+1. Using the Cloud Shell editor, uncomment the `APPINSIGHTS_INSTRUMENTATIONKEY` environment variable in each of the following files in the *:::no-loc text="deploy/k8s/helm-simple":::* directory. Replace the `<key>` placeholder with the appropriate Application Insights instrumentation key. Save your changes.
+    - *:::no-loc text="catalog/templates/configmap.yaml":::*
+    - *:::no-loc text="coupon/templates/configmap.yaml":::*
+    - *:::no-loc text="ordering/templates/configmap.yaml":::*
+    - *:::no-loc text="webshoppingagg/templates/configmap.yaml":::*
 
     For example, update the catalog service's Helm chart template as follows:
 
@@ -92,8 +92,8 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
         popd
     ```
 
-1. Apply the following changes in the *src/Services/Catalog/Catalog.API* directory:
-    1. In *Extensions/ServiceCollectionExtensions.cs*, replace the comment `// Add AddAppInsights extension method` with the following extension method. Save your changes.
+1. Apply the following changes in the *:::no-loc text="src/Services/Catalog/Catalog.API":::* directory:
+    1. In *:::no-loc text="Extensions/ServiceCollectionExtensions.cs":::*, replace the comment `// Add AddAppInsights extension method` with the following extension method. Save your changes.
 
         :::code language="csharp" source="../code/src/services/catalog/catalog.api/extensions/servicecollectionextensions.cs":::
 
@@ -102,13 +102,13 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
         - The `AddApplicationInsightsTelemetry` extension method is provided by the `Microsoft.ApplicationInsights.AspNetCore` NuGet package.
         - The `AddApplicationInsightsKubernetesEnricher` extension method is provided by the `Microsoft.ApplicationInsights.Kubernetes` NuGet package.
 
-    1. In the *Startup.cs* file's `ConfigureServices` method, invoke the `AddAppInsights` extension method. Save your changes.
+    1. In the *:::no-loc text="Startup.cs":::* file's `ConfigureServices` method, invoke the `AddAppInsights` extension method. Save your changes.
 
         :::code language="csharp" source="../code/src/services/catalog/catalog.api/startup.cs" highlight="3":::
 
         The preceding code registers the telemetry services in the dependency injection container.
 
-    1. In *Program.cs*, add the highlighted code to the `CreateSerilogLogger` method:
+    1. In *:::no-loc text="Program.cs":::*, add the highlighted code to the `CreateSerilogLogger` method:
 
         :::code language="csharp" source="../code/src/services/catalog/catalog.api/program.cs" highlight="5,12":::
 
@@ -134,7 +134,7 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
 
 In the previous section, you modified the catalog service to enable Application Insights telemetry. The HTTP aggregator code has already been similarly instrumented. To update the production service deployments, the container images will be built and hosted on ACR.
 
-1. Run this script to build the catalog and HTTP aggregator images:
+1. Run this script to build the images for the catalog service and HTTP aggregator:
 
     ```bash
     deploy/k8s/build-to-acr.sh --services catalog-api,webshoppingagg
@@ -156,7 +156,13 @@ In the previous section, you modified the catalog service to enable Application 
     deploy/k8s/deploy-application.sh --charts catalog,webshoppingagg
     ```
 
-    The preceding script deploys the container images from ACR to AKS.
+    The preceding script deploys the container images from ACR to AKS. The script runs the `kubectl get pods` command. The command's output contains entries for the catalog service and HTTP aggregator pods. The `STATUS` and `AGE` column values indicate that the deployments were successful:
+
+    ```console
+    NAME                              READY   STATUS              RESTARTS   AGE
+    catalog-5f45f57cd9-4cml4          0/1     Running             0          20s
+    webshoppingagg-77d8cc5c4c-f95tk   0/1     ContainerCreating   0          1s
+    ```
 
 1. Redeploy the coupon and ordering services configured with their new `APPINSIGHTS_INSTRUMENTATIONKEY` environment variables:
 
@@ -164,9 +170,15 @@ In the previous section, you modified the catalog service to enable Application 
     deploy/k8s/deploy-application.sh --registry eshopdev --charts coupon,ordering
     ```
 
-    The coupon and ordering services deployed by the setup script are already instrumented for telemetry. Since there were no code changes, the containers only need redeployment with the new configuration settings. The `--registry` parameter instructs the script to use the Docker Hub registry that hosts the unmodified images.
+    The coupon and ordering services deployed by the setup script are already instrumented for telemetry. Since there were no code changes, the containers only need redeployment with the new configuration settings. The `--registry` parameter instructs the script to use the Docker Hub registry that hosts the unmodified images. As in the previous step, the `kubectl get pods` command is executed:
 
-## Verify deployment to AKS
+    ```console
+    NAME                              READY   STATUS              RESTARTS   AGE
+    coupon-5b9597995-thw76            0/1     Running             0          20s
+    ordering-6c456f5d4c-5sr2m         0/1     ContainerCreating   0          1s
+    ```
+
+## Verify the deployment to AKS
 
 Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
 
@@ -189,7 +201,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. A green checkmark icon denotes a healthy service. The page refreshes automatically, every 10 seconds.
 
-    :::image type="content" source="../media/4-implement-app-insights/health-check.png" alt-text="health checks status dashboard" border="true" lightbox="../media/4-implement-app-insights/health-check.png":::
+    :::image type="content" source="../media/health-check.png" alt-text="health checks status dashboard" border="true" lightbox="../media/health-check.png":::
 
     > [!NOTE]
     > While the app is starting, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
