@@ -5,7 +5,7 @@ metadata:
   description: Leverage the ARM template test toolkit and apply it on your Azure Resource
     Manager templates to ensure the templates follow good practices before
     deployment. Apply the what-if command to see the impact of a deployment before it's applied. 
-  ms.date: 09/17/2020
+  ms.date: 10/12/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Preview what changes will happen before you deploy by using the what-if operation.
   - Validate your templates adherence to sound recommendations using ARM template test toolkit.
   - Implement domain specific rules for deployments that can be run by ARM template test toolkit.
-iconUrl: /learn/achievements/undefined.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate
 roles:
