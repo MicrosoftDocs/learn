@@ -107,7 +107,7 @@ You need to set the resource group created for you in the sandbox as the default
    1. Run `Set-AzDefault` to set the default Resource Group.
 
       ```powershell
-      Set-AzDefault -ResourceGroupName {Resource Group Name}
+      Set-AzDefault -ResourceGroupName <rgn>resource group name</rgn>
       ```
 
        Use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**).
