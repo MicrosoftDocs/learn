@@ -7,7 +7,8 @@
 - devOps engineer
 - security engineer
 - solution architect
-- technology manager
+- technology manage
+- test
 
 ## Learner level
 
