@@ -30,7 +30,7 @@ This unit explains how the *:::no-loc text="eShopOnContainers":::* app implement
 
 In later units, you'll learn about using code instrumentation with Application Insights. Azure Monitor will be used for near real-time monitoring of the telemetry data.
 
-### Structured logging
+## Structured logging
 
 *Structured logging* is an approach in which logs are written in a consistent message format optimized for machine readability. These messages abide by a predefined schema, which allows the logs to be parsed and treated as data sets. An example of a structured message format is JSON, while an unstructured log is written in plain text. Unstructured logs are difficult to query in a consistent and reliable manner. Microservices apps comprised of many services necessitate a way to filter the traces by a particular property, such as `TransactionId`.
 
@@ -81,7 +81,7 @@ Because the logs are being generated in a structured format, they can be visuali
 
 :::image type="content" source="../media/3-logging-monitoring/structured-logging-visualization.png" alt-text="structured logging visualization" border="true" lightbox="../media/3-logging-monitoring/structured-logging-visualization.png":::
 
-#### Logging contexts and correlation IDs
+## Logging contexts and correlation IDs
 
 Logging context allows you to define a scope so you can trace and correlate a set of events. The trace can cross service contexts. Correlation IDs establish a link between two or more contexts. For example, in *:::no-loc text="eShopOnContainers":::*, each incoming request is assigned a unique ID. This unique ID is one dimension that can be used to correlate all the events related to that request. Serilog allows logging additional context values across all logging statements using [enrichment](https://github.com/serilog/serilog/wiki/Enrichment).
 
@@ -137,7 +137,7 @@ The preceding code:
 * Sets the value of `IntegrationEventContext` to a string that includes `@event.ID` and `Program.AppName` values.
 * Applies that `IntegrationEventContext` property to all log events generated in the scope of the `using` statement. Any log methods invoked within the `DeleteBasketAsync` method are also considered in scope.
 
-#### Serilog sinks and Seq
+## Serilog sinks and Seq
 
 Serilog provides [sinks](https://github.com/serilog/serilog/wiki/Provided-Sinks) for writing log events to storage in various formats. In *:::no-loc text="eShopOnContainers":::*, Seq is configured as the centralized log monitoring system. Seq was selected for its free, single-user license, which can be used in production and can be run locally.
 
@@ -210,11 +210,17 @@ In the preceding diagram:
 
 [Azure Monitor for Containers](/azure/azure-monitor/insights/container-insights-overview) is a feature within Azure Monitor designed to observe the performance of container workloads deployed to AKS. It gives you performance visibility by collecting memory and processor metrics. Those metrics are collected from controllers, nodes, and containers available in Kubernetes through the Metrics API. Container logs are also collected. Metrics are written to the metrics store. Log data is written to the logs store associated with your Log Analytics workspace.
 
-### Application performance management with Application Insights
+## Application performance management with Application Insights
 
-Application Insights is an extensible Application Performance Management (APM) service. Apps are instrumented by installing an instrumentation NuGet package. This package monitors the app and sends telemetry data to the Application Insights service. The data is then sent to Azure Monitor. The Application Insights service also provides built-in correlation and dependency tracking.
+Application Insights is an extensible Application Performance Management (APM) service. The service is part of Azure Monitor. It automatically tracks performance and failure telemetry, such as request rates, response times, and failure rates. Apps are instrumented by installing an instrumentation NuGet package. This package monitors the app and sends telemetry data to the Application Insights service. The Application Insights service also provides built-in correlation and dependency tracking.
 
-### Collecting metrics with Prometheus
+The following diagram depicts the ingestion and consumption of telemetry as related to Application Insights:
+
+:::image type="content" source="../media/3-logging-monitoring/ai-diagram.png" alt-text="Application Insights diagram" border="true" lightbox="../media/3-logging-monitoring/ai-diagram.png":::
+
+Additionally, you can pull in telemetry from the host environments such as performance counters, Azure diagnostics, or Docker logs. All these telemetry streams are integrated into Azure Monitor. In the Azure portal, you can apply powerful analytic and search tools to the raw data.
+
+## Collect metrics with Prometheus
 
 Generally, in a large microservices app, the telemetry data rate is high enough to trigger throttling. In such cases, you should consider exporting metrics to a time-series database such as Prometheus. [Prometheus](https://prometheus.io) is an open-source metric monitoring solution. Azure Monitor for Containers provides a seamless onboarding experience to collect Prometheus metrics.
 
