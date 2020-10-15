@@ -105,12 +105,23 @@ The Application Map provides one way of exploring captured telemetry. You can al
 
 1. Notice the trace includes each step of the request:
     - The initial request is received by the HTTP aggregator:
-        - An **INFORMATION** log entry with the text `----- Getting discount coupon: "GIVEMEFREESTUFF"` is logged.
-        - An **INFORMATION** log entry with the text `----- WebAggregator --> Coupon-API: "GIVEMEFREESTUFF"` is logged.
+        - An **INFORMATION** log entry with the text `----- Getting discount coupon: "GIVEMEFREESTUFF"` is logged. That message is logged via a `LogInformation` call in the `CheckCouponAsync` action method of *:::no-loc text="src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Controllers/CouponController.cs":::*:
+
+            :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/controllers/couponcontroller.cs" id="snippet_CheckCouponAsync" highlight="7":::
+
+        - An **INFORMATION** log entry with the text `----- WebAggregator --> Coupon-API: "GIVEMEFREESTUFF"` is logged. That message is logged via a `LogInformation` call in the `CheckCouponByCodeNumberAsync` method of *:::no-loc text="src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Services/CouponService.cs":::*:
+
+            :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/services/couponservice.cs" id="snippet_CheckCouponByCodeNumberAsync" highlight="3":::
+
     - The HTTP aggregator makes a request to the coupon service at the path `GET /api/v1/coupon/GIVEMEFREESTUFF`.
     - Since the preceding request fails, the overall request fails:
-        - An **INFORMATION** log entry beginning with the text `----- WebAggregator <-- Coupon-API: HttpResponseMessage` is logged.
-        - A **WARNING** log entry with the text `----- Coupon not found: 404 - Content: "ERROR: The coupon doesn't exist"` is logged.
+        - An **INFORMATION** log entry beginning with the text `----- WebAggregator <-- Coupon-API: HttpResponseMessage` is logged. That message is logged via a `LogInformation` call in the `CheckCouponByCodeNumberAsync` method of *:::no-loc text="src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Services/CouponService.cs":::*:
+
+            :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/services/couponservice.cs" id="snippet_CheckCouponByCodeNumberAsync2" highlight="3":::
+
+        - A **WARNING** log entry with the text `----- Coupon not found: 404 - Content: "ERROR: The coupon doesn't exist"` is logged. That message is logged because of the following code in the `GetCouponByCodeAsync` action method of *:::no-loc text="src/Services/Catalog/Catalog.API/Controllers/CouponController.cs":::*:
+
+            :::code language="csharp" source="../code/src/services/catalog/catalog.api/controllers/couponcontroller.cs" id="snippet_GetCouponByCodeAsync" highlight="5":::
 
     Each item in the list may be selected for additional information.
 
@@ -118,6 +129,13 @@ The Application Map provides one way of exploring captured telemetry. You can al
 
     :::image type="content" source="../media/5-monitor-app-insights/end-to-end-transaction-timeline.png" alt-text="end-to-end transaction timeline" border="true" lightbox="../media/5-monitor-app-insights/end-to-end-transaction-timeline.png":::
 
-    In the preceding screenshot, notice that an HTTP GET request was sent to the coupon service's `Coupon` controller. 327.4 milliseconds elapsed before the controller's `GetCouponByCode` action method responded with an HTTP 404 status code.
+    In the preceding screenshot, notice the following details:
+
+    - The initial HTTP request was received by the HTTP aggregator.
+    - Two requests were sent to the identity service for token authentication. Those requests were successful, as seen by their HTTP 200 status codes.
+    - An HTTP GET request was sent to the coupon service's `CouponController` class.
+    - The coupon service made similar identity service requests, which were also successful.
+    - After roughly another 200 milliseconds, the controller's `GetCouponByCode` action method responded with an HTTP 404 status code.
+    - The elapsed time for the entire operation is 788 milliseconds. 374 milliseconds of that time is the HTTP aggregator waiting on the coupon service's response.
 
 Application Insights provides a powerful view into your related services in a microservices app. In this unit, you added Application Insights to a service and explored telemetry gathered from four services in the app. Next, you'll monitor the infrastructure health of your AKS cluster.
