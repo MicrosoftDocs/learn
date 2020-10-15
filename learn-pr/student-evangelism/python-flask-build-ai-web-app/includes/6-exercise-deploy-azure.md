@@ -1,32 +1,38 @@
 Azure App Service is a set of services provided by Microsoft Azure to enable developers to easily build and deploy web apps. Included in the App Service family is the Web Apps feature, which you can use to quickly and easily deploy websites built with tools and languages you're already familiar with.
 
-Web Apps makes deploying websites easy, and not just websites built using the Microsoft stack. You can deploy Python apps that use MySQL just as easily as ASP.NET apps that use SQL Server. You can select from a wide variety of web app templates or build templates of your own. You can configure web apps to autoscale as traffic increases, to ensure that your customers aren't left waiting during periods of peak demand. You can publish apps to staging locations and test them in the cloud before taking them live, and then swap staging and production with the click of a button. You can even create WebJobs—programs or scripts that run continuously or on a schedule to handle billing and other time-critical tasks. 
+Web Apps makes deploying websites easy, and not just websites built using the Microsoft stack. You can deploy Python apps that use MySQL as easily as ASP.NET apps that use SQL Server. You can select from a wide variety of web app templates or build templates of your own. You can configure web apps to autoscale as traffic increases, to ensure that your customers aren't left waiting during periods of peak demand. You can publish apps to staging locations and test them in the cloud before taking them live, and then swap staging and production with the click of a button. You can even create WebJobs—programs or scripts that run continuously or on a schedule to handle billing and other time-critical tasks. 
 
 In short, Web Apps takes the pain out of publishing and maintaining web apps. Web Apps is as suitable for a personal photo-sharing site as it is for enterprise-grade sites that serve millions of customers.
 
 In this unit, you deploy Contoso Travel to Azure as an Azure web app so it can be accessed by anyone, from anywhere, through a browser. And you learn about App Service application settings, which allow API keys and other "secrets" used by an application to be stored securely in the cloud.
 
-Resources that are used in this exercise are located in a [Git repository for code samples](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask).
+Resources that are used in this exercise are located in a [Git repository for code samples](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask?azure-portal=true).
+
+> [!Note]
+> If you closed your Command Prompt window or terminal, follow the steps to [Set up a Command Prompt window or terminal](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/3-exercise-upload-photos?azure-portal=true). 
+<!-- #reactivate-your-python-virtual-environment -->
+
 
 ## Create an Azure App Service instance
 
 In this exercise, you use the Azure CLI to deploy your website to Azure.
 
-1. Create a text file named **requirements.txt** that contains the following statements in the project directory—the directory that contains the Contoso Travel site:
+1. In your [project directory](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/1-exercise-set-up-environment?azure-portal=true), 
+<!-- #create-the-project-directory --> create a text file named **requirements.txt** and add the following statements:
 
-    ```bash
+    ```console
     requests
     Flask
     azure-cognitiveservices-vision-computervision
     ```
 
-    **requirements.txt** contains a list of Python packages that must be installed along with the app when the app is deployed to Azure.
+    The **requirements.txt** file contains a list of Python packages that must be installed along with the app when the app is deployed to Azure.
 
-1. Open a Command Prompt window or terminal and change (`cd`) to the **starter** directory.
+1. Return to your Command Prompt window or terminal, and make sure the current directory is still set to **mslearn-build-ai-web-app-with-python-and-flask/src/starter** in your [project directory](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/1-exercise-set-up-environment?azure-portal=true). <!-- #create-the-project-directory -->
 
 1. Run the following command to deploy the website to Azure. Replace `APP_NAME` with the name that you want to assign to the site. The name must be *unique with Azure*, so you probably won't be able to use a common name such as "contoso" or "contosotravel" unless you append some random characters to the end.
 
-    ```bash
+    ```console
     az webapp up -n APP_NAME --resource-group contoso-travel-rg --location northcentralus
     ```
 
@@ -38,44 +44,46 @@ In this exercise, you use the Azure CLI to deploy your website to Azure.
 
 Wait for the command to finish; it will take a few minutes. Then confirm from the output that the website was successfully deployed.
 
+
 ## Add application settings
 
 When you ran the website locally, it used `os.environ` to load API keys for the Computer Vision API and the Translator Text API and the URL of the Computer Vision API from local environment variables. For the site to run in Azure, these same settings needed to be added to the application settings in Azure App Service. In the steps that follow, you use the Azure CLI to create these application settings in Azure and initialize them with the same values used when you loaded them into local environment variables.
 
-1. Run the following CLI command to create an application setting named "VISION_API_KEY." Replace `APP_NAME` with the name assigned to your App Service instance and `<computer_vision_api_key>` with your Computer Vision API key.
+1. Run the following Azure CLI command to create an application setting named "VISION_API_KEY." Replace `APP_NAME` with the name assigned to your App Service instance and `<computer_vision_api_key>` with your Computer Vision API key.
 
-    ```bash
+    ```console
     az webapp config appsettings set -g contoso-travel-rg -n APP_NAME --settings VISION_KEY=<computer_vision_api_key>
     ```
 
 1. Now use the following command to create an application setting named "VISION_ENDPOINT." Replace `<computer_vision_endpoint>` with your Computer Vision API endpoint.
 
-    ```bash
+    ```console
     az webapp config appsettings set -g contoso-travel-rg -n APP_NAME --settings VISION_ENDPOINT=<computer_vision_endpoint>
     ```
 
 1. Finish by using the following command to load your Translator Text API key into application settings. Replace `<translate_api_key>` with your key.
 
-    ```bash
+    ```console
     az webapp config appsettings set -g contoso-travel-rg -n APP_NAME --settings TRANSLATE_KEY=<translate_api_key>
     ```
 
 If you want, you can sign in to the Azure portal, open the Azure App Service instance created by the `az webapp up` command, and view the application settings that these commands created. The following screenshot illustrates what you will see if you do.
 
-![View application settings in the Azure portal](../media/app-settings.png#lightbox)
+![Screenshot that shows how to view application settings in the Azure portal.](../media/app-settings.png#lightbox)
 
 _View application settings in the Azure portal_
+
 
 ## Run the site in Azure
 
 Now it's time to see the results of your work.
 
-1. Point your browser to http\:\//APP_NAME.azurewebsites.net, replacing APP_NAME with the name of your App Service instance. Confirm that the site appears in your browser and that it looks exactly as it did when running locally.
+1. Point your browser to http\:\//APP_NAME.azurewebsites.net, and replace `APP_NAME` with the name of your App Service instance. Confirm that the site appears in your browser and that it looks exactly as it did when running locally.
 
-    ![Contoso Travel running in Azure](../media/azure-site.png)
+    ![Screenshot that shows the Contoso Travel web site running in Azure.](../media/azure-site.png)
 
     _Contoso Travel running in Azure_
 
 1. Choose a language and upload a few photos that contain signs with text that you want to translate. Does the site behave the same in Azure as it does when running locally?
 
-If you later make changes to your site and want to update the App Service instance in Azure, run the `az webapp up` command again. Rather than create a new App Service instance, it will zip-deploy the files in the current directory to the existing App Service instance. If you prefer to put the source-code files under source control and deploy them directly from Visual Studio Code, follow the instructions in [Deploy to Azure App Service on Linux](https://code.visualstudio.com/docs/python/tutorial-deploy-app-service-on-linux).
+If you later make changes to your site and want to update the App Service instance in Azure, run the `az webapp up` command again. Rather than create a new App Service instance, it will zip-deploy the files in the current directory to the existing App Service instance. If you prefer to put the source-code files under source control and deploy them directly from Visual Studio Code, follow the instructions in [Deploy to Azure App Service on Linux](https://code.visualstudio.com/docs/python/tutorial-deploy-app-service-on-linux?azure-portal=true).

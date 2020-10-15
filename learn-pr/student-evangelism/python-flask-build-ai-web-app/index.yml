@@ -3,9 +3,9 @@ uid: learn.student-evangelism.python-flask-build-ai-web-app
 metadata:
   title: Build an AI web app by using Python and Flask
   description: Use Python, Flask, and Azure Cognitive Services to build a web app that incorporates AI
-  ms.date: 03/11/2020
+  ms.date: 10/16/2020
   author: GeekTrainer
-  ms.author: chrhar
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-python
 title: Build an AI web app by using Python and Flask
@@ -17,7 +17,10 @@ abstract: |
   - Learn how to use Azure Cognitive Services to extract text from images
   - Learn how to use Azure Cognitive Services to translate text
   - Learn how to deploy a Flask website to Azure
-prerequisites: None
+prerequisites: |
+  - Python 3.6 or later
+  - The Azure CLI
+  - Visual Studio Code
 iconUrl: /learn/achievements/student-evangelism/python-flask-build-ai-web-app-badge.svg
 levels:
 - intermediate

@@ -6,11 +6,13 @@ To meet the client's requests, the website must support the following features:
 - Extracting text from uploaded photos
 - Translating extracted text into the user's language
 
-Just a few years ago, such a feature list would have been unthinkable for most small businesses. Extracting text from photos and translating text into other languages is typically performed through machine learning and artificial intelligence (AI). Where would these capabilities come from? Today, these features and more are readily available in Azure Cognitive Services. Cognitive Services is the Microsoft portfolio of more than 20 services and APIs designed to make AI and machine learning available to anyone who can lay down a few lines of code.
+Just a few years ago, such a feature list would have been unthinkable for most small businesses. Extracting text from photos and translating text into other languages is typically performed through machine learning and artificial intelligence (AI). Where would these capabilities come from? Today, these features and more are readily available in Azure Cognitive Services. Cognitive Services is the Microsoft portfolio of more than 20 services and APIs that are designed to make AI and machine learning available to anyone who can write a few lines of code.
 
-One of these services is the Computer Vision API. The Computer Vision API can not only extract text from photos, but can also identify objects in photos, find faces in photos and predict their age and gender, and more. Another is the Translator Text API. The Translator Text API can translate text between dozens of the world's written languages.
+One of these services is the Computer Vision API that analyzes photos to extract text and identify objects. The API can isolate faces in a photo to predict age, gender, and other information. Another service is the Translator Text API. The Translator Text API can translate text between dozens of the world's written languages.
 
 Using these services, you will produce a website written in Python—already among the world's most popular programming languages—and the Flask framework for Python web applications. This site will translate signage in photos, which is a feature your client can build on to attract new customers and keep existing ones.
+
+Sound like fun? Let's get started.
 
 ## Learning objectives
 
@@ -22,4 +24,8 @@ In this module, you build a website named Contoso Travel step by step. First, yo
 - Learn how to use the Translator Text API to translate text extracted from photos.
 - Learn how to deploy the application to Azure.
 
-Sound like fun? Let's get started.
+## Prerequisites
+
+- Python 3.6 or later. Follow the steps in the [Install Python 3](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true) module. At the top of the article, choose the instructions for your configuration: Windows, Linux, or macOS.
+- The Azure CLI.
+- Visual Studio Code.
