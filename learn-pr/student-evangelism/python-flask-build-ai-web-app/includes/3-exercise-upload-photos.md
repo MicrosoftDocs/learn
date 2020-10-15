@@ -2,30 +2,25 @@ Now that you have an environment for Python and Flask prepared and have the basi
 
 Resources that are used in this exercise are located in a [Git repository for code samples](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask?azure-portal=true).
 
-## Create a site that supports photo uploads
-
 We'll start by creating a website that supports uploading photos. You'll need Git installed on your computer. If Git isn't installed, go to the [Git website](https://git-scm.com/?azure-portal=true) and install it now. Versions are available for Windows, macOS, and Linux.
 
 
-### Reactivate your Python virtual environment
+### Reactivate your virtual environment
 
-> Only complete the steps in this section if you closed the Command Prompt window or terminal where you were running your Python virtual environment. Otherwise, continue to the next section, [Clone the GitHub repo](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/3-exercise-upload-photos?azure-portal=true). <!-- #clone-the-github-repo -->
+> Only complete the steps in this section if you closed the Command Prompt window or terminal where you were running your Python virtual environment. Otherwise, continue to the next section, "Clone the GitHub repo."
 
-1. Open a new Command Prompt window or terminal, and change the current directory (`cd`) to your [project directory](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/1-exercise-set-up-environment?azure-portal=true). 
-<!-- #create-the-project-directory -->
+If you closed your Command Prompt window or terminal, you need to configure a new window or terminal to use your existing Python virtual environment.
 
-1. Reactivate your [Python virtual environment](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/1-exercise-set-up-environment?azure-portal=true). 
-<!-- activate-your-virtual-environment -->
+1. Open a new Command Prompt window or terminal. Change (`cd`) to your project directory. For reference, see the section "Create the project directory" in the [Exercise - Set up a development environment](../../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #create-the-project-directory -->
+
+1. Reactivate your Python virtual environment. For reference, see the section "Activate your virtual environment" in the [Exercise - Set up a development environment](../../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #activate-your-virtual-environment -->
 
 
-### Clone the GitHub repo
+## Clone the GitHub repo
 
 We need to clone the GitHub repo that has the starter files for the website.
 
-1. Return to your Command Prompt window or terminal.
-Change (`cd`) to the [project directory](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/3-exercise-upload-photos?azure-portal=true). <!-- #clone-the-github-repo -->
-
-1. Open a new Command Prompt window or terminal, and change the current directory (`cd`) to your [project directory](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/1-exercise-set-up-environment?azure-portal=true) <!-- create-the-project-directory --> that you created earlier.
+1. Return to your Command Prompt window or terminal. Change (`cd`) to your project directory.
 
 1. Use the following command to clone the GitHub repo that has the starter files for the website:
 
@@ -48,7 +43,7 @@ Change (`cd`) to the [project directory](https://docs.microsoft.com/learn/module
     cd starter
     ```
 
-> You might notice that there's also a **final** folder. The code in the final folder is the finished version of what you'll build. If you get confused at any point while writing code, feel free to check this folder for what your code should look like.
+> You might notice there's also a folder named **final**. The code in the final folder is the finished version of what you'll build. If you get confused at any point while writing code, feel free to check this folder for what your code should look like.
 
 
 Take a moment to browse through the files that were copied into the **starter** folder. Confirm that you see the following files:
@@ -75,13 +70,15 @@ def index():
 Currently, the app consists of a single page named **index.html** that's located in the **templates** subfolder. **index.html** doesn't contain any special expressions. Right now it's simply a static file, but that will change as you develop the site. **index.html** loads the popular Bootstrap framework and uses it to make the page responsive. It also loads **main.css** from the **static** subfolder and uses the CSS styles defined there to give the page a professional look.
 
 
-### Start Flask
+### Set the Flask environment variable
 
-Now we're ready to start using Flask.
+To use Flask, you need an environment variable to tell Flask where to run. For the Contoso Travel website, we'll set Flask to run in development mode.
 
-1. In your Command Prompt window or terminal, make sure the current directory is still set to **mslearn-build-ai-web-app-with-python-and-flask/src/starter** in your [project directory](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/1-exercise-set-up-environment?azure-portal=true). <!-- #create-the-project-directory -->
+Running Flask in development mode is helpful when you're working on a website. Flask automatically reloads any files that change while the site is running. If you let Flask default to production mode and change the contents of an HTML file or another asset, you have to restart Flask to see the change in your browser.
 
-1. Run the following command to create an environment variable named **FLASK_ENV**. This variable tells Flask to run in development mode. Note there's no output message to confirm the Flask environment variable is created.
+1. In your Command Prompt window or terminal, make sure the current directory is still set to **mslearn-build-ai-web-app-with-python-and-flask/src/starter** in your project directory.
+
+1. Run the following command to create an environment variable named **FLASK_ENV**. Note there's no output message to confirm the Flask environment variable is created.
 
     **Windows**
 
@@ -95,26 +92,27 @@ Now we're ready to start using Flask.
     export FLASK_ENV=development
     ```
 
-    Running Flask in development mode is helpful when you're working on a website. Flask automatically reloads any files that change while the site is running. If you let Flask default to production mode and change the contents of an HTML file or another asset, you have to restart Flask to see the change in your browser.
 
-1. Use the following command to start Flask:
+### Start Flask
 
-    ```console
-    flask run
-    ```
+Now you're ready to use Flask. Enter the following command to start Flask:
+
+```console
+flask run
+```
    
-    The process can take a few seconds. When Flask is running successfully, you'll see an output message with details about your environment:
+The process can take a few seconds. When Flask is running successfully, you'll see an output message with details about your environment:
 
-    ```output
-     * Environment: development
-     * Debug mode: on
-     * Restarting with stat
-     * Debugger is active!
-     * Debugger PIN: 123-456-789
-     * Running on http://111.0.0.1:5000/ (Press CTRL+C to quit)
-     ```
+```output
+* Environment: development
+* Debug mode: on
+* Restarting with stat
+* Debugger is active!
+* Debugger PIN: 123-456-789
+* Running on http://111.0.0.1:5000/ (Press CTRL+C to quit)
+```
 
-     While Flask is running, the command prompt isn't available for other commands.
+While Flask is running, the command prompt isn't available for other commands.
 
 Now that Flask is running, you can check out your website. Open a browser and go to `http://localhost:5000/`. Confirm that the website appears in the browser as shown in this screenshot:
 
@@ -221,7 +219,7 @@ Finish by saving your changes to the **index.html** and **app.py** files. It's t
 
 Let's make sure your changes have the desired effect by uploading a photo to the site.
 
-1. Return to your Command Prompt window or terminal. Make sure the current directory is still set to **mslearn-build-ai-web-app-with-python-and-flask/src/starter** in your [project directory](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/1-exercise-set-up-environment?azure-portal=true). <!-- #create-the-project-directory -->
+1. Return to your Command Prompt window or terminal. Make sure the current directory is still set to **mslearn-build-ai-web-app-with-python-and-flask/src/starter** in your project directory.
 
 1. In your Command Prompt window or terminal, restart Flask:
 

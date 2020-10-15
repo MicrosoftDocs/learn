@@ -7,21 +7,32 @@ It's not as hard as it sounds, as you will prove when you modify the Contoso Tra
 Resources that are used in this exercise are located in a [Git repository for code samples](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask?azure-portal=true).
 
 
+### Reactivate your virtual environment
+
+> Only complete the steps in this section if you closed the Command Prompt window or terminal where you were running your Python virtual environment. Otherwise, continue to the next section, "Subscribe to the Translator Text API."
+
+If you closed your Command Prompt window or terminal, you need to configure a new window or terminal to use your existing Python virtual environment. The environment variables also need to be recreated.
+
+1. Open a new Command Prompt window or terminal. Change (`cd`) to your project directory. For details, see the section "Create the project directory" in the [Exercise - Set up a development environment](../../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #create-the-project-directory -->
+
+1. Reactivate your Python virtual environment. For details, see the section "Activate your virtual environment" in the [Exercise - Set up a development environment](../../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #activate-your-virtual-environment -->
+ 
+1. Reset the **FLASK_ENV** environment variable. For details, see the section "Set the Flask environment variable" in the [Exercise - Build a page for uploading photos](../../3-exercise-upload-photos?azure-portal=true) unit. <!-- #set-the-flask-environment-variable -->
+
+1. Reset the **VISION_KEY** and **VISION_ENDPOINT** environment variables. For details, see the section "Set Computer Vision environment variables" in the [Exercise - Use Cognitive Services to extract text from photos](../../4-exercise-extract-text?azure-portal=true) unit. <!-- #set-computer-vision-environment-variables -->
+
+
 ## Subscribe to the Translator Text API
 
 To call the Translator Text API, you must obtain an API key. As with the Computer Vision API, this key travels in each request that you place to the Translator Text API in an `Ocp-Apim-Subscription-Key` header and maps calls to Azure subscriptions.
 
-> [!Note]
-> If you closed your Command Prompt window or terminal, follow the steps to [Set up a Command Prompt window or terminal](./3-exercise-upload-photos#open-and-configure-a-command-prompt-window-or-terminal?azure-portal=true).
-
-In your Command Prompt window or terminal, use the following command to subscribe to the Translator Text API. A new resource named **translator-text** will be added to the [resource group](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/4-exercise-extract-text?azure-portal=true) 
-<!-- #create-the-resource-group --> that you created earlier.
+In your Command Prompt window or terminal, use the following command to subscribe to the Translator Text API. A new resource named **translator-text** will be added to the resource group that you created earlier in the [Exercise - Use Cognitive Services to extract text from photos](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/4-exercise-extract-text?azure-portal=true) unit. <!-- #create-the-resource-group --> 
 
 ```console
 az cognitiveservices account create --resource-group contoso-travel-rg --name translator-text --location global --kind TextTranslation --sku F0 --yes
 ```
 
-Unlike the Computer Vision API, which requires you to specify an Azure region, the Translator Text API is a "global" API that doesn't live in a specific region. That's the reason for the `--location global` parameter. Among other things, you don't have to retrieve an endpoint URL for the Translator Text API as you do for the Computer Vision API. One endpoint, <https://api.cognitive.microsofttranslator.com/translate?api-version=3.0>, serves all regions.
+Unlike the Computer Vision API, which requires you to specify an Azure region, the Translator Text API is a "global" API that doesn't live in a specific region. That's the reason for the `--location global` parameter. Among other things, you don't have to retrieve an endpoint URL for the Translator Text API as you do for the Computer Vision API. One endpoint, `https://api.cognitive.microsofttranslator.com/translate?api-version=3.0`, serves all regions.
 
 
 ### Get an API key for the Translator Text API
@@ -213,12 +224,11 @@ An interesting aspect of this code is that if the call to the Computer Vision AP
 Save your changes to the **index.html** and **app.py** files.
 
 
-## Set Translation environment variable
+## Set the Translation environment variable
 
 Now we need to set a local environment variable that corresponds to the Translator Text API key.
 
-Return to your Command Prompt window or terminal. In the following command, replace `<translator_text_api_key>` with [your translation key](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/5-exercise-translate-text?azure-portal=true). 
-<!-- #get-an-api-key-for-the-translator-text-api -->
+Return to your Command Prompt window or terminal. In the following command, replace `<translator_text_api_key>` with [your translation key](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/5-exercise-translate-text?azure-portal=true). <!-- #get-an-api-key-for-the-translator-text-api -->
 
 - **Windows**
 
@@ -237,8 +247,7 @@ Return to your Command Prompt window or terminal. In the following command, repl
 
 The final step is to test the changes that you made by uploading photos to the site and allowing the Translator Text API to translate the text in them.
 
-1. In your Command Prompt window or terminal, make sure the current directory is still set to **mslearn-build-ai-web-app-with-python-and-flask/src/starter** in your [project directory](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/1-exercise-set-up-environment?azure-portal=true). 
-<!-- #create-the-project-directory --> Then restart Flask:
+1. In your Command Prompt window or terminal, make sure the current directory is still set to **mslearn-build-ai-web-app-with-python-and-flask/src/starter** in your [project directory](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/1-exercise-set-up-environment?azure-portal=true). <!-- #create-the-project-directory --> Then restart Flask:
 
     ```console
     flask run

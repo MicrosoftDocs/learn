@@ -9,7 +9,7 @@ In this unit, you'll learn how to create a virtual Python environment. You'll in
 > It's important to do all of your work in the same Python virtual environment that you create at the beginning of this module.
 >
 
-## Create a Python virtual environment
+## Use a Python virtual environment
 
 To run Flask websites on your computer, both Flask and Python must be installed. In this exercise, you create a virtual Python environment that isolates the packages you install from other items on your computer. Then you install Flask and the Python SDK for the Computer Vision API in that environment.
 
@@ -117,7 +117,7 @@ In your Command Prompt window or terminal, enter the following command to activa
 After you run the `activate` command, you'll notice that the prompt changes. The prompt now begins with a prefix enclosed in parenthesis. The prefix is the name of your virtual environment. The special prompt helps to remind you that you're working in a virtual environment.
 
 
-### Install Flask
+## Install Flask
 
 The next step is to install Flask in your virtual environment. 
 
@@ -136,7 +136,8 @@ The command downloads the required packages: Flask, Werkzeug, Jinja, click, itsd
 > - **macOS or Linux**: In your terminal, enter the command  `python3 -m pip install --user --upgrade pip`.
 >
 
-### Install the Computer Vision API    
+
+## Install the Computer Vision API    
 
 Now install the Python SDK for the Azure Cognitive Services Computer Vision API in your virtual environment.
 

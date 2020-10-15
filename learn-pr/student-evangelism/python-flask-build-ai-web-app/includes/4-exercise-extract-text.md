@@ -1,7 +1,7 @@
 Azure Cognitive Services is a set of more than 20 services and APIs for infusing intelligence backed by machine learning and neural networks into the applications that you write. One member of the Cognitive Services family is the Computer Vision API, which can analyze images uploaded to the service. The API supports the following actions:
 
 - Identify objects in images.
-- Generate captions for images (for example, "A woman riding a bicycle").
+- Generate captions for images (for example, "A child riding a bicycle").
 - Use optical character recognition (OCR) to extract text from images.
 - Find faces in images and identify facial attributes like age and gender.
 - Generate "smart thumbnails" centered on the subjects of images. 
@@ -14,22 +14,31 @@ The OCR feature of the Computer Vision API will enable the Contoso Travel websit
 Resources that are used in this exercise are located in a [Git repository for code samples](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask).
 
 
+### Reactivate your virtual environment
+
+> Only complete the steps in this section if you closed the Command Prompt window or terminal where you were running your Python virtual environment. Otherwise, continue to the next section, "Subscribe to the Computer Vision API."
+
+If you closed your Command Prompt window or terminal, you need to configure a new window or terminal to use your existing Python virtual environment. The Flask environment variable also needs to be recreated.
+
+1. Open a new Command Prompt window or terminal. Change (`cd`) to your project directory. For details, see the section "Create the project directory" in the [Exercise - Set up a development environment](../../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #create-the-project-directory -->
+
+1. Reactivate your Python virtual environment. For details, see the section "Activate your virtual environment" in the [Exercise - Set up a development environment](../../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #activate-your-virtual-environment -->
+ 
+1. Reset the **FLASK_ENV** environment variable. For details, see the section "Set the Flask environment variable" in the [Exercise - Build a page for uploading photos](../../3-exercise-upload-photos?azure-portal=true) unit. <!-- #set-the-flask-environment-variable -->
+
+
 ## Subscribe to the Computer Vision API
 
 To call the Computer Vision API, you must first obtain an API key. This key travels in each request you place to the Computer Vision API in an HTTP header named `Ocp-Apim-Subscription-Key`. Azure uses the key to authenticate the caller and determine which Azure subscription to bill calls to. Most Azure Cognitive Services APIs have free tiers for which no billing is performed. But if you plan to place thousands of calls a day to a Cognitive Services API, you'll be billed for it through your Azure subscription.
 
 You can get a Computer Vision API key by using the Azure CLI or the Azure portal. In this exercise, you'll get an API key and a corresponding URL for placing calls to the Computer Vision API with that key by using the Azure CLI.
 
-> [!Note]
-> If you closed your Command Prompt window or terminal, follow the steps to [Set up a Command Prompt window or terminal](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/3-exercise-upload-photos?azure-portal=true). 
-<!-- #open-and-configure-a-command-prompt-window-or-terminal -->
-
 
 ### Install and sign into the Azure CLI
 
 To complete the steps in this unit, the Azure CLI needs to be installed and you must be signed in.
 
-If you haven't installed the Azure CLI, see the instructions for how to [Install the Azure CLI](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/1-exercise-set-up-environment?azure-portal=true) <!-- #install-the-azure-cli --> in an earlier unit. After you complete the install, sign in with your Microsoft account.
+If you haven't installed the Azure CLI, see the instructions for how to "Install the Azure CLI" in the [Exercise - Set up a development environment](../../1-exercise-set-up-environment?azure-portal=true) unit. After you complete the install, sign in with your Microsoft account. <!-- #install-the-azure-cli --> 
 
 
 ### Create the resource group
@@ -51,7 +60,7 @@ Now use the following command to subscribe to the Computer Vision API. A new res
 az cognitiveservices account create --resource-group contoso-travel-rg --name computer-vision --location northcentralus --kind ComputerVision --sku F0 --yes
 ```
 
-The `--sku F0` parameter subscribes to the free tier of the Computer Vision API that allows up to 20 calls per minute and a maximum of 5,000 calls per month. This approach is fine for development, but in production, you would want to subscribe to one of the paid tiers that support more traffic. For a summation of pricing tiers for the Computer Vision API, see [Cognitive Services pricing - Computer Vision API](https://azure.microsoft.com/pricing/details/cognitive-services/computer-vision/).
+The `--sku F0` parameter subscribes to the free tier of the Computer Vision API that allows up to 20 calls per minute and a maximum of 5,000 calls per month. This approach is fine for development, but in production, you would want to subscribe to one of the paid tiers that support more traffic. For a summation of pricing tiers for the Computer Vision API, see [Cognitive Services pricing - Computer Vision API](https://azure.microsoft.com/pricing/details/cognitive-services/computer-vision/?azure-portal=true).
 
 
 ### Get an API key for the Computer Vision API
@@ -205,8 +214,7 @@ Save your changes to the **index.html** and **app.py** files.
 
 Now we need to set two local environment variables that correspond to the Computer Vision API key and the URL endpoint.
 
-Return to your Command Prompt window or terminal. In the following command, replace `<computer_vision_api_key>` with [your API key](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/4-exercise-extract-text?azure-portal=true) 
-<!-- #get-an-api-key-for-the-computer-vision-api --> and `<computer_vision_endpoint>` with [your endpoint URL](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/4-exercise-extract-text?azure-portal=true). <!-- #get-an-endpoint-url-to-call-the-computer-vision-api -->
+Return to your Command Prompt window or terminal. In the following command, replace `<computer_vision_api_key>` with your API key and `<computer_vision_endpoint>` with your endpoint URL. For details, see the earlier sections "Get an API key for the Computer Vision API" and "Get an endpoint URL to call the Computer Vision API." <!-- #get-an-api-key-for-the-computer-vision-api AND #get-an-endpoint-url-to-call-the-computer-vision-api -->
 
 - **Windows**
 
@@ -229,8 +237,7 @@ When your website is running locally, calls to the `os.environ` mapping object w
 
 Now let's run the modified website, upload a few photos, and try out the Computer Vision API.
 
-1. In your Command Prompt window or terminal, make sure the current directory is still set to **mslearn-build-ai-web-app-with-python-and-flask/src/starter** in your [project directory](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/1-exercise-set-up-environment?azure-portal=true). 
-<!-- #create-the-project-directory --> Then restart Flask:
+1. In your Command Prompt window or terminal, make sure the current directory is still set to **mslearn-build-ai-web-app-with-python-and-flask/src/starter** in your project directory. Then restart Flask:
 
     ```console
     flask run
