@@ -20,7 +20,7 @@ In this exercise, you'll use a custom script extension to roll out a new version
         --query upgradePolicy.mode
     ```
 
-    Verify that the upgrade policy is set to `Rolling`. You specified this policy when you created the scale set in the first lab. If the policy were `Manual`, you would apply any VM changes by hand. Because the policy is `Rolling`, you can use the custom script extension and allow the scale set to do the update.
+    Verify that the upgrade policy is set to `Automatic`. You specified this policy when you created the scale set in the first lab. If the policy were `Manual`, you would apply any VM changes by hand. Because the policy is `Automatic`, you can use the custom script extension and allow the scale set to do the update.
 
 1. Run the following command to apply the update script:
 
