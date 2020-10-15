@@ -2,6 +2,6 @@ Endpoint analytics aims to improve user productivity and reduce IT support costs
 
 Endpoint analytics is also a part of the [Microsoft Productivity Score](/microsoft-365/admin/productivity/productivity-score?azure-portal=true). The Productivity Score provides productivity data, insights, and recommendations for your end user's experience and your organization's overall technology experience.
 
-In the following screenshot displays the Desktop Analytics pane:
+The following screenshot displays the Endpoint analytics pane:
 
 ![Screenshot of Endpoint analytics pane](../media/intro-to-endpoint-manager-11.png)
