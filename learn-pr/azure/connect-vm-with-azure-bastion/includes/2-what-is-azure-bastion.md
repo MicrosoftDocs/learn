@@ -6,9 +6,13 @@ Bastion allows you to easily open a RDP or SSH session from the Azure portal to 
 
 Because Bastion is a fully managed platform PaaS service, you don't need to apply any network security groups to the Azure Bastion subnet. But if you want additional security, you can configure your NSGs to allow RDP and SSH from Azure Bastion only.
 
-Bastion provides RDP and SSH connectivity to all VMs on same virtual network or on a peered virtual network as the Bastion subnet. You don't need to install an additional client, agent, or software to use Bastion.
+Bastion provides RDP and SSH connectivity to all VMs on same virtual network or on a peered virtual network as the Bastion subnet. You don't need to install an additional client, agent, or software to use Bastion. 
 
-<!--Add in diagram - update diagram so it's numbered and has a flow-->
+After you deploy Bastion, on the VM overview page, select **Connect** > **Bastion** > **Use Bastion** and then enter the sign in credentials for the VM to connect.
+
+:::image type="content" source="../media/2-connect-bastion-enter-credentials.png" alt-text="Screenshot of the Bastion page that prompts you to enter username and password for the VM.":::
+
+
    ***Security points***
 
 
