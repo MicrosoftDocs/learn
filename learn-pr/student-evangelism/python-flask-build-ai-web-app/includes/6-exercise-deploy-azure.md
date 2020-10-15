@@ -11,19 +11,20 @@ Resources that are used in this exercise are located in a [Git repository for co
 
 ### Reactivate your virtual environment
 
-> Only complete the steps in this section if you closed the Command Prompt window or terminal where you were running your Python virtual environment. Otherwise, continue to the next section, "Create an Azure App Service instance."
-
-If you closed your Command Prompt window or terminal, you need to configure a new window or terminal to use your existing Python virtual environment. The environment variables also need to be recreated.
-
-1. Open a new Command Prompt window or terminal. Change (`cd`) to your project directory. For details, see the section "Create the project directory" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #create-the-project-directory -->
-
-1. Reactivate your Python virtual environment. For details, see the section "Activate your virtual environment" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #activate-your-virtual-environment -->
- 
-1. Reset the **FLASK_ENV** environment variable. For details, see the section "Set the Flask environment variable" in the [Exercise - Build a page for uploading photos](../3-exercise-upload-photos?azure-portal=true) unit. <!-- #set-the-flask-environment-variable -->
-
-1. Reset the **VISION_KEY** and **VISION_ENDPOINT** environment variables. For details, see the section "Set Computer Vision environment variables" in the [Exercise - Use Cognitive Services to extract text from photos](../4-exercise-extract-text?azure-portal=true) unit. <!-- #set-computer-vision-environment-variables -->
-
-1. Reset the **TRANSLATE_KEY** environment variable. For details, see the section "Set the Translation environment variable" in the [Exercise - Use Cognitive Services to translate text](../5-exercise-translate-text?azure-portal=true) unit. <!-- #set-the-translation-environment-variable -->
+> _Only complete the steps in this section if you closed the Command Prompt window or terminal where you were running your Python virtual environment. Otherwise, continue to the next section, "Create an Azure App Service instance."_
+>
+> If you closed your Command Prompt window or terminal, you need to configure a new window or terminal to use your existing Python virtual environment. The environment variables also need to be recreated.
+>
+> 1. Open a new Command Prompt window or terminal. Change (`cd`) to your project directory. For details, see the section "Create the project directory" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment.yml?azure-portal=true) unit. <!-- #create-the-project-directory -->
+>
+> 1. Reactivate your Python virtual environment. For details, see the section "Activate your virtual environment" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment.yml?azure-portal=true) unit. <!-- #activate-your-virtual-environment -->
+> 
+> 1. Reset the **FLASK_ENV** environment variable. For details, see the section "Set the Flask environment variable" in the [Exercise - Build a page for uploading photos](../3-exercise-upload-photos.yml?azure-portal=true) unit. <!-- #set-the-flask-environment-variable -->
+>
+> 1. Reset the **VISION_KEY** and **VISION_ENDPOINT** environment variables. For details, see the section "Set Computer Vision environment variables" in the [Exercise - Use Cognitive Services to extract text from photos](../4-exercise-extract-text.yml?azure-portal=true) unit. <!-- #set-computer-vision-environment-variables -->
+>
+> 1. Reset the **TRANSLATE_KEY** environment variable. For details, see the section "Set the Translation environment variable" in the [Exercise - Use Cognitive Services to translate text](../5-exercise-translate-text.yml?azure-portal=true) unit. <!-- #set-the-translation-environment-variable -->
+>
 
 
 ## Create an Azure App Service instance

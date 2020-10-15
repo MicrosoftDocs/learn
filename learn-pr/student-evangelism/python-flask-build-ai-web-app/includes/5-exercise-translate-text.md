@@ -9,24 +9,25 @@ Resources that are used in this exercise are located in a [Git repository for co
 
 ### Reactivate your virtual environment
 
-> Only complete the steps in this section if you closed the Command Prompt window or terminal where you were running your Python virtual environment. Otherwise, continue to the next section, "Subscribe to the Translator Text API."
-
-If you closed your Command Prompt window or terminal, you need to configure a new window or terminal to use your existing Python virtual environment. The environment variables also need to be recreated.
-
-1. Open a new Command Prompt window or terminal. Change (`cd`) to your project directory. For details, see the section "Create the project directory" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #create-the-project-directory -->
-
-1. Reactivate your Python virtual environment. For details, see the section "Activate your virtual environment" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #activate-your-virtual-environment -->
- 
-1. Reset the **FLASK_ENV** environment variable. For details, see the section "Set the Flask environment variable" in the [Exercise - Build a page for uploading photos](../3-exercise-upload-photos?azure-portal=true) unit. <!-- #set-the-flask-environment-variable -->
-
-1. Reset the **VISION_KEY** and **VISION_ENDPOINT** environment variables. For details, see the section "Set Computer Vision environment variables" in the [Exercise - Use Cognitive Services to extract text from photos](../4-exercise-extract-text?azure-portal=true) unit. <!-- #set-computer-vision-environment-variables -->
+> _Only complete the steps in this section if you closed the Command Prompt window or terminal where you were running your Python virtual environment. Otherwise, continue to the next section, "Subscribe to the Translator Text API."_
+>
+> If you closed your Command Prompt window or terminal, you need to configure a new window or terminal to use your existing Python virtual environment. The environment variables also need to be recreated.
+> 
+> 1. Open a new Command Prompt window or terminal. Change (`cd`) to your project directory. For details, see the section "Create the project directory" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment.yml?azure-portal=true) unit. <!-- #create-the-project-directory -->
+>
+> 1. Reactivate your Python virtual environment. For details, see the section "Activate your virtual environment" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment.yml?azure-portal=true) unit. <!-- #activate-your-virtual-environment -->
+> 
+> 1. Reset the **FLASK_ENV** environment variable. For details, see the section "Set the Flask environment variable" in the [Exercise - Build a page for uploading photos](../3-exercise-upload-photos.yml?azure-portal=true) unit. <!-- #set-the-flask-environment-variable -->
+>
+> 1. Reset the **VISION_KEY** and **VISION_ENDPOINT** environment variables. For details, see the section "Set Computer Vision environment variables" in the [Exercise - Use Cognitive Services to extract text from photos](../4-exercise-extract-text.yml?azure-portal=true) unit. <!-- #set-computer-vision-environment-variables -->
+>
 
 
 ## Subscribe to the Translator Text API
 
 To call the Translator Text API, you must obtain an API key. As with the Computer Vision API, this key travels in each request that you place to the Translator Text API in an `Ocp-Apim-Subscription-Key` header and maps calls to Azure subscriptions.
 
-In your Command Prompt window or terminal, use the following command to subscribe to the Translator Text API. A new resource named **translator-text** will be added to the resource group that you created earlier in the [Exercise - Use Cognitive Services to extract text from photos](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/4-exercise-extract-text?azure-portal=true) unit. <!-- #create-the-resource-group --> 
+In your Command Prompt window or terminal, use the following command to subscribe to the Translator Text API. A new resource named **translator-text** will be added to the resource group that you created earlier in the [Exercise - Use Cognitive Services to extract text from photos](../4-exercise-extract-text.yml?azure-portal=true) unit. <!-- #create-the-resource-group --> 
 
 ```console
 az cognitiveservices account create --resource-group contoso-travel-rg --name translator-text --location global --kind TextTranslation --sku F0 --yes
@@ -46,6 +47,23 @@ az cognitiveservices account keys list --resource-group contoso-travel-rg --name
 The output from the command is a string that contains numbers and letters. **This value is your Translator Text API key**. Copy the key to a text file and save it so you can easily retrieve it. You'll need the key later in this unit and in a subsequent unit.
 
 This API key uses the Text Translator API's free tier (`--sku F0`), which supports translating up to 2 million characters of text per month. In a production environment, you would want to subscribe to one of the [paid tiers](https://azure.microsoft.com/pricing/details/cognitive-services/translator-text-api/?azure-portal=true).
+
+
+### Set the Translation environment variable
+
+Now you need to set a local environment variable that corresponds to the Translator Text API key. In the following command, replace `<translator_text_api_key>` with your translation key.
+
+**Windows**
+
+```command
+set TRANSLATE_KEY=<translator_text_api_key>
+```
+
+**macOS or Linux**
+
+```console
+export TRANSLATE_KEY=<translator_text_api_key>
+```
 
 
 ## Modify the site to use the Translator Text API
@@ -224,30 +242,11 @@ An interesting aspect of this code is that if the call to the Computer Vision AP
 Save your changes to the **index.html** and **app.py** files.
 
 
-## Set the Translation environment variable
-
-Now we need to set a local environment variable that corresponds to the Translator Text API key.
-
-Return to your Command Prompt window or terminal. In the following command, replace `<translator_text_api_key>` with [your translation key](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/5-exercise-translate-text?azure-portal=true). <!-- #get-an-api-key-for-the-translator-text-api -->
-
-- **Windows**
-
-   ```command
-   set TRANSLATE_KEY=<translator_text_api_key>
-   ```
-
-- **macOS or Linux**
-
-   ```console
-   export TRANSLATE_KEY=<translator_text_api_key>
-   ```
-
-
 ## Translate text extracted from photos
 
 The final step is to test the changes that you made by uploading photos to the site and allowing the Translator Text API to translate the text in them.
 
-1. In your Command Prompt window or terminal, make sure the current directory is still set to **mslearn-build-ai-web-app-with-python-and-flask/src/starter** in your [project directory](https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/1-exercise-set-up-environment?azure-portal=true). <!-- #create-the-project-directory --> Then restart Flask:
+1. In your Command Prompt window or terminal, make sure the current directory is still set to **mslearn-build-ai-web-app-with-python-and-flask/src/starter** in your project directory. Then restart Flask:
 
     ```console
     flask run

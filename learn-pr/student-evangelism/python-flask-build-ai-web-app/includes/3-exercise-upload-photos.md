@@ -7,14 +7,14 @@ We'll start by creating a website that supports uploading photos. You'll need Gi
 
 ### Reactivate your virtual environment
 
-> Only complete the steps in this section if you closed the Command Prompt window or terminal where you were running your Python virtual environment. Otherwise, continue to the next section, "Clone the GitHub repo."
-
-If you closed your Command Prompt window or terminal, you need to configure a new window or terminal to use your existing Python virtual environment.
-
-1. Open a new Command Prompt window or terminal. Change (`cd`) to your project directory. For reference, see the section "Create the project directory" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #create-the-project-directory -->
-
-1. Reactivate your Python virtual environment. For reference, see the section "Activate your virtual environment" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #activate-your-virtual-environment -->
-
+> _Only complete the steps in this section if you closed the Command Prompt window or terminal where you were running your Python virtual environment. Otherwise, continue to the next section, "Clone the GitHub repo."_
+>
+> If you closed your Command Prompt window or terminal, you need to configure a new window or terminal to use your existing Python virtual environment.
+>
+> 1. Open a new Command Prompt window or terminal. Change (`cd`) to your project directory. For reference, see the section "Create the project directory" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment.yml?azure-portal=true) unit. <!-- #create-the-project-directory -->
+>
+> 1. Reactivate your Python virtual environment. For reference, see the section "Activate your virtual environment" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment.yml?azure-portal=true) unit. <!-- #activate-your-virtual-environment -->
+>
 
 ## Clone the GitHub repo
 
