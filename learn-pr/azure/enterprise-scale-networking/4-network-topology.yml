@@ -20,14 +20,14 @@ quiz:
     choices:
     - content: 'Implement a hub and spoke network.'
       isCorrect: false
-      explanation: "This doesn't meet the requiremens for firewall and branch office connectivity."
+      explanation: "This doesn't meet the requirements for firewall and branch office connectivity."
     - content: 'Implement Virtual Wan with Secured Hubs (Azure Firewall).'
       isCorrect: true
       explanation: 'Virtual WAN is the preferred solution because of the branch office connectivity needs and Secure Hub capability.'
     - content: 'Use only one very large virtual network. Deploy Azure Firewall into that virtual network and all services for that region.'
       isCorrect: false
       explanation: "This doesn't meet the branch office connectivity requirements."
-    - content: 'Deploy Virtual WAN'
+    - content: 'Deploy Virtual WAN.'
       isCorrect: false
       explanation: "Virtual WAN is part of the solution but doen't meet the firewall requirement."
 
