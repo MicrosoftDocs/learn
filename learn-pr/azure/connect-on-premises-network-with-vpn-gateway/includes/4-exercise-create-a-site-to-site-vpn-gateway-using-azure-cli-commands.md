@@ -175,7 +175,7 @@ Let's confirm that the VPN tunnels are connected.
         --query '{Name:name,ConnectionStatus:connectionStatus}'
     ```
 
-    You should see output like below indicating the connection is successful. If the `ConnectionStatus` shows as `Connecting`, wait a minute or two and rerun the command. The connections can take a few minutes to fully connect.
+    You should see output like below indicating the connection is successful. If the `ConnectionStatus` shows as `Connecting` or `Unknown`, wait a minute or two and rerun the command. The connections can take a few minutes to fully connect.
 
     ```output
     Name                        ConnectionStatus
