@@ -55,7 +55,7 @@ Now you need to set a local environment variable that corresponds to the Transla
 
 **Windows**
 
-```command
+```console
 set TRANSLATE_KEY=<translator_text_api_key>
 ```
 
