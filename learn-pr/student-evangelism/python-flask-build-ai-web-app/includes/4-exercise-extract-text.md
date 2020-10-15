@@ -20,11 +20,11 @@ Resources that are used in this exercise are located in a [Git repository for co
 
 If you closed your Command Prompt window or terminal, you need to configure a new window or terminal to use your existing Python virtual environment. The Flask environment variable also needs to be recreated.
 
-1. Open a new Command Prompt window or terminal. Change (`cd`) to your project directory. For details, see the section "Create the project directory" in the [Exercise - Set up a development environment](../../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #create-the-project-directory -->
+1. Open a new Command Prompt window or terminal. Change (`cd`) to your project directory. For details, see the section "Create the project directory" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #create-the-project-directory -->
 
-1. Reactivate your Python virtual environment. For details, see the section "Activate your virtual environment" in the [Exercise - Set up a development environment](../../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #activate-your-virtual-environment -->
+1. Reactivate your Python virtual environment. For details, see the section "Activate your virtual environment" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #activate-your-virtual-environment -->
  
-1. Reset the **FLASK_ENV** environment variable. For details, see the section "Set the Flask environment variable" in the [Exercise - Build a page for uploading photos](../../3-exercise-upload-photos?azure-portal=true) unit. <!-- #set-the-flask-environment-variable -->
+1. Reset the **FLASK_ENV** environment variable. For details, see the section "Set the Flask environment variable" in the [Exercise - Build a page for uploading photos](../3-exercise-upload-photos?azure-portal=true) unit. <!-- #set-the-flask-environment-variable -->
 
 
 ## Subscribe to the Computer Vision API
@@ -38,7 +38,7 @@ You can get a Computer Vision API key by using the Azure CLI or the Azure portal
 
 To complete the steps in this unit, the Azure CLI needs to be installed and you must be signed in.
 
-If you haven't installed the Azure CLI, see the instructions for how to "Install the Azure CLI" in the [Exercise - Set up a development environment](../../1-exercise-set-up-environment?azure-portal=true) unit. After you complete the install, sign in with your Microsoft account. <!-- #install-the-azure-cli --> 
+If you haven't installed the Azure CLI, see the instructions for how to "Install the Azure CLI" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment?azure-portal=true) unit. After you complete the install, sign in with your Microsoft account. <!-- #install-the-azure-cli --> 
 
 
 ### Create the resource group

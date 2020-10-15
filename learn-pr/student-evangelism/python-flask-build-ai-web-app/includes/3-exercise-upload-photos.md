@@ -11,9 +11,9 @@ We'll start by creating a website that supports uploading photos. You'll need Gi
 
 If you closed your Command Prompt window or terminal, you need to configure a new window or terminal to use your existing Python virtual environment.
 
-1. Open a new Command Prompt window or terminal. Change (`cd`) to your project directory. For reference, see the section "Create the project directory" in the [Exercise - Set up a development environment](../../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #create-the-project-directory -->
+1. Open a new Command Prompt window or terminal. Change (`cd`) to your project directory. For reference, see the section "Create the project directory" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #create-the-project-directory -->
 
-1. Reactivate your Python virtual environment. For reference, see the section "Activate your virtual environment" in the [Exercise - Set up a development environment](../../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #activate-your-virtual-environment -->
+1. Reactivate your Python virtual environment. For reference, see the section "Activate your virtual environment" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment?azure-portal=true) unit. <!-- #activate-your-virtual-environment -->
 
 
 ## Clone the GitHub repo
