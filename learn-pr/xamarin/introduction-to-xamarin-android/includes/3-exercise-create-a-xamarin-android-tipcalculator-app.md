@@ -34,7 +34,7 @@ To create a new project in Visual Studio for Windows:
 
 Let's take a closer look at the code.
 
-1. Open the file **Resources** > **layout** > **activity_main.xml** in the source view. If you start in the design view, select the **Source** tab on the side of the window. You'll find the **Source** tab in the center of the window when you're using split view. When the design view takes up the full window, the **Source** tab appears on the right.
+1. Open the file **Resources** > **layout** > **activity_main.axml** in the source view. If you start in the design view, select the **Source** tab on the side of the window. You'll find the **Source** tab in the center of the window when you're using split view. When the design view takes up the full window, the **Source** tab appears on the right.
 
 1. Examine the XML that declares the content of the screen. The screen includes a few interesting items.
 
