@@ -1,4 +1,4 @@
-In this module, you've learned about Microsoft Endpoint Manager, what it is, and it's key services. 
+In this module, you've learned about Microsoft Endpoint Manager, what it is, and its key services. 
 
 Here are some of the things you covered:
 

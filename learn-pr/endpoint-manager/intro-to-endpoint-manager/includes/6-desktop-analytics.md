@@ -8,6 +8,6 @@ Use Desktop Analytics with Configuration Manager to:
 - Create pilot groups that represent the entire application and driver estate across a minimal set of devices.
 - Deploy Windows 10 to pilot and production-managed devices.
 
-In the following screenshot displays the Desktop Analytics pane:
+The following screenshot displays the Desktop Analytics pane:
 
 ![Screenshot of the Desktop Analytics pane](../media/intro-to-endpoint-manager-10.png)
