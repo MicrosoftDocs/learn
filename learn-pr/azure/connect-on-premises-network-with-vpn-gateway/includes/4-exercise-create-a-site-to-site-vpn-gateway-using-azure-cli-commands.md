@@ -56,7 +56,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --no-wait
     ```
 
-1. To monitor the progress of the gateway creation, run the following command. We're using the Linux `watch` command to run the `az network vnet-gateway list` command periodically, which allows you to monitor the progress.
+1. Gateway creation will take several minutes to complete. To monitor the progress of the gateway creation, run the following command. We're using the Linux `watch` command to run the `az network vnet-gateway list` command periodically, which allows you to monitor the progress.
 
     ```bash
     watch -d -n 5 az network vnet-gateway list \
@@ -64,7 +64,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --output table
     ```
 
-    After each VPN gateway shows a **ProvisioningState** of **Succeeded**, you're ready to continue. Press Ctrl+C to halt the command after the gateway is created.
+    After each VPN gateway shows a **ProvisioningState** of **Succeeded**, you're ready to continue. Press <kbd>Ctrl+C</kbd> to halt the command after the gateway is created.
 
     ```output
     ActiveActive    EnableBgp    EnablePrivateIpAddress   GatewayType    Location        Name              ProvisioningState    ResourceGroup                         ResourceGuid                          VpnType
