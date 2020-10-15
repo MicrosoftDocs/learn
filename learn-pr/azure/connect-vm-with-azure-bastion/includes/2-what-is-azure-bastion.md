@@ -1,6 +1,6 @@
 Azure Bastion provides a secure remote connection from the Azure portal to Azure virtual machines (VMs) over Transport Layer Security (TLS). Provision Azure Bastion to the same Azure Virtual Network as your VMs or a peered virtual network. Then connect to any VM on that virtual network or a peered virtual network directly from the Azure portal. 
 
-## Provides secure RDP and SSH connectivity to an internal VM
+## Provide secure RDP and SSH connectivity to an internal VM
 
 Bastion allows you to easily open a RDP or SSH session from the Azure portal to a VM that's not publicly exposed. Azure Bastion connects to your virtual machines over private IP. You don't have to expose RDP or SSH ports, or public IP addresses for your internal VMs. 
 
@@ -8,24 +8,21 @@ Because Bastion is a fully managed platform PaaS service, you don't need to appl
 
 Bastion provides RDP and SSH connectivity to all VMs on same virtual network or on a peered virtual network as the Bastion subnet. You don't need to install an additional client, agent, or software to use Bastion. 
 
+## Easily connect to a VM by using Bastion
+
 After you deploy Bastion, on the VM overview page, select **Connect** > **Bastion** > **Use Bastion** and then enter the sign in credentials for the VM to connect.
 
 :::image type="content" source="../media/2-connect-bastion-enter-credentials.png" alt-text="Screenshot of the Bastion page that prompts you to enter username and password for the VM.":::
+:::image-end:::
 
+## Key security features
 
-   ***Security points***
-
-
-   - "Protect against zero-day exploits. Hardening in one place only: Azure Bastion is a fully platform-managed PaaS service. Because it sits at the perimeter of your virtual network, you don’t need to worry about hardening each of the virtual machines in your virtual network. The Azure platform protects against zero-day exploits by keeping the Azure Bastion hardened and always up to date for you.": From docs Bastion overview page.
-   - Integrate with native Azure Virtual Network security appliances - such as Azure Firewall. (Per Michael: "I don't think we should call out any HTML5 web-based clients or services")
-   - Traffic initiated from the Azure Bastion to target virtual machines stays within the virtual network. (The browser connects to the Bastion host over the internet via the public IP of the Bastion.)
-   - Configure NSGs to only allow remote connections to the target Virtual Machines from the Bastion host.(Best practice) Don't need to manage other NSGs.
-   - Can monitor and manage remote connections (by enabling diagnostics settings and viewing/managing sessions on Bastion resource)
-
-   ***Other solutions for Bastion & jumpbox***?
-
-   - IPv4 not IPv6
-
+- Traffic initiated from the Azure Bastion to target virtual machines stays within the virtual network or  between peered virtual networks.
+- No need to apply NSGs to the Bastion subnet as it's hardened internally. But for additional security, you can configure NSGs to only allow remote connections to the target Virtual Machines from the Bastion host.
+- Protects against port scanning. RDP and SSH ports, and public IP addresses aren't aren't publicly exposed for your VMs.
+- Protects against zero-day exploits. Azure Bastion sits at the perimeter of your virtual network. So you don’t need to worry about hardening each of the virtual machines in your virtual network. The Azure platform keeps Bastion always up to date.
+- Ability to integrate with native Azure Virtual Network security appliances like Azure Firewall.
+- Ability to monitor and manage remote connections.
 
 ## Concurrent sessions supported
 
