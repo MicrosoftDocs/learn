@@ -1,11 +1,11 @@
 :::image type="content" source="../media/logo.png" alt-text="The Tailwind Traders logo." border="false":::
 _Figure 1: The tailwind traders logo._
 
-Tailwind Traders (Tailwind) is a modern commerce company. For over 30 years, Tailwind has been a popular retail destination growing to over 50 physical stores. Several years ago, their Chief Executive Officer (CEO) anticipated changes in retail and bought a competing e-commerce startup that was growing aggressively in niche markets. Today, the company is seen as an innovative leader with customer-focused local storefronts.
+Tailwind Traders is a modern commerce company. For over 30 years, the company has been a popular retail destination growing to over 50 physical stores. Several years ago, their Chief Executive Officer (CEO) anticipated changes in retail and bought a competing e-commerce startup that was growing aggressively in niche markets. Today, the company is seen as an innovative leader with customer-focused local storefronts.
 
 ## Retail innovation
 
-The Tailwind Traders retail innovation team uses technology to continually redefine Tailwind's position as a leader in modern commerce.
+The Tailwind Traders retail innovation team uses technology to continually redefine the company's position as a leader in modern commerce.
 
 :::image type="content" source="../media/retail-innovations.png" alt-text="An image of the website and app that started retail innovation efforts." border="false":::
 _Figure 2: The website and app that started retail innovation efforts._
@@ -17,12 +17,12 @@ The retail innovation team reports to the company's Chief Technology Officer (CT
 
 ## Information technology
 
-Beyond new innovations, Tailwind's central IT teams support the back office and store technologies.
+Beyond new innovations, Tailwind Traders' central IT teams support the back office and store technologies.
 
 :::image type="content" source="../media/balance.png" alt-text="A graphic showing a balance of speed and control." border="false":::
 _Figure 3: A balance of speed and control._
 
-The retail innovation team is a division of Tailwind Traders' IT team. That team is led by Tailwind Traders' Chief Information Officer (CIO). When you think of Tailwind Traders, you probably first think of e-commerce and innovation. This is just the beginning of the company's technical capability and a small portion of the overall IT spend. Tailwind supports 3,500 employees less than 100 are dedicated to IT. The innovation team consists of only 20 employees who are mostly developers. Beyond core innovation, the IT team supports the following types of technologies:
+The retail innovation team is a division of the company's IT team. That team is led by Tailwind Traders' Chief Information Officer (CIO). When you think of Tailwind Traders, you might first think of e-commerce and innovation. This is just the beginning of the company's technical capability and a small portion of the overall IT spend. The company supports 3,500 employees, and less than 100 are dedicated to IT. The innovation team consists of only 20 employees who are mostly developers. Beyond core innovation, the IT team supports the following types of technologies:
 
 - **Smart storefronts:** Environmental controls, doors, lighting, interactive shelves, in-store displays and advertisements, and over 500 point of sales systems.
 - **Corporate headquarters:** More than 900 employees are hosted in corporate headquarters with technology systems covering best of breed solutions to support processes across real estate, logistics, supply chain, pricing, human resources, employee schedules/tracking, payroll, etc.
@@ -40,7 +40,7 @@ A cornerstone of this strategy will be a shift in the operating model, moving fr
 
 ## IT portfolio overview
 
-Tailwind currently have three datacenters. One is located within the same office building in which their employees work; the company owns this building and datacenter. The two other datacenters are in separate locations and are leased from datacenter providers. Their datacenters are a mix of physical and virtual servers. The virtualization platforms that they use are a mix between Hyper-V and VMware, as they've had different people with different strategy ideas leading their IT department over the years.
+Tailwind Traders currently has three datacenters. One is located within the same office building in which their employees work; the company owns this building and datacenter. The two other datacenters are in separate locations and are leased from datacenter providers. Their datacenters are a mix of physical and virtual servers. The virtualization platforms that they use are a mix between Hyper-V and VMware, as they've had different people with different strategy ideas leading their IT department over the years.
 
 Their servers primarily run Windows Server, with a mix of Windows Server 2008 R2, 2012, and Windows Server 2016. They have only a few Windows Server 2019 instances. Upgrading the operating systems to the latest version or following a consistent strategy has never been a priority for the organization, despite various IT team members trying to push that goal.
 
