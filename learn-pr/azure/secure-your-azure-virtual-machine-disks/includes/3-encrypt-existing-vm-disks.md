@@ -109,7 +109,7 @@ az vm encryption enable \
     --resource-group <resource-group> \
     --name <vm-name> \
     --disk-encryption-keyvault <keyvault-name> \
-    --volume-type [all | os | data] \
+    --volume-type [all | os | data]
 ```
 
 ## Viewing the status of the disk

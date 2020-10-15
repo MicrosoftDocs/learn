@@ -345,6 +345,19 @@
                 "dest": "modules"
             },
             {
+                "src": "security",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },       
+            {
                 "src": "cmu-cloud-developer",
                 "files": [
                     "**.yml",

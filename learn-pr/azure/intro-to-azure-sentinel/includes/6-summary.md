@@ -1,15 +1,15 @@
-You have learned how Azure Sentinel can meet the requirements of the SOC Analyst's organization:
+You've learned how Azure Sentinel can meet the requirements of the SOC analyst's organization:
 
 - Support for data connectors for cloud and hybrid services.
-- Provide the features and functionality that you need, without minimal administration.
+- Features and functionality that you need, with minimal administration.
 
-You explored what a SIEM is, and what Azure Sentinel has to offer, including its key components. You also learned when to use Azure Sentinel and when other Azure products might compliment Azure Sentinel to improve the security of your environment.
+You explored what a SIEM solution is, and what Azure Sentinel and its key components have to offer. You also learned when to use Azure Sentinel and when other Azure products might complement Azure Sentinel to improve the security of your environment.
 
-You can now understand how Azure Sentinel helps you to perform end to end security operations.
+You now understand how Azure Sentinel helps you to perform end-to-end security operations.
 
 ## Learn more
 
-You can learn more about Azure Sentinel by visiting the following articles:
+Learn more about Azure Sentinel from the following articles:
 
 - [Azure Sentinel documentation](https://docs.microsoft.com/azure/sentinel?azure-portal=true)
 - [Quickstart: On-board Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-onboard?azure-portal=true)

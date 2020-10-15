@@ -21,7 +21,6 @@ roles:
 - ai-engineer
 - developer
 - solution-architect
-- student
 products:
 - azure
 - azure-cognitive-services
