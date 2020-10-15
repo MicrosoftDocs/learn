@@ -10,52 +10,54 @@ In the current Program.cs code, you're passing the static location of the *store
 
 1. In the `Main` method, create a variable to store a path to the current directory by using the `Directory.GetCurrentDirectory` method.
 
-  ```csharp
-  static void Main(string[] args)
-  {
-    var currentDirectory = Directory.GetCurrentDirectory();
-    
-    var files = FindFiles("stores");
-
-    foreach (var file in files)
+    ```csharp
+    static void Main(string[] args)
     {
-      Console.WriteLine(file);
+      var currentDirectory = Directory.GetCurrentDirectory();
+      
+      var files = FindFiles("stores");
+    
+      foreach (var file in files)
+      {
+        Console.WriteLine(file);
+      }
     }
-  }
+    ```
 
 1. Still in the `Main` method, create another variable to store the full path to the *stores* directory by using the `Path.Combine` method. Pass that new variable to the `FindFiles` function.
 
-  ```csharp
-  static void Main(string[] args)
-  {
-    var currentDirectory = Directory.GetCurrentDirectory();
-
-    var storesDirectory = Path.Combine(currentDirectory, "sales");
-
-    var files = FindFiles(storesDirectory);
-
-    foreach (var file in files)
+    ```csharp
+    static void Main(string[] args)
     {
-      Console.WriteLine(file);
+        var currentDirectory = Directory.GetCurrentDirectory();
+        
+        var storesDirectory = Path.Combine(currentDirectory, "sales");
+        
+        var files = FindFiles(storesDirectory);
+        
+        foreach (var file in files)
+        {
+            Console.WriteLine(file);
+        }
     }
-  }
+    ```
 
 1. Select the <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> keys to save the file.
 1. Run the program from the command line.
 
-  ```bash
-  dotnet run
-  ```
+    ```bash
+    dotnet run
+    ```
 
   Notice that the path that's not listed for the files is the full system path. This is because the `Directory.GetCurrentDirectory` method returns the full path to the current location.
 
-  ```bash
-  /home/username/dotnet-files/stores/sales.json  
-  /home/username/dotnet-files/stores/201/sales.json  
-  /home/username/dotnet-files/stores/202/sales.json  
-  /home/username/dotnet-files/stores/203/sales.json  
-  /home/username/dotnet-files/stores/204/sales.json  
-  ```
+    ```bash
+    /home/username/dotnet-files/stores/sales.json  
+    /home/username/dotnet-files/stores/201/sales.json  
+    /home/username/dotnet-files/stores/202/sales.json  
+    /home/username/dotnet-files/stores/203/sales.json  
+    /home/username/dotnet-files/stores/204/sales.json  
+    ```
 
 ## Find all .json files
 
@@ -63,48 +65,48 @@ Instead of looking for just *sales.json* files, the program needs to search for 
 
 1. In the `foreach` loop in the `FindFiles` get the extension of each file by using the `Path.GetExtension` method.
 
-  ```csharp
-  foreach (var file in files)
-  {
-    var extension = Path.GetExtension(file);
- 
-    if (file == "sales.json")
+    ```csharp
+    foreach (var file in files)
     {
-        salesFiles.Add(file);
+        var extension = Path.GetExtension(file);
+        
+        if (file == "sales.json")
+        {
+            salesFiles.Add(file);
+        }
     }
-  }
-  ```
+    ```
 
 1. Then change the `if` statement to check whether the file's extension is .json.
 
-  ```csharp
-  foreach (var file in files)
-  {
-    var extension = Path.GetExtension(file);
-
-    if (extension == ".json")
+    ```csharp
+    foreach (var file in files)
     {
-      salesFiles.Add(file);
+        var extension = Path.GetExtension(file);
+        
+        if (extension == ".json")
+        {
+            salesFiles.Add(file);
+        }
     }
-  }
-  ```
+    ```
 
 1. Select the <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> keys to save the file.
 1. Run the program from the command line.
 
-  ```bash
-  dotnet run
-  ```
+    ```bash
+    dotnet run
+    ```
   
   The output now shows all .json and .txt files in any of the store ID directories.
 
-  ```bash
-  /home/username/dotnet-files/stores/sales.json  
-  /home/username/dotnet-files/stores/201/sales.json  
-  /home/username/dotnet-files/stores/202/sales.json  
-  /home/username/dotnet-files/stores/203/sales.json  
-  /home/username/dotnet-files/stores/204/sales.json  
-  ```
+    ```bash
+    /home/username/dotnet-files/stores/sales.json  
+    /home/username/dotnet-files/stores/201/sales.json  
+    /home/username/dotnet-files/stores/202/sales.json  
+    /home/username/dotnet-files/stores/203/sales.json  
+    /home/username/dotnet-files/stores/204/sales.json  
+    ```
 
 Great job! You've used the `Path` class and the `Directory.GetCurrentDirectory` method to make the program much more robust. In the next section, you'll learn how to create directories and move files between locations.
 

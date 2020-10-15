@@ -10,61 +10,61 @@ In this exercise, you'll create the *salesTotals* directory and *totals.txt* fil
 
 1. In the 'Main' function, create a variable called `salesTotalsDir`, which holds the path to the *salesTotals* directory.
 
-  ```csharp
-  static void Main(string[] args)
-  {
-    var currentDirectory = Directory.GetCurrentDirectory();
-    var storesDir = Path.Combine(currentDirectory, "stores");
-
-    var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
-
-    var files = FindSalesFiles(storesDir);
-  }
-  ```
+    ```csharp
+    static void Main(string[] args)
+    {
+        var currentDirectory = Directory.GetCurrentDirectory();
+        var storesDir = Path.Combine(currentDirectory, "stores");
+        
+        var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
+        
+        var files = FindSalesFiles(storesDir);
+    }
+    ```
 
 1. In the `Main` function, add code to create the directory.
 
-  ```csharp
-  static void Main(string[] args)
-  {
-    var currentDirectory = Directory.GetCurrentDirectory();
-    var storesDir = Path.Combine(currentDirectory, "stores");
-
-    var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
-    Directory.CreateDirectory(salesTotalDir);
-
-    var files = FindSalesFiles(storesDir);
-  }
-  ```
+    ```csharp
+    static void Main(string[] args)
+    {
+        var currentDirectory = Directory.GetCurrentDirectory();
+        var storesDir = Path.Combine(currentDirectory, "stores");
+        
+        var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
+        Directory.CreateDirectory(salesTotalDir);
+        
+        var files = FindSalesFiles(storesDir);
+    }
+    ```
 
 ## Write the totals.txt file
 
 1. In the `Main` function, add the code to create an empty file called *totals.txt* inside the newly created *salesTotals* directory. Use an empty string for the file's contents for now.
 
-  ```csharp
-  static void Main(string[] args)
-  {
-    var currentDirectory = Directory.GetCurrentDirectory();
-    var storesDir = Path.Combine(currentDirectory, "stores");
-
-    var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
-    Directory.CreateDirectory(salesTotalDir);
-
-    var files = FindSalesFiles(storesDir);
-
-    File.WriteAllText(Path.Combine(salesTotalDir, "totals.txt"), String.Empty);
-  }
-  ```
+    ```csharp
+    static void Main(string[] args)
+    {
+        var currentDirectory = Directory.GetCurrentDirectory();
+        var storesDir = Path.Combine(currentDirectory, "stores");
+        
+        var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
+        Directory.CreateDirectory(salesTotalDir);
+        
+        var files = FindSalesFiles(storesDir);
+        
+        File.WriteAllText(Path.Combine(salesTotalDir, "totals.txt"), String.Empty);
+    }
+    ```
 
 1. Run the program by entering the following code from the terminal prompt.
 
-   ```bash
-   dotnet run
-   ```
+    ```bash
+    dotnet run
+    ```
 
 1. Select the **Refresh** icon in the **Files** explorer.
 
-   :::image type="content" source="../media/refresh-file-explorer.png" alt-text="Screenshot of the Refresh icon in the Files explorer of the Cloud Shell editor.":::
+    :::image type="content" source="../media/refresh-file-explorer.png" alt-text="Screenshot of the Refresh icon in the Files explorer of the Cloud Shell editor.":::
 
 You're almost finished. The last step is to read the sales files, add up the totals, and write the grand total to the new *totals.txt* file. Next you'll learn how to read and parse data inside files.
 
