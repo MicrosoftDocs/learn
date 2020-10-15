@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.dotnet-files.4-paths
-title: Knowledge check
+title: Work with file paths in .NET
 metadata:
-  title: Knowledge check
-  description: Knowledge check
-  ms.date: 09/28/2020
+  title: Work with file paths in .NET
+  description: Work with file paths in Node.js
+  ms.date: 10/15/2020
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
