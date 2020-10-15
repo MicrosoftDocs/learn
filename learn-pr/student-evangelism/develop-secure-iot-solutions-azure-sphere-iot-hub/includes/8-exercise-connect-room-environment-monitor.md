@@ -173,7 +173,7 @@ Next, you need the ID of the Azure Sphere tenant that is now trusted by the devi
 
 These labs support developer boards from AVNET and Seeed Studio. You need to set the configuration that matches your developer board.
 
-The default developer board configuration is for the AVNET Azure Sphere Starter Kit. If you have this board, there is no additional configuration required.
+The default developer board configuration is for the AVNET Azure Sphere Starter Kit. If you have this board, there's no additional configuration required.
 
 1. Open the **CMakeList.txt** file.
 
