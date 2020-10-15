@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
-uid: learn.explore-space-rocks-using-python
+uid: learn.explore-space-using-python
 metadata:
-  title: Explore space rocks by using Python
+  title: Explore space with Python, Visual Studio Code, and Over the Moon Magic
   description: Description.
   brand: vs-code
   ms.date: 10/20/2020
@@ -9,26 +9,49 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Explore space rocks by using Python
+title: Explore space with Python, Visual Studio Code, and Over the Moon Magic
 summary: | 
-  Summary.
+  Learning to code sometimes feels out of reach - but if we've learned anything from 
+  the people who have bursted through our atmosphere, orbited our Earth, or walked on
+  the Moon, goals that seem out of reach simply require determination and passion. 
+  That that's the goal of this [Over the Moon](https://www.netflix.com/title/80214236) 
+  inspired learning path. Over the Moon is a Netflix original film that inspires the 
+  curiosity and determination needed for all of us to reach our goals. 
   
-  Through these modules, you will:
+  Over the Moon follows Fei Fei, on her journey to build a rocket to
+  fly to the moon. These modules were inspired by her story and the story of real NASA
+  engineers and astronauts. Tying together principles of data science, machine learning, and
+  artificial intelligence with tools like Python, Visual Studio Code, and Azure, these modules
+  guide you through upskilling in tech while imagining how to solve space travel related 
+  challenges. These modules are a part of a multi-modal approach to learning, meaning you can 
+  also follow along with some video tutorials that are a part of the 
+  [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG).
   
-  - One
-  - Two
-  - Three
+  Through these modules, you will learn how to:
+    - Gather data from multiple sources 
+    - Aggregate data into Pandas dataframes
+    - Use Python and Pandas to explore data 
+    - The strategies for cleansing and manipulating your data
+    - Create a good dataset of images for training AIs
+    - Ensure ethical practices throughout AI development
+    - Hypothesize how much rock sample astronauts should collect
+    - Identify and predict meteor showers
+    - Train a custom vision AI on a particular animal
 
 prerequisites: None
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:
+- data-scientist
 - developer
 - student
 products:
+- azure-custom-vision
 - vs-code
 modules:
+- learn.student-evangelism.plan-moon-mission-using-python-pandas
 - learn.student-evangelism.predict-meteor-showers-using-python
+- learn.student-evangelism.train-custom-vision-ai
 trophy:
-  uid: learn.explore-space-rocks-using-python.trophy
+  uid: learn.explore-space-using-python.trophy

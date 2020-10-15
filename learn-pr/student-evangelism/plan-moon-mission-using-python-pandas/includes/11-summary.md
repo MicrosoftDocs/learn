@@ -10,5 +10,8 @@ Throughout this module, you:
 
 The data journey can take many turns, and with your new data wrangling skills, you should feel empowered to find other data sets or cut the data used here in new ways to discover and uncover new information about Space exploration and Moon Sample Recovery...or...any problem you might be interested in!
 
+Remember, this module is a part of a multi-modal approach to learning, meaning you can also follow along with a video tutorial on the [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG).
+
 And with that, Fei Fei ends her journey to the Moon.
+
 ![Fei Fei Returns to Earth](../media/return.png)

@@ -5,7 +5,7 @@ metadata:
   description: Learn how to collect data about meteor showers. 
   ms.date: 10/20/2020
   author: sguthals
-  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Collect meteor shower-related data

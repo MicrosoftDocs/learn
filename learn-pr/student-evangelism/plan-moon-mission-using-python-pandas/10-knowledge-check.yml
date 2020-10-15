@@ -4,12 +4,12 @@ metadata:
   title: Knowledge check
   description: Check your knowledge
   ms.date: 10/20/2020
-  author: sguthals # Your GitHub username (or whomever you'd like to give author attribution to)
-  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  author: sguthals
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Knowledge check
-durationInMinutes: 2
+durationInMinutes: 5
 content: |
 quiz:
   title: Check your knowledge

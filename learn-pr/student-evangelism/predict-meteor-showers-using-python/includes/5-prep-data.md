@@ -24,38 +24,133 @@ cities = pd.read_csv('data/cities.csv')
 
 ## Exercise: Explore data
 
-Now you can look through the data. For each of the variables you created, print the head and the info for those dataframes. `head` will allow you to see the first five lines in the csv files and `info` will give you an overview of what data might be missing. 
+Now you can look through the data. For each of the variables you created, print the head and the info for those dataframes. `head` will allow you to see the first five lines in the csv files and `info` will give you an overview of what data might be missing. Make sure you run each of these in their own cell so that you can see the output for each of them.
 
 ```python
 meteor_showers.head()
 ```
 
+|  | name | radiant | bestmonth | startmonth | startday | endmonth | endday | hemisphere | preferredhemisphere |
+|---|---|---|---|---|---|---|---|---|---|
+| 0 | Lyrids | Lyra | april | april | 21 | april | 22 | northern | northern |
+| 1 | Eta Aquarids | Aquarius | may | april | 19 | may | 28 | northern, southern | southern |
+| 2 | Orionids | Orion | october | october | 2 | november | 7 | northern, southern | northern, southern |
+| 3 | Perseids | Perseus | august | july | 14 | august | 24 | northern | northern |
+| 4 | Leonids | Leo | november | november | 6 | november | 30 | northern, southern | northern, southern |
+
 ```python
 meteor_showers.info()
+```
+
+```output
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 5 entries, 0 to 4
+Data columns (total 9 columns):
+ #   Column               Non-Null Count  Dtype 
+---  ------               --------------  ----- 
+ 0   name                 5 non-null      object
+ 1   radiant              5 non-null      object
+ 2   bestmonth            5 non-null      object
+ 3   startmonth           5 non-null      object
+ 4   startday             5 non-null      int64 
+ 5   endmonth             5 non-null      object
+ 6   endday               5 non-null      int64 
+ 7   hemisphere           5 non-null      object
+ 8   preferredhemisphere  5 non-null      object
+dtypes: int64(2), object(7)
+memory usage: 284.0+ bytes
 ```
 
 ```python
 moon_phases.head()
 ```
 
+|  | month | day | moonphase | specialevent |
+|---|---|---|---|---|
+| 0 | january | 1 | NaN | NaN |
+| 1 | january | 2 | first quarter | NaN |
+| 2 | january | 3 | NaN | NaN |
+| 3 | january | 4 | NaN | NaN |
+| 4 | january | 5 | NaN | NaN |
+
+
 ```python
 moon_phases.info()
+```
+
+```output
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 366 entries, 0 to 365
+Data columns (total 4 columns):
+ #   Column        Non-Null Count  Dtype 
+---  ------        --------------  ----- 
+ 0   month         366 non-null    object
+ 1   day           366 non-null    int64 
+ 2   moonphase     50 non-null     object
+ 3   specialevent  10 non-null     object
+dtypes: int64(1), object(3)
+memory usage: 7.2+ KB
 ```
 
 ```python
 constellations.head()
 ```
 
+|   | constellation | bestmonth | latitudestart | latitudeend | besttime | hemisphere |
+|---|---|---|---|---|---|---|
+| 0 | Lyra | august | 90 | -40 | 21:00 | northern |
+| 1 | Aquarius | october | 65 | -90 | 21:00 | southern |
+| 2 | Orion | january | 85 | -75 | 21:00 | northern |
+| 3 | Perseus | december | 90 | -35 | 21:00 | northern |
+| 4 | Leo | april | 90 | 65 | 21:00 | northern |
+
 ```python
 constellations.info()
+```
+
+```output
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 5 entries, 0 to 4
+Data columns (total 6 columns):
+ #   Column         Non-Null Count  Dtype 
+---  ------         --------------  ----- 
+ 0   constellation  5 non-null      object
+ 1   bestmonth      5 non-null      object
+ 2   latitudestart  5 non-null      int64 
+ 3   latitudeend    5 non-null      int64 
+ 4   besttime       5 non-null      object
+ 5   hemisphere     5 non-null      object
+dtypes: int64(2), object(4)
+memory usage: 224.0+ bytes
 ```
 
 ```python
 cities.head()
 ```
 
+|  | city | latitude | country |
+|---|---|---|---|
+| 0 | Abu Dhabi | 24.47 | United Arab Emirates |
+| 1 | Abuja | 9.07 | Nigeria |
+| 2 | Accra | 5.55 | Ghana |
+| 3 | Adamstown | -25.07 | Pitcairn Islands |
+| 4 | Addis Ababa | 9.02 | Ethiopia |
+
 ```python
 cities.info()
+```
+
+```output
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 256 entries, 0 to 255
+Data columns (total 3 columns):
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   city      256 non-null    object 
+ 1   latitude  256 non-null    float64
+ 2   country   256 non-null    object 
+dtypes: float64(1), object(2)
+memory usage: 4.1+ KB
 ```
 
 ### Convert to numbers

@@ -16,6 +16,10 @@ Meteoroids can originate from comets, asteroids, moons, or other planets. The mo
 
 You can learn more about meteors and meteor showers on the [NASA Solar System website](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/overview?azure-portal=true).
 
+Or, they could be flying frogs, whose to say?
+
+![Frogs flying through Space](../media/flying-frogs.png)
+
 ### Meteors from comets 
 
 Comets are mostly made of ice with some dust, rock, and metals embedded in them. They have cylindrical orbits around our sun, meaning sometimes they are nearer. During the times when a comet is near the sun, they will often begin to melt. As the comet melts, parts of the dust, rock, and metal will dislodge from the comet and remain in space at that location. 

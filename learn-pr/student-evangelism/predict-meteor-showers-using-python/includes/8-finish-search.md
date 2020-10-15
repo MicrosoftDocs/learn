@@ -2,6 +2,8 @@ What we have done so far is use real-world data, but we do have one more bit of 
 
 Though we don't know when this might happen, we *do* know there was a moment in the film where this does happen. We can create new data that takes this into account!
 
+![Image of Chang'e](../media/change.png)
+
 ## Determine the right data
 
 We know that Fei Fei travels to Lunaria after the Moon Festival. Though we don't know exactly how long it takes her to prototype, test, and build her rocket, we can guestimate. 
@@ -82,3 +84,7 @@ Orionids is best seen if you look towards the Orion constellation on October 16,
 Perseids is best seen if you look towards the Perseus constellation on July 20, 2020.
 Though the moon will be bright, Chang'e's meteor shower is best seen if you look towards the Draco constellation on October 01, 2020.
 ```
+
+With that, we know that when Fei Fei's family is gathering for the Moon Festival, they might be able to look into the sky to see Chang'e showering them, hopefully with tears of happiness and rememberance instead of sadness.
+
+![Fei Fei's family gathering for the Moon Festival](../media/moon-festival-gathering.png)

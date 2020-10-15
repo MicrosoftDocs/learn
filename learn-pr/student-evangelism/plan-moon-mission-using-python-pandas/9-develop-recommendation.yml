@@ -2,13 +2,13 @@
 uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.9-develop-recommendation
 metadata:
   title: Develop a recommendation of Moon rock samples
-  description: Develop a recommendation of Moon rock samples.
+  description: Develop a recommendation of Moon rock samples for Artemis astronauts.
   ms.date: 10/20/2020
-  author: sguthals # Your GitHub username (or whomever you'd like to give author attribution to)
-  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  author: sguthals 
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Develop a recommendation of Moon rock samples
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/9-develop-recommendation.md)]
