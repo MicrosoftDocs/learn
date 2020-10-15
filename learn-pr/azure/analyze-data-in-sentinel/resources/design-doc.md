@@ -25,7 +25,7 @@
 - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
 
 ## Module summary description
-<!--LM: Global comment: The document contains variations on "Azure Sentinel Analytics" (often abbreviated to Analytics) and analytics rules, with varying capitalization and plural forms. This term is not available in our resources but based on similar terms, it might be Microsoft Azure Sentinel Analytics, with Azure Sentinel Analytics as the abbreviated form. It's not clear if you can use Sentinel Analytics or Analytics when referring to the service. When referring generically to analytics rules, please don't capitalize "analytics" and do use the plural form.-->
+<!--LM: Global comment: The document contains variations on "Azure Sentinel Analytics" (often abbreviated to Analytics) and analytics rules, with varying capitalization and plural forms. This term is not available in our resources but based on similar terms, it might be Microsoft Azure Sentinel Analytics, with Azure Sentinel Analytics as the abbreviated form. It's not clear if you can use Sentinel Analytics or Analytics when referring to the service but I recommend including "Azure" for branding. When referring generically to analytics, please don't capitalize it and do use the plural form.-->
 This module introduces you to Azure Sentinel Analytics and describes the various types of rules. You can create rules for detecting suspicious events either by using predefined templates or writing custom queries using Azure Data Explorer. There are a range of predefined analytics rules based on Machine Learning, Fusion, derived from the security products and you can also pull a community written rules from Security Community in GitHub.
 <!--LM: Kusto Query Language and KQL are not approved terms. I replaced the term instances with Azure Data Explorer. Please update all instances of KQL.-->
 ## Subtasks in this module
@@ -36,7 +36,7 @@ This module introduces you to Azure Sentinel Analytics and describes the various
 
 ## Lab exercise
 
-- Draft lab exercise title: Threat detection with Azure Sentinel Analytics
+- Draft lab exercise title: Threat detection with Azure Sentinel Analytics <!--LM: I suggest "Detect threats with..."-->
   - Task 1: Create an incident analytics rule from existing template
   - Task 2: Create a scheduled query rule
 
@@ -53,7 +53,7 @@ This module introduces you to Azure Sentinel Analytics and describes the various
 45 minutes
 
 ## Module outline of units
-<!--LM: Note the capitalization differences in "analytics". Please resolve.-->
+<!--LM: Note the capitalization differences in "analytics". Please resolve, referring to my previous comments.-->
 1. Introduction
 2. What is Azure Sentinel Analytics?
 3. Types of Analytic rules
@@ -71,8 +71,8 @@ This module introduces you to Azure Sentinel Analytics and describes the various
 
 ### Module scenario
 
-Contoso, Ltd. is a midsize financial services company in London with a branch office in New York. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Azure Advanced Threat Protection (Azure ATP), Microsoft Defender for Endpoint, Microsoft Office 365 Advanced Threat Protection, Endpoint Protection, and Microsoft Azure Information Protection. Contoso uses the paid version of Azure Security Center for threat protection for resources that are running on Azure and on-premises. The company also has other non-Microsoft assets to monitor and protect.
-
+Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender fo Office 365, Endpoint Protection, and Microsoft Azure Information Protection. Contoso provides threat protection for its Azure-based and on-premises resources by using the paid version of Azure Security Center. The company also monitors and protects other non-Microsoft assets.
+<!--LM: For "Endpoint Protection", please indicate System Center or Intune.-->
 Security analysts at Contoso face a huge triage burden. They deal with a high volume of alerts from multiple products. They correlate alerts in the following ways:
 
 - Manually from different project dashboards
@@ -82,7 +82,7 @@ Additionally, the time spent to set up and maintain IT infrastructure takes the 
 
 The IT director believes that Azure Sentinel Analytics will help the security analysts perform complex investigations faster and improve their SecOps.
 
-As Contoso's lead system engineer and Azure administrator, you've been asked to set up an analytics rules in Azure Sentinel to improve the operation of SecOps team to identify and stop cyberattacks.
+As Contoso's lead system engineer and Azure administrator, you've been asked to set up analytics rules in Azure Sentinel so that the SecOps team can identify and stop cyberattacks.
 
 ## Second unit: What is Azure Sentinel Analytics?
 
@@ -92,11 +92,11 @@ As Contoso's lead system engineer and Azure administrator, you've been asked to 
 
 ### Key content per learning objective
 
-After completing this unit, you&#39;ll be able to explain the importance of Azure Sentinel Analytics, as follows:
+After you complete this unit, you&#39;ll be able to explain the importance of Azure Sentinel Analytics. Topics include:
 
 - Understand the importance of Analytics for security
 - Understand Analytics rules
-- Explore Analytics home page
+- Explore the Analytics home page
 - Map analytics rules to MITRE ATT&CK Tactics
 
 ## Third unit: Types of Analytics rules
@@ -107,7 +107,7 @@ After completing this unit, you&#39;ll be able to explain the importance of Azur
 
 ### Learning objectives
 
-After completing this unit, you&#39;ll be able to understand the following types of analytics rules:
+After you complete this unit, you&#39;ll be able to understand the following types of analytics rules:
 
 - Scheduled
 - Microsoft Security
@@ -122,7 +122,7 @@ After completing this unit, you&#39;ll be able to understand the following types
 
 ### Key content per learning objective
 
-After completing this module, you&#39;ll be able to create an analytics rule from existing templates, as follows:
+After you complete this module, you&#39;ll be able to create an analytics rule from existing templates:
 
 - Explore templates
 - Create an analytics rule from templates
@@ -135,7 +135,7 @@ After completing this module, you&#39;ll be able to create an analytics rule fro
 
 ### Key content per learning objective
 
-After completing this unit, you&#39;ll be able to create new rules and queries using the wizard, as follows:
+After you complete this unit, you&#39;ll be able to create new rules and queries using the wizard. Topics include:
 
 - Scheduled query rule
 - Microsoft incident rule
@@ -148,15 +148,15 @@ After completing this unit, you&#39;ll be able to create new rules and queries u
 
 ### Key content per learning objective
 
-After completing this unit, you&#39;ll be able to manage rules with modifications, as follows:
+After you complete this unit, you&#39;ll be able to manage rules with modifications. Topics include:
 
-- Edit existing rules, to change severity and MITRE Att&ck Tactics
+- Edit existing rules to change severity and MITRE Att&ck Tactics
 - Duplicate the rule
 - Disable the rule
 - Delete the rule
 
-## Seventh unit: Exercise--Threat detection with Azure Sentinel Analytics
-
+## Seventh unit: Exercise&mdash;Threat detection with Azure Sentinel Analytics
+<!--LM: I suggest changing the heading to "Detect threats with Azure Sentinel Analytics" to include a verb.-->
 **Type of unit:** Exercise unit
 
 **Estimated unit duration:** 10 minutes
@@ -167,15 +167,15 @@ After completing this unit, you&#39;ll be able to manage rules with modification
 
 In this exercise, you'll learn to:
 
-- Create an incident rule from an existing template
-- Create an scheduled query rule using your own KQL code
-- Adjust KQL from an existing analytic rule
+- Create an incident rule from an existing template.
+- Create a scheduled query rule using your own KQL code.
+- Adjust KQL from an existing analytic rule.
 
-Review the steps from **Exercise: Create an analytics rule from templates** and with custom KQL code.
+Review the steps from **Exercise&mdash;Create an analytics rule from templates** and with a custom KQL code.
 
 If you want to repeat these steps, sign up for a free trial Azure subscription.
 
-After completing the steps, delete any resource groups you created.
+After you complete the steps, delete any resource groups you created.
 
 ## Eighth unit: Summary
 
@@ -185,5 +185,6 @@ After completing the steps, delete any resource groups you created.
 
 ### Resolution of module problem
 
-Contoso was seeking to improve the operation of their SecOps team in investigation of the security incidents. With Azure Sentinel Analytics, SecOps team can find potential threats more effectively.
-In this module, you&#39;ve learned about analytic rules in Azure Sentinel. You&#39;ve also learned how to create an analytic rule from templates and with your own KQL code.
+Contoso wanted to improve the operation of their SecOps team's investigation of the security incidents. With Azure Sentinel Analytics, the SecOps team was able to find potential threats more effectively.
+
+In this module, you learned about analytic rules in Azure Sentinel. You also learned how to create an analytics rule from templates and with your own KQL code.
