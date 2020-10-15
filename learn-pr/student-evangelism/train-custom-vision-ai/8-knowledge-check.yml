@@ -28,7 +28,7 @@ quiz:
     - content: "False, there is a browser option where you can use it without any code."
       isCorrect: true
       explanation: "This is correct, while calling the Custom Vision Service with C#, Go, Java, JavaScript, and Python is an option, it is not required."
-  - content: "How many images do you need to use to train the Custom Vision Service to identify an object in an image?"
+  - content: "How many images do you need, minimum, to use to train the Custom Vision Service to identify an object in an image?"
     choices:
     - content: "1,000"
       isCorrect: false
