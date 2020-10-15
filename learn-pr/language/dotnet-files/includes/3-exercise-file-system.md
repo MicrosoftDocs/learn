@@ -41,15 +41,15 @@ You need to find all the sales.json files in all folders.
 1. Select the `Program.cs` file to open it in the editor.
 1. Import the `System.IO` namespace at the top of the file.
 
-  ```csharp
-  using System.IO;
-  ```
+    ```csharp
+    using System.IO;
+    ```
 
 1. Add the `System.Collections.Generic` namespace as well.
 
-  ```csharp
-  using System.Collections.Generic;
-  ```
+    ```csharp
+    using System.Collections.Generic;
+    ```
 
 ### Write a function to find the sales.json files
 
@@ -76,35 +76,35 @@ You need to find all the sales.json files in all folders.
 
 1. Call this new `FindFiles` function from the `Main` function. Pass in the *stores* folder name as the location to search for files.
 
-```csharp
-static void Main(string[] args)
-{
-    var salesFiles = FindFiles("stores");
-
-    foreach (var file in salesFiles)
+    ```csharp
+    static void Main(string[] args)
     {
-        Console.WriteLine(file);
+        var salesFiles = FindFiles("stores");
+    
+        foreach (var file in salesFiles)
+        {
+            Console.WriteLine(file);
+        }
     }
-}
-```
+    ```
 
 ## Run the program
 
 1. Enter the following command into Cloud Shell to run the program.
-
-  ```bash
-  dotnet run
-  ``` 
+    
+    ```bash
+    dotnet run
+    ``` 
 
 1. The program should show the following output.
 
-  ```bash
-  stores/sales.json
-  stores/201/sales.json
-  stores/202/sales.json
-  stores/203/sales.json
-  stores/204/sales.json
-  ```
+    ```bash
+    stores/sales.json
+    stores/201/sales.json
+    stores/202/sales.json
+    stores/203/sales.json
+    stores/204/sales.json
+    ```
 
 Excellent! You've successfully written a command-line program that will traverse any directory and find all the *sales.json* files inside.
 
