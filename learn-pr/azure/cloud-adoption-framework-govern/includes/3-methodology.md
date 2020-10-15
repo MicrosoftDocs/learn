@@ -76,4 +76,4 @@ The governance foundation will introduce you to the tools needed to implement pr
 | Complex/legacy identity management | N/A | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/identity-baseline-improvement?azure-portal=true) |
 | Multiple layers of governance | N/A | [Discipline improvement](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/complex/multiple-layers-of-governance?azure-portal=true) |
 
-Later in this module, we'll discuss each discipline from the Cloud Adoption Framework Governance methodology and relate them to Tailwind Traders' customer narrative.
+In the next two sections of this module, we'll discuss the disciplines from the Cloud Adoption Framework Governance methodology and relate them to Tailwind Traders' customer narrative.
