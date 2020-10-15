@@ -7,7 +7,7 @@ metadata:
   description: In this unit, we'll create an IoT hub.
   ms.date: 03/20/2020
   author: olivierbloch
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: True
