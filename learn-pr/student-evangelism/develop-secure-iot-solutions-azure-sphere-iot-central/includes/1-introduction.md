@@ -36,7 +36,7 @@ In this module, you will:
 - Create an Azure IoT Central application
 - Configure your Azure Sphere application to Azure IoT Central
 - Build and deploy the Azure Sphere application
-- Display environment telemetry in the IoT Central dashboard
+- Display environment telemetry in the Azure IoT Central dashboard
 - Control an Azure Sphere application by using Azure IoT Central properties and commands
 
 ## Prerequisites

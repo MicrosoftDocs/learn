@@ -38,7 +38,7 @@ Azure IoT Central commands are defined in device templates.
 2. Click on **Interface** to list the interface capabilities.
 3. Scroll down and expand the **ResetMethod** capability.
 4. Review the definition of **ResetMethod**. The capability type is **Command**.
-5. The schema type is **Object**. Click on the **view** button to display the object definition. The object definition describes the shape of the JSON payload sent with the command. In this example, the shape of the JSON payload will be the same as this example: *{"reset_timer":5}*.
+5. The schema type is **Object**. Click on the **View** button to display the object definition. The object definition describes the shape of the JSON payload sent with the command. In this example, the shape of the JSON payload will be the same as this example: *{"reset_timer":5}*.
 
 ## Direct method handler function
 

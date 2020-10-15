@@ -23,7 +23,7 @@ quiz:
       explanation: "Azure Sphere Security Service is a key component of the Azure Sphere ecosystem."
     - content: "Azure Sphere Security Key"
       isCorrect: false
-      explanation: "Azure Sphere Security Key isn't a component of the Azure Sphere Ecosystem."
+      explanation: "Azure Sphere Security Key isn't a component of the Azure Sphere ecosystem."
   - content: "Your organization created an Azure Sphere tenant and then claimed each of its devices into that tenant. What function does this accomplish?"
     choices:
     - content: "You can manage those devices remotely and securely."

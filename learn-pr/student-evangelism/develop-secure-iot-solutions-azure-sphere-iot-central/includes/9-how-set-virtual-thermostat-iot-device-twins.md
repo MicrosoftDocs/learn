@@ -107,7 +107,7 @@ Azure IoT Central device properties are defined in device templates.
 
 Perform the following in Azure IoT Central:
 
-- From Azure IoT Central, navigate to **Device template**, and select the **Azure Sphere** template.
+- From Azure IoT Central, navigate to **Device templates**, and select the **Azure Sphere** template.
 - Click on **Interface** to list the interface capabilities.
 - Scroll down and expand the **Actual Temperature** capability.
 - Review the definition of **Actual Temperature**. The capability type is **Property**, the schema type is **Float**, and the property is **Writeable**. Writeable means this property is enabled for cloud-to-device updates.

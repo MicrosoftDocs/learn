@@ -18,9 +18,7 @@ The terms you'll tackle:
 
 Multiple types of boards are available to use; let's look at the first one.
 
-## Avnet Azure Sphere kit
-
-Azure Sphere MT3620 Starter Kit Hardware User Guide
+## Avnet Azure Sphere MT3620 Starter Kit
 
 [![Avnet Azure Sphere kit.](../media/avnet-pinout.jpg)](https://www.avnet.com/opasdata/d120001/medias/docus/196/Azure%20Sphere%20Starter%20Kit%20User%20Guide%20(v1.3).pdf)
 

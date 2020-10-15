@@ -14,7 +14,7 @@ Alternatively, you can download the drivers from [Future Technology Devices Inte
 
 ## Sign in to Azure Sphere
 
-1. Press the Windows key and type **Azure Sphere Developer Command prompt**.
+1. Press the Windows logo key and type **Azure Sphere Developer Command prompt**.
 
 2. Select and start the **Azure Sphere Developer Command Prompt**.
 
@@ -103,7 +103,7 @@ You'll configure Azure Sphere for networking. Hence, you can receive cloud updat
    azsphere device show-os-version
    ```
 
-2. If the device isn't up to date, run the following command to restart to trigger the update process.
+2. If the device isn't up to date, run the following command to restart and trigger the update process.
 
    ```
    azsphere device restart

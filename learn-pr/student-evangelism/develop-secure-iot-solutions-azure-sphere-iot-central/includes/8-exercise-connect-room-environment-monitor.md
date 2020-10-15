@@ -8,7 +8,7 @@ In this exercise, we'll build a high-level Azure Sphere application that connect
 
 3. You'll need to sign with your Microsoft personal, work, or school account. If you do not have a Microsoft account, then you can create one for free by using the **Create one!** link.
 
-4. Expand the sidebar menu by clicking on the **Burger menu** icon.
+4. Expand the sidebar menu by clicking on the **Menu** icon.
 
    ![The illustration shows how to expand the sidebar menu.](../media/iot-central-burger-menu.png)
 
@@ -65,7 +65,7 @@ A device template is a blueprint that defines the characteristics and behaviors 
 
    ![The illustration shows telemetry items.](../media/iot-central-add-tile-environment.png)
 
-4. Click **Add Tile**.
+4. Click **Add tile**.
 
 5. Click **Save** to save the view.
 
@@ -83,7 +83,7 @@ A device template is a blueprint that defines the characteristics and behaviors 
 
    ![The illustration shows the properties section.](../media/iot-central-add-tile-form.png)
 
-5. Click **Add Section**.
+5. Click **Add section**.
 
 6. Click **Save** to save the form.
 
@@ -169,7 +169,7 @@ Follow these steps:
 2. Navigate to the **Azure Sphere Learning path** directory. Go to **AzureIoT** and then the **Tools** directory.
 
    - On Windows, navigate to the **Samples\AzureIoT\Tools\win-x64** directory.
-   - On Linux, navigate to the **Samples\AzureIoT\Tools\linux-x64** directory. On Linux, you may need to explicitly set execution permissions for the ShowIoTCentralConfig tool. From a terminal, run `chmod +x ShowIoTCentralConfig` to add execution permissions for the tool.
+   - On Linux, navigate to the **Samples\AzureIoT\Tools\linux-x64** directory. On Linux, you may need to explicitly set execution permissions for the **ShowIoTCentralConfig** tool. From a terminal, run `chmod +x ShowIoTCentralConfig` to add execution permissions for the tool.
 
 3. When you run the **ShowIoTCentralConfig** tool, you'll be prompted for input data. The following table outlines what information you'll be prompted for and where to obtain the required data.
 
@@ -211,7 +211,7 @@ Follow these steps:
    }
    ```
 
-6. Copy the output from the ShowIoTCentralConfig tool to Notepad, as you'll need this information soon.
+6. Copy the output from the **ShowIoTCentralConfig** tool to Notepad, as you'll need this information soon.
 
 ------
 
@@ -323,7 +323,7 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
 
 3. Update the network endpoint's **AllowedConnections** with your Azure IoT Central application endpoint URLs that you copied to Notepad.
 
-4. Review your updated manifest_app.json file. It should look similar to the following.
+4. Review your updated **app_manifest.json** file. It should look similar to the following.
 
    ```
    {
@@ -371,7 +371,7 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
 
 ### Send telemetry to Azure IoT Central
 
-Open **main.c**, and scroll down to the `MeasureSensorHandler` function.
+Open **main.c**, and scroll down to the **MeasureSensorHandler** function.
 
 > [!NOTE]
 > Use **Go to Symbol in Editor** in Visual Studio Code. Use the keyboard shortcut Ctrl+Shift+O and start typing *measure*. You'll often see a function name listed twice in the drop-down. The first is the function prototype declaration, and the second is the implementation of the function.
@@ -404,7 +404,7 @@ static void MeasureSensorHandler(EventLoopTimer* eventLoopTimer)
 }
 ```
 
-The function **SendMsgLedOn** will turn on the send message LED, and then **SendMsg(message)** is called to send a JSON-formatted message to Azure IoT Central.
+The function **SendMsgLedOn** will turn on the send-message LED, and then **SendMsg(message)** is called to send a JSON-formatted message to Azure IoT Central.
 
 ```
 /// <summary>
@@ -489,7 +489,7 @@ static void SendMsgLedOn(char* message)
 
 ## Step 13: Migrate your device to the Azure Sphere template
 
-You need to migrate the newly enrolled device to the **Azure Sphere** template. The template maps the JSON formatted telemetry to the dashboard.
+You need to migrate the newly enrolled device to the **Azure Sphere** template. The template maps the JSON-formatted telemetry to the dashboard.
 
 1. Select the newly enrolled device from the **All devices** template.
 

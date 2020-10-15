@@ -12,7 +12,7 @@ This project leverages the [Azure IoT Hub Device Provisioning Service](https://d
 
 **Azure IoT Central application:** An Azure IoT Central application simplifies the creation of IoT solutions. You'll learn how to create, customize, manage, and use an Azure IoT Central application.
 
-**High-level application:** Every Azure Sphere device has a high-level application, which runs on the Azure Sphere OS and uses the application libraries.
+**High-level application:** Every Azure Sphere device has a high-level application that runs on the Azure Sphere OS and uses the application libraries.
 
 A high-level application can:
 

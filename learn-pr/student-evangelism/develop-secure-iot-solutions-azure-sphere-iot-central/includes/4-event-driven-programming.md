@@ -12,8 +12,8 @@ The labs use event timers extensively, so there is a generalized model to simpli
 
 There are two types of timers:
 
-- periodic timers
-- one-shot timers
+- Periodic timers
+- One-shot timers
 
 ### Periodic timers
 

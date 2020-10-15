@@ -79,8 +79,8 @@ Setting the desired temperature is like setting a thermostat in a room. A device
 When the temperature sensor is read on Azure Sphere, it is compared to the desired temperature.
 
 - If the temperature is greater than the desired temperature, the blinking LED will turn blue to indicate the cooler needs be turned on.
-- If the temperature is less than the desired temperature, then the blinking LED will turn red to indicate the heater needs to be turned on.
-- If the temperature is the same as the desired temperature, then the blinking LED turns green to indicate no action required.
+- If the temperature is less than the desired temperature, the blinking LED will turn red to indicate the heater needs to be turned on.
+- If the temperature is the same as the desired temperature, the blinking LED will turn green to indicate no action required.
 
 > The Avnet Azure Sphere Starter Kit has a built-in temperature sensor. For other boards, a random temperature of 25 +/- 5 degrees Celsius is generated.
 
