@@ -45,12 +45,12 @@ Risk is relative. A small company in a closed building with a few IT assets has 
 According to the outline from the Tailwind Traders customer narrative unit, the risks with which the Chief Information Officer (CIO) is most concerned are:
 
 - Overspending in the cloud.
-- Not meeting security or compliance requirements.
+- The organization not meeting security or compliance requirements.
 - Asset configuration creating operations management issues or oversights.
-- Improper access compromising systems or data.
+- Unauthorized access compromising systems or data.
 - Inconsistent governance due to immature processes and lack of skills on the team.
 
-It's important to note, that none of the actual concerns are related to, "a specific network segment of the existing data centers," as sited in their existing policy. To create sound governance policies that will scale into the cloud, we need to dig a bit deeper and look at the tangible risks captured in the current policy versus the current-state solution.
+It's important to note, that none of the actual concerns are related to, "a specific network segment of the existing data centers," cited in their current policy. To create sound governance policies that will scale into the cloud, we need to dig a bit deeper and look at the tangible risks captured in the current policy versus the current-state solution.
 
 Deeper investigation of the stakeholder concerns and the cloud adoption plan will likely expose additional risks that can't be tolerated by the organization. But for now, we have enough to start shaping governance policies that address these tangible risks.
 
@@ -65,18 +65,18 @@ Corporate policies establish the requirements, standards, and goals that your IT
 
 ## Process
 
-The cloud provides guardrails that can reduce the human overhead of recurring processes by providing validation triggers based on implementation configuration. The following are a few examples of triggers and actions that can address the concerns:
+The cloud provides guardrails that can reduce the human overhead of recurring processes by providing validation triggers based on implementation configuration. The following tables outlines a few triggers and actions that can address the risks with which Tailwind Traders' CIO is concerned:
 
-| Risks | Sample trigger | Sample action |
+| Risk | Sample trigger | Sample action |
 |-----------------------------|----------------|---------------|
-| Risk of overspending in the cloud | Monthly cloud spending is 20 percent higher than expected. | Notify the billing unit leader who will begin a review of resource usage. |
-| Risk of overspending in the cloud | Deployed assets are not using the allocated cpu or memory | Notify the billing unit leader and when possible automatically resize to fit actual usage. |
-| Risk of not meeting security or compliance requirements | Detect any deviation from defined security or compliance. | Notify the IT security team and when possible automate remediation. |
-| Risk of asset configuration creating operations management issues or oversights | CPU utilization for a workload is greater than 90 percent. | Notify the IT operations team and scale out additional resources to handle the load. |
-| Risk of asset configuration creating operations management issues or oversights | Assets that fail to meet patching or business continuity and disaster requirements trigger operational compliance warning. | Notify the IT operations team and when possible automatically resolve the deviation. |
-| Risk of improper access compromising systems or data | Traffic patterns deviate from approved network topologies | Notify the IT security team and when possible automatically close attack vectors. |
-| Risk of improper access compromising systems or data | Assets are configured without proper role assignments or elevated privileges | Notify the IT security team and when possible automatically resolve the deviation. |
-| Risk of inconsistent governance due to immature processes and lack of skills on the team | Assets identified that are not included in required governance processes | Notify the IT governance team and when possible automatically resolve the deviation. |
+| Overspending in the cloud | Monthly cloud spending is 20 percent higher than expected. | Notify the billing unit leader, who will start reviewing resource usage. |
+| Overspending in the cloud | Deployed assets aren't using the allocated CPU or memory. | Notify the billing unit leader and automatically resize to fit actual usage, when possible. |
+| The organization not meeting security or compliance requirements | Detect any deviation from defined security or compliance. | Notify the IT security team and automate remediation, when possible. |
+| Asset configurations creating operations management issues or oversights | CPU utilization for a workload is greater than 90 percent. | Notify the IT operations team and scale out additional resources to handle the load. |
+| Asset configurations creating operations management issues or oversights | Assets that fail to meet patching or business continuity and disaster requirements trigger operational compliance warning. | Notify the IT security team and automatically resolve the deviation, when possible. |
+| Unauthorized access compromising systems or data | Traffic patterns deviate from approved network topologies. | Notify the IT security team and automatically close attack vectors, when possible. |
+| Unauthorized access compromising systems or data | Assets are configured without proper role assignments or elevated privileges. | Notify the IT security team and automatically resolve the deviation, when possible. |
+| Inconsistent governance due to immature processes and lack of skills on the team | Assets identified that aren't included in required governance processes | Notify the IT governance team and automatically resolve the deviation, when possible. |
 
 Each of the above triggers and actions can be automated using Azure governance tools. Other cloud providers may require a more manual approach, but the defined policies would still be applicable. Take care to avoid defining policies that would create lock-in with a specific vendor to avoid having to repeat this process again in the future.
 

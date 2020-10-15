@@ -19,7 +19,11 @@ Resource consistency focuses on the initial organization of resources required t
 :::image type="content" source="../media/resource-consistency.png" alt-text="The Resource Consistency baseline." border="false":::
 _Figure 1: Resource Consistency._
 
-A subsequent unit in this module will apply this discipline to the early needs of our customer narrative, Tailwind Traders.
+This discipline would help Tailwind Traders to address the following risks from the prior unit:
+
+    - Operations management issues or oversights
+
+A future unit in this module will apply this discipline to the early needs of our customer narrative, Tailwind Traders.
 
 ## Cost Management
 
@@ -27,6 +31,10 @@ This discipline focuses on scaling the operational best practices for cost manag
 
 :::image type="content" source="../media/cost-management.png" alt-text="The Cost Management discipline." border="false":::
 _Figure 2: The Cost Management discipline._
+
+This discipline would help Tailwind Traders to address the following risk from the prior unit:
+
+    - Overspending in the cloud
 
 A future unit in this module will demonstrate how Tailwind Traders can add cost controls to their governance foundation.
 
@@ -37,12 +45,21 @@ This discipline focuses on automating the application of security principles to 
 :::image type="content" source="../media/security-baseline.png" alt-text="The security baseline." border="false":::
 _Figure 3: The Security Baseline discipline._
 
+This discipline would help Tailwind Traders to address the following risks from the prior unit:
+
+    - The organization not meeting security or compliance requirements
+    - Unauthorized access compromising systems or data
+
 ## Identity Baseline
 
 Once you've established identity and access requirements for your cloud environment, this discipline ensures that those requirements are consistently applied to all workloads and assets.
 
 :::image type="content" source="../media/identity-baseline.png" alt-text="The Identity Baseline discipline." border="false":::
 _Figure 4: The Identity Baseline discipline._
+
+This discipline would help Tailwind Traders to address the following risk from the prior unit:
+
+    - Unauthorized access compromising systems or data
 
 ## Deployment Acceleration
 
@@ -51,19 +68,12 @@ Automating governance leads to automation in adoption. Providing infrastructure-
 :::image type="content" source="../media/deployment-acceleration.png" alt-text="The Deployment Acceleration discipline." border="false":::
 _Figure 5: The Deployment Acceleration discipline._
 
-## Tailwind Traders' risks
+This discipline would help Tailwind Traders to address the following risk from the prior unit:
 
-These disciplines help establish the right collection of processes, tools, and automation to address common risks and concerns.
+    - Inconsistent governance due to immature processes and lack of skills on the team
 
-| Cloud Adoption Framework Governance discipline | Risk(s) | Sample trigger | Sample action |
-|-----------------------------|----------------|---------------|
-| Cost Management | The risk here is overspending. | Monthly cloud spending is 20 percent higher than expected. | Notify the billing unit leader, who will start reviewing resource usage. |
-| Cost Management | The risk here is overspending. | Deployed assets are not using the allocated CPU or memory. | Notify the billing unit leader and automatically resize to fit actual usage, when possible. |
-| Security Baseline | The risk here is the organization not meeting security or compliance requirements. | Detect any deviation from defined security or compliance. | Notify the IT security team and automate remediation, when possible. |
-| Security Baseline | The here risk is unauthorized access compromising systems or data. | Traffic patterns deviate from approved network topologies. | Notify the IT security team and automatically close attack vectors, when possible. |
-| Resource Consistency | The risks are operations management issues or oversights. | CPU utilization for a workload is greater than 90 percent. | Notify the IT operations team and scale out additional resources to handle the load. |
-| Resource Consistency | The risks here are operations management issues or oversights. | Assets that fail to meet patching or business continuity and disaster recovery requirements trigger operational compliance warning. | Notify the IT operations team and automatically resolve the deviation, when possible. |
-| Identity | The here risk is unauthorized access compromising systems or data. | Assets are configured without proper role assignments or elevated privileges. | Notify the IT security team and automatically resolve the deviation, when possible. |
-| Deployment Acceleration | The risk here is inconsistent governance. | Assets that aren't included in required governance processes have been identified | Notify the IT governance team and automatically resolve the deviation, when possible. |
+## Summary
 
-Understanding the Cloud Adoption Framework Governance methodology and its five disciplines will help Tailwind Traders to discover and address tangible risks and concerns and address against a prioritized backlog. In the next units, we will explore technical solutions to help you get started with a cloud governance foundation to support each discipline. We'll also look at some technical solutions to address cost-management-related risks.
+The five disciplines from the Cloud Adoption Framework Governance methodology help to establish the right collection of processes, tools, and automation to address common risks and concerns. Understanding these disciplines can help Tailwind Traders to discover and address tangible risks and concerns and address against a prioritized backlog. 
+
+In the next units, we will explore technical solutions to help you get started with a cloud governance foundation to support each discipline. We'll also look at some technical solutions to address cost-management-related risks.

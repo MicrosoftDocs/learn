@@ -15,59 +15,59 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "To address the risks and concerns raised by the Tailwind Traders CIO, which of the following would you act on first?"
+  - content: To address the risks and concerns raised by the Tailwind Traders CIO, which of the following would you act on first?
     choices:
-    - content: "Implement a governance foundation in Azure."
+    - content: Implement a governance foundation in Azure.
       isCorrect: false
-      explanation: "Governance tools can't address poorly defined corporate policy."
-    - content: "Update the existing corporate policy to outline concerns, risks, triggers, and actions."
+      explanation: Governance tools can't address poorly defined corporate policy.
+    - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
       isCorrect: True
       explanation: Correct!
-    - content: "Deploy cost management controls and processes."
+    - content: Deploy cost management controls and processes.
       isCorrect: false
-      explanation: "It will be hard to address cost management without a clear set of policies and a governance foundation."
-    - content: "Deploy security baseline controls and processes."
+      explanation: It will be hard to address cost management without a clear set of policies and a governance foundation.
+    - content: Deploy security baseline controls and processes.
       isCorrect: false
-      explanation: "It will be hard to address security baseline without a clear set of policies and a governance foundation."
-  - content: "Which would you address second?"
+      explanation: It will be hard to address security baseline without a clear set of policies and a governance foundation.
+  - content: Which would you address second?
     choices:
-    - content: "Implement a governance foundation in Azure."
+    - content: Implement a governance foundation in Azure.
       isCorrect: True
       explanation: Correct!
-    - content: "Update the existing corporate policy to outline concerns, risks, triggers, and actions."
+    - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
       isCorrect: false
-      explanation: "Corporate policy should be number one on the list of things to address."
-    - content: "Deploy cost management controls and processes."
+      explanation: Corporate policy should be number one on the list of things to address.
+    - content: Deploy cost management controls and processes.
       isCorrect: false
-      explanation: "It will be hard to address cost management without a clear set of policies and a governance foundation."
-    - content: "Deploy security baseline controls and processes."
+      explanation: It will be hard to address cost management without a clear set of policies and a governance foundation.
+    - content: Deploy security baseline controls and processes.
       isCorrect: false
-      explanation: "It will be hard to address security baseline without a clear set of policies and a governance foundation."
-  - content: "Which will deliver the most visible improvement based on the existing corporate policy?"
+      explanation: It will be hard to address security baseline without a clear set of policies and a governance foundation.
+  - content: Which will deliver the most visible improvement based on the existing corporate policy?
     choices:
-    - content: "Implement a governance foundation in Azure."
+    - content: Implement a governance foundation in Azure.
       isCorrect: false
-      explanation: "This is one of the coolest tech accomplishments, but it won't show much value beyond the hands-on team."
-    - content: "Update the existing corporate policy to outline concerns, risks, triggers, and actions."
+      explanation: This is one of the coolest tech accomplishments, but it won't show much value beyond the hands-on team.
+    - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
       isCorrect: false
-      explanation: "Corporate policy is important, but few will initially see the value of this exercise."
-    - content: "Deploy cost management controls and processes."
+      explanation: Corporate policy is important, but few will initially see the value of this exercise.
+    - content: Deploy cost management controls and processes.
       isCorrect: false
-      explanation: "While important, cost management won't help with the security concerns."
-    - content: "Deploy Security baseline controls and processes."
+      explanation: While important, cost management won't help with the security concerns.
+    - content: Deploy Security baseline controls and processes.
       isCorrect: true
       explanation: Correct!
-  - content: "Which will create the most confidence with the Chief Information Officer?"
+  - content: Which will create the most confidence with the Chief Information Officer?
     choices:
-    - content: "Implement a governance foundation in Azure."
+    - content: Implement a governance foundation in Azure.
       isCorrect: false
-      explanation: "This is one of the coolest tech accomplishments, but it won't show much value beyond the hands-on team."
-    - content: "Update the existing corporate policy to outline concerns, risks, triggers, and actions."
+      explanation: This is one of the coolest tech accomplishments, but it won't show much value beyond the hands-on team.
+    - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
       isCorrect: false
-      explanation: "Corporate policy is important, but few will see the value of this exercise initially."
-    - content: "Deploy Cost Management controls and processes."
+      explanation: Corporate policy is important, but few will see the value of this exercise initially.
+    - content: Deploy Cost Management controls and processes.
       isCorrect: true
       explanation: Correct!
-    - content: "Deploy security baseline controls and processes."
+    - content: Deploy security baseline controls and processes.
       isCorrect: false
-      explanation: "The Chief Information Officer (CIO) injected cost risks and concerns into the list when the existing policy had nothing to do with cost. This has also been a message shared by the CIO throughout this narrative."
+      explanation: The Chief Information Officer (CIO) injected cost risks and concerns into the list when the existing policy had nothing to do with cost. This has also been a message shared by the CIO throughout this narrative.
