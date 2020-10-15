@@ -24,6 +24,7 @@
 - Familiarity with security operations in an organization
 - Basic experience with Azure services
 - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
+- Basic knowledge of Sentinel rules
 
 ## Module summary description
 
@@ -31,8 +32,7 @@ This module introduces you to incident management in Azure Sentinel. You’ll le
 
 ## Subtasks in this module
 
-- How to create and manage Azure Sentinel rules
-- How to create and manage Azure Sentinel events and alerts
+- How to manage Azure Sentinel events and alerts
 - How to investigate Azure Sentinel incidents
 
 ## Module learning objectives
@@ -50,13 +50,11 @@ This module introduces you to incident management in Azure Sentinel. You’ll le
 **Add more units to the outline in black below as needed for your content**.
 
 1. Introduction
-2. What are Sentinel incidents?
-3. What are Sentinel rules?
-4. Creating custom rules
-5. Managing events and alerts
-6. Investigating incidents
-7. Exercise unit
-8. Summary
+2. Creating custom rules
+3. Managing events and alerts
+4. Investigating incidents
+5. Exercise unit
+6. Summary
 
 ## 1st unit: Introduction
 
@@ -68,35 +66,7 @@ This module introduces you to incident management in Azure Sentinel. You’ll le
 
 Contoso is a medium-size financial services company in London with a branch office in New York. As part of Contoso's security team, you've recently been asked to investigate and identify any sign-in anomalies for company Azure Active Directory resources.
 
-
-## 2nd unit: Manage incidents
-
-**Type of unit:** Learning content unit
-
-**Estimated unit duration:** 5 mins
-
-### Key content per learning objective
-
-Understand Azure Sentinel incident management
-
-- Explain Sentinel incidents and their purpose
-
-
-## 3rd unit: Manage rules
-
-**Type of unit:** Learning content unit
-
-**Estimated unit duration:** 5 mins
-
-### Key content per learning objective
-
-Understand Azure Sentinel incident management
-
-- Explain Sentinel rules and their purpose
-- Use built-in rules to detect threats
-
-
-## 4th unit: Create custom rules
+## 2nd unit: Create custom rules
 
 **Type of unit:** Learning content unit
 
@@ -108,8 +78,7 @@ Understand Azure Sentinel incident management
 
 - Create custom rules to detect threats
 
-
-## 5th unit: Manage events and alerts
+## 3rd unit: Manage events and alerts
 
 **Type of unit:** Learning content unit
 
@@ -122,8 +91,7 @@ Explore Azure Sentinel event and alert management
 - Understand events and alerts in Sentinel
 - Configure rules with alerts
 
-
-## 6th unit: Manage events and alerts
+## 4th unit: Manage incidents
 
 **Type of unit:** Learning content unit
 
@@ -137,8 +105,7 @@ Investigate and manage incident resolution
 - Use the investigation graph.
 - Manage incident status.
 
-
-## 7th unit: Manage Sentinel incidents
+## 5th unit: Investigate an incident
 
 **Type of unit:** Exercise unit
 
@@ -154,8 +121,7 @@ In this exercise, you will learn to:
 - Create an alert
 - Investigate an incident
 
-
-## 8th unit: Summary
+## 6th unit: Summary
 
 **Type of unit:** Summary unit
 
