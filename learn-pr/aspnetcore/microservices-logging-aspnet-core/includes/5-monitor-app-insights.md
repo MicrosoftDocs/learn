@@ -104,7 +104,7 @@ The Application Map provides one way of exploring captured telemetry. You can al
     :::image type="content" source="../media/5-monitor-app-insights/end-to-end-transaction-details.png" alt-text="end-to-end transaction details for a TRACE event" border="true" lightbox="../media/5-monitor-app-insights/end-to-end-transaction-details.png":::
 
 1. Notice the trace includes each step of the request:
-    - The initial request is received by the HTTP aggregator:
+    1. The initial request is received by the HTTP aggregator:
         - An **INFORMATION** log entry with the text `----- Getting discount coupon: "GIVEMEFREESTUFF"` is logged. That message is logged via a `LogInformation` call in the `CheckCouponAsync` action method of *:::no-loc text="src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Controllers/CouponController.cs":::*:
 
             :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/controllers/couponcontroller.cs" id="snippet_CheckCouponAsync" highlight="7":::
@@ -113,8 +113,8 @@ The Application Map provides one way of exploring captured telemetry. You can al
 
             :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/services/couponservice.cs" id="snippet_CheckCouponByCodeNumberAsync" highlight="3":::
 
-    - The HTTP aggregator makes a request to the coupon service at the path `GET /api/v1/coupon/GIVEMEFREESTUFF`.
-    - Since the preceding request fails, the overall request fails:
+    1. The HTTP aggregator makes a request to the coupon service at the path `GET /api/v1/coupon/GIVEMEFREESTUFF`.
+    1. Since the preceding request fails, the overall request fails:
         - An **INFORMATION** log entry beginning with the text `----- WebAggregator <-- Coupon-API: HttpResponseMessage` is logged. That message is logged via a `LogInformation` call in the `CheckCouponByCodeNumberAsync` method of *:::no-loc text="src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Services/CouponService.cs":::*:
 
             :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/services/couponservice.cs" id="snippet_CheckCouponByCodeNumberAsync2" highlight="3":::
