@@ -12,7 +12,7 @@ In this exercise, you'll see how to deploy SQL Server on SUSE, install command-l
     export PASSWORD=$(openssl rand -base64 32)
     az vm create \
         --name SLESSQLServer \
-        --image "SUSE:sles-12-sp5:gen1:2020.02.26" \
+        --image "SUSE:sles-12-sp5:gen1:latest" \
         --size Standard_D2s_v3 \
         --admin-username suseadmin \
         --admin-password $PASSWORD \
