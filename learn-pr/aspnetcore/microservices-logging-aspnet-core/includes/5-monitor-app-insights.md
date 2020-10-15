@@ -101,7 +101,7 @@ The Application Map provides one way of exploring captured telemetry. You can al
 
 1. In the result set, select a **TRACE** item with the description `----- Coupon not found: 404 - Content: "ERROR: The coupon doesn't exist"`. An end-to-end transaction trace appears.
 
-:::image type="content" source="../media/5-monitor-app-insights/end-to-end-transaction-details.png" alt-text="end-to-end transaction details for a TRACE event" border="true" lightbox="../media/5-monitor-app-insights/end-to-end-transaction-details.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/end-to-end-transaction-details.png" alt-text="end-to-end transaction details for a TRACE event" border="true" lightbox="../media/5-monitor-app-insights/end-to-end-transaction-details.png":::
 
 1. Notice the trace includes each step of the request:
     - The initial request is received by the HTTP aggregator:
