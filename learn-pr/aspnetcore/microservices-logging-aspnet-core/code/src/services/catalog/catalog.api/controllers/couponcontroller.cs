@@ -33,32 +33,22 @@ namespace Coupon.API.Controllers
             _exceptionTrigger = exceptionTrigger;
         }
 
+        #region snippet_GetCouponByCodeAsync
         [HttpGet("{code}")]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [ProducesResponseType(typeof(CouponDto), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<CouponDto>> GetCouponByCodeAsync(string code)
         {
-            _logger.LogInformation("----- Get coupon {CouponCode}", code);
-
-            var result = _exceptionTrigger.Process(code);
-
-            if (result.shouldFire)
-            {
-                throw new Exception($"Exception code received: {code}");
-            }
-
-            if (result.configured)
-            {
-                return NotFound($"CONFIG: {result.message}");
-            }
-
-            #region snippet_GetCouponByCodeAsync
+            // code omitted for brevity
+            
             var coupon = await _couponRepository.FindCouponByCodeAsync(code);
 
             if (coupon is null || coupon.Consumed)
             {
-                return NotFound(coupon == null ? "ERROR: The coupon doesn't exist" : "ERROR: The coupon has been redeemed already");
+                return NotFound(coupon == null
+                    ? "ERROR: The coupon doesn't exist"
+                    : "ERROR: The coupon has been redeemed already");
             }
             #endregion
             var couponDto = _mapper.Translate(coupon);
