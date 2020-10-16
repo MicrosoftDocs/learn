@@ -2,8 +2,8 @@
 
 ## Learner roles
 
-- administrator
-- auditor
+- Administrator
+- Auditor
 - risk practitioner
 - security engineer
 - solution architect
