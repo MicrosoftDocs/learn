@@ -1,0 +1,78 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-logging-aspnet-core.7-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 10/16/2020
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Knowledge check
+durationInMinutes: 5
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What's the key abstraction that supports the configuration system in ASP.NET Core apps?
+      choices:
+        - content: Configuration Binder
+          isCorrect: false
+          explanation: "TODO"
+        - content: Configuration Provider
+          isCorrect: true
+          explanation: "TODO"
+        - content: ConfigMap
+          isCorrect: false
+          explanation: "TODO"
+        - content: App Configuration
+          isCorrect: false
+          explanation: "TODO"
+
+    - content: Configuration values are usually represented as what?
+      choices:
+        - content: Sections and property values in the `appsettings.json` file.
+          isCorrect: false
+          explanation: "TODO"
+        - content: Array values
+          isCorrect: false
+          explanation: "TODO"
+        - content: Key-value pair collections
+          isCorrect: true
+          explanation: "TODO"
+        - content: Object trees with property values
+          isCorrect: false
+          explanation: "TODO"
+
+# 3. ConfigMaps values are presented to a containerized application as:
+
+#     - Structuctured `appsettings.json` file.
+#     - Environment variables. - **CORRECT ANSWER**
+#     - An App Configuration store.
+#     - Complex object trees.
+
+# 4. Settings in App Configuration store can change any configuration value:
+
+#     - Except the ones configured in the `appsettings.json` file.
+#     - Only if configured as the first configuration provider.
+#     - Only if not defined in another configuration provider.
+#     - Only if configured as the last configuration provider. - **CORRECT ANSWER**
+
+# 5. The feature management middleware for the SPA is part the Feature Management package.
+
+#     - True
+#     - False - **CORRECT ANSWER**
+
+# 6. The Azure App Configuration middleware gets configuration values from App Configuration store.
+
+#     - True
+#     - False - **CORRECT ANSWER**
+
+# 7. Mark all the correct statements about the Azure App Configuration store.
+
+#     - You can handle any configuration item in the App Configuration store. - **CORRECT ANSWER**
+#     - You can only handle a configuration value in App Configuration if it's been already defined in the ConfigMap.
+#     - You need to restart the server application to take new values from the App Configuration store.
+#     - You can use and App Configuration store in an ASP.NET Core application without any code change.
+#     - You have to add the AppConfiguration provider during application startup to get values from the App Configuration store. - **CORRECT ANSWER**
+

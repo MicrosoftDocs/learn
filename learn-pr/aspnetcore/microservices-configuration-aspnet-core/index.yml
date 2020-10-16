@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.microservices-configuration-aspnet-core
+metadata:
+  title: Implement feature toggles in a cloud-native ASP.NET Core microservice
+  description: This module guides you through implementing a feature toggle in an ASP.NET Core microservices app using Azure App Configuration.
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 10/16/2020
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Implement feature toggles in a cloud-native ASP.NET Core microservice
+summary: Learn how to implement a feature toggle in your cloud-native ASP.NET Core microservices app to enable a feature for a set of users.
+abstract: |
+  In this module, you will:
+  - Review app configuration concepts.
+  - Implement a feature toggle.
+  - Implement a centralized Azure App Configuration store.
+prerequisites: |
+  - Familiarity with C# and ASP.NET Core development at the beginner level
+  - Conceptual knowledge of containers and AKS at the intermediate level
+  - Access to an Azure subscription with **Owner** privilege
+levels:
+  - intermediate
+roles:
+  - developer
+  - solution-architect
+products:
+  - dotnet
+  - aspnet-core
+  - dotnet-core
+  - azure
+  - azure-app-configuration
+  - azure-container-registry
+  - azure-kubernetes-service
+units:
+  - learn.microservices-logging-aspnet-core.1-introduction
+  - learn.microservices-logging-aspnet-core.2-environment-setup
+  - learn.microservices-logging-aspnet-core.3-review-app-configuration
+  - learn.microservices-logging-aspnet-core.4-feature-flags
+  - learn.microservices-logging-aspnet-core.5-knowledge-check
+  - learn.microservices-logging-aspnet-core.6-summary
+iconUrl: https://docs.microsoft.com/../media/learn/module.svg
+badge:
+  uid: learn.microservices-configuration-aspnet-core.badge
