@@ -14,31 +14,31 @@ content: |
   Answer the following questions to see what you've learned:
 quiz:
   questions:
-  - content: "If you have an `elif` statement, what does the last conditional statement need to be?"
+  - content: "If you have an <code>elif</code> statement, what does the last conditional statement need to be?"
     choices:
-    - content: "An `if` statement"
+    - content: "An <code>if</code> statement"
       isCorrect: false
-      explanation: "Incorrect. The first statement always has to be an `if` statement."
-    - content: "An `elif` statement"
+      explanation: "Incorrect. The first statement always has to be an <code>if</code> statement."
+    - content: "An <code>elif</code> statement"
       isCorrect: false
-      explanation: "Incorrect, but you can have as many `elif` statements as you want."
-    - content: "An `else` statement"
+      explanation: "Incorrect, but you can have as many <code>elif</code> statements as you want."
+    - content: "An <code>else</code>statement"
       isCorrect: true
-      explanation: "Correct. You must end an `elif` statement with an `else` statement."
-    - content: "Any; an `if`, `elif`, or `else` statement"
+      explanation: "Correct. You must end an <code>elif</code> statement with an <code>else</code> statement."
+    - content: "Any; an <code>if</code>, <code>elif</code>, or <code>else</code> statement"
       isCorrect: false
       explanation: "Incorrect. Only one is correct."
   - content: "How do you test if variable x has a value of 10?"
     choices:
     - content: "if x = 10"
       isCorrect: false
-      explanation: "Incorrect. If you have only one equal sign, you're assigning the value to the variable, even if it's in an `if` statement."
+      explanation: "Incorrect. If you have only one equal sign, you're assigning the value to the variable, even if it's in an <code>if</code> statement."
     - content: "if x is 10"
       isCorrect: false
-      explanation: "Incorrect. Python doesn't have an `is` keyword."
+      explanation: "Incorrect. Python doesn't have an <code>is</code> keyword."
     - content: "if x equals 10"
       isCorrect: false
-      explanation: "Incorrect. Python doesn't have an `equals` keyword."
+      explanation: "Incorrect. Python doesn't have an <code>equals</code> keyword."
     - content: "if x == 10"
       isCorrect: true
       explanation: "Correct. You must use two equal signs when comparing a value to a variable."
