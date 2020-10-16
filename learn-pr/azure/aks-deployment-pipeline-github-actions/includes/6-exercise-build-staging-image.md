@@ -8,7 +8,7 @@ You'll build this pipeline using GitHub Actions workflow.
 
 ## Build the Action workflow
 
-1. To start building your pipeline, go to the fork of the sample repository in the GitHub website and select the "Actions" tab.
+1. To start building your pipeline, go to the fork of the sample repository in the GitHub website and select the **Actions** tab.
 
     :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Open the actions tab in the GitHub website":::
 
@@ -127,7 +127,7 @@ You'll build this pipeline using GitHub Actions workflow.
 
     :::image type="content" source="../media/6-3-docker-action.png" alt-text="Select the action":::
 
-    In the opened panel, click on the `copy` icon to copy the usage YAML
+    In the opened panel, click on the **copy icon** to copy the usage YAML
 
     :::image type="content" source="../media/6-4-docker-copy.png" alt-text="Copy the YAML":::
 
@@ -231,62 +231,62 @@ You'll build this pipeline using GitHub Actions workflow.
               tags: latest
     ```
 
-1. Commit the changes by clicking the green button on the top right. Give the commit a message and click the "Commit new file" button
+1. Commit the changes by clicking the green button on the top right. Give the commit a message and click the **Commit new file** button
 
     :::image type="content" source="../media/6-5-commit-staging.png" alt-text="Commit the workflow to the repo":::
 
-You'll notice that, right after you commit the file, a new build will start on the "Actions" tab. This build will fail, because you haven't set the secrets yet!
+You'll notice that, right after you commit the file, a new build will start on the **Actions** tab. This build will fail, because you haven't set the secrets yet!
 
 :::image type="content" source="../media/6-6-first-build.png" alt-text="First failed build":::
 
 ### Set the secrets
 
-1. Go to the settings tab of the repositories. Scroll down until you find a left menu called "Secrets". Click on it.
+1. Go to the **Settings** tab in the repository. Scroll down until you find a left menu called **Secrets**. Click on it.
 
-1. Click the "New secret" button on the top right
+1. Click the **New secret** button on the top right
 
 1. Create `ACR_NAME` secret
 
-    1. Put `ACR_NAME` in the "Name" field.
+    1. Put `ACR_NAME` in the **Name** field.
     1. Run the following command in the Azure Cloud Shell to obtain the login server of the ACR you created earlier.
 
     ```azurecli-interactive
     az acr list --query "[?contains(resourceGroup, 'mslearn-gh-pipelines')].loginServer" -o table
     ```
 
-    1. Put the value in the "Value" field of the secret
+    1. Put the value in the **Value** field of the secret
 
 1. Create `ACR_LOGIN` secret
 
-    1. Put `ACR_LOGIN` in the "Name" field.
+    1. Put `ACR_LOGIN` in the **Name** field.
 
-    1. If you saved the values presented to you in the end of the set-up script, copy the "ACR Login Username" value. If not, run the following command in the Azure Cloud Shell to obtain the login of the ACR you created earlier.
+    1. If you saved the values presented to you in the end of the set-up script, copy the **ACR Login Username** value. If not, run the following command in the Azure Cloud Shell to obtain the login of the ACR you created earlier.
 
     ```azurecli-interactive
     az acr credential show --name <ACR_NAME> --query "username" -o table
     ```
 
-    1. Put the value in the "Value" field of the secret
+    1. Put the value in the **Value** field of the secret
 
 1. Create `ACR_PASSWORD` secret
 
-    1. Put `ACR_PASSWORD` in the "Name" field.
+    1. Put `ACR_PASSWORD` in the **Name** field.
 
-    1. If you saved the values presented to you in the end of the set-up script, copy the "ACR Login Username" value. If not, run the following command in the Azure Cloud Shell to obtain the login of the ACR you created earlier.
+    1. If you saved the values presented to you in the end of the set-up script, copy the **ACR Login Password** value. If not, run the following command in the Azure Cloud Shell to obtain the login of the ACR you created earlier.
 
     ```azurecli-interactive
     az acr credential show --name <ACR_NAME> --query "passwords[0].value" -o table
     ```
 
-    1. Put the value in the "Value" field of the secret
+    1. Put the value in the **Value** field of the secret
 
 ### Push the image
 
-1. Go back to the "Actions" tab
+1. Go back to the **Actions** tab
 
 1. Click the only execution in the list
 
-1. Click on the "Re-run jobs" in the right-hand side of the screen and then "Re-run all jobs"
+1. Click on the **Re-run jobs** in the right-hand side of the screen and then "Re-run all jobs"
 
     :::image type="content" source="../media/6-7-rerun-jobs.png" alt-text="Re-run all jobs":::
 

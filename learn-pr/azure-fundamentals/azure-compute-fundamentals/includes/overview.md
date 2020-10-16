@@ -9,7 +9,7 @@ Azure supports a wide range of computing solutions for development and testing, 
 
 ## Virtual machines
 
-Virtual machines (VMs) are software emulations of physical computers. They include a virtual processor, memory, storage, and networking resources. VMs host an operating system, and you're able to install and run software just like a physical computer. When using a remote desktop client, you can use and control the virtual machine as if you were sitting in front it.
+Virtual machines (VMs) are software emulations of physical computers. They include a virtual processor, memory, storage, and networking resources. VMs host an operating system, and you're able to install and run software just like a physical computer. When using a remote desktop client, you can use and control the virtual machine as if you were sitting in front of it.
 
 [Azure virtual machines](https://azure.microsoft.com/services/virtual-machines/?azure-portal=true) let you create and use virtual machines in the cloud. It provides IaaS and can be used in a variety of different ways. When you need total control over an operating system and environment, Azure VMs are an ideal choice. Just like a physical computer, you're able to customize all the software running on the VM. This ability is helpful when you are running custom software or custom hosting configurations. 
 

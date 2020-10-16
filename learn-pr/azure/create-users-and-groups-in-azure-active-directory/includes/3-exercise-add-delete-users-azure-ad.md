@@ -19,7 +19,7 @@ Create a new organization to hold all of the users you create in this exercise.
 
 1. Select **Create**.
 
-1. Wait for the creation of your organization to be completed. Note the full domain name, which includes on.microsoft.com. When complete, switch to the new organization by selecting the link in the gray box under the **Country or region** field. 
+1. Wait for the creation of your organization to be completed. Note the full domain name, which includes onmicrosoft.com. When complete, switch to the new organization by selecting the link in the gray box under the **Country or region** field. 
 
     ![Screenshot that shows the link to manage your new organization](../media/3-switch-directory.png)
 
