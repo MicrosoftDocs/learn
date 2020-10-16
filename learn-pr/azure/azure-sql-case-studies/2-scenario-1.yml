@@ -60,7 +60,7 @@ quiz:
       - content: "SQL authentication: username and password."
         isCorrect: false
         explanation: "Consider Azure AD."
-    - content: "Which authentication method would you recommend for the application on a non-Azure machine?"
+    - content: "Which authentication method would you recommend for the application on a non-Azure machine that is domain-joined?"
       choices:
       - content: "Azure AD authentication: integrated authentication."
         isCorrect: true
@@ -77,16 +77,16 @@ quiz:
       - content: "SQL authentication: username and password."
         isCorrect: false
         explanation: "Consider Azure AD."
-    - content: "Which authentication method would you recommend for SQL admin tools (SSMS, PowerShell) on a non-Azure machine?"
+    - content: "Which authentication method would you recommend for SQL admin tools (SSMS, PowerShell) on a non-Azure machine that is not domain-joined?"
       choices:
       - content: "Azure AD authentication: integrated authentication."
-        isCorrect: true
+        isCorrect: false
         explanation: "You can eliminate the use of passwords with SQL tools by using Azure AD integrated authentication, if the tools run on a domain-joined machine and the domain has been federated with Azure Active Directory. If your environment doesn't meet the prerequisites for integrated authentication, we recommend that you use Azure AD interactive authentication with multifactor authentication, which most SQL tools support."
       - content: "Azure AD authentication: client ID/certificate."
         isCorrect: false
         explanation: "Is there a passwordless option?"
       - content: "Azure AD authentication: interactive with multifactor authentication."
-        isCorrect: false
+        isCorrect: true
         explanation: "You can eliminate the use of passwords with SQL tools by using Azure AD integrated authentication, if the tools run on a domain-joined machine and the domain has been federated with Azure Active Directory. If your environment doesn't meet the prerequisites for integrated authentication, we recommend that you use Azure AD interactive authentication with multifactor authentication, which most SQL tools support."
       - content: "Azure AD authentication: managed identity."
         isCorrect: false

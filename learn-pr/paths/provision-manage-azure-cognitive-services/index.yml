@@ -3,7 +3,7 @@ uid: learn.wwl.provision-manage-azure-cognitive-services
 metadata:
   title: Provision and manage Azure Cognitive Services
   description: Learn about Cognitive Services and the important role they play in developing AI infused applications.  This learning path will introduce you to creating, managing, and deploying Cognitive Services in the Azure portal or through containers.
-  ms.date: 09/14/2020
+  ms.date: 10/15/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ prerequisites: |
   * Learners should also have experience with Docker and containers.
 summary: |
   Learn about Cognitive Services and the important role they play in developing AI infused applications.  This learning path will introduce you to creating, managing, and deploying Cognitive Services in the Azure portal or through containers.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/provision-and-manage-azure-cognitive-services.svg
 levels:
 - intermediate
 roles:

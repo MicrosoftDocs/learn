@@ -8,7 +8,7 @@ $rg=(get-AzResourceGroup)
 $rg=($rg|where-object {($_.tags['Use'] -ne 'Internal')}).ResourceGroupName
 ```
 
-In this code sample on the second line, you can see that the list of resource groups is being filtered by the tag called 'Use', and will return only those resource groups where that tag does not have a value of 'External'. Tags can be applied in the Azure portal, or programmatically via PowerShell, Azure CLI, or as part of Azure Resource Manager template deployment. Tags can also be applied at the subscription, resource group, or individual resource level. Tags can also be modified at any time. Azure supports applying up to 15 tags to each Azure resource.
+In this code sample on the second line, you can see that the list of resource groups is being filtered by the tag called 'Use', and will return only those resource groups where that tag does not have a value of 'Internal'. Tags can be applied in the Azure portal, or programmatically via PowerShell, Azure CLI, or as part of Azure Resource Manager template deployment. Tags can also be applied at the subscription, resource group, or individual resource level. Tags can also be modified at any time. Azure supports applying up to 15 tags to each Azure resource.
 
 Tags are also included in Azure billing information, so tagging by cost center means it can be much easier for management to break down the Azure charges. Tags are in the overview section of the blade for every Azure Resource. To add tags to a resource using the Azure portal, click tags, and enter the key and value for your tag. Click save after you apply the tags to your resources.
 

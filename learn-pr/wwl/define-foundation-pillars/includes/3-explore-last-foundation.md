@@ -117,7 +117,7 @@ Choose the tools that are right for you. Get support for infrastructure as a ser
 
 ![Diagram explains that Azure DevOps lets developers choose their tools and target any cloud or on-premises environment.](../media/2-3-devops.png)
 
-### Bootstrap the Dojo Classroom
+### Dojo Classroom Bootstrap
 
 With end-to-end solutions in Azure, teams can implement DevOps practices in each of the application lifecycle phases:
 

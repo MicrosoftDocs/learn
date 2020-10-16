@@ -25,7 +25,6 @@ roles:
 products:
 - azure
 - azure-active-directory
-achievement: learn.azure.add-custom-domain-name-azure-active-directory.badge
 units:
 - learn.azure.add-custom-domain-name-azure-active-directory.introduction
 - learn.azure.add-custom-domain-name-azure-active-directory.domain-names-add

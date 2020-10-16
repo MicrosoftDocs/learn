@@ -3,7 +3,7 @@ uid: learn.wwl.describe-performance-monitoring
 metadata:
   title: Describe performance monitoring
   description: "Compare Azure and on-premises tools for monitoring and measuring performance. Determine critical metrics. Understand the purpose of a baseline for comparative analysis."
-  ms.date: 08/02/2020
+  ms.date: 10/15/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Experience creating and configuring resources using the Azure portal.
   - Ability to use Windows Performance Monitor to monitor system components such as CPU, I/O, network traffic.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/describe-performance-monitoring.svg
 levels:
 - intermediate
 roles:
