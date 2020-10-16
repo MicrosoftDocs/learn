@@ -10,55 +10,45 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
-# Modules generally must include a form of interactive validation - either sandbox task validation (see the guidance link in the exercise unit template) or a knowledge check.
-# From an instructional design perspective, knowledge checks are intended to aid retention, not to actually test the user. Questions should not be overly difficult and should focus on the broad concepts covered in the module, not fine details.
-# Knowledge checks should be in their own units, like this one.
-# Aim to include 3-4 questions, each with 3 or 4 potential answers. Stick to real multiple-choice questions, not true/false.
-# Explanations are shown after the user answers. Write short explanations for all choices, both correct and incorrect. You don't need to begin with "Correct" or "Incorrect" - the platform makes this clear.
-# Users are given unlimited attempts to answer correctly.
-# This YAML template does not define a `content` property - most knowledge check units don't include body content. If you add it, the quiz will be rendered below the content.
-# See https://review.docs.microsoft.com/en-us/learn-docs/docs/unit-add-a-knowledge-check?branch=master for full guidance.
 quiz:
   questions:
-  - content: Question 1
+  - content: "What service allows administrators to modernize applications on Azure without making changes to production code?"
     choices:
-    - content: Answer 1
+    - content: "Azure App Service"
+      isCorrect: false
+      explanation: "Incorrect. Azure App Service offers many benefits for applications, but it doesn't offer the ability to modernize applications."
+    - content: "Azure Logic Apps"
       isCorrect: true
-      explanation: Explanation 1
-    - content: Answer 2
+      explanation: "Correct. Azure Logic Apps enables you to modernize an application without changing the production code, creating opportunities to automate and scale with minimal disruption."
+    - content: "Azure DevOps"
       isCorrect: false
-      explanation: Explanation 2
-    - content: Answer 3
+      explanation: "Incorrect. Azure DevOps is a comprehensive solution that spans from development to project management to deployment to operations. It doesn't offer the ability to modernize apps."
+    - content: "Application Insights"
       isCorrect: false
-      explanation: Explanation 3
-    - content: Answer 4
-      isCorrect: false
-      explanation: Explanation 4
-  - content: Question 2
+      explanation: "Incorrect. Application Insights allows administrators to monitor application performance in real time. It doesn't offer a way to modernize applications."
+  - content: 'Which of the following is an example of an Azure application platform?'
     choices:
-    - content: Answer 1
+    - content: Azure App Service
       isCorrect: true
-      explanation: Explanation 1
-    - content: Answer 2
+      explanation: "Azure App Service is an HTTP-based service that enables you to build and host many types of web-based solutions without managing infrastructure."
+    - content: Azure Load Balancer
       isCorrect: false
-      explanation: Explanation 2
-    - content: Answer 3
+      explanation: "Azure Load Balancer provides networking capabilities to balance network traffic."
+    - content: Azure Table Storage
       isCorrect: false
-      explanation: Explanation 3
-    - content: Answer 4
+      explanation: "Azure Table Storage is a data storage model to store structured data."
+    - content: Azure Cache for Redis
       isCorrect: false
-      explanation: Explanation 4
-  - content: Question 3
+      explanation: "Azure Cache for Redis is a caching storage technology to improve performance of servers."
+  - content: "Your Spring App requires a relational database for several of its websites. Which option would be ideal?"
     choices:
-    - content: Answer 1
+    - content: "Azure Cosmos DB"
+      isCorrect: false
+      explanation: "Azure Cosmos DB is the logical choice for existing NoSQL applications."
+    - content: "Azure Database for MySQL"
       isCorrect: true
-      explanation: Explanation 1
-    - content: Answer 2
+      explanation: "Azure Database for MySQL is the logical choice for existing relational database applications."
+    - content: "Azure Cache for Redis"
       isCorrect: false
-      explanation: Explanation 2
-    - content: Answer 3
-      isCorrect: false
-      explanation: Explanation 3
-    - content: Answer 4
-      isCorrect: false
-      explanation: Explanation 4
+      explanation: "Azure Cache for Redis is the logical choice for existing Key/Value applications."
+

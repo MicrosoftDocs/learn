@@ -1,4 +1,4 @@
-## Configure the Maven plugin
+# Configure the Maven plugin
 
 The deployment process to Azure App Service will use your Azure credentials from the Azure CLI automatically. If the Azure CLI is not installed locally, then the Maven plugin will authenticate with Oauth or device login. For more information, see [authentication with Maven plugins](https://github.com/microsoft/azure-maven-plugins/wiki/Authentication).
 
@@ -9,7 +9,7 @@ mvn com.microsoft.azure:azure-webapp-maven-plugin:1.11.0:config
 ```
 
 1. When prompted with **Subscription** option, select the proper `Subscription` by entering the number print in the line start.
-1. When prompted with **Web App** option, accept the defaut option `<create>` by pressing enter.
+1. When prompted with **Web App** option, accept the default option `<create>` by pressing enter.
 1. When prompted with **OS** option, select **linux** by pressing enter.
 1. Use the default Java version, 1.8, by pressing enter.
 1. Finally, press enter on the last prompt to confirm your selections.

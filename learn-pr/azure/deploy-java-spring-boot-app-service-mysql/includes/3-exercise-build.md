@@ -1,6 +1,4 @@
-## Sample application
-
-## Prepare the working environment
+# Prepare the working environment
 
 First, set up some environment variables by using the following commands:
 
