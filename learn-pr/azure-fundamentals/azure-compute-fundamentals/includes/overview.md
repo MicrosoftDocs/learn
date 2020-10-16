@@ -4,7 +4,7 @@ Azure supports a wide range of computing solutions for development and testing, 
 
 * Azure Virtual Machines
 * Azure Container Instances
-* Azure App Services
+* Azure App Service
 * Azure Functions (or _serverless computing_)
 
 ![Screenshot of the Azure portal compute services page that includes VMs and containers.](../media/compute-services.png)
@@ -14,7 +14,7 @@ Azure supports a wide range of computing solutions for development and testing, 
 
 ## Virtual machines
 
-VMs are software emulations of physical computers. They include a virtual processor, memory, storage, and networking resources. VMs host an operating system, and you can install and run software just like a physical computer. When using a remote desktop client, you can use and control the VM as if you were sitting in front it.
+Virtual machines are software emulations of physical computers. They include a virtual processor, memory, storage, and networking resources. VMs host an operating system, and you're able to install and run software just like a physical computer. When using a remote desktop client, you can use and control the VM as if you were sitting in front of it.
 
 With [Virtual Machines](https://azure.microsoft.com/services/virtual-machines/?azure-portal=true), you can create and use VMs in the cloud. Virtual Machines provides infrastructure as a service (IaaS) and can be used in different ways. When you need total control over an operating system and environment, VMs are an ideal choice. Just like a physical computer, you can customize all the software running on the VM. This ability is helpful when you're running custom software or custom hosting configurations.
 

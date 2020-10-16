@@ -13,7 +13,7 @@ summary: In this module, you'll learn how to take advantage of several virtualiz
 abstract: | 
   After completing this module, you'll be able to describe the benefits and usage of:
   - Azure Virtual Machines
-  - Azure App Services
+  - Azure App Service
   - Azure Container Instances
   - Azure Kubernetes Service
   - Azure Functions

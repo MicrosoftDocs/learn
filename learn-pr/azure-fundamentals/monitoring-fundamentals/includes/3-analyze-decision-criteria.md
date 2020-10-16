@@ -1,4 +1,4 @@
-In this unit, you'll analyze the criteria experts employ when choosing an Azure artificial intelligence (AI) service for a given business need.  Understanding the criteria can also help you better understand the nuanced differences between each product.
+In this unit, you'll analyze the criteria experts employ when choosing an Azure monitoring service for a given business need.  Understanding the criteria can also help you better understand the nuanced differences between each product.
 
 ## Do you need an analysis of how you're using Azure in order to reduce costs?  Improve resilience?  Harden your security?
 

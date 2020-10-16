@@ -1,6 +1,6 @@
 In this module, you learned how you can help Tailwind Traders resolve its application demand challenges through the use of Azure virtualization services like Azure Virtual Machines, Azure Container Instances, and Azure Kubernetes Service. You also learned how you can use:
 
-* Azure App Services to create your website front-ends.
+* Azure App Service to create your website front-ends.
 * Azure Functions to create event-driven application logic that only runs when you need it.
 * Windows Virtual Desktop to quickly provide a customized operating system and software environment for your remote workers.
 

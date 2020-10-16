@@ -13,7 +13,7 @@ This scenario is exactly what you can do in Azure. You can create compute resour
 After completing this module, you'll be able to describe the benefits and usage of:
 
 - Azure Virtual Machines
-- Azure App Services
+- Azure App Service
 - Azure Container Instances
 - Azure Kubernetes Service
 - Azure Functions

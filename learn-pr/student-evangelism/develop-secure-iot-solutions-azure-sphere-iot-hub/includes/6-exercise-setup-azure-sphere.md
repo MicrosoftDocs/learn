@@ -64,14 +64,14 @@ Alternatively, you can download the drivers from [Future Technology Devices Inte
 > [!NOTE]
 > If you have already claimed your Azure Sphere, you can proceed to the next step.
 
+> [!NOTE]
+> Claiming an Azure Sphere device is a one-time operation. You can't move the device to another Azure Tenant once it has been claimed. However, you can add additional users and roles to the Azure Sphere tenant, including users with Admin rights.
+
 - Run the following command to claim the device.
 
    ```
    azsphere device claim
    ```
-
-> [!NOTE]
-> Claiming an Azure Sphere device is a one-time operation. You can't move the device to another Azure Tenant once it has been claimed. However, you can add additional users and roles to the Azure Sphere tenant, including users with Admin rights.
 
 ## Configure the Azure Sphere WiFi network
 

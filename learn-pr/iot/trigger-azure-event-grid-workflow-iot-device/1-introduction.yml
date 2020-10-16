@@ -5,7 +5,7 @@ metadata:
   description: In this module, you'll learn how to integrate Azure IoT Hub with Azure Event Grid to trigger business workflows.
   ms.date: 03/20/2020
   author: olivierbloch
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction
