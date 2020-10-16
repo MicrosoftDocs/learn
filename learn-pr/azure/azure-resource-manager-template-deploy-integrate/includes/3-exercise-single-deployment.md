@@ -14,12 +14,12 @@ Be sure you are signing in to the same account that activated the sandbox.
 
 ::: zone pivot="powershell"
 
-[!include[](./powershell/3-exercise-singledeployment-powershell.md)]
+[!include[](./powershell/3-exercise-single-deployment-powershell.md)]
 
 ::: zone-end
 
 ::: zone pivot="cli"
 
-[!include[](./azurecli/3-exercise-singledeployment-azurecli.md)]
+[!include[](./azurecli/3-exercise-single-deployment-azurecli.md)]
 
 ::: zone-end

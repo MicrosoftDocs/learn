@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.resource-manager-template-deploy-integrate.5-exercise-linkedtemplates
+uid: learn.azure.resource-manager-template-deploy-integrate.5-exercise-linked-templates.md
 title: Exercise - Deploying linked and nested ARM templates
 metadata:
   title: Exercise - Deploying linked and nested ARM templates
@@ -13,4 +13,4 @@ metadata:
 azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-linkedtemplates.md)]
+  [!include[](includes/5-exercise-linked-templates.md.md)]
