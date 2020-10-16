@@ -5,7 +5,7 @@ metadata:
   description: Explains how direct methods are used to specify settings for a remote device.
   ms.date: 10/01/2019
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Write code to invoke a direct method

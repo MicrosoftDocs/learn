@@ -3,7 +3,7 @@ uid: learn.azure.cloud-adoption-framework-ready.5-azure-landing-zone-options
 title: Choose an Azure landing zone option
 metadata:
   title: Choose an Azure landing zone option
-  description: Apply what you've learned to choose the best Azure landing zone implementation option
+  description: Apply what you've learned to choose the best Azure landing zone implementation option.
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: bblanch
@@ -25,7 +25,7 @@ quiz:
       explanation: For this customer, the learning curve and complexity of an enterprise-scale approach may be a bit too steep.
     - content: CAF Terraform modules
       isCorrect: false
-      explanation: There is no indication of existing Terraform dependencies in this customer narrative
+      explanation: There isn't an indication of existing Terraform dependencies in this customer narrative.
   # - content: Which of the following indicators would make you consider an alternative implementation option?
   #   choices:
   #   - content: Openness to embrace cloud-native operations tools and processes
@@ -37,7 +37,7 @@ quiz:
   #   - content: Need to meet third compliance requirements before adopting the cloud
   #     isCorrect: false
   #     explanation: This is a great indicator. Are there others that may stand out more?
-  #   - content: Security posture requires protection for all workloads (even low risk, non-critical applications and data)
+  #   - content: Security posture requires protection for all workloads (even low-risk, non-critical applications and data).
   #     isCorrect: false
   #     explanation: This is a great indicator. Are there others that may stand out more?
   #   - content: All of the above
@@ -53,4 +53,4 @@ quiz:
       explanation: Correct!
     - content: CAF Terraform modules
       isCorrect: false
-      explanation: There is no indication of existing Terraform dependencies in this customer narrative
+      explanation: There isn't an indication of existing Terraform dependencies in this customer narrative. 
