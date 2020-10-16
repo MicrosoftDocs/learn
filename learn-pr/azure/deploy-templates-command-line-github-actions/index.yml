@@ -7,7 +7,7 @@ metadata:
   ms.author: pierrer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Deploy modular, reusable ARM templates from the command line and by using GitHub Actions"
+title: "Deploy modular and reusable ARM templates from the command line and by using GitHub Actions"
 summary: Learn how to deploy Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and from GitHub Actions. Use linked templates to break down complex templates into templates that are more modular. 
 abstract: |
   After completing this module, you'll be able to:
