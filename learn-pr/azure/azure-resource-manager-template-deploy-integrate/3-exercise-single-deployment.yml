@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.resource-manager-template-deploy-integrate.3-exercise-single-deployment
+uid: learn.azure.deploy-templates-command-line-github-actions.3-exercise-single-deployment
 title: Exercise - Deploying your ARM templates
 metadata:
   title: Exercise - Deploying your Azure Manager Resource Templates

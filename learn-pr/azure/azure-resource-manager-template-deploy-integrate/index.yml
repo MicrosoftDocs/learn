@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.resource-manager-template-deploy-integrate
+uid: learn.azure.deploy-templates-command-line-github-actions
 metadata:
   description: Learn how to deploy Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and from GitHub Actions.
   ms.date: 10/15/2020
@@ -7,7 +7,7 @@ metadata:
   ms.author: pierrer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Deploy Azure resources by using Azure Resource Manager (ARM) templates"
+title: "Deploy modular, reusable ARM templates from the command line and by using GitHub Actions"
 summary: Learn how to deploy Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and from GitHub Actions. Use linked templates to break down complex templates into templates that are more modular. 
 abstract: |
   After completing this module, you'll be able to:
@@ -36,14 +36,14 @@ products:
 - azure
 - vs-code
 units:
-- learn.azure.resource-manager-template-deploy-integrate.1-introduction
-- learn.azure.resource-manager-template-deploy-integrate.2-single-deployment
-- learn.azure.resource-manager-template-deploy-integrate.3-exercise-single-deployment
-- learn.azure.resource-manager-template-deploy-integrate.4-linked-templates
-- learn.azure.resource-manager-template-deploy-integrate.5-exercise-linked-templates.md
-- learn.azure.resource-manager-template-deploy-integrate.6-github-actions
-- learn.azure.resource-manager-template-deploy-integrate.7-exercise-github-actions
-- learn.azure.resource-manager-template-deploy-integrate.8-knowledge-check
-- learn.azure.resource-manager-template-deploy-integrate.9-summary
+- learn.azure.deploy-templates-command-line-github-actions.1-introduction
+- learn.azure.deploy-templates-command-line-github-actions.2-single-deployment
+- learn.azure.deploy-templates-command-line-github-actions.3-exercise-single-deployment
+- learn.azure.deploy-templates-command-line-github-actions.4-linked-templates
+- learn.azure.deploy-templates-command-line-github-actions.5-exercise-linked-templates.md
+- learn.azure.deploy-templates-command-line-github-actions.6-github-actions
+- learn.azure.deploy-templates-command-line-github-actions.7-exercise-github-actions
+- learn.azure.deploy-templates-command-line-github-actions.8-knowledge-check
+- learn.azure.deploy-templates-command-line-github-actions.9-summary
 badge:
-  uid: learn.azure.resource-manager-template-deploy-integrate.badge
+  uid: learn.azure.deploy-templates-command-line-github-actions.badge

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.resource-manager-template-deploy-integrate.4-linked-templates
+uid: learn.azure.deploy-templates-command-line-github-actions.4-linked-templates
 title: Deploying linked and nested ARM templates
 metadata:
   title: Deploying linked and nested ARM templates
