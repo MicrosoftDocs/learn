@@ -27,7 +27,7 @@
           "P4"
         ],
         "metadata": {
-          "description": "Describes plan's pricing tier and instance size. Check details at https://azure.microsoft.com/en-us/pricing/details/app-service/"
+          "description": "Describes plan's pricing tier and instance size. Check details at https://azure.microsoft.com/pricing/details/app-service/"
         }
       },
       "skuCapacity": {
