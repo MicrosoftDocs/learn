@@ -47,7 +47,7 @@ The following table highlights some of the user experience features that are sup
 |Functions within VM   | - Text copy and paste</br>- Features like file copy not currently supported        |
 
 
-## Roles required required to use Bastion
+## Roles required to use Bastion
 
 As with other Azure resources, you need access to the resource group or the Bastion resource itself to deploy or manage Bastion.
 
