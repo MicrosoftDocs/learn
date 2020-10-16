@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-﻿In the previous two modules, you learned how to create ARM templates.
-=======
-﻿In [Deploy consistent infrastructure in Azure by using ARM templates](https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/?azure-portal-true) and [Deploy to multiple Azure environments by using ARM templates](https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse/?azure-portal=true), you learned the basics around creating Azure Resource Manager (ARM) templates.
->>>>>>> dc2050ade7edd80558348a80bfb366a04bb4d928
+In [Deploy consistent infrastructure in Azure by using ARM templates](https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/?azure-portal-true) and [Deploy to multiple Azure environments by using ARM templates](https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse/?azure-portal=true), you learned the basics around creating Azure Resource Manager (ARM) templates.
 
 In this module, you focus on some of the ways you can deploy your templates. You start by deploying a template that's stored on your local computer. Then you deploy a template that's stored on GitHub.
 
-<<<<<<< HEAD
 In this module, you'll focus on how you deploy templates. You'll start with deploying a local template, and then deploy an external template that is staged in GitHub. You'll learn how to deploy a template that links to other external templates. Finally, you'll learn how to automate template deployment by integrating it with your CI/CD pipeline.
-=======
-Along the way, you deploy a template that links to other external templates. Finally, you automate the process by deploying a template through GitHub Actions.
->>>>>>> dc2050ade7edd80558348a80bfb366a04bb4d928
 
 ## Learning objectives
 
