@@ -4,7 +4,7 @@ Due to a growing number of acquisitions over the last decade, Tailwind Traders u
 
 Today's applications are required to be highly responsive and always online. To achieve low latency and high availability, instances of these applications need to be deployed in datacenters that are close to their users. Applications need to respond in real time to large changes in usage at peak hours, store ever increasing volumes of data, and make this data available to users in milliseconds. To help your company reach its goals, Azure's database services are globally distributed, and Azure supports many of the industry standard databases and APIs.
 
-In this module, you'll learn about several of the primary database services that are available on Azure, and you'll analyze some of the reasons why each of these database services might be the right choice for you needs.
+In this module, you'll learn about several of the primary database services that are available on Azure, and you'll analyze some of the reasons why each of these database services might be the right choice for your needs.
 
 ## Learning objectives
 
