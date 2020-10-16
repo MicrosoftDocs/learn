@@ -19,13 +19,13 @@ summary: |
     - Build a message decoder program
     - Create a personality quiz to determine which character you're most like from the WONDER WOMAN 1984 film
   
-  <strong>No coding experience is required to complete this learn module.</strong>
+  <strong>No coding experience is required to complete this Microsoft Learn learning path.</strong>
   
-  Once you complete this learning path, you'll have a great foundation to build upon in subsequent Python Learning Paths.
+  After you complete this learning path, you'll have a great foundation to build on in later Python learning paths.
   
 prerequisites: |
   None.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/python-partnership.svg
 levels:
 - beginner
 roles:
