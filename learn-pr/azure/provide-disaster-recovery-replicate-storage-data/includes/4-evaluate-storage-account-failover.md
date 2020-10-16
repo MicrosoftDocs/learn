@@ -35,7 +35,7 @@ The process is as follows:
 
 1. **Failover is complete**
 
-    When the failover process is complete, your storage account is updated to use locally redundant storage. If you want to replicate your data to a secondary region, configure the storage account to again use a geo-redundant storage option like geographically redundant storage or geo-zone-redundant storage.
+    When the failover process is complete, your storage account is updated to use locally redundant storage (LRS). If you want to replicate your data to a secondary region, configure the storage account to again use a geo-redundant storage option like geographically redundant storage (GRS) or geo-zone-redundant storage (GZRS).
 
 ### Data loss
 
