@@ -44,7 +44,7 @@ quiz:
       explanation: "Nested templates allow you to store many individual templates in one main template file.  But each file cannot be reused as easily as if they were separate files linked together."
     - content: "To modularize your deployment using linked templates is the recommended way."
       isCorrect: true
-      explanation: "Linked templates allow you to create reusable, composable, and modular deployments comprised of many individual arm templates."
+      explanation: "Linked templates allow you to create reusable, composable, and modular deployments comprised of many individual ARM templates."
     - content: "The best way to modularize your deployment is to use GitHub Actions to control the deployment"
       isCorrect: false
       explanation: "GitHub Actions is a great way to deploy your Infrastructure as Code (IaC) in a controlled manner but it does not provide any benefits to modularize your templates"
