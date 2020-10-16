@@ -316,7 +316,7 @@ In the next exercise you will pass inline parameters to your deployment, you'll 
 
     ```json
       {- Finished ..
-        "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/DeployLocalTemplate-3-2020-08-19",
+        "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/DeployLocalTemplate-3-2020-08-19",
         "location": null,
         "name": "DeployLocalTemplate-3-2020-08-19",
         "properties": {
@@ -329,7 +329,7 @@ In the next exercise you will pass inline parameters to your deployment, you'll 
           "onErrorDeployment": null,
           "outputResources": [
             {
-              "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Network/virtualNetworks/VNet-001",
+              "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Network/virtualNetworks/VNet-001",
               "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b"
             }
           ],
@@ -406,7 +406,7 @@ In some instances you will need to deploy from an external or remote location in
 
     ```json
     {- Finished ..
-      "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/DeployLocalTemplate-4-2020-08-19",
+      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/DeployLocalTemplate-4-2020-08-19",
       "location": null,
       "name": "DeployLocalTemplate-4-2020-08-19",
       "properties": {
@@ -419,7 +419,7 @@ In some instances you will need to deploy from an external or remote location in
         "onErrorDeployment": null,
         "outputResources": [
           {
-            "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Storage/storageAccounts/store7zk7eyqew54l4",
+            "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Storage/storageAccounts/store7zk7eyqew54l4",
             "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b"
           }
         ],

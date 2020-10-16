@@ -119,7 +119,7 @@ In this exercise, we will review and deploy a template that includes two linked 
 
       ```json
       {- Finished ..
-        "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/DeployLocalTemplate-3-2020-08-19",
+        "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/DeployLocalTemplate-3-2020-08-19",
         "location": null,
         "name": "DeployLocalTemplate-3-2020-08-19",
         "properties": {
@@ -129,13 +129,13 @@ In this exercise, we will review and deploy a template that includes two linked 
             {
               "dependsOn": [
                 {
-                  "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/storage",
+                  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/storage",
                   "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b",
                   "resourceName": "storage",
                   "resourceType": "Microsoft.Resources/deployments"
                 }
               ],
-              "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/identity",
+              "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/identity",
               "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b",
               "resourceName": "identity",
               "resourceType": "Microsoft.Resources/deployments"
@@ -147,11 +147,11 @@ In this exercise, we will review and deploy a template that includes two linked 
           "onErrorDeployment": null,
           "outputResources": [
             {
-              "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Network/virtualNetworks/vnet-001",
+              "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Network/virtualNetworks/vnet-001",
               "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b"
             },
             {
-              "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Storage/storageAccounts/store7zk7eyqew54l4",
+              "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Storage/storageAccounts/store7zk7eyqew54l4",
               "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b"
             }
           ],
