@@ -1,4 +1,4 @@
-Due to a growing number of acquisitions over the last decade, Tailwind Traders uses a variety of database and analytics technologies. As they begin to migrate existing data workloads and deploy new data workloads to Azure, they need to understand which Azure technology will be appropriate for each workload. Your company's Chief Technology Officer (CTO) has assigned you the task of researching the different database options that are available. This will help your company choose the right options for each of your data scenarios.
+Due to a growing number of acquisitions over the last decade, Tailwind Traders uses a variety of database and analytics technologies. As the company begins to migrate existing data workloads and deploy new data workloads to Azure, it needs to understand which Azure technology will be appropriate for each workload. The company's Chief Technology Officer (CTO) has assigned you the task of researching the different database options that are available. This will help your company choose the right options for each of your data scenarios.
 
 ![Tailwind Traders company logo.](../../shared/media/tailwind-traders-logo.png)
 
