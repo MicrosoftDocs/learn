@@ -1,0 +1,288 @@
+Helm makes it simple to deploy applications to any Kubernetes clusters by using Helm charts. You use Helm to template your application's deployment information as a Helm chart, which you then use to deploy your application.
+
+Assume your development team already deploys your company's drone tracking website to your Azure Kubernetes Service cluster. The team creates three files to deploy the website.
+
+- A deployment manifest that describes how to install and run the application on the cluster.
+
+- A service manifest that describes how to expose the website on the cluster.
+
+- An ingress manifest that describes how the traffic from outside the cluster routed to the web app.
+
+The team deploys these files to each of the three environments as part of the software development life cycle. Each of the three files is updated with variables and values that are specific to the environment. Since each file is hardcoded, the maintenance of these files is error-prone.
+
+Here you'll see how to create and install a Helm chart.
+
+## How does Helm process a chart?
+
+The Helm client implements a Go language-based template engine that parses all available files in a chart's folders. The template engine creates Kubernetes manifest files by combining the templates in the chart's `templates/` folder with the values from the `chart.yaml` and `values.yaml` files.
+
+:::image type="content" source="../media/4-helm-chart-process.svg" border="false" alt-text="A diagram shows a process parsing a Helm template file and values file to create and deploy an application to a Kubernetes cluster using manifest files.":::
+
+Once the manifest files are available, the client can install, upgrade, and delete the application defined in the generated manifest files.
+
+## How to define a `Chart.yaml` file
+
+The `Chart.yaml` is one of the required files in a Helm chart definition and provides information about the chart. The contents of the file consists of three required and various optional fields.
+
+The three required fields are:
+
+- The `apiVersion `. This value is the chart API version to use. You set the version to `v2` for Charts that require Helm 3.
+
+- The `name` of the chart.
+
+- The `version` of the chart. The version number uses semantic versioning 2.0.0 and follows the `MAJOR.MINOR.PATCH` version number notation.
+
+Here is an example of a basic `Chart.yaml` file:
+
+```yml
+apiVersion: v2
+name: webapp
+description: A Helm chart for Kubernetes
+
+# A chart can be either an 'application' or a 'library' chart.
+#
+# Application charts are a collection of templates that can be packaged into versioned archives
+# to be deployed.
+#
+# Library charts provide useful utilities or functions for the chart developer. They're included as
+# a dependency of application charts to inject those utilities and functions into the rendering
+# pipeline. Library charts do not define any templates and therefore, cannot be deployed.
+type: application
+
+# This is the chart version. This version number should be incremented each time you make changes
+# to the chart and its templates, including the app version.
+version: 0.1.0
+
+# This is the version number of the application being deployed. This version number should be
+# incremented each time you make changes to the application.
+appVersion: 1.0.0
+```
+
+Notice the inclusion of the `type` field above. You can create charts to install either applications or libraries. The default chart type is `application` and can be set to `library` to specify the chart will install a library.
+
+Many optional fields are available to tailer the chart deployment process. For example, you can use the `dependencies` field to specify additional requirements for the chart. For example, a web app that depends on a database.
+
+Detail coverage of all optional fields is outside the scope of this module. However, a link to the Helm documentation is available in the summary section of the module.
+
+## How to define a chart template
+
+A Helm Chart template is a file describes different deployment type manifest files. Chart templates are written in the Go template language and provides additional template functions to automate the creation of Kubernetes object manifest files.
+
+Template files are stored in the `templates/` folder of a chart and processed by the template engine to create the final object manifest. 
+
+For example, the development team uses the following deployment manifest file to deploy the drone tracking website.
+
+```yml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp
+  labels:
+    app: dronetracker
+    service: webapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: webapp
+  template:
+    metadata:
+      labels:
+        app: dronetracker
+        service: webapp
+    spec:
+      containers:
+        - name: webapp
+          image: my-acr-registry.azurecr.io/webapp:linux-v1
+          imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 250m
+              memory: 256Mi
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+```
+
+Notice how the location of the container image is hardcoded. Helm charts allow you to define manifest templates with value placeholders to avoid hard coding values.
+
+For example, the development team wants to allow for install time configuration values. The container registry, docker release tag, and Kubernetes pull policy should be configurable in the template. To allow for this configuration, you can modify the existing manifest file with the following example template syntax.
+
+```yml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  ...
+spec:
+  ...
+  template:
+    ...
+    spec:
+      containers:
+        - name: webapp
+          image: {{ .Values.registry }}/webapp:{{ .Values.dockerTag }}
+          imagePullPolicy: {{ .Values.pullPolicy }}
+          resources:
+          ...
+          ports:
+            ...
+```
+
+Notice the use of the `{{.Values.<property>}}` syntax. The syntax allows you to create placeholders for each custom value.
+
+The process of creating Helm charts by hand is tedious. An easy way to create a Helm chart is to use the `Helm create` command to create a new Helm chart. You then customize the autogenerated files to match your application's requirements.
+
+## How to define a `values.yaml` file
+
+You use chart values to customize the configuration of a Helm chart. Chart values can either be predefined or supplied by the user at the time of deploying the chart.
+
+A **predefined** value is a case-sensitive value that is predefined in the context of a Helm Chart and can't be changed by a user. For example, you can use `Release.Name` to reference the name of the release or `Release.IsInstall` to check if the current operation is an installation.
+
+You may also use predefined values to extract data from the contents of the `Chart.yaml`. For example, if you want to check the chart's version, you'd reference `Chart.Version`. Keep in mind that you can only reference well-known fields. You can think of predefined values as constants to use in the templates you create.
+
+The syntax to include value names in a template file is done by enclosing the value name in double curly braces, for example, `{{.Release.Name}}`. Notice the use of a period in front of the value name. When you use a period in this way, the period functions as a lookup operator and indicates the variable's current scope.
+
+For example, the following YAML snippet contains a dictionary defined in a values file.
+
+```yml
+object:
+  key: value
+```
+
+To access the value in a template, you can use the following syntax:
+
+```yml
+{{ .Values.object.key }}
+```
+
+A **supplied** value allows you to process arbitrary values in the chart template. The `values.yaml` file defines these values.
+
+In the example, the development team allows for three configurable values. A container registry name, a docker release tag, and a Kubernetes pull policy.
+
+```yml
+apiVersion: apps/v1
+kind: Deployment
+    ...
+      containers:
+        - name: webapp
+          image: {{.Values.registry}}/webapp:{{.Values.dockerTag}}
+          imagePullPolicy: {{.Values.pullPolicy}}
+          resources:
+          ...
+```
+
+Here is an example of the `values.yaml` file.
+
+```yaml
+apiVersion: v2
+name: webapp
+description: A Helm chart for Kubernetes
+...
+registry: "my-acr-registry.azurecr.io"
+dockerTag: "linux-v1"
+pullPolicy: "Always"
+```
+
+Once the template engine applies the values, the final result will look like this example:
+
+```yml
+apiVersion: apps/v1
+kind: Deployment
+   ...
+     containers:
+       - name: webapp
+         image: my-acr-registry.azurecr.io/webapp:linux-v1
+         imagePullPolicy: Always
+         resources:
+         ...
+```
+
+## How to use a Helm repository
+
+A Helm repository is a dedicated HTTP server that stores information on Helm charts. You configure Helm repositories with the Helm client for it to install charts from a repository using the `helm repo add` command.
+
+For example, to add the ASP.NET Core chart available from the marketplace Helm repository, you can run the following command:
+
+```bash
+helm repo add azure-marketplace https://marketplace.azurecr.io/helm/v1/repo
+```
+
+Information about charts available on a repository is cached on the client host. You'll need to periodically update the cache manually to fetch the repository's latest information by running the `helm repo update` command.
+
+The `helm search repo` command allows you to search for charts on all locally added Helm repositories. You can run the `helm search repo` command by itself to return a list of all known Helm charts for each added repository. The result lists the chart's name, version, and app version deployed by the chart, as shown in this example:
+
+```output
+NAME                                                CHART VERSION APP VERSION   DESCRIPTION                                       
+azure-marketplace/airflow                           6.4.0         1.10.12       Apache Airflow is a platform to programmaticall...
+azure-marketplace/apache                            7.3.24        2.4.46        Chart for Apache HTTP Server                      
+azure-marketplace/aspnet-core                       0.2.0         3.1.7         ASP.NET Core is an open-source framework create...
+azure-marketplace/bitnami-common                    0.0.7         0.0.7         Chart with custom tempaltes used in Bitnami cha...
+azure-marketplace/cassandra                         5.6.2         3.11.7        Apache Cassandra is a free and open-source dist...
+...
+```
+
+You can search for a specific chart by adding a search term to the `helm search repo` command. For example, if you're searching for and ASP.NET based chart, you can use the following command:
+
+```bash
+helm search repo aspnet
+```
+
+In this example, the local client has two repositories registered and returns a result from each.
+
+```output
+NAME                          CHART VERSION APP VERSION DESCRIPTION                                       
+azure-marketplace/aspnet-core 0.2.0         3.1.7       ASP.NET Core is an open-source framework create...
+bitnami/aspnet-core           0.2.0         3.1.7       ASP.NET Core is an open-source framework create...
+```
+
+## How to test a Helm chart
+
+Helm provides an option for you to generate the manifest files that the template engine creates from the chart. This feature allows you to test the chart before a release by combining two additional parameters. These parameters are `--dry-run` and `debug`.
+
+The `--dry-run` parameter makes sure that the installation is simulated, and the `--debug` parameter enables verbose output. Here is an example of the `--dry-run` enabled command.
+
+```bash
+helm install --debug --dry-run my-drone-webapp ./drone-webapp
+```
+
+The command lists information about the values used and all generated files. You may have to scroll to view all of the generated output.
+
+## How to install a Helm chart
+
+You use the `helm install` command to install a chart. A Helm chart can be installed from any of the following  locations.
+
+- Chart folder
+
+- A packaged `.tgz` tar archive chart
+
+- A Helm repository
+
+However, the required parameters differ depending on the location of the chart. In all cases, the install command requires the name of the chart you want to install, and a name for the release the installation will create.
+
+A local chart can be installed using an unpacked chart folder of files or a packed `.tgz` tar archive. To install a chart, the helm command references the local file system for the chart's location. Here is an example of the install command that will deploy a release of an unpacked chart with the name `drone-webapp`.
+
+```bash
+helm install my-drone-webapp ./drone-webapp
+```
+
+In the above example, the `my-drone-webapp` parameter is the name of the release and the `./my-drone-webapp` parameter is the name of the unpacked chart package.
+
+A packed chart is installed by referencing the packed chart filename. The following example shows the syntax for the same application now packed as a tar archive.
+
+```bash
+helm install my-drone-webapp ./drone-webapp.tgz
+```
+
+When installing a chart from a Helm repository, you use a chart reference as the chart's name. The chart reference includes two parameters, the repository name and the name of the chart.
+
+Here is an example of the install command that installs a default configured ASP.NET Core application from the marketplace Helm repository.
+
+```bash
+helm install my-release azure-marketplace/aspnet-core
+```
+
+In the example, the `azure-marketplace/aspnet-core` parameter contains the reference of the repo, `azure-marketplace` the name of the chart, `aspnet-core`.

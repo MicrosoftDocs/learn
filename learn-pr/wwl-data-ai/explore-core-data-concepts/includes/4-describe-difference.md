@@ -34,9 +34,9 @@ Stream processing is ideal for time-critical operations that require an instant 
 
 Apart from the way in which batch processing and streaming processing handle data, there are other differences:
 
-- *Data Scope*: Batch data can process all the data in the dataset. Stream processing typically only has access to the most recent data received, or within a rolling time window (the last 30 seconds, for example).
+- *Data Scope*: Batch processing can process all the data in the dataset. Stream processing typically only has access to the most recent data received, or within a rolling time window (the last 30 seconds, for example).
 
-- *Data Size*: Batch data is suitable for handling large datasets efficiently. Stream processing is intended for individual records or *micro batches* consisting of few records.
+- *Data Size*: Batch processing is suitable for handling large datasets efficiently. Stream processing is intended for individual records or *micro batches* consisting of few records.
 
 - *Performance*: The latency for batch processing is typically a few hours. Stream processing typically occurs immediately, with latency in the order of seconds or milliseconds. Latency is the time taken for the data to be received and processed.
 

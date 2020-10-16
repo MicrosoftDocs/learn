@@ -151,6 +151,6 @@ The deployment succeeded, so let's see the resulting configuration in action.
 
     Navigate to the IP address you see from a separate browser tab. You see this.
 
-    ![A web browser showing the resulting IIS configuration](../../media/6-browser-windows.png)
+    ![Screenshot of a web browser that shows the message welcome to Azure.](../../media/6-browser-windows.png)
 
 Great work! With the Custom Script Extension resource in place, you're able to extend your deployment to do more.

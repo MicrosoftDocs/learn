@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.app-package-management-using-helm.what-is-helm
+title: What is Helm?
+metadata:
+  description: Explore how Helm simplifies application deployment and helps you set the correct versions of software libraries and settings in multiple environments. 
+  title: What is Helm?
+  author: cryophobia
+  ms.author: chrvaw
+  ms.prod: learning-azure
+  ms.topic: interactive-tutorial
+  ms.date: 9/30/2020
+
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-what-is-helm.md)]

@@ -3,19 +3,19 @@ uid: learn.wwl.process-natural-language-azure-cognitive-language-services
 metadata:
   title: Process natural language with Azure Cognitive Language Services
   description: Process natural language with Azure Cognitive Language Services
-  ms.date: 07/30/2020
+  ms.date: 10/15/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Process natural language with Azure Cognitive Language Services
 prerequisites: |
   * Knowledge of navigating the Azure portal
-  * Knowledge of at least one programming language such as C#, Python, or JavaScript
+  * Knowledge of at least one programming language such as C# or Python
   * Basic understanding of REST APIs and JSON
 summary: |
   Learn to implement language services using APIs for sentiment analysis, extracting key phrases and entities from text, detect the languages, and implement deeper understanding of input through the use of natural language understanding with LUIS.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/process-natural-language-with-azure-cognitive-language-services.svg
 levels:
 - intermediate
 roles:

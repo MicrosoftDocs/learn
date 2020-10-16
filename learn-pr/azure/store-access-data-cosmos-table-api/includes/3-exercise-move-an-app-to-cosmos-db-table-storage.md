@@ -16,7 +16,7 @@ Let's start by creating a storage account. Later, you'll configure the app to st
 
 1. Select **Storage**, and then click **Storage account**.
 
-1. In the **Create storage account** wizard, complete the **Basics** page with these values, and then click <nobr>**Next:&nbsp;Advanced&nbsp;&gt;**<nobr>.
+1. In the **Create storage account** wizard, complete the **Basics** page with these values, and then click <nobr>**Next:&nbsp;Advanced&nbsp;&gt;**</nobr>.
 
    | Field | Value |
    | --- | --- |
