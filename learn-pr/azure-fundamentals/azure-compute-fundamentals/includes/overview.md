@@ -1,4 +1,4 @@
-Azures compute is an on-demand computing service for running cloud-based applications. It provides computing resources such as disks, processors, memory, networking, and operating systems. The resources are available on-demand and can typically be made available in minutes or even seconds. You pay only for the resources you use, and only for as long as you're using them.
+Azure compute is an on-demand computing service for running cloud-based applications. It provides computing resources such as disks, processors, memory, networking, and operating systems. The resources are available on-demand and can typically be made available in minutes or even seconds. You pay only for the resources you use, and only for as long as you're using them.
 
 Azure supports a wide range of computing solutions for development and testing, running applications, and extending your datacenter. The service supports Linux, Windows Server, SQL Server, Oracle, IBM, and SAP. Azure also has many services that can run virtual machines (VMs). Each service provides different options depending on your requirements. Some of the most prominent services are:
 
@@ -14,9 +14,13 @@ Azure supports a wide range of computing solutions for development and testing, 
 
 ## Virtual machines
 
+<<<<<<< HEAD
 Virtual machines are software emulations of physical computers. They include a virtual processor, memory, storage, and networking resources. VMs host an operating system, and you're able to install and run software just like a physical computer. When using a remote desktop client, you can use and control the VM as if you were sitting in front of it.
+=======
+VMs are software emulations of physical computers. They include a virtual processor, memory, storage, and networking resources. VMs host an operating system, and you can install and run software just like a physical computer. When using a remote desktop client, you can use and control the VM as if you were sitting in front it.
+>>>>>>> a787f596f321d8b15b43da46786c2947042e922a
 
-With [Virtual Machines](https://azure.microsoft.com/services/virtual-machines/?azure-portal=true), you can create and use VMs in the cloud. Virtual Machines provides infrastructure as a service (IaaS) and can be used in different ways. When you need total control over an operating system and environment, VMs are an ideal choice. Just like a physical computer, you can customize all the software running on the VM. This ability is helpful when you're running custom software or custom hosting configurations.
+With [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines/?azure-portal=true), you can create and use VMs in the cloud. Virtual Machines provides infrastructure as a service (IaaS) and can be used in different ways. When you need total control over an operating system and environment, VMs are an ideal choice. Just like a physical computer, you can customize all the software running on the VM. This ability is helpful when you're running custom software or custom hosting configurations.
 
   :::column-end:::
   :::column:::
@@ -56,9 +60,9 @@ With [Virtual Machines](https://azure.microsoft.com/services/virtual-machines/?a
   :::column-end:::
   :::column span="3":::
 
-## App Services
+## App Service
 
-With [App Services](https://azure.microsoft.com/services/app-service?azure-portal=true), you can quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. You can meet rigorous performance, scalability, security, and compliance requirements while using a fully managed platform to perform infrastructure maintenance. App Services is a platform as a service (PaaS) offering.
+With [Azure App Service](https://azure.microsoft.com/services/app-service?azure-portal=true), you can quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. You can meet rigorous performance, scalability, security, and compliance requirements while using a fully managed platform to perform infrastructure maintenance. App Service is a platform as a service (PaaS) offering.
 
   :::column-end:::
 :::row-end:::
