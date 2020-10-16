@@ -209,7 +209,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. A green checkmark icon denotes a healthy service. The page refreshes automatically, every 10 seconds.
 
-    :::image type="content" source="../media/health-check.png" alt-text="health checks status dashboard" border="true" lightbox="../media/health-check.png":::
+    :::image type="content" source="../media/4-implement-app-insights/health-check.png" alt-text="health checks status dashboard" lightbox="../media/4-implement-app-insights/health-check.png":::
 
     > [!NOTE]
     > The services take several minutes to return to a healthy state.
