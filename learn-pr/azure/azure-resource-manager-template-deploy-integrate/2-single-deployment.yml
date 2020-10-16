@@ -3,7 +3,7 @@ uid: learn.azure.resource-manager-template-deploy-integrate.2-single-deployment
 title: Deploying your ARM templates
 metadata:
   title: Deploying your ARM templates
-  description: Wether you are deploying your templates in your test environment or in productions. The ability to deploying from a web interface or  a command line / terminal is crucial.  This unit will cover the ways to deploy your templates.
+  description: Whether you are deploying your templates in your test environment or in productions. The ability to deploying from a web interface or  a command line / terminal is crucial.  This unit will cover the ways to deploy your templates.
   ms.date: 10/15/2020
   author: pierreroman
   ms.author: pierrer

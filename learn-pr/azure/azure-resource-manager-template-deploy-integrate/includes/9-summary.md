@@ -4,7 +4,7 @@ In summary, you:
 
 - You learned to deploy your templates from a variety of methods.
 - You learned to modularize your ARM templates by creating linked templates.
-- And, you learned how to create Github Actions to deploy templates from a source code repo.
+- And, you learned how to create GitHub Actions to deploy templates from a source code repo.
 
 ## Learn more
 

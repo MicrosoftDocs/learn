@@ -7,7 +7,7 @@ Here you'll deploy an Azure Resource Manager (ARM) template from a GitHub Action
 
 First,  If you do not have a GitHub account, please create one now (It's free) by navigating to the [GitHub account creation page](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home).
 
-![Github account creation page](../media/9-github-account-creation.png)
+![GitHub account creation page](../media/9-github-account-creation.png)
 
 Once you have the account created, sign-in and create a new repository where you will keep your templates as part of Infrastructure as Code (IaC) model.  To create the repository (or *repo* as it's affectionately referred to in the industry) follow the steps below:
 
@@ -141,11 +141,11 @@ Copy the JSON output and store it as a GitHub secret within your GitHub reposito
 
 Enter the following values:
 
-Name: AZURE_CREDENTIALS
-Value: **(Paste the JSON output you copied earlier)**
-Select Add secret.
+* Name: **AZURE_CREDENTIALS**
+* Value: Paste the JSON output you copied earlier
+* Select **Add secret**.
 
-![Add new Service Principal secret info to GitHub Secret](../media/9-create-github-sp-2.gif)
+![Add new service principal secret info to GitHub Secret](../media/9-create-github-sp-2.gif)
 
 This is the information you will need to specify the authentication in the workflow.
 
@@ -194,7 +194,7 @@ You can either create a workflow file and then push/upload the file to the repos
               template: $GITHUB_WORKSPACE/azuredeploy.json
     ```
 
-    #### The workflow file has tree sections
+    #### The workflow file has three sections
 
     - name: The name of the workflow.
     - on: The name of the GitHub events that triggers the workflow. The workflow is triggered when there is a push event on the master branch, which modifies at least one file in the master branch.
@@ -207,7 +207,7 @@ You can either create a workflow file and then push/upload the file to the repos
     > **Verify** the secret name in the following expression **creds: ${{ secrets.AZURE_CREDENTIALS }}** matches the name of the secret to what you saved to your repository's settings. **Verify** that the ARM template name in the **Deploy ARM Template** step **`template: $GITHUB_WORKSPACE/azuredeploy.json`** matches the one you saved in the repo earlier.
 
     > [!NOTE]
-    >The resource group name should be **GitHubActionExercise-rg** if you used the Azure CLI code above in the Configure deployment credentials section, the generated resource group name is the project name with rg appended.
+    > The resource group name should be **GitHubActionExercise-rg** if you used the Azure CLI code above in the Configure deployment credentials section, the generated resource group name is the project name with rg appended.
 1. Select Start commit. Add a comment and description if needed.
 1. Ensure that `Commit directly to the master branch` is selected and click `Commit new file` (or Commit changes)
     ![commit workflow to master branch](../media/9-github-workflow-commit.png)

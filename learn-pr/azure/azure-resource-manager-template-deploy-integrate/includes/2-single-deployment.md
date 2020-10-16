@@ -34,7 +34,7 @@ In the majority of cases, you target your deployment to a resource group (which 
 
 The same deployment scopes exist for an Azure CLI deployment
 
-1. To deploy to a resource group, use [az deployment group create](https://docs.microsoft.com/cli/azure/deployment/group?view=azure-cli-latest&azure-portal=true#az-deployment-group-create).
-1. To deploy to a subscription, use [az deployment sub create](https://docs.microsoft.com/cli/azure/deployment/sub?view=azure-cli-latest&azure-portal=true#az-deployment-sub-create).
-1. To deploy to a management group, use [az deployment mg create](https://docs.microsoft.com/cli/azure/deployment/mg?view=azure-cli-latest&azure-portal=true#az-deployment-mg-create).
-1. To deploy to a tenant, use [az deployment tenant create](https://docs.microsoft.com/cli/azure/deployment/tenant?view=azure-cli-latest&azure-portal=true#az-deployment-tenant-create).
+* To deploy to a resource group, use [az deployment group create](https://docs.microsoft.com/cli/azure/deployment/group?view=azure-cli-latest&azure-portal=true#az-deployment-group-create).
+* To deploy to a subscription, use [az deployment sub create](https://docs.microsoft.com/cli/azure/deployment/sub?view=azure-cli-latest&azure-portal=true#az-deployment-sub-create).
+* To deploy to a management group, use [az deployment mg create](https://docs.microsoft.com/cli/azure/deployment/mg?view=azure-cli-latest&azure-portal=true#az-deployment-mg-create).
+* To deploy to a tenant, use [az deployment tenant create](https://docs.microsoft.com/cli/azure/deployment/tenant?view=azure-cli-latest&azure-portal=true#az-deployment-tenant-create).
