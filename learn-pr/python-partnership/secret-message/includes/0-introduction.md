@@ -5,7 +5,7 @@ There's a secret message encoded with a location inspired by the WONDER WOMAN 19
 
 ![Graphic of the encoded secret message from Wonder Woman.](../media/encoded-secret-message.png)
 
-Crack the code by using the Python programming language and find the Easter egg in this beginner's lesson. For the best experience, make sure your local developer environment is ready with [Visual Studio Code](https://code.visualstudio.com/learn/?azure-portal=true). Follow the steps in the [Set up your Python beginner development environment with Visual Studio Code](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true) Learn module.
+Crack the code by using the Python programming language and find the Easter egg in this beginner's lesson. For the best experience, make sure your local developer environment is ready with [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true). Follow the steps in the [Set up your Python beginner development environment with Visual Studio Code](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true) Learn module.
 
 ![Screenshot of Python code in Visual Studio Code.](../media/decode-message.png)
 
