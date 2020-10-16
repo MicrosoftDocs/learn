@@ -6,8 +6,8 @@ As part of your work for Tailwind Traders, you should understand what Azure Expr
 
 Throughout this unit, we'll focus on two different layers of the Open Systems Interconnection (OSI) model:
 
-- **Layer 2 (L2)**: This layer is the _data-link layer_, which provides node-to-node communication between two nodes on the same network.
-- **Layer 3 (L3)**: This layer is the _network layer_, which provides addressing and routing between nodes on a multi-node network.
+- **Layer 2 (L2)**: This layer is the Data Link Layer, which provides node-to-node communication between two nodes on the same network.
+- **Layer 3 (L3)**: This layer is the Network Layer, which provides addressing and routing between nodes on a multi-node network.
 
 ## Features and benefits of ExpressRoute
 
