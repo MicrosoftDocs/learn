@@ -47,4 +47,4 @@ quiz:
       isCorrect: false
     - content: "Azure Synapse Analytics"
       isCorrect: true
-      explanation: "Azure HDInsight is the logical choice for analyzing large volumes of data."
+      explanation: "Azure Synapse Analytics is the logical choice for analyzing large volumes of data."
