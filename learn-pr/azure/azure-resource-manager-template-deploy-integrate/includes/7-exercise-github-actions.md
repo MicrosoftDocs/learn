@@ -162,7 +162,7 @@ You can either create a workflow file and then push/upload the file to the repos
     > [!NOTE]
     > The [GitHub Marketplace](https://github.com/marketplace) has some custom built actions you can leverage to deploy ARM templates.  This module uses the ["Deploy Azure Resource Manager (ARM) Template"](https://github.com/marketplace/actions/deploy-azure-resource-manager-arm-template) marketplace provider.
 
-    ```yml
+    ```yaml
     name: Deploy ARM Template
 
     on:
@@ -214,7 +214,7 @@ You can either create a workflow file and then push/upload the file to the repos
 
     Once the workflow file is created and committed to the master branch of the repo, the workflow will start automatically since the trigger in your workflow ia a commit/push to the master branch
 
-    ```yml
+    ```yaml
     on:
       push:
         branches:
