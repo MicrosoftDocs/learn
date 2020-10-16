@@ -120,7 +120,7 @@ In this exercise, we will review and deploy a template that includes two linked 
 
     Once it completes, you should have results like this:
 
-    ![Results from deploying linked template](../../media/6-linked-template-results.png)
+    :::image type="content" source="../../media/6-linked-template-results.png" alt-text="Results from deploying linked template.":::
 
 1. To validate the results in the Azure portal, navigate to [Azure](https://portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 
@@ -129,8 +129,8 @@ In this exercise, we will review and deploy a template that includes two linked 
     1. In the *Overview*, you see the deployment has succeeded.
     1. Select *3 Succeeded* to see the details of the deployment. *(There may be more completed deployment depending on whether you performed the previous unit's exercises)*
 
-    ![Azure portal interface for the deployments with the one deployment listed and a succeeded status.](../../media/7-portal-deployment-details.png)
+    :::image type="content" source="../../media/7-portal-deployment-details.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status.":::
 
 1. You will notice that you deployed one template but 3 are listed in the deployment pane of the portal. Those three deployments correspond to the main template and the two linked templates.
 
-    ![Azure portal interface for the specific deployment with no resources listed.](../../media/7-portal-deployment-listing.png)
+    :::image type="content" source="../../media/7-portal-deployment-listing.png" alt-text="Azure portal interface for the specific deployment with no resources listed.":::

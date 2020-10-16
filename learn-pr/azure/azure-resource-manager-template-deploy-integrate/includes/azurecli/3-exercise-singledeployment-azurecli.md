@@ -293,7 +293,7 @@ In the next exercise you will pass inline parameters to your deployment, you'll 
 
 1. Click the "New..." item in the menu and the extension will create a parameter file based on the template currently opened.
 
-    ![Create parameter file in VS Code.](../../media/5-parameter-file-create-2.png)
+    :::image type="content" source="../../media/5-parameter-file-create-2.png" alt-text="Create parameter file in VS Code." loc-scope="vs-code":::
 
 1. Once we have our local parameter file, we can use the following Azure CLI command with the **--parameters** parameters.
 

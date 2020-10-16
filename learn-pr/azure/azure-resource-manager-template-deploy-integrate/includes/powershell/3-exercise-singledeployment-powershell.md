@@ -188,7 +188,7 @@ To pass inline parameters to your deployment, you need to provide the names of t
 1. But first, you need to create and save your parameter file. Because we're using Visual Studio Code with the Azure Resource Manager (ARM) Tools extension, you can open the ARM template you saved locally and click on the **Select or create a parameter file to enable full validation** link.
 1. Click the "New..." item in the menu and the extension will create a parameter file based on the template currently opened.
 
-    ![Create parameter file in VS Code.](../../media/5-parameter-file-create-2.png)
+    :::image type="content" source="../../media/5-parameter-file-create-2.png" alt-text="Create parameter file in VS Code." loc-scope="vs-code":::
 
 1. Once we have our local parameter file, we can use the following PowerShell command with the **TemplateParameterFile** parameters.
 

@@ -7,19 +7,20 @@ Here you'll deploy an Azure Resource Manager (ARM) template from a GitHub Action
 
 First,  If you do not have a GitHub account, please create one now (It's free) by navigating to the [GitHub account creation page](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home).
 
-![GitHub account creation page](../media/9-github-account-creation.png)
+:::image type="content" source="../media/9-github-account-creation.png" alt-text="GitHub account creation page":::
 
 Once you have the account created, sign-in and create a new repository where you will keep your templates as part of Infrastructure as Code (IaC) model.  To create the repository (or *repo* as it's affectionately referred to in the industry) follow the steps below:
 
 1. In the upper-right corner of any page in the GitHub site, use the **+** drop-down menu, and select New repository. or click on the green `Create repository` button, if it's there.
 
-    ![Create GitHub repo](../media/../media/9-github-repo-creation.png)
+    :::image type="content" source="../media/9-github-repo-creation.png" alt-text="Create GitHub repo":::
+
 1. Type a short, memorable name for your repository. For example, "Deploy-ARM-Template" and optionally, add a description of your repository. For example, "Deploying my first ARM template with GitHub Action"
 1. Choose a repository visibility setting.  Public repositories are accessible to everyone on the internet. Private repositories are only accessible to you, people you explicitly share access with. (Either will work with this exercise)
 1. Select Initialize this repository with a README.
 1. Click Create repository.
 
-    ![Create new repo details.](../media/9-github-repo-creation-2.png)
+    :::image type="content" source="../media/9-github-repo-creation-2.png" alt-text="Create new repo details.":::
 
 Now that you have created your new repository, you initialized it with a README file. it's time to commit a template and a template parameter file to the repo.
 
@@ -30,7 +31,9 @@ Now that you have created your new repository, you initialized it with a README 
 
 1. On GitHub, navigate to the main page of the repository
 1. Above the files listing, using the *Add file* drop-down, click Create new file.
-    ![Add new template to repo](../media/9-github-file-creation.png)
+
+    :::image type="content" source="../media/9-github-file-creation.png" alt-text="Add new template to repo.":::
+
 1. In the file name field, type the name and extension for the template. In this case for our exercise, you will use the name `azuredeploy.json` and copy and paste the template in the code block below into your new GitHub file.
 
     ```json
@@ -101,7 +104,7 @@ Now that you have created your new repository, you initialized it with a README 
 
 1. Add a description in the "Commit new file" section and click "Commit new file" to save it to your repo
 
-      ![save new template to repo.](../media/9-github-file-creation-2.png)
+      :::image type="content" source="../media/9-github-file-creation-2.png" alt-text="save new template to repo.":::
 
 ## Configure authentication between GitHub Actions and your Azure subscription
 
@@ -135,7 +138,7 @@ In the portal while logged in your subscription, click on the `shell` icon to op
 
 In the shell, use the code above to create the service principal.  You will end up with the following results.  Copy the JSON part of the results (the content in the red box below) because you will need it when configuring the secret in GitHub.
 
-![Create Service Principal in Azure](../media/9-github-spn-creation.png)
+:::image type="content" source="../media/9-github-spn-creation.png" alt-text="Create Service Principal in Azure":::
 
 Copy the JSON output and store it as a GitHub secret within your GitHub repository. To do this,  from your GitHub repository, select the `Settings` tab, and Select `Secrets` from the left menu.
 
@@ -156,7 +159,9 @@ The workflow file must be stored in the .github/workflows folder at the root of 
 You can either create a workflow file and then push/upload the file to the repository, or use the following procedure to create it in the GitHub interface:
 
 1. From your GitHub repository, select `Actions` from the top menu, and select **set up a workflow yourself**.
-    ![Getting Started With GitHub Actions](../media/9-github-workflow-creation.png)
+
+    :::image type="content" source="../media/9-github-workflow-creation.png" alt-text="Getting Started With GitHub Actions":::
+
 1. Rename the workflow file if you prefer a different name other than main.yml. For example: deployARMTemplate.yml.
 1. Replace the content of the yml file with the following:
     > [!NOTE]
@@ -210,7 +215,8 @@ You can either create a workflow file and then push/upload the file to the repos
     > The resource group name should be **GitHubActionExercise-rg** if you used the Azure CLI code above in the Configure deployment credentials section, the generated resource group name is the project name with rg appended.
 1. Select Start commit. Add a comment and description if needed.
 1. Ensure that `Commit directly to the master branch` is selected and click `Commit new file` (or Commit changes)
-    ![commit workflow to master branch](../media/9-github-workflow-commit.png)
+
+    :::image type="content" source="../media/9-github-workflow-commit.png" alt-text="commit workflow to master branch":::
 
     Once the workflow file is created and committed to the master branch of the repo, the workflow will start automatically since the trigger in your workflow ia a commit/push to the master branch
 
@@ -222,7 +228,8 @@ You can either create a workflow file and then push/upload the file to the repos
     ```
 
 1. By navigating to your repo and in the  section, you will be able to see the status of your workflow.
-    ![Workflow status](../media/9-github-workflow-status.png)
+
+    :::image type="content" source="../media/9-github-workflow-status.png" alt-text="Workflow status":::
 
 ## Check your deployment
 
