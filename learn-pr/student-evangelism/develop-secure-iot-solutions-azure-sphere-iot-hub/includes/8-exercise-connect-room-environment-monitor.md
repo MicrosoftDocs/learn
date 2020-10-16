@@ -91,7 +91,7 @@ Devices claimed by your Azure Sphere tenant are automatically enrolled with the 
 
 4. Select **Verify**.
 
-   ![Screenshot of Certificates and Certificate Details.](../media/dps-certificate-verify-upload.png)
+   ![Screenshot of Certificates and Certificate Details, with Verify highlighted.](../media/dps-certificate-verify-upload.png)
 
 
 ## Step 3: Create a device provisioning service enrollment group
