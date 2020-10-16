@@ -1,6 +1,6 @@
 ## Revert .NET Core SDK changes
 
-The setup script installs a newer version of the .NET Core SDK, alongside the default SDK version of Cloud Shell. You can choose to keep this configuration. To revert to your prior configuration, run the following commands:
+The setup script installs a newer version of the .NET Core SDK, alongside the default SDK version of Cloud Shell. You can choose to keep this configuration. To revert to your prior configuration, run the following command:
 
 ```bash
 cp ~/.bashrc.bak.microservices-aspnet-core ~/.bashrc

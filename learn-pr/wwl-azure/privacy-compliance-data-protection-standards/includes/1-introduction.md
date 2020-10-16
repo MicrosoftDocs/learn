@@ -7,7 +7,7 @@ Microsoft takes this management seriously and provides full transparency with fo
 + Service Trust Portal
 + Compliance Manager
 
-In this module, you will review about Microsoft Privacy statement and learn about the tools we provide to you to build trust and compliance into your solutions running in the cloud.
+In this module, you will review about Microsoft Privacy statement and learn about the tools which we provide to you to build trust and compliance into your solutions running in the cloud.
 
 In this module, you will:
 
