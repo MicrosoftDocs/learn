@@ -47,7 +47,6 @@ units:
   - learn.microservices-logging-aspnet-core.6-azure-monitor-containers
   - learn.microservices-logging-aspnet-core.7-knowledge-check
   - learn.microservices-logging-aspnet-core.8-summary
-iconUrl: https://docs.microsoft.com/../media/learn/module.svg
-#iconUrl: /learn/achievements/aspnetcore/microservices-logging-aspnet-core.svg
+iconUrl: /learn/achievements/aspnetcore/microservices-logging-aspnet-core.svg
 badge:
- uid: learn.microservices-logging-aspnet-core.badge
+  uid: learn.microservices-logging-aspnet-core.badge
