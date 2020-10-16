@@ -104,7 +104,7 @@ Now that you have created your new repository, you initialized it with a README 
 
 1. Add a description in the "Commit new file" section and click "Commit new file" to save it to your repo
 
-      :::image type="content" source="../media/9-github-file-creation-2.png" alt-text="save new template to repo.":::
+      :::image type="content" source="../media/9-github-file-creation-2.png" alt-text="save new template to repo." lightbox="9-github-file-creation-2.png":::
 
 ## Configure authentication between GitHub Actions and your Azure subscription
 
