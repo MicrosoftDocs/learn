@@ -38,14 +38,13 @@ products:
 units:
   - learn.azure.use-docker-container-dev-env-vs-code.1-introduction
   - learn.azure.use-docker-container-dev-env-vs-code.2-use-as-dev-env
-  - learn.azure.use-docker-container-dev-env-vs-code.3-devcontainer-config
-  - learn.azure.use-docker-container-dev-env-vs-code.4-exercise-devcontainer-config
-  - learn.azure.use-docker-container-dev-env-vs-code.5-forward-ports
-  - learn.azure.use-docker-container-dev-env-vs-code.6-exercise-forward-ports
-  - learn.azure.use-docker-container-dev-env-vs-code.7-customize-settings
-  - learn.azure.use-docker-container-dev-env-vs-code.8-exercise-customize-settings
-  - learn.azure.use-docker-container-dev-env-vs-code.9-add-software
-  - learn.azure.use-docker-container-dev-env-vs-code.10-exercise-add-software
-  - learn.azure.use-docker-container-dev-env-vs-code.11-summary
+  - learn.azure.use-docker-container-dev-env-vs-code.3-exercise-add-dev-container
+  # - learn.azure.use-docker-container-dev-env-vs-code.4-forward-ports
+  # - learn.azure.use-docker-container-dev-env-vs-code.5-exercise-forward-ports
+  # - learn.azure.use-docker-container-dev-env-vs-code.6-customize-settings
+  # - learn.azure.use-docker-container-dev-env-vs-code.7-exercise-customize-settings
+  # - learn.azure.use-docker-container-dev-env-vs-code.8-add-software
+  # - learn.azure.use-docker-container-dev-env-vs-code.9-exercise-add-software
+  # - learn.azure.use-docker-container-dev-env-vs-code.10-summary
 badge:
-  uid: learn-windows.introduction-to-web-development.badge
+  uid:
