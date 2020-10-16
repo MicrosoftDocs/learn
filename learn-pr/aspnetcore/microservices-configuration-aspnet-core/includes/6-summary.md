@@ -1,6 +1,4 @@
-# Summary
-
-In this module you:
+In this module, you:
 
 - Created an AKS cluster with an initial e-commerce application.
 - Reviewed some important ASP.NET Core concepts.
