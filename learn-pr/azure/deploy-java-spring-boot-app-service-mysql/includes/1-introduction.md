@@ -15,5 +15,4 @@ In this module, you'll:
 ## Prerequisites
 
 - Experience writing Spring Apps in Java
-- Experience working with MySQL databases
-- Experience working with Azure Web Apps
+- Basic familiarity with relational databases
