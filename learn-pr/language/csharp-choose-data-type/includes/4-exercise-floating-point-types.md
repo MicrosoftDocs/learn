@@ -43,7 +43,7 @@ As you can see, `float` and `double` use a different notation than `decimal` to 
 
 ### Deciphering large floating point values
 
-Since floating-point types can hold large numbers with a lot of precision, their values can be represented using "E notation", which is a form of scientific notation that means "times ten raised to the power of".  So a value like `5E+2` would be the value `500` because it's the equivalent of `5 * $$10^2$$`, or `5 * 10 * 10`.
+Since floating-point types can hold large numbers with a lot of precision, their values can be represented using "E notation", which is a form of scientific notation that means "times ten raised to the power of".  So a value like `5E+2` would be the value `500` because it's the equivalent of `5 * 10^2`, or `5 * 10 * 10`.
 
 ## Recap
 

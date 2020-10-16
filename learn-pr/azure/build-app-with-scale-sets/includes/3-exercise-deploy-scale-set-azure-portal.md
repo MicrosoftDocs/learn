@@ -52,7 +52,7 @@ Your first task is to create a scale set. You'll configure it to run a web serve
       --resource-group scalesetrg \
       --name webServerScaleSet \
       --image UbuntuLTS \
-      --upgrade-policy-mode automatic \
+      --upgrade-policy-mode rolling \
       --custom-data cloud-init.yaml \
       --admin-username azureuser \
       --generate-ssh-keys
