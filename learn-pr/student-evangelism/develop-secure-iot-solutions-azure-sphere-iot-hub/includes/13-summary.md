@@ -2,6 +2,6 @@ By using an application built around Azure Sphere, you can securely capture data
 
 Consider our scenario of monitoring environment parameters such as temperature, air pressure, humidity, and light within a laboratory setting. You want to build and automate a new solution within the lab. This solution will include the sensors deployed in the lab that will record the ambient environmental conditions, and transmit them securely to the cloud.
 
-Without the Azure Sphere-based application, you must manually record these conditions at regular intervals and keep a record of it. And any variation in the lab environment can't be detected in real-time.
+Without the Azure Sphere-based application, you must manually record these conditions at regular intervals and keep a record of it. And any variation in the lab environment can't be detected in real time.
 
-By using your solution created with Azure Sphere, you can produce accurate and stable results in near real-time.
+By using your solution created with Azure Sphere, you can produce accurate and stable results in near real time.

@@ -14,7 +14,7 @@ There are two types of timers: periodic timers and one-shot timers.
 
 ### Periodic timers
 
-Periodic timers produce timed triggers with a fixed period of time between occurences.
+Periodic timers produce timed triggers with a fixed period of time between occurrences.
 
 The following example is a variable named `measureSensorTimer` of type `LP_TIMER`. This event timer is initialized with a period of 10 seconds **{ 10, 0 }**. When the event timer triggers, the handler function **MeasureSensorHandler** is called to implement the action.
 
