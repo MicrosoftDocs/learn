@@ -24,7 +24,7 @@ prerequisites: |
     - The latest version of [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azure-cli-latest&azure-portal=true)
   - A [GitHub](https://github.com?azure-portal=true) account
   - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/deploy-templates-command-line-github-actions.svg
 ratingEnabled: true
 levels:
 - intermediate
