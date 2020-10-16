@@ -6,7 +6,7 @@ In this unit, you'll learn how to secure, build, deploy, and debug your high-lev
 
 - **Azure IoT Hub:** This enables highly secure and reliable communication between your IoT application and the devices it manages. Azure IoT Hub provides a cloud-hosted solution to connect virtually any device. Extend your solution from the cloud to the edge with per-device authentication, built-in device management, and scaled provisioning.
 
-- **Device Provisioning Service:** This component of Azure IoT Hub enables zero-touch, just-in-time, large-scale device provisioning.
+- **Device provisioning service:** This component of Azure IoT Hub enables zero-touch, just-in-time, large-scale device provisioning.
 
 - **High-level application:** Every Azure Sphere device has a high-level application, which runs on the Azure Sphere operating system and uses the application libraries. A high-level application can:
 
@@ -20,7 +20,7 @@ In this unit, you'll learn how to secure, build, deploy, and debug your high-lev
 To set up the connectivity between the high-level Azure Sphere application and the Azure IoT Hub, do the following:
 
 1. Create Azure resources.
-2. Set up a trusted relationship between your Azure Sphere tenant and the Device Provisioning Service.
+2. Set up a trusted relationship between your Azure Sphere tenant and the device provisioning service.
 3. Configure the Azure Sphere application to connect to Azure IoT Hub.
    1. Open the lab project with Visual Studio Code.
    2. Set your developer board configuration.

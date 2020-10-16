@@ -18,23 +18,23 @@ The terms you'll tackle:
 
 There are multiple types of boards available to use.
 
-### AVNET Azure Sphere kit
+### Avnet Azure Sphere Kit
 
-[![AVNET Azure Sphere kit.](../media/avnet-pinout.jpg)](https://www.avnet.com/opasdata/d120001/medias/docus/196/Azure%20Sphere%20Starter%20Kit%20User%20Guide%20(v1.3).pdf)
+[![Avnet Azure Sphere Kit.](../media/avnet-pinout.jpg)](https://www.avnet.com/opasdata/d120001/medias/docus/196/Azure%20Sphere%20Starter%20Kit%20User%20Guide%20(v1.3).pdf)
 
 For more information, see the Azure Sphere Starter Kit User Guide (v1.3) on the [Avnet website](https://www.avnet.com/).
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
-[![Seeed Studio Azure Sphere kit.](../media/seeed-studio-rdb-pinmap.png)](http://wiki.seeedstudio.com/Azure_Sphere_MT3620_Development_Kit/)
+[![Seeed Studio Azure Sphere Kit.](../media/seeed-studio-rdb-pinmap.png)](http://wiki.seeedstudio.com/Azure_Sphere_MT3620_Development_Kit/)
 
-For more information, see the [Seeed Studio Azure Sphere kit](http://wiki.seeedstudio.com/Azure_Sphere_MT3620_Development_Kit/).
+For more information, see the [Seeed Studio Azure Sphere Kit](http://wiki.seeedstudio.com/Azure_Sphere_MT3620_Development_Kit/).
 
 ### Seeed Studio Azure Sphere MT3620 Mini Dev Board
 
-[![Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-mini-pinmap.jpg)](http://wiki.seeedstudio.com/MT3620_Mini_Dev_Board/)
+[![Seeed Studio Mini Azure Sphere Kit.](../media/seeed-studio-mini-pinmap.jpg)](http://wiki.seeedstudio.com/MT3620_Mini_Dev_Board/)
 
-For more information, see the [Seeed Studio Mini Azure Sphere kit](http://wiki.seeedstudio.com/MT3620_Mini_Dev_Board/).
+For more information, see the [Seeed Studio Mini Azure Sphere Kit](http://wiki.seeedstudio.com/MT3620_Mini_Dev_Board/).
 
 ## Introduction to the Azure Sphere Learning Path labs
 

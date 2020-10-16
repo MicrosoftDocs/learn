@@ -12,7 +12,7 @@ You can prepare Azure cloud resources with the Azure CLI, the Azure portal (a we
 
 2. Choose the site located closest to you.
 
-3. Select the IoT Hub Tier. The default IoT Hub tier is **F1**, which is free. You can only have one free IoT Hub per subscription. If you already have a free IoT Hub, then either select **S1** ([pricing](https://azure.microsoft.com/pricing/details/iot-hub/)) or delete your existing free IoT Hub before proceeding.
+3. Select the IoT Hub tier. The default IoT Hub tier is **F1**, which is free. You can only have one free IoT Hub per subscription. If you already have a free IoT Hub, then either select **S1** ([pricing](https://azure.microsoft.com/pricing/details/iot-hub/)) or delete your existing free IoT Hub before proceeding.
 
 4. Select **Next** > **Deploy**. The deployment will take three to four minutes to complete.
 
@@ -114,7 +114,7 @@ Remember, applications on Azure Sphere are locked down by default, including har
 You must allow communications to the following Azure IoT network endpoints:
 
 - The device provisioning service global device endpoint
-- The Device Provisioning Service service endpoint
+- The device provisioning service service endpoint
 - The IoT Hub hostname endpoint
 
 Follow these steps:
@@ -171,13 +171,13 @@ Next, you need the ID of the Azure Sphere tenant that is now trusted by the devi
 
 ## Step 7: Set your developer board configuration
 
-These labs support developer boards from AVNET and Seeed Studio. You need to set the configuration that matches your developer board.
+These labs support developer boards from Avnet and Seeed Studio. You need to set the configuration that matches your developer board.
 
-The default developer board configuration is for the AVNET Azure Sphere Starter Kit. If you have this board, there's no additional configuration required.
+The default developer board configuration is for the Avnet Azure Sphere Starter Kit. If you have this board, there's no additional configuration required.
 
 1. Open the **CMakeList.txt** file.
 
-2. Add a `#` at the beginning of the set AVNET line to disable it.
+2. Add a `#` at the beginning of the set Avnet line to disable it.
 
 3. Uncomment the `set` command that corresponds to your Azure Sphere developer board.
 
@@ -236,7 +236,7 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
 2. Review the pin mappings set up for the Azure Sphere Learning Path by using the Avnet Starter Kit.
 
     > [!NOTE]
-    > Azure Sphere hardware is available from multiple vendors, and each vendor may expose features of the underlying chip in different ways. Azure Sphere applications manage hardware dependencies by using hardware definition files. For further information, see [Managing target hardware dependencies](https://docs.microsoft.com/azure-sphere/app-development/manage-hardware-dependencies).
+    > Azure Sphere hardware is available from multiple vendors, and each vendor can expose features of the underlying chip in different ways. Azure Sphere applications manage hardware dependencies by using hardware definition files. For further information, see [Managing target hardware dependencies](https://docs.microsoft.com/azure-sphere/app-development/manage-hardware-dependencies).
 
     ```
     /* Copyright (c) Microsoft Corporation. All rights reserved.
@@ -287,7 +287,7 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
    - Update `CmdArgs` with the device provisioning service **ID Scope** that you copied to Notepad.
    - Update `DeviceAuthentication` with your **Azure Sphere tenant ID**. Remember, this was the numeric value output from the `azsphere tenant show-selected` command that you copied to Notepad.
 
-3. Update the network endpoints `AllowedConnections` with your Azure IoT Hub and Device Provisioning endpoint URLs you copied to Notepad.
+3. Update the network endpoints `AllowedConnections` with your Azure IoT Hub and device provisioning endpoint URLs you copied to Notepad.
 
 4. Review your updated **manifest_app.json** file. It should look similar to the following.
 
@@ -397,7 +397,7 @@ static void SendMsgLedOn(char* message)
 2. The device negotiates security, and then starts sending telemetry to Azure IoT Hub.
 
     > [!NOTE]
-    > You may see a couple of error messages displayed. These messages occur while the connection to Azure IoT is being negotiated.
+    > You might see a couple of error messages. These messages occur while the connection to Azure IoT is being negotiated.
 
 
 
@@ -405,7 +405,7 @@ static void SendMsgLedOn(char* message)
 
 ### Avnet Azure Sphere MT3620 Starter Kit
 
-![Photo of the Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
+![Photo of the Avnet Azure Sphere Kit.](../media/avnet-azure-sphere.jpg)
 
 1. The blue LED starts to blink.
 
@@ -415,7 +415,7 @@ static void SendMsgLedOn(char* message)
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
-![Photo of the Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
+![Photo of the Seeed Studio Azure Sphere Kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
 
 1. The green LED starts to blink.
 
@@ -426,7 +426,7 @@ static void SendMsgLedOn(char* message)
 
 ### Seeed Studio MT3620 Mini Dev Board
 
-![Photo of the Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
+![Photo of the Seeed Studio Mini Azure Sphere Kit.](../media/seeed-studio-azure-sphere-mini.png)
 
 The green LED closest to the USB connector starts to blink.
 

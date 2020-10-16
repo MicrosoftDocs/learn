@@ -1,4 +1,4 @@
-In this unit, you'll learn about event driven programming and look at several different timers, including Event Timers, Periodic Timers, and One-Shot Timers.
+In this unit, you'll learn about event driven programming and look at several different timers, including event timers, periodic timers, and one-shot timers.
 
 ## Event timers
 

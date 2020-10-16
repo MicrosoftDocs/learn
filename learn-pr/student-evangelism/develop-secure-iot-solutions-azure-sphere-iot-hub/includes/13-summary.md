@@ -4,4 +4,4 @@ Consider our scenario of monitoring environment parameters such as temperature, 
 
 Without the Azure Sphere-based application, you must manually record these conditions at regular intervals and keep a record of it. And any variation in the lab environment can't be detected in real-time.
 
-By using your solution created with Azure Sphere, you can produce accurate and stable results in near real time.
+By using your solution created with Azure Sphere, you can produce accurate and stable results in near real-time.

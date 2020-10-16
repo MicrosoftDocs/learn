@@ -30,19 +30,19 @@
 
 ### Avnet Azure Sphere MT3620 Starter Kit
 
-![Photo of the Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
+![Photo of the Avnet Azure Sphere Kit.](../media/avnet-azure-sphere.jpg)
 
 - LED3 turns yellow when connected to Azure.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
-![Photo of the Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
+![Photo of the Seeed Studio Azure Sphere Kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
 
 - The network LED turns red when connected to Azure.
 
 ### Seeed Studio MT3620 Mini Dev Board
 
-![Photo of the Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
+![Photo of the Seeed Studio Mini Azure Sphere Kit.](../media/seeed-studio-azure-sphere-mini.png)
 
 - The green LED closest to the USB connector turns on when connected to Azure.
 

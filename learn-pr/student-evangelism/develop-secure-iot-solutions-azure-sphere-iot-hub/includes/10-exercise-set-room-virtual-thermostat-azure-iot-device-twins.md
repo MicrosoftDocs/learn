@@ -7,13 +7,13 @@
 
 ## Step 2: Set your developer board configuration
 
-These labs support developer boards from AVNET and Seeed Studio. You need to set the configuration that matches your developer board.
+These labs support developer boards from Avnet and Seeed Studio. You need to set the configuration that matches your developer board.
 
-The default developer board configuration is for the AVNET Azure Sphere Starter Kit. If you have this board, there's no additional configuration required.
+The default developer board configuration is for the Avnet Azure Sphere Starter Kit. If you have this board, there's no additional configuration required.
 
 1. Open the **CMakeList.txt** file.
 
-2. Add a `#` at the beginning of the set AVNET line to disable it.
+2. Add a `#` at the beginning of the set Avnet line to disable it.
 
 3. Uncomment the `set` command that corresponds to your Azure Sphere developer board.
 
@@ -43,7 +43,7 @@ The default developer board configuration is for the AVNET Azure Sphere Starter 
 
 ### Avnet Azure Sphere MT3620 Starter Kit
 
-![Photo of the Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
+![Photo of the Avnet Azure Sphere Kit.](../media/avnet-azure-sphere.jpg)
 
 1. The RGB LED5 starts to blink. In the next section, you'll be setting the desired temperature, which will determine the RGB LED color.
 2. LED4 turns yellow when connected to Azure.
@@ -52,7 +52,7 @@ The default developer board configuration is for the AVNET Azure Sphere Starter 
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
-![Photo of the Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
+![Photo of the Seeed Studio Azure Sphere Kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
 
 1. The RGB LED1 starts to blink. In the next section, you'll be setting the desired temperature, which will determine the RGB LED color.
 2. The network LED turns red when connected to Azure.
@@ -61,7 +61,7 @@ The default developer board configuration is for the AVNET Azure Sphere Starter 
 
 ### Seeed Studio MT3620 Mini Dev Board
 
-![Photo of the Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
+![Photo of the Seeed Studio Mini Azure Sphere Kit.](../media/seeed-studio-azure-sphere-mini.png)
 
 1. The green LED closest to the USB connector starts to blink.
 2. Because this device has no built-in buttons, virtual **Button A** and **Button B** presses are generated every 10 seconds. The blink rate changes and the **Actual Temperature** device twin property in IoT Hub is updated.
@@ -82,7 +82,7 @@ Follow these steps to show the actual temperature recorded by the device:
    azsphere dev show-attached
    ```
 
-4. Open Azure Cloud Shell by right-clicking on the following link and opening in a new tab: [https://shell.azure.com](https://shell.azure.com/).
+4. Open Azure Cloud Shell by right-clicking the following link and opening in a new tab: [https://shell.azure.com](https://shell.azure.com/).
 
 5. In Cloud Shell, run the [az extension add](https://docs.microsoft.com/cli/azure/extension?view=azure-cli-latest#az-extension-add) command to add the Microsoft Azure IoT Extension to your Azure CLI shell. The IoT Extension adds IoT Hub, IoT Edge, and IoT device provisioning service specific commands to Azure CLI.
 
@@ -167,7 +167,7 @@ When the temperature sensor is read on the Azure Sphere device, it's compared to
 - If the temperature is less than the desired temperature, the blinking LED turns red to indicate the heater needs to be turned on.
 - If the temperature is the same as the desired temperature, the blinking LED turns green to indicate no action is required.
 
-The AVNET Azure Sphere Starter Kit has a built-in temperature sensor. For other boards, a random temperature 25 +/- 5 degrees celsius is generated.
+The Avnet Azure Sphere Starter Kit has a built-in temperature sensor. For other boards, a random temperature 25 +/- 5 degrees celsius is generated.
 
 To set the desired temperature:
 
