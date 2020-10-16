@@ -20,7 +20,7 @@ abstract: |
   * Train and Publish the LUIS Model
 prerequisites: |
   - Knowledge of navigating the Azure portal
-  - Knowledge of at least one programming language such as C#, Python, or JavaScript
+  - Knowledge of at least one programming language such as C# or Python
   - Basic understanding of REST APIs and JSON
 iconUrl: /learn/achievements/add-conversational-intelligence-with-luis.svg
 levels:

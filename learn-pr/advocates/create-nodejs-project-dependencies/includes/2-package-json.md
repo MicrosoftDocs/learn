@@ -68,6 +68,6 @@ A more realistic example would look like this code:
 
 This example uses the naming that has been described. First, you have the `start` action that starts the application. Second, the `test` action runs tests by using the testing framework `jest`. Then you have the `build` action that uses the TypeScript compiler `tsc` to compile the code from TypeScript into, for example, ES6 that the browser can understand. Finally, you have a linting tool `eslint` that looks for inconsistencies and possibly errors in the code.
 
-You invoke actions by typing `npm run <action>`. But there are *special* actions: `start`, `build`, and `test`. They're special because you can omit `run`. So instead of typing `npm run start`, you can instead save a few characters and type `npm start`.
+You invoke actions by typing `npm run <action>`. But there are *special* actions: `start` and `test`. They're special because you can omit `run`. So instead of typing `npm run start`, you can instead save a few characters and type `npm start`.
 
 Your project will probably have a few more scripts, but those scripts are usually specific to the project. The actions described previously are a good starting point for any Node.js project.

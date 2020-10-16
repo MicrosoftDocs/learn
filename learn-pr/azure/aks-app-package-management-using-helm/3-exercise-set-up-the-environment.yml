@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.app-package-management-using-helm.exercise-set-up-the-environment
+title: Exercise - Set up the environment
+metadata:
+  description: In this exercise, you'll deploy your AKS exercise environment.
+  title: Exercise - Set up the environment
+  author: cryophobia
+  ms.author: chrvaw
+  ms.prod: learning-azure
+  ms.topic: interactive-tutorial
+  ms.date: 9/30/2020
+
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-set-up-the-environment.md)]
