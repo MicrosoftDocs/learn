@@ -12,7 +12,7 @@ title: Deploy and manage resources in Azure by using ARM templates
 summary: |
   Azure Resource Manager (ARM) templates enable you to describe the infrastructure requirements for your deployments on Azure.
 
-  By using a declarative syntax, you can consistently define your infrastructure requirements as code by using your favorite code editor.
+  ARM templates use a declarative syntax that you treat like application code. Infrastructure as code makes your deployments consistent and repeatable. 
 
   Take this learning path to learn:
 
