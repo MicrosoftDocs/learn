@@ -13,12 +13,12 @@ Be sure you are signing in to the same account that activated the sandbox.
 
 ::: zone pivot="powershell"
 
-[!include[](./powershell/5-exercise-linked-templates.md-powershell.md)]
+[!include[](./powershell/5-exercise-linked-templates.md)]
 
 ::: zone-end
 
 ::: zone pivot="cli"
 
-[!include[](./azurecli/5-exercise-linked-templates.md-azurecli.md)]
+[!include[](./azurecli/5-exercise-linked-templates.md)]
 
 ::: zone-end
