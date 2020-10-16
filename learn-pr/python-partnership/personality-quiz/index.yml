@@ -14,7 +14,7 @@ abstract: |
  In this module, you'll discover how to: 
   - Write your first lines of Python code
   - Create a program that allows users to interact with your code
-  - Use `if`, `elif`, and `else` statements
+  - Use <code>if</code>, <code>elif</code>, and <code>else</code> statements
 
   <strong>No coding experience is required to complete this Microsoft Learn module.</strong>
 prerequisites: |
