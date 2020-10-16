@@ -24,7 +24,7 @@
 
 8. Select **CMake: [Debug]: Ready** from the Visual Studio Code status bar.
 
-9. From Visual Studio Code, press F5 to build, deploy, start, and attache the remote debugger to the application that's now running the Azure Sphere device.
+9. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application that's now running the Azure Sphere device.
 
 ## Expected device behavior
 
@@ -62,7 +62,7 @@ Follow these steps to invoke the `resetDevice` direct method, which restarts the
    azsphere dev show-attached
    ```
 
-3. Open Azure Cloud shell by right-clicking the following link, and opening in a new tab "[https://shell.azure.com](https://shell.azure.com/)".
+3. Open Azure Cloud Shell by right-clicking the following link, and opening in a new tab "[https://shell.azure.com](https://shell.azure.com/)".
 
 4. In Cloud Shell, run the [az extension add](https://docs.microsoft.com/cli/azure/extension?view=azure-cli-latest#az-extension-add) command to add the Microsoft Azure IoT extension to your Azure CLI shell. The Azure IoT extension adds IoT Hub, IoT Edge, and IoT device provisioning service specific commands to Azure CLI.
 
