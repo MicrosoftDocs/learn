@@ -13,4 +13,4 @@ metadata:
 azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-linked-templates.md.md)]
+  [!include[](includes/5-exercise-linked-templates.md)]
