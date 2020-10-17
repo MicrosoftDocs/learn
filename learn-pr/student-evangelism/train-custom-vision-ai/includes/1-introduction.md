@@ -1,6 +1,6 @@
 ![Over the Moon title art](..\media\otm-logo.png)
 
-Resourceful and Creative. Fei Fei, from the new movie [Over the Moon](https://www.netflix.com/title/80214236) (on Netflix October 23, 2020), exhibits resourcefulness and creativity as she seeks to help her father remember the story of Chang'e and everlasting true love. In the film, Fei Fei uses her STEM skills, determination, and passion to fly to the Moon, and it's her friends, and the love they have for her, that helps her get home. 
+Resourceful and Creative. Fei Fei, from the new movie [Over the Moon](https://www.netflix.com/title/80214236), exhibits resourcefulness and creativity as she seeks to help her father remember the story of Chang'e and everlasting true love. In the film, Fei Fei uses her STEM skills, determination, and passion to fly to the Moon, and it's her friends, and the love they have for her, that helps her get home. 
 
 While Fei Fei didn't jump into AI during her journey to the moon, her dedication was certainly inspired by wanting to help people, in particular, her family. As she struggles to make sense of love, life, and the legends she heard as a child, she creates a way to address her problems head on, with the help of her buddy Bungee of course.
 

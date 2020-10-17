@@ -10,4 +10,4 @@ In this module, you began to explore the world of AI through the lens of a beaut
 
 Keep hold of your wonder!
 
-![Picture of Bungees face](../media/bungee-face.png) ![Picture of Fei Fei's face on her rocket](../media/fei-fei-face.png)
+![Picture of Fei Fei's face on her rocket](../media/fei-fei-face.png)

@@ -13,7 +13,7 @@ If you are a student, you can sign up for a [student free trial of Azure](https:
 The best way to experiment with Azure is to create a resource group that will be easy to keep track of. Resource groups are basically ways of connecting services that you are using together. If you create a resource group for this module, then when you're done you can delete the entire resource group and ensure you don't accidentally leave an AI running and get charged.
 
 To get started creating a resource group, follow these steps:
-1. Go to [https://portal.azure.com/]9https://portal.azure.com/)
+1. Go to [https://portal.azure.com/](https://portal.azure.com/)
 2. Sign in to Azure if you're not signed in already
 3. In the top search bar, search for "Resource Group"
 4. Click Add
@@ -33,7 +33,7 @@ To create a Custom Vision resource, follow these steps:
 1. From your "over-the-moon" resource group, click Add
 2. Search for "Custom Vision"
 3. Click Create 
-4, Choose your subscription, give your resource a name, choose the region closest to you for both training and predicting, and choose the free tier for both training and predicting
+4. Choose your subscription, give your resource a name, choose the region closest to you for both training and predicting, and choose the free tier for both training and predicting
 5. Click Review + create
 6. Click Create
 

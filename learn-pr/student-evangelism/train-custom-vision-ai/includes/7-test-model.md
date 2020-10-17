@@ -14,7 +14,7 @@ Notice that the AI decided that Bungee might have been in two places in the imag
 
 Now, this was a pretty "easy" test. The images we used to train the AI were only of Bungee, his entire body, with no other objects in the images. So when it's an image of mostly Bungee's face, it is likely that the AI will find Bungee. But what happens if we add a more complciated image from the film?
 
-![Testing the AI on Bungee in a more complicated image](/../media/bungee-test-fail.png)
+![Testing the AI on Bungee in a more complicated image](../media/bungee-test-fail.png)
 
 We can see that the AI did not find Bungee *at all* in this image. Admitedly, it's a little difficult for even me to see her hiding next to Jack Rabbit. No worries though! We can iterate!
 
