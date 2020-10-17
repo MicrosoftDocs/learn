@@ -3,7 +3,7 @@ uid: learn.protect-endpoints-with-endpoint-manager
 metadata:
   title: Protect your endpoint environment with Microsoft Endpoint Manager
   description: In this module, you'll learn protecting devices, apps, and data. Additionally, you understand the endpoint environment and the supported platforms available with Microsoft Endpoint Manager. 
-  ms.date: 09/24/2020
+  ms.date: 10/16/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
