@@ -12,7 +12,7 @@
 
 ## Learner level
 
-- **Beginner**: Introductory and overview material that assumes little or no expertise with the topic. Covers topic concepts, functions, features, benefits. <!-- Can we replace this with "Provides a detailed overview of a topic&#39;s subareas."? Otherwise, I'd delete this last sentence as it doesn't apply to the heading - it doesn't respond to the implied question," What is the learner level?" -->
+- **Beginner**: Introductory and overview material that assumes little or no expertise with the topic. Covers topic concepts, functions, features, benefits. <!-- Can we replace this with "Provides a detailed overview of a topic&#39;s subareas."? Otherwise, I'd delete this last sentence as it doesn't apply to the heading - it doesn't respond to the implied question," What is the learner level?"  -->
 
 ## Products taught
 
