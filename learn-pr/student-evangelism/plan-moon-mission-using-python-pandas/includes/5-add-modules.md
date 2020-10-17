@@ -8,9 +8,9 @@ The Apollo program focused on using the Saturn V rocket to send humans into spac
 
 ![Fei Fei's rocket reaching altitude](../media/rocket-flying.png)
 
-As we know from the Over the Moon film, knowing exactly how much weight you can have at each stage significantly effects the outcome of the mission. We also know that astronauts require a lot of materials when flying into space such as food, water, oxygen, tools, and instruments. We got a glimpse of Fei Fei's supplies when she returned to find Golbi at her crash landing site:
+As we know from the Over the Moon film, knowing exactly how much weight you can have at each stage significantly effects the outcome of the mission. We also know that astronauts require a lot of materials when flying into space such as food, water, oxygen, tools, and instruments. We got a glimpse of Fei Fei's supplies when she returned to find Gobi at her crash landing site:
 
-![Fei Fei and Golbi in front of her rocket](../media/supplies.png)
+![Fei Fei and Gobi in front of her rocket](../media/supplies.png)
 
 The last bit of relevant information about the Apollo program and Saturn V is that for Lunar landings there are two modules that are important:
 - Command Module: The module that astronauts live in, when two astronauts are down on the surface of the moon, the third astronaut stays in the command module. This is returned to Earth.

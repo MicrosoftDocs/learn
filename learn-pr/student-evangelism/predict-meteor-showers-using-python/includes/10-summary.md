@@ -1,4 +1,4 @@
-![Fei Fei and Golbi looking into the night sky from the Moon](../media/feifei-golbi.png)
+![Fei Fei and Gobi looking into the night sky from the Moon](../media/feifei-gobi.png)
 
 The stories of stars flying through out night skies have been passed down through all cultures and families and through thousands of years. Each intepretation of our participation in this vast universe provides us with an inspirational lens to view new challenges and solutions. 
 

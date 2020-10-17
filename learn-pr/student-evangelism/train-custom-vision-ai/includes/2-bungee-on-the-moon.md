@@ -5,7 +5,7 @@ In the film, Fei Fei and Bungee not only build the rocket together, but Bungee i
 You might recall from the film, Bungee and Fei Fei separate from each other as Fei Fei ventures back to the wreckage of her rocket to 
 look for something for Chang'e. When she arrives back at the wreckage we get a cameo from the Lunar Rover!
 
-![Lunar Rover cameo in Over the Moon]()
+![Lunar Rover cameo in Over the Moon](../media/lunarrover.png)
 
 This cameo, along with the themes from the film, are what inspired this module:
 
