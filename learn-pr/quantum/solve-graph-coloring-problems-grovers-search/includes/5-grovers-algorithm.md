@@ -37,13 +37,13 @@ We'll define two state vectors:
   $$|\textrm{bad}\rangle = \frac{1}{\sqrt{N-M}} \sum_{x : f(x) = 0} |x\rangle$$
 
 The algorithm never distinguishes different "good" or different "bad" states until the final measurement, so all amplitudes of "good" states remain equal to each other, and all amplitudes of "bad" states remain equal to each other.
-This means that we can always represent the overall system state as a superposition of the states $|good\rangle$ and $|bad\rangle$.
+This means that we can always represent the overall system state as a superposition of the states $|\textrm{good}\rangle$ and $|\textrm{bad}\rangle$.
 
 1. We start with an equal superposition of all basis states, both "good" and "bad". This state is represented as follows:
 
    $$|\textrm{all}\rangle = \sqrt{\frac{M}{N}} |\textrm{good}\rangle + \sqrt{\frac{N-M}{N}} |\textrm{bad}\rangle$$
 
-   If we imagine a plane on which $|good\rangle$ and $|bad\rangle$ vectors correspond to vertical and horizontal axes, respectively, we can plot this state like this:
+   If we imagine a plane on which $|\textrm{good}\rangle$ and $|\textrm{bad}\rangle$ vectors correspond to vertical and horizontal axes, respectively, we can plot this state like this:
 
    ![Figure 1. A circle showing superposition of all states](../media/5-equal-superposition.png)
 

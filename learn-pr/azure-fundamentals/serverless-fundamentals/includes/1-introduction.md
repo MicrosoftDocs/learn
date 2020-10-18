@@ -8,7 +8,8 @@ By the end of this module, you will be able to choose the right serverless compu
 
 ## Learning objectives
 
-By the time you finish this module, you will be able to:
+After completing this module, you'll be able to:
+
 - Choose the right serverless computing technology for your business scenario.
 
 ## Prerequisites

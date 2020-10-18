@@ -5,7 +5,7 @@ metadata:
   description: Test a device by issuing commands, and monitoring the results on the dashboard.
   ms.date: 10/17/2019
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Continue the tests of your IoT Central device
