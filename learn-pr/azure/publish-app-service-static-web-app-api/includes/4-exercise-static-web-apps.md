@@ -130,11 +130,11 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 10. Select a location nearest you and press **Enter**.
 
-   :::image type="content" source="../media/extension-location.png" alt-text="Resource location":::
+    :::image type="content" source="../media/extension-location.png" alt-text="Resource location":::
 
 11. Click the **Select Existing** button to select the resource group that has been created for you in the Azure sandbox
 
-   :::image type="content" source="../media/extension-no-permissions.png" alt-text="Select existing resource group":::
+    :::image type="content" source="../media/extension-no-permissions.png" alt-text="Select existing resource group":::
 
 12. Select the resource group named <rgn>[Sandbox resource group]</rgn>
 
