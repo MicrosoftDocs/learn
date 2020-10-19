@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.adding-parameters-components
+title: Adding parameters to data factory components
+metadata:
+  title: Adding parameters to data factory components
+  description: "Adding parameters to data factory components"
+  ms.date: 10/22/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-adding-parameters-components.md)]
