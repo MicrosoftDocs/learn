@@ -7,7 +7,7 @@ In this module, you've learned about protecting your endpoint environment with M
 - Intune mobile application management (MAM) capabilities are supported whether you choose to enroll the device or not.
 - Using Endpoint Manager, you can prevent data leaks and prevent unauthorized access.
 - Endpoint management includes cloud endpoints, on-premises endpoints, cloud + on-premises endpoints, and co-management endpoints.
-- Platforms are the types of devices and the operating systems that are supported. Intune support various App, Google, and Microsoft platforms.
+- Platforms are the types of devices and the operating systems that are supported. Intune support various Apple, Google, and Microsoft platforms.
 
 ## Learn more
 
