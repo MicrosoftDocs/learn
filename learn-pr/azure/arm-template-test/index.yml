@@ -1,7 +1,6 @@
 ### YamlMime:Module
 uid: learn.arm-template-test
 metadata:
-  title: Validate your deployments by using what-if and the ARM template test toolkit
   description: Leverage the ARM template test toolkit and apply it on your Azure Resource
     Manager templates to ensure the templates follow good practices before
     deployment. Apply the what-if command to see the impact of a deployment before it's applied. 
@@ -10,7 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Validate your deployments by using what-if and the ARM template test toolkit
+title: Preview changes to Azure resources and follow recommended practices by using what-if and the ARM template test toolkit
 summary: This module teaches two major things, how to preview your changes with the what-if operation and the value of doing so. Secondly it teaches you how to create valid templates and gives you good recommendations that you can follow using the ARM template test toolkit tool.
 abstract: |
   After completing this module, you'll be able to:

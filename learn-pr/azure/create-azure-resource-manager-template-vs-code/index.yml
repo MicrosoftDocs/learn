@@ -7,7 +7,7 @@ metadata:
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Deploy consistent infrastructure in Azure by using Azure Resource Manager (ARM) templates"
+title: Deploy Azure infrastructure by using ARM templates
 summary: Write Azure Resource Manager templates by using Visual Studio Code to deploy your infrastructure to Azure consistently and reliably.
 abstract: |
   In this module, you will:
