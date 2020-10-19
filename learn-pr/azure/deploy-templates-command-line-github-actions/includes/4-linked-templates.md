@@ -2,7 +2,7 @@ As your deployment complexity grows, you may want to move to a modular approach 
 
 ## Linked template
 
-Linking templates refer to the act of connecting separate template files, referenced by a link from a main template. They allow you to create reusable, composable, and modular deployments comprised of many individual arm templates.
+Linking templates refer to the act of connecting separate template files, referenced by a link from a main template. They allow you to create reusable, composable, and modular deployments comprised of many individual ARM templates.
 
 When referencing a linked template, you must provide a URI value that would be accessible over HTTP or HTTPS, unlike our last unit where we could use a local file.
 
