@@ -47,13 +47,16 @@ If you don't already have a virtual network that you want to use for Bastion, cr
 1. If you don't already have a public IP address that you want to use, select **Create new**.
 1. After you create the virtual network, create VMs on this virtual network. Or peer this virtual network to the virtual network with your VMs.
 
-### Add the subnet to an existing virtual network
+### Add the subnet to an existing virtual network and provision Bastion resources
 
-For an existing virtual network, add a subnet named *AzureBastionSubnet*.
+On your existing virtual network, add a subnet named *AzureBastionSubnet*.
 
 :::image type="content" source="../media/3-virtual-network-add-subnet.png" alt-text="Screenshot of the virtual network > subnets > add subnet page where the subnet name is AzureBastionSubnet.":::
 
-As with the other deployment options, you complete the deployment by selecting Bastion when you connect to the VM. You'll see how this is done in the next unit.
+To provision Bastion, in the portal on the VM, select **Connect** > **Bastion** > **Use Bastion**. Enter a name for the Bastion resource, select the subnet, create a public IP, and so on. After Bastion deploys, you can connect to the VM.
+
+:::image type="content" source="../media/3-operations-bastion.png" alt-text="Screenshot of the Connect using Azure Bastion page with fields filled out by default like Bastion resource name, subnet, and create public IP address.":::
+
 
 ## Deploy Bastion by using Azure PowerShell or the Azure CLI
 
@@ -128,7 +131,11 @@ If you want to use Azure PowerShell or the Azure CLI, you create a subnet, a pub
      --public-ip-address MyPublicIp \
      --resource-group MyResourceGroup \
      --vnet-name MyVnet \
-     --location northeurope
+     --location westus2
    ```
 
 ## Connect to VM by using Bastion
+
+With the virtual network, subnet, public IP and Bastion resources in place, you should be able to connect to the VMs on the same virtual network or peered virtual network. In the Azure portal on the VM, you select **Connect** > **Bastion** > **Use Bastion** and enter your credentials.
+
+In the next unit, you'll go through the steps to deploy Bastion for an existing virtual network. 
