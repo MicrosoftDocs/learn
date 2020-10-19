@@ -30,13 +30,13 @@ For Bastion to work, your network security group needs to allow the following tr
 |Inbound |TCP access from Azure Gateway Manager on ports 443 or 4443. The Azure Gateway Manager facilitates portal connections to the Bastion service.|
 |Outbound|TCP access from the Azure Cloud on port 443. This traffic facilitates diagnostic logging.|
  
-## Deploy Bastion host
+## Deploy Bastion host in the Azure portal
 
 Before you can deploy Bastion, you need a virtual network. You can use an existing virtual network or deploy Bastion as you create a virtual network. Create a subnet in the virtual network called *AzureBastionSubnet*. If you have a VM that's on the same or a peered virtual network, you complete the deployment in the Azure portal by selecting Bastion when you connect to the VM.
 
-The following sections cover the different options you have to set up the Bastion subnet.
+The following two sections show you the steps involved for each of the Bastion deployment options in the Azure portal.
 
-### Enable Bastion when you create a virtual network
+### Enable Bastion when you create a virtual network 
 
 If you don't already have a virtual network that you want to use for Bastion, create a virtual network and enable Bastion on the **Security** tab. 
 
@@ -44,7 +44,7 @@ If you don't already have a virtual network that you want to use for Bastion, cr
 
 1. Select **Enable** and enter a name for your Bastion host. 
 1. Add a subnet address. 
-1. If you don't already have a public IP address that you want to use, select **Create new**. 
+1. If you don't already have a public IP address that you want to use, select **Create new**.
 1. After you create the virtual network, create VMs on this virtual network. Or peer this virtual network to the virtual network with your VMs.
 
 ### Add the subnet to an existing virtual network
@@ -53,8 +53,82 @@ For an existing virtual network, add a subnet named *AzureBastionSubnet*.
 
 :::image type="content" source="../media/3-virtual-network-add-subnet.png" alt-text="Screenshot of the virtual network > subnets > add subnet page where the subnet name is AzureBastionSubnet.":::
 
+As with the other deployment options, you complete the deployment by selecting Bastion when you connect to the VM. You'll see how this is done in the next unit.
 
+## Deploy Bastion by using Azure PowerShell or the Azure CLI
 
-   - Create by using Azure PowerShell: show sample commands from https://docs.microsoft.com/azure/bastion/bastion-create-host-powershell
-   - CLI: https://docs.microsoft.com/azure/bastion/create-host-cli
-   -  What gets created when you deploy (Show this in next unit exercise?)-->
+If you want to use Azure PowerShell or the Azure CLI, you create a subnet, a public IP, and the Bastion resource. The following sections show you examples that you can use to deploy Bastion.
+
+### Use Azure PowerShell to deploy Bastion
+
+1. Create the Azure Bastion subnet by using the cmdlt `New-AzVirtualNetworkSubnetConfig`. Then add the subnet to your existing virtual network by using `Add-AzVirtualNetworkSubnetConfig`. For example, the following command assume you have already have a virtual network.
+
+   ```powershell
+   $subnetName = "AzureBastionSubnet"
+   $virtualNetwork = MyVirtualNetwork
+   $addressPrefix = "10.0.2.0/24"
+   $subnet = New-AzVirtualNetworkSubnetConfig ` 
+   -Name $subnetName ` 
+   -AddressPrefix $addressPrefix `
+
+   Add-AzVirtualNetworkSubnetConfig ` 
+   -Name $subnetName `
+   -VirtualNetwork $virtualNetwork `
+   -AddressPrefix $addressprefix
+   ```
+
+1. Create a public IP address for Azure Bastion. The public IP address is used by Bastion to allow RDP/SSH connectivity over port 443. The public IP address must be in the same region as the Bastion resource.
+
+   ```powershell
+   $publicip = New-AzPublicIpAddress `
+   -ResourceGroupName "myBastionRG" `
+   -name "myPublicIP" `
+   -location "westus2" `
+   -AllocationMethod Static `
+   -Sku Standard
+   ```
+
+1. Create a Azure Bastion resource in the AzureBastionSubnet of your virtual network.
+
+   ```powershell
+   $bastion = New-AzBastion `
+   -ResourceGroupName "myBastionRG" `
+   -Name "myBastion" `
+   -PublicIpAddress $publicip `
+   -VirtualNetwork $virtualNetwork
+   ```
+
+### Use the Azure CLI to deploy Bastion
+
+1. Create the Azure Bastion subnet.
+
+   ```azurecli
+   az network vnet subnet create \
+     --resource-group myBastionRG \
+     --vnet-name MyVirtualNetwork \
+     --name AzureBastionSubnet \
+     --address-prefixes 10.0.2.0/24
+   ```
+
+1. Create a public IP address for Azure Bastion.
+
+   ```azurecli
+   az network public-ip create
+     --resource-group MyResourceGroup \
+     --name MyPublicIp \
+     --sku Standard \
+     --location westus2
+   ```
+
+1. Create a Azure Bastion resource
+
+   ```azurecli
+   az network bastion create \
+     --name MyBastion \
+     --public-ip-address MyPublicIp \
+     --resource-group MyResourceGroup \
+     --vnet-name MyVnet \
+     --location northeurope
+   ```
+
+## Connect to VM by using Bastion
