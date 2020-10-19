@@ -9,7 +9,7 @@ metadata:
   ms.date: 03/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/3-configure-server.md)]
 quiz:
