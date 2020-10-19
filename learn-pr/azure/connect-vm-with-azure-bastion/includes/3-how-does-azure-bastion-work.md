@@ -32,11 +32,29 @@ For Bastion to work, your network security group needs to allow the following tr
  
 ## Deploy Bastion host
 
+Before you can deploy Bastion, you need a virtual network. You can use an existing virtual network or deploy Bastion as you create a virtual network. Create a subnet in the virtual network called *AzureBastionSubnet*. If you have a VM that's on the same or a peered virtual network, you complete the deployment in the Azure portal by selecting Bastion when you connect to the VM.
 
-   - Prereqs: address space
-   - Create in portal - two methods:
-     - Create the BastionSubnet and deploy the Bastion Host as a part of the VNet creation experience (new). Include screenshots to show how this is done and the resources you end up with. ID suggests illustration that provides overview of process.
-     - Or if you have existing VNet/VM, add subnet & then deploy bastion host from VM connection. (This is what we'll show in exercise.)
+The following sections cover the different options you have to set up the Bastion subnet.
+
+### Enable Bastion when you create a virtual network
+
+If you don't already have a virtual network that you want to use for Bastion, create a virtual network and enable Bastion on the **Security** tab. 
+
+:::image type="content" source="../media/3-create-virtual-network-enable-bastion.png" alt-text="Screenshot of the security tab that allows you to enable and configure the Bastion host in the create virtual network workflow.":::
+
+1. Select **Enable** and enter a name for your Bastion host. 
+1. Add a subnet address. 
+1. If you don't already have a public IP address that you want to use, select **Create new**. 
+1. After you create the virtual network, create VMs on this virtual network. Or peer this virtual network to the virtual network with your VMs.
+
+### Add the subnet to an existing virtual network
+
+For an existing virtual network, add a subnet named *AzureBastionSubnet*.
+
+:::image type="content" source="../media/3-virtual-network-add-subnet.png" alt-text="Screenshot of the virtual network > subnets > add subnet page where the subnet name is AzureBastionSubnet.":::
+
+
+
    - Create by using Azure PowerShell: show sample commands from https://docs.microsoft.com/azure/bastion/bastion-create-host-powershell
    - CLI: https://docs.microsoft.com/azure/bastion/create-host-cli
    -  What gets created when you deploy (Show this in next unit exercise?)-->
