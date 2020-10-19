@@ -34,7 +34,7 @@ quiz:
     - content: "Azure Files Storage"
       isCorrect: false
       explanation: "Azure Blob Storage is your best option for storing disaster recovery files and archives."
-    - content: "Azure disk storage"
+    - content: "Azure Disk Storage"
       isCorrect: false
       explanation: "Azure Blob Storage is your best option for storing disaster recovery files and archives."
     - content: "Azure Blob Storage"

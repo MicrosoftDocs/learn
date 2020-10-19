@@ -15,7 +15,7 @@ In this module, you'll learn about the different Azure storage options and the s
 After completing this module, you'll be able to describe the benefits and usage of:
 
 - Azure Blob Storage
-- Azure disk storage
+- Azure Disk Storage
 - Azure File Storage
 - Azure Storage tiers
 

@@ -13,7 +13,7 @@ summary: In this module, you'll learn about the different storage options that a
 abstract: | 
   After completing this module, you'll be able to describe the benefits and usage of:
   - Azure Blob Storage
-  - Azure disk storage
+  - Azure Disk Storage
   - Azure File Storage
   - Azure Storage tiers 
 prerequisites: | 
