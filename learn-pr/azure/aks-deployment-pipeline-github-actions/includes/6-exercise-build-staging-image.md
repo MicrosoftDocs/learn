@@ -58,7 +58,7 @@ You'll build this pipeline using GitHub Actions workflow.
 
 1. Rename the file from `main.yml` to `build-latest.yml` by typing on the top input panel
 
-1. Change the `name` key to _"Build and push the latest build to staging"_, your file will look like this
+1. Change the `name` key to _"Build and push the latest build to staging"_, your file will look like this example:
 
     ```yml
     # This is a basic workflow to help you get started with Actions
@@ -123,11 +123,11 @@ You'll build this pipeline using GitHub Actions workflow.
 
     Add another action to build your Docker image.
 
-1. In the right panel, search for "Build and push docker images". Click on the first result published by **Docker**.
+1. In the right panel, search for "Build and push docker images". Select the first result published by **Docker**.
 
     :::image type="content" source="../media/6-3-docker-action.png" alt-text="Select the action":::
 
-    In the opened panel, click on the **copy icon** to copy the usage YAML
+    In the opened panel, select the **copy icon** to copy the usage YAML.
 
     :::image type="content" source="../media/6-4-docker-copy.png" alt-text="Copy the YAML":::
 
@@ -205,7 +205,7 @@ You'll build this pipeline using GitHub Actions workflow.
     |repository   |contoso-website                                 |
     |tags         |latest                                          |
 
-    You can delete all the other keys since they'll not be used. Your file should be like the following:
+    You can delete all the other keys since they'll not be used. Your file should be like the following example:
 
     ```yml
     name: Build and push the latest build to staging
@@ -286,9 +286,9 @@ You'll notice that, right after you commit the file, a new build will start on t
 
 1. Click the only execution in the list
 
-1. Click on the **Re-run jobs** in the right-hand side of the screen and then "Re-run all jobs"
+1. Click on the **Rerun jobs** in the right-hand side of the screen and then "Rerun all jobs"
 
-    :::image type="content" source="../media/6-7-rerun-jobs.png" alt-text="Re-run all jobs":::
+    :::image type="content" source="../media/6-7-rerun-jobs.png" alt-text="Rerun all jobs":::
 
 1. Run `az acr repository list --name <ACR_NAME> -o table` in the Azure Cloud Shell to confirm there's a repository named `contoso-website` listed in the results
     > [!div class="nextstepaction"]

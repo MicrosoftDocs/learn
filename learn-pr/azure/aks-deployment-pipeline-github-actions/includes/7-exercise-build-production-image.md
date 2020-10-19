@@ -12,7 +12,7 @@ You'll build the tagged version using another workflow.
 
     :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Open the actions tab in the GitHub website":::
 
-1. Click on the **set up a workflow yourself** link just below the header. This should open a new editor with a file in it
+1. Select the **Set up a workflow yourself** link just below the header. This should open a new editor with a file in it:
 
     :::image type="content" source="../media/6-2-example-editor.png" alt-text="Example file being edited":::
 
@@ -204,7 +204,7 @@ You'll build the tagged version using another workflow.
     |repository   |contoso-website                                 |
     |tag_with_ref |true                                            |
 
-    You can delete all the other keys since they'll not be used. Your file should be like the following:
+    You can delete all the other keys since they'll not be used. Your file should be like the following example:
 
     ```yml
     name: Build and push the tagged build to production

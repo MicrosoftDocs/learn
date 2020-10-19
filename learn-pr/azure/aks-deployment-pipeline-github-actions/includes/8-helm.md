@@ -29,7 +29,7 @@ The other feature that makes Helm stand out is, in fact, the feature that you'll
 
 Templates are the feature that makes possible for manifest files to be automated and put into a CI pipeline.
 
-A template file is a manifest file that contains placeholders for variable values, let's take this example of the `deployment.yaml` file inside the `kubernetes` directory of your website fork:
+A template file is a manifest file that contains placeholders for variable values. Let's take this example of the deployment.yaml file inside the kubernetes directory of your website fork:
 
 ```yml
 apiVersion: apps/v1

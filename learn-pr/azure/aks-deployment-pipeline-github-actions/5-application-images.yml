@@ -1,21 +1,21 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-deployment-pipeline-github-actions.5-application-images
 metadata:
-  title: Understand Application Images
+  title: Understand application images
   description: Explore and understand concepts about application images we're going to be using to deploy a cloud-native application using GitHub Actions
   ms.date: 10/08/2020
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial
   ms.prod: github
-title: Understand Application Images
+title: Understand application images
 durationInMinutes: 10
 content: |
   [!include[](includes/5-application-images.md)]
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What is a Docker Image?"
+    - content: "What is a Docker image?"
       choices:
         - content: "It's a zipped directory with code we can download and run in any platform or computer using Docker."
           isCorrect: false

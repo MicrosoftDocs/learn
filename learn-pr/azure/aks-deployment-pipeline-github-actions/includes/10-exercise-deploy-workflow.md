@@ -2,7 +2,7 @@ With all the charts created, you now have all the tools you need to deploy the a
 
 In this part, you'll tackle the last bit of the diagram, the "Deploy Steps".
 
-:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Deployment pipeline":::
+:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Deployment pipeline.":::
 
 ## Create the deploy to staging
 
@@ -325,7 +325,7 @@ To test the staging deployment, go to `contoso-staging.<your-dns-name>` in your 
 
 With the staging workflow created, the next step is to create the production workflow. This step is simpler because you can copy the whole `deploy` job and change its parameters.
 
-1. Navigate to the `.github/workflows` directory in the "Code" view in the GitHub website. Click the `build-production.yaml` file and edit it.
+1. Navigate to the `.github/workflows` directory in the "Code" view in the GitHub website. Select the `build-production.yaml` file and edit it.
 1. Copy the `deploy` step from the previous pipeline and paste it below the last line of the YAML file. The result should be like this:
 
     ```yaml

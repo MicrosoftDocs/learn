@@ -200,7 +200,7 @@ In this section, you'll go through each of the template files to set them up and
                   name: http
     ```
 
-    In this section you're splitting the three sections of the image so you can better work with them separately.
+    In this section, you're splitting the three sections of the image so you can better work with them separately.
 
 1. Save and close the file.
 1. Open the `values.yaml` file in the root of the `contoso-website` directory
