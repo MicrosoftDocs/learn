@@ -7,7 +7,7 @@ Azure Blob Storage is an object storage solution for the cloud. It can store mas
   :::column-end:::
 :::row-end:::
 
-Blobs aren't limited to common file formats. A blob might contain gigabytes of binary data streamed from a scientific instrument, an encrypted message for another application, or data in a custom format for an app you're developing. One advantage of blob storage over disk storage is that developers don't have to think about or manage disks. Data is uploaded as blobs, and Azure takes care of the physical storage needs.
+Blobs aren't limited to common file formats. A blob could contain gigabytes of binary data streamed from a scientific instrument, an encrypted message for another application, or data in a custom format for an app you're developing. One advantage of blob storage over disk storage is that it does not require developers to think about or manage disks; data is uploaded as blobs, and Azure takes care of the physical storage needs.
 
 Blob Storage is ideal for:
 

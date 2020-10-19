@@ -21,7 +21,7 @@ abstract: |
 prerequisites: | 
   - Understanding of Azure networking concepts like ExpressRoute and Virtual Networks
   - Understanding of networking concepts like IP Addressing, DNS and routing
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/enterprise-scale-networking.svg
 levels:
 - advanced
 roles:
