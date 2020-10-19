@@ -27,7 +27,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 ## Create a static web app
 
-1. Open Visual Studio Code and go to **File > Open Folder** to open the repository you cloned to your computer in the editor.
+1. Open Visual Studio Code and go to **File > Open** to open the repository you cloned to your computer in the editor.
 
 2. Inside Visual Studio Code, select the Azure logo in the Activity Bar to open the Azure extensions window.
 
@@ -60,7 +60,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 7. Select **angular-app** as the location for the application code and press **Enter**.
 
-   :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Application code location":::
+   :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Angular application code location":::
 
 ::: zone-end
 
@@ -68,7 +68,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 7. Select **react-app** as the location for the application code and press **Enter**.
 
-   :::image type="content" source="../media/extension-app-location-react.png" alt-text="Application code location":::
+   :::image type="content" source="../media/extension-app-location-react.png" alt-text="React application code location":::
 
 ::: zone-end
 
@@ -76,7 +76,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 7. Select **svelte-app** as the location for the application code and press **Enter**.
 
-   :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Application code location":::
+   :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Svelte application code location":::
 
 ::: zone-end
 
@@ -84,7 +84,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 7. Select **vue-app** as the location for the application code and press **Enter**.
 
-   :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Application code location":::
+   :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Vue application code location":::
 
 ::: zone-end
 
@@ -130,11 +130,11 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 10. Select a location nearest you and press **Enter**.
 
-   :::image type="content" source="../media/extension-location.png" alt-text="Resource location":::
+    :::image type="content" source="../media/extension-location.png" alt-text="Resource location":::
 
 11. Click the **Select Existing** button to select the resource group that has been created for you in the Azure sandbox
 
-   :::image type="content" source="../media/extension-no-permissions.png" alt-text="Select existing resource group":::
+    :::image type="content" source="../media/extension-no-permissions.png" alt-text="Select existing resource group":::
 
 12. Select the resource group named <rgn>[Sandbox resource group]</rgn>
 
@@ -163,7 +163,7 @@ You can check the status of your build and deploy action by navigating to the Ac
 
 1. Click **Azure Static Web Apps CI/CD**
 1. Click the topmost commit titled similar to **ci: add Azure Static Web Apps workflow file**
-1. Click the **Build and Deploy Job** link
+1. Click the **Build and Deploy Job** link on the left
 
 From here, you can observe the progress of your app as it builds.
 
