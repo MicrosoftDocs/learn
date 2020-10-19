@@ -2,10 +2,10 @@
 uid: learn.student-evangelism.predict-meteor-showers-using-python.8-finish-search
 metadata: 
   title: Add in data from Chang'e
-  description: Add in data from Chang'e.
+  description: Add data from the instance when Chang'e's tears might have caused a meteor shower to add a bit of Moon Goddess magic your prediction.
   ms.date: 10/20/2020
   author: sguthals
-  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Add in data from Chang'e

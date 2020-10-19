@@ -2,13 +2,13 @@
 uid: learn.student-evangelism.predict-meteor-showers-using-python.5-prep-data
 metadata:
   title: Cleanse meteor data
-  description: Learn how to cleanse meteor data.
+  description: Learn how to cleanse meteor data using Python and Pandas.
   ms.date: 10/20/2020
   author: sguthals
-  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.author: shanama 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Cleanse meteor data
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/5-prep-data.md)]

@@ -4,7 +4,11 @@
 
 This film, coupled with the real-life ingenuity of space exploration, is what inspired this module. Looking into the night sky and see stars, planets, and meteor showers can often kindle both a scientific and imaginative curiosity about our universe. On one hand, you might feel an awe-inspiring sense of accomplishment about what we've collectively been able to *know* about the universe, thanks to the scientists, engineers, and astronauts that have built upon that knowledge for hundreds of years. On the other hand, you might feel a unworldly wonder about the stories we've each heard about what causes meteor showers or who lives on the mooon. Both of these perspectives often drive each other; with new scientific discoveries creating new narratives for films, and fiction providing us with the creativity to solve real problems in new ways. 
 
+![Fei Fei hearing of the story of the Moon Goddess Chang'e](../media/change-story.png)
+
 This module will pick a very real-world event, meteor showers, and guide you through using data science to predict the best day to see a meteor shower given your general location. Just like Fei Fei, you will hone new skills, develop persistence, and be inspired by the story to build something that brings you closer to the universe. 
+
+This module is a part of a multi-modal approach to learning, meaning you can also follow along with a video tutorial on the [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG).
 
 ## Learning objectives
 

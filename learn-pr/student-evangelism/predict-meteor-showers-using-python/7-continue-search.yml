@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.predict-meteor-showers-using-python.7-continue-search
 metadata:
-  title: 'Write a predictor function: Part 1'
-  description: Learn how to write a predictor function, part 1.
+  title: 'Write a predictor function: Part 2'
+  description: Write one function that will predict the best date to view a meteor shower given a certain city.
   ms.date: 10/20/2020
   author: sguthals
-  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.author: shanama 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'Write a predictor function: Part 1'
-durationInMinutes: 5
+title: 'Write a predictor function: Part 2'
+durationInMinutes: 9
 content: |
   [!include[](includes/7-continue-search.md)]

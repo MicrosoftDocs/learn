@@ -19,7 +19,6 @@ Once you have everything installed, follow these steps to get your environment r
 6. Open the sample-return.ipynb file in Visual Studio Code
 7. Make sure you are using the conda environment that you setup above
 
-
 Your environment should look like this: 
  
 ![Local Visual Studio Code environment example](../media/vscode-sample-return.png)

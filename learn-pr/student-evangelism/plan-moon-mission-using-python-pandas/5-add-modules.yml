@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.5-add-modules
 metadata:
-  title: Add more data to the Missions Dataframe
-  description: Add more data to the Missions Dataframe.
+  title: Add rocket weight data to the mission analysis
+  description: Include the weight of different modules within the Apollo rockets to the dataframes for further insight.
   ms.date: 10/20/2020
-  author: sguthals # Your GitHub username (or whomever you'd like to give author attribution to)
-  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  author: sguthals
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Add more data to the Missions Dataframe
-durationInMinutes: 2
+title: Add rocket weight data to the mission analysis
+durationInMinutes: 6
 content: |
   [!include[](includes/5-add-modules.md)]

@@ -2,13 +2,13 @@
 uid: learn.student-evangelism.predict-meteor-showers-using-python.2-story-setup
 metadata:
   title: Chang'e and the stardust in space
-  description: Chang'e and the stardust in space.
+  description: This unit describes the story of Chang'e and how her tears turn to stardust, as well as introducing the science of meteors.
   ms.date: 10/20/2020
   author: sguthals
-  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.author: shanama 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Chang'e and the stardust in space
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/2-story-setup.md)]
