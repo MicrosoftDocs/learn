@@ -163,7 +163,7 @@ You can check the status of your build and deploy action by navigating to the Ac
 
 1. Click **Azure Static Web Apps CI/CD**
 1. Click the topmost commit titled similar to **ci: add Azure Static Web Apps workflow file**
-1. Click the **Build and Deploy Job** link
+1. Click the **Build and Deploy Job** link on the left
 
 From here, you can observe the progress of your app as it builds.
 
