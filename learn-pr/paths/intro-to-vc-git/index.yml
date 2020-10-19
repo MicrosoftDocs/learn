@@ -19,6 +19,7 @@ roles:
 - developer
 products:
 - azure
+- github
 modules:
 - learn.student-evangelism.introduction-to-git
 - learn.student-evangelism.collaborate-with-git
