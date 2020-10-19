@@ -117,7 +117,7 @@ All users within a database are automatically members of the public role. By def
 
 The built-in database roles do meet the needs of many applications; however with applications that require more granular security (for example, when you only want to grant access to a specific subset of tables) a custom role is often a better choice. 
 
- > **NOTE** 
+ > [!NOTE] 
  >By default, users in roles like db_owner can always see all of the data in the database. Applications should take advantage of encryption options like Always Encrypted to protect sensitive data from privileged users.
 
 Azure SQL Database has two additional roles that are defined in the master database of Azure SQL server.
