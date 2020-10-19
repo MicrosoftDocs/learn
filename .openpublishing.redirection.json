@@ -3314,11 +3314,6 @@
       "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/includes/8-configure-ci-cd.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/azure-spring-cloud-workshop",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/includes/9-conclusion.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-spring-cloud-workshop/8-conclusion",
-      "redirect_document_id": false
     }
   ]
 }
