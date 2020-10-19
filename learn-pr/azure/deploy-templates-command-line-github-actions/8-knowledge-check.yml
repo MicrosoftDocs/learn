@@ -17,34 +17,34 @@ quiz:
   questions:
   - content: "When using linked templates, where can you store the linked artifacts?"
     choices:
-    - content: "On a networked server accessible over SMB"
+    - content: "On a networked server accessible over SMB."
       isCorrect: false
-      explanation: "When referencing a linked template, you cannot use a local file or a file that is only available on your local network"
-    - content: "On any publicly accessible endpoint accessible through http or https"
+      explanation: "When referencing a linked template, you cannot use a local file or a file that is only available on your local network."
+    - content: "On any publicly accessible endpoint accessible through http or https."
       isCorrect: true
       explanation: "When referencing a linked template, you must provide a URI value that downloadable as http or https."
-    - content: "On any publicly accessible endpoint accessible through FTP"
+    - content: "On any publicly accessible endpoint accessible through FTP."
       isCorrect: false
       explanation: "When referencing a linked template, you must provide a URI value that downloadable as http or https."
   - content: "When deploying a template through GitHub Actions, you must provide authentication credentials in what form?" 
     choices:
-    - content: "You can provide your own username and template as part of a configured secret in your GitHub repository settings"
+    - content: "You can provide your own username and template as part of a configured secret in your GitHub repository settings."
       isCorrect: false
-      explanation: "you can automate your workflow to do an Azure login using an Azure service principal"
-    - content: "You cannot use users credentials part of a configured secret in your GitHub repository settings"
+      explanation: "you can automate your workflow to do an Azure login using an Azure service principal."
+    - content: "You cannot use users credentials part of a configured secret in your GitHub repository settings."
       isCorrect: true
-      explanation: "You can provide Service Principal credentials part of a configured secret in your GitHub repository settings"
-    - content: "You can provide Shared Access Signature part of a configured secret in your GitHub repository settings"
+      explanation: "You can provide Service Principal credentials part of a configured secret in your GitHub repository settings."
+    - content: "You can provide Shared Access Signature part of a configured secret in your GitHub repository settings."
       isCorrect: false
       explanation: "Shared Access Signature or SAS token are used to provides secure delegated access to resources in your storage account without compromising the security of your data."
   - content: "what is the best way to modularize your resources for deployment?" 
     choices:
     - content: "To modularize your deployment using nested templates is the recommended way."
       isCorrect: false
-      explanation: "Nested templates allow you to store many individual templates in one main template file.  But each file cannot be reused as easily as if they were separate files linked together."
+      explanation: "Nested templates allow you to store many individual templates in one main template file. But each file cannot be reused as easily as if they were separate files linked together."
     - content: "To modularize your deployment using linked templates is the recommended way."
       isCorrect: true
       explanation: "Linked templates allow you to create reusable, composable, and modular deployments comprised of many individual ARM templates."
-    - content: "The best way to modularize your deployment is to use GitHub Actions to control the deployment"
+    - content: "The best way to modularize your deployment is to use GitHub Actions to control the deployment."
       isCorrect: false
-      explanation: "GitHub Actions is a great way to deploy your Infrastructure as Code (IaC) in a controlled manner but it does not provide any benefits to modularize your templates"
+      explanation: "GitHub Actions is a great way to deploy your Infrastructure as Code (IaC) in a controlled manner but it does not provide any benefits to modularize your templates."
