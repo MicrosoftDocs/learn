@@ -1,11 +1,9 @@
 
-
-<!--Add in diagram - update diagram so it's numbered and has a flow-->
-<!--The browser connects to the Bastion host over the internet by using the public IP associated to Bastion. You're then connected to the VM-->
-
 An Azure Bastion deployment is per virtual network or peered virtual network, not per subscription, account, or virtual machine. After you provision an Azure Bastion service in your virtual network, the RDP/SSH experience is available to all your VMs in the same virtual network.
 
-:::image type="icon" source="../media/3-bastion-architecture-overview.png" border="false" alt-text="Diagram that shows the process of connecting to a VM through the Azure portaly by using Azure Bastion.":::
+The following diagram shows an overview of how Bastion works.
+
+:::image type="icon" source="../media/3-bastion-architecture-overview.png" border="false" alt-text="Diagram that shows the process of connecting to a VM through the Azure portal by using Azure Bastion.":::
 
 1. **Connect to VM in the Azure portal** - In the Azure portal, on the VM overview page, select **Connect** > **Bastion** > **Use Bastion** and enter your credentials for the VM. All connections to Azure Bastion are enforced through Azure Active Directory token-based authentication and all traffic is encrypted over HTTPS.
 1. **Browser connects to Bastion host** - The browser connects to Azure Bastion over the internet using the public IP of the Bastion host. 
