@@ -36,5 +36,6 @@ modules:
 - learn.azure.create-resource-manager-template-vs-code
 - learn.azure.resource-manager-template-reuse
 - learn.arm-template-test
+- learn.azure.deploy-templates-command-line-github-actions
 trophy:
   uid: learn.deploy-manage-resource-manager-templates.trophy
