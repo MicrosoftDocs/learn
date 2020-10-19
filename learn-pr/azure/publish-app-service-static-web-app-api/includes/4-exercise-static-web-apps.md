@@ -27,7 +27,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 ## Create a static web app
 
-1. Open Visual Studio Code and go to **File > Open Folder** to open the repository you cloned to your computer in the editor.
+1. Open Visual Studio Code and go to **File > Open** to open the repository you cloned to your computer in the editor.
 
 2. Inside Visual Studio Code, select the Azure logo in the Activity Bar to open the Azure extensions window.
 
