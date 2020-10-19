@@ -60,7 +60,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 7. Select **angular-app** as the location for the application code and press **Enter**.
 
-   :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Application code location":::
+   :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Angular application code location":::
 
 ::: zone-end
 
@@ -68,7 +68,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 7. Select **react-app** as the location for the application code and press **Enter**.
 
-   :::image type="content" source="../media/extension-app-location-react.png" alt-text="Application code location":::
+   :::image type="content" source="../media/extension-app-location-react.png" alt-text="React application code location":::
 
 ::: zone-end
 
@@ -76,7 +76,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 7. Select **svelte-app** as the location for the application code and press **Enter**.
 
-   :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Application code location":::
+   :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Svelte application code location":::
 
 ::: zone-end
 
@@ -84,7 +84,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 7. Select **vue-app** as the location for the application code and press **Enter**.
 
-   :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Application code location":::
+   :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Vue application code location":::
 
 ::: zone-end
 
