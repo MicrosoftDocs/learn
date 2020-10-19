@@ -5,7 +5,7 @@ metadata:
   description: Explore the broad array of Azure technologies that analyze text or images and relational, nonrelational, or streaming data.
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
-  ms.author: chris.testaoneill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Survey the services on the Azure Data platform

@@ -8,7 +8,7 @@ Beginner
 
 ## Learning Objectives
 
-+ Define what a Service Level Agree (SLA) is.
++ Define what a Service Level Agreement (SLA) is.
 + Review the various types and levels of SLAs.
 + Explore composite SLAs
 + Review how you can calculate your SLA based on components you choose.
