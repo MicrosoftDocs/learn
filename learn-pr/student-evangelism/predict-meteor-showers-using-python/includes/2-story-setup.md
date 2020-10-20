@@ -1,29 +1,31 @@
-![Fei Fei and her mother looking into the sky as her mother tells the story of Chang'e](../media/fei-fei-mother-story.png)
+![Fei Fei and her mother looking into the sky as her mother tells the story of Chang'e.](../media/fei-fei-mother-story.png)
 
-In Over the Moon Film, Fei Fei's mother tells her the story of Chang'e, the moon goodess who tried to escape with the love of her life, but ended up living an eternal life alone on the moon after. Fei Fei and her mother gaze into the clear night sky as her mother tells Fei Fei that Chang'e's tears turn to star dust and is what we can see flying across our skies every night. 
+In *Over the Moon*, Fei Fei's mother tells the story of Chang'e. Chang'e is the moon goddess who tried to escape with the love of her life but ended up living eternally alone on the moon. Fei Fei and her mother gaze into the clear night sky as her mother tells Fei Fei that Chang'e's tears turn to star dust. That dust is what we see flying across our skies at night. 
 
-This moment is not only a touching moment, but also what inspired this particular module. When Fei Fei and her parents are looking into the night sky, they are likely watching meteoroids flying through out atmosphere towards our Earth. While Fei Fei might need to know the mood of Chang'e to know if there will be a major meteor shower event, we can also rely on events that we can measure to predict when we will be able to see a meteor shower. And at the end of the module, we can add in what we know about Chang'e to add to our data predictions!
+This touching moment inspired this module. When Fei Fei and her parents are looking into the night sky, they're likely watching meteoroids fly through Earth's atmosphere. Although Fei Fei might need to know the mood of Chang'e to predict a major meteor shower, we can rely on measurable events to predict when we can see a meteor shower. At the end of the module, we'll add to our data predictions what we know about Chang'e.
 
-Before getting started, it's important to understand what meteor showers are. This will help us understand what data we should gather to write our algorithm to predict the best meteor shower viewing date. 
+Before we start, you need to understand what meteor showers are. This understanding will help you choose which data to gather to write an algorithm to predict the best date to view a meteor shower. 
 
 ## What are meteor showers?
 
-Meteoroids are objects in space that are typically made of dust, rocks, or metal. They can range from small grains of dust to small asteroids. They are essentially space rocks floating out in space. When meteoroids get near Earth they are pulled into our atmosphere by gravity. As they enter the astmosphere, they begin to burn, which is the light that we see in our skies and they are called meteors during this state. If the meteor passes through the atmosphere without completely burning, it will land somewhere on Earth and is then called a meteorite. 
+*Meteoroids* are objects in space that are typically made of dust, rocks, or metal. They can range from small grains of dust to small asteroids. They're essentially space rocks floating out in space. 
 
-NASA estimates that 48.5 tons of meteoric material falls to Earth each day, most of which are completely burned by our atmosphere. For the ones that make it to our surface, the best places to find them would be in the desert or an icy place like Antartica. This is mainly because by the time they land on Earth, they look pretty similar to any rock you'd find in your yard, so it's difficult to notice them compared to someting naturally occuring on Earth. 
+When meteoroids get near Earth, gravity pulls them into our atmosphere, where they begin to burn. That burning is the light we see in our skies. In this state, meteoroids are called *meteors*. If a meteor passes through the atmosphere without completely burning, it lands somewhere on Earth and is then called a *meteorite*. 
 
-Meteoroids can originate from comets, asteroids, moons, or other planets. The most likely source to cause a meteor shower (when a lot of meteors can be seen at once) is from comets, so this module will focus on those. 
+NASA estimates that 48.5 tons of meteoric material fall to Earth each day. Most meteors are completely burned in our atmosphere. The best place to find the ones that reach Earth's surface is the desert or an icy place like Antarctica. They're easier to find in these places because by the time they land on Earth, meteorites look similar to any rock you'd find in your yard. It's difficult to distinguish them from rocks that naturally occur on Earth. 
 
-You can learn more about meteors and meteor showers on the [NASA Solar System website](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/overview?azure-portal=true).
+Meteoroids can originate from comets, asteroids, moons, or planets. The most common source of meteor showers is comets. This module focuses on comets. 
 
-Or, they could be flying frogs, whose to say?
+You can learn more about meteors and meteor showers on the [NASA Solar System Exploration website](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/overview?azure-portal=true).
 
-![Frogs flying through Space](../media/flying-frogs.png)
+. . . Or meteor showers could be flying frogs. Who's to say?
+
+![Frogs flying through space.](../media/flying-frogs.png)
 
 ### Meteors from comets 
 
-Comets are mostly made of ice with some dust, rock, and metals embedded in them. They have cylindrical orbits around our sun, meaning sometimes they are nearer. During the times when a comet is near the sun, they will often begin to melt. As the comet melts, parts of the dust, rock, and metal will dislodge from the comet and remain in space at that location. 
+Comets are made mostly of ice. They're embedded with some dust, rock, and metals. Comets have cylindrical orbits around our sun. So sometimes they are nearer to the sun than other times. When a comet is near the sun, it often begins to melt. As it melts, some of the dust, rock, and metal dislodge from the comet and remain in space at that location. 
 
-When earth nears the orbit of the comet, the debris that was left from the comet when it orbited that same location last will enter our atmosphere. Since there is a high likelihood of a lot of debris being left by the comet at that location, there is a high likelihood of enough meteors to enter our atmosphere, causing a meteor shower. 
+When Earth nears a location where a comet has shed debris, that debris can enter our atmosphere and cause meteor showers. Because some locations in Earth's orbit are more likely to have a lot of comet debris, meteor showers are more common in those locations. 
 
-*Fun Fact*: There is a high likelihood that Earth's oceans were caused by enough comets hitting Earth during the formation of our planet, with the ice from the comets melting and creating our oceans!
+**Fun fact**: Earth's oceans were likely caused by comets that struck our planet during its formation and melted into water!
