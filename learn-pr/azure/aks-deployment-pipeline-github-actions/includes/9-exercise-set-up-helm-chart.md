@@ -19,7 +19,7 @@ Let's set up the environment to deploy a helm chart to AKS using GitHub Actions.
 
 ## Create a chart
 
-1. `cd` to the repository you forked, then `cd` to the `kubernetes` directory
+1. `cd` to the repository you forked, and then `cd` to the kubernetes directory.
 1. In this directory, run the following command
 
     ```bash
@@ -54,7 +54,7 @@ This is all it takes to create a chart. Now let's configure it.
 
     This is the file that names the chart. It's where Helm looks for information about the chart itself. You should have a file that looks like this:
 
-    ```yml
+    ```yaml
     apiVersion: v2
     name: contoso-website
     description: A Helm chart for Kubernetes
@@ -82,7 +82,7 @@ This is all it takes to create a chart. Now let's configure it.
 
     Remove all the comments and unneeded keys, leaving only the required options, and edit them to look like this:
 
-    ```yml
+    ```yaml
     apiVersion: v2
     name: contoso-website
     description: Chart for the Contoso company website
@@ -101,7 +101,7 @@ In this section, you'll go through each of the template files to set them up and
 
     In the opened file you should have a YAML like this:
 
-    ```yml
+    ```yaml
     apiVersion: apps/v1
     kind: Deployment
     metadata:
@@ -134,7 +134,7 @@ In this section, you'll go through each of the template files to set them up and
 
 1. Add a new key within the `metadata` section called `namespace` with the following configuration
 
-    ```yml
+    ```yaml
     apiVersion: apps/v1
     kind: Deployment
     metadata:
@@ -170,7 +170,7 @@ In this section, you'll go through each of the template files to set them up and
 
     It's a good practice to split up the `registry`, `tag`, and `image` parts of the image name. Add three new template variables to this part.
 
-    ```yml
+    ```yaml
     apiVersion: apps/v1
     kind: Deployment
     metadata:
@@ -214,7 +214,7 @@ In this section, you'll go through each of the template files to set them up and
 
     Notice you're using `.Values.image.registry`, `.Values.image.name`, and `.Values.image.tag`. Create the `values.yaml` file as follows:
 
-    ```yml
+    ```yaml
     image:
       registry: <your-acr-name>
       name: contoso-website
@@ -231,7 +231,7 @@ In this section, you'll go through each of the template files to set them up and
 
     Add a new key called `namespace` within the `metadata` section and use the same value you put in the `deployment.yaml` file.
 
-    ```yml
+    ```yaml
     apiVersion: v1
     kind: Service
     metadata:
@@ -258,7 +258,7 @@ Let's change the `ingress.yaml` file.
 
     Add a new key called `namespace` within the `metadata` section and use the same value you put in the `deployment.yaml` file
 
-    ```yml
+    ```yaml
     apiVersion: v1
     kind: Ingress
     metadata:
@@ -281,7 +281,7 @@ Let's change the `ingress.yaml` file.
 
     Concatenate the namespace in the hostname, the HTTP Application Routing add-on in the AKS cluster will do the naming resolution automatically.
 
-    ```yml
+    ```yaml
     apiVersion: v1
     kind: Ingress
     metadata:
@@ -302,7 +302,7 @@ Let's change the `ingress.yaml` file.
 
     Now add a new template variable that will be your DNS zone name
 
-    ```yml
+    ```yaml
     apiVersion: v1
     kind: Ingress
     metadata:
@@ -324,7 +324,7 @@ Let's change the `ingress.yaml` file.
 1. Save and close the file.
 1. Open the `values.yaml` file, let's add the `dns.name` key, so it looks like this:
 
-    ```yml
+    ```yaml
     image:
       repository: <acr-name>
       name: contoso-website

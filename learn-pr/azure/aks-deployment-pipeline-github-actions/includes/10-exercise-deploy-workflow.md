@@ -73,7 +73,7 @@ You'll start by the staging pipeline.
 
 1. The second step to execute is to install Helm, in this exercise you'll use Helm at version `v3.3.1`. Azure has a built action that already downloads and installs Helm for you.
 
-    1. Add a new `steps` key below the `runs-on` key, just like the first job you created. Then, on the right-hand side of the screen, search for "Helm tool installer" and click on the result that was published by Azure
+    1. Add a new `steps` key below the `runs-on` key, just like the first job you created. Then, on the right-hand side of the screen, search for "Helm tool installer" and select the result that was published by Azure.
 
        :::image type="content" source="../media/10-helm-tool-installer.png" alt-text="Helm installer action":::
 
@@ -110,7 +110,7 @@ You'll start by the staging pipeline.
                  version: v3.3.1
        ```
 
-1. Next, log in to your AKS cluster using Azure CLI through another action that Azure provides you. Use the search bar on the right-hand side of the screen to look for "Set Context". Select the "Azure Kubernetes Set Context" action.
+1. Next, sign in to your AKS cluster using Azure CLI through another action that Azure provides you. Use the search bar on the right-hand side of the screen to look for "Set Context". Select the "Azure Kubernetes Set Context" action.
 
     :::image type="content" source="../media/10-aks-set-context.png" alt-text="Set AKS context":::
 

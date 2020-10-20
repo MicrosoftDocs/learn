@@ -13,7 +13,7 @@ Even though it might seem redundant, we need to split those two events into two 
 
 At this point, here's what our pipeline looks like:
 
-:::image type="content" source="../media/3-pipeline-1-trigger.png" alt-text="Pipeline triggers":::
+:::image type="content" source="../media/3-pipeline-1-trigger.png" alt-text="Diagram that depicts two types of pipeline triggers.":::
 
 After the triggers are defined, we need to think about the pipeline flow itself. That's the answer to the question, "What will happen after one of the triggers is executed?" Generally, the first steps are the same for both triggers.
 
@@ -23,7 +23,7 @@ The website must be a Docker image to run in the AKS environment. That means we'
 
 So, the first step after creating the trigger is to clone the repository, so we have all the files to work with:
 
-:::image type="content" source="../media/3-pipeline-2-build.png" alt-text="Build the steps of the pipeline":::
+:::image type="content" source="../media/3-pipeline-2-build.png" alt-text="Diagram that depicts the procession from triggers to the first build step in a pipeline.":::
 
 We'll call these first steps the *build steps* because we have to prepare some configuration and build the image before we push it to the AKS instance. The build part is where we set up all the information that's needed for the deploy step.
 
@@ -35,7 +35,7 @@ If the pipeline is triggered by the *tagged* commit, we'll build the image and t
 
 Otherwise, if we have a commit that isn't a tagged commit in the main branch, we'll build the image that has the `latest` tag.
 
-:::image type="content" source="../media/3-pipeline-3-build-docker.png" alt-text="Adjust the Docker build for each trigger":::
+:::image type="content" source="../media/3-pipeline-3-build-docker.png" alt-text="Diagram that depicts the procession from triggers to the first and second build steps in a pipeline.":::
 
 After the image is built, we need to push it to the Contoso Azure Container Registry instance, which the AKS cluster is set up to access. This way, the cluster can download the images and run them.
 
@@ -43,7 +43,7 @@ After the image is built, we need to push it to the Contoso Azure Container Regi
 
 At this point, the pipeline converges into a single step. Because the Container Registry instance doesn't have internal divisions, we'll push both images to the same place.
 
-:::image type="content" source="../media/3-pipeline-4-docker-push.png" alt-text="Push the image to the Azure Container Registry instance.":::
+:::image type="content" source="../media/3-pipeline-4-docker-push.png" alt-text="Diagram that depicts the procession from triggers to the first, second, and third build steps in the pipeline.":::
 
 ## Deploy the application
 
@@ -53,6 +53,6 @@ If the tagged commit triggered the pipeline, we'll deploy the website to product
 
 If the pipeline didn't trigger a tagged commit, we'll push to the `staging` namespace of the same cluster.
 
-:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Deploy to the correct environment.":::
+:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that depicts the procession from triggers, through three build steps, to the deploy step in a pipeline.":::
 
 Now, we've summarized all the tasks we have to execute to successfully deploy the website to the correct environments. The next step is to create the deploy environment.
