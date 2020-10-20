@@ -1,10 +1,6 @@
-Now let’s look at how to incorporate an ERC20 token in our contracts.
+Let’s create a new project with the help of Truffle and incorporate the OpenZeppelin contracts library. Make sure that you already have [Truffle](https://www.trufflesuite.com/truffle) and [Ganache CLI](https://github.com/trufflesuite/ganache-cli) installed before moving on.
 
 ## Create a new project
-
-First, we're going to create a new blockchain project with the help of OpenZeppelin.
-
-Make sure that you already have [Truffle](https://www.trufflesuite.com/truffle) and [Ganache CLI](https://github.com/trufflesuite/ganache-cli) installed.
 
 1. Open your terminal and create a new folder called **Token20**. To do that you can type: `mkdir Token20`. I typically do this inside a folder called **Projects** where I store all my other development projects.
 1. Navigate to the Token20 folder. To do that you can type: `cd Token20`.
@@ -33,10 +29,8 @@ Next, you'll want to confirm that you have Node.js installed. If you don't, you 
 
 Node.js comes with the node package manager (npm) installed as well. This will help you manage other JavaScript built packages and applications.
 
-Going to your terminal, type:
-`npm init`
-
-That will open a utility that walks you through the process to create a package.json file which describes the project and stores dependencies that are used in the project. Follow the steps in the utility to easily create a package.json, noting that you can press enter at each prompt to use the default value.
+1. Going to your terminal, type: `npm init`. That will then display a utility that walks you through the process to create a package.json file which describes the project and stores dependencies that are used in the project.
+1. Follow the steps in the utility to easily create a package.json file. Note: you can press enter at each prompt to use the default value.
 
 ## Setup OpenZeppelin
 
@@ -58,7 +52,7 @@ found 0 vulnerabilities
 Notice that a couple things happened:
 
 1. The package was added as a dependency in the **package.json** file
-1. There is a **node_modules** folder that has imported all of the available contracts from OpenZeppelin under **@openzeppelin/contracts**.
+1. There is a **node_modules** folder that has imported all of the available contracts from OpenZeppelin under **@openzeppelin/contracts**. Inspecting the contents of that folder returns the following:
 
 ```output
 $ ls node_modules/@openzeppelin/contracts 
