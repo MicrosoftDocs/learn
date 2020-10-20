@@ -1,86 +1,175 @@
-# Title
+# Module: Query, visualize, and monitor Azure Sentinel data
 
-*Add the working title [(Title guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title)*
+## Learner roles
 
-## Role(s)
+- Administrator
+- Auditor
+- Risk practitioner
+- Security engineer
+- Solution architect
+- Student
+- Technology manager
 
-- *Add the role(s)* [Role guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#role)
+## Learner level
 
-## Level
+- **Beginner**: Introductory and overview material that assumes little or no topic expertise. Covers topic concepts, functions, features, and benefits.
 
-- *Add the level*  [Level guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#level)
+## Products taught
 
-## Product(s)
-
-- *Add the product(s)*
+- Microsoft Azure Sentinel
+- Kusto Query Language (KQL)<!-- Kusto is now a failed term, and has been replaced with "Azure Data Explorer." Please s/r. -->
+- Azure Sentinel workbooks<!-- This term isn't in Term Studio or MS Cloud Style Guide. When I search the internet, it shows up with both "workbooks" and "Workbooks," but the majority are capitalized "Azure Sentinel Workbooks." Currently, capitalization varies throughout this doc. Since the majority are currently lowercase, I've changed them all to lowercase. If you decide to change it to title caps, please search & replace (s/r) -->
 
 ## Prerequisites
 
-- *List the prerequisites [(Prerequisite guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites)*
+To get the best learning experience from this module, you should have:
 
-## Summary
+- Familiarity with security operations in an organization.
+- Basic experience with Azure services.
+- Basic knowledge of operational concepts such as monitoring, logging, and alerting.
 
-*Add the summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries)*
+## Module summary description
 
-## Learning objectives
+In this module, you'll learn about Azure Sentinel workbooks and their visual interactive data reports for security and compliance. Workbooks present<!-- "retrieve?" --> data from Log Analytics workspaces using Kusto Query Language.
 
-1. *Add numbered Learning Objectives [(Learning objective guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives)*
+## Subtasks in this module
 
-## Chunk your content into subtasks
+- Use Azure Sentinel workbooks to visualize security data.
+- Use Kusto Query Language to query data stored in Azure Log Analytics.
+- Use built-in workbooks.
+- Create custom workbooks.
 
-Identify the subtasks of *module title*
+## Lab exercise
 
-| Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
-| ---- | ---- | ---- | ---- | ---- |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
+- Draft lab exercise title: Create a workbook using a template
+  - Task 1. Create a workbook from a template
+  - Task 2. Edit a workbook to modify results
+- In this exercise, students interact with Azure Sentinel workbooks and review collected security data.
+- Feasibility questions or concerns?
+  - Create a new Azure Sentinel workbook
+  - Visualize data by adding texts, queries, and a graph into a workbook
 
-## Outline the units
+## Module learning objectives
 
-*Add more units as needed for your content*
+After completing this module, you'll be able to:
 
-1. **Introduction**
+- Visualize security data using Azure Sentinel workbooks.
+- Query your logs using Kusto Query Language.
+- Explore workbook capabilities.
+- Create an Azure Sentinel workbook.
 
-    Provide a scenario of a real-world job-task that shows how the technology is used in practice:
+## Estimated module duration
 
-    *Add your scenario [(Scenario guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios)*
+49 minutes
 
-1. **Learning-content unit title**
+## Module outline of units
 
-    List the content that will enable the learner to *subtask*:
+1. Introduction
+2. Monitor and visualize data
+3. Query data using Kusto Query Language
+4. Use default Azure Sentinel workbooks
+5. Create a new Azure Sentinel workbook
+6. Exercise unit
+7. Summary
 
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+## First unit: Introduction
 
-    **Knowledge check**
+**Type of unit:** Introduction unit
 
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+**Estimated unit duration:** 3 minutes
 
-    - Question type
-    - Question type
+### Module scenario
 
-1. **Exercise - exercise unit title**
+Contoso, Ltd. is a medium-size financial services company in London with a branch office in New York. Contoso has moved aggressively to Azure services, and it currently uses Microsoft 365 and Azure Active Directory (Azure AD). It also uses Azure AD Identity Protection, Cloud App Security, Azure Advanced Threat Protection (Azure ATP), Microsoft Defender for Endpoint, Microsoft Office 365 Advanced Threat Protection, Endpoint Protection, and Microsoft Azure Information Protection. Contoso is also using the paid version of Azure Security Center for threat protection for resources that are running on Azure and on-premises. Additionally, Contoso has other non-Microsoft assets to monitor and protect.
 
-    List the steps which apply the learning content from previous unit:
+A recent incident with compromised identities led to exposed customer data. The Contoso Security Operations (SecOps) team wants to ensure that proper monitoring and reporting methods are in place. You need to demonstrate the Azure Sentinel reporting and monitoring capabilities, and how they can alert your organization to potential security incidents.
 
-    1. Step
-    1. Step
-    1. Step
+## Second unit: Monitor and visualize data
 
-1. **Summary**
+**Type of unit:** Learning content unit
 
-    How did you solve the problem in the initial scenario with the knowledge learned in the module? 
-    
-    *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)*
+**Estimated unit duration:** 6 minutes
 
-## Notes
+### Key content per learning objective
 
-Note any additional information that may be beneficial to this content such as links, reference material, etc.
+After you complete this unit, you&#39;ll be able to visualize security data using Azure Sentinel workbooks. Unit topics include:
+
+- Introduction to the Azure Sentinel Logs page
+- Navigate through the Logs page
+
+## Third unit: Query data using Kusto Query Language
+
+**Type of unit:** Learning content unit
+
+**Estimated unit duration:** 8 minutes
+
+### Key content per learning objective
+
+After you complete this unit, you&#39;ll be able to query your logs using Kusto Query Language. Unit topics include:
+
+- Query a table
+- Test your Kusto Query Language queries
+- Review the graphical results<!-- View is a non-accessibility term, so I replaced it here with "Review." -->
+
+## Fourth unit: Use default Azure Sentinel workbooks
+
+**Type of unit:** Learning content unit
+
+**Estimated unit duration:** 10 minutes
+
+### Key content per learning objective
+
+After you complete this unit, you&#39;ll be able to explore existing workbook capabilities. Unit topics include:
+
+- Explore existing workbook capabilities
+- Work with different data visualizations
+
+## Fifth unit: Create a new Azure Sentinel workbook
+
+**Type of unit:** Learning content unit
+
+**Estimated unit duration:** 10 minutes
+
+### Key content per learning objective
+
+After you complete this unit, you&#39;ll be to create an Azure Sentinel workbook. Unit topics include:
+
+- Work with different steps<!-- Steps are a task with an order that must be followed. I'm not sure how you "work with steps." Can you revisit this? --> in a workbook
+- Add texts, queries, and graphs to a workbook
+
+## Sixth unit: Exercise, Visualize data using Azure Sentinel workbooks (tjm)
+
+**Type of unit:** Exercise unit
+
+**Estimated unit duration:** 10 minutes
+
+**Use of supplemental demo video:** Potentially
+
+### Key content per learning objective
+
+- Draft lab exercise title: Create a workbook from a template
+  - Task 1. Create a workbook from a template
+  - Task 2. Edit a workbook to modify the results
+  
+In this exercise, you will learn to:
+
+- Create a new Azure Sentinel workbook.
+- Visualize data by adding text, queries, and a graph into your workbook.
+
+Review the steps for this exercise: Create an Azure Sentinel<!-- an Azure Sentinel what? --> using the portal.<!-- "using the Azure portal?" If not, then which portal? Also, online 142, the lab title is "Create a workbook from a template."-->
+
+To repeat these steps, sign up for a free trial Azure subscription.
+
+After completing the steps, delete any resource groups you created.
+
+## 7th unit: Summary
+
+**Type of unit:** Summary unit
+
+**Estimated unit duration:** 2 minutes
+
+### Resolution of module problem
+
+Contoso SecOps can now use Azure Sentinel Workbooks to provide interactive reports with graphs, charts, and tables, and to visualize their security data using advanced filtering. They can use these techniques to gain more insights into their data during their investigations.
+
+In this module, you learned about different workbook elements, and how to tune and visualize your data. You also learned how to define parameters using a new step, and then use those parameters to further filter your queries. <!-- We didn't have one of these sentences in Module 6. Can we make them consistent and either delete this "In this module, you've learned" pgph, or add one to Mod 6? -->
