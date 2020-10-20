@@ -81,7 +81,7 @@ On completion of the installation, the Data Migration Assistant opens. The first
 
     In this configuration, the Data Migration Assistant will migrate the data, schema, or both to the target services defined in the settings.
 
-    ![Migration options in the Data Migration Assistant](../media/perform-migration-in-data-migration-assistant.png)
+    ![Migration options in the Data Migration Assistant](../media/perform-migration-data-migration-assistant.png)
 
 ## Best practices for running Data Migration Assistant
 
