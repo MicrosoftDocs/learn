@@ -1,46 +1,46 @@
-
-The following reference architecture shows a set of proven practices for running S/4HANA in a high availability environment that supports disaster recovery on Azure. 
+This reference architecture shows a set of proven practices for running S/4HANA and Suite on HANA in a high availability environment that supports disaster recovery on Azure. The Fiori information applies only to S/4HANA applications.
 
 ![Reference architecture for SAP S/4HANA for Linux virtual machines on Azure](../media/s-4hana-ha-dr-flow.png)
 
-## Architectural components
+> [!NOTE]
+> Deploying this reference architecture requires appropriate licensing of SAP products and other non-Microsoft technologies.
 
-The typical architecture of a deployment of SAP NetWeaver with HANA on Azure VMs consists of some or all the following infrastructure components:
+## Architecture
 
-This reference architecture describes an enterprise-grade, production-level system. To suit your business needs, this configuration can be reduced to a single virtual machine. However, the following components are required:
+This reference architecture describes a common production system. This architecture is deployed with virtual machine sizes that can be changed to accommodate your organization's needs. To suit your business needs, this configuration can be reduced to a single virtual machine.
 
-* **Virtual network**. The Azure Virtual Network service securely connects Azure resources to each other. The virtual network also connects to an on-premises environment via virtual gateway provisioned as part of ExpressRoute or Site-to-Site connection. In a typical VDC design, this virtual gateway resides in the virtual network that serves as the hub of a hub-spoke hierarchy consisting of multiple, peered virtual networks. The spokes represent individual virtual networks hosting the SAP applications and database tiers.
+The network layout is greatly simplified to demonstrate architectural principals and is not intended to describe a full enterprise network.
 
-* **Subnets**. Each virtual network is typically divided into separate subnets hosting application (SAP NetWeaver) and database tiers. There might be also additional subnets hosting infrastructure services (such as Active Directory domain controllers) and serving the role of network perimeter (containing jumpbox Azure VMs) – although these commonly reside in the hub virtual network.
+The following components are required.
 
-* **Virtual machines**. This architecture uses virtual machines running Linux for the application tier and database tier, grouped as follows:
+**Azure Virtual Network.** The Azure Virtual Network (VNet) service securely connects Azure resources to each other. In this architecture, a VNet connects to an on-premises environment through a gateway deployed in the hub of a hub-spoke topology. The spoke is the VNet used for the SAP applications and the database tiers.
 
-    * **Application tier**. Includes the Fiori Front-end Server pool, SAP Web Dispatcher pool, application server pool, and SAP Central Services cluster. For high availability of Central Services on Azure Linux virtual machines, a highly available Network File System (NFS) service is required.
+**Virtual network peering.** This architecture uses multiple virtual networks that are peered together. This topology offers network segmentation and isolation for services deployed on Azure. Peering connects networks transparently through the Microsoft backbone network and does not incur a performance penalty if implemented within a single region. Separate subnets are used for each tier-application (SAP NetWeaver), database, and shared services (such as the jumpbox and Active Directory).
 
-    * **NFS cluster**. This architecture uses an NFS server running on a Linux cluster to store data shared between SAP systems. This centralized cluster can be shared across multiple SAP systems. For high availability of the NFS service, the appropriate High Availability Extension for the selected Linux distribution is used.
+**Virtual machines.** This architecture uses virtual machines running Linux for the application tier and database tier, grouped as follows:
 
-    * **SAP HANA**. The database tier uses two or more Linux virtual machines in a cluster to achieve high availability. HANA System Replication (HSR) is used to replicate contents between primary and secondary HANA systems. Linux clustering is used to detect system failures and facilitate automatic failover. A storage-based or cloud-based fencing mechanism can be used to ensure the failed system is isolated or shut down to avoid the cluster split-brain condition.
+- **Application tier.** Includes the Fiori Front-end Server pool, SAP Web Dispatcher pool, application server pool, and SAP Central Services cluster. For high availability of Central Services on Azure running in Linux virtual machines, a highly available network file share service is required, such as Azure NetApp Files, clustered Network File Shares (NFS) servers, or SIOS DataKeeper. To set up a highly available file share for the Central Services cluster on Red Hat Enterprise Linux, GlusterFS can be configured on Azure virtual machines running Red Hat Enterprise Linux.
 
-    * **Jumpbox**. Also called a bastion host. This Azure VM runs hardened operating system instance that administrators use to connect to the other virtual machines. It can run Windows or Linux. Use a Windows jumpbox to run tools such as HANA Cockpit or HANA Studio.
+- **SAP HANA.** The database tier uses two or more Linux virtual machines in a cluster to achieve high availability in a scale-up deployment. HANA System Replication (HSR) is used to replicate contents between primary and secondary HANA systems. Linux clustering is used to detect system failures and facilitate automatic failover. A storage-based or cloud-based fencing mechanism must be used to ensure the failed system is isolated or shut down to avoid the cluster split-brain condition. In HANA scale-out deployments, database high availability is achieved by configuring standby nodes without the need of the Linux clustering component.
 
-* **Load balancers**. Both built-in SAP load balancers and Azure Load Balancer are used to achieve HA. Azure Load Balancer instances are used to distribute traffic to virtual machines in the application and database tiers.
+- **Jumpbox.** Also called a bastion host, this secure virtual machine on the network is used to connect to the other virtual machines and is typically deployed as part of the shared services, such as domain controllers and backup services. The jumpbox is deployed on a virtual machine to support SAP HANA Studio, SAPGUI, file transfer, and other functions that are commonly used for installation and administration purposes. For remote desktop protocol (RDP) or secure shell (SSH) services, try Azure Bastion. If only RDP and SSH are used for administration, Azure Bastion is a great alternative.
 
-* **Availability sets**. Virtual machines for all pools and clusters (Web Dispatcher, SAP application servers, Central Services, NFS, and HANA) are grouped into separate availability sets, and at least two virtual machines are provisioned per role. This makes the virtual machines eligible for a higher service level agreement (SLA).
+**Load balancers.** To distribute traffic to virtual machines in the application-tier subnet, load balancers are used. When using Azure Zones, use the Standard Load Balancer. For high availability, use the built-in SAP Web Dispatcher, Azure Load Balancer, or other mechanisms, depending on the traffic type (such as HTTP or SAPGUI) or the required network services (such as SSL termination).
 
-* **NICs**. Network interface cards (NICs) attach virtual machines to a virtual network.
+**Availability sets.** Virtual machines for all pools and clusters (Web Dispatcher, SAP application servers, Central Services, and HANA) are grouped into separate availability sets, and at least two virtual machines are provisioned per role. Availability sets increase the availability of applications and virtual machines through management of hosts system faults or maintenance events by distributing role instances onto multiple hosts. An alternative is to use Availability Zones to improve workload availability.
 
-* **Network security groups (NSGs)**. NSGs restrict incoming, outgoing, and intra-subnet traffic in a virtual network.
+**Zone-redundant gateway.** Azure ExpressRoute or virtual private network (VPN) gateways can be deployed across zones to guard against zone failures. This architecture uses zone-redundant VNet gateways for resiliency rather than a zonal deployment based on the same Availability Zone.
 
-* **Virtual gateway**. A virtual gateway facilitates extending your on-premises network to the Azure virtual network. ExpressRoute is the recommended service for cross-premises connectivity of SAP deployments in Azure, but a Site-to-Site VPN or Virtual WAN can serve as alternatives.
+**Proximity placement group.** This logical group places a constraint on VMs deployed in an availability set or a Virtual Machine Scale Set. A proximity placement group favors colocation, meaning that virtual machines reside in the same datacenter to minimize application latency.  
 
-* **Disks**. Azure VM disks provide persistent storage for SAP workloads.
+**Network security groups.** To restrict incoming, outgoing, and intra-subnet traffic in the virtual network, you can create network security groups (NSGs).
 
-* **SAP Web Dispatcher pool**. The Web Dispatcher component is used as a load balancer for SAP traffic among the SAP application servers. To achieve high availability for the Web Dispatcher component, Azure Load Balancer is used to implement the parallel Web Dispatcher setup. Web Dispatcher uses in a round-robin configuration for HTTP(S) traffic distribution among the available Web Dispatchers in the load balanced backend pool.
+**Application security groups.** To define fine-grained network security policies based on workloads and centered on applications, use application security groups instead of explicit IP addresses. You can group virtual machines by name and secure applications by filtering traffic from trusted segments of your network.
 
-* **Fiori Front-end Server**. The Fiori Front-end Server uses a NetWeaver Gateway (which facilitates exposing SAP application data as an OData service). For small deployments, the gateway can be loaded on the Fiori server. For large deployments, a separate server for the NetWeaver Gateway may be deployed in front of the Fiori Front-end Server pool.
+**Gateway.** A gateway connects distinct networks, extending your on-premises network to the Azure VNet. ExpressRoute is the recommended Azure service for creating private connections that do not go over the public internet, but a site-to-site connection can also be used. To reduce latency, ExpressRoute Global Reach and ExpressRoute FastPath are connectivity options.
 
-* **SAP Central Services cluster**. The Central Services is a potential single point of failure (SPOF) when deployed to a single VM — a typical deployment when high availability is not a requirement. To implement a high availability solution, deploy multiple Central Services instances and configure them as members of a failover cluster with a shared disk or a file share providing highly available storage accessible by all cluster nodes. As mentioned earlier in this module, Azure does not support natively shared disks, but you can use third-party solutions (such as SIOS DataKeeper Cluster Edition, which replicates synchronously independent disks owned by individual cluster nodes) to implement this functionality on Azure VMs running Linux or Windows Server. For Linux accessible shares, you can use highly available NFS deployment of Azure VMs.
+**Azure Storage.** To provide data persistence for a virtual machine in the form of virtual hard disk (VHD). Azure Managed Disk is recommended.
 
-* **Database servers**. The database tier uses two or more Linux virtual machines in a cluster to achieve high availability. HANA System Replication (HSR) is used to replicate contents between primary and secondary HANA systems. Linux clustering is used to detect system failures and facilitate automatic failover. A storage-based or cloud-based fencing mechanism can be used to ensure the failed system is isolated or shut down to avoid the cluster split-brain condition.
+## Recommendations
 
-* **Application servers pool**. To provide high availability of application servers, deploy the Primary Application Server and one or more Additional Application Servers. To manage logon groups for ABAP application servers, the SMLG transaction is used. It uses the load-balancing function within the message server of the Central Services to distribute workload among SAP application servers pool for SAPGUIs and RFC traffic. The application server connection to the highly available Central Services is through the cluster virtual network name.
+This architecture describes a small, production-level deployment. Your deployment will differ based on your business requirements, so consider these recommendations as a starting point.
