@@ -1,86 +1,169 @@
-# Title
+# Module: Respond to threats using Azure Sentinel playbooks
 
-*Add the working title [(Title guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title)*
+## Learner roles
 
-## Role(s)
+- Administrator
+- Auditor
+- Risk practitioner
+- Security engineer
+- Solution architect
+- Student<!-- Would a student be at an intermediate learner level?" -->
+- Technology manager
 
-- *Add the role(s)* [Role guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#role)
+## Learner level
 
-## Level
+- **Intermediate**: Material that assumes some knowledge, but little in-depth understanding of the topic. Provides a detailed overview of a topic&#39;s subareas.<!-- I'd delete this last sentence as it doesn't apply to the heading - it doesn't respond to the implied question," What is the learner level?" -->
 
-- *Add the level*  [Level guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#level)
+## Products taught
 
-## Product(s)
-
-- *Add the product(s)*
+- Microsoft Azure Sentinel
+- Azure Log Analytics workspace
+- Azure Logic Apps
 
 ## Prerequisites
 
-- *List the prerequisites [(Prerequisite guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites)*
+To get the best learning experience from this module, you should have knowledge of:
 
-## Summary
+- Automation and monitoring
+- Azure Monitor and its Log Analytics workspace
+- Azure Logic Apps
 
-*Add the summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries)*
+## Module summary description
 
-## Learning objectives
+In this module, you'll learn about the Security Orchestration, Automation and Response (SOAR) capabilities within Azure Sentinel.
 
-1. *Add numbered Learning Objectives [(Learning objective guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives)*
+## Subtasks in this module
 
-## Chunk your content into subtasks
+- Create a playbook to automate a response.
+- Provide real-time automation.<!-- We also use "near real-time." Should this be consistent? If so, please search & replace (s/r) just "real-time." -->
+- Call a playbook from an incident on-demand.<!-- Can we change this to "Initiate a playbook on demand from an incident?" -->
 
-Identify the subtasks of *module title*
+## Lab exercise
 
-| Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
-| ---- | ---- | ---- | ---- | ---- |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
+- Draft lab exercise title: Create an Azure Sentinel playbook<!-- This isn't in Term Studio or MS Style. When I search the internet, it's mostly "Azure Sentinel Playbook." If you agree to change it, please s/r. -->
+  - Task 1. Add a playbook from Logic Apps
+  - Task 2. Add an Azure Sentinel connector<!-- Same comment about not being able to find this term in TS or MS Style. On the internet, capitalization varies. Please review. --> in Logic Apps
+  - Task 3. Add a trigger to Azure Sentinel Connection<!-- I cannot find a product named "Azure Sentinel Connection." Should this be "Azure Sentinel connector?"-->
+  - Task 4. Add an action
+  - Task 5. Test the playbook result
+- The lab demonstrates how to create an Azure Sentinel playbook to automatically respond to a security threat.
+- Feasibility questions or concerns?
 
-## Outline the units
+## Module learning objectives
 
-*Add more units as needed for your content*
+After completing this module, you&#39;ll be able to:
 
-1. **Introduction**
+- Explain Azure Sentinel SOAR capabilities.
+- Explore the Azure Sentinel Logic Apps connector.<!-- We also have an Azure Sentinel connector. Are they two different things? If so, perhaps we can use just "Logic Apps connector". If you agree, please s/r. -->
+- Create a playbook to automate an incident response.
+- Run a playbook on demand in response to an incident.
 
-    Provide a scenario of a real-world job-task that shows how the technology is used in practice:
+## Estimated module duration
 
-    *Add your scenario [(Scenario guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios)*
+ 45 minutes
 
-1. **Learning-content unit title**
+## Module outline of units
 
-    List the content that will enable the learner to *subtask*:
+1. Introduction
+2. What are Azure Sentinel playbooks?
+3. Trigger a playbook in real-time<!-- On line 113, we have "Trigger playbooks in near real-time." Can we make these consistent? -->
+4. Run playbooks on demand
+5. Exercise unit<!-- On line 140, we have this as "Create an Azure Sentinel playbook." Can we make these consistent? -->
+6. Summary
 
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+## First unit: Introduction
 
-    **Knowledge check**
+**Type of unit:** Introduction unit
 
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+**Estimated unit duration:** 3 minutes
 
-    - Question type
-    - Question type
+### Module scenario
 
-1. **Exercise - exercise unit title**
+Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Endpoint Protection, and Microsoft Azure Information Protection. Contoso uses the paid version of Azure Security Center as threat protection for resources that run on Azure and on-premises. The company also monitors and protects other non-Microsoft assets.
 
-    List the steps which apply the learning content from previous unit:
+The Contoso Security Operations (SecOps) team didn't respond quickly enough to the organization's latest security incident. Contoso's IT director wants them to implement Azure Sentinel playbooks to help them more quickly identify and stop potential security threats.
 
-    1. Step
-    1. Step
-    1. Step
+As Contoso's lead security engineer and Azure administrator, you've been tasked with setting up an Azure Sentinel playbook to respond to security incidents.
 
-1. **Summary**
+In this module, you will learn about Azure Sentinel playbooks, including how to write and edit them, configure their workflow, and manage them.
 
-    How did you solve the problem in the initial scenario with the knowledge learned in the module? 
-    
-    *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)*
+## Second unit: What are Azure Sentinel playbooks?
 
-## Notes
+**Type of unit:** Learning content unit
 
-Note any additional information that may be beneficial to this content such as links, reference material, etc.
+**Estimated unit duration:** 10 minutes
+
+### Key content per learning objective
+
+After you complete this unit, you&#39;ll be able to use SOAR for incidents by leveraging playbooks. Unit topics include:
+
+- Understand Azure Sentinel playbooks
+- Describe Azure Logic Apps
+- Explain the Azure Sentinel Logic Apps connector
+- Use playbooks to orchestrate or automate actions
+
+## Third unit: Trigger playbooks in near real-time <!-- On line 69, we have "3. Trigger a playbook in real-time." Can we make these consistent? -->
+
+**Type of unit:** Learning content unit
+
+**Estimated unit duration:** 12 minutes
+
+### Key content per learning objective
+
+After you complete this unit, you&#39;ll be able to create an incident response automation playbook. Unit topics include:
+
+- Create a playbook to respond to an incident in near real-time
+- Work with Azure Sentinel connections in Logic Apps
+- Automate a response to an analytic<!-- To a Log Analytics rule? --> rule with playbooks
+
+## Fourth unit: Run playbooks on demand
+
+**Type of unit:** Learning content unit
+
+**Estimated unit duration:** 8 minutes
+
+### Key content per learning objective
+
+After completing this unit, you&#39;ll be able to run a playbook on demand from incident details. Unit topics include:
+
+- Explore the incident page<!-- If the name of the page is "Incident." it should be capitalized and bold. Otherwise, in what app/program is this page located? Should it be the Incident page in Logic Apps? -->
+- Run a playbook on demand
+
+## Fifth unit: Create an Azure Sentinel playbook
+
+**Type of unit:** Exercise unit
+
+**Estimated unit duration:** 10 minutes
+
+**Use of supplemental demo video:** Possibly
+
+### Key content per learning objective
+
+- Draft lab exercise title: Create an Azure Sentinel playbook
+  - Task 1. Add a playbook from Logic Apps
+  - Task 2. Add an Azure Sentinel connector in Logic Apps<!-- See previous comment about Azure Sentinel connector vs. Logic Apps connector. -->
+  - Task 3. Add a trigger to Azure Sentinel Connection<!-- Suggest changing to "Add a trigger to a playbook? or "to an Azure Sentinel connector." -->
+  - Task 4. Add an action
+  - Task 5. Test the playbook result
+  
+In this exercise, you'll learn to:
+
+- Create a new playbook.
+- Use the Logic Apps Designer.
+- Use the Azure Sentinel Logic Apps connector.
+
+Review the steps for this exercise, Create an Azure Sentinel playbook using the portal<!-- "using the Azure portal?" If not, then which portal? Also, online 142, the lab title is just "Create an Azure Sentinel playbook."-->.
+
+To repeat these steps, sign up for a free trial Azure subscription.
+
+After completing the steps, delete any resource groups you created.
+
+## Sixth unit: Summary
+
+**Type of unit:** Summary unit
+
+**Estimated unit duration:** 2 minutes
+
+### Resolution of module problem
+
+Contoso SecOps can now react more quickly to security incidents by using Azure Sentinel SOAR capabilities and Sentinel playbooks based on Logic Apps with an Azure Sentinel connector<!-- "based on Azure Sentinel connector with/and Logic Apps?" -->, and provide near real-time responses.
