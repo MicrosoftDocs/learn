@@ -19,7 +19,7 @@ prerequisites: |
   - [Python installed](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true)
   - [Visual Studio Code with Python Extension](https://docs.microsoft.com/learn/modules/python-install-vscode/6-exercise-write-execute-first-script?azure-portal=true)
   - [Discover the role of Python in space exploration](https://docs.microsoft.com/en-us/learn/paths/introduction-python-space-exploration-nasa/?azure-portal=true)
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/student-evangelism/predict-meteor-showers-using-python.svg 
 levels:
 - beginner
 roles:
