@@ -3,7 +3,7 @@ uid: learn.dotnet-files.4-paths
 title: Work with file paths in .NET
 metadata:
   title: Work with file paths in .NET
-  description: Work with file paths in Node.js
+  description: Learn how to work and manipulate with paths, find paths to special operating system directories, and figure out file extensions.
   ms.date: 10/15/2020
   author: codemillmatt
   ms.author: masoucou

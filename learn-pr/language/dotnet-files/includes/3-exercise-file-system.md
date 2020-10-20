@@ -2,13 +2,13 @@ You can use .NET to find and return information about files and folders.
 
 Tailwind Traders has many physical stores all over the world. Each night, these stores create a file called *sales.json* that contains the total for all their sales for the previous day. These files are organized in folders by store ID.
 
-In this exercise, you'll write a .NET program that can search for files called *sales.json* in a folder.
-
 ## Sign into the sandbox
 
 Activate the Microsoft Learn sandbox by selecting the **Activate Sandbox** at the top of this page.
 
 ## Clone the project
+
+In this exercise, you'll write a .NET program that can search for files called *sales.json* in a folder.
 
 1. Run the following command to clone the example project for this module:
 
@@ -60,7 +60,7 @@ You need to find all the sales.json files in all folders.
     {
         List<string> salesFiles = new List<string>();
 
-        var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOptions.AllDirectories);
+        var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
 
         foreach (var file in foundFiles)
         {
@@ -139,7 +139,7 @@ namespace files_module
         {
             List<string> salesFiles = new List<string>();
     
-            var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOptions.AllDirectories);
+            var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
     
             foreach (var file in foundFiles)
             {

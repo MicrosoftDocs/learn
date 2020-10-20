@@ -14,7 +14,7 @@ Directory.CreateDirectory(Path.Combine(Directory.GetCurrentDirectory(), "stores"
 
 If */stores/201* does not already exist, they will be created automatically. The `CreateDirectory` method will not fail, it will create any directories and subdirectories passed to it.
 
-## Make sure directories exist.
+## Make sure directories exist
 
 Sometimes you will need to check whether or not a directory already exists, such as before creating a file in a specified directory to avoid an exception that could cause your program to stop abruptly.
 
