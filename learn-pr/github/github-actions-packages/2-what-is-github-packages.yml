@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.github-actions-packages.what-is-github-packages
+title: What is GitHub Packages?
+metadata:
+  title: What is GitHub Packages?
+  description: TODO
+  ms.date: 10/19/2020
+  author: cmaneu
+  ms.author: chmaneu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+azureSandbox: false
+content: |
+  [!include[](includes/2-what-is-github-packages.md)]

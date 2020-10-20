@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.github-actions-packages.knowledge-check-1
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge
+  ms.date: 10/19/2020
+  author: cmaneu
+  ms.author: chmaneu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "?"
+    choices:
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: true
+      explanation: ""

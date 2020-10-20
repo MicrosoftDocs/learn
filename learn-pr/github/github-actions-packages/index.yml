@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.github.github-actions-packages
+metadata:
+  title: Leverage GitHub Actions to publish to GitHub Packages
+  description: TODO
+  ms.date: 10/19/2020
+  author: cmaneu
+  ms.author: chmaneu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Leverage GitHub Actions to publish to GitHub Packages
+summary: TODO
+abstract: |
+  By the end of this module, you will be able to:
+  - Summarize the functionality of GitHub Packages and the role package management plays in the software development lifecycle.
+  - Describe when to use GitHub Packages within a GitHub repository.
+  - Use the repository's source code to build artifacts and store them in GitHub Packages.
+  - Demonstrate how to save repository build artifacts.
+  - Demonstrate how to access saved build artifacts.
+prerequisites: |
+  - TODO
+ratingEnabled: true
+iconUrl: /learn/achievements/github-actions-packages.svg
+levels:
+- beginner
+roles:
+- devops-engineer
+- developer
+- solution-architect
+products:
+- github
+units:
+- learn.github.github-actions-packages.introduction
+- learn.github.github-actions-packages.what-is-github-packages
+- learn.github.github-actions-packages.exercise-github-packages-docker-registry
+- learn.github.github-actions-packages.knowledge-check-1
+- learn.github.github-actions-packages.github-packages-code-packages
+- learn.github.github-actions-packages.knowledge-check-2
+- learn.github.github-actions-packages.summary
+
+badge:
+  uid: learn.github.github-actions-packages.badge
