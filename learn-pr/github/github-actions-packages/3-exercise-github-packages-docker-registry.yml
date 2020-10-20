@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.github-actions-packages.exercise-github-packages-docker-registry
+uid: learn.github.github-actions-packages.exercise-github-packages-docker-registry
 title: Exercise - Use GitHub Packages as a Docker Registry
 metadata:
   title: Exercise - Use GitHub Packages as a Docker Registry
