@@ -17,4 +17,4 @@ By the end of this module, you will be able to:
 ## Prerequisites
 
 - Experience writing C# at the beginner level 
-- Familiarity with basic programming constructs, such as loops and "if" statements
+- Familiarity with basic programming constructs, such as loops and `if` statements
