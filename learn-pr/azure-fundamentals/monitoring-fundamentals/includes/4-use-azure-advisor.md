@@ -1,10 +1,10 @@
-Tailwind Traders wants to optimize its cloud spend. Also, the organization is concerned about security breaches, because it stores customer data and historic purchase data in cloud-based databases. As the organization ramps up its cloud expertise, it wants to better understand its use of the cloud, better understand best practices, and pinpoint "easy wins" where it can tighten up its cloud spend and security practices.
+Tailwind Traders wants to optimize its cloud spend. Also, the organization is concerned about security breaches, because it stores customer data and historical purchase data in cloud-based databases. As the organization ramps up its cloud expertise, it wants to better understand its use of the cloud, better understand best practices, and pinpoint "easy wins" where it can tighten up its cloud spend and security practices.
 
 ## Which service should you choose?
 
 Apply the decision criteria you learned about in the preceding unit to find the right option.
 
-First, in this scenario, does Tailwind Traders need an analysis of its Azure usage for the sake of optimization?  Yes, Tailwind Traders understands that it might be spending too much, is concerned about its security practices, and wants to have its cloud usage analyzed against industry best practices.  Therefore, Azure Advisor is the perfect option for this scenario.
+First, in this scenario, does Tailwind Traders need to analyze its Azure usage for the sake of optimization?  Yes. Tailwind Traders understands that it might be spending too much, is concerned about its security practices, and wants to have its cloud usage analyzed against industry best practices.  Therefore, Azure Advisor is the perfect option for this scenario.
 
 Although you might have found the right product option, let's continue evaluating the decision criteria for this scenario.
 
