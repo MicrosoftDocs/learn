@@ -1,6 +1,8 @@
-Building and running an application on microcontroller IoT devices can be challenging and these challenges could range from ease of development to securely capturing and transferring the data to the server with underlying security. Using Azure Sphere, we can build an end-to-end connected platform from the IoT device to the Cloud.
+Building and running an application on microcontroller Internet of Things (IoT) devices can be challenging. These challenges could range from ease of development to securely capturing and transferring the data to a server.
 
-The application can be built and deployed remotely with security at its core. This could provide a means to capture and transmit data from the IoT application running on the Azure Sphere to the Cloud. We can display the captured data in a dashboard. We can define rules and implement actions depending on the status.
+With Azure Sphere, you can build IoT solutions that are secure by default with the confidence that your device is protected, your application is protected, and data is protected in transit.
+
+You can build applications with Visual Studio or Visual Studio Code, or integrate with your existing toolchains on Windows and Linux. Visual Studio and Visual Studio Code development environments provide integrated microcontroller debuggers and full source-code control, along with collaboration and productivity tools.
 
 ## Measuring the environment
 
@@ -11,31 +13,31 @@ Suppose you're a scientist in a microbiology laboratory who is responsible for s
 - Temperature
 - Humidity
 
-Previously these were recorded manually by the lab assistants using sensors at regular intervals. Manual recording of ambient conditions is a tedious job which is also prone to human error. Having any issues with the sensors would invalidate the tests performed in the Lab environment.
+Previously these were recorded manually by the lab assistants using sensors at regular intervals. Manual recording of ambient conditions is a tedious job which is also prone to human error. Having any issues with the sensors would invalidate the tests performed in the lab environment.
 
 Maintaining the room conditions accurately is critical for managing the laboratory. The lab needs to maintain the right conditions to help you get more accurate results. Any variation in the conditions can affect the equipment temperature during the storage and manipulation of the samples, specimens, and lab equipment. This could impact the ability to produce the correct and stable results and can also have an economic impact on the organization.
 
 ## Proposed new system
 
-The proposed new system would have need to have the following factors:
+The proposed new system would have the following factors:
 
 - It would need the sensors within the lab at multiple points.
 - These sensors will automate the reading of air pressure, temperature, humidity, and light conditions at defined intervals.
 - The sensor data from the devices will be transmitted securely for the analysis of data trends.
 
-This solution will thus provide a platform to create secure IoT solutions without worrying about the underlying security vulnerabilities. Additionally, the system can trigger an alarm or alert message to concerned authority when any of the defined variables drops below a specific threshold range.
+This solution will thus provide a platform to create secure IoT solutions without worrying about the underlying security vulnerabilities. Additionally, the system can trigger an alarm or alert message to a concerned authority when any of the defined variables drops below a specific threshold range.
 
-![The illustration shows Azure Sphere dashboard based on scenario.](../media/azure-sphere-dashboard.png)
+![The illustration shows an Azure Sphere dashboard based on scenario.](../media/azure-sphere-dashboard.png)
 
 ## Learning objectives
 
 In this module, you will:
 
-- Create an IoT Central Application
-- Configure your Azure Sphere application to IoT Central
+- Create an Azure IoT Central application
+- Configure your Azure Sphere application to Azure IoT Central
 - Build and deploy the Azure Sphere application
-- Display the environment telemetry in the IoT Central Dashboard
-- Control an Azure Sphere application using Azure IoT Central properties and commands
+- Display environment telemetry in the Azure IoT Central dashboard
+- Control an Azure Sphere application by using Azure IoT Central properties and commands
 
 ## Prerequisites
 
@@ -43,6 +45,6 @@ In this module, you will:
 - Visual Studio Code installed in your computer
 - Ability to use Visual Studio Code
 - Git installed in your computer
-- Ability to use Git/Github
+- Ability to use Git/GitHub
 - Basic knowledge of Azure Sphere
 - Basic knowledge of Azure IoT

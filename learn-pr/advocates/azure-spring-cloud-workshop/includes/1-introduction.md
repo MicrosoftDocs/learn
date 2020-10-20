@@ -12,7 +12,6 @@ In this module, you will:
 * Configure service binding
 * Create and deploy a Spring Boot microservice
 * Create and deploy a Spring Cloud Gateway
-* Configure a GitHub Actions workflow to automate your deployment
 
 ## Prerequisites
 

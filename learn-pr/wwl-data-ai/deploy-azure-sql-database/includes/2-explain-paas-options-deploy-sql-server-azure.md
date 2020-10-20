@@ -92,7 +92,7 @@ Another difference between serverless and the normal vCore model of Azure SQL Da
 
 :::image type="content" source="../media/module-22-plan-implement-final-12.png" alt-text="The Azure SQL Database Serverless Settings in the Azure portal":::
 
-The image above shows the configuration screen for a serverless database in the Azure portal. You have the option to have a minimum of half of a vCore all the way up to 16 vCores. You should note that databases that are not deployed as serverless are referred to as “provisioned”.
+The image above shows the configuration screen for a serverless database in the Azure portal. You have the option to select a minimum as low as half of a vCore and a maximum as high as 16 vCores. You should note that databases that are not deployed as serverless are referred to as “provisioned”.
 
 The setting to control pausing is referred to as the autopause delay and has a minimum value of 60 minutes and a maximum value of seven days. If the database has been idle for that period of time, it will then pause. Once the database has been inactive for the specified amount of time, it will be paused until a subsequent connection is attempted. Any applications using serverless should be configured to handle connection errors and include retry logic, as connecting to a paused database will generate a connection error.
 

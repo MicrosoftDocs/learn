@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-lighthouse.3-prepare-for-azure-lighthouse
 metadata:
   title: Preparing for Azure Lighthouse
   description: You'll cover the broader concepts around setting up an Azure Lighthouse, and the roles of users and tenants
-  ms.date: 01/08/20120
+  ms.date: 01/08/2020
   author: iankensey
   ms.author: v-geo
   ms.topic: interactive-tutorial
