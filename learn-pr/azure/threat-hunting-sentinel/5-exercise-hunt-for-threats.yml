@@ -10,6 +10,5 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Hunt for threats using Azure Sentinel
 durationInMinutes: 5
-azureSandbox: true
 content: |
   [!include[]includes/5-exercise-hunt-for-threats.md)]
