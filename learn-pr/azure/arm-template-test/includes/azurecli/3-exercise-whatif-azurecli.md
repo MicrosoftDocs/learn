@@ -25,7 +25,7 @@ Here's an overview of the steps you're about to carry out:
 
 1. Select an appropriate user in the browser, and close the browser window when prompted.
 
-   After you're signed in, you see a list in JSON format. The list contains subscriptions associated with this account in the terminal, if you activated the sandbox.
+After you're signed in, you see a list in JSON format. The list contains subscriptions associated with this account in the terminal, if you activated the sandbox.
 
 ## Set the active subscription
 
@@ -202,16 +202,16 @@ Resource changes: 1 to modify.
 
 You'll notice that the result is color coded in addition to having a prefix:
 
-- **Purple** and "~" for any modifications
-- **Green** and "+" for new resources to be created
-- **Orange** and "-" for deletion
+- Purple and "~" for any modifications
+- Green and "+" for new resources to be created
+- Orange and "-" for deletion
 
 ## Deploy by using complete mode and the confirm-with-what-if option
 
 In these next steps, you'll deploy an empty template over your existing environment.
 
 > [!WARNING]
-> Doing this in real life *will remove* anything you have in the cloud. The following code is interesting as an intellectual experiment, but be careful about using this mode. At minimum, use the `-Confirm` flag so you have a chance to stop this operation if you don't like the proposed changes.
+> Doing this in real life *will remove* anything you have in the cloud. The following code is interesting as an intellectual experiment, but be careful about using this mode. At minimum, use the `-Confirm` flag so you can stop this operation if you don't like the proposed changes.
 
 1. Run `az deployment group` with the flag `--mode Complete` to create the a deployment in complete mode:
 
@@ -292,7 +292,7 @@ In these next steps, you'll deploy an empty template over your existing environm
 
 1. Go back to the open browser that you used earlier, and verify that there were two successful deployments:
 
-    1. The first one that you deployed.
-    1. The complete one that removed all resources, so the virtual network is no longer there.
+    - The first one that you deployed.
+    - The complete one that removed all resources, so the virtual network is no longer there.
 
    :::image type="content" source="../../media/3-portal-deployment-complete-details.png" alt-text="Azure portal interface for the complete deployment with the virtual network resource no longer listed." border="true":::

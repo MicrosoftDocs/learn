@@ -14,8 +14,8 @@ abstract: |
   After completing this module, you'll be able to:
   - Preview what changes will happen before you deploy by using the what-if operation.
   - Validate your template's adherence to recommendations by using the ARM template test toolkit.
-  - Implement domain-specific rules for deployments that you can run by using ARM template test toolkit.
-iconUrl: /learn/achievements/generic-badge.svg
+  - Implement domain-specific rules for deployments that you can run by using the ARM template test toolkit.
+iconUrl: /learn/achievements/arm-template-test.svg
 levels:
   - intermediate
 roles:
