@@ -2,7 +2,7 @@ Azure Bastion provides a secure remote connection from the Azure portal to Azure
 
 ## Provide secure RDP and SSH connectivity to an internal VM
 
-Bastion allows you to easily open a RDP or SSH session from the Azure portal to a VM that's not publicly exposed. Azure Bastion connects to your virtual machines over private IP. You don't have to expose RDP or SSH ports, or public IP addresses for your internal VMs. 
+Bastion allows you to easily open an RDP or SSH session from the Azure portal to a VM that's not publicly exposed. Azure Bastion connects to your virtual machines over private IP. You don't have to expose RDP or SSH ports, or public IP addresses for your internal VMs. 
 
 Because Bastion is a fully managed platform PaaS service, you don't need to apply any network security groups to the Azure Bastion subnet. But if you want additional security, you can configure your NSGs to allow RDP and SSH from Azure Bastion only.
 
@@ -19,7 +19,7 @@ After you deploy Bastion, on the VM overview page, select **Connect** > **Bastio
 
 - Traffic initiated from the Azure Bastion to target virtual machines stays within the virtual network or  between peered virtual networks.
 - No need to apply NSGs to the Bastion subnet as it's hardened internally. But for additional security, you can configure NSGs to only allow remote connections to the target Virtual Machines from the Bastion host.
-- Protects against port scanning. RDP and SSH ports, and public IP addresses aren't aren't publicly exposed for your VMs.
+- Protects against port scanning. RDP and SSH ports, and public IP addresses aren't publicly exposed for your VMs.
 - Protects against zero-day exploits. Azure Bastion sits at the perimeter of your virtual network. So you don’t need to worry about hardening each of the virtual machines in your virtual network. The Azure platform keeps Bastion always up to date.
 - Ability to integrate with native Azure Virtual Network security appliances like Azure Firewall.
 - Ability to monitor and manage remote connections.

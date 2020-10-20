@@ -9,7 +9,7 @@ The following diagram shows an overview of how Bastion works.
 1. **Browser connects to Bastion host** - The browser connects to Azure Bastion over the internet using the public IP of the Bastion host. 
 1. **Bastion connects to VM** - Azure Bastion host servers are designed and configured to withstand attacks while providing access to workloads sitting behind the bastion host. Internally, Azure Bastion is a scale set and has the capability to resize itself as the number of sessions increases.
 
-   Azure Bastion hosts are deployed in a separate subnet within the virtual network. This subnet, AzureBastionSubnet, is a secure platform managed subnet. No other Azure resources can be deployed in this subnet and you should not change the subnet name.  
+   Azure Bastion hosts are deployed in a separate subnet within the virtual network. This subnet, AzureBastionSubnet, is a secure platform-managed subnet. No other Azure resources can be deployed in this subnet and you should not change the subnet name.  
 1. **RDP or SSH session opens in the browser** - Azure Bastion uses an HTML5 based web client that is automatically streamed to your local device. The Bastion service packages the session information using a custom protocol. The packages are transmitted using TLS.
 
 
@@ -17,7 +17,7 @@ The following diagram shows an overview of how Bastion works.
 
 If you haven't deployed and configured a specific network security group for your organization, then you don't need to do anything. Bastion works with the default network security group that's created with VMs.
 
-If you have a network security group deployed and configured for your organization, verify that Bastion can connect to your VMs through RDP or SSH. We recommend that you add an inbound rule that allows RDP and SSH connections from the Azure Bastion subnet IP address range to your VMs.
+If you have a network security group configured for your organization, verify that Bastion can connect to your VMs through RDP or SSH. We recommend that you add an inbound rule that allows RDP and SSH connections from the Azure Bastion subnet IP address range to your VMs.
 
 For Bastion to work, your network security group needs to allow the following traffic.
 
@@ -25,8 +25,8 @@ For Bastion to work, your network security group needs to allow the following tr
 |---------|---------|
 |Inbound| RDP and SSH connections from the Azure Bastion subnet IP address range to your VM subnet.|
 |Inbound| TCP access from the internet on port 443 to the Bastion public IP.|
-|Inbound |TCP access from Azure Gateway Manager on ports 443 or 4443. The Azure Gateway Manager facilitates portal connections to the Bastion service.|
-|Outbound|TCP access from the Azure Cloud on port 443. This traffic facilitates diagnostic logging.|
+|Inbound |TCP access from Azure Gateway Manager on ports 443 or 4443. The Azure Gateway Manager manages portal connections to the Bastion service.|
+|Outbound|TCP access from the Azure Cloud on port 443. This traffic is used for diagnostic logging.|
  
 ## Deploy Bastion host in the Azure portal
 
@@ -43,7 +43,7 @@ If you don't already have a virtual network that you want to use for Bastion, cr
 1. Select **Enable** and enter a name for your Bastion host. 
 1. Add a subnet address. 
 1. If you don't already have a public IP address that you want to use, select **Create new**.
-1. After you create the virtual network, create VMs on this virtual network. Or peer this virtual network to the virtual network with your VMs.
+1. After you create the virtual network, add VMs to this virtual network. Or peer this virtual network to the virtual network with your VMs.
 
 ### Add the subnet to an existing virtual network and provision Bastion resources
 
@@ -62,7 +62,7 @@ If you want to use Azure PowerShell or the Azure CLI, you create a subnet, a pub
 
 ### Use Azure PowerShell to deploy Bastion
 
-1. Create the Azure Bastion subnet by using the cmdlt `New-AzVirtualNetworkSubnetConfig`. Then add the subnet to your existing virtual network by using `Add-AzVirtualNetworkSubnetConfig`. For example, the following command assume you have already have a virtual network.
+1. Create the Azure Bastion subnet by using the cmdlet `New-AzVirtualNetworkSubnetConfig`. Then add the subnet to your existing virtual network by using `Add-AzVirtualNetworkSubnetConfig`. For example, the following command assumes you already have a virtual network.
 
    ```powershell
    $subnetName = "AzureBastionSubnet"
@@ -89,7 +89,7 @@ If you want to use Azure PowerShell or the Azure CLI, you create a subnet, a pub
    -Sku Standard
    ```
 
-1. Create a Azure Bastion resource in the AzureBastionSubnet of your virtual network.
+1. Create an Azure Bastion resource in the AzureBastionSubnet of your virtual network.
 
    ```powershell
    $bastion = New-AzBastion `
@@ -121,7 +121,7 @@ If you want to use Azure PowerShell or the Azure CLI, you create a subnet, a pub
      --location westus2
    ```
 
-1. Create a Azure Bastion resource
+1. Create an Azure Bastion resource
 
    ```azurecli
    az network bastion create \
@@ -134,6 +134,6 @@ If you want to use Azure PowerShell or the Azure CLI, you create a subnet, a pub
 
 ## Connect to VM by using Bastion
 
-With the virtual network, subnet, public IP and Bastion resources in place, you should be able to connect to the VMs on the same virtual network or peered virtual network. In the Azure portal on the VM, you select **Connect** > **Bastion** > **Use Bastion** and enter your credentials.
+With the virtual network, subnet, public IP, and Bastion resources in place, you should be able to connect to the VMs on the same virtual network or peered virtual network. In the Azure portal on the VM, you select **Connect** > **Bastion** > **Use Bastion** and enter your credentials.
 
 In the next unit, you'll go through the steps to deploy Bastion for an existing virtual network. 
