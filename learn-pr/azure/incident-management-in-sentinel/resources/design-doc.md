@@ -1,86 +1,134 @@
-# Title
+# Module: Manage incidents in Azure Sentinel
 
-*Add the working title [(Title guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title)*
+## Learner roles
 
-## Role(s)
+- Administrator
+- Auditor
+- Risk practitioner
+- Security engineer
+- Solution architect
+- Student
+- Technology manager
 
-- *Add the role(s)* [Role guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#role)
+## Learner level
 
-## Level
+- **Beginner**: Introductory and overview material that assumes little or no expertise with the topic. It covers topic concepts, functions, features, and benefits.
 
-- *Add the level*  [Level guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#level)
+## Products taught
 
-## Product(s)
-
-- *Add the product(s)*
+- Azure Sentinel
+- Azure Log Analytics workspace
 
 ## Prerequisites
 
-- *List the prerequisites [(Prerequisite guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites)*
+- Familiarity with security operations in an organization
+- Basic experience with Azure services
+- Basic knowledge of operational concepts, such as monitoring, logging, and alerting
+- Basic knowledge of Azure Sentinel rules
+<!--LM: The term "Azure Sentinel" should retain "Azure" for branding.-->
+## Module summary description
 
-## Summary
+This module introduces you to incident management in Azure Sentinel. You’ll learn to use Azure Sentinel to detect and investigate issues in your environment.
 
-*Add the summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries)*
+## Subtasks in this module
 
-## Learning objectives
+- How to manage Azure Sentinel events and alerts
+- How to investigate Azure Sentinel incidents
 
-1. *Add numbered Learning Objectives [(Learning objective guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives)*
+## Module learning objectives
 
-## Chunk your content into subtasks
+- Understand Azure Sentinel incident management
+- Explore Azure Sentinel event and alert management
+- Investigate and manage incident resolution
 
-Identify the subtasks of *module title*
+## Estimated module duration
 
-| Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
-| ---- | ---- | ---- | ---- | ---- |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
+46 minutes
 
-## Outline the units
+## Module outline of units
 
-*Add more units as needed for your content*
+**Add more units to the outline as needed for your content**.
 
-1. **Introduction**
+1. Introduction
+2. Create custom rules
+3. Manage events and alerts
+4. Investigate incidents
+5. Exercise unit
+6. Summary
 
-    Provide a scenario of a real-world job-task that shows how the technology is used in practice:
+## First unit: Introduction
 
-    *Add your scenario [(Scenario guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios)*
+**Type of unit:** Introduction unit
 
-1. **Learning-content unit title**
+**Estimated unit duration:** 3 minutes
 
-    List the content that will enable the learner to *subtask*:
+### Module scenario
+<!--LM" For "Endpoint Protection", please indicate System Center or Intune.-->
+Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Endpoint Protection, and Microsoft Azure Information Protection. Contoso uses the paid version of Azure Security Center as threat protection for resources that run on Azure and on-premises. The company also monitors and protects other non-Microsoft assets.
+<!--LM: The previous three sentences are part of the scenario in several other modules, if you want to include it here. If they are not relevant, then please delete.-->
+As part of Contoso's security team, you've recently been asked to investigate and identify sign-in anomalies for the company's Azure AD resources.
 
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+## Second unit: Create custom rules
 
-    **Knowledge check**
+**Type of unit:** Learning content unit
 
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+**Estimated unit duration:** 10 minutes
 
-    - Question type
-    - Question type
+### Key content per learning objective
 
-1. **Exercise - exercise unit title**
+Understand Azure Sentinel incident management. Topics include:
 
-    List the steps which apply the learning content from previous unit:
+- Create custom rules to detect threats.
 
-    1. Step
-    1. Step
-    1. Step
+## Third unit: Manage events and alerts
 
-1. **Summary**
+**Type of unit:** Learning content unit
 
-    How did you solve the problem in the initial scenario with the knowledge learned in the module? 
-    
-    *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)*
+**Estimated unit duration:** 5 minutes
 
-## Notes
+### Key content per learning objective
 
-Note any additional information that may be beneficial to this content such as links, reference material, etc.
+Explore Azure Sentinel event and alert management. Topics include:
+
+- Understand events and alerts in Azure Sentinel.
+- Configure rules with alerts.
+
+## Fourth unit: Manage incidents
+
+**Type of unit:** Learning content unit
+
+**Estimated unit duration:** 5 minutes
+
+### Key content per learning objective
+
+Investigate and manage incident resolution. Topics include:
+
+- View and filter incidents.
+- Use the investigation graph.
+- Manage incident status.
+
+## Fifth unit: Investigate an incident
+
+**Type of unit:** Exercise unit
+
+**Estimated unit duration:** 10 minutes
+
+**Use of supplemental demonstration video:** Potentially
+
+### Key content per learning objective
+
+In this exercise, you'll learn to:
+
+- Use built-in rules.
+- Create an alert.
+- Investigate an incident.
+
+## Sixth unit: Summary
+
+**Type of unit:** Summary unit
+
+**Estimated unit duration:** 3 minutes
+
+### Resolution of module problem
+
+In this module, you learned to use Azure Sentinel to detect and investigate issues in your environment using rule and incident management. You successfully used rules and alerts in Azure Sentinel to investigate and identify sign-in anomalies for the company's Azure Active Directory resources.
