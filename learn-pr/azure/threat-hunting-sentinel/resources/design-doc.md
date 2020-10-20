@@ -1,86 +1,147 @@
-# Title
+# Module: Hunt for threats using Azure Sentinel
 
-*Add the working title [(Title guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title)*
+## Learner roles
 
-## Role(s)
+- Administrator
+- Auditor
+- Risk practitioner
+- Security engineer
+- Solution architect
+- Student
+- Technology manager
 
-- *Add the role(s)* [Role guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#role)
+## Learner level
 
-## Level
+- **Beginner**: Introductory and overview material that assumes little or no expertise with the topic. Covers topic concepts, functions, features, benefits. <!-- Can we replace this with "Provides a detailed overview of a topic&#39;s subareas."? Otherwise, I'd delete this last sentence as it doesn't apply to the heading - it doesn't respond to the implied question," What is the learner level?"  -->
 
-- *Add the level*  [Level guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#level)
+## Products taught
 
-## Product(s)
-
-- *Add the product(s)*
+- Microsoft Azure Sentinel
+- Azure Log Analytics workspace
+- Kusto Query Language (KQL)<!-- Kusto is no longer an approved term. Please s/r both Kusto Query Language and KQL with "Azure Data Explorer." -->
 
 ## Prerequisites
 
-- *List the prerequisites [(Prerequisite guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites)*
+To get the best learning experience from this module, you should have:
 
-## Summary
+- Familiarity with security operations in an organization.
+- Basic experience with Azure services.
+- Basic knowledge of operational concepts such as monitoring, logging, and alerting.
+- Completed the introductory Azure Sentinel modules.<!-- Is the introductory module a single module? If so, change to singular "Azure Sentinel module." -->
 
-*Add the summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries)*
+## Module summary description
 
-## Learning objectives
+Threat hunting involves proactively seeking for and identifying threat behaviors in the early stages of an attack. Threat hunting is also for testing analytic rules to determine result quality and identify potential investigation areas. In this module, you’ll learn how to perform threat hunting using Azure Sentinel tools.<!-- In other mods, this section just has the "In this module, you'll learn..." sentence. If you agree to go with that, please delete the first two sentences.  -->
 
-1. *Add numbered Learning Objectives [(Learning objective guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives)*
+## Subtasks in this module
 
-## Chunk your content into subtasks
+- Use queries to hunt threats.
+- Save key findings with bookmarks.
+- Observe threats over time with livestream.
 
-Identify the subtasks of *module title*
+## Lab exercise<!-- I added this section to avoid confusion.  -->
 
-| Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
-| ---- | ---- | ---- | ---- | ---- |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
+None
 
-## Outline the units
+## Module learning objectives
 
-*Add more units as needed for your content*
+After completing this module, you&#39;ll be able to:
 
-1. **Introduction**
+- Hunt threats with built-in hunting queries.
+- Create and edit hunting queries using KQL.
+- Save key findings with bookmarks.
+- Observe threats over time with livestream.
 
-    Provide a scenario of a real-world job-task that shows how the technology is used in practice:
+## Estimated module duration
 
-    *Add your scenario [(Scenario guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios)*
+60 minutes
 
-1. **Learning-content unit title**
+## Module outline of units
 
-    List the content that will enable the learner to *subtask*:
+1. Introduction
+2. Explore Azure Sentinel hunting query management and creation<!-- Is this query creation? If so, consider changing this to "Explore query hunting creation and management in Azure Sentinel." If you agree to change it, don't forget to change it on line 78 as well (and possibly 86) as well. -->
+3. Save key findings with bookmarks
+4. Observe threats over time with livestream
+5. Exercise unit
+6. Summary
 
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+## First unit: Introduction
 
-    **Knowledge check**
+**Type of unit:** Introduction unit
 
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+**Estimated unit duration:** 5 minutes
 
-    - Question type
-    - Question type
+### Module scenario
 
-1. **Exercise - exercise unit title**
+Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Endpoint Protection, and Microsoft Azure Information Protection.<!-- I added this second sentence from our scenario pgph that we use in all of the mods, for consistency. Feel free to delete it though. -->
 
-    List the steps which apply the learning content from previous unit:
+As part of the Security Operations (SecOps) team, you've been tasked with using Azure Sentinel to identify specific account usage patterns for Contoso's Azure Active Directory (Azure AD) accounts.
 
-    1. Step
-    1. Step
-    1. Step
+## Second unit: Explore Azure Sentinel hunting query management and creation
 
-1. **Summary**
+**Type of unit:** Learning content unit
 
-    How did you solve the problem in the initial scenario with the knowledge learned in the module? 
-    
-    *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)*
+**Estimated unit duration:** 10 minutes
 
-## Notes
+### Key content per learning objective
 
-Note any additional information that may be beneficial to this content such as links, reference material, etc.
+After you complete this unit, you&#39;ll be able to describe Azure Sentinel hunting query management and creation. Unit topics include:
+
+- Azure Sentinel queries and their purpose, including MITRE ATT&CK tactics
+- Use built-in queries to hunt for threats
+- Azure Sentinel community on GitHub
+- Create queries to refine threat hunting
+
+## Third unit: Save key findings with bookmarks
+
+**Type of unit:** Learning content unit
+
+**Estimated unit duration:** 10 minutes
+
+### Key content per learning objective
+
+After you complete this unit, you&#39;ll be able to save key findings with bookmarks. Unit topics include:
+
+- Bookmark Azure Sentinel events
+- Integrate bookmarks with incidents
+- Observe bookmarks using the investigation graph
+
+## Fourth unit: Observe threats over time with livestream
+
+**Type of unit:** Learning content unit
+
+**Estimated unit duration:** 10 minutes
+
+### Key content per learning objective
+
+After you complete this unit, you&#39;ll be able to observe threats over time with livestream. Unit topics include:
+
+- Add events to livestream
+- View livestream sessions
+- Manage livestream events and alerts
+
+## Fifth unit: Exercise&mdash;Hunt for threats using Azure Sentinel
+
+**Type of unit:** Exercise unit
+
+**Estimated unit duration:** 10 minutes
+
+**Use of supplemental demo video:** Potentially
+
+### Key content per learning objective
+
+In this exercise, you&#39;ll learn to:
+
+- Manage Azure Sentinel queries.
+- Save key findings with bookmarks.
+- Observe threats over time with livestream.
+
+## Sixth unit: Summary
+
+**Type of unit:** Summary unit
+
+**Estimated unit duration:** 5 minutes
+
+### Resolution of module problem
+
+In this module you’ve learned how to perform threat hunting using the tools available in Azure Sentinel, including proactively identifying threat behaviors using Azure Sentinel queries. You've also continued the hunt using bookmarks and livestream to identify specific account usage patterns for Contoso's Azure AD accounts.
