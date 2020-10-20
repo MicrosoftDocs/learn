@@ -43,7 +43,7 @@ quiz:
       isCorrect: true
       explanation: "Correct. This type of token is solely for non-fungible assets."
 
-  - content: "What modular and reusable tool does OpenZeppelin provide to make it easier to write secure contracts?"
+  - content: "What modular, robust and reusable tool does OpenZeppelin provide to make it easier to write secure code?"
     choices:
     - content: "CLI."
       isCorrect: false
@@ -51,7 +51,7 @@ quiz:
     - content: "SDK."
       isCorrect: false
       explanation: "The SDK, is used to develop, deploy, and manage smart contract projects."
-    - content: "Contracts."
+    - content: "Contracts library."
       isCorrect: true
       explanation: "Correct. The contracts library provides a set of modular and reusable contracts to integrate into new and existing blockchain projects."
     - content: "Test helpers."
