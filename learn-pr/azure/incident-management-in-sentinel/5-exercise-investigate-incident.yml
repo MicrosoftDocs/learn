@@ -10,6 +10,5 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Investigate an incident
 durationInMinutes: 5
-azureSandbox: true
 content: |
   [!include[]includes/5-exercise-investigate-incident.md)]
