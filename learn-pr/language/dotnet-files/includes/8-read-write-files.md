@@ -24,7 +24,9 @@ The return object from `ReadAllText` is a string.
 
 This data in its string format doesn't do you much good. It's still just characters, but now in a format that you can read. You want the ability to parse this data into a format that you can use programmatically. 
 
-.NET includes a built-in parser for JSON files. You don't need to include anything to use it. Just use `JsonSerializer.Deserialize` method.
+.NET includes a built-in parser for JSON files. You don't need to include anything to use it. 
+
+Add `using System.Text.Json` to the top of your class file and then use the `JsonSerializer.Deserialize` method.
 
 ```csharp
 class SalesTotal

@@ -22,13 +22,13 @@ If you run that code from the *sales* folder in the following folder structure, 
 
 ## Work with special directories
 
-.NET runs everywhere, Windows, macOS, even on mobile operating systems like iOS and Android. Each of those operating systems may or may not have the concept of special system folders like a home directory that is dedicated for user-specific files. Or a desktop directory. Or a directory to store temporary files in.
+.NET runs everywhere, Windows, macOS, Linux, even on mobile operating systems like iOS and Android. Each of those operating systems may or may not have the concept of special system folders like a home directory that is dedicated for user-specific files. Or a desktop directory. Or a directory to store temporary files in.
 
 Those directories are different on each operating system and it would be cumbersome to remember each operating system's directory structure and perform switches based on the current OS.
 
 The `System.Environment.SpecialFolder` enumeration specifies constants to retrieve paths to special system folders.
 
-The following code will return the current operating system's path to the equivalent of the Windows *My Documents* folder.
+The following code will return the current operating system's path to the equivalent of the Windows *My Documents* folder or the user's *HOME* directory if the code is running on Linux.
 
 ```csharp
 string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -67,7 +67,7 @@ string fileName = @"stores\201\sales\sales.json";
 
 FileInfo info = new FileInfo(fileName);
 
-Console.WriteLine($"Full Name: {info.FullName}\nDirectory: {info.Directory}\nExtension: {info.Extension}\nCreate Date: {info.CreationTime}"); // And many more
+Console.WriteLine($"Full Name: {info.FullName}{Environment.NewLine}Directory: {info.Directory}{Environment.NewLine}Extension: {info.Extension}{Environment.NewLine}Create Date: {info.CreationTime}"); // And many more
 ```
 
 There are many more useful properties and utility methods on the `Path`, `DirectoryInfo`, and `FileInfo` classes, but these are the core concepts that you'll likely use most often. In the next exercise, you'll compose paths and identify .json files.
