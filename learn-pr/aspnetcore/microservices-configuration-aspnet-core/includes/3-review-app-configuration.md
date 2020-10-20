@@ -62,7 +62,7 @@ Perhaps the best way to illustrate this integration is to peek into the *Program
 
 In the previous code fragment, notice that:
 
-1. Add the `EnvironmentVariables` configuration provider first (line 24). Note: The `CreateDefaultBuilder()` method adds the JSON file configuration provider to get values from *appsettings.json*.
+1. Add the `EnvironmentVariables` configuration provider first (line 24). Note: The `CreateDefaultBuilder` method adds the JSON file configuration provider to get values from *appsettings.json*.
 2. If FeatureManagement is enabled and the App Configuration endpoint configured (line 27). (You can take a look at the ConfigMap above).
 3. Add the `AzureAppConfiguration` provider (line 29). Being the second in the chain of providers, it can override any value taken from the ConfigMap.
 4. Connect to the App Configuration endpoint (line 31).

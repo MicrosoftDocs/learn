@@ -49,13 +49,13 @@ This is implemented with three new files in the *src\Web\WebSPA\Client\src\modul
 - *models\featureFlag.model.ts*
 - *services\featureFlag.service.ts*
 
-The feature flag directive is used in any div to decide whether it should be rendered or not, depending on the result from the feature flag service. The feature flag service queries the feature management middleware to check the feature status.
+The feature flag directive is used in any `div` element to determine whether it should be rendered, depending on the result from the feature flag service. The feature flag service queries the feature management middleware to check the feature status.
 
 ### 2. Feature Management middleware for querying values
 
 This is one of the key components of the feature flag system implemented here, as it allows you to query the specific feature flag values so they can be used in the SPA.
 
-Just a as refresher, a middleware is just a handler for requests that sits in the ASP.NET Core's request pipeline, you can think of it like a "light" controller, that processes the raw `HttpContext`, and returns a value by writing directly to the `Response` object. You can get more in-depth information in the [ASP.NET Core Middleware](/aspnet/core/fundamentals/middleware/) documentation page.
+As a refresher, a middleware is just a handler for requests that sits in the ASP.NET Core's request pipeline. Think of it like a "light" controller that processes the raw `HttpContext` and returns a value by writing directly to the `Response` object. For more in-depth information, see the [ASP.NET Core Middleware](/aspnet/core/fundamentals/middleware/) document.
 
 The Feature Management library is implemented to work on the server side. That's fine when using MVC or Razor Pages, but we need to use the configuration data in our SPA. So the directive mentioned in the previous section will query the `/features` endpoint, implemented as this middleware, to get the feature state. The middleware will just get the configuration values from the feature manager that, in turn, gets them from the ASP.NET Core configuration infrastructure.
 
@@ -100,7 +100,7 @@ Add the following parameters to the *appsettings.json* file:
 
 The `UseFeatureManagement` will be our main feature toggle, it isn't something imposed by the Feature Management library. The values above will become the default ones for the SPA.
 
-We'll also add the following values to the `deploy\k8s\helm-simple\webspa\templates\configmap.yaml` file:
+We'll also add the following values to the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file:
 
 ```yaml
   UseFeatureManagement: "True"
@@ -109,35 +109,23 @@ We'll also add the following values to the `deploy\k8s\helm-simple\webspa\templa
 
 To register the feature management services in the IoC container, add the following lines to the `ConfigureServices` method in *Startup.cs*:
 
+In the *Startup.cs* file's `ConfigureServices` method, replace the comment `// Add the AddFeatureManagement code` with the following code:
+
 ```csharp
-public void ConfigureServices(IServiceCollection services)
+if (Configuration.UseFeatureManagement())
 {
-    //...
-    if (Configuration.UseFeatureManagement())
-    {
-        services.AddFeatureManagement();
-    }
-    //...
+    services.AddFeatureManagement();
 }
 ```
 
 The preceding code enables the Feature Management to read the state of features in the `FeatureManagement` configuration section. *Coupons* in our case.
 
-As mentioned before, for the SPA to query the coupons feature state we need to expose an endpoint, so you have to add the *MapFeatureManagement*  endpoint to the `Configure` method in *Startup.cs* to query the feature state:
+As mentioned before, for the SPA to query the coupon's feature state, you need to expose an endpoint. In the *Startup.cs* file's `Configure` method, replace the comment `// Add the MapFeatureManagement code` with the following code:
 
 ```csharp
-public void Configure(...)
+if (Configuration.UseFeatureManagement())
 {
-    //...
-    app.UseEndpoints(endpoints =>
-    {
-        if (Configuration.UseFeatureManagement())
-        {
-            endpoints.MapFeatureManagement(pattern: "features");
-        }
-        //...
-    });
-    //...
+    endpoints.MapFeatureManagement(pattern: "features");
 }
 ```
 
@@ -145,7 +133,7 @@ public void Configure(...)
 
 Using the directive makes it clear and easy-to-use it in the views, as shown in the next HTML fragment:
 
-File: *src\Web\WebSPA\Client\src\modules\orders\orders-new\orders-new.component.html*:<br>
+File: *src\Web\WebSPA\Client\src\modules\orders\orders-new\orders-new.component.html*:
 
 ```html
 <div class="container">
@@ -171,9 +159,9 @@ File: *src\Web\WebSPA\Client\src\modules\orders\orders-new\orders-new.component.
 </div>
 ```
 
-In the view fragment above, you can easily identify the **divs** with the `*featureFlag="'coupons'"` directive that'll have them rendered or not depending on the `coupons` value.
+In the preceding view fragment, you can easily identify the `div` elements with the `*featureFlag="'coupons'"` directive that will have them rendered or not depending on the `coupons` value.
 
-Something similar occurs in the *src\Web\WebSPA\Client\src\modules\orders\orders-detail\orders-detail.component.html* file.
+Something similar occurs in the *src\Web\WebSPA\Client\src\modules\orders\orders-detail\orders-detail.component.html* file:
 
 ```html
 <div class="esh-orders_detail">
@@ -228,14 +216,14 @@ And then run this script to deploy to AKS:
 
 After a few seconds, you should be able to use the app as usual. You won't see any difference now, because the coupon feature is configured as enabled by default.
 
-Now update the `deploy\k8s\helm-simple\webspa\templates\configmap.yaml` file to disable the coupons feature like this:
+Now update the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file to disable the coupons feature like this:
 
 ```yaml
   UseFeatureManagement: "True"
   FeatureManagement__Coupons: "False"
 ```
 
-And redeploy the application again, there's no need to rebuild the image. Just run:
+And redeploy the app again, there's no need to rebuild the image. Just run:
 
 ```bash
 ./deploy-application.sh --charts webspa
@@ -267,7 +255,7 @@ Copy the connection string, because you'll use it in a moment.
 
 ## Wire up eShopOnContainers to App Configuration
 
-To connect your application to the new App Configuration store, you'll have to:
+To connect your app to the new App Configuration store:
 
 - Add the App Configuration connection string to the SPA ConfigMap.
 - Add a sentinel key for the App Configuration.
@@ -365,17 +353,12 @@ The `ConfigureRefresh` method is used to specify the settings used to update the
 
 ### 3. Add the Azure App Configuration middleware
 
-Add the following code to the `Configure` method in *Startup.cs*:
+In the `Configure` method of *Startup.cs*, replace the comment `// Add the UseAzureAppConfiguration code` with the following code:
 
 ```csharp
-public void Configure(...)
+if (Configuration.UseFeatureManagement())
 {
-    //...
-    if (Configuration.UseFeatureManagement())
-    {
-        app.UseAzureAppConfiguration();
-    }
-    //...
+    app.UseAzureAppConfiguration();
 }
 ```
 
