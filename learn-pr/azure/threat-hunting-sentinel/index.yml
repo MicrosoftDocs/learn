@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.azure.threat-hunting-sentinel
+metadata:
+  title: Threat hunting with Azure Sentinel
+  description: TODO
+  ms.date: TODO
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Threat hunting with Azure Sentinel
+summary: TODO
+abstract: |
+  In this module you will:
+  - TODO
+  - TODO
+  - TODO
+prerequisites: |
+  - TODO
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.azure.threat-hunting-sentinel.1-introduction
+- learn.azure.threat-hunting-sentinel.2-query-management-creation
+- learn.azure.threat-hunting-sentinel.3-bookmarks
+- learn.azure.threat-hunting-sentinel.4-livestream
+- learn.azure.threat-hunting-sentinel.5-exercise-hunt-for-threats
+- learn.azure.threat-hunting-sentinel.6-summary
+badge:
+  uid: learn.learn.azure.threat-hunting-sentinel
