@@ -1,6 +1,8 @@
-Building and running an application on microcontroller IoT devices can be challenging. These challenges could range from ease of development to securely capturing and transferring the data to the server with underlying security. Using Azure Sphere, we can build an end-to-end connected platform from the IoT device to the Cloud. 
+Building and running an application on microcontroller IoT devices can be challenging. These challenges could range from ease of development to securely capturing and transferring the data to a server.
 
-The application can be built and deployed remotely with security at its core. This could provide a means to capture and transmit data from the IoT application running on the Azure Sphere to the Cloud. We can display the captured data in a dashboard. We can define rules and implement actions depending on the status.
+With Azure Sphere, you can build IoT solutions that are secure by default with the confidence that your device is protected, your application is protected, and data is protected in transit.
+
+You can build applications with Visual Studio, Visual Studio Code, or integrate with your existing toolchains on Windows and Linux. Visual Studio and Visual Studio Code development environments provide integrated microcontroller debuggers, full source code control, along with collaboration and productivity tools.
 
 ## Measuring the environment
 

@@ -50,7 +50,7 @@ ALTER DATABASE TDE_Demo SET ENCRYPTION ON;
 GO
 ```
 
-Once TDE is enabled, it will take some time in order to encrypt the database as each database page must be read and encrypted and written back to disk. The larger the database the longer this operation will take. This process is a background process and is run at a low priority in order to not overload the IO or the CPU of the system.
+Once TDE is enabled, it will take some time in order to encrypt the database as each database page must be read, encrypted and written back to disk. The larger the database the longer this operation will take. This process is a background process and is run at a low priority in order to not overload the IO or the CPU of the system.
 
 Once the certificate that will be used by TDE has been created, it must be manually backed up and stored in a safe place. SQL Server integrates with Enterprise Key Managers (EKMs) in order to manage encryption keys. An example of an EKM is Azure Key Vault. Managing the certificate is important, because if the certificate is lost and the database needs to be restored from a backup, the restore will fail, as the database cannot be read. To use TDE with databases in an Always On Availability Group, the certificate used to encrypt the database must be backed up and restored to the other servers within the Availability Group that will be hosting copies of the database.
 

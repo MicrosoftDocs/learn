@@ -4,35 +4,36 @@ In this exercise, you'll add a timer to control timeout during the execution of 
 
 ## Add moment npm package to your function app
 
-Before changing our workflow, we'll add the **moment** npm package to our function app through the Kudo console. 
+Before changing our workflow, we'll add the **moment** npm package to our function app through the console. 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
 
-1. Navigate to the function app that you created in the previous exercise.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select the function app that you created in the previous exercise.
 
-1. Select your function app's name, click **Platform Features**, and then select **Advanced tools (Kudu)**.
+1. Under **Development Tools**, click **Console**.
 
-1. In the top menu of the Kudu console, select **Debug console**, then click **CMD**. 
-
-1. In the Explorer window, navigate to the **site** folder, and then select the **wwwroot** folder.
-
-1. In the command prompt window, run the following command:
+1. When the console window opens, verify that you are in the _D:\home\site\wwwroot_ folder, then run the following command:
 
     ```command-prompt
+    npm install typescript
     npm install moment
     ```
 
-    This command installs the **moment.js** library, which contains date/time functions that you can use with durable functions. This may take a few seconds to complete, and the node package manager may display some warnings that you can ignore.
+    These commands install the _typescript_ and _moment_ libraries. The _moment_ library contains date/time functions that you can use with durable functions, and the _typescript_ library is a dependency. These commands may take a few seconds to complete, and the node package manager may display some warnings that you can ignore.
 
-1. Wait until all packages have finished installing, then close the Kudu window and return to the Function App page in the Azure portal.
+1. Wait until all packages have finished installing, then close the console window.
 
 ## Add an escalation activity to your function app
 
-1. Expand your function app and select the **+** button next to **Functions**.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your function app.
 
-1. Select the **Durable Functions activity** template.
+1. In the Azure portal, under **Functions**, click **Functions**, and then click **+ Add**.
 
-1. Name the function **Escalation**, and then select **Create**.
+1. Select the **Durable Functions activity** template. This template creates a durable function that is run when an Activity is called by an orchestrator function.
+
+1. Name the function **Escalation**, and then select **Create Function**.
+
+1. When the function is created, click **Code + Test**, and the code for the **index.js** file appears in the editor. Replace the existing code with the following code:
 
 1. When the function has been created, replace the code in **index.js** for this function with the following example:
 
@@ -48,9 +49,13 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 ## Update the orchestration function to use the escalation function
 
-1. In your function app, select the orchestration function that you created in the previous exercise, which you named **OrchFunction**.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your function app.
 
-1. In the **index.js** code file, add a reference to the **moment** library
+1. In the Azure portal, under **Functions**, click **Functions**, and then click your **OrchFunction** function that you created in the previous exercise.
+
+1. When the function is created, click **Code + Test**, and the code for the **index.js** file appears in the editor.
+
+1. Add a reference to the **moment** library:
 
     ```javascript
     const moment = require("moment");
@@ -89,11 +94,25 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 ## Verify that the Durable Functions workflow starts
 
-1. Select the **HttpStart** function you created in the preceding exercise.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your function app.
 
-1. Select **</> Get function URL**, and copy the URL.
+1. Under **Overview**, click **Restart**, and then click **Yes** when prompted to restart. Wait for the restart to complete before continuing.
 
-1. Open another browser window and navigate to the URL that you copied, replacing **{functionName}** with **OrchFunction**.
+1. Under **Functions**, click **Functions**, and then click your **HttpStart** function.
+
+1. Click **Get Function URL**, and copy the URL. Your URL should resemble the following example:
+
+    ```
+    https://example.azurewebsites.net/api/orchestrators/{functionName}?code=AbCdEfGhIjKlMnOpQrStUvWxYz==
+    ```
+
+    You'll use this URL to run your functions.
+
+1. Open a new browser window and navigate to the URL that you copied. In the URL, replace the **{functionName}** placeholder with **OrchFunction**, which should resemble the following example:
+
+    ```
+    https://example.azurewebsites.net/api/orchestrators/OrchFunction?code=AbCdEfGhIjKlMnOpQrStUvWxYz==
+    ```
 
    The response message contains a set of URI endpoints that you can use to monitor and manage the execution, which should resemble the following example:
 
@@ -108,7 +127,7 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
     }
     ```
 
-1. Copy the **statusQueryGetUri** value, and use the web browser to navigate to this URL. You should see a response message that shows the instance is pending as it is waiting for the timer to countdown to 20 seconds, which should resemble the following example:
+1. Copy the **statusQueryGetUri** value, and use your web browser to navigate to this URL. You should see a response message that shows the status as _Running_ while it is waiting for the timer to countdown to 20 seconds, which should resemble the following example:
 
     ```json
     {
@@ -123,12 +142,12 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
     }
     ```
 
-1. If you wait for 20 seconds and refresh the browser window, the timeout should have been reached and the workflow will call the **Escalate** activity. You'll see a response that should resemble the following example:
+1. If you wait for 20 seconds and refresh the browser window, the timeout should have been reached, and the workflow will call the **Escalate** activity. You'll see a response that should resemble the following example:
 
     ```json
     {
         "name": "OrchFunction",
-	"instanceId": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
+        "instanceId": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
         "runtimeStatus": "Completed",
         "input": null,
         "customStatus": null,
