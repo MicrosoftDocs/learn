@@ -1,12 +1,5 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-In this unit, you'll analyze the criteria that experts employ when they choose an Azure artificial intelligence (AI) service for a specified business need.  Understanding the criteria can also help you better understand the nuanced differences among the products.
-=======
-In this unit, you'll analyze the criteria experts employ when choosing an Azure monitoring service for a given business need.  Understanding the criteria can also help you better understand the nuanced differences between each product.
->>>>>>> 97932e6f62c55da06c750856e06623acb8839477
-=======
 In this unit, you'll analyze the criteria that experts employ when they choose an Azure monitoring service for a specified business need.  By understanding the criteria, you can better assess the nuanced differences among the products.
->>>>>>> 66ca88b6e38bce0f048e66dd320bc8ed75900ce8
 
 ### Do you need to analyze how you're using Azure to reduce costs?  Improve resilience?  Harden your security?
 
@@ -24,12 +17,4 @@ Choose Azure Monitor when you want to measure custom events alongside other coll
 
 ### Do you need to set up alerts for outages or when autoscaling is about to deploy new instances?
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 Here again, you would use Azure Monitor to set up alerts for key events that are related to your specific resources.
-=======
-Here again, you would use Azure Monitor to set up alerts for key events related to your specific resources.
->>>>>>> 97932e6f62c55da06c750856e06623acb8839477
-=======
-Here again, you would use Azure Monitor to set up alerts for key events that are related to your specific resources.
->>>>>>> 66ca88b6e38bce0f048e66dd320bc8ed75900ce8
