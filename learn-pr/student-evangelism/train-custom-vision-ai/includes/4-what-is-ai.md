@@ -23,7 +23,7 @@ That picture also has a lot of white and yellow, so the computer would probably 
 
 And what if we showed the computer this picture of Bungee next to the night sky?
 
-![Bungee looking at the moon.](../media/bungee-moon.png)
+![Bungee looking at the Moon.](../media/bungee-moon.png)
 
 There is white, but no yellow at all, so the computer would probably think this is *not* a picture of Bungee.
 
@@ -33,7 +33,7 @@ To account for images of different objects with similar colors, or images of the
 
 Rather than only keeping track of aggregate colors in an image, the computer would start to also take into account the position of where those colors are. If the same colors are next to each other, they probably are creating a line or shape.
 
-This kind of analysis can be useful, for example, if we start to identify pictures of the moon. Now we can say that the moon is in a picture if there is a white circle, typically against a blue or black background, like this:
+This kind of analysis can be useful, for example, if we start to identify pictures of the Moon. Now we can say that the Moon is in a picture if there is a white circle, typically against a blue or black background, like this:
 
 ![Moon against a night sky.](../media/moon-big.png)
 
@@ -43,7 +43,7 @@ And if we showed the computer this picture:
 
 The computer would probably still recognize it because there is a distinct white circle against a blue or black background.
 
-But the computer would probably not be able to recognize this as a picture of the moon:
+But the computer would probably not be able to recognize this as a picture of the Moon:
 
 ![Moon with a big dog taking a bite from it.](../media/moon-bite.png)
 

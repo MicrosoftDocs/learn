@@ -1,6 +1,6 @@
 ![Over the Moon title art](..\media\otm-logo.png)
 
-In the new movie [Over the Moon](https://www.netflix.com/title/80214236), Fei Fei exhibits resourcefulness and creativity as she seeks to help her father remember the story of Chang'e with its message of everlasting true love. In the film, Fei Fei uses her STEM skills, determination, and passion to fly to the moon. The love of her friends helps her to get home.
+In the new movie [Over the Moon](https://www.netflix.com/title/80214236), Fei Fei exhibits resourcefulness and creativity as she seeks to help her father remember the story of Chang'e with its message of everlasting true love. In the film, Fei Fei uses her STEM skills, determination, and passion to fly to the Moon. The love of her friends helps her to get home.
 
 Fei Fei didn't jump into artificial intelligence (AI) during her journey to the moon. Her dedication was inspired by wanting to help people, in particular, her family. As she struggles to make sense of love, life, and the legends she heard as a child, she creates a way to address her problems head on, with the help of her buddy Bungee, of course.
 
