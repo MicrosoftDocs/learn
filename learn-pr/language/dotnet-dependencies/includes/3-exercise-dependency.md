@@ -86,7 +86,7 @@ You can close the tab titled "Extension: C#" to focus on the code we'll be writi
     </ItemGroup>
     ```
 
-1. Add the following content at the top of the Program.cs file to initialize Humanize:
+1. Add the following content at the top of the Program.cs file to initialize Humanizer:
 
     ```csharp
     using Humanizer;
@@ -146,4 +146,3 @@ You can close the tab titled "Extension: C#" to focus on the code we'll be writi
     ```
 
 Congratulations. You've managed to successfully install Humanizer as a dependency and write logic for application code to make data more human readable. Humanizer seems to deliver on its promise, and Tailwind Traders is likely to be happy with this evaluation.
-

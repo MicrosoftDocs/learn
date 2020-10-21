@@ -62,7 +62,7 @@ On these sites, you can learn more about where the source code resides and find 
 
 ### dotnet commands
 
-So far, you've learned how you can install dependencies by using the dotnet tool. But this tool can do a lot more. The dotnet command-line tool has quite a few commands. The commands help you with tasks like installing packages, authoring packages, and initializing .NET projects. You don't need to know all the commands in detail. When you start out with .NET, you're likely to use only a subset of the commands. As you expand your use of .NET, you might use more and more commands from a variety of categories.
+So far, you've learned how you can install dependencies by using the dotnet command line interface (CLI). But this tool can do a lot more. The dotnet CLI has quite a few commands. The commands help you with tasks like installing packages, authoring packages, and initializing .NET projects. You don't need to know all the commands in detail. When you start out with .NET, you're likely to use only a subset of the commands. As you expand your use of .NET, you might use more and more commands from a variety of categories.
 
 To help you remember what the commands do, it helps to think of them as belonging to categories:
 

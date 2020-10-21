@@ -29,14 +29,14 @@ quiz:
         - content: "Run `dotnet download package Humanizer`"
           isCorrect: false
           explanation: "There is no `download` command. Use `add package`."
-    - content: "What version change would signify a Minor version when a package uses semantic version."
+    - content: "What version change would signify a Minor version when a package uses semantic version?"
       choices:
         - content: "1.1.1 changes to 1.2.0"
           isCorrect: true
           explanation: "The middle number represents the Minor version. A change to this number means that features have been added. Your code should still work."
         - content: "1.0.1 changes to 1.0.2"
           isCorrect: false
-          explanation: "That is incorrect, this is the Patch version. A change to this number means that a change has been applied that fixes something in the code that should have worked."
+          explanation: "The third number is the Patch version. A change to this number means that a change has been applied that fixes something in the code that should have worked."
         - content: "1.0.0 changes to 2.0.0"
           isCorrect: false
           explanation: "The first number is the Major version. A change to this number means that you can expect breaking changes in code."
