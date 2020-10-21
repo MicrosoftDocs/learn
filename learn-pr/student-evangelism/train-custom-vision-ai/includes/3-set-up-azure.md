@@ -1,8 +1,8 @@
-In this module, you are going to use [Azure Custom Vision](https://azure.microsoft.com/services/cognitive-services/computer-vision/), part of the Cognitive Services suite, to detect your favorite animal in an image. Before we jump into training AI, we need to set up our work environment. In this case, your work environment will be all in the browser on Azure.
+In this module, you are going to use [Custom Vision](https://azure.microsoft.com/services/cognitive-services/computer-vision/), part of the Azure Cognitive Services suite, to detect your favorite animal in an image. Before we jump into training AI, we need to set up our work environment. In this case, your work environment will be all in the browser on Azure.
 
 ## Sign up for Azure
 
-To use Azure Custom Vision, you will need an Azure account. But don't worry! This is a quick process, and there are free trials you can use to try it out. If you get stuck at any point, be sure to check out the [Create an Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/) Learn module. This module also gives an overview of Azure pricing.
+To use Custom Vision, you will need an Azure account. But don't worry! This is a quick process, and there are free trials you can use to try it out. If you get stuck at any point, be sure to check out the [Create an Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/) Learn module. This module also gives an overview of Azure pricing.
 
 If you haven't used Azure before, you can sign up for a [free trial](https://azure.microsoft.com/free/). The free trial gives you free services, which includes Custom Vision. You also get a free credit to use some paid services in the first month.
 
@@ -58,7 +58,7 @@ To get started with your project, follow these steps:
 1. Select **General** for the **Domain**.
 1. Select **Create project**.
 
-![Creating a new custom vision project in the Custom Vision portal.](../media/create-vision-project.png)
+![Creating a new Custom Vision project in the Custom Vision portal.](../media/create-vision-project.png)
 
 ## Review setup
 

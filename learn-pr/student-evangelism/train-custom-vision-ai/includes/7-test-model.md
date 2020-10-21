@@ -1,4 +1,4 @@
-Now that you have trained your AI, you can do a quick test to see how accurate it is so far. Select the **Quick Test** button in the upper-right corner of the Custom Vision portal.
+Now that you have trained your AI, you can do a quick test to see how accurate it is so far. Select the **Quick Test** button in the upper-right corner of the Azure Custom Vision portal.
 
 ![Quick Test button in the Custom Vision portal.](../media/model-quick-test.png)
 

@@ -4,7 +4,7 @@ Make sure you have about 30 images of your object that you want to use for train
 
 ## Upload your images
 
-For Bungee, we're going to start by uploading 15 images and see how well the Custom Vision AI can be trained on those. The images we're starting with show Bungee only but from many different angles and types of lighting.
+For Bungee, we're going to start by uploading 15 images and see how well the Custom Vision AI can be trained on those. The images we're starting with show only Bungee, but from many different angles and types of lighting.
 
 To get started training your AI, follow these steps:
 
@@ -39,7 +39,7 @@ You should see your first training iteration happening. Here you will also find 
 
 ### Probability threshold
 
-Each time the AI makes a prediction, it also provides a probability percentage. For example, it will say, "I am 80 percent confident that this is Bungee." The probability threshold is the threshold where the confidence has to be when training to determine if it predicted accurately. For example, if our probability threshold is 50 percent and the AI said that it was 45 percent sure the picture was Bungee and it *was* Bungee, that would not count as an accurate prediction.
+Each time the AI makes a prediction, it also provides a probability percentage. For example, it will say, "I am 80% confident that this is Bungee." The probability threshold is the threshold where the confidence has to be when training to determine if it predicted accurately. For example, if our probability threshold is 50% and the AI said that it was 45% sure the picture was Bungee and it *was* Bungee, that would not count as an accurate prediction.
 
 ### Overlap threshold
 
