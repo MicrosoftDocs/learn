@@ -1,6 +1,6 @@
 Before you continue, it's important to establish what information you want to use to make a recommendation to the astronauts. In this case, the more publicly available information that could affect the amount of sample that is *possible* to return is the type of aircraft used. 
 
-## Converting sample weight
+## Convert the sample weight
 
 While details of rocket design are proprietary, some information is publicly available, such as the weight of the modules (parts of the rocket) that will carry the samples back to Earth, and the total amount of weight that the rocket can lift above the atmosphere. 
 
@@ -22,7 +22,7 @@ rock_samples.head()
 
 Here we first modified the values in the **Weight(g)** column to be the same value multiplied by 0.001. Then we modified the name of the column to be more accurate by changing it to **Weight (kg)**.
 
-## Creating a new dataframe
+## Create a new dataframe
 
 Pandas, the Python library we are using to do our data analysis, has "dataframes," which are really effective for representing 2D data. You might have recognized that, when you run the `rock_samples.head()` code, what is printed out looks almost like a snapshot of an Excel worksheet, which is a great way to think about dataframes.
 
