@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 In this unit, you'll analyze the criteria that experts employ when they choose an Azure monitoring service for a specified business need.  By understanding the criteria, you can better assess the nuanced differences among the products.
 
 ### Do you need to analyze how you're using Azure to reduce costs?  Improve resilience?  Harden your security?
