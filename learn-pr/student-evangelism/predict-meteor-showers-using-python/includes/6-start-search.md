@@ -124,6 +124,7 @@ print(cities.loc[cities['city'] == 'Abu Dhabi'])
 ```
 
 Here's the output:
+
 |  | city | latitude | country |
 |--|------|----------|---------|
 | 0 | Abu Dhabi | 24.47 | United Arab Emirates |

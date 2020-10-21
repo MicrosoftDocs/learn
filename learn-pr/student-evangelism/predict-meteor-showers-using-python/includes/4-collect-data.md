@@ -26,7 +26,7 @@ The Lyrids meteor shower appears to come from the direction of the constellation
 
 Comet Halley takes 76 years to orbit the sun. The debris from this comet creates the [Eta Aquarids meteor shower](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/eta-aquarids/in-depth/?azure-portal=true) each May and the [Orionids meteor shower](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/orionids/in-depth/?azure-portal=true) each October. 
 
-The Eta Aquarids meteor shower appears to come from the direction of the constellation Aquarius. The Orionids meteor shower appears to come from direction of the constellation Orion.
+The Eta Aquarids meteor shower appears to come from the direction of the constellation Aquarius. The Orionids meteor shower appears to come from the direction of the constellation Orion.
 
 ### Comet Swift-Tuttle
 
