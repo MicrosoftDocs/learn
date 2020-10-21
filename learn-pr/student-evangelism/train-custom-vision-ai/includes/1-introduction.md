@@ -8,9 +8,9 @@ Fei Fei didn't jump into artificial intelligence (AI) during her journey to the 
 
 In this module, you will choose an animal, which could be your pet. You will train a Custom Vision AI to be able to identify your pet in an image. And you will do these tasks without needing to know how to code!
 
-Remember, while you can use technical skills to build almost anything, the ultimate goal should always be to help people. Designing technology to help people is something Microsoft is passionate about, *especially* when it applies to AI. We focus on [AI for Good](https://www.microsoft.com/en-us/ai/ai-for-good). We want to encourage you to start your AI journey by always thinking about how you can help improve our world.
+Remember, while you can use technical skills to build almost anything, the ultimate goal should always be to help people. Designing technology to help people is something Microsoft is passionate about, *especially* when it applies to AI. We focus on [AI for Good](https://www.microsoft.com/ai/ai-for-good?azure-portal=true). We want to encourage you to start your AI journey by always thinking about how you can help improve our world.
 
-This module is a part of a multi-modal approach to learning. You can also follow along with a video tutorial on the [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG).
+This module is a part of a multi-modal approach to learning. You can also follow along with a video tutorial on the [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG?azure-portal=true).
 
 ## Learning objectives
 

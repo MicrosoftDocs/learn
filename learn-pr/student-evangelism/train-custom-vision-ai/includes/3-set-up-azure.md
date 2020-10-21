@@ -1,12 +1,12 @@
-In this module, you are going to use [Custom Vision](https://azure.microsoft.com/services/cognitive-services/computer-vision/), part of the Azure Cognitive Services suite, to detect your favorite animal in an image. Before we jump into training AI, we need to set up our work environment. In this case, your work environment will be all in the browser on Azure.
+In this module, you are going to use [Custom Vision](https://azure.microsoft.com/services/cognitive-services/computer-vision/?azure-portal=true), part of the Azure Cognitive Services suite, to detect your favorite animal in an image. Before we jump into training AI, we need to set up our work environment. In this case, your work environment will be all in the browser on Azure.
 
 ## Sign up for Azure
 
-To use Custom Vision, you will need an Azure account. But don't worry! This is a quick process, and there are free trials you can use to try it out. If you get stuck at any point, be sure to check out the [Create an Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/) Learn module. This module also gives an overview of Azure pricing.
+To use Custom Vision, you will need an Azure account. But don't worry! This is a quick process, and there are free trials you can use to try it out. If you get stuck at any point, be sure to check out the [Create an Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/?azure-portal=true) Learn module. This module also gives an overview of Azure pricing.
 
-If you haven't used Azure before, you can sign up for a [free trial](https://azure.microsoft.com/free/). The free trial gives you free services, which includes Custom Vision. You also get a free credit to use some paid services in the first month.
+If you haven't used Azure before, you can sign up for a [free trial](https://azure.microsoft.com/free/?azure-portal=true). The free trial gives you free services, which includes Custom Vision. You also get a free credit to use some paid services in the first month.
 
-If you are a student, you can sign up for a [student free trial of Azure](https://azure.microsoft.com/free/students/) *without* having to put in a credit card. Similar to the regular free trial, this option gives you free services and a free credit to use in the first *year*.
+If you are a student, you can sign up for a [student free trial of Azure](https://azure.microsoft.com/free/students/?azure-portal=true) *without* having to put in a credit card. Similar to the regular free trial, this option gives you free services and a free credit to use in the first *year*.
 
 ## Create your resource group
 
@@ -14,7 +14,7 @@ The best way to experiment with Azure is to create a resource group that will be
 
 To get started creating a resource group, follow these steps:
 
-1. Go to the [Azure portal](https://portal.azure.com/).
+1. Go to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 1. Sign in to Azure if you're not signed in already.
 1. In the top search bar, search for **Resource Group**.
 1. Select **Add**.
@@ -47,7 +47,7 @@ If you ever lose your Custom Vision resource, you can find it by entering **Reso
 
 ## Create a project on the Custom Vision portal
 
-Now that you have the Azure resources to run the AI, we can create a project on the Custom Vision portal. Go to [Custom Vision](https://www.customvision.ai/), and sign in with your same Azure credentials. If this is your first time visiting, you might need to accept the Terms of Service.
+Now that you have the Azure resources to run the AI, we can create a project on the Custom Vision portal. Go to [Custom Vision](https://www.customvision.ai/?azure-portal=true), and sign in with your same Azure credentials. If this is your first time visiting, you might need to accept the Terms of Service.
 
 To get started with your project, follow these steps:
 
@@ -72,11 +72,11 @@ Azure is a cloud service that is giving you compute power to run code in a secur
 
 ![Screenshot of the Azure portal with our resource group and Custom Vision resource.](../media/azure-portal.png)
 
-What we are doing for this module is a tiny portion of what Azure can do for you. If you are interested in learning more about what Azure can do for you, check out Azure on Microsoft Learn. There are a lot of [modules on Cognitive Services](https://docs.microsoft.com/en-us/learn/browse/?expanded=azure&products=azure-cognitive-services) available.
+What we are doing for this module is a tiny portion of what Azure can do for you. If you are interested in learning more about what Azure can do for you, check out Azure on Microsoft Learn. There are a lot of [modules on Cognitive Services](https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-cognitive-services?azure-portal=true) available.
 
 ### Custom Vision resource
 
-[Custom Vision on Azure](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/) is even more powerful than the bit we are going to explore in this module. Open the resource in Azure.
+[Custom Vision on Azure](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/?azure-portal=true) is even more powerful than the bit we are going to explore in this module. Open the resource in Azure.
 
 ![Custom Vision resource on Azure.](../media/custom-vision-resource.png)
 
@@ -84,7 +84,7 @@ You can see there are a number of resources in the menu on the left that start t
 
 Everything that you do in the Custom Vision portal will be using the compute resources that you provisioned here in the Custom Vision resource in Azure. Custom Vision also has an SDK. Like the portal, the calls to the SDK would be using what was provisioned on Azure as part of this resource.
 
-If you get inspired by this module, we encourage you to check out the other [Microsoft Learn modules we have on Custom Vision](https://docs.microsoft.com/en-us/learn/browse/?expanded=azure&terms=custom%20vision).
+If you get inspired by this module, we encourage you to check out the other [Microsoft Learn modules we have on Custom Vision](https://docs.microsoft.com/learn/browse/?expanded=azure&terms=custom%20vision?azure-portal=true).
 
 ### Custom Vision portal
 

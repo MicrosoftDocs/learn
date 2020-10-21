@@ -1,6 +1,6 @@
 Now it's time to upload your images and train the Custom Vision service.
 
-Make sure you have about 30 images of your object that you want to use for training, that you're signed in to the [Custom Vision portal](https://www.customvision.ai/), and on your project page.
+Make sure you have about 30 images of your object that you want to use for training, that you're signed in to the [Custom Vision portal](https://www.customvision.ai/?azure-portal=true), and on your project page.
 
 ## Upload your images
 
