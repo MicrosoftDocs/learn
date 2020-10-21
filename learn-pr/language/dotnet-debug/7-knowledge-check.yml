@@ -13,21 +13,20 @@ durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
-    - content: "How do you run Node.js with inspect mode enabled?"
+    - content: "When you want to write a line to the debug console only when debugging, which API should you use?"
       choices:
-        - content: "With the command `node inspect myscript.js`"
+        - content: "System.Console.WriteLine"
           isCorrect: false
-          explanation: "This command starts your program with the built-in debugger."
-        - content: "With the command `node --inspect myscript.js`"
+          explanation: "Incorrect, the System.Console APIs are always enabled and always write to the console"
+        - content: "System.Diagnostics.Trace.WriteLine"
+          isCorrect: false
+          explanation: "Incorrect, this API only writes wto attached listners when `TRACE` is defined."
+        - content: "System.Diagnostics.Debug.WriteLine"
           isCorrect: true
-          explanation: "Use the `--inspect` option to allow debugger clients to connect to the Node.js process."
-        - content: "With the command `node myscript.js"
+          explanation: "That is correct, this API writes when attached to a debugger in the debug console output."
+        - content: "System.WriteLine"
           isCorrect: false
-          explanation: "For security reasons, the use of the debugger must be enabled explicitly when you run Node.js."
-        - content: "By entering `debug` in the Node.js REPL"
-          isCorrect: false
-          explanation: "A debugger can only be used on an existing program and doesn't work in the REPL environment."
-    - content: "How can you make a debugger pause the execution of your program on a specific line of code?"
+          explanation: "There is no API in the System namespace to write a line to the debug console."
       choices:
         - content: "With the command `node --inspect-brk myscript.js`"
           isCorrect: false
