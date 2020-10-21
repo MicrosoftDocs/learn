@@ -30,7 +30,7 @@ static LP_TIMER measureSensorTimer = {
 
 ### Reading telemetry
 
-The following is the implementation of the `MeasureSensorHandler` handler function. This functions reads telemetry, and then calls `Led2On()` to turn on `led2`.
+The following is the implementation of the `MeasureSensorHandler` handler function. This function reads telemetry, and then calls `Led2On()` to turn on `led2`.
 
 ```
 /// <summary>
