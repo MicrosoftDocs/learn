@@ -26,9 +26,9 @@ Some common attack detection scenarios enabled with Fusion:
 - **Lateral movement** – Significant number of impersonation actions occurred, after a suspicious sign-in to Azure AD account indicates compromised user&#39;s account and was used for malicious purposes.
 - **Ransomware** – After a suspicious sign-in to Azure AD account, unusual user behavior used to encrypt data can trigger ransomware execution alert
 
-Note:
+>[!Note]
 
-For more information on the Fusion technology in Azure Sentinel see the following page: [Advanced multistage attack detection in Azure Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/fusion)
+>For more information on the Fusion technology in Azure Sentinel see the following page: [Advanced multistage attack detection in Azure Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/fusion)
 
 ## Microsoft security
 
