@@ -100,7 +100,7 @@ The Fibonacci sequence is a suite of numbers that starts with the number 0 and 1
    dotnet run
    ```
 
-   :::image type="content" source="..media/run-modified-program.png" alt-text="Terminal window with modified program output":::
+   :::image type="content" source="../media/run-modified-program.png" alt-text="Terminal window with modified program output":::
 
 1. You'll see that the result, 3, is shown in the terminal output. Consulting your Fibonacci chart, you'll see that the result should have been 5. It's time to get familiar with the debugger and fix this program.
 
@@ -181,32 +181,14 @@ Every time your program enters a function, an entry is added to the call stack. 
 It's useful to find the source of an exception. If you have an unexpected crash in your program, you'll often see something like this in the console:
 
 ```text
-/Users/learn/nodejs/index.js:22
-  return value.toFixed(2);
-               ^
-TypeError: Cannot read property 'toFixed' of undefined
-    at formatValueForDisplay (/Users/learn/nodejs/index.js:22:16)
-    at printForeignValues (/Users/learn/nodejs/index.js:31:28)
-    at Object.<anonymous> (/Users/learn/nodejs/index.js:39:1)
-    at Module._compile (internal/modules/cjs/loader.js:956:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
-    at Module.load (internal/modules/cjs/loader.js:812:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
-    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
-    at internal/main/run_main_module.js:17:11
+Unhandled exception. System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at OrderProcessor.OrderQueue.ProcessNewOrders(String[] orderIds) in C:\Users\Repos\OrderProcessor\OrderQueue.cs:line 12
+   at OrderProcessor.Program.Main(String[] args) in C:\Users\Repos\OrderProcessor\Program.cs:line 9
 ```
 
 The group of `at [...]` lines under the error message is called a *stack trace*. The stack trace gives the name and origin of every function that was called before ending up with the exception. It can be a bit difficult to decipher though, because it also includes internal functions from the .NET runtime.
 
 That's where the Visual Studio Code **Call stack** panel comes in handy. It filters out unwanted information to show you only the relevant functions from your own code by default. You then can unwind this call stack to find out where the exception originated from.
-
-To help you even more, you can select the **Restart frame** button that appears when you hover a function name in the stack. It will "rewind" the execution back to the beginning of that function by actually restarting your program up to that point.
-
-:::image source="../media/restart-frame.png" alt-text="Screenshot of the Restart frame button in the Visual Studio Code call stack panel.":::
-
-### View loaded script files
-
-This panel displays all the JavaScript files that have been loaded so far. In large projects, sometimes it can be useful to check which file the current code is executing from.
 
 ### Breakpoints
 
