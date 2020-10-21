@@ -152,7 +152,7 @@ Now, you'll try to open a Secure Shell (SSH) session to each of your virtual mac
 
    You'll get the same connection failure message.
 
-Remember that the default rules deny all inbound traffic into a virtual network, unless this traffic is coming from another virtual network. The **Deny All Inbound** rule blocked the inbound SSH connections you just attempted.
+Remember that the default rules deny all inbound traffic into a virtual network, unless this traffic is coming from the same virtual network. The **Deny All Inbound** rule blocked the inbound SSH connections you just attempted.
 
 **Inbound**
 
