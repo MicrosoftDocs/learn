@@ -2,8 +2,8 @@
 uid: learn.azure.analyze-data-in-sentinel.5-create-rule-from-wizard
 metadata:
   title: Create an analytics rule from wizard
-  description: TODO
-  ms.date: TODO
+  description: Create an analytics rule from wizard
+  ms.date: 10/21/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -15,20 +15,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "You want to configure a new KQL code to detect suspicios activity from Azure Activity Logs. In chich section you can ented your custom KQL code?"
     choices:
-    - content: "Answer 1"
+    - content: "Set rule logic"
+      isCorrect: true
+      explanation: "In the Set rule logic section, you can define the detection method by specifying KQL code that will run against the Azure Sentinel workspace."
+    - content: "Incident Settings"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "The Incident settings page can create an Incident from the alerts that are triggered by the analytic rule."
+    - content: "Automated response"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
-      isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "The Automated Response section allows you to select a playbook to run automatically when the alert is generated."
   - content: "Question 2"
     choices:
     - content: "Answer 1"
