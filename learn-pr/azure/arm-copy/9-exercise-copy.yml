@@ -1,5 +1,4 @@
-### YamlMime:ModuleUnit
-uid: learn.arm-copy.3-exercise-copy
+uid: learn.arm-copy.9-exercise-copy
 title: Exercise - Use the copy element to deploy less repetitive templates
 metadata:
   title: Exercise - Use the copy element to deploy less repetitive templates
@@ -11,4 +10,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-exercise-copy.md)]
+  [!include[](includes/9-exercise-copy.md)]

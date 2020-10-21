@@ -1,0 +1,1 @@
+Exercise, condition, pass a storage account name and conditional param 

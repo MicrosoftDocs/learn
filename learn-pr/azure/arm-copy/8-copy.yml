@@ -1,9 +1,9 @@
-### YamlMime:ModuleUnit
-uid: learn.arm-copy.2-copy
+uid: learn.arm-copy.8-copy
 title: Handle template iterations with the copy element construct
 metadata:
   title: Handle template iterations with the copy element construct
-  description: A great way to manage repetitive code is by using the copy element. It allows you to express repeating pattern with very little code. 
+  description: A great way to manage repetitive code is by using the copy element.
+    It allows you to express repeating pattern with very little code.
   author: softchris
   ms.author: chnoring
   ms.date: 10/12/2020
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-copy.md)]
+  [!include[](includes/8-copy.md)]

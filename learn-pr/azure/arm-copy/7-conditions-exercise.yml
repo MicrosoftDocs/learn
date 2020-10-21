@@ -1,5 +1,4 @@
-### YamlMime:ModuleUnit
-uid: learn.arm-copy.5-conditions-exercise
+uid: learn.arm-copy.7-conditions-exercise
 title: Exercise - Conditions and deployment order
 metadata:
   title: Exercise - Conditions and deployment order
@@ -11,4 +10,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-conditions-exercise.md)]
+  [!include[](includes/7-conditions-exercise.md)]

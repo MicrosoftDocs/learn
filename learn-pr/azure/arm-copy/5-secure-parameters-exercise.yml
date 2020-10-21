@@ -1,5 +1,4 @@
-### YamlMime:ModuleUnit
-uid: learn.arm-copy.7-secure-parameters-exercise
+uid: learn.arm-copy.5-secure-parameters-exercise
 title: Exercise - Secure parameters
 metadata:
   title: Exercise - Secure parameters
@@ -11,4 +10,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-secure-parameters-exercise.md)]
+  [!include[](includes/5-secure-parameters-exercise.md)]
