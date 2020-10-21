@@ -6,28 +6,11 @@ We'll use a feature flag library for ASP.NET Core named **Feature Management**. 
 
 In this exercise, you will:
 
-- Create an Azure Container Registry (ACR) instance.
 - Review some "infrastructure" components for feature flags.
 - Make the discount coupon feature configurable.
 - Deploy the SPA to your AKS cluster.
 - Create an App Configuration store in your Azure account.
 - Wire up eShopOnContainers to the App Configuration store.
-
-## Create an ACR instance
-
-We'll begin by setting up an ACR instance to deploy the updated microservice image to AKS. AKS will pull the initial app images from the initial public repository and the updated image from a private ACR.
-
-To create the ACR, just run the following command from folder *deploy/k8s*:
-
-```bash
-./create-acr.sh
-```
-
-The script above creates the ACR and grants permission to AKS so it can pull images from the ACR.
-
-You should get an output similar to this:
-
-![Output from the create-acr script.](media/create-acr.png)
 
 ## Review some "infrastructure" feature flag components
 
