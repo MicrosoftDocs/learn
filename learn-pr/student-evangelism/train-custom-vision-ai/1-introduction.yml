@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.train-custom-vision-ai.1-introduction
 metadata:
   title: Introduction
-  description: Introduction to using Custom Vision Service to identify Bungee in images from Over the Moon
+  description: Introduction to using the Custom Vision service to identify Bungee in images from *Over the Moon*.
   ms.date: 10/15/2020
   author: sguthals
   ms.author: shanama 

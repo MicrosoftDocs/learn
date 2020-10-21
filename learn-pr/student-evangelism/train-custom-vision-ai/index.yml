@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.train-custom-vision-ai
 metadata:
-  title: Use AI to recognize objects in images by using Azure Custom Vision services
-  description: Use the Azure Custom Vision service to analyze images of animals, like Bungee, without ever writing code.
+  title: Use AI to recognize objects in images by using the Custom Vision service
+  description: Use the Custom Vision service to analyze images of animals, like Bungee, without ever writing code.
   ms.date: 10/15/2020
   author: sguthals
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Use AI to recognize objects in images by using Azure Custom Vision services
-summary: Use the Azure Custom Vision service to analyze images of animals, like Bungee, without ever writing code.
+title: Use AI to recognize objects in images by using the Custom Vision service
+summary: Use the Custom Vision service to analyze images of animals, like Bungee, without ever writing code.
 abstract:  |
   In this module, you will:
-  - Create a good dataset of images for training AIs
-  - Train a custom vision AI on a particular animal
-  - Test the model you trained
-  - Ensure ethical practices throughout AI development
+  - Create a good dataset of images for training AI.
+  - Train a Custom Vision AI on a particular animal.
+  - Test the model you trained.
+  - Ensure ethical practices throughout AI development.
 prerequisites: | 
   None
 iconUrl: /learn/achievements/student-evangelism/train-custom-vision-ai.svg

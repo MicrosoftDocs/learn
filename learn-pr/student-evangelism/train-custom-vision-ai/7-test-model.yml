@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.train-custom-vision-ai.7-test-model
 metadata:
   title: Test and iterate on Custom Vision training
-  description: This unit describes the iterative test-train process for Custom Vision services.
+  description: This unit describes the iterative test-train process for the Custom Vision service.
   ms.date: 10/15/2020
   author: sguthals
   ms.author: shanama 
