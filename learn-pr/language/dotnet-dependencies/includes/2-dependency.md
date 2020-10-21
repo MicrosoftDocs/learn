@@ -48,7 +48,7 @@ Packages might be located in many different places. Some of these sources might 
 - **Registries**. An example of a registry might be a global registry like the NuGet.org registry. You can host your own registries that can be either private or public. Services such as GitHub and Azure DevOps make private registries available.
 - **Files**. You can install a package from a local folder. Installation from a package is common when you're trying to develop your own .NET libraries and want to test the package locally or for some reason don't want to use a registry.
 
-:::image source="../media/inuget-roles.png" alt-text="elationship between package creators, package hosts, and package consumers":::
+:::image source="../media/nuget-roles.png" alt-text="Diagram illustrating the relationship between package creators, package hosts, and package consumers.":::
   
 ### The NuGet registry and dotnet tool
 
