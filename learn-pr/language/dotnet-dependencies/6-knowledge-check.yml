@@ -47,7 +47,7 @@ quiz:
           explanation: "This answer is incorrect. This code will always update the dependency to the latest possible version."
         - content: "Locate the entry in the project file and set the entry to look like this one: `<PackageReference Include=\"<package>\" Version=\"2.*\"/>`"
           isCorrect: false
-          explanation: "This answer is incorrect. This code will always update the dependency to the latest Minor version."
+          explanation: "This code will always update the dependency to the latest Minor version."
         - content: "Locate the entry in the project file and set the entry to look like this one: `<PackageReference Include=\"<package>\" Version=\"2.7.*\"/>`"
           isCorrect: true
           explanation: "Setting the third value in the version to * will ensure that the library always uses the latest patch version."
