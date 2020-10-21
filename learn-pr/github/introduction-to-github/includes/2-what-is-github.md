@@ -2,7 +2,28 @@ Here, we discuss the key GitHub features you use on a daily basis to manage and 
 
 ## The GitHub Flow
 
-In addition to providing a platform for collaborative software development, GitHub also offers a prescribed workflow designed to optimize use of its various features. While this unit offers a cursory overview of important platform components, it is recommended that you first review [Understanding the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true). 
+In addition to providing a platform for collaborative software development, GitHub also offers a workflow designed to optimize use of its various features. While this unit offers a cursory overview of important platform components, it's recommended that you first review [Understanding the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true). 
+
+## Git and Github
+
+As you work with **Git** and **Github**, you may wonder about the difference between the two.
+
+**Git** is a distributed version control system (VCS) that allows multiple developers or other contributors to work on a project. It provides a way to work with one or more local branches and push them to a remote repository. Git is responsible for everything GitHub-related that happens locally on your computer. Key features provided by Git include:
+- Installed and used on your local machine
+- Handles version control 
+- Supports branching
+
+To learn more about **Git**, see [Using common Git commands](https://docs.github.com/en/free-pro-team@latest/github/using-git/using-common-git-commands).
+
+**Github** is a cloud platform that uses Git as its core technology. It simplifies the process of collaborating on projects and provides a website, command-line tools, and overall flow that allows developers and users to work together. Key features provided by Github include:
+- Issues
+- Notifications
+- Branches
+- Commits
+- Labels
+- Forks
+
+To learn more about **Github**, see [Getting started with Github](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github).
 
 ## Issues
 
@@ -38,7 +59,7 @@ To learn more about GitHub commits, see [Committing and reviewing changes to you
 
 ## Pull Requests
 
-A **pull request** is the mechanism used to signal that the commits from one branch are ready to be merged into another branch. During creation, the developer will often request one or more reviewers who are in a position to verify the code and approve the merge. These reviewers have the opportunity to comment on changes, add their own, or use the pull request itself for further discussion. Once the changes have been approved (if approval is required in the project), then the pull request's source branch (the compare branch) may be merged in to the base branch. 
+A **pull request** is the mechanism used to signal that the commits from one branch are ready to be merged into another branch. The developer submitting the **pull request** will often request one or more reviewers to verify the code and approve the merge. These reviewers have the opportunity to comment on changes, add their own, or use the pull request itself for further discussion. Once the changes have been approved (if approval is required), the pull request's source branch (the compare branch) may be merged in to the base branch. 
 
 :::image type="content" source="../media/2-pull-request.png" alt-text="GitHub pull request" border="false":::
 
@@ -66,9 +87,9 @@ To learn more about Github labels see [About labels](https://docs.github.com/en/
 Github provides multiple ways to copy a repository so that you can work on it.
 
 1. **Cloning a Repository** - Cloning a repository will make a copy of the repository and its history on your local machine. If you have write access to the repository you can push changes from your local machine to the remote repository (called the **origin**) as they're completed. To clone a repository you can use the [`git clone [url]`](https://docs.github.com/en/free-pro-team@latest/github/using-git/getting-changes-from-a-remote-repository#cloning-a-repository) command or the Github CLI's [`gh repo clone [url]`](https://cli.github.com/manual/gh_repo_clone) command.
-1. **Forking a Repository** - **Forking** a repository makes a copy of the repository in your Github account. The parent repository is referred to as the **upstream** whereas your forked copy is referred to as the **origin**. Once you've forked a repository into your Github account you can **clone** it to your local machine. Forking allows you to freely make changes to a project without affecting the original **upstream** repository. To contribute changes back to the **upstream** repository you create a **pull request** from your forked repository. You can also run `git` commands to ensure that your local copy stays synced with the **upstream** repository.
+1. **Forking a Repository** - **Forking** a repository makes a copy of the repository in your Github account. The parent repository is referred to as the **upstream** while your forked copy is referred to as the **origin**. Once you've forked a repository into your Github account you can **clone** it to your local machine. Forking allows you to freely make changes to a project without affecting the original **upstream** repository. To contribute changes back to the **upstream** repository you create a **pull request** from your forked repository. You can also run `git` commands to ensure that your local copy stays synced with the **upstream** repository.
 
-When would you clone a repository versus fork a repository? If you're working with a repository and have write access you can clone to your local machine, make changes, and push your changes directly to the **origin** repository. 
+When would you clone a repository versus fork a repository? If you're working with a repository and have write access you can clone it to your local machine. From there you can make modifications and push your changes directly to the **origin** repository.
 
 If you need to work with a repository created by another owner such as `github/example` and don't have write access, you can fork the repository into your Github account, and then clone the fork to your local machine. To see this visually, let's assume that your Github account is called `githubtraining` for this example. Using the Github website you can fork `githubtraining` into your account. From there you can clone the forked version of the repository to your local machine. These steps are shown in the following image.
 
@@ -79,13 +100,6 @@ Changes can be made to your local copy of `githubtraining/example` and then push
 :::image type="content" source="../media/2-fork-pr.png" alt-text="Github pull request from fork" border="true":::
 
 To learn more, see [Fork a repo](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo).
-
-## Git and Github
-
-As you work with **Git** and **Github** you may wonder about the difference between the two.
-
-- **Git** is a distributed version control system (VCS) that allows multiple developers to work on a project. It provides a way to work with one or more local branches and push them to a remote repository. Git is responsible for everything GitHub-related that happens locally on your computer.
-- **Github** is a cloud platform that uses Git as its core technology. It simplifies the process of collaborating on projects and provides a flow that allows developers and users to work with issues, notifications, pull requests, branches, forks, and more. 
 
 ## GitHub Pages
 
