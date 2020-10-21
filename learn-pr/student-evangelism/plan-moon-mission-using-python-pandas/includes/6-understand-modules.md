@@ -1,4 +1,4 @@
-Congratulations! You now have an picture of each of the six Apollo missions to land on the Moon that contains information about the samples each mission collected, and the weights of each of the Lunar and Command modules used. 
+Congratulations! You now have a picture of each of the six Apollo missions that landed on the Moon. This picture contains information about the samples that each mission collected and the weights of each lunar and command module. 
 
 |   | Mission | Sample Weight(kg) | Weight Diff | Lunar Module (LM) | LM Mass (kg) | LM Mass Diff | Command Module (CM) | CM Mass (kg) | CM Mass Diff | Total Weight (kg) | Total Weight Diff |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -11,20 +11,20 @@ Congratulations! You now have an picture of each of the six Apollo missions to l
 
 But what does it mean?
 
-## Comparing data
+## Compare the data
 
-The interesting thing about making predictions about how much sample the Artemis missions can each bring back is that we don't yet know the full specs of the spacecrafts that the Artemis plans on using. Using some information from the [NASA Factsheet on the Space Launch System (SLS) and Orion Modules](https://www.nasa.gov/sites/default/files/atoms/files/0080_sls_fact_sheet_sept2020_09082020_final_0.pdf), we have have data on weights and on payloads.
+The interesting thing about predicting how much sample each Artemis mission can bring back is that we don't yet know the full specs of the spacecraft that the Artemis plans on using. Using some information from the [NASA Factsheet on the Space Launch System (SLS) and Orion Modules](https://www.nasa.gov/sites/default/files/atoms/files/0080_sls_fact_sheet_sept2020_09082020_final_0.pdf), we have have data on weights and payloads.
 
-Payload is basically the total amount of weight that the rocket is able to get through our atmosphere and into Space. So the likelihood of the payload being a more accurate number than the exact weights of each module is high, because deciding the payload will likely effect each of the other design decisions.
+A *payload* is basically the total amount of weight that a rocket can get up through our atmosphere and into space. So the likelihood that the payload number is more accurate than the exact weights of each module is high, because deciding the payload will likely affect each of the other design decisions.
 
-We know that the Saturn V payload was 43,500kg, while the weights of the modules varied mission to mission. So we can use:
-- Saturn V Payload
-- Mission Sample Weight
-- Mission Module Weight
-to determine ratios that will allow us to make predictions about the Artemis missions. 
+We know that the Saturn V payload was 43,500 kg, and the weights of the modules varied from mission to mission. So, to determine the ratios that will allow us to make predictions about the Artemis missions, we can use:
+- Saturn V payload
+- Mission sample weight
+- Mission module weight
+ 
 
 ```python
-# Sample to Weight Ratio
+# Sample-to-weight ratio
 saturnVPayload = 43500
 missions['Crewed Area : Payload'] = missions['Total Weight (kg)'] / saturnVPayload
 missions['Sample : Crewed Area'] = missions['Sample Weight(kg)'] / missions['Total Weight (kg)']
@@ -42,11 +42,12 @@ missions
 | 5 | Apollo17 | 109.44402 | 16.98140 | Antares (LM-8) | 15103 | -1342.0 | Casper (CM-113) | 5758 | 198.0 | 20861 | -1144.0 | 0.479563 | 0.005246 | 0.002516 |
 
 > [!NOTE]
-> We're calling the two modules "Crewed Area" in the dataframe because those are the parts of the space craft where the crew can be, and likely where the samples would also reside.
+> We're calling the two modules *crewed area* in the dataframe because those are the parts of the spacecraft where the crew can be, and likely where the samples would also reside.
 
 ## Save the ratios
 
-We can then use the `mean()` function to take the average of all of those ratios across all of the missions.
+We can then use the `mean()` function to take the average of all those ratios across all the missions.
+
 ```python
 crewedArea_payload_ratio = missions['Crewed Area : Payload'].mean()
 sample_crewedArea_ratio = missions['Sample : Crewed Area'].mean()
@@ -62,4 +63,4 @@ print(sample_payload_ratio)
 0.0014369195019157093
 ```
 
-These ratios we can then use to predict the Artemis capacity for samples.
+We can then use these ratios to predict the Artemis capacity for samples.

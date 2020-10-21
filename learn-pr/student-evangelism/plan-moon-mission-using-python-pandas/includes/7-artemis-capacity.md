@@ -1,12 +1,12 @@
-As mentioned in the previous unit, we can use the [NASA Factsheet on the Space Launch System (SLS) and Orion Modules](https://www.nasa.gov/sites/default/files/atoms/files/0080_sls_fact_sheet_sept2020_09082020_final_0.pdf) to gather estimated data on the rockets and modules that will be used in the Artemis Program.
+As mentioned in the preceding unit, we can use the [NASA Factsheet on the Space Launch System (SLS) and Orion Modules](https://www.nasa.gov/sites/default/files/atoms/files/0080_sls_fact_sheet_sept2020_09082020_final_0.pdf) to gather estimated data on the rockets and modules that will be used in the Artemis program.
 
-As a reminder, the [Artemis Program](https://www.nasa.gov/specials/artemis/) is NASA's second set of missions to land humans on the surface of the Moon. The program will launch in 2024 and will not only send the next pair of humans, but also the first woman to step foot on the Moon. The preparation for this mission is even bigger than focusing on a Moon landing, it will also provide space for commercial payload on the ship and is the first step along the [Moon to Mars program](https://www.nasa.gov/topics/moon-to-mars). So, while the Artemis missions will likely bring home additional samples, there are other goals that might impact the amount of capacity there is to do so. 
+As a reminder, the [Artemis program](https://www.nasa.gov/specials/artemis/) is NASA's second set of missions to land humans on the surface of the Moon. The program will launch in 2024 and will send not only the next pair of humans, but also the first woman to set foot on the Moon. The preparation for this mission is even bigger than focusing on a Moon landing. It will also provide space for a commercial payload on the ship and is the first step along the [Moon to Mars program](https://www.nasa.gov/topics/moon-to-mars). So, while the Artemis missions will likely bring home additional samples, there are other goals that might affect the amount of capacity that's required to do so. 
 
-## Creating an Artemis Mission Dataframe
+## Creating an Artemis mission dataframe
 
-While we don't have all of the details about the Artemis mission, we do know that there are currently three iterations of the rocket that will be cycled through for each mission, and each one will have a version meant to sustain a crew and one meant only for cargo. For the purposes of this module, we will focus only on the three meant to house crew to be more aligned with the Apollo missions. We also know that the expected payload of the Space Launch System (SLS) is expected to grow with each iteration, but that the current weight of Orion (the command and lunar modules combined) has one estimated weight today. 
+We don't have all the details about the Artemis mission, but we do know currently that three iterations of the rocket will be cycled through for each mission. Each rocket will have one version meant to sustain a crew and one meant only for cargo. For the purposes of this module, we will focus only on the three rockets meant to house crew, to be more aligned with the Apollo missions. We also know that the expected payload of the Space Launch System (SLS) is expected to grow with each iteration, but that the current weight of Orion (the command and lunar modules combined) has one estimated weight today. 
 
-Again, we will call the command and lunar modules the "crewed area", and we can create a dataframe with the information we have about the three crewed missions:
+Again, we will call the command and lunar modules the *crewed area*, and we can create a dataframe with the information we have about the three crewed missions:
 
 ```python
 artemis_crewedArea = 26520
@@ -36,7 +36,7 @@ artemis_mission
 | 1 | artemis1b | 26520 | 37965 | 76.766734 | 54.552649 |
 | 2 | artemis2 | 26520 | 42955 | 76.766734 | 61.722877 |
 
-Finally, we can get the average between the two predictions:
+Finally, we can get the average of the two predictions:
 
 ```python
 artemis_mission['Estimated Sample Weight (kg)'] = (artemis_mission['Sample Weight from Payload (kg)'] + artemis_mission['Sample Weight from Total (kg)'])/2
@@ -49,6 +49,6 @@ artemis_mission
 | 1 | artemis1b | 26520 | 37965 | 76.766734 | 54.552649 | 65.659691 |
 | 2 | artemis2 | 26520 | 42955 | 76.766734 | 61.722877 | 69.244806 |
 
-We can see now, that the Artemis missions can likely return 57.77kg, 65.65kg, and 69.24kg respectively.
+We can see now that the three Artemis missions can likely return 57.77 kg, 65.65 kg, and 69.24 kg, respectively.
 
-Now the questions is - what kinds of rocks should they prioritize?
+Now the question is, what kinds of rocks should they prioritize?

@@ -1,37 +1,41 @@
-Now it's time to get data from the [Lunar Sample and Photo Catalog](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm) into Visual Studio Code so that you can use Python to quickly gain insight from the thousands of samples collected across the six Apollo missions to have landed on the Moon. 
+Now it's time to get data from the [Lunar Sample and Photo Catalog](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm) into Visual Studio Code. By doing so, you can use Python to quickly gain insight from the thousands of samples collected across the six Apollo missions that have landed on the Moon. 
 
 ## Set up your local environment
 
-This module will guide you cleansing and manipulating data related to Moon rock samples. To do this, you will need to have some kind of Python notebook development environment setup. If you haven't done this before, we recommend the following steps to setup your local environment. The easiest way to do this is to follow the [Visual Studio Code data science setup docs](https://code.visualstudio.com/docs/python/data-science-tutorial). The three things you will need are:
+This module will show you how to cleanse and manipulate data related to moon rock samples. To do this, you need to set up some kind of Python notebook development environment. If you haven't done this before, we recommend following the steps we present here. The easiest way to do this is to follow the [Visual Studio Code data science setup docs](https://code.visualstudio.com/docs/python/data-science-tutorial). 
+
+The three things you need to set up first are:
 - Visual Studio Code
 - Python
 - Miniconda
 
 > [!NOTE]
-> If you have already completed one of the Over the Moon Learn modules, you can open your "over-the-moon" folder in Visual Studio Code and skip to step 3. 
+> If you have already completed one of the *Over the Moon* Learn modules, you can open your *over-the-moon* folder in Visual Studio Code and skip to step 3. 
 
-Once you have everything installed, follow these steps to get your environment ready:
-1. Create a folder called "over-the-moon". 
-2. Open the folder in Visual Studio Code
-3. Create a folder inside that folder called "sample-return"
-4. Create a folder inside that folder called "data"
-5. Create a file called "sample-return.ipynb" in the "sample-return" folder
-6. Open the sample-return.ipynb file in Visual Studio Code
-7. Make sure you are using the conda environment that you setup above
+After you have installed the three previously listed items, follow these steps to get your environment ready:
+1. Create a folder called *over-the-moon*. 
+2. Open the folder in Visual Studio Code.
+3. Create a folder inside that folder called *sample-return*.
+4. Create a folder inside that folder called *data*.
+5. Create a file called *sample-return.ipynb* in the *sample-return* folder.
+6. Open the *sample-return.ipynb* file in Visual Studio Code.
+
+> [!NOTE]
+> Make sure you are using the conda environment that you set up earlier.
 
 Your environment should look like this: 
  
-![Local Visual Studio Code environment example](../media/vscode-sample-return.png)
+![Local Visual Studio Code environment example.](../media/vscode-sample-return.png)
 
 ## Collect and import data
 
-The data that will be explored during this module is a file full of all of the samples collected from the six Apollo missions to land on the Moon. The [rocksamples.csv]() file was created using information from the [Lunar Sample and Photo Catalog](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm). 
+The data that you'll explore during this module is a file full of all the samples collected from the six Apollo missions that landed on the Moon. The [*rocksamples.csv*]() file was created using information from the [Lunar Sample and Photo Catalog](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm). 
 
-Download the [rocksamples.csv]() and save it in your data folder, your Visual Studio Code environment should look like this:
+Download the [*rocksamples.csv*]() file and save it to your data folder. Your Visual Studio Code environment should look like this:
 
-![Local environment folder structure with data](../media/vscode-data.png)
+![Local environment folder structure with data.](../media/vscode-data.png)
 
-In the first Python cell in your sample-return.ipynb file, import Pandas and read the data file in as a dataframe:
+In the first Python cell in your *sample-return.ipynb* file, import pandas and read the data file in it as a dataframe:
 
 ```python
 import pandas as pd 
@@ -39,7 +43,7 @@ import pandas as pd
 rock_samples = pd.read_csv('data/rocksamples.csv') 
 ```
 
-To make sure everything loaded in correctly, you can print the top five lines of the new dataframe with `head()` and the information summary with `info()`:
+To make sure that everything is loaded in correctly, print the top five lines of the new dataframe by using `head()` and the information summary by using `info()`:
 
 ```python
 rock_samples.head()
@@ -58,7 +62,7 @@ rock_samples.info()
 ```
 
 > [!NOTE]
-> Output is truncated to only include the table summary of data
+> The output is truncated to include only the table summary of data.
 
 ```output
  #   Column       Non-Null Count  Dtype  
@@ -71,10 +75,10 @@ rock_samples.info()
  5   Pristine(%)  2229 non-null   float64
 ```
 
-From this, we can see that there are 2,229 samples that were collected from the Apollo missions. Looking at a sample of the data we can see that each row contains:
-- *ID* - The unique ID used to keep track of the sample at NASA
-- *Mission* - The mission responsible for retrieving the sample
-- *Type* - The type of sample (type of rock or other classification)
-- *Subtype* - A more specific type classification
-- *Weight(g)* - The original weight of the sample in grams
-- *Pristing(%)* - The percentage of the sample that remains (some gets used up during research)
+From this output, we can see that 2,229 samples were collected from the Apollo missions. Looking at a sample of the data, we can see that each row contains:
+- *ID* - The unique ID used to keep track of the sample at NASA.
+- *Mission* - The mission responsible for retrieving the sample.
+- *Type* - The type of sample (type of rock or other classification).
+- *Subtype* - A more specific type classification.
+- *Weight(g)* - The original weight of the sample, in grams.
+- *Pristine(%)* - The percentage of the sample that remains (some sample is used up during research).
