@@ -71,7 +71,7 @@ In the **Alert grouping** section, you can reduce the noise from multiple alerts
 - Grouping all alerts triggered by this rule into a single incident
 - Grouping alerts into a single incident if the selected entities match: - for example source or target IP addresses.
 
-R **e-open closed matching incidents** section can open again previously closed incident, if another alert is generated that should belong to that incident.
+**Re-open closed matching incidents** section can open again previously closed incident, if another alert is generated that should belong to that incident.
 
 ## Automated response
 
