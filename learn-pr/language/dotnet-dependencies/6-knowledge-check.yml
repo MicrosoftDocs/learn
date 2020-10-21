@@ -33,7 +33,7 @@ quiz:
       choices:
         - content: "1.1.1 changes to 1.2.0"
           isCorrect: true
-          explanation: "That is correct, the middle number represents the Minor version. A change to this number means that features have been added. Your code should still work."
+          explanation: "The middle number represents the Minor version. A change to this number means that features have been added. Your code should still work."
         - content: "1.0.1 changes to 1.0.2"
           isCorrect: false
           explanation: "That is incorrect, this is the Patch version. A change to this number means that a change has been applied that fixes something in the code that should have worked."
