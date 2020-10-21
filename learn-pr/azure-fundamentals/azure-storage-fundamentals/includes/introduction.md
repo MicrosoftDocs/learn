@@ -16,7 +16,7 @@ After completing this module, you'll be able to describe the benefits and usage 
 
 - Azure Blob Storage
 - Azure Disk Storage
-- Azure File Storage
+- Azure Files
 - Azure Storage tiers
 
 ## Prerequisites
