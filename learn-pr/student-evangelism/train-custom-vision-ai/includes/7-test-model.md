@@ -16,17 +16,17 @@ This was a pretty easy test. The images we used to train the AI were only of Bun
 
 ![Testing the AI on Bungee in a more complicated image.](../media/bungee-test-fail.png)
 
-We can see that the AI didn't find Bungee *at all* in this image. Admittedly, it's a little difficult for even me to see her hiding next to Jack Rabbit. No worries though! We can iterate!
+We can see that the AI didn't find Bungee *at all* in this image. Admittedly, it's a little difficult even for me to see her hiding next to Jack Rabbit. No worries though! We can iterate!
 
 ## Train with more images
 
-Now is the time to train with more images. Add more images that include the object you're looking for, but also include some images that don't have the object at all. Better yet, find images where there is an object that looks similar to your object but isn't it. For example, we can train with more images of Bungee from the film and also create a "Not Bungee" tag and tag other characters that aren't Bungee.
+Now is the time to train with more images. Add more images that include the object you're looking for, but also include some images that don't have the object at all. Better yet, find images where there is an object that looks similar to your object but isn't it. For example, we can train with more images of Bungee from the film and also create a **Not Bungee** tag and tag other characters that aren't Bungee.
 
 ![Screenshot showing the tagging for objects in images that are not Bungee.](../media/not-bungee.png)
 
 Remember, you have to have at least 15 images per tag to train the AI.
 
-Select the **Training** button at the top right of the Custom Vision portal, and select **Quick Training** again.
+Select the **Training** button in the upper right of the Custom Vision portal, and select **Quick Training** again.
 
 ## Retest your AI
 

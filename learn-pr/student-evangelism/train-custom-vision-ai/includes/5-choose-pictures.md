@@ -8,7 +8,7 @@ Now comes a tricky part. It's tricky because it requires us humans to do some th
 - Size
 - Type (if that applies to your object)
 
-For this module, the example will be using images of Bungee from the *Over the Moon* film. You will be choosing your own images. If you want, you can even take your own pictures. Find your favorite pet or stuffed animal and take about 30 pictures of it. Keep in mind everything that's listed in the preceding list.
+For this module, the example will be using images of Bungee from the film *Over the Moon*. You will be choosing your own images. If you want, you can even take your own pictures. Find your favorite pet or stuffed animal and take about 30 pictures of it. Keep in mind everything that's listed in the preceding list.
 
 Other things to keep in mind when you are taking or finding these images:
 

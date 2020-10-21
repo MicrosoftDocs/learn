@@ -14,7 +14,7 @@ The best way to experiment with Azure is to create a resource group that will be
 
 To get started creating a resource group, follow these steps:
 
-1. Go to [https://portal.azure.com/](https://portal.azure.com/).
+1. Go to the [Azure portal](https://portal.azure.com/).
 1. Sign in to Azure if you're not signed in already.
 1. In the top search bar, search for **Resource Group**.
 1. Select **Add**.
@@ -32,7 +32,7 @@ The only resource you will need for this module is a Custom Vision resource. Azu
 
 To create a Custom Vision resource, follow these steps:
 
-1. From your "over-the-moon" resource group, select **Add**.
+1. From your **over-the-moon** resource group, select **Add**.
 1. Search for **Custom Vision**.
 1. Select **Create**.
 1. Select your subscription, give your resource a name, select the region closest to you for both training and predicting, and select the free tier for both training and predicting.
@@ -47,7 +47,7 @@ If you ever lose your Custom Vision resource, you can find it by entering **Reso
 
 ## Create a project on the Custom Vision portal
 
-Now that you have the Azure resources to run the AI, we can create a project on the Custom Vision portal. Go to [https://www.customvision.ai/](https://www.customvision.ai/), and sign in with your same Azure credentials. If this is your first time visiting, you might need to accept the Terms of Service.
+Now that you have the Azure resources to run the AI, we can create a project on the Custom Vision portal. Go to [Custom Vision](https://www.customvision.ai/), and sign in with your same Azure credentials. If this is your first time visiting, you might need to accept the Terms of Service.
 
 To get started with your project, follow these steps:
 
