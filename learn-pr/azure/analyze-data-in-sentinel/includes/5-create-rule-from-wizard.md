@@ -26,18 +26,12 @@ In the **Set rule logic** section, you can define the detection method by specif
 You are entering the KQL query string in the **Rule query** and then in the **Results preview** area to the right, you can see the results that query will generate. The Results preview section will help you to determine that your query return expected results.
 
 Here&#39;s a sample query that would alert you when an anomalous number of resources is created in Azure Activity.
-
-'''Kusto
-
+```kusto
 AzureActivity
-
 | where OperationName == &quot;Create or Update Virtual Machine&quot;or OperationName ==&quot;Create Deployment&quot;
-
 | where ActivityStatus == &quot;Succeeded&quot;
-
 | make-seriesdcount(ResourceId)  default=0 on EventSubmissionTimestamp inrange(ago(7d), now(), 1d) by Caller
-
-'''
+```
 
 > [!**Tip**]
 
