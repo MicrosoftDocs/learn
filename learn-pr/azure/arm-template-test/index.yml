@@ -17,7 +17,7 @@ abstract: |
   - Preview what changes will happen before you deploy by using the what-if operation.
   - Validate your templates adherence to sound recommendations using ARM template test toolkit.
   - Implement domain specific rules for deployments that can be run by ARM template test toolkit.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/arm-template-test.svg
 levels:
   - intermediate
 roles:

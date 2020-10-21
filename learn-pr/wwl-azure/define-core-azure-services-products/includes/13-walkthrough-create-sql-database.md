@@ -82,7 +82,7 @@ In this task, we will configure the SQL server and run a SQL query.
 
     ![Screenshot of the SQL server page.](../media/sql-server-page.png)
 
-6. From the SQL server **Overview** blade, click **Show firewall settings**.
+6. From the SQL server **Overview** blade, click **Set server firewall**.
 
 7. Click **Add client IP** (top menu bar) to add the IP address referenced in the error. Be sure to **Save** your changes. 
 
