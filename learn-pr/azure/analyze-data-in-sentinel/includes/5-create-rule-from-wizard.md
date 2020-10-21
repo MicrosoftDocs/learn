@@ -11,8 +11,9 @@ Here is a summary of how to create a custom analytic rule.
 
 In the general section, you are required to provide the following inputs:
 
-| Name | Provide descriptive name to explain what type of suspicious activity the alert detects |
+|||
 | --- | --- |
+| Name | Provide descriptive name to explain what type of suspicious activity the alert detects |
 | Description | A detailed description will help your security analysts to understand what the rule does |
 | Tactics | From the **Tactics** drop-down menu, you can choose among the categories of attacks to classify the rule following the MITRE tactics |
 | Severity | The **Severity** drop-down menu categorize the level of importance of the alert and you can choose from the following four options: High, Medium, Low, Informational |
