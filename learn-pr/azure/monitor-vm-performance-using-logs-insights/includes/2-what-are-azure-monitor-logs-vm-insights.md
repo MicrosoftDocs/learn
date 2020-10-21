@@ -11,7 +11,8 @@ There are a few different resources and services that complete the native monito
 Data collected by Azure Monitor is composed of metrics (Azure Monitor Metrics) and logs (Azure Monitor Logs). Azure Monitor Metrics are lightweight numerical values stored in a time-series database that can be used for near real time (NRT) alerting. Some examples of metrics captured include IOPS percentages and CPU cycles. As we covered earlier, Azure Monitor Logs collects and organizes log data from Azure resources. The major difference between Azure Monitor Metrics and Azure Monitor Logs surrounds the structure of data generated. Azure Monitor Metrics can only store numeric data using a specific structure, while Azure Monitor Logs can store a variety of data types, each using their own structure. Azure Monitor Logs can also store Azure Monitor Metric data as well.
 
 The following image shows how applications, resources, workloads, tenant data, and custom sources funnel into Azure Monitor (either metrics or logs). Once the data lives in metrics or logs, there are a number of different ways to visualize, analyze, respond, integrate, and view overall resource health.
-![Azure Monitor Diagram](https://docs.microsoft.com/azure/azure-monitor/media/overview/overview.png)
+
+:::image type="content" source="../media/2-azure-monitor-overview.png" alt-text="Diagram that shows Azure inputs to metrics and log data, along with the Azure Monitor tools you can use to consume data.":::
 
 ## But wait, there's **MORE** logging
 

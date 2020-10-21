@@ -1,29 +1,76 @@
+In the previous unit, recall that you need to explore Azure native monitoring tools for workloads being deployed in Azure. To further your knowledge, you'll need to know how to provision a Log Analytics workspace with the right permissions model and also need to onboard Virtual Machine Insights to complete the process.
 
-Follow these steps:
+In this unit, you'll:
 
-## Configure Analytics workspace and VM Insights
+1. Create a Log Analytics workspace.
+1. Check the permissions model for the environment you're supporting.
+1. Create two virtual machines and onboard both to Log Analytics plus Virtual Machine Insights.
 
-1. Log into Azure portal
+## Create and configure Log Analytics workspace
+
+1. Log into Azure portal with the account you used to activate the sandbox.
 
 1. At the top, select "All services." In the list of resources, type Log Analytics. As Log Analytics is typed in, the list will filter based upon input. Select Log Analytics workspaces.
 
-1. Provide a name for the new Log Analytics workspace. The name must be globally unique.
+![Create Workspace](https://docs.microsoft.com/azure/azure-monitor/learn/media/quick-create-workspace/azure-portal-01.png)
+
+1. Select Add. Provide a name for the new Log Analytics workspace. The name must be globally unique, but there are no capitalization rules like with a storage account.
 
 1. Select a subscription, resource group, and location.
 
-1. Once deployed, change to a resource-centric model.
+1. Leave the Pricing tier at "Per GB." This setting will be configured by default on all new Log Analytics workspaces.
 
-1. Deploy 2 VMs from portal and connect to Log Analytics workspace.
+![New Log Analytics workspace](https://docs.microsoft.com/azure/azure-monitor/learn/media/quick-create-workspace/create-loganalytics-workspace-02.png)
 
-1. After both VMs are connected to Log Analytics workspace, onboard both to VM Insights. Select "Insights" on the far left and select "Enable."
+4. Once deployed, select Properties underneath the General section of the Log Analytics workspace resource. By default, you should see Use resource or workspace permissions. This Access Control mode is the right configuration for your company.
 
-1. Once enabled, go into the "Insights" section of each VM underneath the Monitoring area. Onboarding VM Insights takes a few minutes.
+![Access Control mode](https://docs.microsoft.com/azure/azure-monitor/platform/media/manage-access/change-access-control-mode.png)
 
-1. Once the pane opens and onboarding is finished, select "Performance."
+## Set up your environment
+
+1. Sign in to the Azure portal.
+
+1. Select **Cloud Shell** from the menu bar in the upper right.
+
+1. Select **Bash**.
+
+1. Run the following command. Change the resource group name to be reflective of your sandbox environment.
+
+    ```bash
+    az vm create \
+      --resource-group [sandbox resource group name] \
+      --location westus \
+      --name SampleVM1 \
+      --image UbuntuLTS \
+      --admin-username azureuser \
+      --generate-ssh-keys \
+      --verbose
+    ```
+
+1. Run the command above once more, but change the virtual machine name to SampleVM2. This way you'll have two virtual machines to experiment with as you move on in the module.
+
+1. After both virtual machines are created, select the Log Analytics workspace resource you created earlier in this unit.
+
+1. Underneath Workspace Data Sources, select Virtual machines.
+
+1. Once the results display on the left, select SampleVM1. You should see the **Log Analytics connection status** for the virtual machine indicates that it is **Not connected**.
+
+[PLACEHOLDER - SCREEN SHOT - CONNECTED VS. NOT CONNECTED]
+
+1. Select **Connect** for both virtual machines. The agent will automatically install and be configured for your Log Analytics workspace. The process takes a few minutes, during which time the **Status** shows as **Connecting**. Once connected, the status will say **Connected**.
+
+1. Once both virtual machines are connected to your Log Analytics workspace, you'll need to onboard both to Virtual Machine Insights. Select each virtual machine from the portal. Select "Insights" on the far left and select "Enable." Onboarding Virtual Machine Insights takes a few minutes.
+
+[PLACEHOLDER - SCREEN SHOT - ENABLE VM INSIGHTS]
+
+1. Once enabled, go into the "Insights" section of each VM underneath the Monitoring area.
+
+1. Once the pane opens, select "Performance."
 
 1. Explore the different graphs for: Logical Disk Performance, CPU Utilization, Available Memory, Logical Disk IOPS, Logical Disk MB/s, Logical Disk Latency (ms), Max Logical Disk Used %, Bytes Sent Rate, and Bytes Received Rate.
+
+[PLACEHOLDER - SCREEN SHOT - GRAPHS]
 
 1. Experiment with different settings. Move from "Avg", to "Min", to "Max", and so on.
 
 1. Take note of how easy it's to drill into Log Events on the far right-hand side of the page.
-
