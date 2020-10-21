@@ -197,7 +197,7 @@ Applications on Azure Sphere are locked down by default. You must grant capabili
 
 Application capabilities include what hardware can be accessed, what internet services can be called (including Azure IoT Central and the Azure device provisioning service), and what inter-core communications are allowed.
 
-### Open the application manifest File
+### Open the application manifest file
 
 From Visual Studio Code, open the **app_manifest.json** file. The resources this application can access are limited to those listed in the **Capabilities** section.
 
