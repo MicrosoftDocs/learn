@@ -1,4 +1,4 @@
-Before continuing, it's important to establish what information you want to use to make a recommendation to the astronauts. In this case, the more publicly available information that could affect the amount of sample that is *possible* to return is the type of aircraft used. 
+Before you continue, it's important to establish what information you want to use to make a recommendation to the astronauts. In this case, the more publicly available information that could affect the amount of sample that is *possible* to return is the type of aircraft used. 
 
 ## Converting sample weight
 
@@ -64,7 +64,6 @@ missions = pd.merge(missions, sample_total_weight, on='Mission')
 missions.rename(columns={'Weight(kg)':'Sample Weight(kg)'}, inplace=True)
 missions
 ```
-
 |   | Mission | Sample Weight(kg) |
 |---|---------|-------------------|
 | 0 | Apollo11 | 21.55424 |
@@ -73,7 +72,6 @@ missions
 | 3 | Apollo15 | 75.39910 |
 | 4 | Apollo16 | 92.46262 |
 | 5 | Apollo17 | 109.44402 |
-<br>
 
 Let's break out this code a bit. The first line was `sample_total_weight = rock_samples.groupby('Mission')['Weight(kg)'].sum()`, which can be broken out as follows:
 - `rock_samples.groupby('Mission')` - This groups all the rows by the values in the **Mission** column.
