@@ -2,7 +2,7 @@
 
 .NET and its ecosystem use the word *dependency* a lot. A package dependency is a third-party library, a piece of reusable code that accomplishes something and can be added to your application. The third-party library is something your application *depends on* to function, hence the word *dependency*.
 
-The third-party library can be thought of as a package and stored in a registry. A package consists of one or more libraries that you can add into your application so you can take advantage of its features.
+The third-party library can be thought of as a package and stored in a repository. A package consists of one or more libraries that you can add into your application so you can take advantage of its features.
 
 We will focus on package dependencies, but know that a .NET project can have other types of dependencies including frameworks, analyzers, project references, and shared project dependencies along side packaged dependencies.
 
@@ -24,7 +24,7 @@ Before you install a library, you might want to inspect the dependencies it reli
 
 You can learn more about a package before installing it by going to `https://www.nuget.org/packages/<package name>`. This URL will take you to a detailed page for the package. Select the **Dependencies** dropdown to see how many packages and which packages it relies on to function.
 
-As for the listed dependencies, the number might not tell the whole truth. If you download a package, you might end up with a package dependency that contains thousands of packages. Why is that? Every package has a list of dependencies. To ensure you can use a package, all dependencies are crawled and downloaded when you run the `dotnet add package <package name>` command.
+As for the listed dependencies, the number might not tell the whole truth. If you download a package, you might end up with a package dependency that contains dozens of packages. Why is that? Every package has a list of dependencies. To ensure you can use a package, all dependencies are crawled and downloaded when you run the `dotnet add package <package name>` command.
 
 ## Install a package
 
@@ -45,7 +45,7 @@ Individual developers might use the global registry at NuGet.org to find and dow
 
 Packages might be located in many different places. Some of these sources might be publicly available. Some might be restricted and accessible only to employees of a specific company. Here are some places where packages might reside:
 
-- **Registries**. An example of a registry might be a global registry like the NuGet.org registry. You can host your own registries that can be either private or public. Services such as GitHub and Azure DevOps make private registries available.
+- **Package Sources**. An example of a registry might be a global registry like the NuGet.org registry. You can host your own registries that can be either private or public. Services such as GitHub and Azure DevOps make private registries available.
 - **Files**. You can install a package from a local folder. Installation from a package is common when you're trying to develop your own .NET libraries and want to test the package locally or for some reason don't want to use a registry.
 
 :::image source="../media/nuget-roles.png" alt-text="Diagram illustrating the relationship between package creators, package hosts, and package consumers.":::
@@ -76,7 +76,8 @@ If you want a detailed list of all commands, enter `dotnet --help` in the termin
 
 You use the `dotnet add package <dependency name>` command to install a normal dependency that's meant to be used as part of your application. 
 
-There are also packages that you can install *globally*. These packages are not meant to be imported into your project. For that reason, many global packages are CLI tools or templates. These *global* tools can be installed from a package repository as well. Tools can be installed using the `dotnet tool install <name of package>` command a template are installed with the `dotnet new -i <name of package>` command.
+> [!NOTE]
+> There are also packages that you can install *globally*. These packages are not meant to be imported into your project. For that reason, many global packages are CLI tools or templates. These *global* tools can be installed from a package repository as well. Tools can be installed using the `dotnet tool install <name of package>` command a template are installed with the `dotnet new -i <name of package>` command.
 
 ### After installation
 

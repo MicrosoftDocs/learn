@@ -8,11 +8,7 @@ There are some considerations that you should take into account before you try t
 
 ## Use semantic versioning
 
-There's an industry standard called *semantic versioning*. It's a system adopted by many companies and developers. If you intend to publish packages and push them to the NuGet registry, you should follow semantic versioning. It's expected. Even if you only download packages from the NuGet registry, you can expect these packages to follow semantic versioning.
-
-Changes to a package can introduce risk. Risk that a bug that could harm your business could be introduced. Risk that you might need to rewrite part of your code. Rewriting code takes time and costs money.  
-
-Semantic versioning is how you express the type of change that you or some other developer is introducing to a library. Semantic versioning works by ensuring a package has a version number and that the version number is divided up into these sections:
+There's an industry standard called *semantic versioning*. Semantic versioning is how you express the type of change that you or some other developer is introducing to a library. Semantic versioning works by ensuring a package has a version number and that the version number is divided up into these sections:
 
 - **Major version**. The leftmost number. For example, the 1 in 1.0.0. A change to this number means that you can expect breaking changes in code. You might need to rewrite part of your code.
 - **Minor version**. The middle number. For example, the 2 in 1.2.0. A change to this number means that features have been added. Your code should still work. It's generally safe to accept the update.
@@ -25,6 +21,10 @@ This table illustrates how the version number changes for each version type:
 |Major version     | 1.0.0 changes to 2.0.0 |
 |Minor version     | 1.1.1 changes to 1.2.0 |
 |Patch version     | 1.0.1 changes to 1.0.2 |
+
+Ths is a system adopted by many companies and developers. If you intend to publish packages and push them to the NuGet registry, you should follow semantic versioning. It's expected. Even if you only download packages from the NuGet registry, you can expect these packages to follow semantic versioning.
+
+Changes to a package can introduce risk. Risk that a bug that could harm your business could be introduced. Risk that you might need to rewrite part of your code. Rewriting code takes time and costs money.  
 
 ### Update approach
 
