@@ -2,15 +2,17 @@ As a developer, you probably want to spend most of your time coding new features
 
 In this module, you learned how to:
 
-- Use built-in and Visual Studio Code debuggers with a Node.js program.
+- Use Visual Studio Code debugger with a .NET program.
 - Create breakpoints and run your code step by step to find issues.
 - Inspect your program state at any execution step.
 - Analyze the call stack to find the source of an exception.
 
 ## Next steps
 
-Continue learning more about Node.js debugging with:
+Continue learning more about .NET debugging with:
 
 - [Visual Studio Code debugging](https://code.visualstudio.com/docs/editor/debugging)
-
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+- [Working with C# in Visual Studio Code](https://code.visualstudio.com/Docs/languages/csharp)
+- [Tutorial: Debug a .NET Core console application using Visual Studio Code](https://docs.microsoft.com/dotnet/core/tutorials/debugging-with-visual-studio-code)
+- [Tutorial: Debug a .NET Core console application using Visual Studio](https://docs.microsoft.com/dotnet/core/tutorials/debugging-with-visual-studio)
+- [Tutorial: Debug a .NET Core console application using Visual Studio for Mac](https://docs.microsoft.com/dotnet/core/tutorials/debugging-with-visual-studio-mac)
