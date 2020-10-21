@@ -2,7 +2,7 @@ Here, we discuss the key GitHub features you use on a daily basis to manage and 
 
 ## The GitHub Flow
 
-In addition to providing a platform for collaborative software development, GitHub also offers a workflow designed to optimize use of its various features. While this unit offers a cursory overview of important platform components, it's recommended that you first review [Understanding the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true). 
+In addition to providing a platform for collaborative software development, GitHub also offers a workflow designed to optimize use of its various features. While this unit offers a cursory overview of important platform components, it's recommended that you first review [Understanding the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true).
 
 ## Git and Github
 
@@ -10,7 +10,7 @@ As you work with **Git** and **Github**, you may wonder about the difference bet
 
 **Git** is a distributed version control system (VCS) that allows multiple developers or other contributors to work on a project. It provides a way to work with one or more local branches and push them to a remote repository. Git is responsible for everything GitHub-related that happens locally on your computer. Key features provided by Git include:
 - Installed and used on your local machine
-- Handles version control 
+- Handles version control
 - Supports branching
 
 To learn more about **Git**, see [Using common Git commands](https://docs.github.com/en/free-pro-team@latest/github/using-git/using-common-git-commands).
@@ -59,7 +59,7 @@ To learn more about GitHub commits, see [Committing and reviewing changes to you
 
 ## Pull Requests
 
-A **pull request** is the mechanism used to signal that the commits from one branch are ready to be merged into another branch. The developer submitting the **pull request** will often request one or more reviewers to verify the code and approve the merge. These reviewers have the opportunity to comment on changes, add their own, or use the pull request itself for further discussion. Once the changes have been approved (if approval is required), the pull request's source branch (the compare branch) may be merged in to the base branch. 
+A **pull request** is the mechanism used to signal that the commits from one branch are ready to be merged into another branch. The developer submitting the **pull request** will often request one or more reviewers to verify the code and approve the merge. These reviewers have the opportunity to comment on changes, add their own, or use the pull request itself for further discussion. Once the changes have been approved (if approval is required), the pull request's source branch (the compare branch) may be merged in to the base branch.
 
 :::image type="content" source="../media/2-pull-request.png" alt-text="GitHub pull request" border="false":::
 
