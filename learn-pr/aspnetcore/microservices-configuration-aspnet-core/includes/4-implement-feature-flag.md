@@ -79,7 +79,7 @@ So let's begin with the details.
     ```json
     "UseFeatureManagement": true,
     "FeatureManagement": {
-    "Coupons": true
+        "Coupons": true
     }
     ```
 
