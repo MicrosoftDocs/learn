@@ -159,7 +159,7 @@ You'll run the test toolkit on a path that contains a deployment template and fi
        [+] VM Size Should Be A Parameter (3 ms)
       ```
 
-   In the output, note how two tests are failing: **Resources Should have Location is failing** and  **Parameters Must Be Referenced**. The prefix **[-]** indicates a failing test.
+   In the output, note how two tests are failing: **Resources Should Have Location** and  **Parameters Must Be Referenced**. The prefix **[-]** indicates a failing test.
 
    To understand what's going on, open the azuredeploy.json file. It should look like this:
 

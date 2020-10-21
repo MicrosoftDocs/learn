@@ -30,7 +30,7 @@ The test toolkit is located in a GitHub repo. Choose one of the following action
 
 ### Inspect the test toolkit
 
-You've just downloaded the test toolkit to a directory of your choosing. Let's look at your directory structure. (Ensure that you've unzipped the file if you opted to download the .zip file instead of running the `git clone command`.) You should have a directory structure that looks like the following one if you go to the directory of the ARM test toolkit:
+You've just downloaded the test toolkit to a directory of your choosing. Let's look at your directory structure. (Ensure that you've unzipped the file if you opted to download the .zip file instead of running the `git clone` command.) You should have a directory structure that looks like the following one if you go to the directory of the ARM test toolkit:
 
 ```output
 -| arm-ttk/
@@ -91,7 +91,7 @@ You'll run the test toolkit on a path that contains a deployment template and fi
    > [!NOTE]
    > Open Visual Studio Code manually and open the template directory if Visual Studio Code isn't on the path.
 
-1. From Visual Code, open the integrated terminal by selecting **Terminal** > **New Terminal** from the top menu. Run the following command in the terminal to start a PowerShell shell:
+1. From Visual Studio Code, open the integrated terminal by selecting **Terminal** > **New Terminal** from the top menu. Run the following command in the terminal to start a PowerShell shell:
 
    ```bash
    pwsh
@@ -159,7 +159,7 @@ You'll run the test toolkit on a path that contains a deployment template and fi
        [+] VM Size Should Be A Parameter (3 ms)
    ```
 
-   The preceding output shows how two tests are failing: **Resources Should have Location is failing** and  **Parameters Must Be Referenced**. The prefix **[-]** indicates a failing test.
+   The preceding output shows how two tests are failing: **Resources Should have Location** and  **Parameters Must Be Referenced**. The prefix **[-]** indicates a failing test.
 
    To understand what's going on, open the azuredeploy.json file. It should look like this:
 
@@ -193,7 +193,7 @@ How do we fix the failing tests?
 
 As the test indicates, we could try replacing **westus** with the text **global**. However, that would fix only one of the problems. Most likely, we want to use the **location** parameter and set the resource's location to that value. 
 
-The reason is twofold. Not only can the location parameter be set as an argument when deploying, it also has the reasonable fallback of being set to **resourceGroup().location** as **defaultValue** if you omit setting the **location** parameter when running the deployment.
+The reason is twofold. Not only can the location parameter be set as an argument for deployment, it also has the reasonable fallback of being set to **resourceGroup().location** as **defaultValue** if you omit setting the **location** parameter when running the deployment.
 
 1. Locate the first resource item in the **resources** array and replace the following content:
 

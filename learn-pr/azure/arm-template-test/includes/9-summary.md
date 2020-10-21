@@ -1,11 +1,11 @@
 
-You started by learning about the benefits of knowing beforehand about what would be deployed. This pre-knowledge helps with concerns like, for example,  if a new deploy would break the existing setup. It's also a good mental check to see if what you intend to happen is actually what will happen. You've furthermore learned that the *What-If* script is the tool that will help you address the above concerns.
+You started by learning about the benefits of knowing beforehand about what would be deployed. This pre-knowledge helps with concerns like whether a new deployment would break the existing setup. It's also a good mental check to see if what you intend to happen is actually what will happen. You learned that the *what-if* script is the tool that will help you address these concerns.
 
-You were then introduced to ARM template test toolkit. The testing toolkit validates your deployment templates by comparing them to tried and tested, best practices and indicates where you are in *violation*. It's worth pointing out that the ARM template test toolkit is not something you *must* abide by but is merely recommendations.
+You were then introduced to the Azure Resource Manager (ARM) template test toolkit. The test toolkit validates your deployment templates by comparing them to tried and tested best practices. It then indicates where you're in violation. The ARM template test toolkit isn't something you *must* abide. It's merely recommendations.
 
-Finally you've learned how to implement domain-specific rules by authoring and running custom tests for the ARM template test toolkit tool.
+Finally, you learned how to implement domain-specific rules by authoring and running custom tests for the ARM template test toolkit.
 
-In summary, you should now have a good overall understanding of what scripts and tools can help you during the development process of your deployment templates.
+You should now have a good understanding of what scripts and tools can help you during the development process of your deployment templates.
 
 ## Additional resources
 
