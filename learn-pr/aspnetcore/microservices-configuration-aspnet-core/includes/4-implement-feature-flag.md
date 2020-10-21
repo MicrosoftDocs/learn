@@ -64,7 +64,7 @@ To accomplish this, we need to:
 
 So let's begin with the details.
 
-### 1. Set up Feature Management
+### Set up Feature Management
 
 1. Install the NuGet package required to use the ASP.NET Core feature manager:
 
@@ -123,7 +123,7 @@ So let's begin with the details.
         }
         ```
 
-### 2. Use the featureFlag directive in the views
+### Use the featureFlag directive in the views
 
 Using the directive makes it clear and easy-to-use it in the views, as shown in the next HTML fragment:
 
