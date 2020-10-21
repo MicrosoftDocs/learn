@@ -25,4 +25,4 @@ When you duplicate the rule, you have startup configuration provided from the or
 
 ## Delete
 
-Deleting the rule will remove will prompt for confirmation before is removed from the active rules. For example, you can delete a rule about a service or resource that is not any more in used, so the rule is no longer needed. Keep in mind that deletion of the rule is permanent, there is no undo feature, so the good practice is that you first Disable the rule on a period of time until you realize that you don&#39;t need that rule.
+Deleting the rule will prompt for confirmation before is removed from the active rules. For example, you can delete a rule about a service or a resource that is not any more in use, so the rule is no longer needed. Keep in mind that deletion of the rule is permanent, there is no undo feature, so the good practice is that you first Disable the rule on a period of time until you realize that you don&#39;t need that rule.
