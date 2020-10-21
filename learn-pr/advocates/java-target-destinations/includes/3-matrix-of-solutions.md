@@ -32,8 +32,12 @@ Therefore, Azure Kubernetes Service is a great solution if you have heterogenous
 
 ## Azure VMs
 
+Running Virtual Machines on Azure is what provide you with the most flexibility and options. You can choose between a wide variety of OS, typically Windows and the main Linux distributions. And you can bring your own software, or use some of the provided images.
 
-Bring your own
-Weblogic
+Concerning Java specifically, the main usages are usually:
 
-Azure Red Hat Openshift
+- Installing and running a Java Web application manually on top of Windows or Linux
+- Installing and running Docker (or even Kubernetes) to run an image containing a Java Web application
+- Using one of the supported offers, for example the Oracle Weblogic, to run Java Web applications on it
+
+There is no limit to what you can install and run here, as you have full control on your Virtual Machines. The main issues you will have, however, will be to maintain those machines and to secure them. On Virtual Machines, this is your full responsibility.
