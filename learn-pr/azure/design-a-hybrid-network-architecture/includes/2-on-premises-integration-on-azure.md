@@ -30,7 +30,7 @@ There are two principal routing tables: system and custom.
 
 ### System routing tables
 
-Azure automatically creates a set of default routing tables for the virtual network and each subnet mask within the virtual network. These system routes are fixed and can't be overridden or deleted. However, you can override the default settings by using a custom routing table.
+Azure automatically creates a set of default routing tables for the virtual network and each subnet mask within the virtual network. These system routes are fixed and can't be edited or deleted. However, you can override the default settings by using a custom routing table.
 
 A typical default routing table might look like this:
 
