@@ -66,11 +66,11 @@ So let's begin with the details.
 
 ### 1. Set up Feature Management
 
-1. Add a reference to the `Microsoft.FeatureManagement` NuGet package to use the .NET Core feature manager.
+1. Install the NuGet package required to use the ASP.NET Core feature manager:
 
     ```dotnetcli
     pushd src/Web/Web.SPA && \
-        dotnet add package Microsoft.FeatureManagement --version 2.2.0 && \
+        dotnet add package Microsoft.FeatureManagement.AspNetCore --version 2.2.0 && \
         popd
     ```
 
