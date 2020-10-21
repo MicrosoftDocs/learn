@@ -1,4 +1,4 @@
-Connect your Azure Sphere dev kit to your PC through a USB port. When plugged in, the device exposes three COM ports. Open **Device Manager** on your PC, and make sure that three COM ports are installed. COM ports might be different from those shown here.
+Connect your Azure Sphere device developer kit to your PC through a USB port. When plugged in, the device exposes three COM ports. Open **Device Manager** on your PC, and make sure that three COM ports are installed. COM ports might be different from those shown here.
 
 ![Screenshot of Device Manager, with three COM ports highlighted.](../media/comports.png)
 
@@ -62,7 +62,7 @@ Alternatively, you can download the drivers from [Future Technology Devices Inte
 ## Claim your device
 
 > [!NOTE]
-> If you have already claimed your Azure Sphere, you can proceed to the next step.
+> If you have already claimed your Azure Sphere device, you can proceed to the next step.
 
 > [!NOTE]
 > Claiming an Azure Sphere device is a one-time operation. You can't move the device to another Azure Tenant after it has been claimed. However, you can add additional users and roles to the Azure Sphere tenant, including users with Admin rights.

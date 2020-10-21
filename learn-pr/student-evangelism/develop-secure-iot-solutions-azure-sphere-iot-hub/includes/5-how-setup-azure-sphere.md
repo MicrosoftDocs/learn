@@ -5,7 +5,7 @@ Before starting to prototype and develop Azure Sphere applications, you need to 
 The steps you'll need to take are:
 
 1. **Install Azure Sphere SDK** so that you work with the **azsphere** command-line utility.
-1. **Claim your device** by using an Azure Sphere tenant. Each device is claimed once, and after you claim your device, you can't move it to different tenant. Claiming the device associates its unique, immutable device ID with your Azure Sphere tenant. The Azure Sphere security service uses the device ID to identify and authenticate the device.
+1. **Claim your device** by using an Azure Sphere tenant. Each device is claimed once, and after you claim your device, you can't move it to different tenant. Claiming the device associates its unique, immutable device ID with your Azure Sphere device tenant. The Azure Sphere security service uses the device ID to identify and authenticate the device.
 1. **Configure the Azure Sphere for network connection and update the device operating system**. The Azure Sphere device checks and receives operating system updates and application updates from the Azure Sphere security service each time it boots. Azure Sphere can also communicate with services such as Azure IoT Hub.
 
 ## Components needed

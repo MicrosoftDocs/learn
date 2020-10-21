@@ -1,4 +1,4 @@
-In this unit, you'll learn how to secure, build, deploy, and debug your high-level Azure Sphere application onto the Azure Sphere A7 Core. Your Azure Sphere application will connect to Azure IoT Hub and send room environment telemetry to Azure IoT Hub.
+In this unit, you'll learn how to secure, build, deploy, and debug your high-level Azure Sphere application onto the Azure Sphere A7 Core. Your Azure Sphere device application will connect to Azure IoT Hub and send room environment telemetry to Azure IoT Hub.
 
 ## Components needed
 
@@ -20,7 +20,7 @@ In this unit, you'll learn how to secure, build, deploy, and debug your high-lev
 To set up the connectivity between the high-level Azure Sphere application and Azure IoT Hub, do the following:
 
 1. Create Azure resources.
-2. Set up a trusted relationship between your Azure Sphere tenant and the device provisioning service.
+2. Set up a trusted relationship between your Azure Sphere device tenant and the device provisioning service.
 3. Configure the Azure Sphere application to connect to Azure IoT Hub.
    1. Open the lab project with Visual Studio Code.
    2. Set your developer board configuration.

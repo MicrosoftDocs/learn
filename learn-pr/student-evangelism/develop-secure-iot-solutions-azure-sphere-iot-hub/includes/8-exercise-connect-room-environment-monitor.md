@@ -179,7 +179,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 2. Add a `#` at the beginning of the set Avnet line to disable it.
 
-3. Uncomment the `set` command that corresponds to your Azure Sphere developer board.
+3. Uncomment the `set` command that corresponds to your Azure Sphere device developer board.
 
    ```
    set(AVNET TRUE "AVNET Azure Sphere Starter Kit")
