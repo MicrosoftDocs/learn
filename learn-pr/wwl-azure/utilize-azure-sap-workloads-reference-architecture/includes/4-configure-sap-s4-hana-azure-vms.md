@@ -1,6 +1,6 @@
-This reference architecture shows a set of proven practices for running S/4HANA and Suite on HANA in a high availability environment that supports disaster recovery on Azure. The Fiori information applies only to S/4HANA applications.
+This reference architecture shows a set of proven practices for running S/4HANA and Suite on HANA in a high availability environment that supports disaster recovery on Azure. The Fiori information applies only to S/4HANA applications. 
 
-![Reference architecture for SAP S/4HANA for Linux virtual machines on Azure](../media/s-4hana-ha-dr-flow.png)
+[![Reference architecture for SAP S/4HANA for Linux virtual machines on Azure](../media/s-4hana-ha-dr-flow_compressed.png)](../media/s-4hana-ha-dr-flow.png#lightbox)
 
 > [!NOTE]
 > Deploying this reference architecture requires appropriate licensing of SAP products and other non-Microsoft technologies.
