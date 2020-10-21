@@ -19,7 +19,7 @@ So how do you know if you need a package for your project? That's a complicated 
 Before you install a library, you might want to inspect the dependencies it relies on. These dependencies might encourage you to use the package, or they might deter you. Here are some factors to consider when you select a dependency for your project:
 
 - **Size**. The number of dependencies could create a large footprint. If you're on a limited bandwidth or have other hardware limitations, this factor could be a concern.
-- **Licensing**. Licensing might be a factor if you're producing software that you intend to sell. If you have a license on a third-party library, and the creator of the library doesn't allow it to be included in software that's for sale, the creator could put you in a bad legal situation.
+- **Licensing**. You need to ensure that the license granted for the library covers your intended use, whether that is commercial, personal, or academic use.
 - **Active maintenance**. If your package relies on a dependency that's deprecated or hasn't been updated for a long time, that could be a problem.
 
 You can learn more about a package before installing it by going to `https://www.nuget.org/packages/<package name>`. This URL will take you to a detailed page for the package. Select the **Dependencies** dropdown to see how many packages and which packages it relies on to function.
