@@ -43,15 +43,14 @@ The following security solutions can have their alerts passed to Azure Sentinel:
 - Azure Active Directory Identity Protection
 - Microsoft Defender for Endpoint
 
-Note:
+> [!Note]
 
-Microsoft unify SIEM and XDR terminology across their security products.
-
-- Microsoft Defender for Identity is new name for the product, Azure Advanced Threat Protection.
-- Microsoft Defender for Endpoint replaces Microsoft Defender Advanced Threat Protection.
-- Defender for Office 365, previously known as Office 365 Advanced Threat Protection.
-- Azure Defender for Servers (previously Azure Security Center Standard Edition).
-- Azure Defender for IoT (previously Azure Security Center for IoT).
+> Microsoft unify SIEM and XDR terminology across their security products.
+> - Microsoft Defender for Identity is new name for the product, Azure Advanced Threat Protection.
+> - Microsoft Defender for Endpoint replaces Microsoft Defender Advanced Threat Protection.
+> - Defender for Office 365, previously known as Office 365 Advanced Threat Protection.
+> - Azure Defender for Servers (previously Azure Security Center Standard Edition).
+> - Azure Defender for IoT (previously Azure Security Center for IoT).
 
 You can filter these alerts by severity and/or by specific text that is contained in the alert name.
 
