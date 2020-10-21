@@ -10,12 +10,12 @@ The first stage is the main thrust portion that gets the rocket to about 68 kilo
 
 ![Fei Fei's rocket reaching altitude.](../media/rocket-flying.png)
 
-As we know from the "Over the Moon" film, knowing exactly how much weight you can have at each stage significantly affects the outcome of the mission. We also know that astronauts in space require a lot of materials, such as food, water, oxygen, tools, and instruments. We got a glimpse of Fei Fei's supplies when she returned to find Gobi at her crash landing site:
+As we know from the *Over the Moon* film, knowing exactly how much weight you can have at each stage significantly affects the outcome of the mission. We also know that astronauts in space require a lot of materials, such as food, water, oxygen, tools, and instruments. We got a glimpse of Fei Fei's supplies when she returned to find Gobi at her crash landing site:
 
 ![Fei Fei and Gobi in front of her rocket.](../media/supplies.png)
 
 The last bit of relevant information about the Apollo program and Saturn V is that for lunar landings there are two important modules:
-- Command module: The module that astronauts live in. When two astronauts are down on the surface of the moon, the third astronaut stays in the command module. This module is returned to Earth.
+- Command module: The module that astronauts live in. When two astronauts are down on the surface of the Moon, the third astronaut stays in the command module. This module is returned to Earth.
 - Lunar module: The module that detaches from the command module after it has reached orbit around the Moon. This module lands on the surface of the Moon and can carry two astronauts. When the lunar module returns from the surface to the command module, it leaves part of the base (the landing gear) on the surface of the Moon. 
 
 The modules are critical parts of the ship because they are designed precisely to ensure that the astronauts can enter the Moon's orbit, orbit the Moon, land on the Moon, launch from the Moon, and return safely to Earth. The amount of space and weight on each of these modules is precise to ensure the safety and success of the mission. It is fair to conclude that the specifications around these modules affect the amount of mineral samples that can be collected, because the samples have to be carried on each of these modules before returning to Earth. 
