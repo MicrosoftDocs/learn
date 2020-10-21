@@ -154,7 +154,7 @@ git clone --depth 1 https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Lear
 
 ## Clone the Azure Sphere samples
 
-The Azure Sphere samples repository includes a tool required for listing IoT Central network endpoints.
+The Azure Sphere samples repository includes a tool required for listing Azure IoT Central network endpoints.
 
 Clone this repository into the same directory that you cloned the Azure Sphere Developer Learning Path into.
 

@@ -1,14 +1,14 @@
 You'll learn how to control an Azure Sphere application by using Azure IoT Hub direct method. This unit also explains direct method bindings to simplify the implementation of Azure IoT.
 
-## Azure IoT direct methods
+## Azure IoT direct method
 
-The following diagram shows how Azure IoT direct methods work:
+The following diagram shows how Azure IoT direct method works:
 
-![Diagram showing how Azure IoT direct methods work.](../media/azure-direct-method-pattern.png)
+![Diagram showing how Azure IoT direct method works.](../media/azure-direct-method-pattern.png)
 
 ## Steps to manage cloud-to-device control
 
-Take the following steps to use Azure IoT Hub direct methods for cloud-to-device control.
+Take the following steps to use Azure IoT Hub direct method for cloud-to-device control.
 
 1. Azure IoT Hub sends a direct method message to the device. For example, you might want to reset the device. This message includes the method name and an optional payload.
 2. The device receives the direct method message and calls the associated handler function.

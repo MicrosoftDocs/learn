@@ -46,9 +46,9 @@
 
 - The green LED closest to the USB connector turns on when connected to Azure.
 
-## Test IoT Hub direct methods
+## Test IoT Hub direct method
 
-Use the Azure command-line tool to invoke the Azure IoT hub direct method. For more information, see [invoke-device-method](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-invoke-device-method).
+Use the Azure command-line tool to invoke Azure IoT hub direct method. For more information, see [invoke-device-method](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-invoke-device-method).
 
 Follow these steps to invoke the `resetDevice` direct method, which restarts the device:
 

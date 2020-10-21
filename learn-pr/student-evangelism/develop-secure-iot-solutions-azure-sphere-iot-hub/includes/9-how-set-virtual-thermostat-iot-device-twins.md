@@ -4,7 +4,7 @@ You'll make the changes to set the desired temperature from Azure Cloud Shell an
 
 The multiple communications between the cloud and the device are:
 
-- **Direct methods** for communications that require immediate confirmation of the result. You often use direct methods for interactive control of devices, such as turning on a fan.
+- **Direct method** for communications that require immediate confirmation of the result. You often use direct method for interactive control of devices, such as turning on a fan.
 - **Device twins** are for long-running commands intended to put the device into a certain desired state. For example, you might want to set the sample rate for a sensor to every 30 minutes.
 - **Cloud-to-device** messages are for one-way notifications to the device app.
 
