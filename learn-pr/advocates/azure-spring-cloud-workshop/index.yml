@@ -18,7 +18,6 @@ abstract: |
   - Create a Spring Cloud Gateway to access your microservice
   - Use Spring Cloud Service Registry to discover your microservice
   - Configure distributed tracing to debug a microservices architecture
-  - Deploy a Spring Boot microservice using GitHub Actions
 prerequisites:  |
  - Azure CLI.
  - Java 8 and an IDE.
