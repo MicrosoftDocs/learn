@@ -25,7 +25,8 @@ Normally, you create a _resource group_ before you create other resources on Azu
 
     The command takes about two minutes to complete. When the command finishes, you'll see output similar to this.
 
-    ```json (Output Example)
+    ```json 
+    (Output Example)
     {
       "fqdns": "",
       "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/MeanStack",
