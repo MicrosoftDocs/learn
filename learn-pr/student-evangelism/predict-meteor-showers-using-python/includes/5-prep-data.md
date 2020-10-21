@@ -157,7 +157,7 @@ memory usage: 4.1+ KB
 
 ### Convert to numbers
 
-We can see from the calls to `head()` that a lot of information is written in words (strings) instead of numbers (integers). Some data makes sense as strings, like city names or meteor shower names. But other data makes more sense as integers, like months or moon phases.
+We can see from the calls to `head()` that a lot of information is written in words (strings) instead of numbers (integers). Some data makes sense as strings, like city names or meteor shower names. But other data makes more sense as integers, like months or Moon phases.
 
 You can quickly convert the month columns to numbers:
 1. Create a map of months to numbers. We can see from the output of `head()` that the months are all lowercase. 
@@ -233,7 +233,7 @@ meteor_showers.hemisphere = meteor_showers.hemisphere.map(hemispheres)
 constellations.hemisphere = constellations.hemisphere.map(hemispheres)
 ```
 
-Finally, convert moon phases to numbers that represent the percentage of the moon that's visible. This time, add a new column to represent the data:
+Finally, convert Moon phases to numbers that represent the percentage of the Moon that's visible. This time, add a new column to represent the data:
 1. Create the map of phases to numbers.
 2. Add a new column called *percentage* and set it to the moonphase column that's mapped to the numbers.
 3. Show the first five rows.
@@ -261,7 +261,7 @@ Some of the data from these .csv files isn't useful. You can delete the followin
 | Data frame | Columns to remove | Reason |
 |-----------|-------------------|--------|
 | meteor_showers | startmonth, startday, endmonth, endday, hemisphere | The month and day information is captured in the startdate and enddate columns. The preferredhemisphere column is the optimal value. |
-| moon_phases | month, day, moonphase, specialevent | Month and day are captured by date. The moon phase is captured by percentage. The specialevent column isn't relevant. |
+| moon_phases | month, day, moonphase, specialevent | Month and day are captured by date. The Moon phase is captured by percentage. The specialevent column isn't relevant. |
 | constellations | besttime | Every row is 21:00. |
 
 Here's how to remove those columns:
@@ -290,7 +290,7 @@ dtypes: datetime64[ns](1), float64(1)
 memory usage: 5.8 KB
 ```
 
-You see that the cycle of the moon phases goes from 0 to 0.5 to 1 to 0.5 and then back to 0. So you could conceivably make every value between 0 and 0.5 be 0.25. And you could make every value between 0.5 and 1 be 0.75. 
+You see that the cycle of the Moon phases goes from 0 to 0.5 to 1 to 0.5 and then back to 0. So you could conceivably make every value between 0 and 0.5 be 0.25. And you could make every value between 0.5 and 1 be 0.75. 
 
 You could get more detailed by figuring out a more accurate percentage on your own:
 

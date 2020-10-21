@@ -68,7 +68,7 @@ The function that we write needs to:
 2. Use that latitude to figure out which *constellations* are visible to that city.
 3. Use the constellations to determine which *meteor showers* are visible to that city.
 4. Use the meteor showers to determine the *dates* that they're visible. 
-5. Use the dates to find the *optimal date* that has the least amount of light from the moon.
+5. Use the dates to find the *optimal date* that has the least amount of light from the Moon.
 
 Use these steps to build your function.
 

@@ -3,7 +3,7 @@ As a reminder, we're following these steps to find the optimal date to view mete
 2. Use that latitude to figure out which *constellations* are visible to that city.
 3. Use the constellations to determine which *meteor showers* are visible to that city.
 4. Use the meteor showers to determine the *dates* that they're visible.
-5. Use the dates to find the *optimal date* that has the least amount of light from the moon.
+5. Use the dates to find the *optimal date* that has the least amount of light from the Moon.
 
 ## Use latitude to determine constellation
 
@@ -115,7 +115,7 @@ The code should look familiar:
         meteor_shower_startdate = meteor_showers.loc[meteor_showers['radiant'] == constellation, 'startdate'].iloc[0]
         meteor_shower_enddate = meteor_showers.loc[meteor_showers['radiant'] == constellation, 'enddate'].iloc[0]
 
-        # Find the moon phases for each date within the viewable time frame of that meteor shower
+        # Find the Moon phases for each date within the viewable time frame of that meteor shower
         moon_phases_list = moon_phases.loc[(moon_phases['date'] >= meteor_shower_startdate) & (moon_phases['date'] <= meteor_shower_enddate)]
 ```
 
@@ -138,12 +138,12 @@ Here's an example of the first few lines of the output:
 | 113 | 2020-04-23 | 0.0 |
 | 114 | 2020-04-24 | 0.0 |
 
-## Find the optimal date based on moon phases
+## Find the optimal date based on Moon phases
 
-Finally, we can find the minimum value of the moon phase (the least amount of light shining from the moon). For this predictive function, we just grab the first date. 
+Finally, we can find the minimum value of the Moon phase (the least amount of light shining from the Moon). For this predictive function, we just grab the first date. 
 
 ```python
-# Find the first date where the moon is the least visible
+# Find the first date where the Moon is the least visible
 best_moon_date = moon_phases_list.loc[moon_phases_list['percentage'].idxmin()]['date']
 ```
 
@@ -191,10 +191,10 @@ def predict_best_meteor_shower_viewing(city):
         meteor_shower_startdate = meteor_showers.loc[meteor_showers['radiant'] == constellation, 'startdate'].iloc[0]
         meteor_shower_enddate = meteor_showers.loc[meteor_showers['radiant'] == constellation, 'enddate'].iloc[0]
 
-        # Find the moon phases for each date within the viewable time frame of that meteor shower
+        # Find the Moon phases for each date within the viewable time frame of that meteor shower
         moon_phases_list = moon_phases.loc[(moon_phases['date'] >= meteor_shower_startdate) & (moon_phases['date'] <= meteor_shower_enddate)]
 
-        # Find the first date where the moon is the least visible
+        # Find the first date where the Moon is the least visible
         best_moon_date = moon_phases_list.loc[moon_phases_list['percentage'].idxmin()]['date']
 
         # Add that date to the string to report back to the user

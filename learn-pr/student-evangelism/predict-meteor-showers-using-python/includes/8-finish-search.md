@@ -6,7 +6,7 @@ Although we don't know when this crying might happen, we *do* know that it happe
 
 ## Determine the right data
 
-We know that Fei Fei travels to Lunaria after the Moon Festival. Though we don't know exactly how long it takes her to prototype, test, and build a rocket to the moon, we can make a guess. 
+We know that Fei Fei travels to Lunaria after the Moon Festival. Though we don't know exactly how long it takes her to prototype, test, and build a rocket to the Moon, we can make a guess. 
 
 The 2020 Chinese Moon Festival was on October 1. Because the rest of the dates that we use in this module are from 2020, let's use that date. 
 
@@ -60,17 +60,17 @@ Perseids is best seen if you look towards the Perseus constellation on July 20, 
 Chang'e is best seen if you look towards the Draco constellation on October 16, 2020.
 ```
 
-Let's make one last change to our predictive algorithm to align with the film. Fei Fei travels to the moon when it's big and bright, so we should make the viewing closer to 1. Change the predictive function after you get the moon_date_list and before the return statement:
+Let's make one last change to our predictive algorithm to align with the film. Fei Fei travels to the Moon when it's big and bright, so we should make the viewing closer to 1. Change the predictive function after you get the moon_date_list and before the return statement:
 
 ```python
         if meteor_shower == 'Chang\'e':
-            # For the film meteor shower, find the date where the moon is the most visible
+            # For the film meteor shower, find the date where the Moon is the most visible
             best_moon_date = moon_phases_list.loc[moon_phases_list['percentage'].idxmax()]['date']
 
             # Add that date to the string to report back to the user
-            meteor_shower_string += "Though the moon will be bright, " + meteor_shower + "'s meteor shower is best seen if you look towards the " + constellation + " constellation on " +  best_moon_date.to_pydatetime().strftime("%B %d, %Y") + ".\n"
+            meteor_shower_string += "Though the Moon will be bright, " + meteor_shower + "'s meteor shower is best seen if you look towards the " + constellation + " constellation on " +  best_moon_date.to_pydatetime().strftime("%B %d, %Y") + ".\n"
         else:
-            # Find the first date where the moon is the least visible
+            # Find the first date where the Moon is the least visible
             best_moon_date = moon_phases_list.loc[moon_phases_list['percentage'].idxmin()]['date']
 
             # Add that date to the string to report back to the user
@@ -83,7 +83,7 @@ Lyrids is best seen if you look towards the Lyra constellation on April 22, 2020
 Eta Aquarids is best seen if you look towards the Aquarius constellation on April 22, 2020.
 Orionids is best seen if you look towards the Orion constellation on October 16, 2020.
 Perseids is best seen if you look towards the Perseus constellation on July 20, 2020.
-Though the moon will be bright, Chang'e's meteor shower is best seen if you look towards the Draco constellation on October 01, 2020.
+Though the Moon will be bright, Chang'e's meteor shower is best seen if you look towards the Draco constellation on October 01, 2020.
 ```
 
 Now we know that when Fei Fei's family gathers for the Moon Festival, they might be able to look into the sky to see Chang'e showering them. We hope she showers them with tears of happiness and remembrance instead of sadness.

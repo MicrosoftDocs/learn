@@ -3,7 +3,7 @@ Now it's time to get data ready to create your prediction model. Remember, ideal
 Before we gather data, it's important to identify the kind of data that we want to find. We know a few things:
 - Meteor showers are typically caused by meteoroids that melt off of comets. 
 - Comets have an orbit around the sun that's observable and predictable.
-- A bright moon makes a meteor shower harder to see.
+- A bright Moon makes a meteor shower harder to see.
 - The orbit and spin of Earth affects where a meteor shower can be seen from Earth.
 
 We also know that Chang'e from *Over the Moon* can cause meteor showers, but we'll add that data in a later unit.
@@ -42,27 +42,27 @@ Every 33 years, the [Leonids meteor shower](https://solarsystem.nasa.gov/asteroi
 
 ## Moon phases
 
-As [the moon](https://solarsystem.nasa.gov/moons/earths-moon/overview/?azure-portal=true) orbits Earth, and Earth orbits the sun, different amounts of sunlight are reflected off the moon to Earth. Each month, the moon cycles through different phases. The phases are basically the names we apply to how much sunlight we see reflecting off certain parts of the moon. 
+As [the Moon](https://solarsystem.nasa.gov/moons/earths-moon/overview/?azure-portal=true) orbits Earth, and Earth orbits the sun, different amounts of sunlight are reflected off the Moon to Earth. Each month, the Moon cycles through different phases. The phases are basically the names we apply to how much sunlight we see reflecting off certain parts of the Moon. 
 
-These are the phases of the moon:
-- New moon: Around the 15th of the month
+These are the phases of the Moon:
+- New Moon: Around the 15th of the month
 - Waxing
 - Crescent
 - First quarter: Around the 23rd of the month
 - Waxing gibbous
-- Full moon: Around the 1st of the month
+- Full Moon: Around the 1st of the month
 - Waning gibbous
 - Third quarter: Around the 10th of the month
 - Waning crescent
 
-New moon, first quarter, full moon, and third quarter are the most frequently tracked phases. The phases cycle every 29 days, so the exact dates depend on the number of days in the month. 
+New Moon, first quarter, full Moon, and third quarter are the most frequently tracked phases. The phases cycle every 29 days, so the exact dates depend on the number of days in the month. 
 
 ## Data files
 
 We've started to gather some data for the example in this module. On your own, try to find additional data that will help you explore the predictions of meteor showers. 
 
 Here's the data we've already gathered:
-- [moonphases.csv]() - This file contains the moon phases for every day of 2020. The missing data will be added in the next unit. (Data acquired from [timeanddate.com](https://www.timeanddate.com/moon/phases/?azure-portal=true).)
+- [moonphases.csv]() - This file contains the Moon phases for every day of 2020. The missing data will be added in the next unit. (Data acquired from [timeanddate.com](https://www.timeanddate.com/moon/phases/?azure-portal=true).)
 - [meteorshowers.csv]() - This file contains data for each of the five meteor showers that we described earlier. Data includes their preferred viewing month, the months when they're visible, and the preferred hemisphere for viewing. (Data acquired from [NASA](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/in-depth/?azure-portal=true).)
 - [constellations.csv]() - This file contains data for the four constellations that are radiants for the five meteor showers. Data includes the latitudes for which they're visible and the month for the best viewing. (Data acquired from [Wikipedia](https://en.wikipedia.org/wiki/IAU_designated_constellations?azure-portal=true).)
 - [cities.csv]() - This file contains a list of country capitals and their associated latitudes. (Data acquired from [Wikipedia](https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude?azure-portal=true).) 

@@ -1,4 +1,4 @@
-Meteors can be visible from Earth every night. But the best meteor showers are the ones that originate from one of the comets that orbits around our sun. To see those meteor showers, beyond knowing the path of the comets, we must also consider the side of the earth where the meteors will enter our atmosphere. And we must consider whether the night sky will be dark enough to optimize our view of the meteor tails. 
+Meteors can be visible from Earth every night. But the best meteor showers are the ones that originate from one of the comets that orbits around our sun. To see those meteor showers, beyond knowing the path of the comets, we must also consider the side of the Earth where the meteors will enter our atmosphere. And we must consider whether the night sky will be dark enough to optimize our view of the meteor tails. 
 
 ## Review the data science life cycle
 
