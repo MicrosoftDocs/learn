@@ -75,7 +75,7 @@ Run the following command to claim the device.
 
 ## Configure the Azure Sphere Wi-Fi network
 
-Configure the Azure Sphere for networking. You can receive cloud updates from the Azure Sphere security service, and communicate with services such as an Azure IoT Hub.
+Configure the Azure Sphere for networking. You can receive cloud updates from the Azure Sphere security service, and communicate with services such as Azure IoT Hub.
 
 1. Scan for Wi-Fi access points by using the following command.
 

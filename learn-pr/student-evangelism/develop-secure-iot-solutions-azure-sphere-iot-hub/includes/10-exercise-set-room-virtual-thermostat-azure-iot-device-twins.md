@@ -15,7 +15,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 2. Add a `#` at the beginning of the set Avnet line to disable it.
 
-3. Uncomment the `set` command that corresponds to your Azure Sphere developer board.
+3. Uncomment the `set` command that corresponds to your Azure Sphere device developer board.
 
    ```
    set(AVNET TRUE "AVNET Azure Sphere Starter Kit")                
@@ -68,13 +68,13 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 ## Step 6: Display the actual temperature device twin
 
-We're going to use the Azure command-line tool to view and update the IoT Hub device twins. For more information, see [az iot hub device-twin](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-twin?view=azure-cli-latest).
+We're going to use the Azure command-line tool to view and update the IoT hub device twins. For more information, see [az iot hub device-twin](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-twin?view=azure-cli-latest).
 
 Follow these steps to show the actual temperature recorded by the device:
 
 1. For Azure Sphere devices with buttons, press **Button A** or **Button B**. Virtual button presses are generated for devices without buttons.
 
-2. You need the name of the Azure IoT Hub you created. You can get the name from the Azure portal.
+2. You need the name of the Azure IoT hub you created. You can get the name from the Azure portal.
 
 3. You need the Azure Sphere device ID. Run the following command from the **Azure Sphere Developer Command Prompt**.
 
@@ -84,7 +84,7 @@ Follow these steps to show the actual temperature recorded by the device:
 
 4. Open Azure Cloud Shell by right-clicking the following link and opening in a new tab: [https://shell.azure.com](https://shell.azure.com/).
 
-5. In Cloud Shell, run the [az extension add](https://docs.microsoft.com/cli/azure/extension?view=azure-cli-latest#az-extension-add) command to add the Microsoft Azure IoT Extension to your Azure CLI shell. The IoT Extension adds IoT Hub, IoT Edge, and IoT device provisioning service specific commands to Azure CLI.
+5. In Cloud Shell, run the [az extension add](https://docs.microsoft.com/cli/azure/extension?view=azure-cli-latest#az-extension-add) command to add the Microsoft Azure IoT Extension to the Azure CLI shell. The IoT Extension adds IoT Hub, IoT Edge, and IoT device provisioning service specific commands to the Azure CLI.
 
    ```
    az extension add --name azure-iot
@@ -173,7 +173,7 @@ To set the desired temperature:
 
 1. The `DEVICE_ID` and `HUB_NAME` bash variables were set in the previous section.
 
-2. Run the IoT Hub device twin update.
+2. Run the IoT hub device twin update.
 
    ```
    az iot hub device-twin update --device-id "${DEVICE_ID,,}" -n $HUB_NAME --set properties.desired='{"DesiredTemperature":{"value":25}}'
@@ -182,7 +182,7 @@ To set the desired temperature:
     > [!NOTE]
     > IoT Hub requires device IDs to be lowercase. The bash command `"${DEVICE_ID,,}"` in the `device-twin show` command converts the device ID to lowercase.
 
-3. The blinking LED on the Azure Sphere might change color, depending on the desired temperature you set.
+3. The blinking LED on the Azure Sphere device might change color, depending on the desired temperature you set.
 
 4. Show the latest state of the device twin. Review the `desired` and `reported` sections for the `DesiredTemperature` property.
 

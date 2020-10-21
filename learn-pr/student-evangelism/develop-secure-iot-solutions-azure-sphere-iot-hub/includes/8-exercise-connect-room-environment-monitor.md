@@ -1,6 +1,6 @@
 ## Step 1: Prepare Azure resources
 
-You can prepare Azure cloud resources with the Azure CLI, the Azure portal (a web interface), or deployment templates. For this module, you'll use an Azure deployment template. Select **Deploy to Azure** to deploy a device provisioning service and a linked Azure IoT Hub.
+You can prepare Azure cloud resources with the Azure CLI, the Azure portal (a web interface), or deployment templates. For this module, you'll use an Azure deployment template. Select **Deploy to Azure** to deploy a device provisioning service and a linked Azure IoT hub.
 
 <!-- [![Deploy to Azure](../media/deploy-azure-sphere.png)](https://azuredeploy.net/?repository=https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path/blob/master/zdocs-vs-code-iot-hub/Lab_2_Send_Telemetry_to_Azure_IoT_Central/setup) -->
 
@@ -12,29 +12,29 @@ You can prepare Azure cloud resources with the Azure CLI, the Azure portal (a we
 
 2. Choose the site located closest to you.
 
-3. Select the IoT Hub tier. The default IoT Hub tier is **F1**, which is free. You can only have one free IoT Hub per subscription. If you already have a free IoT Hub, then either select **S1** ([pricing](https://azure.microsoft.com/pricing/details/iot-hub/)) or delete your existing free IoT Hub before proceeding.
+3. Select the tier for Azure IoT Hub. The default tier is **F1**, which is free. You can only have one free IoT hub per subscription. If you already have a free IoT hub, then either select **S1** ([pricing](https://azure.microsoft.com/pricing/details/iot-hub/)) or delete your existing free IoT hub before proceeding.
 
 4. Select **Next** > **Deploy**. The deployment will take three to four minutes to complete.
 
-5. When the deployment has completed, select **Manage your resources**. You will see two services listed in the Azure portal: the device provisioning service and the IoT Hub. Appended to the resource names is a random string to ensure that the names are globally unique.
+5. When the deployment has completed, select **Manage your resources**. You will see two services listed in the Azure portal: the device provisioning service and IoT Hub. Appended to the resource names is a random string to ensure that the names are globally unique.
 
    ![Screenshot showing Azure IoT resources.](../media/azure-iot-resources.png)
 
 Don't close the Azure Web portal. You will need to access it again.
 
 
-## Step 2: Link your Azure Sphere tenant to the device provisioning service
+## Step 2: Link your Azure Sphere device tenant to the device provisioning service
 
-You need to set up a trust relationship between your Azure Sphere tenant and your device provisioning service.
+You need to set up a trust relationship between your Azure Sphere device tenant and your device provisioning service.
 
-Devices claimed by your Azure Sphere tenant are automatically enrolled with the linked IoT Hub by the device provisioning service when the device first connects.
+Devices claimed by your Azure Sphere device tenant are automatically enrolled with the linked IoT hub by the device provisioning service when the device first connects.
 
 
-### Download the Azure Sphere tenant authentication CA certificate
+### Download the Azure Sphere device tenant authentication CA certificate
 
 1. Open an **Azure Sphere Developer Command Prompt**.
 
-2. Sign in to your Azure Sphere tenant if you haven't already done so.
+2. Sign in to your Azure Sphere device tenant if you haven't already done so.
 
    ```
    azsphere login
@@ -42,13 +42,13 @@ Devices claimed by your Azure Sphere tenant are automatically enrolled with the 
 
 3. Make a note of the current directory, or change to the Azure Sphere Learning Path directory. You'll need the name of this directory in the next step.
 
-4. Download the Certificate Authority (CA) certificate for your Azure Sphere tenant:
+4. Download the Certificate Authority (CA) certificate for your Azure Sphere device tenant:
 
    ```
    azsphere ca-certificate download --output CAcertificate.cer
    ```
 
-### Upload the Azure Sphere tenant certificate to Azure device provisioning service
+### Upload the Azure Sphere device tenant certificate to Azure device provisioning service
 
 1. Switch back to the Azure portal.
 
@@ -109,13 +109,13 @@ From the Azure portal:
 
 ## Step 4: Explicitly allow connections to Azure IoT endpoints
 
-Remember, applications on Azure Sphere are locked down by default, including hardware and network endpoints. You must explicitly allow connections to the network endpoints of your Azure IoT Hub and your device provisioning service. Otherwise, your Azure Sphere application won't be able to connect.
+Remember, applications on Azure Sphere are locked down by default, including hardware and network endpoints. You must explicitly allow connections to the network endpoints of your Azure IoT hub and your device provisioning service. Otherwise, your Azure Sphere device application won't be able to connect.
 
 You must allow communications to the following Azure IoT network endpoints:
 
 - The device provisioning service global device endpoint
 - The device provisioning service service endpoint
-- The IoT Hub hostname endpoint
+- The IoT hub hostname endpoint
 
 Follow these steps:
 
@@ -135,7 +135,7 @@ Follow these steps:
 
 7. Select the **IoT Hub** resource.
 
-8. Copy the IoT Hub **Hostname** URL to Notepad.
+8. Copy the IoT hub **Hostname** URL to Notepad.
 
    ![Screenshot of the overview page of IoT Hub.](../media/iot-hub-endpoint-url.png)
 
@@ -287,7 +287,7 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
    - Update `CmdArgs` with the device provisioning service **ID Scope** that you copied to Notepad.
    - Update `DeviceAuthentication` with your **Azure Sphere tenant ID**. Remember, this was the numeric value output from the `azsphere tenant show-selected` command that you copied to Notepad.
 
-3. Update the network endpoints `AllowedConnections` with your Azure IoT Hub and device provisioning endpoint URLs you copied to Notepad.
+3. Update the network endpoints `AllowedConnections` with your Azure IoT hub and device provisioning endpoint URLs you copied to Notepad.
 
 4. Review your updated **manifest_app.json** file. It should look similar to the following.
 
@@ -312,8 +312,8 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
            "PowerControls": [ "ForceReboot" ],
            "AllowedConnections": [
                "global.azure-devices-provisioning.net",
-               "<Your Device Provisioning Service Endpoint>",
-               "<Your Azure IoT Hub Endpoint>"
+               "<Your device provisioning service endpoint>",
+               "<Your Azure IoT hub endpoint>"
            ],
            "DeviceAuthentication": "9d7e79eb-9999-43ce-9999-fa8888888894"
        },
@@ -434,7 +434,7 @@ The green LED closest to the USB connector starts to blink.
 
 ## Step 13: View the device telemetry from Azure Cloud Shell
 
-1. You will need to know the name of the Azure IoT Hub you created. You can get the name from the Azure portal.
+1. You will need to know the name of the Azure IoT hub you created. You can get the name from the Azure portal.
    ![Screenshot of Azure resources.](../media/azure-iot-resources.png)
 
 2. Open [Azure Cloud Shell](https://shell.azure.com/).
@@ -445,10 +445,10 @@ The green LED closest to the USB connector starts to blink.
    az extension add --name azure-iot
    ```
 
-4. Start the IoT Hub events monitor with the following command. Be sure to use your IoT Hub name.
+4. Start the IoT hub events monitor with the following command. Be sure to use your IoT hub name.
 
    ```
-   az iot hub monitor-events --hub-name {your IoT Hub name}
+   az iot hub monitor-events --hub-name {your IoT hub name}
    ```
 
 5. Observe telemetry in the cloud. The output will be similar to the following.

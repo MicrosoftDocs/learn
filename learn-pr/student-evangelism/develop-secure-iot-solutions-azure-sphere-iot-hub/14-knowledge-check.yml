@@ -13,7 +13,7 @@ durationInMinutes: 3 # dummy number at present
 content: |
 quiz:
   questions:
-  - content: "In the Azure Sphere ecosystem, which component is missing from the following list? Azure Sphere SDK, Azure Sphere tenant, Azure Sphere OS"
+  - content: "In the Azure Sphere ecosystem, which component is missing from the following list: Azure Sphere SDK, Azure Sphere tenant, Azure Sphere OS?"
     choices:
     - content: "Azure Sphere API"
       isCorrect: false

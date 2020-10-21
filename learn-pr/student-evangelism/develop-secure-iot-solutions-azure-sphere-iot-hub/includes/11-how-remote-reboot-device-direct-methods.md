@@ -23,7 +23,7 @@ Direct method bindings map a direct method with a handler function that implemen
 
 #### Define the reset device binding
 
-In **main.c**, the variable named `resetDevice` of type `DirectMethodBinding` is declared. This variable maps the Azure IoT Hub direct method `ResetMethod` command with a handler function named `ResetDirectMethod`.
+In **main.c**, the variable named `resetDevice` of type `DirectMethodBinding` is declared. This variable maps the Azure IoT hub direct method `ResetMethod` command with a handler function named `ResetDirectMethod`.
 
 ```
 static LP_DIRECT_METHOD_BINDING resetDevice = { 
@@ -34,7 +34,7 @@ static LP_DIRECT_METHOD_BINDING resetDevice = {
 
 ## Direct method handler function
 
-1. Typically, an Azure IoT Hub application invokes the `Reset Azure Sphere` command.
+1. Typically, an Azure IoT hub application invokes the `Reset Azure Sphere` command.
 
    A direct method named `ResetMethod`, along with a JSON payload, is sent to the device. The JSON payload `{"reset_timer":5}` specifies how many seconds to wait before resetting the device.
 
@@ -48,7 +48,7 @@ static LP_DIRECT_METHOD_BINDING resetDevice = {
 
 5. The device is reset.
 
-6. Your application can then query the `DeviceResetUTC` device twin report property cloud side.
+6. Your application can then query the `DeviceResetUTC` device twin report property.
 
 ![Diagram showing the concept of direct method bindings.](../media/azure-sphere-method-and-twin.png)
 

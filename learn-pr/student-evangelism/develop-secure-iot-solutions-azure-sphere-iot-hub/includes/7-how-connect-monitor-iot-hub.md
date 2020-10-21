@@ -15,9 +15,9 @@ In this unit, you'll learn how to secure, build, deploy, and debug your high-lev
   - Communicate with the internet and cloud-based services.
   - Broker trust relationships with other devices and services via certificate-based authentication.
 
-## Steps to connect the monitor to the Azure IoT Hub
+## Steps to connect the monitor to Azure IoT Hub
 
-To set up the connectivity between the high-level Azure Sphere application and the Azure IoT Hub, do the following:
+To set up the connectivity between the high-level Azure Sphere application and Azure IoT Hub, do the following:
 
 1. Create Azure resources.
 2. Set up a trusted relationship between your Azure Sphere tenant and the device provisioning service.

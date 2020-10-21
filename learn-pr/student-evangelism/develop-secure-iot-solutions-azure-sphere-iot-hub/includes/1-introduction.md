@@ -31,10 +31,10 @@ This solution thus provides a platform to create secure IoT solutions, without w
 
 In this module, you will:
 
-- Create an Azure IoT Hub and device provisioning services.
+- Create an Azure IoT hub and device provisioning services.
 - Configure your Azure Sphere application to Azure IoT Hub.
 - Build and deploy the Azure Sphere application.
-- View the environment telemetry from the Azure Cloud Shell.
+- View the environment telemetry from Azure Cloud Shell.
 - Control an Azure Sphere application by using Azure IoT Hub direct method.
 
 ## Prerequisites

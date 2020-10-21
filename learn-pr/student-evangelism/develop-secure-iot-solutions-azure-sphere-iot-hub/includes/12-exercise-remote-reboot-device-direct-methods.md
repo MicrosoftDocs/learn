@@ -11,7 +11,7 @@
 5. Set your developer board configuration.
 
    1. Open the **CMakeList.txt** file.
-   2. Uncomment the `set` command that corresponds to your Azure Sphere developer board.
+   2. Uncomment the `set` command that corresponds to your Azure Sphere device developer board.
    3. Save the file. This will auto-generate the CMake cache.
 
 6. Configure the Azure IoT connection information.
@@ -48,11 +48,11 @@
 
 ## Test IoT Hub direct methods
 
-Use the Azure command-line tool to invoke the Azure IoT Hub direct method. For more information, see [invoke-device-method](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-invoke-device-method).
+Use the Azure command-line tool to invoke the Azure IoT hub direct method. For more information, see [invoke-device-method](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-invoke-device-method).
 
 Follow these steps to invoke the `resetDevice` direct method, which restarts the device:
 
-1. You need the name of the Azure IoT Hub you created. You can get the name from the Azure portal.
+1. You need the name of the Azure IoT hub you created. You can get the name from the Azure portal.
 
    ![Screenshot showing Azure resources.](../media/azure-iot-resources.png)
 
@@ -64,7 +64,7 @@ Follow these steps to invoke the `resetDevice` direct method, which restarts the
 
 3. Open Azure Cloud Shell by right-clicking the following link, and opening in a new tab "[https://shell.azure.com](https://shell.azure.com/)".
 
-4. In Cloud Shell, run the [az extension add](https://docs.microsoft.com/cli/azure/extension?view=azure-cli-latest#az-extension-add) command to add the Microsoft Azure IoT extension to your Azure CLI shell. The Azure IoT extension adds IoT Hub, IoT Edge, and IoT device provisioning service specific commands to Azure CLI.
+4. In Cloud Shell, run the [az extension add](https://docs.microsoft.com/cli/azure/extension?view=azure-cli-latest#az-extension-add) command to add the Microsoft Azure IoT extension to the Azure CLI shell. The Azure IoT extension adds IoT Hub, IoT Edge, and IoT device provisioning service specific commands to the Azure CLI.
 
    ```
    az extension add --name azure-iot
@@ -76,7 +76,7 @@ Follow these steps to invoke the `resetDevice` direct method, which restarts the
    DEVICE_ID={your Azure Sphere device ID}
    ```
 
-6. Set a bash variable in Cloud Shell for your IoT Hub name. Make sure there are no spaces on either side of the `=` character.
+6. Set a bash variable in Cloud Shell for your IoT hub name. Make sure there are no spaces on either side of the `=` character.
 
    ```
    HUB_NAME={your hub name}

@@ -20,7 +20,7 @@ You can use device twins as follows:
 
 - Cloud-to-device updates.
 
-   Typically, an IoT Hub application sets the value of a device twin. For example, the application might set the temperature of the room. IoT Hub sends a desired property device twin message to the device. The device takes action on the desired property, and then the device responds with a reported property device twin message. Azure IoT Hub stores the reported property.
+   Typically, an IoT hub application sets the value of a device twin. For example, the application might set the temperature of the room. IoT Hub sends a desired property device twin message to the device. The device takes action on the desired property, and then the device responds with a reported property device twin message. Azure IoT Hub stores the reported property.
 
 - Device-to-cloud updates.
 
@@ -28,7 +28,7 @@ You can use device twins as follows:
 
 - Querying reported properties.
 
-   With device twins reported state stored in Azure, it's possible to query the stored device twin properties cloud side. For example, list all devices with a firmware version less than 2.0, as these devices require an update. Or, list all rooms with a temperature setting higher than 25 degrees Celsius.
+   With device twins reported state stored in Azure, it's possible to query the stored device twin properties. For example, list all devices with a firmware version less than 2.0, as these devices require an update. Or, list all rooms with a temperature setting higher than 25 degrees Celsius.
 
 ## Set properties on a device
 
@@ -44,7 +44,7 @@ The following outlines how Azure IoT Hub uses device twins to set properties on 
 2. Azure IoT Hub sends a desired property message to the device.
 3. The device implements the desired property (in this case, to turn on the heater or cooler to bring the room to the desired temperature).
 4. The device sends a reported property message back to Azure IoT. In this example, the device reports the new desired temperature.
-5. Your application can then query the device twin report property cloud side.
+5. Your application can then query the device twin report property.
 
 ## Device twin bindings
 
@@ -54,7 +54,7 @@ A binding maps a device twin with a device property and a handler function that 
 
 #### Define the desired temperature binding
 
-The following example declares a variable named `desiredTemperature` of type `LP_DEVICE_TWIN_BINDING`. This variable maps the Azure IoT Hub device twin `DesiredTemperature` with a handler function named `DeviceTwinSetTemperatureHandler`.
+The following example declares a variable named `desiredTemperature` of type `LP_DEVICE_TWIN_BINDING`. This variable maps the Azure IoT hub device twin `DesiredTemperature` with a handler function named `DeviceTwinSetTemperatureHandler`.
 
 ```
 static LP_DEVICE_TWIN_BINDING desiredTemperature = { 
