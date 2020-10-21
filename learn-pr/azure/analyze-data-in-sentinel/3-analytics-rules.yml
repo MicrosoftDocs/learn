@@ -2,8 +2,8 @@
 uid: learn.azure.analyze-data-in-sentinel.3-analytics-rules
 metadata:
   title: Types of analytics rules
-  description: TODO
-  ms.date: TODO
+  description: Identify different template rules to create analytic rules
+  ms.date: 10/21/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -15,31 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "Which one of the analytic rules you can customize with your own query rules?"
     choices:
-    - content: "Answer 1"
+    - content: "Fusion"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "Fusion detection is enabled by default in Azure Sentinel."
+    - content: "Machine Learning Behavioral Analytics"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
-      isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
-  - content: "Question 2"
+      explanation: "Machine learning behavioral analytics rules are built in rules and they can not be edit."
+    - content: "Scheduled Analytic rules"
+      isCorrect: true
+      explanation: "Scheduled Analytic rules provides the highest level of customization."
+  - content: "Which one of the template rules can create incidents based on all alerts generated in Azure Security Center? "
     choices:
-    - content: "Answer 1"
+    - content: "Machine Learning Behavioral Analytics"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "Machine Learning Behavioral Analytics can detect anomalius logon activity, but they require additional configuration of the data source."
+    - content: "Fusion"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
-      isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: " Fusion technology detects multistage attacks by identifying combinations of anomalous behaviors and suspicious activities observed at various stages of the kill chain."
+    - content: "Microsoft Security"
+      isCorrect: true
+      explanation: "Microsoft Security template rules can create incidents based on all alerts generated in Azure Security Center."
