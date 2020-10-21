@@ -66,51 +66,59 @@ So let's begin with the details.
 
 ### 1. Set up Feature Management
 
-Add a reference to the `Microsoft.FeatureManagement` NuGet package to use the .NET Core feature manager. The library gets feature flags from the framework's native configuration system. Therefore, you can define your app's feature flags by using any configuration provider that .NET Core supports, for instance, *appsettings.json* file or environment variables.
+1. Add a reference to the `Microsoft.FeatureManagement` NuGet package to use the .NET Core feature manager.
 
-In this case, we'll make the configuration in the *appsettings.json* and in the SPA Helm chart's ConfigMap file.
+    ```dotnetcli
+    dotnet add package Microsoft.FeatureManagement --version 2.2.0
+    ```
 
-By default, the feature manager retrieves feature flags from the `FeatureManagement` section of the configuration data. We'll also add another parameter named `UseFeatureManagement`.
+    The library gets feature flags from the framework's native configuration system. Therefore, you can define your app's feature flags by using any configuration provider that .NET Core supports. For example, the *appsettings.json* file or environment variables. In this case, we'll make the configuration in the *appsettings.json* and in the SPA Helm chart's ConfigMap file.
 
-Add the following parameters to the *appsettings.json* file:
+1. Add the following properties to the *appsettings.json* file:
 
-```json
-  "UseFeatureManagement": true,
-  "FeatureManagement": {
+    ```json
+    "UseFeatureManagement": true,
+    "FeatureManagement": {
     "Coupons": true
-  }
-```
+    }
+    ```
 
-The `UseFeatureManagement` will be our main feature toggle, it isn't something imposed by the Feature Management library. The values above will become the default ones for the SPA.
+    By default, the feature manager retrieves feature flags from the `FeatureManagement` section of the configuration data. We'll also add another parameter named `UseFeatureManagement`.
 
-We'll also add the following values to the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file:
+    The `UseFeatureManagement` will be our main feature toggle, it isn't something imposed by the Feature Management library. The values above will become the default ones for the SPA.
 
-```yaml
-  UseFeatureManagement: "True"
-  FeatureManagement__Coupons: "True"
-```
+1. Add the following values to the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file:
 
-To register the feature management services in the IoC container, add the following lines to the `ConfigureServices` method in *Startup.cs*:
+    ```yaml
+    UseFeatureManagement: "True"
+    FeatureManagement__Coupons: "True"
+    ```
 
-In the *Startup.cs* file's `ConfigureServices` method, replace the comment `// Add the AddFeatureManagement code` with the following code:
+1. In the *Startup.cs* file's `ConfigureServices` method, replace the comment `// Add the AddFeatureManagement code` with the following code:
 
-```csharp
-if (Configuration.UseFeatureManagement())
-{
-    services.AddFeatureManagement();
-}
-```
+    ```csharp
+    if (Configuration.UseFeatureManagement())
+    {
+        services.AddFeatureManagement();
+    }
+    ```
 
-The preceding code enables the Feature Management to read the state of features in the `FeatureManagement` configuration section. *Coupons* in our case.
+    The preceding code enables the Feature Management services to read the state of features in the `FeatureManagement` configuration section. *Coupons* in our case.
 
-As mentioned before, for the SPA to query the coupon's feature state, you need to expose an endpoint. In the *Startup.cs* file's `Configure` method, replace the comment `// Add the MapFeatureManagement code` with the following code:
+1. In *Startup.cs*, uncomment the `//using Microsoft.FeatureManagement;` line at the top of the file. Save your changes.
 
-```csharp
-if (Configuration.UseFeatureManagement())
-{
-    endpoints.MapFeatureManagement(pattern: "features");
-}
-```
+    The preceding code resolves the calls to `Metrics.CreateCounter` and `UseMetricServer`.
+
+    As mentioned before, for the SPA to query the coupon's feature state, you need to expose an endpoint.
+
+1. In the *Startup.cs* file's `Configure` method, replace the comment `// Add the MapFeatureManagement code` with the following code:
+
+    ```csharp
+    if (Configuration.UseFeatureManagement())
+    {
+        endpoints.MapFeatureManagement(pattern: "features");
+    }
+    ```
 
 ### 2. Use the featureFlag directive in the views
 
@@ -169,48 +177,48 @@ Something similar occurs in the *src\Web\WebSPA\Client\src\modules\orders\orders
 
 ## Deploy the SPA to your AKS cluster
 
-To deploy the updated SPA you have to build and publish a new image to ACR, with this script:
+1. To deploy the updated SPA, build and publish a new image to ACR, with this script:
 
-```bash
-./build-to-acr.sh --services webspa
-```
+    ```bash
+    ./build-to-acr.sh --services webspa
+    ```
 
-The process will take a few minutes and it should begin with something like this:
+    The process will take a few minutes and it should begin with something like this:
 
-:::image type="content" source="../media/4-implement-feature-flag/build-to-acr.png" alt-text="Initial output from the build-to-acr script" border="true" lightbox="../media/4-implement-feature-flag/build-to-acr.png":::
+    :::image type="content" source="../media/4-implement-feature-flag/build-to-acr.png" alt-text="Initial output from the build-to-acr script" border="true" lightbox="../media/4-implement-feature-flag/build-to-acr.png":::
 
-And should end with something like this:
+    And should end with something like this:
 
-:::image type="content" source="../media/4-implement-feature-flag/build-to-acr-end.png" alt-text="Final output from the build-to-acr script, highlighting that the webspa image has been pushed" border="true" lightbox="../media/4-implement-feature-flag/build-to-acr-end.png":::
+    :::image type="content" source="../media/4-implement-feature-flag/build-to-acr-end.png" alt-text="Final output from the build-to-acr script, highlighting that the webspa image has been pushed" border="true" lightbox="../media/4-implement-feature-flag/build-to-acr-end.png":::
 
-And now you just need to deploy the updated chart to AKS.
+    And now you just need to deploy the updated chart to AKS.
 
-First run this command to set the environment variables set to the appropriate values:
+1. Run the following command to set the environment variables set to the appropriate values:
 
-```bash
-eval $(cat ~/clouddrive/source/create-acr-exports.txt)
-```
+    ```bash
+    eval $(cat ~/clouddrive/source/create-acr-exports.txt)
+    ```
 
-And then run this script to deploy to AKS:
+1. And then run this script to deploy to AKS:
 
-```bash
-./deploy-application.sh --charts webspa
-```
+    ```bash
+    ./deploy-application.sh --charts webspa
+    ```
 
-After a few seconds, you should be able to use the app as usual. You won't see any difference now, because the coupon feature is configured as enabled by default.
+    After a few seconds, you should be able to use the app as usual. You won't see any difference now, because the coupon feature is configured as enabled by default.
 
-Now update the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file to disable the coupons feature like this:
+1. Update the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file to disable the coupons feature like this:
 
-```yaml
-  UseFeatureManagement: "True"
-  FeatureManagement__Coupons: "False"
-```
+    ```yaml
+    UseFeatureManagement: "True"
+    FeatureManagement__Coupons: "False"
+    ```
 
-And redeploy the app again, there's no need to rebuild the image. Just run:
+1. Redeploy the app again. There's no need to rebuild the image. Just run:
 
-```bash
-./deploy-application.sh --charts webspa
-```
+    ```bash
+    ./deploy-application.sh --charts webspa
+    ```
 
 If you place an item in the basket and go to check out, you should now see something like this:
 
@@ -224,19 +232,19 @@ You can also query the features endpoint with `/features?featureName=coupons` to
 
 ## Create an App Configuration store instance
 
-To create an Azure App Configuration store, you just have to execute the following script:
+1. Run the following script to create an App Configuration store:
 
-```bash
-./create-app-config.sh
-```
+    ```bash
+    ./create-app-config.sh
+    ```
 
-You should get something like this:
+    You should get something like this:
 
-:::image type="content" source="../media/4-implement-feature-flag/create-app-configuration.png" alt-text="Output from the create-app-config script" border="true" lightbox="../media/4-implement-feature-flag/create-app-configuration.png":::
+    :::image type="content" source="../media/4-implement-feature-flag/create-app-configuration.png" alt-text="Output from the create-app-config script" border="true" lightbox="../media/4-implement-feature-flag/create-app-configuration.png":::
 
-Copy the connection string, because you'll use it in a moment.
+1. Copy the connection string. You'll use it in a moment.
 
-## Wire up eShopOnContainers to App Configuration
+## Connect your app to App Configuration
 
 To connect your app to the new App Configuration store:
 
@@ -252,7 +260,7 @@ Let's get on with the details.
 Add another line to the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file to configure the App Configuration connection string as shown next:
 
 ```yaml
-  AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;Id=...;Secret=..."
+AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;Id=...;Secret=..."
 ```
 
 ### 2. Add a sentinel key for the App Configuration
@@ -261,12 +269,12 @@ This is a special key used to signal when configuration has changed. Your app mo
 
 To create the sentinel key:
 
-- Browse to the resource group in the Azure portal.
-- Open the App Configuration previously created.
-- Select Configuration Explorer > Create > Key-value.
-- Enter the following values:
-  - Key: `AppConfig:Sentinel`
-  - Value: `1`
+1. Browse to the resource group in the Azure portal.
+1. Open the App Configuration previously created.
+1. Select **Configuration Explorer** > **Create** > **Key-value**.
+1. Enter the following values:
+    - Key: `AppConfig:Sentinel`
+    - Value: `1`
 
 You should have something like this:
 
