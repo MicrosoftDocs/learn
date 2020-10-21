@@ -8,7 +8,7 @@ In order to set up Visual Studio Code for .NET debugging, we'll need a .NET proj
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
-1. Create a new folder named `DotnetDebug` in the location of your choice, and then click **Select Folder**.
+1. Create a new folder named `DotnetDebugging` in the location of your choice, and then click **Select Folder**.
 
 1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
@@ -18,7 +18,7 @@ In order to set up Visual Studio Code for .NET debugging, we'll need a .NET proj
     dotnet new console
     ```
 
-    This command creates a **Program.cs** file in your folder with a basic "Hello World" program already written, along with a C# project file named **dotnet-debug.csproj**.
+    This command creates a **Program.cs** file in your folder with a basic "Hello World" program already written, along with a C# project file named **DotnetDebugging.csproj**.
 
 1. In the terminal window, copy and paste the following command to run the "Hello World" program.
 
@@ -46,26 +46,51 @@ You can close the tab titled "Extension: C#" to focus on the code we'll be debug
 
 ## Enhance the app
 
-Our current project just writes a "Hello World" message to the console, which doesn't give us much to debug. We'll add a little code to make it a little more interesting.
+Our current project just writes a "Hello World" message to the console, which doesn't give us much to debug. Instead, you'll use a short .NET program to compute the *N*<sup>th</sup> number of the Fibonacci sequence.
+
+The Fibonacci sequence is a suite of numbers that starts with the number 0 and 1, with every other following number being the sum of the two previous ones. The sequence continues like that:
+
+```text
+0, 1, 1, 2, 3, 5, 8, 13, 21...
+```
 
 1. Open *Program.cs* by clicking on it.
 
-1. Replace the contents of the `Main` method in *Program.cs*, which is the line that calls `Console.WriteLine`, with the following code:
+1. Replace the contents of the *Program.cs* with the following code:
 
     ```csharp
-    Console.WriteLine("\nWhat is your name? ");
-    var name = Console.ReadLine();
-    var date = DateTime.Now;
-    Console.WriteLine($"\nHello, {name}, on {date:d} at {date:t}!");
-    Console.Write("\nPress any key to exit...");
-    Console.ReadKey(true);
+    using System;
+    
+    namespace DotnetDebugging
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                int result = Fibonacci(5);
+                Console.WriteLine(result);
+            }
+            static int Fibonacci(int n)
+            {
+                int n1 = 0;
+                int n2 = 1;
+                int sum = 0;
+    
+                for (int i = 2; i < n; i++)
+                {
+                    sum = n1 + n2;
+                    n1 = n2;
+                    n2 = sum;
+                }
+    
+                return n == 0 ? n1 : n2;
+            }
+    
+        }
+    }
     ```
-
-   This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the [System.DateTime.Now](https://docs.microsoft.com/dotnet/api/system.datetime.now#System_DateTime_Now) property, which contains the current local time, and assigns it to a variable named `date`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the [System.Console.ReadKey(System.Boolean)](https://docs.microsoft.com/dotnet/api/system.console.readkey#System_Console_ReadKey_System_Boolean_) method to wait for user input.
-
-   The `\n` represents a newline character.
-
-   The dollar sign (`$`) in front of a string lets you put expressions such as variable names in curly braces in the string. The expression value is inserted into the string in place of the expression. This syntax is referred to as [interpolated strings](../../csharp/language-reference/tokens/interpolated.md).
+> [!NOTE]
+> This code contains an error, which we'll be debugging later in this module. We don't recommend that you use it in any mission critical Fibonacci applications until we get that bug fixed.
 
 1. Save your changes.
 
@@ -75,9 +100,9 @@ Our current project just writes a "Hello World" message to the console, which do
    dotnet run
    ```
 
-1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
+   :::image type="content" source="../media/run-modified-program.png" alt-text="Terminal window with modified program output":::
 
-   :::image type="content" source="..media/run-modified-program.png" alt-text="Terminal window with modified program output":::
+1. You'll see that the result, 3, is shown in the terminal output. Consulting your Fibonacci chart, you'll see that the result should have been 5. It's time to get familiar with the debugger and fix this program.
 
 1. Press any key to exit the program.
 
@@ -93,7 +118,7 @@ To add a breakpoint in your code, open your `Program.cs` file and then select th
 
 :::image source="../media/breakpoint.png" alt-text="Screenshot of a breakpoint added in the Visual Studio Code editor window.":::
 
-If you right-click to add a breakpoint, you can also choose **Add Conditional Breakpoint**. This is a special kind of breakpoint that allows you to enter a *condition* for breaking execution. This breakpoint will only be active when the specified condition is met.
+If you right-click to add a breakpoint, you can also choose **Add Conditional Breakpoint**. This is a special kind of breakpoint that allows you to enter a *condition* for breaking execution. This breakpoint will only be active when the specified condition is met. You can also modify an existing breakpoint by right-clicking on it and selecting **Edit Breakpoint**.
 
 :::image source="../media/conditional-breakpoint.png" alt-text="Screenshot of setting a conditional breakpoint in Visual Studio Code.":::
 
@@ -107,7 +132,6 @@ After you've set up your breakpoints and started your app, new information panel
 1. Variables state
 1. Watched variables state
 1. Current call stack
-1. Loaded script files
 1. Call stack
 1. Execution controls
 1. Current execution step
@@ -157,32 +181,14 @@ Every time your program enters a function, an entry is added to the call stack. 
 It's useful to find the source of an exception. If you have an unexpected crash in your program, you'll often see something like this in the console:
 
 ```text
-/Users/learn/nodejs/index.js:22
-  return value.toFixed(2);
-               ^
-TypeError: Cannot read property 'toFixed' of undefined
-    at formatValueForDisplay (/Users/learn/nodejs/index.js:22:16)
-    at printForeignValues (/Users/learn/nodejs/index.js:31:28)
-    at Object.<anonymous> (/Users/learn/nodejs/index.js:39:1)
-    at Module._compile (internal/modules/cjs/loader.js:956:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
-    at Module.load (internal/modules/cjs/loader.js:812:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
-    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
-    at internal/main/run_main_module.js:17:11
+Unhandled exception. System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at OrderProcessor.OrderQueue.ProcessNewOrders(String[] orderIds) in C:\Users\Repos\OrderProcessor\OrderQueue.cs:line 12
+   at OrderProcessor.Program.Main(String[] args) in C:\Users\Repos\OrderProcessor\Program.cs:line 9
 ```
 
 The group of `at [...]` lines under the error message is called a *stack trace*. The stack trace gives the name and origin of every function that was called before ending up with the exception. It can be a bit difficult to decipher though, because it also includes internal functions from the .NET runtime.
 
 That's where the Visual Studio Code **Call stack** panel comes in handy. It filters out unwanted information to show you only the relevant functions from your own code by default. You then can unwind this call stack to find out where the exception originated from.
-
-To help you even more, you can select the **Restart frame** button that appears when you hover a function name in the stack. It will "rewind" the execution back to the beginning of that function by actually restarting your program up to that point.
-
-:::image source="../media/restart-frame.png" alt-text="Screenshot of the Restart frame button in the Visual Studio Code call stack panel.":::
-
-### View loaded script files
-
-This panel displays all the JavaScript files that have been loaded so far. In large projects, sometimes it can be useful to check which file the current code is executing from.
 
 ### Breakpoints
 
@@ -210,15 +216,3 @@ The debug console can be shown or hidden by selecting **Ctrl+Shift+Y** (Windows,
 You can enter a JavaScript expression in the input field at the bottom of the debug console. Then select **Enter** to evaluate it. The result displays directly in the console.
 
 This way, you can quickly check a variable value, test a function with different values, or alter the current state.
-
-#### Add logpoints
-
-If you want to follow the execution of your program by using logs, there's an alternative to using `console.log` to do that. You can use *logpoints*.
-
-By right-clicking in the same area that you used to add a breakpoint, you can select **Add logpoint**.
-
-:::image source="../media/logpoint.png" alt-text="Screenshot of adding a logpoint in Visual Studio Code.":::
-
-Enter a message to display at that point in your code. It's even possible to print expressions by enclosing them in brackets by using `{<EXPRESSION>}`.
-
-Like breakpoints, logpoints don't alter your code in any way and are used only during debugging. You don't have an excuse anymore to let that forgotten `console.log('here')` slip to production.

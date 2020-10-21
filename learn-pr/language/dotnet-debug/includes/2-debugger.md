@@ -9,7 +9,7 @@ You probably already have tried one or more of these debugging approaches yourse
 - Explain your issue to a rubber duck.
 - Read through your code again to find out the issue.
 - Take a walk outside.
-- Spam a few `Console.WriteLine('here')` messages in your code.
+- Spam a few `Console.WriteLine("here")` messages in your code.
 
 While you might have various degrees of success with these methods, there's one other approach commonly regarded as being more often successful: using a debugger. But what's a debugger exactly?
 
