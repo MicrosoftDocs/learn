@@ -36,15 +36,15 @@ The feature flag directive is used in any `div` element to determine whether it 
 
 ### 2. Feature Management middleware for querying values
 
-This is one of the key components of the feature flag system implemented here, as it allows you to query the specific feature flag values so they can be used in the SPA.
+A custom middleware, found at *src\Web\WebSPA\Infrastructure\Middlewares\FeatureManagementMiddleware.cs*, is a key component of the SPA's feature flag system. The middleware allows you to query the specific feature flag values so they can be used in the SPA:
+
+:::code language="csharp" source="../code/src/web/webspa/infrastructure/middlewares/featuremanagementmiddleware.cs" id="snippet_Invoke" highlight="8":::
 
 As a refresher, a middleware is just a handler for requests that sits in the ASP.NET Core's request pipeline. Think of it like a "light" controller that processes the raw `HttpContext` and returns a value by writing directly to the `Response` object. For more in-depth information, see the [ASP.NET Core Middleware](/aspnet/core/fundamentals/middleware/) document.
 
 The Feature Management library is implemented to work on the server side. That's fine when using MVC or Razor Pages, but we need to use the configuration data in our SPA. So the directive mentioned in the previous section will query the `/features` endpoint, implemented as this middleware, to get the feature state. The middleware will just get the configuration values from the feature manager that, in turn, gets them from the ASP.NET Core configuration infrastructure.
 
-You can think of this middleware as a proxy or broker between the SPA and the Feature Management service.
-
-You can find the middleware in the file *src\Web\WebSPA\Infrastructure\Middlewares\FeatureManagementMiddleware.cs*.
+You can think of this middleware as a proxy or broker between the SPA and the Feature Management service. You can find the middleware in the file *src\Web\WebSPA\Infrastructure\Middlewares\FeatureManagementMiddleware.cs*.
 
 ### 3. Configuration extensions
 
@@ -100,7 +100,7 @@ So let's begin with the details.
     1. In the `ConfigureServices` method, replace the comment `// Add the AddFeatureManagement code` with the following code:
 
         ```csharp
-        if (Configuration.UseFeatureManagement())
+        if (Configuration["UseFeatureManagement"])
         {
             services.AddFeatureManagement();
         }
@@ -117,7 +117,7 @@ So let's begin with the details.
     1. In the `Configure` method, replace the comment `// Add the MapFeatureManagement code` with the following code:
 
         ```csharp
-        if (Configuration.UseFeatureManagement())
+        if (Configuration["UseFeatureManagement"])
         {
             endpoints.MapFeatureManagement(pattern: "features");
         }
@@ -316,7 +316,7 @@ The `ConfigureRefresh` method specifies the settings to update the configuration
 In the `Configure` method of *Startup.cs*, replace the comment `// Add the UseAzureAppConfiguration code` with the following code:
 
 ```csharp
-if (Configuration.UseFeatureManagement())
+if (Configuration["UseFeatureManagement"])
 {
     app.UseAzureAppConfiguration();
 }
