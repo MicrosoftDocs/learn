@@ -3,7 +3,7 @@ uid: learn.azure.analyze-data-in-sentinel.6-manage-analytics-rules
 metadata:
   title: Manage analytics rules
   description: TODO
-  ms.date: TODO
+  ms.date: 10/21/2021
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -15,31 +15,26 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "You need temporary to stop receiving alerts from analytic rules, due the maintenance activity. Which of the actions you should enable on the rule to achieve that configuration? "
     choices:
-    - content: "Answer 1"
+    - content: "Delete"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "Delete action will permanently stop receiving alerts from the analytic rule."
+    - content: "Disable"
+      isCorrect: true
+      explanation: "Disabled rules keep all the configuration, and will temporary stop creating the alerts from the configured detections, while the rule is disabled."
+    - content: "Duplicate"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
-      isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
-  - content: "Question 2"
+      explanation: "Duplicating the rule will have the same logic as the original analytic rule and will continue to generate the alerts."
+  - content: "What will be the most efficient way to tune existing analytic rule?"
     choices:
-    - content: "Answer 1"
+    - content: "Delete and recreate the alert with the new logic."
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "Deleting the analytic rule will require more effort to build the same query logic and tunne accordingly."
+    - content: "Duplicate the rule and modify the neccesery changes."
+      isCorrect: true
+      explanation: "When you duplicate the rule, you have startup configuration provided from the original rule, that can be further modify."
+    - content: "Create a new rule."
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
-      isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "Creation of the new analytic rule will require to provide more inputs to achieved the required customization, instead of simply duplicating the rule."
+   
