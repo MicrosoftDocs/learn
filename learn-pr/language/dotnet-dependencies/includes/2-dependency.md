@@ -41,7 +41,7 @@ There are several ways to install packages. There is a built-in Package Manager 
 
 Individual developers might use the global registry at NuGet.org to find and download packages they need for their apps. A company might have a strategy in place for what packages are OK to use and where to find them. 
 
-:::image source="../media/finding-nuget.png" alt-text="List of popular packages on NuGet.org":::
+:::image source="../media/finding-nuget.png" alt-text="Screenshot of NuGet.org showing a list of popular packages.":::
 
 Packages might be located in many different places. Some of these sources might be publicly available. Some might be restricted and accessible only to employees of a specific company. Here are some places where packages might reside:
 
