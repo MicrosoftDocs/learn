@@ -2,7 +2,7 @@ Modern software systems running in the cloud are complex, and gaining visibility
 
 Tailwind Traders, a traditional brick-and-mortar retailer, is now experiencing explosive growth by selling products online. The company is seeking to tighten and operationalize control of its cloud environment. It faces several challenges, from needing to optimize its cloud spend and security posture to tracking intermittent issues and planning ahead for upcoming outages. However, the company needs help with choosing the right product option for each of these scenarios.
 
-In this module, you'll learn about the several Microsoft monitoring solutions, and you'll analyze decision criteria that experts use to select the right service for a specific scenarios.
+In this module, you'll learn about the several Microsoft monitoring solutions, and you'll analyze decision criteria that experts use to select the right service for a specific scenario.
 
 ## Learning objectives
 
