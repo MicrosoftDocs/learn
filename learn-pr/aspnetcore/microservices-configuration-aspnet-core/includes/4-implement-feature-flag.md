@@ -94,31 +94,32 @@ So let's begin with the details.
     FeatureManagement__Coupons: "True"
     ```
 
-1. In the *Startup.cs* file's `ConfigureServices` method, replace the comment `// Add the AddFeatureManagement code` with the following code:
+1. Apply the following changes in the *Startup.cs* file:
+    1. In the `ConfigureServices` method, replace the comment `// Add the AddFeatureManagement code` with the following code:
 
-    ```csharp
-    if (Configuration.UseFeatureManagement())
-    {
-        services.AddFeatureManagement();
-    }
-    ```
+        ```csharp
+        if (Configuration.UseFeatureManagement())
+        {
+            services.AddFeatureManagement();
+        }
+        ```
 
-    The preceding code enables the Feature Management services to read the state of features in the `FeatureManagement` configuration section. *Coupons* in our case.
+        The preceding code enables the Feature Management services to read the state of features in the `FeatureManagement` configuration section. *Coupons* in our case.
 
-1. In *Startup.cs*, uncomment the `//using Microsoft.FeatureManagement;` line at the top of the file. Save your changes.
+    1. Uncomment the `//using Microsoft.FeatureManagement;` line at the top of the file. Save your changes.
 
-    The preceding code resolves the calls to `Metrics.CreateCounter` and `UseMetricServer`.
+        The preceding code resolves the call to `AddFeatureManagement`.
 
-    As mentioned before, for the SPA to query the coupon's feature state, you need to expose an endpoint.
+        As mentioned before, for the SPA to query the coupon's feature state, you need to expose an endpoint.
 
-1. In the *Startup.cs* file's `Configure` method, replace the comment `// Add the MapFeatureManagement code` with the following code:
+    1. In the `Configure` method, replace the comment `// Add the MapFeatureManagement code` with the following code:
 
-    ```csharp
-    if (Configuration.UseFeatureManagement())
-    {
-        endpoints.MapFeatureManagement(pattern: "features");
-    }
-    ```
+        ```csharp
+        if (Configuration.UseFeatureManagement())
+        {
+            endpoints.MapFeatureManagement(pattern: "features");
+        }
+        ```
 
 ### 2. Use the featureFlag directive in the views
 
