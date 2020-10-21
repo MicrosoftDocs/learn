@@ -27,7 +27,7 @@ You are entering the KQL query string in the **Rule query** and then in the **Re
 
 Here&#39;s a sample query that would alert you when an anomalous number of resources is created in Azure Activity.
 
-Kusto
+'''Kusto
 
 AzureActivity
 
@@ -37,9 +37,11 @@ AzureActivity
 
 | make-seriesdcount(ResourceId)  default=0 on EventSubmissionTimestamp inrange(ago(7d), now(), 1d) by Caller
 
-_ **Tip** _
+'''
 
-**For assistance with the query language, see the Query Language Reference at [**https://docs.microsoft.com/en-us/azure/kusto/query/**](https://docs.microsoft.com/en-us/azure/kusto/query/)
+> [!**Tip**]
+
+> **For assistance with the query language, see the Query Language Reference at [**https://docs.microsoft.com/en-us/azure/kusto/query/**](https://docs.microsoft.com/en-us/azure/kusto/query/)
 
 In the  **Map entities**  section, you can define the entities that are returned as part of query rule and can be used to perform in-depth analysis. You can **Add** these entities in the query rule, and they can provide visual investigation, because they will appear as a group into Incident settings tab. Some of the entities can contains information that represents a user, host, or IP address.
 
