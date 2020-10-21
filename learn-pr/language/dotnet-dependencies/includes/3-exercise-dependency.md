@@ -32,7 +32,7 @@ In order to set up our .NET project to work with dependencies we will use Visual
     dotnet run
     ```
 
-    The terminal window displays "Hello World!" as output.
+The terminal window displays "Hello World!" as output.
 
 :::image source="../media/new-dotnet-project.png" alt-text="Screenshot of Visual Studio Code with a new console application.":::
 
@@ -146,5 +146,4 @@ You can close the tab titled "Extension: C#" to focus on the code we'll be writi
     ```
 
 Congratulations. You've managed to successfully install Humanizer as a dependency and write logic for application code to make data more human readable. Humanizer seems to deliver on its promise, and Tailwind Traders is likely to be happy with this evaluation.
-
 
