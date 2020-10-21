@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.azure.stack-hci-arc-integration
+metadata:
+  title: Integrate Azure Arc and Azure Stack HCI
+  description: TODO
+  ms.date: TODO
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Integrate Azure Arc and Azure Stack HCI
+summary: TODO
+abstract: |
+  In this module you will:
+  - TODO
+  - TODO
+  - TODO
+prerequisites: |
+  - TODO
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.azure.stack-hci-arc-integration.1-introduction
+- learn.azure.stack-hci-arc-integration.2-azure-arc-capabilities
+- learn.azure.stack-hci-arc-integration.3-manage-virtualized-workloads
+- learn.azure.stack-hci-arc-integration.4-monitor-virtualized-workloads
+- learn.azure.stack-hci-arc-integration.5-summary
+badge:
+  uid: learn.learn.azure.stack-hci-arc-integration
