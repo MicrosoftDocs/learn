@@ -9,7 +9,7 @@ Here, you will deploy an Azure Resource Manager (ARM) template from a sample rep
 
 The second deployment will include the *what-if* operation in order to review the expected changes.
 
-This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools?azure-portal=true). Be sure to install this extension in Visual Studio Code.
+This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
 ## What-if prerequisites
 
