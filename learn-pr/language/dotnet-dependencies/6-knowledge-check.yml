@@ -39,7 +39,7 @@ quiz:
           explanation: "That is incorrect, this is the Patch version. A change to this number means that a change has been applied that fixes something in the code that should have worked."
         - content: "1.0.0 changes to 2.0.0"
           isCorrect: false
-          explanation: "That is incorrect, this is the Major version. A change to this number means that you can expect breaking changes in code."
+          explanation: "The first number is the Major version. A change to this number means that you can expect breaking changes in code."
     - content: "How do you configure a project file so that you get only patch (bug fix) updates?"
       choices:
         - content: "Locate the entry in the project file and set the entry to look like this one: `<PackageReference Include=\"<package>\" Version=\"*\"/>`"
