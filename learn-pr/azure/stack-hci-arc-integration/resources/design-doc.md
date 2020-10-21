@@ -1,86 +1,130 @@
-# Title
+# Integrate Azure Arc and Azure Stack HCI
 
-*Add the working title [(Title guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title)*
+## Learner roles
 
-## Role(s)
+- Administrator
+- Security engineer
+- Solution architect
+- Student
+- Technology manager
 
-- *Add the role(s)* [Role guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#role)
+## Learner level
 
-## Level
+- **Beginner**: Introductory and overview material that assumes little or no expertise with the topic. Its covers topic concepts, functions, features, and benefits.
 
-- *Add the level*  [Level guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#level)
+## Products taught
 
-## Product(s)
-
-- *Add the product(s)*
+- Azure Stack HCI
+- Azure Arc
+- Azure Resource Manager
 
 ## Prerequisites
 
-- *List the prerequisites [(Prerequisite guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites)*
+To get the best learning experience from this module, you should have knowledge of:
 
-## Summary
+- Windows Server Hyper-V
+- Windows Server-based software-defined storage
+- Windows Server-based software-defined networking
+- Architecture and operating principles of Azure Stack HCI
+- Azure Resource Manager
 
-*Add the summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries)*
+## Module summary description
 
-## Learning objectives
+This module introduces you to integration between Azure Arc and Azure Stack HCI, including its common use cases, implementation process, core capabilities, and their management.
 
-1. *Add numbered Learning Objectives [(Learning objective guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives)*
+## Subtasks in this module
 
-## Chunk your content into subtasks
+- What is Azure Arc?
+- Leverage Azure Arc to deploy Azure Stack HCI virtual machines (VMs).
+- Leverage Azure Arc to provide centralized monitoring of Azure Stack HCI clusters.
 
-Identify the subtasks of *module title*
+## Lab exercise
 
-| Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
-| ---- | ---- | ---- | ---- | ---- |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
+None
 
-## Outline the units
+## Module learning objectives
 
-*Add more units as needed for your content*
+- Describe use cases and capabilities of integrating Azure Arc and Azure Stack HCI-based workloads.
+- Describe Azure Resource Manager-based capabilities available to Azure Stack HCI workloads.
+- Describe cloud-based monitoring of Azure Stack HCI and its workloads.
 
-1. **Introduction**
+## Estimated module duration
 
-    Provide a scenario of a real-world job-task that shows how the technology is used in practice:
+30 minutes
 
-    *Add your scenario [(Scenario guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios)*
+## Module outline of units
+<!--LM: The other modules include a numbered list of the unit headings here. Please consider adding this here and removing the next heading "number of units per module" and the number 5.-->
+### Number of units per module
 
-1. **Learning-content unit title**
+5
 
-    List the content that will enable the learner to *subtask*:
+## First unit: Introduction
 
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+**Type of unit:** Introduction unit
 
-    **Knowledge check**
+**Estimated unit duration:** 3 minutes
 
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+### Module scenario
 
-    - Question type
-    - Question type
+Contoso, Ltd. is a midsize financial services company with its headquarters in London, England. It currently operates almost entirely on-premises. Much of its compute environment runs on the Windows Server platform, which includes virtualized workloads on Windows Server 2012 R2 and Microsoft Hyper-V hosts in Windows Server 2016. Its internal IT staff is well-versed in Microsoft technologies, including its virtualization and software-defined datacenter offerings.
 
-1. **Exercise - exercise unit title**
+In recent months, Contoso IT migrated some of its applications to Azure infrastructure as a service (IaaS) and platform as a service (PaaS) as part of datacenter consolidation and modernization initiatives. However, a number of highly regulated workloads must remain in the on-premises datacenters.
 
-    List the steps which apply the learning content from previous unit:
+Two of these workloads present a particular challenge because of their performance and resiliency requirements. The first workload is a group of Microsoft SQL Server instances hosting transactional databases for the Contoso’s loan origination department. The second workload is a set of containerized securities research department apps running on a third-party Kubernetes cluster.
 
-    1. Step
-    1. Step
-    1. Step
+Contoso’s Chief Information Officer (CIO) will need to invest in additional hardware to implement these workloads. Before they invest, they want to verify that the extra expense will help the IT organization deliver a modern technological solution and accelerate the datacenter consolidation initiative. They also want to make sure that the new implementation will provide a consistent management strategy that leverages existing IT skills and aligns with the way workloads running in Azure are administered.
+<!--LM: I replaced "methodology" with "strategy". Please revert if it doesn't work here.-->
+Given the hybrid nature of Contoso's environment, the CIO wants to explore emerging technologies that promise to bridge the gap between on-premises and cloud services. As Contoso's IT Engineering team leader, you've been asked to explore and evaluate how Contoso's capabilities can help streamline the provisioning, configuration, and maintenance of two workloads that must remain in its datacenter. With Azure Arc in public preview, you will need to determine the optimal approach that will satisfy technical and business requirements.
 
-1. **Summary**
+## Second unit: Characteristics and capabilities of Azure Arc
 
-    How did you solve the problem in the initial scenario with the knowledge learned in the module? 
-    
-    *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)*
+**Type of unit:** Learning content unit
 
-## Notes
+**Estimated unit duration:** 10 minutes
 
-Note any additional information that may be beneficial to this content such as links, reference material, etc.
+**Demonstration video:** Conceptual video illustrating Azure Stack HCI integration with Azure Resource Manager that leverages Azure Arc
+
+### Key content per learning objective
+
+Describe use cases and capabilities of integrating Azure Arc and Azure Stack HCI-based workloads. Topics include:
+
+- Describe Azure Arc and its components.
+- Describe integration of Azure Arc and Azure Stack HCI.
+- Describe use cases of Azure Arc enabled Azure Stack HCI clusters.
+- Describe capabilities of Azure Arc enabled Azure Stack HCI clusters.
+
+## Third unit: Leverage Azure Arc to manage Azure Stack HCI-based virtualized workloads
+
+**Type of unit:** Learning content unit
+
+**Estimated unit duration:** 7 minutes
+
+### Key content per learning objective
+
+Describe Azure Resource Manager-based capabilities available to Azure Stack HCI workloads. Topics include:
+
+- Leverage Azure Arc to deploy Azure Stack HCI VMs.
+- Leverage Azure Arc to manage Azure Stack HCI VMs.
+
+## Fourth unit: Leverage Azure Arc to monitor Azure Stack HCI clusters and their virtualized workloads
+
+**Type of unit:** Learning content unit
+
+**Estimated unit duration**: 7 minutes
+
+### Key content per learning objective
+
+Describe cloud-based monitoring of Azure Stack HCI and its workloads. Topics include:
+
+- Describe cloud-based monitoring of Azure Stack HCI cluster.
+- Describe cloud-based monitoring of Azure Stack HCI workloads.
+
+## Fifth unit: Summary
+
+**Type of unit:** Summary unit
+
+**Estimated unit duration:** 3 minutes
+
+### Resolution of module problem
+
+Azure Arc allowed Contoso to optimize a hybrid management model and retain their critical, highly regulated workloads in on-premises datacenters.
