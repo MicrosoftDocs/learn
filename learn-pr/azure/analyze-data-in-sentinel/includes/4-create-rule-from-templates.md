@@ -44,6 +44,6 @@ Creation of the rule from Microsoft security templates consist of the following 
 
 Creating of the analytics rule from the scheduled template rule type will be explained in the next unit Creating an Analytics rule from the wizard.
 
-NOTE:
+> [!NOTE]
 
-For some rule templates, the button **Create rule** will be grayed out, that indicates that you cannot create a rule from selected template due to missing data source.
+> For some rule templates, the button **Create rule** will be grayed out, that indicates that you cannot create a rule from selected template due to missing data source.
