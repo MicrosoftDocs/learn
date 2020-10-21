@@ -24,11 +24,11 @@ quiz:
     - content: "Azure Cognitive Services"
       isCorrect: false
       explanation: "The Personalizer service is part of Azure Cognitive Services and allows you to build recommendations to predict what a user might want.  It should not be eliminated as a candidate."
-  - content: "You need to create a human-computer interface using natural language to answer customer questions. Which product option should you eliminate as a candidate?"
+  - content: "You need to create a human-computer interface that uses natural language to answer customer questions. Which product option should you eliminate as a candidate?"
     choices:
     - content: "Azure Machine Learning"
       isCorrect: true
-      explanation: "While Azure Machine Learning could be used to create a natural language model, it would likely be cost and time prohibitive.  It should be eliminated as a candidate."
+      explanation: "Although Azure Machine Learning could be used to create a natural language model, it would likely be cost and time prohibitive.  It should be eliminated as a candidate."
     - content: "Azure Cognitive Services"
       isCorrect: false
       explanation: "Azure Cognitive Services provides natural language services. It should not be eliminated as a candidate."
@@ -39,10 +39,10 @@ quiz:
     choices:
     - content: "Azure Machine Learning"
       isCorrect: false
-      explanation: "Azure Machine Learning could be used to identify the content of product images, however creating a model to do identify the content of images would be cost and time prohibitive.  Azure Machine Learning is not the best candidate."
+      explanation: "Azure Machine Learning could be used to identify the content of product images. However, creating a model to identify the content of images would be cost and time prohibitive.  Azure Machine Learning is not the best candidate."
     - content: "Azure Cognitive Services"
       isCorrect: true
       explanation: "Azure Cognitive Services includes Vision services that can identify the content of an image.  Azure Cognitive Services is the best candidate."
-    - content: "Azure Bot Services"
+    - content: "Azure Bot Service"
       isCorrect: false
-      explanation: "Azure Bot Services can't identify the content of product images.  Azure Machine Learning is not the best candidate."
+      explanation: "Azure Bot Service can't identify the content of product images.  Azure Bot Service is not the best candidate."

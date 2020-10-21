@@ -3,7 +3,7 @@ In this walkthrough, we will create a policy assignment that requires tagging, c
 ## Exercise - Implement resource tagging
 
 > [!Note]
-> This lab requires an Azure subscription to perform.  There is no Sandbox environment avaialable for this lab.
+> This lab requires an Azure subscription to perform.  There is no Sandbox environment available for this lab.
 
 ## Task 1: Create a Policy assignment
 

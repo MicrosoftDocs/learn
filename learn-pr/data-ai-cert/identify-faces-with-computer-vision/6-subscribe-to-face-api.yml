@@ -3,13 +3,13 @@ uid: learn.data-ai.identify-faces-with-computer-vision.subscribe-to-face-api
 title: Subscribing to the Face API
 metadata:
   title: Subscribing to the Face API
-  description: Learn how to create a subscription to the Face API
-  ms.date: 01/7/2019
+  description: "Learn how to create a subscription to the Face API"
+  ms.date: 10/14/2020
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
+azureSandbox: false
 durationInMinutes: 3
 content: |
   [!include[](includes/6-subscribe-to-face-api.md)]

@@ -3234,6 +3234,81 @@
       "source_path": "learn-pr/data-ai/build-chat-bot-azure-portal/5-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-chat-bot-azure-portal/5-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/7-build-api.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/8-exercise-func-app.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/9-action.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/10-exercise-action.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwwl-data-ai/extract-insights-from-videos-with-video-indexer-service/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwwl-data-ai/extract-insights-from-videos-with-video-indexer-service/2-subscribe-to-api.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/2-subscribe-to-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwwl-data-ai/extract-insights-from-videos-with-video-indexer-service/3-upload-index-videos.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/3-upload-index-videos",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwwl-data-ai/extract-insights-from-videos-with-video-indexer-service/4-examine-output.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/4-examine-output",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwwl-data-ai/extract-insights-from-videos-with-video-indexer-service/5-find-moments-video.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/5-find-moments-video",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwwl-data-ai/extract-insights-from-videos-with-video-indexer-service/6-detect-key-aspects.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/6-detect-key-aspects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwwl-data-ai/extract-insights-from-videos-with-video-indexer-service/7-view-edit-insights.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/7-view-edit-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwwl-data-ai/extract-insights-from-videos-with-video-indexer-service/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/8-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwwl-data-ai/extract-insights-from-videos-with-video-indexer-service/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/9-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwwl-data-ai/extract-insights-from-videos-with-video-indexer-service/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/extract-insights-from-videos-with-video-indexer-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/includes/8-configure-ci-cd.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-spring-cloud-workshop",
+      "redirect_document_id": false
     }
   ]
 }

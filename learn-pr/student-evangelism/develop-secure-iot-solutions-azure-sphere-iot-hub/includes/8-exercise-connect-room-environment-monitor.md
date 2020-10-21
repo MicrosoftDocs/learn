@@ -2,7 +2,11 @@
 
 You can prepare Azure cloud resources with the Azure CLI, the Azure portal (Web interface), or deployment templates. For this module, we will be using an Azure deployment template. Click the **Deploy to Azure** button to deploy a Device Provisioning Service and a linked IoT Hub.
 
-[![Deploy to Azure](../media/deploy-azure-sphere.png)](https://azuredeploy.net/?repository=https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path/blob/master/zdocs-vs-code-iot-hub/Lab_2_Send_Telemetry_to_Azure_IoT_Central/setup)
+<!-- [![Deploy to Azure](../media/deploy-azure-sphere.png)](https://azuredeploy.net/?repository=https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path/blob/master/zdocs-vs-code-iot-hub/Lab_2_Send_Telemetry_to_Azure_IoT_Central/setup) -->
+
+<!-- [Use a deployment button to deploy templates from GitHub repository](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-azure-button) -->
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2FAzure-Sphere-Developer-Learning-Path%2Fmaster%2Fdocs%2Fdocs_vs_code_iot_hub%2FLab_2_Send_Telemetry_to_Azure_IoT_Hub%2Fsetup%2Fazuredeploy.json)
 
 1. Select or create a new resource group
 
@@ -32,12 +36,18 @@ Devices claimed by your Azure Sphere tenant will automatically be enrolled with 
 
 1. Open an **Azure Sphere Developer Command Prompt**.
 
-2. Be sure to make a note of the current directory, or change to the Azure Sphere Learning path directory. You will need the name of this directory in the next step.
-
-3. Download the Certificate Authority (CA) certificate for your Azure Sphere tenant:
+2. Log into your Azure Sphere tenant if you have not already done so.
 
    ```
-   azsphere tenant download-CA-certificate --output CAcertificate.cer
+   azsphere login
+   ```
+
+3. Be sure to make a note of the current directory, or change to the Azure Sphere Learning path directory. You will need the name of this directory in the next step.
+
+4. Download the Certificate Authority (CA) certificate for your Azure Sphere tenant:
+
+   ```
+   azsphere ca-certificate download --output CAcertificate.cer
    ```
 
 ### Upload the Azure Sphere Tenant certificate to Azure Device Provisioning Service
@@ -69,7 +79,6 @@ Devices claimed by your Azure Sphere tenant will automatically be enrolled with 
 
    ![The illustration shows verifying certificate.](../media/dps-certificate-verify.png)
 
-
 ### Generate the verification certificate
 
 1. Return to the Azure Sphere Developer Command Prompt.
@@ -77,7 +86,7 @@ Devices claimed by your Azure Sphere tenant will automatically be enrolled with 
 2. Run the following command, replacing <code> with the **Verification Code** you just copied to the clipboard. This will generate a verification certificate that you need to upload to the Device Provisioning Service.
 
    ```
-   azsphere tenant download-validation-certificate --output ValidationCertification.cer --verificationcode <code>
+   azsphere ca-certificate download-proof --output ValidationCertification.cer --verificationcode <code>
    ```
 
 ### Upload the verification certificate

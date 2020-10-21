@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-endpoint-manager.3-intune
+title: Understand Microsoft Intune
+metadata:
+  title: Understand Microsoft Intune
+  description: Learn about Microsoft Intune.
+  ms.date: 10/15/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-intune.md)]

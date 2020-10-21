@@ -116,7 +116,7 @@ Even though this approach works, it, unfortunately, has several drawbacks.
 
 - Container storage is temporary
 
-    Our log file won't persist between container instances. For example, let's assume that we stop and remove the container. When we launch a new container instance, the new instance base itself of the image specified, and all our previous data will be missing. Remember, all data in a container is destroyed with the container when we remove a container.
+    Our log file won't persist between container instances. For example, let's assume that we stop and remove the container. When we launch a new container instance, the new instance bases itself on the image specified, and all our previous data will be missing. Remember, all data in a container is destroyed with the container when we remove a container.
 
 - Container storage is coupled to the underlying host machine
 
