@@ -10,7 +10,7 @@ In this exercise, you will:
 - Make the discount coupon feature configurable.
 - Deploy the SPA to your AKS cluster.
 - Create an App Configuration store in your Azure account.
-- Wire up eShopOnContainers to the App Configuration store.
+- Wire up *eShopOnContainers* to the App Configuration store.
 
 ## Review some "infrastructure" feature flag components
 
@@ -53,13 +53,13 @@ The configuration extensions take care of:
 - Checking whether the Feature Management is enabled, and
 - Configuring the Feature Management middleware.
 
-You'll find the extensions in the *src\Web\WebSPA\Extensions* folder.
+You'll find the extensions in the *src\Web\WebSPA\Extensions* directory.
 
 ## Make the discount coupon feature configurable
 
 To accomplish this, we need to:
 
-- Set up Feature Management in the application.
+- Set up Feature Management in the app.
 - Use the feature flag directive in the views.
 
 So let's begin with the details.
@@ -177,11 +177,11 @@ To deploy the updated SPA you have to build and publish a new image to ACR, with
 
 The process will take a few minutes and it should begin with something like this:
 
-![Initial output from the build-to-acr script.](media/build-to-acr.png)
+:::image type="content" source="../media/4-implement-feature-flag/build-to-acr.png" alt-text="Initial output from the build-to-acr script" border="true" lightbox="../media/4-implement-feature-flag/build-to-acr.png":::
 
 And should end with something like this:
 
-![Final output from the build-to-acr script, highlighting that the webspa image has been pushed.](media/build-to-acr-end.png)
+:::image type="content" source="../media/4-implement-feature-flag/build-to-acr-end.png" alt-text="Final output from the build-to-acr script, highlighting that the webspa image has been pushed" border="true" lightbox="../media/4-implement-feature-flag/build-to-acr-end.png":::
 
 And now you just need to deploy the updated chart to AKS.
 
@@ -214,13 +214,13 @@ And redeploy the app again, there's no need to rebuild the image. Just run:
 
 If you place an item in the basket and go to check out, you should now see something like this:
 
-![Image description follows in text.](media/hidden-discount-coupon.png)
+:::image type="content" source="../media/4-implement-feature-flag/hidden-discount-coupon.png" alt-text="TODO" border="true" lightbox="../media/4-implement-feature-flag/hidden-discount-coupon.png":::
 
-You can see there's no discount coupon input box now. Even if you check with the browser's developer tools, you'll see that the div isn't even being rendered, so you're sure the feature flag is working as intended. 😊
+You can see there's no discount coupon input box now. Even if you check with the browser's developer tools, you'll see that the div isn't even being rendered, so you're sure the feature flag is working as intended.
 
 You can also query the features endpoint with `/features?featureName=coupons` to get the feature toggle value as a json, with the property `enabled` set to `false`, as shown in the next image:
 
-![JSON output from the /features endpoint, showing the coupons feature is not enabled.](media/feature-flag-query.png)
+:::image type="content" source="../media/4-implement-feature-flag/feature-flag-query.png" alt-text="JSON output from the /features endpoint, showing the coupons feature is not enabled" border="true" lightbox="../media/4-implement-feature-flag/feature-flag-query.png":::
 
 ## Create an App Configuration store instance
 
@@ -232,7 +232,7 @@ To create an Azure App Configuration store, you just have to execute the followi
 
 You should get something like this:
 
-![Output from the create-app-config script.](media/create-app-configuration.png)
+:::image type="content" source="../media/4-implement-feature-flag/create-app-configuration.png" alt-text="Output from the create-app-config script" border="true" lightbox="../media/4-implement-feature-flag/create-app-configuration.png":::
 
 Copy the connection string, because you'll use it in a moment.
 
@@ -270,71 +270,37 @@ To create the sentinel key:
 
 You should have something like this:
 
-![Configuration explorer view for the process described above.](media/create-app-configuration-sentinel-key.png)
+:::image type="content" source="../media/4-implement-feature-flag/create-app-configuration-sentinel-key.png" alt-text="Configuration explorer view for the process described above" border="true" lightbox="../media/4-implement-feature-flag/create-app-configuration-sentinel-key.png":::
 
 ### 3. Add the feature flag for Coupons
 
 In a similar fashion, go to the **Feature manager** section. Add a new feature named *Coupons* and enable it. You should get something like the next image:
 
-![Feature manager view for the Coupons flag, with state changed to "On".](media/appconfig-feature.png)
+:::image type="content" source="../media/4-implement-feature-flag/appconfig-feature.png" alt-text="Feature manager view for the Coupons flag, with state changed to 'On'" border="true" lightbox="../media/4-implement-feature-flag/appconfig-feature.png":::
 
 ### 4. Connect your app to the App Configuration store
 
 Apply the following changes to your ASP.NET Core project:
 
-1. Add the package `Microsoft.Azure.AppConfiguration.AspNetCore` to your project.
-1. Add Azure App Configuration as a configuration provider.
-1. Add the Azure App Configuration middleware to the request pipeline.
+### 1. Install the configuration provider package for App Configuration
 
-So let's get moving.
-
-### 1. Add the package *Microsoft.Azure.AppConfiguration.AspNetCore*
-
-Run the following command from the *src/Web/WebSPA* folder:
+Run the following command from the *src/Web/WebSPA* directory:
 
 ```dotnetcli
 dotnet add . package Microsoft.Azure.AppConfiguration.AspNetCore
 ```
 
-### 2. Add Azure App Configuration as a configuration provider
+The preceding command installs a NuGet package containing the .NET Core configuration provider for the App Configuration service.
 
-Update the *src/Web/WebSPA/Program.cs* file as shown next:
+### 2. Register App Configuration as a configuration provider
 
-```csharp
-public class Program
-{
-    //...
-    public static IWebHost BuildWebHost(string[] args) =>
-        WebHost.CreateDefaultBuilder(args)
-            .UseStartup<Startup>()
-            .UseContentRoot(Directory.GetCurrentDirectory())
-            .ConfigureAppConfiguration((builderContext, configBuilder) =>
-            {
-                configBuilder.AddEnvironmentVariables();
-                var settings = configBuilder.Build();
+Update the *src/Web/WebSPA/Program.cs* file's `BuildWebHost` method to include the following highlighted code:
 
-                if (settings.UseFeatureManagement() && !string.IsNullOrEmpty(settings["AppConfig:Endpoint"]))
-                {
-                    configBuilder.AddAzureAppConfiguration(options =>
-                    {
-                        options.Connect(settings["AppConfig:Endpoint"])
-                            .UseFeatureFlags()
-                            .ConfigureRefresh(refresh =>
-                            {
-                                refresh.Register("AppConfig:Sentinel", refreshAll: true)
-                                    .SetCacheExpiration(new TimeSpan(0, 0, 10));
-                            });
-                    });
-                }
-            })
-            //...
-            .Build();
-}
-```
+:::code language="csharp" source="../code/src/web/webspa/program.cs" highlight="8-22":::
 
-The `ConfigureRefresh` method is used to specify the settings used to update the configuration data with the App Configuration store when a refresh operation is triggered.
+The `ConfigureRefresh` method specifies the settings to update the configuration data with the App Configuration store when a refresh operation is triggered.
 
-### 3. Add the Azure App Configuration middleware
+### 3. Add the Azure App Configuration middleware to the request pipeline
 
 In the `Configure` method of *Startup.cs*, replace the comment `// Add the UseAzureAppConfiguration code` with the following code:
 
@@ -347,7 +313,7 @@ if (Configuration.UseFeatureManagement())
 
 The App Configuration middleware triggers a refresh operation for the Feature Management parameters for every incoming request. Then it's up to the `AzureAppConfiguration` provider to decide, based on the refresh settings configured in the previous step, when to actually connect to the store to get the values.
 
-## Redeploy the application to try out the Feature Toggle
+## Redeploy the app
 
 So all that's left for you to do is redeploy the SPA and check out if this works as intended.
 
@@ -369,15 +335,17 @@ And then run this script to deploy to AKS:
 ./deploy-application.sh --charts webspa
 ```
 
+## Test the feature toggle
+
 At this point, everything should be set. Complete the following steps:
 
-- Sign out of the SPA and refresh the browser, to ensure you get the latest version.
-- Sign in and buy some items. Go to checkout.
-- You should now see the discount coupon input, because the toggle was created as "On" in the portal.
-- Toggle the feature "Off" in the App Configuration store.
-- Go back to the SPA and select the basket icon in the top right.
-- Wait for 10 seconds (the refresh time set for the configuration provider).
-- Select the **CHECKOUT** button.
-- Now you shouldn't see the discount coupon input.
+1. Sign out of the SPA and refresh the browser, to ensure you get the latest version.
+1. Sign in and buy some items. Go to checkout.
+1. You should now see the discount coupon input, because the toggle was created as "On" in the portal.
+1. Toggle the feature "Off" in the App Configuration store.
+1. Go back to the SPA and select the basket icon in the top right.
+1. Wait for 10 seconds (the refresh time set for the configuration provider).
+1. Select the **CHECKOUT** button.
+1. Now you shouldn't see the discount coupon input.
 
 So this is finally what we wanted to get.

@@ -58,7 +58,7 @@ The feature management library and Azure App Configuration build seamlessly on A
 
 Perhaps the best way to illustrate this integration is to peek into the *Program.cs* configuration section on program startup:
 
-![Image description follows in text.](media/configuration-section-in-program-startup.png)
+:::image type="content" source="../media/3-review-app-configuration/configuration-section-in-program-startup.png" alt-text="TODO" border="true" lightbox="../media/3-review-app-configuration/configuration-section-in-program-startup.png":::
 
 In the previous code fragment, notice that:
 
