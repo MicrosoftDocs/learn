@@ -325,4 +325,4 @@ You could get more detailed by figuring out a more accurate percentage on your o
     memory usage: 5.8 KB
     ```
 
-Now your data is cleaned and ready to be analyzed!
+Now your data is cleansed and ready to be analyzed!

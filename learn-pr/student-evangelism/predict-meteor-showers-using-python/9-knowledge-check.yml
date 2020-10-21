@@ -13,7 +13,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Meteor Showers only happen every 2 years."
+  - content: "Meteor showers happen only once in 2 years. True or false?"
     choices:
     - content: "True, meteor showers only happen when the Earth is aligned with certain planets or moons."
       isCorrect: false

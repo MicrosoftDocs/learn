@@ -1,26 +1,26 @@
-What we have done so far is use real-world data, but we do have one more bit of information from Over the Moon that we could take into account: When Chang'e cries, she created stardust and meteor showers. 
+So far we've used real-world data. But we can account for one more bit of information from *Over the Moon*. That is, when Chang'e cries, she creates stardust and meteor showers. 
 
-Though we don't know when this might happen, we *do* know there was a moment in the film where this does happen. We can create new data that takes this into account!
+Although we don't know when this crying might happen, we *do* know that it happened at one moment in the film. We can create new data that takes this phenomenon into account!
 
-![Image of Chang'e](../media/change.png)
+![Image of Chang'e.](../media/change.png)
 
 ## Determine the right data
 
-We know that Fei Fei travels to Lunaria after the Moon Festival. Though we don't know exactly how long it takes her to prototype, test, and build her rocket, we can guestimate. 
+We know that Fei Fei travels to Lunaria after the Moon Festival. Though we don't know exactly how long it takes her to prototype, test, and build a rocket to the moon, we can make a guess. 
 
-The 2020 Chinese Moon Festival is on October 1. Since the rest of the dates we are using in this module are from 2020, let's use that one. 
+The 2020 Chinese Moon Festival was on October 1. Because the rest of the dates that we use in this module are from 2020, let's use that date. 
 
-We need to make sure we have data for each of the dataframes that we are referencing, so let's start with the meteor shower from the film. We chose the Draco constellation for Chang'e's meteor shower because it is where the Draconids meteor shower is likely to radiate from in early October, so we will use that meteor shower as inspiration for our fictional one:
+We need data for each of the data frames that we reference. So let's start with the meteor shower in the film. For Chang'e's meteor shower, let's choose the Draco constellation because it's where the Draconids meteor shower is likely to radiate from in early October. We'll use that meteor shower as inspiration for our fictional one:
 ```python
 change_meteor_shower = {'name':'Chang\'e','radiant':'Draco','bestmonth':'october','startmonth':'october','startday':1,'endmonth':'october','endday':31,'hemisphere':'northern','preferredhemisphere':'northern'}
 ```
 
-Next, we need to create a constellation entry for the Draco constellation:
+Next, create an entry for the Draco constellation:
 ```python
 draco_constellation = {'constellation':'Draco','bestmonth':'july','latitudestart':90,'latitudeend':-15,'besttime':2100,'hemisphere':'northern'}
 ```
 
-Next, we need to append these two entries into the dataframes. Go to the very top of your Python notebook file and add in two new cells after the second cell with the following code:
+Now add these two entries to the data frames. Go to the top of your Python notebook file and add two cells after the second cell. Use the following code:
 ```python
 change_meteor_shower = {'name':'Chang\'e','radiant':'Draco','bestmonth':'october','startmonth':'october','startday':1,'endmonth':'october','endday':31,'hemisphere':'northern','preferredhemisphere':'northern'}
 
@@ -35,20 +35,21 @@ constellations.append(draco_constellation, ignore_index=True)
 
 Your code should look like this:
 
-![The code with the new Chang'e meteor shower inserted at the top](../media/add-change-draco.png)
+![The code that includes the new Chang'e meteor shower at the top.](../media/add-change-draco.png)
 
-Now, rerun all of the code in your notebook by:
-1. Click on the clear all output button (stacked rectangles with an x).
-1. Click on the restart iPython kernel button (circle arrow). 
-1. Click on the Run all cells button (double-right-arrow).
+Now rerun all of the code in your notebook:
 
-At the very bottom of your Python notebook file, change the city to Beijing:
+1. Select the **Clear all output** button. (It's a stack of rectangles and a letter *x*.)
+1. Select the **Restart iPython kernel** button. (It's a circle arrow.) 
+1. Select the **Run all cells** button. (It's a double right-arrow.)
+
+At the bottom of your Python notebook file, change the city to Beijing:
 
 ```python
 print(predict_best_meteor_shower_viewing('Beijing'))
 ```
 
-And with this, you should see your output that includes the Chang'e meteor shower inspired by the film!
+Now you should see output that includes the Chang'e meteor shower!
 
 ```output
 In Beijing you can see the following meteor showers:
@@ -59,7 +60,7 @@ Perseids is best seen if you look towards the Perseus constellation on July 20, 
 Chang'e is best seen if you look towards the Draco constellation on October 16, 2020.
 ```
 
-One last change we have to make our predictive algorithm more accurate to the film: Fei Fei travels to the moon when it is big and bright, so we should change the viewing to be closer to 1. Change the predictive function after you get the moon_date_list and before the return statement:
+Let's make one last change to our predictive algorithm to align with the film. Fei Fei travels to the moon when it's big and bright, so we should make the viewing closer to 1. Change the predictive function after you get the moon_date_list and before the return statement:
 
 ```python
         if meteor_shower == 'Chang\'e':
@@ -85,6 +86,6 @@ Perseids is best seen if you look towards the Perseus constellation on July 20, 
 Though the moon will be bright, Chang'e's meteor shower is best seen if you look towards the Draco constellation on October 01, 2020.
 ```
 
-With that, we know that when Fei Fei's family is gathering for the Moon Festival, they might be able to look into the sky to see Chang'e showering them, hopefully with tears of happiness and rememberance instead of sadness.
+Now we know that when Fei Fei's family gathers for the Moon Festival, they might be able to look into the sky to see Chang'e showering them. We hope she showers them with tears of happiness and remembrance instead of sadness.
 
-![Fei Fei's family gathering for the Moon Festival](../media/moon-festival-gathering.png)
+![Fei Fei's family gathering for the Moon Festival.](../media/moon-festival-gathering.png)

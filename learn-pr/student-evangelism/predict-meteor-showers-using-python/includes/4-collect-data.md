@@ -16,29 +16,29 @@ Although meteoroids can come from comets, asteroids, moons, and planets, this mo
 
 [Comet Thatcher](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/comets/c-1861-g1-thatcher/in-depth/?azure-portal=true) was first discovered in 1861. It takes 415.5 years for comet Thatcher to orbit the sun. 
 
-The debris from this comet creates the [Lyrid meteor shower](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/lyrids/in-depth/?azure-portal=true) each April. The first recorded sighting of the Lyrid meteor shower goes back to 687 BC. 
+The debris from this comet creates the [Lyrids meteor shower](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/lyrids/in-depth/?azure-portal=true) each April. The first recorded sighting of the Lyrids meteor shower goes back to 687 BC. 
 
-The Lyrid meteor shower appears to come from the direction of the constellation Lyra. But the comet and meteor shower don't actually originate from this constellation. 
+The Lyrids meteor shower appears to come from the direction of the constellation Lyra. But the comet and meteor shower don't actually originate from this constellation. 
 
 ### Comet Halley
 
 [Comet Halley](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/comets/1p-halley/in-depth/?azure-portal=true) was first discovered in 1531. However, only in 1705 was it discovered that the comet sighted in 1531, 1607, and 1682 was the same comet. 
 
-Comet Halley takes 76 years to orbit the sun. The debris from this comet creates the [Eta Aquarid meteor shower](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/eta-aquarids/in-depth/?azure-portal=true) each May and the [Orionid meteor shower](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/orionids/in-depth/?azure-portal=true) each October. 
+Comet Halley takes 76 years to orbit the sun. The debris from this comet creates the [Eta Aquarids meteor shower](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/eta-aquarids/in-depth/?azure-portal=true) each May and the [Orionids meteor shower](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/orionids/in-depth/?azure-portal=true) each October. 
 
-The Eta Aquarid meteor shower appears to come from the direction of the constellation Aquarius. The Orionid meteor shower appears to come from direction of the constellation Orion.
+The Eta Aquarids meteor shower appears to come from the direction of the constellation Aquarius. The Orionids meteor shower appears to come from direction of the constellation Orion.
 
 ### Comet Swift-Tuttle
 
-[Comet Swift-Tuttle](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/comets/109p-swift-tuttle/in-depth/?azure-portal=true) was first discovered in 1862. This comet takes 133 years to orbit the sun. Debris from this comet creates the [Perseid meteor shower](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/perseids/in-depth/?azure-portal=true) each August. 
+[Comet Swift-Tuttle](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/comets/109p-swift-tuttle/in-depth/?azure-portal=true) was first discovered in 1862. This comet takes 133 years to orbit the sun. Debris from this comet creates the [Perseids meteor shower](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/perseids/in-depth/?azure-portal=true) each August. 
 
-It wasn't until 1865 that it was understood that this meteor shower originated from Comet Swift-Tuttle. The Perseid meteor shower appears to come from the direction of the constellation Perseus.
+It wasn't until 1865 that it was understood that this meteor shower originated from Comet Swift-Tuttle. The Perseids meteor shower appears to come from the direction of the constellation Perseus.
 
 ### Comet Tempel-Tuttle
 
-[Comet Tempel-Tuttle](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/comets/55p-tempel-tuttle/in-depth/?azure-portal=true) was independently discovered *twice*, in 1865 and 1866. This comet takes 33 years to orbit the sun. Debris from this comet creates the Leonid meteor shower each November. 
+[Comet Tempel-Tuttle](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/comets/55p-tempel-tuttle/in-depth/?azure-portal=true) was independently discovered *twice*, in 1865 and 1866. This comet takes 33 years to orbit the sun. Debris from this comet creates the Leonids meteor shower each November. 
 
-Every 33 years, the [Leonid meteor shower](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/leonids/in-depth/?azure-portal=true) becomes a *meteor storm*. A meteor storm is when there are at least 1,000 meteors per hour. The Leonid meteor shower appears to come from the direction of the constellation Leo.
+Every 33 years, the [Leonids meteor shower](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/meteors-and-meteorites/leonids/in-depth/?azure-portal=true) becomes a *meteor storm*. A meteor storm is when there are at least 1,000 meteors per hour. The Leonids meteor shower appears to come from the direction of the constellation Leo.
 
 ## Moon phases
 
