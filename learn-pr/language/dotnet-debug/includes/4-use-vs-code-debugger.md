@@ -1,67 +1,59 @@
-It's time to put into practice your newly acquired debugging knowledge. It turns out we have the perfect opportunity for that. In our Tailwind Traders application, we're developing a new feature to allow a product's price to display in multiple currencies. A coworker wrote some code for it but is having a hard time trying to figure out what's going wrong. Let's help.
+It's time to put into practice your newly acquired debugging knowledge. In the previous section, we found that there's an error in your Fibonacci calculator. Embarassing! Let's use the Visual Studio Code debugger to fix that.
 
-Open Visual Studio Code on your machine, and create a new file named `currency.js` with this code:
+We'll be using the code from the previous section. If you don't have that available, you can create the sample application using the following steps:
 
-```js
-const rates = {};
+1. In Visual Studio Code, select **File** > **Open Folder**.
 
-function setExchangeRate(rate, sourceCurrency, targetCurrency) {
-  if (rates[sourceCurrency] === undefined) {
-    rates[sourceCurrency] = {};
-  }
+1. Create a new folder named `DotNetDebugging` in the location of your choice, and then click **Select Folder**.
 
-  if (rates[targetCurrency] === undefined) {
-    rates[targetCurrency] = {};
-  }
+1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
-  rates[sourceCurrency][targetCurrency] = rate;
-  rates[targetCurrency][sourceCurrency] = 1 / rate;
-}
+1. In the terminal window, copy and paste the following command.
 
-function convertToCurrency(value, sourceCurrency, targetCurrency) {
-  const exchangeRate = rates[sourceCurrency][targetCurrency];
-  return exchangeRate && value * exchangeRate;
-}
+    ```dotnetcli
+    dotnet new console
+    ```
 
-function formatValueForDisplay(value) {
-  return value.toFixed(2);
-}
+1. Open *Program.cs* by clicking on it.
 
-function printForeignValues(value, sourceCurrency) {
-  console.info(`The value of ${value} ${sourceCurrency} is:`);
+1. Replace the contents of the *Program.cs* with the following code:
 
-  for (const targetCurrency in rates) {
-    if (targetCurrency !== sourceCurrency) {
-      const convertedValue = convertToCurrency(value, sourceCurrency, targetCurrency);
-      const displayValue = formatValueForDisplay(convertedValue);
-      console.info(`- ${convertedValue} ${targetCurrency}`);
+    ```csharp
+    using System;
+    
+    namespace DotNetDebugging
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                int result = Fibonacci(5);
+                Console.WriteLine(result);
+            }
+            static int Fibonacci(int n)
+            {
+                int n1 = 0;
+                int n2 = 1;
+                int sum = 0;
+    
+                for (int i = 2; i < n; i++)
+                {
+                    sum = n1 + n2;
+                    n1 = n2;
+                    n2 = sum;
+                }
+    
+                return n == 0 ? n1 : n2;
+            }
+    
+        }
     }
-  }
-}
-
-setExchangeRate(0.88, 'USD', 'EUR');
-setExchangeRate(107.4, 'USD', 'JPY');
-printForeignValues(10, 'EUR');
-```
-
-Save the file by selecting **Ctrl+S** (Windows, Linux) or **Cmd+S** (Mac).
-
-The goal of this program is to set the exchange rate between three currencies, USD, EUR, and JPY. Then we want to display how much value `10 EUR` is in all the other currencies, with two digits after the decimal point. For every currency added, the exchange rate for all other currencies should be calculated.
-
-## Create a launch configuration
-
-We're going to use the debugger a lot, so let's create a launch configuration for your app. Go to the **Run** tab in Visual Studio Code, select **create a launch.json file**, and then select **Node.js**.
-
-The file `.vscode/launch.json` is created in your project. You can edit this file to further customize how your program should be started for debugging. By default, a launch configuration is created to execute the currently opened file. In this example, the file is `currency.js`.
-
-:::image source="../media/launch-configuration.png" alt-text="Screenshot of generated launch configuration.":::
-
-Check that the path and name of the program entry point match your setup.
+    ```
 
 > [!NOTE]
-> Select **Add Configuration** if you want to create different launch configurations for your project.
+> As you saw in the previous section, the first time you open a ".cs" file in a new .NET project, Visual Studio Code will show you a prompt to install required assets to debug your application. You will need to select "Yes" on this prompt in order for the debugging profile to be correctly configured for your application.
 
-After you've finished preparing your configuration, select it by using the drop-down at the top of the sidebar. Then select the **Run** button to start debugging.
+Save the file by selecting **Ctrl+S** (Windows, Linux) or **Cmd+S** (Mac).
 
 ## Analyze the issues
 
