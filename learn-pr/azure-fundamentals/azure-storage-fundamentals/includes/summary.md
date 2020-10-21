@@ -2,7 +2,7 @@ In this module, you discovered how Azure Storage can provide your company with a
 
 - Azure Disk Storage
 - Azure Blob Storage and container storage
-- Azure File Storage
+- Azure Files
 
 In addition, Azure provides several storage tiers that you can use to balance your storage costs with your access needs.
 
