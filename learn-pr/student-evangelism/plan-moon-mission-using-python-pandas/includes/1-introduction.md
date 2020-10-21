@@ -16,7 +16,7 @@ NASA, however, did have a lot more contingency plans to ensure the safety of its
 
 ![Fei Fei and Bungee on the Moon.](..\media\fei-fei-bungee-on-moon.png)
 
-Fei Fei, on the other hand, still was able to land on the Moon, with the help of some of Chang'e's friends. Her mission was not only to find Chang'e, but also to prove to her father that Chang'e exists and that true, eternal love is real. The brave astronauts who have landed on the Moon have done something similar for us here on Earth. They have brought back samples of moon rock, soil, and core to help us get one step closer to understanding how our universe, Earth, and life began. 
+Fei Fei, on the other hand, still was able to land on the Moon, with the help of some of Chang'e's friends. Her mission was not only to find Chang'e, but also to prove to her father that Chang'e exists and that true, eternal love is real. The brave astronauts who have landed on the Moon have done something similar for us here on Earth. They have brought back samples of Moon rock, soil, and core to help us get one step closer to understanding how our universe, Earth, and life began. 
 
 In this module, you will take inspiration from both Fei Fei and NASA scientists to explore data related to the Apollo missions and the rock samples that were returned to Earth. You will learn data cleansing and manipulation techniques that are critical to developing the machine learning models and AI that aid humankind in preparation for space exploration.
 
