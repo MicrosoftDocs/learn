@@ -67,4 +67,4 @@ quiz:
           explanation: "When using the `list` command you must specify that you want to install a `package` before specifying the name."
         - content: "Run `dotnet list package --outdated`"
           isCorrect: true
-          explanation: "That is correct! You can also pass in `--include-prerelease` to check for new pre-release versions of the dependencies."
+          explanation: "You can also pass in `--include-prerelease` to check for new pre-release versions of the dependencies."
