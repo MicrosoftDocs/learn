@@ -36,7 +36,7 @@ units:
   - learn.microservices-configuration-aspnet-core.1-introduction
   - learn.microservices-configuration-aspnet-core.2-environment-setup
   - learn.microservices-configuration-aspnet-core.3-review-app-configuration
-  - learn.microservices-configuration-aspnet-core.4-feature-flags
+  - learn.microservices-configuration-aspnet-core.4-implement-feature-flag
   - learn.microservices-configuration-aspnet-core.5-knowledge-check
   - learn.microservices-configuration-aspnet-core.6-summary
 iconUrl: https://docs.microsoft.com/../media/learn/module.svg
