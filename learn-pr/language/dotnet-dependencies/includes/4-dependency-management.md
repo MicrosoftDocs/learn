@@ -10,7 +10,7 @@ There are some considerations that you should take into account before you try t
 
 There's an industry standard called *semantic versioning*. It's a system adopted by many companies and developers. If you intend to publish packages and push them to the NuGet registry, you should follow semantic versioning. It's expected. Even if you only download packages from the NuGet registry, you can expect these packages to follow semantic versioning.
 
-So why is it such a significant deal? Changes to a package can introduce risk. Risk that a bug that could harm your business could be introduced. Risk that you might need to rewrite part of your code. Rewriting code takes time and costs money.  
+Changes to a package can introduce risk. Risk that a bug that could harm your business could be introduced. Risk that you might need to rewrite part of your code. Rewriting code takes time and costs money.  
 
 Semantic versioning is how you express the type of change that you or some other developer is introducing to a library. Semantic versioning works by ensuring a package has a version number and that the version number is divided up into these sections:
 
@@ -107,4 +107,3 @@ The recommended workflow is to run these commands, in this order:
 
 1. Run `dotnet list package`. This command lists all the outdated packages. It provides information in the `Requested`, `Resolved`, and `Latest` columns.
 1. Run `dotnet add package <package name>`. If you run this command it will try to update to the latest version, optionally you can pass it `--version=<version number/range>`.
-
