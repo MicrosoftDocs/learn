@@ -12,3 +12,16 @@ Additionally, the time spent to set up and maintain IT infrastructure takes the 
 The IT director believes that Azure Sentinel Analytics will help the security analysts perform complex investigations faster and improve their SecOps.
 
 As Contoso's lead system engineer and Azure administrator, you've been asked to set up analytics rules in Azure Sentinel so that the SecOps team can identify and stop cyberattacks.
+
+## Learning objectives
+
+- Explain the importance of Azure Sentinel Analytics
+- Explain different types of analytics rules
+- Create rules from templates
+- Create new rules and queries using the wizard
+- Manage rules with modifications
+
+## Prerequisites
+
+- Basic knowledge of Azure services
+- Basic knowledge of operational concepts, such as monitoring, logging, and alerting
