@@ -1,7 +1,7 @@
-Our goal in this module was to help Tailwind Traders explore different monitoring service offerings from Azure to apply to different business opportunities.
+Our goal in this module was to help Tailwind Traders explore several monitoring service offerings from Azure to apply to a variety of business scenarios.
 
-We identified different product options and their capabilities, including Azure Advisor, Azure Monitor, and Azure Service Health.  We analyzed decision criteria for choosing one option over another in a given scenario.  Then we applied that decision criteria to three different challenges faced by Tailwind Traders, helping them find the best service option for the given scenario.
+We identified three product options and their capabilities: Azure Advisor, Azure Monitor, and Azure Service Health.  We analyzed decision criteria for choosing one option over another for certain scenarios.  Then we applied those decision criteria to three different challenges faced by Tailwind Traders, helping them find the best service option for the scenario.
 
-Without monitoring services, Tailwind Traders would spend more money on their cloud environment, would be unsure about their cloud security posture, would have a difficult time pinpointing issues in their application logic, be unable to proactively plan for outages and supply a formal outage report to stakeholders.
+Without monitoring services, Tailwind Traders would spend more money on its cloud environment, be unsure about its cloud security posture, have difficulty pinpointing issues in its application logic, and be unable to plan ahead for outages or supply formal outage reports to stakeholders.
 
-Azure's monitoring services provide a comprehensive array of features to improve your cloud operations.
+Azure monitoring services provide a comprehensive array of features to help improve your cloud operations.
