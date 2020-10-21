@@ -58,7 +58,7 @@ quiz:
       choices:
         - content: "Run `dotnet list outdated`"
           isCorrect: false
-          explanation: "This is incorrect, outdated is not a command, but is an option and passed in via `--outdated`, additionally you must specify the command `package` before passing in the option."
+          explanation: "`Outdated` is not a command, but is an option and passed in via `--outdated`, additionally you must specify the command `package` before passing in the option."
         - content: "Run `dotnet list package outdated`"
           isCorrect: false
           explanation: "outdated is not a command, to check for outdated packages you must pass in `--outdated` as  an option."
