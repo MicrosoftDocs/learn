@@ -22,7 +22,7 @@ quiz:
           explanation: "When using the `add` command you must specify that you want to install a `package` before specifying the name."
         - content: "Run `dotnet add package Humanizer`"
           isCorrect: true
-          explanation: "That is correct! This will add the most recent version of the package to your project. You can also specify the version using the `--version=<version>` paramter."
+          explanation: "This will add the most recent version of the package to your project. You can also specify the version using the `--version=<version>` paramter."
         - content: "Run `dotnet install Humanizer`"
           isCorrect: false
           explanation: "There is no `install` command. Use `add package`."
