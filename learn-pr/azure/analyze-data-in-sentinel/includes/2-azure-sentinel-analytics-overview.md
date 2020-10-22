@@ -1,6 +1,6 @@
 ## What is Azure Sentinel Analytics?
 
-After completing this unit, you&#39;ll be able to explain the importance of Azure Sentinel Analytics
+After completing this unit, you&#39;ll can explain the importance of Azure Sentinel Analytics
 
 - Understand the importance of Analytics for security
 - Understand Analytic rules
@@ -8,7 +8,7 @@ After completing this unit, you&#39;ll be able to explain the importance of Azur
 
 Azure Sentinel Analytics, helps you to detect, investigate, and remediate threats. With Azure Sentinel Analytics, you can set up analytic rules and queries to detect issues in your environment.
 
-You can analyze both real-time and historical data collected from your workstations, servers, networking devices, firewalls, intrusion preventions, sensors, etc. Data from various sources is analyzed to look for correlations and anomalies.
+You can analyze both real-time and historical data collected from your workstations, servers, networking devices, firewalls, intrusion prevention, sensors, and so on. Data from various sources is analyzed to look for correlations and anomalies.
 
 With analytics you can trigger alert, based of the techniques that are used by known malicious actors.
 
@@ -20,7 +20,7 @@ The following include common security analytics use cases:
 
 - Identifying compromised accounts
 - User behavior analyzes to detect potentially suspicious patterns
-- Network traffic analyze to locate trends indicating potential attacks
+- Network traffic analyzes to locate trends indicating potential attacks
 - Detecting data exfiltration by attackers
 - Detecting insider threats
 - Investigating incidents
@@ -42,7 +42,7 @@ Analytics home page is arranged into three main parts:
 
 - The header bar – contains information of the number of the rules that are currently in use
 - The listing of rules and templates – contains all the rule templates that Microsoft has pre-loaded from Azure Sentinel&#39;s GitHub repository
-- The detailed view pane – contains additional information that explain the template and the rule that is used in detection
+- The detailed view pane – contains additional information that explains the template and the rule that is used in detection
 
 ## Filter the Rule templates
 
@@ -59,4 +59,4 @@ Here are the filters and what you would use them for:
 
 - **Tactics –** Lets you filter the rules based on 14 specific techniques and methodologies in MITRE ATT&amp;CK model
 
-- **Data Sources –** Filter by the data source connector that generate the alert
+- **Data Sources –** Filter by the data source connector that generates the alert
