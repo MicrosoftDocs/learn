@@ -42,7 +42,7 @@ quiz:
       isCorrect: true
       explanation: "Yes, meteorites can land anywhere on Earth. It is just much harder to find them when there is low contrast between the meteorites and their surroundings."
   - content: "What would the following code return? 
-    `some_return_value = friends.loc[(friends['location'] == my_location) & (friends['hunger'] >= my_hunger), 'favorite_food'].tolist()`"
+      `some_return_value = friends.loc[(friends['location'] == my_location) & (friends['hunger'] >= my_hunger), 'favorite_food'].tolist()`"
     choices:
     - content: "A list of my friends, sorted from least hungry to most hungry, who were with me and had the same favorite food as me."
       isCorrect: false
