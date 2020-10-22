@@ -1,61 +1,71 @@
-With the ability to configure dev containers as you want and access resources within them, let's take a look at how you can further customize settings within your container.
+So far, you've setup a dev container for one of your agencies projects so that it will run on anyone's machine without any setup on their end. Almost. They still have to install dependences, be aware of the port forwarding and if they want to do some real Python development, they might need some VS Code extensions that they don't know about. Fortunately, you can solve all this and more by customizing the project settings in a dev container. This is done with the `devcontainer.json` file.
 
-## Post build commands
+## A closer look at devcontainer.json
 
-You may want to install additional software in your dev container. Once VS Code is connected to the container, you can open a VS Code terminal and execute any command against the OS inside the container. This allows you to install new command-line utilities and spin up databases or application services from inside the Linux container.
+Let's look at the entire `devcontainer.json` file from the Products Dashboard project. It's a bit long to look at all at once, so let's look at in sections.
 
-Let's say you want to install Git. You could run the following commands in the integrated terminal in VS Code:
+    "name": "Python 3",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "..",
+        "args": {
+            // Update 'VARIANT' to pick a Python version: 3, 3.6, 3.7, 3.8, 3.9
+            "VARIANT": "3",
+            // Options
+            "INSTALL_NODE": "false",
+            "NODE_VERSION": "lts/*"
+        }
+    },
 
-```bash
-# If running as root
-apt-get update
-apt-get install <package>
-```
+This section specifies the name of the container and which file to use as the dockerfile. You'll recognize the `Dockerfile` as being the other file in the ".devcontainer" folder. The context, and args are options that get passed through to the Docker container when it gets built.
 
-However, if you rebuild the container, you will have to reinstall anything you've installed manually. To avoid this problem, you can use the `postCreateCommand` property in `devcontainer.json`.
+The "context" would allow you to specify which directory your project is in. By default, you don't need to touch this because it already knows that your project is in the parent directory.
 
-The `postCreateCommand` is run once the container is running, so you can also use the property to run commands like `npm install`.
+The "args" section specifies some options that you can set to tweak the environment without touching the Dockerfile. For instance, you can change the Python version by changing the "variant" option. You could also have Node.js installed in the container by setting the "INSTALL_NODE" option to "true".
 
-## Installing extensions 
+Let's take a look at the middle section of the file...
 
-VS Code runs extensions in one of two places: locally on the UI / client side, or in the container. While extensions that affect the VS Code UI, like themes and snippets, are installed locally, most extensions will reside inside a particular container. This allows you to install only the extensions you need for a given task in a container and seamlessly switch your entire tool-chain just by connecting to a new container.
-
-### Extension view
-
-If you install an extension from the Extensions view, it will automatically be installed in the correct location. You can tell where an extension is installed based on the category grouping. There will be a Local - Installed category and also one for your container.
-
-### Extensions in devcontainer.json
-
-You can set up extensions to be automatically installed in VS Code any time someone connects to your dev container. For instance:
-
-```json
-{
-    "build": { "dockerFile": "Dockerfile" },
-    "forwardPorts": [ 3000 ],
-    "extensions": ["dbaeumer.vscode-eslint"]
-}
-```
-
-## Change the default terminal 
-
-Opening a terminal in a container from VS Code is simple. Once you've opened a folder in a container, any terminal window you open in VS Code (Terminal > New Terminal) will automatically run in the container rather than locally.
-
-You can change the default terminal in `devcontainer.json` too:
-
-
-```json
-{
-    "build": { "dockerFile": "Dockerfile" },
-    "forwardPorts": [ 3000 ],
-    "extensions": ["dbaeumer.vscode-eslint"],
+    // Set *default* container specific settings.json values on container create.
     "settings": {
-        "terminal.integrated.shell.linux": "/bin/zsh"
-    }
-}
-```
+    	"terminal.integrated.shell.linux": "/bin/bash",
+    	"python.pythonPath": "/usr/local/bin/python",
+    	"python.linting.enabled": true,
+    	"python.linting.pylintEnabled": true,
+    	"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+    	"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+    	"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+    	"python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
+    	"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
+    	"python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
+    	"python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
+    	"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
+    	"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint"
+    },
 
-## Container specific settings
+This section is making a lot of those tweaks to your system that you would need to make yourself to get everything to "just work". It setting paths to certain folders and executables so that when you try and run the Python project, you don't get any cryptic errors.
 
-VS Code's local user settings are also reused when you are connected to a dev container. While this keeps your user experience consistent, you may want to vary some of these settings between your local machine and each container. 
+    // Add the IDs of extensions you want installed when the container is created.
+    "extensions": [
+    	"ms-python.python"
+    ]
 
-Fortunately, once you have connected to a container, you can also set container-specific settings by running the **Preferences: Open Remote Settings** command from the Command Palette (F1) or by selecting the Remote tab in the Settings editor. These will override any local settings you have in place whenever you connect to the container.
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    // "forwardPorts": [],
+
+    // Use 'postCreateCommand' to run commands after the container is created.
+    // "postCreateCommand": "pip3 install --user -r requirements.txt",
+
+    // Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+    // "remoteUser": "vscode"
+
+There's several options in this final section that are quite interesting.
+
+The first is the "extensions" array. This section allows you to specify which VS Code extensions should be installed in VS Code when it connects to the container. Your normal VS Code setup and all the extensions you already have won't be present when you are using Remote-Containers. Extensions are specified here with their ID. The ID can be found by searching the extension gallery for an extension, right-clicking that extension and selecting "Copy Extension ID".
+
+The "fowardPorts" section lets you specify up front which ports you would like to forward. While VS Code detects many ports automatically when you run a project, there are cases where you will need to manually forward ports for an app to work.
+
+The "postCreateCommand" lets you run any commands that you want after the container is created. If you remember from the first exercise, you had to run the "pip3" command to install dependencies. But how would you know to do that? You might not. So you can configure it here so that it will happen automatically and others won't have to worry about it.
+
+The last option, "remoteUser", lets you specify a different Linux user to run as. By default, the container runs as root. This is fine for more scenarios, but should you have a case where you wanted to run as different user, the built-in "vscode" user is provided, which does not have root access.
+
+In the next exercise, you'll modify the `devcontainer.json` file to automate several aspects of the project that will set other developers up for immediate success.
