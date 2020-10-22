@@ -4,6 +4,15 @@ At the end of this module, you will:
 
 - Describe SQL Server Integration Services
 - Explain the Azure-SSIS integration runtime
-- Setup the Azure-SSIS integration runtime
+- Set up the Azure-SSIS integration runtime
 - Run SSIS package in Azure
 - Migrate SSIS packages to Azure
+
+Prerequisite
+
+Before taking this module, it is recommended that the student is able to:
+
+- Log into the Azure portal
+- Explain and create resource groups
+- Describe Azure Data Factory and it's core components
+- Ingest data into Azure Data Factory using the Copy Activity

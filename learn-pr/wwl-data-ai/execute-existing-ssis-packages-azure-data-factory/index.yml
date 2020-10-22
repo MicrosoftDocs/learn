@@ -3,7 +3,7 @@ uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory
 metadata:
   title: Execute existing SSIS packages in Azure Data Factory
   description: "Execute existing SSIS packages in Azure Data Factory"
-  ms.date: 10/22/2020
+  ms.date: 10/24/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -11,14 +11,14 @@ metadata:
 title: Execute existing SSIS packages in Azure Data Factory
 summary: In this module, you will see how you can integrate SQL Server Integration Services packages into an Azure Data Factory solution
 abstract: |
-  1. Introduction
-  2. Describe sql server integration services
-  3. Understand the azure ssis integration runtime
-  4. Set-up azure ssis integration runtime
-  5. Run SSIS packages in azure data factory
-  6. Migrate SSIS packages to azure data factory
-  7. Knowledge check
-  8. Summary
+  * Introduction
+  * Describe sql server integration services
+  * Understand the azure ssis integration runtime
+  * Set-up azure ssis integration runtime
+  * Run SSIS packages in azure data factory
+  * Migrate SSIS packages to azure data factory
+  * Knowledge check
+  * Summary
 prerequisites: |
   The student should be able to:
   - Log into the Azure portal

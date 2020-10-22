@@ -1,45 +1,45 @@
-Perform the following steps to setup an intergation runtime
+Perform the following steps to setup an Integration Runtime
 
-## Setup an Azure-SSIS integration runtime
+## Setup an Azure-SSIS Integration Runtime
 
-1. In the Azure Data Factory designer , in the **Edit** tab, click **Connections**. Click on the **Integration Runtimes** tab to view existing integration runtimes in your data factory.
+1. In the Azure Data Factory designer , in the **Edit** tab, click **Connections**. Click on the **Integration Runtimes** tab to view existing Integration Runtimes in your data factory.
 
-    ![navigating to integration runtimes](../media/select-integration-runtime.png)
+    ![navigating to Integration Runtimes](../media/select-integration-runtime.png)
 
-1. Click  **+ New** to create an Azure-SSIS IR and open the **Integration runtime setup** pane.
+1. Click  **+ New** to create an Azure-SSIS IR and open the **Integration Runtime setup** pane.
 
     ![New Connections Window](../media/create-new-connection.png)
 
-1. In the **Integration runtime setup** pane, select the **Lift-and-shift existing SSIS packages to execute in Azure** tile, and then select **Next**.
+1. In the **Integration Runtime setup** pane, select the **Lift-and-shift existing SSIS packages to execute in Azure** tile, and then select **Next**.
 
     ![Integration Runtime Setup](../media/lift-shift-existing-ssis-packages.png)
 
-1. On selectin this option, there are three types of settings to configure
+1. On selecting this option, there are three types of settings to configure
 
 ### General settings page
 
-1. On the **General settings** page of **Integration runtime setup** pane, complete the following steps.
+1. On the **General settings** page of **Integration Runtime setup** pane, complete the following steps.
 
     ![Integration Runtime General settings page](../media/integration-runtime-general-settings.png)
 
-1. In **Name**, enter the name of your integration runtime.
+1. In **Name**, enter the name of your Integration Runtime.
 
-1. For **Description**, enter the description of your integration runtime.
+1. For **Description**, enter the description of your Integration Runtime.
 
-1. For **Location**, select the location of your integration runtime. It is recommended that you select the same location of your database server to host SSISDB.
+1. For **Location**, select the location of your Integration Runtime. It is recommended that you select the same location of your database server to host SSISDB.
 
-1. For **Node Size**, select the size of node in your integration runtime cluster.
+1. For **Node Size**, select the size of node in your Integration Runtime cluster.
 
-1. For **Node Number**, select the number of nodes in your integration runtime cluster.
+1. For **Node Number**, select the number of nodes in your Integration Runtime cluster.
 
-1. For **Edition/License**, select the SQL Server edition for your integration runtime.
+1. For **Edition/License**, select the SQL Server edition for your Integration Runtime.
 
-1. For **Save Money**, select the Azure Hybrid Benefit option for your integration runtime: Select **Yes** if you want to bring your own SQL Server license with Software Assurance to benefit from cost savings with hybrid use.
+1. For **Save Money**, select the Azure Hybrid Benefit option for your Integration Runtime: Select **Yes** if you want to bring your own SQL Server license with Software Assurance to benefit from cost savings with hybrid use.
 
 1. Select **Next**.
 
 ### Deployment settings page
-1. On the **Deployment settings** page of **Integration runtime setup** pane, complete the following steps.
+1. On the **Deployment settings** page of **Integration Runtime setup** pane, complete the following steps.
 
 1. Click the **Create SSIS catalog (SSISDB) hosted by Azure SQL Database server/Managed Instance to store your projects/packages/environments/execution logs** check box to choose the package deployment mode.
 
@@ -47,11 +47,11 @@ Perform the following steps to setup an intergation runtime
 
 1. For **Subscription**, select the Azure subscription that has your database server to host SSISDB.
 
-1. For **Location**, select the location of your database server to host SSISDB. We recommend that you select the same location of your integration runtime.
+1. For **Location**, select the location of your database server to host SSISDB. We recommend that you select the same location of your Integration Runtime.
 
 1. For **Catalog Database Server Endpoint**, select the endpoint of your database server to host SSISDB.
 
-1. Select the **Use AAD authentication with the managed identity for your ADF** check box to choose the authentication method for your database server to host SSISDB.
+1. Select the **Use Azure Active Directory authentication with the managed identity for your ADF** check box to choose the authentication method for your database server to host SSISDB.
 
 1. For **Admin Username**, enter the SQL authentication username for your database server to host SSISDB.
 
@@ -79,7 +79,7 @@ The alternative approach is to:
 
 1. For **Type**, select **Azure File Storage**, **Azure SQL Managed Instance**, or **File System**.
 
-1. You can ignore **Connect via integration runtime**, since we always use your Azure-SSIS IR to fetch the access information for package stores.
+1. You can ignore **Connect via Integration Runtime**, since we always use your Azure-SSIS IR to fetch the access information for package stores.
 
 1. If you select **Azure File Storage**, complete the following steps.
 
@@ -96,11 +96,11 @@ The alternative approach is to:
  
 ### Advanced settings page
 
-1. On the **Advanced settings** page of **Integration runtime setup** pane, complete the following steps.
+1. On the **Advanced settings** page of **Integration Runtime setup** pane, complete the following steps.
 
-    ![Integration runtime setup advanced settings](../media/integration-runtime-setup-advanced-settings.png)
+    ![Integration Runtime setup advanced settings](../media/integration-runtime-setup-advanced-settings.png)
 
-1. For **Maximum Parallel Executions Per Node**, select the maximum number of packages to run concurrently per node in your integration runtime cluster. 
+1. For **Maximum Parallel Executions Per Node**, select the maximum number of packages to run concurrently per node in your Integration Runtime cluster. 
 
 1. Select the **Customize your Azure-SSIS Integration Runtime with additional system configurations/component installations** check box to choose whether you want to add standard/express custom setups on your Azure-SSIS IR. 
 
@@ -110,11 +110,11 @@ The alternative approach is to:
 
 1. Click **Continue**.
 
-1. On the **Summary**, review all provisioning settings, and select **Finish** to start the creation of your integration runtime.
+1. On the **Summary**, review all provisioning settings, and select **Finish** to start the creation of your Integration Runtime.
 
-1. On the **Connections** pane of **Manage** hub, switch to the **Integration runtimes** page and select **Refresh**.
+1. On the **Connections** pane of **Manage** hub, switch to the **Integration Runtimes** page and select **Refresh**.
 
-    ![Integration runtimes page](../media/integration-runtimes-page.png)
+    ![Integration Runtimes page](../media/integration-runtimes-page.png)
 
 
 

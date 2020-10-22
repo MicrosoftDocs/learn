@@ -2,7 +2,7 @@ SQL Server Data Tools (SSDT) is typically used to create and deploy SQL Server I
 
 ![Create a new project in SSDT](../media/create-new-project-ssdt.png)
 
-You may already have SSIS packages that you wish to have enabled for Azure. In this case, there is the option to open up the project in SSDT, and then right click the project and click on **Azure-Enabled Project** menu item under the **SSIS in Azure Data Factory** submenu to launch the **Azure-Enabled Project Wizard**.
+You may already have SSIS packages that you wish to have enabled for Azure. In this case, there is the option to open up the project in SSDT, and then right-click the project and click on **Azure-Enabled Project** menu item under the **SSIS in Azure Data Factory** submenu to launch the **Azure-Enabled Project Wizard**.
 
 ![Enabling SSIS in Azure Data Factory](../media/enable-ssis-azure-data-factory.png)
 
@@ -10,7 +10,7 @@ This opens up the Azure-Enabled Project Wizard where you can select the Visual S
 
 ## SSIS in ADF Connection Wizard
 
-Lifting and shifting SSIS packages is achieved by running the SSIS in ADF Connection Wizard. This is a two step wizard that takes SSIS projects stored in SSIS, and store them in Azure Files in a storage account that can then be run in an Azure-SSIS Integration Runtime.
+Lifting and shifting SSIS packages is achieved by running the SSIS in ADF Connection Wizard. This is a two-step wizard that takes SSIS projects stored in SSIS, and store them in Azure Files in a storage account that can then be run in an Azure-SSIS Integration Runtime.
 
 On the **SSIS in ADF Introduction** page, review the introduction and click on the **Next** button to continue.
 
@@ -34,7 +34,7 @@ Right-click on the project node in Solution Explorer panel of SSDT to pop up a m
 
 ![Executing SSIS package](../media/execute-ssis-package.png)
 
-Click the **Enable Windows Authentication** drop down list and choose **True**. Then click the edit button for **Windows Authentication Credentials** option to enter the credentials.
+Click the **Enable Windows Authentication** drop-down list and choose **True**. Then click the edit button for **Windows Authentication Credentials** option to enter the credentials.
 
 ![Integration Services Project Property Pages](../media/integration-services-project-property-pages.png)
 
