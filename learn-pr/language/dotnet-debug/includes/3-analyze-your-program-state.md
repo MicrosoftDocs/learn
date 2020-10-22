@@ -203,7 +203,7 @@ You can control the execution flow of your program by using these controls.
 From left to right, the controls are:
 
 - **Continue or pause execution**. If execution is paused, it will continue until the next breakpoint is hit. If your program is running, the button switches to a pause button that you can use to pause execution.
-- **Step over**. Executes the next code statement in the current context (same as the `next` command in the built-in debugger).
+- **Step over**. Executes the next code statement in the current context.
 - **Step into**. Like **Step over**, but if the next statement is a function call, move on to the first code statement of this function (same as the `step` command).
 - **Step out**. If you're inside a function, execute the remaining code of this function and jump back to the statement after the initial function call (same as the `out` command).
 - **Restart**. Restart your program from the beginning.
@@ -211,8 +211,32 @@ From left to right, the controls are:
 
 ### Use the debug console
 
-The debug console can be shown or hidden by selecting **Ctrl+Shift+Y** (Windows, Linux) or **Cmd+Shift+Y** (Mac). It can be used to visualize your application console logs and to evaluate expressions or execute code in the current execution content, like the `exec` command in the built-in .NET debugger.
+The debug console can be shown or hidden by selecting **Ctrl+Shift+Y** (Windows, Linux) or **Cmd+Shift+Y** (Mac). It can be used to visualize your application console logs and to evaluate expressions or execute code in the current execution content, like commands or variable names the built-in .NET debugger.
 
-You can enter a JavaScript expression in the input field at the bottom of the debug console. Then select **Enter** to evaluate it. The result displays directly in the console.
+You can enter a .NEt expression in the input field at the bottom of the debug console. Then select **Enter** to evaluate it. The result displays directly in the console.
+
+:::image source="../media/debug-console.png" alt-text="Screenshot of Visual Studio Code debugger execution controls.":::
 
 This way, you can quickly check a variable value, test a function with different values, or alter the current state.
+
+> [!NOTE]
+> While the **Debug Console** is very useful for executing and evaluating .NET code, it can be a little confusing when you're trying to execute or debug a .NET Console application. This is because the **Debug Console** doesn't accept terminal input for a running program. 
+>
+> To handle terminal input while debugging, you can use the integrated terminal (one of the Visual Studio Code windows) or an external terminal. For this tutorial, you use the integrated terminal.
+>
+>1. Open *.vscode/launch.json*.
+>
+>1. Change the `console` setting to `integratedTerminal` From:
+>    ```json
+>    "console": "internalConsole",
+>    ```
+>
+>    To:
+>
+>      ```json
+>      "console": "integratedTerminal",
+>      ```
+>
+> 1. Save your changes.
+
+In the next section, you'll learn how to use the debugger to fix the bug in the Fibonacci code we saw above.
