@@ -8,14 +8,13 @@ metadata:
   ms.author: jogallow
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Interactively debug .NET apps with the built-in and Visual Studio Code debuggers
+title: Interactively debug .NET apps with the Visual Studio Code debugger
 summary: Learn how to efficiently debug your .NET app by using Visual Studio Code to fix your bugs quickly.
 abstract: |
   By the end of this module, you will be able to:
   - Use the Visual Studio Code debugger with a .NET program.
   - Create breakpoints and run your code step by step to find issues.
   - Inspect your program state at any execution step.
-  - Rewind the call stack to find the source of an exception.
 iconUrl: /learn/achievements/dotnet-debug.svg
 levels:
 - beginner
