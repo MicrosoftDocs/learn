@@ -1,25 +1,24 @@
-[Summarize the problem]
-[How the tech solved the problem]
-[Experience without product]
-[Business impact]
-Example
+Our goal in this module was to introduce .NET and help you begin understanding what it is, what are the major facets of the .NET ecosystem, the work flow that developers use and the tools they employ to build applications based on .NET, and the scenarios where .NET makes sense.  We also build a simple Hello World application just to illustrate the workflow and how the different components of .NET work together to build even the most simple application.
 
-[Summarize the problem]
+## Resources
 
-Our goal in this module was to build a simple software application that could accept input from the user and display information to the user.
+If you want to start with a graphical user interface that will help you build applications with C#, download and install Visual Studio 2019.  As we said earlier in the module, note that the installation proces can take a while and require a lot of internet bandwidth.
 
-[How the tech solved the problem]
+[Download Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
 
-By using basic C# syntax, the dotnet CLI, the Console class in the .NET Base Class Library and several developer tools already installed into the Azure Cloud Shell, we were able to ask the user to enter their name, store it in a variable and combine it with literal string data to display a new message.
+> [!NOTE]
+> If you're not already a (paid) licensed user of Visual Studio, you should download the **Community Edition** which has all of the features you need as you're just getting started.
 
-[Experience without product]
-???
+If you want to start with a command line interface, download and install both the .NET Core SDK and Visual Studio Code.
 
-[Business impact]
+[Download the .NET Core SDK](https://dotnet.microsoft.com/download)
 
-While our application may seem mundane as modern games go, most applications will perform these same basic features, including:
-Displaying output to a user
-Requesting input from a user
-Processing information -- combining it, formatting it, calculating it, etc.
+Make sure you:
+- Select the column of links under **.NET Core**
+- Select the link to download the .NET Core **SDK**
 
-And so you’ve just taken your first steps to building more sophisticated applications that can retrieve input from a variety of sources, display it back to the user in a more graphical means or in a more structured way, and performing logic to enforce business or game rules.
+[Download Visual Studio Code](https://code.visualstudio.com/)
+
+Finally, if you need to learn more about C# before you continue on, check out the following learning path:
+
+[Take your first steps with C#](https://docs.microsoft.com/en-us/learn/paths/csharp-first-steps/)

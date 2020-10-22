@@ -1,13 +1,23 @@
-This is an introduction paragraph.
+In this unit, we'll briefly discuss when you might want to use .NET.
 
-## This is the first heading
+## .NET is perfect for projects big and small
 
-This explains the purpose of this section.
+You may wonder if .NET is the right ecosystem to invest your time in learning. 
 
-### Step 1 - Do the first thing
+### Enterprise scale applications
 
-Instructions for the first thing go here.
+.NET is extremely popular in enterprises due to its ecosystem, it's integration with other Microsoft products including Azure cloud services and on-premise server products, and its strongly typed system that helps reduce the number of bugs that can arise in loosely typed systems.  Developers can choose between an object-based paradigm in C# or a functional-based paradigm in F#, providing flexibility to choose the best language for the kinds of problems that enterprises try to solve.
 
-### Step 2 - Do the second thing
+### Prototype, start-up and department scale applications
 
-Instructions for the second thing go here.
+.NET is also popular when used for smaller projects due to a long history of improvements to the design of the languages, APIs, and tools based on customer feedback and telemetry. New full-featured software can be developed quickly for prototyping purposes.  Furthermore, .NET Core can run on inexpensive hardware and cloud services, and out-perform other popular platforms, which makes it a great fit for start-up businesses.
+
+### Cloud and AI applications
+
+The Azure SDK for .NET allows developers to provision and manage Azure resources.  Alternatively, Azure App Service and Azure Functions can host applications built with .NET languages.
+
+Furthermore, ML.NET is a free software machine learning library for .NET languages.  It enables model-based Machine Learning analytic and prediction capabilities.
+
+### IoT
+
+.NET Core can be used to build IoT applications for IoT devices and scenarios. IoT applications typically interact with sensors, displays and input devices that require the use of GPIO pins, serial ports, or similar hardware.  For example, there are libraries available for working with popular boards like Rasberry Pi and Hummingboard.

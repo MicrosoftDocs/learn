@@ -11,6 +11,5 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 azureSandbox: false
-interactive: csharp
 content: |
   [!include[](includes/4-build-your-first-app.md)]

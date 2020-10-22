@@ -9,22 +9,21 @@ metadata:
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-languages
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "?"
+  - content: "You have written C# code to create a new application but after running it you discover a bug in your logic.  What can you do to find it?"
     choices:
-    - content: ""
+    - content: "The C# compiler will help you find your logic bug."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "The compiler will identify C# syntax compilation errors, but will not catch bugs in your logic."
+    - content: "The .NET runtime will help you find your logic bug."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "It's possible that your logic will produce an exception that will crash your program and the .NET Runtime will close your application, however it will not help you find your logic bug."
+    - content: "A class from the .NET Library will help you find your logic bug."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "No classes contained in the .NET Library will help you find a logic bug."
+    - content: "The debugging features of Visual Studio or the .NET CLI could help you find your logic bug."
       isCorrect: true
-      explanation: ""
+      explanation: "Debugging tools allow you to set breakpoints, step through code, and monitor the value of variables to help you find bugs."

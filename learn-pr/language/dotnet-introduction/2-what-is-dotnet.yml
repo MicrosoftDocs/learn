@@ -11,6 +11,5 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 azureSandbox: false
-interactive: csharp
 content: |
   [!include[](includes/2-what-is-dotnet.md)]

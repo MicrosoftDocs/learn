@@ -1,53 +1,18 @@
-https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductions?branch=master
+If you're new to programming, understanding exactly what .NET is can be challenging.  It seems like the term .NET is applied to many things, but how are they related?  How do the various aspects of .NET work together to create a working application?
 
-[topic sentence]
-[scenario]
-[prose TOC]
-[goal]
+In this module, you will learn about .NET and its ecosystem.  You'll learn about both the technical aspects of the system and the role each part places to build software.  You'll learn about the ecosystem as a whole and the resources that are available.  You'll learn how .NET can be used to address many different software development needs.  And you'll write your first lines of C# code using a web based editor so that you can see how each part of .NET works together to create a .NET application.
 
-## Learning Objectives
-
-In this module, you will:
--
--
--
-
-## Prerequisites
-
--
--
--
-
-==========================
-INTRO UNIT EXAMPLE
-==========================
-
-[topic sentence]
-
-The C# programming language allows you to build many types of applications, from business applications to analyze and process data, dynamic web applications, games, financial or scientific applications, cloud-based applications, mobile applications and more.
-
-[scenario]
-
-Since you’re just getting started, suppose you simply want to create a MadLibs-style game that prompts a user for the names of people, places, and things and combines them in a humorous way and displays them back to the user. You would need to create simple logic to accept user input, combine user input with pre-written hard-coded text, and display it to the user.
-
-[prose TOC]
-
-In this module, you will create an application that accepts user input from the keyboard, combine that input with hard-coded text, and present the final result back to the user. You’ll learn some initial concepts like basic C# syntax including several common operators, the string data type and how to create literal strings, how to initialize variables then set and retrieve values from a variable, why you would want to comment out a line of code, how your code is structured into classes and methods and how to call methods.
-
-[goal]
-
-By the end of this module, you will be able to build simple applications that can accept user input, combine that input with literal text, and output the result to the user.
+By the end of this module, you will have started building a mental model of .NET. This mental model will prove vital as you take your next steps in building .NET applications.
 
 ## Learning objectives
 
-In this module, you will:
+By the end of this module, you will be able to:
 
-- Use complete sentences.
-- End each sentence with a period.
-- This should be a bulleted list containing the items in the prose TOC.
+- Describe the major parts of .NET and its ecosystem.
+- Write code in Try .NET and explain how the different parts of .NET come together to produce a running application.
+- Choose when it makes sense to use .NET to build your applications.
 
 ## Prerequisites
 
-- You don't need a complete sentence here
-- List the tools and level of experience
+- No familiarity with C# or .NET is assumed, though it might be helpful
 
