@@ -26,17 +26,14 @@ quiz:
     - content: "Microsoft Security"
       isCorrect: true
       explanation: "Template rules based on Microsoft Security type, creates incidents based on all alerts generated in Azure Security Center."
-  - content: "Question 2"
+  - content: "Which one of the following template rules are precreated in the Azure Sentinel Analytics?"
     choices:
-    - content: "Answer 1"
+    - content: "Scheduled templates rules"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "Scheduled template rules are not precreated in the Azure Sentinel Analytics."
+    - content: "Fusion"
+      isCorrect: true
+      explanation: "Alert rule is created by default using Fusion rule template."
+    - content: "Machine Learning Behavior Analytics templates"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
-      isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "Machine Learning Behavior Analytics are preconfigured in the template rule, but you need to create a detection rule based on the template."
