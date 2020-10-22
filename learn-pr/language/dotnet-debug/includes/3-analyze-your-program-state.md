@@ -89,8 +89,8 @@ The Fibonacci sequence is a suite of numbers that starts with the number 0 and 1
         }
     }
     ```
-> [!NOTE]
-> This code contains an error, which we'll be debugging later in this module. We don't recommend that you use it in any mission critical Fibonacci applications until we get that bug fixed.
+    > [!NOTE]
+    > This code contains an error, which we'll be debugging later in this module. We don't recommend that you use it in any mission critical Fibonacci applications until we get that bug fixed.
 
 1. Save your changes.
 
