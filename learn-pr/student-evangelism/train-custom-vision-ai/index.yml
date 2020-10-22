@@ -5,7 +5,7 @@ metadata:
   description: Use the Custom Vision service to analyze images of animals, like Bungee, without ever writing code.
   ms.date: 10/15/2020
   author: sguthals
-  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use AI to recognize objects in images by using the Custom Vision service

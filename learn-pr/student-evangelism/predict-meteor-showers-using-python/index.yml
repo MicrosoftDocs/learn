@@ -16,9 +16,8 @@ abstract:  |
   - How to choose and collect appropriate data.
   - Strategies to cleanse and manipulate your data.
 prerequisites: |
-  - [Install Python](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true).
-  - [Install Visual Studio Code and the Python extension](https://docs.microsoft.com/learn/modules/python-install-vscode/6-exercise-write-execute-first-script?azure-portal=true).
-  - Complete the learning path [Discover the role of Python in space exploration](https://docs.microsoft.com/en-us/learn/paths/introduction-python-space-exploration-nasa/?azure-portal=true).
+  - [Visual Studio Code, with the Python extension](https://code.visualstudio.com/learntocode/?utm_source=MSLearn&utm_medium=direct&utm_campaign=PartnerLessons?azure-portal=true).
+  - Complete the learning path [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/?azure-portal=true).
 iconUrl: /learn/achievements/student-evangelism/predict-meteor-showers-using-python.svg 
 levels:
 - beginner
