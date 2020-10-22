@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.use-docker-container-dev-env-vs-code.4-forward-ports
+uid: learn.use-docker-container-dev-env-vs-code.4-forward-ports
 title: Forward ports for local development
 metadata:
   title: Forward ports for local development
