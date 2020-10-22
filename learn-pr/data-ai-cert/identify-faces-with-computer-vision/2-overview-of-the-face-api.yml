@@ -3,13 +3,13 @@ uid: learn.data-ai.identify-faces-with-computer-vision.overview-of-the-face-api
 title: Overview of the Face API
 metadata:
   title: Overview of the Face API
-  description: Understand the Face API in Azure Cognitive Services
-  ms.date: 01/7/2019
+  description: "Understand the Face API in Azure Cognitive Services"
+  ms.date: 10/14/2020
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
+azureSandbox: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-overview-of-the-face-api.md)]

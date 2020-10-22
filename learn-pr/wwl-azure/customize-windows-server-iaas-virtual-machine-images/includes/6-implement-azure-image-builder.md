@@ -59,7 +59,7 @@ To create images with Azure Image Builder, start by creating an image template, 
     - Required storage
 
     > [!NOTE]
-    > The VM is sized using the using the Standard_D1_v2 size.
+    > The VM is sized using the Standard_D1_v2 size.
 
 4. As part of the image creation, Image builder distributes the image according to the settings in your .json template, then deletes the additional resources in the `IT_<DestinationResourceGroup>_<TemplateName>_<GUID>` resource group that was created for the process.
 

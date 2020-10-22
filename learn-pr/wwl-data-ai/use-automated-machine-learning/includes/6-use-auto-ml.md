@@ -1,4 +1,11 @@
-Azure Machine Learning includes an *automated machine learning* capability that leverages the scalability of cloud compute to automatically try multiple pre-processing techniques  and model-training algorithms in parallel to find the best performing model for your data.
+Azure Machine Learning includes an *automated machine learning* capability that leverages the scalability of cloud compute to automatically try multiple pre-processing techniques and model-training algorithms in parallel to find the best performing supervised machine learning model for your data.
+
+> [!NOTE]
+> The automated machine learning capability in Azure Machine Learning supports *supervised* machine learning models - in other words, models for which the training data includes known label values. You can use automated machine learning to train models for:
+>
+> - **Classification** (predicting categories or *classes*)
+> - **Regression** (predicting numeric values)
+> - **Time series forecasting** (regression with a time-series element, enabling you to predict numeric values at a future point in time)
 
 ## Run an automated machine learning experiment
 

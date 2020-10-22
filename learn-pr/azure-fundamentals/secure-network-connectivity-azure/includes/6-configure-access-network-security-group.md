@@ -1,8 +1,8 @@
-In this exercise, you configure network access to a virtual machine running on Azure.
+In this exercise, you configure network access to a virtual machine (VM) running on Azure.
 
-You start by creating a Linux virtual machine (VM) and installing Nginx, a popular web server, on that VM. To make your web server accessible, you then create a network security group (NSG) rule that allows inbound access on port 80 (HTTP).
+You start by creating a Linux VM and installing Nginx, a popular web server, on that VM. To make your web server accessible, you then create a network security group (NSG) rule that allows inbound access on port 80 (HTTP).
 
-There are many ways you can use to create and manage VMs, including their network settings. For example, you can use the Azure portal, the Azure CLI, Azure PowerShell, or an Azure Resource Manager (ARM) template.
+There are many ways to create and manage VMs, including their network settings. For example, you can use the Azure portal, the Azure CLI, Azure PowerShell, or an Azure Resource Manager (ARM) template.
 
 Here, you use the Azure CLI. The Azure CLI enables you to connect to Azure and run administrative commands on Azure resources. As with other command-line interfaces, you can run commands directly from a terminal or you can add commands to a Bash script or a PowerShell script. The Azure CLI runs on Windows, macOS, or Linux.
 
@@ -12,7 +12,7 @@ If you're new to the Azure CLI or to Cloud Shell, just follow along.
 
 ## Create a Linux virtual machine and install Nginx
 
-Here, you run Azure CLI commands to create a Linux VM and install Nginx. After your VM is created, you use the Custom Script Extension to install Nginx. The Custom Script Extension is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system once your VM is up and running.
+Use the following Azure CLI commands to create a Linux VM and install Nginx. After your VM is created, you'll use the Custom Script Extension to install Nginx. The Custom Script Extension is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system after your VM is up and running.
 
 1. From Cloud Shell, run the following `az vm create` command to create a Linux VM:
 
@@ -27,7 +27,7 @@ Here, you run Azure CLI commands to create a Linux VM and install Nginx. After y
 
     Your VM will take a few moments to come up.
 
-    You name the VM *my-vm*. You use this name to refer to the VM in later steps.
+    You name the VM **my-vm**. You use this name to refer to the VM in later steps.
 
 1. Run the following `az vm extension set` command to configure Nginx on your VM:
 
@@ -44,17 +44,17 @@ Here, you run Azure CLI commands to create a Linux VM and install Nginx. After y
 
     This command uses the Custom Script Extension to run a Bash script on your VM. The script is stored on GitHub.
 
-    While the command runs, you can [examine the Bash script](https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh?azure-portal=true) from a separate browser tab if you'd like.
+    While the command runs, you can choose to [examine the Bash script](https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh?azure-portal=true) from a separate browser tab.
 
     To summarize, the script:
 
     1. Runs `apt-get update` to download the latest package information from the internet. This step helps ensure that the next command can locate the latest version of the Nginx package.
     1. Installs Nginx.
-    1. Sets the home page, */var/www/html/index.html*, to print a welcome message that includes your VM's hostname.
+    1. Sets the home page, */var/www/html/index.html*, to print a welcome message that includes your VM's host name.
 
 ## Access your web server
 
-Here, you get the IP address for your VM and attempt to access your web server's home page.
+In this procedure, you get the IP address for your VM and attempt to access your web server's home page.
 
 1. Run the following `az vm list-ip-addresses` command to get your VM's IP address and store the result as a Bash variable:
 
@@ -82,7 +82,7 @@ Here, you get the IP address for your VM and attempt to access your web server's
 
     This message means that the VM was not accessible within the timeout period.
 
-1. As an optional step, try to access the web server from a browser. To do so:
+1. As an optional step, try to access the web server from a browser:
 
     1. Run the following to print your VM's IP address to the console:
 
@@ -90,14 +90,14 @@ Here, you get the IP address for your VM and attempt to access your web server's
         echo $IPADDRESS
         ```
 
-        You see an IP address, for example, **23.102.42.235**.
+        You see an IP address, for example, *23.102.42.235*.
 
-    1. Copy the IP address you see to the clipboard.
-    1. Open a new browser tab and navigate to your web server.
+    1. Copy the IP address that you see to the clipboard.
+    1. Open a new browser tab and go to your web server.
 
         After a few moments, you see that the connection isn't happening. If you wait for the browser to time out, you'll see something like this:
 
-        :::image type="content" source="../media/7-browser-timeout.png" alt-text="A web browser showing a connection timed out error message.":::
+        :::image type="content" source="../media/7-browser-timeout.png" alt-text="A web browser showing an error message that says the connection timed out.":::
 
         Keep this browser tab open for later.
 
@@ -134,7 +134,7 @@ Your web server wasn't accessible. To find out why, let's examine your current N
 
 1. Run the `az network nsg rule list` command a second time.
 
-    This time, use the `--query` argument to retrieve only the name, priority, affected ports, and access (Allow or Deny) for each rule.
+    This time, use the `--query` argument to retrieve only the name, priority, affected ports, and access (**Allow** or **Deny**) for each rule.
 
     The `--output` argument formats the output as a table so that it's easy to read.
 
@@ -156,9 +156,9 @@ Your web server wasn't accessible. To find out why, let's examine your current N
 
     You see the default rule, *default-allow-ssh*. This rule allows inbound connections over port 22 (SSH). SSH (Secure Shell) is a protocol that's used on Linux to allow administrators to access the system remotely.
 
-    The priority of this rule is 1000. Rules are processed in priority order, with lower numbers processed before higher numbers, because lower numbers have higher priority.
+    The priority of this rule is 1000. Rules are processed in priority order, with lower numbers processed before higher numbers.
 
-By default, a Linux VM's NSG allows network access only on port 22. This enables administrators to access the system. You need to also allow inbound connections on port 80, which allow access over HTTP.
+By default, a Linux VM's NSG allows network access only on port 22. This enables administrators to access the system. You need to also allow inbound connections on port 80, which allows access over HTTP.
 
 ## Create the network security rule
 
@@ -189,7 +189,7 @@ Here, you create a network security rule that allows inbound access on port 80 (
       --output table
     ```
 
-    You see this both the *default-allow-ssh* rule as well as your new rule, *allow-http*:
+    You see this both the *default-allow-ssh* rule and your new rule, *allow-http*:
 
     ```output
     Name               Priority    Port    Access
@@ -202,7 +202,7 @@ Here, you create a network security rule that allows inbound access on port 80 (
 
 Now that you've configured network access to port 80, let's try to access the web server a second time.
 
-1. Run the same `curl` command you ran earlier:
+1. Run the same `curl` command that you ran earlier:
 
     ```bash
     curl --connect-timeout 5 http://$IPADDRESS
@@ -214,7 +214,7 @@ Now that you've configured network access to port 80, let's try to access the we
     <html><body><h2>Welcome to Azure! My name is my-vm.</h2></body></html>
     ```
 
-1. As an optional step, refresh your browser tab points to your web server.
+1. As an optional step, refresh your browser tab that points to your web server.
 
     You see this:
 
