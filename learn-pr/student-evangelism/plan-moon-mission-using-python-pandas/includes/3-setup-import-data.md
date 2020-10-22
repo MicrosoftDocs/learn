@@ -1,8 +1,8 @@
-Now it's time to get data from the [Lunar Sample and Photo Catalog](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm) into Visual Studio Code. By doing so, you can use Python to quickly gain insight from the thousands of samples collected across the six Apollo missions that have landed on the Moon. 
+Now it's time to get data from the [Lunar Sample and Photo Catalog](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm?azure-portal=true) into Visual Studio Code. By doing so, you can use Python to quickly gain insight from the thousands of samples collected across the six Apollo missions that have landed on the Moon. 
 
 ## Set up your local environment
 
-This module will show you how to cleanse and manipulate data related to Moon rock samples. To do this, you need to set up some kind of Python notebook development environment. If you haven't done this before, we recommend following the steps we present here. The easiest way to do this is to follow the [Visual Studio Code data science setup docs](https://code.visualstudio.com/docs/python/data-science-tutorial). 
+This module will show you how to cleanse and manipulate data related to Moon rock samples. To do this, you need to set up some kind of Python notebook development environment. If you haven't done this before, we recommend following the steps we present here. The easiest way to do this is to follow the [Visual Studio Code data science setup docs](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true). 
 
 The three things you need to set up first are:
 - Visual Studio Code
@@ -29,9 +29,9 @@ Your environment should look like this:
 
 ## Collect and import data
 
-The data that you'll explore during this module is a file full of all the samples collected from the six Apollo missions that landed on the Moon. The [*rocksamples.csv*](https://aka.ms/LearnWithDrG/OverTheMoon/Data2) file was created using information from the [Lunar Sample and Photo Catalog](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm). 
+The data that you'll explore during this module is a file full of all the samples collected from the six Apollo missions that landed on the Moon. The [*rocksamples.csv*](https://aka.ms/LearnWithDrG/OverTheMoon/Data2?azure-portal=true) file was created using information from the [Lunar Sample and Photo Catalog](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm?azure-portal=true). 
 
-Download the [*rocksamples.csv*](https://aka.ms/LearnWithDrG/OverTheMoon/Data2) file and save it to your data folder. Your Visual Studio Code environment should look like this:
+Download the [*rocksamples.csv*](https://aka.ms/LearnWithDrG/OverTheMoon/Data2?azure-portal=true) file and save it to your data folder. Your Visual Studio Code environment should look like this:
 
 ![Local environment folder structure with data.](../media/vscode-data.png)
 

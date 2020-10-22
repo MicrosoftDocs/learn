@@ -1,6 +1,6 @@
 !["Over the Moon" title art](..\media\otm-logo.png)
 
-Passion, determination, creativity, and persistence are the qualities necessary to go beyond what we think is possible. These are the qualities and skills that have propelled humans into space and that have driven Fei Fei to reach the Moon in a rocket she designs in the new movie [*Over the Moon*](https://www.netflix.com/title/80214236) on Netflix. When it comes to Moon missions, whether you're Fei Fei or a NASA engineer, the most critical step is preparation. 
+Passion, determination, creativity, and persistence are the qualities necessary to go beyond what we think is possible. These are the qualities and skills that have propelled humans into space and that have driven Fei Fei to reach the Moon in a rocket she designs in the new movie [*Over the Moon*](https://www.netflix.com/title/80214236?azure-portal=true) on Netflix. When it comes to Moon missions, whether you're Fei Fei or a NASA engineer, the most critical step is preparation. 
 
 ![Fei Fei doing equations to build her rocket.](..\media\fei-fei-prep.png)
 
