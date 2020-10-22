@@ -28,7 +28,7 @@ quiz:
           isCorrect: false
           explanation: "There is no API in the System namespace to write a line to the debug console."
     - content: "If you want to write a debug message only when the count is `0`, what code would you use?"
-          choices:
+      choices:
         - content: "Debug.Assert(count != 0, "Count should not be 0.");"
           isCorrect: false
           explanation: "Close, Assert tests a condition and if it is true nothing will happen, else the application will enter break mode. So here, if the count is 0 it will enter break mode."
