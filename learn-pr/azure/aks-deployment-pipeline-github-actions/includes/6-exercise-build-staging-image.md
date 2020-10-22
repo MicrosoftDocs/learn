@@ -265,7 +265,7 @@ Selecting the **Commit new file** button triggers a new build to start on the **
 
 1. Create the `ACR_LOGIN` secret:
 
-    1. For **Name**, enter **ACR_LOGIN** .
+    1. For **Name**, enter **ACR_LOGIN**.
 
     1. If you saved the values that were shown at the end of the setup script, copy the **ACR Login Username** value. If not, run the following command in Cloud Shell to get the sign-in information of the Container Registry instance you created earlier:
 

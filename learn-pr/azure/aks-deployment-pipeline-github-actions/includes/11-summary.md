@@ -19,7 +19,7 @@ In this module, you created resources by using your Azure subscription. The foll
 
 1. On the **Overview** tab, select **Delete resource group**.
 
-1. To confirm the deletion, enter the name of the resource group. To delete all the resources you created in this module, select **Delete** .
+1. To confirm the deletion, enter the name of the resource group. To delete all the resources you created in this module, select **Delete.
 
 1. Repeat step 6 for the resource group name that starts with **MC_mslearn-gh-pipelines**.
 

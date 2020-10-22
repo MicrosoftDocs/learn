@@ -38,21 +38,21 @@ Let's set up the environment to deploy a helm chart to AKS using GitHub Actions.
 
 1. Move the old `kubernetes` files to the `templates` folder.
 
-1. From within the `contoso-website` directory, run
+1. From within the `contoso-website` directory, run:
 
     ```bash
     mv ../*.yaml ./templates
     ```
 
-This is all it takes to create a chart. Now let's configure it.
+Completing these steps is all it takes to create a chart. Now, let's configure it.
 
 ## Configure the chart
 
-1. Return to the parent directory with `cd ..`, you should be at the root of the repository now.
-1. Execute `code .` to open the editor in the current directory
-1. Open the `Chart.yaml` file
+1. Return to the parent directory by running `cd ..`. You should be at the root of the repository now.
+1. To open the editor in the current directory, enter `code` .
+1. Open the Chart.yaml file.
 
-    This is the file that names the chart. It's where Helm looks for information about the chart itself. You should have a file that looks like this:
+    The Chart.yaml file is the file that names the chart. This file is where Helm looks for information about the chart itself. You should have a file that looks like this example:
 
     ```yaml
     apiVersion: v2
@@ -80,7 +80,7 @@ This is all it takes to create a chart. Now let's configure it.
     appVersion: 1.16.0
     ```
 
-    Remove all the comments and unneeded keys, leaving only the required options, and edit them to look like this:
+    Remove all the comments and unused keys, leaving only the required options. Edit them to look like this example:
 
     ```yaml
     apiVersion: v2
