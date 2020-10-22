@@ -29,9 +29,9 @@ Your environment should look like this:
 
 ## Collect and import data
 
-The data that you'll explore during this module is a file full of all the samples collected from the six Apollo missions that landed on the Moon. The [*rocksamples.csv*]() file was created using information from the [Lunar Sample and Photo Catalog](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm). 
+The data that you'll explore during this module is a file full of all the samples collected from the six Apollo missions that landed on the Moon. The [*rocksamples.csv*](https://aka.ms/LearnWithDrG/OverTheMoon/Data2) file was created using information from the [Lunar Sample and Photo Catalog](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm). 
 
-Download the [*rocksamples.csv*]() file and save it to your data folder. Your Visual Studio Code environment should look like this:
+Download the [*rocksamples.csv*](https://aka.ms/LearnWithDrG/OverTheMoon/Data2) file and save it to your data folder. Your Visual Studio Code environment should look like this:
 
 ![Local environment folder structure with data.](../media/vscode-data.png)
 

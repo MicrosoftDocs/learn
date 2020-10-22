@@ -9,7 +9,7 @@ In this module, you have:
 - Created a prediction of how much sample weight could be returned from the Artemis missions.
 - Made a recommendation for the amount and types of rocks the Artemis astronauts should focus their efforts on, based on the rocks that are currently being used for research here on Earth.
 
-The data journey can take many turns. With your new data-wrangling skills, you should feel empowered to find other datasets or cut the data that's used here in new ways. By doing so, you'll discover and uncover new information about space exploration and moon sample recovery, or about any other problem you might be interested in.
+The data journey can take many turns. With your new data-wrangling skills, you should feel empowered to find other datasets or cut the data that's used here in new ways. By doing so, you'll discover and uncover new information about space exploration and Moon sample recovery, or about any other problem you might be interested in.
 
 Remember, this module is a part of a multi-modal approach to learning, which means that you can also follow along with a video tutorial on the [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG).
 

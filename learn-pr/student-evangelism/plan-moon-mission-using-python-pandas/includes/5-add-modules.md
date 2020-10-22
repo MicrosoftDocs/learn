@@ -36,14 +36,14 @@ missions['LM Mass Diff'] = missions['LM Mass (kg)'].diff()
 missions['LM Mass Diff'] = missions['LM Mass Diff'].fillna(value=0)
 
 missions['Command Module (CM)'] = {'Columbia (CSM-107)', 'Yankee Clipper (CM-108)', 'Kitty Hawk (CM-110)', 'Endeavor (CM-112)', 'Casper (CM-113)', 'America (CM-114)'}
-missions['CM Mass (kg))'] = {5560, 5609, 5758, 5875, 5840, 5960}
+missions['CM Mass (kg)'] = {5560, 5609, 5758, 5875, 5840, 5960}
 missions['CM Mass Diff'] = missions['CM Mass (kg))'].diff()
 missions['CM Mass Diff'] = missions['CM Mass Diff'].fillna(value=0)
 
 missions
 ```
 
-|   | Mission | Sample Weight(kg) | Weight Diff | Lunar Module (LM) | LM Mass (kg) | LM Mass Diff | Command Module (CM) | CM Mass (kg)) | CM Mass Diff |
+|   | Mission | Sample Weight(kg) | Weight Diff | Lunar Module (LM) | LM Mass (kg) | LM Mass Diff | Command Module (CM) | CM Mass (kg) | CM Mass Diff |
 |---|---|---|---|---|---|---|---|---|---|
 | 0 | Apollo11 | 21.55424 | 0.00000 | Challenger (LM-12) | 15264 | 0.0 | Yankee Clipper (CM-108) | 5960 | 0.0 |
 | 1 | Apollo12 | 34.34238 | 12.78814 | Orion (LM-11) | 15235 | -29.0 | Kitty Hawk (CM-110) | 5609 | -351.0 |
@@ -60,7 +60,7 @@ missions['Total Weight Diff'] = missions['LM Mass Diff'] + missions['CM Mass Dif
 missions
 ```
 
-|   | Mission | Sample Weight(kg) | Weight Diff | Lunar Module (LM) | LM Mass (kg) | LM Mass Diff | Command Module (CM) | CM Mass (kg)) | CM Mass Diff | Total Weight (kg) | Total Weight Diff |
+|   | Mission | Sample Weight(kg) | Weight Diff | Lunar Module (LM) | LM Mass (kg) | LM Mass Diff | Command Module (CM) | CM Mass (kg) | CM Mass Diff | Total Weight (kg) | Total Weight Diff |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 0 | Apollo11 | 21.55424 | 0.00000 | Challenger (LM-12) | 15264 | 0.0 | Yankee Clipper (CM-108) | 5960 | 0.0 | 21224 | 0.0 |
 | 1 | Apollo12 | 34.34238 | 12.78814 | Orion (LM-11) | 15235 | -29.0 | Kitty Hawk (CM-110) | 5609 | -351.0 | 20844 | -380.0 |
@@ -68,4 +68,3 @@ missions
 | 3 | Apollo15 | 75.39910 | 33.56547 | Antares (LM-8) | 16430 | -26.0 | America (CM-114) | 5875 | 35.0 | 22305 | 9.0 |
 | 4 | Apollo16 | 92.46262 | 17.06352 | Intrepid (LM-6) | 16445 | 15.0 | Endeavor (CM-112) | 5560 | -315.0 | 22005 | -300.0 |
 | 5 | Apollo17 | 109.44402 | 16.98140 | Antares (LM-8) | 15103 | -1342.0 | Casper (CM-113) | 5758 | 198.0 | 20861 | -1144.0 |
-

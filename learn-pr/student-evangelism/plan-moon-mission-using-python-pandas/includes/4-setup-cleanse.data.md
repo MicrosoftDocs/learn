@@ -20,7 +20,7 @@ rock_samples.head()
 | 3 | 10004 | Apollo11 | Core | Unsieved | 0.0448 | 71.76 |
 | 4 | 10005 | Apollo11 | Core | Unsieved | 0.0534 | 40.31 |
 
-Here we first modified the values in the **Weight(g)** column to be the same value multiplied by 0.001. Then we modified the name of the column to be more accurate by changing it to **Weight (kg)**.
+Here we first modified the values in the **Weight(g)** column to be the same value multiplied by 0.001. Then we modified the name of the column to be more accurate by changing it to **Weight(kg)**.
 
 ## Create a new dataframe
 
@@ -75,13 +75,13 @@ missions
 
 Let's break out this code a bit. The first line was `sample_total_weight = rock_samples.groupby('Mission')['Weight(kg)'].sum()`, which can be broken out as follows:
 - `rock_samples.groupby('Mission')` - This groups all the rows by the values in the **Mission** column.
-- `rock_samples.groupby('Mission')['Weight(kg)']` - This grabs all the values in the **Weight (kg)** column, but groups by unique values in the **Mission** column.
-- `rock_samples.groupby('Mission')['Weight(kg)'].sum()` - This sums all the values in the **Weight (kg)** column for each unique value in the **Mission** column.
+- `rock_samples.groupby('Mission')['Weight(kg)']` - This grabs all the values in the **Weight(kg)** column, but groups by unique values in the **Mission** column.
+- `rock_samples.groupby('Mission')['Weight(kg)'].sum()` - This sums all the values in the **Weight(kg)** column for each unique value in the **Mission** column.
 
 If you were to print out that one line, you would get a pandas series, which is basically a 1D data type, or a list. The list would have the index be the unique value from the **Mission** column, instead of a number:
 
 ```python
-sample_total_weight = rock_samples.groupby('Mission')['Weight (kg)'].sum()
+sample_total_weight = rock_samples.groupby('Mission')['Weight(kg)'].sum()
 sample_total_weight
 ```
 

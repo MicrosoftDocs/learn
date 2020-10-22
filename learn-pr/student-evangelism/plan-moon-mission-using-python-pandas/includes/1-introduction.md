@@ -20,7 +20,7 @@ Fei Fei, on the other hand, still was able to land on the Moon, with the help of
 
 In this module, you will take inspiration from both Fei Fei and NASA scientists to explore data related to the Apollo missions and the rock samples that were returned to Earth. You will learn data cleansing and manipulation techniques that are critical to developing the machine learning models and AI that aid humankind in preparation for space exploration.
 
-This module is part of a multi-modal approach to learning, which means that you can also follow along with a video tutorial on the [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG).
+This module is part of a multi-modal approach to learning, which means that you can also follow along with a video tutorial on the [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG?azure-portal=true).
 
 ## Learning objectives
 
@@ -35,4 +35,4 @@ In this module, you will begin to develop the skills to:
 
   - [Python installed](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true)
   - [Visual Studio Code, with the Python extension](https://docs.microsoft.com/learn/modules/python-install-vscode/6-exercise-write-execute-first-script?azure-portal=true)
-  - [Discover the role of Python in space exploration](https://docs.microsoft.com/en-us/learn/paths/introduction-python-space-exploration-nasa/)
+  - [Discover the role of Python in space exploration](https://docs.microsoft.com/en-us/learn/paths/introduction-python-space-exploration-nasa/?azure-portal=true)
