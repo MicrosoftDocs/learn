@@ -24,7 +24,7 @@ You can learn more about meteors and meteor showers on the [NASA Solar System Ex
 
 ### Meteors from comets 
 
-Comets are made mostly of ice. They're embedded with some dust, rock, and metals. Comets have cylindrical orbits around our sun. So sometimes they are nearer to the sun than other times. When a comet is near the sun, it often begins to melt. As it melts, some of the dust, rock, and metal dislodge from the comet and remain in space at that location. 
+Comets are made mostly of ice. They're embedded with some dust, rock, and metals. Comets have elliptical orbits around our sun. So sometimes they are nearer to the sun than other times. When a comet is near the sun, it often begins to melt. As it melts, some of the dust, rock, and metal dislodge from the comet and remain in space at that location. 
 
 When Earth nears a location where a comet has shed debris, that debris can enter our atmosphere and cause meteor showers. Because some locations in Earth's orbit are more likely to have a lot of comet debris, meteor showers are more common in those locations. 
 

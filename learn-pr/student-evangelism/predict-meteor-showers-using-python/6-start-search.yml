@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.predict-meteor-showers-using-python.6-start-search
 metadata:
   title: 'Write a predictor function - Part 1'
-  description: Learn how to write a function to predict meteor showers by using data stored in pandas data frames.
+  description: Learn how to write a function to predict meteor showers by using data stored in pandas DataFrames.
   ms.date: 10/20/2020
   author: sguthals
   ms.author: shanama 
