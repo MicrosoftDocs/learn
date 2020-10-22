@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.extend-resource-manager-template-deployment-scripts.6-knowledge-check-deployment-scripts
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of deployment scripts
+  author: smurawski
+  ms.author: stmuraws
+  ms.date: 10/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check-deployment-scripts.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What are deployment scripts?"
+    choices:
+      - content: "Scripts that create a new Azure Resource Manager deployment."
+        isCorrect: false
+        explanation: "Deployment scripts refers to a specific Azure Resource Manager resource type that can add custom behavior to a template deployment."
+      - content: "An Azure Automation feature for creating new environments."
+        isCorrect: false
+        explanation: "Deployment scripts refers to a specific Azure Resource Manager resource type that can add custom behavior to a template deployment."
+      - content: "An Azure Resource Manager resource that can execute custom scripts to extend the capabilities of template deployments."
+        isCorrect: true
+        explanation: "Deployment scripts refers to a specific Azure Resource Manager resource type that can add custom behavior to a template deployment."
+  - content: "Deployment scripts require a user-assigned Managed Service Identity."
+    choices:
+      - content: "True"
+        isCorrect: true
+        explanation: "Deployment scripts require a user-assigned Managed Service Identity with the rights to accomplish the tasks defined in the script."
+      - content: "False"
+        isCorrect: false
+        explanation: "Deployment scripts require a user-assigned Managed Service Identity with the rights to accomplish the tasks defined in the script."
+  - content: "What are the two ways that data can be passed to deployment scripts?"
+    choices:
+    - content: "Deployment scripts can access template parameters."
+      isCorrect: false
+      explanation: "Deployment scripts cannot directly reference template variables unless they are included in the arguments or environment variables provided to the ACI container running the deployment script."
+    - content: "Deployment script resources can be passed arguments and access environment variables."
+      isCorrect: true
+      explanation: "Arguments and environmental variables are the two ways to pass data in to a deployment script."
+    - content: "Deployment scripts can only use output of resources they depend on."
+      isCorrect: false
+      explanation: "Outputs of prior resources cannot be directly referenced from a deployment script, but they can be used to populate the arguments or environment variables."
+  - content: "You can use an existing Azure Storage resource with deployment scripts."
+    choices:
+      - content: "True"
+        isCorrect: true
+        explanation: "You can supply an existing Azure Storage resource for the deployment script. Otherwise, the deployment script resource will create a storage account and file share."
+      - content: "False"
+        isCorrect: false
+        explanation: "You can supply an existing Azure Storage resource for the deployment script. Otherwise, the deployment script resource will create a storage account and file share."
