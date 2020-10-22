@@ -17,6 +17,12 @@ The live log stream connects to only one app instance, so is not useful if you h
 You can enable live log streaming from the command line using **Azure CLI** or **curl** commands.
 
 ### Azure CLI
+Use the following steps to open the Azure CLI.
+1.	In Azure from the Home page.
+1.	Click App Services
+1.	Click contosofashions<your-number>
+1.	Scroll down to Development tools, select Console
+
 Use the following command to open the log stream using Azure CLI.
 
 ```
