@@ -12,31 +12,31 @@ title: Check your knowledge
 durationInMinutes: 4
 quiz:
   questions:
-  - content: "Where can I deploy my with maven packaged Quarkus Application?"
+  - content: "Where can I deploy my maven packaged Spring Boot Application?"
     choices:
     - content: "App Service"
       isCorrect: false
-      explanation: "You can easily deploy your with maven or with gradle packaged Quarkus Application. But it might not be the only solution Azure provides for you."
+      explanation: "You can easily deploy your with maven or with gradle packaged Spring Boot Application. But it might not be the only solution Azure provides for you."
     - content: "VM"
       isCorrect: false
-      explanation: "Even though it's possible to deploy the packaged Quarkus Application on a VM in Azure. It is not the prefered way to do so as Azure provides more support with other Services."
+      explanation: "Even though it's possible to deploy the packaged Spring Boot Application on a VM in Azure. It is not the prefered way to do so as Azure provides more support with other Services."
     - content: "Spring Cloud"
       isCorrect: false
-      explanation: "Using the Quarkus Extension for Spring Cloud Config enables you to deploy your Quarkus Application to your Spring Cloud cluster."
+      explanation: "Spring Cloud is the home of distributed Spring Boot Services."
     - content: "All three above."
       isCorrect: true
-      explanation: "Given your overall situation, if you are at the beginning of a _Lift and Shift_ migration towords the cloud, or you start cloud native. Azure provides you with various services to choose from."
-  - content: "Question2"
+      explanation: "Given your overall situation, if you are at the beginning of a _Lift and Shift_ migration towards the cloud, or you start cloud native. Azure provides you with various services to choose from."
+  - content: "I need to change my whole architecture in order to move to the Azure Cloud."
     choices:
-    - content: "Answer1"
+    - content: "Yes. Stacks which are not intend to be cloud-native can't run in the cloud."
       isCorrect: false
       explanation: "Explanation1"
-    - content: "Answer2"
+    - content: "No. Every application can easily run in the Azure Cloud as well."
       isCorrect: false
       explanation: "Explanation2"
-    - content: "Answer3"
-      isCorrect: false
-      explanation: "Explanation3"
-    - content: "Answer4"
+    - content: "No, but in order to use the Cloud the most efficient way, the architecture needs to become more cloud-native."
       isCorrect: true
+      explanation: "Explanation3"
+    - content: "Yes and also the overall way of deployments needs to become automatic."
+      isCorrect: false
       explanation: "Explanation4"
