@@ -80,4 +80,4 @@ The container will begin building. This may take a few minutes as a new image ha
 
 Great work! You've got a Python web application with Flask running on your machine and you might not know what either of those things even are. That's OK! You don't have to. The container takes care of setting up the entire environment.
 
-You may have noticed in that last notification that VS Code said that "127.0.0.1:5000 on remote is now forwarded to 127.0.0.1:500 locally". This is called "Port Forwarding", and it's what allows you to access an application running inside the container. In the next section, you'll learn more about Port Forwarding and how you can use it to make anything in a container feel like it's running locally.
+You may have noticed in that last notification that VS Code said that "127.0.0.1:5000 on remote is now forwarded to 127.0.0.1:5000 locally". This is called "Port Forwarding", and it's what allows you to access an application running inside the container. In the next section, you'll learn more about Port Forwarding and how you can use it to make anything in a container feel like it's running locally.
