@@ -462,8 +462,8 @@ With the staging workflow created, the next step is to create the production wor
                 --set image.tag=${GITHUB_REF##*/}
     ```
 
-1. Commit the file by clicking the green **Start Commit** button.
-1. In your Cloud Shell, execute a `git pull` to fetch the latest changes and then run the following git command to tag and push the changes:
+1. To commit the file, select the green **Start Commit** button.
+1. In Cloud Shell, execute a `git pull` to fetch the latest changes and then run the following git command to tag and push the changes:
 
     ```bash
     git tag -a v1.0.1 -m'Creating first production deployment' && git push --tags

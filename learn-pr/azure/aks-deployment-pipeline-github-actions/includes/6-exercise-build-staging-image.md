@@ -8,11 +8,11 @@ You'll build this pipeline by using the GitHub Actions workflow.
 
 ## Build the Action workflow
 
-1. To start building your pipeline, go to the fork of the sample repository in the GitHub website and select the **Actions** tab.
+1. To start building your pipeline, go to the fork of the sample repository in the GitHub website and select the **Actions** tab:
 
     :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Screenshot that shows the Get started with GitHub Actions page on the GitHub website.":::
 
-1. Just below the header, select the **Set up a workflow yourself** link. A new editor with a file in it should open.
+1. Just below the header, select the **Set up a workflow yourself** link:
 
     :::image type="content" source="../media/6-2-example-editor.png" alt-text="Screenshot that shows an example file being edited in the Edit new file pane on the GitHub website.":::
 
@@ -191,9 +191,9 @@ You'll build this pipeline by using the GitHub Actions workflow.
     ```
 
     > [!IMPORTANT]
-    > Be mindful of the indentation when using YAML. The `name` key should be aligned with the previous `uses` key.
+    > Be careful with indentation when you use YAML. The `name` key should be aligned with the preceding `uses` key.
 
-    This action gives us several options to tweak the usage. You can learn more about each one of them in the [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/releases/v1).
+    This action gives you several options to adjust the usage. For more information, see the GitHub [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/releases/v1).
 
 1. In the `name` key, rename the value **Build and push staging image**.
 
@@ -249,53 +249,54 @@ Selecting the **Commit new file** button triggers a new build to start on the **
 
 1. On the repository start page, select the **Settings** tab. Scroll down and select **Secrets** in the left menu.
 
-1. Select the **New secret** button at the top right.
+1. Select **New secret**.
 
 1. Create the `ACR_NAME` secret:
 
     1. For **Name**, enter **ACR_NAME**.
-    1. Run the following command in the Azure Cloud Shell to obtain the login server of the Container Registry instance you created earlier:
 
-    ```azurecli-interactive
-    az acr list --query "[?contains(resourceGroup, 'mslearn-gh-pipelines')].loginServer" -o table
-    ```
+    1. Run the following command in Cloud Shell to get the sign-in information of the Container Registry instance you created earlier:
+
+       ```azurecli-interactive
+       az acr list --query "[?contains(resourceGroup, 'mslearn-gh-pipelines')].loginServer" -o table
+       ```
 
     1. For **Value**, enter value of the secret.
 
-1. Create `ACR_LOGIN` secret:
+1. Create the `ACR_LOGIN` secret:
 
-    1. Put `ACR_LOGIN` in the **Name** field.
+    1. For **Name**, enter **ACR_LOGIN** .
 
-    1. If you saved the values presented to you in the end of the set-up script, copy the **ACR Login Username** value. If not, run the following command in the Azure Cloud Shell to obtain the login of the ACR you created earlier.
+    1. If you saved the values that were shown at the end of the setup script, copy the **ACR Login Username** value. If not, run the following command in Cloud Shell to get the sign-in information of the Container Registry instance you created earlier:
 
-    ```azurecli-interactive
-    az acr credential show --name <ACR_NAME> --query "username" -o table
-    ```
+       ```azurecli-interactive
+       az acr credential show --name <ACR_NAME> --query "username" -o table
+       ```
 
-    1. Put the value in the **Value** field of the secret
+    1. For **Value**, enter the value of the secret.
 
-1. Create `ACR_PASSWORD` secret
+1. Create the `ACR_PASSWORD` secret:
 
-    1. Put `ACR_PASSWORD` in the **Name** field.
+    1. For **Name**, enter **ACR_PASSWORD**.
 
-    1. If you saved the values presented to you in the end of the set-up script, copy the **ACR Login Password** value. If not, run the following command in the Azure Cloud Shell to obtain the login of the ACR you created earlier.
+    1. If you saved the values that were shown at the end of the setup script, copy the **ACR Login Password** value. If not, run the following command in Cloud Shell to get the sign-in information of the Container Registry instance you created earlier:
 
     ```azurecli-interactive
     az acr credential show --name <ACR_NAME> --query "passwords[0].value" -o table
     ```
 
-    1. Put the value in the **Value** field of the secret
+    1. For **Value**, enter the value of the secret
 
 ### Push the image
 
-1. Go back to the **Actions** tab
+1. Select the **Actions** tab.
 
-1. Click the only execution in the list
+1. Select the only execution in the list.
 
-1. Click on the **Rerun jobs** in the right-hand side of the screen and then "Rerun all jobs"
+1. On the right side, select **Rerun jobs**, and then select **Rerun all jobs**.
 
     :::image type="content" source="../media/6-7-rerun-jobs.png" alt-text="Rerun all jobs":::
 
-1. Run `az acr repository list --name <ACR_NAME> -o table` in the Azure Cloud Shell to confirm there's a repository named `contoso-website` listed in the results
+1. In Cloud Shell, run `az acr repository list --name <ACR_NAME> -o table` to confirm there's a repository named `contoso-website` in the results.
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
