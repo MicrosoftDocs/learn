@@ -11,11 +11,11 @@ metadata:
 title: Create an analytics rule from wizard
 durationInMinutes: 5
 content: |
-  [!include[]includes/5-create-rule-from-wizard.md)]
+  [!include[] includes/5-create-rule-from-wizard.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You want to configure a new KQL code to detect suspicios activity from Azure Activity Logs. In chich section you can ented your custom KQL code?"
+  - content: "You want to configure a new KQL code to detect suspicious activity from Azure Activity Logs. In chich section you can enter your custom KQL code?"
     choices:
     - content: "Set rule logic"
       isCorrect: true
