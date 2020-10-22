@@ -1,4 +1,4 @@
-Let's take a step back and see how the number of samples compares to the amount of sample. We can compare the total weight from the `needed_samples` dataframe to the `rock_samples` dataframe (the ones we've identified as running low compares to all of the samples collected on Apollo missions).
+Let's take a step back and see how the number of samples compares to the amount of sample. We can compare the total weight from the `needed_samples` dataframe to the `rock_samples` dataframe. That is, we'll compare the samples we've identified as running low to all the samples collected on Apollo missions.
 
 ```python
 needed_samples.groupby('Type')['Weight(kg)'].sum()
@@ -26,9 +26,9 @@ Special      0.74410
 Name: Weight(kg), dtype: float64
 ```
 
-One bit of information really stands out: We've never had a lot of Crustal rocks in the first place. 
+One bit of information really stands out: we've never had a lot of Crustal rocks in the first place. 
 
-We can add the Crustal rocks to the set needed samples:
+We can add Crustal rocks to the set of needed samples:
 
 ```python
 needed_samples = needed_samples.append(rock_samples.loc[rock_samples['Type'] == 'Crustal'])
@@ -49,7 +49,7 @@ needed_samples.info()
 
  ## Summary of needed samples
 
- The last step is to consolidate everything we know into one table that can be shared with the astronauts. First, we need a column for each type of rock that we have already identified as being ones we want more samples of:
+ The final step is to consolidate everything we know into one table that can be shared with the astronauts. First, we need a column for each type of rock that we have already identified as rocks we want more samples of:
 
  ```python
 needed_samples_overview = pd.DataFrame()
@@ -78,7 +78,7 @@ needed_samples_overview
 | 1 | Breccia | 10.11850 |
 | 2 | Crustal | 4.74469 |
 
-When astronauts are up on the Moon, one way of being able to identify rocks is by their size, if we can give them an estimated size of each type of rock, that might make their collection process easier:
+When astronauts are up on the Moon, one way they can identify rocks is by their size. If we can give them an estimated size of each type of rock, that might make their collection process easier.
 
 ```python
 needed_sample_ave_weights = needed_samples.groupby('Type')['Weight(kg)'].mean().reset_index()
@@ -93,9 +93,9 @@ needed_samples_overview
 | 1 | Breccia | 10.11850 | 1.264812 |
 | 2 | Crustal | 4.74469 | 0.103145 |
 
-Crustals are small! No wonder we didn't have a lot of them, they are probably a lot harder to spot!
+Crustals are small! They're probably a lot harder to spot, so no wonder we don't have a lot of them.
 
-We probably want to give the astronauts some indication of how many of each type we want them to collect too, so we should grab the total number we have of each type and get the percentage of each type of rock, but only out of the three we're looking for. 
+We probably want to give the astronauts some indication of how many of each type we want them to collect. So, for the three types we're looking for, we should grab the total number we have of each type and get the remaining percentage of each type of rock. 
 
 ```python
 total_rock_count = rock_samples.groupby('Type')['ID'].count().reset_index()
@@ -112,7 +112,7 @@ needed_samples_overview
 | 1 | Breccia | 10.11850 | 1.264812 |959 | 0.707227 |
 | 2 | Crustal | 4.74469 | 0.103145 | 46 | 0.033923 |
 
-And finally, to tie is all back into a recommendation to the Artemis program, we can get the average weight of samples we estimated in the previous unit
+And finally, to tie it all back into a recommendation to the Artemis program, we can determine the average weight of samples we estimated in the preceding unit.
 
 ```python
 artemis_ave_weight = artemis_mission['Estimated Sample Weight (kg)'].mean()
@@ -123,7 +123,7 @@ artemis_ave_weight
 64.22588520079607
 ```
 
-And use that to determine how many of each rock we want the astronauts to aim to collect:
+We can use this number to determine how many of each rock we want the astronauts to aim to collect:
 
 ```python
 needed_samples_overview['Weight to Collect'] = needed_samples_overview['Percentage of Rocks'] * artemis_ave_weight
@@ -139,4 +139,4 @@ needed_samples_overview
 | 1 | Breccia | 10.11850 | 1.264812 |959 | 0.707227 | 45.422289 | 35.912271 |
 | 2 | Crustal | 4.74469 | 0.103145 | 46 | 0.033923 | 2.178754 | 21.123128 |
 
-So, we might tell the Artemis astronauts to please try to collect 13 Basalt rocks, 35 Breccia rocks, and 21 Crustal rocks! WHEW!
+So, we might tell the Artemis astronauts to please try to collect 13 Basalt rocks, 35 Breccia rocks, and 21 Crustal rocks. Whew!
