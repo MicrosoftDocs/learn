@@ -34,6 +34,7 @@ units:
 - learn.java-target-destinations.2-application-deployment-types
 - learn.java-target-destinations.3-matrix-of-solutions
 - learn.java-target-destinations.4-choosing-the-right-destination
-- learn.java-target-destinations.5-conclusion
+- learn.java-target-destinations.5-knowledge-check
+- learn.java-target-destinations.6-conclusion
 badge:
   uid: learn.java-target-destinations.badge
