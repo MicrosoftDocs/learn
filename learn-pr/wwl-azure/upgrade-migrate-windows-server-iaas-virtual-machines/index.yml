@@ -3,7 +3,7 @@ uid: learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines
 metadata:
   title: Upgrade and migrate Windows Server IaaS virtual machines
   description: "Learn to migrate a workload running in Windows Server to an infrastructure as a service (IaaS) virtual machine (VM) and to Windows Server 2019 by using Windows Server migration tools or the Storage Migration Service."
-  ms.date: 08/31/2020
+  ms.date: 10/21/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ prerequisites: |
   - Security-related technologies such as firewalls, encryption, and multi-factor authentication.
   - Windows PowerShell scripting.
   - Automation and monitoring.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/upgrade-and-migrate-windows-server-iaas-virtual-machines.svg
 levels:
 - intermediate
 roles:

@@ -17,23 +17,23 @@ quiz:
   questions:
     - content: "What is the difference between CI and CD?"
       choices:
-        - content: "CI is related to integration and testing, while CD is related to packaging and deployment"
+        - content: "CI is related to integration and testing, while CD is related to packaging and deployment."
           isCorrect: true
-          explanation: "Yes, while CI is related to the integration of a team's code, CD is more related to the packaging and deployment of such code"
+          explanation: "Yes, while CI is related to the integration of a team's code, CD is more related to the packaging and deployment of such code."
         - content: "None, those are two names for the same practice."
           isCorrect: false
-          explanation: "Despite the difference being small, it's possible to have CI without CD and CD without CI, so they cannot be considered the same"
-        - content: "CI is related to the people while CD is related to tooling"
+          explanation: "Despite the difference being small, it's possible to have CI without CD and CD without CI, so they cannot be considered the same."
+        - content: "CI is related to the people while CD is related to tooling."
           isCorrect: false
           explanation: "Both of the concepts are not directly related to people, but to tooling."
     - content: "What is a CI pipeline?"
       choices:
-        - content: "CI pipelines are the name of the file that contains instructions to run automated tasks"
+        - content: "CI pipelines are the name of the file that contains instructions to run automated tasks."
           isCorrect: false
-          explanation: "The CI pipeline is composed of those files, but these files aren't the definition of a CI pipeline itself"
-        - content: "It's the name we give to the act of running a particular set of automated tasks"
+          explanation: "The CI pipeline is composed of those files, but these files aren't the definition of a CI pipeline itself."
+        - content: "It's the name we give to the act of running a particular set of automated tasks."
           isCorrect: false
-          explanation: "Running the particular set is the action, but not the definition"
+          explanation: "Running the particular set is the action, but not the definition."
         - content: "A CI pipeline is the name we give to the set of processes that will be run when a new code change is detected."
           isCorrect: true
-          explanation: "Correct, the set of processes is called a 'pipeline'"
+          explanation: "Correct, the set of processes is called a 'pipeline'."
