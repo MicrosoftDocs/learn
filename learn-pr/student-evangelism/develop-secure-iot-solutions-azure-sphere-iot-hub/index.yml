@@ -9,23 +9,23 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
 title: "Develop secure IoT Solutions for Azure Sphere with IoT Hub"
-summary: "Deploy an Azure Sphere application to monitor ambient conditions for laboratory conditions. The application will monitor the room environment conditions, connect to IoT Hub, and send telemetry data from the device to the cloud. You'll control cloud to device communications and undertake actions as needed."
+summary: "Deploy an Azure Sphere device application to monitor ambient conditions for laboratory conditions. The application will monitor the room environment conditions, connect to IoT Hub, and send telemetry data from the device to the cloud. You'll control cloud-to-device communications and undertake actions as needed."
 abstract: | 
   In this module, you will:
-  - Create an Azure IoT Hub and Device Provisioning Services
-  - Configure your Azure Sphere application to Azure IoT Hub
-  - Build and deploy the Azure Sphere application
-  - View the environment telemetry from the Azure Cloud Shell
-  - Control an Azure Sphere application using Azure IoT Hub Direct Method
+  - Create an Azure IoT hub and device provisioning services
+  - Configure your Azure Sphere device application to Azure IoT Hub
+  - Build and deploy the Azure Sphere device application
+  - View the environment telemetry from Azure Cloud Shell
+  - Control an Azure Sphere device application by using Azure IoT Hub direct method
      
   "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 
 prerequisites: |
   - Azure Sphere kit
-  - Visual Studio Code installed in your computer
+  - Visual Studio Code installed on your computer
   - Ability to use Visual Studio Code
-  - Git installed in your computer
-  - Ability to use Git/Github
+  - Git installed on your computer
+  - Ability to use Git/GitHub
   - Basic knowledge of Azure Sphere
   - Basic knowledge of Azure IoT
 iconUrl: /learn/achievements/student-evangelism/develop-secure-iot-solutions-for-azure-sphere-with-iot-hub.svg
