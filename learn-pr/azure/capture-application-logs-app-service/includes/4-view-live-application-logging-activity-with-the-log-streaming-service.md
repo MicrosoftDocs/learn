@@ -26,7 +26,7 @@ Use the following steps to open the Azure CLI.
 Use the following command to open the log stream using Azure CLI.
 
 ```
-az webapp log tail --name \<_app name_\> --resource-group \<_resource group name_\>
+az webapp log tail --name <app name> --resource-group <resource group name>
 ```
 
 To stop viewing live logs, press Ctrl +C.
