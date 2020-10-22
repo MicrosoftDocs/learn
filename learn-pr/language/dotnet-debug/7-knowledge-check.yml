@@ -50,7 +50,7 @@ quiz:
           isCorrect: false
           explanation: "Changing your program's output is not useful, since it will only have effect when the application is being debugged."
         - content: "Observing your program's state, and modifying your program values"
-          isCorrect: true
+          isCorrect: false
           explanation: "Observing and modifying values are important, but it's also very important to be able to control the flow of program execution."
         - content: "Editing your program while running, and editing program values"
           isCorrect: false
