@@ -13,80 +13,48 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: "How often does the cloud endpoint change detection job run?"
+  - content: "An organization has set up virtual machines (VMs) to act as jumpboxes in each of their six virtual networks. Each of their jumpboxes regularly support 5 concurrent RDP sessions per day. Why should they consider using Azure Bastion?"
     choices:
-    - content: Every 12 hours.
+    - content: They could deploy one Bastion host to support all VM RDP connections in the resource group.
       isCorrect: false
-      explanation: The detection job runs every 24 hours.
-    - content: Every 8 hours.
+      explanation: Bastion supports up to 25 concurrent RDP connects for VMs in the same virtual network or a peered virtual network. So if the virtual networks were peered they'd likely need at least two bastion hosts. 
+    - content: They can eliminate all their VM management work.
       isCorrect: false
-      explanation: The detection job runs every 24 hours. 
-    - content: Every 24 hours.
+      explanation: Bastion helps simplify the management of your internal VMs by providing a secure connection to those VMs over the internet.
+    - content: They can reduce the number of VMs they manage by replacing each VM jumpbox with a bastion host. 
       isCorrect: true
-      explanation: The detection job runs every 24 hours. 
-  - content: "What is the Azure File Sync agent?"
+      explanation: They can deploy one bastion host to each virtual network or to peered virtual networks.
+  - content: "At what resource level or scope does a Bastion deployment apply to?"
     choices:
-    - content: It's installed on a server to enable Azure File Sync replication between the local file share and an Azure file share.
+    - content: Resource group
+      isCorrect: false
+      explanation: A Bastion deployment doesn't apply to the resource group scope.
+    - content: Virtual network or peered virtual networks
       isCorrect: true
-      explanation: Azure File Sync agent is a downloadable package that enables a Windows Server file share to be synced with an Azure file share.
-    - content: It's installed on a server to set NTFS permissions on files and folders.
+      explanation: A Bastion host support RDP and SSH connections for VMs within the same virtual network or a peered virtual network.
+    - content: Subscription
       isCorrect: false
-      explanation: The Azure File Sync agent doesn't set permissions.
-    - content: It's installed on an Azure file share to control on-premises file and folder replication traffic.
-      isCorrect: false
-      explanation: The Azure File Sync agent isn't installed on an Azure file share.
-  - content: "How do you assess your server's compatibility with Azure File Sync?"
+      explanation: A Bastion deployment doesn't apply to the subscription scope.
+  - content: "You decide deploy Bastion to an existing virtual network by using Azure CLI. What resources do you need to create?"
     choices:
-    - content: Download and run the Azure File Sync agent to assess the file share and server.
+    - content: VM, public IP, and Bastion
       isCorrect: false
-      explanation: The Azure File Sync agent doesn't check the compatibility of the server.
-    - content: Install the Azure PowerShell module on the server and use the cmdlet Invoke-AzStorageSyncCompatibilityCheck.
+      explanation: You don't need a VM to deploy Bastion to a virtual network.
+    - content: Subnet named AzureBastionSubnet and at least one VM
+      isCorrect: false
+      explanation: You can't connect to the Bastion host without a public IP address.
+    - content: Subnet named AzureBastionSubnet, public IP, and Bastion
       isCorrect: true
-      explanation: The results of the cmdlet can tell you if the OS, file system, file names, or folder names have compatibility issues.
-    - content: Register the server with the Storage Sync Service to have the server evaluated for compatibility.
-      isCorrect: false
-      explanation: The Storage Sync Service doesn't check the compatibility of the server.
-  - content: "In what order do you create the Azure resources needed to support Azure File Sync?"
+      explanation: You need to create a subnet named AzureBastionSubnet for the virtual network; create a public IP; and then create the Bastion resource with the virtual network and public IP address information. 
+  - content: "Several of your peers are having trouble connecting to VMs by using Bastion. Where might you start to troubleshoot the issue?"
     choices:
-    - content: Storage Sync Service, storage account, file share, and then the sync group.
+    - content: Check the public IP address.
       isCorrect: false
-      explanation: Create the Storage Sync Service in an Azure Storage account.
-    - content: Storage account, file share, Storage Sync Service, and then the sync group.
+      explanation: Connectivity issues with the public IP address isn't likely to be the issue.
+    - content: Review the number of current remote connections by going to **Bastion** > **Sessions**.
       isCorrect: true
-      explanation: Create the storage account, and then create a file share within the storage account. Create the Storage Sync Service, and then create the sync group within the Storage Sync Service.
-    - content: Storage account, file share, sync group, and then Storage Sync Service.
+      explanation: Bastion has a limit on the number of concurrent RDP and SSH connections it supports. Compare the number of sessions that are open for each protocol with the Bastion limits.
+    - content: Review the rules in your network security group.
       isCorrect: false
-      explanation: The sync group is created within the Storage Sync Service.
-  - content: "What is cloud tiering in Azure File Sync?"
-    choices:
-    - content: It's a policy you create that prioritizes the sync order of file shares.
-      isCorrect: false
-      explanation: It's not used to prioritize the sync order of file shares.
-    - content: It's a policy that sets the frequency at which the sync job runs.
-      isCorrect: false
-      explanation: It's not used to set a sync frequency.
-    - content: It's a feature that archives infrequently accessed files to free up space on the local file share.
-      isCorrect: true
-      explanation: Cloud tiering allows frequently accessed files to be cached on the local server. Infrequently accessed files are tiered, or archived, to the Azure file share according to the policy you create.
-  - content: "What's the deployment process for Azure File Sync?"
-    choices:
-    - content: Evaluate your on-premises system, create the Azure resources, install the Azure File Sync agent, register the on-premises server, and create the server endpoint.
-      isCorrect: true
-      explanation: Verify that your on-premises server's OS and file system are supported. Then create the required resources in Azure. On the local server, install the Azure File Sync agent and register the server. Finally, create the server endpoint in Azure.
-    - content: Create the Azure resources, install the Azure File Sync agent, register the on-premises server, and create the server endpoint.
-      isCorrect: false
-      explanation: First, evaluate your on-premises server to verify it will work with Azure File Sync.
-    - content: Evaluate your on-premises system, create the Azure resources, install the Azure File Sync agent on a virtual machine, register the on-premises server, and create the server endpoint.
-      isCorrect: false
-      explanation: Install the Azure File Sync agent on the server that contains the file share you want to sync with Azure.
-  - content: "Which of these answers isn't a possible cause for file sync issues?"
-    choices:
-    - content: Your company's firewall rules are blocking network traffic on port 445.
-      isCorrect: false
-      explanation: Azure needs to have port 445 open to connect to Azure datacenters.
-    - content: The virtual machine that runs the Storage Sync Service is stopped.
-      isCorrect: true
-      explanation: The Storage Sync Service is the high-level Azure resource for Azure File Sync. You create this resource in Azure.
-    - content: Your on-premises server doesn't support SMB encryption.
-      isCorrect: false
-      explanation: Azure denies connections that aren't secure.
+      explanation: Unless someone recently updated your network security group, the rules aren't likely the issue.
+
