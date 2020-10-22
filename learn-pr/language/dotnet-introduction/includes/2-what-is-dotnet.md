@@ -55,7 +55,7 @@ If you're familiar with the software development world at large, you may wonder 
 
 One of the most distinctive features of .NET when commpared to other ecosystems is that it's ongoing development and support from a combination of a major technology leader as well as its community. Significant portions of .NET have been open sourced. Community input and contributions are both welcomed and encouraged. Based on community input, Microsoft actively supports the platform by moving it forward with feature enahcements, bug fixes, and performance improvements.
 
-<div bgcolor="pink">TODO: What else can I / should I say without drawing the ire of members of other ecosystems? 7x performance over nodejs?  Jetbrains poll results saying C# is the most loved language?</div>
+<div style="background-color:pink;"><em>TODO:</em> What else can I / should I say without drawing the ire of members of other ecosystems? 7x performance over nodejs?  Jetbrains poll results saying C# is the most loved language?</div>
 
 ## Short history of .NET
 
