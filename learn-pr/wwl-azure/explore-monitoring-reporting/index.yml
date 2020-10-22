@@ -3,7 +3,7 @@ uid: learn.wwl.explore-monitoring-reporting
 metadata:
   title: Explore monitoring and reporting
   description: "Monitoring your solutions once you have built and deployed them in Azure is a necessary work item. Azure provides a solid set of tools to support you in the process. AZ-900"
-  ms.date: 06/20/2020
+  ms.date: 10/22/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
