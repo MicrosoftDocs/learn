@@ -41,17 +41,17 @@ quiz:
         - content: "Debug.WriteIf(count == 0, "Count should not be 0.");"
           isCorrect: true
           explanation: "That is correct, this will only print a debug message when count is 0."
-    - content: "What's the preferred way to print information in the console during debugging?"
+    - content: "What are the top two values a debugger provides?"
       choices:
-        - content: "With a breakpoint"
-          isCorrect: false
-          explanation: "A breakpoint allows you to pause execution but not print information in the console."
-        - content: "By adding a `console.log()` call in my code"
-          isCorrect: false
-          explanation: "This technique will work, but it's not the best method because you alter your program by doing this and you might forget to remove it before shipping to production."
-        - content: "With a logpoint"
+        - content: "Control of your program execution, and observation of your program's state."
           isCorrect: true
-          explanation: "A logpoint allows you to display information in the console while debugging, without altering your code."
-        - content: "By watching a variable"
+          explanation: "That's correct! The two main values just about every debugger provides are the ability to control program execution and to observe program state."
+        - content: "Modifying program values, and changing your program output"
           isCorrect: false
-          explanation: "When you watch a variable, you see its value at all times during debugging in the Watch panel, not in the Debug console."
+          explanation: "Changing your program's output is not useful, since it will only have effect when the application is being debugged."
+        - content: "Observing your program's state, and modifying your program values"
+          isCorrect: true
+          explanation: "Observing and modifying values are important, but it's also very important to be able to control the flow of program execution."
+        - content: "Editing your program while running, and editing program values"
+          isCorrect: false
+          explanation: "Editing programs is useful, observing your program's operational state is another important value that the .NET debugger provides."
