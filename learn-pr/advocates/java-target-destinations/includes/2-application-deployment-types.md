@@ -1,10 +1,10 @@
 There are several ways to deploy Java applications to the cloud. Let's first explore those different types of applications, 
 so we can better understand what services are provided by Azure in the next section.
 
-## Virtual Machines vs Platform as a Service
+## Virtual Machines vs Platform-as-a-Service
 
 The main question that needs to answered is whether you want (and need!) to deploy your application on a Virtual Machine (VM) or on
-a Platform as a Service (PaaS) solution.
+a Platform-as-a-Service (PaaS) solution.
 
 ***With a Virtual Machine***, you are in a world very similar to what you can do on-premise or in a classical data center. Azure provides you
 with a set of pre-configured machines, running the main operating systems (Windows and Linux), and it's up to you to configure and maintain
@@ -28,7 +28,7 @@ well in a Platform-as-a-Service service, because the network will be hardened.
 
 ## Deployment options
 
-Wether you use Virtual Machines or a Platform as a Service, there are usually 3 ways to deploy your Java applications to the cloud:
+Wether you use Virtual Machines or a Platform-as-a-Service, there are usually 3 ways to deploy your Java applications to the cloud:
 
 - source code deployment: you simply commit your source code to a Git repository, and the cloud provider has got a process that will compile, build and package the application
 - Jar file deployment: you package your application as an executable Jar file, which is then run by the cloud provider
