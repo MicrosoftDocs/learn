@@ -382,6 +382,19 @@
                 "dest": "modules"
             },
             {
+                "src": "python-partnership",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },               
+            {
                 "files": [
                     "**/*.md",
                     "**/*.yml"
