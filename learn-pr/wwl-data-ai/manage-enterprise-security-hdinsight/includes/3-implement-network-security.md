@@ -30,7 +30,7 @@ Inbound network security is achieved using NSG rules on the subnet in which the 
 
     ![Creating a Network Security Group](../media/05-Create-NSG.png)
 
-- Identify the region into which your HDInsight service is going to deployed and based on the region, identify the [service tags](https://docs.microsoft.com/azure/virtual-network/security-overview#service-tags) that would need to be used. Depending on the region and level of restrictive permissions, there may be permutations and combinations of service tags that you would need to apply to achieve the objective. Click on Add to create additional Inbound Security rules on the Network Security Group and assign service tags based on the region of deployment. HDInsight.
+- Identify the region into which your HDInsight service is going to deployed and based on the region, identify the [service tags](https://docs.microsoft.com/azure/virtual-network/security-overview#service-tags) that would need to be used. Depending on the region and level of restrictive permissions, there may be permutations and combinations of service tags that you would need to apply to achieve the objective. Click on Add to create additional Inbound Security rules on the Network Security Group and assign service tags based on the region of deployment.
 
     ![Creating a Network Security Group](../media/06-Create-Service-Tags.png)
 
