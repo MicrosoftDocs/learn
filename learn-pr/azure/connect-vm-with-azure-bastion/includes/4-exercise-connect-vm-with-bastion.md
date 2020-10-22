@@ -75,12 +75,13 @@ Before you can use Azure Bastion, you need to create a subnet on the virtual net
 1. From the list of resources, select the virtual network.
 1. Under **Settings**, select **Subnets**.
 1. Select **+ Subnet** to add a subnet.
+<!--Do you have to add address space?! What am I doing wrong here?-->
 1. Enter the following information to create a subnet.
 
    |Field  |Name |
    |---------|---------|
    |Name    |  AzureBastionSubnet       |
-   |Address range     |     10.0.1.0/24    |
+   |Address range     | Use a subnet mask that's /27 or larger like /26, /25 and so on like  10.0.1.0/24.   |
 
 1. Select **OK**.
 
@@ -109,7 +110,7 @@ Wait a few minutes for the Bastion resource to be created.
 1. Add `-----BEGIN RSA PRIVATE KEY-----` and `-----END RSA PRIVATE KEY-----` around the SSH key.
 1. Expand the **Advanced** section.
 1. Enter the **SSH Passphrase** you used when you created the SSH key.
-1. Select **Connect**. (Note that I couldn't establish a connection and it's a kind of a pain to recopy SSH keys every time.)
+1. Select **Connect**.
 1. In the remote shell, enter Linux commands like `ps` or `ls`.
 1. When you are finished, type `exit`.
 
