@@ -36,13 +36,13 @@ missions['Mission'] = rock_samples['Mission'].unique()
 missions.head()
 ```
 
-|   | Mission |
-|---|---------|
-| 0 | Apollo11 |
-| 1 | Apollo12 |
-| 2 | Apollo14 |
-| 3 | Apollo15 |
-| 4 | Apollo16 |
+| Index | Mission |
+|-------|---------|
+| 0     | Apollo11 |
+| 1     | Apollo12 |
+| 2     | Apollo14 |
+| 3     | Apollo15 |
+| 4     | Apollo16 |
 
 ```python
 missions.info()
@@ -64,14 +64,14 @@ missions = pd.merge(missions, sample_total_weight, on='Mission')
 missions.rename(columns={'Weight(kg)':'Sample Weight(kg)'}, inplace=True)
 missions
 ```
-|   | Mission | Sample Weight(kg) |
-|---|---------|-------------------|
-| 0 | Apollo11 | 21.55424 |
-| 1 | Apollo12 | 34.34238 |
-| 2 | Apollo14 | 41.83363 |
-| 3 | Apollo15 | 75.39910 |
-| 4 | Apollo16 | 92.46262 |
-| 5 | Apollo17 | 109.44402 |
+| Index | Mission | Sample Weight(kg) |
+|-------|---------|-------------------|
+| 0     | Apollo11 | 21.55424 |
+| 1     | Apollo12 | 34.34238 |
+| 2     | Apollo14 | 41.83363 |
+| 3     | Apollo15 | 75.39910 |
+| 4     | Apollo16 | 92.46262 |
+| 5     | Apollo17 | 109.44402 |
 
 Let's break out this code a bit. The first line was `sample_total_weight = rock_samples.groupby('Mission')['Weight(kg)'].sum()`, which can be broken out as follows:
 - `rock_samples.groupby('Mission')` - This groups all the rows by the values in the **Mission** column.
@@ -115,14 +115,14 @@ missions['Weight Diff'] = missions['Sample Weight(kg)'].diff()
 missions
 ```
 
-|   | Mission | Sample Weight(kg) | Weight Diff |
-|---|---------|-------------------|-------------|
-| 0 | Apollo11 | 21.55424 | NaN |
-| 1 | Apollo12 | 34.34238 | 12.78814 |
-| 2 | Apollo14 | 41.83363 | 7.49125 |
-| 3 | Apollo15 | 75.39910 | 33.56547 |
-| 4 | Apollo16 | 92.46262 | 17.06352 |
-| 5 | Apollo17 | 109.44402 | 16.98140 |
+| Index | Mission | Sample Weight(kg) | Weight Diff |
+|-------|---------|-------------------|-------------|
+| 0     | Apollo11 | 21.55424 | NaN |
+| 1     | Apollo12 | 34.34238 | 12.78814 |
+| 2     | Apollo14 | 41.83363 | 7.49125 |
+| 3     | Apollo15 | 75.39910 | 33.56547 |
+| 4     | Apollo16 | 92.46262 | 17.06352 |
+| 5     | Apollo17 | 109.44402 | 16.98140 |
 
 Notice that in the first row, for Apollo11, the value in the **Weight Diff** column is `NaN`. This is called a *null* value. Because Apollo11 was the first mission, there is no difference between the weight of the rock collected on Apollo11 and that of the previous mission. We can fill this `NaN` value with 0:
 
@@ -131,14 +131,14 @@ missions['Weight Diff'] = missions['Weight Diff'].fillna(value=0)
 missions
 ```
 
-|   | Mission | Sample Weight(kg) | Weight Diff |
-|---|---------|-------------------|-------------|
-| 0 | Apollo11 | 21.55424 | 0.00000 |
-| 1 | Apollo12 | 34.34238 | 12.78814 |
-| 2 | Apollo14 | 41.83363 | 7.49125 |
-| 3 | Apollo15 | 75.39910 | 33.56547 |
-| 4 | Apollo16 | 92.46262 | 17.06352 |
-| 5 | Apollo17 | 109.44402 | 16.98140 |
+| Index | Mission | Sample Weight(kg) | Weight Diff |
+|-------|---------|-------------------|-------------|
+| 0     | Apollo11 | 21.55424 | 0.00000 |
+| 1     | Apollo12 | 34.34238 | 12.78814 |
+| 2     | Apollo14 | 41.83363 | 7.49125 |
+| 3     | Apollo15 | 75.39910 | 33.56547 |
+| 4     | Apollo16 | 92.46262 | 17.06352 |
+| 5     | Apollo17 | 109.44402 | 16.98140 |
 
 This Python code did the following:
 - Looked only at the **Weight Diff** column in the `missions` dataframe

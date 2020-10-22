@@ -35,7 +35,7 @@ low_samples = rock_samples.loc[(rock_samples['Weight(kg)'] >= .16) & (rock_sampl
 low_samples.head()
 ```
 
-|  | ID | Mission | Type | Subtype	Weight(kg) | Pristine(%) | Remaining(kg) |
+| Index | ID | Mission | Type | Subtype	Weight(kg) | Pristine(%) | Remaining(kg) |
 |---|---|---|---|---|---|---|---|
 | 11 | 10017 | Apollo11 | Basalt | Ilmenite | 0.973 | 43.71 | 0.425298 |
 | 14 | 10020 | Apollo11 | Basalt | Ilmenite | 0.425 | 27.88 | 0.118490 |
