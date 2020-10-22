@@ -16,27 +16,27 @@ quiz:
     choices:
     - content: "App Service"
       isCorrect: false
-      explanation: "You can easily deploy your with maven or with gradle packaged Spring Boot Application. But it might not be the only solution Azure provides for you."
+      explanation: "You can easily deploy the maven or gradle packaged Spring Boot Application. But it might not be the only solution Azure provides for you."
     - content: "VM"
       isCorrect: false
-      explanation: "Even though it's possible to deploy the packaged Spring Boot Application on a VM in Azure. It is not the prefered way to do so as Azure provides more support with other Services."
+      explanation: "Even though it's possible to deploy the packaged Spring Boot Application on a VM in Azure. It's not the preferred way to do so, as Azure provides more support with other Services."
     - content: "Spring Cloud"
       isCorrect: false
       explanation: "Spring Cloud is the home of distributed Spring Boot Services."
     - content: "All three above."
       isCorrect: true
       explanation: "Given your overall situation, if you are at the beginning of a _Lift and Shift_ migration towards the cloud, or you start cloud native. Azure provides you with various services to choose from."
-  - content: "I need to change my whole architecture in order to move to the Azure Cloud."
+  - content: "I must change my whole architecture when moving to the Azure Cloud."
     choices:
-    - content: "Yes. Stacks which are not intend to be cloud-native can't run in the cloud."
+    - content: "Yes. Stacks, which aren't intended to be cloud-native can't run in the cloud."
       isCorrect: false
-      explanation: "Explanation1"
+      explanation: "You can mirror your datacenter also with cloud resources such as VMs."
     - content: "No. Every application can easily run in the Azure Cloud as well."
       isCorrect: false
-      explanation: "Explanation2"
-    - content: "No, but in order to use the Cloud the most efficient way, the architecture needs to become more cloud-native."
+      explanation: "It depends on your applications. Have a look at its type and configuration first."
+    - content: "No, but to use the Cloud the most efficient way, the architecture needs to become more cloud-native."
       isCorrect: true
-      explanation: "Explanation3"
+      explanation: "Correct. With the _Lift and Shift_ approach, you can benefit step by step more and more from the Cloud."
     - content: "Yes and also the overall way of deployments needs to become automatic."
       isCorrect: false
-      explanation: "Explanation4"
+      explanation: "No. Even though CI/CD pipelines are the preferred way for productive environments, not everything has to be adopted from the very beginning."
