@@ -47,4 +47,4 @@ units:
   - learn.azure.use-docker-container-dev-env-vs-code.9-exercise-add-software
   - learn.azure.use-docker-container-dev-env-vs-code.10-summary
 badge:
-  uid:
+  uid: learn.upload-download-and-manage-data-with-azure-storage-explorer.badge
