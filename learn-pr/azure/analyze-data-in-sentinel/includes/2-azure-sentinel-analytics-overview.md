@@ -12,7 +12,7 @@ You can analyze both real-time and historical data collected from your workstati
 
 With analytics you can trigger alert, based of the techniques that are used by known malicious actors.
 
-## WHY USE ANALYTICS FOR SECURITY?
+## Why use Analytics for Security?
 
 Azure Sentinel analytics play import part in the overall detection of the security threat. With the proper analytic rule, you can get insights into where an attack originated from, what resources were compromised, potential data lost, along with the timeline for the incident.
 
