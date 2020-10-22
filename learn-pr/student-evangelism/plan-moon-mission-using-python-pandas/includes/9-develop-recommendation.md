@@ -57,7 +57,7 @@ needed_samples_overview['Type'] = needed_samples.Type.unique()
 needed_samples_overview
  ```
 
-|   | Type |
+| Index | Type |
 |---|---|
 | 0 | Basalt |
 | 1 | Breccia |
@@ -72,7 +72,7 @@ needed_samples_overview.rename(columns={'Weight(kg)':'Total Weight(kg)'}, inplac
 needed_samples_overview
 ```
 
-|   | Type | Total Weight(kg) |
+| Index | Type | Total Weight(kg) |
 |---|---|---|
 | 0 | Basalt | 17.42340 |
 | 1 | Breccia | 10.11850 |
@@ -87,7 +87,7 @@ needed_samples_overview.rename(columns={'Weight(kg)':'Ave Weight(kg)'}, inplace=
 needed_samples_overview
 ```
 
-|   | Type | Total Weight(kg) | Ave Weight(kg) |
+| Index | Type | Total Weight(kg) | Ave Weight(kg) |
 |---|---|---|---|
 | 0 | Basalt | 17.42340 | 1.244529 |
 | 1 | Breccia | 10.11850 | 1.264812 |
@@ -106,7 +106,7 @@ needed_samples_overview['Percentage of Rocks'] = needed_samples_overview['Number
 needed_samples_overview
 ```
 
-|   | Type | Total Weight(kg) | Ave Weight(kg) | Number of Samples | Percentage of Rocks |
+| Index | Type | Total Weight(kg) | Ave Weight(kg) | Number of Samples | Percentage of Rocks |
 |---|---|---|---|---|---|
 | 0 | Basalt | 17.42340 | 1.244529 | 351 | 0.258850 |
 | 1 | Breccia | 10.11850 | 1.264812 |959 | 0.707227 |
@@ -133,7 +133,7 @@ needed_samples_overview['Rocks to Collect'] = needed_samples_overview['Weight to
 needed_samples_overview
 ```
 
-|   | Type | Total Weight(kg) | Ave Weight(kg) | Number of Samples | Percentage of Rocks | Weight to Collect | Rocks to Collect |
+| Index | Type | Total Weight(kg) | Ave Weight(kg) | Number of Samples | Percentage of Rocks | Weight to Collect | Rocks to Collect |
 |---|---|---|---|---|---|---|---|
 | 0 | Basalt | 17.42340 | 1.244529 | 351 | 0.258850 | 16.624842 | 13.358345 |
 | 1 | Breccia | 10.11850 | 1.264812 |959 | 0.707227 | 45.422289 | 35.912271 |

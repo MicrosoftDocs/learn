@@ -16,7 +16,7 @@ artemis_mission = pd.DataFrame({'Mission':['artemis1','artemis1b','artemis2'],
 artemis_mission
 ```
 
-| | Mission | Total Weight (kg) | Payload (kg) |
+| Index | Mission | Total Weight (kg) | Payload (kg) |
 |---|---|---|---|
 | 0 | artemis1 | 26520 | 26988 |
 | 1 | artemis1b | 26520 | 37965 |
@@ -30,7 +30,7 @@ artemis_mission['Sample Weight from Payload (kg)'] = artemis_mission['Payload (k
 artemis_mission
 ```
 
-| | Mission | Total Weight (kg) | Payload (kg) | Sample Weight from Total (kg) | Sample Weight from Payload (kg) |
+| Index | Mission | Total Weight (kg) | Payload (kg) | Sample Weight from Total (kg) | Sample Weight from Payload (kg) |
 |---|---|---|---|---|---|
 | 0 | artemis1 | 26520 | 26988 | 76.766734 | 38.779584 |
 | 1 | artemis1b | 26520 | 37965 | 76.766734 | 54.552649 |
@@ -43,7 +43,7 @@ artemis_mission['Estimated Sample Weight (kg)'] = (artemis_mission['Sample Weigh
 artemis_mission
 ```
 
-| | Mission | Total Weight (kg) | Payload (kg) | Sample Weight from Total (kg) | Sample Weight from Payload (kg) | Estimated Sample Weight (kg) |
+| Index | Mission | Total Weight (kg) | Payload (kg) | Sample Weight from Total (kg) | Sample Weight from Payload (kg) | Estimated Sample Weight (kg) |
 |---|---|---|---|---|---|---|
 | 0 | artemis1 | 26520 | 26988 | 76.766734 | 38.779584 | 57.773159 |
 | 1 | artemis1b | 26520 | 37965 | 76.766734 | 54.552649 | 65.659691 |

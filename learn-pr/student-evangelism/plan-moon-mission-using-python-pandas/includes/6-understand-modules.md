@@ -1,6 +1,6 @@
 Congratulations! You now have a picture of each of the six Apollo missions that landed on the Moon. This picture contains information about the samples that each mission collected and the weights of each lunar and command module. 
 
-|   | Mission | Sample Weight(kg) | Weight Diff | Lunar Module (LM) | LM Mass (kg) | LM Mass Diff | Command Module (CM) | CM Mass (kg) | CM Mass Diff | Total Weight (kg) | Total Weight Diff |
+| Index | Mission | Sample Weight(kg) | Weight Diff | Lunar Module (LM) | LM Mass (kg) | LM Mass Diff | Command Module (CM) | CM Mass (kg) | CM Mass Diff | Total Weight (kg) | Total Weight Diff |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 0 | Apollo11 | 21.55424 | 0.00000 | Challenger (LM-12) | 15264 | 0.0 | Yankee Clipper (CM-108) | 5960 | 0.0 | 21224 | 0.0 |
 | 1 | Apollo12 | 34.34238 | 12.78814 | Orion (LM-11) | 15235 | -29.0 | Kitty Hawk (CM-110) | 5609 | -351.0 | 20844 | -380.0 |
@@ -32,7 +32,7 @@ missions['Sample : Payload'] = missions['Sample Weight(kg)'] / saturnVPayload
 missions
 ```
 
-|   | Mission | Sample Weight(kg) | Weight Diff | Lunar Module (LM) | LM Mass (kg) | LM Mass Diff | Command Module (CM) | CM Mass (kg) | CM Mass Diff | Total Weight (kg) | Total Weight Diff | Crewed Area : Payload | Sample : Crewed Area | Sample : Payload |
+| Index | Mission | Sample Weight(kg) | Weight Diff | Lunar Module (LM) | LM Mass (kg) | LM Mass Diff | Command Module (CM) | CM Mass (kg) | CM Mass Diff | Total Weight (kg) | Total Weight Diff | Crewed Area : Payload | Sample : Crewed Area | Sample : Payload |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 0 | Apollo11 | 21.55424 | 0.00000 | Challenger (LM-12) | 15264 | 0.0 | Yankee Clipper (CM-108) | 5960 | 0.0 | 21224 | 0.0 | 0.487908 | 0.001016 | 0.000495 |
 | 1 | Apollo12 | 34.34238 | 12.78814 | Orion (LM-11) | 15235 | -29.0 | Kitty Hawk (CM-110) | 5609 | -351.0 | 20844 | -380.0 | 0.479172 | 0.001648 | 0.000789 |

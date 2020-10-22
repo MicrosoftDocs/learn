@@ -43,7 +43,7 @@ missions['CM Mass Diff'] = missions['CM Mass Diff'].fillna(value=0)
 missions
 ```
 
-|   | Mission | Sample Weight(kg) | Weight Diff | Lunar Module (LM) | LM Mass (kg) | LM Mass Diff | Command Module (CM) | CM Mass (kg) | CM Mass Diff |
+| Index | Mission | Sample Weight(kg) | Weight Diff | Lunar Module (LM) | LM Mass (kg) | LM Mass Diff | Command Module (CM) | CM Mass (kg) | CM Mass Diff |
 |---|---|---|---|---|---|---|---|---|---|
 | 0 | Apollo11 | 21.55424 | 0.00000 | Challenger (LM-12) | 15264 | 0.0 | Yankee Clipper (CM-108) | 5960 | 0.0 |
 | 1 | Apollo12 | 34.34238 | 12.78814 | Orion (LM-11) | 15235 | -29.0 | Kitty Hawk (CM-110) | 5609 | -351.0 |
@@ -60,7 +60,7 @@ missions['Total Weight Diff'] = missions['LM Mass Diff'] + missions['CM Mass Dif
 missions
 ```
 
-|   | Mission | Sample Weight(kg) | Weight Diff | Lunar Module (LM) | LM Mass (kg) | LM Mass Diff | Command Module (CM) | CM Mass (kg) | CM Mass Diff | Total Weight (kg) | Total Weight Diff |
+| Index | Mission | Sample Weight(kg) | Weight Diff | Lunar Module (LM) | LM Mass (kg) | LM Mass Diff | Command Module (CM) | CM Mass (kg) | CM Mass Diff | Total Weight (kg) | Total Weight Diff |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 0 | Apollo11 | 21.55424 | 0.00000 | Challenger (LM-12) | 15264 | 0.0 | Yankee Clipper (CM-108) | 5960 | 0.0 | 21224 | 0.0 |
 | 1 | Apollo12 | 34.34238 | 12.78814 | Orion (LM-11) | 15235 | -29.0 | Kitty Hawk (CM-110) | 5609 | -351.0 | 20844 | -380.0 |
