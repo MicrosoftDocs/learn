@@ -29,16 +29,16 @@ quiz:
           explanation: "There is no API in the System namespace to write a line to the debug console."
     - content: "If you want to write a debug message only when the count is `0`, what code would you use?"
       choices:
-        - content: "Debug.Assert(count != 0, "Count should not be 0.");"
+        - content: 'Debug.Assert(count != 0, "Count should not be 0.");'
           isCorrect: false
           explanation: "Close, Assert tests a condition and if it is true nothing will happen, else the application will enter break mode. So here, if the count is 0 it will enter break mode."
-        - content: "Debug.Assert(count == 0, "Count should not be 0.");"
+        - content: 'Debug.Assert(count == 0, "Count should not be 0.");'
           isCorrect: false
           explanation: "Incorrect, Assert tests a condition and if it is true nothing will happen, else the application will enter break mode. So here, if count is 0 nothing will happen."
-        - content: "Debug.WriteIf(count != 0, "Count should not be 0.");"
+        - content: 'Debug.WriteIf(count != 0, "Count should not be 0.");'
           isCorrect: false
           explanation: "Incorrect, this prints a message when count does not equal 0."
-        - content: "Debug.WriteIf(count == 0, "Count should not be 0.");"
+        - content: 'Debug.WriteIf(count == 0, "Count should not be 0.");'
           isCorrect: true
           explanation: "That is correct, this will only print a debug message when count is 0."
     - content: "What are the top two values a debugger provides?"
