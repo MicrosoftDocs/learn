@@ -35,7 +35,7 @@ Run `az account set` to set a specific subscription as active:
    az account set -s "Concierge Subscription"
 ```
 
-This command will set the active subscription to that of the concierge subscription.
+This command will set the active subscription to that of the Concierge Subscription.
 
 > [!NOTE]
 > If it fails, run `az account list --refresh --all` and then rerun the command.
@@ -72,7 +72,7 @@ Run `az deployment group create` to deploy the template:
       --template-uri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json"
    ```
 
-The terminal output will show ```Running...```. When that finishes, the results of the preceding command will be similar to the following output:
+The terminal output will show **Running...**. When that finishes, the results of the preceding command will be similar to the following output:
 
 ```output
 {
@@ -160,7 +160,7 @@ The differences in the second template are:
 - **Subnet removed**. A subnet has been removed.
 - **Prefix changed**. The address prefix has changed.
 
-Run **az deployment group what-if** to carry out the what-if operation:
+Run `az deployment group what-if` to carry out the what-if operation:
 
 ```azurecli
 az deployment group what-if \
@@ -202,9 +202,9 @@ Resource changes: 1 to modify.
 
 You'll notice that the result is color coded in addition to having a prefix:
 
-- Purple and "~" for any modifications
-- Green and "+" for new resources to be created
-- Orange and "-" for deletion
+- Purple and **~** for any modifications
+- Green and **+** for new resources to be created
+- Orange and **-** for deletions
 
 ## Deploy by using complete mode and the confirm-with-what-if option
 
@@ -213,7 +213,7 @@ In these next steps, you'll deploy an empty template over your existing environm
 > [!WARNING]
 > Doing this in real life *will remove* anything you have in the cloud. The following code is interesting as an intellectual experiment, but be careful about using this mode. At minimum, use the `-Confirm` flag so you can stop this operation if you don't like the proposed changes.
 
-1. Run `az deployment group` with the flag `--mode Complete` to create the a deployment in complete mode:
+1. Run `az deployment group` with the flag `--mode Complete` to create a deployment in complete mode:
 
     ```azurecli
     az deployment group \
@@ -292,7 +292,7 @@ In these next steps, you'll deploy an empty template over your existing environm
 
 1. Go back to the open browser that you used earlier, and verify that there were two successful deployments:
 
-    - The first one that you deployed.
-    - The complete one that removed all resources, so the virtual network is no longer there.
+    - The first one that you deployed
+    - The complete one that removed all resources, so the virtual network is no longer there
 
    :::image type="content" source="../../media/3-portal-deployment-complete-details.png" alt-text="Azure portal interface for the complete deployment with the virtual network resource no longer listed." border="true":::

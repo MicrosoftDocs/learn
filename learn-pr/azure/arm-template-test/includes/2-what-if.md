@@ -1,4 +1,4 @@
-Questions are always on the mind of anyone who's deploying or modifying resources in an existing environment:
+Questions are always on the mind of anyone who's deploying or modifying resources in an environment:
 
 - Will I break something?
 - How will this deployment affect existing resources?
@@ -6,7 +6,7 @@ Questions are always on the mind of anyone who's deploying or modifying resource
 
 Deploying and hoping for the best is not a good approach. A better approach is using the *what-if* operation. This operation helps you anticipate what consequences a new deployment will have, if you attempt it.
 
-Azure Resource Manager now provides the what-if operation to highlight the changes when you deploy a template. The what-if operation doesn't make any changes to existing resources. Instead, it predicts the changes if the specified template is deployed at a resource group and subscription level.
+Azure Resource Manager provides the what-if operation to highlight the changes when you deploy a template. The what-if operation doesn't make any changes to existing resources. Instead, it predicts the changes if the specified template is deployed at a resource group and subscription level.
 
 > [!NOTE]
 > The what-if operation is currently in preview. As a preview release, the results might sometimes show that a resource will change when actually no change will happen. We're working to reduce these issues, but we need your help. Please [report these issues](https://aka.ms/whatifissues?azure-portal=true).
@@ -18,25 +18,25 @@ A benefit to using a state file is that you can do some work disconnected and po
 
 ## Change types
 
-When you use the what-if operation, it will list six types of changes:
+When you use the what-if operation, it lists six types of changes:
 
 - **Create**. The resource doesn't currently exist but is defined in the template. The resource will be created.
 - **Delete**. This change type applies only when you're using *complete mode* for deployment. The resource exists but isn't defined in the template. With complete mode, the resource will be deleted. This change type includes only resources that support deletion through complete mode.
 - **Ignore**. The resource exists but isn't defined in the template. The resource won't be deployed or modified.
-- **NoChange**. The resource exists and is defined in the template. The resource will be redeployed, but the properties of the resource won't change. This change type is returned when `ResultFormat` is set to `FullResourcePayloads`, which is the default value.
-- **Modify**. The resource exists and is defined in the template. The resource will be redeployed, and the properties of the resource will change. This change type is returned when `ResultFormat` is set to `FullResourcePayloads`, which is the default value.
-- **Deploy**. The resource exists and is defined in the template. The resource will be redeployed. The properties of the resource might or might not change. The operation returns this change type when it doesn't have enough information to determine if any properties will change. You see this condition only when `ResultFormat` is set to `ResourceIdOnly`.
+- **NoChange**. The resource exists and is defined in the template. The resource will be redeployed, but the properties of the resource won't change. This change type is returned when **ResultFormat** is set to **FullResourcePayloads**, which is the default value.
+- **Modify**. The resource exists and is defined in the template. The resource will be redeployed, and the properties of the resource will change. This change type is returned when **ResultFormat** is set to **FullResourcePayloads**, which is the default value.
+- **Deploy**. The resource exists and is defined in the template. The resource will be redeployed. The properties of the resource might or might not change. The operation returns this change type when it doesn't have enough information to determine if any properties will change. You see this condition only when **ResultFormat** is set to **ResourceIdOnly**.
 
 ## Result format
 
-The PowerShell cmdlet `New-AzResourceGroupDeployment` creates a new deployment on a resource group. When you add the what-if operation as a parameter to this command, the command switches from carrying out the deployment to merely reporting a *preview* of what will happen if you carry it out. 
+The PowerShell cmdlet **New-AzResourceGroupDeployment** creates a new deployment on a resource group. When you add the what-if operation as a parameter to this command, the command switches from carrying out the deployment to merely reporting a *preview* of what will happen if you carry it out. 
 
 You can control the amount of text output of the what-if operation by using one of these two parameters:
 
-- `FullResourcePayloads`. By including this parameter, you get a *verbose* output that consists of a list of resources that will change. The output also shows details about all the properties that will change in accordance with the template.
-- `ResourceIdOnly`. This mode returns a list of resources that will change, but not all the details.
+- **FullResourcePayloads**. By including this parameter, you get a *verbose* output that consists of a list of resources that will change. The output also shows details about all the properties that will change in accordance with the template.
+- **ResourceIdOnly**. This mode returns a list of resources that will change, but not all the details.
 
-For example, assume that you're changing the storage type in a template that deploys a single storage account to an existing environment. The PowerShell command parameter `-WhatIfResultFormat FullResourcePayloads` will produce the following results:
+For example, assume that you're changing the storage type in a template that deploys a single storage account to an existing environment. The PowerShell command parameter **-WhatIfResultFormat FullResourcePayloads** will produce the following results:
 
 ```output
 PS > New-AzResourceGroupDeployment `
@@ -61,7 +61,7 @@ Scope: /subscriptions/54a522b6-6cd7-4325-b4e6-566f9d921835/resourceGroups/What-i
 Resource changes: 1 to modify
 ```
 
-And, the PowerShell command parameter `-WhatIfResultFormat ResourceIdOnly` will produce the following results:
+The PowerShell command parameter `-WhatIfResultFormat ResourceIdOnly` will produce the following results:
 
 ```output
 PS > Nw-AzureResourceGroupDeployment `
@@ -87,13 +87,13 @@ Scope: /subscriptions/54a522b6-6cd7-4325-b4e6-566f9d921835/resourceGroups/What-i
 
 ## Removal or deletion of resources and deployment modes
 
-There are times when you'll want to confirm the removal or deletion of resources as you deploy the template. To that end, the what-if operation supports using *deployment mode*. There are two different deployment modes:
+There are times when you'll want to confirm the removal or deletion of resources as you deploy the template. To that end, the what-if operation supports using *deployment mode*. There are two deployment modes:
 
 - **Incremental mode**. The default deployment mode is incremental. In this mode, Resource Manager leaves unchanged resources that exist in the resource group but aren't specified in the template. Resources in the template are *added* to the resource group.
-- **Complete mode**. When you use this mode, resources not specified in the template are *deleted*. If you know for sure that what's in the template file constitutes the full state of your deployment, then go ahead and use this mode. If you use tools like Azure CLI or PowerShell to update your state gradually, then incremental mode is the way to go.
+- **Complete mode**. When you use this mode, resources not specified in the template are *deleted*. If you know for sure that what's in the template file constitutes the full state of your deployment, then go ahead and use this mode. If you use tools like the Azure CLI or PowerShell to update your state gradually, then incremental mode is the way to go.
 
    > [!CAUTION]
-   > When you run the command in complete mode, whatever resources you have since before will be removed if they're not mentioned in the template file.
+   > When you run the command in complete mode, whatever resources you have will be removed if they're not mentioned in the template file.
 
 ### Confirmation
 

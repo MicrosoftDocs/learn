@@ -30,7 +30,7 @@ The test toolkit is located in a GitHub repo. Choose one of the following action
 
 ### Inspect the test toolkit
 
-You've just downloaded the test toolkit to a directory of your choosing. Let's have a look at your directory structure. (Ensure that you've unzipped the file if you opted to download the .zip file instead of running the `git clone` command.) You should have a directory structure that looks like the following one if you go to the directory of the ARM test toolkit:
+You've just downloaded the test toolkit to a directory of your choosing. Let's look at your directory structure. (Ensure that you've unzipped the file if you opted to download the .zip file instead of running the `git clone` command.) You should have a directory structure that looks like the following one if you go to the directory of the ARM test toolkit:
 
 ```output
 -| arm-ttk/
@@ -48,7 +48,7 @@ The test toolkit is in the subdirectory */arm-ttk*.
 Choose a directory and create a file called *azuredeploy.json*.
 
 > [!WARNING]
-> Ensure that the selected directory is an empty one with no subdirectories.
+> Ensure that the selected directory is empty with no subdirectories.
 
 Give it the following content:
 
@@ -80,9 +80,9 @@ We recommend that you start Visual Studio Code and an integrated terminal.
 You'll run the test toolkit on a path that contains a deployment template and fix any errors that it detects by changing the template.
 
 > [!WARNING]
-> In this exercise, you scan one template file. The test toolkit scans all files beneath the directory that you specify. It does so because a deployment can contain several files. Be sure that there are no JSON files beneath the directory where azuredeploy.json is located.
+> In this exercise, you scan one template file. The test toolkit scans all files beneath the directory that you specify. It does so because a deployment can contain several files. Be sure that there are no JSON files beneath the directory where *azuredeploy.json* is located.
 
-1. In a terminal, go to the path where your azuredeploy.json file resides. Run the following command to start Visual Studio Code:
+1. In a terminal, go to the path where your *azuredeploy.json* file resides. Run the following command to start Visual Studio Code:
 
    ```bash
    code .
@@ -119,7 +119,7 @@ You'll run the test toolkit on a path that contains a deployment template and fi
    ```
 
    > [!TIP]
-   > If you downloaded or cloned the tool to your `Downloads` directory, the path would look something like this: */Users/\<user\>/Downloads/arm-ttk/arm-ttk/arm-ttk.psd1*.
+   > If you downloaded or cloned the tool to your *Downloads* directory, the path would look something like this: */Users/\<user\>/Downloads/arm-ttk/arm-ttk/arm-ttk.psd1*.
    
    You're now ready to use the tool. As long as you're in the same PowerShell session, there's no need to run the import command again.
   
@@ -161,7 +161,7 @@ You'll run the test toolkit on a path that contains a deployment template and fi
 
    In the output, note how two tests are failing: **Resources Should Have Location** and  **Parameters Must Be Referenced**. The prefix **[-]** indicates a failing test.
 
-   To understand what's going on, open the azuredeploy.json file. It should look like this:
+   To understand what's going on, open the *azuredeploy.json* file. It should look like this:
 
    ```json
    {
@@ -247,4 +247,4 @@ The reason is twofold. Not only can the location parameter be set as an argument
    [+] VM Size Should Be A Parameter (4 ms)
    ```
 
-Success! You've managed to run the test tool, locate errors, and fix them.
+Success! You've run the test tool, located errors, and fixed them.

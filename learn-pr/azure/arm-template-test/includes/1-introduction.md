@@ -4,7 +4,7 @@ You're on a software team that's authoring these templates for the company Tailw
 
 You decide to evaluate the existing set of tools that addresses these issues.
 
-In this module, you gain an understanding of what practices are beneficial to follow and why it's important. You also practice using the what-if command as well as the ARM template test toolkit to correct issues in your templates.
+In this module, you gain an understanding of what practices are beneficial to follow and why it's important. You also practice using the what-if command and the ARM template test toolkit to correct issues in your templates.
 
 ## Learning objectives
 

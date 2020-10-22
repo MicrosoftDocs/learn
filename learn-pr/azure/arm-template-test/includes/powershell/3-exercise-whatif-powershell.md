@@ -16,7 +16,7 @@ Run `(Get-Host).Version` to verify the PowerShell version:
 (Get-Host).Version
 ```
 
-You should see a similar output:
+The output should be similar to this one:
 
 ```powershell
 Major  Minor  Build  Revision PSSemVerPreReleaseLabel    PSSemVerBuildLabel
@@ -27,7 +27,7 @@ Major  Minor  Build  Revision PSSemVerPreReleaseLabel    PSSemVerBuildLabel
 
 ## Install or update the module
 
-There are potentially two different paths here:
+There are potentially two different paths here.
 
 > [!NOTE]
 > To avoid using PowerShell in an *elevated mode*, you can use the argument `-Scope CurrentUser` to install or update modules for your user.
@@ -55,7 +55,7 @@ Here's an overview of the steps you're about to carry out:
 
 ## Sign in to Azure
 
-You can sign in to your Azure account from the terminal. If you're on Windows, the terminal will default to PowerShell. On other OSs, you can use the command-line executable `pwsh` to open a PowerShell shell from the terminal.
+You can sign in to your Azure account from the terminal. If you're on Windows, the terminal will default to PowerShell. On other operating systems, you can use the command-line executable `pwsh` to open a PowerShell shell from the terminal.
 
 1. Open the integrated terminal in Visual Studio Code. Be sure you're signing in to the same account that activated the sandbox.
 
@@ -76,18 +76,18 @@ After you're signed in, you see a list in JSON format. The list contains subscri
 
 The command you're about to run will list your subscriptions and their IDs. The subscription ID is the second column.
 
-1. Run `Get-AzSubscription` to get the subscription ID for the concierge subscription.
+1. Run `Get-AzSubscription` to get the subscription ID for the Concierge Subscription.
 
     ```powershell
     Get-AzSubscription
     ```
 
-    Look for the concierge subscription and copy the second column. It will look something like **cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0**.
+    Look for the Concierge Subscription and copy the second column. It will look something like **cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0**.
 
-1. Run `Set-AzContext` to change your active subscription to the concierge subscription.
+1. Run `Set-AzContext` to change your active subscription to the Concierge Subscription.
 
    > [!NOTE]
-   > Be sure to substitute *{Your subscription ID}* with the ID of the concierge subscription that you just got in the last command.
+   > Be sure to substitute *{Your subscription ID}* with the ID of the Concierge Subscription that you got in the last command.
 
     ```powershell
     $subscription = Get-AzSubscription -SubscriptionId {Your subscription ID}
@@ -96,7 +96,7 @@ The command you're about to run will list your subscriptions and their IDs. The 
 
 ### Set the default resource group
 
-You need to set the resource group created for you in the sandbox as the default resource group. You'll accomplish this task in two steps:
+You need to set the resource group created for you in the sandbox as the default resource group. You accomplish this task in two steps:
 
    1. Run `Get-AzResourceGroup` to get the resource group name.
 
@@ -177,7 +177,7 @@ The differences in the second template are:
 - **Subnet removed**. A subnet has been removed.
 - **Prefix changed**. The address prefix has changed.
 
-Run `New-AzResourceGroupDeployment` with the `-WhatIf` flag to perform the what-if operation**.
+Run `New-AzResourceGroupDeployment` with the `-WhatIf` flag to perform the what-if operation.
 
 ```powershell
 New-AzResourceGroupDeployment `
@@ -224,9 +224,9 @@ Resource changes: 1 to modify, 1 to ignore.
 
 You'll notice that the result is color coded in addition to having a prefix:
 
-- Purple and "~" for any modifications
-- Green and "+" for new resources to be created
-- Orange and "-" for deletion
+- Purple and **~** for any modifications
+- Green and **+** for new resources to be created
+- Orange and **-** for deletions
 
 ## Deploy by using complete mode and the confirmation option
 
@@ -290,7 +290,7 @@ In these next steps, you'll deploy an empty template over your existing environm
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"):
     ```
 
-1. Enter **A** for `[A] Yes to All`, to execute the deployment and clean out your environment. When the deployment finishes, it will display the following results:
+1. Enter **A** for **[A] Yes to All**, to execute the deployment and clean out your environment. When the deployment finishes, it will display the following results:
 
     ```output
     Are you sure you want to execute the deployment?

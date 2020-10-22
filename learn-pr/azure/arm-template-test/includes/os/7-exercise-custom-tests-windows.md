@@ -62,7 +62,7 @@ Run the custom test by following these steps:
 
 1. Open a new terminal window or reuse the old one.
 
-1. Go to the directory of where you created azuredeploy.json.
+1. Go to the directory of where you created *azuredeploy.json*.
 
 1. Run the following command to start Visual Studio Code:
 
@@ -85,7 +85,7 @@ Run the custom test by following these steps:
    ```
 
    > [!TIP]
-   > If you downloaded or cloned the tool to your `Downloads` directory, the path would look something like this: *C:\\Users\\<user\>\\Downloads\\arm-ttk\\arm-ttk\\arm-ttk.psd1*.
+   > If you downloaded or cloned the tool to your *Downloads* directory, the path would look something like this: *C:\\Users\\<user\>\\Downloads\\arm-ttk\\arm-ttk\\arm-ttk.psd1*.
 
    You're now ready to use the tool. As long as you're in the same PowerShell session, there's no need to run the import command again.
 
@@ -138,10 +138,10 @@ Run the custom test by following these steps:
 
 Now you'll give the custom test a proper implementation.
 
-1. Go back to the text editor that holds the file Custom-ParameterNaming.test.ps1.
+1. Go back to the text editor that holds the file *Custom-ParameterNaming.test.ps1*.
 
    > [!NOTE]
-   > If you accidentally closed Visual Studio Code, go to the subdirectory *testcases/deploymentTemplate* and open the file Custom-ParameterNaming.test.ps1. 
+   > If you accidentally closed Visual Studio Code, go to the subdirectory *testcases/deploymentTemplate* and open the file *Custom-ParameterNaming.test.ps1*. 
 
 1. Replace the file's content with the following code:
 
@@ -178,7 +178,7 @@ Now you'll give the custom test a proper implementation.
 
 You'll now add a parameter to the template file.
 
-1. Select the text editor that contains azuredeploy.json and change the file's content to the following content:
+1. Select the text editor that contains *azuredeploy.json* and change the file's content to the following content:
 
    ```json
    {
@@ -210,7 +210,7 @@ In Visual Studio Code, run `Test-AzTemplate` from the integrated terminal:
 Test-AzTemplate -TemplatePath . -Test Custom-ParameterNaming
 ```
 
-The preceding command is run with the parameter `-Test`, which takes a test name as input. You've provided **Custom-ParameterNaming** as an argument, which means only your newly developed test will be run.
+The preceding command is run with the parameter **-Test**, which takes a test name as input. You've provided **Custom-ParameterNaming** as an argument, which means only your newly developed test will be run.
 
 > [!TIP]
 > Using this parameter is a good practice when you're developing a test because it limits what's being run and the size of the terminal output.
@@ -230,7 +230,7 @@ The result indicates that your test works. Let's ensure that's the case by alter
 
 At this point, you want to verify the correctness of your custom test by changing the template file to adhere to the rules that the custom test laid out.
 
-1. In the same Visual Studio Code instance that shows the azuredeploy.json file, change the file's content to the following content:
+1. In the same Visual Studio Code instance that shows the *azuredeploy.json* file, change the file's content to the following content:
 
    ```json
    {

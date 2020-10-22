@@ -5,7 +5,7 @@ You've learned so far how you can use the what-if command to preview changes to 
 
 There are recommendations on different levels, everything from parameters and variables to things applying to your resources. Let's look at these recommendations from a high level and see what can be gained from adhering to them:
 
-- **Maintainability**. As you develop a template, from authoring it the first time to updating it, keeping it clean and orderly becomes challenging over time. As your template grows, so do constructs like parameters and variables. It's important that you understand what each of them is used for, and that they're used appropriately. 
+- **Maintainability**. As you develop a template, from authoring it the first time to updating it, keeping it clean and orderly becomes challenging over time. As your template grows, so do constructs like parameters and variables. It's important that you understand what each of them is used for, and how to use them appropriately. 
 
   Imagine a scenario where the parameter name is badly named and you're struggling to understand what it does, just by looking at it. Or you're using a hardcoded value where you shouldn't, and something changes in your operations and IT services go down. All these issues constitute a cognitive load of having to understand and later dismiss what you're looking at. Being disciplined with how you name things, and clean things up, can help mitigate the effects of those scenarios.
 - **Correctness**. Say you've taken all precautions to name things in a good way, but there are too many rules to keep track of. Such situations call for a tool that enforces all these rules and regulations.
@@ -14,7 +14,7 @@ There are recommendations on different levels, everything from parameters and va
 
 ## The test toolkit
 
-Using a testing tool is a good idea so you can focus on authoring while knowing that the tool will find any issues and make your templates better. There is such a tool: the ARM template test toolkit. It addresses the problems mentioned earlier by running a series of tests. The tests can be grouped into the following categories:
+Using a testing tool is a good idea, so you can focus on authoring while knowing that the tool will find any issues and make your templates better. There is such a tool: the ARM template test toolkit. It addresses the problems mentioned earlier by running a series of tests. The tests can be grouped into the following categories:
 
 - **Validating the user's intent**. This category looks at whether the declared variables and parameters are all used and warns if they're not.
 - **Following security practices**. Another important aspect is ensuring that nothing is returned from the template that might be sensitive, like API secrets.
@@ -32,13 +32,13 @@ Now you're ready to run the tests on your template.
 
 ### Running the tests
 
-Running the tests involves invoking the script with the appropriate arguments. `-TemplatePath` is a mandatory argument that expects a string that points to the location of the starter deployment template, which is either `azuredeploy.json` or `maintemplate.json`. A typical test run can therefore look like the following command:
+Running the tests involves invoking the script with the appropriate arguments. `-TemplatePath` is a mandatory argument that expects a string that points to the location of the starter deployment template. The template is either *azuredeploy.json* or *maintemplate.json*. A typical test run can therefore look like the following command:
 
 ```powershell
 Test-AzTemplate.sh -TemplatePath path/to/template
 ```
 
-The tool then goes on to test the starter template and then any templates in the same directory and its subfolders.
+The tool goes on to test the starter template and then any templates in the same directory and its subfolders.
 
 A typical output from a test run can look like this:
 
