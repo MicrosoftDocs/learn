@@ -1,6 +1,6 @@
 ## What is Azure Sentinel Analytics?
 
-After completing this unit, you&#39;ll can explain the importance of Azure Sentinel Analytics
+After completing this unit, you can explain the importance of Azure Sentinel Analytics
 
 - Understand the importance of Analytics for security
 - Understand Analytic rules
