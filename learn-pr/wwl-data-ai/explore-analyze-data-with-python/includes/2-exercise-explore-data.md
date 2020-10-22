@@ -68,7 +68,7 @@ The files used in this module (and other related modules) are published in the *
 After you've created a Jupyter environment and cloned the **ml-basics** repository, you're ready to explore data.
 
  1. In Jupyter, open the **Data Exploration.ipynb** notebook in the **ml-basics** folder and follow the instructions it contains.
- 2. When you've finished, close and halt the notebook.
+ 2. When you've finished, close and halt all notebooks.
 
 ## Clean-up
 

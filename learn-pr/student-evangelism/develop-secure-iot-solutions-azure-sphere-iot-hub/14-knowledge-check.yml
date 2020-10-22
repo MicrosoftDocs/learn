@@ -3,7 +3,7 @@ uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.knowledg
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
+  description: In this section, you answer questions to validate that you've understood the learning objectives.
   ms.date: 6/30/2020
   author: leestott
   ms.author: leestott
@@ -13,18 +13,18 @@ durationInMinutes: 3 # dummy number at present
 content: |
 quiz:
   questions:
-  - content: "In the Azure Sphere ecosystem, which component is missing from the following list? - Azure Sphere SDK, Azure Sphere tenant, Azure Sphere OS"
+  - content: "In the Azure Sphere ecosystem, which component is missing from the following list: Azure Sphere SDK, Azure Sphere tenant, Azure Sphere OS?"
     choices:
     - content: "Azure Sphere API"
       isCorrect: false
-      explanation: "Azure Sphere API is not a component of the Azure Sphere Ecosystem"
+      explanation: "Azure Sphere API isn't a component of the Azure Sphere ecosystem."
     - content: "Azure Sphere Security Service"
       isCorrect: true
-      explanation: "Azure Sphere Security Service is a key component of the Azure Sphere ecosystem"
+      explanation: "Azure Sphere Security Service is a key component of the Azure Sphere ecosystem."
     - content: "Azure Sphere Security Key"
       isCorrect: false
-      explanation: "Azure Sphere Security Key is not a component of the Azure Sphere Ecosystem"
-  - content: "Your organization created an Azure Sphere tenant and then claims each of its devices into that tenant – what function does this accomplish?"
+      explanation: "Azure Sphere Security Key isn't a component of the Azure Sphere ecosystem."
+  - content: "Your organization created an Azure Sphere tenant and then claims each of its devices into that tenant. What function does this accomplish?"
     choices:
     - content: "So that you can manage those devices remotely and securely."
       isCorrect: true
@@ -35,7 +35,7 @@ quiz:
     - content: "Your organization can name individual devices."
       isCorrect: false
       explanation: "The tenant doesn't enable naming of devices."
-  - content: "If the Azure Sphere Security Service were missing – what function could you not perform?"
+  - content: "If the Azure Sphere Security Service were missing, what function could you not perform?"
     choices:
     - content: "You can't receive alerts for anomalies."
       isCorrect: false

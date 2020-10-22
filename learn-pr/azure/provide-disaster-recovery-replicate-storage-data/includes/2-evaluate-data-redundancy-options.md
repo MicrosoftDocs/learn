@@ -4,45 +4,45 @@ Suppose that your customers have had problems accessing music streams on rare oc
 
 To improve your company's data availability, you decide to investigate the replication options available for Azure Storage.
 
-Here, you'll explore the different replication options for Azure Storage. You'll learn how they work, and when to use them. You'll also see how to switch and migrate your data between them.
+Here, you'll explore the different replication options for Azure Storage. You'll learn how they work and when to use them. You'll also see how to switch and migrate your data between them.
 
 ## Replication options for Azure Storage
 
 In Azure Storage, you have several options for replication. The choice you make depends on the level of resilience you need.
 
-### Locally redundant storage (LRS)
+### Locally redundant storage
 
-![Illustration shows three copies of Blob data stored in the same datacenter with LRS.](../media/2-locally-redundant-storage.png)
+![Illustration shows three copies of blob data stored in the same datacenter with LRS.](../media/2-locally-redundant-storage.png)
 
-LRS copies your data three times across separate racks of hardware in a datacenter, inside one region. Even if there's a hardware failure, or if maintenance work is happening in the datacenter, this replication type ensures data is available for use.
+Locally redundant storage (LRS) copies your data three times across separate racks of hardware in a datacenter, inside one region. Even if there's a hardware failure, or if maintenance work is happening in the datacenter, this replication type ensures data is available for use.
 
 LRS doesn't protect you from a datacenter-wide outage. If the datacenter goes down, you could lose your data.
 
-### Geographically redundant storage (GRS)
+### Geographically redundant storage
 
-![Illustration shows Blob data copied three times to two different datacenters with GRS.](../media/2-geo-redundant-storage.png)
+![Illustration shows blob data copied three times to two different datacenters with GRS.](../media/2-geo-redundant-storage.png)
 
-With GRS, your data is copied three times within one region, and three times in a secondary region that's paired with it. This way, if your primary region is experiencing an outage, your secondary region is available for use.
+With geographically redundant storage (GRS), your data is copied three times within one region, and three times in a secondary region that's paired with it. This way, if your primary region is experiencing an outage, your secondary region is available for use.
 
-### Read-access geo-redundant storage (RA-GRS)
+### Read-access geo-redundant storage
 
-With GRS, your secondary region isn't available for read-access until the primary region fails. If you want to read from the secondary region, even if the primary region hasn't failed, use RA-GRS for your replication type.
+With read-access geo-redundant storage (RA-GRS), your secondary region isn't available for read access until the primary region fails. If you want to read from the secondary region, even if the primary region hasn't failed, use RA-GRS for your replication type.
 
-### Zone-redundant storage (ZRS)
+### Zone-redundant storage
 
 ![Illustration of data copied to three storage clusters in separate availability zones with ZRS.](../media/2-availability-zone-redundant-storage.png)
 
-ZRS copies your data in three storage clusters in a single region. Each cluster is in a different physical location, and is considered as a single availability zone. Each cluster uses its own separate utilities for things like networking and power. If one datacenter is experiencing outage, your data remains accessible from another availability zone in the same Azure region.
+Zone-redundant storage (ZRS) copies your data in three storage clusters in a single region. Each cluster is in a different physical location and is considered as a single availability zone. Each cluster uses its own separate utilities for things like networking and power. If one datacenter is experiencing outage, your data remains accessible from another availability zone in the same Azure region.
 
 Because all availability zones are in a single region, ZRS can't protect your data from a regional level outage.
 
-### Geo-zone-redundant storage (GZRS)
+### Geo-zone-redundant storage
 
-Geo-zone-redundant storage combines the high availability benefits of ZRS with GRS. With this replication type, your data is copied across three availability zones in one region. Data is also replicated three times to another secondary region that's paired with it. This way, your zone-redundant data is also secure from regional level outage.
+Geo-zone-redundant storage (GZRS) combines the high availability benefits of ZRS with GRS. With this replication type, your data is copied across three availability zones in one region. Data is also replicated three times to another secondary region that's paired with it. This way, your zone-redundant data is also secure from regional level outage.
 
-### Read-access geo-zone-redundant storage (RA-GZRS)
+### Read-access geo-zone-redundant storage
 
-RA-GZRS uses the same replication method as GZRS but lets you read from the secondary region. If you want to read the data that's replicated to the secondary region, even if your primary isn't experiencing downtime, use RA-GZRS for your replication type.
+Read-access geo-zone-redundant storage (RA-GZRS) uses the same replication method as GZRS but lets you read from the secondary region. If you want to read the data that's replicated to the secondary region, even if your primary isn't experiencing downtime, use RA-GZRS for your replication type.
 
 GZRS and RA-GZRS are currently available in the following regions:
 
@@ -78,7 +78,7 @@ Here's a list showing some of the regions that are paired together.
 
 ## Use cases for each replication type ##
 
-The following table summarizes how many copies you get with each replication type, and when you should use it.
+The following table summarizes how many copies you get with each replication type and when you should use it.
 
 |Replication type  |Copies  | Use case  |
 |---------|---------|---------|
@@ -97,8 +97,8 @@ You can switch your replication strategy for any storage account. The process yo
 
 ### Convert account
 
-If you're using a ZRS account, you can convert it to use GZRS. You convert an account using the Azure portal, Azure CLI, or Azure PowerShell.
-For example, to convert your account to GZRS using Azure PowerShell, you would use this command:
+If you're using a ZRS account, you can convert it to use GZRS. You convert an account using the Azure portal, the Azure CLI, or Azure PowerShell.
+For example, to convert your account to GZRS by using Azure PowerShell, you would use this command:
 
 ```powershell
 Set-AzStorageAccount -ResourceGroupName <resource-group> -AccountName <storage-account> -SkuName "Standard_GZRS"
@@ -131,7 +131,7 @@ There are some limitations to live migration. For example:
 
 Manual migration is more flexible than live migration. For example, because you control the timing, you can use manual migration if you need completion by a fixed date.
 
-To do a manual migration, you could use the AzCopy utility, or one of the various third-party tools available.
+To do a manual migration, you could use the AzCopy utility or one of the various third-party tools available.
 
 For example, through AzCopy, you can run the following command in your terminal, which copies all blobs, directories, and containers in your storage account to another one.
 

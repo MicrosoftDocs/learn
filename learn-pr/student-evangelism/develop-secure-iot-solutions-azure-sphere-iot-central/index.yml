@@ -1,22 +1,22 @@
 ### YamlMime:Module
 uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere
 metadata:
-  title: "Develop secure IoT solutions for Azure Sphere with IoT Central"
+  title: "Develop secure IoT solutions for Azure Sphere with Azure IoT Central"
   description: "University of Oxford"
   ms.date: 06/26/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-title: "Develop secure IoT Solutions for Azure Sphere with IoT Central"
-summary: "Deploy an Azure Sphere application to monitor ambient conditions for laboratory conditions. The application will monitor the room environment conditions, connect to IoT Central, and send telemetry data from the device to the cloud. You'll control cloud to device communications and undertake actions as needed."
+title: "Develop secure IoT solutions for Azure Sphere with Azure IoT Central"
+summary: "Deploy an Azure Sphere application to monitor ambient conditions for a laboratory. The application will monitor the room environment, connect to Azure IoT Central, and send telemetry data from the device to the cloud. You'll control cloud-to-device communications and undertake actions as needed."
 abstract: | 
   In this module, you will:
-  - Create an IoT Central Application
-  - Configure your Azure Sphere application to IoT Central
+  - Create an Azure IoT Central application
+  - Configure your Azure Sphere application to Azure IoT Central
   - Build and deploy the Azure Sphere application
-  - Display the environment telemetry in the IoT Central Dashboard
-  - Control an Azure Sphere application using Azure IoT Central properties and commands
+  - Display environment telemetry in the Azure IoT Central dashboard
+  - Control an Azure Sphere application by using Azure IoT Central properties and commands
      
   "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 
@@ -25,7 +25,7 @@ prerequisites: |
   - Visual Studio Code installed in your computer
   - Ability to use Visual Studio Code
   - Git installed in your computer
-  - Ability to use Git/Github
+  - Ability to use Git/GitHub
   - Basic knowledge of Azure Sphere
   - Basic knowledge of Azure IoT
 iconUrl: /learn/achievements/student-evangelism/develop-secure-iot-solutions-with-azure-sphere.svg

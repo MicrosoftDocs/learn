@@ -3,7 +3,7 @@ uid: learn.wwl.plan-deploy-windows-server-iaas-vms
 metadata:
   title: Plan and deploy Windows Server IaaS Virtual Machines
   description: "You'll be able to describe Azure compute and storage in relation to Azure VMs, and deploy Azure VMs by using the Azure portal, Azure CLI, or templates."
-  ms.date: 08/22/2020
+  ms.date: 10/21/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -29,7 +29,7 @@ prerequisites: |
   - Security-related technologies (firewalls, encryption, multi-factor authentication).
   - Windows PowerShell scripting.
   - Automation and monitoring.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/plan-and-deploy-windows-server-iaas-vms.svg
 levels:
 - intermediate
 roles:
