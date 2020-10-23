@@ -16,13 +16,14 @@ The Azure App Service allows you to host your company's websites, web apps, REST
 
 For a Database, you have decided to use Azure Database for MySQL. Azure Database for MySQL is a fully managed MySQL relational database with high availability and security.
 
-In our App, you are looking at creating a two-tiered application that hosts its Service layer in App Services and its Data Layer in an Azure MySQL Database.
-//TODO - add diagram showing architecture
+In our App, you are looking at creating a tiered application that hosts its Web, Service and Data layer in App Services and its Database in an Azure MySQL Database.
+
+![Screenshot showing the Application Architecture.](../media/2-presentation-tiers.png)
 
 ### Developing your Spring App
 
 Spring is the perfect framework to host and manage our applications. All we have to do is wire certain Spring components and without managing the underlying Server runtime.
-You have decided to use SpringBoot, which is self-hosted and provides a rich ecosystem of backing services for your app.
+You have decided to use Spring Boot, which is self-hosted and provides a rich ecosystem of backing services for your app.
 
 The Spring injection annotations use Dependency injection to process the Components requests and utilizes the Azure Spring Starter integration libraries to configure and setup connections to the Backing services that are our MySQL database.
 

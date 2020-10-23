@@ -12,15 +12,18 @@ title: Deploy a Springboot app to Azure App Service service
 summary: Create a SpringBoot App, connect it to a MySQL database and then deploy to Azure App Services.
 abstract: |
   In this module, you will:
-  - Develop a SpringBoot Web App
+  - Develop a Spring Boot Web App
   - Connect your App to a MySQL database
   - Deploy the web app to Azure App services
 prerequisites: | 
   - Basic familiarity with relational databases
-  - Experience writing Spring Apps in Java  
+  - Experience writing Spring Apps in Java
+  - Basic familiarity with Spring Boot App Lifecycle
+  - Experience writing Applications for Azure App Service
+  - Basic familiarity with build tools including Maven workflows 
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-- beginner
+- intermediate
 roles:
 - developer
 products:

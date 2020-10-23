@@ -1,16 +1,16 @@
-Congratulations! You have deployed to a SpringBoot Web App to Azure App Service.
+Congratulations! You have deployed to a Spring Boot Web App to Azure App Service.
 
-Your company wanted to learn how they could migrate their existing SpringBoot Java web apps to Azure App Service. To test how easy it would be for your company to migrate to Azure App Service, you used the following steps:
+Your company wanted to learn how they could migrate their existing Spring Boot Java web apps to Azure App Service. To test how easy it would be for your company to migrate to Azure App Service, you used the following steps:
 
-1. You created a sample SpringBoot web app.
+1. You created a sample Spring Boot web app.
 
-1. You created a MySQL database, connected your SpringBoot web app, and tested it locally.
+1. You created a MySQL database, connected your Spring Boot web app, and tested it locally.
 
 1. Once you verified that your application was working successfully, you added the Maven Plugin for Azure App Service to your project and configured it interactively.
 
 1. You updated your web app, redeployed it to Azure App Service, and tested it in the cloud.
 
-Now that you've learned how Deploy SpringBoot Apps for Azure App Service, you're confident that you can recommend migrating your SpringBoot Java application code to Azure.
+Now that you've learned how Deploy Spring Boot Apps for Azure App Service, you're confident that you can recommend migrating your SpringBoot Java application code to Azure.
 
 ## Clean up resources
 

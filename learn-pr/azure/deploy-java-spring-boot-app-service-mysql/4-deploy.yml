@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-java-spring-boot-app-service-mysql.4-deploy
-title: Deploy your SpringBoot App to Azure
+title: Deploy your Spring Boot App to Azure
 metadata:
-  title: Deploy your SpringBoot App to Azure
-  description: Deploy your SpringBoot App to Azure
+  title: Deploy your Spring Boot App to Azure
+  description: Deploy your Spring Boot App to Azure
   ms.date: 10/05/2020
   author: roryp
   ms.author: ropreddy
