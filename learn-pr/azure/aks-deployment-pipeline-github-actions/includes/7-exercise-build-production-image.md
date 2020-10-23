@@ -243,7 +243,7 @@ You'll build the tagged version by using another workflow.
     >
     > For pull requests the reference will be `refs/pull/{pull-request}` and the tag will be `pr-{pull-request}`.
     >
-    > For git tags the reference will be `refs/tags/{git-tag}` and the tag will be `{git-tag}`.
+    > For git tags, the reference will be `refs/tags/{git-tag}` and the tag will be `{git-tag}`.
 
 1. To commit the changes, select the green **Start commit** button at the top right. Enter a description for the commit, and then select the **Commit new file** button.
 
