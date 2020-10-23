@@ -10,7 +10,7 @@ You can now use Azure Backup to help protect your environment against data loss 
 
 ## Learn more
 
-For more information on Azure Backup, see the following articles:
+For more information about Azure Backup, see the following articles:
 
 - [Latest Azure Backup pricing and availability](https://azure.microsoft.com/pricing/details/backup?azure-portal=true)
 - [Documentation for the Azure Backup service](https://docs.microsoft.com/azure/backup?azure-portal=true)
