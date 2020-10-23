@@ -12,7 +12,7 @@ Formerly known as Oracle's Java Enterprise Edition (Java EE), is Jakarta EE open
 
 ## Spring Framework and the Spring Ecosystem
 
-The Spring Framework is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE (Enterprise Edition) platform. Although the framework does not impose any specific programming model, it has become popular in the Java community as an addition to the Enterprise JavaBeans (EJB) model. The Spring Framework is open source.
+The Spring Framework is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE (Enterprise Edition) platform. Although the framework doesn't impose any specific programming model, it has become popular in the Java community as an addition to the Enterprise JavaBeans (EJB) model. The Spring Framework is open source.
 The Spring Framework brings the core functionality and supports:
 
 - i18n
@@ -23,7 +23,7 @@ The Spring Framework brings the core functionality and supports:
 
 ### Spring Boot
 
-Spring Boot is by far the most used framework as an alternative to application servers. It is running on top of the Spring Framework and simplifies the life of developers. Spring Boot has become so successful, that more than half of all Java Web applications are already using it. It has become the most popular Java web framework. And it's getting more and more momentum over the last years. Its opinionated autoconfiguration makes it easy to use. Spring boot applications are running stand-alone. As such they can be a perfect fit for Microservices.
+Spring Boot is by far the most used framework as an alternative to application servers. It's running on top of the Spring Framework and simplifies the life of developers. Spring Boot has become so successful, that more than half of all Java Web applications are already using it. It has become the most popular Java web framework. And it's getting more and more momentum over the last years. Its opinionated autoconfiguration makes it easy to use. Spring boot applications are running stand-alone. As such they can be a perfect fit for Microservices.
 
 ### Spring Data
 
@@ -31,7 +31,7 @@ Spring Data simplifies the data access, no matter which technologies: relational
 
 ### Spring Cloud
 
-Spring Cloud is the de-facto standard where to deploy your Java services if you have a distributed system. It is the most stable and mature technology for that use case. It comes with Service Discovery, Scalability, Configuration Management, Monitoring, and a good developer experience.
+Spring Cloud is the de-facto standard where to deploy your Java services if you have a distributed system. It's the most stable and mature technology for that use case. Spring Cloud comes with Service Discovery, Scalability, Configuration Management, Monitoring, and a good developer experience.
 
 ### Spring Batch
 
@@ -44,11 +44,11 @@ Java EE applications must be deployed onto Java EE-compliant application servers
 (Add image to show usage like:)
 ![Deployment Opportunities on Azure for different types of Java Applications](../media/4-javaee.png)
 
-- **Apache Tomcat** is the most used Enterprise Server for Java applications. It is an open-source implementation of the Java Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket technologies. The Java Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket specifications are developed under the Java Community Process.
+- **Apache Tomcat** is the most used Enterprise Server for Java applications. It's an open-source implementation of the Java Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket technologies. The Java Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket specifications are developed under the Java Community Process.
 
 - The **Oracle Weblogic Server** is a unified and extensible platform for developing, deploying, and running enterprise applications, such as Java, for on-premises and in the cloud. WebLogic Server offers a robust, mature, and scalable implementation of Java Enterprise Edition (EE) and Jakarta EE.
 
-- **Red Hat JBoss Enterprise Application Plattform** delivers enterprise-grade security, performance, and scalability in any environment. Whether on-premise; virtual; or in private, public, or hybrid clouds, JBoss EAP can help you deliver apps faster, everywhere.
+- **Red Hat JBoss Enterprise Application Platform** delivers enterprise-grade security, performance, and scalability in any environment. Whether on-premise; virtual; or in private, public, or hybrid clouds, JBoss EAP can help you deliver apps faster, everywhere.
 
 - **WildFly** is the open source upstream for JBoss EAP.
 

@@ -18,7 +18,7 @@ When you realize, that the OS didn't bring any business impact to our applicatio
 
 ## Azure App Service
 
-One of the easiest and straight forward deployment opportunities for Java applications on Azure is Azure App Service. It comes with Service Discovery, Scalability, integrated Monitoring with Azure Monitoring out of the box.
+One of the easiest and straight forward deployment opportunities for Java applications on Azure are Azure App Service. It comes with Service Discovery, Scalability, integrated Monitoring with Azure Monitoring out of the box.
 
 ## Azure Spring Cloud
 
@@ -26,7 +26,7 @@ Azure Spring Cloud is Spring Cloud with all its advantages plus all the greatnes
 
 ## Functions
 
-Azure Functions can be written in Java as well. You can leverage from great tooling and integration with other Azure Services.
+Azure Functions can be written in Java as well. You can benefit from great tooling and integration with other Azure Services.
 Sample scenarios for Functions are
 
 - Web, mobile and IoT-connected backends
