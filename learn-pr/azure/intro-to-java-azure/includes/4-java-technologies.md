@@ -15,6 +15,10 @@ Formerly known as Oracle's Java Enterprise Edition (Java EE), is Jakarta EE open
 The Spring Framework is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE (Enterprise Edition) platform. Although the framework doesn't impose any specific programming model, it has become popular in the Java community as an addition to the Enterprise JavaBeans (EJB) model. The Spring Framework is open source.
 The Spring Framework brings the core functionality and supports:
 
+- Dependency Injection
+- Aspect oriented programming
+- Business abstraction
+
 - i18n
 - Validation
 - Data binding
@@ -28,6 +32,10 @@ Spring Boot is by far the most used framework as an alternative to application s
 ### Spring Data
 
 Spring Data simplifies the data access, no matter which technologies: relational and non-relational databases, map-reduce frameworks, and cloud-based data services.
+
+### Spring Security
+
+It integrates well with Active Directory.
 
 ### Spring Cloud
 
@@ -52,11 +60,13 @@ Java EE applications must be deployed onto Java EE-compliant application servers
 
 - **WildFly** is the open source upstream for JBoss EAP.
 
+- **WebSphere Liberty Profile**
+
 ## Other Frameworks for Microservice-oriented Architectures
 
 - **Netty** is a NIO client-server framework, which enables quick and easy development of network applications such as protocol servers and clients. It greatly simplifies and streamlines network programming such as TCP and UDP socket server. Netty is an asynchronous event-driven network application framework for rapid development of maintainable high-performance protocol servers & clients.
 
-- **Spark Java** is a micro framework for creating web applications in Kotlin and Java 8 with minimal effort. The Spark framework is a simple and lightweight Java web framework built for rapid development. It was inspired by Sinatra, a popular Ruby micro framework.
+- **Quarkus** 
 
 - **Vert.x** is an event driven and nonblocking tool-kit. You can use Vert.x with multiple languages including Java, Kotlin, JavaScript, Groovy, Ruby, and Scala. It aims to be the most lightweight, fastest framework. It's simple but not simplistic. Eclipse Vert.x is open source and dual-licensed under the Eclipse Public License 2.0 and Apache License 2.0.
 

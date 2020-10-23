@@ -26,17 +26,17 @@ quiz:
     - content: "All three above."
       isCorrect: true
       explanation: "Given your overall situation, if you are at the beginning of a _Lift and Shift_ migration towards the cloud, or you start cloud native. Azure provides you with various services to choose from."
-  - content: "I must change my whole architecture when moving to the Azure Cloud."
+  - content: "Which of the following statements is true?."
     choices:
-    - content: "Yes. Stacks, which aren't intended to be cloud-native can't run in the cloud."
+    - content: "Stacks, which aren't intended to be cloud-native can't run in the cloud."
       isCorrect: false
       explanation: "You can mirror your datacenter also with cloud resources such as VMs."
-    - content: "No. Every application can easily run in the Azure Cloud as well."
+    - content: "Every application can easily run in the Azure Cloud as well."
       isCorrect: false
       explanation: "It depends on your applications. Have a look at its type and configuration first."
-    - content: "No, but to use the Cloud the most efficient way, the architecture needs to become more cloud-native."
+    - content: "To use the Cloud the most efficient way, the architecture needs to become more cloud-native."
       isCorrect: true
       explanation: "Correct. With the _Lift and Shift_ approach, you can benefit step by step more and more from the Cloud."
-    - content: "Yes and also the overall way of deployments needs to become automatic."
+    - content: "The overall way of deployments needs to become automatic."
       isCorrect: false
       explanation: "No. Even though CI/CD pipelines are the preferred way for productive environments, not everything has to be adopted from the very beginning."

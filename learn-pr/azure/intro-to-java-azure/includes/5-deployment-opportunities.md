@@ -12,21 +12,35 @@ Just like in your data center you have all the freedom. Attention! With great po
 
 When you realize, that the OS didn't bring any business impact to our application we can abstract from it and use Containers instead.
 
-- **Azure Container Instances** ACI is a great solution for quick tests and proof of concepts as well as sidecars.
+- **Azure Kubernetes Service** AKS is the managed Kubernetes Service. Kubernetes is the de-facto standard to orchestrate your containerized applications. It is perfect for Microservices as well as mid-sized applications. It comes with service discovery, scalability, and monitoring.
 
-- **Azure Kubernetes Service** is the managed Kubernetes Service. Kubernetes is the de-facto standard to orchestrate your containerized applications. It is perfect for Microservices as well as mid-sized applications. It comes with service discovery, scalability, and monitoring.
+- **Azure RedHat OpenShift** ARO is the managed by Redhat flavor of Kubernetes.
+
+- **Azure Container Instances** ACI is a great solution for quick tests and proof of concepts as well as sidecars.
 
 ## Azure App Service
 
-One of the easiest and straight forward deployment opportunities for Java applications on Azure are Azure App Service. It comes with Service Discovery, Scalability, integrated Monitoring with Azure Monitoring out of the box.
+One of the easiest and straight forward deployment opportunities for Java applications on Azure are Azure App Service. However, when your system is growing.
+
+It comes with Scalability, integrated Monitoring with Azure Monitoring out of the box.
 
 ## Azure Spring Cloud
 
 Azure Spring Cloud is Spring Cloud with all its advantages plus all the greatness of Azure with the global scalability and high availability.
 
+Azure Spring Cloud is a fully managed service for Spring Boot apps that lets you focus on building and running the apps that run your business without the hassle of managing infrastructure.
+
+Customers can simply deploy their JARs or code and Azure Spring Cloud will automatically wire their apps with the Spring service runtime.
+
+Once deployed they can easily monitor application performance, fix errors, and rapidly improve applications.
+
+It is integrated into Azure eco-system and it is enterprise ready
+
+In the first week of Sep, Microsoft and VMware announced the general availability of the service
+
 ## Functions
 
-Azure Functions can be written in Java as well. You can benefit from great tooling and integration with other Azure Services.
+You can deploy your Java code as functions as well. So you'll benefit from great tooling and integration with other Azure Services.
 Sample scenarios for Functions are
 
 - Web, mobile and IoT-connected backends
