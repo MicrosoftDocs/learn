@@ -16,7 +16,7 @@ When you realize, that the OS didn't bring any business impact to our applicatio
 
 - **Azure Kubernetes Service** is the managed Kubernetes Service. Kubernetes is the de-facto standard to orchestrate your containerized applications. It is perfect for Microservices as well as mid-sized applications. It comes with service discovery, scalability, and monitoring.
 
-## ![Azure App Service Logo](../media/5-App-Services.svg) Azure App Service
+## Azure App Service
 
 One of the easiest and straight forward deployment opportunities for Java applications on Azure is Azure App Service. It comes with Service Discovery, Scalability, integrated Monitoring with Azure Monitoring out of the box.
 

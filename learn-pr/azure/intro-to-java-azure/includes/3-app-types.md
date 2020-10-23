@@ -12,8 +12,6 @@ The distinction between the Monolithic and Microservices-oriented-pattern is flu
 
 Nowadays the successful businesses are asked to adapt fast, to expect the unexpected, to fail fast and forward in order to succeed. In order to reduce the time to market, more engineers get hired. But the outcome might be the opposite! It results in a higher time to market as you do have more communication effort when more engineers need to collaborate. The solution here is to divide and conquer.
 
-![Two guys from LegoMasters explaining that they will go to divide and conquer.](https://media.giphy.com/media/ZEr8iZHmjZfABEPGRk/source.gif)
-
 Cross-functional teams should be able to deliver features as independently as possible to other teams. Therefore, they should be responsible for their own dedicated part of the software, meaning business, solution.
 
 ## Batch

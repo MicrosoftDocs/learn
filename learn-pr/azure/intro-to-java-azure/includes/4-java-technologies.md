@@ -6,8 +6,6 @@ You can distinguish your type of application specification wise. The most famous
 
 Formerly known as Oracle's Java Enterprise Edition (Java EE), is Jakarta EE open source and aimed to be cloud native for java development. It's a set of specifications to enable java developers world wide to work together on java enterprise applications. Jakarta EE was donated to the Eclipse Foundation. Jakarta EE applications can be packaged as archives with the .ear extension (EAR files) or as archives with the .war extension (WAR files).
 
-![Deployment Opportunities on Azure for different types of Java Applications](../media/javaee.gif)
-
 - **WebProfile** is a properly defined subset of Jakarta EE for backend services with Web focus. But no worries! You can add specific APIs of the Enterprise platform on top of it.
 
 - **MicroProfile** is a subset of Jakarta EE for Microservice Architectures. They call themselves an _open forum to optimize Enterprise Java for a microservices architecture_. The MicroProfile aims to innovate across multiple implementations and collaborate on common areas of interest. The goal remains standardization.
