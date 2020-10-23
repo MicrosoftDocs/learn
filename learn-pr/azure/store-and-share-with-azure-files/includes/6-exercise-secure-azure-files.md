@@ -22,7 +22,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
     ![Screenshot showing the firewalls and virtual networks options](../media/6-add-firewall-protections.png)
 
 1. Under **Allow access from**, select the **Selected networks** option.
-1. Under **Firewall**, in the address range input, enter the IP address of your VM. You can see this address in the title bar of the remote desktop connection.
+1. Under **Firewall**, in the address range input, enter the public IP address of your VM. You can see this address in the title bar of the remote desktop connection.
 1. Select **Save**.
 
 ## Test security of the file share
@@ -49,8 +49,6 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 > [!NOTE]
 > You might need to go to the reports share because the error page could be cached for the data file share.
 
-<!-- ## Install AzCopy and sign in to Azure
-
 1. Connect to your VM by using the remote desktop connection.
 1. Use the browser to download AzCopy by going to [https://aka.ms/downloadazcopy-v10-windows](https://aka.ms/downloadazcopy-v10-windows).
 1. In the browser, select **Save**.
@@ -72,9 +70,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
     ```powershell
     .\azcopy.exe login
-    ``` -->
-
-<!-- 1. The console prompts you to browse to [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin). Use the code displayed.
+    ```
 
 ## Copy local files to Azure
 
