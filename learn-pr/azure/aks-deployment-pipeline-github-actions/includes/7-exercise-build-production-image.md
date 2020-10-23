@@ -1,6 +1,6 @@
 In the preceding exercise, you built the staging workflow for building and publishing the image. Now, let's recap the production workflow:
 
-:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that depicts the procession from triggers, through three build steps, to the deploy step in a pipeline.":::
+:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy step in a pipeline.":::
 
 You'll build the tagged version by using another workflow.
 
@@ -18,7 +18,7 @@ You'll build the tagged version by using another workflow.
 
     GitHub gave us the same editor with another workflow file created within the `.github/workflows` directory. This is the file you'll have displayed.
 
-    ```yml
+    ```yaml
     # This is a basic workflow to help you get started with Actions
 
     name: CI
@@ -54,7 +54,7 @@ You'll build the tagged version by using another workflow.
               echo test, and deploy your project.
     ```
 
-1. Rename the file from `main.yml` to `build-production.yml` by typing on the top input panel
+1. Rename the file from `main.yml` to `build-production.yml` by typing on the top input panel.
 
 1. Change the `name` key to _"Build and push the tagged build to production"_, your file will look like this
 

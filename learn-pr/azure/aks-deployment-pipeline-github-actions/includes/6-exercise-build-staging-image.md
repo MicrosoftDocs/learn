@@ -56,11 +56,11 @@ You'll build this pipeline by using the GitHub Actions workflow.
               echo test, and deploy your project.
     ```
 
-1. In the top input panel, rename the file build-latest.yml.
+1. In the top input panel, rename the file **build-latest.yml**.
 
 1. Change the `name` key to **Build and push the latest build to staging**. 
 
-   Your file now will look like this example:
+   Now, your file should look like this example:
 
    ```yaml
    # This is a basic workflow to help you get started with Actions
@@ -96,13 +96,13 @@ You'll build this pipeline by using the GitHub Actions workflow.
 
 1. Let's work on the jobs you're going to run.
 
-    In this process, you address both the build steps and the deploy steps from the diagram.
+    In this process, you address both the build steps and the deploy steps that are shown in the pipeline design diagram.
 
     GitHub workflows are divided into jobs. Jobs are divided into steps. Each step can have multiple commands and use multiple actions to be executed.
 
     The `jobs` key is already set to run on `ubuntu-latest`, which is the environment where you want this workflow to run.
 
-1. Rename the `build` key to `build_push_image`.
+1. Rename the `build` key `build_push_image`.
 
 1. In the `steps` key, delete the last two commands, which are only examples from the template. Your file will look like this example:
 
@@ -121,9 +121,9 @@ You'll build this pipeline by using the GitHub Actions workflow.
           - uses: actions/checkout@v2
     ```
 
-    You already have a step that uses the `checkout` action. This action is responsible for cloning the repository into the job environment.
+    You already have a step that uses the `checkout` action. This action clones the repository into the job environment.
 
-    This step is equivalent to the first action (clone the repo) in the build steps in the diagram.
+    This step is equivalent to the first action (clone the repo) in the build steps in the pipeline design diagram.
 
     Next, add another action to build your Docker image.
 
@@ -131,7 +131,7 @@ You'll build this pipeline by using the GitHub Actions workflow.
 
     :::image type="content" source="../media/6-3-docker-action.png" alt-text="Screenshot that shows the search results that list Build and push Docker images.":::
 
-    In the opened panel, select the copy icon to copy the usage YAML.
+    In the panel for the search result item, select the copy icon to copy the usage YAML.
 
     :::image type="content" source="../media/6-4-docker-copy.png" alt-text="Screenshot that shows the copy icon selected in the Build and push Docker images pane.":::
 
@@ -193,11 +193,11 @@ You'll build this pipeline by using the GitHub Actions workflow.
     > [!IMPORTANT]
     > Be careful with indentation when you use YAML. The `name` key should be aligned with the preceding `uses` key.
 
-    This action gives you several options to adjust the usage. For more information, see the GitHub [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/releases/v1).
+    You can adjust usage for this action. For more information, see the [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/releases/v1).
 
 1. In the `name` key, rename the value **Build and push staging image**.
 
-1. You'll use only a handful of the parameters available for this action. Set the following actions and delete the others.
+1. You'll use only a handful of the parameters that are available for this action. Set the following actions and delete the others.
 
     Add the values according to the following table:
 
@@ -295,8 +295,8 @@ Selecting the **Commit new file** button triggers a new build to start on the **
 
 1. On the right side, select **Rerun jobs**, and then select **Rerun all jobs**.
 
-    :::image type="content" source="../media/6-7-rerun-jobs.png" alt-text="Rerun all jobs":::
+    :::image type="content" source="../media/6-7-rerun-jobs.png" alt-text="Screenshot that shows the Rerun all jobs option.":::
 
-1. In Cloud Shell, run `az acr repository list --name <ACR_NAME> -o table` to confirm there's a repository named `contoso-website` in the results.
+1. In Cloud Shell, run `az acr repository list --name <ACR_NAME> -o table` to confirm that a repository named `contoso-website` appears in the results.
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
