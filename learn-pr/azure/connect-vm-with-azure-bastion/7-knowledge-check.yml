@@ -13,7 +13,7 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: "An organization has set up virtual machines (VMs) to act as jumpboxes in each of their six virtual networks. Each of their jumpboxes regularly support 5 concurrent RDP sessions per day. Why should they consider using Azure Bastion?"
+  - content: "An organization has set up virtual machines (VMs) to act as jumpboxes in each of their six virtual networks. Each of their jumpboxes regularly supports 5 concurrent RDP sessions per day. Why should they consider using Azure Bastion?"
     choices:
     - content: They could deploy one Bastion host to support all VM RDP connections in the resource group.
       isCorrect: false
@@ -35,7 +35,7 @@ quiz:
     - content: Subscription
       isCorrect: false
       explanation: A Bastion deployment doesn't apply to the subscription scope.
-  - content: "You decide deploy Bastion to an existing virtual network by using Azure CLI. What resources do you need to create?"
+  - content: "You decide to deploy Bastion to an existing virtual network by using Azure CLI. What resources do you need to create?"
     choices:
     - content: VM, public IP, and Bastion
       isCorrect: false
@@ -50,7 +50,7 @@ quiz:
     choices:
     - content: Check the public IP address.
       isCorrect: false
-      explanation: Connectivity issues with the public IP address isn't likely to be the issue.
+      explanation: Connectivity issues with the public IP address aren't likely to be the issue.
     - content: Review the number of current remote connections by going to **Bastion** > **Sessions**.
       isCorrect: true
       explanation: Bastion has a limit on the number of concurrent RDP and SSH connections it supports. Compare the number of sessions that are open for each protocol with the Bastion limits.
