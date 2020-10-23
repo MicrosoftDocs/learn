@@ -28,13 +28,13 @@ In this unit, you'll:
 
 ## Set up your environment
 
-1. Sign in to the Azure portal.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Select **Cloud Shell** from the menu bar in the upper right.
 
 1. Select **Bash**.
 
-1. Run the following command. Change the resource group name to be reflective of your sandbox environment.
+1. Run the following command. Change the resource group name to be reflective of your sandbox environment's resource group that gets created upon sandbox activation.
 
     ```bash
     az vm create \

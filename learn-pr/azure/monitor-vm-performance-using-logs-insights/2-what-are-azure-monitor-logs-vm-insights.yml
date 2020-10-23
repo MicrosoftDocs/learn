@@ -28,12 +28,12 @@ quiz:
       explanation: Provides a mechanism to define more granular data control inside a Log Analytics workspace in conjunction with other access mode permissions.
   - content: 'What does VMInsights provide?'
     choices:
-    - content: Near real time alerts.
+    - content: Provides insight into operations performed on Azure resources.
       isCorrect: false
-      explanation: You receive near real time alerts from Azure Metrics.
-    - content: Access to CRUD events.
+      explanation: Azure resource logs provide insight into the operations performed on an Azure resource by way of configuring diagnostic settings.
+    - content: Access to create, read, update, delete (CRUD) events.
       isCorrect: false
-      explanation: CRUD events are captured inside Azure Active Directory Activity Log.
+      explanation: Create, read, update, and delete events are captured inside Azure Active Directory Activity Log.
     - content: Processes log data without exposing the user to underlying queries.
       isCorrect: true
       explanation: Allows deeper performance analysis of a virtual machine without query building.
