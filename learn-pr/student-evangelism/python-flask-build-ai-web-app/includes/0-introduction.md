@@ -26,6 +26,6 @@ In this module, you build a website named Contoso Travel step by step. First, yo
 
 ## Prerequisites
 
-- Python 3.6 or later. Follow the steps in the [Install Python 3](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true) module. At the top of the article, choose the instructions for your configuration: Windows, Linux, or macOS.
-- The Azure CLI.
-- Visual Studio Code.
+- Python 3.6 or later and VS code installed on your computer. Follow the steps in the [Install Python 3](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true) module. At the top of the article, choose the instructions for your configuration: Windows, Linux, or macOS.
+- [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?azure-portal=true)
+- [git](https://github.com/git-guides/install-git?azure-portal=true)

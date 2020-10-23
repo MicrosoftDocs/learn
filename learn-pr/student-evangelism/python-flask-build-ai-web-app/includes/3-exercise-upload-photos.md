@@ -72,7 +72,7 @@ Currently, the app consists of a single page named **index.html** that's located
 
 ### Set the Flask environment variable
 
-To use Flask, you need an environment variable to tell Flask where to run. For the Contoso Travel website, we'll set Flask to run in development mode.
+To develop the Contoso Travel website, we'll set Flask to run in development mode.
 
 Running Flask in development mode is helpful when you're working on a website. Flask automatically reloads any files that change while the site is running. If you let Flask default to production mode and change the contents of an HTML file or another asset, you have to restart Flask to see the change in your browser.
 
@@ -121,19 +121,6 @@ Now that Flask is running, you can check out your website. Open a browser and go
 _Contoso Travel_
 
 The website looks good, but it doesn't offer any functionality yet. It doesn't support photo uploads, even though the user interface for doing so is in place. The next step is to modify the site to allow users to upload photos.
-
-
-### Stop Flask
-
-Because we need to make changes to our code, we'll stop Flask for now. We'll restart Flask later when we're ready to check out the improved website.
-
-In your Command Prompt window or terminal, use the following command to stop Flask:
-
-```console
-CTRL+C
-```
-
-Remember to keep your Command Prompt window or terminal open. You'll return to it after we update the code.
 
 
 ## Add support for uploading photos
@@ -202,7 +189,7 @@ In this exercise, you modify the **index.html** and **app.py** files so users ca
         return render_template("index.html", image_uri=uri)
     ```
 
-    The revised **app.py** file still accesses the content in the **index.html** file when the home page is requested. The difference is when the user uploads a photo and the page is requested again with a POST command. The new code retrieves the uploaded image from the request (`image = request.files["file"]`), base-64 encodes it to create a data URI, and assigns the data URI to the `<img>` element declared in the page. This technique is commonly used to display an uploaded image in a webpage without writing the image to a temporary file on disk.
+    The revised **app.py** file still displays the content in the **index.html** file when the home page is requested. The difference is when the user uploads a photo and the page is requested again with a POST command. The new code retrieves the uploaded image from the request (`image = request.files["file"]`), base-64 encodes it to create a data URI, and assigns the data URI to the `<img>` element declared in the page. This technique is commonly used to display an uploaded image in a webpage without writing the image to a temporary file on disk.
 
 1. Return to the **index.html** file and find the `<img>` element on line 42. Replace `/static/placeholder.png` on that line with `{{ image_uri }}`. Here is the modified line:  
 
@@ -221,12 +208,6 @@ Let's make sure your changes have the desired effect by uploading a photo to the
 
 1. Return to your Command Prompt window or terminal. Make sure the current directory is still set to **mslearn-build-ai-web-app-with-python-and-flask/src/starter** in your project directory.
 
-1. In your Command Prompt window or terminal, restart Flask:
-
-    ```console
-    flask run
-    ```
-
 1. Refresh your website page in the browser, or open a new browser window and go to `http://localhost:5000/`.
 
 1. On your website, select the **Upload Photo** button at the bottom of the home page, and select a photo from your local file system.
@@ -238,9 +219,19 @@ Let's make sure your changes have the desired effect by uploading a photo to the
     _Contoso Travel showing an uploaded photo_
 
 
+## Stop Flask
+
+We'll stop Flask for now and restart it later when we're ready to check out the improved website.
+
+In your Command Prompt window or terminal, use the following command to stop Flask:
+
+```console
+CTRL+C
+```
+
+Leave your Command Prompt window or terminal open. We'll return to it in the next unit.
+
+
 ## Next steps
 
 You now have a basic Flask website running that accepts photo uploads! The next step is to modify the site to extract text from those photos. That's where Azure Cognitive Services comes in.
-
-- We're going to make more changes to the code, so go ahead and stop Flask (CTRL+C). We'll restart it when we're ready to review the updated website.
-- Leave your Command Prompt window or terminal open. We'll return to it in the next unit.

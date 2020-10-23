@@ -21,17 +21,19 @@ To run Flask websites on your computer, both Flask and Python must be installed.
 >
 > If you need to install Python, you can follow the steps in the [Install Python 3](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true) module. At the top of the article, choose the instructions for your configuration: Windows, Linux, or Mac.
 >
-> Verify that your Python install location is added to your PATH system environment variable. A common install location is `C:\Users\<username>\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.6_qbz5n2kfra8p0\LocalCache\local-packages\Python36\Scripts`.
+> Verify your Python install location is added to your PATH system environment variable. You can find the Python install location on your machine with the following command:
+> - **Windows**: In a Command Prompt window, use the command `where python`.
+> - **macOS or Linux**: In a terminal, use the command `which python`.
 >
 
 <!--- REMOVE pip install instructions. REMOVE PATH env var section.
 
-### Install pip
+### Upgrade pip
 
-Start by installing the latest version of **pip**, the Python package manager.
+Start by ensuring you have the latest version of **pip**, the Python package manager.
 
 > [!Important]
-> It's important to make sure you're using the latest version of pip.
+> It's important to make hesure you're using the latest version of pip.
 > Older versions of pip can miss dependencies that are required to run Python in Azure.
 > The following commands help to ensure you're using the most recent version.
 
@@ -72,7 +74,7 @@ Update your PATH variable as needed. You can update the PATH at the system level
 
 ### Create the project directory
 
-Next, create a directory on your hard disk in the location of your choice. The directory will be the *project directory* that holds all the files for the Contoso Travel website. This directory is also where your virtual Python environment will be created.
+First, create a directory on your hard disk in the location of your choice. The directory will be the *project directory* that holds all the files for the Contoso Travel website. This directory is also where your virtual Python environment will be created.
 
 
 ### Create a Python virtual environment

@@ -271,9 +271,13 @@ The final step is to test the changes that you made by uploading photos to the s
 Repeat this process with other photos to gauge the Translator Text API's ability to translate text submitted to it.
 
 
+## Stop Flask
+
+Stop Flask with the CTRL+C command.
+
+Leave your Command Prompt window or terminal open. You'll return to it in the next exercise.
+
+
 ## Next steps
 
 At this point, your Flask website can accept photo uploads, extract text from photos, and translate the extracted text into another language. In the next unit, you'll learn how to deploy your website as an Azure web app so others can access the great functionality.
-
-- We're going to make some final changes to the code, so stop Flask (CTRL+C). We'll restart it when we're ready to deploy your website.
-- Leave your Command Prompt window or terminal open. We'll return to it in the next exercise.

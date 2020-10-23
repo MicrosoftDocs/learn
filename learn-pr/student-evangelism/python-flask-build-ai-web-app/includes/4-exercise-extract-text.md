@@ -18,13 +18,13 @@ Resources that are used in this exercise are located in a [Git repository for co
 
 > _Only complete the steps in this section if you closed the Command Prompt window or terminal where you were running your Python virtual environment. Otherwise, continue to the next section, "Subscribe to the Computer Vision API."_
 >
-> If you closed your Command Prompt window or terminal, you need to configure a new window or terminal to use your existing Python virtual environment. The Flask environment variable also needs to be recreated.
+> If you closed your Command Prompt window or terminal, you need to configure a new window or terminal to use your existing Python virtual environment. Flask also needs to be set to development mode again with the environment variable.
 >
 > 1. Open a new Command Prompt window or terminal. Change (`cd`) to your project directory. For details, see the section "Create the project directory" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment.yml?azure-portal=true) unit. <!-- #create-the-project-directory -->
 > 
 > 1. Reactivate your Python virtual environment. For details, see the section "Activate your virtual environment" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment.yml?azure-portal=true) unit. <!-- #activate-your-virtual-environment -->
 > 
-> 1. Reset the **FLASK_ENV** environment variable. For details, see the section "Set the Flask environment variable" in the [Exercise - Build a page for uploading photos](../3-exercise-upload-photos.yml?azure-portal=true) unit. <!-- #set-the-flask-environment-variable -->
+> 1. Re-add the **FLASK_ENV** environment variable. For details, see the section "Set the Flask environment variable" in the [Exercise - Build a page for uploading photos](../3-exercise-upload-photos.yml?azure-portal=true) unit. <!-- #set-the-flask-environment-variable -->
 >
 
 
@@ -44,11 +44,13 @@ If you haven't installed the Azure CLI, see the instructions for how to "Install
 
 ### Create the resource group
 
-In your Command Prompt window or terminal, use the following command to create a resource group named **contoso-travel-rg** in the Azure North Central US region. This resource group will hold all the Azure resources that you create in this module.
+You need to create a resource group to hold all of the Azure resources that you create in this module. 
+
+Use the following command to create a resource group named **contoso-travel-rg** in the Azure North Central US region:
 
 ```console
 az group create --name contoso-travel-rg --location northcentralus
-```
+``` 
 
 Resource groups are an important feature of Azure. They serve as containers that group together other Azure resources. When you run a task on a resource group, the task impacts all resources in the group. You can view billing information, apply security rules, and even delete all resources, and all these tasks affect all Azure resources in the resource group. *Every* Azure resource that you create must be part of a resource group.
 
@@ -255,9 +257,13 @@ Now let's run the modified website, upload a few photos, and try out the Compute
 Repeat this process with other photos to gauge the Computer Vision API's ability to extract text from uploaded photos. This ability isn't perfect, but the API should get the extraction right, or almost right, most of the time.
 
 
+## Stop Flask
+
+Stop Flask with the CTRL+C command. You'll restart Flask when you're ready to test the new updates to your website.
+
+Leave your Command Prompt window or terminal open. You'll return to it in the next unit.
+
+
 ## Next steps
 
 Now your Flask website can accept photo uploads and extract text from the photos. The next step is to be able to pass text extracted from photos with the Computer Vision API and translate the text into another language. For this task, you'll learn how to use the Cognitive Services Translator Text API.
-
-- We're going to make more changes to the code, so go ahead and stop Flask (CTRL+C). We'll restart it when we're ready to review the updated website.
-- Leave your Command Prompt window or terminal open. We'll return to it in the next unit.

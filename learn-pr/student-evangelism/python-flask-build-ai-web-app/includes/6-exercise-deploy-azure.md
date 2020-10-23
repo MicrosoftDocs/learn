@@ -21,7 +21,7 @@ In this exercise, you use the Azure CLI to deploy your website to Azure.
     azure-cognitiveservices-vision-computervision
     ```
 
-    The **requirements.txt** file contains a list of Python packages that must be installed along with the app when the app is deployed to Azure.
+    This new **requirements.txt** file contains a list of Python packages that must be installed along with the app when the app is deployed to Azure.
 
 1. Save the text file to the **mslearn-build-ai-web-app-with-python-and-flask/src/starter** folder in your project directory.
 
