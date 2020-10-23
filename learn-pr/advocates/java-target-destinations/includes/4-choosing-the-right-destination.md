@@ -39,4 +39,4 @@ Choosing a destination is only a first step, don't forget that once you are usin
 - You will have a maintenance burden that will vastly vary on the type of service you choose, and on the skills of your own ops team.
 - Your developers will use that platform daily, and thus will be more productive if that service provides a great developer experience.
 
-For both of these points, it all depends on the team you have, so you also need to choose a destination that matches your team expertise and preferences.
+For both of these points, it all depends on the team you have, so you also need to choose a destination that matches your team's expertise and preferences.
