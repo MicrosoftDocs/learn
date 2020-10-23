@@ -14,7 +14,7 @@ If you need more control about what you are deploying, App Service also supports
 
 Azure Function is the serverless platform provided by Azure, and it supports running Java workloads.
 
-Running a Java application on Azure Functions usually requires some minor configuration and setup. By nature, serverless functions will have very short lives (a few minutes usually), so some of the services that you would traditionally use (like an in-memory cache) might not as efficient or practical as with Azure App Service.
+Running a Java application on Azure Functions usually requires some minor configuration and setup. By nature, serverless functions will have very short lives (a few minutes usually), so some of the services that you would traditionally use (like an in-memory cache) might not be as efficient or practical as with Azure App Service.
 
 As a result, Azure Functions is taylored for applications that need a lot of scalability: they can be stopped regularly to reduce cost, and they can scale up to response to very high load.
 
