@@ -46,7 +46,7 @@ You can use the Express Generator tool to create all the components of an Expres
 You now have a functional webapp that Node.js can run. Let's modify its code to display the countdown:
 
 1. In the Visual Studio Code Explorer window, expand **routes**, and then select **index.js**. This JavaScript file defines routes for the app's homepage. We can add our code to calculate the countdown here.
-1. Add the following code, immediately after the `var router = express.Router();` line. In the first line of the inserted code, specify your own date around a month in the future, in `MM/DD/YYYY HH:MM` format (this example uses `12/29/2019 10:00`):
+1. Add the following code, immediately after the `const router = express.Router();` line. In the first line of the inserted code, specify your own date around a month in the future, in `MM/DD/YYYY HH:MM` format (this example uses `12/29/2019 10:00`):
 
     ```JavaScript
     let launchTime = new Date("12/29/2019 10:00").getTime();
@@ -173,7 +173,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
 
     Visual Studio Code displays a list of available global environments, including the virtual environment you just created.  You should see the virtual environment named `env` in the list.  Use the arrow keys to select the `env` entry and select <kbd>Enter</kbd> (or <kbd>return</kbd> on macOS).
 
-    ![Screenshot of completed project in web browser.](../media/3-python-select-interpreter.png)
+    ![Screenshot of project in web browser.](../media/3-python-select-interpreter.png)
 
 1. Close the integrated terminal.
 
