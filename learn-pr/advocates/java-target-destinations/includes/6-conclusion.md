@@ -2,7 +2,7 @@ In this module, you learned the main deployement types used for Java application
 
 ## Additional resources
 
-The main Azure services described in this module have their main pages here:
+The different Azure services described in this module have their main pages here:
 
 - [Azure App Service](https://azure.microsoft.com/services/app-service/)
 - [Azure Functions](https://azure.microsoft.com/services/functions/)
