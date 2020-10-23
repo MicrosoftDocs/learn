@@ -6,19 +6,19 @@ Let's review our designed pipeline:
 
 You'll build this pipeline by using the GitHub Actions workflow.
 
-## Build the Action workflow
+## Build the Actions workflow
 
 1. To start building your pipeline, go to the fork of the sample repository in the GitHub website and select the **Actions** tab:
 
     :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Screenshot that shows the Get started with GitHub Actions page on the GitHub website.":::
 
-1. Just below the header, select the **Set up a workflow yourself** link:
+1. Just below the header, select **Set up a workflow yourself**:
 
     :::image type="content" source="../media/6-2-example-editor.png" alt-text="Screenshot that shows an example file being edited in the Edit new file pane on the GitHub website.":::
 
     At this point, the pipeline is just a file in the .github/workflows directory in your repository.
 
-    GitHub provides you with the prebuilt components you need to build most of the pipelines. You'll have a workflow file like this example:
+    GitHub provides you with the prebuilt components you need to build most of the pipelines. You'll have a workflow file that looks like this example:
 
     ```yaml
     # This is a basic workflow to help you get started with Actions

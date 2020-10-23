@@ -1,17 +1,18 @@
-Now that we understand what we need to do, let's start by creating our resources and publish our pipeline.
+Now that we understand what we need to do, let's create our resources and publish our pipeline.
 
 > [!IMPORTANT]
-> - To run this exercise, you need your own GitHub account. If you don't already have a GitHub account, create a [free account](https://github.com) before you begin.
+> To run this exercise, you need your own:
 >
-> - You need your own Azure subscription to run this exercise, and you may incur charges. If you don't already have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+> - GitHub account. If you don't already have a GitHub account, create a [free account](https://github.com) before you begin.
+> - Azure subscription. You might incur charges. If you don't already have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 ## Set up the project
 
 1. Fork [this sample repository](https://github.com/MicrosoftDocs/mslearn-aks-deployment-pipeline-github-actions) to your account.
 
-    You fork the repository so you can create your own GitHub Actions pipeline. If you used the hosted sample version, you couldn't complete the exercise because you don't have write permissions.
+    Fork the repository so that you can create your own GitHub Actions pipeline. If you used the hosted sample version, you couldn't complete the exercise because you don't have write permissions to the original sample repository.
 
-1. Sign in to Azure Cloud Shell with the account you want to deploy resources to.
+1. Sign in to Azure Cloud Shell by using the Azure subscription you want to deploy resources to.
 
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
@@ -33,7 +34,7 @@ Now that we understand what we need to do, let's start by creating our resources
 
     The init.sh file does the following tasks:
 
-    * Sets up the environment variables `AKS_NAME`, `DNS_NAME`, `RESOURCE_GROUP_NAME`, and `ACR_NAME`. These variables are the names of the resources you'll be creating.
+    * Sets up the environment variables `AKS_NAME`, `DNS_NAME`, `RESOURCE_GROUP_NAME`, and `ACR_NAME`. These variables are the names of the resources you will create.
 
     * Creates a new resource group.
 
