@@ -25,7 +25,7 @@ The Spring Framework brings the core functionality and supports:
 
 ### Spring Boot
 
-is by far the most used framework as an alternative to application servers. It is running on top of the Spring Framework and simplifies the life of developers. Spring Boot has become so successful, that more than half of all Java Web applications are already using it. It has become the most popular Java web framework. And it's getting more and more momentum over the last years. Its opinionated autoconfiguration makes it easy to use. Spring boot applications are running stand-alone. As such they can be a perfect fit for Microservices.
+Spring Boot is by far the most used framework as an alternative to application servers. It is running on top of the Spring Framework and simplifies the life of developers. Spring Boot has become so successful, that more than half of all Java Web applications are already using it. It has become the most popular Java web framework. And it's getting more and more momentum over the last years. Its opinionated autoconfiguration makes it easy to use. Spring boot applications are running stand-alone. As such they can be a perfect fit for Microservices.
 
 ### Spring Data
 
