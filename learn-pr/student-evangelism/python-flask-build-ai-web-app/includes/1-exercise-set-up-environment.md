@@ -13,63 +13,25 @@ In this unit, you'll learn how to create a virtual Python environment. You'll in
 
 To run Flask websites on your computer, both Flask and Python must be installed. In this exercise, you create a virtual Python environment that isolates the packages you install from other items on your computer. Then you install Flask and the Python SDK for the Computer Vision API in that environment.
 
-> [!Note]
-> To complete this unit, Python 3.6 or later must already be installed on your computer. You can check to see if it's installed.
-> - For Windows, enter the command `python --version` in the Command Prompt window.
-> - If you're running Linux or macOS, run the command `python3 --version` in the terminal.
-> If Python is installed, the output shows the Python version number. 
->
-> If you need to install Python, you can follow the steps in the [Install Python 3](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true) module. At the top of the article, choose the instructions for your configuration: Windows, Linux, or Mac.
->
-> Verify your Python install location is added to your PATH system environment variable. You can find the Python install location on your machine with the following command:
-> - **Windows**: In a Command Prompt window, use the command `where python`.
-> - **macOS or Linux**: In a terminal, use the command `which python`.
->
 
-<!--- REMOVE pip install instructions. REMOVE PATH env var section.
+### Python 3.6 or later required
 
-### Upgrade pip
+To complete this unit, Python 3.6 or later must already be installed on your computer.
 
-Start by ensuring you have the latest version of **pip**, the Python package manager.
+Use the following command to check if Python is installed.
 
-> [!Important]
-> It's important to make hesure you're using the latest version of pip.
-> Older versions of pip can miss dependencies that are required to run Python in Azure.
-> The following commands help to ensure you're using the most recent version.
+- **Windows**: In a Command Prompt window, use the command `python --version`.
+- **macOS or Linux**: In a terminal, use the command `python3 --version`.
 
-**Windows**
+If Python is installed, the output shows the Python version number. 
 
-If you're running Windows, enter the following command in the Command Prompt window:
+If you need to install Python, you can follow the steps in the [Install Python 3](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true) module. At the top of the article, choose the instructions for your configuration: Windows, Linux, or Mac.
 
-```console
-python -m pip install --upgrade pip
-```
+Verify your Python install location is added to your `PATH` system environment variable.
+You can find the Python install location on your machine with the following command:
 
-**macOS or Linux**
-
-If you're running macOS or Linux, enter this command in the terminal:
-
-```console
-python3 -m pip install --user --upgrade pip
-```
-
-### Update the PATH environment variable
-
-After you install Python, check your **PATH** environment variable. The PATH needs to include the location where you installed Python on your machine.
-
-Common install locations for Python:
-- \Users\<username>\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.6_qbz5n2kfra8p0
-- /Library/Frameworks/Python.Framework/Versions/3.6/
-- /usr/local/python-3.6.3/
-
-Common install locations for pip:
-- C:\Users\<username>\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.6_qbz5n2kfra8p0\LocalCache\local-packages\Python36\site-packages
-- /Library/Frameworks/Python.Framework/Versions/3.6/bin/python3.6/site-packages/pip (python 3.6)
-- /usr/local/python-3.6.3/bin/python
-
-Update your PATH variable as needed. You can update the PATH at the system level, or locally in your Command Prompt window or terminal.
-
--->
+- **Windows**: In a Command Prompt window, use the command `where python`.
+- **macOS or Linux**: In a terminal, use the command `which python`.
 
 
 ### Create the project directory
@@ -104,17 +66,17 @@ After the Python virtual environment is created, it needs to be activated.
 
 In your Command Prompt window or terminal, enter the following command to activate the environment. Replace `<your-virtual-environment>` with the name of your virtual environment, such as "ContosoTravelEnv".
 
-- **Windows**
+**Windows**
 
-   ```console
-   <your-virtual-environment>\scripts\activate
-   ```
+```console
+<your-virtual-environment>\scripts\activate
+```
 
-- **macOS or Linux**
+**macOS or Linux**
 
-   ```console
-   source <your-virtual-environment>/bin/activate
-   ```
+```console
+source <your-virtual-environment>/bin/activate
+```
 
 After you run the `activate` command, you'll notice that the prompt changes. The prompt now begins with a prefix enclosed in parenthesis. The prefix is the name of your virtual environment. The special prompt helps to remind you that you're working in a virtual environment.
 
@@ -131,12 +93,22 @@ pip install Flask
 
 The command downloads the required packages: Flask, Werkzeug, Jinja, click, itsdangerous, and MarkupSafe. After the download completes, the packages are installed.
 
-> [!Note]
-> If you receive a warning that your pip version is not the most recent, use the following to upgrade your version of pip.
-> 
-> - **Windows**: In your Command Prompt window, enter the command `python -m pip install --upgrade pip`.
-> - **macOS or Linux**: In your terminal, enter the command  `python3 -m pip install --user --upgrade pip`.
->
+
+### Upgrade pip
+
+If you receive a warning that your pip version is not the most recent, use the following command to upgrade your version of pip.
+
+**Windows**
+
+```console
+python -m pip install --upgrade pip
+```
+
+**macOS or Linux**
+
+```console
+python3 -m pip install --user --upgrade pip
+```
 
 
 ## Install the Computer Vision API    

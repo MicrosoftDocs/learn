@@ -219,19 +219,19 @@ Now we need to set two local environment variables that correspond to the Comput
 
 Return to your Command Prompt window or terminal. In the following command, replace `<computer_vision_api_key>` with your API key and `<computer_vision_endpoint>` with your endpoint URL. For details, see the earlier sections "Get an API key for the Computer Vision API" and "Get an endpoint URL to call the Computer Vision API." <!-- #get-an-api-key-for-the-computer-vision-api AND #get-an-endpoint-url-to-call-the-computer-vision-api -->
 
-- **Windows**
+**Windows**
 
-   ```command
-   set VISION_KEY=<computer_vision_api_key>
-   set VISION_ENDPOINT=<computer_vision_endpoint>
-   ```
+```command
+set VISION_KEY=<computer_vision_api_key>
+set VISION_ENDPOINT=<computer_vision_endpoint>
+```
 
-- **macOS or Linux**
+**macOS or Linux**
 
-   ```console
-   export VISION_KEY=<computer_vision_api_key>
-   export VISION_ENDPOINT=<computer_vision_endpoint>
-   ```
+```console
+export VISION_KEY=<computer_vision_api_key>
+export VISION_ENDPOINT=<computer_vision_endpoint>
+```
 
 When your website is running locally, calls to the `os.environ` mapping object will load these variables from the environment. Later, when you deploy your website to Azure, the same variables will come from application settings in Azure. No code changes will be required.
 
