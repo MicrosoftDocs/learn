@@ -14,5 +14,5 @@ Before taking this module, it is recommended that the student is able to:
 
 - Log into the Azure portal
 - Explain and create resource groups
-- Describe Azure Data Factory and it's core components
+- Describe Azure Data Factory and its core components
 - Ingest data into Azure Data Factory using the Copy Activity

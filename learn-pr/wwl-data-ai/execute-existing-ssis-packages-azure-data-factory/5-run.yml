@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory.run
-title: Run SSIS Packages in Azure Data Factory
+title: Run SSIS packages in Azure Data Factory
 metadata:
   title: Run SSIS Packages in Azure Data Factory
-  description: "Run SSIS Packages in Azure Data Factory"
-  ms.date: 10/24/2020
+  description: "Run SSIS packages in Azure Data Factory"
+  ms.date: 10/25/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
