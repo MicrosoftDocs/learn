@@ -35,6 +35,8 @@ def predict_best_meteor_shower_viewing(city):
 
     # Get the list of constellations that are viewable from that latitude
     constellation_list = constellations.loc[(constellations['latitudestart'] >= latitude) & (constellations['latitudeend'] <= latitude), 'constellation'].tolist()
+    
+    return constellation_list
 ```
 
 ```python
@@ -93,7 +95,7 @@ def predict_best_meteor_shower_viewing(city):
         return meteor_shower_string
 ```
 
-Finally, at the beginning of the string, check whether the city is in our cities data frame and has a visible constellation:
+Now, at the beginning of the string to return, add a starter sentence:
 ```python
 meteor_shower_string = "In " + city + " you can see the following meteor showers:\n"
 ```
