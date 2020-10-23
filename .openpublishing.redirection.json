@@ -3309,6 +3309,16 @@
       "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/includes/8-configure-ci-cd.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/azure-spring-cloud-workshop",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-relational-data/4-sql-database-for-postgresql.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/query-relational-data/4-azure-database-for-postgresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-relational-data/5-sql-database-for-mysql.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/query-relational-data/5-azure-database-for-mysql",
+      "redirect_document_id": false
     }
   ]
 }
