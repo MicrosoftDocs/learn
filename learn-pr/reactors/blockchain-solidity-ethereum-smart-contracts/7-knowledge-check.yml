@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.7-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 10/06/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 1
+content: |
+quiz:
+  questions:
+  - content: "What are smart contracts?"
+    choices:
+    - content: "Programs that only send cryptocurrency."
+      isCorrect: false
+      explanation: "Incorrect. Smart contracts are used for much more than cryptocurrency."
+    - content: "Programs that only generate and send tokens."
+      isCorrect: false
+      explanation: "Incorrect. Tokens are often associated with smart contracts, but smart contracts focus on more than just tokens."
+    - content: "Programs that are stored inside a blockchain. They represent an agreement between parties that are sending digital assets."
+      isCorrect: true
+      explanation: "Correct. Smart contracts are stored inside blockchains. They can represent the transfer of any digital asset."
+    - content: "Programs that are stored outside a blockchain. They must be signed by parties that are sending digital assets."
+      isCorrect: false
+      explanation: "Almost there. Smart contracts are stored *inside* blockchains. They are not stored externally."  
+
+  - content: "When a new project is created by using the Blockchain development kit for Ethereum, what gets automatically generated?"
+    choices:
+    - content: "A sample contract file written in Solidity"
+      isCorrect: false
+      explanation: "Incorrect. A contracts directory is generated, and it contains a couple of contracts. But this directory isn't the only automatically generated content."
+    - content: "A build folder and files to compile and deploy the Solidity project"
+      isCorrect: false
+      explanation: "Incorrect. A build folder is generated only after the project is compiled."
+    - content: "Folders for contracts, migrations, and tests."
+      isCorrect: false
+      explanation: "Incorrect. All of these folders are in fact generated, but there are also files within each of the folders created."
+    - content: "Sample contract, migrations, a test, and a Truffle config file."
+      isCorrect: true
+      explanation: "Correct. A new project generates a HelloBlockchain contract, two migrations, a test, and a Truffle config file. You can build on these examples to create your own smart contract projects."
+
+  - content: "What is Truffle?"
+    choices:
+    - content: "A command-line tool that you can use to create smart contracts"
+      isCorrect: false
+      explanation: "Not quite. This answer describes one part of what Truffle can do. But Truffle can do more than just create smart contracts. Truffle is typically not described as a command-line tool."
+    - content: "A development environment, testing framework, and asset pipeline for blockchains"
+      isCorrect: true
+      explanation: "Correct. Truffle is a development framework that helps you manage smart contracts, from creation to testing to deployment."
+    - content: "A personal blockchain Ethereum development tool that you can use to deploy contracts"
+      isCorrect: false
+      explanation: "Incorrect. This answer best describes Ganache. Ganache is a tool in the Truffle Suite. You use it to view activities in your blockchain."
+    - content: "A library that you can use to write blockchain applications"
+      isCorrect: false
+      explanation: "Incorrect. This answer describes Drizzle. Drizzle is a tool in the Truffle Suite that you can use to create decentralized applications." 

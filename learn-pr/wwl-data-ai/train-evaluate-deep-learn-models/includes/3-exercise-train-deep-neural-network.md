@@ -60,6 +60,6 @@ The files used in this module (and other related modules) are published in the *
 After you've created a Jupyter environment and cloned the **ml-basics** repository, you're ready to explore deep learning.
 
  1. In Jupyter, in the **ml-basics** folder, open the **Deep Neural Networks (PyTorch).ipynb** or **Deep Neural Networks (Tensorflow).ipynb** notebook, depending on your framework preference, and follow the instructions it contains.
- 2. When you've finished, close and halt the notebook.
+ 2. When you've finished, close and halt all notebooks.
 
 When you've finished working through the notebook, return to this module and move on to the next unit to learn more.

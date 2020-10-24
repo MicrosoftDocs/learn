@@ -45,7 +45,7 @@ The following steps create an IoT Central application and generate an API token 
 
     ![The API Tokens page in the IoT Central UI with no tokens shown](../media/3-tokens.png)
 
-1. Select **+ Generate Token**. Enter `admin` as the **Token name** and make sure **Application Administrator** is selected as the **Role**. Then select **Generate**:
+1. Select **Create an API token**. Enter `admin` as the **Token name** and make sure **Administrator** is selected as the **Role**. Then select **Generate**:
 
     ![Generate an API token with the Application Administrator role in the IoT Central UI](../media/3-generate-token.png)
 

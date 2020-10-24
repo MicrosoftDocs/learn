@@ -1,0 +1,104 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "resourcegroup": {
+        "type": "string"
+      },
+      "hostingPlanName": {
+        "type": "string",
+        "minLength": 1
+      },
+      "skuName": {
+        "type": "string",
+        "defaultValue": "F1",
+        "allowedValues": [
+          "F1",
+          "D1",
+          "B1",
+          "B2",
+          "B3",
+          "S1",
+          "S2",
+          "S3",
+          "P1",
+          "P2",
+          "P3",
+          "P4"
+        ],
+        "metadata": {
+          "description": "Describes plan's pricing tier and instance size. Check details at https://azure.microsoft.com/pricing/details/app-service/"
+        }
+      },
+      "skuCapacity": {
+        "type": "int",
+        "defaultValue": 1,
+        "minValue": 1,
+        "metadata": {
+          "description": "Describes plan's instance count"
+        }
+      },
+      "websiteName": {
+        "type": "string"
+      },
+      "vaultName": {
+        "type": "string"
+      },
+      "mySuperSecretValueForTheAppService": {
+        "type": "securestring" 
+      } 
+    },
+    "variables": {},
+    "resources": [
+      {
+        "apiVersion": "2015-08-01",
+        "name": "[parameters('hostingPlanName')]",
+        "type": "Microsoft.Web/serverfarms",
+        "location": "[resourceGroup().location]",
+        "tags": {
+          "displayName": "HostingPlan"
+        },
+        "sku": {
+          "name": "[parameters('skuName')]",
+          "capacity": "[parameters('skuCapacity')]"
+        },
+        "properties": {
+          "name": "[parameters('hostingPlanName')]"
+        }
+      },
+      {
+        "apiVersion": "2015-08-01",
+        "name": "[parameters('webSiteName')]",
+        "type": "Microsoft.Web/sites",
+        "location": "[resourceGroup().location]",
+        "dependsOn": [
+          "[resourceId('Microsoft.Web/serverFarms/', parameters('hostingPlanName'))]"
+        ],
+        "tags": {
+          "[concat('hidden-related:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]": "empty",
+          "displayName": "Website"
+        },
+        "properties": {
+          "name": "[parameters('webSiteName')]",
+          "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('hostingPlanName'))]"
+        },
+        "resources": [
+          {
+            "name": "appsettings",
+            "type": "config",
+            "apiVersion": "2015-08-01",
+            "dependsOn": [
+              "[resourceId('Microsoft.Web/Sites/', parameters('webSiteName'))]"
+            ],
+            "tags": {
+              "displayName": "appSettings"
+            },
+            "properties": {
+              "MySuperSecretValueForTheAppService": "[parameters('mySuperSecretValueForTheAppService')]"
+            }
+          }
+        ]
+      }
+    ],
+    "outputs": {}
+  }

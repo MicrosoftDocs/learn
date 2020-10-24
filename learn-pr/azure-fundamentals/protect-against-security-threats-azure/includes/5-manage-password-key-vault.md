@@ -4,14 +4,18 @@ In practice, there are several ways to add secrets to and read secrets from Key 
 
 Here, you create a secret in Key Vault by using the Azure portal. You then access the secret from the portal and from the Azure CLI in Azure Cloud Shell. 
 
-The Azure CLI as a way to work with Azure resources from the command line or from scripts. Cloud Shell is a browser-based shell experience to manage and develop Azure resources. Think of Cloud Shell as an interactive console that runs in the cloud.
+The Azure CLI is a way to work with Azure resources from the command line or from scripts. Cloud Shell is a browser-based shell experience to manage and develop Azure resources. Think of Cloud Shell as an interactive console that runs in the cloud.
 
 ## Create a key vault
 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+
 1. From the search bar, enter **Key Vault**. Then select **Key Vault** from the results.
+
 1. On the **Key Vault** pane, select **Create**.
+
 1. On the **Create key vault** pane, fill in these settings:
 
     > [!NOTE]
@@ -24,11 +28,13 @@ The Azure CLI as a way to work with Azure resources from the command line or fro
     | Key vault name | **my-kv-NNN** |
 
     Leave the other settings at their current values.
+
 1. Select **Review + create**, and then select **Create**.
 
     Wait for the creation process to finish.
 
 1. Select **Go to resource**.
+
 1. Note some of the details about your key vault.
 
     For example, the **DNS name** field shows the URI that your application can use to access your vault from the REST API.

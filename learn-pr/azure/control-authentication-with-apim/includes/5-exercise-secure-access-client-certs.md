@@ -39,7 +39,7 @@ Because you are using the Consumption tier for API Management, you must configur
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 1. On the Azure portal menu or from the **Home** page, select **All resources** and then click your API Management gateway.
-1. Under **Settings**, click **Custom domains**.
+1. Under **Deployment and infrastructure**, click **Custom domains**.
 1. For the **Request client certificates** option, select **Yes**, and then click **Save**.
 
     ![Configure the gateway to request certificates](../media/5-config-request-certificates.png)

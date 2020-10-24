@@ -1,29 +1,29 @@
-You'll learn how to control an Azure Sphere application using Azure IoT Hub Direct Method. This unit will cover **Azure IoT Direct Methods** and explain **Direct Method Bindings** to simplify the implementation of Azure IoT.
+You'll learn how to control an Azure Sphere application by using Azure IoT Hub direct method. This unit also explains direct method bindings to simplify the implementation of Azure IoT.
 
-## Azure IoT Direct Methods
+## Azure IoT direct method
 
-Examine how Azure IoT direct method work
+The following diagram shows how Azure IoT direct method works:
 
-![The illustration shows how Azure IoT direct methods work.](../media/azure-direct-method-pattern.png)
+![Diagram showing how Azure IoT direct method works.](../media/azure-direct-method-pattern.png)
 
-## Steps to manage cloud to device control
+## Steps to manage cloud-to-device control
 
-The following outlines how Azure IoT Hub Direct Methods can be used cloud to device control.
+Take the following steps to use Azure IoT Hub direct method for cloud-to-device control.
 
-1. Azure IoT Hub sends a Direct Method message to the device. For example, reset the device. This message includes the method name and an optional payload.
-2. The device receives the direct method message and calls the associated handler function
-3. The device implements the direct method; in this case, reset the device.
-4. The device responds with an HTTP status code, and optionally a response message.
+1. Azure IoT Hub sends a direct method message to the device. For example, you might want to reset the device. This message includes the method name and an optional payload.
+2. The device receives the direct method message and calls the associated handler function.
+3. The device implements the direct method (in this case, to reset the device).
+4. The device responds with an HTTP status code, and optionally with a response message.
 
-## Direct Method Bindings
+## Direct method bindings
 
-Direct Method Bindings map a direct method with a handler function that implements an action.
+Direct method bindings map a direct method with a handler function that implements an action.
 
-### Cloud to Device Commands
+### Cloud-to-device commands
 
-#### Defining the Reset Device binding
+#### Define the reset device binding
 
-In main.c the variable named resetDevice of type DirectMethodBinding is declared. This variable maps the Azure IoT Hub direct method ResetMethod command with a handler function named ResetDirectMethod.
+In **main.c**, the variable named `resetDevice` of type `DirectMethodBinding` is declared. This variable maps the Azure IoT hub direct method `ResetMethod` command with a handler function named `ResetDirectMethod`.
 
 ```
 static LP_DIRECT_METHOD_BINDING resetDevice = { 
@@ -32,25 +32,25 @@ static LP_DIRECT_METHOD_BINDING resetDevice = {
 };
 ```
 
-## Direct Method Handler Function
+## Direct method handler function
 
-1. Typically an Azure IoT Hub application invokes the **Reset Azure Sphere** command.
+1. Typically, an Azure IoT hub application invokes the `Reset Azure Sphere` command.
 
-   A Direct Method named **ResetMethod**, along with a JSON payload, is sent to the device. The JSON payload *{"reset_timer":5}* specifies how many seconds to wait before resetting the device.
+   A direct method named `ResetMethod`, along with a JSON payload, is sent to the device. The JSON payload `{"reset_timer":5}` specifies how many seconds to wait before resetting the device.
 
-2. The ResetDirectMethod function handler is called.
+2. The `ResetDirectMethod` function handler is called.
 
-   When the device receives a Direct Method message, the DirectMethodBindings Set is checked for a matching DirectMethodBinding *methodName* name. When a match is found, the associated DirectMethodBinding handler function is called.
+   When the device receives a direct method message, the `DirectMethodBindings` set is checked for a matching `DirectMethodBinding` `methodName` name. When a match is found, the associated `DirectMethodBinding` handler function is called.
 
-3. The current UTC time is reported to Azure IoT using a Device Twin Binding property named **DeviceResetUTC**.
+3. The current UTC time is reported to Azure IoT by using a device twin binding property named `DeviceResetUTC`.
 
-4. The Direct Method responds back with an HTTP status code and a response message
+4. The direct method responds with an HTTP status code and a message.
 
 5. The device is reset.
 
-6. Your application can then query the **DeviceResetUTC** device twin report property cloud side.
+6. Your application can then query the `DeviceResetUTC` device twin report property.
 
-![The illustration shows the concept of direct method bindings.](../media/azure-sphere-method-and-twin.png)
+![Diagram showing the concept of direct method bindings.](../media/azure-sphere-method-and-twin.png)
 
 ```
 /// <summary>
@@ -94,9 +94,9 @@ static LP_DIRECT_METHOD_RESPONSE_CODE ResetDirectMethodHandler(JSON_Object* json
 }
 ```
 
-## Working with Direct Method Binding
+## Work with direct method binding
 
-Direct method bindings must be added to the **directMethodBindingSet**. When a direct method message is received from Azure, this set is checked for a matching *methodName* name. When a match is found, the corresponding handler function is called.
+You must add direct method bindings to the `directMethodBindingSet`. When a direct method message is received from Azure, this set is checked for a matching `methodName` name. When a match is found, the corresponding handler function is called.
 
 ```
 LP_DIRECT_METHOD_BINDING* directMethodBindingSet[] = { &resetDevice };
@@ -104,7 +104,7 @@ LP_DIRECT_METHOD_BINDING* directMethodBindingSet[] = { &resetDevice };
 
 ### Opening
 
-Sets are initialized in the **InitPeripheralsAndHandlers** function found in **main.c**.
+Sets are initialized in the `InitPeripheralsAndHandlers` function found in **main.c**.
 
 ```
 lp_openDirectMethodSet(directMethodBindingSet, NELEMS(directMethodBindingSet));
@@ -112,11 +112,11 @@ lp_openDirectMethodSet(directMethodBindingSet, NELEMS(directMethodBindingSet));
 
 ### Dispatching
 
-When a Direct Method message is received, the set is checked for a matching *methodName* name. When a match is found, the corresponding handler function is called.
+When a direct method message is received, the set is checked for a matching `methodName` name. When a match is found, the corresponding handler function is called.
 
 ### Closing
 
-Sets are closed in the **ClosePeripheralsAndHandlers** function found in **main.c**.
+Sets are closed in the `ClosePeripheralsAndHandlers` function found in **main.c**.
 
 ```
 lp_closeDirectMethodSet();

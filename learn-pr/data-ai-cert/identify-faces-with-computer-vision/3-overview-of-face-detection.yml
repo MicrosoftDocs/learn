@@ -3,13 +3,13 @@ uid: learn.data-ai.identify-faces-with-computer-vision.overview-of-face-detectio
 title: Types of facial data
 metadata:
   title: Types of facial data
-  description: Types of facial data
-  ms.date: 01/7/2019
+  description: "Types of facial data"
+  ms.date: 10/14/2020
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
+azureSandbox: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-overview-of-face-detection.md)]
