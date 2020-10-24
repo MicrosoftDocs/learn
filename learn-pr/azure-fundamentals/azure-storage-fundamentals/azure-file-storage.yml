@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-storage-fundamentals.azure-file-storage
-title: File storage fundamentals
+title: Azure Files fundamentals
 metadata:
-  title: File storage fundamentals
-  description: In this unit, you'll learn about Azure File Storage.
+  title: Azure Files fundamentals
+  description: In this unit, you'll learn about Azure Files storage.
   ms.date: 09/14/2020
   author: rmcmurray
   ms.author: robmcm
