@@ -8,6 +8,7 @@ Security analysts at Contoso face a huge triage burden. They deal with a high vo
 - By using a traditional correlation engine
 
 Additionally, the time spent to set up and maintain IT infrastructure takes the security options (SecOps) team away from its security tasks.
+<!-- "options" should be reaplced with "operations". -->
 
 The IT director believes that Azure Sentinel Analytics will help the security analysts perform complex investigations faster and improve their SecOps.
 
