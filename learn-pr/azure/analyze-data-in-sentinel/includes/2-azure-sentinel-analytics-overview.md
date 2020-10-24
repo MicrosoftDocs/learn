@@ -5,6 +5,7 @@ After completing this unit, you can explain the importance of Azure Sentinel Ana
 - Understand the importance of Analytics for security
 - Understand Analytic rules
 - Explore Analytic home page
+<!-- Replace "Analytic" with "Analytics". -->
 
 Azure Sentinel Analytics, helps you to detect, investigate, and remediate threats. With Azure Sentinel Analytics, you can set up analytic rules and queries to detect issues in your environment.
 
