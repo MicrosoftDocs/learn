@@ -23,6 +23,7 @@ Some common attack detection scenarios enabled with Fusion:
 - **Data exfiltration** - Suspicious activity detected, suspicious forwarding rule in Office 365 mailbox, after a suspicious sign-in to Azure AD account can indicate compromised user&#39;s account.
 - **Data destruction** – Anomalous number of unique files that were deleted after a suspicious sign-in to Azure AD account can signal compromised user&#39;s account and was used to destroy data.
 - **Denial of service** – Significant number of Azure Virtual Machines (VM) were deleted after a suspicious sign-in to Azure AD account can signal compromised user&#39;s account and is used to destroy organization&#39;s asset.
+<!-- Replace "(VM)" with "(VMs)". -->
 - **Lateral movement** – Significant number of impersonation actions occurred, after a suspicious sign-in to Azure AD account indicates compromised user&#39;s account and was used for malicious purposes.
 - **Ransomware** – After a suspicious sign-in to Azure AD account, unusual user behavior used to encrypt data can trigger ransomware execution alert
 
