@@ -26,7 +26,7 @@ quiz:
     - content: Table level RBAC
       isCorrect: false
       explanation: Provides a mechanism to define more granular data control inside a Log Analytics workspace in conjunction with other access mode permissions.
-  - content: 'What does VMInsights provide?'
+  - content: 'What does Virtual Machine Insights provide?'
     choices:
     - content: Provides insight into operations performed on Azure resources.
       isCorrect: false

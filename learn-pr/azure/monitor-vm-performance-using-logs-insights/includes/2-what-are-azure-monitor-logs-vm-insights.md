@@ -12,7 +12,7 @@ Data collected by Azure Monitor is composed of metrics (Azure Monitor Metrics) a
 
 The following image shows how applications, resources, workloads, tenant data, and custom sources funnel into Azure Monitor (either metrics or logs). Once the data lives in metrics or logs, there are a number of different ways to visualize, analyze, respond, integrate, and view overall resource health.
 
-:::image type="content" source="../media/2-azure-monitor-overview.png" alt-text="Diagram that shows Azure inputs to metrics and log data, along with the Azure Monitor tools you can use to consume data.":::
+:::image type="icon" source="../media/2-azure-monitor-overview.png" border="false" alt-text="Diagram that shows Azure resources generating data into metrics and logs, along with the Azure Monitor tooling you can use to consume data.":::
 
 ## But wait, there's **MORE** logging
 
@@ -20,9 +20,9 @@ In addition to logs and metrics, Azure resources also emit Azure platform logs a
 
 ## Plan a Log Analytics workspace deployment
 
-One of the tasks involved with a Log Analytics deployment is picking the right design. Log Analytics workspaces are containers where Azure Monitor data is collected, aggregated, and analyzed. To better understand Log Analytics workspaces, the following diagram provides more insight into all the different types of logs that can be ingested. Everything from Event logs, to Syslogs, to Heartbeats, and so on. Then there are Azure Resources that can send platform logs and Azure Activity logs to the workspace as well.
+One of the tasks involved with a Log Analytics deployment is picking the right design. Log Analytics workspaces are containers where Azure Monitor data is collected, aggregated, and analyzed. To better understand Log Analytics workspaces, the following diagram provides more insight into all the different types of logs that can be ingested. Everything from Event logs, to Syslogs, to Heartbeats, and so on. Then there are Azure Resources that can send platform logs, Azure Activity logs to the workspace as well.
 
-![Log Analytics Diagram](https://docs.microsoft.com/azure/azure-monitor/platform/media/design-logs-deployment/logs-data-model-01.png)
+:::image type="icon" source="../media/2-loganalytics-other-tables.png" border="false" alt-text="Diagram that shows how a Log Analytics workspace encompasses different types of logs from virtual machines and Azure resources: Events, Syslog, Heartbeat, etc.":::
 
 A number of Azure features help Log Analytics workspace adoption within enterprises. Log Analytics workspaces now provide different levels of access control for the collected logs.
 
