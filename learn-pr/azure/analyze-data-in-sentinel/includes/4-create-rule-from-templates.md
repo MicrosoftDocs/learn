@@ -8,14 +8,20 @@ By selecting one of the rules in the **Rule Template** tab, you can observe the 
 
 - Severity level – Indicates the importance of the alert. There are 4 severity levels,
   - High,
+  <!-- Remove comma at the end. -->
   - Medium,
+   <!-- Remove comma at the end. -->
   - Low,
+   <!-- Remove comma at the end. -->
   - Informational
 - Name of the rule – Provide meaningful name of the alert rule
 - Rule type – Define the type of the rule:
   - Fusion,
+   <!-- Remove comma at the end. -->
   - Microsoft Security,
+   <!-- Remove comma at the end. -->
   - ML Behavior Analytics,
+   <!-- Remove comma at the end. -->
   - Scheduled
 - Data Source – Specify the data source connector that generate the alert
 - Tactics – Specify techniques and methodologies in MITRE ATT&amp;CK model used by different kinds of malware
@@ -31,6 +37,8 @@ Details pane of selected rule is displayed right of the listing and provide more
 When you select a predefined rule template, in the detailed pane, you will have a button **Create rule.** By clicking this button, you start the creation of the analytic rule from that template. The composition of the analytic rules from template depends on the rule type that you select.
 
 Alert rule is created by default using Fusion rule template, and for MS Behavior Analytics, you can only create the rule as enabled or disabled, without the possibility to further customize.
+<!-- What do you mean by "MS Behavior Analytics"? Are you refering to User and Entity Behavior Analytics (UEBA)? If so you can replace it with that OR you can keep generic by using "behavior analytics". Consider this a GLOBAL comment that applies for "ML behavior analytics" too.  -->
+
 
 Creation of the rule from Microsoft security templates consist of the following elements:
 
