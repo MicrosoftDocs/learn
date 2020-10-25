@@ -34,9 +34,9 @@ If you run the code, you'll see the following output.
 
 ```output
 Floating point types:
-float  : -3.402823E+38 to 3.402823E+38
-double : -1.79769313486232E+308 to 1.79769313486232E+308
-decimal: -79228162514264337593543950335 to 79228162514264337593543950335
+float  : -3.402823E+38 to 3.402823E+38 (with ~6-9 digits of precision)
+double : -1.79769313486232E+308 to 1.79769313486232E+308 (with ~15-17 digits of precision)
+decimal: -79228162514264337593543950335 to 79228162514264337593543950335 (with 28-29 digits of precision)
 ```
 
 As you can see, `float` and `double` use a different notation than `decimal` to represent it's largest and smallest possible values.  But what does this notation mean?
