@@ -234,6 +234,6 @@ Both values do NOT pass the test
 
 ## Recap
 
-- Use the `bool()` function to convert strings and integers to Boolean values. Non-empty strings convert to `True` and non-zero numbers convert to `True`. The string value `'False'` and empty strings convert to `False`. The value `0` converts to `False`.
+- Use the `bool()` function to convert strings and integers to Boolean values. Non-empty strings convert to `True` and non-zero numbers convert to `True`. Empty strings convert to `False`. The value `0` converts to `False`.
 - Python provides several comparison operators to test for equality, inequality, and greater or less than.
 - Python also provides several logical operators to ensure one or both Boolean expressions are `True`. It also provides the `not` operator to ensure Boolean expressions evaluate to `False`.
