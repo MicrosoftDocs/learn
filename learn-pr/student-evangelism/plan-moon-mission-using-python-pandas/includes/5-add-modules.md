@@ -37,7 +37,7 @@ missions['LM Mass Diff'] = missions['LM Mass Diff'].fillna(value=0)
 
 missions['Command Module (CM)'] = {'Columbia (CSM-107)', 'Yankee Clipper (CM-108)', 'Kitty Hawk (CM-110)', 'Endeavor (CM-112)', 'Casper (CM-113)', 'America (CM-114)'}
 missions['CM Mass (kg)'] = {5560, 5609, 5758, 5875, 5840, 5960}
-missions['CM Mass Diff'] = missions['CM Mass (kg))'].diff()
+missions['CM Mass Diff'] = missions['CM Mass (kg)'].diff()
 missions['CM Mass Diff'] = missions['CM Mass Diff'].fillna(value=0)
 
 missions
@@ -55,7 +55,7 @@ missions
 We can add some totals for each mission across both the lunar and command modules:
 
 ```python
-missions['Total Weight (kg)'] = missions['LM Mass (kg)'] + missions['CM Mass (kg))']
+missions['Total Weight (kg)'] = missions['LM Mass (kg)'] + missions['CM Mass (kg)']
 missions['Total Weight Diff'] = missions['LM Mass Diff'] + missions['CM Mass Diff']
 missions
 ```

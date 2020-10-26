@@ -4,7 +4,7 @@ Azure Cognitive Services is a set of more than 20 services and APIs for infusing
 - Generate captions for the images (for example, "A woman riding a bicycle").
 - Use optical character recognition (OCR) to extract text from the images.
 - Find faces in the images and identify attributes of the faces, such as age and gender.
-- Generate "smart thumbnails" centered on the subjects of the images. 
+- Generate "smart thumbnails" centered on the subjects of the images.
 - Recognize famous people and landmarks in the images.
 
 Like all Cognitive Services APIs, the Computer Vision API is invoked by placing calls over the internet to a REST endpoint. Rather than place those calls directly, you can use the Python SDK for the Computer Vision API to simplify your code. The SDK abstracts calls to the Computer Vision API and handles JSON payloads so you don't have to write code to generate and consume JSON.
@@ -53,7 +53,7 @@ You can obtain a Computer Vision API key by using the Azure CLI or the Azure por
 
     Once more, save the URL output from the command in a text file so you can easily retrieve it later. This URL is the one that you will use to call the Computer Vision API.
 
-The choice of North Central US as the region for your Computer Vision API resource *and* the resource group that holds it isn't arbitrary. You can locate a resource group and its resources in any of the more than 50 regions that Azure supports. However, it's desirable to locate all the resources that compose a resource group in the same region in order to minimize cost and maximize performance. 
+The choice of North Central US as the region for your Computer Vision API resource *and* the resource group that holds it isn't arbitrary. You can locate a resource group and its resources in any of the more than 50 regions that Azure supports. However, it's desirable to locate all the resources that compose a resource group in the same region in order to minimize cost and maximize performance.
 
 The Computer Vision API isn't supported in all regions, but it is supported in North Central US. For a list of regions in which Cognitive Services is available, refer to [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services).
 
@@ -153,7 +153,7 @@ You have now subscribed to the Computer Vision API and obtained an endpoint and 
         {% if messages %}
             <script type="text/javascript">
                 // If flash messages are queued up, show them in a modal dialog box
-                var messages = {{ messages | safe }};
+                let messages = {{ messages | safe }};
                 body = $(".modal-body");
                 body.empty();
 

@@ -1,10 +1,10 @@
-Azure Site Recovery automates the setup of recovery from one region to another. The setup process will install the Mobility Service on to the VMs, create the required infrastructure in the recovery region, and give us a way to monitor the progress.
+Azure Site Recovery automates the setup of recovery from one region to another. The setup process will install the Mobility Service on to the VMs, create the required infrastructure in the recovery region, and give you a way to monitor the progress.
 
-We currently have two virtual machines running the companies patient and employee systems. These systems are running in the West US region. You've been asked to protect the infrastructure by enabling it to be recovered to the East US region. Using Azure Site Recovery, you'll enable a Recovery Services vault to replicate the current workloads.
+Currently, two virtual machines are running the company's patient and employee systems. These systems are running in the West US region. You've been asked to protect the infrastructure by enabling it to be recovered to the East US region. Using Azure Site Recovery, you'll enable a Recovery Services vault to replicate the current workloads.
 
 ![Image showing the current Azure infrastructure and what will be set up by Azure Site Recovery](../media/4-environment.svg)
 
-In this exercise, we'll complete the setup of Azure Site Recovery using the portal.
+In this exercise, you'll complete the setup of Azure Site Recovery using the Azure portal.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions to understand how to use backup virtual machines with Azure Backup.
