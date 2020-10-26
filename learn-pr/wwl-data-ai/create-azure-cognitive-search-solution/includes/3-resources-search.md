@@ -37,7 +37,7 @@ A script containing Azure command-line interface (CLI) commands to create these 
 1. In Visual Studio Code, right-click (Ctrl+click if using a Mac) the **01-Create-a-search-solution** folder and select **Open in Integrated Terminal**. This will open a new bash terminal pane.
 
     > [!TIP]
-    > You're going to open multiple terminal sessions during this module, each associated with a folder. They'll all be available in the same **Terminal** pane, and you can switch between them using the drop-down list (which will currently just include the *bash* terminal you just opened for the **01-Create-a-search-solution** folder.).
+    > You're going to open multiple terminal sessions during this module, each associated with a folder. They'll all be available in the same **Terminal** pane, and you can switch between them using the drop-down list (which will currently include the *bash* terminal you just opened for the **01-Create-a-search-solution** folder.).
 
 2. In the terminal pane, enter the following command to establish an authenticated connection to your Azure subscription.
 
