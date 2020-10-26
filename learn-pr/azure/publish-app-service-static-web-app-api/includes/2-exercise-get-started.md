@@ -111,11 +111,15 @@ Click the link to browse to your application.
 
 Browse to `http://localhost:4200`.
 
+:::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="Screenshot of browsing to your Angular web app":::
+
 ::: zone-end
 
 ::: zone pivot="react"
 
 Browse to `http://localhost:3000`.
+
+:::image type="content" source="../media/my-shopping-list-app-react.png" alt-text="Screenshot of browsing to your React web app":::
 
 ::: zone-end
 
@@ -123,15 +127,17 @@ Browse to `http://localhost:3000`.
 
 Browse to `http://localhost:5000`.
 
+:::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="Screenshot of browsing to your Svelte web app":::
+
 ::: zone-end
 
 ::: zone pivot="vue"
 
 Browse to `http://localhost:8080`.
 
-::: zone-end
+:::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="Screenshot of browsing to your Vue web app":::
 
-:::image type="content" source="../media/my-shopping-list-app.png" alt-text="Browsing to your web app":::
+::: zone-end
 
 > [!NOTE]
 > In this module's exercises, you will deploy an app without an API. See the Next Steps section in the final unit for information about the next tutorial, where you'll deploy an API alongside your app.

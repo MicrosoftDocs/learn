@@ -6,7 +6,7 @@ The ability to synthesize text to speech output will require that your computer 
 The SpeechConfig configuration object accepts your Speech service key and region for authorization.  You can also use the SpeechConfig object to change how your speech synthesis works.  For example, the default voice will be used for speaking unless you modify the SpeechConfig object.  You can do so by providing a voice name for the SpeechConfig object as shown here:
 
 ```python
-speech_config_obj = speech_synthesis_voice_name = "en-CA-Linda"
+speech_config_obj.speech_synthesis_voice_name = "en-CA-Linda"
 ```
 
 ```csharp

@@ -3,7 +3,7 @@ uid: learn.wwl.recognize-entities-text-analytics-api
 metadata:
   title: Recognize entities in text with the text analytics API
   description: "Identify and categorize entities in your text as people, places, organizations, date/time, quantities, percentages, currencies, and more."
-  ms.date: 09/27/2020
+  ms.date: 10/15/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   * Structure and Submit the Request
 prerequisites: |
   - Knowledge of navigating the Azure portal
-  - Knowledge of at least one programming language such as C#, Python, or JavaScript
+  - Knowledge of at least one programming language such as C# or Python
   - Basic understanding of REST APIs and JSON
 iconUrl: /learn/achievements/recognize-entities-in-text-with-the-text-analytics-api.svg
 levels:

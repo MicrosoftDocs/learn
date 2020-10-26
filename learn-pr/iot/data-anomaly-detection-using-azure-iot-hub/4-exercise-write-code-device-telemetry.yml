@@ -5,7 +5,7 @@ metadata:
   description: Create a C# app for an IoT device. The app simulates conveyor belt vibration, and sends telemetry messages.
   ms.date: 11/26/2019
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: vsandcode
