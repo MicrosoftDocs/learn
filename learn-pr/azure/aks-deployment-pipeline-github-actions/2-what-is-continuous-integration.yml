@@ -19,18 +19,18 @@ quiz:
       choices:
         - content: "CI is related to integration and testing and CD is related to packaging and deployment."
           isCorrect: true
-          explanation: "Yes, although CI is related to the integration of a team's code, CD is more related to the packaging and deployment of the code."
+          explanation: "Correct. Allthough CI is related to the integration of a team's code, CD is more related to the packaging and deployment of the code."
         - content: "There's no difference between them. CI and CD are two names for the same practice."
           isCorrect: false
           explanation: "Despite the difference being small, it's possible to have CI without CD and CD without CI. So, they can't be considered the same."
         - content: "CI is related to the people who build the code and CD is related to tooling."
           isCorrect: false
-          explanation: "Both concepts focus on tooling (both are related only indirectly to people)."
+          explanation: "Incorrect. Both concepts focus on tooling (and both are related only indirectly to people)."
     - content: "What is a CI pipeline?"
       choices:
         - content: "The file that contains instructions for running automated tasks."
           isCorrect: false
-          explanation: "The CI pipeline is composed of those files, but these files aren't the definition of a CI pipeline itself."
+          explanation: "The CI pipeline is composed of those files, but it's not the definition of a CI pipeline."
         - content: "The act of running a specific set of automated tasks."
           isCorrect: false
           explanation: "Running a specific set of tasks is the action, but it's not the definition of a CI pipeline."

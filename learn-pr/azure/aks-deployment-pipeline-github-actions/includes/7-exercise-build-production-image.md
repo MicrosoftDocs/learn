@@ -6,9 +6,9 @@ You'll build the tagged version by using a different workflow.
 
 ## Build the Action workflow
 
-1. To start building the pipeline, go to the fork of the sample repository in the GitHub website and select the **Actions** tab.
+1. To start building the pipeline, go to the fork of the sample repository in the GitHub website. Select the **Actions** tab.
 
-1. Below the header, select **set up a workflow yourself**:
+1. Below the header, select **set up a workflow yourself**
 
     :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Screenshot that shows the Get started with GitHub Actions page and the Set up a workflow yourself link on the GitHub website.":::
 
@@ -50,7 +50,7 @@ You'll build the tagged version by using a different workflow.
               echo test, and deploy your project.
     ```
 
-1. Rename the file from `main.yml` to `build-production.yml` by typing on the top input panel.
+1. Above the **Edit new file** pane, rename the file from `main.yml` to `build-production.yml`.
 
     :::image type="content" source="../media/6-2-example-editor.png" alt-text="Screenshot that shows an example file being edited in the Edit new file pane on the GitHub website.":::
 
@@ -123,7 +123,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     :::image type="content" source="../media/6-3-docker-action.png" alt-text="Screenshot that shows the search results that list Build and push Docker images.":::
 
-    In the opened panel, select the copy icon to copy the usage YAML.
+    In the panel for the search result item, select the copy icon to copy the usage YAML.
 
     :::image type="content" source="../media/6-4-docker-copy.png" alt-text="Screenshot that shows the copy icon selected in the Build and push Docker images pane.":::
 
@@ -149,15 +149,15 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
             # uses: docker/build-push-action@ab83648e2e224cfeeab899e23b639660765c3a89
             uses: docker/build-push-action@v1.1.1
             with:
-              # Username used to log in to a Docker registry. If not set, no login will occur
+              # Username used to log in to a Docker registry. If not set, no login occurs
               username: # optional
-              # Password or personal access token used to log in to a Docker registry. If not set, no login will occur
+              # Password or personal access token used to log in to a Docker registry. If not set, no login occurs
               password: # optional
-              # Server address of Docker registry. If not set, will default to Docker Hub
+              # Server address of Docker registry. If not set, defaults to Docker Hub
               registry: # optional
               # Docker repository to tag the image with
               repository:
-              # Comma-delimited list of tags. These will be added to the registry/repository to form the image's tags
+              # Comma-delimited list of tags. These are added to the registry/repository to form the image's tags
               tags: # optional
               # Automatically tags the built image with the Git reference as per the readme
               tag_with_ref: # optional
@@ -241,7 +241,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
     >
     > For git tags, the reference will be `refs/tags/{git-tag}` and the tag will be `{git-tag}`.
 
-1. To commit the changes, select the green **Start commit** button at the top right. Enter a description for the commit, and then select the **Commit new file** button:.
+1. To commit the changes, select the green **Start commit** button at the top right. Enter a description for the commit, and then select the **Commit new file** button.
 
     This time, the action won't be triggered because you didn't push a new tag. But our earlier action triggers and builds a new `latest` image.
 

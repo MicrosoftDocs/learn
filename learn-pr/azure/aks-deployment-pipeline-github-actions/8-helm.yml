@@ -17,13 +17,13 @@ quiz:
   questions:
     - content: "What is Helm?"
       choices:
-        - content: "An open-source tool hosted by CNCF that helps developers deploy and maintain Kubernetes-ready applications."
+        - content: "An open-source tool that helps developers deploy and maintain Kubernetes-ready applications."
           isCorrect: true
           explanation: "Correct. Helm is one of the most useful tools in the Kubernetes toolchain."
         - content: "A CI tool that helps you build and deploy Docker containers."
           isCorrect: false
           explanation: "Despite being used in CI/CD pipelines, Helm is not related to Docker images."
-        - content: "A different implementation of a Kubernetes cluster, which aims to facilitate the use of the CLI."
+        - content: "A different implementation of a Kubernetes cluster, and which aims to facilitate the use of the CLI."
           isCorrect: false
           explanation: "Helm isn't a different implementation of Kubernetes."
 
@@ -35,6 +35,6 @@ quiz:
         - content: "Helm allows us to better version our Kubernetes' manifest YAML files."
           isCorrect: false
           explanation: "You can version your Kubernetes' manifest YAML files without Helm, too."
-        - content: "Because Helm provides several features that aren't included in Kubernetes templates, including templating."
+        - content: "Helm provides several features that aren't included in Kubernetes templates, including templating."
           isCorrect: true
           explanation: "Correct. Beyond offering additional features like templating, Helm allows one-click deployment and provides a CLI to resolve chart dependencies, thus reducing the number of steps needed to deploy a Kubernetes application."

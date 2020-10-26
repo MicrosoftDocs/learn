@@ -8,13 +8,11 @@ You'll build this pipeline by using the GitHub Actions workflow.
 
 ## Build the Actions workflow
 
-1. To start building your pipeline, go to the fork of the sample repository in the GitHub website. Select the **Actions** tab:
+1. To start building your pipeline, go to the fork of the sample repository in the GitHub website. Select the **Actions** tab.
+
+1. Below the header, select **set up a workflow yourself**
 
     :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Screenshot that shows the Get started with GitHub Actions page on the GitHub website.":::
-
-1. Below the header, select **set up a workflow yourself**:
-
-    :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Screenshot that shows the Get started with GitHub Actions page and the Set up a workflow yourself link on the GitHub website.":::
 
     At this point, the pipeline is just a file in the .github/workflows directory in your repository. GitHub provides you with the prebuilt components that you need to build most of the pipelines. You'll have a workflow file that looks like this example:
 
@@ -54,7 +52,7 @@ You'll build this pipeline by using the GitHub Actions workflow.
               echo test, and deploy your project.
     ```
 
-1. Rename the file from `main.yml` to `build-production.yml` by typing on the top input panel.
+1. Above the **Edit new file** pane, rename the file from `main.yml` to `build-staging.yml`.
 
     :::image type="content" source="../media/6-2-example-editor.png" alt-text="Screenshot that shows an example file being edited in the Edit new file pane on the GitHub website.":::
 
@@ -70,15 +68,15 @@ You'll build this pipeline by using the GitHub Actions workflow.
 
 ### Create the trigger
 
-1. Change the default triggers in the `on` key.
-
     The default file comes with two triggers:
 
     * Any push to the main branch.
 
     * Any pull request on the main branch.
 
-    Remove the second trigger and leave only the `push` tags. 
+1. Change the default triggers in the `on` key.
+
+1. Remove the second trigger and leave only the `push` tags. 
     
     The keys should look like this example:
 
@@ -96,7 +94,7 @@ You'll build this pipeline by using the GitHub Actions workflow.
 
 Let's work on the jobs you're going to run. In this process, you address both the build steps and the deploy steps that are shown in the pipeline design diagram.
 
-GitHub workflows are divided into jobs. Jobs are divided into steps. Each step can have multiple commands and use multiple actions to be executed.
+GitHub workflows are divided into jobs, and jobs are divided into steps. Each step can have multiple commands and use multiple actions to be executed.
 
 The `jobs` key is already set to run on `ubuntu-latest`, which is the environment where you want this workflow to run.
 
@@ -154,15 +152,15 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
             # uses: docker/build-push-action@ab83648e2e224cfeeab899e23b639660765c3a89
             uses: docker/build-push-action@v1.1.1
             with:
-              # Username used to log in to a Docker registry. If not set, no login will occur
+              # Username used to log in to a Docker registry. If not set, no login occurs
               username: # optional
-              # Password or personal access token used to log in to a Docker registry. If not set, no login will occur
+              # Password or personal access token used to log in to a Docker registry. If not set, no login occurs
               password: # optional
-              # Server address of Docker registry. If not set, login will default to Docker Hub
+              # Server address of Docker registry. If not set, login defaults to Docker Hub
               registry: # optional
               # Docker repository to tag the image with
               repository:
-              # Comma-delimited list of tags. These will be added to the registry/repository to form the image's tags
+              # Comma-delimited list of tags. These are added to the registry/repository to form the image's tags
               tags: # optional
               # Automatically tags the built image with the Git reference as per the readme
               tag_with_ref: # optional

@@ -1,4 +1,4 @@
-Let's set up the environment to deploy a helm chart to AKS using GitHub Actions.
+Let's set up the environment to deploy a helm chart to AKS by using GitHub Actions.
 
 ## Check Helm installation
 
@@ -8,10 +8,10 @@ Let's set up the environment to deploy a helm chart to AKS using GitHub Actions.
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
     > [!IMPORTANT]
-    > We'll run all the scripts with Bash, so if you haven't created a Cloud Shell yet, select "Bash" as the running shell.
+    > We'll run all the scripts with Bash. If you haven't created a Cloud Shell yet, select **Bash** as the running shell.
 
-1. Run `helm version` and check if the displayed version is greater than 3.
-1. Next, pull the changes you've made to the CI workflow in the previous sections using
+1. Run `helm version` and check whether the displayed version is greater than **3**.
+1. Pull the changes you've made to the CI workflow in the preceding units by running this command:
 
     ```bash
     git pull origin main
@@ -20,21 +20,21 @@ Let's set up the environment to deploy a helm chart to AKS using GitHub Actions.
 ## Create a chart
 
 1. `cd` to the repository you forked, and then `cd` to the kubernetes directory.
-1. In this directory, run the following command
+1. In this directory, run the following command:
 
     ```bash
     helm create contoso-website
     ```
 
-1. This command should create a new directory called `contoso-website` in the `kubernetes` directory
-1. `cd` into the new directory and delete the `charts` and `templates` folders
-1. Create a new empty `templates` folder using the following command
+1. The command should create a new directory called `contoso-website` in the `kubernetes` directory.
+1. `cd` into the new directory, and then delete the `charts` and `templates` folders.
+1. Create a new empty `templates` folder by using the following command:
 
     ```bash
     mkdir templates
     ```
 
-    Right now, you have created an empty chart. To start building the workloads, you'll leverage what others have already built, which means that you'll use the `yaml` files that lie outside of this new directory you created.
+    Right now, you have created an empty chart. To start building the workloads, you'll use what others have already built. You'll use YAML files that currently aren't in the new directory you created.
 
 1. Move the old `kubernetes` files to the `templates` folder.
 
@@ -80,7 +80,7 @@ Completing these steps is all it takes to create a chart. Now, let's configure i
     appVersion: 1.16.0
     ```
 
-    Remove all the comments and unused keys, leaving only the required options. Edit them to look like this example:
+    Remove all the comments and unused keys. Leave only the required options. Edit them to look like this example:
 
     ```yaml
     apiVersion: v2
@@ -93,13 +93,13 @@ Completing these steps is all it takes to create a chart. Now, let's configure i
 
 ## Configure the chart template files
 
-In this section, you'll go through each of the template files to set them up and add templating to them.
+In this section, you go through each of the template files to set them up and add templating to them.
 
-### Create a Deployment
+### Create a deployment
 
-1. Open the `kubernetes` folder in the left-hand side and navigate until you find the `deployment.yaml` file within the `templates` folder you just moved and  it
+1. In the left menu, open the **kubernetes** folder and find the deployment.yaml file in the templates folder you just moved.
 
-    In the opened file you should have a YAML like this:
+    The file should look like this example:
 
     ```yaml
     apiVersion: apps/v1
@@ -130,9 +130,9 @@ In this section, you'll go through each of the template files to set them up and
                   name: http
     ```
 
-    Let's add templating for this deployment, starting by the `namespace` and `name` keys.
+    Let's add templating for this deployment, starting with the `namespace` and `name` keys.
 
-1. Add a new key within the `metadata` section called `namespace` with the following configuration
+1. Add a new key in the `metadata` section called `namespace` with the following configuration
 
     ```yaml
     apiVersion: apps/v1
