@@ -122,60 +122,18 @@ So let's begin with the details.
         }
         ```
 
-### Use the featureFlag directive in the views
+1. To add the `featureFlag` directive to the views, run the following script:
 
-Using the directive makes it clear and easy-to-use it in the views, as shown in the next HTML fragment:
+    ```bash
+    deploy/k8s/implement-directive.sh
+    ```
 
-File: *src\Web\WebSPA\Client\src\modules\orders\orders-new\orders-new.component.html*:
+    The preceding script uses the Linux `sed` command to modify two Angular views. The `*featureFlag="'coupons'"` attribute is added to the subtotal and discount code `div` elements in *orders-detail.component.html* and *orders-new.component.html* in *~/clouddrive/aspnet-learn/src/src/Web/WebSPA/Client/src/modules/orders*. The relevant portions of *orders-new.component.html* are highlighted below.
 
-```html
-<div class="container">
-    .../...
-    <form [formGroup]="newOrderForm" (ngSubmit)="submitForm(newOrderForm.value)">
-        <section class="u-background-brightest p-5">
-            <h2 class="mb-4">Shipping Address</h2>
-            .../...
-            <div *featureFlag="'coupons'" class="d-flex align-items-center justify-content-end mt-4 mb-4 text-uppercase">
-                <div>Subtotal</div>
-                <div class="ml-3">${{order.total | number:'.2-2'}}</div>
-            </div>
+    :::code language="html" source="../code/src/web/webspa/client/src/modules/orders/orders-new/orders-new.component.html" highlight="1,6":::
 
-            <div *featureFlag="'coupons'" class="d-flex flex-nowrap justify-content-between align-items-center mb-3 mt-3">
-                <div>
-                    .../...
-                </div>
-                .../...
-            </div>
-            .../...
-        </section>
-    </form>
-</div>
-```
-
-In the preceding view fragment, you can easily identify the `div` elements with the `*featureFlag="'coupons'"` directive that will have them rendered or not depending on the `coupons` value.
-
-Something similar occurs in the *src\Web\WebSPA\Client\src\modules\orders\orders-detail\orders-detail.component.html* file:
-
-```html
-<div class="esh-orders_detail">
-    <div class="container">
-        <h1 class="mb-4 mt-5">[ Order List Detail ]</h1>
-        <div class="u-background-brightest p-5">
-            .../...
-            <div *featureFlag="'coupons'" class="d-flex align-items-center justify-content-end mt-4 mb-4 text-uppercase">
-                <div>Subtotal</div>
-                <div class="ml-3">${{order.subtotal | number:'.2-2'}}</div>
-            </div>
-
-            <div *featureFlag="'coupons'" class="d-flex align-items-center justify-content-end mt-4 mb-4 text-uppercase">
-                <div>{{order.coupon}}</div>
-                <div class="ml-3">- ${{order.discount | number:'.2-2'}}</div>
-            </div>
-            .../...
-        </div>
-    </div>
-</div>
-```
+    > [!NOTE]
+    > The implementation of Angular-specific functionality in this module has been scripted to maintain focus on .NET details.
 
 ## Deploy the SPA to your AKS cluster
 
@@ -351,10 +309,24 @@ So all that's left for you to do is redeploy the SPA and check out if this works
     deploy/k8s/build-to-acr.sh --services webspa
     ```
 
+    The following excerpt from the command's output confirms that the image was pushed to ACR:
+
+    ```console
+    2020/10/26 23:26:50 Successfully pushed image: eshoplearn20201026204439872.azurecr.io/webspa:linux-latest
+    ```
+
 1. Run the following script to deploy to AKS:
 
     ```bash
     deploy/k8s/deploy-application.sh --charts webspa
+    ```
+
+    The preceding command executes `kubectl get pods`. The following excerpt confirms that the *WebSPA* app's container is starting:
+
+    ```console
+    NAME                              READY   STATUS              RESTARTS   AGE
+    webspa-777655c48d-kv982           0/1     Terminating         0          118m
+    webspa-777655c48d-r9469           0/1     ContainerCreating   0          1s
     ```
 
 ## Test the feature toggle
