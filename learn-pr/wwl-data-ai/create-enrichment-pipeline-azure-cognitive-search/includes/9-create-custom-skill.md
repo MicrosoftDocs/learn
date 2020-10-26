@@ -379,8 +379,7 @@ To implement your custom skill, you'll create an Azure Function in your preferre
             return func.HttpResponse(body=json.dumps(result), mimetype="application/json", status_code=statuscode)
     ```
 
-5. Refresh the web page to reload the Visual Studio Codespace (*This is required to ensure the function deploys correctly*)
-6. After the page has refreshed, right-click (Ctrl+click on a Mac) the **custom-skill** folder and select **Deploy to Function App**. Then deploy the function with the following settings:
+5. After the page has refreshed, right-click (Ctrl+click on a Mac) the **custom-skill** folder and select **Deploy to Function App**. Then deploy the function with the following settings:
     - **Subscription** (if prompted): Select your Azure subscription.
     - **Function**: Create a new Function App in Azure (Advanced)
     - **Function App Name**: Enter a globally unique name.
@@ -389,11 +388,11 @@ To implement your custom skill, you'll create an Azure Function in your preferre
     - **Resource group**: Select the existing resource group containing your Cognitive Search, Storage, and Cognitive Services resources (its name will be similar to *rg1234abcd5678efgh*).
     - **Storage account**: Select your existing storage account (its name will be similar to *store1234abcd5678efgh*).
     - **Application Insights**: Skip for now
-7. Wait for your function app to be created. You can view the **Output Window** to monitor its status.
-8. Open the [Azure portal](https://portal.azure.com), and browse to the resource group where you created the function app. Then open the app service for your function app.
-9. In the blade for your app service, on the **Functions** page, open the **wordcount** function.
-10. On the **wordcount** function blade, view the **Code + Test** page and open the **Test/Run** pane.
-11. In the **Test/Run** pane, replace the existing **Body** with the following JSON, which reflects the schema expected by an Azure Cognitive Search skill in which records containing data for one or more documents are submitted for processing:
+6. Wait for your function app to be created. You can view the **Output Window** to monitor its status.
+7. Open the [Azure portal](https://portal.azure.com), and browse to the resource group where you created the function app. Then open the app service for your function app.
+8. In the blade for your app service, on the **Functions** page, open the **wordcount** function.
+9. On the **wordcount** function blade, view the **Code + Test** page and open the **Test/Run** pane.
+10. In the **Test/Run** pane, replace the existing **Body** with the following JSON, which reflects the schema expected by an Azure Cognitive Search skill in which records containing data for one or more documents are submitted for processing:
 
     ```json
     {
@@ -418,7 +417,7 @@ To implement your custom skill, you'll create an Azure Function in your preferre
     }
     ```
 
-12. Click **Run** and view the HTTP response content that is returned by your function. This reflects the schema expected by Azure Cognitive Search when consuming a skill, in which a response for each document is returned. In this case, the response consists of up to 10 terms in each document in descending order of how frequently they appear:
+11. Click **Run** and view the HTTP response content that is returned by your function. This reflects the schema expected by Azure Cognitive Search when consuming a skill, in which a response for each document is returned. In this case, the response consists of up to 10 terms in each document in descending order of how frequently they appear:
 
     ```text
     {
@@ -457,7 +456,7 @@ To implement your custom skill, you'll create an Azure Function in your preferre
     ]
     }
     ```
-13. Close the **Test/Run** pane and in the **wordcount** function blade, click **Get function URL**. Then copy the URL for the default key to the clipboard. You'll need this in the next unit.
+12. Close the **Test/Run** pane and in the **wordcount** function blade, click **Get function URL**. Then copy the URL for the default key to the clipboard. You'll need this in the next unit.
 
 :::zone-end
 
