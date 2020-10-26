@@ -3,13 +3,13 @@ uid: learn.languages.dotnet-introduction.what-is-dotnet
 title: What is .NET?
 metadata:
   title: What is .NET?
-  description: Begin your software development journey by learning one of the most popular programming languages.
+  description: A comprehensive overview of the .NET ecosystem, tools, technologies, processes and more.
   ms.date: 10/12/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 7
 azureSandbox: false
 content: |
   [!include[](includes/2-what-is-dotnet.md)]

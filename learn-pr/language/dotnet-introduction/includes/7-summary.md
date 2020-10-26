@@ -1,17 +1,17 @@
-Our goal in this module was to introduce .NET and help you begin understanding what it is, what are the major facets of the .NET ecosystem, the work flow that developers use and the tools they employ to build applications based on .NET, and the scenarios where .NET makes sense.  We also build a simple Hello World application just to illustrate the workflow and how the different components of .NET work together to build even the most simple application.
+Our goal in this module was to introduce .NET and help you begin understanding what it is, what are the major facets of the .NET ecosystem, the workflow that developers use, the tools they rely on to build applications, and the scenarios where .NET makes sense. We also built a simple "Hello World" application just to illustrate the workflow and how the different components of .NET work together to build even the most simple application.
 
 ## Resources
 
-If you want to start with a graphical user interface that will help you build applications with C#, download and install Visual Studio 2019.  As we said earlier in the module, note that the installation proces can take a while and require a lot of internet bandwidth.
+If you want to start with a graphical user interface that will help you build applications with C#, download and install Visual Studio 2019.  As we said earlier in the module, the installation process can take a while and require a lot of internet bandwidth.
 
 [Download Visual Studio 2019](https://visualstudio.microsoft.com/vs/?azure-portal=true)
 
 > [!NOTE]
 > If you're not already a (paid) licensed user of Visual Studio, you should download the **Community Edition** which has all of the features you need as you're just getting started.
 
-If you want to start with a command line interface, download and install both the .NET Core SDK and Visual Studio Code.
+If you want to start with a command-line interface, download and install both the .NET SDK and Visual Studio Code.
 
-[Download the .NET Core SDK](https://dotnet.microsoft.com/download?azure-portal=true)
+[Download the .NET SDK](https://dotnet.microsoft.com/download?azure-portal=true)
 
 Make sure you:
 - Select the column of links under **.NET Core**

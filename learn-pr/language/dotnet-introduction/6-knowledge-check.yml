@@ -27,3 +27,31 @@ quiz:
     - content: "The debugging features of Visual Studio or the .NET CLI could help you find your logic bug."
       isCorrect: true
       explanation: "Debugging tools allow you to set breakpoints, step through code, and monitor the value of variables to help you find bugs."
+  - content: "An application framework that combines several related libraries, along with starter projects, file templates, code generators, and other tooling to enable developers to build entire applications for a specific purpose is also known as:"
+    choices:
+    - content: "A workload"
+      isCorrect: false
+      explanation: "A workload is an option you choose during installation to enable the creation of a type of application."
+    - content: "An app model"
+      isCorrect: true
+      explanation: "An app model allows you to create a specific type of application, like a web application, mobile application, and so on."
+    - content: "An assembly"
+      isCorrect: false
+      explanation: "An assembly is a compiled file that can be executed by a runtime."
+    - content: "An environment"
+      isCorrect: false
+      explanation: "The term environment in a software development context usually refers to the collection of tools used to build applications."
+  - content: "What do you call the installer that is required to create projects, write code, call methods in libraries, compile code, build, debug, and run applications?"
+    choices:
+    - content: "The .NET runtime"
+      isCorrect: false
+      explanation: "The .NET runtime can only execute .NET assemblies. We're looking for an answer that covers a wider swath of functionality."
+    - content: "The .NET Base Libraries"
+      isCorrect: false
+      explanation: "The .NET Base Libraries contain a lot of functionality that you can access from your code.  However, we're looking for an answer that covers a wider swath of functionality"
+    - content: "The .NET SDK"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "A .NET assembly"
+      isCorrect: false
+      explanation: "A .NET assembly is only compiled code. We're looking for an answer that covers a wider swath of functionality."

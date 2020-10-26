@@ -3,13 +3,13 @@ uid: learn.languages.dotnet-introduction.how-to-use-dotnet
 title: How to use .NET
 metadata:
   title: How to use .NET
-  description: Begin your software development journey by learning one of the most popular programming languages.
+  description: An overview of the workflow that developers use when building .NET applications.
   ms.date: 10/12/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 6
 azureSandbox: false
 content: |
   [!include[](includes/3-how-to-use-dotnet.md)]

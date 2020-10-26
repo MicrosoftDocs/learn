@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.dotnet-introduction.build-your-first-app
-title: Build your first app with Try.NET
+title: Build your first app with Try .NET
 metadata:
-  title: Build your first app with Try.NET
-  description: Begin your software development journey by learning one of the most popular programming languages.
+  title: Build your first app with Try .NET
+  description: Write a C# program using a web-based environment that illustrates how various parts of .NET work together.
   ms.date: 10/12/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 6
 azureSandbox: false
 content: |
   [!include[](includes/4-build-your-first-app.md)]
