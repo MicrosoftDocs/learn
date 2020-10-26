@@ -20,7 +20,7 @@ quiz:
       explanation: Bastion supports up to 25 concurrent RDP connects for VMs in the same virtual network or a peered virtual network. So if the virtual networks were peered they'd likely need at least two bastion hosts. 
     - content: They can eliminate all their VM management work.
       isCorrect: false
-      explanation: Bastion helps simplify the management of your internal VMs by providing a secure connection to those VMs over the internet.
+      explanation: Bastion simplifies the management of your internal VMs by providing a secure connection to those VMs over the internet.
     - content: They can reduce the number of VMs they manage by replacing each VM jumpbox with a bastion host. 
       isCorrect: true
       explanation: They can deploy one bastion host to each virtual network or to peered virtual networks.
