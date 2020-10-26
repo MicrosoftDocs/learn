@@ -160,6 +160,7 @@ When you run the code, you'll see the following output:
 
 ```output
 The value is 8
+Finished!
 ```
 
 You can use as many `elif` statements as you need. If you use an `else` statement, it must come after all `elif` statements.
