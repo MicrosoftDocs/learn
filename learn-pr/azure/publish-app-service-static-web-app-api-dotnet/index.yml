@@ -21,7 +21,7 @@ prerequisites: |
   - A GitHub account
   - [Visual Studio 2019 (or newer)](https://visualstudio.microsoft.com/vs/), including the _Azure_ and _ASP.NET and web development_ workloads
   - Familiarity with basic Visual Studio operation, including interacting with Git repositories and basic debugging functions
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/publish-static-web-app-and-api-dotnet.svg
 levels:
   - beginner
 roles:
