@@ -3,12 +3,11 @@ uid: learn.compliance-with-microsoft-endpoint-manager.9-knowledge-check
 metadata:
   title: Knowledge Check
   description: Knowledge Check
-  ms.date: 09/28/2020
+  ms.date: 10/26/2020
   author: Erikre 
   ms.author: erikre
   ms.topic: interactive-tutorial
   ms.prod: learning-endpoint-manager  
-  ROBOTS: NOINDEX
 title: Knowledge Check
 durationInMinutes: 3
 quiz:

@@ -3,7 +3,7 @@ uid: learn.compliance-with-microsoft-endpoint-manager
 metadata:
   title: Learn how to analyze and resolve compliance issues using Microsoft Endpoint Manager
   description: In this module, you'll learn about analyzing and resolving compliance issues using Microsoft Endpoint Manager. 
-  ms.date: 09/28/2020
+  ms.date: 10/26/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
   - Learn about connector status
   - Learn about client health with co-management
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/compliance-with-microsoft-endpoint-manager
 ratingEnabled: false
 levels:
 - beginner
@@ -41,3 +41,4 @@ units:
 - learn.compliance-with-microsoft-endpoint-manager.10-summary
 badge:
   uid: learn.compliance-with-microsoft-endpoint-manager.badge
+  
