@@ -274,6 +274,7 @@ To remove all items from a list, call the `clear()` function.
 Comment out the code that you added in the previous section. Then add the following code:
 
 ```python
+print(colors)
 colors.clear()
 print(colors)
 ```
