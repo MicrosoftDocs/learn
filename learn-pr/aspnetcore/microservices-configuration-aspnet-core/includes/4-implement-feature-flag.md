@@ -99,7 +99,7 @@ So let's begin with the details.
     1. In the `ConfigureServices` method, replace the comment `// Add the AddFeatureManagement code` with the following code:
 
         ```csharp
-        if (Configuration["UseFeatureManagement"])
+        if (Configuration.GetValue<bool>("UseFeatureManagement"))
         {
             services.AddFeatureManagement();
         }
@@ -116,7 +116,7 @@ So let's begin with the details.
     1. In the `Configure` method, replace the comment `// Add the MapFeatureManagement code` with the following code:
 
         ```csharp
-        if (Configuration["UseFeatureManagement"])
+        if (Configuration.GetValue<bool>("UseFeatureManagement"))
         {
             endpoints.MapFeatureManagement(pattern: "features");
         }
@@ -315,7 +315,7 @@ The `ConfigureRefresh` method specifies the settings to update the configuration
 In the `Configure` method of *Startup.cs*, replace the comment `// Add the UseAzureAppConfiguration code` with the following code:
 
 ```csharp
-if (Configuration["UseFeatureManagement"])
+if (Configuration.GetValue<bool>("UseFeatureManagement"))
 {
     app.UseAzureAppConfiguration();
 }
