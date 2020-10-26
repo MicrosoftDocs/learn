@@ -185,45 +185,48 @@ Something similar occurs in the *src\Web\WebSPA\Client\src\modules\orders\orders
     deploy/k8s/build-to-acr.sh --services webspa
     ```
 
-    The process will take a few minutes and it should begin with something like this:
+    The script starts an [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) for the WebSPA service. A variation of the following line confirms that the WebSPA Docker image was pushed to ACR:
 
-    :::image type="content" source="../media/4-implement-feature-flag/build-to-acr.png" alt-text="Initial output from the build-to-acr script" border="true" lightbox="../media/4-implement-feature-flag/build-to-acr.png":::
+    ```console
+    2020/10/26 21:57:23 Successfully pushed image: eshoplearn20201026212601002.azurecr.io/webspa:linux-latest
+    ```
 
-    And should end with something like this:
-
-    :::image type="content" source="../media/4-implement-feature-flag/build-to-acr-end.png" alt-text="Final output from the build-to-acr script, highlighting that the webspa image has been pushed" border="true" lightbox="../media/4-implement-feature-flag/build-to-acr-end.png":::
-
-    And now you just need to deploy the updated chart to AKS.
-
-1. And then run this script to deploy to AKS:
+1. Run the following script to deploy the updated WebSPA to AKS:
 
     ```bash
     deploy/k8s/deploy-application.sh --charts webspa
     ```
 
-    After a few seconds, you should be able to use the app as usual. You won't see any difference now, because the coupon feature is configured as enabled by default.
+    The preceding script uses Helm to deploy the WebSPA Docker image from your ACR instance to AKS.
 
-1. Update the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file to disable the coupons feature like this:
+1. Start a purchase as follows:
+    1. Select the **:::no-loc text="LOGIN":::** link in the upper right to sign into the app. Sign in using the credentials provided on the page.
+    1. Add the **:::no-loc text=".NET BLUE HOODIE":::** to the shopping bag by selecting the image.
+    1. Select the shopping bag icon in the upper right.
+    1. Select the **:::no-loc text="CHECKOUT":::** button.
+
+    Notice the presence of the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field. This is expected because the coupons feature is enabled.
+
+1. Update the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file to disable the coupons feature. Save your changes.
+
+    The `FeatureManagement__Coupons` line will resemble the following YAML:
 
     ```yaml
     FeatureManagement__Coupons: "False"
     ```
 
-1. Redeploy the app again. There's no need to rebuild the image. Just run:
+1. Redeploy the app to apply the configuration change:
 
     ```bash
     deploy/k8s/deploy-application.sh --charts webspa
     ```
 
-If you place an item in the basket and go to check out, you should now see something like this:
+1. After a few seconds, test the configuration change as follows:
+    1. In the app, refresh the page. The WebSPA reloads.
+    1. Select the shopping bag icon in the upper right.
+    1. Select the **:::no-loc text="CHECKOUT":::** button.
 
-:::image type="content" source="../media/4-implement-feature-flag/hidden-discount-coupon.png" alt-text="TODO" border="true" lightbox="../media/4-implement-feature-flag/hidden-discount-coupon.png":::
-
-You can see there's no discount coupon input box now. Even if you check with the browser's developer tools, you'll see that the div isn't even being rendered, so you're sure the feature flag is working as intended.
-
-You can also query the features endpoint with `/features?featureName=coupons` to get the feature toggle value as a json, with the property `enabled` set to `false`, as shown in the next image:
-
-:::image type="content" source="../media/4-implement-feature-flag/feature-flag-query.png" alt-text="JSON output from the /features endpoint, showing the coupons feature is not enabled" border="true" lightbox="../media/4-implement-feature-flag/feature-flag-query.png":::
+    Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is no longer present.
 
 ## Create an App Configuration store instance
 
@@ -233,104 +236,125 @@ You can also query the features endpoint with `/features?featureName=coupons` to
     deploy/k8s/create-app-config.sh
     ```
 
-    You should get something like this:
+    A variation of the following output appears:
 
-    :::image type="content" source="../media/4-implement-feature-flag/create-app-configuration.png" alt-text="Output from the create-app-config script" border="true" lightbox="../media/4-implement-feature-flag/create-app-configuration.png":::
+    ```console
+    Creating App Configuration eshoplearn20201026204439872 in resource group eshop-learn-rg...
+
+
+     > az appconfig create --resource-group eshop-learn-rg --name eshoplearn20201026204439872 --location westus --sku Standard --output none
+
+    Done!
+
+    Retrieving App Configuration connection string...
+
+
+     > az appconfig credential list  --resource-group eshop-learn-rg --name eshoplearn20201026204439872 --query [0].connectionString --output tsv
+
+    Endpoint=https://eshoplearn20201026204439872.azconfig.io;Id=4oTq-l1-s0:bweLwBPttsvIttKnuQDm;Secret=Q8ab+HY65YEgqSTBv6wiCVeoW/G0IwZ9jlEUxYC78Pc=
+    ```
+
+    In the preceding output, the string prefixed with "Endpoint=" represents the App Configuration store's connection string.
 
 1. Copy the connection string. You'll use it in a moment.
 
 ## Connect your app to App Configuration
 
-To connect your app to the new App Configuration store:
+In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, uncomment the `AppConfig__Endpoint` line. Replace the `<connection-string>` placeholder with the connection string on your clipboard. Save your changes.
 
-- Add the App Configuration connection string to the SPA ConfigMap.
-- Add a sentinel key for the App Configuration.
-- Add the feature flag for coupons.
-- Connect your app to the App Configuration instance.
+The `AppConfig__Endpoint` line will resemble the following YAML:
 
-Let's get on with the details.
-
-### 1. Add the App Configuration connection string to the ConfigMap
-
-Add another line to the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file to configure the App Configuration connection string as shown next:
+<!--TODO: should we store this connection string in Key Vault instead?-->
 
 ```yaml
 AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;Id=...;Secret=..."
 ```
 
-### 2. Add a sentinel key for the App Configuration
+## Add a sentinel key for the App Configuration
 
-This is a special key used to signal when configuration has changed. Your app monitors the sentinel key for changes to now when to refresh the values from the App Configuration store.
+This is a special key used to signal when configuration has changed. Your app monitors the sentinel key for changes to know when to refresh the values from the App Configuration store.
 
 To create the sentinel key:
 
-1. Browse to the resource group in the Azure portal.
-1. Open the App Configuration previously created.
-1. Select **Configuration Explorer** > **Create** > **Key-value**.
+1. Use the Azure portal's search box to find and open the App Configuration resource prefixed with *:::no-loc text="eshoplearn":::*.
+1. Select **Configuration explorer** > **Create** > **Key-value**.
 1. Enter the following values:
     - Key: `AppConfig:Sentinel`
     - Value: `1`
 
-You should have something like this:
+    You should have something like this:
 
-:::image type="content" source="../media/4-implement-feature-flag/create-app-configuration-sentinel-key.png" alt-text="Configuration explorer view for the process described above" border="true" lightbox="../media/4-implement-feature-flag/create-app-configuration-sentinel-key.png":::
+    :::image type="content" source="../media/4-implement-feature-flag/create-app-configuration-sentinel-key.png" alt-text="Configuration explorer view for the process described above" border="true" lightbox="../media/4-implement-feature-flag/create-app-configuration-sentinel-key.png":::
 
-### 3. Add the feature flag for Coupons
+1. Select the **Apply** button.
 
-In a similar fashion, go to the **Feature manager** section. Add a new feature named *Coupons* and enable it. You should get something like the next image:
+## Add the feature flag for Coupons
 
-:::image type="content" source="../media/4-implement-feature-flag/appconfig-feature.png" alt-text="Feature manager view for the Coupons flag, with state changed to 'On'" border="true" lightbox="../media/4-implement-feature-flag/appconfig-feature.png":::
+1. In a similar fashion, go to the **Feature manager** section and select **Add**.
+1. Select the **Enable feature flag** check box, enter *Coupons* in the **Feature flag name** text box, and select the **Apply** button.
 
-### 4. Connect your app to the App Configuration store
+## Connect your app to the App Configuration store
 
 Apply the following changes to your ASP.NET Core project:
 
-### 1. Install the configuration provider package for App Configuration
+1. Run the following command:
 
-Run the following command from the *src/Web/WebSPA* directory:
+    ```dotnetcli
+    pushd src/Web/WebSPA && \
+        dotnet add package Microsoft.Azure.AppConfiguration.AspNetCore --version 4.0.0 && \
+        popd
+    ```
 
-```dotnetcli
-dotnet add . package Microsoft.Azure.AppConfiguration.AspNetCore
-```
+    The preceding command installs a NuGet package containing the .NET Core configuration provider for the App Configuration service.
 
-The preceding command installs a NuGet package containing the .NET Core configuration provider for the App Configuration service.
+1. In the `CreateHostBuilder` method of *src/Web/WebSPA/Program.cs*, replace the comment `// Add the AddAzureAppConfiguration code` with the following code:
 
-### 2. Register App Configuration as a configuration provider
+    ```csharp
+    var settings = configBuilder.Build();
 
-Update the *src/Web/WebSPA/Program.cs* file's `CreateHostBuilder` method to include the following highlighted code:
+    if (settings.UseFeatureManagement() && !string.IsNullOrEmpty(settings["AppConfig:Endpoint"]))
+    {
+        configBuilder.AddAzureAppConfiguration(options =>
+        {
+            options.Connect(settings["AppConfig:Endpoint"])
+                .UseFeatureFlags()
+                .ConfigureRefresh(refresh =>
+                {
+                    refresh.Register("AppConfig:Sentinel", refreshAll: true)
+                        .SetCacheExpiration(new TimeSpan(0, 0, 10));
+                });
+        });
+    }
+    ```
 
-:::code language="csharp" source="../code/src/web/webspa/program.cs" highlight="8-22":::
+    The `ConfigureRefresh` method specifies the settings to update the configuration data with the App Configuration store. These settings are used when a refresh operation is triggered.
 
-The `ConfigureRefresh` method specifies the settings to update the configuration data with the App Configuration store when a refresh operation is triggered.
+1. In the `Configure` method of *src/Web/WebSPA/Startup.cs*, replace the comment `// Add the UseAzureAppConfiguration code` with the following code:
 
-### 3. Add the Azure App Configuration middleware to the request pipeline
+    ```csharp
+    if (Configuration.GetValue<bool>("UseFeatureManagement"))
+    {
+        app.UseAzureAppConfiguration();
+    }
+    ```
 
-In the `Configure` method of *Startup.cs*, replace the comment `// Add the UseAzureAppConfiguration code` with the following code:
-
-```csharp
-if (Configuration.GetValue<bool>("UseFeatureManagement"))
-{
-    app.UseAzureAppConfiguration();
-}
-```
-
-The App Configuration middleware triggers a refresh operation for the Feature Management parameters for every incoming request. Then it's up to the `AzureAppConfiguration` provider to decide, based on the refresh settings configured in the previous step, when to actually connect to the store to get the values.
+    The preceding code adds the App Configuration middleware to the request pipeline. The middleware triggers a refresh operation for the Feature Management parameters for every incoming request. Then it's up to the `AzureAppConfiguration` provider to decide, based on the refresh settings configured in the previous step, when to actually connect to the store to get the values.
 
 ## Redeploy the app
 
 So all that's left for you to do is redeploy the SPA and check out if this works as intended.
 
-Just as you did before, begin by building the `webspa` service with the following script:
+1. Just as you did before, begin by building the `webspa` service with the following script:
 
-```bash
-deploy/k8s/build-to-acr.sh --services webspa
-```
+    ```bash
+    deploy/k8s/build-to-acr.sh --services webspa
+    ```
 
-Run the following script to deploy to AKS:
+1. Run the following script to deploy to AKS:
 
-```bash
-deploy/k8s/deploy-application.sh --charts webspa
-```
+    ```bash
+    deploy/k8s/deploy-application.sh --charts webspa
+    ```
 
 ## Test the feature toggle
 
