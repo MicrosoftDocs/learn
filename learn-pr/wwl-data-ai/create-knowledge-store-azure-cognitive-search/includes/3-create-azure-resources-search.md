@@ -34,5 +34,5 @@ A script containing Azure command-line interface (CLI) commands to create these 
     - Search service admin key
     - Search service query key
 
-6. IOpen the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with the credentials associated with your Azure subscription if prompted.
+6. Open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with the credentials associated with your Azure subscription if prompted.
 7. In the Azure portal, find the resource group that was created by the setup script, and verify that it contains the Azure Storage account, Azure Cognitive Services resource, and Azure Cognitive Search resource.
