@@ -3,9 +3,8 @@
 After completing this unit, you can explain the importance of Azure Sentinel Analytics
 
 - Understand the importance of Analytics for security
-- Understand Analytic rules
+- Understand Analytics rules
 - Explore Analytic home page
-<!-- Replace "Analytic" with "Analytics". -->
 
 Azure Sentinel Analytics, helps you to detect, investigate, and remediate threats. With Azure Sentinel Analytics, you can set up analytic rules and queries to detect issues in your environment.
 
@@ -35,8 +34,6 @@ You can also use analytics to create custom alerts that use indicators of attack
 
 You can start creation of the analytics rules from the **Analytics** home page, that you can select from the left-hand navigation bar.
 
-![](RackMultipart20201021-4-1topqyg_html_1d7f794390ac578a.png)
-
 Image – Analytics home page
 
 Analytics home page is arranged into three main parts:
@@ -50,8 +47,6 @@ Analytics home page is arranged into three main parts:
 Currently Microsoft has pre-loaded more than 150 template rules from Azure Sentinel GitHub repository. To manage these templates and get to the right rule, you need to apply filters. For example, you might want to see only template rules that detect high severity level of threats, or rules from specific Data Sources.
 
 To use filters, select the blue buttons, and then select the filters you want to use.
-
-![](RackMultipart20201021-4-1topqyg_html_6e19f2d0403791d5.png)
 
 Here are the filters and what you would use them for:
 
