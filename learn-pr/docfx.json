@@ -163,6 +163,19 @@
                 "dest": "modules"
             },
             {
+                "src": "endpoint-manager",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "github",
                 "files": [
                     "**/*.yml",
@@ -368,6 +381,19 @@
                 ],
                 "dest": "modules"
             },
+            {
+                "src": "python-partnership",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },               
             {
                 "files": [
                     "**/*.md",
@@ -602,6 +628,25 @@
                     "sv-se"
                 ],
                 "databricks/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "endpoint-manager/**/*.yml": [
                     "de-de",
                     "es-es",
                     "fr-fr",

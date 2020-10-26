@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.python-partnership.secret-message.ceasar-cipher-full-word
+title: Decode a full word with a Caesar cipher
+metadata:
+  title: Decode a full word with a Caesar cipher
+  description: Create a function to loop through all letters in a word and decipher the entire word by using a Caesar cipher.
+  ms.date: 09/21/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-ceasar-cipher-full-word.md)]

@@ -109,7 +109,7 @@ Click the link to browse to your application.
 
 ::: zone pivot="angular"
 
-Browse to `http://localhost:4200`.
+Browse to <http://localhost:4200>.
 
 :::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="Screenshot of browsing to your Angular web app":::
 
@@ -117,7 +117,7 @@ Browse to `http://localhost:4200`.
 
 ::: zone pivot="react"
 
-Browse to `http://localhost:3000`.
+Browse to <http://localhost:3000>.
 
 :::image type="content" source="../media/my-shopping-list-app-react.png" alt-text="Screenshot of browsing to your React web app":::
 
@@ -125,7 +125,7 @@ Browse to `http://localhost:3000`.
 
 ::: zone pivot="svelte"
 
-Browse to `http://localhost:5000`.
+Browse to <http://localhost:5000>.
 
 :::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="Screenshot of browsing to your Svelte web app":::
 
@@ -133,7 +133,7 @@ Browse to `http://localhost:5000`.
 
 ::: zone pivot="vue"
 
-Browse to `http://localhost:8080`.
+Browse to <http://localhost:8080>.
 
 :::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="Screenshot of browsing to your Vue web app":::
 
