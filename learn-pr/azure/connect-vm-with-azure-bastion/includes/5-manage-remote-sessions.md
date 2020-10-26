@@ -1,5 +1,5 @@
 
-In this unit, you'll learn how to manage remote sessions by enabling diagnostic logs and monitoring remote sessions
+In this unit, you'll learn how to manage remote sessions by enabling diagnostic logs and monitoring remote sessions.
 
 ## Configure diagnostics settings to generate audit logs
  
@@ -29,8 +29,46 @@ The diagnostic logs take several hours to appear in your storage account. Find t
 
 :::image type="content" source="../media/5-storage-container.png" alt-text="Screenshot of a storage account with a container called insights-logs-bastionauditlogs.":::
 
+Click through the resource hierarchy folders to get to the Bastion host file.
 
-1. Drill through files.
-<!--(Give specific scenario to look for.)
+:::image type="content" source="../media/5-insights-folders.png" alt-text="Screenshot of the insights logs for Bastion that shows the folder location level is at the bastion host resource.":::
 
-When are these files generated?)-->
+Continue to click through the year 'y=', month 'm=', day 'd=', hour 'h=', and minute 'm=' folders to the find diagnostics log data for a specific the time-period.  
+
+:::image type="content" source="../media/5-insights-log-json-file.png" alt-text="Screenshot of the insights logs for Bastion that shows the json file for a specific time period.":::
+
+Download the json file to view the session details. When you open the file it'll look something like the following example where you can see information like the operation type, user name, and client IP address.
+
+   ```json
+   { 
+   "time":"2020-10-22T23:26:00.697Z",
+   "resourceId":"/SUBSCRIPTIONS/<subscripionID>/RESOURCEGROUPS/MYBASTION/PROVIDERS/MICROSOFT.NETWORK/BASTIONHOSTS/MYBASTION-BASTION",
+   "operationName":"Microsoft.Network/BastionHost/connect",
+   "category":"BastionAuditLogs",
+   "level":"Informational",
+   "location":"westus2",
+   "properties":{ 
+      "userName":"<username>",
+      "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36",
+      "clientIpAddress":"131.107.159.86",
+      "clientPort":24039,
+      "protocol":"ssh",
+      "targetResourceId":"/SUBSCRIPTIONS/<subscripionID>/RESOURCEGROUPS/MYBASTION/PROVIDERS/MICROSOFT.COMPUTE/VIRTUALMACHINES/LINUX-KEY",
+      "subscriptionId":"<subscripionID>",
+      "message":"Successfully Connected.",
+      "resourceType":"VM",
+      "targetVMIPAddress":"172.16.1.5",
+      "tunnelId":"<tunnelID>"
+   },
+   "FluentdIngestTimestamp":"2020-10-22T23:26:00.0000000Z",
+   "Region":"westus2",
+   "CustomerSubscriptionId":"<subscripionID>"
+   }
+   ```
+
+## Manage current remote sessions
+
+Azure Bastion session monitoring lets you view which users are connected to which VMs. It shows the IP that the user connected from, how long they've been connected, and when they connected. You can select an ongoing session and force-disconnect the session to disconnect the user from the session.
+
+<!--Add screenshots of two user sessions and selecting delete to disconnect one -->
+You'll walk through how to manage remote sessions in the next unit.

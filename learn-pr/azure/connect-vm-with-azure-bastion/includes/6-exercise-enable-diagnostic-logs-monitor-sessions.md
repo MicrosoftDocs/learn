@@ -1,4 +1,4 @@
-In this unit, you'll learn how to monitor current sessions and force a disconnect. 
+In this unit, you'll see how to monitor current sessions and force a disconnect. 
 
 ## Generate session data
 
