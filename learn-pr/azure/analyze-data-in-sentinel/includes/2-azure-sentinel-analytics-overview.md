@@ -11,6 +11,7 @@ Azure Sentinel Analytics, helps you to detect, investigate, and remediate threat
 You can analyze both real-time and historical data collected from your workstations, servers, networking devices, firewalls, intrusion prevention, sensors, and so on. Data from various sources is analyzed to look for correlations and anomalies.
 
 With analytics you can trigger alert, based of the techniques that are used by known malicious actors.
+With analytics in place, you want to make sure the right people are being alerted, at the right level. 
 
 ## Why use Analytics for Security?
 
@@ -29,6 +30,7 @@ The following include common security analytics use cases:
 Some of the threats cannot be detected using conventional protection tools, such as firewalls or antimalware solutions. Certain threats can go undetected for months. Combining data, gathered by multiple components, with the power of threat intelligence can help you to detect, analyze, and mitigate insider threats.
 
 You can also use analytics to create custom alerts that use indicators of attack that can identify potential attack in execution in real time.
+Analytics will help Contoso to improve the operation of their SecOps team in complex investigation and faster detection of the threats. 
 
 ## Exploring the Analytics home page
 
