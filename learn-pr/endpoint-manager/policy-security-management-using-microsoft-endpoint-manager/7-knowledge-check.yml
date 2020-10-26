@@ -55,3 +55,4 @@ quiz:
     - content: "No. You can only integrate Microsoft Defender ATP with Intune."
       isCorrect: false
       explanation: "Using tenant attach in a co-managed endpoint management scenario, you can integrate Configuration Manager with Microsoft Defender ATP to gain access to security tasks that help enterprises detect, investigate, and respond to advanced attacks on their networks."
+      
