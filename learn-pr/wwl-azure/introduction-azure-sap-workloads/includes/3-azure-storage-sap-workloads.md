@@ -18,7 +18,8 @@ Related to resiliency, this example demonstrates the advantage of managed disks:
 
 Deploying without managed disks in customer defined storage accounts, disk allocation is arbitrary and has no awareness of the fact that VMs are deployed within an AvSet for resiliency purposes.
 
-> **Note**: New deployments of VMs that use Azure block storage for their disks (all Azure storage except Azure NetApp Files) must use Azure managed disks for the base VHD/OS disks, data disks that contain SAP database files, independent of whether you deploy the VMs through availability sets, across Availability Zones, or independent of the sets and zones. Disks that are used for the purpose of storing backups are not necessarily required to be managed disks. Azure managed disks provide local redundancy (LRS) only.
+> [!NOTE] 
+> New deployments of VMs that use Azure block storage for their disks (all Azure storage except Azure NetApp Files) must use Azure managed disks for the base VHD/OS disks, data disks that contain SAP database files, independent of whether you deploy the VMs through availability sets, across Availability Zones, or independent of the sets and zones. Disks that are used for the purpose of storing backups are not necessarily required to be managed disks. Azure managed disks provide local redundancy (LRS) only.
 
 ## Storage scenarios with SAP workloads
 
