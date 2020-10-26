@@ -1,6 +1,4 @@
-In a previous module, we learned about a helper function, `isnumeric()`, that allows us to understand the contents of a string, and whether we can convert that string into an `int` or `float`. A helper method is a function that's available to values of a particular data type, and provides additional helpful functionality. We even briefly toured a few additional `is___()` style string helper methods.
-
-There are many other helper methods available to strings, and in this exercise we'll work with over a dozen that you'll likely use when building real-world Python programs.
+A **helper method** is a function that's available to values of a particular data type (or object), and provides additional helpful functionality.  The string data type has many helper methods, and in this exercise we'll work with over a dozen that you'll likely use when building real-world Python programs.
 
 ### Step 1 - Create a new code file for this exercise
 

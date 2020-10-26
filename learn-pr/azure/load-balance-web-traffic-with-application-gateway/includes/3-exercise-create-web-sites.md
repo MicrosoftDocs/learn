@@ -11,16 +11,16 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
 1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
 
     ```azurecli
-    rg=<resource group name>
+    RG=<resource group name>
 
-    az group create --name $rg --location <location>
+    az group create --name $RG --location <location>
     ```
 
 1. In the Cloud Shell window on the right, run the following command. This command uses the Azure command-line interface to create a virtual network named `vehicleappvnet`. It's a private network that provides addresses in the range 10.0.0.0 to 10.0.255.255. The command also creates a subnet called `webServerSubnet`, with the address range 10.0.1.0 to 10.0.1.255. This subnet will contain the virtual machines.
 
     ```azurecli
     az network vnet create \
-      --resource-group $rg \
+      --resource-group $RG \
       --name vehicleAppVnet \
       --address-prefix 10.0.0.0/16 \
       --subnet-name webServerSubnet \
@@ -39,7 +39,7 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
 
     ```azurecli
     az vm create \
-      --resource-group $rg \
+      --resource-group $RG \
       --name webServer1 \
       --image UbuntuLTS \
       --admin-username azureuser \
@@ -52,7 +52,7 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
       --no-wait
 
     az vm create \
-      --resource-group $rg \
+      --resource-group $RG \
       --name webServer2 \
       --image UbuntuLTS \
       --admin-username azureuser \
@@ -68,7 +68,7 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
 
     ```azurecli
     az vm list \
-      --resource-group $rg \
+      --resource-group $RG \
       --show-details \
       --output table
     ```
@@ -96,7 +96,7 @@ You've now created the virtual machines running the vehicle registration web app
 
     ```azurecli
     az appservice plan create \
-        --resource-group $rg \
+        --resource-group $RG \
         --name vehicleAppServicePlan \
         --sku S1
     ```
@@ -105,7 +105,7 @@ You've now created the virtual machines running the vehicle registration web app
 
     ```azurecli
     az webapp create \
-        --resource-group $rg \
+        --resource-group $RG \
         --name $APPSERVICE \
         --plan vehicleAppServicePlan \
         --deployment-source-url https://github.com/MicrosoftDocs/mslearn-load-balance-web-traffic-with-application-gateway \

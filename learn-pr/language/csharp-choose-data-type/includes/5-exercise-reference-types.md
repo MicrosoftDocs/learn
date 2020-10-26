@@ -50,12 +50,7 @@ The `string` data type is also a reference type.  You might be wondering why we 
 string shortenedString = "Hello World!";
 Console.WriteLine(shortenedString);
 ```
-Behind the scenes, the following code is executed.
-
-```csharp
-System.String fullString = new System.String("Hello World!");
-Console.WriteLine(fullString);
-```
+Behind the scenes, however, a new instance of System.String is created and initialized to "Hello World!".
 
 > [!NOTE]
 > When the language designers create a simplified shortcut, it is sometimes known as "syntactic sugar".  You will likely see this phrase used in articles, videos and in presentations.

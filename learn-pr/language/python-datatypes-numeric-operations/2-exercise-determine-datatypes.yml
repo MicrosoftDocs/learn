@@ -3,7 +3,7 @@ uid: learn.languages.python-datatypes-numeric-operations.exercise-determine-data
 title: Exercise - Determine the data types of values
 metadata:
   title: Exercise - Determine the data types of values
-  description: Use built-in methods, such as `type()` and `instanceof()`, to discover the data types of values.
+  description: Use built-in methods, such as `type()` and `isinstance()`, to discover the data types of values.
   ms.date: 02/18/2020
   author: bobtabor-msft
   ms.author: rotabor
