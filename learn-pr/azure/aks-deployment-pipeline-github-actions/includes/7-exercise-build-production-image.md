@@ -16,7 +16,7 @@ You'll build the tagged version by using another workflow.
 
     :::image type="content" source="../media/6-2-example-editor.png" alt-text="Screenshot that shows an example file being edited in the Edit new file pane on the GitHub website.":::
 
-    GitHub gave us the same editor with another workflow file created within the `.github/workflows` directory. This is the file you'll have displayed.
+    GitHub gave us the same editor with another workflow file created in the `.github/workflows` directory. This is the file you'll have displayed.
 
     ```yaml
     # This is a basic workflow to help you get started with Actions

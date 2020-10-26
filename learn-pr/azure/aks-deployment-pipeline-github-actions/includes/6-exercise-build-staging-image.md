@@ -2,7 +2,7 @@ We talked about the concepts behind the pipeline, CI, and Docker. Now, it's time
 
 Let's review our designed pipeline:
 
-:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that depicts the procession from triggers, through three build steps, to the deploy step in a pipeline.":::
+:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy step in a pipeline.":::
 
 You'll build this pipeline by using the GitHub Actions workflow.
 
