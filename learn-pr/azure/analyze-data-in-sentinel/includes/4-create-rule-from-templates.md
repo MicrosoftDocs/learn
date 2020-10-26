@@ -20,9 +20,9 @@ By selecting one of the rules in the **Rule Template** tab, you can observe the 
 - Data Source – Specify the data source connector that generate the alert
 - Tactics – Specify techniques and methodologies in MITRE ATT&amp;CK model used by different kinds of malware
 
-NOTE:
+> [!NOTE]
 
-MITRE ATT&amp;CK is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&amp;CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
+> MITRE ATT&amp;CK is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&amp;CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
 
 Details pane of selected rule is displayed right of the listing and provide more information for the rule. Depending on the type of the rule that you select, the details pane can contain different fields of information. For Fusion and ML behavior analytics rules, Microsoft does not provide any additional information, but for example for the scheduled rule, you can view the query rule used in detection of the threat.
 
