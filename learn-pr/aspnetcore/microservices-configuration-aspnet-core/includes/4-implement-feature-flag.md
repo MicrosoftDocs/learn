@@ -312,7 +312,8 @@ Apply the following changes to your ASP.NET Core project:
     ```csharp
     var settings = configBuilder.Build();
 
-    if (settings.UseFeatureManagement() && !string.IsNullOrEmpty(settings["AppConfig:Endpoint"]))
+    if (settings.GetValue<bool>("UseFeatureManagement") &&
+        !string.IsNullOrEmpty(settings["AppConfig:Endpoint"]))
     {
         configBuilder.AddAzureAppConfiguration(options =>
         {
