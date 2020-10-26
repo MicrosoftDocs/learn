@@ -13,7 +13,7 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: "An organization has set up virtual machines (VMs) to act as jumpboxes in each of their six virtual networks. Each of their jumpboxes regularly supports 5 concurrent RDP sessions per day. Why should they consider using Azure Bastion?"
+  - content: "An organization has set up virtual machines (VMs) to act as jump boxes in each of their six virtual networks. Each of their jump boxes regularly supports 5 concurrent RDP sessions per day. Why should they consider using Azure Bastion?"
     choices:
     - content: They could deploy one Bastion host to support all VM RDP connections in the resource group.
       isCorrect: false

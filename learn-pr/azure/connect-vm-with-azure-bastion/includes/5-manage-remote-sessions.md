@@ -37,7 +37,7 @@ Continue to click through the year 'y=', month 'm=', day 'd=', hour 'h=', and mi
 
 :::image type="content" source="../media/5-insights-log-json-file.png" alt-text="Screenshot of the insights logs for Bastion that shows the json file for a specific time period.":::
 
-Download the json file to view the session details. When you open the file it'll look something like the following example where you can see information like the operation type, user name, and client IP address.
+Download the json file to view the session details. When you open the file it will look something like the following example where you can see information like the operation type, user name, and client IP address.
 
    ```json
    { 
