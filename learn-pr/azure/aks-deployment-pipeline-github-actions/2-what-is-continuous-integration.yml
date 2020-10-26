@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-deployment-pipeline-github-actions.2-what-is-continuous-integration
 metadata:
-  title: What is continuous integration and continuous deployment?
+  title: What are continuous integration and continuous deployment?
   description: Explore some CI/CD concepts you need to consider when you configure your first GitHub action.
   ms.date: 10/08/2020
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial
   ms.prod: github
-title: What is continuous integration and continuous deployment?
+title: What are continuous integration and continuous deployment?
 durationInMinutes: 3
 content: |
   [!include[](includes/2-what-is-continuous-integration.md)]
@@ -20,7 +20,7 @@ quiz:
         - content: "CI is related to integration and testing and CD is related to packaging and deployment."
           isCorrect: true
           explanation: "Yes, although CI is related to the integration of a team's code, CD is more related to the packaging and deployment of the code."
-        - content: "None; CI and CD are two names for the same practice."
+        - content: "There's no difference between them. CI and CD are two names for the same practice."
           isCorrect: false
           explanation: "Despite the difference being small, it's possible to have CI without CD and CD without CI. So, they can't be considered the same."
         - content: "CI is related to the people who build the code and CD is related to tooling."
@@ -28,12 +28,12 @@ quiz:
           explanation: "Both concepts focus on tooling (both are related only indirectly to people)."
     - content: "What is a CI pipeline?"
       choices:
-        - content: "CI pipelines is the name of the file that contains instructions for running automated tasks."
+        - content: "The file that contains instructions for running automated tasks."
           isCorrect: false
           explanation: "The CI pipeline is composed of those files, but these files aren't the definition of a CI pipeline itself."
-        - content: "It's the name we give to the act of running a specific set of automated tasks."
+        - content: "The act of running a specific set of automated tasks."
           isCorrect: false
           explanation: "Running a specific set of tasks is the action, but it's not the definition of a CI pipeline."
-        - content: "A CI pipeline is the name we give the set of processes that will be run when a new code change is detected."
+        - content: "The set of processes that run when a new code change is detected."
           isCorrect: true
-          explanation: "Correct. The set of processes that will run is called a pipeline."
+          explanation: "Correct. The set of processes that run is called a pipeline."

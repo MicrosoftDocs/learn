@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-deployment-pipeline-github-actions.8-helm
 metadata:
-  title: Deployment by using Helm
+  title: Deploy by using Helm
   description: Discover and understand Helm, a tool that helps you easily create and deploy AKS applications.
   ms.date: 10/08/2020
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial
   ms.prod: github
-title: Deployment by using Helm
+title: Deploy by using Helm
 durationInMinutes: 10
 content: |
   [!include[](includes/8-helm.md)]

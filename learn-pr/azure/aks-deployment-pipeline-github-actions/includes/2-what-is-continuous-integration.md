@@ -1,20 +1,20 @@
-Before you begin deploying or changing the company's infrastructure, it's essential that you understand the concepts behind what you're planning to build.
+Before you begin deploying anything or changing the company's infrastructure, it's essential that you understand the concepts behind what you're planning to build.
 
 Let's explore some of the concepts behind CI and CD. In this unit, we learn what a pipeline is and how to apply CI and CD to GitHub Actions.
 
 ## What are CI and CD?
 
-CI and CD are operating practices that aim to make teams more productive by introducing continuous automation and monitoring into all the phases of software development, testing, and deployment. CI and CD aim to reduce problems that result when you integrate new code into an existing code base.
+CI and CD are operating practices that can help make developer teams more productive by introducing continuous automation and monitoring into all the phases of software development, testing, and deployment. CI and CD aim to reduce problems that result when you integrate new code into an existing code base.
 
-### Continuous integration (CI)
+### CI
 
 CI dictates that teams frequently implement and integrate the smallest changes in the code. Implementing this technique means that you constantly test, compile, deploy, and then test again in production.
 
-One of the most critical CI principles is that you merge all the newest changes back into the main branch as often as possible. Continually merging changes helps you avoid "integration hell," which often occurs when many developers combine their changes all at once in a single day.
+One of the most critical CI principles is that you merge all the newest changes back into the main branch as often as possible. Continually merging changes helps you avoid "integration hell" and merge day, which often occur when many developers combine their changes all at once in a single day.
 
 The goal of CI is to avoid production problems caused by code changes by detecting problems before they can cause real damage to you or your customers.
 
-### Continuous delivery (CD)
+### CD
 
 CD picks up where CI ends. CD automates the delivery process to the selected infrastructure environment. You can use CD to release new changes to your customers quickly and sustainably.
 
@@ -24,17 +24,17 @@ When you use CD, you decide in advance whether you deploy the changes daily, wee
 
 A variation to the CD process is *continuous deployment*. Continuous deployment goes one step further than continuous delivery. In this variation, every change that passes all the stages of your CI pipeline is automatically released to customers.
 
-Continuous deployment is one of the most advanced processes in software development. It requires coded tests to cover all aspects of the application to test the application's functionality without human intervention.
+Continuous deployment is one of the most advanced processes in software development. It requires coded tests that cover all aspects of the application to test the application's functionality without human intervention.
 
 ## CI pipelines
 
-A CI pipeline is the processes that run when a new code change is detected. Every time a code change triggers a CI run, all steps in the pipeline are executed. If there's an error in one of these steps, the pipeline stops execution.
+A CI pipeline is the processes that run when a new code change is detected. Every time a code change triggers a CI run, all steps in the pipeline are executed. If there's an error in one of these steps, the pipeline stops executing.
 
-An event triggers a pipeline. A large number of events are triggered during software development, and the CI provider needs to support all events. When an event is triggered, all the listeners for this specific event are triggered. The first stage of the process starts. 
+An event triggers a pipeline. A large number of events are triggered during software development. The CI provider needs to support all events. When an event is triggered, all the listeners for this specific event are triggered. The first stage of the process starts. 
 
 In most cases, the process begins by cloning or downloading the source code. When that step is finished, subsequent steps are triggered.
 
-Workflows can contain logic jumps so that a stage isn't executed if certain conditions are met.
+Workflows can contain logic jumps so that a stage isn't executed if certain conditions are met, but the process continues to execute.
 
 ## GitHub Actions
 

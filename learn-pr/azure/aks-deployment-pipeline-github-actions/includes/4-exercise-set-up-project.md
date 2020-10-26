@@ -8,7 +8,7 @@ Now that we understand what we need to do, let's create our resources and publis
 
 ## Set up the project
 
-1. Fork [this sample repository](https://github.com/MicrosoftDocs/mslearn-aks-deployment-pipeline-github-actions) to your account.
+1. Fork [the sample repository](https://github.com/MicrosoftDocs/mslearn-aks-deployment-pipeline-github-actions) to your account.
 
     Fork the repository so that you can create your own GitHub Actions pipeline. If you used the hosted sample version, you couldn't complete the exercise because you don't have write permissions to the original sample repository.
 

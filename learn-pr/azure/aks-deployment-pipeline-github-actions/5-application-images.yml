@@ -22,12 +22,12 @@ quiz:
           explanation: "Application images are composed of more than just the application code."
         - content: "A read-only template that contains a set of instructions for creating a Docker container."
           isCorrect: true
-          explanation: "Correct. An application image is the template that Docker uses to create its containers with your application."
-        - content: "It's a snapshot of our current working directory hosted in the cloud."
+          explanation: "Correct. An application image is the template that Docker uses to create its containers that hold your application."
+        - content: "A snapshot of our current working directory hosted in the cloud."
           isCorrect: false
           explanation: "Although an image contains libraries from the OS, an image isn't a snapshot of our computer."
 
-    - content: "Why use Docker images?"
+    - content: "What are the main advantages of using a Docker image?"
       choices:
         - content: "Despite being much heavier than standard VMs, Docker images are simpler and faster to deploy."
           isCorrect: false

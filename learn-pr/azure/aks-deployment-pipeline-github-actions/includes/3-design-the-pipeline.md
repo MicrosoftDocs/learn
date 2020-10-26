@@ -1,10 +1,12 @@
-With a good understanding of the concepts behind CI and CD, let's *plan* our pipeline based on our project's needs.
+With a good understanding of the concepts behind CI and CD, let's plan our pipeline based on our project's needs.
 
-Contoso wants to have a website published in AKS after a successful tagged push to the main branch. This design makes it easier to check the version of each deployment that went to production. Along with that rule, the project leads want to test the website in a staging environment at every successful push to the main branch, tagged or not. Let's design this pipeline.
+To support a CI pipeline, Contoso wants a website to be published in AKS after a successful tagged push to the main branch. is design makes it easier to check the version of each deployment that went to production. Tags are used for routing when you push container images to an image registry.
+
+The project leads also want to test the website in a staging environment at every successful push to the main branch, whether or not the push is tagged. Let's design this pipeline.
 
 ## Design the pipeline
 
-To begin designing the pipeline, think about tasks and triggers, and ask the question, "What will trigger this pipeline?" In our case, this pipeline is triggered by two different events:
+To begin designing the pipeline, think about tasks and triggers. Ask the question, "What will trigger this pipeline?" In our case, the pipeline is triggered by two different events:
 
 - A tagged push to the main branch
 - A non-tagged push to the main branch
@@ -15,7 +17,7 @@ At this point, here's what our pipeline looks like:
 
 :::image type="content" source="../media/3-pipeline-1-trigger.png" alt-text="Diagram that shows two types of pipeline triggers.":::
 
-After the triggers are defined, we need to think about the pipeline flow itself. That's the answer to the question, "What will happen after one of the triggers is executed?" Generally, the first steps are the same for both triggers.
+After the triggers are defined, we need to think about the pipeline flow itself to answer the question, "What will happen after one of the triggers is executed?" Generally, the first steps are the same for both triggers.
 
 ### Clone the repo
 
@@ -53,6 +55,6 @@ If the tagged commit triggered the pipeline, we'll deploy the website to product
 
 If the pipeline didn't trigger a tagged commit, we'll push to the `staging` namespace of the same cluster.
 
-:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy step in a pipeline.":::
+:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy steps in a pipeline.":::
 
 Now, we've summarized all the tasks we have to execute to successfully deploy the website to the correct environments. The next step is to create the deploy environment.

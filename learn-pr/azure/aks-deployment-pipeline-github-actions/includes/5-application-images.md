@@ -1,10 +1,10 @@
-Your environment is set up. The next steps are to deploy our workloads and create a pipeline.
+Your environment is set up. The next steps are to deploy workloads and create a pipeline.
 
-An essential part of a distributed application that uses AKS is the container image. Let's talk about container images and how you can use tags to create what you need the images you need.
+An essential part of a distributed application that uses AKS is the container image. Let's talk about container images and how you can use tags to create the images you need.
 
 ## Container images
 
-A container image is a file. The file has multiple layers that are used to execute a container. For this project, you'll use Docker containers.
+A container image is a file that has multiple layers that are used to execute a container. For this project, you'll use a Docker container.
 
 > [!NOTE]
 > We won't discuss in detail what containers are and how they work. If you'd like to know more, check the links in the summary unit of this module.
@@ -21,22 +21,22 @@ docker build .
 
 ## Image tags
 
-Tags are an important aspect of working with container images. Tags tell you what type of image you're dealing with. The use of a tag can differentiate images, even if multiple images have the same name.
+Tags are an important aspect of working with container images. Tags tell you what type of image you're dealing with. A tag can differentiate images, even if multiple images have the same name.
 
-Container images are built by using the same technique that you use to create a GitHub repository. So, Docker container paths are usually something like *repository/image_name*. But images go a step further. You can have multiple versions of the same image  and use tags to distinguish them.
+To build a container image, you use the same technique that you use to create a GitHub repository. Like a GitHub repository, Docker container paths usually are something like *repository/image-name*. But images go a step further. You can have multiple versions of the same image and use tags to distinguish them.
 
-For example, consider the Node.js image in the repository's directory. If you want to start from Node 12, you'd include the tag `FROM node:12` in the Dockerfile. However, if you want to start from the latest stable version, you could use the tag `FROM node:current`. Tags tell you what type of image you're using and what to expect it to do.
+For example, consider the Node.js image in the repository's directory. If you want to start from Node 12, you'd include the tag `FROM node:12` in the Dockerfile. If you want to start from the latest stable version, you can use the tag `FROM node:current`. Tags tell you what type of image you're using and what to expect it to do.
 
 In your project, use tags the same way. You'll create a tag for each production version by using the `v*.*.*` template, like `v1.0.0`. Every tagged push to the main branch generates a new image tag that has the same name as the tag on that push, in addition to a `latest` tag. The images that are tagged with `v*` are deployed to production.
 
-Non-tagged pushes to the main branch update only the `latest` image with the most recent code. Then, they deploy it to staging.
+Non-tagged pushes to the main branch update only the `latest` image with the most recent code. Then, they deploy the code changes to staging.
 
 You'll always have the `latest` image both in staging and production. Official tagged images go only to production.
 
 ## Container registries
 
-The final important aspect of working with an image is where it will be stored. You have GitHub to store your code changes and versions. In the container world, GitHub is a *container registry*.
+The final important aspect of working with an image is where it will be stored. GitHub stores your code changes and versions. In the container world, GitHub is a *container registry*.
 
-In this project, we use the Container Registry service in Azure. The concept of a container registry is straightforward: It's a place to store image files. You can push new images to registries by using the `docker push` command.
+In this project, we use the Container Registry service in Azure. A container registry is a place to store image files. You can push new images to registries by using the `docker push` command.
 
 For your pipeline, you'll push the built images to the Container Registry instance you created earlier by using a username and a password. In essence, you'll automate both `docker build` and `docker push` commands by using your pipeline.

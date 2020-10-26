@@ -1,22 +1,18 @@
-In the preceding exercise, you built the staging workflow for building and publishing the image. Now, let's recap the production workflow:
+In the preceding exercise, you built the staging workflow for building and publishing the image. Let's recap the production workflow:
 
-:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy step in a pipeline.":::
+:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy steps in a pipeline.":::
 
-You'll build the tagged version by using another workflow.
+You'll build the tagged version by using a different workflow.
 
 ## Build the Action workflow
 
 1. To start building the pipeline, go to the fork of the sample repository in the GitHub website and select the **Actions** tab.
 
-1. Select **New Workflow** button.
+1. Below the header, select **set up a workflow yourself**:
 
-    :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Screenshot that shows the Get started with GitHub Actions page on the GitHub website.":::
+    :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Screenshot that shows the Get started with GitHub Actions page and the Set up a workflow yourself link on the GitHub website.":::
 
-1. Just below the header, select the **Set up a workflow yourself** link:
-
-    :::image type="content" source="../media/6-2-example-editor.png" alt-text="Screenshot that shows an example file being edited in the Edit new file pane on the GitHub website.":::
-
-    GitHub gave us the same editor with another workflow file created in the `.github/workflows` directory. This is the file you'll have displayed.
+    The following file will be shown in the GitHub editor:
 
     ```yaml
     # This is a basic workflow to help you get started with Actions
@@ -56,9 +52,11 @@ You'll build the tagged version by using another workflow.
 
 1. Rename the file from `main.yml` to `build-production.yml` by typing on the top input panel.
 
-1. Change the `name` key to _"Build and push the tagged build to production"_, your file will look like this
+    :::image type="content" source="../media/6-2-example-editor.png" alt-text="Screenshot that shows an example file being edited in the Edit new file pane on the GitHub website.":::
 
-    ```yml
+1. Change the `name` key to `Build and push the tagged build to production`. Your file will look like this example:
+
+    ```yaml
     # This is a basic workflow to help you get started with Actions
 
     name: Build and push the tagged build to production
@@ -80,7 +78,7 @@ You'll build the tagged version by using another workflow.
         branches: [ main ]
     ```
 
-    Remove the `branches` key and replace it with the `tags` key. This tag says that you'll run this workflow only on determined tags.
+    Remove the `branches` key and replace it with the `tags` key. This tag says that you'll run this workflow only on specific tags.
 
     ```yaml
     name: Build and push the tagged build to production
@@ -95,13 +93,11 @@ You'll build the tagged version by using another workflow.
 
 ### Build and push the image
 
-1. Let's work on the jobs you're going to run.
+Let's work on the jobs you're going to run. In this process, you address both the build steps and the deploy steps from the diagram.
 
-    In this process, you address both the build steps and the deploy steps from the diagram.
+The `jobs` key is already set to run on `ubuntu-latest`, which is the environment you want this workflow to run.
 
-    The `jobs` key is already set to run on `ubuntu-latest`, which is the environment you want this workflow to run.
-
-1. Rename the `build` key to `build_push_image`.
+1. Rename the `build` key `build_push_image`.
 
 1. In the `steps` key, delete the last two commands, which are only examples from the template. Your file will look like this example:
 
@@ -123,7 +119,7 @@ You'll build the tagged version by using another workflow.
 
     Leave the `checkout` option like you did when you created the staging image.
 
-1. In the right panel, search for **Build and push Docker images**. Select the first result published by **Docker**.
+1. In the right panel, search for **Build and push Docker images**. Select the first result published by Docker.
 
     :::image type="content" source="../media/6-3-docker-action.png" alt-text="Screenshot that shows the search results that list Build and push Docker images.":::
 
@@ -153,19 +149,19 @@ You'll build the tagged version by using another workflow.
             # uses: docker/build-push-action@ab83648e2e224cfeeab899e23b639660765c3a89
             uses: docker/build-push-action@v1.1.1
             with:
-              # Username used to log in to a Docker registry. If not set then no login will occur
+              # Username used to log in to a Docker registry. If not set, no login will occur
               username: # optional
-              # Password or personal access token used to log in to a Docker registry. If not set then no login will occur
+              # Password or personal access token used to log in to a Docker registry. If not set, no login will occur
               password: # optional
-              # Server address of Docker registry. If not set then will default to Docker Hub
+              # Server address of Docker registry. If not set, will default to Docker Hub
               registry: # optional
               # Docker repository to tag the image with
               repository:
               # Comma-delimited list of tags. These will be added to the registry/repository to form the image's tags
               tags: # optional
-              # Automatically tags the built image with the git reference as per the readme
+              # Automatically tags the built image with the Git reference as per the readme
               tag_with_ref: # optional
-              # Automatically tags the built image with the git short SHA as per the readme
+              # Automatically tags the built image with the Git short SHA as per the readme
               tag_with_sha: # optional
               # Path to the build context
               path: # optional, default is .
@@ -181,7 +177,7 @@ You'll build the tagged version by using another workflow.
               cache_froms: # optional
               # Comma-delimited list of labels to add to the built image
               labels: # optional
-              # Adds labels with git repository information to the built image
+              # Adds labels with Git repository information to the built image
               add_git_labels: # optional
               # Whether to push the image
               push: # optional, default is true
@@ -192,7 +188,7 @@ You'll build the tagged version by using another workflow.
 
     This action gives you several options to adjust the usage. For more information, see the GitHub [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/releases/v1).
 
-1. In the `name` key, rename the value **Build and push production image**.
+1. In the `name` key, rename the value `Build and push production image`.
 
 1. You'll use only a handful of the parameters available for this action. Set the following actions and delete the others.
 
@@ -245,7 +241,7 @@ You'll build the tagged version by using another workflow.
     >
     > For git tags, the reference will be `refs/tags/{git-tag}` and the tag will be `{git-tag}`.
 
-1. To commit the changes, select the green **Start commit** button at the top right. Enter a description for the commit, and then select the **Commit new file** button.
+1. To commit the changes, select the green **Start commit** button at the top right. Enter a description for the commit, and then select the **Commit new file** button:.
 
     This time, the action won't be triggered because you didn't push a new tag. But our earlier action triggers and builds a new `latest` image.
 
