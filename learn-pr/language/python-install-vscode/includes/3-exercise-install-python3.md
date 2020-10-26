@@ -54,9 +54,9 @@ Select **Close**.
 
 ### Step 6 - Check your installation
 
-To confirm that Python 3 installed correctly, type the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
+To confirm that Python 3 installed correctly, type the following command at a Command Prompt and then select the <kbd>Enter</kbd> key:
 
-```bash
+```dos
 py --version
 ```
 
