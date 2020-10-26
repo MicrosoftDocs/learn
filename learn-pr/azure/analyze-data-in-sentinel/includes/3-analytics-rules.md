@@ -33,6 +33,7 @@ Some common attack detection scenarios enabled with Fusion:
 ## Microsoft security
 
 Microsoft security solutions that are connected to Azure Sentinel, can be configured to automatically create incidents from all alerts generated in the connected service.
+For example, Contoso can be alerted, when a user who has been categorized at high risk attempt to sign in and access corporate resources.
 
 The following security solutions can have their alerts passed to Azure Sentinel:
 
@@ -57,7 +58,7 @@ You can filter these alerts by severity and/or by specific text that is containe
 
 ## Machine learning behavioral analytics
 
-These rules are built-in, and you can not edit them, or see the rule settings. They use Microsoft machine learning algorithms for detection of suspicious activity.
+These rules are built-in, and you can not edit them, or see the rule settings. They use Microsoft machine learning algorithms for detection of suspicious activity. Machine Learning algorithms correlate several low fidelity anomalies, into a high fidelity security incidents. That saves hours on digging into thousands of alerts from different products and manually correlate them. Machine learning technology used in analytic rule also reduce the noise of alerts, but quickly ingesting and connecting the important data.
 
 For example, with Machine learning behavioral analytics rule you can detect anomalous SSH Login or RDP Login activity.
 
