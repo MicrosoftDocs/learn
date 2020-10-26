@@ -1,7 +1,7 @@
 Azure Cognitive Services is a set of more than 20 services and APIs for infusing intelligence backed by machine learning and neural networks into the applications that you write. One member of the Cognitive Services family is the Computer Vision API, which can analyze images uploaded to the service. The API supports the following actions:
 
 - Identify objects in images.
-- Generate captions for images (for example, "A child riding a bicycle").
+- Generate captions for images (for example, "A woman riding a bicycle").
 - Use optical character recognition (OCR) to extract text from images.
 - Find faces in images and identify facial attributes like age and gender.
 - Generate "smart thumbnails" centered on the subjects of images. 
@@ -194,7 +194,7 @@ We need to update the **app.py** file and the **index.html** file.
         {% if messages %}
             <script type="text/javascript">
                 // If flash messages are queued up, show them in a modal dialog box
-                var messages = {{ messages | safe }};
+                let messages = {{ messages | safe }};
                 body = $(".modal-body");
                 body.empty();
 

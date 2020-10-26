@@ -40,7 +40,6 @@ units:
 - learn.azure-spring-cloud-workshop.5-build-gateway
 - learn.azure-spring-cloud-workshop.6-configure-distributed-tracing
 - learn.azure-spring-cloud-workshop.7-scale-spring-boot-microservices
-- learn.azure-spring-cloud-workshop.8-configure-ci-cd
 - learn.azure-spring-cloud-workshop.9-conclusion
 badge:
   uid: learn.azure-spring-cloud-workshop.badge
