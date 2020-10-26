@@ -10,19 +10,18 @@ Before you install the required PowerShell module, make sure you have PowerShell
 
 ## Verify installation
 
-Run `(Get-Host).Version` to verify the PowerShell version:
+Run `$PSVersionTable.PSVersion` to verify the PowerShell version:
 
 ```powershell
-(Get-Host).Version
+$PSVersionTable.PSVersion
 ```
 
-The output should be similar to this one:
+The output resembles this:
 
 ```powershell
-Major  Minor  Build  Revision PSSemVerPreReleaseLabel    PSSemVerBuildLabel
-7      1      0      -1       preview.5
-
->
+Major  Minor  Patch  PreReleaseLabel BuildLabel
+-----  -----  -----  --------------- ----------
+7      0      3
 ```
 
 ## Install or update the module

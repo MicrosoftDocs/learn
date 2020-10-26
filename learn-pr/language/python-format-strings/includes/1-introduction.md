@@ -2,7 +2,7 @@ Most programs you build display string output, receive string input, or manipula
 
 Suppose you need to transform data to be used in your program. The data might have extraneous empty space characters or alphanumeric characters, or might be in the wrong case. Or perhaps you need to format the data for display to the end user. You might need to add tabs, add new lines, change the case, or change the alignment.
 
-In this module, you'll use special features of literal strings to add escape codes to insert special characters and create multi-line strings. You'll pass additional optional arguments to the `print()` function to modify how strings are displayed.  You'll use over a dozen different string helper methods to find and replace substrings, add padding, and change alignment. And you'll learn how to avoid string concatenation by using a special string templating syntax.
+In this module, you'll use special features of literal strings to add escape codes to insert special characters and create multi-line strings. You'll pass additional optional arguments to the `print()` function to modify how strings are displayed.  You'll use over a dozen different string helper functions to find and replace substrings, add padding, and change alignment. And you'll learn how to avoid string concatenation by using a special string templating syntax.
 
 By the end of this module, you'll be able to confidently build programs that can manipulate and format strings.
 
