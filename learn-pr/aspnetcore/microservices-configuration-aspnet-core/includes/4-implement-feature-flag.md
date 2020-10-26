@@ -195,12 +195,6 @@ Something similar occurs in the *src\Web\WebSPA\Client\src\modules\orders\orders
 
     And now you just need to deploy the updated chart to AKS.
 
-1. Run the following command to set the environment variables set to the appropriate values:
-
-    ```bash
-    eval $(cat ~/clouddrive/source/create-acr-exports.txt)
-    ```
-
 1. And then run this script to deploy to AKS:
 
     ```bash
@@ -212,7 +206,6 @@ Something similar occurs in the *src\Web\WebSPA\Client\src\modules\orders\orders
 1. Update the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file to disable the coupons feature like this:
 
     ```yaml
-    UseFeatureManagement: "True"
     FeatureManagement__Coupons: "False"
     ```
 
@@ -333,13 +326,7 @@ Just as you did before, begin by building the `webspa` service with the followin
 deploy/k8s/build-to-acr.sh --services webspa
 ```
 
-When the build process finishes, run the following command to set some needed environment variables:
-
-```bash
-eval $(cat ~/clouddrive/source/create-acr-exports.txt)
-```
-
-And then run this script to deploy to AKS:
+Run the following script to deploy to AKS:
 
 ```bash
 deploy/k8s/deploy-application.sh --charts webspa
