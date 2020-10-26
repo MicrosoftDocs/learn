@@ -57,7 +57,7 @@ You can filter these alerts by severity and/or by specific text that is containe
 
 ## Machine learning behavioral analytics
 
-These rules are built-in, and you can not edit the, or see the rule settings. They use Microsoft machine learning algorithms for detection of suspicious activity.
+These rules are built-in, and you can not edit them, or see the rule settings. They use Microsoft machine learning algorithms for detection of suspicious activity.
 
 For example, with Machine learning behavioral analytics rule you can detect anomalous SSH Login or RDP Login activity.
 
