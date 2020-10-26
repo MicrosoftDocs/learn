@@ -55,7 +55,7 @@ To set up the development environment, you will need a Microsoft Windows 10, Lin
 ### Clone the *km* repository to a container volume
 
 1. In Visual Studio Code, in the palette (CTRL+SHIFT+P), run **Remote-Containers: Clone Repository in Container Volume** and clone `https://github.com/MicrosoftDocs/km` to new volume (you can use a dedicated volume or a shared one).
-2. Wait while container is created and repository opened (may take 5 minutes or so)
+2. Wait while the container is created and repository opened (this may take 5 minutes or so).
 3. Then wait while C# components are installed.
 4. After a few seconds, when prompted to restore unresolved .NET dependencies, do so.
 
