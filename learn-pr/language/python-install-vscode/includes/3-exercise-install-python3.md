@@ -209,7 +209,7 @@ Follow these steps to download the Python installer from the Python website.
 
 Go to the [Python download page](https://www.python.org/downloads/?azure-portal=true).
 
-The website should automatically direct you to a page specifically for Mac OS X. Select the **Download Python 3.8.0** button.
+The website should automatically direct you to a page specifically for macOS. Select the **Download Python 3.8.0** button.
 
 You might see a window prompting you to allow downloads from python.org. Select **Allow**.
 
