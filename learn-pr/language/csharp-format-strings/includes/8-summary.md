@@ -1,6 +1,6 @@
 Our company needed to create a personalized marketing message to promote a new financial product to our customers.  Using C#, we were able to write code that combined string and numeric data about our current customers.
 
-We used escape character sequences to insert whitespace, unicode, and other special characters.  We created verbatim string literals to avoid escaping in certain situations.  We exercised different techniques for merging a string template with variables using composite formatting and string interpolation.  The various specifiers allow us to properly format large numbers, currency, and percentages.  The built-in methods on variables of type string allowed us to add padding to left and right align data.
+We exercised different techniques for merging a string template with variables using composite formatting and string interpolation.  The various specifiers allow us to properly format large numbers, currency, and percentages.  The built-in methods on variables of type string allowed us to add padding to left and right align data.
 
 Imagine how much extra work would have required if we didn't have a wealth of string and number formatting tools and techniques available to us in C#.  We would likely attempt to use string concatenation everywhere, possibly making it difficult to maintain or update.
 
