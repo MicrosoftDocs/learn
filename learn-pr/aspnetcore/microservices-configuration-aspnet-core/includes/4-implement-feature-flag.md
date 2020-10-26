@@ -69,7 +69,7 @@ So let's begin with the details.
 1. Install the NuGet package required to use the ASP.NET Core feature manager:
 
     ```dotnetcli
-    pushd src/Web/Web.SPA && \
+    pushd src/Web/WebSPA && \
         dotnet add package Microsoft.FeatureManagement.AspNetCore --version 2.2.0 && \
         popd
     ```
@@ -89,12 +89,11 @@ So let's begin with the details.
 
     The `UseFeatureManagement` property will be our main feature toggle. It isn't something imposed by the Feature Management library. The values above will become the default ones for the SPA.
 
-1. Add the following values to the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file:
+1. In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, uncomment the following lines. Save your changes.
 
-    ```yaml
-    UseFeatureManagement: "True"
-    FeatureManagement__Coupons: "True"
-    ```
+    After the change, your file will resemble the following YAML snippet:
+
+    :::code language="yml" source="../deploy/k8s/helm-simple/webspa/templates/configmap.yaml" highlight="25-26":::
 
 1. Apply the following changes in the *Startup.cs* file:
     1. In the `ConfigureServices` method, replace the comment `// Add the AddFeatureManagement code` with the following code:
@@ -183,7 +182,7 @@ Something similar occurs in the *src\Web\WebSPA\Client\src\modules\orders\orders
 1. To deploy the updated SPA, build and publish a new image to ACR, with this script:
 
     ```bash
-    ./build-to-acr.sh --services webspa
+    deploy/k8s/build-to-acr.sh --services webspa
     ```
 
     The process will take a few minutes and it should begin with something like this:
@@ -205,7 +204,7 @@ Something similar occurs in the *src\Web\WebSPA\Client\src\modules\orders\orders
 1. And then run this script to deploy to AKS:
 
     ```bash
-    ./deploy-application.sh --charts webspa
+    deploy/k8s/deploy-application.sh --charts webspa
     ```
 
     After a few seconds, you should be able to use the app as usual. You won't see any difference now, because the coupon feature is configured as enabled by default.
@@ -220,7 +219,7 @@ Something similar occurs in the *src\Web\WebSPA\Client\src\modules\orders\orders
 1. Redeploy the app again. There's no need to rebuild the image. Just run:
 
     ```bash
-    ./deploy-application.sh --charts webspa
+    deploy/k8s/deploy-application.sh --charts webspa
     ```
 
 If you place an item in the basket and go to check out, you should now see something like this:
@@ -238,7 +237,7 @@ You can also query the features endpoint with `/features?featureName=coupons` to
 1. Run the following script to create an App Configuration store:
 
     ```bash
-    ./create-app-config.sh
+    deploy/k8s/create-app-config.sh
     ```
 
     You should get something like this:
@@ -331,7 +330,7 @@ So all that's left for you to do is redeploy the SPA and check out if this works
 Just as you did before, begin by building the `webspa` service with the following script:
 
 ```bash
-./build-to-acr.sh --services webspa
+deploy/k8s/build-to-acr.sh --services webspa
 ```
 
 When the build process finishes, run the following command to set some needed environment variables:
@@ -343,7 +342,7 @@ eval $(cat ~/clouddrive/source/create-acr-exports.txt)
 And then run this script to deploy to AKS:
 
 ```bash
-./deploy-application.sh --charts webspa
+deploy/k8s/deploy-application.sh --charts webspa
 ```
 
 ## Test the feature toggle
