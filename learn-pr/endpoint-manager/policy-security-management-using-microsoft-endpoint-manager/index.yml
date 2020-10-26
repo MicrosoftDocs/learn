@@ -3,7 +3,7 @@ uid: learn.policy-security-management-using-microsoft-endpoint-manager
 metadata:
   title: Understand Conditional Access policies using Microsoft Endpoint Manager
   description: In this module, you'll learn about policy and security management using Microsoft Endpoint Manager. 
-  ms.date: 09/25/2020
+  ms.date: 10/26/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Learn about common ways to use Conditional Access.
   - Learn about configuring and managing device security.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/policy-security-management-using-microsoft-endpoint-manager.svg
 ratingEnabled: false
 levels:
 - beginner
