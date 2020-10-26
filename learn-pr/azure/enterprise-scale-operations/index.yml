@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.enterprise-scale-operations
 metadata:
-  title: Operational design principles for enterprise-scale architecture 
+  title: Enterprise-scale architecture operational design principles 
   description: Learn how to operationalize an Azure enterprise estate by using centralized management to enable the organization's path to the cloud.
   ms.date: 09/21/2020
   author: ejhenry
   ms.author: erhenry
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Operational design principles for enterprise-scale architecture
+title: Enterprise-scale architecture operational design principles
 summary: Learn how to operationalize an Azure enterprise estate by using centralized management. This approach provides the guardrails needed to enable the organization's path to the cloud.
 abstract: | 
   In this module, you will:
