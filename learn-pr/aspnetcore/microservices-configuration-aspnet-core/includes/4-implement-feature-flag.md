@@ -305,7 +305,7 @@ The preceding command installs a NuGet package containing the .NET Core configur
 
 ### 2. Register App Configuration as a configuration provider
 
-Update the *src/Web/WebSPA/Program.cs* file's `BuildWebHost` method to include the following highlighted code:
+Update the *src/Web/WebSPA/Program.cs* file's `CreateHostBuilder` method to include the following highlighted code:
 
 :::code language="csharp" source="../code/src/web/webspa/program.cs" highlight="8-22":::
 
