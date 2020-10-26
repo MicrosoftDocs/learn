@@ -32,7 +32,7 @@ To set up the development environment, you will need a Microsoft Windows 10, Lin
 
 1. Download and install the [Git client](https://git-scm.com/downloads?azure-portal=true), using the appropriate download for your operating system. You can select the default installation options.
 2. If you are using Windows 10, you must enable the Windows Subsystem for Linux (WSL) 2 before installing Docker. To do this:
-    1. Open Powershell as Administrator and run the following commands:
+    1. Open PowerShell as Administrator and run the following commands:
 
         ```Powershell
         dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
@@ -44,7 +44,7 @@ To set up the development environment, you will need a Microsoft Windows 10, Lin
 
     2. Restart Windows and sign in again.
     3. Download and install the [x64](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi) or [ARM64](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_arm64.msi) version of WSL 2, depending on your hardware architecture.
-    4. Reopen Powershell as Administrator and run the following command:
+    4. Reopen PowerShell as Administrator and run the following command:
 
         ```Powershell
         wsl --set-default-version 2
