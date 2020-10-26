@@ -1,4 +1,4 @@
-_What you can't see, you can't measure. What you can't measure, you can't improve.
+_What you can't see, you can't measure. What you can't measure, you can't improve._
 
 Within an enterprise-scale architecture, management and monitoring focus on ensuring observability as a foundation of platform design. A centralized approach to logging is turned on by default across the Azure estate. Centralized logging prevents gaps in observability that can place an organization at risk.
 
