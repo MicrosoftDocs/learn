@@ -85,7 +85,7 @@ In this exercise, we'll complete the steps needed to run a disaster recovery dri
     > [!NOTE]
     > Both the patient-records and hr-records VMs have been failed over by Azure Site Recovery. The machines are running in their own disaster recovery virtual network.
 
-1. Once we're satisfied with the test results, make sure to capture any notes about the test outcome. We'll now switch back to our **asr-dr-drill** site recovery plan and select the **Cleanup test failover** option to delete the replicated VMs.
+1. Once we're satisfied with the test results, make sure to capture any notes about the test outcome. We'll now switch back to our **asr-dr-drill** Site Recovery plan, and select the **Cleanup test failover** option to delete the replicated VMs.
 
     ![text](../media/5-test-success.png)
 

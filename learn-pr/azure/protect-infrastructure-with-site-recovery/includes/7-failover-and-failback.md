@@ -20,7 +20,7 @@ When a VM is failed over, the replication performed by Azure Site Recovery is no
 
 The flexibility of failing over single VMs, or failover using a recovery plan, can be used to reprotect our failed over infrastructure. We can reprotect each VM individually, or we can reprotect multiple VMs using a recovery plan.
 
-Reprotecting takes anywhere between 45 minutes to 2 hours, dependent on the size and type of VM. Unlike the other Site Recovery processes that can be monitored by watching the progress of the jobs, reprotection progress has to be viewed at the VM level. This requirement is because the synchronization phase isn't listed as a site recovery job.
+Reprotecting takes anywhere between 45 minutes to 2 hours, dependent on the size and type of VM. Unlike the other Site Recovery processes that can be monitored by watching the progress of the jobs, reprotection progress has to be viewed at the VM level. This requirement is because the synchronization phase isn't listed as a Site Recovery job.
 
 ![Screenshot showing the status of the patient-records VM, with the percentage synchronized highlighted](../media/7-reprotection-progress.png)
 
@@ -46,7 +46,7 @@ Even though Azure Site Recovery is automated, errors can still happen. Below is 
 
 #### Azure resource quota issues
 
-Azure Site Recover needs to create resources in different regions. If our subscription isn't able to do this, the replication fails. This error also happens if our subscription doesn't have the right quota limits to create VMs that match the size of the source VMs.
+Azure Site Recovery needs to create resources in different regions. If our subscription isn't able to do this, the replication fails. This error also happens if our subscription doesn't have the right quota limits to create VMs that match the size of the source VMs.
 
 The fix is to contact Azure billing support and ask them to enable creating the correct size VMs in the needed target region.
 
