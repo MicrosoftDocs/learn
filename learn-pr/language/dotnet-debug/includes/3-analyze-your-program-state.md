@@ -2,119 +2,24 @@ In the previous section, you learned that a debugger helps you both control your
 
 Let's start by learning how to configure the Visual Studio Code debugger to use it with .NET.
 
-## Creating a sample .NET project for debugging
+## Configuring Visual Studio Code for .NET debugging
 
-In order to set up Visual Studio Code for .NET debugging, we'll need a .NET project. Visual Studio Code includes an integrated terminal, which makes creating a new project really easy.
-
-1. In Visual Studio Code, select **File** > **Open Folder**.
-
-1. Create a new folder named `DotNetDebugging` in the location of your choice, and then click **Select Folder**.
-
-1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
-
-1. In the terminal window, copy and paste the following command.
-
-    ```dotnetcli
-    dotnet new console
-    ```
-
-    This command creates a **Program.cs** file in your folder with a basic "Hello World" program already written, along with a C# project file named **DotnetDebugging.csproj**.
-
-1. In the terminal window, copy and paste the following command to run the "Hello World" program.
-
-    ```dotnetcli
-    dotnet run
-    ```
-
-    The terminal window displays "Hello world!" as output.
-
-:::image source="../media/new-dotnet-project.png" alt-text="Screenshot of Visual Studio Code with a new console application.":::
-
-## Set up Visual Studio Code for .NET debugging
-
-Open *Program.cs* by clicking on it.
-
-The first time you open a C# file in Visual Studio Code, you will receive a prompt to install recommended extensions for C#. Click the **Install** button in the prompt.
+The first time you open a C# file in Visual Studio Code, you will receive a prompt to install recommended extensions for C#.
 
 :::image source="../media/install-recommended-extensions.png" alt-text="Screenshot of Visual Studio Code prompt to install the C# Extension.":::
 
-Visual Studio Code will install the **C#** extension, and will show an additional prompt to add required assets to build and debug your project. Click the **Yes** button. 
+Visual Studio Code will install the **C#** extension, and will show an additional prompt to add required assets to build and debug your project. 
 
-:::image source="../media/install-required-assets.png" alt-text="Screenshot of Visual Studio Code prompt to add required assets to build and debug your .NET project.":::
+:::image source="../media/install-required-assets.png" alt-text="Screenshot of Visual Studio Code prompt to add required assets to build and debug your .NET project":::
 
-You can close the tab titled "Extension: C#" to focus on the code we'll be debugging.
+ > [!NOTE]
+ > C# language support in Visual Studio Code is an optional [install from the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp). Visual Studio Code will automatically prompt you to install this extension when you open a C# file if you haven't yet. If you're having problems building or debugging your .NET application in Visual Studio Code, you should [verify that your project has the required assets](https://code.visualstudio.com/docs/languages/csharp#_im-missing-required-assets-to-build-and-debug-c-in-vs-code-my-debugger-says-no-configuration) for C# language support. 
 
-## Enhance the app
+## Breakpoints
 
-Our current project just writes a "Hello World" message to the console, which doesn't give us much to debug. Instead, you'll use a short .NET program to compute the *N*<sup>th</sup> number of the Fibonacci sequence.
+As you learned in the previous section, a debugger helps you analyze and control your program's execution. When you start the Visual Studio Code debugger, it immediately begins executing your code. Since your code is executed really quickly, you need to be able to pause the program on any statement. You'll use *breakpoints* to do that.
 
-The Fibonacci sequence is a suite of numbers that starts with the number 0 and 1, with every other following number being the sum of the two previous ones. The sequence continues like that:
-
-```text
-0, 1, 1, 2, 3, 5, 8, 13, 21...
-```
-
-1. Open *Program.cs* by clicking on it.
-
-1. Replace the contents of the *Program.cs* with the following code:
-
-    ```csharp
-    using System;
-    
-    namespace DotNetDebugging
-    {
-        class Program
-        {
-            static void Main(string[] args)
-            {
-                int result = Fibonacci(5);
-                Console.WriteLine(result);
-            }
-            static int Fibonacci(int n)
-            {
-                int n1 = 0;
-                int n2 = 1;
-                int sum = 0;
-    
-                for (int i = 2; i < n; i++)
-                {
-                    sum = n1 + n2;
-                    n1 = n2;
-                    n2 = sum;
-                }
-    
-                return n == 0 ? n1 : n2;
-            }
-    
-        }
-    }
-    ```
-    > [!NOTE]
-    > This code contains an error, which we'll be debugging later in this module. We don't recommend that you use it in any mission critical Fibonacci applications until we get that bug fixed.
-
-1. Save your changes.
-
-1. Let's get a look at how the updated code works before debugging it. Run the program by typing the following in the Terminal:
-
-   ```dotnetcli
-   dotnet run
-   ```
-
-   :::image type="content" source="../media/run-modified-program.png" alt-text="Terminal window with modified program output":::
-
-1. You'll see that the result, 3, is shown in the terminal output. Consulting your Fibonacci chart, you'll see that the result should have been 5. It's time to get familiar with the debugger and fix this program.
-
-1. Press any key to exit the program.
-
-### Add breakpoints
-
-In Visual Studio Code, select the **Run** tab to access the debugger tool.
-
-:::image source="../media/run-tab.png" alt-text="Screenshot of Visual Studio Code debug tab.":::
-
-When you start the Visual Studio Code debugger, it immediately begins executing your code. If your program ends quickly, you might not even have the chance to interact with the debugger. That's why you might want to add some breakpoints before you start it.
-
-To add a breakpoint in your code, open your `Program.cs` file and then select the left side of the line number, on the line you want to break. You should see a red circle after the breakpoint is enabled. To remove it, select the red circle again.
+You can add a breakpoint in Visual Studio Code by clicking to the left side of the line number, on the line you want to break. You should see a red circle after the breakpoint is enabled. To remove it, select the red circle again.
 
 :::image source="../media/breakpoint.png" alt-text="Screenshot of a breakpoint added in the Visual Studio Code editor window.":::
 
@@ -213,7 +118,7 @@ From left to right, the controls are:
 
 The debug console can be shown or hidden by selecting **Ctrl+Shift+Y** (Windows, Linux) or **Cmd+Shift+Y** (Mac). It can be used to visualize your application console logs and to evaluate expressions or execute code in the current execution content, like commands or variable names the built-in .NET debugger.
 
-You can enter a .NEt expression in the input field at the bottom of the debug console. Then select **Enter** to evaluate it. The result displays directly in the console.
+You can enter a .NET expression in the input field at the bottom of the debug console. Then select **Enter** to evaluate it. The result displays directly in the console.
 
 :::image source="../media/debug-console.png" alt-text="Screenshot of Visual Studio Code debugger execution controls.":::
 

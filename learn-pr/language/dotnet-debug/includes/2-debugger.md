@@ -15,7 +15,7 @@ While you might have various degrees of success with these methods, there's one 
 
 A debugger is a software tool used to observe and control the execution flow of your program with an analytical approach. Its design goal is to help find the root cause of a bug and help you resolve it. It works by either hosting your program in its own execution process or running as a separate process that's attached to your running program, like .NET.
 
-Debuggers come in different flavors. Some work directly from the command line while others come with a graphical user interface. In this module, we'll use both the built-in command-line debugger that comes with .NET and the integrated graphical debugger of Visual Studio Code.
+Debuggers come in different flavors. Some work directly from the command line while others come with a graphical user interface. In this module, we'll use the integrated graphical debugger of Visual Studio Code.
 
 ## Why use a debugger
 

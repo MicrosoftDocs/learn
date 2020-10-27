@@ -9,7 +9,7 @@ metadata:
   ms.date: 10/08/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 12
+durationInMinutes: 20
 content: |
   [!include[](includes/4-use-vs-code-debugger.md)]
   
