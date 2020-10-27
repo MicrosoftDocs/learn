@@ -42,7 +42,7 @@ In this exercise, you'll:
 
         # Steps represent a sequence of tasks that will be executed as part of the job
         steps:
-          # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+          # Checks out your repository under $GITHUB_WORKSPACE, so your job can access it
           - uses: actions/checkout@v2
 
           # Runs a single command using the runners shell
@@ -60,7 +60,9 @@ In this exercise, you'll:
 
     :::image type="content" source="../media/6-2-example-editor.png" alt-text="Screenshot that shows an example file being edited in the Edit new file pane on the GitHub website.":::
 
-1. Change the `name` key to `Build and push the tagged build to production`. Your file will look like this example:
+1. Change the `name` key to `Build and push the tagged build to production`. 
+
+   Your file should look like this example:
 
     ```yaml
     # This is a basic workflow to help you get started with Actions
@@ -72,7 +74,7 @@ In this exercise, you'll:
 
 1. Change the default triggers in the `on` key.
 
-    Remove the second trigger and leave only the `push` tags. 
+1. Remove the second trigger and leave only the `push` tags. 
     
     The keys should look like this example:
 
@@ -84,7 +86,7 @@ In this exercise, you'll:
         branches: [ main ]
     ```
 
-    Remove the `branches` key and replace it with the `tags` key. This tag says that you'll run this workflow only on specific tags.
+1. Remove the `branches` key and replace it with the `tags` key. This tag says that you'll run this workflow only on specific tags.
 
     ```yaml
     name: Build and push the tagged build to production
@@ -105,7 +107,9 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
 1. Rename the `build` key `build_push_image`.
 
-1. In the `steps` key, delete the last two commands, which are only examples from the template. Your file will look like this example:
+1. In the `steps` key, delete the last two commands, which are only examples from the template. 
+
+   Your file should look like this example:
 
     ```yaml
     name: Build and push the tagged build to production
@@ -129,11 +133,13 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     :::image type="content" source="../media/6-3-docker-action.png" alt-text="Screenshot that shows the search results that list Build and push Docker images.":::
 
-    In the panel for the search result item, select the copy icon to copy the usage YAML.
+1. In the panel for the search result item, select the copy icon to copy the usage YAML.
 
     :::image type="content" source="../media/6-4-docker-copy.png" alt-text="Screenshot that shows the copy icon selected in the Build and push Docker images pane.":::
 
-1. Paste the copied YAML below the `- uses: actions/checkout@v2` key. Your YAML file should look like the following example:
+1. Paste the copied YAML below the `- uses: actions/checkout@v2` key. 
+
+   Your YAML file should look like this example:
 
     ```yaml
     name: Build and push the tagged build to production
@@ -192,9 +198,9 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
     > [!IMPORTANT]
     > Be careful with indentation when you use YAML. The `name` key should be aligned with the preceding `uses` key.
 
-    This action gives you several options to adjust the usage. For more information, see the GitHub [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/releases/v1).
+    This action gives you several options to adjust the usage. For more information, see the GitHub [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/releases/v1?azure-portal=true).
 
-1. In the `name` key, rename the value `Build and push production image`.
+1. Rename the `name` key `Build and push production image`.
 
 1. You'll use only a handful of the parameters available for this action. Set the following actions and delete the others.
 
@@ -239,13 +245,10 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     The `tag_with_ref` key is a handy parameter that automatically tags the image with the tag name. As described in the documentation, it:
 
-    > Automatically tags the built image with the git reference. The format of the tag depends on the type of git reference with all forward slashes replaced with `-`.
-    >
-    > For pushes to a branch the reference will be `refs/heads/{branch-name}` and the tag will be `{branch-name}`. If `{branch-name}` is master then the tag will be latest.
-    >
-    > For pull requests the reference will be `refs/pull/{pull-request}` and the tag will be `pr-{pull-request}`.
-    >
-    > For git tags, the reference will be `refs/tags/{git-tag}` and the tag will be `{git-tag}`.
+    - Automatically tags the built image with the git reference. The format of the tag depends on the type of git reference. All forward slashes are replaced with `-`.
+    - For pushes to a branch, the reference will be `refs/heads/{branch-name}` and the tag will be `{branch-name}`. If `{branch-name}` is master, the tag will be `latest`.
+    - For pull requests, the reference will be `refs/pull/{pull-request}` and the tag will be `pr-{pull-request}`.
+    - For git tags, the reference will be `refs/tags/{git-tag}` and the tag will be `{git-tag}`.
 
 1. To commit the changes, select the green **Start commit** button at the top right. Enter a description for the commit, and then select the **Commit new file** button.
 

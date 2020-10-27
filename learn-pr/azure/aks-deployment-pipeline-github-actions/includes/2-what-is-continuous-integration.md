@@ -6,7 +6,7 @@ Let's explore some of the concepts behind CI and CD. In this unit, we learn what
 
 CI and CD are operating practices that can help make developer teams more productive by introducing continuous automation and monitoring into all the phases of software development, testing, and deployment. CI and CD aim to reduce problems that result when you integrate new code into an existing code base.
 
-### CI
+### Continuous integration (CI)
 
 CI dictates that teams frequently implement and integrate the smallest changes in the code. Implementing this technique means that you constantly test, compile, deploy, and then test again in production.
 
@@ -14,13 +14,13 @@ One of the most critical CI principles is that you merge all the newest changes 
 
 The goal of CI is to avoid production problems caused by code changes by detecting problems before they can cause real damage to you or your customers.
 
-### CD
+### Continuous delivery (CD)
 
 CD picks up where CI ends. CD automates the delivery process to the selected infrastructure environment. You can use CD to release new changes to your customers quickly and sustainably.
 
 When you use CD, you decide in advance whether you deploy the changes daily, weekly, monthly, or on another schedule that suits your business requirements.
 
-#### Continuous deployment
+### Continuous deployment
 
 A variation to the CD process is *continuous deployment*. Continuous deployment goes one step further than continuous delivery. In this variation, every change that passes all the stages of your CI pipeline is automatically released to customers.
 
@@ -28,13 +28,13 @@ Continuous deployment is one of the most advanced processes in software developm
 
 ## CI pipelines
 
-A CI pipeline is the processes that run when a new code change is detected. Every time a code change triggers a CI run, all steps in the pipeline are executed. If there's an error in one of these steps, the pipeline stops executing.
+A CI pipeline is collectively the processes that run when a new code change is detected. Every time a code change triggers a CI run, all steps in the pipeline execute. If there's an error in one of these steps, the pipeline stops.
 
-An event triggers a pipeline. A large number of events are triggered during software development. The CI provider needs to support all events. When an event is triggered, all the listeners for this specific event are triggered. The first stage of the process starts. 
+An event triggers a pipeline. A large number of events are triggered during software development. The CI provider needs to support all related events. When an event is triggered, all the listeners for this specific event are triggered. The first stage of the process starts. 
 
-In most cases, the process begins by cloning or downloading the source code. When that step is finished, subsequent steps are triggered.
+In most cases, the process begins by cloning or downloading source code. Then, the next step is triggered, and so on.
 
-Workflows can contain logic jumps so that a stage isn't executed if certain conditions are met, but the process continues to execute.
+Workflows can contain logic jumps so that a stage doesn't execute if certain conditions are met, but the pipeline continues to execute.
 
 ## GitHub Actions
 

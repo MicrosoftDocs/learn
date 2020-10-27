@@ -347,7 +347,7 @@ Now, you have access to your cluster and you have Helm installed. The next step 
 
     Save the secret and close the browser tab.
 
-1. To commit the changes, select the green **Start commit** button at the top right. Enter a description for the commit, and then select the **Commit new file** button:
+1. To commit the changes, select the green **Start commit** button. Enter a description for the commit, and then select **Commit new file**:
 
     :::image type="content" source="../media/6-5-commit-staging.png" alt-text="Screenshot that shows the Start commit and Commit new file button in the Commit new file pane.":::
 
@@ -502,7 +502,7 @@ With the staging workflow created, the next step is to create the production wor
                 --set image.tag=${GITHUB_REF##*/}
     ```
 
-1. To commit the changes, select the green **Start commit** button at the top right. Enter a description for the commit, and then select the **Commit new file** button:
+1. To commit the changes, select the green **Start commit** button. Enter a description for the commit, and then select **Commit new file**.
 
 1. In Cloud Shell, run `git pull` to fetch the latest changes. Then, run the following command to tag and push the changes:
 

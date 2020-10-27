@@ -1,8 +1,8 @@
-With a good understanding of the concepts behind CI and CD, let's plan our pipeline based on our project's needs.
+With a good understanding of the concepts behind CI and CD, let's plan our pipeline based on the needs of our project.
 
-To support a CI pipeline, Contoso wants a website to be published in AKS after a successful tagged push to the main branch. is design makes it easier to check the version of each deployment that went to production. Tags are used for routing when you push container images to an image registry.
+To support a CI pipeline, Contoso wants a website to be published in AKS after a successful tagged push to the main branch. This design makes it easier to check the version of each deployment that went to production. You use tags for routing when you push container images to an image registry.
 
-The project leads also want to test the website in a staging environment at every successful push to the main branch, whether or not the push is tagged. Let's design this pipeline.
+The project leads also want to test the website in a staging environment at every successful push to the main branch, regardless of whether the push is tagged. Let's design this pipeline.
 
 ## Design the pipeline
 

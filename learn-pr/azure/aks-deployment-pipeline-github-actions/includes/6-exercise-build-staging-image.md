@@ -75,11 +75,11 @@ In this exercise, you'll:
 
 ## Create the trigger
 
-    The default file comes with two triggers:
+The default file comes with two triggers:
 
-    * Any push to the main branch.
+* Any push to the main branch.
 
-    * Any pull request on the main branch.
+* Any pull request on the main branch.
 
 1. Change the default triggers in the `on` key.
 
@@ -107,7 +107,9 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
 1. Rename the `build` key `build_push_image`.
 
-1. In the `steps` key, delete the last two commands, which are only examples from the template. Your file will look like this example:
+1. In the `steps` key, delete the last two commands, which are only examples from the template. 
+
+   Your file should look like this example:
 
     ```yaml
     name: Build and push the latest build to staging
@@ -134,11 +136,13 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     :::image type="content" source="../media/6-3-docker-action.png" alt-text="Screenshot that shows the search results that list Build and push Docker images.":::
 
-    In the panel for the search result item, select the copy icon to copy the usage YAML.
+    In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
 
     :::image type="content" source="../media/6-4-docker-copy.png" alt-text="Screenshot that shows the copy icon selected in the Build and push Docker images pane.":::
 
-1. Paste the copied YAML below the `- uses: actions/checkout@v2` key. Your YAML file should look like the following example:
+1. Paste the copied YAML below the `- uses: actions/checkout@v2` key. 
+
+    Your YAML file should look like this example:
 
     ```yaml
     name: Build and push the latest build to staging
@@ -196,9 +200,9 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
     > [!IMPORTANT]
     > Be careful with indentation when you use YAML. The `name` key should be aligned with the preceding `uses` key.
 
-    You can adjust usage for this action. For more information, see the [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/releases/v1).
+    You can adjust usage for this action. For more information, see the [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/releases/v1?azure-portal=true).
 
-1. In the `name` key, rename the value `Build and push staging image`.
+1. Rename the `name` key `Build and push staging image`.
 
 1. You'll use only a handful of the parameters that are available for this action. Set the following actions and delete the others.
 
@@ -214,7 +218,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     You can delete all the other keys because we won't use them in this exercise.
     
-    Your file should look like the following example:
+    Your file should look like this example:
 
     ```yaml
     name: Build and push the latest build to staging
@@ -240,9 +244,9 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
               tags: latest
     ```
 
-1. To commit the changes, select the green **Start commit** button at the top right. Enter a description for the commit, and then select the **Commit new file** button:
+1. To commit the changes, select the green **Start commit** button. Enter a description for the commit, and then select the **Commit new file** button:
 
-    :::image type="content" source="../media/6-5-commit-staging.png" alt-text="Screenshot that shows the Start commit and Commit new file button in the Commit new file pane.":::
+    :::image type="content" source="../media/6-5-commit-staging.png" alt-text="Screenshot that shows the Start commit and Commit new file buttons in the Commit new file pane.":::
 
     Selecting the **Commit new file** button triggers a new build to start on the **Actions** tab. This build will fail because you haven't set the secrets yet!
 
@@ -250,7 +254,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
 ## Set the secrets
 
-1. On the repository start page, select the **Settings** tab. Scroll down and select **Secrets** in the menu.
+1. On the repository start page, select the **Settings** tab. In the menu, select **Secrets**.
 
 1. Select **New secret**.
 

@@ -1,10 +1,10 @@
 Now that we understand what we need to do, let's create our resources and publish our pipeline.
 
 > [!IMPORTANT]
-> To run this exercise, you need your own:
+> To run this exercise, you need:
 >
-> - GitHub account. If you don't already have a GitHub account, create a [free account](https://github.com) before you begin.
-> - Azure subscription. You might incur charges. If you don't already have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+> - Your own GitHub account. If you don't already have a GitHub account, create a [free account](https://github.com?azure-portal=true) before you begin.
+> - Your own Azure subscription. You might incur charges. If you don't already have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 ## Set up the project
 

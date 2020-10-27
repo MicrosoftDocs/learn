@@ -235,7 +235,7 @@ This file should have the same structure of the file you use to call variables. 
 
 Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Values.image.tag` in the deployment.yaml file.
     
-1. Create the values.yaml file so that it looks like this example:
+1. Create the **values.yaml** file so that it looks like this example:
 
     ```yaml
     image:

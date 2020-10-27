@@ -2,7 +2,7 @@ You have successfully built and pushed both your staging and production images t
 
 But, there's a problem. Your workloads aren't generic enough, so you can't deploy them automatically. Instead, you must manually change the files every time. 
 
-As a solution, you'll use a Helm chart.
+As a solution, you'll create and use a Helm chart.
 
 ## Helm charts
 
@@ -10,7 +10,7 @@ Helm is an open-source packaging tool that helps you install and manage the life
 
 A Kubernetes chart is a group of one or more workloads that are packaged with configuration files and a chart description file. When packaged in a chart, the files can easily be deployed as a unit to a Kubernetes cluster.
 
-One of the top advantages of using Helm is that you don't need to deploy all files individually. Instead, you can issue a single command to deploy the chart. You can even deploy multiple dependent charts, with an automatic dependency resolution.
+One of the top advantages of using Helm is that you don't need to deploy files individually. Instead, you can issue a single command to deploy the chart. You can even deploy multiple dependent charts, with an automatic dependency resolution.
 
 Here's the structure of a Helm chart directory:
 
