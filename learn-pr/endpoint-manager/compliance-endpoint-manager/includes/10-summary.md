@@ -11,7 +11,7 @@ In this module, you've learned about the possible migration path to Microsoft En
 - Endpoint analytics
 - Connector status
 - Client health with co-management
-- 
+
 ## Learn more
 
 For additional information about Microsoft Endpoint Manager, see the following resources:
