@@ -2,9 +2,9 @@ Your customized container is coming along great for your agency. With the power 
 
 ## Intro to installing additional software
 
-Additional software could include another tech stack for your agency. For instance, you may want to include Node.js in any of your dev containers since you know that's included in a lot of development workflows. 
+Additional software could include another tech stack for your agency. For instance, you may want to include Node.js in any of your dev containers since you know that's part of a lot of development workflows. 
 
-When you ran **Remote-Containers: Add Development Container Configuration Files...**, a `.devcontainer` folder was added to your app, which included a `devcontainer.json` and a Dockerfile. These files came from the [VS Code dev containers](https://github.com/microsoft/vscode-dev-containers) repo. While this repo gives us a lot of great options for our team, we still may want to iterate on them even further by installing more software.
+When you ran **Remote-Containers: Add Development Container Configuration Files...**, a ".devcontainer" folder was added to your app, which included a `devcontainer.json` and a Dockerfile. These files came from the [VS Code dev containers](https://github.com/microsoft/vscode-dev-containers) repo. While this repo gives us a lot of great options for our team, we still may want to iterate on them even further by installing more software.
 
 ## Methods to install software
 
@@ -13,13 +13,13 @@ You could install software via the integrated terminal. Most container images ar
 > [!IMPORTANT]
 > Whenever you install something from `apt-get`, run an `apt-get update` first. This command updates the list of packages and package repos so that you have the most current list cached.
 
-But if you make changes to your `.devcontainer` folder and need to rebuild your container, you'll have to reinstall anything you've installed manually. To avoid this problem, you can use the `postCreateCommand` property in `devcontainer.json`, as mentioned in the previous section.
+But if you make changes to your ".devcontainer" folder and need to rebuild your container, you'll have to reinstall anything you've installed manually. To avoid this problem, you can use the `postCreateCommand` property in `devcontainer.json`, as mentioned in the previous section.
 
 However, the most efficient practice of all that persists your changes even after rebuilding is to install software through your Dockerfile.
 
 ## Installing software via Dockerfile 
 
-A look at installing software via Dockerfile is as follows:
+A look at installing software via the Dockerfile is as follows:
 
 ```Dockerfile
 FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:0-12

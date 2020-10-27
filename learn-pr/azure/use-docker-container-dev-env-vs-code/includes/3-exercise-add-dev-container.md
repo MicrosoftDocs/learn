@@ -36,8 +36,8 @@ For now, dismiss this notification.
 
 ## Inspect configuration files
 
-1. Notice that a new folder has been added to the project call .devcontainer
-1. Expand that folder and notice that it contains both a `Dockerfile` and a `devcontainer.json` file.
+1. Notice that a new folder has been added to the project called ".devcontainer"
+1. Expand that folder and notice that it contains both a `Dockerfile` and a `devcontainer.json` file
 
 ## Open the project in a container
 
@@ -48,7 +48,7 @@ For now, dismiss this notification.
 The container will begin building. This may take a few minutes as a new image has to be pulled down and built on your machine. Once the container has been built the first time, subsequent builds will be much faster.
 
 > [!IMPORTANT]
-> If you are on Windows, you may see a Windows Notification from Docker Desktop warning you that performance my be affected. You can safely ignore this warning for this tutorial. TODO - Need more info on how to explain this to people and what to recommend.
+> If you are on Windows, you may see a Windows Notification from Docker Desktop warning you that performance may be affected. You can safely ignore this warning for this tutorial. TODO - Need more info on how to explain this to people and what to recommend.
 
 ## Inspect the container
 
@@ -58,7 +58,7 @@ The container will begin building. This may take a few minutes as a new image ha
 
         python --version
 
-    The terminal should output "Python 3.9.0"
+    The terminal should output the version of Python being used in the container, i.e. "Python 3.9.0"
 
 ## Install Project Dependencies
 
@@ -80,4 +80,4 @@ The container will begin building. This may take a few minutes as a new image ha
 
 Great work! You've got a Python web application with Flask running on your machine and you might not know what either of those things even are. That's OK! You don't have to. The container takes care of setting up the entire environment.
 
-You may have noticed in that last notification that VS Code said that "127.0.0.1:5000 on remote is now forwarded to 127.0.0.1:5000 locally". This is called "Port Forwarding", and it's what allows you to access an application running inside the container. In the next section, you'll learn more about Port Forwarding and how you can use it to make anything in a container feel like it's running locally.
+You may have noticed in that last notification that VS Code said that "127.0.0.1:5000 on remote is now forwarded to 127.0.0.1:5000 locally." This is called "Port Forwarding," and it's what allows you to access an application running inside the container. In the next section, you'll learn more about Port Forwarding and how you can use it to make anything in a container feel like it's running locally.

@@ -2,15 +2,16 @@ When working on a project requiring port forwarding, you may want to modify the 
 
 ## Open the Remote Explorer
 
-1. Open the Command Palette
+1. Press <kbd>F1</kbd> to open the Command Palette
 1. Type "remote explorer" and select "View: Show Remote Explorer"
 1. Ensure you have "Containers" selected from the top dropdown menu
+1. Observe port 5000 is forwarded
 
 ![Remote Explorer with containers view](../media/Remote-explorer-containers.png)
 
 ## Launch the forwarded port
 
-1. Select the globe icon next to 5000 -> 127.0.0.1:5000 to "Open in Browser" 
+1. Select the globe icon next to 5000 -> 127.0.0.1:5000 to open your app in a browser
 1. Your app will launch at http://127.0.0.1:5000/
 
 ## Stop forwarding a port
@@ -26,7 +27,7 @@ When working on a project requiring port forwarding, you may want to modify the 
 In case you no longer want to use localhost port 5000, let's forward to a new port. 
 
 1. Select the + next to port 5000 (or right-click -> Forward Port)
-1. Notice it automatically maps to port 5000. If you'd like to map to a different port, right-click, select Change Local Port, and type a new port of your choosing, i.e. 5001
+1. Notice it automatically maps to port 5000. If you'd like to map to a different port, right-click, select "Change Local Port," and type a new port of your choosing, i.e. 5001
 1. Navigate to http://127.0.0.1:5001/ and notice your web app loads
 
 ## Stop web app
@@ -47,4 +48,4 @@ In case you no longer want to use localhost port 5000, let's forward to a new po
 
 Great work! We've now explored port forwarding with a dev container in VS Code. 
 
-Rather than using the Remote Explorer or the **Forward a Port** command, you could also specify a list of ports you always want to forward when attaching or opening a folder in container through the `forwardPorts` property in `devcontainer.json`. We'll explore customizing our container's setup through properties like this in `devcontainer.json` in the next section.
+Rather than using the Remote Explorer or **Forward a Port** command from the Command Palette, you could also specify a list of ports you always want to forward when attaching or opening a folder in container through the `forwardPorts` property in `devcontainer.json`. We'll explore customizing our container's setup through properties like this in `devcontainer.json` in the next section.

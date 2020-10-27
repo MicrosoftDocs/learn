@@ -18,11 +18,11 @@ You can seamlessly switch your entire development environment just by connecting
 
 ## Adding a dev container to a project
 
-VS Code has an interface for selecting a pre-configured development container definition. This adds a `.devcontainer` folder to your project.
+VS Code has an interface for selecting a pre-configured development container definition. This adds a ".devcontainer" folder to your project.
 
 ### About the .devcontainer folder
 
-The `.devcontainer` folder contains two files - a `Dockerfile` and a `devcontainer.json` file. These two files allow you to define the container environment and control the configuration of your project within that container.
+The ".devcontainer" folder contains two files - a `Dockerfile` and a `devcontainer.json` file. These two files allow you to define the container environment and control the configuration of your project within that container.
 
 #### Dockerfile
 

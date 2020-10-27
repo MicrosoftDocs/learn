@@ -10,7 +10,7 @@ Before you make tweaks to the container configuration, you need to reopen the pr
 
 ## Install VS Code extensions
 
-The container comes with the Microsoft Python extension, which enables snippets, linting and intellisense in Python files. But the "index.html" file the in "templates" folder is a Jinja template and a different extension needs to be installed to get syntax highlighting in that file.
+The container comes with the Microsoft Python extension, which enables snippets, linting and intellisense in Python files. But the "index.html" file the in "templates" folder is a Jinja template, and a different extension needs to be installed to get syntax highlighting in that file.
 
 1.  Open the Command Palette
 1.  Type "extension" and select "Extesions: Install Extensions"
@@ -30,8 +30,9 @@ While VS Code automatically detects and forwards port 5000, it's a good practice
 
 1. Open the `devcontainer.json` file in the ".devcontainer" folder
 1. Uncomment out the "forwardPorts" option, and add 5000 to the array
-   // Use 'forwardPorts' to make a list of ports inside the container available locally
-   "forwardPorts": [5000],
+
+        // Use 'forwardPorts' to make a list of ports inside the container available locally
+        "forwardPorts": [5000],
 
 ## Automate dependency installation
 
@@ -52,11 +53,11 @@ This will cause the container to be rebuilt with the changes you've specified he
 
 1. Open the Command Palette
 1. Type "remote explorer" and select "View: Show Remote Explorer"
-1. Notice that port 5000 is already forwarded, even though you haven't started the app yet.
+1. Notice that port 5000 is already forwarded, even though you haven't started the app yet
 
 ## Examine syntax highlighting provided by Jinja extension
 
-1. Open the "template/index.html" file.
+1. Open the "template/index.html" file
 1. Scroll down to line 33 and notice that their is syntax highlighting on the "for" loop
    :::image type="content" source="../media/for-loop.jpg" alt-text="for loop with syntax highlighting":::
 

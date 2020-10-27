@@ -2,11 +2,11 @@ Now that you've gotten a web app running on your machine using a dev container, 
 
 ## What is port forwarding?
 
-Containers are isolated environments, so if you want to access a server, service, or other resource inside your container, you'll need to forward the port to your host.
+Containers are isolated environments, so if you want to access a server, service, or other resource inside your container, you'll need to forward the port to your local machine (which is known as the host).
 
 ## How do we forward ports in containers?
 
-In the last exercise, VS Code forwarded the port for you container automatically. The notification read, "127.0.0.1:5000 on remote is now forwarded to 127.0.0.1:5000 locally," meaning your web app was running at port 5000 in the dev container and was sent to port 5000 of your host machine.
+In the last exercise, VS Code forwarded the port for your container automatically. The notification read, "127.0.0.1:5000 on remote is now forwarded to 127.0.0.1:5000 locally," meaning your web app was running at port 5000 in the dev container and was sent to port 5000 of your host machine.
 
 ### Varying port numbers
 
@@ -19,3 +19,5 @@ You can forward a new port for the duration of the session by running the **Forw
 You can work with your forwarded ports by navigating to the "Forwarded Ports" section of the Remote Explorer. There you can view what ports are currently forwarded, add a new port, or right-click -> and modify your port or open it in a browser, as shown below.
 
 ![Port forwarding right click view](../media/Forward-port-right-click.png)
+
+In the next section, you'll take a closer look at your forwarded ports and make some changes to understand it even better.
