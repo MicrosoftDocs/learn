@@ -31,20 +31,6 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --subnet-prefix 10.10.1.0/24
     ```
 
-1. Run this command to deploy a VM in **FrontendSubnet**. Replace `<password>` with a complex password of your choice.
-
-    ```azurecli
-    az vm create \
-        --resource-group $RG \
-        --no-wait \
-        --name FrontendVM \
-        --vnet-name MyVNet1 \
-        --subnet FrontendSubnet \
-        --image Win2012R2Datacenter \
-        --admin-username azureuser \
-        --admin-password <password>
-    ```
-
 1. Run this command to create the subnet called **BackendSubnet**.
 
     ```azurecli
@@ -55,18 +41,54 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --vnet-name MyVNet1
     ```
 
+1. Run this command to deploy a VM in **FrontendSubnet**. Replace `<password>` with a complex password of your choice.
+
+    ```azurecli
+    az vm create \
+        --resource-group $RG \
+        --name FrontendVM \
+        --vnet-name MyVNet1 \
+        --subnet FrontendSubnet \
+        --image Win2019Datacenter \
+        --admin-username azureuser \
+        --admin-password <password>
+    ```
+
+1. Run the following command to install IIS on **FrontendVM**.
+
+    ```azurecli
+    az vm extension set \
+        --publisher Microsoft.Compute \
+        --name CustomScriptExtension \
+        --vm-name FrontendVM \
+        --resource-group $RG \
+        --settings '{"commandToExecute":"powershell.exe Install-WindowsFeature -Name Web-Server"}' \
+        --no-wait
+    ```
+
 1. Run this command to deploy a virtual machine in **BackendSubnet**. Replace `<password>` with a complex password of your choice.
 
     ```azurecli
     az vm create \
         --resource-group $RG \
-        --no-wait \
         --name BackendVM \
         --vnet-name MyVNet1 \
         --subnet BackendSubnet \
-        --image Win2012R2Datacenter \
+        --image Win2019Datacenter \
         --admin-username azureuser \
         --admin-password <password>
+    ```
+
+1. Run the following command to install IIS on **BackendVM**.
+
+    ```azurecli
+    az vm extension set \
+        --publisher Microsoft.Compute \
+        --name CustomScriptExtension \
+        --vm-name BackendVM \
+        --resource-group $RG \
+        --settings '{"commandToExecute":"powershell.exe Install-WindowsFeature -Name Web-Server"}' \
+        --no-wait
     ```
 
 1. Run this command to create a network security group (NSG).
