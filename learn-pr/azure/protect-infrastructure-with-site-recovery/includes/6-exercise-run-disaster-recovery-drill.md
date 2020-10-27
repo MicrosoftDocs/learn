@@ -43,7 +43,7 @@ In this exercise, you'll complete the steps needed to run a disaster recovery dr
 
     ![Screenshot showing the recovery plan details, highlighting the Test failover button](../media/6-recovery-plan-details.png)
 
-    > [IMPORTANT]
+    > [!IMPORTANT]
     > The network configuration failover support for each VM can take several minutes to auto configure as each VM also needs to complete an initial synchronization. Running a failover test may not be available immediately.
 
 1. In the **From** region field, select **West US 2**.
