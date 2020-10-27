@@ -46,4 +46,24 @@ There are several different GUIs available for Git, such as GitHub Desktop. Many
 
 The exercises in this module use the Git command line — specifically, Git commands executed in Azure's Cloud Shell. However, Git's command-line interface works the same no matter what operating system you're using. Plus, the command line lets you tap into *all* of Git's functionality. Developers who see Git only through a GUI sometimes find themselves confronted with error messages they can't resolve, and have to resort to the command line to get going again.
 
+## Git and GitHub 
+
+As you work with **Git**, you may wonder about the difference between the features it offers, and the features offered on [GitHub](https://github.com).  
+
+As mentioned earlier, **Git** is a distributed version control system (DVCS) that allows multiple developers and other contributors to work on a project. It provides a way to work with one or more local branches and push them to a remote repository.  
+
+**GitHub** is a cloud platform that uses Git as its core technology. It simplifies the process of collaborating on projects and provides a website, additional command-line tools, and overall flow that allows developers and users to work together. GitHub acts as the "remote repository" mentioned earlier.
+
+Key features provided by GitHub include:
+- Issues
+- Discussions
+- Pull requests
+- Notifications
+- Labels
+- Actions
+- Forks
+- Projects
+
+To learn more about **GitHub**, see the [Introduction to GitHub](https://docs.microsoft.com/en-us/learn/modules/introduction-to-github) Microsoft Learn module or the [Getting started with GitHub](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github) help documentation. 
+
 The next step is to try out Git for yourself!
