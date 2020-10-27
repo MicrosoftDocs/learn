@@ -61,7 +61,7 @@ Now you're ready to run the modified code and update the index with the output f
 5. When the prompt is redisplayed, press **4** to recreate the indexer.
 6. When the prompt is redisplayed, press **5** to reset and rerun the index.
 7. When the prompt is redisplayed, press **q** to quit the program.
-9. Open your search service in the [Azure portal](https://portal.azure.com?portal=true) and view its **Indexers** tab to confirm that the indexer has run successfully (if it is still in-progress, wait for it to complete - it may initially fail and then rerun).
+8. Open your search service in the [Azure portal](https://portal.azure.com?portal=true) and view its **Indexers** tab to confirm that the indexer has run successfully (if it is still in-progress, wait for it to complete - it may initially fail and then rerun).
 
 :::zone-end
 
