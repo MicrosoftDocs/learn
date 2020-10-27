@@ -12,34 +12,32 @@ Let's start by creating the problematic infrastructure, which includes a configu
 
 1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in.
 
-1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
+1. Run the following command in the Bash Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
 
     ```azurecli
     rg=<resource group name>
 
-    az group create --name $rg --location <location>
+    az group create --name $RG --location <location>
     ```
 
 1. In Azure Cloud Shell, run this command to create the virtual network **MyVNet1** and the subnet **FrontendSubnet**.
 
     ```azurecli
     az network vnet create \
-        --resource-group $rg \
+        --resource-group $RG \
         --name MyVNet1 \
         --address-prefix 10.10.0.0/16 \
         --subnet-name FrontendSubnet \
-        --subnet-prefix 10.10.1.0/24 \
-        --location EastUS
+        --subnet-prefix 10.10.1.0/24
     ```
 
 1. Run this command to deploy a VM in **FrontendSubnet**. Replace `<password>` with a complex password of your choice.
 
     ```azurecli
     az vm create \
-        --resource-group $rg \
+        --resource-group $RG \
         --no-wait \
         --name FrontendVM \
-        --location EastUS \
         --vnet-name MyVNet1 \
         --subnet FrontendSubnet \
         --image Win2012R2Datacenter \
@@ -53,7 +51,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
     az network vnet subnet create \
         --address-prefixes 10.10.2.0/24 \
         --name BackendSubnet \
-        --resource-group $rg \
+        --resource-group $RG \
         --vnet-name MyVNet1
     ```
 
@@ -61,10 +59,9 @@ Let's start by creating the problematic infrastructure, which includes a configu
 
     ```azurecli
     az vm create \
-        --resource-group $rg \
+        --resource-group $RG \
         --no-wait \
         --name BackendVM \
-        --location EastUS \
         --vnet-name MyVNet1 \
         --subnet BackendSubnet \
         --image Win2012R2Datacenter \
@@ -77,24 +74,24 @@ Let's start by creating the problematic infrastructure, which includes a configu
     ```azurecli
     az network nsg create \
         --name MyNsg \
-        --resource-group $rg \
-        --location EastUS
+        --resource-group $RG
     ```
 
 1. Run this command to create an NSG configuration mistake that prevents communication between the VMs.
 
     ```azurecli
     az network nsg rule create \
-        --resource-group $rg \
+        --resource-group $RG \
         --name MyNSGRule \
         --nsg-name MyNsg \
         --priority 4096 \
         --source-address-prefixes '*' \
-        --source-port-ranges 80 443 3389 \
+        --source-port-ranges '*' \
         --destination-address-prefixes '*' \
         --destination-port-ranges 80 443 3389 \
         --access Deny \
         --protocol TCP \
+        --direction Outbound \
         --description "Deny from specific IP address ranges on 80, 443 and 3389."
     ```
 
@@ -102,7 +99,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
 
     ```azurecli
     az network vnet subnet update \
-        --resource-group $rg \
+        --resource-group $RG \
         --name BackendSubnet \
         --vnet-name MyVNet1 \
         --network-security-group MyNsg
@@ -116,8 +113,7 @@ To enable Network Watcher, run this command:
 
 ```azurecli
 az network watcher configure \
-    --resource-group $rg \
-    --locations EastUS \
+    --resource-group $RG \
     --enabled
 ```
 
@@ -129,7 +125,7 @@ Now you can use Network Watcher to troubleshoot connectivity between two VMs in 
 
 1. On the Azure portal menu, select **All services**. Then go to **Networking** > **Network Watcher**.
 
-1. Select **Topology**.
+1. In the **Monitoring** section, select **Topology**.
 
 1. In the drop-down lists, select the subscription and resource group. Network Watcher displays your network topology:
 

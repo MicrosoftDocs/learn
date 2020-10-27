@@ -33,7 +33,7 @@ Now, create a storage account for the NSG flow logs.
     | Subscription | Select your subscription |
     | Resource group | Select your resource group |
     | Storage account name | Create a unique name |
-    | Location | East US |
+    | Location | Select the same region as your resource group |
     | Performance | Standard |
     | Account kind | StorageV2 |
     | Replication | Read-access geo-redundant storage |
@@ -55,7 +55,7 @@ To view the NSG flow logs, you'll use Log Analytics. To install Log Analytics.
     | Log Analytics Workspace | testsworkspace |
     | Subscription | Select your subscription |
     | Resource group | Select your resource group |
-    | Location | East US |
+    | Location | Select the same region as your resource group |
     | Pricing tier | Per GB |
     | | |
 
