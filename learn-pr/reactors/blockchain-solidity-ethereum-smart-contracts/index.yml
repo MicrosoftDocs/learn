@@ -26,7 +26,7 @@ prerequisites: |
   - Knowledge about how to download programs from the internet
   - Knowledge about how to use command-line tools
   - An Azure account
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/reactors/blockchain-solidity-ethereum-smart-contracts.svg
 levels:
 - beginner
 roles:
