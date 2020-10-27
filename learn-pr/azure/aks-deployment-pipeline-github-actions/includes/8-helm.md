@@ -1,6 +1,8 @@
 You have successfully built and pushed both your staging and production images to your Container Registry instance. It's time to automate all the steps and make the machine work for you.
 
-But, there's a problem. Your workloads aren't generic enough, so you can't deploy them automatically. Instead, you must manually change the files every time. You'll use Helm charts as a solution.
+But, there's a problem. Your workloads aren't generic enough, so you can't deploy them automatically. Instead, you must manually change the files every time. 
+
+As a solution, you'll use a Helm chart.
 
 ## Helm charts
 
@@ -14,7 +16,7 @@ Here's the structure of a Helm chart directory:
 
 :::image type="content" source="../media/8-helm-chart-tree.png" alt-text="Screenshot that shows an example of a Helm chart tree.":::
 
-The following table describes each file and directory that is included in a Kubernetes chart:
+The following table describes each file and directory that's included in a Kubernetes chart:
 
 |Name  |Type  |Meaning  |
 |---------|---------|---------|

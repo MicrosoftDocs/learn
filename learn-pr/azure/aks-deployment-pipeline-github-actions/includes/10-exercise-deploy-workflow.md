@@ -1,10 +1,22 @@
-With all the charts created, you now have all the tools you need to deploy the application to AKS by using GitHub Actions. Let's use what you created to finish the deployment pipeline.
+With the Helm charts created, you now have all the tools you need to deploy the application to AKS by using GitHub Actions. Let's use what you created to finish the deployment pipeline.
 
 In this unit, you'll tackle the last step in the diagram—the deploy steps.
 
-:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that depicts the procession from triggers, through three build steps, to the deploy step in a pipeline.":::
+:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy step in a pipeline.":::
 
-## Create the deploy to staging
+For staging, the steps include:
+- Add a deploy job
+- Install Helm
+- Get the AKS credentials
+- Create a secret
+- Deploy the application
+- Test the deployment
+
+To deploy to production, we'll:
+- Create the production deploy job
+- Test the deployment
+
+## Create the deploy to staging job
 
 Start by deploying the staging pipeline.
 
@@ -80,9 +92,9 @@ Start by deploying the staging pipeline.
 
 ### Install Helm
 
-In this exercise, you'll use Helm at version `v3.3.1`. Azure has a built action that downloads and installs Helm for you.
+In this exercise, you use Helm version `v3.3.1`. Azure has a built action that downloads and installs Helm.
 
-1. Below the `runs-on` key, add a new `steps` key. Then, on the right side of the pane, search for and then select **Helm tool installer**.
+1. Below the `runs-on` key, add a new `steps` key. Then, search for and then select **Helm tool installer**.
 
     :::image type="content" source="../media/10-helm-tool-installer.png" alt-text="Screenshot that shows the search results for the Helm installer action.":::
 
@@ -149,7 +161,7 @@ In this exercise, you'll use Helm at version `v3.3.1`. Azure has a built action 
 
 Next, you use an action that uses the Azure CLI to get the AKS credentials. Then, you use Kubectl to deploy your workloads to the cluster.
 
-1. Change the `name` key to **Get AKS Credentials**.
+1. Change the `name` key to `Get AKS Credentials`.
     
 1. Change the `resource-group` key to the name of the resource group that contains your AKS resource. You can get this information by running the following command in Cloud Shell:
 
@@ -206,9 +218,7 @@ Next, you use an action that uses the Azure CLI to get the AKS credentials. Then
               cluster-name: contoso-video
     ```
 
-   
-   
-   
+  
 ### Create a secret
 
 You've set the credential secret, but the secret isn't created yet. Let's create it.
@@ -225,7 +235,7 @@ You've set the credential secret, but the secret isn't created yet. Let's create
 
 ### Deploy the application
 
-Now, you have access to your cluster and you have Helm installed. The next step is to deploy the application. For this step, you'll use the command instructions that are native to GitHub Actions.
+Now, you have access to your cluster and you have Helm installed. The next step is to deploy the application. For this step, you use the command instructions that are native to GitHub Actions.
 
 1.  In the YAML file, below the latest step, create a new `- name:` key. Name the key `Run Helm Deploy`. Then, below this key, create another key called `run`. 
 
@@ -306,8 +316,8 @@ Now, you have access to your cluster and you have Helm installed. The next step 
     |`--namespace staging`     |Deploy this release to the `staging` namespace. The parameter overrides all `namespace` keys in the manifest files.         |
     |`contoso-website`     |Release name.        |
     |`./kubernetes/contoso-website`   |Chart directory location.         |
-    |`--set image.repository`     |Updates the value of the `image.repository` key in the `values.yaml` file *for this release only*.         |
-    |`--set dns.name`   |Updates the `dns.name` key in the `values.yaml` file *for this release only*.         |
+    |`--set image.repository`     |Updates the value of the `image.repository` key in the values.yaml file *for this release only*.         |
+    |`--set dns.name`   |Updates the `dns.name` key in the values.yaml file *for this release only*.         |
 
     Run the command, starting with the `|` character. The final YAML should look like this example:
 
@@ -327,7 +337,7 @@ Now, you have access to your cluster and you have Helm installed. The next step 
                 --set dns.name=${{ secrets.DNS_NAME }}
     ```
 
-1. In a new browser tab, in the repository, select **Settings** > **Secrets**.
+1. In a new browser tab, in your fork of the repository, select **Settings** > **Secrets**.
 
 1. Create a new secret called `DNS_NAME`. You can get the value to use for this secret by running the following command in Cloud Shell:
 
@@ -337,23 +347,25 @@ Now, you have access to your cluster and you have Helm installed. The next step 
 
     Save the secret and close the browser tab.
 
-1. To commit the changes, select **Commit changes**:
+1. To commit the changes, select the green **Start commit** button at the top right. Enter a description for the commit, and then select the **Commit new file** button:
 
-    :::image type="content" source="../media/10-commit-staging-deploy.png" alt-text="Screenshot that shows the Commit changes button in the Commit changes pane.":::
+    :::image type="content" source="../media/6-5-commit-staging.png" alt-text="Screenshot that shows the Start commit and Commit new file button in the Commit new file pane.":::
 
     The build starts running on the **Actions** tab.
 
 ### Test the deployment
 
-To test the staging deployment, go to **contoso-staging.\<your-dns-name\>** in your browser and confirm that the website appears.
+To test the staging deployment, in your browser, go to **contoso-staging.\<your-dns-name\>** and confirm that the website appears.
 
 ## Create the production deploy
 
-With the staging workflow created, the next step is to create the production workflow. This step is simpler because you can copy the whole `deploy` job and change its parameters.
+With the staging workflow created, the next step is to create the production workflow. This step is simpler because you can copy the whole `deploy` job and just change its parameters.
 
-1. In the **Code** view on the GitHub website, go to the `.github/workflows` directory. Select the **build-production.yaml** file and edit it.
+1. In the **Code** view on the GitHub website, go to the **.github/workflows** directory. Select the **build-production.yaml** file and edit it.
 
-1. Copy the `deploy` step from the previous pipeline and paste it below the last line of the YAML file. The result should look like this example:
+1. Copy the `deploy` step from the previous pipeline and paste it below the last line of the YAML file. 
+
+   The result should look like this example:
 
     ```yaml
     name: Build and push the tagged build to production
@@ -371,7 +383,7 @@ With the staging workflow created, the next step is to create the production wor
           - uses: actions/checkout@v2
 
           - name: Build and Push production image
-            # You may pin to the exact commit or the version.
+            # You can pin to the exact commit or the version.
             # uses: docker/build-push-action@ab83648e2e224cfeeab899e23b639660765c3a89
             uses: docker/build-push-action@v1.1.1
             with:
@@ -397,9 +409,9 @@ With the staging workflow created, the next step is to create the production wor
             uses: Azure/aks-set-context@v1
             with:
               creds: ${{ secrets.AZURE_CREDENTIALS }}
-              # Resource Group Name
+              # Resource group name
               resource-group: mslearn-gh-pipelines-6667
-              # AKS Cluster Name
+              # AKS cluster name
               cluster-name: contoso-video
 
           - name: Run Helm Deploy
@@ -416,13 +428,13 @@ With the staging workflow created, the next step is to create the production wor
                 --set dns.name=${{ secrets.DNS_NAME }}
     ```
 
-1. Now, change it to deploy to the production namespace. In the `Run Helm Deploy` step, change the `--namespace` flag from `staging` to `production`.
+1. Change the `deploy` step to deploy to the production namespace. In the `Run Helm Deploy` step, change the `--namespace` flag from `staging` to `production`.
 
 1. At the end of the Help command, add a new `--set image.tag=${GITHUB_REF##*/}`.
 
     Here, you're using a Bash feature called *parameter expansion*. This feature is defined by the syntax `${ENV##<wildcard><character>}`. It returns the last occurrence of the string after `character`.
 
-    In this case, you want to get the tag name. This variable is defined by the Actions runtime as `GITHUB_REF`. If it's a branch, it's also defined by `refs/heads/<branch>`. If it's a tag, it's defined by `refs/tags/<tag>`.
+    In this case, you want to get the tag name. This variable is defined by the GitHub Actions runtime as `GITHUB_REF`. If it's a branch, it's also defined by `refs/heads/<branch>`. If it's a tag, it's defined by `refs/tags/<tag>`.
 
     We want to remove `refs/tags/` to get only the tag name, so run `${GITHUB_REF##*/}` to return everything after the last `/` in the `GITHUB_REF` environment variable.
 
@@ -490,8 +502,9 @@ With the staging workflow created, the next step is to create the production wor
                 --set image.tag=${GITHUB_REF##*/}
     ```
 
-1. To commit the file, select the green **Start Commit** button.
-1. In Cloud Shell, run `git pull` to fetch the latest changes, and then run the following Git command to tag and push the changes:
+1. To commit the changes, select the green **Start commit** button at the top right. Enter a description for the commit, and then select the **Commit new file** button:
+
+1. In Cloud Shell, run `git pull` to fetch the latest changes. Then, run the following command to tag and push the changes:
 
     ```bash
     git tag -a v1.0.1 -m'Creating first production deployment' && git push --tags

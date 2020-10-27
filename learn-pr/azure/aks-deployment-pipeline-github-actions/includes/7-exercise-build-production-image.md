@@ -4,15 +4,21 @@ In the preceding exercise, you built the staging workflow for building and publi
 
 You'll build the tagged version by using a different workflow.
 
-## Build the Action workflow
+In this exercise, you'll:
+- Build the Actions workflow
+- Create the trigger
+- Build and push the image
+- Check the results
+
+## Build the Actions workflow
 
 1. To start building the pipeline, go to the fork of the sample repository in the GitHub website. Select the **Actions** tab.
 
-1. Below the header, select **set up a workflow yourself**
+1. Below the header, select **set up a workflow yourself**.
 
     :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Screenshot that shows the Get started with GitHub Actions page and the Set up a workflow yourself link on the GitHub website.":::
 
-    The following file will be shown in the GitHub editor:
+    The following file is shown in the GitHub editor:
 
     ```yaml
     # This is a basic workflow to help you get started with Actions
@@ -50,7 +56,7 @@ You'll build the tagged version by using a different workflow.
               echo test, and deploy your project.
     ```
 
-1. Above the **Edit new file** pane, rename the file from `main.yml` to `build-production.yml`.
+1. Above the **Edit new file** pane, rename the file from **main.yml** to **build-production.yml**.
 
     :::image type="content" source="../media/6-2-example-editor.png" alt-text="Screenshot that shows an example file being edited in the Edit new file pane on the GitHub website.":::
 
@@ -62,7 +68,7 @@ You'll build the tagged version by using a different workflow.
     name: Build and push the tagged build to production
     ```
 
-### Create the trigger
+## Create the trigger
 
 1. Change the default triggers in the `on` key.
 
@@ -91,7 +97,7 @@ You'll build the tagged version by using a different workflow.
 
     In this case, you'll run the workflow only if the tag follows the `v*` pattern, which includes `v1.0.0`.
 
-### Build and push the image
+## Build and push the image
 
 Let's work on the jobs you're going to run. In this process, you address both the build steps and the deploy steps from the diagram.
 
@@ -145,7 +151,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
           - uses: actions/checkout@v2
 
           - name: Build and push Docker images
-            # You may pin to the exact commit or the version.
+            # You can pin to the exact commit or the version.
             # uses: docker/build-push-action@ab83648e2e224cfeeab899e23b639660765c3a89
             uses: docker/build-push-action@v1.1.1
             with:
@@ -153,7 +159,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
               username: # optional
               # Password or personal access token used to log in to a Docker registry. If not set, no login occurs
               password: # optional
-              # Server address of Docker registry. If not set, defaults to Docker Hub
+              # Server address of Docker registry. If not set, it defaults to Docker Hub
               registry: # optional
               # Docker repository to tag the image with
               repository:
@@ -245,7 +251,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     This time, the action won't be triggered because you didn't push a new tag. But our earlier action triggers and builds a new `latest` image.
 
-### Check your work
+## Check the results
 
 1. Open your cloned repository in Azure Cloud Shell. Run `git tag -a v1.0.0 -m'First tag'`.
     > [!div class="nextstepaction"]

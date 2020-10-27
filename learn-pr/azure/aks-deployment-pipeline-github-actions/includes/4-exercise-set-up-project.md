@@ -30,7 +30,7 @@ Now that we understand what we need to do, let's create our resources and publis
 
 1. To go to the new directory, run `cd mslearn-aks-deployment-pipeline-github-actions`.
 
-1. Execute the init.sh file that's located in the root of the project.
+1. Execute the **init.sh** file that's located in the root of the project.
 
     The init.sh file does the following tasks:
 
@@ -44,7 +44,7 @@ Now that we understand what we need to do, let's create our resources and publis
 
    When the script finishes running, it displays a list of variables. *Copy and store the variables names*. We'll use those variable names in the next steps.
 
-## Check the work
+## Check the results
 
 Confirm that all the resources were created when the init.sh script ran:
 
