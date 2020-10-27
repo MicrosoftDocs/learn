@@ -2,7 +2,7 @@
 uid: learn.aks-deployment-pipeline-github-actions.5-application-images
 metadata:
   title: Understand application images
-  description: Explore and understand concepts about application images you'll use to deploy a cloud-native application by using GitHub Actions.
+  description: Understand concepts about application images you use to deploy a cloud-native application by using GitHub Actions.
   ms.date: 10/08/2020
   author: khaosdoctor
   ms.author: ludossan
@@ -32,9 +32,9 @@ quiz:
         - content: "Despite being much heavier than standard VMs, Docker images are simpler and faster to deploy."
           isCorrect: false
           explanation: "Images are faster, that's correct. But, they're not heavier than a standard VM, because they don't contain the entire guest OS."
-        - content: "The only advantage is that images can be hosted by using container registers, and thus, are easier to download and run."
+        - content: "The only advantage is that images can be hosted by using container registers, so they're easier to download and run."
           isCorrect: false
-          explanation: "Being able to be hosted outside of the local machine is an advantage, but this is also possible with standard VMs."
+          explanation: "Hosting outside the local machine is an advantage, but the option also is possible with standard VMs."
         - content: "Images are smaller and much faster than a VM, and they don't contain useless OS data."
           isCorrect: true
           explanation: "Correct. Docker images share libraries with each other through existing containers. They also don't include the entire operating system, which means they're smaller and faster to download and run than a VM."

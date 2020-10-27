@@ -22,8 +22,8 @@ quiz:
           explanation: "Correct. Helm is one of the most useful tools in the Kubernetes toolchain."
         - content: "A CI tool that helps you build and deploy Docker containers."
           isCorrect: false
-          explanation: "Despite being used in CI/CD pipelines, Helm is not related to Docker images."
-        - content: "A different implementation of a Kubernetes cluster, and which aims to facilitate the use of the CLI."
+          explanation: "Despite being used in CI/CD pipelines, Helm isn't related to Docker images."
+        - content: "A Kubernetes cluster implementation that makes it easier to use the CLI."
           isCorrect: false
           explanation: "Helm isn't a different implementation of Kubernetes."
 
@@ -37,4 +37,4 @@ quiz:
           explanation: "You can version your Kubernetes' manifest YAML files without Helm, too."
         - content: "Helm provides several features that aren't included in Kubernetes templates, including templating."
           isCorrect: true
-          explanation: "Correct. Beyond offering additional features like templating, Helm allows one-click deployment and provides a CLI to resolve chart dependencies, thus reducing the number of steps needed to deploy a Kubernetes application."
+          explanation: "Correct. Beyond offering additional features like templating, Helm allows one-click deployment and provides a CLI to resolve chart dependencies, so the number of steps needed to deploy a Kubernetes application are reduced."

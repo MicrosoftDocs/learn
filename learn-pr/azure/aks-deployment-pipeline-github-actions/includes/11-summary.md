@@ -1,8 +1,8 @@
 Your company was experiencing a huge delay in simple day-to-day operations like deployments and image builds. You thought it would be a good idea to solve this problem by using CI/CD with GitHub Actions.
 
-By using these concepts, you were able to make image building and application deployment automatic. First you created a workflow that was triggered whenever someone pushed to the main branch, building and pushing the application image to the company's ACR. Then, whenever someone created a release out of that push, a new pipeline would trigger and deploy the application to the AKS cluster without human interference.
+By using these concepts, you were able to automate image building and application deployment. First, you created a workflow that triggers when a developer on your team pushes a code change to the main branch. The workflow builds and pushes the application image to the company's Azure Container Registry instance. Then, when someone on your team creates a release out of that push, a new pipeline triggers and deploys the application to the AKS cluster without manual effort.
 
-Without this solution, your team would still be losing time by manually building and deploying application images at every new feature on the website. In the long-run, you've saved the company thousands of dollars in time.
+Without this solution, your team would be losing time by manually building and deploying application images for every new feature on the website. In the long run, you've saved the company thousands of dollars in time.
 
 ## Clean up resources
 
@@ -19,9 +19,9 @@ In this module, you created resources by using your Azure subscription. The foll
 
 1. On the **Overview** tab, select **Delete resource group**.
 
-1. To confirm the deletion, enter the name of the resource group. To delete all the resources you created in this module, select **Delete.
+1. To confirm the deletion, enter the name of the resource group. To delete all the resources you created in this module, select **Delete**.
 
-1. Repeat step 6 for the resource group name that starts with **MC_mslearn-gh-pipelines**.
+1. Repeat the steps for the resource group name that starts with **MC_mslearn-gh-pipelines**.
 
 1. Go to your GitHub account and find your fork of the Contoso website.
 
@@ -38,7 +38,7 @@ To learn more about Azure Kubernetes Service and GitHub Actions, see the followi
 - [Integrate Azure Container Registry with AKS](https://docs.microsoft.com/azure/aks/cluster-container-registry-integration?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
 - [Deploy an AKS cluster](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-deploy-cluster?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
 - [Introduction to GitHub](https://docs.microsoft.com/en-us/learn/modules/introduction-to-github/)
-- [Automation of tasks using GitHub Actions](https://docs.microsoft.com/en-us/learn/modules/github-actions-automate-tasks/)
+- [Automating tasks by using GitHub Actions](https://docs.microsoft.com/en-us/learn/modules/github-actions-automate-tasks/)
 - [CI with GitHub Actions](https://docs.microsoft.com/en-us/learn/modules/github-actions-ci/)
 - [What is a Docker image](https://docs.docker.com/storage/storagedriver/#images-and-layers)
 - [Helm official website](https://helm.sh)
