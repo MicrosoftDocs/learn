@@ -1,8 +1,8 @@
-In this exercise, you'll implement a feature flag to enable or disable remotely the discount coupon feature in the checkout basket. You'll also be able to toggle the feature in real time.
+In this exercise, you'll implement a feature flag to enable or disable the discount coupon feature on the checkout page. You'll also be able to toggle the feature in real time.
 
-Feature flags allow you to enable/disable features declaratively without having to write if statements explicitly in your code.
+Feature flags allow you to toggle feature availability declaratively without including `if` statements in your code.
 
-We'll use a feature flag library for ASP.NET Core named **Feature Management**. This library provides out-of-the-box helpers to implement feature flags in your application such as controller actions, MVC Views/Filters and so on. In addition, it supports Feature Filters, which allows you to enable features based on other parameters. Examples of such parameters may include a window time, percentages, or a subset of users.
+We'll use a feature flag library for ASP.NET Core named **Feature Management**. This library provides helpers to implement feature flags in your app such as controller actions, MVC views/filters, and so on. In addition, it supports Feature Filters, which allows you to enable features based on other parameters. Examples of such parameters may include a window time, percentages, or a subset of users.
 
 In this exercise, you will:
 
@@ -10,7 +10,7 @@ In this exercise, you will:
 - Make the discount coupon feature configurable.
 - Deploy the SPA to your AKS cluster.
 - Create an App Configuration store in your Azure account.
-- Wire up *eShopOnContainers* to the App Configuration store.
+- Connect *eShopOnContainers* to the App Configuration store.
 
 ## Review some "infrastructure" feature flag components
 
@@ -44,7 +44,7 @@ As a refresher, a middleware is just a handler for requests that sits in the ASP
 
 The Feature Management library is implemented to work on the server side. That's fine when using MVC or Razor Pages, but we need to use the configuration data in our SPA. So the directive mentioned in the previous section will query the `/features` endpoint, implemented as this middleware, to get the feature state. The middleware will just get the configuration values from the feature manager that, in turn, gets them from the ASP.NET Core configuration infrastructure.
 
-You can think of this middleware as a proxy or broker between the SPA and the Feature Management service. You can find the middleware in the file *src\Web\WebSPA\Infrastructure\Middlewares\FeatureManagementMiddleware.cs*.
+Think of this middleware as a proxy or broker between the SPA and the Feature Management service. You can find the middleware in the file *src\Web\WebSPA\Infrastructure\Middlewares\FeatureManagementMiddleware.cs*.
 
 ### 3. Configuration extensions
 
@@ -57,7 +57,7 @@ You'll find the extensions in the *src\Web\WebSPA\Extensions* directory.
 
 ## Make the discount coupon feature configurable
 
-To accomplish this, we need to:
+To accomplish this, you need to:
 
 - Set up Feature Management in the app.
 - Use the feature flag directive in the views.
@@ -74,7 +74,7 @@ So let's begin with the details.
         popd
     ```
 
-    The library gets feature flags from the framework's native configuration system. Therefore, you can define your app's feature flags by using any configuration provider that .NET Core supports. For example, the *appsettings.json* file or environment variables. In this case, we'll make the configuration in the *appsettings.json* and in the SPA Helm chart's ConfigMap file.
+    The library retrieves feature flags from the .NET Core's native configuration system. Therefore, you can define your app's feature flags by using any configuration provider that .NET Core supports. For example, the *appsettings.json* file or environment variables. In this case, you'll make the configuration in *appsettings.json* and in the SPA Helm chart's ConfigMap file.
 
 1. In the *WebSPA* project's *appsettings.json* file, replace the `// Add the feature management properties` comment with the following. Save your changes.
 
@@ -137,7 +137,7 @@ So let's begin with the details.
 
 ## Deploy the SPA to your AKS cluster
 
-1. To deploy the updated SPA, build and publish a new image to ACR, with this script:
+1. To deploy the updated SPA, build and publish a new image to ACR, with the following script:
 
     ```bash
     deploy/k8s/build-to-acr.sh --services webspa
@@ -230,7 +230,7 @@ AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;I
 
 ## Add a sentinel key for the App Configuration
 
-This is a special key used to signal when configuration has changed. Your app monitors the sentinel key for changes to know when to refresh the values from the App Configuration store.
+The sentinel key is used to signal when configuration has changed. Your app monitors the sentinel key for changes to know when to refresh the values from the App Configuration store.
 
 To create the sentinel key:
 
@@ -301,7 +301,7 @@ Apply the following changes to your ASP.NET Core project:
 
 ## Redeploy the app
 
-So all that's left for you to do is redeploy the SPA and check out if this works as intended.
+You must redeploy the SPA before you can confirm that it works as intended.
 
 1. Just as you did before, begin by building the `webspa` service with the following script:
 
@@ -334,7 +334,7 @@ So all that's left for you to do is redeploy the SPA and check out if this works
 At this point, everything should be set. Complete the following steps:
 
 1. Sign out of the SPA and refresh the browser, to ensure you get the latest version.
-1. Sign in and buy some items. Go to checkout.
+1. Sign in and buy some items. Go to the checkout page.
 1. You should now see the discount coupon input, because the toggle was created as "On" in the portal.
 1. Toggle the feature "Off" in the App Configuration store.
 1. Go back to the SPA and select the basket icon in the top right.
