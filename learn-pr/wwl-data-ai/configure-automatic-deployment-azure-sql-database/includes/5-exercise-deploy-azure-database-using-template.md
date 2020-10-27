@@ -1,4 +1,4 @@
-You have been hired as a Senior Data Engineer to help automate day to day operations of database administration. This automation is to help ensure that the databases for AdventureWorks continue to operate at peak performance as well as provide methods for alerting based on certain criteria. AdventureWorks utilizes SQL Server in both Infrastructure as a Service and Platform as a Service offerings. 
+You've been hired as a Senior Data Engineer to help automate day to day operations of database administration. This automation is to help ensure that the databases for AdventureWorks continue to operate at peak performance and provide methods for alerting based on certain criteria. AdventureWorks uses SQL Server in both Infrastructure as a Service and Platform as a Service offerings. 
 
 ## Deploy an Azure SQL Database
 
@@ -16,11 +16,11 @@ You have been hired as a Senior Data Engineer to help automate day to day operat
 
     :::image type="content" source="../media/dp-3300-module-66-lab-11.png" alt-text="Screenshot of the GitHub repository showing the Deploy to Azure link.":::
 
-1. Scroll down the page and select **Deploy to Azure**. You may be prompted to login to the Azure portal. Login with the Azure credentials on the **Resources** tab.
+1. Scroll down the page and select **Deploy to Azure**. You may be prompted to sign in to the Azure portal. Sign in with the Azure credentials on the **Resources** tab.
 
-1. You will see the following screen. In order to deploy this template, you need to complete the blank fields with this information:
+1. You'll see the following screen. To deploy this template, complete the blank fields with this information:
 
-    :::image type="content" source="../media/dp-3300-module-66-lab-06.png" alt-text="Screenshot of Provision a SQL Database with TDE page in the Azure Portal.":::
+    :::image type="content" source="../media/dp-3300-module-66-lab-06.png" alt-text="Screenshot of Provision a SQL Database with TDE page in the Azure portal.":::
 
     - Resource group: **DP300-Lab06**
     - Sql Administrator Login: **labadmin**
@@ -28,14 +28,14 @@ You have been hired as a Senior Data Engineer to help automate day to day operat
 
 1. Select **Review + create**, and then select **Create**.
 
-    Your deployment will take approximately 5-10 minutes to deploy. If you have clicked on the link above, you will be able to track your deployment.
+    Your deployment will take 5-10 minutes to deploy. If you select the link above, you'll be able to track your deployment.
 
-    :::image type="content" source="../media/dp-3300-module-66-lab-08.png" alt-text="Screenshot of .":::
+    :::image type="content" source="../media/dp-3300-module-66-lab-08.png" alt-text="Screenshot of the deployment status screen.":::
 
 1. Upon completion, the screen will update with a link to your newly created resources.
 
-    :::image type="content" source="../media/dp-3300-module-66-lab-09.png" alt-text="Screenshot of .":::
+    :::image type="content" source="../media/dp-3300-module-66-lab-09.png" alt-text="Screenshot of the deployment success screen.":::
 
     Select **Go to resource group**. You'll be taken to the Azure Resource Group your deployment just created.
 
-    :::image type="content" source="../media/dp-3300-module-66-lab-10.png" alt-text="Screenshot of .":::
+    :::image type="content" source="../media/dp-3300-module-66-lab-10.png" alt-text="Screenshot of the resource group page.":::
