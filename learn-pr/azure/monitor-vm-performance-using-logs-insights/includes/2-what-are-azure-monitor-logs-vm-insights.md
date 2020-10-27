@@ -6,7 +6,7 @@ Virtual Machine Insights is a set of features, which allow you to monitor virtua
 
 ## What is the relationship between all the Azure native monitoring tools?
 
-There are a few different resources and services that complete the native monitoring toolkit in Azure. If we think of the native monitoring story as a pyramid, Azure Monitor would live at the top. The service collects and analyzes data generated from Azure resources. Azure Monitor can capture application monitoring data, guest OS monitoring data, Azure resource monitoring data, Azure subscription monitoring data, and Azure tenant monitoring data.
+There are a few different resources and services that complete the native monitoring toolkit in Azure. Azure Monitor becomes the service, which spans across all monitoring tools with everything else living underneath. The service collects and analyzes data generated from Azure resources. Azure Monitor can capture application monitoring data, guest OS monitoring data, Azure resource monitoring data, Azure subscription monitoring data, and Azure tenant monitoring data.
 
 Data collected by Azure Monitor is composed of metrics (Azure Monitor Metrics) and logs (Azure Monitor Logs). Azure Monitor Metrics are lightweight numerical values stored in a time-series database that can be used for near real time (NRT) alerting. Some examples of metrics captured include IOPS percentages and CPU cycles. As we covered earlier, Azure Monitor Logs collects and organizes log data from Azure resources. The major difference between Azure Monitor Metrics and Azure Monitor Logs surrounds the structure of data generated. Azure Monitor Metrics can only store numeric data using a specific structure, while Azure Monitor Logs can store a variety of data types, each using their own structure. Azure Monitor Logs can also store Azure Monitor Metric data as well.
 
@@ -16,13 +16,13 @@ The following image shows how applications, resources, workloads, tenant data, a
 
 ## But wait, there's **MORE** logging
 
-In addition to logs and metrics, Azure resources also emit Azure platform logs as well. Platform logs provide comprehensive diagnostic and auditing information for Azure resources and the underlying Azure platform. Platform logs are resource logs (formerly known as diagnostic logs), activity logs, and Azure Active Directory logs. All resources automatically generate platform logs and send data to Azure Monitor. Administrators need to configure certain platform logs to be forwarded to one or more destinations (like Log Analytics) to be retained.
+In addition to logs and metrics, Azure resources also emit Azure platform logs as well. Platform logs provide comprehensive diagnostic and auditing information for Azure resources and the underlying Azure platform. Platform logs are resource logs (formerly known as diagnostic logs), activity logs, and Azure Active Directory logs. All resources automatically generate platform logs and send data to Azure Monitor. Administrators need to configure certain platform logs to be forwarded to one or more destinations (like Log Analytics) in order to be retained.
 
 ## Plan a Log Analytics workspace deployment
 
 One of the tasks involved with a Log Analytics deployment is picking the right design. Log Analytics workspaces are containers where Azure Monitor data is collected, aggregated, and analyzed. To better understand Log Analytics workspaces, the following diagram provides more insight into all the different types of logs that can be ingested. Everything from Event logs, to Syslogs, to Heartbeats, and so on. Then there are Azure Resources that can send platform logs, Azure Activity logs to the workspace as well.
 
-:::image type="icon" source="../media/2-loganalytics-other-tables.png" border="false" alt-text="Diagram that shows how a Log Analytics workspace encompasses different types of logs from virtual machines and Azure resources: Events, Syslog, Heartbeat, etc.":::
+:::image type="icon" source="../media/2-log-analytics-other-tables.png" border="false" alt-text="Diagram showing the different types of logs that can be stored in a Log Analytics workspace: Event Logs, Syslogs, Heartbeats, Perf, Activity Logs, Diagnostic Logs, and so on.":::
 
 A number of Azure features help Log Analytics workspace adoption within enterprises. Log Analytics workspaces now provide different levels of access control for the collected logs.
 
@@ -32,7 +32,7 @@ A number of Azure features help Log Analytics workspace adoption within enterpri
 Access control mode | Defines how permissions work for any given Log Analytics workspace. | Require workspace permissions means a user would have access to all data in any table where permissions have been defined, which does not allow granular role-based access control (RBAC). Then there's the use resource or workspace permissions, which allows for granular RBAC as users can only see log data for resources they are permitted to view. Permissions can be applied to an individual or to groups of users for the workspace or resource.
 | Table level RBAC | Provides a mechanism to define more granular data control inside a Log Analytics workspace in conjunction with other permissions listed in the table. | This feature allows an administrator to define what specific data types are accessible to a set of users. Configuring table level RBAC requires Azure custom roles to either grant or deny access to specific tables. These roles are applied to Log Analytics workspaces, with either workspace-context or resource-context access modes configured.
 
-From a daily operations point of view, the best strategy is to limit the total number of workspaces required for daily operations. Reducing the number of workspaces will make administration and query experience easier and quicker. Multiple workspaces may be a design consideration if you are employed by a global company and require data sovereignty, for example.
+From a daily operations point of view, the best strategy is to limit the total number of workspaces required for daily operations. Reducing the number of workspaces will make administration and query experience easier and quicker. Multiple workspaces may still need to be a design consideration for certain companies. An example may be if you are employed by a global company and require data sovereignty.
 
 ## Azure collects compute monitoring data by using agents
 
@@ -50,4 +50,4 @@ As referenced earlier, Virtual Machine Insights also needs to be installed in or
 
 Lastly, there are a number of solutions an administrator can install or enable, which provides deeper analytics on any given Azure application or service. Each monitoring solution requires a Log Analytics workspace to store collected data. Some solutions also require an Automation Account as well, which contain resources like runbooks that help complete the solution.
 
-In the next unit, we'll show you how to deploy a Log Analytics workspace, with the right access control. From there, we'll walk through deploying the Log Analytics extension and will enable Virtual Machine Insights.
+In the next unit, we'll show you how to deploy a Log Analytics workspace with the right access control. From there, we'll walk through deploying the Log Analytics extension and will enable Virtual Machine Insights.
