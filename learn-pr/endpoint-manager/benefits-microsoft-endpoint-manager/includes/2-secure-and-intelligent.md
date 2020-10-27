@@ -12,7 +12,7 @@ Endpoint Manager enables a unique set of capabilities to simplify endpoint secur
 
 The following image shows the tools to endpoint security management, as well as the endpoint security threats and concerns:
  
-<img alt="Endpoint security management" src="../media/intro-to-endpoint-manager-06.png" width="700">
+![Endpoint security management](../media/intro-to-endpoint-manager-06.png)
 
 ## Unified security
 
@@ -34,4 +34,4 @@ Microsoft Endpoint Manager helps ensure cross-platform device controls to help m
 
 The following image shows the cross-platform device controls to help provide trust, as well as the conditions that must stay within compliance:  
 
-<img alt="Risk-based controls" src="../media/intro-to-endpoint-manager-07.png" width="700">
+![Risk-based controls](../media/intro-to-endpoint-manager-07.png)
