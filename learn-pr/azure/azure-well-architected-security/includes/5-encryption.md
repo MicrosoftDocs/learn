@@ -1,12 +1,16 @@
-Data is an organization’s most valuable and irreplaceable asset, and encryption serves as the last and strongest line of defense in a layered security strategy. Imagine you work for a healthcare organization that stores large amounts of sensitive data. They recently experienced a breach that exposed the unencrypted sensitive data of patients, and are now fully aware that they have gaps in their data protection capabilities. They want to understand how they could have better used encryption to protect themselves and their patients from this type of incident. Here, we'll take a look at what encryption is, how to approach the encryption of data, and what encryption capabilities are available on Azure.
+Data is an organization's most valuable and irreplaceable asset. Encryption serves as the last and strongest line of defense in a layered security strategy for data. 
+
+Imagine you work for a healthcare organization that stores large amounts of sensitive data. The organization recently experienced a breach that exposed the unencrypted sensitive data of patients. The organization is now fully aware that it has gaps in its data protection capabilities. It wants to understand how it could have better used encryption to protect itself and its patients from this type of incident. 
+
+Here, we'll take a look at what encryption is, how to approach the encryption of data, and what encryption capabilities are available on Azure.
 
 ## What is encryption?
 
 Encryption is the process of making data unreadable and unusable. To use or read the encrypted data, it must be *decrypted*, which requires the use of a secret key. There are two top-level types of encryption: *symmetric* and *asymmetric*.
 
-Symmetric encryption uses the same key to encrypt and decrypt the data. Consider a desktop password manager application. You enter your passwords and they are encrypted with your own personal key (your key is often derived from your master password). When the data needs to be retrieved, the same key is used and the data is decrypted.
+Symmetric encryption uses the same key to encrypt and decrypt the data. Consider a password manager application. You enter your passwords and they're encrypted with your own personal key. (Your key is often derived from your master password.) When the data needs to be retrieved, the same key is used and the data is decrypted.
 
-Asymmetric encryption uses a public key and private key pair. Either key can encrypt but cannot decrypt its own encrypted data. To decrypt, you need the paired key. Asymmetric encryption is used for things like TLS (used in https), and data signing.
+Asymmetric encryption uses a public key and private key pair. Either key can encrypt but cannot decrypt its own encrypted data. To decrypt, you need the paired key. Asymmetric encryption is used for things like TLS (used in HTTPS) and data signing.
 
 Both symmetric and asymmetric encryption play a role in properly securing your data. 
 
@@ -14,17 +18,19 @@ Encryption is typically approached in two ways: encryption at rest and encryptio
 
 ### Encryption at rest
 
-Data at rest is the data that has been stored on a physical medium. This could be data stored on the disk of a server, data stored in a database, or data stored in a storage account. Regardless of the storage mechanism, encryption of data at rest ensures that the stored data is unreadable without the keys and secrets needed to decrypt it. If an attacker obtained a hard drive with encrypted data and did not have access to the encryption keys, the attacker would not compromise the data without great difficulty. In such a scenario, an attacker would have to attempt attacks against encrypted data, which are much more complex and resource consuming than accessing unencrypted data on a hard drive.
+Data at rest is the data that has been stored on a physical medium. This might be data stored on the disk of a server, data stored in a database, or data stored in a storage account. 
 
-The actual data that is encrypted could vary in its content, usage, and importance to the organization. This could be financial information critical to the business, intellectual property that has been developed by the business, personal data that the business stores about customers or employees, and even the keys and secrets used for the encryption of the data itself.
+Regardless of the storage mechanism, encryption of data at rest ensures that the stored data is unreadable without the keys and secrets needed to decrypt it. If an attacker obtained a hard drive with encrypted data and didn't have access to the encryption keys, the attacker would have great difficulty compromising the data. In such a scenario, an attacker would have to attempt attacks against encrypted data, which is much more complex and resource consuming than accessing unencrypted data on a hard drive.
 
-![An illustration showing an example of encryption at rest.](../media/5-encryption-at-rest.png)
+The actual data that's encrypted can vary in its content, usage, and importance to the organization. It might be financial information that's critical to the business, intellectual property that has been developed by the business, personal data that the business stores about customers or employees, and even the keys and secrets used for the encryption of the data itself.
+
+![Illustration that shows an example of encryption at rest.](../media/5-encryption-at-rest.png)
 
 ### Encryption in transit
 
-Data in transit is the data actively moving from one location to another, such as across the internet or through a private network. Secure transfer can be handled by encrypting the data prior to sending it over a network, or setting up a secure channel to transmit unencrypted data between two systems. Encrypting data in transit protects the data from outside observers and provides a mechanism to transmit data while limiting risk of exposure.
+Data in transit is the data actively moving from one location to another, such as across the internet or through a private network. A organization can handle secure transfer by encrypting the data before sending it over a network, or setting up a secure channel to transmit unencrypted data between two systems. Encrypting data in transit protects the data from outside observers and provides a mechanism to transmit data while limiting risk of exposure.
 
-![An illustration showing an example of encryption in transit. The data is encrypted before it is transferred. Once it reaches the destination, the data is then decrypted.](../media/5-encryption-in-transit.png)
+![Illustration that shows an example of encryption in transit. The data is encrypted before it is transferred. Once it reaches the destination, the data is then decrypted.](../media/5-encryption-in-transit.png)
 
 ## Identify and classify data
 
