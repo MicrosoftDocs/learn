@@ -4,7 +4,7 @@ You have been hired as a Senior Data Engineer to help automate day to day operat
 
 1. When the VM lab environment opens use the password on the **Resources** tab for the **Student** account to sign in to Windows.
 
-1. Select the Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/).
+1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/).
 
 1. The username and password information to sign into the Azure Portal are in the  **Resources** tab above these instructions. If you select the **Username** the environment will type the text for you.
 
