@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-sql-server-virtual-machine.provision-on-azure-virtual-machines
+title: Exercise - Provision a SQL Server on an Azure Virtual Machine
+metadata:
+  title: Exercise - Provision a SQL Server on an Azure Virtual Machine
+  description: "Exercise - Provision a SQL Server on an Azure Virtual Machine"
+  ms.date: 10/27/2020
+  author: wwlpublish
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 82683
+durationInMinutes: 15
+content: |
+  [!include[](includes/6a-exercise-provision-sqlserver-azure-virtual-machine.md)]
