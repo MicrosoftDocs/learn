@@ -4,6 +4,14 @@ You're almost finished creating a .NET masterpiece for Tailwind Traders. So far,
 
 In this exercise, you'll complete the project by reading the .json files, adding up the store totals, and writing the grand total to the *totals.txt* file.
 
+## Add Json.NET to the project
+
+1. Using the terminal add *Json.NET* to the project.
+
+```bash
+dotnet add package Newtonsoft.Json
+```
+
 ## Preparation for sales data
 
 1. In `Program.cs` directly under the `FindFiles` method add a new private class that will model the *sales.json* data.
@@ -11,19 +19,19 @@ In this exercise, you'll complete the project by reading the .json files, adding
     ```csharp
     class SalesData
     {
-        public property Total { get; set; }
+        public double Total { get; set; }
     }
     ```
 
   Note that this class will be nested within the `Program` class.
 
-1. At the top of `Program.cs` add `using System.Text.Json`.
+1. At the top of `Program.cs` add `using Newtonsoft.Json`.
 
     ```csharp
     using System;
     using System.IO;
     using System.Collections.Generic;
-    using System.Text.Json; 
+    using Newtonsoft.Json; 
       ```
 
 ## Create a method to calculate sales totals
@@ -49,13 +57,13 @@ In this exercise, you'll complete the project by reading the .json files, adding
         double salesTotal = 0;
         
         // Loop over each file path in salesFiles
-        foreach (file in salesFiles)
+        foreach (var file in salesFiles)
         {      
           // Read the contents of the file
           string salesJson = File.ReadAllText(file);
         
           // Parse the contents as JSON
-          SalesData data = JsonSerializer.Deserialize<SalesData>(salesJson);
+          SalesData data = JsonConvert.DeserializeObject<SalesData>(salesJson);
         
           // Add the amount in found in the Total field to the salesTotal variable
           salesTotal += data.Total;
@@ -73,14 +81,14 @@ In this exercise, you'll complete the project by reading the .json files, adding
     static void Main(string[] args)
     {
         var currentDirectory = Directory.GetCurrentDirectory();
-        var storesDir = Path.Combine(currentDirectory, "stores");
+        var storesDirectory = Path.Combine(currentDirectory, "stores");
         
         var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
         Directory.CreateDirectory(salesTotalDir);
         
-        var files = FindFiles(storesDir);
+        var salesFiles = FindFiles(storesDir);
         
-        var salesTotal = CalculateSalesTotal(files);
+        var salesTotal = CalculateSalesTotal(salesFiles);
         
         File.WriteAllText(Path.Combine(salesTotalDir, "totals.txt"), String.Empty);
     }
@@ -125,7 +133,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
     dotnet run
     ```
 
-1. Select the *salesTotals/totals.txt* file.
+1. Select the *salesTotalsDir/totals.txt* file.
 
    The *totals.txt* file now has a second line. Every time you run the program, the totals are added up again and a new line is written to the file.
 
@@ -139,7 +147,7 @@ If you got stuck during this exercise, here's the full code for this project.
 using System;
 using System.IO;
 using System.Collections.Generic;
-using System.Text.Json;
+using Newtonsoft.Json;
 
 namespace files_module
 {
@@ -148,14 +156,14 @@ namespace files_module
         static void Main(string[] args)
         {
             var currentDirectory = Directory.GetCurrentDirectory();            
-            var storesDir = Path.Combine(currentDirectory, "stores");
+            var storesDirectory = Path.Combine(currentDirectory, "stores");
 
             var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
             Directory.CreateDirectory(salesTotalDir);            
 
-            var files = FindFiles(storesDir);
+            var salesFiles = FindFiles(storesDirectory);
 
-            var salesTotal = CalculateSalesTotal(files);
+            var salesTotal = CalculateSalesTotal(salesFiles);
 
             File.AppendAllText(Path.Combine(salesTotalDir, "totals.txt"), $"{salesTotal}{Environment.NewLine}");
         }
@@ -170,8 +178,10 @@ namespace files_module
             {
                 var extension = Path.GetExtension(file);
 
-                if (extension == ".json" || extension == ".txt")
+                if (extension == ".json")
+                {
                     salesFiles.Add(file);
+                }
             }
 
             return salesFiles;
@@ -180,14 +190,18 @@ namespace files_module
         static double CalculateSalesTotal(IEnumerable<string> salesFiles)
         {
             double salesTotal = 0;
-            
+
+            // Loop over each file path in salesFiles
             foreach (var file in salesFiles)
-            {                
+            {      
+                // Read the contents of the file
                 string salesJson = File.ReadAllText(file);
+    
+                // Parse the contents as JSON
+                SalesData data = JsonConvert.DeserializeObject<SalesData>(salesJson);
 
-                SalesData data = JsonSerializer.Deserialize<SalesData>(salesJson);
-
-                salesTotal += data.Total;                
+                // Add the amount in found in the Total field to the salesTotal variable
+                salesTotal += data.Total;
             }
 
             return salesTotal;

@@ -14,11 +14,11 @@ In this exercise, you'll create the *salesTotalsDir* directory and *totals.txt* 
     static void Main(string[] args)
     {
         var currentDirectory = Directory.GetCurrentDirectory();
-        var storesDir = Path.Combine(currentDirectory, "stores");
+        var storesDirectory = Path.Combine(currentDirectory, "stores");
         
         var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
         
-        var files = FindFiles(storesDir);
+        var salesFiles = FindFiles(storesDirectory);
     }
     ```
 
@@ -28,12 +28,12 @@ In this exercise, you'll create the *salesTotalsDir* directory and *totals.txt* 
     static void Main(string[] args)
     {
         var currentDirectory = Directory.GetCurrentDirectory();
-        var storesDir = Path.Combine(currentDirectory, "stores");
+        var storesDirectory = Path.Combine(currentDirectory, "stores");
         
         var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
         Directory.CreateDirectory(salesTotalDir);
         
-        var files = FindFiles(storesDir);
+        var files = FindFiles(storesDirectory);
     }
     ```
 
@@ -45,17 +45,18 @@ In this exercise, you'll create the *salesTotalsDir* directory and *totals.txt* 
     static void Main(string[] args)
     {
         var currentDirectory = Directory.GetCurrentDirectory();
-        var storesDir = Path.Combine(currentDirectory, "stores");
+        var storesDirectory = Path.Combine(currentDirectory, "stores");
         
         var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
         Directory.CreateDirectory(salesTotalDir);
         
-        var files = FindFiles(storesDir);
+        var files = FindFiles(storesDirectory);
         
         File.WriteAllText(Path.Combine(salesTotalDir, "totals.txt"), String.Empty);
     }
     ```
 
+1. Select the <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> keys to save the file.
 1. Run the program by entering the following code from the terminal prompt.
 
     ```bash
@@ -85,12 +86,12 @@ namespace files_module
         static void Main(string[] args)
         {
             var currentDirectory = Directory.GetCurrentDirectory();
-            var storesDir = Path.Combine(currentDirectory, "stores");
+            var storesDirectory = Path.Combine(currentDirectory, "stores");
 
             var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
             Directory.CreateDirectory(salesTotalDir);
 
-            var files = FindFiles(storesDir);
+            var files = FindFiles(storesDirectory);
 
             File.WriteAllText(Path.Combine(salesTotalDir, "totals.txt"), String.Empty);
         }

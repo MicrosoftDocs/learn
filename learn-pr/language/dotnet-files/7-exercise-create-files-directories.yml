@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-dotnet
 interactive: bash
 azureSandbox: true
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/7-exercise-create-files-directories.md)]

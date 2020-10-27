@@ -15,9 +15,9 @@ In the current Program.cs code, you're passing the static location of the *store
     {
       var currentDirectory = Directory.GetCurrentDirectory();
       
-      var files = FindFiles("stores");
+      var salesFiles = FindFiles("stores");
     
-      foreach (var file in files)
+      foreach (var file in salesFiles)
       {
         Console.WriteLine(file);
       }
@@ -33,9 +33,9 @@ In the current Program.cs code, you're passing the static location of the *store
         
         var storesDirectory = Path.Combine(currentDirectory, "stores");
         
-        var files = FindFiles(storesDirectory);
+        var salesFiles = FindFiles(storesDirectory);
         
-        foreach (var file in files)
+        foreach (var file in salesFiles)
         {
             Console.WriteLine(file);
         }
@@ -66,7 +66,7 @@ Instead of looking for just *sales.json* files, the program needs to search for 
 1. In the `foreach` loop in the `FindFiles` get the extension of each file by using the `Path.GetExtension` method.
 
     ```csharp
-    foreach (var file in files)
+    foreach (var file in foundFiles)
     {
         var extension = Path.GetExtension(file);
         
@@ -80,7 +80,7 @@ Instead of looking for just *sales.json* files, the program needs to search for 
 1. Then change the `if` statement to check whether the file's extension is .json.
 
     ```csharp
-    foreach (var file in files)
+    foreach (var file in foundFiles)
     {
         var extension = Path.GetExtension(file);
         
@@ -132,9 +132,9 @@ namespace files_module
             var currentDirectory = Directory.GetCurrentDirectory();
             var storesDirectory = Path.Combine(currentDirectory, "stores");
 
-            var files = FindFiles(storesDirectory);
+            var salesFiles = FindFiles(storesDirectory);
 
-            foreach (var file in files)
+            foreach (var file in salesFiles)
             {
                 Console.WriteLine(file);
             }

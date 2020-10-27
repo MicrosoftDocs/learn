@@ -97,15 +97,11 @@ You need to find all the sales.json files in all folders.
 1. The program should show the following output.
 
     ```bash
-    stores/salestotals.json
+    stores/sales.json
     stores/201/sales.json
-    stores/201/salestotals.json
     stores/202/sales.json
-    stores/202/salestotals.json
     stores/203/sales.json
-    stores/203/salestotals.json
     stores/204/sales.json
-    stores/204/salestotals.json
     ```
 
 Excellent! You've successfully written a command-line program that will traverse any directory and find all the *sales.json* files inside.

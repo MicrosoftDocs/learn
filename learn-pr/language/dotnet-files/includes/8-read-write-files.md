@@ -9,7 +9,7 @@ Here, you'll learn how to use the `File` class to read and write to files.
 Files are read through the `ReadAllText` method on the `File` class.
 
 ```csharp
-File.ReadAllText("stores/201/sales.json");
+File.ReadAllText($"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales.json");
 ```
 
 The return object from `ReadAllText` is a string.
@@ -24,17 +24,23 @@ The return object from `ReadAllText` is a string.
 
 This data in its string format doesn't do you much good. It's still just characters, but now in a format that you can read. You want the ability to parse this data into a format that you can use programmatically. 
 
-.NET includes a built-in parser for JSON files. You don't need to include anything to use it. 
+There are many ways to parse JSON files with .NET, including a community library known as *Json.NET*.
 
-Add `using System.Text.Json` to the top of your class file and then use the `JsonSerializer.Deserialize` method.
+You add the *Json.NET* package to your project using NuGet.
+
+```bash
+dotnet add package Newtonsoft.Json
+```
+
+Then add `using Newtonsoft.Json` to the top of your class file and then use the `JsonConver.DeserializeObject` method.
 
 ```csharp
 class SalesTotal
 {
-  public int Total { get; set; }
+  public double Total { get; set; }
 }
 
-var data = JsonSerializer.Deserialize<SalesTotal>($"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales.json");
+var data = JsonConvert.DeserializeObject<SalesTotal>($"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales.json");
 
 Console.WriteLine(data.Total);
 ```
@@ -47,7 +53,7 @@ Console.WriteLine(data.Total);
 You learned how to write files in the previous exercise. It's just that you wrote an empty one. To write data to a file, use the same `WriteAllText` method, but pass in the data that you want to write.
 
 ```csharp
-var data = JsonSerializer.Deserialize<SalesTotal>($"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales.json");
+var data = JsonConvert.DeserializeObject<SalesTotal>($"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales.json");
 
 File.WriteAllText($"SalesTotals{Path.DirectorySeparatorChar}totals.txt", data.Total.ToString());
 
@@ -60,7 +66,7 @@ File.WriteAllText($"SalesTotals{Path.DirectorySeparatorChar}totals.txt", data.To
 In the preceding example, the file is overwritten every time you write to it. Sometimes you don't want that. Sometimes you want to append data to the file, not replace it entirely. You can do this with the `File.AppendAllText` method. By default, `File.AppendAllText` will create the file if it does not already exist.
 
 ```csharp
-var data = JsonSerializer.Deserialize<SalesTotal>($"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales.json");
+var data = JsonConvert.DeserializeObject<SalesTotal>($"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales.json");
 
 File.AppendAllText($"SalesTotals{Path.DirectorySeparatorChar}totals.txt", $"{data.Total}{Environment.NewLine}");
 
