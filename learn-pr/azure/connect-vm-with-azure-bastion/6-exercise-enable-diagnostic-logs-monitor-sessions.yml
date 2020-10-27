@@ -14,3 +14,4 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/6-exercise-enable-diagnostic-logs-monitor-sessions.md)]
+  
