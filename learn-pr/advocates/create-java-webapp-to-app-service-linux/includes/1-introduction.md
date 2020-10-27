@@ -1,5 +1,3 @@
-# Introduction
-
 Java は誕生依頼様々な環境で動作してきました。特に、サーバ・サイドで Java は幅広く多くの場所で使われてきました。これに併せて、Java Web アプリケーションのフレーム・ワークも様々提供されてきました。たとえば JavaServer Pages(JSP)、Java Servlet, Struts, JavaServer Faces(JSF), Spring MVC のような Web フレームワークが今まで数多く提供されてきました。また実行環境として、Apache Tomcat は、1998年11月にプロジェクトを開始し、 Servlet, JSP の参照実装かつ OSS として提供され、多くの利用者から使われてきました。
 
 このモジュールは、簡単な Java Web アプリケーションとして、Todo アプリケーションを作成し、Azure App Service 上で動かします。
