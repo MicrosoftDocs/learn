@@ -1,4 +1,3 @@
-
 Incidents in Azure Sentinel are created from other sources of security information in Azure. How you manage and understand the contents of an incident will help you better understand and use incident management in Sentinel.
 
 ## Incident evidence

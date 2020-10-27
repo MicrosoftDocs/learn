@@ -15,31 +15,31 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "You want to escalate an incident to a member of the Contoso tier 2 security team. Which incident parameter should you change?"
     choices:
-    - content: "Answer 1"
+    - content: "Severity"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "Severity does not change incident ownership."
+    - content: "Status"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "Status does not change incident ownership."
+    - content: "Owner"
+      isCorrect: true
+      explanation: "You should change the owner parameter to the user account for the member of the tier 2 security team."
+    - content: "User name"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
-  - content: "Question 2"
+      explanation: "User name is an incident entity and can't be changed."
+  - content: "What Sentinel interface enables you to view timelines and relationships between incident resources?"
     choices:
-    - content: "Answer 1"
+    - content: "Investigation graph"
+      isCorrect: true
+      explanation: "The investigation graph enables you to view timelines and relationships between incident resources."
+    - content: "Incident details page"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "Incident details does not enable you to view timelines and relationships between incident resources."
+    - content: "Resource relationships"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "There is no interface in Sentinel named Resource relationships."
+    - content: "Incident status"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "Viewing incident status does not enable you to view timelines and relationships between incident resources."

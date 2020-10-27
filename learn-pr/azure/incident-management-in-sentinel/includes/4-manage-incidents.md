@@ -18,7 +18,7 @@ Selecting any incident will display more information about the incident in the d
 
 ### Manage incident ownership, status, and severity
 
-Each incident created in Sentinel has manageable metadata attached to it. This information can help you set and track the status of and incident from creation to resolution, set and view severity, and assign and track ownership for the incident.
+Each incident created in Sentinel has manageable metadata attached to it. This information can help you set and track the status of an incident from creation to resolution, set and view severity, and assign and track ownership for the incident.
 
 :::image type="content" source="../media/4-incident-settings.png" alt-text="The screenshot depicts the section of the incidents page where you can assign ownership, status, and severity." border="false":::
 

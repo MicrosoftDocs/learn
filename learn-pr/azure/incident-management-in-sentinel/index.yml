@@ -26,8 +26,8 @@ products:
 - azure
 units:
 - learn.azure.incident-management-in-sentinel.1-introduction
-- learn.azure.incident-management-in-sentinel.2-custom-rules
-- learn.azure.incident-management-in-sentinel.3-manage-events-alerts
+- learn.azure.incident-management-in-sentinel.2-describe-incident-management
+- learn.azure.incident-management-in-sentinel.3-understand-evidence-and-entities
 - learn.azure.incident-management-in-sentinel.4-manage-incidents
 - learn.azure.incident-management-in-sentinel.5-exercise-investigate-incident
 - learn.azure.incident-management-in-sentinel.6-summary

@@ -1,45 +1,45 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.incident-management-in-sentinel.2-custom-rules
+uid: learn.azure.incident-management-in-sentinel.2-describe-incident-management
 metadata:
-  title: Create custom rules to detect threats
+  title: Describe incident management
   description: TODO
   ms.date: TODO
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create custom rules to detect threats
+title: Describe incident management
 durationInMinutes: 5
 content: |
-  [!include[]includes/2-custom-rules.md)]
+  [!include[]includes/2-describe-incident-management.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "Which Azure Sentinel component is used to generate alerts?"
     choices:
-    - content: "Answer 1"
+    - content: "Incidents"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "Incidents do not generate alerts. Rather, incidents are created from alerts."
+    - content: "Analytic rules"
+      isCorrect: true
+      explanation: "Analytic rules can be configured to generate alerts in Sentinel"
+    - content: "Data connectors"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "Data connectors do not generate alerts. They are used to gather event data from security-related services."
+    - content: "Events"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
-  - content: "Question 2"
+      explanation: "Events are stored in a Log Analytics workspace and contain the details of security related activity that you want to monitor with Sentinel."
+  - content: "What is the primary goal of incident management in Sentinel"
     choices:
-    - content: "Answer 1"
+    - content: "Understand the state of security health in Microsoft Azure"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "While incidents can help you understand your security environment, they are designed to help track and resolve security issues across all environments, including on-premises, Azure, and other cloud environments."
+    - content: "Track and manage issues in Azure."
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "Incident management in Sentinel is only for resolving security-related issues"
+    - content: "Track and resolve security issues across your organization's environment."
+      isCorrect: true
+      explanation: "Sentinel incident management is intended to help you track and resolve security issues across your organization's environment."
+    - content: "Manage security roles in your environment"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "You cannot directly manage security roles with incident management."

@@ -1,45 +1,31 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.incident-management-in-sentinel.3-manage-events-alerts
+uid: learn.azure.incident-management-in-sentinel.3-understand-evidence-and-entities
 metadata:
-  title: Manage events and alerts
+  title: Understand evidence and entities
   description: TODO
   ms.date: TODO
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Manage events and alerts
+title: Understand evidence and entities
 durationInMinutes: 5
 content: |
-  [!include[]includes/3-manage-events-alerts.md)]
+  [!include[]includes/3-understand-evidence-and-entities.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "Which of the following is evidence in a Sentinel incident?"
     choices:
-    - content: "Answer 1"
+    - content: "IP address"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "An IP address is an entity"
+    - content: "User name"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "A user name is an entity"
+    - content: "Event"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
+      explanation: "An event is evidence"
+    - content: "Alert"
       isCorrect: false
-      explanation: "Explanation 4"
-  - content: "Question 2"
-    choices:
-    - content: "Answer 1"
-      isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
-      isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
-      isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "An alert is evidence"
