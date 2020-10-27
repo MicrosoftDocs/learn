@@ -40,6 +40,16 @@ Paths are a subject that comes up so frequently that .NET includes a class calle
 
 The `Path` class is located in the `System.IO` namespace shipped with .NET and does not need to be installed.
 
+### Special path characters
+
+Different operating systems use different characters to separate directory levels.
+
+For example Windows uses the backslash `stores\201`
+
+While macOS uses the forward slash `stores/201`
+
+To help with this, the `Path` class contains the `DirectorySeparatorChar` field. .NET will automatically interpret that field into the correct operating system specific separator character when you need to build a path manually.
+
 ## Join paths
 
 The `Path` class works with the concept of file and folder paths, which are just strings. For instance, if you want to get the path to the *stores/201* folder, you can use the `Path` class to do that.
@@ -49,6 +59,9 @@ Console.WriteLine(Path.Combine("stores","201")); // outputs: stores/201
 ```
 
 The reason why you would use the `Path` class instead of concatenating string is that your program might be running on a multitude of different operating systems. The `Path` class will always format the paths correctly for whatever operating system it's running on.
+
+> [!TIP]
+> The `Path` class doesn't care whether or not things actually exist. Paths are conceptual, not physical. It's just building and parsing strings for you.
 
 ### Determine file name extensions
 
@@ -63,7 +76,7 @@ Console.WriteLine(Path.GetExtension("sales.json")); // outputs: .json
 The `Path` class contains many different methods that do various things. However, you can get the most information about a directory or a file by using the `DirectoryInfo` or `FileInfo` classes respectively.
 
 ```csharp
-string fileName = @"stores\201\sales\sales.json";
+string fileName = $"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales{Path.DirectorySeparatorChar}sales.json";
 
 FileInfo info = new FileInfo(fileName);
 

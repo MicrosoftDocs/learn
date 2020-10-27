@@ -30,7 +30,7 @@ One task that you'll often do with the `Directory` class is list out or *enumera
     📂 202
 ```
 
-To read through and list the top-level directories, you can use the `Directory.EnumerateDirectories` function.
+To read through and list the names of the top-level directories, you can use the `Directory.EnumerateDirectories` function.
 
 ```csharp
 IEnumerable<string> listOfDirectories = Directory.EnumerateDirectories("stores");
@@ -46,7 +46,7 @@ foreach (var dir in listOfDirectories) {
 
 ## List files in a specific directory
 
-To read all the files in a directory, you can use the `Directory.EnumerateFiles` function.
+To list the names of all of the files in a directory, you can use the `Directory.EnumerateFiles` function.
 
 ```csharp
 IEnumerable<string> files = Directory.EnumerateFiles("stores");
@@ -61,14 +61,15 @@ foreach (var file in files)
 // stores/sales.json
 ```
 
-
 ## List all content in a directory and all sub-directories
 
-Both the `Directory.EnumerateDirectories` and `Directory.EnumerateFiles` functions have an overload that accepts a parameter to specify a search pattern files and/or directories must match and to indicate whether to recursively traverse a specified folder and all of its sub-folders.
+Both the `Directory.EnumerateDirectories` and `Directory.EnumerateFiles` functions have an overload that accepts a parameter to specify a search pattern files and/or directories must match.
+
+They also have another overload that accepts a parameter to indicate whether to recursively traverse a specified folder and all of its sub-folders.
 
 ```csharp
 // Find all *.txt files in the stores folder and its sub-folders
-IEnumerable<string> allFilesInAllFolders = Directory.EnumerateFiles("stores", "*.txt", SearchOptions.AllDirectories);
+IEnumerable<string> allFilesInAllFolders = Directory.EnumerateFiles("stores", "*.txt", SearchOption.AllDirectories);
 
 foreach (var file in allFilesInAllFolders)
 {

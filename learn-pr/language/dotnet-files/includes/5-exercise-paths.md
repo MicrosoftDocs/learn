@@ -51,13 +51,13 @@ In the current Program.cs code, you're passing the static location of the *store
 
   Notice that the path that's not listed for the files is the full system path. This is because the `Directory.GetCurrentDirectory` method returns the full path to the current location.
 
-    ```bash
-    /home/username/dotnet-files/stores/sales.json  
-    /home/username/dotnet-files/stores/201/sales.json  
-    /home/username/dotnet-files/stores/202/sales.json  
-    /home/username/dotnet-files/stores/203/sales.json  
-    /home/username/dotnet-files/stores/204/sales.json  
-    ```
+```bash
+/home/username/dotnet-files/stores/sales.json  
+/home/username/dotnet-files/stores/201/sales.json  
+/home/username/dotnet-files/stores/202/sales.json  
+/home/username/dotnet-files/stores/203/sales.json  
+/home/username/dotnet-files/stores/204/sales.json  
+```
 
 ## Find all .json files
 

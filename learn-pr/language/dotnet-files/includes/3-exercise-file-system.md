@@ -39,15 +39,10 @@ You need to find all the sales.json files in all folders.
 ### Include the System.IO namespace
 
 1. Select the `Program.cs` file to open it in the editor.
-1. Import the `System.IO` namespace at the top of the file.
+1. Import the `System.IO` and `System.Collections.Generic` namespaces at the top of the file.
 
     ```csharp
     using System.IO;
-    ```
-
-1. Add the `System.Collections.Generic` namespace as well.
-
-    ```csharp
     using System.Collections.Generic;
     ```
 

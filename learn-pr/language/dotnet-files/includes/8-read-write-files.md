@@ -34,7 +34,7 @@ class SalesTotal
   public int Total { get; set; }
 }
 
-var data = JsonSerializer.Deserialize<SalesTotal>("stores/201/sales.json");
+var data = JsonSerializer.Deserialize<SalesTotal>($"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales.json");
 
 Console.WriteLine(data.Total);
 ```
@@ -47,9 +47,9 @@ Console.WriteLine(data.Total);
 You learned how to write files in the previous exercise. It's just that you wrote an empty one. To write data to a file, use the same `WriteAllText` method, but pass in the data that you want to write.
 
 ```csharp
-var data = JsonSerializer.Deserialize<SalesTotal>("stores/201/sales.json");
+var data = JsonSerializer.Deserialize<SalesTotal>($"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales.json");
 
-File.WriteAllText("SalesTotals/totals.txt", data.Total.ToString());
+File.WriteAllText($"SalesTotals{Path.DirectorySeparatorChar}totals.txt", data.Total.ToString());
 
 // totals.txt
 // 22385.32
@@ -60,9 +60,9 @@ File.WriteAllText("SalesTotals/totals.txt", data.Total.ToString());
 In the preceding example, the file is overwritten every time you write to it. Sometimes you don't want that. Sometimes you want to append data to the file, not replace it entirely. You can do this with the `File.AppendAllText` method. By default, `File.AppendAllText` will create the file if it does not already exist.
 
 ```csharp
-var data = JsonSerializer.Deserialize<SalesTotal>("stores/201/sales.json");
+var data = JsonSerializer.Deserialize<SalesTotal>($"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales.json");
 
-File.AppendAllText("SalesTotals/totals.txt", $"{data.Total}{Environment.NewLine}");
+File.AppendAllText($"SalesTotals{Path.DirectorySeparatorChar}totals.txt", $"{data.Total}{Environment.NewLine}");
 
 // totals.txt
 // 22385.32
