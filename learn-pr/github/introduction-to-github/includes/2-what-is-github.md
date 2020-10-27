@@ -15,7 +15,7 @@ As you work with **Git** and **GitHub**, you may wonder about the difference bet
 
 To learn more about **Git**, see [Using common Git commands](https://docs.github.com/en/free-pro-team@latest/github/using-git/using-common-git-commands).
 
-**GitHub** is a cloud platform that uses Git as its core technology. It simplifies the process of collaborating on projects and provides a website, command-line tools, and overall flow that allows developers and users to work together. It acts as the "remote repository" mentioned previously in the **Git** section. 
+**GitHub** is a cloud platform that uses Git as its core technology. It simplifies the process of collaborating on projects and provides a website, command-line tools, and overall flow that allows developers and users to work together. GitHub acts as the "remote repository" mentioned previously in the **Git** section. 
 
 Key features provided by GitHub include:
 - Issues
