@@ -30,7 +30,7 @@ In this exercise, you'll use the example scenario from the previous unit to lear
 
         | Property | Suggested value | Description |
         |---|---|---|
-        | **Storage account** | _[Globally unique name]_ | Specifies the name of the new storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog automatically populates the field with a unique name that is dynamically generated. However, feel free to use a different name or even an existing account. |
+        | **Storage account** | _[Globally unique name]_ | Specifies the name of the new storage account used by your function app (which does not need to match the globally unique name that you specified for your function). Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog automatically populates the field with a unique name that is dynamically generated. However, feel free to use a different name or even an existing account. |
         | **Operating system** | _Windows_ | Specifies the operating system that hosts the function app. |
         | **Plan type** | _Consumption (Serverless)_ | Specifies the hosting plan that defines how resources are allocated to your function app. In the default **Consumption** plan, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run. |
 
@@ -75,6 +75,8 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
           "version": "1.0.0"
         }
         ```
+        
+        Where `example` should be replaced with the name of your package. For example, you could use the globally unique name that you specified for your function earlier.
     
     1. Select <kbd>Ctrl+S</kbd> to save the file, then <kbd>Ctrl+Q</kbd> to close the document.
 
