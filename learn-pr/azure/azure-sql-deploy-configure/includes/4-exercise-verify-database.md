@@ -125,7 +125,7 @@ In this option, you'll walk through some common queries against system functions
 
 1. For a SQL Server deployment, you might normally look at DMVs like sys.dm_process_memory to see limits for CPU, memory, and workers. This DMV is not supported with Azure SQL Database, because the user doesn't expose or control the details of the host that supports the database. So you can use the DMV sys.dm_user_db_resource_governance (and sys.dm_instance_resource_governance in Azure SQL Managed Instance) to review capacities and limits for your deployed SQL database. 
 
-    Run and review the following query results. Compare this to your pricing tier and the limits documented for your deployed tier.
+    Run and review the following query results. Compare this to your pricing tier and the limits documented for your deployed tier. The `slo_name` is the Service Level Objective (SLO) which states the deployment option, service tier, hardware, and compute amount.
 
     ```sql
     SELECT * FROM sys.dm_user_db_resource_governance;
