@@ -93,7 +93,7 @@ So let's begin with the details.
 
     After the change, your file will resemble the following YAML snippet:
 
-    :::code language="yml" source="../deploy/k8s/helm-simple/webspa/templates/configmap.yaml" highlight="25-26":::
+    :::code language="yaml" source="../deploy/k8s/helm-simple/webspa/templates/configmap.yaml" highlight="25-26":::
 
 1. Apply the following changes in the *Startup.cs* file:
     1. In the `ConfigureServices` method, replace the comment `// Add the AddFeatureManagement code` with the following code:
