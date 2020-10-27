@@ -4,32 +4,36 @@ Here, we discuss the key GitHub features you use on a daily basis to manage and 
 
 In addition to providing a platform for collaborative software development, GitHub also offers a workflow designed to optimize use of its various features. While this unit offers a cursory overview of important platform components, it's recommended that you first review [Understanding the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true).
 
-## Git and Github
+## Git and GitHub
 
-As you work with **Git** and **Github**, you may wonder about the difference between the two.
+As you work with **Git** and **GitHub**, you may wonder about the difference between the two.
 
-**Git** is a distributed version control system (VCS) that allows multiple developers or other contributors to work on a project. It provides a way to work with one or more local branches and push them to a remote repository. Git is responsible for everything GitHub-related that happens locally on your computer. Key features provided by Git include:
+**Git** is a distributed version control system (DVCS) that allows multiple developers or other contributors to work on a project. It provides a way to work with one or more local branches and push them to a remote repository. Git is responsible for everything GitHub-related that happens locally on your computer. Key features provided by Git include:
 - Installed and used on your local machine
 - Handles version control
 - Supports branching
 
 To learn more about **Git**, see [Using common Git commands](https://docs.github.com/en/free-pro-team@latest/github/using-git/using-common-git-commands).
 
-**Github** is a cloud platform that uses Git as its core technology. It simplifies the process of collaborating on projects and provides a website, command-line tools, and overall flow that allows developers and users to work together. Key features provided by Github include:
-- Issues
-- Notifications
-- Branches
-- Commits
-- Labels
-- Forks
+**GitHub** is a cloud platform that uses Git as its core technology. It simplifies the process of collaborating on projects and provides a website, command-line tools, and overall flow that allows developers and users to work together. It acts as the "remote repository" mentioned previously in the **Git** section. 
 
-To learn more about **Github**, see [Getting started with Github](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github).
+Key features provided by GitHub include:
+- Issues
+- Discussions
+- Pull requests
+- Notifications
+- Labels
+- Actions
+- Forks
+- Projects
+
+To learn more about **GitHub**, see [Getting started with GitHub](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github).
 
 ## Issues
 
 **Issues** are where most of the communication between a project's consumers and development team occurs. An *issue* can be created to discuss a broad set of topics, including bug reports, feature requests, documentation clarifications, and more. Once an issue has been created, it can be assigned to owners, labels, projects, and milestones. You can also associate issues with pull requests and other GitHub items to provide future traceability.
 
-:::image type="content" source="../media/2-issue.png" alt-text="Github Issue" border="false":::
+:::image type="content" source="../media/2-issue.png" alt-text="GitHub Issue" border="false":::
 
 To learn more about GitHub Issues, see [Mastering Issues](https://guides.github.com/features/issues/?azure-portal=true).
 
@@ -67,7 +71,7 @@ To learn more about GitHub pull requests, see [About pull requests](https://help
 
 ## Labels
 
-Labels provide a way to categorize and organize **issues** and **pull requests** in a repository. As you create a Github repository several labels will automatically be added for you and new ones can also be created.
+Labels provide a way to categorize and organize **issues** and **pull requests** in a repository. As you create a GitHub repository several labels will automatically be added for you and new ones can also be created.
 
 Examples of Labels include:
 
@@ -78,26 +82,42 @@ Examples of Labels include:
 - enhancement
 - question
 
-:::image type="content" source="../media/2-labels.png" alt-text="Github labels" border="true":::
+:::image type="content" source="../media/2-labels.png" alt-text="GitHub labels" border="true":::
 
-To learn more about Github labels see [About labels](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/about-labels).
+To learn more about GitHub labels see [About labels](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/about-labels).
+
+## Actions
+
+**GitHub actions** provide task automation and workflow functionality in a repository. Actions can be used to streamline processes in your software development lifecycle and implement continuous integration and continuous deployment (CI/CD).
+
+GitHub Actions are composed of the following components:
+- **Workflows**: Automated processes added to your repository.
+- **Events**: An activity that triggers a workflow.
+- **Jobs**: A set of steps that execute on a runner.
+- **Steps**: A task that can run one or more commands (actions).
+- **Actions**: Standalone commands that can be combined into steps. Multiple steps can be combined to create a job.
+- **Runners**: Server that has the GitHub Actions runner application installed.
+
+:::image type="content" source="../media/2-actions.png" alt-text="GitHub actions" border="true":::
+
+To learn more about GitHub actions see [Introduction to GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions).
 
 ## Cloning and Forking
 
-Github provides multiple ways to copy a repository so that you can work on it.
+GitHub provides multiple ways to copy a repository so that you can work on it.
 
-1. **Cloning a Repository** - Cloning a repository will make a copy of the repository and its history on your local machine. If you have write access to the repository you can push changes from your local machine to the remote repository (called the **origin**) as they're completed. To clone a repository you can use the [`git clone [url]`](https://docs.github.com/en/free-pro-team@latest/github/using-git/getting-changes-from-a-remote-repository#cloning-a-repository) command or the Github CLI's [`gh repo clone [url]`](https://cli.github.com/manual/gh_repo_clone) command.
-1. **Forking a Repository** - **Forking** a repository makes a copy of the repository in your Github account. The parent repository is referred to as the **upstream** while your forked copy is referred to as the **origin**. Once you've forked a repository into your Github account you can **clone** it to your local machine. Forking allows you to freely make changes to a project without affecting the original **upstream** repository. To contribute changes back to the **upstream** repository you create a **pull request** from your forked repository. You can also run `git` commands to ensure that your local copy stays synced with the **upstream** repository.
+1. **Cloning a Repository** - Cloning a repository will make a copy of the repository and its history on your local machine. If you have write access to the repository you can push changes from your local machine to the remote repository (called the **origin**) as they're completed. To clone a repository you can use the [`git clone [url]`](https://docs.github.com/en/free-pro-team@latest/github/using-git/getting-changes-from-a-remote-repository#cloning-a-repository) command or the GitHub CLI's [`gh repo clone [url]`](https://cli.github.com/manual/gh_repo_clone) command.
+1. **Forking a Repository** - **Forking** a repository makes a copy of the repository in your GitHub account. The parent repository is referred to as the **upstream** while your forked copy is referred to as the **origin**. Once you've forked a repository into your GitHub account you can **clone** it to your local machine. Forking allows you to freely make changes to a project without affecting the original **upstream** repository. To contribute changes back to the **upstream** repository you create a **pull request** from your forked repository. You can also run `git` commands to ensure that your local copy stays synced with the **upstream** repository.
 
 When would you clone a repository versus fork a repository? If you're working with a repository and have write access you can clone it to your local machine. From there you can make modifications and push your changes directly to the **origin** repository.
 
-If you need to work with a repository created by another owner such as `github/example` and don't have write access, you can fork the repository into your Github account, and then clone the fork to your local machine. To see this visually, let's assume that your Github account is called `githubtraining` for this example. Using the Github website you can fork `githubtraining` into your account. From there you can clone the forked version of the repository to your local machine. These steps are shown in the following image.
+If you need to work with a repository created by another owner such as `github/example` and don't have write access, you can fork the repository into your GitHub account, and then clone the fork to your local machine. To see this visually, let's assume that your GitHub account is called `githubtraining` for this example. Using the GitHub website you can fork `githubtraining` into your account. From there you can clone the forked version of the repository to your local machine. These steps are shown in the following image.
 
-:::image type="content" source="../media/2-fork-clone.png" alt-text="Github forking" border="true":::
+:::image type="content" source="../media/2-fork-clone.png" alt-text="GitHub forking" border="true":::
 
 Changes can be made to your local copy of `githubtraining/example` and then pushed back to your remote **origin** repository (`githubtraining/example`). The changes can then be submitted to the `github/example` **upstream** repository using a **pull request** as shown next.
 
-:::image type="content" source="../media/2-fork-pr.png" alt-text="Github pull request from fork" border="true":::
+:::image type="content" source="../media/2-fork-pr.png" alt-text="GitHub pull request from fork" border="true":::
 
 To learn more, see [Fork a repo](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo).
 
@@ -105,6 +125,6 @@ To learn more, see [Fork a repo](https://docs.github.com/en/free-pro-team@latest
 
 **GitHub Pages** is a hosting engine that's built right into your GitHub account. By following a few conventions, and enabling the feature, you can build your own static site generated from HTML and markdown code pulled directly from your repository. 
 
-:::image type="content" source="../media/2-github-pages.png" alt-text="Github Pages" border="false":::
+:::image type="content" source="../media/2-github-pages.png" alt-text="GitHub Pages" border="false":::
 
 To learn more, see [GitHub Pages](https://pages.github.com/?azure-portal=true).

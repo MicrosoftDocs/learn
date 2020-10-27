@@ -22,5 +22,6 @@ Here are some links to more information on the topics we discussed in this modul
 - [Committing changes to your project](https://help.github.com/en/github/committing-changes-to-your-project?azure-portal=true)
 - [Collaborating with issues and pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests?azure-portal=true)
 - [About the role of labels](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/about-labels)
+- [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions)
 - [Fork a repo](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
 - [Working with GitHub Pages](https://help.github.com/en/github/working-with-github-pages?azure-portal=true)
