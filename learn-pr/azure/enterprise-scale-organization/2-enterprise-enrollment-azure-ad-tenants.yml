@@ -28,7 +28,7 @@ quiz:
       isCorrect: false
       explanation: "GitHub accounts can't be used for enterprise enrollment."
 
-  - content: An Azure Active Directory (Azure AD) tenant provides identity and access management. When designing your solution, which of the following are valid design considerations or recommendations?
+  - content: An Azure AD tenant provides identity and access management. When designing your solution, which of the following are valid design considerations or recommendations?
     choices:
     - content: Multifactor authentication provides another layer of security and a second barrier of authentication.
       isCorrect: true
@@ -36,6 +36,6 @@ quiz:
     - content: Multiple Azure AD tenants can't function in the same enrollment.
       isCorrect: false
       explanation: Multiple Azure AD tenants can function in the same enrollment.
-    - content: Don't start by implementing an Azure-AD-only identity deployment if your organization already has an identity infrastructure.
+    - content: Don't start by implementing an Azure AD-only identity deployment if your organization already has an identity infrastructure.
       isCorrect: false
       explanation: If your organization doesn't have an identity infrastructure, start by implementing an Azure AD-only identity deployment. Such a deployment with Azure AD Domain Services and Microsoft Enterprise Mobility + Security provides end-to-end protection for software as a service (SaaS) applications, enterprise applications, and devices.
