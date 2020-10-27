@@ -15,7 +15,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
 1. Run the following command in the Bash Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
 
     ```azurecli
-    rg=<resource group name>
+    RG=<resource group name>
 
     az group create --name $RG --location <location>
     ```
