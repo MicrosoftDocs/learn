@@ -59,7 +59,8 @@ You need to find all the sales.json files in all folders.
 
         foreach (var file in foundFiles)
         {
-            if (file == "sales.json")
+            // The file name will contain the full path, so only check the end of it
+            if (file.EndsWith("sales.json"))
             {
                 salesFiles.Add(file);
             }
@@ -83,6 +84,8 @@ You need to find all the sales.json files in all folders.
     }
     ```
 
+1. Select the <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> keys to save the file.
+
 ## Run the program
 
 1. Enter the following command into Cloud Shell to run the program.
@@ -94,11 +97,15 @@ You need to find all the sales.json files in all folders.
 1. The program should show the following output.
 
     ```bash
-    stores/sales.json
+    stores/salestotals.json
     stores/201/sales.json
+    stores/201/salestotals.json
     stores/202/sales.json
+    stores/202/salestotals.json
     stores/203/sales.json
+    stores/203/salestotals.json
     stores/204/sales.json
+    stores/204/salestotals.json
     ```
 
 Excellent! You've successfully written a command-line program that will traverse any directory and find all the *sales.json* files inside.
@@ -138,7 +145,7 @@ namespace files_module
     
             foreach (var file in foundFiles)
             {
-                if (file == "sales.json")
+                if (file.EndsWith("sales.json"))
                 {
                     salesFiles.Add(file);
                 }

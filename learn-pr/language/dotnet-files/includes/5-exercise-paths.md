@@ -31,7 +31,7 @@ In the current Program.cs code, you're passing the static location of the *store
     {
         var currentDirectory = Directory.GetCurrentDirectory();
         
-        var storesDirectory = Path.Combine(currentDirectory, "sales");
+        var storesDirectory = Path.Combine(currentDirectory, "stores");
         
         var files = FindFiles(storesDirectory);
         
@@ -49,7 +49,7 @@ In the current Program.cs code, you're passing the static location of the *store
     dotnet run
     ```
 
-  Notice that the path that's not listed for the files is the full system path. This is because the `Directory.GetCurrentDirectory` method returns the full path to the current location.
+  Notice that the path that's now listed for the files is the full system path. This is because the `Directory.GetCurrentDirectory` method returns the full path to the current location.
 
 ```bash
 /home/username/dotnet-files/stores/sales.json  
@@ -70,7 +70,7 @@ Instead of looking for just *sales.json* files, the program needs to search for 
     {
         var extension = Path.GetExtension(file);
         
-        if (file == "sales.json")
+        if (file.EndsWith("sales.json"))
         {
             salesFiles.Add(file);
         }
@@ -102,10 +102,14 @@ Instead of looking for just *sales.json* files, the program needs to search for 
 
     ```bash
     /home/username/dotnet-files/stores/sales.json  
-    /home/username/dotnet-files/stores/201/sales.json  
-    /home/username/dotnet-files/stores/202/sales.json  
+    /home/username/dotnet-files/stores/201/sales.json
+    /home/username/dotnet-files/stores/201/salestotals.json  
+    /home/username/dotnet-files/stores/202/sales.json
+    /home/username/dotnet-files/stores/202/salestotals.json    
     /home/username/dotnet-files/stores/203/sales.json  
+    /home/username/dotnet-files/stores/203/salestotals.json  
     /home/username/dotnet-files/stores/204/sales.json  
+    /home/username/dotnet-files/stores/204/salestotals.json  
     ```
 
 Great job! You've used the `Path` class and the `Directory.GetCurrentDirectory` method to make the program much more robust. In the next section, you'll learn how to create directories and move files between locations.
@@ -128,7 +132,7 @@ namespace files_module
             var currentDirectory = Directory.GetCurrentDirectory();
             var storesDirectory = Path.Combine(currentDirectory, "stores");
 
-            var files = FindSalesFiles(storesDirectory);
+            var files = FindFiles(storesDirectory);
 
             foreach (var file in files)
             {

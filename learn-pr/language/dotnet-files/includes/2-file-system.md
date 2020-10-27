@@ -26,6 +26,7 @@ One task that you'll often do with the `Directory` class is list out or *enumera
     📄 totals.txt
     📂 201
        📄 sales.json
+       📄 salestotals.json
        📄 inventory.txt
     📂 202
 ```

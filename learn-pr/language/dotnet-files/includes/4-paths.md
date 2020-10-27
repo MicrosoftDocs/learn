@@ -2,7 +2,7 @@
 
 In the previous exercise, we didn't have many folders to find and look through. If you have many files or folders, manually building paths can get tedious. .NET provides some built-in constants and utility functions to make file paths easier.
 
-Here you'll learn of all the constants and utility functions in the `System.IO` namespace and the `System.Environment` type so that you can make the program smarter and more resilient.
+Here you'll learn of some the constants and utility functions in the `System.IO` namespace and the `System.Environment` type so that you can make the program smarter and more resilient.
 
 ## Determine the current directory
 
@@ -48,17 +48,29 @@ For example Windows uses the backslash `stores\201`
 
 While macOS uses the forward slash `stores/201`
 
-To help with this, the `Path` class contains the `DirectorySeparatorChar` field. .NET will automatically interpret that field into the correct operating system specific separator character when you need to build a path manually.
+To help with this, the `Path` class contains the `DirectorySeparatorChar` field.
 
-## Join paths
+.NET will automatically interpret that field into the operating system specific separator character when you need to build a path manually.
 
-The `Path` class works with the concept of file and folder paths, which are just strings. For instance, if you want to get the path to the *stores/201* folder, you can use the `Path` class to do that.
+```csharp
+Console.WriteLine($"stores{Path.DirectorySeparatorChar}201");
+
+// returns:
+// stores\201 on Windows
+// stores/201 on macOS
+```
+
+### Join paths
+
+The `Path` class works with the concept of file and folder paths, which are just strings. You can use the `Path` class to build correct operating system specific paths for you.
+
+For instance, if you want to get the path to the *stores/201* folder, you can use the `Path.Combine` function to do that.
 
 ```csharp
 Console.WriteLine(Path.Combine("stores","201")); // outputs: stores/201
 ```
 
-The reason why you would use the `Path` class instead of concatenating string is that your program might be running on a multitude of different operating systems. The `Path` class will always format the paths correctly for whatever operating system it's running on.
+Remember, the reason why you would use the `Path.Combine` or `Path.DirectorySeparatorChar` class instead of hard-coding string is that your program might be running on a multitude of different operating systems. The `Path` class will always format the paths correctly for whatever operating system it's running on.
 
 > [!TIP]
 > The `Path` class doesn't care whether or not things actually exist. Paths are conceptual, not physical. It's just building and parsing strings for you.

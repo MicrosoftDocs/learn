@@ -1,8 +1,8 @@
 The `File` and `Directory` classes in .NET let you create new files and directories programmatically.
 
-So far, you've created a robust command-line application in .NET that can read any folder structure to find files with a .json or .txt extension. You'll need to read those files to summarize the data in them. You'll then write the totals to a new file in a new directory called *salesTotals*.
+So far, you've created a robust command-line application in .NET that can read any folder structure to find files with a .json extension. You'll need to read those files to summarize the data in them. You'll then write the totals to a new file in a new directory called *salesTotals*.
 
-In this exercise, you'll create the *salesTotals* directory and *totals.txt* file where the sales totals will eventually go.
+In this exercise, you'll create the *salesTotalsDir* directory and *totals.txt* file where the sales totals will eventually go.
 
 ## Create the SalesTotals directory
 
@@ -18,7 +18,7 @@ In this exercise, you'll create the *salesTotals* directory and *totals.txt* fil
         
         var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
         
-        var files = FindSalesFiles(storesDir);
+        var files = FindFiles(storesDir);
     }
     ```
 
@@ -33,13 +33,13 @@ In this exercise, you'll create the *salesTotals* directory and *totals.txt* fil
         var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
         Directory.CreateDirectory(salesTotalDir);
         
-        var files = FindSalesFiles(storesDir);
+        var files = FindFiles(storesDir);
     }
     ```
 
 ## Write the totals.txt file
 
-1. In the `Main` function, add the code to create an empty file called *totals.txt* inside the newly created *salesTotals* directory. Use an empty string for the file's contents for now.
+1. In the `Main` function, add the code to create an empty file called *totals.txt* inside the newly created *salesTotalsDir* directory. Use an empty string for the file's contents for now.
 
     ```csharp
     static void Main(string[] args)
@@ -50,7 +50,7 @@ In this exercise, you'll create the *salesTotals* directory and *totals.txt* fil
         var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
         Directory.CreateDirectory(salesTotalDir);
         
-        var files = FindSalesFiles(storesDir);
+        var files = FindFiles(storesDir);
         
         File.WriteAllText(Path.Combine(salesTotalDir, "totals.txt"), String.Empty);
     }
