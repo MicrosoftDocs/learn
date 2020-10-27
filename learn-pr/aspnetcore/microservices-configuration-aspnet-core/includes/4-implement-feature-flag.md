@@ -12,45 +12,52 @@ In this exercise, you will:
 - Create an App Configuration store in your Azure account.
 - Connect *eShopOnContainers* to the App Configuration store.
 
-## Review some "infrastructure" feature flag components
+## Review the "infrastructure" feature flag components
 
-To make a feature configurable, you have to make several changes to your app. Some "infrastructure" components have already been implemented for you, so we'll just review them here.
+:::image type="content" source="../media/4-implement-feature-flag/client-to-server-integration.png" alt-text="A diagram showing how Angular communicates with ASP.NET Core" border="true" lightbox="../media/4-implement-feature-flag/client-to-server-integration.png":::
 
-The key infrastructure components are:
+To make a feature configurable, you have to make several changes to your app. Some "infrastructure" components have already been implemented for you. What follows is a review of those components.
 
-- A feature flag directive for the views.
-- Feature flag middleware for querying feature values.
-- Configuration extensions.
+### Feature flag directive for the views
 
-In for the details now.
-
-### 1. Feature flag directive for the views
-
-This is implemented with three new files in the *src\Web\WebSPA\Client\src\modules\shared* directory:
+This is implemented with the following files in the *src\Web\WebSPA\Client\src\modules\shared* directory:
 
 - *directives\featureFlag.directive.ts*
 - *models\featureFlag.model.ts*
 - *services\featureFlag.service.ts*
 
+An Angular component that contains the `featureFlag` attribute triggers the following sequence of events:
+
+1. The Angular `featureFlag` directive, defined in *featureFlag.directive.ts*, calls the `getFeatures` function in *featureFlag.service.ts*:
+
+    :::code language="typescript" source="../code/src/web/webspa/client/src/modules/shared/directives/featureFlag.directive.ts" highlight="18":::
+
+1. The `getFeatures` function constructs a URL to initiate an HTTP GET request to the App Configuration store:
+
+    :::code language="typescript" source="../code/src/web/webspa/client/src/modules/shared/services/featureFlag.service.ts" id="snippet_getFeatures":::
+
+1. The HTTP response from the aforementioned HTTP GET request is converted to an instance of `IFeatureFlag`:
+
+    :::code language="typescript" source="../code/src/web/webspa/client/src/modules/shared/models/featureFlag.model.ts":::
+
 The feature flag directive is used in any `div` element to determine whether it should be rendered, depending on the result from the feature flag service. The feature flag service queries the feature management middleware to check the feature status.
 
-### 2. Feature Management middleware for querying values
+### Feature Management middleware for querying values
 
 A custom middleware, found at *src\Web\WebSPA\Infrastructure\Middlewares\FeatureManagementMiddleware.cs*, is a key component of the SPA's feature flag system. The middleware allows you to query the specific feature flag values so they can be used in the SPA:
 
 :::code language="csharp" source="../code/src/web/webspa/infrastructure/middlewares/featuremanagementmiddleware.cs" id="snippet_Invoke" highlight="8":::
 
-As a refresher, a middleware is just a handler for requests that sits in the ASP.NET Core's request pipeline. Think of it like a "light" controller that processes the raw `HttpContext` and returns a value by writing directly to the `Response` object. For more in-depth information, see the [ASP.NET Core Middleware](/aspnet/core/fundamentals/middleware/) document.
+As a refresher, a middleware is added to ASP.NET Core's request processing pipeline as a handler for HTTP requests. Think of it like a "light" controller that processes the raw `HttpContext` and returns a value by writing directly to the `Response` object. For more in-depth information, see the [ASP.NET Core Middleware](/aspnet/core/fundamentals/middleware/) document.
 
-The Feature Management library is implemented to work on the server side. That's fine when using MVC or Razor Pages, but we need to use the configuration data in our SPA. So the directive mentioned in the previous section will query the `/features` endpoint, implemented as this middleware, to get the feature state. The middleware will just get the configuration values from the feature manager that, in turn, gets them from the ASP.NET Core configuration infrastructure.
+The Feature Management library is implemented to work on the server side. That's fine when using MVC or Razor Pages, but you need to use the configuration data in the SPA. So the directive mentioned in the previous section will query the `/features` endpoint, implemented as this middleware, to get the feature state. The middleware retrieves the configuration values from the feature manager that, in turn, gets them from the ASP.NET Core configuration infrastructure.
 
-Think of this middleware as a proxy or broker between the SPA and the Feature Management service. You can find the middleware in the file *src\Web\WebSPA\Infrastructure\Middlewares\FeatureManagementMiddleware.cs*.
+Think of this middleware as a proxy or broker between the SPA and the Feature Management service.
 
-### 3. Configuration extensions
+### Configuration extensions
 
 The configuration extensions take care of:
 
-- Checking whether the Feature Management is enabled, and
 - Configuring the Feature Management middleware.
 
 You'll find the extensions in the *src\Web\WebSPA\Extensions* directory.
@@ -157,6 +164,7 @@ So let's begin with the details.
 
     The preceding script uses Helm to deploy the WebSPA Docker image from your ACR instance to AKS.
 
+1. Refresh the browser tab with the :::no-loc text="*eShopOnContainers*"::: app to force a reload of the WebSPA.
 1. Start a purchase as follows:
     1. Select the **:::no-loc text="LOGIN":::** link in the upper right to sign into the app. Sign in using the credentials provided on the page.
     1. Add the **:::no-loc text=".NET BLUE HOODIE":::** to the shopping bag by selecting the image.
@@ -331,15 +339,10 @@ You must redeploy the SPA before you can confirm that it works as intended.
 
 ## Test the feature toggle
 
-At this point, everything should be set. Complete the following steps:
+To verify the feature toggle works as expected, start a purchase as follows:
 
-1. Sign out of the SPA and refresh the browser, to ensure you get the latest version.
-1. Sign in and buy some items. Go to the checkout page.
-1. You should now see the discount coupon input, because the toggle was created as "On" in the portal.
-1. Toggle the feature "Off" in the App Configuration store.
-1. Go back to the SPA and select the basket icon in the top right.
-1. Wait for 10 seconds (the refresh time set for the configuration provider).
-1. Select the **CHECKOUT** button.
-1. Now you shouldn't see the discount coupon input.
+1. In the app, refresh the page. The WebSPA reloads.
+1. Select the shopping bag icon in the upper right.
+1. Select the **:::no-loc text="CHECKOUT":::** button.
 
-So this is finally what we wanted to get.
+Notice the the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is not present. This is expected because the coupons feature is disabled.
