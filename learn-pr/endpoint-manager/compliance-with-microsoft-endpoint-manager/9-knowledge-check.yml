@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.compliance-with-microsoft-endpoint-manager.9-knowledge-check
 metadata:
-  title: Knowledge Check
-  description: Knowledge Check
+  title: Knowledge check
+  description: Knowledge check
   ms.date: 10/26/2020
   author: Erikre 
   ms.author: erikre
   ms.topic: interactive-tutorial
   ms.prod: learning-endpoint-manager  
-title: Knowledge Check
+title: Knowledge check
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
