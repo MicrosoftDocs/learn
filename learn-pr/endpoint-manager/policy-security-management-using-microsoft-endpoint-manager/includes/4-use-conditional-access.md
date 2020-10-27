@@ -25,6 +25,7 @@ With co-management, Intune evaluates every device in your network to determine h
 
 - Intune detects active security incidents on a device. It uses the intelligent security of Microsoft Defender Advanced Threat Protection (formerly Windows Defender ATP) and other mobile threat defense providers. These partners run ongoing behavioral analysis on devices. This analysis detects active incidents, and then passes this information to Intune for real-time compliance evaluation.  
 
+
     - This evaluation is post-security breach and incident-based  
 
 ## Common ways to use Conditional Access
