@@ -4,4 +4,4 @@ For example, Conditional Access allows you to control the devices and apps that 
 
 Conditional Access is an Azure Active Directory capability that is included with an Azure Active Directory Premium license. Intune enhances this capability by adding mobile device compliance and mobile app management to the solution. 
 
-[ ![Intune and Conditional Access when using EMS](../media/intro-to-endpoint-manager-05.png) ](../media/intro-to-endpoint-manager-05.png#lightbox)
+[ ![Diagram showing Conditional Access when using Enterprise Mobility and Security (E M S).](../media/intro-to-endpoint-manager-05.png) ](../media/intro-to-endpoint-manager-05.png#lightbox)
