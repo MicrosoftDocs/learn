@@ -3,7 +3,7 @@ uid: learn.wwl.evaluate-performance-improvements
 metadata:
   title: Evaluate performance improvements
   description: "Evaluate possible changes to indexes. Determine the impact of changes to queries and indexes. Explore relevant Dynamic Management Objects."
-  ms.date: 10/15/2020
+  ms.date: 10/27/2020
   author: wwlpublish
   ms.author: kadelaney
   ms.topic: interactive-tutorial
@@ -36,6 +36,7 @@ units:
 - learn.wwl.evaluate-performance-improvements.describe-wait-statistics
 - learn.wwl.evaluate-performance-improvements.tune-indexes
 - learn.wwl.evaluate-performance-improvements.maintain-indexes
+- learn.wwl.evaluate-performance-improvements.5a-exercise-isolate-problem-areas-poor-performing-queries
 - learn.wwl.evaluate-performance-improvements.knowledge-check
 - learn.wwl.evaluate-performance-improvements.summary
 badge:
