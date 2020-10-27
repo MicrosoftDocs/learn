@@ -13,6 +13,18 @@ Open another tab on your web browser and navigate to:
 > [!IMPORTANT]
 > If the link to Try .NET doesn't work, try typing it into your web browser's location bar instead.
 
+
+Delete me:
+
+```csharp-interactive
+Console.WriteLine("Hello World!");
+```
+
+... and me...
+
+:::code language="csharp" source="../codesnippet/CPP/ca2240-implement-iserializable-correctly_2.cs" range="3-8, 10-15" interactive="try-dotnet":::
+
+
 By default, Try .NET displays some C# code in the top pane of the web page that demonstrates its functionality. Specifically, it's a program that displays the first 20 values in a Fibonacci sequence. A Fibonacci sequence is simply a list of numbers where each number is the sum of the two preceding ones, starting from 0 and 1. Developers often create an algorithm featuring the Fibonacci sequence since the logic is fairly simple and straightforward. Think of it as a *warm-up exercise* for some developers when they begin work with a new programming language.
 
 Select the blue **Run** button beneath the code listing to view the result.
