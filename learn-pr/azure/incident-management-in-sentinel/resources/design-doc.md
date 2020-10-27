@@ -63,6 +63,7 @@ This module introduces you to incident management in Azure Sentinel. You’ll le
 **Estimated unit duration:** 3 minutes
 
 ### Module scenario
+
 Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Intune Endpoint Protection, and Microsoft Azure Information Protection. Contoso uses the paid version of Azure Security Center as threat protection for resources that run on Azure and on-premises. The company also monitors and protects other non-Microsoft assets.
 <!--LM: The previous three sentences are part of the scenario in several other modules, if you want to include it here. If they are not relevant, then please delete.-->
 As part of Contoso's security team, you've recently been asked to investigate and identify sign-in anomalies for the company's Azure AD resources.
