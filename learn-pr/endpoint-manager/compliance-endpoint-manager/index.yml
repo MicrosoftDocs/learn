@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.compliance-with-microsoft-endpoint-manager
+uid: learn.compliance-endpoint-manager
 metadata:
   title: Learn how to analyze and resolve compliance issues using Microsoft Endpoint Manager
   description: In this module, you'll learn about analyzing and resolving compliance issues using Microsoft Endpoint Manager. 
@@ -20,7 +20,7 @@ abstract: |
   - Learn about connector status
   - Learn about client health with co-management
 prerequisites: None
-iconUrl: /learn/achievements/compliance-with-microsoft-endpoint-manager.svg
+iconUrl: /learn/achievements/compliance-endpoint-manager.svg
 ratingEnabled: false
 levels:
 - beginner
@@ -29,16 +29,16 @@ roles:
 products:
 - azure
 units:
-- learn.compliance-with-microsoft-endpoint-manager.1-introduction
-- learn.compliance-with-microsoft-endpoint-manager.2-intune-tenant-status
-- learn.compliance-with-microsoft-endpoint-manager.3-service-health-dashboard
-- learn.compliance-with-microsoft-endpoint-manager.4-troubleshooting-portal
-- learn.compliance-with-microsoft-endpoint-manager.5-intune-reports
-- learn.compliance-with-microsoft-endpoint-manager.6-endpoint-analytics
-- learn.compliance-with-microsoft-endpoint-manager.7-connector-status
-- learn.compliance-with-microsoft-endpoint-manager.8-client-health
-- learn.compliance-with-microsoft-endpoint-manager.9-knowledge-check
-- learn.compliance-with-microsoft-endpoint-manager.10-summary
+- learn.compliance-endpoint-manager.1-introduction
+- learn.compliance-endpoint-manager.2-intune-tenant-status
+- learn.compliance-endpoint-manager.3-service-health-dashboard
+- learn.compliance-endpoint-manager.4-troubleshooting-portal
+- learn.compliance-endpoint-manager.5-intune-reports
+- learn.compliance-endpoint-manager.6-endpoint-analytics
+- learn.compliance-endpoint-manager.7-connector-status
+- learn.compliance-endpoint-manager.8-client-health
+- learn.compliance-endpoint-manager.9-knowledge-check
+- learn.compliance-endpoint-manager.10-summary
 badge:
-  uid: learn.compliance-with-microsoft-endpoint-manager.badge
+  uid: learn.compliance-endpoint-manager.badge
   
