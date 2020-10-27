@@ -17,13 +17,13 @@ Intune provides the following types of Conditional Access:
 
 With co-management, Intune evaluates every device in your network to determine how trustworthy it is. It does this evaluation in the following two ways:
 
-1. Intune makes sure a device or app is managed and securely configured. This check depends on how you set your organization's compliance policies. For example, make sure all devices have encryption enabled and aren't jailbroken.  
+- Intune makes sure a device or app is managed and securely configured. This check depends on how you set your organization's compliance policies. For example, make sure all devices have encryption enabled and aren't jailbroken.  
 
     - This evaluation is pre-security breach and configuration-based  
 
     - For co-managed devices, Configuration Manager also does configuration-based evaluation. For example, required updates or apps compliance. Intune combines this evaluation along with its own assessment.  
 
-2. Intune detects active security incidents on a device. It uses the intelligent security of Microsoft Defender Advanced Threat Protection (formerly Windows Defender ATP) and other mobile threat defense providers. These partners run ongoing behavioral analysis on devices. This analysis detects active incidents, and then passes this information to Intune for real-time compliance evaluation.  
+- Intune detects active security incidents on a device. It uses the intelligent security of Microsoft Defender Advanced Threat Protection (formerly Windows Defender ATP) and other mobile threat defense providers. These partners run ongoing behavioral analysis on devices. This analysis detects active incidents, and then passes this information to Intune for real-time compliance evaluation.  
 
     - This evaluation is post-security breach and incident-based  
 
