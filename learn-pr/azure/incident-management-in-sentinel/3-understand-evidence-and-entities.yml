@@ -26,6 +26,6 @@ quiz:
     - content: "Event"
       isCorrect: true
       explanation: "An event is evidence"
-    - content: "Alert"
-      isCorrect: true
+    - content: "Host name"
+      isCorrect: false
       explanation: "An alert is evidence"
