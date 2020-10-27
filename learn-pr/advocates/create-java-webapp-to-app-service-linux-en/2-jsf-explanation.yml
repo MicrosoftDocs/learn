@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-webapp-java-tomcat.2-jsf-explanation
+title: Overview of the JavaServer Faces Application
+metadata:
+  title: Overview of the JavaServer Faces Application
+  description: This contentns explain the overwiew of the JavaServer Faces Application.
+  author: yoshioterada
+  ms.author: yoterada
+  ms.date: 09/16/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-jsf-explanation.md)]
