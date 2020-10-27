@@ -6,7 +6,7 @@ In this module, you will:
 
 - Understand how and why you would use a container as a development environment.
 - Install the Remote - Containers extension in Visual Studio Code and learn how to use it.
-- Explore the files make up your container configuration.
+- Explore the files that make up your container configuration.
 - Customize your container and development experience by forwarding ports, changing settings, and installing additional software.
 
 ## Prerequisites

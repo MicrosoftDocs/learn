@@ -1,4 +1,4 @@
-As you've noticed during your time at the agency, it can be a major hassle for developers to get started with new projects. Each one requires the developer to install and manage specific or complicated sets of dependencies and tech stacks. Ideally, each project would be contained in its own pre-configured environment, containerized environment. Containerized development is made possible with Docker and Visual Studio Code (VS Code) through the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
+As you've noticed during your time at the agency, it can be a major hassle for developers to get started with new projects. Each one requires the developer to install and manage specific or complicated sets of dependencies and tech stacks. Ideally, each project would be contained in its own pre-configured, containerized environment. Containerized development is made possible with Docker and Visual Studio Code (VS Code) through the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
 
 ## The Remote-Containers extension for VS Code
 
@@ -18,18 +18,18 @@ You can seamlessly switch your entire development environment just by connecting
 
 ## Adding a dev container to a project
 
-VS Code has an interface for selecting a pre-configured development container definition. This adds a ".devcontainer" folder to your project.
+VS Code has an interface for selecting a pre-configured development container definition. This adds a `.devcontainer` folder to your project.
 
-### About the.devcontainer folder
+### About the .devcontainer folder
 
-The ".devcontainer" folder contains two files - a `Dockerfile` and a `devcontainer.json` file. These two files allow you to define the container environment, and control the configuration of your project within that container.
+The `.devcontainer` folder contains two files - a `Dockerfile` and a `devcontainer.json` file. These two files allow you to define the container environment and control the configuration of your project within that container.
 
 #### Dockerfile
 
-This file defines the environment - such as what runtimes are installed. Examples of runtime environments are Python, Node, Java, ect. You don't need to be an expert in Docker to learn how to use this file to extend your environment. You'll learn how to work with the Dockerfile in this module.
+This file defines the environment - such as what runtimes are installed. Examples of runtime environments are Python, Node, Java, etc. You don't need to be an expert in Docker to learn how to use this file to extend your environment. You'll learn how to work with the `Dockerfile` in this module.
 
 #### devcontainer.json
 
-The "devcontainer.json" file allows you to autoconfigure the project environment so that everything is ready to go the first-time someone loads it up. You can specify VS Code settings, extensions, and even auto install dependencies.
+The `devcontainer.json` file allows you to autoconfigure the project environment so that everything is ready to go the first time someone loads it up. You can specify VS Code settings, extensions, and even auto install dependencies.
 
 In the next section, you'll add a Remote Container to a Python project and run it on your own machine - even if you don't have Python installed.
