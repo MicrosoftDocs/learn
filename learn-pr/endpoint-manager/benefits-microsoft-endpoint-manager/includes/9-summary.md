@@ -14,8 +14,8 @@ In this module, you've learned about the following benefits of Microsoft Endpoin
 
 Determine your mobile device management and mobile application management needs:
 
-- [Get a free 90-day trial, evaluate Enterprise Mobility + Security (EMS)](https://go.microsoft.com/fwlink/p/?LinkID=2077047?azure-portal=true)
-- [Plan your deployment with FastTrack experts included in EMS subscription](https://go.microsoft.com/fwlink/?linkid=2143850?azure-portal=true)
+- [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security?azure-portal=true)
+- [Plan your deployment with FastTrack experts (included in EMS subscription)](https://www.microsoft.com/fasttrack/microsoft-365/ems?azure-portal=true)
 
 ## Learn more
 
