@@ -68,5 +68,3 @@ quiz:
     - content: Remove the reader role on the Azure Bastion resource for all users
       isCorrect: false
       explanation: For you to connect to the VM resource by using Bastion, you must have the reader role on the Bastion resource. You also need the reader role on the virtual machine, and on the NIC with private IP of the virtual machine.
-
-.
