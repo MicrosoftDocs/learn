@@ -24,8 +24,8 @@ quiz:
       isCorrect: false
       explanation: "A user name is an entity"
     - content: "Event"
-      isCorrect: false
+      isCorrect: true
       explanation: "An event is evidence"
     - content: "Alert"
-      isCorrect: false
+      isCorrect: true
       explanation: "An alert is evidence"
