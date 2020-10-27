@@ -139,7 +139,7 @@ When you plan for role-based access, use custom RBAC role definitions within the
   }
   ```
 
-### Identity and access management design recommendations and considerations
+### Design recommendations and considerations for identity and access management
 
 There are limits around the number of custom roles and role assignments that must be considered when you lay down a framework around IAM and governance. For more information, see Azure RBAC service limits.
 
@@ -173,7 +173,7 @@ Don't add users directly to Azure resource scopes. This lack of centralized mana
 
 A critical design decision that an enterprise organization must make when adopting Azure is whether to extend an existing on-premises identity domain into Azure or to create a brand new one. Requirements for authentication inside the landing zone should be thoroughly assessed and incorporated into plans to deploy Active Directory Domain Services (AD DS) in Windows Server, Azure AD DS, or both. Most Azure environments will use at least Azure AD for Azure fabric authentication and AD DS local host authentication and group policy management.
 
-### Authentication inside a landing zone design recommendations and considerations
+### Design recommendations and considerations for authentication inside a landing zone
 
 Consider centralized and delegated responsibilities to manage resources deployed inside the landing zone. Also consider the applications that rely on domain services and use older protocols, which can use Azure AD DS.
 
