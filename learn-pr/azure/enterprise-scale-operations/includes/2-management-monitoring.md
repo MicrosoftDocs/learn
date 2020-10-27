@@ -15,7 +15,7 @@ This diagram shows a dedicated management subscription to support global managem
 
 ## Log Analytics workspace design
 
-Centralized logging is critical to the visibility that operations-management teams require. This centralization drives reports about change management, service health, configuration, and most other aspects of IT operations. Converging on a centralized workspace model in Log Analytics reduces both administrative effort and the chances of gaps in observability. For workspace design at enterprise scale, we recommend a single Log Analytics workspace to manage the platform centrally. An exception would be where role-based access control (RBAC) and data-sovereignty requirements mandate separate workspaces.
+Centralized logging is critical to the visibility that operations-management teams require. This centralization drives reports about change management, service health, configuration, and most other aspects of IT operations. Converging on a centralized workspace model in Log Analytics reduces both administrative effort and the chances of gaps in observability. For workspace design at enterprise scale, we recommend a single Log Analytics workspace to manage the platform centrally. An exception would be where RBAC and data-sovereignty requirements mandate separate workspaces.
 
 In the context of the enterprise-scale architecture, centralized logging is primarily concerned with platform operations. This platform focus doesn't prevent the use of the same workspace for virtual-machine (VM)-based application logging. With a workspace that's configured in resource-centric access-control mode, granular RBAC is enforced to ensure that application teams have access only to the logs from their resources. In this model, application teams benefit by using existing platform infrastructure to reduce their management overhead. For any other resources, application teams can use their own Log Analytics workspaces or Application Insights for diagnostic logs and metrics.
 
@@ -23,7 +23,7 @@ In the context of the enterprise-scale architecture, centralized logging is prim
 
 In Azure, the *activity log* is a platform log that provides insight into subscription-level events. The activity log contains all write operations (PUT, POST, DELETE) for subscription resources. These operations include information such as when a resource is modified or when a VM is started. You can view the activity log in the Azure portal or retrieve entries by using PowerShell and Azure CLI. Configure diagnostic settings for a subscription via policy to send log data to the centralized Log Analytics workspace. This configuration provides a central view across subscriptions and enables the retention of log data past the default 90 days.
 
-When a customer requires log-data retention longer than two years, configure the subscription diagnostic settings also for export to Azure Storage. Use immutable storage with a *write once, read many (WORM) policies to make data non-erasable and non-modifiable for a user-specified interval.
+When a customer requires log-data retention longer than two years, configure the subscription diagnostic settings also for export to Azure Storage. Use immutable storage with *write once, read many (WORM)* policies to make data non-erasable and non-modifiable for a user-specified interval.
 
 ## Dashboards and visualization
 
@@ -63,7 +63,7 @@ Logs and metrics are critical components of application-centric platform monitor
 
 ## VM management
 
-Apply virtual-machine (VM) management configurations via policy to ensure consistent configuration across the platform. An important element of this approach is to adhere to the enterprise-scale design principle of using native Azure platform services and capabilities whenever possible.
+Apply VM management configurations via policy to ensure consistent configuration across the platform. An important element of this approach is to adhere to the enterprise-scale design principle of using native Azure platform services and capabilities whenever possible.
 
 A VM-management strategy begins with backups to protect against data loss. Azure Backup is the native Azure service for VM backup. The service provides independent and isolated backups to guard against unintended destruction of the data on VMs. Backups are stored in a Recovery Services vault with built-in management of recovery points. 
 
