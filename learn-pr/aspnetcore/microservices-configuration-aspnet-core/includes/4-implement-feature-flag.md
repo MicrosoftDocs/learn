@@ -106,7 +106,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
     deploy/k8s/deploy-application.sh --charts webspa
     ```
 
-    The preceding script uses Helm to deploy the WebSPA Docker image from your ACR instance to AKS. The following excerpt from the `kubectl get pods` output confirms that the *WebSPA* app's container is starting:
+    The preceding script uses Helm to deploy the WebSPA Docker image from your ACR instance to AKS. The script runs the `kubectl get pods` command, whose output contains entries for the SPA's pods. The `STATUS` and `AGE` column values indicate that the deployments were successful:
 
     ```console
     NAME                              READY   STATUS              RESTARTS   AGE
@@ -261,7 +261,7 @@ You must redeploy the SPA before you can confirm that it works as intended.
     deploy/k8s/deploy-application.sh --charts webspa
     ```
 
-    The preceding command executes `kubectl get pods`. The following excerpt confirms that the *WebSPA* app's container is starting:
+    The preceding command executes `kubectl get pods`. The following excerpt confirms that the SPA's deployment was successful:
 
     ```console
     NAME                              READY   STATUS              RESTARTS   AGE
