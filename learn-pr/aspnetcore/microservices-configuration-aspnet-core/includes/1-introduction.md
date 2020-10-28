@@ -16,13 +16,12 @@ In this module, you will:
 
 ## Learning objectives
 
-- Understand the key configuration concepts.
-- Learn to implement a basic feature toggling functionality.
-- Learn to implement a basic centralized Azure App Configuration store.
+- Review ASP.NET Core and Kubernetes configuration concepts.
+- Learn to implement real-time feature toggling capabilities.
+- Learn to implement a centralized Azure App Configuration store.
 
 ## Prerequisites
 
-- Familiarity with C# and ASP.NET Core
-- Familiarity with Kubernetes
+- Familiarity with C# and ASP.NET Core development at the beginner level
+- Conceptual knowledge of containers and AKS at the intermediate level
 - Access to an Azure subscription with **Owner** privilege
-- Access to a GitHub account
