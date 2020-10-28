@@ -1,17 +1,3 @@
-**Trigger playbooks in near real-time**
-
-**Type of unit:**  Learning content unit
-
-**Estimated unit duration:**  12 minutes
-
-**Key content per learning objective**
-
-After you complete this unit, you&#39;ll be able to create an incident response automation playbook. Unit topics include:
-
-- Create a playbook to respond to an incident in near real-time
-- Work with Azure Sentinel connections in Logic Apps
-- Automate a response to an analytic rule with playbooks
-
 Now, that you understand little more about Azure Sentinel playbooks, let&#39;s see how Contoso can automatically respond to a security threat.
 
 ## Exploring the Playbooks page
