@@ -22,7 +22,7 @@ This table illustrates how the version number changes for each version type:
 |Minor version     | 1.1.1 changes to 1.2.0 |
 |Patch version     | 1.0.1 changes to 1.0.2 |
 
-Ths is a system adopted by many companies and developers. If you intend to publish packages and push them to the NuGet registry, you should follow semantic versioning. It's expected. Even if you only download packages from the NuGet registry, you can expect these packages to follow semantic versioning.
+This is a system adopted by many companies and developers. If you intend to publish packages and push them to the NuGet registry, you should follow semantic versioning. It's expected. Even if you only download packages from the NuGet registry, you can expect these packages to follow semantic versioning.
 
 Changes to a package can introduce risk. Risk that a bug that could harm your business could be introduced. Risk that you might need to rewrite part of your code. Rewriting code takes time and costs money.  
 
