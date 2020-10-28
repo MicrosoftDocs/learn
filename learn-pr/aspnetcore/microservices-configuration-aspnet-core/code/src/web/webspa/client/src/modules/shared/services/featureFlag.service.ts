@@ -8,6 +8,7 @@ import { tap } from "rxjs/operators";
 export class FeatureFlagService {
   constructor(private service: DataService) {}
 
+  // <snippet_getFeatures>
   getFeatures(featureName: string | string[]): Observable<IFeatureFlag[]> {
     let url: string = "features";
     if (Array.isArray(featureName)) {
@@ -24,4 +25,5 @@ export class FeatureFlagService {
       })
     );
   }
+  // </snippet_getFeatures>
 }
