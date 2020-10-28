@@ -73,11 +73,11 @@ So let's begin with the details.
 
 ### Set up Feature Management
 
-1. Install the NuGet package required to use the ASP.NET Core feature manager:
+1. Install the NuGet package required to use the feature manager library:
 
     ```dotnetcli
     pushd src/Web/WebSPA && \
-        dotnet add package Microsoft.FeatureManagement.AspNetCore --version 2.2.0 && \
+        dotnet add package Microsoft.FeatureManagement --version 2.2.0 && \
         popd
     ```
 
@@ -123,7 +123,7 @@ So let's begin with the details.
         ```csharp
         if (Configuration.GetValue<bool>("UseFeatureManagement"))
         {
-            endpoints.MapFeatureManagement("features");
+            endpoints.MapFeatureManagement();
         }
         ```
 
