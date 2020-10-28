@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.dotnet-debug.4-use-vs-code-debugger
+uid: learn.dotnet-debug.4-use-visual-studio-code-debugger
 title: Exercise - Debug with Visual Studio Code
 metadata:
   title: Exercise - Debug with Visual Studio Code
@@ -11,5 +11,5 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 20
 content: |
-  [!include[](includes/4-use-vs-code-debugger.md)]
+  [!include[](includes/4-use-visual-studio-code-debugger.md)]
   

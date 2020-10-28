@@ -85,4 +85,3 @@ dotnet run --configuration Release
 Note that the application successfully runs to completion because we are no longer in the `Debug` configuration.
 
 Congratulations, you have successfully and efficiently debugged code using features of .NET including `Debug.WriteLine` and `Debug.Assert`. Well done!
-

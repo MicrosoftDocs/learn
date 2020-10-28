@@ -31,7 +31,7 @@ units:
 - learn.dotnet-debug.1-introduction
 - learn.dotnet-debug.2-debugger
 - learn.dotnet-debug.3-analyze-your-program-state
-- learn.dotnet-debug.4-use-vs-code-debugger
+- learn.dotnet-debug.4-use-visual-studio-code-debugger
 - learn.dotnet-debug.5-logging-and-tracing
 - learn.dotnet-debug.6-use-logging-and-tracing
 - learn.dotnet-debug.7-knowledge-check

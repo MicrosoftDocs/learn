@@ -19,19 +19,17 @@ This is where `System.Diagnostics.Debug` and `System.Diagnostics.Trace` can be u
 The choice of which print style API to use is up to you. The key differences are:
 
 - **System.Console**
--- Always enabled and always writes to the console.
--- Useful for information that your customer may need to see in the release.
--- Because it's the simplest approach, it's often used for ad-hoc temporary debugging. This debug code is often never checked in to source control.
-
+  - Always enabled and always writes to the console.
+  - Useful for information that your customer may need to see in the release.
+  - Because it's the simplest approach, it's often used for ad-hoc temporary debugging. This debug code is often never checked in to source control.
 - **System.Diagnostics.Trace**
--- Only enabled when `TRACE` is defined.
--- Writes to attached Listeners, by default the DefaultTraceListener.
--- Use this API when creating logs that will be enabled in most builds.
-
+  - Only enabled when `TRACE` is defined.
+  - Writes to attached Listeners, by default the DefaultTraceListener.
+  - Use this API when creating logs that will be enabled in most builds.
 - **System.Diagnostics.Debug**
--- Only enabled when `DEBUG` is defined (when in debug mode).
--- Writes to an attached debugger.
--- Use this API when creating logs that will be enabled only in debug builds.
+  - Only enabled when `DEBUG` is defined (when in debug mode).
+  - Writes to an attached debugger.
+  - Use this API when creating logs that will be enabled only in debug builds.
 
 ```csharp
 Console.WriteLine("This message is readable by the end user.")
@@ -54,7 +52,7 @@ Debug - This is a full line.
 This is another full ine.
 ```
 
-## Defining TRACE & DEBUG Constants
+## Defining TRACE & DEBUG constants
 
 By default when an application is running under debug the `DEBUG` constant is defined. This can be controlled by adding a `DefineConstants` entry in the project file in a property group. Here is an example of turning on `TRACE` for both `Debug` and `Release` configurations in addition to `DEBUG` for `Debug` configurations.
 
@@ -69,7 +67,7 @@ By default when an application is running under debug the `DEBUG` constant is de
 
 When using `Trace` when not attached to the debugger you will need to configure a trace listener such as [dotnet-trace](https://docs.microsoft.com/dotnet/core/diagnostics/dotnet-trace).
 
-## Conditional tracing 
+## Conditional tracing
 
 In addition to simple `Write` and `WriteLine` methods there is also the capability to add conditions with `WriteIf` and `WriteLineIf`. Take this logic that checks if the count is zero and then writes a debug message.
 
@@ -115,6 +113,6 @@ int IntegerDivide(int dividend, int divisor)
 When you run this code under the debugger, the assertion statement is evaluated, but in the Release version, the comparison is not made, so there is no additional overhead.
 
 > [!NOTE]
-> When you use System.Diagnostics.Debug.Assert`, make sure that any code inside Assert does not change the results of the program if Assert is removed. Otherwise, you might accidentally introduce a bug that only shows up in the Release version of your program. Be especially careful about asserts that contain function or procedure calls
+> When you use `System.Diagnostics.Debug.Assert`, make sure that any code inside Assert does not change the results of the program if Assert is removed. Otherwise, you might accidentally introduce a bug that only shows up in the Release version of your program. Be especially careful about asserts that contain function or procedure calls
 
 As you can see leveraging `Debug` and `Trace` from the `System.Diagnostics` namespace are a great way to provide additional context when running  and debugging your application.
