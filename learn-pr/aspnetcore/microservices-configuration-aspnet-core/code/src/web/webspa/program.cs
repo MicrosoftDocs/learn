@@ -3,6 +3,7 @@ public class Program
     public static Task Main(string[] args) =>
         CreateHostBuilder(args).Build().RunAsync();
 
+    #region snippet_CreateHostBuilder
     private static IHostBuilder CreateHostBuilder(string[] args) =>
         Host.CreateDefaultBuilder(args)
             .ConfigureWebHostDefaults(webBuilder => webBuilder.UseStartup<Startup>())
@@ -42,4 +43,5 @@ public class Program
                     .ReadFrom.Configuration(builderContext.Configuration)
                     .WriteTo.Console();
             });
+    #endregion snippet_CreateHostBuilder
 }
