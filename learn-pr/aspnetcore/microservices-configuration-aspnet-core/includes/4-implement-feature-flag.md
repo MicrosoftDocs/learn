@@ -9,6 +9,46 @@ In this exercise, you will:
 * Create an App Configuration store in your Azure account.
 * Connect *eShopOnContainers* to the App Configuration store.
 
+## Verify the deployment to AKS
+
+Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
+
+1. Run the following command to display the various app URLs:
+
+    ```bash
+    cat ~/clouddrive/aspnet-learn/deployment-urls.txt
+    ```
+
+    A variation of the following output appears:
+
+    ```console
+    The eShop-Learn application has been deployed to "http://203.0.113.55" (IP: 203.0.113.55).
+
+    You can begin exploring these services (when ready):
+    - Centralized logging       : http://203.0.113.55/seq/#/events?autorefresh (See transient failures during startup)
+    - General application status: http://203.0.113.55/webstatus/ (See overall service status)
+    - Web SPA application       : http://203.0.113.55/
+    ```
+
+1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. A green checkmark icon denotes a healthy service. The page refreshes automatically, every 10 seconds.
+
+1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
+
+    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../../media/microservices/eshop-spa.png":::
+
+1. Navigate to the checkout page as follows:
+    1. Select the **:::no-loc text="LOGIN":::** link in the upper right to sign into the app. Sign in using the credentials provided on the page.
+    1. Add the **:::no-loc text=".NET BLUE HOODIE":::** to the shopping bag by selecting the image.
+    1. Select the shopping bag icon in the upper right.
+    1. Select the **:::no-loc text="CHECKOUT":::** button.
+
+1. Scroll to the bottom of the checkout page. Notice the presence of a discount coupon feature comprised of the following components:
+    * **HAVE A DISCOUNT CODE?** label
+    * **Coupon number** text box
+    * **APPLY** button
+
+You've successfully verified that the app was deployed to AKS. Additionally, you've seen that the discount coupon feature is enabled.
+
 ## Make the discount coupon feature configurable
 
 Complete the following steps to support toggling of the SPA's discount coupon feature in real time.
