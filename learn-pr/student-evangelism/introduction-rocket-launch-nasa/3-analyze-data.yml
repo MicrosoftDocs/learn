@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-rocket-launch-nasa.3-analyze-data
+metadata:
+  title: Analyze weather on launch day to determine safety
+  description: Learn which parts of the day's weather impact launch safety
+  ms.date: 07/24/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Analyze weather on launch day to determine safety
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-analyze-data.md)]

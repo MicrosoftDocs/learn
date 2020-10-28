@@ -3,4 +3,4 @@ Data-flow diagrams are graphical representations of your system and should conta
 In this module, you:
 
 - Distinguished between the shape and function of each element
-- Included the right context for an element when creating a data-flow diagram
+- Leaned about the right context for an element when creating a data-flow diagram

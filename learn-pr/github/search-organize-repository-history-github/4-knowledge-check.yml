@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.github.search-organize-repository-history-github.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check what you've learned.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How does GitHub's top-level search bar differ from the search options available on repository tabs?"
+    choices:
+    - content: "Other than being located in different parts of the user interface, they are otherwise the same."
+      isCorrect: false
+      explanation: "They offer different user experiences due to their scoping."
+    - content: "They support different filter syntax options."
+      isCorrect: false
+      explanation: "They support the same filter syntax model."
+    - content: "The top-level search bar supports searching everything across all of GitHub, whereas the repository tab searches are scoped to cover specific types in the current repository."
+      isCorrect: true
+      explanation: "The top-level search allows the most flexibility, whereas the scoped tab searches provide popular filter dropdowns for easier refinement."
+  - content: "What does `git blame` do?"
+    choices:
+    - content: "It creates a bug assigned to the last person who committed changes to the specified file."
+      isCorrect: false
+      explanation: "`git blame` is used to display file commit history."
+    - content: "It displays the commit history of the file."
+      isCorrect: true
+      explanation: "Despite the accusatory name, `git blame` is just a command to display commit history."
+    - content: "It reverts the effects of a `git praise` command."
+      isCorrect: false
+      explanation: "In some systems, `git praise` is a friendlier alias for the `git blame` command."
+  - content: "Suppose a bug issue is reported on your project, and you know which pull request introduced the problem. Which of the following options is **not** a cross-linking best practice?"
+    choices:
+    - content: "Do not create cross-links when the root cause of the issue is already known."
+      isCorrect: true
+      explanation: "It's a good practice to always add cross-links in case you or someone else needs the context later on."
+    - content: "Add a comment to the bug report that includes the pull request's author by using an @mention."
+      isCorrect: false
+      explanation: "This linking is a good practice, assuming the author is available to support the issue."
+    - content: "Add a comment to the bug report that links the pull request to it using the #ID syntax."
+      isCorrect: false
+      explanation: "This linking is a good practice as it provides transparency to the issue author and anyone who might end up working on it."

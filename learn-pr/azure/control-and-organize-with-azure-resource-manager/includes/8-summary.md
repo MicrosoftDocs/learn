@@ -20,7 +20,7 @@ Let's clean up the resources that we created. You'll need to delete the resource
 
 1. In the search box, search for **Policy** and select the **Policy** service.
 
-    > ![NOTE]
+    > [!NOTE]
     > Since you deleted the assigned resources with the containing resource group, there won't be any assignments left in this policy. Normally, if you assign a policy to a resource, you could delete the assignment without deleting the underlying resource here. To do this, you would select **Assignments**, then select the **...** for your assignment and select **Delete assignment**.
 
 1. Select **Definitions**, then select the **...** for your definition and select **Delete definition**.

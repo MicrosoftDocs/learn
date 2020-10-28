@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-nodejs-project-dependencies.8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz: 
+  title: "Check your knowledge"
+  questions:
+    - content: "How would you install a test framework like Jest?"
+      choices:
+        - content: "Run `npm install jest`"
+          isCorrect: false
+          explanation: "This command installs Jest, but it installs it as a normal dependency. We don't recommend installing Jest as a normal dependency because the dependency will ship with the application."
+        - content: "Run `npm install jest --save-dev`"
+          isCorrect: true
+          explanation: "This command installs Jest as a dev dependency. A test framework is something you need only during development."
+        - content: "Run `npm install jest --save`"
+          isCorrect: false
+          explanation: "This command installs Jest in the `dependencies` section. We recommend that any library that's used only during development is installed as a dev dependency. And you don't need to add the `--save` flag. This flag is left over from when it was needed to persist the installed library in the package.json file."
+        - content: "Run `npm download jest --save-dev`"
+          isCorrect: false
+          explanation: "There is no `download` command. Use `install`."
+    - content: "What is the main reason to use npx?"
+      choices:
+        - content: "The dependency is downloaded directly into the Node.js process and is removed after the command is run. This tool is great for when you want to run commands infrequently."
+          isCorrect: true
+          explanation: ""
+        - content: "Installing dependencies by using npx is more secure than installing them globally."
+          isCorrect: false
+        - content: "Installing dependencies by using npx is faster than installing them globally."
+          isCorrect: false
+        - content: "You don't have to use sudo before running it as you would for a global installation."
+          isCorrect: false
+          explanation: "This answer is technically correct, but there's a better reason to choose npx over global installation. Global installations remain on your system until you uninstall them. When you use npx, you don't need to uninstall the dependency."
+    - content: "How do you configure a package.json file so that you get only patch (bug fix) updates?"
+      choices:
+        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"*\"`"
+          isCorrect: false
+          explanation: "This answer is incorrect. This code will update the dependency to the latest possible version."
+        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"1.x.0\"`"
+          isCorrect: false
+          explanation: "This code will update the dependency to the latest minor version. That's not what you want."
+        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"1.0.x\"`"
+          isCorrect: true
+        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"^1.0.x\"`"
+          isCorrect: false
+    - content: "What are some recommended scripts to set up in a package.json at the start of a project?"
+      choices:
+        - content: "start, test, build"
+          isCorrect: false
+          explanation: "It's a good idea to set up these scripts. Because you're working in JavaScript, it's a good idea to set up a linter tool as well to ensure that your code looks consistent."
+        - content: "start, test"
+          isCorrect: false
+          explanation: "Setting up a script for start and test is a good idea. We also recommend that you set up a script for how to build your solution. And it's a good idea to set up a linter tool as well to ensure that your code looks consistent."
+        - content: "start"
+          isCorrect: false
+          explanation: "You should set up more than just a start script. Consider setting up commands for test, build, and linting as well."
+        - content: "start, test, lint, build"
+          isCorrect: true
+          explanation: "Setting up these scripts is great way to start any Node.js project."

@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.azure.build-web-api-nodejs-express
+metadata:
+  title: Build a web API with Node.js and Express 
+  description: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging and authentication/authorization. Use JavaScript/TypeScript with Express to create a Node.js web server with Visual Studio Code.
+  ms.date: 02/06/2020
+  author: "softchris"
+  ms.author: "chnoring"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build a web API with Node.js and Express 
+summary: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging and authentication/authorization.
+abstract: |
+  By the end of this module, you’ll be able to:
+
+  - Describe the core concepts of the web framework Express
+  - Configure middleware to control how a request is handled
+  - Respond to HTTP requests with different types of content like text and JSON
+  - Send data to an Express endpoint
+iconUrl: /learn/achievements/build-web-api-nodejs-express.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+prerequisites: |
+  - [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) installed on your computer
+  - Familiarity with editing text and code files in any text editor
+  - Basic familiarity with the HTTP protocol
+  - Experience using the command line, including Git operations
+units:
+- learn.azure.build-web-api-nodejs-express.1-introduction
+- learn.azure.build-web-api-nodejs-express.2-create-app
+- learn.azure.build-web-api-nodejs-express.3-exercise-create-app
+- learn.azure.build-web-api-nodejs-express.4-route-management
+- learn.azure.build-web-api-nodejs-express.5-exercise-route-management
+- learn.azure.build-web-api-nodejs-express.6-middleware
+- learn.azure.build-web-api-nodejs-express.7-exercise-middleware
+- learn.azure.build-web-api-nodejs-express.8-knowledge-check
+- learn.azure.build-web-api-nodejs-express.9-summary
+
+badge:
+  uid: learn.azure.build-web-api-nodejs-express.badge

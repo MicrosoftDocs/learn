@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-logging-aspnet-core.5-monitor-app-insights
+metadata:
+  title: Exercise - Monitor Application Insights
+  description: Monitor the microservices app using Application Insights.
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 10/14/2020
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Exercise - Monitor Application Insights
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-monitor-app-insights.md)]

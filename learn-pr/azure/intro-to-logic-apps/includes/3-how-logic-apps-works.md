@@ -4,7 +4,7 @@ Now that we know the basics of Logic Apps, let's see how it works behind the sce
 
 A *connector* is a component that provides an interface to an external service. For example, the Twitter connector allows you to send and retrieve tweets, while the Office 365 Outlook connector lets you manage your email, calendar, and contacts. Logic Apps provides hundreds of pre-built connectors that you can use to create your apps.
 
-A connector uses the external service's REST or SOAP API to do its work. When you use a connector in your Logic App, the connector calls the service's underlying API for you. The following illustration shows the Twitter connector and its use of the Twitter REST API.
+A connector uses the external service's REST or SOAP API to do its work. When you use a connector in your logic app, the connector calls the service's underlying API for you. The following illustration shows the Twitter connector and its use of the Twitter REST API.
 
 ![An illustration showing the Twitter connector calling methods in the Twitter API.](../media/twitter-connector.png)
 
@@ -12,7 +12,7 @@ A connector uses the external service's REST or SOAP API to do its work. When yo
 
 You can write custom connectors to access services that don't have pre-built connectors. The services must have a REST or SOAP API. The requirement that the services provide an API shouldn't be too surprising since connectors are essentially wrappers around that underlying API.
 
-To create a custom connector, you first generate an OpenAPI or Postman description of the API. You then use that API description to create a Custom Connector resource in the Azure portal. You can give your connector a name, an icon, and a description for each operation. The following illustration shows an example of the process. Notice that there's no coding involved.
+To create a custom connector, you first generate an OpenAPI or Postman description of the API. You then use that API description to create a custom connector resource in the Azure portal. You can give your connector a name, an icon, and a description for each operation. The following illustration shows an example of the process. Notice that there's no coding involved.
 
 ![An illustration showing the steps required to create a custom connector to a service that has an existing REST API.](../media/custom-connector.png)
 
@@ -26,13 +26,13 @@ Workflows are built from different types of tasks. For example, in our social-me
 
 Let's be more specific about the definitions for trigger and action:
 
-* A *trigger* is an event that occurs when a specific set of conditions is satisfied. Triggers activate automatically when conditions are met. For example, when a timer expires or data becomes available.
+- A *trigger* is an event that occurs when a specific set of conditions is satisfied. Triggers activate automatically when conditions are met. For example, when a timer expires or data becomes available.
 
-* An *action* is an operation that executes a task in your business process. Actions run when a trigger activates or another action completes.
+- An *action* is an operation that executes a task in your business process. Actions run when a trigger activates or another action completes.
 
 A connector is a container for related triggers and actions. Let's look at a few examples.
 
-The Twitter connector lets your Logic App interact with Twitter. The social-media monitor app would use a trigger from the Twitter connector to determine when new relevant tweets are available. The following illustration shows the Twitter connector with its trigger and actions.
+The Twitter connector lets your logic app interact with Twitter. The social-media monitor app would use a trigger from the Twitter connector to determine when new relevant tweets are available. The following illustration shows the Twitter connector with its trigger and actions.
 
 ![An illustration showing the Twitter connector. It provides a trigger to notify you of new tweets and actions to let you send tweets and manage your account.](../media/twitter-connector-details.png)
 
@@ -46,19 +46,19 @@ Finally, let's look at the Twilio connector. Most connectors offer both triggers
 
 ## How to build Logic Apps from triggers and actions
 
-You build a Logic App from triggers and actions. An app must begin with a trigger. After the trigger, you include as many actions as you need to implement your workflow. The following illustration shows the trigger and actions used in the social-media monitor app.
+You build a logic app from triggers and actions. An app must begin with a trigger. After the trigger, you include as many actions as you need to implement your workflow. The following illustration shows the trigger and actions used in the social-media monitor app.
 
-![An illustration of the trigger and actions in the social-media monitor Logic App. The illustration shows the use of the "When a new tweet is posted" Twitter trigger to launch the Logic App. The trigger is followed by three actions: "Detect sentiment" from the Text Analytics service, "Insert row" from SQL Server, and "Send email" from Outlook.com.](../media/social-media-connectors.png)
+![An illustration of the trigger and actions in the social-media monitor logic app. The illustration shows the use of the **When a new tweet is posted** Twitter trigger to launch the logic app. The trigger is followed by three actions: **Detect sentiment** from the Text Analytics service, **Insert row** from SQL Server, and **Send email** from Outlook.com.](../media/social-media-connectors.png)
 
 ## How do triggers and actions work together?
 
-Triggers and actions are essentially function calls to an underlying API operation. Each operation has inputs and outputs. For example, the "When a new tweet is posted" Twitter trigger takes in a search string and returns the tweets that contain that string. The "Detect sentiment" action takes a string as input and returns the sentiment score as a floating-point number. The following illustration shows these two operations.
+Triggers and actions are essentially function calls to an underlying API operation. Each operation has inputs and outputs. For example, the **When a new tweet is posted** Twitter trigger takes in a search string and returns the tweets that contain that string. The "detect sentiment" action takes a string as input and returns the sentiment score as a floating-point number. The following illustration shows these two operations.
 
-![An illustration of the input and output of the "When a new tweet is posted" trigger and the "Detect sentiment" action.](../media/inputs-and-outputs.png)
+![An illustration of the input and output of the **When a new tweet is posted** trigger and the **Detect sentiment** action.](../media/inputs-and-outputs.png)
 
 Logic Apps automatically makes the return values available throughout the rest of the operations. This feature lets you pass the results from one operation as input to the next operation. The following illustration shows the data flow for the first two operations in the social-media monitor app. Notice that the results from an operation are available in all of the following steps.
 
-![An illustration showing how the results of all preceding operations are available to all later steps of the Logic App.](../media/data-flow.png)
+![An illustration showing how the results of all preceding operations are available to all later steps of the logic app.](../media/data-flow.png)
 
 ## What are control actions?
 
@@ -68,17 +68,17 @@ Most workflows need to do different actions based on the data being processed. F
 
 *Control actions* are special actions built-in to Logic Apps that provides these control constructs:
 
-* *Condition* statements controlled by a Boolean expression
-* *Switch* statements
-* *For each* and *Until* loops
-* Unconditional *Branch* instructions.
+- *Condition* statements controlled by a Boolean expression.
+- *Switch* statements.
+- *For each* and *until* loops.
+- Unconditional *branch* instructions.
 
-The following illustration shows the use of a *Condition* statement in the social-media monitoring application.
+The following illustration shows the use of a *condition* statement in the social-media monitoring application.
 
 ![An illustration showing the Logic Apps control action used to branch the social-media monitor app based on the sentiment of the tweet.](../media/social-media-monitor-control-action.png)
 
 ## What is the Logic Apps Designer?
 
-The Logic Apps Designer is a graphical tool for creating your workflows. It gives you a design canvas that you use to add a trigger and actions to your app. For example, the social-media monitor app uses the _When a new tweet is posted_ trigger, a _Condition_ to branch, and the _Detect Sentiment_, _Insert row_, and _Send an email_ actions. The following screenshot shows the social-media monitor Logic App displayed in the Designer.
+The Logic Apps Designer is a graphical tool for creating your workflows. It gives you a design canvas that you use to add a trigger and actions to your app. For example, the social-media monitor app uses the **When a new tweet is posted** trigger, a _condition_ to branch, and the **Detect sentiment**, **Insert row**, and **Send an email** actions. The following screenshot shows the social-media monitor logic app displayed in the designer.
 
-![A screenshot showing an example Logic App in the Logic App Designer. The app is displayed using rectangular areas to represent the starting trigger and each of the actions. Arrows connect the rectangles to show the execution flow through the app.](../media/social-media-complete-in-the-designer.png)
+![A screenshot showing an example logic app in the Logic Apps Designer. The app is displayed using rectangular areas to represent the starting trigger and each of the actions. Arrows connect the rectangles to show the execution flow through the app.](../media/social-media-complete-in-the-designer.png)

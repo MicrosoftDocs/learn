@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.create-open-source-program-github.2-establish-open-source-program
+title: How to establish an open-source program
+metadata:
+  title: How to establish an open-source program
+  description: Learn to create a successful open-source program by establishing contributor guidance, following proven processes, and leveraging community standards.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-establish-open-source-program.md)]

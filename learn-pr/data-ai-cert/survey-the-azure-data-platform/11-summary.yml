@@ -6,7 +6,7 @@ metadata:
   description: Summary
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
-  ms.author: chris.testaoneill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -51,4 +51,4 @@ quiz:
       explanation: "Azure Data Catalog is a central place where an organization's users can contribute their knowledge. Together, they build a community of data sources that the organization owns."
     - content: "Azure Data Lake Storage"
       isCorrect: false
-      explanation: "Correct. Azure Data Lake Storage is a Hadoop-compatible data repository that can store any size or type of data."
+      explanation: "Azure Data Lake Storage is a Hadoop-compatible data repository that can store any size or type of data."

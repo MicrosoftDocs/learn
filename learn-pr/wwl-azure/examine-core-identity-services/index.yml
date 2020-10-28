@@ -3,7 +3,7 @@ uid: learn.wwl.examine-core-identity-services
 metadata:
   title: Examine core identity services
   description: "Understanding who is using your systems and what they have permission to do on your systems is a critical process for any solutions. Lets explore what that means in Azure. AZ-900"
-  ms.date: 06/20/2020
+  ms.date: 09/21/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.create-host-web-sites-github-pages.2-what-is-github-pages
+title: What is GitHub Pages?
+metadata:
+  title: What is GitHub Pages?
+  description: Learn how GitHub Pages enables you to create and edit web sites hosted directly from your repo.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-what-is-github-pages.md)]

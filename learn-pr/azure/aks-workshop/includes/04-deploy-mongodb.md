@@ -55,9 +55,9 @@ You're now ready to install the MonogoDB instance. Recall from earlier, that you
     Keep in mind that the MongoDB connection string is a URI. You have to escape special characters using a standard URI escape mechanism when choosing special characters in the username or password.
 
     ```bash
-    helm install ratings bitnami/mongodb \
-        --namespace ratingsapp \
-        --set mongodbUsername=<username>,mongodbPassword=<password>,mongodbDatabase=ratingsdb
+    helm install ratings bitnami/mongodb \ 
+        --namespace ratingsapp \ 
+        --set auth.username=<username>,auth.password=<password>,auth.database=ratingsdb
     ```
 
     You provide parameters with the `--set` switch and a comma-separated list of `key=value` pairs. Pay attention to the `mongodbUsername`, `mongodbPassword`, and `mongodbDatabase` parameters and their values, which set the username, password, and database name, respectively. The application expects that the database is called **ratingsdb**. The `helm install` command is a powerful command with many capabilities.

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.search-enriched-index
+title: Search the enriched index
+metadata:
+  title: Search the enriched index
+  description: "Use a web application to search your enriched index."
+  ms.date: 10/29/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-search-enriched-index.md)]

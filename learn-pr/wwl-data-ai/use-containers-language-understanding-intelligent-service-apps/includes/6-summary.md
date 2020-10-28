@@ -1,0 +1,3 @@
+The Language Understanding (LUIS) container loads your trained or published Language Understanding model. As a LUIS app, the docker container provides access to the query predictions from the container's API endpoints. You can collect query logs from the container and upload them back to the Language Understanding app to improve the app's prediction accuracy.
+
+Containerizing LUIS offers many benefits including the ability to run you're the service closer to your application, reduce network constraints on consumption of the LUIS app, help to reduce the cost associated with testing by taking endpoint hits off the Azure or LUIS platform, and the ability to scale up or scale out the LUIS application using container instances or Azure Kubernetes Services (AKS).

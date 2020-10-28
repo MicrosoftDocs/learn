@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.automate-configuration-of-windows-server-iaas-vms
+metadata:
+  title: Automate the configuration of Windows Server IaaS Virtual Machines
+  description: "You'll be able to deploy Desired State Configuration (DSC) extensions, implement those extensions to remediate noncompliant servers, and use custom script extension."
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Automate the configuration of Windows Server IaaS Virtual Machines
+summary: You'll be able to deploy Desired State Configuration (DSC) extensions, implement those extensions to remediate noncompliant servers, and use custom script extension.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe Azure automation.
+  - Implement Azure automation with DSC.
+  - Remediate noncompliant servers.
+  - Describe custom script extension.
+  - Configure a VM by using DSC extensions.
+prerequisites: |
+  In order to get the best learning experience from this module, it's important that you have knowledge and experience of the following:
+  - Managing the Windows Server operating system and Windows Server workloads in on-premises scenarios, including Active Directory Domain Services (AD DS), Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services
+  - Common Windows Server management tools
+  - Core Microsoft compute, storage, networking, and virtualization technologies
+  - On-premises resiliency Windows Server-based compute and storage technologies
+  - Implementing and managing IaaS services in Microsoft Azure
+  - Azure Active Directory (Azure AD)
+  - Security-related technologies such as firewalls, encryption, and multi-factor authentication
+  - Windows PowerShell scripting
+  - Automation and monitoring
+iconUrl: /learn/achievements/automate-the-configuration-of-windows-server-iaaa-vms.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-clis
+- azure-cloud-shell
+- azure-portal
+- azure-virtual-machines
+units:
+- learn.wwl.automate-configuration-of-windows-server-iaas-vms.introduction
+- learn.wwl.automate-configuration-of-windows-server-iaas-vms.describe-azure-automation
+- learn.wwl.automate-configuration-of-windows-server-iaas-vms.implement-azure-automation-with-dsc
+- learn.wwl.automate-configuration-of-windows-server-iaas-vms.remediate-noncompliant-servers
+- learn.wwl.automate-configuration-of-windows-server-iaas-vms.describe-custom-script-extensions
+- learn.wwl.automate-configuration-of-windows-server-iaas-vms.configure-vm-by-using-dsc
+- learn.wwl.automate-configuration-of-windows-server-iaas-vms.knowledge-check
+- learn.wwl.automate-configuration-of-windows-server-iaas-vms.summary
+badge:
+  uid: learn.wwl.automate-configuration-of-windows-server-iaas-vms.badge

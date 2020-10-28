@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-app-service-migration-assistant.understand-migration
+title: Migrate a web app with the Azure App Service Migration Assistant
+metadata:
+  title: Migrate a web app with the Azure App Service Migration Assistant
+  description: Explore how the Migration Assistant works to migrate a site and what happens during a migration.
+  ms.date: 05/21/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+azureSandbox: false
+content: |
+  [!include[](includes/5-understand-migration.md)]

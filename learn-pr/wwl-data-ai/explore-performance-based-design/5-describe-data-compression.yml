@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-performance-based-design.describe-data-compression
+title: Describe data compression
+metadata:
+  title: Describe data compression
+  description: "Describe data compression"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: kadelaney
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-describe-data-compression.md)]

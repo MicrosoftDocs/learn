@@ -57,7 +57,7 @@ In order to create Batch workloads, we need to create an account within the Batc
 
 For our scenario, we've decided to enlist the help of **FFmpeg** to do our video conversion. FFmpeg is a powerful open-source multimedia framework that can, among many other things, decode, encode and transcode multimedia files. it's a great choice for making animated GIFs from our pet videos.   To use the framework, we'll add it as an application package to our Batch account. First we need to download a copy from the official FFmpeg site so we can then upload it into our Batch account.
 
-1. Open a new tab in your browser, and navigate to https://ffmpeg.zeranoe.com/builds/win64/static/ffmpeg-3.4-win64-static.zip.
+1. Open a new tab in your browser, and navigate to https://www.videohelp.com/software?d=ffmpeg-3.4-win64-static.zip.
 
 1. Save the zip file locally.
 

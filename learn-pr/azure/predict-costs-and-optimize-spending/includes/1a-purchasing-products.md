@@ -1,6 +1,6 @@
 Products and services in Azure are arranged by category, with various resources that you can provision. You select the Azure products and services that fit your requirements, and your account is billed according to Azure's pay-for-what-you-use model.
 
-![Screenshot the featured products list from the Azure Pricing Calculator, displaying names and short descriptions of featured products.](../media/1a-Azure-products-overview.png)
+![Screenshot of the featured products list from the Azure Pricing Calculator, displaying names and short descriptions of featured products.](../media/1a-Azure-products-overview.png)
 
 ### Usage meters
 

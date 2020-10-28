@@ -2,10 +2,6 @@
 
 Continuous Operations is one of the eight capabilities in the DevOps taxonomy.
 
-![Diagram shows the eight DevOps capabilities. It lists example practices for Continuous Security: Site Reliability Engineering(SRE), Telemetry/monitoring, Application perf. monitoring, Auto failover & scaling & DR, Modern Service Management, Secure access/app/data, High availability/security/cost and performance advisory, Secure Dev/Ops ChatOps, Shift-right testing, Secrets management, Governance, Automation & AIOps, Continuity & resilience.](../media/5-3-capabilities.png)
-
-Each capability identifies example practices. They aren't exhaustive lists.
-
 ### Discover why Continuous Operations is necessary
 
 Complex systems do fail and can cause costly outages and interruptions. Let's look at some examples.
@@ -16,7 +12,7 @@ Complex systems do fail and can cause costly outages and interruptions. Let's lo
 | ![Icon for issue affecting FedEx](../media/5-3-icon-2.png)          | **FedEx and UK National Health Service**: In May 2017, WannaCry ransomware caused operational disruptions to FedEx. One FedEx subsidiary reported $300 million in losses. The UK's National Health Service was another victim of the ransomware, which blocked access to its computers, locked out vital medical equipment, and forced some hospitals to divert ambulances to other locations. |
 | ![Icon for issue affecting Amazon S3](../media/5-3-icon-3.png)      | **Amazon S3**: In February 2017, operator error caused a four-hour disruption to Amazon's core storage services, which had multiple impacts on significant web properties such as Alexa, IFTTT, Quora, and Trello.                                                                                                                                                                             |
 | ![Icon for issue affecting LinkedIn](../media/5-3-icon-4.png)       | **LinkedIn**: LinkedIn experienced a problem that prevented DEV work from being done for two months.                                                                                                                                                                                                                                                                                            |
-| ![Icon for issue affecting Equifax](../media/5-3-icon-5.png)        | **Equifax**: Equifax experienced a breach in 2017, that resulted in the personal information of over 160 million consumers being exposed. We discussed it in more detail when we explored Continuous Security.                                                                                                                                                                                 |
+| ![Icon for issue affecting Equifax](../media/5-3-icon-5.png)        | **Equifax**: Equifax experienced a breach in 2017, that resulted in the personal information of over 160 million consumers being exposed. We discussed it in more detail in [Continuous Security](https://docs.microsoft.com/learn/modules/explore-devops-continuous-security-operations/2-explore-continuous-security).                                                                                                                                                                               |
 
 #### The business impact and cost of a breach
 
@@ -29,7 +25,7 @@ The costs of a breach often go well beyond the loss of sales and trust in a comp
 - Lawsuits and settlements
   - Target paid $18.5 million to 47 US states.
 - Regulatory fines and responses
-  - With the new data protection policies, the fine is 4% of annual revenue or €20 million, whichever is greater.
+  - With the new data protection policies effective in the European Union since 2018, the fine is 4% of annual revenue or €20 million, whichever is greater.
 - Brand recovery costs
   - Mining technology firm Codan saw revenue drop from $45 million to $9.2 million within a year.
 - Other liabilities
@@ -54,7 +50,7 @@ Key performance indicators for software delivery performance are:
 - Mean time to restore
 - Change fail rate
 
-Teams that work to increase speed but don't invest enough in building quality into the process will experience larger failures, and more time to restore service. Teams that build quality into the process achieve both speed and stability.
+Teams that work to increase speed but don't invest enough in building [quality](https://docs.microsoft.com/learn/modules/explain-devops-continous-delivery-quality/3-explore-continuous-quality) into the process will experience larger failures, and more time to restore service. Teams that build quality into the process achieve both speed and stability.
 
 The number of web and mobile applications, and the frequency of application releases have increased greatly. Code has also become increasingly complex.
 
@@ -106,10 +102,10 @@ New methods, technologies, and ways of working call for a new approach to Contin
   - Focus on what’s required.
   - Empower governance.
   - Facilitate transparency.
-- **Culture & collaboration** are essential for Continuous Operations. Organizations are often required to change the way they work to facilitate transformation toward DevOps teams. Collaboration is also essential when designing for security and resilience.
+- **[Culture](https://docs.microsoft.com/learn/modules/introduce-foundation-pillars-devops/3-explore-first-foundation) & [collaboration](https://docs.microsoft.com/learn/modules/characterize-devops-continous-collaboration-improvement/2-explore-continuous-collaboration)** are essential for Continuous Operations. Organizations are often required to change the way they work to facilitate transformation toward DevOps teams. Collaboration is also essential when designing for security and resilience.
 - **Automation & AI/ML Ops** are important aspects of what make DevOps (and cloud) different compared to traditional operations teams. The focus must be on the whole system being automated (systemic automation), and not just one area.
-- **Continuous Deployment** uses modern release pipelines to allow development teams to deploy new features fast and safely, allowing a continuous stream of customer value and shortening the time to remediate issues.
-- **Shift-right testing** uses practices such as dark launching, feature flags, monitoring, and A/B testing. Teams are then able to continue testing to make sure an application meets behavior, performance, and availability expectations during live use.
+- **[Continuous Deployment](https://docs.microsoft.com/learn/modules/explain-devops-continous-delivery-quality/2-use-continuous-delivery-release-faster)** uses modern release pipelines to allow development teams to deploy new features fast and safely, allowing a continuous stream of customer value and shortening the time to remediate issues.
+- **[Shift-right testing](https://docs.microsoft.com/learn/modules/explain-devops-continous-delivery-quality/3-explore-continuous-quality)** uses practices such as dark launching, feature flags, monitoring, and A/B testing. Teams are then able to continue testing to make sure an application meets behavior, performance, and availability expectations during live use.
 
 ![Diagram shows how to do Continuous Operations. You need to apply a paradigm shift and use DevOps Continuous Operations principles.](../media/5-3-continuous.png)
 

@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-artificial-intelligence-nasa.7a-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What is artificial intelligence (AI)?"
+    choices:
+    - content: "A method that computers might possibly use to take over the world."
+      isCorrect: false
+      explanation: "Incorrect. AI requires humans to train, test, and validate computers."
+    - content: "A way to teach a computer how to learn and make basic decisions."
+      isCorrect: true
+      explanation: "Correct! AI is a way to teach a computer how to learn and make basic decisions based on what it knows."
+    - content: "Primarily a way to automate monotonous tasks that don't require much thinking."
+      isCorrect: false
+      explanation: "Incorrect. AI is capable of complex tasks that go beyond providing only convenience."
+  - content: "What is the role of Anaconda in using Python?"
+    choices:
+    - content: "You can use Anaconda to download one Python library at a time."
+      isCorrect: false
+      explanation: "Incorrect. Anaconda doesn't download Python libraries individually."
+    - content: "You can use Anaconda to download many Python libraries at once."
+      isCorrect: true
+      explanation: "Correct! Anaconda is useful for downloading many Python libraries in one package."
+    - content: "Anaconda allows you to download Python libraries without going online."
+      isCorrect: false
+      explanation: "Incorrect. You need an internet connection to download Anaconda and the Python libraries in it."
+  - content: "How do humans and machines compare in the way they observe and classify items?"
+    choices:
+    - content: "Like machines, humans have to be trained to see patterns and make associations visually."
+      isCorrect: false
+      explanation: "Incorrect. The human brain automatically and subconsciously searches for patterns and categorizes items we see."
+    - content: "Humans are better than computers at finding minute details in objects."
+      isCorrect: false
+      explanation: "Incorrect. If trained well, computers usually can detect more minute details more quickly than humans."
+    - content: "Like humans, machines use patterns and associations in identified items to classify a new item."
+      isCorrect: true
+      explanation: "Correct! Both humans and machines use patterns and associations observed in identified items to classify or identify a new item."

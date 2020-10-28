@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Azure Data Fundamentals: Explore modern data warehouse analytics in Azure/examine-components-of-a-modern-data-warehouse</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <rect id="path-6" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M48.1132075,0.739331515 C74.2770768,0.739331515 95.4870836,21.9493383 95.4870836,48.1132075 C95.4870836,74.2770768 74.2770768,95.4870836 48.1132075,95.4870836 C21.9493383,95.4870836 0.739331515,74.2770768 0.739331515,48.1132075 C0.739331515,21.9493383 21.9493383,0.739331515 48.1132075,0.739331515 Z M48.1132075,4.71698113 C24.1461335,4.71698113 4.71698113,24.1461335 4.71698113,48.1132075 C4.71698113,72.0802816 24.1461335,91.509434 48.1132075,91.509434 C72.0802816,91.509434 91.509434,72.0802816 91.509434,48.1132075 C91.509434,24.1461335 72.0802816,4.71698113 48.1132075,4.71698113 Z" id="path-7"></path>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-9">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.4784689%" y1="50%" x2="99.5215311%" y2="50%" id="linearGradient-10">
+            <stop stop-color="#005BA1" offset="0%"></stop>
+            <stop stop-color="#0060A9" offset="7%"></stop>
+            <stop stop-color="#0071C8" offset="36%"></stop>
+            <stop stop-color="#0078D4" offset="52%"></stop>
+            <stop stop-color="#0074CD" offset="64%"></stop>
+            <stop stop-color="#006ABB" offset="82%"></stop>
+            <stop stop-color="#005BA1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-9.93901477%" x2="50%" y2="100%" id="linearGradient-11">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#CBCBCB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Azure-Data-Fundamentals:-Explore-modern-data-warehouse-analytics-in-Azure" transform="translate(-159.000000, -889.000000)">
+            <g id="Azure-Data-Fundamentals:-Explore-modern-data-warehouse-analytics-in-Azure/examine-components-of-a-modern-data-warehouse" transform="translate(160.000000, 890.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Azure/BG-Solid-Badges" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                            <g id="Rectangle-Copy">
+                                <use fill="#0078D4" xlink:href="#path-6"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-6"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(1.886792, 1.886792)">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-7"></use>
+                        <g id="Colors/Azure/Border" mask="url(#mask-8)" fill="#27C0F5">
+                            <g transform="translate(-1.886792, -1.886792)" id="Rectangle">
+                                <rect x="0" y="0" width="100" height="100"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Icon-databases-125-Azure-SQL-Data-Warehouse" transform="translate(25.000000, 23.000000)" fill-rule="nonzero">
+                    <polygon id="Path" fill="url(#linearGradient-9)" points="15.7160714 0.464285714 0.185714286 9.47142857 0.185714286 11.7 3.04107143 11.7 3.04107143 28.6 5.85 28.6 5.85 11.7 25.5821429 11.7 25.5821429 30.0160714 28.3910714 30.0160714 28.3910714 11.7 31.2464286 11.7 31.2464286 9.47142857"></polygon>
+                    <path d="M8.65892857,28.6 L14.3,28.6 L14.3,22.9821429 L8.65892857,22.9821429 L8.65892857,28.6 Z M17.1089286,28.6 L22.75,28.6 L22.75,22.9821429 L17.1785714,22.9821429 L17.1089286,28.6 Z M8.65892857,20.1964286 L14.3,20.1964286 L14.3,14.5089286 L8.65892857,14.5089286 L8.65892857,20.1964286 Z M17.1785714,14.5089286 L17.1785714,20.1964286 L22.75,20.1964286 L22.75,14.5089286 L17.1785714,14.5089286 Z" id="Shape" fill="#50E6FF"></path>
+                    <path d="M29.1107143,23.4696429 C23.7482143,23.4696429 19.5,22.0767857 19.5,20.3821429 L19.5,36.8410714 C19.5,38.5357143 23.7714286,39.9053571 29.0642857,39.9285714 L29.2035714,39.9285714 C34.5660714,39.9285714 38.9071429,38.5357143 38.9071429,36.8410714 L38.9071429,20.3821429 C38.8142857,22.0767857 34.4732143,23.4696429 29.1107143,23.4696429 Z" id="Path" fill="url(#linearGradient-10)"></path>
+                    <path d="M38.8142857,20.3821429 C38.8142857,22.0767857 34.4732143,23.4696429 29.1107143,23.4696429 C23.7482143,23.4696429 19.5,22.0767857 19.5,20.3821429 C19.5,18.6875 23.8410714,17.2946429 29.2035714,17.2946429 C34.5660714,17.2946429 38.9071429,18.6642857 38.9071429,20.3821429" id="Path" fill="#E8E8E8"></path>
+                    <path d="M36.5625,20.1964286 C36.5625,21.2875 33.2196429,22.1696429 29.1107143,22.1696429 C25.0017857,22.1696429 21.6821429,21.2178571 21.6821429,20.1964286 C21.6821429,19.175 25.0017857,18.2232143 29.1107143,18.2232143 C33.2196429,18.2232143 36.5625,19.1053571 36.5625,20.1964286" id="Path" fill="#50E6FF"></path>
+                    <path d="M29.1107143,20.5910714 C27.1191659,20.5427707 25.1316219,20.7931699 23.2142857,21.3339286 C25.1297842,21.8856532 27.1178261,22.1439421 29.1107143,22.1 C31.1036025,22.1439421 33.0916444,21.8856532 35.0071429,21.3339286 C33.0898067,20.7931699 31.1022626,20.5427707 29.1107143,20.5910714 L29.1107143,20.5910714 Z" id="Path" fill="#32BEDD"></path>
+                </g>
+                <g id="Group-13" transform="translate(48.500000, 49.000000) scale(-1, 1) translate(-48.500000, -49.000000) translate(14.000000, 12.500000)" fill-rule="nonzero">
+                    <path d="M0.355883278,57.4509595 L22.915061,57.7690316 L22.9022739,65.1075982 L0.696482252,65.4602973 C0.609594665,64.8607941 0.499686977,63.476041 0.366759188,61.306038 C0.2338314,59.136035 0.230206097,57.8510089 0.355883278,57.4509595 Z" id="Rectangle" fill="url(#linearGradient-11)" transform="translate(11.589665, 61.455628) rotate(-45.000000) translate(-11.589665, -61.455628) "></path>
+                    <path d="M37,0 C54.673112,0 69,14.326888 69,32 C69,49.673112 54.673112,64 37,64 C19.326888,64 5,49.673112 5,32 C5,14.326888 19.326888,0 37,0 Z M37,6.15384615 C22.7255634,6.15384615 11.1538462,17.7255634 11.1538462,32 C11.1538462,46.2744366 22.7255634,57.8461538 37,57.8461538 C51.2744366,57.8461538 62.8461538,46.2744366 62.8461538,32 C62.8461538,17.7255634 51.2744366,6.15384615 37,6.15384615 Z" id="Combined-Shape" fill="#50E6FF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-deploy-windows-server-iaas-vms.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/21/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An administrator wants to create a reusable template that uses the custom script extension to configure web content on a VM. What's the best way to enable deployments to specify the script that configures web content?"
+    choices:
+    - content: "Provide a variable that specifies the script location."
+      isCorrect: false
+      explanation: "That's incorrect. Although variables can help make your templates easier to maintain, they're not the best choice when making your templates configurable or reusable."
+    - content: "Provide a default script location in your template, and then use a nested template to override that location."
+      isCorrect: false
+      explanation: "That's incorrect. Although you can use a nested template to override default values, it could make your deployments more complex than necessary."
+    - content: "Provide a parameter that specifies the script location."
+      isCorrect: true
+      explanation: "That's correct. Parameters promote reuse. Their values are filled in when the template runs."
+  - content: "What's meant by declarative automation in the context of deploying VMs by using templates?"
+    choices:
+    - content: "Defining the required resources in addition to the steps needed to create those resources."
+      isCorrect: false
+      explanation: "That's incorrect. For example, think about what's in a Resource Manager template. A Resource Manager template defines only the end state, but not how to get to that end state."
+    - content: "Defining the required resources but not how to create those resources."
+      isCorrect: true
+      explanation: "That's correct. In the case of Resource Manager templates, Resource Manager takes care of these details for you."
+    - content: "Defining the required resources with the system ensuring that those resources are always available."
+      isCorrect: false
+      explanation: "That's incorrect. In the case of Resource Manager templates, it's still up to you to deploy and manage your resources after you've written your template."
+  - content: "Which of the following statements about Azure VM disks is true?"
+    choices:
+    - content: "There will be only one operating system disk in each Azure VM, and its maximum size is 32 TB."
+      isCorrect: false
+      explanation: "That's incorrect. The maximum size for the operating system disk is 2 TB."
+    - content: "The maximum number of data disks you can attach to the Azure VM is dependent on the Azure VM size."
+      isCorrect: true
+      explanation: "That's correct. Different sizes offer different storage opportunities."
+    - content: "The number and disk size of temporary disks is dependent on the size of the Azure VM."
+      isCorrect: false
+      explanation: "That's incorrect. Although the size of temporary disk is dependent on VM size, the number is limited to 1."

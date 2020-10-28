@@ -32,7 +32,7 @@ quiz:
     - content: 'It chooses only the fastest networks between endpoints.'
       isCorrect: false
       explanation: "Choosing the server that's closest to the user is a good way to reduce latency."
-    - content: "It chooses the endpoint that's closest to the user's DNS server."
+    - content: "It uses the DNS server that's closest to the user."
       isCorrect: true
       explanation: "Choosing the server that's closest to the user is a good way to reduce latency."
     - content: 'It caches content, similar to how content delivery networks work.'

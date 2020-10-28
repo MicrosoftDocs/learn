@@ -2,10 +2,6 @@
 
 Continuous Delivery is one of the eight capabilities in the DevOps taxonomy.
 
-![Diagram shows the eight DevOps capabilities. It lists example practices for Continuous Delivery: Release pipeline, Secure infra deployment, IaaS deployment, PaaS deployment, SaaS deployment, Shared services, Infra-as-code, Change management, Configuration management, Release management, Blue/green deployment, Canary deployment, Feature flag, Trunk always PRD ready.](../media/4-2-cont-del.png)
-
-Each capability identifies example practices. They aren't exhaustive lists.
-
 ### Discover why Continuous Delivery is necessary
 
 In 2012, a software deployment error resulted in a $460M loss for Knight Capital Group, the largest trader in U.S. equities at the time.
@@ -57,10 +53,11 @@ By automating the process and enabling the ability to release to production at a
 - Lower risk
 - Higher quality
 - Early feedback
-- Better planning
-- Faster collaboration
+- [Better planning](https://docs.microsoft.com/learn/modules/analyze-devops-continuous-planning-intergration/2-explore-continuous-planning)
+- [Faster collaboration](https://docs.microsoft.com/learn/modules/characterize-devops-continous-collaboration-improvement/2-explore-continuous-collaboration)
 - Everyone is involved
-- Fewer production issues
+- [Fewer production issues](https://docs.microsoft.com/learn/modules/explain-devops-continous-delivery-quality/3-explore-continuous-quality)
+- [Ability to shift left on security](https://docs.microsoft.com/learn/modules/explore-devops-continuous-security-operations/2-explore-continuous-security)
 - Adapt and react a lot more quickly
 - Much more predictable releases
 - Deploy during any business hours

@@ -4,8 +4,8 @@ metadata:
   title: Test and optimize SQL Server databases using the Database Experimentation Assistant (DEA) 
   description: Test and Optimize SQL Server Databases using DEA
   ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 title: Test and optimize SQL Server databases using the Database Experimentation Assistant (DEA)

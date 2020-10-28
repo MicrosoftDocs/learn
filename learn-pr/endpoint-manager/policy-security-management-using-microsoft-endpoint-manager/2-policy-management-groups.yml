@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.policy-security-management-using-microsoft-endpoint-manager.2-policy-management-groups
+title: Learn about policy management based on groups
+metadata:
+  title: Learn about policy management based on groups
+  description: Understand the concepts surrounding policy management based on groups.
+  ms.date: 10/26/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-policy-management-groups.md)]

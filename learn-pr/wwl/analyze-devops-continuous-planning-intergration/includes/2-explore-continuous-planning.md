@@ -2,29 +2,25 @@
 
 Continuous Planning is one of the eight DevOps capabilities.
 
-![Diagram shows the eight DevOps capabilities. It lists example practices for Continuous Planning: Objectives & Key Results (OKR), Lean Product discovery, Lean Product definition, Release planning, Sprint planning, Agile requirement, Security requirement, Architecture design, Capacity planning, UX architecture design, Threat modeling, Prioritization & estimation, Demo & retrospectives.](../media/3-2-cont-planning.png)
-
-Each capability identifies example practices. They aren't exhaustive lists.
-
 ### Discover why Continuous Planning is necessary
 
-The **FBI Sentinel Project** was a software application developed by the U.S. Federal Bureau of Investigation between 2000 and 2005. The project wasn’t close to completion when it was officially abandoned in January 2005, having turned into a complete fiasco for the FBI. In addition to wasting at least US $100 million, the failure brought widespread criticism to the bureau and its director.
+Let’s walk through a case study of a software application developed by a government agency between 2000 and 2005. The project wasn’t close to completion when it was officially abandoned in January 2005, having turned into a complete fiasco. In addition to wasting at least $100 million, the failure brought widespread criticism to the agency and its director.
 
 A second project was started in 2006, with similar disastrous results. The two efforts used big design up front and the Waterfall development methodology, with a classic planned big bang go-live event. They ended with nothing delivered and hundreds of millions of dollars spent.
 
-![Diagram shows the FBI Sentinel Project timeline.](../media/3-2-sentinel.png)
+![Diagram shows the government agency project timeline.](../media/3-2-sentinel.png)
 
 #### Why did these attempts fail?
 
 - **Big design up front** – 200-person team spent six months creating the requirements.
-- **Shifting priorities** – 9/11 happened partway through the project, resulting in massive scope change – and another 300-person team worked for six months, which resulted in 600 pages of requirements.
+- **Shifting priorities** – a national disaster happened partway through the project, resulting in massive scope change – and another 300-person team worked for six months, which resulted in 600 pages of requirements.
 - **Wasted effort and rework** led to missed deadlines and team burnout – 700,000 lines of code being written and re-written.
 
-In December 2010, a Scrum studio was set up in the base of the Hoover building. Staff was reduced from 400 on the original projects to 40. Design went from 600 pages of requirements to 670 user stories. The team shipped code and demonstrated new features every two weeks. After a few sprints, it became possible to forecast rough timescales and plan incremental business changes. They were code complete by December 2011.
+In December 2010, a Scrum studio was set up and co-located. Staff was reduced from 400 on the original projects to 40. Design went from 600 pages of requirements to 670 user stories. The team shipped code and demonstrated new features every two weeks. After a few sprints, it became possible to forecast rough timescales and plan incremental business changes. They were code complete by December 2011.
 
 #### But why is it difficult to plan well in detail?
 
-Alan Turing developed a machine during World War II to crack the encryption device known as the Enigma Machine, which was used by the Nazis.
+Alan Turing developed a machine during World War II to crack the encryption device known as the Enigma Machine.
 
 Turing had to constantly decipher new codes to save lives. Instead of giving up because of the seemingly infinite complexity, Turing knew that he only had to crack small details to give way to bigger outcomes:
 

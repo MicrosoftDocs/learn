@@ -64,11 +64,12 @@ quiz:
     choices:
     - content: "QnA Maker, Azure Cognitive Services, to create rich knowledge resources that can be integrated into apps and services."
       isCorrect: false
-      explanation: "QnA Maker helps you build these things: 
-      * Knowledge-enabled apps for extraction from unstructured text.
-      * A knowledge base from a collection of Q&As.
-      * A semantic matching knowledge base. 
-      [Try QnA Maker](https://azure.microsoft.com/services/cognitive-services/directory/know/)."
+      explanation: |
+        QnA Maker helps you build these things: 
+        * Knowledge-enabled apps for extraction from unstructured text.
+        * A knowledge base from a collection of Q&As.
+        * A semantic matching knowledge base. 
+        [Try QnA Maker](https://azure.microsoft.com/services/cognitive-services/directory/know/).
     - content: "PyTorch framework for natural language processing."
       isCorrect: false
       explanation: "PyTorch is another great way to train a new model both locally or in the cloud. For an example of how to train a model with PyTorch by using the MNIST dataset, see [Train a model with PyTorch](https://docs.microsoft.com/windows/ai/train-model-pytorch)."

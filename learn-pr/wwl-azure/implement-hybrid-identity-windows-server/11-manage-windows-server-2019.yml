@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-identity-with-windows-server.manage-2019-azure-ad-ds-environment
+title: Manage Windows Server 2019 in an Azure Active Directory Domain Services environment
+metadata:
+  title: Manage Windows Server 2019 in an Azure Active Directory Domain Services environment
+  description: "Manage Windows Server 2019 in an Azure Active Directory Domain Services environment"
+  ms.date: 08/16/2020
+  author: wwlpublish
+  ms.author: v-anwarr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/11-manage-windows-server-2019.md)]

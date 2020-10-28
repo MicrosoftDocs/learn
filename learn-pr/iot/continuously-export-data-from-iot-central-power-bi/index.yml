@@ -1,29 +1,29 @@
 ### YamlMime:Module
 uid: learn.iot.continuous-data-export-from-iot-central
 metadata:
-  description: This module covers continuous data export from IoT Central. You use the scenario from the "Create your first Azure IoT Central app" Learn module, where you control a refrigerated truck. This module adds continuous data export to both Blob storage, and an Event Hub. Then, a Power BI app is built to read and display the telemetry data on a mobile phone.
+  description: This module covers continuous data export from IoT Central. You use the scenario from your previously completed "Create your first Azure IoT Central app" Learn module, where you controlled a refrigerated truck. Here, in this module, you add continuous data export to both Azure Blob storage and an event hub. You then build a Power BI app to read and display the telemetry data on a mobile phone.
   ms.date: 6/1/2020
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Set up continuous data export from Azure IoT Central to a Power BI app
 summary: >
-  This module covers continuous data export from IoT Central. You use the scenario from the "Create your first Azure IoT Central app" Learn module, where you control a refrigerated truck. This module adds continuous data export to both Blob storage, and an Event Hub. Then, a Power BI app is built to read and display the telemetry data on a mobile phone.
+  This module covers continuous data export from IoT Central. You use the scenario from your previously completed "Create your first Azure IoT Central app" Learn module, where you controlled a refrigerated truck. Here, in this module, you add continuous data export to both Azure Blob storage and an event hub. You then build a Power BI app to read and display the telemetry data on a mobile phone.
 abstract: |
   In this module, you will:
-  - Create an Azure IoT Central custom app, using the IoT Central portal
-  - Import a capability model for a custom device, using the IoT Central portal
-  - Create a programming project to simulate a refrigerated truck, using Visual Studio Code, or Visual Studio
-  - Create a storage account, and export all the incoming data into that account, using the IoT Central portal
-  - Create an Azure Event Hub, to route data through an Azure Stream Analytics job, using the IoT portal
-  - Create an external app to view the data, using Microsoft Power BI
+  - Create an Azure IoT Central custom app by using the IoT Central portal.
+  - Import a capability model for a custom device by using the IoT Central portal.
+  - Create a programming project to simulate a refrigerated truck by using Visual Studio Code or Visual Studio.
+  - Create a storage account, and export all the incoming data into that account by using the IoT Central portal.
+  - Create an Azure event hub for routing data through an Azure Stream Analytics job by using the IoT Central portal.
+  - Create an external app to view the data by using Power BI.
 prerequisites: |
-  - An introductory knowledge of the purpose of Azure IoT
-  - Ability to navigate the Azure IoT portal 
-  - Ability to use Node.js, or C#, at the beginner level 
-  - Experience using Visual Studio, or Visual Studio Code, at the beginner level 
-  - Must have, or can open, an Azure Maps account 
+  - Introductory knowledge of the purpose of Azure IoT
+  - Ability to navigate the Azure IoT Central portal 
+  - Ability to use Node.js or C# at the beginner level 
+  - Experience using Visual Studio or Visual Studio Code at the beginner level 
+  - Must have an Azure Maps account or be able to open one  
 iconUrl: /learn/achievements/iot/continuous-data-export-from-iot-central.svg
 ratingEnabled: true
 levels:

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-rocket-launch-nasa.8-ethics-machine-learning
+metadata:
+  title: Ethics in data science and machine learning
+  description: Learn how to ethically create machine learning programs
+  ms.date: 07/24/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Ethics in data science and machine learning
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-ethics-machine-learning.md)]

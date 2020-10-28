@@ -24,13 +24,13 @@ In this unit, we'll configure a pre-built Downstream Device to connect to the Io
        
     Copy the `azure-iot-test-only.root.ca.cert.pem` X.509 certificate file to the **DownstreamDevice** folder where the source code for the downstream IoT device is located.
 
-    Open the /LabFiles/DownstreamDevice directory within Visual studio Code.
+    Open the DownstreamDevice directory within Visual studio Code.
 
 1. Open **Visual Studio Code** and select **File => Open Folder** and select the path of the **DownstreamDevice** folder/
 
-1. Open the **SimulatedDevice.cs** source code file.
+1. Open the **Program.cs** source code file.
 
-1. Locate the declaration for the `s_connectionString` variable and replace the value placeholder with the **IoT Hub Connection String** for the **DownstreamDevice1** IoT Device.
+1. Locate the declaration for the `connectionString` variable and replace the value placeholder with the **IoT Hub Connection String** for the **DownstreamDevice1** IoT Device.
 
 1. Modify the **IoT Hub Connection String** to include the `GatewayHostName` property with the value set to the full **DNS name** for the IoT Edge Gateway Device (`AZ-220-VM-EDGEGW`).
 
@@ -46,10 +46,10 @@ In this unit, we'll configure a pre-built Downstream Device to connect to the Io
     - `<IoT-Device-Primary-Key>`: The Primary Key for the **DownstreamDevice1** IoT Device in Azure IoT Hub.
     - `<IoT-Edge-DNS-Name>`: The DNS name set for the **AZ-220-VM-EDGEGW**.
 
-    The `s_connectionString` variable with the Connection String value will look similar to the following value:
+    The `connectionString` variable with the Connection String value will look similar to the following value:
 
     ```csharp
-     private readonly static string s_connectionString = "HostName=AZ-220-HUB-1119.azure-devices.net;DeviceId=DownstreamDevice1;SharedAccessKey=ygNT/WqWs2d8AbVD9NAlxcoSS2rr628fI7YLPzmBdgE=;GatewayHostName=AZ-220-VM-EDGEGW.eastus.cloudapp.azure.com";
+     private readonly static string connectionString = "HostName=AZ-220-HUB-1119.azure-devices.net;DeviceId=DownstreamDevice1;SharedAccessKey=ygNT/WqWs2d8AbVD9NAlxcoSS2rr628fI7YLPzmBdgE=;GatewayHostName=AZ-220-VM-EDGEGW.eastus.cloudapp.azure.com";
      ```
 
 1. Save the file.
@@ -57,7 +57,8 @@ In this unit, we'll configure a pre-built Downstream Device to connect to the Io
 1. Locate the **Main** method. This method contains the code that instantiates the `DeviceClient` using the configured Connection String, and specifies **MQTT** as the transport protocol to use for communicating with the Azure IoT Edge Gateway.
 
     ```
-    csharps_deviceClient = DeviceClient.CreateFromConnectionString(s_connectionString, TransportType.Mqtt); SendDeviceToCloudMessagesAsync(); 
+    deviceClient = DeviceClient.CreateFromConnectionString(connectionString, TransportType.Mqtt);
+    SendDeviceToCloudMessagesAsync();
     ```
     
     This method also executes the **InstallCACert** method, which has some code to automatically install the **root CA** X.509 certificate to the local machine. It also executes the **SendDeviceToCloudMessagesAsync** method that sends event telemetry from the simulated device.

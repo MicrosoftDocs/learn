@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-optimize-compute-costs.exercise-node-pools
+title: Exercise - Configure multiple nodes and enable scale-to-zero on an AKS cluster
+
+metadata:
+  title: Exercise - Configure multiple nodes and enable scale-to-zero on an AKS cluster
+  description: Here you'll configure multiple node pools on an AKS cluster and scale a user node pool's node count to zero.
+  ms.date: 7/10/2020
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-node-pools.md)]

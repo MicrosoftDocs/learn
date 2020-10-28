@@ -16,7 +16,7 @@ Create a resource group to act as the production resource group.
 1. Select **Deploy to Azure** on the template page.
 1. For **Resource group**, select **production-learn-rg**.
 1. Enter a username, password, and **DNS Label Prefix**.
-1. Select **Purchase**.
+1. Select **Review + create** > **Create**.
 
 Now you need to create some additional resources that you'll eventually move to a development resource group.
 

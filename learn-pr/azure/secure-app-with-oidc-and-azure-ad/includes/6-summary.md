@@ -1,6 +1,6 @@
 In this module, you have explored the OpenID Connect concepts for authentication.
 
-By using an example application, you used the OpenID Connect ASP.NET OWIN middleware to sign in users from a single Azure Active Directory (Azure AD) tenant. Users now sign in with the same accounts that they use for Office 365.
+By using an example application, you used the OpenID Connect ASP.NET OWIN middleware to sign in users from a single Azure Active Directory (Azure AD) tenant. Users now sign in with the same accounts that they use for Microsoft 365.
 
 ## Clean up
 
@@ -17,7 +17,7 @@ To delete the Azure AD tenant, follow these steps:
 1. In the upper right of the portal, select your user account, and then select **Sign out**.
 1. Sign in with your normal credentials. In the top bar, select your account, and then select **Switch directory**.
 1. Select the **Learn Module AAD Tenant** directory that you created in unit 4.
-1. In the left pane, select **Azure Active Directory**, select **Delete directory**, and then select **Delete**.
+1. In the left pane, select **Azure Active Directory**, select **Delete tenant**, and then select **Delete**.
 1. In the upper right of the portal, select your user account, and then select **Sign out**.
 
 ## Further reading

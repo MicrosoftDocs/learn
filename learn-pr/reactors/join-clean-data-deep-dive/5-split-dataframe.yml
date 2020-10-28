@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.join-clean-data-deep-dive.5-split-dataframe
+title: Split the dataframe
+metadata:
+  title: Split the dataframe
+  description: Split the dataframe.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-split-dataframe.md)]

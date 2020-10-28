@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Install the Microsoft Assessment and Planning Toolkit
   description: Exercise - Install the Microsoft Assessment and Planning Toolkit
   ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 azureSandbox: true

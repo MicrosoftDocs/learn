@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-sql-server-resources-for-optimal-performance.optimize-database-storage
+title: Optimize database storage
+metadata:
+  title: Optimize database storage
+  description: "Optimize database storage"
+  ms.date: 10/14/2020
+  author: wwlpublish
+  ms.author: kadelaney
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-optimize-database-storage.md)]

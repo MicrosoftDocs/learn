@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-identity-with-windows-server.join-vm-managed-domain
+title: Join a Windows Server VM to a managed domain
+metadata:
+  title: Join a Windows Server VM to a managed domain
+  description: "Join a Windows Server VM to a managed domain"
+  ms.date: 08/16/2020
+  author: wwlpublish
+  ms.author: v-anwarr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/13-join-windows-server-virtual-machine-managed-domain.md)]

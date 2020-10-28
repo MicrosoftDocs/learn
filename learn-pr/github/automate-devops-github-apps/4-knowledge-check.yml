@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.github.automate-devops-github-apps.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check what you've learned.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following scenarios is **not** a good candidate to be built as a GitHub App?"
+    choices:
+    - content: "An app that checks the spelling of pull request titles after they're created."
+      isCorrect: false
+      explanation: "This scenario is a good candidate for a GitHub app."
+    - content: "An app that requests a user to update the name of a pushed branch if they don't follow your team's `user/feature` branch naming convention."
+      isCorrect: false
+      explanation: "This scenario is a good candidate for a GitHub app."
+    - content: "An app that allows a user to approve a pull request from a custom tool."
+      isCorrect: true
+      explanation: "This scenario wouldn't be a good candidate for a GitHub app because it would need to operate on behalf of a specific user."
+  - content: "When should you build an OAuth App instead of a GitHub App?"
+    choices:
+    - content: "When your app needs to access the GitHub API."
+      isCorrect: false
+      explanation: "Both app models support accessing the GitHub API."
+    - content: "When your app needs to operate on behalf of a specific user."
+      isCorrect: true
+      explanation: "OAuth apps run as the user who authorized them. GitHub Apps run as themselves."
+    - content: "When your app needs to consume webhooks."
+      isCorrect: false
+      explanation: "Both app models support consuming webhooks."
+  - content: "Which of the following choices is **not** a benefit of using webhooks over polling?"
+    choices:
+    - content: "Webhooks have better network accessibility than polling."
+      isCorrect: true
+      explanation: "Webhooks require the publisher to connect to the subscriber to push data, which may not be practical if the subscriber is behind a firewall. However, you can mitigate this scenario through relay services like smee.io."
+    - content: "Webhooks use less bandwidth than polling."
+      isCorrect: false
+      explanation: "Webhooks only send data when there's data to send. Polling makes regular requests even when nothing has changed."
+    - content: "Webhooks offer faster delivery of new data than polling."
+      isCorrect: false
+      explanation: "Webhooks send data as soon as it becomes available. Polling can be delayed up to the polling interval length."

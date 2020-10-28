@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.continuous-data-export-from-iot-central.introduction
 metadata:
-  description: Outlines the learning objectives, prerequisites, and the scenario, for this module.
+  description: This unit outlines the learning objectives, prerequisites, and scenario for this module.
   ms.date: 6/1/2020
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction

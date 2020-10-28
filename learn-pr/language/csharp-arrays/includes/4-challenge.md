@@ -1,6 +1,6 @@
 Previously, we set out to write code that would store Order IDs belonging to potentially fraudulent orders.  Our hope is to find fraudulent orders as early as possible and flag them for deeper analysis.  
 
-Our team found a pattern -- orders that start with the letter "B" encounter fraud 25 times the normal rate.  We will write new code that will output the Order ID of new orders where the Order ID starts with the letter "B".  This will be used by our fraud team to investigate further.
+Our team found a pattern. Orders that start with the letter "B" encounter fraud 25 times the normal rate.  We will write new code that will output the Order ID of new orders where the Order ID starts with the letter "B".  This will be used by our fraud team to investigate further.
 
 ### Step 1 - Delete the code from the previous exercises.
 
@@ -21,11 +21,11 @@ C235
 B179
 ```
 
-### Step 2 - Iterate through each element of the array.
+### Step 3 - Iterate through each element of the array.
 
 Use a `foreach` statement to iterate through each element of the array you just declared and initialized.
 
-### Step 3 - If the fake Order ID starts with "B", the print the Order ID to the output.
+### Step 4 - If the fake Order ID starts with "B", then print the Order ID to the output.
 
 Evaluate each element of the array.  Identify and print to output the potentially fraudulent Order IDs looking for those orders that start with the letter "B".  The output should match the following output:
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-xamarin.xamarin-forms-dual-screen.9-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Introduction
+  ms.date: 08/12/2020
+  author: conceptdev
+  ms.author: crdun
+  ms.topic: interactive-tutorial
+  ms.prod: learning-xamarin
+  
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]

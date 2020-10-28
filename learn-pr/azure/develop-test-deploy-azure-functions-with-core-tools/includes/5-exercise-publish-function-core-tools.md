@@ -24,7 +24,8 @@ az functionapp create \
   --name "$FUNCTIONAPP" \
   --storage-account "$STORAGEACCT" \
   --runtime node \
-  --consumption-plan-location centralus
+  --consumption-plan-location centralus \
+  --functions-version 2
 ```
 
 Here's what these commands do:
@@ -47,7 +48,7 @@ func azure functionapp publish "$FUNCTIONAPP"
 ```
 
 > [!NOTE]
-> If this command displays an error that it can't find your app, wait a moment and try again. New function apps take a few seconds to become discoverable by the Core Tools after they're created.
+> If this command displays an error that it can't find your app, wait a moment and try again. New function apps take a few seconds to become discoverable by the Core Tools after they're created. You can also try adding `--force` to update the function app version mismatch. 
 
 Unlike the previous exercise, where you temporarily hosted your function locally from the Core Tools, your function is now live on the web and will remain globally available until the sandbox for this tutorial expires.
 

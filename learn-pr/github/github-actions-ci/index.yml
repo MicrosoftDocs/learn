@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.github.github-actions-ci
 metadata:
-  title: "Build continuous integration (CI) workflows by using GitHub Actions - Learn"
+  title: "Build continuous integration (CI) workflows by using GitHub Actions"
   description: Learn how to create workflows that enable you to use Continuous Integration (CI) for your projects.
   ms.date: 05/19/2020
   author: jamcneil

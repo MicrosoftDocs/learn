@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn-sqlserver.sql-server-discovery-using-map
 metadata:
-  title: gitgit push 
+  title: SQL Server Discovery using the Microsoft Assessment and Planning (MAP) toolkit 
   description: SQL Server Discovery using MAP
   ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 title: SQL Server Discovery using the Microsoft Assessment and Planning (MAP) toolkit
-summary: Microsoft Assessment and Planning toolkit is a standalone application that automates the inventory of the Microsoft Platform. You can discover information about your Windows deployments, Office 365 installations, and SQL Server instances. This module shows you how to install MAP on your client machine, and then use it to discover SQL Server instances within your corporate environment.
+summary: Microsoft Assessment and Planning toolkit is a standalone application that automates the inventory of the Microsoft Platform. You can discover information about your Windows deployments, Microsoft 365 installations, and SQL Server instances. This module shows you how to install MAP on your client machine, and then use it to discover SQL Server instances within your corporate environment.
 abstract: |
  In this module, you will:
  - Decide if MAP is the best tool to use for a given administration task

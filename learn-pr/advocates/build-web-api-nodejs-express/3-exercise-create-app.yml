@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-web-api-nodejs-express.3-exercise-create-app
+title: Exercise - Create a new Express web application
+metadata:
+  title: Exercise - Create a new Express web application
+  description: Exercise in how to use Express to return different types of content like text and JSON.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 06/16/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-exercise-create-app.md)]

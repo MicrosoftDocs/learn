@@ -1,4 +1,4 @@
-You can enable or disable CORS using the Azure REST API, and Azure Storage Services provides a secure way for clients to manage their servies and access your Azure Storage Services resources.
+You can enable or disable CORS using the Azure REST API, and Azure Storage Services provides a secure way for clients to manage their services and access your Azure Storage Services resources.
 
 In the utilities company scenario, some of your company's document resources are located in Blob storage. You've been asked to set up CORS rules to restrict access to these resources to requests from specific domains. You'll use the REST API to do this.
 

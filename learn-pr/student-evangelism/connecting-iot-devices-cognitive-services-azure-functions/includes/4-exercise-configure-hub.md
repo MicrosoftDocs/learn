@@ -7,7 +7,7 @@ To start Azure Cloud Shell,  launch Cloud Shell from the top navigation of the A
 You need to install the Azure IoT extension for Azure CLI using the following command. This extension manages Azure resources such as IoT Hub.
 
 ```azurecli
-az extension add --name azure-cli-iot-ext
+az extension add --name azure-iot
 ```
 
 ##  Creating a resource group

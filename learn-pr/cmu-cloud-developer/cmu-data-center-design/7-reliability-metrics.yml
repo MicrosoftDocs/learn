@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-data-center-design.7-reliability-metrics
+title: Reliability metrics
+metadata:
+  title: Reliability metrics
+  description: Reliability metrics
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-reliability-metrics.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I get this block question 1
+# Converted text field into multiple choice answers
+  - content: "Assume you have 20,000 independent hard drives of a particular model in your datacenter, each with a manufacturer-specified MTBF of 1 million hours. Assume you do not trust the manufacturer-specified MTBF, so divide by two to get 500,000 hours. For the second year in the life span of those drives, how many of the 20,000 would you expect to fail?"
+    choices:
+    - content: "2"
+      isCorrect: false
+      explanation: "Incorrect. Consider if the drives are redundant or not,  and apply the respective formula. (1 / 500,000) × hours per year × number of drives."
+    - content: "50"
+      isCorrect: false
+      explanation: "Incorrect. Consider if the drives are redundant or not, and apply the respective formula. (1 / 500,000) × hours per year × number of drives."
+    - content: "300"
+      isCorrect: false
+      explanation: "Incorrect. Consider if the drives are redundant or not, and apply the respective formula. (1 / 500,000) × hours per year × number of drives."
+    - content: "350"
+      isCorrect: true
+      explanation: "Correct!"
+
+# Did I get this block question 2      
+  - content: "Consider the same scenario from the previous question. If each drive is part of a two-drive RAID 1 mirror, would you expect to lose any data from a double drive failure on any one of those 10,000 RAID 1 arrays during that year?<br>(Also assume that a failed drive is replaced immediately, and no additional drives fail during rebuild.)"
+    choices:
+    - content: "Yes"
+      isCorrect: false
+      explanation: "Incorrect. Consider if the drives are redundant or not, and apply the respective formula. (1 / 500,000<sup>2</sup>) × hours per year × number of arrays."
+    - content: "No"
+      isCorrect: true
+      explanation: "Correct!"     
+   

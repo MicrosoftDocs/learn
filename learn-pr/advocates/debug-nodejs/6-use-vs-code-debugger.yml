@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.debug-nodejs.6-use-vs-code-debugger
+title: Exercise - Debug with Visual Studio Code
+metadata:
+  title: Exercise - Debug with Visual Studio Code
+  description: Learn how to use the Visual Studio Code debugger with Node.js programs.
+  author: sinedied
+  ms.author: yolasors
+  ms.date: 06/04/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-use-vs-code-debugger.md)]
+  

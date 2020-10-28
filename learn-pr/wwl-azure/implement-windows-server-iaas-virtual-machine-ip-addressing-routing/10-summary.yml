@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-iaas-vm-ip-addressing-routing.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 08/16/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-summary.md)]

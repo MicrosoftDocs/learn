@@ -1,6 +1,6 @@
 To log telemetry in application insights from an Azure machine learning service, you must have an Application Insights resource associated with your Azure Machine Learning workspace, and you must configure your service to use it for telemetry logging.
 
-## Associating Application Insights with a workspace
+## Associate Application Insights with a workspace
 
 When you create an Azure Machine Learning workspace, you can select an Azure Application Insights resource to associate with it. If you do not select an existing Application Insights resource, a new one is created in the same resource group as your workspace.
 
@@ -13,7 +13,7 @@ ws = Workspace.from_config()
 ws.get_details()['applicationInsights']
 ```
 
-## Enabling Application Insights for a service
+## Enable Application Insights for a service
 
 When deploying a new real-time service, you can enable Application Insights in the deployment configuration for the service, as shown in this example:
 

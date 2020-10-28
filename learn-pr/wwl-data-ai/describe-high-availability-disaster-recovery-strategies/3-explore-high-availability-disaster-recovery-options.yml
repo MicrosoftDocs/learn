@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-high-availability-disaster-recovery-strategies.explore-ha-dr-options
+title: Explore high availability and disaster recovery options
+metadata:
+  title: Explore high availability and disaster recovery options
+  description: "Explore high availability and disaster recovery options"
+  ms.date: 08/23/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-explore-high-availability-disaster-recovery-options.md)]

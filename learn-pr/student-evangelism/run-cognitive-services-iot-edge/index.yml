@@ -1,25 +1,25 @@
 ### YamlMime:Module
 uid: learn.oxford.run-cognitive-services-iot-edge
 metadata:
-  title: "Run Cognitive Services on the IoT Edge"
+  title: "Run Cognitive Services on IoT Edge"
   description: "University of Oxford"
   ms.date: 6/12/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
-title: "Run Cognitive Services on the IoT Edge"
-summary: "Implement a cognitive service for performing language detection on an IoT Edge device. Describe the components and steps for implementing a cognitive service on an IoT device "
+title: "Run Cognitive Services on IoT Edge"
+summary: "Implement a cognitive service for performing language detection on an IoT Edge device. Describe the components and steps for implementing a cognitive service on an IoT Edge device."
 abstract: |
     In this module, you will:
     
-    - Implement a cognitive service for performing language detection on an IoT Edge device
-    - Describe how the components and services of a solution to deploy a cognitive service on an Edge device work together to solve the problem of language detection on an Edge device.  
+    - Implement a cognitive service for performing language detection on an edge device
+    - Describe how the components and services of a solution to deploy a cognitive service on an edge device work together to solve the problem of language detection on an edge device.  
 
-    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 prerequisites: |
-    - Basic knowledge of IoT Edge
-    - Basic knowledge of IoT Hub
+    - Basic knowledge of Azure IoT Edge
+    - Basic knowledge of Azure IoT Hub
     - An active Azure account
 iconUrl: /learn/achievements/student-evangelism/run-cognitive-services-on-iot-edge.svg
 badge:

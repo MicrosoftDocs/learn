@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-compliance.4-management-groups
-title: Enterprise governance management
+title: Manage access, policies, and compliance across multiple Azure subscriptions
 metadata:
-  title: Enterprise governance management
-  description: Enterprise governance management with management groups
-  ms.date: 02/28/2020
+  title: Manage access, policies, and compliance across multiple Azure subscriptions
+  description: Manage access, policies, and compliance across multiple Azure subscriptions by using management groups
+  ms.date: 07/09/2020
   author: patridge
   ms.author: adpatrid
   ms.topic: interactive-tutorial

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.introduction-machine-learning-models.4-linear-regression-fit-model
+title: 'Linear regression: Fitting the model'
+metadata:
+  title: 'Linear regression: Fitting the model'
+  description: Learn how to fit models in linear regressions with machine learning models for data science.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+  show_latex: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-linear-regression-fit-model.md)] 

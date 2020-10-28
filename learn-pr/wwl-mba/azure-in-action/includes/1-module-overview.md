@@ -1,6 +1,6 @@
-﻿Welcome to the Azure demonstration module. This module shows how you can use Azure to solve some of the most common challenges in moving to the cloud. You'll see two short demos, each of which highlights specific capabilities of Azure products.
+Welcome to the Azure demonstration module. This module shows how you can use Azure to solve some of the most common challenges in moving to the cloud. You'll see two short demos, each of which highlights specific capabilities of Azure products.
 
-The demonstrations in this module show you the ease with which you can adopt Azure and some of the benefits of running your solutions on Azure. You’ll also see some of the specific tools available within Azure to help you migrate to the cloud, modernize your solutions by using new cloud capabilities, and even continuously monitor and update your solutions in the cloud.  
+The demonstrations in this module show you the ease with which you can adopt Azure and some of the benefits of running your solutions on Azure. You’ll also see some of the specific tools available within Azure to help you migrate to the cloud, modernize your solutions by using new cloud capabilities, and even continuously monitor and update your solutions in the cloud.  
 
 A key time to consider migration to Azure and modernization is when your business is on the verge of an expansion or upgrade. For example, maybe your server hardware or software is reaching the end of its lifecycle, or you need to add capacity to your datacenter. These can be opportune moments to consider the cloud as part of your new or upgraded infrastructure.
 

@@ -8,28 +8,29 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
-title: "Image Classification using Azure Sphere"
+title: "Image classification using Azure Sphere"
 summary: "Implement a neural network model for performing real-time image classification on a secured, internet-connected microcontroller-based device (Azure Sphere). Describe the components and steps for implementing a pre-trained image classification model on Azure Sphere."
 abstract: |
     In this module, you will:
 
-    - Implement  image classification on a microcontroller device using a pre-trained neural network model.
-    - Describe how the components and services of an Azure Sphere work to deploy a pre-trained image classification model. 
+    - Implement image classification on a microcontroller device using a pre-trained neural network model.
+    - Describe how the components and services of Azure Sphere work to deploy a pre-trained image classification model. 
 
-    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 prerequisites: |
+    - A PC running Windows 10
     - Basic knowledge of Azure Sphere
     - USB cable to connect Azure Sphere to the computer
     - USB-to-serial adapter
-    - Mini cable to connect serial adapter to the computer
-    - Jumper wires to connect serial adapter to Azure Sphere
+    - Mini cable to connect the serial adapter to the computer
+    - Jumper wires to connect the serial adapter to Azure Sphere
     - Basic knowledge of using Visual Studio Code
-    - Visual Studio Code installed in your computer
-    - Git installed in your computer
-    - Ability to use Git/Github
+    - Visual Studio Code installed on your computer
+    - Git installed on your computer
+    - Ability to use Git/GitHub
 iconUrl: /learn/achievements/student-evangelism/image-classification-using-azure-sphere.svg
 badge:
-  uid: learn.oxford.implement-cicd-iot-edge.badge
+  uid: learn.oxford.image-classification-azure-sphere.badge
 levels:
 - intermediate
 roles:

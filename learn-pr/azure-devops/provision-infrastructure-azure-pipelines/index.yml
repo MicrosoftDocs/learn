@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azdo.provision-infrastructure-azure-pipelines
 metadata:
-  title: Provision infrastructure in Azure Pipelines - Learn
+  title: Provision infrastructure in Azure Pipelines
   description: Learn how infrastructure as code enables you to describe and automatically provision the infrastructure that you need for your application.
   ms.date: 01/21/2020
   author: tpetchel

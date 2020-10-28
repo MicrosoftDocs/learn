@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-web-api-nodejs-express.7-exercise-middleware
+title: Exercise - Manage request lifecycle
+metadata:
+  title: Exercise - Manage request lifecycle
+  description: Exercise in how to use middleware to manage a request lifecycle. The exercise looks into how to examine the request, prior to constructing a response, for valid credentials.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-exercise-middleware.md)]

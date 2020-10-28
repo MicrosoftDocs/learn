@@ -197,7 +197,7 @@ Your application can display all books and add new books. What happens if you cr
     public async Task Update(Book book)
     {
         HttpClient client = await GetClient();
-        await client.PutAsync(Url + "/" + book.ISBN,
+        await client.PutAsync(Url + book.ISBN,
             new StringContent(
                 JsonConvert.SerializeObject(book),
                 Encoding.UTF8, "application/json"));

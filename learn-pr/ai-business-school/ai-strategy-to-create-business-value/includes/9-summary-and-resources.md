@@ -10,7 +10,7 @@ Now that you have reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-Read the [Microsoft-sponsored report](https://info.microsoft.com/ww-landing-Intelligent-Economies-Microsoft-eBook.html) from The Economist Intelligence Unit to learn how people are using AI to make the production and distribution of goods and services more intelligent, check out [this e-book](https://info.microsoft.com/ww-landing-aI-basics-for-business-eBook.html) for an introduction to AI and tips on how to implement intelligent technologies, and to learn even more about transforming your organization with AI, read our [whitepaper on Microsoft’s vision for AI in the enterprise](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2FPpk).
+Read the [Microsoft-sponsored report](https://info.microsoft.com/ww-landing-Intelligent-Economies-Microsoft-eBook.html) from The Economist Intelligence Unit to learn how people are using AI to make the production and distribution of goods and services more intelligent, check out [this e-book](https://info.microsoft.com/ww-landing-aI-basics-for-business-eBook.html) for an introduction to AI and tips on how to implement intelligent technologies, and to learn even more about transforming your organization with AI, read our [whitepaper on Microsoft’s vision for AI in action the enterprise](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CKw1).
 
 * [Download PDF](https://aka.ms/AIBSSTRAAPPCONDWL) of the Telefónica case study introduction to share with others.
 * [Download PDF](https://aka.ms/AIBSSTRAAPPRESDWL) of the Telefónica case study resolution to share with others.

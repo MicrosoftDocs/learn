@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.continuous-data-export-from-iot-central.create-device-app-project
 metadata:
-  description: Create the programming project to simulate an IoT device in a refrigerated truck. Use Visual Studio, or Visual Studio Code as the development environment. Use C# or Node.js as the programming language. Finally, set the device app running, and watch the telemetry and dashboard.
+  description: In this unit, you create the programming project to simulate an IoT device in a refrigerated truck, set the device app running, and view the telemetry and dashboard.
   ms.date: 6/1/2020
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: vs-vscode-language
-title: Create the device app project
+title: Exercise - Create the device app project
 durationInMinutes: 12
 content: |
   [!include[](includes/3-create-device-app-project.md)]

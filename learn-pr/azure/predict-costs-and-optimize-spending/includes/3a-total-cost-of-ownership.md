@@ -36,4 +36,4 @@ Adjust the values of assumptions that the TCO calculator makes, which might vary
 
 The TCO calculator generates a detailed report based on the details you enter and the adjustments you make. The report allows you to compare the costs of your on-premises infrastructure with the costs of using Azure products and services to host your infrastructure in the cloud.
 
-![Two TCO pie charts: one for total on-premises costs of $30,702,495 and another for Azure cost of $595,618.](../media/3a-TCO-calculator-report.png)
+![Diagram of two total cost of ownership pie charts: one for total on-premises costs of $30,702,495 covered mostly by datacenter costs, and another for Azure cost of $595,618 covered mostly by storage and networking costs.](../media/3a-TCO-calculator-report.png)

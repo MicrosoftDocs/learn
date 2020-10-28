@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.plan-implement-data-platform-resources
+metadata:
+  title: Plan and Implement Data Platform Resources
+  description: Deploy data platform resources in Azure for SQL Server and Open Source databases. Explore options for upgrade and migration.  Calculate resource requirements and create templates.
+  ms.date: 09/25/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan and implement data platform resources
+prerequisites: |
+  - Familiarity with on-premises virtualization technologies, including: VMs, virtual networking, and virtual hard disks.
+  - Familiarity with network configuration, including TCP/IP, Domain Name System (DNS), virtual private networks (VPNs), firewalls, and encryption technologies.
+  - Ability to create a on-premises SQL Server database, including the configuration  of data files and log files.
+  - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
+  - Experience creating and configuring resources using the Azure portal.
+summary: |
+  Deploy data platform resources in Azure for SQL Server and Open Source databases. Explore options for upgrade and migration.  Calculate resource requirements and create templates.
+iconUrl: /learn/achievements/plan-and-implement-data-platform-resources.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+- sql-server
+modules:
+- learn.wwl.deploy-sql-server-virtual-machine
+- learn.wwl.deploy-azure-sql-database
+- learn.wwl.deploy-mariadb-mysql-postgresql-azure
+trophy:
+  uid: learn.wwl.plan-implement-data-platform-resources.trophy

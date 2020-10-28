@@ -24,8 +24,6 @@ The preceding command installs a specific version of the .NET Core SDK in the Az
     dotnet new webapi -o aspnet-learn/src/ContosoPets.Api
     ```
 
-    [!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
-
     The preceding command uses an ASP.NET Core project template, aliased as *:::no-loc text="webapi":::*, to scaffold a C#-based starter web API project. The *:::no-loc text="aspnet-learn/src/ContosoPets.Api":::* directory structure is created, which contains an ASP.NET Core project targeting .NET Core. The project name matches the *:::no-loc text="ContosoPets.Api":::* directory name.
 
 1. Run the following command in the command shell:

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.describe-high-availability-disaster-recovery-strategies
+metadata:
+  title: Describe high-availability and disaster-recovery strategies
+  description: "Plan appropriate HA/DR strategy based on RTO and RPO. Choose best solution for IaaS or PaaS deployments or hybrid workloads."
+  ms.date: 08/23/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe high availability and disaster recovery strategies
+summary: Plan an appropriate high availability and disaster recovery strategy based on recovery rime objective and recovery point objective. Choose the best solution for IaaS or PaaS deployments or hybrid workloads.
+abstract: |
+  After completing this module, you will be able to:
+  - Define recovery time objective and recovery point objective
+  - Explore the available high availability and disaster recovery options for both IaaS and PaaS
+  - Devise an appropriate high availability and disaster recovery strategy
+prerequisites: |
+  - Experience creating and configuring resources using the Azure portal.
+  - Basic understanding of SQL Server file storage.
+iconUrl: /learn/achievements/describe-high-availability-and-disaster-recovery-strategies.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+- sql-server
+units:
+- learn.wwl.describe-high-availability-disaster-recovery-strategies.introduction
+- learn.wwl.describe-high-availability-disaster-recovery-strategies.describe-recovery-time-objective-recovery-point-objective
+- learn.wwl.describe-high-availability-disaster-recovery-strategies.explore-ha-dr-options
+- learn.wwl.describe-high-availability-disaster-recovery-strategies.describe-azure-ha-dr-features-for-azure-virtual-machines
+- learn.wwl.describe-high-availability-disaster-recovery-strategies.describe-ha-dr-options-for-paas-deployments
+- learn.wwl.describe-high-availability-disaster-recovery-strategies.explore-iaas-ha-dr-solution
+- learn.wwl.describe-high-availability-disaster-recovery-strategies.describe-hybrid-solutions
+- learn.wwl.describe-high-availability-disaster-recovery-strategies.knowledge-check
+- learn.wwl.describe-high-availability-disaster-recovery-strategies.summary
+badge:
+  uid: learn.wwl.describe-high-availability-disaster-recovery-strategies.badge

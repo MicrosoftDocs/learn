@@ -4,9 +4,9 @@ title: Exercise - Set up a development environment
 metadata:
   title: Exercise - Set up a development environment
   description: In this exercise, you set up a development environment for building websites by using Flask and Python.
-  ms.date: 01/31/2020
+  ms.date: 10/23/2020
   author: GeekTrainer
-  ms.author: chrhar
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-python
 durationInMinutes: 15

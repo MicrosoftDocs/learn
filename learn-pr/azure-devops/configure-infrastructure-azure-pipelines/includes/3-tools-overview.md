@@ -98,7 +98,7 @@ There are a number of ways you can use Ansible on Azure.
 
 On [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?azure-portal=true), you'll find a number of images that you can use. They include:
 
-* [Red Hat Ansible instance on Linux](https://azuremarketplace.microsoft.com/marketplace/apps/azure-oss.ansible?azure-portal=true), published by Microsoft.
+* [Red Hat Ansible instance on Linux](https://azuremarketplace.microsoft.com/marketplace/apps/redhat.ansible-tower?tab=Overview), published by Microsoft.
 
     You can use this image to bring up a control machine, which includes Ansible, the Azure CLI, and other tools, to manage your fleet.
 
@@ -150,7 +150,7 @@ az vm extension set \
   --vm-name my-vm \
   --name customScript \
   --publisher Microsoft.Azure.Extensions \
-  --version 2.0 \
+  --version 2.1 \
   --settings '{"fileUris":["https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh"]}' \
   --protected-settings '{"commandToExecute": "./configure-nginx.sh"}'
 ```

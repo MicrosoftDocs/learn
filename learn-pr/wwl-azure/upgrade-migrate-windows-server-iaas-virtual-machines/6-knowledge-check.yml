@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/21/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Dariya is attempting to migrate on-premises workloads from the Contoso London datacenter. She's added Azure Migrate to Contoso's Azure subscription. What's her next step?"
+    choices:
+    - content: "Dariya now needs to run Discover to locate her on-premises server workloads."
+      isCorrect: false
+      explanation: "That's incorrect. First Dariya must add the required tools."
+    - content: "Dariya now needs to add the Azure Migrate: Server Assessment tool."
+      isCorrect: true
+      explanation: "That's correct. After Dariya has assessed the on-premises workloads, she could now perform the migration."
+    - content: "Dariya now needs to add the Azure Migrate: Server Migration tool."
+      isCorrect: false
+      explanation: "That's incorrect. It's important to assess your server machines first."
+  - content: "Marina has been tasked with migrating on-premises workloads to Azure. She's working in Contoso's datacenter in London on a workstation with Windows Admin Center installed. She has created a new migration job, added a list of servers she is to migrate, and performed device inventory. On the **Transfer data** page of the migration tool, she is prompted to enter credentials. Which credentials should she use?"
+    choices:
+    - content: "Marina should enter the administrator credentials for the workstation where she's working."
+      isCorrect: false
+      explanation: "That's incorrect. Marina is already signed in at her workstation. She should enter the target server credentials."
+    - content: "Marina should enter the administrator credentials for the servers she is migrating to."
+      isCorrect: true
+      explanation: "That's correct. She should enter the target server credentials."
+    - content: "Marina should enter the administrator credentials for the servers she is migrating from."
+      isCorrect: false
+      explanation: "That's incorrect. She should enter the target server credentials."
+  - content: "Julia is in the migration planning team at Contoso. She has been tasked with investigating which workloads should be migrated to Azure. She has discovered that there are a number of apps that must be migrated quickly, and that require no modification. Which of the following migrate patterns does this suggest?"
+    choices:
+    - content: "Rearchitect."
+      isCorrect: false
+      explanation: "That's incorrect. Choose this migration when your apps need major revisions to incorporate new capabilities, or to work effectively on a cloud platform."
+    - content: "Rebuild."
+      isCorrect: false
+      explanation: "That's incorrect. This migration rebuilds apps. Choose this migration when you want rapid development, and existing apps have limited functionality and lifespan."
+    - content: "Rehost."
+      isCorrect: true
+      explanation: "That's correct. Choose this migration when you need to move an app quickly without modifying it."

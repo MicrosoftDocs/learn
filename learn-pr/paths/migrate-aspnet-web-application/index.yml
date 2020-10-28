@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.migrate-aspnet-web-application
+metadata:
+  title: Migrate an ASP.NET web application to Azure with Visual Studio
+  description: Migrate an ASP.NET web application to Azure with Visual Studio
+  ms.date: 06/30/2020
+  author: coderandhiker
+  ms.author: chrisrt
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Migrate an ASP.NET web application to Azure with Visual Studio
+prerequisites: |
+  - Some C# programming experience
+  - Familiarity with ASP.NET development
+  - A development environment that has Windows 10 and Visual Studio 2019 with the latest updates
+  - Git for Windows installed on your desktop 
+summary: |
+  Learn how to take a .NET Framework web app and migrate it to Azure. This scenario represents a very common set of challenges that you will run into when moving an app to the cloud. You will make key updates to the solution to make it cloud ready.
+iconUrl: /learn/achievements/migrate-aspnet-web-application.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-app-service
+- azure-cache-redis
+- azure-key-vault
+- azure-sql-database
+- aspnet
+- dotnet
+modules:
+- learn.azure.aspnet-configurationbuilder
+- learn.azure.aspnet-logging
+- learn.azure.aspnet-session
+trophy:
+  uid: learn.migrate-aspnet-web-application.trophy

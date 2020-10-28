@@ -122,13 +122,13 @@ Now that installation is complete, you can use the Microsoft SQL Server containe
 1. In the terminal, to pull the SQL Server container image, type the following command, and then press Enter:
 
     ```bash
-    sudo docker pull mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
+    sudo docker pull mcr.microsoft.com/mssql/server:2019-latest
     ```
 
 1. In the terminal, to run the SQL Server container image, type the following command, and then press Enter:
 
     ```bash
-    sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Pa$$w0rdSQL' -p 1500:1433 --name sqltestcontainer -d mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
+    sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Pa$$w0rdSQL' -p 1500:1433 --name sqltestcontainer -d mcr.microsoft.com/mssql/server:2019-latest
     ```
 
 1. If you're prompted for a password, type the displayed password from above, and then press Enter.

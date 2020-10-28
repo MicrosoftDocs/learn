@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.image-classification-azure-sphere.design-image-classification-model
-title: Design a image classification model on Azure Sphere
+title: Design an image classification model on Azure Sphere
 metadata:
-  title: Design a image classification model on Azure Sphere
-  description: In this section, we explain architecture of running a image classification model on Azure Sphere
+  title: Design an image classification model on Azure Sphere
+  description: In this section, we explain the architecture of running an image classification model on Azure Sphere.
   ms.date: 06/22/2020
   author: leestott
   ms.author: leestott

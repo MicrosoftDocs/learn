@@ -1,8 +1,6 @@
 
 
-The final pillar in our holistic view of DevOps is **Technology**.  
-
-Technology continually evolves to enable DevOps practices. Choosing the right solution will empower your team on their DevOps journey.
+**Technology** continually evolves to enable DevOps practices. Choosing the right solution will empower your team on their DevOps journey.
 
 Here's where [Azure DevOps](https://azure.com/devops) comes in. **Azure DevOps** encompasses the entire toolchain, from source control (Git or Team Foundation) through continuous integration, release automation, and even production monitoring. It was recently ranked as a leader in The Forrester Wave™: Continuous Delivery And Release Automation Report.
 
@@ -115,11 +113,11 @@ For monitoring cloud health, Log Analytics will:
 
 With Azure DevOps, you have choices that help maximize your existing investments.
 
-Choose the tools that are right for you. Get support for infrastructure as a service (IaaS) on Linux, Java, and PHP Web application platforms. Develop and test Linux and open source components in Azure. Mix and match to create workflows with tools from Microsoft, open source, or your favorite third-party tools. Bring the tools you love, the skills you already have, and run virtually any application, using your data source, with your operating system, on your device.
+Choose the tools that are right for you. Get support for infrastructure as a service (IaaS) on Linux, Java, and PHP Web application platforms. Develop and test Linux and open-source components in Azure. Mix and match to create workflows with tools from Microsoft, open source, or your favorite third-party tools. Bring the tools you love, the skills you already have, and run virtually any application, using your data source, with your operating system, on your device.
 
 ![Diagram explains that Azure DevOps lets developers choose their tools and target any cloud or on-premises environment.](../media/2-3-devops.png)
 
-### Bootstrap the Dojo Classroom
+### Dojo Classroom Bootstrap
 
 With end-to-end solutions in Azure, teams can implement DevOps practices in each of the application lifecycle phases:
 
@@ -136,4 +134,4 @@ These DevOps technologies, combined with people and processes, enable teams to c
 
 Using the robust integration of these DevOps capabilities in Azure allows us to bootstrap our **Dojo Classroom** labs with auto-provisioning to provide hands-on experiences during the master class.
 
-The Dojo Classroom environment includes everything you need in the immersive Dojo classroom, including tracking with ACR!
+The Dojo Classroom environment includes everything you need in the immersive Dojo classroom, including tracking with ACR (Azure Consumed Revenue)!

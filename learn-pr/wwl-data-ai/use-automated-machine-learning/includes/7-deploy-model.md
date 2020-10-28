@@ -19,14 +19,15 @@ In Azure Machine Learning, you can deploy a service as an Azure Container Instan
 
 Now that you've deployed a service, you can test it using some simple code.
 
-1. With the **Consume** page for the **predict-rentals** service page open in your browser, open a new browser tab and open a second instance of [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true). Then in the new tab, view the **Notebooks** page.
-On the **Notebooks** page, create a new file with the following settings:
-    - **File name**: bike_test.ipynb
+1. With the **Consume** page for the **predict-rentals** service page open in your browser, open a new browser tab and open a second instance of [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true). Then in the new tab, view the **Notebooks** page (under **Author**).
+2. In the **Notebooks** page, under **My files**, use the **&#128459;** button to create a new file with the following settings:
+    - **File location**: Users/*your user name*
+    - **File name**: Test-Bikes
     - **File type**: Notebook
     - **Overwrite if already exists**: Selected
-    - **Select target directory**: *Select the folder with your user name under **User files***
-2. When the new notebook has been created, ensure that the compute instance you created previously is selected in the **Compute** box, and that it has a status of **Running**.
-3. Edit the notebook inline, and in the cell that has been created in the notebook, paste the following code:
+3. When the new notebook has been created, ensure that the compute instance you created previously is selected in the **Compute** box, and that it has a status of **Running**.
+4. Use the **&#8810;** button to collapse the file explorer pane and give you more room to focus on the **Test-Bikes.ipynb** notebook tab.
+5. In the rectangular cell that has been created in the notebook, paste the following code:
 
     ```Python
     endpoint = 'YOUR_ENDPOINT' #Replace with your endpoint
@@ -65,7 +66,7 @@ On the **Notebooks** page, create a new file with the following settings:
     > [!NOTE]
     > Don't worry too much about the details of the code. It just defines features for a five day period using hypothetical weather forecast data, and uses the **predict-rentals** service you created to predict cycle rentals for those five days.
 
-4. Switch to the browser tab containing the **Consume** page for the **predict-rentals** service, and copy the REST endpoint for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_ENDPOINT.
-5. Switch to the browser tab containing the **Consume** page for the **predict-rentals** service, and copy the Primary Key for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_KEY.
-6. Save the notebook, Then use the **&#9655;** button next to the cell to run the code.
-7. Verify that predicted number of rentals for each day in the five day period are returned.
+6. Switch to the browser tab containing the **Consume** page for the **predict-rentals** service, and copy the REST endpoint for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_ENDPOINT.
+7. Switch to the browser tab containing the **Consume** page for the **predict-rentals** service, and copy the Primary Key for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_KEY.
+8. Save the notebook, Then use the **&#9655;** button next to the cell to run the code.
+9. Verify that predicted number of rentals for each day in the five day period are returned.

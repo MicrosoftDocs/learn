@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.collect-data-from-windows-computer-hybrid-environment
+title: Collect data from a Windows computer in a hybrid environment
+metadata:
+  title: Collect data from a Windows computer in a hybrid environment
+  description: "Collect data from a Windows computer in a hybrid environment"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-collect-data-from-windows-computer-hybrid-environment.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "In the video demonstration, at time index 01:30, what does an administrator need to do on the **Agents management** page?"
+    choices:
+    - content: "The administrator must regenerate the Primary key."
+      isCorrect: false
+      explanation: "That's incorrect. There's no need to do this. The administrator must download the appropriate agent."
+    - content: "The administrator must download the appropriate agent for the VM."
+      isCorrect: true
+      explanation: "That's correct. Each monitored VM must have the appropriate agent installed."
+    - content: "The administrator must regenerate the Secondary key."
+      isCorrect: false
+      explanation: "That's incorrect. There's no need to do this. The administrator must download the appropriate agent."

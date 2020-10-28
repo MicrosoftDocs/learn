@@ -2,10 +2,10 @@
 uid: learn-wwl.azure-in-action
 metadata:
   title: See Azure in action
-  description: Through these demos, discover the benefits of migrating apps and workloads that truly demonstrate Azure in action.
-  ms.date: 5/23/2019
-  author: kimrit
-  ms.author: v-kimrit
+  description: "The demos in this module provide an opportunity to see Azure in action."
+  ms.date: 08/01/2020
+  author: wwlpublish
+  ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: See Azure in action
@@ -15,7 +15,7 @@ abstract: |
   - Watch a demo that shows an application server lift-and-shift migration that uses Azure Migrate
   - Watch a demo that shows how to modernize an application by using Azure Logic Apps
   - Recognize the value of Azure, as illustrated by these demos
-prerequisites: None
+prerequisites: ""
 iconUrl: /learn/achievements/azure-in-action.svg
 levels:
 - beginner
@@ -32,5 +32,5 @@ units:
 - learn-wwl.azure-in-action.3-demo--modernizing-.net-applications
 - learn-wwl.azure-in-action.4-knowledge-check
 - learn-wwl.azure-in-action.5-summary-and-resources
-badge: 
+badge:
   uid: learn-wwl.azure-in-action.badge

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.customize-windows-server-iaas-vm-images.create-generalized-image
+title: Create a generalized image
+metadata:
+  title: Create a generalized image
+  description: "Create a generalized image"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-create-generalized-image.md)]

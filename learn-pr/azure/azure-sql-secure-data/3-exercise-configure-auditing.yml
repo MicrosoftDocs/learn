@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-secure-data.3-exercise-configure-auditing
+metadata:
+  title: Exercise - Configure auditing
+  description: Exercise - Configure auditing
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Configure auditing
+durationInMinutes: 10
+interactive: powershell
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-configure-auditing.md)]

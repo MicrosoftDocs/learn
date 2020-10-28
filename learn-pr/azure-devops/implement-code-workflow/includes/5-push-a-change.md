@@ -242,7 +242,7 @@ In this section, you submit a pull request just as you did previously.
 
 1. In a browser, sign in to [GitHub](https://www.github.com?azure-portal=true).
 1. Go to your **mslearn-tailspin-spacegame-web** repository.
-1. In the drop-down list, select your `feature/home-page-text branch`.
+1. In the drop-down list, select your `feature/home-page-text` branch.
 1. To begin creating your pull request, select **New pull request**.
 1. Ensure that the **base** drop-down list specifies your repository and not the Microsoft repository.
 

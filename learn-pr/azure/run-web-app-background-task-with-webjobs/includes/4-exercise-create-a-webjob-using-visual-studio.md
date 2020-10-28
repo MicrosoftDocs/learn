@@ -23,7 +23,7 @@ az storage account create \
     --name $STORAGE_ACCOUNT_NAME \
     --resource-group mslearn-webjobs
 
-STORAGE_ACCOUNT_CONNSTR=$(az storage account show-connection-string --name $STORAGE_ACCOUNT_NAME --query connectionString -o tsv)
+STORAGE_ACCOUNT_CONNSTR=$(az storage account show-connection-string --name $STORAGE_ACCOUNT_NAME --query connectionString --output tsv)
 
 echo "Created storage account $STORAGE_ACCOUNT_NAME"
 ```
@@ -60,7 +60,7 @@ Our WebJob's code will also need the connection string for our storage account. 
 Run the following commands in the Cloud Shell window to configure the new web app.
 
 ```azurecli
-WEB_APP_ID=$(az webapp list --resource-group mslearn-webjobs --query [0].id --o tsv)
+WEB_APP_ID=$(az webapp list --resource-group mslearn-webjobs --query [0].id --output tsv)
 
 az webapp config set --id $WEB_APP_ID --always-on true
 

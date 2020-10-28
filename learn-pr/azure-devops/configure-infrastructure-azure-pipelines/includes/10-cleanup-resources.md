@@ -26,7 +26,7 @@ To clean up your resource groups:
 
 1. As an optional step, run the following `az group list` command after the previous command finishes.
 
-    ```bash
+    ```azurecli
     az group list --output table
     ```
 

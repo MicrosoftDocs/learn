@@ -13,11 +13,11 @@ durationInMinutes: 4 # dummy number at present
 content: |
 quiz:
   questions:
-  - content: "The ability to deploy a Cognitive service as an IoT Edge device in a container provides which advantage:"
+  - content: "The ability to deploy a cognitive service as an IoT Edge device in a container provides which advantage?"
     choices:
     - content: "Cognitive services can run faster"
       isCorrect: false
-      explanation: "Deploying as a container on an edge device doesn't necessarily imply faster proc"
+      explanation: "Deploying as a container on an edge device doesn't necessarily imply faster processing"
     - content: "Ability to run online"
       isCorrect: false
       explanation: "Deploying as a container on an edge device does not enable online processing"
@@ -26,25 +26,25 @@ quiz:
       explanation: "Deploying as a container on an edge device enables offline processing"
   - content: "For a cognitive service, where does the training take place?"
     choices:
-    - content: "on the Edge"
+    - content: "On the edge"
       isCorrect: false
-      explanation: "The model not trained on the Edge"
-    - content: "in the Cloud "
+      explanation: "The model is not trained on the edge"
+    - content: "In the cloud"
       isCorrect: true
-      explanation: "The model is trained in the Cloud  "
-    - content: "on premises"
+      explanation: "The model is trained in the cloud"
+    - content: "On premises"
       isCorrect: false
       explanation: "The model isn't trained on the premises"
-  - content: "What is the function of Azure Container Registry"
+  - content: "What is the function of Azure Container Registry?"
     choices:
     - content: "Storing and managing container images"
       isCorrect: true
-      explanation: "Azure Container Registry is used for  storing and managing container images"
+      explanation: "Azure Container Registry is used for storing and managing container images"
     - content: "Storing and managing images"
       isCorrect: false
-      explanation: "Azure Container Registry is not used for  storing and managing images"
+      explanation: "Azure Container Registry is not used for storing and managing images"
     - content: "Storing and managing services"
       isCorrect: false
-      explanation: "Azure Container Registry is not used for  storing and managing services"
+      explanation: "Azure Container Registry is not used for storing and managing services"
     
     

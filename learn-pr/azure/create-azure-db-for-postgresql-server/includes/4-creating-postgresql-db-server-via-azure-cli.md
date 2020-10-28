@@ -32,7 +32,7 @@ az postgres server create [-h] [--verbose] [--debug]
                             --resource-group RESOURCE_GROUP_NAME --name SERVER_NAME
                             --sku-name SKU_NAME [--location LOCATION]
                             --admin-user ADMINISTRATOR_LOGIN
-                            [--admin-password ADMINISTRATOR_LOGIN_PASSWORD]
+                            --admin-password ADMINISTRATOR_LOGIN_PASSWORD
                             [--backup-retention BACKUP_RETENTION]
                             [--geo-redundant-backup GEO_REDUNDANT_BACKUP]
                             [--ssl-enforcement {Enabled,Disabled}]
@@ -58,8 +58,6 @@ Examples:
 - `--sku-name B_Gen4_4` maps to Basic, Gen 4, and 4 vCores.
 - `--sku-name GP_Gen5_32` maps to General Purpose, Gen 5, and 32 vCores.
 - `--sku-name MO_Gen5_2` maps to Memory Optimized, Gen 5, and 2 vCores.
-
-Recall that we discussed the three pricing tiers in the unit where we created the server using the portal.
 
 Let's assume you want to use a Basic, Gen 5, and 1 vCore compute resource. You'll specify the parameter as `--sku-name B_Gen5_1`.
 

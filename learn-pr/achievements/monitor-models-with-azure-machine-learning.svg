@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>NA/monitor-models-with-azure-machine-learning</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M48.1132075,0.739331515 C74.2770768,0.739331515 95.4870836,21.9493383 95.4870836,48.1132075 C95.4870836,74.2770768 74.2770768,95.4870836 48.1132075,95.4870836 C21.9493383,95.4870836 0.739331515,74.2770768 0.739331515,48.1132075 C0.739331515,21.9493383 21.9493383,0.739331515 48.1132075,0.739331515 Z M48.1132075,4.71698113 C24.1461335,4.71698113 4.71698113,24.1461335 4.71698113,48.1132075 C4.71698113,72.0802816 24.1461335,91.509434 48.1132075,91.509434 C72.0802816,91.509434 91.509434,72.0802816 91.509434,48.1132075 C91.509434,24.1461335 72.0802816,4.71698113 48.1132075,4.71698113 Z" id="path-6"></path>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-8">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-9">
+            <stop stop-color="#CCCCCC" offset="15%"></stop>
+            <stop stop-color="#707070" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-150.0%" y="-133.3%" width="400.0%" height="366.7%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="0%" y1="50%" x2="100.2%" y2="50%" id="linearGradient-11">
+            <stop stop-color="#50C7E8" offset="0%"></stop>
+            <stop stop-color="#4CC3E4" offset="25%"></stop>
+            <stop stop-color="#41B6DA" offset="51%"></stop>
+            <stop stop-color="#2FA2C8" offset="77%"></stop>
+            <stop stop-color="#1989B2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-20" transform="translate(-159.000000, -889.000000)">
+            <g id="NA/monitor-models-with-azure-machine-learning" transform="translate(160.000000, 890.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Microsoft-365/BG-Solid-Badge" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(1.886792, 1.886792)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-7)" fill="#0076D7">
+                            <g transform="translate(-1.886792, -1.886792)" id="Microsoft-365/Border">
+                                <rect x="0" y="0" width="100" height="100"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Computer" transform="translate(22.000000, 27.000000)" fill-rule="nonzero">
+                    <rect id="Rectangle" fill="url(#linearGradient-8)" x="0.595744681" y="0" width="52" height="36" rx="0.6"></rect>
+                    <path d="M37.9256997,46.9762419 C32.5857219,46.1295896 32.3757227,42.2591793 32.3757227,36 L21.7857667,36 C21.7857667,42.2591793 21.6057675,46.1295896 16.2657897,46.9762419 C14.7389912,47.1465252 13.5864821,48.4517399 13.5957447,50 L40.5957447,50 C40.6050072,48.4517399 39.4524981,47.1465252 37.9256997,46.9762419 Z" id="Path" fill="url(#linearGradient-9)"></path>
+                </g>
+                <path d="M39.4140787,45.4957983 L44.7142857,58 L50.0807453,41.9327731 L54.5196687,51.0756303 L60.0186335,41.6638655 L74.5928931,41.6638655 C74.6119813,40.2865315 74.581172,39.8490998 74.6419536,38.5042017 L58.5610766,38.5042017 L54.9834369,44.6218487 L49.484472,34 L44.3830228,49.2605042 L39.7453416,38.4369748 L34.047619,48.9915966 L22.5875383,48.9915966 C22.8181773,50.074719 22.6034307,49.0269966 22.5815171,52.1512605 L35.8364389,52.1512605 L39.4140787,45.4957983 Z" id="Path" fill="#76BC2D" fill-rule="nonzero"></path>
+                <polyline id="Path-142" fill="#198AB3" transform="translate(74.776279, 70.449673) rotate(-30.000000) translate(-74.776279, -70.449673) " points="72.7762794 64.9496732 72.7762794 75.9496732 76.7762794 75.9496732 76.7762794 64.9496732"></polyline>
+                <g id="Group-13" transform="translate(67.026279, 57.026279) rotate(-30.000000) translate(-67.026279, -57.026279) translate(56.026279, 46.026279)" fill-rule="nonzero">
+                    <circle id="Oval" fill="#50E6FF" cx="11" cy="11" r="11"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="11" cy="11" r="8"></circle>
+                </g>
+                <g id="Icon-machinelearning-166-Machine-Learning-Service-Workspaces" filter="url(#filter-10)" transform="translate(63.000000, 52.000000)" fill-rule="nonzero">
+                    <polygon id="bc892891-989d-4c43-80d3-d2b4546a974f" fill="#198AB3" points="7.44303797 9 0.556962025 9 0 7 8 7"></polygon>
+                    <polygon id="Path" fill="url(#linearGradient-11)" points="2.9 0 2.9 3.38823529 0 6.82941176 0.55 9 5 3.38823529 5 0"></polygon>
+                    <polygon id="e6be01d6-345d-4df4-bbdb-151aa8edaa1f" fill="#32BEDD" points="7.39726027 9 4 5.59574468 5.42465753 4 8 6.81914894"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

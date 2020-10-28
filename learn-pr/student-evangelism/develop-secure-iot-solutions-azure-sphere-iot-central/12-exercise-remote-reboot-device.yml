@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-remote-reboot-device
+title: Exercise - Remotely reboot Azure Sphere with Azure IoT direct methods
+metadata:
+  title: Exercise - Remotely reboot Azure Sphere with Azure IoT direct methods
+  description: In this section, we guide the learner in how to control Azure Sphere with Azure IoT direct methods.
+  ms.date: 06/29/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 10 # dummy number at present
+content: |
+  [!include[](includes/12-exercise-remote-reboot-device-direct-methods.md)]

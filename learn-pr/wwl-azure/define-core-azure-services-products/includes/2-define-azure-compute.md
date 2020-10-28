@@ -4,6 +4,6 @@
 
 The resources are available on-demand and can typically be made available in minutes or even seconds. You pay only for the resources you use and only for as long as you're using them.
 
-There are many compute services two of the most common are: virtual machines and containers.
+There are many compute services, two of the most common are: virtual machines and containers.
 
 :::image type="content" source="../media/compute-services.png" alt-text="Screenshot of the portal compute services page including virtual machines and containers.":::

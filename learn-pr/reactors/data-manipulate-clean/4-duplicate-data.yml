@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.data-manipulate-clean.4-duplicate-data
+title: Remove duplicate data
+metadata:
+  title: Remove duplicate data
+  description: Remove duplicate data in a pandas `DataFrame`.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-duplicate-data.md)]

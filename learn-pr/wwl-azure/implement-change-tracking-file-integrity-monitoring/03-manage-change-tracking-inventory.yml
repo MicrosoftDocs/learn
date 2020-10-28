@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms.manage-inventory
+title: Manage Change Tracking and Inventory
+metadata:
+  title: Manage Change Tracking and Inventory
+  description: "Manage Change Tracking and Inventory"
+  ms.date: 08/14/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/03-manage-change-tracking-inventory.md)]

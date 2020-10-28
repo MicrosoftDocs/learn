@@ -1,4 +1,4 @@
-Data analysis is concerned with examining, transforming, and arranging data so that you can study it and extract useful information. Data analytics is a discipline that covers the entire range of data management tasks. These tasks not only include analysis, but also data collection, organization, storage, and all the tools and techniques used.
+Data analytics is concerned with examining, transforming, and arranging data so that you can study it and extract useful information. Data analytics is a discipline that covers the entire range of data management tasks. These tasks not only include analysis, but also data collection, organization, storage, and all the tools and techniques used.
 
 The term *data analytics* is a catch-all that covers a range of activities, each with its own focus and goals. You can categorize these activities as *descriptive*, *diagnostic*, *predictive*, *prescriptive*, and *cognitive* analytics.
 

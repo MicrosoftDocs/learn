@@ -5,8 +5,8 @@ metadata:
   title: What is SQL Server on Linux?
   description: In this unit, you will learn why SQL Server has been released for running on Linux and why you might choose this platform.
   ms.date: 06/11/2019
-  author: alistairmatthews
-  ms.author: v-alism
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 durationInMinutes: 5

@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Larissa is responsible for implementing server workload backups at Contoso. She wants to implement on-premises backups to an Azure Recovery Vault service. What does Larissa need to do on the Windows Servers she wants to back up?"
+    choices:
+    - content: "Larissa must download and install the MARS agent, and then register the server by installing the vault credentials."
+      isCorrect: true
+      explanation: "That's correct. Larissa can download all the required components direct from the Azure portal."
+    - content: "Larissa must download and install the MARS agent."
+      isCorrect: false
+      explanation: "That's incorrect. Larissa must also download the vault credentials and register the server with the MARS agent."
+    - content: "Larissa doesn't need to do anything. Windows Servers contain the required agent for inclusion in the Recovery Vault service."
+      isCorrect: false
+      explanation: "That's incorrect. Larissa must download and install the MARS agent, and then register the server by installing the vault credentials."
+  - content: "After creating Contoso's Recovery Vault service, Larissa discovers that she wants to change the storage replication type to locally redundant. In which situations can Larissa change the storage replication type?"
+    choices:
+    - content: "Larissa can change this setting at any time."
+      isCorrect: false
+      explanation: "That's incorrect. Larissa can only change this setting before a Recovery Vault service starts providing protection for items."
+    - content: "Larissa can change this setting, but only before a Recovery Vault service starts providing protection for items."
+      isCorrect: true
+      explanation: "That's correct. Larissa can change this setting, but only before a Recovery Vault service starts providing protection for items."
+    - content: "Larissa cannot change this setting at any time."
+      isCorrect: false
+      explanation: "That's incorrect. Larissa can change this setting, but only before a Recovery Vault service starts providing protection for items."
+  - content: "Larissa has been archiving and tidying unneeded backup data. She has just removed some backup data from Azure Backup. She's just been informed that this removed data is required to restore some damaged files. What are Larissa's options?"
+    choices:
+    - content: "Larissa can do nothing about it. The backup data is unrecoverable."
+      isCorrect: false
+      explanation: "That's incorrect. Deleted backup data is retained for an additional 14 days from the date of the deletion."
+    - content: "Larissa can recover the removed backup data for up to 14 days after deletion."
+      isCorrect: true
+      explanation: "That's correct. It's recoverable for only 14 days after deletion"
+    - content: "Larissa can recover the removed backup data for up to 21 days after deletion."
+      isCorrect: false
+      explanation: "That's incorrect. It's recoverable for only 14 days after deletion."

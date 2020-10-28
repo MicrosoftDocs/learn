@@ -32,7 +32,7 @@ You are notified by email when you hit the spending limit for your subscription.
 
 If you have virtual machine workloads that are static and predictable, using reserved instances is a fantastic way to potentially save up to 70 to 80 percent off the pay-as-you-go cost. The savings can be significant, depending on the VM size and duration the machine runs. The following illustration shows that using Azure reserved instances saves you up to 72 percent and using reserved instance plus Azure Hybrid Benefit saves up to 80 percent in costs.
 
-![An illustration showing cost benefits of using Azure reserved instances and Azure Hybrid Benefits compared to pay-as-you-go.](../media/4-savings-coins.png)
+![Illustration showing cost benefits of using Azure reserved instances and Azure Hybrid Benefits compared to pay-as-you-go, dropping from 100 percent paid for pay-as-you-go to 72 percent savings with reserve instances and 80 percent savings with RIs and Azure Hybrid Benefit.](../media/4-savings-coins.png)
 
 You commit to reserved instances in one-year or three-year terms. Payment can be made in full for the entire commitment period, or the commitment can be billed monthly. After it's reserved, Microsoft matches up the reservation to running instances and decrements the hours from your reservation. Reservations can be purchased through the Azure portal. And because reserved instances are a compute discount, they are available for both Windows and Linux VMs.
 

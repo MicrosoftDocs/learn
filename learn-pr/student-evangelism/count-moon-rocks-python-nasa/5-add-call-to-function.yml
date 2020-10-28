@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.count-moon-rocks-python-nasa.5-add-call-to-function
+metadata:
+  title: Exercise - Count the number of Moon rocks by calling a Python function
+  description: Call the newly created function for the project to explore data about Moon rocks.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Count the number of Moon rocks by calling a Python function
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-add-call-to-function.md)]

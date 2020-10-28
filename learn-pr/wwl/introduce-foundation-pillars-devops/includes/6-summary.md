@@ -18,8 +18,6 @@ Then we identified eight functions, or capabilities:
 - Continuous Collaboration
 - Continuous Improvement
 
-The first two pillars in our view of DevOps are **Culture** and **Lean Product**.
-
 Gartner research shows that through 2023, 90% of DevOps initiatives will fail because of the limitations of management approaches used by leadership. The primary responsibility of leadership is the creation of an environment that enables a DevOps Culture.
 
-Lean Product Management refers to a way of discovering products that embraces user-centrism. It acknowledges that product teams are on a continuous journey of solving well-understood end-user problems in as lean a manner as possible. It separates the concerns of **why** a product matters, **what** the product is, and **how** it's built.
+Lean Product Management shows the product-development process is not an occasional endeavor. It’s a continuous process of improvement of the product through the delivery of new features.

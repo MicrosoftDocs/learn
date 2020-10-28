@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-configuration-of-windows-server-iaas-vms.remediate-noncompliant-servers
+title: Remediate noncompliant servers
+metadata:
+  title: Remediate noncompliant servers
+  description: "Remediate noncompliant servers"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-remediate-noncompliant-servers.md)]

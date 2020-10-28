@@ -1,4 +1,4 @@
-﻿## Introduction
+## Introduction
 
 Welcome to the demonstration of migrating Windows Server and SQL Server to Azure. Azure offers solutions that help organizations assess on-premises apps, allowing you to discover servers, visualize dependencies, and confidently plan and implement server and service migration to Azure.
 

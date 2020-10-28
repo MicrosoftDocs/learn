@@ -10,7 +10,7 @@ This is exactly what we can do in Azure. We can create compute resources, config
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you will: 
 
 - Identify compute options in Azure.
 - Select compute options that are appropriate for your business.
@@ -20,3 +20,4 @@ In this module, you will:
 - Survey the data storage options in Azure.
 - Discover how Azure data storage can meet your business demands.
 - Compare Azure data storage with on-premises storage.
+

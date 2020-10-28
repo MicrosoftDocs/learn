@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.explore-performance-based-design
+metadata:
+  title: Explore performance-based design
+  description: "Evaluate possible changes to indexes. Determine the impact of changes to queries and indexes. Explore relevant Dynamic Management Objects."
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: kadelaney
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore performance-based design
+summary: Explore normalization for relational databases.  Investigate the impact of proper datatype usage. Compare types of indexes. Determine where data compression can be useful.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore normal forms and how they affect database design
+  - Choose appropriate datatypes for your data
+  - Evaluate appropriate index types
+  - Investigate the value of data compression
+prerequisites: |
+  - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based.
+  - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
+  - Basic understanding of structure and usage of SQL Server indexes.
+  - Basic understanding of relational database concepts.
+iconUrl: /learn/achievements/explore-performance-based-design.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- database-administrator
+- developer
+products:
+- azure-sql-database
+- sql-server
+units:
+- learn.wwl.explore-performance-based-design.introduction
+- learn.wwl.explore-performance-based-design.describe-normalization
+- learn.wwl.explore-performance-based-design.choose-appropriate-data-types
+- learn.wwl.explore-performance-based-design.design-indexes
+- learn.wwl.explore-performance-based-design.describe-data-compression
+- learn.wwl.explore-performance-based-design.knowledge-check
+- learn.wwl.explore-performance-based-design.summary
+badge:
+  uid: learn.wwl.explore-performance-based-design.badge
