@@ -29,7 +29,7 @@ If you subscribe to services like Azure or Microsoft 365, you're already taking 
 
 If you're an administrator, you need to know how secure your Azure AD tenant is. The identity secure score can help you understand. Azure AD gives an overall value between 1 and 223. This value represents how well you match the recommendations and best practices that Microsoft suggests for tenant security. The identity secure score reveals how effective your security is and helps you implement improvements.
 
-You can find your tenant's identity secure score in the Azure portal. Go to your Azure AD tenant and then open the identity secure score dashboard.
+You can find your tenant's identity secure score in the Azure portal. Go to your Azure AD tenant, select **Security**, and then select the **Identity Secure Score** dashboard.
 
 ![Secure identity score](../media/2-secure-identity-score.png)
 
