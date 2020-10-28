@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.exercise
+title: Exercise - Plan and implement a high availability and disaster recovery environment
+metadata:
+  title: Exercise - Plan and implement a high availability and disaster recovery environment
+  description: "Exercise - Plan and implement a high availability and disaster recovery environment"
+  ms.date: 10/28/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-plan-implement-hadr.md)]
