@@ -17,23 +17,23 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. On the Azure portal menu, select **All services**.
+1. On the Azure portal menu, select **More Services**.
 
-1. In the **All services** pane, scroll down to the **INTEGRATION** section, and then click **Service Bus**.
+1. In the **All services** search, type **Service Bus (Message Service)**, and then click **Service Bus**.
 
     :::image type="content" source="../media/3-create-namespace-1.png" alt-text="Screenshot showing the Integration section of the All services pane with Service Bus highlighted":::
 
 1. In the top left of the **Service Bus** pane, click **Add**.
 
-1. In the **Name** text box, type a unique name for the namespace. For example: "salesteamapp" + *your initials* + *current date*.
-
-1. In the **Pricing tier** drop-down list, select **Standard**.
-
 1. In the **Subscription** drop-down list, select your subscription ("Concierge subscription").
 
 1. Under **Resource group**, select **Use existing** and choose "<rgn>[sandbox resource group name]</rgn>".
 
+1. In the **Name** text box, type a unique name for the namespace. For example: "salesteamapp" + *your initials* + *current date*.
+
 1. In the **Location** drop-down list, select a location near you from the below list.
+
+1. In the **Pricing tier** drop-down list, select **Standard**.
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -49,9 +49,7 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
 
 Now that you have a namespace, you can create a queue for messages about individual sales. To do this, follow these steps:
 
-1. In the **Service Bus** pane, click **Refresh**. The namespace you just created is displayed.
-
-1. Click the namespace you just created.
+1. Under the **Deployment** pane, click **Go to resources**. The namespace you just created is displayed.
 
 1. In the top left of the namespace pane, click **+ Queue**.
 
@@ -71,7 +69,7 @@ Follow these steps:
 
     :::image type="content" source="../media/3-create-topic.png" alt-text="Screenshot of the Create topic pane with the Create button highlighted":::
 
-1. When the topic has been created, in the **Service Bus Namespace** pane, under **Entities**, click **Topics**.
+1. When the topic has been created, at the bottom of the page **Queues  Topics** is displayed, click **Topics**.
 
 1. In the list of topics, click **salesperformancemessages**, and then click **+ Subscription**.
 
