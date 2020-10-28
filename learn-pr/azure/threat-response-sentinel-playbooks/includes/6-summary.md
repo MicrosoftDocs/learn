@@ -3,7 +3,6 @@
 Contoso SecOps can now react more quickly to security incidents by using Azure Sentinel SOAR capabilities.
 Sentinel playbooks are based on Logic Apps with an Azure Sentinel connector and provide near real-time responses.
 In this module, you learned how to create Sentinel playbooks that can respond near real time on a security thread.
-
 You also learned how to start a playbook on demand as response to investigation on a security alert.
 
 ## Learn more
