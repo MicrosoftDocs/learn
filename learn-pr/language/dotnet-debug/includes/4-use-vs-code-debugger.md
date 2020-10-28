@@ -16,7 +16,7 @@ To set up Visual Studio Code for .NET debugging, we'll first need a .NET project
     dotnet new console
     ```
 
-    This command creates a **Program.cs** file in your folder with a basic "Hello World" program already written, along with a C# project file named **DotnetDebugging.csproj**.
+    This command creates a **Program.cs** file in your folder with a basic "Hello World" program already written, along with a C# project file named **DotNetDebugging.csproj**.
 
 1. In the terminal window, copy and paste the following command to run the "Hello World" program.
 
@@ -24,7 +24,7 @@ To set up Visual Studio Code for .NET debugging, we'll first need a .NET project
     dotnet run
     ```
 
-    The terminal window displays "Hello world!" as output.
+    The terminal window displays "Hello World!" as output.
 
     :::image source="../media/new-dotnet-project.png" alt-text="Screenshot of Visual Studio Code with a new console application.":::
 
@@ -118,7 +118,7 @@ The Fibonacci sequence is a suite of numbers that starts with the number 0 and 1
 Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.0\System.Threading.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
 Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.0\System.Text.Encoding.Extensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
 3
-The program '[36536] DotnetDebugging.dll' has exited with code 0 (0x0).
+The program '[36536] DotNetDebugging.dll' has exited with code 0 (0x0).
 ```
 
 The lines at the top tell you that the default debugging settings enable the "Just My Code" option. This means that the debugger will only debug your code, and will not step into the source code for .NET unless you disable this mode. This allows you to focus on debugging your code.
@@ -305,7 +305,7 @@ Hey! It looks like we got it! Great job, you've saved the day for *Fibonacci, In
 
 ```text
 5
-The program '[105260] DotnetDebugging.dll' has exited with code 0 (0x0).
+The program '[105260] DotNetDebugging.dll' has exited with code 0 (0x0).
 ```
 
 And that returns the correct output. You did it! You've debugged some code you didn't write, using the .NET debugger in Visual Studio Code.
