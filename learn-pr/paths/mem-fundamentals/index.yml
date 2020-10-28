@@ -28,7 +28,9 @@ summary: |
   - Understand how trusted users can access organizational resources on trusted devices using trusted apps.
   - Learn how to analyze and resolve endpoint compliance issues.
   - Understand the benefits of using Microsoft Endpoint Manager.
-prerequisites: None
+prerequisites: |
+- Familiarity with basic device concepts
+- Familiarity with security and cloud concepts
 iconUrl: /learn/achievements/mem-fundamentals.svg
 levels:
 - beginner
