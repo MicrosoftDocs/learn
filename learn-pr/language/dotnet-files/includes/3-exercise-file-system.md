@@ -13,7 +13,7 @@ In this exercise, you'll write a .NET program that can search for files called *
 1. Run the following command to clone the example project for this module:
 
     ```bash
-    git clone https://github.com/codemillmatt/dotnet-files && cd dotnet-files
+    git clone https://github.com/MicrosoftDocs/mslearn-dotnet-files && cd mslearn-dotnet-files
     ```
 
 1. Create a new .NET Console project by typing the following commands in Cloud Shell.
