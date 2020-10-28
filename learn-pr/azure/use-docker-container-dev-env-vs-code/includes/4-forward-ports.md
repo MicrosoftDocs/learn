@@ -1,4 +1,4 @@
-Now that you've gotten a web app running on your machine using a dev container, let's understand how you were able to access that app through port forwarding.
+Now that you've got a web app running on your machine using a dev container, let's understand how you can access that app through port forwarding.
 
 ## What is port forwarding?
 

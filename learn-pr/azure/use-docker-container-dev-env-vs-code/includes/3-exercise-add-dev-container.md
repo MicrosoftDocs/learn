@@ -14,7 +14,7 @@ When setting up the dev container for a project, you'll need to add a container 
 1.  Paste in the URL to the sample repo
 1.  Select a location on your disk where the project can be cloned to
 
-The project should now be open in VS Code. Next, you'll add a dev container to this project that will allow it to run on your machine, even if you don't have Python installed or configured at all.
+The project should now be open in VS Code. Next, you'll add a dev container to this project. You'll be able to run the project, even if you don't have Python installed.
 
 ## Add a Dev Container
 
@@ -23,16 +23,14 @@ The project should now be open in VS Code. Next, you'll add a dev container to t
 1. Select "Remote-Containers: Add Development Container Configuration Files"
 1. Select the following options...
 
-| Option         | Vaue        |
+| Option         | Value       |
 | -------------- | ----------- |
 | Python version | 3 (default) |
 | Install Nodejs | Uncheck     |
 
-This will add a Remote Container configuration to your project. It will also notify you to open the project in a container.
+A Remote Container configuration will be added to your project. VS Code will notify you that you can now open the project in a container. For now, dismiss this notification.
 
 :::image type="content" source="../media/open-in-container-notification.jpg" alt-text="VS Code notification asking to reopen the project in a container":::
-
-For now, dismiss this notification.
 
 ## Inspect configuration files
 
@@ -45,10 +43,10 @@ For now, dismiss this notification.
 1. Type "reopen in container"
 1. Select "Reopen in Container" from the list of available options
 
-The container will begin building. This may take a few minutes as a new image has to be pulled down and built on your machine. Once the container has been built the first time, subsequent builds will be much faster.
+The container will begin building. The initial build may take a few minutes as a new image has to be pulled down and built on your machine. Once the container has been built the first time, subsequent builds will be much faster.
 
 > [!IMPORTANT]
-> If you are on Windows, you may see a Windows Notification from Docker Desktop warning you that performance may be affected. You can safely ignore this warning for this tutorial. TODO - Need more info on how to explain this to people and what to recommend.
+> If you are on Windows, you may see a Windows Notification from Docker Desktop warning you that performance may be affected. You can safely ignore this warning for this tutorial.
 
 ## Inspect the container
 

@@ -1,12 +1,12 @@
-So far, you've set up a dev container for one of your agency's projects so that it will run on anyone's machine without any setup on their end. Almost. They still have to install dependences, be aware of the port forwarding, and if they want to do some real Python development, they might need some VS Code extensions that they don't know about. Fortunately, you can solve all this by customizing the project settings in a dev container. This is done with the `devcontainer.json` file.
+You've set up a dev container for one of your agency's projects. It will now "just work" for anyone who has Docker and the Remote-Containers extension. Almost. They'll still have to install dependences, be aware of the port forwarding, and they might need some VS Code extensions that they don't know about. Fortunately, you can fully customize and automate all the project setup with the `devcontainer.json` file.
 
 ## A closer look at devcontainer.json
 
-Let's look at the main options in the `devcontainer.json` file from the Products Dashboard project. It's a bit long to look at all at once, so let's look at in sections.
+Let's look at the main options in the ".devcontainer/devcontainer.json" file from the Products Dashboard project. It's a bit long to look at all at once, so let's look at in sections.
 
 ### Build Configuration
 
-This section specifies machine specific settings that will be copied into the container and which file to use as the Dockerfile. You'll recognize the `Dockerfile` as being the other file in the ".devcontainer" folder. The context and args are options that get passed through to the Docker container when it gets built.
+The "build" section specifies machine-specific settings that will be copied into the container and which file to use as the Dockerfile. You'll recognize the `Dockerfile` as being the other file in the ".devcontainer" folder. The context and args are options that get passed through to the Docker container when it gets built.
 
     "build": {
         "dockerfile": "Dockerfile",
@@ -26,7 +26,7 @@ This section specifies machine specific settings that will be copied into the co
 
 ### Settings
 
-The "settings" option copies machine specific settings into the container. This section has been truncated here for brevity.
+The "settings" option copies machine-specific settings into the container.
 
     "settings": {
     	"terminal.integrated.shell.linux": "/bin/bash",
@@ -35,7 +35,7 @@ The "settings" option copies machine specific settings into the container. This 
     	...
     },
 
-These are settings that you might have in your own VS Code setup. In the case of this Python container, some of these settings are setting the terminal shell, and some are setting Python options which will be turned on to give the user an opinionated Python editing experience.
+These are settings that you might have in your own VS Code setup. In this Python container, some of these settings are setting the terminal shell. Some are setting Python editing options in VS Code. These options will give the user an opinionated Python editing experience.
 
 ### Project settings
 
@@ -61,6 +61,6 @@ The last section of the file deals directly with project configuration.
 
 - The "postCreateCommand" lets you run any commands that you want after the container is created. If you remember from the first exercise, you had to run the "pip3" command to install dependencies. But how would you know to do that? You might not. So you can configure it here so that it will happen automatically and others won't have to worry about it.
 
-- The last option, "remoteUser," lets you specify a different Linux user to run as. By default, the container runs as root. This is fine for more scenarios, but should you have a case where you wanted to run as different user, the built-in "vscode" user is provided, which does not have root access.
+- The last option, "remoteUser," lets you specify a different Linux user to run as. By default, the container runs as root. Running as root is fine for more scenarios, but should you have a case where you wanted to run as different user, the built-in "vscode" user is provided, which does not have root access.
 
 In the next exercise, you'll modify the `devcontainer.json` file to automate several aspects of the project that will set other developers up for immediate success.
