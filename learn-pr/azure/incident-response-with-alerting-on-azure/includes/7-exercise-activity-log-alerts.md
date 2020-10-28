@@ -16,17 +16,17 @@ Your goal is to set up the Linux VM and create an activity log monitoring rule t
 
 1. You want alerts when any virtual machine in your resource group is deleted. Select the **<rgn>[sandbox resource group name]</rgn>** resource group, and then select **Done** at the bottom of the page.
 
-   <-- ![Image that shows the page for selecting a resource](../media/7-alert-select-resource.png) -->
+   <!-- ![Image that shows the page for selecting a resource](../media/7-alert-select-resource.png) -->
 
 1. In the **Condition** section, select **Select condition**.
 
 1. In the **Configure signal logic** panel, enter **Delete** in the **Search by signal name** box. Select **Delete Virtual Machine (Microsoft.Compute/virtualMachines)**.
 
-    <-- ![Image that shows the page for creating a rule](../media/7-conf-signal-logic.png) -->
+    <!-- ![Image that shows the page for creating a rule](../media/7-conf-signal-logic.png) -->
 
 1. You want to receive alerts of all types. Leave **Alert logic** settings at their default of **All**, and then select **Done**.
 
-    ![Image that shows the settings for metric condition logic](../media/7-activity-log-logic.png)
+    <!-- ![Image that shows the settings for metric condition logic](../media/7-activity-log-logic.png) -->
 
 ## Add an email alert action
 
@@ -55,7 +55,7 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
     - Description: **A VM in your resource group was deleted**
     - Enabled rule upon creation: **Selected**
 
-    ![Screenshot that shows a completed alert details section](../media/7-all-vm-alert-details.png)
+   <!-- ![Screenshot that shows a completed alert details section](../media/7-all-vm-alert-details.png) -->
 
 1. Now that you've defined the rule, select **Create alert rule**.
 
