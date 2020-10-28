@@ -35,8 +35,5 @@ quiz:
       isCorrect: false
       explanation: "Explanation 2"
     - content: "Collections of procedures based on Azure Logic Apps that run in response to an alert."
-      isCorrect: false
+      isCorrect: true
       explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
