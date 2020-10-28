@@ -61,7 +61,7 @@ The Feature Management library and Azure App Configuration build seamlessly on A
 
 ### Integration
 
-To illustrate this integration, see the *Program.cs* file's `CreateHostBuilder` method:
+To illustrate this integration, see the following excerpt from the *Program.cs* file's `CreateHostBuilder` method:
 
 :::code language="csharp" source="../code/src/web/webspa/program.cs" id="snippet_CreateHostBuilder":::
 

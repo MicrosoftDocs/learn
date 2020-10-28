@@ -22,11 +22,13 @@ public class Program
                             .ConfigureRefresh(refresh =>
                             {
                                 refresh.Register("AppConfig:Sentinel", refreshAll: true)
-                                    .SetCacheExpiration(new TimeSpan(0, 0, 10));
+                                       .SetCacheExpiration(new TimeSpan(0, 0, 10));
                             });
                     });
                 }
             })
+            // code omitted for brevity
+    #endregion snippet_CreateHostBuilder
             .ConfigureLogging((hostingContext, logBuilder) =>
             {
                 logBuilder.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
@@ -43,5 +45,4 @@ public class Program
                     .ReadFrom.Configuration(builderContext.Configuration)
                     .WriteTo.Console();
             });
-    #endregion snippet_CreateHostBuilder
 }
