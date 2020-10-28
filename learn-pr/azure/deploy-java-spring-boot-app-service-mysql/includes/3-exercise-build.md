@@ -13,10 +13,12 @@ AZ_LOCAL_IP_ADDRESS=<YOUR_LOCAL_IP_ADDRESS>
 
 Replace the placeholders with the following values, which are used throughout this article:
 
-- `<YOUR_DATABASE_NAME>`: The name of your MySQL server. It should be unique across Azure.
-- `<YOUR_AZURE_REGION>`: The Azure region you'll use. You can use `eastus` by default, but we recommend that you configure a region closer to where you live. You can have the full list of available regions by entering `az account list-locations`.
-- `<YOUR_MYSQL_PASSWORD>`: The password of your MySQL database server. That password should have a minimum of eight characters. The characters should be from three of the following categories: English uppercase letters, English lowercase letters, numbers (0-9), and non-alphanumeric characters (!, $, #, %, and so on).
-- `<YOUR_LOCAL_IP_ADDRESS>`: The IP address of your local computer, from which you'll run your Spring Boot application. One convenient way to find it is to point your browser to [whatismyip.akamai.com](http://whatismyip.akamai.com/).
+| Variable | Description |
+|-|-|
+| <YOUR_DATABASE_NAME> | The name of your MySQL server. It should be unique across Azure. |
+| <YOUR_AZURE_REGION> | The Azure region you'll use. You can use `eastus` by default, but we recommend that you configure a region closer to where you live. You can have the full list of available regions by entering `az account list-locations` |
+| <YOUR_MYSQL_PASSWORD> | The password of your MySQL database server. That password should have a minimum of eight characters. The characters should be from three of the following categories: English uppercase letters, English lowercase letters, numbers (0-9), and non-alphanumeric characters (!, $, #, %, and so on). |
+| <YOUR_LOCAL_IP_ADDRESS> | The IP address of your local computer, from which you'll run your Spring Boot application. One convenient way to find it is to point your browser to [whatismyip.akamai.com](http://whatismyip.akamai.com/?azure-portal=true). |
 
 Next, create a resource group:
 
@@ -36,7 +38,7 @@ az group create \
 The first thing we'll create is a managed MySQL server.
 
 > [!NOTE]
-> You can read more detailed information about creating MySQL servers in [Create an Azure Database for MySQL server by using the Azure portal](/azure/mysql/quickstart-create-mysql-server-database-using-azure-portal).
+> If you want to know more about az mysql server create and other Azure CLI commands, you can find a link to documentation at the end of this tutorial".
 
 In [Azure Cloud Shell](https://shell.azure.com/), run the following script:
 
