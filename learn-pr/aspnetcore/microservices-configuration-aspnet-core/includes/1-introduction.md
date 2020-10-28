@@ -6,7 +6,7 @@ For this sprint, you'll focus on enabling feature toggling in your app. Later on
 
 For this module, you'll begin with a *simplified* and *revamped* version of [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers), the companion reference application for the guide: [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices/). This new version includes a discount coupon feature, that you can use at checkout time in the shopping basket.
 
-The initial app also contains the implementation of some "infrastructure" components to implement feature toggles, to make it easier to complete the exercise.
+The initial app also contains the implementation of some "infrastructure" components to implement feature flags, to make it easier to complete the exercise.
 
 In this module, you will:
 

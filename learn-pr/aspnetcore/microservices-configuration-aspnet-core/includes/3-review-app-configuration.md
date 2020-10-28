@@ -9,15 +9,17 @@ Managing configuration settings in a microservices context can easily become a s
 
 ASP.NET Core supplies a "[configuration provider](/aspnet/core/fundamentals/configuration/#configuration-providers)" abstraction that handles configurations as key-value pair collections. An app can register a chain of configuration providers, and any provider can override a value set by a prior provider in the chain.
 
-Config key names can describe a hierarchy. For example, the key `FeatureManagement:Coupons` means the `Coupons` configuration in the `FeatureManagement` section. This structure can also map configuration values to an object tree or an [array](/aspnet/core/fundamentals/configuration/#bind-an-array). Some platforms don't support a colon for environment variable names. In those cases,a double underscore (`__`) is used instead of a colon (`:`).
+Config key names can describe a hierarchy. For example, the key `FeatureManagement:Coupons` means the `Coupons` configuration in the `FeatureManagement` section. This structure can also map configuration values to an object tree or an [array](/aspnet/core/fundamentals/configuration/#bind-an-array). Some platforms don't support a colon for environment variable names. In those cases, a double underscore (`__`) is used instead of a colon (`:`).
 
 <!-- TODO: add this somewhere? [keys and values](/aspnet/core/fundamentals/configuration/#configuration-keys-and-values) -->
- 
+
 ASP.NET Core uses a [ConfigurationBinder](/dotnet/api/microsoft.extensions.configuration.configurationbinder) to map configuration values to objects and arrays, based on the property names in a case-insensitive fashion. This is the base that supports the implementation of the [Options pattern](/aspnet/core/fundamentals/configuration/options) that can help simplify using the configuration values in your app.
 
 ## Kubernetes configuration
 
 The classical Kubernetes abstraction to handle configuration is the [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap). A ConfigMap is also (usually) a key-value pair collection and a typical one looks like this:
+
+<!-- TODO: consider using Key Vault to store the AppConfig__Endpoint connection string -->
 
 ```yaml
 apiVersion: v1
@@ -40,7 +42,7 @@ The ConfigMap's key-value pairs are typically presented to the containerized app
 
 ## Azure App Configuration
 
-Azure App Configuration provides a service to manage app settings and feature flags from a centralized store. App Configuration is also a good complement to [Azure Key Vault](/azure/key-vault/general/overview), that's specifically built to handle app secrets like connection strings, tokens, passwords, and digital certificates.
+Azure App Configuration provides a service to manage app settings and feature flags from a centralized store. App Configuration is also a good complement to [Azure Key Vault](/azure/key-vault/general/overview), which is designed to handle app secrets like connection strings, tokens, passwords, and digital certificates.
 
 ASP.NET Core apps make use of Azure App Configuration as just another configuration provider, albeit one with quite some [useful features](/azure/azure-app-configuration/overview#why-use-app-configuration).
 

@@ -94,7 +94,7 @@ So let's begin with the details.
 
     By default, the feature manager retrieves feature flags from the `FeatureManagement` section of the configuration data. We'll also add another parameter named `UseFeatureManagement`.
 
-    The `UseFeatureManagement` property will be our main feature toggle. It isn't something imposed by the Feature Management library. The values above will become the default ones for the SPA.
+    The `UseFeatureManagement` property will be our main feature flag. It isn't something imposed by the Feature Management library. The values above will become the default ones for the SPA.
 
 1. In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, uncomment the following lines. Save your changes.
 
@@ -340,9 +340,9 @@ You must redeploy the SPA before you can confirm that it works as intended.
     webspa-777655c48d-r9469           0/1     ContainerCreating   0          1s
     ```
 
-## Test the feature toggle
+## Test the feature flag
 
-To verify the feature toggle works as expected, start a purchase as follows:
+To verify the feature flag works as expected, start a purchase as follows:
 
 1. In the app, refresh the page. The WebSPA reloads.
 1. Select the shopping bag icon in the upper right.
