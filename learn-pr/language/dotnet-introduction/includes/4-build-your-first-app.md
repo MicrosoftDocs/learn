@@ -23,7 +23,7 @@ Console.WriteLine("Hello world!");
 
 ### Step 2 - Run the code
 
-Press the blue **Run** beneath the .NET Editor. Assuming you typed (or copied and pasted) the C# code correctly, this time the words `Hello World!` are displayed in the bottom pane.
+Press the green **Run** on the right of the .NET Editor. Assuming you typed (or copied and pasted) the C# code correctly, this time the words `Hello World!` are displayed in the bottom pane.
 
 > [!IMPORTANT]
 > If you got any errors while running this code, please copy and paste it from the code provided above.
@@ -70,6 +70,6 @@ The word `System` was omitted in your call to `Console.WriteLine()`, but the fir
 > [!NOTE]
 > Don't worry about terms like method, class, System, using, and the other C# specific terms. You can learn about those later.  The focus right now is the process of compiling and executing your code.
 
-Third, you selected the blue **Run** button.  Behind the scenes, the Run button sent your code to a server where your code could be compiled into a .NET assembly. Once compiled, the .NET runtime opens the .NET assembly and knows to look in a class named `Program` to find a method named `Main()` to begin executing the instructions. Once the instruction to print the words "Hello world!" has finished, the path of execution will continue to the next line, but finds nothing, and so it will end, and the .NET runtime will remove the program from its memory.  Meanwhile, Try .NET will deliver the output back to your web browser.
+Third, you selected the green **Run** button.  Behind the scenes, the Run button sent your code to a server where your code could be compiled into a .NET assembly. Once compiled, the .NET runtime opens the .NET assembly and knows to look in a class named `Program` to find a method named `Main()` to begin executing the instructions. Once the instruction to print the words "Hello world!" has finished, the path of execution will continue to the next line, but finds nothing, and so it will end, and the .NET runtime will remove the program from its memory.  Meanwhile, Try .NET will deliver the output back to your web browser.
 
 Just understanding this sequence of events, and the basic delineation of responsibilities between a programming language, a compiler, and a runtime, means that you've already overcome one of the most important concepts as you're getting started!
