@@ -23,7 +23,7 @@ Console.WriteLine("Hello world!");
 
 ### Step 2 - Run the code
 
-Press the green **Run** on the right of the .NET Editor. Assuming you typed (or copied and pasted) the C# code correctly, this time the words `Hello World!` are displayed in the bottom pane.
+Press the green **Run** on the right of the .NET Editor. Assuming you typed (or copied and pasted) the C# code correctly, this time the words `Hello World!` are displayed in our Output pane at the bottom.
 
 > [!IMPORTANT]
 > If you got any errors while running this code, please copy and paste it from the code provided above.

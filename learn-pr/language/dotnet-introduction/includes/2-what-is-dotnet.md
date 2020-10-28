@@ -6,9 +6,9 @@ The term "ecosystem" describes the multi-faceted areas of an application develop
 
 ### Use .NET languages and compilers to execute applications with the .NET runtime
 
-Software developers use .NET languages like C# and F# write source code. Each line of code they write expresses an instruction or command for the computer to perform while the program is running. While each programming language has a different syntax and was created to enable different software development paradigms, generally speaking, source code is human-readable and writeable. 
+Software developers use .NET languages like C# and F# to write source code. Each line of code they write expresses an instruction or command for the computer to perform while the program is running. While each programming language has a different syntax and was created to enable different software development paradigms, generally speaking, source code is human-readable and writeable. 
 
-When software developers want to execute their code, they must first compile their code, then they can run it.  The **.NET compiler** is a program that converts the source code into a special language called **intermediate language**.  The compiler saves the transpiled code into a file called an assembly. By compiling into an "intermediate" format, the same code base can be used regardless of where the code will be executed, whether on Windows or Linux, or on 32-bit or 64-bit computer hardware.
+When software developers want to execute their code, they must first compile their code, then they can run it.  The **.NET compiler** is a program that converts the source code into a special language called **intermediate language** or IL.  The compiler saves the IL code into a file called an assembly. By compiling into an "intermediate" format, the same code base can be used regardless of where the code will be executed, whether on Windows or Linux, or on 32-bit or 64-bit computer hardware.
 
 The **.NET runtime** is an execution environment for your compiled .NET assembly. In other words, the .NET runtime is what executes and manages your application as it runs on a host operating system. We'll talk more about what the .NET Runtime does in just a moment.
 
@@ -28,6 +28,22 @@ An application framework combines several related libraries, along with starter 
 When you install the .NET SDK, whether directly or as a result of installing Visual Studio 2019, it pre-installs a comprehensive set of libraries and application frameworks called the **Base Class Libraries**.  These libraries can be used regardless of the platform or app models that you want to build.
 
 For other libraries, developers use package managers like NuGet to find and integrate code libraries from package repositories like the NuGet Gallery.
+
+#### What are the major app models?
+
+You might wonder which .NET frameworks support which app models.  The following table will help you map an app model to a .NET framework.
+
+| App Model | Framework | Notes |
+|---|---|---|
+| Web  | ASP.NET Core |  The framework for building server-side logic. |
+| Web  | ASP.NET Core MVC |  The framework for building server-side logic for web pages or web APIs. |
+| Web  | ASP.NET Core Pages |  The framework for building server-generated HTML.  |
+| Web Client | Blazor | Blazor is a part of ASP.NET Core. Its two modes allow for either DOM manipulation via sockets as a communication vehicle for running server-side code, or as a WebAssembly implementation for running compiled C# on the browser.  |
+| Desktop  | WinForms | A framework for building "battleship gray" Windows-style applications. |
+| Desktop  | WPF | A framework for building more dynamic desktop applications that conform more easily to different form factors and allows form elements to perform movement, fades, glides and other effects with the help of a rich library of animations. |
+| Mobile | Xamarin |  Allows .NET developers to build apps for iOS and Android devices. |
+
+Furthermore, .NET powers popular third-party and open source gaming development environment and engines like Unity.
 
 ### Use .NET tools to build .NET apps
 
@@ -68,15 +84,15 @@ Additionally, the .NET ecosystem has momentum:
 - Students love .NET! 40% of developers new to .NET are students.
 - The GitHub repositories for .NET and ASP.NET are ranked among the top 30 highest velocity OSS projects.
 - GitHub lists C# in the top five programming languages, and is moving up in popularity according to the TIOBE Language Index 2020.
-- ASP.NET Core, the premiere framework for building dynamic web applications, has been optimized and tuned for speed, and is now seven times faster than Node.js.
-- .NET Core version 3 was the fastest adopted version of .NET ever.
+- “.NET has the fastest web framework on the planet according to [TechEmpower benchmarks](https://www.techempower.com/benchmarks/#section=data-r19&hw=ph&test=plaintext&a=2?azure-portal=true), an independent, open source set of web performance benchmarks that measure dozens of languages and application frameworks.
 
-## Short history of .NET
+
+## A brief history of .NET
 
 The original .NET Framework was first released early 2002. Since then, there have been many updates including more and more new functionality.  After years of enhancements and new features, the original .NET Framework, particularly key code libraries, had grown significantly in size.
 
 Furthermore, over the years, Microsoft had worked on making a version of .NET with cross-platform compatibility possible, allowing developers to write one code base and use it across macOS, Linux, and Windows operations systems. 
 
-As a result of these changes, .NET Core was introduced around 2014. Microsoft has maintained the original .NET Framework, but decided that new features and improvements would be reserved for .NET Core.
+As a result of these changes, .NET Core was introduced around 2014. Microsoft has maintained the original .NET Framework, but decided that new features and improvements would be reserved for .NET Core. Going forward, the "Core" in the name has been removed and the next major versions are .NET 5, .NET 6, .NET 7, etc. and will release every year in November.
 
 Why is .NET's history important? It's possible that you will find blog posts, videos, and source code that targets the original .NET Framework. In some cases, the instructions or code will still work, but in other cases, there might be changes required.

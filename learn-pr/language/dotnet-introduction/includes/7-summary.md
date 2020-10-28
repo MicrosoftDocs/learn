@@ -13,10 +13,6 @@ If you want to start with a command-line interface, download and install both th
 
 [Download the .NET SDK](https://dotnet.microsoft.com/download?azure-portal=true)
 
-Make sure you:
-- Select the column of links under **.NET Core**
-- Select the link to download the .NET Core **SDK**
-
 [Download Visual Studio Code](https://code.visualstudio.com/?azure-portal=true)
 
 Finally, if you need to learn more about C# before you continue on, check out the following learning path:
