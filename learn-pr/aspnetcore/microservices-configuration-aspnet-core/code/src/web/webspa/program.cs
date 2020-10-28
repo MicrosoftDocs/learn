@@ -9,10 +9,10 @@ public class Program
             .UseContentRoot(Directory.GetCurrentDirectory())
             .ConfigureAppConfiguration((_, configBuilder) =>
             {
-                configBuilder.AddEnvironmentVariables();
                 var settings = configBuilder.Build();
 
-                if (settings.GetValue<bool>("UseFeatureManagement") && !string.IsNullOrEmpty(settings["AppConfig:Endpoint"]))
+                if (settings.GetValue<bool>("UseFeatureManagement") &&
+                    !string.IsNullOrEmpty(settings["AppConfig:Endpoint"]))
                 {
                     configBuilder.AddAzureAppConfiguration(options =>
                     {

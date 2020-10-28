@@ -276,22 +276,25 @@ Apply the following changes to your ASP.NET Core project:
 1. In the `CreateHostBuilder` method of *src/Web/WebSPA/Program.cs*, replace the comment `// Add the AddAzureAppConfiguration code` with the following code:
 
     ```csharp
-    var settings = configBuilder.Build();
-
-    if (settings.GetValue<bool>("UseFeatureManagement") &&
-        !string.IsNullOrEmpty(settings["AppConfig:Endpoint"]))
+    .ConfigureAppConfiguration((_, configBuilder) =>
     {
-        configBuilder.AddAzureAppConfiguration(options =>
+        var settings = configBuilder.Build();
+
+        if (settings.GetValue<bool>("UseFeatureManagement") &&
+            !string.IsNullOrEmpty(settings["AppConfig:Endpoint"]))
         {
-            options.Connect(settings["AppConfig:Endpoint"])
-                .UseFeatureFlags()
-                .ConfigureRefresh(refresh =>
-                {
-                    refresh.Register("AppConfig:Sentinel", refreshAll: true)
-                        .SetCacheExpiration(new TimeSpan(0, 0, 10));
-                });
-        });
-    }
+            configBuilder.AddAzureAppConfiguration(options =>
+            {
+                options.Connect(settings["AppConfig:Endpoint"])
+                    .UseFeatureFlags()
+                    .ConfigureRefresh(refresh =>
+                    {
+                        refresh.Register("AppConfig:Sentinel", refreshAll: true)
+                               .SetCacheExpiration(new TimeSpan(0, 0, 10));
+                    });
+            });
+        }
+    })
     ```
 
     The `ConfigureRefresh` method specifies the settings to update the configuration data with the App Configuration store. These settings are used when a refresh operation is triggered.
