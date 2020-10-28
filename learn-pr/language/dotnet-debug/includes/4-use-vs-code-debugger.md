@@ -183,7 +183,7 @@ Understanding that definition and looking at this `for` loop, we can deduce that
 
   1. The loop counts from 2 to `n` (the Fibonacci sequence number we're looking for).
   1. If `n` is less than 2, the loop will never run. The `return` statement at the end of the function will return 0 if `n` is 0, and 1 if `n` is 1 or 2. These are the 0<sup>th</sup>, 1<sup>st</sup>, and 2<sup>nd</sup> values in the Fibonacci series, by definition.
-  1. The more interesting case is when `n` is greater than 2. In those cases, the current value is defined as the sum of the previous two values. So for this loop, `n1` and `n2` are the previous two values, and `sum` is the value for the current iteration. Because of that, each time we figure out the new of the previous two values and set it to `sum`, then update our `n1` and `n2` values.
+  1. The more interesting case is when `n` is greater than 2. In those cases, the current value is defined as the sum of the previous two values. So for this loop, `n1` and `n2` are the previous two values, and `sum` is the value for the current iteration. Because of that, each time we figure out the sum of the previous two values and set it to `sum`, then update our `n1` and `n2` values.
 
 Okay, we don't need to overthink it past that; we can lean on our debugger a bit. But it's worth thinking about the code a bit to see if it does what we expect and be more informed when it doesn't.
   
@@ -227,7 +227,7 @@ sum [int]: 2
 i [int]: 3
 ```
 
-Let's think about it: do these values still make sense? It seems like it. For the third Fibonacci number, we're expecting to see our `sum` equal to 3.
+Let's think about it: do these values still make sense? It seems like they do. For the third Fibonacci number, we're expecting to see our `sum` equal to 2, and it is.
 
 1. Okay, let's hit **Continue** to loop it again!
 
@@ -288,35 +288,35 @@ for (int i = 2; i <= n; i++)
 
 So with that change, your updated program should look like this:
 
-    ```csharp
-    using System;
-    
-    namespace DotNetDebugging
+```csharp
+using System;
+
+namespace DotNetDebugging
+{
+    class Program
     {
-        class Program
+        static void Main(string[] args)
         {
-            static void Main(string[] args)
+            int result = Fibonacci(5);
+            Console.WriteLine(result);
+        }
+        static int Fibonacci(int n)
+        {
+            int n1 = 0;
+            int n2 = 1;
+            int sum = 0;
+
+            for (int i = 2; i <= n; i++)
             {
-                int result = Fibonacci(5);
-                Console.WriteLine(result);
+                sum = n1 + n2;
+                n1 = n2;
+                n2 = sum;
             }
-            static int Fibonacci(int n)
-            {
-                int n1 = 0;
-                int n2 = 1;
-                int sum = 0;
-    
-                for (int i = 2; i <= n; i++)
-                {
-                    sum = n1 + n2;
-                    n1 = n2;
-                    n2 = sum;
-                }
-                return n == 0 ? n1 : n2;
-            }
+            return n == 0 ? n1 : n2;
         }
     }
-    ```
+}
+```
 
 1. Stop the debugging session if you haven't already.
 
