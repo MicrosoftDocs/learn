@@ -13,8 +13,9 @@ The primary step in identifying and resolving security issues at Contoso will be
 ### View incidents
 
 The Incidents page provides a complete list of incidents in Sentinel along with basic incident information, including severity incident id, title, alerts, product names, created time, last update time, owner, and status. You can sort by aby incident column and filter the incident list na,e bu severity, status, product name, or owner.
-
+<!-- Delete "aby". Clean last sentence where it says "list na,e bu severity,". -->
 Selecting any incident will display more information about the incident in the details column. THis information can help you clarify the nature, context, and course of action for an incident.
+<!-- Replace "THis" with "this". -->
 
 ### Manage incident ownership, status, and severity
 
@@ -25,6 +26,7 @@ Each incident created in Sentinel has manageable metadata attached to it. This i
 #### Ownership
 
 In typical environment, each incident should be assigned an owner from you security team. The incident owner is responsible for overall management of the incident, including investigation and status updates. You can change ownership at anytime. Escalation is a common reason to reassign an incident to a new owner.
+<!-- Replace "you" with "your". Sentence should be "...each incident should be assigned an owner from your security team" instead of "each incident should be assigned an owner from you security team". -->
 
 #### Status
 
