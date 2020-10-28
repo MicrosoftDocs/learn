@@ -1,75 +1,17 @@
-In this exercise, you'll implement a feature flag to enable or disable the discount coupon feature on the checkout page. You'll also be able to toggle the feature in real time.
+In this exercise, you'll implement a feature flag to toggle the checkout page's discount coupon feature in real time. Feature flags allow you to toggle feature availability declaratively without including `if` statements in your code.
 
-Feature flags allow you to toggle feature availability declaratively without including `if` statements in your code.
-
-We'll use a feature flag library for ASP.NET Core named **Feature Management**. This library provides helpers to implement feature flags in your app such as controller actions, MVC views/filters, and so on. In addition, it supports Feature Filters, which allows you to enable features based on other parameters. Examples of such parameters may include a window time, percentages, or a subset of users.
+You'll use a feature flag library for ASP.NET Core named **Feature Management**. This library provides helpers to implement feature flags in your app such as controller actions, MVC views/filters, and so on. In addition, it supports Feature Filters, which allows you to enable features based on other parameters. Examples of such parameters may include a window time, percentages, or a subset of users.
 
 In this exercise, you will:
 
-- Review some "infrastructure" components for feature flags.
-- Make the discount coupon feature configurable.
-- Deploy the SPA to your AKS cluster.
-- Create an App Configuration store in your Azure account.
-- Connect *eShopOnContainers* to the App Configuration store.
-
-## Review the "infrastructure" feature flag components
-
-:::image type="content" source="../media/4-implement-feature-flag/client-to-server-integration.png" alt-text="A diagram showing how Angular communicates with ASP.NET Core" border="true" lightbox="../media/4-implement-feature-flag/client-to-server-integration.png":::
-
-To make a feature configurable, you have to make several changes to your app. Some "infrastructure" components have already been implemented for you. What follows is a review of those components.
-
-### Feature flag directive for the views
-
-This is implemented with the following files in the *src\Web\WebSPA\Client\src\modules\shared* directory:
-
-- *directives\featureFlag.directive.ts*
-- *models\featureFlag.model.ts*
-- *services\featureFlag.service.ts*
-
-An Angular component that contains the `featureFlag` attribute triggers the following sequence of events:
-
-1. The Angular `featureFlag` directive, defined in *featureFlag.directive.ts*, calls the `getFeatures` function in *featureFlag.service.ts*:
-
-    :::code language="typescript" source="../code/src/web/webspa/client/src/modules/shared/directives/featureFlag.directive.ts" highlight="18":::
-
-1. The `getFeatures` function constructs a URL to initiate an HTTP GET request to the App Configuration store:
-
-    :::code language="typescript" source="../code/src/web/webspa/client/src/modules/shared/services/featureFlag.service.ts" id="snippet_getFeatures":::
-
-1. The HTTP response from the aforementioned HTTP GET request is converted to an instance of `IFeatureFlag`:
-
-    :::code language="typescript" source="../code/src/web/webspa/client/src/modules/shared/models/featureFlag.model.ts":::
-
-The feature flag directive is used in any `div` element to determine whether it should be rendered, depending on the result from the feature flag service. The feature flag service queries the feature management middleware to check the feature status.
-
-### Feature Management middleware for querying values
-
-A custom middleware, found at *src\Web\WebSPA\Infrastructure\Middlewares\FeatureManagementMiddleware.cs*, is a key component of the SPA's feature flag system. The middleware allows you to query the specific feature flag values so they can be used in the SPA:
-
-:::code language="csharp" source="../code/src/web/webspa/infrastructure/middlewares/featuremanagementmiddleware.cs" id="snippet_Invoke" highlight="8":::
-
-As a refresher, a middleware is added to ASP.NET Core's request processing pipeline as a handler for HTTP requests. Think of it like a "light" controller that processes the raw `HttpContext` and returns a value by writing directly to the `Response` object. For more in-depth information, see the [ASP.NET Core Middleware](/aspnet/core/fundamentals/middleware/) document.
-
-The Feature Management library is implemented to work on the server side. That's fine when using MVC or Razor Pages, but you need to use the configuration data in the SPA. So the directive mentioned in the previous section will query the `/features` endpoint, implemented as this middleware, to get the feature state. The middleware retrieves the configuration values from the feature manager that, in turn, gets them from the ASP.NET Core configuration infrastructure.
-
-Think of this middleware as a proxy or broker between the SPA and the Feature Management service.
-
-### Configuration extensions
-
-The configuration extensions take care of:
-
-- Configuring the Feature Management middleware.
-
-You'll find the extensions in the *src\Web\WebSPA\Extensions* directory.
+* Make the discount coupon feature configurable.
+* Deploy the SPA to your AKS cluster.
+* Create an App Configuration store in your Azure account.
+* Connect *eShopOnContainers* to the App Configuration store.
 
 ## Make the discount coupon feature configurable
 
-To accomplish this, you need to:
-
-- Set up Feature Management in the app.
-- Use the feature flag directive in the views.
-
-So let's begin with the details.
+Complete the following steps to support toggling of the SPA's discount coupon feature in real time.
 
 ### Set up Feature Management
 
