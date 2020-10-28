@@ -24,4 +24,5 @@ data:
   UseLoadTest: "False"
   UseFeatureManagement: "True"
   FeatureManagement__Coupons: "True"
+  #AppConfig__Endpoint: <connection-string>
   

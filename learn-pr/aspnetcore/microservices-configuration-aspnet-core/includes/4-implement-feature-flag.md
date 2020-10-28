@@ -94,11 +94,11 @@ So let's begin with the details.
 
     By convention, the feature manager retrieves feature flags from the `FeatureManagement` section of the configuration file. The `UseFeatureManagement` property is the feature flag. It isn't something imposed by the Feature Management library. The values above will become the default ones for the SPA.
 
-1. In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, uncomment the following lines. Save your changes.
+1. In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, uncomment the `UseFeatureManagement` and `FeatureManagement__Coupons` lines. Save your changes.
 
     After the change, your file will resemble the following YAML snippet:
 
-    :::code language="yaml" source="../deploy/k8s/helm-simple/webspa/templates/configmap.yaml" highlight="25-26":::
+    :::code language="yaml" source="../code/deploy/k8s/helm-simple/webspa/templates/configmap.yaml" highlight="25-26":::
 
 1. Apply the following changes in the *Startup.cs* file:
     1. In the `ConfigureServices` method, replace the comment `// Add the AddFeatureManagement code` with the following code:
@@ -112,13 +112,13 @@ So let's begin with the details.
 
         The preceding code enables the Feature Management services to read the state of features in the `FeatureManagement` configuration section. `Coupons` in our case.
 
-    1. Uncomment the `//using Microsoft.FeatureManagement;` line at the top of the file. Save your changes.
+    1. Uncomment the `//using Microsoft.FeatureManagement;` line at the top of the file.
 
         The preceding code resolves the call to `AddFeatureManagement`.
 
         As mentioned before, for the SPA to query the coupon's feature state, you need to expose an endpoint.
 
-    1. In the `Configure` method, replace the comment `// Add the MapFeatureManagement code` with the following code:
+    1. In the `Configure` method, replace the comment `// Add the MapFeatureManagement code` with the following code. Save your changes.
 
         ```csharp
         if (Configuration.GetValue<bool>("UseFeatureManagement"))
@@ -127,7 +127,7 @@ So let's begin with the details.
         }
         ```
 
-1. To add the `featureFlag` directive to the views, run the following script:
+1. To add the `featureFlag` directive to the Angular views, run the following script:
 
     ```bash
     deploy/k8s/implement-directive.sh
