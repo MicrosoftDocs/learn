@@ -69,7 +69,7 @@ Follow these steps:
 
     :::image type="content" source="../media/3-create-topic.png" alt-text="Screenshot of the Create topic pane with the Create button highlighted":::
 
-1. When the topic has been created, at the bottom of the page **Queues  Topice** is displayed, click **Topics**.
+1. When the topic has been created, at the bottom of the page **Queues  Topics** is displayed, click **Topics**.
 
 1. In the list of topics, click **salesperformancemessages**, and then click **+ Subscription**.
 
