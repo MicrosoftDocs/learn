@@ -13,7 +13,7 @@ Visual Studio Code will install the **C#** extension, and will show an additiona
 :::image source="../media/install-required-assets.png" alt-text="Screenshot of Visual Studio Code prompt to add required assets to build and debug your .NET project":::
 
  > [!NOTE]
- > C# language support in Visual Studio Code is an optional [install from the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp). Visual Studio Code will automatically prompt you to install this extension when you open a C# file if you haven't yet. If you're having problems building or debugging your .NET application in Visual Studio Code, you should [verify that your project has the required assets](https://code.visualstudio.com/docs/languages/csharp#_im-missing-required-assets-to-build-and-debug-c-in-vs-code-my-debugger-says-no-configuration) for C# language support. 
+ > C# language support in Visual Studio Code is an optional [install from the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp). Visual Studio Code will automatically prompt you to install this extension when you open a C# file if you haven't yet. If you're having problems building or debugging your .NET application in Visual Studio Code, you should [verify that your project has the required assets](https://code.visualstudio.com/docs/languages/csharp#_im-missing-required-assets-to-build-and-debug-c-in-vs-code-my-debugger-says-no-configuration) for C# language support.
 
 ## Breakpoints
 
