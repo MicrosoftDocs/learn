@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.endpoint-manager-fundamentals
 metadata:
-  title: Microsoft Endpoint Manager Fundamentals
+  title: Microsoft Endpoint Manager fundamentals
   description: This learning path help you understand the fundamentals concepts involved in managing your endpoint environment.
   brand: azure
   ms.date: 10/27/2020
@@ -9,7 +9,7 @@ metadata:
   ms.author: erikre
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Microsoft Endpoint Manager Fundamentals
+title: Microsoft Endpoint Manager fundamentals
 summary: | 
   This learning path helps you understand the fundamental concepts involved in managing your endpoint environment.
 
