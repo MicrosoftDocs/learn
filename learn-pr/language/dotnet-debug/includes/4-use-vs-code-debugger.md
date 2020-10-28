@@ -286,6 +286,38 @@ Okay, wait a minute! That means that it will exit as soon the top of the for loo
 for (int i = 2; i <= n; i++)
 ```
 
+So with that change, your updated program should look like this:
+
+    ```csharp
+    using System;
+    
+    namespace DotNetDebugging
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                int result = Fibonacci(5);
+                Console.WriteLine(result);
+            }
+            static int Fibonacci(int n)
+            {
+                int n1 = 0;
+                int n2 = 1;
+                int sum = 0;
+    
+                for (int i = 2; i <= n; i++)
+                {
+                    sum = n1 + n2;
+                    n1 = n2;
+                    n2 = sum;
+                }
+                return n == 0 ? n1 : n2;
+            }
+        }
+    }
+    ```
+
 1. Stop the debugging session if you haven't already.
 
 1. Next, make the above change to line 18, and leave our breakpoint on line 25.
