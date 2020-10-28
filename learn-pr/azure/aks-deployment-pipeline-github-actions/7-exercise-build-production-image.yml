@@ -2,7 +2,7 @@
 uid: learn.aks-deployment-pipeline-github-actions.7-exercise-build-production-image
 metadata:
   title: Exercise - Build the production application image
-  description: Exercise what you've learned before by building our staging application image and deploying it to ACR automatically using GitHub Actions
+  description: Practice what you've learned by building the production application image. Then, automatically deploy the image to Container Registry by using GitHub Actions.
   ms.date: 10/08/2020
   author: khaosdoctor
   ms.author: ludossan
