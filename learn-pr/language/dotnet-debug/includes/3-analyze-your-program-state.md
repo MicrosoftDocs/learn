@@ -120,7 +120,7 @@ The debug console can be shown or hidden by selecting **Ctrl+Shift+Y** (Windows,
 
 You can enter a .NET expression in the input field at the bottom of the debug console. Then select **Enter** to evaluate it. The result displays directly in the console.
 
-:::image source="../media/debug-console.png" alt-text="Screenshot of Visual Studio Code debugger execution controls.":::
+:::image source="../media/debug-console.png" alt-text="Screenshot of Visual Studio Code debug console.":::
 
 This way, you can quickly check a variable value, test a function with different values, or alter the current state.
 
