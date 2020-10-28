@@ -123,7 +123,7 @@ So let's begin with the details.
         ```csharp
         if (Configuration.GetValue<bool>("UseFeatureManagement"))
         {
-            endpoints.MapFeatureManagement(pattern: "features");
+            endpoints.MapFeatureManagement("features");
         }
         ```
 
