@@ -32,28 +32,23 @@ Your goal is to set up the Linux VM and create an activity log monitoring rule t
 
 For the previous Azure Monitor alert, you didn't add any actions. You just viewed triggered alerts in the Azure portal. Actions allow you to send emails for notifications, trigger an Azure function, or call a webhook. You'll now add an email alert when VMs are deleted.
 
-1. Under **Actions**, select **Select action group**, then select **+ Create action group**. Enter the following details, and then select **OK**.
+1. Under **Actions**, select **Select action group**, then select **+ Create action group**. On the **Basics** pane, enter the following details.
 
     | Setting | Value |
     |---------|---------|
-    | Action group name | **Alert the operations team** |
-    | Short name | **AlertOpsTeam** |
     | Subscription | **Concierge Subscription** |
-    | Resource group | Name of your sandbox resource group |
-    | ACTION NAME | **Email the operations team** |
-    | ACTION TYPE | **Email/SMS/Push/Voice** |
-    | Email | Your email address |
-    | | |
+    | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
+    | Action group name | **Alert the operations team** |
+    | Display name | **AlertOpsTeam** |
 
-    ![Screenshot that shows adding an action group and an email alert](../media/7-email-setup.png)
 
-1. Select **OK** on the **Email/SMS/Push/Voice** configuration. At the bottom of the **Add action group** pane, select **OK**.
+    <!-- ![Screenshot that shows adding an action group and an email alert](../media/7-email-setup.png) -->
 
-1. Give the alert a name and a description. In the **Aalert rule details** section, provide the following information:
+   Select **Next: Notifications >**
 
-    - Alert rule name: **VM was deleted**
-    - Description: **A VM in your resource group was deleted**
-    - Enabled rule upon creation: **Selected**
+1. For **Notification type**, select **Email/SMS/Push/Voice**. Select **Email**, enter your email address, then select **OK**.
+
+1. For the **Name**, enter **VM was deleted**. Select **Review + create**, then select **Create**.
 
    <!-- ![Screenshot that shows a completed alert details section](../media/7-all-vm-alert-details.png) -->
 
