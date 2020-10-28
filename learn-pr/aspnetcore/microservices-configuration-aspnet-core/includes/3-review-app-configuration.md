@@ -77,7 +77,7 @@ In the highlighted code fragment:
 
 ## Review the "infrastructure" feature flag components
 
-:::image type="content" source="../media/4-implement-feature-flag/client-to-server-integration.png" alt-text="A diagram showing how Angular communicates with ASP.NET Core" border="true" lightbox="../media/4-implement-feature-flag/client-to-server-integration.png":::
+:::image type="content" source="../media/3-review-app-configuration/client-to-server-integration.png" alt-text="A diagram showing how Angular communicates with ASP.NET Core" border="true" lightbox="../media/3-review-app-configuration/client-to-server-integration.png":::
 
 To make a feature configurable, you have to make several changes to your app. Some "infrastructure" components have already been implemented for you. What follows is a review of those components.
 
