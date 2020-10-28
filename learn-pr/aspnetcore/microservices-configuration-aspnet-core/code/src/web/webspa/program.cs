@@ -16,15 +16,8 @@ public class Program
                     !string.IsNullOrEmpty(settings["AppConfig:Endpoint"]))
                 {
                     configBuilder.AddAzureAppConfiguration(options =>
-                    {
                         options.Connect(settings["AppConfig:Endpoint"])
-                            .UseFeatureFlags()
-                            .ConfigureRefresh(refresh =>
-                            {
-                                refresh.Register("AppConfig:Sentinel", refreshAll: true)
-                                       .SetCacheExpiration(new TimeSpan(0, 0, 10));
-                            });
-                    });
+                               .UseFeatureFlags());
                 }
             })
             // code omitted for brevity

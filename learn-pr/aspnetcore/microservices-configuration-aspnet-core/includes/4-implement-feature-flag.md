@@ -238,24 +238,6 @@ The `AppConfig__Endpoint` line will resemble the following YAML:
 AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;Id=...;Secret=..."
 ```
 
-## Add a sentinel key for the App Configuration
-
-The sentinel key is used to signal when configuration has changed. Your app monitors the sentinel key for changes to know when to refresh the values from the App Configuration store.
-
-To create the sentinel key:
-
-1. Use the Azure portal's search box to find and open the App Configuration resource prefixed with *:::no-loc text="eshoplearn":::*.
-1. Select **Configuration explorer** > **Create** > **Key-value**.
-1. Enter the following values:
-    - Key: `AppConfig:Sentinel`
-    - Value: `1`
-
-    You should have something like this:
-
-    :::image type="content" source="../media/4-implement-feature-flag/create-app-configuration-sentinel-key.png" alt-text="Configuration explorer view for the process described above" border="true" lightbox="../media/4-implement-feature-flag/create-app-configuration-sentinel-key.png":::
-
-1. Select the **Apply** button.
-
 ## Add the feature flag for Coupons
 
 1. In a similar fashion, go to the **Feature manager** section and select **Add**.
@@ -286,15 +268,8 @@ Apply the following changes to your ASP.NET Core project:
             !string.IsNullOrEmpty(settings["AppConfig:Endpoint"]))
         {
             configBuilder.AddAzureAppConfiguration(options =>
-            {
                 options.Connect(settings["AppConfig:Endpoint"])
-                    .UseFeatureFlags()
-                    .ConfigureRefresh(refresh =>
-                    {
-                        refresh.Register("AppConfig:Sentinel", refreshAll: true)
-                               .SetCacheExpiration(new TimeSpan(0, 0, 10));
-                    });
-            });
+                       .UseFeatureFlags());
         }
     })
     ```
