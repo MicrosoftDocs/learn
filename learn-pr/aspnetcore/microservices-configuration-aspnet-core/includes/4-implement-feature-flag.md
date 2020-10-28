@@ -181,7 +181,11 @@ So let's begin with the details.
 
     Notice the presence of the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field. This is expected because the coupons feature is enabled.
 
-1. Update the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file to disable the coupons feature. Save your changes.
+## Disable the feature
+
+Complete the following steps to disable the coupons feature.
+
+1. In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, set `FeatureManagement__Coupons` to `"False"`. Save your changes.
 
     The `FeatureManagement__Coupons` line will resemble the following YAML:
 
@@ -196,7 +200,7 @@ So let's begin with the details.
     ```
 
 1. After a few seconds, test the configuration change as follows:
-    1. In the app, refresh the page. The WebSPA reloads.
+    1. In the app, refresh the page. The SPA reloads.
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
 
