@@ -12,9 +12,7 @@ namespace Microsoft.AspNetCore.Builder
             string pattern = "features")
         {
             if (endpoints == null)
-            {
                 throw new ArgumentNullException(nameof(endpoints));
-            }
 
             var pipeline = endpoints.CreateApplicationBuilder()
                 .UseMiddleware<FeatureManagementMiddleware>()
