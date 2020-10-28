@@ -31,16 +31,16 @@ quiz:
     choices:
     - content: '`Console.WriteLine(@"My value: {value}");`'
       isCorrect: false
-      explanation: "This line uses the `@` symbol instead of the `$` symbol as the prefix for string interpolation."
+      explanation: "This line uses the at `@` symbol instead of the dollar `$` symbol as the prefix for string interpolation."
     - content: '`Console.WriteLine($"My value: {value}");`'
       isCorrect: true
       explanation: "Correct!"      
     - content: '`Console.WriteLine(@"My value: [value]");`'
       isCorrect: false
-      explanation: "This line uses square brackets instead of curly braces for the interpolation expression."
+      explanation: "This line uses the at `@` symbol instead of the dollar `$` symbol, and square brackets instead of curly braces for the interpolation expression."
     - content: '`Console.WriteLine("My value: {value}");`'
       isCorrect: false
-      explanation: "This line is missing the `$` symbol prefix for string interpolation."
+      explanation: "This line is missing the dollar `$` symbol prefix for string interpolation."
   - content: "You embedded Unicode characters in your strings to present a special message in Thai, however the message is only displayed as question mark characters.  What happened?"
     choices:
     - content: "You're missing the &#92;u escape sequence for Unicode characters."
@@ -48,7 +48,7 @@ quiz:
       explanation: "If you don't use the &#92;u escape sequence for Unicode characters, you won't see question marks.  You'll see the numbers."
     - content: "You used the wrong Unicode characters."
       isCorrect: false
-      explanation: "This is unlikely.  It would only be true if all the Unicode characters were the same value representing a quotation mark -- &#92;u003F."
+      explanation: "This is unlikely.  It would only be true if all the Unicode characters were the same value representing a question mark -- &#92;u003F."
     - content: "The user's console doesn't support Unicode characters."
       isCorrect: true
       explanation: "Correct!"

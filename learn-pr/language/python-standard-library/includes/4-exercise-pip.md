@@ -39,6 +39,7 @@ Back in the Visual Studio Code terminal, enter the following command on Linux an
 ```bash
 pip install emoji
 ```
+
 On Linux and macOS, if you get a message that you do not have sufficient privileges, then you must use the super user account.  Enter the following command.
 
 ```bash
@@ -50,6 +51,9 @@ If you're on Windows, you may need to use the `py` utility to execute `pip`.  Tr
 ```cmd
 py -m pip install emoji
 ```
+
+> [!IMPORTANT]
+> If you still can't get it to work using `pip`, substitute with the word `pip3` instead.
 
 ### Step 4 - Add code to import and call the new package's functionality
 

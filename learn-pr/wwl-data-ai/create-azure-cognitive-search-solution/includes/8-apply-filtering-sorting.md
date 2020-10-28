@@ -76,7 +76,7 @@ You can apply filtering and sorting to the Margie's Travel search results by sub
 5. Follow the link for the `https://localhost:5000/` address to open the web site in a new browser tab. Then in the Margie's Travel website, enter **"San Francisco"** into the search box and click **Search**.
 6. When the results are displayed, select the **Reviewer** filter and the **Largest file size** sort option, and click **Refine Results**.
 7. Observe that the results are filtered to include only reviews, and sorted into descending order of file size.
-8. Close the browser tab containing the Margie's Travel web site and return to the Codespace tab. Then in the terminal for the **search-client** folder (where the dotnet process is running), enter Ctrl+C to stop the app.
+8. Close the browser tab containing the Margie's Travel web site and return to Visual Studio Code. Then in the terminal for the **search-client** folder (where the dotnet process is running), enter Ctrl+C to stop the app.
 
 :::zone-end
 
@@ -95,7 +95,7 @@ You can apply filtering and sorting to the Margie's Travel search results by sub
 5. Follow the link for the `https://127.0.0.1:5000/` address to open the web site in a new browser tab. Then in the Margie's Travel website, enter **"San Francisco"** into the search box and click **Search**.
 6. When the results are displayed, select the **Reviewer** filter and the **Largest file size** sort option, and click **Refine Results**.
 7. Observe that the results are filtered to include only reviews, and sorted into descending order of file size.
-8. Close the browser tab containing the Margie's Travel web site and return to the Codespace tab. Then in the Python terminal for the **search-client** folder (where the flask application is running), enter Ctrl+C to stop the app.
+8. Close the browser tab containing the Margie's Travel web site and return to Visual Studio Code. Then in the Python terminal for the **search-client** folder (where the flask application is running), enter Ctrl+C to stop the app.
 
 :::zone-end
 

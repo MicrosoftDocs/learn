@@ -5,7 +5,7 @@ int value1 = 12;
 decimal value2 = 6.2m;
 float value3 = 4.3f;
 
-int result1 = (int)((decimal)value1 / value2);
+int result1 = Convert.ToInt32((decimal)value1 / value2);
 Console.WriteLine($"Divide value1 by value2, display the result as an int: {result1}");
 
 decimal result2 = value2 / (decimal)value3;

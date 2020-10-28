@@ -89,4 +89,4 @@ The primary ideas you should take away from this exercise:
 - You can perform mathematical like addition operations on numbers.
 - Both string concatenation and addition use the plus symbol.  This is called *overloading an operator* and the compiler infers the proper use based on the data types its operating on.
 - When it can, the C# compiler will implicitly convert an `int` into a `string` if it's obvious that the developer is trying to concatenate the string representation of a number for presentation purposes.
-- Use parenthesis to define an order of operations to explicitly tell the compiler that we want to perform certain operations before other operations.
+- Use parentheses to define an order of operations to explicitly tell the compiler that we want to perform certain operations before other operations.
