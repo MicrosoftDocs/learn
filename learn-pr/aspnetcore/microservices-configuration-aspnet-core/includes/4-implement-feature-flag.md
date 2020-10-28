@@ -134,12 +134,12 @@ So let's begin with the details.
 1. To add the `featureFlag` directive to the Angular views, run the following script:
 
     ```bash
-    deploy/k8s/implement-directive.sh
+    deploy/implement-directive.sh
     ```
 
-    The preceding script uses the Linux `sed` command to modify two Angular views. The `*featureFlag="'coupons'"` attribute is added to the subtotal and discount code `div` elements in *orders-detail.component.html* and *orders-new.component.html* in *~/clouddrive/aspnet-learn/src/src/Web/WebSPA/Client/src/modules/orders*. The relevant portions of *orders-new.component.html* are highlighted below.
+    The preceding script uses the Linux `sed` command to modify two Angular views. The `*featureFlag="'coupons'"` attribute is added to the subtotal and discount code `div` elements in *orders-detail/orders-detail.component.html* and *orders-new/orders-new.component.html* in *~/clouddrive/aspnet-learn/src/src/Web/WebSPA/Client/src/modules/orders*. The relevant portions of *orders-detail.component.html* are highlighted below.
 
-    :::code language="html" source="../code/src/web/webspa/client/src/modules/orders/orders-new/orders-new.component.html" highlight="1,6":::
+    :::code language="html" source="../code/src/web/webspa/client/src/modules/orders/orders-detail/orders-detail.component.html" highlight="1,6":::
 
     > [!NOTE]
     > The implementation of Angular-specific functionality in this module has been scripted to maintain focus on .NET details.
@@ -164,9 +164,15 @@ So let's begin with the details.
     deploy/k8s/deploy-application.sh --charts webspa
     ```
 
-    The preceding script uses Helm to deploy the WebSPA Docker image from your ACR instance to AKS.
+    The preceding script uses Helm to deploy the WebSPA Docker image from your ACR instance to AKS. The following excerpt from the `kubectl get pods` output confirms that the *WebSPA* app's container is starting:
 
-1. Refresh the browser tab with the :::no-loc text="*eShopOnContainers*"::: app to force a reload of the WebSPA.
+    ```console
+    NAME                              READY   STATUS              RESTARTS   AGE
+    webspa-64786f994f-5fz7m           0/1     Terminating         0          22m
+    webspa-84fb8f987-df8hk            0/1     ContainerCreating   0          1s
+    ```
+
+1. Refresh the browser tab containing the *:::no-loc text="eShopOnContainers":::* app to force a reload of the SPA.
 1. Start a purchase as follows:
     1. Select the **:::no-loc text="LOGIN":::** link in the upper right to sign into the app. Sign in using the credentials provided on the page.
     1. Add the **:::no-loc text=".NET BLUE HOODIE":::** to the shopping bag by selecting the image.

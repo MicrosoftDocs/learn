@@ -1,4 +1,4 @@
-Managing configuration settings in a microservices context can easily become a significant problem if not handled properly. Since microservices apps are composed of multiple services, it's important to have a sound configuration strategy that effectively separates code from configuration.
+The management of configuration settings in a microservices context can become a significant problem if not handled properly. Since microservices-based solutions are composed of multiple services, it's important to have a sound configuration strategy that effectively separates code from configuration.
 
 You'll explore how to integrate ASP.NET Core and Kubernetes configuration features with Azure App Configuration to tackle this scenario in an effective way.
 
