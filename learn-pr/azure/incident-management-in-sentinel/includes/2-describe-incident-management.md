@@ -5,6 +5,7 @@ Azure Sentinel can help you organize, investigate and track incidents, from crea
 Before you begin managing incidents, it is important to understand several key incident management concepts in Azure Sentinel.
 
 - **Data connectors.** You use data connectors in Sentinel to ingest and collect data from security-related services. These events are forwarded to a Log Analytics workspace associated with Azure Sentinel. Events can be collected from linux or Windows computers running the Log Analytics agent, a Linux Syslog server (for devices like firewalls or proxies), or directly from Microsoft Azure services.
+<!-- Replace "linux" with "Linux". -->
 - **Events.** Events are stored in a Log Analytics workspace and contain the details of security related activity that you want to monitor with Azure Sentinel.
 - **Analytic rules.** You create analytics rules to detect important security events and generate alerts. Analytics rules can be created using built-in templates or by using custom Kusto Query Language (KQL) queries against Log Analytics workspaces in Sentinel.
 - **Alerts.** Analytics rule generate alerts when they detect important security events. You can also configure alerts to generate incidents.
