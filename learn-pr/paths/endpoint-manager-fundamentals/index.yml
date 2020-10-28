@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.mem-fundamentals
+uid: learn.endpoint-manager-fundamentals
 metadata:
   title: Microsoft Endpoint Manager Fundamentals
   description: This learning path help you understand the fundamentals concepts involved in managing your endpoint environment.
@@ -31,7 +31,7 @@ summary: |
 prerequisites: |
   - Familiarity with basic device concepts
   - Familiarity with security and cloud concepts
-iconUrl: /learn/achievements/mem-fundamentals.svg
+iconUrl: /learn/achievements/endpoint-manager-fundamentals.svg
 levels:
 - beginner
 roles:
@@ -47,4 +47,4 @@ modules:
 - learn.compliance-endpoint-manager
 - learn.benefits-microsoft-endpoint-manager
 trophy:
-  uid: learn.mem-fundamentals.trophy
+  uid: learn.endpoint-manager-fundamentals.trophy
