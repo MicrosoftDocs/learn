@@ -130,10 +130,8 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), in the portal menu on the left, select **Storage Accounts**.
 1. Select the created storage account. It should be named **learnazurefileshare** followed by random numbers.
 1. Select **File shares**, and then select the **data** share.
-1. At the top of the pane, select **Create Snapshot**.
-
-    ![Screenshot showing the Create Snapshot option](../media/5-create-snapshot.png)
-
+1. In the **Operations** section, select **Snapshots**.
+1. Select **+ Add snapshot** and select **OK**.
 1. Return to your VM, and open **File Explorer**.
 1. Browse to the data share mounted at the **F** drive, right-click any of the text files, and select **Properties**.
 1. In the File properties window, select **Previous Versions**, and see the listed snapshots created on the file share.
