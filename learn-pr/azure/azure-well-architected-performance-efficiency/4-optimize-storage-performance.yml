@@ -20,22 +20,22 @@ quiz:
     choices:
     - content: 'Using Azure SQL Database to store all of your data'
       isCorrect: false
-      explanation: 'Storing all data in a single technology is not the definition of polyglot persistence.'
+      explanation: "Storing all data in a single technology isn't the definition of polyglot persistence."
     - content: 'A way to keep connections alive for data transfers'
       isCorrect: false
-      explanation: 'Keepalives are methods of keeping connections alive for data transfers and are not related to polyglot persistence.'
-    - content: 'The usage of different data storage technologies for different purposes in your application'
+      explanation: "Keepalives are methods of keeping connections alive for data transfers and aren't related to polyglot persistence."
+    - content: 'The use of different data storage technologies for different purposes in your application'
       isCorrect: true
-      explanation: 'Polyglot persistence is the usage of different data storage technologies in the same application so you can use the best approach for each type of data.'
+      explanation: 'Polyglot persistence is the use of different data storage technologies in the same application so that you can use the best approach for each type of data.'
     - content: 'An approach to deal with transient data faults'
       isCorrect: false
-      explanation: 'While dealing with transient data faults is beneficial in an application architecture, it is not related to polyglot persistence.'
+      explanation: "While dealing with transient data faults is beneficial in an application architecture, it isn't related to polyglot persistence."
   
-  - content: 'True or false: Redis Cache improves the performance of your application by storing a snapshot of data in memory.'
+  - content: 'True or false: Azure Cache for Redis improves the performance of your application by storing a snapshot of data in memory.'
     choices:
     - content: 'True'
       isCorrect: true
-      explanation: 'Redis Cache will store application data in memory, leading to fast retrieval times and an improvement in application performance related to frequently accessed data.'
+      explanation: 'Azure Cache for Redis stores application data in memory, which leads to fast retrieval times and an improvement in application performance related to frequently accessed data.'
     - content: 'False'
       isCorrect: false
-      explanation: 'Redis Cache will store application data in memory, leading to fast retrieval times and an improvement in application performance related to frequently accessed data.'
+      explanation: 'Azure Cache for Redis stores application data in memory, which leads to fast retrieval times and an improvement in application performance related to frequently accessed data.'

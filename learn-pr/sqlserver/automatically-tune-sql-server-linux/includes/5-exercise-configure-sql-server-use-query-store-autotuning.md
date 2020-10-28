@@ -17,7 +17,7 @@ If you've closed your RDP connection to the Ubuntu SQL Server, reconnect it now:
 
 Now run a SQL script that sets up the necessary resources for the lab:
 
-1. In **Azure Data Studio**, on the **File** menu, click **Open File**, and then browse to the ****~/automatically-tune-sql-server-linux/**** folder.
+1. In **Azure Data Studio**, on the **File** menu, click **Open File**, and then browse to the ****~/mslearn-automatically-tune-sql-server-linux/**** folder.
 1. Click **initialize.sql**, and then click **Open**. This script ensures that the Query Store is empty and that auto tuning is disabled.
 1. In the top-left of the script window, click **Run**. Azure Data Studio executes the script.
 
@@ -49,7 +49,7 @@ You can now query the temporary table for performance data, as you did in the la
 
 Now you'll execute a script that creates a query plan regression problem. Follow these steps:
 
-1. In **Azure Data Studio**, on the **File** menu, click **Open File** and then browse to the **~/automatically-tune-sql-server-linux/** folder.
+1. In **Azure Data Studio**, on the **File** menu, click **Open File** and then browse to the **~/mslearn-automatically-tune-sql-server-linux/** folder.
 1. Click **regression.sql**, and then click **Open**. Examine the contents of the script, which executes the **regression** stored procedure to create a query plan regression problem.
 1. In the top-left of the script window, click **Run**.
 1. Switch to the **batchrequests.sql** tab, and then click **Run**.
@@ -63,7 +63,7 @@ Now you'll execute a script that creates a query plan regression problem. Follow
 
 Because the Query Store is enabled, SQL Server 2019 gathers information about the regression problem that you've created. To view this information, follow these steps:
 
-1. In **Azure Data Studio**, on the **File** menu, click **Open File**, and then browse to the **~/automatically-tune-sql-server-linux/** folder.
+1. In **Azure Data Studio**, on the **File** menu, click **Open File**, and then browse to the **~/mslearn-automatically-tune-sql-server-linux/** folder.
 1. Click **recommendations.sql**, and then click **Open**. Examine the contents of the script, which queries the Query Store to obtain tuning recommendations.
 1. In the top-left of the script window, click **Run**.
 1. In the **RESULTS** window, notice that:
@@ -76,7 +76,7 @@ Because the Query Store is enabled, SQL Server 2019 gathers information about th
 By executing the recommended script that you obtained from the Query Store, you can manually fix any regression problems that develop. However, by enabling automatic tuning, you configure SQL Server to apply such fixes automatically. Follow these steps:
 
 1. In **Azure Data Studio**, on the **File** menu, click **Open File**.
-1. Browse to the **~/automatically-tune-sql-server-linux/** folder.
+1. Browse to the **~/mslearn-automatically-tune-sql-server-linux/** folder.
 1. Click **auto_tune.sql**, and then click **Open**. Examine the contents of the script, which calls the **auto_tune** stored procedure to enable automatic tuning on the current database.
 1. In the top-left of the script window, click **Run**.
 

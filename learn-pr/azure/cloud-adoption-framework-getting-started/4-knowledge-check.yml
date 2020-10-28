@@ -1,0 +1,101 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-getting-started.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 09/22/2020
+  author: BrianBlanchard
+  ms.author: bblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which getting started guides can help if your adoption efforts stopped or reached a plateau?
+    choices:
+    - content: Establish teams
+      isCorrect: false
+      explanation: Before looking at teams and organizations, there might be a more efficient source of help.
+    - content: Improve controls
+      isCorrect: true
+      explanation: When adoption stops entirely, it's commonly the outcome of some fear, uncertainty, or doubt. The team needs to build confidence in their ability and be sure that their decisions won't hurt the company. The guide on [enabling customer success](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/enable) can help with each of the common blockers here.
+    - content: Accelerate adoption
+      isCorrect: false
+      explanation: Fast is good, but this blocker might not be addressed by trying to move faster.
+    - content: Align foundation
+      isCorrect: false
+      explanation: It's always good to be on the same page about core decisions, but you might need something a bit deeper for this blocker.
+  - content: Which getting started guides can help if things are progressing slower than expected?
+    choices:
+    - content: Establish teams
+      isCorrect: false
+      explanation: Before looking at teams and organization, there might be a more efficient source of help.
+    - content: Improve controls
+      isCorrect: false
+      explanation: There might be easier approaches that don't require ongoing processes.
+    - content: Accelerate adoption
+      isCorrect: true
+      explanation: Each of the guides that focus on accelerating adoption can help you slow down and check the basics so that you can go faster as a team.
+    - content: Align foundation
+      isCorrect: false
+      explanation: It's always good to be on the same page about core decisions, but you might need something a bit deeper for this blocker.
+  - content: The IT governance team is concerned about guardrails outlined in your IT governance policies. How can you partner with them to establish the right guard rails?
+    choices:
+    - content: Establish teams
+      isCorrect: true
+      explanation: Governance can be complex. Start buy working with IT governance to see whether a [cloud governance team](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/team/cloud-governance?azure-portal=true) is required. Either way, ensure that Steps 5-7 are clearly assigned.
+    - content: Improve controls
+      isCorrect: false
+      explanation: There might be easier approaches that don't require ongoing processes.
+    - content: Accelerate adoption
+      isCorrect: false
+      explanation: Fast is good, but this blocker might not be addressed by trying to move faster.
+    - content: Align foundation
+      isCorrect: false
+      explanation: It's always good to be on the same page about core decisions, but you might need something a bit deeper for this blocker.
+  - content: Designing a cloud environment that can support your term adoption plans is slowing your adoption plans. How do you get back on track?
+    choices:
+    - content: Establish teams
+      isCorrect: false
+      explanation: Before looking at teams and organizations, there might be a more efficient source of help.
+    - content: Improve controls
+      isCorrect: false
+      explanation: There might be easier approaches that don't require ongoing processes.
+    - content: Accelerate adoption
+      isCorrect: true
+      explanation: Azure landing zones and the getting started guide on [environment design](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/design-and-configuration?azure-portal=true) can help design and deploy the environment you need.
+    - content: Align foundation
+      isCorrect: false
+      explanation: It's always good to be on the same page about core decisions, but you might need something a bit deeper for this blocker.
+  - content: The business is responding to rapidly changing market conditions, which is disrupting cloud adoption and digital transformation progress. Which getting started guide can help?
+    choices:
+    - content: Establish teams
+      isCorrect: true
+      explanation: When adoption and transformation efforts are hindered by changing priorities, a [cloud strategy team](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/team/cloud-strategy?azure-portal=true) can help create the clarity and stability needed to move forward.
+    - content: Improve controls
+      isCorrect: false
+      explanation: There might be easier approaches that don't require ongoing processes.
+    - content: Accelerate adoption
+      isCorrect: false
+      explanation: Fast is good, but this blocker might not be addressed by trying to move faster.
+    - content: Align foundation
+      isCorrect: false
+      explanation: It's always good to be on the same page about core decisions, but you might need something a bit deeper for this blocker.
+  - content: You need to be able to onboard new employees, partners, or other forms of support. How can you accelerate onboarding and transitions from one project to another?
+    choices:
+    - content: Establish teams
+      isCorrect: false
+      explanation: Before looking at teams and organizations, there might be a more efficient source of help.
+    - content: Improve controls
+      isCorrect: false
+      explanation: There might be easier approaches that don't require ongoing processes.
+    - content: Accelerate adoption
+      isCorrect: false
+      explanation: Fast is good, but this blocker might not be addressed by trying to move faster.
+    - content: Align foundation
+      isCorrect: true
+      explanation: There are many ways to adopt the cloud and several decisions along the way. Clear documentation of your [foundational decisions](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/cloud-concepts?azure-portal=true) will help new team members understand your environment and decisions quickly. 

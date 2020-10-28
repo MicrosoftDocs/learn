@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-performance-based-design.describe-normalization
+title: Describe normalization
+metadata:
+  title: Describe normalization
+  description: "Describe normalization"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: kadelaney
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 13
+content: |
+  [!include[](includes/2-describe-normalization.md)]

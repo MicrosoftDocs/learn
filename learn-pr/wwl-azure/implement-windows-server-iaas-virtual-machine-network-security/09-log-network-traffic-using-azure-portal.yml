@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-iaas-vm-network-security.log-network-traffic-using-azure-portal
+title: Log network traffic to and from a VM using the Azure portal
+metadata:
+  title: Log network traffic to and from a VM using the Azure portal
+  description: "Log network traffic to and from a VM using the Azure portal"
+  ms.date: 09/25/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/09-log-network-traffic-using-azure-portal.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "At the beginning of the demonstration, the instructor describes the process of logging network traffic to and from an Azure VM. Through what does the instructor say network traffic is logged?"
+    choices:
+    - content: "Network traffic is logged as it flows through the virtual NIC in the VM."
+      isCorrect: false
+      explanation: "That's incorrect. The traffic is logged as it flows through the NSG associated with the VM."
+    - content: "Network traffic is logged as it flows through the NSG that the VM is associated with."
+      isCorrect: true
+      explanation: "That's correct."
+    - content: "Network traffic is logged as it flows through the VNet to which the VM is attached."
+      isCorrect: false
+      explanation: "That's incorrect. The traffic is logged as it flows through the NSG associated with the VM."

@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azdo.scan-open-source
 metadata:
-  title: Scan open-source components for vulnerabilities and license ratings in Azure Pipelines - Learn
+  title: Scan open-source components for vulnerabilities and license ratings in Azure Pipelines
   description: Scan open-source components for security vulnerabilities and assess their license ratings when your application builds in Azure Pipelines.
   ms.date: 01/21/2020
   author: tpetchel

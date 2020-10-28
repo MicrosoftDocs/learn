@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-updates.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Contoso IT has a WSUS deployment to update their on-premises servers. Which of the following statements about WSUS with Update Management is true?"
+    choices:
+    - content: "Contoso cannot use WSUS in addition to using Azure Update Management."
+      isCorrect: false
+      explanation: "That's incorrect. They can use WSUS in addition to using Update Management."
+    - content: "Contoso can configure the **Specify intranet Microsoft Update service location** value in Group Policy to point their servers to the appropriate WSUS server."
+      isCorrect: true
+      explanation: "That's correct. You can use GPO value **Specify intranet Microsoft Update service location** to configure the WSUS server."
+    - content: "There's no need to approve updates with WSUS if you're using Update Management."
+      isCorrect: false
+      explanation: "That's incorrect. You must still approve updates within your organization with WSUS."
+  - content: "In addition to an Automation account, what else must Contoso enable to enable Update Management?"
+    choices:
+    - content: "In addition to the Automation account, Contoso IT staff must enable a Log Analytics workspace."
+      isCorrect: true
+      explanation: "That's correct. These two steps are required."
+    - content: "In addition to the Automation account, Contoso IT staff must install the Log Analytics agent on all VMs."
+      isCorrect: false
+      explanation: "That's incorrect. The agent is not required to enable Update Management."
+    - content: "In addition to the Automation account, Contoso IT staff must enable WSUS to deploy updates to on-premises servers."
+      isCorrect: false
+      explanation: "That's incorrect. Although WSUS might be used, it's not a requirement."
+  - content: "When Contoso IT support staff decide to deploy updates using Update Management, they create an Update Deployment. They want to deploy the updates to only a subset of servers being managed by Update Management. How could they do this?"
+    choices:
+    - content: "Contoso staff must configure **Groups to update** and manually add the appropriate servers to those group."
+      isCorrect: false
+      explanation: "That's incorrect. They must define a query to create a dynamic group for the application of these updates."
+    - content: "Contoso staff must configure **Groups to update** and create a query to dynamically add the appropriate servers to those groups."
+      isCorrect: true
+      explanation: "That's correct. A dynamic query creates the group membership."
+    - content: "Contoso staff must use the **Include/exclude updates** value to define which servers to include."
+      isCorrect: false
+      explanation: "That's incorrect. This value is used to define which updates to include or exclude."

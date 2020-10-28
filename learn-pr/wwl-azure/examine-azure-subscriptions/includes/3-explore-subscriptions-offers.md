@@ -1,4 +1,4 @@
-There are several different options to purchase Azure from free to enterprise agreements.  Found out which one is right for your business needs.
+There are several different options to purchase Azure from free to enterprise agreements.  Find out which one is right for your business needs.
 
 ![Screenshot of Azure customers offers.](../media/customer-offers.png)
 

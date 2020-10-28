@@ -106,16 +106,14 @@ We'll start this time with the back-end service app.
         }
     ```
 
+1. If you did not use the suggested "CheeseCaveID" device Id, change the `GetTwinAsync` call to use your device Id.
+
 1. Now, add the following lines to the `Main` method, before the lines creating a service client.
 
     ```cs
             // A registry manager is used to access the digital twins.
             registryManager = RegistryManager.CreateFromConnectionString(s_serviceConnectionString);
             SetTwinProperties().Wait();
-
-            // Create a ServiceClient to communicate with service-facing endpoint on your hub.
-            s_serviceClient = ServiceClient.CreateFromConnectionString(s_serviceConnectionString);
-            InvokeMethod().GetAwaiter().GetResult();
     ```
 
 1. Save the **Program.cs** file.
@@ -181,14 +179,9 @@ Now we need to add code to the device app.
     });
     ```
 
-1. Change the `onSetFanState` function, so the success section of the function reports the updated state of the fan.
+1. Change the `onSetFanState` function, so the success section of the function reports the updated state of the fan. Add the following lines after the `response.send(200, 'Fan state set: ' + request.payload, directMethodResponse);` statement.
 
     ```javascript
-            fanState = request.payload;
-
-            // Report success back to your hub.
-            response.send(200, 'Fan state set: ' + request.payload, directMethodResponse);
-
             // Confirm changes to reported properties.
             sendReportedProperties();
     ```
@@ -228,7 +221,7 @@ Now we need to add code to the device app.
         }
     ```
 
-1. Update the `Main` method. Add the following lines after the statements creating a handler for the device method.
+1. Update the `Main` method. Add the following lines after the statements creating a handler for the direct method.
 
     ```cs
             // Get the device twin to report the initial desired properties.

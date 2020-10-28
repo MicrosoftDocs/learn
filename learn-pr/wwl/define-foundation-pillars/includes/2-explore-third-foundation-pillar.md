@@ -1,6 +1,6 @@
 
 
-Another pillar in our holistic view of DevOps is Architecture. A well-designed architecture is like a highway that can rapidly deliver business value to the end user. When it's not done right, it’s like a washed-out bridge blocking you from your end goals.
+A well-designed **architecture** is like a highway that can rapidly deliver business value to the end user. When it's not done right, it’s like a washed-out bridge blocking you from your end goals.
 
 ### Introduction to software architecture
 

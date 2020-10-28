@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.student-evangelism.install-code-tools-python-nasa
+metadata:
+  title: Install coding tools for Python development
+  description: Learn about what coding is and install tools to help you code.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Install coding tools for Python development
+summary: Learn about what coding is and install tools to help you code.
+abstract: |
+  In this module, you will learn:
+  - What a programming language is
+  - How to install Visual Studio Code and about the benefits of this code editor
+  - How to install extensions to enhance the Visual Studio Code experience
+  - How to install Python and why it is such a popular programming language
+  - How to run a basic Jupyter Notebook within Visual Studio Code
+prerequisites: |
+  - A Windows, Mac, or Linux computer
+  - Knowledge of how to download programs from the Internet
+iconUrl: /learn/achievements/student-evangelism/install-code-tools-python-nasa.svg
+levels:
+- beginner
+roles:
+- student
+products: 
+- vs-code
+units:
+- learn.student-evangelism.install-code-tools-python-nasa.1-introduction
+- learn.student-evangelism.install-code-tools-python-nasa.2-about-programming-language
+- learn.student-evangelism.install-code-tools-python-nasa.3-visual-studio-code
+- learn.student-evangelism.install-code-tools-python-nasa.4-python
+- learn.student-evangelism.install-code-tools-python-nasa.5-install-vs-code
+- learn.student-evangelism.install-code-tools-python-nasa.6-install-vs-code-online
+- learn.student-evangelism.install-code-tools-python-nasa.7-install-python
+- learn.student-evangelism.install-code-tools-python-nasa.8-install-extensions
+- learn.student-evangelism.install-code-tools-python-nasa.9-create-jupyter-file
+- learn.student-evangelism.install-code-tools-python-nasa.9a-knowledge-check
+- learn.student-evangelism.install-code-tools-python-nasa.10-summary
+badge:
+  uid: learn.student-evangelism.install-code-tools-python-nasa.badge

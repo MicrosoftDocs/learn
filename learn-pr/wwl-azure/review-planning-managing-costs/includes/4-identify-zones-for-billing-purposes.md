@@ -8,7 +8,7 @@ Billing zones help determine the cost of services you are using.
 
 
 
-A Zone is a geographical grouping of Azure Regions for billing purposes. the following Zones exist and include the sample regions as listed below:
+A Zone is a geographical grouping of Azure Regions for billing purposes. The following Zones exist and include the sample regions as listed below:
 
 + **Zone 1** – West US, East US, Canada West, West Europe, France Central and others
 

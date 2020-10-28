@@ -13,7 +13,9 @@ We'll go deeper into Azure DevOps in future modules. You can also check out thes
 * [Azure DevOps](https://azure.com/devops?azure-portal=true)
 * [DevOps Resource Center](https://docs.microsoft.com/azure/devops/learn?azure-portal=true)
 
-## General recommendations for migrating and consolidating tools to Azure DevOps
+## Appendix: General recommendations for migrating and consolidating tools to Azure DevOps
+
+The following sections are optional. They provide additional information beyond what's covered in this module.
 
 You've seen how analyzing all your existing artifacts and tools is the first step toward designing a DevOps strategy. Once you've done that, here are a few recommendations for developing migration and integration strategies you can use if you're using Azure DevOps.
 

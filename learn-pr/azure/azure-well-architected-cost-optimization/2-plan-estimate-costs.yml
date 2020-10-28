@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of the following tools could you use to estimate costs for a new application you are deploying on Azure?'
+  - content: 'Which of the following tools can you use to estimate costs for a new application you are deploying on Azure?'
     choices:
     - content: 'Azure Resource Manager'
       isCorrect: false
@@ -31,14 +31,14 @@ quiz:
       isCorrect: true
       explanation: 'Azure Pricing Calculator can be used to estimate costs for services used for a new application on Azure.'
 
-  - content: 'Which of the following would be considered a technical requirement for your application that would impact Azure resource cost?'
+  - content: 'Which of the following would be considered a technical requirement for your application that would affect Azure resource costs?'
     choices:
     - content: 'The ability for users to cancel orders.'
       isCorrect: false
       explanation: 'This would be a business requirement for the application.'
     - content: 'The ability for customers to upload and store image files in your application.'
       isCorrect: true
-      explanation: 'This would impact Azure costs, as you would need to account for the storage of images on an Azure service.'
+      explanation: 'This would affect Azure costs, because you would need to account for the storage of images on an Azure service.'
     - content: 'Sending notifications to procurement when inventory is low.'
       isCorrect: false
       explanation: 'This would be a business requirement for the application.'

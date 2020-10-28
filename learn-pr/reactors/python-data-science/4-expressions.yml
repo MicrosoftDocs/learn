@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.python-data-science.4-expressions
+title: Expressions
+metadata:
+  title: Expressions in Python for data science
+  description: Learn how to use expressions in Python for data science.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-expressions.md)] 
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What result will the expression `1 > 2 and 3 < 2` return?"
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Incorrect. The second part of the expression is false, so the expression results in `False`."
+    - content: "False"
+      isCorrect: true
+      explanation: "Correct."
+
+  - content: "What result will the expression `1 < 2 and 3 > 2` return?"
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "False"
+      isCorrect: false
+      explanation: "Incorrect. Both parts of the expression are true. The expression results in `True`."
+
+  - content: "What result will the expression `1 > 2 and 3 > 2` return?"
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Incorrect. The first part of the expression is false, so the expression results in `False`."
+    - content: "False"
+      isCorrect: true
+      explanation: "Correct."
+      
+  - content: "What result will the following input return? <br>
+              `i = 7` <br>
+              `(i == 2) or not (i % 2 != 0 and 1 < i < 5)`"
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "False"
+      isCorrect: false
+      explanation: "Incorrect. The Boolean **or** operator requires only one simple expression in a compound expression to be true for the whole expression to return `True`."

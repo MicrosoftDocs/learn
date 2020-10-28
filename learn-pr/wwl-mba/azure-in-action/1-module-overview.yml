@@ -1,14 +1,15 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn-wwl.azure-in-action.1-module-overview
 title: Module overview
 metadata:
   title: Module overview
-  description: Introduction to the Azure in action demos
-  ms.date: 5/23/2019
-  author: kimrit
-  ms.author: v-kimrit
+  description: "Introduction to the Azure in action demos"
+  ms.date: 08/01/2020
+  author: wwlpublish
+  ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/1-module-overview.md)] 
+  [!include[](includes/1-module-overview.md)]

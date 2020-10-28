@@ -30,7 +30,7 @@ In almost all cases, attackers are after data:
 
 - Stored in a database
 - Stored on disk inside virtual machines
-- Stored on a SaaS application such as Office 365
+- Stored on a SaaS application such as Microsoft 365
 - Stored in cloud storage
 
 It's the responsibility of those storing and controlling access to data to ensure that it's properly secured. Often there are regulatory requirements that dictate the controls and processes that must be in place to ensure the confidentiality, integrity, and availability of the data.

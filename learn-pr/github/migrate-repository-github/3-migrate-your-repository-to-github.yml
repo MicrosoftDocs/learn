@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.migrate-repository-github.3-migrate-your-repository-to-github
+title:  Exercise - Migrating your repository to GitHub
+metadata:
+  title:  Exercise - Migrating your repository to GitHub
+  description: Prepare and execute a successful migration to GitHub.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 29
+content: |
+  [!include[](includes/3-migrate-your-repository-to-github.md)]

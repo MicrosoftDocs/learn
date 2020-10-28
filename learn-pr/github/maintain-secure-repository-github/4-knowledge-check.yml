@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.github.maintain-secure-repository-github.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check what you've learned.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the best way to make sure you're integrating the most secure versions of your project dependencies?"
+    choices:
+    - content: "Configure your package files to always use the latest versions of dependencies."
+      isCorrect: false
+      explanation: "This practice is generally a bad idea because it can introduce breaking changes or unexpected behavior in your software."
+    - content: "Check each project's security details closely before adding it to your dependencies by confirming its version status across multiple advisory sites."
+      isCorrect: false
+      explanation: "Even if this practice helps you start off with a secure version of a given dependency, it will not ensure that you are safe from future vulnerabilities. You would need to constantly monitor every package to ensure compliance, which may be infeasible."
+    - content: "Enable **Dependabot** for your repository."
+      isCorrect: true
+      explanation: "Dependabot will scan your repository's dependency manifests and notify you via pull request whenever a version you rely is marked as insecure."
+  - content: "Suppose one of your source projects relies on secrets kept in a folder called `.secrets`. You would like to make sure that the files kept in this folder on development machines are not inadvertently committed to the repository. Which of these files will best help enforce this policy?"
+    choices:
+    - content: "`SECURITY.md`"
+      isCorrect: false
+      explanation: "`SECURITY.md` is used to explain the security policy of your project to consumers and contributors, but it does not automate anything."
+    - content: "`.gitignore`"
+      isCorrect: true
+      explanation: "`.gitignore` can be used to help enforce which files are included in commits by tools that respect it. However, note that this policy is enforced by the client and does not necessarily prevent users from committing files that violate policy."
+    - content: "`CONTRIBUTING.md`"
+      isCorrect: false
+      explanation: "`CONTRIBUTING.md` is used to explain the contribution policy of your project, but it does not automate anything."
+  - content: "Suppose someone has inadvertently committed a sensitive API key stored in the `.secrets` folder. What is the correct way to scrub that information from GitHub?"
+    choices:
+    - content: "Use `git` to remove the unwanted commit and update historical references. Then contact GitHub support to run garbage collection and invalidate the Git cache."
+      isCorrect: true
+      explanation: "This approach is the correct process to remove the data moving forward. However, if you feel someone may have accessed the key while it was available, you should replace the key with a new one."
+    - content: "Delete the sensitive file from GitHub. Then commit an empty file to the same location to overwrite it."
+      isCorrect: false
+      explanation: "This approach will not remove the sensitive data from your commit history."
+    - content: "This is a trick question. Once you commit something to GitHub, it lives forever. That's why globally unique hashes are used to identify everything."
+      isCorrect: false
+      explanation: "Fortunately, this answer is not exactly the case. It is possible to remove commits containing sensitive data from GitHub so that they may not be accessed in the future."

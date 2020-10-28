@@ -22,4 +22,4 @@ You typically deploy Azure Firewall on a central virtual network to control gene
 - Network rules that define source address, protocol, destination port, and destination address.
 
 > [!div class="checklist"]
-> - [Azure Application Gateway](https://azure.microsoft.com/services/application-gateway?azure-portal=true) also provides a firewall, called the **Web Application Firewall** (WAF). WAF provides centralized, inbound protection for your web applications against common exploits and vulnerabilities. 
+> - [Azure Application Gateway](https://azure.microsoft.com/services/application-gateway?azure-portal=true) also provides a firewall, called the [**Web Application Firewall** (WAF)](https://azure.microsoft.com/services/web-application-firewall/). WAF provides centralized, inbound protection for your web applications against common exploits and vulnerabilities. 

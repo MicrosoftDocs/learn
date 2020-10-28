@@ -1,26 +1,23 @@
-## What it is about
+Threat modeling is an effective technique to help you identify threats and find ways to reduce risk. You'll choose to focus on identifying what needs to be protected, or how an attacker could operate in the system.
 
-Threat modeling is an effective technique to help you identify threats and find ways to reduce or eliminate risk. 
+## Focusing on what's important
 
-The process begins when you decide whether to focus on what needs to be protected or who it needs protection from.
+Having the right focus helps you tailor the threat modeling exercise to produce quality results.
 
-## Why is it important?
+Examples include:
 
-Having the right focus helps you tailor the threat modeling exercise to produce quality results. Examples include:
+- Designing a file sharing application and focusing on protecting its processes, data stores, and data-flow.
+- Designing a file sharing application and focusing on learning more about the attacker.
+    - Include the attacker's motives and possible means to target your application
 
-- Designing a file sharing application and focusing on protecting its processes, data stores and data-flow
-- Designing a file sharing application and focusing on learning more about the attacker, their motives and means to target your application
-
-In this module, you'll explore what it means to conduct a system focused threat modeling exercise. 
-
-You'll also learn the high-level differences between system, asset, and attacker focused approaches.
+In this module, you'll explore what it means to conduct a system focused threat modeling exercise. You'll also learn the high-level differences between system, asset, and attacker-focused approaches.
 
 ## Learning objectives
 
-In this module, you will be able to:
+In this module, you'll be able to:
 
 - Define a system focused threat modeling exercise
-- Explain the high-level differences between the system, asset, and attacker focused approaches
+- Explain the high-level differences between the system, asset, and attacker-focused approaches
 
 ## Prerequisites
 

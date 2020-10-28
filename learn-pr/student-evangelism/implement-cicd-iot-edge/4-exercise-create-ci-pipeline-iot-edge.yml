@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.implement-cicd-iot-edge.exercise-create-ci-pipeline-iot-edge
+title: Exercise - Create a CI pipeline for IoT Edge with Azure DevOps
+metadata:
+  title: Exercise - Create a CI pipeline for IoT Edge with Azure DevOps
+  description: In this section, we guide the learner to create a CI pipeline for IoT Edge.
+  ms.date: 06/22/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-exercise-create-ci-pipeline-iot-edge.md)]

@@ -23,6 +23,6 @@ The impact of inclusive design is more than just the products that people use. I
 
 - [Microsoft Design, Inclusive 1010 Toolkit – Manual](https://www.microsoft.com/design/inclusive/)
 - [United States Census Bureau](https://www.census.gov/)
-- [Limbs for Life Foundation](http://limbsforlife.org/about-lfl/)
+- [Limbs for Life Foundation](https://www.limbsforlife.org/about)
 - [Amputee Coalition](https://www.amputee-coalition.org/) 
-- [Disability Statistics Center at the UCSF](https://abledata.acl.gov/organizations/disability-statistics-center-university-californiasan-francisco) 
+- [Disability Statistics Center at the UCSF](https://disability.ucsf.edu/) 

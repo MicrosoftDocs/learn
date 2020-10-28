@@ -1,4 +1,4 @@
-In this section, we'll discuss how you can decide whether IoT Hub is the right choice for your solution. We'll list some of the criteria that you can use to create IoT solutions s in the cloud that are capable of scaling. Because IoT Hub is central to the use of Azure IoT in the cloud, all IoT solutions will use IoT Hub. However, the exact configuration of IoT Hub you should use depends on selection criteria listed below.
+In this section, we'll discuss how you can decide whether IoT Hub is the right choice for your solution. We'll list some of the criteria that you can use to create IoT solutions in the cloud that are capable of scaling. Because IoT Hub is central to the use of Azure IoT in the cloud, all IoT solutions will use IoT Hub. However, the exact configuration of IoT Hub you should use depends on selection criteria listed below.
 
 ## Decision criteria
 

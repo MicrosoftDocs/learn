@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.aspnet-configurationbuilder.1-introduction
+title: Introduction
+metadata:
+  title: Introduction to the module
+  description: Introduction
+  ms.date: 06/30/2020
+  author: coderandhiker
+  ms.author: chrisrt
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
+  

@@ -1,6 +1,6 @@
-In this exercise, you'll modify and update your ImageClassification_RTApp_MT3620_BareMetal sample project you newly renamed. Start with installing the Microsoft sample project as a baseline. You'll copy weights and parameter from the project and update your source code.
+In this exercise, you'll modify and update the ImageClassification_RTApp_MT3620_BareMetal sample project that you newly renamed. Start with installing the Microsoft sample project as a baseline. You'll copy weights and parameters from the project and update your source code.
 
-1. Go to the directory you want to clone the repository.
+1. Go to the directory where you want to clone the repository.
 
 2. Clone the [Microsoft sample image classification repository](https://github.com/MicrosoftDocs/mslearn-oxford-image-classification-azure-sphere).
 
@@ -8,23 +8,23 @@ In this exercise, you'll modify and update your ImageClassification_RTApp_MT3620
    git clone https://github.com/MicrosoftDocs/mslearn-oxford-image-classification-azure-sphere.git
    ```
 
-3. Navigate to mslearn-oxford-image-classification-azure-sphere folder and open CMSISNN-Cifar10 project sample on your computer.
+3. Navigate to the mslearn-oxford-image-classification-azure-sphere folder and open the CMSISNN-Cifar10 project sample on your computer.
 
-4. Copy CMSIS library folder and paste it into your ImageClassification_RTApp_MT3620_BareMetal project folder.
+4. Copy the CMSIS library folder and paste it into your ImageClassification_RTApp_MT3620_BareMetal project folder.
 
-5. Copy include folder and paste it into your ImageClassification_RTApp_MT3620_BareMetal project folder.
+5. Copy the include folder and paste it into your ImageClassification_RTApp_MT3620_BareMetal project folder.
 
-6. Copy main.c file in CMSISNN-cifar10 project folder and replace it with main.c file in ImageClassification_RTApp_MT3620_BareMetal project folder.
+6. Copy the main.c file in the CMSISNN-cifar10 project folder and replace it with the main.c file in the ImageClassification_RTApp_MT3620_BareMetal project folder.
 
-7. Go back to Visual Studio Code and refresh Explorer. You'll see CMSIS and include folders are added to your explorer.
+7. Go back to Visual Studio Code and refresh the explorer. You'll see that CMSIS and include folders are added.
 
    ![The illustration shows how to refresh the explorer.](../media/refresh-explorer.png)
 
-8. Open main.c file. You'll see the parameter, weights and input are defined in main.c. You'll add the directory path in the next step so that it will not give an error.
+8. Open the main.c file. You'll see the parameters, weights and input are defined in main.c. You'll add the directory path in the next step so that it will not give an error.
 
-   ![The illustration shows weights, parameter and input files.](../media/include-files.png)
+   ![The illustration shows weights, parameters and input files.](../media/include-files.png)
 
-9. Open CMakeLists.txt to modify.
+9. Open CMakeLists.txt to modify it.
 
    - Add required libraries.
 
@@ -59,6 +59,6 @@ In this exercise, you'll modify and update your ImageClassification_RTApp_MT3620
      					${CMAKE_SOURCE_DIR}/CMSIS/NN/Include/)
      ```
 
-10. When you update CMake file, save your changes. Your CMakeList.txt will look like:
+10. When you update the CMake file, save your changes. Your CMakeList.txt file will look like:
 
     ![The illustration shows CMakeList after adding libraries and directories.](../media/modified-cmake.png)

@@ -1,0 +1,23 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.aspnet-configurationbuilder.4-exercise-aspnet-configurationbuilder
+title: Exercise - Configure an Azure web app with ConfigurationBuilder
+metadata:
+  title: Exercise - Configure an Azure web app with ConfigurationBuilder
+  description: In this unit, you use ConfigurationBuilder to configure an Azure web app and help protect sensitive configuration data.
+  ms.date: 06/30/2020
+  author: coderandhiker
+  ms.author: chrisrt
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+interactive: powershell
+azureSandbox: true
+content: |
+  [!include[](includes/4-exercise-aspnet-configurationbuilder.md)]
+tasks:
+- action: exists
+  environment: azure
+  hint: "Create an Azure key vault."
+  azure:
+    resource:
+      type: "Microsoft.KeyVault/vaults"

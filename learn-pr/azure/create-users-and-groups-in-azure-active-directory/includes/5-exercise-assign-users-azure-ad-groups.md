@@ -50,5 +50,14 @@ You can change the group to use dynamic assignment. Membership then depends on w
 
 
 1. Select **Save**.
+1. The **Add members** button is now disabled.
 
 You've now modified a group to use dynamic assignment.
+
+## Change group back to assigned
+
+You'll need to assign a guest user to the Developer group in the next exercise. So let's changes the membership type back to assigned.
+
+1. In the **Developer group**, select **Properties**. 
+1. Change **Membership type** to **Assigned**.
+1. Select **Save**.

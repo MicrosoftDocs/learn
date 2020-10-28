@@ -113,7 +113,7 @@ SELECT id, productName FROM catalog.items
 
 :::row:::
   :::column span="3":::
-Azure Cosmos DB's Azure Table API provides support for applications that are written for Azure Table Storage that need premium capabilities like global distribution, high availability, scalable throughput. The original Table API only allows for indexing on the Partition and Row keys; there are no secondary indexes. Storing table data in Comsos DB automatically indexes all the properties, and requires no index management.
+Azure Cosmos DB's Azure Table API provides support for applications that are written for Azure Table Storage that need premium capabilities like global distribution, high availability, scalable throughput. The original Table API only allows for indexing on the Partition and Row keys; there are no secondary indexes. Storing table data in Cosmos DB automatically indexes all the properties, and requires no index management.
   :::column-end:::
   :::column:::
 :::image type="icon" border="false" source="../media/../media/table-api.png":::

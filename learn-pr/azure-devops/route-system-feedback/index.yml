@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azdo.route-system-feedback
 metadata:
-  title: Route system feedback to development teams - Learn
+  title: Route system feedback to development teams
   description: Learn how continuous monitoring and dashboards give you insight into how customers use your software and where patterns of failure occur.
   ms.date: 12/20/2019
   author: tpetchel

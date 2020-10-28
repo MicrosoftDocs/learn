@@ -19,18 +19,18 @@ Console.WriteLine($"Our new product, {newProduct} offers a return of {newReturn:
 
 Console.WriteLine("Here's a quick comparison:\n");
 
-string comparrisonMessage = "";
+string comparisonMessage = "";
 
-comparrisonMessage = currentProduct.PadRight(20);
-comparrisonMessage += String.Format("{0:P}", currentReturn).PadRight(10);
-comparrisonMessage += String.Format("{0:C}", currentProfit).PadRight(20);
+comparisonMessage = currentProduct.PadRight(20);
+comparisonMessage += String.Format("{0:P}", currentReturn).PadRight(10);
+comparisonMessage += String.Format("{0:C}", currentProfit).PadRight(20);
 
-comparrisonMessage += "\n";
-comparrisonMessage += newProduct.PadRight(20);
-comparrisonMessage += String.Format("{0:P}", newReturn).PadRight(10);
-comparrisonMessage += String.Format("{0:C}", newProfit).PadRight(20);
+comparisonMessage += "\n";
+comparisonMessage += newProduct.PadRight(20);
+comparisonMessage += String.Format("{0:P}", newReturn).PadRight(10);
+comparisonMessage += String.Format("{0:C}", newProfit).PadRight(20);
 
-Console.WriteLine(comparrisonMessage);
+Console.WriteLine(comparisonMessage);
 ```
 
 This code is merely "*one possible solution*" because a lot depends on how you decided to implement the logic.  As long as you used the techniques that we covered in this module to format strings, pad strings, and so on, and the output matches the challenge output, then you did great!

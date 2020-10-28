@@ -55,7 +55,6 @@ s
 
 This is the first time we've seen methods, but methods are not unique to
 strings. As we will see shortly, other types of objects can have them.
- have them.
 
 ## Check your knowledge
 

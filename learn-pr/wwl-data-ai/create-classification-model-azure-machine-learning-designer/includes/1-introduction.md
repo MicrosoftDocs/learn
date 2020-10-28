@@ -11,6 +11,6 @@ In this module, you'll learn how to:
 
 - Use Azure Machine Learning designer to train a classification model.
 - Use a classification model for inferencing.
-- Deploy a classification model as a service. 
+- Deploy a classification model as a service.        
 
 To complete this module, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com?azure-portal=true).

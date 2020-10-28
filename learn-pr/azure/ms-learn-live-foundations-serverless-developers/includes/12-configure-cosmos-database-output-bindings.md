@@ -16,11 +16,11 @@ The main difference, however, is the declaration of the setting "direction" to "
 - Enter "outputProduct" as the name for the binding
 - Use "maindb" for the database name
 - Use "data" for the collection name
+- Enter "false" since the database and collection already exist
 - Use "CONNECTION_STRING" for the connection string setting 
 - If Visual Studio Code is logged in to the Azure user account, it can retrieve the connection string directly, otherwise use the portal and get it there.
-- Leave the Document ID empty
 - Use "product" for the partition key value
-- Leave SQL query empty
+- Leave throughput empty
 
 Explore function.json and check what has been generated. 
 

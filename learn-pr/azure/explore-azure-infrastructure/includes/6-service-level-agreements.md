@@ -16,9 +16,11 @@ There are three key characteristics of SLAs for Azure products and services:
 1. Service credits
 
 ### Performance Targets
+
 An SLA defines performance targets for an Azure product or service. The performance targets that an SLA defines are specific to each Azure product and service. For example, performance targets for some Azure services are expressed as uptime guarantees or connectivity rates.
 
 ### Uptime and Connectivity Guarantees
+
 A typical SLA specifies performance-target commitments that range from 99.9 percent ("three nines") to 99.999 percent ("five nines"), for each corresponding Azure product or service. These targets can apply to such performance criteria as uptime or response times for services.
 
 The following table lists the potential cumulative downtime for various SLA levels over different durations:
@@ -34,6 +36,7 @@ The following table lists the potential cumulative downtime for various SLA leve
 For example, the SLA for the Azure Cosmos DB (Database) service SLA offers 99.999 percent uptime, which includes low-latency commitments of less than 10 milliseconds on DB read operations as well as on DB write operations.
 
 ### Service Credits
+
 SLAs also describe how Microsoft will respond if an Azure product or service fails to perform to its governing SLA's specification.
 
 For example, customers may have a discount applied to their Azure bill, as compensation for an under-performing Azure product or service. The table below explains this example in more detail.

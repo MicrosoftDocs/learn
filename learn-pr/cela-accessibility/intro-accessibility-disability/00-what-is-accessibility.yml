@@ -9,6 +9,6 @@ metadata:
   ms.author: erzelman
   ms.topic: interactive-tutorial
   ms.prod: learning-cela-accessibility
-durationInMinutes: 3
+durationInMinutes: 18
 content: |
   [!include[](includes/00-what-is-accessibility.md)]

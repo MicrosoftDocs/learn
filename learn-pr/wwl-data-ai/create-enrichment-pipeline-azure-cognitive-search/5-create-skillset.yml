@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.create-skillset
+title: Create a skillset
+metadata:
+  title: Create a skillset
+  description: "Create a skillset for your enrichment pipeline."
+  ms.date: 10/29/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-create-skillset.md)]

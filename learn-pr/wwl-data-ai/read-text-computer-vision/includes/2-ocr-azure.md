@@ -21,9 +21,6 @@ Many times an image contains text.  It can be typewritten text or handwritten.  
 
 The Computer Vision service provides two application programming interfaces (APIs) that you can use to read text in images: the **OCR** API and the **Read** API.
 
-> [!NOTE]
-> There is a third option, the *Recognize Text* API, but that is being deprecated.  As a result, we won't discuss the Recognize Text API in this module.
-
 ### The OCR API
 
 The OCR API is designed for quick extraction of small amounts of text in images. It operates synchronously to provide immediate results, and can recognize text in numerous languages.
@@ -35,13 +32,6 @@ When you use the OCR API to process an image, it returns a hierarchy of informat
 - **Words** in each line of text
 
 For each of these elements, the OCR API also returns *bounding box* coordinates that define a rectangle to indicate the location in the image where the region, line, or word appears.
-
-The OCR API does have some requirements and limitations that you need to be aware of.
-
-- image format - JPEG, PNG, GIF, and BMP formats are supported
-- image size - must be between 50 x 50 and 4200 x 4200 pixels
-- rotation angle - the text in the image can be rotated 0, 90, 180, 270 degrees and small angles up to 40 degrees
-- dominant text - if text is dominant in the image, false positives may occur from partially recognized words
 
 ### The Read API
 
@@ -62,12 +52,3 @@ The results from the Read API are arranged into the following hierarchy:
 - **Words** - The words in a line of text.
 
 Each line and word includes bounding box coordinates indicating its position on the page.
-
-Like the OCR option, there are specific requirements around the images that the service can work with.  The Read API formats are expanded over OCR as listed here:
-
-- image format - supported formats are JPEG, PNG, BMP, PDF, TIFF
-- image size - for images, 50 x 50 and 10000 x 10000 pixels.  PDF pages must be 17 inches x 17 inches or smaller
-- file size - less than 20 MB
-
-> [!NOTE]
-> If you are using the free-tier subscription, only the first two pages of a PDF or TIFF documents will be processed.  Paid subscriptions support up to 200 pages and a maximum of 300 lines per page.

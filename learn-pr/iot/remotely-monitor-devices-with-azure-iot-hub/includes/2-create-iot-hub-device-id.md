@@ -16,7 +16,7 @@ In this unit, we'll first create an IoT Hub, and add a single device to that hub
     > A single _partition_ has a maximum number of concurrent readers processing data. In our cheese cave scenario, we only have one reader (the back-end service app), so could get away with one partition. However, if high telemetry throughput is an issue, increasing the number of partitions, and number of concurrent connected readers, will aid in increasing efficiency.
 
 1. Now, select **Review + create**, this option gives you a chance to verify your choices before clicking **Create**, and building the hub. Building your hub can take a few minutes.
-1. With a sandbox, a containing resource with a name such as **Microsoft.IoTHub-&lt;id&gt;** is created. From this containing resource, click **Go to resource** to go to the home page for your temporary hub.
+1. Click **Go to resource**, to go to the home page for your new IoT hub.
 1. It's a good idea to bookmark the home page of your IoT Hub.
 
 ## Create an IoT Hub device identity
@@ -62,7 +62,16 @@ For C# versions of the code, you also need the _Event Hubs-compatible endpoint_,
 
 1. Copy the strings that are returned back to your text file.
 
-    The endpoint string will be something like "sb://iothub-ns-cheesexxxx-xxxxxxx-xxxxxxxxxx.servicebus.windows.net/". The path will be a lower-case version of your hub name. The service key will be a coded string, similar to any primary key in the Azure portal. These strings replace the `<your event hub endpoint>`, `<your event hub path>`, and `<your event hub Sas key>` strings, respectively, in an upcoming unit.
+    >[!TIP]
+    >The endpoint will look similar to this string:
+    >
+    >"sb://iothub-ns-cheesexxxx-xxxxxxx-xxxxxxxxxx.servicebus.windows.net/".
+    >
+    >The path will be a lower-case version of your hub name.
+    >
+    >The service key will be a character string, similar to any primary key in the Azure portal.
+    >
+    >These strings replace the `<your event hub endpoint>`, `<your event hub path>`, and `<your event hub Sas key>` strings, respectively, in an upcoming unit.
 
 ::: zone-end
 

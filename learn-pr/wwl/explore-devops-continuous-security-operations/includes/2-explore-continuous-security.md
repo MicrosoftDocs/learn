@@ -2,81 +2,66 @@
 
 Continuous Security is one of the eight capabilities in the DevOps taxonomy.
 
-![Diagram shows the eight DevOps capabilities. It lists example practices for Continuous Security: Security architecture, Access/identity management, Application/data security, Secure infrastructure, Secure Operations, and Compliance and risk governance.](../media/5-2-capabilities.png)
-
-Each capability identifies example practices. They aren't exhaustive lists.
-
 ### Discover why Continuous Security is necessary
 
-The time between disclosure and exploit in production is shrinking. When a vulnerability is disclosed, not only does the affected party get the notice, but the hacker gets it too.
+Cyber-crime is an inevitable fact of the digital times we live in. Many organizations are being attacked daily by criminals doing it to do damage or by hackers doing it for fun. As well as our organizations, we as users of third party services are also possible targets for these attacks.
 
-Let's look at the **Equifax breach** in 2017, which resulted from an attacker exploiting a web application using an open-source framework.
+Here are some real-life examples.
 
-On March 6, 2017, Apache Foundation announced a new vulnerability and available patch for its Struts 2 framework. Soon after, Equifax, one of the credit reporting agencies that assess the financial health of many consumers in the US, started notifying selected customers that it suffered a breach. In September 2017, Equifax announced its breach publicly  worldwide.
-The breach affected 145.4 million consumers in the US and 8000 in Canada. A total of 15.2 million records were compromised in the UK, including sensitive data affecting 700,000 consumers. In March 2018, Equifax announced that 2.4 million more US consumers were affected than originally disclosed.
+|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Icon for issue affecting Yahoo](../media/5-2-icon-1.png) | **Yahoo**: In 2013, all 3 billion Yahoo user accounts were affected by data theft. The investigation indicated the stolen information didn't include passwords in clear text, payment card data, or bank account details.                                                                                                                                                       |
+| ![Icon for issue affecting Uber](../media/5-2-icon-3.png)      | **Uber**: In 2016 hackers accessed the personal information of 57 million riders. At the time of the breach, Uber paid hackers $100,000 to destroy the data. They didn't tell regulators or users that their information was stolen. They disclosed the breach a year later.                                                                                                                                                                             |
+| ![Icon for issue affecting Instagram](../media/5-2-icon-4.png)       | **Instagram**: In 2017, an Instagram hack affected millions of accounts and resulted in exposing users' phone numbers. The numbers ended up in a data base where people could search for victim's contact information for $10 per search.                                                                                                                                                                                                                                                                                             |
+| ![Icon for issue affecting Facebook](../media/5-2-icon-5.png)        | **Facebook**: In 2018, hackers stole detailed personal data from 14 million Facebook users. Stolen data included search results, recent locations, and hometowns.                                                                                                                                                                              |
+| ![Icon for issue affecting Equifax](../media/5-3-icon-5.png)        | **Equifax**: On March 6, 2017, Apache Foundation announced a new vulnerability and available patch for its Struts 2 framework. Soon after, Equifax, one of the credit reporting agencies that assess the financial health of many consumers in the US, started notifying selected customers that it suffered a breach. In September 2017, Equifax announced its breach publicly worldwide. The breach affected 145.4 million consumers in the US and 8000 in Canada. A total of 15.2 million records were compromised in the UK, including sensitive data affecting 700,000 consumers. In March 2018, Equifax announced that 2.4 million more US consumers were affected than originally disclosed. |
 
-All organizations need to understand that manual remediation is no longer feasible. Patching, testing, and release must be automated as much as possible to reduce fix time, especially for systems with access to critical data.
+Today, the advice given by Michael Hayden (former director of the NSA and the CIA) is to assume that you have been breached, and that defense-in-depth at each level should be central to an organization’s security posture. According to Hayden, there are two types of companies: those that have been breached, and those that don’t know it yet.
 
-Today, the advice given by Michael Hayden (former director of the NSA and the CIA) is to **assume that you have been breached**, and that defense-in-depth at each level should be central to an organization’s security posture. According to Hayden, there are two types of companies: those that have been breached, and those that don’t know they’ve been breached.
+The Microsoft product group philosophy, which inspires their DevSecOps approach, is:
 
-The Product Group philosophy, which inspires their DevSecOps approach, is to assume you have been breached, the bad actors are already in the network with internal access, and that defense-in-depth is essential.
+- to assume you have been breached
+- the bad actors are already in the network with internal access
+- defense-in-depth is essential.
+
+#### You are only as secure as your weakest link
+Organizations are installing applications everywhere. They rely on web and mobile applications to engage customers and software to run a massive new wave of Internet of Things (IoT) devices. But these apps are exposing firms to increasing risk; when asked how external attackers carried out successful attacks, global network path security decision makers whose companies had been breached in the previous 12 months said the top two attack methods were direct web application attacks and taking advantage of vulnerable software.
+And firms are only going to funnel more customers and data through these vulnerable targets for the foreseeable future. Forrester predicts that the majority of businesses will see 76% to 100% of their total sales through digital products and/or products sold online by 2022. So security pros must focus on securing applications.
+
+> [!div class="centered"]
+> ![Diagram depicts the results of the State of Application Security, 2020 showing that applications remain the most common attack vector. 42% of external attacks were carried out through software vulnerability. 35% were carried out through web applications. 27% were carried out through use of stolen credentials. 25% were due to exploitation of lost or stolen asset, and 24% due to strategic web compromise. 24% were distributed denial of service attacks. 22% were due to mobile malware. 21% were DNS attacks. 18% were due to phishing. 15% were ransomware attacks. 6% of the attacks were committed through social engineering.](../media/5-2-report.png)
+
+Image source: [The State Of Application Security, 2020, Forrester Research, Inc., May 4, 2020](https://www.forrester.com/report/The+State+Of+Application+Security+2020/-/E-RES159057)
 
 ### What is Continuous Security?
 
-Continuous Security is a practice that ensures security is an integral part of the software delivery lifecycle.
+Security is the application of technologies, processes, and controls to protect systems, networks, programs, devices, and data from unauthorized access or criminal use.
 
->[!IMPORTANT]
->Continuous Security maintains a holistic view of:
->
->- Secure architecture
->- Governance, risk, and compliance
->- App security – the code itself must be created with security in mind
->- Data security
->- Infrastructure security
->- Operations security
->- Endpoint security (for components such as APIs and web services), with secure access provided by credentials and client access white lists
->- Identity and access security
+Security provides confidentiality, integrity, and availability assurances against deliberate attacks and abuse of valuable data and systems. 
 
-### Compare Continuous Security practices to the practices in a traditional software development lifecycle
+> [!IMPORTANT]
+> It is important to highlight that security is not focused on mistakes, but on deliberate attacks. This is important, because they would require different countermeasures: for mistakes, a simple notification or request of confirmation may do, for malicious actions, definitely not.
 
-In a traditional software development lifecycle, testing is done just before go-live. This approach often leads to new bugs discovered that must be fixed through code changes, redeployment, and retesting, and there is much potential for waste and delays. This approach has a direct impact on the delivery date of the functionality.
+**Continuous Security** is a practice that ensures security is an integral part of the software delivery lifecycle.  Continuous security in DevOps should cover a holistic view of security including security culture, secure software delivery, and secure infrastructure.  
 
-**Security** is often considered in the testing stages as part of a security resilience test. In most cases, this will lead to changes for the service in terms of hardening, which often means rework.
+Continuous security requires mindset change, education, and automation.
 
-**Collaboration** between operations, security and compliance, and developers is often done reactively through incident management and problem management processes.
+There are three elements to establish continuous security:
 
-Traditionally there have been many attempts by organizations to double down on automation, led by a focus on silos and looking for areas of impact for automation. Although such programs are sure to deliver benefits, they have much less potential impact than DevOps teams have.
+- A strong security focus within the organization’s **culture**
+- An **infrastructure** implemented and operated by adopting latest security recommended practices
+- A **software delivery process** that focuses on security, such as the Microsoft Security Development Lifecycle (SDL)
 
-![Diagram shows the traditional software lifecycle. Testing is done before go-live.](../media/5-2-traditional.png)
+The three principles in DevOps that need to be taken into consideration in every capability so also in continuous security are:
 
-**Continuous Security** is holistic, shift-left, and automated. In other words, it's continuous.
+|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Icon for shift left](../media/5-2-shift.png) | **Shift left** means to anticipate security activities and conduct them earlier in the software delivery process instead of downstream from the process. Studies have demonstrated that fixing bugs earlier in the development cycle has a significant impact on costs and losses.                                                                                                                                                      |
+| ![Icon for automation](../media/5-2-automation.png)          | **Automation** of repetitive actions is key to helping reduce the possibility of mistakes. This approach allows tasks and processes that are typically infrequent, such as deployment, to be conducted more frequently. |
+| ![Icon for continuous improvement](../media/5-2-ci.png)      | **Continuous improvement** is achieved through analysis of current behaviors and identification of possibilities for optimization.                                                                                                                                                                             |
 
->[!NOTE]
->The culture, mindset and collaboration between Development, Security, and Operations are now continuous. They don't work together just at the end of the lifecycle, in Operations. Also, when Development, Security, and Operations come together to fix production issues, they have already worked together.
+> [!div class="centered"]
+> ![Diagram depicts the elements of continuous security: shifting left, continuous improvement and automation. These elements combined with the secure infrastructure, security culture and secure software delivery, and represent a holistic approach to security.](../media/5-2-elements.png)
 
-Learning and education are also holistic. Instead of doing security at the last step, in Operations, it can be incorporated earlier and in an integrated way.
-
-![Diagram shows Continuous Security spanning across the software delivery lifecycle.](../media/5-2-continuous.png)
-
-### Grow your security DevOps culture
-
-Help your organization grow their security DevOps culture by promoting awareness, building your principles, and living by them.
-
-To **promote awareness**, everyone must understand why Continuous Security is a critical aspect of a DevOps process. Organizations should:
-
-- Use training to increase awareness.
-- Ensure transparency to disclose identified security issues.
-- Enable learning from previous faults and from each other.
-
-With awareness in place, it should be simple to define **security principles**. Examples include:
-- Assume a breach has already happened.
-- Embrace fault and design your systems to face unexpected behaviors. Use chaos engineering or fault injection.
-- Define "done" for every artifact produced and ensure the necessary security checks and practices are present.
-- Align with your organization’s core values so that security concerns resonate with them and do not cause friction in the implementation.
-
-And finally, **live by your principles**:
-- Identify the non-negotiables.
-- Perform regular security activities such as red-blue games.
-- Perform regular chaos or alt injection exercises.
-- Don’t forget the continuity of the process! Loop back your learnings for Continuous Improvement.
-
+> [!IMPORTANT]
+> When the three principles of shifting left, automation, and continuous improvement are combined with the elements of continuous security: Culture, Software Delivery and Infrastructure, they represent a holistic approach to security.

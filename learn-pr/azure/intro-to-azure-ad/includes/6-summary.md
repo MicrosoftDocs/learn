@@ -11,3 +11,4 @@ To learn more about Azure AD, see the following articles:
 - [Azure AD documentation](https://docs.microsoft.com/azure/active-directory/)
 - [What is Azure AD?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 - [Azure AD feature deployment guide](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2)
+- [Quickstart: Set up a tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)

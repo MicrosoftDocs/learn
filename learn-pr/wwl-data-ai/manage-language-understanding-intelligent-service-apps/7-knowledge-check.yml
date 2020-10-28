@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-language-understanding-intelligent-service-apps.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/26/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is the limit on the Starter Key that is provided in your LUIS app?"
+    choices:
+    - content: "Can only be accessed from the region in which it is created."
+      isCorrect: false
+      explanation: "Incorrect. The starter key does not restrict the region for your LUIS app."
+    - content: "You can only have one authoring endpoint and no prediction endpoints."
+      isCorrect: false
+      explanation: "Incorrect. The starter key does not prevent your app from having a prediction endpoint."
+    - content: "1000 prediction endpoint requests per month for free."
+      isCorrect: true
+      explanation: "Correct. The starter key allows 1000 prediction endpoint requests per month for free.  Access may be through the browser, API, or SDK."
+  - content: "What is the recommended method to create a new version of your LUIS app so you can make changes?"
+    choices:
+    - content: "Create a new LUIS app with a different name."
+      isCorrect: false
+      explanation: "Incorrect. Creating a different name will create a new app and not generate a new version."
+    - content: "Clone an existing app."
+      isCorrect: true
+      explanation: "Correct. The recommended method for creating a new LUIS app version is to clone an existing version and then make changes to the cloned app, saving it as a new version."
+    - content: "Export an existing version, change the AppID, and then import it as a new version."
+      isCorrect: false
+      explanation: "Incorrect. There is a versionId property that can be changed, but that is reserved for merging changes from multiple contributors' exported files."
+  - content: "Where would you find examples of utterances that your users have entered, while interacting with your LUIS app?"
+    choices:
+    - content: "They are stored as part of the Intents in the app."
+      isCorrect: false
+      explanation: "Incorrect. You can add the user entered utterances to the Intents but they are not automatically added when users interact with the app."
+    - content: "On the Review endpoint utterances page on the Build tab."
+      isCorrect: true
+      explanation: "Correct. Phrases entered by your users are found in the Review endpoint utterances page."
+    - content: "On the Features page of your LUIS app."
+      isCorrect: false
+      explanation: "Incorrect. User entered phrases are not found under Features."

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-sentinel.4-when-to-use-azure-sentinel
+title: When to use Azure Sentinel
+metadata:
+  title: When to use Azure Sentinel
+  description: when to use Azure Sentinel
+  ms.date: 09/21/2020
+  author: deanobalino
+  ms.author: debryen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-when-to-use-azure-sentinel.md)]

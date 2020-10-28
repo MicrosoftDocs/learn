@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms.select-monitor-entities
+title: Select and monitor entities
+metadata:
+  title: Select and monitor entities
+  description: "Select and monitor entities"
+  ms.date: 08/14/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/06-select-monitor-entities.md)]

@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-iaas-vm-network-security.groups-windows-iaas-vms
+title: Implement network security groups and Windows IaaS VMs
+metadata:
+  title: Implement network security groups and Windows IaaS VMs
+  description: "Implement network security groups and Windows IaaS VMs"
+  ms.date: 09/25/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/02-implement-network-security-groups-windows-iaas-virtual-machines.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "What's the purpose of the default network security group rules?"
+    choices:
+    - content: "These default rules exist so that an administrator doesn't need to create any rules of their own."
+      isCorrect: false
+      explanation: "That's incorrect. These rules function as a baseline to ensure connectivity between your resources, and between your resources and the internet."
+    - content: "These default rules allow some communication between Azure resources and also outbound communication to the internet."
+      isCorrect: true
+      explanation: "That's correct. When you create a network security group, Azure creates several default rules. These default rules allow connectivity within a virtual network and from Azure load balancers. They also allow outbound communication to the internet, and deny inbound traffic from the internet"
+    - content: "These rules are the only NSG rules that an administrator can create to help secure their Azure resources."
+      isCorrect: false
+      explanation: "That's incorrect. When you create an NSG, Azure creates several default rules. These default rules can't be changed, but can be overridden with your own rules."

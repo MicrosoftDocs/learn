@@ -9,7 +9,7 @@ In this module, you'll create a business workflow using Azure Logic Apps to auto
 In this module, you will:
 
 - Construct a workflow model that will solve your business problem
-- Launch your Logic App in response to an external event
+- Launch your logic app in response to an external event
 - Apply conditional logic to filter data and select a processing path
 - Integrate Azure services into your workflow
 

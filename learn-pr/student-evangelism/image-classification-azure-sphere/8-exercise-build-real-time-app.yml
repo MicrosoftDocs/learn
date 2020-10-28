@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.image-classification-azure-sphere.exercise-build-real-time-app
-title: Exercise - Build a real time image classification application
+title: Exercise - Build a real-time image classification application
 metadata:
-  title: Exercise - Build a real time image classification application
-  description: In this section, we help the learner to build a real time image classification application.
+  title: Exercise - Build a real-time image classification application
+  description: In this section, we help the learner to build a real-time image classification application.
   ms.date: 06/19/2020
   author: leestott
   ms.author: leestott

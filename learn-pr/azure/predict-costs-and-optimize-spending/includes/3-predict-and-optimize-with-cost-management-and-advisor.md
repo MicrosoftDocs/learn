@@ -34,11 +34,11 @@ Let's take a look at where you can find Azure Advisor in the portal.
 
 Clicking on the **Cost** box will take you to detailed recommendations where you can see the recommendations that Advisor has.
 
-![Screenshot of Azure portal Advisor showing the cost recommendations portion with two high impact virtual machine recommendations.](../media/3-advisor-cost-recommendations.png)
+![Screenshot of Azure portal Advisor showing the cost recommendations portion with two high impact virtual machine recommendations of using reserved instances and right-size or shutdown of underutilized VMs.](../media/3-advisor-cost-recommendations.png)
 
 Clicking on any recommendation will take you to the details for that specific recommendation. Then you'll be able to take a specific action, such as resizing virtual machines to reduce spending.
 
-![Screenshot of Azure portal Advisor showing several virtual machines to resize or shut down for potential savings.](../media/3-advisor-resize-vm.png)
+![Screenshot of Azure portal Advisor showing several specific virtual machines to resize or shut down and their potential savings.](../media/3-advisor-resize-vm.png)
 
 These recommendations are all places where you might be inefficiently spending money. They're a great place to start and continue to revisit when looking for places to reduce costs. In our example, there's an opportunity for us to save around $700 per month if we take these recommendations. This savings adds up, so be sure to review these recommendations periodically across all areas.
 
@@ -46,6 +46,6 @@ These recommendations are all places where you might be inefficiently spending m
 
 Azure Cost Management is another free, built-in Azure tool that can be used to gain greater insights into where your cloud money is going. You can see historical breakdowns of what services you are spending your money on and how it is tracking against budgets that you have set. You can set budgets, schedule reports, and analyze your cost areas.
 
-![Screenshot of the Azure portal Cost analysis section of the Cost Management pane showing a cost chart rising steadily for several days and plateauing for the last few days.](../media/3-cost-management.png)
+![Screenshot of Azure portal Cost analysis section of the Cost Management pane showing a cost chart rising steadily for several days and plateauing for the last few days.](../media/3-cost-management.png)
 
 As you can see, Azure offers tools at no additional cost that you can use to track and predict your cloud spend and identify where your environment may be inefficient from a cost perspective. You'll want to make sure you make it a regular practice to review the reports and recommendations that these tools make available, so you can unlock savings across your cloud footprint.

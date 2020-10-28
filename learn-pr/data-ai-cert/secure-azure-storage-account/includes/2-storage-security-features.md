@@ -8,6 +8,8 @@ After Contoso's competitor has a data breach, Contoso tasks the network administ
 - Control who can access data
 - Audit storage access
 
+> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Exploring-Azure-Storage-Account-security-features/player?format=ny]
+
 ## Encryption at rest
 
 All data written to Azure Storage is automatically encrypted by Storage Service Encryption (SSE) with a 256-bit Advanced Encryption Standard (AES) cipher. SSE automatically encrypts data when writing it to Azure Storage. When you read data from Azure Storage, Azure Storage decrypts the data before returning it. This process incurs no additional charges and doesn't degrade performance. It can't be disabled.

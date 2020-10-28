@@ -105,7 +105,7 @@ CREATE EXTERNAL TABLE dbo.Temp (
     [Day Of Month] decimal(38, 0) NULL
 )
 WITH (
-    LOCATION='/',
+    LOCATION='../',
     DATA_SOURCE=AzureStorage,
     FILE_FORMAT=TextFile
 );

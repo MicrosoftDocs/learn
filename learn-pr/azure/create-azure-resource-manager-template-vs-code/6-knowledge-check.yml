@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-resource-manager-template-vs-code.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 07/08/2020
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is an Azure Resource Manager template?"
+    choices:
+    - content: "A series of Azure CLI commands to deploy infrastructure to Azure."
+      isCorrect: false
+      explanation: "An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for your deployment. ARM templates allow you to declare what you intend to deploy without having to write the sequence of programming commands to create it."
+    - content: "A JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your deployment."
+      isCorrect: true
+      explanation: "An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for your deployment. ARM templates allow you to declare what you intend to deploy without having to write the sequence of programming commands to create it."
+    - content: "A script held in Azure Resource Manager to manage your Azure storage account."
+      isCorrect: false
+      explanation: "An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for your deployment. ARM templates allow you to declare what you intend to deploy without having to write the sequence of programming commands to create it."
+  - content: "Which one of these is *not* an element of an Azure Resource Manager template?"
+    choices:
+    - content: "idempotent"
+      isCorrect: true
+      explanation: "The elements of an Azure Resource Manager template are *schema*, *contentVersion*, *apiProfile*, *parameters*, *variables*, *functions*, *resources*, and *output*."
+    - content: "schema"
+      isCorrect: false
+      explanation: "The elements of an Azure Resource Manager template are *schema*, *contentVersion*, *apiProfile*, *parameters*, *variables*, *functions*, *resources*, and *output*."
+    - content: "parameters"
+      isCorrect: false
+      explanation: "The elements of an Azure Resource Manager template are *schema*, *contentVersion*, *apiProfile*, *parameters*, *variables*, *functions*, *resources*, and *output*."
+  - content: "Azure Resource Manager templates are idempotent. This means that if you run a template with no changes a second time:" 
+    choices:
+    - content: "Azure Resource Manager will deploy new resources as copies of the previously deployed resources."
+      isCorrect: false
+      explanation: "If the resource already exists and no change is detected in the properties, no action is taken. If the resource already exists and a property has changed, the resource is updated. If the resource doesn't exist, it's created."
+    - content: "Azure Resource Manager won't make any changes to the deployed resources."
+      isCorrect: true
+      explanation: "If the resource already exists and no change is detected in the properties, no action is taken. If the resource already exists and a property has changed, the resource is updated. If the resource doesn't exist, it's created."
+    - content: "Azure Resource Manager will delete the previously deployed resources and redeploy them."
+      isCorrect: false
+      explanation: "If the resource already exists and no change is detected in the properties, no action is taken. If the resource already exists and a property has changed, the resource is updated. If the resource doesn't exist, it's created."

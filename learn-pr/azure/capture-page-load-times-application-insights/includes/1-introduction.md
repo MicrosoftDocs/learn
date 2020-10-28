@@ -1,4 +1,6 @@
-Application Insights is the Azure service for monitoring live web applications. You can enable it for an Azure App Service web app without modifying any of the app's code.
+Application Insights, a feature of Azure Monitor, is an extensible Application Performance Management (APM) service for developers and DevOps professionals. It monitors live web applications and you can enable it for many Azure App Service web apps without modifying any of the app's code.
+
+Application Insights also works for apps on a wide variety of platforms including .NET, Node.js, Java, and Python hosted on-premises, hybrid, or any public cloud. In several cases, application monitoring can be enabled without making any changes to code using auto-instrumentation or codeless attach. Additionally, Application Insights SDKs can be used to instrument apps in cases where custom events collection is required, or codeless attach is not yet supported.
 
 Imagine that you work for a company that makes digital video cameras. You have an App Service web app that enables users of your products to upload and share their videos with the community.
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.2-extract-features
+metadata:
+  title: Extract features from an image for AI processing
+  description: Learn the steps to take to extract features from images to use the images for AI predictions.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Extract features from an image for AI processing
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-extract-features.md)]

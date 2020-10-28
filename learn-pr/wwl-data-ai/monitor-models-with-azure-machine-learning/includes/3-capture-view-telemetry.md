@@ -1,6 +1,6 @@
 Application Insights automatically captures any information written to the standard output and error logs, and provides a query capability to view data in these logs.
 
-## Writing log data
+## Write log data
 
 To capture telemetry data for Application insights, you can write any values to the standard output log in the scoring script for your service by using a `print` statement, as shown in the following example:
 
@@ -18,7 +18,7 @@ def run(raw_data):
 
 Azure Machine Learning creates a *custom dimension* in the Application Insights data model for the output you write.
 
-## Querying logs in Application Insights
+## Query logs in Application Insights
 
 To analyze captured log data, you can use the Log Analytics query interface for Application Insights in the Azure portal. This interface supports a SQL-like query syntax that you can use to extract fields from logged data, including custom dimensions created by your Azure Machine Learning service.
 

@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-introduction.3-cost-optimization
 title: Cost optimization
 metadata:
   title: Cost optimization
-  description: Learn about the ways that you can design your cloud architecture to optimize for cost.
+  description: Learn about how you can design your cloud architecture to optimize for cost.
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
@@ -21,54 +21,39 @@ quiz:
     - content: 'Archiving infrequently accessed data to an archive storage tier.'
       isCorrect: false
       explanation: 'Archiving infrequently accessed data is a great way to lower costs.'
-    - content: 'Utilizing a service that automatically adjusts resources that are provisioned to match user load.'
+    - content: 'Using a service that automatically adjusts resources that are provisioned to match user load.'
       isCorrect: false
       explanation: 'Automatically matching capacity to demand will help you lower your costs.'
     - content: 'Pooling databases to share provisioned capacity.'
       isCorrect: false
       explanation: 'You can reduce your overall costs by sharing resources across multiple databases.'
-    - content: 'Running a development environment overnight that is only used during business hours.'
+    - content: 'Running a development environment overnight that is used only during business hours.'
       isCorrect: true
-      explanation: 'A non-production environment that is unused outside of business hours could be shut down to reduce costs.'
+      explanation: 'A non-production environment that is unused outside business hours can be shut down to reduce costs.'
 
   - content: 'Which of the following is a good practice to reduce costs?'
     choices:
     - content: 'Conducting regular reviews of cloud bills to identify abnormal increases in spend.'
       isCorrect: true
-      explanation: 'You should regularly review your bills to identify any abnormalities in your spend, as well as identifying areas where you could reduce costs.'
+      explanation: 'You should regularly review your bills to identify any abnormalities in your spend, as well as identifying areas where you can reduce costs.'
     - content: 'Letting all IT teams have access to provision virtual machines of any size.'
       isCorrect: false
       explanation: 'You should restrict access to allow provisioning of only the VM sizes that are appropriate and necessary for the workload.'
     - content: 'Provisioning the same capacity in development environments as for production, even though resource requirements are substantially lower in development environments.'
       isCorrect: false
-      explanation: 'Overprovisioning in development environments is an example of waste. By reducing the provisioned capacity, you could reduce costs.'
+      explanation: 'Overprovisioning in development environments is an example of waste. By reducing the provisioned capacity, you can reduce costs.'
     - content: 'Provisioning virtual machines that include licensing costs rather than using a bring-your-own-license image.'
       isCorrect: false
       explanation: 'Take advantage of licenses that you already own to save costs.'
 
-  - content: "Suppose you have recently moved your application to the cloud and your monthly bill seems higher than expected. The utilization level of your VM is high enough that you are hesitant to downsize. What might be a reasonable next step you could take to help you find inefficiencies?"
+  - content: "Suppose you have recently moved your application to the cloud and your monthly bill seems higher than expected. The utilization level of your VM is high enough that you're hesitant to downsize. What might be a reasonable next step you can take to help you find inefficiencies?"
     choices:
-    - content: "Wait a month and recheck your bill"
+    - content: "Wait a month and recheck your bill."
       isCorrect: false
-      explanation: "This will tell you where you are spending money, but it will not help you determine the efficiency level of the components of your system."
-    - content: "Increase the amount of application testing you do before each release"
+      explanation: "This will tell you where you're spending money, but it won't help you determine the efficiency level of the components of your system."
+    - content: "Increase the amount of application testing you do before each release."
       isCorrect: false
-      explanation: "This can improve the quality of your application, but generally would not help you identify infrastructure inefficiencies."
-    - content: "Add monitoring and instrumentation to your application"
+      explanation: "This can improve the quality of your application but generally wouldn't help you identify infrastructure inefficiencies."
+    - content: "Add monitoring and instrumentation to your application."
       isCorrect: true
-      explanation: "Continuous monitoring will give you the data you need to find cost savings. For example, you might find that demand is extremely variable, and multiple small VMs with autoscale might cost less than the single large VM you currently use."
-
-  # - content: "Which of the following is an example of improving operational efficiency?"
-  #   choices:
-  #   - content: "Automating the deployment of infrastructure"
-  #     isCorrect: true
-  #     explanation: "Automating the deployment of infrastructure is a great example of improving your operational efficiency."
-  #   - content: "Moving services from PaaS to IaaS"
-  #     isCorrect: false
-  #     explanation: "Moving services from PaaS to IaaS is a step backwards in operational efficiency, as PaaS services typically come with reduced operational costs."
-  #   - content: "Documenting manual steps for the deployment of infrastructure"
-  #     isCorrect: false
-  #     explanation: "Documentation is important with any architecture, but operational improvement comes with automating the manual activities as opposed to simply documenting them."
-  #   - content: "Maintaining multiple logging systems"
-  #     isCorrect: false
-  #     explanation: "Maintaining multiple logging systems comes with increased operational overhead and a reduced ability to correlate events and metrics across the logging systems. Centralizing on a single login system can improve operational efficiency."
+      explanation: "Continuous monitoring will give you the data that you need to find cost savings. For example, you might find that demand is extremely variable, and multiple small VMs with autoscale might cost less than the single large VM you currently use."

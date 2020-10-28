@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.python-data-science.12-functions
+title: Functions
+metadata:
+  title: Functions in Python for data science
+  description: Learn how to pass and receive data from functions in Python for data science.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 2
+content: |
+  [!include[](includes/12-functions.md)] 

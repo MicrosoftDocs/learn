@@ -9,7 +9,7 @@ Microsoft Azure Storage is a managed service that provides durable, secure, and 
 | **Scalable** | Azure Storage is designed to be massively scalable to meet the data storage and performance needs of today's applications. |
 | **Managed** | Microsoft Azure handles maintenance and any critical problems for you. |
 
-A single Azure subscription can host up to 200 storage accounts, each of which can hold 500 TB of data. If you have a business case, you can talk to the Azure Storage team and get approval for up to 250 storage accounts in a subscription, which pushes your max storage up to 125 Petabytes!
+A single Azure subscription can host up to 200 storage accounts, each of which can hold 500 TB of data.
 
 ## Azure data services
 

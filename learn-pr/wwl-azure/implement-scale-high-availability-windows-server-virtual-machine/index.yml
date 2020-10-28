@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.implement-scale-high-availability-with-windows-server-vm
+metadata:
+  title: Implement scale and high availability with Windows Server VM
+  description: "You'll learn how to implement scaling for virtual machine scale sets and load-balanced VMs. You'll also learn how to implement Azure Site Recovery."
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement scale and high availability with Windows Server VM
+summary: You'll learn how to implement scaling for virtual machine scale sets and load-balanced VMs. You'll also learn how to implement Azure Site Recovery.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe virtual machine scale sets.
+  - Implement scaling.
+  - Implement load-balancing virtual machines.
+  - Implement Azure Site Recovery.
+prerequisites: |
+  In order to get the best learning experience from this module, it's important that you have knowledge and experience of the following:
+  - Managing the Windows Server operating system (OS) and Windows Server workloads in on-premises scenarios, including Active Directory Domain Services (AD DS), Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services.
+  - Common Windows Server management tools.
+  - Core Microsoft compute, storage, networking, and virtualization technologies.
+  - On-premises resiliency Windows Server-based compute and storage technologies.
+  - Implementing and managing IaaS services in Azure.
+  - Azure Active Directory (Azure AD).
+  - Security-related technologies (firewalls, encryption, multi-factor authentication).
+  - Windows PowerShell scripting.
+  - Automation and monitoring.
+iconUrl: /learn/achievements/implement-scale-and-high-availability-with-windows-server-vm.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-cloud-shell
+- azure-portal
+- azure-virtual-machines
+units:
+- learn.wwl.implement-scale-high-availability-with-windows-server-vm.introduction
+- learn.wwl.implement-scale-high-availability-with-windows-server-vm.describe-virtual-machine-scale-sets
+- learn.wwl.implement-scale-high-availability-with-windows-server-vm.implement-scaling
+- learn.wwl.implement-scale-high-availability-with-windows-server-vm.implement-load-balancing-vms
+- learn.wwl.implement-scale-high-availability-with-windows-server-vm.create-vm-scale-set-azure-portal
+- learn.wwl.implement-scale-high-availability-with-windows-server-vm.describe-azure-site-recovery
+- learn.wwl.implement-scale-high-availability-with-windows-server-vm.implement-azure-site-recovery
+- learn.wwl.implement-scale-high-availability-with-windows-server-vm.knowledge-check
+- learn.wwl.implement-scale-high-availability-with-windows-server-vm.summary
+badge:
+  uid: learn.wwl.implement-scale-high-availability-with-windows-server-vm.badge

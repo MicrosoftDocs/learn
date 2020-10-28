@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.azure-sql-deploy-configure
+metadata:
+  title: Deploy and configure servers, instances, and databases for Azure SQL
+  description: Deploy and configure servers, instances, and databases for Azure SQL
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy and configure servers, instances, and databases for Azure SQL
+summary: In this module, you'll learn about the process of deploying and configuring Azure SQL. Through hands-on exercises, you'll deploy and configure Azure SQL Database specifically. You'll also see comparisons to both Azure SQL Managed Instance and SQL Server. In addition to the Azure portal, you'll work with SSMS, Azure Data Studio (including SQL notebooks), and the Azure CLI.
+abstract: | 
+  In this module, you'll learn how to:
+  - Plan for a deployment of Azure SQL
+  - Deploy and verify Azure SQL by using common tools and interfaces
+  - Configure Azure SQL after deployment
+  - Load data into Azure SQL
+prerequisites: | 
+  - Experience working with, maintaining, and developing with SQL Server
+  - Experience with Azure, such as deploying and managing resources
+iconUrl: /learn/achievements/azure-sql-deploy-configure.svg
+levels:
+- beginner
+roles:
+- solution-architect
+- database-administrator
+products:
+- azure
+units:
+- learn.azure-sql-deploy-configure.1-introduction
+- learn.azure-sql-deploy-configure.2-plan-deploy-verify
+- learn.azure-sql-deploy-configure.3-exercise-deploy-database
+- learn.azure-sql-deploy-configure.4-exercise-verify-database
+- learn.azure-sql-deploy-configure.5-configure-database
+- learn.azure-sql-deploy-configure.6-exercise-configure-database
+- learn.azure-sql-deploy-configure.7-load-data
+- learn.azure-sql-deploy-configure.8-exercise-load-data
+- learn.azure-sql-deploy-configure.9-summary
+badge:
+  uid: learn.azure-sql-deploy-configure.badge

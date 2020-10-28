@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.optimize-query-performance-sql-server
+metadata:
+  title: Optimize query performance in SQL Server
+  description: Analyze individual query performance and determine where improvements can be made. Explore performance-related Dynamic Management Objects. Investigate how indexes and database design affect queries.
+  ms.date: 08/23/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Optimize query performance in SQL Server
+prerequisites: |
+  - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based
+  - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
+  - Basic understanding of structure and usage of SQL Server indexes
+  - Basic understanding of relational database concepts
+summary: |
+  Analyze individual query performance and determine where improvements can be made. Explore performance-related Dynamic Management Objects. Investigate how indexes and database design affect queries.
+iconUrl: /learn/achievements/optimize-query-performance-in-sql-server.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- database-administrator
+- developer
+products:
+- azure-sql-database
+- sql-server
+modules:
+- learn.wwl.describe-sql-server-query-plans
+- learn.wwl.evaluate-performance-improvements
+- learn.wwl.explore-performance-based-design
+trophy:
+  uid: learn.wwl.optimize-query-performance-sql-server.tyophy

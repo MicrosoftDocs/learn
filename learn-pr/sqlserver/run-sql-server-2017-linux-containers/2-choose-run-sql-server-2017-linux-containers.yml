@@ -5,8 +5,8 @@ metadata:
   title: Choose to run SQL Server on Linux containers
   description: In this unit, you will learn what containers are and how they differ from other virtualization technologies.
   ms.date: 06/11/2019
-  author: alistairmatthews
-  ms.author: v-alism
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 durationInMinutes: 5

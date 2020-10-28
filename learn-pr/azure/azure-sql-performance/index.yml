@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure-sql-performance
+metadata:
+  title: Deliver consistent performance with Azure SQL
+  description: Deliver consistent performance with Azure SQL
+  ms.date: 08/05/2020
+  author: rgward
+  ms.author: bobward
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deliver consistent performance with Azure SQL
+summary: Azure SQL has the capabilities and tools to allow you to deliver consistent performance for your application. In this module, you will learn key aspects of configuration, monitoring, and intelligent performance for Azure SQL.
+abstract: | 
+  In this module, you will:
+  - Identify the performance capabilities of Azure SQL
+  - Configure and maintain the performance features of Azure SQL
+  - Monitor and troubleshoot performance in Azure SQL
+  - Improve performance with intelligent insights
+prerequisites: | 
+ - Experience working with, maintaining, and developing with SQL Server
+ - Experience with Azure, such as deploying and managing resources
+iconUrl: /learn/achievements/azure-sql-performance.svg
+levels:
+- beginner
+roles:
+- solution-architect
+- database-administrator
+products:
+- azure
+- azure-sql-database
+units:
+- learn.azure-sql-performance.1-introduction
+- learn.azure-sql-performance.2-performance-capabilities
+- learn.azure-sql-performance.3-configure-maintain-performance
+- learn.azure-sql-performance.4-monitor-troubleshoot-performance
+- learn.azure-sql-performance.5-exercise-monitor-troubleshoot-performance
+- learn.azure-sql-performance.6-accelerate-tune-performance
+- learn.azure-sql-performance.7-exercise-scale-performance
+- learn.azure-sql-performance.8-exercise-optimize-app-performance
+- learn.azure-sql-performance.9-intelligent-performance
+- learn.azure-sql-performance.10-summary
+badge:
+  uid: learn.azure-sql-performance.badge

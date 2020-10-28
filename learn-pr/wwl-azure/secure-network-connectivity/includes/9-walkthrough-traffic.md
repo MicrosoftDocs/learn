@@ -8,7 +8,7 @@ In this walk-through, we will configure a network security group.
 
 ## Task 1: Create a virtual machine
 
-In this task, we will create a Windows Server 2019 Datacenter virtual machine. 
+In this task, we will create a Windows Server 2019 Datacenter - Gen1 virtual machine. 
 
 1. Sign in to the [Azure portal (https://portal.azure.com)](https://portal.azure.com?azure-portal=true).
 
@@ -22,7 +22,7 @@ In this task, we will create a Windows Server 2019 Datacenter virtual machine.
     | Resource group | **myRGSecure** (create new) |
     | Virtual machine name | **SimpleWinVM** |
     | Location | **(US) East US**|
-    | Image | **Windows Server 2019 Datacenter**|
+    | Image | **Windows Server 2019 Datacenter - Gen1**|
     | Size | **Standard D2s v3**|
     | Administrator account username | **azureuser** |
     | Administrator account password | **Pa$$w0rd1234**|

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-dns-for-windows-server-iaas-vms.troubleshoot-dns
+title: Troubleshoot DNS
+metadata:
+  title: Troubleshoot DNS
+  description: "Troubleshoot DNS"
+  ms.date: 08/14/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/07-troubleshoot-domain-name-system.md)]

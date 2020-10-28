@@ -1,6 +1,6 @@
 :::row:::
   :::column:::
-    ![Image representing Azure virtual machines](../media/3-azure-vms.png)
+    :::image type="icon" source="../media/3-azure-vms.png" border="false":::
   :::column-end:::
   :::column span="3":::
 Azure Virtual Machines (VMs) let you create and use virtual machines in the cloud. They provide infrastructure as a service (IaaS) in the form of a virtualized server and can be used in many ways. Just like a physical computer, you can customize all of the software running on the VM. VMs are an ideal choice when you need:
@@ -41,7 +41,7 @@ An **availability set** is a logical grouping of two or more VMs that help keep 
 
 A _planned maintenance event_ is when the underlying Azure fabric that hosts VMs is updated by Microsoft. A planned maintenance event is done to patch security vulnerabilities, improve performance, and add or update features. Most of the time these updates are done without any impact to the guest VMs. But sometimes VMs require a reboot to complete an update. When the VM is part of an availability set, the Azure fabric updates are sequenced so not all of the associated VMs are rebooted at the same time. VMs are put into different _update domains_. Update domains indicate groups of VMs and underlying physical hardware that can be rebooted at the same time. Update domains are a logical part of each data center and are implemented with software and logic.
 
-_Unplanned maintenance events_ involve a hardware failure in the data center, such as a power outage or disk failure. VMs that are part of an availability set automatically switch to a working physical server so the VM continues to run. The group of virtual machines that share common hardware are in the same _fault domain_. A fault domain is essentially a rack of servers. It provides the physical separation of your workload across different power, cooling, and network hardware that support the physical servers in the data center server racks. In the event the hardware that supports a server rack becomes unavailable, only that rack of servers is affected by the outage.
+_Unplanned maintenance events_ involve a hardware failure in the data center, such as a server power outage or disk failure. VMs that are part of an availability set automatically switch to a working physical server so the VM continues to run. The group of virtual machines that share common hardware are in the same _fault domain_. A fault domain is essentially a rack of servers. It provides the physical separation of your workload across different power, cooling, and network hardware that support the physical servers in the data center server racks. In the event the hardware that supports a server rack becomes unavailable, only that rack of servers is affected by the outage.
 
 With an availability set, you get:
 
@@ -50,7 +50,9 @@ With an availability set, you get:
 
 Your VMs are then sequentially placed across the fault and update domains. The following diagram shows an example where you have six VMs in two availability sets distributed across the two fault domains and five update domains.
 
-![Diagram that shows availability sets update and fault domains that are duplicated across servers](../media/3-availability-sets.png)
+:::image type="complex" source="../media/3-availability-sets.png" alt-text="Diagram showing availability sets update and fault domains that are duplicated across servers.":::
+Two outlines surround fault domain 1 and fault domain 2. Fault domain 1 contains a rack with virtual machine 1 inside update domain 1, virtual machine 3 inside update domain 3, and virtual machine 5 inside update domain 5. Fault domain 2 contains a rack with virtual machine 2 inside update domain 2, virtual machine 4 inside update domain 4, and virtual machine 6 as part of update domain 1. Virtual machine 1 from fault domain 1 and virtual machine 2 from fault domain 2 are part of an availability set. Virtual machine 3 and 5 from fault domain 1 and virtual machine 4 and 6 from fault domain 2 are part of a separate availability set.
+:::image-end:::
 
 There's no cost for an availability set. You only pay for the VMs within the availability set. We highly recommend that you place each workload in an availability set to avoid having a single point of failure in your VM architecture.
 

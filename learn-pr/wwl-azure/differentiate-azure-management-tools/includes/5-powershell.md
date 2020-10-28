@@ -11,11 +11,11 @@ In this walk-through, we will configure the Cloud Shell, use Azure PowerShell mo
 
 In this task, we will configure Cloud Shell. 
 
-1. If using the MS Learn sandbox, you can to Task2.  Else, Sign in to the [Azure portal (https://portal.azure.com)](https://portal.azure.com?azure-portal=true).
+1. If you are using the MS Learn sandbox, you can do Task2.  Otherwise, sign in to the [Azure portal (https://portal.azure.com)](https://portal.azure.com?azure-portal=true).
 
-2. From the Azure portal, open the **Azure Cloud Shell** by clicking on the icon in the top right of the Azure Portal.
+2. From the Azure portal, open the **Azure Cloud Shell** by clicking on the icon in the top right of the Azure portal.
 
-    ![Screenshot of Azure Portal Azure Cloud Shell icon.](../media/1002.png)
+    ![Screenshot of Azure portal Azure Cloud Shell icon.](../media/1002.png)
 
 3. If you have previously used the Cloud Shell, proceed to the next task. 
 
@@ -23,7 +23,7 @@ In this task, we will configure Cloud Shell.
 
 5. When prompted, click **Create storage**, and wait for the Azure Cloud Shell to initialize. 
 
-### Task 2: Verify the [sandbox resource group name] resource group exists, and Create virtual machine
+### Task 2: Verify the <rgn>[sandbox resource group name]</rgn> resource group exists, and Create virtual machine
 
 In this task, we will use PowerShell to create a resource group and a virtual machine.  
 
@@ -39,13 +39,13 @@ In this task, we will use PowerShell to create a resource group and a virtual ma
 
     ```PowerShell
     New-AzVm `
-    -ResourceGroupName "[sandbox resource group name]" `
+    -ResourceGroupName "<rgn>[sandbox resource group name]</rgn>" `
     -Name "myVMPS" `
     -Location "West US" `
     -VirtualNetworkName "myVnetPS" `
     -SubnetName "mySubnetPS" `
     -SecurityGroupName "myNSGPS" `
-    -PublicIpAddressName "myPublicIpPS" `
+    -PublicIpAddressName "myPublicIpPS"
     ```
 
 4. Close the PowerShell session Cloud Shell pane.
@@ -60,7 +60,7 @@ In this task, we will use PowerShell to create a resource group and a virtual ma
 
 In this task, we will practice executing PowerShell commands from the Cloud Shell. 
 
-1. From the Azure portal, open the **Azure Cloud Shell** by clicking on the icon in the top right of the Azure Portal.
+1. From the Azure portal, open the **Azure Cloud Shell** by clicking on the icon in the top right of the Azure portal.
 
 2. Ensure **PowerShell** is selected in the upper-left drop-down menu of the Cloud Shell pane.
 
@@ -73,7 +73,7 @@ In this task, we will practice executing PowerShell commands from the Cloud Shel
 4. Stop the virtual machine. When prompted confirm (Yes) to the action. 
 
     ```PowerShell
-    Stop-AzVM -ResourceGroupName [sandbox resource group name] -Name myVMPS
+    Stop-AzVM -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name myVMPS
     ```
 
 5. Verify your virtual machine state. The PowerState should now be **deallocated**. You can also verify the virtual machine status in the portal. 
@@ -89,7 +89,7 @@ In this task, we will practice executing PowerShell commands from the Cloud Shel
 
 In this task, we will review Azure Advisor recommendations for our virtual machine. 
 
-1. If using the MS Learn sandbox, you can to Task2.  Else, Sign in to the [Azure portal (https://portal.azure.com)](https://portal.azure.com?azure-portal=true).
+1. If you are using the MS Learn sandbox, you can do Task2.  Otherwise, sign in to the [Azure portal (https://portal.azure.com)](https://portal.azure.com?azure-portal=true).
 
 2. From the **All services** blade, search for and select **Advisor**. 
 

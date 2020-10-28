@@ -1,4 +1,4 @@
-Whether your app release is in the hands of your testers, or out on an app store in the hands of your customers, you want them to have a reliable experience. App failures are bound to happen, though, and you will want to know as much as you can about the errors that lead to it. This data can help you find the issue in your code and fix it quickly. That situation is where diagnostics data can help you.
+Whether your app release is in the hands of your testers, or out on an app store in the hands of your customers, you want them to have a reliable experience. App failures are bound to happen, though, and you'll want to know as much as you can about the errors that lead to it. This data can help you find the issue in your code and fix it quickly. That situation is where diagnostics data can help you.
 
 ## What is diagnostics?
 
@@ -6,10 +6,10 @@ Diagnostics is determining when an app has an issue and finding the cause of tha
 
 ## When is data collected?
 
-When you are using the App Center SDK and your app encounters an error that will cause the app the crash, the details are written to local storage before the app unloads. Since your app has encountered an unexpected error, the app is in a state that isn't reliable enough to send the data to App Center. However, when the app is launched by the user again, it will send the diagnostics data to App Center.
+When you're using the App Center SDK and your app encounters an error that will cause the app the crash, the details are written to local storage before the app unloads. Since your app has encountered an unexpected error, the app is in a state that isn't reliable enough to send the data to App Center. However, when the app is launched by the user again, it will send the diagnostics data to App Center.
 
 > [!NOTE]
-> You can configure you app so that users can opt out of the diagnostics data submission process; for example, through a privacy setting.
+> You can configure your app so that users can opt out of the diagnostics data submission process; for example, through a privacy setting.
 
 While your app is running, you can also track specific events. Then, if your app encounters an error that will need to be logged, the data from those events will be available to track the state of your app when the error occurred.
 
@@ -21,7 +21,7 @@ You can rely on the automatic system for gathering details about an app issue. H
 
 When an app issue occurs, data is automatically gathered for you by the App Center SDK so that it can submit it for review. The SDK will collect basic device information and app execution information. It will also collect information on currently running threads.
 
-To help you diagnose issues that are seen by a specific user, you can also attach a user ID to your crashes and errors using the SDK. By default, App Center assigns a unique ID to each installation of your app that isn't tied to any identifying user information. However, you can associate identifying information within your app to the installation ID using the SDK. For example, you can create an association when a user logs into an account in order to create a unique user ID. After you assign a user ID to the data that you send to App Center, you will be able to search for crashes tied to a specific user.
+To help you diagnose issues that are seen by a specific user, you can also attach a user ID to your crashes and errors using the SDK. By default, App Center assigns a unique ID to each installation of your app that isn't tied to any identifying user information. However, you can associate identifying information within your app to the installation ID using the SDK. For example, you can create an association when a user logs into an account in order to create a unique user ID. After you assign a user ID to the data that you send to App Center, you'll be able to search for crashes tied to a specific user.
 
 To help determine the source of your errors, you can also include attachments to your error details before they are submitted. On some platforms, the SDK will allow you to attach custom information in the form of key-value pairs.
 

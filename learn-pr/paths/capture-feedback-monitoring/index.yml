@@ -18,8 +18,6 @@ summary: |
   - Learn different techniques for gathering customer feedback.
   - Learn how Azure Monitor and Application Insights enable continuous monitoring on your applications and on your infrastructure.
   - Tune monitoring to help ensure that alerts you receive are meaningful.
-
-  Take this learning path to help prepare for [Exam AZ-400: Microsoft Azure DevOps Solutions](https://www.microsoft.com/learning/exam-az-400.aspx).
 prerequisites: |
   - [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices)
   - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops)

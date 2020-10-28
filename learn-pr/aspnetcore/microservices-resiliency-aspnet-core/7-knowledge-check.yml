@@ -1,0 +1,83 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-resiliency-aspnet-core.7-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 08/04/2020
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Knowledge check
+durationInMinutes: 7
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What's the primary goal when implementing a resiliency solution for an app?
+      choices:
+        - content: Make the app error-free.
+          isCorrect: false
+          explanation: "Making an app error-free is unlikely."
+        - content: Handling user errors transparently.
+          isCorrect: false
+          explanation: "Users should be provided useful feedback for errors."
+        - content: Handling transient infrastructure failures.
+          isCorrect: true
+          explanation: "Resilience is about mitigating inevitable transient failures in an app's infrastructure."
+        - content: Handling major infrastructure failures.
+          isCorrect: false
+          explanation: "Major infrastructure failures generally aren't transient and require manual intervention."
+    - content: Which of the following sentences is correct?
+      choices:
+        - content: Polly is the best option to handle failures, but it requires a significant amount of work.
+          isCorrect: false
+          explanation: "Polly is one option, but the best option depends on the context. Polly requires only minor code changes."
+        - content: Linkerd can be implemented with little effort, but it only handles TCP connection failures.
+          isCorrect: false
+          explanation: "Linkerd can handle HTTP and SQL connections."
+        - content: Polly and Linkerd can have complementary roles, depending on the context.
+          isCorrect: true
+          explanation: "Polly and Linkerd take different approaches to resiliency and have complementary roles."
+    - content: Which of the following components isn't needed to achieve a resilient app in Kubernetes?
+      choices:
+        - content: CI/CD pipelines.
+          isCorrect: true
+          explanation: "Continuous Integration/Continuous Deployment pipelines aren't required for resiliency."
+        - content: Health check probes for services.
+          isCorrect: false
+          explanation: "Kubernetes clusters use health checks to determine a service's state."
+        - content: Failure handling code for complex database transactions.
+          isCorrect: false
+          explanation: "Complex transactions should always account for failure states."
+        - content: Network-related resiliency infrastructure.
+          isCorrect: false
+          explanation: "Network-related resiliency is required for all networked apps."
+    - content: Which of the following statements isn't true of Linkerd?
+      choices:
+        - content: It can adjust retries and timeouts adapting to the current cluster state.
+          isCorrect: false
+          explanation: "Linkerd can apply adaptive retry and timeout policies."
+        - content: It can monitor the traffic between pods.
+          isCorrect: false
+          explanation: "Linkerd has a systemic view of all the pods in a cluster."
+        - content: It must be included in the app's code.
+          isCorrect: true
+          explanation: "Linkerd is deployed to a cluster without requiring any changes to an app's code."
+        - content: It monitors all incoming and outgoing connections.
+          isCorrect: false
+          explanation: "Linkerd is unconcerned with incoming and outgoing connections."
+    - content: Which of the following statements isn't true of Polly?
+      choices:
+        - content: It can handle retries with exponential back-off.
+          isCorrect: false
+          explanation: "Polly can be configured for retries with exponential back-off."
+        - content: It can ensure resiliency for complex database transactions.
+          isCorrect: false
+          explanation: "Polly can protect complex transactions, including database transactions."
+        - content: It doesn't require app code changes.
+          isCorrect: true
+          explanation: "Polly does require code changes."
+        - content: It must be configured via code for every `HttpClient`.
+          isCorrect: false
+          explanation: "Each `HttpClient` that requires resiliency must be configured via code to use Polly."

@@ -4,7 +4,7 @@ metadata:
   description: Provides an overview of the Azure Device Provisioning Service, X.509 certificates, and individual and group enrollments.
   ms.date: 3/15/2020
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Overview of the Device Provisioning Service, X.509 certificates, and enrollments

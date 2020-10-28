@@ -4,9 +4,9 @@ Beyond detecting spam, we can use machine learning to explore the SMS data more 
 
 The advantage of using cloud-based services is that they provide cutting-edge models that you can access without having to train the models. Using better models can help accelerate both your exploration and your use of machine learning.
 
-Azure provides Cognitive Services APIs that can be consumed using Python to conduct image recognition, speech recognition, and text recognition, just to name a few. We're going to take a look at using the Azure Text Analytics API.
+Azure provides Cognitive Services APIs that can be consumed through Python to conduct image recognition, speech recognition, and text recognition, just to name a few. We're going to take a look at using the Azure Text Analytics API.
 
-First, we’ll start by obtaining a Cognitive Services API key. Note that you can get a free key for seven days (after which you'll be required to pay for continued access to the API).
+We'll start by obtaining a Cognitive Services API key. Note that you can get a free key for seven days. After that, you'll be required to pay for continued access to the API.
 
 Learn more about [pricing for Cognitive Services](https://azure.microsoft.com/pricing/details/cognitive-services/?azure-portal=true).
 
@@ -17,14 +17,14 @@ Learn more about [pricing for Cognitive Services](https://azure.microsoft.com/pr
 1. In the **Microsoft Cognitive Services Terms** window, accept the terms of the free trial, and then select **Next**.
 1. In the **Sign-in to Continue** window, select your preferred way to sign in to your Azure account.
 
-When you have your API keys in hand, you're ready to start. Substitute the API key that you get for the 7-day trial below where it reads ACCOUNT_KEY:
+When you have your API keys in hand, you're ready to start. Substitute the API key that you get for the 7-day trial below `ACCOUNT_KEY`:
 
 ```python
 # subscription_key = 'ACCOUNT_KEY'
 subscription_key = '8efb79ce8fd84c95bd1aa2f9d68ae734'
 assert subscription_key
-# If using a Free Trial account, this URL does not need to be updated.
-# If using a paid account, verify that it matches the region where the 
+# If you're using a free trial account, this URL does not need to be updated.
+# If you're using a paid account, verify that it matches the region where the 
 # Text Analytics Service was set up.
 text_analytics_base_url = "https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.1/"
 ```
@@ -36,7 +36,7 @@ import numpy as np
 import requests
 ```
 
-The Azure Text Analytics API has a hard limit of 1,000 calls at a time, so we need to split our 5,572 SMS messages into at least six chunks to run them through Azure:
+The Azure Text Analytics API has a hard limit of 1,000 calls at a time. So, we need to split our 5,572 SMS messages into at least six chunks to run them through Azure:
 
 ```python
 chunks = np.array_split(df, 6)
@@ -55,10 +55,10 @@ The output is:
 928
 ```
 
-Two things that cognitive services like those provided by Azure offer are language identification and sentiment analysis. Both are relevant for our dataset, so we'll prepare our data for both by submitting them as JavaScript Object Notation (JSON) documents. We'll prepare the data for language identification first:
+Two things that cognitive services, like those provided by Azure, offer are language identification and sentiment analysis. Both are relevant for our dataset, so we'll prepare our data for both by submitting them as JavaScript Object Notation (JSON) documents. We'll prepare the data for language identification first:
 
 ```python
-# Prepare the header for the JSON document including your subscription key
+# Prepare the header for the JSON document, including your subscription key
 headers   = {"Ocp-Apim-Subscription-Key": subscription_key}
 # Supply the URL for the language-identification API.
 language_api_url = text_analytics_base_url + "languages"
@@ -86,7 +86,7 @@ for i in range(len(chunks)):
     chunks[i]['Language'] = np.array(lang_list)
 ```
 
-Now, we need perform similar preparation of the data for sentiment analysis:
+We need perform similar preparation of the data for sentiment analysis:
 
 ```python
 # Supply the URL for the sentiment-analysis API.
@@ -94,7 +94,7 @@ sentiment_api_url = text_analytics_base_url + "sentiment"
 # Iterate over the chunked DataFrame.
 for i in range(len(chunks)):
     
-    # We have alread reset the chunk-indexes, so we don't need to do again.
+    # We have already reset the chunk-indexes, so we don't need to do again.
     # Split up the messages from the DataFrame and put them in JSON format.
     documents = {'documents': []}
     for j in range(len(chunks[i]['Message'])):
@@ -171,7 +171,7 @@ The output is:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ```
 
-Let's see if all of the SMS messages were in English (and, if not, how many messages of which languages we are looking at):
+Let's see if all of the SMS messages were in English (and, if not, how many messages of which languages we're looking at):
 
 ```python
 azure_df.groupby('Language')['Message'].count().plot(kind='bar')
@@ -189,33 +189,33 @@ The overwhelming majority of the messages are in English, although we have sever
 
 ### Try it yourself
 
-Now use the `groupby` method to display actual counts of the languages detected in the dataset rather than a bar chart of them.
+Use the `groupby` method to display actual counts of the languages detected in the dataset rather than a bar chart of them.
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-    ```python
-    azure_df.groupby('Language')['Message'].count()
-    ```
+  ```python
+  azure_df.groupby('Language')['Message'].count()
+  ```
 
-    The output is:
+  The output is:
 
-    ```Output
-    Language
-    (Unknown)     3   
-    Catalan       1   
-    English       5557
-    Filipino      1   
-    German        2   
-    Indonesian    1   
-    Malay         1   
-    Romanian      1   
-    Spanish       2   
-    Swahili       1   
-    Swedish       1   
-    Turkish       1   
-    Name: Message, dtype: int64
-    ```
+  ```Output
+  Language
+  (Unknown)     3   
+  Catalan       1   
+  English       5557
+  Filipino      1   
+  German        2   
+  Indonesian    1   
+  Malay         1   
+  Romanian      1   
+  Spanish       2   
+  Swahili       1   
+  Swedish       1   
+  Turkish       1   
+  Name: Message, dtype: int64
+  ```
 
 </details>
 
@@ -223,9 +223,9 @@ Now use the `groupby` method to display actual counts of the languages detected 
 
 ***
 
-We have a surprising array of languages, perhaps, but the non-English messages are really just outliers and should have no real impact on the spam detection.
+We have a surprising array of languages, perhaps. But the non-English messages are really just outliers and should have no real impact on the spam detection.
 
-Now, let's look at the sentiment analysis for our messages:
+Let's look at the sentiment analysis for our messages:
 
 ```python
 azure_df.groupby('Class')['Sentiment'].plot(kind='hist', bins=50)
@@ -242,30 +242,30 @@ Name: Sentiment, dtype: object
 
 :::image type="content" alt-text="Histogram chart that demonstrates the results of sentiment analysis." source="../media/sentiment-analysis.png" loc-scope="Azure":::
 
-It's perhaps not too surprising that the sentiments represented in the dataset should be bifurcated: SMS is a medium that captures extremes better than nuanced middle ground. That said, the number of dead-center messages is interesting. The proportion of spam messages right in the middle is also interesting. Let's break the two classes (ham and spam) into separate histograms to get a better look.
+It might not be surprising that the sentiments represented in the dataset are bifurcated: SMS is a medium that captures extremes better than nuanced middle ground. That said, the number of dead-center messages is interesting. The proportion of spam messages right in the middle is also interesting. Let's break the two classes (ham and spam) into separate histograms to get a better look.
 
 ### Try it yourself
 
-Break out the single histogram above into two histograms (one for each class of message).
+Break out the preceding single histogram into two histograms (one for each class of message).
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-    Refer back to the code we used earlier in the section.
+  Refer to the code we used earlier in the section.
 
-    ```python
-    azure_df.hist(bins=50,by='Class', column='Sentiment')
-    ```
+  ```python
+  azure_df.hist(bins=50,by='Class', column='Sentiment')
+  ```
 
-    The output is:
+  The output is:
 
-    ```Output
-    array([<matplotlib.axes._subplots.AxesSubplot object at 0x7fd95ed57c18>,
-        <matplotlib.axes._subplots.AxesSubplot object at 0x7fd95ed2f7b8>],
-        dtype=object)
-    ```
+  ```Output
+  array([<matplotlib.axes._subplots.AxesSubplot object at 0x7fd95ed57c18>,
+      <matplotlib.axes._subplots.AxesSubplot object at 0x7fd95ed2f7b8>],
+      dtype=object)
+  ```
 
-    :::image type="content" alt-text="Side-by-side histograms that analyze sentiments in ham and spam." source="../media/sentiment-analysis-ham-spam.png" loc-scope="Azure":::
+  :::image type="content" alt-text="Side-by-side histograms that analyze sentiments in ham and spam." source="../media/sentiment-analysis-ham-spam.png" loc-scope="Azure":::
 
 </details>
 
@@ -273,10 +273,10 @@ Break out the single histogram above into two histograms (one for each class of 
 
 ***
 
-The number of spam messages in our dataset is about a tenth of the amount of ham, yet the number of spam messages with exactly neutral sentiment is about half that of the ham, indicating that spam messages, on average, tend to be more neutral than legitimate messages. We can also notice that non-neutral spam messages tend to have more positive than negative sentiment, which makes intuitive sense.
+The number of spam messages in our dataset is about a tenth of the amount of ham, yet the number of spam messages with exactly neutral sentiment is about half that of the ham. This result indicates that spam messages, on average, tend to be more neutral than legitimate messages. We can also notice that non-neutral spam messages tend to have more positive than negative sentiment, which makes intuitive sense.
 
 > [!div class="alert is-tip"]
 > ### Takeaway
 >
-> Beyond providing additional insight into our data, sophisticated language-identification and sentiment-analysis algorithms provided by cloud-based services like Azure can provide additional details that could potentially help improve spam detection. For example, how patterns of sentiments in spam differ from those in legitimate messages.
+> Beyond providing additional insight into our data, sophisticated language-identification and sentiment-analysis algorithms provided by cloud-based services like Azure can provide details that can potentially help improve spam detection. An example is how patterns of sentiments in spam differ from those in legitimate messages.
 >

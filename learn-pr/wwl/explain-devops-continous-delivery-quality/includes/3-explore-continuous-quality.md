@@ -1,10 +1,6 @@
 
 
-Another capability in the DevOps taxonomy is Continuous Quality.
-
-![Diagram shows the eight DevOps capabilities. It lists example practices for Continuous Quality: Quality Requirements, Shift-lest testing, Governance and standards, Test automation, Compliance and Audits, and Shift-right testing](../media/4-3-cont-qual.png)
-
-Each capability identifies example practices. They aren't exhaustive lists.
+Continuous Quality is one of the eight capabilities in the DevOps taxonomy.
 
 ### Discover why Continuous Quality is necessary
 

@@ -59,7 +59,7 @@ Use these additional resources to learn more about App Service, deployment slots
 * [Stage a web app deployment for testing and rollback by using App Service deployment slots](https://docs.microsoft.com/learn/modules/stage-deploy-app-service-deployment-slots?azure-portal=true)
 * [Set up staging environments in App Service](https://docs.microsoft.com/azure/app-service/deploy-staging-slots?azure-portal=true)
 
-## Recommendations for using feature flags
+## Appendix: Recommendations for using feature flags
 
 Feature flags were one of the release-cadence methods that the team considered. The team decided not to use feature flags, but many people have found them useful. This section provides more information about feature flags. 
 

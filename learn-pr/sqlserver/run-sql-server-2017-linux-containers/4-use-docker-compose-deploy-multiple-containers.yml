@@ -5,8 +5,8 @@ metadata:
   title: Create custom images
   description: In this unit, you will learn how to use Dockerfiles to create customized container images.
   ms.date: 06/11/2019
-  author: alistairmatthews
-  ms.author: v-alism
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 durationInMinutes: 3

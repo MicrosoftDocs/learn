@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-deploy-configure.3-exercise-deploy-database
+metadata:
+  title: Exercise - Deploy Azure SQL Database
+  description: Exercise - Deploy Azure SQL Database
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Deploy Azure SQL Database
+durationInMinutes: 10
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-deploy-database.md)]

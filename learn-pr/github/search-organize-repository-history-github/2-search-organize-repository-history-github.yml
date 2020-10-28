@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.search-organize-repository-history-github.2-search-organize-repository-history-github
+title: How to search and organize repository history by using GitHub
+metadata:
+  title: How to search and organize repository history by using GitHub
+  description: "Learn to search and organize repository history by using filters, blame, and cross-linking on GitHub."
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-search-organize-repository-history-github.md)]

@@ -28,7 +28,7 @@ levels:
 roles:
 - developer
 products:
-- dotnet
+- vs-code
 modules:
 - learn.languages.python-introduction
 - learn.languages.python-install-vscode

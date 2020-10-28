@@ -6,12 +6,9 @@ In this exercise, you'll practice performing Azure Monitor log queries. You'll u
 
 ## Create basic Azure Monitor log queries to extract information from log data
 
-Let's use the **Azure Log Analytics** website to practice writing queries against sample data. This site is provided for demonstration with pre-populated sample data. The user interface is similar to the Azure portal, and you can use the Kusto language.
+Let's use the **Azure Monitor Demo Logs pane** to practice writing queries against sample data. This site is provided for demonstration with pre-populated sample data. The user interface is similar to the Azure portal, and you can use the Kusto language.
 
-1. In your browser, go to the URL https://portal.loganalytics.io/demo#/discover/query/main.
-
-    > [!NOTE]
-    > You can also run queries in your own subscription under **Monitor** > **Logs**. The results depend on the resources that your subscription is using.
+1. In your browser, open the [Azure Monitor Demo Logs pane](https://portal.azure.com/learn.docs.microsoft.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade?azure-portal=true) in the Azure portal.
 
 1. Enter a basic query in the **Type your query here** box. The example query retrieves the details of the most recent 10 security events.
 
@@ -53,4 +50,12 @@ Let's use the **Azure Log Analytics** website to practice writing queries agains
         | summarize dcount(Computer) by endofweek(TimeGenerated) | render barchart kind=default
     ```
 
-You can see from the Kusto queries you used here that it's easy to target a query to a specific time window, event level, or event log type. The security team can easily examine heartbeats to identify when servers are unavailable, which might indicate a denial-of-service attack. If the team spots the time when a server was unavailable, it can query for events in the security log around that time to diagnose whether an attack caused the interruption.
+In addition to writing queries from scratch, the operations team can also take advantage of predefined example queries in Azure Monitor Logs that answer common questions related to the health, availability, usage and performance of their resources. Use the **Time Range** parameter above the query editor to select **Last 24 hours** as the time period of concern. Navigate to the **Queries** tab in the left pane to view a list of the sample queries grouped by Category, Resource Type, Solution or Topic.
+
+1. Leave the Group by setting on **Resource Type**, expand **Virtual Machine** and run the query called **Distinct missing updates cross computers**. This query returns a list missing Windows updates from Virtual Machines sending logs into the workspace.
+
+1. Change the Group by setting to **Category**, expand **Azure Monitor** and run the query called **Computers availability today**. This query shows a time series chart with the number of unique IP addresses sending logs into the workspace each hour for the last day.
+
+1. Change the Group by setting to **Topic**, expand **Firewall Logs**, run the query called **Network rule log data**. This query returns a list of firewall actions the details of the associated network flows.
+
+You can see from the Kusto queries you used here that it's easy to target a query to a specific time window, event level, or event log type. The security team can easily examine heartbeats to identify when servers are unavailable, which might indicate a denial-of-service attack. If the team spots the time when a server was unavailable, it can query for events in the security log around that time to diagnose whether an attack caused the interruption. Additionally, pre-defined queries can also be used to evaluate the availability of VMs, identify missing Windows updates and review firewall logs to view denied network flows intended for the VMs of interest.

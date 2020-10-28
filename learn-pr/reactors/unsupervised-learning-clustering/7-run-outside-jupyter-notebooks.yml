@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.unsupervised-learning-clustering.7-run-outside-jupyter-notebooks
+title: Run outside Jupyter Notebooks
+metadata:
+  title: Run outside Jupyter Notebooks
+  description: Run python outside Jupyter Notebooks.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+  show_latex: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-run-outside-jupyter-notebooks.md)]

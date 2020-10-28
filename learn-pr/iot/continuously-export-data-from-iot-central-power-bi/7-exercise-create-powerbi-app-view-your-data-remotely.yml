@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.continuous-data-export-from-iot-central.exercise-create-powerbi-app-view-your-data-remotely
 metadata:
-  description: Create the Power BI app, import your telemetry data from IoT Central, and view the data.
+  description: In this unit, you create a Power BI app, import your telemetry data from IoT Central, and view the data.
   ms.date: 6/1/2020
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title:  Exercise - create an app and view your data remotely
+title:  Exercise - Create a Power BI app and view your data remotely
 durationInMinutes: 12
 azureSandbox: true
 content: |

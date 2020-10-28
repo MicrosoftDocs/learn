@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.go-to-market-commercial-marketplace.2-get-organization-ready
+title: Get your organization ready
+metadata:
+  title: Get your organization ready
+  description: TODO
+  ms.date: 7/15/2020
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-get-organization-ready.md)]

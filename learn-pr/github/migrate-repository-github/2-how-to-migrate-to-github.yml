@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.migrate-repository-github.2-how-to-migrate-to-github
+title: How do I migrate an existing project to GitHub?
+metadata:
+  title: How do I migrate an existing project to GitHub?
+  description: Learn to move your existing project to GitHub from a legacy version control system.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-how-to-migrate-to-github.md)]

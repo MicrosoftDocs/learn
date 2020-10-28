@@ -35,7 +35,7 @@ quiz:
     - content: "Classification predicts a binary label."
       isCorrect: false
       explanation: "Classification algorithms can predict binary labels but can also be used to predict multiple labels."
-  - content: "In regression models, p-value is used to asses if the model coefficients are statistically significant. What is the best interpretation of p-value < 0.05 between the input feature and the predicted output?"
+  - content: "In regression models, p-value is used to assess if the model coefficients are statistically significant. What is the best interpretation of p-value < 0.05 between the input feature and the predicted output?"
     choices:
     - content: "There is more than 95% chance of seeing the correlation between input and output by mere chance."
       isCorrect: false

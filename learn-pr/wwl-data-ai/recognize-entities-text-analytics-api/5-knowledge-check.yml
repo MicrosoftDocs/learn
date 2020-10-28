@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.recognize-entities-text-analytics-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is the purpose of entity linking?"
+    choices:
+    - content: "Links one entity to another of the same category."
+      isCorrect: false
+      explanation: "Incorrect. Entity linking is not used to link entities in similar categories."
+    - content: "Provide a Bing or Google search engine URL to identify the item in the entity."
+      isCorrect: false
+      explanation: "Incorrect. Entity linking does not generate URLs for search engines."
+    - content: "Customize linked entities to your own organization's list of entity elements."
+      isCorrect: true
+      explanation: "Correct. The entity linking feature helps to remove ambiguity that may exist around an identified entity. A document may contain an entity such as ARES, which could mean the Greek god of war or it could be an acronym for Amateur Radio Emergency Services. Text Analytics is not able to make this linking on its own. It requires a knowledge base, in the required language, to provide the necessary recognition."
+  - content: "What is the purpose of the ID attribute in the input and output JSON?"
+    choices:
+    - content: "Identifies the calling application."
+      isCorrect: false
+      explanation: "Incorrect. ID is not used to identify a calling application."
+    - content: "Differentiate between multiple entries in the input and map them to the correct output values."
+      isCorrect: true
+      explanation: "Correct. The ID attribute can be used when there are multiple entries in the document. It helps to identify the specific text portion where the entity was located. As an example, if the submitted request contains more than one entry for text, the ID is used to locate the entities for that text, within the results."
+    - content: "Identify the language used in the input document text."
+      isCorrect: false
+      explanation: "Incorrect. There is a language attribute that is used for this purpose."
+  - content: "What is the purpose of a sub type in the entity types?"
+    choices:
+    - content: "They provide a link to a description of the core type."
+      isCorrect: false
+      explanation: "Incorrect. They do not provide links to descriptions."
+    - content: "To clarify or further enhance the core type."
+      isCorrect: true
+      explanation: "Correct. The subtype is used to enhance the core type."
+    - content: "To specify optional entities."
+      isCorrect: false
+      explanation: "Incorrect. They do not specify optional entities as part of the core types."

@@ -15,10 +15,11 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You've been asked by a local manufacturing company that runs dedicated software in their warehouse to keep track of stock. 
-  The software needs to run on machines in the warehouse, but the management team wants to access the output from the head office. 
-  The limited bandwidth available in the warehouse caused them problems in the past when they tried to use cloud-based solutions. 
-  You recommend that they use Azure Files. Which is the best method to sync the files with the cloud?"
+  - content: |
+      You've been asked by a local manufacturing company that runs dedicated software in their warehouse to keep track of stock. 
+      The software needs to run on machines in the warehouse, but the management team wants to access the output from the head office. 
+      The limited bandwidth available in the warehouse caused them problems in the past when they tried to use cloud-based solutions. 
+      You recommend that they use Azure Files. Which is the best method to sync the files with the cloud?
     choices:
     - content: "Create an Azure Files share and directly mount shares on the machines in the warehouse."
       isCorrect: false
@@ -29,8 +30,9 @@ quiz:
     - content: "Install Azure File Sync on every machine in the warehouse and head office."
       isCorrect: false
       explanation: "This isn't the recommended way to use Azure File Sync. You normally install it on a single machine, and the head office machines mount the file shares directly."
-  - content: "The manufacturing company has a number of sensors that record time-relative data. Only the most recent data is useful. The company wants the lowest cost storage for this data.
-    What is the best kind of storage account for them?"
+  - content: |
+      The manufacturing company has a number of sensors that record time-relative data. Only the most recent data is useful. The company wants the lowest cost storage for this data.
+      What is the best kind of storage account for them?
     choices:
     - content: "LRS"
       isCorrect: true
@@ -41,8 +43,9 @@ quiz:
     - content: "ZRS"
       isCorrect: false
       explanation: "This option is good, but it would incur more cost than other options."
-  - content: "The manufacturing company's finance department wants to control how the data is being transferred to Azure Files. They want a graphical tool to manage the process, but they don't want to use the Azure portal.
-  What tool do you recommend they use?"
+  - content: |
+      The manufacturing company's finance department wants to control how the data is being transferred to Azure Files. They want a graphical tool to manage the process, but they don't want to use the Azure portal.
+      What tool do you recommend they use?
     choices:
     - content: "Azure Data Box"
       isCorrect: false

@@ -43,7 +43,7 @@ Identify the subtasks of *Secure your application with OpenID Connect and Azure 
 
 1. **Introduction**
 
-    You work for a transportation company and are building an application that allows drivers to log in and manage their schedules. You want to allow users to log in with their Azure AD accounts that they currently use for Office 365 so they don't have to create additional accounts. You need to configure your application to allow authentication with OpenID Connect.
+    You work for a transportation company and are building an application that allows drivers to log in and manage their schedules. You want to allow users to log in with their Azure AD accounts that they currently use for Microsoft 365 so they don't have to create additional accounts. You need to configure your application to allow authentication with OpenID Connect.
 
 1. **Modern authentication for your application**
 
@@ -54,7 +54,7 @@ Identify the subtasks of *Secure your application with OpenID Connect and Azure 
        - Example scenarios and details of it's relevance
    - OpenID Connect and OAuth 2.0
        - Features and concepts using this for authentication
-   - Understanding Office 365 Identity and AD
+   - Understanding Microsoft 365 Identity and AD
        - Features and concepts using this for cloud authentication
 
    - Quick knowledge check quiz:

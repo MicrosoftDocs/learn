@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.azure.provide-disaster-recovery-replicate-storage-data
+metadata:
+  title: Provide disaster recovery by replicating storage data across regions and failing over to a secondary location
+  description: Learn how to provide disaster recovery by replicating storage data across regions and failing over to a secondary location.
+  ms.date: 10/08/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Provide disaster recovery by replicating storage data across regions and failing over to a secondary location
+summary: Evaluate and choose a redundancy option for Azure Storage. Create a storage account and blob container to demonstrate replication. Initiate storage account failover to the secondary region.
+abstract: | 
+  By the end of this module, you'll be able to:
+  - Choose the right Azure Storage redundancy option for your organization.
+  - Demonstrate how to initiate a storage account failover.
+prerequisites: | 
+  - Basic knowledge of Azure Storage, which includes use of storage accounts and Azure blobs
+  - (Optional) Access to an Azure subscription
+iconUrl:  /learn/achievements/provide-disaster-recovery-replicate-storage-data.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure-storage
+units:
+- learn.azure.provide-disaster-recovery-replicate-storage-data.introduction
+- learn.azure.provide-disaster-recovery-replicate-storage-data.evaluate-data-redundancy-options
+- learn.azure.provide-disaster-recovery-replicate-storage-data.exercise-change-replication-strategy
+- learn.azure.provide-disaster-recovery-replicate-storage-data.evaluate-storage-account-failover
+- learn.azure.provide-disaster-recovery-replicate-storage-data.exercise-failover-secondary-location
+- learn.azure.provide-disaster-recovery-replicate-storage-data.knowledge-check
+- learn.azure.provide-disaster-recovery-replicate-storage-data.summary
+badge:
+  uid: learn.azure.provide-disaster-recovery-replicate-storage-data.badge

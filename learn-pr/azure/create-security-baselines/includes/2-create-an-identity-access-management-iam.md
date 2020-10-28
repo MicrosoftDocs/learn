@@ -114,7 +114,7 @@ Until your business requires this delegation to various users, it is a best prac
 
     ![Screenshot showing the Azure portal in the AAD section with the self-service groups turned off](../media/2-self-service-groups.png)
 
-### Application options - Allow users to register apps - Level 2**
+### Application options - Allow users to register apps - Level 2
 
 Require administrators to register custom applications.
 

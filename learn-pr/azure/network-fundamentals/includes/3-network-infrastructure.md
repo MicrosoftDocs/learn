@@ -57,7 +57,7 @@ The media access control (MAC) address is a unique identifier assigned to every 
 
 :::image type="content" source="../media/3-mac-address.png" alt-text="A screenshot showing a network device's address information as returned when running the ipconfig /all command." loc-scope="other"::: <!--no-loc -->
 
-The MAC address has a standard composition of six hexadecimal numbers separated by a colon or dash, for example, AA-6A-BA-2B-68-C1. The first three numbers of the MAC address define the manufacturer's organizationally unique identifier (OUI). The remaining three numbers uniquely identify the device.
+The MAC address has a standard composition of six hexadecimal numbers separated by a colon or dash. The first three numbers of the MAC address define the manufacturer's organizationally unique identifier (OUI) and the remaining three numbers uniquely identify the device. For example, if the MAC address is `AA-6A-BA-2B-68-C1` then the OUI is `AA-6A-BA` and `2B-68-C1` is the device ID.
 
 ## Repeater
 
@@ -134,7 +134,7 @@ There are several distinct classifications or types of routers available to serv
 - **Access routers**: Typically used in a home or small satellite offices, these routers tend to be low-cost devices with a simple routing need.
 - **Distribution routers**: These routers compile traffic routing data from multiple routers. Distribution routers come with more significant memory and processing power. This type of router is designed to hold vast quantities of routing information. It's often used to manage and control the quality of service across a WAN.
 - **Edge routers**: An edge router operates at the boundary between your network and other networks, for example, your local network and the internet. They act as gateways to filter traffic and route it internally or forward it based on the packet header. An edge router often comes with access control or firewalls to improve the security. It might also handle DHCP and DNS services.
-- **Core routers**: Sometimes called enterprise routers, these routers are designed for higher bandwidths. They're used to connect different builds or geographic locations together. Core routers tend to have fewer features than edge routers because their primary focus is on minimizing packet loss and preventing congestion. They tend to do packet forwarding to edge routers.
+- **Core routers**: Sometimes called enterprise routers, these routers are designed for higher bandwidths. They're used to connect different buildings or geographic locations together. Core routers tend to have fewer features than edge routers because their primary focus is on minimizing packet loss and preventing congestion. They tend to do packet forwarding to edge routers.
 
 ## Wireless router
 

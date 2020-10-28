@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-web-api-nodejs-express.8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 06/16/2020
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What steps must you go through in constructing a Web application with Express?"
+      choices:
+        - content: "Instantiate an app, configure routes, set up middleware, set up error handlers, listen to the server"
+          isCorrect: false
+          explanation: "These steps are definitely steps you could take in setting up your app. However, only instantiation and listen to the server are steps you must do. Everything else is optional."
+        - content: "Instantiate an app, listen to the server"
+          isCorrect: true
+          explanation: "These steps are all you need to get an app up and running. We strongly recommend that you configure some routes, however."
+        - content: "Instantiate an app, configure routes, listen to the server"
+          isCorrect: false
+          explanation: "You don't actually need to configure routes although we highly recommend it."
+        - content: "Instantiate an app, configure routes, set up middleware, listen to the server"
+          isCorrect: false
+          explanation: "Neither configuring routes or setup middleware are things you must do, even though we highly recommend it."
+    - content: "What is the preferred way to send a JSON response from an Express app?"
+      choices:
+        - content: "Call the json() helper method on the response object like so: res.json({ content: '' })"
+          isCorrect: true
+          explanation: "There are many ways to send a response as JSON, but this way is the most common and simplest to use."
+        - content: "Call res.send({ content: '' })"
+          isCorrect: false
+          explanation: "This call will send the response as text."
+        - content: "Call res.send(JSON.stringify({ content: '' }))"
+          isCorrect: false
+          explanation: "This call will technically send it as JSON, but it's simpler and easier to use the res.json() helper method."
+        - content: "Use any of these ways: res.type('json'), res.type('application/json'), res.contentType('application/json'), res.format({ 'application/json': function() { res.send({}) } })"
+          isCorrect: false
+          explanation: "These method calls are valid ways of sending something as JSON but are considered more advanced. The res.json() helper method is by far the easiest way."
+    - content: "How would set up Express to handle a post request with JSON data?"
+      choices:
+        - content: "Call app.use(bodyParser.json()) at the top, register a route by using the post method as in app.post(<route>, () =>{}), read from req.body"
+          isCorrect: true
+        - content: "Register a route by using the post method as in app.post(<route>, () =>{}), read from req.body"
+          isCorrect: false
+          explanation: "You need to configure a body pasting middleware or the posted data won't be available on req.body."
+        - content: "Configure body parsing middleware, register a route by using the post method as in app.post(<route>, () =>{}), read from req.data"
+          isCorrect: false
+          explanation: "The posted data is available on req.body, not req.data."
+        - content: "Call app.use(bodyParser.urlencoded({ extended: false })) at the top, register a route by using the post method as in app.post(<route>, () =>{}), read from req.body"
+          isCorrect: false
+          explanation: "The configuration at the top is wrong. That configuration will instruct it to receive posted data from a form that is URL encoded. It needs to be app.use(bodyParser.json())."
+  

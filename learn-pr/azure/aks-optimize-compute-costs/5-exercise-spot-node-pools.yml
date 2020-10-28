@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-optimize-compute-costs.exercise-spot-node-pools
+title: Exercise - Configure spot node pools with the cluster autoscaler on an AKS cluster
+
+metadata:
+  title: Exercise - Configure spot node pools with the cluster autoscaler on an AKS cluster
+  description: Here you'll configure a spot user node pool and enable the autoscaler on the node pool. You'll also deploy a workload that uses the node pool's taint information to schedule the workload on the node pool's nodes.
+  ms.date: 7/10/2020
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-spot-node-pools.md)]

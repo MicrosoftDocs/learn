@@ -3,7 +3,7 @@ uid: learn.wwl.characterize-devops-continous-collaboration-improvement
 metadata:
   title: Characterize DevOps Continuous Collaboration and Continuous Improvement
   description: "Explore two capabilities in the DevOps taxonomy, Continuous Collaboration and Continuous Improvement."
-  ms.date: 03/06/2020
+  ms.date: 09/20/2020
   author: wwlpublish
   ms.author: sallybre
   ms.topic: interactive-tutorial
@@ -22,14 +22,9 @@ levels:
 - beginner
 roles:
 - administrator
-- ai-edge-engineer
-- ai-engineer
 - business-analyst
 - business-owner
 - business-user
-- data-analyst
-- data-engineer
-- data-scientist
 - developer
 - devops-engineer
 - functional-consultant

@@ -1,0 +1,57 @@
+### YamlMime:LearningPath
+uid: learn.az-400-develop-instrumentation-strategy
+metadata:
+  title: "AZ-400: Develop an instrumentation strategy"
+  description: "Develop an effective instrumentation strategy through logging, telemetry, and monitoring and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
+  brand: azure
+  ms.date: 06/25/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "AZ-400: Develop an instrumentation strategy"
+summary: |
+  Learn how logging, telemetry, and monitoring give you full visibility into what's happening in your environment.
+
+  Take this learning path to help prepare for [Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions](https://docs.microsoft.com/learn/certifications/exams/az-400).
+prerequisites: None
+iconUrl: /learn/achievements/az-400-develop-instrumentation-strategy.svg
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- azure-portal
+- azure-resource-manager
+- azure-application-insights
+- azure-monitor
+- azure-event-grid
+- azure-sentinel
+- azure-security-center
+- azure-service-health
+- vs-app-center
+- azure-virtual-machines
+- azure-app-service
+- azure-container-instances
+- azure-functions
+- azure-kubernetes-service
+- azure-logic-apps
+modules:
+- learn.azure.capture-application-logs-app-service
+- learn.control-and-organize-with-resource-manager
+- learn.azure.intro-to-app-center
+- learn.azure-spring-cloud-workshop
+- learn.azure-well-architected-performance-efficiency
+- learn.azure-well-architected-operational-excellence
+- learn.analyze-infrastructure-with-azure-monitor-logs
+- learn.capture-page-load-times-application-insights
+- learn.instrument-web-app-code-with-application-insights
+- learn.cmu-cloud-admin.cmu-monitor-cloud-resources
+- learn.react-to-state-changes-using-event-grid
+- learn.design-monitoring-strategy-on-azure
+trophy:
+  uid: az-400-develop-instrumentation-strategy.trophy

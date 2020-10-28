@@ -380,7 +380,7 @@ distributions
 ```
 
 At a glance, you can see that over 35% of those with Bachelor's degrees
-or higher had incomes of $\$75,000$ and over, whereas fewer than 10% of
+or higher had incomes of $75,000 and over, whereas fewer than 10% of
 the people in the other education categories had that level of income.
 
 The bar chart below compares the personal income distributions of adult

@@ -3,9 +3,9 @@ uid: learn.wwl.explore-types-cloud-services
 metadata:
   title: Explore types of cloud services
   description: "When talking about cloud computing, there are three major categories: IaaS, SaaS, and PaaS. This module will assist with using them in conversation, documentation, and training. AZ-900"
-  ms.date: 06/20/2020
+  ms.date: 07/20/2020
   author: wwlpublish
-  ms.author: roberts
+  ms.author: cwsuseng
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore types of cloud services

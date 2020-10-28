@@ -30,7 +30,7 @@ New-AzVm `
 ```
 
 > [!NOTE]
-> PowerShell Core is a cross-platform version of PowerShell that runs on Windows Linux or macOS.
+> PowerShell Core is a cross-platform version of PowerShell that runs on Windows, Linux or macOS.
 
 ## Azure Command Line Interface (CLI)
 

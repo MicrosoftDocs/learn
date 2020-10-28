@@ -35,7 +35,7 @@ quiz:
       explanation: 'Detection is the first phase of an incident.'
     - content: 'Response'
       isCorrect: false
-      explanation: 'Detection is the second phase of an incident.'
+      explanation: 'Response is the second phase of an incident.'
     - content: 'Communication'
       isCorrect: true
       explanation: 'Correct, communication is important but is not a phase of an incident.'

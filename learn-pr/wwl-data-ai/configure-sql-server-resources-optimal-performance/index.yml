@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.configure-sql-server-resources-for-optimal-performance
+metadata:
+  title: Configure SQL Server resources for optimal performance
+  description: "Choose the appropriate size and storage options for your Azure SQL databases. Configure server resources such as tempdb. Understand the usage of Resource Governor."
+  ms.date: 10/14/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure SQL Server resources for optimal performance
+summary: Choose the appropriate size and storage options for your Azure SQL databases. Configure server resources such as tempdb. Understand the usage of Resource Governor.
+abstract: |
+  After completing this module, you will be able to:
+  - Understand your options for configuration of Azure storage
+  - Learn how to configure TempDB data files in SQL Server
+  - Learn how to choose the right type of VM for SQL Server workloads
+  - Understand the use cases and configuration of Resource Governor in SQL Server
+prerequisites: |
+  - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
+  - Experience creating and configuring resources using the Azure portal.
+  - Knowledge of purpose of SQL Server system databases: master, tempdb, msdb
+  - Basic understanding of SQL Server file storage.
+iconUrl: /learn/achievements/configure-sql-server-resources-for-optimal-performance.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+- sql-server
+units:
+- learn.wwl.configure-sql-server-resources-for-optimal-performance.introduction
+- learn.wwl.configure-sql-server-resources-for-optimal-performance.explain-how-to-optimize-azure-storage-for-virtual-machines
+- learn.wwl.configure-sql-server-resources-for-optimal-performance.describe-virtual-machine-resizing
+- learn.wwl.configure-sql-server-resources-for-optimal-performance.optimize-database-storage
+- learn.wwl.configure-sql-server-resources-for-optimal-performance.control
+- learn.wwl.configure-sql-server-resources-for-optimal-performance.knowledge-check
+- learn.wwl.configure-sql-server-resources-for-optimal-performance.summary
+badge:
+  uid: learn.wwl.configure-sql-server-resources-for-optimal-performance.badge

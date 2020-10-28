@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-nodejs
+metadata:
+  title: Introduction to Node.js
+  description: "Learn about Node.js: what it is, how it works, and when to use it. Create Node.js applications using JavaScript/TypeScript using Visual Studio Code."
+  ms.date: 02/25/2020
+  author: manekinekko
+  ms.author: wachegha
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Node.js
+summary: "Learn about Node.js: what it is, how it works, and when to use it."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain what Node.js is.
+  - Describe how Node.js works.
+  - Identify when to use Node.js.
+  - Create and run a Node.js script from the command line.
+prerequisites: |
+  - Familiarity with editing text and code files in any text editor
+  - Beginner-level experience writing JavaScript code
+  - Experience using the command line
+iconUrl: /learn/achievements/intro-to-nodejs.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - azure
+units:
+  - learn.azure.intro-to-nodejs.1-introduction
+  - learn.azure.intro-to-nodejs.2-what
+  - learn.azure.intro-to-nodejs.3-how-works
+  - learn.azure.intro-to-nodejs.4-when-use
+  - learn.azure.intro-to-nodejs.5-try
+  - learn.azure.intro-to-nodejs.6-knowledge-check
+  - learn.azure.intro-to-nodejs.7-summary
+badge:
+  uid: learn.azure.intro-to-nodejs.badge

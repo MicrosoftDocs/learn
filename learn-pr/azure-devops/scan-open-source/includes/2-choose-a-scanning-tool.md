@@ -12,7 +12,7 @@ Let's check in with the team at their weekly meeting and see how things are prog
 
 **Tim:** That's what I wanted to talk about. One other issue came up, and that's around how we use open source. The security consultant found that other teams were using software that was licensed under GPL 3.0.
 
-**Andy:** I've heard of GPL. That stands for GNU General Public License. What's the issue?
+**Andy:** I've heard of GPL. That stands for General Public License. What's the issue?
 
 **Tim:** Well, it turns out that if you modify certain open-source libraries, even if it's to fix a bug or make a minor enhancement, you might be required to make those changes publicly available. Those changes could include intellectual property we want to protect. There's this big conversation happening with our legal team to identify what's next. I'm worried that this might affect our team as well.
 

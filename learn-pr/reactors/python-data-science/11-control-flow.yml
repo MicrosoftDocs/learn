@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.python-data-science.11-control-flow
+title: Control flow in Python
+metadata:
+  title: Control flow in Python for data science
+  description: Learn how to use basic control flows in Python for data science.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 7
+content: |
+  [!include[](includes/11-control-flow.md)] 

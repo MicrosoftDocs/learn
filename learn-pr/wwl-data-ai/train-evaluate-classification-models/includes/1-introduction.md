@@ -41,7 +41,7 @@ One such function is a *logistic* function, which forms a sigmoidal (S-shaped) c
 
 ![blood-glucose plotted against diabetic (0 or 1)](../media/logistic-function.png)
 
-Now we can use the function to calculate a probability value that ***y*** is positive  other words, the patient is diabetic) from any value of ***x*** by finding the point on the function line for ***x***; and we can set a threshold value of 0.5 as the cut-off point for the class label prediction. Let's test it with the data values we held-back.
+Now we can use the function to calculate a probability value that ***y*** is positive (in other words, the patient is diabetic) from any value of ***x*** by finding the point on the function line for ***x***; and we can set a threshold value of 0.5 as the cut-off point for the class label prediction. Let's test it with the data values we held-back.
 
 ![blood-glucose plotted against diabetic (0 or 1)](../media/class-predictions.png)
 
@@ -71,4 +71,8 @@ The confusion matrix shows the total number of cases where:
 
 The cells in the confusion matrix are often shaded so that higher values have a deeper shade. This makes it easier to see a strong diagonal trend from top-left to bottom-right, highlighting the cells where the predicted value and actual value are the same.
 
-From these core values, you can calculate a range of other metrics that can help you evaluate the performance of the model.
+From these core values, you can calculate a range of other metrics that can help you evaluate the performance of the model. For example:
+
+- **Accuracy**: (TP+TN)/(TP+TN+FP+FN) - in other words, out all of the predictions, how many were correct?
+- **Recall**: TP/(TP+FN) - in other words, of all the cases that *are* positive, how many did the model identify?
+- **Precision**: TP/(TP+FP) - in other words, of all the cases that the model predicted to be positive, how many actually *are* positive?

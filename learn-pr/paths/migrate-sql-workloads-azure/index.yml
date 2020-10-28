@@ -2,8 +2,8 @@
 uid: learn.wwl.migrate-sql-workloads-to-azure
 metadata:
   title: Migrate SQL workloads to Azure
-  description: Migrate SQL workloads to Azure
-  ms.date: 03/31/2020
+  description: Migrate SQL workloads to Azure Learn
+  ms.date: 07/16/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -23,6 +23,7 @@ levels:
 roles:
 - administrator
 - data-engineer
+- database-administrator
 - developer
 - solution-architect
 products:

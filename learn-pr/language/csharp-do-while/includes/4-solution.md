@@ -8,13 +8,13 @@ Random dice = new Random();
 
 do
 {
-    int roll = dice.Next(1, 10);
+    int roll = dice.Next(1, 11);
     monster -= roll;
     Console.WriteLine($"Monster was damaged and lost {roll} health and now has {monster} health.");
 
     if (monster <= 0) continue;
 
-    roll = dice.Next(1, 10);
+    roll = dice.Next(1, 11);
     hero -= roll;
     Console.WriteLine($"Hero was damaged and lost {roll} health and now has {hero} health.");
 

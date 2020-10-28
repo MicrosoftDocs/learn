@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.collaborate-markdown-github-pages
+metadata:
+  title: Collaborate with others with Markdown and GitHub Pages
+  description: Learn how to use Markdown to effectively communicate with others in your GitHub issues, pull requests, comments, and documentation. Then learn how to build project sites and blog posts to promote your projects with GitHub Pages.
+  brand: github
+  ms.date: 07/02/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-github
+title: Collaborate with others with Markdown and GitHub Pages
+summary: |
+  Do you want to communicate more effectively with other GitHub users? Are you looking for a free way to promote your GitHub project? 
+
+  Learn how to use Markdown to effectively communicate with others in your GitHub issues, pull requests, comments, and documentation. Then learn how to build project sites and blog posts to promote your projects with GitHub Pages.
+
+  In this learning path, you'll learn how:
+
+  - Markdown enables you to organize your thoughts through code, images, lists, and tables.
+  - GitHub-Flavored Markdown (GFM) enables syntax highlighting for popular programming languages and enables you to link to issues, pull requests, and commits.
+  - GitHub Pages helps you create project pages and blog posts that include custom themes.
+prerequisites: |
+ - A [GitHub](https://github.com?azure-portal=true) account
+iconUrl: /learn/achievements/github/collaborate-markdown-github-pages.svg
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- github
+modules:
+- learn.github.introduction-to-github
+- learn.github.communicate-using-markdown
+- learn.github.create-host-web-sites-github-pages
+trophy:
+  uid: learn.collaborate-markdown-github-pages.trophy

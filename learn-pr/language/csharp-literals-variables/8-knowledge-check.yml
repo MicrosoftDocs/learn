@@ -43,10 +43,10 @@ quiz:
       explanation: "This isn't necessarily true.  It depends on the context."
   - content: "Which of the following lines of code creates a variable correctly."
     choices:
-    - content: "`int x = 12.3d;`"
+    - content: "`int x = 12.3m;`"
       isCorrect: false
       explanation: "An `int` can't be set to a literal decimal value."
-    - content: "`string x = 12.3d;`"
+    - content: "`string x = 12.3m;`"
       isCorrect: false
       explanation: "A `string` can't be set to a literal decimal value."
     - content: "`decimal x = 12.3m;`"

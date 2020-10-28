@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines
+metadata:
+  title: Upgrade and migrate Windows Server IaaS virtual machines
+  description: "Learn to migrate a workload running in Windows Server to an infrastructure as a service (IaaS) virtual machine (VM) and to Windows Server 2019 by using Windows Server migration tools or the Storage Migration Service."
+  ms.date: 10/21/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Upgrade and migrate Windows Server IaaS virtual machines
+summary: Learn to migrate a workload running in Windows Server to an infrastructure as a service (IaaS) virtual machine (VM) and to Windows Server 2019 by using Windows Server migration tools or the Storage Migration Service.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe Windows Server IaaS migration.
+  - Explain how to migrate workloads using Windows Server Migration tools.
+  - Describe storage migration.
+  - Migrate file servers by using the Storage Migration Service.
+prerequisites: |
+  In order to get the best learning experience from this module, it's important that you have knowledge and experience of:
+  - Windows Server workloads.
+  - Common Windows Server management tools.
+  - Core Microsoft compute, storage, networking, and virtualization technologies.
+  - On-premises resiliency Windows Server-based compute and storage technologies.
+  - Implementing and managing IaaS services in Azure.
+  - Azure Active Directory (Azure AD).
+  - Security-related technologies such as firewalls, encryption, and multi-factor authentication.
+  - Windows PowerShell scripting.
+  - Automation and monitoring.
+iconUrl: /learn/achievements/upgrade-and-migrate-windows-server-iaas-virtual-machines.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-cloud-shell
+- azure-portal
+- azure-storage
+- azure-virtual-machines
+units:
+- learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines.introduction
+- learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines.describe-azure-migrate
+- learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines.workloads-by-using-azure-migrate
+- learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines.describe-storage-migration
+- learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines.migrate-file-servers-by-using-storage-migration-service
+- learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines.knowledge-check
+- learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines.summary
+badge:
+  uid: learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines.badge

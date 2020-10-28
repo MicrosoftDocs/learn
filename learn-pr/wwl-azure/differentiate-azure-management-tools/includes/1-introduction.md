@@ -11,7 +11,10 @@ By the end of this module, you'll be able to explain what management tools are a
 Beginner
 
 **Learning Objectives**
-
+     
 + Describe the different Azure management tools.
 + Decide if Azure PowerShell is the right tool for your Azure administration tasks.
+
+
+
 

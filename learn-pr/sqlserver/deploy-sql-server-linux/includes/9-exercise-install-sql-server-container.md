@@ -25,7 +25,7 @@ Before you can run any containers, you begin by installing the Docker container 
 1. In the Cloud Shell on the right, enter these commands.
 
     ```bash
-    export IPADDRESS = $(az vm show -d \
+    export IPADDRESS=$(az vm show -d \
         --name UbuntuServer \
         --query publicIps --output tsv \
         --resource-group <rgn>[sandbox resource group name]</rgn>)
@@ -77,7 +77,7 @@ To use SQL Server in Docker containers, the easiest method is to use the Microso
 1. To pull the SQL Server image from the Microsoft repository, run this command:
 
     ```bash
-    sudo docker pull mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
+    sudo docker pull mcr.microsoft.com/mssql/server:2019-latest
     ```
 
 1. If you're asked for a password, use the password displayed above, and then press Enter.
@@ -85,8 +85,8 @@ To use SQL Server in Docker containers, the easiest method is to use the Microso
 
     ```bash
     sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Pa55w.rd' \
-    -p 1433:1433 --name sql-server-image \
-    -d mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
+    -p 1435:1435 --name sql-server-image \
+    -d mcr.microsoft.com/mssql/server:2019-latest
     ```
 
 ## Create a database

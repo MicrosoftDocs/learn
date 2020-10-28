@@ -65,7 +65,7 @@ Here you fetch the connection string for your database. You store it in a file n
 1. Choose **tailspindatabase**.
 1. Under **Settings**, select **Connection strings**. Copy the connection string that appears on the **ADO.NET** tab.
 
-   ![Azure portal, selecting connection strings](../media/5-get-connection-string.png)
+   ![Azure portal page showing selecting connection strings.](../media/5-get-connection-string.png)
 
     Notice that the connection string doesn't show your password. You'll specify your password shortly.
 
@@ -159,7 +159,7 @@ Here you build and run the web application locally to verify that the applicatio
 
     You can interact with the page, including the leaderboard. When you select a player's name, you see details about that player.
 
-    ![The Space Game leaderboard](../media/5-space-game-leaderboard-profile.png)
+    ![A web page showing the Space Game leaderboard.](../media/5-space-game-leaderboard-profile.png)
 
     Unlike in previous modules, the leaderboard data is read from your Azure SQL Database.
 

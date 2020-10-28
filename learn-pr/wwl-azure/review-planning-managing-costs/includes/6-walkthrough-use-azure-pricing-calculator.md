@@ -7,7 +7,7 @@ In this walkthrough, we will use the Azure Pricing Calculator to generate a cost
 
 ## Try out the Azure Pricing Calculator
 
-In another browser window or tab, open the Azure Pricing Calculator . On the Pricing Calculator page, you'll see several tabs:
+In another browser window or tab, open the Azure Pricing Calculator - [https://azure.microsoft.com/pricing/calculator](https://azure.microsoft.com/pricing/calculator?azure-portal=true). On the Pricing Calculator page, you'll see several tabs:
 
 - **Products.** This tab is where you'll do most of your activity. This tab has all the Azure services listed and is where you'll add or remove services to put together your estimate.
 - **Example Scenarios** This tab has several examples of infrastructure involved in common cloud-based solutions. You can add all the components of the entire scenario to estimate the cost.

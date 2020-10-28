@@ -42,13 +42,13 @@ Manually creating a virtual network, load balancer, and two VMs will take some t
 Now that you've created a test environment, you're ready to set up the Azure alias record in your zone apex.
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), go to the <rgn>[Sandbox resource group]<rgn>.
-1. Select the **wideworldimports.com** DNS zone.
+1. Select your DNS zone (wideworldimportsXXXX.com).
 1. Select **+ Record set**.
 1. Use the following settings to create an alias record.
 
     | Field | Setting |
     | ---- | ---- |
-    | Name | Leave the name blank. By leaving it blank, it indicates the DNS zone for wideworldimports.com |
+    | Name | Leave the name blank. By leaving it blank, it indicates the DNS zone for wideworldimportsXXXX.com |
     | Type | **A**. Even though we're creating an alias, the base record type must still be either A, AAAA, or CNAME. |
     | Alias record set | **Yes** |
     | Alias type | You can select either **Azure resource** or **Zone record set**. In this case, select the **Azure resource**. |

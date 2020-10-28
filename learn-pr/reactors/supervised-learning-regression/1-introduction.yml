@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.supervised-learning-regression.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to linear regression modeling.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+  show_latex: true
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction.md)]

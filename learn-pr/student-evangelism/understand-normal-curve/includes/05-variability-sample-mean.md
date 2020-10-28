@@ -162,8 +162,8 @@ Take a look at the SDs in the sample mean histograms above. In all three
 of them, the SD of the population of delays is about 40 minutes, because
 all the samples were taken from the same population.
 
-Now look at the SD of all 10,000 sample means, when the sample size is
-100. That SD is about one-tenth of the population SD. When the sample
+Now look at the SD of all 10,000 sample means, when the sample size is 100.
+That SD is about one-tenth of the population SD. When the sample
 size is 400, the SD of all the sample means is about one-twentieth of
 the population SD. When the sample size is 625, the SD of the sample
 means is about one-twenty fifth of the population SD.

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.image-classification-azure-sphere.exercise-create-real-time-app
-title: Exercise - Create a real time image classification application
+title: Exercise - Create a real-time image classification application
 metadata:
-  title: Exercise - Create a real time image classification application
-  description: In this section, we help the learner to create a real time application to deploy Azure Sphere.
+  title: Exercise - Create a real-time image classification application
+  description: In this section, we help the learner to create a real-time application to deploy Azure Sphere.
   ms.date: 06/19/2020
   author: leestott
   ms.author: leestott

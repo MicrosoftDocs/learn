@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.govern-monitor-secure-resources-azure-lighthouse.1-introduction
+metadata:
+  title: Introduction
+  description: You'll look at the hybrid networking capabilities in Azure, the services for on-premises integration using tools like ExpressRoute and the scenarios that apply to the design of your company's hybrid architecture.
+  ms.date: 04/30/2020
+  author: iankensey
+  ms.author: prukulka
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
+  

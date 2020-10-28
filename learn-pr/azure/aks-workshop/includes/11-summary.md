@@ -19,6 +19,18 @@ In this module, you created resources by using your Azure subscription. You want
 
 1. Enter the name of the resource group to confirm. Select **Delete** to delete all of the resources you created in this module.
 
+1. Finally, run the `kubectl config delete-context` command to remove the deleted clusters context. Here is an example of the complete command. Remember to replace the name of the cluster with your cluster's name.
+
+    ```bash
+    kubectl config delete-context aksworkshop
+    ```
+
+    If successful, the command returns the following example output.
+
+    ```output
+    deleted context aksworkshop from /home/user/.kube/config
+    ```
+
 ## Learn more
 
 We've covered a number of concepts in this module. Visit the articles and sites below to learn more about each of the concepts.

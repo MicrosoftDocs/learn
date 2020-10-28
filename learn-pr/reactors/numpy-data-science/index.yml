@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.reactors.numpy-data-science
+metadata:
+  title: Introduction to NumPy for data science
+  description: Learn about how to use NumPy for data science. Create, index, and sort arrays.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+title: Introduction to NumPy for data science
+summary: Learn about how to use NumPy for data science. Create, index, and sort arrays.
+abstract: |
+  In this module, you will:
+  - Import the NumPy Python library into your VS Code Jupyter Notebook
+  - Learn how NumPy arrays compare to Python lists
+  - Learn how to use NumPy arrays for large in-memory datasets
+  - Explore NumPy functions for arrays and simple data manipulation
+
+  This module is complimentary content for Microsoft Reactor Workshops.
+  
+prerequisites: |
+  - Introduction to Python for data science
+# placeholder icon
+iconUrl: /learn/achievements/reactors/numpy-data-science.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+units:
+- learn.reactors.numpy-data-science.1-introduction
+- learn.reactors.numpy-data-science.2-help
+- learn.reactors.numpy-data-science.3-about-arrays
+- learn.reactors.numpy-data-science.4-arrays-basics
+- learn.reactors.numpy-data-science.5-arrays-basics-2
+- learn.reactors.numpy-data-science.6-fancy-index
+- learn.reactors.numpy-data-science.7-sort-arrays
+- learn.reactors.numpy-data-science.8-computation
+- learn.reactors.numpy-data-science.9-aggregations
+- learn.reactors.numpy-data-science.10-computation-broadcast
+- learn.reactors.numpy-data-science.11-compare-masks-boolean-logic
+- learn.reactors.numpy-data-science.12-boolean-arrays
+- learn.reactors.numpy-data-science.13-boolean-arrays-masks
+badge:
+  uid: learn.reactors.numpy-data-science.badge

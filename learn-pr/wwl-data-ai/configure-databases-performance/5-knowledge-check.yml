@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-databases-for-performance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/23/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which intelligent query processing feature allows for faster calculations of a large number of rows?"
+    choices:
+    - content: "Batch mode on row store"
+      isCorrect: true
+      explanation: "That's correct. Batch mode is most effective in aggregation queries."
+    - content: "Approximate count distinct"
+      isCorrect: false
+      explanation: "That's incorrect. Approximate count distinct only does counts, and not other calculations."
+    - content: "Interleaved execution"
+      isCorrect: false
+      explanation: "That's incorrect. Interleaved execution leads to better row estimates, but does not itself speed calculations."
+  - content: "Which component of resource governor allows you to configure limits on system resources?"
+    choices:
+    - content: "Workload groups"
+      isCorrect: false
+      explanation: "That's incorrect. Workload groups or just an organization role, and do not get assigned resources."
+    - content: "Classifier functions"
+      isCorrect: false
+      explanation: "That's incorrect. Classifier functions assign connections to workload groups."
+    - content: "Resource pools"
+      isCorrect: true
+      explanation: "That's correct. Resource pools are where resources are assigned in resource governor."
+  - content: "Which database setting affects the way the query optimizer generates execution plans?"
+    choices:
+    - content: "Recovery model"
+      isCorrect: false
+      explanation: "That's incorrect. The recovery model only effects the ability to restore a database to a point in time, and not query plans."
+    - content: "Optimize for ad hoc workloads"
+      isCorrect: false
+      explanation: "That's incorrect. This option affects the way execution plans are cached, but not the plan itself."
+    - content: "Compatibility level"
+      isCorrect: true
+      explanation: "That's correct. This setting affects the way the plan is created based on a number of engine factors."

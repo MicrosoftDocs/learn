@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.reactors.supervised-learning-regression
+metadata:
+  title: 'Supervised learning: Regression'
+  description: Learn about linear regression models, and how to interpret their results.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+title: 'Supervised learning: Regression'
+summary: Learn about linear regression models, and how to interpret their results.
+abstract:  | 
+  In this module, you will:
+  - Learn to fit linear-regression models
+  - Become familiar with interpreting the output of linear-regression models
+
+  Complementary content for Microsoft Reactor Workshops.
+prerequisites: |
+  - Introduction to Python
+  - Beginners Data Science for Python Developers
+  - 'Join and clean datasets: Deep dive'
+  
+iconUrl: /learn/achievements/reactors/supervised-learning-regression.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+units:
+- learn.reactors.supervised-learning-regression.1-introduction
+- learn.reactors.supervised-learning-regression.2-load-data
+- learn.reactors.supervised-learning-regression.3-simple-linear-regression
+- learn.reactors.supervised-learning-regression.4-polynomial-regression
+- learn.reactors.supervised-learning-regression.5-multiple-regression
+- learn.reactors.supervised-learning-regression.6-categorical-data
+badge:
+  uid: learn.reactors.supervised-learning-regression.badge 

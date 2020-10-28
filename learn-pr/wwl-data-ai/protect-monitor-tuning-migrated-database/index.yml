@@ -3,9 +3,9 @@ uid: learn.wwl.protecting-monitoring-tuning-migrated-database
 metadata:
   title: Protecting, monitoring and tuning a migrated database
   description: "Protecting, monitoring, and tuning a migrated database"
-  ms.date: 01/31/2020
+  ms.date: 08/02/2020
   author: wwlpublish
-  ms.author: v-gea
+  ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Protecting, monitoring and tuning a migrated database

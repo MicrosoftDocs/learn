@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.maintain-secure-repository-github.3-security-strategy-essentials
+title:  Exercise - Secure strategy essentials
+metadata:
+  title:  Exercise - Secure strategy essentials
+  description: Learn to build, host, and maintain a secure repository on GitHub.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 55
+content: |
+  [!include[](includes/3-security-strategy-essentials.md)]

@@ -7,7 +7,7 @@ In this module, you learned how to:
 
 ## Clean up
 
-The IoT Central app, with a Trial subscription, will be deleted automatically when the trial comes to an end.
+The IoT Central app, with a trial subscription, will be deleted automatically when the trial comes to an end.
 
 ## Next steps
 
@@ -17,9 +17,8 @@ To take your IoT Central refrigerated truck app further, consider completing [Se
 
 Or, take your interest further with:
 
-- [Build workflows with the IoT Central connector in Microsoft Flow](https://docs.microsoft.com/azure/iot-central/howto-add-microsoft-flow)
-- [Azure IoT Central Documentation](https://docs.microsoft.com/azure/iot-central/)
-- [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
+- [IoT Central solutions documentation](https://docs.microsoft.com/azure/iot-central/)
+- [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/alldevices)
 
 And look out for additional Learn modules covering IoT Central.
 
