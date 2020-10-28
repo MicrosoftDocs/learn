@@ -92,9 +92,7 @@ So let's begin with the details.
     },
     ```
 
-    By default, the feature manager retrieves feature flags from the `FeatureManagement` section of the configuration data. We'll also add another parameter named `UseFeatureManagement`.
-
-    The `UseFeatureManagement` property will be our main feature flag. It isn't something imposed by the Feature Management library. The values above will become the default ones for the SPA.
+    By convention, the feature manager retrieves feature flags from the `FeatureManagement` section of the configuration file. The `UseFeatureManagement` property is the feature flag. It isn't something imposed by the Feature Management library. The values above will become the default ones for the SPA.
 
 1. In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, uncomment the following lines. Save your changes.
 
@@ -112,7 +110,7 @@ So let's begin with the details.
         }
         ```
 
-        The preceding code enables the Feature Management services to read the state of features in the `FeatureManagement` configuration section. *Coupons* in our case.
+        The preceding code enables the Feature Management services to read the state of features in the `FeatureManagement` configuration section. `Coupons` in our case.
 
     1. Uncomment the `//using Microsoft.FeatureManagement;` line at the top of the file. Save your changes.
 
