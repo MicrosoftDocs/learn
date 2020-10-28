@@ -5,44 +5,34 @@ In this unit, you'll create a virtual machine (VM) to act as your internal app V
 Create a Linux VM that's not exposed to the internet.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-1. Select **Cloud Shell** from the menu bar in the upper right.
-1. Select **Bash**.
-1. Run the following command to generate an SSH key pair:
+1. Search for or select **Virtual machines**.
+1. Select **Add** > **Virtual machine**.
+1. Enter the following values to the **Basics** page.
 
-   ```bash
-   ssh-keygen -t rsa -b 4096
-   ```
+  |Field |Value  |
+  |---------|---------|
+  |Subscription     |    Concierge Subscription     |
+  |Resource group    |  <rgn>[Sandbox resource group name]</rgn>      |
+  |Virtual machine name  |   internalappvm       |
+  |Region    | Chose a region near you.         |
+  |Image     |  Ubuntu Server 18.04 LTS - Gen1       |
+  |Username    | azureuser     |
+  |SSH public key source    |  Generate new key pair     |
+  |Key pair name   | internalappvm_key    |
+  |Public inbound ports   |  None    |
+  Use the default values for the rest of the fields on this page.
 
-2. Select the *Enter* key to accept the default location to store the key pair.
+1. Select the **Networking** tab.
+1. Change the following values.
 
-3. Enter an SSH passphrase that you'll remember. You'll need this passphrase later when you connect to the VM.
-1. Run the following commands to set the username and resource group values.
+  |Field |Value |
+  |---------|---------|
+  |Public IP    |    None     |
+  |Public inbound ports    |  None       |
 
-    ```bash
-    USERNAME=azureuser
-    RESOURCEGROUP= <rgn>[Sandbox resource group name]</rgn>
-    ```
-
-1. Run the following command to create a virtual machine (VM) with no public IP address.
-
-    ```azurecli
-    az vm create \
-      --resource-group $RESOURCEGROUP \
-      --name internalappvm \
-      --admin-username $USERNAME \
-      --image UbuntuLTS \
-      --public-ip-address "" \
-      --generate-ssh-keys \
-      --verbose
-    ```
-
-1. Run the following command to get the SSH key.
-
-    ```bash
-    cat ~/.ssh/id_rsa.pub
-    ```
-
-1. Copy and save SSH key to use later.
+1. Select **Review + create** > **Create**.
+1. Select **Download private key and create resource**.
+   :::image type="content" source="../media/4-download-private-key.png" alt-text="Screenshot of the generate new key pair windows with the ":::
 
 ## Try to connect to the internal app VM
 
@@ -52,7 +42,7 @@ Let's try connecting to the internal app VM over the internet.
 1. Select the VM you created, **internalappvm**.
 1. Select **Connect** > **SSH**.
 1. Under step 4, copy the command to the clipboard.
-1. Paste the command from your clipboard into the Azure Cloud Shell. Delete the -i flag and the private key path placeholder. It should look something like the following example with a different IP address:
+1. Paste the command from your clipboard into the Azure Cloud Shell. Edit the private key path placeholder so that it points to . It should look something like the following example with a different IP address:
 
     ```bash
     ssh azureuser@10.0.0.6
