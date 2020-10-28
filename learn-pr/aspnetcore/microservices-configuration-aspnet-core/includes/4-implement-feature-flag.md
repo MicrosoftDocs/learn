@@ -127,7 +127,7 @@ So let's begin with the details.
         }
         ```
 
-        `MapFeatureManagement` is a custom extension method that's provided for you. It delegates HTTP GET `features` route requests to a custom middleware class named `FeatureManagementMiddleware`.
+        `MapFeatureManagement` is a custom extension method that's provided for you. It defines an endpoint at `features` that responds to HTTP GET requests. Those requests are delegated to a custom middleware class named `FeatureManagementMiddleware`.
 
         :::code language="csharp" source="../code/src/web/webspa/extensions/endpointroutebuilderextensions.cs" id="snippet_MapFeatureManagement":::
 
@@ -350,4 +350,4 @@ To verify the feature flag works as expected, start a purchase as follows:
 1. Select the shopping bag icon in the upper right.
 1. Select the **:::no-loc text="CHECKOUT":::** button.
 
-Notice the the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is not present. This is expected because the coupons feature is disabled.
+Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field isn't present. This is expected because the coupons feature is disabled.
