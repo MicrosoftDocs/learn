@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-performance-related-maintenance-tasks-sql-server.exercise
+title: Exercise - Detect and correct fragmentation issues
+metadata:
+  title: Exercise - Detect and correct fragmentation issues
+  description: "Exercise - Detect and correct fragmentation issues"
+  ms.date: 10/28/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-detect-correct-fragmentation-issues.md)]
