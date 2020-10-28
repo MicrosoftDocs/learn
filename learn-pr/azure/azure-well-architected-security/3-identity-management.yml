@@ -32,7 +32,7 @@ quiz:
 
   - content: 'Which of the following would be a valid second element for multifactor authentication, when combined with a password?'
     choices:
-    - content: 'A driver's license'
+    - content: "A driver's license"
       isCorrect: false
       explanation: "A driver's license can't be used for multifactor authentication."
     - content: 'A time-based one-time password'
