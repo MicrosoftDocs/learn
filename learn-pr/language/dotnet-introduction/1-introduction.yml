@@ -10,5 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
+interactive: csharp
 content: |
   [!include[](includes/1-introduction.md)]
