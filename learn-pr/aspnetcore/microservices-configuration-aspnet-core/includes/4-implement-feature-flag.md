@@ -127,6 +127,10 @@ So let's begin with the details.
         }
         ```
 
+        `MapFeatureManagement` is a custom extension method that's provided for you. It delegates HTTP GET `features` route requests to a custom middleware class named `FeatureManagementMiddleware`.
+
+        :::code language="csharp" source="../code/src/web/webspa/extensions/endpointroutebuilderextensions.cs" id="snippet_MapFeatureManagement":::
+
 1. To add the `featureFlag` directive to the Angular views, run the following script:
 
     ```bash

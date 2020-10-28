@@ -6,7 +6,10 @@ namespace Microsoft.AspNetCore.Builder
 {
     public static class EndpointRouteBuilderExtensions
     {
-        public static IEndpointConventionBuilder MapFeatureManagement(this IEndpointRouteBuilder endpoints, string pattern = "features")
+        #region snippet_MapFeatureManagement
+        public static IEndpointConventionBuilder MapFeatureManagement(
+            this IEndpointRouteBuilder endpoints,
+            string pattern = "features")
         {
             if (endpoints == null)
             {
@@ -18,6 +21,7 @@ namespace Microsoft.AspNetCore.Builder
                 .Build();
 
             return endpoints.MapGet(pattern, pipeline);
-        }                 
+        }           
+        #endregion snippet_MapFeatureManagement      
     }
 }
