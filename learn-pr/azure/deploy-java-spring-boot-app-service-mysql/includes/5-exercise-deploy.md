@@ -53,7 +53,7 @@ Be careful about the values of `<appName>` and `<resourceGroup>`(`helloworld-159
 
 The Maven plugin uses account credentials from the Azure CLI to deploy to App Services. [Sign in with the Azure CLI](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) before continuing.
 
-```azurecli
+```bash
 az login
 ```
 

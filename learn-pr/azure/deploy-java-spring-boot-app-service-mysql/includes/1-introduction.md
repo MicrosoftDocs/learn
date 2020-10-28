@@ -17,7 +17,7 @@ By the end of this module, you will be able to:
 
 - An Azure Subscription
 - Local installations of Java JDK, Maven and the Azure CLI
-- Basic familiarity with relational databases
+- Basic familiarity with relational databases and using JPA for persistence
 - Experience writing Spring Apps in Java
 - Basic familiarity with Spring Boot App Lifecycle
 - Experience writing Applications for Azure App Service

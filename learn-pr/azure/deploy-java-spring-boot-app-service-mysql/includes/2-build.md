@@ -34,7 +34,13 @@ The Spring injection annotations use Dependency injection to process the Compone
 
 ### Azure CLI
 
-Azure CLI is a managed interface to allow developers full access to the Azure APIs via the Command line.
+Azure CLI is a command-line interface used to create and manage Azure resources.
+It runs on Linux, macOS, and Windows and allows administrators and developers to execute their commands through a terminal or command-line prompt (or script!) instead of a web browser. For example, to restart a virtual machine (VM), you would use a command like the following:
+
+```bash
+az vm restart -g MyResourceGroup -n MyVm
+```
+
 In this module, you use the Azure CLI to spin up the Azure App Service and Azure Database for MySQL instance. You can access the Azure CLI from a terminal or through Visual Studio Code. You can also access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
 ### Maven

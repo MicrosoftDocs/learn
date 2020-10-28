@@ -22,7 +22,7 @@ Replace the placeholders with the following values, which are used throughout th
 
 Next, create a resource group:
 
-```azurecli
+```bash
 az group create \
     --name $AZ_RESOURCE_GROUP \
     --location $AZ_LOCATION \
@@ -40,9 +40,9 @@ The first thing we'll create is a managed MySQL server.
 > [!NOTE]
 > If you want to know more about az mysql server create and other Azure CLI commands, you can find a link to documentation at the end of this tutorial".
 
-In [Azure Cloud Shell](https://shell.azure.com/), run the following script:
+Run the following script to create a small Azure MySQL Database with 1 Cpu and 2GB RAM :
 
-```azurecli
+```bash
 az mysql server create \
     --resource-group $AZ_RESOURCE_GROUP \
     --name $AZ_DATABASE_NAME \
@@ -54,15 +54,15 @@ az mysql server create \
     | jq
 ```
 
-This command creates a small MySQL server.
+This command creates a small MySQL server using the variables we setup earlier.
 
 ### Configure a firewall rule for your MySQL server
 
 Azure Database for MySQL instances are secured by default. They have a firewall that doesn't allow any incoming connection. To be able to use your database, you need to add a firewall rule that will allow the local IP address to access the database server.
 
-Because you configured our local IP address at the beginning of this article, you can open the server's firewall by running:
+Run the following command to open the server's firewall:
 
-```azurecli
+```bash
 az mysql server firewall-rule create \
     --resource-group $AZ_RESOURCE_GROUP \
     --name $AZ_DATABASE_NAME-database-allow-local-ip \
@@ -76,7 +76,7 @@ az mysql server firewall-rule create \
 
 The MySQL server that you created earlier is empty. It doesn't have any database that you can use with the Spring Boot application. Create a new database called `demo`:
 
-```azurecli
+```bash
 az mysql db create \
     --resource-group $AZ_RESOURCE_GROUP \
     --name demo \
@@ -85,6 +85,11 @@ az mysql db create \
 ```
 
 ### Generate the application by using Spring Initializr
+
+The Spring Initializr is a web application that generates a Spring Boot project structure for you.
+It doesn’t generate any application code, but it will give you a basic project structure and a Maven build specification to build your code with.
+In the command below we generate our application with three dependencies - web, mysql and data-jpa.
+Notice we don't need to specify Azure dependencies as we plan to run our application locally also.
 
 Generate the application on the command line by entering:
 
@@ -269,14 +274,14 @@ First, create a new "todo" item in the database using the following command:
 ```bash
 curl --header "Content-Type: application/json" \
     --request POST \
-    --data '{"description":"configuration","details":"congratulations, you have set up your SpringBoot App correctly!","done": "true"}' \
+    --data '{"description":"configuration","details":"congratulations, you have set up your Spring Boot App correctly!","done": "true"}' \
     http://127.0.0.1:8080
 ```
 
 This command should return the created item as follows:
 
 ```json
-{"id":1,"description":"configuration","details":"congratulations, you have set up your SpringBoot App correctly!","done":true}
+{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot App correctly!","done":true}
 ```
 
 Next, retrieve the data by using a new cURL request as follows:
@@ -288,7 +293,7 @@ curl http://127.0.0.1:8080
 This command will return the list of "todo" items, including the item you've created, as follows:
 
 ```json
-[{"id":1,"description":"configuration","details":"congratulations, you have set up your SpringBoot App correctly!","done":true}]
+[{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot App correctly!","done":true}]
 ```
 
 Here's a screenshot of these cURL requests:
