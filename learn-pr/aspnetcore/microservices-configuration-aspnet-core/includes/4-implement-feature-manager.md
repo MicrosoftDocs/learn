@@ -1,13 +1,11 @@
 In this exercise, you'll implement a feature flag to toggle the checkout page's discount coupon feature in real time. Feature flags allow you to toggle feature availability declaratively without including `if` statements in your code.
 
-You'll use a feature flag library for ASP.NET Core named **Feature Management**. This library provides helpers to implement feature flags in your app such as controller actions, MVC views/filters, and so on. In addition, it supports Feature Filters, which allows you to enable features based on other parameters. Examples of such parameters may include a window time, percentages, or a subset of users.
+You'll use a .NET Standard feature flag library named *Feature Management*. This library provides helpers to implement feature flags in your app. The library supports simple use cases like conditional statements to more advanced scenarios like conditionally adding routes or action filters. In addition, it supports Feature Filters, which allows you to enable features based on other parameters. Examples of such parameters may include a window time, percentages, or a subset of users.
 
-In this exercise, you will:
+In this unit, you will:
 
 * Make the discount coupon feature configurable.
 * Deploy the SPA to your AKS cluster.
-* Create an App Configuration store in your Azure account.
-* Connect *eShopOnContainers* to the App Configuration store.
 
 ## Verify the deployment to AKS
 

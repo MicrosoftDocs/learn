@@ -1,3 +1,8 @@
+In this unit, you will:
+
+* Create an App Configuration store in your Azure account.
+* Connect *eShopOnContainers* to the App Configuration store.
+
 ## Create an App Configuration store instance
 
 1. Run the following script to create an App Configuration store:
@@ -126,5 +131,4 @@ To verify the feature flag works as expected, start a purchase as follows:
 1. In the app, refresh the page. The WebSPA reloads.
 1. Select the shopping bag icon in the upper right.
 1. Select the **:::no-loc text="CHECKOUT":::** button.
-
-Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field isn't present. This is expected because the coupons feature is disabled.
+1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field isn't present. This is expected because the coupons feature is disabled.
