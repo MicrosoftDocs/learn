@@ -42,11 +42,11 @@ Open *Program.cs* by clicking on it.
 
 The first time you open a C# file in Visual Studio Code, you will receive a prompt to install recommended extensions for C#. Click the **Install** button in the prompt.
 
-:::image source="../media/install-recommended-extensions.png" alt-text="Screenshot of Visual Studio Code debug tab.":::
+:::image source="../media/install-recommended-extensions.png" alt-text="Screenshot of Visual Studio Code recommended extension prompt.":::
 
 Visual Studio Code will install the **C#** extension, and will show an additional prompt to add required assets to build and debug your project. Click the **Yes** button. 
 
-:::image source="../media/install-required-assets.png" alt-text="Screenshot of Visual Studio Code debug tab.":::
+:::image source="../media/install-required-assets.png" alt-text="Screenshot of Visual Studio Code required assets prompt.":::
 
 You can close the tab titled "Extension: C#" to focus on the code we'll be writing.
 
