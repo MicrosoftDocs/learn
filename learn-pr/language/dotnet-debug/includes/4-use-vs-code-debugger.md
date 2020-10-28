@@ -150,7 +150,7 @@ Now take some time to inspect the different variables' values by using the **Var
 - What is the value shown for the `n` parameter?
 - At the beginning of the function's execution what are the values for the local variables `n1`, `n2`, and `sum`?
 
-1. Next, we'll advance into the the `for` loop using the **Step Over** debugger control.
+1. Next, we'll advance into the `for` loop using the **Step Over** debugger control.
 
    :::image source="../media/step-over.png" alt-text="Screenshot of the Step over button.":::
 

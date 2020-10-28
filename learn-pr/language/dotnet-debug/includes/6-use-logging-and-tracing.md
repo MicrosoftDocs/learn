@@ -61,7 +61,7 @@ The return value is not 5 and it should be.
    at DotNetDebugging.Program.Main(String[] args) in C:\Users\jamont\Downloads\DotNetDebugging\Program.cs:line 10
 ```
 
-Stop bebugging, and then run the application without debug by entering the following command in the terminal:
+Stop debugging, and then run the application without debug by entering the following command in the terminal:
 
 ```bash
 dotnet run
