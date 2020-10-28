@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.go-to-market-marketplace-rewards.7-summary
+uid: learn.go-to-market-commercial-marketplace.8-summary
 title: Summary
 metadata:
-  title: Summary of learnings about Microsoft commercial marketplace
-  description: Summary
+  title: Summary
+  description: Summary of learnings about Microsoft commercial marketplace
   ms.date: 7/15/2020
   author: marleva
   ms.author: maevan
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/8-summary.md)]
