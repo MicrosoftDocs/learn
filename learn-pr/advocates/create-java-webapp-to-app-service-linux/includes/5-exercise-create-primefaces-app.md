@@ -292,7 +292,7 @@ public class TodoListController implements Serializable {
 ### Compile and Package the Java Project
 
 If you completes the implementation of the program above.
-You can compile the program. Execute the following command.
+You can compile the program. And execute the following command.
 
 ```bash
 mvn clean package
@@ -320,4 +320,3 @@ Use the `Add Task` button to add a task, or use the `Update Task` to update the 
 ![My ToDo List App Done](../media/primefaces-todo-list.png)
 
 You have successfully run the Todo web application implemented in PrimeFaces in your local Tomcat environment.
-

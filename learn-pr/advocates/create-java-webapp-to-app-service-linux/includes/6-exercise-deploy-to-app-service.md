@@ -1,5 +1,5 @@
 Now that we have verified the operation with Tomcat in the local environment, deploy the application to Azure App Services.
-You can use the Maven Plugin for Azure Web Apps (https://github.com/microsoft/azure-maven-plugins) to deploy to Azure App Service. Please specify the latest version (1.11.0 as of October 1, 2020).
+You can use the [Maven Plugin for Azure Web Apps(https://github.com/microsoft/azure-maven-plugins) to deploy to Azure App Service. Please specify the latest version (1.11.0 as of October 1, 2020).
 
 ```bash
 mvn com.microsoft.azure:azure-webapp-maven-plugin:1.11.0:config
@@ -67,11 +67,13 @@ Confirm (Y/N) [Y]: y
 
 When you succeeded the command, the `<plugins>` entry similar to the following will be added to the `pom.xml` file.
 
-If you want to change the resource group name, instance name, and deployment location, change the contents of `<resourceGroup>`, `<appName>`, and `<region>`, respectively.
+If you want to change the resource group name, instance name, and deployment location, please change the `<resourceGroup>`, `<appName>`, and `<region>`, entries respectively.
 
-Also, in order to listen to the PORT that listens at the default 8080 number on Tomcat at the 8080 number on Azure App Services, and to set the timeout at startup, the property item `PORT`, described in `<appSettings>` Please add `WEBSITES_PORT`,`WEBSITES_CONTAINER_START_TIME_LIMIT`.
+Also, in order to listen to the PORT number 80 on Azure App Services, we need to configure the port transfer setting on `PORT` and `WEBSITES_PORT` inside of the `<appSettings>`.
+Because Tomcat start the service with port number 8080 by default.
+And also we need to configure the timeout of startup time on  `WEBSITES_CONTAINER_START_TIME_LIMIT`.
 
-```xml 
+```xml
     <plugins>
       <plugin>
         <groupId>com.microsoft.azure</groupId>
@@ -122,7 +124,7 @@ Also, in order to listen to the PORT that listens at the default 8080 number on 
 
 ### Compile & Deploy to Azure  App Services
 
-Now that the settings for deploying to Azure App Services are complete, compile the source code again.
+Now that the settings for deploying to Azure App Services are complete, so please compile the source code again.
 
 ```bash
 mvn clean package
