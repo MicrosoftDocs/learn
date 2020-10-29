@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You need temporary to stop receiving alerts from analytic rules, due to maintenance activity. Which of the actions you should enable on the rule to achieve that configuration? "
+  - content: "Because of ongoing maintenance activity, you need to stop receiving alerts from analytic rules temporarily. Which action should you enable on the rule to achieve that configuration? "
     choices:
     - content: "Delete"
       isCorrect: false
@@ -31,10 +31,10 @@ quiz:
     - content: "Delete and recreate the alert with the new logic."
       isCorrect: false
       explanation: "Deleting the analytic rule will require more effort to build the same query logic and tune accordingly."
-    - content: "Duplicate the rule and modify the neccesery changes."
+    - content: "Duplicate the rule and modify the necessary changes."
       isCorrect: true
-      explanation: "When you duplicate the rule, you have startup configuration provided from the original rule, that can be further modify."
+      explanation: "When you duplicate the rule, you have the startup configuration provided from the original rule, which you can further modify."
     - content: "Create a new rule."
       isCorrect: false
-      explanation: "Creation of the new analytic rule will require to provide more inputs to achieve the required customization, instead of simply duplicating the rule."
+      explanation: "You will need to create a new analytics rule to provide more inputs to achieve the required customization, instead of simply duplicating the rule."
    

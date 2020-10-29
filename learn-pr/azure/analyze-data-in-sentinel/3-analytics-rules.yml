@@ -13,27 +13,28 @@ durationInMinutes: 5
 content: |
   [!include[] includes/3-analytics-rules.md)]
 quiz:
-  title: Check your knowledge
+  title: Check your knowledge 
+  ## Marjan please check if the rule types need to be capitalized. We used lower case within the units. 
   questions:
-  - content: "Which one of the analytic rules you can customize with your own query rules?"
+  - content: "Which one of the analytics rules can you customize with your own query rules?"
     choices:
     - content: "Fusion"
       isCorrect: false
       explanation: "Fusion detection is enabled by default in Azure Sentinel."
     - content: "Machine Learning Behavioral Analytics"
       isCorrect: false
-      explanation: "Machine learning behavioral analytics rules are built in rules and they cannot be edit."
-    - content: "Scheduled Analytic rules"
+      explanation: "Machine learning behavioral analytics rules are built-in rules and they cannot be edited."
+    - content: "Scheduled analytics rules"
       isCorrect: true
-      explanation: "Scheduled Analytic rules provide the highest level of customization."
+      explanation: "Scheduled analytics rules provide the highest level of customization."
   - content: "Which one of the template rules can create incidents based on all alerts generated in Azure Security Center? "
     choices:
     - content: "Machine Learning Behavioral Analytics"
       isCorrect: false
-      explanation: "Machine Learning Behavioral Analytics can detect anomalous logon activity, but they require additional configuration of the data source."
+      explanation: "Machine Learning Behavioral Analytics can detect anomalous logon activity but they require additional configuration of the data source."
     - content: "Fusion"
       isCorrect: false
-      explanation: " Fusion technology detects multistage attacks by identifying combinations of anomalous behaviors and suspicious activities that are observed at various stages of the kill chain."
+      explanation: "Fusion technology detects multistage attacks by identifying combinations of anomalous behaviors and suspicious activities that are observed at various stages of the kill chain."
     - content: "Microsoft Security"
       isCorrect: true
       explanation: "Microsoft Security template rules can create incidents based on all alerts generated in Azure Security Center."
