@@ -58,9 +58,9 @@ In this task, you create a SQL database based on the _AdventureWorksLT_ sample d
 
 1. Select **Set server firewall** and Allow Azure services and resouces to access this server = **Yes**.
 
-1. Select **Save**
+1. Select **Save**.
 
-1. Select **OK**
+1. Select **OK**.
 
 
 ## Task 2: Test the database
