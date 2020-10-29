@@ -14,9 +14,8 @@ content: |
   [!include[]includes/4-create-rule-from-templates.md)]
 quiz:
   title: Check your knowledge
-  ##Marjan this question seems very similar to the last question in the previous knowledge check. Is that okay?
   questions:
-  - content: "Which one of the template types should you use to create an incident based on all alerts generated in Azure Security Center?  "
+  - content: "Which one of the template types, you should use to create an incidents based on all alerts generated in Azure Security Center?  "
     choices:
     - content: "Fusion"
       isCorrect: false
@@ -26,15 +25,15 @@ quiz:
       explanation: "Machine Learning Behavior Analytics detects anomalous SSH or RDP login activity."
     - content: "Microsoft Security"
       isCorrect: true
-      explanation: "Template rules based on Microsoft Security type create incidents based on all alerts generated in Azure Security Center."
+      explanation: "Template rules based on Microsoft Security type, creates incidents based on all alerts generated in Azure Security Center."
   - content: "Which one of the following template rules are precreated in the Azure Sentinel Analytics?"
     choices:
-    - content: "Scheduled template rules"
+    - content: "Scheduled templates rules"
       isCorrect: false
       explanation: "Scheduled template rules are not precreated in the Azure Sentinel Analytics."
     - content: "Fusion"
       isCorrect: true
-      explanation: "Alert rule is created by default using the Fusion rule template."
+      explanation: "Alert rule is created by default using Fusion rule template."
     - content: "Machine Learning Behavior Analytics templates"
       isCorrect: false
       explanation: "Machine Learning Behavior Analytics are preconfigured in the template rule, but you need to create a detection rule based on the template."
