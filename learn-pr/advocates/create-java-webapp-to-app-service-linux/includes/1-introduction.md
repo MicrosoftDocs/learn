@@ -1,12 +1,12 @@
-Java has been working in various environments. Java has been widely used in many places, especially on the server side. Along with this, various Java web application frameworks have also been provided. Many web frameworks have been provided, such as JavaServer Pages (JSP), Java Servlet, Struts, JavaServer Faces (JSF), and Spring MVC. As an execution environment, Apache Tomcat started its project in November 1998, is provided as a reference implementation of Servlet and JSP and as OSS, and has been used by many users.
+Java has been working in various environments and widely used in many places in this 25 years, especially on the server side. Along with this, various Java Web application frameworks have also been provided. 
+Many web frameworks have been provided, such as JavaServer Pages (JSP), Java Servlet, Struts, JavaServer Faces (JSF), and Spring MVC. As an execution environment, Apache Tomcat started its project in November 1998, is provided as a reference implementation of Servlet and JSP and provided as Open Source, and has been used by many users.
 
-This module creates a Todo application as a simple Java web application and runs it on Azure App Service.
-Todo applications utilize JSF as the MVC framework and PrimeFaces for their internal implementation.
-JSF is a component-based framework that allows you to create Java web applications.
-PrimeFaces provides JSF's extended UI component, which makes it easier to create rich Ajax-enabled screens such as Single Page Application (SPA).
+This module creates a simple Todo application as Java Web application and runs it on Azure App Service.s
+Todo applications use JSF as the MVC framework and PrimeFaces for their implementation.
+JSF is a component-based framework that allows you to create Java Web applications.
+PrimeFaces provides extended UI component of JSF, which makes it easier to create rich Ajax-enabled Web Application such as Single Page Application(SPA).
 
 ![Java Todo Application Sample](../media/primefaces-todo-list.png)
-
 
 ## Learning objectives
 
