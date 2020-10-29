@@ -1,19 +1,20 @@
-You've been tasked with creating a simple Aapplication using the JavaServer Facess framework. The TODO application can add the new tasks and you can see the lists of all tasks and finaly you can mark the task as finished.
-As part of that evaluation, you will build a web application and deploy it to Linux on Azure App Services Tomcat. 
+You've been tasked with creating a simple Aapplication using the JavaServer Facess framework. 
+The TODO application can add the new tasks and you can see the lists of all tasks and finally you can mark the task as finished.
+As part of that evaluation in this module, you will build a web application and deploy it to Linux on Azure App Services Tomcat.
 
 ## Create a Simple JSF Web app on Tomcat
 
 Follow the steps below to build and run a JavaServer Faces web application.s
 
 1. Create Maven project
-1. Modify the Maven pom.xml file
-1. Contexts and Dependency Injection (CDI) enablement settings
-1. JSF enablement settings
-1. Rename the index.jsp file
-1. Creating a basic page for JSF Facelets
+1. Modify Maven pom.xml File
+1. Enable Contexts and Dependency Injection (CDI)
+1. Enable JSF
+1. Modify the name of index.jsp
+1. Creating a Basic Web Page for JSF
 1. Create JSF Backing Bean
 
-* [Optional] Run in local tomcat environment
+[Optional]: Run in local Tomcat environment
 
 ### 1. Creating Maven project
 
@@ -30,7 +31,7 @@ Execute the following command. This will create a Maven project for your Java we
 
 When you create a Maven project, the following files and directories will be created.
 
-   ```
+   ```xml
 ├── pom.xml
 └── src
     └── main
@@ -43,20 +44,20 @@ When you create a Maven project, the following files and directories will be cre
 
 ### 2. Modify Maven pom.xml File
 
-The Web application created this time uses JavaServer Faces. Therefore, in order to use JSF, make the following dependent libraries available in the project.
+The Web application created the above will use the JavaServer Faces framework. Therefore, in order to use JSF, you need to add the following dependency libraries into the project.
 
-* Sevlet
+* Servlet
 * JavaServer Faces
 * PrimeFaces
 * Java Server Pages Tag Library (JSTL)
 * Contexts and Dependency Injection (CDI) : Weld
 * Bean Validation
 * Jakarta JSON Binding
-*  Lombok
-*  JUnit
+* Lombok
+* JUnit
 
 Modify the `pom.xml` file as follows.
-Replace everything with copy and paste.
+Replace below XML configurations by copy and paste.
 
    ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -124,21 +125,21 @@ Replace everything with copy and paste.
 ### 3. Enable Contexts and Dependency Injection (CDI)
 
 Next, make CDI available to your web application.
-Create `beans.xml` under the` src / main / WEB-INF` directory and describe the following contents.
+Create a `beans.xml` file under the `src/main/WEB-INF` directory and describe the following contents.
 
    ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
-　　xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-　　xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd" 
+<beans xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+　　xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+　　xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
 　　bean-discovery-mode="all"></beans>
    ```
 
 ### 4. Enable JSF
 
-Next, in order to recognize all files with the xhtml extension as JSF Facelets, make the following settings for `web.xml` under the` WEB-INF` directory.
+Next, in order to recognize all files with the `xhtml` extension as JSF Facelets, make the following settings for `web.xml` under the `WEB-INF` directory.
 
-   ```
+   ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
 
@@ -164,10 +165,9 @@ Next, in order to recognize all files with the xhtml extension as JSF Facelets, 
 </web-app>
    ```
 
-
 ### 5. Modify the name of index.jsp
 
-Now that the environment settings for running JSF have been completed, it is time to actually implement the JSF page.
+Now that the environment settings for running JSF have been completed, it is time to create the JSF page.
 JSF web pages are written in XHTML file format instead of JSP, as set in `web.xml` above. Therefore, change the name of the `index.jsp` file that was automatically generated when the project was created to `index.xhtml`.
 
    ```bash
@@ -195,14 +195,13 @@ Please delete all the contents described in `index.xhtml` once and paste the fol
         <p:outputLabel id="ajaxUpdateText" value="Input Value: #{indexcontroller.inputValue}" /><br />
     </h:form>
 </h:body>
-
 </html>
    ```
 
 ### 7. Create JSF Backing Bean
 
 Next, create a backing bean to implement server-side backend processing.
-Create the package directory for creating the backing bean under the `src / main` directory.
+Create a new directory for Java package which will use to create the backing bean under the `src/main` directory.
 
 ```bash
 cd src/main
@@ -227,13 +226,13 @@ import lombok.Setter;
 @ViewScoped
 public class IndexController implements Serializable{
 
-	private static final long serialVersionUID = 8485377386286855408L;
+    private static final long serialVersionUID = 8485377386286855408L;
 
-	@Setter @Getter 
+    @Setter @Getter
     private String inputValue;
-    
+
     private int counter;
-    
+
     public void submitButtonAction(){
         inputValue = inputValue + " : " + counter;
         counter++;
@@ -244,7 +243,7 @@ public class IndexController implements Serializable{
 This completes the program implementation.
 The directory structure after implementing the program is as follows.
 
-```
+```text
 ├── pom.xml
 └── src
     └── main
@@ -268,11 +267,15 @@ Execute the following command.
 
 #### 1. Compile and Package the Java Project
 
+Execute the following command to compile the code.
+
 ```bash
 mvn clean package
 ```
 
 #### 2. Copy the artifact to the Deployment Directory on Tomcat
+
+Copy the artifact war file to the directory in the Tomcat.
 
 ```bash
 cp target/azure-javaweb-app.war /$INSTALL_DIR/apache-tomcat-9.0.38/webapps/
@@ -280,11 +283,13 @@ cp target/azure-javaweb-app.war /$INSTALL_DIR/apache-tomcat-9.0.38/webapps/
 
 #### 3. Start the Tomcat Server
 
+Start the Tomcat Server.
+
 ```bash
 $INSTALL_DIR/apache-tomcat-9.0.38/bin/startup.sh
 ```
 
-After running Tomcat, access `http: // localhost: 8080 / azure-javaweb-app /` and you will see the screen below.
+After running Tomcat, access `http://localhost:8080/azure-javaweb-app/` and you will see the screen below.
 
 ![JSF HelloWorld Page](../media/jsf-helloworld.png)
 
