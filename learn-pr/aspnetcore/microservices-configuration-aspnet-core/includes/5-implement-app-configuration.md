@@ -47,7 +47,8 @@ AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;I
 
 ## Add the feature flag for Coupons
 
-1. Use the Azure portal's search box to find and open the App Configuration resource prefixed with *:::no-loc text="eshoplearn":::*.
+1. In another tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Cloud Shell.
+1. Use the search box to find and open the App Configuration resource prefixed with *:::no-loc text="eshoplearn":::*.
 1. Select **Feature manager** > **Add**.
 1. Select the **Enable feature flag** check box, enter *Coupons* in the **Feature flag name** text box, and select the **Apply** button.
 
@@ -75,9 +76,12 @@ Apply the following changes to your ASP.NET Core project:
         if (settings.GetValue<bool>("UseFeatureManagement") &&
             !string.IsNullOrEmpty(settings["AppConfig:Endpoint"]))
         {
-            configBuilder.AddAzureAppConfiguration(options =>
-                options.Connect(settings["AppConfig:Endpoint"])
-                       .UseFeatureFlags());
+            configBuilder.AddAzureAppConfiguration(configOptions =>
+            {
+                configOptions.Connect(settings["AppConfig:Endpoint"])
+                    .UseFeatureFlags(flagOptions =>
+                        flagOptions.CacheExpirationInterval = TimeSpan.FromSeconds(10));
+            });
         }
     })
     ```
@@ -118,4 +122,9 @@ To verify the feature flag works as expected, start a purchase as follows:
 1. In the app, refresh the page. The WebSPA reloads.
 1. Select the shopping bag icon in the upper right.
 1. Select the **:::no-loc text="CHECKOUT":::** button.
-1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field isn't present. This is expected because the coupons feature is disabled.
+1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is present. This is expected because the coupons feature is enabled in the Azure portal.
+1. In the Azure portal, clear the Coupons feature's **Enabled** check box.
+1. In the app, refresh the page. The WebSPA reloads.
+1. Select the shopping bag icon in the upper right.
+1. Select the **:::no-loc text="CHECKOUT":::** button.
+1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is not present.

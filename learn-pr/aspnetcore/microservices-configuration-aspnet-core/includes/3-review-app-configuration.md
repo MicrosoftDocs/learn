@@ -8,19 +8,18 @@ You'll review the:
 * Kubernetes configuration abstraction&mdash;the ConfigMap.
 * Azure App Configuration service.
 * ASP.NET Core Feature Management library.
+* Feature flag components implemented in the app.
 
 ## ASP.NET Core configuration
 
 ASP.NET Core supplies a [configuration provider](/aspnet/core/fundamentals/configuration/#configuration-providers) abstraction that handles configurations as key-value pair collections. An app can register a chain of configuration providers, and any provider can override a value set by a prior provider in the chain.
 
-Configuration key names can describe a hierarchy. For example, the notation `FeatureManagement:Coupons` refers to the `Coupons` property within the `FeatureManagement` section. This structure can also map configuration values to an object tree or an [array](/aspnet/core/fundamentals/configuration/#bind-an-array).
+Configuration key names can describe a hierarchy. For example, the notation `FeatureManagement:Coupons` refers to the `Coupons` key within the `FeatureManagement` section. This structure can also map configuration values to an object tree or an [array](/aspnet/core/fundamentals/configuration/#bind-an-array).
 
 > [!IMPORTANT]
 > Some platforms don't support a colon for environment variable names. In those cases, a double underscore (`__`) is used instead of a colon (`:`).
 
-<!-- TODO: add this somewhere? [keys and values](/aspnet/core/fundamentals/configuration/#configuration-keys-and-values) -->
-
-ASP.NET Core uses a [ConfigurationBinder](/dotnet/api/microsoft.extensions.configuration.configurationbinder) to map configuration values to objects and arrays, based on the property names in a case-insensitive fashion. This is the base that supports the implementation of the [Options pattern](/aspnet/core/fundamentals/configuration/options) that can help simplify using the configuration values in your app.
+ASP.NET Core uses a [ConfigurationBinder](/dotnet/api/microsoft.extensions.configuration.configurationbinder) to map configuration values to objects and arrays. The mapping to key names occurs in a case-insensitive fashion. For example, `ConnectionString` and `connectionstring` are treated as equivalent keys. For more information, see [keys and values](/aspnet/core/fundamentals/configuration/#configuration-keys-and-values).
 
 ## Kubernetes configuration
 
@@ -49,41 +48,45 @@ The ConfigMap's key-value pairs are presented to the containerized app as enviro
 
 ## Azure App Configuration
 
-A cloud-based configuration service is especially useful in microservices apps and other distributed applications. In this module, you'll use Azure App Configuration to manage app settings and feature flags.
+A centralized configuration service is especially useful in microservices apps and other distributed apps. In this module, you'll use Azure App Configuration to manage app settings and feature flags.
 
-In ASP.NET Core, Azure App Configuration is registered as another configuration provider in *Startup.cs*. As a result, the rest of the app doesn't need to know anything about the App Configuration service as it works with configuration values.
+In an ASP.NET Core app, Azure App Configuration is registered as another configuration provider in *Startup.cs*. As a result, the rest of the app doesn't need to know anything about the App Configuration service as it works with configuration values.
 
 ## Feature Management library
 
-`Microsoft.FeatureManagement` provides standardized APIs for enabling feature flags within apps.  It's designed to work with multiple configuration scenarios, including Azure App Configuration. Combining this library with Azure App Configuration enables you to dynamically toggle features without implementing supporting infrastructure.
+The *Feature Management* library, distributed as a NuGet package named `Microsoft.FeatureManagement`, provides standardized APIs for managing feature flags within apps. It's designed to work with any configuration source, including Azure App Configuration. Combining this library with Azure App Configuration enables you to dynamically toggle features without implementing supporting infrastructure.
 
-The Feature Management library and Azure App Configuration build on ASP.NET Core's configuration abstraction.
+Like Azure App Configuration, the Feature Management library also builds on ASP.NET Core's configuration abstraction. They integrate together to provide a complete feature management solution.
 
 ### Integration
 
-To illustrate this integration, see the following excerpt from the *Program.cs* file's `CreateHostBuilder` method:
+To understand the integration of Azure App Configuration and the Feature Management library, see the following excerpt from the *Program.cs* file's `CreateHostBuilder` method:
 
 :::code language="csharp" source="../code/src/web/webspa/program.cs" id="snippet_CreateHostBuilder":::
 
-In the highlighted code fragment:
+In the preceding code fragment:
 
-1. There's no explicit registration of .NET Core configuration providers. The `CreateDefaultBuilder` method registers the environment variable and JSON file configuration providers. As a result, values can be read from environment variables and *appsettings.json*, respectively.
-<!--TODO: finish creating this list-->
-<!-- 2. If FeatureManagement is enabled and the App Configuration endpoint configured (line 27). (You can take a look at the ConfigMap above).
+1. The `CreateDefaultBuilder` method registers the environment variable and JSON file configuration providers. As a result, values can be read from environment variables and *appsettings.json*, respectively.
+1. The `ConfigureAppConfiguration` method is called to register a configuration provider for Azure App Configuration. The configuration provider is registered, via a call to `AddAzureAppConfiguration`, if the following conditions are satisfied:
+    1. The `UseFeatureManagement` key value in *appsettings.json* is `true`.
+    1. The Azure App Configuration connection string, found in the `AppConfig:Endpoint` key's value, has been provided.
+1. The Azure App Configuration provider is registered by providing a connection string to the resource. Feature flags support is enabled via a call to `UseFeatureFlags`.
+
+<!--
 1. Add the `AzureAppConfiguration` provider (line 29). Being the second in the chain of providers, it can override any value taken from the ConfigMap.
-1. Connect to the App Configuration endpoint (line 31).
-1. Enable the feature flags (line 32).
 1. Set the configuration refresh rate from the App Configuration store (line 35). -->
 
-## Review the "infrastructure" feature flag components
+## Review the app's feature flag components
 
 :::image type="content" source="../media/3-review-app-configuration/client-to-server-integration.png" alt-text="A diagram showing how Angular communicates with ASP.NET Core" border="true" lightbox="../media/3-review-app-configuration/client-to-server-integration.png":::
 
-To make a feature configurable, you have to make several changes to your app. Some "infrastructure" components have already been implemented for you. What follows is a review of those components.
+To make a feature configurable, you have to make several changes to your app. Some components have already been implemented for you. What follows is a review of those components.
 
 ### Feature flag directive for the views
 
-This is implemented with the following files in the *src\Web\WebSPA\Client\src\modules\shared* directory:
+The *WebSPA* app is built with a JavaScript SPA framework from Google called Angular. Knowledge of Angular isn't required, but it's important to understand the architecture of this app.
+
+You're provided with a custom Angular *attribute directive*&mdash;a component that changes the appearance of DOM elements. In this case, the directive considers a feature flag to toggle the visibility of the discount coupon DOM elements. The directive is implemented with the following files in the *src\Web\WebSPA\Client\src\modules\shared* directory:
 
 * *directives\featureFlag.directive.ts*
 * *models\featureFlag.model.ts*
@@ -95,11 +98,11 @@ An Angular component that contains the `featureFlag` attribute triggers the foll
 
     :::code language="typescript" source="../code/src/web/webspa/client/src/modules/shared/directives/featureFlag.directive.ts" highlight="18":::
 
-1. The `getFeatures` function constructs a URL to initiate an HTTP GET request to the App Configuration store:
+1. The `getFeatures` function constructs a URL to send an HTTP GET request to the App Configuration store:
 
     :::code language="typescript" source="../code/src/web/webspa/client/src/modules/shared/services/featureFlag.service.ts" id="snippet_getFeatures":::
 
-1. The HTTP response from the aforementioned HTTP GET request is converted to an instance of `IFeatureFlag`:
+1. The response from the HTTP GET request is converted to an instance of `IFeatureFlag`:
 
     :::code language="typescript" source="../code/src/web/webspa/client/src/modules/shared/models/featureFlag.model.ts":::
 

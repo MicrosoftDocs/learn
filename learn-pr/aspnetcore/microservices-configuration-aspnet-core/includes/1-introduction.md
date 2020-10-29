@@ -1,18 +1,8 @@
-Imagine you're a software developer for an online retailer named eShopOnContainers. The retailer uses a cloud-native, microservices-based app developed using .NET Core for its online storefront.
+Imagine you're a software developer for an online retailer named *:::no-loc text="eShopOnContainers":::*. The retailer's online storefront is a cloud-native, microservices-based ASP.NET Core app. You've developed and deployed a new discount coupon feature for the checkout page. The feature allows a customer to redeem a coupon code before their payment is applied. The team's product owner has requested support for disabling the discount coupon feature in real time.
 
-You've just completed and deployed to a test environment the implementation of a new feature but the Product Owner has a last-minute request to make the new feature toggleable so they are able to make some tests in production with real users.
+This module guides you through implementing a feature flags library. With that library, you'll create a feature flag to toggle the visibility of the discount coupon feature. The configuration values that support this feature flag will be centralized by using the Azure App Configuration service. You'll begin with a simplified, revamped version of [:::no-loc text="eShopOnContainers":::](https://github.com/dotnet-architecture/eShopOnContainers)&mdash;the companion reference app for the guide [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices). This new version includes the discount coupon feature.
 
-For this sprint, you'll focus on enabling feature toggling in your app. Later on, you'll enable the feature for a set of users, but that'll be a goal for another sprint.
-
-For this module, you'll begin with a *simplified* and *revamped* version of [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers), the companion reference application for the guide: [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices/). This new version includes a discount coupon feature, that you can use at checkout time in the shopping basket.
-
-The initial app also contains the implementation of some "infrastructure" components to implement feature flags, to make it easier to complete the exercise.
-
-In this module, you will:
-
-- Review some key ASP.NET Core and Kubernetes configuration concepts.
-- Implement a feature management option so you can turn features on or off using configuration.
-- Create an Azure App Configuration store to centralize configuration management, and enable remote feature toggling.
+[!INCLUDE[Use your own Azure subscription](../../includes/microservices/your-own-az-subscription.md)]
 
 ## Learning objectives
 
@@ -23,5 +13,6 @@ In this module, you will:
 ## Prerequisites
 
 - Familiarity with C# and ASP.NET Core development at the beginner level
+- Familiarity with RESTful service concepts at the beginner level
 - Conceptual knowledge of containers and AKS at the intermediate level
 - Access to an Azure subscription with **Owner** privilege

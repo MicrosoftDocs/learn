@@ -7,6 +7,14 @@ In this unit, you will:
 * Make the discount coupon feature configurable.
 * Deploy the SPA to your AKS cluster.
 
+> [!NOTE]
+> If your Cloud Shell session disconnects due to inactivity, reconnect and run the following command to return to this directory and open the Cloud Shell editor:
+>
+> ```bash
+> cd ~/clouddrive/aspnet-learn/src/ && \
+>   code .
+> ```
+
 ## Verify the deployment to AKS
 
 Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
@@ -47,7 +55,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
     :::image type="content" source="../../microservices-configuration-aspnet-core/media/4-implement-feature-manager/discount-coupon-elements.png" alt-text="Discount coupon elements":::
 
-You've successfully verified that the app was deployed to AKS. Additionally, you've seen that the discount coupon feature is enabled.
+You've successfully verified that the app was deployed to AKS. Additionally, you've seen that the discount coupon feature that you're going to modify to be configurable.
 
 ## Set up Feature Management
 
@@ -63,7 +71,13 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
 
     The library retrieves feature flags from the .NET Core's native configuration system. Therefore, you can define your app's feature flags by using any configuration provider that .NET Core supports. For example, the *appsettings.json* file or environment variables. In this case, you'll make the configuration in *appsettings.json* and in the SPA Helm chart's ConfigMap file.
 
-1. In the *WebSPA* project's *appsettings.json* file, replace the `// Add the feature management properties` comment with the following. Save your changes.
+1. In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, uncomment the `UseFeatureManagement` and `FeatureManagement__Coupons` lines. Save your changes.
+
+    After the change, your file will resemble the following YAML snippet:
+
+    :::code language="yaml" source="../code/deploy/k8s/helm-simple/webspa/templates/configmap.yaml" highlight="25-26":::
+
+1. In the *src/Web/WebSPA/appsettings.json* file, replace the `// Add the Feature Management keys` comment with the following. Save your changes.
 
     ```json
     "UseFeatureManagement": true,
@@ -72,15 +86,9 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
     },
     ```
 
-    By convention, the feature manager retrieves feature flags from the `FeatureManagement` section of the configuration file. The `UseFeatureManagement` property is the feature flag. It isn't something imposed by the Feature Management library. The values above will become the default ones for the SPA.
+    By convention, the feature manager retrieves feature flags from the `FeatureManagement` section of the configuration file. The `UseFeatureManagement` key is the feature flag. It isn't something imposed by the Feature Management library. The values above will become the default ones for the SPA.
 
-1. In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, uncomment the `UseFeatureManagement` and `FeatureManagement__Coupons` lines. Save your changes.
-
-    After the change, your file will resemble the following YAML snippet:
-
-    :::code language="yaml" source="../code/deploy/k8s/helm-simple/webspa/templates/configmap.yaml" highlight="25-26":::
-
-1. Apply the following changes in the *Startup.cs* file:
+1. In the same directory, apply the following changes in the *Startup.cs* file:
     1. In the `ConfigureServices` method, replace the comment `// Add the AddFeatureManagement code` with the following code:
 
         ```csharp
@@ -138,6 +146,9 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
     2020/10/26 21:57:23 Successfully pushed image: eshoplearn20201026212601002.azurecr.io/webspa:linux-latest
     ```
 
+    > [!IMPORTANT]
+    > The WebSPA project is built in ACR, rather than local to Cloud Shell, to take advantage of robust build hosts in ACR. If the ACR quick task fails, inspect the output for troubleshooting information. Run the above script again to attempt additional builds.
+
 1. Run the following script to deploy the updated WebSPA to AKS:
 
     ```bash
@@ -157,6 +168,13 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
     1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is still present.
+
+1. Verify the middleware is functioning as intended as follows:
+    1. In another browser tab, navigate to the app's `/features` endpoint. The relative URL is `/features?featureName=coupons`. Combine that with your app's IP address as shown:
+
+    :::image type="content" source="../media/4-implement-feature-manager/feature-middleware-response.png" alt-text="The JSON response from the middleware" border="true" lightbox="../media/4-implement-feature-manager/feature-middleware-response.png":::
+
+    1. Notice the JSON data indicates the coupons feature is enabled.
 
 ## Disable the coupons feature
 
@@ -181,3 +199,7 @@ Complete the following steps to disable the coupons feature.
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
     1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is no longer present.
+
+1. In the tab displaying the `/features` endpoint, refresh the page. Notice the value of the coupons feature's `enabled` flag is now `false`.
+
+In this unit, you made the coupons feature configurable and deployed the updated app. In the next unit, you'll modify the app to use values stored in Azure App Configuration.

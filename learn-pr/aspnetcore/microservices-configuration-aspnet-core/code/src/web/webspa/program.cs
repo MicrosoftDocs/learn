@@ -15,9 +15,12 @@ public class Program
                 if (settings.GetValue<bool>("UseFeatureManagement") &&
                     !string.IsNullOrEmpty(settings["AppConfig:Endpoint"]))
                 {
-                    configBuilder.AddAzureAppConfiguration(options =>
-                        options.Connect(settings["AppConfig:Endpoint"])
-                               .UseFeatureFlags());
+                    configBuilder.AddAzureAppConfiguration(configOptions =>
+                    {
+                        configOptions.Connect(settings["AppConfig:Endpoint"])
+                            .UseFeatureFlags(flagOptions =>
+                                flagOptions.CacheExpirationInterval = TimeSpan.FromSeconds(10));
+                    });
                 }
             })
             // code omitted for brevity
