@@ -3,7 +3,7 @@ uid: learn.use-docker-container-dev-env-vs-code.7-exercise-customize-settings
 title: Exercise - Customize project and editor settings
 metadata:
   title: Exercise - Customize project and editor settings
-  description: Customize project and editor settings exercise
+  description: Modify the devcontainer.json file to customize your project and editor settings.
   ms.date: 10/13/2020
   author: bamurtaugh
   ms.author: brmurtau

@@ -3,7 +3,7 @@ uid: learn.use-docker-container-dev-env-vs-code.2-use-as-dev-env
 title: Use the Remote - Containers extension in Visual Studio Code
 metadata:
   title: Use the Remote - Containers extension in Visual Studio Code
-  description: Use the Remote - Containers extension in Visual Studio Code
+  description: Get an overview of the Remote - Containers extension in Visual Studio Code and the files it adds to your project.
   ms.date: 10/13/2020
   author: bamurtaugh
   ms.author: brmurtau
