@@ -23,6 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -35,16 +36,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="3440"
-     inkscape:window-height="1377"
+     inkscape:window-width="1924"
+     inkscape:window-height="1246"
      id="namedview264"
      showgrid="false"
      inkscape:zoom="9.509434"
-     inkscape:cx="38.382937"
-     inkscape:cy="53"
-     inkscape:window-x="1912"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
+     inkscape:cx="38.722005"
+     inkscape:cy="54.025489"
+     inkscape:window-x="2539"
+     inkscape:window-y="90"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg262" />
   <circle
      cx="53"
@@ -53,13 +54,6 @@
      fill="#5197d5"
      id="circle2"
      style="filter:url(#filter0_d)" />
-  <circle
-     cx="53"
-     cy="52.684525"
-     r="48"
-     stroke="#0078d4"
-     stroke-width="4"
-     id="circle8" />
   <g
      filter="url(#filter1_d)"
      id="g14"
@@ -714,4 +708,22 @@
          id="stop257" />
     </linearGradient>
   </defs>
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 53.841085,3.000155 c -27.61,0 -50.0000301,22.38999 -50.0000301,49.99999 0,27.61 22.3900301,49.999705 50.0000301,49.999705 27.61,0 50.000395,-22.389705 50.000395,-49.999705 0,-27.61 -22.390395,-49.99999 -50.000395,-49.99999 z m 0,95.75999 c -25.27,0 -45.7600301,-20.49 -45.7600301,-45.76 0,-25.27 20.4900301,-45.75999 45.7600301,-45.75999 25.27,0 45.76,20.48999 45.76,45.75999 0,25.27 -20.49,45.76 -45.76,45.76 z"
+     fill="#d9d9d9"
+     id="path872" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 7.9410449,53.000245 c 0,25.35 20.5500401,45.9 45.9000401,45.9 25.35,0 45.9,-20.55 45.9,-45.9 0,-25.35 -20.55,-45.89998 -45.9,-45.89998 -25.35,0 -45.9000401,20.54998 -45.9000401,45.89998 z M 53.841085,3.360265 c -27.42,0 -49.6400401,22.21998 -49.6400401,49.63998 0,27.42 22.2300401,49.639605 49.6400401,49.639605 27.42,0 49.640395,-22.229605 49.640395,-49.639605 0,-27.42 -22.220395,-49.63998 -49.640395,-49.63998 z"
+     fill="#f2f1f0"
+     id="path874" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 10.751045,53.000045 c 0,23.8 19.29004,43.09 43.09004,43.09 23.8,0 43.09,-19.29 43.09,-43.09 0,-23.8 -19.29,-43.08997 -43.09,-43.08997 -23.8,0 -43.09004,19.28997 -43.09004,43.08997 z m 43.09004,-46.82997 c -25.86,0 -46.8300401,20.96997 -46.8300401,46.82997 0,25.86 20.9700401,46.83 46.8300401,46.83 25.86,0 46.829995,-20.97 46.829995,-46.83 0,-25.86 -20.959995,-46.82997 -46.829995,-46.82997 z"
+     fill="#0078d4"
+     id="path876" />
 </svg>
