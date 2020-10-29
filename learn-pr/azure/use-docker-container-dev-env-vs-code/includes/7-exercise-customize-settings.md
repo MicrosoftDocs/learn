@@ -59,7 +59,7 @@ The container will be rebuilt with the changes you've specified in the "devconta
 
 1. Open the "template/index.html" file
 1. Scroll down to line 33 and notice that there's syntax highlighting on the "for" loop
-   :::image type="content" source="../media/for-loop.jpg" alt-text="for loop with syntax highlighting":::
+   :::image type="content" source="../media/for-loop.jpg" alt-text="Screenshot of Jinja template, emphasizing a for loop with syntax highlighting.":::
 
 ## Run the app
 

@@ -30,7 +30,7 @@ The project should now be open in VS Code. Next, you'll add a dev container to t
 
 A Remote Container configuration will be added to your project. VS Code will notify you that you can now open the project in a container. For now, dismiss this notification.
 
-:::image type="content" source="../media/open-in-container-notification.jpg" alt-text="VS Code notification asking to reopen the project in a container":::
+:::image type="content" source="../media/open-in-container-notification.jpg" alt-text="Screenshot of VS Code notification asking to reopen the project in a container":::
 
 ## Inspect configuration files
 
@@ -60,7 +60,7 @@ The container will begin building. The initial build may take a few minutes as a
 
 ## Install Project Dependencies
 
-1.  Run the following command in the terminal to install the Flask dependencies needed to run the project...
+Run the following command in the terminal to install the Flask dependencies needed to run the project...
 
         pip3 install --user -r requirements.txt
 
@@ -74,7 +74,7 @@ The container will begin building. The initial build may take a few minutes as a
 
     This should open a browser pointed to "localhost:5000" and you will see the Products Dashboard.
 
-    :::image type="content" source="../media/products-dashboard.jpg" alt-text="Python Products Dashboard application":::
+    :::image type="content" source="../media/products-dashboard.jpg" alt-text="Screenshot of the Python Products Dashboard application.":::
 
 Great work! You've got a Python web application with Flask running on your machine and you might not know what either of those things even are. That's OK! You don't have to. The container takes care of setting up the entire environment.
 

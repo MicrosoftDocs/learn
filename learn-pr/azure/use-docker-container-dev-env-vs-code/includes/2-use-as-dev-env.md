@@ -1,4 +1,4 @@
-As you've noticed during your time at the agency, it can be a major hassle for developers to get started with new projects. Each one requires the developer to install and manage specific or complicated sets of dependencies and tech stacks. Ideally, each project would be contained in its own pre-configured, containerized environment. Containerized development is made possible with Docker and Visual Studio Code (VS Code) through the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
+As you've noticed during your time at the agency, it can be a major hassle for developers to get started with new projects. Each one requires the developer to install and manage specific or complicated sets of dependencies and tech stacks. Ideally, each project would be contained in its own pre-configured, containerized environment. Containerized development is made possible with Docker and Visual Studio Code (VS Code) through the Remote - Containers extension.
 
 ## The Remote-Containers extension for VS Code
 

@@ -2,7 +2,7 @@ You work at an agency that does software consulting around many different langua
 
 ## Learning objectives
 
-In this module, you will:
+By the end of this module, you will be able to:
 
 - Understand how and why you would use a container as a development environment.
 - Install the Remote - Containers extension in Visual Studio Code and learn how to use it.
