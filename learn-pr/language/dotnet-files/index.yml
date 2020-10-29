@@ -13,11 +13,11 @@ summary: Build an app that manipulates files and directories with C# and .NET.
 abstract: |   
   By the end of this module, you will be able to:
 
-  - Work with directories
-  - Create and delete files
-  - Read from files
-  - Write to files
-  - Parse data in files
+  - Work with directories.
+  - Create and delete files.
+  - Read from files.
+  - Write to files.
+  - Parse data in files.
 prerequisites: |   
   - Experience writing C# at the beginner level 
   - Familiarity with basic programming constructs, such as loops and "if" statements 
