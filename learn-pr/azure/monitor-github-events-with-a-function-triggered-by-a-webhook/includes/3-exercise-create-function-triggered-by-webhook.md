@@ -31,7 +31,7 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
     | O/S | Windows |
     | Plan | Consumption (Serverless) |
 
-    ### Sandbox regions
+### Sandbox regions
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
