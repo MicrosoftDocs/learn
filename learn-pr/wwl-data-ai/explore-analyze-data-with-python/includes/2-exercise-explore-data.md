@@ -30,7 +30,6 @@ If you don't already have an Azure Machine Learning workspace in your Azure subs
     - **Subscription**: *your Azure subscription*
     - **Resource group**: *create a new resource group with a unique name*
     - **Location**: *choose any available location*
-    - **Workspace edition**: Enterprise
 3. Wait for your workspace resource to be created (it can take a few minutes). Then go to it in the portal, and on the **Overview** page for your workspace, launch Azure Machine Learning studio (or navigate to [https://ml.azure.com](https://ml.azure.com?azure-portal=true)), and sign in using your Microsoft account.
 4. In Azure Machine Learning studio, toggle the  **&#9776;** icon at the top left to view the various pages in the interface. You can use these pages to manage the resources in your workspace.
 
@@ -69,7 +68,7 @@ The files used in this module (and other related modules) are published in the *
 After you've created a Jupyter environment and cloned the **ml-basics** repository, you're ready to explore data.
 
  1. In Jupyter, open the **Data Exploration.ipynb** notebook in the **ml-basics** folder and follow the instructions it contains.
- 2. When you've finished, close and halt the notebook.
+ 2. When you've finished, close and halt all notebooks.
 
 ## Clean-up
 

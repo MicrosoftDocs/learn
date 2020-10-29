@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-logging-aspnet-core.6-azure-monitor-containers
+metadata:
+  title: Exercise - Implement Azure Monitor for Containers
+  description: Add real-time monitoring of AKS infrastructure with Azure Monitor for Containers.
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 10/14/2020
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Exercise - Implement Azure Monitor for Containers
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-azure-monitor-containers.md)]

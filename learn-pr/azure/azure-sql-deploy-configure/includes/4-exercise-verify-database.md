@@ -123,9 +123,9 @@ In this option, you'll walk through some common queries against system functions
 
     Two `VISIBLE ONLINE` schedulers are what you would expect when two vCores are available for the SQL Server instance where your SQL database is deployed.
 
-1. For a SQL Server deployment, you might normally look at DMVs like sys.dm_os_sys_info and sys.dm_process_memory to see limits for CPU, memory, and workers. These DMVs are not supported with Azure SQL Database, because the user doesn't expose or control the details of the host that supports the database. So you can use the DMV sys.dm_user_db_resource_governance to review capacities and limits for your deployed SQL database. 
+1. For a SQL Server deployment, you might normally look at DMVs like sys.dm_process_memory to see limits for CPU, memory, and workers. This DMV is not supported with Azure SQL Database, because the user doesn't expose or control the details of the host that supports the database. So you can use the DMV sys.dm_user_db_resource_governance (and sys.dm_instance_resource_governance in Azure SQL Managed Instance) to review capacities and limits for your deployed SQL database. 
 
-    Run and review the following query results. Compare this to your pricing tier and the limits documented for your deployed tier.
+    Run and review the following query results. Compare this to your pricing tier and the limits documented for your deployed tier. The `slo_name` is the Service Level Objective (SLO) which states the deployment option, service tier, hardware, and compute amount.  In addition, because Azure SQL Database uses Windows Job Objects for additional resource limits (such as memory), you can use the `sys.dm_os_job_object` DMV to see what resources are available for the deployment.
 
     ```sql
     SELECT * FROM sys.dm_user_db_resource_governance;
