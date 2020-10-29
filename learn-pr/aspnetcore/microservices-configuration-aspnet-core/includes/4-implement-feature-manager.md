@@ -47,11 +47,9 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 You've successfully verified that the app was deployed to AKS. Additionally, you've seen that the discount coupon feature is enabled.
 
-## Make the discount coupon feature configurable
+## Set up Feature Management
 
 Complete the following steps to support toggling of the SPA's discount coupon feature in real time.
-
-### Set up Feature Management
 
 1. Install the NuGet package required to use the feature manager library:
 
