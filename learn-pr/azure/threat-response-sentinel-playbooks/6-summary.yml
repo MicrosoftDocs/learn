@@ -2,8 +2,8 @@
 uid: learn.azure.threat-response-sentinel-playbooks.6-summary
 metadata:
   title: Summary
-  description: TODO
-  ms.date: TODO
+  description: Automated response on threats using Azure Sentinel Playbooks
+  ms.date: 10/29/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
