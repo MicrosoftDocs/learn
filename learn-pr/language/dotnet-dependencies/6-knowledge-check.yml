@@ -19,27 +19,27 @@ quiz:
       choices:
         - content: "Run `dotnet add Humanizer`"
           isCorrect: false
-          explanation: "When using the `add` command you must specify that you want to install a `package` before specifying the name."
+          explanation: "When you're using the `add` command, you must specify that you want to install a `package` before specifying the name."
         - content: "Run `dotnet add package Humanizer`"
           isCorrect: true
-          explanation: "This will add the most recent version of the package to your project. You can also specify the version using the `--version=<version>` paramter."
+          explanation: "This will add the most recent version of the package to your project. You can also specify the version by using the `--version=<version>` parameter."
         - content: "Run `dotnet install Humanizer`"
           isCorrect: false
           explanation: "There is no `install` command. Use `add package`."
         - content: "Run `dotnet download package Humanizer`"
           isCorrect: false
           explanation: "There is no `download` command. Use `add package`."
-    - content: "What version change would signify a Minor version when a package uses semantic version?"
+    - content: "What version change would signify a minor version when a package uses semantic versioning?"
       choices:
         - content: "1.1.1 changes to 1.2.0"
           isCorrect: true
-          explanation: "The middle number represents the Minor version. A change to this number means that features have been added. Your code should still work."
+          explanation: "The middle number represents the minor version. A change to this number means that features have been added. Your code should still work."
         - content: "1.0.1 changes to 1.0.2"
           isCorrect: false
-          explanation: "The third number is the Patch version. A change to this number means that a change has been applied that fixes something in the code that should have worked."
+          explanation: "The third number is the patch version. A change to this number means that a change has been applied that fixes something in the code that should have worked."
         - content: "1.0.0 changes to 2.0.0"
           isCorrect: false
-          explanation: "The first number is the Major version. A change to this number means that you can expect breaking changes in code."
+          explanation: "The first number is the major version. A change to this number means that you can expect breaking changes in code."
     - content: "How do you configure a project file so that you get only patch (bug fix) updates?"
       choices:
         - content: "Locate the entry in the project file and set the entry to look like this one: `<PackageReference Include=\"<package>\" Version=\"*\"/>`"
@@ -47,24 +47,24 @@ quiz:
           explanation: "This code will always update the dependency to the latest possible version."
         - content: "Locate the entry in the project file and set the entry to look like this one: `<PackageReference Include=\"<package>\" Version=\"2.*\"/>`"
           isCorrect: false
-          explanation: "This code will always update the dependency to the latest Minor version."
+          explanation: "This code will always update the dependency to the latest minor version."
         - content: "Locate the entry in the project file and set the entry to look like this one: `<PackageReference Include=\"<package>\" Version=\"2.7.*\"/>`"
           isCorrect: true
-          explanation: "Setting the third value in the version to * will ensure that the library always uses the latest patch version."
+          explanation: "Setting the third value in the version to an asterisk will ensure that the library always uses the latest patch version."
         - content: "Locate the entry in the project file and set the entry to look like this one: `<PackageReference Include=\"<package>\" Version=\"[6,7)\"/>`"
           isCorrect: false
-          explanation: "This code will always update to the latest version where the Major number is 6."
+          explanation: "This code will always update to the latest version where the major number is 6."
     - content: "How would you check if a new version of a framework is available?"
       choices:
         - content: "Run `dotnet list outdated`"
           isCorrect: false
-          explanation: "`Outdated` is not a command, but is an option and passed in via `--outdated`, additionally you must specify the command `package` before passing in the option."
+          explanation: "`outdated` is not a command. It's an option and is passed in via `--outdated`. You must specify the command `package` before passing in the option."
         - content: "Run `dotnet list package outdated`"
           isCorrect: false
-          explanation: "outdated is not a command, to check for outdated packages you must pass in `--outdated` as  an option."
+          explanation: "`outdated` is not a command. To check for outdated packages, you must pass in `--outdated` as  an option."
         - content: "Run `dotnet list --outdated`"
           isCorrect: false
-          explanation: "When using the `list` command you must specify that you want to install a `package` before specifying the name."
+          explanation: "When you're using the `list` command, you must specify that you want to install a `package` before specifying the name."
         - content: "Run `dotnet list package --outdated`"
           isCorrect: true
           explanation: "You can also pass in `--include-prerelease` to check for new pre-release versions of the dependencies."
