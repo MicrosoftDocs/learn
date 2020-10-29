@@ -14,7 +14,7 @@ The Remote-Containers extension lets you grab a dev container with the specific 
 
 You can seamlessly switch your entire development environment just by connecting to a different container. The extension handles all of the setup based on a few configuration files.
 
-![Containers architecture diagram](../media/2-architecture-containers.png)
+:::image type="content" source="../media/2-architecture-containers.png" alt-text="Diagram explaining split architecture of Remote - Containers":::
 
 ## Adding a dev container to a project
 

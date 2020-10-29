@@ -18,6 +18,6 @@ You can forward a new port for the duration of the session by running the **Forw
 
 You can work with your forwarded ports by navigating to the "Forwarded Ports" section of the Remote Explorer. There you can view what ports are currently forwarded, add a new port, or right-click -> and modify your port or open it in a browser, as shown below.
 
-![Port forwarding right click view](../media/Forward-port-right-click.png)
+:::image type="content" source="../media/Forward-port-right-click.png" alt-text="Screenshot of right-click options in Forwarded Ports section of Remote Explorer in Visual Studio Code":::
 
 In the next section, you'll take a closer look at your forwarded ports and make some changes to understand it even better.

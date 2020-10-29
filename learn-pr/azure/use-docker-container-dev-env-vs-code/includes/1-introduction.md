@@ -4,10 +4,11 @@ You work at an agency that does software consulting around many different langua
 
 By the end of this module, you will be able to:
 
-- Understand how and why you would use a container as a development environment.
-- Install the Remote - Containers extension in Visual Studio Code and learn how to use it.
-- Explore the files that make up your container configuration.
-- Customize your container and development experience by forwarding ports, changing settings, and installing additional software.
+- Install the VS Code Remote - Containers extension.
+- Load and connect to a project in a Docker container.
+- Access ports in the container from your local machine.
+- Customize settings while working with your container.
+- Add software to the container environment.
 
 ## Prerequisites
 
