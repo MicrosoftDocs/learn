@@ -72,6 +72,17 @@ az mysql server firewall-rule create \
     | jq
 ```
 
+Run the following command to allow Firewall access from Azure resources:
+
+```bash
+az mysql server firewall-rule create \
+    --resource-group $AZ_RESOURCE_GROUP \
+    --name allAzureIPs \
+    --server $AZ_DATABASE_NAME \
+    --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0 \
+    | jq
+```
+
 ### Configure a MySQL database
 
 The MySQL server that you created earlier is empty. It doesn't have any database that you can use with the Spring Boot application. Create a new database called `demo`:

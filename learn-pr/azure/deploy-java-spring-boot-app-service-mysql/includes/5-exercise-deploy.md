@@ -1,6 +1,6 @@
 # Configure the Maven plugin
 
-The deployment process to Azure App Service will use your Azure credentials from the Azure CLI automatically. If the Azure CLI is not installed locally, then the Maven plugin will authenticate with Oauth or device login. For more information, see [authentication with Maven plugins](https://github.com/microsoft/azure-maven-plugins/wiki/Authentication).
+The deployment process to Azure App Service will use your Azure credentials from the Azure CLI automatically.
 
 Run the Maven command below to configure the deployment. This command will help you to set up the App Service operating system, Java version.
 
@@ -51,13 +51,10 @@ Be careful about the values of `<appName>` and `<resourceGroup>`(`helloworld-159
 
 ## Deploy the app
 
-The Maven plugin uses account credentials from the Azure CLI to deploy to App Services. [Sign in with the Azure CLI](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) before continuing.
+The maven plugin will copy your App's Spring Boot Library to your hosted Azure App Service's file system and then deploy it to the App Service's embedded web server.
+Once it has moved the files and configuration over it will also attempt to restart the App Service.
 
-```bash
-az login
-```
-
-Then you can deploy your Java app to Azure using the following command.
+Deploy your Spring Boot app to Azure using the following command.
 
 ```bash
 mvn package azure-webapp:deploy
@@ -66,7 +63,3 @@ mvn package azure-webapp:deploy
 Once deployment has completed, your application will be ready at `http://<appName>.azurewebsites.net/`(`http://helloworld-1590394316693.azurewebsites.net` in the demo). Open the url with your local web browser, you should see
 
 ![Sample app running in Azure App Service](./media/quickstart-java/java-hello-world-in-browser-azure-app-service.png)
-
-## Get Log Stream
-
-Azure provides built-in diagnostics to assist with debugging an App Service app. In [this](/azure/app-service/troubleshoot-diagnostic-logs) article, learn how to enable diagnostic logging and add instrumentation to your application, as well as how to access the information logged by Azure.

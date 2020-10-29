@@ -3,7 +3,7 @@ uid: learn.azure.deploy-java-spring-boot-app-service-mysql.2-build
 title: Build your Spring Boot app
 metadata:
   title: Build your Spring Boot app
-  description: Build your Spring Boot app
+  description: Build your Spring Boot app, setup it's Azure resources and connect it to a MySQL database
   ms.date: 10/05/2020
   author: roryp
   ms.author: ropreddy
