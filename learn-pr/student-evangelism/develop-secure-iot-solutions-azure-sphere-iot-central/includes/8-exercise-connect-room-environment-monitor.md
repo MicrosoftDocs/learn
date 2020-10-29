@@ -1,5 +1,7 @@
 In this exercise, we'll build a high-level Azure Sphere application that connects and sends environment telemetry to Azure IoT Central.
 
+------
+
 ## Step 1: Create a new Azure IoT Central application
 
 1. Open this link in a new window: [Azure IoT Central](https://azure.microsoft.com/services/iot-central/).
@@ -94,6 +96,8 @@ A device template is a blueprint that defines the characteristics and behaviors 
    ![The illustration shows how to publish a device template.](../media/iot-central-template-publish.png)
 
 2. Confirm and click **Publish**.
+
+------
 
 ## Step 2: Link your Azure Sphere tenant to Azure IoT Central
 
@@ -221,6 +225,8 @@ We need the ID of the Azure Sphere tenant that is now trusted by Azure IoT Centr
 
 We can split the module here and do the rest in the next step.
 
+------
+
 ## Step 5: Open project
 
 1. Start Visual Studio Code.
@@ -228,6 +234,8 @@ We can split the module here and do the rest in the next step.
 3. Open the **Azure-Sphere lab** folder.
 4. Open the **Lab_2_Send_Telemetry_to_Azure_IoT_Central** folder.
 5. Click **Select Folder** or the **OK** button to open the project.
+
+------
 
 ## Step 6: Set your developer board configuration
 
@@ -246,6 +254,8 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
    ```
 
 4. Save the file. This will autogenerate the CMake cache.
+
+------
 
 ## Step 7: Understand Azure Sphere security
 
@@ -297,6 +307,8 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
    > Azure Sphere hardware is available from multiple vendors, and each vendor may expose features of the underlying chip in different ways. Azure Sphere applications manage hardware dependencies by using hardware definition files. For further information, review the [Managing target hardware dependencies](https://docs.microsoft.com/azure-sphere/app-development/manage-hardware-dependencies) article.
 
 3. From Visual Studio Code, open the **main.c** file to bring it back into focus.
+
+------
 
 ## Step 8: Configure the Azure Sphere application
 
@@ -361,7 +373,6 @@ Open **main.c**, and scroll down to the **MeasureSensorHandler** function.
 > [!NOTE]
 > Use **Go to Symbol in Editor** in Visual Studio Code. Use the keyboard shortcut Ctrl+Shift+O and start typing *measure*. You'll often see a function name listed twice in the drop-down. The first is the function prototype declaration, and the second is the implementation of the function.
 
-In the **MeasureSensorHandler** function, there is a call to **SendMsgLedOn(msgBuffer);**.
 
 ```
 /// <summary>
@@ -413,6 +424,8 @@ static void MeasureSensorHandler(EventLoopTimer* eventLoopTimer)
 
 > [!NOTE]
 > You may see a couple of *ERROR: failure to create IoTHub Handle* messages displayed. These messages occur while the connection to Azure IoT Central is being negotiated.
+
+------
 
 ## Step 11: Expected device behavior
 
@@ -466,6 +479,8 @@ You need to migrate the newly enrolled device to the **Azure Sphere** template. 
 
    ![The illustration shows how to select the template.](../media/iot-central-migrate-select-template.png)
 
+------
+
 ## Step 14: Display the Azure Sphere device telemetry
 
 1. Click **Devices** on the sidebar.
@@ -477,6 +492,8 @@ You need to migrate the newly enrolled device to the **Azure Sphere** template. 
 Azure IoT Central does not update immediately. It may take a minute or two for the temperature, humidity, and pressure telemetry to be displayed.
 
 ![The illustration shows how to display measurements.](../media/iot-central-display-measurements.png)
+
+------
 
 ## Close Visual Studio
 

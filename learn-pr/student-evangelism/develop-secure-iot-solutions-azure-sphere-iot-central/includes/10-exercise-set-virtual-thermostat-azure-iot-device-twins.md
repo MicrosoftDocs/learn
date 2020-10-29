@@ -1,34 +1,50 @@
-## Step 1: Build and deploy your application
+## Step 1: Open the project
 
 1. Start Visual Studio Code to open your project.
-
 2. Click **Open folder**.
-
 3. Open the **Azure-Sphere lab** folder.
-
 4. Open the **Lab_3_Device_Twins** folder.
-
 5. Click **Select Folder** or the **OK** button to open the project.
 
-6. Set your developer board configuration:
+------
 
-   1. Open **CMakeList.txt**.
-   2. Uncomment the **set** command that corresponds to your Azure Sphere developer board.
-   3. Save the file. This will autogenerate the CMake cache.
+## Step 2: Set your developer board configuration
 
-7. Configure the Azure IoT Central connection information:
+These labs support developer boards from Avnet and Seeed Studio. You need to set the configuration that matches your developer board.
 
-   1. Open the **app_manifest.json** file.
-   2. You'll need to redo the settings for the **app_manifest.json** file. Either copy the settings from Notepad if you still have it open, or copy them from the **app_manifest.json** file you created in the previous exercise.
-   3. Paste the contents of the clipboard into **app_manifest.json** and save the file.
+The default developer board configuration is for the Avnet Azure Sphere Starter Kit. If you have this board, there's no additional configuration required.
 
-8. Ensure **main.c** is open.
+1. Open the **CMakeList.txt** file.
+2. Add a `#` at the beginning of the set Avnet line to disable it.
+3. Uncomment the `set` command that corresponds to your Azure Sphere device developer board.
 
-9. Select **CMake: [Debug]: Ready** from the Visual Studio Code status bar.
+   ```
+   set(AVNET TRUE "AVNET Azure Sphere Starter Kit")
+   # set(SEEED_STUDIO_RDB TRUE "Seeed Studio Azure Sphere MT3620 Development Kit (aka Reference Design Board or rdb)")
+   # set(SEEED_STUDIO_MINI TRUE "Seeed Studio Azure Sphere MT3620 Mini Dev Board")
+   ```
 
-10. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application now running the Azure Sphere device.
+4. Save the file. This will auto-generate the CMake cache.
 
-## Step 2: Expected device behavior
+------
+
+## Step 3: Configure the Azure IoT connection information
+
+1. Open the **app_manifest.json** file.
+2. You'll need to redo the settings for the **app_manifest.json** file. Either copy the settings from Notepad if you still have it open, or copy them from the **app_manifest.json** file you created in the previous exercise.
+3. Paste the contents of the clipboard into **app_manifest.json** and save the file.
+
+------
+
+## Step 4: Start the app build deploy process
+
+1. Ensure main.c is open.
+2. Select **CMake: [Debug]: Ready** from the Visual Studio Code Status Bar.
+3. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application that's now running the Azure Sphere device.
+
+------
+
+## Step 5: Expected device behavior
 
 ### Avnet Azure Sphere MT3620 Starter Kit
 
@@ -50,7 +66,9 @@
 
 1. The User LED will blink every 5 seconds when connected to Azure.
 
-## Step 3: Display the actual temperature property
+------
+
+## Step 6: Display the actual temperature property
 
 1. Switch to Azure IoT Central in your browser.
 
@@ -63,7 +81,9 @@
 
 ![The illustration shows how to display telemetry.](../media/iot-central-display-telemetry.png)
 
-## Step 4: Set the desired temperature
+------
+
+## Step 7: Set the desired temperature
 
 Setting the desired temperature is like setting a thermostat in a room. A device twin property message for desired temperature is sent to Azure Sphere, where it will be acted upon.
 
@@ -81,6 +101,8 @@ To set the desired temperature:
 2. Save the property. This will send the desired temperature property to Azure Sphere. The RGB LED color will change depending on the desired temperature chosen.
 
 ![The illustration shows display settings.](../media/iot-central-display-settings.png)
+
+------
 
 ## Close Visual Studio
 
