@@ -1,20 +1,20 @@
-Java は誕生依頼様々な環境で動作してきました。特に、サーバ・サイドで Java は幅広く多くの場所で使われてきました。これに併せて、Java Web アプリケーションのフレーム・ワークも様々提供されてきました。たとえば JavaServer Pages(JSP)、Java Servlet, Struts, JavaServer Faces(JSF), Spring MVC のような Web フレームワークが今まで数多く提供されてきました。また実行環境として、Apache Tomcat は、1998年11月にプロジェクトを開始し、 Servlet, JSP の参照実装かつ OSS として提供され、多くの利用者から使われてきました。
+Java has been working in various environments. Java has been widely used in many places, especially on the server side. Along with this, various Java web application frameworks have also been provided. Many web frameworks have been provided, such as JavaServer Pages (JSP), Java Servlet, Struts, JavaServer Faces (JSF), and Spring MVC. As an execution environment, Apache Tomcat started its project in November 1998, is provided as a reference implementation of Servlet and JSP and as OSS, and has been used by many users.
 
-このモジュールは、簡単な Java Web アプリケーションとして、Todo アプリケーションを作成し、Azure App Service 上で動かします。
-Todo アプリケーションは、MVC フレームワークとして JSF を利用し、内部実装では PrimeFaces を利用します。  
-JSF はコンポーネント・ベースのフレームワークで  Java の Web アプリケーションを作成する事ができます。
-PrimeFaces は JSF の拡張 UI コンポーネントを提供し、これを利用する事でより簡単に Single Page Application (SPA) など Ajax に対応したリッチな画面を作成する事ができます。
+This module creates a Todo application as a simple Java web application and runs it on Azure App Service.
+Todo applications utilize JSF as the MVC framework and PrimeFaces for their internal implementation.
+JSF is a component-based framework that allows you to create Java web applications.
+PrimeFaces provides JSF's extended UI component, which makes it easier to create rich Ajax-enabled screens such as Single Page Application (SPA).
 
 ![Java Todo Application Sample](../media/primefaces-todo-list.png)
 
 
-## Learning objectives(学習の目的)
+## Learning objectives
 
 By the end of this module, you’ll be able to:
 
-- Java(JSF) Web Application の作成
-- JSF アプリケーションを Tomcat で稼働
-- Azure App Services の Tomcat でアプリケーションを稼働
+- Creating a Java (JSF) Web Application
+- Run JSF application on Tomcat
+- Run your application on Tomcat in Azure App Services
 
 ## Prerequisites
 

@@ -6,13 +6,13 @@ In this module, we will create Simple Todo List application like follows. And in
 
 ## PrimeFaces Component in the Application
 
-本節では、Todo アプリケーションを作成するために使用する PrimeFaces の代表的なコンポーネントを紹介します。  
-PrifeFaces が提供するコンポーネントの一覧 (https://www.primefaces.org/showcase/) にはサンプル・コードを交えて詳しく紹介されていますので、本節で取り上げる以外のコンポーネントを利用したい場合は、`showcase` ご参照ください。
+This section introduces the typical components of PrimeFaces used to create Todo applications.
+The list of components provided by PrifeFaces (https://www.primefaces.org/showcase/) is detailed with sample code, so if you want to use components other than those covered in this section, `showcase` Please refer.
 
 ### PrimeFaces Layout
 
-`PrimeFaces Layout` は画面全体のレイアウトを作成します。PrimeFaces では様々なレイアウトを構成可能になっています。例えば、一般的によく見る、ヘッダ、フッダ、メニューなどを作成したいような場合、下記の `p:layout` , `p:layoutUnit` タグを利用することで簡単に画面のレイアウトを構成できます。  
-Todo アプリでは `position="north"` と `position="center"` を使用します。
+`PrimeFaces Layout` creates a layout for the entire screen. PrimeFaces allows you to configure various layouts. For example, if you want to create headers, footers, menus, etc. that you often see in general, you can easily configure the screen layout by using the `p:layout`, `p:layoutUnit` tags below.
+The Todo app uses `position ="north"` and `position="center"`.
 
 ```xml
 <p:layout fullPage="true">
@@ -36,10 +36,9 @@ Todo アプリでは `position="north"` と `position="center"` を使用しま�
 
 ![PrimeFaces Layout](../media/primeafces-layout.png)
 
-
 ### PrimeFaces OutputLabel, InputText, CommandButton
 
-次に、`p:outputLabel` , `p:inputText`, `p:commandButton` について紹介します。
+Next, I will introduce `p:outputLabel`,`p:inputText`, `p:commandButton`.
 
    ```xml
     <h:form>
@@ -51,20 +50,19 @@ Todo アプリでは `position="north"` と `position="center"` を使用しま�
     </h:form>
    ```
 
-#### p:outputLabel 
+#### p:outputLabel
 
-`p:outputLabel` はテキストを表示するためのコンポーネントで、標準で提供されている outputLabel を拡張しています。ここでは `value="My Tasks"` と静的な文字列を記載しているため、画面でも `My. Taks` が表示されていますが、動的に出力する文字列を変更したい場合、下の `p:inputText` で記載されているように EL式 `#{todocontroller.name}` に置き換え、バッキング・ビーンのフィールドとバインドさせる事で動的な文字列を表示させることも可能です。  
+`p:outputLabel` is a component for displaying text and is an extension of the standard outputLabel. Since `value ="My Tasks"` and a static character string are described here, `My Tasks` is also displayed on the screen, but if you want to change the character string to be output dynamically, below It is also possible to display a dynamic string by replacing it with the EL expression `#{todocontroller.name}` and binding it to the backing bean field as described in `p:inputText`.
 
 #### p:inputText
 
-`p:inputText` は入力可能なテキスト・フィールドを扱うためのコンポーネントで、標準で提供されている inputText を拡張しています。  
-EL式 `#{todocontroller.name}` で対応するバッキング・ビーン (TodoListController) のクラスで定義されているフィールドに値をバインドし、ユーザから入力された値は、`name` で参照できるようになります。
+`p:inputText` is a component for working with inputtable text fields and extends the standard inputText.
+The EL expression `#s{todocontroller.name}` binds the value to the field defined in the corresponding backing bean (TodoListController) class, and the value entered by the user can now be referenced by `name`. I will.
 
 #### p:commandButton
 
-`p:commandButton` はボタンを表示するためのコンポーネントで、標準で提供されている commandButton を拡張しています。ボタンが押された時、`action` に記載する EL 式 `#{todocontroller.buttonAddAction()` が実行されます。具体定期には対応するバッキング・ビーン (TodoListController) のクラスで定義されている `buttonAddAction()` メソッドが呼び出されます。   
-また、`update="target-id"` をボタンの属性に追加する事で Ajax で処理を実行する事もできます。 
-
+`p:commandButton` はボタンを表示するためのコンポーネントで、標準で提供されている commandButton を拡張しています。ボタンが押された時、`action` に記載する EL 式 `#{todocontroller.buttonAddAction()` が実行されます。具体定期には対応するバッキング・ビーン (TodoListController) のクラスで定義されている `buttonAddAction()` メソッドが呼び出されます。
+また、`update="target-id"` をボタンの属性に追加する事で Ajax で処理を実行する事もできます。
 
 #### JSF ページに対応するバッキング・ビーン
 
@@ -98,9 +96,9 @@ If you create the XHTML and Backing Bean, you can  see like the followign screen
 
 ### PrimeFaces DataTable
 
-`p:dataTable` は HTML の表を表示するためのコンポーネントで、標準で提供されている table を拡張しています。`paginator` の属性を追加する事で　Paginator 機能を簡単に利用する事が可能です。ここでは　Paginator の Transition の機能を表の下部に配置し `paginatorPosition="bottom"` 、一画面で表示可能な項目は 5 件 `rows="5"` で設定しています。  
-表の表示項目は `TodoListController` クラスの `todoItems` を利用しています。`todoItems` は `List<TodoItem>` を参照しており、List 内の各要素 (`TodoItem`) は `var="item"` で利用可能です。  
-つまり、`#{item.name}` や　`#{item.category}` で `TodoItem` インスタンスの各値を表示しています。
+`p:dataTable` is a component for displaying HTML tables, which is an extension of the standard table. You can easily use the Paginator function by adding the `paginator` attribute. Here, the Transition function of Paginator is placed at the bottom of the table and is set with `paginatorPosition=" bottom"`, and 5 items that can be displayed on one screen are set with `rows ="5"`.
+The display items in the table use `todoItems` of the `TodoListController` class. `todoItems` refers to `List <TodoItem>`, and each element in List (`TodoItem`) is available in `var ="item"`.
+In other words, `#{item.name}` and `#{item.category}` are used to display each value of the `TodoItem` instance.
 
 ```xml
     <h:form>
@@ -119,9 +117,9 @@ If you create the XHTML and Backing Bean, you can  see like the followign screen
     </h:form>
 ```
 
-下記に `TodoListController` クラスの実装例を記述します。  
-この例では、このインスタンスの生成時に `@PostConstruct` の `init()` メソッドでダミーの `List<TodoItem>` データを生成しています。  
-つまり起動時にダミーのデータが生成されていますので、この内容が表示されます。
+The implementation example of the `TodoListController` class is described below.
+In this example, the `@PostConstruct init()` method is used to generate dummy `List <TodoItem>` data when this instance is created.
+In other words, dummy data is generated at startup, so this content is displayed.
 
 ```java
 import com.microsoft.samples.model.TodoItem;
@@ -165,9 +163,9 @@ public class TodoListController implements Serializable {
 }
 ```
 
-下記に `TodoItem ` クラスの実装を記述します。  
-このクラスは、表示用のデータ・モデルとして利用します。  
-`Project Lombok` の `@Data` アノテーションを付加しているため、全フィールドに対して自動的に Setter/Getter メソッドが追加され `toString()`, `equals(Object o)`,  `hashCode()` などのメソッドがオーバライドされています。
+The implementation of the `TodoItem` class is described below.
+Use this class as a data model for display.
+Since the `@Data` annotation of `Project Lombok` is added, the Setter/Getter method is automatically added for all fields and `toString()`, `equals (Object o)`,`hashCode()` Methods will be override.
 
 ```java
 import java.io.Serializable;
@@ -205,6 +203,6 @@ public class TodoItem implements Serializable {
 }
 ```
 
-上記の DataTable を記述し実行すると下記のような画面が表示されます。
+If you write and execute the above DataTable, the following screen will be displayed.
 
 ![PrimeFaces DataTable](../media/primefaces-datatable.png)

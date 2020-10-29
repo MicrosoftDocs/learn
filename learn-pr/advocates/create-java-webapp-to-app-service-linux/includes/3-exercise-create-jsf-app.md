@@ -3,20 +3,21 @@ As part of that evaluation, you will build a web application and deploy it to Li
 
 ## Create a Simple JSF Web app on Tomcat
 
-下記の手順に従って JavaServer Faces の Web アプリケーションを構築し動作させます。
+Follow the steps below to build and run a JavaServer Faces web application.s
 
-1. Maven プロジェクトの作成
-1. Maven pom.xml ファイルの修正
-1. Contexts and Dependency Injection (CDI) の有効化設定
-1. JSF の有効化設定
-1. index.jsp のファイル名を変更
-1.   JSF Facelets の基本ページの作成
-1.   JSF Backing Bean の作成
-1.   ローカルの Tomcat 環境で実行
+1. Create Maven project
+1. Modify the Maven pom.xml file
+1. Contexts and Dependency Injection (CDI) enablement settings
+1. JSF enablement settings
+1. Rename the index.jsp file
+1. Creating a basic page for JSF Facelets
+1. Create JSF Backing Bean
 
-### 1. Maven プロジェクトの作成
+* [Optional] Run in local tomcat environment
 
-下記のコマンドを実行してください。これにより Java Web アプリケーション用の Maven プロジェクトが作成されます。
+### 1. Creating Maven project
+
+Execute the following command. This will create a Maven project for your Java web application.
 
    ```bash
    mvn archetype:generate \
@@ -27,7 +28,7 @@ As part of that evaluation, you will build a web application and deploy it to Li
    -DinteractiveMode=false
    ```
 
-Maven プロジェクトを作成すると下記のファイルとディレクトリが作成されます。
+When you create a Maven project, the following files and directories will be created.
 
    ```
 ├── pom.xml
@@ -40,9 +41,9 @@ Maven プロジェクトを作成すると下記のファイルとディレク�
             └── index.jsp
    ```
 
-### 2. Maven pom.xml ファイルの修正
+### 2. Modify Maven pom.xml File
 
-今回作成する Web アプリケーションは、JavaServer Faces を利用します。そこで JSF を利用するため、下記の依存ライブラリをプロジェクト内で利用できるようにします。
+The Web application created this time uses JavaServer Faces. Therefore, in order to use JSF, make the following dependent libraries available in the project.
 
 * Sevlet
 * JavaServer Faces
@@ -54,8 +55,8 @@ Maven プロジェクトを作成すると下記のファイルとディレク�
 *  Lombok
 *  JUnit
 
-`pom.xml` ファイルを下記のように修正してください。  
-コピー＆ペーストで全てを置き換えてください。
+Modify the `pom.xml` file as follows.
+Replace everything with copy and paste.
 
    ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -120,10 +121,10 @@ Maven プロジェクトを作成すると下記のファイルとディレク�
 </project>
    ```
 
-### 3. Contexts and Dependency Injection (CDI) の有効化設定
+### 3. Enable Contexts and Dependency Injection (CDI)
 
-次に、Web アプリケーションで CDI を利用できるようにします。  
-`src/main/WEB-INF` ディレクトリ配下に `beans.xml` を作成し下記の内容を記載してください。
+Next, make CDI available to your web application.
+Create `beans.xml` under the` src / main / WEB-INF` directory and describe the following contents.
 
    ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -133,9 +134,9 @@ Maven プロジェクトを作成すると下記のファイルとディレク�
 　　bean-discovery-mode="all"></beans>
    ```
 
-### 4. JSF の有効化設定
+### 4. Enable JSF
 
-次に、xhtml の拡張子を持つすべてのファイルを JSF の Facelets として認識するため、下記の設定を `WEB-INF` ディレクトリ配下にある `web.xml` に対して行ってください。
+Next, in order to recognize all files with the xhtml extension as JSF Facelets, make the following settings for `web.xml` under the` WEB-INF` directory.
 
    ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -164,18 +165,18 @@ Maven プロジェクトを作成すると下記のファイルとディレク�
    ```
 
 
-### 5. index.jsp のファイル名を変更
+### 5. Modify the name of index.jsp
 
-JSF を動かすための環境設定が終わりましたので、これから実際に JSF のページを実装します。  
-JSF の Web ページは上記の `web.xml` で設定したように、JSP ではなく XHTML ファイル形式で記述します。そこで、プロジェクト作成時に自動生成された `index.jsp` ファイル名を `index.xhtml` に変更してください。
+Now that the environment settings for running JSF have been completed, it is time to actually implement the JSF page.
+JSF web pages are written in XHTML file format instead of JSP, as set in `web.xml` above. Therefore, change the name of the `index.jsp` file that was automatically generated when the project was created to `index.xhtml`.
 
    ```bash
 mv index.jsp index.xhtml
    ```
 
-### 6. JSF Facelets の基本ページの作成
+### 6. Creating a Basic Web Page for JSF
 
-`index.xhtml` に記載されている内容を一度すべて削除し、下記のコードをコピ＆ペーストで貼り付けてください。  
+Please delete all the contents described in `index.xhtml` once and paste the following code by copy and paste.
 
    ```xml
 <?xml version='1.0' encoding='UTF-8' ?>
@@ -198,11 +199,10 @@ mv index.jsp index.xhtml
 </html>
    ```
 
+### 7. Create JSF Backing Bean
 
-### 7. JSF Backing Bean の作成
-
-次に、サーバ側のバックエンド処理を実装するためのバッキング・ビーンを作成します。  
-バッキング・ビーンを作成するためのパッケージのディレクトリを `src/main` ディレクトリ配下に作成してください。
+Next, create a backing bean to implement server-side backend processing.
+Create the package directory for creating the backing bean under the `src / main` directory.
 
 ```bash
 cd src/main
@@ -212,7 +212,7 @@ mkdir src/main/java/com/microsoft
 mkdir src/main/java/com/microsoft/samples
 ```
 
-次に `IndexController.java` ファイルを作成し、下記の JSF Backing Bean のコードをコピー＆ペーストしてください。
+Then create a `IndexController.java` file and copy and paste the JSF Backing Bean code below.
 
 ```java
 package com.microsoft.samples;
@@ -241,8 +241,8 @@ public class IndexController implements Serializable{
 }
 ```
 
-上記で、プログラムの実装は完了です。  
-プログラムを実装した後のディレクトリ構成は下記のようになります。
+This completes the program implementation.
+The directory structure after implementing the program is as follows.
 
 ```
 ├── pom.xml
@@ -261,10 +261,10 @@ public class IndexController implements Serializable{
             └── index.xhtml
 ```
 
-### Optional Exercise: ローカルの Tomcat 環境で実行
+### Optional Exercise: Run in local tomcat environment
 
-ソースコードをコンパイルし、ローカルにインストールした Tomcat の環境で実行します。  
-下記のコマンドを実行してください。
+Compile the source code and run it in a locally installed Tomcat environment.
+Execute the following command.
 
 #### 1. Compile and Package the Java Project
 
@@ -283,8 +283,9 @@ cp target/azure-javaweb-app.war /$INSTALL_DIR/apache-tomcat-9.0.38/webapps/
 ```bash
 $INSTALL_DIR/apache-tomcat-9.0.38/bin/startup.sh
 ```
-Tomcat を実行した後、`http://localhost:8080/azure-javaweb-app/` にアクセスすると下記の画面が表示されます。
+
+After running Tomcat, access `http: // localhost: 8080 / azure-javaweb-app /` and you will see the screen below.
 
 ![JSF HelloWorld Page](../media/jsf-helloworld.png)
 
-上記で、ローカルの Tomcat 環境で JSF の Web アプリケーションを実行できました。
+You have successfully run your JSF web application in your local Tomcat environment.

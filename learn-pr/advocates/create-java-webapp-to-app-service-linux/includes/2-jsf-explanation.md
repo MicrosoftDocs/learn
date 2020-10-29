@@ -1,20 +1,20 @@
-JSF のアプリケーションは、大きく分けて下記の２つの機能から構成されています。
+JSF applications are roughly divided into the following two functions.
 
-- **Facelets** : Facelets は画面レイアウトを記述する XHTML ベースのテンプレートエンジン
-- **BakingBean** : Facelets とバインドし、値の設定や処理を行う Java クラス
+- **Facelets** : Facelets is an XHTML-based template engine that describes screen layouts
+- **BakingBean** : Java class that binds to Facelets and sets and processes values
 
-`Facelets` は画面レイアウトを記述する XHTML ベースのテンプレートエンジンで、XHTML で記述します。XHTML は W3C に定義されている、Document Type Definition (DTD) に準拠し、xhtml の拡張子を持つファイルで記載します。
-Jakarta EE 8 ベースのアプリケーションでは、JSF 2.3 ベースが利用可能です。
+`Facelets` is an XHTML-based template engine that describes screen layouts, written in XHTML. XHTML conforms to the Document Type Definition (DTD) defined in W3C and is described as a file with a xhtml extension.
+JSF 2.3 base is available for Jakarta EE 8 based applications.
 
-`BackingBean` は Facelets  とバインドし、値の設定や処理を行う Java クラスです。サーバ側で処理を実装するためには、Facelets と対応するバッキング・ビーンを実装する必要があります。
+`BackingBean` is a Java class that binds to Facelets and sets and processes values. In order to implement the process on the server side, it is necessary to implement Facelets and the corresponding backing bean.
 
 ## JSF Page Creation with PrimeFaces
 
-JSF は独自に拡張した Web コンポーネントを作成する事ができます。
-今回は、3rd Party が提供する JSF のコンポーネントとして PrimeFaces を利用し、より簡単にリッチな Web アプリケーションを作成します。  
-PrimeFaces を利用するためには HTML に下記のように専用の XML ネーム・スペース (`xmlns:p`) を記述します。これにより PrimeFaces の様々な UI コンポーネントを利用できるようになります。  
+JSF can create its own extended web components.
+This time, we will use PrimeFaces as a component of JSF provided by 3rd Party to create rich web applications more easily.
+To use PrimeFaces, write a dedicated XML namespace (`xmlns: p`) in HTML as shown below. This makes the various UI components of PrimeFaces available.
 
-下記の例では、ラベル、入力フィールド、ボタンを表示するためにそれぞれ　`p:outputLabel`, `p:inputText`, `p:commandButton` タグを利用しています。
+In the example below, the `p: outputLabel`,` p: inputText`, and `p: commandButton` tags are used to display labels, input fields, and buttons, respectively.
 
 ```xml
 <?xml version='1.0' encoding='UTF-8' ?>
@@ -35,13 +35,13 @@ PrimeFaces を利用するためには HTML に下記のように専用の XML �
 </html>
 ```
 
-上記の XHTML を記述する事で下記の画面が表示されます。
-![JSF Facelets Sample](../media/simple-jsf-facelets-primefaces-ajax.png)
+Writing the above XHTML code, the following screen will be displayed.
+! [JSF Facelets Sample] (../media/simple-jsf-facelets-primefaces-ajax.png)
 
-### PrimeFaces Ajax 対応
+### PrimeFaces Ajax Support
 
-JSF はデフォルトで Ajax のアプリケーション作成に対応しています。そこで画面のリフレッシュ無しで、画面の一部を動的に更新する事が可能になっています。  
-PrimeFaces では JSF で提供する Ajax 対応をより簡単に実装できるように `update` 属性を利用します。どのコンポーネントに対して更新を行うか、対象の ID で指定します。下記の例では `p:commandButton` に `update="ajaxUpdateText"` 属性を追加しているため、ボタンが押された際に `<div id="ajaxUpdateText">` の部分が更新されます。ここで指定する `id` は任意の HTML コンポーネントに対して指定できます。
+JSF supports Ajax application creation by default. Therefore, it is possible to dynamically update a part of the screen without refreshing the screen.
+PrimeFaces makes use of the `update` attribute to make it easier to implement the Ajax support provided by JSF. Specify which component to update with the target ID. In the example below, the `update = "ajaxUpdateText"` attribute is added to `p: commandButton`, so the `<div id ="ajaxUpdateText">` part is updated when the button is pressed. The `id` specified here can be specified for any HTML component.
 
 ```xml
 <div id="ajaxUpdateText">
@@ -54,12 +54,12 @@ PrimeFaces では JSF で提供する Ajax 対応をより簡単に実装でき�
 
 ## JSF Backing Bean
 
-バッキング・ビーンは JSF の View に紐づくバックエンドの処理を実装する Java クラスです。  
-ここでは、上記の XHTML に対応するバッキング・ビーン (IndexCtontroller) を作成します。バッキング・ビーンの実装クラスに `@Named` のアノテーションを付加することで、JSF の Facelets (XHTML) から参照できるようになります。
+The backing bean is a Java class that implements the backend processing associated with the JSF View.
+Here, we will create a backing bean (IndexCtontroller) corresponding to the above XHTML. By annotating the backing bean implementation class with `@Named`, it can be referenced from JSF Facelets (XHTML).
 
-Facelets で`<p:inputText value="#{indexcontroller.inputValue}"/>`を記述すると Input Text フィールドを画面に表示します。入力された値はバッキング・ビーンの `IndexController` クラスに定義された `inputValue ` にバインドします。
+If you write `<p: inputText value ="#{indexcontroller.inputValue}"/>` in Facelets, the Input Text field will be displayed on the screen. The entered value is bound to the `inputValue` defined in the backing bean's `IndexController` class.
 
-また `<p:commandButton value="Submit" action="#{indexController.submitButtonAction()}"/>` を記述すると、HTMLのボタンを表示します。ボタンが押された時に、`IndexController` クラスに定義された `submitButtonAction()` メソッドを呼び出します。
+Also, if you write `<p: commandButton value ="Submit" action="# {indexController.submitButtonAction()}"/>`, the HTML button will be displayed. When the button is pressed, it calls the `submitButtonAction ()` method defined in the `IndexController` class.
 
 ```java
 import java.io.Serializable;
@@ -87,10 +87,9 @@ public class IndexController implements Serializable{
 }
 ```
 
-このように、JSF では画面を構成する View (Facelets) と Controller (Backing Bean) を切り離して実装する事ができるようになっています。
+In this way, JSF allows the View (Facelets) and Controller (Backing Bean) that make up the screen to be implemented separately.
 
+## More Information about JSF
 
-## JSF に関する情報
-
-JSF は上記のほかにも、データのバリデーションやコンバージョン、複数のコンポーネントを組み合わせたり、テンプレート機能、Ajax や WebSocket に対応するなど豊富な便利な機能を持っています。  
-より詳しい情報を入手したい場合、`http://www.javaserverfaces.org/` をご覧ください。
+In addition to the above, JSF has many useful functions such as data validation and conversion, combining multiple components, template function, and support for Ajax and WebSocket.
+For more information, please visit `http://www.javaserverfaces.org/`.

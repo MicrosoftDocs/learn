@@ -3,27 +3,26 @@ As part of that evaluation, you will build a web application and deploy it to Li
 
 ![My ToDo List App](../media/primefaces-todo-list.png)
 
-
 ## Create Todo web app with PrimeFaces
 
-下記の手順に従って JavaServer Faces の Web アプリケーションを構築し動作させます。
+Follow the steps below to build and run a JavaServer Faces web application.
 
-1.  JSF Web Page の作成
-1.  Create DataModel Class
+1. Create JSF Web Page
+1. Create DataModel Class
 1. Create DAO Class
 1. Create Controller Class
-1. ローカルの Tomcat 環境で実行
+
+* [Optional] Run in local Tomcat environment
 
 ### 1. JSF Web Page の作成
 
-TODO: Write Explanation (Basically COPY & PASTE)
-Todo アプリケーションの View を作成するために、index.xhtml ファイルに下記のコードをコピー＆ペーストで貼り付けてください。  
+Copy and paste the code below into the index.xhtml file to create a View for your Todo application.
 
-この View では前節で説明した `p:layout`, `p:layoutUnit`, `p:outputLabel`, `p:inputText`, `p:commandButton`, `p:dataTable` のコンポーネントを利用しています。  
+This View uses the components `p:layout`,`p:layoutUnit`, `p:outputLabel`,`p:inputText`, `p:commandButton`, and `p:dataTable` explained in the previous section.
 
-本ページは Ajax に対応し、`Add Task` のボタンが押すと、`p:commandButton` の `update="itemTables"` の参照先である、DataTable の `p:dataTable id="itemTables"` を更新します。
+This page support the Ajax, and when the button of `Add Task` is pressed, `p:dataTable id="itemTables"` of DataTable, which is the reference of `update ="itemTables"` of `p:commandButton`, is displayed. I will update.
 
-また、DataTable に、新たに `selection="#{todocontroller.selectedItems}"` という属性を追加しています。これは表の項目をチェックボックスで選択できるようにしており、チェックボックスを選択し `Updata Task` のボタンを押すと、タスクの完了ができるようになっています。
+We have also added a new attribute to the DataTable, `selection ="#{todocontroller.selectedItems}"`. This allows you to select items in the table with checkboxes, and you can complete the task by selecting the checkbox and pressing the `Update Task` button.
 
    ```xml
 <!DOCTYPE html>
@@ -100,14 +99,14 @@ Todo アプリケーションの View を作成するために、index.xhtml フ
 
 ### 2. Create DataModel Class
 
-まず、データ・モデルのクラスを `com.microsoft.samples.model` パッケージ内に実装します。   
-下記のコマンドを実行しパッケージ用のディレクトリを作成してください。
+First, implement the data model classes in the `com.microsoft.samples.model` package.
+Execute the following command to create a directory for the package.
 
 ```bash
 mkdir src/main/java/com/microsoft/samples/model
 ```
 
-次に、`com.microsoft.samples.model` パッケージ内に `TodoItem.java` ファイルを作成し、下記のコードをコピー＆ペーストで貼り付けてください。
+Then create a `TodoItem.java` file inside the` com.microsoft.samples.model` package and copy and paste the code below.
 
    ```java
 package com.microsoft.samples.model;
@@ -149,18 +148,18 @@ public class TodoItem implements Serializable {
 
 ### 3. Create DAO Class
 
-次に Data Access 用のクラスを `com.microsoft.samples.dao` パッケージ内に実装します。   
-下記のコマンドを実行しパッケージ用のディレクトリを作成してください。
+Then implement the class for Data Access in the `com.microsoft.samples.dao` package.
+Execute the following command to create a directory for the package.
 
 ```bash
 mkdir src/main/java/com/microsoft/samples/dao
 ```
 
-次に、`com.microsoft.samples.dao` パッケージ内に `TodoItemManagement.java` ファイルを作成し、下記のコードをコピー＆ペーストで貼り付けてください。
+Next, create a `TodoItemManagement.java` file inside the `com.microsoft.samples.dao` package and copy and paste the code below.
 
-通常、ここの実装は DataBase やインメモリ・グリッド、ドキュメント DB 等に対して、データを参照・更新・格納したりします。しかし、今回は、アプリケーションをできるだけ簡単に実装するために外部参照を行わずプログラム内で完結するため、Java の List にデータを持たせるように実装します。  
+Normally, the implementation here references, updates, and stores data for DataBase, in-memory grids, document databases, and so on. However, this time, in order to implement the application as easily as possible, it is completed in the program without external reference, so we will implement it so that the Java List has data.
 
-このクラスには `@ApplicationScoped` アノテーションを付加しています。Application 全体で有効なスコープであるため、ここで扱う `todoItems ` のデータは アプリケーションの開始から終了まで通して利用可能になります。
+This class is annotated with `@ApplicationScoped`. Since the scope is valid for the entire Application, the data of `todoItems` handled here will be available from the start to the end of the application.
 
 ```java
 package com.microsoft.azure.samples.dao;
@@ -210,20 +209,20 @@ public class TodoItemManagement {
 
 ### 4. Create Controller Class
 
-最後に、コントローラ用のクラスを `com.microsoft.samples.controller` パッケージ内に実装します。   
-下記のコマンドを実行しパッケージ用のディレクトリを作成してください。
+Finally, implement the class for the controller in the `com.microsoft.samples.controller` package.
+Execute the following command to create a directory for the package.
 
 ```bash
 mkdir src/main/java/com/microsoft/samples/controller
 ```
 
-次に、`com.microsoft.samples.controller` パッケージ内に `TodoListController.java` ファイルを作成し、下記のコードをコピー＆ペーストで貼り付けてください。  
+Next, create a `TodoListController.java` file inside the `com.microsoft.samples.controller` package and copy and paste the code below.
 
-本クラスには `@ViewScoped` と `@Named` のアノテーションを付加しています。`@ViewScoped` は画面がリロードされたり画面遷移が行われるまで有効なスコープで SPA の Web ページを作成する際に有効です。また、`@Named` アノテーションを付加する事で Facelets (XHTML) から、EL 式を利用して本クラスを参照できるようになります。  
+The annotations `@ViewScoped` and `@Named` are added to this class. `@ViewScoped` is useful for creating SPA web pages with a scope that is valid until the screen is reloaded or screen transitions occur. Also, by adding the `@Named` annotation, you can refer to this class from Facelets (XHTML) using EL expressions.
 
-実装内では `@Inject` で `TodoItemManagement` のインスタンスを注入し、データの追加 (`buttonAddAction()`)、参照 (`getTodoItems()`)、更新用 (`buttonUpdateAction()`) の各メソッドから、DAO の `TodoItemManagement` クラスの各メソッドを呼び出しています。
+In the implementation, use `@Inject` to inject an instance of `TodoItemManagement` and use the add data (`buttonAddAction()`), reference (`getTodoItems()`), and update (`buttonUpdateAction()`) methods. , Calls each method of DAO's `TodoItemManagement` class.
 
-また、表の各行を選択できるようにするため、`selectedItem` と `selectedItems` のフィールドを追加し、`onRowSelect(SelectEvent<TodoItem> event)` と `onRowUnselect(UnselectEvent<TodoItem> event)` のメソッドを記述しています。各メソッドは、表が選択された際、もしくは非選択された場合のイベントに応じて処理を行う事ができます。今回の実装では特に処理は行っていませんが、このメソッドを定義しない場合、コンパイル・エラーになってしまいますので、この２つのメソッドは必ず実装してください。
+We also added the `selectedItem` and `selectedItems` fields to allow each row in the table to be selected, and the `onRowSelect(SelectEvent<TodoItem> event)` and `onRowUnselect(UnselectEvent <TodoItem> event)` methods. It is described. Each method can act on the event when the table is selected or not selected. No particular processing is performed in this implementation, but if this method is not defined, a compile error will occur, so be sure to implement these two methods.
 
 ```java
 package com.microsoft.azure.controller;
@@ -249,9 +248,9 @@ import java.util.List;
 @ViewScoped
 public class TodoListController implements Serializable {
 
-	private static final long serialVersionUID = -1945255472338540370L;
+    private static final long serialVersionUID = -1945255472338540370L;
 
-	@Inject
+    @Inject
     TodoItemManagement todoManagement;
 
     private List<TodoItem> todoItems;
@@ -290,11 +289,11 @@ public class TodoListController implements Serializable {
 }
 ```
 
-### 5. ローカルの Tomcat 環境で実行
+### [Optional] Run in local tomcat environment
 
-以上で、プログラムの実装は完了しました。  
-プログラムをコンパイルした後、アプリケーションをデプロイし動作確認を行いましょう。  
-下記のコマンドを実行してください。
+This completes the implementation of the program.
+After compiling the program, deploy the application and check the operation.
+Execute the following command.
 
 #### 5.1 Compile and Package the Java Project
 
@@ -313,9 +312,10 @@ cp target/azure-javaweb-app.war /$INSTALL_DIR/apache-tomcat-9.0.38/webapps/
 ```bash
 $INSTALL_DIR/apache-tomcat-9.0.38/bin/startup.sh
 ```
-Tomcat を実行した後、`http://localhost:8080/azure-javaweb-app/` にアクセスすると下記の画面が表示されます。
-`Add Task` ボタンでタスクを追加したり、`Update Task` でタスクを更新してみましょう。
+
+After running Tomcat, access `http://localhost:8080/azure-javaweb-app/` and you will see the screen below.
+Use the `Add Task` button to add a task, or use the `Update Task` to update the task.
 
 ![My ToDo List App Done](../media/primefaces-todo-list.png)
 
-上記で、ローカルの Tomcat 環境で PrimeFaces で実装した Todo Web アプリケーションを実行できました。
+You have successfully run the Todo web application implemented in PrimeFaces in your local Tomcat environment.
