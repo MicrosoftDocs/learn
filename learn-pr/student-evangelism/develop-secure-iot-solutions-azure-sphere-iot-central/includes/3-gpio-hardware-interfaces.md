@@ -50,37 +50,28 @@ For this module, you'll clone the [Azure Sphere Developer Learning Path reposito
 
 ## Input and output peripherals
 
-In the Azure Sphere learning path labs, there are several peripheral variables declared, including LEDs, buttons, and a relay. Variables of type **LP_PERIPHERAL_GPIO** declare a GPIO model for **input** and **output** of single-pin peripherals, such as LEDs, buttons, reed switches, and relays.
+In the Azure Sphere Learning Path labs there are several GPIO peripheral variables declared, including LEDs and a button. Variables of type **LP_GPIO** declare a GPIO model for **input** and **output** of single pin peripherals, such as LEDs, buttons, reed switches, and relays.
 
-A GPIO peripheral variable holds the GPIO pin number, the initial state of the pin when the program starts, whether the pin logic needs to be inverted, and the function called to open the peripheral.
+A GPIO peripheral variable holds the GPIO pin number, the initial state of the pin when the program starts, and whether the pin logic needs to be inverted.
 
 The following example declares an LED **output** peripheral.
 
-```
-static LP_PERIPHERAL_GPIO led1 = {
-	.pin = LED1, // The GPIO pin number
-	.direction = LP_OUTPUT, // for OUTPUT
-
-    // Set the initial state on the pin when opened
-	.initialState = GPIO_Value_Low,
-    // Should the switching logic be reverse for on/off, high/low
-	.invertPin = true,
-    // The function to be called to open the GPIO Pin
-	.initialise = lp_openPeripheral,
-
-	.name = "led1" // An arbitrary name for the peripheral
-};
+```c
+static LP_GPIO alertLed = {
+    .pin = ALERT_LED,                // The GPIO pin number
+    .direction = LP_OUTPUT,          // for OUTPUT
+    .initialState = GPIO_Value_Low,  // Set the initial state on the pin when opened
+    .invertPin = true,               // Should the switching logic be reverse for on/off, high/low
+    .name = "alertLed" };            // An arbitrary name for the peripheral
 ```
 
 ### Declaring an input peripheral
 
 The following example declares a button **input** peripheral.
 
-```
-static LP_PERIPHERAL_GPIO buttonA = {
-	.pin = BUTTON_A,
-	.direction = LP_INPUT, 	// for INPUT
-	.initialise = lp_openPeripheral,
-	.name = "buttonA"
-};
+```c
+static LP_GPIO buttonA = {
+    .pin = BUTTON_A,
+    .direction = LP_INPUT,
+    .name = "buttonA" };
 ```

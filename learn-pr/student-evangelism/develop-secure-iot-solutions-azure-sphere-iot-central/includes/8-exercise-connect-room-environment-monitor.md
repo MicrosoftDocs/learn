@@ -190,23 +190,9 @@ Follow these steps:
    Find and modify the **CmdArgs**, **AllowedConnections**, and **DeviceAuthentication** lines in **app_manifest.json** so each includes the content from the code below:
 
    ```
-   "CmdArgs": [
-      "0ne000ABC00"
-   ],
+   "CmdArgs": [ "--ConnectionType", "DPS", "--ScopeID", "0ne0099999D" ],
    "Capabilities": {
-      "AllowedConnections": [
-         "global.azure-devices-provisioning.net",
-         "iotc-9999bc-3305-99ba-885e-6573fc4cf701.azure-devices.net",
-         "iotc-789999fa-8306-4994-b70a-399c46501044.azure-devices.net",
-         "iotc-7a099966-a8c1-4f33-b803-bf29998713787.azure-devices.net",
-         "iotc-97299997-05ab-4988-8142-e299995acdb7.azure-devices.net",
-         "iotc-d099995-7fec-460c-b717-e99999bf4551.azure-devices.net",
-         "iotc-789999dd-3bf5-49d7-9e12-f6999991df8c.azure-devices.net",
-         "iotc-29999917-7344-49e4-9344-5e0cc9999d9b.azure-devices.net",
-         "iotc-99999e59-df2a-41d8-bacd-ebb9999143ab.azure-devices.net",
-         "iotc-c0a9999b-d256-4aaf-aa06-e90e999902b3.azure-devices.net",
-         "iotc-f9199991-ceb1-4f38-9f1c-13199992570e.azure-devices.net"
-      ],
+      "AllowedConnections": [ "global.azure-devices-provisioning.net", "iotc-9999bc-3305-99ba-885e-6573fc4cf701.azure-devices.net", "iotc-789999fa-8306-4994-b70a-399c46501044.azure-devices.net", "iotc-7a099966-a8c1-4f33-b803-bf29998713787.azure-devices.net", "iotc-97299997-05ab-4988-8142-e299995acdb7.azure-devices.net", "iotc-d099995-7fec-460c-b717-e99999bf4551.azure-devices.net", "iotc-789999dd-3bf5-49d7-9e12-f6999991df8c.azure-devices.net", "iotc-29999917-7344-49e4-9344-5e0cc9999d9b.azure-devices.net", "iotc-99999e59-df2a-41d8-bacd-ebb9999143ab.azure-devices.net", "iotc-c0a9999b-d256-4aaf-aa06-e90e999902b3.azure-devices.net", "iotc-f9199991-ceb1-4f38-9f1c-13199992570e.azure-devices.net" ],
       "DeviceAuthentication": "--- YOUR AZURE SPHERE TENANT ID---",
    }
    ```
@@ -271,27 +257,29 @@ Application capabilities include what hardware can be accessed, what internet se
 
 From Visual Studio Code, open the **app_manifest.json** file. The resources this application can access are limited to those listed in the **Capabilities** section.
 
-> [!NOTE]
-> The following example is for the Avnet Azure Sphere device. The resource names and capabilities will differ depending on which Azure Sphere device you are using.
-
 ```
 {
   "SchemaVersion": 1,
   "Name": "AzureSphereIoTCentral",
   "ComponentId": "25025d2c-66da-4448-bae1-ac26fcdd3627",
   "EntryPoint": "/bin/app",
-  "CmdArgs": [ ],
+  "CmdArgs": [ "--ConnectionType", "DPS", "--ScopeID", "Your_ID_Scope" ],
   "Capabilities": {
     "Gpio": [
       "$BUTTON_A",
-      "$BUTTON_B",
-      "$LED1",
-      "$LED2",
       "$NETWORK_CONNECTED_LED",
-      "$RELAY"
+      "$ALERT_LED"
     ],
-    "I2cMaster": [ "$I2cMaster2" ],
-    "PowerControls": [ "ForceReboot" ]
+    "I2cMaster": [
+      "$I2cMaster2"
+    ],
+    "PowerControls": [
+      "ForceReboot"
+    ],
+    "AllowedConnections": [
+      "global.azure-devices-provisioning.net"
+    ],
+    "DeviceAuthentication": "Replace_with_your_Azure_Sphere_Tenant_ID"
   },
   "ApplicationType": "Default"
 }
@@ -327,39 +315,36 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
 
    ```
    {
-       "SchemaVersion": 1,
-       "Name": "AzureSphereIoTCentral",
-       "ComponentId": "25025d2c-66da-4448-bae1-ac26fcdd3627",
-       "EntryPoint": "/bin/app",
-       "CmdArgs": [ "0ne0099999D" ],
-       "Capabilities": {
-           "Gpio": [
+      "SchemaVersion": 1,
+      "Name": "AzureSphereIoTCentral",
+      "ComponentId": "25025d2c-66da-4448-bae1-ac26fcdd3627",
+      "EntryPoint": "/bin/app",
+      "CmdArgs": [ "--ConnectionType", "DPS", "--ScopeID", "0ne0099999D" ],
+      "Capabilities": {
+         "Gpio": [
                "$BUTTON_A",
-               "$BUTTON_B",
-               "$LED2",
                "$NETWORK_CONNECTED_LED",
-               "$LED_RED",
-               "$LED_GREEN",
-               "$LED_BLUE"
-           ],
-           "I2cMaster": [ "$I2cMaster2" ],
-           "PowerControls": [ "ForceReboot" ],
-           "AllowedConnections": [ 
+               "$ALERT_LED"
+         ],
+         "I2cMaster": [
+               "$I2cMaster2"
+         ],
+         "AllowedConnections": [
                "global.azure-devices-provisioning.net",
-               "iotc-9999bc-3305-99ba-885e-6573fc4cf701.azure-devices.net", 
-               "iotc-789999fa-8306-4994-b70a-399c46501044.azure-devices.net", 
+               "iotc-9999bc-3305-99ba-885e-6573fc4cf701.azure-devices.net",
+               "iotc-789999fa-8306-4994-b70a-399c46501044.azure-devices.net",
                "iotc-7a099966-a8c1-4f33-b803-bf29998713787.azure-devices.net",
-               "iotc-97299997-05ab-4988-8142-e299995acdb7.azure-devices.net", 
-               "iotc-d099995-7fec-460c-b717-e99999bf4551.azure-devices.net", 
-               "iotc-789999dd-3bf5-49d7-9e12-f6999991df8c.azure-devices.net", 
-               "iotc-29999917-7344-49e4-9344-5e0cc9999d9b.azure-devices.net", 
-               "iotc-99999e59-df2a-41d8-bacd-ebb9999143ab.azure-devices.net", 
-               "iotc-c0a9999b-d256-4aaf-aa06-e90e999902b3.azure-devices.net", 
-               "iotc-f9199991-ceb1-4f38-9f1c-13199992570e.azure-devices.net" 
-           ],
-           "DeviceAuthentication": "9d7e79eb-9999-43ce-9999-fa8888888894"
-       },
-       "ApplicationType": "Default"
+               "iotc-97299997-05ab-4988-8142-e299995acdb7.azure-devices.net",
+               "iotc-d099995-7fec-460c-b717-e99999bf4551.azure-devices.net",
+               "iotc-789999dd-3bf5-49d7-9e12-f6999991df8c.azure-devices.net",
+               "iotc-29999917-7344-49e4-9344-5e0cc9999d9b.azure-devices.net",
+               "iotc-99999e59-df2a-41d8-bacd-ebb9999143ab.azure-devices.net",
+               "iotc-c0a9999b-d256-4aaf-aa06-e90e999902b3.azure-devices.net",
+               "iotc-f9199991-ceb1-4f38-9f1c-13199992570e.azure-devices.net"
+         ],
+         "DeviceAuthentication": "9d7e79eb-9999-43ce-9999-fa8888888894"
+      },
+      "ApplicationType": "Default"
    }
    ```
 
@@ -384,38 +369,22 @@ In the **MeasureSensorHandler** function, there is a call to **SendMsgLedOn(msgB
 /// </summary>
 static void MeasureSensorHandler(EventLoopTimer* eventLoopTimer)
 {
-	static int msgId = 0;
-	static LP_ENVIRONMENT environment;
-	static const char* MsgTemplate = "{ \"Temperature\": \"%3.2f\", \"Humidity\": \"%3.1f\", \"Pressure\":\"%3.1f\", \"Light\":%d, \"MsgId\":%d }";
+    static int msgId = 0;
+    static LP_ENVIRONMENT environment;
 
-	if (ConsumeEventLoopTimerEvent(eventLoopTimer) != 0)
-	{
-		lp_terminate(ExitCode_ConsumeEventLoopTimeEvent);
-		return;
-	}
-
-	if (lp_readTelemetry(&environment))
-	{
-		if (snprintf(msgBuffer, JSON_MESSAGE_BYTES, MsgTemplate, environment.temperature, environment.humidity, environment.pressure, environment.light, msgId++) > 0)
-		{
-			SendMsgLedOn(msgBuffer);
-		}
-	}
-}
-```
-
-The function **SendMsgLedOn** will turn on the send-message LED, and then **SendMsg(message)** is called to send a JSON-formatted message to Azure IoT Central.
-
-```
-/// <summary>
-/// Turn on LED2, send message to Azure IoT and set a one-shot timer to turn LED2 off
-/// </summary>
-static void SendMsgLedOn(char* message)
-{
-	lp_gpioOn(&sendMsgLed);
-	Log_Debug("%s\n", message);
-	lp_sendMsg(message);
-	lp_setOneShotTimer(&sendMsgLedOffOneShotTimer, &led2BlinkPeriod);
+    if (ConsumeEventLoopTimerEvent(eventLoopTimer) != 0)
+    {
+        lp_terminate(ExitCode_ConsumeEventLoopTimeEvent);
+    }
+    else {
+        if (lp_readTelemetry(&environment) &&
+            snprintf(msgBuffer, JSON_MESSAGE_BYTES, msgTemplate,
+                environment.temperature, environment.humidity, environment.pressure, msgId++) > 0)
+        {
+            Log_Debug(msgBuffer);
+            lp_azureMsgSendWithProperties(msgBuffer, telemetryMessageProperties, NELEMS(telemetryMessageProperties));
+        }
+    }
 }
 ```
 
@@ -451,23 +420,19 @@ static void SendMsgLedOn(char* message)
 
 ![The illustration shows the Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
 
-1. The blue LED will start to blink.
-2. LED3 will turn yellow when connected to Azure.
-3. Press **Button A** on the device to change the blink rate.
+1. The WLAN LED will blink every 5 seconds when connected to Azure.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
 ![The illustration shows the Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
 
-1. The green LED will start to blink.
-2. The network LED will turn red when connected to Azure.
-3. Press **Button A** on the device to change the blink rate.
+1. The WLAN LED will blink every 5 seconds when connected to Azure.
 
 ### Seeed Studio MT3620 Mini Dev Board
 
 ![The illustration shows the Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
 
-1. The green LED closest to the USB connector will start to blink.
+1. The User LED will blink every 5 seconds when connected to Azure.
 
 ------
 

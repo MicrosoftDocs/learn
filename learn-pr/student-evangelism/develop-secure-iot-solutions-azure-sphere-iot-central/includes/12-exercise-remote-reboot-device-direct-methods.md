@@ -34,35 +34,38 @@
 
 ![The illustration shows the Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
 
-LED3 will turn yellow when connected to Azure.
+1. The WLAN LED will blink every 5 seconds when connected to Azure.
+1. When you initiate the device restart direct method you will observe the device restarting.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
 ![The illustration shows the Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
 
-The network LED will turn red when connected to Azure.
+1. The WLAN LED will blink every 5 seconds when connected to Azure.
+1. When you initiate the device restart direct method you will observe the device restarting.
 
 ### Seeed Studio MT3620 Mini Dev Board
 
 ![The illustration shows the Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
 
-The green LED closest to the USB connector will turn on when connected to Azure.
+1. The User LED will blink every 5 seconds when connected to Azure.
+1. When you initiate the device restart direct method you will observe the device restarting.
 
 ## Testing Azure IoT Central commands
 
-1. From Visual Studio, ensure that Azure Sphere is running the application and set a breakpoint in the **ResetDirectMethod** handler function.
+1. From Visual Studio, ensure that Azure Sphere is running the application and set a breakpoint in the **RestartDeviceDirectMethodHandler** handler function.
 
 2. Switch to Azure IoT Central in your web browser.
 
 3. Select the Azure IoT Central **Commands** tab.
 
-4. Set the **Reset Azure Sphere** time in seconds, and then click **Run**.
+4. Set the **Restart Device** time in seconds, and then click **Run**.
 
 5. Observer the device rebooting. The LEDs will turn off for a few seconds.
 
    ![The illustration shows how to control the device with a command.](../media/iot-central-device-command-run.png)
 
-6. Switch back to Visual Studio. The application execution should have stopped where you set the breakpoint. Step over code (F10), step into code (F11), and continue code execution (F5).
+6. Switch back to Visual Studio. The application execution should have stopped where you set the breakpoint. Using the debugger, step over code (F10), step into code (F11), and continue code execution (F5) to understand the code path in more detail.
 
 7. Switch back to Azure IoT Central, and click the **Command History** button to view the result of the command.
 

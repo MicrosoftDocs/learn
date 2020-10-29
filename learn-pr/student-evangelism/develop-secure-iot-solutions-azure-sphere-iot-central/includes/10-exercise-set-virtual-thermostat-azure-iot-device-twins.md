@@ -34,26 +34,21 @@
 
 ![The illustration shows the Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
 
-1. The RGB LED5 will start to blink. In the next section, you'll be setting the desired temperature, which will determine the RGB LED color.
-2. LED4 will turn yellow when connected to Azure.
-3. LED3 will blink when telemetry is sent to Azure IoT Central.
-4. Press **Button A** or **Button B** on the device to change the blink rate of LED5 and to update the **Actual Temperature** device twin property in Azure IoT Central.
+1. The WLAN LED will blink every 5 seconds when connected to Azure.
+1. The RGB LED will turn red if the measured temperature is less than the desired temperature, blue if the measured temperature is greater than the desired temperature and green if the measured temperature is the same as the desired temperature.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
 ![The illustration shows the Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
 
-1. The RGB LED 1 will start to blink. In the next section, you'll be setting the desired temperature, which will determine the RGB LED color.
-2. The network LED will turn red when connected to Azure.
-3. LED 4 will blink blue when telemetry is sent to Azure IoT Central.
-4. Press **Button A** or **Button B** on the device to change the blink rate of RGB LED 1 and to update the **Actual Temperature** device twin property in Azure IoT Central.
+1. The WLAN LED will blink every 5 seconds when connected to Azure.
+1. The RGB LED will turn red if the measured temperature is less than the desired temperature, blue if the measured temperature is greater than the desired temperature and green if the measured temperature is the same as the desired temperature.
 
 ### Seeed Studio MT3620 Mini Dev Board
 
 ![The illustration shows the Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
 
-1. The green LED closest to the USB connector will start to blink.
-2. Given this device has no built-in buttons, virtual **Button A** and **Button B** presses will be generated every 10 seconds. The blink rate will change and the **Actual Temperature** device twin property in Azure IoT Central will be updated.
+1. The User LED will blink every 5 seconds when connected to Azure.
 
 ## Step 3: Display the actual temperature property
 
@@ -63,12 +58,8 @@
 
 3. Select the **Form** tab.
 
-4. For Azure Sphere devices with built-in buttons, press **Button A** or **Button B** to update the **Actual Temperature** property in Azure IoT Central.
-
     > [!NOTE]
-    > Azure IoT Central does not update immediately. It might take a minute or two for the **Actual Temperature** property to change.
-
-   Virtual button-press events are generated for Azure Sphere devices that do not have built-in buttons.
+    > Azure IoT Central does not update immediately. It might take a minute or two for the device telemetry to be displayed.
 
 ![The illustration shows how to display telemetry.](../media/iot-central-display-telemetry.png)
 
@@ -76,7 +67,7 @@
 
 Setting the desired temperature is like setting a thermostat in a room. A device twin property message for desired temperature is sent to Azure Sphere, where it will be acted upon.
 
-When the temperature sensor is read on Azure Sphere, it is compared to the desired temperature.
+When the temperature sensor is read on the Azure Sphere, it is compared to the desired temperature.
 
 - If the temperature is greater than the desired temperature, the blinking LED will turn blue to indicate the cooler needs be turned on.
 - If the temperature is less than the desired temperature, the blinking LED will turn red to indicate the heater needs to be turned on.
@@ -87,7 +78,7 @@ When the temperature sensor is read on Azure Sphere, it is compared to the desir
 To set the desired temperature:
 
 1. Update the **Desired Temperature** value.
-2. Save the property. This will send the desired temperature property to Azure Sphere. The blinking LED color may change depending on the desired temperature chosen.
+2. Save the property. This will send the desired temperature property to Azure Sphere. The RGB LED color will change depending on the desired temperature chosen.
 
 ![The illustration shows display settings.](../media/iot-central-display-settings.png)
 

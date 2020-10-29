@@ -62,19 +62,19 @@ static LP_DEVICE_TWIN_BINDING desiredTemperature = {
 };
 ```
 
-The following example declares a variable named **desiredTemperature** of type **LP_DEVICE_TWIN_BINDING**. This variable maps the Azure IoT Central **DesiredTemperature** property with a handler function named **DeviceTwinSetTemperatureHandler**.
+The following is the implementation of the **DeviceTwinSetTemperatureHandler** function. Note, as part of the [IoT Plug and Play](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-convention) conventions, the device should acknowledge the device twin update with a call to **lp_deviceTwinAckDesiredState**.
 
 ```
 /// <summary>
-/// Device twin handler to set the desired temperature value
+/// Device Twin Handler to set the desired temperature value
 /// </summary>
 static void DeviceTwinSetTemperatureHandler(LP_DEVICE_TWIN_BINDING* deviceTwinBinding)
 {
-	if (deviceTwinBinding->twinType == LP_TYPE_FLOAT)
-	{
-		desired_temperature = *(float*)deviceTwinBinding->twinState;
-		SetTemperatureStatusColour(last_temperature);
-	}
+    if (deviceTwinBinding->twinType == LP_TYPE_FLOAT)
+    {
+        lp_deviceTwinAckDesiredState(deviceTwinBinding, deviceTwinBinding->twinState, LP_DEVICE_TWIN_COMPLETED);
+        SetTemperatureStatusColour(last_temperature);
+    }
 }
 ```
 
@@ -117,7 +117,7 @@ Perform the following in Azure IoT Central:
 When a device twin message is received from Azure, this set is checked for a matching *twinProperty* name and when a match is found, the corresponding handler function is called. Device twin bindings must be added to **deviceTwinBindingSet**.
 
 ```
-LP_DEVICE_TWIN_BINDING* deviceTwinBindingSet[] = { &desiredTemperature, &actualTemperature };
+LP_DEVICE_TWIN_BINDING* deviceTwinBindingSet[] = { &desiredTemperature, &actualTemperature, &actualHvacState };
 ```
 
 ### Opening
@@ -125,7 +125,7 @@ LP_DEVICE_TWIN_BINDING* deviceTwinBindingSet[] = { &desiredTemperature, &actualT
 Sets are initialized in the **InitPeripheralsAndHandlers** function found in **main.c**.
 
 ```
-lp_openDeviceTwinSet(deviceTwinBindingSet, NELEMS(deviceTwinBindingSet));
+lp_deviceTwinSetOpen(deviceTwinBindingSet, NELEMS(deviceTwinBindingSet));
 ```
 
 ### Dispatching
@@ -137,5 +137,5 @@ When a device twin message is received, **deviceTwinBindingSet** is checked for 
 Sets are closed in the **ClosePeripheralsAndHandlers** function found in **main.c**.
 
 ```
-lp_closeDeviceTwinSet();
+lp_deviceTwinSetClose();
 ```

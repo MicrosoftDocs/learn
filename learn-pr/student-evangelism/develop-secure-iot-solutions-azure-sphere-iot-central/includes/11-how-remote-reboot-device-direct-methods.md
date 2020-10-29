@@ -19,13 +19,12 @@ Direct method bindings map a direct method with a handler function that implemen
 
 ### Cloud-to-device commands
 
-In **main.c**, the variable named **resetDevice** of type **DirectMethodBinding** is declared. This variable maps the Azure IoT Central **ResetMethod** command property with a handler function named **ResetDirectMethod**.
+In **main.c**, the variable named **restartDeviceDirectMethod** of type **DirectMethodBinding** is declared. This variable maps the Azure IoT Central **RestartDevice** command property with a handler function named **RestartDeviceDirectMethodHandler**.
 
 ```
-static LP_DIRECT_METHOD_BINDING resetDevice = { 
-	.methodName = "ResetMethod", 
-	.handler = ResetDirectMethodHandler 
-};
+static LP_DIRECT_METHOD_BINDING restartDeviceDirectMethod = {
+    .methodName = "RestartDevice",
+    .handler = RestartDeviceDirectMethodHandler };
 ```
 
 ## Azure IoT Central commands
@@ -36,70 +35,77 @@ Azure IoT Central commands are defined in device templates.
 
 1. From Azure IoT Central, navigate to **Device template**, and select the **Azure Sphere** template.
 2. Click on **Interface** to list the interface capabilities.
-3. Scroll down and expand the **ResetMethod** capability.
-4. Review the definition of **ResetMethod**. The capability type is **Command**.
-5. The schema type is **Object**. Click on the **View** button to display the object definition. The object definition describes the shape of the JSON payload sent with the command. In this example, the shape of the JSON payload will be the same as this example: *{"reset_timer":5}*.
+3. Scroll down and expand the **RestartDevice** capability.
+4. Review the definition of **RestartDevice**. The capability type is **Command**.
+5. The schema type is **Integer**. The direct method payload is an integer which defines the number of seconds before restarting the device.
 
 ## Direct method handler function
 
-1. From Azure IoT Central, a user invokes the **Reset Azure Sphere** command.
+1. From Azure IoT Central, a user invokes the **Restart Device** command.
 
-   A direct method named **ResetMethod**, along with a JSON payload, is sent to the device. The JSON payload *{"reset_timer":5}* specifies how many seconds to wait before resetting the device.
+   A direct method message named **RestartDevice**, along with the integer payload specifying how many seconds to wait before the restart is sent to the device.
 
-2. The **ResetDirectMethod** function handler is called.
+2. The **RestartDeviceDirectMethodHandler** function handler is called.
 
    When the device receives a direct method message, the **DirectMethodBindings** set is checked for a matching **DirectMethodBinding** *methodName* name. When a match is found, the associated **DirectMethodBinding** handler function is called.
 
-3. The current UTC time is reported to Azure IoT using a device twin binding property named **DeviceResetUTC**.
+3. The current UTC time is reported to Azure IoT using a device twin binding property named **DeviceRestartUTC**.
 
 4. The direct method responds with an HTTP status code and a response message.
 
 5. The device is reset.
 
-6. Azure IoT Central queries and displays the device twin's reported property **DeviceResetUTC**.
+6. Azure IoT Central queries and displays the device twin's reported property **DeviceRestartUTC**.
 
 ![The illustration shows how a direct method works.](../media/azure-sphere-method-and-twin.png)
 
 ```
 /// <summary>
-/// Start Device Power Restart Direct Method 'ResetMethod' {"reset_timer":5}
+/// Start Device Power Restart Direct Method 'ResetMethod' integer seconds eg 5
 /// </summary>
-static LP_DIRECT_METHOD_RESPONSE_CODE ResetDirectMethodHandler(JSON_Object* json, LP_DIRECT_METHOD_BINDING* directMethodBinding, char** responseMsg)
+static LP_DIRECT_METHOD_RESPONSE_CODE RestartDeviceDirectMethodHandler(JSON_Value* json, LP_DIRECT_METHOD_BINDING* directMethodBinding, char** responseMsg)
 {
-	const char propertyName[] = "reset_timer";
-	const size_t responseLen = 60; // Allocate and initialize a response message buffer. The calling function is responsible for the freeing memory
-	static struct timespec period;
+    const size_t responseLen = 60; // Allocate and initialize a response message buffer. The calling function is responsible for the freeing memory
+    static struct timespec period;
 
-	*responseMsg = (char*)malloc(responseLen);
-	memset(*responseMsg, 0, responseLen);
+    *responseMsg = (char*)malloc(responseLen);
+    memset(*responseMsg, 0, responseLen);
 
-	if (!json_object_has_value_of_type(json, propertyName, JSONNumber))
-	{
-		return LP_METHOD_FAILED;
-	}
-	int seconds = (int)json_object_get_number(json, propertyName);
+    if (json_value_get_type(json) != JSONNumber) { return LP_METHOD_FAILED; }
 
-	// leave enough time for the device twin deviceResetUtc to update before restarting the device
-	if (seconds > 2 && seconds < 10)
-	{
-		// Report Device Reset UTC
-		lp_deviceTwinReportState(&deviceResetUtc, lp_getCurrentUtc(msgBuffer, sizeof(msgBuffer))); // LP_TYPE_STRING
+    int seconds = (int)json_value_get_number(json);
 
-		// Create Direct Method Response
-		snprintf(*responseMsg, responseLen, "%s called. Reset in %d seconds", directMethodBinding->methodName, seconds);
+    // leave enough time for the device twin deviceRestartUtc to update before restarting the device
+    if (seconds > 2 && seconds < 10)
+    {
+        // Report Device Restart UTC
+        lp_deviceTwinReportState(&deviceRestartUtc, lp_getCurrentUtc(msgBuffer, sizeof(msgBuffer))); // LP_TYPE_STRING
 
-		// Set One Shot LP_TIMER
-		period = (struct timespec){ .tv_sec = seconds, .tv_nsec = 0 };
-		lp_setOneShotTimer(&resetDeviceOneShotTimer, &period);
+        // Create Direct Method Response
+        snprintf(*responseMsg, responseLen, "%s called. Restart in %d seconds", directMethodBinding->methodName, seconds);
 
-		return LP_METHOD_SUCCEEDED;
-	}
-	else
-	{
-		snprintf(*responseMsg, responseLen, "%s called. Reset Failed. Seconds out of range: %d", directMethodBinding->methodName, seconds);
-		return LP_METHOD_FAILED;
-	}
+        // Set One Shot LP_TIMER
+        period = (struct timespec){ .tv_sec = seconds, .tv_nsec = 0 };
+        lp_timerOneShotSet(&restartDeviceOneShotTimer, &period);
+
+        return LP_METHOD_SUCCEEDED;
+    }
+    else
+    {
+        snprintf(*responseMsg, responseLen, "%s called. Restart Failed. Seconds out of range: %d", directMethodBinding->methodName, seconds);
+        return LP_METHOD_FAILED;
+    }
 }
+```
+
+## Azure Sphere PowerControls Capability
+
+The **RestartDeviceDirectMethodHandler** sets up a one shot timer that invokes the **RestartDeviceHandler** function after the specified restart period measured in seconds. In the RestartDeviceHandler function a call is made to the **PowerManagement_ForceSystemReboot** API. The PowerManagement_ForceSystemReboot API requires the **PowerControls** capability to be declared  in the app_manifest.json file.
+
+```
+"PowerControls": [
+    "ForceReboot"
+]
 ```
 
 ## Working with direct method binding
@@ -107,7 +113,7 @@ static LP_DIRECT_METHOD_RESPONSE_CODE ResetDirectMethodHandler(JSON_Object* json
 Direct method bindings must be added to **directMethodBindingSet**. When a direct method message is received from Azure, this set is checked for a matching *methodName* name. When a match is found, the corresponding handler function is called.
 
 ```
-LP_DIRECT_METHOD_BINDING* directMethodBindingSet[] = { &resetDevice };
+LP_DIRECT_METHOD_BINDING* directMethodBindingSet[] = { &restartDeviceDirectMethod };
 ```
 
 ### Opening
@@ -115,7 +121,7 @@ LP_DIRECT_METHOD_BINDING* directMethodBindingSet[] = { &resetDevice };
 Sets are initialized in the **InitPeripheralsAndHandlers** function found in **main.c**.
 
 ```
-lp_openDirectMethodSet(directMethodBindingSet, NELEMS(directMethodBindingSet));
+lp_directMethodSetOpen(directMethodBindingSet, NELEMS(directMethodBindingSet));
 ```
 
 ### Dispatching
@@ -127,5 +133,5 @@ When a direct method message is received, the set is checked for a matching *met
 Sets are closed in the **ClosePeripheralsAndHandlers** function found in **main.c**.
 
 ```
-lp_closeDirectMethodSet();
+lp_directMethodSetClose();
 ```
