@@ -52,15 +52,15 @@ In this task, you create a SQL database based on the _AdventureWorksLT_ sample d
 
 1. Select **Review + create** > **Create** to deploy the server and database.
 
-It can take approximately 2 to 5 minutes to create the server and deploy the sample database.
+    It can take approximately 2 to 5 minutes to create the server and deploy the sample database.
 
-1. Click **Go to resource**.
+1. Select **Go to resource**.
 
-1. Click on **Set server firewall** and Allow Azure services and resouces to access this server = **Yes**.
+1. Select **Set server firewall** and Allow Azure services and resouces to access this server = **Yes**.
 
-1. Click **Save**
+1. Select **Save**
 
-1. Click **OK**
+1. Select **OK**
 
 
 ## Task 2: Test the database
