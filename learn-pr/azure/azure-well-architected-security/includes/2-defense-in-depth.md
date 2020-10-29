@@ -1,6 +1,6 @@
 There's no easy solution that solves all your problems from a security perspective. Let's imagine you work for an organization that has neglected security in its environment. The company has realized that it needs to put some major focus in this area. The company isn't sure where to start, or if it's possible to just buy a solution to make the environment secure. The company knows it needs a holistic approach but is unsure what fits into that. 
 
-Here, we'll identify key concepts of defense in depth, identify key security technologies and approaches to support a defense-in-depth strategy, and discuss how to apply these concepts when architecting your own Azure services.
+Here, we'll identify key concepts of defense in depth and identify key security technologies and approaches to support a defense-in-depth strategy. We'll also discuss how to apply these concepts when you're architecting your own Azure services.
 
 ## Zero Trust model
 
