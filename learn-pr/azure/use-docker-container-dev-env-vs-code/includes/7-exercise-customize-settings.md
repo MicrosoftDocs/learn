@@ -70,6 +70,6 @@ The container will be rebuilt with the changes you've specified in the "devconta
 
 1.  Notice that you didn't have to install any dependencies. The application simply runs.
 
-The container is now customized and automated for your agency. Any developer who opens this project with Remote-Containers can immediately run it and get to work writing code.
+The container is now customized and automated for your agency. Any developer who opens this project with Remote - Containers can immediately run it and get to work writing code.
 
 In the next section, you'll learn how to install software in the dev container.

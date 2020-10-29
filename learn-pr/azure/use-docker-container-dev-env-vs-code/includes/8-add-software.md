@@ -1,4 +1,4 @@
-Your customized container is coming along great for your agency. With the power of Remote-Containers, you've been able to add a preconfigured dev container, and through the exercises so far, you've been able to customize your experience even more through the `devcontainer.json`. But what if we want to add additional software beyond just what's available in those images or preconfigured dev containers?
+Your customized container is coming along great for your agency. With the power of Remote - Containers, you've been able to add a preconfigured dev container, and through the exercises so far, you've been able to customize your experience even more through the `devcontainer.json`. But what if we want to add additional software beyond just what's available in those images or preconfigured dev containers?
 
 ## Intro to installing additional software
 

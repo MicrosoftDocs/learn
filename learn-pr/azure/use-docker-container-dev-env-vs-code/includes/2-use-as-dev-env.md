@@ -1,12 +1,12 @@
 As you've noticed during your time at the agency, it can be a major hassle for developers to get started with new projects. Each one requires the developer to install and manage specific or complicated sets of dependencies and tech stacks. Ideally, each project would be contained in its own pre-configured, containerized environment. Containerized development is made possible with Docker and Visual Studio Code (VS Code) through the Remote - Containers extension.
 
-## The Remote-Containers extension for VS Code
+## The Remote - Containers extension for VS Code
 
 VS Code's Remote - Containers extension lets you use a Docker container as a full-featured development environment. You can use this extension to open any folder or repository in a container and take advantage of VS Code's full feature set, like full IntelliSense (completions), code navigation, and debugging.
 
-## How Remote-Containers works
+## How Remote - Containers works
 
-The Remote-Containers extension lets you grab a dev container with the specific tech stack or dependencies already set up for you, open a project, and your code will just work - you don't need to actually download anything on your local machine. Remote-Containers works by connecting VS Code to a running container.
+The Remote - Containers extension lets you grab a dev container with the specific tech stack or dependencies already set up for you, open a project, and your code will just work - you don't need to actually download anything on your local machine. Remote - Containers works by connecting VS Code to a running container.
 
 - Workspace files are mounted from the local file system or copied or cloned into the container.
 - VS Code extensions are installed and run inside the container, where they have full access to the tools, platform, and file system.
