@@ -62,7 +62,7 @@ Let's take a look at some ways that Azure enables you to encrypt data across ser
 
 ### Encrypting raw storage
 
-Azure Storage encryption for data at rest helps you protect your data to meet your organizational security and compliance commitments. The Azure Storage platform automatically encrypts your data with 256-bit Advanced Encryption Standard (AES) encryption before persisting it to disk and decrypts the data during retrieval. This handling of encryption, encryption at rest, decryption, and key management in Azure Storage is transparent to applications that use the service. You don't need to add any code or turn on any features.
+Azure Storage encryption for data at rest helps you protect your data to meet your organizational security and compliance commitments. The Azure Storage platform automatically encrypts your data with 256-bit Advanced Encryption Standard (AES) encryption before persisting it to disk and then decrypts the data during retrieval. This handling of encryption, encryption at rest, decryption, and key management in Azure Storage is transparent to applications that use the service. You don't need to add any code or turn on any features.
 
 You can use Microsoft-managed encryption keys with Azure Storage encryption, or you can use your own encryption keys by selecting the option in the Azure portal.
 
@@ -74,7 +74,7 @@ Azure Storage automatically encrypts data in:
 - Both performance tiers (Standard and Premium)
 - Both deployment models (Azure Resource Manager and classic)
 
-For your organization, Azure Storage encryption means that whenever someone is using services that support Azure Storage encryption, their data is encrypted on the physical medium of storage. In the highly unlikely event that someone gets access to the physical disk, the data will be unreadable.
+For your organization, Azure Storage encryption means that whenever someone is using services that support Azure Storage encryption, their data is encrypted on the physical medium of storage. In the unlikely event that someone gets access to the physical disk, the data will be unreadable.
 
 ### Encrypting virtual machines
 

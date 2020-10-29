@@ -82,7 +82,7 @@ At this layer, the focus is on limiting network connectivity across all your res
 - Use distributed denial-of-service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for users.
 - Use perimeter firewalls to identify and alert on malicious attacks against your network.
 
-At the network perimeter, it's about protecting from network-based attacks against your resources. Identifying these attacks, eliminating their impact, and alerting on them is important to keep your network secure.
+At the network perimeter, it's about protecting from network-based attacks against your resources. Identifying these attacks, eliminating their impact, and alerting on them are important to keep your network secure.
 
 ### Identity and access
 

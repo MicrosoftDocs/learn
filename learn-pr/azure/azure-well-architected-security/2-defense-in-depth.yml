@@ -24,7 +24,7 @@ quiz:
       isCorrect: false
       explanation: '*Defense in depth* is a layered system that provides protection from unauthorized access. If one layer is breached, another layer prevents further exposure.'
 
-  - content: 'True or false: by moving to the cloud, my architecture is fully secure and I can hand off all security responsibilities to my cloud provider.'
+  - content: 'True or false: by moving to the cloud, your architecture is fully secure and you can hand off all security responsibilities to your cloud provider.'
     choices:
     - content: 'True'
       isCorrect: false
