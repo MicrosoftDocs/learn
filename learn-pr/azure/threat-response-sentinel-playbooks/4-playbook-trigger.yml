@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.threat-response-sentinel-playbooks.4-playbook-trigger
+uid: learn.azure.threat-response-sentinel-playbooks.3-playbook-trigger
 metadata:
   title: Trigger a playbook in real-time
-  description: TODO
-  ms.date: TODO
+  description: Trigger a playbook in real-time
+  ms.date: 10/29/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -15,31 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "What is dynamic content in a logic app?"
     choices:
-    - content: "Answer 1"
+    - content: "List of dynamicly selected threats?"
       isCorrect: false
       explanation: "Explanation 1"
-    - content: "Answer 2"
+    - content: "List of dynamic parameters "
       isCorrect: false
       explanation: "Explanation 2"
     - content: "Answer 3"
       isCorrect: false
       explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
-  - content: "Question 2"
+  - content: "You create a new playbook to notify you each time when a user is delegated the role of Global Administrator. Which connector you should select in your Logic App?"
     choices:
-    - content: "Answer 1"
+    - content: "Azure Active Directory connector."
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "No, the Logic APP should start with the trigger from Azure Sentinel Connector."
+    - content: "Connector for Microsoft 365."
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
-      isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "No, the Logic APP should start with the trigger from Azure Sentinel Connector."
+    - content: "Azure Sentinel Connector."
+      isCorrect: true
+      explanation: "Azure Sentinel Playbooks starts with trigger from Azure Sentinel Connector."
