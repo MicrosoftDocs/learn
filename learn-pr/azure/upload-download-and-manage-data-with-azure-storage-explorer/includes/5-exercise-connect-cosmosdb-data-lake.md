@@ -117,7 +117,7 @@ Now that you have a Cosmos DB database, it's time to create a collection. When y
 
 1. Select **OK**.
 
-You now see that the region's collection is added under the production database. You can add as many collections as you want.
+You now see that the region's collection is added under the **products** database. You can add as many collections as you want.
 
 ### Create documents in a Cosmos DB database collection
 
