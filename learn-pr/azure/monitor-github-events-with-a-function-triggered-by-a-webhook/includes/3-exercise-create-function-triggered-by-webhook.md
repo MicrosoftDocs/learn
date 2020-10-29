@@ -23,13 +23,13 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
     | Version | default |
     | Region | Choose the nearest location to you that is also one of the allowed *Sandbox regions* listed below. |
     
-    1. Click Next > Hosting
+1. Click Next > Hosting
     
     | Property  | Value  |
     |---|---|
     | Storage account | Create new, and accept the default name. |
     | O/S | Windows |
-    | Plan | Consumption (Serverleess) |
+    | Plan | Consumption (Serverless) |
 
     ### Sandbox regions
 
