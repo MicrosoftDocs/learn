@@ -16,17 +16,18 @@ Your goal is to set up the Linux VM and create an activity log monitoring rule t
 
 1. You want alerts when any virtual machine in your resource group is deleted. Select the **<rgn>[sandbox resource group name]</rgn>** resource group, and then select **Done**.
 
-    ![Image that shows the page for selecting a resource](../media/7-alert-select-resource.png)
+   <!-- ![Image that shows the page for selecting a resource](../media/7-alert-select-resource.png) -->
+
 
 1. In the **Condition** section, select **Select condition**. The **Configure signal logic** panel appears.
 
 1. In the **Configure signal logic** panel, in the **Search by signal name** box, enter **Delete**. Select **Delete Virtual Machine (Microsoft.Compute/virtualMachines)**.
 
-    ![Image that shows the page for creating a rule](../media/7-conf-signal-logic.png)
+    <!-- ![Image that shows the page for creating a rule](../media/7-conf-signal-logic.png) -->
 
 1. You want to receive alerts of all types. Leave **Alert logic** settings at their default of **All**, and then select **Done**.
 
-    ![Image that shows the settings for metric condition logic](../media/7-activity-log-logic.png)
+    <!-- ![Image that shows the settings for metric condition logic](../media/7-activity-log-logic.png) -->
 
 ## Add an email alert action
 
@@ -56,7 +57,7 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
 
 1. Select **Email**, and in the **Email** box, enter your email address, and then select **OK**.
 
-    ![Screenshot that shows adding an action group and an email alert](../media/7-email-setup.png)
+    <!-- ![Screenshot that shows adding an action group and an email alert](../media/7-email-setup.png) -->
 
 1. On the **Create action group** page, select **Review + create**.
 
@@ -71,7 +72,7 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
     | Save alert rule to resource group | **default resource group** |
     | Enable alert rule upon creation | **Check - Yes**
 
-    ![Screenshot that shows a completed alert details section](../media/7-all-vm-alert-details.png)
+   <!-- ![Screenshot that shows a completed alert details section](../media/7-all-vm-alert-details.png) -->
 
 1. Now that you've defined the rule, select **Create alert rule**.
 
