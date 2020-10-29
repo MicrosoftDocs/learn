@@ -25,7 +25,7 @@
 - Basic experience with Azure services
 - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
 - Basic knowledge of Azure Sentinel rules
-<!--LM: The term "Azure Sentinel" should retain "Azure" for branding.-->
+
 ## Module summary description
 
 This module introduces you to incident management in Azure Sentinel. You’ll learn to use Azure Sentinel to detect and investigate issues in your environment.
@@ -65,7 +65,6 @@ This module introduces you to incident management in Azure Sentinel. You’ll le
 ### Module scenario
 
 Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Intune Endpoint Protection, and Microsoft Azure Information Protection. Contoso uses the paid version of Azure Security Center as threat protection for resources that run on Azure and on-premises. The company also monitors and protects other non-Microsoft assets.
-<!--LM: The previous three sentences are part of the scenario in several other modules, if you want to include it here. If they are not relevant, then please delete.-->
 As part of Contoso's security team, you've recently been asked to investigate and identify sign-in anomalies for the company's Azure AD resources.
 
 ## Second unit: Describe incident management
@@ -78,7 +77,7 @@ As part of Contoso's security team, you've recently been asked to investigate an
 
 Understand Azure Sentinel incident management. Topics include:
 
-- Create custom rules to detect threats.
+- Understand Azure Sentinel incident management.
 
 ## Third unit: Understand evidence and entities
 
@@ -91,7 +90,6 @@ Understand Azure Sentinel incident management. Topics include:
 Explore Azure Sentinel evidence and entities within incident management. Topics include:
 
 - Understand evidence and entities in Azure Sentinel.
-
 
 ## Fourth unit: Manage incidents
 

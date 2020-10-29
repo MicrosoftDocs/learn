@@ -2,8 +2,8 @@
 uid: learn.azure.incident-management-in-sentinel.3-understand-evidence-and-entities
 metadata:
   title: Understand evidence and entities
-  description: TODO
-  ms.date: TODO
+  description: Understand evidence and entities in Azure Sentinel
+  ms.date: 10/30/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

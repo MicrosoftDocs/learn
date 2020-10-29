@@ -2,8 +2,8 @@
 uid: learn.azure.incident-management-in-sentinel
 metadata:
   title: Security incident management in Azure Sentinel
-  description: TODO
-  ms.date: TODO
+  description: Security incident management in Azure Sentinel
+  ms.date: 10/30/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -12,11 +12,14 @@ title: Security incident management in Azure Sentinel
 summary: TODO
 abstract: |
   In this module you will:
-  - TODO
-  - TODO
-  - TODO
+  - Understand Azure Sentinel incident management
+  - Explore Azure Sentinel evidence and entity management
+  - Investigate and manage incident resolution
 prerequisites: |
-  - TODO
+  - Familiarity with security operations in an organization
+  - Basic experience with Azure services
+  - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
+  - Basic knowledge of Azure Sentinel rules
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

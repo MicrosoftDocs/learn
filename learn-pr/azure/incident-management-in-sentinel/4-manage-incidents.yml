@@ -2,8 +2,8 @@
 uid: learn.azure.incident-management-in-sentinel.4-manage-incidents
 metadata:
   title: Manage incidents
-  description: TODO
-  ms.date: TODO
+  description: Manage incidents in Azure Sentinel
+  ms.date: 10/30/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "Severity"
       isCorrect: false
-      explanation: "Severity does not change incident ownership."
+      explanation: "Severity doesn't change incident ownership."
     - content: "Status"
       isCorrect: false
-      explanation: "Status does not change incident ownership."
+      explanation: "Status doesn't change incident ownership."
     - content: "Owner"
       isCorrect: true
       explanation: "You should change the owner parameter to the user account for the member of the tier 2 security team."
@@ -36,10 +36,10 @@ quiz:
       explanation: "The investigation graph enables you to view timelines and relationships between incident resources."
     - content: "Incident details page"
       isCorrect: false
-      explanation: "Incident details does not enable you to view timelines and relationships between incident resources."
+      explanation: "The Incident details page doesn't enable you to view timelines and relationships between incident resources."
     - content: "Resource relationships"
       isCorrect: false
-      explanation: "There is no interface in Sentinel named Resource relationships."
+      explanation: "There isn't an interface in Sentinel named Resource relationships."
     - content: "Incident status"
       isCorrect: false
-      explanation: "Viewing incident status does not enable you to view timelines and relationships between incident resources."
+      explanation: "Viewing incident status doesn't enable you to view timelines and relationships between incident resources."

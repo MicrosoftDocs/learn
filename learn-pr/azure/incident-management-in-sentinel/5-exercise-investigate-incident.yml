@@ -2,8 +2,8 @@
 uid: learn.azure.incident-management-in-sentinel.5-exercise-investigate-incident
 metadata: 
   title: Exercise - Investigate an incident
-  description: TODO
-  ms.date: TODO
+  description: Exercise - Investigate an incident
+  ms.date: 10/30/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

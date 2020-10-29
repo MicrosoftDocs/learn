@@ -1,15 +1,14 @@
-Azure Sentinel can help you organize, investigate and track incidents, from creation to resolution. Azure Sentinel incidents are containers of threats in your organization – alerts, entities and any additional related evidence.
+Azure Sentinel can help you organize, investigate, and track incidents, from creation to resolution. Azure Sentinel incidents are containers of threats in your organization – alerts, entities, and any additional related evidence.
 
 ## Key concepts
 
-Before you begin managing incidents, it is important to understand several key incident management concepts in Azure Sentinel.
+Before you begin managing incidents, it's important to understand several key incident management concepts in Azure Sentinel.
 
 - **Data connectors.** You use data connectors in Sentinel to ingest and collect data from security-related services. These events are forwarded to a Log Analytics workspace associated with Azure Sentinel. Events can be collected from linux or Windows computers running the Log Analytics agent, a Linux Syslog server (for devices like firewalls or proxies), or directly from Microsoft Azure services.
-<!-- Replace "linux" with "Linux". -->
-- **Events.** Events are stored in a Log Analytics workspace and contain the details of security related activity that you want to monitor with Azure Sentinel.
+- **Events.** Azure Sentinel stores events in a Log Analytics workspace. These events contain the details of security-related activity that you want to monitor with Azure Sentinel.
 - **Analytic rules.** You create analytics rules to detect important security events and generate alerts. Analytics rules can be created using built-in templates or by using custom Kusto Query Language (KQL) queries against Log Analytics workspaces in Sentinel.
 - **Alerts.** Analytics rule generate alerts when they detect important security events. You can also configure alerts to generate incidents.
-- **Incidents.** Incidents are created as a result of alerts from analytics rules. Incidents can contain multiple related alerts, and you use each incident as a starting point and tracking mechanism for investigation into security concerns in your environment.
+- **Incidents.** Azure Sentinel creates incidents from analytics rule alerts. Incidents can contain multiple related alerts. You use each incident as a starting point and tracking mechanism for investigation into security concerns in your environment.
 
 ## Incident management in Sentinel
 
