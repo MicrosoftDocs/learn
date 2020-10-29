@@ -45,6 +45,8 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     * **Coupon number** text box
     * **APPLY** button
 
+    :::image type="content" source="../../microservices-logging-aspnet-core/media/4-implement-app-insights/discount-coupon-elements.png" alt-text="Discount coupon elements":::
+
 You've successfully verified that the app was deployed to AKS. Additionally, you've seen that the discount coupon feature is enabled.
 
 ## Set up Feature Management
@@ -154,7 +156,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
     1. In the app, refresh the page. The SPA reloads.
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
-    1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is present.
+    1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is still present.
 
 ## Disable the coupons feature
 

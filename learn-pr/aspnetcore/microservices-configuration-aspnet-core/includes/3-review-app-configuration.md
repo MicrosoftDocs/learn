@@ -1,8 +1,8 @@
 The management of configuration settings in a microservices context can become a significant problem if not handled properly. Since microservices-based solutions are composed of multiple services, it's important to have a sound configuration strategy that effectively separates code from configuration.
 
-You'll explore how to integrate ASP.NET Core and Kubernetes configuration features with Azure App Configuration to tackle this scenario in an effective way.
+In this unit, you'll explore how to integrate ASP.NET Core and Kubernetes configuration features with Azure App Configuration to tackle this scenario in an effective way.
 
-In this unit, you'll review the:
+You'll review the:
 
 * ASP.NET Core configuration infrastructure.
 * Kubernetes configuration abstraction&mdash;the ConfigMap.
@@ -24,7 +24,7 @@ ASP.NET Core uses a [ConfigurationBinder](/dotnet/api/microsoft.extensions.confi
 
 ## Kubernetes configuration
 
-The classical Kubernetes abstraction to handle configuration is the [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap). A ConfigMap is also (usually) a key-value pair collection and a typical one looks like this:
+Typically in Kubernetes, the abstraction to handle configuration is the [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap). A ConfigMap is usually a key-value pair collection. A typical example looks like this:
 
 <!-- TODO: consider using Key Vault to store the AppConfig__Endpoint connection string -->
 
@@ -45,19 +45,19 @@ data:
   AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;Id=...;Secret=..."
 ```
 
-The ConfigMap's key-value pairs are typically presented to the containerized app as environment variables. This is the primary mechanism to get the configuration values in our ASP.NET Core apps.
+The ConfigMap's key-value pairs are presented to the containerized app as environment variables. This is the primary mechanism to persist ASP.NET Core configuration values in microservices apps.
 
 ## Azure App Configuration
 
-Azure App Configuration provides a service to manage app settings and feature flags from a centralized store. App Configuration is also a good complement to [Azure Key Vault](/azure/key-vault/general/overview), which is designed to handle app secrets like connection strings, tokens, passwords, and digital certificates.
+A cloud-based configuration service is especially useful in microservices apps and other distributed applications. In this module, you'll use Azure App Configuration to manage app settings and feature flags.
 
-ASP.NET Core apps make use of Azure App Configuration as just another configuration provider, albeit one with quite some [useful features](/azure/azure-app-configuration/overview#why-use-app-configuration).
+In ASP.NET Core, Azure App Configuration is registered as another configuration provider in *Startup.cs*. As a result, the rest of the app doesn't need to know anything about the App Configuration service as it works with configuration values.
 
 ## Feature Management library
 
-The Feature Management library provides an opinionated solution to handle feature flags. It's integrated with the Azure App Configuration service and allows you to dynamically toggle features without implementing supporting infrastructure.
+`Microsoft.FeatureManagement` provides standardized APIs for enabling feature flags within apps.  It's designed to work with multiple configuration scenarios, including Azure App Configuration. Combining this library with Azure App Configuration enables you to dynamically toggle features without implementing supporting infrastructure.
 
-The Feature Management library and Azure App Configuration build seamlessly on ASP.NET Core's configuration abstraction, to streamline configuration and feature management needs.
+The Feature Management library and Azure App Configuration build on ASP.NET Core's configuration abstraction.
 
 ### Integration
 

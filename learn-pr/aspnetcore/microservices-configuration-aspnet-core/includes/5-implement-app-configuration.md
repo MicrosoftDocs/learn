@@ -26,7 +26,7 @@ In this unit, you will:
 
      > az appconfig credential list  --resource-group eshop-learn-rg --name eshoplearn20201026204439872 --query [0].connectionString --output tsv
 
-    Endpoint=https://eshoplearn20201026204439872.azconfig.io;Id=4oTq-l1-s0:bweLwBPttsvIttKnuQDm;Secret=Q8ab+HY65YEgqSTBv6wiCVeoW/G0IwZ9jlEUxYC78Pc=
+    Endpoint=https://eshoplearn20201026204439872.azconfig.io;Id=4oTq-l1-s0:bweLwBPttsvIttKnuQDm;Secret=<secret-value>
     ```
 
     In the preceding output, the string prefixed with "Endpoint=" represents the App Configuration store's connection string.
@@ -47,7 +47,8 @@ AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;I
 
 ## Add the feature flag for Coupons
 
-1. In a similar fashion, go to the **Feature manager** section and select **Add**.
+1. Use the Azure portal's search box to find and open the App Configuration resource prefixed with *:::no-loc text="eshoplearn":::*.
+1. Select **Feature manager** > **Add**.
 1. Select the **Enable feature flag** check box, enter *Coupons* in the **Feature flag name** text box, and select the **Apply** button.
 
 ## Connect your app to the App Configuration store
@@ -104,24 +105,10 @@ You must redeploy the SPA before you can confirm that it works as intended.
     deploy/k8s/build-to-acr.sh --services webspa
     ```
 
-    The following excerpt from the command's output confirms that the image was pushed to ACR:
-
-    ```console
-    2020/10/26 23:26:50 Successfully pushed image: eshoplearn20201026204439872.azurecr.io/webspa:linux-latest
-    ```
-
 1. Run the following script to deploy to AKS:
 
     ```bash
     deploy/k8s/deploy-application.sh --charts webspa
-    ```
-
-    The preceding command executes `kubectl get pods`. The following excerpt confirms that the SPA's deployment was successful:
-
-    ```console
-    NAME                              READY   STATUS              RESTARTS   AGE
-    webspa-777655c48d-kv982           0/1     Terminating         0          118m
-    webspa-777655c48d-r9469           0/1     ContainerCreating   0          1s
     ```
 
 ## Test the feature flag
