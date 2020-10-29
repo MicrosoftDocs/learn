@@ -1,30 +1,29 @@
 ## Manage analytics rules
 
-You can connect several data sources to Azure Sentinel, which can rapidly generate many security alerts. <!--Marjan, please check the edits to the previous sentence--> To adjust the noise <!--Marjan, can we change "To adjust the noise" to "To eliminate the noise from the threats of lesser importance and to filter.."--> and filter the important threats, you should manage the analytics rules on an ongoing basis. This will help ensure that your rules remain useful and efficient in detecting potential security threats.
+Your organization can connect many data sources to Azure Sentinel and can quickly generate many security alerts. To adjust the noise and filter the important threat detection, you need to manage analytics rules on an ongoing basis. That will ensure that your rules remain useful and efficient in detecting potential security threats.
 
-You can perform the following four actions on existing active rules: 
+There are 4 action that you can take on existing active rules:
 
 - Edit
 - Disable
 - Duplicate
 - Delete
 
-## Edit existing rules 
-<!-- MArjan can we delete "existing rules" from the heading? We don't add it for the other three sections.>
+## Edit existing rules
 
-You can modify existing rules, by selecting **Edit** in the details pane blade. <!--Marjan, do we need to both pane and blade? Can we delete blade as I am not sure if we still use that in Azure terminology?--> To edit a rule, you navigate the same pages that you did in creating the rule. The previous inputs that you used to create the rule are preserved. You can change any properties of the rule to further tune the result of the threat detection.
+You can modify existing rules, by clicking on the **Edit** button in the details pane blade. Editing a rule will take you through the same pages as creating the rule. The previous inputs that were used in the creation of the rule are preserved. You can change any properties of the rule to further tune the result of the threat detection.
 
-A typical modification that you might want to implement is to attach an automated response to an already detected threat. To do this, in the **Automated Response**<!--Marjan, is this a window, a dialog box? We need to provide a descriptor--> you can select one of the existing Playbooks that defines the automated activity that will run if the threat is detected.
-For example, your analytics rule might be detecting an incident that has already been resolved, and you want to reduce further alerts if similar activity occurs. By attaching a playbook that contains automated activity, you can change the incident status or add comments when a similar incident is detected. <!--Marjan please review edits to this section-->  
+The common modification that you want to achieve is to attach an automated response to an already detected threat. In the **Automated Response** you can select one of the existing Playbooks, that define the automated activity that will run if the threat is detected. 
+For example, your analytic rule has detected an incident that has been resolved, and you want to reduce further alerting if simiral activity occur. By attaching a playbook that contains automated activity, you can for example, change the incident status od add comments.  
 
 ## Disable
 
-You can disable a rule when you are performing an activity that can trigger the rule alert. Disabled rules retain  their configuration, and you can enable them again at a later time.
+You can disable the rule while you are doing some activity that can trigger the rule alert. Disabled rules keep all the configuration, and in certain point of time can be enabled again.
 
 ## Duplicate
 
-When you duplicate a rule, the rule contains all the configuration provided from the original rule. You can further modify the configuration based on your requirements. Do not forget to change the name of the duplicated rule  because by default, the duplicate rule has the same name as the original rule with the string **Copy** appended to it. <!--Marjan, please review edits-->
+When you duplicate the rule, you have startup configuration provided from the original rule, that can be further modify. Do not forget to change the name of the duplicated rule, because **Copy** string is appended with the name of the original rule.
 
 ## Delete
 
-Deleting a rule prompts you for confirmation before Azure Sentinel Analytics removes the rule from the set of active rules. For example, you can delete a rule about a service or a resource that is no longer in use, and eliminates the need for the rule. Be aware that the deletion of a rule is permanent and there is no undo feature. Therefore, as a recommended practice, you should first disable the rule for a period of time until you can be sure that you don't need that rule. <!--Marjan, please review edits-->
+Deleting the rule will prompt for confirmation before is removed from the active rules. For example, you can delete a rule about a service or a resource that is not any more in use, so the rule is no longer needed. Keep in mind that deletion of the rule is permanent, there is no undo feature, so the good practice is that you first Disable the rule on a period of time until you realize that you don&#39;t need that rule.
