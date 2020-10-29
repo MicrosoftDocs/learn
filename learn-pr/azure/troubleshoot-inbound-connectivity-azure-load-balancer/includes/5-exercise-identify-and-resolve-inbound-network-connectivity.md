@@ -4,7 +4,13 @@ In this exercise, you'll use a script to reconfigure the environment and cause h
 
 ## Reconfigure load balancer and retest
 
-1. In Azure Cloud Shell, go to the **src/scripts** folder.
+1. In Azure Cloud Shell, set the resource group name.
+
+    ```bash
+    export RESOURCEGROUP=learn-ts-loadbalancer-rg
+    ```
+  
+1. Go to the **src/scripts** folder.
 
     ```bash
     cd ~/load-balancer/src/scripts
