@@ -19,12 +19,12 @@ Direct method bindings map a direct method with a handler function that implemen
 
 ### Cloud-to-device commands
 
-In **main.c**, the variable named **restartDeviceDirectMethod** of type **DirectMethodBinding** is declared. This variable maps the Azure IoT Central **RestartDevice** command property with a handler function named **RestartDeviceDirectMethodHandler**.
+In **main.c**, the variable named **dm_restartDevice** of type **DirectMethodBinding** is declared. This variable maps the Azure IoT Central **RestartDevice** command property with a handler function named **RestartDeviceHandler**.
 
 ```
-static LP_DIRECT_METHOD_BINDING restartDeviceDirectMethod = {
-    .methodName = "RestartDevice",
-    .handler = RestartDeviceDirectMethodHandler };
+static LP_DIRECT_METHOD_BINDING dm_restartDevice = {
+    .methodName = "RestartDeviceHandler",
+    .handler = RestartDeviceHandler };
 ```
 
 ## Azure IoT Central commands
@@ -45,17 +45,17 @@ Azure IoT Central commands are defined in device templates.
 
    A direct method message named **RestartDevice**, along with the integer payload specifying how many seconds to wait before the restart is sent to the device.
 
-2. The **RestartDeviceDirectMethodHandler** function handler is called.
+2. The **RestartDeviceHandler** function is called.
 
    When the device receives a direct method message, the **DirectMethodBindings** set is checked for a matching **DirectMethodBinding** *methodName* name. When a match is found, the associated **DirectMethodBinding** handler function is called.
 
-3. The current UTC time is reported to Azure IoT using a device twin binding property named **DeviceRestartUTC**.
+3. The current UTC time is reported to Azure IoT using a device twin binding property named **ReportedRestartUTC**.
 
 4. The direct method responds with an HTTP status code and a response message.
 
 5. The device is reset.
 
-6. Azure IoT Central queries and displays the device twin's reported property **DeviceRestartUTC**.
+6. Azure IoT Central queries and displays the device twin's reported property **ReportedRestartUTC**.
 
 ![The illustration shows how a direct method works.](../media/azure-sphere-method-and-twin.png)
 
@@ -63,7 +63,7 @@ Azure IoT Central commands are defined in device templates.
 /// <summary>
 /// Start Device Power Restart Direct Method 'ResetMethod' integer seconds eg 5
 /// </summary>
-static LP_DIRECT_METHOD_RESPONSE_CODE RestartDeviceDirectMethodHandler(JSON_Value* json, LP_DIRECT_METHOD_BINDING* directMethodBinding, char** responseMsg)
+static LP_DIRECT_METHOD_RESPONSE_CODE RestartDeviceHandler(JSON_Value* json, LP_DIRECT_METHOD_BINDING* directMethodBinding, char** responseMsg)
 {
     const size_t responseLen = 60; // Allocate and initialize a response message buffer. The calling function is responsible for the freeing memory
     static struct timespec period;
@@ -75,11 +75,11 @@ static LP_DIRECT_METHOD_RESPONSE_CODE RestartDeviceDirectMethodHandler(JSON_Valu
 
     int seconds = (int)json_value_get_number(json);
 
-    // leave enough time for the device twin deviceRestartUtc to update before restarting the device
+    // leave enough time for the device twin dt_reportedRestartUtc to update before restarting the device
     if (seconds > 2 && seconds < 10)
     {
         // Report Device Restart UTC
-        lp_deviceTwinReportState(&deviceRestartUtc, lp_getCurrentUtc(msgBuffer, sizeof(msgBuffer))); // LP_TYPE_STRING
+        lp_deviceTwinReportState(&dt_reportedRestartUtc, lp_getCurrentUtc(msgBuffer, sizeof(msgBuffer))); // LP_TYPE_STRING
 
         // Create Direct Method Response
         snprintf(*responseMsg, responseLen, "%s called. Restart in %d seconds", directMethodBinding->methodName, seconds);
@@ -100,7 +100,7 @@ static LP_DIRECT_METHOD_RESPONSE_CODE RestartDeviceDirectMethodHandler(JSON_Valu
 
 ## Azure Sphere PowerControls Capability
 
-The **RestartDeviceDirectMethodHandler** sets up a one shot timer that invokes the **RestartDeviceHandler** function after the specified restart period measured in seconds. In the RestartDeviceHandler function a call is made to the **PowerManagement_ForceSystemReboot** API. The PowerManagement_ForceSystemReboot API requires the **PowerControls** capability to be declared  in the app_manifest.json file.
+The **RestartDeviceHandler** function sets up a one shot timer that invokes the **DelayRestartDeviceTimerHandler** function after the specified restart period measured in seconds. In the DelayRestartDeviceTimerHandler function a call is made to the **PowerManagement_ForceSystemReboot** API. The PowerManagement_ForceSystemReboot API requires the **PowerControls** capability to be declared  in the app_manifest.json file.
 
 ```
 "PowerControls": [
@@ -113,7 +113,7 @@ The **RestartDeviceDirectMethodHandler** sets up a one shot timer that invokes t
 Direct method bindings must be added to **directMethodBindingSet**. When a direct method message is received from Azure, this set is checked for a matching *methodName* name. When a match is found, the corresponding handler function is called.
 
 ```
-LP_DIRECT_METHOD_BINDING* directMethodBindingSet[] = { &restartDeviceDirectMethod };
+LP_DIRECT_METHOD_BINDING* directMethodBindingSet[] = { &dm_restartDevice };
 ```
 
 ### Opening
