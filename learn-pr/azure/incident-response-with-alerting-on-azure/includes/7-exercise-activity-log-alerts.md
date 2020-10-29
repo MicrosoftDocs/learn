@@ -58,7 +58,7 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
 
     ![Screenshot that shows adding an action group and an email alert](../media/7-email-setup.png)
 
-1. On the **Create action group** page, select **Review + create.**
+1. On the **Create action group** page, select **Review + create**.
 
 1. Now that you've defined the rule, select **Create**.
 
