@@ -45,7 +45,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     * **Coupon number** text box
     * **APPLY** button
 
-    :::image type="content" source="../../microservices-logging-aspnet-core/media/4-implement-app-insights/discount-coupon-elements.png" alt-text="Discount coupon elements":::
+    :::image type="content" source="../../microservices-configuration-aspnet-core/media/4-implement-feature-manager/discount-coupon-elements.png" alt-text="Discount coupon elements":::
 
 You've successfully verified that the app was deployed to AKS. Additionally, you've seen that the discount coupon feature is enabled.
 
