@@ -85,7 +85,7 @@ In this task, you configure the server and run a SQL query.
 
     ![Screenshot of the SQL Server firewall settings page, with the new IP rule highlighted.](../media/sql-server-firewall-settings.png)
 
-1. Return to your SQL database and the Query Editor sign-in page. Try to sign in again as **sqluser**, with the password **Pa$$w0rd1234**. This time you should succeed. It might take a couple of minutes for the new firewall rule to be deployed. If you wait and still get an error, please try: Clicking back into firewall settings > 
+1. Return to your SQL database and the Query Editor sign-in page. Try to sign in again as **sqluser**, with the password **Pa$$w0rd1234**. This time you should succeed. It might take a couple of minutes for the new firewall rule to be deployed. If you wait and still get an error, try selecting **Firewall settings >** again. 
 
 
 1. After you sign in successfully, the query pane appears. Enter the following query into the editor pane.
