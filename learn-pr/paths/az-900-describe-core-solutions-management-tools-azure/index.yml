@@ -30,8 +30,8 @@ summary: |
     - [Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/)
     - [Azure Fundamentals part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/)
 prerequisites: |
-  - You should be familiar with basic computing concepts and terminology
-  - Familiarity with cloud computing is helpful, but isn't necessary
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /learn/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg
 levels:
 - beginner
