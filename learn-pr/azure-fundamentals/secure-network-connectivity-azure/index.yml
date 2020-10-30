@@ -18,7 +18,7 @@ abstract: |
   * Explain how Azure DDoS Protection helps protect your Azure resources from DDoS attacks.
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
-  - Familiarity with cloud computing is helpful but isn't necessary.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /learn/achievements/secure-network-connectivity.svg
 levels:
 - beginner
