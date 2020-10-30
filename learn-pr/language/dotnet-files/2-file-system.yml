@@ -17,12 +17,12 @@ quiz:
   questions: 
     - content: "Which of the following tasks can you do with Directory.EnumerateFiles?"
       choices:
-        - content: "List the files of a directory and subdirectories"
+        - content: "List the files of a directory and subdirectories."
           isCorrect: true
           explanation: "You can use Directory.EnumerateFiles to recursively enumerate all files in a directory and subdirectories that match a certain pattern."
-        - content: "List the subdirectories of a directory"
+        - content: "List the subdirectories of a directory."
           isCorrect: false
           explanation: "EnumerateFiles is used for enumerating files, not directories."
-        - content: "Write files to a directory"
+        - content: "Write files to a directory."
           isCorrect: false
           explanation: "EnumerateFiles is used for listing the contents of a directory, not writing files."
