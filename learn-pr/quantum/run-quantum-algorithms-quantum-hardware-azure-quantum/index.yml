@@ -17,7 +17,7 @@ abstract: |
   - Discover how Azure Quantum provides you with access to quantum devices to run quantum algorithms.
   - Learn how to adapt/create a Q# application to run it in Azure Quantum.  
   - Learn how to submit and manage jobs in Azure Quantum in your preferred environment: Python, Jupyter or the Azure CLI.
-prerequisites: [Module **How to create an Azure Quantum workspace**](TODO) 
+prerequisites: Module How to create an Azure Quantum workspace
 iconUrl: /learn/achievements/quantum/run-quantum-algorithms-hardware.svg
 ratingEnabled: true
 levels:
