@@ -1,6 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.az-900-describe-core-solutions-management-tools-azure
 metadata:
+  title: "Azure Fundamentals part 3: Describe core solutions and management tools on Azure"
   description: "Learn how to choose the best services from Azure to build and manage cloud solutions."
   brand: azure
   ms.date: 09/14/2020
