@@ -26,6 +26,9 @@ az group delete --name <your resource group name; for example: helloworld-155840
 
 This command may take a minute to run.
 
+> [!IMPORTANT]
+> It's important that you de-provision the Azure resources used in this module to avoid accruing unwanted charges.
+
 ### Additional resources
 
 For more information about Spring Data JDBC, see Spring's [reference documentation](https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/#reference).
