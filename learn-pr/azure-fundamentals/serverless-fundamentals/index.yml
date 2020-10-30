@@ -14,8 +14,7 @@ abstract: |
   After you complete this module, you'll be able to:
   - Choose the serverless computing technology that best addresses your business scenario.  
 prerequisites: |
-  - An understanding of the concept of orchestration and workflows
-  - An understanding of the concept of application programming interface (API)
+  - An understanding of the concepts of orchestration, workflows, and application programming interfaces (API)
   - High-level familiarity with relevant Microsoft products such as Dynamics 365 and Office 365
 ratingEnabled: true
 iconUrl: /learn/achievements/generic-badge.svg
