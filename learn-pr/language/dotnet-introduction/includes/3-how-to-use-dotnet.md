@@ -1,4 +1,4 @@
-In this unit, we'll center our focus on the more technical aspects of building an application using .NET languages, tools, and frameworks to outline the general workflow of software developers who are building .NET applications.
+In this unit, we'll center our focus on the more *technical* aspects of building an application using .NET languages, tools, and frameworks to outline the general workflow that software developers use to build .NET applications.
 
 ## How developers use .NET to build applications
 
@@ -6,7 +6,7 @@ In this section, we'll describe the workflow of application development in .NET,
 
 ### Setting up your development environment
 
-The first decision developers make is selecting the tools they'll use to create their applications, or in other words, their development environment.  The decision is based purely on whether they prefer a more visual workflow featuring a graphical user interface or a command-line interface where they'll rely almost exclusively on keyboard commands to navigate the development environment and issue commands.
+The first decision developers make is selecting the tools they'll use to create their applications, or in other words, their *development environment*.  The decision is usually based on whether they prefer a more visual workflow featuring a graphical user interface or a command-line interface where they'll rely almost exclusively on keyboard commands to navigate the development environment and issue commands.
 
 > [!NOTE]
 > We'll provide links at the end of this module to get started with setting up your development environment using either Visual Studio 2019 or Visual Studio Code and the .NET SDK.
