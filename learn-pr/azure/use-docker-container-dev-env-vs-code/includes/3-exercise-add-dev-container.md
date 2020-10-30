@@ -2,25 +2,25 @@ When setting up the dev container for a project, you'll need to add a container 
 
 ## Clone the sample repo
 
-1.  Ensure Docker Desktop is running on your machine
-1.  Copy the URL for the sample repo to your clipboard
+1.  Ensure Docker Desktop is running on your machine.
+1.  Copy the URL for the sample repo to your clipboard.
 
         https://github.com/burkeholland/python-products.git
 
-1.  Open a new instance of Visual Studio Code
-1.  Press <kbd>F1</kbd> to open the Command Palette
-1.  Type "clone"
-1.  Select "Git: Clone"
-1.  Paste in the URL to the sample repo
-1.  Select a location on your disk where the project can be cloned to
+1.  Open a new instance of Visual Studio Code.
+1.  Press <kbd>F1</kbd> to open the Command Palette.
+1.  Type "clone."
+1.  Select "Git: Clone."
+1.  Paste in the URL to the sample repo.
+1.  Select a location on your disk where the project can be cloned to.
 
 The project should now be open in VS Code. Next, you'll add a dev container to this project. You'll be able to run the project, even if you don't have Python installed.
 
 ## Add a Dev Container
 
-1. Open the Command Palette
-1. Type "add dev container"
-1. Select "Remote-Containers: Add Development Container Configuration Files"
+1. Open the Command Palette.
+1. Type "add dev container."
+1. Select "Remote-Containers: Add Development Container Configuration Files."
 1. Select the following options...
 
 | Option         | Value       |
@@ -34,14 +34,14 @@ A Remote Container configuration will be added to your project. VS Code will not
 
 ## Inspect configuration files
 
-1. Notice that a new folder has been added to the project called ".devcontainer"
-1. Expand that folder and notice that it contains both a `Dockerfile` and a `devcontainer.json` file
+1. Notice that a new folder has been added to the project called ".devcontainer."
+1. Expand that folder and notice that it contains both a `Dockerfile` and a `devcontainer.json` file.
 
 ## Open the project in a container
 
-1. Open the Command Palette
-1. Type "reopen in container"
-1. Select "Reopen in Container" from the list of available options
+1. Open the Command Palette.
+1. Type "reopen in container."
+1. Select "Reopen in Container" from the list of available options.
 
 The container will begin building. The initial build may take a few minutes as a new image has to be pulled down and built on your machine. Once the container has been built the first time, subsequent builds will be much faster.
 
@@ -50,8 +50,8 @@ The container will begin building. The initial build may take a few minutes as a
 
 ## Inspect the container
 
-1.  Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the integrated terminal in VS Code
-1.  Notice that the terminal probably looks different than your normal terminal
+1.  Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the integrated terminal in VS Code.
+1.  Notice that the terminal probably looks different than your normal terminal.
 1.  Run the following command to ensure Python is there...
 
         python --version
@@ -70,7 +70,7 @@ Run the following command in the terminal to install the Flask dependencies need
 
         python app.py
 
-1.  Click "Open in Browser"
+1.  Click "Open in Browser."
 
     This should open a browser pointed to "localhost:5000" and you will see the Products Dashboard.
 

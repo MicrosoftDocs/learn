@@ -4,14 +4,14 @@ No need to worry - in this exercise, we'll take a look at how you can install a 
 
 ## Open the Dockerfile
 
-1. Press <kbd>F1</kbd> to open the Command Palette
-1. Type "explorer" and select "View: Show Explorer"
-1. Open your ".devcontainer" folder
-1. Locate and open the Dockerfile
+1. Press <kbd>F1</kbd> to open the Command Palette.
+1. Type "explorer" and select "View: Show Explorer."
+1. Open your ".devcontainer" folder.
+1. Locate and open the Dockerfile.
 
 ## Add code to Dockerfile
 
-1. Add the following to install Node.js
+1. Add the following to install Node.js.
 
         RUN apt-get update \
             && apt-get install curl \
@@ -20,17 +20,17 @@ No need to worry - in this exercise, we'll take a look at how you can install a 
             && node -v \
             && npm -v \
 
-1. Save your project
+1. Save your project.
 
 ## Rebuild container
 
-1. Open the Command Palette
-1. Type "rebuild" and select "Remote-Containers: Rebuild Container"
+1. Open the Command Palette.
+1. Type "rebuild" and select "Remote-Containers: Rebuild Container."
 
 ## Check Node version
 
-1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the integrated terminal in VS Code
-1. Type the following to check your version of Node
+1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the integrated terminal in VS Code.
+1. Type the following to check your version of Node.
 
         node --version
 

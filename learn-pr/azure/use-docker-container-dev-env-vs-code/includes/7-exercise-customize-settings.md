@@ -4,19 +4,19 @@ So far, you've configured a dev container for a Python project. However, there a
 
 Before you make tweaks to the container configuration, you need to reopen the project locally.
 
-1. Press <kbd>F1</kbd> to open the Command Palette
-1. Type "locally" and select "Remote-Containers: Reopen Locally"
-1. Open the `devcontainer.json` file in the ".devcontainer" folder if it is not open already
+1. Press <kbd>F1</kbd> to open the Command Palette.
+1. Type "locally" and select "Remote-Containers: Reopen Locally."
+1. Open the `devcontainer.json` file in the ".devcontainer" folder if it is not open already.
 
 ## Install VS Code extensions
 
 The container comes with the Microsoft Python extension. They Python extension enables snippets, linting, and intellisense in Python files. But the "index.html" file in the "templates" folder is a Jinja template, and a different extension needs to be installed to get syntax highlighting in that file.
 
-1.  Open the Command Palette
-1.  Type "extension" and select "Extensions: Install Extensions"
-1.  In the extension explorer on the right, search for "jinja"
-1.  Right-click the "Jinja" extension from "wholroyd" and select "Add to devcontainer.json"
-1.  Notice that the extension ID has been added to the "extensions" option
+1.  Open the Command Palette.
+1.  Type "extension" and select "Extensions: Install Extensions."
+1.  In the extension explorer on the right, search for "jinja."
+1.  Right-click the "Jinja" extension from "wholroyd" and select "Add to devcontainer.json."
+1.  Notice that the extension ID has been added to the "extensions" option.
 
         // Add the IDs of extensions you want installed when the container is created.
         "extensions": [
@@ -28,8 +28,8 @@ The container comes with the Microsoft Python extension. They Python extension e
 
 VS Code automatically detects and forwards port 5000. It's a good practice to make the port forwarding an explicit part of the project configuration. Doing so will ensure that the port gets forwarded instead of relying on the editor.
 
-1.  Open the `devcontainer.json` file in the ".devcontainer" folder
-1.  Uncomment out the "forwardPorts" option, and add 5000 to the array
+1.  Open the `devcontainer.json` file in the ".devcontainer" folder.
+1.  Uncomment out the "forwardPorts" option, and add 5000 to the array.
 
         // Use 'forwardPorts' to make a list of ports inside the container available locally
         "forwardPorts": [5000],
@@ -38,32 +38,32 @@ VS Code automatically detects and forwards port 5000. It's a good practice to ma
 
 Right now, a developer setting up the project for the first time has to know to run "pip3 install --user -r requirements.txt" to install dependencies. Without these dependencies, the project won't run, and other developers might not know why.
 
-1.  Uncomment out the "postCreateCommand" option
+1.  Uncomment out the "postCreateCommand" option.
 
         "postCreateCommand": "pip3 install --user -r requirements.txt"
 
 ## Rebuild the new container
 
-1. Open the Command Palette
-1. Type "rebuild" and select "Remote-Containers: Rebuild and Reopen in Container"
+1. Open the Command Palette.
+1. Type "rebuild" and select "Remote-Containers: Rebuild and Reopen in Container."
 
 The container will be rebuilt with the changes you've specified in the "devcontainer.json" file.
 
 ## Examine the forwarded port
 
-1. Open the Command Palette
-1. Type "remote explorer" and select "View: Show Remote Explorer"
-1. Notice that port 5000 is already forwarded, even though you haven't started the app yet
+1. Open the Command Palette.
+1. Type "remote explorer" and select "View: Show Remote Explorer."
+1. Notice that port 5000 is already forwarded, even though you haven't started the app yet.
 
 ## Examine syntax highlighting provided by Jinja extension
 
-1. Open the "template/index.html" file
-1. Scroll down to line 33 and notice that there's syntax highlighting on the "for" loop
+1. Open the "template/index.html" file.
+1. Scroll down to line 33 and notice that there's syntax highlighting on the "for" loop.
    :::image type="content" source="../media/for-loop.jpg" alt-text="Screenshot of Jinja template, emphasizing a for loop with syntax highlighting.":::
 
 ## Run the app
 
-1.  Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the VS Code Terminal
+1.  Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the VS Code integrated terminal.
 1.  Run the app with the following command...
 
         python app.py
