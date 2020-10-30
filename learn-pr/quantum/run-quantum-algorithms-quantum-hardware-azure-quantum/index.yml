@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.quantum.run-quantum-algorithms-hardware
+metadata:
+  title: Run quantum algorithms on quantum hardware by using Azure Quantum
+  description: Get started with quantum computing on Azure Quantum and learn how create and run Q# quantum programs on quantum computers on the cloud. 
+  ms.date: 01/01/2021
+  author: geduardo
+  ms.author: v-edsanc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Run quantum algorithms on quantum hardware by using Azure Quantum
+summary: Get started with quantum computing on Azure Quantum and learn how create and run Q# quantum programs on quantum computers on the cloud.
+abstract: |
+  In this module, you'll:
+
+  - Learn about quantum hardware.
+  - Discover how Azure Quantum provides you with access to quantum devices to run quantum algorithms.
+  - Learn how to adapt/create a Q# application to run it in Azure Quantum.  
+  - Learn how to submit and manage jobs in Azure Quantum in your preferred environment: Python, Jupyter or the Azure CLI.
+prerequisites: [Module **How to create an Azure Quantum workspace**](TODO) 
+iconUrl: /learn/achievements/quantum/run-quantum-algorithms-hardware.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure-quantum
+units:
+- learn.quantum.run-quantum-algorithms-hardware.1-introduction
+- learn.quantum.run-quantum-algorithms-hardware.2-quantum-hardware-overview
+- learn.quantum.run-quantum-algorithms-hardware.3-submit-job-azure-quantum
+- learn.quantum.run-quantum-algorithms-hardware.4-different-targets-azure-quantum
+- learn.quantum.run-quantum-algorithms-hardware.5-use-qdk-create-qsharp-applications
+- learn.quantum.run-quantum-algorithms-hardware.6-continue-experimenting
+- learn.quantum.run-quantum-algorithms-hardware.7-knowledge-check
+- learn.quantum.run-quantum-algorithms-hardware.8-summary
+badge:
+  uid: learn.quantum.run-quantum-algorithms-hardware.badge
