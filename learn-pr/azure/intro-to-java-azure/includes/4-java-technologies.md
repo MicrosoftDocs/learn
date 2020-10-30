@@ -4,7 +4,7 @@ You can distinguish your type of application specification wise. The most famous
 
 ## Jakarta EE, the Java for Enterprises
 
-Formerly known as Oracle's Java Enterprise Edition (Java EE), is Jakarta EE open source and aimed to be cloud native for java development. It's a set of specifications to enable java developers world wide to work together on java enterprise applications. Jakarta EE was donated to the Eclipse Foundation. Jakarta EE applications can be packaged as archives with the .ear extension (EAR files) or as archives with the .war extension (WAR files).
+Formerly known as Oracle's Java Enterprise Edition (Java EE), is Jakarta EE open source and aims to be cloud native for java development. It's a set of specifications to enable java developers world wide to work together on java enterprise applications. The modularized structure enables developers to create straight forward and efficient software solutions. Jakarta EE was donated to the Eclipse Foundation. Jakarta EE applications can be packaged as archives with the .ear extension (EAR files) or as archives with the .war extension (WAR files).
 
 - **WebProfile** is a properly defined subset of Jakarta EE for backend services with Web focus. But no worries! You can add specific APIs of the Enterprise platform on top of it.
 
@@ -16,7 +16,7 @@ The Spring Framework is an application framework and inversion of control contai
 The Spring Framework brings the core functionality and supports:
 
 - Dependency Injection
-- Aspect oriented programming
+- Aspect-oriented programming
 - Business abstraction
 
 - i18n
@@ -35,7 +35,7 @@ Spring Data simplifies the data access, no matter which technologies: relational
 
 ### Spring Security
 
-It integrates well with Active Directory.
+Spring Security is de-facto standard for securing Spring-based applications. It offers highly authentication and access-control, for instance Spring Security integrates well with Active Directory.
 
 ### Spring Cloud
 
@@ -58,16 +58,17 @@ Java EE applications must be deployed onto Java EE-compliant application servers
 
 - **Red Hat JBoss Enterprise Application Platform** delivers enterprise-grade security, performance, and scalability in any environment. Whether on-premise; virtual; or in private, public, or hybrid clouds, JBoss EAP can help you deliver apps faster, everywhere.
 
-- **WildFly** is the open source upstream for JBoss EAP.
+- **WildFly** is the open source upstream for JBoss EAP. The community driven flavor is great for development and testing.
 
-- **WebSphere Liberty Profile**
+- **IBM WebSphere Application Server** (WAS) is a flexible, security-rich Java server runtime environment for enterprise applications. It focuses on high reliability. WAS supports microservices and standards-based programming models. You can modernize at your own pace, gain greater visibility across workloads, analyze enterprise applications, and advance your journey to Kubernetes.
+
+- **Open Liberty**, following Java-/Jakarta-EE and Microprofile standard, it is the community driven, open-source version of the WAS.
 
 ## Other Frameworks for Microservice-oriented Architectures
 
 - **Netty** is a NIO client-server framework, which enables quick and easy development of network applications such as protocol servers and clients. It greatly simplifies and streamlines network programming such as TCP and UDP socket server. Netty is an asynchronous event-driven network application framework for rapid development of maintainable high-performance protocol servers & clients.
 
-- **Quarkus** 
-
+- **Quarkus** is a Kubernetes Native Java stack tailored for OpenJDK HotSpot and GraalVM. It aims to be crafted from the best of breed Java libraries and standards. Quarkus is getting more and more momentum.
 - **Vert.x** is an event driven and nonblocking tool-kit. You can use Vert.x with multiple languages including Java, Kotlin, JavaScript, Groovy, Ruby, and Scala. It aims to be the most lightweight, fastest framework. It's simple but not simplistic. Eclipse Vert.x is open source and dual-licensed under the Eclipse Public License 2.0 and Apache License 2.0.
 
 - **Micronaut** is a modern, JVM-based, full-stack framework for building modular, easily testable microservice, and serverless applications. Micronaut features a dependency injection and aspect-oriented programming runtime that uses no reflection. That makes it easier for Micronaut applications to run on GraalVM.

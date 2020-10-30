@@ -6,13 +6,13 @@ Azure offers different deployment solutions for Java applications. We'll just lo
 
 Just like in your own data center, Virtual Machines (VMs) are available on Azure. You can choose between different flavors on Windows also on Linux, such as Ubuntu, Red Hat, or Suse.
 VMs are usually the starting point for the Lift and Shift approach.
-Just like in your data center you have all the freedom. Attention! With great power comes great responsibility. Master OS updates, Java runtime, Network settings, as well as port forwarding and Security is on your side, if you chose this infrastructure as a service (IAAS) solution.
+Just like in your data center you have all the freedom. Attention! With great power comes great responsibility. You'll have to take care on OS updates, Java runtime, Network settings, as well as port forwarding and Security, if you chose this infrastructure as a service (IAAS) solution.
 
 ## Container
 
 When you realize, that the OS didn't bring any business impact to our application we can abstract from it and use Containers instead.
 
-- **Azure Kubernetes Service** AKS is the managed Kubernetes Service. Kubernetes is the de-facto standard to orchestrate your containerized applications. It is perfect for Microservices as well as mid-sized applications. It comes with service discovery, scalability, and monitoring.
+- **Azure Kubernetes Service** AKS is the managed Kubernetes Service. Kubernetes is the de-facto standard to orchestrate your containerized applications. It is perfect for Microservices as well as mid-sized applications. AKS comes with service discovery, scalability, and monitoring. Microsoft is a proud initializer and collaborator in open-source technologies around the Kubernetes ecosystem, such as Virtual Kubelet, Dapr, or OAM.
 
 - **Azure RedHat OpenShift** ARO is the managed by Redhat flavor of Kubernetes.
 
@@ -27,16 +27,10 @@ It comes with Scalability, integrated Monitoring with Azure Monitoring out of th
 ## Azure Spring Cloud
 
 Azure Spring Cloud is Spring Cloud with all its advantages plus all the greatness of Azure with the global scalability and high availability.
-
 Azure Spring Cloud is a fully managed service for Spring Boot apps that lets you focus on building and running the apps that run your business without the hassle of managing infrastructure.
-
-Customers can simply deploy their JARs or code and Azure Spring Cloud will automatically wire their apps with the Spring service runtime.
-
+Customers can deploy their JARs or code and Azure Spring Cloud will automatically wire their apps with the Spring service runtime.
 Once deployed they can easily monitor application performance, fix errors, and rapidly improve applications.
-
-It is integrated into Azure eco-system and it is enterprise ready
-
-In the first week of Sep, Microsoft and VMware announced the general availability of the service
+It is integrated into Azure eco-system and it is ready to tackle enterprise workloads and needs. Microsoft and VMware provide the general availability of Azure Spring Cloud.
 
 ## Functions
 
