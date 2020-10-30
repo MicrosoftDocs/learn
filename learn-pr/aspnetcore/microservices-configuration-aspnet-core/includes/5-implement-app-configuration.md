@@ -76,17 +76,31 @@ Apply the following changes to your ASP.NET Core project:
         if (settings.GetValue<bool>("UseFeatureManagement") &&
             !string.IsNullOrEmpty(settings["AppConfig:Endpoint"]))
         {
-            configBuilder.AddAzureAppConfiguration(configOptions =>
+            config.AddAzureAppConfiguration(options =>
             {
-                configOptions.Connect(settings["AppConfig:Endpoint"])
+                var cacheTime = TimeSpan.FromSeconds(5);
+
+                options.Connect(settings["AppConfig:Endpoint"])
                     .UseFeatureFlags(flagOptions =>
-                        flagOptions.CacheExpirationInterval = TimeSpan.FromSeconds(10));
+                    {
+                        flagOptions.CacheExpirationInterval = cacheTime;
+                    })
+                    .ConfigureRefresh(refreshOptions =>
+                    {
+                        refreshOptions.Register("FeatureManagement:Coupons", refreshAll: true)
+                                      .SetCacheExpiration(cacheTime);
+                    });
             });
         }
     })
     ```
 
-    The `ConfigureRefresh` method specifies the settings to update the configuration data with the App Configuration store. These settings are used when a refresh operation is triggered.
+    In the preceding code snippet:
+
+    * The `ConfigureAppConfiguration` method is called to register the configuration provider for App Configuration.
+    * The `Connect` method provides a connection string to the App Configuration store. Recall that the connection string is stored in *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* as an environment variable with the key `AppConfig__Endpoint`. The environment variables configuration provider replaces the double underscore (`__`) with a colon (`:`).
+    * The `UseFeatureFlags` method defines a cache expiration policy of five seconds for the feature flags. The default value is 30 seconds. Once five seconds have elapsed, the cache is refreshed with updated feature flag values.
+    * The `ConfigureRefresh` method defines a cache expiration policy of five seconds for the `FeatureManagement:Coupons` key in the App Configuration store. The default value is 30 seconds. Once five seconds have elapsed, the cache is refreshed with an updated value for the `FeatureManagement:Coupons` key.
 
 1. In the `Configure` method of *src/Web/WebSPA/Startup.cs*, replace the comment `// Add the UseAzureAppConfiguration code` with the following code:
 
@@ -99,9 +113,15 @@ Apply the following changes to your ASP.NET Core project:
 
     The preceding code adds the App Configuration middleware to the request pipeline. The middleware triggers a refresh operation for the Feature Management parameters for every incoming request. Then it's up to the `AzureAppConfiguration` provider to decide, based on the refresh settings configured in the previous step, when to actually connect to the store to get the values.
 
+1. In the `ConfigureServices` method of *src/Web/WebSPA/Startup.cs*, add a call to `AddAzureAppConfiguration` beneath the call to `AddFeatureManagement`.
+
+    Your code will resemble the following snippet:
+
+    :::code language="csharp" source="../code/src/web/webspa/startup.cs" id="snippet_ConfigureServices" highlight="7":::
+
 ## Redeploy the app
 
-You must redeploy the SPA before you can confirm that it works as intended.
+Redeploy the SPA to confirm that it works as intended.
 
 1. Just as you did before, begin by building the `webspa` service with the following script:
 
@@ -122,9 +142,9 @@ To verify the feature flag works as expected, start a purchase as follows:
 1. In the app, refresh the page. The WebSPA reloads.
 1. Select the shopping bag icon in the upper right.
 1. Select the **:::no-loc text="CHECKOUT":::** button.
-1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is present. This is expected because the coupons feature is enabled in the Azure portal.
+1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is present because the coupons feature is enabled in the Azure portal.
 1. In the Azure portal, clear the Coupons feature's **Enabled** check box.
 1. In the app, refresh the page. The WebSPA reloads.
 1. Select the shopping bag icon in the upper right.
 1. Select the **:::no-loc text="CHECKOUT":::** button.
-1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is not present.
+1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field isn't present.
