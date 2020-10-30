@@ -56,7 +56,7 @@ Let's first talk about version ranges. This is special notation that's used for 
 |[1.0,2.0) | 1.0 ≤ x < 2.0| Mixed inclusive minimum and exclusive maximum version |
 |(1.0)     | invalid      | invalid        |
 
-NuGet also supports using a floating version notation for major, minor, patch, and pre-release suffix parts of the number. This notation is an asterisk (\*). For example, the version specification 6.0.\* says "use the latest 6.0.x version". In another example, 4.\* means "use the latest 4.x version." Using a floating version reduces changes to the project file, while keeping up to date with the latest version of a dependency.
+NuGet also supports using a floating version notation for major, minor, patch, and pre-release suffix parts of the number. This notation is an asterisk (\*). For example, the version specification 6.0.\* says "use the latest 6.0.x version." In another example, 4.\* means "use the latest 4.x version." Using a floating version reduces changes to the project file, while keeping up to date with the latest version of a dependency.
 
 > [!NOTE]
 > We recommend installing a specific version instead of using any of the floating notations. Installing a specific version ensures that your builds are repeatedable unless you explicitly request an update to a dependency.
@@ -108,4 +108,4 @@ Here are the meanings of the names of the columns in the output:
 The recommended workflow is to run these commands, in this order:
 
 1. Run `dotnet list package`. This command lists all the outdated packages. It provides information in the `Requested`, `Resolved`, and `Latest` columns.
-1. Run `dotnet add package <package name>`. If you run this command, it will try to update to the latest version. Optionally, you can pass it `--version=<version number/range>`.
+1. Run `dotnet add package <package name>`. If you run this command, it will try to update to the latest version. Optionally, you can pass in `--version=<version number/range>`.
