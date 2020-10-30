@@ -32,7 +32,7 @@ units:
 - learn.quantum.run-quantum-algorithms-hardware.3-submit-job-azure-quantum
 - learn.quantum.run-quantum-algorithms-hardware.4-different-targets-azure-quantum
 - learn.quantum.run-quantum-algorithms-hardware.5-use-qdk-create-qsharp-applications
-- learn.quantum.run-quantum-algorithms-hardware.6-continue-experimenting
+- learn.quantum.run-quantum-algorithms-hardware.6-continue-experimenting-azure-quantum
 - learn.quantum.run-quantum-algorithms-hardware.7-knowledge-check
 - learn.quantum.run-quantum-algorithms-hardware.8-summary
 badge:
