@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.collect-manipulate-data-python-nasa.7-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 07/24/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-summary.md)]

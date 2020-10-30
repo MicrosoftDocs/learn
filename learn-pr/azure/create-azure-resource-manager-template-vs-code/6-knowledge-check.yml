@@ -26,7 +26,7 @@ quiz:
     - content: "A script held in Azure Resource Manager to manage your Azure storage account."
       isCorrect: false
       explanation: "An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for your deployment. ARM templates allow you to declare what you intend to deploy without having to write the sequence of programming commands to create it."
-  - content: "Which one of these is NOT an element of an Azure Resource Manager template?"
+  - content: "Which one of these is *not* an element of an Azure Resource Manager template?"
     choices:
     - content: "idempotent"
       isCorrect: true
@@ -42,7 +42,7 @@ quiz:
     - content: "Azure Resource Manager will deploy new resources as copies of the previously deployed resources."
       isCorrect: false
       explanation: "If the resource already exists and no change is detected in the properties, no action is taken. If the resource already exists and a property has changed, the resource is updated. If the resource doesn't exist, it's created."
-    - content: "Azure Resource Manager will not make any changes to the deployed resources."
+    - content: "Azure Resource Manager won't make any changes to the deployed resources."
       isCorrect: true
       explanation: "If the resource already exists and no change is detected in the properties, no action is taken. If the resource already exists and a property has changed, the resource is updated. If the resource doesn't exist, it's created."
     - content: "Azure Resource Manager will delete the previously deployed resources and redeploy them."

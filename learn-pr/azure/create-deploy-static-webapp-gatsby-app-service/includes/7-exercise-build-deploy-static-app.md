@@ -12,11 +12,11 @@ Run the following command from your project directory:
 gatsby build
 ```
 
-This command will create a *production build*. All your files will end up in a sub directory `build/`.
+This command will create a *production build*. All your files will end up in a sub directory `public/`.
 
-Once the process finishes building, you can go to your `build/` directory and open up the files in a browser. You can explore your build as it would be hosted in the web with `http-server`, a command-line tool that serves up local files over HTTP so you can see them in a browser.  
+Once the process finishes building, you can go to your `public/` directory and open up the files in a browser. You can explore your build as it would be hosted in the web with `http-server`, a command-line tool that serves up local files over HTTP so you can see them in a browser.  
 
-Now you'll serve up the whole application from a local web server. `cd` your terminal to the `build/` directory and type the following command:
+Now you'll serve up the whole application from a local web server. `cd` your terminal to the `public/` directory and type the following command:
 
 ```bash
 npx http-server -p 5000
@@ -30,7 +30,7 @@ You should now see the following content rendered:
 
 You've built your site and taken it from being a Gatsby app to a set of static pages containing nothing but HTML, CSS, and JavaScript!
 
-Going into your `build/` directory now locate your rendered `about` component at `build/about/index.html`. Because of an optimization process, all whitespace have been removed and the page is represented as one long line. However you should be able to locate the rendered title and description and it should look like this:
+Going into your `public/` directory now locate your rendered `about` component at `public/about/index.html`. Because of an optimization process, all whitespace have been removed and the page is represented as one long line. However you should be able to locate the rendered title and description and it should look like this:
 
 ```html
 // excerpt from about/index.html
@@ -57,10 +57,10 @@ Next, create a file called `.gitignore` in the root of your project and give it 
 
 ```bash
 node_modules
-build
+public
 ```
 
-The above configuration will prevent the `build/` and `node_modules` directories from being added to our repository. The `build/` directory changes every time we build, and the `node_modules/` directory is only needed at build time and can be large from all the libraries it contains.
+The above configuration will prevent the `public/` and `node_modules` directories from being added to our repository. The `public/` directory changes every time we build, and the `node_modules/` directory is only needed at build time and can be large from all the libraries it contains.
 
 Finally, add the code to the repository index and commit it.
 

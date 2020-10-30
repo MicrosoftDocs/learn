@@ -1,26 +1,26 @@
 ### YamlMime:Module
 uid: learn.azure.create-resource-manager-template-vs-code
 metadata:
-  description: Write Azure Resource Manager templates using Visual Studio Code to deploy your infrastructure to Azure consistently and reliably.
+  description: Write Azure Resource Manager templates by using Visual Studio Code to deploy your infrastructure to Azure consistently and reliably.
   ms.date: 07/08/2020
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Deploy consistent infrastructure in Azure by using Azure Resource Manager (ARM) templates"
-summary: Write Azure Resource Manager templates using Visual Studio Code to deploy your infrastructure to Azure consistently and reliably.
+title: Deploy Azure infrastructure by using ARM templates
+summary: Write Azure Resource Manager templates by using Visual Studio Code to deploy your infrastructure to Azure consistently and reliably.
 abstract: |
   In this module, you will:
-  - Implement an Azure Resource Manager template by using Visual Studio Code
-  - Declare resources and add flexibility to your template by adding resources, parameters, and outputs
+  - Implement an Azure Resource Manager template by using Visual Studio Code. 
+  - Declare resources and add flexibility to your template by adding resources, parameters, and outputs.
 prerequisites: |
-  - Familiar with Azure including the Azure portal, subscriptions, resource groups, and resource definitions
+  - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
   - An Azure account. You can get a free account [here](https://azure.microsoft.com/free?azure-portal=true).
-  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally
-  - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
+  - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.
   - Either:
-    - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed locally
-    - The latest [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) installed locally
+    - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed locally.
+    - The latest [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) installed locally.
 iconUrl: /learn/achievements/create-azure-resource-manager-template-vs-code.svg
 ratingEnabled: true
 levels:

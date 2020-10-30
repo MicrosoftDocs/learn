@@ -11,20 +11,20 @@ In this exercise, you'll see how to deploy SQL Server on SUSE, install command-l
     ```azurecli
     export PASSWORD=$(openssl rand -base64 32)
     az vm create \
-        --name SUSESQLServer \
-        --image "SUSE:SLES:15:latest" \
+        --name SLESSQLServer \
+        --image "SUSE:sles-12-sp5:gen1:latest" \
         --size Standard_D2s_v3 \
         --admin-username suseadmin \
         --admin-password $PASSWORD \
         --nsg-rule SSH \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
+        --resource-group  <rgn>[sandbox resource group name]</rgn>
     ```
 
 1. Store the public IP address of your server, and display the password.
 
     ```bash
     export IPADDRESS=$(az vm show -d \
-        --name SUSESQLServer \
+        --name SLESSQLServer \
         --query publicIps --output tsv \
         --resource-group <rgn>[sandbox resource group name]</rgn>)
     echo $PASSWORD

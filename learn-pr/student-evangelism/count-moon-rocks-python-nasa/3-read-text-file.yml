@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.count-moon-rocks-python-nasa.3-read-text-file
+metadata:
+  title: Exercise - Read in Moon rock data from a text file for exploration
+  description: Read the text from rocks.txt.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Read in Moon rock data from a text file for exploration
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-read-text-file.md)]

@@ -11,12 +11,12 @@ Let's use the Azure CLI to create a SQL Database server and a database.
 1. Run the following commands in Azure Cloud Shell to set up some variables for creation of the SQL Database server. 
 
     ```powershell
-    $serverName = "ERPServer-$(Get-Random)"
+    $serverName = "erpserver-$(Get-Random)"
     $location = $(Get-AzResourceGroup -ResourceGroupName <rgn>[sandbox resource group name]</rgn>).location
     $sqlAdmin = Get-Credential -credential dbadmin
 
     ```
-   This step creates a server name with a random number at the end to ensure that it's globally unique. We'll refer to the server name as `ERPServer-NNNN` through the exercises, but replace this with the name of your server that's generated here. 
+   This step creates a server name with a random number at the end to ensure that it's globally unique. We'll refer to the server name as `erpserver-NNNN` through the exercises, but replace this with the name of your server that's generated here. 
    
    This step also sets the location for your server to the location of the resource group. Finally, it sets the credentials that you'll use to access the database server. When you're prompted, enter a complex password of your choice. 
 
@@ -44,7 +44,7 @@ Let's use the Azure CLI to create a SQL Database server and a database.
 
 In the portal, you can examine the default retention policy and adapt it to your needs.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **ERPServer-NNNN** database server that you created.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **erpserver-NNNN** database server that you created.
 
 1. On the left in the **Settings** section, select **Manage Backups**.
 

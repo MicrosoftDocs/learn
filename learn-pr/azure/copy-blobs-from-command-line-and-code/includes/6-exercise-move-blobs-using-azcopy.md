@@ -22,15 +22,17 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
 
 1. On the storage account page, under **Settings**, click **Shared access signature**.
 
-1. On the shared access signature page, click **Generate SAS and connection string**.
+1. On the shared access signature page, check **Container** under the **Allowed resource types** section.
 
-1. In the Cloud Shell, create an environment variable for SAS token and assign the value from the portal.
+1. With the allowed resource type checked, click **Generate SAS and connection string** at the bottom of the shared access signature page.
+
+1. In the Cloud Shell, create an environment variable to assign the generated **SAS token** value from the portal.
 
     ```bash
     COOL_SAS_TOKEN="<token from portal>"
     ```
 
-1. Repeat the steps above and assign the hot storage token to **HOT_SAS_TOKEN**.
+1. Repeat the steps above and assign a generated SAS token for the hot storage account to a variable named **HOT_SAS_TOKEN**.
 
     ```bash
     HOT_SAS_TOKEN="<token from portal>"
@@ -95,5 +97,5 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
 1. Copying a blob to *Cool* storage doesn't remove the blob from *Hot* storage. You must delete these blobs manually. As an example, run the following command to delete the "specification01.md" blob from the source (hot) storage account.
 
     ```bash
-    ./azcopy remove https://$HOT_STORAGE_NAME.blob.core.windows.net/specifications/specifications01.md$HOT_SAS_TOKEN
+    ./azcopy remove https://$HOT_STORAGE_NAME.blob.core.windows.net/specifications/specification01.md$HOT_SAS_TOKEN
     ```

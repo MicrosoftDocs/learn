@@ -12,7 +12,7 @@ You use private IP addresses to communicate between resources in Azure. Resource
 - On-premises resources accessed through a virtual private network (VPN) gateway or Azure ExpressRoute circuit.
 
 > [!NOTE]
->  You can learn more about ExpressRoute at [ExpressRoute Overview](https://aka.ms/expressroute-locations?azure-portal=true).
+>  You can learn more about ExpressRoute at [ExpressRoute Overview](https://aka.ms/expressroute-introduction?azure-portal=true).
 
 By default, each network interface receives a single, private IP address from the subnet's range of IP addresses. That IP address becomes part of the network interface's primary IP configuration. Alternatively, you can assign a static IP address to each interface. You can also create multiple secondary configurations with their own IP addresses, up to the limit imposed by the platform.
 

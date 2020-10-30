@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.6-predict-rock-types
+metadata:
+  title: Exercise - Predict the type of space rock in a random photo
+  description: Run code to use the AI model you created to predict types of space rocks in a set of random photos.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Predict the type of space rock in a random photo
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-predict-rock-types.md)]

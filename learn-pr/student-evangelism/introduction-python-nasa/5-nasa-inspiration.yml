@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-python-nasa.5-nasa-inspiration
+metadata:
+  title: Achieve more through the inspiration of space travel
+  description: Get inspired by reading about NASA.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Achieve more through the inspiration of space travel
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-nasa-inspiration.md)]

@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.wwl.plan-deploy-windows-server-iaas-vms
+metadata:
+  title: Plan and deploy Windows Server IaaS Virtual Machines
+  description: "You'll be able to describe Azure compute and storage in relation to Azure VMs, and deploy Azure VMs by using the Azure portal, Azure CLI, or templates."
+  ms.date: 10/21/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan and deploy Windows Server IaaS Virtual Machines
+summary: You'll be able to describe Azure compute and storage in relation to Azure VMs, and deploy Azure VMs by using the Azure portal, Azure CLI, or templates.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe Azure compute.
+  - Describe Azure storage.
+  - Deploy Azure VMs.
+  - Create a VM from the Azure portal.
+  - Create a VM from Azure Cloud Shell.
+  - Deploy Azure VMs by using templates.
+prerequisites: |
+  To get the best learning experience from this module, it's important that you have knowledge and experience of the following:
+  - Managing Windows Server operating system and Windows Server workloads in on-premises scenarios, such as Active Directory Domain Services (AD DS), Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services.
+  - Common Windows Server management tools.
+  - Core Microsoft compute, storage, networking, and virtualization technologies.
+  - On-premises resiliency Windows Server-based compute and storage technologies.
+  - Implementing and managing IaaS services in Microsoft Azure.
+  - Azure Active Directory (Azure AD).
+  - Security-related technologies (firewalls, encryption, multi-factor authentication).
+  - Windows PowerShell scripting.
+  - Automation and monitoring.
+iconUrl: /learn/achievements/plan-and-deploy-windows-server-iaas-vms.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-cloud-shell
+- azure-portal
+- azure-storage
+- azure-virtual-machines
+units:
+- learn.wwl.plan-deploy-windows-server-iaas-vms.introduction
+- learn.wwl.plan-deploy-windows-server-iaas-vms.describe-azure-compute
+- learn.wwl.plan-deploy-windows-server-iaas-vms.describe-vm-storage
+- learn.wwl.plan-deploy-windows-server-iaas-vms.deploy-azure-vms
+- learn.wwl.plan-deploy-windows-server-iaas-vms.create-windows-vm-using-portal
+- learn.wwl.plan-deploy-windows-server-iaas-vms.create-windows-vm-using-azure-cli
+- learn.wwl.plan-deploy-windows-server-iaas-vms.deploy-azure-vms-using-templates
+- learn.wwl.plan-deploy-windows-server-iaas-vms.knowledge-check
+- learn.wwl.plan-deploy-windows-server-iaas-vms.summary
+badge:
+  uid: learn.wwl.plan-deploy-windows-server-iaas-vms.badge

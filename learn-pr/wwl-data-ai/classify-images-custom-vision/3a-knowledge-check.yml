@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Check your knowledge."
-  ms.date: 08/06/2020
+  ms.date: 09/13/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ quiz:
     - content: "Computer Vision"
       isCorrect: false
       explanation: "Incorrect: The Computer Vision service does not support the training of a custom image classification model."
-  - content: "You train an image classification model that achieves less than satisfactory evaluation metrics? How might you improve it?"
+  - content: "You train an image classification model that achieves less than satisfactory evaluation metrics. How might you improve it?"
     choices:
     - content: "Reduce the size of the images used to train the model."
       isCorrect: false

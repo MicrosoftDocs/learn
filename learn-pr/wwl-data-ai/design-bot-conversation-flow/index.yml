@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.design-bot-conversation-flow
+metadata:
+  title: Design a bot conversation flow
+  description: "Learn the principles of good bot design and implement conversational flows, knowledge bots, and how to hand-off interactions to a human."
+  ms.date: 10/21/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design a bot conversation flow
+summary: Learn the principles of good bot design and implement conversational flows, knowledge bots, and how to hand-off interactions to a human.
+abstract: |
+  After completing this module, you will be able to:
+  - Learn Principles of Bot Design
+  - Design conversational flow
+  - Design bot navigation
+  - Design the user experience
+  - Design knowledge bots
+  - Learn  how to Hand-off to humans
+prerequisites: |
+  - Knowledge of Azure portal
+  - Knowledge of C#, Python, or JavaScript
+iconUrl: /learn/achievements/design-a-bot-conversation-flow.svg
+levels:
+- intermediate
+roles:
+- ai-edge-engineer
+- developer
+- solution-architect
+- student
+products:
+- azure
+- azure-bot-service
+units:
+- learn.wwl.design-bot-conversation-flow.introduction
+- learn.wwl.design-bot-conversation-flow.introduce-principles-of-bot-design
+- learn.wwl.design-bot-conversation-flow.design-conversational-flow
+- learn.wwl.design-bot-conversation-flow.navigation
+- learn.wwl.design-bot-conversation-flow.design-user-experience
+- learn.wwl.design-bot-conversation-flow.design-hand-off-to-humans
+- learn.wwl.design-bot-conversation-flow.knowledge-check
+- learn.wwl.design-bot-conversation-flow.summary
+badge:
+  uid: learn.wwl.design-bot-conversation-flow.badge

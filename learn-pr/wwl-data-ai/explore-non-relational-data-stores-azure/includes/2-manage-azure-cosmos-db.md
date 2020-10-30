@@ -52,7 +52,7 @@ Documents in a Cosmos DB database are organized into containers. The documents i
 > [!div class="mx-imgBorder"]
 > ![Image illustrating documents containing the details and orders made by customers. The documents are partitioned by customer ID](../media/2-partitioned-data.png)
 
-Cosmos DB is a foundational service in Azure. Cosmos DB is used by many of Microsoft's products for mission critical applications running at global scale, including Skype, Xbox, Office 365, and Azure. Cosmos DB is highly suitable for IoT and telematics, Retail and marketing, Gaming, and *Web and mobile applications. For additional information about uses for Cosmos DB, read [Common Azure Cosmos DB use cases](https://docs.microsoft.com/azure/cosmos-db/use-cases).
+Cosmos DB is a foundational service in Azure. Cosmos DB is used by many of Microsoft's products for mission critical applications running at global scale, including Skype, Xbox, Microsoft 365, and Azure. Cosmos DB is highly suitable for IoT and telematics, Retail and marketing, Gaming, and Web and mobile applications. For additional information about uses for Cosmos DB, read [Common Azure Cosmos DB use cases](https://docs.microsoft.com/azure/cosmos-db/use-cases).
 
 ## What are Cosmos DB APIs?
 

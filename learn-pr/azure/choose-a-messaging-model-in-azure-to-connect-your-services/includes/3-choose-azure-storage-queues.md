@@ -4,10 +4,10 @@ Suppose you are planning the architecture for your music-sharing application. Yo
 - Azure Service Bus
 
 ## What is Azure Queue Storage?
-Queue storage is a service that uses Azure Storage to store large numbers of messages that can be securely accessed from anywhere in the world using a simple REST-based interface. Queues can contain millions of messages, limited only by the capacity of the storage account that owns it.
+[Queue storage](https://azure.microsoft.com/services/storage/queues/) is a service that uses Azure Storage to store large numbers of messages that can be securely accessed from anywhere in the world using a simple REST-based interface. Queues can contain millions of messages, limited only by the capacity of the storage account that owns it.
 
 ## What is Azure Service Bus Queues?
-Service Bus is a message broker system intended for enterprise applications. These apps often utilize multiple communication protocols, have different data contracts, higher security requirements, and can include both cloud and on-premises services. Service Bus is built on top of a dedicated messaging infrastructure designed for exactly these scenarios.
+[Service Bus](https://azure.microsoft.com/services/service-bus/) is a message broker system intended for enterprise applications. These apps often utilize multiple communication protocols, have different data contracts, higher security requirements, and can include both cloud and on-premises services. Service Bus is built on top of a dedicated messaging infrastructure designed for exactly these scenarios.
 
 Both of these services are based on the idea of a "queue" which holds sent messages until the target is ready to receive them.
 

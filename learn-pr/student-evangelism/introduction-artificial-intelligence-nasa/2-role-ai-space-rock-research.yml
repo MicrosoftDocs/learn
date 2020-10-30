@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: >-
+  learn.student-evangelism.introduction-artificial-intelligence-nasa.2-role-ai-space-rock-research
+metadata:
+  title: The role of AI in research into space rocks
+  description: Learn what AI is, how it works in general, and how AI can be applied to research into space rocks, in specific.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: The role of AI in research into space rocks
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-role-ai-space-rock-research.md)]

@@ -36,7 +36,7 @@ The output is:
 
 In Python's interactive interpreter and Jupyter Notebook in Visual Studio Code, the output string is enclosed in quotation marks, and special characters are escaped by using backslashes. Although this output sometimes looks different from the input (the enclosing quotation marks could change), the two strings are equivalent. The string is enclosed in double quotation marks if the string contains a single quotation mark and no double quotation marks. Otherwise, it’s enclosed in single quotation marks.
 
-The [print()](https://docs.python.org/3.6/library/functions.html#print?azure-portal=true) function produces more readable output by omitting the enclosing quotes and by printing escaped and special characters. Here's an example without `print()`:
+The [print()](https://docs.python.org/3.6/library/functions.html#print?azure-portal=true) function produces more readable output by omitting the enclosing quotes and by printing escaped special characters. Here's an example without `print()`:
 
 ```python
 '"Isn\'t," she said.'

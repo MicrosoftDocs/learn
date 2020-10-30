@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-data-science-virtual-machine.summary
+metadata:
+  title: Summary
+  description: A quick review of the concepts discussed in this module. 
+  ms.date: 08/28/2020
+  author: lobrien
+  ms.author: laobri
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/summary.md)]
+quiz:
+  title: Hardware and cost of the Data Science Virtual Machine
+  questions:
+    - content: "On what hardware does the Data Science Virtual Machine run?"
+      choices:
+        - content: "On your local client machine."
+          isCorrect: false
+          explanation: "The Data Science Virtual Machine runs on Azure compute resources that you can match to your changing needs."
+        - content: "On any internet-accessible computer with compatible hardware."
+          isCorrect: false
+          explanation: "The Data Science Virtual Machine runs on Azure compute resources that you can match to your changing needs."
+        - content: "On an Azure compute resource that you can customize to your needs and budget. After you specify the resource, you can't change the hardware."
+          isCorrect: false
+          explanation: "The Data Science Virtual Machine runs on Azure compute resources that you can match to your changing needs."
+        - content: "On an Azure compute resource that you can customize to your needs and budget. You can change this resource as your needs change."
+          isCorrect: true
+          explanation: "The Data Science Virtual Machine runs on Azure compute resources that you can match to your changing needs."
+    - content: "Using GPU resources on the Data Science Virtual Machine requires:"
+      choices:
+        - content: "The Data Science Virtual Machine doesn't support GPU scenarios."
+          isCorrect: false
+          explanation: "GPU support depends on the chosen compute resource. Preinstalled tools are configured to use the GPU on appropriate hardware."
+        - content: "GPU support is universally available on Data Science Virtual Machines."
+          isCorrect: false
+          explanation: "GPU support depends on the chosen compute resource. Preinstalled tools are configured to use the GPU on appropriate hardware."
+        - content: "GPU support is available only on GPU-enabled Azure compute resources and requires no user configuration."
+          isCorrect: true
+          explanation: "Preinstalled tools are configured to use the GPU on appropriate hardware. GPU support depends on the chosen compute resource."
+        - content: "GPU support is available only on GPU-enabled Azure compute resources and requires user configuration."
+          isCorrect: false
+          explanation: "Preinstalled tools are configured to use the GPU on appropriate hardware. GPU support depends on the chosen compute resource."
+    - content: "Charges for the Data Science Virtual Machine start and stop:"
+      choices:
+        - content: "From creation of the Data Science Virtual Machine until you delete the resource."
+          isCorrect: false
+          explanation: "Charges are based on machine uptime. You can configure a daily shutdown to catch mistakes."
+        - content: "From when you start the Data Science Virtual Machine to when you stop it."
+          isCorrect: true
+          explanation: "Charges are based on machine uptime. You can configure a daily shutdown to catch mistakes."
+        - content: "From when you sign in to the Data Science Virtual Machine until you sign out."
+          isCorrect: false
+          explanation: "Charges are based on machine uptime, not user activity. You can configure a daily shutdown to catch mistakes."
+        - content: "For the time that any process on the Data Science Virtual Machine is running under your account."
+          isCorrect: false
+          explanation: "Charges are based on machine uptime, not user activity. You can configure a daily shutdown to catch mistakes."

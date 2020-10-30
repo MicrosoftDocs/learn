@@ -4,7 +4,7 @@ Microsoft offers previews of Azure services, features, and functionality for eva
 
 There are two categories of preview that are available:
 
-+ **Preview feature** - An Azure feature is available to *certain* Azure customers for evaluation purposes.
++ **Private preview** - An Azure feature is available to *certain* Azure customers for evaluation purposes.
 
 + **Public preview** - An Azure feature is available to *all* Azure customers for evaluation purposes.
 

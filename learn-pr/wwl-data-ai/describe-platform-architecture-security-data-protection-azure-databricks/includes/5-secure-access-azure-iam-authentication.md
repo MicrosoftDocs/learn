@@ -8,7 +8,7 @@ The following shows an example of the Access control (IAM) blade for an Azure Da
 
 RBAC and IAM are both enabled by Azure Active Directory (Azure AD), an enterprise identity service that provides single sign-on and multi-factor authentication, which helps users securely sign in and access resources in:
 
-- External resources, such as Microsoft Office 365, the Azure portal, and thousands of other SaaS applications.
+- External resources, such as Microsoft 365, the Azure portal, and thousands of other SaaS applications.
 - Internal resources, such as apps on your corporate network and intranet, along with any cloud apps developed by your own organization.
 
 ## Azure Databricks provides first-party Azure AD integration

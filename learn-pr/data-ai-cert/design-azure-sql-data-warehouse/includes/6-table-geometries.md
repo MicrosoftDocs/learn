@@ -4,6 +4,8 @@ Azure Synapse Analytics uses Azure Storage to store data. Since the data is stor
 - Round Robin
 - Replicate
 
+> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Table-Geometries/player?format=ny]
+
 You can use the following strategies to determine which pattern is most suitable for your scenario:
 
 | Type | Great fit for... | Watch out if... |

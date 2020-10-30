@@ -1,6 +1,6 @@
 In this module, you learned how to use Azure Machine Learning designer to train and publish a classification model.
 
-## Reset resources
+## Clean-up
 
 The web service you created is hosted in an *Azure Kubernetes Cluster*. If you don't intend to experiment with it further, you should delete the endpoint and cluster to avoid accruing unnecessary Azure charges. You should also stop the compute instance until you need it again.
 

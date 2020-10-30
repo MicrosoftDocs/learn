@@ -5,7 +5,7 @@ metadata:
   description: Create the second route, via an IoT Event Hub, to the Azure Stream Analytics job. Add an SQL query to a built-in ML model, for anomaly detection. To finish, create a Microsoft Power BI dashboard, to visualize the output in a friendly format.
   ms.date: 11/26/2019
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Add a route to an Azure Event Hub, and a query to detect anomalies

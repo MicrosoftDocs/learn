@@ -12,7 +12,7 @@ The latest version of AzCopy enables you to take incremental backups of blobs, a
 
 ## Upload data
 
-Use the `AzCopy copy` command to upload data to Azure storage. The simplest form of this command copies a file to a blob. The example below uploads the contents of a file named *myfile.txt* to a blob, also named *myfile.txt*, to the *mycontainer* container in the *myaccount* blob storage account. The storage account and container must already exist.
+From the command line, you call AzCopy using the all lower-case name, `azcopy`, with additional parameters depending on the operation you wish to perform. Use the `azcopy copy` command to upload data to Azure storage. The simplest form of this command copies a file to a blob. The example below uploads the contents of a file named *myfile.txt* to a blob, also named *myfile.txt*, to the *mycontainer* container in the *myaccount* blob storage account. The storage account and container must already exist.
 
 ```bash
 azcopy copy "myfile.txt" "https://myaccount.blob.core.windows.net/mycontainer/"
@@ -65,19 +65,19 @@ Another way to copy blobs between storage accounts is to use the `AzCopy sync` c
 You can view the blobs available in a container with the `AzCopy list` command. The following example displays the blobs in the *sourcecontainer* container:
 
 ```bash
-./azcopy list "https://sourceaccount.blob.core.windows.net/sourcecontainer?<sas token>"
+azcopy list "https://sourceaccount.blob.core.windows.net/sourcecontainer?<sas token>"
 ```
 
 You can create a new container in a blob storage account using the `AzCopy make` command, like this:
 
 ```bash
-./azcopy make "https://myaccount.blob.core.windows.net/newcontainer?<sas token>"
+azcopy make "https://myaccount.blob.core.windows.net/newcontainer?<sas token>"
 ```
 
 To remove a blob, run the `AzCopy remove` command. You can remove all blobs with names that match a specific pattern with the `--include` flag, and you can walk through a hierarchical container with the `--recursive` flag. The next example removes all blobs with the *txt* suffix from *mycontainer*.
 
 ```bash
-./azcopy remove "https://myaccount.blob.core.windows.net/mycontainer?<sas token>" --include "*.txt" --recursive=true
+azcopy remove "https://myaccount.blob.core.windows.net/mycontainer?<sas token>" --include "*.txt" --recursive=true
 ```
 
 ## Configure concurrency

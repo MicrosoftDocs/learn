@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.migrate-aspnet-web-application
 metadata:
-  title: Migrate an ASP.NET web application to Azure App Service
-  description: Migrate an ASP.NET web application to Azure App Service
+  title: Migrate an ASP.NET web application to Azure with Visual Studio
+  description: Migrate an ASP.NET web application to Azure with Visual Studio
   ms.date: 06/30/2020
   author: coderandhiker
   ms.author: chrisrt
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Migrate an ASP.NET web application to Azure App Service
+title: Migrate an ASP.NET web application to Azure with Visual Studio
 prerequisites: |
   - Some C# programming experience
   - Familiarity with ASP.NET development
@@ -27,6 +27,8 @@ products:
 - azure-cache-redis
 - azure-key-vault
 - azure-sql-database
+- aspnet
+- dotnet
 modules:
 - learn.azure.aspnet-configurationbuilder
 - learn.azure.aspnet-logging

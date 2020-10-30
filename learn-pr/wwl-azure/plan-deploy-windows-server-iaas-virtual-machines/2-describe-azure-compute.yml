@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-deploy-windows-server-iaas-vms.describe-azure-compute
+title: Describe Azure compute
+metadata:
+  title: Describe Azure compute
+  description: "Describe Azure compute"
+  ms.date: 10/21/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 13
+content: |
+  [!include[](includes/2-describe-azure-compute.md)]

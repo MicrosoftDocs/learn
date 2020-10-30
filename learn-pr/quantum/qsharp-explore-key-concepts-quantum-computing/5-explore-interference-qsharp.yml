@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.5-explore-interference-qsharp
+title: Exercise - Explore interference by using Q#
+metadata:
+  title: Exercise - Explore interference by using Q#
+  description: Learn about interference in quantum computing by using Q# examples.
+  ms.date: 09/09/2020
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-explore-interference-qsharp.md)]

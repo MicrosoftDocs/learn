@@ -1,14 +1,14 @@
-You've been tasked with creating a simple API using the framework Express. Tailwind Traders would like to evaluate Express and see if it's easy to work with. As part of that evaluation, they would like you to build a web application that serves different routes. 
+You've been tasked with creating a simple API using the framework Express. The online retailer wants to evaluate Express to see if it's easy to work with. As part of that evaluation, they want you to build a web application that serves different routes. 
 
-## Create a basic Web app with Express
+## Create a basic web app with Express
 
-You will create a basic application that will be able to handle requests.
+Create a basic application that handles requests.
 
-1. Create a file `app.js`.
-1. Go to the terminal and enter `npm init -y`. This command will create a default `package.json` file for your Node.js project.
-1. In the terminal type `npm install express`. This command installs the Express framework.
-1. Open up the file `package.json` and note how the `dependencies` section now has an `express` entry. That means Express has been correctly installed.
-1. Add the following code to `app.js`:
+1. Create a file **app.js**.
+1. Go to the terminal and enter **npm init -y**. This command creates a default **package.json** file for your Node.js project.
+1. In the terminal enter **npm install express**. This command installs the Express framework.
+1. Open the file **package.json**. In the **dependencies** section, there is an **express** entry. This entry means that Express framework is installed.
+1. Add the following code to **app.js**:
 
    ```javascript
    const express = require('express');
@@ -19,40 +19,40 @@ You will create a basic application that will be able to handle requests.
    app.listen(port, () => console.log(`Example app listening on port ${port}!`));
    ```
 
-   The code above creates an instance of an Express app by invoking `express()`. It also sets up a route to `/` with:
+   The code creates an instance of an Express app by invoking **express()**.
+   
+   See how the code sets up a route to **/** with:
 
    ```javascript
    app.get('/', (req, res) => res.send('Hello World!'));
    ```
 
-   Finally it starts up the web application by invoking the `listen()` method:
+   Then, it starts the web application by invoking the **listen()** method:
 
    ```javascript
    app.listen(port, () => console.log(`Example app listening on port ${port}!`));
    ```
 
-1. Start up the web application by typing the following command in the terminal:
+1. In the terminal, enter the following command to start the web application:
 
    ```bash
    node app.js
    ```
 
-   You should see the following output:
+   You should see the following output. This output means your app is up and running and ready to receive requests.
 
    ```output
    Example app listening on port 3000!
    ```
 
-   This output means your app is up and running and ready to receive requests.
+1. Open a browser and go to **http://localhost:3000**. In the browser window, you should see the following text displayed **Hello World!**.
+1. Select the **Ctrl**+**C** keys in the terminal to stop the program.
 
-1. Open up a browser and navigate to `http://localhost:3000`. In the browser window, you should now see the following text displayed `Hello World!`.
-1. Type `Ctrl-C` in the terminal to stop the program.
+## Create a web app that returns JSON data
 
-## Create a Web App that returns JSON data
+Use the same **app.js** file you created to add a new route.
 
-You will continue to work with the same `app.js` file and add a new route.
-
-1. Open up `app.js` file and add the following code to it:
+1. Open the **app.js** file and add the following code to it:
 
    ```javascript
    app.get("/products", (req,res) => {
@@ -76,7 +76,7 @@ You will continue to work with the same `app.js` file and add a new route.
    });
    ```
 
-   Ensure the `app.js` file looks like this:
+1. Make sure the **app.js** file looks like this:
 
    ```javascript
    const express = require("express");
@@ -107,7 +107,7 @@ You will continue to work with the same `app.js` file and add a new route.
 
    ```
 
-1. Save your changes and type the following command in the terminal:
+1. Save your changes and enter the following command in the terminal:
 
    ```javascript
    node app.js
@@ -119,7 +119,7 @@ You will continue to work with the same `app.js` file and add a new route.
    Example app listening on port 3000!
    ```
 
-1. Open up your browser and navigate to `http://localhost:3000/products`. You should see something like this being rendered:
+1. Open a browser and go to **http://localhost:3000/products**. The following should render:
 
    ```output
    [
@@ -138,4 +138,4 @@ You will continue to work with the same `app.js` file and add a new route.
    ]
    ```
 
-   Congrats! You've managed to implement a second route that is able to serve up static content.
+   Congratulations! You've managed to implement a second route that can serve up static content.

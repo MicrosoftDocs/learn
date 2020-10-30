@@ -6,4 +6,4 @@ Imagine how much work it would be to build this app from scratch. We'd have to w
 
 Logic Apps made it easy. The standard connectors did the hard work of integrating systems that were never designed to work together. Building the app took us less than an hour and we didn't have to write any code or set up any servers. We can now analyze every tweet about our product and our business analytics can use the data to shape future products.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+[!INCLUDE [](../../../includes/azure-sandbox-cleanup.md)]

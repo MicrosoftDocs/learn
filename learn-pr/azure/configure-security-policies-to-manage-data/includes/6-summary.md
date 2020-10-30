@@ -12,4 +12,4 @@ To learn more about the topics covered in this module, read through the followin
 - [Azure Security Center](https://docs.microsoft.com/azure/security-center/)
 - [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/)
 - [Azure SQL Database and SQL Data Warehouse data discovery & classification](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification)
-- [Information protection in Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/infoprotect-infrastructure)
+- [Information protection in Microsoft 365](https://docs.microsoft.com/azure/information-protection/)

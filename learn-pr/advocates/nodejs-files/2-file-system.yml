@@ -3,7 +3,7 @@ uid: learn.azure.nodejs-files.2-file-system
 title: Work with the file system
 metadata:
   title: Work with the file system
-  description: Using the "fs" module to work with the file system
+  description: Use the "fs" module to work with the file system.
   author: burkeholland
   ms.author: buhollan
   ms.date: 04/20/2020
