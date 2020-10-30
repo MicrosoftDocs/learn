@@ -1,6 +1,4 @@
-You may remember you were given the option to install Node.js while adding your container configuration files at the beginning of this process. You didn't check yes, but now you realize you'd like to include Node.js as part of your dev container. 
-
-No need to worry - in this exercise, we'll take a look at how you can install a tech stack like Node in your container at any point!
+The Dockerfile is the best tool with which to add new software to your container. You may remember you were given the option to install Node.js while adding your container configuration files at the beginning of this process. You didn't check yes, but now you realize you'd like to include Node.js as part of your dev container. No need to worry - in this exercise, we'll take a look at how you can install a tech stack like Node in your container at any point!
 
 ## Open the Dockerfile
 

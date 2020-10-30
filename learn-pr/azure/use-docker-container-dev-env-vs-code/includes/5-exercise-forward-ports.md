@@ -1,4 +1,4 @@
-When working on a project requiring port forwarding, you may want to modify the port that's forwarded, or you may want a configuration different than the default. In this exercise, you'll explore and make some changes to your current port forwarding setup.
+Port forwarding allows you to access a resource inside your container by forwarding the port to your local machine. When working on a project requiring port forwarding, you may want to modify the port that's forwarded, or you may want a configuration different than the default. In this exercise, you'll explore and make some changes to your current port forwarding setup.
 
 ## Open the Remote Explorer
 

@@ -1,4 +1,4 @@
-When setting up the dev container for a project, you'll need to add a container configuration to that project first. In this exercise, you'll clone one of the agencies projects - a Products Dashboard written in Python. You'll then add a dev container and then open that project in the container.
+When setting up the dev container for a project, you'll need to add a container configuration to that project first. A container configuration sets up your environment in Visual Studio Code. In this exercise, you'll clone one of the agencies projects - a Products Dashboard written in Python. You'll then add a dev container and then open that project in the container. Don't worry if you aren't familiar with Python - you'll be given all of the code and tools you need to run your app, no prior Python knowledge necessary.
 
 ## Clone the sample repo
 

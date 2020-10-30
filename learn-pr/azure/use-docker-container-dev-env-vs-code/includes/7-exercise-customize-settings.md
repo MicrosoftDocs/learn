@@ -1,4 +1,4 @@
-So far, you've configured a dev container for a Python project. However, there are still some rough edges and setup tasks that you can further automate. In this exercise, you'll use the `devcontainer.json` file to smooth these edges and make the project work with no setup steps from the developer.
+The `devcontainer.json` helps you configure a variety of settings in your containerized VS Code setup. So far, you've configured a dev container for a Python project. However, there are still some rough edges and setup tasks that you can further automate. In this exercise, you'll use the `devcontainer.json` file to smooth these edges and make the project work with no setup steps from the developer.
 
 ## Reopen project locally
 
