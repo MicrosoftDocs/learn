@@ -54,7 +54,7 @@ Receive a personalized report that outlines the difference between your current 
 
 Azure includes a suite of governance tools built on top of the Azure Resource Manager platform. The initial governance foundation demonstrates how these tools can be applied to demonstrate cloud governance. As you progress through units of this learn module, you'll learn how to apply these tools to solve governance challenges. First, start with a governance foundation to familiarize yourself with the tools.
 
-:::image type="content" source="../media/TDD-in-Azure.png" alt-text="Visual of the Azure Resource Manager tools that support governance, with focus on Azure Policy and Azure Blueprints." border="false":::
+:::image type="content" source="../media/3-tdd-in-azure.png" alt-text="Visual of the Azure Resource Manager tools that support governance, with focus on Azure Policy and Azure Blueprints." border="false":::
 _Figure 3: The Azure Resource Manager tools that support governance, with focus on Azure Policy and Azure Blueprints._
 
 Subsequent units of this learn module will apply these tools to create a governance foundation for Tailwind Traders.

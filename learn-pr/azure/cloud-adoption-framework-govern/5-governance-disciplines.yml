@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-adoption-framework-govern.5-governance-disciplines
-title: Governance Disciplines
+title: Governance disciplines
 metadata:
-  title: Governance Disciplines
+  title: Governance disciplines
   description: Understand the actionable disciplines from the Governance methodology to implement the processes that are key to creating cloud adoption guardrails.
   ms.date: 09/22/2020
   author: BrianBlanchard

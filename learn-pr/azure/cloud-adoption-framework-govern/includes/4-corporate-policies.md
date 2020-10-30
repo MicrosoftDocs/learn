@@ -1,4 +1,4 @@
-Poor governance policies create unneccessary constraints and may not protect the company. In this module, we'll evaluate ways to create proper, actionable corporate policies.
+Poor governance policies create unnecessary constraints and may not protect the company. In this module, we'll evaluate ways to create proper, actionable corporate policies.
 
 ## Example: Improper corporate policy
 

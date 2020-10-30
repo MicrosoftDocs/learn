@@ -81,7 +81,7 @@ The following questions may help illustrate reasons for you to scale your subscr
 
 Add existing subscriptions in each of the environment nodes, to create clarity between production, development, and QA resources.
 
-:::image type="content" source="../media/add_context_sub.png" alt-text="Adding a subscription to a management group." border="false":::
+:::image type="content" source="../media/add-context-sub.png" alt-text="Adding a subscription to a management group." border="false":::
 _Figure 5: Adding a subscription to a management group._
 
 For guidance on adding subscriptions to a management group, see the [how-to guide](https://docs.microsoft.com/azure/governance/management-groups/manage#move-subscriptions?azure-portal=true).
@@ -124,16 +124,17 @@ Azure blueprints package Azure Resource Manager templates, Azure Policies, and r
 - Deploy Azure Security Center (standard version).
 
 The CAF Foundation blueprint also defines and deploys Azure Policies for:
-	- Applying 'cost center' tags to resource groups.
-	- Appending resources in resource group with the CostCenter tag.
-	- Permitting an Azure region for resources and resource groups.
-	- Permitting Storage Account SKUs (choose while deploying)
-	- Permitting Azure VM SKUs (choose while deploying).
-	- Requiring Network Watch to be deployed.
-	- Requiring secure transfer encryption for Azure Storage accounts.
-	- Denying resource types (choose while deploying).
+
+- Applying 'cost center' tags to resource groups.
+- Appending resources in resource group with the CostCenter tag.
+- Permitting an Azure region for resources and resource groups.
+- Permitting Storage Account SKUs (choose while deploying)
+- Permitting Azure VM SKUs (choose while deploying).
+- Requiring Network Watch to be deployed.
+- Requiring secure transfer encryption for Azure Storage accounts.
+- Denying resource types (choose while deploying).
 - Initiative:
-    - Enabling monitoring in Azure Security Center (89 policies).
+  - Enabling monitoring in Azure Security Center (89 policies).
 
 Follow the steps on this CAF blueprint deployment article to [publish and assign this sample blueprint to your management group](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-foundation/deploy?azure-portal=true).
 
