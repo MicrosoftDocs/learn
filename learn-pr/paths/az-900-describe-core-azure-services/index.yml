@@ -29,7 +29,7 @@ summary: |
     - [Azure Fundamentals part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/)
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology
-  - You should be familiar with cloud computing is helpful, but isn't necessary
+  - Familiarity with cloud computing is helpful, but isn't necessary
 iconUrl: /learn/achievements/az-900-describe-core-azure-services.svg
 levels:
 - beginner
