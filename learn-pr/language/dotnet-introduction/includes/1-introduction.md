@@ -1,6 +1,6 @@
-If you're new to programming, understanding exactly what is .NET can be challenging. It seems like the term .NET is applied to many things, but how are they related? How do the various aspects of .NET work together to create a working application?
+If you're new to the C# programming language, you may be uncertain about how it relates to .NET. After all, it seems like the term .NET is applied to many things. What is .NET? Is C# part of .NET? How does .NET work?  Why do I need to learn about .NET?
 
-In this module, you'll learn about .NET and its ecosystem. You'll learn about both the technical aspects of the system and the role each part places to build software. You'll learn about the ecosystem as a whole and the resources that are available. You'll learn how .NET can be used to address many different software development needs. Finally, you'll write your first lines of C# code using a web-based editor so that you can see how each part of .NET works together to create a .NET application.
+In this module, you'll learn about .NET and its ecosystem. You'll learn about both the technical aspects of the system and the role each part plays in helping you build and deploy your software. You'll learn about the .NET ecosystem as a whole, including the resources that are available to help you learn.  You'll learn how you can contribute to this ecosystem. Finally, you'll write C# code using a web-based editor to better understand how each part of .NET works together to create a .NET application.
 
 By the end of this module, you'll have started building a mental model of .NET. This mental model will prove vital as you take your next steps in building .NET applications.
 
@@ -8,11 +8,14 @@ By the end of this module, you'll have started building a mental model of .NET. 
 
 By the end of this module, you'll be able to:
 
-- Describe the major parts of .NET and its ecosystem.
-- Write code in Try .NET and explain how the different parts of .NET come together to produce a running application.
-- Choose when it makes sense to use .NET to build your applications.
+  - Describe the major parts of .NET and its ecosystem.
+  - Explain how .NET languages, compiler, runtime, libraries, and so on work together to produce a running application.
+  - Choose when it makes sense to use .NET to build your applications.
 
 ## Prerequisites
 
-- No familiarity with C# or .NET is assumed, though it might be helpful
+  - You should have already written your first lines of C# code
+  - You should recognize how to use Console.WriteLine() to send text to an output window
+  - You should be able to recognize minor issues in your code and fix them
 
+  If you haven't already written a simple "Hello World" application in C#, take a moment to review the first module in this Learning Path titled [Write your first C# code](https://docs.microsoft.com/en-us/learn/modules/csharp-write-first/?azure-portal=true).
