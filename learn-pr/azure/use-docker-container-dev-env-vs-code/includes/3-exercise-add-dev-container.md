@@ -14,7 +14,15 @@ When setting up the dev container for a project, you'll need to add a container 
 1.  Paste in the URL to the sample repo.
 1.  Select a location on your disk where the project can be cloned to.
 
-The project should now be open in VS Code. Next, you'll add a dev container to this project. You'll be able to run the project, even if you don't have Python installed.
+The project should now be open in VS Code. Next, you'll install the Remote - Containers extension.
+
+## Install the Remote - Containers extension
+
+1. Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> to open the Extensions viewlet.
+1. Type "remote containers."
+1. Locate the "Remote - Containers" extension and select the "Install" button.
+
+The Remote - Containers extension will install, and you'll have access to the commands it adds to VS Code. Next, you'll add a dev container to this project. You'll be able to run the project, even if you don't have Python installed.
 
 ## Add a Dev Container
 
