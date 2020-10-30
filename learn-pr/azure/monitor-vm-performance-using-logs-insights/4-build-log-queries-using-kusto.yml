@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'In which log would you find information about the multi-factor authentication method that is being used?'
+  - content: 'What are Azure Monitor Logs based on?'
     choices:
-    - content: Audit log files
-      isCorrect: false
-      explanation: The audit log file provides a history of every task that's done in your tenant.
-    - content: Sign-in log files
+    - content: Azure Data Explorer
       isCorrect: true
-      explanation: The sign-in log file contains information about multi-factor authentication.
-    - content: Risky sign-ins log
+      explanation: Azure Monitor Logs is based on Azure Data Explorer. A Log Analytics workspace is roughly the equivalent of a database in Azure Data Explorer, tables are structured the same, and both use the Kusto Query Language.
+    - content: Log Analytics workspace
       isCorrect: false
-      explanation: This log holds data about user accounts where the user's sign-in behavior is inconsistent with previous sign-in attempts.
-  - content: 'In which log would you find information about identity protection?'
+      explanation: Data collected by Azure Monitor Logs is stored in a Log Analytics workspace.
+    - content: Kusto Query Language
+      isCorrect: false
+      explanation: The Kusto Query Language is used to query Azure Monitor Logs for information about Azure resources.
+  - content: 'What is the schema?'
     choices:
-    - content: Audit log
-      isCorrect: true
-      explanation: You can use the services column to obtain information about identity protection.
-    - content: Sign-in log files
+    - content: Azure Data Explorer
       isCorrect: false
+      explanation: Azure Data Explorer is a fast and highly scalable data exploration Azure service for log and telemetry data.
+    - content: A series of tables logically grouped together which allow for an easy understanding behind how Log Analytics stores logs.
+      isCorrect: true
       explanation: The sign-in log file tracks details about user authentication, but it doesn't contain information about identity protection.
-    - content: Risky sign-in log
+    - content: Metrics
       isCorrect: false
-      explanation: The risky sign-in log file holds information about users whose behavior has been flagged as inconsistent.
+      explanation: Metrics are numerical values that describe some aspect of a system at a particular time.
