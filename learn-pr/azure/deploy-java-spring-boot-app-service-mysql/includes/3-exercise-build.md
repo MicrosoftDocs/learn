@@ -3,7 +3,7 @@
 First, set up some environment variables by using the following commands:
 
 ```bash
-AZ_RESOURCE_GROUP=database-workshop
+AZ_RESOURCE_GROUP=azure-spring-workshop
 AZ_DATABASE_NAME=<YOUR_DATABASE_NAME>
 AZ_LOCATION=<YOUR_AZURE_REGION>
 AZ_MYSQL_USERNAME=spring
@@ -105,7 +105,7 @@ Notice we don't need to specify Azure dependencies as we plan to run our applica
 Generate the application on the command line by entering:
 
 ```bash
-curl https://start.spring.io/starter.tgz -d dependencies=web,data-jpa,mysql -d baseDir=azure-database-workshop -d bootVersion=2.3.2.RELEASE -d javaVersion=1.8 | tar -xzvf -
+curl https://start.spring.io/starter.tgz -d dependencies=web,data-jpa,mysql -d baseDir=azure-spring-workshop -d bootVersion=2.3.2.RELEASE -d javaVersion=1.8 | tar -xzvf -
 ```
 
 ### Configure Spring Boot to use Azure Database for MySQL

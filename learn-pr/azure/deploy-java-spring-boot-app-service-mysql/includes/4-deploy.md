@@ -17,7 +17,7 @@ However, when you're using the Maven Plugin for Azure App Service, you won't use
 
 ## Adding the Maven Plugin for Azure App Service to your project
 
-To add the Maven Plugin for Azure App Service to your web app, you would add the XML for `azure-webapp-maven-plugin` to your project's `pom.xml` file following the same steps that you used in the previous exercise when you added the Tomcat server.
+To add the Maven Plugin for Azure App Service to your web app, you need to add a dependency for `azure-webapp-maven-plugin` to your project's `pom.xml` file.
 
 The following excerpt illustrates the XML elements that you need to add to your project's `pom.xml` file:
 
