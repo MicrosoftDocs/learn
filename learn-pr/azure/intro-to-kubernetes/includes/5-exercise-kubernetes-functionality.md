@@ -194,7 +194,7 @@ Recall from earlier that a Kubernetes cluster exists out of control planes and w
 
 1. Check the nodes that are running in your cluster. 
 
-    You know that MicroK8s is a single-node cluster installation, so you expect to see only one node. Keep in mind, though, that this node is both the control plane and a worker node in the cluster. Confirm this configuration by running the `kubectl get nodes` command. To retrieve information about all the resources in your cluster, run the `kubectl get` command .
+    You know that MicroK8s is a single-node cluster installation, so you expect to see only one node. Keep in mind, though, that this node is both the control plane and a worker node in the cluster. Confirm this configuration by running the `kubectl get nodes` command. To retrieve information about all the resources in your cluster, run the `kubectl get` command.
 
     ```bash
     sudo kubectl get nodes
