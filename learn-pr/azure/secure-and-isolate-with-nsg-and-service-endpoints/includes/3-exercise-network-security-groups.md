@@ -71,7 +71,7 @@ Next, you'll create two VMs called **AppServer** and **DataServer**. You deploy 
         --admin-password <password>
     ```
 
-1. To build the **DataServer** VM, in the Cloud Shell, run the following command in Cloud Shell. For the admin account, define a `<password>`.
+1. To build the **DataServer** VM, in the Cloud Shell, run the following command. For the admin account, define a `<password>`.
 
     ```azurecli
     az vm create \
