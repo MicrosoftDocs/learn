@@ -1,8 +1,8 @@
-During your journey as developer, there's always _that_ moment when you end up asking yourself:
+During your journey as a developer, there's always _that_ moment when you end up asking yourself:
 
 > Why isn't my code working?
 
-This is a normal part of any developer's day, and the trick is to get comfortable with finding and fixing your bugs with a minimum of time and frustration. When there's a bug in your program, everyone usually has their own way of dealing with this problem.
+Asking this question is a normal part of any developer's day. The trick is to get comfortable with finding and fixing your bugs with a minimum of time and frustration. When there's a bug in your program, everyone usually has their own way of dealing with this problem.
 You probably already have tried one or more of these debugging approaches yourself:
 
 - Try running your program again because it *should* work.
@@ -28,4 +28,4 @@ Every debugger has its own set of features. The two most important ones that com
 
 Mastering debugger usage is an important skill for a developer that's often overlooked. It makes you more efficient at hunting bugs in your code. It can also help you quickly understand how a program works.
 
-Let's discover that in the next section.
+Let's discover that in the next unit.
