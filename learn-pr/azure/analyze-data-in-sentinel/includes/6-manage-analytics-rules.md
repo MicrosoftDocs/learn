@@ -16,7 +16,7 @@ You can modify existing rules, by clicking on the **Edit** button in the details
 The common modification that you want to achieve is to attach an automated response to an already detected threat. In the **Automated Response** you can select one of the existing Playbooks, that define the automated activity that will run if the threat is detected. 
 For example, your analytics rule has detected an incident that has been resolved, and you want to reduce further alerting if similar activity occur. By attaching a playbook that contains automated activity, you can for example, change the incident status or add comments.  
 
-![Screenshot of the editing existing analytics rule](../media/06Edit-existing-rule.PNG)
+![Screenshot of the editing existing analytics rule](../media/06-Edit-existing-rule.PNG)
 
 ## Disable
 
