@@ -1,7 +1,7 @@
+You can create a custom analytics rules to search for suspicious activities and threats in your environment. Creating a custom rule from scheduled query rule type will provide you with the highest level of customization. You can define, your own Kusto Query Language (KQL) code, set a schedule to run the alerts or provide automated action by associating an Azure Sentinel Playbook.
+
 ## Creating an analytics rule from Wizard
 
-You can create a custom analytics rules to search for suspicious activities and threats in your environment. Creating a custom rule from scheduled query rule type will provide you with the highest level of customization. You can define, your own Kusto Query Language (KQL) code, set a schedule to run the alerts or provide automated action by associating an Azure Sentinel Playbook.
- 
 To start creating analytics rule, in the Azure portal, under Azure Sentinel, select  **Analytics**. In the top menu bar, select  **+Create**  and select  **Scheduled query rule.**
 
 ## General page
