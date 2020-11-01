@@ -2,22 +2,22 @@
 
 After completing this unit, you can explain the importance of Azure Sentinel Analytics
 
-- Understand the importance of Analytics for security
-- Understand Analytics rules
-- Explore Analytic home page
+- Understand the importance of analytics rules for security
+- Understand analytics rules
+- Explore Analytics home page
 
-Azure Sentinel Analytics, helps you to detect, investigate, and remediate threats. With Azure Sentinel Analytics, you can set up analytic rules and queries to detect issues in your environment.
+Azure Sentinel Analytics, helps you to detect, investigate, and remediate threats. With Azure Sentinel Analytics, you can set up analytics rules and queries to detect issues in your environment.
 
 You can analyze both real-time and historical data collected from your workstations, servers, networking devices, firewalls, intrusion prevention, sensors, and so on. Data from various sources is analyzed to look for correlations and anomalies.
 
-With analytics you can trigger alert, based of the techniques that are used by known malicious actors.
-With analytics in place, you want to make sure the right people are being alerted, at the right level. 
+With analytics rules you can trigger alert, based of the techniques that are used by known malicious actors.
+With analytics rules in place, you want to make sure the right people are being alerted, at the right level. 
 
-## Why use Analytics for Security?
+## Why use analytics rules for Security?
 
-Azure Sentinel analytics play import part in the overall detection of the security threat. With the proper analytic rule, you can get insights into where an attack originated from, what resources were compromised, potential data lost, along with the timeline for the incident.
+Azure Sentinel analytics play import part in the overall detection of the security threat. With the proper analytics rule, you can get insights into where an attack originated from, what resources were compromised, potential data lost, along with the timeline for the incident.
 
-The following include common security analytics use cases:
+The following include common security analytics rules use cases:
 
 - Identifying compromised accounts
 - User behavior analyzes to detect potentially suspicious patterns
@@ -29,8 +29,8 @@ The following include common security analytics use cases:
 
 Some of the threats cannot be detected using conventional protection tools, such as firewalls or antimalware solutions. Certain threats can go undetected for months. Combining data, gathered by multiple components, with the power of threat intelligence can help you to detect, analyze, and mitigate insider threats.
 
-You can also use analytics to create custom alerts that use indicators of attack that can identify potential attack in execution in real time.
-Analytics will help Contoso to improve the operation of their SecOps team in complex investigation and faster detection of the threats. 
+You can also use analytics rules to create custom alerts that use indicators of attack that can identify potential attack in execution in real time.
+Analytics rules will help Contoso to improve the operation of their SecOps team in complex investigation and faster detection of the threats. 
 
 ## Exploring the Analytics home page
 
@@ -53,7 +53,7 @@ To use filters, select the blue buttons, and then select the filters you want to
 Here are the filters and what you would use them for:
 
 - **Severity –** Lets you filter rules by levels of severity
-- **Rule Type –** There are currently four types of rules: Scheduled, Fusion, Microsoft Security, ML Behavior Analytics
+- **Rule Type –** There are currently four types of rules: Scheduled, Fusion, Microsoft Security, Machine Learning Behavior Analytics
 
 - **Tactics –** Lets you filter the rules based on 14 specific techniques and methodologies in MITRE ATT&amp;CK model
 
