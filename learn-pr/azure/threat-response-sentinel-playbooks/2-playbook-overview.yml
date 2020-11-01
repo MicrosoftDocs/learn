@@ -30,10 +30,10 @@ quiz:
     choices:
     - content: "Continious activites, that always run in respond to alerts."
       isCorrect: false
-      explanation: "Azure Sentinel Playbooks containc logic apps action that need to be configured in order to automatically reposnd to an alert."
-    - content: "Game cataloge that contains the latest "
+      explanation: "Azure Sentinel Playbooks containc logic apps action that need to be configured in order to automatically respond to an alert."
+    - content: "Game cataloge that contains the latest Microsoft games."
       isCorrect: false
-      explanation: "Explanation 2"
+      explanation: "Azure Sentinel Playbooks containc logic apps action that need to be configured in order to automatically respond to an alert."
     - content: "Collections of procedures based on Azure Logic Apps that run in response to an alert."
       isCorrect: true
-      explanation: "Explanation 3"
+      explanation: "Azure Sentinel Playbooks containc logic apps action that are collections of procedurs that run in response to an alert"
