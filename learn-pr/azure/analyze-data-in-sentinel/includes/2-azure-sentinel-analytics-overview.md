@@ -34,7 +34,7 @@ Analytics rules will help Contoso to improve the operation of their SecOps team 
 
 You can start creation of the analytics rules from the **Analytics** home page, that you can select from the left-hand navigation bar.
 
-![Analytics home page][./media/02-Analytics-page.png]
+![Screenshot of the Analytics home page][../media/02-Analytics-page.png]
 
 Analytics home page is arranged into three main parts:
 
