@@ -48,6 +48,8 @@ Currently Microsoft has pre-loaded more than 150 template rules from Azure Senti
 
 To use filters, select the blue buttons, and then select the filters you want to use.
 
+![Screenshot of the Analytics home page][../media/02-Filter-The-Rule-Templates.PNG]
+
 Here are the filters and what you would use them for:
 
 - **Severity –** Lets you filter rules by levels of severity
