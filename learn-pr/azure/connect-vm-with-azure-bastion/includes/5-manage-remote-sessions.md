@@ -70,5 +70,6 @@ Download the json file to view the session details. When you open the file it wi
 
 Azure Bastion session monitoring lets you view which users are connected to which VMs. It shows the IP that the user connected from, how long they've been connected, and when they connected. You can select an ongoing session and force-disconnect the session to disconnect the user from the session.
 
-<!--Add screenshots of two user sessions and selecting delete to disconnect one -->
+:::image type="content" source="../media/5-delete-remote-session.png" alt-text="Screenshot of the Bastion sessions page with the delete option selected for one of the two sessions.":::
+
 You'll walk through how to manage remote sessions in the next unit.
