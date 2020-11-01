@@ -41,7 +41,7 @@ Assume that you have five instances of your app deployed in your cluster. There 
 
 If you decide to update your app manually, you can remove all pods, and then launch new pods running version 2.0.0 of your app. With this strategy, your app will experience downtime.
 
-Instead, you'ii want to execute a rolling update, whereby you launch pods with the new version of your app before you remove the older app versioned pods. Rolling updates will launch one pod at a time instead of taking down all the older pods at once. Deployments honor the number of replicas configured in the section that describes information about replica sets. It will maintain the number of pods specified in the replica set as it replaces old pods with new pods.
+Instead, you'll want to execute a rolling update, whereby you launch pods with the new version of your app before you remove the older app versioned pods. Rolling updates will launch one pod at a time instead of taking down all the older pods at once. Deployments honor the number of replicas configured in the section that describes information about replica sets. It will maintain the number of pods specified in the replica set as it replaces old pods with new pods.
 
 :::image type="content" source="../media/4-pods-running-different-version.svg" alt-text="Diagram that shows five pods, two pods set as version 1 and 3 pods set as version 2." border="false":::
 
