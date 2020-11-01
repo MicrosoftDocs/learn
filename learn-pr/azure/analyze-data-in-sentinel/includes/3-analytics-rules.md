@@ -7,7 +7,7 @@ You can start search for potential threat by using built in analytics rules. The
 - Machine Learning Behavior Analytics
 - Scheduled alerts
 
-![Screenshot of rule templates in the Analytics home page](../media/03-rule-templates.png)
+![Screenshot of rule templates in the Analytics home page](../media/03-rule-templates.PNG)
 
 ## Fusion alerts
 
