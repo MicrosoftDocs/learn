@@ -22,6 +22,8 @@ In the **Set rule logic** section, you can define the detection method by specif
 
 You are entering the KQL query string in the **Rule query** and then in the **Results preview** area to the right, you can see the results that query will generate. The Results preview section will help you to determine that your query return expected results.
 
+![Screenshot of the wizzard of creating scheduled analytics rule](../media/05-Create-scheduled-rule.PNG)
+
 Here&#39;s a sample query that would alert you when an anomalous number of resources is created in Azure Activity.
 
 ```kusto
