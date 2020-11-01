@@ -15,9 +15,10 @@ In this task, you will explore Azure Sentinel analytics rule.
 
 ![](RackMultipart20201101-4-1ob6vhl_html_a3a95526685ba175.png)
 
-1. In the **Analytics rule wizard - Create new rule from template** tab, review the default values and click **Next:**** Set rule logic.**
+1. In the **Analytics rule wizard - Create new rule from template** tab, review the default values and click **Next:Set rule logic.**
 
-**Note** : In General pane you can identify the Tactics that specify techniques and methodologies in MITRE ATT&amp;CK model used by different kinds of malware
+>[!Note]
+> In General pane you can identify the Tactics that specify techniques and methodologies in MITRE ATT&amp;CK model used by different kinds of malware
 
 1. In the **Set rule logic** page, you can review the predefined Rule query. On the right site you can use **Result simulation** to test the query and preview the real data. Click on **Test with current data** and observe the results.
 
