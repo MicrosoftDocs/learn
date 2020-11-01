@@ -19,9 +19,10 @@ In this task, you will deploy Azure Sentinel.
 
 5. Click  **Review + Create**  and then click  **Create**.
 
-**Note** : Wait for the deployment to complete. The deployment should take less than 1 minute.
+>[!Note]
+> Wait for the deployment to complete. The deployment should take less than 1 minute.
 
-1. Once that the Workspace is created, in **Add Azure Sentinel**** to a workspace **blade, click** Add.**
+6. Once that the Workspace is created, in **Add Azure Sentinel**** to a workspace **blade, click** Add.**
 
 **Note** : Wait for the deployment to complete. The deployment should take less than 1 minute.
 
@@ -35,25 +36,25 @@ In this task, you will deploy Azure Sentinel connectors to Azure Activity and Az
 
 ![](RackMultipart20201101-4-du82r8_html_612ee3c1063f355.png)
 
-1. In the **Azure Activity** pane, slick on the link **Configure Azure Activity logs**
+4. In the **Azure Activity** pane, slick on the link **Configure Azure Activity logs**
 
 ![](RackMultipart20201101-4-du82r8_html_422b315ab251d541.png)
 
-1. Click on your subscription and then click **Connect.**
-2. When you receive status **Connected** , you can close all open blades to return on **Azure Sentinel| Data connector** blade.
-3. In the Azure portal, search for and select Security Center
-4. In the **Security Center | Getting started** pane, verify that your subscription is selected and click **Upgrade.** In the install Agents pane, click **Install agents.**
+5. Click on your subscription and then click **Connect.**
+6. When you receive status **Connected** , you can close all open blades to return on **Azure Sentinel| Data connector** blade.
+7. In the Azure portal, search for and select Security Center
+8. In the **Security Center | Getting started** pane, verify that your subscription is selected and click **Upgrade.** In the install Agents pane, click **Install agents.**
 
 ![](RackMultipart20201101-4-du82r8_html_92596f151d072b55.png)
 
-1. In the Azure portal, search for and select Azure Sentinel, and select the previously created Sentinel workspace.
-2. In the **Azure Sentinel** blade, on the left side in the menu bar, in the **Configuration** section, select **Data connectors.**
-3. In the **Data connectors** pane, search for and select **Azure Security Center.** In the detailed pane on the right site click on **Open connector page.**
-4. In the **Azure Security Center** pane, in the **Configuration** section, locate your subscription and click **Connect**
+9. In the Azure portal, search for and select Azure Sentinel, and select the previously created Sentinel workspace.
+10. In the **Azure Sentinel** blade, on the left side in the menu bar, in the **Configuration** section, select **Data connectors.**
+11. In the **Data connectors** pane, search for and select **Azure Security Center.** In the detailed pane on the right site click on **Open connector page.**
+12. In the **Azure Security Center** pane, in the **Configuration** section, locate your subscription and click **Connect**
 
 ![](RackMultipart20201101-4-du82r8_html_d97fc63671ce75cb.png)
 
-1. Scroll down in the instructions pane and in the **Create incidents – Recommended !,** click **Enable.**
+13. Scroll down in the instructions pane and in the **Create incidents – Recommended !,** click **Enable.**
 
 **Exercise 2**
 
@@ -86,15 +87,15 @@ Draft lab exercise title: Create an Azure Sentinel playbook
 
 **Note** : Wait for the deployment to complete. The deployment should take less than 1 minute.
 
-1. Once the deployment is complete, click **Go to resource.**
-2. In the **Logic Apps Designer** pane, scroll down and click **Blank Logic App.**
-3. In the search field type and select **Azure Sentinel.**
-4. In the **Triggers** tab, click **When Azure Sentinel incident creation rule was triggered (Private Preview only) (preview).**
+6. Once the deployment is complete, click **Go to resource.**
+7. In the **Logic Apps Designer** pane, scroll down and click **Blank Logic App.**
+8. In the search field type and select **Azure Sentinel.**
+9. In the **Triggers** tab, click **When Azure Sentinel incident creation rule was triggered (Private Preview only) (preview).**
 
 ![](RackMultipart20201101-4-du82r8_html_985baf0d737c4c8a.png)
 
-1. In the Azure Sentinel, verify that for the Tenant in the drop-down menu, **Default Directory** is selected and then click **Sign in.**
+10. In the Azure Sentinel, verify that for the Tenant in the drop-down menu, **Default Directory** is selected and then click **Sign in.**
 
 ![](RackMultipart20201101-4-du82r8_html_70cdc921bd1e87c2.png)
 
-1. Provide the credential for your Azure subscription and then click **+ New step.**
+11 Provide the credential for your Azure subscription and then click **+ New step.*
