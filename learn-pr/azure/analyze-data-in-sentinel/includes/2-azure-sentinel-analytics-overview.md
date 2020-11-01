@@ -34,7 +34,7 @@ Analytics rules will help Contoso to improve the operation of their SecOps team 
 
 You can start creation of the analytics rules from the **Analytics** home page, that you can select from the left-hand navigation bar.
 
-![Screenshot of the Analytics home page][../media/02-Analytics-page.png]
+![Screenshot of the Analytics home page](../media/02-Analytics-page.png)
 
 Analytics home page is arranged into three main parts:
 
@@ -48,7 +48,7 @@ Currently Microsoft has pre-loaded more than 150 template rules from Azure Senti
 
 To use filters, select the blue buttons, and then select the filters you want to use.
 
-![Screenshot of the Analytics home page][../media/02-Filter-The-Rule-Templates.PNG]
+![Screenshot of the Analytics home page](../media/02-Filter-The-Rule-Templates.PNG)
 
 Here are the filters and what you would use them for:
 
