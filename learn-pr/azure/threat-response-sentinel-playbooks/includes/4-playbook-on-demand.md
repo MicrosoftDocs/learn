@@ -1,5 +1,3 @@
-## Running playbooks on demand
-
 Some incidents need more investigation before executing the Playbook.
 
 You can use Playbooks to run on demand from the incident details, to trigger steps as part of the investigation or to conduct some remediation action.
