@@ -1,7 +1,6 @@
 ### Module scenario
 
-Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Endpoint Protection, and Microsoft Azure Information Protection. Contoso provides threat protection for its Azure-based and on-premises resources by using the paid version of Azure Security Center. The company also monitors and protects other non-Microsoft assets.
-<!--LM: For "Endpoint Protection", please indicate System Center or Intune.-->
+Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, System Center Endpoint Protection, and Microsoft Azure Information Protection. Contoso provides threat protection for its Azure-based and on-premises resources by using the paid version of Azure Security Center. The company also monitors and protects other non-Microsoft assets.
 Security analysts at Contoso face a huge triage burden. They deal with a high volume of alerts from multiple products. They correlate alerts in the following ways:
 
 - Manually from different project dashboards
@@ -18,7 +17,7 @@ As Contoso's lead system engineer and Azure administrator, you've been asked to 
 - Explain the importance of Azure Sentinel Analytics
 - Explain different types of analytics rules
 - Create rules from templates
-- Create new rules and queries using the wizard
+- Create new analytics rules and queries using the wizard
 - Manage rules with modifications
 
 ## Prerequisites
