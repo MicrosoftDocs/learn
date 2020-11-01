@@ -1,5 +1,3 @@
-## What is Azure Sentinel Analytics?
-
 After completing this unit, you can explain the importance of Azure Sentinel Analytics
 
 - Understand the importance of analytics rules for security
