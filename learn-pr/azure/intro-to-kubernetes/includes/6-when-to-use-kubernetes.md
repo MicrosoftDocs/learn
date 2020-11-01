@@ -23,7 +23,7 @@ As you've seen earlier, Kubernetes provides support for all of these challenges 
 
 You want to use Kubernetes when your company:
 
-- Develops appls as microservices.
+- Develops apps as microservices.
 - Develops apps as cloud-native applications.
 - Deploys microservices by using containers.
 - Updates containers at scale.
