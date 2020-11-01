@@ -1,6 +1,6 @@
-## Types of Analytics rules
+## Types of analytics rules
 
-You can start search for potential threat by using built in analytic rules. There are currently four types of analytic rules:
+You can start search for potential threat by using built in analytics rules. There are currently four types of analytics rules:
 
 - Fusion alerts
 - Microsoft Security
@@ -58,10 +58,10 @@ You can filter these alerts by severity and/or by specific text that is containe
 
 ## Machine learning behavioral analytics
 
-These rules are built-in, and you can not edit them, or see the rule settings. They use Microsoft machine learning algorithms for detection of suspicious activity. Machine Learning algorithms correlate several low fidelity anomalies, into a high fidelity security incidents. That saves hours on digging into thousands of alerts from different products and manually correlate them. Machine learning technology used in analytic rule also reduce the noise of alerts, but quickly ingesting and connecting the important data.
+These rules are built-in, and you can not edit them, or see the rule settings. They use Microsoft machine learning algorithms for detection of suspicious activity. Machine Learning algorithms correlate several low fidelity anomalies, into a high fidelity security incidents. That saves hours on digging into thousands of alerts from different products and manually correlate them. Machine learning technology used in analytics rule also reduce the noise of alerts, but quickly ingesting and connecting the important data.
 
 For example, with Machine learning behavioral analytics rule you can detect anomalous SSH Login or RDP Login activity.
 
 ## Scheduled alerts
 
-These types of analytic rules provide you highest level of customization. You can define your own KQL to filter the security events, and you can set up the schedule when the rule will run.
+These types of analytics rules provide you highest level of customization. You can define your own KQL to filter the security events, and you can set up the schedule when the rule will run.
