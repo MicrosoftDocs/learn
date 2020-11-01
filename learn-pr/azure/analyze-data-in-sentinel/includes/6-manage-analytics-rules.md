@@ -14,7 +14,7 @@ There are 4 action that you can take on existing active rules:
 You can modify existing rules, by clicking on the **Edit** button in the details pane blade. Editing a rule will take you through the same pages as creating the rule. The previous inputs that were used in the creation of the rule are preserved. You can change any properties of the rule to further tune the result of the threat detection.
 
 The common modification that you want to achieve is to attach an automated response to an already detected threat. In the **Automated Response** you can select one of the existing Playbooks, that define the automated activity that will run if the threat is detected. 
-For example, your analytic rule has detected an incident that has been resolved, and you want to reduce further alerting if simiral activity occur. By attaching a playbook that contains automated activity, you can for example, change the incident status od add comments.  
+For example, your analytics rule has detected an incident that has been resolved, and you want to reduce further alerting if similar activity occur. By attaching a playbook that contains automated activity, you can for example, change the incident status or add comments.  
 
 ## Disable
 
