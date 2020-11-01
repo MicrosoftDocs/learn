@@ -7,6 +7,8 @@ You can start search for potential threat by using built in analytics rules. The
 - Machine Learning Behavior Analytics
 - Scheduled alerts
 
+![Screenshot of rule templates in the Analytics home page](../media/03-rule-templates)
+
 ## Fusion alerts
 
 Fusion alerts identify, anomalous behaviors and suspicious activities at various stages of the kill-chain. Fusion correlates multiple security alerts from various products, and by using Machine Learning can detect advanced multistage attacks.
