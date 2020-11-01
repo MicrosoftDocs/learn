@@ -28,7 +28,7 @@ Details pane of selected rule is displayed right of the listing and provide more
 
 ## Creating an analytic rule from rule template
 
-When you select a predefined rule template, in the detailed pane, you will have a button **Create rule.** By clicking this button, you start the creation of the analytic rule from that template. The composition of the analytic rules from template depends on the rule type that you select.
+When you select a predefined rule template, in the detailed pane, you will have a button **Create rule.** By clicking this button, you start the creation of the analytics rule from that template. The composition of the analytic rules from template depends on the rule type that you select.
 
 Alert rule is created by default using Fusion rule template, and for Machine Learning Behavior Analytics, you can only create the rule as enabled or disabled, without the possibility to further customize.
 
