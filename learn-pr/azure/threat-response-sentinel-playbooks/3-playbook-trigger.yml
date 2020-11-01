@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: "List of dynamicly selected threats?"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "List of dynamic parameters "
+      explanation: "Dynamic Content shows any available outputs from the previous step, which you can use as inputs for the current action."
+    - content: "List of dynamic inputs for the current action"
+      isCorrect: true
+      explanation: "Dynamic Content shows any available outputs from the previous step, which you can use as inputs for the current action."
+    - content: "List of dynamic users"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
-      isCorrect: false
-      explanation: "Explanation 3"
+      explanation: "Dynamic Content shows any available outputs from the previous step, which you can use as inputs for the current action."
   - content: "You create a new playbook to notify you each time when a user is delegated the role of Global Administrator. Which connector you should select in your Logic App?"
     choices:
     - content: "Azure Active Directory connector."
