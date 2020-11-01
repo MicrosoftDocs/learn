@@ -2,8 +2,8 @@
 uid: learn.azure.analyze-data-in-sentinel.2-azure-sentinel-analytics-overview
 metadata:
   title: What is Azure Sentinel analytics?
-  description: TODO
-  ms.date: TODO
+  description: Explain what is Azure Sentinel Analytics
+  ms.date: 10/30/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -15,31 +15,29 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "Which of the following are not common use case of analytics rules?"
     choices:
-    - content: "Answer 1"
+    - content: "Identifying compromised accounts"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "Azure Sentinel Analytics rules can identify compromised accounts."
+    - content: "Detecting insider threats"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "Azure Sentinel Analytics rules can detect insider threats"
+    - content: "Visualize the data from Sentinel Connectors."
+      isCorrect: true
+      explanation: "You cannot visualize the data with analytics rules. You can use Azure Sentinel Workbook to present and visualize the data collected from the security connectors."
+    - content: "Network traffic analyzes to locate trends indicating potential attacks"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
-  - content: "Question 2"
+      explanation: "Azure Sentinel Analytics rules can analyze network traffic to locate trends indicating potential attacks."
+  - content: "You want to find additional information tha explain the analytics template and the rule that is used in detction of the threats. Which part in the analytics rule page provide that information?"
     choices:
-    - content: "Answer 1"
+    - content: "Detailed pane"
+      isCorrect: true
+      explanation: "The detailed view pane contains additional information that explains the template and the rule that is used in detection"
+    - content: "Header bar"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "The header bar contains information of the number of the rules that are currently in use"
+    - content: "Rules and Templates section"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
-      isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "Contains all the rule templates that Microsoft has pre-loaded from Azure Sentinel's GitHub repository"
+ 
