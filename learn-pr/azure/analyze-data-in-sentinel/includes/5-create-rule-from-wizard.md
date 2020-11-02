@@ -1,20 +1,20 @@
-You can create a custom analytics rules to search for suspicious activities and threats in your environment. Creating a custom rule from the scheduled query rule type provides you with the highest level of customization. You can define, your own Kusto Query Language (KQL) code, set a schedule to run the alerts or provide automated action by associating an Azure Sentinel Playbook.
+You can create a custom analytics rules to search for suspicious activities and threats in your environment. Creating a custom rule from the scheduled query rule type provides you with the highest level of customization. You can define, your own Kusto Query Language (KQL) code, set a schedule to run the alerts, or provide an automated action by associating an Azure Sentinel Playbook.
 
 ## Creating an analytics rule from Wizard
 
-To start creating analytics rule, in the Azure portal, under Azure Sentinel, select  **Analytics**. In the top menu bar, select  **+Create**  and select  **Scheduled query rule.**
+To create an analytics rule, in the Azure portal, under **Azure Sentinel**, select  **Analytics**. In the top menu bar, select  **+Create**, and then select  **Scheduled query rule.**
 
 ## General page
 
-The following table lists the inputs you must provide in the **General** section.
+The following table lists the inputs you must provide in the **General** page.
 
 |||
 | --- | --- |
-| Name | Provide descriptive name to explain what type of suspicious activity the alert detects |
-| Description | A detailed description will help your security analysts to understand what the rule does |
-| Tactics | From the **Tactics** drop-down menu, you can choose among the categories of attacks to classify the rule base on MITRE tactics |
+| Name | Provide a descriptive name to explain what type of suspicious activity the alert detects |
+| Description | Enter a detailed description that will help other security analysts understand what the rule does |
+| Tactics | From the **Tactics** drop-down menu, choose one among the available categories of attacks to classify the rule following the MITRE tactics |
 | Severity | Select the **Severity** drop-down menu to categorize the level of importance of the alert as one of four options: High, Medium, Low, Informational |
-| Status | Specify the status of the rule. By default is **Enable.** You can select **Disable** to disable the rule if it generate large number of fault positive |
+| Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generate large number of false positives |
 
 ## Set rule logic
 
@@ -73,7 +73,7 @@ In the **Re-open closed matching incidents** section, you can configure Azure Se
 
 You can use the **Automated Response** section to select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
 
-For More details on how to create a playbook  and run the automated activity on an incident creation, refer to the "Threat response with Sentinel Playbooks".
+For More details on how to create a playbook and run the automated activity on an incident creation, refer to the "Threat response with Sentinel Playbooks".
 
 ## Review and create
 
