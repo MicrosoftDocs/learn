@@ -43,7 +43,7 @@ Properties can be used in the following ways:
 
 ## Controlling the heating, ventilation, and air conditioning unit (HVAC) using Azure IoT Central properties
 
-From IoT Central, the user sets the desired temperature property. Azure IoT Central requests Azure IoT Hub to send a device twin message to the device. The device actions and acknowledges the request. Azure IoT Hub updates the device twin reported property and IoT Central then queries and display this reported property.
+From the IoT Central device properties tab, you can set the desired temperature property. Azure IoT Central requests Azure IoT Hub to send a device twin message to the device. The device actions and acknowledges the request. Azure IoT Hub updates the device twin reported property and IoT Central then queries and display this reported property.
 
 ![The illustration shows a device twin configuration pattern.](../media/azure-device-twins-c2d-pattern.png)
 
@@ -60,7 +60,7 @@ The following steps outline how Azure IoT Central uses device twins to set prope
 
 ------
 
-## Device twin bindings
+## Getting started with device twin bindings
 
 Remember, Azure IoT Central properties are implemented using Azure IoT Hub device twins. A device twin binding maps a device twin property name with a handler function that will be called to implement the action.
 
