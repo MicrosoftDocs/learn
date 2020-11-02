@@ -22,7 +22,7 @@ In the **Set rule logic** page, you can define the detection method by specifyin
 
 When you enter the KQL query string in the **Rule query** field, you can use **Results preview** area to the right to see the results of the query. The Results preview section will help you to determine that your query return expected results.
 
-![Screenshot of the wizzard of creating scheduled analytics rule](../media/05-Create-scheduled-rule.PNG)
+![Screenshot of the wizard of creating scheduled analytics rule](../media/05-Create-scheduled-rule.PNG)
 
 The following sample query alerts you when an anomalous number of resources is created in Azure Activity.
 
@@ -41,7 +41,7 @@ AzureActivity
 
 In the  **Map entities**  section, you can define the entities that are returned as part of query rule. You can then use these entities to perform in-depth analysis by selecting  **Add** to add these entities in the query rule. These entities can help you perform a visual investigation, because they will appear as a group into **Incident** tab. Some of the entities contain information that represents a user, host, or IP address.
 
-In the **Query Scheduling** section, you can configure how often the query should run, and how far back in history the query should searc the data. It's important that you don't search for data that is older then the query's run frequency, because that can create duplicate alerts.
+In the **Query Scheduling** section, you can configure how often the query should run, and how far back in history the query should search the data. It's important that you don't search for data that is older then the query's run frequency, because that can create duplicate alerts.
 
 In the **Alert threshold** section, you can specify the number of a positive result that can be returned for the rule, before it generates an alert. You can use the following logical operators to define an appropriate logical expression:
 
@@ -67,13 +67,13 @@ In the **Alert grouping** section, you can reduce the noise from multiple alerts
 - **Grouping all alerts triggered by this rule into a single incident**
 - **Grouping alerts into a single incident if the selected entities match** - for example source or target IP addresses.
 
-In the **Re-open closed matching incidents** section, you can configure Azure Sentinel Analytics to open a previously closed incident again if another alert is generated that also belongs to the previosly closed incident.
+In the **Re-open closed matching incidents** section, you can configure Azure Sentinel Analytics to open a previously closed incident again if another alert is generated that also belongs to the previously closed incident.
 
 ## Automated response
 
 You can use the **Automated Response** section to select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
 
-For More details on how to create a playbopok  and run the automated activity on an incident creation, refer to the "Threat response with Sentinel Playbooks".
+For More details on how to create a playbook  and run the automated activity on an incident creation, refer to the "Threat response with Sentinel Playbooks".
 
 ## Review and create
 
