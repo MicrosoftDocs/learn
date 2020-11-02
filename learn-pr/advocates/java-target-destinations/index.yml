@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose an Azure service for deploying your Java application
-summary: In this tutorial, you'll learn the main options available to deploy Java applications to Azure.
+summary: Explore the options for deploying Java applications to Azure and choose the best fit for your application.
 abstract: | 
  In this tutorial, you will:
   - Learn the different deployment options available for Java applications
