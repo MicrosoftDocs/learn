@@ -77,6 +77,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
 
     :::code language="yaml" source="../code/deploy/k8s/helm-simple/webspa/templates/configmap.yaml" highlight="25-26":::
 
+<!--TODO:Do we really need this step since we're setting the keys as env. vars?-->
 1. In the *src/Web/WebSPA/appsettings.json* file, replace the `// Add the Feature Management keys` comment with the following. Save your changes.
 
     ```json

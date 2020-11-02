@@ -26,7 +26,7 @@ In this unit, you will:
 
      > az appconfig credential list  --resource-group eshop-learn-rg --name eshoplearn20201026204439872 --query [0].connectionString --output tsv
 
-    Endpoint=https://eshoplearn20201026204439872.azconfig.io;Id=4oTq-l1-s0:bweLwBPttsvIttKnuQDm;Secret=<secret-value>
+    Endpoint=https://eshoplearn20201026204439872.azconfig.io;Id=<id>;Secret=<secret>
     ```
 
     In the preceding output, the string prefixed with "Endpoint=" represents the App Configuration store's connection string.
@@ -42,14 +42,14 @@ The `AppConfig__Endpoint` line will resemble the following YAML:
 <!--TODO: should we store this connection string in Key Vault instead?-->
 
 ```yaml
-AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;Id=...;Secret=..."
+AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;Id=<id>;Secret=<secret>"
 ```
 
 ## Add the feature flag for Coupons
 
 1. In another tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Cloud Shell.
 1. Use the search box to find and open the App Configuration resource prefixed with *:::no-loc text="eshoplearn":::*.
-1. Select **Feature manager** > **Add**.
+1. In the **Operations** section, select **Feature manager** > **Add**.
 1. Select the **Enable feature flag** check box, enter *Coupons* in the **Feature flag name** text box, and select the **Apply** button.
 
 ## Connect your app to the App Configuration store
@@ -66,7 +66,7 @@ Apply the following changes to your ASP.NET Core project:
 
     The preceding command installs a NuGet package containing the .NET Core configuration provider for the App Configuration service.
 
-1. In the `CreateHostBuilder` method of *src/Web/WebSPA/Program.cs*, replace the comment `// Add the AddAzureAppConfiguration code` with the following code:
+1. In the `CreateHostBuilder` method of *src/Web/WebSPA/Program.cs*, replace the comment `// Add the AddAzureAppConfiguration code` with the following code. Save your changes.
 
     ```csharp
     .ConfigureAppConfiguration((_, configBuilder) =>
@@ -76,7 +76,7 @@ Apply the following changes to your ASP.NET Core project:
         if (settings.GetValue<bool>("UseFeatureManagement") &&
             !string.IsNullOrEmpty(settings["AppConfig:Endpoint"]))
         {
-            config.AddAzureAppConfiguration(options =>
+            configBuilder.AddAzureAppConfiguration(options =>
             {
                 var cacheTime = TimeSpan.FromSeconds(5);
 
@@ -102,22 +102,23 @@ Apply the following changes to your ASP.NET Core project:
     * The `UseFeatureFlags` method defines a cache expiration policy of five seconds for the feature flags. The default value is 30 seconds. Once five seconds have elapsed, the cache is refreshed with updated feature flag values.
     * The `ConfigureRefresh` method defines a cache expiration policy of five seconds for the `FeatureManagement:Coupons` key in the App Configuration store. The default value is 30 seconds. Once five seconds have elapsed, the cache is refreshed with an updated value for the `FeatureManagement:Coupons` key.
 
-1. In the `Configure` method of *src/Web/WebSPA/Startup.cs*, replace the comment `// Add the UseAzureAppConfiguration code` with the following code:
+1. Apply the following changes in *src/Web/WebSPA/Startup.cs*:
+    1. In the `Configure` method, replace the comment `// Add the UseAzureAppConfiguration code` with the following code:
 
-    ```csharp
-    if (Configuration.GetValue<bool>("UseFeatureManagement"))
-    {
-        app.UseAzureAppConfiguration();
-    }
-    ```
+        ```csharp
+        if (Configuration.GetValue<bool>("UseFeatureManagement"))
+        {
+            app.UseAzureAppConfiguration();
+        }
+        ```
 
-    The preceding code adds the App Configuration middleware to the request pipeline. The middleware triggers a refresh operation for the Feature Management parameters for every incoming request. Then it's up to the `AzureAppConfiguration` provider to decide, based on the refresh settings configured in the previous step, when to actually connect to the store to get the values.
+        The preceding code adds the App Configuration middleware to the request pipeline. The middleware triggers a refresh operation for the Feature Management parameters for every incoming request. Then it's up to the `AzureAppConfiguration` provider to decide, based on the refresh settings configured in the previous step, when to actually connect to the store to get the values.
 
-1. In the `ConfigureServices` method of *src/Web/WebSPA/Startup.cs*, add a call to `AddAzureAppConfiguration` beneath the call to `AddFeatureManagement`.
+    1. In the `ConfigureServices` method, add a call to `AddAzureAppConfiguration` beneath the call to `AddFeatureManagement`. Save your changes.
 
-    Your code will resemble the following snippet:
+        Your code will resemble the following snippet:
 
-    :::code language="csharp" source="../code/src/web/webspa/startup.cs" id="snippet_ConfigureServices" highlight="7":::
+        :::code language="csharp" source="../code/src/web/webspa/startup.cs" id="snippet_ConfigureServices" highlight="6":::
 
 ## Redeploy the app
 
