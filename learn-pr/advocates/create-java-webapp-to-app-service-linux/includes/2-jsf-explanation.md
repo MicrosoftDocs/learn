@@ -1,3 +1,17 @@
+## What is JavaServer Faces(JSF)
+
+JavaServer Faces (JSF) is a Java Based Web Application Framework. It is one of the technology in Java EE Platform Enterprise Edition (Java EE) specification.
+JSF is Component Based application. The state of the UI component is saved when the client requests a new page and is restored when a response to the request is returned. Initially, JSF used Java Server Pages (JSP) as its screen display technology, but since 2.0, Facelets, which is closer to ordinary HTML, has been used.
+
+
+## ------- TODO NEED TO ADD SENARIO ---------
+
+***Actually I don't know which senario is better for writing this kind of basic technologies.
+(Basically, this is the explanation of the Basic Technology. there is no business scenario in this section.)***
+
+
+### JSF Basic Functionality
+
 JSF applications are roughly divided into the following two functions.
 
 - **Facelets** : Facelets is an XHTML-based template engine that describes screen layouts
@@ -6,7 +20,8 @@ JSF applications are roughly divided into the following two functions.
 `Facelets` is an XHTML-based template engine that describes screen layouts, written by XHTML. XHTML conforms to the Document Type Definition (DTD) defined in W3C and is described as a file with a xhtml extension.
 JSF 2.3 base is available for Jakarta EE 8 based applications.
 
-`BackingBean` is a Java class that binds to the parameter of the Facelets and sets and processes values. In order to implement the back end process on the server side, it is necessary to implement Facelets and the corresponding backing bean.
+`BackingBean` is a Java class that binds to the parameter of the Facelets and sets and processes values. In order to implement the back end process on the server side, it is necessary to implement Facelets and the corresponding backing bean.  
+Until Java EE 6, it was used to implement the Backing Bean with JSF Managed Bean however it is used to create Backing Beaan with Contexts and Dependency Injection(CDI) since Java EE 7.
 
 ## JSF Page Creation with PrimeFaces
 
@@ -89,7 +104,7 @@ public class IndexController implements Serializable {
 
 In this way, JSF allows the View (Facelets) and Controller (Backing Bean) that make up the screen to be implemented separately.
 
-## More Information about JSF
+## Additional resources
 
 In addition to the above, JSF has many useful functions such as data validation and conversion, composite multiple components, template function, and support for Ajax and WebSocket.
 For more information, please visit `http://www.javaserverfaces.org/`.
