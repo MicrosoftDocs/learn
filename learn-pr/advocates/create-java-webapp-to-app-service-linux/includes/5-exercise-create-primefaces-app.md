@@ -2,7 +2,7 @@ You've been tasked with creating a simple Aapplication using the JavaServer Face
 The TODO application can add the new tasks and you can see the lists of all tasks and finally you can mark the task as finished.
 As part of that evaluation, you will build a web application and deploy it to Linux on Azure App Services Tomcat.
 
-![My ToDo List App](../media/primefaces-todo-list.png)
+:::image type="content" source="../media/primefaces-todo-list.png" alt-text="My ToDo List App":::
 
 ## Create Todo web app with PrimeFaces
 
@@ -317,6 +317,6 @@ $INSTALL_DIR/apache-tomcat-9.0.38/bin/startup.sh
 After running Tomcat, access `http://localhost:8080/azure-javaweb-app/` and you will see the screen below.
 Use the `Add Task` button to add a task, or use the `Update Task` to update the task.
 
-![My ToDo List App Done](../media/primefaces-todo-list.png)
+:::image type="content" source="../media/primefaces-todo-list.png" alt-text="My ToDo List App Done":::
 
 You have successfully run the Todo web application implemented in PrimeFaces in your local Tomcat environment.

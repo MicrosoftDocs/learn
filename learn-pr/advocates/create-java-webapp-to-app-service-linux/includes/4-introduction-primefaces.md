@@ -2,7 +2,7 @@ PrimeFaces is one of the most popular UI Component libraries in JavaServer Faces
 If you use the framework, you can create rich Web Application with very easily.
 In this module, we will create Simple Todo List application like follows. And in this section, we will learn the PrimeFaces component which we will use in the Application.
 
-![My ToDo List App](../media/primefaces-todo-list.png)
+:::image type="content" source="../media/primefaces-todo-list.png" alt-text="My ToDo List App":::
 
 ## PrimeFaces Component in the Application
 
@@ -36,7 +36,7 @@ In the Todo Application, we will use the `position="north"` and `position="cente
 </p:layout>
 ```
 
-![PrimeFaces Layout](../media/primeafces-layout.png)
+:::image type="content" source="../media/primeafces-layout.png" alt-text="PrimeFaces Layout":::
 
 ### PrimeFaces OutputLabel, InputText, CommandButton
 
@@ -94,7 +94,7 @@ public class TodoListController implements Serializable {
 
 If you create the XHTML and Backing Bean, you can  see like the following screen.
 
-![PrimeFaces Input Output Button](../media/primeafces-in-out-button.png)
+:::image type="content" source="../media/primeafces-in-out-button.png" alt-text="PrimeFaces Input Output Button":::
 
 ### PrimeFaces DataTable
 
@@ -207,7 +207,7 @@ public class TodoItem implements Serializable {
 
 If you write and execute the above DataTable, the following screen will be displayed.
 
-![PrimeFaces DataTable](../media/primefaces-datatable.png)
+:::image type="content" source="../media/primefaces-datatable.png" alt-text="PrimeFaces DataTable":::
 
 In this section, we can see how to use the PrimeFaces Components.  
 Since Next section, we will create the Todo Application by using the above PrimeFaces components.

@@ -153,7 +153,7 @@ When you check the message, the public URL of the deployed application is displa
 
 `https://azure-javaweb-app-1601463451101.azurewebsites.net`
 
-![Deployed Web App on Azure App Services](../media/deployed-to-the-appservices.png)
+:::image type="content" source="../media/deployed-to-the-appservices.png" alt-text="Deployed Web App on Azure App Services":::
 
 ## Confirm the Log Stream from Command Line
 
@@ -163,4 +163,4 @@ TODO: Explanation
 az webapp log tail -g azure-javaweb-app-1601463451101 -n azure-javaweb-app
 ```
 
-![Execution of the Log Stream](../media/azure-cli-log-stream.png)
+:::image type="content" source="../media/azure-cli-log-stream.png" alt-text="Execution of the Log Stream":::
