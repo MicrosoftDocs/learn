@@ -2,7 +2,7 @@
 uid: learn.java-target-destinations
 metadata:
   title: Choose an Azure service for deploying your Java application
-  description: In this tutorial, you'll learn the main options available to deploy Java applications to Azure.
+  description: In this tutorial, you'll learn about running your Java applications on Azure, and choose the best option between Virtual Machines, Azure App Services, Serverless functions, Kubernetes and Azure Spring Cloud.
   author: judubois
   ms.author: judubois
   ms.date: 10/12/2020
