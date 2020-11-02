@@ -1,12 +1,12 @@
 The shipping company that you work for wants to avoid any future issues with updates to its applications on the Azure platform. To improve the alert capabilities in Azure, you've chosen to use Azure metric alerts.
 
-In this exercise, you'll create a Linux virtual machine (VM). This VM will run an application that will run the CPU at 100 percent utilization. You'll create monitoring rules in the Azure portal and in the Azure CLI to alert you on high CPU usage.
+In this exercise, you'll create a Linux virtual machine (VM). This VM will run an app that will run the CPU at 100 percent utilization. You'll create monitoring rules in the Azure portal and in the Azure CLI to alert you on high CPU usage.
 
 ## Create the VM
 
 This VM will run a specific configuration that stresses the CPU and generates the metric monitoring data needed to trigger an alert.
 
-1. Let's start by creating the configuration script. Run this command in Azure Cloud Shell to create the `cloud-init.txt` file with the configuration for the virtual machine.
+1. Start by creating the configuration script. To create the `cloud-init.txt` file with the configuration for the VM, run the following command in Azure Cloud Shell.
 
     ```bash
     cat <<EOF > cloud-init.txt
@@ -19,7 +19,7 @@ This VM will run a specific configuration that stresses the CPU and generates th
     EOF
     ```
 
-1. Run the `az vm create` command to set up an Ubuntu Linux VM. This command will use the `cloud-init.txt` file that you created in the previous step to configure the VM after it's created.
+1. To set up an Ubuntu Linux VM, run the following `az vm create` command. This command uses the `cloud-init.txt` file that you created in the previous step to configure the VM after it's created.
 
     ```azurecli
     az vm create \
@@ -36,23 +36,25 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you used to activate the sandbox.
 
-1. On the Azure portal menu, select **Monitor**, and then select **Alerts** in the left panel.
+1. On the Azure portal menu, select **More services**, and then select **Monitor**.
 
-1. Select **+ New alert rule**. The **Create rule** page appears.
+1. In the left panel, select **Alerts**.
 
-    ![Image that shows the "Create rule" page](../media/4-create-monitor-rule.png)
+1. Select **+ New alert rule**. The **Create alert rule** page appears.
 
-1. In the **RESOURCE** section, choose **Select**.
+    ![Image that shows the "Create alert rule" page](../media/4-create-monitor-rule.png)
 
-1. The **Filter by subscription** drop-down list should already be populated with **Concierge Subscription**. In the **Filter by resource type** drop-down list, select **Virtual machines**.
+1. Select **Select resource**. The **Select a resource** panel appears.
 
-    Select the **vm1** virtual machine under the **<rgn>[sandbox resource group name]</rgn>** resource group. Then select **Done** at the bottom of the page.
+1. The **Filter by subscription** dropdown should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown, select **Virtual machines**.
+
+    Select the **vm1** virtual machine under the **<rgn>[sandbox resource group name]</rgn>** resource group. Then select **Done** at the bottom of the panel.
 
     ![Image showing the "Select a resource" page](../media/4-select-resource.png)
 
-1. Next, you'll configure the conditional logic for this resource. In the **CONDITION** section, select **Add**.
+1. Next, you'll configure the conditional logic for this resource. From the **Create alert rule** page, under the **Condition** section, select **Select condition**. The **Configure signal logic** panel appears.
 
-1. For **Signal Type**, select **Metrics**. For **Monitor Service**, select **All**.
+1. For **Signal type**, select **Metrics**. For **Monitor service**, select **All**.
 
     The list of available signals will change depending on the selected signal type. From the list of available signal types, select **Percentage CPU**.
 
@@ -66,14 +68,14 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
     | Operator | Greater than |
     | Aggregation type | Maximum |
     | Threshold value | 90 |
-    | Aggregation granularity (period) | 1 minute |
-    | Frequency of evaluation | every 1 minute |
+    | Aggregation granularity (Period) | 1 minute |
+    | Frequency of evaluation | Every 1 Minute |
 
     Select **Done**.
 
     ![Image that shows the settings for metric condition logic](../media/4-metric-alert-logic.png)
 
-1. In the **ALERT DETAILS** section, provide the following information:
+1. From the **Create alert rule** page, under the **Alert rule details** section, provide the following information:
 
     | Setting | Value |
     |---------|---------|
@@ -87,7 +89,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. Select **Create alert rule**.
 
-You have successfully created a metric alert rule that will trigger an alert when the CPU percentage on the virtual machine exceeds 90 percent. The rule will check every minute and review 1 minute of data. It can take up to 10 minutes for a metric alert rule to become active.
+You have successfully created a metric alert rule that will trigger an alert when the CPU percentage on the VM exceeds 90 percent. The rule will check every minute and review one minute of data. It can take up to 10 minutes for a metric alert rule to become active.
 
 ## Create the metric alert through the CLI
 
@@ -137,6 +139,6 @@ It might take 10 minutes before you see the alerts show up in your portal.
 
     ![Image that shows the "All Alerts" area](../media/4-all-alerts-sev4.png)
 
-1. Selecting one of the alerts will display the details on the alert. After the issue is resolved, you can also change the alert state.
+1. Selecting one of the alerts shows the details on the alert. After the issue is resolved, you can also change the alert state.
 
     ![Image that shows the alert details page](../media/4-alert-details.png)

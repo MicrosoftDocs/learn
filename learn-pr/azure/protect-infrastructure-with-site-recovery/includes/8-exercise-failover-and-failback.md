@@ -60,7 +60,7 @@ In this exercise, you'll complete failover for a VM using PowerShell, and fail b
     $RecoveryFabric = Get-AsrFabric -Name "asr-a2a-default-eastus2"
     $RecoveryProtContainer = Get-ASRProtectionContainer -Fabric $RecoveryFabric
     $ProtectionContainerMapping = Get-AzRecoveryServicesAsrProtectionContainerMapping -ProtectionContainer $RecoveryProtContainer -Name eastus2-westus2-24-hour-retention-policy
-    $StorageAccount = New-AzStorageAccount -ResourceGroupName "east-coast-rg" -AccountName "reprotectcache" -Location eastus2 -SkuName Standard_GRS
+    $StorageAccount = New-AzStorageAccount -ResourceGroupName "east-coast-rg" -AccountName "reprotectcache$(Get-Random)" -Location eastus2 -SkuName Standard_GRS
     $ResourceGroup = Get-AzResourceGroup -Name "west-coast-rg"
 
     $ReprotectJob = Update-AzRecoveryServicesAsrProtectionDirection -AzureToAzure -ProtectionContainerMapping $ProtectionContainerMapping -ReplicationProtectedItem $ReplicationProtectedItem -LogStorageAccountId $StorageAccount.ID -RecoveryResourceGroupId $ResourceGroup.ResourceId
