@@ -4,11 +4,12 @@ In this unit, you will learn how to remote restart an Azure Sphere from Azure Io
 
 ## Understanding IoT Central commands
 
-Azure IoT Central uses commands to...
+Azure IoT Central uses commands to invoke an action on a device. Commands are often used for interactive control of devices, such as turning on a fan, a light, or in the case of this unit, to restart the Azure Sphere.
 
-**Direct methods** for control that require immediate confirmation of the result. Direct methods are often used for interactive control of devices, such as turning on a fan.
+IoT Central is an Azure IoT Hub application and it sends commands to a device using IoT Hub direct methods. IoT Hub direct methods represent a request-reply interaction with a device similar to an HTTP call in that they succeed or fail immediately (after a user-specified timeout). This approach is useful for scenarios where the course of immediate action is different depending on whether the device was able to respond.
 
-Why might you want to remote restart an Azure Sphere
+> [!NOTE]
+> There are a number of reasons why you might need to remote restart a Azure Sphere. Device certificates, OS updates, and application updates are done on a 24 hour cycle or after the device has been restarted. You may have an operational reason why you need to restart the device for force an update.
 
 ------
 
@@ -22,19 +23,12 @@ From the IoT Central device commands tab, you can invoke the command to restart 
 
 The following steps outline how an Azure IoT Central command uses Azure IoT Hub direct methods for cloud-to-device control.
 
-1. From Azure IoT Central, a user invokes the **Restart Device** command.
-
-   A direct method message named **RestartDevice**, along with the integer payload specifying how many seconds to wait before the restart is sent to the device.
-
-2. The **RestartDeviceHandler** function is called.
-
-3. The current UTC time is reported to Azure IoT using a device twin binding property named **ReportedRestartUTC**.
-
-4. The direct method responds with an HTTP status code and a response message.
-
-5. The device is restarted.
-
-6. Azure IoT Central queries and displays the device twin's reported property **ReportedRestartUTC**.
+1. From the Azure IoT Central device commands tab you invoke the **Restart Device** command. IoT Central then requests IoT Hub to send a direct method message to the device.
+1. On the Azure Sphere the **RestartDeviceHandler** function is called.
+1. Next the device sends a device twin **ReportedRestartUTC** message to Azure IoT to record the time the device was restarted.
+1. The direct method responds with an HTTP status code and a response message.
+1. The Azure Sphere is then restarted.
+1. Azure IoT Central queries and displays the device **ReportedRestartUTC** property .
 
 ------
 
@@ -133,14 +127,13 @@ lp_directMethodSetClose();
 
 ------
 
-
 ## Azure IoT Central commands
 
 Azure IoT Central commands are defined in device templates.
 
 ![The illustration shows a device template interface.](../media/iot-central-device-template-interface-restart-device.png)
 
-1. From Azure IoT Central, navigate to **Device template**, and select the **Azure Sphere** template.
+1. From Azure IoT Central web portal, navigate to **Device template**, and select the **Azure Sphere** template.
 2. Click on **Interface** to list the interface capabilities.
 3. Scroll down and expand the **RestartDevice** capability.
 4. Review the definition of **RestartDevice**. The capability type is **Command**.
