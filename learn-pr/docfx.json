@@ -833,7 +833,7 @@
                     "ko-kr",
                     "zh-cn",
                     "zh-tw"
-                ]
+                ],
                 "xamarin/**/*.yml": [
                     "de-de",
                     "es-es",
