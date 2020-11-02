@@ -19,7 +19,7 @@ Next, add code to import the **NumPy** library to process large numerical matrix
 import numpy as np
 ```
 
-Now add code to import the **PyTorch** libary to train and process deep learning and AI models:
+Now add code to import the **PyTorch** library to train and process deep learning and AI models:
 
 ```python
 import torch
