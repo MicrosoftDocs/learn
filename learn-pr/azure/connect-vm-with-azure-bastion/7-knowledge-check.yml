@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Check your knowledge
   description: Review what you've learned.
-  ms.date: 05/18/20
+  ms.date: 05/18/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -45,7 +45,7 @@ quiz:
       explanation: You can't connect to the Bastion host without a public IP address.
     - content: Subnet named AzureBastionSubnet, public IP, and Bastion
       isCorrect: true
-      explanation: You need to create a subnet named AzureBastionSubnet for the virtual network; create a public IP; and then create the Bastion resource with the virtual network and public IP address information. 
+      explanation: Create a subnet named AzureBastionSubnet for the virtual network; create a public IP; and then create the Bastion resource with the virtual network and public IP address information. 
   - content: "Several of your peers are having trouble connecting to VMs by using Bastion. What isn't likely to cause the issue?"
     choices:
     - content: The public IP address of the destination VM

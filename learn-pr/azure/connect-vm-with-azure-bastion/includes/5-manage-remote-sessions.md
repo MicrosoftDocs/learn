@@ -3,7 +3,7 @@ In this unit, you'll learn how to manage remote sessions by enabling diagnostic 
 
 ## Configure diagnostics settings to generate audit logs
  
-Bastion can log remote user sessions information. Review the logs to see who  connected to which workloads, at what time, from where, and other relevant logging information. To generate these logs, you must configure diagnostic settings on Azure Bastion. It can take several hours for the logs to stream to a storage account. So you won't be able to try this out and see the logs in the sandbox environment. The following sections show you how to configure Bastion diagnostic settings so you can try this out in your own subscription later.
+Bastion can log remote user sessions information. Review the logs to see who connected to which workloads, at what time, from where, and other relevant logging information. To generate these logs, you must configure diagnostic settings on Azure Bastion. It can take several hours for the logs to stream to a storage account. So you won't be able to try this out and see the logs in the sandbox environment. The following sections show you how to configure Bastion diagnostic settings so you can try this out in your own subscription later.
 
 ### Enable diagnostics for Bastion
 
@@ -29,15 +29,15 @@ The diagnostic logs take several hours to appear in your storage account. Find t
 
 :::image type="content" source="../media/5-storage-container.png" alt-text="Screenshot of a storage account with a container called insights-logs-bastionauditlogs.":::
 
-Click through the resource hierarchy folders to get to the Bastion host file.
+Drill down through the resource hierarchy folders to get to the Bastion host file.
 
 :::image type="content" source="../media/5-insights-folders.png" alt-text="Screenshot of the insights logs for Bastion that shows the folder location level is at the bastion host resource.":::
 
-Continue to click through the year 'y=', month 'm=', day 'd=', hour 'h=', and minute 'm=' folders to the find diagnostics log data for a specific the time-period.  
+Continue to drill down through the year 'y=', month 'm=', day 'd=', hour 'h=', and minute 'm=' folders to the find diagnostics log data for a specific the time-period.  
 
 :::image type="content" source="../media/5-insights-log-json-file.png" alt-text="Screenshot of the insights logs for Bastion that shows the json file for a specific time period.":::
 
-Download the json file to view the session details. When you open the file it will look something like the following example where you can see information like the operation type, user name, and client IP address.
+Download the json file to view the session details. When you open the file, it will look something like the following example where you can see information like the operation type, user name, and client IP address.
 
    ```json
    { 
@@ -70,5 +70,6 @@ Download the json file to view the session details. When you open the file it wi
 
 Azure Bastion session monitoring lets you view which users are connected to which VMs. It shows the IP that the user connected from, how long they've been connected, and when they connected. You can select an ongoing session and force-disconnect the session to disconnect the user from the session.
 
-<!--Add screenshots of two user sessions and selecting delete to disconnect one -->
+:::image type="content" source="../media/5-delete-remote-session.png" alt-text="Screenshot of the Bastion sessions page with the delete option selected for one of the two sessions.":::
+
 You'll walk through how to manage remote sessions in the next unit.
