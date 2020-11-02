@@ -17,7 +17,7 @@ JSF 2.3 base is available for Jakarta EE 8 based applications.
 `BackingBean` is a Java class that binds to the parameter of the Facelets and sets and processes values. In order to implement the back end process on the server side, it is necessary to implement Facelets and the corresponding backing bean.  
 Until Java EE 6, it was used to implement the Backing Bean with JSF Managed Bean however it is used to create Backing Beaan with Contexts and Dependency Injection(CDI) since Java EE 7.
 
-## JSF Page Creation with PrimeFaces
+## Create JSF Page with PrimeFaces
 
 JSF can create its own extended web components.
 This time, we will use PrimeFaces as a component of JSF provided by 3rd Party to create rich web applications more easily.
