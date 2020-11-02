@@ -6,51 +6,48 @@ metadata:
   description: Knowledge check
   author: yoshioterada
   ms.author: yoterada
-  ms.date: 09/30/2020
+  ms.date: 11/02/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
 quiz:
   questions:
-  - content: Question 1
-    choices:
-    - content: Answer 1
-      isCorrect: true
-      explanation: Explanation 1
-    - content: Answer 2
-      isCorrect: false
-      explanation: Explanation 2
-    - content: Answer 3
-      isCorrect: false
-      explanation: Explanation 3
-    - content: Answer 4
-      isCorrect: false
-      explanation: Explanation 4
-  - content: Question 2
-    choices:
-    - content: Answer 1
-      isCorrect: true
-      explanation: Explanation 1
-    - content: Answer 2
-      isCorrect: false
-      explanation: Explanation 2
-    - content: Answer 3
-      isCorrect: false
-      explanation: Explanation 3
-    - content: Answer 4
-      isCorrect: false
-      explanation: Explanation 4
-  - content: Question 3
-    choices:
-    - content: Answer 1
-      isCorrect: true
-      explanation: Explanation 1
-    - content: Answer 2
-      isCorrect: false
-      explanation: Explanation 2
-    - content: Answer 3
-      isCorrect: false
-      explanation: Explanation 3
-    - content: Answer 4
-      isCorrect: false
-      explanation: Explanation 4
+    - content: "Which file format do you use for Facelets?"
+      choices:
+        - content: "HTML (HyperText Markup Language)"
+          isCorrect: false
+          explanation: "HTML is used for creating the general static Web Page."
+        - content: "XHTML (Extensible HyperText Markup Language)"
+          isCorrect: true
+          explanation: "Since JSF 2.0, Facelets has been used as default view declaration language."
+        - content: "JSP (JavaServer Pages)"
+          isCorrect: false
+          explanation: "In the past, you could write the JSF tags in JSP pages, however Facelets become new view declaration language since JSF 2.0. So we recommend you to use the XHTML instead of JSP."
+    - content: Question 2
+      choices:
+        - content: Answer 1
+          isCorrect: true
+          explanation: Explanation 1
+        - content: Answer 2
+          isCorrect: false
+          explanation: Explanation 2
+        - content: Answer 3
+          isCorrect: false
+          explanation: Explanation 3
+        - content: Answer 4
+          isCorrect: false
+          explanation: Explanation 4
+    - content: Question 3
+      choices:
+        - content: Answer 1
+          isCorrect: true
+          explanation: Explanation 1
+        - content: Answer 2
+          isCorrect: false
+          explanation: Explanation 2
+        - content: Answer 3
+          isCorrect: false
+          explanation: Explanation 3
+        - content: Answer 4
+          isCorrect: false
+          explanation: Explanation 4
