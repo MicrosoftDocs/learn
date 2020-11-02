@@ -1,4 +1,4 @@
-In this module, you'll learn how to control an Azure Sphere application by using Azure IoT Central properties and commands. This module will cover Azure IoT direct methods.
+In this module, you'll learn how to remote control an Azure Sphere application by using Azure IoT Central commands.
 
 ## Azure IoT direct methods
 
@@ -27,17 +27,7 @@ static LP_DIRECT_METHOD_BINDING dm_restartDevice = {
     .handler = RestartDeviceHandler };
 ```
 
-## Azure IoT Central commands
 
-Azure IoT Central commands are defined in device templates.
-
-![The illustration shows a device template interface.](../media/iot-central-device-template-interface-fan1.png)
-
-1. From Azure IoT Central, navigate to **Device template**, and select the **Azure Sphere** template.
-2. Click on **Interface** to list the interface capabilities.
-3. Scroll down and expand the **RestartDevice** capability.
-4. Review the definition of **RestartDevice**. The capability type is **Command**.
-5. The schema type is **Integer**. The direct method payload is an integer which defines the number of seconds before restarting the device.
 
 ## Direct method handler function
 
@@ -135,3 +125,16 @@ Sets are closed in the **ClosePeripheralsAndHandlers** function found in **main.
 ```
 lp_directMethodSetClose();
 ```
+
+
+## Azure IoT Central commands
+
+Azure IoT Central commands are defined in device templates.
+
+![The illustration shows a device template interface.](../media/iot-central-device-template-interface-fan1.png)
+
+1. From Azure IoT Central, navigate to **Device template**, and select the **Azure Sphere** template.
+2. Click on **Interface** to list the interface capabilities.
+3. Scroll down and expand the **RestartDevice** capability.
+4. Review the definition of **RestartDevice**. The capability type is **Command**.
+5. The schema type is **Integer**. The direct method payload is an integer which defines the number of seconds before restarting the device.
