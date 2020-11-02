@@ -46,13 +46,13 @@ To run MicroK8s on Windows, use Multipass. Multipass is a lightweight VM manager
 
 1. In a command console, run the Multipass launch command to configure and run the microk8s-vm image. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
 
-    ```cmd
+    ```console
     multipass launch --name microk8s-vm --mem 4G --disk 40G
     ```
 
 1. After you receive the launch confirmation for microk8s-vm, to access the VM instance, run the `multipass shell microk8s-vm` command.
 
-    ```cmd
+    ```console
     multipass shell microk8s-vm
     ```
 
