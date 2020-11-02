@@ -13,7 +13,7 @@ durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
-    - content: "When you want to write a line to the debug console only when debugging, which API should you use?"
+    - content: "When you want to write a line to the debug console only when you're debugging, which API should you use?"
       choices:
         - content: "System.Console.WriteLine"
           isCorrect: false
@@ -45,7 +45,7 @@ quiz:
       choices:
         - content: "Control of your program execution and observation of your program's state"
           isCorrect: true
-          explanation: "The two main values just about every debugger provides are the ability to control program execution and to observe program state."
+          explanation: "The two main values almost every debugger provides are the ability to control program execution and to observe program state."
         - content: "Modifying program values and changing your program output"
           isCorrect: false
           explanation: "Changing your program's output isn't useful because it will only have effect when the application is being debugged."
