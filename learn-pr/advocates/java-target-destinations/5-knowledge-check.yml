@@ -27,7 +27,7 @@ quiz:
         - content: "All of the above"
           isCorrect: true
           explanation: "Platform-as-a-Service solutions are the preferred choice if you want to go to production fast, with high confidence and minimum maintenance burden."
-    - content: "Which Azure service is designed to run serverless workloads"
+    - content: "Which Azure service is designed to run serverless workloads?"
       choices:
         - content: "Azure App Service"
           isCorrect: false
