@@ -63,16 +63,6 @@ When you create a Maven project, the following files and directories will be cre
 
 The Web application created the above will use the JavaServer Faces framework. Therefore, in order to use JSF, you need to add the following dependency libraries into the project.
 
-* Servlet
-* JavaServer Faces
-* PrimeFaces
-* Java Server Pages Tag Library (JSTL)
-* Contexts and Dependency Injection (CDI) : Weld
-* Bean Validation
-* Jakarta JSON Binding
-* Lombok
-* JUnit
-
 Modify the `pom.xml` file as follows.
 Replace below XML configurations by copy and paste.
 
