@@ -170,7 +170,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
     1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is still present.
 
 1. Verify the middleware is functioning as intended as follows:
-    1. In another browser tab, navigate to the app's `/features` endpoint. The relative URL is `/features?featureName=coupons`. Combine that with your app's IP address as shown:
+    1. In another browser tab, navigate to `<your app's IP address>/features?featureName=coupons`:
 
         :::image type="content" source="../media/4-implement-feature-manager/feature-middleware-response.png" alt-text="The JSON response from the middleware" border="true" lightbox="../media/4-implement-feature-manager/feature-middleware-response.png":::
 
@@ -194,12 +194,12 @@ Complete the following steps to disable the coupons feature.
     deploy/k8s/deploy-application.sh --charts webspa
     ```
 
+1. In the tab displaying the `/features` endpoint, refresh the page. Notice the value of the coupons feature's `enabled` property is now `false`.
+
 1. After a few seconds, test the configuration change as follows:
     1. In the app, refresh the page. The SPA reloads.
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
     1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is no longer present.
-
-1. In the tab displaying the `/features` endpoint, refresh the page. Notice the value of the coupons feature's `enabled` flag is now `false`.
 
 In this unit, you made the coupons feature configurable and deployed the updated app. In the next unit, you'll modify the app to use values stored in Azure App Configuration.
