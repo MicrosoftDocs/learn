@@ -16,7 +16,7 @@ Follow the steps below to build and run a JavaServer Faces web application.s
 
 [Optional]: Run in local Tomcat environment
 
-### 1. Creating Maven project
+### Creating Maven project
 
 Execute the following command. This will create a Maven project for your Java web application.
 
@@ -42,7 +42,7 @@ When you create a Maven project, the following files and directories will be cre
             └── index.jsp
    ```
 
-### 2. Modify Maven pom.xml File
+### Modify Maven pom.xml File
 
 The Web application created the above will use the JavaServer Faces framework. Therefore, in order to use JSF, you need to add the following dependency libraries into the project.
 
@@ -122,7 +122,7 @@ Replace below XML configurations by copy and paste.
 </project>
    ```
 
-### 3. Enable Contexts and Dependency Injection (CDI)
+### Enable Contexts and Dependency Injection (CDI)
 
 Next, make CDI available to your web application.
 Create a `beans.xml` file under the `src/main/WEB-INF` directory and describe the following contents.
@@ -135,7 +135,7 @@ Create a `beans.xml` file under the `src/main/WEB-INF` directory and describe th
 　　bean-discovery-mode="all"></beans>
    ```
 
-### 4. Enable JSF
+### Enable JSF
 
 Next, in order to recognize all files with the `xhtml` extension as JSF Facelets, make the following settings for `web.xml` under the `WEB-INF` directory.
 
@@ -165,7 +165,7 @@ Next, in order to recognize all files with the `xhtml` extension as JSF Facelets
 </web-app>
    ```
 
-### 5. Modify the name of index.jsp
+### Modify the name of index.jsp
 
 Now that the environment settings for running JSF have been completed, it is time to create the JSF page.
 JSF web pages are written in XHTML file format instead of JSP, as set in `web.xml` above. Therefore, change the name of the `index.jsp` file that was automatically generated when the project was created to `index.xhtml`.
@@ -174,7 +174,7 @@ JSF web pages are written in XHTML file format instead of JSP, as set in `web.xm
 mv index.jsp index.xhtml
    ```
 
-### 6. Creating a Basic Web Page for JSF
+### Creating a Basic Web Page for JSF
 
 Please delete all the contents described in `index.xhtml` once and paste the following code by copy and paste.
 
@@ -198,7 +198,7 @@ Please delete all the contents described in `index.xhtml` once and paste the fol
 </html>
    ```
 
-### 7. Create JSF Backing Bean
+### Create JSF Backing Bean
 
 Next, create a backing bean to implement server-side backend processing.
 Create a new directory for Java package which will use to create the backing bean under the `src/main` directory.
@@ -265,7 +265,7 @@ The directory structure after implementing the program is as follows.
 Compile the source code and run it in a locally installed Tomcat environment.
 Execute the following command.
 
-#### 1. Compile and Package the Java Project
+#### Compile and Package the Java Project
 
 Execute the following command to compile the code.
 
@@ -273,7 +273,7 @@ Execute the following command to compile the code.
 mvn clean package
 ```
 
-#### 2. Copy the artifact to the Deployment Directory on Tomcat
+#### Copy the artifact to the Deployment Directory on Tomcat
 
 Copy the artifact war file to the directory in the Tomcat.
 
@@ -281,7 +281,7 @@ Copy the artifact war file to the directory in the Tomcat.
 cp target/azure-javaweb-app.war /$INSTALL_DIR/apache-tomcat-9.0.38/webapps/
 ```
 
-#### 3. Start the Tomcat Server
+#### Start the Tomcat Server
 
 Start the Tomcat Server.
 
