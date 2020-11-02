@@ -2,42 +2,40 @@ When someone uses the term *.NET*, what they mean greatly depends on context. In
 
 ## .NET is an ecosystem for application development
 
-The term *ecosystem* describes the multifaceted aspects of an application development environment and the community that surrounds it. These facets combine to create a compelling reason to invest in learning and building applications on .NET.
+The term *ecosystem* describes the multiple facets of an application development environment and the community that surrounds it. These facets combine to create a compelling reason to invest in learning .NET and building .NET applications.
 
 ### Use .NET languages and compilers to run applications in the .NET runtime
 
 Software developers use .NET languages like C# and F# to write source code. Each line of code they write expresses an instruction or command that the computer should perform while the program is running. 
 
-Programming languages have different syntaxes. They're created to enable different software development paradigms. But generally speaking, source code is readable and writeable by humans. 
+Before software developers can run their code, they must first compile it.  The *.NET compiler* is a program that converts the source code into a special language called *intermediate language* (IL).  The .NET compiler saves the IL code into a file called a *.NET assembly*. By compiling the code into an "intermediate" format, you can use the same code base regardless of where you run the code. Run it on Windows or Linux, or on 32-bit or 64-bit computer hardware.
 
-Before software developers can run their code, they must first compile it.  The *.NET compiler* is a program that converts source code into a special language called *intermediate language* (IL).  The compiler saves the IL code in a file called an *assembly*. Compiled into an "intermediate" format, the code base can be used wherever the code will be run. You can run it on Windows or Linux, or on 32-bit or 64-bit computer hardware.
-
-The *.NET runtime* is an execution environment for your compiled .NET assembly. In other words, the .NET runtime is what runs and manages your application on a host operating system. We'll talk more about what the .NET runtime does in just a moment.
+The *.NET runtime* is an execution environment for your compiled .NET assembly. In other words, the .NET runtime is what executes and manages your application as it runs on a host operating system. We'll talk more about what the .NET runtime does in just a moment.
 
 Fortunately, as a software developer just getting started with .NET, you don't have to understand how these mechanisms work at first. With experience, you'll come to more fully understand and appreciate the underlying power of .NET languages and compilers and the runtime.
 
 > [!TIP]
-> Although people confuse the C# programming language with .NET, they're two distinct things. C# is a programming language syntax. As part of the syntax, you can reference and call methods that are defined in .NET code libraries or assemblies. Furthermore, you use the C# compiler that's installed with the .NET SDK to create an assembly from your C# code. .NET assemblies are run by the .NET runtime. By understanding these distinctions, you'll be more aware of important concepts as you learn about .NET and C#.
+> Sometimes people mistakenly think that the C# programming language *is* .NET. However, C# and .NET are distinct. C# is a programming language syntax. As part of the syntax, you can reference and call methods defined in .NET code libraries, or assemblies. Furthermore, you use the C# compiler that's installed with the .NET SDK to create an assembly from your C# code. The .NET runtime runs .NET assemblies. By understanding these distinctions, you'll be aware of important concepts as you learn more about .NET and C#.
 
 ### Use .NET application frameworks and libraries to harness prebuilt functionality
 
-All software is built in layers, meaning that software runs at various levels of abstraction on a computer:  
-- At the lowest level, you have software that communicates directly with your computer's hardware. It controls the flow of data on the motherboard, processors, memory, and hard drives. 
-- At the next level, you have software that enables the end user to provide instructions through an operating system.  
-- At the next level, you have software like .NET that provides a way for you to develop applications.  
-- At the next level, you have application frameworks and libraries of functionality. Application developers can use these resources to build richer applications more quickly and with less effort than older development methods allowed.
+All software is built in layers, meaning that software runs at various levels of abstraction on a computer: 
+- At the lowest level, software communicates directly with your computer's hardware. It controls the flow of data on the motherboard, processors, memory, and hard drives. 
+- At the next level, software enables the end user to provide instructions through an operating system. 
+- At the next level, software like .NET provides a way for you to develop and run applications. 
+- At the next level, application frameworks and libraries of functionality allow you to quickly build rich applications by using less effort than older development methods allowed.
 
-A code library encapsulates functionality for a specific purpose into a single assembly. In the case of .NET, thousands of libraries are available, both first-party and third-party, commercial, and open source. These libraries provide a vast array of functionality that you can use in your applications. You just call the methods that other software developers have implemented.  
+A code library encapsulates functionality for a specific purpose into a single assembly. For .NET, thousands of libraries are available. These libraries can be first-party or third-party and can be commercial or open source. The libraries provide a vast array of functionality that you can use in your applications.  You merely reference those assemblies and call the methods you need. In this way, as a developer, you build on the work of other software developers. You save time and energy because you don't have to build and maintain every feature yourself.
 
-An application framework combines several related libraries, along with starter projects, file templates, code generators, and other tools to enable developers to build entire applications for a specific purpose.  These applications are known as *app models*. For example, popular .NET application frameworks are available for app models like web development, desktop and mobile development, and game development.
+An application framework combines several related libraries, along with starter projects, file templates, code generators, and other tools. You can use these resources to build entire applications for a specific purpose. These application frameworks are known as *app models*. For example, popular .NET application frameworks are available for app models like web development, desktop and mobile development, and game development.
 
-When you install the .NET SDK, whether directly or by installing Visual Studio 2019, it preinstalls a comprehensive set of libraries and application frameworks called the *base class libraries*. You can use these libraries on any platform or for app model that you want to build.
+You can install the .NET SDK directly or by installing Visual Studio 2019. The .NET SDK preinstalls a comprehensive set of libraries and application frameworks called the *base class library*.  You can use this library of code in your programs regardless of the platform or app models that you want to build.
 
-For other libraries, developers use package managers like NuGet. Developers find and integrate code libraries from package repositories like the NuGet Gallery.
+For other third-party libraries, developers use package managers like NuGet to find and integrate code libraries from package repositories like the NuGet Gallery.
 
 #### What are the major app models?
 
-You might wonder which .NET frameworks support which app models. Use the following table to map an app model to a .NET framework.
+You might wonder which frameworks support which app models. Use the following table to map an app model to a .NET framework.
 
 | App model | Framework | Notes |
 |---|---|---|
@@ -55,33 +53,35 @@ Furthermore, .NET powers popular third-party and open-source gaming development 
 
 Software developers rely on tools to write code, add references to code libraries, compile code, and debug code. This section describes several .NET tools that you'll use to build .NET applications.
 
-Visual Studio 2019 is the Microsoft flagship development environment. Millions of developers use it to build applications. A graphical user interface that includes menus, windows, visual designers, dialog boxes, and wizards guides developers through the application development process. 
+*Visual Studio 2019* is the Microsoft flagship development environment. Millions of developers use it to build .NET applications. A graphical user interface that includes menus, windows, visual designers, dialog boxes, and wizards guides developers through the application development process. Visual Studio 2019 is available in three editions: Community, Professional, and Enterprise. Each edition includes different tools and is licensed for different purposes.
 
-Visual Studio 2019 is available in three editions: Community, Professional, and Enterprise. Each edition includes different tools and is licensed for different purposes. Developers who prefer a command-line workflow might use a combination of Visual Studio Code, the world's most popular code editor, and the .NET command-line interface, also known as the *.NET CLI*, as they create .NET applications.
+Developers who prefer a command-line workflow might use a combination of *Visual Studio Code*, the world's most popular code editor, and the .NET command-line interface, also known as the *.NET CLI*.
 
-Developers can choose from an expansive number of first-party and third-party tools for advanced .NET use cases. Options include code profilers, unit test runners, and code coverage analyzers.
+Furthermore, you can choose from numerous first-party and third-party tools for many advanced .NET use cases. Options include code profilers, unit test runners, and code coverage analyzers.
 
-You can use other .NET tools for other scenarios. For example, later in this module you'll work with Try .NET. This application is a browser-based interface for writing simple applications that will help you learn the C# programming language.
+You can find other .NET tools for other scenarios. For example, later in this module you'll work with *Try .NET*. You'll use this browser-based interface to write simple applications that will help you learn the C# programming language.
 
-Finally, PowerShell is a tool that allows system administrators and DevOps engineers to write scripts that access .NET functionality. Administrators use these scripts to help manage their organization's computing environment.
+Microsoft actively provides a rich set of documentation, tutorials, and training. You'll find learning materials in popular modalities to help you at each step in your learning process.
 
-### Find solutions and answers in documentation and tutorials
+The following table features a few great resources that you might want to bookmark and come back to.
 
-Microsoft actively provides a rich set of documentation, tutorials, and training. You'll find learning materials in popular modalities to help you at each step in your learning process.  
+| Resource | Purpose | 
+|---|---|---|
+| [Microsoft Docs](https://docs.microsoft.com/?azure-portal=true)  | Provides quickstart tutorials and definitive reference documentation. |  
+| [Patterns and Practices](https://docs.microsoft.com/azure/architecture/?azure-portal=true) | Helps developers and software architects find solutions to common application development needs. Resources often transcend the low-level details of writing code and delve into choosing products and services that enable seemingly infinite scalable architectures. | 
+| [.NET Videos](https://dotnet.microsoft.com/learn/videos?azure-portal=true) | Provides video tutorials from the .NET team. These videos walk developers through common usage scenarios. | 
+| [Microsoft Learn](https://docs.microsoft.com/learn/paths/csharp-first-steps/) | Provides hands-on labs to help you build your skills by combining instruction, exercises, media, knowledge checks, and a means of tracking your progress. | 
 
-Microsoft Docs provides quickstart tutorials and definitive reference documentation. Patterns and Practices documentation helps developers find solutions to common application development needs. Resources often transcend code and delve into products and services that enable seemingly infinite scalable architectures. The .NET team provides video tutorials to walk developers through common usage scenarios.  
+### Interact with the .NET community to learn and share solutions
 
-And finally, Microsoft Learn modules like this one provide hands-on labs to help you build your skills. They combine instruction, guidance, exercises, media, knowledge checks, and a means of tracking your progress.
+The .NET ecosystem extends beyond languages, libraries, and tools to the people. You're free to both learn from the community and contribute to the community:
 
-### Interact with the .NET community to learn, grow, and share solutions
-
-The .NET ecosystem extends beyond the languages, libraries, and tools to the people. .NET community members host live online events and in-person meet-ups. They build open-source software, participate in Q&A forums, and record video tutorials. They write books and blog posts that help you learn and get unstuck when you're not sure what to do next.
-
-.NET is open source on [GitHub](https://github.com/dotnet?azure-portal=true). The projects within that repository are managed by the .NET Foundation. This independent organization is dedicated to growing a trusted, commercially friendly, open-source ecosystem around the .NET development platform.
+- **Learn** - .NET community members host live online events and in-person meet-ups. They build open-source software, participate in Q&A forums, and record video tutorials. They write books and blog posts that help you learn and get unstuck when you're not sure what to do next.
+- **Contribute** - .NET is open source on [GitHub](https://github.com/dotnet?azure-portal=true). The projects in that repository are managed by the .NET Foundation. This independent organization is dedicated to growing a trusted, commercially friendly, open-source ecosystem around the .NET development platform. In this repository, you can share your unique perspective and voice to help others learn.
 
 ## How does the .NET ecosystem compare to others?
 
-If you're familiar with the software development world at large, you might wonder how the .NET ecosystem compares to others. Frankly, other ecosystems can make similar claims to some or many of the statements made so far in this unit.
+If you're familiar with the software development world, you might wonder how the .NET ecosystem compares to others. Frankly, other ecosystems can make similar claims to some or many of the statements made so far in this unit.
 
 However, one of the most distinctive features of .NET is that its ongoing development and support comes from not only a major technology leader but also the community. Significant portions of .NET were developed through open-source means. Community input and contributions are both welcomed and encouraged. In fact, 87 percent of contributors are outside of Microsoft. Based on community input, Microsoft actively moves the platform forward with feature enhancements, bug fixes, and performance improvements. More than 100,000 pull requests have been accepted from the community.
 

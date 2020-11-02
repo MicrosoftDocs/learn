@@ -1,20 +1,22 @@
-If you've never written a line of code before, this exercise will help you discover the joy of seeing your code come to life.  You'll follow the basic steps of creating a .NET application that we talked about in the previous units.
+At the outset of this module, we assumed that you've already written a "Hello World" application by using C#.  If you haven't, then you might want to review this learning path's first module, [Write your first C# code](https://docs.microsoft.com/en-us/learn/modules/csharp-write-first/?azure-portal=true).
+
+For simplicity, we'll rewrite the "Hello World" application. This time we'll take a .NET perspective on what's happening behind the scenes.
 
 ## Build a simple app by using C#
 
 Earlier, we mentioned that Try .NET provides an easy way to experiment with C# and .NET. You can use it without installing any software on your local computer.
 
 > [!Note]
-> In this module, we use a built-in version of [Try .NET](https://try.dot.net).  
+> In this module, we use a built-in version of [Try .NET](https://try.dot.net).  Try .NET is a great way to try out small code examples without installing anything on your local computer.
 
 ### Step 1 - Write the code
 
-In the .NET editor, on the right side of this web page, either type the following code sample or copy the code sample and then paste it in the .NET editor.
+In the .NET editor, on the right side of this web page, type the following code sample. Or copy the code sample and then paste it in the .NET editor.
 
 ```csharp-interactive
 Console.WriteLine("Hello world!");
 ```
-"Hello world" is a simple and canonical code example that developers write to understand the basic syntax of new programming languages. You could learn a lot about the C# syntax from this code example. But for now, we'll use it to learn more about .NET.
+As we discussed in the prerequisite module, "Hello world" is a simple and canonical code example that developers write to understand the basic syntax of new programming languages. You could learn a lot about the C# syntax from this simple example. But for now, we'll use it to learn more about .NET specifically.
 
 ### Step 2 - Run the code
 
@@ -23,8 +25,7 @@ Press the green **Run** button on the right side of the .NET editor. Assuming yo
 > [!IMPORTANT]
 > If you see any errors while running this code, copy the code and then paste it in the .NET editor. Then try running the code again.
 
-
-## How does it work?
+### What happens to the code you write?
 
 Our browser version of Try .NET hides some of the code that you see when you build a full application by using Try .NET, Visual Studio 2019, or Visual Studio Code.
 
@@ -42,7 +43,7 @@ public class Program
 }
 ```
 
-Nevertheless, the browser Try .NET environment uses the same steps we talked about earlier.  The only difference is that some of the steps are hidden to simplify  the experience. The code you wrote in the .NET editor was inserted into the `public static void Main()` code block automatically. 
+Nevertheless, the in-browser Try .NET environment uses the same steps we talked about earlier. The only difference is that some steps are hidden to simplify  the experience.
 
 Focusing on that expanded view of the code, you can see a series of curly braces `{ }`. C# uses a pair of curly braces to define a *code block*.  Different kinds of code blocks are used for different purposes.
 
@@ -65,6 +66,18 @@ The word `System` is omitted in your call to `Console.WriteLine()`. But the firs
 > [!NOTE]
 > Don't worry about C#-specific terms terms like method, class, System, and using. You can learn about those later.  The focus right now is the process of compiling and executing your code.
 
-When you select the green **Run** button, your code is sent to a server. There, your code is compiled into a .NET assembly. Then the .NET runtime opens the .NET assembly and looks in a class named `Program` to find a method named `Main()` to begin running the instructions. When the instruction to print the words "Hello world!" finishes, the running path continues to the next line but finds nothing. So the path ends, and the .NET runtime removes the program from its memory.  Meanwhile, Try .NET delivers the output back to your web browser.
+### What happens to your code after it's inserted into the Main() method?
+
+The most important part of this exercise is what happens after the code you write is inserted into a `Main()` method.  Keep in mind that this process happens on a server on your behalf.
+
+1. A command to compile your new code invokes the C# compiler.
+
+1. The C# compiler ensures that your code can be compiled and is free from syntax errors. If it can't compile your code, the compiler stops and sends an error message back to the **Output** pane.
+
+1. If the C# compiler succeeds, then the .NET runtime opens the newly compiled .NET assembly. By default, it looks in a class named `Program` to find a method named `Main()` to begin running the instructions.
+
+1. Instruction by instruction, the .NET runtime evaluates each line of code. It runs the instruction and then moves to the next line of code.
+
+1. In this case, when the instruction to print the words "Hello world!" finishes, the running path continues to the next line but finds nothing. The path ends, and the .NET runtime removes the program from its memory.  Meanwhile, the output from the `WriteLine()` instruction is delivered back to your web browser.
 
 This sequence of events, and the basic division of responsibilities among a programming language, a compiler, and a runtime, are the most important concepts to understand as you're getting started.
