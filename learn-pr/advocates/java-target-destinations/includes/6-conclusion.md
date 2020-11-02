@@ -1,4 +1,4 @@
-In this module, you learned the main deployement types used for Java applications, such as Platform-as-a-Service offers, Virtual Machines, Kubernetes or Serverless. You also learned how to select the best Azure service depending on your specific needs, like Azure App Service, Azure Functions, Azure Spring Cloud, Azure Kubernetes Service or Azure Virtual Machines.
+In this module, you learned the main deployment types used for Java applications. We discussed Platform-as-a-Service offers, Virtual Machines, Kubernetes or Serverless. You also learned how to select the best Azure service depending on your specific needs, like Azure App Service, Azure Functions, Azure Spring Cloud, Azure Kubernetes Service, or Azure Virtual Machines.
 
 ## Additional resources
 
