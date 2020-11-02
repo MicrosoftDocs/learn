@@ -31,7 +31,7 @@ quiz:
     - content: "Delete and recreate the alert with the new logic."
       isCorrect: false
       explanation: "Deleting the analytic rule will require more effort to build the same query logic and tune accordingly."
-    - content: "Duplicate the rule and modify the neccesery changes."
+    - content: "Duplicate the rule and modify the necessary changes."
       isCorrect: true
       explanation: "When you duplicate the rule, you have startup configuration provided from the original rule, that can be further modify."
     - content: "Create a new rule."
