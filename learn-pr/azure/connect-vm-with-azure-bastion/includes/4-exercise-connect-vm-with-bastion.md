@@ -14,7 +14,7 @@ Create a Linux VM that's not exposed to the internet.
    |Subscription     |    Concierge Subscription     |
    |Resource group    |  <rgn>[Sandbox resource group name]</rgn>      |
    |Virtual machine name  |   internalappvm       |
-   |Region    | Chose a region near you.         |
+   |Region    | Choose a region near you.         |
    |Image     |  Ubuntu Server 18.04 LTS - Gen1       |
    |Username    | azureuser     |
    |SSH public key source    |  Generate new key pair     |
@@ -67,7 +67,7 @@ Before you can use Azure Bastion, you need to create a subnet on the virtual net
 1. Select resource group <rgn>[sandbox resource group name]</rgn>.
 1. From the list of resources, select the virtual network.
 1. Under **Settings**, select **Address space**.
-1. Enter an address space with a subnet mask that's /27 or larger like /26, /25 and so on like  10.0.1.0/24.
+1. Enter an address space with a subnet mask that's /27 or larger, like /26, /25, and so on, such as  10.0.1.0/24.
 1. Select **Save**.
 1. Under **Settings**, select **Subnets**.
 1. Select **+ Subnet** to add a subnet.
@@ -105,12 +105,12 @@ Wait a few minutes for the Bastion resource to be created.
 1. Select **Connect**.
 1. In the remote shell, enter Linux commands like the following command that updates the system.
 
-   :::image type="content" source="../media/4-ubuntu-session.png" alt-text="Screenshot of a browser that shows a Ubuntu terminal session.":::
+   :::image type="content" source="../media/4-ubuntu-session.png" alt-text="Screenshot of a browser that shows an Ubuntu terminal session.":::
 
    ```bash
    sudo apt-get -y update
    ```
 
-1. When you are finished, type `exit`.
+1. When you're finished, type `exit`.
 
-Next time you want to connect to the internal app VM, go to the virtual machine, select **Bastion** and enter your credentials.
+Next time you want to connect to the internal app VM, go to the virtual machine, select **Bastion**, and enter your credentials.

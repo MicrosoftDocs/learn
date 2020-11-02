@@ -138,7 +138,7 @@ If you want to use Azure PowerShell or the Azure CLI to deploy Bastion, run comm
 
 ## Connect to VM by using Bastion
 
-With the virtual network, subnet, public IP, and Bastion resources in place, you should be able to connect to the VMs on the same virtual network or peered virtual network. In the Azure portal on the VM, select **Bastion** and enter your credentials.
+With the resources you need in place, you should be able to connect to the VMs on the same virtual network or peered virtual network. In the Azure portal on the VM, select **Bastion** and enter your credentials.
 
 :::image type="content" source="../media/3-operations-bastion-connect.png" alt-text="Screenshot of the connect using Azure Bastion page with prompt for username and authentication type.":::
 
