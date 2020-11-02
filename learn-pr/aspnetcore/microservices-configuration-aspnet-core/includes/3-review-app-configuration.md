@@ -1,4 +1,4 @@
-The management of configuration settings in a microservices context can become a significant problem if not handled properly. Since microservices-based solutions are composed of multiple services, it's important to have a sound configuration strategy that effectively separates code from configuration.
+The management of configuration settings in a microservices context can become a significant problem if not handled properly. With multiple services in use, it's important to use a configuration strategy that separates code from configuration.
 
 In this unit, you'll explore how to integrate ASP.NET Core and Kubernetes configuration features with Azure App Configuration to tackle this scenario in an effective way.
 
@@ -12,7 +12,7 @@ You'll review the:
 
 ## ASP.NET Core configuration
 
-ASP.NET Core supplies a [configuration provider](/aspnet/core/fundamentals/configuration/#configuration-providers) abstraction that handles configurations as key-value pair collections. An app can register a chain of configuration providers, and any provider can override a value set by a prior provider in the chain.
+ASP.NET Core supplies a [configuration provider](/aspnet/core/fundamentals/configuration/#configuration-providers) abstraction that handles configuration sources as key-value pair collections. An app can register a chain of configuration providers. Any provider can override a value set by a provider registered earlier in the chain.
 
 Configuration key names can describe a hierarchy. For example, the notation `FeatureManagement:Coupons` refers to the `Coupons` key within the `FeatureManagement` section. This structure can also map configuration values to an object tree or an [array](/aspnet/core/fundamentals/configuration/#bind-an-array).
 
@@ -24,8 +24,6 @@ ASP.NET Core uses a [ConfigurationBinder](/dotnet/api/microsoft.extensions.confi
 ## Kubernetes configuration
 
 Typically in Kubernetes, the abstraction to handle configuration is the [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap). A ConfigMap is usually a key-value pair collection. A typical example looks like this:
-
-<!-- TODO: consider using Key Vault to store the AppConfig__Endpoint connection string -->
 
 ```yaml
 apiVersion: v1
@@ -44,13 +42,16 @@ data:
   AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;Id=...;Secret=..."
 ```
 
-The ConfigMap's key-value pairs are presented to the containerized app as environment variables. This is the primary mechanism to persist ASP.NET Core configuration values in microservices apps.
+The ConfigMap's key-value pairs are:
+
+* Presented to the containerized app as environment variables.
+* The primary mechanism to persist ASP.NET Core configuration values in microservices apps.
 
 ## Azure App Configuration
 
 A centralized configuration service is especially useful in microservices apps and other distributed apps. In this module, you'll use Azure App Configuration to manage app settings and feature flags.
 
-In an ASP.NET Core app, Azure App Configuration is registered as another configuration provider in *Startup.cs*. As a result, the rest of the app doesn't need to know anything about the App Configuration service as it works with configuration values.
+In an ASP.NET Core app, Azure App Configuration is registered as another configuration provider in *Startup.cs*. The rest of the app doesn't know about the App Configuration service as it works with configuration values.
 
 ## Feature Management library
 
@@ -114,7 +115,7 @@ A custom middleware, found at *src\Web\WebSPA\Infrastructure\Middlewares\Feature
 
 :::code language="csharp" source="../code/src/web/webspa/infrastructure/middlewares/featuremanagementmiddleware.cs" id="snippet_Invoke" highlight="8":::
 
-As a refresher, a middleware is added to ASP.NET Core's request processing pipeline as a handler for HTTP requests. Think of it like a "light" controller that processes the raw `HttpContext` and returns a value by writing directly to the `Response` object. For more in-depth information, see the [ASP.NET Core Middleware](/aspnet/core/fundamentals/middleware/) document.
+ASP.NET Core's request processing pipeline uses a middleware as a handler for HTTP requests. Think of it like a "light" controller that processes the raw `HttpContext` and returns a value by writing directly to the `Response` object. For more in-depth information, see the [ASP.NET Core Middleware](/aspnet/core/fundamentals/middleware/) document.
 
 The Feature Management library is implemented to work on the server side. That's fine when using MVC or Razor Pages, but you need to use the configuration data in the SPA. So the directive mentioned in the previous section will query the `/features` endpoint, implemented as this middleware, to get the feature state. The middleware retrieves the configuration values from the feature manager that, in turn, gets them from the ASP.NET Core configuration infrastructure.
 
