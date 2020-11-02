@@ -140,7 +140,7 @@ Redeploy the SPA to confirm that it works as intended.
 
 To verify the feature flag works as expected, start a purchase as follows:
 
-1. In the app, refresh the page. The WebSPA reloads.
+1. In the app, refresh the page. The SPA reloads.
 1. Select the shopping bag icon in the upper right.
 1. Select the **:::no-loc text="CHECKOUT":::** button.
 1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is present because the coupons feature is enabled in the Azure portal.
