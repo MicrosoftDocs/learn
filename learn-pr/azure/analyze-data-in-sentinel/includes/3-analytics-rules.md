@@ -26,7 +26,7 @@ Fusion detection is enabled by default in Azure Sentinel, but for successful thr
 
 Some common attack detection scenarios enabled with Fusion:
 
-- **Data exfiltration** - Suspicious activity detected, suspicious forwarding rule in Office 365 mailbox, after a suspicious sign-in to Azure AD account can indicate compromised user&#39;s account.
+- **Data exfiltration** - Suspicious activity detected, such as suspicious forwarding rule in Office 365 mailbox, after a suspicious sign-in to Azure AD account can indicate compromised user account.
 - **Data destruction** – Anomalous number of unique files that were deleted after a suspicious sign-in to Azure AD account can signal compromised user&#39;s account and was used to destroy data.
 - **Denial of service** – Significant number of Azure Virtual Machines (VM) were deleted after a suspicious sign-in to Azure AD account can signal compromised user&#39;s account and is used to destroy organization&#39;s asset.
 <!-- Replace "(VM)" with "(VMs)". -->
@@ -39,9 +39,9 @@ Some common attack detection scenarios enabled with Fusion:
 ## Microsoft security
 
 Microsoft security solutions that are connected to Azure Sentinel, can be configured to automatically create incidents from all alerts generated in the connected service.
-For example, Contoso can be alerted, when a user who has been categorized at high risk attempt to sign in and access corporate resources.
+For example, you can configure for Contoso to be alerted, when a user who has been categorized at high risk threats attempt to sign in and access corporate resources.
 
-The following security solutions can have their alerts passed to Azure Sentinel:
+You can configure the following security solutions to pass their alerts to Azure Sentinel:
 
 - Microsoft Cloud App Security
 - Azure Defender for Server
@@ -54,11 +54,14 @@ The following security solutions can have their alerts passed to Azure Sentinel:
 > [!Note]
 
 > Microsoft unify SIEM and XDR terminology across their security products.
-> - Microsoft Defender for Identity is new name for the product, Azure Advanced Threat Protection.
-> - Microsoft Defender for Endpoint replaces Microsoft Defender Advanced Threat Protection.
-> - Defender for Office 365, previously known as Office 365 Advanced Threat Protection.
-> - Azure Defender for Servers (previously Azure Security Center Standard Edition).
-> - Azure Defender for IoT (previously Azure Security Center for IoT).
+
+> | Old Name | New Name |
+> | --- | --- |
+> | Azure Advanced Threat Protection | Microsoft Defender for Identity |
+> | Microsoft Defender Advanced Threat Protection | Microsoft Defender for Endpoint |
+> | Office 365 Advanced Threat Protection | Defender for Office 365 |
+> | Azure Security Center Standard Edition | Azure Defender for Servers |
+> | Azure Security Center for IoT | Azure Defender for IoT |
 
 You can filter these alerts by severity and/or by specific text that is contained in the alert name.
 
