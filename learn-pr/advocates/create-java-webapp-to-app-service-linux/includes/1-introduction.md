@@ -1,5 +1,16 @@
-## ------ TODO I NEED TO WRITE SCENARIO --------
+Following is candiadte for NEW VERSION SCENARIO  
+ーーーーーーーーーーーーーーーーーーーーーーー  
+Building reliable, Rich Web applications is very important for Enterprise business.
+For example, you can enter a name or address, select a product, and press the purchase button then you can purchase the product from the Internet.
+In order to implement such a web application, it is necessary to handle the user input from a text field, display items, and processing when a button is pressed.
+In this module, in order to easily implement these kind of the Application, we will create a simple ToDo application by using JavaServer Faces Technology which is widely used in the world. And this procedure is also able to apply for other technologies like Servlet, JSP, JAX-RS.
 
+After created the Application, we will deploy it to the Apache Tomcat on Azure App Service which is provided as Platform as a Service.
+As a result, You will be able to learn how to create Java Web Application and verify how to provide the service on the cloud.
+
+
+Following is OLD VERSION  
+ーーーーーーーーーーーーーーーーーーーーーーー  
 Java has been working in various environments and widely used in many places in this 25 years, especially on the server side. Along with this, various Java Web application frameworks have also been provided. 
 Many web frameworks have been provided, such as JavaServer Pages (JSP), Java Servlet, Struts, JavaServer Faces (JSF), and Spring MVC. As an execution environment, Apache Tomcat started its project in November 1998, is provided as a reference implementation of Servlet and JSP and provided as Open Source, and has been used by many users.
 
