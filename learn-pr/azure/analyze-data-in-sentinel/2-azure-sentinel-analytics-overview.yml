@@ -29,7 +29,7 @@ quiz:
     - content: "Network traffic analyzes to locate trends indicating potential attacks"
       isCorrect: false
       explanation: "Azure Sentinel Analytics rules can analyze network traffic to locate trends indicating potential attacks."
-  - content: "You want to find additional information tha explain the analytics template and the rule that is used in detction of the threats. Which part in the analytics rule page provide that information?"
+  - content: "You want to find additional information tha explain the analytics template and the rule that is used in detection of the threats. Which part in the analytics rule page provide that information?"
     choices:
     - content: "Detailed pane"
       isCorrect: true
