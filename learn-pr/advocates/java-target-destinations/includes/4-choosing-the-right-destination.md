@@ -1,7 +1,5 @@
 We've seen the different options available to deploy a Java applications on the cloud, and more specifically on Azure. But which option is the best, depending on your specific needs? Here's a guide to help you choose.
 
-# Choosing the right destination
-
 ## Platform-as-a-Service vs Infrastructure control
 
 The first question you should have, is whether you want full control of your application, or use a Platform-as-a-Service. It usually depends on your needs, and on the team you are working with.
