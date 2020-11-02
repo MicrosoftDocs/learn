@@ -302,13 +302,13 @@ mvn clean package
 
 This is optional excercise. If you already installed the Apache Tomcat in your local environment. You will be able to This is optional excercise. If you already installed the Apache Tomcat in your local environment. You will be able to proceed to the following step. If you don't have the local environment, please proceed to the Next section.
 
-#### [Optional.1] Copy the artifact to the Deployment Directory on Tomcat
+#### [Optional] Copy the artifact to the Deployment Directory on Tomcat
 
 ```bash
 cp target/azure-javaweb-app.war /$INSTALL_DIR/apache-tomcat-9.0.38/webapps/
 ```
 
-#### [Optional.2] Start the Tomcat Server
+#### [Optional] Start the Tomcat Server
 
 ```bash
 $INSTALL_DIR/apache-tomcat-9.0.38/bin/startup.sh
