@@ -11,18 +11,18 @@ metadata:
 title: Create an analytics rule from templates
 durationInMinutes: 5
 content: |
-  [!include[]includes/4-create-rule-from-templates.md)]
+  [!include[] includes/4-create-rule-from-templates.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which one of the template types, you should use to create an incidents based on all alerts generated in Azure Security Center?  "
+  - content: "Which one of the template types, you should use to create an incident based on all alerts generated in Azure Security Center?  "
     choices:
     - content: "Fusion"
       isCorrect: false
       explanation: "Fusion template rule detects multistage attacks."
     - content: "Machine Learning Behavior Analytics"
       isCorrect: false
-      explanation: "Machine Learning Behavior Analytics detects anomalous SSH or RDP login activity."
+      explanation: "Machine Learning Behavior Analytics detects anomalous SSH or RDP sign in activity."
     - content: "Microsoft Security"
       isCorrect: true
       explanation: "Template rules based on Microsoft Security type, creates incidents based on all alerts generated in Azure Security Center."
