@@ -10,31 +10,41 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. Repeat this for the **Password** field.
 
-1. From the main blade of your Azure SQL server navigate to the **Security** section and click **Advanced data security**.
+1. On the Azure portal home page select **All resources**.
+
+    :::image type="content" source="../media/dp-3300-module-33-lab-19.png" alt-text="Screenshot of the Azure portal home page, selecting All resources":::
+
+1. Select the Azure SQL Database server **dp300-lab-xx**, where **xx** is a random string.
+
+1. From the main blade of your Azure SQL server navigate to the **Security** section and select **Security Center**.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-24.png" alt-text="Security":::
 
-1. Click the toggle switch under **ADVANCED DATA SECURITY** to **ON**, and then click **Storage account**.
+1. Select the toggle switch under **AZURE DEFENDER FOR SQL** to **ON**, and then select **Storage account**.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-25.png" alt-text="Advanced Data Security":::
 
     You will be prompted to create a storage account.
 
-1. Choose the storage account you created in Lab 1. Toggle the switch for **Periodic recurring scans** to **ON**. Choose an email account to in the **Send scan reports to** and **Send alerts to** dialog boxes. Deselect **Also send email notification to admins and subscription owners**.
+1. Add a new storage account. Storage account names need to be unique, start the account name with dp300module7 and append some additional random characters until you have a valid name.
 
-    Click **Advanced Threat Detection types** and review the selections. Leave all of the boxes checked and click **Save** at the top of the screen.
+1. Select **OK** and wait for the storage account to be created.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-26.png" alt-text="Advanced Data Security":::
+1. Toggle the switch for **Periodic recurring scans** to **ON**. Enter the azure account email in the **Send scan reports to** and **Send alerts to** dialog boxes. Deselect **Also send email notification to admins and subscription owners**.
 
-1. Navigate to the AdventureWorks database in the Azure portal by scrolling down in the overview screen for Azure SQL server and clicking on the database name.
+    Select **Advanced Threat Detection types** and review the selections. Leave all of the boxes checked and select **OK**.
+
+1. Select **Save**, and on the left navigation select **Overview**.
+
+1. Navigate to the **AdventureWorksLT** database in the Azure portal by scrolling down in the overview screen for Azure SQL server and select the database name.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-27.png" alt-text="dp300-lab-adw server":::
 
-1. Navigate to the Security section of the main blade for your Azure SQL Database and select **Advanced data security**. In the Advanced Data Security screen select **Data Discovery & Classification**.
+1. Navigate to the Security section of the main blade for your Azure SQL Database and select **Data Discovery & Classification**.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-28.png" alt-text="Data Discovery & Classification":::
 
-1. On the **Data Discovery & Classification** screen you will see an informational message that reads **We have found 32 columns with classification recommendations**. Select that link.
+1. On the **Data Discovery & Classification** screen you will see an informational message that reads **We have found 15 columns with classification recommendations**. Select that link.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-29.png" alt-text="Classification Recommendations":::
 
@@ -42,7 +52,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
     :::image type="content" source="../media/dp-3300-module-33-lab-30.png" alt-text="Accept selected recommendations":::
 
-1. Go back to SQL Server Management Studio on your VM. Launch a new query window from the AdventureWorks database and execute the following query.
+1. Open SQL Server Management Studio. Launch a new query window from the AdventureWorksLT database and execute the following query.
 
     ```sql
     SELECT o.name AS [Table Name]
