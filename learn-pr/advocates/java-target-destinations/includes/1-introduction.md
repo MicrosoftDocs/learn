@@ -4,8 +4,8 @@ There are many ways to use Java on Azure, from simple virtual machines to contai
 
 By the end of this module, you'll be able to:
 
-- Explain the main ways to run Java applications on Azure
-- Identify which solution is the best for a specific scenario
+- Describe and differentiate the Azure deployment options available for Java applications
+- Choose the best Azure service for deploying a Java application
 
 ## Prerequisites
 
