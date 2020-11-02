@@ -2,21 +2,21 @@ It's time to put into practice your newly acquired debugging knowledge. It's you
 
 ## Create a sample .NET project for debugging
 
-To set up Visual Studio Code for .NET debugging, we'll first need a .NET project. Visual Studio Code includes an integrated terminal, which makes creating a new project really easy.
+To set up Visual Studio Code for .NET debugging, we'll first need a .NET project. Visual Studio Code includes an integrated terminal, which makes creating a new project easy.
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
-1. Create a new folder named `DotNetDebugging` in the location of your choice, and then click **Select Folder**.
+1. Create a new folder named `DotNetDebugging` in the location of your choice. Then click **Select Folder**.
 
 1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
-1. In the terminal window, copy and paste the following command.
+1. In the terminal window, copy and paste the following command:
 
     ```dotnetcli
     dotnet new console
     ```
 
-    This command creates a **Program.cs** file in your folder with a basic "Hello World" program already written, along with a C# project file named **DotNetDebugging.csproj**.
+    This command creates a **Program.cs** file in your folder with a basic "Hello World" program already written. It also creates a C# project file named **DotNetDebugging.csproj**.
 
 1. In the terminal window, copy and paste the following command to run the "Hello World" program.
 
@@ -30,7 +30,7 @@ To set up Visual Studio Code for .NET debugging, we'll first need a .NET project
 
 ## Set up Visual Studio Code for .NET debugging
 
-1. Open *Program.cs* by selecting it.
+1. Open **Program.cs** by selecting it.
 
 2. The first time you open a C# file in Visual Studio Code, you'll receive a prompt to install recommended extensions for C#. If you see this prompt, select the **Install** button in the prompt.
 
@@ -40,21 +40,21 @@ To set up Visual Studio Code for .NET debugging, we'll first need a .NET project
 
     :::image source="../media/install-required-assets.png" alt-text="Screenshot of Visual Studio Code prompt to add required assets to build and debug your .NET project.":::
 
-4. You can close the tab titled **Extension: C#** to focus on the code we'll be debugging.
+4. You can close the **Extension: C#** tab to focus on the code we'll be debugging.
 
 ## Add the Fibonacci program logic
 
 Our current project writes a "Hello World" message to the console, which doesn't give us much to debug. Instead, you'll use a short .NET program to compute the *N*<sup>th</sup> number of the Fibonacci sequence.
 
-The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 1, with every other following number being the sum of the two previous ones. The sequence continues like that:
+The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 1, with every other following number being the sum of the two previous ones. The sequence continues as shown here:
 
 ```text
 0, 1, 1, 2, 3, 5, 8, 13, 21...
 ```
 
-1. Open *Program.cs* by selecting it.
+1. Open **Program.cs** by selecting it.
 
-1. Replace the contents of *Program.cs* with the following code:
+1. Replace the contents of **Program.cs** with the following code:
 
     ```csharp
     using System;
@@ -87,11 +87,11 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
     ```
 
     > [!NOTE]
-    > This code contains an error, which we'll be debugging later in this module. We don't recommend that you use it in any mission-critical Fibonacci applications until we get that bug fixed.
+    > This code contains an error, which we'll debug later in this module. We don't recommend that you use it in any mission-critical Fibonacci applications until we get that bug fixed.
 
 1. Save the file by selecting **Ctrl+S** for Windows and Linux. Select **Cmd+S** for Mac.
 
-1. Let's get a look at how the updated code works before debugging it. Run the program by entering the following command in the terminal:
+1. Let's get a look at how the updated code works before we debug it. Run the program by entering the following command in the terminal:
 
    ```dotnetcli
    dotnet run
@@ -99,7 +99,7 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
 
    :::image type="content" source="../media/run-modified-program.png" alt-text="Terminal window with modified program output.":::
 
-1. The result, 3, is shown in the terminal output. Consulting your Fibonacci chart, you'll see that the result should have been 5. It's time to get familiar with the debugger and fix this program.
+1. The result, 3, is shown in the terminal output. When you consult your Fibonacci chart, you'll see that the result should have been 5. It's time to get familiar with the debugger and fix this program.
 
 1. Select any key to exit the program.
 
@@ -111,7 +111,7 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
 
    You should see the program finish quickly. That's normal because you haven't added any breakpoints yet.
 
-1. If you don't have the debug console displayed, bring it on by selecting **Ctrl+Shift+Y** for Windows and Linux. Select **Cmd+Shift+Y** for Mac. You should see several lines of diagnostic information, followed by these lines at the end:
+1. If the debug console doesn't appear, select **Ctrl+Shift+Y** for Windows and Linux. Select **Cmd+Shift+Y** for Mac. You should see several lines of diagnostic information, followed by these lines at the end:
 
     ```text
     ...
@@ -121,15 +121,15 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
     The program '[36536] DotNetDebugging.dll' has exited with code 0 (0x0).
     ```
 
-The lines at the top tell you that the default debugging settings enable the "Just My Code" option. This means that the debugger will only debug your code and won't step into the source code for .NET unless you disable this mode. This allows you to focus on debugging your code.
+The lines at the top tell you that the default debugging settings enable the "Just My Code" option. This means that the debugger will only debug your code and won't step into the source code for .NET unless you disable this mode. This option allows you to focus on debugging your code.
 
-At the end of the debug console output, you'll see the program writes 3 to the console and then exits with code 0. Usually a program exit code of 0 indicates that the program ran and exited without crashing. However, there's a difference between crashing and returning the correct value. In this case, we asked the program to calculate the 5<sup>th</sup> value of the Fibonacci sequence:
+At the end of the debug console output, you'll see the program writes 3 to the console and then exits with code 0. Usually a program exit code of 0 indicates that the program ran and exited without crashing. However, there's a difference between crashing and returning the correct value. In this case, we asked the program to calculate the fifth value of the Fibonacci sequence:
 
 ```text
 0, 1, 1, 2, 3, 5, 8, 13, 21...
 ```
 
-The 5<sup>th</sup> value in this list is 5, but our program returned 3. Let's use the debugger to diagnose and fix this.
+The fifth value in this list is 5, but our program returned 3. Let's use the debugger to diagnose and fix this error.
 
 ### Use breakpoints and step-by-step execution
 
@@ -137,7 +137,7 @@ The 5<sup>th</sup> value in this list is 5, but our program returned 3. Let's us
 
    :::image source="../media/breakpoint.png" alt-text="Screenshot of the breakpoint location in the code.":::
 
-1. Start debugging again. The program will begin to execute. It breaks (pauses execution) on line 9 because of the breakpoint you set. Use the debugger controls to step into the `Fibonacci()` function.
+1. Start debugging again. The program begins to execute. It breaks (pauses execution) on line 9 because of the breakpoint you set. Use the debugger controls to step into the `Fibonacci()` function.
 
    :::image source="../media/step-into.png" alt-text="Screenshot of the Step into button.":::
 
@@ -167,7 +167,7 @@ Now, take some time to inspect the different variables' values by using the **Va
 
 An important part of debugging is to stop and take some informed guesses about what you think portions of the code (both functions and blocks, such as loops) are trying to do. It's okay if you're not sure, that's part of the debugging process. But being actively engaged in the debugging process will help you locate bugs a lot more quickly.
 
-Before digging in further, let's remember that the Fibonacci sequence is a series of numbers that starts with the numbers 0 and 1, with every other following number being the sum of the two previous ones.
+Before we dig in further, let's remember that the Fibonacci sequence is a series of numbers that starts with the numbers 0 and 1, with every other following number being the sum of the two previous ones.
 
 That means that:
 
@@ -183,10 +183,10 @@ Fibonacci(5) = 5 (2 + 3)
 Understanding that definition and looking at this `for` loop, we can deduce that:
 
   1. The loop counts from 2 to `n` (the Fibonacci sequence number we're looking for).
-  1. If `n` is less than 2, the loop will never run. The `return` statement at the end of the function will return 0 if `n` is 0, and 1 if `n` is 1 or 2. These are the 0<sup>th</sup>, 1<sup>st</sup>, and 2<sup>nd</sup> values in the Fibonacci series, by definition.
-  1. The more interesting case is when `n` is greater than 2. In those cases, the current value is defined as the sum of the previous two values. So for this loop, `n1` and `n2` are the previous two values, and `sum` is the value for the current iteration. Because of that, each time we figure out the sum of the previous two values and set it to `sum`, we then update our `n1` and `n2` values.
+  1. If `n` is less than 2, the loop will never run. The `return` statement at the end of the function will return 0 if `n` is 0, and 1 if `n` is 1 or 2. These are the zero, first, and second values in the Fibonacci series, by definition.
+  1. The more interesting case is when `n` is greater than 2. In those cases, the current value is defined as the sum of the previous two values. So for this loop, `n1` and `n2` are the previous two values, and `sum` is the value for the current iteration. Because of that, each time we figure out the sum of the previous two values and set it to `sum`, we update our `n1` and `n2` values.
 
-Okay, we don't need to overthink it past that. We can lean on our debugger a bit. But it's worth thinking about the code a bit to see if it does what we expect and be more informed when it doesn't.
+Okay, we don't need to overthink it past that. We can lean on our debugger a bit. But it's worth thinking about the code to see if it does what we expect and be more informed when it doesn't.
   
 ## Locate the bug with breakpoints
 
@@ -240,9 +240,9 @@ When we're doing this, it's important to be strategic about where we put our bre
     i [int]: 4
     ```
 
-    Again, things are looking good. The 4<sup>th</sup> value in the series is expected to be 3.
+    Again, things are looking good. The fourth value in the series is expected to be 3.
 
-1. At this point, you might start wondering if the code was actually right all along and you imagined the bug! Let's keep with it for the last time through the loop. Select **Continue** one more time.
+1. At this point, you might start wondering if the code was correct all along and you imagined the bug! Let's keep with it for the last time through the loop. Select **Continue** one more time.
 
     Wait a minute. The program finished running and printed out 3! That's not right.
 
@@ -262,7 +262,7 @@ When we're doing this, it's important to be strategic about where we put our bre
 
     Now that we understand what's going on a lot better and have set a breakpoint designed to catch our program in the act of misbehaving, we should be able to catch this bug!
 
-1. Start the debugger one last time (hopefully!).
+1. Start the debugger one last time.
 
     ```text
     n [int]: 5
@@ -275,7 +275,7 @@ When we're doing this, it's important to be strategic about where we put our bre
 
     Based on this information, and our previous debug run, we can see that the loop exited when `i` was 4, not 5.
 
-    Let's look at the first line of the `for` loop a little closer:
+    Let's look at the first line of the `for` loop a little closer.
 
     ```csharp
     for (int i = 2; i < n; i++)
