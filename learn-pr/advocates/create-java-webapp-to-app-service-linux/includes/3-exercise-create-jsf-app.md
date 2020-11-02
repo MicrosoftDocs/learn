@@ -1,6 +1,6 @@
 You've been tasked with creating a simple Aapplication using the JavaServer Facess framework. 
 The TODO application can add the new tasks and you can see the lists of all tasks and finally you can mark the task as finished.
-As part of that evaluation in this module, you will build a web application and deploy it to Linux on Azure App Services Tomcat.
+As part of that evaluation in this module, you will build a web application and deploy it to Linux on Azure App Service Tomcat.
 
 ## Create a Simple JSF Web app on Tomcat
 
@@ -18,7 +18,7 @@ Follow the steps below to build and run a JavaServer Faces web application.s
 
 ### Creating Maven project
 
-Execute the following command. This will create a Maven project for your Java web application.
+Execute the following command. This will create a Maven project for your Java web application. We specified the architect type as `maven-archetype-webapp` which is provided by Maven to create a Maven Webapp project.
 
    ```bash
    mvn archetype:generate \
@@ -27,6 +27,23 @@ Execute the following command. This will create a Maven project for your Java we
    -DarchetypeArtifactId=maven-archetype-webapp \
    -Dversion=1.0-SNAPSHOT \
    -DinteractiveMode=false
+   ```
+
+After executed the above command, you will see following result.
+
+   ```text
+   [INFO] Parameter: package, Value: com.microsoft.azure.samples
+   [INFO] Parameter: groupId, Value: com.microsoft.azure.samples
+   [INFO] Parameter: artifactId, Value: azure-javaweb-app
+   [INFO] Parameter: packageName, Value: com.microsoft.azure.samples
+   [INFO] Parameter: version, Value: 1.0-SNAPSHOT
+   [INFO] project created from Old (1.x) Archetype in dir: /private/tmp/TMP/azure-javaweb-app
+   [INFO] ------------------------------------------------------------------------
+   [INFO] BUILD SUCCESS
+   [INFO] ------------------------------------------------------------------------
+   [INFO] Total time:  5.416 s
+   [INFO] Finished at: 2020-11-02T11:12:58+09:00
+   [INFO] ------------------------------------------------------------------------
    ```
 
 When you create a Maven project, the following files and directories will be created.
