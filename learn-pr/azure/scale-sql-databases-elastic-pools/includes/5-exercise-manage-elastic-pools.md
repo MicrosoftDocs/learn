@@ -20,4 +20,4 @@ In this exercise, we'll manage the SQL elastic pool and add an additional databa
 
 1. Click **+ Create database**.
 
-1. Give your new database a meaningful name such as **FitnessLondonDB** and press **Review + Create**.
+1. Give your new database a meaningful name such as **FitnessLondonDB** and press **Review + Create**. 
