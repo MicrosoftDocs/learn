@@ -56,7 +56,13 @@ To provision Bastion, in the portal on the VM, select **Connect** > **Bastion** 
 
 ## Deploy Bastion by using Azure PowerShell or the Azure CLI
 
-If you want to use Azure PowerShell or the Azure CLI, you create a subnet, a public IP, and the Bastion resource. The following sections show you examples that you can use to deploy Bastion.
+If you want to use Azure PowerShell or the Azure CLI to deploy Bastion, run commands to create the following resources:
+
+- Subnet
+- Public IP
+- Bastion resource
+
+ The following sections show you examples that you can use to deploy Bastion.
 
 ### Use Azure PowerShell to deploy Bastion
 

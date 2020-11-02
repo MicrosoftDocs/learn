@@ -6,12 +6,10 @@ Connect to your VM in two different browser windows to create two bastion sessio
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select or search for **Virtual machines**.
 1. Select virtual machine **internalappvm**.
-1. Select **Connect** > **Bastion** > **Use Bastion**.
+1. Under **Operations**, select **Bastion**.
 1. Enter the username **azureuser**.
-1. Select **SSH Private Key**.
-   <!--update to use file-->
-1. Expand the **Advanced** section.
-1. Enter the **SSH Passphrase** you used when you created the SSH key.
+1. Select **SSH Private Key from local file**. 
+1. For **Local file**, select the **internalappvm_key.ppe** file you downloaded when you created the VM.
 1. Select **Connect**.
 1. Open another browser window and follow these steps again to create a second VM session.
 
