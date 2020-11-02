@@ -1,22 +1,22 @@
 ### YamlMime:Module
 uid: learn.azure.build-webapp-java-tomcat
 metadata:
-  title: Build a Java Web App  on Tomcat
-  description: Run Jakarta EE based Web Application in Tomcat environment of Azure Web App
-  ms.date: 09/16/2020
+  title: Build and Deploy the JavaServer Faces Application on Tomcat on Azure App Service
+  description: You'll learn how to create a Java web application and deploy it to Azure App Service. This will help you to understand the basics of building and deploying Java web applications.
+  ms.date: 11/02/2020
   author: yoshioterada
   ms.author: yoterada
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build a Java Web App  on Tomcat
-summary: Run Jakarta EE based Web Application in Tomcat environment of Azure Web App
+title: Build and Deploy the JavaServer Faces Application on Tomcat on Azure App Service
+summary: With the right create and deployment practice, we can understand how to deploy and run the  standard Java Web Application. In this module we look at practices to create and deploy the Java Web Application
 abstract: |
   After completing this module, you will be able to:
 
-  - Describe the core concepts of the web framework Express
-  - Configure middleware to control how a request is handled
-  - Respond to HTTP requests with different types of content like text and JSON
-  - Send data to an Express endpoint
+  - Basics concept of JavaServer Faces Web Application
+  - Create PrimeFaces Java Web Application
+  - Configure the Java Project to deploy Azure App Service
+  - Deploy the Java Web Application to Azure App Service
 iconUrl: /learn/achievements/build-webapp-java-tomcat.svg
 levels:
   - beginner
