@@ -4,12 +4,6 @@ JavaServer Faces (JSF) is a Java Based Web Application Framework. It is one of t
 JSF is Component Based application. The state of the UI component is saved when the client requests a new page and is restored when a response to the request is returned. Initially, JSF used Java Server Pages (JSP) as its screen display technology, but since 2.0, Facelets, which is closer to ordinary HTML, has been used.
 
 
-## ------- TODO NEED TO ADD SENARIO ---------
-
-***Actually I don't know which senario is better for writing this kind of basic technologies.
-(Basically, this is the explanation of the Basic Technology. there is no business scenario in this section.)***
-
-
 ### JSF Basic Functionality
 
 JSF applications are roughly divided into the following two functions.
