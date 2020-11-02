@@ -157,10 +157,14 @@ When you check the message, the public URL of the deployed application is displa
 
 ## Confirm the Log Stream from Command Line
 
-TODO: Explanation
+To confirm the Log Stream, Azure CLI provide the sub command. In this command, you can see the application log on your terminal.  
+
+Execute the following command?
 
 ```azurecli
 az webapp log tail -g azure-javaweb-app-1601463451101 -n azure-javaweb-app
 ```
+
+Then you can see the following result.
 
 :::image type="content" source="../media/azure-cli-log-stream.png" alt-text="Execution of the Log Stream":::
