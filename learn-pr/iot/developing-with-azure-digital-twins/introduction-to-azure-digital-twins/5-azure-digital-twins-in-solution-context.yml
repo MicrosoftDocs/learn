@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.introduction-to-azure-digital-twins.azure-digital-twins-in-solution-context
+metadata:
+  description: This unit explains the components of an Azure Digital Twins solution.
+  ms.date: 11/11/2020
+  author: Bazak.Mutlum
+  ms.author: Bazak.Mutlum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Looking to Azure Digital Twins as a solution
+durationInMinutes: 12
+### azureSandbox: true
+content: |
+  [!include[](includes/5-azure-digital-twins-in-solution-context.md)]

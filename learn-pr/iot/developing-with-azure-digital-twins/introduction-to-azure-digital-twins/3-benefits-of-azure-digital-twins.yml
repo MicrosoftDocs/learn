@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.introduction-to-azure-digital-twins.benefits-of-azure-digital-twins
+metadata:
+  description: In this unit, we delve deeper into digital twin technology, looking at the potential uses and benefits.
+  ms.date: 11/11/2020
+  author: Bazak.Mutlum
+  ms.author: Bazak.Mutlum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+###  zone_pivot_groups: vs-vscode-language
+title: Learn the benefits of using Azure Digital Twins
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-benefits-of-azure-digital-twins.md)]

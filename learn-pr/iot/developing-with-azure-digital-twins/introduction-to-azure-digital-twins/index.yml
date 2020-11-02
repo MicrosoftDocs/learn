@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.iot.introduction-to-azure-digital-twins
+metadata:
+  description: This module introduces an advanced technology - Azure Digital Twins. Units of the module explain the use and benefits of digital twins, with current industry examples. You will also learn about the components of an Azure Digital Twins solution.
+  ms.date: 11/11/2020
+  author: Bazak.Mutlum
+  ms.author: Bazak.Mutlum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Digital Twins
+summary: >
+  This module introduces an advanced technology - Azure Digital Twins. Units of the module explain the use and benefits of digital twins, with current industry examples. You will also learn about the components of an Azure Digital Twins solution.
+abstract: |
+  In this module, you will:
+  - Learn about the use and benefits of Azure Digital Twins
+  - Examine a number of current use cases of Azure Digital Twins, in different industries
+  - Learn the components of an Azure Digital Twins solution
+  - Understand the role of the digital twins consortium
+prerequisites: |
+  - Introductory knowledge of the purpose of Azure IoT
+iconUrl: /learn/achievements/iot/introduction-to-azure-digital-twins.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-iot
+units:
+- learn.iot.introduction-to-azure-digital-twins.introduction
+- learn.iot.introduction-to-azure-digital-twins.what-is-digital-twin
+- learn.iot.introduction-to-azure-digital-twins.benefits-of-azure-digital-twins
+- learn.iot.introduction-to-azure-digital-twins.digital-twins-use-cases-in-different-industries
+- learn.iot.introduction-to-azure-digital-twins.azure-digital-twins-in-solution-context
+- learn.iot.introduction-to-azure-digital-twins.digital-twins-consortium
+- learn.iot.introduction-to-azure-digital-twins.summary
+badge:
+  uid: learn.iot.introduction-to-azure-digital-twins.badge
