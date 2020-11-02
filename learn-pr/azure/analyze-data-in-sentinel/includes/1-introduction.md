@@ -1,6 +1,6 @@
-Azure Sentinel Analytics provides an intelegent analytics solution used in detection of potential threats and vulnerabilities in your organizations. With Azure Sentinel Analytics rules you can configure notification and alerts for your security connectorts. These alerts will ensure that your SecOps team knows when a threat occur and how to properly react to prevent reaching your corporate asset.
+Azure Sentinel Analytics provides an intelligent analytics solution used in detection of potential threats and vulnerabilities in your organizations. With Azure Sentinel Analytics rules you can configure notification and alerts for your security connectors. These alerts will ensure that your SecOps team knows when a threat occur and how to properly react to prevent reaching your corporate asset.
 
-Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses several Microsoft products and services, to imlpement data security and threat protection for its resources. These products are:
+Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses several Microsoft products and services, to implement data security and threat protection for its resources. These products are:
 
 - Microsoft 365
 - Azure Active Directory (Azure AD)
@@ -22,7 +22,7 @@ Additionally, the time spent to set up and maintain IT infrastructure takes the 
 
 The IT director believes that Azure Sentinel Analytics will help the security analysts perform complex investigations faster and improve their SecOps.
 
-As Contoso's lead system engineer and Azure administrator, you've been asked to set up analytics rules in Azure Sentinel so that the SecOps team can identify and stop cyberattacks.
+As Contoso's lead system engineer and Azure administrator, you've been asked to set up analytics rules in Azure Sentinel so that the SecOps team can identify and stop cyber attacks.
 
 ## Learning objectives
 
@@ -40,4 +40,4 @@ As Contoso's lead system engineer and Azure administrator, you've been asked to 
 - Azure Sentinel instance in your Azure subscription
 
 > [!NOTE]
-> If you choose to perform the exercise in this module, be aware you may incur costs in your Azure Subscription. To estimate the cost refer to [Azure Sentinel Pricing] (https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/)
+> If you choose to perform the exercise in this module, be aware you may incur costs in your Azure Subscription. To estimate the cost refer to [Azure Sentinel Pricing] (<https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/>)
