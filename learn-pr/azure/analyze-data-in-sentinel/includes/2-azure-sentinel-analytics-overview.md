@@ -54,3 +54,7 @@ The **Analytics** home page provides the following filters:
 - **Rule Type –** There are currently four types of rules: Scheduled, Fusion, Microsoft Security, Machine Learning Behavior Analytics
 - **Tactics –** Use to filter the rules based on 14 specific techniques and methodologies in MITRE ATT's CK model
 - **Data Sources –** Filter by the data source connector that generates the alert
+
+> [!NOTE]
+
+> MITRE ATT&amp;CK is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&amp;CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
