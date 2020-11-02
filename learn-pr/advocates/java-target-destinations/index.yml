@@ -17,7 +17,7 @@ abstract: |
   - Know how to choose the best Azure service, depending on your specific situation
 prerequisites:  |
  - Basic experience in developing Java applications
-iconUrl: /learn/achievements/java-target-destinations.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
