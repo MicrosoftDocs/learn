@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.java-target-destinations
 metadata:
-  title: Java target destinations
+  title: Choose an Azure service for deploying your Java application
   description: In this tutorial, you'll learn the main options available to deploy Java applications to Azure.
   author: judubois
   ms.author: judubois
   ms.date: 10/12/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Java target destinations
+title: Choose an Azure service for deploying your Java application
 summary: In this tutorial, you'll learn the main options available to deploy Java applications to Azure.
 abstract: | 
  In this tutorial, you will:
