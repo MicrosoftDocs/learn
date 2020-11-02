@@ -1,15 +1,15 @@
 Azure Sentinel Analytics, helps you to detect, investigate, and remediate cyber security threats. With Azure Sentinel Analytics, you can set up analytics rules and queries to detect issues in your environment.
 
-## What is Azure Sentinel Analytics?
+## What is Azure Sentinel Analytics
 
-Azure Sentinel Analytics provides several functionalities that you can use to implement security for the data and resources at Contoso. 
+Azure Sentinel Analytics provides several functionalities that you can use to implement security for the data and resources at Contoso.
 
 You can analyze both real-time and historical data collected from your workstations, servers, networking devices, firewalls, intrusion prevention, sensors, and so on. Azure Sentinel Analytics analyses data from various sources to identify correlations and anomalies.
 
 With analytics rules you can trigger alert, based of the techniques that are used by known malicious actors.
-With analytics rules in place, you want to make sure the right people are being alerted, at the right level. 
+With analytics rules in place, you want to make sure the right people are being alerted, at the right level.
 
-## Why use analytics rules for Security?
+## Why use analytics rules for Security
 
 Although some of the other products that Contoso has implemented can help you identify threats, Azure Sentinel Analytics plays import part in the overall detection of the security threat by correlating and matching the signals that impact the presence of a cyber security threat. With the proper analytics rule, you can get insights into where an attack originated from, what resources were compromised, potential data lost, along with the timeline for the incident.
 
@@ -26,7 +26,7 @@ The following include common security analytics rules use cases:
 You might not be able to some of the threats by using conventional protection tools, such as firewalls or antimalware solutions. Certain threats can go undetected for months. Combining data, gathered by multiple tools and components, with the power of threat intelligence can help you to detect, analyze, and mitigate insider threats.
 
 You can also use analytics rules to create custom alerts that use indicators of attack. These indicators can identify potential attack that are in progress in real time.
-Analytics will help the Contoso SecOps team to improve the efficiency of their complex investigation and detect threats faster. 
+Analytics will help the Contoso SecOps team to improve the efficiency of their complex investigation and detect threats faster.
 
 ## Exploring the Analytics home page
 
@@ -57,4 +57,4 @@ The **Analytics** home page provides the following filters:
 
 > [!NOTE]
 
-> MITRE ATT&amp;CK is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&amp;CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
+> MITRE ATT&amp;CK is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&amp;CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cyber security product and service community.
