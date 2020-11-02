@@ -15,7 +15,7 @@ Fusion alerts identify, anomalous behaviors and suspicious activities at various
 
 > [!Note]
 
-> The cyber kill chain describes the typical workflow, including techniques, tactics, and procedures or TTPs, used by attackers to infiltrate an organization’s networks and systems. 
+> The cyber kill chain describes the typical workflow, including techniques, tactics, and procedures or TTPs, used by attackers to infiltrate an organization’s networks and systems.
 
 Fusion detection is enabled by default in Azure Sentinel, but for successful threat detection, the following data connectors must be configured:
 
