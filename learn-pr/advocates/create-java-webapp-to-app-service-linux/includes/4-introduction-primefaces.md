@@ -7,9 +7,9 @@ In this module, we will create Simple Todo List application like follows. And in
 ## PrimeFaces Component in the Application
 
 This section introduces the typical components of PrimeFaces used to create Todo applications.
-The list of components provided by PrimeFaces is availabe in this URL
-[https://www.primefaces.org/showcase/](https://www.primefaces.org/showcase/)
- with sample code, so if you want to use components other than those covered in this section,  Please refer the [showcase](https://www.primefaces.org/showcase/).
+The list of components provided by PrimeFaces is available in this URL
+`https://www.primefaces.org/showcase/`
+ with sample code, so if you want to use components other than those covered in this section,  Please refer the `showcase`.
 
 ### PrimeFaces Layout
 
@@ -58,7 +58,7 @@ Next, I will introduce `p:outputLabel`,`p:inputText`, `p:commandButton` tags as 
 
 #### p:inputText
 
-`p:inputText` is a component for working with inputtable text fields and extends the standard `inputText` component of JSF.
+`p:inputText` is a component for working with input text fields and extends the standard `inputText` component of JSF.
 The EL expression `#{todocontroller.name}` binds the value to the field defined in the corresponding backing bean (TodoListController) class, and the value entered by the user can now be referenced by `name` from other codes.
 
 #### p:commandButton
