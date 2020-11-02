@@ -33,16 +33,15 @@ In this unit, you'll create an Azure Batch and Azure Storage account using the A
 
 In order to create Batch workloads, we need to create an account within the Batch service.
 
-1. In the left navigation bar, select **Create a resource**.
+1. From the **Home** page:
+1. In the left navigation bar (top left hand blue bars), select **Create a resource**.
 1. In the **Search the Marketplace** search box type **batch**, then select **Batch Service** from the list.
 1. Select **Create** to open the **New Batch account** form.
 
     ![Portal interface for the "new batch account" form](../media/3-new-batch-service.png)
 
 1. Select an existing resource group, or create a new one for the resource we are adding in this module. To simplify cleanup once you have finished with this module, we recommend creating a new resource group. Note the name of the resource group you are using - it will be needed throughout these exercises. 
-
 1. In the Account account name, enter a unique name. For example, you could enter **cutifypets\<date\>\<your initials\>**.
-
 1. Select the link called **Select a storage account**, and in the panel that opens select the storage account your created earlier.
 1. Leaving all the other options as their defaults, select **Review + create**.
 1. Select **Create**.
