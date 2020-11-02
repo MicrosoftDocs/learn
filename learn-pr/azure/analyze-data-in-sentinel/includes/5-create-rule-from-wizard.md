@@ -41,40 +41,40 @@ AzureActivity
 
 In the  **Map entities**  section, you can define the entities that are returned as part of query rule. You can then use these entities to perform in-depth analysis by selecting  **Add** to add these entities in the query rule. These entities can help you perform a visual investigation, because they will appear as a group into **Incident** tab. Some of the entities contain information that represents a user, host, or IP address.
 
-In the **Query Scheduling** section, you can configure how often the query should run, and how far in history to look back. It&#39;s important that you don&#39;t look back further than the frequency of the query run, because that would create duplicate alerts.
+In the **Query Scheduling** section, you can configure how often the query should run, and how far back in history the query should searc the data. It's important that you don't search for data that is older then the query's run frequency, because that can create duplicate alerts.
 
-**Alert threshold** specify the number of a positive result that is returned for the rule, before an alert gets generated. You can use the following logical operator to define the logical expression:
+In the **Alert threshold** section, you can specify the number of a positive result that can be returned for the rule, before it generates an alert. You can use the following logical operators to define an appropriate logical expression:
 
 - Is greater than
 - Is fewer than
 - Is equal to
 - Is not equal to
 
-In the **Event grouping** section, you can select either:
+In the **Event grouping** section, you can select one of the following two options:
 
-- **Group all events into a single alert** – This is default option and create a single alert if the query returns more result that the specified alert threshold.
-- **Trigger an alert for each event** – Create unique alerts for each event returned by the query.
+- **Group all events into a single alert**. This is the default option, and it creates a single alert if the query returns more results than that the specified alert threshold.
+- **Trigger an alert for each event**. This option create unique alerts for each event returned by the query.
 
-In the **Suppression** section, you can configure **Stop running the Query after the alert is generated** to  **On**  or  **Off**. You can pause the creation of additional incidents if the rule is triggered again for the time you want it suppressed.
+In the **Suppression** section, you can set the **Stop running the Query after the alert is generated** option to  **On**  or  **Off**. When you select **On**, Azure Sentinel pauses the creation of additional incidents if the rule is triggered again for the duration you want the rule to be suppressed.
 
 ## Incident settings
 
-The **Incident settings** page can create an Incident from the alerts that are triggered by the analytic rule.
+Use the **Incident settings** page to create an Incident from the alerts that are triggered by the analytics rule.
 
-In the **Alert grouping** section, you can reduce the noise from multiple alerts by grouping them into one incident. When you enable grouping of related alerts you can choose from:
+In the **Alert grouping** section, you can reduce the noise from multiple alerts by grouping them into one incident. When you enable grouping of related alerts you can choose from the following options:
 
-- Grouping alerts into a single incident if all the entities match (recommended)
-- Grouping all alerts triggered by this rule into a single incident
-- Grouping alerts into a single incident if the selected entities match: - for example source or target IP addresses.
+- **Grouping alerts into a single incident if all the entities match (recommended)**
+- **Grouping all alerts triggered by this rule into a single incident**
+- **Grouping alerts into a single incident if the selected entities match** - for example source or target IP addresses.
 
-**Re-open closed matching incidents** section can open again previously closed incident, if another alert is generated that should belong to that incident.
+In the **Re-open closed matching incidents** section, you can configure Azure Sentinel Analytics to open a previously closed incident again if another alert is generated that also belongs to the previosly closed incident.
 
 ## Automated response
 
-The **Automated Response** section allows you to select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
+You can use the **Automated Response** section to select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
 
-The module Threat response with Sentinel Playbooks cover more details how to create a Playbook and run the automated activity on an incident creation.
+For More details on how to create a playbopok  and run the automated activity on an incident creation, refer to the "Threat response with Sentinel Playbooks".
 
 ## Review and create
 
-The **Review and create** section, allows you to review the settings you have configured in the wizard before creating new rules.
+You can use the **Review and create** section to review the settings you have configured in the wizard before creating new rules.
