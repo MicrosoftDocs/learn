@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Run quantum algorithms on quantum hardware by using Azure Quantum
-summary: Get started with quantum computing on Azure Quantum and learn how create and run Q# quantum programs on quantum computers on the cloud.
+summary: Get started with quantum computing on Azure Quantum and learn how create and run Q# quantum programs on quantum computers in the cloud.
 abstract: |
   After completing this module, you'll be able to:
 
