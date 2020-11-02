@@ -88,7 +88,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
 
     By convention, the feature manager retrieves feature flags from the `FeatureManagement` section of the configuration file. The `UseFeatureManagement` key is the feature flag. It isn't something imposed by the Feature Management library. The values above will become the default ones for the SPA.
 
-1. In the same directory, apply the following changes in the *Startup.cs* file:
+1. In the *src/Web/WebSPA/Startup.cs* file, apply the following changes:
     1. In the `ConfigureServices` method, replace the comment `// Add the AddFeatureManagement code` with the following code:
 
         ```csharp
@@ -172,7 +172,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
 1. Verify the middleware is functioning as intended as follows:
     1. In another browser tab, navigate to the app's `/features` endpoint. The relative URL is `/features?featureName=coupons`. Combine that with your app's IP address as shown:
 
-    :::image type="content" source="../media/4-implement-feature-manager/feature-middleware-response.png" alt-text="The JSON response from the middleware" border="true" lightbox="../media/4-implement-feature-manager/feature-middleware-response.png":::
+        :::image type="content" source="../media/4-implement-feature-manager/feature-middleware-response.png" alt-text="The JSON response from the middleware" border="true" lightbox="../media/4-implement-feature-manager/feature-middleware-response.png":::
 
     1. Notice the JSON data indicates the coupons feature is enabled.
 
