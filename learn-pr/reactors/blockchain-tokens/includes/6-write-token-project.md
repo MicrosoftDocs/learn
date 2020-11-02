@@ -25,23 +25,23 @@ contract ERC20MinerReward is ERC20 {
 }
 ```
 
-## What this all means
+## Understand the code
 
 Now, let's walk through the parts of this contract.
 
-First, we begin with importing the contract from OpenZeppelin that we want to use after the pragma directive. The notation: `import "@openzeppelin/contracts/token/ERC20/ERC20.sol";` allows the contract to find the ERC20 contract definition we'll use in our own contract.
+First, we import the OpenZeppelin contract we want to use after the pragma directive. The string `import "@openzeppelin/contracts/token/ERC20/ERC20.sol";` allows the contract to find the ERC20 contract definition we'll use in our own contract.
 
-Then we define an event called **LogNewAlert** which will be emitted or called later on in the contract.
+Then, we define an event called `LogNewAlert`, which will be emitted or called later in the contract.
 
-The constructor defines a new ERC20 token named **MinerReward** with the symbol **MRW**. A contract creation, this new token will be generated.
+The constructor defines a new ERC20 token named `MinerReward` by using the symbol `MRW`. When a contract is created, this new token is generated.
 
-When the reward function is called, the current block's miner, **block.coinbase**, will receive 20 MRW tokens for mining this block, and an event gets emitted.
+When the `reward` function is called, the current block's miner, `block.coinbase`, receives 20 MRW tokens for mining this block and an event is emitted.
 
 ## Build the contract
 
-After saving the contract file, you are now ready to build the contract. We'll be using Ganache CLI as your personal blockchain for development and Truffle to run the build.
+After you save the contract file, you're ready to build the contract. We'll be using Ganache CLI as your personal blockchain for development. We'll use Truffle to run the build.
 
-1. Open the **truffle-config.js** file. Search for the line `solc`.
+1. Open the **truffle-config.js** file, and then search for the line `solc`.
 1. In the `solc` section, uncomment the version by deleting `//`. Replace the version value with `0.6.3`. Note, that this version number is required because the OpenZeppelin contracts specify the pragma directive as `pragma solidity ^0.6.2;`.
 1. Save the file.
 1. In Visual Studio Code, select **Terminal** > **New Terminal** to open a terminal window.

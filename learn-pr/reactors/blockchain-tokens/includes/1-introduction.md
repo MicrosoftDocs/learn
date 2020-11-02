@@ -1,6 +1,6 @@
-A digital asset, whether it be Bitcoin, Ether, or any other cryptocurrency, represents an amount of value. Another example of a digital asset that represents value is a token. But, with a token, the value might not be monetary. Tokens can represent time, services, property, or goods that are tradeable with others.
+A digital asset, whether it's Bitcoin, Ether, or another cryptocurrency, represents value amount. Another example of a digital asset that represents value is a token. But, with a token, the value might not be monetary. Tokens can represent time, services, property, or goods that are tradeable with others.
 
-In this module, you will learn about the significance of tokens and how they are used in blockchain.
+In this module, you'll learn about the significance of tokens and how they are used in blockchain.
 
 ## Learning objectives
 
@@ -8,12 +8,12 @@ By the end of this module, you will be able to:
 
 - Explain what tokens are
 - Identify the primary types of token standards
-- Learn about the contract library OpenZeppelin
+- Use the contracts library OpenZeppelin
 - Create a token smart contract
 
 ## Prerequisites
 
-- Blockchain fundamentals knowledge
+- Blockchain fundamentals
 - Ethereum platform knowledge
 - Solidity programming knowledge
 - Previous experience with any programming language, like C, Python, or JavaScript

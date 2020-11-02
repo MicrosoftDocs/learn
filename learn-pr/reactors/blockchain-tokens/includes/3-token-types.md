@@ -1,6 +1,6 @@
-[Ethereum Improvement Proposals](https://eips.ethereum.org/) (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards. What this means is that community members can make a proposal for a new standards for every part of the Ethereum platform.
+[Ethereum Improvement Proposals](https://eips.ethereum.org/?azure-portal=true) (EIPs) describe standards for the Ethereum platform, including core protocol specifications, client APIs, and contract standards. Community members can propose new standards for all aspects of the Ethereum platform through EIPs.
 
-Token standards are defined in the [Ethereum Request for Comments](https://eips.ethereum.org/erc) (ERCs). Although new standards are continuously being proposed and accepted, standards for four primary ERC types have been widely adopted:
+Token standards are defined in the [Ethereum Request for Comments](https://eips.ethereum.org/erc?azure-portal=true) (ERCs). Although new standards are continuously being proposed and accepted, standards for four primary ERC types have been widely adopted:
 
 - **ERC20**
 - **ERC721**
@@ -11,13 +11,13 @@ Let's explore each type of token. We'll take a moment to understand what makes e
 
 ## ERC20
 
-The token that is the most widely known and used is the [ERC20](https://eips.ethereum.org/EIPS/eip-20). ERC20 is the technical standard that's used for smart contracts on the Ethereum blockchain for token implementation. It has a simple interface for basic tokens.
+The [ERC20](https://eips.ethereum.org/EIPS/eip-20?azure-portal=true) token is the most widely known and used. ERC20 is the technical standard that's used for smart contracts on the Ethereum blockchain to implement tokens. ERC20 has a simple interface for basic tokens.
 
-An ERC20 token contract keeps track of fungible tokens: any one token is exactly equal to any other token; no tokens have special rights or behavior associated with them. This makes ERC20 tokens useful for things like currency exchange, voting rights, or staking.
+An ERC20 token contract keeps track of fungible tokens. Any one token is exactly equal to any other token; no tokens have special rights or behaviors associated with them. This characteristic makes ERC20 tokens useful for things like currency exchange, voting rights, and staking.
 
 ## ERC721
 
-[ERC721](https://eips.ethereum.org/EIPS/eip-721) is the top solution for non-fungible tokens (NFTs). Like all other tokens, NFTs represent ownership of both virtual and physical assets. These assets are likely to include the following types of assets:
+[ERC721](https://eips.ethereum.org/EIPS/eip-721?azure-portal=true) is the top solution for non-fungible tokens (NFTs). Like all other tokens, NFTs represent ownership both of virtual and physical assets. These assets are likely to include:
 
 - Collectible items, like antiques, cards, or art
 - Physical assets, like houses or cars
@@ -29,12 +29,12 @@ The ERC721 token is a more complex standard than ERC20. When the core functions 
 
 ## ERC777
 
-[ERC777](https://eips.ethereum.org/EIPS/eip-777) is a richer standard for fungible tokens. It can be used for new use cases and to build on learnings from previous token standards. It is backward-compatible with ERC20, which means that you can interact with ERC777 tokens as if they were ERC20. ERC777 allows interactions that are more complex when you trade tokens.
+[ERC777](https://eips.ethereum.org/EIPS/eip-777?azure-portal=true) is a richer standard that is used for fungible tokens. It can be used for new use cases and to build on learnings from previous token standards. It is backward-compatible with ERC20, which means you can interact with ERC777 tokens as if they were ERC20 tokens. You can use ERC777 tokens for interactions that are more complex trades.
 
 ## ERC1155
 
-[ERC1155](https://eips.ethereum.org/EIPS/eip-1155) is a standard that's used to manage multi-token types, so a single contract can represent multiple fungible and non-fungible tokens.
+[ERC1155](https://eips.ethereum.org/EIPS/eip-1155?azure-portal=true) is a standard that's used to manage multi-token types. A single contract can represent multiple fungible and non-fungible tokens.
 
 ERC1155 draws on ideas from ERC20, ERC721, and ERC777.
 
-The design of the ERC1155 token type allows for massive gas savings for a couple different reasons. (In Ethereum, *gas* refers to a fee or pricing value.) First, because you can use this token contract for multiple tokens, which means fewer deployments with less complexity. It also has batched operations, which means that a single function call can be simpler and less gas-intensive.
+The design of the ERC1155 token type allows for massive gas savings for a couple different reasons. (In Ethereum, *gas* refers to a fee or pricing value.) First, you can use this token contract for multiple tokens, which means fewer deployments with less complexity. It also has batched operations, so a single function call can be simpler and less gas-intensive.

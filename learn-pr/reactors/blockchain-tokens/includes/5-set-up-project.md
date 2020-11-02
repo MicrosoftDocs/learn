@@ -1,11 +1,11 @@
-Let’s create a new project, with the help of Truffle, and then incorporate the OpenZeppelin contracts library. Make sure that you already have [Truffle](https://www.trufflesuite.com/truffle) and [Ganache CLI](https://github.com/trufflesuite/ganache-cli) installed before moving on.
+Let’s create a new project, with the help of Truffle, and then incorporate the OpenZeppelin contracts library. Make sure that you already have [Truffle](https://www.trufflesuite.com/truffle?azure-portal=true) and [Ganache CLI](https://github.com/trufflesuite/ganache-cli?azure-portal=true) installed before moving on.
 
 ## Create a new project
 
-1. Open your terminal and create a new folder named **Token20**. To do that, you can enter `mkdir Token20`. I typically do this inside a folder named **Projects**, in which I store all my other development projects.
+1. Open your terminal and create a new folder named **Token20**. To do that, you can enter `mkdir Token20`. I typically run this command inside a folder named Projects, in which I store all my other development projects.
 1. Go to the Token20 folder. To do that, you can enter `cd Token20`.
 1. To initialize a new project, enter `truffle init`.
-1. Wait for your project to be initialized, and then open it in Visual Studio Code.
+1. Wait for your project to be initialized, and then open the project in Visual Studio Code.
 
 You should see the following output after you use Truffle to initialize the project:
 
