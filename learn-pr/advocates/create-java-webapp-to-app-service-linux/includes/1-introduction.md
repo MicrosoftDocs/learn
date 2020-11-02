@@ -6,7 +6,7 @@ Todo applications use JSF as the MVC framework and PrimeFaces for their implemen
 JSF is a component-based framework that allows you to create Java Web applications.
 PrimeFaces provides extended UI component of JSF, which makes it easier to create rich Ajax-enabled Web Application such as Single Page Application(SPA).
 
-![Java Todo Application Sample](../media/primefaces-todo-list.png)
+:::image type="content" source="../media/primefaces-todo-list.png" alt-text="Java Todo Application Sample":::
 
 ## Learning objectives
 
