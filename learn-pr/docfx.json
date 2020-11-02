@@ -345,6 +345,19 @@
                 "dest": "modules"
             },  
             {
+                "src": "wwl-iot",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "xamarin",
                 "files": [
                     "**/*.yml",
@@ -815,6 +828,12 @@
                     "zh-cn",
                     "zh-tw"
                 ],
+                "wwl-iot/**/*.yml": [
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ]
                 "xamarin/**/*.yml": [
                     "de-de",
                     "es-es",
