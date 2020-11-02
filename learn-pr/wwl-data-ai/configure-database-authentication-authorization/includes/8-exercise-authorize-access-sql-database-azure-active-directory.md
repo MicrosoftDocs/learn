@@ -10,25 +10,41 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. Repeat this for the **Password** field.
 
-1. In the Azure Portal navigate to your Azure SQL Database server dp300-lab-xx and click on **Not Configured** next to **Active Directory Admin**.
+1. On the Azure portal home page select **All resources**.
+
+    :::image type="content" source="../media/dp-3300-module-33-lab-19.png" alt-text="Screenshot of the Azure portal home page, selecting All resources":::
+
+1. Select the Azure SQL Database server **dp300-lab-xx**, where **xx** is a random string, and select **Not Configured** next to **Active Directory Admin**.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-20.png" alt-text="Active Directory Admin":::
 
-1. On the next screen, click **Set admin**.
+1. On the next screen, select **Set admin**.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-21.png" alt-text="Set admin":::
 
-1. In the **Set admin** screen, search for your username.
+1. In the **Set admin** screen, search for the Azure username you logged into the Azure portal with.
 
-    When you have found it, click on it to highlight the username, and then click **Select**. You will be returned to the above Active Directory Admin screen. Click save to complete the process. This will make your username the Azure Active Directory admin for the server as shown below.
+    When you have found it, select the username, and then select the **Select** button. You will be returned to the above **Active Directory Admin** screen.
+
+1. Select **Save** to complete the process. This will make your username the Azure Active Directory admin for the server as shown below.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-22.png" alt-text="Active Directory admin":::
 
-1. Open SQL Server Management Studio and click **Connect** > **Database Engine**. In the server name enter the name of your server. Change the authentication type to **Azure Active Directory Universal with MFA**.
+1. On the left select **Overview**, then copy the **Server name**.
 
-:::image type="content" source="../media/dp-3300-module-33-lab-23.png" alt-text="Connect to server":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-22a.png" alt-text="Active Directory admin":::
 
-You will be prompted to enter your Azure Active Directory password, and then logged in to your database.
+1. Open SQL Server Management Studio and select **Connect** > **Database Engine**. In the **Server name** paste the name of your server. Change the authentication type to **Azure Active Directory Universal with MFA**.
+
+    :::image type="content" source="../media/dp-3300-module-33-lab-23.png" alt-text="Connect to server":::
+
+    In the User name select the Azure username from the Resources tab.
+
+1. Select **Connect**.
+
+> [!NOTE]
+> When you first try to sign in to an Azure SQL database your client IP address needs to be added to the firewall. SQL Server Management Studio can do this for you. Select **Sign in**, choose your Azure credentials and then select **OK**.
+> :::image type="content" source="../media/dp-3300-module-33-lab-24.png" alt-text="Connect to server":::
 
 ## Manage access to database objects
 
@@ -37,8 +53,12 @@ In this task you will manage access to the database and its objects. The first t
 1. Open a new query window and copy and paste the below T-SQL into it. Execute the query to create the two users.
 
     ```sql
+    USE AdventureWorksLT
+    GO
+
     CREATE USER [DP300User1] WITH PASSWORD = 'Azur3Pa$$'
     GO
+
     CREATE USER [DP300User2] WITH PASSWORD = 'Azur3Pa$$'
     GO
     ```
@@ -52,8 +72,10 @@ In this task you will manage access to the database and its objects. The first t
     ```sql
     CREATE ROLE [SalesReader]
     GO
+
     ALTER ROLE [SalesReader] ADD MEMBER [DP300User1]
     GO
+
     ALTER ROLE [SalesReader] ADD MEMBER [DP300User2]
     GO
     ```
@@ -63,7 +85,7 @@ In this task you will manage access to the database and its objects. The first t
 1. Execute the below T-SQL to grant the permissions to the role.
 
     ```sql
-    GRANT SELECT, EXECUTE ON SCHEMA::Sales TO [SalesReader]
+    GRANT SELECT, EXECUTE ON SCHEMA::SalesLT TO [SalesReader]
     GO
     ```
 
@@ -72,12 +94,12 @@ In this task you will manage access to the database and its objects. The first t
 1. Execute the below T-SQL in your query window.
 
     ```sql
-    CREATE OR ALTER PROCEDURE Sales.DemoProc
+    CREATE OR ALTER PROCEDURE SalesLT.DemoProc
     AS
     SELECT P.Name, Sum(SOD.LineTotal) as TotalSales ,SOH.OrderDate
-    FROM Production.Product P
-    INNER JOIN Sales.SalesOrderDetail SOD on SOD.ProductID = P.ProductID
-    INNER JOIN Sales.SalesOrderHeader SOH on SOH.SalesOrderID = SOD.SalesOrderID
+    FROM SalesLT.Product P
+    INNER JOIN SalesLT.SalesOrderDetail SOD on SOD.ProductID = P.ProductID
+    INNER JOIN SalesLT.SalesOrderHeader SOH on SOH.SalesOrderID = SOD.SalesOrderID
     GROUP BY P.Name, SOH.OrderDate
     ORDER BY TotalSales DESC
     GO
@@ -85,25 +107,10 @@ In this task you will manage access to the database and its objects. The first t
 
     Next you will use the EXECUTE AS USER syntax to test out the security you just created. This allows the database engine to execute a query in the context of your user.
 
-1. Execute the following query in your query window.
-
-    ```sql
-    EXECUTE AS USER = 'DP300User1'
-    SELECT P.Name, Sum(SOD.LineTotal) as TotalSales ,SOH.OrderDate
-    FROM Production.Product P
-    INNER JOIN Sales.SalesOrderDetail SOD on SOD.ProductID = P.ProductID
-    INNER JOIN Sales.SalesOrderHeader SOH on SOH.SalesOrderID = SOD.SalesOrderID
-    GROUP BY P.Name, SOH.OrderDate
-    ORDER BY TotalSales DESC
-    ```
-
-    This query will fail with an error message saying the SELECT permission was denied on the Production.Product table. The role that user DP300User1 is a member of has SELECT permission in the Sales schema, but not in the Production schema. However, if you execute the stored procedure in that same context, the query will complete.
-
 1. Execute the following T-SQL.
 
     ```sql
     EXECUTE AS USER = 'DP300User1'
-    EXECUTE Sales.DemoProc
+    EXECUTE SalesLT.DemoProc
     ```
 
-This happens because stored procedures take advantage a feature called ownership chaining to provide data access to users who do not have direct permissions to access database objects. For all objects that have the same owner, the database engine only checks the EXECUTE permission on the procedure and not the underlying objects.
