@@ -1,5 +1,9 @@
 Azure Sentinel can help you organize, investigate, and track incidents, from creation to resolution. Azure Sentinel incidents are containers of threats in your organization – alerts, entities, and any additional related evidence.
 
+<!-- Jason: If you can, try to integrate the scenario. I suggest the following for the above sentence: 
+
+Like any business, Contoso faces technology-related threats to its organization. Azure Sentinel can help Contoso's IT team organize, investigate, and track these threats, called incidents, from creation to resolution. Using alerts, entities, and related evidence, Sentinel can contain threats to Contoso. (Sorry, Jason, I don't totally understand this last sentence from your intro.) --> 
+
 ## Key concepts
 
 Before you begin managing incidents, it's important to understand several key incident management concepts in Azure Sentinel.
