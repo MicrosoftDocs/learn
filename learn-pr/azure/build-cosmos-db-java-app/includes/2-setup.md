@@ -392,7 +392,7 @@ Spring Data Azure Cosmos DB automatically instantiates the Azure Cosmos DB clien
     ```
 
     `@Container` takes two arguments: 
-    * `containerName`: The name of the Azure Cosmos DB container which will hold `WebCustomer` objects, i.e. the name of your container.
+    * `containerName`: The name of the Azure Cosmos DB container (**WebCustomers**)
     * `ru`: The provisioned throughput on your container. 400 RU/s is a good default for a Microsoft Learn exercise.
 
     Customize the `@Container` for your use-case, as shown:
@@ -401,7 +401,7 @@ Spring Data Azure Cosmos DB automatically instantiates the Azure Cosmos DB clien
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
-    @Container(containerName = "WebCustomer", ru = "400")
+    @Container(containerName = "WebCustomers", ru = "400")
     public class WebCustomer {
     ```
 
