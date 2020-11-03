@@ -38,9 +38,9 @@ We'll use the user documents that you created for your online retailer applicati
     }
     ```
 
-    In this code, notice that we're once again using Project Reactor's declarative dataflow programming model. This time, we're using it to handle query response pages asynchronously. We demonstrate an async approach because in a real use case, there might be hundreds or thousands of responses to a query. Aggregating query responses can be a CPU-intensive task that benefits from the increased thread efficiency of async programming. 
+    In this code, notice that we're once again using Project Reactor's declarative dataflow programming model. This time, we're using it to handle query response pages asynchronously. We demonstrate an async approach because in a real use-case, there might be hundreds or thousands of responses to a query. Aggregating query responses can be a CPU-intensive task that benefits from the increased thread efficiency of async programming. 
     
-    In short, we want high throughput of handling query response pages, or high pages/sec per thread. `queryitems` returns the `CosmosPagedFlux` instance `pagedFluxResponse`, and `pagedFluxResponse.byPage(preferredPageSize)` creates a `Flux` instance that's a source of async page events. The pipeline of operations inside `.flatMap( ... ).blockLast();` operates asynchronously and in pseudo-parallel on the query response page that's associated with each event emitted by the `Flux` instance.
+    In short, we want high throughput of handling query responses, or high pages/sec per thread. `queryitems` returns the `CosmosPagedFlux` instance `pagedFluxResponse`, and `pagedFluxResponse.byPage(preferredPageSize)` creates a `Flux` instance that's a source of async page events. The pipeline of operations inside `.flatMap( ... ).blockLast();` operates asynchronously and in pseudo-parallel on the query response page that's associated with each event emitted by the `Flux` instance.
 
 1. Copy and paste the following code to your `basicOperations` method, *before* the document deletion code.
 
@@ -75,7 +75,7 @@ We'll use the user documents that you created for your online retailer applicati
 
 Now that you've created documents in your application, let's query them from your application. Spring Data Azure Cosmos DB exposes both derived query methods as well as custom query methods - and both of these build on the SQL-language query capability of the underlying Azure Cosmos DB Java SDK v4.  This unit focuses on running Spring Data Azure Cosmos DB queries from your application, as opposed to the portal.
 
-We'll use the user documents that you created for your online retailer application to test these queries.
+We'll use the `WebCustomer` documents that you created for your online retailer application to test these queries.
 
 ## Create and call derived query methods
 
@@ -102,9 +102,9 @@ This repository method declares to Spring Data that you want a method which quer
     }).blockLast();
     ```
     
-    In this code, notice that we're once again using Project Reactor's declarative dataflow programming model. This time, we're using it to handle query response pages asynchronously. We demonstrate an async approach because in a real use case, there might be hundreds or thousands of responses to a query. Aggregating query responses can be a CPU-intensive task that benefits from the increased thread efficiency of async programming. 
+    In this code, notice that we're once again using Project Reactor's declarative dataflow programming model. This time, we're using it to handle query response pages asynchronously. We demonstrate an async approach because in a real use-case, there might be hundreds or thousands of responses to a query. Aggregating query responses can be a CPU-intensive task that benefits from the increased thread efficiency of async programming. 
     
-    In short, we want high throughput of handling query response pages, or high pages/sec per thread. `findByFirstName` returns the `Flux<WebCustomer>` instance `webCustomers`. The pipeline of operations inside `.flatMap( ... ).blockLast();` operates asynchronously and in pseudo-parallel on the query responses associated with each event emitted by the `Flux<WebCustomer>`.
+    In short, we want high throughput of handling query responses, or high responses/sec per thread. `findByFirstName` returns the `Flux<WebCustomer>` instance `webCustomers`. The pipeline of operations inside `.flatMap( ... ).blockLast();` operates asynchronously and in pseudo-parallel on the query responses associated with each event emitted by the `Flux<WebCustomer>`.
 
 1. Build and run **CosmosSample.java** in the IDE, or run the program in the terminal by using: 
 
@@ -128,7 +128,7 @@ This repository method declares to Spring Data that you want a method which quer
 
 ## Create and call custom query methods
 
-*Custom query methods* are Spring Data repository methods with an `@Query` annotation specifying a query string - and the query string contains placeholders for the method arguments. This time, the method name has no impact on what query is performed. The `@Query` annotation singles Spring Data to issue a SQL-language query to the underlying database, *after* filling in the argument placeholders with the values of the method arguments.  
+*Custom query methods* are Spring Data repository methods with an `@Query` annotation specifying a query string - and the query string contains placeholders for the method arguments. This time, the method name has no impact on what query is performed. The `@Query` annotation signals Spring Data to issue a SQL-language query to the underlying database, *after* filling in the argument placeholders with the values of the method arguments.  
 
 1. We will create a custom query method which queries all documents having a certain value for the `lastName` field. Navigate to **ReactiveWebCustomerRepository.java** and paste in the following method declaration:
 

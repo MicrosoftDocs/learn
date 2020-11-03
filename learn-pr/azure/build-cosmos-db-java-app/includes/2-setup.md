@@ -219,24 +219,43 @@ In this unit, you set up the groundwork for your Azure Cosmos DB Java applicatio
     After the project is open, go to **src/main/java/com/azure/cosmos/examples/springexamples** and open **CosmosSample.java**, which is a template for the Spring Data application that we'll develop. It should look something like this:
 
     ```java
+    // Copyright (c) Microsoft Corporation. All rights reserved.
+    // Licensed under the MIT License.
+    package com.azure.cosmos.examples.springexamples;
+
+    import com.azure.cosmos.CosmosException;
+    import com.azure.cosmos.examples.springexamples.common.CouponsUsed;
+    import com.azure.cosmos.examples.springexamples.common.OrderHistory;
+    import com.azure.cosmos.examples.springexamples.common.ShippingPreference;
+    import com.azure.cosmos.models.CosmosItemResponse;
+    import com.azure.cosmos.models.PartitionKey;
     import org.slf4j.Logger;
     import org.slf4j.LoggerFactory;
+    import org.springframework.beans.factory.annotation.Autowired;
+    import org.springframework.boot.CommandLineRunner;
+    import org.springframework.boot.SpringApplication;
+    import org.springframework.boot.autoconfigure.SpringBootApplication;
+    import reactor.core.publisher.Flux;
+    import reactor.core.publisher.Mono;
 
-    public final class CosmosApp {
+    import java.util.ArrayList;
+    import java.util.Arrays;
+    import java.util.List;
 
-        /** For application to log INFO and ERROR. */
-        private static Logger logger = LoggerFactory.getLogger(CosmosApp.class.getSimpleName());
+    @SpringBootApplication
+    public class CosmosSample implements CommandLineRunner {
 
-        private CosmosApp() {
-            // not called
+        private final Logger logger = LoggerFactory.getLogger(CosmosSample.class);
+
+        @Autowired
+        private ReactiveWebCustomerRepository reactiveWebCustomerRepository;
+
+        public static void main(String[] args) {
+            SpringApplication.run(CosmosSample.class, args);
         }
 
-        /**
-        * Main.
-        * @param args Command line arguments
-        */
-        public static void main(final String[] args) {
-            logger.info("Hello World.");
+        public void run(String... var1) {
+            logger.info("Hello world.");
         }
     }
     ```
@@ -254,10 +273,10 @@ In this unit, you set up the groundwork for your Azure Cosmos DB Java applicatio
     Then run:
 
     ```bash
-    mvn exec:java -Dexec.mainClass="com.azure.cosmos.examples.springexamples.CosmosApp"  
+    mvn spring-boot:run
     ```
 
-    Confirm that the application logs the following output to the terminal:
+    Confirm that the application logs the following output to the terminal, amidst all of the other output:
 
     ```output
     INFO: Hello World.
@@ -342,14 +361,10 @@ Spring Data Azure Cosmos DB automatically instantiates the Azure Cosmos DB clien
 1. In **CosmosSampleConfiguration.java**, examine the `CosmosSampleConfiguration` class and find the empty `cosmosClientBuilder` method:
 
     ```java
-    /** Azure Cosmos DB client instance. */
-    private static CosmosAsyncClient client;
-
-    /** Azure Cosmos DB database instance. */
-    private static CosmosAsyncDatabase database;
-
-    /** Azure Cosmos DB container instance. */
-    private static CosmosAsyncContainer container;
+    @Bean
+    public CosmosClientBuilder cosmosClientBuilder() {
+        return null;
+    }
     ```
 
     At startup, Spring Data will automatically call this method, obtain the `CosmosClientBuilder` which this method returns, and call its `build()` method - at which point (under the hood) a `CosmosAsyncClient` instance will be created based on the configuration settings contained within the `CosmosClientBuilder`. You can use this method to configure the `CosmosClientBuilder` using builder methods.
@@ -382,6 +397,8 @@ Spring Data Azure Cosmos DB automatically instantiates the Azure Cosmos DB clien
 1. Return to **CosmosSampleConfiguration.java** and find the `getDatabaseName` method:
 
     ```java
+    @Override
+    protected String getDatabaseName() { return ""; }
     ```
 
     Change the default return value to `"Users"`, the name of your database. This way, when Spring Data automatically connects to Azure Cosmos DB at startup, it will connect to the **Users* database.
@@ -389,6 +406,7 @@ Spring Data Azure Cosmos DB automatically instantiates the Azure Cosmos DB clien
 1. Navigate to **WebCustomer.java**. You will notice that the `WebCustomer` class is preceded by an `@Container` annotation:
 
     ```java
+    @Container(containerName = "", ru = "")
     ```
 
     `@Container` takes two arguments: 
