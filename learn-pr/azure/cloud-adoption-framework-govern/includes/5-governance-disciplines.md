@@ -29,9 +29,6 @@ A future unit in this module will apply this discipline to the early needs of ou
 
 This discipline focuses on scaling the operational best practices for cost management, across all workloads and assets in your portfolio.
 
-:::image type="content" source="../media/cost-management.png" alt-text="The Cost Management discipline." border="false":::
-_Figure 2: The Cost Management discipline._
-
 This discipline would help Tailwind Traders to address the following risk from the prior unit:
 
     - Overspending in the cloud

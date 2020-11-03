@@ -9,8 +9,8 @@ At the end of this unit, you will understand the why and how behind configuratio
 Resource organization depends on what is important to your organization. Before defining a management group or subscription design, it is important to understand the priority of the following competing priorities:
 
 - Cost Transparency: All cloud adoption should be aligned to departments, business units, projects, or other cost allocation mechanisms for chargeback/showback accounting requirements.
-- Compliance / Security: All cloud adoption should map to specific compliance requirements which map cloud adoption to specific risk, security, and compliance organization structures.
-- Democratization (delegated responsibility): All cloud adoption should map to teams, product groups, or projects, which allows for easier segmentation of responsibility by teams.
+- Compliance / Security: All cloud adoption should map to specific compliance requirements that map cloud adoption to specific risk, security, and compliance organization structures.
+- Democratization (delegated responsibility): All cloud adoption should map to teams, product groups, or projects, which allow for easier segmentation of responsibility by teams.
 
 Understanding these strategic priorities will help identify the best starting point for your management and subscription design.
 
@@ -61,21 +61,21 @@ Subscriptions are the logical containers for all deployed assets. Subscriptions 
 :::image type="content" source="../media/initial-subscription-model.png" alt-text="Production and nonproduction subscriptions." border="false":::
 _Figure 4: Production and nonproduction subscriptions._
 
-
 ## Scaling with subscriptions
 
 There are several technical and non-technical reasons to scale with multiple subscriptions. See the [fundamental concepts article](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scale-subscriptions?azure-portal=true) for an overview of common reasons to scale.
 
 The following questions may help illustrate reasons for you to scale your subscriptions:
+
 - Are there capacity or technical limitations?
 - Do we need to clearly separate concerns? For example:
-    - Separation of duties
-    - Dev/test versus generic nonproduction
-    - Different end customers
-    - Different departments or business units
-    - Different projects
+  - Separation of duties
+  - Dev/test versus generic nonproduction
+  - Different end customers
+  - Different departments or business units
+  - Different projects
 - Use a dedicated subscription for shared infrastructure (for example, Azure Active Directory, monitoring, and patching tools). You will be able to spread the cost of this shared infrastructure across app owners.
-    - Do you need to create clearer separation of duty through shared service subscriptions for operations management, security, identity synchronization, connectivity, or DevOps teams?
+  - Do you need to create clearer separation of duty through shared service subscriptions for operations management, security, identity synchronization, connectivity, or DevOps teams?
 
 ## Exercise: Add subscriptions to your management groups
 
