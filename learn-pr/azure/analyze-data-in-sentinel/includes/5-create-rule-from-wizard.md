@@ -18,7 +18,7 @@ The following table lists the inputs you must provide in the **General** page.
 
 ## Set rule logic
 
-In the **Set rule logic** page, you can define the detection method by specifying KQL code that will run against the Azure Sentinel workspace. The KQL query will filter the security data that is used to trigger and create an incident.
+On the **Set rule logic** page, you can define the detection method by specifying KQL code that will run against the Azure Sentinel workspace. The KQL query will filter the security data that is used to trigger and create an incident.
 
 When you enter the KQL query string in the **Rule query** field, you can use **Results preview** area to the right to see the results of the query. The Results preview section will help you to determine that your query return expected results.
 

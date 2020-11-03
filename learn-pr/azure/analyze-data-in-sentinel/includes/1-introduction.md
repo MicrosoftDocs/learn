@@ -1,6 +1,6 @@
-Azure Sentinel Analytics provides an intelligent analytics solution used in detection of potential threats and vulnerabilities in your organizations. With Azure Sentinel Analytics rules you can configure notification and alerts for your security connectors. These alerts will ensure that your SecOps team knows when a threat occur and how to properly react to prevent reaching your corporate asset.
+Microsoft Azure Sentinel Analytics provides an intelligent analytics solution that you can use to detect potential threats and vulnerabilities in your organizations.
 
-Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses several Microsoft products and services, to implement data security and threat protection for its resources. These products are:
+Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses several Microsoft products and services to implement data security and threat protection for its resources. These products are:
 
 - Microsoft 365
 - Azure Active Directory (Azure AD)
@@ -20,9 +20,11 @@ Security analysts at Contoso face a huge triage burden. They deal with a high vo
 
 Additionally, the time spent to set up and maintain IT infrastructure takes the security operations (SecOps) team away from its security tasks.
 
-The IT director believes that Azure Sentinel Analytics will help the security analysts perform complex investigations faster and improve their SecOps.
+The IT director believes that Azure Sentinel Analytics will help the security analysts perform complex investigations faster and improve their SecOps. As Contoso's lead system engineer and Azure administrator, you've been asked to set up analytics rules in Azure Sentinel so that the SecOps team can identify and stop cyber attacks.
 
-As Contoso's lead system engineer and Azure administrator, you've been asked to set up analytics rules in Azure Sentinel so that the SecOps team can identify and stop cyber attacks.
+In this module, you'll understand the importance of using Azure Sentinel Analytics, create and implement analytics rules from existing templates, create new rules and queries using the wizard, and manage rules with modifications.
+
+By the end of this module, you'll be able to set up analytics rules in Azure Sentinel so that the SecOps team can identify and stop cyber attacks. <!--Marjan I added the last two  paragraphs because we need to list the main units of this module in a prose format as per the template. Please review.-->
 
 ## Learning objectives
 

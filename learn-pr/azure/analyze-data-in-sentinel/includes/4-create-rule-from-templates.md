@@ -1,10 +1,9 @@
-The Analytics section in Azure Sentinel contains rule templates that are pre-loaded from the Azure Sentinel GitHub repository. You can use these templates to create a rule to detect security threats. Some of these templates allows you to create a single rule, others templates can be used to create multiple rules with different customization options. Templates that are in use  display the **IN USE** label in the template page as displayed in the following screenshot.
-
-<! screenshot missing>
+The Analytics section in Azure Sentinel contains rule templates that are preloaded from the Azure Sentinel GitHub repository. You can use these templates to create a rule to detect security threats. <!--Marjan, I moved some of the text from here to come after the heading. Typically the intro sentence is just one sentence at the most two. -->
 
 ## Exploring the existing rule templates
 
-By selecting one of the rules in the **Rule Template** tab, you can observe the properties of the rule. For each rule you can view:
+You can use some of the existing rule templates to create a single rule and others to create multiple rules with different customization options. Templates that are in use display the **IN USE** label in the template page as displayed in the following screenshot. <!-- Marjan, screenshot is missing. Please provide one.>
+By selecting one of the rules in the **Rule Template** tab, you can observe the properties of the rule. For each rule, you can view:
 
 - Severity level. This indicates the importance of the alert. There are four severity levels:
   - High

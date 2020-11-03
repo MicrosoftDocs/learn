@@ -1,4 +1,7 @@
-You can connect several data sources to Azure Sentinel, which can rapidly generate many security alerts. To adjust the noise and filter the important threat detection, you should manage the analytics rules on an ongoing basis. This will help ensure that your rules remain useful and efficient in detecting potential security threats.
+You can connect several data sources to Azure Sentinel, which can rapidly generate many security alerts. 
+
+## Manage analytics rules
+To adjust the noise and filter the important threat detection, you should manage the analytics rules on an ongoing basis. This will help ensure that your rules remain useful and efficient in detecting potential security threats.
 
 You can perform the following four actions on existing active rules:
 
@@ -16,14 +19,14 @@ For example, your analytics rule might be detecting an incident that has already
 
 ![Screenshot of the editing existing analytics rule](../media/06-Edit-existing-rule.PNG)
 
-## Disable
+## Disable rules
 
 You can disable a rule when you are performing an activity that can trigger the rule alert. Disabled rules retain  their configuration, and you can enable them again at a later time.
 
-## Duplicate
+## Duplicate rules
 
 When you duplicate a rule, the rule contains all the configuration provided from the original rule. You can further modify the configuration based on your requirements. Do not forget to change the name of the duplicated rule because by default, the duplicate rule has the same name as the original rule with the string **Copy** appended to it.
 
-## Delete
+## Delete rules
 
 Deleting the rule will prompts you for confirmation before Azure Sentinel Analytics removes from the set of active rules. For example, you can delete a rule about a service or a resource that is not anymore in use, and eliminates the need for the rule. The deletion of the rule is permanent and there is no undo feature. Therefore, as a recommended practice, you should first disable the rule for a period of time until you can be sure that you don't need that rule.

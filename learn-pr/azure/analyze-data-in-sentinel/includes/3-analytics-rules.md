@@ -1,3 +1,5 @@
+By using Azure Sentinel Analytics rules, you can configure notification and alerts for your security connectors. These alerts will help ensure that the Contoso SecOps team knows when a threat occurs and can then appropriately react to prevent the threat from reaching your corporate assets.
+
 ## Types of analytics rules
 
 You can start search for potential threat by using the built in analytics rules that Azure Sentinel Analytics provides. There are currently four types of analytics rules:
@@ -14,7 +16,6 @@ You can start search for potential threat by using the built in analytics rules 
 Fusion alerts identify, anomalous behaviors and suspicious activities at various stages of the cyber kill-chain. Fusion correlates multiple security alerts from various products and uses machine Learning to detect advanced multistage attacks.
 
 > [!Note]
-
 > The cyber kill chain describes the typical workflow, including techniques, tactics, and procedures or TTPs, used by attackers to infiltrate an organization’s networks and systems.
 
 By default, Fusion detection is enabled in Azure Sentinel, but for successful threat detection, you must configure the following data connectors:
@@ -30,7 +31,7 @@ Some of the common attack detection scenarios that Fusion alerts identify includ
 - **Data destruction**. Anomalous number of unique files that were deleted after a suspicious sign-in to Azure AD account can signal that a compromised user account was used to destroy data.
 - **Denial of service**. Significant number of Azure virtual machines (VMs) were deleted after a suspicious sign-in to Azure AD account can signal compromised user account and is used to destroy the organization's assets.
 - **Lateral movement**. Significant number of impersonation actions occurred, after a suspicious sign-in to Azure AD account indicates compromised user account and was used for malicious purposes.
-- **Ransomware** – After a suspicious sign-in to Azure AD account, unusual user behavior used to encrypt data can trigger ransomware execution alert
+- **Ransomware**. After a suspicious sign-in to Azure AD account, unusual user behavior used to encrypt data can trigger ransomware execution alert
 
 > [!Note]
 > For more information on the Fusion technology in Azure Sentinel see the following page: [Advanced multistage attack detection in Azure Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/fusion)
@@ -51,9 +52,7 @@ You can configure the following security solutions to pass their alerts to Azure
 - Microsoft Defender for Endpoint
 
 > [!Note]
-
 > Microsoft unify SIEM and XDR terminology across their security products.
-
 > | Old Name | New Name |
 > | --- | --- |
 > | Azure Advanced Threat Protection | Microsoft Defender for Identity |

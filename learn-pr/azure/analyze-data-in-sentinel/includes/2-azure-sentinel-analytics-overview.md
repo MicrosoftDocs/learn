@@ -1,4 +1,4 @@
-Azure Sentinel Analytics, helps you to detect, investigate, and remediate cyber security threats. With Azure Sentinel Analytics, you can set up analytics rules and queries to detect issues in your environment.
+Azure Sentinel Analytics helps you detect, investigate, and remediate cyber security threats. The Contoso SecOps team can use Azure Sentinel Analytics to set up analytics rules and queries to detect issues in your environment.
 
 ## What is Azure Sentinel Analytics
 
@@ -50,11 +50,10 @@ To use filters, in the header bar select the filters you want to use.
 
 The **Analytics** home page provides the following filters:
 
-- **Severity –** Use to filter the rules by levels of severity.
-- **Rule Type –** There are currently four types of rules: Scheduled, Fusion, Microsoft Security, Machine Learning Behavior Analytics.
-- **Tactics –** Use to filter the rules based on 14 specific techniques and methodologies in ATT&amp;CK model.
-- **Data Sources –** Use to filter the rules by the data source connector that generates the alert.
+- **Severity**. Use to filter the rules by levels of severity.
+- **Rule Type**. There are currently four types of rules: Scheduled, Fusion, Microsoft Security, Machine Learning Behavior Analytics.
+- **Tactics**. Use to filter the rules based on 14 specific techniques and methodologies in ATT&amp;CK model.
+- **Data Sources**. Use to filter the rules by the data source connector that generates the alert.
 
 > [!NOTE]
-
 > MITRE ATT&amp;CK is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&amp;CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cyber security product and service community.
