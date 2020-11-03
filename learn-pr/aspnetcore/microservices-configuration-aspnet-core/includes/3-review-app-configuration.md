@@ -67,8 +67,8 @@ To understand the integration of Azure App Configuration and the Feature Managem
 
 In the preceding code fragment:
 
-1. The `CreateDefaultBuilder` method registers the environment variable and JSON file configuration providers. As a result, values can be read from environment variables and *appsettings.json*, respectively.
-1. The `ConfigureAppConfiguration` method is called to register a configuration provider for Azure App Configuration. The configuration provider is registered, via a call to `AddAzureAppConfiguration`, if the following conditions are satisfied:
+1. The `CreateDefaultBuilder` method registers the environment variable and file configuration providers. As a result, values can be read from environment variables and *appsettings.json*, respectively.
+1. The `ConfigureAppConfiguration` method is called to register a configuration provider for the Azure App Configuration store. The configuration provider is registered, via a call to `AddAzureAppConfiguration`, if the following conditions are satisfied:
     1. The `UseFeatureManagement` key value in *appsettings.json* is `true`.
     1. The Azure App Configuration connection string, found in the `AppConfig:Endpoint` key's value, has been provided.
 1. The Azure App Configuration provider is registered by providing a connection string to the resource. Feature flags support is enabled via a call to `UseFeatureFlags`.

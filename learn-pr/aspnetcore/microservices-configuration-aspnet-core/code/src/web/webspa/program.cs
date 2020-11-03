@@ -18,8 +18,7 @@ public class Program
                     configBuilder.AddAzureAppConfiguration(configOptions =>
                     {
                         configOptions.Connect(settings["AppConfig:Endpoint"])
-                            .UseFeatureFlags(flagOptions =>
-                                flagOptions.CacheExpirationInterval = TimeSpan.FromSeconds(10));
+                                     .UseFeatureFlags();
                     });
                 }
             })
