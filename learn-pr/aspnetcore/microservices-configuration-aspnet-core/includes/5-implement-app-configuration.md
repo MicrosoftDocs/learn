@@ -145,7 +145,8 @@ To verify the feature flag works as expected, start a purchase as follows:
 1. Select the **:::no-loc text="CHECKOUT":::** button.
 1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is present because the coupons feature is enabled in the Azure portal.
 1. In the Azure portal, clear the Coupons feature's **Enabled** check box.
-1. Wait a few seconds. In the app, refresh the page. The WebSPA reloads.
+1. Refresh the browser tab displaying the `/features` endpoint. Notice the value of the coupons feature's `enabled` property is now `false`.
+1. Wait a few seconds. In the app, refresh the page. The SPA reloads.
 1. Select the shopping bag icon in the upper right.
 1. Select the **:::no-loc text="CHECKOUT":::** button.
 1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field isn't present.

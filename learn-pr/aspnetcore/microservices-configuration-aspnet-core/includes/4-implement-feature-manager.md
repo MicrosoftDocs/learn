@@ -148,7 +148,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
     ```
 
     > [!IMPORTANT]
-    > The WebSPA project is built in ACR, rather than local to Cloud Shell, to take advantage of robust build hosts in ACR. If the ACR quick task fails, inspect the output for troubleshooting information. Run the above script again to attempt additional builds.
+    > The *WebSPA* project is built in ACR, rather than local to Cloud Shell, to take advantage of robust build hosts in ACR. If the ACR quick task fails, inspect the output for troubleshooting information. Run the above script again to attempt additional builds.
 
 1. Run the following script to deploy the updated WebSPA to AKS:
 
@@ -195,7 +195,7 @@ Complete the following steps to disable the coupons feature.
     deploy/k8s/deploy-application.sh --charts webspa
     ```
 
-1. In the tab displaying the `/features` endpoint, refresh the page. Notice the value of the coupons feature's `enabled` property is now `false`.
+1. Refresh the browser tab displaying the `/features` endpoint. Notice the value of the coupons feature's `enabled` property is now `false`.
 
 1. After a few seconds, test the configuration change as follows:
     1. In the app, refresh the page. The SPA reloads.
