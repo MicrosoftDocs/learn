@@ -271,7 +271,7 @@ When we're doing this, it's important to be strategic about where we put our bre
     sum [int]: 3
     ```
 
-    Well, that's not right. We specifically asked for Fibonaccci(5), and we got Fibonacci(4). This function returns `n2`, and each loop iteration calculates the `sum` value and sets `n2` equal to `sum`.
+    Well, that's not right. We specifically asked for Fibonacci(5), and we got Fibonacci(4). This function returns `n2`, and each loop iteration calculates the `sum` value and sets `n2` equal to `sum`.
 
     Based on this information, and our previous debug run, we can see that the loop exited when `i` was 4, not 5.
 
