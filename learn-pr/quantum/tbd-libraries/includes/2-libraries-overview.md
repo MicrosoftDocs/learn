@@ -35,7 +35,7 @@ Then, there are three libraries focused on more domain-specific functionality:
 The standard library is included in every Q# project by default, but accessing other libraries requires adding their packages to the project.
 Depending on your Q# development setup, the method will vary:
 
-NOTE: following taken from our docs. Has this changed/should we present it differently?
+NOTE: following taken from our docs. Has this changed/should we present it differently? E.g. should we more explicitly mention the `.csproj` file for the first option?
 
 ### [Q# applications or .NET interopability](#tab/tabid-csproj)
 

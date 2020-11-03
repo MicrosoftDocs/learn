@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.tbd-libraries.3-how-to-read-docs
+uid: learn.quantum.tbd-libraries.3-api-docs
 title: TBD, but likely an exercise unit
 metadata:
   title: TBD, but likely an exercise unit
@@ -22,4 +22,4 @@ metadata:
     dd: "\\mathrm{d}"
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-how-to-read-docs.md)]
+  [!include[](includes/3-api-docs.md)]
