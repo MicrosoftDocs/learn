@@ -17,12 +17,18 @@ You have been hired as a database administrator to identify performance related 
     :::image type="content" source="../media/adventureworks.png" alt-text="Adventureworks":::
 
 1. Select **Set server firewall**.
+
     :::image type="content" source="../media/firewall.png" alt-text="Set server firewall":::
+
 1. Select **Add client IP** and select **Save**.
+
     :::image type="content" source="../media/clientip.png" alt-text="Add client IP":::
+
 1. Select **OK**.
 1. Select **AdventureWorks**.
+
     :::image type="content" source="../media/firewalladventureworks.png" alt-text="AdventureWorks":::
+
 1. Select **Query editor**.
 1. In **Password**, type **Pa55w.rd** and select **OK**.
 1. In **Query 1**, type the following query and select **Run**:
@@ -58,7 +64,7 @@ You have been hired as a database administrator to identify performance related 
 1. Locate the **Query Performance Insight** icon on the **Intelligent Performance** section of the blade for the AdventureWorks database.
 1. Select **Reset settings**.
 
-:::image type="content" source="../media/resetsettings.png" alt-text="Reset settings":::
+    :::image type="content" source="../media/resetsettings.png" alt-text="Reset settings":::
 
 1. Click on the first query in grid below the graph.
 1. Notice that you can find details of the performance metrics for each query.
