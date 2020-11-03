@@ -78,8 +78,8 @@ The following table features a few great resources that you might want to bookma
 
 The .NET ecosystem extends beyond languages, libraries, and tools to the people. You're free to both learn from the community and contribute to the community:
 
-- **Learn** - .NET community members host live online events and in-person meet-ups. They build open-source software, participate in Q&A forums, and record video tutorials. They write books and blog posts that help you learn and get unstuck when you're not sure what to do next.
-- **Contribute** - .NET is open source on [GitHub](https://github.com/dotnet?azure-portal=true). The projects in that repository are managed by the .NET Foundation. This independent organization is dedicated to growing a trusted, commercially friendly, open-source ecosystem around the .NET development platform. In this repository, you can share your unique perspective and voice to help others learn.
+- **Learn**: .NET community members host live online events and in-person meet-ups. They build open-source software, participate in Q&A forums, and record video tutorials. They write books and blog posts that help you learn and get unstuck when you're not sure what to do next.
+- **Contribute**: .NET is open source on [GitHub](https://github.com/dotnet?azure-portal=true). The projects in that repository are managed by the .NET Foundation. This independent organization is dedicated to growing a trusted, commercially friendly, open-source ecosystem around the .NET development platform. In this repository, you can share your unique perspective and voice to help others learn.
 
 ## How does the .NET ecosystem compare to others?
 
