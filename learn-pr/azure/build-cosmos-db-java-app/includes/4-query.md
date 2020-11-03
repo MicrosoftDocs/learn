@@ -89,7 +89,7 @@ Spring Data Azure Cosmos DB includes a number of built-in *derived query methods
     Flux<WebCustomer> findByFirstName(String firstName);
     ```
 
-This repository method declares to Spring Data that you want a method which queries on `firstName` when it is called. Recall that the `WebCustomer` class began with an `@Container` annotation specifying `containerName` as `WebCustomers`. Since `findByFirstName` returns `Flux<WebCustomer>`, Spring Data knows to query `WebCustomers` when this method is called.
+    This repository method declares to Spring Data that you want a method which queries on `firstName` when it is called. Recall that the `WebCustomer` class began with an `@Container` annotation specifying `containerName` as `WebCustomers`. Since `findByFirstName` returns `Flux<WebCustomer>`, Spring Data knows to query `WebCustomers` when this method is called.
 
 1. Copy and paste the following code to your `run` method, *before* the `deleteWebCustomerDocument` call.
 
@@ -137,7 +137,7 @@ This repository method declares to Spring Data that you want a method which quer
     Flux<WebCustomer> findByLastName(@Param("lastName") String lastName);
     ```
 
-This repository method declares to Spring Data that you want a method which queries on `lastName` when it is called. The `lastName` argument value will be substituted for the `@lastName` placeholder.
+    This repository method declares to Spring Data that you want a method which queries on `lastName` when it is called. The `lastName` argument value will be substituted for the `@lastName` placeholder.
 
 1. Copy and paste the following code to your `run` method, after the derived query code.
 
