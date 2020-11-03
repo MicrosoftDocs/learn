@@ -8,7 +8,7 @@ The term *ecosystem* describes the multiple facets of an application development
 
 Software developers use .NET languages like C# and F# to write source code. Each line of code they write expresses an instruction or command that the computer should perform while the program is running. 
 
-Before software developers can run their code, they must first compile it.  The *.NET compiler* is a program that converts the source code into a special language called *intermediate language* (IL).  The .NET compiler saves the IL code into a file called a *.NET assembly*. By compiling the code into an "intermediate" format, you can use the same code base regardless of where you run the code. Run it on Windows or Linux, or on 32-bit or 64-bit computer hardware.
+Before software developers can run their code, they must first compile it.  The *.NET compiler* is a program that converts the source code into a special language called *intermediate language* (IL).  The .NET compiler saves the IL code into a file called a *.NET assembly*. By compiling the code into an "intermediate" format, you can use the same code base regardless of where you run the code, whether on Windows or Linux, or on 32-bit or 64-bit computer hardware.
 
 The *.NET runtime* is an execution environment for your compiled .NET assembly. In other words, the .NET runtime is what executes and manages your application as it runs on a host operating system. We'll talk more about what the .NET runtime does in just a moment.
 
@@ -41,7 +41,7 @@ You might wonder which frameworks support which app models. Use the following ta
 |---|---|---|
 | Web  | ASP.NET Core |  The framework for building server-side logic. |
 | Web  | ASP.NET Core MVC |  The framework for building server-side logic for web pages or web APIs. |
-| Web  | ASP.NET Core Pages |  The framework for building server-generated HTML.  |
+| Web  | ASP.NET Core Razor Pages |  The framework for building server-generated HTML.  |
 | Web client | Blazor | Blazor is a part of ASP.NET Core. Its two modes allow for either Document Object Model (DOM) manipulation via sockets as a communication vehicle for running server-side code, or a WebAssembly implementation for running compiled C# on a browser.  |
 | Desktop  | WinForms | A framework for building "battleship gray" Windows-style applications. |
 | Desktop  | Windows Presentation Foundation (WPF) | A framework for building dynamic desktop applications that conform to different form factors. WPF allows form elements to perform movement, fades, glides, and other effects with the help of a rich library of animations. |
@@ -61,6 +61,8 @@ Furthermore, you can choose from numerous first-party and third-party tools for 
 
 You can find other .NET tools for other scenarios. For example, later in this module you'll work with *Try .NET*. You'll use this browser-based interface to write simple applications that will help you learn the C# programming language.
 
+### Find solutions and answers in documentation and tutorials
+
 Microsoft actively provides a rich set of documentation, tutorials, and training. You'll find learning materials in popular modalities to help you at each step in your learning process.
 
 The following table features a few great resources that you might want to bookmark and come back to.
@@ -70,7 +72,7 @@ The following table features a few great resources that you might want to bookma
 | [Microsoft Docs](https://docs.microsoft.com/?azure-portal=true)  | Provides quickstart tutorials and definitive reference documentation. |  
 | [Patterns and Practices](https://docs.microsoft.com/azure/architecture/?azure-portal=true) | Helps developers and software architects find solutions to common application development needs. Resources often transcend the low-level details of writing code and delve into choosing products and services that enable seemingly infinite scalable architectures. | 
 | [.NET Videos](https://dotnet.microsoft.com/learn/videos?azure-portal=true) | Provides video tutorials from the .NET team. These videos walk developers through common usage scenarios. | 
-| [Microsoft Learn](https://docs.microsoft.com/learn/paths/csharp-first-steps/) | Provides hands-on labs to help you build your skills by combining instruction, exercises, media, knowledge checks, and a means of tracking your progress. | 
+| [Microsoft Learn](https://docs.microsoft.com/learn/paths/csharp-first-steps?azure-portal=true) | Provides hands-on labs to help you build your skills by combining instruction, exercises, media, knowledge checks, and a means of tracking your progress. | 
 
 ### Interact with the .NET community to learn and share solutions
 

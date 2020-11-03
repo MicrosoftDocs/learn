@@ -9,7 +9,7 @@ This section describes the workflow of application development in .NET. It inclu
 The first decision developers make is selecting the tools they'll use to create their applications. In other words, they select their *development environment*.  The decision is usually based on whether they prefer a more visual workflow that features a graphical user interface, or a command-line interface where they'll rely almost exclusively on the keyboard to navigate the development environment and make commands.
 
 > [!NOTE]
-> At the end of this module, we provide links to help you get started with setting up your development environment. You can choose either Visual Studio 2019 or Visual Studio Code and the .NET Software Development Kit (SDK).
+> At the end of this module, you'll find links to help you get started with setting up your development environment. You can choose either Visual Studio 2019 or Visual Studio Code and the .NET Software Development Kit (SDK).
 
 For developers who prefer a visual environment, Visual Studio 2019 is the best choice. As you might guess, because of the comprehensive and visual nature of Visual Studio 2019, you'll need time, bandwidth, and disk space to download and install the program. However, some beginners find it to be the easiest way to get started. Depending on the speed of your internet connection, the installation takes 15 minutes or more.
 
@@ -23,12 +23,12 @@ If you prefer a command-line environment, then separately download and install V
 
 Typically, software development projects begin with a set of requirements. These requirements affect choices for the app model. The app model you choose could be a web, desktop, or mobile application or a background process, for example.
 
-By using either Visual Studio 2019 or the .NET CLI, you typically begin by creating a new project based on a project template. You can choose from many project templates. Here are some basic considerations:
+By using either Visual Studio 2019 or the .NET CLI, you typically begin by creating a new project based on a project template. You can choose from many project templates. Project templates:
 
-- You generate folders and files based on templates and the name of the project you define.
-- You add references to commonly used libraries and libraries that your app model framework requires.
-- Templates include code that allows you to run the application and see a tiny sample so that you can confirm the code compiles.
-- Sometimes, a template includes instructions in the code. These instructions guide you to modify the sample application and make it your own.
+- Generate folders and files based on templates and the name of the project you define.
+- Add references to commonly used libraries and libraries that your app model framework requires.
+- Provide required code that allows you to run the application and see a tiny sample so that you can confirm the code compiles.
+- Sometimes include instructions in the code. These instructions guide you to modify the sample application and make it your own.
 
 In Visual Studio 2019, the **New Project** dialog box helps you visually choose an application model from a set of installed templates. Or you can choose from many community contributions.  In the .NET CLI, you choose a new project template by using a combination of a command and flags.
 
@@ -80,5 +80,5 @@ The *.NET runtime* is like a protective bubble that provides a run environment f
 
 - Compiles the intermediate code into a binary format the first time the program runs. The binary format is specific to the platform and architecture (for example, 64-bit Windows) on the computer where it's running.
 - Locates the program's entry point and begins running each instruction in the proper sequence.
-- Manages computer resources like memory and network access.  When we say that the .NET runtime "manages memory," we mean that it works with the operating system to provision memory for your application. When your application no longer needs the data stored in memory, a garbage-collection feature releases that memory back to the operating system without any special instructions from the software developer.
+- Manages computer resources like memory and network access.  When you hear that the .NET runtime "manages memory," it means that it works with the operating system to provision memory for your application. When your application no longer needs the data stored in memory, a garbage-collection feature releases that memory back to the operating system without any instructions from the software developer.
 - Secures the user's computer from software that has potentially malicious intent. It also provides a layer of isolation between applications.

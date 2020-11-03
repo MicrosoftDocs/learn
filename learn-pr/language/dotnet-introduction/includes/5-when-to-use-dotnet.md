@@ -1,4 +1,4 @@
-In this unit, we briefly discuss when you might want to use .NET.  When does it make sense to choose .NET?  What can you build with .NET?
+In this unit, you'll learn about when you might want to use .NET.  When does it make sense to choose .NET?  What can you build with .NET?
 
 ## .NET is for projects large and small
 
@@ -14,7 +14,7 @@ Repurposing your knowledge reduces the time and stress involved in learning a ne
 
 .NET is popular in enterprises for various reasons. Advantages include its ecosystem and its integration with other Microsoft products, including Azure cloud services and on-premise server products. Further, .NET is a strongly typed system, so it avoids many of the bugs that can arise in loosely typed systems. Developers can choose to use an object-based paradigm in C# or a functional-based paradigm in F#. They use the language that best fits the kinds of problems they need to solve.
 
-### Choose .NET for prototypes, start-ups, and department-scale applications
+### Choose .NET for prototypes, start-ups, and small-scale applications
 
 .NET is also popular for small projects because of its long history of improvements to the design of languages, APIs, and tools based on customer feedback and telemetry. You can use it to develop full-featured software quickly for prototyping purposes. Furthermore, .NET can run on inexpensive hardware and cloud services. And it outperforms other popular platforms, so it's a great fit for start-up businesses.
 

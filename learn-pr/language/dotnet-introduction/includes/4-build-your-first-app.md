@@ -4,10 +4,10 @@ For simplicity, we'll rewrite the "Hello World" application. This time we'll tak
 
 ## Build a simple app by using C#
 
-Earlier, we mentioned that Try .NET provides an easy way to experiment with C# and .NET. You can use it without installing any software on your local computer.
+Earlier, you learned that Try .NET provides an easy way to experiment with C# and .NET. You can use it without installing any software on your local computer.
 
 > [!Note]
-> In this module, we use a built-in version of [Try .NET](https://try.dot.net).  Try .NET is a great way to try out small code examples without installing anything on your local computer.
+> In this module, you use a built-in version of Try .NET. If you want to experiment with the application after you finish this exercise, go to `https://try.dot.net`. Try .NET is a great way to try out small code examples without installing anything on your local computer.
 
 ### Step 1 - Write the code
 
@@ -16,7 +16,7 @@ In the .NET editor, on the right side of this web page, type the following code 
 ```csharp-interactive
 Console.WriteLine("Hello world!");
 ```
-As we discussed in the prerequisite module, "Hello world" is a simple and canonical code example that developers write to understand the basic syntax of new programming languages. You could learn a lot about the C# syntax from this simple example. But for now, we'll use it to learn more about .NET specifically.
+As you learned in the prerequisite module, "Hello world" is a simple and canonical code example that developers write to understand the basic syntax of new programming languages. You could learn a lot about the C# syntax from this simple example. But for now, we'll use it to learn more about .NET specifically.
 
 ### Step 2 - Run the code
 
@@ -27,9 +27,9 @@ Press the green **Run** button on the right side of the .NET editor. Assuming yo
 
 ### What happens to the code you write?
 
-Our browser version of Try .NET hides some of the code that you see when you build a full application by using Try .NET, Visual Studio 2019, or Visual Studio Code.
+The browser version of Try .NET hides some of the code that you see when you build a full application by using Try .NET, Visual Studio 2019, or Visual Studio Code.
 
-When we include the hidden code, here's how the example looks:
+When you include the hidden code, here's how the example looks:
 
 ```csharp
 using System;
@@ -43,7 +43,7 @@ public class Program
 }
 ```
 
-Nevertheless, the in-browser Try .NET environment uses the same steps we talked about earlier. The only difference is that some steps are hidden to simplify  the experience.
+Nevertheless, the in-browser Try .NET environment uses the same steps you learned about earlier. The only difference is that some of the code is hidden to simplify  the experience.
 
 Focusing on that expanded view of the code, you can see a series of curly braces `{ }`. C# uses a pair of curly braces to define a *code block*.  Different kinds of code blocks are used for different purposes.
 
