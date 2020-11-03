@@ -1,4 +1,4 @@
-You've made the connection to Azure Cosmos DB. In this unit, you'll create user documents in your `WebCustomer` collection. Then, you'll retrieve the documents by ID, replace them, and delete them.
+You've made the connection to Azure Cosmos DB. In this unit, you'll create user documents in your `WebCustomers` collection. Then, you'll retrieve the documents by ID, replace them, and delete them.
 
 ::: zone pivot="java"
 
@@ -355,7 +355,7 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
 Data is stored in JSON documents in Azure Cosmos DB. [Documents](https://docs.microsoft.com/azure/cosmos-db/databases-containers-items#azure-cosmos-items) can be created, retrieved, replaced, or deleted in the portal or programmatically. This lab focuses on programmatic operations. All of this operations are available in Azure Cosmos DB Java SDK and are also accessible through the Spring Data programming model. In this module, we'll use Spring Data Azure Cosmos DB to perform CRUD (create, retrieve, update, and delete) operations on the NoSQL data stored in Azure Cosmos DB.
 
 The main operations for Spring Data Azure Cosmos DB documents are basic operations in the Spring Data programming model:
-* `save` - point-write or updates a document, depending on whether the document already exists.
+* `save` - point-write or update a document, depending on whether the document already exists.
 * `view` -  point-read a document
 * `delete` - point-delete a document
 
@@ -363,7 +363,7 @@ To perform any of these operations, you'll need helper classes (Java POJO classe
 
 Each web customer has some associated shipping preferences and coupons, so you'll want `ShippingPreference` and `CouponsUsed` datatypes to represent those entities. Finally, each web customer might have some order history that is potentially unbounded, so you'll want to have separate `OrderHistory` entities with a corresponding Java POJO class.
 
-Go to **src/main/java/com/azure/cosmos/examples/springexamples**. You will see the **WebCustomer.java** POJO. Now look in the **common** folder. You'll see several POJOs: `ShippingPreference`, `OrderHistory`, and `CouponsUsed`. So we've provided all of the entity POJOs and their helper classes!
+Go to **src/main/java/com/azure/cosmos/examples/springexamples**. You will see the `WebCustomer` POJO. Now look in the **common** folder. You'll see several POJOs: `ShippingPreference`, `OrderHistory`, and `CouponsUsed`. So we've provided all of the entity POJOs and their helper classes!
 
 Next we'll create some entities and perform some basic CRUD operations on the Azure Cosmos DB container and the documents that it contains. You can pass Azure Cosmos DB a Jackson `ObjectNode` instance that directly specifies the JSON document. But Azure Cosmos DB is also capable of serializing Java POJOs into JSON, and we recommend this approach as the simplest option (all else being equal).
 
@@ -444,7 +444,7 @@ Next we'll create some entities and perform some basic CRUD operations on the Az
     }
     ```
 
-1. Find the `run` method and add the following code to the end of that method, *before* the `client.close()` call.
+1. Find the `run` method and add the following code to the end of that method.
 
     ```java
     WebCustomer maxaxam = new WebCustomer(
