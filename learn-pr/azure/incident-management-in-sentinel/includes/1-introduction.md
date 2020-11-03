@@ -1,3 +1,21 @@
+<!-- Jason: Intro should go
+1. Topic Sentence
+2. Scenario (general boilerplate then to module specific)
+3. Prose table of contents
+4. Learning Objective
+
+I'll give you an idea of how you could do it, but you'll know the accurate tech language much better than me. I'm writing this before I've even read the module so it is just to give you an idea of the format.
+
+Azure Sentinel gives users the ability to identify anomalies in resources and manage incidents. (Topic sentence)
+
+Contoso, Ltd. is a midsize financial services company in London with a New York branch office. The company uses Azure Security Center with Azure Defender as threat protection for resources that run on Azure and on-premises. The company also monitors and protects other non-Microsoft assets. You are a member of Contoso's security team. (General scenario)
+
+Recently, you've been asked to investigate and identify sign in anomalies for the company's Azure AD resources. You learn that Azure sentinel is a program that can assist you. (Specific scenario)
+
+In this module, you will investigate Azure Sentinel incident management before learning about AS events and entities. At the end, you will discover ways to resolve incidents. (Prose table of contents)
+
+By the end of this module, you'll be able to use Azure Sentinel to protect Contoso's resouces. (learning objective)--> 
+
 Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Intune Endpoint Protection, and Microsoft Azure Information Protection. Contoso uses Azure Security Center with Azure Defender as threat protection for resources that run on Azure and on-premises. The company also monitors and protects other non-Microsoft assets. As part of the Contoso security team, you've recently been asked to investigate and identify sign in anomalies for the company's Azure AD resources.
 
 ## Learning objectives
