@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.iot.output-from-azure-digital-twins-to-downstream-services
+metadata:
+  description: This module covers routing data from Azure Digital Twins, through an IoT Hub and Azure Function, to Time Series Insights.
+  ms.date: 12/1/2020
+  author: Rania.Bayoumy
+  ms.author: Rania.Bayoumy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Route output from Azure Digital Twins to Downstream Services
+summary: >
+  This module covers routing data from Azure Digital Twins, through an IoT Hub and Azure Function, to Time Series Insights.
+abstract: |
+  In this module, you will:
+  - Build and simulate the Chocolate Factory Twin
+  - Create a route and filter to twin update notifications
+  - Create and configure an Azure function, and send telemetry to an event hub
+  - Create and connect a Time Series Insights instance
+  - Visualize and query your data in Time Series Insights
+prerequisites: |
+  - Introductory knowledge of the purpose of Azure IoT
+  - Ability to use Node.js at the beginner level 
+  - Experience using Visual Studio or Visual Studio Code at the beginner level 
+iconUrl: /learn/achievements/iot/output-from-adt-to-downstream-services.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure-iot
+- azure-event-hubs
+units:
+- learn.iot.output-from-azure-digital-twins-to-downstream-services.introduction
+- learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-create-digital-twins-instance
+- learn.iot.output-from-azure-digital-twins-to-downstream-services.create-route-filter-twin-update-notifications
+- learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-create-route-filter-twin-update-notifications
+- learn.iot.output-from-azure-digital-twins-to-downstream-services.create-configure-azure-function,-send-telemetry-event-hub
+- learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-create-configure-azure-function-send-telemetry-event-hub
+- learn.iot.output-from-azure-digital-twins-to-downstream-services.create-connect-time-series-insights-instance
+- learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-create-connect-time-series-insights-instance
+- learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-visualize-data-in-time-series-insights
+- learn.iot.output-from-azure-digital-twins-to-downstream-services.summary
+badge:
+  uid: learn.iot.output-from-adt-to-downstream-services.badge
