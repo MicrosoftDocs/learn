@@ -1,5 +1,7 @@
 Incidents in Azure Sentinel are created from other sources of security information in Azure. How you manage and understand the contents of an incident will help you better understand and use incident management in Sentinel.
 
+<!-- Jason: Please consider integrating Contoso above. Maybe: "Incidents in Azure Sentinel are created from other sources of security information in Azure. As part of the security team at Contoso, you will need to understand the contents of an incident to use the incident management system in Sentinel effectively." ... Soemthing like this. -->
+
 ## Incident evidence
 
 Incident evidence consists of the security event information and related Sentinel assets that identify threats in the Sentinel environment. Evidence shows you how a threat has been identified in Sentinel and it links you back to the specific resources that you can use to increase you awareness of incident details.
@@ -10,8 +12,13 @@ Events link you back to one or more events from the Log Analytics workspaces ass
 
 ### Alerts
 
-Most incidents are generated as a result of an analytics rule alert. Examples of alerts include detection of suspicious files, detection of
-suspicious user activities, or attempted elevation of privilege. Analytics rules generate alerts, either based on KQL queries or direct connection to Microsoft Security solutions such as Azure Security Center or Azure Advanced Threat Protection. If you enable alert grouping Azure Sentinel includes any related alerts evidence for the incident.
+Most incidents are generated as a result of an analytics rule alert. Examples of alerts include:
+- detection of suspicious files 
+- detection of suspicious user activities
+- attempted elevation of privilege 
+<!-- Jason: The above used to be a sentence but I made it a list. --> 
+
+Analytics rules generate alerts, either based on KQL queries or direct connection to Microsoft Security solutions such as Azure Security Center or Azure Advanced Threat Protection. If you enable alert grouping Azure Sentinel includes any related alerts evidence for the incident.
 
 ### Bookmarks
 
@@ -27,3 +34,5 @@ An entity refers to a network or user resource involved with an event. You can u
 - Network connection
 
 For instance, entities would help you identify all of the alerts associated with a specific user at Contoso, the user's host machine, and other hosts the user has connected to. You can determine which IP addresses are associated with the user in question, exposing which events and alerts could be part of the same attack.
+
+<!-- Jason: Appreciate the mention of Contoso here! In general, appreciate the clear lanaguage and streamlined content. --> 
