@@ -38,7 +38,7 @@ Remember, Azure IoT Central commands are implemented using Azure IoT Hub direct 
 
 The following example declares a Direct Methid Binding to restart the Azure Sphere. This declaration maps the Azure IoT Central `RestartDevice` command with a handler function named `RestartDeviceHandler`.
 
-```
+```c
 static LP_DIRECT_METHOD_BINDING dm_restartDevice = {
     .methodName = "RestartDevice",
     .handler = RestartDeviceHandler };
@@ -48,7 +48,7 @@ static LP_DIRECT_METHOD_BINDING dm_restartDevice = {
 
 The following is the implementation of the handler function `RestartDeviceHandler`. The handler function is called when the device receives a direct method message named `RestartDevice` from Azure IoT Hub.
 
-```
+```c
 /// <summary>
 /// Start Device Power Restart Direct Method 'ResetMethod' integer seconds eg 5
 /// </summary>
@@ -93,7 +93,7 @@ static LP_DIRECT_METHOD_RESPONSE_CODE RestartDeviceHandler(JSON_Value* json, LP_
 
 The RestartDeviceHandler function sets up a one shot timer that invokes the **DelayRestartDeviceTimerHandler** function after the specified restart period measured in seconds. In the DelayRestartDeviceTimerHandler function a call is made to the **PowerManagement_ForceSystemReboot** API. The PowerManagement_ForceSystemReboot API requires the **PowerControls** capability to be declared in the app_manifest.json file.
 
-```
+```json
 "PowerControls": [
     "ForceReboot"
 ]
@@ -105,7 +105,7 @@ The RestartDeviceHandler function sets up a one shot timer that invokes the **De
 
 All declared direct method bindings must be added by reference to the directMethodBindingSet array. When a direct method message is received by the device from Azure IoT Hub it is checked for a matching *methodName* name in the directMethodBindingSet array. When a match is found, the corresponding handler function is called.
 
-```
+```c
 LP_DIRECT_METHOD_BINDING* directMethodBindingSet[] = { &dm_restartDevice };
 ```
 
@@ -113,7 +113,7 @@ LP_DIRECT_METHOD_BINDING* directMethodBindingSet[] = { &dm_restartDevice };
 
 Direct method binding sets are initialized in the **InitPeripheralsAndHandlers** function in **main.c**.
 
-```
+```c
 lp_directMethodSetOpen(directMethodBindingSet, NELEMS(directMethodBindingSet));
 ```
 
@@ -121,7 +121,7 @@ lp_directMethodSetOpen(directMethodBindingSet, NELEMS(directMethodBindingSet));
 
 Device twin bindings sets are closed in the **ClosePeripheralsAndHandlers** function in **main.c**.
 
-```
+```c
 lp_directMethodSetClose();
 ```
 

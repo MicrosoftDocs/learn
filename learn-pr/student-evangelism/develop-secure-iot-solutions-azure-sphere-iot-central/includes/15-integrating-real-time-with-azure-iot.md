@@ -72,7 +72,7 @@ Remember, Azure IoT Central properties are implemented using Azure IoT Hub devic
 
 The following example declares a Device Twin Binding to set the desired room temperature. This declaration maps the Azure IoT Central `DesiredTemperature` property with a handler function named `DeviceTwinSetTemperatureHandler`.
 
-```
+```c
 static LP_DEVICE_TWIN_BINDING dt_desiredTemperature = {
     .twinProperty = "DesiredTemperature",
     .twinType = LP_TYPE_FLOAT,
@@ -86,7 +86,7 @@ The following is the implementation of the handler function `DeviceTwinSetTemper
 > [!NOTE]
 > As part of the [IoT Plug and Play](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-convention) conventions, the device should acknowledge the device twin update with a call to **lp_deviceTwinAckDesiredState**.
 
-```
+```c
 /// <summary>
 /// Device Twin Handler to set the desired temperature value
 /// </summary>
@@ -120,7 +120,7 @@ The HVAC operating mode depends on the room temperature, it can be heating, or c
 
 The following example declares a **ReportedHvacState** device twin property of type **string**. A handler function is not required as this is a one-way device-to-cloud binding.
 
-```
+```c
 static LP_DEVICE_TWIN_BINDING dt_reportedHvacState = {
     .twinProperty = "ReportedHvacState",
     .twinType = LP_TYPE_STRING };
@@ -128,7 +128,7 @@ static LP_DEVICE_TWIN_BINDING dt_reportedHvacState = {
 
 The device updates the **ReportedHvacState** property by calling the **lp_deviceTwinReportState** function. You must pass a property of the correct type.
 
-```
+```c
 lp_deviceTwinReportState(&dt_reportedHvacState, (void*)hvacState[(int)current_led]);
 ```
 
@@ -138,7 +138,7 @@ lp_deviceTwinReportState(&dt_reportedHvacState, (void*)hvacState[(int)current_le
 
 All declared device twin bindings must be added by reference to the deviceTwinBindingSet array. When a device twin message is received by the device from Azure IoT Hub it is checked for a matching *twinProperty* name in the deviceTwinBindingSet array. When a match is found, the corresponding handler function is called.
 
-```
+```c
 LP_DEVICE_TWIN_BINDING* deviceTwinBindingSet[] = { &dt_desiredTemperature, &dt_reportedTemperature, &dt_reportedHvacState };
 ```
 
@@ -146,7 +146,7 @@ LP_DEVICE_TWIN_BINDING* deviceTwinBindingSet[] = { &dt_desiredTemperature, &dt_r
 
 Device twin binding sets are initialized in the **InitPeripheralsAndHandlers** function in **main.c**.
 
-```
+```c
 lp_deviceTwinSetOpen(deviceTwinBindingSet, NELEMS(deviceTwinBindingSet));
 ```
 
@@ -154,7 +154,7 @@ lp_deviceTwinSetOpen(deviceTwinBindingSet, NELEMS(deviceTwinBindingSet));
 
 Device twin bindings sets are closed in the **ClosePeripheralsAndHandlers** function in **main.c**.
 
-```
+```c
 lp_deviceTwinSetClose();
 ```
 

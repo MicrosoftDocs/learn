@@ -24,7 +24,7 @@ The following example is a variable named **measureSensorTimer** of type **LP_TI
 > [!NOTE]
 > There are two values used to initialize the **.period** variable. The first is the number of seconds, followed by the number of nanoseconds. If you wanted the timer to trigger events every half a second (500 milliseconds), you would set the .period variable to be { 0, 500000000 }.
 
-```
+```c
 static LP_TIMER measureSensorTimer = {
     // Fire the timer event every 10 seconds + zero nanoseconds.
     .period = { 10, 0 },
@@ -39,7 +39,7 @@ static LP_TIMER measureSensorTimer = {
 
 The following code is the implementation of the **MeasureSensorHandler** handler function. This functions reads sensor data, serializes the data as JSON, then displays the JSON in the debug console.
 
-```
+```c
 /// <summary>
 /// Read sensor and send to Azure IoT
 /// </summary>
@@ -73,7 +73,7 @@ The advantage of this event-driven pattern is that the device can continue to se
 
 The following is an example of a one-shot timer. The variable named **alertLedOffOneShotTimer** is of type **LP_TIMER**. This timer is initialized with a period of { 0, 0 }. Timers initialized with a period of 0 seconds are one-shot timers.
 
-```
+```c
 static LP_TIMER alertLedOffOneShotTimer = {
     .period = { 0, 0 },
     .name = "alertLedOffOneShotTimer",
@@ -82,7 +82,7 @@ static LP_TIMER alertLedOffOneShotTimer = {
 
 In the **ButtonPressCheckHandler** function, the alert LED is turned on when button A is pressed. Then a call is made to the **lp_timerOneShotSet** function to set the timer to 1 second. After 1 second, the **AlertLedOffToggleHandler** function is called.
 
-```
+```c
 /// <summary>
 /// Handler to check for Button Presses
 /// </summary>
@@ -105,7 +105,7 @@ static void ButtonPressCheckHandler(EventLoopTimer* eventLoopTimer)
 
 When the one-shot timer triggers, the handler function **AlertLedOffToggleHandler** is called to turn off the alert LED.
 
-```
+```c
 /// <summary>
 /// One shot timer handler to turn off Alert LED
 /// </summary>
@@ -130,7 +130,7 @@ LP_TIMER* timerSet[] = { &buttonPressCheckTimer, &networkConnectionStatusTimer, 
 
 These sets are referenced when **lp_gpioSetOpen** and **lp_timerSetStart** are called from the **InitPeripheralsAndHandlers** function. The sets are also referenced when the peripheral and timer sets are closed in the **ClosePeripheralsAndHandlers** function.
 
-```
+```c
 static void InitPeripheralsAndHandlers(void)
 {
 	lp_initializeDevKit();
@@ -144,7 +144,7 @@ static void InitPeripheralsAndHandlers(void)
 
 This model makes it easy to declare another peripheral or timer and add it to the peripheral set or timer set. The following code is an example of adding a GPIO output peripheral.
 
-```
+```c
 static LP_GPIO fanControl = {
     .pin = FAN1,                      // The GPIO pin number
     .direction = LP_OUTPUT,           // for OUTPUT
@@ -156,6 +156,6 @@ static LP_GPIO fanControl = {
 
 Remember to add this new peripheral to the gpio set. Adding the gpio peripheral to the set ensures automatic opening and closing.
 
-```
+```c
 LP_GPIO* gpioSet[] = { &buttonA, &networkConnectedLed, &alertLed, &fanControl };
 ```
