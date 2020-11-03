@@ -6,11 +6,11 @@ Incidents in Azure Sentinel are created from other sources of security informati
 
 Incident evidence consists of the security event information and related Sentinel assets that identify threats in the Sentinel environment. Evidence shows you how a threat has been identified in Sentinel and it links you back to the specific resources that you can use to increase you awareness of incident details.
 
-<!-- Jason: The following information seems like it would fit perfectly in a table or series of screenshots. If a table, you could divide: "Type of Evidence / Purpose / Example." When it comes to example, that could be a scenario example related to Contoso. Or skip the example and just use what you have already in tavle form. Instead, if you prefer, a couple screen shot of events/alerts/bookmarks from a sample company would be wonderful.  --> 
+<!-- Jason: The information in this category seems to fit perfectly in a table or series of screenshots. If a table, here are some options for headings: (1) "Type of Evidence /Description;" (2) "Type of Evidence / Definition / Purpose" (ex. Events / Link you to events from Log Analytics Workspaces (typically containing thousands of events to numerous to manually parse) / Used to understand schope and frequency of an incident before further investigation); or 3. "Type of Evidence / Purpose / Example." When it comes to example, that could be a scenario example related to Contoso. Instead, if you prefer, a couple screen shot of events/alerts/bookmarks from a sample company would be wonderful.  --> 
 
 ### Events
 
-Events link you back to one or more events from the Log Analytics workspaces associated with Sentinel <!-- Jason: Can you say "Sentinel's Log Analytics workspaces?"-->. On their own, these workspaces typically contain thousands of events that are too numerous to manually parse. If a query attached to a Sentinel analytics rule returns events, these events are attached to the generated incident for potential further review. You can use events to understand the scope and frequency of the incident before investigating further.
+Events link you back to one or more events from the Log Analytics workspaces associated with Sentinel <!-- Jason: Can you say "Sentinel's Log Analytics workspaces?" Since there'll be no human copy edit, it'd be great to streamline the language as much as possible. -->. On their own, these workspaces typically contain thousands of events that are too numerous to manually parse. If a query attached to a Sentinel analytics rule returns events, these events are attached to the generated incident for potential further review. You can use events to understand the scope and frequency of the incident before investigating further.
 
 ### Alerts
 
@@ -18,7 +18,7 @@ Most incidents are generated as a result of an analytics rule alert. Examples of
 - detection of suspicious files 
 - detection of suspicious user activities
 - attempted elevation of privilege 
-<!-- Jason: The above used to be a sentence but I made it a list. --> 
+<!-- Jason: The above used to be a sentence but I made it a list, fyi. --> 
 
 Analytics rules generate alerts, either based on KQL queries or direct connection to Microsoft Security solutions such as Azure Security Center or Azure Advanced Threat Protection. If you enable alert grouping Azure Sentinel includes any related alerts evidence for the incident.
 
