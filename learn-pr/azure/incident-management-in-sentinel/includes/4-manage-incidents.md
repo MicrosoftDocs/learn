@@ -1,6 +1,8 @@
 Once Sentinel is generating incidents, the next step is to investigate
 those incidents. Azure Sentinel includes advanced investigation and analysis tools that help you understand what is happening and take remediation steps.
 
+<!-- Jason: As you begin to gather incidents from Sentinel for the Contoso IT Team, you will then need to inestigate those incidents. Maybe something like that? Would help if the scenario gave "you" a job title to help make these scenario examples. --> 
+
 ## Investigate incidents
 
 The primary step in identifying and resolving security issues at Contoso begins with incident investigation. The Overview page in Azure Sentinel provides a list of the most recent incidents for quick reference. For more details and a complete overview of the incidents at Contoso, you'll use the Incidents page, which shows all incidents in the current workspace and details about those incidents.
