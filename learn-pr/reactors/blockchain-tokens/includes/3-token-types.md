@@ -33,8 +33,8 @@ The ERC721 token is a more complex standard than ERC20. When the core functions 
 
 ## ERC1155
 
-[ERC1155](https://eips.ethereum.org/EIPS/eip-1155?azure-portal=true) is a standard that's used to manage multi-token types. A single contract can represent multiple fungible and non-fungible tokens.
+[ERC1155](https://eips.ethereum.org/EIPS/eip-1155?azure-portal=true) is a standard that's used to manage multiple types of tokens. A single contract can represent multiple fungible and non-fungible tokens.
 
 ERC1155 draws on ideas from ERC20, ERC721, and ERC777.
 
-The design of the ERC1155 token type allows for massive gas savings for a couple different reasons. (In Ethereum, *gas* refers to a fee or pricing value.) First, you can use this token contract for multiple tokens, which means fewer deployments with less complexity. It also has batched operations, so a single function call can be simpler and less gas-intensive.
+The design of the ERC1155 token type allows for massive gas savings, for a couple reasons. (In Ethereum, *gas* refers to a fee or pricing value.) First, you can use this token contract for multiple tokens, which means fewer deployments with less complexity. It also has batched operations, so a single function call can be simpler and less gas-intensive.

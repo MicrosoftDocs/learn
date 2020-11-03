@@ -2,7 +2,7 @@ In this module, you learned what contracts are and how you can write token contr
 
 ## Resources
 
-For continued learning, see the [OpenZeppelin token documentation](https://docs.openzeppelin.com/contracts/3.x/tokens?azure-portal=true). Find more examples of contract standards, and explore how to write more contract tokens on your own.
+For continued learning, see the [OpenZeppelin token documentation](https://docs.openzeppelin.com/contracts/3.x/tokens?azure-portal=true). Find more examples of contract standards and explore how to write more contract tokens on your own.
 
 ## Complete the course
 

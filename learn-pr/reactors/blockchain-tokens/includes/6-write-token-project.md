@@ -4,7 +4,7 @@ Now that we have a basic project set up, let's create a new token contract by us
 
 We're going to create a token contract to reward miners for creating new blocks in the blockchain.
 
-To begin, open the **Token20** project in Visual Studio Code. When the project is open, hover over the contracts folder in the Explorer. Right-click and then select **New File**. Save the file name as **ERC20MinerReward.sol**. Copy the following code into that contract.
+To begin, open the **Token20** project in Visual Studio Code. When the project is open, in the Explorer, right-click the **contracts** folder, and then select **New File**. Save the file name as **ERC20MinerReward.sol**. Copy the following code into that contract:
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -42,10 +42,10 @@ When the `reward` function is called, the current block's miner, `block.coinbase
 After you save the contract file, you're ready to build the contract. We'll be using Ganache CLI as your personal blockchain for development. We'll use Truffle to run the build.
 
 1. Open the **truffle-config.js** file, and then search for the line `solc`.
-1. In the `solc` section, uncomment the version by deleting `//`. Replace the version value with `0.6.3`. Note, that this version number is required because the OpenZeppelin contracts specify the pragma directive as `pragma solidity ^0.6.2;`.
+1. In the `solc` section, uncomment the version by deleting `//`. Replace the version value with `0.6.3`. Note that this version number is required because the OpenZeppelin contracts specify the pragma directive as `pragma solidity ^0.6.2;`.
 1. Save the file.
 1. In Visual Studio Code, select **Terminal** > **New Terminal** to open a terminal window.
-1. In the terminal, enter `ganache-cli` to start the Ganache CLI. Information for about 10 accounts is generated for tests, followed by the account's private keys and other metadata about the development server. The last line tells you that `ganache-cli` is listening on 127.0.0.1:8545, the default port location, defined in your truffle-config.js file.
+1. In the terminal, enter `ganache-cli` to start Ganache CLI. Information for about 10 accounts is generated for tests, followed by the account's private keys and other metadata about the development server. The last line tells you that `ganache-cli` is listening on 127.0.0.1:8545, the default port location, defined in your truffle-config.js file.
 1. Right-click in the terminal window, and then select **New Terminal**.
 1. In the new terminal window, enter `truffle build`.
 
@@ -77,4 +77,4 @@ This example is a basic and straightforward implementation of an ERC20 token. Yo
 
 It's important to remember that the term *token* is simply a metaphor. It refers to assets or access rights that are collectively managed by a network of computers or by a blockchain network. Tokens are an important item to incorporate into your blockchain network.
 
-To get more familiar with tokens, explore the other token contracts that are available from OpenZeppelin, and try creating your own token contracts.
+To become more familiar with tokens, explore the other token contracts that are available from OpenZeppelin. Try creating your own token contracts!

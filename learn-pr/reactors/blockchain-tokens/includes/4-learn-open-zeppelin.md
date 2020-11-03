@@ -1,4 +1,4 @@
-[OpenZeppelin](https://openzeppelin.com/?azure-portal=true) provides tools that you can use to write, deploy, and manage decentralized applications. It's an open-source tool that provides reliability and security with the products it provides.
+[OpenZeppelin](https://openzeppelin.com/?azure-portal=true) is a platform that has tools you can use to write, deploy, and manage decentralized applications. OpenZeppelin is an open-source tool that provides reliability and security with the products it provides.
 
 OpenZeppelin offers two products: the contracts library and the SDK.
 
@@ -6,7 +6,7 @@ OpenZeppelin offers two products: the contracts library and the SDK.
 
 ## Contracts
 
-The [contracts library](https://openzeppelin.com/contracts?azure-portal=true) gives you access to a robust set of modular and reusable smart contracts for the Ethereum network. The smart contracts are written in Solidity. The main benefit of using OpenZeppelin contracts is that they have been thoroughly tested, audited, and community-reviewed.
+The OpenZeppelin [contracts library](https://openzeppelin.com/contracts?azure-portal=true) gives you access to a robust set of modular and reusable smart contracts for the Ethereum network. The smart contracts are written in Solidity. The main benefit of using OpenZeppelin contracts is that they have been thoroughly tested, audited, and community-reviewed.
 
 OpenZeppelin is the most popular library source in the industry for smart contracts, and it’s open source. When you use OpenZeppelin contracts, you'll learn the best practices for developing smart contracts. A variety of contract types are available, including:
 
@@ -19,6 +19,6 @@ Although we'll use only the token contracts in this module, it's good to be awar
 
 ## SDK
 
-The other product that OpenZeppelin provides is the [SDK](https://openzeppelin.com/sdk/?azure-portal=true). The SDK offers a command-line interface (CLI), so it's easier to manage smart contract development. You can save hours of development time by using the CLI to compile, upgrade, and deploy smart contracts. The CLI provides support for Ethereum and other Ethereum Virtual Machine-powered blockchains. The commands are intuitive and interactive to help guide you through the development process.
+The other OpenZeppelin product you can use is the OpenZeppelin [SDK](https://openzeppelin.com/sdk/?azure-portal=true). The SDK offers a command-line interface (CLI), so it's easier to manage smart contract development. You can save hours of development time by using the CLI to compile, upgrade, and deploy smart contracts. The CLI provides support for Ethereum and other Ethereum Virtual Machine-powered blockchains. The commands are intuitive and interactive to help guide you through the development process.
 
-We won't use the SDK in this module, but it's a tool you can consider exploring on your own and using for future blockchain development.
+We won't use the SDK in this module, but it's a tool you can consider exploring on your own, and use it for future blockchain development.

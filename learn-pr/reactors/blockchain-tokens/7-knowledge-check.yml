@@ -15,7 +15,7 @@ quiz:
   questions:
   - content: "What is the most complete definition of blockchain tokens?"
     choices:
-    - content: "They represent currency that can be tradeable."
+    - content: "They represent currency that can be traded."
       isCorrect: false
       explanation: "Tokens are tradeable, but they often represent much more than currency. They also can represent ownership or access, or they can be traded for a service."
     - content: "They represent digital assets that have some value and are tradeable."
@@ -51,9 +51,9 @@ quiz:
     - content: "SDK"
       isCorrect: false
       explanation: "The SDK is used to develop, deploy, and manage smart contract projects."
-    - content: "Contracts library"
+    - content: "Contracts Library"
       isCorrect: true
-      explanation: "Correct. The contracts library provides a set of modular and reusable contracts to integrate into new and existing blockchain projects."
+      explanation: "Correct. The OpenZeppelin contracts library provides a set of modular and reusable contracts to integrate into new and existing blockchain projects."
     - content: "Test Helpers"
       isCorrect: false
       explanation: "Test Helpers is an assertion library for Ethereum smart contract testing."            
