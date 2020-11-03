@@ -75,7 +75,7 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 3. Uncomment the **set** command that corresponds to your Azure Sphere developer board.
 
-   ```
+   ```text
    set(AVNET TRUE "AVNET Azure Sphere Starter Kit")
    # set(SEEED_STUDIO_RDB TRUE "Seeed Studio Azure Sphere MT3620 Development Kit (aka Reference Design Board or rdb)")
    # set(SEEED_STUDIO_MINI TRUE "Seeed Studio Azure Sphere MT3620 Mini Dev Board")

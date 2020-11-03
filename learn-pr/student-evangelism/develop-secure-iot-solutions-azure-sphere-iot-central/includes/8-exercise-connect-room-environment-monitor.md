@@ -105,7 +105,7 @@ A device template is a blueprint that defines the characteristics and behaviors 
 
 2. Log in to your Azure Sphere tenant if you have not already done so.
 
-   ```
+   ```bash
    azsphere login
    ```
 
@@ -113,7 +113,7 @@ A device template is a blueprint that defines the characteristics and behaviors 
 
 4. Download the certificate authority (CA) certificate for your Azure Sphere tenant:
 
-   ```
+   ```bash
    azsphere ca-certificate download --output CAcertificate.cer
    ```
 
@@ -137,7 +137,7 @@ A device template is a blueprint that defines the characteristics and behaviors 
 
 2. Download a validation certificate that proves that you own the tenant CA certificate. Replace code in the command with the verification code from the previous step.
 
-   ```
+   ```bash
    azsphere ca-certificate download-proof --output ValidationCertification.cer --verificationcode <code>
    ```
 
