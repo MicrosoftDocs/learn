@@ -64,7 +64,7 @@ foreach (var file in files)
 
 ## List all content in a directory and all subdirectories
 
-Both the `Directory.EnumerateDirectories` and `Directory.EnumerateFiles` functions have an overload that accepts a parameter to specify a search pattern files and directories must match.
+Both the `Directory.EnumerateDirectories` and `Directory.EnumerateFiles` functions have an overload that accepts a parameter to specify that search pattern files and directories must match.
 
 They also have another overload that accepts a parameter to indicate whether to recursively traverse a specified folder and all of its subfolders.
 
