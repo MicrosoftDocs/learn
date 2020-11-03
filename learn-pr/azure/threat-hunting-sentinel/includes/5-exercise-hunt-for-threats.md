@@ -1,0 +1,3 @@
+- Manage Azure Sentinel queries.
+- Save key findings with bookmarks.
+- Observe threats over time with livestream.

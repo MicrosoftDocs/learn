@@ -2,8 +2,8 @@
 uid: learn.azure.threat-hunting-sentinel.4-livestream
 metadata:
   title: Observe threats over time with livestream
-  description: TODO
-  ms.date: TODO
+  description: Observe threats over time with livestream
+  ms.date: 11/02/20
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ quiz:
   - content: "Question 1"
     choices:
     - content: "Answer 1"
-      isCorrect: false
+      isCorrect: true
       explanation: "Explanation 1"
     - content: "Answer 2"
       isCorrect: false
@@ -32,7 +32,7 @@ quiz:
   - content: "Question 2"
     choices:
     - content: "Answer 1"
-      isCorrect: false
+      isCorrect: true
       explanation: "Explanation 1"
     - content: "Answer 2"
       isCorrect: false

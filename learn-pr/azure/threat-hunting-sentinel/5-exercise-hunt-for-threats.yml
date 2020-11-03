@@ -2,8 +2,8 @@
 uid: learn.azure.threat-hunting-sentinel.5-exercise-hunt-for-threats
 metadata:
   title: Exercise - Hunt for threats using Azure Sentinel
-  description: TODO
-  ms.date: TODO
+  description: Exercise - Hunt for threats using Azure Sentinel
+  ms.date: 11/02/20
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

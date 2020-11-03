@@ -2,8 +2,8 @@
 uid: learn.azure.threat-hunting-sentinel
 metadata:
   title: Threat hunting with Azure Sentinel
-  description: TODO
-  ms.date: TODO
+  description: Threat hunting with Azure Sentinel
+  ms.date: 11/02/20
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -12,11 +12,14 @@ title: Threat hunting with Azure Sentinel
 summary: TODO
 abstract: |
   In this module you will:
-  - TODO
-  - TODO
-  - TODO
+  - Use queries to hunt threats.
+  - Save key findings with bookmarks.
+  - Observe threats over time with livestream.
 prerequisites: |
-  - TODO
+  - Familiarity with security operations in an organization.
+  - Basic experience with Azure services.
+  - Basic knowledge of operational concepts such as monitoring, logging, and alerting.
+  - Basic Azure Sentinel functionality.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
