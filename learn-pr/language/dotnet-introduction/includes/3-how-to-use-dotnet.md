@@ -72,7 +72,7 @@ When the application is ready to be released, you create a release version of th
 
 To run the release version, you must install the .NET runtime on the destination computer. This computer will run your compiled .NET assembly.
 
-## How .NET works at run time
+## How .NET works at runtime
 
 After you install your application's .NET assembly and the .NET runtime on the destination computer, you can run your application.
 
