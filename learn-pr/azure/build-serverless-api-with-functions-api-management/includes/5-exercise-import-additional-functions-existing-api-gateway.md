@@ -78,14 +78,14 @@ We can use the `curl` command-line tool to submit requests to our API. It's idea
 1. To request the details of a product, execute the following command in the Cloud Shell.
 
     ```bash
-    curl -v GET "$GATEWAY_URL/products/ProductDetails?id=2" -H "Ocp-Apim-Subscription-Key: $SUB_KEY"
+    curl -X GET "$GATEWAY_URL/products/ProductDetails?id=2" -H "Ocp-Apim-Subscription-Key: $SUB_KEY"
     ```
     The command returns the details of a product. You can also try the command with IDs 1 and 3 for different results.
 
 1. To request the details of an order, execute the following command and then press Enter:
 
     ```bash
-    curl -v GET "$GATEWAY_URL/orders/OrderDetails?name=Henri" -H "Ocp-Apim-Subscription-Key: $SUB_KEY"
+    curl -X GET "$GATEWAY_URL/orders/OrderDetails?name=Henri" -H "Ocp-Apim-Subscription-Key: $SUB_KEY"
     ```
 
     The command returns the details of an order. You can also try the command with the names "Chiba" and "Barriclough" for different results.
