@@ -7,7 +7,7 @@ In this exercise, you'll add the Orders function app to the API and use the `cur
 Before we add the Orders function app to the API, let's test the function it hosts, OrderDetails:
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, and select **All resources** and then select the **OrderFunction** App Service.
-1. Under **Functions** select **OrderDetails**, and then select **Test**.
+1. Under **Functions** select **OrderDetails**, and then select **Code + test**.
 
     ![Screenshot of the test tool for the Order Details function.](../media/5-test-order-details.png)
 
@@ -46,7 +46,7 @@ Now that we've added OrderDetails to our API let's test it, by using the API Man
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources** and then select your **Azure API Management** service instance.
 1. Under **API Management**, select **APIs** and then select the **OrderFunction** API.
-1. In the list of operations, select **GET OrderDetails** and then select the **Test** tab.
+1. In the list of operations, select **GET OrderDetails** and then select the **Test/Run** tab.
 
 1. Under **Query parameters**, select **Add parameter**.
 1. In the **name** textbox, enter *name*.
