@@ -8,7 +8,7 @@ I'll give you an idea of how you could do it, but you'll know the accurate tech 
 
 Azure Sentinel gives users the ability to identify anomalies in resources and manage incidents. (Topic sentence)
 
-Contoso, Ltd. is a midsize financial services company in London with a New York branch office. The company uses Azure Security Center with Azure Defender as threat protection for resources that run on Azure and on-premises. The company also monitors and protects other non-Microsoft assets. You are a member of Contoso's security team. (General scenario)
+Contoso, Ltd. is a midsize financial services company in London with a New York branch office. The company uses Azure Security Center with Azure Defender as threat protection for resources that run on Azure and on-premises. The company also monitors and protects other non-Microsoft assets. You are the lead system engineer for Contoso. (General scenario)
 
 Recently, you've been asked to investigate and identify sign in anomalies for the company's Azure AD resources. You learn that Azure sentinel is a program that can assist you. (Specific scenario)
 
