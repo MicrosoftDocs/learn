@@ -1,14 +1,16 @@
 Incidents in Azure Sentinel are created from other sources of security information in Azure. How you manage and understand the contents of an incident will help you better understand and use incident management in Sentinel.
 
-<!-- Jason: Please consider integrating Contoso above. Maybe: "Incidents in Azure Sentinel are created from other sources of security information in Azure. As part of the security team at Contoso, you will need to understand the contents of an incident to use the incident management system in Sentinel effectively." ... Soemthing like this. -->
+<!-- Jason: Please consider integrating Contoso above. Maybe: "Sentinel uses various sources of security information to create incidents. As lead system engineer at Contoso, you'll need to understand these sources to best utilize incident management in Sentinel." --> 
 
 ## Incident evidence
 
 Incident evidence consists of the security event information and related Sentinel assets that identify threats in the Sentinel environment. Evidence shows you how a threat has been identified in Sentinel and it links you back to the specific resources that you can use to increase you awareness of incident details.
 
+<!-- Jason: The following information seems like it would fit perfectly in a table or series of screenshots. If a table, you could divide: "Type of Evidence / Purpose / Example." When it comes to example, that could be a scenario example related to Contoso. Or skip the example and just use what you have already in tavle form. Instead, if you prefer, a couple screen shot of events/alerts/bookmarks from a sample company would be wonderful.  --> 
+
 ### Events
 
-Events link you back to one or more events from the Log Analytics workspaces associated with Sentinel. On their own, these workspaces typically contain thousands of events that are too numerous to manually parse. If a query attached to a Sentinel analytics rule returns events, these events are attached to the generated incident for potential further review. You can use events to understand the scope and frequency of the incident before investigating further.
+Events link you back to one or more events from the Log Analytics workspaces associated with Sentinel <!-- Jason: Can you say "Sentinel's Log Analytics workspaces?"-->. On their own, these workspaces typically contain thousands of events that are too numerous to manually parse. If a query attached to a Sentinel analytics rule returns events, these events are attached to the generated incident for potential further review. You can use events to understand the scope and frequency of the incident before investigating further.
 
 ### Alerts
 
