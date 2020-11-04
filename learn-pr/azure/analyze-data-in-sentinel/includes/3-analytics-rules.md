@@ -1,22 +1,22 @@
-By using Azure Sentinel Analytics rules, you can configure notification and alerts for your security connectors. These alerts will help ensure that the Contoso SecOps team knows when a threat occurs and can then appropriately react to prevent the threat from reaching your corporate assets.
+By using Azure Sentinel Analytics rules, you can configure notification and alerts for the security connectors. These alerts will help ensure that the Contoso SecOps team knows when a threat occurs and can then appropriately react to prevent the threat from reaching your corporate assets.
 
 ## Types of analytics rules
 
-You can start search for potential threat by using the built in analytics rules that Azure Sentinel Analytics provides. There are currently four types of analytics rules:
+You can search for potential threats by using the built-in analytics rules that Azure Sentinel Analytics provides. There are currently four types of analytics rules:
 
 - Fusion
-- Microsoft Security
-- Machine Learning Behavior Analytics
+- Microsoft security
+- Machine learning (ML) behavior analytics
 - Scheduled alerts
 
 ![Screenshot of rule templates in the Analytics home page](../media/03-rule-templates.PNG)
 
 ## Fusion alerts
 
-Fusion alerts identify, anomalous behaviors and suspicious activities at various stages of the cyber kill-chain. Fusion correlates multiple security alerts from various products and uses machine Learning to detect advanced multistage attacks.
+Fusion alerts identify anomalous behaviors and suspicious activities at various stages of the cyber kill chain. Fusion correlates multiple security alerts from various products and uses machine Learning to detect advanced multistage attacks.
 
 > [!Note]
-> The cyber kill chain describes the typical workflow, including techniques, tactics, and procedures or TTPs, used by attackers to infiltrate an organization’s networks and systems.
+> The cyber kill chain describes the typical workflow, including techniques, tactics, and procedures (TTPs), used by attackers to infiltrate an organization’s networks and systems.
 
 By default, Fusion detection is enabled in Azure Sentinel, but for successful threat detection, you must configure the following data connectors:
 
@@ -34,12 +34,12 @@ Some of the common attack detection scenarios that Fusion alerts identify includ
 - **Ransomware**. After a suspicious sign-in to Azure AD account, unusual user behavior used to encrypt data can trigger ransomware execution alert
 
 > [!Note]
-> For more information on the Fusion technology in Azure Sentinel see the following page: [Advanced multistage attack detection in Azure Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/fusion)
+> For more information on the Fusion technology in Azure Sentinel, refer to [Advanced multistage attack detection in Azure Sentinel](https://docs.microsoft.com/azure/sentinel/fusion)
 
 ## Microsoft security
 
 You can configure Microsoft security solutions that are connected to Azure Sentinel to automatically create incidents from all alerts generated in the connected service.
-For example, you can configure for Contoso to be alerted, when a user who has been categorized at high risk threats attempt to sign in and access corporate resources.
+For example, you can configure for Contoso to be alerted when a user who has been categorized as a high-risk threat attempts to sign in and access corporate resources.
 
 You can configure the following security solutions to pass their alerts to Azure Sentinel:
 
@@ -52,7 +52,7 @@ You can configure the following security solutions to pass their alerts to Azure
 - Microsoft Defender for Endpoint
 
 > [!Note]
-> Microsoft unify SIEM and XDR terminology across their security products.
+> Microsoft unifies security information and event management (SIEM) and extended detection and response (XDR) terminology across their security products.
 > | Old Name | New Name |
 > | --- | --- |
 > | Azure Advanced Threat Protection | Microsoft Defender for Identity |
@@ -65,7 +65,7 @@ You can filter these alerts by severity and by specific text that is contained i
 
 ## Machine learning behavioral analytics
 
-Azure Sentinel Analytics includes built-in machine learning behavioral analytics rules.You cannot edit these built-in rules or review the rule settings. These rules use Microsoft machine learning algorithms to detect suspicious activity. Machine Learning algorithms correlate several low fidelity incidents, into a high fidelity security incidents. This saves hours that you might otherwise spend manually analyzing numerous alerts from different products and correlating them. Machine learning algorithms used in analytics rule also help reduce the noise around alerts by quickly ingesting and connecting the important data.
+Azure Sentinel Analytics includes built-in machine learning behavioral analytics rules. You cannot edit these built-in rules or review the rule settings. These rules use Microsoft machine learning algorithms to detect suspicious activity. Machine Learning algorithms correlate several low fidelity incidents into a high fidelity security incidents. This saves hours that you might otherwise spend manually analyzing numerous alerts from different products and correlating them. Machine learning algorithms that analytics rules use also help reduce the noise around alerts by quickly ingesting and connecting the important data.
 
 For example, with machine learning behavioral analytics rule you can detect anomalous secure shell protocol (SSH) Login or remote desktop protocol (RDP) Login activity.
 

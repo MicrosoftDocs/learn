@@ -2,7 +2,7 @@
 uid: learn.azure.analyze-data-in-sentinel.4-create-rule-from-templates
 metadata:
   title: Create an analytics rule from templates
-  description: Create an analytics rule from templates
+  description: Describes the procedure to create an analytics rule from templates.
   ms.date: 10/21/2020
   author: jboeshart
   ms.author: jaboes
@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which one of the template types, you should use to create an incident based on all alerts generated in Azure Security Center?  "
+  - content: "Which one of the template types should you use to create an incident based on all alerts generated in Azure Security Center?"
     choices:
     - content: "Fusion"
       isCorrect: false
       explanation: "Fusion template rule detects multistage attacks."
-    - content: "Machine Learning Behavior Analytics"
+    - content: "Machine learning behavior analytics"
       isCorrect: false
-      explanation: "Machine Learning Behavior Analytics detects anomalous SSH or RDP sign in activity."
+      explanation: "Machine learning behavior analytics detects anomalous SSH or RDP sign-in activity."
     - content: "Microsoft Security"
       isCorrect: true
-      explanation: "Template rules based on Microsoft Security type, creates incidents based on all alerts generated in Azure Security Center."
-  - content: "Which one of the following template rules are precreated in the Azure Sentinel Analytics?"
+      explanation: "Template rules based on the Microsoft security type creates incidents based on all alerts generated in Azure Security Center."
+  - content: "Which one of the following template rules are precreated in Azure Sentinel Analytics?"
     choices:
-    - content: "Scheduled templates rules"
+    - content: "Scheduled template rules"
       isCorrect: false
-      explanation: "Scheduled template rules are not precreated in the Azure Sentinel Analytics."
+      explanation: "Scheduled template rules are not precreated in Azure Sentinel Analytics."
     - content: "Fusion"
       isCorrect: true
-      explanation: "Alert rule is created by default using Fusion rule template."
-    - content: "Machine Learning Behavior Analytics templates"
+      explanation: "By default, an alert rule is created by using the Fusion rule template."
+    - content: "Machine learning behavior analytics templates"
       isCorrect: false
-      explanation: "Machine Learning Behavior Analytics are preconfigured in the template rule, but you need to create a detection rule based on the template."
+      explanation: "Machine learning behavior analytics are preconfigured in the template rule, but you need to create a detection rule based on the template."

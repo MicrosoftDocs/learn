@@ -2,7 +2,7 @@
 uid: learn.azure.analyze-data-in-sentinel.8-summary
 metadata:
   title: Summary
-  description: Summary
+  description: Provides a summary of threat detection with Azure Sentinel Analytics.
   ms.date: 10/21/2020
   author: jboeshart
   ms.author: jaboes

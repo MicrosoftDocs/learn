@@ -1,26 +1,28 @@
-You can create a custom analytics rules to search for suspicious activities and threats in your environment. Creating a custom rule from the scheduled query rule type provides you with the highest level of customization. You can define, your own Kusto Query Language (KQL) code, set a schedule to run the alerts, or provide an automated action by associating an Azure Sentinel Playbook.
+You can create a custom analytics rule to search for suspicious activities and threats at Contoso. 
 
-## Creating an analytics rule from Wizard
+## Create an analytics rule by using the wizard
+
+Creating a custom rule from the scheduled query rule type provides you with the highest level of customization. You can define, your own Kusto Query Language (KQL) code, set a schedule to run the alerts, or provide an automated action by associating an Azure Sentinel Playbook.
 
 To create an analytics rule, in the Azure portal, under **Azure Sentinel**, select  **Analytics**. In the top menu bar, select  **+Create**, and then select  **Scheduled query rule.**
 
 ## General page
 
-The following table lists the inputs you must provide in the **General** page.
+The following table lists the inputs you must provide on the **General** page.
 
 |||
 | --- | --- |
-| Name | Provide a descriptive name to explain what type of suspicious activity the alert detects |
-| Description | Enter a detailed description that will help other security analysts understand what the rule does |
-| Tactics | From the **Tactics** drop-down menu, choose one among the available categories of attacks to classify the rule following the MITRE tactics |
-| Severity | Select the **Severity** drop-down menu to categorize the level of importance of the alert as one of four options: High, Medium, Low, Informational |
-| Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generate large number of false positives |
+| Name | Provide a descriptive name to explain what type of suspicious activity the alert detects. |
+| Description | Enter a detailed description that will help other security analysts understand what the rule does. |
+| Tactics | From the **Tactics** drop-down menu, choose one among the available categories of attacks to classify the rule following the MITRE tactics. |
+| Severity | Select the **Severity** drop-down menu to categorize the level of importance of the alert as one of four options: High, Medium, Low, or Informational. |
+| Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generate large number of false positives. |
 
 ## Set rule logic
 
 On the **Set rule logic** page, you can define the detection method by specifying KQL code that will run against the Azure Sentinel workspace. The KQL query will filter the security data that is used to trigger and create an incident.
 
-When you enter the KQL query string in the **Rule query** field, you can use **Results preview** area to the right to see the results of the query. The Results preview section will help you to determine that your query return expected results.
+When you enter the KQL query string in the **Rule query** field, you can use the **Results simulation (preview)** section to review the results of the query. The **Results simulation (preview)** section will help you determine whether your query returned the expected results.
 
 ![Screenshot of the wizard of creating scheduled analytics rule](../media/05-Create-scheduled-rule.PNG)
 
@@ -39,21 +41,29 @@ AzureActivity
 
 ### Map entities
 
-In the  **Map entities**  section, you can define the entities that are returned as part of query rule. You can then use these entities to perform in-depth analysis by selecting  **Add** to add these entities in the query rule. These entities can help you perform a visual investigation, because they will appear as a group into **Incident** tab. Some of the entities contain information that represents a user, host, or IP address.
+In the  **Map entities**  section, you can define the entities that are returned as part of the query rule. You can then use these entities to perform in-depth analysis by selecting  **Add** to add these entities in the query rule. These entities can help you perform a visual investigation because they will appear as a group on the **Incident** tab. Some of the entities contain information that represents a user, a host, or an IP address.
 
-In the **Query Scheduling** section, you can configure how often the query should run, and how far back in history the query should search the data. It's important that you don't search for data that is older then the query's run frequency, because that can create duplicate alerts.
+### Query Scheduling
 
-In the **Alert threshold** section, you can specify the number of a positive result that can be returned for the rule, before it generates an alert. You can use the following logical operators to define an appropriate logical expression:
+In the **Query Scheduling** section, you can configure how often the query should run, and how far back in history the query should search the data. It's important that you don't search for data that is older then the query's run frequency because that can create duplicate alerts.
+
+### Alert threshold
+
+In the **Alert threshold** section, you can specify the number of a positive results that can be returned for the rule before it generates an alert. You can use the following logical operators to define an appropriate logical expression:
 
 - Is greater than
 - Is fewer than
 - Is equal to
 - Is not equal to
 
+### Event grouping
+
 In the **Event grouping** section, you can select one of the following two options:
 
 - **Group all events into a single alert**. This is the default option, and it creates a single alert if the query returns more results than that the specified alert threshold.
 - **Trigger an alert for each event**. This option create unique alerts for each event returned by the query.
+
+### Suppression 
 
 In the **Suppression** section, you can set the **Stop running the Query after the alert is generated** option to  **On**  or  **Off**. When you select **On**, Azure Sentinel pauses the creation of additional incidents if the rule is triggered again for the duration you want the rule to be suppressed.
 
@@ -73,7 +83,7 @@ In the **Re-open closed matching incidents** section, you can configure Azure Se
 
 You can use the **Automated Response** section to select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
 
-For More details on how to create a playbook and run the automated activity on an incident creation, refer to the "Threat response with Sentinel Playbooks".
+For more details on how to create a playbook and run the automated activity on an incident creation, refer to the "Threat response with Sentinel Playbooks" module.
 
 ## Review and create
 

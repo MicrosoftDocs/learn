@@ -4,14 +4,13 @@ Azure Sentinel Analytics helps you detect, investigate, and remediate cyber secu
 
 Azure Sentinel Analytics provides several functionalities that you can use to implement security for the data and resources at Contoso.
 
-You can analyze both real-time and historical data collected from your workstations, servers, networking devices, firewalls, intrusion prevention, sensors, and so on. Azure Sentinel Analytics analyses data from various sources to identify correlations and anomalies.
+You can analyze both real-time and historical data collected from your workstations, servers, networking devices, firewalls, intrusion prevention, sensors, and so on. Azure Sentinel Analytics analyzes data from various sources to identify correlations and anomalies.
+By using analytics rules, you can trigger alerts based on the techniques that are used by known malicious actors. You can set up these rules to help ensure the right people are being alerted at the right level.
 
-With analytics rules you can trigger alert, based of the techniques that are used by known malicious actors.
-With analytics rules in place, you want to make sure the right people are being alerted, at the right level.
+## Why use analytics rules for security
 
-## Why use analytics rules for Security
-
-Although some of the other products that Contoso has implemented can help you identify threats, Azure Sentinel Analytics plays important part in the overall detection of the security threat by correlating and matching the signals that impact the presence of a cyber security threat. With the proper analytics rule, you can get insights into where an attack originated from, what resources were compromised, potential data lost, along with the timeline for the incident.
+Although some of the other products that Contoso has implemented can help you identify threats, Azure Sentinel Analytics plays an important part in the overall detection of the security threat
+ by correlating and matching the signals that impact the presence of a cyber security threat. With the proper analytics rule, you can get insights into where an attack originated from, what resources were compromised, potential data lost, along with the timeline for the incident.
 
 Common security analytics use cases include:
 
@@ -25,26 +24,26 @@ Common security analytics use cases include:
 
 You might not be able to detect some of the threats by using conventional protection tools, such as firewalls or antimalware solutions. Certain threats can go undetected for months. Combining data, gathered by multiple tools and products, with the power of threat intelligence can help you to detect, analyze, and mitigate insider threats.
 
-You can also use analytics rules to create custom alerts that use indicators of attack. These indicators can identify potential attack that are in progress in real time.
+You can also use analytics rules to create custom alerts that use indicators of attack. These indicators can identify potential attacks that are in progress in real time.
 Analytics will help the Contoso SecOps team to improve the efficiency of their complex investigation and detect threats faster.
 
 ## Exploring the Analytics home page
 
-You can create analytics rules from the **Analytics** home page. You can access **Analytics** page in Azure Sentinel from the navigation pane on the left.
+You can create analytics rules from the **Analytics** home page. You can access the **Analytics** page in Azure Sentinel from the navigation pane on the left.
 
 ![Screenshot of the Analytics home page](../media/02-Analytics-page.png)
 
 The **Analytics** home page has three main parts:
 
-- The header bar contains information on the number of the rules that are currently in use
+- The header bar contains information on the number of the rules that are currently in use.
 - The list of rules and templates contains all the rule templates that Microsoft has preloaded from the Azure Sentinel GitHub repository.
-- The detailed view pane contains additional information that explains each template and rule that you can use in detection.
+- The details pane contains additional information that explains each template and rule that you can use in detection.
 
-## Filter the Rule templates
+## Filter the rule templates
 
-Currently Microsoft has preloaded over 150 template rules from the Azure Sentinel GitHub repository. To search these templates and to access the appropriate rule, you need to apply filters. For example, you might want to see only template rules that detect a high severity level of threats or rules from specific data sources.
+Currently Microsoft has preloaded over 150 template rules from the Azure Sentinel GitHub repository. To search these templates and to access the appropriate rule, you need to apply filters. For example, you might want to see only template rules that detect threats with a high severity level or rules from specific data sources.
 
-To use filters, in the header bar select the filters you want to use.
+To use filters, in the header bar, select the filters you want to use.
 
 ![Screenshot of the Analytics home page](../media/02-Filter-The-Rule-Templates.PNG)
 

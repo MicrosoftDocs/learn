@@ -12,9 +12,9 @@ You can perform the following four actions on existing active rules:
 
 ## Edit rules
 
-You can modify existing rules, by selecting **Edit** in the details pane. To edit a rule, you navigate the same pages that you did in creating the rule. The previous inputs that you used to create the rule are preserved. You can change any properties of the rule to further tune the result of the threat detection.
+You can modify existing rules by selecting **Edit** in the details pane. To edit a rule, you navigate the same pages that you did in creating the rule. The previous inputs that you used to create the rule are preserved. You can change any properties of the rule to further tune the result of the threat detection.
 
-A typical modification that you might want to implement is to attach an automated response to an already detected threat. To do this, in the **Automated Response** page you can select one of the existing playbooks, that defines the automated activity that will run if the threat is detected.
+A typical modification that you might want to implement is to attach an automated response to an already detected threat. To do this, on the **Automated Response** page, you can select one of the existing playbooks that defines the automated activity that will run if the threat is detected.
 For example, your analytics rule might be detecting an incident that has already been resolved, and you want to reduce further alerts if similar activity occurs. By attaching a playbook that contains automated activity, you can change the incident status or add comments when a similar incident is detected.  
 
 ![Screenshot of the editing existing analytics rule](../media/06-Edit-existing-rule.PNG)
@@ -29,4 +29,4 @@ When you duplicate a rule, the rule contains all the configuration provided from
 
 ## Delete rules
 
-Deleting the rule will prompts you for confirmation before Azure Sentinel Analytics removes from the set of active rules. For example, you can delete a rule about a service or a resource that is not anymore in use, and eliminates the need for the rule. The deletion of the rule is permanent and there is no undo feature. Therefore, as a recommended practice, you should first disable the rule for a period of time until you can be sure that you don't need that rule.
+Deleting the rule prompts you for confirmation before Azure Sentinel Analytics removes it from the set of active rules. or example, you can delete a rule about a service or a resource that is no longer in use, and eliminates the need for the rule. Be aware that the deletion of a rule is permanent and there is no undo feature. Therefore, as a recommended practice, you should first disable the rule for a period of time until you can be sure that you don't need that rule.
