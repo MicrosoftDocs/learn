@@ -1,16 +1,16 @@
 Incidents in Azure Sentinel are created from other sources of security information in Azure. How you manage and understand the contents of an incident will help you better understand and use incident management in Sentinel.
 
-<!-- Jason: Please consider integrating Contoso above. Maybe: "Sentinel uses various sources of security information to create incidents. As lead system engineer at Contoso, you'll need to understand these sources to best utilize incident management in Sentinel." --> 
+<!-- Jason: To integrate Contoso into the intro sentence, please consider: "Azure Sentinel uses various sources of security information to create incidents. As lead system engineer at Contoso, you'll need to understand these sources to best utilize Azure Sentinel's incident management." --> 
 
 ## Incident evidence
 
 Incident evidence consists of the security event information and related Sentinel assets that identify threats in the Sentinel environment. Evidence shows you how a threat has been identified in Sentinel and it links you back to the specific resources that you can use to increase you awareness of incident details.
 
-<!-- Jason: The information in this category seems to fit perfectly in a table or series of screenshots. If a table, here are some options for headings: (1) "Type of Evidence /Description;" (2) "Type of Evidence / Definition / Purpose" (ex. Events / Link you to events from Log Analytics Workspaces (typically containing thousands of events to numerous to manually parse) / Used to understand schope and frequency of an incident before further investigation); or 3. "Type of Evidence / Purpose / Example." When it comes to example, that could be a scenario example related to Contoso. Instead, if you prefer, a couple screen shot of events/alerts/bookmarks from a sample company would be wonderful.  --> 
+<!-- Jason: The information in this category could fit perfectly in a table or series of screenshots. If a table, here are some options for headings: (1) "Type of Evidence /Description;" (2) "Type of Evidence / Definition / Purpose" (ex. Events / Link you to events from Log Analytics Workspaces (typically containing thousands of events to numerous to manually parse) / Used to understand schope and frequency of an incident before further investigation); or 3. "Type of Evidence / Purpose / Example." When it comes to example, that could be a scenario example related to Contoso. Instead, if you prefer, a couple screen shot of events/alerts/bookmarks from a sample company would be wonderful.  --> 
 
 ### Events
 
-Events link you back to one or more events from the Log Analytics workspaces associated with Sentinel <!-- Jason: Can you say "Sentinel's Log Analytics workspaces?" Since there'll be no human copy edit, it'd be great to streamline the language as much as possible. -->. On their own, these workspaces typically contain thousands of events that are too numerous to manually parse. If a query attached to a Sentinel analytics rule returns events, these events are attached to the generated incident for potential further review. You can use events to understand the scope and frequency of the incident before investigating further.
+Events link you back to one or more events from the Log Analytics workspaces associated with Sentinel <!-- Jason: Can you say "Azure Sentinel's Log Analytics workspaces?" -->. On their own, these workspaces typically contain thousands of events that are too numerous to manually parse. If a query attached to a Sentinel analytics rule returns events, these events are attached to the generated incident for potential further review. You can use events to understand the scope and frequency of the incident before investigating further.
 
 ### Alerts
 
