@@ -1,4 +1,4 @@
-The Analytics section in Azure Sentinel contains rule templates that are preloaded from the Azure Sentinel GitHub repository. You can use these templates to create a rule to detect security threats. <!--Marjan, I moved some of the text from here to come after the heading. Typically the intro sentence is just one sentence at the most two. -->
+The Analytics section in Azure Sentinel contains rule templates that are preloaded from the Azure Sentinel GitHub repository. You can use these templates to create a rule to detect security threats.
 
 ## Exploring the existing rule templates
 
