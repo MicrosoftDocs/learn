@@ -41,4 +41,4 @@ These are supposed to match. Which do you want to change? Is it possible to chan
 
 <!-- Jason: I'm told to check that any necessary software is included in the intro. This is the first time I've been told this. Please delete this note because it is probably irrelevant but maybe it is your first time hearing this update as well. --> 
 
-<!-- Jason: Need a media folder. I still need to check the images in high and low contrast since I can't see them here on GitHub and will do when you update the media folder. In general, I wonder if you don't see a good spot for a table (I made at least one suggestion) in this module. --> 
+<!-- Jason: Need a media folder. I still need to check the images in high and low contrast since I can't see them here on GitHub and will do when you update the media folder. In general, I wonder if you don't see a good spot for a table (I made at least one suggestion) in this module. One or two more call outs might be a nice addition. I'll try to find a spot. The dev guide suggests real world examples so I've added a few Contoso mentions but I couldn't think of any analogies to add, which is another suggestion from the guide. --> 
