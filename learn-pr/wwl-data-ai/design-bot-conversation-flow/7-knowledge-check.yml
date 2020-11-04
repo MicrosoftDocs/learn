@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-bot-conversation-flow.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/21/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Choose one aspect that makes speech a less than desirable interaction for a bot."
+    choices:
+    - content: "The bot framework does not support speech."
+      isCorrect: false
+      explanation: "Incorrect. Integration with Azure Cognitive Services provides support for speech in a bot application."
+    - content: "Speech support is only available in US English."
+      isCorrect: false
+      explanation: "Incorrect. Azure Cognitive Services speech services support many different languages."
+    - content: "Language use and pronunciation can present major issues for bot interactions and user satisfaction."
+      isCorrect: true
+      explanation: "Correct. Speaker pronunciation and speed can greatly impact the accuracy. A user interacting with the bot in language that is not their native language can create issues in recognition"
+  - content: "Select one option your bot could take if a user interrupts the conversation flow."
+    choices:
+    - content: "Flash the bot UI to get the user's attention and then ask them to complete the task at hand first."
+      isCorrect: false
+      explanation: "Incorrect. This would be an intrusive behavior and is also not recommended for accessibility reasons for any person with a disability."
+    - content: "require the user to complete an in-progress task before handling the interruption."
+      isCorrect: true
+      explanation: "Correct. If you choose this option, you should also ensure the user can *undo* the actions in the current dialog if they need to."
+    - content: "Close the bot and inform the user to open the bot again."
+      isCorrect: false
+      explanation: "Incorrect. While forcing the user to restart the entire conversation all over again is possible, asking them to close the bot and open it again is not a good user interaction design. You should offer an option to restart the conversation from within the bot."
+  - content: "What is one recommended \"card\" to use in helping to guide the user interaction with the bot?"
+    choices:
+    - content: "The AdaptiveCard."
+      isCorrect: false
+      explanation: "Incorrect. Typically used for cross-channel deployment of cards. Cards adapt to the look and feel of each host channel, not necessarily aiding in guiding an interaction with the bot conversation flow."
+    - content: "The SuggestedAction card."
+      isCorrect: true
+      explanation: "Correct. The SuggestedAction card gives the user a discrete set of options from, which to choose, but is also context aware.  The actions presented are related to the next action the users needs to take and not generic in nature."
+    - content: "The ReceiptCard."
+      isCorrect: false
+      explanation: "Incorrect. you can use the ReceiptCard to provide a transaction record for the user. It does not aid in navigation or conversation flow."

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.solve-graph-coloring-problems-grovers-search.4-implement-quantum-oracle
+title: Exercise - Implement a quantum oracle for graph coloring problem
+metadata:
+  description: The steps of implementing a quantum oracle using QDK.
+  ms.date: 09/19/2020
+  author: tcNickolas
+  ms.author: mamykhai
+  ms.topic: interactive-tutorial
+  ms.prod: learning-quantum
+  show_latex: true
+durationInMinutes: 50
+content: |
+  [!include[](includes/4-implement-quantum-oracle.md)]

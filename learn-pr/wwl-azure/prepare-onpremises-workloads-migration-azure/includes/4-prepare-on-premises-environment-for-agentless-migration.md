@@ -62,9 +62,9 @@ Several of the Windows Server VMs you plan to migrate are protected with BitLock
 
 As you prepare your Hyper-V VMs, review this list to make sure you've taken these actions before migrating any Windows Server VMs to Azure.
 
-> |**Name**|**Syntax**|
+> |**Action**|**Details**|
 > |-|-|
-> |Use the same drive letter assignment for disk volumes in Windows Server and Azure VMs|You need to connect to Azure VMs running Windows after migration. Check that Windows Firewall isn’t blocking RDP access on any network profiles.|
+> |Configure the SAN policy as Online All.|This ensures that Windows volumes in Azure VM use the same drive letter assignments as the on-premises VM. Automatically set in most cases, but may need to be manually configured for operating systems earlier than Windows Server 2008 R2.|
 > |Enable Azure screen access console for the Azure VM|Use for troubleshooting. You don’t need to restart the VM as the Azure VM starts using the disk image.|
 > |Enable Remote Desktop (RDP)|You need to connect to Azure VMs running Windows after migration. Check that Windows Firewall isn’t blocking RDP access on any network profiles.|
 
@@ -73,7 +73,7 @@ As you prepare your Hyper-V VMs, review this list to make sure you've taken thes
 
 Review this list and perform any needed actions on any Linux Server VMs, before migrating them to Azure.
 
-> |**Name**|**Syntax**|
+> |**Action**|**Details**|
 > |-|-|
 > |Install Hyper-V Linux Integration Services|Most new versions of Linux distributions include this by default|
 > |Enable Azure serial console logging|Use for troubleshooting. You don’t need to restart the VM as the Azure VM starts using the disk image.|

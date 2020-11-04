@@ -18,39 +18,38 @@ This exercise steps through the process of preparing a submission for the langua
 1. Once the deployment succeeds, go to the newly created Cognitive Service resource.
 1. Open the **Keys and Endpoint** page by selecting that option from left nav pane of the service.  You will need the key and endpoint for the exercises.
 
-## Create Visual Studio Codespaces environment
+## Development environment setup
 
-1. Start by opening a browser tab or window and navigating to [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/).
+The environment for this exercise will make use of Visual Studio Code as the editor. Depending on the programming language you choose, the setup will differ. Follow the steps outlined here to configure your local computer for completion of the exercises.
 
-    > [!NOTE]
-    > At this time, Safari is not a supported browser for the preview of Visual Studio Codespaces.
+1. Install [Visual Studio Code](https://code.visualstudio.com/) for your operating system.
 
-    An Azure subscription is required to create an environment for Visual Studio Codespaces.
-1. Select the **Get started** button.
-1. Sign in using the Microsoft Account that is linked to your Azure subscription.
-1. The first time you use Visual Studio Codespaces, you need to create a new plan, which should be selected in the drop-down at the top of the page.
-1. Select **Create Codespace**.
-1. Select your Subscription in the **Select Billing** pane and choose a location for the service.
-1. Select **Create**.
-1. Once your plan is created, you can then create your first environment.  
-1. If the **Create Codespace** panel does not open automatically, select **Create Codespace**.
-1. Select the programming language of choice and continue with the exercise.
+### Python
+
+1. If you will be completing your coding with Python, ensure you have a [Python environment](https://www.python.org/downloads/) installed locally.
+1. Once you have Python installed, you will need to [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) for VS Code.
+
+### C#
+
+1. If you will be using C# as your code language, start by installing the latest [.NET Core](https://docs.microsoft.com/dotnet/core/install/windows?tabs=netcore31) package for your platform. You can choose Windows, Linux, or macOS from the drop-down on this page.
+1. Once you have .NET Core installed, you will need to add the C# Extension to VS Code. Select the **Extensions** option in the left nav pane, or press **CTRL+SHIFT+X** and enter C# in the search dialog.
+
+With your environment setup, you are now ready to begin the coding exercise.
 
 ## Call the Language Detection service
 
 :::zone pivot="csharp"
 
-1. Enter an environment name of your choosing, example **LanguageDetectCS**.
-1. Leave the rest of the settings at their default and select **Create**.
-1. It will take a few minutes for the environment to be created so while you wait, go to your Cognitive Service in the Azure portal and copy one of your keys.
-1. Once the environment indicates that it is available, select the hamburger menu in the upper left corner and choose **Terminal, New Terminal**.
-1. Once the new terminal opens, verify your prompt is **codespace:~/workspace$**.
-1. Type in the command ``` dotnet new console ```.
-1. A skeleton .NET Core application is created.
+1. Start by opening Visual Studio Code.
+1. Create a new folder with a name of your choosing, example **DetectLangCsharp**.
+1. Right-click the **DetectLangCsharp** folder and choose **Open in Integrated Terminal**.
+
+    >[!Note]
+    >Visual Studio Code may have different menu options depending on the packages you have installed.  You are looking for a terminal window at the bottom of Visual Studio Code that offers a command prompt/terminal.
+
+1. We will be using C# and .NET Core for this exercise so type in the command ```dotnet new console``` and press Enter.
+1. A new C# dotnet core project structure is set up for you complete with a **Program.cs** file, a workspace.csproj file, and the obj folder.
 1. Select the **Program.cs** file in the file panel to open it in the editor.
-1. To get a larger space in which to work, close the **Welcome** and **Creation Log** tabs.
-1. You may be prompted to install the C# extension.  Select **Install** when prompted, then select **Reload Required** to apply the extension to the environment.
-1. The next prompt asks you to install required assets.  Select **Yes** to install these assets.
 1. You can now start to enter some code for the application.
 1. You will require several libraries for the Text Analytics functionality so paste these **using** statements into your **Program.cs** file.
 
@@ -85,13 +84,13 @@ This exercise steps through the process of preparing a submission for the langua
     {
         var client = new TextAnalyticsClient(endpoint, credentials);
 
-        LanguageDetectionExample(client);
+        DetectLanguage(client);
         Console.Write("Press any key to exit.");
         Console.ReadKey();
     }
     ```
 
-1. Paste your key and endpoint into the placeholders variables in Program.cs.
+1. Paste your key and endpoint into the placeholders variables in **Program.cs**.
 1. Before you run the code, you will need to add the TextAnalytics package to the application.  Enter the following command to add the package, ``` dotnet add package Azure.AI.TextAnalytics --version 1.0.0-preview.4 ```, and press Enter.
 
     >[!CAUTION]
@@ -109,16 +108,15 @@ This exercise steps through the process of preparing a submission for the langua
 
 :::zone pivot="python"
 
-1. Enter an environment name of your choosing, example **LanguageDetectPy**.
-1. Leave the rest of the settings at their default and select **Create**.
-1. It will take a few minutes for the environment to be created so while you wait, go to your Cognitive Service in the Azure portal and copy one of your keys.
-1. Once the environment is created, close the **Welcome** and **Creation Log** tabs.
-1. Create a new file and call it **DetectLanguage.py**.
-1. Visual Studio Codespace will prompt you to install the Python extension, choose **Install**.
-1. Select the **Reload Required** button in the **Extensions** pane.
-1. Choose **Do not show again** when prompted for PyLint.
-1. If the **Terminal** window is not open at the bottom of the editor, select the hamburger menu and choose **Terminal, New Terminal**.
+1. Create a folder to store the project in by using your local file system, **DetectLangPython**.
+1. In Visual Studio Code, select the File icon. Then open the folder you created.
+1. Create a new file in this folder, and call it **detectlang.py**.
+1. Select the hamburger menu and choose **Terminal, New Terminal**.
 1. In the Terminal window, install the **Text Analytics** library with the command, ```sudo pip install --upgrade azure-cognitiveservices-language-textanalytics```.
+
+    >[!Note]
+    >Depending on your Python environment, the above command may not be appropriate. You may have to use just ```pip install``` or ```python3 install```
+
 1. In your Python file, add the following code at the top.
 
     ```python

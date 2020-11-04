@@ -8,7 +8,7 @@
 
 :::image type="content" source="../media/resource-locks.png" alt-text="Screenshot of the add Lock page.":::
 
-You may need to lock a subscription, resource group, or resource to prevent other users in your organization from accidentally deleting or modifying critical resources. You can set the lock level to **CanNotDelete** or **ReadOnly**:
+You may need to lock a subscription, resource group, or resource to prevent other users in your organization from accidentally deleting or modifying critical resources. You can set the lock level to **CanNotDelete** or **ReadOnly**. In the portal, the locks are called **Delete** and **Read-only** respectively.
 
 + **CanNotDelete** means authorized admins can still read and modify a resource, but they can't delete the resource. 
 

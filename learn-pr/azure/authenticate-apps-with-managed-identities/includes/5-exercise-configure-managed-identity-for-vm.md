@@ -13,7 +13,7 @@ In this unit, you'll create a system-assigned managed identity for your virtual 
     az keyvault create --name $KVNAME \
         --resource-group <rgn>[Sandbox resource group]</rgn> \
         --default-action Allow \
-        --location $(az resource list --o tsv --query [0].location) \
+        --location $(az resource list --output tsv --query [0].location) \
         --sku standard
     ```
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-files.6-create-files-directories
+title: Create files and directories
+metadata:
+  title: Create files and directories
+  description: Use .NET and C# to create directories and files.
+  ms.date: 10/28/2020
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-create-files-directories.md)]

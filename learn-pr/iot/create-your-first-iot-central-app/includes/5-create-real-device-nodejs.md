@@ -122,7 +122,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     var provisioningHost = 'global.azure-devices-provisioning.net';
 
     // Enter your Azure IoT keys
-    var idScope = '<your scope ID>';
+    var idScope = '<your ID Scope>';
     var registrationId = '<your device ID>';
     var symmetricKey = '<your primary key>';
 
@@ -732,7 +732,7 @@ In the blank Program.cs file, insert the following code. Each additional section
 
 1. Add the `using` statements, including for Azure IoT Central and Azure Maps.
 
-   ```cs
+    ```cs
     using System;
     using System.Text.Json;
     using System.Text;
@@ -748,7 +748,7 @@ In the blank Program.cs file, insert the following code. Each additional section
 
 1. Add the namespace, class, and global variables. Replace the four `<your...>` strings with the keys you saved in the **Truck keys.txt** file.
 
-   ```cs
+    ```cs
     namespace refrigerated_truck
     {
         class Program
@@ -859,7 +859,7 @@ In the blank Program.cs file, insert the following code. Each additional section
             static TwinCollection reportedProperties = new TwinCollection();
     
             // User IDs.
-            static string ScopeID = "<your Scope ID>";
+            static string IDScope = "<your ID Scope>";
             static string DeviceID = "<your Device ID>";
             static string PrimaryKey = "<your device Primary Key>";
             static string AzureMapsKey = "<your Azure Maps key>";
@@ -867,7 +867,7 @@ In the blank Program.cs file, insert the following code. Each additional section
 
 1. Add the methods to get a route via Azure Maps.
 
-   ```cs
+    ```cs
             static double Degrees2Radians(double deg)
             {
                 return deg * Math.PI / 180;
@@ -991,7 +991,7 @@ In the blank Program.cs file, insert the following code. Each additional section
 
 1. Add the direct method to deliver to a customer.
 
-   ```cs
+    ```cs
         static Task<MethodResponse> CmdGoToCustomer(MethodRequest methodRequest, object userContext)
         {
             try
@@ -1059,7 +1059,7 @@ In the blank Program.cs file, insert the following code. Each additional section
 
 1. Add the recall direct method.
 
-   ```cs
+    ```cs
         static void ReturnToBase()
         {
             destinationLat = baseLat;
@@ -1109,7 +1109,7 @@ In the blank Program.cs file, insert the following code. Each additional section
 
 1. Add the method that updates the truck simulation at each time interval.
 
-   ```cs
+    ```cs
         static double DieRoll(double max)
         {
             return rand.NextDouble() * max;
@@ -1273,7 +1273,7 @@ In the blank Program.cs file, insert the following code. Each additional section
 
 1. Add the methods to send truck telemetry. Send events too, if any have occurred.
 
-   ```cs
+    ```cs
         static void colorMessage(string text, ConsoleColor clr)
         {
             Console.ForegroundColor = clr;
@@ -1331,7 +1331,7 @@ In the blank Program.cs file, insert the following code. Each additional section
 
 1. Add the code to handle properties. You only have one writable property, and one read-only property, in the app, though if there are more, they are easily added.
 
-   ```cs
+    ```cs
         static async Task SendDevicePropertiesAsync()
         {
             reportedProperties["TruckID"] = truckIdentification;
@@ -1356,7 +1356,7 @@ In the blank Program.cs file, insert the following code. Each additional section
 
 1. Add the `Main` function.
 
-   ```cs
+    ```cs
             static void Main(string[] args)
             {
     
@@ -1416,7 +1416,7 @@ In the blank Program.cs file, insert the following code. Each additional section
                 using (var transport = new ProvisioningTransportHandlerMqtt(TransportFallbackType.TcpOnly))
                 {
                     ProvisioningDeviceClient provClient =
-                              ProvisioningDeviceClient.Create(GlobalDeviceEndpoint, ScopeID, security, transport);
+                              ProvisioningDeviceClient.Create(GlobalDeviceEndpoint, IDScope, security, transport);
     
                     Console.WriteLine($"RegistrationID = {security.GetRegistrationID()}");
     

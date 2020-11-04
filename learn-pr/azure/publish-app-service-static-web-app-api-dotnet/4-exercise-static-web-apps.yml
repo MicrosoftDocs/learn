@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-and-api-dotnet.4-exercise-static-web-apps
+metadata:
+  title: Exercise - Create an Azure Static Web App
+  description: Exercise - Create an Azure Static Web App
+  ms.date: 09/22/2020
+  author: aaronpowell
+  ms.author: aapowell
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+title: Exercise - Create an Azure Static Web App
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-exercise-static-web-apps.md)]

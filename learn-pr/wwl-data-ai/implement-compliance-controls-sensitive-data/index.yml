@@ -3,7 +3,7 @@ uid: learn.wwl.implement-compliance-controls-for-sensitive-data
 metadata:
   title: Implement compliance controls for sensitive data
   description: "Explore data classification capabilities and degrees of confidentiality. Explore and configure advanced threat protection options, including SQL Injection."
-  ms.date: 08/02/2020
+  ms.date: 09/18/2020
   author: wwlpublish
   ms.author: kadelaney
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Ability to write code in the SQL language, particular the Microsoft T-SQL dialect, at a basic level.
   - Experience creating and configuring resources using the Azure portal.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/implement-compliance-controls-for-sensitive-data.svg
 levels:
 - intermediate
 roles:

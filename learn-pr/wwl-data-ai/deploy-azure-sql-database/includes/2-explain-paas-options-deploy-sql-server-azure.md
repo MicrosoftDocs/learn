@@ -62,13 +62,13 @@ Database Backups are taken on a given schedule:
 
 This backup schedule should meet the needs of most recovery point/time objectives (RPO/RTO) however each customer should evaluate whether they meet your business requirements.
 
-If the need to restore a database arises, there are several options available. Due to the nature of Platform as a Service, you cannot manually restore a database using conventional methods, such as issuing the T-SQL command RESTORE DATABASE. 
+If the need to restore a database arises, there are several options available. Due to the nature of Platform as a Service, you cannot manually restore a database using conventional methods, such as issuing the T-SQL command RESTORE DATABASE.
 
 Regardless of which restore method is implemented, it is not possible to restore over an existing database. If a database needs to be restored, the existing database must be dropped or renamed prior to initiating the restore. Furthermore, keep in mind that depending on the platform service tier, restore times could fluctuate. It is recommended that you test the restore process to obtain baseline metrics on how long a restore could potentially take.
 
 The available restore options are:
 
-Restore using the Azure portal –Using the Azure portal you have the option of restoring a database to the same Azure SQL Database server, or you can use the restore to create a new database on a new server in any Azure region.
+Restore using the Azure portal – Using the Azure portal you have the option of restoring a database to the same Azure SQL Database server, or you can use the restore to create a new database on a new server in any Azure region.
 
 Restore using scripting Languages – Both PowerShell and Azure CLI can be utilized in order to restore a database.
 
@@ -92,7 +92,7 @@ Another difference between serverless and the normal vCore model of Azure SQL Da
 
 :::image type="content" source="../media/module-22-plan-implement-final-12.png" alt-text="The Azure SQL Database Serverless Settings in the Azure portal":::
 
-The image above shows the configuration screen for a serverless database in the Azure portal. You have the option have a minimum of half of a vCore all the way up to 16 vCores. You should note that databases that are not deployed as serverless are referred to as “provisioned”.
+The image above shows the configuration screen for a serverless database in the Azure portal. You have the option to select a minimum as low as half of a vCore and a maximum as high as 16 vCores. You should note that databases that are not deployed as serverless are referred to as “provisioned”.
 
 The setting to control pausing is referred to as the autopause delay and has a minimum value of 60 minutes and a maximum value of seven days. If the database has been idle for that period of time, it will then pause. Once the database has been inactive for the specified amount of time, it will be paused until a subsequent connection is attempted. Any applications using serverless should be configured to handle connection errors and include retry logic, as connecting to a paused database will generate a connection error.
 

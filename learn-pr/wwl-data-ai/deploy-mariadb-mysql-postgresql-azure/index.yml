@@ -3,13 +3,13 @@ uid: learn.wwl.deploy-mariadb-mysql-postgresql-azure
 metadata:
   title: Deploy MariaDB, MySQL, and PostgreSQL on Azure
   description: "Compare Open Source Azure Database offerings with Azure SQL Server offerings. Configure an Open Source database and configure high availability and security options."
-  ms.date: 09/03/2020
+  ms.date: 10/18/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy MariaDB, MySQL, and PostgreSQL on Azure
-summary: Compare Open Source Azure Database offerings with Azure SQL Server offerings. Configure an Open Source database and configure high availability and security options.
+summary: Compare Open Source Azure Database offerings with Azure SQL offerings. Configure an Open Source database and configure high availability and security options.
 abstract: |
   After completing this module, you will be able to:
   - Understand the service tiers available for open source database platforms
@@ -21,7 +21,7 @@ prerequisites: |
   - Experience creating and configuring resources using the Azure portal.
   - Experience with an Open Source data platform, such as PostgreSQL, MySQL, or MariaDB.
   - Ability to write SQL statements at a beginner level.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/deploy-mariadb-mysql-and-postgresql-on-azure.svg
 levels:
 - intermediate
 roles:
