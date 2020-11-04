@@ -2,7 +2,7 @@ Let’s create a new project, with the help of Truffle, and then incorporate the
 
 ## Create a new project
 
-1. In your terminal, create a new folder named **Token20**. To do that, run the `mkdir Token20` command. I usually run this command inside a folder named Projects, where I store all my other development projects.
+1. Open up your terminal or command line application on your computer. In your terminal, create a new folder named **Token20**. To do that, run the `mkdir Token20` command. I usually run this command inside a folder named Projects, where I store all my other development projects.
 1. Go to the Token20 folder (run `cd Token20`).
 1. To initialize a new project, run `truffle init`.
 1. Wait for your project to be initialized, and then open the project in Visual Studio Code.

@@ -18,7 +18,7 @@ abstract:  |
  - Use the contracts library in OpenZeppelin
  - Create a token smart contract
 prerequisites: | 
-  - Blockchain fundamentals
+  - Fundamental knowledge about blockchain
   - Ethereum platform knowledge
   - Solidity programming knowledge
   - Previous experience with a programming language like C, Python, or JavaScript

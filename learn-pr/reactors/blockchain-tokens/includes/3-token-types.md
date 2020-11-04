@@ -37,4 +37,4 @@ The ERC721 token is a more complex standard than ERC20. The core functions of ER
 
 ERC1155 draws on ideas from ERC20, ERC721, and ERC777.
 
-The design of the ERC1155 token type allows for massive gas savings, for a couple reasons. (In Ethereum, *gas* refers to a fee or pricing value.) First, you can use this token contract for multiple tokens, which means fewer deployments with less complexity. It also has batched operations, so a single function call can be simpler and less gas-intensive.
+The design of the ERC1155 token type allows for massive gas savings, for a couple reasons. (In Ethereum, *gas* refers to a fee or pricing value charged to execute transactions.) First, you can use this token contract for multiple tokens, which means fewer deployments with less complexity. It also has batched operations, so a single function call can be simpler and less gas-intensive.

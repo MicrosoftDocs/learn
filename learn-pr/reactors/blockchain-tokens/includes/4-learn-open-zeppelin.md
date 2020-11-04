@@ -1,12 +1,12 @@
 [OpenZeppelin](https://openzeppelin.com/?azure-portal=true) is a platform that has tools you can use to write, deploy, and manage decentralized applications. OpenZeppelin is an open-source tool that provides reliability and security with the products it provides.
 
-OpenZeppelin offers two products: the contracts library and the SDK.
+OpenZeppelin offers two products: the Contracts library and the SDK.
 
 :::image type="content" source="../media/open-zeppelin.png" alt-text="Screenshot of a web browser open to the OpenZeppelin home page, with the Contracts and SDK products summarized.":::
 
 ## Contracts
 
-The OpenZeppelin [contracts library](https://openzeppelin.com/contracts?azure-portal=true) gives you access to a robust set of modular and reusable smart contracts for the Ethereum network. The smart contracts are written in Solidity. The main benefit of using OpenZeppelin contracts is that they have been thoroughly tested, audited, and community-reviewed.
+The OpenZeppelin [Contracts library](https://openzeppelin.com/contracts?azure-portal=true) gives you access to a robust set of modular and reusable smart contracts for the Ethereum network. The smart contracts are written in Solidity. The main benefit of using OpenZeppelin contracts is that they have been thoroughly tested, audited, and community-reviewed.
 
 OpenZeppelin is the most popular library source in the industry for smart contracts, and it’s open source. When you use OpenZeppelin contracts, you'll learn the best practices for developing smart contracts. A variety of contract types are available, including:
 
