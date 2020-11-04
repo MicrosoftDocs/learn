@@ -13,9 +13,9 @@ By the end of this module, you will be able to:
 
 ## Prerequisites
 
-- [Fundamental knowledge about blockchain](https://docs.microsoft.com/learn/modules/intro-to-blockchain/)
-- [Solidity programming knowledge](https://docs.microsoft.com/learn/modules/blockchain-learning-solidity/)
-- [Ethereum platform knowledge](https://docs.microsoft.com/learn/modules/blockchain-solidity-ethereum-smart-contracts/)
+ - [Fundamental knowledge about blockchain](https://review.docs.microsoft.com/learn/modules/intro-to-blockchain/?branch=new-blockchain-ethereum)
+ - [Solidity programming knowledge](https://review.docs.microsoft.com/learn/modules/blockchain-learning-solidity/?branch=new-blockchain-ethereum)
+ - [Ethereum platform knowledge](https://review.docs.microsoft.com/learn/modules/blockchain-solidity-ethereum-smart-contracts/?branch=new-blockchain-ethereum)
 - Previous experience with a programming language like C, Python, or JavaScript
 - Basic knowledge of programming concepts
 - Familiarity with the command line to create new directories and install programs
