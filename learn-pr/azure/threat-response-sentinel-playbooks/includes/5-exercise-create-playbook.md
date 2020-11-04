@@ -42,6 +42,7 @@ In this task, you will deploy Azure Sentinel connectors to Azure Activity and Az
 
 5. Click on your subscription and then click **Connect.**
 6. When you receive status **Connected** , you can close all open blades to return on **Azure Sentinel| Data connector** blade.
+<!-- Missing space between "Sentinel" and "|". -->
 7. In the Azure portal, search for and select Security Center
 8. In the **Security Center | Getting started** pane, verify that your subscription is selected and click **Upgrade.** In the install Agents pane, click **Install agents.**
 
