@@ -1,5 +1,7 @@
 *Machine Learning* is the foundation for most artificial intelligence solutions, and the creation of an intelligent solution often begins with the use of machine learning to train a predictive model using historic data that you have collected.
 
+*Azure Machine Learning* is a cloud service that you can use to train and manage machine learning models. 
+
 In this module, you'll learn how to:
 
 - Identify different kinds of machine learning model.
