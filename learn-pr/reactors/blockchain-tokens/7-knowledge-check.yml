@@ -51,7 +51,7 @@ quiz:
     - content: "SDK"
       isCorrect: false
       explanation: "The SDK is used to develop, deploy, and manage smart contract projects."
-    - content: "Contracts Library"
+    - content: "Contracts library"
       isCorrect: true
       explanation: "Correct. The OpenZeppelin contracts library provides a set of modular and reusable contracts to integrate into new and existing blockchain projects."
     - content: "Test Helpers"
