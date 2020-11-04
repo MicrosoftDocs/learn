@@ -19,8 +19,15 @@ roles:
   - devops-engineer
   - administrator
   - developer
+  - functional-consultant
+  - data-scientist
+  - security-engineer
   - solution-architect
   - student
+  - technology-manager
+  - business-owner
+  - ai-engineer
+  - ai-edge-engineer
 products:
   - vs
   - github
