@@ -20,7 +20,7 @@ abstract: |
   - Learn how Microsoft Endpoint Manager helps you maximize your return on investment.  
 prerequisites: None
 iconUrl: /learn/achievements/benefits-microsoft-endpoint-manager.svg
-ratingEnabled: false
+ratingEnabled: true
 levels:
 - beginner
 roles:

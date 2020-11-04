@@ -1,8 +1,8 @@
-During your journey as developer, there's always _that_ moment when you end up asking yourself:
+During your journey as a developer, there's always _that_ moment when you end up asking yourself:
 
 > Why isn't my code working?
 
-This is a normal part of any developer's day, and the trick is to get comfortable with finding and fixing your bugs with a minimum of time and frustration. When there's a bug in your program, everyone usually has their own way of dealing with this problem.
+Asking this question is a normal part of any developer's day. The trick is to get comfortable with finding and fixing your bugs with a minimum of time and frustration. When there's a bug in your program, everyone usually has their own way of dealing with this problem.
 You probably already have tried one or more of these debugging approaches yourself:
 
 - Try running your program again because it *should* work.
@@ -11,7 +11,7 @@ You probably already have tried one or more of these debugging approaches yourse
 - Take a walk outside.
 - Spam a few `Console.WriteLine("here")` messages in your code.
 
-While you might have various degrees of success with these methods, there's one other approach commonly regarded as being more often successful: using a debugger. But what's a debugger exactly?
+You might have various degrees of success with these methods. The one approach that's commonly regarded as being more often successful is using a debugger. But what's a debugger exactly?
 
 A debugger is a software tool used to observe and control the execution flow of your program with an analytical approach. Its design goal is to help find the root cause of a bug and help you resolve it. It works by either hosting your program in its own execution process or running as a separate process that's attached to your running program, like .NET.
 
@@ -28,4 +28,4 @@ Every debugger has its own set of features. The two most important ones that com
 
 Mastering debugger usage is an important skill for a developer that's often overlooked. It makes you more efficient at hunting bugs in your code. It can also help you quickly understand how a program works.
 
-Let's discover that in the next section.
+Let's discover that in the next unit.
