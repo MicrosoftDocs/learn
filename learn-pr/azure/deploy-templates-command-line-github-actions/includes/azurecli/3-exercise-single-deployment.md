@@ -9,8 +9,8 @@
     az login
     ```
 
-1. After you're logged in, you see a JSON list of the subscriptions associated with this account in the terminal. If you activated the sandbox, the Concierge Subscription should be in this list.
-1. Get the subscription ID. The following command will list your subscriptions and their IDs. The subscription ID is the second column. Look for `Concierge Subscription` and copy the third column. It will look something like `cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0`.
+1. After you're signed in, you see a JSON list of the subscriptions associated with this account in the terminal. If you activated the sandbox, the Concierge Subscription should be in this list.
+1. Get the subscription ID. The following command will list your subscriptions and their IDs. The subscription ID is the third column. Look for `Concierge Subscription` and copy the third column. It will look something like `cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0`.
 
     ```azurecli
     az account list -o table
@@ -30,7 +30,7 @@ You now need to set the resource group created for you in the sandbox as the def
 az group list -o table
 ```
 
-Use the resource name provided by the previous command in this command. (It looks something like `learn-a73131a1-b618-48b8-af70-21af7ca420c4`.) This command allows you to omit that parameter from the rest of the Azure CLI commands in this exercise.
+In this command, use the resource name that you got from the previous command. (It looks something like `learn-a73131a1-b618-48b8-af70-21af7ca420c4`.) This command allows you to omit that parameter from the rest of the Azure CLI commands in this exercise.
 
 > [!NOTE]
 > Normally, when you use an Azure CLI command to deploy a template, you need to specify the target resource group name.  In the exercise in this module, we're bypassing this requirement by setting the context of our deployment. We're specifying our sandbox resource group name in the next step by using the [az configure](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&azure-portal=true) Azure CLI command.
