@@ -1,14 +1,12 @@
 uid: learn.arm-copy.6-conditions
-title: Manage conditions and deployment order
+title: Add conditional logic to your ARM templates  
 metadata:
-  title: Manage conditions and deployment order
+  title: Add conditional logic to your ARM templates
   description: You will want to sometime express whether something should be
-    deployed or not. Moreover you might also want to express that for something
-    to be deployed, something else needs to exist first. ARM itself, the
-    condition and dependsOn constructs are able to handle these cases.
+    deployed or not. Such conditional logic can be added using the _condition_ construct. Parameters can then be used to for example conditionally deploy certain resources in certain environments.
   author: softchris
   ms.author: chnoring
-  ms.date: 10/12/2020
+  ms.date: 11/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

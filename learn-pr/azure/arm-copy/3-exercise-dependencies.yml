@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.arm-copy.3-exercise-dependencies
-title: Unit
+title: Exercise - Control deployment order of resources
 metadata:
-  title: Unit
-  description: Describe unit
-  author: undefined
-  ms.author: undefined
-  ms.date: 04/14/2020
+  title: Exercise - Control deployment order of resources
+  description: Use the _dependsOn_ construct to define dependencies between resources and decide deployment order.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 11/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

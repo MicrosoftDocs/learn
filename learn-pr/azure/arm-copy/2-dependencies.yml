@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.arm-copy.2-dependencies
-title: Unit
+title: Control deployment order by setting up dependencies
 metadata:
-  title: Unit
-  description: Describe unit
-  author: undefined
-  ms.author: undefined
-  ms.date: 04/14/2020
+  title: Control deployment order by setting up dependencies
+  description: Sometimes, it's important to control what gets deployed when and it what order. By setting up a dependency between resources you guarantee that resources are deployed in a set order and thereby guaranteeing that a certain resource exist before the dependent resource.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 11/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

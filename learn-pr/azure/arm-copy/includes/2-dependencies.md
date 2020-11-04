@@ -3,7 +3,7 @@ Let's say you have an example where you want to deploy a set of resources but on
 There are few angles to this worth considering:
 
 - **Something needs to exist before something else can be deployed**. What you want to verify is that a critical resource already exist before you venture on and deploy the resources. A typical example is an Azure KeyVault that may hold secrets that a VM needs for it's password. Before you can deploy the VM the Azure KeyVault and its secret needs to be in place.
-- **Can I rely on how things work on ARM?**. Your first thought in trying to express a _dependency_ might bbe that you want to look up the state on Azure to see if that resource is already in place. You can solve it that way and it involves mixing in PowerShell in your template. There is a better way, namely relying on how ARM works, more precisely how incremental deployment works. Let's investigate this approach more in this unit.
+- **Can I rely on how things work on ARM?**. Your first thought in trying to express a _dependency_ might be that you want to look up the state on Azure to see if that resource is already in place. You can solve it that way and it involves mixing in PowerShell in your template. There is a better way, namely relying on how ARM works, more precisely how incremental deployment works. Let's investigate this approach more in this unit.
 - **Nested resources**. As part of defining your template you can define nested resources within another resource. Nested resources express that this is something that is related to the top-level resource. It's worth exploring these types of resources closer to ensure how they work with dependencies in mind.
 
 ## Dependency

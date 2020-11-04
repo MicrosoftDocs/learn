@@ -4,13 +4,13 @@ Let's try to distill the problem a bit:
 
 - **Templates need to be checked in**. Your infrastructure is now expressed as text files. You also check in those files into a global repository like GitHub. Assume therefore that what gets checked into GitHub could be read by anyone.
 - **Secure credentials need to be stored in safe way**. Credentials like passwords, API keys and more should be stored in a safe way. Only specific individuals in your company should have access to them. It should be easy to _rotate keys_ at a regular interval. A change in a credential should not stop services in production.  
-- **The deployment template needs to be able read credentials**. The templates need to be checked into a version control system. As part of a _deployment_ the deployment process will need to have access to whatever service you are using to store your credentials. You could handle that with something like PowerShell scripts or go for an approach involving ARM templates and an Azure service.
+- **The deployment template needs to be able read credentials**. The templates need to be checked into a version control system. As part of a deployment, the deployment process will need to have access to whatever service you are using to store your credentials. You could handle that with something like PowerShell scripts or go for an approach involving ARM templates and an Azure service.
 
 ## Why use an Azure KeyVault
 
 An Azure KeyVault is capable of storing both keys and secrets. Some features of Azure KeyVault are:
 
-- **RBAC. Role-Based Access Control**, you can manage your KeyVault using various roles so you can ensure it's usable by apps as well as different levels of admins
+- **RBAC, Role-Based Access Control**, you can manage your KeyVault using various roles so you can ensure it's usable by apps as well as different levels of admins
 - **Allowing users and/or service principals**. The KeyVault can be configured so that both specific users as well as apps can have access to the KeyVault. The way to let apps have access is to create a so called Service principal. In fact, you can configure your KeyVault so that only Service principals have access to it.
 - **Can interact with an ARM template**. This feature is probably the one that makes Azure KeyVault the most compelling for usage in this scenario. Azure KeyVault can be read from ARM template, even if there's a little configuration needed to make it work.
 - **Key rotation**. A rotation, a switch of your keys and secrets values can be done at a regular interval. The reason for wanting to do so is that a secret, or key might be compromised and switching out the values at regular intervals is a good practice to mitigate such events. Because of the way Azure KeyVault works it, consumers of it only deals with the name of the secrets rather than the actual values and you therefore have no downtime when a rotation happens.
@@ -51,11 +51,4 @@ You can set a parameter to read from a specific KeyVault and a particular secret
 }
 ```
 
-In the above JSON, you specify the full id to the KeyVault and go on to ask for the secret `databaseSecret`. The value of this secret is then extracted to bee assigned to the `myPassword` parameter.
-
-KeyVault secure parameters - 
-https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/key-vault-parameter?tabs=azure-cli 
-
-  
-
-https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-use-key-vault 
+In the above JSON, you specify the full ID to the KeyVault and go on to ask for the secret `databaseSecret`. The value of this secret is then extracted to bee assigned to the `myPassword` parameter.

@@ -1,11 +1,11 @@
 uid: learn.arm-copy.4-secure-parameters
-title: Secure parameters
+title: Manage secrets in your ARM template by reading from a KeyVault at deployment time 
 metadata:
-  title: Secure parameters
+  title: Manage secrets in your ARM template by reading from a KeyVault at deployment time
   description: Describe unit
   author: softchris
   ms.author: chnoring
-  ms.date: 10/12/2020
+  ms.date: 11/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

@@ -1,1 +1,13 @@
-Exercise, creating a vm to show dependency, public IP, security groups, password as param
+You're part of a development team at the company Tailwind Traders. You will from time to time need to deploy resources that are dependent on other resources to exist.  
+
+::: zone pivot="powershell"
+
+[!include[](./powershell/3-exercise-dependencies-powershell.md)]
+
+::: zone-end
+
+::: zone pivot="cli"
+
+[!include[](./powershell/3-exercise-dependencies-azcli.md)]
+
+::: zone-end

@@ -13,7 +13,7 @@ There are different aspects to creating many instances, and iterating over const
 
 One of the general benefits of using looping constructs is saving you keystrokes. If what you need is repeated over and over, fairly similar in name and type, and so on, and there are only slight differences, then it's a good use case for something called the *copy element*. 
 
-The *copy element* is piece of JSON that can be used on many types of constructs like resources, properties, variables, and output. The syntax for the *copy element* consists of the key `copy` and with an array as value, like so **"copy": []**.  The array takes a number of elements and each element is an object `{}` consisting of set of properties. What these properties are depends on what type of construct they are used on. Typically all of the *copy element* constructs have one property in common `count`. This property decides on how many instances you want of a certain type of construct. Most constructs also allow for a `name` property that gives you a reference that you can refer to in other parts of your code. Other properties used are usually construct specific.
+The *copy element* is piece of JSON that can be used on many types of constructs like resources, properties, variables, and output. The syntax for the *copy element* consists of the key `copy` and with an array as value, like so **"copy": []**.  The array takes a number of elements and each element is an object `{}` consisting of set of properties. What these properties are depends on what type of construct they are used on. Typically all of the *copy element* constructs have one property in common `count`. This property decides on how many instances you want of a certain type of construct. Most constructs also allow for a `name` property that gives you a reference that you can refer to in other parts of your code. Other properties used are usually constructed specific.
 
 ### What to choose
 
@@ -23,7 +23,7 @@ It all depends on your use case. A *resource iteration* allows you to create man
 
 ### How does it work
 
-Ok, say I elect to use the *copy element* how does it work, what's the end result?
+Ok, say I elect to use the _copy element_ how does it work, what's the end result?
 
 Let's have a look at a use case:
 
@@ -65,7 +65,7 @@ From the above expression, you can see that the value of the `name` property has
 There are limits to how much can be copied. Currently the limit is at 800 entries.
 
 > [!IMPORTANT]
->  Be sure to check this [Copy element page](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/copy-resources) to know the exact limitations. 
+>  Be sure to check this [Copy element page](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/copy-resources) to know the exact limitations.
 
 ## Controlling the iteration
 
@@ -80,7 +80,6 @@ The function has two different input parameters `loopName` and `offset`. The `of
   ```json
   "properties": {
       "storageProfile": {
-        ...
         "copy": [
           {
             "name": "dataDisks",
@@ -105,7 +104,6 @@ Let's look at the other case where `loopName` is not mandatory:
     "type": "Microsoft.Network/virtualNetworks",
     "apiVersion": "2018-04-01",
     "name": "[concat(parameters('vnetname'), copyIndex())]",
-    ...
   }
   ```
 
@@ -118,18 +116,18 @@ When you use the copy element for resources, you end up creating numerous simila
 Sometimes you might want to control how resources are created and in what order. The reasons for controlling the order might be the below:
 
 - **Environment limitations**. Depending on what environment you deploy to you might want to limit how much this environment is affected by a deployment. In a production environment, it makes sense to limit how many resources are affected at any one time. You can configure something called *deployment mode* to control the number of concurrently deployed resources. More on deployment modes in a subsection.
-- **Dependencies**. You could be dependent on something to already exist before you venture on to create the resource you need. To express such a dependency, there's a construct called `dependsOn`. 
+- **Dependencies**. You could be dependent on something to already exist before you venture on to create the resource you need. To express such a dependency, there's a construct called `dependsOn`.
 
-### Deployment modes
+### Deployment modes and _copy_
 
-The Resource Manager has the concept of deployment mode. Below are the modes currently available:
+You might want to ensure that a set of resources created by the copy construct is all being created before something else. If that's the case, you need to express this situation. Let's quickly remind ourselves that what comes into play here is the deployment modes that ARM uses. There are two modes supported:
 
 - **Serial**. Setting a resource to this deployment mode means it will be created one after another. In this mode, you are also expected to set a property `batchSize` to determine how many resources are deployed using this mode. A new *batch* can't be started before a preview one has completed. This ability to limit things this way is something you might want to use in a production environment, for example,  where it might be important to limit the number of affected resources at any one point.
 - **parallel**. This mode is the default deployment mode. The advantages are high throughput so the template ends up being processed faster. The drawbacks are that you can't guarantee order and it might not, as mentioned in the above bullet, be what you want for production environment.
 
 ### Dependencies
 
-In the context of the copy element,* you need to tell the resource, with the dependency, what *copy element* section it's waiting for. You accomplish that by referring to it by name. The below JSON expresses such a dependency:
+In the context of the copy element, you need to tell the resource, with the dependency, what *copy element* section it's waiting for. You accomplish this dependency by referring to it by name with the below JSON:
 
 ```json
 "resources": [
@@ -153,21 +151,8 @@ In the context of the copy element,* you need to tell the resource, with the dep
       "apiVersion": "2015-06-15",
       "name": "[concat('VM', uniqueString(resourceGroup().id))]",
       "dependsOn": ["storagecopy"],
-      ...
     }
   ]
 ```
 
-Not above how the *copy element* has a `name` property with the value `storagecopy` and how the dependent resource, a storage account is *waiting* for the *copy element* operation to finish with this expression **"dependsOn": ["storagecopy"]**.
-
-  
-
-> TODO Remove below once done
-
-Keypoints: 
-
-Walk through 
-
-Not straight forward, relationships are hard 
-
-https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-create-multiple-instances?tabs=CLI%2Cazure-cli 
+In the above JSON the *copy element* has a `name` property with the value `storagecopy` and the dependent resource, a storage account is *waiting* for the *copy element* operation to finish with this expression **"dependsOn": ["storagecopy"]**. Thereby ARM switches to a serial deployment mode between these two resources. It might affect the throughput speed of the deployment but you've expressed that you care about a certain deployment order, which will now take precedence.

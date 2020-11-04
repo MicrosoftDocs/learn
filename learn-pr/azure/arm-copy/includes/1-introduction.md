@@ -1,28 +1,7 @@
-How to write an introduction
+Azure Resource Manager (ARM) templates has numerous constructs able to handle everything simpler setups to even more complex ones. These constructs help you to for example conditionally run statements, define dependencies between resources to reading secrets at deployment time.
 
-https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format
+You're on a software team that's authoring these templates for the company Tailwind Traders. You plan to deploy the described infrastructure in the templates. There are various challenges that you need to address everything from secrets, and assigning those to template resources to repetitive template syntax. You will also need to look into how you can express dependencies, as you want a certain deployment order, just to mention a few important scenarios.
 
-Copy with datadisks on a VM
-https://azure.microsoft.com/en-us/resources/templates/101-vm-windows-copy-datadisks/
+You decide on evaluating a set of ARM features able to address the above scenarios.
 
-Using KeyVault
-https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-use-key-vault
-
-Conditions
-https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-use-conditions
-
-Template with dependent resources
-https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-create-templates-with-dependent-resources?tabs=CLI
-
-2. Concept part Dependencies, move dependencies from conditions to form a new part
-3. Exercise, creating a vm to show dependency, public IP, security groups, password as param
-
-4. Concept part, Secure parameters,
-5. Exercise, one template creating keyvault, add secret, how to read a secret and assign to, modify existing template with vm to retrieve secret
-	
-6. Concept part, Conditions
-7. Exercise, condition, pass a storage account name and conditional param
-	
-	
-8. Concept part, copy	
-9. Exercise, copy, storage accounts
+In this module, you gain an understanding for how to handle more complex scenarios that you will face. You will use various complex constructs like, for example,  _copy_, and _dependsOn_, and also learn how to deal with managing secrets when deploying.
