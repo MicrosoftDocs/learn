@@ -221,7 +221,7 @@ As you can see, this function has a trigger binding named **Request** of type `h
 
 1. Notice under the function entry there is a set of menu items as shown in the following screenshot.
 
-    :::image type="content" source="../media/3-func-menu-small.png" alt-text="Screen shot of the Overview Menue.  Code + Test, Integration, Monitor, and Function Keys.":::
+    :::image type="content" source="../media/3-func-menu-small.png" alt-text="Screen shot of the Overview Menu.  Code + Test, Integration, Monitor, and Function Keys.":::
 
 1. Select the **Integrate** menu item to open the integration tab for our function. If you've been following along with this unit, the integrate tab should look very similar to the following screenshot.
 
