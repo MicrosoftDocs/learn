@@ -26,6 +26,12 @@ In this module, you will:
 - Understand Azure Sentinel events and entities
 - Investigate and manage incident resolution
 
+<!-- Jason: From the design document: 
+"Understand Azure Sentinel incident management
+Explore Azure Sentinel evidence and entity management
+Investigate and manage incident resolution" 
+These are supposed to match. Which do you want to change? Is it possible to change understand to something more active at this point? Describe, use, explain...--> 
+
 ## Prerequisites
 
 - Familiarity with security operations in an organization
