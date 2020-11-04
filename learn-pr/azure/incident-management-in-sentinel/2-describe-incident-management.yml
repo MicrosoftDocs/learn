@@ -43,3 +43,5 @@ quiz:
     - content: "Manage security roles in your environment"
       isCorrect: false
       explanation: "You can't directly manage security roles with incident management."
+      
+      #Jason: For future reference you now only need 3 plausible answers. 
