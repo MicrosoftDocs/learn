@@ -1,8 +1,8 @@
-<!-- Jason: Apparently the rule is always use Azure Sentinel - don't shorten to Sentinel. So keep that in mind. I updated some references. --> 
+<!-- Jason: Looks like we always have to say Azure Sentinel and never Sentinel. I've corrected but if you see any instances I missed please also correct. --> 
 
 Once Azure Sentinel is generating incidents, the next step is to investigate those incidents. Azure Sentinel includes advanced investigation and analysis tools that help you understand what is happening and take remediation steps.
 
-<!-- Jason: Maybe "Once you start using Sentinel to generate incidents, you and the IT team at Contoso will want to investigate those incidents. You can use the advanced investigation and analysis tools to gather information and determine remediation steps." --> 
+<!-- Jason: Maybe "Once you start using Azure Sentinel to generate incidents, you and the IT team at Contoso will want to investigate those incidents. You can use the advanced investigation and analysis tools to gather information and determine remediation steps." --> 
 
 ## Investigate incidents
 
@@ -12,6 +12,8 @@ The primary step in identifying and resolving security issues at Contoso begins 
 
 > [!IMPORTANT]
 > Azure Active Directory users investigating incidents must be members of the Directory Reader role.
+
+<!-- Jason: I think a transition sentence from this overview to the subcategories could make this section flow nicely. "From this page, you can navigate to review incidents, manage their ownership, status, and severity, examine incident details, and perform deep analysis with investigation graphs." More concise than my suggestion would be great, like "From this page, you can take various steps to invesitage incidents." Also, consider the order of your subcategories. Shuld review incedents and examine incident details be side by side? Should "manage their ownership/status/severity" be last since the rest are about investigating? --> 
 
 ### Review incidents
 
@@ -23,11 +25,9 @@ Selecting any incident will display more information about the incident in the d
 
 ### Manage incident ownership, status, and severity
 
-Each incident created in Azure Sentinel has manageable metadata attached to it. This information can help you set and track the status of an incident from creation to resolution, set and view severity, and assign and track ownership for the incident.
+Each incident created in Azure Sentinel has manageable metadata attached to it. This information can help you set and track the status of an incident from creation to resolution, set and review severity, and assign and track ownership for the incident.
 
 :::image type="content" source="../media/4-incident-settings.png" alt-text="The screenshot shows the section of the incidents page where you can assign ownership, status, and severity." border="false":::
-
-<!-- Jason: If you do want to start each section addressing the reader, you could try: You can also review the metadata attached to each incident in Azure Sentinel. This information can help you set and trakc the status... --> 
 
 #### Ownership
 
@@ -35,7 +35,7 @@ In a typical environment, each incident should be assigned an owner from your se
 
 #### Status
 
-Every new incident that is created in Sentinel is assigned a status of **New**. As you review and respond to incidents at Contoso, you'll manually change the status to reflect the current state of the incident. For incidents under investigation set the status to **Active**. When an incident is fully resolved, you should set status to **Closed**. When you set status to closed, you will be prompted to choose one of the following from the drop-down list:
+Every new incident that is created in Azure Sentinel is assigned a status of **New**. As you review and respond to incidents at Contoso, you'll manually change the status to reflect the current state of the incident. For incidents under investigation set the status to **Active**. When an incident is fully resolved, you should set status to **Closed**. When you set status to closed, you will be prompted to choose one of the following from the drop-down list:
 
 - True Positive - suspicious activity
 - Benign Positive - suspicious but expected
@@ -60,6 +60,8 @@ All of these details can be referenced to better understand the context of the i
 You can perform further investigation into an incident by selecting **Investigate** in the incident details page. This action opens the investigation graph, a visual tool that helps to identify entities involved in the attack and the relationships between those entities. If the incident involves multiple alerts over time, you can also review the alert timeline and correlations between alerts
 
 :::image type="content" source="../media/4-investigation-graph.png" alt-text="The screenshot shows the incident details page." border="false":::
+
+<!-- Jason: This alt text is the same as the previous image's alt text and the first image's. I can't see the image because I don't have the media folder right now. I'd suggest separating the three alt text descriptions though with a little more detail. --> 
 
 #### Review entity details
 
