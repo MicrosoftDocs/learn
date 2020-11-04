@@ -6,4 +6,4 @@ For continued learning, see the [OpenZeppelin token documentation](https://docs.
 
 ## Complete the course
 
-Rate this module to let us know whether you enjoyed it. Then, continue learning about blockchain development for Ethereum in the next module.
+Continue learning about blockchain development for Ethereum in the next module.

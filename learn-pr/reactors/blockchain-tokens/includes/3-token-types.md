@@ -25,7 +25,7 @@ An ERC20 token contract keeps track of fungible tokens. Any one token is exactly
 
 Each token is unique and has ownership and status that must be tracked.
 
-The ERC721 token is a more complex standard than ERC20. The core functions of ERC721 and ERC20 have some similarities, but with ERC721 each function also has an argument to specify the token ID which uniquely identifies the token being used in the smart contract.
+The ERC721 token is a more complex standard than ERC20. The core functions of ERC721 and ERC20 are similar, but with ERC721, each function also has an argument to specify the token ID that uniquely identifies the token being used in the smart contract.
 
 ## ERC777
 

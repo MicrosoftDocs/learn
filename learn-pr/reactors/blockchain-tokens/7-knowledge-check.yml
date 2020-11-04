@@ -17,7 +17,7 @@ quiz:
     choices:
     - content: "They represent currency that can be traded."
       isCorrect: false
-      explanation: "Tokens are traded, and often represent much more than currency. They also can represent ownership or access, or used to redeem a service."
+      explanation: "Tokens are traded and often represent much more than currency. They also can represent ownership or access, or be used to redeem a service."
     - content: "They represent digital assets that have some value and are tradeable."
       isCorrect: true
       explanation: "Correct. Tokens have some value and represent either virtual or real-world, tangible objects."
@@ -26,7 +26,7 @@ quiz:
       explanation: "Tokens are digital, but they can represent virtual <i>or</i> physical objects."
     - content: "They are unique assets that identify ownership."
       isCorrect: false
-      explanation: "Tokens can identify ownership, for example, with houses or cars or artwork. Tokens can also represent digital objects as well."
+      explanation: "Tokens can identify ownership, for example, of houses, cars, or artwork. Tokens can also represent digital objects."
 
   - content: "What type of token is most commonly used solely for nun-fungible assets?"
     choices:
