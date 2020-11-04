@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage analytics rules
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[] includes/6-manage-analytics-rules.md)]
 quiz:

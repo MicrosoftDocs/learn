@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create an analytics rule from templates
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
   [!include[] includes/4-create-rule-from-templates.md)]
 quiz:

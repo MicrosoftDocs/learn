@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Detect threats with Azure Sentinel analytics
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[]includes/7-exercise-detect-threats.md)]
