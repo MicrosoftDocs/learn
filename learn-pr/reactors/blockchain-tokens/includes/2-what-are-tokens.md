@@ -6,7 +6,7 @@ A token can grant special platform permissions to a user, grant exclusive access
 
 Tokens are not new. Tokens existed long before the emergence of blockchain and cryptocurrency.
 
-In their long history, tokens have represented any form of economic value. Shells and beads probably were the earliest forms of tokens, when they were used for trading. Present-day token forms include casinos chips, vouchers, airline points, stock certificates, concert entry tokens, dinner reservations, ID cards, and club memberships. Really, the list of possible ways to use a token is essentially unlimited.
+In their long history, tokens have represented any form of economic value. Shells and beads probably were the earliest forms of tokens, when they were used for trading. Present-day token forms include casinos chips, vouchers, airline points, stock certificates, concert entry tokens, dinner reservations, ID cards, and club memberships. Really, the list of possible ways to represent and use a token is essentially unlimited.
 
 Even our typical fiat currency, which includes cash and coins, is a type of token. The idea is that you can accumulate tokens, which have a certain designated value, and then trade them to get some item or service of value in return.
 
