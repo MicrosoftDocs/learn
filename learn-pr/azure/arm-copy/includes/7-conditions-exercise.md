@@ -8,6 +8,6 @@ You're part of a development team at the company Tailwind Traders. Sometimes you
 
 ::: zone pivot="cli"
 
-[!include[](./powershell/7-exercise-conditions-azcli.md)]
+[!include[](./azcli/7-exercise-conditions-azcli.md)]
 
 ::: zone-end

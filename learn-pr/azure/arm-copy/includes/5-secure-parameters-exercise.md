@@ -8,6 +8,6 @@ You will need to create resources that need passwords set during deployment. A t
 
 ::: zone pivot="cli"
 
-[!include[](./powershell/3-exercise-secure-parameters-azcli.md)]
+[!include[](./azcli/5-exercise-secure-parameters-azcli.md)]
 
 ::: zone-end
