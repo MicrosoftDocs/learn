@@ -6,7 +6,7 @@ In an energy proportional system, the energy efficiency is a constant, no matter
 
 This means that the relationship between power and utilization is not proportional.
 
-[![Power versus utilization.](../media/7-energy-proportionality-1.svg)](../media/7-energy-proportionality-1.svg#lightbox)
+![Power versus utilization.](../media/7-energy-proportionality-1.svg)
 
 At 0% utilization, the computer still draws 100W; at 50% utilization, it draws 180W, and at 100% utilization, it draws 200W. The relationship between power consumption and utilization is not linear, and it doesn't cross the origin.
 

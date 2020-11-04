@@ -20,12 +20,12 @@ You can do many things to be hardware efficient, but one thing you can do is hel
 
 A way to account for embodied carbon is to amortize the carbon over a device's expected life span. For example, if it took four tons of carbon to build a server and we hope the server to have a four-year lifespan, we can consider this equivalent to one ton of carbon released per year during its lifespan.
 
-[![Embodied carbon of a server amortized over 4 years.](../media/6-embodied-carbon-1.svg)](../media/6-embodied-carbon-1.svg#lightbox)
+![Embodied carbon of a server amortized over 4 years.](../media/6-embodied-carbon-1.svg)
 
 By thinking of embodied carbon in this way, any device, even one that is not consuming electricity, is effectively releasing carbon over its lifetime.
 
 If we just added one more year to the lifespan of our 2019 R640 Dell Server, then the amortized carbon drops from <nobr>**320 kg CO<sub>2</sub>eq/year**</nobr> to <nobr>**256 kg CO<sub>2</sub>eq/year**</nobr>.
 
-[![Embodied carbon of the same server amortized over 5 years.](../media/6-embodied-carbon-2.svg)](../media/6-embodied-carbon-2.svg#lightbox)
+![Embodied carbon of the same server amortized over 5 years.](../media/6-embodied-carbon-2.svg)
 
 Hardware is retired either because it breaks down or because it struggles to handle modern workloads. Software cannot help with the first, however, if we focus on building applications that can run on older hardware, we can help with the second.

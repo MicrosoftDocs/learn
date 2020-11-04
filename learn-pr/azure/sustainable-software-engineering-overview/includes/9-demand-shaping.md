@@ -2,7 +2,7 @@
 
 Demand shaping is a similar strategy, but instead of moving demand to a different region or time, we shape our demand to match the existing supply.
 
-[![Resource supply and demands over time.](../media/9-demand-shaping-1.svg)](../media/9-demand-shaping-1.svg#lightbox)
+![Resource supply and demands over time.](../media/9-demand-shaping-1.svg)
 
 If the supply of renewable energy is high, increase the demand - do more in your applications - if the supply is low, decrease demand - do less in your applications.
 

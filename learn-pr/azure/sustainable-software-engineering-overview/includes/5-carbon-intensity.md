@@ -12,11 +12,11 @@ Carbon intensity changes by location since some regions have an energy mix conta
 
 Carbon intensity also changes over time due to the variable nature of renewable energy. For example, when it's cloudy or the wind isn't blowing, carbon intensity increases since more of the electricity in your mix comes from sources that emit carbon.
 
-[![Illustration showing carbon intensity in renewable engergy versus fossil fuels.](../media/5-carbon-intensity-1.svg)](../media/5-carbon-intensity-1.svg#lightbox)
+![Illustration showing carbon intensity in renewable engergy versus fossil fuels.](../media/5-carbon-intensity-1.svg)
 
 Electricity demand varies during the day, and that demand needs to be met by supply. Some of that supply can easily control the power it produces; for example, a coal power plant can burn less coal. Some of that supply can't easily control the power it produces; for example, a wind farm can't control how much the wind blows, it can only throw away (curtail) electricity that was made essentially for free.
 
-[![Illustration showing reduced energy demands.](../media/5-carbon-intensity-2.svg)](../media/5-carbon-intensity-2.svg#lightbox)
+![Illustration showing reduced energy demands.](../media/5-carbon-intensity-2.svg)
 
 As a by-product of the way energy markets work as demand for electricity goes down, ordinarily, the high emitting fossil fuel sources of power are scaled back first with renewables scaled back last.
 
@@ -30,7 +30,7 @@ The marginal plant emits carbon, at any moment we have the carbon intensity of t
 
 Fossil fueled power plants rarely scale down to zero, they have a minimum functioning threshold. Some don't scale at all they are considered consistent always-on base load. Because of this, we can sometimes reach the perverse scenario where we throw away (curtail) renewable energy that was created for free to consume energy from fossil fuel power plants made with a fuel that costs money.
 
-[![Illustration showing free renewable engergy.](../media/5-carbon-intensity-3.svg)](../media/5-carbon-intensity-3.svg#lightbox)
+![Illustration showing free renewable engergy.](../media/5-carbon-intensity-3.svg)
 
 If a new load would be met with supply from a renewable source that would otherwise have been curtailed, then marginal carbon intensity will be <nobr>**zero gCO<sub>2</sub>eq/kWh**</nobr>.
 
@@ -46,7 +46,7 @@ Studies such as _[Putting a CO2 figure on a piece of computation](https://ieeexp
 
 Look at your application end-to-end, identify opportunities for being flexible regarding workloads, and use the carbon intensity of electricity to signal when or if to run those workloads.
 
-[![Illustration showing carbon intensity over time.](../media/5-carbon-intensity-4.svg)](../media/5-carbon-intensity-4.svg#lightbox)
+![Illustration showing carbon intensity over time.](../media/5-carbon-intensity-4.svg)
 
 ## Calculating Carbon Intensity
 
