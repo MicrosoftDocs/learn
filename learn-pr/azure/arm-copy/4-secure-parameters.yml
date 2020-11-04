@@ -1,3 +1,4 @@
+### YamlMime:ModuleUnit
 uid: learn.arm-copy.4-secure-parameters
 title: Manage secrets in your ARM template by reading from a KeyVault at deployment time 
 metadata:
