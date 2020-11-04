@@ -15,45 +15,45 @@ quiz:
   questions:
   - content: "What is the most complete definition of blockchain tokens?"
     choices:
-    - content: "They represent currency that can be tradable."
+    - content: "They represent currency that can be traded."
       isCorrect: false
-      explanation: "Tokens are tradable but often represent much more than currency. They can also represent ownership, access, or be traded for a service in return."
-    - content: "They represent digital assets that have some value and are tradable."
+      explanation: "Tokens are traded and often represent much more than currency. They also can represent ownership or access, or be used to redeem a service."
+    - content: "They represent digital assets that have some value and are tradeable."
       isCorrect: true
       explanation: "Correct. Tokens have some value and represent either virtual or real-world, tangible objects."
     - content: "They are physical tokens that can be used to trade on a blockchain network."
       isCorrect: false
-      explanation: "Tokens are digital, however they can represent virtual or physical objects."
+      explanation: "Tokens are digital, but they can represent virtual <i>or</i> physical objects."
     - content: "They are unique assets that identify ownership."
       isCorrect: false
-      explanation: "While tokens can identify ownership, say in the example of property, tokens can also represent many other digital objects."
+      explanation: "Tokens can identify ownership, for example, of houses, cars, or artwork. Tokens can also represent digital objects."
 
   - content: "What type of token is most commonly used solely for nun-fungible assets?"
     choices:
-    - content: "ERC20."
+    - content: "ERC20"
       isCorrect: false
       explanation: "This type of token is used for fungible assets."
-    - content: "ERC777."
+    - content: "ERC777"
       isCorrect: false
-      explanation: "This type of token is for fungible assets."
-    - content: "ERC1155."
+      explanation: "This type of token is used for fungible assets."
+    - content: "ERC1155"
       isCorrect: false
-      explanation: "This type of token is for both fungible and non-fungible assets."
-    - content: "ERC721."
+      explanation: "This type of token is used both for fungible and non-fungible assets."
+    - content: "ERC721"
       isCorrect: true
-      explanation: "Correct. This type of token is solely for non-fungible assets."
+      explanation: "Correct. This type of token is used solely for non-fungible assets."
 
-  - content: "What modular, robust and reusable tool does OpenZeppelin provide to make it easier to write secure code?"
+  - content: "What modular, robust, and reusable tool does OpenZeppelin provide to make it easier to write secure code?"
     choices:
-    - content: "CLI."
+    - content: "CLI"
       isCorrect: false
       explanation: "The CLI, often referred to as the SDK, is used to develop, deploy, and manage smart contract projects."
-    - content: "SDK."
+    - content: "SDK"
       isCorrect: false
-      explanation: "The SDK, is used to develop, deploy, and manage smart contract projects."
-    - content: "Contracts library."
+      explanation: "The SDK is used to develop, deploy, and manage smart contract projects."
+    - content: "Contracts library"
       isCorrect: true
-      explanation: "Correct. The contracts library provides a set of modular and reusable contracts to integrate into new and existing blockchain projects."
-    - content: "Test helpers."
+      explanation: "Correct. The OpenZeppelin contracts library provides a set of modular and reusable contracts to integrate into new and existing blockchain projects."
+    - content: "Test Helpers"
       isCorrect: false
-      explanation: "The test helpers is an assertion library for Ethereum smart contract testing."            
+      explanation: "Test Helpers is an assertion library for Ethereum smart contract testing."            
