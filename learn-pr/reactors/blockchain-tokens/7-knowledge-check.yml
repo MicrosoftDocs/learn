@@ -17,7 +17,7 @@ quiz:
     choices:
     - content: "They represent currency that can be traded."
       isCorrect: false
-      explanation: "Tokens are tradeable, but they often represent much more than currency. They also can represent ownership or access, or they can be traded for a service."
+      explanation: "Tokens are traded, and often represent much more than currency. They also can represent ownership or access, or used to redeem a service."
     - content: "They represent digital assets that have some value and are tradeable."
       isCorrect: true
       explanation: "Correct. Tokens have some value and represent either virtual or real-world, tangible objects."
