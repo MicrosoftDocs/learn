@@ -22,7 +22,7 @@ In the **Q# libraries** dropdown, you find the documentation for all of the Q# l
 ![Screengrab showing Q# libraries API opened to namespaces](../media/3-api-namespaces.png)
 
 > [!NOTE]
-> QUESTION TO REVIEWERS: Should we mention that namespaces don't necessarily correspond directly to library? Or at least specify what namespaces are part of the standard libs?
+> NOTE TO REVIEWER: Should we mention that namespaces don't necessarily correspond directly to library? Or at least specify what namespaces are part of the standard libs?
 
 ### Looking for something in particular?
 

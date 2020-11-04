@@ -17,7 +17,6 @@ Since these can be directly added to your Q# projects, this also allows for the 
 There are four sets of libraries provided as part of the QDK and all are automatically installed with the QDK. 
 
 Firstly, the *Q# standard library* provides much of Q#'s primary functionality and is the focus of this module. 
-
 Then, there are three libraries focused on more domain-specific functionality: 
 - The *quantum chemistry library*, which provides a data model for loading representations of fermionic Hamiltonians (e.g. molecular systems) and casting them to a representation that can be mapped to a quantum computer's physical qubits, as well as operations to reveal system properties and simulate dynamics. 
 - The *quantum machine learning library*, which provides an implementation of an hybrid quantum-classical algorithm that makes use of quantum computing to encode and process the data. 
@@ -35,7 +34,10 @@ Then, there are three libraries focused on more domain-specific functionality:
 The standard library is included in every Q# project by default, but accessing other libraries requires adding their packages to the project.
 Depending on your Q# development setup, the method will vary:
 
-NOTE: following taken from our docs. Has this changed/should we present it differently? E.g. should we more explicitly mention the `.csproj` file for the first option?
+> [!NOTE]
+> NOTE TO REVIEWER: following taken from our docs. 
+> Has this changed/should we present it differently? 
+> E.g. should we more explicitly mention the `.csproj` file for the first option?
 
 ### [Q# applications or .NET interopability](#tab/tabid-csproj)
 
