@@ -1,6 +1,6 @@
 .NET contains built-in types for working with the file system that can be found in the `System.IO` namespace.
 
-Here you'll learn how to use the types in `System.IO` using C# to read the file system to discover files and directories.
+Here you'll learn how to use the types in `System.IO` by using C# to read the file system to discover files and directories.
 
 ## The scenario
 
@@ -62,14 +62,14 @@ foreach (var file in files)
 // stores/sales.json
 ```
 
-## List all content in a directory and all sub-directories
+## List all content in a directory and all subdirectories
 
-Both the `Directory.EnumerateDirectories` and `Directory.EnumerateFiles` functions have an overload that accepts a parameter to specify a search pattern files and/or directories must match.
+Both the `Directory.EnumerateDirectories` and `Directory.EnumerateFiles` functions have an overload that accepts a parameter to specify that search pattern files and directories must match.
 
-They also have another overload that accepts a parameter to indicate whether to recursively traverse a specified folder and all of its sub-folders.
+They also have another overload that accepts a parameter to indicate whether to recursively traverse a specified folder and all of its subfolders.
 
 ```csharp
-// Find all *.txt files in the stores folder and its sub-folders
+// Find all *.txt files in the stores folder and its subfolders
 IEnumerable<string> allFilesInAllFolders = Directory.EnumerateFiles("stores", "*.txt", SearchOption.AllDirectories);
 
 foreach (var file in allFilesInAllFolders)

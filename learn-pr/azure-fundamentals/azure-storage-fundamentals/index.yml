@@ -17,7 +17,8 @@ abstract: |
   - Azure Files
   - Azure Storage tiers 
 prerequisites: | 
-  - You should be familiar with basic computing concepts and terminology
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /learn/achievements/azure-storage-fundamentals.svg
 levels:
 - beginner

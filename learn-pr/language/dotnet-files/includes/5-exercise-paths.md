@@ -49,7 +49,7 @@ In the current Program.cs code, you're passing the static location of the *store
     dotnet run
     ```
 
-  Notice that the path that's now listed for the files is the full system path. This is because the `Directory.GetCurrentDirectory` method returns the full path to the current location.
+  Notice that the path that's now listed for the files is the full system path. This path appears because the `Directory.GetCurrentDirectory` method returns the full path to the current location.
 
 ```bash
 /home/username/dotnet-files/stores/sales.json  
@@ -61,9 +61,9 @@ In the current Program.cs code, you're passing the static location of the *store
 
 ## Find all .json files
 
-Instead of looking for just *sales.json* files, the program needs to search for any file with an extension of .json. To do that, use the `Path.GetExtension` method to check the file name extension.
+Instead of looking for only *sales.json* files, the program needs to search for any file with an extension of .json. To do that, use the `Path.GetExtension` method to check the file name extension.
 
-1. In the `foreach` loop in the `FindFiles` get the extension of each file by using the `Path.GetExtension` method.
+1. In the `foreach` loop in `FindFiles`, get the extension of each file by using the `Path.GetExtension` method.
 
     ```csharp
     foreach (var file in foundFiles)
@@ -112,11 +112,11 @@ Instead of looking for just *sales.json* files, the program needs to search for 
     /home/username/dotnet-files/stores/204/salestotals.json  
     ```
 
-Great job! You've used the `Path` class and the `Directory.GetCurrentDirectory` method to make the program much more robust. In the next section, you'll learn how to create directories and move files between locations.
+Great job! You've used the `Path` class and the `Directory.GetCurrentDirectory` method to make the program much more robust. In the next unit, you'll learn how to create directories and move files between locations.
 
 ### Got stuck?
 
-If you got stuck at any point in this exercise, here's the completed code. Remove everything in *Program.cs* and replace it with this solution.
+If you got stuck at any point in this exercise, here's the completed code. Remove everything in *Program.cs*, and replace it with this solution.
 
 ```csharp
 using System;

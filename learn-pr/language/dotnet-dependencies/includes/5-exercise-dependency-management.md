@@ -23,7 +23,6 @@ Dependencies that you use in your apps can be updated often and may contain new 
 	> Humanizer            2.7.9        2.7.9
 	```
 
-
 1. To see what dependencies are outdated, run this command.
 	
 	```dotnetcli
@@ -50,7 +49,6 @@ Dependencies that you use in your apps can be updated often and may contain new 
 	```dotnetcli
 	dotnet add package Humanizer 
 	```
-
 	Your output should look like this output:
 
 	```output
@@ -63,12 +61,11 @@ Dependencies that you use in your apps can be updated often and may contain new 
 	```dotnetcli
 	dotnet add package Humanizer --version 2.8.26
 	```
-
 	Lastly, you can also install the latest pre-release package by appending on the `--prerelease` parameter.
 
 	```dotnetcli
 	dotnet add package Humanizer --prerelease
 	```
-	Your results might be slightly different. The version listed should correspond to the latest available versions of the package.
+	Your results might be slightly different. The listed version should correspond to the latest available versions of the package.
 
 Congratulations. You've upgraded the dependency in your app. Well done!
