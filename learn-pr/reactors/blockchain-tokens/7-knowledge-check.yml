@@ -26,7 +26,7 @@ quiz:
       explanation: "Tokens are digital, but they can represent virtual <i>or</i> physical objects."
     - content: "They are unique assets that identify ownership."
       isCorrect: false
-      explanation: "Although tokens can identify ownership, for example, of property, tokens can represent many digital objects."
+      explanation: "Tokens can identify ownership, for example, with houses or cars or artwork. Tokens can also represent digital objects as well."
 
   - content: "What type of token is most commonly used solely for nun-fungible assets?"
     choices:
