@@ -12,4 +12,4 @@ Now, you can lead the Contoso IT Team in protecting the company's security envir
 
 --> 
 
-<!-- Jason: Double checking that you don't want any links in the whole module?--> 
+<!-- Jason: Double checking that you don't want any links in the whole module? The summary is a good place to link to further information if you have it. --> 
