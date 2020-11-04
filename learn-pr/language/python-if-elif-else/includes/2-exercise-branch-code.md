@@ -143,7 +143,7 @@ if value == '7':
 elif value == '8':
     print('The value is 8')
 else:
-    print('The value is not one we''re looking for')
+    print('The value is not one we are looking for')
 
 print('Finished!')
 ```
@@ -160,6 +160,7 @@ When you run the code, you'll see the following output:
 
 ```output
 The value is 8
+Finished!
 ```
 
 You can use as many `elif` statements as you need. If you use an `else` statement, it must come after all `elif` statements.

@@ -12,18 +12,3 @@ title: Failover and failback using Azure Site Recovery
 durationInMinutes: 6
 content: |
   [!include[](includes/7-failover-and-failback.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-
-  - content: "Site Recovery is being used to reprotect a failed over VM, which PowerShell command allows you to monitor the progress? "
-    choices:
-    - content: "Get-AzRecoveryServicesAsrFabric"
-      isCorrect: false
-      explanation: "This command gets the details of an Azure Site Recovery Fabric."
-    - content: "Get-AzRecoveryServicesAsrRecoveryPlan"
-      isCorrect: false
-      explanation: "This command gets a recovery plan or all the recovery plans in the Recovery Services vault"
-    - content: "Get-AzRecoveryServicesAsrJob"
-      isCorrect: true
-      explanation: "Gets the details of the specified Site Recovery job or the list of recent Site Recovery jobs in the Recovery Services vault. Specifying the job that started the reprotection will show its status."

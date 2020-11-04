@@ -4,21 +4,21 @@ In this unit, you'll create a storage account and configure a blob container for
 
 ## Create a storage account
 
-Create a storage account with Geo-zone-redundant storage (GZRS).
+Create a storage account with geo-zone-redundant storage (GZRS).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-1. From the menu bar on the top right-hand side, open **Cloud Shell**.
+1. From the menu bar in the upper right, open **Cloud Shell**.
 1. Set the resource group name.
     ```bash
     RESOURCEGROUP=learn-storage-replication-rg
     ```
-1. Run the following command to set the storage account name where you replace "storageaccountname" and the brackets with a unique Storage account name.
+1. Run the following command to set the storage account name where you replace *storageaccountname* and the brackets with a unique Azure Storage account name.
 
     ```Bash
     export AZURE_STORAGE_ACCOUNT=<storageaccountname>
      ```
 
-1. Set the location. Replace the westus2 value with a location near you.
+1. Set the location. Replace the **westus2** value with a location near you.
 
     ```bash
     export LOCATION=westus2
@@ -62,7 +62,7 @@ Create a storage account with Geo-zone-redundant storage (GZRS).
     ```
 
 1. Copy the keys listed.
-1. Set an environment variable to hold your storage key. Replace "account-key" and the brackets with one of your key values.
+1. Set an environment variable to hold your storage key. Replace *account-key* and the brackets with one of your key values.
 
     ```Bash
     export AZURE_STORAGE_KEY="<account-key>"
@@ -72,7 +72,7 @@ Create a storage account with Geo-zone-redundant storage (GZRS).
 
 You need a container to upload blobs to Azure Storage. You use containers to logically group your blobs. A container helps you organize blobs, like a folder organizes files on your computer.
 
-1. Run the following command to set a container name where you replace "blob-container-name" and the brackets with another name.
+1. Run the following command to set a container name where you replace *blob-container-name* and the brackets with another name.
 
     ```Bash
     export BLOB_CONTAINER_NAME=<blob-container-name>
@@ -102,7 +102,7 @@ Your company uploads its music files as blobs in the container. A blob can repre
     cat > song.mp3
     ```
 
-1. An empty file is created that you can write to. Type "This is a song!", press <kbd>ENTER</kbd>, then press <kbd>CTRL+D</kbd>.
+1. An empty file is created that you can write to. Enter **This is a song!**, select <kbd>Enter</kbd>, and then select <kbd>Ctrl+D</kbd>.
 
 1. Run the following command to see the contents of your `song.mp3` file:
 
@@ -110,7 +110,7 @@ Your company uploads its music files as blobs in the container. A blob can repre
     cat song.mp3
     ```
 
-1. You'll see "This is a song!" returned to you in the terminal. You've created a file you can now upload to your storage account.
+1. You'll see **This is a song!** returned to you in the terminal. You've created a file you can now upload to your storage account.
 
 ## Upload your file
 
@@ -133,7 +133,7 @@ Upload the file to your storage account via your container.
     --output table
     ```
 
-1. You'll see details about your file, like its name, blob type and when it was last modified.
+1. You'll see details about your file, like its name, blob type, and when it was last modified.
 
 ## View the replication status
 
@@ -141,10 +141,10 @@ Upload the file to your storage account via your container.
 1. Select or search for **Resource groups**.
 1. Select **learn-storage-replication-rg**.
 1. Select the storage account you created from the list of resources in your resource group.
-1. Under **Settings**, select **Geo-replication**. You see the replication status of your Azure Storage account's primary and secondary regions. If the status shows as "available" for a region, it means your region is responsive.
+1. Under **Settings**, select **Geo-replication**. You see the replication status of your Azure Storage account's primary and secondary regions. If the status shows as **available** for a region, it means your region is responsive.
 
 1. Select **Refresh** to ensure you're seeing the latest status updates.
 
    :::image type="content" source="../media/3-view-replication-status.png" alt-text="Screenshot of the geo-replication map that shows the primary and secondary locations available.":::
 
-It'll takes some time for your data to replicate from the primary to the secondary region.
+It will take some time for your data to replicate from the primary to the secondary region.
