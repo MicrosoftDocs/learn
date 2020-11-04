@@ -61,7 +61,7 @@ The following table lists all the current actions for the Azure Sentinel connect
 | Entities - Get IP s | Returns a list of IPs associated with the alert. |
 | Entities - Get URLs | Returns a list of URLs associated with the alert. |
 | Remove labels from incident | Removes labels to selected incident |
-
+<!-- Remove extra space between "IP" and "s", it should be "IPs" -->
 > [!Note]
 
 > Actions that have **(V2)** or higher number provide new version of the action and may differ from the old functionality of the action.
