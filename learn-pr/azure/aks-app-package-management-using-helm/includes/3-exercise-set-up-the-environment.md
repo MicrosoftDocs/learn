@@ -52,11 +52,12 @@ The script performs the following configuration steps:
 
     Creating the AKS cluster takes a few minutes to complete. While the script is running, continue to the next unit.
 
-    > [!NOTE]
-    > Non-blocking warnings are expected in the deployment process. If an unexpected exception occurs, you can reset any changes made by the script by running the following command:
-    >
-    > ```azurecli
-    > cd ~ && \
-    >   rm -rf ~/clouddrive/mslearn-aks && \
-    >   az group delete --name learn-helm-deploy-aks-rg --yes
-    > ```
+## How to manage an unexpected failure
+
+Non-blocking warnings are expected in the deployment process. If an unexpected exception occurs, you can reset any changes made by the script by running the following command:
+
+```azurecli
+cd ~ && \
+   rm -rf ~/clouddrive/mslearn-aks && \
+   az group delete --name learn-helm-deploy-aks-rg --yes
+```

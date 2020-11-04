@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-endpoints-with-endpoint-manager.7-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 10/23/2020
+  author: Erikre 
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager  
+title: Knowledge check
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How are the settings that you assign to devices and apps contained within Intune?"
+    choices:
+    - content: "Settings are contained as endpoints within Intune."
+      isCorrect: false
+      explanation: "Settings are contained in policies you create and assign to apps and devices. For instance, device policies allow you to restricts, reset, require, configure, protect, control, and retire many of the aspects of the devices at your organization."
+    - content: "Settings are contained in policies that you create."
+      isCorrect: true
+      explanation: "Settings are contained in policies you create and assign to apps and devices. For instance, device policies allow you to restricts, reset, require, configure, protect, control, and retire many of the aspects of the devices at your organization."
+    - content: "Settings are contained in Azure Storage."
+      isCorrect: false
+      explanation: "Settings are contained in policies you create and assign to apps and devices. For instance, device policies allow you to restricts, reset, require, configure, protect, control, and retire many of the aspects of the devices at your organization."
+  - content: "What platforms does Microsoft Endpoint Manager support?"
+    choices:
+    - content: "Microsoft Endpoint Manager supports a number of platforms, including iOS, iPadOS, macOS, Android, and Windows platforms."
+      isCorrect: true
+      explanation: "The available platforms that can be managed by Endpoint Manager include iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types."
+    - content: "Microsoft Endpoint Manager supports a single, universal platform call Azure."
+      isCorrect: false
+      explanation: "The available platforms that can be managed by Endpoint Manager include iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types."
+    - content: "Microsoft Endpoint Manager provides the tools you use to design your own endpoint protection platform."
+      isCorrect: false
+      explanation: "The available platforms that can be managed by Endpoint Manager include iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types."
+  - content: "What are configuration policies versus protection policies?"
+    choices:
+    - content: "Configuration policies are used to set up devices and apps. Protection policies are used to prevent unauthorized access and prevent data leaks."
+      isCorrect: true
+      explanation: "You can control how users share and save data without risking intentional or accidental data leaks. Microsoft Endpoint Manager helps to control who opens or updates protected data, even when the data leaves the company's network."
+    - content: "Configuration policies are used to set up protection policies."
+      isCorrect: false
+      explanation: "Configuration policies are used to set up devices and apps. Protection policies are used to prevent unauthorized access and prevent data leaks."
+    - content: "Protection policies are used to deploy configuration policies."
+      isCorrect: false
+      explanation: "Configuration policies are used to set up devices and apps. Protection policies are used to prevent unauthorized access and prevent data leaks."

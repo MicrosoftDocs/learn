@@ -1,4 +1,4 @@
-In [Deploy consistent infrastructure in Azure by using ARM templates](https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/?azure-portal-true) and [Deploy to multiple Azure environments by using ARM templates](https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse/?azure-portal=true), you learned the basics around creating Azure Resource Manager (ARM) templates.
+In [Deploy consistent infrastructure in Azure by using ARM templates](https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/?azure-portal-true) and [Deploy to multiple Azure environments by using ARM template features](https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse/?azure-portal=true), you learned the basics around creating Azure Resource Manager (ARM) templates.
 
 In this module, you focus on some of the ways you can deploy your templates. You start by deploying a template that's stored on your local computer. Then you deploy a template that's stored on GitHub.
 
