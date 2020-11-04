@@ -29,3 +29,6 @@ quiz:
     - content: "Host name"
       isCorrect: false
       explanation: "An alert is evidence"
+      
+#Jason: Check the final answer choice (host name but the explanation says "alert"). 
+#Jason: Also, if possible, there ought to be two to three questions here (aiming for higher level questions),
