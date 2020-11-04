@@ -35,7 +35,7 @@ Let's create a function app that we'll use throughout this entire module. A func
     | **Function App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
     | **Publish** | _Code_ | Option to publish code files or a Docker container. |
     | **Runtime Stack** | _Node.js_ | The sample code in this module is written in JavaScript. |
-    | **Version** | Defult |
+    | **Version** | Default |
     | **Region** | _Central US_ | Choose the region nearest you. |
 
 1. Select **Review + create** and then **Create** to provision and deploy the function app.
@@ -72,7 +72,7 @@ Let's create a function app that we'll use throughout this entire module. A func
     | **Function App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
     | **Publish** | _Code_ | Option to publish code files or a Docker container. |
     | **Runtime Stack** | _Node.js_ | The sample code in this module is written in JavaScript. |
-    | **Version** | Defult |
+    | **Version** | Default |
     | **Region** | _Central US_ | Choose the region nearest you. |
 
 1. Select **Review + create** and then **Create** to provision and deploy the function app.
@@ -98,13 +98,13 @@ Let's create a function app that we'll use throughout this entire module. A func
 
 Now that we have a function app, it's time to create a function. A function is activated through a trigger. In this module, we'll use an HTTP trigger.
 
-1. Select the **Functions** icon on the left hand menue.  This opens the function creation process.
+1. Select the **Functions** icon on the left hand menu.  This opens the function creation process.
 
 1. Select **+ Add**.
 
 1. In the **New function** step, select **HTTP Trigger**.
 
-1. On the **New Function** screen, you can change the name if you want, but leave the **Authorization level** as _Function_, and then select **Create Fuction**. The Authorization level option determines what kind of key is used to securely access your function. Choosing _Function_ requires callers of your function to provide a function-specific key with their requests.
+1. On the **New Function** screen, you can change the name if you want, but leave the **Authorization level** as _Function_, and then select **Create Function**. The Authorization level option determines what kind of key is used to securely access your function. Choosing _Function_ requires callers of your function to provide a function-specific key with their requests.
 
 1. In your new function, click the **</> Get function URL** link at the top right, select **default (Function key)**, and then select **Copy**.
 
@@ -119,7 +119,7 @@ Now that we have a function app, it's time to create a function. A function is a
 As you can see from this exercise so far, you have to select a trigger type when you create a function. Every function has a single trigger. In this example, we're using an HTTP trigger, which means that our function starts when it receives an HTTP request. The default implementation, shown in the following screenshot in JavaScript, responds with the value of the parameter *name* it received in the query string or body of the request. If no string was provided, the function responds with a message that asks whomever is calling to supply a name value.
 
 >[!TIP]
->You can view the code by clicking on the **Code + Test** on the left hand side of the menues.
+>You can view the code by clicking on the **Code + Test** on the left hand side of the menus.
 
 ![Screenshot of the default JavaScript implementation of an HTTP-triggered Azure function.](../media/3-default-http-trigger-implementation-small.PNG)
 
@@ -159,13 +159,13 @@ As you can see, this function has a trigger binding named **req** of type `httpT
 
 Now that we have a function app, it's time to create a function. A function is activated through a trigger. In this module, we'll use an HTTP trigger.
 
-1. Select the **Functions** icon on the left hand menue.  This opens the function creation process.
+1. Select the **Functions** icon on the left hand menu.  This opens the function creation process.
 
 1. Select **+ Add**.
 
 1. In the **New function** step, select **HTTP Trigger**.
 
-1. On the **New Function** screen, you can change the name if you want, but leave the **Authorization level** as _Function_, and then select **Create Fuction**. The Authorization level option determines what kind of key is used to securely access your function. Choosing _Function_ requires callers of your function to provide a function-specific key with their requests.
+1. On the **New Function** screen, you can change the name if you want, but leave the **Authorization level** as _Function_, and then select **Create Function**. The Authorization level option determines what kind of key is used to securely access your function. Choosing _Function_ requires callers of your function to provide a function-specific key with their requests.
 
 1. In your new function, click the **</> Get function URL** link at the top right, select **default (Function key)**, and then select **Copy**.
 
@@ -183,7 +183,7 @@ As you can see from this exercise so far, you have to select a trigger type when
 
 ![Screenshot of the default PowerShell implementation of an HTTP-triggered Azure function.](../media/3-default-http-trigger-implementation-pwsh.png)
 
-All of this code is in the **Fuctions > Code + Test** file, on the left side menue. 
+All of this code is in the **Functions > Code + Test** file, on the left side menu. 
 
 >[!TIP]
 >You can see the **run.ps1** and **function.json** files by clicking the dropdown menu.
@@ -221,11 +221,11 @@ As you can see, this function has a trigger binding named **Request** of type `h
 
 1. Notice under the function entry there is a set of menu items as shown in the following screenshot.
 
-    :::image type="content" source="../media/3-func-menu-small.png" alt-text="Screen shot of the Overview Menue.  Code + Test, Intergration, Monitor, and Fuction Keys.":::
+    :::image type="content" source="../media/3-func-menu-small.png" alt-text="Screen shot of the Overview Menue.  Code + Test, Integration, Monitor, and Function Keys.":::
 
 1. Select the **Integrate** menu item to open the integration tab for our function. If you've been following along with this unit, the integrate tab should look very similar to the following screenshot.
 
-    :::image type="content" source="../media/3-func-integrate-tab-small.png" alt-text="Screen shot of the integration screen. Trigger and Inputs lead to Fuction and on to Output.":::
+    :::image type="content" source="../media/3-func-integrate-tab-small.png" alt-text="Screen shot of the integration screen. Trigger and Inputs lead to Function and on to Output.":::
 
     > [!NOTE]
     > We have already defined a trigger and an output binding, as shown in the screenshot. You can see that we can't add more than _one_ trigger. In fact, to change the trigger for our function we would have to first delete the trigger and create a new one. However, the **Inputs** and **Outputs** sections of this UI display a plus sign (+) to add more bindings so we can accept more than one input value and emit more than one output value.
