@@ -13,7 +13,7 @@ By the end of this module, you will be able to:
 
 ## Prerequisites
 
-- Blockchain fundamentals
+- [Fundamental knowledge about blockchain](https://docs.microsoft.com/learn/modules/intro-to-blockchain/)
 - Ethereum platform knowledge
 - Solidity programming knowledge
 - Previous experience with a programming language like C, Python, or JavaScript
