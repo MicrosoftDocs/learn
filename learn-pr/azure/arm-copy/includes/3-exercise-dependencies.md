@@ -8,6 +8,6 @@ You're part of a development team at the company Tailwind Traders. You will from
 
 ::: zone pivot="cli"
 
-[!include[](./powershell/3-exercise-dependencies-azcli.md)]
+[!include[](./azcli/3-exercise-dependencies-azcli.md)]
 
 ::: zone-end
