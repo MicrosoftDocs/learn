@@ -25,7 +25,7 @@ contracts               migrations              test                    truffle-
 
 When the project has been created and is open in the editor, take a look around the contents of the project folder.
 
-Next, you'll want to confirm that you have Node.js installed. Open the terminal and run the `node` command. If Node.js is installed, that command returns the version that is installed on your computer. If Node.js isn't installed on your computer, go to [Node](https://nodejs.org/) to learn how to download it for your platform.
+Next, you'll want to confirm that you have Node.js installed. Open the terminal and run the `node` command. If Node.js is installed, that command returns the version that is installed on your computer. If Node.js isn't installed on your computer, go to [Node](https://nodejs.org/?azure-portal=true) to learn how to download it for your platform.
 
 Node.js comes with the node package manager (npm) installed. npm helps you manage other JavaScript-built packages and applications.
 
@@ -36,7 +36,7 @@ Node.js comes with the node package manager (npm) installed. npm helps you manag
 
 ## Set up OpenZeppelin
 
-:::image type="content" source="../media/contract-library.png" alt-text="Visit OpenZeppelin to find out how to install the contracts library":::
+:::image type="content" source="../media/contract-library.png" alt-text="Screenshot of the OpenZeppelin Contracts web page.":::
 
 Next, we want to integrate with the OpenZeppelin contracts library.
 
@@ -56,7 +56,7 @@ Notice that a couple things happened:
 1. A node_modules folder imported all the available contracts from OpenZeppelin, in the subfolder \@openzeppelin/contracts. Inspecting the contents of that folder returns the following output:
 
   ```output
-  $ ls node_modules/@openzeppelin/contracts 
+  $ ls node_modules/@openzeppelin/contracts
   GSN		build		math		presets		utils
   README.md	cryptography	package.json	proxy
   access		introspection	payment		token
