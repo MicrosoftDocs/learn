@@ -20,10 +20,11 @@ By the end of this module, you will be able to:
 
 ## Prerequisites
 
-- An Azure Subscription
-- Local installations of Java JDK, Maven and the Azure CLI
-- Basic familiarity with relational databases and using JPA for persistence
-- Experience writing Spring Apps in Java
-- Basic familiarity with Spring Boot App Lifecycle
-- Experience writing Applications for Azure App Service
-- Basic familiarity with build tools including Maven workflows
+As a Java developer, you're already familiar with Spring applications. As you complete the exercises in this module, you'll use a personal Azure account, you would need to make sure that you have the following items installed:
+>  
+>  | Item | Version |
+>  |---|---|
+>  | **Java JDK** | 1.8 |
+>  | **Maven** | 3.0 or above |
+>  | **Azure CLI** | 2.12 or above |
+>

@@ -2,19 +2,6 @@ Azure gives developers the option to deploy to Azure directly from Eclipse, Inte
 
 In this unit, you'll look at the options for your company to host its apps on Azure App Service. Then you'll see how to add and configure the `azure-webapp-maven-plugin` to your Maven project.
 
-## Maven workflows
-
-Maven has three built-in lifecycles for building projects: `default`, `clean`, and `site`, where the `default` lifecycle includes the following phases:
-
-| Phase | Description |
-|---|---
-| `compile` | Compiles your code |
-| `package` | Packages your code into a JAR or WAR |
-| `install` | Installs the package into your local repository |
-| `deploy` | Copies the final package into your remote repository |
-
-However, when you're using the Maven Plugin for Azure App Service, you won't use the deploy phase that is included with Maven's `default` lifecycle. Instead, you'll deploy your app to Azure with the `mvn azure-webapp:deploy` command.
-
 ## Adding the Maven Plugin for Azure App Service to your project
 
 To add the Maven Plugin for Azure App Service to your web app, you need to add a dependency for `azure-webapp-maven-plugin` to your project's `pom.xml` file.
@@ -40,99 +27,9 @@ mvn azure-webapp:config
 
 The plugin will prompt you for the information that is required to configure the App Service plan. After you've confirmed your choices, the plugin adds the requisite settings to your project's `pom.xml` file that configure your web app to run in Azure App Service.
 
-### Configuration options
+### Deployment
 
-The preceding section of this unit demonstrated using the Maven Plugin for Azure App Service interactively to configure your web app. However, you don't need to run the configuration interactively. If you wish, you can add the plugin's XML to your project's `pom.xml` file manually.
-
-The following annotated excerpt from a `pom.xml` file demonstrates some of the settings that are required:
-
-```xml
-<plugin>
-    <groupId>com.microsoft.azure</groupId>
-    <artifactId>azure-webapp-maven-plugin</artifactId>
-    <version>1.9.0</version>
-    <configuration>
-        <schemaVersion>v2</schemaVersion>
-        <resourceGroup>${RESOURCEGROUP_NAME}</resourceGroup>
-        <appName>${WEBAPP_NAME}</appName>
-        <region>${REGION}</region>
-        <pricingTier>P1V2</pricingTier>
-
-        <!-- Reference <serverId> in Maven's settings.xml to authenticate with Azure -->
-        <!-- You don't need to authenticate when running Maven in the Cloud Shell -->
-        <authentication>
-          <serverId>${AZURE_AUTH}</serverId>
-        </authentication>
-
-        <!-- Choose OS either linux, windows, or docker -->
-        <!-- Choose your java version on webserver version -->
-        <runtime>
-            <os>linux</os>
-            <javaVersion>java11</javaVersion>
-            <webContainer>TOMCAT 9.0</webContainer>
-        </runtime>
-
-        <!-- App specific settings -->
-        <appSettings>
-            <property>
-            <!-- Tell Azure which port you want to use, required for springboot jar applications -->
-              <name>PORT</name>
-              <value>8081</value>
-            </property>
-            <!-- JVM OPTIONS -->
-            <property>
-              <name>JAVA_OPTS</name>
-              <value>-Xmx512m -Xms512m</value>
-            </property>
-        </appSettings>
-
-        <!-- Specify the location of the WAR file to deploy -->
-        <deployment>
-            <resources>
-                <resource>
-                    <directory>${project.basedir}/target</directory>
-                    <includes>
-                        <include>*.war</include>
-                    </includes>
-                </resource>
-            </resources>
-        </deployment>
-  
-        <!-- Deployment Slot settings -->
-        <deploymentSlotSetting>
-            <name>${SLOT_NAME}</name>
-            <configurationSource>parent</configurationSource>
-        </deploymentSlotSetting>
-    </configuration>
-</plugin>
-```
-
-Some of the relevant configuration options are in the table below. For a full list of options, see the Maven Plugin for Azure App Service documentation.
-
-| Tag | Options |
-|---------|---------|
-| `<javaVersion>` | For Linux, versions 8 and 11 are supported<br/>For Windows, version 1.7 up to 11 are supported |
-| `<webContainer>` | For Linux, Tomcat, Wildfly, and Java SE are supported<br/>For Windows, Tomcat and Jetty are supported |
-| `<resource>` | Specifies where the WAR or JAR is located in the project |
-| `<authentication>` | Specifies the authentication method to use – three different methods are supported |
-| `<appSettings>` | Specifies settings for Spring Boot apps |
-| `<deploymentSlotSetting>` | Specifies an existing deployment slot |
-| `<allowTelemetry>` | Specifies whether to allow the plugin to send telemetry data to Microsoft – this option is enabled by default |
-| `<stopAppDuringDeployment>` | Allows you to stop the target web app, which may prevent deployment failures on Windows with IIS locking files |
-
-### Deployment options
-
-If you've already created an App Service plan, you can specify the settings for that plan in your `pom.xml` file. When you deploy your web app to Azure, Maven will use those settings to deploy your new app to the existing App Service plan.
-
-```xml
-<!-- Deploy Web App to the existing App Service Plan -->
-<appServicePlanResourceGroup>${PLAN_RESOURCEGROUP_NAME}</appServicePlanResourceGroup>
-<appServicePlanName>${PLAN_NAME}</appServicePlanName>
-```
-
-Another option is to allow the `azure-webapp-maven-plugin` to create the App Service plan for you when you configure the plugin setup interactively. This option is the default behavior of the plugin if you don't specify an existing App Service plan in your `pom.xml` file.
-
-Whether you choose to create the App Service plan interactively or manually, you use the same Maven command to deploy your application code to Azure.
+Maven will create the App Service plan interactively, you use the same Maven command to deploy your application code to Azure.
 
 ```bash
 mvn package azure-webapp:deploy

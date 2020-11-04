@@ -1,3 +1,5 @@
+In this unit, you'll create a basic Spring Boot app by using the Azure CLI and an IDE of your choice to edit the code. You'll use a terminal of your choice to run the code.
+
 # Prepare the working environment
 
 First, set up some environment variables by using the following commands:

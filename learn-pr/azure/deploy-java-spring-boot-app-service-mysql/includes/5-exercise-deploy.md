@@ -34,25 +34,9 @@ mvn com.microsoft.azure:azure-webapp-maven-plugin:1.11.0:config
     [INFO] ------------------------------------------------------------------------
     ```
 
-You can modify the configurations for App Service directly in your `pom.xml` if needed. Some common ones are listed below:
-
-Property | Required | Description | Version
----|---|---|---
-`<schemaVersion>` | false | Specify the version of the configuration schema. Supported values are: `v1`, `v2`. | 1.5.2
-`<subscriptionId>` | false | Specify the subscription id. | 0.1.0+
-`<resourceGroup>` | true | Azure Resource Group for your Web App. | 0.1.0+
-`<appName>` | true | The name of your Web App. | 0.1.0+
-`<region>` | true | Specifies the region where your Web App will be hosted; the default value is **westeurope**. All valid regions at [Supported Regions](/java/api/overview/azure/maven/azure-webapp-maven-plugin/readme) section. | 0.1.0+
-`<pricingTier>` | false | The pricing tier for your Web App. The default value is **P1V2**.| 0.1.0+
-`<runtime>` | true | The runtime environment configuration, you could see the detail [here](/java/api/overview/azure/maven/azure-webapp-maven-plugin/readme). | 0.1.0+
-`<deployment>` | true | The deployment configuration, you could see the details [here](/java/api/overview/azure/maven/azure-webapp-maven-plugin/readme). | 0.1.0+
-
-Be careful about the values of `<appName>` and `<resourceGroup>`(`helloworld-1590394316693` and `helloworld-1590394316693-rg` accordingly in the demo), they will be used later.
-
 ## Deploy the app
 
-The maven plugin will copy your App's Spring Boot Library to your hosted Azure App Service's file system and then deploy it to the App Service's embedded web server.
-Once it has moved the files and configuration over it will also attempt to restart the App Service.
+The maven deploy plugin will copy your executable JAR to the "webapps" folder of your Azure App Service and then start it via your Spring Boot's embedded server.
 
 Deploy your Spring Boot app to Azure using the following command.
 
