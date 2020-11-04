@@ -2,7 +2,7 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 
 ## Get the database connection string
 
-1. In Visual Studio Code, to open the Command Palette,, press <kbd>F1</kbd>.
+1. In Visual Studio Code, to open the Command Palette, press <kbd>F1</kbd>.
 
 1. Enter "connection string".
 

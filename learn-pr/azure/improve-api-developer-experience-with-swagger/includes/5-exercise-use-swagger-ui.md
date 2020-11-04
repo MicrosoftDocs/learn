@@ -11,13 +11,13 @@ In this exercise, you'll enrich the documentation a developer sees about your AP
 
 #### Add XML comments to your API
 
-1. Navigate to the project folder in the Cloud Shell.
+1. In the Cloud Shell, navigate to the project folder.
 
     ```bash
     cd ~/code/PrintFramerAPI
     ```
 
-1. Open the Cloud Shell editor for the project by running the following command.
+1. To open the Cloud Shell editor for the project, run the following command.
 
     ```bash
     code .
@@ -39,7 +39,7 @@ In this exercise, you'll enrich the documentation a developer sees about your AP
     using System.IO;
     ```
 
-1. In **Startup.cs**, update the call to the `AddSwaggerGen()` in `ConfigureServices` to tell Swashbuckle to use XML documentation.
+1. In **Startup.cs**, to tell Swashbuckle to use XML documentation, update the call to the `AddSwaggerGen()` in `ConfigureServices`.
 
    ```csharp
    public void ConfigureServices(IServiceCollection services)
