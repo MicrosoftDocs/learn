@@ -4,7 +4,7 @@ In this module, you learned to use Azure Sentinel to detect and investigate issu
 
 <!-- Jason: Conclusion format ought to be (1) Problem, (2) Learned, (3) Solution/Product. Maybe something like this?...
 
-"Contoso needs to manage and mitigate security threats within the environment, so you need to assist them in this goal as lead system engineer. (Problem)
+"Contoso needs to manage and mitigate security threats within the environment. As lead system engineer, you're tasked with meeting this goal. (Problem)
 
 In this module, you learned about using Azure Sentinel to detect and investigate issues in an enviroment. You practiced using rules and alerts to investigate and identify sign in anomalies for the company's Azure Active Directory resources. (Learned)
 
@@ -15,4 +15,4 @@ If you prefer, Sang has another format for a conclusion that she just added to t
 I think the first format is most logical with this content, but up to you. 
 --> 
 
-<!-- Jason: Double checking that you don't want any links in the whole module? The summary is a good place to link to further information if you have it. --> 
+<!-- Jason: Double checking that you don't want any links in the whole module? This summary would be a good place to link to further information if you have it. --> 
