@@ -2,7 +2,7 @@ The Analytics section in Azure Sentinel contains rule templates that are preload
 
 ## Exploring the existing rule templates
 
-You can use some of the existing rule templates to create a single rule and others to create multiple rules with different customization options. Templates that are in use display the **IN USE** label on the template page as displayed in the following screenshot. <!-- Marjan, screenshot is missing. Please provide one.>
+You can use some of the existing rule templates to create a single rule and others to create multiple rules with different customization options. Templates that are in use display the **IN USE** label on the template page as displayed in the following screenshot. <!-- Marjan, screenshot is missing. Please provide one.-->
 By selecting one of the rules on the **Rule Template** tab, you can observe the properties of the rule. For each rule, you can view:
 
 - Severity level. This indicates the importance of the alert. There are four severity levels:
