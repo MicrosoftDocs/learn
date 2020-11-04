@@ -11,7 +11,7 @@ To use Azure Machine Learning, you create a *workspace* in your Azure subscripti
 
 If you don't already have one, follow these steps to create a workspace:
 
-1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using the Microsoft credentials associated woth your Azure subscription.
+1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using the Microsoft credentials associated with your Azure subscription.
 2. Select **&#65291;Create a resource**, search for *Machine Learning*, and create a new **Machine Learning** resource the following settings:
     - **Workspace Name**: *A unique name of your choice*
     - **Subscription**: *Your Azure subscription*
