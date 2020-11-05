@@ -62,9 +62,10 @@ The queries are written using the Kusto query language (KQL)
 
 The following query retrieves all records from the  **Event**  table:
 
-Kusto
+'''Kusto
 
 Event
+'''
 
 You can use the pipe (|) character to separate commands. Then the output of the first command is the input of the next command. You can add any number of commands to a single query. The following query retrieves the records from the  **Event**  table, and then searches them for the term  **error**  in any property:
 
