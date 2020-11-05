@@ -1,9 +1,13 @@
-In this exercise, you'll set up a preconfigured environment with a load balancer and create charts to monitor the health of the load balancer.
+In this exercise, you'll set up:
+
+- Azure Sentinel
+- Virtual Machine
+- Virtual Network
+- Storage Account
 
 This exercise is optional. To complete it, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 ## Deploy Azure Sentinel
-**Exercise 1**
 
 **Task 1: Deploy Azure Sentinel**
 
