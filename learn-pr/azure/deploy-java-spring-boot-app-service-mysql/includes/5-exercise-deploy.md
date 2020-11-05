@@ -69,7 +69,7 @@ Here's a screenshot of the application deployed to the Azure app service:
 Once deployment has completed, your application will be ready at `http://<appName>.azurewebsites.net/`(`http://demo-1604579125693.azurewebsites.net` in the demo).
 To test the application, you can use cURL.
 
-First, create a new "todo" item in the database using the following command:
+As we have redeployed our application, we cleared the database and now need to create a new "todo" item in the database using the following command:
 
 ```bash
 curl --header "Content-Type: application/json" \
