@@ -6,8 +6,6 @@ public class Program
     #region snippet_CreateHostBuilder
     private static IHostBuilder CreateHostBuilder(string[] args) =>
         Host.CreateDefaultBuilder(args)
-            .ConfigureWebHostDefaults(webBuilder => webBuilder.UseStartup<Startup>())
-            .UseContentRoot(Directory.GetCurrentDirectory())
             .ConfigureAppConfiguration((_, configBuilder) =>
             {
                 var settings = configBuilder.Build();
@@ -33,5 +31,7 @@ public class Program
                     .WriteTo.Seq("http://seq")
                     .ReadFrom.Configuration(builderContext.Configuration)
                     .WriteTo.Console();
-            });
+            })
+            .ConfigureWebHostDefaults(webBuilder => webBuilder.UseStartup<Startup>())
+            .UseContentRoot(Directory.GetCurrentDirectory());
 }
