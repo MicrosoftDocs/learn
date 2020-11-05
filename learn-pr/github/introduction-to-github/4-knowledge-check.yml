@@ -48,14 +48,14 @@ quiz:
     - content: "The `main` branch is often treated differently by a project, and committing to it can create side effects, such as builds and deployments."
       isCorrect: false
       explanation: "The default etiquette for GitHub projects is to offer changes via pull request. This allows project owners to properly manage propagation of those changes to the correct branch if and when necessary in order to avoid conflicts, unnecessary resource usage, and more."
-  - content: "Suppose you'd like to work with a project on Github but you don't have write access to the project. What can you do to contribute?"
+  - content: "Suppose you'd like to work with a project on GitHub but you don't have write access to the project. What can you do to contribute?"
     choices:
-    - content: "Fork the project's repository to your Github account, clone the forked repository to your local machine, push changes to your repository, and submit a pull request to the target (upstream) repository."
+    - content: "Fork the project's repository to your GitHub account, clone the forked repository to your local machine, push changes to your repository, and submit a pull request to the target (upstream) repository."
       isCorrect: true
-      explanation: "Github provides forking functionality designed to allow you to work with projects where you aren't an owner or don't have write access. Forking makes a remote copy of the project in your repository that you can then clone locally. To submit updates to the target repository (upstream repository) you can submit a pull request."
+      explanation: "GitHub provides forking functionality designed to allow you to work with projects where you aren't an owner or don't have write access. Forking makes a remote copy of the project in your repository that you can then clone locally. To submit updates to the target repository (upstream repository) you can submit a pull request."
     - content: "Clone the project to your local machine and push updates directly to the project repository."
       isCorrect: false
       explanation: "You can't push updates to a repository unless you are the owner or have write access."
     - content: "Use git commands to make a copy of the project so that you can work locally. Submit and issue to get your changes into the target repository."
       isCorrect: false
-      explanation: "Although you can clone the target repository to your local machine, you won't be able to push any changes back to it without write access. That's why Github provides forking functionality. Although you could submit an issue to the project's repository, using Github's fork workflow provides a much better way to contribute to a project."
+      explanation: "Although you can clone the target repository to your local machine, you won't be able to push any changes back to it without write access. That's why GitHub provides forking functionality. Although you could submit an issue to the project's repository, using GitHub's fork workflow provides a much better way to contribute to a project."

@@ -85,7 +85,7 @@ var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRe
 
 ```csharp
 // uncomment this line to change the voice used for synthesis
-// config.Speech = "en-CA-Linda";
+// config.SpeechSynthesisVoiceName = "en-CA-Linda";
 
 // Creates a speech synthesizer using the default speaker as audio output.
 using (var synthesizer = new SpeechSynthesizer(config))
@@ -146,7 +146,7 @@ using (var synthesizer = new SpeechSynthesizer(config))
                 var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
 
                 // uncomment this line to change the voice used for synthesis
-                // config.Speech = "en-CA-Linda";
+                // config.SpeechSynthesisVoiceName = "en-CA-Linda";
 
                 // Creates a speech synthesizer using the default speaker as audio output.
                 using (var synthesizer = new SpeechSynthesizer(config))
@@ -187,9 +187,9 @@ using (var synthesizer = new SpeechSynthesizer(config))
                 }
             }
 
-            static void Main()
+            static async Task Main()
             {
-                SynthesisToSpeakerAsync().Wait();
+                await SynthesisToSpeakerAsync();
             }
         }
     }
