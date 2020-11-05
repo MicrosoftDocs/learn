@@ -37,14 +37,11 @@ In this task, you will deploy Azure Sentinel connector to Azure Activity.
 
     | Name  | Type  | Description |
     |---|---|---|
-    | ** *yourname*-sentinel** | Log Analytics Workspace | Log Analytics workspace used by Azure Sentinel |
-    | **retailapplb** | Load balancer | Load balancer for the app running on the VMs. The back-end pool in the load balancer references the *retailappvm1* and *retailappvm2* virtual machines. |
+    | ***yourname*-sentinel** | Log Analytics Workspace | Log Analytics workspace used by Azure Sentinel |
+    | **SecurityInsights(*yourname*-sentinel** | Solution | Security insights for Azure Sentinel |
+    | **simple-vm**| Virtual machine | Virtual machine used in the demonstration |
     | **simple-vmNetworkInterface** | Network interface | Network interface for the  VM. |
-    | **retailappnicvm1nsg**, and **retailappnicvm2nsg** | Network security group (NSG) | NSGs that control the traffic entering each VM. |
-    | **retailappnsg** | Network security group | Acts as an initial filter for both virtual machines, but the NSG for each virtual machine provides the ability to filter traffic on a per-machine basis. |
-    | **retailappip** | Public IP address | Public IP address that provides front-end access to the load balancer. |
-    | **retailappvm1** and **retailappvm2** | Virtual machine | VMs running the retail application. |
-    | **retailappvmjumpbox** | Virtual machine | VM that is also in the virtual network but has a public IP address. An administrator can sign in to this virtual machine to access the *retailappvm1* and *retailappvm2* VMs, which only have private IP addresses. |
+    | **st1*xxxxx*** | Storage account | Storage account used by the virtual machine. |
     | **vnet1** | Virtual network | Virtual network for the VM. |
 
 
