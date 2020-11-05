@@ -31,9 +31,9 @@ To run the notebook used in this exercise, you will need a compute instance in y
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Compute** page for your workspace (under **Manage**).
 2. On the **Compute Instances** tab, if you already have a compute instance, start it; otherwise create a new compute instance with the following settings:
-    - **Compute name**: *enter a unique name*
     - **Virtual Machine type**: CPU
     - **Virtual Machine size**: Standard_DS11_v2
+    - **Compute name**: *enter a unique name*
 3. Wait for the compute instance to start (this may take a minute or so)
 
 ### Clone the **ml-basics** repository
@@ -60,7 +60,7 @@ The files used in this module (and other related modules) are published in the *
 After you've created a Jupyter environment and cloned the **ml-basics** repository, you're ready to explore classification.
 
  1. In Jupyter, open the **Classification.ipynb** notebook in the **ml-basics** folder and follow the instructions it contains.
- 2. When you've finished, close and halt the notebook.
+ 2. When you've finished, close and halt all notebooks.
 
 ## Clean-up
 

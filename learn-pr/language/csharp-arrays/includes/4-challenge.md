@@ -21,11 +21,11 @@ C235
 B179
 ```
 
-### Step 2 - Iterate through each element of the array.
+### Step 3 - Iterate through each element of the array.
 
 Use a `foreach` statement to iterate through each element of the array you just declared and initialized.
 
-### Step 3 - If the fake Order ID starts with "B", the print the Order ID to the output.
+### Step 4 - If the fake Order ID starts with "B", then print the Order ID to the output.
 
 Evaluate each element of the array.  Identify and print to output the potentially fraudulent Order IDs looking for those orders that start with the letter "B".  The output should match the following output:
 
