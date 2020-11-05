@@ -17,7 +17,7 @@ In this unit, you create an instance of a digital twins resource, and collect th
 
 1. For **Resource name**, enter a friendly name, say "digital-twins-instance".
 
-    [![Screenshot showing the completed Create Resource pane for a digital twins instance](../media/adt-create-digital-twins-instance.png)](../media/adt-create-digital-twins-instance.png#lightbox)
+    [![Screenshot showing the completed Create Resource pane for a digital twins instance](media/adt-create-digital-twins-instance.png)](media/adt-create-digital-twins-instance.png#lightbox)
 
 1. Click **Review + create**. Then click **Create**. 
 
@@ -46,8 +46,9 @@ The next step is to save some important data, used to connect other resources to
 
 1. If you click on **Role assignments**, you should see your name with the **Owner** role. This is _not_ the role that you need to access the resource. The role you need is **Azure Digital Twins Owner (Preview)**.
 
-    > [!Note] If you get the following warning message, ignore it, you don't need to see other role assignments.
-    [![Screenshot showing a permissions warning message](../media/adt-aad-permission-error.png)](../media/adt-aad-permission-error.png#lightbox)
+> [!Note] If you get the following warning message, ignore it, you don't need to see other role assignments.
+
+[![Screenshot showing a permissions warning message](media/adt-aad-permission-error.png)](media/adt-aad-permission-error.png#lightbox)
 
 
 1. Click **+ Add**, then select **Add role assignment**.
@@ -63,7 +64,7 @@ The next step is to save some important data, used to connect other resources to
 1. Click **Save**. After a few seconds, you should see your details added to the role assignments, but now with the correct role.
 
 
-    [![Screenshot showing the correct role assignments for a digital twins instance](../media/adt-create-role-assignment.png)](../media/adt-create-role-assignment.png#lightbox)
+    [![Screenshot showing the correct role assignments for a digital twins instance](media/adt-create-role-assignment.png)](media/adt-create-role-assignment.png#lightbox)
 
 
 ## Register a new client app
@@ -89,11 +90,11 @@ The next step is to create an app registration with Azure Active Directory. This
 
 1. Open an Azure Cloud Shell screen, by selecting the icon top right of your Azure portal.
 
-    [![Screenshot showing the Azure Cloud Shell icon](../media/adt-cloud-shell-icon.png)](../media/adt-cloud-shell-icon.png#lightbox)
+    [![Screenshot showing the Azure Cloud Shell icon](media/adt-cloud-shell-icon.png)](media/adt-cloud-shell-icon.png#lightbox)
 
 1. Select the Upload/Download icon for the Azure Cloud Shell, and click **Upload**.
 
-    [![Screenshot showing the Azure Cloud Shell upload icon](../media/adt-cloud-shell-upload-icon.png)](../media/adt-cloud-shell-upload-icon.png#lightbox)
+    [![Screenshot showing the Azure Cloud Shell upload icon](media/adt-cloud-shell-upload-icon.png)](media/adt-cloud-shell-upload-icon.png#lightbox)
 
 1. Navigate to the **manifest.json** file you created, and click **Open**.
 
@@ -107,7 +108,7 @@ The next step is to create an app registration with Azure Active Directory. This
 
 1. Find **Manifest** in the left menu of the **Overview** page, and check that the **requiredResourceAccess** entry matches the manifest file you created earlier.
 
-    [![Screenshot showing the manifest file for the chocolate-app](../media/adt-chocolate-app-manifest.png)](../media/adt-chocolate-app-manifest.png#lightbox)
+    [![Screenshot showing the manifest file for the chocolate-app](media/adt-chocolate-app-manifest.png)](media/adt-chocolate-app-manifest.png#lightbox)
 
 If the manifest file looks correct, this is good progress.
 
@@ -129,10 +130,8 @@ The two important pieces of information for your app are the **Application (clie
 
 1. Locate these two values, which are near the top of the **Overview** page for the app.
 
-    [![Screenshot showing the client and tenant IDs for the chocolate-app](../media/adt-chocolate-app-ids.png)](../media/adt-chocolate-app-ids.png#lightbox)
+    [![Screenshot showing the client and tenant IDs for the chocolate-app](media/adt-chocolate-app-ids.png)](media/adt-chocolate-app-ids.png#lightbox)
 
 1. Hover your mouse over each one in turn, select the copy icon, and paste the ID into your text file. Adding a note that one is the "client ID", and the other the "tenant ID".
 
 Great work. You have completed the bulk of the setup for this module. Let's change pace for a bit, and go over the format and purpose of the digital twin models.
-
-

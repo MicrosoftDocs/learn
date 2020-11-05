@@ -61,7 +61,7 @@ ADT will emit the following events (notifications and telemetry messages) and th
 - Digital Twin Relationship Change Notification
 - Digital Twin Telemetry Messages 
 
-[![Table showing the notification type, routing source name, and generated from descriptions](../media/event-flow.png)](../media/event-flow.png#lightbox)
+[![Table showing the notification type, routing source name, and generated from descriptions](media/event-flow.png)](media/event-flow.png#lightbox)
 
 The table shows the different notification types from [this doc article](https://docs.microsoft.com/azure/digital-twins/how-to-interpret-event-data).
 
@@ -73,7 +73,7 @@ To define an event route, developers first must define _endpoints_. An endpoint 
 - EventHub 
 - ServiceBus 
 
-[![The diagram illustrates the flow of event data through a larger IoT solution with an Azure Digital Twins aspect](../media/adt-event-stream.png)](../media/adt-event-stream.png#lightbox)
+[![The diagram illustrates the flow of event data through a larger IoT solution with an Azure Digital Twins aspect](media/adt-event-stream.png)](media/adt-event-stream.png#lightbox)
 
 ### Routes
 
@@ -101,7 +101,7 @@ Suppose you work at a Chocolate Manufacturing Factory as Technical Specialist to
 
 Also, you may need to gather historical data that can be used for postmortem root-cause analysis when all operations fail, correct the problem and set up a better notification system for these incidents.
 
-[![The main Chocolate Manufacturing Processes in scope: Roasting, Grinding and Molding](../media/chocolate-processes.png)](../media/chocolate-processes.png#lightbox)
+[![The main Chocolate Manufacturing Processes in scope: Roasting, Grinding and Molding](media/chocolate-processes.png)](media/chocolate-processes.png#lightbox)
 
 ## What you will do in this module
 
@@ -123,4 +123,4 @@ This module and the following units assumes you already have an Azure Digital Tw
 
 This pattern relies on the twin updates, rather than forwarding telemetry from an IoT device, which gives you the flexibility to change the underlying data source without needing to update your Time Series Insights logic.
 
-[![A diagram of the high-level architecture](../media/architecture.png)](../media/architecture.png#lightbox)
+[![A diagram of the high-level architecture](media/architecture.png)](media/architecture.png#lightbox)

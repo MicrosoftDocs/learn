@@ -6,11 +6,11 @@ In the Azure portal, begin creating a Time Series Insights resource.
 1. Select the **PAYG(Previe**w) pricing tier.
 1. You will need to choose a **time series ID** for this environment. Your time series ID can be up to three values that you will use to search for your data in Time Series Insights. For this tutorial, you can use `$dtId`. Read more about selecting an ID value in [Best practices for choosing a Time Series ID](https://docs.microsoft.com/azure/time-series-insights/how-to-select-tsid).
 
-    [![Screenshot showing the first steps in creating time series insights](media/adt-create-time-series-insights.png)](../media/adt-create-time-series-insights.png#lightbox)
+    [![Screenshot showing the first steps in creating time series insights](media/adt-create-time-series-insights.png)](media/adt-create-time-series-insights.png#lightbox)
 
 1. Select **Next: Event Source** and select your Event Hubs information from above. You will also need to create a new Event Hubs consumer group.
 
-    [![Screenshot showing the first steps in creating time series insights-2](media/adt-create-time-series-insights-2.png)](../media/adt-create-time-series-insights-2.png#lightbox)
+    [![Screenshot showing the first steps in creating time series insights-2](media/adt-create-time-series-insights-2.png)](media/adt-create-time-series-insights-2.png#lightbox)
 
 ## Begin sending IoT data to Azure Digital Twins
 
