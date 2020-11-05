@@ -282,7 +282,7 @@ Finally, halt the application and start it again using the following command:
 The Spring Boot Application should start and connect to your database.
 Here's a screenshot of the application connecting to the database:
 
-![The running application.](../media/3-spring-boot-02.png)
+![The running application connecting to database.](../media/3-spring-boot-02.png)
 
 ## Test the application
 
