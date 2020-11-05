@@ -1,6 +1,6 @@
 Here, we discuss the key GitHub features you use on a daily basis to manage and contribute to software projects. 
 
-## The GitHub Flow
+## The GitHub flow
 
 In addition to providing a platform for collaborative software development, GitHub also offers a workflow designed to optimize use of its various features. While this unit offers a cursory overview of important platform components, it's recommended that you first review [Understanding the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true).
 
@@ -82,7 +82,7 @@ Examples of Labels include:
 - enhancement
 - question
 
-:::image type="content" source="../media/2-labels.png" alt-text="GitHub labels can be used to categorize your Github repository issues and pull requests." border="true":::
+:::image type="content" source="../media/2-labels.png" alt-text="GitHub labels can be used to categorize your GitHub repository issues and pull requests." border="true":::
 
 To learn more about GitHub labels see [About labels](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/about-labels?azure-portal=true).
 
@@ -102,22 +102,22 @@ GitHub Actions are composed of the following components:
 
 To learn more about GitHub actions see [Introduction to GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions?azure-portal=true).
 
-## Cloning and Forking
+## Cloning and forking
 
 GitHub provides multiple ways to copy a repository so that you can work on it.
 
-1. **Cloning a Repository** - Cloning a repository will make a copy of the repository and its history on your local machine. If you have write access to the repository you can push changes from your local machine to the remote repository (called the **origin**) as they're completed. To clone a repository you can use the [`git clone [url]`](https://docs.github.com/en/free-pro-team@latest/github/using-git/getting-changes-from-a-remote-repository?azure-portal=true#cloning-a-repository) command or the GitHub CLI's [`gh repo clone [url]`](https://cli.github.com/manual/gh_repo_clone?azure-portal=true) command.
-1. **Forking a Repository** - **Forking** a repository makes a copy of the repository in your GitHub account. The parent repository is referred to as the **upstream** while your forked copy is referred to as the **origin**. Once you've forked a repository into your GitHub account you can **clone** it to your local machine. Forking allows you to freely make changes to a project without affecting the original **upstream** repository. To contribute changes back to the **upstream** repository you create a **pull request** from your forked repository. You can also run `git` commands to ensure that your local copy stays synced with the **upstream** repository.
+- **Cloning a Repository** - Cloning a repository will make a copy of the repository and its history on your local machine. If you have write access to the repository you can push changes from your local machine to the remote repository (called the **origin**) as they're completed. To clone a repository you can use the [`git clone [url]`](https://docs.github.com/en/free-pro-team@latest/github/using-git/getting-changes-from-a-remote-repository?azure-portal=true#cloning-a-repository) command or the GitHub CLI's [`gh repo clone [url]`](https://cli.github.com/manual/gh_repo_clone?azure-portal=true) command.
+- **Forking a Repository** - **Forking** a repository makes a copy of the repository in your GitHub account. The parent repository is referred to as the **upstream** while your forked copy is referred to as the **origin**. Once you've forked a repository into your GitHub account you can **clone** it to your local machine. Forking allows you to freely make changes to a project without affecting the original **upstream** repository. To contribute changes back to the **upstream** repository you create a **pull request** from your forked repository. You can also run `git` commands to ensure that your local copy stays synced with the **upstream** repository.
 
 When would you clone a repository versus fork a repository? If you're working with a repository and have write access you can clone it to your local machine. From there you can make modifications and push your changes directly to the **origin** repository.
 
 If you need to work with a repository created by another owner such as `github/example` and don't have write access, you can fork the repository into your GitHub account, and then clone the fork to your local machine. To see this visually, let's assume that your GitHub account is called `githubtraining` for this example. Using the GitHub website you can fork `githubtraining` into your account. From there you can clone the forked version of the repository to your local machine. These steps are shown in the following image.
 
-:::image type="content" source="../media/2-fork-clone.png" alt-text="Forking a repository creates a copy of it in your Github account. You can then clone your forked copy of the repository to your local machine." border="false":::
+:::image type="content" source="../media/2-fork-clone.png" alt-text="Forking a repository creates a copy of it in your GitHub account. You can then clone your forked copy of the repository to your local machine." border="false":::
 
 Changes can be made to your local copy of `githubtraining/example` and then pushed back to your remote **origin** repository (`githubtraining/example`). The changes can then be submitted to the `github/example` **upstream** repository using a **pull request** as shown next.
 
-:::image type="content" source="../media/2-fork-pr.png" alt-text="Local changes can be pushed to the origin repository and a pull request can then be created to get the changes into the upstream repository." border="false":::
+:::image type="content" source="../media/2-fork-pullrequest.png" alt-text="Local changes can be pushed to the origin repository and a pull request can then be created to get the changes into the upstream repository." border="false":::
 
 To learn more, see [Fork a repo](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo?azure-portal=true).
 
