@@ -20,14 +20,14 @@ quiz:
     - content: "Spring Initializr"
       isCorrect: true
       explanation: "Correct. The Spring Initializr is a web application that generates a Spring Boot project structure for you."
-    - content: "Azure Cli"
+    - content: "Azure Command Line Interface (Cli)"
       isCorrect: false
       explanation: "Azure CLI is a command-line interface used to create and manage Azure resources."
   - content: 'Which of the following Java Class types provides generic CRUD methods to manage JPA Objects?'
     choices:
     - content: Repository
       isCorrect: true
-      explanation: "By extending JpaRepository we get a bunch of generic CRUD methods allowing for management of JPA Objects."
+      explanation: "By extending JpaRepository, we get a bunch of generic CRUD methods allowing for management of JPA Objects."
     - content: Controller
       isCorrect: false
       explanation: "A Controller publishes REST interfaces to store and retrieve data via HTTP."
@@ -38,10 +38,10 @@ quiz:
     choices:
     - content: "config"
       isCorrect: false
-      explanation: "This will set up your projects configuration with a subscription, Java Version and operating system you specify."
+      explanation: "This command will set up your projects configuration with a subscription, Java Version, and operating system you specify."
     - content: "deploy"
       isCorrect: true
-      explanation: "This command creates your instance in addition to copying your app and starting it."
+      explanation: "This command creates your instance and copies your app and starts it."
     - content: "package"
       isCorrect: false
       explanation: "This command bundles your app into an executable JAR file."
