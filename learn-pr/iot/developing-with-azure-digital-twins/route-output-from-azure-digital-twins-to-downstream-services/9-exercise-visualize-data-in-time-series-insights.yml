@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-visualize-data-in-time-series-insights
+uid: learn.iot.output-from-azure-digital-twins-to-downstream-services
 title:  Exercise - visualize your data in Time Series Insights
 metadata:
   description: In this unit, explore the data coming in to your time series insights instance.

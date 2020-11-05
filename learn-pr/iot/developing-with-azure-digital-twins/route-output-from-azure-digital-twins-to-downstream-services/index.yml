@@ -3,7 +3,7 @@ uid: learn.iot.output-from-azure-digital-twins-to-downstream-services
 title: Route output from Azure Digital Twins to Downstream Services
 metadata:
   description: This module covers routing data from Azure Digital Twins, through an IoT Hub and Azure Function, to Time Series Insights.
-  ms.date: 12/1/2020
+  ms.date: 11/1/2020
   author: raniabayoumy
   ms.author: rabayoum
   ms.topic: interactive-tutorial
