@@ -1,4 +1,4 @@
-Azure gives developers the option to deploy to Azure directly from Eclipse, IntelliJ, and Maven.For maven, the `azure-webapp-maven-plugin` has two goals for Java developers: the first is to make managing and configuring the Azure App Service plugin easier, and the second is to simplify deploying Maven projects to Azure App Service. In the previous exercise, you created a quick "hello world" example Java web app and tested it locally. Adding the Maven Plugin for Azure App Service to your project allows you to deploy your app to Azure App Service.
+Azure gives developers the option to deploy to Azure directly from Eclipse, IntelliJ, and Maven. For maven, the `azure-webapp-maven-plugin` has two goals for Java developers: the first is to make managing and configuring the Azure App Service plugin easier, and the second is to simplify deploying Maven projects to Azure App Service. In the previous exercise, you created a quick "Todo" example Java web app and tested it locally. Adding the Maven Plugin for Azure App Service to your project allows you to deploy your app to Azure App Service.
 
 In this unit, you'll look at the options for your company to host its apps on Azure App Service. Then you'll see how to add and configure the `azure-webapp-maven-plugin` to your Maven project.
 
@@ -12,7 +12,7 @@ The following excerpt illustrates the XML elements that you need to add to your 
 <plugin>
   <groupId>com.microsoft.azure</groupId>
   <artifactId>azure-webapp-maven-plugin</artifactId>
-  <version>1.9.0</version>
+  <version>1.12.0</version>
 </plugin>
 ```
 

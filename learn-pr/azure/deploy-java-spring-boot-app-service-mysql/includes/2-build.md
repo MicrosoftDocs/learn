@@ -4,7 +4,7 @@ In this unit, you'll learn how to create a Spring App, connect to a MySQL databa
 
 Azure App Service provides flexible hosting solutions for Spring Applications.
 The Azure App Service allows you to host your company's websites, web apps, REST APIs, and other application code on Azure. Your project code is running in the cloud; you don't have to provision or configure any infrastructure. Running your web app in Azure App Service provides you with all the benefits of running on Azure: your app is globally available, it scales automatically, has security and compliance built-in, and you only pay for the resources you use.
-In our App, you are looking at creating an application that hosts its logic in App Services and its Database in an Azure MySQL Database.
+In our App you will build, you are looking at creating an application that hosts its logic in Azure App Services and its Database in an Azure MySQL Database.
 
 ## Develop your Spring app
 
@@ -32,4 +32,4 @@ We'll use the Maven package manager to structure our project and pull in depende
 
 ### Azure Database for MySQL
 
-A fully managed MySQL database-as-a-service offering from Microsoft. Whether you're building new applications that target MySQL or migrating legacy applications, Azure Database for MySQL provides the enterprise-ready solution needed for modern applications. To learn more, see [Azure Database for MySQL](https://azure.microsoft.com/services/mysql/?azure-portal=true).
+Whether you're building new applications that target MySQL or migrating legacy applications, Azure Database for MySQL provides the enterprise-ready solution needed for modern applications. To learn more, see [Azure Database for MySQL](https://azure.microsoft.com/services/mysql/?azure-portal=true).

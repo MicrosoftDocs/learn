@@ -21,7 +21,7 @@ Azure provides built-in diagnostics to assist with debugging an App Service app.
 In the preceding steps, you created Azure resources in a resource group. If you don't expect to need these resources in the future, delete the resource group from portal, or by running the following command in the Cloud Shell:
 
 ```bash
-az group delete --name <your resource group name; for example: helloworld-1558400876966-rg> --yes
+az group delete --name <your resource group name> --yes
 ```
 
 This command may take a minute to run.
@@ -29,7 +29,7 @@ This command may take a minute to run.
 > [!IMPORTANT]
 > It's important that you de-provision the Azure resources used in this module to avoid accruing unwanted charges.
 
-### Additional resources
+## Additional resources
 
 For more information about Spring Data JDBC, see Spring's [reference documentation](https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/#reference).
 

@@ -1,8 +1,10 @@
+In this unit, you'll configure your  Spring Boot app to be deployed via Maven and then create and deploy to an Azure App Service instance.
+
 # Configure the Maven plugin
 
 The deployment process to Azure App Service will use your Azure credentials from the Azure CLI automatically.
 
-Run the Maven command below to configure the deployment. This command will help you to set up the App Service operating system, Java version.
+Run the Maven command below to configure the deployment. This command will help you to set up the App Service operating system,Azure subscription and Java version.
 
 ```bash
 mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
@@ -30,13 +32,14 @@ mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
     [INFO] BUILD SUCCESS
     [INFO] ------------------------------------------------------------------------
     [INFO] Total time: 20.925 s
-    [INFO] Finished at: 2020-09-01T17:38:51-07:00
+    [INFO] Finished at: 2020-11-01T17:38:51-07:00
     [INFO] ------------------------------------------------------------------------
     ```
 
 ## Deploy the app
 
-The maven deploy plugin will copy your executable Spring Boot JAR file to your Azure App Service's instance, copy the JAR file to the server's "/local/site/wwwroot" directory , and finally start it via your Spring Boot JAR file's embedded HTTP server.
+The maven deploy plugin will copy your executable Spring Boot JAR file to your Azure App Service's instance, and also copy your JAR file to the server's "/local/site/wwwroot" directory
+Finally it will start your App via your Spring Boot JAR file's embedded HTTP server.
 
 Next, deploy your Spring Boot app to Azure using the following command:
 
@@ -44,6 +47,6 @@ Next, deploy your Spring Boot app to Azure using the following command:
 mvn package azure-webapp:deploy
 ```
 
-Once deployment has completed, your application will be ready at `http://<appName>.azurewebsites.net/`(`http://helloworld-1590394316693.azurewebsites.net` in the demo). To confirm that your App is connection to the database, Open the url with your local web browser, you should see
+Once deployment has completed, your application will be ready at `http://<appName>.azurewebsites.net/`(`http://azure-spring-workshop-1590394316693.azurewebsites.net` in the demo). To confirm that your App is connection to the database, Open the url with your local web browser, you should see
 
 ![Sample app running in Azure App Service](./media/quickstart-java/java-hello-world-in-browser-azure-app-service.png)
