@@ -14,10 +14,10 @@ abstract: |
   After completing this module, you'll be able to:
   - Choose the cloud monitoring service that best addresses your company's business challenges.  
 prerequisites: |
-  - Familiarity with basic computing concepts and terminology
-  - Familiarity with cloud computing is helpful but not necessary
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/monitoring-fundamentals.svg
 levels:
 - beginner
 roles:

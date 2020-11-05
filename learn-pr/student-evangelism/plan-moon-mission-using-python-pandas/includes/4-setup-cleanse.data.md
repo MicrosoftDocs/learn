@@ -8,7 +8,7 @@ We will get into the specifics of that in a later unit, but the critical part fo
 
 ```python
 rock_samples['Weight(g)'] = rock_samples['Weight(g)'].apply(lambda x : x * 0.001)
-rock_samples.rename(columns={'Weight(g)':'Weight (kg)'}, inplace=True)
+rock_samples.rename(columns={'Weight(g)':'Weight(kg)'}, inplace=True)
 rock_samples.head()
 ```
 
