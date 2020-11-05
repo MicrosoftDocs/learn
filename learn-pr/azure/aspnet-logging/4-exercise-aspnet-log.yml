@@ -20,7 +20,7 @@ tasks:
   hint: "Create the AppInsights instance."
   azure:
     resource:
-      type: "Microsoft.Insights/components"
+      type: "microsoft.insights/components"
 - action: exists
   environment: azure
   hint: "Create the general purpose v2 storage account to store logging data."
