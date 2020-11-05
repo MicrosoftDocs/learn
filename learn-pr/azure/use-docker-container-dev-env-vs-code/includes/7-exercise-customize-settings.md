@@ -18,11 +18,13 @@ The container comes with the Microsoft Python extension. They Python extension e
 1.  Right-click the "Jinja" extension from "wholroyd" and select "Add to devcontainer.json."
 1.  Notice that the extension ID has been added to the "extensions" option.
 
-        // Add the IDs of extensions you want installed when the container is created.
-        "extensions": [
-            "ms-python.python",
-            "wholroyd.jinja"
-        ],
+    ```json
+    // Add the IDs of extensions you want installed when the container is created.
+    "extensions": [
+        "ms-python.python",
+        "wholroyd.jinja"
+    ],
+    ```
 
 ## Forward port 5000
 
@@ -31,8 +33,10 @@ VS Code automatically detects and forwards port 5000. It's a good practice to ma
 1.  Open the `devcontainer.json` file in the ".devcontainer" folder.
 1.  Uncomment out the "forwardPorts" option, and add 5000 to the array.
 
-        // Use 'forwardPorts' to make a list of ports inside the container available locally
-        "forwardPorts": [5000],
+```json
+// Use 'forwardPorts' to make a list of ports inside the container available locally
+"forwardPorts": [5000],
+```
 
 ## Automate dependency installation
 
@@ -40,7 +44,9 @@ Right now, a developer setting up the project for the first time has to know to 
 
 1.  Uncomment out the "postCreateCommand" option.
 
-        "postCreateCommand": "pip3 install --user -r requirements.txt"
+```json
+"postCreateCommand": "pip3 install --user -r requirements.txt"
+```
 
 ## Rebuild the new container
 
@@ -66,7 +72,9 @@ The container will be rebuilt with the changes you've specified in the "devconta
 1.  Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the VS Code integrated terminal.
 1.  Run the app with the following command...
 
-        python app.py
+```bash
+python app.py
+```
 
 1.  Notice that you didn't have to install any dependencies. The application simply runs.
 

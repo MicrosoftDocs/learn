@@ -11,12 +11,14 @@ The Dockerfile is the best tool with which to add new software to your container
 
 1. Add the following to install Node.js.
 
-        RUN apt-get update \
-            && apt-get install curl \
-            && curl -sL https://deb.nodesource.com/setup_14.x | bash \
-            && apt-get install nodejs \
-            && node -v \
-            && npm -v \
+   ```yml
+   RUN apt-get update \
+     && apt-get install curl \
+     && curl -sL https://deb.nodesource.com/setup_14.x | bash \
+     && apt-get install nodejs \
+     && node -v \
+     && npm -v \
+   ```
 
 1. Save your project.
 
@@ -30,7 +32,9 @@ The Dockerfile is the best tool with which to add new software to your container
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the integrated terminal in VS Code.
 1. Type the following to check your version of Node.
 
-        node --version
+   ```bash
+   node --version
+   ```
 
 1. You should see a version of Node output to the terminal!
 

@@ -62,7 +62,9 @@ The container will begin building. The initial build may take a few minutes as a
 1.  Notice that the terminal probably looks different than your normal terminal.
 1.  Run the following command to ensure Python is there...
 
-        python --version
+    ```bash
+    python --version
+    ```
 
     The terminal should output the version of Python being used in the container, i.e. "Python 3.9.0"
 
@@ -70,13 +72,17 @@ The container will begin building. The initial build may take a few minutes as a
 
 Run the following command in the terminal to install the Flask dependencies needed to run the project...
 
-        pip3 install --user -r requirements.txt
+```bash
+pip3 install --user -r requirements.txt
+```
 
 ## Run the project
 
 1.  Enter the following command in the terminal to start the project...
 
-        python app.py
+    ```bash
+    python app.py
+    ```
 
 1.  Click "Open in Browser."
 
