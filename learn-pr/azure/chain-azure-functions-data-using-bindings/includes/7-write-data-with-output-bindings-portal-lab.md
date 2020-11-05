@@ -151,7 +151,7 @@ Next, we'll set up a storage account connection. This is where our queue will be
 
 1. To the right of the **Storage account connection** field, select **new**. The **Storage Account** selection pane opens.
 
-1. When we started this module and you created your function app, a storage account was also created at that time. It's listed in this pane, so select it. The **Storage account connection** field is populated with the name of a connection. If you want to see the connection string value, select **show value**.
+1. When we started this module and you created your function app, a storage account was also created at that time. It's listed in this pane, you must select this storage account. The **Storage account connection** field is populated with the name of a connection. If you want to see the connection string value, select **show value**.
 
 1. Although we could keep the default values in all the other fields, let's change the following to lend more meaning to the properties:
 
