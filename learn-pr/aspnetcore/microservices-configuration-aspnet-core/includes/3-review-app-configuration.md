@@ -35,7 +35,7 @@ ASP.NET Core uses a [ConfigurationBinder](/dotnet/api/microsoft.extensions.confi
 
 In Kubernetes, one abstraction to handle configuration as a collection of plain text key-value pairs is the *ConfigMap*. A typical [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap) example looks like the following YAML:
 
-:::code language="yml" source="../code/deploy/k8s/helm-simple/webspa/templates/configmap.yaml" range="1-10" highlight="8-10":::
+:::code language="yaml" source="../code/deploy/k8s/helm-simple/webspa/templates/configmap.yaml" range="1-10" highlight="8-10":::
 
 The ConfigMap's key-value pairs are:
 
