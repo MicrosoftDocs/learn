@@ -65,15 +65,15 @@ In the preceding `CreateHostBuilder` method fragment:
 
 * The `CreateDefaultBuilder` method registers the default configuration providers. As a result, values can be read from environment variables and *appsettings.\*.json* files, respectively.
 * The host builder's `ConfigureAppConfiguration` method is called to register a configuration provider for the Azure App Configuration store. The configuration provider is registered via a call to `AddAzureAppConfiguration`.
-* The Azure App Configuration provider is registered by providing a connection string to the resource. Feature flags support is enabled via a call to `UseFeatureFlags`.
+* The Azure App Configuration provider's behavior is configured with the following options:
+  * Authenticate to the corresponding Azure service via a connection string passed to the `Connect` method call. The connection string is retrieved from the `AppConfig:Endpoint` key.
+  * Enable feature flags support via a call to `UseFeatureFlags`.
+* The Azure App Configuration provider supersedes all other registered configuration providers because it's registered after any others.
 
 <!--
 1. Add the `AzureAppConfiguration` provider (line 29). Being the second in the chain of providers, it can override any value taken from the ConfigMap.
-1. Set the configuration refresh rate from the App Configuration store (line 35).
 
 With the rise of containers, environment variables are a cross-platform and container-compatible way to provide runtime configuration.
-
-The Azure App Configuration provider should supersede the other providers. Therefore, it's registered last in the ConfigureAppConfiguration method.
 
 You can access the list of registered providers by analyzing the builder.Sources property inside of ConfigureAppConfiguration. builder.Sources.Clear(); would give you clean starting point, with no providers registered.
 -->
@@ -121,10 +121,3 @@ ASP.NET Core's request processing pipeline uses a middleware as a handler for HT
 The Feature Management library is implemented to work on the server side. That's fine when using MVC or Razor Pages, but you need to use the configuration data in the SPA. So the directive mentioned in the previous section will query the `/features` endpoint, implemented as this middleware, to get the feature state. The middleware retrieves the configuration values from the feature manager that, in turn, gets them from the ASP.NET Core configuration infrastructure.
 
 Think of this middleware as a proxy or broker between the SPA and the Feature Management service.
-
-## Resources
-
-* [Configuration in ASP.NET Core](/aspnet/core/fundamentals/configuration)
-* [Kubernetes ConfigMaps](https://kubernetes.io/docs/concepts/configuration/configmap)
-* [What is Azure App Configuration?](/azure/azure-app-configuration/overview)
-* [Feature management overview](/azure/azure-app-configuration/concept-feature-management)
