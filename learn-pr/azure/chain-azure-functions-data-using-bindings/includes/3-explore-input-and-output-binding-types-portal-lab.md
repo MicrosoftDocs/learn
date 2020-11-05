@@ -230,7 +230,7 @@ As you can see, this function has a trigger binding named **Request** of type `h
     > [!NOTE]
     > We have already defined a trigger and an output binding, as shown in the screenshot. You can see that we can't add more than _one_ trigger. In fact, to change the trigger for our function we would have to first delete the trigger and create a new one. However, the **Inputs** and **Outputs** sections of this UI display a plus sign (+) to add more bindings so we can accept more than one input value and emit more than one output value.
 
-1. Select **+ New Input** under the **Inputs** column. A list of all possible input binding types is displayed as shown in the following screenshot.
+1. Select **+ Add input** under the **Inputs** column. A list of all possible input binding types is displayed as shown in the following screenshot.
 
     :::image type="content" source="../media/3-func-input-bindings-selector-small.png" alt-text="Screen shot of the Add input options.":::
 
