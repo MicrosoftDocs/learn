@@ -1,14 +1,10 @@
-You work at an agency that does software consulting around many different languages and runtimes. All developers are using VS Code. The agency has dozens of projects in progress, each with its own configuration and runtime requirements. Developers at your agency need to work on any project without having to set up or configure their machine first. To do that, you're going to investigate containerized development environments.
+The Remote-Containers extension for Visual Studio Code allows you to develop inside of a Docker container. 
 
-## Learning objectives
+Suppose that you work at an agency that does software consulting around many different languages and runtimes. All developers are using VS Code. The agency has dozens of projects in progress, each with its own configuration and runtime requirements. Developers at your agency need to work on any project without having to set up or configure their machine first. 
 
-By the end of this module, you will be able to:
+In this module, you will add configuration files to an existing project that will tell Visual Studio Code how to build an environment where the project will "just work". You'll use the Remote-Containers configuration to configure not only the runtime, but also automate configuration of a development environment that will work for anyone who has Docker and Visual Studio Code.
 
-- Install the VS Code Remote - Containers extension.
-- Load and connect to a project in a Docker container.
-- Access ports in the container from your local machine.
-- Customize settings while working with your container.
-- Add software to the container environment.
+By the end of this module, you will be able to configure any project so that it runs inside of a Docker container.
 
 ## Prerequisites
 
