@@ -3,8 +3,8 @@ uid: learn.iot.output-from-azure-digital-twins-to-downstream-services.create-rou
 metadata:
   description: In this unit, understand how routes are created.
   ms.date: 11/1/2020
-  author: Rania.Bayoumy
-  ms.author: Rania.Bayoumy
+  author: raniabayoumy
+  ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 ###  zone_pivot_groups: vs-vscode-language

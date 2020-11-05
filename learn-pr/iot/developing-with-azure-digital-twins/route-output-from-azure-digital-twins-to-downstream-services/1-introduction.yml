@@ -3,8 +3,8 @@ uid: learn.iot.output-from-azure-digital-twins-to-downstream-services.introducti
 metadata:
   description: This unit outlines the learning objectives, prerequisites, and scenario for this module.
   ms.date: 11/1/2020
-  author: Rania.Bayoumy
-  ms.author: Rania.Bayoumy
+  author: raniabayoumy
+  ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction

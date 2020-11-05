@@ -3,8 +3,8 @@ uid: learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-v
 metadata:
   description: In this unit, explore the data coming in to your time series insights instance.
   ms.date: 11/1/2020
-  author: Rania.Bayoumy
-  ms.author: Rania.Bayoumy
+  author: raniabayoumy
+  ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title:  Exercise - visualize your data in Time Series Insights
