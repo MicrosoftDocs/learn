@@ -47,4 +47,4 @@ quiz:
       explanation: "Linked templates allow you to create reusable, composable, and modular deployments that comprise many individual ARM templates."
     - content: "Use GitHub Actions to control the deployment."
       isCorrect: false
-      explanation: "GitHub Actions are a great way to deploy your infrastructure as code (IaC) in a controlled manner, but it doesn't provide any benefits to modularize your templates."
+      explanation: "GitHub Actions are a great way to deploy your infrastructure as code (IaC) in a controlled manner, but they don't provide any benefits to modularize your templates."

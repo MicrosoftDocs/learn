@@ -1,4 +1,4 @@
-This module introduced you to one of the ways that you can include Azure Resource Manager templates (ARM templates) as part of your infrastructure as code (IaC) efforts. You can deploy your resources to Azure in an automated way whenever you add or change your ARM template files.
+This module introduced you to one of the ways that you can include Azure Resource Manager (ARM) templates as part of your infrastructure as code (IaC) efforts. You can deploy your resources to Azure in an automated way whenever you add or change your ARM template files.
 
 In summary:
 

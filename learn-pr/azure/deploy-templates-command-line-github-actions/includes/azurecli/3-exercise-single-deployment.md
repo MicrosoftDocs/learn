@@ -199,7 +199,7 @@ In the following exercise, you'll deploy a template from your local machine. The
 
 In the last exercise, you deployed your template by using the parameter's default value. When you're deploying a local ARM template, you might need to pass parameter values. You can use either inline parameters or a parameter file.
 
-In the next exercise, you'll pass inline parameters to your deployment. You'll need to provide the names of the parameter with the `az deployment group create` command. You'll do this both as inline parameters and as a parameter file.
+In the next exercise, you'll pass inline parameters to your deployment. You'll need to provide the names of the parameters by using the `az deployment group create` command. You'll do this both as inline parameters and as a parameter file.
 
 1. By using the same template as the last exercise, construct a variable that will contain the parameters in a JSON string format for the required template parameters.  
 
@@ -291,7 +291,7 @@ In the next exercise, you'll pass inline parameters to your deployment. You'll n
 
 1. To pass a local parameter file, we use the `--parameters` parameter in the same command that we've been using. But first, you need to create and save your parameter file:
 
-    1. Because we're using Visual Studio Code with the Azure Resource Manager (ARM) Tools extension, you can open the ARM template that you saved locally and click the "**Select or create a parameter file to enable full validation**" link.
+    1. Because we're using Visual Studio Code with the Azure Resource Manager Tools extension, you can open the ARM template that you saved locally and click the **Select or create a parameter file to enable full validation** link.
 
     1. Select **New** on the menu. The extension creates a parameter file based on the template that's currently opened.
 
