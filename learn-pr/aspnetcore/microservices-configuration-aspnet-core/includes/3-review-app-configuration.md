@@ -35,25 +35,11 @@ ASP.NET Core uses a [ConfigurationBinder](/dotnet/api/microsoft.extensions.confi
 
 In Kubernetes, one abstraction to handle configuration as a collection of plain text key-value pairs is the *ConfigMap*. A typical [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap) example looks like the following YAML:
 
-```yaml
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: webspa-cm
-  labels:
-    app: eshop
-    service: webspa
-data:
-  ASPNETCORE_ENVIRONMENT: Docker
-  ASPNETCORE_URLS: http://0.0.0.0:80
-  #...
-  UseFeatureManagement: "True"
-  FeatureManagement__Coupons: "False"
-  AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;Id=...;Secret=..."
-```
+:::code language="yml" source="../code/deploy/k8s/helm-simple/webspa/templates/configmap.yaml" range="1-10" highlight="8-10":::
 
 The ConfigMap's key-value pairs are:
 
+* Stored in the `data` field of the YAML.
 * Presented to the containerized app as environment variables.
 * The primary mechanism to persist .NET Core configuration values in microservices apps.
 
@@ -93,15 +79,7 @@ The order in which configuration providers are called/registered is important. T
 
 `ConfigureAppConfiguration` is called on the `IHostBuilder`. It causes the default configuration providers to be added.
 
-config.AddJsonFile (appsettings.json)
-config.AddJsonFile (appsettings.{env}.json)
-config.AddUserSecrets
-config.AddEnvironmentVariables
-config.AddCommandLine
-
 If command-line arguments have been provided when the app starts, those arguments override those found in the other configuration providers. Each provider can contribute its own key value. The last value provided by a provider is the one that wins. For cross-platform compatibility, a double underscore is used instead of a colon to delimit keys.
-
-With environment variables, the colon doesn't work on all platforms. Therefore, __ is used instead.
 
 With the rise of containers, environment variables are a cross-platform and container-compatible way to provide runtime configuration.
 

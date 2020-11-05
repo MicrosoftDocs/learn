@@ -48,7 +48,7 @@ AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;I
 
 ## Add the feature flag for Coupons
 
-1. In another tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Cloud Shell.
+1. In another browser tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Cloud Shell.
 1. Use the search box to find and open the App Configuration resource prefixed with *:::no-loc text="eshoplearn":::*.
 1. In the **Operations** section, select **Feature manager** > **Add**.
 1. Select the **Enable feature flag** check box, enter *Coupons* in the **Feature flag name** text box, and select the **Apply** button.
