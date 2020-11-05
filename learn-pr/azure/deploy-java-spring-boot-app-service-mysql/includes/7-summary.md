@@ -1,6 +1,6 @@
 Congratulations! You have deployed to a Spring Boot Web App to Azure App Service.
 
-Your company wanted to learn how they could migrate their existing Spring Boot Java web apps to Azure App Service. To test how easy it would be for your company to migrate to Azure App Service, you used the following steps:
+Your company wanted to learn how they could migrate their existing Spring Boot Java web apps to Azure App Service. You used the following steps:
 
 1. You created a sample Spring Boot web app.
 
@@ -10,11 +10,11 @@ Your company wanted to learn how they could migrate their existing Spring Boot J
 
 1. You updated your web app, redeployed it to Azure App Service, and tested it in the cloud.
 
-Now that you've learned how Deploy Spring Boot Apps for Azure App Service, you're confident that you can recommend migrating your SpringBoot Java application code to Azure.
+You're confident that you can recommend migrating your SpringBoot Java application code to Azure.
 
 ## Get Log Stream
 
-Azure provides built-in diagnostics to assist with debugging an App Service app. In [this](/azure/app-service/troubleshoot-diagnostic-logs) article, learn how to enable diagnostic logging and add instrumentation to your application, as well as how to access the information logged by Azure.
+Learn how Azure provides built-in diagnostics to assist with debugging in [this](/azure/app-service/troubleshoot-diagnostic-logs) article.
 
 ## Clean up resources
 

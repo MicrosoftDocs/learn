@@ -2,23 +2,23 @@ In this unit, you'll learn how to create a Spring App, connect to a MySQL databa
 
 ## Introduction to Azure App Service
 
-Azure App Service provides flexible hosting solutions for Spring Applications.
-The Azure App Service allows you to host your company's websites, web apps, REST APIs, and other application code on Azure. Your project code is running in the cloud; you don't have to provision or configure any infrastructure. Running your web app in Azure App Service provides you with all the benefits of running on Azure: your app is globally available, it scales automatically, has security and compliance built-in, and you only pay for the resources you use.
-In our App you will build, you are looking at creating an application that hosts its logic in Azure App Services and its Database in an Azure MySQL Database.
+The Azure App Service allows you to host your company's websites, web apps, REST APIs, and other application code on Azure.  Running your web app in Azure App Service provides you with all the benefits of running on Azure: your app is available, scales and has security and compliance built-in.
+You're looking at creating a Spring Boot App that hosts its logic in Azure App Services and its Database in an Azure MySQL Database.
 
 ## Develop your Spring app
 
 Spring is the perfect framework to host and manage our applications. All we have to do is wire certain Spring components and without managing the underlying Server runtime.
-You have decided to use Spring Boot, which is self-hosted and provides a rich ecosystem of backing services for your app.
+You've decided to use Spring Boot, which is self-hosted and provides support services to run your app.
 
-The Spring injection annotations use Dependency injection to process the Components requests and utilizes the Azure Spring Starter integration libraries to configure and setup connections to the Backing services that are our MySQL database.
+The Spring injection annotations use Dependency injection to process the Components.
+You can also use Azure Spring Starter integration libraries to configure and set up connections to Azure Services.
 
 ## Create your resources using the Azure CLI and Maven
 
 ### Azure CLI
 
 Azure CLI is a command-line interface used to create and manage Azure resources.
-It runs on Linux, macOS, and Windows and allows administrators and developers to execute their commands through a terminal or command-line prompt (or script!) instead of a web browser. For example, to get the details of a subscription, you would use a command like the following:
+It runs on Linux, macOS, and Windows and allows administrators and developers to execute their commands through a terminal or command-line prompt (or script!) instead of a web browser. For example, to get the details of a subscription, you would use the following command:
 
 ```bash
 az account show

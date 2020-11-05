@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-java-spring-boot-app-service-mysql
 metadata:
-  title: Create and deploy a data-driven Spring Boot Java app to Azure App Service with Spring Initializr and Maven
+  title: Create and deploy a data-driven Spring Boot Java app to Azure App Service with Spring Initializr and Maven.
   description: Create a Spring Boot App, connect it to a MySQL database and then deploy to Azure App Services.
   ms.date: 10/05/2020
   author: roryp
   ms.author: ropreddy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create and deploy a data-driven Spring Boot Java app to Azure App Service with Spring Initializr and Maven
+title: Create and deploy a data-driven Spring Boot Java app to Azure App Service with Spring Initializr and Maven.
 summary: Create a Spring Boot App, connect it to a MySQL database and then deploy to Azure App Services.
 abstract: |
   In this module, you will:
@@ -17,12 +17,7 @@ abstract: |
   - Deploy the web app to Azure App services
 prerequisites: | 
   - An Azure Subscription
-  - Local installations of Java JDK, Maven and the Azure CLI
-  - Basic familiarity with relational databases
-  - Experience writing Spring Apps in Java
-  - Basic familiarity with Spring Boot App Lifecycle
-  - Experience writing Applications for Azure App Service
-  - Basic familiarity with build tools including Maven workflows 
+  - Local installations of Java JDK, Maven, and the Azure CLI
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate

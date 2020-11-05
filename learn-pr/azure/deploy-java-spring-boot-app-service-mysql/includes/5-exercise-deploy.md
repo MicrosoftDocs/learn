@@ -4,7 +4,7 @@ In this unit, you'll configure your  Spring Boot app to be deployed via Maven an
 
 The deployment process to Azure App Service will use your Azure credentials from the Azure CLI automatically.
 
-Run the Maven command below to configure the deployment. This command will help you to set up the App Service operating system,Azure subscription and Java version.
+Run the Maven command below to configure the deployment. This command will help you to set up the App Service operating system, Azure subscription, and Java version.
 
 ```bash
 mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
@@ -52,7 +52,7 @@ Change The following field in your project's `pom.xml` file:
 
 ## Deploy the app
 
-The maven deploy plugin will create your Azure App instance, and copy your JAR file to the App server instances "/local/site/wwwroot" directory.
+The maven deploy plugin will create your Azure App server, and copy your JAR file to the App server's "/local/site/wwwroot" directory.
 Finally it will start your App via your Spring Boot JAR file's embedded HTTP server.
 
 Next, deploy your Spring Boot app to Azure using the following command:
@@ -69,7 +69,7 @@ Here's a screenshot of the application deployed to the Azure app service:
 Once deployment has completed, your application will be ready at `http://<appName>.azurewebsites.net/`(`http://demo-1604579125693.azurewebsites.net` in the demo).
 To test the application, you can use cURL.
 
-As we have redeployed our application, we cleared the database and now need to create a new "todo" item in the database using the following command:
+As we've redeployed our application, we cleared the database and now need to create a new "todo" item in the database using the following command:
 
 ```bash
 curl --header "Content-Type: application/json" \

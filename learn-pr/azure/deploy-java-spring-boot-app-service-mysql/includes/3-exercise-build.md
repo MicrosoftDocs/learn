@@ -20,7 +20,7 @@ Replace the placeholders with the following values, which are used throughout th
 | <YOUR_DATABASE_NAME> | The name of your MySQL server. It should be unique across Azure. |
 | <YOUR_AZURE_REGION> | The Azure region you'll use. You can use `eastus` by default, but we recommend that you configure a region closer to where you live. You can have the full list of available regions by entering `az account list-locations` |
 | <YOUR_MYSQL_PASSWORD> | The password of your MySQL database server. That password should have a minimum of eight characters. The characters should be from three of the following categories: English uppercase letters, English lowercase letters, numbers (0-9), and non-alphanumeric characters (!, $, #, %, and so on). |
-| <YOUR_LOCAL_IP_ADDRESS> | The IP address of your local computer, from which you'll run your Spring Boot application. One convenient way to find it is to point your browser to [whatismyip.akamai.com](http://whatismyip.akamai.com/?azure-portal=true). |
+| <YOUR_LOCAL_IP_ADDRESS> | The IP address of your local computer, from which you'll run your Spring Boot application. To find it, point your browser to [whatismyip.akamai.com](http://whatismyip.akamai.com/?azure-portal=true). |
 
 Next, create a resource group:
 
@@ -42,7 +42,7 @@ The first thing we'll create is a managed MySQL server.
 > [!NOTE]
 > If you want to know more about az mysql server create and other Azure CLI commands, you can find a link to documentation at the end of this tutorial".
 
-Run the following script to create a small Azure MySQL Database with 1 Cpu and 2GB RAM :
+Run the following script to create a small Azure MySQL Database with one Cpu and 2 GB RAM:
 
 ```bash
 az mysql server create \
@@ -60,7 +60,7 @@ This command creates a small MySQL server using the variables we setup earlier.
 
 ### Configure a firewall rule for your MySQL server
 
-Azure Database for MySQL instances are secured by default. They have a firewall that doesn't allow any incoming connection. To be able to use your database, you need to add a firewall rule that will allow the local IP address to access the database server.
+Azure Database for MySQL is secured by default. They have a firewall that doesn't allow any incoming connection. You'll need to add a firewall rule that will allow the local IP address to access the database server.
 
 Run the following command to open the server's firewall:
 
@@ -100,8 +100,8 @@ az mysql db create \
 ## Generate the application by using Spring Initializr
 
 The Spring Initializr is a web application that generates a Spring Boot project structure for you.
-It doesn’t generate any application code, but it will give you a basic project structure and a Maven build specification to build your code with.
-In the command below we generate our application with three dependencies - web, mysql and data-jpa.
+The Spring Initializr doesn’t generate any application code, but it will give you a basic project structure and a Maven build specification.
+Next we will generate our application scaffold with three dependencies: web, mysql, and data-jpa.
 Notice we don't need to specify Azure dependencies as we plan to run our application locally also.
 
 Generate the application on the command line by entering:
@@ -112,7 +112,7 @@ curl https://start.spring.io/starter.tgz -d dependencies=web,data-jpa,mysql -d b
 
 ### Configure Spring Boot to use Azure Database for MySQL
 
-Open the *src/main/resources/application.properties* file, and add the following. Be sure to replace the two `$AZ_DATABASE_NAME` variables and the `$AZ_MYSQL_PASSWORD` variable with the values that you configured at the beginning of this article.
+Open the *src/main/resources/application.properties* file, and add the following properties. Be sure to replace the two `$AZ_DATABASE_NAME` variables and the `$AZ_MYSQL_PASSWORD` variable with the values that you configured at the beginning of this article.
 
 ```properties
 logging.level.org.hibernate.SQL=DEBUG
@@ -131,7 +131,7 @@ spring.jpa.hibernate.ddl-auto=create-drop
 > [!NOTE]
 > We append `?serverTimezone=UTC` to the configuration property `spring.datasource.url`, to tell the JDBC driver to use the UTC date format (or Coordinated Universal Time) when connecting to the database. Otherwise, our Java server would not use the same date format as the database, which would result in an error.
 
-You should now be able to start your application by using the provided Maven wrapper:
+Now start your application by using the provided Maven wrapper:
 
 ```bash
 ./mvnw spring-boot:run
@@ -144,7 +144,7 @@ Here's a screenshot of the application running for the first time:
 ## Code the application
 
 Next, add the below Java code that will use JPA to store and retrieve data from your MySQL server.
-You will use a JPA Entity class to map a Java Todo object directly to the MySQL Todo table.
+You'll use a JPA Entity class to map a Java Todo object directly to the MySQL Todo table.
 
 Create a new `Todo` Entity class, next to the `DemoApplication` class, and add the following code:
 
