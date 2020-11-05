@@ -131,9 +131,6 @@ AzureActivity
 7. In the **Analytics rule logic** section, verify that in the drop-down menu for the Microsoft security service, **Azure Security Center** is selected.
 8. In the **Filter by severity** section, select **Custom**, and then in the drop-down menu, select **High** and **Medium**.
 9. If you want to further filter the alerts from Azure Security Center, you can add additional text in **Include specific alerts** or **Exclude specific alerts**.
-
-![](RackMultipart20201101-4-1ob6vhl_html_9cd22e1d731f6d21.png)
-
 10. Select **Next:Review**, and then on the **Review and Create** page, select **Create**.
 
 ## Results
