@@ -23,7 +23,7 @@ Contribute to an open-source project using GitHub
 
 ## Product(s)
 
-  - VSCode
+  - VSCode 
   - GitHub
 
 ## Prerequisites
@@ -41,12 +41,12 @@ Contribute to open-source projects and communities through GitHub. Identify task
 
 Upon completion of the module, the learner will be able to:
 
-1. Identify how to sponsor an open-source project
 1. Summarise where to navigate on GitHub to find open source projects
-1. Recognise the contribute section of an open-source project and where it is located
-1. Create a pull request on a GitHub repository
-1. Explain best practices when communicating with project maintainers, asking for help or pull requests reviews within an open-source repository
-1. Locate an open-source repository's community profile to see how it compares to recommended community standards
+2. Recognise the contribute section of an open-source project and where it is located
+3. Identify how to sponsor an open-source project
+4. Create a pull request on a GitHub repository
+5. Explain best practices when communicating with project maintainers, asking for help or pull requests reviews within an open-source repository
+6. Locate an open-source repository's community profile to see how it compares to recommended community standards
 
 ## Chunk your content into subtasks
 
