@@ -8,6 +8,20 @@ To deploy the prerequisites for the exercise, perform the following steps.
 
 2. You will be promted to sign in your Azure subscription.
 3. In the **Custom deployment** page provide the following information:
+|||
+| --- | --- |
+| **Subscription** | Select your Azure subscription |
+| **Resource Group*** | Select **Create new** and provide name for the resource group, for example **azure-sentinel-rg** .|
+| **Locations*** | From the drop-down menu select the location where you deployng the Azure Sentinel. |
+| **Workspace name***  | Provide unique name for the Azure Sentinel Workspace, for example ***yourname*-sentinel**. |
+| **Location** | Accept the default value **[resourceGroup().location]**. |
+| **Simplevm Name** | Accept the default value **simple-vm**.|
+| **Simplevm WIndows OS Version** | Accept the default value **2016-Datacenter**.|
+
+4. Select the checkbox for **I agree to the terms and conditions stated above** and then select **Purchase**
+
+[Screenshot that present Custom Deployment] (
+
 
 
 
