@@ -4,15 +4,21 @@ You're a database administrator. You need to create a test environment for use i
 
 1. When the VM lab environment opens use the password on the Resources tab for the Student account.
 
-1. Select the Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/).
+1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/). This should be the home page of the browser.
 
-1. The username and password information to sign into the Azure Portal are in the  **Resources** tab above these instructions. If you select the **Username** the environment will type the text for you.
+1. The username and password information to sign into the Azure portal are in the  **Resources** tab above these instructions. If you select the **Username** it will be filled in for you.
 
-1. Repeat this for the password field.
+1. Select **Next**.
+
+1. Select the **Password** field to have that filled in for you, then select **Sign in**.
+
+1. Select **Yes**.
+
+1. On the **Welcome to Azure** popup, select **Maybe later**.
 
 1. From the Home screen, select **Resource Groups**.  
 ‎
-    :::image type="content" source="../media/dp-3300-module-11-lab-06.png" alt-text="Screenshot of the Azure Portal home page.":::
+    :::image type="content" source="../media/dp-3300-module-11-lab-06.png" alt-text="Screenshot of the Azure portal home page.":::
 
 1. Review your existing Resource Groups and then select **Add** to create a new Resource Group.  
 ‎
@@ -22,16 +28,17 @@ You're a database administrator. You need to create a test environment for use i
 
     :::image type="content" source="../media/dp-3300-module-11-lab-08.png" alt-text="Screenshot showing the Basics tab on a create a resource group page.":::
 
-    - Enter **DP-300-Lab01** for the name of the Resource Group.
+    - Enter **AzureSQLVM** for the name of the **Resource group**.
     - For the purposes of this lab, select the **Region** nearest to your physical location.
     - Select the **Review + create**.
-    - Select **Create**.
+
+1. Select **Create**.
 
 ## Provision a SQL Server on an Azure Virtual Machine
 
 1. Locate the search bar at the top of the page. Search for Azure SQL. Select the search result for Azure SQL that appears in the results under Services.
 
-    :::image type="content" source="../media/dp-3300-module-11-lab-09.png" alt-text="Screenshot of Azure Portal showing searching for Azure SQL.":::
+    :::image type="content" source="../media/dp-3300-module-11-lab-09.png" alt-text="Screenshot of Azure portal showing searching for Azure SQL.":::
 
 1. On the Azure SQL blade, select **+ Add**.
 
@@ -41,45 +48,66 @@ You're a database administrator. You need to create a test environment for use i
   
     :::image type="content" source="../media/dp-3300-module-11-lab-11.png" alt-text="Screenshot of selecting the Free SQL Server License: SQL 2019 Developer on Windows Server 2019 option.":::
 
-1. On the Create a virtual machine blade, enter the following information:
+1. On the Create a virtual machine page, enter the following information:
 
     :::image type="content" source="../media/dp-3300-module-11-lab-12.png" alt-text="Screenshot of the information you need to complete to create a virtual machine.":::
 
-    - Resource group: **DP-300-Lab01**
-    - Virtual machine name:  **dp300sqlvmlab01**
+    - Resource group: **AzureSQLVM**
+    - Virtual machine name:  **azureSQLserverVM**
     - Region: **&lt;your local region, same as the selected region for your resource group&gt;**
     - Availability Options: **No infrastructure redundancy required**
     - Azure spot instance: **No**
     - Size: Standard **D2s v3** (2 vCPUs, 8 GiB memory)
-    - Administrator account username: **dp300sqlvmlab01admin**
-    - Administrator account password: **enter a strong password**
+    - Administrator account username: **labadmin**
+    - Administrator account password: **Azur3Pa$$2020**
     - Selected inbound ports: **RDP (3389)**
     - Would you like to use an existing Windows Server license?: **No**
 
-1. Navigate to the Disks tab and review the configuration.
+1. Navigate to the **Disks** tab and review the configuration.
 
     :::image type="content" source="../media/dp-3300-module-11-lab-13.png" alt-text="Screenshot of disks tab.":::
 
-1. Navigate to the Networking tab and review the configuration.
+1. Navigate to the **Networking** tab and review the configuration.
 
     :::image type="content" source="../media/dp-3300-module-11-lab-14.png" alt-text="Screenshot of the networking tab.":::
 
-1. Navigate to the Management tab and review the configuration.
+    > [!IMPORTANT]
+    > For security you are going to create a network secutiry group to restrict access to the VM to your machines IP address.
+
+1. For the **NIC network security group** select **Advanced**.
+
+1. Select **Create new** under the **Configure network security group**.
+
+1. Select the existing rule under the **Inbound rules**.
+
+    :::image type="content" source="../media/dp-3300-module-11-lab-49.png" alt-text="Screenshot of the management tab.":::
+
+    In the default-allow-rdp flyout enter this information:
+
+    - Source: **IP Addresses**
+    - Source IP addresses/CIDER ranges: **1.1.1.1** (this should be your machines public facing IP address - for the purpose of this exercise you can enter a dummy IP address)
+    - Priority: **100**
+
+    Select **Save**, and then select **OK**.
+
+1. Navigate to the **Management** tab and review the configuration.
 
     :::image type="content" source="../media/dp-3300-module-11-lab-15.png" alt-text="Screenshot of the management tab.":::
 
-1. Navigate to the Advanced tab and review the configuration.
+
+
+1. Navigate to the **Advanced** tab and review the configuration.
 
     :::image type="content" source="../media/dp-3300-module-11-lab-16.png" alt-text="Screenshot of advanced tab.":::
 
-1. Navigate to the SQL Server settings tab and review the configuration. Then select **Review + create**.
+1. Navigate to the **SQL Server settings** tab and review the configuration. Then select **Review + create**.
 
     :::image type="content" source="../media/dp-3300-module-11-lab-17.png" alt-text="Screenshot of the SQL Server settings tab.":::
 
     > [!NOTE]
-    > You can also configure the storage for your SQL Server VM on this screen. By default, the SQL Server Azure VM templates create one premium disk with read caching for data, one premium disk without caching for transaction log, and uses the local SSD (D:\ on Windows) for tempdb.
+    > You can also configure the storage for your SQL Server VM on this screen. By default, the SQL Server Azure VM template creates one premium disk with read caching for data, one premium disk without caching for transaction log, and uses the local SSD (D:\ on Windows) for the tempdb.
 
-1. On the Review + create tab select **Create**.  
+1. On the **Review + create** tab select **Create**.  
 ‎
     :::image type="content" source="../media/dp-3300-module-11-lab-18.png" alt-text="Screenshot of ":::
 
@@ -91,6 +119,10 @@ You're a database administrator. You need to create a test environment for use i
 
     :::image type="content" source="../media/dp-3300-module-11-lab-20.png" alt-text="Screenshot of ":::
 
-1. Select **SQL Server configuration**. Review the information available in Azure about your SQL Server installation.
+1. Select **SQL Server configuration** from the left navigation, then select **Manage SQL virtual machine**.
 
-    :::image type="content" source="../media/dp-3300-module-11-lab-48.png" alt-text="Screenshot of ":::
+1. Review the information available in Azure about your SQL Server installation.
+
+    :::image type="content" source="../media/dp-3300-module-11-lab-50.png" alt-text="Screenshot of ":::
+
+The Azure portal gives you powerful tools to manage a SQL Server hosted in a virtual machine. These tools include control over automated patching, automated backups, and giving you an easy way to setup high availability.
