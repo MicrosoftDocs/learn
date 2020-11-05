@@ -60,9 +60,6 @@ In this task, you will deploy Azure Sentinel connector to Azure Activity.
     | **st1*xxxxx*** | Storage account | Storage account used by the virtual machine. |
     | **vnet1** | Virtual network | Virtual network for the VM. |
 
-
-
-
 ## Exercise: Threat detection with Azure Sentinel Analytics
 
 As a security engineer working for Contoso, you recently notice that significant number of VMs has been deleted from your Azure subscription. You want to analyze that occurrence in the future and been alerted when similar activity occurs.
@@ -81,7 +78,7 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Sentinel workspace.
 2. In the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
 3. In the **Azure Sentinel | Analytics** blade, select **Create** and then select **Scheduled Query Rule**.
-4. In the **General** page provide the following inputs:
+4. In the **General** page provide the inputs in the following table and then select  **Next:Set rule logic.**
 
 |||
 | --- | --- |
@@ -91,38 +88,37 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
 | Severity | Select the **Severity** drop-down menu to categorize the level of importance of the alert as one of four options: High, Medium, Low, or Informational. |
 | Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generate large number of false positives. |
 
+![Screenshot Analytics Rule wizard-Create new rule](../media/07-Analytics-rule-wizzard-Create-new-rule.PNG)
 
-5. In the details pane, select **Create rule**.
+6.In the **Set rule logic** page, int the **Rule query** section enter the following query:
 
-![](RackMultipart20201101-4-1ob6vhl_html_a3a95526685ba175.png)
+```kusto
+AzureActivity
+| where OperationName == 'Delete Virtual Machine'
+| where ActivityStatus == 'Accepted'
+| extend AccountCustomEntity = Caller
+| extend IPCustomEntity = CallerIpAddress
+```
 
-1. On the **Analytics rule wizard - Create new rule from template** tab, review the default values, and then select **Next:Set rule logic.**
+7. In the **Result simulation** section **Test with current data** and observe the results.
 
->[!Note]
-> In the **General** pane, you can identify the Tactics that specify techniques and methodologies in the MITRE ATT&amp;CK model used by different kinds of malware.
+![Screenshot Analytics Rule Logic](../media/07-Rule-Logic.PNG)
 
-2. On the **Set rule logic** page, you can review the predefined rule query. You can select **Result simulation** to test the query and preview the real data. Select **Test with current data** and observe the results.
-
-![](RackMultipart20201101-4-1ob6vhl_html_9c81b2f9e4b14735.png)
-
-3. In the  **Map entities**  section, you can define the entities that are returned as part of the query rule and that you can use to perform in-depth analysis.
-4. In the **Query Scheduling** section, you can configure how often the query should run, and how far in history to look back. Accept the default values.
-5. In the **Alert threshold** section, you can specify the number of positive results that can be returned for the rule before an alert gets generated. Accept the default values.
-6. In the **Event grouping** section, accept the default selection to **Group all events into a single alert.**
-7. In the **Suppression** section, you can configure **Stop running the Query after the alert is generated** to  **On**  or  **Off.** Accept the default values.
-
-![](RackMultipart20201101-4-1ob6vhl_html_cc96bbbfb8b67b52.png)
-
-8. Select **Next: Incident setting (preview)**.
-9. In the **Incident setting (preview)** section, <!--Marjan is this a section or an option? --> ensure that **Enabled** is selected for creation of incidents from alerts triggered by this analytics rule.
+8. In the  **Map entities**  section, you can define the entities that are returned as part of the query rule and that you can use to perform in-depth analysis.
+9. In the **Query Scheduling** section, you can configure how often the query should run, and how far in history to look back. Accept the default values.
+10. In the **Alert threshold** section, you can specify the number of positive results that can be returned for the rule before an alert gets generated. Accept the default values.
+11. In the **Event grouping** section, accept the default selection to **Group all events into a single alert.**
+12. In the **Suppression** section, you can configure **Stop running the Query after the alert is generated** to  **On**  or  **Off.** 
+13. Accept the default values and then select **Next: Incident setting (preview)**.
+9. In the **Incident setting (preview)** page, ensure that **Enabled** is selected for creation of incidents from alerts triggered by this analytics rule.
 10. In the **Alert grouping** section, select **Enabled** to group related alerts into incidents, and ensure that **Grouping alerts into a single incident if all the entities match (recommended)** is selected.
 11. Ensure that **Re-open closed matching incidents** is **Disabled**, and then select **Next: Automated response**.
 
-![](RackMultipart20201101-4-1ob6vhl_html_9a9b701b75728e2d.png)
+![Screenshot Analytics Incident Settings](../media/07-Incident-Settings.PNG
 
-12. In the **Automated response** <!--Marjan, is this a field, option, section?-->, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
+12. In the **Automated response**  page, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
 12. Select **Next:Review**.
-14. In the **Review and Create** <!--Marjan same question, we need to qualify what this is--> page, verify that the validation was successful, and then select **Create**.
+14. In the **Review and Create** page, verify that the validation was successful, and then select **Create**.
 
 **Task 2: Create Analytics rule from existing template.**
 
@@ -130,18 +126,25 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
 2. In the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
 3. In the **Azure Sentinel | Analytics** blade, select **Rule templates.**
 4. In the search field, enter and select **Create incidents based on Azure Security Center alerts**.  
-1. In the details pane, select **Create rule**.
-1. In the **General** pane, observe the name of the analytics rule, and verify that the **Status** of the rule is **Enabled**.
-1. In the **Analytics rule logic** section, verify that in the drop-down menu for the Microsoft security service, **Azure Security Center** is selected.
-1. In the **Filter by severity** section, select **Custom**, and then in the drop-down menu, select **High** and **Medium**.
-1. If you want to further filter the alerts from Azure Security Center, you can add additional text in **Include specific alerts** or **Exclude specific alerts**.
+5. In the details pane, select **Create rule**.
+6. In the **General** pane, observe the name of the analytics rule, and verify that the **Status** of the rule is **Enabled**.
+7. In the **Analytics rule logic** section, verify that in the drop-down menu for the Microsoft security service, **Azure Security Center** is selected.
+8. In the **Filter by severity** section, select **Custom**, and then in the drop-down menu, select **High** and **Medium**.
+9. If you want to further filter the alerts from Azure Security Center, you can add additional text in **Include specific alerts** or **Exclude specific alerts**.
 
 ![](RackMultipart20201101-4-1ob6vhl_html_9cd22e1d731f6d21.png)
 
-1. Select **Next:Review**, and then on the **Review and Create** page, select **Create**.
+10. Select **Next:Review**, and then on the **Review and Create** page, select **Create**.
 
 ## Results
 
-<!--Marjan I added this based on the template provided for exercises.   ... Also, provide cleanup instructions where needed -->
+After completing this exercise, you will have created an incident rule from an existing template and created a scheduled query rule by using your own query code.
 
-After completing this exercise, you will have created an incident rule from an existing template, created a scheduled query rule by using your own KQL code, and adjusted KQL from an existing analytic rule.
+## Clean Up the Resources
+
+1. In the Azure portal, search for **Resource groups**.
+1. Select **azure-sentinel-rg**.
+1. In the header bar select **Delete resource group**.
+1. In the **TYPE THE RESOURCE GROUP NAME:** field type the name of the resource group **azure-sentinel-rg** and select **Delete**.
+
+
