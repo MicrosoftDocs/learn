@@ -24,11 +24,15 @@ In this task, you will deploy Azure Sentinel.
 
 5. Click  **Review + Create**  and then click  **Create**.
 
-**Note** : Wait for the deployment to complete. The deployment should take less than 1 minute.
+> [!Note]
+
+> Wait for the deployment to complete. The deployment should take less than 1 minute.
 
 1. Once that the Workspace is created, in **Add Azure Sentinel**** to a workspace **blade, click** Add.**
 
-**Note** : Wait for the deployment to complete. The deployment should take less than 1 minute.
+> [!Note]
+
+> Wait for the deployment to complete. The deployment should take less than 1 minute.
 
 **Task 2: Configure Azure Sentinel Connectors**
 
@@ -40,6 +44,10 @@ In this task, you will deploy Azure Sentinel connector to Azure Activity.
 4. In the **Azure Activity** pane, click on the link **Configure Azure Activity logs**.
 5. Click on your subscription and then click **Connect.**
 6. When you receive status **Connected** , you can close all open blades to return on **Azure Sentinel| Data connector** blade.
+
+> [!Note]
+
+> The connector for Azure Activity could take 15 minutes until shows some date in the Azure Sentinel.
 
 ## Check resources created
 
