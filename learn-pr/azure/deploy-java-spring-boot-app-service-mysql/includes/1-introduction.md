@@ -1,8 +1,8 @@
 Imagine you're a Java developer working for a company that creates Spring Boot apps that currently run on on-premises servers. Your app also integrates to a relational database (in this case MySQL). You want to build a todo list app that uses a MySQL database, and you've decided to build this Spring Boot app from scratch.
 
-In this module, you will first create a Spring Boot web app using the [Spring Initializr](https://start.spring.io). This gives us a base to work from. We will then code a Todo Application that stores tasks in a relational database. The tasks will need a MySQL database so we will create and host using Azure Database for MySQL.
+In this module, you'll first scaffold a Spring Boot web app using the [Spring Initializr](https://start.spring.io). This scaffold gives us a base to work from. We'll then code a Todo Application that stores tasks in a relational database. The tasks will need a MySQL database so we'll create and host using Azure Database for MySQL.
 
-Next we will build the App and also configure it to connect to the MySQL database. Before we deploy, we will need confirm the app can run locally. You'll then deploy via Maven and host it as an Azure App Service.
+Next we will build the App and also configure it to connect to the MySQL database. Before we deploy, you'll confirm the app can run locally. You'll then deploy via Maven and host it as an Azure App Service.
 
 By the end of this module, you'll be able to incorporate Spring Boot apps to Azure App Service and integrate with a relational database.
 

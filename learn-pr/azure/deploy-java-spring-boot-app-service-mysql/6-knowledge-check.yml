@@ -38,11 +38,11 @@ quiz:
     choices:
     - content: "config"
       isCorrect: false
-      explanation: "This will setup your projects configuration with a subscription, Java Version and operating system you specify."
+      explanation: "This will set up your projects configuration with a subscription, Java Version and operating system you specify."
     - content: "deploy"
       isCorrect: true
       explanation: "This command creates your instance in addition to copying your app and starting it."
     - content: "package"
       isCorrect: false
-      explanation: "This command bundles your app into a executable JAR file."
+      explanation: "This command bundles your app into an executable JAR file."
 
