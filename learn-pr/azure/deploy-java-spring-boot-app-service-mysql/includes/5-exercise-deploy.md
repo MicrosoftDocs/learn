@@ -18,23 +18,37 @@ mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 
     ```bash
     Please confirm webapp properties
-    Subscription Id : ********-****-****-****-************
-    AppName : spring-boot-1599007116351
-    ResourceGroup : spring-boot-1599007116351-rg
-    Region : westeurope
+    AppName : demo-1604579125693
+    ResourceGroup : demo-1604579125693-rg
+    Region : eastus
     PricingTier : PremiumV2_P1v2
     OS : Linux
-    RuntimeStack : JAVA 8-jre8
+    Java : Java 8
+    Web server stack: Java SE
     Deploy to slot : false
-    Confirm (Y/N)? : Y
+    Confirm (Y/N) [Y]: Y
     [INFO] Saving configuration to pom.
     [INFO] ------------------------------------------------------------------------
     [INFO] BUILD SUCCESS
     [INFO] ------------------------------------------------------------------------
-    [INFO] Total time: 20.925 s
-    [INFO] Finished at: 2020-11-01T17:38:51-07:00
+    [INFO] Total time:  28.781 s
+    [INFO] Finished at: 2020-11-05T14:30:00+02:00
     [INFO] ------------------------------------------------------------------------
     ```
+
+
+> [!IMPORTANT]
+> The default value for the region is "westeurope", but for better performance you will need to change it to "eastus" as this is where your database is located.
+
+Change The following field in your project's `pom.xml` file:
+
+```xml
+    <configuration>
+        ...
+        <region>eastus</region>
+        ...
+    </configuration>
+```
 
 ## Deploy the app
 
@@ -44,9 +58,43 @@ Finally it will start your App via your Spring Boot JAR file's embedded HTTP ser
 Next, deploy your Spring Boot app to Azure using the following command:
 
 ```bash
-mvn package azure-webapp:deploy
+mvn package com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
+```
+Here's a screenshot of the application deployed to the Azure app service:
+
+![The deployed application.](../media/5-spring-boot-01.png)
+
+## Test the Azure App Service application
+
+Once deployment has completed, your application will be ready at `http://<appName>.azurewebsites.net/`(`http://demo-1604579125693.azurewebsites.net` in the demo).
+To test the application, you can use cURL.
+
+First, create a new "todo" item in the database using the following command:
+
+```bash
+curl --header "Content-Type: application/json" \
+    --request POST \
+    --data '{"description":"configuration","details":"congratulations, you have set up your Spring Boot App correctly!","done": "true"}' \
+    http://<appName>.azurewebsites.net
 ```
 
-Once deployment has completed, your application will be ready at `http://<appName>.azurewebsites.net/`(`http://azure-spring-workshop-1590394316693.azurewebsites.net` in the demo). To confirm that your App is connection to the database, Open the url with your local web browser, you should see
+This command should return the created item as follows:
 
-![Sample app running in Azure App Service](./media/quickstart-java/java-hello-world-in-browser-azure-app-service.png)
+```json
+{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot App correctly!","done":true}
+```
+
+Next, retrieve the data by using a new cURL request as follows:
+
+```bash
+curl http://<appName>.azurewebsites.net
+```
+
+This command will return the list of "todo" items, including the item you've created, as follows:
+
+```json
+[{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot App correctly!","done":true}]
+```
+
+> [!NOTE]
+> You can also open the url in a web browser to return the list of "todo" items.
