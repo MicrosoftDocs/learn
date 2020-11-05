@@ -27,7 +27,7 @@ prerequisites: |
   - Node.js installed
   - Truffle and Ganache CLI installed
   - Visual Studio Code installed
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/reactors/blockchain-tokens.svg
 levels:
 - beginner
 roles:
