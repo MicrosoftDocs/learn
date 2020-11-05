@@ -15,15 +15,15 @@ quiz:
   questions:
   - content: "An organization has set up virtual machines (VMs) to act as jump boxes in each of their six virtual networks. Why should they consider using Azure Bastion?"
     choices:
-    - content: They could deploy one Bastion host to support all VM connections in the subscription.
+    - content: They can eliminate the need to manage their virtual networks.
       isCorrect: false
-      explanation: Bastion supports connections to VMs in the same virtual network or a peered virtual network. 
+      explanation: Bastion is a fully managed platform PaaS service that supports connections to VMs in the same virtual network or a peered virtual network over the internet.
     - content: They can eliminate all their VM management work.
       isCorrect: false
       explanation: Bastion simplifies the management of your internal VMs by providing a secure connection to those VMs over the internet without having to install anything.
-    - content: They can reduce the number of VMs they manage and make it easier to connect to the VMs. 
+    - content: They can simplify the management of their VMs.
       isCorrect: true
-      explanation: Bastion can replace a jump box VM solution that you're managing. Bastion provides a secure connection to VMs over the internet without having to install connection software like Remote Desktop.
+      explanation: Bastion is a fully managed platform PaaS service. It provides seamless RDP/SSH access to VMs over the internet without having to install connection software like Remote Desktop. 
   - content: "At what resource level or scope does a Bastion connection apply to?"
     choices:
     - content: Resource group
