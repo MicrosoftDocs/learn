@@ -12,7 +12,7 @@ You'll review the:
 
 ## ASP.NET Core configuration
 
-Configuration in ASP.NET Core projects is supported by one or more .NET Core *configuration providers*. A [configuration provider](/aspnet/core/fundamentals/configuration/#configuration-providers) is an abstraction over a specific configuration source, such as a JSON file. The configuration source's values are represented as a collection of key-value pairs.
+Configuration in an ASP.NET Core project is supported by one or more .NET Core *configuration providers*. A [configuration provider](/aspnet/core/fundamentals/configuration/#configuration-providers) is an abstraction over a specific configuration source, such as a JSON file. The configuration source's values are represented as a collection of key-value pairs.
 
 An app can register a chain of configuration providers. By default, ASP.NET Core apps register the following configuration providers in the order listed:
 
@@ -33,7 +33,7 @@ ASP.NET Core uses a [ConfigurationBinder](/dotnet/api/microsoft.extensions.confi
 
 ## Kubernetes configuration
 
-Typically in Kubernetes, the abstraction to handle configuration is the [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap). A ConfigMap is usually a key-value pair collection. A typical example looks like this:
+In Kubernetes, one abstraction to handle configuration as a collection of plain text key-value pairs is the *ConfigMap*. A typical [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap) example looks like the following YAML:
 
 ```yaml
 apiVersion: v1
@@ -55,7 +55,7 @@ data:
 The ConfigMap's key-value pairs are:
 
 * Presented to the containerized app as environment variables.
-* The primary mechanism to persist ASP.NET Core configuration values in microservices apps.
+* The primary mechanism to persist .NET Core configuration values in microservices apps.
 
 ## Azure App Configuration
 
