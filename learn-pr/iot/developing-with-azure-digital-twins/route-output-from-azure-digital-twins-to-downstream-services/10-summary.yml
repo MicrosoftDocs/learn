@@ -1,5 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.output-from-azure-digital-twins-to-downstream-services
+title: Summary
 metadata:
   description: Summary
   ms.date: 11/1/2020
@@ -7,7 +8,6 @@ metadata:
   ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Summary
 durationInMinutes: 6
 content: |
   [!include[](includes/10-summary.md)]
