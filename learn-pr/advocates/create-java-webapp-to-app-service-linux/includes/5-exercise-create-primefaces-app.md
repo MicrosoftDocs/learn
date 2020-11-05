@@ -12,8 +12,7 @@ Follow the steps below to build and run a JavaServer Faces web application.
 1. Create DataModel Class
 1. Create DAO Class
 1. Create Controller Class
-
-* [Optional] Run in local Tomcat environment
+1. Run in local Tomcat environment
 
 ### 1. Creating a JSF Web Page
 
@@ -298,20 +297,20 @@ You can compile the program. And execute the following command.
 mvn clean package
 ```
 
-### [Optional] Run in local Tomcat environment
+### Run in local Tomcat environment
 
 This is optional excercise. If you already installed the Apache Tomcat in your local environment. You will be able to This is optional excercise. If you already installed the Apache Tomcat in your local environment. You will be able to proceed to the following step. If you don't have the local environment, please proceed to the Next section.
 
-#### [Optional] Copy the artifact to the Deployment Directory on Tomcat
+#### Copy the artifact to the Deployment Directory on Tomcat
 
 ```bash
-cp target/azure-javaweb-app.war /$INSTALL_DIR/apache-tomcat-9.0.38/webapps/
+cp target/azure-javaweb-app.war /$INSTALL_DIR/apache-tomcat-9.0.39/webapps/
 ```
 
-#### [Optional] Start the Tomcat Server
+#### Start the Tomcat Server
 
 ```bash
-$INSTALL_DIR/apache-tomcat-9.0.38/bin/startup.sh
+$INSTALL_DIR/apache-tomcat-9.0.39/bin/startup.sh
 ```
 
 After running Tomcat, access `http://localhost:8080/azure-javaweb-app/` and you will see the screen below.

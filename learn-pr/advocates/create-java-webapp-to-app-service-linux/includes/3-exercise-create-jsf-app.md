@@ -13,8 +13,7 @@ Follow the steps below to build and run a JavaServer Faces web application.s
 1. Modify the name of index.jsp
 1. Creating a Basic Web Page for JSF
 1. Create JSF Backing Bean
-
-[Optional]: Run in local Tomcat environment
+1. Run in local Tomcat environment
 
 ### Creating Maven project
 
@@ -267,7 +266,7 @@ The directory structure after implementing the program is as follows.
             └── index.xhtml
 ```
 
-### Optional Exercise: Run in local tomcat environment
+### Exercise: Run in local tomcat environment
 
 Compile the source code and run it in a locally installed Tomcat environment.
 Execute the following command.
@@ -285,7 +284,7 @@ mvn clean package
 Copy the artifact war file to the directory in the Tomcat.
 
 ```bash
-cp target/azure-javaweb-app.war /$INSTALL_DIR/apache-tomcat-9.0.38/webapps/
+cp target/azure-javaweb-app.war /$INSTALL_DIR/apache-tomcat-9.0.39/webapps/
 ```
 
 #### Start the Tomcat Server
@@ -293,7 +292,7 @@ cp target/azure-javaweb-app.war /$INSTALL_DIR/apache-tomcat-9.0.38/webapps/
 Start the Tomcat Server.
 
 ```bash
-$INSTALL_DIR/apache-tomcat-9.0.38/bin/startup.sh
+$INSTALL_DIR/apache-tomcat-9.0.39/bin/startup.sh
 ```
 
 After running Tomcat, access `http://localhost:8080/azure-javaweb-app/` and you will see the screen below.
