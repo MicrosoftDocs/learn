@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Threat detection with Azure Sentinel analytics
-summary: TODO
+summary: In this module, you learned how Azure Sentinel Analytics can to help the SecOps team identify and stop cyber attacks.
 abstract: |
   In this module you will:
   - Explain the importance of Azure Sentinel Analytics.
