@@ -1,10 +1,42 @@
-In this exercise, you will explore an Azure Sentinel analytics rule. <!--Marjan, added a topic sentence>
+In this exercise, you'll set up a preconfigured environment with a load balancer and create charts to monitor the health of the load balancer.
+
+This exercise is optional. To complete it, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+
+## Check resources created
+
+1. In the Azure portal, search for **Resource groups**.
+1. Select **azure-sentinel-rg**.
+1. Sort the list of resources by **Type**.
+1. The resource group should contain the resources shown in this table.
+
+    | Name  | Type  | Description |
+    |---|---|---|
+    | **retailappvm1_disk1_xxx** and **retailappvm1_disk1_xxx** | Disk | Virtual hard disks for the two VMs. |
+    | **retailapplb** | Load balancer | Load balancer for the app running on the VMs. The back-end pool in the load balancer references the *retailappvm1* and *retailappvm2* virtual machines. |
+    | **nicvm1** and **nicvm2** | Network interface | Network interfaces for the two VMs. |
+    | **retailappnicvm1nsg**, and **retailappnicvm2nsg** | Network security group (NSG) | NSGs that control the traffic entering each VM. |
+    | **retailappnsg** | Network security group | Acts as an initial filter for both virtual machines, but the NSG for each virtual machine provides the ability to filter traffic on a per-machine basis. |
+    | **retailappip** | Public IP address | Public IP address that provides front-end access to the load balancer. |
+    | **retailappvm1** and **retailappvm2** | Virtual machine | VMs running the retail application. |
+    | **retailappvmjumpbox** | Virtual machine | VM that is also in the virtual network but has a public IP address. An administrator can sign in to this virtual machine to access the *retailappvm1* and *retailappvm2* VMs, which only have private IP addresses. |
+    | **retailappvnet** | Virtual network | Virtual network for the VMs. |
+
+
+
 
 ## Exercise: Threat detection with Azure Sentinel Analytics
 
-<!--Marjan as per the exercise template, we need to have setup section as described below. Can you please provide any content if applicable for the setup section for this exercise?  
+As a security engineer working for Contoso, you recently notice that significent number of VMs has been deleted from your Azure subscription. You want to analyzi that occure in the future and been alerted when similar activity occur.
+You decide to create an analytics rule to create an incident when someone delete existing VM.
+
+In this exercise, you will explore an Azure Sentinel analytics rule.
+
+> [!NOTE]
+> If you choose to perform the exercise in this module be aware you may incur costs in your Azure Subscription. To estimate the cost refer to [Azure Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/)
 
 Setup
+
+
 <!-- Provide high level guidance on what needs to exist before tasks can be completed. Likely you'll point the students to a script to run. You might also have additional setup steps to include. -->
 Download and run the setup script which will configure your Azure environment for this exercise. The script will <do X>, <do Y>, and <do Z>.
 After running the script, create a resource group called ContosoResourceGroup. Details here.
