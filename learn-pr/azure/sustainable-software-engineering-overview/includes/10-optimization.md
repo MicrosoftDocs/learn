@@ -16,7 +16,7 @@ The same application measured at different times will result in different amount
 
 ## Energy
 
-The energy consumed by your application may vary every time it runs, this may be something you want to take as an optimization signal, or this may be something you want to control for.
+The energy consumed by your application may vary every time it runs, this change may be something you want to take as an optimization signal, or it may be something you want to control for.
 
 The same application run on different hardware may result in different amounts of energy consumed because of the differences in energy efficiency between the hardware components.
 
@@ -40,4 +40,4 @@ Measuring and then reducing the amount and distance your data must travel is a g
 
 ## Performance
 
-To build more performant applications is to build applications that utilize hardware and electricity more efficiently. Since hardware and electricity are proxies for carbon, if you can architect an application that performs better for the same level of utilization, this will likely reduce overall carbon.
+To build more performant applications is to build applications that utilize hardware and electricity more efficiently. Since hardware and electricity are proxies for carbon, if you can architect an application that performs better for the same level of utilization, this design will likely reduce overall carbon.
