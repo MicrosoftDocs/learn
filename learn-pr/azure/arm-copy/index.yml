@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use advanced ARM features to manage complex deployment scenarios
-summary: Learn how to
+summary: This module teaches you how to use advanced ARM features to manage complex scenarios like secrets management and conditional deployment among many things.
 abstract: |
   After completing this module, you'll be able to:
   - Control the deployment order of resources by using the _dependsOn_ construct.
@@ -36,13 +36,13 @@ prerequisites: |
 units:
   - learn.arm-copy.1-introduction
   - learn.arm-copy.2-dependencies
-  - learn.arm-copy.3-exercise-dependencies
+  - learn.arm-copy.3-dependencies-exercise
   - learn.arm-copy.4-secure-parameters
   - learn.arm-copy.5-secure-parameters-exercise
   - learn.arm-copy.6-conditions
   - learn.arm-copy.7-conditions-exercise
   - learn.arm-copy.8-copy
-  - learn.arm-copy.9-exercise-copy
+  - learn.arm-copy.9-copy-exercise
   - learn.arm-copy.10-knowledge-check
   - learn.arm-copy.11-summary
 badge:

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.arm-copy.3-exercise-dependencies
+uid: learn.arm-copy.3-dependencies-exercise
 title: Exercise - Control deployment order of resources
 metadata:
   title: Exercise - Control deployment order of resources
@@ -9,6 +9,7 @@ metadata:
   ms.date: 11/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-exercise-dependencies.md)]
+  [!include[](includes/3-dependencies-exercise.md)]
