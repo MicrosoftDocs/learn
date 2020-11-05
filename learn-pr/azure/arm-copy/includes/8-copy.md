@@ -11,21 +11,21 @@ There are different aspects to creating many instances, and iterating over const
 
 ## Creating multiple instances
 
-One of the general benefits of using looping constructs is saving you keystrokes. If what you need is repeated over and over, fairly similar in name and type, and so on, and there are only slight differences, then it's a good use case for something called the *copy element*. 
+One of the general benefits of using looping constructs is saving you keystrokes. If what you need is repeated over and over, fairly similar in name and type, and so on, and there are only slight differences, then it's a good use case for something called the *copy element*.
 
-The *copy element* is piece of JSON that can be used on many types of constructs like resources, properties, variables, and output. The syntax for the *copy element* consists of the key `copy` and with an array as value, like so **"copy": []**.  The array takes a number of elements and each element is an object `{}` consisting of set of properties. What these properties are depends on what type of construct they are used on. Typically all of the *copy element* constructs have one property in common `count`. This property decides on how many instances you want of a certain type of construct. Most constructs also allow for a `name` property that gives you a reference that you can refer to in other parts of your code. Other properties used are usually constructed specific.
+The *copy element* is piece of JSON that can be used on many types of constructs like resources, properties, variables, and output. The syntax for the *copy element* consists of the key _copy_ and with an array as value, like so **"copy": []**.  The array takes a number of elements and each element is an object `{}` consisting of set of properties. What these properties are depends on what type of construct they are used on. Typically all of the _copy_ element constructs have one property in common `count`. This property decides on how many instances you want of a certain type of construct. Most constructs also allow for a `name` property that gives you a reference that you can refer to in other parts of your code. Other properties used are usually construct-specific.
 
 ### What to choose
 
-If I can use the *copy element* on many types of constructs, which one should I choose and when, and can I use more than one type in a template?
+If I can use the _copy_ element on many types of constructs, which one should I choose and when, and can I use more than one type in a template?
 
-It all depends on your use case. A *resource iteration* allows you to create many copies of a resource and makes sense if you need many storage accounts for example. A *properties iteration* on the other hand allows you to create many properties inside of one resource. It's about saving you keystrokes and time and you know best where you have repeated parts in your template. The answer is also *yes* to be able to use the *copy element* in many places in your template. You could be using a *copy element* to create many resources but also to create many  similar variables within the same template.
+It all depends on your use case. A _resource iteration_ allows you to create many copies of a resource and makes sense to use if you need many storage accounts for example. A _properties iteration_ on the other hand allows you to create many properties inside of one resource. It's about saving you keystrokes and time and you know best where you have repeated parts in your template. The answer is also *yes* to be able to use the *copy element* in many places in your template. You could be using a *copy element* to create many resources but also to create many  similar variables within the same template.
 
 ### How does it work
 
-Ok, say I elect to use the _copy element_ how does it work, what's the end result?
+Ok, say I elect to use the _copy element_ how does it work, what's the end result? It works by  your _copy_ statement being evaluated and replaced. The replacement is the result of what you define within the _copy_ statement repeated as many time as you instructed in the `copy` field. 
 
-Let's have a look at a use case:
+Below JSON is an example of what a definition using _copy_ can look like:
 
 ```json
 "copy": [
@@ -41,7 +41,7 @@ Let's have a look at a use case:
 ]
 ```
 
-The above *copy element* expression has an entry where `count: 2`, the value of `2` means that you want the above expression to *expand* to two entries. When this instruction is run, it will therefore turn into the below JSON:
+The above _copy_ element expression has an entry where **count: 2**, the value `2` means that you want the above expression to _expand_ to two entries. When this instruction is run, it will therefore turn into the below JSON:
 
 ```json
 "dataDisks": [
@@ -65,39 +65,43 @@ From the above expression, you can see that the value of the `name` property has
 There are limits to how much can be copied. Currently the limit is at 800 entries.
 
 > [!IMPORTANT]
->  Be sure to check this [Copy element page](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/copy-resources) to know the exact limitations.
+> Be sure to check this [Copy element page](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/copy-resources) to know the exact limitations.
 
 ## Controlling the iteration
 
-There are helper functions that help you refer to specific indexes in the array. The function `copyIndex()` helps you do just that. The syntax of `copyIndex()` looks like the following code:
+There are helper functions that help you refer to specific indexes in the array. The function `copyIndex()` returns the current index. Say you are the third repeated entry, `copyIndex()` would then return the value `2`. The syntax of `copyIndex()` looks like the following code:
 
 ```json
 copyIndex(loopName, offset)
 ```
 
-The function has two different input parameters `loopName` and `offset`. The `offset` is always optional and is used to *offset* you from the current index. The `loopName` parameter is either optional or mandatory depending on where it's used. It's mandatory if used inside of a properties construct and optional if used in a resources array. Below is an example where it's mandatory:
+The `copyIndex()` function has two different input parameters `loopName` and `offset`. The `offset` is always optional and is used to _offset_ you from the current index. What ever you add as `offset` value is added to the current index. If the current index returns `2` and you specify `1` as offset the `copyIndex()` function would return `3`.
 
-  ```json
-  "properties": {
-      "storageProfile": {
-        "copy": [
-          {
-            "name": "dataDisks",
-            "count": "[parameters('numberOfDataDisks')]",
-            "input": {
-              "diskSizeGB": 1023,
-              "lun": "[copyIndex('dataDisks')]",
-              "createOption": "Empty"
+The `loopName` parameter is either optional or mandatory depending on where it's used. 
+
+- **loopName is mandatory**. It's mandatory if used inside of a _properties_ construct and optional if used in a _resources_ array. Below is an example where it's mandatory:
+
+    ```json
+    "properties": {
+        "storageProfile": {
+          "copy": [
+            {
+              "name": "dataDisks",
+              "count": "[parameters('numberOfDataDisks')]",
+              "input": {
+                "diskSizeGB": 1023,
+                "lun": "[copyIndex('dataDisks')]",
+                "createOption": "Empty"
+              }
             }
-          }
-        ]
-      }
-  }
-```
+          ]
+        }
+    }
+    ```
 
-The above JSON shows how the *copy element* is used inside of a `properties` construct and `copyIndex()` has the `loopName` specified like so **copyIndex('dataDisks')**.
+   The above JSON shows how the *copy element* is used inside of a `properties` construct and `copyIndex()` has the `loopName` specified like so **copyIndex('dataDisks')**.
 
-Let's look at the other case where `loopName` is not mandatory:
+- **loopName is optional**. Let's look at the other case where `loopName` is not mandatory:
 
   ```json
   {
@@ -107,7 +111,7 @@ Let's look at the other case where `loopName` is not mandatory:
   }
   ```
 
-Note above how a resource is being declared and `copyIndex()` is called with no parameters.
+   Above a resource is being declared and `copyIndex()` is called with no parameters as it's being used in the context of a resource.
   
 ## Configure the deployment
 

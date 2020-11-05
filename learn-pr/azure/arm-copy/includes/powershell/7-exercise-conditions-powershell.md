@@ -10,10 +10,10 @@ Before installing the required PowerShell module, make sure you have PowerShell 
 
 ## Verify installation
 
-Run `(Get-Host).Version` to verify the PowerShell version:
+Run `$PSVersionTable.PSVersion` to verify the PowerShell version:
 
 ```powershell
-(Get-Host).Version
+$PSVersionTable.PSVersion
 ```
 
 You should see a similar output:
