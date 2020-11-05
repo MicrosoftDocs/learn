@@ -114,7 +114,7 @@ AzureActivity
 10. In the **Alert grouping** section, select **Enabled** to group related alerts into incidents, and ensure that **Grouping alerts into a single incident if all the entities match (recommended)** is selected.
 11. Ensure that **Re-open closed matching incidents** is **Disabled**, and then select **Next: Automated response**.
 
-![Screenshot Analytics Incident Settings](../media/07-Incident-Settings.PNG
+![Screenshot Analytics Incident Settings](../media/07-Incident-Settings.PNG)
 
 12. In the **Automated response**  page, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
 12. Select **Next:Review**.
