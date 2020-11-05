@@ -73,7 +73,7 @@ You can use the pipe (|) character to separate commands. Then the output of the 
 
 Event
 
-| search&quot;error&quot;
+| search error;
 ```
 
 By default, Log Analytics limits queries to a time range of the past 24 hours. To set a different time range, you can add an explicit  **TimeGenerated**  filter to the query, or use the  **Time range**  control.
