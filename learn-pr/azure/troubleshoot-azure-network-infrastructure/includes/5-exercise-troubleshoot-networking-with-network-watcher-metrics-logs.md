@@ -33,7 +33,7 @@ Now, create a storage account for the NSG flow logs.
     | Subscription | Select your subscription |
     | Resource group | Select your resource group |
     | Storage account name | Create a unique name |
-    | Location | East US |
+    | Location | Select the same region as your resource group |
     | Performance | Standard |
     | Account kind | StorageV2 |
     | Replication | Read-access geo-redundant storage |
@@ -55,7 +55,7 @@ To view the NSG flow logs, you'll use Log Analytics. To install Log Analytics.
     | Log Analytics Workspace | testsworkspace |
     | Subscription | Select your subscription |
     | Resource group | Select your resource group |
-    | Location | East US |
+    | Location | Select the same region as your resource group |
     | Pricing tier | Per GB |
     | | |
 
@@ -79,9 +79,9 @@ To set up flow logs, you must configure the NSG to connect to the storage accoun
 
 1. Select **Save**.
 
-## Install Telnet on the front-end VM
+## Generate test traffic
 
-You'll use the Telnet client to test connections between the VMs. Let's install that client now.
+Now you're ready to generate some network traffic between VMs to catch in the flow log.
 
 1. On the Azure portal menu, select **All resources**, select **FrontendVM**, and then select **Connect**.
 
@@ -89,31 +89,13 @@ You'll use the Telnet client to test connections between the VMs. Let's install 
 
 1. Sign in with the username **azureuser** and the password you specified when you created the VM, and then select **Yes**.
 
-1. Select the **Start** button, enter **Windows features**, and then select **Turn Windows features on or off**.
+1. Open a PowerShell prompt, and then run this command:
 
-1. In the **Add Roles and Features** wizard, select **Next** four times to advance to the **Features** page.
-
-1. Select **Telnet Client**, select **Next**, and then select **Install**.
-
-1. When the installation is complete, select **Close**.
-
-## Generate test traffic
-
-Now you're ready to generate some network traffic between VMs to catch in the flow log:
-
-1. Open a command prompt, and then run this command:
-
-    ```cmd
-    telnet 10.10.2.4 80
+    ```PowerShell
+    Test-NetConnection 10.10.2.4 -port 80
     ```
 
-1. Run this command:
-
-    ```cmd
-    telnet 10.10.2.4 443
-    ```
-
-Both connections fail after a few seconds.
+The connection test fails after a few seconds.
 
 ## Diagnose the problem
 
@@ -141,18 +123,12 @@ An NSG rule is blocking inbound traffic to the back-end subnet from everywhere o
 
 ## Retest the connection
 
-Connections on ports 80 and 443 should now work without problems.
+Connections on port 80 should now work without problems.
 
-1. In the RDP client, connect to **FrontendVM**. At the command prompt, run this command:
+1. In the RDP client, connect to **FrontendVM**. At the PowerShell prompt, run this command:
 
-    ```cmd
-    telnet 10.10.2.4 80
+    ```PowerShell
+    Test-NetConnection 10.10.2.4 -port 80
     ```
 
-1. Run this command:
-
-    ```cmd
-    telnet 10.10.2.4 443
-    ```
-
-*Both* connections should now work.
+The connection test should now succeed.

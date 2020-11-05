@@ -2,23 +2,23 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 
 ## Get the database connection string
 
-1. Open the command palette in Visual Studio Code by pressing <kbd>F1</kbd>.
+1. In Visual Studio Code, to open the Command Palette, press <kbd>F1</kbd>.
 
-1. Type "connection string"
+1. Enter "connection string".
 
-1. Select "Azure Cosmos DB: Copy Connection String"
+1. Select **Azure Cosmos DB: Copy Connection String**.
 
-1. Select the "tailwind-xxxxx" account. Your five-digit number will be different than the ones shown in this screenshot as each database account is unique and special. Like a snowflake.
+1. Select the "tailwind-xxxxx" account. Your five-digit number will be different than the ones shown in this image as each database account is unique and special - like a snowflake.
 
    :::image type="content" source="../media/cosmos-select-account.png" alt-text="Screenshot listing all available Azure Cosmos DB accounts in the Visual Studio Code Command Palette." loc-scope="vs-code":::
 
-1. Press <kbd>Enter</kbd>
+1. Press <kbd>Enter</kbd>.
 
 ## Add connection string to local settings
 
 1. Open the `local.settings.json` file.
 
-1. In the "Values" section, add a setting for "CONNECTION_STRING" and paste in the value you copied in the previous section.
+1. In the "Values" section, add a setting for "CONNECTION_STRING", and paste in the value you copied in the previous section.
 
    ```json
    {
@@ -35,7 +35,7 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 
 Install the Azure Cosmos DB package from npm.
 
-1.  Open the terminal by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>.
+1.  To open the terminal, press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>.
 
 1.  Select the "api" project.
 
@@ -45,11 +45,11 @@ Install the Azure Cosmos DB package from npm.
     npm install @azure/cosmos
     ```
 
-## Wire up the CreateProducts function
+## Wire up the CreateProduct function
 
 1. Open the `api/CreateProduct/index.ts` file.
 
-1. Replace all of the code in the file with the following...
+1. Replace all of the code in the file with the following code.
 
    ```typescript
    import { AzureFunction, Context, HttpRequest } from "@azure/functions";
@@ -84,11 +84,11 @@ Install the Azure Cosmos DB package from npm.
    export default httpTrigger;
    ```
 
-## Wire up the GetProducts function
+## Wire up the GetProduct function
 
-1. Open the `api/GetProducts/index.ts` file.
+1. Open the `api/GetProduct/index.ts` file.
 
-1. Replace all of the code in the file with the following...
+1. Replace all of the code in the file with the following code.
 
    ```typescript
    import { AzureFunction, Context, HttpRequest } from "@azure/functions";
@@ -126,7 +126,7 @@ Install the Azure Cosmos DB package from npm.
 
 1. Open the `api/UpdateProduct/index.ts` file.
 
-1. Replace all of the code in the file with the following...
+1. Replace all of the code in the file with the following code.
 
    ```typescript
    import { AzureFunction, Context, HttpRequest } from "@azure/functions";
@@ -166,7 +166,7 @@ Install the Azure Cosmos DB package from npm.
 
 1. Open the `api/DeleteProduct/index.ts` file.
 
-1. Replace all of the code in the file with the following...
+1. Replace all of the code in the file with the following code.
 
    ```typescript
    import { AzureFunction, Context, HttpRequest } from "@azure/functions";
@@ -204,9 +204,9 @@ Install the Azure Cosmos DB package from npm.
 
 ## Test out the GetProducts endpoint from Visual Studio Code
 
-1. Press F5 to start the project
+1. To start the project, press F5.
 
-1. Navigate to the "/api/products" URL...
+1. Navigate to the "/api/products" URL.
 
    ```http
    http://localhost:7071/api/products
@@ -216,4 +216,4 @@ Install the Azure Cosmos DB package from npm.
 
     :::image type="content" source="../media/all-products.png" alt-text="Screenshot of a web browser displaying items in the products collection displayed is JSON format." loc-scope="other"::: <!-- no-loc -->
 
-This API is DONE. Excellent work. Now you'll bring the frontend web project to life like a mad scientist by pointing it at your API. Unfortunately, your browser isn't going to go for that plan at all. The reason for that is something called "Cross-Origin Resource Sharing". Let's talk about that.
+This API is DONE. Excellent work. Now you'll bring the front-end web project to life like a mad scientist by pointing it at your API. Unfortunately, your browser isn't going to go for that plan at all. The reason for that is something called "Cross-Origin Resource Sharing". Let's talk about that.
