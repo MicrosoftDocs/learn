@@ -21,10 +21,7 @@ To deploy the prerequisites for the exercise, perform the following steps.
 
 4. Select the checkbox for **I agree to the terms and conditions stated above** and then select **Purchase**
 
-[Screenshot that present Custom Deployment] (
-
-
-
+[Screenshot that present Custom Deployment] (../media/07-Custom-Deployment.PNG)
 
 > [!Note]
 
