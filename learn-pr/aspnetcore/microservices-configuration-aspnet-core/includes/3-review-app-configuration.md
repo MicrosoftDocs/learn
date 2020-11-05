@@ -1,4 +1,4 @@
-The management of configuration settings in a microservices context can become a significant problem if not handled properly. With multiple services in use, it's important to use a configuration strategy that separates code from configuration.
+Configuration management in a microservices context can become a significant problem if not handled properly. With multiple services in use, it's important to use a configuration strategy that separates code from configuration.
 
 In this unit, you'll explore how to integrate ASP.NET Core and Kubernetes configuration features with Azure App Configuration to tackle this scenario in an effective way.
 
@@ -12,12 +12,22 @@ You'll review the:
 
 ## ASP.NET Core configuration
 
-ASP.NET Core supplies a [configuration provider](/aspnet/core/fundamentals/configuration/#configuration-providers) abstraction that handles configuration sources as key-value pair collections. An app can register a chain of configuration providers. Any provider can override a value set by a provider registered earlier in the chain.
+Configuration in ASP.NET Core projects is supported by one or more .NET Core *configuration providers*. A [configuration provider](/aspnet/core/fundamentals/configuration/#configuration-providers) is an abstraction over a specific configuration source, such as a JSON file. The configuration source's values are represented as a collection of key-value pairs.
 
-Configuration key names can describe a hierarchy. For example, the notation `FeatureManagement:Coupons` refers to the `Coupons` key within the `FeatureManagement` section. This structure can also map configuration values to an object tree or an [array](/aspnet/core/fundamentals/configuration/#bind-an-array).
+An app can register a chain of configuration providers. By default, ASP.NET Core apps register the following configuration providers in the order listed:
+
+1. JSON file (*:::no-loc text="appsettings.json":::*)
+1. JSON file (*:::no-loc text="appsettings.{environment}.json":::*)
+1. User secrets (*:::no-loc text="secrets.json":::*)
+1. Environment variables
+1. Command line
+
+Each configuration provider can contribute its own key value. Furthermore, any provider can override a value from a provider that was registered earlier in the chain than itself. Given the registration order in the preceding list, a `UseFeatureManagement` command-line parameter overrides a `UseFeatureManagement` environment variable. Likewise, a `UseFeatureManagement` key in *appsettings.json* can be overridden by a `UseFeatureManagement` key stored in user secrets.
+
+Configuration key names can describe a hierarchy. For example, the notation `FeatureManagement:Coupons` refers to the `Coupons` key within the `FeatureManagement` section. This structure can also map configuration values to an object graph or an [array](/aspnet/core/fundamentals/configuration/#bind-an-array).
 
 > [!IMPORTANT]
-> Some platforms don't support a colon for environment variable names. In those cases, a double underscore (`__`) is used instead of a colon (`:`).
+> Some platforms don't support a colon in environment variable names. To ensure cross-platform compatibility, a double underscore (`__`) is used instead of a colon (`:`) to delimit keys.
 
 ASP.NET Core uses a [ConfigurationBinder](/dotnet/api/microsoft.extensions.configuration.configurationbinder) to map configuration values to objects and arrays. The mapping to key names occurs in a case-insensitive fashion. For example, `ConnectionString` and `connectionstring` are treated as equivalent keys. For more information, see [keys and values](/aspnet/core/fundamentals/configuration/#configuration-keys-and-values).
 
@@ -51,7 +61,7 @@ The ConfigMap's key-value pairs are:
 
 A centralized configuration service is especially useful in microservices apps and other distributed apps. In this module, you'll use Azure App Configuration to manage app settings and feature flags.
 
-In an ASP.NET Core app, Azure App Configuration is registered as another configuration provider in *Startup.cs*. The rest of the app doesn't know about the App Configuration service as it works with configuration values.
+In an ASP.NET Core app, Azure App Configuration is registered as another configuration provider. The rest of the app doesn't know about the App Configuration service as it works with configuration values.
 
 ## Feature Management library
 
@@ -67,15 +77,38 @@ To understand the integration of Azure App Configuration and the Feature Managem
 
 In the preceding code fragment:
 
-1. The `CreateDefaultBuilder` method registers the environment variable and file configuration providers. As a result, values can be read from environment variables and *appsettings.json*, respectively.
-1. The `ConfigureAppConfiguration` method is called to register a configuration provider for the Azure App Configuration store. The configuration provider is registered, via a call to `AddAzureAppConfiguration`, if the following conditions are satisfied:
-    1. The `UseFeatureManagement` key value in *appsettings.json* is `true`.
-    1. The Azure App Configuration connection string, found in the `AppConfig:Endpoint` key's value, has been provided.
-1. The Azure App Configuration provider is registered by providing a connection string to the resource. Feature flags support is enabled via a call to `UseFeatureFlags`.
+* The `CreateDefaultBuilder` method registers the environment variable and JSON file configuration providers. As a result, values can be read from environment variables and *appsettings.json*, respectively.
+* The `ConfigureAppConfiguration` method is called to register a configuration provider for the Azure App Configuration store. The configuration provider is registered, via a call to `AddAzureAppConfiguration`, if the following conditions are satisfied:
+  * The `UseFeatureManagement` key value in *appsettings.json* is `true`.
+  * The Azure App Configuration connection string, found in the `AppConfig:Endpoint` key's value, has been provided.
+* The Azure App Configuration provider is registered by providing a connection string to the resource. Feature flags support is enabled via a call to `UseFeatureFlags`.
 
 <!--
 1. Add the `AzureAppConfiguration` provider (line 29). Being the second in the chain of providers, it can override any value taken from the ConfigMap.
-1. Set the configuration refresh rate from the App Configuration store (line 35). -->
+1. Set the configuration refresh rate from the App Configuration store (line 35).
+
+Configuration providers can be combined to load settings from multiple sources. Configuration is automatically added when using the default application host.
+
+The order in which configuration providers are called/registered is important. The order affects the final configuration values. A set of default providers are added by the host builder.
+
+`ConfigureAppConfiguration` is called on the `IHostBuilder`. It causes the default configuration providers to be added.
+
+config.AddJsonFile (appsettings.json)
+config.AddJsonFile (appsettings.{env}.json)
+config.AddUserSecrets
+config.AddEnvironmentVariables
+config.AddCommandLine
+
+If command-line arguments have been provided when the app starts, those arguments override those found in the other configuration providers. Each provider can contribute its own key value. The last value provided by a provider is the one that wins. For cross-platform compatibility, a double underscore is used instead of a colon to delimit keys.
+
+With environment variables, the colon doesn't work on all platforms. Therefore, __ is used instead.
+
+With the rise of containers, environment variables are a cross-platform and container-compatible way to provide runtime configuration.
+
+The Azure App Configuration provider should supersede the other providers. Therefore, it's registered last in the ConfigureAppConfiguration method.
+
+You can access the list of registered providers by analyzing the builder.Sources property inside of ConfigureAppConfiguration. builder.Sources.Clear(); would give you clean starting point, with no providers registered.
+-->
 
 ## Review the app's feature flag components
 
@@ -111,7 +144,7 @@ The feature flag directive is used in any `div` element to determine whether it 
 
 ### Feature Management middleware for querying values
 
-A custom middleware, found at *src\Web\WebSPA\Infrastructure\Middlewares\FeatureManagementMiddleware.cs*, is a key component of the SPA's feature flag system. The middleware allows you to query the specific feature flag values so they can be used in the SPA:
+A custom middleware, found at *src\Web\WebSPA\Infrastructure\Middlewares\FeatureManagementMiddleware.cs*, is a key component of the SPA's feature flag system. The middleware queries the specific feature flag values so they can be used in the SPA:
 
 :::code language="csharp" source="../code/src/web/webspa/infrastructure/middlewares/featuremanagementmiddleware.cs" id="snippet_Invoke" highlight="8":::
 
