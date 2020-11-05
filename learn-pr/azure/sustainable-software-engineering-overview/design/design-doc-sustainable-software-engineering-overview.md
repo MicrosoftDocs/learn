@@ -36,7 +36,7 @@ NOTE: See https://docs.microsoft.com/api/learn/catalog/ for list.
 
 ## Summary
 
-Sustainable Software Engineering is an emerging discipline at the intersection of climate science, software, hardware, electricity markets, and data canter design. The Principles of Sustainable Software Engineering are a core set of competencies needed to define, build, and run sustainable software applications.
+Sustainable Software Engineering is an emerging discipline at the intersection of climate science, software, hardware, electricity markets, and data center design. The Principles of Sustainable Software Engineering are a core set of competencies needed to define, build, and run sustainable software applications.
 
 ## Learning objectives
 
@@ -56,7 +56,7 @@ Identify the subtasks of *TBD*
 
 1. **Introduction**
 
-    Sustainable Software Engineering is an emerging discipline at the intersection of climate science, software, hardware, electricity markets, and data canter design.
+    Sustainable Software Engineering is an emerging discipline at the intersection of climate science, software, hardware, electricity markets, and data center design.
 
     The Principles of Sustainable Software Engineering are a core set of competencies needed to define, build, and run sustainable software applications.
 
@@ -123,7 +123,7 @@ Identify the subtasks of *TBD*
 
 1. **Optimization: Focus on step-by-step optimizations that increase the overall carbon efficiency**
 
-    Sustainability isn't one optimization, it's thousands. One piece of advice is to look end-to-end and take it step-by-step. Often putting in the effort to understand the full stack, from user experience to data canters and even electricity grids yield simple solutions that significantly improve carbon efficiency.
+    Sustainability isn't one optimization, it's thousands. One piece of advice is to look end-to-end and take it step-by-step. Often putting in the effort to understand the full stack, from user experience to data centers and even electricity grids yield simple solutions that significantly improve carbon efficiency.
 
     Weigh up the effort required to decarbonize vs. the potential rewards. Just like the broader global sustainability movement, some sectors will be harder to decarbonize than others. In computing, some application domains will be harder to decarbonize than others. Some parts of your application architecture will be harder to decarbonize than others.
 
