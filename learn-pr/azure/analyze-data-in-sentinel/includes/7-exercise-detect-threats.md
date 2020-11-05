@@ -8,6 +8,7 @@ To deploy the prerequisites for the exercise, perform the following steps.
 
 2. You will be promted to sign in your Azure subscription.
 3. In the **Custom deployment** page provide the following information:
+
 |||
 | --- | --- |
 | **Subscription** | Select your Azure subscription |
