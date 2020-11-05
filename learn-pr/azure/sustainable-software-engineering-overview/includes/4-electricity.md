@@ -24,8 +24,8 @@ Electricity is often reported as either Power or Energy, which are two different
 
 A common way of referring to energy consumption is _Power over a unit of Time, such as Watt-seconds or Kilowatt-hours_. For example:
 
-- 20 Watt-seconds or 20Ws is the amount of power you would get if 20W were run for one second. Since 1 Watt is 1 Joule per second, this is 20 Joules.
+- 20 Watt-seconds or <nobr>20 Ws</nobr> is the amount of power you would get if <nobr>20 W</nobr> were run for one second. Since 1 Watt is 1 Joule per second, this is 20 Joules.
 
-- 20 Kilowatt-hours or 20 kWh is the amount of energy you would get if 20,000 Watts were running for one hour.
+- 20 Kilowatt-hours or <nobr>20 kWh</nobr> is the amount of energy you would get if 20,000 Watts were running for one hour.
 
     <nobr>Energy = 60 &#10005; 60 &#10005; 20,000 = 72,000,000 Joules = 72 Megajoules (72 MJ)</nobr>

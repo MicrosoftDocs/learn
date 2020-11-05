@@ -1,4 +1,4 @@
-Utilization is a measure of how much of a computer's resources are being used, usually given as a percent. An idle computer has a low utilization percentage and isn't being utilized, a computer running at its maximum capacity has a high percentage and is being fully utilized.
+Utilization is a measure of how much of a computer's resources are being used, which is usually represented as a percentage. An idle computer has a low utilization percentage and isn't being utilized, a computer running at its maximum capacity has a high percentage and is being fully utilized.
 
 [Energy proportionality](https://en.wikipedia.org/wiki/Energy_proportional_computing) is a measure of the relationship between power consumed in a computer system and the rate at which useful work is done (its utilization). If the overall power consumption is proportional to the computer's utilization, then it is said to be energy proportional.
 
@@ -8,7 +8,7 @@ This means that the relationship between power and utilization is not proportion
 
 ![Power versus utilization.](../media/7-energy-proportionality-1.svg)
 
-At 0% utilization, the computer still draws 100W; at 50% utilization, it draws 180W, and at 100% utilization, it draws 200W. The relationship between power consumption and utilization is not linear, and it doesn't cross the origin.
+At 0% utilization, the computer still draws <nobr>100 W</nobr>; at 50% utilization, it draws <nobr>180 W</nobr>, and at 100% utilization, it draws <nobr>200 W</nobr>. The relationship between power consumption and utilization is not linear, and it doesn't cross the origin.
 
 Because of this, **the more you utilize a computer, the more efficient it becomes at converting electricity to useful computing operations**. Running your work on as few servers as possible with the highest utilization rate maximizes their energy efficiency.
 
@@ -26,6 +26,6 @@ Clock speed (frequency) is the operating speed of a computer or its microprocess
 
 Clock speed denotes how fast a computer can execute instructions.
 
-The energy efficiency of microprocessors changes with clock speed, high clock speeds are often **less** energy-efficient than low clock speeds. For example, in the I7-3770K system, you can run at 3.5GHz for 50W, or about 5GHz for 175W. An approximate 40% increase in clock speed requires <nobr>&gt;3X</nobr> power increase.
+The energy efficiency of microprocessors changes with clock speed, high clock speeds are often **less** energy-efficient than low clock speeds. For example, in the I7-3770K system, you can run at <nobr>3.5 GHz</nobr> for <nobr>50 W</nobr>, or about <nobr>5 GHz</nobr> for <nobr>175 W<nobr>. An approximate 40% increase in clock speed requires <nobr>&gt;3&#10005;</nobr> power increase.
 
 Because of this, at times of low utilization, reducing the clock speed can increase energy efficiency, maximizing the energy efficiency of hardware.
