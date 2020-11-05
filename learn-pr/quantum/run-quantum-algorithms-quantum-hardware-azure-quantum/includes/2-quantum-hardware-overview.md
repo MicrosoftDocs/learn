@@ -132,7 +132,7 @@ of quantum computers to run your own quantum algorithms.
 Azure Quantum is a cloud computing hub where you can connect to different
 industry leader providers to use their most advanced quantum computers.
 
-![Alt_text=Diagram of the Azure Quantum service](azure-quantum-flow-diagram.png).
+![Alt_text=Diagram of the Azure Quantum service](../media/azure-quantum-flow-diagram.png).
 
 You just need an Azure subscription to start submitting quantum computing jobs
 to Azure Quantum. These jobs will be queued by the provider to be run in the
