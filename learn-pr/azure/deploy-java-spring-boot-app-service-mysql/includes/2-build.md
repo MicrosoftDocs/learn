@@ -17,7 +17,7 @@ You can also use Azure Spring Starter integration libraries to configure and set
 
 ### Azure CLI
 
-Azure CLI is a command-line interface used to create and manage Azure resources.
+Azure Command Line Interface (Cli) is a tool used to create and manage Azure resources.
 It runs on Linux, macOS, and Windows and allows administrators and developers to execute their commands through a terminal or command-line prompt (or script!) instead of a web browser. For example, to get the details of a subscription, you would use the following command:
 
 ```bash
