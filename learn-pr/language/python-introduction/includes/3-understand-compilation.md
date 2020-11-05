@@ -4,7 +4,7 @@ We previously said that source code must be compiled before it can run. In this 
 
 After you finish writing your source code, you often use a special program called a _compiler_. This program converts source code into a format that a computer's CPU can run.
 
-Why do you need to compile your source code? Most programming languages seem cryptic at first. But they're more easily understood by humans than are a computer's preferred form of communication. That communication is expressed by turning on and off thousands of tiny switches. Compilers bridge these two worlds by translating instructions readable by humans into instructions understood by computers.
+Why do you need to compile your source code? Most programming languages seem cryptic at first. But a programming language is actually intended to bridge a gap between humans and computers.  Humans speak using a human language, but a computer needs instructions that can be converted into a binary language that it processes by turning on and off thousands of tiny switches. Compilers bridge these two worlds by translating instructions readable by humans into instructions understood by computers.
 
 Those instructions are collected and compacted together into a single file, which can be run by a user.
 

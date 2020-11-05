@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.build-dotnet-applications-csharp
+metadata:
+  title: Build .NET applications with C#
+  description: .NET is a free, cross-platform, open source developer platform for building many different types of applications. With .NET, you can use multiple languages, editors, and libraries to build for web, mobile, desktop, games, and IoT.
+  ms.date: 10/26/2020
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+title: Build .NET applications with C#
+summary: |
+  .NET is a free, cross-platform, open source developer platform for building many different types of applications. With .NET, you can use multiple languages, editors, and libraries to build for web, mobile, desktop, games, and IoT.
+prerequisites: |
+  - Local installation of [.NET Core SDK](https://dotnet.microsoft.com/download)
+  - [Visual Studio Code](https://code.visualstudio.com)
+  - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
+iconUrl: /learn/achievements/build-dotnet-applications-csharp.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+modules:
+- learn.languages.csharp-write-first
+- learn.languages.dotnet-introduction
+- learn.dotnet-dependencies
+- learn.dotnet-debug
+- learn.dotnet-files
+- learn.build-web-api-net-core
+trophy:
+  uid: learn.build-dotnet-applications-csharp.trophy
