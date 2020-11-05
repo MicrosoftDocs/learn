@@ -42,7 +42,7 @@ The first thing we'll create is a managed MySQL server.
 > [!NOTE]
 > If you want to know more about az mysql server create and other Azure CLI commands, you can find a link to documentation at the end of this tutorial".
 
-Run the following script to create a small Azure MySQL Database with one Cpu and 2 GB RAM:
+Run the following script to create a small Azure MySQL Database with 1 CPU and 2-GB RAM:
 
 ```bash
 az mysql server create \
@@ -101,7 +101,7 @@ az mysql db create \
 
 The Spring Initializr is a web application that generates a Spring Boot project structure for you.
 The Spring Initializr doesn’t generate any application code, but it will give you a basic project structure and a Maven build specification.
-Next we will generate our application scaffold with three dependencies: web, mysql, and data-jpa.
+Next we'll generate our application scaffold with three dependencies: web, mysql, and data-jpa.
 Notice we don't need to specify Azure dependencies as we plan to run our application locally also.
 
 Generate the application on the command line by entering:

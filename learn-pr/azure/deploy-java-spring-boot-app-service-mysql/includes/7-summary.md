@@ -1,4 +1,4 @@
-Congratulations! You have deployed to a Spring Boot Web App to Azure App Service.
+Congratulations! You've deployed to a Spring Boot Web App to Azure App Service.
 
 Your company wanted to learn how they could migrate their existing Spring Boot Java web apps to Azure App Service. You used the following steps:
 
@@ -33,7 +33,7 @@ This command may take a minute to run.
 
 For more information about Spring Data JDBC, see Spring's [reference documentation](https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/#reference).
 
-For more information about Azure Application Insights Spring Boot Starter for end-to-end monitoring, see [Azure Application insights](https://docs.microsoft.com/en-us/azure/developer/java/spring-framework/configure-spring-boot-java-applicationinsights)
+For more information about Azure Application Insights Spring Boot Starter for monitoring, see [Azure Application insights](https://docs.microsoft.com/en-us/azure/developer/java/spring-framework/configure-spring-boot-java-applicationinsights)
 
 For more information about using Azure with Java, see [Azure for Java developers](../index.yml) and [Working with Azure DevOps and Java](/azure/devops/).
 
