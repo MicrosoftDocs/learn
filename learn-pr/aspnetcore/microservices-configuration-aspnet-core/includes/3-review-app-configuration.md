@@ -39,7 +39,7 @@ In Kubernetes, one abstraction to handle configuration as a collection of plain 
 
 The ConfigMap's key-value pairs are:
 
-* Stored in the `data` field of the YAML.
+* Stored in the `data` field of the YAML, as highlighted in the preceding snippet.
 * Presented to the containerized app as environment variables.
 * The primary mechanism to persist .NET Core configuration values in microservices apps.
 
