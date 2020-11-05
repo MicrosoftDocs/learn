@@ -20,8 +20,8 @@ You must also assign a role to the service principal, which authorizes that app 
 To create a service principal in Azure:
 
 1. Go to the [Azure portal](https://portal.azure.com/) and in the navigation on the left, click **Azure Active Directory**.
-1. Click **App registrations**, and then click **New application registration**.
-1. Give the service principal a name, choose **Web App/API** for the application type, and specify a sign-on URL where users go for authentication.
+1. Click **App registrations**, and then click **New registration**.
+1. Give the service principal a name, choose **Web** for the application type, and specify a sign-on URL where users go for authentication.
 1. Create a new key for the app and make a note of it; your app must supply this key as part of its credentials.
 1. Make a note of the **Directory ID**; this is a GUID that uniquely identifies the Active Directory that contains the service principal and is also referred to as the **Tenant ID**.
 1. Assign the new service principal to a role that has sufficient permissions to access the resources you need. For example, the **Contributor** role on a resource group grants access to all the resources in that group, including any Azure Monitor resources.

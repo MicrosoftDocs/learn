@@ -1,6 +1,6 @@
 :::row:::
   :::column span="3":::
-Azure Blob Storage is an object storage solution for the cloud. It can store massive amounts of unstructured data, such as text or binary data. Azure Blob Storage is unstructured, meaning that there are no restrictions on the kinds of data it can hold. Blobs are highly scalable and apps work with blobs similarly to how they work with files on a disk, such as by reading and writing data. Blob Storage can manage thousands of simultaneous uploads, massive amounts of video data, constantly growing log files, and can be reached from anywhere with an internet connection.
+Azure Blob Storage is an object storage solution for the cloud. It can store massive amounts of data, such as text or binary data. Azure Blob Storage is unstructured, meaning that there are no restrictions on the kinds of data it can hold. Blob Storage can manage thousands of simultaneous uploads, massive amounts of video data, constantly growing log files, and can be reached from anywhere with an internet connection.
   :::column-end:::
   :::column:::
     :::image type="icon" source="../media/icon-azure-blob-storage.png" border="false":::
@@ -16,8 +16,7 @@ Blob Storage is ideal for:
 - Streaming video and audio.
 - Storing data for backup and restore, disaster recovery, and archiving.
 - Storing data for analysis by an on-premises or Azure-hosted service.
-
-With Blob Storage, you can stream large video or audio files directly to the user's browser from anywhere in the world. Blob Storage can store up to 8 TB of data for virtual machines.
+- Storing up to 8 TB of data for virtual machines.
 
 You store blobs in containers, which helps you organize your blobs depending on your business needs.
 
