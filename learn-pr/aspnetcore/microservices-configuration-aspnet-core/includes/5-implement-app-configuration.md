@@ -39,11 +39,12 @@ In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, uncomment 
 
 The `AppConfig__Endpoint` line will resemble the following YAML:
 
-<!--TODO: should we store this connection string in Key Vault instead?-->
-
 ```yaml
 AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;Id=<id>;Secret=<secret>"
 ```
+
+> [!TIP]
+> Your App Configuration connection string contains a plain text secret. In real world apps, consider integrating Azure App Configuration with Azure Key Vault for secure storage of secrets. Key Vault is out of scope for this module, but guidance can be found at [Tutorial: Use Key Vault references in an ASP.NET Core app](/azure/azure-app-configuration/use-key-vault-references-dotnet-core).
 
 ## Add the feature flag for Coupons
 
