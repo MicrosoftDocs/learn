@@ -8,7 +8,7 @@ At the end of this module, you will:
 - Run SSIS package in Azure
 - Migrate SSIS packages to Azure
 
-Prerequisite
+## Prerequisite
 
 Before taking this module, it is recommended that the student is able to:
 
