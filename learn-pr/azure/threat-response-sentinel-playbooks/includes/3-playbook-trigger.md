@@ -3,9 +3,7 @@ Now, that you understand little more about Azure Sentinel playbooks, let&#39;s s
 
 ## Exploring the Playbooks page
 
-You start to automated respond to threats in the Playbooks page. Here you can see all the playbooks that are created from Azure Logic Apps. The column **Trigger kind** , present what type of connectors are used in the logic app.
-<!-- Replace "automated" with "automate". -->
-<!-- Remove extra space between "kind" and ",". -->
+You start to automate respond to threats in the Playbooks page. Here you can see all the playbooks that are created from Azure Logic Apps. The column **Trigger kind**, present what type of connectors are used in the logic app.
 
 ![](RackMultipart20201028-4-1cv98ih_html_8f13ea8ce93a89d2.png)
 
@@ -21,8 +19,7 @@ The following options are available in the Header bar
 - The **Enable**, **Disable**, and **Delete** buttons are only available if one or more logic apps are selected.
 - The **Logic Apps documentation** button provides links to official Microsoft Docs with more information on logic apps.
 
-So, Contoso want to prevent access to their network from suspicious users with automated action and their security administrator create a playbook by clicking **Add Playbook** button. He will be directed to the page where he should create a new Logic App by providing inputs for the following settings:
-<!-- Replace "want" with "wants". -->
+So, Contoso wants to prevent access to their network from suspicious users with automated action and their security administrator create a playbook by clicking **Add Playbook** button. He will be directed to the page where he should create a new Logic App by providing inputs for the following settings:
 
 - **Subscription** - Select the subscription that contains Azure Sentinel workplace
 - **Resource Group** - You can use existing or create a new resource group
