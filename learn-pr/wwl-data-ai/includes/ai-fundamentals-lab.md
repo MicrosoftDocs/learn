@@ -25,9 +25,10 @@ To run the notebook used in this exercise, you will need a compute instance in y
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true) , view the **Compute** page (under **Manage**).
 2. On the **Compute Instances** tab, create a new compute instance with the following settings:
-    - **Compute name**: *enter a unique name*
+    - **Region**: *choose any available location*
     - **Virtual Machine type**: CPU
     - **Virtual Machine size**: Standard_DS11_v2
+    - **Compute name**: *enter a unique name*
 3. Wait for the compute instance to start (this may take a minute or so)
 
 ### Download the exercise files
