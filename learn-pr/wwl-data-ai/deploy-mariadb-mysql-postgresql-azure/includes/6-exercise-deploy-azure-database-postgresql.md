@@ -1,20 +1,24 @@
-As a database administrator, you'll set up a new Azure Database for PostgreSQL for testing. You've been asked to evaluate how Azure Data Studio can be used in your company to support its existing PostreSQL estate.
+As a database administrator, you'll set up a new Azure Database for PostgreSQL for testing. You've been asked to evaluate how Azure Data Studio can be used in your company to support its existing PostgreSQL estate.
 
 ## Deploy a PostgreSQL Database
 
 1. When the VM lab environment opens use the password on the Resources tab for the Student account.
 
-1. Select the Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/).
+1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/). This should be the home page of the browser.
 
-1. The username and password information to sign into the Azure Portal are in the  **Resources** tab above these instructions. If you select the **Username** the environment will type the text for you.
+1. The username and password information to sign into the Azure portal are in the  **Resources** tab above these instructions. If you select the **Username** it will be filled in for you.
 
-1. Repeat this for the password field.
+1. Select **Next**.
 
-1. From the Azure Portal, select on **+ Create a Resource** at the top of the left side navigation bar.
+1. Select the **Password** field to have that filled in for you, then select **Sign in**.
 
-    :::image type="content" source="../media/dp-3300-module-22-lab-34.png" alt-text="Screenshot of selecting the create a resource link.":::
+1. Select **Yes**.
 
-1. Search for "postgresql" in the search box at the top, then select **Azure Database for PostgreSQL** in the results.  
+1. On the **Welcome to Azure** popup, select **Maybe later**.
+
+1. From the Azure portal, select **+ Create a Resource**.
+
+1. Search for **postgresql** in the search box at the top, then select **Azure Database for PostgreSQL** in the results.  
 ‎
     :::image type="content" source="../media/dp-3300-module-22-lab-35.png" alt-text="Screenshot of selecting Azure Database for PostgreSQL from the search results.":::
 
@@ -27,13 +31,12 @@ As a database administrator, you'll set up a new Azure Database for PostgreSQL f
 1. Complete the Single Server Basics screen with the following information:
 
     ‎:::image type="content" source="../media/dp-3300-module-22-lab-38.png" alt-text="Screenshot of single server options completed.":::
-
-    - Subscription: Select the lab subscription
-    - Resource Group: **DP-300-Lab02**
-    - Server Name: **dp300-lab02-&lt;your initials&gt;** (add additional characters as a server name must be unique)
+postgresql
+    - Resource Group: **DeploySQLAzure**
+    - Server Name: **postgresql-azure-&lt;your initials&gt;** (add additional characters as a server name must be unique)
     - Data source: **None**
     - Location: Select the Region closest to you, which has been used throughout this lab.
-    - Version: **10** or **11**
+    - Version: **10**
     - Select **Configure Server** link under **Compute + Storage**.
 
         :::image type="content" source="../media/dp-3300-module-22-lab-37.png" alt-text="Screenshot of ":::
@@ -42,9 +45,9 @@ As a database administrator, you'll set up a new Azure Database for PostgreSQL f
         - Slide the vCore slider all the way to the left to select **1 vCore**.
         - Select **OK**.
 
-    - Admin username: **dp300admin**
-    - Password: Enter a strong password
-    - Confirm password: Enter the same strong password
+    - Admin username: **labadmin**
+    - Password: **Azur3Pa$$2020**
+    - Confirm password: **Azur3Pa$$2020**
 
 1. Select **Review + Create**.
 
@@ -52,15 +55,13 @@ As a database administrator, you'll set up a new Azure Database for PostgreSQL f
 
 1. When the deployment is complete, select **Go to resource**.
 
-## Enable All Azure Services Access to PostgreSQL Database
+## Enable All Azure Services Access to a PostgreSQL Database
 
-1. Select on the **Connection security** button under Settings in the database's sidebar.
-‎
-    :::image type="content" source="../media/dp-3300-module-22-lab-39.png" alt-text="Screenshot of ":::
+1. Select **Connection security** under Settings on the left navigation.
 
-1. Slide the Allow access to Azure services setting to **Yes**.
+1. Select **Allow access to Azure services** setting to **Yes**.
 ‎
-    :::image type="content" source="../media/dp-3300-module-22-lab-40.png" alt-text="Screenshot of ":::
+    :::image type="content" source="../media/dp-3300-module-22-lab-40.png" alt-text="Screenshot of adding a client address IP and allowing Azure to access services.":::
 
 1. Select **+ Add client IP**.
 
@@ -68,29 +69,34 @@ As a database administrator, you'll set up a new Azure Database for PostgreSQL f
 
 1. On the left select **Overview**, then copy the **Server name** from the top right.
 
+    :::image type="content" source="../media/dp-3300-module-22-lab-45.png" alt-text="Screenshot of selecting the server name.":::
+
 ## Connect to the PostgreSQL Database with Azure Data Studio (ADS)
 
 > [!NOTE]
 > With the PostgreSQL extension installed to ADS, PostgreSQL can be queried. This extension is pre-installed on the lab VM.
 
-1. In Azure Data Studio on the lab VM, ensure the Connections sidebar is expanded.
-1. Select **Connections** button in the left nav bar, if not.
+1. In Azure Data Studio, ensure the Connections sidebar is expanded.
 
-1. Select **New Connection** button  
+1. Select the **Connections** button in the left nav bar, if not.
+
+1. Select **Add Connection**.
 ‎
-    :::image type="content" source="../media/dp-3300-module-22-lab-41.png" alt-text="Screenshot of ":::
+    :::image type="content" source="../media/dp-3300-module-22-lab-41.png" alt-text="Screenshot of selecting Add connection.":::
 
 1. In the Connection Details sidebar, enter the following information to connect to the previous Task's PostgreSQL database:
 
+    :::image type="content" source="../media/dp-3300-module-22-lab-42.png" alt-text="Screenshot of adding connection details.":::
+
     - Connection Type: **PostgreSQL**
 
-    - Server: Paste the name you copied form the Azure Portal.
+    - Server: Paste the name you copied form the Azure portal.
 
     - Authentication Type: **Password**
 
-    - User name: **dp300admin@[hostname]** (note that the user name must include the hostname. This is the first part up to the period in the server name.)
+    - User name: **labadmin@postgresql-azure-&lt;your initials&gt;** (note that the user name must include the hostname. This is the first part up to the period in the server name.)
 
-    - Password: The strong password you used to create the PostgreSQL in the portal.
+    - Password: **Azur3Pa$$2020**
 
     - Database name: **&lt;default&gt;**
 
@@ -98,17 +104,15 @@ As a database administrator, you'll set up a new Azure Database for PostgreSQL f
 
     - Name (optional): You can add a friendly name for the database server if you like. It can be left blank.
 
-1. Review the connection settings.  
-‎
-    :::image type="content" source="../media/dp-3300-module-22-lab-42.png" alt-text="Screenshot of ":::
-
 1. Select **Connect**.
 
 1. Azure Data Studio is now connected to your PostgreSQL database server.  
 ‎
-    :::image type="content" source="../media/dp-3300-module-22-lab-43.png" alt-text="Screenshot of ":::
+    :::image type="content" source="../media/dp-3300-module-22-lab-43.png" alt-text="Screenshot of being connected to the database.":::
 
-1. Double-click on the **postgres** database.
+1. Select **Databases**. Double-click on the **postgres** database.
+
+    :::image type="content" source="../media/dp-3300-module-22-lab-46.png" alt-text="Screenshot of selecting a New Notebook.":::
 
 1. Select **New Notebook**.
 
@@ -123,4 +127,6 @@ As a database administrator, you'll set up a new Azure Database for PostgreSQL f
 
     :::image type="content" source="../media/dp-3300-module-22-lab-44.png" alt-text="Screenshot of ":::
 
-1. View the results form the query.
+1. View the results from the query.
+
+You've now seen how easy it is to create a hosted version of PostgreSQL on Azure.
