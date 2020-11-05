@@ -36,12 +36,12 @@ Windows 環境と Linux 環境を用意し、利用者の希望に応じて、�
 
 | Runtime Stack |  Java 11  |  Java 8  |
 | ---- | ---- | ---- |
-| Java Web Server Stack |  Java SE (Embedded Web Server)  |  Java SE (Embedded Web Server)  |
-| Java Web Server Stack |  Tomcat 9.0  |  JBoss EAP 7.2 (Preview)  |
-| Java Web Server Stack |  Tomcat 8.5  |  Tomcat 9.0  |
-| Java Web Server Stack |  Tomcat 8.0  |  Tomcat 8.5  |
-| Java Web Server Stack |  Tomcat 7.0  |  Tomcat 8.0  |
-| Java Web Server Stack |  | Tomcat 7.0  |
+|Java Web Server Stack|  Java SE (Embedded Web Server)  |  Java SE (Embedded Web Server)  |
+|^|   |  JBoss EAP 7.2 (Preview)  |
+|^| Tomcat 9.0   |  Tomcat 9.0  |
+|^| Tomcat 8.5   |  Tomcat 8.5  |
+|^| Tomcat 8.0   |  Tomcat 8.0  |
+|^| Tomcat 7.0  | Tomcat 7.0  |
 
 
 今回の ToDo サンプル・アプリケーションは Tomact 9.0.39 上で稼働しますので、Tomcat 9.0 を選択します。
