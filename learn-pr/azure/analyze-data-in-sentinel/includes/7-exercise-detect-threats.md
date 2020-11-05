@@ -38,6 +38,8 @@ In this task, you will deploy Azure Sentinel connector to Azure Activity.
 5. Click on your subscription and then click **Connect.**
 6. When you receive status **Connected** , you can close all open blades to return on **Azure Sentinel| Data connector** blade.
 
+[Screenshot that present Azure Sentinel Connector] (../media/07-Azure-Sentinel-Connector.PNG)
+
 > [!Note]
 
 > The connector for Azure Activity could take 15 minutes until shows some date in the Azure Sentinel.
