@@ -8,43 +8,17 @@ To deploy the prerequisites for the exercise, perform the following steps.
 
 
 
-## Deploy Azure Sentinel
-
-**Task 1: Deploy Azure Sentinel**
-
-In this task, you will deploy Azure Sentinel.
-
-1. Sign in to the [Azure portal](http://portal.azure.com/).
-2. In the Azure portal, search for and select Azure Sentinel and, on the **Azure Sentinel workspaces** blade, click **+ Add.**
-3. On the **Add Azure Sentinel to a workspace** blade, click **+ Create a new workspace.**
-4. On the  **Create Log Analytics workspace** blade, specify the following settings:
-
-| **Settings** | **Value** |
-| --- | --- |
-| Subscription | the name of the Azure subscription you are using in this lab |
-| --- | --- |
-| Resource group | the name of a new resource group  **sentinel** |
-| Name | _ **Yourname-** _**Sentinel (**unique name) |
-| Region | region that is closer to you |
-
-5. Click  **Review + Create**  and then click  **Create**.
 
 > [!Note]
 
-> Wait for the deployment to complete. The deployment should take less than 1 minute.
-
-1. Once that the Workspace is created, in **Add Azure Sentinel**** to a workspace **blade, click** Add.**
-
-> [!Note]
-
-> Wait for the deployment to complete. The deployment should take less than 1 minute.
+> Wait for the deployment to complete. The deployment should take less than 5 minute.
 
 **Task 2: Configure Azure Sentinel Connectors**
 
 In this task, you will deploy Azure Sentinel connector to Azure Activity.
 
 1. In the Azure portal, search for and select Azure Sentinel and select the previously created Sentinel workspace.
-2. In the **Azure Sentinel** blade, on the left side in the menu bar, in the **Configuration** section, select **Data connectors.**
+2. In the **Azure Sentinel** page, on the left side in the menu bar, in the **Configuration** section, select **Data connectors.**
 3. In the **Data connectors** pane, search for and select **Azure Activity.** In the detailed pane on the right site click on **Open connector page.**
 4. In the **Azure Activity** pane, click on the link **Configure Azure Activity logs**.
 5. Click on your subscription and then click **Connect.**
