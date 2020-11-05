@@ -97,7 +97,7 @@ az mysql db create \
     | jq
 ```
 
-### Generate the application by using Spring Initializr
+## Generate the application by using Spring Initializr
 
 The Spring Initializr is a web application that generates a Spring Boot project structure for you.
 It doesn’t generate any application code, but it will give you a basic project structure and a Maven build specification to build your code with.
@@ -139,7 +139,7 @@ You should now be able to start your application by using the provided Maven wra
 
 Here's a screenshot of the application running for the first time:
 
-[![The running application](media/configure-spring-data-jpa-with-azure-mysql/create-mysql-01.png)](media/configure-spring-data-jpa-with-azure-mysql/create-mysql-01.png#lightbox)
+![The running application.](../media/3-spring-boot-01.png)
 
 ## Code the application
 
@@ -278,6 +278,11 @@ Finally, halt the application and start it again using the following command:
 ./mvnw spring-boot:run
 ```
 
+The Spring Boot Application should start and connect to your database.
+Here's a screenshot of the application connecting to the database:
+
+![The running application.](../media/3-spring-boot-02.png)
+
 ## Test the application
 
 To test the application, you can use cURL.
@@ -308,7 +313,3 @@ This command will return the list of "todo" items, including the item you've cre
 ```json
 [{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot App correctly!","done":true}]
 ```
-
-Here's a screenshot of these cURL requests:
-
-[![Test with cURL](media/configure-spring-data-jpa-with-azure-mysql/create-mysql-02.png)](media/configure-spring-data-jpa-with-azure-mysql/create-mysql-02.png#lightbox)
