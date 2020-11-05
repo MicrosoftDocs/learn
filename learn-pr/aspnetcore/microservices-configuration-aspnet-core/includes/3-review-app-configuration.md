@@ -7,14 +7,14 @@ You'll review the:
 * ASP.NET Core configuration infrastructure.
 * Kubernetes configuration abstraction&mdash;the ConfigMap.
 * Azure App Configuration service.
-* ASP.NET Core Feature Management library.
+* .NET Feature Management library.
 * Feature flag components implemented in the app.
 
 ## ASP.NET Core configuration
 
 Configuration in an ASP.NET Core project is supported by one or more .NET Core *configuration providers*. A [configuration provider](/aspnet/core/fundamentals/configuration/#configuration-providers) is an abstraction over a specific configuration source, such as a JSON file. The configuration source's values are represented as a collection of key-value pairs.
 
-An app can register a chain of configuration providers. By default, ASP.NET Core apps register the following configuration providers in the order listed:
+An ASP.NET Core app can register a chain of configuration providers to read settings from multiple sources. With the default application host, the following configuration providers are automatically registered in the order listed:
 
 1. JSON file (*:::no-loc text="appsettings.json":::*)
 1. JSON file (*:::no-loc text="appsettings.{environment}.json":::*)
@@ -51,7 +51,7 @@ In an ASP.NET Core app, Azure App Configuration is registered as another configu
 
 ## Feature Management library
 
-The *Feature Management* library, distributed as a NuGet package named `Microsoft.FeatureManagement`, provides standardized APIs for managing feature flags within apps. It's designed to work with any configuration source, including Azure App Configuration. Combining this library with Azure App Configuration enables you to dynamically toggle features without implementing supporting infrastructure.
+The *Feature Management* library, distributed as a NuGet package named `Microsoft.FeatureManagement`, provides standardized .NET APIs for managing feature flags within apps. It's designed to work with any configuration source, including Azure App Configuration. Combining this library with Azure App Configuration enables you to dynamically toggle features without implementing supporting infrastructure.
 
 Like Azure App Configuration, the Feature Management library also builds on ASP.NET Core's configuration abstraction. They integrate together to provide a complete feature management solution.
 
@@ -63,21 +63,13 @@ To understand the integration of Azure App Configuration and the Feature Managem
 
 In the preceding `CreateHostBuilder` method fragment:
 
-* The `CreateDefaultBuilder` method registers the environment variable and JSON file configuration providers. As a result, values can be read from environment variables and *appsettings.*.json* files, respectively.
-* The `ConfigureAppConfiguration` method is called to register a configuration provider for the Azure App Configuration store. The configuration provider is registered, via a call to `AddAzureAppConfiguration`.
+* The `CreateDefaultBuilder` method registers the environment variable and JSON file configuration providers. As a result, values can be read from environment variables and *appsettings.\*.json* files, respectively.
+* The host builder's `ConfigureAppConfiguration` method is called to register a configuration provider for the Azure App Configuration store. The configuration provider is registered, via a call to `AddAzureAppConfiguration`.
 * The Azure App Configuration provider is registered by providing a connection string to the resource. Feature flags support is enabled via a call to `UseFeatureFlags`.
 
 <!--
 1. Add the `AzureAppConfiguration` provider (line 29). Being the second in the chain of providers, it can override any value taken from the ConfigMap.
 1. Set the configuration refresh rate from the App Configuration store (line 35).
-
-Configuration providers can be combined to load settings from multiple sources. Configuration is automatically added when using the default application host.
-
-The order in which configuration providers are called/registered is important. The order affects the final configuration values. A set of default providers are added by the host builder.
-
-`ConfigureAppConfiguration` is called on the `IHostBuilder`. It causes the default configuration providers to be added.
-
-If command-line arguments have been provided when the app starts, those arguments override those found in the other configuration providers. Each provider can contribute its own key value. The last value provided by a provider is the one that wins. For cross-platform compatibility, a double underscore is used instead of a colon to delimit keys.
 
 With the rise of containers, environment variables are a cross-platform and container-compatible way to provide runtime configuration.
 
