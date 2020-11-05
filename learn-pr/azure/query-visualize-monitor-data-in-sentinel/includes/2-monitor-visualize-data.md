@@ -62,18 +62,19 @@ The queries are written using the Kusto query language (KQL)
 
 The following query retrieves all records from the  **Event**  table:
 
-'''Kusto
+```kusto
 
 Event
-'''
+```
 
 You can use the pipe (|) character to separate commands. Then the output of the first command is the input of the next command. You can add any number of commands to a single query. The following query retrieves the records from the  **Event**  table, and then searches them for the term  **error**  in any property:
 
-Kusto
+```kusto
 
 Event
 
 | search&quot;error&quot;
+```
 
 By default, Log Analytics limits queries to a time range of the past 24 hours. To set a different time range, you can add an explicit  **TimeGenerated**  filter to the query, or use the  **Time range**  control.
 
