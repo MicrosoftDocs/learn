@@ -4,35 +4,23 @@ In this unit, you'll look at the options for your company to host its apps on Az
 
 ## Adding the Maven Plugin for Azure App Service to your project
 
-To add the Maven Plugin for Azure App Service to your web app, you need to add a dependency for `azure-webapp-maven-plugin` to your project's `pom.xml` file.
-
-The following excerpt illustrates the XML elements that you need to add to your project's `pom.xml` file:
-
-```xml
-<plugin>
-  <groupId>com.microsoft.azure</groupId>
-  <artifactId>azure-webapp-maven-plugin</artifactId>
-  <version>1.12.0</version>
-</plugin>
-```
-
 > [!NOTE]
 > Please check the [Maven Plugin for Azure App Service documention](https://github.com/microsoft/azure-maven-plugins/wiki/Azure-Web-App), or the [Maven Central Repository](https://search.maven.org/artifact/com.microsoft.azure/azure-webapp-maven-plugin/), for information on the latest version of the Maven plugin.
 
-After you've added the plugin to your project's `pom.xml` file, you can run the following command to complete the plugin setup interactively.
+In the next exercise we will run the following command to setup the plugin interactively.
 
 ```bash
-mvn azure-webapp:config
+mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 ```
 
 The plugin will prompt you for the information that is required to configure the App Service plan. After you've confirmed your choices, the plugin adds the requisite settings to your project's `pom.xml` file that configure your web app to run in Azure App Service.
 
 ### Deployment
 
-Maven will create the App Service plan interactively, you use the same Maven command to deploy your application code to Azure.
+Maven will create the App Service plan interactively, in the next exercise you will use the below Maven command to deploy your application code to Azure.
 
 ```bash
-mvn package azure-webapp:deploy
+mvn package com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
 ```
 
 In the next exercise, you'll deploy your web app to Azure App Service.

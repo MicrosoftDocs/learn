@@ -52,7 +52,7 @@ Change The following field in your project's `pom.xml` file:
 
 ## Deploy the app
 
-The maven deploy plugin will copy your executable Spring Boot JAR file to your Azure App Service's instance, and also copy your JAR file to the server's "/local/site/wwwroot" directory
+The maven deploy plugin will create your Azure App instance, and copy your JAR file to the App server instances "/local/site/wwwroot" directory.
 Finally it will start your App via your Spring Boot JAR file's embedded HTTP server.
 
 Next, deploy your Spring Boot app to Azure using the following command:

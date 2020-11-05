@@ -143,9 +143,10 @@ Here's a screenshot of the application running for the first time:
 
 ## Code the application
 
-Next, add the Java code that will use JPA to store and retrieve data from your MySQL server.
+Next, add the below Java code that will use JPA to store and retrieve data from your MySQL server.
+You will use a JPA Entity class to map a Java Todo object directly to the MySQL Todo table.
 
-Create a new `Todo` Java class, next to the `DemoApplication` class, and add the following code:
+Create a new `Todo` Entity class, next to the `DemoApplication` class, and add the following code:
 
 ```java
 package com.example.demo;
@@ -239,9 +240,9 @@ public interface TodoRepository extends JpaRepository<Todo, Long> {
 }
 ```
 
-This repository is a repository that Spring Data JPA manages.
+This repository is a JPA repository that Spring Data JPA manages. By extending JpaRepository we get a bunch of generic CRUD methods into our type that allows saving Todo Objects, deleting them and so on.
 
-Finish the application by creating a controller that can store and retrieve data. Implement a `TodoController` class in the same package, and add the following code:
+Finish the application by creating a RestController that can publish REST interfaces to store and retrieve data via HTTP. Implement a `TodoController` class in the same package, and add the following code:
 
 ```java
 package com.example.demo;
