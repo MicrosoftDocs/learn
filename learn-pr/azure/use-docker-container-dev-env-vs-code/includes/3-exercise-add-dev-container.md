@@ -27,14 +27,17 @@ The Remote - Containers extension will install, and you'll have access to the co
 ## Add a Dev Container
 
 1. Open the Command Palette.
-1. Type "add dev container."
-1. Select "Remote-Containers: Add Development Container Configuration Files."
-1. Select the following options...
+2. Type "add dev container."
+3. Select "Remote-Containers: Add Development Container Configuration Files."
+4. Select the following options...
 
-| Option         | Value       |
-| -------------- | ----------- |
-| Python version | 3 (default) |
-| Install Nodejs | Uncheck     |
+   | Option                                      | Value       |
+   | ------------------------------------------- | ----------- |
+   | Select a container configuration definition | Python 3    |
+   | Python version                              | 3 (default) |
+   | Install Nodejs                              | Uncheck     |
+
+5. Click "OK"
 
 A Remote Container configuration will be added to your project. VS Code will notify you that you can now open the project in a container. For now, dismiss this notification.
 
