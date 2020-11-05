@@ -55,18 +55,16 @@ The *Feature Management* library, distributed as a NuGet package named `Microsof
 
 Like Azure App Configuration, the Feature Management library also builds on ASP.NET Core's configuration abstraction. They integrate together to provide a complete feature management solution.
 
-### Integration
+### Integration with Azure App Configuration
 
-To understand the integration of Azure App Configuration and the Feature Management library, see the following excerpt from the *Program.cs* file's `CreateHostBuilder` method:
+To understand the integration of Azure App Configuration and the Feature Management library, see the following excerpt from an ASP.NET Core project's *Program.cs* file:
 
 :::code language="csharp" source="../code/src/web/webspa/program.cs" id="snippet_CreateHostBuilder":::
 
-In the preceding code fragment:
+In the preceding `CreateHostBuilder` method fragment:
 
-* The `CreateDefaultBuilder` method registers the environment variable and JSON file configuration providers. As a result, values can be read from environment variables and *appsettings.json*, respectively.
-* The `ConfigureAppConfiguration` method is called to register a configuration provider for the Azure App Configuration store. The configuration provider is registered, via a call to `AddAzureAppConfiguration`, if the following conditions are satisfied:
-  * The `UseFeatureManagement` key value in *appsettings.json* is `true`.
-  * The Azure App Configuration connection string, found in the `AppConfig:Endpoint` key's value, has been provided.
+* The `CreateDefaultBuilder` method registers the environment variable and JSON file configuration providers. As a result, values can be read from environment variables and *appsettings.*.json* files, respectively.
+* The `ConfigureAppConfiguration` method is called to register a configuration provider for the Azure App Configuration store. The configuration provider is registered, via a call to `AddAzureAppConfiguration`.
 * The Azure App Configuration provider is registered by providing a connection string to the resource. Feature flags support is enabled via a call to `UseFeatureFlags`.
 
 <!--

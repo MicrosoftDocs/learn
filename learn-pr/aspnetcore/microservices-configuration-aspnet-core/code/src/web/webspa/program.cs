@@ -12,15 +12,9 @@ public class Program
             {
                 var settings = configBuilder.Build();
 
-                if (settings.GetValue<bool>("UseFeatureManagement") &&
-                    !string.IsNullOrEmpty(settings["AppConfig:Endpoint"]))
-                {
-                    configBuilder.AddAzureAppConfiguration(configOptions =>
-                    {
-                        configOptions.Connect(settings["AppConfig:Endpoint"])
-                                     .UseFeatureFlags();
-                    });
-                }
+                configBuilder.AddAzureAppConfiguration(configOptions =>
+                    configOptions.Connect(settings["AppConfig:Endpoint"])
+                                 .UseFeatureFlags());
             })
             // code omitted for brevity
     #endregion snippet_CreateHostBuilder
