@@ -6,11 +6,11 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
 
 1. Select the Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/).
 
-1. The username and password information to sign into the Azure Portal are in the  **Resources** tab above these instructions. If you select the **Username** the environment will type the text for you.
+1. The username and password information to sign into the Azure portal are in the  **Resources** tab above these instructions. If you select the **Username** it will be filled in for you.
 
-1. Repeat this for the **Password**.
+1. Select the **Password** field to have that filled in for you.
 
-1. Open the the left navigation pane, then select **Virtual Networks**.
+1. Open the left navigation pane, then select **Virtual Networks**.
 ‎
     :::image type="content" source="../media/dp-3300-module-22-lab-04.png" alt-text="Screenshot of the navigation pane with Virtual Networks selected.":::
 
@@ -18,8 +18,8 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
 
     :::image type="content" source="../media/dp-3300-module-22-lab-05.png" alt-text="Screenshot of the Create virtual network pane with information entered.":::
 
-    - Resource Group: **DP-300-Lab02**
-    - Name: **Lab02-vnet**
+    - Resource Group: **DeploySQLAzure**
+    - Name: **AzureSQL-vnet**
     - Region: Select the same region when the Resource Group was created (the region nearest to your location)  
     - Select **Next: IP Addresses**  
 ‎
@@ -43,33 +43,31 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
 
 ## Deploy an Azure SQL Database
 
-1. From the Azure Portal, select on **+ Create a Resource** in the left side navigation bar.
+1. From the Azure portal, select on **+ Create a Resource** in the left side navigation bar.
 ‎
     :::image type="content" source="../media/dp-3300-module-22-lab-09.png" alt-text="Screenshot of selecting the Create a resource link.":::
 
-1. Search for **SQL databases** in the search box at the top, then select **SQL Database** from the list of options. 
+1. Search for **SQL database** in the search box at the top, then select **SQL Database** from the list of options.
 ‎
     :::image type="content" source="../media/dp-3300-module-22-lab-10.png" alt-text="Screenshot of the marketplace search results.":::
 
 1. Select **Create**.
 
-1. Complete the Create SQL Database Basics screen with the following inputs and then select **Next: Networking**.
+1. Complete the Create SQL Database Basics screen with the following inputs.
 
-    - Subscription: Select the lab subscription
-    - Resource Group: **DP-300-Lab02**
+    - Resource Group: **DeploySQLAzure**
     - Database Name: **AdventureWorksLT**
     - Server: select **Create new**
 
-1. In the New Server sidebar, enter the following information:
+1. In the **New server** sidebar, enter the following information:
 
     :::image type="content" source="../media/dp-3300-module-22-lab-11.png" alt-text="Screenshot of the New server sidebar.":::
 
-    - Server name: **dp300-lab-&lt;your initials (lower case)&gt;** (server name must be globally unique)
-    - Server admin login: **dp300admin**
-    - Password: enter a strong password
-    - Confirm password: enter the same strong password
+    - Server name: **azuresql-server-&lt;your initials (lower case)&gt;** (a server name must be unique globally)
+    - Server admin login: **labadmin**
+    - Password: **Azur3Pa$$**
+    - Confirm password: **Azur3Pa$$**
     - Location: Select the Region you selected in the previous steps
-    - Select **Allow Azure services to access server**
     - Select **OK**
 
 1. On the next page enter the following:
@@ -84,7 +82,7 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
         - Select the **Apply** button
 
     > [!NOTE]
-    > Make note of this server name, and your login information. You will use it in subsequent steps.
+    > Make note of this server name. You will use it in subsequent steps.
 
 1. Review settings and then select **Next: Networking**  
 ‎
@@ -102,12 +100,11 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
 ‎
     :::image type="content" source="../media/dp-3300-module-22-lab-16.png" alt-text="Screenshot of the create private endpoint options.":::
 
-    - Subscription: Ensure the lab subscription is selected
-    - Resource group: **DP-300-Lab02**
+    - Resource group: **DeploySQLAzure**
     - Location: The same Region that was selected for previous parts of this lab
-    - Name: **DP-300-SQL-Endpoint**
+    - Name: **AzureSQL-Endpoint**
     - Target sub-resource: **SqlServer**
-    - Virtual network: **Lab02-vnet**
+    - Virtual network: **AzureSQL-vnet**
     - Subnet: **default (10.x.0.0/24)**
     - The Private DNS integration options can remain at the default
     - Review settings before selecting **OK**  
@@ -132,41 +129,39 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
 
 ## Enable All Azure Services access to new SQL Server
 
-1. From the SQL Database blade, select on the link for the SQL Server name in the top section.
+1. On the AdventureWorksLT overview page, select on the link for the **Server name** in the top section.
 ‎
     :::image type="content" source="../media/dp-3300-module-22-lab-19.png" alt-text="Screenshot of selecting the SQL Server name.":::
 
-1. On the SQL Server object's navigation blade, select **Firewalls and virtual networks** under Security.
+1. On the SQL Server object's navigation blade, scroll down and select **Firewalls and virtual networks** in the **Security** section.
 
     ‎:::image type="content" source="../media/dp-3300-module-22-lab-20.png" alt-text="Screenshot of selecting the Firewalls and virtual networks link.":::
 
-1. Select **+ Add client IP**. 
-
-1. Set Allow Azure services and resources to access this server to **Yes**.
+1. Select **+ Add client IP**, and then set **Allow Azure services and resources to access this server** to **Yes**.
 ‎
     :::image type="content" source="../media/dp-3300-module-22-lab-21.png" alt-text="Screenshot of selecting yes for the Allow Azure services and resources to access this server.":::
 
 1. Select **Save**.
 
+1. Navigate to the Overview page for the server, and then copy the **Server name**.
+
+    :::image type="content" source="../media/dp-3300-module-22-lab-34.png" alt-text="Screenshot of copying the Server name from the Overview page.":::
+
 ## Register Azure SQL DB Instance in Azure Data Studio (ADS)
 
-1. Launch ADS from the lab VM toolbar.
+1. Launch Azure Data Studio from the windows toolbar.
 
-1. Select **Connections** in ADS's left sidebar, then the **Add a Connection** button
+1. Select **Connections** in ADS's left sidebar, then the **Add Connection** button.
 
     :::image type="content" source="../media/dp-3300-module-22-lab-25.png" alt-text="Screenshot of selecting the Add a connection icon in ADS.":::
 
-1. In the Connections sidebar, fill out the Connection Details section with connection information to connect to the SQL database created in the previous Exercise.
+1. In the **Connection** sidebar, fill out the **Connection Details** section with connection information to connect to the AdventureWorksLT database created in the previous steps.
 
     - Connection Type: **Microsoft SQL Server**
-    - Server: Enter the name of the SQL Server created earlier. For example: **dp300-lab-xx.database.windows.net**  
-
-    > [!NOTE]
-    > You were asked to create a server name with your initials, instead of 'xx'
-
+    - Server: Paste the server name you copied earlier.  
     - Authentication Type: **SQL Login**
-    - User name: **dp300admin**
-    - Password: Enter your strong password
+    - User name: **labadmin**
+    - Password: **Azur3Pa$$**
     - Expand the Database drop-down to select **AdventureWorksLT**
     - Server group will remain on **&lt;default&gt;**.
     - Name (optional) can be populated with a friendly name of the database, if desired.
@@ -174,7 +169,7 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
     ‎
     :::image type="content" source="../media/dp-3300-module-22-lab-27.png" alt-text="Screenshot of the connection details.":::
 
-1. ADS will connect to the database and show some basic information about the DB, plus a partial list of objects.
+1. ADS will connect to the database and show some basic information about the database, including a partial list of objects.
 ‎
     :::image type="content" source="../media/dp-3300-module-22-lab-28.png" alt-text="Screenshot of ADS showing basic database information.":::
 
@@ -235,6 +230,8 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
 ‎
     :::image type="content" source="../media/dp-3300-module-22-lab-33.png" alt-text="Screenshot of selecting the Run cells button.":::
 
-1. Within ADS save the notebook from File menu to the D:\Labfiles\Deploy Azure SQL Database (this folder already exists on the VM) directory. Close the tab for the Notebook from inside of ADS.
+1. Within ADS, from **File** menu, select **Save** and then browse to the **D:\Labfiles\Deploy Azure SQL Database** directory.
 
-1. From the File Menu, select Open Notebook, and open the notebook you just saved. Observe that query results were saved along with the queries in the notebook.
+1. Select **Save** and then close the tab for the Notebook from inside of ADS.
+
+1. From the **File** menu, select **Open File**, and open the notebook you just saved. Observe that query results were saved along with the queries in the notebook.
