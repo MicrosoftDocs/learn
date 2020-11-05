@@ -26,9 +26,6 @@ quiz:
     - content: "Visualizing data from Azure Sentinel Connectors."
       isCorrect: true
       explanation: "You cannot visualize the data with analytics rules. You can use Azure Sentinel Workbook to present and visualize the data collected from the security connectors."
-    - content: "Analyzing network traffic to locate trends indicating potential attacks."
-      isCorrect: false
-      explanation: "Azure Sentinel Analytics rules can analyze network traffic to locate trends indicating potential attacks."
   - content: "You want to find additional information that explains the analytics template and the rule that is used in detection of the threats. Which section in the analytics rules page provides that information?"
     choices:
     - content: "Details pane"
