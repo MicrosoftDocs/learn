@@ -21,7 +21,7 @@ A database account is a container for managing one or more databases. Before we 
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. Select **Databases** > **Azure Cosmos DB**.
+1. Select **Databases** > **Azure Cosmos DB**. You may need to search for the Cosmos
 
 1. In the **Create Azure Cosmos DB Account** page, enter the settings for the new Azure Cosmos DB account.
 
@@ -51,9 +51,7 @@ In Azure Cosmos DB, a *container* holds arbitrary user-generated entities. Insid
 
 Let's use the Data Explorer tool in the Azure portal to create a database and collection.
 
-1. Select **Data Explorer**, and then **New Container**.
-
-1. Under **Add Container**, enter the settings for the new container.
+1. Select **Data Explorer** from the left hand side menue, and then **New Container**.
 
     >[!TIP]
     >The **Add Container** area is displayed on the far right. You may need to scroll right to see it.
@@ -96,7 +94,7 @@ You'll add data to the new container using Data Explorer.
     | `_attachments` | The addressable path for the attachments resource. |
     | `_ts` | The time stamp of the last update of this resource. |
 
-1. Let's add a few more items into the container. Create four more items with the following content. Remember to save your work.
+1. Let's add a few more items into the container by clicking **New Item** at the top. Create four more items with the following content. Remember to save your work.
 
     ```json
     {
@@ -128,7 +126,7 @@ You'll add data to the new container using Data Explorer.
 
 1. When you've finished, your container should look like the following:
 
-    ![Screenshot of the SQL API UI in the portal, showing the list of entries you added to your bookmarks container.](../media/5-db-bookmark-coll.PNG)
+    :::image type="content" source="../media/5-db-bookmark-coll.PNG" alt-text="Screenshot of the SQL API UI in the portal, showing the list of entries you added to your bookmarks container.":::
 
 You now have a few entries in your **Bookmarks** container. Our scenario will work as follows. If a request arrives with, for example, "id=docs", you'll look up that ID in your bookmarks container and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in this container.
 
@@ -136,7 +134,9 @@ You now have a few entries in your **Bookmarks** container. Our scenario will wo
 
 ::: zone pivot="javascript"
 
-1. Navigate to the function app that you created in the preceding unit.
+1. Navigate to the function app that you created in the preceding unit. Click **Home > (in recent) <name>Fuction App**.
+
+1. Click **Fuctions** on the left side menue.
 
 1. Select the **Add** (**+**) button next to **Functions** to start the function creation process. The page displays the complete set of supported triggers.
 
@@ -146,8 +146,8 @@ You now have a few entries in your **Bookmarks** container. Our scenario will wo
 
     | Field | Value |
     |---|---|
-    | **Name** | _find-bookmark_ |
-    | **Authorization level** | _Function_ |
+    | **Name** | find-bookmark |
+    | **Authorization level** | Function |
 
 1. Select **Create** to create your function. This action opens the *index.js* file in the code editor and displays a default implementation of the HTTP-triggered function.
 
@@ -166,8 +166,8 @@ You now have a few entries in your **Bookmarks** container. Our scenario will wo
 
     | Field | Value |
     |---|---|
-    | **Name** | _find-bookmark_ |
-    | **Authorization level** | _Function_ |
+    | **Name** | find-bookmark |
+    | **Authorization level** | Function |
 
 1. Select **Create** to create your function. This action opens the *run.ps1* file in the code editor and displays a default implementation of the HTTP-triggered function.
 
@@ -179,7 +179,7 @@ You can verify what we have done so far by testing our new function as follows:
 
 1. In your new function, click **Get function URL** at the top right, select **default (Function key)**, and then click **Copy**.
 
-1. Paste the function URL you copied into your browser's address bar. Add the query string value `&name=<yourname>` to the end of the URL and press **Enter** to execute the request. You should get a response from the Azure Function right in the browser.
+1. Paste the function URL you copied into your browser's address bar. Add the query string value `&name=<your fuction name>` to the end of the URL and press **Enter** to execute the request. You should get a response from the Azure Function right in the browser.
 
 Now that we have our bare-bones function working, let's turn our attention to reading data from our Azure Cosmos DB, or in our scenario, our **Bookmarks** container.
 
@@ -189,9 +189,9 @@ To read data from the database, you need to define an input binding. As you'll s
 
 1. Select **Integrate** in the left pane to open the integration tab. The template you used created an HTTP trigger and an HTTP output binding. Now add your new Azure Cosmos DB input binding.
 
-1. Select **New Input** in the **Inputs** column. A list of all possible input binding types is displayed.
+1. Select **+Add Input**. A list of all possible input binding types is displayed in the drop down menue on the right.
 
-1. In the list, select **Azure Cosmos DB**, and then select **Select**. This action opens the Azure Cosmos DB input configuration page. Next, you'll set up a connection to your database.
+1. In the list, select **Azure Cosmos DB**, and then select **New** under the Cosmos DB account connection. This action opens the Azure Cosmos DB input configuration page. Next, you'll set up a connection to your database.
 
 1. If the following message appears in the **Azure Cosmos DB input** configuration UI telling you that you must install an extension, select **Install**. 
 
