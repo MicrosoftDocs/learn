@@ -18,16 +18,16 @@ quiz:
 
   - content: What is enterprise scale?
     choices:
-    - content: A landing zone design.
+    - content: A landing zone design
       isCorrect: false
       explanation: Enterprise-scale is an architecture approach and reference implementation.
-    - content: An architectural approach and reference implementation.
+    - content: An architectural approach and reference implementation
       isCorrect: true
       explanation: Enterprise scale is an architectural approach and reference implementation.
-    - content: A landing zone reference implementation.
+    - content: A landing zone reference implementation
       isCorrect: false
       explanation: Enterprise scale is an architectural approach and reference implementation.
-    - content: A landing zone for enterprises only.
+    - content: A landing zone for enterprises only
       isCorrect: false
       explanation: Enterprise scale is an architectural approach and reference implementation for any organization.
 
