@@ -43,6 +43,8 @@ The ConfigMap's key-value pairs are:
 * Presented to the containerized app as environment variables.
 * The primary mechanism to persist .NET Core configuration values in microservices apps.
 
+Environment variables are a cross-platform mechanism for providing runtime configuration to apps hosted in the Kubernetes cluster.
+
 ## Azure App Configuration
 
 A centralized configuration service is especially useful in microservices apps and other distributed apps. In this module, you'll use Azure App Configuration to manage app settings and feature flags.
@@ -66,17 +68,12 @@ In the preceding `CreateHostBuilder` method fragment:
 * The `CreateDefaultBuilder` method registers the default configuration providers. As a result, values can be read from environment variables and *appsettings.\*.json* files, respectively.
 * The host builder's `ConfigureAppConfiguration` method is called to register a configuration provider for the Azure App Configuration store. The configuration provider is registered via a call to `AddAzureAppConfiguration`.
 * The Azure App Configuration provider's behavior is configured with the following options:
-  * Authenticate to the corresponding Azure service via a connection string passed to the `Connect` method call. The connection string is retrieved from the `AppConfig:Endpoint` key.
+  * Authenticate to the corresponding Azure service via a connection string passed to the `Connect` method call. The connection string is retrieved from the `AppConfig:Endpoint` key. The registered configuration sources are made available via `configBuilder.Build`. This method call is necessary to retrieve the `AppConfig:Endpoint` key's value.
   * Enable feature flags support via a call to `UseFeatureFlags`.
 * The Azure App Configuration provider supersedes all other registered configuration providers because it's registered after any others.
 
-<!--
-1. Add the `AzureAppConfiguration` provider (line 29). Being the second in the chain of providers, it can override any value taken from the ConfigMap.
-
-With the rise of containers, environment variables are a cross-platform and container-compatible way to provide runtime configuration.
-
-You can access the list of registered providers by analyzing the builder.Sources property inside of ConfigureAppConfiguration. builder.Sources.Clear(); would give you clean starting point, with no providers registered.
--->
+> [!TIP]
+> In an ASP.NET Core project, you can access the registered providers list by analyzing the `configBuilder.Sources` property inside of `ConfigureAppConfiguration`.
 
 ## Review the app's feature flag components
 

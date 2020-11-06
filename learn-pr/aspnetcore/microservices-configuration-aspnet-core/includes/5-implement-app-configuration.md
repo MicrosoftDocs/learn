@@ -44,7 +44,7 @@ AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;I
 ```
 
 > [!TIP]
-> Your App Configuration connection string contains a plain text secret. In real world apps, consider integrating Azure App Configuration with Azure Key Vault for secure storage of secrets. Key Vault is out of scope for this module, but guidance can be found at [Tutorial: Use Key Vault references in an ASP.NET Core app](/azure/azure-app-configuration/use-key-vault-references-dotnet-core).
+> Your Azure App Configuration connection string contains a plain text secret. In real world apps, consider integrating App Configuration with Azure Key Vault for secure storage of secrets. Key Vault is out of scope for this module, but guidance can be found at [Tutorial: Use Key Vault references in an ASP.NET Core app](/azure/azure-app-configuration/use-key-vault-references-dotnet-core).
 
 ## Add the feature flag for Coupons
 
@@ -101,6 +101,9 @@ Apply the following changes to your ASP.NET Core project:
     * The `Connect` method provides a connection string to the App Configuration store. Recall that the connection string is stored in *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* as an environment variable with the key `AppConfig__Endpoint`. The environment variables configuration provider replaces the double underscore (`__`) with a colon (`:`).
     * The `UseFeatureFlags` method defines a cache expiration policy of five seconds for the feature flags. The default value is 30 seconds. Once five seconds have elapsed, the cache is refreshed with updated feature flag values.
     * The `ConfigureRefresh` method defines a cache expiration policy of five seconds for the `FeatureManagement:Coupons` key in the App Configuration store. The default value is 30 seconds. Once five seconds have elapsed, the cache is refreshed with an updated value for the `FeatureManagement:Coupons` key.
+
+    > [!IMPORTANT]
+    > A key in the Azure App Configuration store overrides the same key in the ConfigMap. That's because the ConfigMap's `data` field is read by the environment variables provider. Recall that the environment variables provider was registered earlier than the App Configuration provider.
 
 1. Apply the following changes in *src/Web/WebSPA/Startup.cs*:
     1. In the `Configure` method, replace the comment `// Add the UseAzureAppConfiguration code` with the following code:
