@@ -3,7 +3,9 @@ In this unit, you will:
 * Create an App Configuration store in your Azure account.
 * Connect *eShopOnContainers* to the App Configuration store.
 
-## Create an App Configuration store instance
+## Provision an App Configuration instance
+
+Complete the following steps to create an App Configuration instance in your Azure subscription:
 
 1. Run the following script to create an App Configuration store:
 
@@ -33,7 +35,7 @@ In this unit, you will:
 
 1. Copy the connection string. You'll use it in a moment.
 
-## Connect your app to App Configuration
+## Store the App Configuration connection string
 
 In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, uncomment the `AppConfig__Endpoint` line. Replace the `<connection-string>` placeholder with the connection string on your clipboard. Save your changes.
 
@@ -50,10 +52,14 @@ The preceding line represents a key-value pair, in which `AppConfig__Endpoint` i
 
 ## Add the feature flag for Coupons
 
+In Azure App Configuration, create and enable a key-value pair to be treated as a feature flag. Complete the following steps:
+
 1. In another browser tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Cloud Shell.
 1. Use the search box to find and open the App Configuration resource prefixed with *:::no-loc text="eshoplearn":::*.
 1. In the **Operations** section, select **Feature manager** > **Add**.
 1. Select the **Enable feature flag** check box, enter *Coupons* in the **Feature flag name** text box, and select the **Apply** button.
+
+Now that the feature flag exists in the App Configuration store, the *WebSPA* ASP.NET Core project requires some changes to read it.
 
 ## Connect your app to the App Configuration store
 
@@ -61,15 +67,13 @@ To access values from the App Configuration store in an ASP.NET Core app, the co
 
 Apply the following changes to your *WebSPA* ASP.NET Core project:
 
-1. Run the following command:
+1. Run the following command to install a NuGet package containing the .NET Core configuration provider for the App Configuration service:
 
     ```dotnetcli
     pushd src/Web/WebSPA && \
         dotnet add package Microsoft.Azure.AppConfiguration.AspNetCore --version 4.0.0 && \
         popd
     ```
-
-    The preceding command installs a NuGet package containing the .NET Core configuration provider for the App Configuration service.
 
 1. In the `CreateHostBuilder` method of *src/Web/WebSPA/Program.cs*, replace the comment `// Add the AddAzureAppConfiguration code` with the following code. Save your changes.
 
@@ -102,7 +106,7 @@ Apply the following changes to your *WebSPA* ASP.NET Core project:
 
     In the preceding code snippet:
 
-    * The `Connect` method provides a connection string to the App Configuration store. Recall that the connection string is stored in *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* as an environment variable with the key `AppConfig__Endpoint`. The environment variables configuration provider replaces the double underscore (`__`) with a colon (`:`).
+    * The `Connect` method authenticates to the App Configuration store. Recall that the connection string is stored in *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* as an environment variable with the key `AppConfig__Endpoint`. The environment variables configuration provider replaces the double underscore (`__`) with a colon (`:`).
     * The `UseFeatureFlags` method defines a cache expiration policy of five seconds for the feature flags. The default value is 30 seconds. Once five seconds have elapsed, the cache is refreshed with updated feature flag values.
     * The `ConfigureRefresh` method defines a cache expiration policy of five seconds for the `FeatureManagement:Coupons` key in the App Configuration store. The default value is 30 seconds. Once five seconds have elapsed, the cache is refreshed with an updated value for the `FeatureManagement:Coupons` key.
 
