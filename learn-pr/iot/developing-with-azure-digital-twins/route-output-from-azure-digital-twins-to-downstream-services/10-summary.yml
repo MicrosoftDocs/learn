@@ -50,7 +50,7 @@ quiz:
       explanation: Several services support endpoints.
 
 
-   - content: 'What options do you have to create event routes?'
+  - content: 'What options do you have to create event routes?'
     choices: 
     - content: 'Digital Twins APIs, Azure Cloud Shell, and via the Azure Portal.'
       isCorrect: false
