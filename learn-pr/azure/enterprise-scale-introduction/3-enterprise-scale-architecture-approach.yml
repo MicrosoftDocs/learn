@@ -38,7 +38,7 @@ quiz:
       explanation: Subscription planning is not a critical design area.
     - content: Workload assessments
       isCorrect: false
-      explanation: Workload assessments is not a critical design area.
+      explanation: Workload assessments are not a critical design area.
     - content: Agile platform development
       isCorrect: false
       explanation: Enterprise scale uses a DevOps approach for both application and central teams. This is a critical design area.
