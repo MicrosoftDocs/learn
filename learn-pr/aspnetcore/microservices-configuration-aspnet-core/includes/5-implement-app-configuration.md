@@ -43,8 +43,10 @@ The `AppConfig__Endpoint` line will resemble the following YAML:
 AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;Id=<id>;Secret=<secret>"
 ```
 
+The preceding line represents a key-value pair, in which `AppConfig__Endpoint` is an environment variable name. In the *WebSPA* ASP.NET Core project, the environment variables configuration provider will read its value.
+
 > [!TIP]
-> Your Azure App Configuration connection string contains a plain text secret. In real world apps, consider integrating App Configuration with Azure Key Vault for secure storage of secrets. Key Vault is out of scope for this module, but guidance can be found at [Tutorial: Use Key Vault references in an ASP.NET Core app](/azure/azure-app-configuration/use-key-vault-references-dotnet-core).
+> Your Azure App Configuration connection string contains a plain-text secret. In real world apps, consider integrating App Configuration with Azure Key Vault for secure storage of secrets. Key Vault is out of scope for this module, but guidance can be found at [Tutorial: Use Key Vault references in an ASP.NET Core app](/azure/azure-app-configuration/use-key-vault-references-dotnet-core).
 
 ## Add the feature flag for Coupons
 
@@ -57,7 +59,7 @@ AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;I
 
 To access values from the App Configuration store in an ASP.NET Core app, the configuration provider for App Configuration is needed. A key in the App Configuration store overrides the same key in the ConfigMap. That's because the ConfigMap's `data` field is read by the environment variables provider. Recall that the environment variables provider was registered earlier than the App Configuration provider.
 
-Apply the following changes to your ASP.NET Core project:
+Apply the following changes to your *WebSPA* ASP.NET Core project:
 
 1. Run the following command:
 
