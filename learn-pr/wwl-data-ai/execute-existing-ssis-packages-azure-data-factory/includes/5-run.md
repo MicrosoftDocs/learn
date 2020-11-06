@@ -8,7 +8,7 @@ You may already have SSIS packages that you wish to have enabled for Azure. In t
 
 This opens up the Azure-Enabled Project Wizard where you can select the Visual Studio configuration to apply package execution settings in Azure. Select the target version supported by the Azure-SSIS Integration Runtime (IR), which is currently SQL Server 2017, and finally connect to the Azure-SSIS IR. By connecting your Azure-enabled projects to SSIS in ADF, you can upload your packages into Azure Files and run them on Azure-SSIS IR. It also provides you with the capability to lift and shift SSIS packages too.
 
-## SSIS in ADF Connection Wizard
+## SSIS in ADF connection wizard
 
 Lifting and shifting SSIS packages is achieved by running the SSIS in ADF Connection Wizard. This is a two-step wizard that takes SSIS projects stored in SSIS, and store them in Azure Files in a storage account that can then be run in an Azure-SSIS Integration Runtime.
 
