@@ -13,7 +13,7 @@ Sometimes, you don't want to debug the whole pipeline but test a part of the pip
 You can test the pipeline end to end or set a breakpoint. 
 By doing so in debug mode, you can interactively see the results of each step while you build and debug your pipeline. 
 
-## Debug and Publish a pipeline:
+## Debug and publish a pipeline:
 
 As you create or modify a pipeline that is running, you can see the results of each activity in the Output tab of the pipeline canvas.
 
@@ -24,20 +24,24 @@ Therefore,  if the pipeline contains, for example, a copy activity, the test run
 A best practice is to use test folders in your copy activities and other activities when debugging such that when you are satisfied with the results and have debugged the pipeline, you switch to the actual folders for your normal operations. 
 
 1. To debug the pipeline, select Debug on the toolbar. You see the status of the pipeline run in the Output tab at the bottom of the window.
-    ![Debug slider Azure Data Factory](../media/azure-data-factory-debug-slider.png)
+    > [!div class="mx-imgBorder"]
+    > [![Debug slider Azure Data Factory](../media/azure-data-factory-debug-slider.png)](../media/azure-data-factory-debug-slider.png#lightbox)
 
-    ![Output tab Azure Data Factory Debug](../media/azure-data-factory-output-tab-debug.png)
+    > [!div class="mx-imgBorder"]
+    > [![Output tab Azure Data Factory Debug](../media/azure-data-factory-output-tab-debug.png)](../media/azure-data-factory-output-tab-debug.png#lightbox)
 
 2. Once the pipeline can run successfully, in the top toolbar, select Publish all. This action publishes entities (datasets, and pipelines) you created to Data Factory.
 
-    ![Publish all changes and entities in Azure Data Factory](../media/azure-data-factory-publish-all.png)
+    > [!div class="mx-imgBorder"]
+    > [![Publish all changes and entities in Azure Data Factory](../media/azure-data-factory-publish-all.png)](../media/azure-data-factory-publish-all.png#lightbox)
 
 3. Wait until you seetheSuccessfully published message. To see notification messages, click theShow Notifications on the top-right (bell button).
 
-    ![Bell button for notifications in Azure Data Factory](../media/azure-data-factory-alert-bell.png)
+    > [!div class="mx-imgBorder"]
+    > [![Bell button for notifications in Azure Data Factory](../media/azure-data-factory-alert-bell.png)](../media/azure-data-factory-alert-bell.png#lightbox)
 
 
-## Mapping Dataflow Debug:
+## Mapping dataflow debug:
 
 During the building of Mapping Data Flows, you can interactively watch how the data shapes and transformations are executing so that you can debug them. To use this functionality, it is first necessary to turn on the “Data Flow Debug” feature.
 
@@ -89,7 +93,8 @@ If you would like to get a view of the history of debug runs, or see all the act
 One thing to take in mind is that the Azure Data Factory service only keeps debug run history for 15 days. 
 In relation to monitoring your data flow debug sessions, you would also navigate to the monitor tab. 
 
-![Monitoring debug run Azure Data Factory](../media/azure-data-factory-monitor-pipeline-debug.png)
+> [!div class="mx-imgBorder"]
+> [![Monitoring debug run Azure Data Factory](../media/azure-data-factory-monitor-pipeline-debug.png)](../media/azure-data-factory-monitor-pipeline-debug.png#lightbox)
 
 
 

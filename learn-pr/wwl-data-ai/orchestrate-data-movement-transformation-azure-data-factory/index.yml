@@ -3,7 +3,7 @@ uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory
 metadata:
   title: Orchestrating data movement and transformation in Azure Data Factory
   description: "Orchestrate data movement and transformation in Azure Data Factory"
-  ms.date: 11/05/2020
+  ms.date: 11/06/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -11,14 +11,14 @@ metadata:
 title: Orchestrate data movement and transformation in Azure Data Factory
 summary: In this module, you will learn how Azure Data Factory can orchestrate large scale data movement by using other Azure Data Platform and Machine Learning technologies.
 abstract: |
-  1. Introduction
-  2. Understand data factory control flow
-  3. Working with data factory pipelines
-  4. Debug data factory pipelines
-  5. Adding parameters to data factory components
-  6. Executing data factory packages
-  7. Knowledge check
-  8. Summary
+  * Introduction
+  * Understand data factory control flow
+  * Working with data factory pipelines
+  * Debug data factory pipelines
+  * Adding parameters to data factory components
+  * Executing data factory packages
+  * Knowledge check
+  * Summary
 prerequisites: |
   The student should be able to:
   - Log into the Azure portal
