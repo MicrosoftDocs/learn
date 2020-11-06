@@ -6,7 +6,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/). This should be the home page of the browser.
 
-1. The username and password information to sign into the Azure Portal are in the  **Resources** tab above these instructions. If you select the **Username** it will be filled in for you.
+1. The username and password information to sign into the Azure Portal are in the  **Resources** tab above these instructions. If you select the **Username**, it will be filled in for you.
 
 1. Select **Next**.
 
@@ -32,11 +32,11 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
      :::image type="content" source="../media/dp-3300-module-33-lab-04.png" alt-text="Insert Text.":::
 
-    This will allow you to connect to your Azure SQL Database server using SQL Server Management Studio or any other client tools. Make note of your **client IP address**, you will use it later in this exercise.
+    These settings will allow you to connect to your Azure SQL Database server using SQL Server Management Studio or any other client tools. Make note of your **client IP address**, you will use it later in this exercise.
 
 ## Connect to a SQL Server and create a database in Azure
 
-1. Open SQL Server Management Studio by navigating to **Microsoft SQL Server Tools 18** > **SQL Server Management Studio** from the Start menu. Paste in the name of your Azure SQL database server and login with these credentials:
+1. Open SQL Server Management Studio by navigating to **Microsoft SQL Server Tools 18** > **SQL Server Management Studio** from the Start menu. Paste in the name of your Azure SQL database server and sign in with these credentials:
 
     - Server admin login: **labadmin**
     - Password: **Azur3Pa$$**
@@ -53,7 +53,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
     :::image type="content" source="../media/dp-3300-module-33-lab-07.png" alt-text="Import Date-tier Application Introduction.":::
 
-1. In the Import Settings screen, select Browse and navigate to D:\Labfiles\Secure Environment folder and select the **AdventureWorks.bacpac** file and select **Open**. Then in the Import Data-tier application screen select **Next**.
+1. In the Import Settings screen, select Browse and navigate to D:\Labfiles\Secure Environment folder and select the **AdventureWorks.bacpac** file and select **Open**. Then in the Import Data-tier application screen, select **Next**.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-08.png" alt-text="AdventureWorks bacpac file.":::
 
@@ -63,13 +63,13 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
     :::image type="content" source="../media/dp-3300-module-33-lab-10.png" alt-text="Database Settings.":::
 
-1. Select **Next** and then on the **Summary** screen select **Finish**. When your import completes you will see the results below .
+1. Select **Next** and then on the **Summary** screen select **Finish**. When your import completes you will see the results below.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-11.png" alt-text="Results.":::
 
 ## Create a firewall rule using SQL statements
 
-1. In **Object Explorer** right-click on the AdventureWorks database you just imported. 
+1. In the **Object Explorer**, right-click on the AdventureWorks database you just imported.
 1. Select **New Query**.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-12.png" alt-text="Object Explorer.":::
@@ -87,7 +87,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
     :::image type="content" source="../media/dp-3300-module-33-lab-13.png" alt-text="Create User.":::
 
-    Enter this command to create a user contained within the AdventureWorks database. You will login using the username and password in the next step.
+    Enter this command to create a user contained within the AdventureWorks database. You will sign in using the username and password in the next step.
 
     ```sql
     CREATE USER containeddemo WITH PASSWORD = 'P@ssw0rd!'
@@ -106,13 +106,13 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
     :::image type="content" source="../media/dp-3300-module-33-lab-15.png" alt-text="Connect to Server Error.":::
 
-    This error occurred because the connection attempted to login to the master database and not AdventureWorks where the user was created.
+    This error occurred because the connection attempted to sign in to the master database and not AdventureWorks where the user was created.
 
 1. Change the connection context by selecting **OK** to exit the error message and then selecting **Options** in the Connect to Server dialog box as shown below.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-16.png" alt-text="Select Options.":::
 
-1. On the connection options tab, in the **Connect to database** field type **AdventureWorks** and then select **Connect**. Don't try to use the auto-populated dropdown list.
+1. On the connection options tab, in the **Connect to database** field type **AdventureWorks** and then select **Connect**. Don't try to use the autopopulated dropdown list.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-17.png" alt-text="Connection Properties.":::
 
@@ -124,7 +124,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
     :::image type="content" source="../media/dp-3300-module-33-lab-19.png" alt-text="Screenshot showing selecting a New Query.":::
 
-1. In the new query window type this command:
+1. In the new query window, type this command:
 
     ```sql
     SELECT SUERS_NAME();
