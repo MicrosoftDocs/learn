@@ -2,8 +2,8 @@ In this unit, you'll learn how to create a Spring App, connect to a MySQL databa
 
 ## Introduction to Azure App Service
 
-The Azure App Service allows you to host your company's websites, web apps, REST APIs, and other application code on Azure.  Running your web app in Azure App Service provides you with all the benefits of running on Azure: your app is available, scales and has security and compliance built-in.
-You're looking at creating a Spring Boot App that hosts its logic in Azure App Services and its Database in an Azure MySQL Database.
+Azure App Service allows you to host your company's websites, web apps, REST APIs, and other application code on Azure.  Running your web app in Azure App Service provides you with all the benefits of running on Azure: your app is available, scales and has security and compliance built-in.
+You're looking at creating a Spring Boot App that hosts its logic in Azure App Service and its Database in an Azure MySQL Database.
 
 ## Develop your Spring app
 
@@ -17,7 +17,7 @@ You can also use Azure Spring Starter integration libraries to configure and set
 
 ### Azure CLI
 
-Azure Command Line Interface (Cli) is a tool used to create and manage Azure resources.
+Azure Command Line Interface (CLI) is a tool used to create and manage Azure resources.
 It runs on Linux, macOS, and Windows and allows administrators and developers to execute their commands through a terminal or command-line prompt (or script!) instead of a web browser. For example, to get the details of a subscription, you would use the following command:
 
 ```bash

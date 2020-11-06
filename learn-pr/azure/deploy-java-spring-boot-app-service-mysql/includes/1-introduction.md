@@ -1,6 +1,6 @@
 Imagine you're a Java developer working for a company that creates Spring Boot apps that currently run on on-premises servers. Your app also integrates to a relational database (in this case MySQL). You want to build a todo list app that uses a MySQL database, and you've decided to build this Spring Boot app from scratch.
 
-In this module, you'll first scaffold a Spring Boot web app using the [Spring Initializr](https://start.spring.io). This scaffold gives us a base to work from. We'll then code a Todo Application that stores tasks in a relational database. The tasks will need a MySQL database so we'll create and host using Azure Database for MySQL.
+In this module, you'll first scaffold a Spring Boot web app using the Spring Initializr. This scaffold gives us a base to work from. We'll then code a Todo Application that stores tasks in a relational database. The tasks will need a MySQL database so we'll create and host using Azure Database for MySQL.
 
 Next we will build the App and also configure it to connect to the MySQL database. Before we deploy, you'll confirm the app can run locally. You'll then deploy via Maven and host it as an Azure App Service.
 
@@ -22,9 +22,6 @@ By the end of this module, you will be able to:
 
 As a Java developer, you're already familiar with Spring applications. As you complete the exercises in this module, you'll use a personal Azure account, you would need to make sure that you have the following items installed:
 >  
->  | Item | Version |
->  |---|---|
->  | **Java JDK** | 1.8 |
->  | **Maven** | 3.0 or above |
->  | **Azure CLI** | 2.12 or above |
+- An Azure Subscription
+- Local installations of Java JDK (1.8+), Maven (3.0+), and the Azure CLI (2.12+)
 >

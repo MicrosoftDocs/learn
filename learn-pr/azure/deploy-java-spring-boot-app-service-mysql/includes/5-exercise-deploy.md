@@ -1,6 +1,6 @@
 In this unit, you'll configure your  Spring Boot app to be deployed via Maven and then create and deploy to an Azure App Service instance.
 
-# Configure the Maven plugin
+## Configure the Maven plugin
 
 The deployment process to Azure App Service will use your Azure credentials from the Azure CLI automatically.
 
