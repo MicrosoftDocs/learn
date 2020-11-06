@@ -4,7 +4,7 @@ As part of that evaluation in this module, you will build a web application and 
 
 ## Create a Simple JSF Web app on Tomcat
 
-Follow the steps below to build and run a JavaServer Faces web application.s
+Follow the steps below to build and run a JavaServer Faces web application.
 
 1. Create Maven project
 1. Modify Maven pom.xml File
