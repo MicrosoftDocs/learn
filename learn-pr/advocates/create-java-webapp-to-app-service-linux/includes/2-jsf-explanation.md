@@ -1,7 +1,7 @@
 ## What is JavaServer Faces(JSF)
 
 JavaServer Faces (JSF) is a Java Based Web Application Framework. It is one of the technology in Java EE Platform Enterprise Edition (Java EE) specification.
-JSF is Component Based application. The state of the UI component is saved when the client requests a new page and is restored when a response to the request is returned. Initially, JSF used Java Server Pages (JSP) as its screen display technology, but since 2.0, Facelets, which is closer to ordinary HTML, has been used.
+JSF is Component Based application Framework. The state of the UI component is saved when the client requests a new page and is restored when a response to the request is returned. Initially, JSF used Java Server Pages (JSP) as its screen display technology, but since 2.0, Facelets, which is closer to ordinary HTML, has been used.
 
 
 ### JSF Basic Functionality
@@ -12,7 +12,7 @@ JSF applications are roughly divided into the following two functions.
 - **BakingBean** : Java class that binds to Facelets and sets and processes values
 
 `Facelets` is an XHTML-based template engine that describes screen layouts, written by XHTML. XHTML conforms to the Document Type Definition (DTD) defined in W3C and is described as a file with a xhtml extension.
-JSF 2.3 base is available for Jakarta EE 8 based applications.
+JSF 2.3 is available for Jakarta EE 8 based applications.
 
 `BackingBean` is a Java class that binds to the parameter of the Facelets and sets and processes values. In order to implement the back end process on the server side, it is necessary to implement Facelets and the corresponding backing bean.  
 Until Java EE 6, it was used to implement the Backing Bean with JSF Managed Bean however it is used to create Backing Beaan with Contexts and Dependency Injection(CDI) since Java EE 7.
@@ -21,7 +21,7 @@ Until Java EE 6, it was used to implement the Backing Bean with JSF Managed Bean
 
 JSF can create its own extended web components.
 This time, we will use PrimeFaces as a component of JSF provided by 3rd Party to create rich web applications more easily.
-To use PrimeFaces, write a dedicated XML namespace (`xmlns: p`) in HTML as shown below. This makes the various UI components of PrimeFaces available.
+To use PrimeFaces, write a dedicated XML namespace (`xmlns: p`) in XHTML as shown below. This makes the various UI components of PrimeFaces available.
 
 In the example below, the `p:outputLabel`,` p:inputText`, and `p:commandButton` tags are used to display labels, input fields, and buttons, respectively.
 
@@ -45,7 +45,8 @@ In the example below, the `p:outputLabel`,` p:inputText`, and `p:commandButton` 
 ```
 
 Writing the above XHTML code, the following screen will be displayed.
-! [JSF Facelets Sample] (../media/simple-jsf-facelets-primefaces-ajax.png)
+
+:::image type="content" source="../media/simple-jsf-facelets-primefaces-ajax.png" alt-text="JSF Facelets Sample":::
 
 ### PrimeFaces Ajax Support
 
