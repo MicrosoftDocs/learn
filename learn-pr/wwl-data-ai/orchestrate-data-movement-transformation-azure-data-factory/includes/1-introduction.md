@@ -8,7 +8,7 @@ After completing this module, you will be able to:
 * Add parameters to data factory components
 * Execute data factory packages
 
-## Prerequisite
+## Prerequisites
 
 Before taking this module, it is recommended that the student is able to:
 

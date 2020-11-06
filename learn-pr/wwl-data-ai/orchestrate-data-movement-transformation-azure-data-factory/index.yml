@@ -13,10 +13,10 @@ summary: In this module, you will learn how Azure Data Factory can orchestrate l
 abstract: |
   * Introduction
   * Understand data factory control flow
-  * Working with data factory pipelines
+  * Work with data factory pipelines
   * Debug data factory pipelines
-  * Adding parameters to data factory components
-  * Executing data factory packages
+  * Add parameters to data factory components
+  * Execute data factory packages
   * Knowledge check
   * Summary
 prerequisites: |
