@@ -62,13 +62,14 @@ Java EE applications must be deployed onto Java EE-compliant application servers
 
 - **IBM WebSphere Application Server** (WAS) is a flexible, security-rich Java server runtime environment for enterprise applications. It focuses on high reliability. WAS supports microservices and standards-based programming models. You can modernize at your own pace, gain greater visibility across workloads, analyze enterprise applications, and advance your journey to Kubernetes.
 
-- **Open Liberty**, following Java-/Jakarta-EE and Microprofile standard, it is the community driven, open-source version of the WAS.
+- **Open Liberty**, following Java-/Jakarta-EE, and Microprofile standard, it is the community driven, open-source version of the WAS.
 
 ## Other Frameworks for Microservice-oriented Architectures
 
 - **Netty** is a NIO client-server framework, which enables quick and easy development of network applications such as protocol servers and clients. It greatly simplifies and streamlines network programming such as TCP and UDP socket server. Netty is an asynchronous event-driven network application framework for rapid development of maintainable high-performance protocol servers & clients.
 
 - **Quarkus** is a Kubernetes Native Java stack tailored for OpenJDK HotSpot and GraalVM. It aims to be crafted from the best of breed Java libraries and standards. Quarkus is getting more and more momentum.
+
 - **Vert.x** is an event driven and nonblocking tool-kit. You can use Vert.x with multiple languages including Java, Kotlin, JavaScript, Groovy, Ruby, and Scala. It aims to be the most lightweight, fastest framework. It's simple but not simplistic. Eclipse Vert.x is open source and dual-licensed under the Eclipse Public License 2.0 and Apache License 2.0.
 
 - **Micronaut** is a modern, JVM-based, full-stack framework for building modular, easily testable microservice, and serverless applications. Micronaut features a dependency injection and aspect-oriented programming runtime that uses no reflection. That makes it easier for Micronaut applications to run on GraalVM.

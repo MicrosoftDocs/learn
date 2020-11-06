@@ -40,5 +40,3 @@ Sample scenarios for Functions are
 - Web, mobile and IoT-connected backends
 - Bot or Real-time file and stream processing
 - Automation of scheduled tasks
-
-![Code and Events are Building the Azure Functions Logo](../media/5-functions.gif)

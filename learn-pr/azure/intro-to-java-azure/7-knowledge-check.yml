@@ -30,7 +30,7 @@ quiz:
     choices:
     - content: "Stacks, which aren't intended to be cloud-native can't run in the cloud."
       isCorrect: false
-      explanation: "You can mirror your datacenter also with cloud resources such as VMs."
+      explanation: "You can mirror your data center also with cloud resources such as VMs."
     - content: "Every application can easily run in the Azure Cloud as well."
       isCorrect: false
       explanation: "It depends on your applications. Have a look at its type and configuration first."
