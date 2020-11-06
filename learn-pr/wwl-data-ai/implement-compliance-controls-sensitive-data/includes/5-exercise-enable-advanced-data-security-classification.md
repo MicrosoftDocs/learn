@@ -6,7 +6,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/). This should be the home page of the browser.
 
-1. The username and password information to sign into the Azure Portal are in the  **Resources** tab above these instructions. If you select the **Username** it will be filled in for you.
+1. The username and password information to sign into the Azure Portal are in the  **Resources** tab above these instructions. If you select the **Username**, it will be filled in for you.
 
 1. Select **Next**.
 
@@ -16,15 +16,15 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. On the **Welcome to Azure** popup, select **Maybe later**.
 
-1. On the Azure portal home page select **All resources**.
+1. On the Azure portal home page, select **All resources**.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-19.png" alt-text="Screenshot of the Azure portal home page, selecting All resources":::
 
-1. Select the Azure SQL Database server startign with **azurelsq-lab**.
+1. Select the Azure SQL Database server starting with **azurelsq-lab**.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-20.png" alt-text="Screenshot of selecting the Azure SQL server.":::
 
-1. From the main blade of your Azure SQL server navigate to the **Security** section and select **Security Center**.
+1. From the main blade of your Azure SQL server, navigate to the **Security** section, and select **Security Center**.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-24.png" alt-text="Security":::
 
@@ -50,7 +50,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 ## Enable data classification on an Azure SQL database
 
-1. In the left navigation select **Overview**.
+1. In the left navigation, select **Overview**.
 
 1. Copy the **Server name** to use later in this exercise.
 
@@ -83,7 +83,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. You'll be prompted to add your client IP address as a new firewall rule. Sign in with the Azure credentials in the Resources tab. Then select **OK**.
 
-1. In Object Explorer expand the server node open a new query window for the AdventureWorksLT database and execute the following query.
+1. In the **Object Explorer**, expand the server node, and open a new query window. Using the AdventureWorksLT database execute the following query.
 
     ```sql
     SELECT o.name AS [Table Name]
@@ -100,4 +100,4 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
     :::image type="content" source="../media/dp-3300-module-33-lab-31.png" alt-text="SQL Query results":::
 
-Note that the results shows that the 15 classifications have been created in the database.
+Note that the results show that the 15 classifications have been created in the database.
