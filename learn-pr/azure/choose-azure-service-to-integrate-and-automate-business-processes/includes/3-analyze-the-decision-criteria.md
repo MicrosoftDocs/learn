@@ -36,6 +36,7 @@ Because of the extra features that are included with Azure Functions, including 
 
 - You have an existing Azure App Service application, and you want to model the workflow within the application. This requirement means that the workflow can also be managed as part of the application, for example in an Azure DevOps environment.
 - You have specific customizations that you want to make to the `JobHost` that are not supported by Azure Functions. For example, in a WebJob, you can create a custom retry policy for calls to external systems. This kind of policy can't be configured in an Azure Function.
+- Webjobs only supports C# on Microsoft Windows.
 
 ## Mixing Technologies
 
