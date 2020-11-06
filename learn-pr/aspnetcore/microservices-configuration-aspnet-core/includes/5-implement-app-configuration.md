@@ -1,7 +1,11 @@
 In this unit, you will:
 
-* Create an App Configuration store in your Azure account.
-* Connect *eShopOnContainers* to the App Configuration store.
+* Create an App Configuration instance in your Azure subscription.
+* Store the App Configuration service connection string.
+* Add a feature flag to the App Configuration store.
+* Connect the SPA to the App Configuration store.
+* Redeploy the SPA to AKS.
+* Test the newly created feature flag.
 
 ## Provision an App Configuration instance
 
@@ -50,7 +54,7 @@ The preceding line represents a key-value pair, in which `AppConfig__Endpoint` i
 > [!TIP]
 > Your Azure App Configuration connection string contains a plain-text secret. In real world apps, consider integrating App Configuration with Azure Key Vault for secure storage of secrets. Key Vault is out of scope for this module, but guidance can be found at [Tutorial: Use Key Vault references in an ASP.NET Core app](/azure/azure-app-configuration/use-key-vault-references-dotnet-core).
 
-## Add the feature flag for Coupons
+## Add the feature flag for coupons
 
 In Azure App Configuration, create and enable a key-value pair to be treated as a feature flag. Complete the following steps:
 

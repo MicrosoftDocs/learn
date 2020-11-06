@@ -4,8 +4,11 @@ You'll use a .NET Standard feature flag library named *Feature Management*. This
 
 In this unit, you will:
 
+* Confirm the app's deployment to AKS.
+* Set up feature management support with a .NET library.
 * Make the discount coupon feature configurable.
 * Deploy the SPA to your AKS cluster.
+* Disable the coupons feature.
 
 > [!NOTE]
 > If your Cloud Shell session disconnects due to inactivity, reconnect and run the following command to return to this directory and open the Cloud Shell editor:
@@ -69,7 +72,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
         popd
     ```
 
-    The library retrieves feature flags from the .NET Core's native configuration system. Therefore, you can define your app's feature flags by using any configuration provider that .NET Core supports. For example, the *appsettings.json* file or environment variables. In this case, you'll make the configuration in *appsettings.json* and in the SPA Helm chart's ConfigMap file.
+    The library retrieves feature flags from .NET Core's native configuration system. Therefore, you can define your app's feature flags by using any configuration provider that .NET Core supports. For example, the *appsettings.json* file or environment variables. In this case, you'll make the configuration in *appsettings.json* and in the SPA Helm chart's ConfigMap file.
 
 1. In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, uncomment the `UseFeatureManagement` and `FeatureManagement__Coupons` lines. Save your changes.
 
