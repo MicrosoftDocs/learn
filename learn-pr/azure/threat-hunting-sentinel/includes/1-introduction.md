@@ -1,11 +1,10 @@
 Azure Sentinel can help you hunt for security threats across on-premises and cloud environments using interactive queries and other hunting tools.
 
-Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Endpoint Protection, and Microsoft Azure Information Protection.<
-<!-- Remove "<" at the end of the sentence -->
+Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Endpoint Protection, and Microsoft Azure Information Protection.
+
 As part of the Security Operations (SecOps) team, you've been tasked with using Azure Sentinel to identify specific activity within Contoso's Azure environment.
 
-By the end of this module, 
-<!-- There's content missing here -->
+By the end of this module, you’ll learn how to perform threat hunting using the tools available in Azure Sentinel, including proactively identifying threat behaviors using Azure Sentinel queries. You'll also learn to continue the hunt using bookmarks and livestream to identify specific account usage patterns for Contoso's Azure environment.
 
 ## Learning objectives
 
