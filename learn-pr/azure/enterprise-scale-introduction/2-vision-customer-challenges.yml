@@ -18,30 +18,30 @@ quiz:
 
   - content: What must be enabled before a workload can be successfully deployed to the cloud?
     choices:
-    - content: Resource group native design
+    - content: Resource group native design.
       isCorrect: false
       explanation: Azure native-first design approach must be employed.
-    - content: Foundational services
+    - content: Foundational shared services must be in place.
       isCorrect: true
       explanation: Key foundational services, such as identity and access management, security, networking, monitoring, and shared infrastructure services, must be in place.
-    - content: Security
+    - content: Security governance not driven by policy.
       isCorrect: false
       explanation: Enterprise-scale architecture necessitates a rich initial implementation of landing zones with fully integrated governance, security, and operations from the start. Security is required for success.
     - content: Virtual-machine-centric migration
       isCorrect: false
       explanation: Enterprise-scale architecture supports both existing application migrations and new application development.
 
-  - content: What is the top customer challenge that enterprise-scale landing zones address?
+  - content: What is one of the top customer challenges that enterprise-scale landing zones address?
     choices:
-    - content: Doesn't give business units the control they need.
+    - content: It doesn't give business units the control they need.
       isCorrect: false
       explanation: The goal is to give customers the control they require.
-    - content: Architecture complexity
+    - content: Architecture complexity.
       isCorrect: true
       explanation: Enterprise-scale landing zones help provide clear guidance for architectural decisions.
-    - content: Providing a cloud security strategy
+    - content: Providing a cloud security strategy.
       isCorrect: false
-      explanation: An organization should develop a cloud security strategy before implementing a landing zone.
-    - content: Adopting a skills readiness plan
+      explanation: An organization should develop a cloud security strategy before it implements a landing zone.
+    - content: Adopting a skills readiness plan.
       isCorrect: false
       explanation: This should happen during the Plan phase of the Cloud Adoption Framework.
