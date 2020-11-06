@@ -6,7 +6,7 @@ Next we will build the App and also configure it to connect to the MySQL databas
 
 By the end of this module, you'll be able to incorporate Spring Boot apps to Azure App Service and integrate with a relational database.
 
-You'll use your own Azure subscription to deploy the resources in this module. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/java/?azure-portal=true) before you begin.
+You'll use your own Azure subscription to deploy the resources in this module. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/java/?azure-portal=true&WT.mc_id=java-10785-ropreddy) before you begin.
 > [!IMPORTANT]
 > To avoid unnecessary charges in your Azure subscription, remember to de-provision your Azure resources when you're done with this module.
 
