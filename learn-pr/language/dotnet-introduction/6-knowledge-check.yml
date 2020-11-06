@@ -11,47 +11,46 @@ metadata:
   ms.prod: learning-languages
 durationInMinutes: 3
 quiz:
-  title: Check your knowledge
   questions:
-  - content: "You have written C# code to create a new application but after running it you discover a bug in your logic.  What can you do to find it?"
+  - content: "Imagine that you used C# code to create a new application. After running the code, you discover a bug in your logic.  How can you find the bug?"
     choices:
-    - content: "The C# compiler will help you find your logic bug."
+    - content: "The C# compiler will help you find the logic bug."
       isCorrect: false
-      explanation: "The compiler will identify C# syntax compilation errors, but will not catch bugs in your logic."
-    - content: "The .NET runtime will help you find your logic bug."
+      explanation: "The compiler will identify C# syntax compilation errors. But it will not catch bugs in your logic."
+    - content: "The .NET runtime will help you find the logic bug."
       isCorrect: false
-      explanation: "It's possible that your logic will produce an exception that will crash your program and the .NET Runtime will close your application, however it will not help you find your logic bug."
-    - content: "A class from the .NET Library will help you find your logic bug."
+      explanation: "If your logic produces an exception that crashes your program, then the .NET runtime will close your application. But it will not help you find your logic bug."
+    - content: "A class in the .NET library will help you find your logic bug."
       isCorrect: false
-      explanation: "No classes contained in the .NET Library will help you find a logic bug."
-    - content: "The debugging features of Visual Studio or the .NET CLI could help you find your logic bug."
+      explanation: "No classes in the .NET library will help you find a logic bug."
+    - content: "The debugging features of Visual Studio or the .NET CLI can help you find your logic bug."
       isCorrect: true
-      explanation: "Debugging tools allow you to set breakpoints, step through code, and monitor the value of variables to help you find bugs."
-  - content: "An application framework that combines several related libraries, along with starter projects, file templates, code generators, and other tooling to enable developers to build entire applications for a specific purpose is also known as:"
+      explanation: "Correct. You can use debugging tools to set breakpoints, step through code, and monitor the value of variables to help you find bugs."
+  - content: "Which one of the following terms describes an application framework that combines several related libraries, along with starter projects, file templates, code generators, and other tools that developers use to build an application for a specific purpose?"
     choices:
     - content: "A workload"
       isCorrect: false
-      explanation: "A workload is an option you choose during installation to enable the creation of a type of application."
+      explanation: "A workload is an option that you choose during installation to enable the creation of a type of application."
     - content: "An app model"
       isCorrect: true
-      explanation: "An app model allows you to create a specific type of application, like a web application, mobile application, and so on."
+      explanation: "Correct. An app model allows you to create a specific type of application, like a web application or mobile application."
     - content: "An assembly"
       isCorrect: false
-      explanation: "An assembly is a compiled file that can be executed by a runtime."
+      explanation: "An assembly is a compiled file that a runtime can execute."
     - content: "An environment"
       isCorrect: false
-      explanation: "The term environment in a software development context usually refers to the collection of tools used to build applications."
-  - content: "What do you call the installer that is required to create projects, write code, call methods in libraries, compile code, build, debug, and run applications?"
+      explanation: "In a software-development context, *environment* usually refers to the collection of tools that are used to build applications."
+  - content: "Which one of the following terms best describes the installer that you need to create projects, write code, call methods in libraries, compile code, and then build, debug, and run applications?"
     choices:
     - content: "The .NET runtime"
       isCorrect: false
-      explanation: "The .NET runtime can only execute .NET assemblies. We're looking for an answer that covers a wider swath of functionality."
-    - content: "The .NET Base Libraries"
+      explanation: "The .NET runtime can run only .NET assemblies. We're looking for an answer that covers broader functionality."
+    - content: "The .NET base libraries"
       isCorrect: false
-      explanation: "The .NET Base Libraries contain a lot of functionality that you can access from your code.  However, we're looking for an answer that covers a wider swath of functionality"
+      explanation: "The .NET base libraries contain a lot of functionality that you can access from your code.  But we're looking for an answer that covers broader functionality."
     - content: "The .NET SDK"
       isCorrect: true
       explanation: "Correct!"
     - content: "A .NET assembly"
       isCorrect: false
-      explanation: "A .NET assembly is only compiled code. We're looking for an answer that covers a wider swath of functionality."
+      explanation: "A .NET assembly is only compiled code. We're looking for an answer that covers broader functionality."

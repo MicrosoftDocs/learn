@@ -21,8 +21,8 @@ abstract: |
   - Azure Databricks
   - Azure Data Lake Analytics
 prerequisites: | 
-  - You should be familiar with basic computing concepts and terminology
-  - You should be familiar with basic database concepts and terminology
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /learn/achievements/azure-database-fundamentals.svg
 levels:
 - beginner
