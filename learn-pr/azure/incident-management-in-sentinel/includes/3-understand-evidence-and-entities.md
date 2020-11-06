@@ -1,17 +1,26 @@
 Incidents in Azure Sentinel are created from other sources of security information in Azure. How you manage and understand the contents of an incident will help you better understand and use incident management in Sentinel.
 
+<!-- Jason: To integrate Contoso into the intro sentence, please consider: "Azure Sentinel uses various sources of security information to create incidents. As lead system engineer at Contoso, you'll need to understand these sources to best utilize Azure Sentinel's incident management." --> 
+
 ## Incident evidence
 
 Incident evidence consists of the security event information and related Sentinel assets that identify threats in the Sentinel environment. Evidence shows you how a threat has been identified in Sentinel and it links you back to the specific resources that you can use to increase you awareness of incident details.
 
+<!-- Jason: The information in this category could fit perfectly in a table or series of screenshots. If a table, here are some options for headings: (1) "Type of Evidence /Description;" (2) "Type of Evidence / Definition / Purpose" (ex. Events / Link you to events from Log Analytics Workspaces (typically containing thousands of events to numerous to manually parse) / Used to understand schope and frequency of an incident before further investigation); or 3. "Type of Evidence / Purpose / Example." When it comes to example, that could be a scenario example related to Contoso. Instead, if you prefer, a couple screen shot of events/alerts/bookmarks from a sample company would be wonderful.  --> 
+
 ### Events
 
-Events link you back to one or more events from the Log Analytics workspaces associated with Sentinel. On their own, these workspaces typically contain thousands of events that are too numerous to manually parse. If a query attached to a Sentinel analytics rule returns events, these events are attached to the generated incident for potential further review. You can use events to understand the scope and frequency of the incident before investigating further.
+Events link you back to one or more events from the Log Analytics workspaces associated with Sentinel <!-- Jason: Can you say "Azure Sentinel's Log Analytics workspaces?" -->. On their own, these workspaces typically contain thousands of events that are too numerous to manually parse. If a query attached to a Sentinel analytics rule returns events, these events are attached to the generated incident for potential further review. You can use events to understand the scope and frequency of the incident before investigating further.
 
 ### Alerts
 
-Most incidents are generated as a result of an analytics rule alert. Examples of alerts include detection of suspicious files, detection of
-suspicious user activities, or attempted elevation of privilege. Analytics rules generate alerts, either based on KQL queries or direct connection to Microsoft Security solutions such as Azure Security Center or Azure Advanced Threat Protection. If you enable alert grouping Azure Sentinel includes any related alerts evidence for the incident.
+Most incidents are generated as a result of an analytics rule alert. Examples of alerts include:
+- detection of suspicious files 
+- detection of suspicious user activities
+- attempted elevation of privilege 
+<!-- Jason: The above used to be a sentence but I made it a list, fyi. --> 
+
+Analytics rules generate alerts, either based on KQL queries or direct connection to Microsoft Security solutions such as Azure Security Center or Azure Advanced Threat Protection. If you enable alert grouping Azure Sentinel includes any related alerts evidence for the incident.
 
 ### Bookmarks
 
@@ -27,3 +36,5 @@ An entity refers to a network or user resource involved with an event. You can u
 - Network connection
 
 For instance, entities would help you identify all of the alerts associated with a specific user at Contoso, the user's host machine, and other hosts the user has connected to. You can determine which IP addresses are associated with the user in question, exposing which events and alerts could be part of the same attack.
+
+<!-- Jason: Appreciate the mention of Contoso here! In general, appreciate the clear lanaguage and streamlined content. --> 
