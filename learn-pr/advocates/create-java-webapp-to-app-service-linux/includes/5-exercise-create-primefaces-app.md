@@ -4,7 +4,7 @@ As part of that evaluation, you will build a web application and deploy it to Li
 
 :::image type="content" source="../media/primefaces-todo-list.png" alt-text="My ToDo List App":::
 
-## Create Todo web app with PrimeFaces
+## Exercise Create Todo web app with PrimeFaces
 
 Follow the steps below to build and run a JavaServer Faces web application.
 
@@ -14,7 +14,7 @@ Follow the steps below to build and run a JavaServer Faces web application.
 1. Create Controller Class
 1. Run in local Tomcat environment
 
-### 1. Creating a JSF Web Page
+### Creating a JSF Web Page
 
 Copy and paste the code below into the index.xhtml file to create a View for your Todo application.
 
@@ -95,7 +95,7 @@ We have also added a new attribute to the DataTable, `selection ="#{todocontroll
 </html>
    ```
 
-### 2. Create DataModel Class
+### Create DataModel Class
 
 First, we will implement the data model classes in the `com.microsoft.samples.model` package.
 Execute the following command to create a directory for the package.
@@ -144,7 +144,7 @@ public class TodoItem implements Serializable {
 }
    ```
 
-### 3. Create DAO Class
+### Create DAO Class
 
 Then we implement the class for Data Access in the `com.microsoft.samples.dao` package.
 Execute the following command to create a directory for the package.
@@ -205,7 +205,7 @@ public class TodoItemManagement {
 }
 ```
 
-### 4. Create Controller Class
+### Create Controller Class
 
 Finally, we will implement the class for the controller in the `com.microsoft.samples.controller` package.
 Execute the following command to create a directory for the package.
