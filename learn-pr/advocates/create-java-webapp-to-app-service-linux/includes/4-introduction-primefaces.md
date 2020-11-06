@@ -69,7 +69,7 @@ You can also execute the process with Ajax by adding `update=" target-id"` to th
 #### Backing Beans for JSF pages
 
 An implementation example of the Backing Bean corresponding to the above Facelets(XHTML) is shown below.
-The content entered in `p:inputText` can be bound to `name` of the `TodoListController` class and handled in the program. Also, when a button is pressed with `p:commandButton`, then the `buttonAddAction()` method of the `TodoListController` class is invoked to print the value entered by the user in `name` on the standard output.
+The content entered in `p:inputText` can be bound to `name` of instance field in the `TodoListController` class and handled in the program. Also, when a button is pressed with `p:commandButton`, then the `buttonAddAction()` method of the `TodoListController` class is invoked to print the value entered by the user in `name` on the standard output.
 
    ```java
 import lombok.Getter;
@@ -98,9 +98,9 @@ If you create the XHTML and Backing Bean, you can  see like the following screen
 
 ### PrimeFaces DataTable
 
-`p:dataTable` is a component for displaying HTML tables, which is an extension of the standard table of JSF. You can easily use the Paginator function by adding the `paginator` attribute. Here, the Transition function of Paginator is placed at the bottom of the table and is set with `paginatorPosition="bottom"` attribute, and 5 items that can be displayed on one screen are set with `rows="5"`.
-The display items in the table use `todoItems` of the `TodoListController` class. `todoItems` refers to `List<TodoItem>`, and each element in List (`TodoItem`) is available in `var="item"`.
-In other words, `#{item.name}` and `#{item.category}` are used to display each value of the `TodoItem` instance.
+`p:dataTable` is a component for displaying HTML tables, which is an extension of the standard table of JSF. You can easily use the Paginator function by adding the `paginator` attribute. Here, the Transition function of Paginator is placed at the bottom of the table and is set with `paginatorPosition="bottom"` attribute, and 5 items that can be displayed on the screen by deafult because we configured it with `rows="5"`.  
+
+The display items in the table use `todoItems` as `List<TodoItem>` which is defined in the  the `TodoListController` class. Furthermore in order to refer the each element in the List is available by using `var="item"`. For example, `#{item.name}` and `#{item.category}` are used to display each value of the `TodoItem` instance in the List.
 
 ```xml
     <h:form>
@@ -121,7 +121,7 @@ In other words, `#{item.name}` and `#{item.category}` are used to display each v
 
 The implementation example of the `TodoListController` class is described below.
 In this example, the `@PostConstruct init()` method is used to generate dummy `List <TodoItem>` data when this instance is created.
-In other words, dummy data is generated at startup, so this content is displayed some contents by default.
+In this code, dummy data is generated at startup, so this content is displayed some contents by default.
 
 ```java
 import com.microsoft.samples.model.TodoItem;
