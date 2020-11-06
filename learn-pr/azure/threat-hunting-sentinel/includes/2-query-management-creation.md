@@ -13,10 +13,12 @@ The hunting page provides a list all hunting queries. you can filter and sort qu
 ### Manage hunting queries
 
 WHen you select a query from the list, the query details appear in a new pane. The query details pane contains a description of the query, query code, and other information about the query including entities involved and identified tacts. You can run a query interactively by selecting **Run Query** in the details pane.
+<!-- Replace "WHen" with "When" -->
 
 ### Hunt for threats using the MITRE ATT&CK framework
 
 Azure Sentinel uses the MITRE ATT&CK timeline to categorize and order queries by tacts. ATT&CK is a knowledge base of tactics and techniques used and observed in the global threat landscape. You can use MITRE ATT&CK to develop and inform your threat hunting models and methods in Azure Sentinel. When threat hunting in Azure Sentinel, you can use the ATT&CK framework to categorize and run queries using the MITRE ATT&CK tactics timeline. You can select individual tactics from the timeline on the Hunting page.
+<!-- At the end of the first sentence where it says "tacts" do you mean "tactics" -->
 
 :::image type="content" source="../media/2-att&ck-timeline.png" alt-text="The MITRE ATT&CK timeline on the Hunting page in Azure Sentinel" :::
 
