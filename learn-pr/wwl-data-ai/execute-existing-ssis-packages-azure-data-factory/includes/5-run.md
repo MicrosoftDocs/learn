@@ -1,6 +1,7 @@
 SQL Server Data Tools (SSDT) is typically used to create and deploy SQL Server Integration Services (SSIS) packages. It can be used for both on-premises SSIS packages, and for packages that will be used in Azure through Azure Data Factory. When creating a new SSIS package that is to be used in Azure, you first should select an Azure-enabled Integration Services Project, which will prompt you to connect to an instance of Azure Data Factory.
 
-![Create a new project in SSDT](../media/create-new-project-ssdt.png)
+> [!div class="mx-imgBorder"]
+> ![Create a new project in SSDT](../media/create-new-project-ssdt.png)
 
 You may already have SSIS packages that you wish to have enabled for Azure. In this case, there is the option to open up the project in SSDT, and then right-click the project and click on **Azure-Enabled Project** menu item under the **SSIS in Azure Data Factory** submenu to launch the **Azure-Enabled Project Wizard**.
 

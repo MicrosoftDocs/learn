@@ -20,7 +20,8 @@ Perform the following steps to setup an Integration Runtime
 
 1. On the **General settings** page of **Integration Runtime setup** pane, complete the following steps.
 
-    ![Integration Runtime General settings page](../media/integration-runtime-general-settings.png)
+    > [!div class="mx-imgBorder"]
+    > ![Integration Runtime General settings page](../media/integration-runtime-general-settings.png)
 
 1. In **Name**, enter the name of your Integration Runtime.
 
@@ -71,7 +72,8 @@ The alternative approach is to:
 
 1. For **Package store linked service**, select your existing linked service that stores the access information for file system/Azure Files/Azure SQL Managed Instance where your packages are deployed or create a new one by selecting **New**. On the **New linked service** pane, complete the following steps.
 
-    ![New linked service page](../media/new-linked-service-page.png)
+    > [!div class="mx-imgBorder"]
+    > ![New linked service page](../media/new-linked-service-page.png)
 
 1. For **Name**, enter the name of your linked service.
 
@@ -98,7 +100,8 @@ The alternative approach is to:
 
 1. On the **Advanced settings** page of **Integration Runtime setup** pane, complete the following steps.
 
-    ![Integration Runtime setup advanced settings](../media/integration-runtime-setup-advanced-settings.png)
+    > [!div class="mx-imgBorder"]
+    > ![Integration Runtime setup advanced settings](../media/integration-runtime-setup-advanced-settings.png)
 
 1. For **Maximum Parallel Executions Per Node**, select the maximum number of packages to run concurrently per node in your Integration Runtime cluster. 
 
