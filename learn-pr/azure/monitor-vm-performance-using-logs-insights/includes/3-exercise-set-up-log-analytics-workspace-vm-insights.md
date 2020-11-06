@@ -46,7 +46,7 @@ In this unit, you'll:
 
     ```bash
     az vm create \
-      --resource-group [sandbox resource group name] \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --location westus \
       --name SampleVM1 \
       --image UbuntuLTS \
@@ -88,6 +88,8 @@ In this unit, you'll:
 1. Once enabled, go into the **Insights** section of each VM underneath the Monitoring area.
 
 1. After the pane opens, select **Performance.**
+
+:::image type="icon" source="../media/3-virtual-machine-insights.png" border="false" alt-text="Screen shot after enabling Virtual Machine Insights.":::
 
 1. Explore the different graphs for: Logical Disk Performance, CPU Utilization, Available Memory, Logical Disk IOPS, Logical Disk MB/s, Logical Disk Latency (ms), Max Logical Disk Used %, Bytes Sent Rate, and Bytes Received Rate.
 
