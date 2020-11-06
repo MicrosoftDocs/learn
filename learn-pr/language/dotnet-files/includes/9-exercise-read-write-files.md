@@ -6,15 +6,15 @@ In this exercise, you'll complete the project by reading the .json files, adding
 
 ## Add Json.NET to the project
 
-1. Using the terminal add *Json.NET* to the project.
+1. Using the terminal, add *Json.NET* to the project.
 
-```bash
-dotnet add package Newtonsoft.Json
-```
+    ```bash
+    dotnet add package Newtonsoft.Json
+    ```
 
 ## Preparation for sales data
 
-1. In `Program.cs` directly under the `FindFiles` method add a new private class that will model the *sales.json* data.
+1. In `Program.cs` directly under the `FindFiles` method, add a new private class that will model the *sales.json* data.
 
     ```csharp
     class SalesData
@@ -23,9 +23,9 @@ dotnet add package Newtonsoft.Json
     }
     ```
 
-  Note that this class will be nested within the `Program` class.
+   This class will be nested within the `Program` class.
 
-1. At the top of `Program.cs` add `using Newtonsoft.Json`.
+1. At the top of `Program.cs`, add `using Newtonsoft.Json`.
 
     ```csharp
     using System;
@@ -36,7 +36,7 @@ dotnet add package Newtonsoft.Json
 
 ## Create a method to calculate sales totals
 
-1. In `Program.cs` create a new function that will calculate the sales total. This method should take an `IEnumerable<string>` of file paths that it can iterate over.
+1. In `Program.cs`, create a new function that will calculate the sales total. This method should take an `IEnumerable<string>` of file paths that it can iterate over.
 
     ```csharp
     static double CalculateSalesTotal(IEnumerable<string> salesFiles)
@@ -65,7 +65,7 @@ dotnet add package Newtonsoft.Json
           // Parse the contents as JSON
           SalesData data = JsonConvert.DeserializeObject<SalesData>(salesJson);
         
-          // Add the amount in found in the Total field to the salesTotal variable
+          // Add the amount found in the Total field to the salesTotal variable
           salesTotal += data.Total;
         }
         
@@ -125,7 +125,7 @@ dotnet add package Newtonsoft.Json
     dotnet run
     ```
 
-   There is no output from the program. If you look in the *salesTotals/totals.txt* file, you'll see the total of all the sales from the *sales.json* file.
+   There's no output from the program. If you look in the *salesTotals/totals.txt* file, you'll see the total of all the sales from the *sales.json* file.
 
 1. Run the program from the terminal again.
 
@@ -137,7 +137,7 @@ dotnet add package Newtonsoft.Json
 
    The *totals.txt* file now has a second line. Every time you run the program, the totals are added up again and a new line is written to the file.
 
-Outstanding work! You've written a smart, robust, and handy tool that Tailwind Traders can use to process all of its stores' sales every night. In the next section, we'll review what you learned and a few tips to remember.
+Outstanding work! You've written a smart, robust, and handy tool that Tailwind Traders can use to process all of its stores' sales every night. In the next unit, we'll review what you learned and a few tips to remember.
 
 ## Got stuck?
 
@@ -200,7 +200,7 @@ namespace files_module
                 // Parse the contents as JSON
                 SalesData data = JsonConvert.DeserializeObject<SalesData>(salesJson);
 
-                // Add the amount in found in the Total field to the salesTotal variable
+                // Add the amount found in the Total field to the salesTotal variable
                 salesTotal += data.Total;
             }
 

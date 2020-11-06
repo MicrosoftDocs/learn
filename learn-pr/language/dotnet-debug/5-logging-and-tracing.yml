@@ -3,7 +3,7 @@ uid: learn.dotnet-debug.5-logging-and-tracing
 title: Logging and tracing in .NET applications
 metadata:
   title: Logging and tracing in .NET applications
-  description: Learn about different instrumentation techniques through logging and tracing  that help debug .NET applications.
+  description: Learn about different instrumentation techniques through logging and tracing that help debug .NET applications.
   author: jamesmontemagno
   ms.author: jamont
   ms.date: 10/28/2020

@@ -3,7 +3,7 @@ uid: learn.languages.dotnet-introduction.how-to-use-dotnet
 title: How to use .NET
 metadata:
   title: How to use .NET
-  description: An overview of the workflow that developers use when building .NET applications.
+  description: An overview of the workflow that developers use to build .NET applications.
   ms.date: 10/12/2020
   author: bobtabor-msft
   ms.author: rotabor

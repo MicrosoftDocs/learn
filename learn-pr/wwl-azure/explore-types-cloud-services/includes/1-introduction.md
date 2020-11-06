@@ -1,4 +1,4 @@
-When talking about cloud computing services, there are three major categories: IaaS, SaaS, and PaaS. It's important to understand them because they are used in conversation, documentation, and training.
+When talking about cloud computing services, there are three major categories: IaaS, PaaS, and SaaS. It's important to understand them because they are used in conversation, documentation, and training.
 
 After completing this module, you will be able to:
 
