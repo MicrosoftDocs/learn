@@ -1,8 +1,8 @@
 Now that we have verified the operation with Tomcat in the local environment, deploy the application to Azure App Services.
-You can use the [Maven Plugin for Azure Web Apps(https://github.com/microsoft/azure-maven-plugins) to deploy to Azure App Service. Please specify the latest version (1.11.0 as of October 1, 2020).
+You can use the `Maven Plugin for Azure App Service` to deploy to Azure App Service. Please specify the latest version.
 
 ```bash
-mvn com.microsoft.azure:azure-webapp-maven-plugin:1.11.0:config
+mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 ```
 
 When you execute the command, some question items will be displayed at the prompt, so enter and select the appropriate items and set them. Please enter the following contents this time.
@@ -18,7 +18,7 @@ When you execute the command, some question items will be displayed at the promp
 When you execute it, the following will be displayed.
 
 ```bash
-mvn com.microsoft.azure:azure-webapp-maven-plugin:1.11.0:config
+mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
 [INFO] Scanning for projects...
 [INFO]
@@ -26,7 +26,7 @@ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
 [INFO] Building azure-javaweb-app Maven Webapp 1.0-SNAPSHOT
 [INFO] --------------------------------[ war ]---------------------------------
 [INFO]
-[INFO] --- azure-webapp-maven-plugin:1.11.0:config (default-cli) @ azure-javaweb-app ---
+[INFO] --- azure-webapp-maven-plugin:1.12.0:config (default-cli) @ azure-javaweb-app ---
 
 Available subscriptions:
 * 1: My Subscription (********-****-****-****-************)
@@ -78,7 +78,7 @@ And also we need to configure the timeout of startup time on  `WEBSITES_CONTAINE
       <plugin>
         <groupId>com.microsoft.azure</groupId>
         <artifactId>azure-webapp-maven-plugin</artifactId>
-        <version>1.11.0</version>
+        <version>1.12.0</version>
         <configuration>
           <schemaVersion>V2</schemaVersion>
           <subscriptionId>********-****-****-****-************</subscriptionId>
