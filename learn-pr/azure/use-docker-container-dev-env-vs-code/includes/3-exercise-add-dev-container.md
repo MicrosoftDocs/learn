@@ -5,7 +5,9 @@ When setting up the dev container for a project, you'll need to add a container 
 1.  Ensure Docker Desktop is running on your machine.
 1.  Copy the URL for the sample repo to your clipboard.
 
-        https://github.com/burkeholland/python-products.git
+    ```bash
+    https://github.com/MicrosoftDocs/mslearn-python-products
+    ```
 
 1.  Open a new instance of Visual Studio Code.
 1.  Press <kbd>F1</kbd> to open the Command Palette.
