@@ -21,13 +21,13 @@ quiz:
     - content: Resource group native design.
       isCorrect: false
       explanation: Azure native-first design approach must be employed.
-    - content: Foundational shared services must be in place.
+    - content: Foundational shared services in place.
       isCorrect: true
       explanation: Key foundational services, such as identity and access management, security, networking, monitoring, and shared infrastructure services, must be in place.
     - content: Security governance not driven by policy.
       isCorrect: false
       explanation: Enterprise-scale architecture necessitates a rich initial implementation of landing zones with fully integrated governance, security, and operations from the start. Security is required for success.
-    - content: Virtual-machine-centric migration
+    - content: Virtual-machine-centric migration.
       isCorrect: false
       explanation: Enterprise-scale architecture supports both existing application migrations and new application development.
 
