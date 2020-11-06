@@ -64,18 +64,18 @@ select the providers you desire to use. To do it follow these steps:
 
    ![Review and create the Workspace](..media/azure-quantum-preview-terms.png)
 
-## Setup your project and write your program
+## Setup the project and write your program
 
 Next, you'll use Visual Studio Code to create a Q# Project.
 
-1. In VS Code open the View menu, and select Command Palette.
+1. In VS Code open the **View** menu, and select **Command Palette**.
 
 1. Type `Q#: Create New Project`.
 
-1. Select Standalone console application.
+1. Select **Standalone console application**.
 
 1. Select a directory to hold your project, such as your home directory. Enter
-   `MyFirstJob` as the project name, then select Create Project.
+   `MyFirstJob` as the project name, then select **Create Project**.
 
 1. From the window that appears at the bottom, select Open new project.
 
@@ -84,7 +84,7 @@ Next, you'll use Visual Studio Code to create a Q# Project.
 
 1. Start by opening the `MyFirstJob.csproj` file and adding the
    `ExecutionTarget` property, which will give you design-time feedback on the
-   compatibility of your program for IonQ's hardware.
+   compatibility of your program for IonQ's hardware in VS Code.
 
 ```xml
 <Project Sdk="Microsoft.Quantum.Sdk/0.12.20100504">
@@ -105,7 +105,7 @@ namespace MyFirstJob {
     open Microsoft.Quantum.Canon;
 
     @EntryPoint()
-    operation TestSuperposition() : Result[] {
+    operation TestSuperposition() : Result {
         using (q = Qubit())  {
             H(q);
             return M(q);
@@ -114,12 +114,12 @@ namespace MyFirstJob {
 }
 ```
 
-This program only prepares a qubit in an even superposition and then measures
-it.
+This program prepares a qubit in an even superposition and then measures
+it. It's simple but enough to show how to submit a job.
 
-## Prepare the AZ CLI
+## Prepare the Azure CLI
 
-Next, we'll prepare your environment to run the program against the workspace
+Next, you prepare your environment to submit the job using the workspace
 you created.
 
 1. Use `quantum workspace set` to select the workspace you created above as the
@@ -149,21 +149,24 @@ you created.
    ionq        ionq.simulator                                  Available  0
    ```
 
-    > :pencil: When you submit a job in Azure Quantum it will wait in a queue
+    > [!NOTE]
+    > When you submit a job in Azure Quantum it will wait in a queue
     > until the provider is ready to run your program. The `Average Queue Time`
     > column of the target list command shows you how long other jobs which have
     > been run recently waited to be execute. This can give you an idea of how
     > long you might have to wait.
 
+In this case, we see that IonQ has two different targets, a quantum processing
+unit (QPU) and a simulator. The quantum processing unit is a trapped ion quantum
+computer with 11 qubits. The simulator is a GPU-accelerated simulator
+supporting up to 29 qubits with the same characteristics than the QPU, making it
+perfect to test jobs before running them on actual quantum hardware.
+
 ## Simulate the program
 
 Before you run a program against real hardware, we recommend simulating it first
 (if possible, based on the number of qubits required) to help ensure that your
-algorithm is doing what you want. Fortunately, IonQ provides an idealized
-simulator that you can use.
-
-> :pencil: You can also simulate Q# programs locally using the (Full State
-> Simulator)[https://docs.microsoft.com/en-us/quantum/user-guide/machines/full-state-simulator].
+algorithm is doing what you want.
 
 Run your program with `az quantum execute --target-id ionq.simulator -o table`.
 This command will compile your program, submit it to Azure Quantum, and wait
@@ -176,26 +179,12 @@ histogram which should look like the one below:
    .........
    Result     Frequency
    ---------  -----------  -------------------------
-   [0,0,0,0]  0.06250000   ▐█                      |
-   [1,0,0,0]  0.06250000   ▐█                      |
-   [0,1,0,0]  0.06250000   ▐█                      |
-   [1,1,0,0]  0.06250000   ▐█                      |
-   [0,0,1,0]  0.06250000   ▐█                      |
-   [1,0,1,0]  0.06250000   ▐█                      |
-   [0,1,1,0]  0.06250000   ▐█                      |
-   [1,1,1,0]  0.06250000   ▐█                      |
-   [0,0,0,1]  0.06250000   ▐█                      |
-   [1,0,0,1]  0.06250000   ▐█                      |
-   [0,1,0,1]  0.06250000   ▐█                      |
-   [1,1,0,1]  0.06250000   ▐█                      |
-   [0,0,1,1]  0.06250000   ▐█                      |
-   [1,0,1,1]  0.06250000   ▐█                      |
-   [0,1,1,1]  0.06250000   ▐█                      |
-   [1,1,1,1]  0.06250000   ▐█                      |
+   [0]  0.06250000   ▐█                      |
+   [1]  0.06250000   ▐█                      |
    ```
 
 This shows an equal frequency for each of the 16 possible states for measuring 4
-qubits, which is what we expect from an idealized simulator! This means we're
+qubits, which is what we expect from an idealized simulator. This means we're
 ready to run it on the QPU.
 
 ## Run the program on hardware
@@ -258,22 +247,5 @@ output`:
 The histogram you receive may be slightly different than the one above, but you
 should find that the states generally are observed with equal frequency.
 
-## Next steps
 
-This quickstart guide demonstrated how to get started running Q# programs
-against IonQ's simulator and QPU.
-
-We recommend you continue your journey by learning more about the [different
-types of targets in Azure
-Quantum](https://github.com/MicrosoftDocs/quantum-docs-private/wiki/Create-Q-applications-for-Azure-Quantum),
-which will dictate which Q# programs you may run against a given provider. You
-might also be interested in learning how to submit Q# jobs with [Jupyter
-Notebooks](https://github.com/MicrosoftDocs/quantum-docs-private/wiki/Submit-jobs-to-Azure-Quantum-with-Q-Jupyter-Notebooks)
-or with
-[Python](https://github.com/MicrosoftDocs/quantum-docs-private/wiki/Submit-jobs-to-Azure-Quantum-with-Python).
-
-Looking for more samples to run? Check out the [samples
-directory](https://github.com/MicrosoftDocs/quantum-docs-private/tree/feature/onboarding-azure-quantum/azure-quantum/samples)
-
-Lastly, if you would like to learn more about writing Q# programs please see the
-[Microsoft Quantum Documentation](https://docs.microsoft.com/quantum/).
+TODO
