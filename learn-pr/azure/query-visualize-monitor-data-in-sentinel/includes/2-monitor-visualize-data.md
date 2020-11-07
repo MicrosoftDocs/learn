@@ -14,7 +14,7 @@ The **Logs** page has four main parts:
 - The query pane is where you write your own query expressions.
 - The query result pane shows the results of the queries
 
-![Screenshot that present default Logs page](..media/02-LOGS.PNG)
+![Screenshot that present default Logs page](../media/02-LOGS.PNG)
 
 ### Queries
 
@@ -29,7 +29,7 @@ From the **Queries** drop-down menu you can filter these queries based on:
 You can start predefined queries by selecting **Run** which will redirect you in the query pane, where you can observe the query structure and the results.
 Contoso is concerned about unauthorized uses, and they can select the predefined query **Unauthorized Users**, as shown in the following screenshot:
 
-![Screenshot that present Unauthorized users](..media/02-Unauthorized-Users.PNG)
+![Screenshot that present Unauthorized users](../media/02-Unauthorized-Users.PNG)
 
 ### Query Explorer
 
@@ -41,7 +41,7 @@ The **Tables** pane is grouping logs from different solutions into tables. You c
 
 The following screenshot present the logs collected in Azure Sentinel solution.
 
-![Screenshot presenting Tables view](..media/02-Logs-Azure-Sentinel.PNG)
+![Screenshot presenting Tables view](../media/02-Logs-Azure-Sentinel.PNG)
 
 ### Query pane
 
@@ -60,7 +60,7 @@ AzureActivity
 
 The header toolbar provide additional interaction with the query, as shown in the following screenshot:
 
-![Screenshot presenting Tables view](..media/02-Header-Toolbar.PNG)
+![Screenshot presenting Tables view](../media/02-Header-Toolbar.PNG)
 
 you can save the query from the query pane by selecting **Save**. That will open a new window on the right side, where you are prompted to enter the name of the saved query and category. Saved queries appears in query explorer.
 The **Time Range** field lets you change the time in the past from when the results of the query will be shown.
