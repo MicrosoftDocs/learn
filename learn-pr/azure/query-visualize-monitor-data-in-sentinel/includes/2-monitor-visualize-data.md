@@ -1,9 +1,6 @@
 Azure Sentinel Logs provides you with the access of the various logs collected from the security connectors. The logs are collected from the connectors that are integrated with Azure Sentinel and they are stored into Azure Log Analytic Workspace.
-
 The Log Analytic Workspace is a repository that store data and configuration information.
-
 You can create queries that can filter important information and can be used in creation of the analytics rules and threat hunting.
-
 For example, Contoso can use Azure Sentinel Logs, to search the data from multiple sources, aggregate large data sets and perform complex operations to locate potential security threats and vulnerabilities.
 
 ## Exploring the Azure Sentinel Logs page
@@ -12,7 +9,7 @@ You search for the logs in Azure Sentinel Logs page. You can access **Logs** pag
 
 The **Logs** page has four main parts:
 
-- The page header bar contains links to the **Queries**, **Query explorer**, Settings and help section.
+- The page header contains links to the **Queries**, **Query explorer**, Settings and help section.
 - Tables pane is presenting collected data from the logs in tables, each composed with multiple columns.
 - The query pane is where you write your own query expressions.
 - The query result pane shows the results of the queries
@@ -22,9 +19,7 @@ The **Logs** page has four main parts:
 ### Queries
 
 If you select the **Queries** link in the page header you will open a new window where you can select from some of the predefined sample queries.
-
 From the **Queries** drop-down menu you can filter these queries based on:
-
 - Category
 - Resource Type
 - Solution
@@ -50,14 +45,21 @@ The following screenshot present the logs collected in Azure Sentinel solution.
 ### Query pane
 
 You can use the Query pane to write queries that will retrieve data based on the expression that you provide. The query pane can help you in writing a right query by providing a suggestion and automatic filling of the expected elements of the query.
+You can use rich capabilities of Kusto query language (KQL) to write a query that retrieve data from the logs. One example that identify deleted Virtual machines is listed in the following query code:
 
-The queries are written using the Kusto query language (KQL).
+```kusto
+AzureActivity
+| where OperationName == 'Delete Virtual Machine'
+| where ActivityStatus == 'Accepted'
+| extend AccountCustomEntity = Caller
+| extend IPCustomEntity = CallerIpAddress
+```
 
-You can save the query from the query pane by selecting **Save**. That will open a new window on the right side, where you are prompted to enter the name of the saved query and category. Saved queries appears in query explorer.
-
+In the header toolbar you can save the query from the query pane by selecting **Save**. That will open a new window on the right side, where you are prompted to enter the name of the saved query and category. Saved queries appears in query explorer.
+The **Time Range** field lets you change the time in the past from when the results of the query will be shown.
 You can also create a link for the query and share with other colleagues by selecting **Copy link to query.** You can also copy the query text.
-
-From the header in the query pane you can create either a **New Azure Monitor alert** , or **New Azure Sentinel alert.** If you select to create a new Azure Sentinel alert, you will be directed to the steps of creation of analytics rule.
+From the header toolbar in the query pane you can create either a **New Azure Monitor alert** , or **New Azure Sentinel alert.** If you select to create a new Azure Sentinel alert, you will be directed to the steps of creation of analytics rule.
+You can export the query 
 
 ### Query results
 
