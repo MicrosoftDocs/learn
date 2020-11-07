@@ -10,6 +10,6 @@ metadata:
   ms.date: 09/22/2020
 azureSandbox: true
 interactive: bash
-durationInMinutes: 5
+durationInMinutes: 25
 content: |
   [!include[](includes/3-exercise-set-up-log-analytics-workspace-vm-insights.md)]

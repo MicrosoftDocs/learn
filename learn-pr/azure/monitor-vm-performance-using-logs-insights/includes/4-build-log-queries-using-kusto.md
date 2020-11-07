@@ -19,7 +19,7 @@ At its core, a Kusto query is a read-only request. The request processes data an
 
 A query consists of references to actual tables and one or more query operators applied in sequence. When looking at a query, each reference is indicated visually by the use of a pipe character (|) to delimit operators. At least one statement in the query is a tabular expression statement, which is a statement that produces data arranged in columns and rows.
 
-Tabular operators will predominantly be the way you interact with and query monitoring data. Tabular operators such as count, distinct, evaluate, join, limit, project, etc. are all relevant in formulating queries. Since the Kusto Query Language was originally written for Azure Data Explorer, there are a number of additional ways to manipulate data that are outside the scope of this Learn module. The language is powerful and can perform complex analysis on generated data.
+Tabular operators will predominantly be the way you interact with and query monitoring data. Tabular operators such as count, distinct, evaluate, join, limit, project, etc. are all relevant in formulating queries. Since the Kusto Query Language was originally written for Azure Data Explorer, there are a number of additional ways to manipulate data that are outside the scope of this Learn module. Know the language is powerful and can perform complex analysis on generated data.
 
 ## Understanding the schema and schema pane
 
@@ -27,7 +27,7 @@ The **schema** is a series of tables logically grouped together. The schema allo
 
 By taking a look at the schema pane, you will begin to understand that no query should be built from scratch. You are able to favorite a table, change scopes so you only see the relevant tables for the resource(s) you select, display metadata to easily find what you need, and you have capacity to use a preview pane that provides insight into a table's content, along with additional information and metadata.
 
-:::image type="icon" source="../media/4-schema-pane-location.png" border="false" alt-text="Screen shot of schema pane in the Logs section of a Log Analytics workspace.":::
+:::image type="content" source="../media/4-schema-pane-location.png" alt-text="Screen shot of schema pane in the Logs section of a Log Analytics workspace.":::
 
 ## Writing a new query
 
@@ -39,14 +39,14 @@ One additional thing to note is the Kusto Query Language is case-sensitive. Lang
 
 One of the tables captured by Azure Monitor is the Heartbeat table. This table contains a number of useful columns. Heartbeat will capture data on everything from OS type, OS major version, resource ID, resource group, etc. To begin understanding all columns that make up this table, running a query with only Heartbeat will start to show what makes up this table.
 
-:::image type="icon" source="../media/4-heartbeat-query.png" border="false" alt-text="Screen shot of running Heartbeat as the most basic query to start.":::
+:::image type="content" source="../media/4-heartbeat-query.png" alt-text="Screen shot of running Heartbeat as the most basic query to start.":::
 
-In the results pane at the bottom of logs, you will see some of the following fields in the screenshot: TimeGenerated [UTC], SourceComputerId, ComputerIP, Computer, Category, OSType, and so on. Each of these columns is a data point you can filter upon.
+In the results pane at the bottom of logs, you will see some of the following fields in the screenshot: TimeGenerated [UTC], SourceComputerId, ComputerIP, Computer, Category, OSType, and so on. Each of these columns is a data point you can filter on.
 
 The tabular operators can be applied to help the query return more relevant and detailed information. Recall that tabular operators help you filter upon extracted data. The results received from Heartbeat seem to be a lot in this example and you know from the previous module that there are only two virtual machines reporting to the Log Analytics workspace. In order to make sure there are only two virtual machines reporting to the workspace, let's add the distinct operator to this query.
 
-:::image type="icon" source="../media/4-distinct-operator.png" border="false" alt-text="Screen shot showcasing Heartbeat query with the pipe and a distinct Computer listed.":::
+:::image type="content" source="../media/4-distinct-operator.png" alt-text="Screen shot showcasing Heartbeat query with the pipe and a distinct Computer listed.":::
 
-The results now show only two virtual machines are reporting to the workspace. Heartbeat acts like an inventory of all virtual machines reporting to a specific workspace. The distinct operator produces a table with the distinct combination columns within the input query.
+The results now show only two virtual machines are reporting to the workspace. Heartbeat acts like an inventory of all virtual machines reporting to a specific workspace. The distinct operator produces a table with the distinct combination columns requested within the input query.
 
-In the next unit, we'll show you how to take a query and build upon that query to gather the exact data you need from your environment. From there, you will take an existing query and tweak that query so you receive the right data you are looking for from your Azure environment.
+In the next unit, we'll show you how to take an existing query and produce results. From there, we'll build upon that query to gather the exact data you need from your environment in order to create an alert.
