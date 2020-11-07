@@ -12,18 +12,18 @@ You search for the logs in Azure Sentinel Logs page. You can access **Logs** pag
 
 The **Logs** page has four main parts:
 
-- The page header bar contains links to the **Queries** , **Query explorer** and help section.
+- The page header bar contains links to the **Queries**, **Query explorer**, Settings and help section.
 - Tables pane is presenting collected data from the logs in tables, each composed with multiple columns.
 - The query pane is where you write your own query expressions.
 - The query result pane shows the results of the queries
 
-![](RackMultipart20201104-4-bowyol_html_866110d1f114debe.png)
+![Screenshot that present default Logs page](02-LOGS.png)
 
 ### Queries
 
-The Query link in the page header bar will open a new window where you can select from some of the predefined sample queries.
+If you select the **Queries** link in the page header you will open a new window where you can select from some of the predefined sample queries.
 
-From the drop-down menu you can filter these queries based on:
+From the **Queries** drop-down menu you can filter these queries based on:
 
 - Category
 - Resource Type
@@ -31,14 +31,9 @@ From the drop-down menu you can filter these queries based on:
 - Topic
 
 You can start predefined queries by selecting **Run** which will redirect you in the query pane, where you can observe the query structure and the results.
+Contoso is concerned about unauthorized uses, and they can select the predefined query **Unauthorized Users**, as shown in the following screenshot:
 
-For example, Contoso can use resource type filtering to filter logs based on Log Analytics Workspace and to run a predefined query **Unauthorized Users** to filter all unauthorized users
-
-The example query is shown in the next screenshot.
-
-![](RackMultipart20201104-4-bowyol_html_a374030b5ebdb04c.png)
-
-###
+![Screenshot that present Unauthorized users](02-Unauthorized-Users.png)
 
 ### Query Explorer
 
@@ -50,35 +45,13 @@ The **Tables** pane is grouping logs from different solutions into tables. You c
 
 The following screenshot present the logs collected in Azure Sentinel solution.
 
-![](RackMultipart20201104-4-bowyol_html_911e436bf918e18f.png)
+![Screenshot presenting Tables view](02-Logs-Azure-Sentinel.png)
 
 ### Query pane
 
 You can use the Query pane to write queries that will retrieve data based on the expression that you provide. The query pane can help you in writing a right query by providing a suggestion and automatic filling of the expected elements of the query.
 
-The queries are written using the Kusto query language (KQL)
-
-### Write and run basic queries
-
-The following query retrieves all records from the  **Event**  table:
-
-```kusto
-
-Event
-```
-
-You can use the pipe (|) character to separate commands. Then the output of the first command is the input of the next command. You can add any number of commands to a single query. The following query retrieves the records from the  **Event**  table, and then searches them for the term  **error**  in any property:
-
-```kusto
-
-Event
-
-| search error;
-```
-
-By default, Log Analytics limits queries to a time range of the past 24 hours. To set a different time range, you can add an explicit  **TimeGenerated**  filter to the query, or use the  **Time range**  control.
-
-If you want to try some of the examples you can use [this demo environment](https://ms.portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade),.
+The queries are written using the Kusto query language (KQL).
 
 You can save the query from the query pane by selecting **Save**. That will open a new window on the right side, where you are prompted to enter the name of the saved query and category. Saved queries appears in query explorer.
 
