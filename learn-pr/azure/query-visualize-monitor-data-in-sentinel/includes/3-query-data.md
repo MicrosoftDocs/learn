@@ -4,10 +4,10 @@ You can search and filter the data in Azure Sentinel, using Azure Data Explorer.
 - join functions
 - group by-aggregates
 
-### Write and run basic queries
+## Write and run basic queries
 
 A query is a read-only request to process data and return the results of this processing, without modifying the data or metadata. The query uses schema entities that are organized in a hierarchy similar to SQL's: databases, tables, and columns. A schema is a collection of tables grouped under logical categories. The queries consist of sequence of query statements that are delimeted by a semicolon (;).
-When you construct the query you start with either a table name or a search command. Tables contain columns,   
+When you construct the query you start with either a table name or a search command.   
 
 The following query retrieves all records from the  **Event**  table:
 
@@ -26,8 +26,15 @@ Event
 ```
 You can construct the query with tabular and scalar operators that are combined into multple tabular expression statements, that produce the results of the query.
 
-source1 | operator1 | operator2 | renderInstruction
+source1 | operator1 | operator2 
 
+In the following example, the source is **AzureActivity**, the first opeator is **where**, which filter out records based on the logical expression, and the second operator is again **where**:
+
+```kusto
+AzureActivity
+| where OperationName == 'Delete Virtual Machine'
+| where ActivityStatus == 'Accepted'
+```
 
 By default, Log Analytics limits queries to a time range of the past 24 hours. To set a different time range, you can add an explicit  **TimeGenerated**  filter to the query, or use the  **Time range**  control. For example the following query is returning the data from the last hour: 
 
