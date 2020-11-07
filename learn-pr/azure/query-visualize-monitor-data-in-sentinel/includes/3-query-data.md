@@ -46,6 +46,7 @@ AzureActivity
 | where TimeGenerated > ago (1h)
 ```
 
-To combine the records from two sources, you can use the **join** operator.
+To combine the records from two sources (tables), you can use the **join** operator. The **union** command combines two or more tables into one.
+
 
 If you want to try some of the examples you can use [this demo environment](https://ms.portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade),.
