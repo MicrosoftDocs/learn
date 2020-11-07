@@ -2,7 +2,7 @@
 uid: learn.azure.threat-response-sentinel-playbooks.5-exercise-create-playbook
 metadata:
   title: Exercise - Create an Azure Sentinel playbook
-  description: Exercise - Create an Azure Sentinel playbook
+  description: Create an Azure Sentinel playbook.
   ms.date: 29/10/2020
   author: jboeshart
   ms.author: jaboes
