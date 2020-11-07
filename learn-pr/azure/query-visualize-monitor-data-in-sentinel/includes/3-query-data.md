@@ -1,4 +1,13 @@
+You can search and filter the data in Azure Sentinel, using Azure Data Explorer. This is a service for storing and running interactive analytics on collected data by using **Kusto Query Language**. Azure Data Explorer offers different tools and integrations to do data ingestion, queries, visualization, orchestration and more. Azure Sentinel is usng KQL to visualize and analyze the important data. You can use KQL to make complex analytical queries that include some of the following operators:
+
+- calculated columns
+- join functions
+- group by-aggregates
+
 ### Write and run basic queries
+
+A query is a read-only request to process data and return the results of this processing, without modifying the data or metadata. The query uses schema entities that are organized in a hierarchy similar to SQL's: databases, tables, and columns. A schema is a collection of tables grouped under logical categories. The queries consist of sequence of query statements that are delimeted by a semicolon (;).
+When you construct the query you start with either a table name or a search command. Tables contain columns,   
 
 The following query retrieves all records from the  **Event**  table:
 
@@ -13,9 +22,20 @@ You can use the pipe (|) character to separate commands. Then the output of the 
 
 Event
 
-| search error;
+| search error
+```
+You can construct the query with multple tabular expression statement, that produce the results of the query.
+
+
+By default, Log Analytics limits queries to a time range of the past 24 hours. To set a different time range, you can add an explicit  **TimeGenerated**  filter to the query, or use the  **Time range**  control. For example the following query is returning the data from the last hour: 
+
+```kusto
+
+Event
+
+| search error
+| where TimeGenerated > ago (1h)
 ```
 
-By default, Log Analytics limits queries to a time range of the past 24 hours. To set a different time range, you can add an explicit  **TimeGenerated**  filter to the query, or use the  **Time range**  control.
 
 If you want to try some of the examples you can use [this demo environment](https://ms.portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade),.
