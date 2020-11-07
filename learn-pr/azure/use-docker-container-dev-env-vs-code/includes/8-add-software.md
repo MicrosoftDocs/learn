@@ -22,9 +22,10 @@ However, the most efficient practice of all that persists your changes even afte
 A look at installing software via the Dockerfile is as follows:
 
 ```Dockerfile
-FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:0-12
+ARG VARIANT=3
+FROM mcr.microsoft.com/vscode/devcontainers/python:${VARIANT}
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get install git
+    && apt-get install -y traceroute
 ```
 
 - The `RUN` command creates a new “layer.” Layers are how the container knows what has changed and what in the container needs to be updated when you rebuild it. You should try to keep related logic together in the same `RUN` command so that you don’t create unnecessary layers.

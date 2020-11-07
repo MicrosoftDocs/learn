@@ -13,7 +13,7 @@ The Dockerfile is the best tool with which to add new software to your container
 
    ```yml
    RUN apt-get update \
-     && apt-get install curl \
+     && apt-get install -y curl ca-certificates \
      && curl -sL https://deb.nodesource.com/setup_14.x | bash \
      && apt-get install nodejs \
      && node -v \
