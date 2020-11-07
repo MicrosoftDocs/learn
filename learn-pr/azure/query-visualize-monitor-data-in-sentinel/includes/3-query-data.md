@@ -1,4 +1,4 @@
-You can search and filter the data in Azure Sentinel, using Azure Data Explorer. This is a service for storing and running interactive analytics on collected data by using **Kusto Query Language**. Azure Data Explorer offers different tools and integrations to do data ingestion, queries, visualization, orchestration and more. Azure Sentinel is usng KQL to visualize and analyze the important data. You can use KQL to make complex analytical queries that include some of the following operators:
+You can search and filter the data in Azure Sentinel, using Azure Data Explorer. This is a service for storing and running interactive analytics on collected data by using **Kusto Query Language** (KQL). Azure Data Explorer offers different tools and integrations to do data ingestion, queries, visualization, orchestration and more. Azure Sentinel is usng KQL to visualize and analyze the important data. You can use KQL to make complex analytical queries that include some of the following operators:
 
 - calculated columns
 - join functions
@@ -24,7 +24,9 @@ Event
 
 | search error
 ```
-You can construct the query with multple tabular expression statement, that produce the results of the query.
+You can construct the query with tabular and scalar operators that are combined into multple tabular expression statements, that produce the results of the query.
+
+source1 | operator1 | operator2 | renderInstruction
 
 
 By default, Log Analytics limits queries to a time range of the past 24 hours. To set a different time range, you can add an explicit  **TimeGenerated**  filter to the query, or use the  **Time range**  control. For example the following query is returning the data from the last hour: 
