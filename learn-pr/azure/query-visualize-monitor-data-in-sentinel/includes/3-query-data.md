@@ -12,14 +12,12 @@ When you construct the query you start with either a table name or a search comm
 The following query retrieves all records from the  **Event**  table:
 
 ```kusto
-
 Event
 ```
 
 You can use the pipe (|) character to separate commands. Then the output of the first command is the input of the next command. You can add any number of commands to a single query. The following query retrieves the records from the  **Event**  table, and then searches them for the term  **error**  in any property:
 
 ```kusto
-
 Event
 
 | search error
