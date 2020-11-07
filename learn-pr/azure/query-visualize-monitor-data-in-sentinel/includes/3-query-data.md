@@ -46,5 +46,6 @@ AzureActivity
 | where TimeGenerated > ago (1h)
 ```
 
+To combine the records from two sources, you can use the **join** operator.
 
 If you want to try some of the examples you can use [this demo environment](https://ms.portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade),.
