@@ -32,6 +32,7 @@ In the following example, the source is **AzureActivity**, the first opeator is 
 
 ```kusto
 AzureActivity
+
 | where OperationName == 'Delete Virtual Machine'
 | where ActivityStatus == 'Accepted'
 ```
@@ -40,9 +41,10 @@ By default, Log Analytics limits queries to a time range of the past 24 hours. T
 
 ```kusto
 
-Event
+AzureActivity
 
-| search error
+| where OperationName == 'Delete Virtual Machine'
+| where ActivityStatus == 'Accepted'
 | where TimeGenerated > ago (1h)
 ```
 
