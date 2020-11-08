@@ -84,7 +84,7 @@ The IT director believes that Azure Sentinel Analytics will help the security an
 
 As Contoso's lead system engineer and Azure administrator, you've been asked to set up analytics rules in Azure Sentinel so that the SecOps team can identify and stop cyberattacks.
 
-## Second unit: Exercise&mdash; Prepare the environment for exercise unit
+## Second unit: Exercise unit - Prepare the environment for exercise unit
 
 **Type of unit:** Exercise unit
 
@@ -171,7 +171,7 @@ After you complete this unit, you&#39;ll be able to manage rules with modificati
 - Disable the rule
 - Delete the rule
 
-## Eight unit: Exercise&mdash; Detect threats with Azure Sentinel Analytics
+## Eight unit: Detect threats with Azure Sentinel Analytics
 
 **Type of unit:** Exercise unit
 
