@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.threat-response-sentinel-playbooks.2-playbook-overview
+uid: learn.azure.threat-response-sentinel-playbooks.3-playbook-overview
 metadata:
   title: What are Azure Sentinel playbooks?
   description: Explore Azure Sentinel playbooks.
@@ -11,7 +11,7 @@ metadata:
 title: What are Azure Sentinel playbooks?
 durationInMinutes: 10
 content: |
-  [!include[]includes/2-playbook-overview.md)]
+  [!include[]includes/3-playbook-overview.md)]
 quiz:
   title: Check your knowledge
   questions:
