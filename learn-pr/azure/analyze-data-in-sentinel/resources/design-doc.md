@@ -16,9 +16,9 @@
 
 ## Products taught
 
-- Microsoft Azure Sentinel <!--LM: Per MS style, precede with "Microsoft" on first mention.-->
+- Microsoft Azure Sentinel
 - Azure Monitor Logs
-<!--LM: Per MS style, use Azure Monitor Logs instead of Log Analytics-->
+
 ## Prerequisites
 
 - Basic knowledge of Azure services
@@ -56,12 +56,13 @@ This module introduces you to Azure Sentinel Analytics and describes the various
 <!--LM: Note the capitalization differences in "analytics". Please resolve, referring to my previous comments.-->
 1. Introduction
 2. What is Azure Sentinel Analytics?
-3. Types of Analytic rules
-4. Create an Analytics rule from templates
-5. Create an Analytics rule from wizard
-6. Manage analytics rules
-7. Exercise unit
-8. Summary
+3. Exercise Setup
+4. Types of Analytic rules
+5. Create an Analytics rule from templates
+6. Create an Analytics rule from wizard
+7. Manage analytics rules
+8. Exercise unit
+9. Summary
 
 ## First unit: Introduction
 
@@ -71,8 +72,7 @@ This module introduces you to Azure Sentinel Analytics and describes the various
 
 ### Module scenario
 
-Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Endpoint Protection, and Microsoft Azure Information Protection. Contoso provides threat protection for its Azure-based and on-premises resources by using the paid version of Azure Security Center. The company also monitors and protects other non-Microsoft assets.
-<!--LM: For "Endpoint Protection", please indicate System Center or Intune.-->
+Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, System Center Endpoint Protection, and Microsoft Azure Information Protection. Contoso provides threat protection for its Azure-based and on-premises resources by using the paid version of Azure Security Center. The company also monitors and protects other non-Microsoft assets.
 Security analysts at Contoso face a huge triage burden. They deal with a high volume of alerts from multiple products. They correlate alerts in the following ways:
 
 - Manually from different project dashboards
@@ -99,7 +99,22 @@ After you complete this unit, you&#39;ll be able to explain the importance of Az
 - Explore the Analytics home page
 - Map analytics rules to MITRE ATT&CK Tactics
 
-## Third unit: Types of Analytics rules
+## Thirth unit: Exercise&mdash; Prepare the environment for exercise unit
+
+**Type of unit:** Exercise unit
+
+**Estimated unit duration:** 5 minutes
+
+**Use of supplemental demo video:** Potentially
+
+### Key content per learning objective
+
+In this exercise, you'll learn to:
+
+- Create an Azure Sentinel instance
+- Create resources needed for exercise units.
+
+## Fourth unit: Types of Analytics rules
 
 **Type of unit:** Learning content unit
 
@@ -114,7 +129,7 @@ After you complete this unit, you&#39;ll be able to understand the following typ
 - Machine Learning
 - Fusion
 
-## Fourth unit: Create an analytics rule from templates
+## Fifth unit: Create an analytics rule from templates
 
 **Type of unit:** Learning content unit
 
@@ -127,7 +142,7 @@ After you complete this module, you&#39;ll be able to create an analytics rule f
 - Explore templates
 - Create an analytics rule from templates
 
-## Fifth unit: Create an analytics rule from Wizard
+## Sixth unit: Create an analytics rule from Wizard
 
 **Type of unit:** Learning content unit
 
@@ -140,7 +155,7 @@ After you complete this unit, you&#39;ll be able to create new rules and queries
 - Scheduled query rule
 - Microsoft incident rule
 
-## Sixth unit: Manage analytics rules
+## Seventh unit: Manage analytics rules
 
 **Type of unit:** Learning content unit
 
@@ -155,8 +170,8 @@ After you complete this unit, you&#39;ll be able to manage rules with modificati
 - Disable the rule
 - Delete the rule
 
-## Seventh unit: Exercise&mdash;Threat detection with Azure Sentinel Analytics
-<!--LM: I suggest changing the heading to "Detect threats with Azure Sentinel Analytics" to include a verb.-->
+## Eight unit: Exercise&mdash; Detect threats with Azure Sentinel Analytics
+
 **Type of unit:** Exercise unit
 
 **Estimated unit duration:** 10 minutes
@@ -177,7 +192,7 @@ If you want to repeat these steps, sign up for a free trial Azure subscription.
 
 After you complete the steps, delete any resource groups you created.
 
-## Eighth unit: Summary
+## Ninth unit: Summary
 
 **Type of unit:** Summary unit
 
