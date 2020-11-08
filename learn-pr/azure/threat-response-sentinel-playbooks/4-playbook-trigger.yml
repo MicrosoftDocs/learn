@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.threat-response-sentinel-playbooks.3-playbook-trigger
+uid: learn.azure.threat-response-sentinel-playbooks.4-playbook-trigger
 metadata:
   title: Trigger a playbook in real-time
   description: Explain how to trigger a playbook in real time.
