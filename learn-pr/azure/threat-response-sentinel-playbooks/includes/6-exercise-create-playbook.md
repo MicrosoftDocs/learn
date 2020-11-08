@@ -1,5 +1,7 @@
 In this exercise, you will create an Azure Sentinel playbook.
 
+<!--Anu, i will have to rewrite some of the exercise steps. I will have to sync with other authors who write other Sentinel modules for the final design of the exercise unit. For know, please do not spent time on exercise unit. >
+
 ## Exercise 1: Create an Azure Sentinel playbook
 
 As a security engineer working for Contoso, you recently notice that significant number of users from your Azure AD, has been categorized at risk. Some of the users report that they use VPN connecton to connect to Contoso resources from home. You want to analyze that occurrence in the future and reduce the alerting of fault postive occurence.
