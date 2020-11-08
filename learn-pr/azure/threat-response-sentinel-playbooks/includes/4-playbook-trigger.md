@@ -1,4 +1,4 @@
-Now, that you understand a little more about Azure Sentinel playbooks, let&#39;s see how Contoso can automatically respond to a security threat.
+Now, that you understand a little more about Azure Sentinel playbooks, let&#39;s see how Contoso can automatically respond to a security threat. 
 
 ## Explore the Playbooks page
 
@@ -34,9 +34,18 @@ Once that the inputs are provided, you should select **Review + Create** button,
 
 Azure Sentinel creates the Logic App, and then you are directed to the **Logic App Designer** page.
 
-The Logic App Designer provides a design canvas that you use to add a trigger and actions to your workflow. For example, you can configure the trigger to come from the Azure Sentinel Connector when a new security incident is created.
+The Logic App Designer provides a design canvas that you use to add a trigger and actions to your workflow. For example, you can configure the trigger to come from the Azure Sentinel Connector when a new security incident is created. In the Logic App Designer page, there are many predifinied templates, that you can use, but to create a playbook, you should start with **Blank Logic App**, to design the logic app from scretch.
+
+![Screenshot of the Logic App Designer](../media/04-Logic-App-Designer.PNG)
+
+The automathed activity in the playbook is start from the Azure Sentinel trigger. You can search for the Azure Sentinel trigger in the search box of the design canvas, and then select one of the the two available triggers:
+
+- When a response to an Azure Sentinel alert is triggered
+- When Azure Sentinel incident creation rule was triggered
 
 Opening Azure Sentinel Connector for the first time prompts you to **Sign in** to your tenant either with a user account from Azure Active Directory (Azure AD) or with Service Principal. This establishes an API connection to your Azure AD.
+
+![Screenshot of Sign-in to Azure AD Tenant](../media/04-Sign-In-ADTenant.PNG)
 
 Each playbook starts with trigger followed by actions that design the automated response on a security incident. You can combine actions from Azure Sentinel Connector with other actions from other Logic Apps connectors.
 
@@ -44,9 +53,9 @@ For example, you can add the trigger from Azure Sentinel Connector when an incid
 
 The following screenshot displays the incident triggered by Azure Sentinel Connector, which detects a suspicious account and sends an email to the administrator. 
 
-![](RackMultipart20201028-4-1cv98ih_html_f290e65b3b8e6bdc.png)
+![Screenshot of Logic App with actions](../media/04-Log-App-Designer.PNG)
 
-Each step in the workflow design has different fields that you must fill. For example, the **Entities - Get Accounts** action requires you to provide the list of entities from Azure Sentinel Alert. An advantage of using Azure Logic Apps is that you can provide this input from the **Dynamic content** list, which is populated with the outputs of the previous step. For example,the  Azure Sentinel Connector trigger **When a response to Azure Sentinel Alert is triggered** provides dynamic properties such as **Entities, Alert Display name**, which you can use to fill the inputs.
+Each step in the workflow design has different fields that you must fill. For example, the **Entities - Get Accounts** action requires you to provide the list of entities from Azure Sentinel Alert. An advantage of using Azure Logic Apps is that you can provide this input from the **Dynamic content** list, which is populated with the outputs of the previous step. For example, the  Azure Sentinel Connector trigger **When a response to Azure Sentinel Alert is triggered** provides dynamic properties such as **Entities, Alert Display name**, which you can use to fill the inputs.
 
 ![](RackMultipart20201028-4-1cv98ih_html_a309740eab36017.png)
 
