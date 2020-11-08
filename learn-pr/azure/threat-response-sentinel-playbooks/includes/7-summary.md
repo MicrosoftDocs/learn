@@ -9,6 +9,7 @@ What was the difference earlier when they did not use playbooks?
 
 Can you please provide a few lines according to that template? Thanks-->
 >
+<!--Anu, i will have to rewrite the lab steps, and that will impact the summary section>
 
 Contoso SecOps can now react more quickly to security incidents by using Azure Sentinel SOAR capabilities.
 Sentinel playbooks are based on Logic Apps with an Azure Sentinel connector and provide near real-time responses.
