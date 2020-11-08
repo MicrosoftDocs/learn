@@ -5,23 +5,21 @@ In addition to assessing and addressing problems with their security configurati
 
 Azure Sentinel uses built-in and custom detections to alert you to potential security threats such as attempts to access Contoso&#39;s resources from outside its infrastructure or when data from Contoso appears to be sent to a known malicious IP address. You can also create incidents based on these alerts.
 
-## What are Azure Sentinel playbooks 
-
-<!-- Marjan, for all these section headings, can we just have them as Azure Sentinel playbooks, Azure Logic Apps, and Logic Apps Connector? and delete the "What are" etc-->
+## Azure Sentinel playbooks 
 
 You can create security playbooks in Azure Sentinel to respond to alerts. *Security playbooks* are collections of procedures based on Azure Logic Apps that run in response to an alert. You can run these security playbooks manually in response to your investigation of an incident or you can configure an alert to run a playbook automatically.
 
-With the ability to respond to incidents automatically, you can automate some of your security operations and make your SOC <!--Marjan, please expand this acronym as we have not used this before.--> more productive.
+With the ability to respond to incidents automatically, you can automate some of your security operations and make your Service Organization Controls (SOC) more productive.
 
-For example, to address Contoso's concerns, you can develop a workflow with defined steps that can block a suspicious user name from accessing resources from a non-secure IP address. Alternatively, you can configure the playbook to perform a simple operation such as notifying the SecOps team about a high-level security alert. <!-- Marjan, I made several edits to this passage. Please review.-->
+For example, to address Contoso's concerns, you can develop a workflow with defined steps that can block a suspicious user name from accessing resources from a non-secure IP address. Alternatively, you can configure the playbook to perform a simple operation such as notifying the SecOps team about a high-level security alert. 
 
-## What are Azure Logic Apps
+## Azure Logic Apps
 
 Azure Logic Apps is a cloud service that automates the operation of your business processes. You use a graphical design tool called the _Logic Apps Designer_ to arrange prebuilt components into the sequence you need.
 
 ![](RackMultipart20201028-4-vhhntv_html_1bd4b89b520a5e8c.png)
 
-## What is a Logic Apps Connector
+## Logic Apps Connector
 
 Logic apps use connectors to connect to hundreds of services. A _connector_ is a component that provides an interface to an external service.
 
@@ -32,7 +30,7 @@ Azure Logic Apps use triggers and actions, which are defined as follows:
 - A _trigger_ is an event that occurs when a specific set of conditions is satisfied. Triggers activate automatically when conditions are met. For example, a security incident occurs in Azure Sentinel, which is a trigger for an automated action.
 - An _action_ is an operation that performs a task in the Logic Apps workflow. Actions run when a trigger activates or another action completes.
 
-## What is Azure Sentinel Logic Apps connector
+## Azure Sentinel Logic Apps connector
 
 An Azure Sentinel playbook uses an Azure Sentinel Logic Apps connector. It provides the triggers and actions that can start the playbook and perform defined actions.
 
