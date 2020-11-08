@@ -1,6 +1,7 @@
 In addition to assessing and addressing problems with their security configuration, Contoso must also monitor for new problems and threats, and respond appropriately. Azure Sentinel is both a Security Information and Event Management (SIEM) and Security Orchestration, Automation and Response (SOAR) solution that&#39;s designed for hybrid environments.
 
 > [!Note]
+
 > SIEM solutions provide storage and analysis of logs, events, and alerts that other systems generate. You can configure these solutions to raise their own alerts. SOAR solutions support the remediation of vulnerabilities and the overall automation of security processes.
 
 Azure Sentinel uses built-in and custom detections to alert you to potential security threats such as attempts to access Contoso&#39;s resources from outside its infrastructure or when data from Contoso appears to be sent to a known malicious IP address. You can also create incidents based on these alerts.
@@ -61,6 +62,7 @@ The following table lists all the current actions for the Azure Sentinel connect
 | Remove labels from incident | Removes the labels for the selected incident. |
 
 > [!Note]
+
 > Actions that have **(V2)** or a higher number provide a new version of the action and may differ from the old functionality of the action.
 
 Some actions require integration with actions from another connectors. For example, if Contoso wants to identify all suspicious accounts returned in the alert from the defined entities, they must combine the **Entities - Get Accounts** action with the **For Each** action. Similarly, to get all individual hosts in an incident that detect suspicious hosts, they must combine the **Entities - Get Accounts** action with the **For Each** action.
