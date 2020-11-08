@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.analyze-data-in-sentinel.2-azure-sentinel-analytics-overview
+uid: learn.azure.analyze-data-in-sentinel.3-azure-sentinel-analytics-overview
 metadata:
   title: What is Azure Sentinel Analytics?
   description: Explain what is Azure Sentinel Analytics.
@@ -11,7 +11,7 @@ metadata:
 title: What is Azure Sentinel Analytics?
 durationInMinutes: 5
 content: |
-  [!include[]includes/2-azure-sentinel-analytics-overview.md)]
+  [!include[]includes/3-azure-sentinel-analytics-overview.md)]
 quiz:
   title: Check your knowledge
   questions:
