@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.analyze-data-in-sentinel.8-summary
+uid: learn.azure.analyze-data-in-sentinel.9-summary
 metadata:
   title: Summary
   description: Provides a summary of threat detection with Azure Sentinel Analytics.
@@ -11,4 +11,4 @@ metadata:
 title: Summary
 durationInMinutes: 5
 content: |
-  [!include[]includes/8-summary.md)]
+  [!include[]includes/9-summary.md)]
