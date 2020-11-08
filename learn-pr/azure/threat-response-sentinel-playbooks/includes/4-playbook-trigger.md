@@ -8,29 +8,31 @@ You can automate respond to threats in the **Playbooks** page. On this page, you
 
 You can use the header bar, as displayed in the following diagram, to create new playbooks or to enable or disable existing playbooks.
 
-![](RackMultipart20201028-4-1cv98ih_html_4b0f4ac4c5b09e46.png)
+![Screenshot that present the header bar](../media/04-PLaybooks-header.PNG)
 
 The header bar provides the following options:
 
 - Use the **Add Playbook** button to create a new playbook.
 - Use the **Refresh** button to refresh the display, for example, after you create a new playbook.
-- Use the drop-down time frame to filter the status of the running of the playbooks. <!--Marjan, can you please confirm the UI name here? Is the drop-down option called "time frame"?-->
+- Use the drop-down time field to filter the status of the running of the playbooks. 
 - The **Enable**, **Disable**, and **Delete** buttons are only available if you select one or more logic apps.
 - Use the **Logic Apps documentation** button to review links to official Microsoft documentation for more information on logic apps.
 
 Contoso wants to use automated actions to prevent suspicious users from accessing their network. As their security administrator, you can create a playbook to implement this action. To create a new playbook, select **Add Playbook**. You will be directed to the page where you should create a new Logic App by providing inputs for the following settings:
 
-- **Subscription**. Select the subscription that contains the Azure Sentinel workplace. <!--Marjan just doible-checking if this was supposed to be workspace or workplace-- >
+- **Subscription**. Select the subscription that contains the Azure Sentinel. 
 - **Resource Group**. You can use an existing resource group or create a new one.
 - **Logic App name**. Provide a descriptive name for the logic app.
 - **Location**. Select the same location as where your Log Analytics workspace is located.
 - **Log Analytics**. If you enable log analytics, you can get information about playbook&#39;s runtime events.
 
-![](RackMultipart20201028-4-1cv98ih_html_73e8eeca2ad79ed0.png)
+Once that the inputs are provided, you should select **Review + Create** button, and then select **Create**.
+
+![Screenshot that present Logic App](../media/04-Logic-App.PNG)
 
 ## Logic Apps Designer
 
-After Azure Sentinel creates the Logic App, you are directed to the **Logic App Designer** page. <!--Marjan, I changed this sentence to active voice but please check if it is Azure Sentinel that creates the App or just Azure.-->
+Azure Sentinel creates the Logic App, and then you are directed to the **Logic App Designer** page.
 
 The Logic App Designer provides a design canvas that you use to add a trigger and actions to your workflow. For example, you can configure the trigger to come from the Azure Sentinel Connector when a new security incident is created.
 
