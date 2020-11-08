@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.analyze-data-in-sentinel.3-exercise-setup
+uid: learn.azure.analyze-data-in-sentinel.2-exercise-setup
 metadata:
   title: Exercise - Detect threats with Azure Sentinel analytics
   description: Detect threats by using Azure Sentinel Analytics.
@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Detect threats with Azure Sentinel analytics
 durationInMinutes: 10
 content: |
-  [!include[]includes/3-exercise-setup.md)]
+  [!include[]includes/2-exercise-setup.md)]
