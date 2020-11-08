@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.analyze-data-in-sentinel.4-create-rule-from-templates
+uid: learn.azure.analyze-data-in-sentinel.5-create-rule-from-templates
 metadata:
   title: Create an analytics rule from templates
   description: Describes the procedure to create an analytics rule from templates.
@@ -11,7 +11,7 @@ metadata:
 title: Create an analytics rule from templates
 durationInMinutes: 8
 content: |
-  [!include[] includes/4-create-rule-from-templates.md)]
+  [!include[] includes/5-create-rule-from-templates.md)]
 quiz:
   title: Check your knowledge
   questions:
