@@ -84,7 +84,23 @@ The IT director believes that Azure Sentinel Analytics will help the security an
 
 As Contoso's lead system engineer and Azure administrator, you've been asked to set up analytics rules in Azure Sentinel so that the SecOps team can identify and stop cyberattacks.
 
-## Second unit: What is Azure Sentinel Analytics?
+## Second unit: Exercise&mdash; Prepare the environment for exercise unit
+
+**Type of unit:** Exercise unit
+
+**Estimated unit duration:** 5 minutes
+
+**Use of supplemental demo video:** Potentially
+
+### Key content per learning objective
+
+In this exercise, you'll setup:
+
+- Create an Azure Sentinel instance
+- Create resources needed for exercise units.
+
+
+## Thirth unit: What is Azure Sentinel Analytics?
 
 **Type of unit:** Learning content unit
 
@@ -98,21 +114,6 @@ After you complete this unit, you&#39;ll be able to explain the importance of Az
 - Understand Analytics rules
 - Explore the Analytics home page
 - Map analytics rules to MITRE ATT&CK Tactics
-
-## Thirth unit: Exercise&mdash; Prepare the environment for exercise unit
-
-**Type of unit:** Exercise unit
-
-**Estimated unit duration:** 5 minutes
-
-**Use of supplemental demo video:** Potentially
-
-### Key content per learning objective
-
-In this exercise, you'll learn to:
-
-- Create an Azure Sentinel instance
-- Create resources needed for exercise units.
 
 ## Fourth unit: Types of Analytics rules
 
