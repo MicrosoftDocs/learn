@@ -6,9 +6,9 @@ You can create a custom workbook, by selecting **+Add workbook** in the header p
 
 The **New workbook** page contains basic analytics query to get you started.
 
-Tip:
+> [!Tip]
 
-Each workbook that you create is saved as a workbook resource in the Azure Sentinel resource group.
+> Each workbook that you create is saved as a workbook resource in the Azure Sentinel resource group.
 
 ![](RackMultipart20201108-4-10kj3z7_html_faa6cadbe1d32d14.png)
 
@@ -96,15 +96,13 @@ When you create a query to present the security data as charts, you can customiz
 
 You can use the following example to count all the security alert and visualize them in the pie chart.
 
-Kusto
+'''Kusto
 
 SecurityAlert
-
 | where TimeGenerated \&gt;= ago(180d)
-
 | summarize Count=count() by AlertSeverity
-
 | render piechart
+'''
 
 In the previous example, the visualization type of the data was provided in the query. You can enter the same query without render parameter and then use the **Visualization** drop-down menu to select one of the offered types of visualizations, shown in the following screenshot:
 
