@@ -4,7 +4,7 @@ Now, that you understand a little more about Azure Sentinel playbooks, let&#39;s
 
 You can automate respond to threats in the **Playbooks** page. On this page, you can see all the playbooks that are created from Azure Logic Apps. The column **Trigger kind** presents what type of connectors are used in the logic app.
 
-![](RackMultipart20201028-4-1cv98ih_html_8f13ea8ce93a89d2.png)
+![Screenshot that present the playbook page](../media/04-PLaybooks-page.PNG)
 
 You can use the header bar, as displayed in the following diagram, to create new playbooks or to enable or disable existing playbooks.
 
@@ -38,7 +38,7 @@ The Logic App Designer provides a design canvas that you use to add a trigger an
 
 ![Screenshot of the Logic App Designer](../media/04-Logic-App-Designer.PNG)
 
-The automathed activity in the playbook is start from the Azure Sentinel trigger. You can search for the Azure Sentinel trigger in the search box of the design canvas, and then select one of the the two available triggers:
+The automathed activity in the playbook is started from the Azure Sentinel trigger. You can search for the Azure Sentinel trigger in the search box of the design canvas, and then select one of the the two available triggers:
 
 - When a response to an Azure Sentinel alert is triggered
 - When Azure Sentinel incident creation rule was triggered
@@ -64,7 +64,26 @@ A **condition** action is an **if** statement that lets your app do different th
 For example, Contoso receive a large volume of alerts, many of them with recurring patterns, so they cannot be process or investigated. Using real-time automation, Contoso SecOps teams can significantly reduce their workload by fully automating the routine responses to recurring types of alerts.
 The followng screenshot present similar situation, where based on the user input playbook can change the status of the alert. The control action will intercept the user input, and for true statement will change the status of the alert. In case that control identify false value for the expression, playbook can run other activities, such as sending an email as shown in the following screenshot:
 
-![Screenshot that present Logic APp condition](../media/04-Contidion.PNG)
+![Screenshot that present Logic App condition](../media/04-Contidion.PNG)
 
 After you provide all the steps in the Logic Apps Designer, save the logic app to create a playbook in Azure Sentinel.
 
+## Logic app page in Azure Sentinel
+
+Created playbooks, appear in the **Playbooks** page and can be further edit. From the **Playbooks** page you can select existing playbook and that will open the Logic App page for that playbook in Azure Sentinel.
+You can run several actions on the playbook from the Logic App header bar shown in the following screenshot:
+
+![Screenshot that present Header Bar](../media/04-Header.PNG)
+
+- **Run Trigger**. You can run the logic app, for example to test the playbook.
+- **Refresh**. You can refresh the status of the log app, for example to retrieve the status of the activity.
+- **Edit**. You can use this button to further edit the playbook in the Logic Apps Designer page.
+- **Delete**. You can delete this logic app if you do not need them.
+- **Disable**. You can temporary disable the logic app and the action will not be executed even if the triger is activated.
+- **Update Schema**. You can use this button to update the schema of the logic app, after a significent change in the logic.
+- **Clone**. You can make a copy of the existing logic app, and use that as a basis for further modification.
+- **Export**. You can export the logic app to Power Automate and Power Apps.
+
+The **Esentials** section, shows descriptive information, for example you definition of the logic app will show the number of triggers and actions that make up the logic app.
+You can use the **Summary** section, to see the summorized information of the logic app. From this section you can select the link and open the logic app in the Logic Apps Designer, or see the trigger history.
+The **Runs history** section, shows the previous runs of the logic app and whether they were succeeded or failed.
