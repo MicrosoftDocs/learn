@@ -99,7 +99,6 @@ In this exercise, you'll setup:
 - Create an Azure Sentinel instance
 - Create resources needed for exercise units.
 
-
 ## Thirth unit: What is Azure Sentinel Analytics?
 
 **Type of unit:** Learning content unit
