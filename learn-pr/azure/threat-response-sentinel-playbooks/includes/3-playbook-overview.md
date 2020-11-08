@@ -34,7 +34,6 @@ Azure Logic Apps use triggers and actions, which are defined as follows:
 ## Azure Sentinel Logic Apps connector
 
 An Azure Sentinel playbook uses an Azure Sentinel Logic Apps connector. It provides the triggers and actions that can start the playbook and perform defined actions.
-
 At the time of the writing of this article, there are two triggers from Azure Sentinel Logic Apps connector:
 
 - When a response to an Azure Sentinel alert is triggered
