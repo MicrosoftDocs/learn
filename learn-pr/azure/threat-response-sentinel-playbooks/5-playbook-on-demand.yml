@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.threat-response-sentinel-playbooks.4-playbook-on-demand
+uid: learn.azure.threat-response-sentinel-playbooks.5-playbook-on-demand
 metadata:
   title: Run playbooks on demand
   description: Run playbooks to respond to existing incidents.
@@ -11,7 +11,7 @@ metadata:
 title: Run playbooks on demand
 durationInMinutes: 5
 content: |
-  [!include[]includes/4-playbook-on-demand.md)]
+  [!include[]includes/5-playbook-on-demand.md)]
 quiz:
   title: Check your knowledge
   questions:
