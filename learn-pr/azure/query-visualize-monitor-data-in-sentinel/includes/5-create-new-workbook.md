@@ -12,7 +12,7 @@ The **New workbook** page contains basic analytics query to get you started.
 
 ![](RackMultipart20201108-4-10kj3z7_html_faa6cadbe1d32d14.png)
 
-You can start building your workbook by selecting **Edit.** In the right site of the **New Workbook** page select the **Edit** button to change the text that will appear in the new workbook template.
+You can start building your workbook by selecting **Edit.** From the right side of the **New Workbook** page select the **Edit** button to change the text that will appear in the new workbook template.
 
 Each workbook provides a rich set of capabilities for visualizing the security data collected from the connectors. You can design your workbook with the following visualization types and elements:
 
