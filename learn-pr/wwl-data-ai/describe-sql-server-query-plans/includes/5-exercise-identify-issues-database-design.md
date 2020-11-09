@@ -4,15 +4,19 @@ You'll evaluate a database design for problems with normalization, data type sel
 
 ## Examine the query and identify the problem
 
-1. From the lab virtual machine, start **SQL Server Management Studio (SSMS)**. Start a new query by selecting the **New Query** button in Management Studio.
+1. When the VM lab environment opens use the password on the **Resources** tab for the Student account to sign in to Windows.
 
-    :::image type="content" source="../media/dp-3300-module-55-lab-01.png" alt-text="New Query":::
+1. From the lab virtual machine, start **SQL Server Management Studio (SSMS)**.
 
-1. You will be prompted to connect to your SQL Server. ‎Enter the server name localhost, and ensure that Windows Authentication is selected, and then select connect.
+1. You will be prompted to connect to your SQL Server. ‎Ensure that Windows Authentication is selected, and then select connect.
 
-    :::image type="content" source="../media/dp-3300-module-55-lab-02.png" alt-text="Connect to Server":::
+    :::image type="content" source="../media/connect-to-server.png" alt-text="Connect to Server":::
 
-1. Start a new query by selecting the **New Query** button in SQL Server Management Studio. Copy and paste the code below into your query window.
+1. Start a new query by selecting the **New Query** button in Management Studio.
+
+    :::image type="content" source="../media/new-query.png" alt-text="New Query":::
+
+1. Copy and paste the code below into your query window.
 
     ```sql
     USE AdventureWorks2017;
@@ -23,17 +27,17 @@ You'll evaluate a database design for problems with normalization, data type sel
 
 1. Select **Include Actual Execution Plan** icon as shown below before running the query or type CTRL+M. This will cause the execution plan to be displayed when you execute the query.
 
-    :::image type="content" source="../media/dp-3300-module-55-lab-03.png" alt-text="Include Actual Execution Plan":::
+    :::image type="content" source="../media/actual-execution-plan.png" alt-text="Include Actual Execution Plan":::
 
 1. Select the execute button to execute this query.
 
 1. Navigate to the execution plan, by selecting the **Execution plan** tab in the results panel in SSMS. In the execution plan, mouse over the SELECT operator. You will note a warning message identified by an exclamation point in a yellow triangle as shown below. Identify what the Warning Message tells you.
 
-    :::image type="content" source="../media/dp-3300-module-55-lab-04.png" alt-text="Warning Message":::
+    :::image type="content" source="../media/execution-plan-warning.png" alt-text="Warning Message":::
 
 ## Identify two ways to fix the warning issue
 
-The structure for the table is shown in the follow data definition language (DDL) statement.
+The structure for the table is shown in the follow data definition language (DDL) statement. Review the fields that are used in the previous SQL query against this DDL, paying attention to their types.
 
 ```sql
 CREATE TABLE [HumanResources].[Employee](
@@ -58,35 +62,48 @@ CREATE TABLE [HumanResources].[Employee](
 
 1. Fix the query using code as a solution.
 
-    Identify what field is causing the implicit conversion and why. If you review the query from Task1, you will note the value compared to the NationalIDNumber column in the WHERE clause is passed in as a number, since it is not in a quoted string. After examining the table structure you will find this column in the table is using the nvarchar(15) datatype and not the int or integer data type. This data type inconsistency causes the optimizer to implicitly convert the constant to a nvarchar upon execution causing additional overhead to the query performance with a suboptimal plan.
+    Identify what field is causing the implicit conversion and why. If you review the query:
+
+    ```sql
+    USE AdventureWorks2017;
+    SELECT BusinessEntityID, NationalIDNumber, LoginID, HireDate, JobTitle
+    FROM HumanResources.Employee
+    WHERE NationalIDNumber = 14417807;
+    ```
+
+    You'll note the value compared to the NationalIDNumber column in the WHERE clause is compared as a number, since **14417807** isn't in a quoted string. After examining the table structure you will find the **NationalIDNumber** column is using the nvarchar(15) data type and not an integer data type. This inconsistency causes the SQL server optimizer to implicitly convert the number to a nvarchar causing additional overhead to the query performance by creating a suboptimal plan.
 
 1. Change the code to resolve the implicit conversion and rerun the query.
 
-    Remember to turn on the **Include Actual Execution Plan** (Cntl+M) if it is not already on from the exercise above. Note the warning is now gone. Changing the WHERE clause so that the value compared to the NationalIDNumber column matches the column’s data type in the table, you can get rid of the implicit conversion. In this scenario just adding a single quote on each side of the value changes it from a number to a character format. Keep the query window open for this query.
+    Remember to turn on the **Include Actual Execution Plan** (Cntl+M) if it is not already on from the steps above. Note the warning is now gone, and the query plan has improved. Changing the **WHERE** clause so that the value compared to the **NationalIDNumber** column matches the column's data type in the table, the optimizer can get rid of the implicit conversion. In this scenario just adding a single quote on each side of the value changes it from a number to a character format. Keep the query window open for this query.
 
-    :::image type="content" source="../media/dp-3300-module-55-lab-05.png" alt-text="Warning now gone":::
+    Run the updated SQL query:
 
     ```sql
     SELECT BusinessEntityID, NationalIDNumber, LoginID, HireDate, JobTitle
     FROM HumanResources.Employee
-    WHERE NationalIDNumber = '14417807'
+    WHERE NationalIDNumber = '14417807';
     ```
+
+    :::image type="content" source="../media/execution-plan.png" alt-text="Warning now gone":::
 
 1. Fix the query using database design changes.
 
-    To attempt to fix the index, in a new query window, copy and paste the query below to change the column’s data type. Attempt to execute the query, by selecting **Execute** or pressing F5.
+    To attempt to fix the index, copy and paste the query below into a new query window, to change the column's data type. Attempt to execute the query, by selecting **Execute** or pressing <kbd>F5</kbd>.
 
     ```sql
     ALTER TABLE [HumanResources].[Employee] ALTER COLUMN [NationalIDNumber] INT NOT NULL;
     ```
 
-    The changes to the table would solve the conversion issue. However this change introduces another issue that as a database administrator you need to resolve. Since this column is part of an already existing nonclustered index, the index has to be rebuilt/recreated in order to execute the data type change. This could lead to extended downtime in production, which highlights the importance of choosing the right data types in your design.
+    The changes to the table would solve the conversion issue. However, this change introduces another issue that as a database administrator you need to resolve. Since this column is part of an already existing nonclustered index, the index has to be rebuilt/recreated in order to change the data type. This could lead to extended downtime in production, which highlights the importance of choosing the right data types in your design.
 
+    ```console
     Msg 5074, Level 16, State 1, Line 1The index 'AK_Employee_NationalIDNumber' is dependent on column 'NationalIDNumber'.
 
     Msg 4922, Level 16, State 9, Line 1
 
     ALTER TABLE ALTER COLUMN NationalIDNumber failed because one or more objects access this column.
+    ```
 
 1. In order to resolve this issue, copy and paste the code below into your query window and execute it by selecting **Execute**.
 
@@ -112,3 +129,5 @@ CREATE TABLE [HumanResources].[Employee](
     FROM HumanResources.Employee
     WHERE NationalIDNumber = 14417807;
     ```
+
+Examine the query plan and note that you can now use a number for the **NationalIDNumber**. The SQL query optimizer can now generate and execute the most optimal plan.
