@@ -1,6 +1,6 @@
 In this exercise, you'll implement a feature flag to toggle the checkout page's discount coupon feature in real time. Feature flags allow you to toggle feature availability declaratively without including `if` statements in your code.
 
-You'll use a .NET Standard feature flag library named *Feature Management*. This library provides helpers to implement feature flags in your app. The library supports simple use cases like conditional statements to more advanced scenarios like conditionally adding routes or action filters. In addition, it supports Feature Filters, which allows you to enable features based on other parameters. Examples of such parameters may include a window time, percentages, or a subset of users.
+You'll use a .NET Standard feature flag library named *Feature Management*. This library provides helpers to implement feature flags in your app. The library supports simple use cases like conditional statements to more advanced scenarios like conditionally adding routes or action filters. Additionally, it supports Feature Filters, which allows you to enable features based on other parameters. Examples of such parameters may include a window time, percentages, or a subset of users.
 
 In this unit, you will:
 
@@ -58,7 +58,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
     :::image type="content" source="../../microservices-configuration-aspnet-core/media/4-implement-feature-manager/discount-coupon-elements.png" alt-text="Discount coupon elements":::
 
-You've successfully verified that the app was deployed to AKS. Additionally, you've seen that the discount coupon feature that you're going to modify to be configurable.
+You've successfully verified the app was deployed to AKS. Additionally, you've seen the discount coupon feature that you're going to make configurable.
 
 ## Set up Feature Management
 
@@ -72,7 +72,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
         popd
     ```
 
-    The library retrieves feature flags from .NET Core's native configuration system. Therefore, you can define your app's feature flags by using any configuration provider that .NET Core supports. For example, the *appsettings.json* file or environment variables. In this case, you'll make the configuration in *appsettings.json* and in the SPA Helm chart's ConfigMap file.
+    The library retrieves feature flags from .NET Core's native configuration system. You can define your app's feature flags by using any configuration provider that .NET Core supports. In this case, you'll define the configuration the SPA Helm chart's ConfigMap file.
 
 1. In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, uncomment the `UseFeatureManagement` and `FeatureManagement__Coupons` lines. Save your changes.
 
@@ -80,8 +80,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
 
     :::code language="yaml" source="../code/deploy/k8s/helm-simple/webspa/templates/configmap.yaml" highlight="25-26":::
 
-<!--TODO:Do we really need this step since we're setting the keys as env. vars?-->
-1. In the *src/Web/WebSPA/appsettings.json* file, replace the `// Add the Feature Management keys` comment with the following. Save your changes.
+    The preceding change defines two environment variables, named `UseFeatureManagement` and `FeatureManagement__Coupons`, for the *WebSPA* environment in Kubernetes. The environment variables are read by the *WebSPA* app at runtime. If defined in *WebSPA*'s *appsettings.json* file, the environment variables would override the following properties:
 
     ```json
     "UseFeatureManagement": true,
@@ -90,7 +89,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
     },
     ```
 
-    By convention, the feature manager retrieves feature flags from the `FeatureManagement` section of the configuration file. The `UseFeatureManagement` key is the feature flag. It isn't something imposed by the Feature Management library. The values above will become the default ones for the SPA.
+    Keeping the configuration in the *configmap.yaml* template enables clearer separation of configuration and code.
 
 1. In the *src/Web/WebSPA/Startup.cs* file, apply the following changes:
     1. In the `ConfigureServices` method, replace the comment `// Add the AddFeatureManagement code` with the following code:
@@ -206,4 +205,4 @@ Complete the following steps to disable the coupons feature.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
     1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is no longer present.
 
-In this unit, you made the coupons feature configurable and deployed the updated app. In the next unit, you'll modify the app to use values stored in Azure App Configuration.
+In this unit, you made the coupons feature configurable and deployed the updated app. Next, you'll modify the app to use values stored in Azure App Configuration.
