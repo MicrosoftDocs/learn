@@ -29,6 +29,6 @@ By thinking of embodied carbon in this way, any device, even one that is not con
 
 ![Embodied carbon of the same server amortized over 5 years.](../media/6-embodied-carbon-2.svg)
 
-If we apply this concept to the lifespan of the 2019 R640 Dell Server that we discussed earlier, the amortized carbon would drop from <nobr>**320 kg CO<sub>2</sub>eq/year**</nobr> to <nobr>**256 kg CO<sub>2</sub>eq/year**</nobr> if we amortized its embodied carbon over a five-year lifespan instead of four.
+If we apply this concept to the lifespan of the 2019 R640 Dell Server that we discussed earlier, the amortized carbon would drop from <nobr>**320 kg CO<sub>2</sub>eq/year**</nobr> to <nobr>**256 kg CO<sub>2</sub>eq/year**</nobr> if we extended its lifespan over five years instead of four.
 
 Hardware is retired either because it breaks down or because it struggles to handle modern workloads. Software cannot help with the first, however, if we focus on building applications that can run on older hardware, we can help with the second.
