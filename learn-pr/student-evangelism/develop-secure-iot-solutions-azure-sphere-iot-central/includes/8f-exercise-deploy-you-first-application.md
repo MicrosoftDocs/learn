@@ -176,13 +176,24 @@ static void MeasureSensorHandler(EventLoopTimer* eventLoopTimer)
 
 1. The User LED will blink every 5 seconds when connected to Azure.
 
-## Step 7: Display the Azure Sphere device telemetry
+## Step 7: Display the device telemetry in IoT Central
+
+Switch back to the Azure IoT Central web portal.
+
+### Migrate your device
 
 1. Click **Devices** on the sidebar.
-2. Select the **Azure Sphere** template.
-3. Click on the migrated device.
-4. Select the **Telemetry** tab to view the device telemetry.
-5. Rename your device. Click the **Rename** button and give your device a friendly name.
+1. Select your Azure Sphere device.
+1. Click **Migrate**.
+    ![](../media/iot-central-migrate-device.png)
+1. Select the **Azure Sphere** template.
+1. Click **Migrate**.
+
+### Display device telemetry
+
+1. Click your device to display the device dashboard.
+1. Select the **Telemetry** tab to view the device telemetry.
+1. Optional, but you can also rename your device. Click the **Rename** button and give your device a friendly name.
 
 Azure IoT Central does not update immediately. It may take a minute or two for the temperature, humidity, and pressure telemetry to be displayed.
 
