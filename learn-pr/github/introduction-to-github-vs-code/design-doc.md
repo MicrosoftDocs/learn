@@ -46,7 +46,7 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-    Visual Studio Code is a lightweight and free coding editor used by many software developers around the world. GitHub is a version control platform that software develoeprs use to host their projects. Visual Studio Code provides an integrated GitHub experience, making it easy to manage your projects from inside your coding editor. 
+    Visual Studio Code is a lightweight and free coding editor used by many software developers around the world. GitHub is a version control platform that software developers use to host their projects. Visual Studio Code provides an integrated GitHub experience, making it easy to manage your projects from inside your coding editor. 
 
     Imagine that you want to start contributing to project hosted on GitHub. You would have to get a copy of the repository locally and spend time browsing the files of code and the history on GitHub to gain context of why a code change was made, who made it, and how long that code has been there for. Instead of switching between your editor and GitHub online, you can get that directly from Visual Studio Code and have a more focused experience. 
     
