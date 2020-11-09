@@ -4,9 +4,9 @@ Imagine you're newly hired into an IT department for a large financial services 
 
 In this module, you will:
 
-- Evaluate Azure Monitor Logs and VM Insights.
-- Configure Log Analytics workspace.
-- Build queries from heartbeat and insights tables.
+- Evaluate Azure Monitor Logs and VM Insights
+- Configure Log Analytics workspace
+- Build queries from heartbeat and insights tables
 
 ## Prerequisites
 
