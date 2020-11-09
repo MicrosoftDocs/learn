@@ -1,0 +1,1 @@
+Contoso SecOps can now use Azure Sentinel Workbooks to provide interactive reports with graphs, charts, and tables, and to visualize their security data using advanced filtering. They can use these techniques to gain more insights into their data during their investigations.
