@@ -1,13 +1,15 @@
-This exercise is optional. To complete it, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+The Create an Azure Sentinel playbook exercise in this module is an optional unit. However, if you want to perform this exercise, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-To deploy the prerequisites for the exercise, perform the following steps.
+To deploy the prerequisites for the exercise, perform the following tasks.
 
-1. Click the link below.
+## Task 1: Deploy Azure Sentinel
+
+1. Select the following link:
 
 [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-azure-sentinel%2Fazuredeploy.json)
 
-2. You will be promted to sign in your Azure subscription.
-3. In the **Custom deployment** page provide the following information:
+2. You will be promted to sign in to your Azure subscription.
+3. On the **Custom deployment** page, provide the following information:
 
 |||
 | --- | --- |
@@ -19,17 +21,14 @@ To deploy the prerequisites for the exercise, perform the following steps.
 | **Simplevm Name** | Accept the default value **simple-vm**.|
 | **Simplevm WIndows OS Version** | Accept the default value **2016-Datacenter**.|
 
-4. Select the checkbox for **I agree to the terms and conditions stated above** and then select **Purchase**
+4. Select the **I agree to the terms and conditions stated above** check box, and then select **Purchase**.
 
-![Screenshot that present Custom Deployment](../media/07-Custom-Deployment.PNG)
+![Screenshot of the Custom Deployment page](../media/07-Custom-Deployment.PNG)
 
 > [!Note]
+> Wait for the deployment to complete. The deployment should take less than 5 minutes.
 
-> Wait for the deployment to complete. The deployment should take less than 5 minute.
-
-**Task 2: Configure Azure Sentinel Connectors**
-
-In this task, you will deploy Azure Sentinel connector to Azure Activity.
+## Task 2: Configure Azure Sentinel Connectors
 
 1. In the Azure portal, search for and select Azure Sentinel and select the previously created Sentinel workspace.
 2. In the **Azure Sentinel** page, on the left side in the menu bar, in the **Configuration** section, select **Data connectors.**
