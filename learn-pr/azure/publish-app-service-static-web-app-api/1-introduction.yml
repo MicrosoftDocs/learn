@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   zone_pivot_groups: dev-javascript-framework
 title: Introduction
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
