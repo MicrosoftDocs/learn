@@ -21,7 +21,7 @@ Every subscription has two keys, a primary and a secondary. Having two keys make
 
 For products where subscriptions are enabled, you must supply a key when making calls to APIs in that product. As a developer, you can obtain a key by submitting a subscription request. This is a core part of the APIM workflow.
 
-> [Note]
+ > [!NOTE]
 > Creating new users and giving them their subscription keys so they can access the API is a core part of the APIM workflow, but is outside the scope of this module.
 
 ## Call an API with the subscription key

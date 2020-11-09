@@ -119,6 +119,7 @@ When you execute the code, you might see something like the following output. Yo
 29
 49
 No numbers greater than 90
+Complete
 ```
 
 If one of the random numbers is 90 or greater, you see something like the following output. Again, your output will differ because the generated numbers are random.
@@ -155,10 +156,12 @@ print(equipment)
 When you execute the code, you should see the following output:
 
 ```output
-laptop
-phone
-dslr
+['laptop', 'phone', 'dslr']
 ```
+
+> [!NOTE]
+> In the output for this step, we're printing the entire array of values that were filtered. Python displays these values as an array of strings using square brackets, commas, and single quotes.  If you want each individual item to print on a new line without all the extra characters, you must use the `print()` **inside** of the for loop.  See the other code listings on this page for examples of how to do this.
+
 ## Step 7 - Create nested `for` loops
 
 Nesting one `for` loop inside of another `for` loop is a common way to generate a combination of values.

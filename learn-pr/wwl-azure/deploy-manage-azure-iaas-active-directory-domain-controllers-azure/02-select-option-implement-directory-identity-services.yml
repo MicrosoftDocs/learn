@@ -4,7 +4,7 @@ title: Select an option to implement directory and identity services using Activ
 metadata:
   title: Select an option to implement directory and identity services using Active Directory Domain Services in Azure
   description: "Deploy and configure Active Directory Domain Services domain controllers in Azure VMs"
-  ms.date: 08/16/2020
+  ms.date: 10/30/2020
   author: wwlpublish
   ms.author: v-anwarr
   ms.topic: interactive-tutorial

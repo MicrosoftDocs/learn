@@ -7,13 +7,13 @@ Data stored in the cloud can grow at an exponential pace. To manage costs for yo
   :::column-end:::
 :::row-end:::
 
-Azure Storage offers different access tiers for your blob and file storage, helping you store object data in the most cost-effective manner. The available access tiers include:
+Azure Storage offers different access tiers for your blob storage, helping you store object data in the most cost-effective manner. The available access tiers include:
 
-- **Hot storage tier**: Optimized for storing data that is accessed frequently (for example, images for your website).
+- **Hot access tier**: Optimized for storing data that is accessed frequently (for example, images for your website).
 
-- **Cool storage tier**: Optimized for data that is infrequently accessed and stored for at least 30 days (for example, invoices for your customers).
+- **Cool access tier**: Optimized for data that is infrequently accessed and stored for at least 30 days (for example, invoices for your customers).
 
-- **Archive storage tier**: Appropriate for data that is rarely accessed and stored for at least 180 days, with flexible latency requirements (for example, long-term backups).
+- **Archive access tier**: Appropriate for data that is rarely accessed and stored for at least 180 days, with flexible latency requirements (for example, long-term backups).
 
 The following considerations apply to the different access tiers:
 
@@ -23,8 +23,8 @@ The following considerations apply to the different access tiers:
 
 - Data in the cool access tier can tolerate slightly lower availability, but still requires high durability, retrieval latency, and throughput characteristics similar to hot data. For cool data, a slightly lower availability service-level agreement (SLA) and higher access costs compared to hot data are acceptable trade-offs for lower storage costs.
 
-- Archive storage stores data offline, and offers the lowest storage costs but also the highest data rehydrate and access costs.
+- Archive storage stores data offline and offers the lowest storage costs, but also the highest costs to rehydrate and access data.
 
-The following illustration demonstrates choosing between the hot and cool storage tiers on a general purpose storage account.
+The following illustration demonstrates choosing between the hot and cool access tiers on a general purpose storage account.
 
-[![Screenshot of specifying the Azure storage tier.](../media/account-tier.png)](../media/account-tier.png#lightbox)
+[![Screenshot of specifying the Azure access tier.](../media/account-tier.png)](../media/account-tier.png#lightbox)
