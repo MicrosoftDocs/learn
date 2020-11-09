@@ -14,9 +14,9 @@
     | **Subscription** | Concierge Subscription | The subscription under which this new function app is created. |
     | **Resource group**|  <rgn>[sandbox resource group name]</rgn> | Name for the resource group in which to create your function app.  Make sure to select **Use existing** and use the resource group from the last exercise. That way, all the resources we make in this module are kept together. |
     | **App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  |
-    | **Publish** | Code | Leave as defult. |
+    | **Publish** | Code | Leave as default. |
     | **Runtime Stack** | Node.js | The sample code in this module is written in JavaScript.  |
-    | **Version** | 12 LTS | Leave as defult. |
+    | **Version** | 12 LTS | Leave as default. |
     | **Region** | Select the same location you used earlier. | Choose a region near you or near other services your functions access.<br/><br/>Select the same region that you used when creating the Text Analytics API account in the last exercise. |
 
 1. Select **Create** to provision and deploy the function app.  If you get an error on **Hosting** tab, simply create a **Storage account**.
@@ -36,7 +36,7 @@
 
 Now that we have a function app, it's time to create a function. A function is activated through a trigger. In this module, we'll use a Queue trigger. The runtime will poll a queue and start this function to process a new message.
 
-1. Select the left hand side, seleect **Fuctions**. Click Add (**+**) button at the top middle of the page. This action starts the function creation process.
+1. Select the left hand side, select **Function**. Click Add (**+**) button at the top middle of the page. This action starts the Function creation process.
 
 1. On the **Azure Functions for JavaScript - getting started** page, verify **In-portal** is selected.
 
@@ -47,7 +47,7 @@ Now that we have a function app, it's time to create a function. A function is a
 1. Select **Add** to begin the function creation process.
    A function is created using the Queue Trigger function template. While we'll implement the function in JavaScript in this module, you can create a function in any [supported language](https://docs.microsoft.com/azure/azure-functions/supported-languages).
 
-1. If you have not already done so, seleect the **Trigger** you just created.
+1. If you have not already done so, select the **Trigger** you just created.
 
 
 ## Try it out
@@ -56,7 +56,7 @@ Let's test what we have so far. We haven't written any code yet, so this test is
 
 1. Click **Code + Test** on the left hand side. 
 
-1. Click **Test/Run** at the top of the code editor, and click **Run** at theee bottom of thee page.
+1. Click **Test/Run** at the top of the code editor, and click **Run** at the bottom of the page.
 
 1. Observe the **Logs** tab that opens at the bottom of the screen. If everything works as planned, you'll see a message similar to the following message.
     ![Screenshot of response message of a successful call to our function.](../media/func-default-run.PNG)
