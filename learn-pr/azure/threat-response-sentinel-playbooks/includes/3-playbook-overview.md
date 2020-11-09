@@ -1,7 +1,6 @@
-In addition to assessing and addressing problems with their security configuration, Contoso must also monitor for new problems and threats, and respond appropriately. Azure Sentinel is both a Security Information and Event Management (SIEM) and Security Orchestration, Automation and Response (SOAR) solution that&#39;s designed for hybrid environments.
+In addition to assessing and addressing problems with their security configuration, Contoso must also monitor for new problems and threats, and then respond appropriately. Azure Sentinel is both a Security Information and Event Management (SIEM) and Security Orchestration, Automation and Response (SOAR) solution that&#39;s designed for hybrid environments.
 
 > [!Note]
-
 > SIEM solutions provide storage and analysis of logs, events, and alerts that other systems generate. You can configure these solutions to raise their own alerts. SOAR solutions support the remediation of vulnerabilities and the overall automation of security processes.
 
 Azure Sentinel uses built-in and custom detections to alert you to potential security threats such as attempts to access Contoso&#39;s resources from outside its infrastructure or when data from Contoso appears to be sent to a known malicious IP address. You can also create incidents based on these alerts.
@@ -16,20 +15,20 @@ For example, to address Contoso's concerns, you can develop a workflow with defi
 
 ## Azure Logic Apps
 
-Azure Logic Apps is a cloud service that automates the operation of your business processes. You use a graphical design tool called the _Logic Apps Designer_ to arrange prebuilt components into the sequence you need.
+Azure Logic Apps is a cloud service that automates the operation of your business processes. You use a graphical design tool called the *Logic Apps Designer* to arrange prebuilt components into the sequence you need.
 
 ![](RackMultipart20201028-4-vhhntv_html_1bd4b89b520a5e8c.png)
 
 ## Logic Apps Connector
 
-Logic apps use connectors to connect to hundreds of services. A _connector_ is a component that provides an interface to an external service.
+Logic apps use connectors to connect to hundreds of services. A *connector* is a component that provides an interface to an external service.
 
 ## What are triggers and actions
 
 Azure Logic Apps use triggers and actions, which are defined as follows:
 
-- A _trigger_ is an event that occurs when a specific set of conditions is satisfied. Triggers activate automatically when conditions are met. For example, a security incident occurs in Azure Sentinel, which is a trigger for an automated action.
-- An _action_ is an operation that performs a task in the Logic Apps workflow. Actions run when a trigger activates or another action completes.
+- A *trigger* is an event that occurs when a specific set of conditions is satisfied. Triggers activate automatically when conditions are met. For example, a security incident occurs in Azure Sentinel, which is a trigger for an automated action.
+- An *action* is an operation that performs a task in the Logic Apps workflow. Actions run when a trigger activates or another action completes.
 
 ## Azure Sentinel Logic Apps connector
 
@@ -64,4 +63,4 @@ The following table lists all the current actions for the Azure Sentinel connect
 
 > Actions that have **(V2)** or a higher number provide a new version of the action and may differ from the old functionality of the action.
 
-Some actions require integration with actions from another connectors. For example, if Contoso wants to identify all suspicious accounts returned in the alert from the defined entities, they must combine the **Entities - Get Accounts** action with the **For Each** action. Similarly, to get all individual hosts in an incident that detect suspicious hosts, they must combine the **Entities - Get Accounts** action with the **For Each** action.
+Some actions require integration with actions from another connectors. For example, if Contoso wants to identify all suspicious accounts returned in the alert from the defined entities, you must combine the **Entities - Get Accounts** action with the **For Each** action. Similarly, to get all individual hosts in an incident that detect suspicious hosts, you must combine the **Entities - Get Accounts** action with the **For Each** action.
