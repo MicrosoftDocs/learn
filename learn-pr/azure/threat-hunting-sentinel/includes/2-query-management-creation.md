@@ -1,5 +1,9 @@
 Azure Sentinel contains powerful query tools that can help you find and isolate security threats and unwanted activity within your environment.
 
+<!-- Jason: How about: 
+
+Azure Sentonel contains powerful query tools that can help you, as lead system engineer, find and isolate secuirty threats and unwanted activity within Contoso's environment. --> 
+
 ## Hunt using built-in queries
 
 Azure Sentinel provides powerful hunting search and query tools to hunt for security threats and tactics throughout your environment. Hunting queries enable to filter through large amounts of events and security data sources to identify potential threats or track down known or expected threats.
