@@ -3,7 +3,7 @@ uid: learn.iot.introduction-to-azure-digital-twins.introduction
 metadata:
   description: This unit outlines the learning objectives, prerequisites, and scenario for this module.
   ms.date: 11/11/2020
-  author: Bazak.Mutlum
+  author: basakmutlum
   ms.author: Bazak.Mutlum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

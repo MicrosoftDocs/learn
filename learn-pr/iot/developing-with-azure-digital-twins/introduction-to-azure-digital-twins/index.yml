@@ -3,7 +3,7 @@ uid: learn.iot.introduction-to-azure-digital-twins
 metadata:
   description: This module introduces an advanced technology - Azure Digital Twins. Units of the module explain the use and benefits of digital twins, with current industry examples. You will also learn about the components of an Azure Digital Twins solution.
   ms.date: 11/11/2020
-  author: Bazak.Mutlum
+  author: basakmutlum
   ms.author: Bazak.Mutlum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

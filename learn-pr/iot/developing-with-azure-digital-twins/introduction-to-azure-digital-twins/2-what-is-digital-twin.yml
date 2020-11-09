@@ -3,7 +3,7 @@ uid: learn.iot.introduction-to-azure-digital-twins.what-is-digital-twin
 metadata:
   description: In this unit, learn about what we mean by an Azure Digital Twin.
   ms.date: 11/11/2020
-  author: Bazak.Mutlum
+  author: basakmutlum
   ms.author: Bazak.Mutlum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
