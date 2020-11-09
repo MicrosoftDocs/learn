@@ -13,13 +13,13 @@ Platform-as-a-Service offers are easier to use, and are favored as they offer a 
 But some people will prefer to have a full control on their infrastructure, mostly for the two following reasons:
 
 - If you're using some specific proprietary software, or some non-common Java features, a managed service might not be the right fit for you. For example, you might want to use network broadcasting to find your application nodes, and this feature won't be available on a managed service. Or you might want to use some specific native library, which also will not be able to run on a managed service.
-- If you need to be multi-cloud, for example because you provide software to many heterogenous customers, then you won't be able to benefit from a managed service, which by nature will make you dependent on a specific provider.
+- If you need to be multi-cloud, for example because you provide software to many heterogenous customers. Other clouds might not provide a Platform-as-a-Service solution, or will not offer the same level of support, making it challenging to run the same application on all of them.
 
 ## Choosing a Platform-as-a-Service solution on Azure
 
 For running Java workloads on a Platform-as-a-Service solution, Azure provides three possible solutions:
 
-- For simple workloads, that can scale extremely well, choose Azure Functions.
+- For simple event-driven workloads, that can scale extremely well, choose Azure Functions.
 - For normal Web applications, or for running Jakarta EE workloads, Azure App Service will be the best option.
 - For running Spring Boot applications, and more specifically Spring Cloud microservices, Azure Spring Cloud is an excellent service.
 
