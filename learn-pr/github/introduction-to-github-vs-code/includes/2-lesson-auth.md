@@ -2,15 +2,7 @@ To make it easier for you to start working on a GitHub project, you can authenti
 
 ## How can I authenticate with GitHub?
 
-First, you should install the GitHub Pull Requests and Issues extension from the extensions marketplace. 
-
-![Install extension](../media/1-ghpri.png)
-
-Once you install the extension, you can click on the gear icon at the bottom of the activity bar and click on "Sign into use GitHub Pull Requests and Issues". 
-
-![Sign into extension](../media/2-sign-in.png)
-
-This will open a browser window where you will be granting permission to VS Code to access GitHub. This step is needed to connect VS Code to GitHub and does not store any sensitive information. Once you click "Continue", you will be redirected back to VS Code.  
+You can click on the accounts icon at the bottom of the activity bar and sign in with your GitHub account. This will open a browser window where you will be granting permission to VS Code to access GitHub. This step is needed to connect VS Code to GitHub and does not store any sensitive information. Once you click "Continue", you will be redirected back to VS Code.  
 
 ## What is VS Code doing with this authorization?
 
