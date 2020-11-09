@@ -6,7 +6,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 This tutorial uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
 
-The Azure sandbox that you just activated allows you to use Azure services without incurring any costs.
+The Azure sandbox that you activated allows you to use Azure services without incurring any costs.
 
 ## Install the Azure Static Web Apps extension for Visual Studio Code
 
@@ -159,7 +159,7 @@ You can check the status of your build and deploy action by navigating to the Ac
 
 1. Click the link shown below in the screenshot
 
-    :::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
+   :::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
 
 1. Click **Azure Static Web Apps CI/CD**
 1. Click the topmost commit titled similar to **ci: add Azure Static Web Apps workflow file**
@@ -183,3 +183,16 @@ Congratulations! You've deployed your first app to Azure Static Web Apps!
 ## Next steps
 
 Next you'll learn how to handle all unmatched page requests to the server and map them to navigate to a valid page in your app.
+
+## Summary
+
+In this tutorial, you created, modified, and published a web app to Azure Static Web Apps.
+
+The solution for the [sample project is on GitHub in the _solution_ branch](https://github.com/MicrosoftDocs/mslearn-staticwebapp/tree/solution?azure-portal=true). The instructions on how to get started appear in the README file.
+
+## Additional resources
+
+Here are several resources where you can learn more about Azure Static Web Apps, Visual Studio Code, and other concepts covered in this module.
+
+- [Azure Static Web Apps on Microsoft Docs](https://docs.microsoft.com/azure/static-web-apps)
+- Use [Angular](https://code.visualstudio.com/docs/nodejs/angular-tutorial), [React](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial), and [Vue](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial) in Visual Studio Code
