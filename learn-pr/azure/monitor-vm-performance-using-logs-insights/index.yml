@@ -8,12 +8,12 @@ metadata:
   ms.author: shkuehn
   ms.prod: learning-azure
   ms.topic: interactive-tutorial
-  ms.date: 09/22/2020
-summary: First, you will evaluate Azure Monitor log tooling in your journey to better the monitoring environment for your company. From there, you will deploy a Log Analytics workspace. Once the Log Analytics workspace is ready, you will onboard VMs to the Log Analytics workspace and configure VM Insights. In order to understand the types of data you can extract, you will start to build familiarity with the syntax of Azure Monitor log queries inside Log Analytics workspace using standard operators. Once you feel comfortable with the structure, you will take some of the pre-configured queries in a Log Analytics workspace and query performance of virtual machines using the Kusto Query Language.
+  ms.date: 11/16/2020
+summary: Evaluate Azure Monitor log tooling in your journey to improve the monitoring environment for your company. You'll deploy a Log Analytics workspace. After the Log Analytics workspace is ready, onboard VMs to the Log Analytics workspace and configure VM Insights. To understand the types of data you can extract, build familiarity with the syntax of Azure Monitor log queries inside Log Analytics workspace. When you feel comfortable with the structure, take pre-configured queries in a Log Analytics workspace and query performance of virtual machines by using the Kusto Query Language.
 abstract: |
-  - Evaluate Azure Monitor Logs and VM Insights.
-  - Configure Log Analytics workspace.
-  - Build queries from heartbeat and insights tables.
+  - Evaluate Azure Monitor Logs and VM Insights
+  - Configure Log Analytics workspace
+  - Build queries from heartbeat and insights tables
 prerequisites: |
   - Experience using the Azure portal for accessing and creating resources.
   - Knowledge of Azure virtual machine creation, administration, and maintenance.
