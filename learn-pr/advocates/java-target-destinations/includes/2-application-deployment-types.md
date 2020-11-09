@@ -15,14 +15,14 @@ typically install their own configuration management software, install their fav
 workload in a similar way to what they were doing in the past.
 
 Virtual Machines will work well if you have an experienced ops team who will take care of configuring and maintaining them, and if you have
-specific use-cases: for example, if you are using some native libraries, or if you are using some proprietary software.
+specific use-cases: for example, if you are using some native libraries, or if you are using some proprietary software like Oracle WebLogic or IBM WebSphere.
 
 ***With a Platform-as-a-Service*** solution, most of the maintenance and operation burden is taken care of by the cloud provider. OS updates, Java patches,
 security and compliance are all provided out-of-the-box. As a result, this option is usually more secure and less costly. It will also come with
 some out-of-the-box scalability features, which should allow your application to adapt better to your customer's needs, resulting in better
 performance under load and lower prices when there is less traffic.
 
-To benefit fully from a Platform-as-a-Service solution, applications usually need to be rearchitected. This option will cost more time and money initially, and
+To benefit fully from a Platform-as-a-Service solution, applications sometimes need to be rearchitected. This option will then cost more time and money initially, and
 might also limit which options are available. For example, a caching mechanism that works in an on-premise environment might not work
 well in a Platform-as-a-Service service, because the network will be hardened.
 
@@ -31,7 +31,7 @@ well in a Platform-as-a-Service service, because the network will be hardened.
 Wether you use Virtual Machines or a Platform-as-a-Service, there are usually three ways to deploy your Java applications to the cloud:
 
 - source code deployment: you simply commit your source code to a Git repository, and the cloud provider runs a process that will compile, build, and package the application
-- Jar file deployment: you package your application as an executable Jar file, which is then run by the cloud provider
+- Jar/War/Ear file deployment: you package your application (typically as an executable Jar file, but other formats like War and Ear are also possible), which is then run by the cloud provider
 - Docker images: you package your application as a Docker image, which is then run by the cloud provider
 
 The first two solutions are the easiest ones, and are classical of Java applications. They also probably don't differ too much: the build process is usually similar, and the main difference is where this process is run. Letting the cloud provider do the build is simpler, and also let the cloud provider apply its own security checks and patches. Building the application locally (or using a CI/CD platform like GitHub Actions) provides more flexibility and control.
