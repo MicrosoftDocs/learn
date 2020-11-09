@@ -8,7 +8,7 @@ You'll evaluate a database design for problems with normalization, data type sel
 
 1. From the lab virtual machine, start **SQL Server Management Studio (SSMS)**.
 
-1. You will be prompted to connect to your SQL Server. ‎Ensure that Windows Authentication is selected, and then select connect.
+1. You will be prompted to connect to your SQL Server. ‎Ensure that **Windows Authentication** is selected, and then select **Connect**.
 
     :::image type="content" source="../media/connect-to-server.png" alt-text="Connect to Server":::
 
