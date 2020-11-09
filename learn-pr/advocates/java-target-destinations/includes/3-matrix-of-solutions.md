@@ -2,9 +2,9 @@ We have described the most typical deployment types for Java applications. Let's
 
 ## Azure App Service
 
-Azure App Service is the Platform as a Service (PaaS) solution provided by Azure. It offers an easy-to-use service for running Java Web applications, with automatic OS and JVM updates and patches, as well as auto-scaling or monitoring out-of-the-box.
+Azure App Service is a Platform as a Service (PaaS) solution provided by Azure. It offers an easy-to-use service for running Java Web applications, with automatic OS and JVM updates and patches, as well as auto-scaling or monitoring out-of-the-box.
 
-App Service can run any executable Jar file, like the ones provided by Spring Boot, and can also deploy any application on top of popular application servers like Tomcat or JBoss.
+App Service can run any executable Jar file, like the ones provided by Spring Boot, and can also deploy any War application on top of popular application servers like Tomcat or JBoss.
 
 For running a simple Java monolithic application, it would therefore be the best option.
 
@@ -20,7 +20,7 @@ As a result, Azure Functions is tailored for applications that need a lot of sca
 
 ## Azure Spring Cloud
 
-Azure Spring Cloud is a unique Azure service that provides a Platform-as-a-Service solution for running Spring Boot microservices. It provides many tools like a discovery server or a configuration server, as well as specific autoscaling and security mechanisms that will greatly simplify the usage of a microservice architecture based on Spring Boot. This offer is jointly created and managed by Microsoft and VMware, the company building the Spring Framework, and provides support for OS and JVM updates and patches (like Azure App Service), but also support for advanced Spring services.
+Azure Spring Cloud is a unique Azure service that provides a Platform-as-a-Service solution for running Spring Boot microservices. It provides many tools like a service registry or a configuration server, as well as specific autoscaling and security mechanisms that will greatly simplify the usage of a microservice architecture based on Spring Boot. This offer is jointly created and managed by Microsoft and VMware, the company building the Spring Framework, and provides support for OS and JVM updates and patches (like Azure App Service), but also support for advanced Spring services.
 
 This service can also be used to run other workloads, like Spring Boot monolithic applications or even .NET microservices (using Steeltoe), but its main usage and interest is for running Spring Boot microservices.
 
