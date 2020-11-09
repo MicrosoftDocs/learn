@@ -35,7 +35,7 @@ units:
 - learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-create-digital-twins-instance
 - learn.iot.output-from-azure-digital-twins-to-downstream-services.create-route-filter-twin-update-notifications
 - learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-create-route-filter-twin-update-notifications
-- learn.iot.output-from-azure-digital-twins-to-downstream-services.create-configure-azure-function,-send-telemetry-event-hub
+- learn.iot.output-from-azure-digital-twins-to-downstream-services.create-configure-azure-function-send-telemetry-event-hub
 - learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-create-configure-azure-function-send-telemetry-event-hub
 - learn.iot.output-from-azure-digital-twins-to-downstream-services.create-connect-time-series-insights-instance
 - learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-create-connect-time-series-insights-instance

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.output-from-azure-digital-twins-to-downstream-services
+uid: learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-create-configure-azure-function-send-telemetry-event-hub
 title:  Exercise - create and configure an Azure function, and send telemetry to an event hub
 metadata:
   description: In this unit, you create an Azure Function, send telemetry to an IoT hub, and configure your function.

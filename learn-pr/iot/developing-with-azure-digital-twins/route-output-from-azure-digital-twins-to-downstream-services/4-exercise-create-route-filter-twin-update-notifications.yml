@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.output-from-azure-digital-twins-to-downstream-services
+uid: learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-create-route-filter-twin-update-notifications
 title: Exercise - create a route and filter to twin update notifications
 metadata:
   description: In this unit, you will be creating an Azure Digital Twins event route that will direct these update events to Azure Event Hubs for further processing.

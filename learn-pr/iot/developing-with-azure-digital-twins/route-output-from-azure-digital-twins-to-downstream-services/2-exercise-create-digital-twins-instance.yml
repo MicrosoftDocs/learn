@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.output-from-azure-digital-twins-to-downstream-services
+uid: learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-create-digital-twins-instance
 title: Exercise - create an Azure Digital Twins Instance
 metadata:
   description: In this unit, create an instance of Azure Digital Twins.
