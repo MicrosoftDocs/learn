@@ -1,0 +1,5 @@
+### Module scenario
+
+Contoso, Ltd. is a medium-size financial services company in London with a branch office in New York. Contoso has moved aggressively to Azure services, and it currently uses Microsoft 365 and Azure Active Directory (Azure AD). It also uses Azure AD Identity Protection, Cloud App Security, Azure Advanced Threat Protection (Azure ATP), Microsoft Defender for Endpoint, Microsoft Office 365 Advanced Threat Protection, Endpoint Protection, and Microsoft Azure Information Protection. Contoso is also using the paid version of Azure Security Center for threat protection for resources that are running on Azure and on-premises. Additionally, Contoso has other non-Microsoft assets to monitor and protect.
+
+A recent incident with compromised identities led to exposed customer data. The Contoso Security Operations (SecOps) team wants to ensure that proper monitoring and reporting methods are in place. You need to demonstrate the Azure Sentinel reporting and monitoring capabilities, and how they can alert your organization to potential security incidents.
