@@ -12,4 +12,8 @@ After you've initialized a repository locally, you can choose to publish the rep
 
 ## What will VS Code do?
 
-VS Code provides a UI experience to initialize a repository, or publish it to GitHub (which will also initializes it for you). So you can start from a local folder on your computer to having a hosted project on GitHub with the push of a button and not worry about any additional Git commands.
+VS Code provides a UI experience to initialize a repository, or publish it to GitHub (which will also initializes it for you). So, you can start from a local folder on your computer to having a hosted project on GitHub with the push of a button and not worry about any additional Git commands. When you publish from VS Code, you can also choose the files you want included in the first commit when creating the repository. 
+
+Additionally, VS Code lets you publish your project as a private or public repository. A public repository is searchable on GitHub and anyone can contribute to it. A private repository is only visible to you and contributors you have explicitly invited. 
+
+
