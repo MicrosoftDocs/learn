@@ -2,8 +2,8 @@
 uid: learn.azure.query-visualize-monitor-data-in-sentinel.3-query-data
 metadata:
   title: Query data using Kusto Query Language
-  description: TODO
-  ms.date: TODO
+  description: Query data using Kusto Query Language
+  ms.date: 11/09/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -15,31 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "Which one of the following tools you can use to query data in Azure Sentinel?"
     choices:
-    - content: "Answer 1"
+    - content: "Structured Query Languade (SQL)"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "SQL queries are used to retrieve data from transactional databases."
+    - content: "PowerShell"
       isCorrect: false
-      explanation: "Explanation 2"
+      explanation: "PowerShell is a cross-platform task automation and configuration management framework, consisting of a command-line shell and scripting language."
+    - content: "Azure Data Explorer"
+      isCorrect: true
+      explanation: "Azure Data Explorer a.k.a Kusto is a log analytics cloud platform optimized for ad-hoc big data queries."
+  - content: "Which one of the following caracters you can use to separate the commands in the query."
+    choices:
+    - content: "Pipe (|)"
+      isCorrect: true
+      explanation: "You can use the pipe (|) character to separate commands. "
+    - content: ""
+      isCorrect: false
+      explanation: "You can use the pipe (|) character to separate commands."
     - content: "Answer 3"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
-  - content: "Question 2"
-    choices:
-    - content: "Answer 1"
-      isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
-      isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
-      isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "You can use the pipe (|) character to separate commands."
