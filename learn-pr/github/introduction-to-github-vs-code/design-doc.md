@@ -86,7 +86,7 @@ Identify the subtasks of *module title*
     - Get context about the repository
         - When you clone a repository, you'll typically start at the README to learn about the project and then start browsing the files. You can see a history of all the commits and the commits per file, but it's a lot of clicking around.
   
-6. Exercise: Search for and clone an existing repository 
+6. **Exercise: Search for and clone an existing repository **
 
     1. Open a new window. From the Explorer View, you can click on "Clone Repository". You should see an option to clone from GitHub. 
     2. You will see a list of your repositories. You can also search for any repository on GitHub from here. Search for this *insert repository name*.
