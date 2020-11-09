@@ -8,7 +8,10 @@ For example, a [2019 R640 Dell Server](https://i.dell.com/sites/csdocuments/Corp
 
 Therefore the total carbon cost will be <nobr>320 + (0.276 \* 1760.3) = 805 kg</nobr> of carbon/year, of which 320 kilograms or about 40% is from the embodied carbon. Embodied carbon is a significant contributor to the total emitted carbon of servers.
 
-The embodied carbon cost is often much higher for consumer devices, sometimes more significant than the lifetime carbon cost from electricity consumption. For an example, see _[Smartphones Are Killing The Planet Faster Than Anyone Expected](https://www.fastcompany.com/90165365/smartphones-are-wrecking-the-planet-faster-than-anyone-expected)_.
+> [!NOTE]
+>
+> The embodied carbon cost is often much higher for consumer devices, sometimes more significant than the lifetime carbon cost from electricity consumption. For an example, see _[Smartphones Are Killing The Planet Faster Than Anyone Expected](https://www.fastcompany.com/90165365/smartphones-are-wrecking-the-planet-faster-than-anyone-expected)_.
+>
 
 ## Don't waste hardware.
 
@@ -18,11 +21,11 @@ You can do many things to be hardware efficient, but one thing you can do is hel
 
 ## Extending the lifespan of hardware
 
-A way to account for embodied carbon is to amortize the carbon over a device's expected life span. For example, if it took <nobr>4,000 Kg</nobr> of carbon to build a server and we hope the server to have a four-year lifespan, we can consider this equivalent to 1,000 Kg of carbon released per year during its lifespan.
+A way to account for embodied carbon is to amortize the carbon over a device's expected life span. For example, if it took <nobr>4,000 Kg</nobr> of carbon to build a hypothetical server and we hoped that the server would have a four-year lifespan, we can consider this equivalent to 1,000 Kg of carbon released per year during its lifespan.
 
 ![Embodied carbon of a server amortized over 4 years.](../media/6-embodied-carbon-1.svg)
 
-By thinking of embodied carbon in this way, any device, even one that is not consuming electricity, is effectively releasing carbon over its lifetime. However, if we were to amortize the same <nobr>4,000 Kg</nobr> of carbon for a server over a five-year lifespan instead of four, the carbon released per year is reduced to 800 Kg.
+By thinking of embodied carbon in this way, any device, even one that is not consuming electricity, is effectively releasing carbon over its lifetime. With that in mind, if we were to amortize the same <nobr>4,000 Kg</nobr> of carbon for our hypothetical server over a five-year lifespan instead of four, the carbon released per year would be reduced to 800 Kg.
 
 ![Embodied carbon of the same server amortized over 5 years.](../media/6-embodied-carbon-2.svg)
 
