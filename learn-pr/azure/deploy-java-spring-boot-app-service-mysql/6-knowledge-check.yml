@@ -9,7 +9,7 @@ metadata:
   ms.author: ropreddy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 3
 quiz:
   questions:
   - content: "What service allows developers to scaffold out the structure of a Spring boot application?"
