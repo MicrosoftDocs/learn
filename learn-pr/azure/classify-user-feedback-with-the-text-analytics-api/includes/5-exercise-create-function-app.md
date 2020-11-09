@@ -45,8 +45,7 @@ Now that we have a function app, it's time to create a function. A function is a
 1. If you see a message saying  **Extensions not installed**, select **Install**. Dependency installation can take a couple of minutes. Please wait until the installation completes before continuing.
 
 1. Select **Add** to begin the function creation process.
-
-1. A function is created using the Queue Trigger function template. While we'll implement the function in JavaScript in this module, you can create a function in any [supported language](https://docs.microsoft.com/azure/azure-functions/supported-languages).
+   A function is created using the Queue Trigger function template. While we'll implement the function in JavaScript in this module, you can create a function in any [supported language](https://docs.microsoft.com/azure/azure-functions/supported-languages).
 
 1. If you have not already done so, seleect the **Trigger** you just created.
 
