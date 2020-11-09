@@ -8,10 +8,11 @@
 
 1. Enter the function app settings as specified in the following table.
 
+
     | Setting      | Value  | Description                                        |
-    | **Subscription** | **Concierge Subscription** | The subscription under which this new function app is created. |
-    | **Resource group**|  **<rgn>[sandbox resource group name]</rgn>** | Name for the resource group in which to create your function app.<br/><br/>Make sure to select **Use existing** and use the resource group from the last exercise. That way, all the resources we make in this module are kept together. |
     | ------------ |  ------- | -------------------------------------------------- |
+    | **Subscription** | Concierge Subscription | The subscription under which this new function app is created. |
+    | **Resource group**|  <rgn>[sandbox resource group name]</rgn> | Name for the resource group in which to create your function app.  Make sure to select **Use existing** and use the resource group from the last exercise. That way, all the resources we make in this module are kept together. |
     | **App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  |
     | **Publish** | Code | Leave as defult. |
     | **Runtime Stack** | Node.js | The sample code in this module is written in JavaScript.  |
