@@ -30,9 +30,9 @@ You can add new element to your workbook, by selecting **+Add,** as it shown in 
 
 You can use text blocks to interpret your security data, section headings, telemetry data, etc. The text is edited through a Markdown formatting, that provides different heading and font styles, hyperlinks, tables, etc.
 
-:Note
+> [!Note]
 
-Markdown is markup language used to add format text in the plain text documents. For more information how to format text using Markdown control see the following [Markdown guide](https://www.markdownguide.org/getting-started/).
+> Markdown is markup language used to add format text in the plain text documents. For more information how to format text using Markdown control see the following [Markdown guide](https://www.markdownguide.org/getting-started/).
 
 Once that you add the text, you can select **Preview** tab, to see how your content will look. Finally, when you complete editing the text, you should select **Done Editing** button.
 
