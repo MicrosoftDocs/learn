@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.introduction-to-github-vs-code.3-exercise-initialize-publish.yml
+uid: learn.github.introduction-to-github-vs-code.5-exercise-publish.yml
 title: Exercise - Initialize a new repository and publish it
 metadata:
   title: Exercise - Initialize a new repository and publish it
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-exercise-initialize-publish.md)]
+  [!include[](includes/5-exercise-publish.md)]
