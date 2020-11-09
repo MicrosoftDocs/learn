@@ -30,7 +30,7 @@ In this unit, you'll:
 
 1. Look for the access control mode and select **Use resource or workspace permissions**.
 
-    :::image type="content" source="../media/3-check-log-analytics-resource-context.png" alt-text="Screen shot of changing access control mode for Log Analytics workspace.":::
+    :::image type="content" source="../media/3-check-log-analytics-resource-context.png" alt-text="Screen shot of changing access control mode for Log Analytics workspace." lightbox="../media/3-check-log-analytics-resource-context.png":::
 
 1. Configuring this setting after building the workspace ensures this deployment matches your company's want for business units to be able to only see log data for the Azure resources they deploy.
 
@@ -83,13 +83,13 @@ In this unit, you'll:
 
 1. Select **Insights** on the far left and select **Enable**. Onboarding Virtual Machine Insights takes a few minutes.
 
-    :::image type="content" source="../media/3-enable-virtual-machine-insights.png" alt-text="Screen shot of enabling Virtual Machine Insights.":::
+    :::image type="content" source="../media/3-enable-virtual-machine-insights.png" alt-text="Screen shot of enabling Virtual Machine Insights." lightbox="../media/3-enable-virtual-machine-insights-expanded.png":::
 
 1. Once enabled, go into the **Insights** section of each VM underneath the Monitoring area.
 
 1. After the pane opens, select **Performance.**
 
-    :::image type="content" source="../media/3-virtual-machine-insights.png" alt-text="Screen shot after enabling Virtual Machine Insights.":::
+    :::image type="content" source="../media/3-virtual-machine-insights.png" alt-text="Screen shot after enabling Virtual Machine Insights." ;lightbox="../media/3-virtual-machine-insights-expanded.png":::
 
 1. Explore the different graphs for: Logical Disk Performance, CPU Utilization, Available Memory, Logical Disk IOPS, Logical Disk MB/s, Logical Disk Latency (ms), Max Logical Disk Used %, Bytes Sent Rate, and Bytes Received Rate.
 
