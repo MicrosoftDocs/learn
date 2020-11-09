@@ -62,7 +62,7 @@ The header toolbar provide additional interaction with the query, as shown in th
 
 ![Screenshot presenting Tables view](../media/02-Header-Toolbar.png)
 
-you can save the query from the query pane by selecting **Save**. That will open a new window on the right side, where you are prompted to enter the name of the saved query and category. Saved queries appears in query explorer.
+You can save the query from the query pane by selecting **Save**. That will open a new window on the right side, where you are prompted to enter the name of the saved query and category. Saved queries appears in query explorer.
 The **Time Range** field lets you change the time in the past from when the results of the query will be shown.
 You can also create a link for the query and share with other colleagues by selecting **Copy link to query.** You can also copy the query text.
 From the header toolbar in the query pane you can create either a **New Azure Monitor alert** , or **New Azure Sentinel alert.** If you select to create a new Azure Sentinel alert, you will be directed to the steps of creation of analytics rule.
