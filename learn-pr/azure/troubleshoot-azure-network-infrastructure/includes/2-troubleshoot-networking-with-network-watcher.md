@@ -71,7 +71,7 @@ Network Watcher includes six diagnostic tools:
 
 - IP flow verify
 - Next hop
-- Security group view
+- Effective security rules
 - Packet capture
 - Connection troubleshoot
 - VPN troubleshoot

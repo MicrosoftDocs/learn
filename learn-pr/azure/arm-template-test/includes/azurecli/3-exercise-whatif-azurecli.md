@@ -1,6 +1,6 @@
 ## Prerequisites
 
-- **Install the Visual Studio Code extension**. This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools?azure-portal=true). Be sure to install this extension in Visual Studio Code.
+- **Install the Visual Studio Code extension**. This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
 - **Install the latest Azure CLI**. To use what-if in the Azure CLI, you must have Azure CLI 2.5.0 or later. If needed, [install the latest version of the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true).
 

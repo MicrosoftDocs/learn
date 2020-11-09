@@ -5,11 +5,11 @@ But where do the results of the build go? Right now, the output of the build rem
 You can store build artifacts in Microsoft Azure Pipelines so they're later available to others on your team after the build completes. That's what you'll do here. As a bonus, you'll also refactor the build configuration to use variables to make the configuration easier to read and keep up to date.
 
 > [!NOTE]
-> Azure Pipelines enables you to automatically deploy the built application to a testing or production environment running in the cloud or in your datacenter. For now, Mara's goal is only to produce builds that she can hand off to QA by using their existing processes.
+> Azure Pipelines enables you to automatically deploy the built app to a testing or production environment running in the cloud or in your datacenter. For now, Mara's goal is only to produce builds that she can hand off to QA by using their existing processes.
 
 ## Publish the build to the pipeline
 
-In .NET Core, you can package your application as a .zip file. You can then use the built-in `PublishBuildArtifacts@1` task to publish the .zip file to Azure Pipelines.
+In .NET Core, you can package your app as a .zip file. You can then use the built-in `PublishBuildArtifacts@1` task to publish the .zip file to Azure Pipelines.
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* as you see here:
 
@@ -17,14 +17,14 @@ In .NET Core, you can package your application as a .zip file. You can then use 
 
     This version of *azure-pipelines.yml* looks like the previous version, but it adds two additional tasks.
 
-    The first task uses the `DotNetCoreCLI@2` task to *publish*, or package, the application's build results (including its dependencies) into a folder. The `zipAfterPublish` argument specifies to add the built results to a .zip file.
+    The first task uses the `DotNetCoreCLI@2` task to *publish*, or package, the app's build results (including its dependencies) into a folder. The `zipAfterPublish` argument specifies to add the built results to a .zip file.
 
-    The second task uses the `PublishBuildArtifacts@1` task to publish the .zip file to Azure Pipelines. The `condition` argument specifies to run the task only when the previous task succeeds. `succeeded()` is the default condition, so you don't need to specify it. But we show it here to illustrate its use.
+    The second task uses the `PublishBuildArtifacts@1` task to publish the .zip file to Azure Pipelines. The `condition` argument specifies to run the task only when the previous task succeeds. `succeeded()` is the default condition, so you don't need to specify it. But we show it here to show its use.
 
 1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub.
 
     > [!TIP]
-    > Remember to save *azure-pipelines.yml* before you run these Git commands.
+    > Before you run these Git commands, remember to save *azure-pipelines.yml*.
 
     ```bash
     git add azure-pipelines.yml
@@ -44,11 +44,11 @@ In .NET Core, you can package your application as a .zip file. You can then use 
 
 1. Expand the drop folder.
 
-    You see a *.zip* file that contains your built application and its dependencies:
+    You see a *.zip* file that contains your built app and its dependencies:
 
-    ![The packaged application in the Artifacts explorer](../media/7-artifacts-explorer.png)
+    ![The packaged app in the Artifacts explorer](../media/7-artifacts-explorer.png)
 
-    If you want to try an optional exercise, you can download this *.zip* file to your computer and explore its contents. To do so, select the *.zip* file, select the download arrow that appears when you mouse over the *.zip* file name.
+    If you want to try an optional exercise, you can download this *.zip* file to your computer, and explore its contents. To do so, select the *.zip* file, select the download arrow that appears when you mouse over the *.zip* filename.
 
 ## Define variables to enhance readability
 
@@ -63,7 +63,7 @@ Just like in other programming languages, variables enable you to do things like
 
 Azure Pipelines provides a number of built-in variables. These variables describe aspects of the build process, like the build identifier and the directory names where your software is built and staged.
 
-You can also define your own variables. Here's an example that shows a variable named `buildConfiguration` that defines the Release build configuration:
+You can also define your own variables. Here's an example that shows a variable named `buildConfiguration` that defines the Release build configuration.
 
 ```yml
 variables:
@@ -76,9 +76,9 @@ You don't need to create a variable for every piece of your build configuration.
 
 Take a moment to examine *azure-pipelines.yml*. Notice that these values are repeated:
 
-* The build configuration: `Release`
-* The location of the **wwwroot** directory: `Tailspin.SpaceGame.Web/wwwroot`
-* The .NET Core SDK version: `3.1.300`
+* Build configuration: `Release`
+* Location of the **wwwroot** directory: `Tailspin.SpaceGame.Web/wwwroot`
+* .NET Core SDK version: `3.1.300`
 
 You now use variables to define these values one time. You then reference the variables throughout the pipeline.
 
@@ -92,7 +92,7 @@ You now use variables to define these values one time. You then reference the va
     * `wwwrootDir`. Specifies the path to the **wwwroot** directory.
     * `dotnetSdkVersion`. Specifies the .NET Core SDK version to use.
 
-    To reference these variables, you use the `$()` syntax just as you do for built-in variables. Here's the step that runs node-sass to convert Sass files to CSS. It references the `wwwrootDir` variable to obtain the path to the **wwwroot** directory.
+    To reference these variables, you use the `$()` syntax just as you do for built-in variables. Here's the step that runs node-Sass to convert Sass files to CSS. To obtain the path to the **wwwroot** directory, it references the `wwwrootDir` variable.
 
     ```yml
     - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
@@ -101,7 +101,7 @@ You now use variables to define these values one time. You then reference the va
 
     The script command uses the variable to define both the source directory for Sass files and the directory in which to write CSS files. It also uses the variable to define the task name that's shown in the user interface.
 
-1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub:
+1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub.
 
     ```bash
     git add azure-pipelines.yml
@@ -111,10 +111,10 @@ You now use variables to define these values one time. You then reference the va
 
 1. From Azure Pipelines, trace the build through each of the steps.
 
-    You see that the variables are replaced with their values when the build runs. For example, here's the `UseDotNet@2` task that sets the .NET Core SDK version to use:
+    You see that the variables are replaced with their values when the build runs. For example, here's the `UseDotNet@2` task that sets the .NET Core SDK version to use.
 
     ![Azure Pipelines showing the .NET Core SDK task running in the pipeline](../media/7-dotnet-core-sdk-task.png)
 
-    As before, you can navigate to the build summary to see the artifact when the build completes.
+    As before, to see the artifact when the build completes, you can navigate to the build summary.
 
 Congratulations! You've successfully used Azure Pipelines and created your first build artifact.
