@@ -14,7 +14,7 @@ Why do we need to compile our code?  Even though most programming languages seem
 
 ## What is syntax?
 
-The syntax or a programming language includes the keywords, the operators (those special keyboard characters like the semicolon or parenthesis), and other grammar rules that the compiler enforces.  The lines of code you typed followed about a dozen different syntax rules and used at least four different operators.  There's much to learn, but fortunately each concept is simple.  Don't give up!  You can learn it!
+The syntax of a programming language includes the keywords, the operators (those special keyboard characters like the semicolon or parenthesis), and other grammar rules that the compiler enforces.  The lines of code you typed followed about a dozen different syntax rules and used at least four different operators.  There's much to learn, but fortunately each concept is simple.  Don't give up!  You can learn it!
 
 When you typed code into the .NET Editor, you may have noticed subtle changes to the color of different words and symbols.  Syntax highlighting is a helpful feature that you will begin to use to easily spot mistakes in your code that do not conform to syntax rules of C#.  In fact, a similar (and even more robust) version of this feature is available in Visual Studio Code and the full Visual Studio IDE.
 
