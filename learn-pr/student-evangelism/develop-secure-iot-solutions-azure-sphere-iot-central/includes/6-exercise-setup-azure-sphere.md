@@ -54,6 +54,18 @@ sudo apt install git
 
 ------
 
+## Recommended Visual Studio Code Extensions
+
+1. Peacock allows you to change the color of your Visual Studio Code workspace. Ideal when you have multiple VS Code instances, use VS Live Share, or use VS Code's Remote features, and you want to quickly identify your editor. The Peacock extension is useful when you have two instances of Visual Studio Code open, one attached to the Azure Sphere High-level core, and the other attached to the Real-time core.
+
+   1. Open Extensions sideBar panel in Visual Studio Code
+   1. choose the menu options for View → Extensions
+   1. Search for Peacock
+   1. Click Install
+   1. Click Reload, if required
+
+------
+
 ## Delete any existing applications on Azure Sphere
 
 1. From the **Azure Sphere Developer Command Prompt**, run the following command to delete any existing applications on the device.

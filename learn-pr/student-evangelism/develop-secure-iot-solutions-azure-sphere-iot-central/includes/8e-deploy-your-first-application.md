@@ -1,9 +1,9 @@
 In this unit you will learn how to configure and deploy you first application to your Azure Sphere
 
 
-**Azure Sphere applications:** We will be running high-level and real-time applications on the Azure Sphere.
+**Azure Sphere applications:** We will be running high-level and real-time applications on the Azure Sphere High-level.
 
-![Azure Sphere Streaming telemery to IoT Central](../media/azsure-sphere-telemetry-streaming.png)
+![Azure Sphere Streaming telemetry to IoT Central](../media/azsure-sphere-telemetry-streaming.png)
 
 A high-level application can:
 

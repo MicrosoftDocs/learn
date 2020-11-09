@@ -20,78 +20,78 @@ In this exercise, we'll build a high-level Azure Sphere application that connect
 
    ![The illustration shows how to create custom app.](../media/iot-central-new-application.png)
 
-### Create a new application
+7. Specify the **Application name**, specify the **URL**, select the **Free** pricing plan, and complete the registration form.
 
-1. Specify the **Application name**, specify the **URL**, select the **Free** pricing plan, and complete the registration form.
-
-   ![The illustration shows how to create a new application.](../media/iot-central-new-application.png)
-
-2. Click **Create**.
+8. Click **Create**.
 
 ### Create a new device template
 
 A device template is a blueprint that defines the characteristics and behaviors of a type of device that connects to an Azure IoT Central application.
 
-1. Navigate to **Device templates**, then **+ New**.
 
-2. Click the **IoT device** template type.
+
+1. Navigate to **Device templates**, then **+ New**.
 
    ![The illustration shows how to create IoT device templates.](../media/iot-central-new-iot-device-template.png)
 
-3. Create an **IoT device** template.
-
-   1. Select **IoT device**.
-   2. Click **Next:Customize**.
-   3. Name your template **Azure Sphere**.
-   4. Click **Next: Review**.
-   5. Click **Create**.
+1. Click the **IoT device** template type.
+1. Select **IoT device**.
+1. Click **Next:Customize**.
+1. Name your template **Azure Sphere**.
+1. Click **Next: Review**.
+1. Click **Create**.
 
 ### Import a capability model
 
+A capability model is a JSON document that describes the shape of the telemetry sent by a device and the interactions between the device and IoT Central.
+
 1. Click **Import capability model**.
-2. Navigate to the folder that you cloned the Azure Sphere Developer Learning Path into.
+   ![](../media/iot-central-import-capability-model.png)
+2. Navigate to the **Azure-Sphere** lab folder.
 3. Navigate to the **iot_central** folder.
 4. Select **Azure_Sphere_Developer_Learning_Path.json** and open it.
 
 ### Create a device visualization view
 
-1. Navigate to **Device templates** and click **Views**.
-
-   ![The illustration shows how to create a view.](../media/iot-central-create-a-view.png)
-
+1. Navigate to the **Views** menu.
 2. Select **Visualizing the device**.
-
-   ![The illustration shows how add tile status.](../media/iot-central-add-tile-status.png)
-
-3. Select **Humidity**, **Pressure**, and **Temperature** telemetry items.
-
+   ![The illustration shows how add tile status.](../media/iot-central-add-view.png)
+3. Name the view **Telemetry**.
+4. Select **Temperature** from the **Select a telemetry** dropdown.
+5. Click **+ Telemetry**, and add **Humidity** from the **Select a telemetry** dropdown.
+6. Click **+ Telemetry**, and add **Pressure** from the **Select a telemetry** dropdown.
+7. Click **Add tile**.
+8. Click **Save** to save the view.
    ![The illustration shows telemetry items.](../media/iot-central-add-tile-environment.png)
 
-4. Click **Add tile**.
 
-5. Click **Save** to save the view.
 
 ### Create a properties form
 
-1. Navigate to **Device templates** and click **Views**.
-
-2. Click the **Editing device and cloud data** option.
-
+1. Navigate to the **Views** menu.
+2. Select **Editing device and cloud data**.
    ![The illustration shows how to edit device and cloud data.](../media/iot-central-view-properties-create.png)
-
-3. Expand the **Properties** section.
-
-4. Select all properties. 
+3. Name the form **Properties**.
+4. Expand the **Properties** section.
+5. Select the following properties.
+   - Last reported device restart time
+   - Last reported HVAC operating mode
+   - Last reported temperature
+6. Click **Add section**.
+7. Select the following property.
+   - Desired Temperature
+6. Click **Add section**.
+7. Click **Save** to save the form.
 
    ![The illustration shows the properties section.](../media/iot-central-add-tile-form.png)
 
-5. Click **Add section**.
+
 
 6. Click **Save** to save the form.
 
 ### Publish the device template
 
-1. Click **Publish** to publish the template. Publishing the template makes it available for devices. 
+1. Click **Publish** to publish the template. Publishing the template makes it available for devices.
 
    ![The illustration shows how to publish a device template.](../media/iot-central-template-publish.png)
 
@@ -119,15 +119,23 @@ A device template is a blueprint that defines the characteristics and behaviors 
 
    The output file must have the .cer extension.
 
-### Upload the tenant CA certificate to Azure IoT Central and generate a verification code
+### Create an Enrollment Group
 
-1. In Azure IoT Central, go to **Administration** > **Device Connection** > **Manage primary certificate**.
+1. From IoT Central, go to **Administration** > **Device Connection** > **Manage primary certificate**.
+2. Create an enrollment group
+3. Name the enrollment group **Azure Sphere**
+4. Select Certificates (X.509) from the Attestation type dropdown.
+5. Click Save
 
+### Upload the Azure Sphere tenant CA certificate to Azure IoT Central and generate a verification code
+
+1. Click **+ Manage primary**.
 2. Click the folder icon next to the **Primary** box and navigate to the directory where you downloaded the certificate. If you don't see the .cer file in the list, make sure that the view filter is set to **All files (*)**. Select the certificate and then click the gear icon next to the **Primary** box.
 
 3. The **Primary Certificate** dialog box appears. The **Subject** and **Thumbprint** fields contain information about the current Azure Sphere tenant and primary root certificate.
 
-4. Click the **Refresh** icon to the right of the **Verification Code** box to generate a verification code. Copy the verification code to the clipboard.
+4. Click the **Generate verification code. 
+5. Copy the verification code to the clipboard.
 
    ![The illustration shows how to verify a certificate.](../media/iot-central-certificate-verify.png)
 
@@ -141,7 +149,7 @@ A device template is a blueprint that defines the characteristics and behaviors 
    azsphere ca-certificate download-proof --output ValidationCertification.cer --verificationcode <code>
    ```
 
-3. The Azure Sphere Security Service signs the validation certificate with the verification code to prove that you own the CA.
+3. The Azure Sphere Security Service signs the validation certificate with the verification code to prove that you own the Certificate Authority (CA).
 
 ### Use the validation certificate to verify the tenant's identity
 

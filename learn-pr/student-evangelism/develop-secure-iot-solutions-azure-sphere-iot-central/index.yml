@@ -40,12 +40,12 @@ products:
 units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.introduction
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.design-secure-iot-solution
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.gpio-hardware-interfaces
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.event-driven-programming
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-setup-azure-sphere
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-setup-azure-sphere
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-connect-monitor-iot-central
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-connect-room-environment-monitor
-- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.gpio-hardware-interfaces
-- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.event-driven-programming
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-set-virtual-thermostat-iot-device-twins
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-set-room-virtual-thermostat-azure-iot-device-twins
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-remote-reboot-device

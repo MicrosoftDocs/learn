@@ -181,7 +181,7 @@ static void MeasureSensorHandler(EventLoopTimer* eventLoopTimer)
 1. Click **Devices** on the sidebar.
 2. Select the **Azure Sphere** template.
 3. Click on the migrated device.
-4. Select the **View** tab to view the device telemetry.
+4. Select the **Telemetry** tab to view the device telemetry.
 5. Rename your device. Click the **Rename** button and give your device a friendly name.
 
 Azure IoT Central does not update immediately. It may take a minute or two for the temperature, humidity, and pressure telemetry to be displayed.

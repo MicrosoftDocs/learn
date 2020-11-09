@@ -74,7 +74,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 2. Select **Devices**, then the **Azure Sphere** template, then your device.
 
-3. Select the **Form** tab.
+3. Select the **Properties** tab.
 
     > [!NOTE]
     > Azure IoT Central does not update immediately. It might take a minute or two for the device telemetry to be displayed.
