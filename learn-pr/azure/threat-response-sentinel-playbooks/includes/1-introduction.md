@@ -1,8 +1,8 @@
-Microsoft Azure Sentinel playbook is a collection of security procedures that you can run in response to alerts. 
+A Microsoft Azure Sentinel playbook is a collection of security procedures that you can run in response to alerts. 
 
 Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses several Microsoft products and services to implement data security and threat protection for its resources. These products are:
 
-- Microsoft 365
+- Microsoft Office 365
 - Azure Active Directory (Azure AD)
 - Azure AD Identity Protection
 - Cloud App Security
@@ -14,9 +14,7 @@ Contoso, Ltd. is a midsize financial services company in London with a New York 
 
 Contoso provides threat protection for its Azure-based and on-premises resources by using the paid version of Azure Security Center. The company also monitors and protects other non-Microsoft assets.
 
-The Contoso Security Operations (SecOps) team didn't respond quickly enough to the organization's latest security incident. Contoso's IT director wants to implement Azure Sentinel playbooks to help the SecOps team identify and stop potential security threats.
-
-As Contoso's lead security engineer and Azure administrator, you've been tasked with setting up an Azure Sentinel playbook to respond to security incidents.
+The Contoso Security Operations (SecOps) team didn't respond quickly enough to the organization's latest security incident. Contoso's IT director wants to implement Azure Sentinel playbooks to help the SecOps team identify and stop potential security threats. As Contoso's lead security engineer and Azure administrator, you've been tasked with setting up an Azure Sentinel playbook to respond to security incidents.
 
 In this module, you'll learn about the Security Orchestration, Automation and Response (SOAR) capabilities within Azure Sentinel. You will examine hwo to create and edit Azure Sentinel playbooks, configure their workflow, and manage them.
 
