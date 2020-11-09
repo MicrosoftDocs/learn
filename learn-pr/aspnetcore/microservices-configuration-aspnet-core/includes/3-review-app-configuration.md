@@ -1,4 +1,4 @@
-Configuration management in a microservices context can become a significant problem if not handled properly. With multiple services in use, it's important to use a configuration strategy that separates code from configuration.
+Configuration management in a microservices context can become a significant problem if not handled properly. A solution that separates the multiple services' code from configuration is ideal.
 
 In this unit, you'll explore how to integrate ASP.NET Core and Kubernetes configuration features with Azure App Configuration to tackle this scenario in an effective way.
 
@@ -14,15 +14,15 @@ You'll review the:
 
 Configuration in an ASP.NET Core project is supported by one or more .NET Core *configuration providers*. A [configuration provider](/aspnet/core/fundamentals/configuration/#configuration-providers) is an abstraction over a specific configuration source, such as a JSON file. The configuration source's values are represented as a collection of key-value pairs.
 
-An ASP.NET Core app can register a chain of configuration providers to read settings from multiple sources. With the default application host, the following configuration providers are automatically registered in the order listed:
+An ASP.NET Core app can register a chain of configuration providers to read settings from multiple sources. With the default application host, the following configuration sources are automatically registered in the order listed:
 
 1. JSON file (*:::no-loc text="appsettings.json":::*)
 1. JSON file (*:::no-loc text="appsettings.{environment}.json":::*)
-1. User secrets (*:::no-loc text="secrets.json":::*)
+1. User secrets
 1. Environment variables
 1. Command line
 
-Each configuration provider can contribute its own key value. Furthermore, any provider can override a value from a provider that was registered earlier in the chain than itself. Given the registration order in the preceding list, a `UseFeatureManagement` command-line parameter overrides a `UseFeatureManagement` environment variable. Likewise, a `UseFeatureManagement` key in *appsettings.json* can be overridden by a `UseFeatureManagement` key stored in user secrets.
+Each configuration provider can contribute its own key value. Furthermore, any provider can override a value from a provider that was registered earlier in the chain than itself. Given the registration order in the preceding list, a `UseFeatureManagement` command-line parameter overrides a `UseFeatureManagement` environment variable. Likewise, a `UseFeatureManagement` key in *appsettings.json* can be overridden by a `UseFeatureManagement` key stored in *appsettings.Development.json*.
 
 Configuration key names can describe a hierarchy. For example, the notation `FeatureManagement:Coupons` refers to the `Coupons` key within the `FeatureManagement` section. This structure can also map configuration values to an object graph or an [array](/aspnet/core/fundamentals/configuration/#bind-an-array).
 
