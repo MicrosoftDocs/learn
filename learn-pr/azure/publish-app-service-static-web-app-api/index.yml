@@ -34,6 +34,6 @@ units:
   - learn.azure.publish-static-web-app-and-api.2-exercise-get-started
   - learn.azure.publish-static-web-app-and-api.3-static-web-apps
   - learn.azure.publish-static-web-app-and-api.4-exercise-static-web-apps
-  - learn.azure.publish-static-web-app-and-api.5-summary
+  - learn.azure.publish-static-web-app-and-api.12-summary
 badge:
   uid: learn.azure.publish-static-web-app-and-api.badge
