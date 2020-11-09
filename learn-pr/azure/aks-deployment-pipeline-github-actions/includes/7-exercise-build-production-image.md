@@ -1,24 +1,26 @@
-In the previous exercise, you built the staging workflow for building and publishing the image. Now let's recap the production workflow.
+In the preceding exercise, you built the staging workflow for building and publishing the image. Let's recap the production workflow:
 
-:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="The designed pipeline":::
+:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy steps in a pipeline.":::
 
-You'll build the tagged version using another workflow.
+You'll build the tagged version by using a different workflow.
 
-## Build the Action workflow
+In this exercise, you'll:
+- Build the Actions workflow
+- Create the trigger
+- Build and push the image
+- Check the results
 
-1. To start building our pipeline, let's go to the fork of the sample repository in the GitHub website. And click on the **Actions** tab.
+## Build the Actions workflow
 
-1. Click the **New Workflow** button, you'll be led to the same page as before.
+1. To start building the pipeline, go to the fork of the sample repository in the GitHub website. Select the **Actions** tab.
 
-    :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Open the actions tab in the GitHub website":::
+1. Below the header, select **set up a workflow yourself**.
 
-1. Click on the **set up a workflow yourself** link just below the header. This should open a new editor with a file in it
+    :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Screenshot that shows the Get started with GitHub Actions page and the Set up a workflow yourself link on the GitHub website.":::
 
-    :::image type="content" source="../media/6-2-example-editor.png" alt-text="Example file being edited":::
+    The following file is shown in the GitHub editor:
 
-    GitHub gave us the same editor with another workflow file created within the `.github/workflows` directory. This is the file you'll have displayed.
-
-    ```yml
+    ```yaml
     # This is a basic workflow to help you get started with Actions
 
     name: CI
@@ -40,7 +42,7 @@ You'll build the tagged version using another workflow.
 
         # Steps represent a sequence of tasks that will be executed as part of the job
         steps:
-          # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+          # Checks out your repository under $GITHUB_WORKSPACE, so your job can access it
           - uses: actions/checkout@v2
 
           # Runs a single command using the runners shell
@@ -54,23 +56,29 @@ You'll build the tagged version using another workflow.
               echo test, and deploy your project.
     ```
 
-1. Rename the file from `main.yml` to `build-production.yml` by typing on the top input panel
+1. Above the **Edit new file** pane, rename the file from **main.yml** to **build-production.yml**.
 
-1. Change the `name` key to _"Build and push the tagged build to production"_, your file will look like this
+    :::image type="content" source="../media/6-2-example-editor.png" alt-text="Screenshot that shows an example file being edited in the Edit new file pane on the GitHub website.":::
 
-    ```yml
+1. Change the `name` key to `Build and push the tagged build to production`. 
+
+   Your file should look like this example:
+
+    ```yaml
     # This is a basic workflow to help you get started with Actions
 
     name: Build and push the tagged build to production
     ```
 
-### Create the trigger
+## Create the trigger
 
-1. Next up, you'll change the default triggers in the `on` key.
+1. Change the default triggers in the `on` key.
 
-    Let's now remove the second part and leave just the `push` tags. The keys should be like this afterwards:
+1. Remove the second trigger and leave only the `push` tags. 
+    
+    The keys should look like this example:
 
-    ```yml
+    ```yaml
     name: Build and push the tagged build to production
 
     on:
@@ -78,9 +86,9 @@ You'll build the tagged version using another workflow.
         branches: [ main ]
     ```
 
-    Remove the `branches` key and replace it by the `tags` key. This tag says that you'll only run this workflow on determined tags.
+1. Remove the `branches` key and replace it with the `tags` key. This tag says that you'll run this workflow only on specific tags.
 
-    ```yml
+    ```yaml
     name: Build and push the tagged build to production
 
     on:
@@ -89,21 +97,21 @@ You'll build the tagged version using another workflow.
           - 'v*'
     ```
 
-    In this case, you'll only run the workflow if the tag follows the `v*` pattern, which includes `v1.0.0`.
+    In this case, you'll run the workflow only if the tag follows the `v*` pattern, which includes `v1.0.0`.
 
-### Build and push the image
+## Build and push the image
 
-1. Now, let's work on the jobs you're going to run.
+Let's work on the jobs you're going to run. In this process, you address both the build steps and the deploy steps from the diagram.
 
-    In this part, you'll address both the build and deploy steps from the diagram.
+The `jobs` key is already set to run on `ubuntu-latest`, which is the environment you want this workflow to run.
 
-    The `jobs` key is already set to run on `ubuntu-latest`, which is the environment you want this workflow to run.
+1. Rename the `build` key `build_push_image`.
 
-1. Rename the `build` key to `build_push_image`.
+1. In the `steps` key, delete the last two commands, which are only examples from the template. 
 
-1. Jump into the `steps` key. Delete the last two commands, those are only examples from the template. Your file will be like the following.
+   Your file should look like this example:
 
-    ```yml
+    ```yaml
     name: Build and push the tagged build to production
 
     on:
@@ -119,19 +127,21 @@ You'll build the tagged version using another workflow.
           - uses: actions/checkout@v2
     ```
 
-    Leave the checkout option like before.
+    Leave the `checkout` option like you did when you created the staging image.
 
-1. In the right panel, search for "Build and push docker images". Click on the first result published by **Docker**.
+1. In the right panel, search for **Build and push Docker images**. Select the first result published by Docker.
 
-    :::image type="content" source="../media/6-3-docker-action.png" alt-text="Select the action":::
+    :::image type="content" source="../media/6-3-docker-action.png" alt-text="Screenshot that shows the search results that list Build and push Docker images.":::
 
-    In the opened panel, click on the **copy icon** to copy the usage YAML
+1. In the panel for the search result item, select the copy icon to copy the usage YAML.
 
-    :::image type="content" source="../media/6-4-docker-copy.png" alt-text="Copy the YAML":::
+    :::image type="content" source="../media/6-4-docker-copy.png" alt-text="Screenshot that shows the copy icon selected in the Build and push Docker images pane.":::
 
-1. Paste the copied yaml below the `- uses: actions/checkout@v2` key. Your YAML file should be like the following
+1. Paste the copied YAML below the `- uses: actions/checkout@v2` key. 
 
-    ```yml
+   Your YAML file should look like this example:
+
+    ```yaml
     name: Build and push the tagged build to production
 
     on:
@@ -147,23 +157,23 @@ You'll build the tagged version using another workflow.
           - uses: actions/checkout@v2
 
           - name: Build and push Docker images
-            # You may pin to the exact commit or the version.
+            # You can pin to the exact commit or the version.
             # uses: docker/build-push-action@ab83648e2e224cfeeab899e23b639660765c3a89
             uses: docker/build-push-action@v1.1.1
             with:
-              # Username used to log in to a Docker registry. If not set then no login will occur
+              # Username used to log in to a Docker registry. If not set, no login occurs
               username: # optional
-              # Password or personal access token used to log in to a Docker registry. If not set then no login will occur
+              # Password or personal access token used to log in to a Docker registry. If not set, no login occurs
               password: # optional
-              # Server address of Docker registry. If not set then will default to Docker Hub
+              # Server address of Docker registry. If not set, it defaults to Docker Hub
               registry: # optional
               # Docker repository to tag the image with
               repository:
-              # Comma-delimited list of tags. These will be added to the registry/repository to form the image's tags
+              # Comma-delimited list of tags. These are added to the registry/repository to form the image's tags
               tags: # optional
-              # Automatically tags the built image with the git reference as per the readme
+              # Automatically tags the built image with the Git reference as per the readme
               tag_with_ref: # optional
-              # Automatically tags the built image with the git short SHA as per the readme
+              # Automatically tags the built image with the Git short SHA as per the readme
               tag_with_sha: # optional
               # Path to the build context
               path: # optional, default is .
@@ -179,22 +189,22 @@ You'll build the tagged version using another workflow.
               cache_froms: # optional
               # Comma-delimited list of labels to add to the built image
               labels: # optional
-              # Adds labels with git repository information to the built image
+              # Adds labels with Git repository information to the built image
               add_git_labels: # optional
               # Whether to push the image
               push: # optional, default is true
     ```
 
     > [!IMPORTANT]
-    > Be mindful of the indentation when using YAML. The `name` key should be aligned with the previous `uses` key.
+    > Be careful with indentation when you use YAML. The `name` key should be aligned with the preceding `uses` key.
 
-    This action gives you several options to tweak the usage. You can learn more about each one of them in the [documentation page](https://github.com/docker/build-push-action/tree/releases/v1).
+    This action gives you several options to adjust the usage. For more information, see the GitHub [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/releases/v1?azure-portal=true).
 
-1. In the `name` key, rename the value to "Build and push production image"
+1. Rename the `name` key `Build and push production image`.
 
-1. You'll only use a handful of the parameters given by this action. Set them and delete the others.
+1. You'll use only a handful of the parameters available for this action. Set the following actions and delete the others.
 
-    Add the values according to the table below.
+    Add the values according to the following table:
 
     |Key name     |Value                                           |
     |-------------|------------------------------------------------|
@@ -202,11 +212,13 @@ You'll build the tagged version using another workflow.
     |password     |`${{ secrets.ACR_PASSWORD }}`                   |
     |registry     |`${{ secrets.ACR_NAME }}`                       |
     |repository   |contoso-website                                 |
-    |tag_with_ref |true                                            |
+    |tags         |latest                                          |
 
-    You can delete all the other keys since they'll not be used. Your file should be like the following:
+    You can delete all the other keys because we won't use them in this exercise.
+    
+    Your file should look like the following example:
 
-    ```yml
+    ```yaml
     name: Build and push the tagged build to production
 
     on:
@@ -231,28 +243,25 @@ You'll build the tagged version using another workflow.
               tag_with_ref: true
     ```
 
-    The `tag_with_ref` key is one handy parameter that will tag the image with the tag name automatically. According to the documentation:
+    The `tag_with_ref` key is a handy parameter that automatically tags the image with the tag name. As described in the documentation, it:
 
-    > Automatically tags the built image with the git reference. The format of the tag depends on the type of git reference with all forward slashes replaced with `-`.
-    >
-    > For pushes to a branch the reference will be `refs/heads/{branch-name}` and the tag will be `{branch-name}`. If `{branch-name}` is master then the tag will be latest.
-    >
-    > For pull requests the reference will be `refs/pull/{pull-request}` and the tag will be `pr-{pull-request}`.
-    >
-    > For git tags the reference will be `refs/tags/{git-tag}` and the tag will be `{git-tag}`.
+    - Automatically tags the built image with the git reference. The format of the tag depends on the type of git reference. All forward slashes are replaced with `-`.
+    - For pushes to a branch, the reference will be `refs/heads/{branch-name}` and the tag will be `{branch-name}`. If `{branch-name}` is master, the tag will be `latest`.
+    - For pull requests, the reference will be `refs/pull/{pull-request}` and the tag will be `pr-{pull-request}`.
+    - For git tags, the reference will be `refs/tags/{git-tag}` and the tag will be `{git-tag}`.
 
-1. Commit the changes by clicking the green button on the top right. Give the commit a message and click the **Commit new file** button
+1. To commit the changes, select the green **Start commit** button at the top right. Enter a description for the commit, and then select the **Commit new file** button.
 
-    This time, the action won't be triggered, because you didn't push a new tag. But our earlier action will trigger and build a new `latest` image.
+    This time, the action won't be triggered because you didn't push a new tag. But our earlier action triggers and builds a new `latest` image.
 
-### Check your work
+## Check the results
 
-1. Open your cloned repository in Azure Cloud Shell. Run `git tag -a v1.0.0 -m'First tag'`
+1. Open your cloned repository in Azure Cloud Shell. Run `git tag -a v1.0.0 -m'First tag'`.
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
-1. Run `git push --tags`
+1. Run `git push --tags`.
 
-1. Open the **Actions** tab and check the running process
+1. Select the **Actions** tab and check the running process.
 
-1. Run `az acr repository show-tags --repository contoso-website --name <ACR_NAME> -o table` in the Azure Cloud Shell to confirm there are two tags listed in the results
+1. In Azure Cloud Shell, run `az acr repository show-tags --repository contoso-website --name <ACR_NAME> -o table` to confirm that two tags are listed in the results.

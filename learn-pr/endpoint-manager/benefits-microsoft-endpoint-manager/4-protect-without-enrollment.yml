@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.benefits-microsoft-endpoint-manager.4-protect-without-enrollment
+title: Review protecting data without enrollment
+metadata:
+  title: Review protecting data without enrollment
+  description: Learn about protecting data without enrollment.
+  ms.date: 10/26/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-protect-without-enrollment.md)]
+  

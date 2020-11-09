@@ -1,38 +1,81 @@
 The Translator Text API is the member of Azure Cognitive Services that translates text from one language to another. It relies on state-of-the-art neural machine translation (NMT) and supports more than 60 languages.
 
-Like the Computer Vision API, the Translator Text API is invoked through REST calls over the internet. Unlike the Computer Vision API, the Translator Text API currently has no Python SDK available. That doesn't mean that you can't use it from a Python application. It means that you must invoke the API by using raw HTTP requests and write code to parse the JSON payloads that are returned.
+Like the Computer Vision API, the Translator Text API is invoked through REST calls over the internet. Unlike the Computer Vision API, the Translator Text API currently has no Python SDK available. That doesn't mean you can't use it from a Python application. It means that you must invoke the API by using raw HTTP requests and write code to parse the JSON payloads that are returned.
 
 It's not as hard as it sounds, as you will prove when you modify the Contoso Travel site to pass text extracted from photos by the Computer Vision API to the Translator Text API for translation into another language.
 
-Resources that are used in this exercise are located in a [Git repository for code samples](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask).
+Resources that are used in this exercise are located in a [Git repository for code samples](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask?azure-portal=true).
+
+
+### Reactivate your virtual environment
+
+> _Only complete the steps in this section if you closed the Command Prompt window or terminal where you were running your Python virtual environment. Otherwise, continue to the next section, "Subscribe to the Translator Text API."_
+>
+> If you closed your Command Prompt window or terminal, you need to configure a new window or terminal to use your existing Python virtual environment. The environment variables also need to be recreated.
+> 
+> 1. Open a new Command Prompt window or terminal. Change (`cd`) to your project directory. For details, see the section "Create the project directory" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment.yml?azure-portal=true) unit. <!-- #create-the-project-directory -->
+>
+> 1. Reactivate your Python virtual environment. For details, see the section "Activate your virtual environment" in the [Exercise - Set up a development environment](../1-exercise-set-up-environment.yml?azure-portal=true) unit. <!-- #activate-your-virtual-environment -->
+> 
+> 1. Reset the **FLASK_ENV** environment variable. For details, see the section "Set the Flask environment variable" in the [Exercise - Build a page for uploading photos](../3-exercise-upload-photos.yml?azure-portal=true) unit. <!-- #set-the-flask-environment-variable -->
+>
+> 1. Reset the **VISION_KEY** and **VISION_ENDPOINT** environment variables. For details, see the section "Set Computer Vision environment variables" in the [Exercise - Use Cognitive Services to extract text from photos](../4-exercise-extract-text.yml?azure-portal=true) unit. <!-- #set-computer-vision-environment-variables -->
+>
+
 
 ## Subscribe to the Translator Text API
 
 To call the Translator Text API, you must obtain an API key. As with the Computer Vision API, this key travels in each request that you place to the Translator Text API in an `Ocp-Apim-Subscription-Key` header and maps calls to Azure subscriptions.
 
-1. In a Command Prompt window or terminal, use the following command to subscribe to the Translator Text API and place the resulting resource named "translator-text" in the resource group that you created earlier:
+In your Command Prompt window or terminal, use the following command to subscribe to the Translator Text API. A new resource named **translator-text** will be added to the resource group that you created earlier in the [Exercise - Use Cognitive Services to extract text from photos](../4-exercise-extract-text.yml?azure-portal=true) unit. <!-- #create-the-resource-group --> 
 
-    ```bash
-    az cognitiveservices account create --resource-group contoso-travel-rg --name translator-text --location global --kind TextTranslation --sku F0 --yes
-    ```
+```console
+az cognitiveservices account create --resource-group contoso-travel-rg --name translator-text --location global --kind TextTranslation --sku F0 --yes
+```
 
-    Unlike the Computer Vision API, which requires you to specify an Azure region, the Translator Text API is a "global" API that doesn't live in a specific region. That's the reason for the `--location global` parameter. Among other things, this means that you don't have to retrieve an endpoint URL for the Translator Text API as you do for the Computer Vision API. One endpoint, <https://api.cognitive.microsofttranslator.com/translate?api-version=3.0>, serves all regions.
+Unlike the Computer Vision API, which requires you to specify an Azure region, the Translator Text API is a "global" API that doesn't live in a specific region. That's the reason for the `--location global` parameter. Among other things, you don't have to retrieve an endpoint URL for the Translator Text API as you do for the Computer Vision API. One endpoint, `https://api.cognitive.microsofttranslator.com/translate?api-version=3.0`, serves all regions.
 
-1. Use the following command to obtain an API key for the Translator Text API:
 
-    ```bash
-    az cognitiveservices account keys list --resource-group contoso-travel-rg --name translator-text --query key1 --output tsv
-    ```
+### Get an API key for the Translator Text API
 
-    The output from the command is a string that contains numbers and letters. *This is your Translator Text API key*. Copy the key into a text file and save it so you can easily retrieve it. You will need it later in this unit and in a later unit.
+Next, use the following command to get an API key for the Translator Text API:
 
-This API key uses the Text Translator API's free tier (`--sku F0`), which supports translating up to 2 million characters of text per month. In a production environment, you would want to subscribe to one of the [paid tiers](https://azure.microsoft.com/pricing/details/cognitive-services/translator-text-api/).
+```console
+az cognitiveservices account keys list --resource-group contoso-travel-rg --name translator-text --query key1 --output tsv
+```
+
+The output from the command is a string that contains numbers and letters. **This value is your Translator Text API key**. Copy the key to a text file and save it so you can easily retrieve it. You'll need the key later in this unit and in a subsequent unit.
+
+This API key uses the Text Translator API's free tier (`--sku F0`), which supports translating up to 2 million characters of text per month. In a production environment, you would want to subscribe to one of the [paid tiers](https://azure.microsoft.com/pricing/details/cognitive-services/translator-text-api/?azure-portal=true).
+
+
+### Set the Translation environment variable
+
+Now you need to set a local environment variable that corresponds to the Translator Text API key. In the following command, replace `<translator_text_api_key>` with your translation key.
+
+**Windows**
+
+```console
+set TRANSLATE_KEY=<translator_text_api_key>
+```
+
+**macOS or Linux**
+
+```console
+export TRANSLATE_KEY=<translator_text_api_key>
+```
+
 
 ## Modify the site to use the Translator Text API
 
-You have now subscribed to the Translator Text API and obtained an API key for calling it. The next step is to modify the Contoso Travel site to use the Translator Text API to translate text extracted from photos with the Computer Vision API.
+You're now subscribed to the Translator Text API and have a key to call the API. The next step is to modify the Contoso Travel website to use the Translator Text API to translate text extracted from photos with the Computer Vision API.
 
-1. Open **index.html** and insert the following statements at line 42, just before the `<img>` element:
+
+### Update the code
+
+We need to update the **app.py** file and the **index.html** file.
+
+1. In Visual Studio Code, open the **index.html** file. Insert the following statements at line 42 in the file, just before the `<img>` element:
 
     ```html
     <select id="language" class="form-control" name="language">
@@ -49,7 +92,7 @@ You have now subscribed to the Translator Text API and obtained an API key for c
     </select>
     ```
 
-    Here's the modified markup showing the correct positioning of the new block:
+    Here's the modified markup that shows the correct position of the new code in the file. Notice the indentation of the `<select>` element:
 
     ```html
     <div class="container">
@@ -80,15 +123,15 @@ You have now subscribed to the Translator Text API and obtained an API key for c
     </div>
     ```
 
-    The added markup defines a drop-down list (an HTML `<select>` element) with a selection of languages that can text can be translated into.
+    The added markup defines a drop-down list (an HTML `<select>` element) with a selection of languages that text can be translated into.
 
-1. Also in **index.html**, add the following statement to the `<script>` block at the bottom of the page:
+1. Also in the **index.html** file, add the following JavaScript statements near the end of the `<script>` block at the bottom of the file:
 
     ```javascript
     $("#language").val("{{ language }}");
     ```
 
-    Here's how the modified `<script>` block should look:
+    Here's how the modified `<script>` block should look in the file:
 
     ```javascript
     <script type="text/javascript">
@@ -106,22 +149,22 @@ You have now subscribed to the Translator Text API and obtained an API key for c
     </script>
     ```
 
-    The purpose of the added statement is to initialize the drop-down list with the currently selected language. Without this statement, the drop-down list would revert to the default (English) each time a photo is uploaded.
+    The purpose of the added JavaScript statement is to initialize the drop-down list with the currently selected language. Without this statement, the drop-down list would revert to the default language (English) each time a photo is uploaded.
 
-1. Open **app.py** and replace the first line with this one:
+1. Now open the **app.py** file. Replace the first line of code with this statement:
 
     ```python
     import os, base64, json, requests
     ```
 
-1. Add the following statements right after the statements that create a `ComputerVisionClient` instance near the top of the file to fetch the Translator Text API key:
+1. Next, add the following statements immediately after the statements that create a `ComputerVisionClient` instance. (These lines of code are near the top of the file.) This code fetches the Translator Text API key:
 
     ```python
     # Retrieve the Translator Text API key 
     translate_key = os.environ["TRANSLATE_KEY"]
     ```
 
-1. Replace the ```index()``` function with this one:
+1. Now locate the `index()` method in the **app.py** file. Replace the contents of the `index()` method with the following code:
 
     ```python
     @app.route("/", methods=["GET", "POST"])
@@ -153,12 +196,12 @@ You have now subscribed to the Translator Text API and obtained an API key for c
         return render_template("index.html", image_uri=uri, language=language)
     ```
 
-    The new `index()` function reads the language selected in the drop-down list from the request and passes it to `translate_text()`, which translates the text into the specified language. Then it flashes the translated text so **index.html** will present it to the user.
+    The new `index()` method reads the language selected in the drop-down list from the request and passes it to the `translate_text()` method, which translates the text into the specified language. Then it flashes the translated text so **index.html** will present it to the user.
 
-1. Finally, add the `translate_text()` function to the end of **app.py**:
+1. Finally, add the `translate_text()` method to the end of the **app.py** file:
 
     ```python
-    # Function that translates text into the specified language
+    # Method that translates text into the specified language
     def translate_text(lines, language, key):
         uri = "https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&to=" + language
 
@@ -192,38 +235,49 @@ You have now subscribed to the Translator Text API and obtained an API key for c
             return ["Error calling the Translator Text API"]
     ```
 
-    This function calls the Translator Text API to translate the text passed to it. It returns the translated text, or an error message if something went wrong.
+    This method calls the Translator Text API to translate the text that's passed in. It returns the translated text, or an error message if something went wrong.
 
 An interesting aspect of this code is that if the call to the Computer Vision API returns an error message or a message indicating that no text was detected in the photo, the message itself is translated into the language that the user selected.
+
+Save your changes to the **index.html** and **app.py** files.
+
 
 ## Translate text extracted from photos
 
 The final step is to test the changes that you made by uploading photos to the site and allowing the Translator Text API to translate the text in them.
 
-1. If you're running Windows, use the following command to create an environment variable that contains the API key you retrieved for the Translator Text API. Replace `translator_text_api_key` with your key.
+1. In your Command Prompt window or terminal, make sure the current directory is still set to **mslearn-build-ai-web-app-with-python-and-flask/src/starter** in your project directory. Then restart Flask:
 
-    ```bash
-    set TRANSLATE_KEY=translator_text_api_key
+    ```console
+    flask run
     ```
 
-    If you're running Linux or macOS, use this command instead:
+1. Refresh your website page in the browser, or open a new browser window and go to `http://localhost:5000/`.
 
-    ```bash
-    export TRANSLATE_KEY=translator_text_api_key
-    ```
+1. Confirm the home page now has a drop-down list for selecting a language, as pictured in this screenshot:
 
-1. Go to `http://localhost:5000/` in your browser. Confirm that the page now contains a drop-down list for selecting a language, as pictured in this screenshot:
-
-    ![Selecting a language](../media/select-language.png)
+    ![Screenshot that shows the drop down to select a language.](../media/select-language.png)
 
     _Selecting a language_
 
-1. Select the language that you want to translate text into from the drop-down list. Then select **Upload Photo** and upload a picture that contains text.
+1. Use the drop-down to select the language that you want to translate text into. Then select **Upload Photo** and upload a picture that contains text.
 
 1. Confirm that after a brief pause, the text extracted from the photo and translated into the language that you specified appears in a modal dialog box. Then dismiss the dialog box.
 
-    ![Extracting text from a photo](../media/translated-text.png)
+    ![Screenshot that shows text extracted from a photo and translated into the specified language.](../media/translated-text.png)
 
     _Extracting text from a photo_
 
 Repeat this process with other photos to gauge the Translator Text API's ability to translate text submitted to it.
+
+
+## Stop Flask
+
+Stop Flask with the CTRL+C command.
+
+Leave your Command Prompt window or terminal open. You'll return to it in the next exercise.
+
+
+## Next steps
+
+At this point, your Flask website can accept photo uploads, extract text from photos, and translate the extracted text into another language. In the next unit, you'll learn how to deploy your website as an Azure web app so others can access the great functionality.
