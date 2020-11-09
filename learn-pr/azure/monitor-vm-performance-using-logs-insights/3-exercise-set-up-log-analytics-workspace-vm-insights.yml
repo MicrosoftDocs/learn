@@ -5,9 +5,10 @@ metadata:
   description: ''
   title: Exercise - Set up a Log Analytics workspace and Virtual Machine Insights
   ms.author: shkuehn
+  author: sbkuehn
   ms.prod: learning-azure
   ms.topic: interactive-tutorial
-  ms.date: 09/22/2020
+  ms.date: 11/16/2020
 azureSandbox: true
 interactive: bash
 durationInMinutes: 5

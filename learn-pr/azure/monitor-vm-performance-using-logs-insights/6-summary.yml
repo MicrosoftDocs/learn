@@ -5,9 +5,10 @@ metadata:
   description: ''
   title: Summary
   ms.author: shkuehn
+  author: sbkuehn
   ms.prod: learning-azure
   ms.topic: interactive-tutorial
-  ms.date: 09/22/2020
+  ms.date: 11/16/2020
 azureSandbox: false
 durationInMinutes: 5
 content: |
