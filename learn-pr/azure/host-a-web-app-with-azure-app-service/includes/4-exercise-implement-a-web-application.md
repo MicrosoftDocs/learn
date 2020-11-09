@@ -96,16 +96,14 @@ Save the file.
 Switch to the `index.js` file and add the following contents to it. This is a simple node program to always respond with "Hello World!" when any GET request is made to the server.
 
 ```javascript
-var http = require('http');
+const http = require('http');
 
-var server = http.createServer(function(request, response) {
-
+const server = http.createServer(function(request, response) {
     response.writeHead(200, { "Content-Type": "text/html" });
     response.end("<html><body><h1>Hello World!</h1></body></html>");
-
 });
 
-var port = process.env.PORT || 1337;
+const port = process.env.PORT || 1337;
 server.listen(port);
 
 console.log("Server running at http://localhost:%d", port);
