@@ -4,8 +4,8 @@ metadata:
   title: Title of the module
   description: Description of the module.
   ms.date: 01/01/2021
-  author: GitHubUser
-  ms.author: MSUser
+  author: KittyYeungQ
+  ms.author: kitty
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Title of the module
@@ -28,10 +28,10 @@ products:
 - azure-quantum
 units:
 - learn.quantum.module-name.1-introduction
-- learn.quantum.module-name.2-unit-two-title
-- learn.quantum.module-name.3-unit-three-title
-- learn.quantum.module-name.4-unit-four-title
-- learn.quantum.module-name.5-unit-five-title
+- learn.quantum.module-name.2-azure-quantum-structure-overview
+- learn.quantum.module-name.3-create-quantum-workspace
+- learn.quantum.module-name.4-case-study-quantum-computing
+- learn.quantum.module-name.5-case-study-optimization
 - learn.quantum.module-name.6-knowledge-check
 - learn.quantum.module-name.7-summary
 badge:
