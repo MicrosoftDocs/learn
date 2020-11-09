@@ -12,7 +12,7 @@
 - [x] Remove regions from urls
 - [ ] Final images/screenshots are present
 - [ ] Badge images are present
-- [ ] Verify Acrolinx score for all content (score > 80)
+- [x] Verify Acrolinx score for all content (score > 80)
 
 ### Index.yml
 - [x] *title* is set
