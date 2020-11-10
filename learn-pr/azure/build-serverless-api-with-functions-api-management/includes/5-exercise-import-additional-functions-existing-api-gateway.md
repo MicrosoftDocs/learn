@@ -7,15 +7,15 @@ In this exercise, you'll add the Orders function app to the API and use the `cur
 Before we add the Orders function app to the API, let's test the function it hosts, OrderDetails:
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, and select **All resources** and then select the **OrderFunction** App Service.
-1. Under **Functions** select **OrderDetails**, and then select **Test**.
+1. Under **Functions** select **OrderDetails**, and then select **Code + Test**.
 
-    ![Screenshot of the test tool for the Order Details function.](../media/5-test-order-details.png)
+    :::image type="content" source="../media/5-test-order-details.png" alt-text="Order details code is displayed.":::
 
 1. In the **HTTP method** drop-down list, select **GET**, and then select **Add parameter**.
 1. In the **name** textbox, type *name* and in the **value** textbox, type *Chiba*. The parameter name and value are both case-sensitive.
 1. Select **Run** and then examine the results in the **Output** box.
 
-    ![Screenshot of the test output from the Order Details function with a callout highlighting the Run button.](../media/5-order-test-results.png)
+    :::image type="content" source="../media/5-order-test-results.png" alt-text="Add a new fuction option page is displayed.":::
 
     The output pane displays the details of an order in JSON format. You can also test the function with the names "Henri" and "Barriclough" for different orders.
 
@@ -46,7 +46,7 @@ Now that we've added OrderDetails to our API let's test it, by using the API Man
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources** and then select your **Azure API Management** service instance.
 1. Under **API Management**, select **APIs** and then select the **OrderFunction** API.
-1. In the list of operations, select **GET OrderDetails** and then select the **Test** tab.
+1. In the list of operations, select **GET OrderDetails** and then select the **Test/Run** tab.
 
 1. Under **Query parameters**, select **Add parameter**.
 1. In the **name** textbox, enter *name*.
@@ -78,14 +78,14 @@ We can use the `curl` command-line tool to submit requests to our API. It's idea
 1. To request the details of a product, execute the following command in the Cloud Shell.
 
     ```bash
-    curl -v GET "$GATEWAY_URL/products/ProductDetails?id=2" -H "Ocp-Apim-Subscription-Key: $SUB_KEY"
+    curl -X GET "$GATEWAY_URL/products/ProductDetails?id=2" -H "Ocp-Apim-Subscription-Key: $SUB_KEY"
     ```
     The command returns the details of a product. You can also try the command with IDs 1 and 3 for different results.
 
 1. To request the details of an order, execute the following command and then press Enter:
 
     ```bash
-    curl -v GET "$GATEWAY_URL/orders/OrderDetails?name=Henri" -H "Ocp-Apim-Subscription-Key: $SUB_KEY"
+    curl -X GET "$GATEWAY_URL/orders/OrderDetails?name=Henri" -H "Ocp-Apim-Subscription-Key: $SUB_KEY"
     ```
 
     The command returns the details of an order. You can also try the command with the names "Chiba" and "Barriclough" for different results.

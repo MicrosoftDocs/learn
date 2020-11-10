@@ -25,7 +25,7 @@ products:
 - azure-synapse-analytics
 - azure-cosmos-db
 modules:
-- learn.intro-to-data-in-azure
+- learn.azure.azure-database-fundamentals
 - learn.provision-azure-sql-db
 - learn.azure-scale-azure-sql-dbs-elastic-pools
 - learn.migrate-sql-server-relational-data

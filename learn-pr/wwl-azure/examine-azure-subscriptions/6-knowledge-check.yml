@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/02/2020
+  ms.date: 11/03/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -71,14 +71,3 @@ quiz:
     - content: "Azure subscription"
       isCorrect: true
       explanation: "That's correct. Exactly, you need to have a subscription to create the resource within."
-  - content: "Which Azure support plan is best for business-critical workloads?"
-    choices:
-    - content: "Azure Developer"
-      isCorrect: false
-      explanation: "The Developer support plan does not have a fast enough SLA and allows for long downtimes of your service."
-    - content: "Azure Professional Direct"
-      isCorrect: true
-      explanation: "That's correct. The best way to ensure your solutions are running nearly all the time."
-    - content: "Azure Standard"
-      isCorrect: false
-      explanation: "You will want more capabilities than a standard agreement, to ensure the best functioning of your solutions."
