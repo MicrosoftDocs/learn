@@ -11,8 +11,9 @@ When you execute the command, some question items will be displayed at the promp
 | ---- | ---- |
 |  Subscription  |  Choose the right subscription |
 |  Define value for OS  |  1: Linux |
-|  Define value for Java Version  |  2: Java 8 |
-|  Define value for Runtime Stack  |  1: TOMCAT 9.0 |
+|  Define value for pricingTier | P1v2 |
+|  Define value for Java Version  |  1: Java 8 or 2: Java 11 |
+|  Define value for Runtime Stack  |  3: TOMCAT 9.0 |
 |  Confirm (Y/N)  |  Y |
 
 When you execute it, the following will be displayed.
@@ -38,22 +39,36 @@ Define value for OS [Linux]:
   2: Docker
   3: Windows
 Enter your choice:
-Define value for javaVersion:
-  1: Java 11
-* 2: Java 8
-Enter your choice: 2
-Define value for runtimeStack:
-  1: TOMCAT 9.0
-* 2: TOMCAT 8.5
+Define value for pricingTier [P1v2]:
+   1: B1
+   2: B2
+   3: B3
+   4: D1
+   5: F1
+*  6: P1v2
+   7: P2v2
+   8: P3v2
+   9: S1
+  10: S2
+  11: S3
+Define value for javaVersion [Java 8]:
+* 1: Java 8
+  2: Java 11
 Enter your choice: 1
+Define value for runtimeStack:
+  1: Jbosseap 7.2
+* 2: Tomcat 8.5
+  3: Tomcat 9.0
+Enter your choice: 3
 Please confirm webapp properties
-Subscription Id : ********-****-****-****-************
-AppName : azure-javaweb-app-1601541274402
-ResourceGroup : azure-javaweb-app-1601541274402-rg
+Subscription Id : f77aafe8-6be4-4d3d-bd9c-d0c37687ef70
+AppName : azure-javaweb-app-1604982052600
+ResourceGroup : azure-javaweb-app-1604982052600-rg
 Region : westeurope
 PricingTier : PremiumV2_P1v2
 OS : Linux
-RuntimeStack : TOMCAT 9.0-java11
+Java : Java 8
+Web server stack: Tomcat 9.0
 Deploy to slot : false
 Confirm (Y/N) [Y]: y
 [INFO] Saving configuration to pom.
@@ -162,7 +177,7 @@ To confirm the Log Stream, Azure CLI provide the sub command. In this command, y
 Execute the following command?
 
 ```azurecli
-az webapp log tail -g azure-javaweb-app-1601463451101 -n azure-javaweb-app
+az webapp log tail -g azure-javaweb-app -n azure-javaweb-app-1601463451101
 ```
 
 Then you can see the following result.
