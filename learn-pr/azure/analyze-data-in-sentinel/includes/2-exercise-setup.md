@@ -40,20 +40,20 @@ In this task, you will deploy an Azure Sentinel connector to Azure Activity.
 ![Screenshot that present Azure Sentinel Connector](../media/07-Azure-Sentinel-Connector.PNG)
 
 > [!Note]
-> The connector for Azure Activity could take 15 minutes until shows some date in the Azure Sentinel.
+> The connector for Azure Activity could take 15 minutes to deply. Wait till a date displays in Azure Sentinel. <!--Marjan, please check this sentence. I was not able to understand what the "date" meant here."-->
 
-## Check resources created
+## Check the resources created
 
 1. In the Azure portal, search for **Resource groups**.
 1. Select **azure-sentinel-rg**.
 1. Sort the list of resources by **Type**.
-1. The resource group should contain the resources shown in this table.
+1. The resource group should contain the resources listed inthe following table.
 
     | Name  | Type  | Description |
     |---|---|---|
-    | ***yourname*-sentinel** | Log Analytics Workspace | Log Analytics workspace used by Azure Sentinel |
-    | **SecurityInsights(*yourname*-sentinel** | Solution | Security insights for Azure Sentinel |
-    | **simple-vm**| Virtual machine | Virtual machine used in the demonstration |
+    | ***yourname*-sentinel** | Log Analytics workspace | Log Analytics workspace used by Azure Sentinel. |
+    | **SecurityInsights(*yourname*-sentinel** | Solution | Security insights for Azure Sentinel. |
+    | **simple-vm**| Virtual machine | Virtual machine used in the demonstration. |
     | **simple-vmNetworkInterface** | Network interface | Network interface for the  VM. |
     | **st1*xxxxx*** | Storage account | Storage account used by the virtual machine. |
     | **vnet1** | Virtual network | Virtual network for the VM. |
