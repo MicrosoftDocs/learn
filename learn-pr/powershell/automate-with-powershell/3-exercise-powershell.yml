@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.automate-with-powershell.3-exercise-powershell
+title: Exercise - Run commands and manage your execution policy
+metadata:
+  title: Exercise - Run your first PowerShell commands
+  description: In this unit you will run commands to check your installed version of PowerShell. You will also learn to manage your script execution policy.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 11/06/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-exercise-powershell.md)]
