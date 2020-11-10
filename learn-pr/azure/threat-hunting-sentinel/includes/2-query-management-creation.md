@@ -53,12 +53,12 @@ Custom queries enable you define the following:
 - Entity mapping. You can map entity types to columns from your query result to populate your query results with more actionable information. Entities can also be mapped using code in your KQL query.
 - Tactics. You can specify the tactics that your query is designed to expose.
 
-<!-- Jason: Take a look at the list's formatting. Colon instead of period in each item perhaps? --> 
+<!-- Jason: Take a look at the list's formatting. Bold first word like in the earlier list? --> 
 
 Custom queries are listed alongside built-in queries for management.
 
 ## Explore the Azure Sentinel repository on GitHub
 
-The Azure Sentinel repository contains out of the box detections, exploration queries, hunting queries, workbooks, playbooks and much more to help you secure your environment and hunt for threats. The repo is contributed to by Microsoft and the Azure Sentinel community.<!-- Jason: To avoid passive voice, what about "Microsoft and the Azure Sentinel community contribue to this repo." --> 
+The Azure Sentinel repository contains out of the box detections, exploration queries, hunting queries, workbooks, playbooks and much more to help you secure your environment and hunt for threats. The repo is contributed to by Microsoft and the Azure Sentinel community.<!-- Jason: To avoid passive voice, what about "Microsoft and the Azure Sentinel community contribute to this repo." --> 
 
 The repo contains folders with contributed content for several areas of Azure Sentinel functionality, including hunting queries. You can use the code from these queries to create custom queries in your Azure Sentinel workspace.
