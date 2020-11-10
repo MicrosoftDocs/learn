@@ -77,13 +77,16 @@ In the preceding `CreateHostBuilder` method fragment:
 
 ## Review the app's feature flag components
 
-:::image type="content" source="../media/3-review-app-configuration/client-to-server-integration.png" alt-text="A diagram showing how Angular communicates with ASP.NET Core" border="true" lightbox="../media/3-review-app-configuration/client-to-server-integration.png":::
-
 To make a feature configurable, you have to make several changes to your app. Some components have already been implemented for you. What follows is a review of those components.
 
-### Feature flag directive for the views
+:::image type="content" source="../media/3-review-app-configuration/client-to-server-integration.png" alt-text="A diagram showing how Angular communicates with ASP.NET Core" border="true" lightbox="../media/3-review-app-configuration/client-to-server-integration.png":::
 
-The *WebSPA* app is built with a JavaScript SPA framework from Google called Angular. Knowledge of Angular isn't required, but it's important to understand the architecture of this app.
+The *WebSPA* app is an ASP.NET Core project that uses a JavaScript SPA framework from Google called Angular. Knowledge of Angular isn't required, but it's important to understand the architecture of this app.
+
+<!--TODO: finish writing this paragraph-->
+The JavaScript can't access .NET's configuration system.
+
+### Feature flag directive for the views
 
 You're provided with a custom Angular *attribute directive*&mdash;a component that changes the appearance of DOM elements. In this case, the directive considers a feature flag to toggle the visibility of the discount coupon DOM elements. The directive is implemented with the following files in the *src\Web\WebSPA\Client\src\modules\shared* directory:
 
