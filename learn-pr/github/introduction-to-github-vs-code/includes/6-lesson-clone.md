@@ -7,3 +7,5 @@ VS Code provides a feature to search for and clone any repository you want over 
 VS Code will simplify the experience of cloning a repository and even set up your remote URL for you, so that you can start working faster. 
 
 Often when you clone a repository, you'll start browsing the files to understand what's happening and the history of the project. To make this more streamlined, VS Code provides a Timeline view that shows you all previous commits to each file. This is helpful when you want to gain context of the repository, see who contributed to it, and how old or recent the changes to the project are. 
+
+VS Code will open up a diff editor when you click on commits in the Timeline. This is a convenient way to compare changes between the current version and the specific commit and understand a file's history. By viewing the commits in the Timeline, you can quickly get an idea of the parts of the project that need to be updated or maintained.
