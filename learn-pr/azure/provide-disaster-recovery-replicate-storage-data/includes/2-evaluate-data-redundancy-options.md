@@ -54,7 +54,6 @@ GZRS and RA-GZRS are currently available in the following regions:
 - US Central
 - US East
 - US East 2
-- US Central
 
 ### Paired regions
 
