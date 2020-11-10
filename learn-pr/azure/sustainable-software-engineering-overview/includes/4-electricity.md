@@ -10,7 +10,7 @@ This is why the second principle of Sustainable Software Engineering is to **bui
 
 As sustainable engineers we need to understand electricity; our journey doesn't start from the computer, it starts from how the electricity that powers our computers is made.
 
-## Energy vs. Power
+## Energy vs. power
 
 Energy is a measure of an amount of electricity used, the standard unit for Energy is Joules or J. However, another common way of referring to energy consumption is in Kilowatt-hours, or kWh.
 

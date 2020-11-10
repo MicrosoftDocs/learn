@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.sustainable-software-engineering-overview.8-network-efficiency
-title: "Principle 6: Network Efficiency"
+title: "Principle 6: Network efficiency"
 metadata:
-  title: "Principle 6: Network Efficiency"
+  title: "Principle 6: Network efficiency"
   description: The sixth principle of sustainable software engineering is to reduce the amount of data and distance it must travel across the network. In this unit, you'll learn about the impact networking has on the overall carbon cost of your application.
   ms.date: 10/26/2020
   author: ashussai

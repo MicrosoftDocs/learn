@@ -13,7 +13,7 @@ Therefore the total carbon cost will be <nobr>320 + (0.276 \* 1760.3) = 805 kg</
 > The embodied carbon cost is often much higher for consumer devices, sometimes more significant than the lifetime carbon cost from electricity consumption. For an example, see _[Smartphones Are Killing The Planet Faster Than Anyone Expected](https://www.fastcompany.com/90165365/smartphones-are-wrecking-the-planet-faster-than-anyone-expected)_.
 >
 
-## Don't waste hardware.
+## Don't waste hardware
 
 By the time you buy a computer, it's already emitted a whole load of carbon. They also have an expiry date, computers get old, can't handle modern workloads, and need to be refreshed. If you think about it this way, hardware is then a proxy for carbon, so as Sustainable Software Engineer, we must be hardware efficient if our goal is to be **carbon-efficient**.
 

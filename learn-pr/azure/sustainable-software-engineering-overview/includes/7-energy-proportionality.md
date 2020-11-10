@@ -18,7 +18,7 @@ An idle computer, even one at zero percent utilization, still draws electricity.
 
 Servers are usually not configured for aggressive or even minimal power-saving. Many server use-cases demand full capacity as quickly as possible in response to rapidly changing demands. This scenario can leave many servers in idle modes during low demand periods. An idle server has a cost both from embedded carbon and its inefficient utilization.
 
-### Clock Speed
+### Clock speed
 
 Clock speed (frequency) is the operating speed of a computer or its microprocessor, expressed in cycles per second (megahertz). Dynamically adjusting the clock speed of computing devices is often used in consumer devices to achieve more energy proportionality.
 
