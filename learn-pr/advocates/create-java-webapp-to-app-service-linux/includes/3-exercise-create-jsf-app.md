@@ -143,9 +143,10 @@ Create a `beans.xml` file under the `src/main/WEB-INF` directory and describe th
    ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-　　xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-　　xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
-　　bean-discovery-mode="all"></beans>
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
+  bean-discovery-mode="all">
+</beans>
    ```
 
 ### Enable JSF
@@ -217,7 +218,6 @@ Next, create a backing bean to implement server-side backend processing.
 Create a new directory for Java package which will use to create the backing bean under the `src/main` directory.
 
 ```bash
-cd src/main
 mkdir src/main/java
 mkdir src/main/java/com
 mkdir src/main/java/com/microsoft
