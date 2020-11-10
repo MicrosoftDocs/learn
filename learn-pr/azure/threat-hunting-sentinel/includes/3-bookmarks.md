@@ -1,4 +1,6 @@
-Threat hunting typically requires reviewing large amounts of log data looking for evidence of malicious behavior. During this process, you might find events that they want to remember, revisit, and analyze as part of validating potential hypotheses and understanding the full story of a compromise. <!-- Jason: Who is "they"?--> <!-- Jason: Add a reference to Contoso? Maybe: "To hunt for threats to Contoso's environment, you have to review large amounts of log data for evidence of malicious behavior." -->  
+Threat hunting typically requires reviewing large amounts of log data looking for evidence of malicious behavior. During this process, you might find events that they want to remember, revisit, and analyze as part of validating potential hypotheses and understanding the full story of a compromise. <!-- Jason: Who is "they"?--> <!-- Jason: Add a reference to Contoso? Maybe rewrite the first sentence: "To hunt for threats to Contoso's environment, you have to review large amounts of log data for evidence of malicious behavior." -->  
+
+<!--Jason: Maybe a heading here: ##Hunt using bookmarks --> 
 
 Hunting bookmarks in Azure Sentinel help you do this <!-- Jason: Do what? "Help you hunt for threats?" --> by preserving the queries you ran in Azure Sentinel, along with the query results that you deem relevant. You can also record your contextual observations and reference your findings by adding notes and tags. Bookmarked data is visible to you and your teammates for easy collaboration.
 
@@ -16,4 +18,4 @@ Incidents created from bookmarks can be managed from the **Incidents** page alon
 
 ## Use the investigation graph to explore bookmarks
 
-You can investigate bookmarks in the same way you would investigate incidents in Azure Sentinel. From the Hunting page, select **Investigate** to open the investigation graph for the incident. <!-- Jason: Screen shot of the investigation graph here? Add some material, such as a case study (Contoso) or an explanatiuon as to why a compnay would want to use the investigation graph. --> 
+You can investigate bookmarks in the same way you would investigate incidents in Azure Sentinel. From the Hunting page, select **Investigate** to open the investigation graph for the incident. <!-- Jason: Screen shot of the investigation graph here? In general, this section seems light. Could you add some material, such as a case study (Contoso) or an explanatiuon as to why a compnay would want to use the investigation graph? Perhaps: "At Contoso, you'll want to use the investigation graph to do..." --> 
