@@ -119,6 +119,8 @@ static void AlertLedOffToggleHandler(EventLoopTimer* eventLoopTimer) {
 }
 ```
 
+------
+
 ## Automatic initialization of peripherals and event timers
 
 Peripherals and timers referenced in a set will be automatically opened and closed.
@@ -139,6 +141,8 @@ static void InitPeripheralsAndHandlers(void)
     lp_timerSetStart(timerSet, NELEMS(timerSet));
 }
 ```
+
+------
 
 ## Easy to extend
 

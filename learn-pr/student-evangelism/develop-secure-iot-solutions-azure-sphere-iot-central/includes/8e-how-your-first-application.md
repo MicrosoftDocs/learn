@@ -11,6 +11,8 @@ The following outlines how the Azure Sphere stream telemetry to IoT Central.
 1. The High-level application running on the Cortex-A7 reads the environment sensors every 6 seconds, serializes the data as JSON, and sends the telemetry message to IoT Hub.
 2. Azure IoT Central subscribes to telemetry messages sent to IoT Hub by the device and displays the data to the user.
 
+------
+
 ## Understanding the Azure Sphere application
 
 The application declares a **measureSensorTimer**. When initialized, this timer will trigger every 6 seconds calling the **MeasureSensorHandler** handler function.

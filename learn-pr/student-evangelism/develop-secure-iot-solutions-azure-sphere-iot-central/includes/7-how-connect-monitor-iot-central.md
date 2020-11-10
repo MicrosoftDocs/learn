@@ -1,5 +1,7 @@
 Your Azure Sphere application will connect to Azure IoT Central and send room environment telemetry to Azure IoT Central. You'll learn how to secure, build, deploy, and debug your high-level Azure Sphere application onto the Azure Sphere Cortex-A7 core.
 
+------
+
 ## Components used
 
 The components for this unit:

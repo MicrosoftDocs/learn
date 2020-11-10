@@ -52,6 +52,8 @@ Previously these were recorded manually by the lab assistants using sensors at r
 
 Maintaining the room conditions accurately is critical for managing the laboratory. The lab needs to maintain the right conditions to help you get more accurate results. Any variation in the conditions can affect the equipment temperature during the storage and manipulation of the samples, specimens, and lab equipment. This could impact the ability to produce the correct and stable results and can also have an economic impact on the organization.
 
+------
+
 ## Proposed new system
 
 The proposed new system would have the following factors:
@@ -66,6 +68,8 @@ The solution must be built on an IoT platform that is highly secure, that is pro
 
 ![The illustration shows an Azure Sphere dashboard based on scenario.](../media/azure-sphere-dashboard.png)
 
+------
+
 ## Learning objectives
 
 In this module, you will:
@@ -75,6 +79,8 @@ In this module, you will:
 * Build and deploy the Azure Sphere application
 * Display environment telemetry in the Azure IoT Central dashboard
 * Control an Azure Sphere application by using Azure IoT Central properties and commands
+
+------
 
 ## Prerequisites
 

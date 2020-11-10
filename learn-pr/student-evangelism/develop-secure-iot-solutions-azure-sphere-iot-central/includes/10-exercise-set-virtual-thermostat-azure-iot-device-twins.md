@@ -38,9 +38,8 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 ## Step 4: Start the app build deploy process
 
-1. Ensure main.c is open.
-2. Select **CMake: [Debug]: Ready** from the Visual Studio Code Status Bar.
-3. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application that's now running the Azure Sphere device.
+1. Select **CMake: [Debug]: Ready** from the Visual Studio Code Status Bar.
+2. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application that's now running the Azure Sphere device.
 
 ------
 

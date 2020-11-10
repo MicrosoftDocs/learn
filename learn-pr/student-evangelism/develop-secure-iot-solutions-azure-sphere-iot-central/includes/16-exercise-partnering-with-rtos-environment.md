@@ -3,7 +3,7 @@
 1. Start Visual Studio Code to open your project.
 2. Click **Open folder**.
 3. Open the **Azure-Sphere lab** folder.
-4. Open the **Lab_7_Partnering_with_RTOS** folder.
+4. Open the **Lab_7_Partnering_with_RTOS_environment** folder.
 5. Click **Select Folder** or the **OK** button to open the project.
 
 ------
@@ -38,10 +38,11 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 ## Step 4: Set a breakpoint in the InterCoreHandler callback function
 
+1. Ensure **main.c** is open.
 1. Scroll down to the function named **InterCoreHandler**.
     > [!NOTE]
     > Use **Go to Symbol in Editor** in Visual Studio Code. Use the keyboard shortcut Ctrl+Shift+O and start typing *InterCoreHandler*. You'll often see a function name listed twice in the drop-down. The first is the function prototype or forward signature declaration, and the second is the implementation of the function.
-2. Set a breakpoint in the inter-core_thread function on the line that reads **switch (ic_message_block->cmd)**
+1. Set a breakpoint in the inter-core_thread function on the line that reads **switch (ic_message_block->cmd)**
     > [!NOTE]
     > You can learn how how to set breakpoints from this [Visual Studio Code Debugging](https://code.visualstudio.com/docs/editor/debugging#_breakpoints?azure-portal=true) article.
 
@@ -51,8 +52,10 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 ## Step 5: Start the app build deploy process
 
-2. Select **CMake: [Debug]: Ready** from the Visual Studio Code Status Bar.
-3. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application that's now running the Azure Sphere device.
+1. Select **CMake: [Debug]: Ready** from the Visual Studio Code Status Bar.
+2. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application that's now running the Azure Sphere device.
+
+------
 
 ## Step 6: Debugging High-level and Real-time core applications
 

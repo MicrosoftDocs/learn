@@ -4,11 +4,15 @@ Applications on Azure Sphere are secure by default. You must grant capabilities 
 
 Application capabilities include what hardware can be accessed, what network endpoints can be called, and what inter-core communications is allowed.
 
+------
+
 ## IoT Central network endpoints
 
 You must declare all network endpoints your application will use. As a security feature, if you try to access any endpoint that has not been declared in the application manifest then the application will fail when it tries to connect. This security is implemented as a network firewall that cannot be changed until the device is restarted.
 
 When connecting to IoT Central you must declare the global device provisioning service endpoint as well as the endpoints for your IoT Central application. Otherwise, your Azure Sphere application will not be able to connect to IoT Central.
+
+------
 
 ## Network endpoint capabilities
 

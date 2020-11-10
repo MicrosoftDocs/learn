@@ -3,14 +3,14 @@
 1. Start Visual Studio Code.
 2. Click **Open folder**.
 3. Open the **Azure-Sphere lab** folder.
-4. Open the **Lab_2_Send_Telemetry_to_Azure_IoT_Central** folder.
+4. Open the **Lab_2_Send_Telemetry_to_Azure_IoT** folder.
 5. Click **Select Folder** or the **OK** button to open the project.
 
 ------
 
-From Visual Studio Code, open the **app_manifest.json** file. The resources this application requires must be declared in the **Capabilities** section.
-
 ## Step 2: Configure the Azure Sphere application
+
+From Visual Studio Code, open the **app_manifest.json** file. The resources this application requires must be declared in the **Capabilities** section.
 
 1. Update the connection properties for the Azure IoT Central application.
 
@@ -89,13 +89,11 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 ### Start the app build and deployment process
 
-1. Ensure **main.c** is open.
-
-2. Select **CMake: [Debug]: Ready** from the Visual Studio Code status bar.
+1. Select **CMake: [Debug]: Ready** from the Visual Studio Code status bar.
 
    ![The illustration shows CMake status.](../media/visual-studio-code-start-application.png)
 
-3. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application now running the Azure Sphere device.
+2. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application now running the Azure Sphere device.
 
 ### View debugger output
 
@@ -130,6 +128,8 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 ![The illustration shows the Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
 
 1. The User LED will blink every 5 seconds when connected to Azure.
+
+------
 
 ## Step 6: Display the device telemetry in IoT Central
 

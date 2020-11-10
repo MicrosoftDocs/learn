@@ -3,30 +3,46 @@
 1. Start Visual Studio Code to open your project.
 
 2. Click **Open folder**.
-
 3. Open the **Azure-Sphere lab** folder.
-
 4. Open the **Lab_4_Direct_Methods** folder.
-
 5. Click **Select Folder** or the **OK** button to open the project.
 
-6. Set your developer board configuration:
+------
 
-   1. Open **CMakeList.txt**.
-   2. Uncomment the **set** command that corresponds to your Azure Sphere developer board.
-   3. Save the file. This will autogenerate the CMake cache.
+## Step 2: Set your developer board configuration
 
-7. Configure the Azure IoT Central connection information:
+These labs support developer boards from Avnet and Seeed Studio. You need to set the configuration that matches your developer board.
 
-   1. Open the **app_manifest.json** file.
-   2. Redo the settings for the file. Either copy the settings from Notepad if you still have it open, or copy them from the **app_manifest.json** file you created in the previous exercise.
-   3. Paste the contents of the clipboard into **app_manifest.json** and save the file.
+The default developer board configuration is for the Avnet Azure Sphere Starter Kit. If you have this board, there's no additional configuration required.
 
-8. Ensure **main.c** is open.
+1. Open the **CMakeList.txt** file.
+2. Add a `#` at the beginning of the set Avnet line to disable it.
+3. Uncomment the `set` command that corresponds to your Azure Sphere device developer board.
 
-9. Select **CMake: [Debug]: Ready** from the Visual Studio Code status bar.
+   ```text
+   set(AVNET TRUE "AVNET Azure Sphere Starter Kit")
+   # set(SEEED_STUDIO_RDB TRUE "Seeed Studio Azure Sphere MT3620 Development Kit (aka Reference Design Board or rdb)")
+   # set(SEEED_STUDIO_MINI TRUE "Seeed Studio Azure Sphere MT3620 Mini Dev Board")
+   ```
 
-10. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application now running the Azure Sphere device.
+4. Save the file. This will auto-generate the CMake cache.
+
+------
+
+## Step 3: Configure the Azure IoT connection information
+
+1. Open the **app_manifest.json** file.
+2. You'll need to redo the settings for the **app_manifest.json** file. Either copy the settings from Notepad if you still have it open or copy them from the **app_manifest.json** file you created in the previous exercise.
+3. Paste the contents of the clipboard into **app_manifest.json** and save the file.
+
+------
+
+## Step 4: Start the app build deploy process
+
+1. Select **CMake: [Debug]: Ready** from the Visual Studio Code status bar.
+2. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application now running the Azure Sphere device.
+
+------
 
 ## Expected device behavior
 
@@ -51,6 +67,8 @@
 1. The User LED will blink every 5 seconds when connected to Azure.
 1. When you initiate the device restart direct method you will observe the device restarting.
 
+------
+
 ## Testing Azure IoT Central commands
 
 1. From Visual Studio, ensure that Azure Sphere is running the application and set a breakpoint in the **RestartDeviceDirectMethodHandler** handler function.
@@ -71,6 +89,8 @@
 
     > [!NOTE]
     > You may see a timed-out message in the history, depending on how long it took you to step through the code in Visual Studio.
+
+------
 
 ## Close Visual Studio
 
