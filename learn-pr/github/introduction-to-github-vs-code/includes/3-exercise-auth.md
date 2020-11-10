@@ -6,7 +6,7 @@
 
 ![Install extension](../media/1-ghpri.png)
 
-1. Once you install the extension, you can click on the gear icon at the bottom of the activity bar and click on "Sign into use GitHub Pull Requests and Issues". This will open a browser window where you will be granting permission to VS Code to access GitHub.
+3. Once you install the extension, you can click on the gear icon at the bottom of the activity bar and click on "Sign into use GitHub Pull Requests and Issues". This will open a browser window where you will be granting permission to VS Code to access GitHub.
 
 ![Sign into extension](../media/2-sign-in.png)
    
