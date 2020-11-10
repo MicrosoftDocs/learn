@@ -21,7 +21,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 4. Select the **I agree to the terms and conditions stated above** check box, and then select **Purchase**.
 
-![Screenshot that present Custom Deployment](../media/07-Custom-Deployment.PNG)
+:::image type="content" source="../media/07-Custom-Deployment.PNG" alt-text="Screenshot of the Custom Deployment page." border="true":::
 
 > [!Note]
 > Wait for the deployment to complete. The deployment should take less than 5 minutes.
@@ -37,7 +37,7 @@ In this task, you will deploy an Azure Sentinel connector to Azure Activity.
 5. Select your subscription, and then select **Connect**.
 6. When you receive a status pf **Connected**, close all open blades to return to the **Azure Sentinel| Data connector** blade.
 
-![Screenshot that present Azure Sentinel Connector](../media/07-Azure-Sentinel-Connector.PNG)
+:::image type="content" source="../media/07-Azure-Sentinel-Connector.PNG" alt-text="Screenshot of the Azure Sentinel connector." border="true":::
 
 > [!Note]
 > The connector for Azure Activity could take 15 minutes to deply. Wait till a date displays in Azure Sentinel. <!--Marjan, please check this sentence. I was not able to understand what the "date" meant here."-->
