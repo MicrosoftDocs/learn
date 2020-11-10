@@ -2,14 +2,14 @@
 uid: learn.automate-with-powershell
 metadata:
   title: Manage and automate your machine by using PowerShell commands 
-  description: This module teaches you what PowerShell is and what it's used for. It also teaches you how to compiled commands, cmdlets. Additionally it teaches you to construct powerful pipelines using pipes and more than one cmdlets in a pipeline and how to filter and format.   
+  description: This module teaches you what PowerShell is and what it's used for. It also teaches you how to use compiled commands, cmdlets. Additionally it teaches you to construct powerful pipelines using pipes and more than one cmdlets in a pipeline and how to filter and format.   
   ms.date: 11/06/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage and automate your machine by using PowerShell commands 
-summary: This module teaches you what PowerShell is and what it's used for. It also teaches you how to compiled commands, cmdlets. Additionally it teaches you to construct powerful pipelines using pipes and more than one cmdlets in a pipeline and how to filter and format.
+summary: This module teaches you what PowerShell is and what it's used for. It also teaches you how to use compiled commands, cmdlets. Additionally it teaches you to construct powerful pipelines using pipes and more than one cmdlets in a pipeline and how to filter and format.
 abstract: |
   After completing this module, you'll be able to:
   - Understand what PowerShell is and what you can use it for.
