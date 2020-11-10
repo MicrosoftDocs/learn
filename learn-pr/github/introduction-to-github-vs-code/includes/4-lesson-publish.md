@@ -21,7 +21,7 @@ In short, it's a lot of steps. Visual Studio Code has a built-in "publish" featu
 
 There are two ways to publish a project to GitHub from VS Code - from the Source Control Management View (SCM View) and from the Command Palette. You must have a folder open in Visual Studio Code to see these options.
 
-### Publishing from the SCM VIew
+### Publishing from the SCM View
 
 If you have not already initialized a repository for your project, you can publish your project directly from the SCM View.
 
