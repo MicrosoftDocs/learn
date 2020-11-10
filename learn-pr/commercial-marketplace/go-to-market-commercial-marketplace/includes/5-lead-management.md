@@ -2,7 +2,7 @@ One of the unique benefits of the Microsoft commercial marketplace is the abilit
 
 Leads are generated when a user clicks on your listing’s call-to-action (CTA) and consents to share their contact information with you. Commercial marketplace CTAs are the blue buttons that appear on your offer’s listing, and include “contact me,” “free trial,” “test drive,” and “get it now.”
 
-:::image type="content" source="../media/2-marketplace-cta.png" alt-text="Screenshot of a product listing from Azure Marketplace with emphasis on the "free trial" button. When users ":::
+:::image type="content" source="../media/2-marketplace-cta.png" alt-text="Screen shot of a product listing from Azure Marketplace with emphasis on the free trial button":::
 
 ## Connecting to your CRM system
 
