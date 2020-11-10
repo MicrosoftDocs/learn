@@ -1,19 +1,19 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.introduction-to-azure-digital-twins.summary
+uid: learn.iot.introduction-to-azure-digital-twins.knowledge-check
 metadata:
-  description: Summary
-  ms.date: 11/11/2020
-  author: basakmutlum
-  ms.author: Bazak.Mutlum
+  description: Check that you understand the introduction to Azure Digital Twins
+  ms.date: 11/5/2020
+  author: raniabayoumy
+  ms.author: bamut
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Summary
-durationInMinutes: 6
+title:  Knowledge check
+durationInMinutes: 5
 content: |
-  [!include[](includes/7-summary.md)]
 quiz:
   title: Check your knowledge
   questions:
+
   - content: 'True or false. Digital twins is a good technology to represent equipment and processes, but is not suitable for representing people?'
     choices: 
     - content: 'True'
@@ -54,7 +54,8 @@ quiz:
       explanation: Good guess, but the connections have a more specific name!
     - content: 'Telemetry'
       isCorrect: false
-      explanation: Telemetry is the stream of values pouring out of a sensor device, and possibly into an IoT Hub. 
+      explanation: Telemetry is the stream of values pouring out of a sensor device, and possibly into an IoT Hub.
+ 
 
   - content: 'After creating a knowledge graph of your digital twin models, and connected the models with relationships, what is the best method of gaining insights, from the options given, into the future of your business?'
     choices: 
@@ -67,14 +68,14 @@ quiz:
     - content: 'C. Analyze the digital twins data with Time Series Insights.'
       isCorrect: false
       explanation: Time Series Insights will give you, as the name suggests, insights. However, it might not on its own give the best results.
-    - content: 'D. Extract insights from the live execution environment, using Azure Digital Twins powerful query API.'
+    - content: 'D. Extract insights from the live execution environment, using the Azure Digital Twins powerful query API.'
       isCorrect: false
       explanation: The Query API will give you valuable insights. Is there a better possibility?
     - content: 'E. Use a combination of A (live telemetry), C (time series insights), and D (the query API).'
       isCorrect: true
       explanation: Using this combination will give you the life and integrity of real data, the analysis of time series insights, and the feedback from knowledge graph queries. A powerful combination!
 
-  - content: 'What technology is used to create each digital twin model?'
+  - content: 'What language is used to create each digital twin model?'
     choices: 
     - content: 'C#'
       isCorrect: false
@@ -83,7 +84,7 @@ quiz:
       isCorrect: false
       explanation: The digital twin query language is SQL-like, but is not the language used to create a model.
     - content: 'JSON'
-      isCorrect: false
+      isCorrect: true
       explanation: Digital twins models, data, and relationship data are all stored in JSON format.
     - content: 'IoT'
       isCorrect: false

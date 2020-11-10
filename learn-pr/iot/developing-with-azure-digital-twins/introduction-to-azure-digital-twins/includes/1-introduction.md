@@ -1,22 +1,26 @@
-TBD
+---
+metadata:
+  title: 
+  description: This unit introduces Azure Digital Twins
+  ms.date: 11/4/2020
+  author: raniabayoumy
+  ms.author: bamut
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 2
+---
+We hear the term “Digital Twin” used frequently in many contexts. The term has been around for a while, but the definition has broadened as companies continue to evolve alongside with technology. With the availability of cloud technology, advances in simulation, modeling capabilities, IoT Platforms and better interoperability with IoT Sensors, companies have started to invest heavily in digital twin solutions.
 
-## Learning objectives
+How can a business address their digital twin needs?
 
-In this module you will:
+And how can Microsoft help?
 
-- Create an tbd
+On completing this module, you will be able to:
 
-## Prerequisites
+- Describe how Microsoft defines digital twins, the core concepts and building blocks to implement a Digital Twin solution
+- List customer goals for digital twin applications
+- Discuss the outcomes businesses can achieve through digital twins
+- Understand the value of a digital twin, its value proposition and how it can be used to support business goals in various industry verticals
 
-- Introductory knowledge of the purpose of Azure IoT
-- Ability to navigate the Azure IoT Central portal 
-- Ability to use Node.js or C# at the beginner level 
-- Experience using Visual Studio or Visual Studio Code at the beginner level 
-- Must have an Azure Maps account or be able to open one
-
-## The scenario
-
-[![Graph illustration of telemetry](../media/lambda-telemetry.png)](../media/lambda-telemetry.png#lightbox)
-
-
-TBD
+Let's explore the specific flavor of digital twins that we're going to be creating using Azure Digital Twins and review some use cases that illustrate how digital twins can be applied in different business environments.

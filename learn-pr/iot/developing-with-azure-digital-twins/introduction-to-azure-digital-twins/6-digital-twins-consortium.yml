@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.introduction-to-azure-digital-twins.digital-twins-consortium
 metadata:
-  description: Learn about the digital twins consortium, and how the organization might help you get started.
-  ms.date: 11/11/2020
-  author: basakmutlum
-  ms.author: Bazak.Mutlum
+  description: Introduction to the Digital Twin Consortium
+  ms.date: 11/5/2020
+  author: raniabayoumy
+  ms.author: bamut
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Learn about the digital twins consortium
+title:  Digital Twins Consortium
 durationInMinutes: 5
 content: |
   [!include[](includes/6-digital-twins-consortium.md)]

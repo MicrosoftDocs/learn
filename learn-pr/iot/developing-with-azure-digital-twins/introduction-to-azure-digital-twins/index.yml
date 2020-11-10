@@ -1,39 +1,40 @@
 ### YamlMime:Module
 uid: learn.iot.introduction-to-azure-digital-twins
 metadata:
-  description: This module introduces an advanced technology - Azure Digital Twins. Units of the module explain the use and benefits of digital twins, with current industry examples. You will also learn about the components of an Azure Digital Twins solution.
-  ms.date: 11/11/2020
-  author: basakmutlum
-  ms.author: Bazak.Mutlum
+  description: This module provides an overview of Azure Digital Twins, and describes Microsoft tools, services, and infrastructure. This knowledge can help bring digital twins to life for your organization and customers.
+  ms.date: 11/5/2020
+  author: raniabayoumy
+  ms.author: bamut
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Digital Twins
 summary: >
-  This module introduces an advanced technology - Azure Digital Twins. Units of the module explain the use and benefits of digital twins, with current industry examples. You will also learn about the components of an Azure Digital Twins solution.
+  This module provides an overview of Azure Digital Twins, and describes Microsoft tools, services, and infrastructure. This knowledge can help bring digital twins to life for your organization and customers.
 abstract: |
   In this module, you will:
-  - Learn about the use and benefits of Azure Digital Twins
-  - Examine a number of current use cases of Azure Digital Twins, in different industries
-  - Learn the components of an Azure Digital Twins solution
-  - Understand the role of the digital twins consortium
-prerequisites: |
-  - Introductory knowledge of the purpose of Azure IoT
+  - Describe how Microsoft defines digital twins, the core concepts and building blocks to implement a Digital Twin solution
+  - List customer goals for digital twin applications
+  - Discuss the outcomes businesses can achieve through digital twins
+  - Understand the value of a digital twin, its value proposition and how it can be used to support business goals in various industry verticals
+prerequisites: None
 iconUrl: /learn/achievements/iot/introduction-to-azure-digital-twins.svg
 ratingEnabled: true
 levels:
 - beginner
 roles:
 - developer
+- solution-architect
 products:
-- azure
 - azure-iot
+- azure-digital-twins
 units:
 - learn.iot.introduction-to-azure-digital-twins.introduction
-- learn.iot.introduction-to-azure-digital-twins.what-is-digital-twin
+- learn.iot.introduction-to-azure-digital-twins.what-is-a-digital-twin
 - learn.iot.introduction-to-azure-digital-twins.benefits-of-azure-digital-twins
-- learn.iot.introduction-to-azure-digital-twins.digital-twins-use-cases-in-different-industries
-- learn.iot.introduction-to-azure-digital-twins.azure-digital-twins-in-solution-context
+- learn.iot.introduction-to-azure-digital-twins.azure-digital-twins-use-cases-in-different-industries
+- learn.iot.introduction-to-azure-digital-twins.explore-azure-digital-twins-in-a-solution-context
 - learn.iot.introduction-to-azure-digital-twins.digital-twins-consortium
-- learn.iot.introduction-to-azure-digital-twins.summary
+- learn.iot.introduction-to-azure-digital-twins.knowledge-check
+- learn.iot.introduction-to-azure-digital-twins.summary-and-resources
 badge:
   uid: learn.iot.introduction-to-azure-digital-twins.badge
