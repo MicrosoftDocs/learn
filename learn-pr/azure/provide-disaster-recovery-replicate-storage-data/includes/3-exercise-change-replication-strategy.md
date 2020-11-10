@@ -81,7 +81,7 @@ You need a container to upload blobs to Azure Storage. You use containers to log
 1. Run the following command to create a container for your storage account:
 
     ```Bash
-    az storage container create --name $BLOB_CONTAINER_NAME
+    az storage container create --account-key $storageKey --account-name $sa --name $blobname
     ```
 
 1. You'll see the following message returned in your terminal when your storage account container has been created:
