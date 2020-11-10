@@ -11,4 +11,4 @@ After completing this module, you'll be able to:
 - Understand what PowerShell is and what you can use it for.
 - Manage execution policies and run simpler commands.
 - Explore cmdlets and construct a sequence of them in a pipeline.
-- Apply sounds principles to your commands by using filtering and formatting.
+- Apply sound principles to your commands by using filtering and formatting.
