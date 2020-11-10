@@ -1,7 +1,7 @@
 You can connect several data sources to Azure Sentinel, which can rapidly generate many security alerts. 
 
 ## Manage analytics rules
-To adjust the noise and filter the important threat detection, you should manage the analytics rules on an ongoing basis. This will help ensure that your rules remain useful and efficient in detecting potential security threats.
+To adjust the noise and filter the more important threats detected, you should manage the analytics rules on an ongoing basis. This will help ensure that your rules remain useful and efficient in detecting potential security threats.
 
 You can perform the following four actions on existing active rules:
 
@@ -17,7 +17,7 @@ You can modify existing rules by selecting **Edit** in the details pane. To edit
 A typical modification that you might want to implement is to attach an automated response to an already detected threat. To do this, on the **Automated Response** page, you can select one of the existing playbooks that defines the automated activity that will run if the threat is detected.
 For example, your analytics rule might be detecting an incident that has already been resolved, and you want to reduce further alerts if similar activity occurs. By attaching a playbook that contains automated activity, you can change the incident status or add comments when a similar incident is detected.  
 
-![Screenshot of the editing existing analytics rule](../media/06-Edit-existing-rule.PNG)
+:::image type="content" source="../media/06-Edit-existing-rule.PNG" alt-text="Screenshot of the editing existing analytics rule." border="false":::
 
 ## Disable rules
 
