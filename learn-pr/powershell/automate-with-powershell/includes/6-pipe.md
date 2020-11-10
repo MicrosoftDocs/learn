@@ -30,7 +30,7 @@ Now back to the evaluation process, how will it evaluate the input?
 
 1. **By value (by type)**. The first thing PowerShell will do is try match it to a complex type, this is called _by value_, which in the above case means it will try to evaluate whether the input looks like a `System.Diagnostics.Process[]`. If that fails, it will go on to the next step.
 
-1. **By property name**. The next step is trying to match it towards a simpler data type, which is either the `-Name` or `-Id` parameter. Looking at the PARAMETERS section for these two parameters you see the following listing:
+2. **By property name**. The next step is trying to match it towards a simpler data type, which is either the `-Name` or `-Id` parameter. Looking at the PARAMETERS section for these two parameters you see the following listing:
 
    ```output
    Accept pipeline input?       true (ByPropertyName)

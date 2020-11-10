@@ -111,7 +111,7 @@ Managing processes on a machine is a thing you are likely to do. You might want 
    Get-Process
    ```
 
-   You will table like response consisting of all running processes on your machine. The exact response may wary depending on what's running on your machine. Pick a process name from the right-most column and use that as an argument for your next command:
+   You will see a table-like response consisting of all running processes on your machine. The exact response may wary depending on what's running on your machine. Pick a process name from the right-most column and use that as an argument for your next command:
 
 1. Run `Get-Process`, this time with process name and with `Get-Member` piped:
 
