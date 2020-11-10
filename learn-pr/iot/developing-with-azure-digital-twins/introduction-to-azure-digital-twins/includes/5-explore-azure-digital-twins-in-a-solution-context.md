@@ -1,15 +1,3 @@
----
-title: Introduction
-metadata:
-  description: 
-  ms.date: 11/4/2020
-  author: raniabayoumy
-  ms.author: bamut
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 2
----
-
 :::image type="content" source="../media/adt-solutions.png" alt-text="Diagram of an Azure Digital Twins solution steps" lightbox="../media/adt-solutions.png":::
 
 In a solution context, Azure Digital Twins is the platform that allows you to model any environment and connect sensors and business systems to the model to control the present, track the past and predict the future.

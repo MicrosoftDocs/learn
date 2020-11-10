@@ -1,15 +1,3 @@
----
-title: Introduction
-metadata:
-  description: 
-  ms.date: 11/4/2020
-  author: raniabayoumy
-  ms.author: bamut
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 2
----
-
 - **Ignite 2020 sessions**
   - [Sam George - Azure IoT services, roadmap and vision: from connected assets to connected environments](https://myignite.microsoft.com/sessions/8c90945c-eec6-43ed-b16a-3adf3c2ba37a)
 

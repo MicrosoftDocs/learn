@@ -1,15 +1,3 @@
----
-title: Introduction
-metadata:
-  description: This unit introduces Azure Digital Twins
-  ms.date: 11/4/2020
-  author: raniabayoumy
-  ms.author: bamut
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 2
----
-
 Using the power of IoT, we have connected and monitored individual assets and machines for quite some time now. IoT has made it possible to bridge the gap between design models and real-world products, improving products and customer experiences. This really involves multiple types of digital twins. For example:
 
 - Digital twins of factory lines improve operation of the factory
