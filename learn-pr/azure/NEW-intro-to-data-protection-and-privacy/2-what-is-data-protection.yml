@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.data-protection-and-privacy.1-what-is-data-protection
+uid: learn.azure.introduction-data-protection-and-privacy.2-what-is-data-protection
 title: What is data protection?
 metadata:
   title: What is data protection?
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/1-what-is-data-protection)]
+  [!include[](includes/2-what-is-data-protection)]

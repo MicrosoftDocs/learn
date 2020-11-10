@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.introduction-data-protection-and-privacy.2-what-are-privacy-regulations
+uid: learn.azure.introduction-data-protection-and-privacy.3-what-are-privacy-regulations
 title: What are privacy regulations?
 metadata:
   title: What are privacy regulations?
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-what-are-privacy-regulations)]
+  [!include[](includes/3-what-are-privacy-regulations)]
