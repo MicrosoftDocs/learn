@@ -97,17 +97,17 @@ We have also added a new attribute to the DataTable, `selection ="#{todocontroll
 
 ### Create DataModel Class
 
-First, we will implement the data model classes in the `com.microsoft.samples.model` package.
+First, we will implement the data model classes in the `com.microsoft.azure.samples.model` package.
 Execute the following command to create a directory for the package.
 
 ```bash
-mkdir src/main/java/com/microsoft/samples/model
+mkdir src/main/java/com/microsoft/azure/samples/model
 ```
 
-Then create a `TodoItem.java` file inside the` com.microsoft.samples.model` package directory and copy and paste the code below.
+Then create a `TodoItem.java` file inside the `com.microsoft.azure.samples.model` package directory and copy and paste the code below.
 
    ```java
-package com.microsoft.samples.model;
+package com.microsoft.azure.samples.model;
 
 import java.io.Serializable;
 import lombok.Data;
@@ -146,14 +146,14 @@ public class TodoItem implements Serializable {
 
 ### Create DAO Class
 
-Then we implement the class for Data Access in the `com.microsoft.samples.dao` package.
+Then we implement the class for Data Access in the `com.microsoft.azure.samples.dao` package.
 Execute the following command to create a directory for the package.
 
 ```bash
-mkdir src/main/java/com/microsoft/samples/dao
+mkdir src/main/java/com/microsoft/azure/samples/dao
 ```
 
-Next, create a `TodoItemManagement.java` file inside the `com.microsoft.samples.dao` package directory and copy and paste the code below.
+Next, create a `TodoItemManagement.java` file inside the `com.microsoft.azure.samples.dao` package directory and copy and paste the code below.
 
 Normally, we will store, updates and retrieve the data from DataBase, in-memory grids, document databases, and so on. However, in this time, in order to implement the application as easily as possible, it is completed in the program without external reference, so we will implement it in Java List.
 
@@ -207,14 +207,14 @@ public class TodoItemManagement {
 
 ### Create Controller Class
 
-Finally, we will implement the class for the controller in the `com.microsoft.samples.controller` package.
+Finally, we will implement the class for the controller in the `com.microsoft.azure.samples.controller` package.
 Execute the following command to create a directory for the package.
 
 ```bash
-mkdir src/main/java/com/microsoft/samples/controller
+mkdir src/main/java/com/microsoft/azure/samples/controller
 ```
 
-Next, create a `TodoListController.java` file inside the `com.microsoft.samples.controller` package directory and copy and paste the code below.
+Next, create a `TodoListController.java` file inside the `com.microsoft.azure.samples.controller` package directory and copy and paste the code below.
 
 The annotations `@ViewScoped` and `@Named` are added to this class. `@ViewScoped` is useful for creating SPA web pages with a scope that is valid until the screen is reloaded or screen transitions occur. Also, by adding the `@Named` annotation, you can refer to this class from Facelets (XHTML) using EL expressions.
 
@@ -226,8 +226,8 @@ Each method can act on the event when the table is selected or not selected. No 
 ```java
 package com.microsoft.azure.controller;
 
-import com.microsoft.samples.dao.TodoItemManagement;
-import com.microsoft.samples.model.TodoItem;
+import com.microsoft.azure.samples.dao.TodoItemManagement;
+import com.microsoft.azure.samples.model.TodoItem;
 import org.primefaces.event.SelectEvent;
 import org.primefaces.event.UnselectEvent;
 
