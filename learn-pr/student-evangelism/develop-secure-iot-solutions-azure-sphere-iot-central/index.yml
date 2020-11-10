@@ -46,10 +46,18 @@ units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-setup-azure-sphere
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-connect-monitor-iot-central
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-connect-room-environment-monitor
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-azure-sphere-security
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-azure-sphere-security
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-deploy-your-first-application
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-deploy-your-first-application
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-set-virtual-thermostat-iot-device-twins
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-set-room-virtual-thermostat-azure-iot-device-twins
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-remote-reboot-device
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-remote-reboot-device
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-azure-rtos-environment
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-azure-rtos-environment
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-partnering-with-rtos-environment
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-partnering-with-rtos-environment
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.knowledge-check
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.summary
 

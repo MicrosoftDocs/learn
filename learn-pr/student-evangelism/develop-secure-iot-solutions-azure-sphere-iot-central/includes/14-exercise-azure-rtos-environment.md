@@ -24,7 +24,7 @@
 4. Open the **Lab_6_AzureRTOS_Environment** folder.
 5. Click **Select Folder** or the **OK** button to open the project.
 
-    ![](../media/vs-code-start.png)
+    ![Start Visual Studio Code](../media/vs-code-start.png)
 
 ------
 
@@ -52,7 +52,7 @@ The default developer board configuration is for the AVENT Azure Sphere Starter 
 
 1. Select **CMake: [Debug]: Ready** from the Visual Studio Code Status Bar.
 
-    ![](../media/visual-studio-code-start-application.png)
+    ![Set Debug build](../media/visual-studio-code-start-application.png)
 
 2. From Visual Studio Code, press <kbd>F5</kbd> to build, deploy, start, and attached the remote debugger to the application now running the Azure Sphere device.
 
@@ -70,6 +70,6 @@ You can debug the Azure RTOS application running on Azure Sphere Cortex M4 Real-
     > [!NOTE]
     > You can learn how how to set breakpoints from this [Visual Studio Code Debugging](https://code.visualstudio.com/docs/editor/debugging#_breakpoints?azure-portal=true) article.
 
-    ![](../media/visual-studio-debug-inter-core-thread.png)
+    ![Set a breakpoint in Visual Studio Code](../media/visual-studio-debug-inter-core-thread.png)
 
 4. Leave Visual Studio Code and the app running with the breakpoint set. Next we are going to deploy a High Level app application to the Cortex A7 core which will request environment telemetry from the Real Time app running on the Cortex M4 core.

@@ -140,7 +140,7 @@ Switch back to the Azure IoT Central web portal.
 1. Click **Devices** on the sidebar.
 1. Select your Azure Sphere device.
 1. Click **Migrate**.
-    ![](../media/iot-central-migrate-device.png)
+    ![Migrate a device in IoT Central](../media/iot-central-migrate-device.png)
 1. Select the **Azure Sphere** template.
 1. Click **Migrate**.
 

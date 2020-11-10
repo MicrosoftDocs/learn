@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-azure-rtos-environment
+title: Exercise - Run an Azure RTOS Real-time application on an Azure Sphere
+metadata:
+  title: Exercise - Run an Azure RTOS Real-time application on an Azure Sphere
+  description: In this section, we run an Azure RTOS Real-time application on an Azure Sphere
+  ms.date: 11/10/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 15 # dummy number at present
+content: |
+  [!include[](includes/14-exercise-azure-rtos-environment.md)]

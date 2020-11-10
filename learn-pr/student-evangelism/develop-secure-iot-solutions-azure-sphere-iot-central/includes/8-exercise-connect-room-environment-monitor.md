@@ -46,7 +46,7 @@ A device template is a blueprint that defines the characteristics and behaviors 
 A capability model is a JSON document that describes the shape of the telemetry sent by a device and the interactions between the device and IoT Central.
 
 1. Click **Import capability model**.
-   ![](../media/iot-central-import-capability-model.png)
+   ![Import IoT Central capability model](../media/iot-central-import-capability-model.png)
 2. Navigate to the **Azure-Sphere** lab folder.
 3. Navigate to the **iot_central** folder.
 4. Select **Azure_Sphere_Developer_Learning_Path.json** and open it.
