@@ -26,17 +26,14 @@ quiz:
     - content: "Markdown"
       isCorrect: true
       explanation: "The text is edited through a Markdown formatting, that provides different heading and font styles, hyperlinks, tables."
-  - content: "Question 2"
+  - content: "You create a custom workbook and you want to show the data in table. Which visualization steps you should use in the workbook?"
     choices:
-    - content: "Answer 1"
+    - content: "Text visualization"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "You can use text blocks to interpret your security data."
+    - content: "Links/Tabs"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
-      isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "You can add links/tabs step to customize the navigation in the workbook with tabs, lists, paragraphs, or bullet list."
+    - content: "Grid visualization"
+      isCorrect: true
+      explanation: "You can use grids visualization to present the data in tables."
