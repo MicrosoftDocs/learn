@@ -57,7 +57,7 @@ Cloud computing can bill in various ways, such as the number of users or CPU usa
 
 ### Billing at the user or organization level
 
-The subscription (pay-per-use) model is a computing billing method that is designed for both organizations and users. The organization or user is billed for the services used,and typically on a recurring basis. You can scale, customize, and provision computing resources, including software, storage, and development platforms. For example, when using a dedicated cloud service, you could pay based on server hardware and usage. 
+The subscription (pay-per-use) model is a computing billing method that is designed for both organizations and users. The organization or user is billed for the services used, and typically on a recurring basis. You can scale, customize, and provision computing resources, including software, storage, and development platforms. For example, when using a dedicated cloud service, you could pay based on server hardware and usage. 
 
 ## Benefits of CapEx
 
