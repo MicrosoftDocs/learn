@@ -4,13 +4,12 @@ title: Exercise – Connect to a virtual machine using the Bastion Service
 metadata:
   title: Exercise – Connect to a virtual machine using the Bastion Service
   description: Exercise – Connect to a virtual machine using the Bastion Service
-  ms.date: 09/04/2020
+  ms.date: 11/12/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 25
-interactive: bash
-azureSandbox: true
+azureSandbox: false
 content: |
   [!include[](includes/4-exercise-connect-vm-with-bastion.md)]

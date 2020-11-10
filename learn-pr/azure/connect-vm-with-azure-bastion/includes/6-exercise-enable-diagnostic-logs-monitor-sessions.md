@@ -4,7 +4,7 @@ In this unit, you'll see how to monitor current sessions and force a disconnect.
 
 Connect to your VM in two different browser windows to create two bastion sessions.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select or search for **Virtual machines**.
+1. In the [Azure portal](https://portal.azure.com/), select or search for **Virtual machines**.
 1. Select virtual machine **internalappvm**.
 1. Under **Operations**, select **Bastion**.
 1. Enter the username **azureuser**.
@@ -17,7 +17,7 @@ Connect to your VM in two different browser windows to create two bastion sessio
 
 View the current bastion sessions and force a disconnect for one of the remote sessions.
  
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), search for or select **Bastions**.
+1. In the [Azure portal](https://portal.azure.com/), search for or select **Bastions**.
 1. Select the bastion host you created **internalappvmVNET-bastion**.
 1. Select **Sessions**.
 

@@ -3,7 +3,7 @@ uid: learn.connect-vm-with-azure-bastion
 metadata:
   title: Connect to virtual machines through the Azure portal by using Azure Bastion
   description: Learn how to deploy Azure Bastion to securely connect to Azure Virtual Machines directly within the Azure portal.
-  ms.date: 09/04/2020
+  ms.date: 11/12/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -17,7 +17,8 @@ abstract: |
   - Manage remote sessions by enabling diagnostic logs and monitoring remote sessions
 prerequisites: | 
   - Experience managing remote connections to virtual machines
-  - Familiarity with networking concepts like virtual networks, public and private IPs, and network protocols SSH, RDP, and TLS 
+  - Familiarity with networking concepts like virtual networks, public and private IPs, and network protocols SSH, RDP, and TLS
+  - (Optional) Access to an Azure subscription where you have permissions to create resources like VMs 
 iconUrl: /learn/achievements/connect-vm-with-azure-bastion.svg
 levels:
 - beginner
