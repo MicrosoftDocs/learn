@@ -11,7 +11,7 @@ When you execute the command, some question items will be displayed at the promp
 | ---- | ---- |
 |  Subscription  |  Choose the right subscription |
 |  Define value for OS  |  1: Linux |
-|  Define value for Java Version  |  1: Java 11 |
+|  Define value for Java Version  |  2: Java 8 |
 |  Define value for Runtime Stack  |  1: TOMCAT 9.0 |
 |  Confirm (Y/N)  |  Y |
 
@@ -41,7 +41,7 @@ Enter your choice:
 Define value for javaVersion:
   1: Java 11
 * 2: Java 8
-Enter your choice: 1
+Enter your choice: 2
 Define value for runtimeStack:
   1: TOMCAT 9.0
 * 2: TOMCAT 8.5
@@ -88,7 +88,7 @@ And also we need to configure the timeout of startup time on  `WEBSITES_CONTAINE
           <region>japaneast</region>
           <runtime>
             <os>linux</os>
-            <javaVersion>java11</javaVersion>
+            <javaVersion>Java 8</javaVersion>
             <webContainer>TOMCAT 9.0</webContainer>
           </runtime>
 
@@ -168,3 +168,7 @@ az webapp log tail -g azure-javaweb-app-1601463451101 -n azure-javaweb-app
 Then you can see the following result.
 
 :::image type="content" source="../media/azure-cli-log-stream.png" alt-text="Execution of the Log Stream":::
+
+## Completed the Exercise
+
+Now you finished all of exercises. In this module, you could learn how to create and package the Java Web Application, how to use the `Maven Plugin for Azure Web Apps` and deploy your application to Azure App Service. This procedure is applicable not only for JSF Application but also general Java Web Application like JAX-RS. So if you create Java Web Application, please use this step and deploy your application to Azure App Service.

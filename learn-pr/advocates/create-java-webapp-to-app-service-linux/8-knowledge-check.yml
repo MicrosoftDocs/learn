@@ -23,31 +23,30 @@ quiz:
         - content: "JSP (JavaServer Pages)"
           isCorrect: false
           explanation: "In the past, you could write the JSF tags in JSP pages, however Facelets become new view declaration language since JSF 2.0. So we recommend you to use the XHTML instead of JSP."
-    - content: Question 2
+    - content: How to confirm the Application Log in Azure App Service
       choices:
-        - content: Answer 1
+        - content: Login to the system by SSH for Advanced Tool on Azure Portal
+          isCorrect: false
+          explanation: Correct but not only this one but also you can select others
+        - content: Confirm the LogStream for Advanced Tool on Azure Portal
+          isCorrect: false
+          explanation: Correct but not only this one but also you can select others
+        - content: Azure Command Line Tool (Azure CLI)
+          isCorrect: false
+          explanation: Correct but not only this one but also you can select others
+        - content: All of the Above
           isCorrect: true
-          explanation: Explanation 1
-        - content: Answer 2
-          isCorrect: false
-          explanation: Explanation 2
-        - content: Answer 3
-          isCorrect: false
-          explanation: Explanation 3
-        - content: Answer 4
-          isCorrect: false
-          explanation: Explanation 4
-    - content: Question 3
+
+    - content: What can you do with Maven Plugin for Azure App Service
       choices:
-        - content: Answer 1
+        - content: Compile the source code
+          isCorrect: false
+          explanation: It will be used Maven Compiler Plugin
+        - content: Configure to deploy to the App Service
+          isCorrect: false
+          explanation: It is one of the functionality
+        - content: Deploy to the App Service
+          isCorrect: false
+          explanation: It is one of the functionality
+        - content: Configure and Deploy to the App Service
           isCorrect: true
-          explanation: Explanation 1
-        - content: Answer 2
-          isCorrect: false
-          explanation: Explanation 2
-        - content: Answer 3
-          isCorrect: false
-          explanation: Explanation 3
-        - content: Answer 4
-          isCorrect: false
-          explanation: Explanation 4
