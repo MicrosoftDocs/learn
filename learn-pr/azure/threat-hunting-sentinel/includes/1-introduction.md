@@ -26,6 +26,12 @@ After completing this module, you'll be able to:
 - Save key findings with bookmarks.
 - Observe threats over time with livestream.
 
+<!--Jason: These are the objectives from the design document and they're meant to be the same as the ones here: 
+Hunt threats with built-in hunting queries.
+Create and edit hunting queries using KQL.
+Save key findings with bookmarks.
+Observe threats over time with livestream.--> 
+
 ## Prerequisites
 
 To get the best learning experience from this module, you should have knowledge of, and experience with, the following:
