@@ -28,10 +28,10 @@ Also, if you use Azure App Service, you can log in with SSH or Bash using a brow
 
 ## Java Deployment Options for App Service
 
-:::image type="content" source="../media/app-service-java-runtime-options.png" alt-text="Java Runtime Selection":::
-
 If you use the Azure Portal Screen, you can select the version of Java VM to use with App Service. In App Service, you can select either `Java 8` or `Java 11` as shown below.
 If you select the Java Runtime, you can select the `Tomcat 9.0` as `Java Web Server Stack`.
+
+:::image type="content" source="../media/app-service-java-runtime-options.png" alt-text="Java Runtime Selection":::
 
 | Runtime Stack |  Java 11  |  Java 8  |
 | ---- | ---- | ---- |
