@@ -1,4 +1,4 @@
-When we consider the concept of *fairness* in relation predictions made by machine learning models, it helps to clear about what we mean by "fair".
+When we consider the concept of *fairness* in relation to predictions made by machine learning models, it helps to be clear about what we mean by "fair".
 
 For example, suppose a classification model is used to predict the probability of a successful loan repayment, and therefore influences whether or not the loan is approved. It's likely that the model will be trained using features that reflect characteristics of the applicant, such as:
 
