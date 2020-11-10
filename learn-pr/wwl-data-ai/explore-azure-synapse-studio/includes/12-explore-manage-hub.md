@@ -2,7 +2,8 @@ The Manage hub enables you to perform some of the same actions we saw in the Azu
 
 1.	Select the Manage hub.
  
-    ![Navigating hubs in Azure Synapse Studio](../media/azure-synapse-studio-hubs.png)
+    > [!div class="mx-imgBorder"]
+    > ![Navigating hubs in Azure Synapse Studio](../media/azure-synapse-studio-hubs.png)
 
 2.	Show each of the management categories grouped under Analytics pools, External connections, Integration, and Security.
  

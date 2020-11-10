@@ -42,7 +42,7 @@ quiz:
       explanation: "Incorrect. You cannot grant access to Synapse workspace in the monitor hub."
     - content: "Manage hub."
       isCorrect: true
-      explanation: "Correct. You can grant access to Synapse workspace in the integrate hub.."
+      explanation: "Correct. You can grant access to Synapse workspace in the integrate hub."
     - content: "Integrate hub."
       isCorrect: false
       explanation: "Incorrect. You cannot grant access to Synapse workspace in the integrate hub."

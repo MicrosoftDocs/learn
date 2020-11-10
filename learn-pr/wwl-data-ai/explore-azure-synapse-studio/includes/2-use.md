@@ -1,8 +1,9 @@
 Azure Synapse Studio is the primary tool to use to interact with the many components that exist in the service. It organizes itself into hubs, as seen on the left-hand side of the Azure Synapse Studio UI, which allows you to perform a wide range of activities against your data.
  
-![Azure Synapse Studio home hub](../media/azure-synapse-studio.png)
+> [!div class="mx-imgBorder"]
+> [![Azure Synapse Studio home hub](../media/azure-synapse-studio.png)](../media/azure-synapse-studio.png#lightbox)
 
-The following hubs are available within Azure Synapse Studio
+The following hubs are available within Azure Synapse Studio.
 
 ## Home
 

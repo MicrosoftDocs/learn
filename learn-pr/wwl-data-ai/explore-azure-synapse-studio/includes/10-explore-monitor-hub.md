@@ -2,7 +2,8 @@ Use the Monitor hub to view pipeline and trigger runs, view the status of the va
 
 1.	Select the **Monitor** hub.
  
-    ![Navigating hubs in Azure Synapse Studio](../media/azure-synapse-studio-hubs.png)
+    > [!div class="mx-imgBorder"]
+    > ![Navigating hubs in Azure Synapse Studio](../media/azure-synapse-studio-hubs.png)
 
     The Monitor hub is your first stop for debugging issues and gaining insight on resource usage. You can see a history of all the activities taking place in the workspace and which ones are active now.
 
@@ -27,4 +28,4 @@ Use the Monitor hub to view pipeline and trigger runs, view the status of the va
  
 5.  You can view more details 
 
-    ![Viewing SQL requests in the monitor hub in Azure Synapse Studio](../media/view-sql-statements-azure-synapse-studio.png)
+    [![Viewing SQL requests in the monitor hub in Azure Synapse Studio](../media/view-sql-statements-azure-synapse-studio.png)](../media/view-sql-statements-azure-synapse-studio.png#lightbox)

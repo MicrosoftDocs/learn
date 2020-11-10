@@ -2,7 +2,8 @@ Manage data integration pipelines within the Integrate hub.
 
 1.	Select the **Integrate** hub.
  
-    ![Navigating hubs in Azure Synapse Studio](../media/azure-synapse-studio-hubs.png)
+    > [!div class="mx-imgBorder"]
+    > ![Navigating hubs in Azure Synapse Studio](../media/azure-synapse-studio-hubs.png)
 
     Manage integration pipelines within the Integrate hub. If you are familiar with Azure Data Factory, then you will feel at home in this hub. The pipeline creation experience is the same as in ADF, which gives you another powerful integration built into Synapse Analytics, removing the need to use Azure Data Factory for data movement and transformation pipelines.
 

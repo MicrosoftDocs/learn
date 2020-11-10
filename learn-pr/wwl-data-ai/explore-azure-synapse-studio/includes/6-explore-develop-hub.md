@@ -2,13 +2,15 @@ The Develop hub is where you manage SQL scripts, Synapse notebooks, data flows, 
 
 1.	Select the **Develop** hub.
  
-    ![Navigating hubs in Azure Synapse Studio](../media/azure-synapse-studio-hubs.png)
+    > [!div class="mx-imgBorder"]
+    > ![Navigating hubs in Azure Synapse Studio](../media/azure-synapse-studio-hubs.png)
 
     The Develop hub is where you manage SQL scripts, Synapse notebooks, data flows, and Power BI reports.
 
 1.	Expand each of the groups under the Develop menu.
  
-    ![View objects in the develop hub in Azure Synapse Studio](../media/view-objects-develop-hub.png)
+    > [!div class="mx-imgBorder"]
+    > ![View objects in the develop hub in Azure Synapse Studio](../media/view-objects-develop-hub.png)
 
     The Develop hub in our sample environment contains examples of the following artifacts:
 

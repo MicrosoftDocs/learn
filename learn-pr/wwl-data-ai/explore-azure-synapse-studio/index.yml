@@ -33,15 +33,10 @@ units:
 - learn.wwl.explore-azure-synapse-studio.use
 - learn.wwl.explore-azure-synapse-studio.understand-analytical-processes
 - learn.wwl.explore-azure-synapse-studio.explore-data-hub
-- learn.wwl.explore-azure-synapse-studio.exercise-explore-data-hub
 - learn.wwl.explore-azure-synapse-studio.explore-develop-hub
-- learn.wwl.explore-azure-synapse-studio.exercise-explore-develop-hub
 - learn.wwl.explore-azure-synapse-studio.explore-orchestrate-hub
-- learn.wwl.explore-azure-synapse-studio.exercise-explore-orchestrate-hub
 - learn.wwl.explore-azure-synapse-studio.explore-monitor-hub
-- learn.wwl.explore-azure-synapse-studio.exercise-explore-monitor-hub
 - learn.wwl.explore-azure-synapse-studio.explore-manage-hub
-- learn.wwl.explore-azure-synapse-studio.exercise-explore-manage-hub
 - learn.wwl.explore-azure-synapse-studio.knowledge-check
 - learn.wwl.explore-azure-synapse-studio.summary
 badge:

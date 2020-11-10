@@ -2,7 +2,8 @@ The data hub provides you with the ability to interact and explore with source d
 
 1.	On the left-hand side of Azure Synapse Studio, click the **Data** hub.
  
-    ![Navigating hubs in Azure Synapse Studio](../media/azure-synapse-studio-hubs.png)
+    > [!div class="mx-imgBorder"]
+    > ![Navigating hubs in Azure Synapse Studio](../media/azure-synapse-studio-hubs.png)
 
     The Data hub is where you access your provisioned SQL pool databases and SQL serverless databases in your workspace, as well as external data sources, such as storage accounts and other linked services.
 
@@ -18,7 +19,8 @@ The data hub provides you with the ability to interact and explore with source d
 
 4.	Select the **Linked** tab, expand the **Azure Data Lake Storage Gen2** group, then expand the **primary storage** for the workspace.
  
-    ![Viewing linked in the data hub in Azure Synapse Studio](../media/linked-data-hub.png)
+    > [!div class="mx-imgBorder"]
+    > ![Viewing linked in the data hub in Azure Synapse Studio](../media/linked-data-hub.png)
 
     Every Synapse workspace has a primary ADLS Gen2 account associated with it. This serves as the **data lake**, which is a great place to store flat files, such as files copied over from on-premises data stores, exported data or data copied directly from external services and applications, telemetry data, etc. Everything is in one place.
 

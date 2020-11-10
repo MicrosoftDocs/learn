@@ -2,7 +2,7 @@ When thinking about usage patterns that customers are using today to maximize th
 
 The process of building a modern data warehouse typically consists of:
 
--	Data Ingestion and Preparation
+-	Data Ingestion and Preparation.
 -	Data Modelling, making the data ready for consumption by analytical tools.
 -	Providing access to the data, in a shaped format so that it can easily be consumed by data visualization tools. 
 
@@ -20,7 +20,8 @@ Whether the data is an on-premises data sources, other Azure services, or other 
 
 Another option for data preparation is Azure Databricks - to shape the data formats and prep it using a Notebook—making internal collaboration on data more streamlined and efficient. 
  
-![Building modern data warehouses before Azure Synapse Analytics](../media/modern-data-warehouses-process-before-synapse.png)
+> [!div class="mx-imgBorder"]
+> ![Building modern data warehouses before Azure Synapse Analytics](../media/modern-data-warehouses-process-before-synapse.png)
 
 ## Data modelling. Making the data ready for consumption by analytical tools
 
@@ -36,4 +37,5 @@ Brought together with AI capabilities, it’s a powerful tool to build and deplo
 
 With the release of Azure Synapse Analytics, you have a choice. You can either use Azure Synapse exclusively, which works very well for greenfield projects, but for organizations with existing investments in Azure with Azure Data Factory, Azure Databricks and Power BI, you can take a hybrid approach and combine them with Azure Synapse Analytics.
  
-![Building modern data warehouses with Azure Synapse Analytics](../media/modern-data-warehouses-process-with-synapse.png)
+> [!div class="mx-imgBorder"]
+> ![Building modern data warehouses with Azure Synapse Analytics](../media/modern-data-warehouses-process-with-synapse.png)
