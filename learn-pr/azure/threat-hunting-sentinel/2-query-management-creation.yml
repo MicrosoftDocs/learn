@@ -12,3 +12,5 @@ title: Explore Azure Sentinel threat hunting query management and creation
 durationInMinutes: 5
 content: |
   [!include[]includes/2-query-management-creation.md)]
+  
+  #Jason: Are there questions that go with this unit? 
