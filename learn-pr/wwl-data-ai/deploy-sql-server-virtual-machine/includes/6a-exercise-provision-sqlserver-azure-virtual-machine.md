@@ -10,7 +10,7 @@ You're a database administrator. You need to create a test environment for use i
 
 1. Select **Next**.
 
-1. Select the **Password** field to have that filled in for you, then select **Sign in**.
+1. Select the Password text in the Resources tab to have that filled in for you, then select Sign in.
 
 1. Select **Yes**.
 
@@ -72,7 +72,7 @@ You're a database administrator. You need to create a test environment for use i
     :::image type="content" source="../media/dp-3300-module-11-lab-14.png" alt-text="Screenshot of the networking tab.":::
 
     > [!IMPORTANT]
-    > For security you are going to create a network secutiry group to restrict access to the VM to your machines IP address.
+    > For security, you're going to create a network security group to restrict access to the VM to your machine's IP address.
 
 1. For the **NIC network security group** select **Advanced**.
 
@@ -111,7 +111,7 @@ You're a database administrator. You need to create a test environment for use i
 ‎
     :::image type="content" source="../media/dp-3300-module-11-lab-18.png" alt-text="Screenshot of ":::
 
-1. On the deployment blade, wait until the deployment is complete. The VM will take approximate 5-10 minutes to deploy. Then select **Go to resource**.
+1. On the deployment blade, wait until the deployment is complete. The VM will take approximately 5-10 minutes to deploy. Then select **Go to resource**.
 
     :::image type="content" source="../media/dp-3300-module-11-lab-19.png" alt-text="Screenshot of ":::
 
