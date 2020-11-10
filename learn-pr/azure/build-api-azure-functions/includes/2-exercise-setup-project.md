@@ -22,7 +22,10 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 1. Enter the tenant from your clipboard into the **Azure: Tenant** textbox.
 
-    :::image type="content" source="../media/azure-tenant.png" alt-text="Screenshot of Visual Studio Code settings with a red box outlining the Azure Tenant setting." loc-scope="vs-code":::
+   :::image type="content" source="../media/azure-tenant.png" alt-text="Screenshot of Visual Studio Code settings with a red box outlining the Azure Tenant setting." loc-scope="vs-code":::
+
+> [!IMPORTANT]
+> If you are already signed in to Azure under a different account, you will need to log out of Azure and then log back in with the account you used to access this Learn Module.
 
 1. To open the Command Palette, press <kbd>F1</kbd>.
 
@@ -40,7 +43,7 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 1. Enter "Cloud Shell", and select "Azure: Open Bash in Cloud Shell".
 
-    :::image type="content" source="../media/vs-code-cloud-shell.png" alt-text="Screenshot of the cloud shell inside of a Visual Studio Code terminal instance." loc-scope="vs-code":::
+   :::image type="content" source="../media/vs-code-cloud-shell.png" alt-text="Screenshot of the cloud shell inside of a Visual Studio Code terminal instance." loc-scope="vs-code":::
 
 1. Copy the following line, and paste it into the Cloud Shell terminal instance in Visual Studio Code.
 
@@ -96,6 +99,6 @@ Two projects will appear in Visual Studio Code: "frontend" and "api". The "front
 
 1. The app will load, but there will be no data present. This is because you have not yet created the API for this app.
 
-    :::image type="content" source="../media/products-manager-start.png" alt-text="Screenshot of the application running in a browser. No data is displayed and an error message explaining that the get operation failed." loc-scope="other"::: <!-- no-loc -->
+   :::image type="content" source="../media/products-manager-start.png" alt-text="Screenshot of the application running in a browser. No data is displayed and an error message explaining that the get operation failed." loc-scope="other"::: <!-- no-loc -->
 
 Excellent! You've successfully configured your environment to be a productive developer at Tailwind Traders. You've got Visual Studio Code connected to Azure and the front-end project is running locally on your machine. That means that it's time to create the Azure Functions project that will serve as the API for the Products Manager appl.

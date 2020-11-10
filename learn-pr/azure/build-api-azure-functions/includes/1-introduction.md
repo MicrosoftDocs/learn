@@ -4,9 +4,7 @@ Pretend for a moment, if you will, that you work for a large online hardware ret
 
 Tailwind Traders is a global corporation with a massive online retail operation. You also have brick-and-mortar stores in just about every major city in the world. One of your most critical tasks is keeping up with the inventory of products that you carry.
 
-Tailwind Traders' inventory is stored in Azure Cosmos DB. Logistics specialists need to manage this backend data store from all over the globe. During peak holiday seasons, the system gets heavy usage because new products are being added specifically for holiday shoppers. Nearly 80% of the entire year's worth of business is done in the months between October and December. During other parts of the year, the inventory changes much less frequently, and the system isn't used as often.
-
-Your mission is to create an HTTP API that can be consumed by a lightweight web front end. The whole app needs to be fast and global. It also needs to scale when holiday traffic spikes, but without costing a fortune during the slower times.
+Tailwind Traders' inventory is stored in Azure Cosmos DB. Logistics specialists need to manage this backend data store from all over the globe. During peak holiday seasons, the system gets heavy usage because new products are being added specifically for holiday shoppers. Your mission is to create an HTTP API that can be consumed by a lightweight web front end. The whole app needs to be fast and global. It also needs to scale when holiday traffic spikes, but without costing a fortune during the slower times.
 
 ## Learning objectives
 
@@ -20,6 +18,7 @@ In this module, you will:
 ## Prerequisites
 
 Must have:
+
 - basic knowledge of Azure Functions
 - basic knowledge of Azure Cosmos DB
 - [Node.js](https://nodejs.org/en/) installed
