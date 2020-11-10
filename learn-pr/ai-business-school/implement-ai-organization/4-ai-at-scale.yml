@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.implement-ai-organization.ai-at-scale
+title: AI at scale
+metadata:
+  title: AI at scale
+  description: TBD
+  ms.date: 12/15/2020
+  author: Adriamen
+  ms.author: v-admene
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-ai-at-scale.md)] 
