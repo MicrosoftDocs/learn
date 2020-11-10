@@ -14,7 +14,7 @@ Proactively monitor ExpressRoute circuits by using Network Performance Monitor. 
 
 ## Connectivity with the public internet
 
-Azure-native network security services such as Azure Firewall, Azure Web Application Firewall (WAF) on Azure Application Gateway, and Azure Front Door are fully managed services. So you don't incur the operational and management costs associated with infrastructure deployments, which can become complex at scale. However, the enterprise-scale architecture is fully compatible with third-party network virtual appliances if:
+Azure-native network security services such as Azure Firewall, Azure Web Application Firewall (WAF) on Azure Application Gateway, and Azure Front Door are fully managed services. Managed services assure you don't incur the operational and management costs associated with infrastructure deployments, which can become complex at scale. However, the enterprise-scale architecture is fully compatible with third-party network virtual appliances if:
 
 - Your organization prefers to use network virtual appliances.
 - Native services don't satisfy your organization's specific requirements. 
