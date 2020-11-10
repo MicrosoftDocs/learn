@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.survey-components-of-azure-synapse-analytics.exercise-create-pools
+title: Exercise - Create pools in azure synapse analytics
+metadata:
+  title: Exercise - Create pools in azure synapse analytics
+  description: "Exercise - Create pools in azure synapse analytics"
+  ms.date: 11/10/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-exercise-create-pools.md)]
