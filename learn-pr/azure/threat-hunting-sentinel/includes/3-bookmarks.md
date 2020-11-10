@@ -16,4 +16,4 @@ Incidents created from bookmarks can be managed from the **Incidents** page alon
 
 ## Use the investigation graph to explore bookmarks
 
-You can investigate bookmarks in the same way you would investigate incidents in Azure Sentinel. From the Hunting page, select **Investigate** to open the investigation graph for the incident. <!-- Jason: Screen shot of the investigation graph here? --> 
+You can investigate bookmarks in the same way you would investigate incidents in Azure Sentinel. From the Hunting page, select **Investigate** to open the investigation graph for the incident. <!-- Jason: Screen shot of the investigation graph here? Add some material, such as a case study (Contoso) or an explanatiuon as to why a compnay would want to use the investigation graph. --> 
