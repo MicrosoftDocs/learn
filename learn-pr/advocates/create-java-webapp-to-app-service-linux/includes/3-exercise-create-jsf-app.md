@@ -220,14 +220,14 @@ Create a new directory for Java package which will use to create the backing bea
 ```bash
 mkdir src/main/java
 mkdir src/main/java/com
-mkdir src/main/java/com/microsoft
-mkdir src/main/java/com/microsoft/samples
+mkdir src/main/java/com/microsoft/azure
+mkdir src/main/java/com/microsoft/azure/samples
 ```
 
 Then create a `IndexController.java` file and copy and paste the JSF Backing Bean code below.
 
 ```java
-package com.microsoft.samples;
+package com.microsoft.azure.samples;
 import java.io.Serializable;
 
 import javax.faces.view.ViewScoped;
@@ -263,8 +263,9 @@ The directory structure after implementing the program is as follows.
         ├── java
         │   └── com
         │       └── microsoft
-        │           └── samples
-        │               └── IndexController.java
+        │           └── azure
+        │               └── samples
+        │                   └── IndexController.java
         ├── resources
         └── webapp
             ├── WEB-INF
