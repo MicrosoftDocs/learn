@@ -128,6 +128,13 @@ Replace below XML configurations by copy and paste.
 </project>
    ```
 
+If you would like to use the Java SE 8 instead of Java 11, please modify the following entry.
+
+   ```xml
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
+   ```
+
 ### Enable Contexts and Dependency Injection (CDI)
 
 Next, make CDI available to your web application.
