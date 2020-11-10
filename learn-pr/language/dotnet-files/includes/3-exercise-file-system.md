@@ -2,27 +2,27 @@ You can use .NET to find and return information about files and folders.
 
 Tailwind Traders has many physical stores all over the world. Each night, these stores create a file called *sales.json* that contains the total for all their sales for the previous day. These files are organized in folders by store ID.
 
-## Sign into the sandbox
+## Sign in to the sandbox
 
-Activate the Microsoft Learn sandbox by selecting the **Activate Sandbox** at the top of this page.
+Activate the Microsoft Learn sandbox by selecting **Activate Sandbox** at the top of this page.
 
 ## Clone the project
 
 In this exercise, you'll write a .NET program that can search for files called *sales.json* in a folder.
 
-1. Run the following command to clone the example project for this module:
+1. Run the following command to clone the example project for this module.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-dotnet-files && cd mslearn-dotnet-files
     ```
 
-1. Create a new .NET Console project by typing the following commands in Cloud Shell.
+1. Create a new .NET Console project by entering the following commands in Azure Cloud Shell.
 
     ```bash
     dotnet new console -n files-module -o .
     ```
 
-1. Open the Cloud Shell editor by typing the following command in Cloud Shell and selecting the Enter key.
+1. Open the Cloud Shell editor by entering the following command in Cloud Shell and selecting the <kbd>Enter</kbd> key.
 
     ```bash
     code .
@@ -106,13 +106,13 @@ You need to find all the sales.json files in all folders.
 
 Excellent! You've successfully written a command-line program that will traverse any directory and find all the *sales.json* files inside.
 
-You may have noticed the path to the *stores* directory was rather simple and within the working directory of the program.
+You might have noticed the path to the *stores* directory was rather simple and within the working directory of the program.
 
-In the next section, you'll learn how to construct complex paths that work across operating systems using the `Path` class.
+In the next unit, you'll learn how to construct complex paths that work across operating systems by using the `Path` class.
 
 ### Got stuck?
 
-If you got stuck at any point in this exercise, here's the completed code. Remove everything in `Program.cs` and replace it with this:
+If you got stuck at any point in this exercise, here's the completed code. Remove everything in `Program.cs` and replace it with this code:
 
 ```csharp
 using System;
