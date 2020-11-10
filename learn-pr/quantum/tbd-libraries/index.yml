@@ -28,13 +28,13 @@ products:
 - azure-quantum
 units:
 - learn.quantum.tbd-libraries.1-introduction
-- learn.quantum.tbd-libraries.2-tbd
-- learn.quantum.tbd-libraries.2b-tbd
-- learn.quantum.tbd-libraries.3-tbd
-- learn.quantum.tbd-libraries.4-tbd
-- learn.quantum.tbd-libraries.5-tbd
-- learn.quantum.tbd-libraries.6-tbd
-- learn.quantum.tbd-libraries.7-knowledge-check
-- learn.quantum.tbd-libraries.8-summary
+- learn.quantum.tbd-libraries.2-libraries-overview
+- learn.quantum.tbd-libraries.3-api-docs
+- learn.quantum.tbd-libraries.4-write-reflections
+- learn.quantum.tbd-libraries.5-write-oracle
+- learn.quantum.tbd-libraries.6-combine-oracle-reflections
+- learn.quantum.tbd-libraries.7-run-full-program
+- learn.quantum.tbd-libraries.8-knowledge-check
+- learn.quantum.tbd-libraries.9-summary
 badge:
   uid: learn.quantum.tbd-libraries.badge

@@ -73,7 +73,7 @@ For more details, see the [Package Manager Console guide](https://docs.microsoft
 
 ### [IQ# Notebooks](#tab/tabid-notebook)
 
-You can make additional packages available for use in an IQ# Notebook by using the [`%package` magic command](xref:microsoft.quantum.iqsharp.magic-ref.package).
+You can make additional packages available for use in an IQ# Notebook by using the [`%package` magic command](https://docs.microsoft.com/qsharp/api/iqsharp-magic/package?view=qsharp-preview).
 For example, to add the [**Microsoft.Quantum.Numerics**](https://www.nuget.org/packages/Microsoft.Quantum.Numerics) package for use in an IQ# Notebook, run the following command in a notebook cell:
 
 ```

@@ -37,34 +37,17 @@ We'll be using the `ControlledOnInt` function later in the module, so lets take 
 The API documentation is automatically generated from the documentation comments within the Q# source code. 
 For the Q# libraries, this is located in the GitHub repository [microsoft/QuantumLibraries](https://github.com/microsoft/QuantumLibraries).
 
-To see how the generation translates from the source, let's keep getting familiar with `ControlledOnInt`.
-Compare the [API reference page](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.controlledonint?view=qsharp-preview) to the corresponding [source code](https://github.com/microsoft/QuantumLibraries/blob/main/Standard/src/Canon/Utils/ControlledOnBitString.qs):
+Later in the module, you'll learn more about how the documentation is written in the source code when you write documentation comments for your own operations.
 
-```qsharp
-    /// # Summary
-    /// Returns a unitary operator that applies an oracle on the target register
-    /// if the control register state corresponds to a specified positive integer.
-    ///
-    /// # Input
-    /// ## numberState
-    /// Positive integer.
-    /// ## oracle
-    /// Unitary operator.
-    ///
-    /// # Output
-    /// A unitary operator that applies `oracle` on the target register if the
-    /// control register state corresponds to the number state `numberState`.
-    ///
-    /// # Remarks
-    /// The value of `numberState` is interpreted using a little-endian encoding.
-    function ControlledOnInt<'T>(numberState : Int, oracle : ('T => Unit is Adj + Ctl))
-    : ((Qubit[], 'T) => Unit is Adj + Ctl) {
-        return ApplyControlledOnInt(numberState, oracle, _, _);
-    }
-```
+For now though, we'll take you through an example to show you what you can expect and learn from the documentation of a function. 
+Let's keep getting familiar with [`ControlledOnInt`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.controlledonint?view=qsharp-preview).
 
 ## What does it tell me?
 
-Video explanation instead of this and above?
+Video explanation talking through the page goes here.
+
+### Additional information
+
+Other possible headers and explanations
 
 
