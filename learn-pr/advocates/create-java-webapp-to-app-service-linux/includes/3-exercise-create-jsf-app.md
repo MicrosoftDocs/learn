@@ -75,8 +75,8 @@ Replace below XML configurations by copy and paste.
   <name>azure-javaweb-app Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <properties>
-    <maven.compiler.source>11</maven.compiler.source>
-    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
     <failOnMissingWebXml>false</failOnMissingWebXml>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -128,11 +128,11 @@ Replace below XML configurations by copy and paste.
 </project>
    ```
 
-If you would like to use the Java SE 8 instead of Java 11, please modify the following entry.
+If you would like to use the Java SE 11 instead of Java 8, please modify the following entry.
 
    ```xml
-    <maven.compiler.source>8</maven.compiler.source>
-    <maven.compiler.target>8</maven.compiler.target>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
    ```
 
 ### Enable Contexts and Dependency Injection (CDI)
