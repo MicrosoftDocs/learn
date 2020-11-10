@@ -3,7 +3,7 @@
 1. Start Visual Studio Code to open your project.
 2. Click **Open folder**.
 3. Open the **Azure-Sphere lab** folder.
-4. Open the **Lab_7_Device_Twins** folder.
+4. Open the **Lab_7_Partnering_with_RTOS** folder.
 5. Click **Select Folder** or the **OK** button to open the project.
 
 ------

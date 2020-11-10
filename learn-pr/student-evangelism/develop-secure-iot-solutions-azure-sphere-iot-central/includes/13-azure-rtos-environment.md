@@ -89,6 +89,19 @@ Like High-level applications, Real-time applications are secure by default and y
 
 ### Real-Time intercore capabilities
 
+To communicate, applications running across cores must be configured with corresponding Component IDs.
+
+The Component ID for the High-level application can be found in its **app_manifest.json** file.
+
+```json
+{
+  "SchemaVersion": 1,
+  "Name": "AzureSphereIoTCentral",
+  "ComponentId": "25025d2c-66da-4448-bae1-ac26fcdd3627",
+  ...
+}
+```
+
 In the following Azure RTOS Real-Time **app_manifest.json** file, the **AllowedApplicationConnections** property is set to the Component ID of the High-Level application.
 
 ```json
@@ -104,39 +117,5 @@ In the following Azure RTOS Real-Time **app_manifest.json** file, the **AllowedA
     "AllowedApplicationConnections": [ "25025d2c-66da-4448-bae1-ac26fcdd3627" ]
   },
   "ApplicationType": "RealTimeCapable"
-}
-```
-
-### High-Level intercore capabilities
-
-The following is the High-Level **app_manifest.json** file, the **AllowedApplicationConnections** property is set to the Component ID of the Azure RTOS Real-Time application.
-
-```json
-{
-  "SchemaVersion": 1,
-  "Name": "AzureSphereIoTCentral",
-  "ComponentId": "25025d2c-66da-4448-bae1-ac26fcdd3627",
-  "EntryPoint": "/bin/app",
-  "CmdArgs": [
-    "--ConnectionType", "DPS", "--ScopeID", "Your_ID_Scope",
-    "--RTComponentId", "6583cf17-d321-4d72-8283-0b7c5b56442b"
-  ],
-  "Capabilities": {
-    "Gpio": [
-      "$NETWORK_CONNECTED_LED",
-      "$LED_RED",
-      "$LED_GREEN",
-      "$LED_BLUE"
-    ],
-    "PowerControls": [
-      "ForceReboot"
-    ],
-    "AllowedConnections": [
-      "global.azure-devices-provisioning.net"
-    ],
-    "DeviceAuthentication": "Replace_with_your_Azure_Sphere_Tenant_ID",
-    "AllowedApplicationConnections": [ "6583cf17-d321-4d72-8283-0b7c5b56442b" ]
-  },
-  "ApplicationType": "Default"
 }
 ```

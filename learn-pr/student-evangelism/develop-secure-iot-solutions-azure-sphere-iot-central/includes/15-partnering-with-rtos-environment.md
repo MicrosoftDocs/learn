@@ -1,23 +1,174 @@
-In this unit, you will learn how to control an Azure Sphere connected heating, ventilation, and air conditioning unit (HVAC) from Azure IoT Central.
-
-<!-- ------
-
-## Azure IoT cloud-to-device control
-
-Azure IoT Central uses Azure IoT Hub to control devices. Options to control devices include:
-
-- **Direct methods** for control that require immediate confirmation of the result. Direct methods are often used for interactive control of devices, such as turning on a fan.
-- **Device twins** are for long-running commands intended to put the device into a certain desired state. For example, set the desired room temperature.
-
-This unit will cover Azure IoT Hub device twins and how **DeviceTwinBindings** simplify the use of Azure IoT device twins. -->
+In this unit, you will learn how to partner a High-level application with a Real-time core application.
 
 ------
 
-## Application architecture
+## Solution architecture
+
+In this unit we will learn how to partner a high level application with a Azure RTOS Real-time application running on one of the Azure Sphere Cortex-M4 cores.
 
 ![Intercore communications architecture](../media/intercore-coms.png)
 
+To recap the solution architecture introduced in the Azure RTOS lab.
+
+1. The Azure RTOS Real-time environment sensor thread runs every 2 seconds. The thread stores in memory the latest environment temperature, humidity, and pressure data.
+2. The High-level telemetry streaming app requests from the Real-time core the latest environment data.
+3. The Azure RTOS Real-time environment service thread responses with the latest environment data.
+4. The High-level application serializes the environment data as JSON and sends as a telemetry message to IoT Hub
+5. Azure IoT Central subscribes to telemetry messages sent to IoT Hub by the device and displays the data to the user.
+6. The IoT Central user can also set the desired temperature for the room by setting a property. The property is set on the device via an IoT Hub device twin message.
+7. The Azure Sphere then sets the HVAC operating mode to meet the desired temperature.
+
 ------
+
+## Intercore message contract
+
+There needs to be a contract that describes the shape of the data being passed between the cores. The following structure declares the intercore contract used in this unit. You can find this contact in the **IntercoreContract** directory.
+
+```c
+typedef enum
+{
+  LP_IC_UNKNOWN,
+  LP_IC_HEARTBEAT,
+  LP_IC_ENVIRONMENT_SENSOR,
+} LP_INTER_CORE_CMD;
+
+typedef struct
+{
+  LP_INTER_CORE_CMD cmd;
+  float temperature;
+  float pressure;
+  float humidity;
+} LP_INTER_CORE_BLOCK;
+```
+
+------
+
+## Intercore security
+
+To communicate, applications running across cores must be configured with corresponding Component IDs.
+
+The Component ID for the Real-time application can be found in its **app_manifest.json** file.
+
+```json
+{
+  "SchemaVersion": 1,
+  "Name": "AzureSphereIoTCentral",
+  "ComponentId": "25025d2c-66da-4448-bae1-ac26fcdd3627",
+  ...
+}
+```
+
+### High-Level intercore capabilities
+
+The following is the High-Level **app_manifest.json** file, the **AllowedApplicationConnections** property is set to the Component ID of the Azure RTOS Real-Time application.
+
+```json
+{
+  "SchemaVersion": 1,
+  "Name": "AzureSphereIoTCentral",
+  "ComponentId": "25025d2c-66da-4448-bae1-ac26fcdd3627",
+  "EntryPoint": "/bin/app",
+  "CmdArgs": [
+    "--ConnectionType", "DPS", "--ScopeID", "Your_ID_Scope",
+    "--RTComponentId", "6583cf17-d321-4d72-8283-0b7c5b56442b"
+  ],
+  "Capabilities": {
+    "Gpio": [
+      "$NETWORK_CONNECTED_LED",
+      "$LED_RED",
+      "$LED_GREEN",
+      "$LED_BLUE"
+    ],
+    "PowerControls": [
+      "ForceReboot"
+    ],
+    "AllowedConnections": [
+      "global.azure-devices-provisioning.net"
+    ],
+    "DeviceAuthentication": "Replace_with_your_Azure_Sphere_Tenant_ID",
+    "AllowedApplicationConnections": [ "6583cf17-d321-4d72-8283-0b7c5b56442b" ]
+  },
+  "ApplicationType": "Default"
+}
+```
+
+------
+
+## Requesting the environment data from the Real-time core application
+
+### Initializing intercore communications.
+
+In the **InitPeripheralAndHandlers** a call is made to **lp_interCoreCommunicationsEnable**. The Component ID of the Real-time as well as the name of the function that will be called when a message is received from the Real-time core.
+
+```c
+
+```
+
+### Sending a request to the Real-time core
+
+To request the envireonment data from the Real-time core then:
+
+1. Set the intercore control block command to LP_IC_ENVIRONMENT_SENSOR.
+2. Send the request message by calling lp_interCoreSendMessage and passing the intercore control block.
+
+```c
+/// <summary>
+/// Read sensor and send to Azure IoT
+/// </summary>
+static void MeasureSensorHandler(EventLoopTimer* eventLoopTimer)
+{
+    if (ConsumeEventLoopTimerEvent(eventLoopTimer) != 0)
+    {
+        lp_terminate(ExitCode_ConsumeEventLoopTimeEvent);
+    }
+    else {
+        // send request to Real-Time core app to read temperature, pressure, and humidity
+        ic_control_block.cmd = LP_IC_ENVIRONMENT_SENSOR;
+        lp_interCoreSendMessage(&ic_control_block, sizeof(ic_control_block));
+    }
+}
+```
+
+------
+
+## Responding to an intercore message
+
+When the High-level application received a message the intercore callback function is called along with a reference to the intercore control block containing the environment data.
+
+```c
+/// <summary>
+/// Callback handler for Inter-Core Messaging - Does Device Twin Update, and Event Message
+/// </summary>
+static void InterCoreHandler(LP_INTER_CORE_BLOCK* ic_message_block)
+{
+    static int msgId = 0;
+
+    switch (ic_message_block->cmd)
+    {
+    case LP_IC_ENVIRONMENT_SENSOR:
+        if (snprintf(msgBuffer, JSON_MESSAGE_BYTES, msgTemplate, ic_message_block->temperature,
+            ic_message_block->humidity, ic_message_block->pressure, msgId++) > 0) {
+
+            Log_Debug("%s\n", msgBuffer);
+            lp_azureMsgSendWithProperties(msgBuffer, telemetryMessageProperties, NELEMS(telemetryMessageProperties));
+
+            SetHvacStatusColour((int)ic_message_block->temperature);
+
+            // If the previous temperature not equal to the new temperature then update ReportedTemperature device twin
+            if (previous_temperature != (int)ic_message_block->temperature) {
+                lp_deviceTwinReportState(&dt_reportedTemperature, &ic_message_block->temperature);
+            }
+            previous_temperature = (int)ic_message_block->temperature;
+        }
+        break;
+    default:
+        break;
+    }
+}
+```
+
+
+
 
 ## Understanding IoT Central properties
 
@@ -59,12 +210,17 @@ The following steps outline how Azure IoT Central uses device twins to set prope
 
 1. A user sets the desired room temperature property in Azure IoT Central. IoT Central then requests IoT Hub to update the property.
 1. Azure IoT Hub updates the device twin desired property and sends a device twin message to the device.
-1. The corrosponding device twin handler function is called.
+1. The corresponding device twin handler function is called.
 1. The device implements the desired property; in this case, turn on the heater or cooler to bring the room to the desired temperature.
 1. The device acknowledges the updated configuration to Azure IoT Hub. Azure IoT Hub updates the device twin reported property.
 1. IoT Central queries and displays the device twin reported property data to the user.
 
 ------
+
+
+
+
+
 
 ## Getting started with device twin bindings
 
@@ -166,7 +322,7 @@ Azure IoT Central device properties are defined in device templates.
 
 [![The illustration shows device properties.](../media/iot-central-device-template-interface-led1.png)](../media/iot-central-device-template-interface-led1.png)
 
-### Review the IoT Central property definition 
+### Review the IoT Central property definition
 
 1. From Azure IoT Central web portal, navigate to **Device templates**, and select the **Azure Sphere** template.
 2. Click on **Interface** to list the interface capabilities.

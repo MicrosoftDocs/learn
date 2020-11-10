@@ -11,6 +11,8 @@ Install the following software on your computer.
 
 ## Windows 10 users
 
+This learning module supports developers on Linux and Windows using Visual Studio Code. However, if you are a Windows user comfortable using Visual Studio then you can still complete the exercises appreciating that the IDE screenshots included in this module will be different.
+
 You need to do the following:
 
 1. Install the latest Azure Sphere SDK.
@@ -94,17 +96,21 @@ sudo apt install git
 
 ## Enable Azure RTOS Real-time development
 
-### Windows users
+### Install and enable the GNU Arm Embedded Toolchain for Windows
 
-Open the **Azure Sphere Developer Command Prompt** as administrator, run the following command to enable app development on the device.
+1. Download the [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) for Windows.
+2. Install the GNU Arm Embedded Toolchain
+3. Enable Real-time core development
 
-```bash
-azsphere device enable-development -r
-```
+   Open the **Azure Sphere Developer Command Prompt** as administrator, run the following command to enable app development on the device.
 
-### Ubuntu users
+   ```bash
+   azsphere device enable-development -r
+   ```
 
-Install the GNU Arm Embedded Toolchain.
+### Install and enable the GNU Arm Embedded Toolchain for Linux
+
+Install the GNU Arm Embedded Toolchain for Linux
 
 1. Download the [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads?azure-portal=true). At the time of writing this was *Version 9-2020-q2-update*.
 2. Install the downloaded package. The following installs the toolchain in the /opt directory.
@@ -118,6 +124,14 @@ Install the GNU Arm Embedded Toolchain.
     ```bash
     export PATH=$PATH:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin
     ```
+
+4. Enable Real-time core development
+
+   Run the following command to enable app development on the device.
+
+   ```bash
+   azsphere device enable-development -r
+   ```
 
 ------
 
