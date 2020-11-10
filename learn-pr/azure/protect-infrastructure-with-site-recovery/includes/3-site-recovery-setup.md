@@ -11,13 +11,13 @@ We need to set up our environment for our later exercises. As this setup takes a
 > [!NOTE]
 > If you want to complete the following setup, but you don't have an Azure subscription, or prefer not to use your account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-Let's assume, we have two VMs configured in the organization. We'll configure the following services in the East US region to simulate the configured VMs.
+Let's assume, we have two VMs configured in the organization. We'll configure the following services in the West US region to simulate the configured VMs.
 
 - A virtual network
 - Two VMs
 - A storage account
 
-We'll also configure a resource group in West US. We'll later configure Site Recovery to use the West US region as our target environment.
+We'll also configure a resource group in East US. We'll later configure Site Recovery to use the East US region as our target environment.
 
 Our first step is to create our exercise environment. We'll run a script that creates our company's infrastructure in Azure.  After the script completes, we'll have a virtual network, two VMs, and a storage account that we'll use for our Recovery Services vault.
 
