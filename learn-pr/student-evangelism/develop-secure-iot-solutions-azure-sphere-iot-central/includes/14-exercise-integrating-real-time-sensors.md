@@ -1,13 +1,14 @@
 ## Step 1: Delete the existing applications on the Azure Sphere
 
-1. There will be some GPIO pin reassignments between the existing High-Level application that is running on the Azure Sphere and the new Real-Time application that will be deployed to the Azure Sphere in this lab. So delete any existing applications on the Azure Sphere to avoid any clashes.
+1. There will be some GPIO pin reassignments between the existing High-Level application that is running on the Azure Sphere and the new Real-Time application that will be deployed to the Azure Sphere in this exercise. So you need to delete any existing applications on the Azure Sphere to avoid clashes.
 
-    From the **Azure Sphere Developer Command Prompt**, run
+    From the **Azure Sphere Developer Command Prompt**, delete the existing application by running
 
     ```bash
     azsphere device sideload delete
     ```
-2. Restart the Azure Sphere. From the **Azure Sphere Developer Command Prompt**, run
+
+2. You must restart the Azure Sphere device to clear existing the existing silicon firewall settings. From the **Azure Sphere Developer Command Prompt**, run
 
     ```bash
     azsphere device restart
