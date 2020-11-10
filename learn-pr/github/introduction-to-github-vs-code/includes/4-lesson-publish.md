@@ -1,19 +1,48 @@
-To make it easier for you to start working on a GitHub project, you can authenticate with your GitHub account inside Visual Studio Code.
+As a Visual Studio Code user who has authenticated to GitHub, you'll get some improvements to your workflow that are enabled by the editor. One of those is the ability to "publish" a project from your machine directly to GitHub.
 
-Now that you've got the authentication taken care of, you can start working on a project. Imagine you want to work a new project and you've started it on your local computer. You've created a new folder and added your first few files. It's good practice to back up this project on GitHub so that you can save versions of it over time as you continue to work on it or invite others to collaborate with you. 
+## What is publishing?
 
-## What does initializing a repository mean?
+If you're starting with a new project that you haven't pushed to GitHub yet, the process for _getting_ it up on GitHub looks something like this...
 
-When you create a folder on your computer, you can initialize this folder as a local git repository. This will add a .git folder to your project and is how the Git version control system can keep track of actions and git commands. Typically, you do this by running the `git init` command in the terminal.
+1. Create a GitHub repo on github.com
+1. Copy the remote endpoint
+1. Run `git init` locally
+1. Add the remote endopint
+1. Specify which items to push into GitHub with a .gitignore
+1. Stage files
+1. Add a commit message]
+1. Push to the repo
 
-## What does publishing a repository mean?
+It can be even more complex than that sometimes if you initialize your repository with a REAMDE. This will put your repo in a state where you have "unrelated histories" and you can't push your code.
 
-After you've initialized a repository locally, you can choose to publish the repository to GitHub, a git provider that hosts your projects in the cloud. This way, you don't have to worry about your local machine running out of space or crashing, and you can also invite other contributors to work with you. Publishing your repository will connect the local repository you made and push the changes to GitHub's remote servers. This involves a few git commands, including adding a remote repository to your local one, pushing your local repository to the remote one, and authenticating with your GitHub credentials. 
+In short, it's a lot of steps. Visual Studio Code has a built-in "publish" feature that fully automates this process and allows you to do it right from Visual Studio Code.
 
-## What will VS Code do?
+## Publishing to GitHub from Visual Studio Code
 
-VS Code provides a UI experience to initialize a repository, or publish it to GitHub (which will also initializes it for you). So, you can start from a local folder on your computer to having a hosted project on GitHub with the push of a button and not worry about any additional Git commands. When you publish from VS Code, you can also choose the files you want included in the first commit when creating the repository. 
+There are two ways to publish a project to GitHub from VS Code - From the Source Control Management View (SCM View) and from the Command Palette. You must have a folder open in Visual Studio Code to see these options.
 
-Additionally, VS Code lets you publish your project as a private or public repository. A public repository is searchable on GitHub and anyone can contribute to it. A private repository is only visible to you and contributors you have explicitly invited. 
+### Publishing from the SCM VIew
 
+If you have not already initialized a repository for your project, you can publish your project directly from the SCM View.
 
+The SCM View can be toggle in Visual Studio Code by selecting the SCM icon in the Visual Studio Code Action Bar. You'll see a button that says "Publish to GitHub".
+
+![The SCM publish view](../media/scm-publish.jpg)
+
+Clicking this button will initialize the publish process...
+
+1. Specify the name of the repository to create on GitHub.
+1. Specify which files should be pushed to GitHub.
+   1. Any files that you do not select to be included in the publish will automatically be added to a `.gitignore` file which is created during the publish process.
+1. Your code will be staged and committed with the message "first commit".
+1. Your code will be pushed to the newly created GitHub repo
+
+### Publishing from the Command Palette
+
+If your project has already been initialized for GitHub locally, you won't see the publish button in the SCM view. In that case, you can still publish your project to GitHub using the "Publish to GitHub": option in the Command Palette.
+
+![The "Publish to GitHub" option in the VS Code Command Palette](../media/publish-command.jpg)
+
+The action will kick off the same workflow as the publish button in the SCM view does and has exactly the same steps, with the exception that you will not be prompted for what items you want to push if your project already contains a .gitignore.
+
+In the next exercise, you'll publish a local project to GitHub and see the workflow in action for yourself.
