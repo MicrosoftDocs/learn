@@ -17,16 +17,16 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'To run a Q# program...'
+  - content: Question
     choices:
-    - content: 'You need to use a host program written in Python or C#.'
+    - content: response 1
       isCorrect: false
-      explanation: "You don't necessarily need to use a host program, you can invoke Q# code directly from the CLI. But you can combine them with programos in Python or .NET languages if you need additional funcionality not available for Q#."
-    - content: 'You need to use C# since Q# is just a library of C#.'
+      explanation: explanation 1
+    - content: response 2
       isCorrect: false
-      explanation: 'Q# is not a library of C# but an independent language designed for quantum computers. You can run Q# programs directly from the CLI or using host programs written in Python or C#.'
-    - content: 'You can combine the code with a host program written in Python or a .NET language but you can also execute Q# code alone using the CLI or Q# Jupyter Notebooks.'
+      explanation: explanation 2
+    - content: response 3
       isCorrect: true
-      explanation: 'You can combine them with programs in Python or .NET languages if you need additional funcionality not available for Q#.'
+      explanation: explanation 3: correct
       
 

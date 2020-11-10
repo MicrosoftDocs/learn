@@ -1,3 +1,6 @@
+> [!NOTE]
+> Need: decision on whether to do a video to walk through of API doc page 
+
 When working with nearly any programming language, one of the most important development tools at your disposal is the API documentation itself.
 In this unit, you will familiarize yourself with the Q# API documentation: where to find it and how to read it. 
 
@@ -21,8 +24,6 @@ In the **Q# libraries** dropdown, you find the documentation for all of the Q# l
 
 ![Screengrab showing Q# libraries API opened to namespaces](../media/3-api-namespaces.png)
 
-> [!NOTE]
-> NOTE TO REVIEWER: Should we mention that namespaces don't necessarily correspond directly to library? Or at least specify what namespaces are part of the standard libs?
 
 ### Looking for something in particular?
 
