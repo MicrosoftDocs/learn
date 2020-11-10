@@ -33,13 +33,13 @@ products:
 - azure-active-directory
 - m365-information-protection
 units:
-- learn.azure.introduction-data-protection-and-privacy.1-introduction
-- learn.azure.introduction-data-protection-and-privacy.2-what-is-data-protection
-- learn.azure.introduction-data-protection-and-privacy.3-what-are-privacy-regulations
-- learn.azure.introduction-data-protection-and-privacy.4-what-are-regulations-and-acts
-- learn.azure.introduction-data-protection-and-privacy.5-what-are-key-concepts-data-processing
-- learn.azure.introduction-data-protection-and-privacy.6-how-does-ms-support-protection-and-privacy
-- learn.azure.introduction-data-protection-and-privacy.7-what-are-sci-options-in-azure
-- learn.azure.introduction-data-protection-and-privacy.8-summary
+- learn.azure.introduction-data-protection-and-privacy.1-introduction.md
+- learn.azure.introduction-data-protection-and-privacy.2-what-is-data-protection.md
+- learn.azure.introduction-data-protection-and-privacy.3-what-are-privacy-regulations.md
+- learn.azure.introduction-data-protection-and-privacy.4-what-are-regulations-and-acts.md
+- learn.azure.introduction-data-protection-and-privacy.5-what-are-key-concepts-data-processing.md
+- learn.azure.introduction-data-protection-and-privacy.6-how-does-ms-support-protection-and-privacy.md
+- learn.azure.introduction-data-protection-and-privacy.7-what-are-sci-options-in-azure.md
+- learn.azure.introduction-data-protection-and-privacy.8-summary.md
 badge:
   uid: learn.azure.introduction-data-protection-and-privacy.badge
