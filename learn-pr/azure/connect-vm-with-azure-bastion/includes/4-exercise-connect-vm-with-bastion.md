@@ -2,25 +2,25 @@ In this unit, you'll create a virtual machine (VM) to act as your internal app V
 
 This exercise is optional. To complete it, you need access to an Azure subscription where you have permissions to create resources like a VM. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-## Set up your environment
 
-You need a resource group and VM to use with Bastion.
+## Create a resource group
 
-### Create a resource group
+Create a resource group to contain all the resources that you'll create for the exercises.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. Search for or select **Resource groups**.
 1. Select **Add**.
 1. Enter the following values for the resource group.
 
-|Field |Value |
-|---------|---------|
-|Subscription     |  Your subscription       |
-|Resource group    |  learn-bastion-rg       |
-|Region    |  Region near you       |
+   |Field |Value |
+   |---------|---------|
+   |Subscription     |  Select your subscription       |
+   |Resource group    |  learn-bastion-rg       |
+   |Region    |  Choose the region near you       |
 
+1. Select **Review + create** > **Create**.
 
-### Create a VM
+## Create a VM
 
 Create a Linux VM that's not exposed to the internet.
 
@@ -62,7 +62,7 @@ Before you can use Azure Bastion, you need to create a subnet on the virtual net
 
 1. In the [Azure portal](https://portal.azure.com/), select or search for **Resource groups**.
 1. Select **learn-bastion-rg**.
-1. From the list of resources, select the virtual network.
+1. From the list of resources, select the virtual network **learn bastion-rg-vnet**.
 1. Under **Settings**, select **Address space**.
 1. Enter an address space with a subnet mask that's /27 or larger, like /26, /25, and so on, such as  10.0.1.0/24.
 1. Select **Save**.
@@ -70,10 +70,14 @@ Before you can use Azure Bastion, you need to create a subnet on the virtual net
 1. Select **+ Subnet** to add a subnet.
 1. Enter the following information to create a subnet.
 
+    :::image type="content" source="../media/4-add-bastion-subnet.png" alt-text="Screenshot of the add subnet page where the subnet name is AzureBastionSubnet.":::
+
    |Field  |Name |
    |---------|---------|
    |Name    |  AzureBastionSubnet       |
    |Subnet address range     | The address space you just added  like 10.0.1.0/24  |
+
+   Use the default values for the rest of the fields.
 
 1. Select **OK**.
 
@@ -94,11 +98,12 @@ Wait a few minutes for the Bastion resource to be created.
 ## Connect to the internal app VM
 
 1. After the Bastion resource is created, you're prompted to enter credentials to connect to the VM.
-
-   :::image type="content" source="../media/4-ready-to-connect.png" alt-text="Screenshot":::
 1. Enter the username **azureuser**.
 1. Select **SSH Private Key from local file**. 
 1. For **Local file**, select the **internalappvm_key.ppe** file you downloaded when you created the VM.
+
+   :::image type="content" source="../media/4-ready-to-connect.png" alt-text="Screenshot of the Bastion connection page with the user name and local file fields populated.":::
+
 1. Select **Connect**.
 1. In the remote shell, enter Linux commands like the following command that updates the system.
 

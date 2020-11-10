@@ -13,7 +13,7 @@ Bastion provides RDP and SSH connectivity to all VMs on same virtual network or 
 After you deploy Bastion, on the VM overview page, select **Connect** > **Bastion** > **Use Bastion** and then enter the sign in credentials for the VM to connect.
 
 :::image type="content" source="../media/2-connect-bastion-enter-credentials.png" alt-text="Screenshot of the Bastion page that prompts you to enter username and password for the VM.":::
-:::image-end:::
+
 
 ## Key security features
 
