@@ -34,4 +34,4 @@ In addition to the key aspects noted here, the design, configuration, deployment
 
 - Business continuity and disaster recovery at platform and application levels.
 - Service management, such as incident response and support.
-- A service catalog, such a configuration management database.
+- A service catalog, such as configuration management database.
