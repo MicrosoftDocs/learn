@@ -18,6 +18,8 @@ In this module, (prose TOC)
 
 By the end of this module, you’ll be able to perform threat hunting using the tools available in Azure Sentinel. Specifically, you'll be able to proactively identify threat behaviors using Azure Sentinel queries. You'll also be able to use bookmarks and livestream to identify specific account usage patterns for Contoso's Azure environment. --> 
 
+<!-- Jason: When you create the exercise, please add a note alert in the intro to let the learner know estimated costs for resources they need in the exercise units. (Verbiage here taken from the ID checklist so I'm not totally sure what it looks like in practice. Can get guidance if you need it.) --> 
+
 ## Learning objectives
 
 After completing this module, you'll be able to:
