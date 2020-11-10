@@ -17,3 +17,5 @@ On the new **Livestream** page, specify a name for the livestream session and th
 You can play the livestream to view results, or save the livestream for later reference. Saved livestreams can be viewed from the **Livestream** tab on the **Hunting** page. You can also elevate a livestream session to an alert by selecting **Elevate to alert** from the command bar of any livestream.
 
 :::image type="content" source="../media/4-livestream-session.png" alt-text="A livestream session in Azure Sentinel" :::
+
+<!-- Jason: This unit seems light. Do you think it adequately covers the topics from the design doc? (Add events to livestream, View livestream sessions, Manage livestream events and alerts) --> 
