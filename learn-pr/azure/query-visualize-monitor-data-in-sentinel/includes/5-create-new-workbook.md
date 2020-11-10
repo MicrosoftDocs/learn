@@ -32,7 +32,7 @@ You can use text blocks to interpret your security data, section headings, telem
 
 > [!Note]
 
-> Markdown is markup language used to add format text in the plain text documents. For more information how to format text using Markdown control see the following [Markdown guide](https://www.markdownguide.org/getting-started/).
+> Markdown is markup language used to add format text in the plain text documents. For more information how to format text using Markdown control, see the following [Markdown guide](https://www.markdownguide.org/getting-started/).
 
 Once that you add the text, you can select **Preview** tab, to see how your content will look. Finally, when you complete editing the text, you should select **Done Editing** button.
 
@@ -57,11 +57,11 @@ When you create a query, a new step is added in the workbook as shown in the scr
 
 ![](RackMultipart20201108-4-10kj3z7_html_4b90a0fa7f08caeb.png)
 
-In the header bar there are several fields that provides you with the option to tune the output of the query.
+In the header bar, there are several fields that provide you with the option to tune the output of the query.
 
 | Run Query | This button will test the result of the query |
 | --- | --- |
-| Samples | Microsoft provide sample code that contains sample query that can be added to the workbook |
+| Samples | Microsoft provides sample code that contains sample query that can be added to the workbook |
 | Data Source | Specify the source of the data for the query |
 | Resource type | You can select the type of the resource |
 | Log Analytics workspace | You can query data against more than one resource |
@@ -75,7 +75,7 @@ In the **Advanced Settings** tab, you can provide additional customization on th
 - **Settings** tab. You use this tab to provide values that affect how the step will look.
 - **Style** tab. You use this tab to set the values that affect how this step will look.
 
-For example, in the **Settings** tab, you can enter the **Chart title** , as is shown in the following screenshot:
+For example, in the **Settings** tab, you can enter the **Chart title, as is shown in the following screenshot:
 
 ![](RackMultipart20201108-4-10kj3z7_html_9b52d138cff37780.png)
 
@@ -112,7 +112,7 @@ In the previous example, the visualization type of the data was provided in the 
 
 You can use grids visualization to present the data in tables, which enrich the UI for the reports. You can select grid visualization, from the **Visualization** drop-down menu. Then you can select **Column Settings** button, to specify which column will be visible in the table and to provide column labels if necessary.
 
-In the **Edit Column settings** tab, you can select different column renderer, for example, heatmap, bar, spark area, etc. If you select **Custom formatting** , you can set units, style, and formatting options for number values, as shown in the following screenshot:
+In the **Edit Column settings** tab, you can select different column renderer, for example, heatmap, bar, spark area, etc. If you select **Custom formatting, you can set units, style, and formatting options for number values, as shown in the following screenshot:
 
 ![](RackMultipart20201108-4-10kj3z7_html_d2a4e739aee8224.png)
 

@@ -11,7 +11,7 @@ metadata:
 title: Use default Azure Sentinel workbooks
 durationInMinutes: 5
 content: |
-  [!include[]includes/4-workbooks.md)]
+  [!include[] includes/4-workbooks.md)]
 quiz:
   title: Check your knowledge
   questions:
@@ -22,13 +22,11 @@ quiz:
       explanation: "You can create a workbook that contains different types of charts to visualize the data."
     - content: "Tables"
       isCorrect: false
-      explanation: "You can create a workbook that contains tables.
+      explanation: "You can create a workbook that contains tables."
     - content: "Videos"
       isCorrect: true
       explanation: "Workbook cannot contains videos."
-  - content: "In which section of the Azure AD Sign-in logs workbook you can find information that users were required multifactor authentication MFA to validate their identity.
-
- "
+  - content: "In which section of the Azure AD Sign-in logs workbook you can find information that users were required Multifactor authentication MFA to validate their identity."
     choices:
     - content: "Sign-in Location"
       isCorrect: false

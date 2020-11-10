@@ -11,18 +11,18 @@ metadata:
 title: Monitor and visualize data
 durationInMinutes: 5
 content: |
-  [!include[]includes/2-monitor-visualize-data.md)]
+  [!include[] includes/2-monitor-visualize-data.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You want to open a prevously saved query. You open the Logs page in Azure Sentinel and then you have to select one of the following options?"
+  - content: "You want to open a previously saved query. You open the Logs page in Azure Sentinel and then you have to select one of the following options?"
     choices:
     - content: "Queries"
       isCorrect: false
       explanation: "Queries link in the page header opens some of the predefined sample queries."
     - content: "Query explorer"
       isCorrect: True
-      explanation: "The Query Explorer link in the page header help you to access your previously saved queries."
+      explanation: "The Query Explorer link in the page header helps you to access your previously saved queries."
     - content: "Tables pane"
       isCorrect: false
       explanation: "The Tables pane is grouping logs from different solutions into tables."
@@ -30,7 +30,7 @@ quiz:
     choices:
     - content: "Azure Monitor Alert"
       isCorrect: false
-      explanation: "New Azure Monitor Alert create an alert in Azure Monitor."
+      explanation: "New Azure Monitor Alert creates an alert in Azure Monitor."
     - content: "Azure Sentinel Alert"
       isCorrect: true
       explanation: "New Azure Sentinel alert will create an analytics rule."

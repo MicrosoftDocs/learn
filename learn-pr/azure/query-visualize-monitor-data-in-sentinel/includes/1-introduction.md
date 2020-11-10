@@ -1,4 +1,4 @@
-Microsoft Azure Sentinel Workbook provides an interactive reports that visualize important signals, by combaning, text, table, charts, tiles. 
+Microsoft Azure Sentinel Workbook provides an interactive report that visualize important signals, by combining, text, table, charts, tiles. 
 
 ## Module scenario
 

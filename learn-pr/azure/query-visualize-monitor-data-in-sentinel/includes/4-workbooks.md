@@ -1,15 +1,15 @@
-Azure Sentinel provides several templates that are ready for use. You can use these templates to create your own workbook that can then be modified as needed. Most of the data connectors that are used to ingest data come with their own workbooks. You can get better insight into the data that is being ingested using tables and visualizations, including bar and pie charts. You can also make your own workbooks from scratch, if required.
+Azure Sentinel provides several templates that are ready for use. You can use these templates to create your own workbook that can then be modified as needed. Most of the data connectors that are used to ingest data come with their own workbooks. You can get better insight into the data that is being ingested using tables and visualizations, including bar and pie charts. You can also make your own workbooks from scratch, if necessary.
 
 ## Workbook page
 
 You can access the **Workbook** page from the Azure Sentinel from the navigation pane on the left.
 
-The **Workbook** page consist of the:
+The **Workbook** page consists of the:
 
 - Workbook header. You can add a new workbook and see the saved workbooks and templates that are available in the Workbook page.
 - The Templates section. You can access existing workbook templates in **Templates** tab. You can save some of the workbooks for quick access and they will appear in the **My workbooks** tab.
 
-From the **Template** page you can select existing workbook and that will bring a detailed view on the right side that contains additional information for the templates. In the detailed view, you can find more information about the workbook. The detailed view also contains information about required data types and required data connectors that must be connected to Azure Sentinel. You can also view how the report will look.
+From the Template page, you can select existing workbook and that will bring a detailed view on the right side that contains additional information for the templates. In the detailed view, you can find more information about the workbook. The detailed view also contains information about required data types and required data connectors that must be connected to Azure Sentinel. You can also view how the report will look.
 
 ## View existing workbook template
 
@@ -17,13 +17,13 @@ As you may see from our scenario Contoso was concerned regarding compromised ide
 
 ![Screenshot that present existing workbooks](../media/04-View-Existing-workbook.PNG)
 
-Azure AD Sign-in logs workbook contains predefined charts, graphs and tables that can give you important insight about sign-in activity in Azure Active Directory. You can find information about user sign-ins and locations, email addresses, and IP addresses of your users, as well as failed activities and the errors that triggered the failures.
+Azure AD Sign-in logs workbook contains predefined charts, graphs, and tables that can give you important insight about sign-in activity in Azure Active Directory. You can find information about user sign-ins and locations, email addresses, and IP addresses of your users, as well as failed activities and the errors that triggered the failures.
 
-In the **Azure AD Sign-in logs** page you can expand the time range or filter the Apps and Users that has sign-in in the Azure. For example, Contoso wants to identify user that has sign-in in Azure Portal, so they can filter the data as is shown in the following screenshot:
+In the **Azure AD Sign-in logs** page you can expand the time range or filter the Apps and Users that have sign-in in the Azure. For example, Contoso wants to identify user that has sign-in in Azure portal, so they can filter the data as is shown in the following screenshot:
 
 ![Screenshot that present filtering users](../media/04-Filter-Users.PNG)
 
-Contoso is interesting in identifying the failed sign-in, so they can show these accounts, by clicking on the Informational tiles, and selecting a tile or a raw which will bring more information such as:
+Contoso is interested in identifying the failed sign-in, so they can show these accounts, by clicking on the Informational tiles, and selecting a tile or a raw, which will bring more information such as:
 
 - **Sign-in Location**. This section presents from which location the user sign-in.
 - **Location Sign-in details**. This section on the right, shows the users, sing-in status, and the time of the occurrence.
@@ -46,7 +46,7 @@ Note:
 
 You can also pin the query step in the private of shared dashboard for quick retrieval.
 
-In our example, Contoso wants to search the log for more information that present the failed user sign in and they are redirected in the Azure Data Explorer, where the log query is executed to filter the information.
+In our example, Contoso wants to search the log for more information that presents the failed user sign in and they are redirected in the Azure Data Explorer, where the log query is executed to filter the information.
 
 ![](RackMultipart20201108-4-18itt0u_html_cecbf3deffdd97a3.png)
 
@@ -66,9 +66,9 @@ The header bar in the editing mode contains the following options:
 
 ![](RackMultipart20201108-4-18itt0u_html_4a8067b67cac2f60.png)
 
-Once you have switched to editing mode you will notice a number of **Edit** boxes appear to the right corresponding with each individual aspect of your workbook.
+Once you have switched to editing mode, you will notice a number of **Edit** boxes appear to the right corresponding with each individual aspect of your workbook.
 
-If you select one of those edit buttons, you can examine the query that is used to filter the data from the corresponding log. In the screenshot bellow, you can see the query that is filtering all the users sign-ins from the sign-in logs:
+If you select one of those edit buttons, you can examine the query that is used to filter the data from the corresponding log. In the screenshot bellow, you can see the query that is filtering all the user's sign-ins from the sign-in logs:
 
 ![](RackMultipart20201108-4-18itt0u_html_7f2df2048d4ab7b3.png)
 
@@ -78,7 +78,7 @@ If you click on the gear icon, you can open **Settings** page, where you can pro
 
 You can rearrange the place of different table in the workbook, by selecting **Show Pin Options.**
 
-For advanced customization, you can open **Advanced Editor** , which will open JSON representation of the current workbook, that can be further customized in the text editor as shown in the screenshot:
+For advanced customization, you can open **Advanced Editor, which will open JSON representation of the current workbook, that can be further customized in the text editor as shown in the screenshot:
 
 ![](RackMultipart20201108-4-18itt0u_html_a349a7a2e53def25.png)
 

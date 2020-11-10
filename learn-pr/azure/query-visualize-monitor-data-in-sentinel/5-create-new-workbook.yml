@@ -11,7 +11,7 @@ metadata:
 title: Create a new Azure Sentinel workbook
 durationInMinutes: 5
 content: |
-  [!include[]includes/5-create-new-workbook.md)]
+  [!include[] includes/5-create-new-workbook.md)]
 quiz:
   title: Check your knowledge
   questions:
@@ -20,9 +20,9 @@ quiz:
     - content: "Microsoft Word"
       isCorrect: false
       explanation: "Microsoft Word is not used in formatting the text steps in the workbook."
-    - content: "HTML text formatiing"
+    - content: "HTML text formatting"
       isCorrect: false
-      explanation: "HTML text formatiing is not used for formatting the text steps in the workbook."
+      explanation: "HTML text formatting is not used for formatting the text steps in the workbook."
     - content: "Markdown"
       isCorrect: true
       explanation: "The text is edited through a Markdown formatting, that provides different heading and font styles, hyperlinks, tables."
