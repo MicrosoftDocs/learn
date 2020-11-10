@@ -15,13 +15,13 @@ From the **Template** page you can select existing workbook and that will bring 
 
 As you may see from our scenario Contoso was concerned regarding compromised identities. They can examine the existing workbook **Audit AD Sign-in logs** by selecting the template in the template section and then selecting **View template** in the detailed view.
 
-![](RackMultipart20201108-4-18itt0u_html_a55d7e61b1dca1aa.png)
+![Screenshot that present existing workbooks](../media/04-View-Existing-workbook.PNG)
 
 Azure AD Sign-in logs workbook contains predefined charts, graphs and tables that can give you important insight about sign-in activity in Azure Active Directory. You can find information about user sign-ins and locations, email addresses, and IP addresses of your users, as well as failed activities and the errors that triggered the failures.
 
 In the **Azure AD Sign-in logs** page you can expand the time range or filter the Apps and Users that has sign-in in the Azure. For example, Contoso wants to identify user that has sign-in in Azure Portal, so they can filter the data as is shown in the following screenshot:
 
-![](RackMultipart20201108-4-18itt0u_html_81693c3f446183d5.png)
+![Screenshot that present filtering users](../media/04-Filter-Users.PNG)
 
 Contoso is interesting in identifying the failed sign-in, so they can show these accounts, by clicking on the Informational tiles, and selecting a tile or a raw which will bring more information such as:
 
