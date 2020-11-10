@@ -1,15 +1,14 @@
 ### YamlMime:Module
 uid: learn.iot.introduction-to-azure-digital-twins
-title: Introduction to Azure Digital Twins
-metadata: 
+metadata:
   title: Introduction to Azure Digital Twins
   description: This module provides an overview of Azure Digital Twins, and describes Microsoft tools, services, and infrastructure. This knowledge can help bring digital twins to life for your organization and customers.
-  ms.date: 11/5/2020
+  ms.date: 11/4/2020
   author: raniabayoumy
   ms.author: bamut
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  
+title: Introduction to Azure Digital Twins
 summary: >
   This module provides an overview of Azure Digital Twins, and describes Microsoft tools, services, and infrastructure. This knowledge can help bring digital twins to life for your organization and customers.
 abstract: |

@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.introduction-to-azure-digital-twins.knowledge-check
 metadata:
+  title: Knowledge check
   description: Check that you understand the introduction to Azure Digital Twins
-  ms.date: 11/5/2020
+  ms.date: 11/4/2020
   author: raniabayoumy
   ms.author: bamut
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title:  Knowledge check
+title: Knowledge check
 durationInMinutes: 5
 content: |
 quiz:
