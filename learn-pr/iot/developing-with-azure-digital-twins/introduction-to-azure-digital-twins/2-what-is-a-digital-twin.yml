@@ -1,5 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.introduction-to-azure-digital-twins.what-is-a-digital-twin
+title: What is a Digital Twin?
 metadata:
   description: This unit defines what a Digital Twin is and how it can be used
   ms.date: 11/5/2020
@@ -7,7 +8,6 @@ metadata:
   ms.author: bamut
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: What is a Digital Twin?
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-is-a-digital-twin.md)]

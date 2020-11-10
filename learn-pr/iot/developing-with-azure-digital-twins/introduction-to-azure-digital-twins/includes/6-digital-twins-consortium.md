@@ -1,17 +1,16 @@
 ---
+title: Introduction
 metadata:
-  title: 
   description: 
   ms.date: 11/4/2020
   author: raniabayoumy
   ms.author: bamut
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction
 durationInMinutes: 2
 ---
 
-[![Logo of the digital twin consortium](../media/adt-consortium-logo.png)](../media/adt-consortium-logo.png#lightbox)
+:::image type="content" source="../media/adt-consortium-logo.png" alt-text="Logo of the digital twin consortium" lightbox="../media/adt-consortium-logo.png":::
 
 [Digital Twin Consortium (DTC)](https://www.digitaltwinconsortium.org/index.htm) co-founded by Microsoft, Dell, Ansys, Autodesk, GE Softwate, Northrop Grumman and Landlease was announced in May 2020 at Build conference. This is a very fast-growing organization which started with 14 founding members and added 42 members in the first week. It has 125+ partners as of August 2020.
 

@@ -1,13 +1,12 @@
 ---
+title: Introduction
 metadata:
-  title: 
   description: This unit introduces Azure Digital Twins
   ms.date: 11/4/2020
   author: raniabayoumy
   ms.author: bamut
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction
 durationInMinutes: 2
 ---
 
@@ -20,7 +19,7 @@ In the coming phases of digital twins, we will take these capabilities beyond en
 
 However, **modeling and creating a digital representation of these environments can be difficult for even the most sophisticated business.**
 
-[![Obstacles for building a digital twin](../media/adt-obstacles.png)](../media/adt-obstacles.png#lightbox)
+:::image type="content" source="../media/adt-obstacles.png" alt-text="Obstacles for building a digital twin" lightbox="../media/adt-obstacles.png":::
 
 Today, modeling connected environments is complicated – it spans devices, places,  business systems, people and more, with siloed data across these experiences that makes it challenging to bring those models to life to capture actionable insights.
 
@@ -42,4 +41,4 @@ Model any physical environment that’s important to your business. Then connect
 - **Build on a trusted enterprise-grade platform**  
 Build enterprise-grade IoT connected solutions with the compliance, security, and privacy benefits that Microsoft Azure is known for. Monitor, manage, and update IoT devices with high-level security and scalability through integration with Azure IoT Hub. Manage access and identity with features like role-based access control (RBAC) and Azure Active Directory.
 
-[![Build connected environments with Azure Digital Twins](../media/adt-build-connected-env.png)](../media/adt-build-connected-env.png#lightbox)
+:::image type="content" source="../media/adt-build-connected-env.png" alt-text="Build connected environments with Azure Digital Twins" lightbox="../media/adt-build-connected-env.png":::

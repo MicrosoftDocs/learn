@@ -1,13 +1,12 @@
 ---
+title: Introduction
 metadata:
-  title: 
   description: 
   ms.date: 11/4/2020
   author: raniabayoumy
   ms.author: bamut
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction
 durationInMinutes: 2
 ---
 

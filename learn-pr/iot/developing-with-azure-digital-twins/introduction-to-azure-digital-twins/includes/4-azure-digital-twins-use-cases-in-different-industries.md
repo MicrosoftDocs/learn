@@ -1,17 +1,17 @@
 ---
+title: Introduction
 metadata:
-  title: 
   description: This unit introduces Azure Digital Twins
   ms.date: 11/4/2020
   author: raniabayoumy
   ms.author: bamut
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction
+
 durationInMinutes: 2
 ---
 
-[![Graphical representation of a complete Digital Twins business environment](../media/adt-business-env.png)](../media/adt-business-env.png#lightbox)
+:::image type="content" source="../media/adt-business-env.png" alt-text="Graphical representation of a complete Digital Twins business environment" lightbox="../media/adt-business-env.png":::
 
 As companies navigate their business transformations, new use cases are unlocked.
 
@@ -40,7 +40,7 @@ Many industries can benefit by innovating with IoT. Examples of industries inclu
 
 ## Costumer Examples
 
-[![GE Aviation Digital Group example of using Azure Digital Twins](../media/adt-ge-aviation-example.png)](../media/adt-ge-aviation-example.png#lightbox)
+:::image type="content" source="../media/adt-ge-aviation-example.png" alt-text="GE Aviation Digital Group example of using Azure Digital Twins" lightbox="../media/adt-ge-aviation-example.png":::
 
 GE Aviation is using Azure Digital Twins to combine data from two disparate systems for creating a living replica of an aircraft. One system keeps track of the performance of an aircraft when it’s in the air. The other system keeps track of everything that happens to an aircraft once it lands on the ground. Currently it’s a very manual process to connect the data from these systems for auditing and tracking purposes.
 
@@ -50,4 +50,4 @@ Moving beyond tracking the performance of an aircraft in its current configurati
 
 This new insight into the historical performance of the components of an aircraft will help them identify potential issues, diagnose current issues, and ultimately decrease the cost of maintaining the aircraft.
 
-[![Telstra Purple example of using Azure Digital Twins](../media/adt-telstra-purple-example.png)](../media/adt-telstra-purple-example.png#lightbox)
+:::image type="content" source="../media/adt-telstra-purple-example.png" alt-text="Telstra Purple example of using Azure Digital Twins" lightbox="../media/adt-telstra-purple-example.png":::

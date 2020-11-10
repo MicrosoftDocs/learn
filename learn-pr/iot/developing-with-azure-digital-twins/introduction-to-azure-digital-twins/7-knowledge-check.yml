@@ -78,7 +78,7 @@ quiz:
   - content: 'What language is used to create each digital twin model?'
     choices: 
     - content: 'C#'
-      isCorrect: true
+      isCorrect: false
       explanation: C# may well be used to write a client app for digital twins, but is not the language used to create a model.
     - content: 'SQL'
       isCorrect: false

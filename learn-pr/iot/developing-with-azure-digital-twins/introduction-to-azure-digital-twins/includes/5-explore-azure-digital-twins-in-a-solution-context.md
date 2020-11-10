@@ -1,25 +1,24 @@
 ---
+title: Introduction
 metadata:
-  title: 
   description: 
   ms.date: 11/4/2020
   author: raniabayoumy
   ms.author: bamut
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction
 durationInMinutes: 2
 ---
 
-[![Diagram of an Azure Digital Twins solution steps](../media/adt-solutions.png)](../media/adt-solutions.png#lightbox)
+:::image type="content" source="../media/adt-solutions.png" alt-text="Diagram of an Azure Digital Twins solution steps" lightbox="../media/adt-solutions.png":::
 
 In a solution context, Azure Digital Twins is the platform that allows you to model any environment and connect sensors and business systems to the model to control the present, track the past and predict the future.
 
 To enable this promise, a typical customer would need to model their environment using the Digital Twin Definition Language (DTDL) and keep this model of their environment live with the data coming from their operational systems (i.e. IoT data) as well as the data coming from their business systems such as CRM, ERP, HR, Finance, etc. The insights that are generated in the digital twin would then need to be plugged into business systems to drive action and close the digital feedback loop.
 
-[![Diagram of the sources and uses of Azure Digital Twins](../media/adt-overview.png)](../media/adt-overview.png#lightbox)
+:::image type="content" source="../media/adt-overview.png" alt-text="Diagram of the sources and uses of Azure Digital Twins" lightbox="../media/adt-overview.png":::
 
-[![Diagram of the data flow in digital twins solutions](../media/adt-dataflow.png)](../media/adt-dataflow.png#lightbox)
+:::image type="content" source="../media/adt-dataflow.png" alt-text="Diagram of the data flow in digital twins solutions" lightbox="../media/adt-dataflow.png":::
 
 ## Open Modelling Language (DTDL)
 
@@ -55,4 +54,4 @@ Integration with Time Series Insight can be used to track data over time and app
 
 ## What a Digital Twin Solution Architecture looks like
 
-[![Graphical representation of a Digital Twin solution architecture](../media/adt-architecture.png)](../media/adt-architecture.png#lightbox)
+:::image type="content" source="../media/adt-architecture.png" alt-text="Graphical representation of a Digital Twin solution architecture" lightbox="../media/adt-architecture.png":::
