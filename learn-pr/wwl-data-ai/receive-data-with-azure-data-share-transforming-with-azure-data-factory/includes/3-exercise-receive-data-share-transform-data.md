@@ -170,7 +170,7 @@ You should now have an Azure Data Share invitation in your inbox from Microsoft 
 
 In the e-mail that you should have received (it may take up to a few minutes for the email to arrive), an invitation for the Azure Data Share you just set up. 
 
-   ![Invitation Email ](../media/azure-data-share-invitation-email.png)
+   :::image type="content" source="../media/azure-data-share-invitation-email.png" alt-text="Invitation Email":::
 
 Select view invitation and In the list 'Data Share Invitations', select the invitation titled 'TaxiData'.
 
