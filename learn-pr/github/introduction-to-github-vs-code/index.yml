@@ -24,23 +24,23 @@ prerequisites: |
 iconUrl: /learn/achievements/github/introduction-to-github.svg
 ratingEnabled: true
 levels:
-  - beginner
+- beginner
 roles:
-  - devops-engineer
-  - administrator
-  - developer
-  - solution-architect
-  - student
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+- student
 products:
-  - github
-  - azure
+- github
+- azure
 units:
-  - learn.github.introduction-to-github-vs-code.1-introduction
-  - learn.github.introduction-to-github-vs-code.2-lesson-auth
-  - learn.github.introduction-to-github-vs-code.3-exercise-auth
-  - learn.github.introduction-to-github-vs-code.4-lesson-publish
-  - learn.github.introduction-to-github-vs-code.5-exercise-publish
-  - learn.github.introduction-to-github-vs-code.6-lesson-clone
-  - learn.github.introduction-to-github-vs-code.7-exercise-clone
+- learn.github.introduction-to-github-vs-code.1-introduction
+- learn.github.introduction-to-github-vs-code.2-lesson-auth
+- learn.github.introduction-to-github-vs-code.3-exercise-auth
+- learn.github.introduction-to-github-vs-code.4-lesson-publish
+- learn.github.introduction-to-github-vs-code.5-exercise-publish
+- learn.github.introduction-to-github-vs-code.6-lesson-clone
+- learn.github.introduction-to-github-vs-code.7-exercise-clone
 badge:
   uid: learn.github.introduction-to-github-vs-code.badge
