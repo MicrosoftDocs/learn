@@ -1,10 +1,10 @@
-In this unit you will learn about running Real-time applications on an Azure Sphere.
+In this unit, you will learn about running Real-time applications on an Azure Sphere.
 
 ------
 
 ## Azure Sphere Architecture
 
-The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores, a Cortex-A7 which runs a Linux kernel, and two Cortex-M4 cores that can run bare-metal code, or a Real-time operating system such as Azure RTOS or FreeRTOS.
+The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores, a Cortex-A7, which runs a Linux kernel, and two Cortex-M4 cores that can run bare-metal code, or a Real-time operating system such as Azure RTOS or FreeRTOS.
 
 High-level applications running on the Cortex-A7 Linux kernel are used for less timing-sensitive tasks such as establishing network connections, negotiating security, updating device state, communicating with Real-time core applications, and sending telemetry messages to cloud gateways such as IoT Hub.
 
@@ -18,15 +18,15 @@ A system is said to be Real-time if the total correctness of an operation depend
 
 A Real-Time Operating System is system software that provides services and manages processor resources for applications. These resources include processor cycles, memory, peripherals, and interrupts. The main purpose of a Real-Time Operating System is to allocate processing time among various duties the embedded software must perform.
 
-This typically involves a division of the software into pieces, commonly called “tasks” or “threads,” and creating a run-time environment that provides each thread with its own virtual microprocessor (“Multithreading”). Basically, a virtual microprocessor consists of a virtual set of microprocessor resources, e.g., register set, program counter, stack memory area, and a stack pointer. Only while executing does a thread use the physical microprocessor resources, but each thread retains its own copy of the contents of these resources as if they were its own private resources (the thread”s “context”).
+This typically involves a division of the software into pieces, commonly called “tasks” or “threads,” and creating a run-time environment that provides each thread with its own virtual microprocessor (“Multithreading”). Basically, a virtual microprocessor consists of a virtual set of microprocessor resources, for example, register set, program counter, stack memory area, and a stack pointer. Only while executing does a thread use the physical microprocessor resources, but each thread retains its own copy of the contents of these resources as if they were its own private resources (the thread”s “context”).
 
 ------
 
 ## Introducing Azure RTOS
 
-Azure RTOS is a Real-time Operating System available from Microsoft. Azure RTOS is an embedded development suite including a small but powerful operating system called ThreadX that provides reliable, ultra-fast performance for resource-constrained devices. The [Azure RTOS](https://azure.microsoft.com/en-us/services/rtos?azure-portal=true) suite includes other components such as GUI design tools and libraries. In this unit we will be using Azure RTOS ThreadX.
+Azure RTOS is a Real-time Operating System available from Microsoft. Azure RTOS is an embedded development suite including a small but powerful operating system called ThreadX that provides reliable, ultra-fast performance for resource-constrained devices. The [Azure RTOS](https://azure.microsoft.com/en-us/services/rtos?azure-portal=true) suite includes other components such as GUI design tools and libraries. In this unit, we will be using Azure RTOS ThreadX.
 
-Azure RTOS ThreadX is an advanced real-time operating system (RTOS) designed specifically for deeply embedded applications. Among the multiple benefits it provides are real-time multithreading, inter-thread communication and synchronisation, and memory management. Azure RTOS ThreadX has many advanced features, including picokernel architecture, preemption threshold, event chaining and a rich set of system services.
+Azure RTOS ThreadX is an advanced real-time operating system (RTOS) designed specifically for deeply embedded applications. Among the multiple benefits it provides are real-time multithreading, inter-thread communication and synchronization, and memory management. Azure RTOS ThreadX has many advanced features, including picokernel architecture, preemption threshold, event chaining, and a rich set of system services.
 
 ------
 
@@ -71,7 +71,7 @@ typedef struct
 
 ![Inter-core communications architecture](../media/intercore-coms.png)
 
-The following describes the solution architecture:
+The solution architecture is as follows:
 
 1. The Azure RTOS Real-time environment sensor thread runs every 2 seconds. The thread stores in memory the latest environment temperature, humidity, and pressure data.
 2. The High-level telemetry streaming app requests from the Real-time core the latest environment data.
