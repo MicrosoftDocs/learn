@@ -30,22 +30,17 @@ Also, if you use Azure App Service, you can log in with SSH or Bash using a brow
 
 :::image type="content" source="../media/app-service-java-runtime-options.png" alt-text="Java Runtime Selection":::
 
-If you use the Azure Portal Screen, you can select the version of Java VM to use with App Service. In App Service, you can select either `Java 11` or `Java 8` as shown below.
-If you select `Java SE 8` or `Java 11`, you can select the Tomcat 9.0 as `Java Web Server Stack`.
+If you use the Azure Portal Screen, you can select the version of Java VM to use with App Service. In App Service, you can select either `Java 8` or `Java 11` as shown below.
+If you select the Java Runtime, you can select the `Tomcat 9.0` as `Java Web Server Stack`.
 
 | Runtime Stack |  Java 11  |  Java 8  |
 | ---- | ---- | ---- |
 |Java Web Server Stack| Tomcat 9.0 |  Tomcat 9.0  |
 
-This ToDo sample application runs on Tomcat 9.0, so select Tomcat 9.0.
-
 ## Maven Plugin for Azure App Service
 
 Microsoft provides the `Maven Plugins for Azure Services` to make it easier for Java developers to deploy applications to Azure.
-
-* Maven Plugin for Azure App Service
-
-By using this plugin, you can easily deploy your application to Azure environment.
+By using this plugin, you can easily configure and deploy your application to Azure environment.
 Execute the following command to use `Maven Plugin for Azure App Service`.
 
 ```bash
@@ -58,4 +53,3 @@ After configured for deploying to App Service, you can deploy your application w
 mvn clean package
 mvn azure-webapp:deploy
 ```
-
