@@ -3,7 +3,7 @@ uid: learn.github.introduction-to-github-vs-code
 metadata:
   title: "Introduction to GitHub in VS Code"
   description: Learn to use the GitHub integration in VS Code, including authentication, publishing repos and viewing your repo timeline
-  ms.date: 11/30/2020
+  ms.date: 11/01/2020
   author: burkeholland
   ms.author: saajani
   ms.topic: interactive-tutorial
