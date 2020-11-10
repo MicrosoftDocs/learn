@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.threat-response-sentinel-playbooks.4-playbook-on-demand
+uid: learn.azure.threat-response-sentinel-playbooks.5-playbook-on-demand
 metadata:
   title: Run playbooks on demand
-  description: Run playbooks to respond on existing incidents.
+  description: Run playbooks to respond to existing incidents.
   ms.date: 29/10/2020
   author: jboeshart
   ms.author: jaboes
@@ -11,22 +11,22 @@ metadata:
 title: Run playbooks on demand
 durationInMinutes: 5
 content: |
-  [!include[]includes/4-playbook-on-demand.md)]
+  [!include[]includes/5-playbook-on-demand.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You want to attach a playbook to your existing incindent. You start to Investigate the incident. Which button you should select to attach the playbook?"
+  - content: "You want to attach a playbook to your existing incident. You start to investigate the incident. Which button should you select to attach the playbook?"
     choices:
     - content: "New"
       isCorrect: false
-      explanation: "No. The New button will change the status of the incident."
+      explanation: "No. The New button changes the status of the incident."
     - content: "Unassigned"
       isCorrect: false
-      explanation: "No. Unassigned button will assign the incident to a user from your organization."
+      explanation: "No. The Unassigned button assigns the incident to a user from your organization."
     - content: "Name of the incident"
       isCorrect: true
-      explanation: "Yes. When you click the the name of the incident, you can start the process to run a playbook on demand in response to an existing incident."
-  - content: "You want to search for a"
+      explanation: "Yes. When you select the name of the incident, you can start the process to run a playbook on demand in response to an existing incident."
+  - content: "You want to search for a" ## Marjan this is incomplete.
     choices:
     - content: "Azure Architecture Center"
       isCorrect: false

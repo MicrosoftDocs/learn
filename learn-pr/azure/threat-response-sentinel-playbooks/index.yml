@@ -12,11 +12,14 @@ title: Threat response with Azure Sentinel playbooks
 summary: TODO
 abstract: |
   In this module you will:
-  - TODO
-  - TODO
-  - TODO
+  - Explain Azure Sentinel SOAR capabilities.
+  - Explore the Azure Sentinel Logic Apps connector.
+  - Create a playbook to automate an incident response.
+  - Run a playbook on demand in response to an incident.
 prerequisites: |
-  - TODO
+  - Automation and monitoring
+  - Azure Monitor and its Log Analytics workspace
+  - Azure Logic Apps
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -33,3 +36,4 @@ units:
 - learn.azure.threat-response-sentinel-playbooks.6-summary
 badge:
   uid: learn.learn.azure.threat-response-sentinel-playbooks
+

@@ -2,7 +2,7 @@
 uid: learn.azure.threat-response-sentinel-playbooks.6-summary
 metadata:
   title: Summary
-  description: Automated response on threats using Azure Sentinel Playbooks
+  description: Describes how to set up automated response on threats using Azure Sentinel Playbooks.
   ms.date: 10/29/2020
   author: jboeshart
   ms.author: jaboes
