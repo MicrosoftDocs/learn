@@ -21,12 +21,12 @@ View the current bastion sessions and force a disconnect for one of the remote s
 1. Select the bastion host you created **internalappvmVNET-bastion**.
 1. Select **Sessions**.
 
-   :::image type="content" source="../media/6-bastion-sessions.png" alt-text="Screenshot of the Bastion sessions page with two sessions listed.":::
+   :::image type="content" source="../media/6-bastion-sessions.png" alt-text="Screenshot of the Bastion sessions page with two sessions listed." lightbox="../media/6-bastion-sessions.png":::
 
 1. Review the session listed.
 1. Scroll to the far right to see the ellipsis "**...**".
 
-   :::image type="content" source="../media/6-bastion-sessions-ellipsis.png" alt-text="Screenshot of the Bastion sessions page with the ellipsis on the far right for each session.":::
+   :::image type="content" source="../media/6-bastion-sessions-ellipsis.png" alt-text="Screenshot of the Bastion sessions page with the ellipsis on the far right for each session." lightbox="../media/6-bastion-ellipsis.png":::
 
 1. On the first session, select the ellipsis "**...**" > **Delete**.
 1. Go to the browser window for your first session. You see that it's disconnected and won't allow you to reconnect.

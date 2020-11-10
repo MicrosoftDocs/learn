@@ -13,13 +13,13 @@ In the Bastion resource, you add diagnostic settings under Monitoring. You need 
 1. Select the bastion resource.
 1. Under **Monitoring**, select **Diagnostics settings**.
 1. Select **Add diagnostic setting**.
-   :::image type="content" source="../media/6-bastion-diagnostics-settings.png" alt-text="Screenshot that shows the Add diagnostic settings link within the Diagnostics Setting page.":::
+   :::image type="content" source="../media/5-bastion-diagnostics-settings.png" alt-text="Screenshot that shows the Add diagnostic settings link within the Diagnostics Setting page.":::
 1. Enter a name for **Diagnostic setting name**.
 1. Under **log**, select **BastionAuditLogs**.
-1. Under **Destination details**, select **Send to Log Analytics** and **Archive to storage account**. 
-1. The location, subscription, and a storage account are autopopulated. Make sure the storage account is in the same region as the Bastion resource. 
-   <!--(Need to create storage acct for this step?)-->
-   :::image type="content" source="../media/6-bastion-add-diagnostic-setting.png" alt-text="Screenshot that shows the  diagnostics settings page filled out.":::
+1. Under **Destination details**, select **Send to Log Analytics** and **Archive to storage account**.
+1. The location, subscription, and a storage account are autopopulated. Make sure the storage account is in the same region as the Bastion resource.
+
+   :::image type="content" source="../media/5-bastion-add-diagnostic-setting.png" alt-text="Screenshot that shows the  diagnostics settings page filled out.":::
 1. Select **Save**.
 1. After save is complete, close the page.
 
