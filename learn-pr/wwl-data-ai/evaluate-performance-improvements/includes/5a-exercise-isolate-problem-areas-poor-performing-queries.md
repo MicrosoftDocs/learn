@@ -10,13 +10,19 @@ There are several ways to generate an execution plan in SQL Server Management St
 
 1. When the VM lab environment opens use the password on the **Resources** tab for the **Student** account to sign in to Windows.
 
-1. From the lab virtual machine, start **SQL Server Management Studio (SSMS)**. Start a new query by selecting the **New Query** button in Management Studio.
+1. From the lab virtual machine, start **SQL Server Management Studio (SSMS)**.
+
+1. You will be prompted to connect to your SQL Server. ‎Ensure that **Windows Authentication** is selected, and then select **Connect**.
+
+    :::image type="content" source="../media/connect-to-server.png" alt-text="Connect to Server":::
+
+1. Start a new query by selecting **New Query**.
 
     :::image type="content" source="../media/dp-3300-module-55-lab-01.png" alt-text="New Query":::
 
-1. Copy and paste the code below into a new query window and execute it by selecting **Execute** or pressing the F5 key.
+1. Copy and paste the code below into a new query window and execute it by selecting **Execute** or press <kbd>F5</kbd>.
 
-    Using the SHOWPLAN_ALL setting we can get the same information as we did in the last exercise but in the results pane instead of the graphical result.
+    Use the **SHOWPLAN_ALL** setting to see a text version of a query's execution plan in the results pane instead of graphically in a separate tab.
 
     ```sql
     USE AdventureWorks2017;
@@ -34,15 +40,23 @@ There are several ways to generate an execution plan in SQL Server Management St
     GO
     ```
 
-    This shows you a text version of the execution plan.
+    In your results you'll see a text version of the execution plan, instead of the results of running the **SELECT** statement.
 
     :::image type="content" source="../media/dp-3300-module-55-lab-06.png" alt-text="Text version":::
+
+1. Examine the text in the second row's StmtText field:
+
+    ```console
+    |--Index Seek(OBJECT:([AdventureWorks2017].[HumanResources].[Employee].[AK_Employee_NationalIDNumber]), SEEK:([AdventureWorks2017].[HumanResources].[Employee].[NationalIDNumber]=CONVERT_IMPLICIT(nvarchar(4000),[@1],0)) ORDERED FORWARD)
+    ```
+
+    The above text explains that the execution plan use an Index Seek on the **AK_Employee_NationalIDNumber** key. It also shows that the execution plan needed to do a CONVERT_IMPLICIT step.
 
 ## Resolve a Performance Problem from an Execution Plan
 
 1. Copy and paste the code below into a new query window.
 
-    Select the **Include Actual Execution Plan** icon as shown below before running the query, or type CTRL+M. Execute the query by selecting **Execute** or pressing the **F5** key. Make note of the execution plan and the logical reads in the messages tab.
+    Select the **Include Actual Execution Plan** icon as shown below before running the query, or press <kbd>CTRL</kbd>+<kbd>M</kbd>. Execute the query by selecting **Execute** or press <kbd>F5</kbd>. Make note of the execution plan and the logical reads in the messages tab.
 
     ```sql
     SET STATISTICS IO, TIME ON;
@@ -51,18 +65,30 @@ There are several ways to generate an execution plan in SQL Server Management St
     FROM [AdventureWorks2017].[Sales].[SalesOrderDetail]
     WHERE [ModifiedDate] > '2012/01/01' AND [ProductID] = 772;
     ```
+    :::image type="content" source="../media/dp-3300-module-55-lab-07.png" alt-text="Screenshot showing the execution plan for the query":::
 
-    When reviewing the execution plan you will note there is a key lookup. If you your mouse over the icon, you will see that the properties indicate it is performed for each row retrieved by the query. You can see the execution plan is performing a Key Lookup operation.
-    
-    To identify what index needs to be altered in order to remove the key lookup, you need to examine the index seek above it. Hover over the index seek operator with your mouse and the properties of the operator will appear. Make note of the output column as shown below.
-    
-    :::image type="content" source="../media/dp-3300-module-55-lab-07.png" alt-text="Clustered":::
-    
+    When reviewing the execution plan you will note there is a key lookup. If you hover your mouse over the icon, you will see that the properties indicate it is performed for each row retrieved by the query. You can see the execution plan is performing a Key Lookup operation.
+
     :::image type="content" source="../media/dp-3300-module-55-lab-08.png" alt-text="NonClustered":::
+
+    Make a note of the columns in the Output list, as these fields need to be added to a covering index.
+
+    To identify what index needs to be altered in order to remove the key lookup, you need to examine the index seek above it. Hover over the index seek operator with your mouse and the properties of the operator will appear.
+
+    :::image type="content" source="../media/execution-plan-for-index.png" alt-text="NonClustered":::
 
 1. Fix the Key Lookup and rerun the query to see the new plan.
 
-    Key Lookups are fixed by adding a COVERING index that INCLUDES all fields being returned or searched in the query. In this example the index only had ProductID. If we add the Output List fields to the index as Included Columns, then the Key Lookup will be removed. Since the index already exists you either have to DROP the index and recreate it or set the DROP_EXISTING=ON in order to add the columns. Note ProductID is already part of the index and does not need to be added as an included column.
+    Key Lookups can be removed by adding a COVERING index that INCLUDES all fields being returned or searched in the query. In this example the index only uses the ProductID.
+
+    ```sql
+    CREATE NONCLUSTERED INDEX [IX_SalesOrderDetail_ProductID] ON [Sales].[SalesOrderDetail]
+    (
+    [ProductID] ASC
+    )
+    ```
+
+    If we add the Output List fields to the index as Included Columns, then the Key Lookup will be removed. Since the index already exists you either have to DROP the index and recreate it or set the **DROP_EXISTING=ON** in order to add the columns. Note **ProductID** is already part of the index and does not need to be added as an included column. There is another performance improvement we can make to the index by adding the **ModifiedDate**.
 
     ```sql
     CREATE NONCLUSTERED INDEX [IX_SalesOrderDetail_ProductID]
@@ -72,15 +98,17 @@ There are several ways to generate an execution plan in SQL Server Management St
     GO
     ```
 
-1. Rerun the query from Step 1. Make note of the changes to the logical reads and execution plan changes
+1. Rerun the query you have open. Make note of the changes to the logical reads and execution plan changes. The plan now only needs to use the nonclustered index.
+
+    :::image type="content" source="../media/improved-execution-plan.png" alt-text="Screenshot showing the improved execution plan":::
 
 ## Use Query Store (QS) to detect and handle regression in AdventureWorks2017
 
-Next you'll run a workload to generate query statistics for QS, examine Top Resource Consuming Queries to identify poor performance, and force a better execution plan.
+Next you'll run a workload to generate query statistics for QS, examine Top Resource Consuming Queries to identify poor performance, and see how to force a better execution plan.
 
 ## Run a workload to generate query stats for Query Store
 
-1. Copy and paste the code below into a new query window and execute it by selecting **Execute** . Make note of the execution plan and the logical reads in the messages tab. This script will enable the Query Store for AdventureWorks2017 and sets the database to Compatibility Level 100
+1. Copy and paste the code below into a new query window and execute it by selecting **Execute**. This script will enable the Query Store for AdventureWorks2017 and sets the database to Compatibility Level 100.
 
     ```sql
     USE master;
@@ -96,19 +124,21 @@ Next you'll run a workload to generate query statistics for QS, examine Top Reso
     GO
     ```
 
+    Changing the compatibility level is like moving the databases back in time. It restricts the features SQL server can use to those that were available in SQL Server 2008.
+
 1. Select the **File** > **Open** > **File** menu in SQL Server Management Studio.
 1. Navigate to the **D:\Labfiles\Query Performance\CreateRandomWorkloadGenerator.sql** file.
-1. Select the file to load it into Management Studio and then select **Execute** or press F5 to execute the query.
+1. Select the file to load it into Management Studio and then select **Execute** or press <kbd>F5</kbd> to execute the query.
 
     :::image type="content" source="../media/dp-3300-module-55-lab-09.png" alt-text="Open File":::
 
 1. Run a workload to generate statistics for Query Store.
 1. Navigate back to the **D:\Labfiles\Query Performance\ExecuteRandomWorkload.sql** script to execute a workload.
-1. Select **Execute** or press F5 to run the script.
+1. Select **Execute** or press <kbd>F5</kbd> to run the script.
 
-    After execution completes, run the script a second time. Leave the query tab open for this query.
+    After execution completes, run the script a second time to create additional load on the server. Leave the query tab open for this query.
 
-1. Copy and paste the code below into a new query window and execute it by selecting **Execute** or pressing the F5 key . This script changes the database compatibility mode using the below script to SQL Server 2019 (150)
+1. Copy and paste the code below into a new query window and execute it by selecting **Execute** or press <kbd>F5</kbd>. This script changes the database compatibility mode using the below script to SQL Server 2019 (**150**). Making all the database features and improvements since SQL Server 2008 available to the server.
 
     ```sql
     USE master;
@@ -122,16 +152,20 @@ Next you'll run a workload to generate query statistics for QS, examine Top Reso
 
 ## Examine Top Resource Consuming Queries to identify poor performance
 
-1. In order to view the Query Store you will need to refresh the AdventureWorks2017 database in Management Studio. Right click on database name and choose select refresh. You will then see the Query Store option under the database.
+1. In order to view the Query Store node you will need to refresh the AdventureWorks2017 database in Management Studio. Right click on database name and choose select refresh. You will then see the Query Store node under the database.
+
     :::image type="content" source="../media/dp-3300-module-55-lab-10.png" alt-text="Expand Query Store":::
 
-1. Expand Query Store node to view all available report. Select the plus sign to expand **Query Store** reports. Select **Top Resource Consuming Queries Report**.
+1. Expand the **Query Store** node to view all the available reports.
+
     :::image type="content" source="../media/dp-3300-module-55-lab-11.png" alt-text="Top Resource Consuming Queries Report":::
+
+1. Select **Top Resource Consuming Queries Report**.
 
 1. The report will open as shown below. On the right, select the menu dropdown, then select **Configure**.
     :::image type="content" source="../media/dp-3300-module-55-lab-12.png" alt-text="Select Configure":::
 
-1. In the configuration screen, change the filter for the minimum number of query plans to 2.
+1. In the configuration screen, change the filter for the minimum number of query plans to 2. Then select **OK**.
 
     :::image type="content" source="../media/dp-3300-module-55-lab-13.png" alt-text="Set Minimum number of query plans":::
 
@@ -157,22 +191,26 @@ Next you'll run a workload to generate query statistics for QS, examine Top Reso
 
     :::image type="content" source="../media/dp-3300-module-55-lab-17.png" alt-text="Forced check mark":::
 
+There can be times when the query optimizer can make a poor choice on which execution plan to use. When this happens you can force SQL server to use the plan you want when you know it performs better.
+
 ## Use query hints to impact performance in AdventureWorks2017
 
-Next you'll run a workload, change the query to use a parameter, and apply query hint to the query to optimize for a value and re-execute.
+Next you'll run a workload, change the query to use a parameter, and apply query hint to the query to optimize for a value, and re-execute.
+
+Before continuing with the exercise close all the current query windows by selecting the **Window** menu, then select **Close All Documents**. In the popup select **No**.
 
 ## Run a workload
 
-Run the queries below, examine the Actual Execution Plan (Ctrl+M).
+Run the queries below, examine the Actual Execution Plan.
 
-1. Select New Query and select on **Include Actual Execution Plan** icon before running the query or use CTRL+M.
+1. Select New Query and select on **Include Actual Execution Plan** icon before running the query or use <kbd>CTRL</kbd>+<kbd>M</kbd>.
 
     :::image type="content" source="../media/dp-3300-module-55-lab-18.png" alt-text="Include Actual Execution Plan":::
 
 1. Execute the query below. Note that the execution plan shows an index seek operator.
 
     ```sql
-    USE AdventureWorks2017
+    USE AdventureWorks2017;
     GO
 
     SELECT SalesOrderId, OrderDate
@@ -187,7 +225,7 @@ Run the queries below, examine the Actual Execution Plan (Ctrl+M).
     The only change this time is that the SalesPersonID value is set to 277. Note the Clustered Index Scan operation in the execution plan.
 
     ```sql
-    USE [AdventureWorks2017]
+    USE AdventureWorks2017;
     GO
 
     SELECT SalesOrderId, OrderDate
@@ -197,34 +235,19 @@ Run the queries below, examine the Actual Execution Plan (Ctrl+M).
 
     :::image type="content" source="../media/dp-3300-module-55-lab-20.png" alt-text="SalesPersonID = 277":::
 
-Based on the column statistics the database optimizer has chosen a different execution plan because of the different values of this WHERE clause. Because this query uses a constant in its WHERE clause, the optimizer sees each of these queries as unique and generates a different execution plan for each one.
+Based on the column statistics the query optimizer has chosen a different execution plan because of the different values in the WHERE clause. Because this query uses a constant in its WHERE clause, the optimizer sees each of these queries as unique and generates a different execution plan each time.
 
 ## Change the query to use a parameter and use a Query Hint
 
 1. Change the query to use a variable value for SalesPersonID.
 
-1. Use the T-SQL DECLARE statement to declare @SalesPersonID so you can pass in a value instead of hard-code the value in the WHERE clause. You should ensure that the data type of your variable matches the data type of the column in the target table.
+1. Use the T-SQL **DECLARE** statement to declare **@SalesPersonID** so you can pass in a value instead of hard-code the value in the **WHERE** clause. You should ensure that the data type of your variable matches the data type of the column in the target table.
 
     ```sql
-    USE AdventureWorks2017
+    USE AdventureWorks2017;
     GO
 
-    DECLARE @SalesPersonID INT;
-
-    SELECT @SalesPersonID = 277;
-
-    SELECT SalesOrderId, OrderDate
-    FROM Sales.SalesOrderHeader
-    WHERE SalesPersonID= @SalesPersonID;
-    ```
-
-1. Execute this query again changing the parameter value to 288.
-
-    If you examine the execution plan, you will note is the same as it was for the value of 277. This is because SQL Server has cached the execution plan and is reusing for the second execution of the query. Note that although the same plan is used for both queries, it is not necessarily the best plan.
-
-    ```sql
-    USE AdventureWorks2017
-    GO
+    SET STATISTICS IO, TIME ON;
 
     DECLARE @SalesPersonID INT;
 
@@ -235,29 +258,26 @@ Based on the column statistics the database optimizer has chosen a different exe
     WHERE SalesPersonID= @SalesPersonID;
     ```
 
-1. Execute the following command to clear the plan cache for the AdventureWorks2017 database.
+    If you examine the execution plan, you will note is using an index scan to get the results. This is because SQL Server can't make good optimizations because it can't know the value of the local variable until runtime.
+
+1. You can help the query optimizer make better choices by providing a query hint. Rerun the above query with an new option:
 
     ```sql
     USE AdventureWorks2017
     GO
-    ALTER DATABASE SCOPED CONFIGURATION CLEAR PROCEDURE_CACHE;
-    GO
-    ```
 
-1. Now Run the Query with the Query.
+    SET STATISTICS IO, TIME ON;
 
-    Hint. Review the plan noting it now uses the plan with the index seek created for value 288 even though the @SalesPersonID = 277.
+    DECLARE @SalesPersonID INT;
 
-    ```sql
-    USE AdventureWorks2017;
-    GO
-
-    DECLARE @SalesPersonID int
-
-    SELECT @SalesPersonID = 277
+    SELECT @SalesPersonID = 288;
 
     SELECT SalesOrderId, OrderDate
     FROM Sales.SalesOrderHeader
     WHERE SalesPersonID= @SalesPersonID
     OPTION (OPTIMIZE FOR (@SalesPersonID = 288));
     ```
+
+    Note that the query optimizer has been able to choose a different execution plan.
+
+You can see in the message tab that the difference between local reads is 68% (689 versus 409) more for the query without the query hint.
