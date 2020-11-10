@@ -61,12 +61,16 @@ The default developer board configuration is for the AVENT Azure Sphere Starter 
 
 ## Step 5: Debugging Real-time core applications
 
-You can Debug the Azure RTOS application running on Azure Sphere Cortex M4 Real-Time Core.
+You can debug the Azure RTOS application running on Azure Sphere Cortex M4 Real-Time Core.
 
 1. From Visual Studio Code, navigate to the **demo_threadx** directory, and open the **demo_azure_rtos.c** file.
-2. Scroll down to the function named **intercore_thread**.
-3. Set a [Visual Studio Code Breakpoint](https://code.visualstudio.com/docs/editor/debugging#_breakpoints&WT.mc_id=julyot-azd-dglover) in the intercore_thread function on the line that reads **switch (ic_control_block.cmd)**
+2. Scroll down to the function named **inter-core_thread**.
+    > [!NOTE]
+    > Use **Go to Symbol in Editor** in Visual Studio Code. Use the keyboard shortcut Ctrl+Shift+O and start typing *inter-core_thread*. You'll often see a function name listed twice in the drop-down. The first is the function prototype or forward signature declaration, and the second is the implementation of the function.
+3. Set a breakpoint in the inter-core_thread function on the line that reads **switch (ic_control_block.cmd)**
+    > [!NOTE]
+    > You can learn how how to set breakpoints from this [Visual Studio Code Debugging](https://code.visualstudio.com/docs/editor/debugging#_breakpoints?azure-portal=true) article.
 
-    ![](../media/visual-studio-debug-intercore-thread.png)
+    ![](../media/visual-studio-debug-inter-core-thread.png)
 
 4. Leave Visual Studio Code and the app running with the breakpoint set. Next we are going to deploy a High Level app application to the Cortex A7 core which will request environment telemetry from the Real Time app running on the Cortex M4 core.

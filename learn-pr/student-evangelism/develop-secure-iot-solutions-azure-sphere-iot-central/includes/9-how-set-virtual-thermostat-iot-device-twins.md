@@ -1,16 +1,5 @@
 In this unit, you will learn how to control an Azure Sphere connected heating, ventilation, and air conditioning unit (HVAC) from Azure IoT Central.
 
-<!-- ------
-
-## Azure IoT cloud-to-device control
-
-Azure IoT Central uses Azure IoT Hub to control devices. Options to control devices include:
-
-- **Direct methods** for control that require immediate confirmation of the result. Direct methods are often used for interactive control of devices, such as turning on a fan.
-- **Device twins** are for long-running commands intended to put the device into a certain desired state. For example, set the desired room temperature.
-
-This unit will cover Azure IoT Hub device twins and how **DeviceTwinBindings** simplify the use of Azure IoT device twins. -->
-
 ------
 
 ## Understanding IoT Central properties
@@ -24,20 +13,6 @@ Properties can be used in the following ways:
 - Cloud-to-device updates
 - Device-to-cloud updates
 - Querying reported properties
-
-<!-- ### Using device twins
-
-- Cloud-to-device updates.
-
-    A user sets an Azure IoT Central device property such as setting the desired temperature of the room. Azure IoT Central requests Azure IoT Hub to send a device twin message to the device. The device actions and acknowledges the request. Azure IoT Hub updates the device twin reported property and IoT Central can then query and display this reported property.
-
-- Device-to-cloud updates.
-
-    A device can send a device twin message for a reported property to Azure IoT Hub, such as reporting its firmware level on startup. Azure IoT Hub stores the reported property.
-
-- Querying reported properties.
-
-    With the reported state of device twins stored in Azure, it is possible to query the stored device twin properties on the cloud side. For example, list all devices with a firmware version less than 2.0, as these devices require an update. Or, list all rooms with a temperature setting higher than 25 degrees Celsius. -->
 
 ------
 
@@ -53,7 +28,7 @@ The following steps outline how Azure IoT Central uses device twins to set prope
 
 1. A user sets the desired room temperature property in Azure IoT Central. IoT Central then requests IoT Hub to update the property.
 1. Azure IoT Hub updates the device twin desired property and sends a device twin message to the device.
-1. The corrosponding device twin handler function is called.
+1. The corresponding device twin handler function is called.
 1. The device implements the desired property; in this case, turn on the heater or cooler to bring the room to the desired temperature.
 1. The device acknowledges the updated configuration to Azure IoT Hub. Azure IoT Hub updates the device twin reported property.
 1. IoT Central queries and displays the device twin reported property data to the user.

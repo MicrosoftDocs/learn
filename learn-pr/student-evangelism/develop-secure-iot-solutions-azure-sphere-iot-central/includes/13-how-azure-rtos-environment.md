@@ -42,11 +42,11 @@ To learn more, review the [Real-Time Operating System - What it is and why you m
 
 ------
 
-## Intercore communications
+## Inter-core communications
 
 For security reasons, applications running on the Real-time cores cannot access any network resources. However, applications can communicate with applications running on other cores through a secure mailbox mechanism. There also needs to be a shared understanding or contract that describes the shape of the data being passed between the cores. Where possible describe the shape of the data messages using basic types like C ints, floats, enums, and characters. For more complex needs, such as passing an array of objects, then you will need to implement a serialization scheme.
 
-The following structure declares the intercore contract used in this unit. You can find this contact in the **IntercoreContract** directory.
+The following structure declares the inter-core contract used in this unit. You can find this contact in the **IntercoreContract** directory.
 
 ```c
 typedef enum
@@ -69,14 +69,14 @@ typedef struct
 
 ## Solution architecture
 
-![Intercore communications architecture](../media/intercore-coms.png)
+![Inter-core communications architecture](../media/intercore-coms.png)
 
 The following describes the solution architecture:
 
 1. The Azure RTOS Real-time environment sensor thread runs every 2 seconds. The thread stores in memory the latest environment temperature, humidity, and pressure data.
 2. The High-level telemetry streaming app requests from the Real-time core the latest environment data.
 3. The Azure RTOS Real-time environment service thread responses with the latest environment data.
-4. The High-level application serializes the environment data as JSON and sends as a telemetry message to IoT Hub
+4. The High-level application serializes the environment data as JSON and sends the telemetry message to IoT Hub
 5. Azure IoT Central subscribes to telemetry messages sent to IoT Hub by the device and displays the data to the user.
 6. The IoT Central user can also set the desired temperature for the room by setting a property. The property is set on the device via an IoT Hub device twin message.
 7. The Azure Sphere then sets the HVAC operating mode to meet the desired temperature.
@@ -87,7 +87,7 @@ The following describes the solution architecture:
 
 Like High-level applications, Real-time applications are secure by default and you must declare all resources the application requires. This includes access to peripherals and what applications the Real-time core can communicate with. To communicate, applications running across cores must be configured with corresponding Component IDs.
 
-### Real-Time intercore capabilities
+### Real-Time inter-core capabilities
 
 To communicate, applications running across cores must be configured with corresponding Component IDs.
 
@@ -102,20 +102,12 @@ The Component ID for the High-level application can be found in its **app_manife
 }
 ```
 
-In the following Azure RTOS Real-Time **app_manifest.json** file, the **AllowedApplicationConnections** property is set to the Component ID of the High-Level application.
+The **AllowedApplicationConnections** property in the Real-time **app_manifest.json** file is set to the Component ID of the Azure Sphere High-level application.
 
 ```json
 {
-  "SchemaVersion": 1,
-  "Name": "demo_threadx",
-  "ComponentId": "6583cf17-d321-4d72-8283-0b7c5b56442b",
-  "EntryPoint": "/bin/app",
-  "CmdArgs": [],
-  "Capabilities": {
-    "Gpio": [ ],
-    "I2cMaster": [ "$I2cMaster2" ],
+    ...
     "AllowedApplicationConnections": [ "25025d2c-66da-4448-bae1-ac26fcdd3627" ]
-  },
-  "ApplicationType": "RealTimeCapable"
+    ...
 }
 ```

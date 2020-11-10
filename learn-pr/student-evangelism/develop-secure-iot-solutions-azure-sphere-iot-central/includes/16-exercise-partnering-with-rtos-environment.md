@@ -31,20 +31,41 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 ## Step 3: Configure the Azure IoT connection information
 
 1. Open the **app_manifest.json** file.
-2. You'll need to redo the settings for the **app_manifest.json** file. Either copy the settings from Notepad if you still have it open, or copy them from the **app_manifest.json** file you created in the previous exercise.
+2. You'll need to redo the settings for the **app_manifest.json** file. Either copy the settings from Notepad if you still have it open or copy them from the **app_manifest.json** file you created in the previous exercise.
 3. Paste the contents of the clipboard into **app_manifest.json** and save the file.
 
 ------
 
-## Step 4: Start the app build deploy process
+## Step 4: Set a breakpoint in the InterCoreHandler callback function
 
-1. Ensure main.c is open.
-2. Select **CMake: [Debug]: Ready** from the Visual Studio Code Status Bar.
-3. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application that's now running the Azure Sphere device.
+1. Scroll down to the function named **InterCoreHandler**.
+    > [!NOTE]
+    > Use **Go to Symbol in Editor** in Visual Studio Code. Use the keyboard shortcut Ctrl+Shift+O and start typing *InterCoreHandler*. You'll often see a function name listed twice in the drop-down. The first is the function prototype or forward signature declaration, and the second is the implementation of the function.
+2. Set a breakpoint in the inter-core_thread function on the line that reads **switch (ic_message_block->cmd)**
+    > [!NOTE]
+    > You can learn how how to set breakpoints from this [Visual Studio Code Debugging](https://code.visualstudio.com/docs/editor/debugging#_breakpoints?azure-portal=true) article.
+
+    ![Set a breakpoint in the inter-core callback function](../media/visual-studio-debug-intercore-callback.png)
 
 ------
 
-## Step 5: Expected device behavior
+## Step 5: Start the app build deploy process
+
+2. Select **CMake: [Debug]: Ready** from the Visual Studio Code Status Bar.
+3. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application that's now running the Azure Sphere device.
+
+## Step 6: Debugging High-level and Real-time core applications
+
+1. When the High-level application has started it will request environment data from the Real-time core application.
+2. Without closing or stopping the High-level application, switch to the instance of Visual Studio code that you left connected to the Real-time core.
+3. In a moment or two the code execution will stop at the breakpoint set in the Real-time code.
+4. Step through the code on the Real-time code and then press **F5** to continue execution.
+5. Switch back to the instance of Visual Studio Code connected to the High-level application. The code execution should have stopped at the breakpoint you set in the InterCoreHandler function.
+6. Repeat this process a few times and then remove the breakpoints so code continues to execute
+
+------
+
+## Step 7: Expected device behavior
 
 ### Avnet Azure Sphere MT3620 Starter Kit
 
@@ -68,7 +89,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 ------
 
-## Step 6: Display the actual temperature property
+## Step 8: Display the actual temperature property
 
 1. Switch to Azure IoT Central in your browser.
 
@@ -83,7 +104,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 ------
 
-## Step 7: Set the desired temperature
+## Step 9: Set the desired temperature
 
 Setting the desired temperature is like setting a thermostat in a room. A device twin property message for desired temperature is sent to Azure Sphere, where it will be acted upon.
 

@@ -38,7 +38,7 @@ The Seeed Studio Mini Azure Sphere kit can be found [here](http://wiki.seeedstud
 
 ## Introduction to the Azure Sphere learning path labs
 
-A number of learning path libraries support these labs. These learning path C functions are prefixed with **lp_**, whereas typedefs and enums are prefixed with **LP_**.
+Several learning path libraries support these labs. These learning path C functions are prefixed with **lp_**, typedefs and enums are prefixed with **LP_**.
 
 Interesting things to note about the learning path libraries:
 

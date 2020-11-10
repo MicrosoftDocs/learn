@@ -133,10 +133,10 @@ These sets are referenced when **lp_gpioSetOpen** and **lp_timerSetStart** are c
 ```c
 static void InitPeripheralsAndHandlers(void)
 {
-	lp_initializeDevKit();
+    lp_initializeDevKit();
 
-	lp_gpioSetOpen(gpioSet, NELEMS(gpioSet));
-	lp_timerSetStart(timerSet, NELEMS(timerSet));
+    lp_gpioSetOpen(gpioSet, NELEMS(gpioSet));
+    lp_timerSetStart(timerSet, NELEMS(timerSet));
 }
 ```
 

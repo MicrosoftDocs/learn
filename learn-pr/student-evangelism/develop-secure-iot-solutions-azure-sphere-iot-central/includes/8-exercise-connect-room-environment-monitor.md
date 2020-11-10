@@ -80,14 +80,10 @@ A capability model is a JSON document that describes the shape of the telemetry 
 6. Click **Add section**.
 7. Select the following property.
    - Desired Temperature
-6. Click **Add section**.
-7. Click **Save** to save the form.
+8. Click **Add section**.
+9. Click **Save** to save the form.
 
    ![The illustration shows the properties section.](../media/iot-central-add-tile-form.png)
-
-
-
-6. Click **Save** to save the form.
 
 ### Publish the device template
 
@@ -109,7 +105,7 @@ A capability model is a JSON document that describes the shape of the telemetry 
    azsphere login
    ```
 
-3. Make a note of the current directory, or change to the **Azure Sphere Learning path** directory. You'll need the name of this directory in the next step.
+3. Make a note of the current directory or change to the **Azure-Sphere** directory. You'll need the name of this directory in the next step.
 
 4. Download the certificate authority (CA) certificate for your Azure Sphere tenant:
 

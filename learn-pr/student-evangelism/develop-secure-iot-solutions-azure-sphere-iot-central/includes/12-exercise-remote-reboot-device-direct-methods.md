@@ -67,7 +67,7 @@
 
 6. Switch back to Visual Studio. The application execution should have stopped where you set the breakpoint. Using the debugger, step over code (F10), step into code (F11), and continue code execution (F5) to understand the code path in more detail.
 
-7. Switch back to Azure IoT Central, and click the **Command History** button to view the result of the command.
+7. Switch back to Azure IoT Central and click the **Command History** button to view the result of the command.
 
     > [!NOTE]
     > You may see a timed-out message in the history, depending on how long it took you to step through the code in Visual Studio.

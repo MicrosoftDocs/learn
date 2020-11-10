@@ -85,52 +85,7 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 ------
 
-## Step 4: Understand the Azure Sphere application
-
-Open **main.c** and scroll down to where **measureSensorTimer** is declared. When initialized, this timer will fire every 6 seconds calling the **MeasureSensorHandler** handler function.
-
-```c
-static LP_TIMER measureSensorTimer = {
-    .period = { 6, 0 },
-    .name = "measureSensorTimer",
-    .handler = MeasureSensorHandler };
-```
-
-Scroll down to the implementation of the **MeasureSensorHandler** function. This is the function that will be called by the **measureSensorTimer** timer.
-
-> [!NOTE]
-> Use **Go to Symbol in Editor** in Visual Studio Code. Use the keyboard shortcut Ctrl+Shift+O and start typing *measure*. You'll often see a function name listed twice in the drop-down. The first is the function prototype or forward signature declaration, and the second is the implementation of the function.
-
-The MeasureSensorHandler function will read the environment sensor, format the data into a JSON string, display the JSON data on the **Output** tab, and then send the telemetry to Azure IoT Central.
-
-```c
-/// <summary>
-/// Read sensor and send to Azure IoT
-/// </summary>
-static void MeasureSensorHandler(EventLoopTimer* eventLoopTimer)
-{
-    static int msgId = 0;
-    static LP_ENVIRONMENT environment;
-
-    if (ConsumeEventLoopTimerEvent(eventLoopTimer) != 0)
-    {
-        lp_terminate(ExitCode_ConsumeEventLoopTimeEvent);
-    }
-    else {
-        if (lp_readTelemetry(&environment) &&
-            snprintf(msgBuffer, JSON_MESSAGE_BYTES, msgTemplate,
-                environment.temperature, environment.humidity, environment.pressure, msgId++) > 0)
-        {
-            Log_Debug(msgBuffer);
-            lp_azureMsgSendWithProperties(msgBuffer, telemetryMessageProperties, NELEMS(telemetryMessageProperties));
-        }
-    }
-}
-```
-
-------
-
-## Step 5: Deploy the application to Azure Sphere
+## Step 4: Deploy the application to Azure Sphere
 
 ### Start the app build and deployment process
 
@@ -156,7 +111,7 @@ static void MeasureSensorHandler(EventLoopTimer* eventLoopTimer)
 
 ------
 
-## Step 6: Expected device behavior
+## Step 5: Expected device behavior
 
 ### Avnet Azure Sphere MT3620 Starter Kit
 
@@ -176,7 +131,7 @@ static void MeasureSensorHandler(EventLoopTimer* eventLoopTimer)
 
 1. The User LED will blink every 5 seconds when connected to Azure.
 
-## Step 7: Display the device telemetry in IoT Central
+## Step 6: Display the device telemetry in IoT Central
 
 Switch back to the Azure IoT Central web portal.
 

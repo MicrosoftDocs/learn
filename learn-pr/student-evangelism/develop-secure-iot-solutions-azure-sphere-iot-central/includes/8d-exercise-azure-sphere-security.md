@@ -16,7 +16,7 @@
    | **API token**                                                | This can be generated from your Azure IoT Central application. In the Azure IoT Central application, select **Administration**, select **API Tokens**, select **Generate Token**, provide a name for the token (for example, "AzureSphereSample"), select **Administrator** as the role, and click **Generate**. Copy the token to the clipboard. The token starts with **SharedAccessSignature**. |
    | **ID Scope**                                                 | In the Azure IoT Central application, select **Administration** > **Device Connection** and then copy the **ID Scope**. |
 
-4. Run the **ShowIoTCentralConfig** tool. Now follow the prompts that the tool provides, and copy the information from the output into the **app_manifest.json** file in Visual Studio Code.
+4. Run the **ShowIoTCentralConfig** tool and follow the prompts that the tool provides.
 
    > [!NOTE]
    > Your organization might require consent for the **ShowIoTCentralConfig** tool to access your Azure IoT Central data in the same way that the Azure API requires such consent.
@@ -48,10 +48,7 @@ We need the ID of the Azure Sphere tenant that is now trusted by Azure IoT Centr
    The output of this command will look similar to the following.
 
      ```text
-     Default Azure Sphere tenant ID is 'yourSphereTenant' (99999999-e021-43ce-9999-fa9999499994).
+     Default Azure Sphere tenant ID is '99999999-e021-43ce-9999-fa9999499994'.
      ```
 
-   The tenant ID is the numeric value inside the parentheses.
-
 2. Copy the tenant ID to Notepad, as you'll need it soon.
-

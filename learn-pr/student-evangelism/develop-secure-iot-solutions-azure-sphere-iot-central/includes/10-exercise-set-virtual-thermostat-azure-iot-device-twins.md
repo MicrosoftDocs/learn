@@ -31,7 +31,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 ## Step 3: Configure the Azure IoT connection information
 
 1. Open the **app_manifest.json** file.
-2. You'll need to redo the settings for the **app_manifest.json** file. Either copy the settings from Notepad if you still have it open, or copy them from the **app_manifest.json** file you created in the previous exercise.
+2. You'll need to redo the settings for the **app_manifest.json** file. Either copy the settings from Notepad if you still have it open or copy them from the **app_manifest.json** file you created in the previous exercise.
 3. Paste the contents of the clipboard into **app_manifest.json** and save the file.
 
 ------

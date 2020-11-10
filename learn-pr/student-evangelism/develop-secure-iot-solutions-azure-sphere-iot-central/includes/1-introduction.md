@@ -2,7 +2,7 @@ Building and running an application on microcontroller Internet of Things (IoT) 
 
 With Azure Sphere, you can build IoT solutions that are secure by default with the confidence that your device is protected, your application is protected, and data is protected in transit.
 
-You can build applications with Visual Studio or Visual Studio Code, or integrate with your existing toolchains on Windows and Linux. Visual Studio and Visual Studio Code development environments provide integrated microcontroller debuggers and full source-code control, along with collaboration and productivity tools.
+You can build applications with Visual Studio or Visual Studio Code or integrate with your existing toolchains on Windows and Linux. Visual Studio and Visual Studio Code development environments provide integrated microcontroller debuggers and full source-code control, along with collaboration and productivity tools.
 
 ------
 
@@ -57,11 +57,12 @@ Maintaining the room conditions accurately is critical for managing the laborato
 The proposed new system would have the following factors:
 
 * It would need the sensors within the lab at multiple points.
+* The system must be secure from attack as some experiments are very sensitive and expensive.
 * These sensors will automate the reading of air pressure, temperature, humidity, and light conditions at defined intervals.
 * The sensor data from the devices will be transmitted securely for the analysis of data trends.
 * Able to control a heating, ventilation, and air conditioning unit (HVAC) to automatically adjust the environment to match requires for lab experiments.
 
-This solution will thus provide a platform to create secure IoT solutions without worrying about the underlying security vulnerabilities. Additionally, the system can trigger an alarm or alert message to a concerned authority when any of the defined variables drops below a specific threshold range.
+The solution must be built on an IoT platform that is highly secure, that is protected from attack and software bugs. Additionally, the system can trigger an alarm or alert message to a concerned authority when any of the defined parameters fall outside of expected ranges.
 
 ![The illustration shows an Azure Sphere dashboard based on scenario.](../media/azure-sphere-dashboard.png)
 
