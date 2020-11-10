@@ -1,33 +1,27 @@
-# INTRO UNIT EXAMPLE
+# Introduction
 
-(Guidance: https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductions?branch=master)
+Package registries allow developers to share and use code libraries easily and across development
+workstations. If developers are familiar with public package registries, like npm or NuGet, deploying private
+packages is another story.
 
-[topic sentence]
+GitHub Packages allow development teams to share code libraries - NPM, NuGet, Maven, RubyGems - and containers
+directly within GitHub. These packages can be public, or restricted to specific people using the same secure login
+for your code and packages. In conjunction with GitHub Actions - that we'll use in this module - you can automate
+the packaging and publication of your code libraries and containers in minutes.
 
-The C# programming language allows you to build many types of applications, from business applications to analyze and process data, dynamic web applications, games, financial or scientific applications, cloud-based applications, mobile applications and more.
-
-[scenario]
-
-Since you’re just getting started, suppose you simply want to create a MadLibs-style game that prompts a user for the names of people, places, and things and combines them in a humorous way and displays them back to the user. You would need to create simple logic to accept user input, combine user input with pre-written hard-coded text, and display it to the user.
-
-[prose TOC]
-
-In this module, you will create an application that accepts user input from the keyboard, combine that input with hard-coded text, and present the final result back to the user. You’ll learn some initial concepts like basic C# syntax including several common operators, the string data type and how to create literal strings, how to initialize variables then set and retrieve values from a variable, why you would want to comment out a line of code, how your code is structured into classes and methods and how to call methods.
-
-[goal]
-
-By the end of this module, you will be able to build simple applications that can accept user input, combine that input with literal text, and output the result to the user.
+In this module, you learn how to automate building and publishing container images into GitHub Packages.
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+By the end of this module, you will:
 
-- Use complete sentences.
-- End each sentence with a period.
-- This should be a bulleted list containing the items in the prose TOC.
+- Understand when to use a Package Repository
+- Set up a Continuous Integration (CI) workflow with GitHub Actions
+- Create a Dockerfile
+- Build a container image in CI
+- Run locally a container image hosted on GitHub Docker Registry
 
 ## Prerequisites
 
-- You don't need a complete sentence here
-- List the tools and level of experience
-
+- A GitHub account
+- A basic knowledge about Docker and Docker Registry

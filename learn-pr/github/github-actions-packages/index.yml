@@ -9,16 +9,17 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Leverage GitHub Actions to publish to GitHub Packages
-summary: TODO
+summary: Publish automatically and securely your code libraries or Docker images with GitHub Packages. You'll also locally run Docker images published into GitHub Packages.
 abstract: |
   By the end of this module, you will be able to:
-  - Summarize the functionality of GitHub Packages and the role package management plays in the software development lifecycle.
-  - Describe when to use GitHub Packages within a GitHub repository.
-  - Use the repository's source code to build artifacts and store them in GitHub Packages.
-  - Demonstrate how to save repository build artifacts.
-  - Demonstrate how to access saved build artifacts.
+  - Understand when to use a Package Repository
+  - Set up a Continuous Integration (CI) workflow with GitHub Actions
+  - Create a Dockerfile
+  - Build a container image in CI
+  - Run locally a container image hosted on GitHub Docker Registry
 prerequisites: |
-  - TODO
+  - A GitHub account
+  - A basic knowledge about Docker and Docker Registry
 ratingEnabled: true
 iconUrl: /learn/achievements/github-actions-packages.svg
 levels:

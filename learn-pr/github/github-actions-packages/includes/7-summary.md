@@ -1,21 +1,23 @@
-# EXAMPLE SUMMARY
+# Summary
 
-[Summarize the problem]
+Our goal in this module was to automate building and publishing container images into GitHub Packages.
 
-Our goal in this module was to build a simple software application that could accept input from the user and display information to the user.
+You learned about: 
 
-[How the tech solved the problem]
+- When to use a Package Repository
+- Set up a Continuous Integration (CI) workflow with GitHub Actions
+- Create a Dockerfile
+- Build a container image in CI
+- Run locally a container image hosted on GitHub Docker Registry
 
-By using basic C# syntax, the dotnet CLI, the Console class in the .NET Base Class Library and several developer tools already installed into the Azure Cloud Shell, we were able to ask the user to enter their name, store it in a variable and combine it with literal string data to display a new message.
+By using GitHub Actions, we were able to build our code and test it, build a container image and then publish it to GitHub Packages.
 
-[Experience without product]
-???
+While you can do all these steps in your local environment, we've automated the process. So, it will now run each time you made a change 
+in the `Dockerfile`. With a small modification, we can run this automated process each time a pull request is opened, or merged into your main branch.
 
-[Business impact]
+## Learn more
 
-While our application may seem mundane as modern games go, most applications will perform these same basic features, including:
-Displaying output to a user
-Requesting input from a user
-Processing information -- combining it, formatting it, calculating it, etc.
+Here are some links to more information on the topics we discussed in this module.
 
-And so you’ve just taken your first steps to building more sophisticated applications that can retrieve input from a variety of sources, display it back to the user in a more graphical means or in a more structured way, and performing logic to enforce business or game rules.
+- [Publishing a Package](https://docs.github.com/en/free-pro-team@latest/packages/publishing-and-managing-packages/publishing-a-package)
+- [Using GitHub Packages with your project's ecosystem](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem)
