@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-synapse-studio.explore-monitor-hub
+title: Explore the monitor hub
+metadata:
+  title: Explore the monitor hub
+  description: "Explore the monitor hub"
+  ms.date: 11/10/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-explore-monitor-hub.md)]

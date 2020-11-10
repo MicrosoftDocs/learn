@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-synapse-studio.explore-orchestrate-hub
+title: Explore the orchestrate hub
+metadata:
+  title: Explore the orchestrate hub
+  description: "Explore the orchestrate hub"
+  ms.date: 11/10/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-explore-orchestrate-hub.md)]

@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.explore-azure-synapse-studio
+metadata:
+  title: Explore Azure Synapse Studio
+  description: "Take a tour of the core application used to interact with the various components of Azure Synapse Analytics."
+  ms.date: 11/10/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore Azure Synapse Studio
+summary: Take a tour of the core application used to interact with the various components of Azure Synapse Analytics.
+abstract: |
+  In this module, you will:
+  - Use Azure Synapse Studio
+  - Understand the Azure Synapse Analytical processes
+  - Explore the Data Hub
+  - Explore the Develop Hub
+  - Explore the Orchestrate Hub
+  - Explore the Monitor Hub
+  - Explore the Manage Hub
+prerequisites: |
+  * Before taking this module, it is recommended that you complete Data Fundamentals.
+iconUrl: /learn/achievements/explore-azure-synapse-studio.svg
+levels:
+- beginner
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.explore-azure-synapse-studio.introduction
+- learn.wwl.explore-azure-synapse-studio.use
+- learn.wwl.explore-azure-synapse-studio.understand-analytical-processes
+- learn.wwl.explore-azure-synapse-studio.explore-data-hub
+- learn.wwl.explore-azure-synapse-studio.exercise-explore-data-hub
+- learn.wwl.explore-azure-synapse-studio.explore-develop-hub
+- learn.wwl.explore-azure-synapse-studio.exercise-explore-develop-hub
+- learn.wwl.explore-azure-synapse-studio.explore-orchestrate-hub
+- learn.wwl.explore-azure-synapse-studio.exercise-explore-orchestrate-hub
+- learn.wwl.explore-azure-synapse-studio.explore-monitor-hub
+- learn.wwl.explore-azure-synapse-studio.exercise-explore-monitor-hub
+- learn.wwl.explore-azure-synapse-studio.explore-manage-hub
+- learn.wwl.explore-azure-synapse-studio.exercise-explore-manage-hub
+- learn.wwl.explore-azure-synapse-studio.knowledge-check
+- learn.wwl.explore-azure-synapse-studio.summary
+badge:
+  uid: learn.wwl.explore-azure-synapse-studio.badge
