@@ -11,7 +11,7 @@ When you deploy a resource in Azure, you'll often need to choose the region wher
 > [!IMPORTANT]
 > Some services or VM features are only available in certain regions, such as specific VM sizes or storage types. There are also some global Azure services that don't require you to select a particular region, such as Azure Active Directory, Azure Traffic Manager, and Azure DNS.
 
-A few examples of regions are West US, Canada Central, West Europe, Australia East, and Japan West. Here's a view of all the available regions as of February 2020.
+A few examples of regions are West US, Canada Central, West Europe, Australia East, and Japan West. Here's a view of all the available regions as of June 2020.
 
 [//]: # (Maintainer note: the latest version of this image is available as an SVG from https://azure.microsoft.com/global-infrastructure/regions/ or https://azure.microsoft.com/global-infrastructure/geographies/, resampled smaller here for the initial view.)
 [ ![Global map of available Azure regions as of June 2020.](../media/regions-small.png) ](../media/regions-expanded.png#lightbox)
