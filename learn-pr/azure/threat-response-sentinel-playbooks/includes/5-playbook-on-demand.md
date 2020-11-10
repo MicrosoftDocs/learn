@@ -1,4 +1,4 @@
-Some incidents at Contoso might require further investigation before you run a playbook. Azure Sentinel allows you to run playbooks on demand to facilitate in-depth investigations. <!--Marjan, I added this previous sentence. Please check if it makes sense. -->
+Some incidents at Contoso might require further investigation before you run a playbook. Azure Sentinel allows you to run playbooks on demand to facilitate in-depth investigations. 
 
 ## Run a playbook on demand
 
