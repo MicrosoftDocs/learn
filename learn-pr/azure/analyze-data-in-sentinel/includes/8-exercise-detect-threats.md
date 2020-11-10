@@ -78,7 +78,7 @@ After completing this exercise, you will have created an incident rule from an e
 
 1. In the Azure portal, search for **Resource groups**.
 1. Select **azure-sentinel-rg**.
-1. In the header bar select **Delete resource group**.
+1. On the header bar, select **Delete resource group**.
 1. In the **TYPE THE RESOURCE GROUP NAME:** <!--Marjan, please confirm that the field name is in all capital case in the UI.--> field type the name of the resource group **azure-sentinel-rg** and select **Delete**. 
 
 
