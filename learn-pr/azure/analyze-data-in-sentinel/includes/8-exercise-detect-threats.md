@@ -74,11 +74,11 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
 
 After completing this exercise, you will have created an incident rule from an existing template and created a scheduled query rule by using your own query code.
 
-## Clean Up the Resources
+## Clean up the resources
 
 1. In the Azure portal, search for **Resource groups**.
 1. Select **azure-sentinel-rg**.
 1. In the header bar select **Delete resource group**.
-1. In the **TYPE THE RESOURCE GROUP NAME:** field type the name of the resource group **azure-sentinel-rg** and select **Delete**.
+1. In the **TYPE THE RESOURCE GROUP NAME:** <!--Marjan, please confirm that the field name is in all capital case in the UI.--> field type the name of the resource group **azure-sentinel-rg** and select **Delete**. 
 
 
