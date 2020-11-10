@@ -2,7 +2,7 @@ Here you will run commands to construct more powerful statements where cmdlets a
 
 ## Discover the most used processes on your machine
 
-Part of managing your machine can be to discover what processes run on it and how much memory and CPU they consume. Knowing that helps you realize what the machine spends its resources on. You can use this information to make decisions like wether you want to introduce new processes on your machine, to leave it be, or if you want to free up resources by closing down costly processes. The more you know what goes on in your machine the better.
+Part of managing your machine can be to discover what processes run on it and how much memory and CPU they consume. Knowing that helps you realize what the machine spends its resources on. You can use this information to make decisions like whether you want to introduce new processes on your machine, to leave it be, or if you want to free up resources by closing down costly processes. The more you know what goes on in your machine the better.
 
 Run the command `Get-Process`, using the cmdlets `Where-Object` and `Sort-Object` piped in:
 
@@ -22,7 +22,7 @@ The resulting output differs per machine, but should present all processes with 
 
 ## Compare formatting approaches
 
-Different formats like a table formatting or list formatting makes different sense depending on what type of data you look at. Some cmdlets use a certain type of formatting by default. You can override the _default_ formatting by using a formatting cmdlet to suit your needs.
+Different formats like a table formatting or list formatting make different sense depending on what type of data you look at. Some cmdlets use a certain type of formatting by default. You can override the _default_ formatting by using a formatting cmdlet to suit your needs.
 
 1. Run the following command `Get-Member`:
 
@@ -30,7 +30,7 @@ Different formats like a table formatting or list formatting makes different sen
    "a string" | Get-Member
    ```
 
-   The output shows as a table and lists all the members. The first few lines of the output looks like so:
+   The output shows as a table and lists all the members. The first few lines of the output look like so:
 
    ```output
     Name                 MemberType            Definition
@@ -47,7 +47,7 @@ Different formats like a table formatting or list formatting makes different sen
    "a string" | Get-Member | Format-List
    ```
 
-   The resulting output would now show a little differently. The first few lines of the output response now shows like a list instead:
+   The resulting output would now show a little differently. The first few lines of the output response now show like a list instead:
 
    ```output
     TypeName   : System.String

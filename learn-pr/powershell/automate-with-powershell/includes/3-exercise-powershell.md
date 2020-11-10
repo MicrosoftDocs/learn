@@ -26,7 +26,7 @@ To make sure you are correctly set up to work in PowerShell, running a command t
     WSManStackVersion              3.0
    ```
 
-   The output above is formatted as a table and gives you various information on not only what version of PowerShell you are running but what platform you are on, what edition and more. If all you wanted was to know what version of PowerShell you are running, you can narrow it down by running a modified version of `$PSVersionTable`.
+   The output above is formatted as a table and gives you various information on not only what version of PowerShell you are running but what platform you are on, what edition and more. If you want to know what version of PowerShell you are running, you can narrow it down by running a modified version of `$PSVersionTable`.
 
 1. Run `$PSVersionTable.PSVersion`:
 
@@ -46,7 +46,7 @@ To make sure you are correctly set up to work in PowerShell, running a command t
 
 ## Check execution policy
 
-Checking the execution policy is about knowing whether you are allowed to run PowerShell scripts, where you instead of running interactive commands in the terminal are running files ending with **.ps1**. Generally a script should not be trusted unless it comes from a trusted publisher, so it's good idea to restrictive with the execution policy.
+Checking the execution policy is about knowing whether you are allowed to run PowerShell scripts, where you instead of running interactive commands in the terminal are running files ending with.ps1**. Generally a script should not be trusted unless it comes from a trusted publisher, so its good idea to restrictive with the execution policy.
 
 Run the command `Get-ExecutionPolicy`:
 
