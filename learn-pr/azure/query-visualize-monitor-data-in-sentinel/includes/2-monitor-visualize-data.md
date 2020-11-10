@@ -28,13 +28,13 @@ From the **Queries** drop-down menu you can filter these queries based on:
 
 You can start predefined queries by selecting **Run, which will redirect you in the query pane, where you can observe the query structure and the results.
 Contoso is concerned about unauthorized uses, and they can select the predefined query **Unauthorized Users**, as shown in the following screenshot:
-
+<!-- Missing "**" after "Run". -->
 ![Screenshot that present Unauthorized users](../media/02-Unauthorized-Users.png)
 
 ### Query Explorer
 
 The Query Explorer link in the page header helps you to access your previously saved queries. You can also access some **Solution Queries** that basically filter most common queries that you can use to filter the data. From the Solution Queries,** you can either run the query or organize the query in the favorites section by clicking on the star symbol.
-
+<!-- Missing "**" before "Solution Queries". Fix the position of the ",". -->
 ### Table pane
 
 The **Tables** pane is grouping logs from different solutions into tables. You can expand the solution group and see all the logs that are collected. You can select one of the logs from the tables pane, and you can either preview the data, or add that log in Favorites section.
@@ -47,6 +47,7 @@ The following screenshot presents the logs collected in Azure Sentinel solution.
 
 You can use the Query pane to write queries that will retrieve data based on the expression that you provide. The query pane can help you in writing a right query by providing a suggestion and automatic filling of the expected elements of the query.
 You can use rich capabilities of Kusto query language (KQL) to write a query that retrieves data from the logs. One example that identify deleted Virtual machines is listed in the following query code:
+<!-- Replace "Virtual" with "virtual", it needs to be lower case since it's used in a generic way. -->
 
 ```kusto
 AzureActivity
@@ -67,6 +68,7 @@ The **Time Range** field lets you change the time in the past from when the resu
 You can also create a link for the query and share with other colleagues by selecting **Copy link to query.** You can also copy the query text.
 From the header toolbar in the query pane, you can create either a **New Azure Monitor alert, or **New Azure Sentinel alert.** If you select to create a new Azure Sentinel alert, you will be directed to the steps of creation of analytics rule.
 You can export the query into one of the following formats:
+<!-- Missing "**" after "New Azure Monitor alert". -->
 
 - **Export to CSV**. This will export all the columns both visible and hidden into a CSV file, that you can open, for example,  with Microsoft Excel.
 - **Export to CSV-Displayed Columns**. This will only export those columns that are shown in the results windows of the query
