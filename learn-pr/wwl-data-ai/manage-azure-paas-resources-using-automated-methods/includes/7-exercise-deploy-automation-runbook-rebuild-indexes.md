@@ -4,26 +4,32 @@ You have been hired as a Senior Data Engineer to help automate day to day operat
 
 1. When the VM lab environment opens use the password on the **Resources** tab for the **Student** account to sign in to Windows.
 
-1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/).
+1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/). This should be the home page of the browser.
 
-1. The username and password information to sign into the Azure Portal are in the  **Resources** tab above these instructions. If you select the **Username** the environment will type the text for you.
+1. The username and password information to sign into the Azure portal are in the  **Resources** tab above these instructions. If you select the **Username** it will be filled in for you.
 
-1. Repeat this for the **Password** field.
+1. Select **Next**.
+
+1. Select the **Password** text in the **Resources** tab to have that filled in for you, then select **Sign in**.
+
+1. Select **Yes**.
+
+1. On the **Welcome to Azure** popup, select **Maybe later**.
 
 ## Create an Automation Account
 
 1. In the Azure Portal in the search bar type **automation** and then select **Automation Accounts** from the search results.
 
-    :::image type="content" source="../media/dp-3300-module-66-lab-23.png" alt-text="Screenshot of the .":::
+    :::image type="content" source="../media/dp-3300-module-66-lab-23.png" alt-text="Screenshot of selecting the Automation Accounts.":::
 
     Select **+ Add**.
 
 1. On the **Add Automation Account** page enter this information:
 
-    :::image type="content" source="../media/dp-3300-module-66-lab-25.png" alt-text="Screenshot of the .":::
+    :::image type="content" source="../media/dp-3300-module-66-lab-25.png" alt-text="Screenshot of the Add Automation Account screen.":::
 
-    - Name: **DP3006Lab06**
-    - Resource Group: **DP300-Lab06**
+    - Name: **autoAccount**
+    - Resource Group: **automateLab**
     - Location: Use the default.
 
 1. Select **Create**.
