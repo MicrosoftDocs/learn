@@ -1,7 +1,6 @@
 ## Exercise: Threat detection with Azure Sentinel Analytics
 
-As a security engineer working for Contoso, you recently notice that significant number of VMs has been deleted from your Azure subscription. You want to analyze that occurrence in the future and been alerted when similar activity occurs.
-You decide to implement an analytics rule to create an incident when someone delete existing VM.
+As a security engineer working for Contoso, you recently notice that a significant number of VMs has been deleted from your Azure subscription. You want to analyze this  occurrence and be alerted when a similar activity occurs in the future. You decide to implement an analytics rule to create an incident when someone deletes an existing VM.
 
 In this exercise, you will explore an Azure Sentinel analytics rule. You will perform the following tasks:
 - Create an incident rule from an existing template.
@@ -9,14 +8,14 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
 - Adjust KQL from an existing analytic rule.
 
 > [!NOTE]
-> If you choose to perform the exercise in this module be aware you may incur costs in your Azure Subscription. To estimate the cost refer to [Azure Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/)
+> If you choose to perform the exercise in this module, be aware you may incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/)
 
-## Task 1: Create an analytics rule from analytics rule wizard.** 
+## Task 1: Create an analytics rule from analytics rule wizard 
 
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Sentinel workspace.
-2. In the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
-3. In the **Azure Sentinel | Analytics** blade, select **Create** and then select **Scheduled Query Rule**.
-4. In the **General** page provide the inputs in the following table and then select  **Next:Set rule logic.**
+2. On the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
+3. On the **Azure Sentinel | Analytics** blade, select **Create** and then select **Scheduled Query Rule**.
+4. On the **General** page, provide the inputs in the following table, and then select  **Next:Set rule logic**.
 
 |||
 | --- | --- |
@@ -26,9 +25,9 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
 | Severity | Select the **Severity** drop-down menu to categorize the level of importance of the alert as one of four options: High, Medium, Low, or Informational. |
 | Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generate large number of false positives. |
 
-![Screenshot Analytics Rule wizard-Create new rule](../media/07-Analytics-rule-wizzard-Create-new-rule.PNG)
+:::image type="content" source="../media/07-Analytics-rule-wizzard-Create-new-rule.PNG" alt-text="Screenshot Analytics Rule wizard-Create new rule." border="true":::
 
-6.In the **Set rule logic** page, int the **Rule query** section enter the following query:
+6. On the **Set rule logic** page, in the **Rule query** section, enter the following query:
 
 ```kusto
 AzureActivity
@@ -38,9 +37,9 @@ AzureActivity
 | extend IPCustomEntity = CallerIpAddress
 ```
 
-7. In the **Result simulation** section **Test with current data** and observe the results.
+7. In the **Result simulation** section, select **Test with current data**, and then observe the results.
 
-![Screenshot Analytics Rule Logic](../media/07-Rule-Logic.PNG)
+:::image type="content" source="../media/07-Rule-Logic.PNG" alt-text="Screenshot Analytics Rule Logic." border="true":::
 
 8. In the  **Map entities**  section, you can define the entities that are returned as part of the query rule and that you can use to perform in-depth analysis.
 9. In the **Query Scheduling** section, you can configure how often the query should run, and how far in history to look back. Accept the default values.
@@ -52,17 +51,17 @@ AzureActivity
 10. In the **Alert grouping** section, select **Enabled** to group related alerts into incidents, and ensure that **Grouping alerts into a single incident if all the entities match (recommended)** is selected.
 11. Ensure that **Re-open closed matching incidents** is **Disabled**, and then select **Next: Automated response**.
 
-![Screenshot Analytics Incident Settings](../media/07-Incident-Settings.PNG)
+:::image type="content" source="../media/07-Incident-Settings.PNG" alt-text="Screenshot Analytics Incident Settings." border="true":::
 
 12. In the **Automated response**  page, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
-12. Select **Next:Review**.
+13. Select **Next:Review**.
 14. In the **Review and Create** page, verify that the validation was successful, and then select **Create**.
 
-**Task 2: Create Analytics rule from existing template.**
+**Task 2: Create an analytics rule from an existing template
 
-1. In the Azure portal, search for and select Azure Sentinel and select the previously created Sentinel workspace.
-2. In the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
-3. In the **Azure Sentinel | Analytics** blade, select **Rule templates.**
+1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Sentinel workspace.
+2. On the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
+3. On the **Azure Sentinel | Analytics** blade, select **Rule templates.**
 4. In the search field, enter and select **Create incidents based on Azure Security Center alerts**.  
 5. In the details pane, select **Create rule**.
 6. In the **General** pane, observe the name of the analytics rule, and verify that the **Status** of the rule is **Enabled**.
