@@ -8,8 +8,8 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to
-summary: Learn how to
+title: Manage and automate your machine by using PowerShell commands 
+summary: This module teaches you what PowerShell is and what it's used for. It also teaches you how to compiled commands, cmdlets. Additionally it teaches you to construct powerful pipelines using pipes and more than one cmdlets in a pipeline and how to filter and format.
 abstract: |
   After completing this module, you'll be able to:
   - Understand what PowerShell is and what you can use it for.
