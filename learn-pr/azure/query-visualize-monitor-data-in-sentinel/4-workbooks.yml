@@ -2,8 +2,8 @@
 uid: learn.azure.query-visualize-monitor-data-in-sentinel.4-workbooks
 metadata:
   title: Use default Azure Sentinel workbooks
-  description: TODO
-  ms.date: TODO
+  description: Use default Azure Sentinel workbooks
+  ms.date: 11/10/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -15,31 +15,27 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "Which one of the elements cannot be part of the workbook?"
     choices:
-    - content: "Answer 1"
+    - content: "Charts"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "You can create a workbook that contains different types of charts to visualize the data."
+    - content: "Tables"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
-      isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
-  - content: "Question 2"
+      explanation: "You can create a workbook that contains tables.
+    - content: "Videos"
+      isCorrect: true
+      explanation: "Workbook cannot contains videos."
+  - content: "In which section of the Azure AD Sign-in logs workbook you can find information that users were required multifactor authentication MFA to validate their identity.
+
+ "
     choices:
-    - content: "Answer 1"
+    - content: "Sign-in Location"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "Sign-in Location shows from which location the user sign-in"
+    - content: "Conditional access status"
+      isCorrect: true
+      explanation: "Conditional access status table shows which users were required multifactor authentication MFA to validate their identity."
+    - content: "Sign-ins by Device."
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
-      isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "Sign-ins by Device list devices used by the users to sign-in in Azure AD."
