@@ -20,7 +20,7 @@ Properties can be used in the following ways:
 
 From the IoT Central device properties tab, you can set the desired temperature property. Azure IoT Central requests Azure IoT Hub to send a device twin message to the device. The device actions and acknowledges the request. Azure IoT Hub updates the device twin reported property and IoT Central then queries and display this reported property.
 
-![The illustration shows a device twin configuration pattern.](../media/azure-device-twins-c2d-pattern.png)
+![The illustration shows a cloud to device device twin configuration pattern.](../media/azure-device-twins-c2d-pattern.png)
 
 ### Steps to controlling the HVAC unit from IoT Central
 
@@ -81,7 +81,7 @@ The HVAC operating mode depends on the room temperature, it can be heating, or c
 
 ### Device-to-cloud updates
 
-![The illustration shows a device twin configuration pattern.](../media/azure-device-twins-d2c-pattern.png)
+![The illustration shows a device to cloud device twin configuration pattern.](../media/azure-device-twins-d2c-pattern.png)
 
 1. The Azure Sphere detects the HVAC operating mode has changed.
 1. The Azure Sphere sends a device twin message to report the new operating mode of the HVAC to Azure IoT Hub.

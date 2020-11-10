@@ -70,6 +70,6 @@ You can debug the Azure RTOS application running on Azure Sphere Cortex M4 Real-
     > [!NOTE]
     > You can learn how how to set breakpoints from this [Visual Studio Code Debugging](https://code.visualstudio.com/docs/editor/debugging#_breakpoints?azure-portal=true) article.
 
-    ![Set a breakpoint in Visual Studio Code](../media/visual-studio-debug-inter-core-thread.png)
+    ![Set a breakpoint in Visual Studio Code](../media/visual-studio-debug-intercore-thread.png)
 
 4. Leave Visual Studio Code and the app running with the breakpoint set. Next we are going to deploy a High Level app application to the Cortex A7 core which will request environment telemetry from the Real Time app running on the Cortex M4 core.
