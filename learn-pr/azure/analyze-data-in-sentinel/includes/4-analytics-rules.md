@@ -9,7 +9,7 @@ You can search for potential threats by using the built-in analytics rules that 
 - Machine learning (ML) behavior analytics
 - Scheduled alerts
 
-![Screenshot of rule templates in the Analytics home page](../media/03-rule-templates.PNG)
+:::image type="content" source="../media/03-rule-templates.PNG" alt-text="Screenshot of rule templates in the Analytics home page." border="true":::
 
 ## Fusion alerts
 
@@ -53,7 +53,7 @@ You can configure the following security solutions to pass their alerts to Azure
 
 > [!Note]
 > Microsoft unifies security information and event management (SIEM) and extended detection and response (XDR) terminology across their security products.
-> | Old Name | New Name |
+> | Earlier name | New name |
 > | --- | --- |
 > | Azure Advanced Threat Protection | Microsoft Defender for Identity |
 > | Microsoft Defender Advanced Threat Protection | Microsoft Defender for Endpoint |
