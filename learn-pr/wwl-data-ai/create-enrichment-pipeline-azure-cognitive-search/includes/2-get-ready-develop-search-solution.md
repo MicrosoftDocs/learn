@@ -50,7 +50,7 @@ To set up the development environment, you will need a Microsoft Windows 10, Lin
         wsl --set-default-version 2
         ```
 
-    **More Information**: For more details, see the [WSL documentation](https://docs.microsoft.comwindows/wsl/install-win10?azure-portal=true).
+    **More Information**: For more details, see the [WSL documentation](https://docs.microsoft.com/windows/wsl/install-win10?azure-portal=true).
 
 3. Download and install [Docker Desktop](https://www.docker.com/get-started?azure-portal=true), using the appropriate download for your operating system. Follow the prompts to install Docker, and sign out and back in if prompted. Then wait for Docker to start.
 4. Download and install [Visual Studio Code](https://code.visualstudio.com/Download?azure-portal=true), using the appropriate installer for your operating system. After Visual Studio Code has been installed, start it and install any recommended extensions.

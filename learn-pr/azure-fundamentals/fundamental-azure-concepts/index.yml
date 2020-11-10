@@ -16,7 +16,8 @@ abstract: |
   - Describe the differences between categories of cloud services
   - Describe the differences between types of cloud computing
 prerequisites: | 
-  - You should be familiar with basic computing concepts and terminology
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /learn/achievements/fundamental-azure-concepts.svg
 levels:
 - beginner
