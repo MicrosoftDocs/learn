@@ -4,13 +4,19 @@ You have been hired as a Senior Data Engineer to help automate day to day operat
 
 1. When the VM lab environment opens use the password on the **Resources** tab for the **Student** account to sign in to Windows.
 
-1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/).
+1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/). This should be the home page of the browser.
 
-1. The username and password information to sign into the Azure Portal are in the  **Resources** tab above these instructions. If you select the **Username** the environment will type the text for you.
+1. The username and password information to sign into the Azure portal are in the  **Resources** tab above these instructions. If you select the **Username** it will be filled in for you.
 
-1. Repeat this for the **Password** field.
+1. Select **Next**.
 
-1. In the search bar at the top of the Azure Portal, type **SQL**, and select **SQL databases**. Select the database name.
+1. Select the **Password** text in the **Resources** tab to have that filled in for you, then select **Sign in**.
+
+1. Select **Yes**.
+
+1. On the **Welcome to Azure** popup, select **Maybe later**.
+
+1. In the search bar at the top of the Azure Portal, type **SQL**, and select **SQL databases**. Select the **sample-db-with-tde**  database name.
 
     :::image type="content" source="../media/dp-3300-module-66-lab-11.png" alt-text="Screenshot of selecting a SQL database.":::
 
@@ -24,7 +30,7 @@ You have been hired as a Senior Data Engineer to help automate day to day operat
 
     :::image type="content" source="../media/dp-3300-module-66-lab-13.png" alt-text="Screenshot of selecting New alert rule.":::
 
-1. You will notice that the resource is already populated for you with the database you created. Under the **Condition** section, select the **Select condition** link.
+1. Under the **Condition** section, select the **Select condition** link.
 
     :::image type="content" source="../media/dp-3300-module-66-lab-14.png" alt-text="Screenshot of selecting the Select condition link.":::
 
@@ -32,11 +38,11 @@ You have been hired as a Senior Data Engineer to help automate day to day operat
 
     :::image type="content" source="../media/dp-3300-module-66-lab-15.png" alt-text="Screenshot of selecting CPU percentage.":::
 
-1. In **Threshold value** enter a value of **80**. Select **Done**.
+1. Check that the Operator is **Greater than**, the Aggregation type is **Average**. Then in **Threshold value** enter a value of **80**. Select **Done**.
 
     :::image type="content" source="../media/dp-3300-module-66-lab-16.png" alt-text="Screenshot of entering 80 and selecting Done.":::
 
-1. Under Action Groups (optional) section, select the **Select action group** link.
+1. Under **Actions** section, select the **Select action group** link.
 
     :::image type="content" source="../media/dp-3300-module-66-lab-17.png" alt-text="Screenshot of selecting the Select action group link.":::
 
@@ -54,9 +60,9 @@ You have been hired as a Senior Data Engineer to help automate day to day operat
 
     Enter the following information:
 
-    - Notifaction type: **Email/SMS message/Push/Voice**
+    - Notification type: **Email/SMS message/Push/Voice**
     - Name: **DemoLab**
-    - Email: You can enter a test email, or use the Azure Username
+    - Email: You can use the Azure Username you signed in with
 
 1. Select **OK** in the Email/SMS message/Push/Voice flyout.
 
@@ -65,3 +71,11 @@ You have been hired as a Senior Data Engineer to help automate day to day operat
     :::image type="content" source="../media/dp-3300-module-66-lab-21.png" alt-text="Screenshot of the Create alert rule page selecting the Create alert rule.":::
 
 1. On the Create alert rule screen, add an **Alert rule name** of **DemoAlert**, and then select **Create alert rule**.
+
+An email like this is sent to the email address that you entered, once the rule is created.
+
+:::image type="content" source="../media/email-confirmation.png" alt-text="Screenshot of the confirmation email.":::
+
+With the alert in place, if the CPU usage on average exceeds 80%, an email like this is sent.
+
+:::image type="content" source="../media/email-alert-received.png" alt-text="Screenshot of the confirmation email.":::
