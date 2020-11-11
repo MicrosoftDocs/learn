@@ -132,9 +132,3 @@ lp_directMethodSetClose();
 IoT Central commands are defined in the device template interface. In this example, the **RestartDevice** command schema type is **Integer**. The direct method payload is an integer which defines the number of seconds before restarting the device. The command name must match the RestartDevice Direct Method Binding declaration on the Azure Sphere.
 
 ![The illustration shows a device template interface.](../media/iot-central-device-template-interface-restart-device.png)
-
-1. From Azure IoT Central web portal, navigate to **Device template**, and select the **Azure Sphere** template.
-2. Click on **Interface** to list the interface capabilities.
-3. Scroll down and expand the **RestartDevice** capability.
-4. Review the definition of **RestartDevice**. The capability type is **Command**.
-5. The schema type is **Integer**. The direct method payload is an integer which defines the number of seconds before restarting the device.

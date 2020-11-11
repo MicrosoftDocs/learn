@@ -35,10 +35,15 @@ A device template is a blueprint that defines the characteristics and behaviors 
    ![The illustration shows how to create IoT device templates.](../media/iot-central-new-iot-device-template.png)
 
 1. Click the **IoT device** template type.
+
 1. Select **IoT device**.
+
 1. Click **Next:Customize**.
+
 1. Name your template **Azure Sphere**.
+
 1. Click **Next: Review**.
+
 1. Click **Create**.
 
 ### Import a capability model
@@ -47,43 +52,60 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 1. Click **Import capability model**.
    ![Import IoT Central capability model](../media/iot-central-import-capability-model.png)
+
 2. Navigate to the **Azure-Sphere** lab folder.
+
 3. Navigate to the **iot_central** folder.
+
 4. Select **Azure_Sphere_Developer_Learning_Path.json** and open it.
 
 ### Create a device visualization view
 
 1. Navigate to the **Views** menu.
+
 2. Select **Visualizing the device**.
    ![The illustration shows how add tile status.](../media/iot-central-add-view.png)
+
 3. Name the view **Telemetry**.
+
 4. Select **Temperature** from the **Select a telemetry** dropdown.
+
 5. Click **+ Telemetry**, and add **Humidity** from the **Select a telemetry** dropdown.
+
 6. Click **+ Telemetry**, and add **Pressure** from the **Select a telemetry** dropdown.
+
 7. Click **Add tile**.
+
 8. Click **Save** to save the view.
-   ![The illustration shows telemetry items.](../media/iot-central-add-tile-environment.png)
 
-
+![The illustration shows telemetry items.](../media/iot-central-add-tile-environment.png)
 
 ### Create a properties form
 
 1. Navigate to the **Views** menu.
+
 2. Select **Editing device and cloud data**.
    ![The illustration shows how to edit device and cloud data.](../media/iot-central-view-properties-create.png)
+
 3. Name the form **Properties**.
+
 4. Expand the **Properties** section.
+
 5. Select the following properties.
    - Last reported device restart time
    - Last reported HVAC operating mode
    - Last reported temperature
+
 6. Click **Add section**.
+
 7. Select the following property.
    - Desired Temperature
+
 8. Click **Add section**.
+
 9. Click **Save** to save the form.
 
-   ![The illustration shows the properties section.](../media/iot-central-add-tile-form.png)
+![The illustration shows the properties section.](../media/iot-central-add-tile-form.png)
 
 ### Publish the device template
 
@@ -118,19 +140,25 @@ A capability model is a JSON document that describes the shape of the telemetry 
 ### Create an Enrollment Group
 
 1. From IoT Central, go to **Administration** > **Device Connection** > **Manage primary certificate**.
+
 2. Create an enrollment group
+
 3. Name the enrollment group **Azure Sphere**
+
 4. Select Certificates (X.509) from the Attestation type dropdown.
+
 5. Click Save
 
 ### Upload the Azure Sphere tenant CA certificate to Azure IoT Central and generate a verification code
 
 1. Click **+ Manage primary**.
+
 2. Click the folder icon next to the **Primary** box and navigate to the directory where you downloaded the certificate. If you don't see the .cer file in the list, make sure that the view filter is set to **All files (*)**. Select the certificate and then click the gear icon next to the **Primary** box.
 
 3. The **Primary Certificate** dialog box appears. The **Subject** and **Thumbprint** fields contain information about the current Azure Sphere tenant and primary root certificate.
 
-4. Click the **Generate verification code. 
+4. Click the **Generate verification code.
+
 5. Copy the verification code to the clipboard.
 
    ![The illustration shows how to verify a certificate.](../media/iot-central-certificate-verify.png)

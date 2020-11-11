@@ -3,8 +3,11 @@
 1. Start Visual Studio Code to open your project.
 
 2. Click **Open folder**.
+
 3. Open the **Azure-Sphere lab** folder.
+
 4. Open the **Lab_4_Direct_Methods** folder.
+
 5. Click **Select Folder** or the **OK** button to open the project.
 
 ------
@@ -16,7 +19,9 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 The default developer board configuration is for the Avnet Azure Sphere Starter Kit. If you have this board, there's no additional configuration required.
 
 1. Open the **CMakeList.txt** file.
+
 2. Add a `#` at the beginning of the set Avnet line to disable it.
+
 3. Uncomment the `set` command that corresponds to your Azure Sphere device developer board.
 
    ```text
@@ -32,7 +37,9 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 ## Step 3: Configure the Azure IoT connection information
 
 1. Open the **app_manifest.json** file.
+
 2. You'll need to redo the settings for the **app_manifest.json** file. Either copy the settings from Notepad if you still have it open or copy them from the **app_manifest.json** file you created in the previous exercise.
+
 3. Paste the contents of the clipboard into **app_manifest.json** and save the file.
 
 ------
@@ -40,6 +47,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 ## Step 4: Start the app build deploy process
 
 1. Select **CMake: [Debug]: Ready** from the Visual Studio Code status bar.
+
 2. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application now running the Azure Sphere device.
 
 ------
@@ -51,6 +59,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 ![The illustration shows the Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
 
 1. The WLAN LED will blink every 5 seconds when connected to Azure.
+
 1. When you initiate the device restart direct method you will observe the device restarting.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
@@ -58,6 +67,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 ![The illustration shows the Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
 
 1. The WLAN LED will blink every 5 seconds when connected to Azure.
+
 1. When you initiate the device restart direct method you will observe the device restarting.
 
 ### Seeed Studio MT3620 Mini Dev Board
@@ -65,6 +75,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 ![The illustration shows the Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
 
 1. The User LED will blink every 5 seconds when connected to Azure.
+
 1. When you initiate the device restart direct method you will observe the device restarting.
 
 ------

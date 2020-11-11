@@ -1,9 +1,13 @@
 ## Step 1: Open the lab project
 
 1. Start Visual Studio Code.
+
 2. Click **Open folder**.
+
 3. Open the **Azure-Sphere lab** folder.
+
 4. Open the **Lab_2_Send_Telemetry_to_Azure_IoT** folder.
+
 5. Click **Select Folder** or the **OK** button to open the project.
 
 ------
@@ -138,16 +142,22 @@ Switch back to the Azure IoT Central web portal.
 ### Migrate your device
 
 1. Click **Devices** on the sidebar.
+
 1. Select your Azure Sphere device.
+
 1. Click **Migrate**.
     ![Migrate a device in IoT Central](../media/iot-central-migrate-device.png)
+
 1. Select the **Azure Sphere** template.
+
 1. Click **Migrate**.
 
 ### Display device telemetry
 
 1. Click your device to display the device dashboard.
+
 1. Select the **Telemetry** tab to view the device telemetry.
+
 1. Optional, but you can also rename your device. Click the **Rename** button and give your device a friendly name.
 
 Azure IoT Central does not update immediately. It may take a minute or two for the temperature, humidity, and pressure telemetry to be displayed.
