@@ -100,6 +100,7 @@ player_df.loc[(player_df['points'] >= 1600) & (player_df['DRR'] >= 15) & (player
 ```
 
 **Output**
+
 |  | ID | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 26 | 31 | 2049.0 | 1434.0 | 110.0 | 64.0 | 38.8 | 0.619 | 31.5 | 14.9 | 35.5 | 8.3 | 17.6 | 12.8 | 28.44 |
@@ -126,6 +127,7 @@ player_df.loc[player_df['ID'] == 34]
 ```
 
 **Output**
+
 | | ID | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 29 | 34 | 1743.0 | 1422.4 | 112.9 | 64.0 | 36.3 | 0.619 | 30.9 | 15.6 | 34.5 | 5.9 | 18.9 | 14.8 | NaN |

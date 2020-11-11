@@ -11,7 +11,7 @@ metadata:
 title: Knowledge check
 durationInMinutes: 5
 content: |
-  Answer the multiple choice questions to check your understanding of data cleansing and manipulation.
+  Answer questions to check your understanding of data cleansing and manipulation.
 quiz:
   questions:
   - content: "What does PER stand for in basketball stats?"

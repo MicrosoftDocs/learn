@@ -20,6 +20,7 @@ player_df.head()
 ```
 
 **Output**
+
 | | ID | points | possessions | team_pace | Unnamed: 4 | Unnamed: 5 | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 0 | 1 | 1893.0 | 1251.8 | 97.8 | NaN | NaN | 63.0 | 33.9 | 0.569 | 17.2 | 11.5 | 26.1 | 4.7 | 23.3 | 7.8 | 10.90 |
@@ -47,7 +48,7 @@ We can see that there are number of columns that are acronyms, let's break those
 - **REBR**: Rebound Rate, the percentage of missed shots that a player rebounds
 - **PER**: the player efficiency rating (PER), a measure of a player's per-minute productivity on the court
 
-While a lot of these data points make sense in the context of basketball, we can still start to cleanse our data even without a very technical understanding of each of these columns, so if you're not well versed in these terms, don't worry! There is still a lot to do to gain insights into the data. 
+While a lot of these data points make sense in the context of basketball, we can still start to cleanse our data even without a very technical understanding of each of these columns, so if you're not well versed in these terms, don't worry! There is still a lot to do to gain insights into the data.
 
 The most important thing to understand is that each of these columns is data that can be counted during a game, expect for PER. PER, or player efficiency rating, is a calculation based on all of the other player stats that determines "how good" a player is. This column can be used to predict how effecitive a player is during a game. As of writing this module, the NBA player with the highest PER is Michael Jordan, with a rating of 27.91 and the NBA player with the second highest rating, as well as the highest rating of currently active NBA players is LeBron James with a score of 27.49.
 
