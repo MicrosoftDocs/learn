@@ -26,7 +26,7 @@ With geographically redundant storage (GRS), your data is copied three times wit
 
 ### Read-access geo-redundant storage
 
-With read-access geo-redundant storage (RA-GRS), your secondary region isn't available for read access until the primary region fails. If you want to read from the secondary region, even if the primary region hasn't failed, use RA-GRS for your replication type.
+With read-access geo-redundant storage GRS, your secondary region isn't available for read access until the primary region fails. If you want to read from the secondary region, even if the primary region hasn't failed, use RA-GRS for your replication type.
 
 ### Zone-redundant storage
 
@@ -54,7 +54,6 @@ GZRS and RA-GZRS are currently available in the following regions:
 - US Central
 - US East
 - US East 2
-- US Central
 
 ### Paired regions
 
