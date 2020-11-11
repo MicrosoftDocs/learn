@@ -20,7 +20,7 @@ Create a new file in the space-jam folder called space-jam.ipynb by clicking on 
 
 Make sure the file opens into a notebook and that the Jupyter server is connected and the kernel is pointing to the desired Python version.
 
-![](../media/jupyter-file.png)  **EDITOR ADD ALT TEXT**
+![Screenshot of Visual Studio Code showing the space-jam.ipynb file loaded.](../media/jupyter-file.png)
 
 ## Download data with basketball stats
 

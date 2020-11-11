@@ -3,7 +3,7 @@ uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.3-fin
 metadata:
   title: 'Data cleansing part 1 : Find missing values'
   description: Explore the data and discover any missing values to reduce the data size for more accurate insights.
-  ms.date: 12/14/20
+  ms.date: 11/11/2020
   author: sguthals
   ms.author: shanama 
   ms.topic: interactive-tutorial
