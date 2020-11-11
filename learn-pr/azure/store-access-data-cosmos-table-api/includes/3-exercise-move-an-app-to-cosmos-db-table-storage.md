@@ -33,9 +33,9 @@ Let's start by creating a storage account. Later, you'll configure the app to st
 
 1. Check your configuration, and then click **Create**.
 
-1. Click **Configuration** on the left hand menue. Select **Secure transfer required** set to **Disabled**, and **Blob access tier** set to **Disabled**.
-
 It might take a few minutes for Azure to create your new storage account.
+
+1. Click **Configuration** on the left hand menue. Select **Secure transfer required** set to **Disabled**, and **Blob access tier** set to **Disabled**.
 
 ## Clone the Lenses app
 
