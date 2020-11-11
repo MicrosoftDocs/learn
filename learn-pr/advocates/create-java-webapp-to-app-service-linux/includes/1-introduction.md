@@ -1,4 +1,3 @@
-
 There are various services provided by companies, such as accounting systems, production management systems, inventory management systems, customer management systems, and deposit account management systems.
 When building such a system as a Web Application, it is necessary to build a rich web application in order to improve UX (User Experience). And in many systems, it accepts input from users, searches data for the input contents, displays a list, and updates it. For example, you can enter a name or address, select a product, and press the purchase button then you can purchase the product from the Internet.  
 In order to implement such a web application, it is necessary to handle the user input from a text field, display items, and processing when a button is pressed.

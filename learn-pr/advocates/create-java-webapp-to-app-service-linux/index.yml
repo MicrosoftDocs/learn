@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azure.build-webapp-java-tomcat
 metadata:
-  title: Build and Deploy the JavaServer Faces Application on Tomcat on Azure App Service
+  title: Build and Deploy a JavaServer Faces application on Tomcat on Azure App Service
   description: You'll learn how to create a Java web application and deploy it to Azure App Service. This will help you to understand the basics of building and deploying Java web applications.
   ms.date: 11/02/2020
   author: yoshioterada
