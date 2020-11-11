@@ -2,7 +2,7 @@ In [Space Jam: A New Legacy](https://spacejam.com?azure-portal=true) we see Dom 
 
 Before jumping into the module, be sure to make sure your environment is setup and ready to go. For this module, you will need a coding editor (we use Visual Studio Code), Python, and Jupyter notebooks (we use the Python extension for Visual Studio Code).
 
-If you haven't yet installed Visual Studio Code, you can find guides on the [Visual Studio Code Learn to Code site](https://aka.ms/LearnOnVSCode?azure-portal=true). Here, you can also find a Coding Pack for Python for Windows that will install everything you need for this module. If you're not on Windows, you can find a guide for seeting up your environment on the [Data Science in Visual Studio Code docs page](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true).
+If you haven't yet installed Visual Studio Code, you can find guides on the [Visual Studio Code Learn to Code site](https://aka.ms/LearnOnVSCode?azure-portal=true). Here, you can also find a Coding Pack for Python for Windows that will install everything you need for this module. If you're not on Windows, you can find a guide for setting up your environment on the [Data Science in Visual Studio Code docs page](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true).
 
 ## Set up Visual Studio Code with a new Jupyter file
 
@@ -28,11 +28,11 @@ Next, you will need some data. While you can gather data on your own, we have ga
 
 Visual Studio Code should show you this data if you click on the CSV file.
 
-![Viewing the CSV file in Visual Studio Code](../media/csv-in-vscode.png)
+![Viewing the CSV file in Visual Studio Code](../media/csv-in-visual-studio-code.png)
 
 ## Check local setup with Python libraries
 
-Now that you have your local environment and data ready to go, you should check to make sure everything is setup properly. 
+Now that you have your local environment and data ready to go, you should check to make sure everything is setup properly.
 
 In the top cell of the space-jam.ipynb file, import the Pandas library as pd. This will allow you to call Pandas functions using `pd.`.
 
