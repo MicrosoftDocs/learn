@@ -10,7 +10,7 @@
 
 5. Click **Select Folder** or the **OK** button to open the project.
 
-------
+
 
 ## Step 2: Set your developer board configuration
 
@@ -32,7 +32,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 4. Save the file. This will auto-generate the CMake cache.
 
-------
+
 
 ## Step 3: Configure the Azure IoT connection information
 
@@ -42,7 +42,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 3. Paste the contents of the clipboard into **app_manifest.json** and save the file.
 
-------
+
 
 ## Step 4: Start the app build deploy process
 
@@ -50,7 +50,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 2. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application now running the Azure Sphere device.
 
-------
+
 
 ## Expected device behavior
 
@@ -78,7 +78,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 1. When you initiate the device restart direct method you will observe the device restarting.
 
-------
+
 
 ## Testing Azure IoT Central commands
 
@@ -101,7 +101,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
     > [!NOTE]
     > You may see a timed-out message in the history, depending on how long it took you to step through the code in Visual Studio.
 
-------
+
 
 ## Close Visual Studio
 

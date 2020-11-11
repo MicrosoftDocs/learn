@@ -2,7 +2,7 @@ The upgraded microbiology laboratory temperature, pressure, and humidity sensor 
 
 In this unit, you will learn how to read data from the upgraded lab sensor and send the data to IoT Central so that can be monitored.
 
-------
+
 
 ## Solution architecture
 
@@ -20,7 +20,7 @@ To recap the solution architecture introduced in the Azure RTOS lab.
 6. The IoT Central user can also set the desired temperature for the room by setting a property. The property is set on the device via an IoT Hub device twin message.
 7. The Azure Sphere then sets the HVAC operating mode to meet the desired temperature.
 
-------
+
 
 ## Inter-core message contract
 
@@ -43,7 +43,7 @@ typedef struct
 } LP_INTER_CORE_BLOCK;
 ```
 
-------
+
 
 ## Inter-core security
 
@@ -72,7 +72,7 @@ The **AllowedApplicationConnections** property in the High-Level **app_manifest.
 }
 ```
 
-------
+
 
 ## Initializing inter-core communications
 
@@ -84,7 +84,7 @@ The inter-core callback function will be called when a message is received from 
 lp_interCoreCommunicationsEnable(lp_config.rtComponentId, InterCoreHandler);
 ```
 
-------
+
 
 ## Sending a request to the Real-time core application
 
@@ -111,7 +111,7 @@ static void MeasureSensorHandler(EventLoopTimer* eventLoopTimer)
 }
 ```
 
-------
+
 
 ## Receiving inter-core messages
 

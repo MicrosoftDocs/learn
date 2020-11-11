@@ -14,13 +14,13 @@ The terms you'll tackle:
   - [UART - Universal asynchronous receiver-transmitter](https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter?azure-portal=true)
 - **ISU:** You'll see references to **ISU** in the Azure Sphere and MediaTek documentation. An ISU is a serial interface block and is an acronym for "**I**2C, **S**PI, **U**ART." For more information, see the [MT3620 Support Status](https://docs.microsoft.com/azure-sphere/hardware/mt3620-product-status?azure-portal=true) page.
 
-------
+
 
 ## Azure Sphere peripheral interfaces for developer boards
 
 Multiple types of boards are available to use; let's look at the first one.
 
-------
+
 
 ## Avnet Azure Sphere MT3620 Starter Kit
 
@@ -28,7 +28,7 @@ Multiple types of boards are available to use; let's look at the first one.
 
 The Avnet Azure Sphere kit can be found [here](https://www.avnet.com/opasdata/d120001/medias/docus/196/Azure%20Sphere%20Starter%20Kit%20User%20Guide%20(v1.3).pdf?azure-portal=true).
 
-------
+
 
 ## Seeed Studio Azure Sphere MT3620 Development Kit
 
@@ -36,7 +36,7 @@ The Avnet Azure Sphere kit can be found [here](https://www.avnet.com/opasdata/d1
 
 The Seeed Studio Azure Sphere kit can be found [here](http://wiki.seeedstudio.com/Azure_Sphere_MT3620_Development_Kit?azure-portal=true).
 
-------
+
 
 ## Seeed Studio Azure Sphere MT3620 Mini Dev Board
 
@@ -44,7 +44,7 @@ The Seeed Studio Azure Sphere kit can be found [here](http://wiki.seeedstudio.co
 
 The Seeed Studio Mini Azure Sphere kit can be found [here](http://wiki.seeedstudio.com/MT3620_Mini_Dev_Board?azure-portal=true).
 
-------
+
 
 ## Introduction to the Azure Sphere learning path labs
 
@@ -58,7 +58,7 @@ Interesting things to note about the learning path libraries:
 
 For this module, you'll clone the [Azure Sphere Developer Learning Path repository](https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path).
 
-------
+
 
 ## Input and output peripherals
 

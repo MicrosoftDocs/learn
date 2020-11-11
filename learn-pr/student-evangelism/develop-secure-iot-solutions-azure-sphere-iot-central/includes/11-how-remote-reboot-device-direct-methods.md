@@ -1,6 +1,6 @@
 In this unit, you will learn how to remote restart an Azure Sphere from Azure IoT Central.
 
-------
+
 
 ## Understanding IoT Central commands
 
@@ -11,7 +11,7 @@ IoT Central is an Azure IoT Hub application and it sends commands to a device us
 > [!NOTE]
 > There are a number of reasons why you might need to remote restart a Azure Sphere. Device certificates, OS updates, and application updates are done on a 24 hour cycle or after the device has been restarted. You may have an operational reason why you need to restart the device to force an update.
 
-------
+
 
 ## Remote restarting an Azure Sphere
 
@@ -30,7 +30,7 @@ The following steps outline how an Azure IoT Central command uses Azure IoT Hub 
 1. The Azure Sphere is then restarted.
 1. Azure IoT Central queries and displays the device **ReportedRestartUTC** property .
 
-------
+
 
 ## Getting started with Direct method bindings
 
@@ -87,7 +87,7 @@ static LP_DIRECT_METHOD_RESPONSE_CODE RestartDeviceHandler(JSON_Value* json, LP_
 }
 ```
 
-------
+
 
 ## Azure Sphere PowerControls Capability
 
@@ -99,7 +99,7 @@ The RestartDeviceHandler function sets up a one shot timer that invokes the **De
 ]
 ```
 
-------
+
 
 ## How direct methods are mapped to handlers
 
@@ -125,7 +125,7 @@ Device twin bindings sets are closed in the **ClosePeripheralsAndHandlers** func
 lp_directMethodSetClose();
 ```
 
-------
+
 
 ## Azure IoT Central commands
 

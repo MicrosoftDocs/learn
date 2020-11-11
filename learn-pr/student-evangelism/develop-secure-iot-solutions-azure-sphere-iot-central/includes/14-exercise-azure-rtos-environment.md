@@ -14,7 +14,7 @@
     azsphere device restart
     ```
 
-------
+
 
 ## Step 2: Open the project
 
@@ -26,7 +26,7 @@
 
     ![Start Visual Studio Code](../media/vs-code-start.png)
 
-------
+
 
 ## Step 3: Set your developer board configuration
 
@@ -46,7 +46,7 @@ The default developer board configuration is for the AVENT Azure Sphere Starter 
 
 4. Save the file. This will auto-generate the CMake cache.
 
-------
+
 
 ## Step 4: Deploy the Azure RTOS application to Azure Sphere
 
@@ -56,7 +56,7 @@ The default developer board configuration is for the AVENT Azure Sphere Starter 
 
 2. From Visual Studio Code, press <kbd>F5</kbd> to build, deploy, start, and attached the remote debugger to the application now running the Azure Sphere device.
 
-------
+
 
 ## Step 5: Debugging Real-time core applications
 

@@ -10,7 +10,7 @@
 
 5. Click **Select Folder** or the **OK** button to open the project.
 
-------
+
 
 ## Step 2: Configure the Azure Sphere application
 
@@ -67,7 +67,7 @@ From Visual Studio Code, open the **app_manifest.json** file. The resources this
 
 5. **IMPORTANT**. Copy the contents of your **app_manifest.json** file to Notepad, as you'll need this configuration information for the next labs.
 
-------
+
 
 ## Step 3: Select your developer board configuration
 
@@ -87,7 +87,7 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 4. Save the file. This will autogenerate the CMake cache.
 
-------
+
 
 ## Step 4: Deploy the application to Azure Sphere
 
@@ -111,7 +111,7 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
     > [!NOTE]
     > You may see a couple of *ERROR: failure to create IoTHub Handle* messages displayed. These messages occur while the connection to Azure IoT Central is being negotiated.
 
-------
+
 
 ## Step 5: Expected device behavior
 
@@ -133,7 +133,7 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 1. The User LED will blink every 5 seconds when connected to Azure.
 
-------
+
 
 ## Step 6: Display the device telemetry in IoT Central
 
@@ -164,7 +164,7 @@ Azure IoT Central does not update immediately. It may take a minute or two for t
 
 ![The illustration shows how to display measurements.](../media/iot-central-display-measurements.png)
 
-------
+
 
 ## Close Visual Studio Code
 

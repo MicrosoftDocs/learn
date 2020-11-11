@@ -4,7 +4,7 @@ Applications on Azure Sphere are secure by default. You must grant capabilities 
 
 Application capabilities include what hardware can be accessed, what network endpoints can be called, and what inter-core communications is allowed.
 
-------
+
 
 ## IoT Central network endpoints
 
@@ -12,7 +12,7 @@ You must declare all network endpoints your application will use. As a security 
 
 When connecting to IoT Central you must declare the global device provisioning service endpoint as well as the endpoints for your IoT Central application. Otherwise, your Azure Sphere application will not be able to connect to IoT Central.
 
-------
+
 
 ## Network endpoint capabilities
 
@@ -29,13 +29,13 @@ Network endpoints are declared in the application **app_manifest.json** file in 
 }
 ```
 
-------
+
 
 ## Access to hardware
 
 Remember, Azure Sphere applications are secure by default and you must declare access to hardware peripherals your application requires. If you do not declare the hardware your application needs, then your application will fail when it tries to access the hardware. Security access to hardware is implemented in hardware as a silicon firewall. As an extra layer of security, the silicon firewall is "sticky", silicon firewall settings remain in place until the device is restarted.
 
-------
+
 
 ## Hardware capabilities
 
@@ -65,7 +65,7 @@ Hardware is declared in the application **app_manifest.json** file in the **Capa
 }
 ```
 
-------
+
 
 ## Hardware definitions
 
@@ -77,6 +77,6 @@ The labs for this learning module have a set of hardware definition files for th
 #include "hw/azure_sphere_learning_path.h"
 ```
 
-------
+
 
 You will learn how to declaring network endpoints in the following exercise.

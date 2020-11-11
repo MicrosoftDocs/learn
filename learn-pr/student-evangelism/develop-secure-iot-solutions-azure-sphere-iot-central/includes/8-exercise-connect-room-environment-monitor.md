@@ -1,6 +1,6 @@
 In this exercise, we'll build a high-level Azure Sphere application that connects and sends environment telemetry to Azure IoT Central.
 
-------
+
 
 ## Step 1: Create a new Azure IoT Central application
 
@@ -115,7 +115,7 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 2. Confirm and click **Publish**.
 
-------
+
 
 ## Step 2: Download the tenant authentication CA certificate
 

@@ -119,7 +119,7 @@ static void AlertLedOffToggleHandler(EventLoopTimer* eventLoopTimer) {
 }
 ```
 
-------
+
 
 ## Automatic initialization of peripherals and event timers
 
@@ -142,7 +142,7 @@ static void InitPeripheralsAndHandlers(void)
 }
 ```
 
-------
+
 
 ## Easy to extend
 

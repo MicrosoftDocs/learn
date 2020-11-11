@@ -33,7 +33,7 @@
 
 6. Copy the output from the **ShowIoTCentralConfig** tool to Notepad, as you'll need this information soon.
 
-------
+
 
 ## Step 2: Get your Azure Sphere tenant ID
 

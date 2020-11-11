@@ -10,7 +10,7 @@
 
 5. Click **Select Folder** or the **OK** button to open the project.
 
-------
+
 
 ## Step 2: Set your developer board configuration
 
@@ -32,7 +32,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 4. Save the file. This will auto-generate the CMake cache.
 
-------
+
 
 ## Step 3: Configure the Azure IoT connection information
 
@@ -42,7 +42,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 3. Paste the contents of the clipboard into **app_manifest.json** and save the file.
 
-------
+
 
 ## Step 4: Start the app build deploy process
 
@@ -50,7 +50,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 2. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application that's now running the Azure Sphere device.
 
-------
+
 
 ## Step 5: Expected device behavior
 
@@ -76,7 +76,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 1. The User LED will blink every 5 seconds when connected to Azure.
 
-------
+
 
 ## Step 6: Display the actual temperature property
 
@@ -91,7 +91,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 ![The illustration shows how to display telemetry.](../media/iot-central-display-telemetry.png)
 
-------
+
 
 ## Step 7: Set the desired temperature
 
@@ -112,7 +112,7 @@ To set the desired temperature:
 
 ![The illustration shows display settings.](../media/iot-central-display-settings.png)
 
-------
+
 
 ## Close Visual Studio
 

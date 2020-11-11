@@ -117,7 +117,7 @@ Device twin bindings sets are closed in the **ClosePeripheralsAndHandlers** func
 lp_deviceTwinSetClose();
 ```
 
-------
+
 
 ## Azure IoT Central device properties
 
