@@ -1,5 +1,3 @@
-# Complete the stat updating functionality
-
 There are three functions needed to enable the coach to actually run each quarter of the game. This unit will introduce these three functions.
 
 ## Update the stats at the end of each quarter

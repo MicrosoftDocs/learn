@@ -49,6 +49,7 @@ units:
 - learn.student-evangelism.data-coding-basketball.11-move-players
 - learn.student-evangelism.data-coding-basketball.12-finalize-web-app
 - learn.student-evangelism.data-coding-basketball.13-update-stats
-- learn.student-evangelism.data-coding-basketball.14-summary
+- learn.student-evangelism.data-coding-basketball.14-knowledge-check
+- learn.student-evangelism.data-coding-basketball.15-summary
 badge:
   uid: learn.student-evangelism.data-coding-basketball.badge
