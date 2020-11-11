@@ -4,8 +4,6 @@ With Azure Sphere, you can build IoT solutions that are secure by default with t
 
 You can build applications with Visual Studio or Visual Studio Code or integrate with your existing toolchains on Windows and Linux. Visual Studio and Visual Studio Code development environments provide integrated microcontroller debuggers and full source-code control, along with collaboration and productivity tools.
 
-------
-
 ## What is an Azure Sphere
 
 [Azure Sphere](https://azure.microsoft.com/en-au/services/azure-sphere?azure-portal=true) is a comprehensive IoT security solution – including hardware, OS, and cloud components – to actively protect your devices, your business, and your customers.
@@ -20,8 +18,6 @@ Together these components implement [The Seven Properties of Highly Secure Devic
 
 ![Azure Sphere end-to-end](../media/azure-sphere-end-to-end.png)
 
-------
-
 ## Azure Sphere Architecture
 
 The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores, a Cortex-A7 which runs a Linux kernel, and two Cortex-M4 cores that can run bare-metal code, or a Real-time operating system such as Azure RTOS or FreeRTOS.
@@ -30,15 +26,11 @@ High-level applications running on the Cortex-A7 Linux kernel are used for less 
 
 ![Azure Sphere architecture](../media/azure-sphere-architecture.png)
 
-------
-
 ## Developer tools
 
 You can develop Azure Sphere applications from Windows and Linux. On Windows you can use either [Visual Studio 2019 or later](https://visualstudio.microsoft.com/downloads) (free community edition or better) or [Visual Studio Code](https://code.visualstudio.com). On Linux, you use [Visual Studio Code](https://code.visualstudio.com). You can simultaneously develop and debug applications running on all three cores.
 
 This learning module supports developers on Linux and Windows using Visual Studio Code. If you are a Windows user comfortable using Visual Studio, then use Visual Studio appreciating the IDE screenshots included in this module will be different.
-
-------
 
 ## Lab environment monitoring and control for sensitive microbiology experiments
 
@@ -51,8 +43,6 @@ Suppose you're a scientist in a microbiology laboratory who is responsible for s
 Previously these were recorded manually by the lab assistants using sensors at regular intervals. Manual recording of ambient conditions is a tedious job which is also prone to human error. Having any issues with the sensors would invalidate the tests performed in the lab environment.
 
 Maintaining the room conditions accurately is critical for managing the laboratory. The lab needs to maintain the right conditions to help you get more accurate results. Any variation in the conditions can affect the equipment temperature during the storage and manipulation of the samples, specimens, and lab equipment. This could impact the ability to produce the correct and stable results and can also have an economic impact on the organization.
-
-------
 
 ## Proposed new system
 
@@ -69,8 +59,6 @@ The solution must be built on an IoT platform that is highly secure, that is pro
 
 ![The illustration shows an Azure Sphere dashboard based on scenario.](../media/azure-sphere-dashboard.png)
 
-------
-
 ## Learning objectives
 
 In this module, you will:
@@ -82,8 +70,6 @@ In this module, you will:
 * Control an Azure Sphere application by using Azure IoT Central properties and commands
 * Deploy a new more sensitive room sensor onto an Azure Sphere Real-time core running Azure RTOS
 * Read the data from the new sensor running on the Real-time core and send the data to IoT Central
-
-------
 
 ## Prerequisites
 
