@@ -38,9 +38,56 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 1. Open the **app_manifest.json** file.
 
-2. You'll need to redo the settings for the **app_manifest.json** file. Either copy the settings from Notepad if you still have it open or copy them from the **app_manifest.json** file you created in the previous exercise.
+1. **Do not** copy the app_manifest.json that you saved to notepad as there are new properties in this application manifest. 
 
-3. Paste the contents of the clipboard into **app_manifest.json** and save the file.
+1. Update the connection properties for the Azure IoT Central application.
+
+   - Update **CmdArgs** with your Azure IoT Central ID scope.
+   - Update **DeviceAuthentication** with your Azure Sphere Tenant ID. Remember, this was the numeric value returned from running the **azsphere tenant show-selected** command.
+
+1. Update the **AllowedConnections** with the Azure IoT Central application endpoints you copied to Notepad.
+
+1. Review your updated **app_manifest.json** file. It should look similar to the following.
+
+    ```json
+    {
+        "SchemaVersion": 1,
+        "Name": "AzureSphereIoTCentral",
+        "ComponentId": "25025d2c-66da-4448-bae1-ac26fcdd3627",
+        "EntryPoint": "/bin/app",
+        "CmdArgs": [
+            "--ConnectionType", "DPS", "--ScopeID", "0ne0099999D",
+            "--RTComponentId", "6583cf17-d321-4d72-8283-0b7c5b56442b"
+        ],
+        "Capabilities": {
+            "Gpio": [
+            "$NETWORK_CONNECTED_LED",
+            "$LED_RED",
+            "$LED_GREEN",
+            "$LED_BLUE"
+            ],
+            "PowerControls": [
+            "ForceReboot"
+            ],
+            "AllowedConnections": [
+                "global.azure-devices-provisioning.net",
+                "iotc-9999bc-3305-99ba-885e-6573fc4cf701.azure-devices.net",
+                "iotc-789999fa-8306-4994-b70a-399c46501044.azure-devices.net",
+                "iotc-7a099966-a8c1-4f33-b803-bf29998713787.azure-devices.net",
+                "iotc-97299997-05ab-4988-8142-e299995acdb7.azure-devices.net",
+                "iotc-d099995-7fec-460c-b717-e99999bf4551.azure-devices.net",
+                "iotc-789999dd-3bf5-49d7-9e12-f6999991df8c.azure-devices.net",
+                "iotc-29999917-7344-49e4-9344-5e0cc9999d9b.azure-devices.net",
+                "iotc-99999e59-df2a-41d8-bacd-ebb9999143ab.azure-devices.net",
+                "iotc-c0a9999b-d256-4aaf-aa06-e90e999902b3.azure-devices.net",
+                "iotc-f9199991-ceb1-4f38-9f1c-13199992570e.azure-devices.net"
+            ],
+            "DeviceAuthentication": "9d7e79eb-9999-43ce-9999-fa8888888894"
+            "AllowedApplicationConnections": [ "6583cf17-d321-4d72-8283-0b7c5b56442b" ]
+        },
+        "ApplicationType": "Default"
+    }
+    ```
 
 ------
 
