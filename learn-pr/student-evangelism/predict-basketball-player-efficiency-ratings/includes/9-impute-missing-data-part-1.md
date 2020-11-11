@@ -33,7 +33,7 @@ plt.title('GP histogram')
 sns.kdeplot(player_df['GP']);
 ```
 
-![GP historgram](../media/gp_hist.png)
+![GP historgram](../media/gp-histogram.png)
 
 ```python
 # Plot the KDE for 'MPG' over the probability-density histogram.
@@ -42,7 +42,7 @@ plt.title('MPG histogram')
 sns.kdeplot(player_df['MPG']);
 ```
 
-![MPG historgram](../media/mpg_hist.png)
+![MPG historgram](../media/mpg-histogram.png)
 
 If we squint hard enough, `GP` and `MPG` are both close enough to normally distributed that we can justify impute their missing values using an average value for each respective column. However, this is not the case with `PER`:
 
@@ -53,13 +53,13 @@ plt.title('PER histogram')
 sns.kdeplot(player_df['PER']);
 ```
 
-![PER historgram](../media/per_hist.png)
+![PER historgram](../media/per-histogram.png)
 
 So we will have to handle that one differently, in the next unit.
 
 ## Impute missing values with average values
 
-Inorder to impute the missing values in our normally-enough distributed columns, we will use the `fillna()` DataFrame method. In our code, we will state that we are working with only three of our columns (`player_df[['GP','MPG']]`) and that we want to replace `NaN` values in each of those columns with those columns' respective mean values (`fillna(value=player_df[['GP','MPG']].mean())`). (Once again, stringing pandas methods together makes our job much, much easier.)
+In order to impute the missing values in our normally-enough distributed columns, we will use the `fillna()` DataFrame method. In our code, we will state that we are working with only three of our columns (`player_df[['GP','MPG']]`) and that we want to replace `NaN` values in each of those columns with those columns' respective mean values (`fillna(value=player_df[['GP','MPG']].mean())`). (Once again, stringing pandas methods together makes our job much, much easier.)
 
 ```python
 # Replace the missing values in 'GP' and 'MPG' with the mean values of the respective columns.

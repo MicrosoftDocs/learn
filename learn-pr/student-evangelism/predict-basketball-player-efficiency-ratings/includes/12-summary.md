@@ -1,4 +1,4 @@
-Learning to code is only as useful as what you use it for. Coding for data science discoveries is becoming more prominant in all aspects of the technical world and critical in almost every industry. Whether you are gathering data about the [Moon to drive space exploration decisions](https://aka.ms/LearnInSpace), or being inspired by LeBron James to use data to learn more about basketball, the goal is to develop new skills to help you explore what **you're** passionate about. 
+Learning to code is only as useful as what you use it for. Coding for data science discoveries is becoming more prominant in all aspects of the technical world and critical in almost every industry. Whether you are gathering data about the [Moon to drive space exploration decisions](https://aka.ms/LearnInSpace), or being inspired by LeBron James to use data to learn more about basketball, the goal is to develop new skills to help you explore what **you're** passionate about.
 
 [Space Jam: A New Legacy](https://spacejam.com) isn't just a film about basketball and fun Looney Tunes characters, it also begins to explore ways in which we can combine passions to an even greater outcome. LeBron is clearly a leader in the world of NBA basketball, he got there by learning from his failures, persisting through challenging times, and practicing. These skills are not isolated to basketball, the same skills are critical for learners starting their coding journey. This module introduces you to Python coding for data science, and it's just the start. With the skills you have begun to learn here, you can begin to explore other datasets, discover new insights, and contribute in your own unique way to the understanding of our world.
 
@@ -8,4 +8,4 @@ With the `player_data_final.csv` file that you created, you can use the data to 
 
 Remember, this module is a part of a multi-modal approach to learning, which means that you can also follow along with a video tutorial on the [Learn with Dr G video series](https://aka.ms/LearnWithDrG/SpaceJam).
 
-![Space Jam: A New Legacy Logo](../media/logo_screenshot.png)
+![Space Jam: A New Legacy Logo](../media/logo-screenshot.png)

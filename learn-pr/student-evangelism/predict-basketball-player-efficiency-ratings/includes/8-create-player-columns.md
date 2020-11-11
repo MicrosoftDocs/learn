@@ -61,9 +61,10 @@ pop_list
  'looney_tune17']
 ```
 
-**NOTE:** We did a quick shortcut with creating the numbers for the Looney Tunes players by using `str(id%30)`. The modulus operator (`%`) will divide and return the difference. So, for every id after 30, the code will enter the `else` branch. For example, for 31, the else branch will create a string that is `looney_tune` + `str(id%30)`, which would be `str(31%30)`. If you do the math, 31 divided by 30 is 0 remainder 1. So the player string for row with ID 31 would be `looney_tune_1`.
+>[!NOTE]
+>We did a quick shortcut with creating the numbers for the Looney Tunes players by using `str(id%30)`. The modulus operator (`%`) will divide and return the difference. So, for every id after 30, the code will enter the `else` branch. For example, for 31, the else branch will create a string that is `looney_tune` + `str(id%30)`, which would be `str(31%30)`. If you do the math, 31 divided by 30 is 0 remainder 1. So the player string for row with ID 31 would be `looney_tune_1`.
 
-Now, we can add this list of strings to the DataFrame. 
+Now, we can add this list of strings to the DataFrame.
 
 ```python
 # Assign this list as the values for the new player column in the DataFrame.

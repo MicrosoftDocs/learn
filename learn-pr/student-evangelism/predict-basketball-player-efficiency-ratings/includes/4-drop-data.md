@@ -60,7 +60,7 @@ dtypes: float64(13), int64(1)
 memory usage: 5.2 KB
 ```
 
-We can see that we now only have 14 columns, instead of 16, and that the majority of of rows have data for each column. 
+We can see that we now only have 14 columns, instead of 16, and that the majority of of rows have data for each column.
 
 ## Drop Rows
 

@@ -8,9 +8,7 @@ To get some sense of how accurate a model might be, it is common in machine lear
 
 To avoid this, statisticians and data scientists use a technique call cross validation. The idea is to iterate through the dataset splitting the data in different ways between training and test data. Doing this multiple times should give us a reasonable idea of how the model will work with new data, even if we only have limited data to work with. This graphic provides a visualization of the cross-validation process:
 
-![K-fold cross validation](../media/1920px-K-fold_cross_validation_EN.png)
-
-## Impo
+![K-fold cross validation](../media/k-fold-cross-validation.png)
 
 ## Cross-validate the r2 scores for the model
 
@@ -53,13 +51,15 @@ Mean r2 score: 0.9993
 70% of r2 scores are between 0.9996 and 1.0000
 ```
 
-![Histogram of r2 scores](../media/cross_validation.png)
+![Histogram of r2 scores](../media/cross-validation.png)
 
-**NOTE:** If you get an error when running this code, make sure you've installed the [scitkit-learn library, instructions here](https://scikit-learn.org/stable/install.html). 
+>[!NOTE]
+>If you get an error when running this code, make sure you've installed the [scitkit-learn library, instructions here](https://scikit-learn.org/stable/install.html).
 
 In short, our model is good. The $R^2$ score (ours is 99.93%) tells us how much variance in the data our model captures, and for our purposes this will serve as a loose proxy for our model's accuracy. Our lowest $R^2$ scores are still quite good, and most of them bump up close to the maximum value of 1, so we should feel quite confident applying this to our missing `PER` values.
 
-**NOTE:** Your exact r2 scores might be slightly different. Since each time we run this model we are going to get a different random sampling of data per cut across the 10 cuts, the model may be slightly better or slightly worse between runs. Your numbers should be fairly close to these, however.
+>[!NOTE]
+>Your exact r2 scores might be slightly different. Since each time we run this model we are going to get a different random sampling of data per cut across the 10 cuts, the model may be slightly better or slightly worse between runs. Your numbers should be fairly close to these, however.
 
 ## Fit the regression model for the player data
 
@@ -246,8 +246,9 @@ Finally, we can save this final DataFrame to a CSV file so that we can use this 
 player_df.to_csv('player_data_final.csv', index=False)
 ```
 
-**NOTE:** The `index=False` parameter ensures that the index that was added to the DataFrame when pandas initially read in the CSV file doesn't get written to the CSV file.
+>[!NOTE]
+>The `index=False` parameter ensures that the index that was added to the DataFrame when pandas initially read in the CSV file doesn't get written to the CSV file.
 
 You should now see a new CSV file in your space-jam folder.
 
-![Final cleansed dataset ready for use](../media/output_csv.png)
+![Final cleansed dataset ready for use](../media/output-csv.png)

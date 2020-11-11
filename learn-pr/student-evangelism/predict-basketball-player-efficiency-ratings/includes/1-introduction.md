@@ -1,6 +1,6 @@
-![Space Jam: A New Legacy Logo](../media/logo_screenshot.png)
+![Space Jam: A New Legacy Logo](../media/logo-screenshot.png)
 
-[Space Jam: A New Legacy](https://spacejam.com/) is a film about basketball and coding. [Official synopsis to be put here].
+[Space Jam: A New Legacy](https://spacejam.com/) is a film about basketball and coding. **[Official synopsis to be put here].**
 
 Inspired by the film, this module explores the connection that data science and machine learning has with sports, specifically basketball. If you're a sports fan, you know that statistics (stats) on players is a huge part to the game. We've seen how stats play a role in the fans of the game, for example through buiding fantasy leagues. This module starts to give us, the fans, an insight into how stats might be used by the coaches and teams. 
 

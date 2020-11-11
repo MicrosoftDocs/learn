@@ -6,7 +6,6 @@ player_df.isna().sum()
 ```
 
 ```output
-
 ID             0
 points         0
 possessions    0
@@ -28,20 +27,20 @@ These are a lot of missing values, possibly spanning many more rows and that wou
 
 As a review, here is a breakdown of the data we working with in our dataset. The data in different columns can behave quite differently and we will want to apply some domain expertise to the data as we decide how to impute missing values:
 
-* **ID**: a unique identifier for each player in the dataset
-* **points**: total points scored by a player in a season
-* **possessions**: total possessions by a player in a season
-* **team_pace**: the average number of possessions a team uses per game
-* **GP**: games played by a player in a season
-* **MPG**: average minutes played by a player per game
-* **TS%**: True Shooting Percentage, a player's shooting percentage taking free throws and 3-pointers into account
-* **AST**: Assist Ratio, the percentage of a player's possessions that end in an assist
-* **TO**: Turnover Ratio, the percentage of a player's possessions that end in a turnover
-* **USG**: Usage Rate, the number of possessions a player uses per 40 minutes
-* **ORR**: Offensive rebound rate
-* **DRR**: Defensive rebound rate
-* **REBR**: Rebound Rate, the percentage of missed shots that a player rebounds
-* **PER**: the player efficiency rating (PER), a measure of a player's per-minute productivity on the court
+- **ID**: a unique identifier for each player in the dataset
+- **points**: total points scored by a player in a season
+- **possessions**: total possessions by a player in a season
+- **team_pace**: the average number of possessions a team uses per game
+- **GP**: games played by a player in a season
+- **MPG**: average minutes played by a player per game
+- **TS%**: True Shooting Percentage, a player's shooting percentage taking free throws and 3-pointers into account
+- **AST**: Assist Ratio, the percentage of a player's possessions that end in an assist
+- **TO**: Turnover Ratio, the percentage of a player's possessions that end in a turnover
+- **USG**: Usage Rate, the number of possessions a player uses per 40 minutes
+- **ORR**: Offensive rebound rate
+- **DRR**: Defensive rebound rate
+- **REBR**: Rebound Rate, the percentage of missed shots that a player rebounds
+- **PER**: the player efficiency rating (PER), a measure of a player's per-minute productivity on the court
 
 One common strategy for imputation is to replace missing value with the value immediately above or below it. But given that our missing values are for PACE, points, possessions, and PER (and that we have no idea what the order of players might be in our DataFrame, such as consecutive players being on the same team), this is probably not a good strategy for us.
 
@@ -68,7 +67,7 @@ for i in range(len(cols)):
     plt.title(cols[i])
 ```
 
-![DataFrame histograms](../media/Unit-4-1.png)
+![DataFrame histograms](../media/dataframe-histograms.png)
 
 Most of these don't look normally distributed (the familiar bell curve), but it is tough to be certain with the human eye. We could try using fewer bins, but we might also miss some important information in a lower-resolution histogram. Instead, we will try a different kind of visualization.
 
@@ -79,7 +78,7 @@ Let's look at a single histogram for a moment (in this case, the one for `GP` - 
 plt.hist(player_df['GP'], bins=30);
 ```
 
-![Small-bin histogram](../media/Unit-4-2.png)
+![Small-bin histogram](../media/small-bin-histogram.png)
 
 **Note:** Adding the `;` at the end of the `hist()` function call will cause the output to only show the graph and not any additional textual information about the underlying data. For example, if you removed the `;` from the line above you would see:
 
@@ -101,7 +100,7 @@ Currently it provides the number of counts for each bin. However, we could chang
 plt.hist(player_df['GP'], density=True, bins=30);
 ```
 
-![Small-bin histogram with probability density](../media/Unit-4-3.png)
+![Small-bin histogram with probability density](../media/small-bin-histogram-with-probability-density.png)
 
 ## Create kernel-density estimates of the DataFrame data
 
@@ -114,7 +113,7 @@ plt.title('GP histogram')
 sns.kdeplot(player_df['GP']);
 ```
 
-![Large-bin histogram overlaid with KDE](../media/Unit-4-4.png)
+![Large-bin histogram overlaid with KDE](../media/large-bin-histogram-kde-overlay.png)
 
 The KDE helps us see that more clearly than the histogram does that `GP`'s distribution is kind of bell-shaped but with a bulge on the right side. Let's use a `for` loop to generate a matrix of KDEs for all our columns.
 
@@ -131,6 +130,6 @@ for i in range(len(cols)):
     sns.kdeplot(ax=axes[i//5, i%5], data=player_df[cols[i]])
 ```
 
-![DataFrame KDEs](../media/Unit-4-5.png)
+![DataFrame KDEs](../media/dataframe-kdes.png)
 
 Sure enough, many of these columns have KDEs with two very pronounced tops. Each top represents a mode of the data, or a value around which values in the dataset concentrate. The fact that so many of our columns are bimodal indicates that our dataset represents samples from two discrete populations.

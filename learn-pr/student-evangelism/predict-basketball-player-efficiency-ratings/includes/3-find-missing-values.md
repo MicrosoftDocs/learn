@@ -1,4 +1,4 @@
-Basketball is full of statistics, and we will use some of them to make decisions about our hypothetical basketball team. However, in order to make good decisions, we need good data. Throughout this module we will be using a dataset that is based on publicly available basketball data from [the NBA](https://www.nba.com/stats/leaders/) and stats created based on Looney Tunes characters to get a full picture. All of our data is anonymized to start with. 
+Basketball is full of statistics, and we will use some of them to make decisions about our hypothetical basketball team. However, in order to make good decisions, we need good data. Throughout this module we will be using a dataset that is based on publicly available basketball data from [the NBA](https://www.nba.com/stats/leaders/) and stats created based on Looney Tunes characters to get a full picture. All of our data is anonymized to start with.
 
 Because we cannot influence what data is gathered by the NBA, we can't do anything about the methodology used to get the data in first place. This introduces a number of questions about the data:
 

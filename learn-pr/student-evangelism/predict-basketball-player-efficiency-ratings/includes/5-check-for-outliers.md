@@ -63,7 +63,7 @@ for i in range(len(cols)):
 ```
 
 **Output**
-![DataFrame box plots](../media/Unit-3-1.png)
+![DataFrame box plots](../media/dataframe-box-plots.png)
 
 Sure enough, we can see that we have two outliers in `points` and `possessions`. You can see these outliers represented as diamonds towards the bottom of the first two box plots that represent the `points` and `possessions` columns. These are so far out of the range of the other data that they are likely to represent garbage data and not a seriously underperforming player.
 

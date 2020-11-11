@@ -9,7 +9,7 @@ plt.title('Points histogram')
 sns.kdeplot(player_df['points']);
 ```
 
-![Points histogram](../media/points_hist.png)
+![Points histogram](../media/points-histogram.png)
 
 We can see that at around 1,600 is when the split across the two populations occurs. We can use that to explore the data further. One hypothesis is that Looney Tunes players might score more points because they often have additional skills that humans just don't have. We can start to see the rows where players have scored more than 1,600 points: 
 
@@ -50,7 +50,7 @@ plt.title('DRR histogram')
 sns.kdeplot(player_df['DRR']);
 ```
 
-![DRR histogram](../media/drr_hist.png)
+![DRR histogram](../media/drr-histogram.png)
 
 At around 15 defensive rebounds is where we see the distribution split. So we can see if that helps narrow down our population that we think might be Looney Tunes. Again, we could hypothesis that Looney Tunes are going to be more likely to try to get the ball in a defensive rebound because of their special skills, so we can count how many rows/players have scored more than 1,600 points and have a DRR of more than 15:
 
@@ -91,7 +91,7 @@ plt.title('PER histogram')
 sns.kdeplot(player_df['PER']);
 ```
 
-![PER histogram](../media/per_hist.png)
+![PER histogram](../media/per-histogram.png)
 
 At around 17 is when the PER distributions get split, we can take a look at those rows now that are at least 17 PER:
 
