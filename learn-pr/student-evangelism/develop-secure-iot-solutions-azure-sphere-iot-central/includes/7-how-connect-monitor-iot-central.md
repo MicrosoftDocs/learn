@@ -1,7 +1,5 @@
 Your Azure Sphere application will connect to Azure IoT Central and send room environment telemetry to Azure IoT Central. You'll learn how to secure, build, deploy, and debug your high-level Azure Sphere application onto the Azure Sphere Cortex-A7 core.
 
-------
-
 ## Components used
 
 The components for this unit:
@@ -10,7 +8,7 @@ The components for this unit:
 
 ![IoT Central Architecture](../media/iot-central-architecture.png)
 
-Azure IoT Central is built on the [8 attributes of successful IoT solutions](https://azure.microsoft.com/en-us/resources/8-attributes-of-successful-iot-solutions?azure-portal=true)
+Azure IoT Central is built on the [8 attributes of successful IoT solutions](https://azure.microsoft.com/resources/8-attributes-of-successful-iot-solutions?azure-portal=true)
 
 
 **Azure IoT Central application** An Azure IoT Central application simplifies the creation of IoT solutions. You'll learn how to create, customize, manage, and use an Azure IoT Central application.

@@ -1,7 +1,5 @@
 In this unit, you will learn how to control an Azure Sphere connected heating, ventilation, and air conditioning unit (HVAC) from Azure IoT Central.
 
-------
-
 ## Understanding IoT Central properties
 
 Azure IoT Central uses properties to represent point-in-time values. IoT Central can use properties to set state on a device, for example, set the desired room temperature. A device can also use properties to report its current state, for example, report the operating mode of an HVAC (Heating, Ventilation, and Air Conditioning) unit, is it currently heating, cooling, or turned off.
@@ -13,8 +11,6 @@ Properties can be used in the following ways:
 - Cloud-to-device updates
 - Device-to-cloud updates
 - Querying reported properties
-
-------
 
 ## Controlling the heating, ventilation, and air conditioning unit (HVAC) using Azure IoT Central properties
 
@@ -32,8 +28,6 @@ The following steps outline how Azure IoT Central uses device twins to set prope
 1. The device implements the desired property; in this case, turn on the heater or cooler to bring the room to the desired temperature.
 1. The device acknowledges the updated configuration to Azure IoT Hub. Azure IoT Hub updates the device twin reported property.
 1. IoT Central queries and displays the device twin reported property data to the user.
-
-------
 
 ## Getting started with device twin bindings
 
@@ -53,7 +47,7 @@ static LP_DEVICE_TWIN_BINDING dt_desiredTemperature = {
 The following is the implementation of the handler function `DeviceTwinSetTemperatureHandler`. The handler function is called when the device receives a `DesiredTemperature` desired property message from Azure IoT Hub.
 
 > [!NOTE]
-> As part of the [IoT Plug and Play](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-convention) conventions, the device should acknowledge the device twin update with a call to **lp_deviceTwinAckDesiredState**.
+> As part of the [IoT Plug and Play](https://docs.microsoft.com/azure/iot-pnp/concepts-convention) conventions, the device should acknowledge the device twin update with a call to **lp_deviceTwinAckDesiredState**.
 
 ```c
 /// <summary>
@@ -72,8 +66,6 @@ static void DeviceTwinSetTemperatureHandler(LP_DEVICE_TWIN_BINDING* deviceTwinBi
     }
 }
 ```
-
-------
 
 ## Reporting the current HVAC operating mode
 
@@ -100,8 +92,6 @@ The device updates the **ReportedHvacState** property by calling the **lp_device
 ```c
 lp_deviceTwinReportState(&dt_reportedHvacState, (void*)hvacState[(int)current_led]);
 ```
-
-------
 
 ## How device twin messages are mapped to handlers
 
