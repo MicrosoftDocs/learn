@@ -27,7 +27,7 @@ If you have not already initialized a repository for your project, you can publi
 
 The SCM View can be toggled in Visual Studio Code by selecting the SCM icon in the Visual Studio Code activity bar. You'll see a button that says "Publish to GitHub".
 
-![The SCM publish view](../media/scm-publish.jpg)
+:::image type="content" source="../media/scm-publish.jpg" alt-text="The SCM publish view":::
 
 Clicking this button will initialize the publish process...
 
@@ -41,7 +41,7 @@ Clicking this button will initialize the publish process...
 
 If your project has already been initialized for GitHub locally, you won't see the publish button in the SCM view. In that case, you can still publish your project to GitHub using the "Publish to GitHub" option in the Command Palette.
 
-![The "Publish to GitHub" option in the VS Code Command Palette](../media/publish-command.jpg)
+:::image type="content" source="../media/publish-command.jpg" alt-text="The publish to github command":::
 
 The action will kick off the same workflow as the publish button in the SCM view does and has exactly the same steps, with the exception that you will not be prompted for what items you want to push if your project already contains a .gitignore.
 
