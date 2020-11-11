@@ -1,4 +1,4 @@
-In this unit, you'll create a basic Spring Boot app by using the Azure CLI and an IDE of your choice to edit the code. You'll use a terminal of your choice to run the code.
+In this unit, you'll create a basic Spring Boot application by using the Azure CLI and an IDE of your choice to edit the code. You'll use a terminal of your choice to run the code.
 
 # Prepare the working environment
 
@@ -279,7 +279,7 @@ Finally, halt the application and start it again using the following command:
 ./mvnw spring-boot:run
 ```
 
-The Spring Boot Application should start and connect to your database.
+The Spring Boot application should start and connect to your database.
 Here's a screenshot of the application connecting to the database:
 
 ![The running application connecting to database.](../media/3-spring-boot-02.png)
@@ -293,14 +293,14 @@ First, create a new "todo" item in the database using the following command:
 ```bash
 curl --header "Content-Type: application/json" \
     --request POST \
-    --data '{"description":"configuration","details":"congratulations, you have set up your Spring Boot App correctly!","done": "true"}' \
+    --data '{"description":"configuration","details":"congratulations, you have set up your Spring Boot application correctly!","done": "true"}' \
     http://127.0.0.1:8080
 ```
 
 This command should return the created item as follows:
 
 ```json
-{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot App correctly!","done":true}
+{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot application correctly!","done":true}
 ```
 
 Next, retrieve the data by using a new cURL request as follows:
@@ -312,5 +312,5 @@ curl http://127.0.0.1:8080
 This command will return the list of "todo" items, including the item you've created, as follows:
 
 ```json
-[{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot App correctly!","done":true}]
+[{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot application correctly!","done":true}]
 ```

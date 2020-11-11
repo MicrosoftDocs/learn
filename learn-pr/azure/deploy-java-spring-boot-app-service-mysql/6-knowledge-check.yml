@@ -16,7 +16,7 @@ quiz:
     choices:
     - content: "Maven"
       isCorrect: false
-      explanation: "Maven is a build tool that allows you to configure dependencies and deploy your Apps."
+      explanation: "Maven is a build tool that allows you to configure dependencies and deploy your applications."
     - content: "Spring Initializr"
       isCorrect: true
       explanation: "Correct. The Spring Initializr is a web application that generates a Spring Boot project structure for you."
@@ -34,15 +34,15 @@ quiz:
     - content: Entity
       isCorrect: false
       explanation: "A JPA Entity object maps Java Classes to Database Tables."
-  - content: "Which Maven command will create your App Service instance in Azure?"
+  - content: "Which Maven command will create your Azure App Service instance in Azure?"
     choices:
     - content: "config"
       isCorrect: false
       explanation: "This command will set up your projects configuration with a subscription, Java Version, and operating system you specify."
     - content: "deploy"
       isCorrect: true
-      explanation: "This command creates your instance and copies your app and starts it."
+      explanation: "This command creates your instance and copies your application and starts it."
     - content: "package"
       isCorrect: false
-      explanation: "This command bundles your app into an executable JAR file."
+      explanation: "This command bundles your application into an executable JAR file."
 

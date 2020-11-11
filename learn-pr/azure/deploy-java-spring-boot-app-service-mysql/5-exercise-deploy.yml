@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-java-spring-boot-app-service-mysql.5-exercise-deploy
-title: Exercise - Deploy your Spring Boot App
+title: Exercise - Deploy your Spring Boot application
 metadata:
-  title: Exercise - Deploy your Spring Boot App
+  title: Exercise - Deploy your Spring Boot application
   description: Deploy Exercise
   ms.date: 10/05/2020
   author: roryp

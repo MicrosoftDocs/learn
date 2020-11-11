@@ -1,14 +1,14 @@
-In this unit, you'll learn how to create a Spring App, connect to a MySQL database, and run locally.
+In this unit, you'll learn how to create a Spring application, connect to a MySQL database, and run locally.
 
 ## Introduction to Azure App Service
 
-Azure App Service allows you to host your company's websites, web apps, REST APIs, and other application code on Azure.  Running your web app in Azure App Service provides you with all the benefits of running on Azure: your app is available, scales and has security and compliance built-in.
-You're looking at creating a Spring Boot App that hosts its logic in Azure App Service and its Database in an Azure MySQL Database.
+Azure App Service allows you to host your company's websites, web applications, REST APIs, and other application code on Azure.  Running your web application in Azure App Service provides you with all the benefits of running on Azure: your application is available, scales and has security and compliance built-in.
+You're looking at creating a Spring Boot application that hosts its logic in Azure App Service and its Database in an Azure MySQL Database.
 
 ## Develop your Spring app
 
 Spring is the perfect framework to host and manage our applications. All we have to do is wire certain Spring components and without managing the underlying Server runtime.
-You've decided to use Spring Boot, which is self-hosted and provides support services to run your app.
+You've decided to use Spring Boot, which is self-hosted and provides support services to run your application.
 
 The Spring injection annotations use Dependency injection to process the Components.
 You can also use Azure Spring Starter integration libraries to configure and set up connections to Azure Services.

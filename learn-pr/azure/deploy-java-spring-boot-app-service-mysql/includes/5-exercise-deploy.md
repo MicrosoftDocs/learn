@@ -1,4 +1,4 @@
-In this unit, you'll configure your  Spring Boot app to be deployed via Maven and then create and deploy to an Azure App Service instance.
+In this unit, you'll configure your  Spring Boot application to be deployed via Maven and then create and deploy to an Azure App Service instance.
 
 ## Configure the Maven plugin
 
@@ -52,10 +52,10 @@ Change The following field in your project's `pom.xml` file:
 
 ## Deploy the app
 
-The maven deploy plugin will create your Azure App server, and copy your JAR file to the App server's "/local/site/wwwroot" directory.
-Finally it will start your App via your Spring Boot JAR file's embedded HTTP server.
+The maven deploy plugin will create your Azure App server, and copy your JAR file to the application server's "/local/site/wwwroot" directory.
+Finally it will start your application via your Spring Boot JAR file's embedded HTTP server.
 
-Next, deploy your Spring Boot app to Azure using the following command:
+Next, deploy your Spring Boot application to Azure using the following command:
 
 ```bash
 mvn package com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
@@ -74,14 +74,14 @@ As we've redeployed our application, we cleared the database and now need to cre
 ```bash
 curl --header "Content-Type: application/json" \
     --request POST \
-    --data '{"description":"configuration","details":"congratulations, you have set up your Spring Boot App correctly!","done": "true"}' \
+    --data '{"description":"configuration","details":"congratulations, you have set up your Spring Boot application correctly!","done": "true"}' \
     http://<appName>.azurewebsites.net
 ```
 
 This command should return the created item as follows:
 
 ```json
-{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot App correctly!","done":true}
+{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot application correctly!","done":true}
 ```
 
 Next, retrieve the data by using a new cURL request as follows:
