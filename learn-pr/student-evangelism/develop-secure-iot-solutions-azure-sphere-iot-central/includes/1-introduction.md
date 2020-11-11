@@ -14,7 +14,7 @@ Azure Sphere is made up of the following components:
 * **Azure Sphere OS** adds layers of protection and ongoing security updates to create a trustworthy platform for new IoT experiences.
 * **Azure Sphere Security Service** brokers trust for device-to-cloud communication, detects threats, and renews device security.
 
-Together these components implement [The Seven Properties of Highly Secure Devices](https://www.microsoft.com/en-us/research/publication/seven-properties-highly-secure-devices?azure-portal=true).
+Together these components implement [The Seven Properties of Highly Secure Devices](https://www.microsoft.com/research/publication/seven-properties-highly-secure-devices?azure-portal=true).
 
 ![Azure Sphere end-to-end](../media/azure-sphere-end-to-end.png)
 
