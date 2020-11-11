@@ -4,11 +4,11 @@ In this module, you will:
 
 - Use Azure Synapse Studio
 - Understand the Azure Synapse Analytical processes
-- Explore the Data Hub
-- Explore the Develop Hub
-- Explore the Orchestrate Hub
-- Explore the Monitor Hub
-- Explore the Manage Hub
+- Explore the Data hub
+- Explore the Develop hub
+- Explore the Orchestrate hub
+- Explore the Monitor hub
+- Explore the Manage hub
 
 Before taking this module, it is recommended that the student can:
 

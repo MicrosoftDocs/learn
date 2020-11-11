@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-synapse-studio
 metadata:
   title: Explore Azure Synapse Studio
   description: "Take a tour of the core application used to interact with the various components of Azure Synapse Analytics."
-  ms.date: 11/10/2020
+  ms.date: 11/11/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -14,11 +14,11 @@ abstract: |
   In this module, you will:
   - Use Azure Synapse Studio
   - Understand the Azure Synapse Analytical processes
-  - Explore the Data Hub
-  - Explore the Develop Hub
-  - Explore the Orchestrate Hub
-  - Explore the Monitor Hub
-  - Explore the Manage Hub
+  - Explore the Data hub
+  - Explore the Develop hub
+  - Explore the Integrate hub
+  - Explore the Monitor hub
+  - Explore the Manage hub
 prerequisites: |
   * Before taking this module, it is recommended that you complete Data Fundamentals.
 iconUrl: /learn/achievements/explore-azure-synapse-studio.svg

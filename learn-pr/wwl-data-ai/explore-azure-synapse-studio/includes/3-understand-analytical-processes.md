@@ -3,12 +3,12 @@ When thinking about usage patterns that customers are using today to maximize th
 The process of building a modern data warehouse typically consists of:
 
 -	Data Ingestion and Preparation.
--	Data Modelling, making the data ready for consumption by analytical tools.
+-	Making the data ready for consumption by analytical tools.
 -	Providing access to the data, in a shaped format so that it can easily be consumed by data visualization tools. 
 
 Prior to the release of Azure Synapse Analytics, this would be achieved in the following way.
 
-## Data Ingestion and Preparation
+## Data ingestion and preparation
 
 At the foundation, customers build a data lake to store all their data and different data types with Azure Data Lake Store Gen2. 
 
@@ -23,7 +23,7 @@ Another option for data preparation is Azure Databricks - to shape the data form
 > [!div class="mx-imgBorder"]
 > ![Building modern data warehouses before Azure Synapse Analytics](../media/modern-data-warehouses-process-before-synapse.png)
 
-## Data modelling. Making the data ready for consumption by analytical tools
+## Making the data ready for consumption by analytical tools
 
 At the heart of a modern data warehouse, and cloud scale analytical solution was Azure Synapse Analytics (Formerly SQL Data Warehouse).  This implemented a Massively Parallel Processing that brings together enterprise data warehousing and Big Data analytics. 
 
@@ -35,7 +35,7 @@ Power BI supports an enormous set of data sources, which can be queried live, or
 
 Brought together with AI capabilities, it’s a powerful tool to build and deploy dashboards in the enterprise, through rich visualizations, and features like natural language querying. 
 
-With the release of Azure Synapse Analytics, you have a choice. You can either use Azure Synapse exclusively, which works very well for greenfield projects, but for organizations with existing investments in Azure with Azure Data Factory, Azure Databricks and Power BI, you can take a hybrid approach and combine them with Azure Synapse Analytics.
+With the release of Azure Synapse Analytics, you have a choice. You can either use Azure Synapse exclusively, which works very well for green field projects, but for organizations with existing investments in Azure with Azure Data Factory, Azure Databricks and Power BI, you can take a hybrid approach and combine them with Azure Synapse Analytics.
  
 > [!div class="mx-imgBorder"]
 > ![Building modern data warehouses with Azure Synapse Analytics](../media/modern-data-warehouses-process-with-synapse.png)

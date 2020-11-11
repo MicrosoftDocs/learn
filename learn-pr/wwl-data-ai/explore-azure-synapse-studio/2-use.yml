@@ -4,12 +4,12 @@ title: Use Azure Synapse Studio
 metadata:
   title: Use Azure Synapse Studio
   description: "Use Azure Synapse Studio"
-  ms.date: 11/10/2020
+  ms.date: 11/11/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/2-use.md)]
