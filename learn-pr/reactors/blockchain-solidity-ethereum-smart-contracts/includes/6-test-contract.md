@@ -83,7 +83,7 @@ We'll use the truffle-assertions package to test the events that are sent in the
 
 ### Using async/await
 
-The **.deployed()** function returns a promise. So we use `await` in front of the function, and we use `async` in front of the test code. This setup means that after the contract is deployed, we won't move forward with our test until the promise is fulfilled. 
+The **.deployed()** function returns a promise. So we use `await` in front of the function, and we use `async` in front of the test code. This setup means that after the contract is deployed, we won't move forward with our test until the promise is fulfilled.
 
 This pattern is commonly used in tests because almost all smart contract transactions are asynchronous. They're asynchronous because transactions need to be validated or mined before they're added to the blockchain ledger.
 
@@ -108,7 +108,6 @@ You should see that all tests pass successfully:
     ✓ testing SendResponse of HelloBlockchain (46ms)
 
   Contract: ShippingStatus
-    ✓ should return the status Pending
     ✓ should return the status Pending
     ✓ should return the status Shipped (59ms)
     ✓ should return the status Delivered (58ms)
