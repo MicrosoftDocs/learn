@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.incident-management-in-sentinel.3-understand-evidence-and-entities
+uid: learn.azure.incident-management-in-sentinel.4-understand-evidence-and-entities
 metadata:
   title: Understand evidence and entities
   description: Understand evidence and entities in Azure Sentinel
@@ -11,7 +11,7 @@ metadata:
 title: Understand evidence and entities
 durationInMinutes: 5
 content: |
-  [!include[]includes/3-understand-evidence-and-entities.md)]
+  [!include[]includes/4-understand-evidence-and-entities.md)]
 quiz:
   title: Check your knowledge
   questions:
@@ -28,7 +28,5 @@ quiz:
       explanation: "An event is evidence"
     - content: "Host name"
       isCorrect: false
-      explanation: "An alert is evidence"
-      
-#Jason: Check the final answer choice (host name but the explanation says "alert"). 
-#Jason: Also, if possible, there ought to be two to three questions here (aiming for higher level questions),
+      explanation: "An host name is an entity"
+

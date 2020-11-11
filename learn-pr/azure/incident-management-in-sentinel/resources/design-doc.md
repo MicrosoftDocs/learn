@@ -37,8 +37,8 @@ This module introduces you to incident management in Azure Sentinel. You’ll le
 
 ## Module learning objectives
 
-- Understand Azure Sentinel incident management
-- Explore Azure Sentinel evidence and entity management
+- Describe Azure Sentinel incident management
+- Explore Azure Sentinel events and entities
 - Investigate and manage incident resolution
 
 ## Estimated module duration
