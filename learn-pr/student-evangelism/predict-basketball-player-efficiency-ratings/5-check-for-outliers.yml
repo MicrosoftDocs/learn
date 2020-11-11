@@ -3,7 +3,7 @@ uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.5-che
 metadata:
   title: 'Data exploration part 1 : Check for outliers'
   description: Use box plots to discover outliers in each column within a dataset.
-  ms.date: 12/14/2020
+  ms.date: 11/11/2020
   author: sguthals
   ms.author: shanama 
   ms.topic: interactive-tutorial

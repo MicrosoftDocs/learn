@@ -3,7 +3,7 @@ uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.7-dis
 metadata:
   title: 'Data exploration part 3 : Discover data that represents more than one population'
   description: Use histograms to define multiple populations in a bimodal distribution of data.
-  ms.date: 12/14/2020
+  ms.date: 11/11/2020
   author: sguthals
   ms.author: shanama 
   ms.topic: interactive-tutorial

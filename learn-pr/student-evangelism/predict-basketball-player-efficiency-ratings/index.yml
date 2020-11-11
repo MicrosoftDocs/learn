@@ -3,7 +3,7 @@ uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings
 metadata:
   title: Predict basketball player efficiency ratings with machine learning and Visual Studio Code
   description: With anonymized data from real basketball players and Looney Tunes characters from the upcoming film Space Jam, create a machine learning model to cleanse data to be used during games and explore bimodal data distributions with Python in Visual Studio Code.
-  ms.date: 12/14/2020
+  ms.date: 11/11/2020
   author: sguthals
   ms.author: shanama 
   ms.topic: interactive-tutorial

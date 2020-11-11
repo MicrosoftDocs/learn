@@ -3,7 +3,7 @@ uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.10-im
 metadata:
   title: 'Data manipulation part 3 : Impute missing values by using machine learning'
   description: Use a linear regression machine learning model to impute data in complex columns.
-  ms.date: 12/14/2020
+  ms.date: 11/11/2020
   author: sguthals
   ms.author: shanama 
   ms.topic: interactive-tutorial
