@@ -12,13 +12,13 @@
 
 ## Learner level
 
-- **Beginner**: Introductory and overview material that assumes little or no expertise with the topic. Covers topic concepts, functions, features, benefits. <!-- Can we replace this with "Provides a detailed overview of a topic&#39;s subareas."? Otherwise, I'd delete this last sentence as it doesn't apply to the heading - it doesn't respond to the implied question," What is the learner level?"  -->
+- **Beginner**: Introductory and overview material that assumes little or no expertise with the topic. Provides a detailed overview of a topic&#39;s subareas.
 
 ## Products taught
 
 - Microsoft Azure Sentinel
 - Azure Log Analytics workspace
-- Kusto Query Language (KQL)<!-- Kusto is no longer an approved term. Please s/r both Kusto Query Language and KQL with "Azure Data Explorer." -->
+- Azure Data Explorer
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ To get the best learning experience from this module, you should have:
 
 ## Module summary description
 
-Threat hunting involves proactively seeking for and identifying threat behaviors in the early stages of an attack. Threat hunting is also for testing analytic rules to determine result quality and identify potential investigation areas. In this module, you’ll learn how to perform threat hunting using Azure Sentinel tools.<!-- In other mods, this section just has the "In this module, you'll learn..." sentence. If you agree to go with that, please delete the first two sentences.  -->
+In this module, you’ll learn how to perform threat hunting using Azure Sentinel tools.
 
 ## Subtasks in this module
 
@@ -39,7 +39,7 @@ Threat hunting involves proactively seeking for and identifying threat behaviors
 - Save key findings with bookmarks.
 - Observe threats over time with livestream.
 
-## Lab exercise<!-- I added this section to avoid confusion.  -->
+## Lab exercise
 
 None
 
@@ -47,8 +47,7 @@ None
 
 After completing this module, you'll be able to:
 
-- Hunt threats with built-in hunting queries.
-- Create and edit hunting queries using KQL.
+- Use queries to hunt threats.
 - Save key findings with bookmarks.
 - Observe threats over time with livestream.
 
