@@ -1,4 +1,4 @@
-In this unit, you'll learn how to create a Spring application, connect to a MySQL database, and run locally.
+In this unit, you'll learn how to create a Spring application, connect it to a MySQL database, and run everything locally.
 
 ## Introduction to Azure App Service
 
@@ -7,7 +7,7 @@ You're looking at creating a Spring Boot application that hosts its logic in Azu
 
 ## Develop your Spring app
 
-Spring is the perfect framework to host and manage our applications. All we have to do is wire certain Spring components and without managing the underlying Server runtime.
+Spring is the perfect framework to host and manage our applications. All we have to do is wire certain Spring components without managing the underlying server runtime.
 You've decided to use Spring Boot, which is self-hosted and provides support services to run your application.
 
 The Spring injection annotations use Dependency injection to process the Components.
