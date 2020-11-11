@@ -1,4 +1,4 @@
-The first step in deploying Azure Synapse Analytics is to deploy an Azure Synapse Analytics workspace.  This creates several resources which includes an Azure Data Lake Storage Gen2 account that acts as the primary storage and the container to store workspace data. The workspace stores data in Apache Spark tables. It also stores Spark application logs under a folder called /synapse/workspacename. There are endpoints created that can be used to connect to the SQL on-demand service, and the Azure Synapse Analytics Workspace itself.
+The first step in deploying Azure Synapse Analytics is to deploy an Azure Synapse Analytics workspace.  This deployment creates several resources which include an Azure Data Lake Storage Gen2 account that acts as the primary storage and the container to store workspace data. The workspace stores data in Apache Spark tables. It also stores Spark application logs under a folder called /synapse/workspacename. There are endpoints created that can be used to connect to the SQL on-demand service, and the Azure Synapse Analytics Workspace itself.
 
 Azure Synapse Analytics enables you to create pools, either SQL pools, or Spark pools within the workspace that can be seamlessly mixed and matched based on your requirements. It is able to do this through Azure Synapse Analytics shared metadata, which enables the different engines to share databases and tables.
 
@@ -12,4 +12,4 @@ The Azure Synapse Analytics workspace is the central location where you can view
 
 With a SQL on-demand endpoint available, and an Azure Data Lake Storage Gen2 (ADLS Gen2) account, you can immediately realize value from the product by uploading files to the data lake, and using the SQL on-demand service to prepare and explore the files
 
-Furthermore, while you are able to manage some aspects of the service in the Azure portal, the best practises is to connect to the Azure Synapse Studio to perform your activities from with there.
+Furthermore, while you are able to manage some aspects of the service in the Azure portal, the best practices is to connect to the Azure Synapse Studio to perform your activities from with there.

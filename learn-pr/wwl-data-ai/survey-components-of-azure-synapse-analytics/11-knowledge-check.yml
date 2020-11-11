@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/10/2020
+  ms.date: 11/11/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ azureSandbox: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which Azure Service is Azure Synapse Pipelines based on?”"
+  - content: "Which Azure Service is Azure Synapse Pipelines based on?"
     choices:
     - content: "Azure Data Explorer."
       isCorrect: false

@@ -24,7 +24,7 @@
 
 1. Select the **Campaign Analytics** activity **(1)**, select the **Settings** tab **(2)**, observe the invoked pipeline is set to **Customize All (3)**, then select **Open (4)**.
  
-    ![Modifying the settings of an Azure Synapse pipeline](../media/edit-pipeline-settings.png)
+    ![Modifying the settings of another Azure Synapse pipeline](../media/edit-pipeline-settings.png)
 
 1. **Observe** how cleaning and ingesting happens in the pipeline by clicking on each activity.
  

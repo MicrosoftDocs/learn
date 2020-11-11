@@ -4,12 +4,12 @@ title: Exercise-Identifying azure synapse pipeline components
 metadata:
   title: Exercise-Identifying azure synapse pipeline components
   description: "Exercise-Identifying azure synapse pipeline components"
-  ms.date: 11/10/2020
+  ms.date: 11/11/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 8
 content: |
   [!include[](includes/8-exercise-identifying-pipeline-components.md)]

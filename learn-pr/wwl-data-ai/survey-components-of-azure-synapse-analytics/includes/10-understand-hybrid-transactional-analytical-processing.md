@@ -1,6 +1,6 @@
-Hybrid Transactional and Analytical Processing enables businesses to perform analytics over a database system that is seen to provide transactional capabilities without impacting the performance of the system. This enables organizations to use a database to fulfil both transactional and analytical needs to support near real-time analysis of operational data to  make decisions about the information that is being analysed. 
+Hybrid Transactional and Analytical Processing enables businesses to perform analytics over a database system that is seen to provide transactional capabilities without impacting the performance of the system. This enables organizations to use a database to fulfill both transactional and analytical needs to support near real-time analysis of operational data to  make decisions about the information that is being analyzed. 
 
-As an example, Tailwind Traders uses Azure Cosmos DB to store user profile data from their eCommerce site. The NoSQL document store provided by the Azure Cosmos DB SQL API provides the familiarity of managing their data using SQL syntax, while being able to read and write the files at a massive, global scale.
+As an example, Tailwind Traders use Azure Cosmos DB to store user profile data from their eCommerce site. The NoSQL document store provided by the Azure Cosmos DB SQL API provides the familiarity of managing their data using SQL syntax, while being able to read and write the files at a massive, global scale.
 
 While Tailwind Traders is happy with the capabilities and performance of Azure Cosmos DB, they are concerned about the cost of executing a large volume of analytical queries over multiple partitions (cross-partition queries) from their data warehouse. They want to efficiently access all the data without needing to increase the Azure Cosmos DB request units (RUs). They have looked at options for extracting data from their containers to the data lake as it changes, through the Azure Cosmos DB change feed mechanism. The problem with this approach is the extra service and code dependencies and long-term maintenance of the solution. They could perform bulk exports from a Synapse Pipeline, but then they won't have the most up-to-date information at any given moment.
 
@@ -38,7 +38,7 @@ After creating the container, we will create a new Synapse Pipeline to copy data
  
     ![Select a container in Data Explorer](../media/select-container.png)
 
-3.	For **Database id**, select **Use existing**, then select **CustomerProfile (1)**. Enter **UserProfileHTAP** for the **Container id (2)**, then enter **/userId** for the **Partition key (3)**. For **Throughput**, select **Autoscale (4)**, then enter **4000** for the **Max RU/s** value **(5)**. Finally, set **Analytical store** to **On (6) **, then select **OK**.
+3.	For **Database ID**, select **Use existing**, then select **CustomerProfile (1)**. Enter **UserProfileHTAP** for the **Container ID (2)**, then enter **/userId** for the **Partition key (3)**. For **Throughput**, select **Autoscale (4)**, then enter **4000** for the **Max RU/s** value **(5)**. Finally, set **Analytical store** to **On (6)**, then select **OK**.
  
     ![Add a container](../media/add-container.png)
 

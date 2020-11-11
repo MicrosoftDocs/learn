@@ -4,12 +4,12 @@ title: Exercise - Create and manage azure synapse workspace
 metadata:
   title: Exercise - Create and manage azure synapse workspace
   description: "Exercise - Create and manage azure synapse workspace"
-  ms.date: 11/10/2020
+  ms.date: 11/11/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/3-exercise-create-manage-workspace.md)]
