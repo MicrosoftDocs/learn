@@ -6,7 +6,7 @@ When building data flows, you can enable debug mode, which turns on a small inte
 
 With the Mapping Data Flow added, and the Spark cluster running, this will enable you to perform the transformation, and run and preview the data. No coding is required as Azure Data Factory handles all the code translation, path optimization, and execution of your data flow jobs.
 
-## Adding source data to the Mapping Data Flow
+## Add source data to the Mapping Data Flow
 
 Open the Mapping Data Flow canvas. Click on the Add Source button in the Data Flow canvas. In the source dataset dropdown, select your data source, n this case the ADLS Gen2 dataset is used in this example
 
@@ -33,7 +33,7 @@ Once your debug cluster is warmed up, verify your data is loaded correctly via t
 ![Previewing data in the Mapping Data Flow](../media/preview-data-mapping-data-flow.png)
 
 
-## Using transformations in the Mapping Data Flow
+## Use transformations in the Mapping Data Flow
 
 Now that you have moved the data into Azure Data Lake Store Gen2, you are ready to build a Mapping Data Flow that will transform your data at scale via a spark cluster and then load it into a Data Warehouse. 
   
@@ -133,7 +133,7 @@ The main tasks for this are as follows:
     
         ![Creating an Azure Synapse Analytics connection in Azure Data Factory](../media/azure-synapse-analytics-connection.png)
     
-    1. In the dataset configuration, select **Create new table** and enter in the schema of **Dbo** and the  table name of **Ratings**. Click **OK** once completed.
+    1. In the dataset configuration, select **Create new table** and enter in the schema of **dbo** and the  table name of **Ratings**. Click **OK** once completed.
     
         ![Creating an Azure Synapse Analytics table in Azure Data Factory](../media/azure-synapse-analytics-table.png)
     
@@ -145,7 +145,7 @@ At this point, You have finished building your 8 transformation Mapping Data Flo
 
 [![Completed Mapping Data Flow in Azure Data Factory](../media/completed-mapping-data-flow.png)](../media/completed-mapping-data-flow.png#lightbox)
 
-## Task 5: Running the Pipeline
+## Task 5: Running the pipeline
 
 1. Go to the pipeline1 tab in the canvas. Because Azure Synapse Analytics in Data Flow uses [PolyBase](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide?view=sql-server-2017), you must specify a blob or ADLS staging folder. In the Execute Data Flow activity's settings tab, open up the PolyBase accordion and select your ADLS linked service and specify a staging folder path.
 

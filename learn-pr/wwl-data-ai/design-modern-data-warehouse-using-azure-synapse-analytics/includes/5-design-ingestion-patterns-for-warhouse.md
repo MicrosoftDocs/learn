@@ -30,7 +30,7 @@ The following shows an example of both.
 
 4.	Select the **Campaign Analytics** activity **(1)**, select the **Settings** tab **(2)**, observe the invoked pipeline is set to **Customize All (3)**, then select **Open (4)**.
  
-    ![Viewing pipeline settings in Azure Synapse Studio](../media/view-second-pipeline-settings-synapse-studio.png)
+    ![Viewing a second pipeline settings in Azure Synapse Studio](../media/view-second-pipeline-settings-synapse-studio.png)
 
 5.	Observe how cleaning and ingesting happens in the pipeline by clicking on each activity.
  
