@@ -18,7 +18,7 @@ To deploy the prerequisites for the exercise, perform the following steps.
 | **Location** | Accept the default value **[resourceGroup().location]**. |
 | **Simplevm Name** | Accept the default value **simple-vm**.|
 | **Simplevm Windows OS Version** | Accept the default value **2016-Datacenter**.|
-
+<!-- Remove extra space right after "**azure-sentinel-rg**".  -->
 4. Select the checkbox for **I agree to the terms and conditions stated above** and then select **Purchase**
 
 ![Screenshot for Custom Deployment](../media/02-Custom-Deployment.PNG)
@@ -37,7 +37,7 @@ In this task, you will deploy Azure Sentinel connector to Azure Activity.
 4. In the **Azure Activity** pane, click on the link **Configure Azure Activity logs**.
 5. Click on your subscription and then click **Connect.**
 6. When you receive status **Connected** , you can close all open blades to return on **Azure Sentinel| Data connector** blade.
-
+<!-- Missing space in between "Azure Sentinel" and "|". It should be "**Azure Sentinel | Data connector**". -->
 ![Screenshot for Azure Sentinel Connector](../media/02-Azure-Sentinel-Connector.PNG)
 
 > [!Note]
