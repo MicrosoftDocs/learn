@@ -179,7 +179,3 @@ Congratulations! You've deployed your first app to Azure Static Web Apps!
 
 > [!NOTE]
 > Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web Apps is created. So if you see the splash page, the app is still being deployed.
-
-## Next steps
-
-Next you'll learn how to handle all unmatched page requests to the server and map them to navigate to a valid page in your app.
