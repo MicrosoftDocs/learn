@@ -274,7 +274,7 @@ The directory structure after implementing the program is as follows.
             └── index.xhtml
 ```
 
-### Exercise: Run in local tomcat environment
+### Run in local tomcat environment
 
 Compile the source code and run it in a locally installed Tomcat environment.
 Execute the following command.
