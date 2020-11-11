@@ -78,10 +78,10 @@ In this module, you will:
 * Create an Azure IoT Central application
 * Configure your Azure Sphere application to Azure IoT Central
 * Build and deploy the Azure Sphere application
-* Display environment telemetry in the Azure IoT Central dashboard
+* Display environment data in the Azure IoT Central dashboard
 * Control an Azure Sphere application by using Azure IoT Central properties and commands
-* Deploy an Azure RTOS sensor application onto an Azure Sphere Real-time core
-* Partner a High-level Azure Sphere application with an Azure RTOS Real-time application running on a Real-time core
+* Deploy a new more sensitive room sensor onto an Azure Sphere Real-time core running Azure RTOS
+* Read the data from the new sensor running on the Real-time core and send the data to IoT Central
 
 ------
 
