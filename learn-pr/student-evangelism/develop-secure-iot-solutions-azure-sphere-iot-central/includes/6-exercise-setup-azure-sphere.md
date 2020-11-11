@@ -1,13 +1,9 @@
 Install the following software on your computer.
 
-------
-
 ## Troubleshooting
 
 1. If you have trouble connecting to the Azure Sphere over USB be sure to disable any VPNs you might have enabled.
 2. The **TAP-Windows Adapter V9** installed with VPN clients, including OpenVPN client is not compatible with the **TAP-Windows Adapter V9** required and installed by the Azure Sphere SDK. You will need to uninstall the VPN client and reinstall the Azure Sphere SDK for Visual Studio.
-
-------
 
 ## Windows 10 users
 
@@ -22,15 +18,13 @@ You need to do the following:
 1. Claim your device.
 1. Configure networking for the device.
 
-The following [Quickstart: Install the Azure Sphere SDK for Windows](https://docs.microsoft.com/en-us/azure-sphere/install/install-sdk?pivots=vs-code&azure-portal=true) will step you through the process.
+The following [Quickstart: Install the Azure Sphere SDK for Windows](https://docs.microsoft.com/azure-sphere/install/install-sdk?pivots=vs-code&azure-portal=true) will step you through the process.
 
 ### Install the Git client for Windows
 
 The Git client is required to clone the Learning Path Labs and the Azure Sphere SDK Samples.
 
 Install [Git for Windows](https://git-scm.com/downloads?azure-portal=true).
-
-------
 
 ## Ubuntu 18.04 or 20.04 LTS users
 
@@ -44,7 +38,7 @@ You need to do the following:
 1. Claim your device.
 1. Configure networking for the device.
 
-The following [Quickstart: Install the Azure Sphere SDK for Linux](https://docs.microsoft.com/en-us/azure-sphere/install/install-sdk-linux?pivots=vs-code-linux&azure-portal=true) will step you through the process.
+The following [Quickstart: Install the Azure Sphere SDK for Linux](https://docs.microsoft.com/azure-sphere/install/install-sdk-linux?pivots=vs-code-linux&azure-portal=true) will step you through the process.
 
 ### Install the Git client for Linux
 
@@ -53,8 +47,6 @@ The Git client is required to clone the Learning Path Labs and the Azure Sphere 
 ```bash
 sudo apt install git
 ```
-
-------
 
 ## Recommended Visual Studio Code Extensions
 
@@ -66,7 +58,6 @@ sudo apt install git
    1. Click Install
    1. Click Reload, if required
 
-------
 
 ## Delete any existing applications on Azure Sphere
 
@@ -82,7 +73,6 @@ sudo apt install git
    azsphere device restart
    ```
 
-------
 
 ## high-level core device debugging
 
@@ -91,8 +81,6 @@ sudo apt install git
    ```bash
    azsphere device enable-development
    ```
-
-------
 
 ## Enable Azure RTOS Real-time development
 
@@ -133,8 +121,6 @@ Install the GNU Arm Embedded Toolchain for Linux
    azsphere device enable-development -r
    ```
 
-------
-
 ## Clone the Azure Sphere Developer Learning Path
 
 > [!NOTE]
@@ -143,8 +129,6 @@ Install the GNU Arm Embedded Toolchain for Linux
 ```bash
 git clone --depth 1 https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path.git Azure-Sphere
 ```
-
-------
 
 ## Clone the Azure Sphere samples
 
