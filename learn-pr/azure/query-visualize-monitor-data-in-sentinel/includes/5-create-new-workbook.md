@@ -75,8 +75,8 @@ In the **Advanced Settings** tab, you can provide additional customization on th
 - **Settings** tab. You use this tab to provide values that affect how the step will look.
 - **Style** tab. You use this tab to set the values that affect how this step will look.
 
-For example, in the **Settings** tab, you can enter the **Chart title, as is shown in the following screenshot:
-<!-- Missing "**" after "Chart title". -->
+For example, in the **Settings** tab, you can enter the **Chart title**, as is shown in the following screenshot:
+
 ![](RackMultipart20201108-4-10kj3z7_html_9b52d138cff37780.png)
 
 You can use the **Style** tab to adjust the margin and padding element in the step.
@@ -112,8 +112,8 @@ In the previous example, the visualization type of the data was provided in the 
 
 You can use grids visualization to present the data in tables, which enrich the UI for the reports. You can select grid visualization, from the **Visualization** drop-down menu. Then you can select **Column Settings** button, to specify which column will be visible in the table and to provide column labels if necessary.
 
-In the **Edit Column settings** tab, you can select different column renderer, for example, heatmap, bar, spark area, etc. If you select **Custom formatting, you can set units, style, and formatting options for number values, as shown in the following screenshot:
-<!-- Missing "**" after "Custom formatting". -->
+In the **Edit Column settings** tab, you can select different column renderer, for example, heatmap, bar, spark area, etc. If you select **Custom formatting**, you can set units, style, and formatting options for number values, as shown in the following screenshot:
+
 ![](RackMultipart20201108-4-10kj3z7_html_d2a4e739aee8224.png)
 
 ## Parameters
