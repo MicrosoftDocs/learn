@@ -22,7 +22,7 @@ Compute targets are cloud-based resources on which you can run model training an
     - **Minimum number of nodes**: 2
     - **Maximum number of nodes**: 2
     - **Idle seconds before scale down**: 120
-    * **Enable SSL configuration**: Unselected
+    * **Enable SSH access**: Unselected
 
 > [!NOTE]
 > In a production environment, you'd typically set the **minimum number of nodes** value to 0 so that compute is only started when it is needed. However, compute can take a while to start, so to reduce the amount of time you spend waiting for it in this module, you've initialized it with two permanently running nodes.

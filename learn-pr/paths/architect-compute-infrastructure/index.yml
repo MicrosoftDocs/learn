@@ -23,7 +23,7 @@ products:
 - azure
 - azure-virtual-machines
 modules:
-- learn.intro-to-compute
+- learn.azure.azure-compute-fundamentals
 - learn.manage-vms-with-azure-cli
 - learn.choose-compute-provisioning
 - learn.build-azure-vm-templates

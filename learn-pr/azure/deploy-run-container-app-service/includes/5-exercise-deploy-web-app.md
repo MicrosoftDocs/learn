@@ -22,7 +22,7 @@ You're now ready to create your web app.
 
 1. Select **Create a resource** > **Web** > **Web App**.
 
-    ![Screenshot that shows the Azure Marketplace with Web App selected](../media/5-search-web-app-annotated.png)
+    :::image type="content" source="../media/5-search-web-app-annotated.png" alt-text="Screenshot that shows the Azure Marketplace with Web App selected.":::
 
 1. Specify these settings for each of the properties:
 
@@ -60,7 +60,7 @@ You're now ready to create your web app.
 
 3. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like this:
 
-    ![Screenshot of the sample web app](../media/5-sample-web-app-dotnet.png)
+    ![Screenshot of the sample Docker image](../media/5-sample-web-app-dotnet.png)
 
 ::: zone-end
 
@@ -68,7 +68,7 @@ You're now ready to create your web app.
 
 3. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like this:
 
-    ![Screenshot of the sample web app](../media/5-sample-web-app-node.png)
+    ![Screenshot of the sample Welcome to Express](../media/5-sample-web-app-node.png)
 
 ::: zone-end
 
