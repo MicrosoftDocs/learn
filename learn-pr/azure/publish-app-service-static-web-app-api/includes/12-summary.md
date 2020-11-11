@@ -4,10 +4,6 @@ Without Azure Static Web Apps, you could deploy your web assets to cloud storage
 
 When you use Azure Static Web Apps, you get all of this out of the box.
 
-## Solution code
-
-The solution for the [sample project is on GitHub in the _solution_ branch](https://github.com/MicrosoftDocs/mslearn-staticwebapp/tree/solution?azure-portal=true). The instructions on how to get started appear in the README file.
-
 ## Additional resources
 
 Here are several resources where you can learn more about Azure Static Web Apps, Visual Studio Code, and other concepts covered in this module.
