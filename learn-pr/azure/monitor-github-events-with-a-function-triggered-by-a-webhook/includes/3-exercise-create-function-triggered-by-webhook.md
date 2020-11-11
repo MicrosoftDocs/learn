@@ -21,7 +21,7 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
     | Publish | Code |
     | Runtime Stack | **Node.js** |
     | Version | default |
-    | Region | Choose the nearest location to you that is also one of the allowed *Sandbox regions* listed below. |
+    | Region | Choose the nearest location to you that is also one of the allowed *Sandbox regions*. |
     
 1. Click Next > Hosting
     
