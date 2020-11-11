@@ -1,4 +1,4 @@
-In this module, you have explored how Azure Synapse Analytics solves the issue of having a single service to fulfil the broad range of analytics requirements that organizations face today. 
+In this module, you have explored how Azure Synapse Analytics solves the issue of having a single service to fulfill the broad range of analytics requirements that organizations face today. 
 
 In this module, you have learned:
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/10/2020
+  ms.date: 11/11/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -34,12 +34,12 @@ quiz:
       explanation: "Incorrect. The dedicated resource model reserves processing power for data stored in SQL tables and is not an ideal resource model to use for ad hoc data preparation."
     - content: "Pipelines."
       isCorrect: false
-      explanation: "Incorrect. Pipelines are a component of Azure Synapse Analytics that enables you to ingest, prepare and serve data to other Azure Synapse Components or Azure services."
+      explanation: "Incorrect. Pipelines are a component of Azure Synapse Analytics that enables you to ingest, prepare, and serve data to other Azure Synapse Components or Azure services."
   - content: "Where can you develop TSQL scripts and notebooks in Azure Synapse Analytics?"
     choices:
     - content: "Azure portal."
       isCorrect: false
-      explanation: "incorrect choice"
+      explanation: "Incorrect. The Azure portal is where you can collect information about your Azure Synapse Analytics service including the Primary ADLS Gen2 account URL, the SQL endpoint and SQL on-demand endpoint, the Workspace web URL, and the available resources, such as SQL pools and Apache Spark pools."
     - content: "Azure Synapse Studio."
       isCorrect: true
       explanation: "Correct. Azure Synapse Studio is where you can develop TSQL scripts and notebooks."

@@ -21,20 +21,20 @@ Azure Synapse Pipelines leverages the capabilities of Azure Data Factory and is 
 ## Perform operational analytics with near real-time hybrid transactional and analytical processing with Azure Synapse Link
 
 Azure Synapse Analytics enables you to reach out to operational data using Azure Synapse Link, and is achieved without impacting the performance of the transactional data store. For this to happen, you have to enable the feature within both Azure Synapse Analytics, and within the data store to which Azure Synapse Analytics will connect, such as Azure Cosmos DB. 
-In the case of Azure Cosmos DB, this will create an analytical data store. As data changes in the transactional system, the changed data is fed to the analytical store in a Colum store format from which Azure Synapse Link can query with no disruption to the source system.
+In the case of Azure Cosmos DB, this will create an analytical data store. As data changes in the transactional system, the changed data is fed to the analytical store in a Column store format from which Azure Synapse Link can query with no disruption to the source system.
 
 ## A single Web UI to be able to access all Azure Synapse Analytics capabilities
 
 While the Azure portal will allow you to manage some aspects of the product, Azure Synapse Studio is the best place to centrally work with all the capabilities. 
  
-![Azure Synapse Studio](../media/synapse-studio.png)
+[![Azure Synapse Studio](../media/synapse-studio.png)](../media/synapse-studio.png#lightbox)
 
 Azure Synapse Studio is a single web UI that allows you to:
-1.	Explore your data estate.
-2.	Develop TSQL scripts and notebooks to interact with the analytical engines.
-3.	Build data integration pipelines for managing data movement.
-4.	Monitor the workloads within the service.
-5.	Manage the components of the service.
+* Explore your data estate.
+* Develop TSQL scripts and notebooks to interact with the analytical engines.
+* Build data integration pipelines for managing data movement.
+* Monitor the workloads within the service.
+* Manage the components of the service.
 
 ## Integrate with a variety of Azure Data Platform technologies
 
@@ -42,7 +42,7 @@ For organizations that have existing analytical solutions, Azure Synapse Analyti
 For example, if you are already using Azure Data Factory to build data integration pipelines, these can be used to load data into Azure Synapse Analytics. You can also integrate existing data preparation or data science projects that you may hold in Azure Databricks. Theirs is also integration with many of Azure security components to ensure that you meet security and compliance requirements within your organization.
 On initial deployment Azure Synapse Analytics, there are a few resources that deploy along with it, including the Azure Synapse Workspace and an Azure Data Lake Storage Gen2 (ADLS Gen2) account that acts as the primary storage for the workspace.
 	 
-![Azure Synapse Analytics workspace](../media/azure-synapse-analytics-workspace.png)
+[![Azure Synapse Analytics workspace](../media/azure-synapse-analytics-workspace.png)](../media/azure-synapse-analytics-workspace.png#lightbox)
 
 Within the Azure portal, there are links to configure your workspace, manage access through Access control (IAM), firewalls, managed identities, and private endpoint connections, as well as view metrics. 
 
