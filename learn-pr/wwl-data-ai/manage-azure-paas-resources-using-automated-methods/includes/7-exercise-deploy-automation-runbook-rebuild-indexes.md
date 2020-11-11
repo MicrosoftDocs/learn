@@ -45,30 +45,30 @@ You have been hired as a Senior Data Engineer to help automate day to day operat
 
     Then select the SQL database **sample-db-with-tde**.
 
-    :::image type="content" source="../media/dp-3300-module-66-lab-22.png" alt-text="Screenshot of selecting the sample-db-with-tde SQL database .":::  
+    :::image type="content" source="../media/dp-3300-module-66-lab-22.png" alt-text="Screenshot of selecting the sample-db-with-tde SQL database.":::  
 
 1. On the **Overview** page select the **Query editor (preview)**.
 
-    :::image type="content" source="../media/dp-3300-module-66-lab-27.png" alt-text="Screenshot of selecting the Query editor (preview) .":::
+    :::image type="content" source="../media/dp-3300-module-66-lab-27.png" alt-text="Screenshot of selecting the Query editor (preview).":::
 
-1. You will be prompted for credentials to login to your database. Use these credentials:
+1. You will be prompted for credentials to sign in to your database. Use these credentials:
 
     - Login: **labadmin**
     - Password: **Azur3Pa$$**
 
-    :::image type="content" source="../media/dp-3300-module-66-lab-29.png" alt-text="Screenshot of the login error.":::
+    :::image type="content" source="../media/dp-3300-module-66-lab-29.png" alt-text="Screenshot of the sign in error.":::
 
 1. Select **Set server firewall** at the end of the error message shown above.
 
-    :::image type="content" source="../media/dp-3300-module-66-lab-30.png" alt-text="Screenshot of the .":::
+    :::image type="content" source="../media/dp-3300-module-66-lab-30.png" alt-text="Screenshot of adding the client IP.":::
 
 1. Select **Add client IP**, then select **Save**.
 
-1. Return to the Query editor, select **OK**, to login to your database.
+1. Return to the Query editor, select **OK**, to sign in to your database.
 
 1. Open a new tab in your browser and navigate to the GitHub page for **AdaptativeIndexDefragmentation**. [https://github.com/microsoft/tigertoolbox/blob/master/AdaptiveIndexDefrag/usp_AdaptiveIndexDefrag.sql](https://github.com/microsoft/tigertoolbox/blob/master/AdaptiveIndexDefrag/usp_AdaptiveIndexDefrag.sql)
 
-    :::image type="content" source="../media/dp-3300-module-66-lab-26.png" alt-text="Screenshot of the .":::
+    :::image type="content" source="../media/dp-3300-module-66-lab-26.png" alt-text="Screenshot of selecting Raw in GitHub.":::
 
     Select **Raw**. This will provide the code in a format where you can copy it. Select all of the text ( <kbd>CTRL</kbd> + <kbd>A</kbd> ) and copy it to your clipboard ( <kbd>CTRL</kbd> + <kbd>C</kbd> ).
 
@@ -76,7 +76,7 @@ You have been hired as a Senior Data Engineer to help automate day to day operat
 
 1. Paste the text you copied into the Query 1 pane.
 
-    :::image type="content" source="../media/dp-3300-module-66-lab-32.png" alt-text="Screenshot of the .":::
+    :::image type="content" source="../media/dp-3300-module-66-lab-32.png" alt-text="Screenshot of selecting commands to delete.":::
 
 1. Delete `USE msdb` and `GO` on lines 5 and 6 of the query (that are highlighted in the screenshot) , and then select **Run**.
 
@@ -118,7 +118,7 @@ You have been hired as a Senior Data Engineer to help automate day to day operat
 
     :::image type="content" source="../media/dp-3300-module-66-lab-41.png" alt-text="Screenshot of selecting OK.":::
 
-1. You'll need to create a credential to securely login to your database. From the blade for the Automation Account navigate to the **Shared Resources** section and select **Credentials**.
+1. You'll need to create a credential to securely sign in to your database. From the blade for the Automation Account navigate to the **Shared Resources** section and select **Credentials**.
 
     :::image type="content" source="../media/dp-3300-module-66-lab-42.png" alt-text="Screenshot of adding account credentials.":::
 
@@ -159,9 +159,9 @@ You have been hired as a Senior Data Engineer to help automate day to day operat
 
 1. Scroll to the Process Automation section of the Automation account blade and select **Runbooks** and then **+ Create a runbook**.
 
-    :::image type="content" source="../media/dp-3300-module-66-lab-44.png" alt-text="Screenshot of the Runbooks page, selecting Create a rubook.":::
+    :::image type="content" source="../media/dp-3300-module-66-lab-44.png" alt-text="Screenshot of the Runbooks page, selecting Create a runbook.":::
 
-1. Enter the runbook name as **IndexMaintenance** and a runbook type of **Powershell**. You can supply a short description of your choosing. Select **Create**.
+1. Enter the runbook name as **IndexMaintenance** and a runbook type of **PowerShell**. You can supply a short description of your choosing. Select **Create**.
 
     :::image type="content" source="../media/dp-3300-module-66-lab-45.png" alt-text="Screenshot of creating a runbook.":::
 
