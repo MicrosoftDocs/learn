@@ -16,7 +16,7 @@ By the end of this module, you will be able to:
 
 - Develop a Spring Boot Web application
 - Connect your application to a MySQL database
-- Deploy the web application to Azure App services
+- Deploy the web application to Azure App Service
 
 ## Prerequisites
 

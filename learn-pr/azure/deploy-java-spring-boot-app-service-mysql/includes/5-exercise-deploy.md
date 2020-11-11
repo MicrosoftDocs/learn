@@ -60,7 +60,7 @@ Next, deploy your Spring Boot application to Azure using the following command:
 ```bash
 mvn package com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
 ```
-Here's a screenshot of the application deployed to the Azure app service:
+Here's a screenshot of the application deployed to the Azure app Service:
 
 ![The deployed application.](../media/5-spring-boot-01.png)
 

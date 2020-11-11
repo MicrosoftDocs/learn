@@ -11,7 +11,7 @@ Spring is the perfect framework to host and manage our applications. All we have
 You've decided to use Spring Boot, which is self-hosted and provides support services to run your application.
 
 The Spring injection annotations use Dependency injection to process the Components.
-You can also use Azure Spring Starter integration libraries to configure and set up connections to Azure Services.
+You can also use Azure Spring Starter integration libraries to configure and set up connections to Azure services.
 
 ## Create your resources using the Azure CLI and Maven
 
@@ -28,7 +28,7 @@ In this module, you use the Azure CLI to spin up the Azure App Service and Azure
 
 ### Maven
 
-We'll use the Maven package manager to structure our project and pull in dependencies. Maven also provides the tooling necessary to configure and deploy our project to the Azure App services with the Azure WebApp Plugin.
+We'll use the Maven package manager to structure our project and pull in dependencies. Maven also provides the tooling necessary to configure and deploy our project to the Azure App Service with the Azure WebApp Plugin.
 
 ### Azure Database for MySQL
 
