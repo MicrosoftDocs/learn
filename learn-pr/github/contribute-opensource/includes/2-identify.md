@@ -1,5 +1,8 @@
-Here, we discuss how you can get started with open-source contributions. We also cover how you can find projects in GitHub and use issues and tags to identify tasks to work on.
+Here, we discuss how you can get started with open-source contributions. We'll also use issues and tags to find tasks to contribute to.
 
-# Finding projects in GitHub 
+# Finding projects to contribute to on GitHub
 
-There are many ways to find projects and tasks to to contribute to on 
+There are many ways to contribute to open-source projects. The most common, and perhaps the easiest way to start is thinking about the projects you already use, or want to use.
+
+Perhaps while reading a project's README you find a broken link, a typo or a series of outdated instructions. These are all great opportunities to pitch in and contribute to the project. 
+
