@@ -6,7 +6,7 @@ As part of that evaluation, you will build a web application and deploy it to Li
 
 ## Exercise Create Todo web app with PrimeFaces
 
-In order to create a Todo Web Application, we will create the PrimeFaces Web Page in XHTML file. After that, we will create the DataModel class. In the DataModel class, we will define id, category, name and complete field. And individual Todo item has these attributes. Then we will create DAO class which is used to store the data of Todo Items and update Items. Finally we will create the Controller class which is used as a Backing Bean of PrimeFaces Web Page. In this class, we will implement the binding field of the PrimeFaces web page and
+In order to create a Todo Web Application, we will create the `PrimeFaces Web Page` in XHTML file. After that, we will create the `DataModel class`. In the DataModel class, we will define `id`, `category`, `name` and `complete` field. And individual Todo item has these attributes. Then we will create `DAO class` which is used to store the data of Todo Items and update Items. Finally we will create the `Controller class` which is used as a Backing Bean of PrimeFaces Web Page. In this class, we will implement the binding field of the PrimeFaces web page and
 also implement the operation which user pushed the button.
 
 ### Creating a JSF Web Page
