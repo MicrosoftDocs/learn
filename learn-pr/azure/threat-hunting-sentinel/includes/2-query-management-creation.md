@@ -1,5 +1,7 @@
 Azure Sentinel contains powerful query tools that can help you find and isolate security threats and unwanted activity within your environment.
 
+<!-- Jason: what about... "Azure Sentinel contains powerful query tools that can help you, as part of the SecOps team, find and isolate secuirty threats and unwanted activity within Contoso's environment." --> 
+
 ## Hunt using built-in queries
 
 Azure Sentinel provides powerful hunting search and query tools to hunt for security threats and tactics throughout your environment. Hunting queries enable to filter through large amounts of events and security data sources to identify potential threats or track down known or expected threats.
@@ -8,7 +10,7 @@ You can use the built-in queries in Azure Sentinel's Hunting page to guide your 
 
 :::image type="content" source="../media/2-hunting page.png" alt-text="The Hunting page in Azure Sentinel" :::
 
-The hunting page provides a list all hunting queries. you can filter and sort queries by query name, provider, data source, results, and tactics. You can save queries as favorites by selecting the star icon on the far left column. Whn q query is selected as a favorite, it runs automatically each time you open the hunting page.
+The hunting page provides a list all hunting queries. You can filter and sort queries by query name, provider, data source, results, and tactics. You can save queries as favorites by selecting the star icon on the far left column. Whn q query is selected as a favorite, it runs automatically each time you open the hunting page.
 
 ### Manage hunting queries
 
@@ -37,7 +39,7 @@ Selecting any tactic will filter the available queries by the selected tactic. T
 
 ## Create custom queries to refine threat hunting
 
-All Azure Sentinel hunting queries use the Kusto Query Language (KQL) syntax used in Log Analytics. You can modify a query in the details pane and run the new query or save it as a new query that can be reused within you Sentinel workspace.
+All Azure Sentinel hunting queries use the Kusto Query Language (KQL) syntax used in Log Analytics. You can modify a query in the details pane and run the new query or save it as a new query that can be reused within your Azure Sentinel workspace.
 
 You can also create your own custom queries using KQL code to hunt for threats.
 
@@ -46,15 +48,17 @@ You can also create your own custom queries using KQL code to hunt for threats.
 Custom queries enable you define the following:
 
 - Name. The custom query.
-- Description. A description your query's functionality.
+- Description. A description of your query's functionality. <!-- Jason: I added "of" - that's correct, right? --> 
 - Custom query. The KQL code that performs your query.
 - Entity mapping. You can map entity types to columns from your query result to populate your query results with more actionable information. Entities can also be mapped using code in your KQL query.
 - Tactics. You can specify the tactics that your query is designed to expose.
+
+<!-- Jason: Take a look at the list's formatting. Bold first word like in the earlier list? --> 
 
 Custom queries are listed alongside built-in queries for management.
 
 ## Explore the Azure Sentinel repository on GitHub
 
-The Azure Sentinel repository contains out of the box detections, exploration queries, hunting queries, workbooks, playbooks and much more to help you secure your environment and hunt for threats. The repo is contributed to by Microsoft and the Azure Sentinel community.
+The Azure Sentinel repository contains out of the box detections, exploration queries, hunting queries, workbooks, playbooks and much more to help you secure your environment and hunt for threats. The repo is contributed to by Microsoft and the Azure Sentinel community.<!-- Jason: To avoid passive voice, what about "Microsoft and the Azure Sentinel community contribute to this repo." --> 
 
 The repo contains folders with contributed content for several areas of Azure Sentinel functionality, including hunting queries. You can use the code from these queries to create custom queries in your Azure Sentinel workspace.
