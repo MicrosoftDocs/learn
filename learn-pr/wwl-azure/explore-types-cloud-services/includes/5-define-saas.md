@@ -1,6 +1,6 @@
-Software as a Service (SaaS) is software that is centrally hosted and managed for the end customer. It allows users to connect to and use cloud-based apps over the internet. Common examples are email, calendars, and office tools such as Microsoft Office 365.
+Software as a Service (SaaS) is software that is centrally hosted and managed for the end customer. It allows users to connect to and use cloud-based apps over the internet. Common examples are email, calendars, and office tools such as Microsoft 365.
 
-SaaS is typically licensed through a monthly or annual subscription, and Office 365 is an example of SaaS software.
+SaaS is typically licensed through a monthly or annual subscription, and Microsoft 365 is an example of SaaS software.
 
 
 ![SaaS encompasses PaaS, which encompasses IaaS. The IaaS icons are Servers and Storage, Networking firewalls and security, and Datacenter physical plant and security. In addition to the IaaS icons, PaaS icons include an Operating systems icon, and a Development tools, database management, and business analytics icon. The SaaS icon includes all of the PaaS icon and a Hosted applications and apps icon.](../media/saas-3.png)
@@ -16,5 +16,5 @@ SaaS is typically licensed through a monthly or annual subscription, and Office 
 
 ## Common SaaS usage scenarios
 
-+ Examples of Microsoft SaaS services include Office 365, Skype, and Microsoft Dynamics CRM Online.
++ Examples of Microsoft SaaS services include Microsoft 365, Skype, and Microsoft Dynamics CRM Online.
 

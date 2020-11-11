@@ -141,7 +141,7 @@ You can check queues in the Azure portal using the **Storage Explorer**, if you 
 Alternatively, you can use the Azure CLI or PowerShell. Try this command in the shell, replacing the `<connection-string>` value with your specific connection string:
 
 ```azurecli
-az storage message peek --queue-name newsqueue --connection-string <connection-string> 
+az storage message peek --queue-name newsqueue --connection-string "<connection-string>" 
 ```
 
 This should dump the information for your message, which will look something like this:

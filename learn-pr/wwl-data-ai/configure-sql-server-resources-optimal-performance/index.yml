@@ -3,7 +3,7 @@ uid: learn.wwl.configure-sql-server-resources-for-optimal-performance
 metadata:
   title: Configure SQL Server resources for optimal performance
   description: "Choose the appropriate size and storage options for your Azure SQL databases. Configure server resources such as tempdb. Understand the usage of Resource Governor."
-  ms.date: 08/02/2020
+  ms.date: 10/14/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ prerequisites: |
   - Experience creating and configuring resources using the Azure portal.
   - Knowledge of purpose of SQL Server system databases: master, tempdb, msdb
   - Basic understanding of SQL Server file storage.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/configure-sql-server-resources-for-optimal-performance.svg
 levels:
 - intermediate
 roles:

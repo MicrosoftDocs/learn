@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.student-evangelism.analyze-rock-images-ai-nasa
+metadata:
+  title: Analyze images of rocks by using artificial intelligence
+  description: Identify data to add to an artificial intelligence module that classifies space rocks in random photos.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Analyze images of rocks by using artificial intelligence
+summary: Identify data to add to an artificial intelligence module that classifies space rocks in random photos.
+abstract: |
+ In this module, you will:
+ - Import artificial intelligence libraries
+ - Learn how to import data
+ - Learn how to clean and separate data
+ - Show the data you imported
+prerequisites: |
+ - Ability to write and run introductory Python programs
+ - Visual Studio Code, a Python extension, and Jupyter Notebook installed
+ - [Artificial intelligence libraries](https://docs.microsoft.com/learn/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal=true) installed 
+iconUrl: /learn/achievements/student-evangelism/analyze-rock-images-ai-nasa.svg
+levels:
+- beginner
+roles:
+- student
+- data-scientist
+products:
+- vs-code
+units:
+- learn.student-evangelism.analyze-rock-images-ai-nasa.1-introduction
+- learn.student-evangelism.analyze-rock-images-ai-nasa.2-import-ai-libraries
+- learn.student-evangelism.analyze-rock-images-ai-nasa.3-why-clean-and-separate-data
+- learn.student-evangelism.analyze-rock-images-ai-nasa.4-import-and-clean-data
+- learn.student-evangelism.analyze-rock-images-ai-nasa.5-how-computers-read-images
+- learn.student-evangelism.analyze-rock-images-ai-nasa.6-show-imported-images
+- learn.student-evangelism.analyze-rock-images-ai-nasa.6a-knowledge-check
+- learn.student-evangelism.analyze-rock-images-ai-nasa.7-summary
+badge:
+  uid: learn.student-evangelism.analyze-rock-images-ai-nasa.badge

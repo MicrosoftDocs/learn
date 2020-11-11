@@ -34,7 +34,7 @@ When creating and placing resources within resource groups there are a few consi
 
 Resource groups exist to help manage and organize your Azure resources. By placing resources of similar usage, type, or location, you can provide some order and organization to resources you create in Azure. Logical grouping is the aspect that we're most interested in here, since there's a lot of disorder among our resources.
 
-![Conceptual image showing a resource group box with a Function, VM, database, and app included](../media/2-resource-group.PNG)
+![Conceptual image showing a resource group box with a Function, VM, database, and app included](../media/2-resource-group.png)
 
 ### Life cycle
 
@@ -113,7 +113,7 @@ So how can you use resource groups to your advantage in your new organization? T
 
 You can start with using an understandable naming convention. We named our resource group **msftlearn-core-infrastructure-rg**. We've given some indication of what it's used for (**msftlearn**), the types of resources contained within (**core-infrastructure**), and the type of resource it is itself (**rg**). This descriptive name gives us a better idea of what it is. If we had named it **my-resource-group** or **rg1**, we have no idea on a glance of what the usage may be. In this case, we can deduce that there are probably core pieces of infrastructure contained within. If we created additional VNets, storage accounts, or other resources the company may consider _core infrastructure_, we could place them here as well, to improve the organization of our resources. Naming conventions can vary widely between and even within companies, but some planning can help.
 
-### Principles of organize resource groups
+### Principles of organizing resource groups
 
 Resource groups can be organized in a number of ways, let's take a look at a few examples. We might put all resources that are _core infrastructure_ into this resource group. But we could also organize them strictly by resource type. For example, put all VNets in one resource group, all virtual machines in another resource group, and all Azure Cosmos DB instances in yet another resource group.
 

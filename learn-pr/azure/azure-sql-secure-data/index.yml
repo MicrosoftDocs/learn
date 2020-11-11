@@ -9,13 +9,13 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure your data with Azure SQL
-summary: Ensuring security and compliance of your data is always a top priority. In this module, you'll learn how to use Azure SQL to secure your data, how to configure logins and users, how to use tools and techniques for monitoring security, how to ensure your data meets industry and regulatory compliance standards, and how to leverage the extra benefits and intelligence that is only available in Azure. We'll also cover some of the networking considerations for securing SQL.
+summary: Ensuring the security and compliance of data is always a top priority. In this module, you'll learn how to use Azure SQL to secure your data, configure logins and users, use tools and techniques for monitoring security, ensure that your data meets industry and regulatory compliance standards, and take advantage of the extra benefits and intelligence that Azure provides. We'll also cover some of the networking considerations for securing SQL.
 abstract: | 
   In this module, you will learn how to:
-  - Make an informed decision regarding securing your network
-  - Managed and deliver access management and authorization  
-  - Protect, encrypt, and mask data
-  - Manage and monitor security for Azure SQL Database and Azure SQL Managed Instance
+  - Make an informed decision about securing your network.
+  - Manage and deliver access management and authorization.  
+  - Protect, encrypt, and mask data.
+  - Manage and monitor security for your Azure SQL Database instance and Azure SQL managed instance.
 prerequisites: | 
   - Experience working with, maintaining, and developing with SQL Server
   - Experience with Azure, such as deploying and managing resources

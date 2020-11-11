@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.customize-windows-server-iaas-vm-images.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following procedures should an administrator employ to generalize a Windows VM in preparation for creating a managed image in Azure?"
+    choices:
+    - content: "Run **Sysprep.exe** and accept the default values."
+      isCorrect: false
+      explanation: "That's incorrect. Using the default values isn't appropriate. The VM won't be generalized."
+    - content: "Run **Sysprep.exe** and select the **Generalize** check box."
+      isCorrect: false
+      explanation: "That's incorrect. The VM will be generalized, but will restart by default."
+    - content: "Run **Sysprep.exe**, select the **Generalize** check box, and then in the **Shutdown Options** list, select **Shutdown**."
+      isCorrect: true
+      explanation: "That's correct. Generalize isn't selected by default. Also, the default shutdown option is **Reboot**."
+  - content: "What is the first step an administrator needs to perform when creating a managed image from a generalized VM that is in the **Stopped (deallocated)** status?"
+    choices:
+    - content: "Create the image."
+      isCorrect: false
+      explanation: "That's incorrect. The creation takes place after the image is captured."
+    - content: "Capture the image."
+      isCorrect: true
+      explanation: "That's correct. The administrator must capture the image after it's been generalized and is stopped and deallocated."
+    - content: "Start the VM."
+      isCorrect: false
+      explanation: "That's incorrect. The VM must be in the status Stopped (deallocated)."
+  - content: "Which of the following Azure CLI commands should an administrator run to start an image build using Azure Image Builder?"
+    choices:
+    - content: "`az resource create`."
+      isCorrect: false
+      explanation: "That's incorrect. This command submits image configuration to Azure Image Builder."
+    - content: "`az resource invoke-action`."
+      isCorrect: true
+      explanation: "That's correct. This command starts the image build process."
+    - content: "`az vm create`."
+      isCorrect: false
+      explanation: "That's incorrect. This command builds the VM from the image in Azure Image Builder."

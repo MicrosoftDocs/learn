@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.research-space-rocks-ai-nasa.3-space-rocks-earth
+metadata:
+  title: Where space rocks are found on Earth
+  description: Learn about space rocks that fell to Earth as meteorites and where they're most likely to be found.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Where space rocks are found on Earth
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-space-rocks-earth.md)]

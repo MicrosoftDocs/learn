@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.python-partnership.secret-message.python-basics
+title: Python basics for the WONDER WOMAN 1984 message decoder
+metadata:
+  title: Python basics for the WONDER WOMAN 1984 message decoder
+  description: Learn some of the basic Python concepts used in the Wonder Woman learn-to-code modules.
+  ms.date: 09/21/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-python-basics.md)]

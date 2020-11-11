@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search
+metadata:
+  title: Implement a knowledge store
+  description: "Learn how to persist the output from an Azure Cognitive Search enrichment pipeline for independent analysis or downstream processing."
+  ms.date: 10/29/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a knowledge store with Azure Cognitive Search
+summary: Persist the output from an Azure Cognitive Search enrichment pipeline for independent analysis or downstream processing.
+abstract: |
+  In this module you will learn how to:
+  - Create a knowledge store from an Azure Cognitive Search pipeline
+  - View data in projections in a knowledge store
+prerequisites: |
+  - Familiarity with with Microsoft Azure
+  - Application development experience with C# or Python
+  - Experience of creating an enrichment pipeline with Azure Cognitive Search
+iconUrl: /learn/achievements/implementing-a-knowledge-store.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+- solution-architect
+products:
+- azure-cognitive-services
+- azure-storage
+- vs-code
+- azure-cognitive-search
+units:
+- learn.wwl.create-knowledge-store-with-azure-cognitive-search.introduction
+- learn.wwl.create-knowledge-store-with-azure-cognitive-search.get-ready-to-develop-search-solution
+- learn.wwl.create-knowledge-store-with-azure-cognitive-search.create-azure-resources-for-search
+- learn.wwl.create-knowledge-store-with-azure-cognitive-search.create-data-source
+- learn.wwl.create-knowledge-store-with-azure-cognitive-search.create-skillset
+- learn.wwl.create-knowledge-store-with-azure-cognitive-search.create-index
+- learn.wwl.create-knowledge-store-with-azure-cognitive-search.create-run-indexer
+- learn.wwl.create-knowledge-store-with-azure-cognitive-search.explore
+- learn.wwl.create-knowledge-store-with-azure-cognitive-search.knowledge-check
+- learn.wwl.create-knowledge-store-with-azure-cognitive-search.summary
+badge:
+  uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search.badge

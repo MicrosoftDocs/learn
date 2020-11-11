@@ -31,7 +31,7 @@ Redeploy the `todo-service` microservice:
 
 ```bash
 cd todo-service
-./mvnw clean package -DskipTests -Pcloud
+./mvnw clean package -DskipTests
 az spring-cloud app deploy -n todo-service --jar-path target/demo-0.0.1-SNAPSHOT.jar
 cd ..
 ```
@@ -40,7 +40,7 @@ Redeploy the `gateway` gateway:
 
 ```bash
 cd gateway
-./mvnw clean package -DskipTests -Pcloud
+./mvnw clean package -DskipTests
 az spring-cloud app deploy -n gateway --jar-path target/demo-0.0.1-SNAPSHOT.jar
 cd ..
 ```

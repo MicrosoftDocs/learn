@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.administer-manage-windows-server-iaas-vm-remotely.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following protocols enable an administrator to manage their IaaS VMs and are secured by Azure Bastion?"
+    choices:
+    - content: "RDP."
+      isCorrect: true
+      explanation: "That's correct. RDP is secured by Azure Bastion as a means for communicating with your IaaS VMs."
+    - content: "TLS."
+      isCorrect: false
+      explanation: "That's incorrect. Although TLS is used to secure network traffic, it's not able to facilitate management of a VM."
+    - content: "SSL."
+      isCorrect: false
+      explanation: "That's incorrect. Although SSL is used to secure network traffic, it's not able to facilitate management of a VM."
+  - content: "Which of the following statements about implementing Azure Bastion is true?"
+    choices:
+    - content: "An administrator must install the bastion host in its own VNet. VMs must be in a separate VNet"
+      isCorrect: false
+      explanation: "That's incorrect. The bastion host and the protected VMs must be in the same VNet."
+    - content: "An administrator must configure an NSG for the bastion host."
+      isCorrect: false
+      explanation: "That's incorrect. Although an administrator can configure an NSG, there's no requirement to do so."
+    - content: "An administrator must connect Azure Bastion to a subnet with the name AzureBastionSubnet."
+      isCorrect: true
+      explanation: "That's correct. The subnet that contains the bastion host must be called AzureBastionSubnet."
+  - content: "Which of the following statements about JIT access in Azure is correct?"
+    choices:
+    - content: "JIT is enabled on VMs by default providing those VMs are protected by Azure Bastion."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Bastion isn't a prerequisite for JIT protection."
+    - content: "It's necessary to manually add commonly used management ports to the JIT VM access configuration in order to properly configure JIT."
+      isCorrect: false
+      explanation: "That's incorrect. Commonly used management ports, including RDP/SSH are automatically configured."
+    - content: "You can enable JIT access for a VM when you attempt to connect to the VM from the VM's **Connect** blade."
+      isCorrect: true
+      explanation: "That's correct. In addition to using Security Center to enable JIT, you can select the link, **To improve security, enable just-in-time access on this VM**."

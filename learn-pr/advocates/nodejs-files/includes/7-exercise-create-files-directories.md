@@ -1,12 +1,12 @@
-The "fs" module in Node.js lets you create new files and directories programmatically.
+The *fs* module in Node.js lets you create new files and directories programmatically.
 
-So far you've created a robust command-line application in Node.js that can read any folder structure that it's given to find any files with a `.json` extension. You'll need to read those files summarize the data in them and then write the totals to a new file in a new directory called "salesTotals".
+So far, you've created a robust command-line application in Node.js that can read any folder structure to find files with a .json extension. You'll need to read those files to summarize the data in them. You'll then write the totals to a new file in a new directory called *salesTotals*.
 
-In this exercise, you'll create the "salesTotals" directory and "totals.txt" file where the sales totals will eventually go.
+In this exercise, you'll create the *salesTotals* directory and *totals.txt* file where the sales totals will eventually go.
 
-## Create the "salesTotals" directory
+## Create the salesTotals directory
 
-1. In the `main` function, create a variable called "salesTotalsDir", which holds the path of the "salesTotals" directory.
+1. In the `main` function, create a variable called `salesTotalsDir`, which holds the path of the *salesTotals* directory.
 
    ```javascript
    async function main() {
@@ -37,9 +37,9 @@ In this exercise, you'll create the "salesTotals" directory and "totals.txt" fil
    }
    ```
 
-## Write the "totals.txt" file
+## Write the totals.txt file
 
-1. In the `main` function, add the code to create an empty file called "totals.txt" inside the newly created "salesTotals" directory.
+1. In the `main` function, add the code to create an empty file called *totals.txt* inside the newly created *salesTotals* directory.
 
    ```javascript
    async function main() {
@@ -61,23 +61,21 @@ In this exercise, you'll create the "salesTotals" directory and "totals.txt" fil
    }
    ```
 
-1. Run the program by executing from the terminal prompt...
+1. Run the program by entering the following code from the terminal prompt.
 
    ```bash
    node index.js
    ```
 
-1. Press the "refresh" icon in the "Files" explorer.
+1. Select the **Refresh** icon in the **Files** explorer.
 
-:::image type="content" source="../media/refresh-file-explorer.png" alt-text="Refresh icon in Files explorer of Cloud Shell editor":::
+   :::image type="content" source="../media/refresh-file-explorer.png" alt-text="Screenshot of the Refresh icon in the Files explorer of the Cloud Shell editor.":::
 
-Your code looks awesome! Great job!
-
-You're almost finished. The last step is to read the sales files, add up the totals, and write the grand total to the new "totals.txt" file. Next you'll learn how to read and parse data inside of files.
+You're almost finished. The last step is to read the sales files, add up the totals, and write the grand total to the new *totals.txt* file. Next you'll learn how to read and parse data inside files.
 
 ## Got stuck?
 
-If you got stuck during this exercise, here is the full code up to this point.
+If you got stuck during this exercise, here's the full code up to this point.
 
 ```javascript
 const fs = require("fs").promises;

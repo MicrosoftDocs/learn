@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.solve-graph-coloring-problems-grovers-search.6-implement-grovers-algorithm
+title: Exercise - Implement Grover's algorithm to solve graph coloring problem
+metadata:
+  description: Full implementation of Grover's algorithm and using it with oracles from unit 4 to solve our example problem.
+  ms.date: 09/19/2020
+  author: tcNickolas
+  ms.author: mamykhai
+  ms.topic: interactive-tutorial
+  ms.prod: learning-quantum
+  show_latex: true
+durationInMinutes: 40
+content: |
+  [!include[](includes/6-implement-grovers-algorithm.md)]

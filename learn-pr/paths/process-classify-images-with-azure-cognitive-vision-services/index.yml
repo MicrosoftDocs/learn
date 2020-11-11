@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.wwl.process-classify-images-with-azure-cognitive-vision-services
+metadata:
+  title: Process and classify images with the Azure cognitive vision services
+  description: Process and classify images with the Azure cognitive vision services
+  ms.date: 10/24/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Process and classify images with the Azure cognitive vision services
+prerequisites: |
+  Active Azure account
+  Knowledge of Azure portal navigation
+  Knowledge of at least one programming language (C#, Python)
+summary: |
+  Learn how to implement computer vision by exploring how to process faces in images and video, detect objects, categorize images, extract insights with video indexer service, and implement custom vision solutions.
+iconUrl: /learn/achievements/process-and-classify-images-with-the-azure-cognitive-vision-services.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+products:
+- azure
+- azure-cognitive-services
+modules:
+- learn.data-ai.identify-faces-with-computer-vision
+- learn.create-computer-vision-service
+- learn.classify-images-with-custom-vision-services
+- learn.wwl.evaluate-requirements-for-custom-computer-vision-api
+- learn.wwl.extract-insights-from-videos-with-video-indexer-service
+trophy:
+  uid: learn.wwl.process-classify-images-with-azure-cognitive-vision-services.trophy

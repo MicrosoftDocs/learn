@@ -28,7 +28,7 @@ We use the `docker ps` command to list running containers.  If you want to see a
 
 Here is an example.
 
-```code
+```console
 docker ps -a
 ```
 
@@ -58,7 +58,7 @@ Use the `docker run` command to start a container. We only need to specify the i
 
 Here, we're adding the `-d` flag to run the container with our website in the background.
 
-```code
+```console
 docker run -d tmp-ubuntu
 ```
 
@@ -70,7 +70,7 @@ Once an image is specified to run, Docker finds the image, loads container from 
 
 We use the `docker pause` command to pause a container. Here is an example.
 
-```code
+```console
 docker pause happy_wilbur
 ```
 
@@ -80,7 +80,7 @@ Pausing a container will suspend all processes. This command allows the containe
 
 We use the `docker restart` command to restart containers. Here is an example.
 
-```code
+```console
 docker restart happy_wilbur
 ```
 
@@ -90,7 +90,7 @@ The container receives a stop command, followed by a start command. If the conta
 
 We use the `docker stop` command to stop a running container. Here is an example.
 
-```code
+```console
 docker stop happy_wilbur
 ```
 
@@ -100,7 +100,7 @@ The stop command sends a termination signal to the container and the process run
 
 We use the `docker rm` command to remove a container. Here is an example.
 
-```code
+```console
 docker rm happy_wilbur
 ```
 
@@ -116,7 +116,7 @@ Even though this approach works, it, unfortunately, has several drawbacks.
 
 - Container storage is temporary
 
-    Our log file won't persist between container instances. For example, let's assume that we stop and remove the container. When we launch a new container instance, the new instance base itself of the image specified, and all our previous data will be missing. Remember, all data in a container is destroyed with the container when we remove a container.
+    Our log file won't persist between container instances. For example, let's assume that we stop and remove the container. When we launch a new container instance, the new instance bases itself on the image specified, and all our previous data will be missing. Remember, all data in a container is destroyed with the container when we remove a container.
 
 - Container storage is coupled to the underlying host machine
 
@@ -172,7 +172,7 @@ The publish flag effectively configures a firewall rule that maps the ports.
 
 In our example, our tracking portal is accessible to clients browsing to port 80. We'll have to map port 80 from the container to an available port on the host.  We have port 8080 open on the host, which allows us to set the flag like this:
 
-```code
+```console
 --publish 8080:80
 ```
 

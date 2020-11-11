@@ -53,12 +53,15 @@ You can run a pipeline manually, or you can arrange for it to be run later using
 
 ## Ingest data using PolyBase
 
-PolyBase is a feature of SQL Server and Azure SQL Database that enables you to run Transact-SQL queries that read data from external data sources. PolyBase makes these external data sources appear like tables in a SQL database. Using PolyBase, you can read data managed by Hadoop, Spark, and Azure Blob Storage, as well as other database management systems such as Cosmos DB, Oracle, Teradata, and MongoDB.
+PolyBase is a feature of SQL Server and Azure Synapse Analytics that enables you to run Transact-SQL queries that read data from external data sources. PolyBase makes these external data sources appear like tables in a SQL database. Using PolyBase, you can read data managed by Hadoop, Spark, and Azure Blob Storage, as well as other database management systems such as Cosmos DB, Oracle, Teradata, and MongoDB.
 
 > [!NOTE]
 > Spark is a parallel-processing engine that supports large-scale analytics.
 
-PolyBase enables you to transfer data from an external data source into a SQL database, as well as copy data from a SQL database to an external data source. You can also run queries that join tables in a SQL database with external data, enabling you to perform analytics that span multiple data stores. 
+PolyBase enables you to transfer data from an external data source into a table, as well as copy data from an external data source in Azure SYnapse Analytics or SQL Server. You can also run queries that join tables in a SQL database with external data, enabling you to perform analytics that span multiple data stores. 
+
+> [!NOTE]
+> Azure SQL Database does not support PolyBase.
 
 > [!div class="mx-imgBorder"]
 > ![Image showing SQL Database using PolyBase to access external data](../media/2-polybase.png)

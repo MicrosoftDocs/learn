@@ -2,7 +2,7 @@ Storage performance is a critical component of an I/O heavy application like a d
 
 Azure Storage is a highly scalable, secure storage platform that offers a range of solutions to meet the needs of many applications. Because the focus of this course is databases, you will learn about the aspects of blob storage that are applicable to SQL Server workloads, which are disk, file, and blob storage. Note that all the above types of storage support encryption at rest with either a Microsoft managed or a user-defined encryption key.
 
-**Blob Storage** - Blob storage is what is known as object-based storage and includes cold, hot, and archive storage tiers. In a SQL Server environment, blob storage will typically be used for database backups, using SQL Server’s back up to URL functionality. 
+**Blob Storage** - Blob storage is what is known as object-based storage and includes cold, hot, and archive storage tiers. In a SQL Server environment, blob storage will typically be used for database backups, using SQL Server’s back up to URL functionality.
 
 **File Storage** - File storage is effectively a file share that can be mounted inside a virtual machine, without the need to set up any hardware. SQL Server can use File storage as a storage target for a failover cluster instance.
 
@@ -18,7 +18,7 @@ Azure managed disks come in four types:
 
 **Ultra disk** - Ultra disks support high-IO workloads for mission critical databases with low latency.
 
-**Premium SSD** - Premium SSD disks are high-throughput and low latency and can meet the needs of most database workloads running in the cloud
+**Premium SSD** - Premium SSD disks are high-throughput and low latency and can meet the needs of most database workloads running in the cloud.
 
 **Standard SSD** - Standard SSDs are designed for lightly used dev/test workloads or web servers that do a small amount of IO, and require predictable latency.
 
@@ -52,7 +52,7 @@ There are few recommendations for best practices for SQL Server on Azure VMs and
 
 ## Azure Virtual Machine resource provider
 
-One way to reduce the complexity of building storage for your SQL Server on an Azure Virtual Machine is to use the SQL Server templates in the Azure Marketplace, which allow you to configure your storage as part of your deployment as shown below. You can configure the IOPs as need and the template will perform the work of creating your storage spaces pools within Windows.
+One way to reduce the complexity of building storage for your SQL Server on an Azure Virtual Machine is to use the SQL Server templates in the Azure Marketplace, which allow you to configure your storage as part of your deployment as shown below. You can configure the IOPs as needed and the template will perform the work of creating your storage spaces pools within Windows.
 
 :::image type="content" source="../media/module-44-optimize-resources-final-23.png" alt-text="SQL Server VM Disk Configuration":::
 

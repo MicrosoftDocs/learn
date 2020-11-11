@@ -5,5 +5,6 @@ Now that you've reviewed this module, you should be able to:
 - Understand the service tiers available for open source database platforms
 - Deploy MySQL, MariaDB, and PostgreSQL
 - Configure high availability option for MySQL and MariaDB
-- Configure Scale Our reads for MySQL and MariaDB
+- Configure Scale Out reads for MySQL and MariaDB
 - Describe the SSL Options for MySQL and MariaDB
+

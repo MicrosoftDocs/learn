@@ -102,4 +102,4 @@ Now let's configure the app registration to authorize the URL of the web service
 
 You've now created both the application registration and the web app itself. You've configured these objects with the information that they need to locate each other.
 
-Now that the web app is configured to authenticate against Azure AD, you can use that directory to manage all the user accounts that can access your application. The same accounts that grant users access to services like Office 365 can now be used to access your app. Users have to remember only one set of credentials for both systems. Administrators have less work to do because each user has only one account.
+Now that the web app is configured to authenticate against Azure AD, you can use that directory to manage all the user accounts that can access your application. The same accounts that grant users access to services like Microsoft 365 can now be used to access your app. Users have to remember only one set of credentials for both systems. Administrators have less work to do because each user has only one account.

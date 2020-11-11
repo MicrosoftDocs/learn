@@ -6,9 +6,9 @@ Having the right focus helps you tailor the threat modeling exercise to produce 
 
 Examples include:
 
-- Designing a file sharing application and focusing on protecting its processes, data stores, and data-flow
-- Designing a file sharing application and focusing on learning more about the attacker. 
-    - Includes their motives and possible means to target your application
+- Designing a file sharing application and focusing on protecting its processes, data stores, and data-flow.
+- Designing a file sharing application and focusing on learning more about the attacker.
+    - Include the attacker's motives and possible means to target your application
 
 In this module, you'll explore what it means to conduct a system focused threat modeling exercise. You'll also learn the high-level differences between system, asset, and attacker-focused approaches.
 

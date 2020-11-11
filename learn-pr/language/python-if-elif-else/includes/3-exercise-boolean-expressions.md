@@ -67,7 +67,7 @@ False
 True
 True
 ```
-The `bool()` function converted the strings `'True'` and `'False'` to the Boolean values `True` and `False`. When the function is supplied with an empty string, it returns `False`, while any other non-empty string returns `True`.
+The `bool()` function converted the strings `'True'` and `'False'` to the Boolean value `True`. When the function is supplied with an empty string, it returns `False`, while any other non-empty string returns `True`.
 
 
 ### Step 4: Comment out code from the previous step, and then add code that uses the built-in `bool()` function to convert various integer values to Boolean values
@@ -211,7 +211,7 @@ false_value = False
 if first_number > 1 and first_number < 10:
     print('The value is between 1 and 10.')
 
-if first_number > 1 or second_number < 1:
+if first_number > 1 or second_number > 1:
     print('At least one value is greater than 1')
 
 print(not true_value)
@@ -234,6 +234,6 @@ Both values do NOT pass the test
 
 ## Recap
 
-- Use the `bool()` function to convert strings and integers to Boolean values. Non-empty strings convert to `True` and non-zero numbers convert to `True`. The string value `'False'` and empty strings convert to `False`. The value `0` converts to `False`.
+- Use the `bool()` function to convert strings and integers to Boolean values. Non-empty strings convert to `True` and non-zero numbers convert to `True`. Empty strings convert to `False`. The value `0` converts to `False`.
 - Python provides several comparison operators to test for equality, inequality, and greater or less than.
 - Python also provides several logical operators to ensure one or both Boolean expressions are `True`. It also provides the `not` operator to ensure Boolean expressions evaluate to `False`.

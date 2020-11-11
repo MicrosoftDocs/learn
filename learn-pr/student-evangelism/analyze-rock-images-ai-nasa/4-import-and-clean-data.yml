@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.analyze-rock-images-ai-nasa.4-import-and-clean-data
+metadata:
+  title: Exercise - Import and clean data about photos of space rocks
+  description: Import and clean the data that we'll use in an AI model to test classification accuracy.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Import and clean data about photos of space rocks
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-import-and-clean-data.md)]

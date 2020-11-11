@@ -157,3 +157,8 @@ achievements:
   title: Predict numeric values with regression
   summary: Predict numeric values with regression
   iconUrl: /learn/achievements/introduction-to-regression.svg
+- uid: learn.data-ai.classify-images-with-vision-services.trophy
+  type: trophy
+  title: Process and classify images with the Azure Cognitive Vision Services
+  summary: Process and classify images with the Azure Cognitive Vision Services
+  iconUrl: /learn/achievements/data-ai/classify-images-with-vision-services.svg
