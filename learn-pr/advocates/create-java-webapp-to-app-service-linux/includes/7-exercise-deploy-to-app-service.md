@@ -1,5 +1,10 @@
-Now that we have verified the operation with Tomcat in the local environment, deploy the application to Azure App Services.
-You can use the `Maven Plugin for Azure App Service` to deploy to Azure App Service. Please specify the latest version.
+Now that we have verified the operation with Tomcat in the local environment.
+In this section, in order to deploy your Java Web Application, we will use the `Maven Plugin for Azure App Service`.  
+At first, we will add and configure the plugin. After the configuration, you will create an artifact of the Maven project as `war` file. After that you can deploy it to the `Azure App Service` from the Maven command. Then you can access to your application on Azure by using your Web Browser. If you have Azure CLI command, you can also see the Application log stream from the command line.
+
+## Configure Maven Plugin for Azure App Service
+
+In order to add and configure the `Maven Plugin for Azure App Service`, please execute the following command.
 
 ```bash
 mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
