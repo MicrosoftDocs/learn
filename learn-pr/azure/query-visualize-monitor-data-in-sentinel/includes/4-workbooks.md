@@ -9,8 +9,8 @@ The **Workbook** page consists of the:
 - Workbook header. You can add a new workbook and see the saved workbooks and templates that are available in the Workbook page.
 - The Templates section. You can access existing workbook templates in **Templates** tab. You can save some of the workbooks for quick access and they will appear in the **My workbooks** tab.
 
-From the Template page, you can select existing workbook and that will bring a detailed view on the right side that contains additional information for the templates. In the detailed view, you can find more information about the workbook. The detailed view also contains information about required data types and required data connectors that must be connected to Azure Sentinel. You can also view how the report will look.
-<!-- For consistency shouldn't it be "**Template**" instead of just "Template"? -->
+From the **Template** page, you can select existing workbook and that will bring a detailed view on the right side that contains additional information for the templates. In the detailed view, you can find more information about the workbook. The detailed view also contains information about required data types and required data connectors that must be connected to Azure Sentinel. You can also view how the report will look.
+
 ## View existing workbook template
 
 As you may see from our scenario Contoso was concerned regarding compromised identities. They can examine the existing workbook **Audit AD Sign-in logs** by selecting the template in the template section and then selecting **View template** in the detailed view.
@@ -78,8 +78,8 @@ If you click on the gear icon, you can open **Settings** page, where you can pro
 
 You can rearrange the place of different table in the workbook, by selecting **Show Pin Options.**
 
-For advanced customization, you can open **Advanced Editor, which will open JSON representation of the current workbook, that can be further customized in the text editor as shown in the screenshot:
-<!-- Missing "**" after "Advanced Editor". -->
+For advanced customization, you can open **Advanced Editor**, which will open JSON representation of the current workbook, that can be further customized in the text editor as shown in the screenshot:
+
 ![](RackMultipart20201108-4-18itt0u_html_a349a7a2e53def25.png)
 
 You can save changes in the existing workbook or save as another workbook.
