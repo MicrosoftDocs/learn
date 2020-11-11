@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.data-coding-basketball.2-set-up-local-environment
+uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.11-move-players
 metadata:
-  title: Set up your local environment for data science coding
-  description: Set up your local environment for data science coding
+  title: Add button functionality for player buttons
+  description: Add button functionality for player buttons
   ms.date: 12/14/2020
   author: sguthals # Your GitHub username (or whomever you'd like to give author attribution to)
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Set up your local environment for data science coding
+title: Add button functionality for player buttons
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-set-up-local-environment.md)]
+  [!include[](includes/11-move-players.md)]

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.data-coding-basketball.15-summary
+uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.7-code-tour
 metadata:
-  title: Summary
-  description: Summary
+  title: Use CodeTour to build your web app functionality
+  description: Use CodeTour to build your web app functionality
   ms.date: 12/14/2020
   author: sguthals # Your GitHub username (or whomever you'd like to give author attribution to)
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Summary
-durationInMinutes: 1
+title: Use CodeTour to build your web app functionality
+durationInMinutes: 5
 content: |
-  [!include[](includes/15-summary.md)]
+  [!include[](includes/7-code-tour.md)]

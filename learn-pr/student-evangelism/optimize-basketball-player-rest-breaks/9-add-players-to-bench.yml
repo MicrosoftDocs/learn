@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.data-coding-basketball.7-code-tour
+uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.9-add-players-to-bench
 metadata:
-  title: Use CodeTour to build your web app functionality
-  description: Use CodeTour to build your web app functionality
+  title: Put players on the bench
+  description: Put players on the bench
   ms.date: 12/14/2020
   author: sguthals # Your GitHub username (or whomever you'd like to give author attribution to)
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Use CodeTour to build your web app functionality
+title: Put players on the bench
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-code-tour.md)]
+  [!include[](includes/9-add-players-to-bench.md)]

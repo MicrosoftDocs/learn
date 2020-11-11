@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.student-evangelism.data-coding-basketball
+uid: learn.student-evangelism.optimize-basketball-player-rest-breaks
 metadata:
   title: Create a web app to use data to make decisions on the basketball court
   description: Create a web app to use data to make decisions on the basketball court
@@ -36,20 +36,20 @@ roles:
 products:
 - vs-code
 units:
-- learn.student-evangelism.data-coding-basketball.1-introduction
-- learn.student-evangelism.data-coding-basketball.2-set-up-local-environment
-- learn.student-evangelism.data-coding-basketball.3-prepare-data
-- learn.student-evangelism.data-coding-basketball.4-create-machine-learning-model
-- learn.student-evangelism.data-coding-basketball.5-machine-learning-create-data
-- learn.student-evangelism.data-coding-basketball.6-create-starter-app
-- learn.student-evangelism.data-coding-basketball.7-code-tour
-- learn.student-evangelism.data-coding-basketball.8-initialize-app
-- learn.student-evangelism.data-coding-basketball.9-add-players-to-bench
-- learn.student-evangelism.data-coding-basketball.10-add-stats-to-app
-- learn.student-evangelism.data-coding-basketball.11-move-players
-- learn.student-evangelism.data-coding-basketball.12-finalize-web-app
-- learn.student-evangelism.data-coding-basketball.13-update-stats
-- learn.student-evangelism.data-coding-basketball.14-knowledge-check
-- learn.student-evangelism.data-coding-basketball.15-summary
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.1-introduction
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.2-set-up-local-environment
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.3-prepare-data
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.4-create-machine-learning-model
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.5-machine-learning-create-data
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.6-create-starter-app
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.7-code-tour
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.8-initialize-app
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.9-add-players-to-bench
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.10-add-stats-to-app
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.11-move-players
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.12-finalize-web-app
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.13-update-stats
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.14-knowledge-check
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.15-summary
 badge:
-  uid: learn.student-evangelism.data-coding-basketball.badge
+  uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.badge

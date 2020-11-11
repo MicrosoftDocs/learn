@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.data-coding-basketball.11-move-players
+uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.15-summary
 metadata:
-  title: Add button functionality for player buttons
-  description: Add button functionality for player buttons
+  title: Summary
+  description: Summary
   ms.date: 12/14/2020
   author: sguthals # Your GitHub username (or whomever you'd like to give author attribution to)
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Add button functionality for player buttons
-durationInMinutes: 5
+title: Summary
+durationInMinutes: 1
 content: |
-  [!include[](includes/11-move-players.md)]
+  [!include[](includes/15-summary.md)]
