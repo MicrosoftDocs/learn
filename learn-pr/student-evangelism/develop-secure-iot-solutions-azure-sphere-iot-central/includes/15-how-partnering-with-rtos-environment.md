@@ -1,10 +1,12 @@
-In this unit, you will learn how to partner a High-level application with a Real-time core application.
+The upgraded microbiology laboratory temperature, pressure, and humidity sensor is running well on the Azure Sphere Real-time core. The customer is happy, and they can run their experiments. The customer would also like to remotely monitor the lab conditions.
+
+In this unit, you will learn how to read data from the upgraded lab sensor and send the data to IoT Central so that can be monitored.
 
 ------
 
 ## Solution architecture
 
-In this unit we will learn how to partner a high level application with an Azure RTOS Real-time environment monitor application running on one of the Azure Sphere Cortex-M4 cores.
+The following describes how an Azure Sphere High-level application can read data from the upgraded lab sensor running on one of the Azure Sphere Real-time cores. The High-level application will then send this data securely to IoT Central.
 
 ![Inter-core communications architecture](../media/intercore-coms.png)
 

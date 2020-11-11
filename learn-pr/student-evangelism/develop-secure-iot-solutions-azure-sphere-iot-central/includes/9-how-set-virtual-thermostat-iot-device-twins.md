@@ -131,14 +131,6 @@ lp_deviceTwinSetClose();
 
 ## Azure IoT Central device properties
 
-Azure IoT Central device properties are defined in device templates.
+IoT Central properties are defined in the device template interface. In this example, the **DesiredTemperature** property schema type is **Float**, and the property is **Writeable**. Writeable means this property is enabled for cloud-to-device updates. The property name must match the DesiredTemperature Device Twin Binding declaration on the Azure Sphere.
 
 [![The illustration shows device properties.](../media/iot-central-device-template-interface-led1.png)](../media/iot-central-device-template-interface-led1.png)
-
-### Review the IoT Central property definition 
-
-1. From Azure IoT Central web portal, navigate to **Device templates**, and select the **Azure Sphere** template.
-2. Click on **Interface** to list the interface capabilities.
-3. Scroll down and expand the **Desired Temperature** capability.
-4. Review the definition of **Desired Temperature**. The capability type is **Property**, the schema type is **Float**, and the property is **Writeable**. Writeable means this property is enabled for cloud-to-device updates.
-5. This must match the DesiredTemperature Device Twin Binding declaration on the Azure Sphere.

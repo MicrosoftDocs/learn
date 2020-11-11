@@ -34,9 +34,9 @@ High-level applications running on the Cortex-A7 Linux kernel are used for less 
 
 ## Developer tools
 
-You can develop Azure Sphere applications from Windows and Linux. On Windows you can use either [Visual Studio 2019 or later](https://visualstudio.microsoft.com/downloads) (free community edition or better) or [Visual Studio Code](https://code.visualstudio.com). On Linux you use [Visual Studio Code](https://code.visualstudio.com). You can simultaneously develop and debug applications running on all three cores.
+You can develop Azure Sphere applications from Windows and Linux. On Windows you can use either [Visual Studio 2019 or later](https://visualstudio.microsoft.com/downloads) (free community edition or better) or [Visual Studio Code](https://code.visualstudio.com). On Linux, you use [Visual Studio Code](https://code.visualstudio.com). You can simultaneously develop and debug applications running on all three cores.
 
-This learning module supports developers on Linux and Windows using Visual Studio Code. However, if you are a Windows user comfortable using Visual Studio then you can still complete the exercises appreciating that the IDE screenshots included in this module will be different.
+This learning module supports developers on Linux and Windows using Visual Studio Code. If you are a Windows user comfortable using Visual Studio, then use Visual Studio appreciating the IDE screenshots included in this module will be different.
 
 ------
 
@@ -59,10 +59,11 @@ Maintaining the room conditions accurately is critical for managing the laborato
 The proposed new system would have the following factors:
 
 * It would need the sensors within the lab at multiple points.
-* The system must be secure from attack as some experiments are very sensitive and expensive.
-* These sensors will automate the reading of air pressure, temperature, humidity, and light conditions at defined intervals.
+* The system must be secure from attack as some experiments are commerically sensitive and expensive.
+* These sensors will automate the reading of air pressure, temperature, and humidity conditions at defined intervals.
 * The sensor data from the devices will be transmitted securely for the analysis of data trends.
 * Able to control a heating, ventilation, and air conditioning unit (HVAC) to automatically adjust the environment to match requires for lab experiments.
+* Flexible enough to support future more sensistive lab environment sensors.
 
 The solution must be built on an IoT platform that is highly secure, that is protected from attack and software bugs. Additionally, the system can trigger an alarm or alert message to a concerned authority when any of the defined parameters fall outside of expected ranges.
 
@@ -79,6 +80,8 @@ In this module, you will:
 * Build and deploy the Azure Sphere application
 * Display environment telemetry in the Azure IoT Central dashboard
 * Control an Azure Sphere application by using Azure IoT Central properties and commands
+* Deploy an Azure RTOS sensor application onto an Azure Sphere Real-time core
+* Partner a High-level Azure Sphere application with an Azure RTOS Real-time application running on a Real-time core
 
 ------
 

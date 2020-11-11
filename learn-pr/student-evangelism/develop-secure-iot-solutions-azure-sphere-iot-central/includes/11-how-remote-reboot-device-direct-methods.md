@@ -36,7 +36,7 @@ The following steps outline how an Azure IoT Central command uses Azure IoT Hub 
 
 Remember, Azure IoT Central commands are implemented using Azure IoT Hub direct methods. A direct method binding maps a direct method name with a handler function that will be called to implement the action.
 
-The following example declares a Direct Methid Binding to restart the Azure Sphere. This declaration maps the Azure IoT Central `RestartDevice` command with a handler function named `RestartDeviceHandler`.
+The following example declares a Direct Method Binding to restart the Azure Sphere. This declaration maps the Azure IoT Central `RestartDevice` command with a handler function named `RestartDeviceHandler`.
 
 ```c
 static LP_DIRECT_METHOD_BINDING dm_restartDevice = {
@@ -129,7 +129,7 @@ lp_directMethodSetClose();
 
 ## Azure IoT Central commands
 
-Azure IoT Central commands are defined in device templates.
+IoT Central commands are defined in the device template interface. In this example, the **RestartDevice** command schema type is **Integer**. The direct method payload is an integer which defines the number of seconds before restarting the device. The command name must match the RestartDevice Direct Method Binding declaration on the Azure Sphere.
 
 ![The illustration shows a device template interface.](../media/iot-central-device-template-interface-restart-device.png)
 
