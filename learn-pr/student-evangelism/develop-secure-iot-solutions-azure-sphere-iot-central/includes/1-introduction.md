@@ -59,11 +59,11 @@ Maintaining the room conditions accurately is critical for managing the laborato
 The proposed new system would have the following factors:
 
 * It would need the sensors within the lab at multiple points.
-* The system must be secure from attack as some experiments are commerically sensitive and expensive.
+* The system must be secure from attack as some experiments are commercially sensitive and expensive.
 * These sensors will automate the reading of air pressure, temperature, and humidity conditions at defined intervals.
 * The sensor data from the devices will be transmitted securely for the analysis of data trends.
 * Able to control a heating, ventilation, and air conditioning unit (HVAC) to automatically adjust the environment to match requires for lab experiments.
-* Flexible enough to support future more sensistive lab environment sensors.
+* Flexible enough to support future more sensitive lab environment sensors.
 
 The solution must be built on an IoT platform that is highly secure, that is protected from attack and software bugs. Additionally, the system can trigger an alarm or alert message to a concerned authority when any of the defined parameters fall outside of expected ranges.
 
