@@ -15,7 +15,7 @@ First, you'll create a resource group, the virtual network, and subnets for your
 1. To create a variable to store your resource group name, and a resource group for your resources, in the Cloud Shell, run the following command. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
 
     ```azurecli
-    rg=<resource group name>
+    $rg=<resource group name>
 
     az group create --name $rg --location <location>
     ```
