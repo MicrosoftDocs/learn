@@ -8,15 +8,13 @@ metadata:
   ms.author: yoterada
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build and Deploy the JavaServer Faces Application on Tomcat on Azure App Service
+title: Build and Deploy a JavaServer Faces Application on Tomcat on Azure App Service
 summary: In this module, you'll look at practices to create and deploy a Java Web Application on Azure App Service.
 abstract: |
   After completing this module, you can:
-
-  - Basics concept of JavaServer Faces Web Application
-  - Create PrimeFaces Java Web Application
-  - Configure the Java Project to deploy Azure App Service
-  - Deploy the Java Web Application to Azure App Service
+  - Create a PrimeFaces Java Web Application
+  - Configure your Java Project to deploy to Azure App Service
+  - Deploy your Java Web Application to Azure App Service
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
@@ -28,10 +26,6 @@ prerequisites: |
   - Your Own Azure Subscription
   - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada) installed on your computer
   - [JDK 8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) or [JDK 11](https://docs.microsoft.com/azure/developer/java/fundamentals/java-jdk-long-term-support) and [Tomcat 9.0.x](https://tomcat.apache.org/download-90.cgi) installed on your computer
-  - Familiarity with editing text and code files in any text editor
-  - Experience using the Maven command
-  - Experience to create Java Web Application
-  - Installed Apache Tomcat Server
 units:
   - learn.azure.build-webapp-java-tomcat.1-introduction
   - learn.azure.build-webapp-java-tomcat.2-jsf-explanation
