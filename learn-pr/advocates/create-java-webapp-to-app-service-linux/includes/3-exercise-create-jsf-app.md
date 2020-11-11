@@ -4,7 +4,7 @@ As part of that evaluation in this module, you will build a web application and 
 
 ## Create a Simple JSF Web app on Tomcat
 
-In the exercise, we will create a Maven Project for Java Web Application. After created the project, we need configure three configurations as follows. First one is to add the dependency libraries to pom.xml file. Second is to create a CDI configuration file as beans.xml to use the CDI. Third is to configure the JSF on web.xml file. After the configurations, we will be able to create a simple JSF Web Page and create the Backing Bean for server side backend operation. Finally, we will be able to evaluate it on local Tomcat environment.
+In the exercise, we will create a Maven Project for Java Web Application. After created the project, we need configure three configurations as follows. First one is to add the dependency libraries to `pom.xml` file. Second is to create a CDI configuration file as `beans.xml` to use the CDI. Third is to configure the JSF on `web.xml` file. After the configurations, we will be able to create a simple JSF Web Page and create the Backing Bean for server side backend operation. Finally, we will be able to evaluate it on local Tomcat environment.
 This is the standard operation for creating and evaluating the Java Web Project on local environment and you can confirm it in this section.
 
 ### Creating Maven project
