@@ -1,3 +1,5 @@
+In this module, we will use the JavaServer Faces(JSF) as View Technology. JSF is a component base framework and it was adopted as standard Java Platform, Enterprise Edition (Java EE) specification since Java EE 5 (2006). Thus it had been widly used in Enterprise Java market. In this section, you will learn the basic concept of JSF.
+
 ## What is JavaServer Faces(JSF)
 
 JavaServer Faces (JSF) is a Java Based Web Application Framework. It is one of the technology in Java EE Platform Enterprise Edition (Java EE) specification.
