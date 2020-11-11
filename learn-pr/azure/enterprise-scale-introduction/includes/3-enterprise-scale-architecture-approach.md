@@ -1,4 +1,4 @@
-Enterprise-scale design comes with set of design principles for managing the platform at scale. These principles serve as a compass for subsequent design decisions across critical technical domains. To better understand their impact and the trade-offs associated with nonadherence, familiarize yourself with the following principles:
+Enterprise-scale design comes with a set of design principles for managing the platform at scale. These principles serve as a compass for subsequent design decisions across critical technical domains. To better understand their impact and the trade-offs associated with nonadherence, familiarize yourself with the following principles:
 
 - **Subscription democratization**: Use subscriptions as a unit of management and scale that's aligned with business needs and priorities. This approach supports business areas and portfolio owners as they accelerate application migrations and new application development.
 
@@ -34,4 +34,4 @@ In addition to the key aspects noted here, the design, configuration, deployment
 
 - Business continuity and disaster recovery at platform and application levels.
 - Service management, such as incident response and support.
-- A service catalog, such a configuration management database.
+- A service catalog, such as configuration management database.
