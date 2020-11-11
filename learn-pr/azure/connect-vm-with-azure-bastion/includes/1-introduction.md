@@ -14,5 +14,6 @@ In this module, you will:
 
 ## Prerequisites
 
-- Experience managing remote connections to virtual machines
+- Experience managing remote connections to VMs
 - Familiarity with networking concepts like virtual networks, public and private IPs, and network protocols SSH, RDP, and TLS
+- (Optional) Access to an Azure subscription where you have permissions to create resources like VMs

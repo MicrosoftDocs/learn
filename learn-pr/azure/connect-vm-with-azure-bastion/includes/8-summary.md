@@ -6,6 +6,10 @@ To deploy Bastion, you create a subnet called AzureBastionSubnet on the virtual 
 
 Bastion allows you to stream user sessions information to your storage account. You can also manage view current remote sessions and force disconnect users from those sessions.
 
+## Clean up
+
+[!include[](../../../includes/azure-subscription-cleanup.md)]
+
 ## Learn more
 
 - [Create an Azure Bastion host using Azure PowerShell](https://docs.microsoft.com/azure/bastion/bastion-create-host-powershell)
