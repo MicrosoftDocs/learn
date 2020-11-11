@@ -1,8 +1,8 @@
-In [Space Jam: A New Legacy](https://spacejam.com) we see Dom passionate about coding and his dad, LeBron James, passionate about basketball. Inspired by this set of passions that are seemingly so different, we're going to dive into how coding can play a role in basketball, particularly in understanding players based on their stats.
+In [Space Jam: A New Legacy](https://spacejam.com?azure-portal=true) we see Dom passionate about coding and his dad, LeBron James, passionate about basketball. Inspired by this set of passions that are seemingly so different, we're going to dive into how coding can play a role in basketball, particularly in understanding players based on their stats.
 
 Before jumping into the module, be sure to make sure your environment is setup and ready to go. For this module, you will need a coding editor (we use Visual Studio Code), Python, and Jupyter notebooks (we use the Python extension for Visual Studio Code).
 
-If you haven't yet installed Visual Studio Code, you can find guides on the [Visual Studio Code Learn to Code site](https://aka.ms/LearnOnVSCode). Here, you can also find a Coding Pack for Python for Windows that will install everything you need for this module. If you're not on Windows, you can find a guide for seeting up your environment on the [Data Science in Visual Studio Code docs page](https://code.visualstudio.com/docs/python/data-science-tutorial).
+If you haven't yet installed Visual Studio Code, you can find guides on the [Visual Studio Code Learn to Code site](https://aka.ms/LearnOnVSCode?azure-portal=true). Here, you can also find a Coding Pack for Python for Windows that will install everything you need for this module. If you're not on Windows, you can find a guide for seeting up your environment on the [Data Science in Visual Studio Code docs page](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true).
 
 ## Set up Visual Studio Code with a new Jupyter file
 
@@ -24,7 +24,7 @@ Make sure the file opens into a notebook and that the Jupyter server is connecte
 
 ## Download data with basketball stats
 
-Next, you will need some data. While you can gather data on your own, we have gathered data from 47 anonymous basketball players to use throughout this module. You can download the data by heading to the [player_data.csv on GitHub](https://aka.ms/LearnWithDrG/SpaceJam/Data1) and downloading the CSV file. Make sure you save the data in a file called player_data.csv and save it in the space-jam folder you just created.
+Next, you will need some data. While you can gather data on your own, we have gathered data from 47 anonymous basketball players to use throughout this module. You can download the data by heading to the [player_data.csv on GitHub](https://aka.ms/LearnWithDrG/SpaceJam/Data1?azure-portal=true) and downloading the CSV file. Make sure you save the data in a file called player_data.csv and save it in the space-jam folder you just created.
 
 Visual Studio Code should show you this data if you click on the CSV file.
 

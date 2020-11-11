@@ -39,7 +39,7 @@ import seaborn as sns
 ```
 
 >[!NOTE]
->If you get an error when importing matplotlib or seaborn, you may need install the libraries. You can find instructions on how to install [MatplotLib here](https://matplotlib.org/3.3.2/users/installing.html) and [Seaborn here](https://seaborn.pydata.org/installing.html).
+>If you get an error when importing matplotlib or seaborn, you may need install the libraries. You can find instructions on how to install [MatplotLib here](https://matplotlib.org/3.3.2/users/installing.html?azure-portal=true) and [Seaborn here](https://seaborn.pydata.org/installing.html?azure-portal=true).
 
 You should see no output, indicating that the libraries were successfully imported. Now, you can:
 

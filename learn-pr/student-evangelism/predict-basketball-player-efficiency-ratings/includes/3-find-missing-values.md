@@ -1,4 +1,4 @@
-Basketball is full of statistics, and we will use some of them to make decisions about our hypothetical basketball team. However, in order to make good decisions, we need good data. Throughout this module we will be using a dataset that is based on publicly available basketball data from [the NBA](https://www.nba.com/stats/leaders/) and stats created based on Looney Tunes characters to get a full picture. All of our data is anonymized to start with.
+Basketball is full of statistics, and we will use some of them to make decisions about our hypothetical basketball team. However, in order to make good decisions, we need good data. Throughout this module we will be using a dataset that is based on publicly available basketball data from [the NBA](https://www.nba.com/stats/leaders/?azure-portal=true) and stats created based on Looney Tunes characters to get a full picture. All of our data is anonymized to start with.
 
 Because we cannot influence what data is gathered by the NBA, we can't do anything about the methodology used to get the data in first place. This introduces a number of questions about the data:
 
@@ -8,7 +8,7 @@ Because we cannot influence what data is gathered by the NBA, we can't do anythi
 
 Since we are fans of the sport, and not necessarily the data scientists gathering the data, we can still explore and understand the data by looking for holes in the data (missing values), looking for outlying data values, and trying to assess patterns in the data.
 
-This is a common situation that data scientists find themselves in. Collecting data can take years, so when we're first starting out in an area, we may have to rely on previously collected data to guide initial findings. As we know from the [Data Science Lifecyle](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/overview), the process is iterative. If we can discover patterns and insights from the data that we have, we can perhaps influence the data that is collected in the future! 
+This is a common situation that data scientists find themselves in. Collecting data can take years, so when we're first starting out in an area, we may have to rely on previously collected data to guide initial findings. As we know from the [Data Science Lifecyle](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/overview?azure-portal=true), the process is iterative. If we can discover patterns and insights from the data that we have, we can perhaps influence the data that is collected in the future! 
 
 ## Exploring the data
 

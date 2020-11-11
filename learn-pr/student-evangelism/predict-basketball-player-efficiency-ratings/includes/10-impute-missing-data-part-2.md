@@ -1,6 +1,6 @@
 As confirmed by `player_df.isna().sum()` in the previous unit, we only have nine missing values remaining in `PER`. Because we can't use a simple average to impute values in that column, a little domain expertise can help.
 
-PER is computed from the values of the nine columns before it in the DataFrame (`GP` through `REBR`). However, it is also a very complicated statistic to compute (details at [basketball-reference.com](https://www.basketball-reference.com/about/per.html)). So, we're going to do what data scientists do: build a model to give us a good approximation!
+PER is computed from the values of the nine columns before it in the DataFrame (`GP` through `REBR`). However, it is also a very complicated statistic to compute (details at [basketball-reference.com](https://www.basketball-reference.com/about/per.html?azure-portal=true)). So, we're going to do what data scientists do: build a model to give us a good approximation!
 
 We would like to build a simple linear regression model to estimate the missing `PER` values. However, as with any estimate, we have to ask ourselves how accurate it is.
 
@@ -14,7 +14,7 @@ To avoid this, statisticians and data scientists use a technique call cross vali
 
 We will us a 10-fold cross validation, meaning that Python will iterate through the data 10 times reserving 10% of the data for testing and training on the other 90% each time. We'll also plot a histogram of the results.
 
-One note on reading the Python code. We define the our predictors as the `X` by longstanding convention; for purposes of building our model, we want to use only rows that contain now `NaN` values (`player_df.dropna(how='any')`), then use the `iloc` DataFrame attribute to select columns to use by number rather than name (`iloc[:, 4:-1]`), and finally we want to use only the values from the resulting DataFrame slice rather than the slice in DataFrame form (with the `to_numpy()` method being preferred over the DataFrame `values` attribute per the `pandas.DataFrame.values` [documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.values.html)). The code of the predicted value (`y`) is similar to that for `X` except that we don't have to scrape out just the values.
+One note on reading the Python code. We define the our predictors as the `X` by longstanding convention; for purposes of building our model, we want to use only rows that contain now `NaN` values (`player_df.dropna(how='any')`), then use the `iloc` DataFrame attribute to select columns to use by number rather than name (`iloc[:, 4:-1]`), and finally we want to use only the values from the resulting DataFrame slice rather than the slice in DataFrame form (with the `to_numpy()` method being preferred over the DataFrame `values` attribute per the `pandas.DataFrame.values` [documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.values.html?azure-portal=true)). The code of the predicted value (`y`) is similar to that for `X` except that we don't have to scrape out just the values.
 
 ```python
 from sklearn.linear_model import LinearRegression
@@ -54,7 +54,7 @@ Mean r2 score: 0.9993
 ![Histogram of r2 scores](../media/cross-validation.png)
 
 >[!NOTE]
->If you get an error when running this code, make sure you've installed the [scitkit-learn library, instructions here](https://scikit-learn.org/stable/install.html).
+>If you get an error when running this code, make sure you've installed the [scitkit-learn library, instructions here](https://scikit-learn.org/stable/install.html?azure-portal=true).
 
 In short, our model is good. The $R^2$ score (ours is 99.93%) tells us how much variance in the data our model captures, and for our purposes this will serve as a loose proxy for our model's accuracy. Our lowest $R^2$ scores are still quite good, and most of them bump up close to the maximum value of 1, so we should feel quite confident applying this to our missing `PER` values.
 
