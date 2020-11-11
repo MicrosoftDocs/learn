@@ -53,9 +53,9 @@ In an ASP.NET Core app, Azure App Configuration is registered as another configu
 
 ## Feature Management library
 
-The *Feature Management* library, distributed as a NuGet package named `Microsoft.FeatureManagement`, provides standardized .NET APIs for managing feature flags within apps. It's designed to work with any configuration source, including Azure App Configuration. Combining this library with Azure App Configuration enables you to dynamically toggle features without implementing supporting infrastructure.
+The *Feature Management* library provides standardized .NET APIs for managing feature flags within apps. It's distributed via NuGet in the form of two different packages named `Microsoft.FeatureManagement` and `Microsoft.FeatureManagement.AspNetCore`. The latter package provides Tag Helpers for use in an ASP.NET Core project's Razor files. The former package is sufficient when the Tag Helpers aren't needed or when not using with an ASP.NET Core project.
 
-Like Azure App Configuration, the Feature Management library also builds on ASP.NET Core's configuration abstraction. They integrate together to provide a complete feature management solution.
+The library is built atop the `IConfiguration` interface&mdash;.NET Core's configuration abstraction. Therefore, the library is compatible with any .NET Core configuration provider, including the provider for Azure App Configuration. Because the library is decoupled from Azure App Configuration, integration of the two is made possible via the configuration provider. Combining this library with Azure App Configuration enables you to dynamically toggle features without implementing supporting infrastructure.
 
 ### Integration with Azure App Configuration
 
@@ -81,7 +81,7 @@ To make a feature configurable, you have to make several changes to your app. So
 
 :::image type="content" source="../media/3-review-app-configuration/client-to-server-integration.png" alt-text="A diagram showing how Angular communicates with ASP.NET Core" border="true" lightbox="../media/3-review-app-configuration/client-to-server-integration.png":::
 
-The *WebSPA* app is an ASP.NET Core project that uses a JavaScript SPA framework from Google called Angular. Knowledge of Angular isn't required, but it's important to understand the architecture of this app.
+The *WebSPA* app is an ASP.NET Core project that uses a JavaScript SPA framework from Google called Angular. Knowledge of Angular isn't required. It's more important to understand the app's architecture.
 
 <!--TODO: finish writing this paragraph-->
 The JavaScript can't access .NET's configuration system.
