@@ -4,18 +4,18 @@ Contribute to an open-source project using GitHub
 
 ## Role(s)
 
-  - devops-engineer
-  - administrator
-  - developer
-  - functional-consultant
-  - data-scientist
-  - security-engineer
-  - solution-architect
-  - student
-  - technology-manager
-  - business-owner
-  - ai-engineer
-  - ai-edge-engineer
+- devops-engineer
+- administrator
+- developer
+- functional-consultant
+- data-scientist
+- security-engineer
+- solution-architect
+- student
+- technology-manager
+- business-owner
+- ai-engineer
+- ai-edge-engineer
 
 ## Level
 
@@ -23,13 +23,13 @@ Contribute to an open-source project using GitHub
 
 ## Product(s)
 
-  - VSCode
-  - GitHub
+- VSCode
+- GitHub
 
 ## Prerequisites
 
-  - A GitHub account
-  - The ability to navigate and edit files in GitHub
+- A GitHub account
+- The ability to navigate and edit files in GitHub
 
 ## Summary
 
@@ -58,18 +58,13 @@ Identify the subtasks of *Contribute to an open-source project using GitHub*
 |         Contribute to an open-source repository          | Familiarize with best practices to contribute. Communicate with maintainers and ask for help. |                       Exercise                       |                       4, 5                       |                                                               Yes                                                               |
 |              Going further with communities              |              Get involved in the project's community. Publish your own project.               |                   Knowledge check                    |                        6                         |                                                               Yes                                                               |  |
 
-
-
 ## Outline the units
-
-*Add more units as needed for your content*
 
 1. **Introduction**
 
     You have been using open-source libraries for your projects and at work for quite some time. In the spirit of the open-source community, you have decided to contribute back to some of these libraries and frameworks. You first need to find a project to contribute to on GitHub as well as familiarize yourself with the project and its community standards. You will also need to identify tasks that you can help with. You also need to familiarize with best practices to submit your contributions.
     As you contribute to the project, you realize that you will also need to communicate with the project's maintainers, ask for help and review your contributions. You might want to immerse yourself in the project's community further and connect with other contributors.
     And as you contribute to one project, you might find other projects could also benefit from a similar feature or API, and you might release an open-source project yourself. We just made a full circle!
-
 
 2. **Identify where and how you can help open-source projects** [Tania]
 
@@ -121,7 +116,6 @@ Identify the subtasks of *Contribute to an open-source project using GitHub*
     - Push your code upstream
     - Create a PR referencing the original issue, context
 
-
 5. **Going further with communities** [Floor]
 
     List the content that will enable the learner to *go further with communities*:
@@ -138,21 +132,21 @@ Identify the subtasks of *Contribute to an open-source project using GitHub*
 
     What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
 
-    - What is the best place on a GitHub repository to find where you can help a project?
-        * The README file
-        * The issues list
-        * The search bar
-        * The LICENSE file
-    - What is the preferred way to ask for help or reviews on a pull request?
-        * Yell at the maintainers on Twitter
-        * Create an issue
-        * Add comment in the pull request
-        * Send an email to a random committer on the project
-    - What is needed before creating a pull request on GitHub?
-        * Send a patch file to maintainers via email
-        * Clone a repo, commit changes and force push
-        * Read contribution guidelines
-        * Fork a repo, clone it, commit changes and push
+ - What is the best place on a GitHub repository to find where you can help a project?
+   * The README file
+   * The issues list
+   * The search bar
+   * The LICENSE file
+- What is the preferred way to ask for help or reviews on a pull request?
+   * Yell at the maintainers on Twitter
+   * Create an issue
+   * Add comment in the pull request
+   * Send an email to a random committer on the project
+- What is needed before creating a pull request on GitHub?
+   * Send a patch file to maintainers via email
+   * Clone a repo, commit changes and force push
+   * Read contribution guidelines
+   * Fork a repo, clone it, commit changes and push
 
 7. **Summary**
 
