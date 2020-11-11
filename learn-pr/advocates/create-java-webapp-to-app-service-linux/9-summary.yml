@@ -3,7 +3,7 @@ uid: learn.azure.build-webapp-java-tomcat.9-summary
 title: Summary
 metadata:
   title: Summary
-  description: This unit explains the overview of the PrimeFaces. In order to create more rich Web Application, the PrimeFaces is very useful and it provide many Rich JSF Components. In this section, we can learn the overview of the PrimeFaces.
+  description: Summary and cleanup of Azure resources.
   author: yoshioterada
   ms.author: yoterada
   ms.date: 11/05/2020

@@ -1,4 +1,4 @@
-You've been tasked with creating a simple Aapplication using the JavaServer Facess framework. 
+You've been tasked with creating a simple Application using the JavaServer Facess framework. 
 The TODO application can add the new tasks and you can see the lists of all tasks and finally you can mark the task as finished.
 As part of that evaluation, you will build a web application and deploy it to Linux on Azure App Services Tomcat.
 

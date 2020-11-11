@@ -1,4 +1,3 @@
-
 Now you finished all of exercises. In this module, you could learn how to create the Java Web Application, how to use the `Maven Plugin for Azure Web Apps` and how to deploy your application to Azure App Service. This procedure is applicable not only for JSF Application but also general Java Web Application like JAX-RS. So if you create Java Web Application, please use this step and deploy your application to Azure App Service.
 
 ## Clean up resources
@@ -31,4 +30,3 @@ az group delete --name <name of your resource>
 * [Project Lombok](https://projectlombok.org/)
 * [PrimeFaces](https://www.primefaces.org/documentation/)
 * [Maven Plugin for Azure Web Apps](https://github.com/microsoft/azure-maven-plugins)
-

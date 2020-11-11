@@ -3,7 +3,7 @@ uid: learn.azure.build-webapp-java-tomcat.7-exercise-deploy-to-app-service
 title: Exercise - Deploy a Java web app to Azure App Service
 metadata:
   title: Exercise - Deploy a Java web app to Azure App Service
-  description: This unit explains the overview of the PrimeFaces. In order to create more rich Web Application, the PrimeFaces is very useful and it provide many Rich JSF Components. In this section, we can learn the overview of the PrimeFaces.
+  description: Package your Java web Application and deploy to an Azure App Service.
   author: yoshioterada
   ms.author: yoterada
   ms.date: 11/05/2020

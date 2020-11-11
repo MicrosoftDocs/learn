@@ -12,41 +12,41 @@ metadata:
 durationInMinutes: 2
 quiz:
   questions:
-    - content: "Which file format do you use for Facelets?"
+    - content: Which file format do you use for Facelets?
       choices:
         - content: "HTML (HyperText Markup Language)"
           isCorrect: false
-          explanation: "HTML is used for creating the general static Web Page."
+          explanation: "HTML is used for creating static Web Pages."
         - content: "XHTML (Extensible HyperText Markup Language)"
           isCorrect: true
           explanation: "Since JSF 2.0, Facelets has been used as default view declaration language."
         - content: "JSP (JavaServer Pages)"
           isCorrect: false
-          explanation: "In the past, you could write the JSF tags in JSP pages, however Facelets become new view declaration language since JSF 2.0. So we recommend you to use the XHTML instead of JSP."
-    - content: How to confirm the Application Log in Azure App Service
+          explanation: "In the past, you could write JSF tags in JSP pages, however Facelets is the new view declaration language since JSF 2.0. So we recommend you to use the XHTML instead of JSP."
+    - content: Which method(s) allow you to access the Application Logs in Azure App Service?
       choices:
-        - content: Login to the system by SSH for Advanced Tool on Azure Portal
+        - content: SSH in Advanced Tools on the Azure portal
           isCorrect: false
-          explanation: Correct but not only this one but also you can select others
-        - content: Confirm the LogStream for Advanced Tool on Azure Portal
+          explanation: This method is a correct option but not the only way to access the logs.
+        - content: Access the LogStream in Advanced Tools on the Azure portal
           isCorrect: false
-          explanation: Correct but not only this one but also you can select others
-        - content: Azure Command Line Tool (Azure CLI)
+          explanation: This method is a correct option but not the only way to access the logs.
+        - content: Azure Command-Line Tool (Azure CLI)
           isCorrect: false
-          explanation: Correct but not only this one but also you can select others
+          explanation: This method is a correct option but not the only way to access the logs.
         - content: All of the Above
           isCorrect: true
 
-    - content: What can you do with Maven Plugin for Azure App Service
+    - content: Which task(s) can you do with Maven Plugin for Azure App Service?
       choices:
         - content: Compile the source code
           isCorrect: false
-          explanation: It will be used Maven Compiler Plugin
-        - content: Configure to deploy to the App Service
+          explanation: The Maven Compiler Plugin compiles your source code.
+        - content: Configure your Azure App Service instance
           isCorrect: false
-          explanation: It is one of the functionality
-        - content: Deploy to the App Service
+          explanation: This choice is a correct option but not its only feature.
+        - content: Deploy to your App Service instance
           isCorrect: false
-          explanation: It is one of the functionality
-        - content: Configure and Deploy to the App Service
+          explanation: This choice is a correct option but not its only feature.
+        - content: Both Configure and Deploy to your App Service instance
           isCorrect: true

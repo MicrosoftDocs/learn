@@ -2,8 +2,8 @@
 uid: learn.azure.build-webapp-java-tomcat.3-exercise-create-jsf-app
 title: Exercise - Create a JavaServer Faces web app on Tomcat
 metadata:
-  title: Exercise - Create a JavaServer Faces web app on Tomcat
-  description: Exercise in how to create JSF Web Application with PrimeFaces.
+  title: Exercise - Create a JavaServer Faces web application on Tomcat
+  description: Build a simple JavaServer Faces application, set up its resources, and run it locally.
   author: yoshioterada
   ms.author: yoterada
   ms.date: 11/05/2020

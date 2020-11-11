@@ -3,7 +3,7 @@ uid: learn.azure.build-webapp-java-tomcat.6-introduction-app-service
 title: Deploy the app to Azure App Service
 metadata:
   title: Deploy the app to Azure App Service
-  description: This unit explains the overview of the Azure App Service for Java Developers. In order to deploy the Java Web Application to the Cloud Environment, Azure App Service is the entry point for you. Azure App Service provide Platform as a Service and you can deploy your application with easily.
+  description: Overview of the Azure App Service.
   author: yoshioterada
   ms.author: yoterada
   ms.date: 11/05/2020
