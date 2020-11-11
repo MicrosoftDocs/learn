@@ -21,7 +21,7 @@ as having one of three profiles:
   `Result` as part of conditions within `if` statements in operations. The
   corresponding conditional blocks may not contain `return` or `set` statements.
 
-For example, the following code:
+For example, the following code:  
 
 ```qsharp
 
