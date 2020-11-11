@@ -9,7 +9,7 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 25
+durationInMinutes: 15
 azureSandbox: false
 content: |
   [!include[](includes/4-exercise-connect-vm-with-bastion.md)]

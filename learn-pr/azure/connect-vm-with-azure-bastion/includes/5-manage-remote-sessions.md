@@ -3,7 +3,7 @@ In this unit, you'll learn how to manage remote sessions by enabling diagnostic 
 
 ## Configure diagnostics settings to generate audit logs
  
-Bastion can log remote user sessions information. Review the logs to see who connected to which workloads, at what time, from where, and other relevant logging information. To generate these logs, you must configure diagnostic settings on Azure Bastion. It can take several hours for the logs to stream to a storage account. So you won't be able to try this out and see the logs in the sandbox environment. The following sections show you how to configure Bastion diagnostic settings so you can try this out in your own subscription later.
+Bastion can log remote user sessions information. Review the logs to see who connected to which workloads, at what time, from where, and other relevant logging information. To generate these logs, you must configure diagnostic settings on Azure Bastion. It can take several hours for the logs to stream to a storage account. The following sections show you how to configure Bastion diagnostic settings so you can try this out in your own subscription later.
 
 ### Enable diagnostics for Bastion
 
