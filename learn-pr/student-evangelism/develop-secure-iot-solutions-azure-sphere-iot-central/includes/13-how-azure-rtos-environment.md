@@ -2,8 +2,6 @@ The microbiology laboratory is to run a set of experiments for a new customer. T
 
 In this unit, you will learn how to deploy a Real-time application onto the Azure Sphere to support the new temperature, humidity, and pressure sensor.
 
-------
-
 ## Azure Sphere Architecture
 
 The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores, a Cortex-A7, which runs a Linux kernel, and two Cortex-M4 cores that can run bare-metal code, or a Real-time operating system such as Azure RTOS or FreeRTOS.
@@ -11,8 +9,6 @@ The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores
 High-level applications running on the Cortex-A7 Linux kernel are used for less timing-sensitive tasks such as establishing network connections, negotiating security, updating device state, communicating with Real-time core applications, and sending telemetry messages to cloud gateways such as IoT Hub.
 
 ![Azure Sphere architecture](../media/azure-sphere-architecture.png)
-
-------
 
 ## What is an RTOS (Real-Time Operating System)
 
@@ -22,15 +18,11 @@ A Real-Time Operating System is system software that provides services and manag
 
 This typically involves a division of the software into pieces, commonly called “tasks” or “threads,” and creating a run-time environment that provides each thread with its own virtual microprocessor (“Multithreading”). Basically, a virtual microprocessor consists of a virtual set of microprocessor resources, for example, register set, program counter, stack memory area, and a stack pointer. Only while executing does a thread use the physical microprocessor resources, but each thread retains its own copy of the contents of these resources as if they were its own private resources (the thread”s “context”).
 
-------
-
 ## Introducing Azure RTOS
 
-Azure RTOS is a Real-time Operating System available from Microsoft. Azure RTOS is an embedded development suite including a small but powerful operating system called ThreadX that provides reliable, ultra-fast performance for resource-constrained devices. The [Azure RTOS](https://azure.microsoft.com/en-us/services/rtos?azure-portal=true) suite includes other components such as GUI design tools and libraries. In this unit, we will be using Azure RTOS ThreadX.
+Azure RTOS is a Real-time Operating System available from Microsoft. Azure RTOS is an embedded development suite including a small but powerful operating system called ThreadX that provides reliable, ultra-fast performance for resource-constrained devices. The [Azure RTOS](https://azure.microsoft.com/services/rtos?azure-portal=true) suite includes other components such as GUI design tools and libraries. In this unit, we will be using Azure RTOS ThreadX.
 
 Azure RTOS ThreadX is an advanced real-time operating system (RTOS) designed specifically for deeply embedded applications. Among the multiple benefits it provides are real-time multithreading, inter-thread communication and synchronization, and memory management. Azure RTOS ThreadX has many advanced features, including picokernel architecture, preemption threshold, event chaining, and a rich set of system services.
-
-------
 
 ## Why build and deploy Real-time applications
 
@@ -40,9 +32,7 @@ The reasons to run code on the Cortex M4 Real-time cores include:
 1. Your application requires precise or deterministic timing that cannot be guaranteed on the Cortex-A7 Linux kernel core where it would have to complete with other services.
 1. Your application may benefit from running across multiple cores to take advantage of all the memory and processing resources on the Azure Sphere.
 
-To learn more, review the [Real-Time Operating System - What it is and why you might want to use one](https://azure.microsoft.com/en-au/resources/real-time-operating-system?azure-portal=true) guide.
-
-------
+To learn more, review the [Real-Time Operating System - What it is and why you might want to use one](https://azure.microsoft.com/resources/real-time-operating-system?azure-portal=true) guide.
 
 ## Inter-core communications
 
@@ -67,8 +57,6 @@ typedef struct
 } LP_INTER_CORE_BLOCK;
 ```
 
-------
-
 ## Solution architecture
 
 ![Inter-core communications architecture](../media/intercore-coms.png)
@@ -82,8 +70,6 @@ The solution architecture is as follows:
 5. Azure IoT Central subscribes to telemetry messages sent to IoT Hub by the device and displays the data to the user.
 6. The IoT Central user can also set the desired temperature for the room by setting a property. The property is set on the device via an IoT Hub device twin message.
 7. The Azure Sphere then sets the HVAC operating mode to meet the desired temperature.
-
-------
 
 ## Real-time core security and communications
 
