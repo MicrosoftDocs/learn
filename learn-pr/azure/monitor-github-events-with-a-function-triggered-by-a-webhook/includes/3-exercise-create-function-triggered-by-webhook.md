@@ -33,7 +33,7 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
 
 ### Sandbox regions
 
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+[!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Select **Create**, and wait for the function app to be deployed before continuing.
 
