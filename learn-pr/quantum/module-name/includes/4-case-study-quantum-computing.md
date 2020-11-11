@@ -18,4 +18,4 @@ quantum impact accelerate across every industry.
 
 Superposition enables quantum mechanical effects such as interference, tunneling, and entanglement,
 which in turn empower quantum algorithms for faster searching, better
-optimization, and greater security.
+optimization, and greater security. 
