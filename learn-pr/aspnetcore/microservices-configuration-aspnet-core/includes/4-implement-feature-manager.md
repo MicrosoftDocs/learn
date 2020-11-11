@@ -52,27 +52,30 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     1. Select the **:::no-loc text="CHECKOUT":::** button.
 
 1. Scroll to the bottom of the checkout page. Notice the presence of a discount coupon feature comprised of the following elements:
+    * **See Available Coupons** link
     * **HAVE A DISCOUNT CODE?** label
     * **Coupon number** text box
     * **APPLY** button
+
+    <!--TODO: retake this screenshot to include the new link-->
 
     :::image type="content" source="../../microservices-configuration-aspnet-core/media/4-implement-feature-manager/discount-coupon-elements.png" alt-text="Discount coupon elements":::
 
 You've successfully verified the app was deployed to AKS. Additionally, you've seen the discount coupon feature that you're going to make configurable.
 
-## Set up Feature Management
+## Set up the Feature Management library
 
 Complete the following steps to support toggling of the SPA's discount coupon feature in real time.
 
-1. Install the NuGet package required to use the feature manager library:
+1. Install the NuGet package required to use the Feature Management library with ASP.NET Core:
 
     ```dotnetcli
     pushd src/Web/WebSPA && \
-        dotnet add package Microsoft.FeatureManagement --version 2.2.0 && \
+        dotnet add package Microsoft.FeatureManagement.AspNetCore --version 2.2.0 && \
         popd
     ```
 
-    The library retrieves feature flags from .NET Core's native configuration system. You can define your app's feature flags by using any configuration provider that .NET Core supports. In this case, you'll define the configuration the SPA Helm chart's ConfigMap file.
+    The library retrieves feature flags using .NET Core's native configuration system. You can define your app's feature flags by using any configuration provider that .NET Core supports. In this case, you'll define the configuration the SPA Helm chart's ConfigMap file. The library also provides a `<feature>` Tag Helper that can be registered and used in Razor views.
 
 1. In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, uncomment the `UseFeatureManagement` and `FeatureManagement__Coupons` lines. Save your changes.
 
@@ -118,22 +121,60 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
         }
         ```
 
-        `MapFeatureManagement` is a custom extension method that's provided for you. It defines an endpoint at `features` that responds to HTTP GET requests. Those requests are delegated to a custom middleware class named `FeatureManagementMiddleware`.
+        `MapFeatureManagement` is a custom extension method that's provided for you. It defines an endpoint at `/features` that responds to HTTP GET requests from the Angular client code. Those requests are delegated to a custom middleware class named `FeatureManagementMiddleware`.
 
         :::code language="csharp" source="../code/src/web/webspa/extensions/endpointroutebuilderextensions.cs" id="snippet_MapFeatureManagement":::
 
-1. To add the `featureFlag` directive to the Angular views, run the following script:
+## Use the feature flag in an Angular view
 
-    ```bash
-    deploy/implement-directive.sh
+To add the `featureFlag` directive to the Angular views, run the following script:
+
+```bash
+deploy/implement-directive.sh
+```
+
+The preceding script uses the Linux `sed` command to modify two Angular views. The `*featureFlag="'coupons'"` attribute is added to the subtotal and discount code `div` elements in *orders-detail/orders-detail.component.html* and *orders-new/orders-new.component.html* in *~/clouddrive/aspnet-learn/src/src/Web/WebSPA/Client/src/modules/orders*. The relevant portions of *orders-detail.component.html* are highlighted below.
+
+:::code language="html" source="../code/src/web/webspa/client/src/modules/orders/orders-detail/orders-detail.component.html" highlight="1,6":::
+
+> [!NOTE]
+> The implementation of Angular-specific functionality in this module has been scripted to maintain focus on .NET details.
+
+## Use the feature flag in a Razor view
+
+The **See Available Coupons** link navigates to a route that renders an MVC Razor view. The view displays a list of coupon codes that haven't yet been consumed.
+
+Apply the following changes to the file *src/Web/WebSPA/Views/CouponStatus/Index.cshtml*:
+
+1. Replace the `@* Add the addTagHelper directive *@` comment with the following code:
+
+    ```cshtml
+    @addTagHelper *, Microsoft.FeatureManagement.AspNetCore
     ```
 
-    The preceding script uses the Linux `sed` command to modify two Angular views. The `*featureFlag="'coupons'"` attribute is added to the subtotal and discount code `div` elements in *orders-detail/orders-detail.component.html* and *orders-new/orders-new.component.html* in *~/clouddrive/aspnet-learn/src/src/Web/WebSPA/Client/src/modules/orders*. The relevant portions of *orders-detail.component.html* are highlighted below.
+    The preceding code makes the `Microsoft.FeatureManagement.AspNetCore` assembly's Tag Helpers available inside the view.
 
-    :::code language="html" source="../code/src/web/webspa/client/src/modules/orders/orders-detail/orders-detail.component.html" highlight="1,6":::
+1. Replace the following `<partial>` Tag Helper:
 
-    > [!NOTE]
-    > The implementation of Angular-specific functionality in this module has been scripted to maintain focus on .NET details.
+    ```cshtml
+    <partial name="_AvailableCoupons" model="allAvailableCoupons" />
+    ```
+
+    with the following markup:
+
+    ```cshtml
+    <feature name="Coupons" negate="true">
+        <div class="feature-heading-text-display">You're not subscribed to this feature.</div>
+    </feature>
+    <feature name="Coupons">
+        <partial name="_AvailableCoupons" model="allAvailableCoupons" />
+    </feature>
+    ```
+
+The preceding markup applies conditional logic against the feature flag by using the `<feature>` Tag Helper. The Tag Helper's `name` property represents the feature flag name&mdash;*Coupons* in this case. The `negate` property is used to display alternate content when the *Coupons* feature flag is disabled. When the discount coupon feature is:
+
+* Disabled, a **You're not subscribed to this feature.** message displays.
+* Enabled, a list of coupon codes that haven't been redeemed displays.
 
 ## Deploy the SPA to your AKS cluster
 
