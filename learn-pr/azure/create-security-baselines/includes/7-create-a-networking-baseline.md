@@ -33,7 +33,7 @@ To access an instance of the SQL Server through a firewall, you must configure t
 1. Sign in to the Azure portal.
 1. Go to SQL databases.
 1. For each SQL server:
-1. Click on **Set server Firewall**.
+1. Click on **Firewalls and virtual networks**.
 1. Ensure that the firewall rules exist, and no rule has a Start IP of `0.0.0.0` and End IP of `0.0.0.0` or other combinations which allows access to wider public IP ranges.
 1. Select **Save**.
 
