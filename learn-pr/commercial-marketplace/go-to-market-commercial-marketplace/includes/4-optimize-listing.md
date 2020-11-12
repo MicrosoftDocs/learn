@@ -1,12 +1,12 @@
-Your product's listing in Microsoft AppSource or Azure Marketplace is the primary way that Microsoft customers can learn more about what you’re selling. You can create a digital presence in Microsoft AppSource and Azure Marketplace that helps customers find and purchase your product.
+Your product's listing in Microsoft AppSource or Azure Marketplace is the primary way that Microsoft customers can learn more about what you’re selling. You can create a digital presence that helps customers find and purchase your product in Microsoft AppSource and Azure Marketplace.
 
-In this unit, we'll look at some best practices you can use to create your online store listing, followed by some recommendations to engage your customers and give them additional options to acquire your solution.
+In this unit, we'll look at some best practices to create your online store listing, followed by some recommendations to engage your customers and give them additional options to get your solution.
 
 ## Creating a compelling listing
 
 > [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Optimize-Listing/player#EndOfVideo=false]
 
-Your marketplace listing in the online stores has a lot of useful information for buyers. When you publish your offer in Partner Center you will be required to provide certain information that will appear on your product listing in Azure Marketplace and Microsoft AppSource.
+Your marketplace listing in the online stores has a lot of useful information for buyers. When you publish your offer in Partner Center you'll be required to provide certain information that will appear on your product listing in Azure Marketplace and Microsoft AppSource.
 
 Here's a list of some of the required information with suggestions to get the most out of your listing:
 

@@ -19,7 +19,7 @@ The commercial marketplace supports connections to the following CRM systems:
 If you don’t use any of these CRM systems, you'll still be able to see your leads. You can store customer lead data and import/export it for follow-up by configuring an Azure table or HTTPS endpoint.
 
 > [!IMPORTANT]
->If you don’t configure your lead destination in Partner Center, you will not be able to access the customer leads from your listing. Microsoft adheres to strict privacy policies regarding our customers’ personally identifiable information (PII), which means we won’t be able to resend leads to publishers that haven’t configured their lead management connection.
+> If you don’t configure your lead destination in Partner Center, you will not be able to access the customer leads from your listing. Microsoft adheres to strict privacy policies regarding our customers’ personally identifiable information (PII), which means we won’t be able to resend leads to publishers that haven’t configured their lead management connection.
 
 For detailed instructions on configuring your lead management connection in Partner Center and deciphering lead data, you can reference our [documentation on customer leads from your commercial marketplace offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads).
 
@@ -37,4 +37,4 @@ As you get ready to engage your customers through the commercial marketplace, co
 **Follow-up + nurture**: When you receive leads from your listing, follow-up in a timely manner to catch potential customers while they still have your product in mind. Focus on determining if your solution is a good fit for the customer, following up as needed until you can close out the opportunity.
 
 > [!TIP]
->Remember, leads represent customers that engaged with your product. In many cases, they’ve spent the time testing your offer through a free trial or a test drive. These are valuable opportunities, so make you’re your organization is prepared to follow up with them in a timely manner.
+> Remember, leads represent customers that engaged with your product. In many cases, they’ve spent the time testing your offer through a free trial or a test drive. These are valuable opportunities, so make you’re your organization is prepared to follow up with them in a timely manner.

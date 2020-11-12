@@ -1,4 +1,4 @@
-Organizations around the world are changing the way that they purchase the software and services they need to run their business. In the same way that individual consumers are turning to online e-commerce to buy everyday items such as household products, clothing, and groceries, businesses are shifting their IT purchases to online marketplaces.
+Organizations around the world are changing the way they purchase the software and services they need to run their business. In the same way that individual consumers are turning to online e-commerce to buy everyday items such as household products, clothing, and groceries, businesses are shifting their IT purchases to online marketplaces.
 
 E-commerce enables self-service. It lets customers choose from a wider range of products and services from providers around the world. E-commerce also helps customers make better purchasing decisions with easy access to product information that they can use to compare benefits and prices for competing products. Overall, e-commerce helps customers shop more efficiently and make decisions at their own pace.
 
@@ -14,7 +14,7 @@ In this module, we’ll explore some key go-to-market concepts you’ll want to 
 
 As you consider the concepts in this module, think about how you can apply them to develop a tailored plan for your company and the products and services you plan to list through Microsoft. Every organization is different, which means your strategy will need to be unique. You can use the material we’ll cover in this module as a starting point for your unique plan.
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you will:
 
