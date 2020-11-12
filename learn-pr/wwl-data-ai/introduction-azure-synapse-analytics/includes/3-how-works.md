@@ -48,7 +48,7 @@ Within the Azure portal, there are links to configure your workspace, manage acc
 
 It also contains important information about your Synapse Analytics environment, such as:
 
-1. The **Primary ADLS Gen2 account URL (1)**, which identifies the primary data lake storage account.
-2. The **SQL endpoint** and **SQL on-demand endpoint (2)**, which are used to integrate with external tools, such as SQL Server Management Studio (SSMS), Azure Data Studio, and Power BI.
-3. The **Workspace web URL (3)**, a direct link to Synapse Studio for the workspace.
-4. Available resources, such as **SQL pools** and **Apache Spark pools (4)**.
+* The **Primary ADLS Gen2 account URL (1)**, which identifies the primary data lake storage account.
+* The **SQL endpoint** and **SQL on-demand endpoint (2)**, which are used to integrate with external tools, such as SQL Server Management Studio (SSMS), Azure Data Studio, and Power BI.
+* The **Workspace web URL (3)**, a direct link to Synapse Studio for the workspace.
+* Available resources, such as **SQL pools** and **Apache Spark pools (4)**.
