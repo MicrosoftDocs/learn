@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-deploy-your-first-application
+title: How to deploy a high-level application to your Azure Sphere
+metadata:
+  title: How to deploy a high-level application to your Azure Sphere
+  description: In this section, we deploy a high-level application to your Azure Sphere.
+  ms.date: 11/10/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/8c-how-deploy-your-first-application.md)]
