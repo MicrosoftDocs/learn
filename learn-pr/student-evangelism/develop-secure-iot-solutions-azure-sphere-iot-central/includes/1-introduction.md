@@ -4,7 +4,7 @@ With Azure Sphere, you can build IoT solutions that are secure by default with t
 
 You can build applications with Visual Studio or Visual Studio Code or integrate with your existing toolchains on Windows and Linux. Visual Studio and Visual Studio Code development environments provide integrated microcontroller debuggers and full source-code control, along with collaboration and productivity tools.
 
-## What is an Azure Sphere
+## What is Azure Sphere
 
 [Azure Sphere](https://azure.microsoft.com/en-au/services/azure-sphere?azure-portal=true) is a comprehensive IoT security solution – including hardware, OS, and cloud components – to actively protect your devices, your business, and your customers.
 
