@@ -10,11 +10,9 @@
 
 5. Click **Select Folder** or the **OK** button to open the project.
 
-
-
 ## Step 2: Configure the Azure Sphere application
 
-From Visual Studio Code, open the **app_manifest.json** file. The resources this application requires must be declared in the **Capabilities** section.
+1. From Visual Studio Code, open the **app_manifest.json** file. The resources this application requires must be declared in the **Capabilities** section.
 
 1. Update the connection properties for the Azure IoT Central application.
 
@@ -65,7 +63,9 @@ From Visual Studio Code, open the **app_manifest.json** file. The resources this
     }
     ```
 
-5. **IMPORTANT**. Copy the contents of your **app_manifest.json** file to Notepad, as you'll need this configuration information for the next labs.
+5. Save the updated app_manifest.json file.
+
+6. **IMPORTANT**. Copy the contents of your **app_manifest.json** file to Notepad, as you'll need this configuration information for the next labs.
 
 
 
@@ -73,7 +73,7 @@ From Visual Studio Code, open the **app_manifest.json** file. The resources this
 
 These labs support developer boards from Avnet and Seeed Studio. You need to set the configuration that matches your developer board. The default developer board configuration is for the Avnet Azure Sphere Starter Kit. If you have this board, there is no additional configuration required.
 
-1. Open **CMakeList.txt**.
+1. Open **CMakeLists.txt**.
 
 2. Add **#** at the beginning of the **set AVNET** line to disable it.
 
@@ -93,11 +93,18 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 ### Start the app build and deployment process
 
+1. Open **main.c**.
+
 1. Select **CMake: [Debug]: Ready** from the Visual Studio Code status bar.
 
    ![The illustration shows CMake status.](../media/visual-studio-code-start-application.png)
 
-2. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application now running the Azure Sphere device.
+1. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application now running the Azure Sphere device.
+
+1. Try setting a breakpoint in the **MeasureSensorHandler** function. The function will be called every 5 seconds.
+
+    > [!NOTE]
+    > You can learn how to set breakpoints from this [Visual Studio Code Debugging](https://code.visualstudio.com/docs/editor/debugging#_debug-actions?azure-portal=true) article.
 
 ### View debugger output
 
@@ -158,9 +165,10 @@ Switch back to the Azure IoT Central web portal.
 
 1. Select the **Telemetry** tab to view the device telemetry.
 
-1. Optional, but you can also rename your device. Click the **Rename** button and give your device a friendly name.
+1. Optional. You can also rename your device. Click the **Rename** button and give your device a friendly name.
 
-Azure IoT Central does not update immediately. It may take a minute or two for the temperature, humidity, and pressure telemetry to be displayed.
+    > [!NOTE]
+    > Azure IoT Central does not update immediately. It may take a minute or two for the temperature, humidity, and pressure telemetry to be displayed. You can check that data is flowing into IoT Central by checking the **Raw data** tab.
 
 ![The illustration shows how to display measurements.](../media/iot-central-display-measurements.png)
 

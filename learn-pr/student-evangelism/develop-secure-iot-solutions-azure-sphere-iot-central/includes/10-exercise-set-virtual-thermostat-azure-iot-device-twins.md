@@ -32,25 +32,23 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 4. Save the file. This will auto-generate the CMake cache.
 
-
-
 ## Step 3: Configure the Azure IoT connection information
 
 1. Open the **app_manifest.json** file.
 
 2. You'll need to redo the settings for the **app_manifest.json** file. Either copy the settings from Notepad if you still have it open or copy them from the **app_manifest.json** file you created in the previous exercise.
 
-3. Paste the contents of the clipboard into **app_manifest.json** and save the file.
+3. Replace the existing configuration by pasting the contents of the clipboard into **app_manifest.json**.
 
-
+4. Save the updated **app_manifest.json** file.
 
 ## Step 4: Start the app build deploy process
 
+1. Open **main.c**.
+
 1. Select **CMake: [Debug]: Ready** from the Visual Studio Code Status Bar.
 
-2. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application that's now running the Azure Sphere device.
-
-
+1. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application that's now running the Azure Sphere device.
 
 ## Step 5: Expected device behavior
 
@@ -77,7 +75,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 1. The User LED will blink every 5 seconds when connected to Azure.
 
 
-
+<!-- 
 ## Step 6: Display the actual temperature property
 
 1. Switch to Azure IoT Central in your browser.
@@ -86,16 +84,27 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 3. Select the **Properties** tab.
 
-    > [!NOTE]
-    > Azure IoT Central does not update immediately. It might take a minute or two for the device telemetry to be displayed.
-
-![The illustration shows how to display telemetry.](../media/iot-central-display-telemetry.png)
+![The illustration shows how to display properties.](../media/iot-central-display-telemetry.png) -->
 
 
 
-## Step 7: Set the desired temperature
+## Step 6: Set the desired temperature
 
 Setting the desired temperature is like setting a thermostat in a room. A device twin property message for desired temperature is sent to Azure Sphere, where it will be acted upon.
+
+To set the desired temperature:
+
+1. Update the **Desired Temperature** value.
+1. Save the property. This will send the desired temperature property to Azure Sphere. The RGB LED color will change depending on the desired temperature chosen.
+
+    ![The illustration shows display settings.](../media/iot-central-display-settings.png)
+
+1. The Desired Temperature property status will change to **Accepted now**.
+1. If the HVAC operation mode changes then the **Last reported HVAC operating mode** property will also be updated.
+
+### HVAC operating mode indicator
+
+For Azure Sphere devices with an RGB LED then the LED will change color to represent the HVAC operating mode.
 
 When the temperature sensor is read on the Azure Sphere, it is compared to the desired temperature.
 
@@ -104,15 +113,6 @@ When the temperature sensor is read on the Azure Sphere, it is compared to the d
 - If the temperature is the same as the desired temperature, the RGB LED will turn green to indicate no action required.
 
 > The Avnet Azure Sphere Starter Kit has a built-in temperature sensor. For other boards, a random temperature of 25 +/- 5 degrees Celsius is generated.
-
-To set the desired temperature:
-
-1. Update the **Desired Temperature** value.
-2. Save the property. This will send the desired temperature property to Azure Sphere. The RGB LED color will change depending on the desired temperature chosen.
-
-![The illustration shows display settings.](../media/iot-central-display-settings.png)
-
-
 
 ## Close Visual Studio
 

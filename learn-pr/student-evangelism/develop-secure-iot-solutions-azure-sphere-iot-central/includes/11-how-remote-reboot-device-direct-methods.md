@@ -6,7 +6,7 @@ In this unit, you will learn how to remote restart an Azure Sphere from Azure Io
 
 Azure IoT Central uses commands to invoke an action on a device. Commands are often used for interactive control of devices, such as turning on a fan, a light, or in the case of this unit, to restart the Azure Sphere.
 
-IoT Central is an Azure IoT Hub application and it sends commands to a device using IoT Hub direct methods. IoT Hub direct methods represent a request-reply interaction with a device similar to an HTTP call in that they succeed or fail immediately (after a user-specified timeout). This approach is useful for scenarios where the course of immediate action is different depending on whether the device was able to respond.
+IoT Central is built on Azure IoT Hub and it sends commands to a device using IoT Hub direct methods. IoT Hub direct methods represent a request-reply interaction with a device similar to an HTTP call in that they succeed or fail immediately (after a user-specified timeout). This approach is useful for scenarios where the course of immediate action is different depending on whether the device was able to respond.
 
 > [!NOTE]
 > There are a number of reasons why you might need to remote restart a Azure Sphere. Device certificates, OS updates, and application updates are done on a 24 hour cycle or after the device has been restarted. You may have an operational reason why you need to restart the device to force an update.

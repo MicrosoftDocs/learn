@@ -5,15 +5,15 @@
 2. Navigate to the **azure-sphere-samples** directory. You cloned the Azure Sphere samples repository when you set up the development environment.
 
    - On Windows, navigate to the **Samples\AzureIoT\Tools\win-x64** directory.
-   - On Linux, navigate to the **Samples\AzureIoT\Tools\linux-x64** directory. On Linux, you may need to explicitly set execution permissions for the **ShowIoTCentralConfig** tool. From a terminal, run `chmod +x ShowIoTCentralConfig` to add execution permissions for the tool.
+   - On Linux, navigate to the **Samples/AzureIoT/Tools/linux-x64** directory. On Linux, you may need to explicitly set execution permissions for the **ShowIoTCentralConfig** tool. From a terminal, run `chmod +x ShowIoTCentralConfig` to add execution permissions for the tool.
 
-3. When you run the **ShowIoTCentralConfig** tool, you'll be prompted as follows:
+3. When you run the **ShowIoTCentralConfig** tool, you will be prompted for the following information:
 
    | Prompt                                                 | Response                                                         |
    | ------------------------------------------------------------ | ------------------------------------------------------------ |
    | **Are you using a legacy (2018) IoT Central application (Y/N)** | Respond **N**.                                                |
-   | **IoT Central App URL**                                      | This can be found in your browser address bar. For example: https://myiotcentralapp.azureiotcentral.com/ |
-   | **API token**                                                | This can be generated from your Azure IoT Central application. In the Azure IoT Central application, select **Administration**, select **API Tokens**, select **Generate Token**, provide a name for the token (for example, "AzureSphereSample"), select **Administrator** as the role, and click **Generate**. Copy the token to the clipboard. The token starts with **SharedAccessSignature**. |
+   | **IoT Central App URL**                                      | This can be found in your browser address bar. For example: https://myiotcentralapp.azureiotcentral.com |
+   | **API token**                                                | This can be generated from your Azure IoT Central application. In the Azure IoT Central application, select **Administration**, select **API Tokens**, select **Generate Token**, provide a name for the token (for example, "AzureSphere"), select **Administrator** as the role, and click **Generate**. Copy the token to the clipboard. The token starts with **SharedAccessSignature**. |
    | **ID Scope**                                                 | In the Azure IoT Central application, select **Administration** > **Device Connection** and then copy the **ID Scope**. |
 
 4. Run the **ShowIoTCentralConfig** tool and follow the prompts that the tool provides.
@@ -39,16 +39,16 @@
 
 We need the ID of the Azure Sphere tenant that is now trusted by Azure IoT Central.
 
-1. From the  **Azure Sphere Developer Command Prompt**, run the following command.
+1. From the  **Azure Sphere Developer Command Prompt** or Linux **Terminal**, run the following command.
 
-    ```bash
-    azsphere tenant show-selected
-    ```
+   ```
+   azsphere tenant show-selected
+   ```
 
    The output of this command will look similar to the following.
 
-     ```text
-     Default Azure Sphere tenant ID is '99999999-e021-43ce-9999-fa9999499994'.
-     ```
+   ```
+   Default Azure Sphere tenant ID is '99999999-e021-43ce-9999-fa9999499994'.
+   ```
 
-2. Copy the tenant ID to Notepad, as you'll need it soon.
+2. Copy the Azure Sphere tenant ID to Notepad, as you'll need it soon.

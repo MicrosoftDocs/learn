@@ -44,7 +44,7 @@ The following [Quickstart: Install the Azure Sphere SDK for Linux](https://docs.
 
 The Git client is required to clone the Learning Path Labs and the Azure Sphere SDK Samples.
 
-```bash
+```
 sudo apt install git
 ```
 
@@ -61,24 +61,24 @@ sudo apt install git
 
 ## Delete any existing applications on Azure Sphere
 
-1. From the **Azure Sphere Developer Command Prompt**, run the following command to delete any existing applications on the device.
+1. From the **Azure Sphere Developer Command Prompt** or Linux **Terminal**, run the following command to delete any existing applications on the device.
 
-   ```bash
+   ```
    azsphere device sideload delete
    ```
 
 2. Restart Azure Sphere.
 
-   ```bash
+   ```
    azsphere device restart
    ```
 
 
 ## high-level core device debugging
 
-1. From the **Azure Sphere Developer Command Prompt**, run the following command to enable app development on the device.
+1. From the **Azure Sphere Developer Command Prompt** or Linux **Terminal**, run the following command to enable app development on the device.
 
-   ```bash
+   ```
    azsphere device enable-development
    ```
 
@@ -92,7 +92,7 @@ sudo apt install git
 
    Open the **Azure Sphere Developer Command Prompt** as administrator, run the following command to enable app development on the device.
 
-   ```bash
+   ```
    azsphere device enable-development -r
    ```
 
@@ -115,7 +115,7 @@ Install the GNU Arm Embedded Toolchain for Linux
 
 4. Enable Real-time core development
 
-   Run the following command to enable app development on the device.
+    Open the Linux **Terminal** and run the following command to enable app development on the device.
 
    ```bash
    azsphere device enable-development -r
@@ -126,7 +126,7 @@ Install the GNU Arm Embedded Toolchain for Linux
 > [!NOTE]
 > On Windows, clone the *Azure Sphere Developer Learning Path* to a directory close to the root directory on your computer. For example, **c:\lab**, or **~/**. The reason is that the Azure Sphere build process uses CMake which can struggle with long path and directory names.
 
-```bash
+```
 git clone --depth 1 https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path.git Azure-Sphere
 ```
 
@@ -136,6 +136,6 @@ The Azure Sphere samples repository includes a tool required for listing Azure I
 
 Clone this repository into the same directory that you cloned the Azure Sphere Developer Learning Path into.
 
-```bash
+```
 git clone https://github.com/Azure/azure-sphere-samples.git
 ```

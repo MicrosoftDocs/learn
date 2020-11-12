@@ -101,7 +101,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 1. Set a breakpoint in the inter-core_thread function on the line that reads **switch (ic_message_block->cmd)**
     > [!NOTE]
-    > You can learn how how to set breakpoints from this [Visual Studio Code Debugging](https://code.visualstudio.com/docs/editor/debugging#_breakpoints?azure-portal=true) article.
+    > You can learn how to set breakpoints from this [Visual Studio Code Debugging](https://code.visualstudio.com/docs/editor/debugging#_debug-actions?azure-portal=true) article.
 
     ![Set a breakpoint in the inter-core callback function](../media/visual-studio-debug-intercore-callback.png)
 

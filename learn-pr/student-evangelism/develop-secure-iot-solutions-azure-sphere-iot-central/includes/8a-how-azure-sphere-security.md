@@ -53,13 +53,7 @@ Hardware is declared in the application **app_manifest.json** file in the **Capa
     "I2cMaster": [
       "$I2cMaster2"
     ],
-    "PowerControls": [
-      "ForceReboot"
-    ],
-    "AllowedConnections": [
-      "global.azure-devices-provisioning.net"
-    ],
-    "DeviceAuthentication": "Replace_with_your_Azure_Sphere_Tenant_ID"
+  ...
   },
   ...
 }
@@ -79,4 +73,4 @@ The labs for this learning module have a set of hardware definition files for th
 
 
 
-You will learn how to declaring network endpoints in the following exercise.
+You will learn how to declare network endpoints in the following exercise.

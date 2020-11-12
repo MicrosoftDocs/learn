@@ -14,27 +14,21 @@ In this exercise, we'll build a high-level Azure Sphere application that connect
 
    ![The illustration shows how to expand the sidebar menu.](../media/iot-central-burger-menu.png)
 
-5. Navigate to **Build** and click **+ New application** to create a new Azure IoT Central application.
-
-6. Select **Custom app**.
+5. Navigate to **Build**, and select **Custom apps**.
 
    ![The illustration shows how to create custom app.](../media/iot-central-new-application.png)
 
-7. Specify the **Application name**, specify the **URL**, select the **Free** pricing plan, and complete the registration form.
+6. Specify the **Application name**, specify the **URL**, select the **Free** pricing plan, and complete the registration form.
 
-8. Click **Create**.
+7. Click **Create**.
 
 ### Create a new device template
 
 A device template is a blueprint that defines the characteristics and behaviors of a type of device that connects to an Azure IoT Central application.
 
-
-
 1. Navigate to **Device templates**, then **+ New**.
 
    ![The illustration shows how to create IoT device templates.](../media/iot-central-new-iot-device-template.png)
-
-1. Click the **IoT device** template type.
 
 1. Select **IoT device**.
 
@@ -119,11 +113,11 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 ## Step 2: Download the tenant authentication CA certificate
 
-1. If you're using Windows, open an **Azure Sphere Developer Command Prompt**. If you're using Linux, open your terminal.
+1. If you're using Windows, open an **Azure Sphere Developer Command Prompt**. If you're using Linux, open **Terminal**.
 
 2. Log in to your Azure Sphere tenant if you have not already done so.
 
-   ```bash
+   ```
    azsphere login
    ```
 
@@ -131,7 +125,7 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 4. Download the certificate authority (CA) certificate for your Azure Sphere tenant:
 
-   ```bash
+   ```
    azsphere ca-certificate download --output CAcertificate.cer
    ```
 
@@ -139,9 +133,9 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 ### Create an Enrollment Group
 
-1. From IoT Central, go to **Administration** > **Device Connection** > **Manage primary certificate**.
+1. From IoT Central, go to **Administration** > **Device Connection**.
 
-2. Create an enrollment group
+2. Click **+ Create an enrollment group**
 
 3. Name the enrollment group **Azure Sphere**
 
@@ -157,7 +151,7 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 3. The **Primary Certificate** dialog box appears. The **Subject** and **Thumbprint** fields contain information about the current Azure Sphere tenant and primary root certificate.
 
-4. Click the **Generate verification code.
+4. Click the **Generate verification code**.
 
 5. Copy the verification code to the clipboard.
 
@@ -167,9 +161,9 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 1. Return to the command prompt.
 
-2. Download a validation certificate that proves that you own the tenant CA certificate. Replace code in the command with the verification code from the previous step.
+2. Download a validation certificate that proves that you own the tenant CA certificate. Replace **<code\>** in the command with the verification code from the previous step.
 
-   ```bash
+   ```
    azsphere ca-certificate download-proof --output ValidationCertification.cer --verificationcode <code>
    ```
 
@@ -179,9 +173,10 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 1. Return to Azure IoT Central and click **Verify**.
 
-2. When prompted, navigate to the validation certificate that you downloaded in the previous step and select it. When the verification process is complete, the **Primary Certificate** dialog box displays the **Verified** message. Click **Close** to dismiss the box.
+2. When prompted, select the validation certificate that you generated in the previous step. When the verification process is complete, the **Primary Certificate** dialog box displays the **Verified** message. Click **Close** to dismiss the box.
 
    ![The illustration shows a verified certificate.](../media/iot-central-certificate-verified.png)
 
+3. Click **Save**.
 
 After you complete these steps, any device that is claimed into your Azure Sphere tenant will automatically be enrolled in your Azure IoT Central application when it first connects.
