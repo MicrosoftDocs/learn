@@ -1,4 +1,3 @@
-Write a nice summary of what you have taught them.
+<!-- https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit?branch=master  -->
 
-Check this out to see some guidance on a summary
-https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit?branch=master
+In this module, you started by learning how to find projects to contribute to on GitHub. You also discovered how to familiarize yourself with the project and its guidelines. We also covered how to use the issue tracker and labels to find tasks to work on. You also learned about GitHub sponsors to financially support your favorite projects and open-source contributors.

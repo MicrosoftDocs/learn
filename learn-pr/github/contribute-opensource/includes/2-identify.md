@@ -27,7 +27,7 @@ Something worth mentioning here is that every open-source community is different
 Most projects will have these documents at the top level of the repository.
 
 - **LICENSE**: the project must contain an [open-source](https://choosealicense.com/). If the project doesn't have a license, it's not open-source.
-- **README**: the README usually serves as the welcome page for the project. It usually provides information on how to get started using the project. It's also common for it to add information on how to engage with and contribute to a project.
+- **README**: the README usually serves as the welcome page for the project. It usually provides information on how to get started using the project. It's also common for it to add information on how to engage with the community.
 - **CONTRIBUTING**: as its name suggests this document provides guidance on how to contribute to the project. It usually describes how the contribution process works and details on how to set your development environment.
 - **CODE_OF_CONDUCT**: the code of conduct sets ground rules for community members. By doing so, it helps make the community a safe and welcoming environment for all.
 
