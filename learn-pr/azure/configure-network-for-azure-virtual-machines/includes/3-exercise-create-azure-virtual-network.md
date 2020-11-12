@@ -12,7 +12,7 @@ Sign in to Azure either by using the PowerShell cmdlet `Connect-AzAccount` on yo
 First, create a resource group to contain all of the resources you'll create in this module. Name it `vm-networks` and replace `EastUS` in the following command with the name of the region in which you'd like the group to be created.
 
 ```PowerShell
-$Location = "EastUS" 
+$Location="EastUS" 
 New-AzResourceGroup -Name vm-networks -Location $Location
 ```
 
@@ -21,7 +21,7 @@ New-AzResourceGroup -Name vm-networks -Location $Location
 To create a subnet and virtual network, run the following command.
 
 ```PowerShell
- $Subnet= New-AzVirtualNetworkSubnetConfig -Name default -AddressPrefix 10.0.0.0/24
+ $Subnet=New-AzVirtualNetworkSubnetConfig -Name default -AddressPrefix 10.0.0.0/24
  New-AzVirtualNetwork -Name myVnet -ResourceGroupName vm-networks -Location $Location -AddressPrefix 10.0.0.0/16 -Subnet $Subnet
 ```
 

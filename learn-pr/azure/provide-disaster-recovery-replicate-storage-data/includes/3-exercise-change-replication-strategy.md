@@ -10,7 +10,7 @@ Create a storage account with geo-zone-redundant storage (GZRS).
 1. From the menu bar in the upper right, open **Cloud Shell**.
 1. Set the resource group name.
     ```bash
-    RESOURCEGROUP=learn-storage-replication-rg
+    export RESOURCEGROUP=learn-storage-replication-rg
     ```
 1. Run the following command to set the storage account name where you replace *storageaccountname* and the brackets with a unique Azure Storage account name.
 
@@ -81,7 +81,7 @@ You need a container to upload blobs to Azure Storage. You use containers to log
 1. Run the following command to create a container for your storage account:
 
     ```Bash
-    az storage container create --name $BLOB_CONTAINER_NAME
+    az storage container create --account-key $storageKey --account-name $sa --name $blobname
     ```
 
 1. You'll see the following message returned in your terminal when your storage account container has been created:
