@@ -125,7 +125,7 @@ If you want to use Azure PowerShell or the Azure CLI to deploy Bastion, run comm
      --location westus2
    ```
 
-1. Create an Azure Bastion resource
+1. Create an Azure Bastion resource.
 
    ```azurecli
    az network bastion create \

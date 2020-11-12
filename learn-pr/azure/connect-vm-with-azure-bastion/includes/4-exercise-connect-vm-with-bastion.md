@@ -52,7 +52,7 @@ Create a Linux VM that's not exposed to the internet.
 
 1. Select **Review + create** > **Create**.
 1. Select **Download private key and create resource**.
-   :::image type="content" source="../media/4-download-private-key.png" alt-text="Screenshot of the generate new key pair windows with the ":::
+   :::image type="content" source="../media/4-download-private-key.png" alt-text="Screenshot of the generate new key pair windows with the download private key button highlighted.":::
 
 Because you created the internal app VM without a public IP, you can't connect to it over the internet. Instead of using a jumpbox VM to connect to the internal app VM, let's use Azure Bastion. 
 
