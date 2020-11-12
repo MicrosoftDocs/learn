@@ -25,7 +25,7 @@ In Java EE 6, Backing Beans were implemented with JSF-Managed Beans. Since Java 
 PrimeFaces is a third-party implementation that makes it easy to create JSF web components.
 PrimeFaces is a lightweight library with one jar, zero-configuration, and no required dependencies. You just need to download PrimeFaces, add the primefaces-{version}.jar to your classpath and import the namespace to get started - `xmlns:p="http://primefaces.org/ui"`
 
-Let's look at a simple example: In our example below, the `p:outputLabel`,`p:inputText`, and `p:commandButton` tags are used to display labels, input fields, and buttons.
+Let's look at an example: In the below PrimeFaces page, the `p:outputLabel`,`p:inputText`, and `p:commandButton` tags are used to display labels, input fields, and buttons.
 
 ```xml
 <?xml version='1.0' encoding='UTF-8' ?>
@@ -52,8 +52,8 @@ Writing the above XHTML code, the following screen will be displayed.
 
 ### PrimeFaces Ajax Support
 
-JSF supports Ajax application creation by default. Therefore, it is possible to dynamically update a part of the screen without refreshing the screen.
-PrimeFaces makes use of the `update` attribute to make it easier to implement the Ajax support provided by JSF. Specify which component should be update with the target ID. In the example below, the `update ="ajaxUpdateText"` attribute is added to `p:commandButton`, so the `<div id ="ajaxUpdateText">` part is updated when the button is pressed. The `id` specified here can be specified for any HTML component.
+JSF supports Ajax application creation by default. You can dynamically update a part of the screen without refreshing the screen.
+PrimeFaces makes use of the `update` attribute to make it easier to implement the Ajax support provided by JSF. Specify which component should be update with the target ID. In the example below, the `update ="ajaxUpdateText"` attribute is added to `p:commandButton`, so the `<div id ="ajaxUpdateText">` part is updated when the button is pressed. The `id` here can be specified for any HTML component.
 
 ```xml
 <div id="ajaxUpdateText">
@@ -66,12 +66,12 @@ PrimeFaces makes use of the `update` attribute to make it easier to implement th
 
 ## JSF Backing Bean
 
-The backing bean is a Java class that implements the backend processing associated with the JSF View.
-Here, we will create a backing bean (IndexController) corresponding to the above XHTML. `@Named` annotations can be used for configuring JavaServer Faces applications and it can be referenced from JSF Facelets (XHTML).
+Backing beans are Java classes that implement the backend processing associated with a JSF View.
+In the next example, we'll reference a backing bean, `IndexController`, linked to the above XHTML. We'll use the `@Named` annotations to configure our JavaServer Faces applications so that it can be referenced from our JSF Facelets.
 
 If you write `<p: inputText value ="#{indexcontroller.inputValue}"/>` in Facelets, the Input Text field will be displayed on the screen. The entered value is bound to the `inputValue` defined in the `IndexController` class.
 
-Also, if you write `<p:commandButton value ="Submit" action="#{indexController.submitButtonAction()}"/>`, the HTML button will be displayed. When the button is pressed, it invoke the `submitButtonAction()` method defined in the `IndexController` class.
+Also, if you write `<p:commandButton value ="Submit" action="#{indexController.submitButtonAction()}"/>`, the HTML button will be displayed. When the button is pressed, it invokes the `submitButtonAction()` method defined in the `IndexController` class.
 
 ```java
 import java.io.Serializable;
@@ -100,8 +100,3 @@ public class IndexController implements Serializable {
 ```
 
 In this way, JSF allows the View (Facelets) and Controller (Backing Bean) that make up the screen to be implemented separately.
-
-## Additional resources
-
-In addition to the above, JSF has many useful functions such as data validation and conversion, composite multiple components, template function, and support for Ajax and WebSocket.
-For more information, please visit `http://www.javaserverfaces.org/`.
