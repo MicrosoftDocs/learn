@@ -53,7 +53,7 @@ sudo apt install git
 The Peacock extension allows you to change the color of your Visual Studio Code workspace. The Peacock extension is useful when you have multiple instances of Visual Studio Code open. In one of the exercises an instance of Visual Studio Code will be attached to the Real-time core, and another instance will be attached to the High-level application core.
 
    1. Open Extensions sideBar panel in Visual Studio Code
-   1. choose the menu options for View → Extensions
+      1. Or choose the menu options for View → Extensions
    1. Search for Peacock
    1. Click Install
    1. Click Reload, if required
@@ -74,7 +74,7 @@ The Peacock extension allows you to change the color of your Visual Studio Code 
    ```
 
 
-## high-level core device debugging
+## High-level core device debugging
 
 1. From the **Azure Sphere Developer Command Prompt** or Linux **Terminal**, run the following command to enable app development on the device.
 
@@ -90,11 +90,13 @@ The Peacock extension allows you to change the color of your Visual Studio Code 
 2. Install the GNU Arm Embedded Toolchain
 3. Enable Real-time core development
 
-   Open the **Azure Sphere Developer Command Prompt** as administrator, run the following command to enable app development on the device.
+   Open the **Azure Sphere Developer Command Prompt** as **Administrator**, run the following command to enable app development on the device.
 
    ```
    azsphere device enable-development -r
    ```
+
+4. Close the **Azure Sphere Developer Command Prompt**
 
 ### Install and enable the GNU Arm Embedded Toolchain for Linux
 
@@ -124,7 +126,7 @@ Install the GNU Arm Embedded Toolchain for Linux
 ## Clone the Azure Sphere Developer Learning Path
 
 > [!NOTE]
-> On Windows, clone the *Azure Sphere Developer Learning Path* to a directory close to the root directory on your computer. For example, **c:\lab**, or **~/**. The reason is that the Azure Sphere build process uses CMake which can struggle with long path and directory names.
+> Clone the *Azure Sphere Developer Learning Path* to a directory close to the root directory on your computer. For example, **c:\lab**, or **~/**. The reason is that the Azure Sphere build process uses CMake which can struggle with long path and directory names.
 
 ```
 git clone --depth 1 https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path.git Azure-Sphere
