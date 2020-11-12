@@ -143,7 +143,7 @@ if value == '7':
 elif value == '8':
     print('The value is 8')
 else:
-    print('The value is not one we''re looking for')
+    print('The value is not one we are looking for')
 
 print('Finished!')
 ```

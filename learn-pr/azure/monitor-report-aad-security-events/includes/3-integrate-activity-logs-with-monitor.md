@@ -182,7 +182,7 @@ Alerts aren't dissimilar to queries, the principal difference being that they ru
 
    ```kusto
    SignInLogs
-   | where CreatedDateTime >= ao(7d)
+   | where CreatedDateTime >= ago(7d)
    | summarize signInCount = count() by AppDisplayName
    | sort by signInCount desc
    ```

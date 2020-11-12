@@ -52,7 +52,7 @@ There are some differences in behavior between Azure Storage tables and Azure Co
 - Query results from Azure Cosmos DB are not sorted in order of partition key and row key as they are from Storage tables.
 - Row keys in Azure Cosmos DB are limited to 255 bytes.
 - Batch operations are limited to 2 MBs.
-- Cross-Origin Resource Sharing (CORS) is not currently supported by Azure Cosmos DB.
+- Cross-Origin Resource Sharing (CORS) is supported by Azure Cosmos DB.
 - Table names are case-sensitive in Azure Cosmos DB. They are not case-sensitive in Storage tables.
 
 While these differences are small, you should take care to review your apps to ensure that a migration does not cause unexpected problems.

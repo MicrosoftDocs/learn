@@ -1,4 +1,4 @@
-Nice job. Your pipeline is taking shape. You and the Tailspin team have moved from a basic proof of concept to a realistic release pipeline. You can use this pipeline to build an artifact and test it before you give it to your users. 
+Nice job. Your pipeline is taking shape. You and the Tailspin team have moved from a basic proof of concept to a realistic release pipeline. You can use this pipeline to build an artifact and test it before you give it to your users.
 
 In this module, you learned ways to control how changes move from one stage of a pipeline to the next. Let's review the pipeline you built in this module. This image shows your pipeline's overall shape:
 
@@ -11,13 +11,13 @@ The _Dev_, _Test_, and _Staging_ stages each deploy the build artifact to their 
 * The _Test_ stage runs at 3 A.M. each morning. This stage runs only when the _release_ branch contains changes since the last run. You use a _scheduled trigger_ to specify when the _Test_ stage runs.
 * The _Staging_ stage runs only after you approve the changes in the _Test_ stage. You add a _release approval_ to the **staging** environment to pause the pipeline until you approve or reject the change.
 
-This pipeline satisfies the requirements of the Tailspin team. Your pipeline's shape and how changes flow through it depend on the needs of your team and of the apps and services that you build.
+This pipeline satisfies the requirements of the Tailspin team. Your pipeline's shape and how changes flow through it depend on the needs of your team, and of the apps and services that you build.
 
-Although the Tailspin team is improving their release cadence, there's room for more improvement. For example, the _Dev_ stage is the perfect place to integrate the web application with a database server. In the next module, you'll work with the Tailspin team to integrate a database with the _Space Game_ web application. Instead of reading sample data from local files, the app will use a real SQL database that runs on Azure.
+Although the Tailspin team is improving their release cadence, there's room for more improvement. For example, the _Dev_ stage is the perfect place to integrate the web app with a database server. In the next module, you'll work with the Tailspin team to integrate a database with the _Space Game_ web app. Instead of reading sample data from local files, the app will use a real SQL database that runs on Azure.
 
 ## Learn more
 
-In this module, you worked with conditions, triggers, and approvals. Explore these resources to learn more.
+In this module, you worked with conditions, triggers, and approvals. To learn more, explore these resources.
 
 * [Conditions](https://docs.microsoft.com/azure/devops/pipelines/process/conditions?view=azure-devops&tabs=yaml&azure-portal=true)
 * [Build pipeline triggers](https://docs.microsoft.com/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml&azure-portal=true)
@@ -31,25 +31,25 @@ Now that you're familiar with making your builds part of an automated pipeline, 
 
 ### Implement a hybrid build process
 
-Implementing CI/CD to deploy applications is difficult when you build and operate on-premises applications differently than cloud applications. If this is your situation, consider [Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/azure-stack-overview?azure-portal=true). Azure Stack Hub is a hybrid cloud platform that enables you to use Azure services from your company's or service provider's datacenter.
+Implementing CI/CD to deploy apps is difficult when you build and operate on-premises apps differently than cloud apps. If this mimics your situation, consider [Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/azure-stack-overview?azure-portal=true). Azure Stack Hub is a hybrid cloud platform that enables you to use Azure services from your company's or service provider's datacenter.
 
 As a developer, you can build apps on Azure Stack Hub. You can then deploy them to Azure Stack Hub, to Azure, or you can build truly hybrid apps that connect between an Azure Stack Hub cloud and Azure.
 
 ### Implement multi-agent builds
 
-You can use multiple build agents to support multiple build machines, either to distribute the load, to run builds in parallel, or to use different agent capabilities. As an example, components of an application might require different incompatible versions of a library or dependency. To learn more, see the [Jobs](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml?azure-portal=true) documentation.
+You can use multiple build agents to support multiple build machines, either to distribute the load, to run builds in parallel, or to use different agent capabilities. As an example, components of an app might require different incompatible versions of a library or dependency. To learn more, see the [Jobs](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml?azure-portal=true) documentation.
 
 ### Implement a container build strategy
 
 If you're not using them yet, at some point you'll probably want to include containers in your CI/CD pipeline. Azure provides several services that will help you include them in the build process, including:
 
-* Azure Kubernetes Service (AKS). Kubernetes has quickly become the standard for container orchestration. AKS lets you easily deploy and manage Kubernetes, to scale and run applications, while maintaining strong overall security.
+* Azure Kubernetes Service (AKS). Kubernetes has quickly become the standard for container orchestration. AKS lets you easily deploy and manage Kubernetes, to scale and run apps, while maintaining strong overall security.
 
 * Azure Container Registry (ACR). ACR lets you store and manage container images in a central registry. It provides you with a Docker private registry as a first-class Azure resource.
 
-* Azure Service Fabric. Service Fabric allows you to build and operate always-on, scalable, distributed apps. It can host and orchestrate containers, including stateful containers.
+* Azure Service Fabric. Service Fabric lets you build and operate always-on, scalable, distributed apps. It can host and orchestrate containers, including stateful containers.
 
-* Azure App Service. App Service provides a managed service for both Windows- and Linux-based web applications, and provides the ability to deploy and run containerized applications for both platforms.
+* Azure App Service. App Service provides a managed service for both Windows- and Linux-based web apps, and provides the ability to deploy and run containerized apps for both platforms.
 
 #### Use Docker multi-stage builds
 
@@ -77,11 +77,11 @@ A deployment group is a logical set of deployment target machines, where each ma
 
 You create deployment groups on the **Deployment Groups** tab of the **Azure Pipelines** section, and install the agent on each server in the group. You specify the security context and runtime targets for the agents. You can add users and give them appropriate permissions to administer, manage, view, and use the group.
 
-For more information on creating deployment groups, see [Deployment groups](https://docs.microsoft.com/azure/devops/pipelines/release/deployment-groups/?view=azure-devops?azure-portal=true).
+For more information about creating deployment groups, see [Deployment groups](https://docs.microsoft.com/azure/devops/pipelines/release/deployment-groups/?view=azure-devops?azure-portal=true).
 
 ### Azure Kubernetes Service
 
-You can set up continuous deployment of your containerized application to an Azure Kubernetes Service (AKS) using Azure Pipelines. After you commit and push a code change, it will be automatically built and deployed to the target Kubernetes cluster.
+You can set up continuous deployment of your containerized app to an Azure Kubernetes Service (AKS) using Azure Pipelines. After you commit and push a code change, it will be automatically built and deployed to the target Kubernetes cluster.
 
 For a step-by-step procedure, see [Deploy a Docker container app to Azure Kubernetes Service](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-aks?view=azure-devops&tabs=java?azure-portal=true).
 
@@ -101,16 +101,16 @@ Within Azure DevOps, three important concepts enable reusability. They are:
 
 A *task group* enables you to encapsulate a sequence of tasks, already defined in a build or a release pipeline, into a single reusable task that can be added to any build or release pipeline. You can extract the parameters from the encapsulated tasks as configuration variables and abstract the rest of the task information.
 
-Task groups are a way to standardize and centrally manage deployment steps for all your applications. When you include a task group in your definitions and then make a change centrally to the task group, the change is automatically reflected in all the definitions that use the task group. There is no need to change each one individually.
+Task groups are a way to standardize and centrally manage deployment steps for all your apps. When you include a task group in your definitions and then make a change centrally to the task group, the change is automatically reflected in all the definitions that use the task group. There is no need to change each one individually.
 
 ### Variable groups
 
-A *variable group* stores values that you want to make available across multiple builds and release pipelines. Here are some examples;
+A *variable group* stores values that you want to make available across multiple builds and release pipelines. Here are some examples:
 
 * Store the username and password for a shared server.
 * Store a share connection string.
-* Store the geolocation of an application.
-* Store all settings for a specific application.
+* Store the geolocation of an app.
+* Store all settings for a specific app.
 
 ### Custom tasks
 
@@ -123,11 +123,11 @@ Instead of using out-of-the-box tasks, or a command line or shell script, you ca
 
 ## Integrate secrets within the release pipeline
 
-When you deploy your applications to a target environment, there are almost always secrets involved. Examples of these secrets are:
+When you deploy your apps to a target environment, there are almost always secrets involved. Examples of these secrets are:
 
 * Secrets to access the target environment such as servers and storage accounts.
 * Secrets to access resources such as connections strings, tokens, and passwords.
-* Secrets that your application uses, such as configuration files.
+* Secrets that your app uses, such as configuration files.
 
 As your software moves through the different stages of the pipeline, you need to insert these secrets. We say "insert" mainly because secrets are generally different from one stage and environment. However, another reason is that secrets should never be part of your source control repository.
 
@@ -145,4 +145,4 @@ Secret variables are often used to store secrets, such as connection strings, an
 
 Another option for securing passwords and secrets is to use an Azure Key Vault. Key Vault enables you to keep the secrets outside of the pipeline. Then, if you have the appropriate permissions, you can retrieve them with a variable group that you created. If you don't want to use a variable group to access the secret variables in the vault, you can also use a dedicated build task.
 
-To learn more about linking secrets from Key Vault, see [Variable groups](https://docs.microsoft.com/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml#link-secrets-from-an-azure-key-vault)
+To learn more about linking secrets from Key Vault, see [Variable groups](https://docs.microsoft.com/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml#link-secrets-from-an-azure-key-vault).

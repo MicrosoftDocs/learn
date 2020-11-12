@@ -1,6 +1,6 @@
 A version-control system (VCS) is a program (or set of programs) that tracks changes to a collection of files. One goal is to easily recall earlier versions of individual files or the entire project. Another is to allow several team members to work on a project, even on the same files, at the same time without impacting each other.
 
-Another name for version-control systems is software configuration management (SCM) systems. The two terms are often used interchangeably — in fact, Git's official documentation is located at [git-scm.com](https://git-scm.com/). Technically, version control is just one of the practices involved in SCM, while a VCS can be used for projects other than software including books and online tutorials.
+Another name for version-control systems is software configuration management (SCM) systems. The two terms are often used interchangeably — in fact, Git's official documentation is located at [git-scm.com](https://git-scm.com/?azure-portal=true). Technically, version control is just one of the practices involved in SCM, while a VCS can be used for projects other than software including books and online tutorials.
 
 With a version-control system, you can:
 
@@ -42,8 +42,28 @@ These terms and others such as "push" and "pull" will make more sense shortly. B
 
 ## The Git command line
 
-There are several different GUIs available for Git, such as GitHub Desktop. Many program editors such as Microsoft's [Visual Studio Code](https://code.visualstudio.com/) also have an interface to Git. They all work differently and have different limitations. None of them implement _all_ of Git's functionality.
+There are several different GUIs available for Git, such as GitHub Desktop. Many program editors such as Microsoft's [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) also have an interface to Git. They all work differently and have different limitations. None of them implement _all_ of Git's functionality.
 
 The exercises in this module use the Git command line — specifically, Git commands executed in Azure's Cloud Shell. However, Git's command-line interface works the same no matter what operating system you're using. Plus, the command line lets you tap into *all* of Git's functionality. Developers who see Git only through a GUI sometimes find themselves confronted with error messages they can't resolve, and have to resort to the command line to get going again.
+
+## Git and GitHub 
+
+As you work with **Git**, you may wonder about the difference between the features it offers, and the features offered on [GitHub](https://github.com?azure-portal=true).  
+
+As mentioned earlier, **Git** is a distributed version control system (DVCS) that allows multiple developers and other contributors to work on a project. It provides a way to work with one or more local branches and push them to a remote repository.  
+
+**GitHub** is a cloud platform that uses Git as its core technology. It simplifies the process of collaborating on projects and provides a website, additional command-line tools, and overall flow that allows developers and users to work together. GitHub acts as the "remote repository" mentioned earlier.
+
+Key features provided by GitHub include:
+- Issues
+- Discussions
+- Pull requests
+- Notifications
+- Labels
+- Actions
+- Forks
+- Projects
+
+To learn more about **GitHub**, see the [Introduction to GitHub](https://docs.microsoft.com/learn/modules/introduction-to-github?azure-portal=true) Microsoft Learn module or the [Getting started with GitHub](https://docs.github.com/free-pro-team@latest/github/getting-started-with-github?azure-portal=true) help documentation. 
 
 The next step is to try out Git for yourself!

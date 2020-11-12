@@ -24,7 +24,7 @@ prerequisites: |
   - Access to a microphone for audio capture
   - Basic familiarity with Unity: interface, scene creation, package import, and addition of GameObjects to a scene
   - Basic familiarity with C# and Unity scripting
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/language-translator-mixed-reality.svg
 levels:
 - beginner
 roles:

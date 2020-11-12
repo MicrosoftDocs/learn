@@ -162,3 +162,43 @@ achievements:
   title: Process and classify images with the Azure Cognitive Vision Services
   summary: Process and classify images with the Azure Cognitive Vision Services
   iconUrl: /learn/achievements/data-ai/classify-images-with-vision-services.svg
+- uid: learn.wwl.explore-microsoft-azure-cloud-concepts.trophy
+  type: trophy
+  title: Explore Microsoft Azure cloud concepts (AZ-900)
+  summary: Explore Microsoft Azure cloud concepts (AZ-900)
+  iconUrl: /learn/achievements/explore-microsoft-azure-cloud-concepts.svg
+- uid: learn.wwl.distinguish-microsoft-azure-core-services.trophy
+  type: trophy
+  title: Distinguish Microsoft Azure Core Services (AZ-900)
+  summary: Distinguish Microsoft Azure Core Services (AZ-900)
+  iconUrl: /learn/achievements/distinguish-microsoft-azure-core-services.svg 
+- uid: learn.wwl.examine-microsoft-azure-security-privacy-compliance-trust.trophy
+  type: trophy
+  title: Examine Microsoft Azure security, privacy, compliance, and trust (AZ-900)
+  summary: Examine Microsoft Azure security, privacy, compliance, and trust (AZ-900)
+  iconUrl: /learn/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg 
+- uid: learn.wwl.review-microsoft-azure-pricing-slas-lifecycles.trophy
+  type: trophy
+  title: Review Microsoft Azure pricing, service level agreements, and lifecycles (AZ-900)
+  summary: Review Microsoft Azure pricing, service level agreements, and lifecycles (AZ-900)
+  iconUrl: /learn/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg
+- uid: learn.wwl.get-started-with-azure-fundamentals.badge
+  type: badge
+  title: Get started with Azure Fundamentals
+  summary: This module walks through the basics of Azure and how to get started on the path to completing the AZ-900 exam certification.
+  iconUrl: /learn/achievements/get-started-with-azure-fundamentals.svg
+- uid: learn.wwl.discuss-why-cloud-services.badge
+  type: badge
+  title: Discuss why cloud services
+  summary: Interested in the cloud, but aren't sure what it can do for you? Come explore cloud concepts, the benefits of cloud computing in Azure, and learn how Azure can save you time and money.
+  iconUrl: /learn/achievements/discuss-why-cloud-services.svg
+- uid: learn.wwl.distinguish-types-cloud-models.badge
+  type: badge
+  title: Distinguish types of cloud models
+  summary: There are three different cloud deployment models 'Public Cloud, Private Cloud, and Hybrid Cloud'. This module will enable you to decide how to work with different types of cloud deployments.
+  iconUrl: /learn/achievements/distinguish-types-cloud-models.svg
+- uid: learn.wwl.explore-types-cloud-services.badge
+  type: badge
+  title: Explore types of cloud services
+  summary: When talking about cloud computing, there are three major categories 'IaaS, SaaS, and PaaS'. This module will assist with using them in conversation, documentation, and training.
+  iconUrl: /learn/achievements/explore-types-cloud-services.svg

@@ -21,7 +21,7 @@ The result is:
 | Variable | Formula | Value |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |----------|---------|:-----:|-------|
 | `threeTwo`   | 3/2 = 1 remainder 1  | 1 | |
-| `elevenFour` | 11/4 = 8 remainder 3 | 3 | |
+| `elevenFour` | 11/4 = 2 remainder 3 | 3 | |
 | `fiveTen`    | 5/10 = 0 remainder 5 | 5 | |
 
 ## Calculate a decoded character: The right way 

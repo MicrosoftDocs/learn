@@ -1,0 +1,50 @@
+### YamlMime:LearningPath
+uid: learn.endpoint-manager-fundamentals
+metadata:
+  title: Microsoft Endpoint Manager fundamentals
+  description: This learning path help you understand the fundamentals concepts involved in managing your endpoint environment.
+  brand: azure
+  ms.date: 10/27/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Microsoft Endpoint Manager fundamentals
+summary: | 
+  This learning path helps you understand the fundamental concepts involved in managing your endpoint environment.
+
+  By completing this learning path, you'll:
+
+  - Learn what endpoints are and what Microsoft Endpoint Manager can do for you and your organization.
+  - Learn about the different products, services, and capabilities that encompass Microsoft Endpoint Manager.
+  - Understand endpoint management considerations involving the endpoint environment and available platforms. 
+  - Learn about managing and protecting your organization's devices, apps and data.
+  - Understand the how your organization's devices can be provisioned.
+  - Learn about configuring and managing device security.
+  - Learn about the different types of enrollment methods available using Microsoft Endpoint Manager.
+  - Understand the device management lifecycle.
+  - Understand the how your organization's apps can be can be configured and protected.
+  - Understand the app management lifecycle.
+  - Understand how trusted users can access organizational resources on trusted devices using trusted apps.
+  - Learn how to analyze and resolve endpoint compliance issues.
+  - Understand the benefits of using Microsoft Endpoint Manager.
+prerequisites: |
+  - Familiarity with basic device concepts
+  - Familiarity with security and cloud concepts
+iconUrl: /learn/achievements/endpoint-manager-fundamentals.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- mem
+modules:
+- learn.intro-to-endpoint-manager
+- learn.protect-endpoints-with-endpoint-manager
+- learn.manage-devices-with-microsoft-endpoint-manager
+- learn.app-management-using-microsoft-endpoint-manager
+- learn.policy-security-management-using-microsoft-endpoint-manager
+- learn.compliance-endpoint-manager
+- learn.benefits-microsoft-endpoint-manager
+trophy:
+  uid: learn.endpoint-manager-fundamentals.trophy
