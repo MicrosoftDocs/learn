@@ -160,7 +160,7 @@ function movingPlayers() {
 
 We can now refresh the local web app in the browser and test the functionality we just built. You should be able to click on up to 5 characters that are on the bench and move them over to the court:
 
-![Demonstrating moving players to the court](../media/move-to-court.png)
+:::image type="content" source="../media/move-to-court.png" alt-text="Screenshot showing moving players to the court.":::
 
 You should test this functionality:
 - Try to add more than 5 players to the court and make sure the alert pops up

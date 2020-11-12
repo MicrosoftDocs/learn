@@ -56,11 +56,11 @@ It's finally time! The app is complete! We can now test our app. Remmeber, you w
 3. Adjust (or not) the players on the court vs taking a break
 4. Press the "Start Q2" button when your lineup is locked in
 
-![Testing the final web app](../media/final-test-1.png)
+:::image type="content" source="../media/final-test-1.png" alt-text="Screenshot showing the test of the final web app.":::
 
 Repeat steps 3 and 4 this for all 4 quarters and you should get to the end of the game!
 
-![Completing the first game in the web app](../media/final-test-2.png)
+:::image type="content" source="../media/final-test-2.png" alt-text="Screenshot showing completing the first game in the web app.":::
 
 Congratulations! You completed the web app!
 
@@ -80,4 +80,4 @@ Once you commit and push your changes (and wait a little while for the GitHub Ac
 
 ![Browse your completed site](../media/browse-site.png)
 
-For example, the one built during creation of this module can be found at [https://aka.ms/LearnWithDrG/SpaceJamWebApp](https://aka.ms/LearnWithDrG/SpaceJamWebApp).
+For example, the one built during creation of this module can be found at [https://aka.ms/LearnWithDrG/SpaceJamWebApp](https://aka.ms/LearnWithDrG/SpaceJamWebApp?azure-portal=true).

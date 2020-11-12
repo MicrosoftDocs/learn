@@ -10,8 +10,9 @@ lt_df = player_df_final.iloc[26: , :]
 lt_df
 ```
 
-**output**
-|  | ID | player | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
+**Output**
+
+|| ID | player | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 26 | 31 | looney_tune1 | 2049.0 | 1434.0 | 110.0 | 64.000000 | 38.800000 | 0.619 | 31.5 | 14.9 | 35.5 | 8.3 | 17.6 | 12.8 | 28.440000 |
 | 27 | 32 | looney_tune2 | 1795.0 | 1481.8 | 112.1 | 62.000000 | 35.400000 | 0.608 | 31.9 | 14.5 | 32.0 | 6.5 | 22.5 | 12.9 | 23.340000 |
@@ -97,8 +98,9 @@ lt_df = pd.merge(lt_df, lt_name_df, on='ID', how='left', suffixes=('_type', '_na
 lt_df.head()
 ```
 
-**output**
-| | ID | player_type | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER | player_name |
+**Output**
+
+|| ID | player_type | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER | player_name |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 0 | 31 | looney_tune1 | 2049.0 | 1434.0 | 110.0 | 64.000000 | 38.800000 | 0.619 | 31.5 | 14.9 | 35.5 | 8.3 | 17.6 | 12.8 | 28.440000 | Sylvester |
 | 1 | 32 | looney_tune2 | 1795.0 | 1481.8 | 112.1 | 62.000000 | 35.400000 | 0.608 | 31.9 | 14.5 | 32.0 | 6.5 | 22.5 | 12.9 | 23.340000 | Marvin the Martian |
@@ -126,7 +128,8 @@ lt_df = lt_df[column_list]
 lt_df.head()
 ```
 
-**output**
+**Output**
+
 | | ID | player_name | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 0 | 31 | Sylvester | 2049.0 | 1434.0 | 110.0 | 64.000000 | 38.800000 | 0.619 | 31.5 | 14.9 | 35.5 | 8.3 | 17.6 | 12.8 | 28.440000 |
@@ -135,4 +138,4 @@ lt_df.head()
 | 3 | 34 | Foghorn Leghorn | 1743.0 | 1422.4 | 112.9 | 64.000000 | 36.300000 | 0.619 | 30.9 | 15.6 | 34.5 | 5.9 | 18.9 | 14.8 | 29.858714 |
 | 4 | 35 | Bugs Bunny | 1963.0 | 1539.1 | 117.4 | 59.972222 | 35.272973 | 0.633 | 32.3 | 16.2 | 34.0 | 5.9 | 19.8 | 13.1 | 27.160000 |
 
-Since the `player_type` column wasn't necessary now that we have the actual names of the players, it was easiest to replace the column witht he `player_name` column, and now we don't have to explicitly drop the `player_type` column!
+Since the `player_type` column wasn't necessary now that we have the actual names of the players, it was easiest to replace the column with the `player_name` column, and now we don't have to explicitly drop the `player_type` column!

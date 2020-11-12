@@ -61,7 +61,7 @@ Click on the Choose File button at the top left of the app and find your `game_s
 >[!NOTE] 
 > If you click on the player buttons, nothing will happen yet because we haven't written the `movingPlayers` function yet.
 
-![First functionality test of web app](../media/first-test.png)
+:::image type="content" source="../media/first-test.png" alt-text="Screenshot showing the tirst functionality test of the web app.":::
 
 ## Add the PER for the first quarter to the app
 

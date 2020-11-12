@@ -27,7 +27,8 @@ game_df = game_df.swaplevel()
 game_df
 ```
 
-**output**
+**Output**
+
 | minutes | player_name | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
 |---|---|---|---|---|---|---|---|---|---|			
 | 0 | Sylvester | 0.617897 | 31.998307 | 16.008589 | 39.097789 | 6.413572 | 15.286788 | 12.792845 | 31.761414 |

@@ -1,6 +1,7 @@
 In earlier units, we created a CSV file `game_stats.csv` that contains a row of stats for each of the 16 players across four time periods within one game. Now it's time to read in the PER for each player for each quarter so that we can use that information to make decisions about which players might need a water break.
 
-**NOTE:** The GitHub repo that you cloned contains an example `game_stats.csv` file, but if you want to replace it with the one you made, simply copy and paste it into the `space-jam-app` repository folder and replace the one that is there.
+>[!NOTE]
+>The GitHub repo that you cloned contains an example `game_stats.csv` file, but if you want to replace it with the one you made, simply copy and paste it into the `space-jam-app` repository folder and replace the one that is there.
 
 ## Read the game_stats data into a JavaScript variable
 

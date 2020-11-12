@@ -1,8 +1,8 @@
-In [Space Jam: A New Legacy](https://spacejam.com) we know that the Looney Tunes are coming back in full force with their incredible basketball skills and unique cartoon powers to have fun on the court. Coach Daffy has been preparing to lead the team to victory against any opponent, but he doesn't have a ton of experience coaching a basketball team, so we're going to build a simple app to help him out. 
+In [Space Jam: A New Legacy](https://spacejam.com?azure-portal=true) we know that the Looney Tunes are coming back in full force with their incredible basketball skills and unique cartoon powers to have fun on the court. Coach Daffy has been preparing to lead the team to victory against any opponent, but he doesn't have a ton of experience coaching a basketball team, so we're going to build a simple app to help him out. 
 
-Before jumping into the module, be sure to make sure your environment is setup and ready to go. For this module, you will need Visual Studio Code, with the [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) and [Azure Static Web App](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps) extensions installed. You will also need an [Azure account](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/) and a [GitHub account](https://docs.microsoft.com/en-us/learn/modules/introduction-to-github/). 
+Before jumping into the module, be sure to make sure your environment is setup and ready to go. For this module, you will need Visual Studio Code, with the [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python?azure-portal=true) and [Azure Static Web App](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps?azure-portal=true) extensions installed. You will also need an [Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account?azure-portal=true) and a [GitHub account](https://docs.microsoft.com/learn/modules/introduction-to-github?azure-portal=true). 
 
-If you haven't yet installed Visual Studio Code, you can find guides on the [Visual Studio Code Learn to Code site](https://aka.ms/LearnOnVSCode). Here, you can also find a Coding Pack for Python for Windows that will install everything you need for this module. If you're not on Windows, you can find a guide for seeting up your environment on the [Data Science in Visual Studio Code docs page](https://code.visualstudio.com/docs/python/data-science-tutorial).
+If you haven't yet installed Visual Studio Code, you can find guides on the [Visual Studio Code Learn to Code site](https://aka.ms/LearnOnVSCode?azure-portal=true). Here, you can also find a Coding Pack for Python for Windows that will install everything you need for this module. If you're not on Windows, you can find a guide for seeting up your environment on the [Data Science in Visual Studio Code docs page](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true).
 
 ## Setting up Visual Studio Code with a new Jupyter file
 
@@ -27,9 +27,9 @@ Make sure the file opens into a notebook and that the Jupyter server is connecte
 
 ## Downloading data with basketball stats and Looney Tunes character names
 
-Next, you will need some data. You might already have this data from the previous Space Jam inspired module, but if you don't, you can download a clean copy from [player_data_final.csv on GitHub](https://aka.ms/LearnWithDrG/SpaceJam/Data2) and downloading the CSV file. Make sure you save the data in a file called player_data_final.csv and save it in the space-jam folder you just created. 
+Next, you will need some data. You might already have this data from the previous Space Jam inspired module, but if you don't, you can download a clean copy from [player_data_final.csv on GitHub](https://aka.ms/LearnWithDrG/SpaceJam/Data2?azure-portal=true) and downloading the CSV file. Make sure you save the data in a file called player_data_final.csv and save it in the space-jam folder you just created. 
 
-Then, you will need the Looney Tunes character names, which is stored in [looney_tunes.csv on GitHub](https://aka.ms/LearnWithDrG/SpaceJam/Data3). Make sure you save the data in a file called looney_tunes.csv and save it in the space-jam folder you just created. 
+Then, you will need the Looney Tunes character names, which is stored in [looney_tunes.csv on GitHub](https://aka.ms/LearnWithDrG/SpaceJam/Data3?azure-portal=true). Make sure you save the data in a file called looney_tunes.csv and save it in the space-jam folder you just created. 
 
 Visual Studio Code should show you this data if you click on the CSV file. 
 

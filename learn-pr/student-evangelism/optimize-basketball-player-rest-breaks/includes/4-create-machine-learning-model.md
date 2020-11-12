@@ -60,7 +60,7 @@ X = player_df_final.iloc[:, 7:-1].to_numpy()
 y = player_df_final.iloc[:, -1]
 ```
 
-Next, we need to train/fit the machine learning model. We're leveraging scikit-learn's LinearRegression library, which is a pre-written linear regression machine learning model that will automatically learn how to predict `y` given `X`. For more information on how this works, you can check out the [Developer's Intro to Data Science video series](https://www.youtube.com/playlist?list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE) and other [Microsoft Learn modules on Data Science](https://www.aka.ms/DevIntroDS_Learn).
+Next, we need to train/fit the machine learning model. We're leveraging scikit-learn's LinearRegression library, which is a pre-written linear regression machine learning model that will automatically learn how to predict `y` given `X`. For more information on how this works, you can check out the [Developer's Intro to Data Science video series](https://www.youtube.com/playlist?list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE?azure-portal=true) and other [Microsoft Learn modules on Data Science](https://www.aka.ms/DevIntroDS_Learn?azure-portal=true).
 
 ```python
 # Define and fit the model.

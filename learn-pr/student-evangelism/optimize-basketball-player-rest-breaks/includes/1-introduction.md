@@ -1,6 +1,6 @@
 ![Space Jam: A New Legacy Logo](../media/logo-screenshot.png)
 
-[Space Jam: A New Legacy](https://spacejam.com/) is a film about basketball and coding. [Official synopsis to be put here].
+[Space Jam: A New Legacy](https://spacejam.com?azure-portal=true) is a film about basketball and coding. [Official synopsis to be put here].
 
 Inspired by the film, this module explores how data can play a big role during athletic games, specifically basketball. If you're a sports fan, you know that the coaches are doing more than watching what is happening in the moment of each game. They are using what they know about their team and players, and what they know about the other team and players, AND what is happening larger within the season, to make every decision as the game goes on. 
 
@@ -10,7 +10,7 @@ Furthermore, we can start to experiement with how data can help inform a more no
 
 Through this module, you will use the data that was cleansed and manipulated as part of the previous module in this Space Jam: A New Legacy inspired learning path to create an app for the Looney Tunes' coach to use during an All Looney Tunes game. This app will help the coach determine which player should sit out for a short water break. Your goal: To optimize the chances of the Looney Tunes winning their game!
 
-This module is part of a multi-modal approach to learning, which means that you can also follow along with a video tutorial on the [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG/SpaceJam).
+This module is part of a multi-modal approach to learning, which means that you can also follow along with a video tutorial on the [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG/SpaceJam?azure-portal=true).
 
 ## Learning objectives
 
@@ -26,9 +26,9 @@ In this module, you will begin to discover:
 
 ## Prerequisites
 
-- [Visual Studio Code, with the Python Extension](https://aka.ms/LearnOnVSCode)
-- [Azure Static Web Apps extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps)
-- [CodeTour extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour)
-- A local Python environment set up, as seen in [Discover the role of Python in space exploration](https://docs.microsoft.com/en-us/learn/paths/introduction-python-space-exploration-nasa/)
-- An [Azure account](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/)
-- A [GitHub account](https://docs.microsoft.com/en-us/learn/modules/introduction-to-github/)
+- [Visual Studio Code, with the Python Extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
+- [Azure Static Web Apps extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps?azure-portal=true)
+- [CodeTour extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour?azure-portal=true)
+- A local Python environment set up, as seen in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa?azure-portal=true)
+- An [Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account?azure-portal=true)
+- A [GitHub account](https://docs.microsoft.com/learn/modules/introduction-to-github?azure-portal=true)

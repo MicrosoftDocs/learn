@@ -14,7 +14,7 @@ Using CodeTour is super easy, in fact, it's already setup in the repo that you c
 
 Open the CodeTour extension in your Explorer in Visual Studio Code and you should see X tours. Each tour has a few steps in it to guide you through your code writing.
 
-![Initial CodeTour in the Explorer of Visual Studio Code](../media/initial-code-tour.png)
+![Initial CodeTour in the Explorer of Visual Studio Code](../media/initial-codetour.png)
 
 To get started with CodeTour, click on the green arrow for the first Tour called `readStatData`. When you do this, a step should pop up on line 19 of your `main.js` file, even if you didn't have it open. Follow the instructions in the step, and then click on the "Next" button at the bottom of the window to go on to the next step.
 
