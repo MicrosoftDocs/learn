@@ -53,11 +53,11 @@ A *Controller* is a public class with one or more public methods known as *actio
     This class derives from `ControllerBase`, the base class for an MVC controller without web UI support. The following attributes define its behavior:
 
     * `[Route]` defines the routing pattern `[controller]`. The `[controller]` token is replaced by the controller's name (case-insensitive, without the *:::no-loc text="Controller":::* suffix), so requests to `https://localhost:5001/products` are handled by this controller.
-    * `[ApiController]` adds behaviors that make it easier to build web APIs. Some behaviors include [parameter source inference](https://docs.microsoft.com/aspnet/core/web-api/#binding-source-parameter-inference), [attribute routing as a requirement](https://docs.microsoft.com/aspnet/core/web-api/#attribute-routing-requirement), and [model validation error handling enhancements](https://docs.microsoft.com/aspnet/core/web-api/#automatic-http-400-responses).
+    * `[ApiController]` adds behaviors that make it easier to build web APIs. Some behaviors include [parameter source inference](/aspnet/core/web-api/#binding-source-parameter-inference), [attribute routing as a requirement](/aspnet/core/web-api/#attribute-routing-requirement), and [model validation error handling enhancements](/aspnet/core/web-api/#automatic-http-400-responses).
 
     Within the class definition:
 
-    * [Constructor injection](https://docs.microsoft.com/aspnet/core/mvc/controllers/dependency-injection#constructor-injection) provides an instance of `ContosoPetsContext` to the controller.
+    * [Constructor injection](/aspnet/core/mvc/controllers/dependency-injection#constructor-injection) provides an instance of `ContosoPetsContext` to the controller.
     * An HTTP GET action named `GetAll` is created for retrieving all products.
 
     > [!NOTE]

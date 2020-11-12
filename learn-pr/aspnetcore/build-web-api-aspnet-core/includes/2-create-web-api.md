@@ -24,7 +24,7 @@ The preceding command installs a specific version of the .NET SDK in the Azure C
     dotnet new webapi -o aspnet-learn/src/ContosoPets.Api
     ```
 
-    The preceding command uses an ASP.NET Core project template, aliased as *:::no-loc text="webapi":::*, to scaffold a C#-based starter web API project. The *:::no-loc text="aspnet-learn/src/ContosoPets.Api":::* directory structure is created, which contains an ASP.NET Core project targeting .NET. The project name matches the *:::no-loc text="ContosoPets.Api":::* directory name. The `--no-https` option specifies that HTTP requests shouldn't be forcibly redirected to HTTPS. This option eases testing of the API in the Cloud Shell.
+    The preceding command uses an ASP.NET Core project template, aliased as *:::no-loc text="webapi":::*, to scaffold a C#-based starter web API project. The *:::no-loc text="aspnet-learn/src/ContosoPets.Api":::* directory structure is created, which contains an ASP.NET Core project running on .NET. The project name matches the *:::no-loc text="ContosoPets.Api":::* directory name.
 
 1. Run the following command in the command shell:
 
@@ -40,7 +40,7 @@ The preceding command installs a specific version of the .NET SDK in the Azure C
     code .
     ```
 
-    The *:::no-loc text="ContosoPets.Api":::* project directory opens in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor).
+    The *:::no-loc text="ContosoPets.Api":::* project directory opens in the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor).
 
 1. Examine the following files and directories:
 
