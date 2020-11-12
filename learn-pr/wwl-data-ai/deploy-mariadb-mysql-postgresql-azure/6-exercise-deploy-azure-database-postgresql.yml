@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-mariadb-mysql-postgresql-azure.6-exercise-deploy-azure-database-postgresql
-title: Exercise - Deploy a PostgreSQL database server to Azure
+title: 'Exercise: Deploy a PostgreSQL database server to Azure'
 metadata:
-  title: Exercise - Deploy a PostgreSQL database server to Azure
-  description: "Exercise - Deploy a PostgreSQL database server to Azure"
-  ms.date: 11/05/2020
+  title: 'Exercise: Deploy a PostgreSQL database server to Azure'
+  description: "Exercise: Deploy a PostgreSQL database server to Azure"
+  ms.date: 11/12/2020
   author: wwlpublish
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
