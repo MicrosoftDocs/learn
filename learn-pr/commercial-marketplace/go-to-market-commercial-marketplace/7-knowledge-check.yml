@@ -18,9 +18,9 @@ quiz:
     - content: 'The online stores, Microsoft AppSource and Azure Marketplace.'
       isCorrect: false
       explanation: 'The online stores let customers find, try, buy, and deploy software and services on their own, directly from the online stores and in-product experiences.'
-    - content: 'The Co-sell program'
+    - content: 'In-product experiences in Dynamics 365, Microsoft 365, the Power Platform, and Azure.'
       isCorrect: false
-      explanation: 'If your offer qualifies, the Co-sell program lets you collaborate directly with Microsoft salespeople on joint selling opportunities through the commercial marketplace.'
+      explanation: 'The commercial marketplace in-product experiences expose your '
     - content: 'The Cloud Solution Provider (CSP) program'
       isCorrect: true
       explanation: 'Correct! The CSP program lets you reach millions of additional Microsoft customers through a network of resellers in the program.'
@@ -52,9 +52,9 @@ quiz:
     - content: 'Marketplace Rewards benefits are differentiated by the type of offer I publish. When I publish a transact offer and sell it through Microsoft, I will unlock more advanced benefits.'
       isCorrect: true
       explanation: 'Correct! Marketplace Rewards benefits are differentiated by the listing option you choose when you publish your offer in Partner Center. The benefits are also tiered, which means I unlock more advanced benefits when my offer hits certain sales milestones.'
-    - content: 'Marketplace Rewards benefits are designed to help with marketing and sales activities.'
+    - content: 'Marketplace Rewards benefits are designed to help with technical activities.'
       isCorrect: false
-      explanation: 'Marketplace Rewards benefits are designed to help your organization with marketing, sales, and technical activities that help you grow your sales from the commercial marketplace.'
+      explanation: 'While Marketplace Rewards includes benefits that will help with technical activities, they also include marketing and sales benefits that help drive business growth.'
   - content: 'In order to get customer leads from my commercial marketplace listing, I need to...'
     choices:
     - content: 'Purchase a subscription to Microsoft Dynamics 365 for Customer Engagement.'

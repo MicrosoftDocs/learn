@@ -27,7 +27,7 @@ For detailed instructions on configuring your lead management connection in Part
 
 As you get ready to engage your customers through the commercial marketplace, consider how you’re going to process, qualify, and nurture the leads you get from your listing. Let’s look at some recommendations to help drive leads through your organization's sales cycle:
 
-**Process**: Your commercial marketplace plan should include a clearly defined lead management framework. A clear structure, including milestones, analytics, and team ownership will put you in a better position to convert leads to paying customers.
+**Process**: Your commercial marketplace plan should include well-defined lead management framework. A clear structure, including milestones, analytics, and team ownership will put you in a better position to convert leads to paying customers.
 
 **Qualify**: Before you start getting leads from Microsoft, make sure your lead qualification process is adapted for your commercial marketplace leads. This means training your sales and marketing representatives to interpret incoming marketplace leads so that you’re following up with different types of leads in the best way. Marketplace leads contain valuable information about the ways that potential customers interacted with your solution in the marketplace. This information is typically found in the “LeadSource” field in lead data you’ll receive from Microsoft.
 

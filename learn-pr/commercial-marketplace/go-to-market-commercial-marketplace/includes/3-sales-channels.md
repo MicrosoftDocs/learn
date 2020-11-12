@@ -22,7 +22,7 @@ Customers will also be able to find your software in Microsoft products includin
 
 #### Cloud Solution Providers
 
-When you publish your solution in Partner Center, you’ll be given the opportunity to opt-in to the Cloud Solution Provider (CSP) program, which lets you sell your solution through thousands of Microsoft resellers. You’ll have a few options if you choose to opt in. You can choose to make your product available to:
+When you publish your solution in Partner Center, you’ll be given the opportunity to opt-in to re-sell your solution through the Cloud Solution Provider (CSP) program. You’ll have a few options if you choose to opt in. You can choose to make your product available to:
 
 - Any partner in the CSP program
 - Specific partners in the CSP program you select
@@ -33,7 +33,7 @@ During the publishing process, you’ll be asked to share specialized materials 
 You get to decide the types of information that's included for CSP partners. As you create and host these materials, consider the following:
 
 - Include information that's helpful for a seller, but that you wouldn’t share directly with a customer. This will help resellers represent your product to their customers.
-- Consider building a specialized web page built for CSP partners. This will simplify the process of providing resources that resellers can use to answer questions they might have about your product or service.
+- Consider building a specialized web page for CSP partners. This will simplify the process of providing resources that resellers can use to answer questions they might have about your product or service.
 
 In addition to the specialized CSP materials, you’ll also be asked to list a CSP program point of contact from your organization. Make sure that this person is ready to engage with resellers that might have questions about the solutions you’ve opted into the program.
 

@@ -2,7 +2,7 @@ Organizations around the world are changing the way that they purchase the softw
 
 E-commerce enables self-service. It lets customers choose from a wider range of products and services from providers around the world. E-commerce also helps customers make better purchasing decisions with easy access to product information that they can use to compare benefits and prices for competing products. Overall, e-commerce helps customers shop more efficiently and make decisions at their own pace.
 
-The Microsoft commercial marketplace addresses these trends, making it possible for your customers to easily find, try, and buy your software and services in a way that makes sense for their business. By listing your products and services in the commercial marketplace, you can position your organization to take advantage of the changing customer purchasing preferences.
+The Microsoft commercial marketplace addresses these trends, making it possible for your customers to easily find, try, and buy your software and services. By listing your products and services in the commercial marketplace, you can position your organization to take advantage of the changing customer purchasing preferences.
 
 In this module, we’ll explore some key go-to-market concepts you’ll want to consider as you position your organization for success in the commercial marketplace. “Success” in the commercial marketplace is different for every organization, but common commercial marketplace objectives include:
 
