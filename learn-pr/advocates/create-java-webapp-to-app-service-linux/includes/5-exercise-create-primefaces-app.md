@@ -1,22 +1,22 @@
-You'll been tasked to create a Java Server Faces `Todo` application that can add new tasks, see the lists of all tasks and mark the task as finished.
+You've been asked to create a Java Server Faces `Todo` application that can add new tasks, see the lists of all tasks, and mark the task as finished.
 In this exercise, you'll build this web application and deploy it to Azure App Services.
 
 :::image type="content" source="../media/primefaces-todo-list.png" alt-text="My ToDo List App":::
 
 ## Exercise Create Todo web app with PrimeFaces
 
-In order to create a Todo Web Application, we'll create the `PrimeFaces Web Page` in XHTML file. After that, we'll create the `DataModel class`. In the DataModel class, we'll define `id`, `category`, `name` and `complete` field. All our Todo items will have these attributes. Then we'll create a `DAO class` which is used to store the data of Todo Items and update Items. Finally we'll create the `Controller class` which is used as a Backing Bean for our PrimeFaces Web Page. In this class, we will implement the binding field of the PrimeFaces web page and
+Next we'll create the PrimeFaces Web Page in an XHTML file. After that, we'll create the `DataModel` class. In the DataModel class, we'll define `id`, `category`, `name`, and `complete` field. All our Todo items will have these attributes. Then we'll create a `DAO` class, which is used to store the data of Todo Items and update Items. Finally we'll create the `Controller` class, which is used as a Backing Bean for our PrimeFaces Web Page. In this class, we'll implement the binding field of the PrimeFaces web page and
 also implement the operation when a user pushes its button.
 
 ### Creating a JSF Web Page
 
-Copy and paste the code below into the index.xhtml file to create a View for your Todo application.
+Copy and paste the code below into the index.xhtml file to create a view for your Todo application.
 
-This View uses the components of `p:layout`,`p:layoutUnit`, `p:outputLabel`,`p:inputText`, `p:commandButton`, and `p:dataTable` explained in the previous section.
+This view uses the components of `p:layout`,`p:layoutUnit`, `p:outputLabel`,`p:inputText`, `p:commandButton`, and `p:dataTable` explained in the previous section.
 
-This page support the Ajax, and when the button of `Add Task` is pressed, `p:dataTable id="itemTables"` of DataTable, which is the reference by `update ="itemTables"` of `p:commandButton`, will be updated.
+This page supports `Ajax`, so when the button `Add Task` is pressed, we'll dynamically add the task to our `p:dataTable` field (This dynamic binding is because we bind the action of `update="itemTables"` to `p:commandButton`)
 
-We have also added a new attribute to the DataTable, `selection ="#{todocontroller.selectedItems}"`. This allows you to select items in the table with checkboxes, and you can complete the task by selecting the checkbox and pressing the `Update Task` button.
+We also add a new attribute to the DataTable, `selection ="#{todocontroller.selectedItems}"`. You can now select items in your table using checkboxes, and complete a task by selecting the checkbox and pressing the `Update Task` button.
 
    ```xml
 <!DOCTYPE html>
@@ -91,14 +91,14 @@ We have also added a new attribute to the DataTable, `selection ="#{todocontroll
 
 ### Create DataModel Class
 
-First, we will implement the data model classes in the `com.microsoft.azure.samples.model` package.
-Execute the following command to create a directory for the package.
+First, we'll implement the data model classes in the `com.microsoft.azure.samples.model` package.
+Execute the following command to create a directory for the package:
 
 ```bash
 mkdir src/main/java/com/microsoft/azure/samples/model
 ```
 
-Then create a `TodoItem.java` file inside the `com.microsoft.azure.samples.model` package directory and copy and paste the code below.
+Then create a `TodoItem.java` file inside the `com.microsoft.azure.samples.model` package directory and copy and paste the code below:
 
    ```java
 package com.microsoft.azure.samples.model;
@@ -140,7 +140,7 @@ public class TodoItem implements Serializable {
 
 ### Create DAO Class
 
-Then we implement the class for Data Access in the `com.microsoft.azure.samples.dao` package.
+We'll create a class for Data Access in the `com.microsoft.azure.samples.dao` package.
 Execute the following command to create a directory for the package.
 
 ```bash
@@ -149,9 +149,9 @@ mkdir src/main/java/com/microsoft/azure/samples/dao
 
 Next, create a `TodoItemManagement.java` file inside the `com.microsoft.azure.samples.dao` package directory and copy and paste the code below.
 
-Normally, we will store, updates and retrieve the data from DataBase, in-memory grids, document databases, and so on. However, in this time, in order to implement the application as easily as possible, it is completed in the program without external reference, so we will implement it in Java List.
+In a production environment, you use a Database, in-memory grids, and document databases to store data. In the next section, we'll use a List to simulate a database.
 
-This class is annotated with `@ApplicationScoped`. Since the scope is valid for the entire Application, the data of `todoItems` handled here will be available from the start to the end of the application.
+Our class will be annotated with `@ApplicationScoped`. This annotation allows the data of `todoItems` to be available from the start to the end of our application's lifecycle.
 
 ```java
 package com.microsoft.azure.samples.dao;
@@ -201,7 +201,7 @@ public class TodoItemManagement {
 
 ### Create Controller Class
 
-Finally, we will implement the class for the controller in the `com.microsoft.azure.samples.controller` package.
+Finally, we'll implement the class for the controller in the `com.microsoft.azure.samples.controller` package.
 Execute the following command to create a directory for the package.
 
 ```bash
@@ -210,12 +210,12 @@ mkdir src/main/java/com/microsoft/azure/samples/controller
 
 Next, create a `TodoListController.java` file inside the `com.microsoft.azure.samples.controller` package directory and copy and paste the code below.
 
-The annotations `@ViewScoped` and `@Named` are added to this class. `@ViewScoped` is useful for creating SPA web pages with a scope that is valid until the screen is reloaded or screen transitions occur. Also, by adding the `@Named` annotation, you can refer to this class from Facelets (XHTML) using EL expressions.
+The annotations `@ViewScoped` and `@Named` are added to this class. `@ViewScoped` is useful for creating Single Page Application web pages with a scope that is valid until the screen is reloaded or a screen transition occur. Also, by adding the `@Named` annotation, you can refer to this class from Facelets (XHTML) using EL expressions.
 
-In the implementation, we use `@Inject` to inject an instance of `TodoItemManagement`. And it is used to add the data (`buttonAddAction()`), refer the data(`getTodoItems()`), and update the data (`buttonUpdateAction()`). Each methods for DAO is implemented in the `TodoItemManagement` class.
+In the implementation, we use `@Inject` to inject an instance of `TodoItemManagement`. And it's used to add the data (`buttonAddAction()`), refer the data(`getTodoItems()`), and update the data (`buttonUpdateAction()`). We'll also be implementing each method in the `TodoItemManagement` class.
 
 We also added the `selectedItem` and `selectedItems` fields to allow each row in the table to be selected, and the `onRowSelect(SelectEvent<TodoItem> event)` and `onRowUnselect(UnselectEvent <TodoItem> event)` methods.
-Each method can act on the event when the table is selected or not selected. No particular processing is performed in this implementation, but if this method is not defined, a compile error will occur, so be sure to implement these two methods.
+Each method can act on the event when the table is selected or not selected. Even though no processing is done on selection, if this method isn't defined, a compile error will occur.
 
 ```java
 package com.microsoft.azure.controller;
@@ -284,8 +284,7 @@ public class TodoListController implements Serializable {
 
 ### Compile and Package the Java Project
 
-If you completes the implementation of the program above.
-You can compile the program. And execute the following command.
+Once you complete the above programs, compile the program and execute the following command:
 
 ```bash
 mvn clean package
@@ -293,7 +292,7 @@ mvn clean package
 
 ### Run in local Tomcat environment
 
-This is optional excercise. If you already installed the Apache Tomcat in your local environment. You will be able to This is optional excercise. If you already installed the Apache Tomcat in your local environment. You will be able to proceed to the following step. If you don't have the local environment, please proceed to the Next section.
+This step is optional if you have installed Tomcat in your local environment. If you don't have the local environment, continue to the Next section.
 
 #### Copy the artifact to the Deployment Directory on Tomcat
 
@@ -307,7 +306,7 @@ cp target/azure-javaweb-app.war /$INSTALL_DIR/apache-tomcat-9.0.39/webapps/
 $INSTALL_DIR/apache-tomcat-9.0.39/bin/startup.sh
 ```
 
-After running Tomcat, access `http://localhost:8080/azure-javaweb-app/` and you will see the screen below.
+After running Tomcat, access `http://localhost:8080/azure-javaweb-app/` and you'll see the screen below.
 Use the `Add Task` button to add a task, or use the `Update Task` to update the task.
 
 :::image type="content" source="../media/primefaces-todo-list.png" alt-text="My ToDo List App Done":::
