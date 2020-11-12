@@ -3383,6 +3383,9 @@
     {
       "source_path": "learn-pr/aspnetcore/build-web-api-net-core/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-aspnet-core/8-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/explore-microsoft-azure-cloud-concepts/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
       "redirect_document_id": true
