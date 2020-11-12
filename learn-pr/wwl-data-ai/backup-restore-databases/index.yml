@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.backup-restore-databases
 metadata:
-  title: Backup and restore databases
-  description: "Plan and implement policy for recovering data in case of user error or failure of technology. Explore various options for how and where to backup and restore databases."
-  ms.date: 10/28/2020
+  title: Back up and restore databases
+  description: "Back up and restore databases"
+  ms.date: 11/12/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial

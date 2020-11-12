@@ -1,13 +1,23 @@
 As a DBA within AdventureWorks, you need to back up a database to a URL in Azure and restore it after a human error has
 occurred.
 
+## Connect to the lab environment
+
+1. When the VM lab environment opens, use the password on the **Resources** tab above for the **Student** account to sign in to Windows.
+
+1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/). This should be the home page of the browser.
+
+1. The username and password information to sign into the Azure portal are in the  **Resources** tab above these instructions. If you select the **Username** it will be filled in for you.
+
+1. Select **Next**.
+
+1. Select the **Password** text in the **Resources** tab to have that filled in for you, then select **Sign in**.
+
+1. Select **Yes**.
+
+1. On the **Welcome to Azure** popup, select **Maybe later**.
+
 ## Configure Backup to URL
-
-1. When the VM lab environment opens select the Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/).
-
-1. The username and password information to sign into the Azure Portal are in the  **Resources** tab above these instructions. If you select the **Username** the environment will type the text for you.
-
-1. Repeat this for the password field.
 
 1.	Open a Cloud Shell prompt by selecting the icon shown below in the upper right corner.
 
