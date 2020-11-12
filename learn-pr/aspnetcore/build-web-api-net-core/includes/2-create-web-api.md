@@ -74,7 +74,7 @@ The preceding command installs a specific version of the .NET SDK in the Azure C
     > [!IMPORTANT]
     > Check *:::no-loc text="ContosoPets.Api.log":::* if you encounter any unexpected behavior. If the build fails or other errors occur, the log file's information helps troubleshoot. If you make code changes, run `kill $(pidof dotnet)` to stop all .NET apps before attempting to run again.
 
-1. Install the HTTP **R**ead-**E**val-**P**rint **L**oop (REPL) .NET Global Tool:
+1. Install the HttpRepl .NET Global Tool:
 
     ```bash
     dotnet tool install -g microsoft.dotnet-httprepl \
