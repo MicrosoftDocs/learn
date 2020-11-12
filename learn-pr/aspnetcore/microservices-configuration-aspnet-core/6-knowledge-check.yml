@@ -30,10 +30,10 @@ quiz:
           explanation: "Azure App Configuration is a centralized configuration service useful in microservices apps. In an ASP.NET Core app, Azure App Configuration is registered as another configuration provider."
     - content: In ASP.NET Core Razor Pages, `<Feature>` Tag Helper is included by default. True or False?
       choices:
-        - content: True
+        - content: "True"
           isCorrect: false
           explanation: "`<Feature>` Tag Helper are part of the `Microsoft.FeatureManagement.AspNetCore` NuGet package."
-        - content: False
+        - content: "False"
           isCorrect: true
           explanation: "`<Feature>` Tag Helper are part of the `Microsoft.FeatureManagement.AspNetCore` NuGet package."
     - content: Which of the following statements is **NOT** true about Azure App Configuration?
