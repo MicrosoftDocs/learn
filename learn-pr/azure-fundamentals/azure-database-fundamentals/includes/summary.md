@@ -9,15 +9,15 @@ In addition, you saw how Azure Cosmos DB works with a variety of popular APIs, i
 - [Azure Analytics Services](https://azure.microsoft.com/product-categories/analytics/?azure-portal=true)
 - [Azure Cosmos DB documentation](https://docs.microsoft.com/azure/cosmos-db/?azure-portal=true)
 - [Azure SQL Database documentation](https://docs.microsoft.com/azure/sql-database/?azure-portal=true)
-- [Azure SQL Managed Instance documentation](https://docs.microsoft.com/en-us/azure/azure-sql/managed-instance/?azure-portal=true)
+- [Azure SQL Managed Instance documentation](https://docs.microsoft.com/azure/azure-sql/managed-instance/?azure-portal=true)
 - [Azure Database for MySQL documentation](https://docs.microsoft.com/azure/mysql/?azure-portal=true)
 - [Azure Database for PostgreSQL documentation](https://docs.microsoft.com/azure/postgresql/?azure-portal=true)
 
 ### Migrating database workloads to Azure
 
-- [Migrate SQL workloads to Azure](https://docs.microsoft.com/en-us/learn/paths/migrate-sql-workloads-azure/?azure-portal=true)
-- [Migrate SQL Workloads to Azure SQL Databases](https://docs.microsoft.com/en-us/learn/modules/migrate-sql-workloads-azure-sql-databases/?azure-portal=true)
-- [Migrate SQL Workloads to Azure Managed Instances](https://docs.microsoft.com/en-us/learn/modules/migrate-sql-workloads-azure-managed-instances/?azure-portal=true)
+- [Migrate SQL workloads to Azure](https://docs.microsoft.com/learn/paths/migrate-sql-workloads-azure/?azure-portal=true)
+- [Migrate SQL Workloads to Azure SQL Databases](https://docs.microsoft.com/learn/modules/migrate-sql-workloads-azure-sql-databases/?azure-portal=true)
+- [Migrate SQL Workloads to Azure Managed Instances](https://docs.microsoft.com/learn/modules/migrate-sql-workloads-azure-managed-instances/?azure-portal=true)
 - [Migrate on-premises MySQL databases to Azure Database for MySQL](https://docs.microsoft.com/learn/modules/migrate-on-premises-mysql-databases/?azure-portal=true)
 
 ### Working with Azure databases
