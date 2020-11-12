@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.survey-components-of-azure-synapse-analytics.explain-apache-spark-snalytics
-title: Explain apache spark in azure synapse snalytics
+title: Explain Apache Spark in Azure Synapse Analytics
 metadata:
-  title: Explain apache spark in azure synapse snalytics
-  description: "Explain apache spark in azure synapse snalytics"
-  ms.date: 11/11/2020
+  title: Explain Apache Spark in Azure Synapse Analytics
+  description: "Explain Apache Spark in Azure Synapse Analytics"
+  ms.date: 11/12/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial

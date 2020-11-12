@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.survey-components-of-azure-synapse-analytics.describe-sql
-title: Describe azure synapse sql
+title: Describe Azure Synapse Analytics SQL
 metadata:
-  title: Describe azure synapse sql
-  description: "Describe azure synapse sql"
-  ms.date: 11/11/2020
+  title: Describe Azure Synapse Analytics SQL
+  description: "Describe Azure Synapse Analytics SQL"
+  ms.date: 11/12/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
