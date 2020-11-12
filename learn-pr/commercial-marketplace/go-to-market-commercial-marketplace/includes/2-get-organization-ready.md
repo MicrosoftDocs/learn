@@ -38,7 +38,7 @@ Each of these benefits is an opportunity for your sales professionals to increas
 - Use private offers to negotiate pricing and custom agreements to facilitate large-scale deals through the commercial marketplace
 
 > [!Note]
-For more information on commercial marketplace customer benefits for MACC, reference the **[documentation on the Azure consumption commitment benefit](https://docs.microsoft.com/azure/marketplace/azure-consumption-commitment-benefit)**.
+>For more information on commercial marketplace customer benefits for MACC, reference the **[documentation on the Azure consumption commitment benefit](https://docs.microsoft.com/azure/marketplace/azure-consumption-commitment-benefit)**.
 
 Your sales and finance leaders will also need to make sure sales compensation plans account for deals closed through the commercial marketplace. If you want your sellers to prioritize leads received through Microsoft, you should make sure they’re compensated for sales through the commercial marketplace.
 
