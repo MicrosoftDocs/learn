@@ -3383,6 +3383,453 @@
     {
       "source_path": "learn-pr/aspnetcore/build-web-api-net-core/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-aspnet-core/8-summary",
+      "source_path": "learn-pr/paths/explore-microsoft-azure-cloud-concepts/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/distinguish-microsoft-azure-core-services/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/examine-microsoft-azure-security-privacy-compliance-trust/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/review-microsoft-azure-pricing-slas-lifecycles/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-with-azure-fundamentals/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-with-azure-fundamentals/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-with-azure-fundamentals/2-explore-exam-study-areas.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-with-azure-fundamentals/3-create-azure-account.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-with-azure-fundamentals/4-exercise-create-free-azure-account.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-with-azure-fundamentals/5-case-study-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-with-azure-fundamentals/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-with-azure-fundamentals/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-why-cloud-services/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-why-cloud-services/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-why-cloud-services/2-define-cloud-compute.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-why-cloud-services/3-try-exercise.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-why-cloud-services/4-explore-key-cloud-concepts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-why-cloud-services/5-discuss-economies-scale.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-why-cloud-services/6-compare-capex-opex.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-why-cloud-services/7-define-consumption-based-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-why-cloud-services/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-why-cloud-services/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/distinguish-types-cloud-models/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/distinguish-types-cloud-models/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/distinguish-types-cloud-models/2-define-public-cloud.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/distinguish-types-cloud-models/3-define-private-cloud.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/distinguish-types-cloud-models/4-define-hybrid-cloud.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/distinguish-types-cloud-models/5-compare-cloud-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/distinguish-types-cloud-models/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/distinguish-types-cloud-models/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-types-cloud-services/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-types-cloud-services/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-types-cloud-services/2-discuss-shared-responsibility-model.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-types-cloud-services/3-define-iaas.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-types-cloud-services/4-define-paas.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-types-cloud-services/5-define-saas.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-types-cloud-services/6-compare-cloud-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-types-cloud-services/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-types-cloud-services/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-core-azure-architectural-components/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-core-azure-architectural-components/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-core-azure-architectural-components/2-examine-regions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-core-azure-architectural-components/3-explore-region-pairs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-core-azure-architectural-components/4-define-geographies.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-core-azure-architectural-components/5-determine-availability-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-core-azure-architectural-components/6-define-availability-sets.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-core-azure-architectural-components/7-define-availability-zones.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-core-azure-architectural-components/8-explore-resource-groups.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-core-azure-architectural-components/9-explore-azure-resource-manager.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-core-azure-architectural-components/10-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discuss-core-azure-architectural-components/11-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/define-core-azure-services-products/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/define-core-azure-services-products/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/define-core-azure-services-products/2-define-azure-compute.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/define-core-azure-services-products/3-explore-azure-compute-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/define-core-azure-services-products/4-walkthrough-create-virtual-machine.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/define-core-azure-services-products/5-define-container-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/define-core-azure-services-products/6-walkthrough-deploy-azure-container-instances.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/define-core-azure-services-products/7-explore-azure-network-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/define-core-azure-services-products/8-walkthrough-create-virtual-network.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/define-core-azure-services-products/9-define-azure-data-categories.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/define-core-azure-services-products/10-explore-azure-storage-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/define-core-azure-services-products/11-walkthrough-create-blob-storage.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/define-core-azure-services-products/12-explore-azure-database-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/define-core-azure-services-products/13-walkthrough-create-sql-database.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/define-core-azure-services-products/14-explore-azure-marketplace.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/define-core-azure-services-products/15-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/define-core-azure-services-products/16-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-azure-solutions/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-azure-solutions/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-azure-solutions/2-define-internet-of-things.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-azure-solutions/3-walkthrough-implement-azure-iot-hub.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-azure-solutions/4-explore-big-data-analytics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-azure-solutions/5-explore-artificial-intelligence.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-azure-solutions/6-define-serverless-computing.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-azure-solutions/7-walkthrough-implement-azure-functions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-azure-solutions/8-explore-devops.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-azure-solutions/9-explore-azure-app-service.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-azure-solutions/10-walkthrough-create-web-app.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-azure-solutions/11-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-azure-solutions/12-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/differentiate-azure-management-tools/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/differentiate-azure-management-tools/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/differentiate-azure-management-tools/2-explore-azure-management-tools.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/differentiate-azure-management-tools/3-explore-azure-advisor.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/differentiate-azure-management-tools/4-template.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/differentiate-azure-management-tools/5-powershell.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/differentiate-azure-management-tools/6-command-line-interface.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/differentiate-azure-management-tools/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/differentiate-azure-management-tools/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-core-azure-services/",
       "redirect_document_id": false
     }
   ]
