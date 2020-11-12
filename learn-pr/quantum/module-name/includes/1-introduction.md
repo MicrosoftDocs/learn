@@ -23,6 +23,6 @@ In this module you'll:
 ## Prerequisites
 
 - None for users in the Optimization path.
-- TBD: [Create an Azure account](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/)
-- TBD: The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true) 
-- TBD:[Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
+- TBD to confirm if we can use Sandbox: [Create an Azure account](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/)
+- TBD if users need to download this: The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true) 
+- TBD if users need to download this:[Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
