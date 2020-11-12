@@ -39,7 +39,7 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
 
 6. In the **Result simulation** section, select **Test with current data**, and then observe the results.
 
-  :::image type="content" source="../media/6-Rule-Logic.PNG" alt-text="Screenshot Analytics Rule Logic." border="true":::
+:::image type="content" source="../media/6-rule-logic.png" alt-text="Screenshot Analytics Rule Logic." border="true":::
 
 7. In the  **Map entities**  section, you can define the entities that are returned as part of the query rule and that you can use to perform in-depth analysis.
 8. In the **Query Scheduling** section, you can configure how often the query should run, and how far in history to look back. Accept the default values.
