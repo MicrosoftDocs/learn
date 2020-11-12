@@ -1,23 +1,24 @@
-In this module, we will use the JavaServer Faces(JSF) as View Technology. JSF is a component base framework and it was adopted as standard Java Platform, Enterprise Edition (Java EE) specification since Java EE 5 (2006). Thus it had been widly used in Enterprise Java market. In this section, you will learn the basic concept of JSF.
+In this module, we'll use JavaServer Faces (JSF) as a "View" Technology to learn the basic concept of JSF.
 
 ## What is JavaServer Faces(JSF)
 
-JavaServer Faces (JSF) is a Java Based Web Application Framework. It is one of the technology in Java EE Platform Enterprise Edition (Java EE) specification.
-JSF is Component Based application Framework. The state of the UI component is saved when the client requests a new page and is restored when a response to the request is returned. Initially, JSF used Java Server Pages (JSP) as its screen display technology, but since 2.0, Facelets, which is closer to ordinary HTML, has been used.
+JSF was adopted as a specification in the Java Platform, Enterprise Edition (Java EE) as part of Java EE 5 (2006). Initially, JSF used Java Server Pages (JSP) to render HTML pages. Since version 2.0, Facelets, which is closer to ordinary HTML, has been used.
 
+JSF is a component-based application Framework. Each component's state is saved depending on the client's interaction.
+The state is saved a new page is requested and is restored when returned.
 
 ### JSF Basic Functionality
 
 JSF applications are roughly divided into the following two functions.
 
-- **Facelets** : Facelets is an XHTML-based template engine that describes screen layouts
-- **BakingBean** : Java class that binds to Facelets and sets and processes values
+-**Facelets**: Facelets is an XHTML-based template engine that describes screen layouts
+-**BakingBean**: Java class that binds to Facelets and sets and processes values
 
 `Facelets` is an XHTML-based template engine that describes screen layouts, written by XHTML. XHTML conforms to the Document Type Definition (DTD) defined in W3C and is described as a file with a xhtml extension.
 JSF 2.3 is available for Jakarta EE 8 based applications.
 
-`BackingBean` is a Java class that binds to the parameter of the Facelets and sets and processes values. In order to implement the back end process on the server side, it is necessary to implement Facelets and the corresponding backing bean.  
-Until Java EE 6, it was used to implement the Backing Bean with JSF Managed Bean however it is used to create Backing Beaan with Contexts and Dependency Injection(CDI) since Java EE 7.
+`BackingBean` is a Java Class linked a JSF Page. It contains Action methods, Action Listeners, and Value Change listeners.
+In Java EE 6, Backing Beans were implemented with JSF-Managed Beans. Since Java EE 7, Context and Dependency Injection(CDI) beans are used as an implementation.
 
 ## Create JSF Page with PrimeFaces
 
