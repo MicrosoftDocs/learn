@@ -37,7 +37,7 @@ quiz:
       isCorrect: false
     - content: "Azure Database for PostgreSQL"
       isCorrect: false
-  - content: "Tailwind Traders has millions of log entires that it wants to analyze. Which option would be ideal for analysis?"
+  - content: "Tailwind Traders has millions of log entries that it wants to analyze. Which option would be ideal for analysis?"
     choices:
     - content: "Azure Cosmos DB"
       isCorrect: false

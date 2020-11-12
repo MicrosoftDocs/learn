@@ -9,9 +9,9 @@ Choosing the correct storage solution can lead to better performance, cost savin
 - Customers require a high number of read operations, with the ability to query on many fields within the database.
 - The business requires a high number of write operations to track the constantly changing inventory.
 
-**Latency & throughput:** High throughput and low latency
+**Latency & throughput:** High throughput and low latency.
 
-**Transactional support:** Required
+**Transactional support:** Because all of the data is historical and unchanging, transactional support is NOT REQUIRED. 
 
 ### Recommended service: Azure Cosmos DB
 
@@ -53,7 +53,7 @@ By using Azure Blob storage, you can also move images from the hot storage tier 
 
 ### Why not other Azure services?
 
-You could upload your images to Azure App Service, so that the same server that is running your app is serving up your images. This solution would work if you didn't have many files. But if you have lots of files, and a global audience, you'll get more performant results by using Azure Blob storage with Azure CDN.
+You could upload your images to Azure App Service, so that the same server that is running your app is serving up your images. This solution would work if you didn't have many files. But if you have lots of files, and a global audience, you'll get more performance results by using Azure Blob storage with Azure CDN.
 
 ## Business data
 
