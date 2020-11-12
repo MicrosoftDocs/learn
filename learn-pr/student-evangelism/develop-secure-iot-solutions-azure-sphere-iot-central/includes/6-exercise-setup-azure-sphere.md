@@ -48,9 +48,9 @@ The Git client is required to clone the Learning Path Labs and the Azure Sphere 
 sudo apt install git
 ```
 
-## Recommended Visual Studio Code Extensions
+## Recommended Visual Studio Code Extension
 
-1. Peacock allows you to change the color of your Visual Studio Code workspace. Ideal when you have multiple VS Code instances, use VS Live Share, or use VS Code's Remote features, and you want to quickly identify your editor. The Peacock extension is useful when you have two instances of Visual Studio Code open, one attached to the Azure Sphere High-level core, and the other attached to the Real-time core.
+The Peacock extension allows you to change the color of your Visual Studio Code workspace. The Peacock extension is useful when you have multiple instances of Visual Studio Code open. In one of the exercises an instance of Visual Studio Code will be attached to the Real-time core, and another instance will be attached to the High-level application core.
 
    1. Open Extensions sideBar panel in Visual Studio Code
    1. choose the menu options for View → Extensions
