@@ -9,7 +9,8 @@ Manage data integration pipelines within the Integrate hub.
 
 2.	Expand Pipelines and select **1 Master Pipeline (1)**. Point out the **Activities (2)** that can be added to the pipeline, and show the **pipeline canvas (3)** on the right.
  
-    [![Viewing integration pipelines in Azure Synapse Studio](../media/view-pipelines-synapse-studio.png)](../media/view-pipelines-synapse-studio.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Viewing integration pipelines in Azure Synapse Studio](../media/view-pipelines-synapse-studio.png)](../media/view-pipelines-synapse-studio.png#lightbox)
 
     This Synapse workspace contains 16 pipelines that enable us to orchestrate data movement and transformation steps over data from several sources.
 

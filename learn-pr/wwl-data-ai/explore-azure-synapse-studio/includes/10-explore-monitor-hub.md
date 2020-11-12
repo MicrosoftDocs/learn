@@ -26,6 +26,6 @@ Use the Monitor hub to view pipeline and trigger runs, view the status of the va
  
     ![Viewing SQL requests in the monitor hub in Azure Synapse Studio](../media/view-sql-requests-azure-synapse-studio.png)
  
-5.  You can view more details 
+5.  You can view more details. 
 
-    [![Viewing SQL requests in the monitor hub in Azure Synapse Studio](../media/view-sql-statements-azure-synapse-studio.png)](../media/view-sql-statements-azure-synapse-studio.png#lightbox)
+    [![Viewing detailed information about SQL requests in the monitor hub in Azure Synapse Studio](../media/view-sql-statements-azure-synapse-studio.png)](../media/view-sql-statements-azure-synapse-studio.png#lightbox)

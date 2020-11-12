@@ -2,8 +2,8 @@
 uid: learn.wwl.explore-azure-synapse-studio
 metadata:
   title: Explore Azure Synapse Studio
-  description: "Take a tour of the core application used to interact with the various components of Azure Synapse Analytics."
-  ms.date: 11/11/2020
+  description: "Explore Azure Synapse Studio"
+  ms.date: 11/12/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
