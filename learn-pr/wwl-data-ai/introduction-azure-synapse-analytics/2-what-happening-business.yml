@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-azure-synapse-analytics.what-is
-title: What is azure synapse analytics
+title: What is Azure Synapse Analytics
 metadata:
-  title: What is azure synapse analytics
-  description: "What is azure synapse analytics"
-  ms.date: 11/11/2020
+  title: What is Azure Synapse Analytics
+  description: "What is Azure Synapse Analytics"
+  ms.date: 11/12/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial

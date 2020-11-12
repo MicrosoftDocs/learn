@@ -2,8 +2,8 @@
 uid: learn.wwl.introduction-to-azure-synapse-analytics
 metadata:
   title: Introduction to Azure Synapse Analytics
-  description: "Learn the features and components that Azure Synapse Analytics provides to provide a one stop shop for all your analytical needs."
-  ms.date: 11/11/2020
+  description: "Introduction to Azure Synapse Analytics"
+  ms.date: 11/12/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial

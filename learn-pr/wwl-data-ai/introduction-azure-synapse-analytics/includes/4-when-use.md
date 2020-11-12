@@ -4,7 +4,7 @@ Across all organizations and industries, the common use cases for Azure Synapse 
 
 This involves the ability to integrate all data, including big data, to reason over data for analytics and reporting purposes from a descriptive analytics perspective, independent of its location or structure.
 
-**Advanced analytics**
+## Advanced analytics
 
 Enables organizations to perform predictive analytics using both the native features of Azure Synapse Analytics, and integrating with other technologies such as Azure Databricks.
 
