@@ -78,9 +78,9 @@ Identify the subtasks of *Contribute to an open-source project using GitHub*
       - Communication channels
     - Searching issues and pull requests
       - Issues labels
+      - Identify issues needing help
       - Search by title, body, or comments
       - Find linked issues or pull requests
-      - Identify issues needing help
     - Sponsoring projects
       - Introduction to GitHub sponsors
 
