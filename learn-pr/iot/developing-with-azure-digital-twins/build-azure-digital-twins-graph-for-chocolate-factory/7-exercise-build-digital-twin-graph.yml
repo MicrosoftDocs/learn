@@ -4,7 +4,7 @@ metadata:
   description: In this exercise, first you download and extract the Azure Digital Twins Explorer tool. Then you set the required permissions for the tool to communicate with your registered app.
   ms.date: 10/1/2020
   author: PeterTurcan
-  ms.author: Rania.Bayoumy
+  ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title:  Exercise - build a digital twin graph

@@ -49,7 +49,6 @@ The next step is to save some important data, used to connect other resources to
     > [!Note] If you get the following warning message, ignore it, you don't need to see other role assignments.
     [![Screenshot showing a permissions warning message](../media/adt-aad-permission-error.png)](../media/adt-aad-permission-error.png#lightbox)
 
-
 1. Click **+ Add**, then select **Add role assignment**.
 
 1. In the **Role** field, search for **Azure Digital Twins Owner**, and select it.
