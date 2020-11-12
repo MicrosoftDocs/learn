@@ -1,8 +1,8 @@
 You have been hired as a Senior Data Engineer to help automate day to day operations of database administration.  This automation is to help ensure that the databases for AdventureWorks continue to operate at peak performance as well as provide methods for alerting based on certain criteria.  
 
-## Create an alert when a CPU exceeds an average of 80 percent.
+## Connect to the lab environment
 
-1. When the VM lab environment opens use the password on the **Resources** tab for the **Student** account to sign in to Windows.
+1. When the VM lab environment opens, use the password on the **Resources** tab above for the **Student** account to sign in to Windows.
 
 1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/). This should be the home page of the browser.
 
@@ -15,6 +15,8 @@ You have been hired as a Senior Data Engineer to help automate day to day operat
 1. Select **Yes**.
 
 1. On the **Welcome to Azure** popup, select **Maybe later**.
+
+## Create an alert when a CPU exceeds an average of 80 percent.
 
 1. In the search bar at the top of the Azure Portal, type **SQL**, and select **SQL databases**. Select the **sample-db-with-tde**  database name.
 

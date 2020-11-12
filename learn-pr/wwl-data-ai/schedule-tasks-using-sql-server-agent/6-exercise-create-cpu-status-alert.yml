@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.schedule-tasks-using-sql-server-agent.6-exercise-create-cpu-status-alert
-title: Exercise-Create a CPU status alert for a SQL Server
+title: 'Exercise: Create a CPU status alert for a SQL Server'
 metadata:
-  title: Exercise-Create a CPU status alert for a SQL Server
-  description: "Exercise-Create a CPU status alert for a SQL Server"
-  ms.date: 11/10/2020
+  title: 'Exercise: Create a CPU status alert for a SQL Server'
+  description: "Exercise: Create a CPU status alert for a SQL Server"
+  ms.date: 11/12/2020
   author: wwlpublish
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
