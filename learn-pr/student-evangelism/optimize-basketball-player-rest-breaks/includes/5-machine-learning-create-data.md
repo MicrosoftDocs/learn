@@ -42,6 +42,7 @@ game_df
 |  | Speedy Gonzales | 0.625352 | 25.811137 | 12.916409 | 35.222323 | 5.748996 | 15.510887 | 15.569281 | 34.878930 |
 |  | Penelope | 0.613901 | 25.007772 | 14.394944 | 28.324923 | 7.564207 | 23.184055 | 9.919301 | 16.124275 |
 |  | Daffy Duck | 0.634848 | 31.911011 | 14.694308 | 33.226023 | 6.308140 | 18.023737 | 16.305183 | 33.155391 |
+
 64 rows × 8 columns
 
 The final DataFrame looks complete, so we can save it as a CSV file so that we can use it in our web app. When saving this DataFrame as a CSV file, we will want to keep the indices since we made them the player's names.

@@ -8,7 +8,7 @@ If you haven't yet installed Visual Studio Code, you can find guides on the [Vis
 
 Once you have your environment setup, you should create a folder called space-jam wherever you store code on your computer. This can be anywhere, for example, on your Desktop. You might already have this folder if you are contuining on from the previous Space Jam inspired module.
 
-![New Space Jam folder created on the Desktop](../media/new-folder.png)
+:::image type="content" source="../media/new-folder.png" alt-text="Screenshot showing The new Space Jam folder created on the desktop.":::
 
 Open Visual Studio Code, and from the Welcome tab, click "Open Folder". You can also do this by clicking File -> Open... and navigating to the folder you just created.
 
