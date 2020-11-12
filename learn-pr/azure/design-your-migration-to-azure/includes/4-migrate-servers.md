@@ -3,7 +3,7 @@ After using Azure Migrate for your assessment, you can decide which of your serv
 In this unit, you'll review Azure Migrate and how to use it to migrate specific workloads to Azure.
 
 ## Virtual machine replication
-Add Azure Migrate: Server Migration to your Azure Migrate dashboard, which carries over machines and insights from the assessment. You can get begin your replication by clicking Replicate in the tool window. Azure Migrate replicates up to 100 VMs simultaneously. If you need to do more, it’s recommended to create multiple batches. Times for replication will vary based on number and size of virtual machines along with connection speeds between your data center and Azure. 
+Add Azure Migrate: Server Migration to your Azure Migrate dashboard, which carries over machines and insights from the assessment. You can begin your replication by clicking Replicate in the tool window. Azure Migrate replicates up to 100 VMs simultaneously. If you need to do more, it’s recommended to create multiple batches. Times for replication will vary based on number and size of virtual machines along with connection speeds between your data center and Azure. 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the Azure Migrate Servers page in Azure Admin center](../media/4-vm-replication.png)
