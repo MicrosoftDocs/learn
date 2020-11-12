@@ -1,4 +1,4 @@
-A type of class called a *Model* is needed to represent a dog toy in inventory. The Model must include the properties of a product and is used to pass data in the web API. The Model is also used to persist dog toys in a data store. In this unit, that data store will be created as an [in-memory EF Core database](https://docs.microsoft.com/ef/core/providers/in-memory/).
+A type of class called a *Model* is needed to represent a dog toy in inventory. The Model must include the properties of a product and is used to pass data in the web API. The Model is also used to persist dog toys in a data store. In this unit, that data store will be created as an [in-memory EF Core database](/ef/core/providers/in-memory/).
 
 An in-memory database is used in this unit for simplicity. Choose a different data store for production environments, such as SQL Server or Azure SQL Database.
 
@@ -45,17 +45,11 @@ An in-memory database is used in this unit for simplicity. Choose a different da
 
     namespace ContosoPets.Api.Models
     {
-        public class Product
-        {
-            public long Id { get; set; }
-
-            [Required]
-            public string Name { get; set; }
-
-            [Required]
-            [Range(minimum: 0.01, maximum: (double) decimal.MaxValue)]
-            public decimal Price { get; set; }
-        }
+        public record Product(
+            int Id,
+            [Required]string Name,
+            [Range(0.01, 9999.99)]decimal Price
+        );
     }
     ```
 
@@ -114,11 +108,8 @@ An in-memory database is used in this unit for simplicity. Choose a different da
 1. Add the following code to *:::no-loc text="Data/SeedData.cs":::*. Save your changes.
 
     ```csharp
-    using System;
-    using System.Linq;
-    using Microsoft.EntityFrameworkCore;
-    using Microsoft.Extensions.DependencyInjection;
     using ContosoPets.Api.Models;
+    using System.Linq;
 
     namespace ContosoPets.Api.Data
     {
@@ -129,16 +120,8 @@ An in-memory database is used in this unit for simplicity. Choose a different da
                 if (!context.Products.Any())
                 {
                     context.Products.AddRange(
-                        new Product
-                        {
-                            Name = "Squeaky Bone",
-                            Price = 20.99m,
-                        },
-                        new Product
-                        {
-                            Name = "Knotted Rope",
-                            Price = 12.99m,
-                        }
+                        new Product(0, "Squeaky Bone", 20.99m),
+                        new Product(0, "Knotted Rope", 12.99m)
                     );
 
                     context.SaveChanges();
@@ -153,50 +136,31 @@ An in-memory database is used in this unit for simplicity. Choose a different da
 1. Replace the code in *:::no-loc text="Program.cs":::* with the following code. Save your changes.
 
     ```csharp
-    using System;
-    using Microsoft.AspNetCore.Hosting;
-    using Microsoft.Extensions.Hosting;
-    using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.Extensions.Logging;
+    using ContosoPets.Api;
     using ContosoPets.Api.Data;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Hosting;
 
-    namespace ContosoPets.Api
+    CreateHostBuilder(args).Build().SeedDatabase().Run();
+
+    static IHostBuilder CreateHostBuilder(string[] args) =>
+        Host.CreateDefaultBuilder(args)
+            .ConfigureWebHostDefaults(webBuilder =>
+                webBuilder.UseStartup<Startup>());
+
+    static class IHostExtensions
     {
-        public class Program
+        public static IHost SeedDatabase(this IHost host)
         {
-            public static void Main(string[] args)
-            {
-                var host = CreateHostBuilder(args).Build();
-                SeedDatabase(host);
-                host.Run();
-            }
+            var scopeFactory = host.Services.GetRequiredService<IServiceScopeFactory>();
+            using var scope = scopeFactory.CreateScope();
+            var context = scope.ServiceProvider.GetRequiredService<ContosoPetsContext>();
 
-            public static IHostBuilder CreateHostBuilder(string[] args) =>
-                Host.CreateDefaultBuilder(args)
-                    .ConfigureWebHostDefaults(webBuilder =>
-                    {
-                        webBuilder.UseStartup<Startup>();
-                    });
+            if (context.Database.EnsureCreated())
+                SeedData.Initialize(context);
 
-            private static void SeedDatabase(IHost host)
-            {
-                var scopeFactory = host.Services.GetRequiredService<IServiceScopeFactory>();
-                using var scope = scopeFactory.CreateScope();
-                var context = scope.ServiceProvider.GetRequiredService<ContosoPetsContext>();
-
-                if (context.Database.EnsureCreated())
-                {
-                    try
-                    {
-                        SeedData.Initialize(context);
-                    }
-                    catch (Exception ex)
-                    {
-                        var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
-                        logger.LogError(ex, "A database seeding error occurred.");
-                    }
-                }
-            }
+            return host;
         }
     }
     ```
