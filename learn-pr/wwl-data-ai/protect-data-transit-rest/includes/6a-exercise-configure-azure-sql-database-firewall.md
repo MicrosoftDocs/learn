@@ -1,20 +1,22 @@
 You've been hired as a Senior Database Administrator help ensure the security of the database environment. These tasks will focus on Azure SQL Database. You will learn how to configure authentication and authorization to the Azure SQL database.
 
-## Configure a server-based firewall rule using the Azure Portal
+## Connect to the lab environment
 
-1. When the VM lab environment opens use the password on the **Resources** tab for the Student account to sign in to Windows.
+1. When the VM lab environment opens, use the password on the **Resources** tab above for the **Student** account to sign in to Windows.
 
 1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/). This should be the home page of the browser.
 
-1. The username and password information to sign into the Azure Portal are in the  **Resources** tab above these instructions. If you select the **Username**, it will be filled in for you.
+1. The username and password information to sign into the Azure portal are in the  **Resources** tab above these instructions. If you select the **Username** it will be filled in for you.
 
 1. Select **Next**.
 
-1. Select the **Password** field to have that filled in for you, then select **Sign in**.
+1. Select the **Password** text in the **Resources** tab to have that filled in for you, then select **Sign in**.
 
 1. Select **Yes**.
 
 1. On the **Welcome to Azure** popup, select **Maybe later**.
+
+## Configure a server-based firewall rule using the Azure Portal
 
 1. In the search bar at the top of the Azure portal, type **SQL servers**.
 
