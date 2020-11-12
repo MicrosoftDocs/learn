@@ -22,7 +22,7 @@ Blob properties have system-defined names, and the values of properties are ofte
 
 The following list provides additional details about these types of properties:
 
-**Read-write properties**
+**Read-only properties**
 
 - **Default properties**: These properties include the date the object was created or modified (`LastModified`).
 
