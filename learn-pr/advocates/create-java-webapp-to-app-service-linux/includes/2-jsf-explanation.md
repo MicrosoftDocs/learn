@@ -20,19 +20,18 @@ JSF 2.3 is available for Jakarta EE 8 based applications.
 `BackingBean` is a Java Class linked a JSF Page. It contains Action methods, Action Listeners, and Value Change listeners.
 In Java EE 6, Backing Beans were implemented with JSF-Managed Beans. Since Java EE 7, Context and Dependency Injection(CDI) beans are used as an implementation.
 
-## Create JSF Page with PrimeFaces
+## Create a JSF Page with PrimeFaces
 
-JSF can create its own extended web components.
-This time, we will use PrimeFaces as a component of JSF provided by 3rd Party to create rich web applications more easily.
-To use PrimeFaces, write a dedicated XML namespace (`xmlns: p`) in XHTML as shown below. This makes the various UI components of PrimeFaces available.
+PrimeFaces is a third-party implementation that makes it easy to create JSF web components.
+PrimeFaces is a lightweight library with one jar, zero-configuration, and no required dependencies. You just need to download PrimeFaces, add the primefaces-{version}.jar to your classpath and import the namespace to get started - `xmlns:p="http://primefaces.org/ui"`
 
-In the example below, the `p:outputLabel`,` p:inputText`, and `p:commandButton` tags are used to display labels, input fields, and buttons, respectively.
+Let's look at a simple example: In our example below, the `p:outputLabel`,`p:inputText`, and `p:commandButton` tags are used to display labels, input fields, and buttons.
 
 ```xml
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html" 
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:p="http://primefaces.org/ui" >
     <h:head>
         <title>Input Value Counter Sample</title>
