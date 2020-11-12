@@ -12,15 +12,18 @@ The aim of all this work is to be able to serve up the data to be consumed by th
 
     i.	Data is ingested from CSV files using PySpark (**cell 4**).
 
-    ![Ingesting data in a notebook in Azure Synapse Studio](../media/ingest-data-notebook-synapse-studio-hubs.png)
+    > [!div class="mx-imgBorder"]
+    > ![Ingesting data in a notebook in Azure Synapse Studio](../media/ingest-data-notebook-synapse-studio-hubs.png)
 
     The model is trained using the PySpark ML-Lib recommendations module (**cells 7 & 8**).
 
-    ![Train models in a notebook in Azure Synapse Studio](../media/train-models-notebook-synapse-studio-hubs.png)
+    > [!div class="mx-imgBorder"]
+    > ![Train models in a notebook in Azure Synapse Studio](../media/train-models-notebook-synapse-studio-hubs.png)
 
     ii.	Product recommendations are generated for each user (**cells 9-12**).
  
-    ![View recommendations in a notebook in Azure Synapse Studio](../media/recommendations-notebook-synapse-studio-hubs.png)
+    > [!div class="mx-imgBorder"]
+    > ![View recommendations in a notebook in Azure Synapse Studio](../media/recommendations-notebook-synapse-studio-hubs.png)
 
 1.	Select the Develop hub.
  
