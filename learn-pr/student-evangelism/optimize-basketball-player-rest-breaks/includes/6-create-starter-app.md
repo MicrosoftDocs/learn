@@ -37,7 +37,7 @@ Back in Visual Studio Code, paste the URL you just copied into the command promp
 
 If prompted, choose to open the code in your current window. Once the files download, Visual Studio Code should look like this:
 
-![Repository cloned and opened in Visual Studio Code](../media/repo-cloned.png)
+![Repository cloned and opened in Visual Studio Code](../media/repo-cloned-downloaded-files.png)
 
 ## Create an Azure Static Web App in Visual Studio Code
 
