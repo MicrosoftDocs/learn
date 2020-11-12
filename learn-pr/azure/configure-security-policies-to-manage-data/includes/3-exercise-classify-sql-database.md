@@ -30,7 +30,8 @@ In this step, you will create your resource group and an Azure SQL Database sing
 1. Select the **Additional settings** tab.
 1. In the **Data source** section, under **Use existing data**, select **Sample**.
 
-    ![Screenshot of additional configuration page](../media/M04-L01-01-create-sql-database-additional-settings.png)
+
+    :::image type="content" source="../media/M04-L01-01-create-sql-database-additional-settings.png" alt-text="Screenshot of additional configuration page.":::
 
 1. Under **Enable Advanced Data Security**, verify **Start free trial** is selected.
 1. Leave the rest of the values as default and select **Review + Create** at the bottom of the form.
