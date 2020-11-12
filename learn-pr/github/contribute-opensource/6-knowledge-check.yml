@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Four multiple-choice questions
-  ms.date: 04/27/2020
+  ms.date: 12/11/2020
   author: sinedied
   ms.author: yolasors
   ms.topic: interactive-tutorial
@@ -13,17 +13,19 @@ durationInMinutes: 4
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
+  title: Contribute to an open-source project using GitHub
   questions:
-    - content: First question
+    - content: What is the best place on a GitHub repository to find where you can help a project?
       choices:
-        - content: first choice
+        - content: The README file
+          isCorrect: false
+          explanation: "The README provides information on how to use the project."
+        - content: The issues list
           isCorrect: true
-          explanation: Correct. because reasons
-        - content: second choice
+          explanation: "Existing issues with the project are listed here. They are also labelled according to help needed."
+        - content: The search bar
           isCorrect: false
-        - content: third choice
+          explanation: "The search bar allows you to find repositories and topics in Github."
+        - content: The LICENSE file
           isCorrect: false
-        - content: fourth choice
-          isCorrect: false
-          explanation: Incorrect. because reasons
+          explanation: "The license file describe how you can use, redistribute and modify the project."
