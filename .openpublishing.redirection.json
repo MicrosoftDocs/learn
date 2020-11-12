@@ -3236,6 +3236,16 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/5-fallback-routes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/6-exercise-fallback-routes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/7-build-api.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
       "redirect_document_id": false
@@ -3252,6 +3262,11 @@
     },
     {
       "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/10-exercise-action.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/11-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
       "redirect_document_id": false
     },
