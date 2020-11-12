@@ -49,8 +49,10 @@ Spring Batch is a lightweight framework for robust batch applications vital for 
 
 Java EE applications must be deployed onto Java EE-compliant application servers (such as WebLogic, WebSphere, WildFly, GlassFish, Payara, and others).
 
+About 54% of Java applications are running on Tomcat the rest is splitting as the following graphic is illustrating.
+
 (Add image to show usage like:)
-![Deployment Opportunities on Azure for different types of Java Applications](../media/4-javaee.png)
+![Usage of Application Servers for Java Enterprise applications](../media/4-javaee.png)
 
 - **Apache Tomcat** is the most used Enterprise Server for Java applications. It's an open-source implementation of the Java Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket technologies. The Java Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket specifications are developed under the Java Community Process.
 
