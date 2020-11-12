@@ -7,7 +7,7 @@ In this unit, you'll use the .NET CLI to create a web API within the Cloud Shell
 Run the following command in the command shell:
 
 ```bash
-. <(wget -q -O - https://aka.ms/build-web-api-net-core-setup)
+. <(wget -q -O - https://aka.ms/build-web-api-aspnet-core-setup)
 ```
 
 [!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
@@ -21,7 +21,7 @@ The preceding command installs a specific version of the .NET SDK in the Azure C
 1. Run the following .NET CLI command in the command shell:
 
     ```dotnetcli
-    dotnet new webapi -o aspnet-learn/src/ContosoPets.Api --no-https
+    dotnet new webapi -o aspnet-learn/src/ContosoPets.Api
     ```
 
     The preceding command uses an ASP.NET Core project template, aliased as *:::no-loc text="webapi":::*, to scaffold a C#-based starter web API project. The *:::no-loc text="aspnet-learn/src/ContosoPets.Api":::* directory structure is created, which contains an ASP.NET Core project targeting .NET. The project name matches the *:::no-loc text="ContosoPets.Api":::* directory name. The `--no-https` option specifies that HTTP requests shouldn't be forcibly redirected to HTTPS. This option eases testing of the API in the Cloud Shell.
@@ -73,13 +73,6 @@ The preceding command installs a specific version of the .NET SDK in the Azure C
 
     > [!IMPORTANT]
     > Check *:::no-loc text="ContosoPets.Api.log":::* if you encounter any unexpected behavior. If the build fails or other errors occur, the log file's information helps troubleshoot. If you make code changes, run `kill $(pidof dotnet)` to stop all .NET apps before attempting to run again.
-
-1. Install the HttpRepl .NET Global Tool:
-
-    ```bash
-    dotnet tool install -g microsoft.dotnet-httprepl \
-        --version 5.0.0-*
-    ```
 
 1. Send an HTTP GET request to the web API:
 
