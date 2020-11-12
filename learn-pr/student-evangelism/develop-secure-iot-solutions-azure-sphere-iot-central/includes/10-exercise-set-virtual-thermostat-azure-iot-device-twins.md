@@ -14,7 +14,7 @@
 
 ## Step 2: Set your developer board configuration
 
-These labs support developer boards from Avnet and Seeed Studio. You need to set the configuration that matches your developer board.
+These labs support developer boards from Avnet and Seeed Studio. Set the configuration that matches your developer board.
 
 The default developer board configuration is for the Avnet Azure Sphere Starter Kit. If you have this board, there's no additional configuration required.
 
@@ -30,13 +30,13 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
    # set(SEEED_STUDIO_MINI TRUE "Seeed Studio Azure Sphere MT3620 Mini Dev Board")
    ```
 
-4. Save the file. This will auto-generate the CMake cache.
+4. Save the file. The CMake cache with be auto-generated.
 
 ## Step 3: Configure the Azure IoT connection information
 
 1. Open the **app_manifest.json** file.
 
-2. You'll need to redo the settings for the **app_manifest.json** file. Either copy the settings from Notepad if you still have it open or copy them from the **app_manifest.json** file you created in the previous exercise.
+2. You'll need to redo the settings for the **app_manifest.json** file. Either copy the settings from Notepad if you still have it open, or copy them from the **app_manifest.json** file you created in the previous exercise.
 
 3. Replace the existing configuration by pasting the contents of the clipboard into **app_manifest.json**.
 
@@ -48,7 +48,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 1. Select **CMake: [Debug]: Ready** from the Visual Studio Code Status Bar.
 
-1. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application that's now running the Azure Sphere device.
+1. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application.
 
 ## Step 5: Expected device behavior
 
@@ -86,11 +86,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 ![The illustration shows how to display properties.](../media/iot-central-display-telemetry.png) -->
 
-
-
 ## Step 6: Set the desired temperature
-
-Setting the desired temperature is like setting a thermostat in a room. A device twin property message for desired temperature is sent to Azure Sphere, where it will be acted upon.
 
 To set the desired temperature:
 
