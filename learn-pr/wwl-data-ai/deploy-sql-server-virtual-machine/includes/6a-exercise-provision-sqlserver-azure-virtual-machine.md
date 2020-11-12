@@ -1,8 +1,8 @@
 You're a database administrator. You need to create a test environment for use in a proof of concept. The proof of concept will use SQL Server on an Azure Virtual Machine.
 
-## Create a Resource Group
+## Connect to the lab environment
 
-1. When the VM lab environment opens use the password on the Resources tab for the Student account.
+1. When the VM lab environment opens, use the password on the **Resources** tab above for the **Student** account to sign in to Windows.
 
 1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/). This should be the home page of the browser.
 
@@ -10,11 +10,13 @@ You're a database administrator. You need to create a test environment for use i
 
 1. Select **Next**.
 
-1. Select the Password text in the Resources tab to have that filled in for you, then select Sign in.
+1. Select the **Password** text in the **Resources** tab to have that filled in for you, then select **Sign in**.
 
 1. Select **Yes**.
 
 1. On the **Welcome to Azure** popup, select **Maybe later**.
+
+## Create a Resource Group
 
 1. From the Home screen, select **Resource Groups**.  
 ‎
