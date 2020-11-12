@@ -183,7 +183,8 @@ When the temperature sensor is read on the Azure Sphere, it is compared to the d
 - If the temperature is less than the desired temperature, the RGB LED will turn red to indicate the heater needs to be turned on.
 - If the temperature is the same as the desired temperature, the RGB LED will turn green to indicate no action required.
 
-> The Avnet Azure Sphere Starter Kit has a built-in temperature sensor. For other boards, a random temperature of 25 +/- 5 degrees Celsius is generated.
+   > [!NOTE]
+   > The Avnet Azure Sphere Starter Kit has a built-in temperature sensor. For other boards, a random temperature of 25 +/- 5 degrees Celsius is generated.
 
 To set the desired temperature:
 
