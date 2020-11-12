@@ -2,7 +2,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 ## Authorize Access to Azure SQL Database with Azure Active Directory
 
-1. When the VM lab environment opens use the password on the **Resources** tab for the **Student** account to sign in to Windows.
+1. When the VM lab environment opens, use the password on the **Resources** tab above for the **Student** account to sign in to Windows.
 
 1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/). This should be the home page of the browser.
 

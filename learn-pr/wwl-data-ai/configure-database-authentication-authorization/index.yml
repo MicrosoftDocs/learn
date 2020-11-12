@@ -2,8 +2,8 @@
 uid: learn.wwl.configure-database-authentication-authorization
 metadata:
   title: Configure database authentication and authorization
-  description: "Contrast authentication using Azure Active Directory vs Windows Active Directory vs SQL Server authentication. Implement various security principals and configure permissions."
-  ms.date: 11/06/2020
+  description: "Configure database authentication and authorization"
+  ms.date: 11/12/2020
   author: wwlpublish
   ms.author: kadelaney
   ms.topic: interactive-tutorial
