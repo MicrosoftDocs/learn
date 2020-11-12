@@ -3339,6 +3339,11 @@
       "source_path": "learn-pr/paths/classify-images-with-vision-services/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/process-classify-images-with-azure-cognitive-vision-services/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/explore-microsoft-azure-cloud-concepts/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": true
     }
   ]
 }
