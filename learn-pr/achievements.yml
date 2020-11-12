@@ -162,3 +162,8 @@ achievements:
   title: Process and classify images with the Azure Cognitive Vision Services
   summary: Process and classify images with the Azure Cognitive Vision Services
   iconUrl: /learn/achievements/data-ai/classify-images-with-vision-services.svg
+- uid: learn.wwl.explore-microsoft-azure-cloud-concepts.trophy
+  type: trophy
+  title: Explore Microsoft Azure cloud concepts (AZ-900)
+  summary: Explore Microsoft Azure cloud concepts (AZ-900)
+  iconUrl: /learn/achievements/explore-microsoft-azure-cloud-concepts.svg
