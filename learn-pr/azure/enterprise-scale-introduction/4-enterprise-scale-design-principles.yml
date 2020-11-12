@@ -4,7 +4,7 @@ metadata:
   title: Enterprise-scale design principles
   description: Enterprise-scale design principles
   ms.date: 09/21/2020
-  author: jeffmitchell
+  author: JefferyMitchell
   ms.author: jemitche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -16,32 +16,32 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: Identify the one of the five design area principles.
+  - content: Which of the following is one of the five design area principles?
     choices:
     - content: Resource group democratization
       isCorrect: false
       explanation: Subscriptions should be used as a unit of management and scale aligned with business needs.
-    - content: Azure native design and platform roadmap alignment
+    - content: Azure-native design and platform roadmap alignment
       isCorrect: true
       explanation: The enterprise-scale architecture approach favors using Azure-native platform services and capabilities whenever possible.
     - content: Adaptive governance
       isCorrect: false
-      explanation: Azure Policy should be used to provide guardrails and ensure continued compliance with your organizations platform.
+      explanation: Azure Policy should be used to provide guardrails and ensure continued compliance with your organization's platform.
     - content: Application-specific and archetype-bias
       isCorrect: false
       explanation: Enterprise-scale architecture should focus on application-centric migrations and development rather than pure infrastructure lift-and-shift migrations, such as moving virtual machines.
 
   - content: How are design principles different from design guidelines?
     choices:
-    - content: Design principles serve as a enterprise-scale design guidelines that create vision in technical alignment.
+    - content: Design principles serve as enterprise-scale design guidelines that create vision in technical alignment.
       isCorrect: true
-      explanation: The design principles serve as a compass for subsequent design decisions across design guidelines.
-    - content: Design principles are not related to design guidelines
+      explanation: Design principles serve as a compass for subsequent design decisions across design guidelines.
+    - content: Design principles are unrelated to design guidelines.
       isCorrect: false
-      explanation: The design principles serve as a compass for subsequent design decisions across design guidelines.
-    - content: Design guidelines serve as a enterprise-scale design principles that create vision in technical alignment.
+      explanation: Design principles serve as a compass for subsequent design decisions across design guidelines.
+    - content: Design guidelines serve as enterprise-scale design principles that create vision in technical alignment.
       isCorrect: false
-      explanation: The design principles serve as a compass for subsequent design decisions across design guidelines.
-    - content: Design principles have trade-offs associated with nonadherence to design guidelines
+      explanation: Design principles serve as a compass for subsequent design decisions across design guidelines.
+    - content: Design principles have trade-offs associated with nonadherence to design guidelines.
       isCorrect: false
-      explanation: The design principles serve as a compass for subsequent design decisions across design guidelines.
+      explanation: Design principles serve as a compass for subsequent design decisions across design guidelines.

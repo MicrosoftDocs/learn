@@ -1,4 +1,4 @@
-After you've created and tested an inference pipeline for real-time inferencing, which you can publish it as a service for client applications to use.
+After you've created and tested an inference pipeline for real-time inferencing, you can publish it as a service for client applications to use.
 
 To publish a real-time inference pipeline as a service, you must deploy it to an Azure Kubernetes Service (AKS) cluster. In this exercise, you'll use the AKS inference cluster you created previously in this module.
 
