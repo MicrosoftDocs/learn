@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-causes-of-performance-issues.exercise
-title: Exercise - Identify and resolve blocking issues
+title: 'Exercise: Identify and resolve blocking issues'
 metadata:
-  title: Exercise - Identify and resolve blocking issues
-  description: "Exercise - Identify and resolve blocking issues"
-  ms.date: 10/29/2020
+  title: 'Exercise: Identify and resolve blocking issues'
+  description: "Exercise: Identify and resolve blocking issues"
+  ms.date: 11/12/2020
   author: wwlpublish
   ms.author: kadelaney
   ms.topic: interactive-tutorial

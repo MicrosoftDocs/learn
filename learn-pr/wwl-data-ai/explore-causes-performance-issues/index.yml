@@ -2,8 +2,8 @@
 uid: learn.wwl.explore-causes-of-performance-issues
 metadata:
   title: Explore causes of performance issues
-  description: "Explore the Query Store for tracking down problematic queries. Understand how SQL Server and Azure SQL manage currency by locking and blocking, or by using snapshots. Implement fragmentation checks and defragmentation."
-  ms.date: 10/29/2020
+  description: "Explore causes of performance issues"
+  ms.date: 11/12/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial

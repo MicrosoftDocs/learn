@@ -1,8 +1,9 @@
 You have been hired as a database administrator to identify performance related issues and provide viable solutions to resolve any issues found. You need to use on-premises tools to identify the performance issues and suggest methods to resolve them.
 
-## Task 1: Run blocked queries report
+## Run blocked queries report
 
-1. When the VM lab environment opens start SQL Server Management Studio.
+1. When the VM lab environment opens, use the password on the **Resources** tab above for the **Student** account to sign in to Windows.
+1. Start **SQL Server Management Studio**.
 1. You will be prompted to connect to your SQL Server. Enter **LON-SQL1** for the local server name, ensure that **Windows Authentication** is selected, and select **Connect**.
 1. Start a new query by selecting the **New Query** button in Management Studio.
 
@@ -104,7 +105,7 @@ You have been hired as a database administrator to identify performance related 
 
     :::image type="content" source="../media/hyperlink.png" alt-text="Hyperlink":::
 
-1. The XML will show you which processes are being blocked and which process is causing the blocking. 
+1. The XML will show you which processes are being blocked and which process is causing the blocking. You can see the queries that ran in this process as well as system information. 
 
     :::image type="content" source="../media/xml.png" alt-text="XML":::
 
@@ -120,7 +121,7 @@ You have been hired as a database administrator to identify performance related 
 
 ## Enable Read Commit Snapshot Isolation
 
-1. Copy and paste the following T-SQL code into the query window. Select **Execute** to execute this query. 
+1. Select **New Query** from SQL Server Management Studio. Copy and paste the following T-SQL code into the query window. Select the **Execute** button to execute this query.
 
     ```sql
     USE master
@@ -131,8 +132,7 @@ You have been hired as a database administrator to identify performance related 
     
     GO
     ```
-1.  Begin a new query against the AdventureWorks2017 database. Copy and paste the following T-SQL code into the query window. Click the execute button or press t to execute this query.
-
+1. Run the query from **Task 1**, **Step 7**.
     ```sql
     USE AdventureWorks2017
     
@@ -146,7 +146,7 @@ You have been hired as a database administrator to identify performance related 
     GO
     ```
  
-1. Start another new query against the AdventureWorks2017 database. Copy and paste the following T-SQL code into the query window. Click the execute button to execute this query. 
+1. Run the query from **Task 1**, **Step 8**.
 
     ```sql
     USE AdventureWorks2017
@@ -166,3 +166,5 @@ You have been hired as a database administrator to identify performance related 
     ```
 
 1. Consider why the query in step 3 now completes whereas in the previous task it was blocked by the UPDATE.
+
+Read Commit Snapshot Isolation is an optimistic form of transaction isolation and the last query will show the latest committed version of the data, rather than being blocked.
