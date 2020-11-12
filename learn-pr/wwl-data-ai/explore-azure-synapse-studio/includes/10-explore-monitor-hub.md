@@ -20,7 +20,7 @@ Use the Monitor hub to view pipeline and trigger runs, view the status of the va
 
 3.	Select **SQL requests (1)**, then switch to the **SQLPool01 (2)** pool to see the list of SQL requests.
  
-    ![Viewing SQL requests in the monitor hub in Azure Synapse Studio](../media/sql-requests-azure-synapse-studio.png)
+    ![SQL requests in the monitor hub in Azure Synapse Studio](../media/sql-requests-azure-synapse-studio.png)
 
 4.	Hover over a SQL request, then select the **Request content** icon to view the SQL request that was sent to the SQL pool. You may need to try a few before you find one with interesting content.
  
