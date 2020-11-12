@@ -19,9 +19,9 @@ Now that the CRUD actions have been added to the web API, it's time to test them
 
     The following text represents the response:
 
-    ```text
+    ```console
     HTTP/1.1 400 Bad Request
-    Date: Mon, 18 May 2020 21:04:05 GMT
+    Date: Thu, 12 Nov 2020 21:42:08 GMT
     Content-Type: application/problem+json; charset=utf-8
     Server: Kestrel
     Transfer-Encoding: chunked
@@ -30,10 +30,10 @@ Now that the CRUD actions have been added to the web API, it's time to test them
       "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
       "title": "One or more validation errors occurred.",
       "status": 400,
-      "traceId": "|34d8eb25-4f589a8a1ec12a3f.",
+      "traceId": "00-fb97d3526ca9cf4188968a12e97ebe79-8e78d7197b8a1449-00",
       "errors": {
         "Price": [
-          "The field Price must be between 0.01 and 7.922816251426434E+28."
+          "The field Price must be between 0.01 and 9999.99."
         ]
       }
     }
@@ -50,13 +50,13 @@ Now that the CRUD actions have been added to the web API, it's time to test them
 
     The following text represents the response:
 
-    ```text
+    ```console
     HTTP/1.1 201 Created
-    Date: Mon, 18 May 2020 21:07:17 GMT
+    Date: Thu, 12 Nov 2020 21:45:18 GMT
     Content-Type: application/json; charset=utf-8
     Server: Kestrel
     Transfer-Encoding: chunked
-    Location: https://localhost:5001/products/3
+    Location: https://localhost:5001/Products/3
 
     {"id":3,"name":"Plush Squirrel","price":12.99}
     ```
@@ -97,9 +97,9 @@ Now that the CRUD actions have been added to the web API, it's time to test them
 
     The following text represents the response:
 
-    ```text
+    ```console
     HTTP/1.1 204 No Content
-    Date: Mon, 18 May 2020 21:08:48 GMT
+    Date: Thu, 12 Nov 2020 21:46:26 GMT
     Server: Kestrel
     ```
 
@@ -113,9 +113,9 @@ Now that the CRUD actions have been added to the web API, it's time to test them
 
     The following text represents the response:
 
-    ```text
+    ```console
     HTTP/1.1 204 No Content
-    Date: Mon, 18 May 2020 21:09:29 GMT
+    Date: Thu, 12 Nov 2020 21:47:33 GMT
     Server: Kestrel
     ```
 
