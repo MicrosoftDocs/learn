@@ -46,7 +46,8 @@ The next step is to save some important data, used to connect other resources to
 
 1. If you click on **Role assignments**, you should see your name with the **Owner** role. This is _not_ the role that you need to access the resource. The role you need is **Azure Digital Twins Owner (Preview)**.
 
-> [!NOTE] If you get the following warning message, ignore it, you don't need to see other role assignments.
+> [!NOTE]
+> If you get the following warning message, ignore it, you don't need to see other role assignments.
 
 [![Screenshot showing a permissions warning message](../media/adt-aad-permission-error.png)](../media/adt-aad-permission-error.png#lightbox)
 
