@@ -8,7 +8,8 @@ It is this capability that enables the Modern Data Warehousing workload pattern 
 
 The Azure Synapse Analytics workspace is the central location where you can view information about these resources and connect to them from within the Azure portal. The initial setup looks as follows:
  
-![View the Azure Synapse Analytics Workspace](../media/azure-synapse-workspace.png)
+> [!div class="mx-imgBorder"]
+> [![View the Azure Synapse Analytics Workspace](../media/azure-synapse-workspace.png)](../media/azure-synapse-workspace.png#lightbox)
 
 With a SQL on-demand endpoint available, and an Azure Data Lake Storage Gen2 (ADLS Gen2) account, you can immediately realize value from the product by uploading files to the data lake, and using the SQL on-demand service to prepare and explore the files
 
