@@ -3,7 +3,7 @@ uid: learn.azure.publish-static-web-app-and-api
 metadata:
   title: Publish an Angular, React, Svelte, or Vue JavaScript app with Azure Static Web Apps
   description: Publish an Angular, React, Svelte, or Vue JavaScript app with Azure Static Web Apps. Use Visual Studio Code to create and run the web app locally.
-  ms.date: 09/21/2020
+  ms.date: 11/09/2020
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
@@ -34,9 +34,6 @@ units:
   - learn.azure.publish-static-web-app-and-api.2-exercise-get-started
   - learn.azure.publish-static-web-app-and-api.3-static-web-apps
   - learn.azure.publish-static-web-app-and-api.4-exercise-static-web-apps
-  - learn.azure.publish-static-web-app-and-api.5-fallback-routes
-  - learn.azure.publish-static-web-app-and-api.6-exercise-fallback-routes
-  - learn.azure.publish-static-web-app-and-api.11-knowledge-check
   - learn.azure.publish-static-web-app-and-api.12-summary
 badge:
   uid: learn.azure.publish-static-web-app-and-api.badge
