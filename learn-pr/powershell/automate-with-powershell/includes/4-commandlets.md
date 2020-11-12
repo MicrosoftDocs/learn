@@ -1,18 +1,18 @@
 A cmdlet is a compiled command and is pronounced command-let. A cmdlet can be developed in .NET or .NET Core and invoked as a command within PowerShell. There are thousands of cmdlets that come with your PowerShell installation already. The challenge lies in discovering what those are and what they can do for you.
 
-PowerShell has many different types of commands like functions, alias, and cmdlets. When you run a command, it's belongs to one of these three types. It's common to use the word command and cmdlet interchangeably.
+PowerShell has many different types of commands like functions, alias, and cmdlets. When you run a command, it's belongs to one of these three types. It's common to use the word command and cmdlet interchangeably as a cmdlet is a type of command. 
 
 Cmdlets are named according to a Verb-Noun naming standard, which makes it easier to understand what they do but also to search for them. Additionally it guides cmdlet developers in how their cmdlets should be named.  
 
 There's three cmdlets that allow you delve deeper into what cmdlets exist and what they do. They are:
 
 - **Get-Command**. Get-Command lists all the available cmdlets on your system but there are ways to filter down this response so you quickly find the command you need.
-- **Get-Help**. There's a built-in help system that you can use by invoking one of the mentioned core cmdlets `Get-Help`.
-- **Get-Member**. As part of getting a response from a cmdlet, that response is an object that contains numerous properties. By utilizing the Get-Member core cmdlet, you can drill down into that response and learn more about it.
+- **Get-Help**. There's a built-in help system that you can use by invoking one of the mentioned core cmdlets `Get-Help`. There's also an alias help that invokes `Get-Help`. The `help` command does a little more as it improves the overall reading experience by paginating the response.
+- **Get-Member**. As part of getting a response from a cmdlet, keep in mind that the response you get back from calling a command, is an object that contains numerous properties. By utilizing the `Get-Member` core cmdlet, you can drill down into that response and learn more about it.
 
 ## Locate commands with Get-Command
 
-By just running the `Get-Command` command in the shell, you will get a listing of every single command that's installed in PowerShell. It's not practical as it's thousands of them. What you want is a way to filter down the response so you can locate the command that you need. A way to _filter_ down is to remember how the cmdlets are named that is according to a Verb-Noun naming standard, for example,  Get-Random with `Get` being the verb and `Random` the noun.
+By just running the `Get-Command` cmdlet in the shell, you will get a listing of every single command that's installed in PowerShell. It's not practical to list all of the commands, as there are thousands of them. What you want is a way to filter down the response so you can locate the command that you need quicker. A way to _filter_ down is to remember how the cmdlets are named that is according to a Verb-Noun naming standard, for example,  Get-Random with `Get` being the verb and `Random` the noun.
 
 There are flags you can use to target either the verb or the noun as you search for the command you want. The flag you specify expects a value that's a string. You can add various pattern matching characters to that string to ensure you express that, for example,  a flag's value should start with, or end with, a certain string.  
 
@@ -24,13 +24,13 @@ There are flags you can use to target either the verb or the noun as you search 
 
    The above would search for all cmdlets whose noun part starts with **a-noun**.
 
-- **-Verb**. You can also choose to limit your search by specifying the `-Verb` flag. In fact, you can combine these two flags to create an even more detailed search query and type, for example,  the following command:
+- **-Verb**. You can also choose to limit your search by specifying the `-Verb` flag. In fact, you can combine these two flags to create an even more detailed search query and type, for example, the following command:
 
    ```powershell
    Get-Command -Verb Get -Noun a-noun*
    ```
 
-   Now you've narrowed down the search to say that the verb part needs to match ***Get** and the noun part to still match **a-noun**.
+   Now you've narrowed down the search to say that the verb part needs to match **Get** and the noun part to still match **a-noun**.
 
 ## Discover your cmdlets using the help system and Get-Help
 
@@ -121,4 +121,3 @@ You can also filter down the response by filtering on the rows. By using, for ex
 
 > [!TIP]
 > It's generally better to use dedicated cmdlets instead of executing methods on an object.
-
