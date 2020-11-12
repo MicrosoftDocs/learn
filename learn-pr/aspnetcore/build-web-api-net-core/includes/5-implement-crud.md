@@ -19,7 +19,7 @@ Replace the `// GET by ID action` comment in *:::no-loc text="Controllers/Produc
 
 ```csharp
 [HttpGet("{id}")]
-public async Task<ActionResult<Product>> GetById(long id)
+public async Task<ActionResult<Product>> GetById(int id)
 {
     var product = await _context.Products.FindAsync(id);
 
@@ -83,7 +83,7 @@ Replace the `// PUT action` comment in *:::no-loc text="Controllers/ProductsCont
 
 ```csharp
 [HttpPut("{id}")]
-public async Task<IActionResult> Update(long id, Product product)
+public async Task<IActionResult> Update(int id, Product product)
 {
     if (id != product.Id)
     {
@@ -132,7 +132,7 @@ Replace the `// DELETE action` comment in *:::no-loc text="Controllers/ProductsC
 
 ```csharp
 [HttpDelete("{id}")]
-public async Task<IActionResult> Delete(long id)
+public async Task<IActionResult> Delete(int id)
 {
     var product = await _context.Products.FindAsync(id);
 
