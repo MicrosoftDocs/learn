@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-azure-sql-database.6-exercise-deploy-azure-sqldatabase
-title: Exercise - Deploy an Azure SQL Database
+title: 'Exercise: Deploy an Azure SQL Database'
 metadata:
-  title: Exercise - Deploy an Azure SQL Database
-  description: "Exercise - Deploy an Azure SQL Database"
-  ms.date: 11/05/2020
+  title: 'Exercise: Deploy an Azure SQL Database'
+  description: "Exercise: Deploy an Azure SQL Database"
+  ms.date: 11/12/2020
   author: wwlpublish
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

@@ -1,14 +1,22 @@
 As a database administrator, you'll set up a new SQL Database, including a Virtual Network Endpoint to increase and simplify the security of the deployment. Azure Data Studio will be used to evaluate the use of a SQL Notebook for data querying and reviewing the results.
 
-## Create a Virtual Network
+## Connect to the lab environment
 
-1. When the VM lab environment opens sign in using the password on the **Resources** tab for the Student account.
+1. When the VM lab environment opens, use the password on the **Resources** tab above for the **Student** account to sign in to Windows.
 
-1. Select the Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/).
+1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/). This should be the home page of the browser.
 
 1. The username and password information to sign into the Azure portal are in the  **Resources** tab above these instructions. If you select the **Username** it will be filled in for you.
 
-1. Select the **Password** field to have that filled in for you.
+1. Select **Next**.
+
+1. Select the **Password** text in the **Resources** tab to have that filled in for you, then select **Sign in**.
+
+1. Select **Yes**.
+
+1. On the **Welcome to Azure** popup, select **Maybe later**.
+
+## Create a Virtual Network
 
 1. Open the left navigation pane, then select **Virtual Networks**.
 ‎
