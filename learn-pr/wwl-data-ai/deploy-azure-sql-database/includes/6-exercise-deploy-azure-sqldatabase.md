@@ -30,8 +30,7 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
     - Name: **AzureSQL-vnet**
     - Region: Select the same region when the Resource Group was created (the region nearest to your location)  
     - Select **Next: IP Addresses**  
-‎
-    :::image type="content" source="../media/dp-3300-module-22-lab-06.png" alt-text="Screenshot of selecting the Next: IP Addresses link.":::
+
 
 1. Configure the virtual network's IP range and prepare for the Azure SQL database endpoint:
 
@@ -187,7 +186,7 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
 ‎
     :::image type="content" source="../media/dp-3300-module-22-lab-29.png" alt-text="Screenshot of selecting the New Notebook button.":::
 
-1. Select the **+Text** button to add a new text box in the notebook.
+1. Select the **+Text**, either in the toolbar or in the notebook, to add a new text box in the notebook.
 ‎
     :::image type="content" source="../media/dp-3300-module-22-lab-30.png" alt-text="Screenshot of selecting the Text button.":::
 
@@ -198,7 +197,7 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
 ‎
     :::image type="content" source="../media/dp-3300-module-22-lab-31.png" alt-text="Screenshot of adding markdown text to a notebook.":::
 
-1. Select the **+ Code** button to add a new cell at the end of the notebook to put a query in  
+1. Select **+ Code** in the toolbar, or **Add code** in the notebook, to add a new cell at the end of the notebook to put a query in  
 ‎
     :::image type="content" source="../media/dp-3300-module-22-lab-32.png" alt-text="Screenshot of selecting the code button.":::
 
@@ -243,3 +242,5 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
 1. Select **Save** and then close the tab for the Notebook from inside of ADS.
 
 1. From the **File** menu, select **Open File**, and open the notebook you just saved. Observe that query results were saved along with the queries in the notebook.
+
+On completing this exercise you've seen how to create a SQL database in Azure and connect to it securely from a client machine.
