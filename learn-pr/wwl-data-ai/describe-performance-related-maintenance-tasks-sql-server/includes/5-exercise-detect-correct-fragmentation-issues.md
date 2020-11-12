@@ -2,8 +2,39 @@ You have been hired as a database administrator to identify performance related 
 
 ## Identify fragmentation
 
-1. When the VM lab environment opens start SQL Server Management Studio.
+1. When the VM lab environment opens, use the password on the **Resources** tab above for the Student account to sign in to Windows.
+1. Start **SQL Server Management Studio**.
 1. You will be prompted to connect to your SQL Server. Enter **LON-SQL1** for the local server name, ensure that **Windows Authentication** is selected, and select **Connect**.
+1. Select **New Query**. Copy and paste the following T-SQL code into the query window. Select **Execute** to execute this query. 
+
+    ```sql
+    USE AdventureWorks2017
+
+    
+    GO
+    
+    SELECT i.name Index_Name
+    
+     , avg_fragmentation_in_percent
+    
+     , db_name(database_id)
+    
+     , i.object_id
+    
+     , i.index_id
+    
+     , index_type_desc
+    
+    FROM sys.dm_db_index_physical_stats(db_id('AdventureWorks2017'),object_id('person.address'),NULL,NULL,'DETAILED') ps
+    
+     INNER JOIN sys.indexes i ON ps.object_id = i.object_id 
+    
+     AND ps.index_id = i.index_id
+    
+    WHERE avg_fragmentation_in_percent > 50 -- find indexes where fragmentation is greater than 50%
+    ```
+     
+    This query will report any indexes that have a fragmentation over 50%. You should not see any indexes with fragmentation.
 1. Select **New Query**. Copy and paste the following T-SQL code into the query window. Select **Execute** to execute this query. 
 
     ```sql
@@ -52,39 +83,10 @@ You have been hired as a database administrator to identify performance related 
     GO
     ```
 
-    This query will increase the fragmentation level of the Person.Address table and its indexes.
+    This query will increase the fragmentation level of the Person.Address table and its indexes by adding a large number of new records.
 
 
-1. Copy and paste the following T-SQL code into the query window. Select **Execute** to execute this query. 
-
-    ```sql
-    USE AdventureWorks2017
-
-    
-    GO
-    
-    SELECT i.name Index_Name
-    
-     , avg_fragmentation_in_percent
-    
-     , db_name(database_id)
-    
-     , i.object_id
-    
-     , i.index_id
-    
-     , index_type_desc
-    
-    FROM sys.dm_db_index_physical_stats(db_id('AdventureWorks2017'),object_id('person.address'),NULL,NULL,'DETAILED') ps
-    
-     INNER JOIN sys.indexes i ON ps.object_id = i.object_id 
-    
-     AND ps.index_id = i.index_id
-    
-    WHERE avg_fragmentation_in_percent > 50 -- find indexes where fragmentation is greater than 50%
-    ```
-     
-    This query will report any indexes that have a fragmentation over 50%. You should see four indexes with fragmentation.
+1. Execute the first query again. This query will report any indexes that have a fragmentation over 50%. You should see four indexes with fragmentation.
 
 
 1. Copy and paste the following T-SQL code into the query window. Select Execute to execute this query. 
@@ -162,7 +164,7 @@ You have been hired as a database administrator to identify performance related 
     WHERE avg_fragmentation_in_percent > 50 -- find indexes where fragmentation is greater than 50%
     ```
 
-1. Re-execute the query from step 5 in the first task. Make note of the logical reads in the **Messages** tab of the **Results** pane in Management Studio. Was there a change from the number of logical reads encountered before you rebuilt the index?
+1. Re-execute the query from step 6 in the first task. Make note of the logical reads in the **Messages** tab of the **Results** pane in Management Studio. Was there a change from the number of logical reads encountered before you rebuilt the index?
 
     ```sql
     SET STATISTICS IO,TIME ON
@@ -186,3 +188,4 @@ You have been hired as a database administrator to identify performance related 
     
     GO
     ```
+Because the index has been rebuilt, it will now be as efficient as possible and the logical reads should reduce. You have now seen that index maintenance can have an effect on query performance.
