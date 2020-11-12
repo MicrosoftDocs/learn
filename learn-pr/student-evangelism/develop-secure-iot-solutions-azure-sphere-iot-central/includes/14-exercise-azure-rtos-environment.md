@@ -4,13 +4,13 @@
 
     From the **Azure Sphere Developer Command Prompt**, delete the existing application by running
 
-    ```bash
+    ```
     azsphere device sideload delete
     ```
 
 2. You must restart the Azure Sphere device to clear the existing silicon firewall settings. From the **Azure Sphere Developer Command Prompt**, run
 
-    ```bash
+    ```
     azsphere device restart
     ```
 
@@ -25,8 +25,7 @@
 5. Click **Select Folder** or the **OK** button to open the project.
 
     ![Start Visual Studio Code](../media/vs-code-start.png)
-
-
+6. If you installed the Visual Studio Code Peacock extension then Visual Studio Code will turn red. We will be connecting two instances of Visual Studio Code to the Azure Sphere. The red colored instance is connected to the Real-time core.
 
 ## Step 3: Set your developer board configuration
 
@@ -66,7 +65,7 @@ You can debug the Azure RTOS application running on Azure Sphere Cortex M4 Real-
 2. Scroll down to the function named **inter-core_thread**.
     > [!NOTE]
     > Use **Go to Symbol in Editor** in Visual Studio Code. Use the keyboard shortcut Ctrl+Shift+O and start typing *inter-core_thread*. You'll often see a function name listed twice in the drop-down. The first is the function prototype or forward signature declaration, and the second is the implementation of the function.
-3. Set a breakpoint in the inter-core_thread function on the line that reads **switch (ic_control_block.cmd)**
+3. Set a breakpoint in the **inter-core_thread** function on the line that reads **switch (ic_control_block.cmd)**
     > [!NOTE]
     > You can learn how to set breakpoints from this [Visual Studio Code Debugging](https://code.visualstudio.com/docs/editor/debugging#_debug-actions?azure-portal=true) article.
 

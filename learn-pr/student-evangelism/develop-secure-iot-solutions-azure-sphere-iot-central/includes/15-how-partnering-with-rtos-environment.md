@@ -90,8 +90,8 @@ lp_interCoreCommunicationsEnable(lp_config.rtComponentId, InterCoreHandler);
 
 To request the environment data from the Real-time core then:
 
-1. Set the inter-core control block command to LP_IC_ENVIRONMENT_SENSOR.
-2. Send the request message by calling lp_interCoreSendMessage and passing the inter-core control block.
+1. Set the inter-core control block command to **LP_IC_ENVIRONMENT_SENSOR**.
+2. Send the request message by calling **lp_interCoreSendMessage** and passing the inter-core control block.
 
 ```c
 /// <summary>

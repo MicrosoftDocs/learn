@@ -10,6 +10,7 @@
 
 5. Click **Select Folder** or the **OK** button to open the project.
 
+6. If you installed the Visual Studio Code Peacock extension then Visual Studio Code will turn blue. The blue colored instance is connected to the High-level application running on the Cortex-A7 core.
 
 
 ## Step 2: Set your developer board configuration
@@ -38,7 +39,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 1. Open the **app_manifest.json** file.
 
-1. **Do not** copy the app_manifest.json that you saved to notepad as there are new properties in this application manifest. 
+1. **DO NOT** copy the app_manifest.json that you saved to notepad as there are new properties in this application manifest.
 
 1. Update the connection properties for the Azure IoT Central application.
 
@@ -93,7 +94,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 ## Step 4: Set a breakpoint in the InterCoreHandler callback function
 
-1. Ensure **main.c** is open.
+1. Open **main.c**.
 
 1. Scroll down to the function named **InterCoreHandler**.
     > [!NOTE]
