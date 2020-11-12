@@ -3,7 +3,7 @@ uid: learn.dotnet-files.4-paths
 title: Work with file paths in .NET
 metadata:
   title: Work with file paths in .NET
-  description: Learn how to work and manipulate with paths, find paths to special operating system directories, and figure out file extensions.
+  description: Learn how to work with and manipulate paths, find paths to special operating system directories, and figure out file extensions.
   ms.date: 10/28/2020
   author: codemillmatt
   ms.author: masoucou

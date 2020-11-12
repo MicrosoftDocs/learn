@@ -15,8 +15,13 @@ abstract:  |
   - Explore common cloud computing services
   - Explore the benefits of cloud computing
   - Decide which cloud deployment model is best for you
+  > [!NOTE]
+  > This module has been updated to [Discuss Azure fundamental concepts](https://docs.microsoft.com/learn/modules/fundamental-azure-concepts/).
+  > 
+  > If you’ve already started this module, you can continue until it’s retired on January 31, 2021. **It’ll be hidden from navigation on November 9, 2020**, so **bookmark it** before then.
 prerequisites: None
 iconUrl: /learn/achievements/principles-cloud-computing.svg
+hidden: true
 levels: 
 - beginner
 roles: 
