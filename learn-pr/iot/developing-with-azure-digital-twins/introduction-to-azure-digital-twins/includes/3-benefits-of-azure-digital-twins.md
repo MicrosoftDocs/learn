@@ -1,9 +1,9 @@
-Using the power of IoT, we have connected and monitored individual assets and machines for quite some time now. IoT has made it possible to bridge the gap between design models and real-world products, improving products and customer experiences. This really involves multiple types of digital twins. For example:
+Using the power of IoT, we have connected, and monitored individual assets, and machines for quite some time now. IoT has made it possible to bridge the gap between design models, and real-world products, improving products, and customer experiences. This really involves multiple types of digital twins. For example:
 
 - Digital twins of factory lines improve operation of the factory
-- Many customers also have started building digital twins of each product they make and ship. Product twins can help designers and manufacturers to gain a lifetime view of their products, literally from the drawing-board to past the recycling bin
+- Many customers also have started building digital twins of each product they make, and ship. Product twins can help designers, and manufacturers to gain a lifetime view of their products, literally from the drawing-board to past the recycling bin
 
-In the coming phases of digital twins, we will take these capabilities beyond engineering optimization, beyond assets and enable customers to create rich models of entire business environments and eventually networks of businesses, in a holistic manner. These comprehensive digital twins will combine traditional business data with a comprehensive model of many different aspects of reality in a single pane of glass, as a transparent model of a business, driving operations, analytics and simulation.
+In the coming phases of digital twins, we will take these capabilities beyond engineering optimization, beyond assets, and enable customers to create rich models of entire business environments, and eventually networks of businesses, in a holistic manner. These comprehensive digital twins will combine traditional business data with a comprehensive model of many different aspects of reality in a single pane of glass, as a transparent model of a business, driving operations, analytics and simulation.
 
 However, **modeling and creating a digital representation of these environments can be difficult for even the most sophisticated business.**
 
