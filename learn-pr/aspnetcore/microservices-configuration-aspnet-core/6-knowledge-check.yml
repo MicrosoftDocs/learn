@@ -16,57 +16,40 @@ quiz:
   questions:
     - content: What's the key abstraction that supports the configuration system in ASP.NET Core apps?
       choices:
-        - content: Configuration Binder
+        - content: Feature Management library
           isCorrect: false
-          explanation: "TODO"
+          explanation: "The Feature Management library provides standardized .NET APIs for managing feature flags within apps."
         - content: Configuration Provider
           isCorrect: true
-          explanation: "TODO"
+          explanation: "A configuration provider is an abstraction over a specific configuration source, such as a JSON file. Configuration in an ASP.NET Core project is supported by one or more .NET Core configuration providers."
         - content: ConfigMap
           isCorrect: false
-          explanation: "TODO"
-        - content: App Configuration
+          explanation: "ConfigMap is an API object used to manage configuration in Kubernetes. It stores data in a collection of plain text key-value pairs."
+        - content: Azure App Configuration
           isCorrect: false
-          explanation: "TODO"
-
-    - content: Configuration values are usually represented as what?
+          explanation: "Azure App Configuration is a centralized configuration service useful in microservices apps. In an ASP.NET Core app, Azure App Configuration is registered as another configuration provider."
+    - content: In ASP.NET Core Razor Pages, `<Feature>` Tag Helper is included by default. True or False?
       choices:
-        - content: Sections and property values in the `appsettings.json` file.
+        - content: True
           isCorrect: false
-          explanation: "TODO"
-        - content: Array values
-          isCorrect: false
-          explanation: "TODO"
-        - content: Key-value pair collections
+          explanation: "`<Feature>` Tag Helper are part of the `Microsoft.FeatureManagement.AspNetCore` NuGet package."
+        - content: False
           isCorrect: true
-          explanation: "TODO"
-        - content: Object trees with property values
+          explanation: "`<Feature>` Tag Helper are part of the `Microsoft.FeatureManagement.AspNetCore` NuGet package."
+    - content: Which of the following statements is **NOT** true about Azure App Configuration?
+      choices:
+        - content: Azure App Configuration provides a service to centrally manage application settings and feature flags.
           isCorrect: false
-          explanation: "TODO"
-
-# 3. ConfigMaps values are presented to a containerized application as:
-
-#     - Structuctured `appsettings.json` file.
-#     - Environment variables. - **CORRECT ANSWER**
-#     - An App Configuration store.
-#     - Complex object trees.
-
-# 4. Settings in App Configuration store can change any configuration value:
-
-#     - Except the ones configured in the `appsettings.json` file.
-#     - Only if configured as the first configuration provider.
-#     - Only if not defined in another configuration provider.
-#     - Only if configured as the last configuration provider. - **CORRECT ANSWER**
-
-# 5. The feature management middleware for the SPA is part the Feature Management package.
-
-#     - True
-#     - False - **CORRECT ANSWER**
-
-# 6. The Azure App Configuration middleware gets configuration values from App Configuration store.
-
-#     - True
-#     - False - **CORRECT ANSWER**
+          explanation: "A centralized configuration service is especially useful in apps that are distributed in nature. Use App Configuration to store all the settings for your app and secure their accesses in one place."
+        - content: The easiest way to add an App Configuration store to your .NET Core app is through a client library provided by Microsoft.
+          isCorrect: false
+          explanation: "The NuGet package `Microsoft.Azure.AppConfiguration.AspNetCore` can be added to your projects to configure the Azure Configuration provider for your ASP.NET Core app."
+        - content: Azure App Configuration does not encrypt my app settings.
+          isCorrect: true
+          explanation: "App Configuration encrypts all key values it holds, and it encrypts network communication. Key names and labels are used as indexes for retrieving configuration data and aren't encrypted."
+        - content: Feature Management can be used to test a new business functionality in production.
+          isCorrect: false
+          explanation: "Use feature flags to grant early access to new functionality in production. For example, you can limit access to team members or to internal beta testers."
 
 # 7. Mark all the correct statements about the Azure App Configuration store.
 
