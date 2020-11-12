@@ -60,7 +60,7 @@ Let's classify the data in this sample Azure SQL database.
 
     ![Screenshot of the Advanced Threat Protection pane, with the Data Discovery and Classification preview card called out.](../media/M4_01_02_01.png)
 
-1. The initial state might have recommended columns, but none of them will be classified yet. Select the recommendations info tip at the top of the screen to see the recommended columns.
+1. The initial state will have recommended columns - 15 in this case, but none of them will be classified yet. Select the recommendations info tip at the top of the screen to see the recommended columns.
 
     ‎![Screenshot of the Data discovery and classification (preview) pane, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_02.png)
 
