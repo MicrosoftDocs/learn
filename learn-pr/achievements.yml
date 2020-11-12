@@ -162,3 +162,23 @@ achievements:
   title: Process and classify images with the Azure Cognitive Vision Services
   summary: Process and classify images with the Azure Cognitive Vision Services
   iconUrl: /learn/achievements/data-ai/classify-images-with-vision-services.svg
+- uid: learn.wwl.explore-microsoft-azure-cloud-concepts.trophy
+  type: trophy
+  title: Explore Microsoft Azure cloud concepts (AZ-900)
+  summary: Explore Microsoft Azure cloud concepts (AZ-900)
+  iconUrl: /learn/achievements/explore-microsoft-azure-cloud-concepts.svg
+- uid: learn.wwl.distinguish-microsoft-azure-core-services.trophy
+  type: trophy
+  title: Distinguish Microsoft Azure Core Services (AZ-900)
+  summary: Distinguish Microsoft Azure Core Services (AZ-900)
+  iconUrl: /learn/achievements/distinguish-microsoft-azure-core-services.svg 
+- uid: learn.wwl.examine-microsoft-azure-security-privacy-compliance-trust.trophy
+  type: trophy
+  title: Examine Microsoft Azure security, privacy, compliance, and trust (AZ-900)
+  summary: Examine Microsoft Azure security, privacy, compliance, and trust (AZ-900)
+  iconUrl: /learn/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg 
+- uid: learn.wwl.review-microsoft-azure-pricing-slas-lifecycles.trophy
+  type: trophy
+  title: Review Microsoft Azure pricing, service level agreements, and lifecycles (AZ-900)
+  summary: Review Microsoft Azure pricing, service level agreements, and lifecycles (AZ-900)
+  iconUrl: /learn/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg
