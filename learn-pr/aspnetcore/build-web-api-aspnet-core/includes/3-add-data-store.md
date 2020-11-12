@@ -93,7 +93,7 @@ An in-memory database is used in this unit for simplicity. Choose a different da
 
     The preceding code:
 
-    * Registers the custom `DbContext` class, named `ContosoPetsContext`, with ASP.NET Core's [dependency injection](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection) system.
+    * Registers the custom `DbContext` class, named `ContosoPetsContext`, with ASP.NET Core's [dependency injection](/aspnet/core/fundamentals/dependency-injection) system.
     * Defines an in-memory database named *:::no-loc text="ContosoPets":::*.
 
 1. Add the following code to the top of *:::no-loc text="Startup.cs":::*. Save your changes.
@@ -165,10 +165,7 @@ An in-memory database is used in this unit for simplicity. Choose a different da
     }
     ```
 
-    The `Program.Main` method is the first code to execute when the app starts. With the preceding changes, seeding of the in-memory database is triggered via a call to `SeedData.Initialize`.
-
-    > [!IMPORTANT]
-    > This database seeding strategy isn't recommended in a production environment. Consider seeding during database deployment instead.
+    The `CreateHostBuilder` method is the first code to execute when the app starts. With the preceding changes, seeding of the in-memory database is triggered via a call to `SeedData.Initialize`. This database seeding strategy isn't recommended in a production environment. Consider seeding during database deployment instead.
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 

@@ -3339,6 +3339,51 @@
       "source_path": "learn-pr/paths/classify-images-with-vision-services/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/process-classify-images-with-azure-cognitive-vision-services/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-net-core/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-aspnet-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-net-core/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-aspnet-core/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-net-core/2-create-web-api.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-aspnet-core/2-create-web-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-net-core/3-add-data-store.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-aspnet-core/3-add-data-store",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-net-core/4-add-controller.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-aspnet-core/4-add-controller",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-net-core/5-implement-crud.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-aspnet-core/5-implement-crud",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-net-core/6-test-web-api.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-aspnet-core/6-test-web-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-net-core/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-aspnet-core/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-net-core/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-aspnet-core/8-summary",
+      "redirect_document_id": false
     }
   ]
 }
