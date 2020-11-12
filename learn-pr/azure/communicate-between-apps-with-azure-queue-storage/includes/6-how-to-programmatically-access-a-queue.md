@@ -72,7 +72,7 @@ await queue.AddMessageAsync(message);
 
 In the receiver, you get the next message, process it, and then delete it after processing succeeds. Here's a simple example:
 
-```C#
+```csharp
 CloudQueue queue;
 //...
 

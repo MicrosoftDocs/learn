@@ -18,9 +18,7 @@ In this unit, you'll create, build, and run a new ASP.NET Core web application o
 
 1. Click the **Create** button to create your project.
 
-1. In the **Create a new ASP.NET Core web application** dialog box, you'll see a selection of starting templates. For this exercise, select **Web Application**, and then click **Create** to create your project.
 
-    :::image type="content" source="../media/3-aspnet-templates.png" alt-text="New Project Dialog." loc-scope="vs":::
 
     > [!NOTE]
     > You can also select different starting templates in this dialog box depending on your web development requirements. At the top of the dialog box, you can also select the version of ASP.NET Core. You should select ASP.NET Core 3.1 or later.
