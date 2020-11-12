@@ -8,7 +8,7 @@ In this exercise you will run query to generate actual execution plan and evalua
 
 There are several ways to generate an execution plan in SQL Server Management Studio.
 
-1. When the VM lab environment opens use the password on the **Resources** tab for the **Student** account to sign in to Windows.
+1. When the VM lab environment opens, use the password on the **Resources** tab above for the **Student** account to sign in to Windows.
 
 1. From the lab virtual machine, start **SQL Server Management Studio (SSMS)**.
 
