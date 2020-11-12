@@ -33,7 +33,7 @@ Cocoa beans are the input to this production line, chocolate bars the output!
 
 The roasting process cooks fermented cocoa beans. The temperature and time of cooking depends on the type of beans, but typically the roasting (sometimes called _fanning_ in the chocolate trade) might take 35 minutes, at 120 to 150 degrees C. Roasting aids the removal of unwanted stuff, such as acetic acid, and the formation of the sweet taste of cocoa. The grinding process takes the cocoa nibs that result from the roasting, and crushes them to pieces, typically between steel plates, to create a liquid cocoa butter. The molding process cools the cocoa butter in molds, giving the desired shape: chocolate bars, egg shells, figures. The following image shows roasted cocoa nibs.
 
-[![Photograph of roasted chocolate nibs](../media/adt-chocolate-nibs-cutout.png)](../media/adt-chocolate-nibs-cutout.png#lightbox)
+[![Photograph of roasted chocolate nibs](../media/adt-chocolate-nibs.png)](../media/adt-chocolate-nibs.png#lightbox)
 
 As IT manager, you've been asked to advise on the correct growth path for the company. You have decided to use the power of Azure Digital Twins, to build a software solution flexible enough, that no matter what questions the company owners may ask you, you'll have a scientific and robust answer.
 
