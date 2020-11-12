@@ -4,6 +4,11 @@ Install the following software on your computer.
 
 1. If you have trouble connecting to the Azure Sphere over USB be sure to disable any VPNs you might have enabled.
 2. The **TAP-Windows Adapter V9** installed with VPN clients, including OpenVPN client is not compatible with the **TAP-Windows Adapter V9** required and installed by the Azure Sphere SDK. You will need to uninstall the VPN client and reinstall the Azure Sphere SDK for Visual Studio.
+3. Windows Users. If running the IoT Central ShowIoTCentralConfig command fails with a missing library message then delete the folder from ShowIoTCentralConfig from AppData\Local\Temp\.net.
+
+## Azure Sphere SDK version
+
+This learning module requires Azure Sphere SDK version 20.10 or newer.
 
 ## Windows 10 users
 
@@ -25,6 +30,12 @@ The following [Quickstart: Install the Azure Sphere SDK for Windows](https://doc
 The Git client is required to clone the Learning Path Labs and the Azure Sphere SDK Samples.
 
 Install [Git for Windows](https://git-scm.com/downloads?azure-portal=true).
+
+### Install the GNU Arm Embedded Toolchain for Windows
+
+1. Download the [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) for Windows.
+2. Install the GNU Arm Embedded Toolchain
+
 
 ## Ubuntu 18.04 or 20.04 LTS users
 
@@ -48,57 +59,7 @@ The Git client is required to clone the Learning Path Labs and the Azure Sphere 
 sudo apt install git
 ```
 
-## Recommended Visual Studio Code Extension
-
-The Peacock extension allows you to change the color of your Visual Studio Code workspace. The Peacock extension is useful when you have multiple instances of Visual Studio Code open. In one of the exercises an instance of Visual Studio Code will be attached to the Real-time core, and another instance will be attached to the High-level application core.
-
-   1. Open Extensions sideBar panel in Visual Studio Code
-      1. Or choose the menu options for View → Extensions
-   1. Search for Peacock
-   1. Click Install
-   1. Click Reload, if required
-
-
-## Delete any existing applications on Azure Sphere
-
-1. From the **Azure Sphere Developer Command Prompt** or Linux **Terminal**, run the following command to delete any existing applications on the device.
-
-   ```
-   azsphere device sideload delete
-   ```
-
-2. Restart Azure Sphere.
-
-   ```
-   azsphere device restart
-   ```
-
-
-## High-level core device debugging
-
-1. From the **Azure Sphere Developer Command Prompt** or Linux **Terminal**, run the following command to enable app development on the device.
-
-   ```
-   azsphere device enable-development
-   ```
-
-## Enable Azure RTOS Real-time development
-
-### Install and enable the GNU Arm Embedded Toolchain for Windows
-
-1. Download the [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) for Windows.
-2. Install the GNU Arm Embedded Toolchain
-3. Enable Real-time core development
-
-   Open the **Azure Sphere Developer Command Prompt** as **Administrator**, run the following command to enable app development on the device.
-
-   ```
-   azsphere device enable-development -r
-   ```
-
-4. Close the **Azure Sphere Developer Command Prompt**
-
-### Install and enable the GNU Arm Embedded Toolchain for Linux
+### Install the GNU Arm Embedded Toolchain for Linux
 
 Install the GNU Arm Embedded Toolchain for Linux
 
@@ -115,9 +76,55 @@ Install the GNU Arm Embedded Toolchain for Linux
     export PATH=$PATH:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin
     ```
 
-4. Enable Real-time core development
+## Recommended Visual Studio Code Extension
 
-    Open the Linux **Terminal** and run the following command to enable app development on the device.
+The Peacock extension allows you to change the color of your Visual Studio Code workspace. The Peacock extension is useful when you have multiple instances of Visual Studio Code open. In one of the exercises an instance of Visual Studio Code will be attached to the Real-time core, and another instance will be attached to the High-level application core.
+
+   1. Open Extensions sideBar panel in Visual Studio Code
+      - Or choose the menu options for View → Extensions
+   1. Search for Peacock
+   1. Click Install
+   1. Click Reload, if required
+
+
+## Delete existing applications on Azure Sphere
+
+1. From the **Azure Sphere Developer Command Prompt** or Linux **Terminal**, run the following command to delete any existing applications on the device.
+
+   ```
+   azsphere device sideload delete
+   ```
+
+2. Restart Azure Sphere.
+
+   ```
+   azsphere device restart
+   ```
+
+
+## Enable High-level core development
+
+1. From the **Azure Sphere Developer Command Prompt** or Linux **Terminal**, run the following command to enable High-level app development on the device.
+
+   ```
+   azsphere device enable-development
+   ```
+
+## Enable Real-time core development
+
+### Windows 10 users
+
+1. Open the **Azure Sphere Developer Command Prompt** as **Administrator**, and run the following command to enable Real-time core development on the device.
+
+   ```
+   azsphere device enable-development -r
+   ```
+
+2. Close the **Azure Sphere Developer Command Prompt**
+
+### Linux users
+
+1. Open the Linux **Terminal** and run the following command to enable Real-time core development on the device.
 
    ```bash
    azsphere device enable-development -r
