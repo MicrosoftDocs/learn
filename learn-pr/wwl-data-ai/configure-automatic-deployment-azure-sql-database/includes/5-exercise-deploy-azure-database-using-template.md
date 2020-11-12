@@ -2,7 +2,7 @@ You've been hired as a Senior Data Engineer to help automate day to day operatio
 
 ## Deploy an Azure SQL Database
 
-1. When the VM lab environment opens use the password on the **Resources** tab for the Student account to sign in to Windows.
+1. When the VM lab environment opens, use the password on the **Resources** tab above for the Student account to sign in to Windows.
 
 1. Select the **Microsoft Edge** browser from the toolbar.
 1. Open a new tab and navigate to the following GitHub repository:
@@ -21,7 +21,13 @@ You've been hired as a Senior Data Engineer to help automate day to day operatio
 
     :::image type="content" source="../media/dp-3300-module-66-lab-11.png" alt-text="Screenshot of the GitHub repository showing the Deploy to Azure link.":::
 
-1. On the GitHub webpage, scroll down select **Deploy to Azure**. You may be prompted to sign in to the Azure portal. Sign in with the Azure credentials on the **Resources** tab.
+1. On the GitHub webpage, scroll down select **Deploy to Azure**. You may be prompted to sign in to the Azure portal.
+
+1. The username and password information to sign into the Azure portal are in the  **Resources** tab above these instructions. If you select the **Username** it will be filled in for you.
+
+1. Select **Next**.
+
+1. Select the **Password** text in the **Resources** tab to have that filled in for you, then select **Sign in**.
 
 1. You'll see the following screen. To deploy this template, complete the blank fields with this information:
 
