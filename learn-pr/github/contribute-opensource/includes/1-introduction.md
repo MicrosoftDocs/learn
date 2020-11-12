@@ -6,7 +6,7 @@ You first need to find a project to contribute to on GitHub as well as familiari
 As you contribute to the project, you realize that a crucial part is to communicate with the project's maintainers, ask for help and review your contributions. You might want to immerse yourself in the project's community further and connect with other contributors.
 And as you contribute to one project, you might find other projects could also benefit from a similar feature or API. And you might release an open-source project yourself. We just made a full circle!
 
-In this module, you will learn how to submit a successful contribution to an open-source project on GitHub by adopting assistance best practices.
+In this module, you will learn how to submit a successful contribution to an open-source project on GitHub by adopting best practices.
 
 ## Learning objectives
 

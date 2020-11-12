@@ -44,7 +44,7 @@ Upon completion of the module, the learner will be able to:
 
 1. Find open-source projects in GitHub
 2. Identify how to contribute to and sponsor an open-source project
-3. Submit your changes/additions by using pull requests and employ best practices to ask for help or get pull request reviews
+3. Contribute to open-source projects by using pull requests and employ best practices to ask for help or get pull request reviews
 4. Compare open-source repositories to recommended community standards
 
 ## Chunk your content into subtasks
