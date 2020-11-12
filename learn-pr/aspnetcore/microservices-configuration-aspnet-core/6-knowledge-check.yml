@@ -32,10 +32,10 @@ quiz:
       choices:
         - content: "True"
           isCorrect: false
-          explanation: "`<Feature>` Tag Helper are part of the `Microsoft.FeatureManagement.AspNetCore` NuGet package."
+          explanation: "`<Feature>` Tag Helper is part of the `Microsoft.FeatureManagement.AspNetCore` NuGet package. Add this package to your projects, and register the feature manager Tag Helper using an `@addTagHelper` directive to use them in Razor pages."
         - content: "False"
           isCorrect: true
-          explanation: "`<Feature>` Tag Helper are part of the `Microsoft.FeatureManagement.AspNetCore` NuGet package."
+          explanation: "`<Feature>` Tag Helper is part of the `Microsoft.FeatureManagement.AspNetCore` NuGet package. Add this package to your projects, and register the feature manager Tag Helper using an `@addTagHelper` directive to use them in Razor pages."
     - content: Which of the following statements is **NOT** true about Azure App Configuration?
       choices:
         - content: Azure App Configuration provides a service to centrally manage application settings and feature flags.
