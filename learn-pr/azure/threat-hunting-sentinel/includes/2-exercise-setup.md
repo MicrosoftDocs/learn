@@ -12,19 +12,18 @@ To deploy the prerequisites for the exercise, perform the following steps.
 |||
 | --- | --- |
 | **Subscription** | Select your Azure subscription |
-| **Resource Group*** | Select **Create new** and provide name for the resource group, for example **azure-sentinel-rg** .|
+| **Resource Group*** | Select **Create new** and provide name for the resource group, for example **azure-sentinel-rg**.|
 | **Locations*** | From the drop-down menu select the location where you deployng the Azure Sentinel. |
 | **Workspace name***  | Provide unique name for the Azure Sentinel Workspace, for example ***yourname*-sentinel**. |
 | **Location** | Accept the default value **[resourceGroup().location]**. |
 | **Simplevm Name** | Accept the default value **simple-vm**.|
 | **Simplevm Windows OS Version** | Accept the default value **2016-Datacenter**.|
-<!-- Remove extra space right after "**azure-sentinel-rg**".  -->
+
 4. Select the checkbox for **I agree to the terms and conditions stated above** and then select **Purchase**
 
 ![Screenshot for Custom Deployment](../media/02-Custom-Deployment.PNG)
 
 > [!Note]
-
 > Wait for the deployment to complete. The deployment should take less than 5 minute.
 
 **Task 2: Configure Azure Sentinel Connectors**
@@ -36,12 +35,11 @@ In this task, you will deploy Azure Sentinel connector to Azure Activity.
 3. In the **Data connectors** pane, search for and select **Azure Activity.** In the detailed pane on the right site click on **Open connector page.**
 4. In the **Azure Activity** pane, click on the link **Configure Azure Activity logs**.
 5. Click on your subscription and then click **Connect.**
-6. When you receive status **Connected** , you can close all open blades to return on **Azure Sentinel| Data connector** blade.
-<!-- Missing space in between "Azure Sentinel" and "|". It should be "**Azure Sentinel | Data connector**". -->
+6. When you receive status **Connected** , you can close all open blades to return on **Azure Sentinel | Data connector** blade.
+
 ![Screenshot for Azure Sentinel Connector](../media/02-Azure-Sentinel-Connector.PNG)
 
 > [!Note]
-
 > The connector for Azure Activity could take 15 minutes until shows some date in the Azure Sentinel.
 
 ## Check resources created
