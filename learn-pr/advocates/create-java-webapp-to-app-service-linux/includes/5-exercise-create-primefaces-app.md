@@ -1,13 +1,12 @@
-You've been tasked with creating a simple Application using the JavaServer Facess framework. 
-The TODO application can add the new tasks and you can see the lists of all tasks and finally you can mark the task as finished.
-As part of that evaluation, you will build a web application and deploy it to Linux on Azure App Services Tomcat.
+You'll been tasked to create a Java Server Faces `Todo` application that can add new tasks, see the lists of all tasks and mark the task as finished.
+In this exercise, you'll build this web application and deploy it to Azure App Services.
 
 :::image type="content" source="../media/primefaces-todo-list.png" alt-text="My ToDo List App":::
 
 ## Exercise Create Todo web app with PrimeFaces
 
-In order to create a Todo Web Application, we will create the `PrimeFaces Web Page` in XHTML file. After that, we will create the `DataModel class`. In the DataModel class, we will define `id`, `category`, `name` and `complete` field. And individual Todo item has these attributes. Then we will create `DAO class` which is used to store the data of Todo Items and update Items. Finally we will create the `Controller class` which is used as a Backing Bean of PrimeFaces Web Page. In this class, we will implement the binding field of the PrimeFaces web page and
-also implement the operation which user pushed the button.
+In order to create a Todo Web Application, we'll create the `PrimeFaces Web Page` in XHTML file. After that, we'll create the `DataModel class`. In the DataModel class, we'll define `id`, `category`, `name` and `complete` field. All our Todo items will have these attributes. Then we'll create a `DAO class` which is used to store the data of Todo Items and update Items. Finally we'll create the `Controller class` which is used as a Backing Bean for our PrimeFaces Web Page. In this class, we will implement the binding field of the PrimeFaces web page and
+also implement the operation when a user pushes its button.
 
 ### Creating a JSF Web Page
 

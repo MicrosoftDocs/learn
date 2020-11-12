@@ -1,6 +1,5 @@
-You've been asked to create  an application using JavaServer Faces. 
-Your application can add new tasks, displays lists of tasks and mark the task as completed.
-You'll build a web application and deploy it to Linux on Azure App Service Tomcat.
+You've been asked to create a Java Server Faces web application that can handle Form submission. 
+You'll build a web application and deploy it locally to a Tomcat server.
 
 ## Create a Simple JSF Web app on Tomcat
 

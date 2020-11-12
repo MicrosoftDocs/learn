@@ -205,4 +205,4 @@ If you code and execute the above DataTable, the following screen will be displa
 :::image type="content" source="../media/primefaces-datatable.png" alt-text="PrimeFaces DataTable":::
 
 In this section, we discussed how to use PrimeFaces Components.  
-Since Next section, we'll create your Todo Application by using the above PrimeFaces components.
+In the next section, we'll create your Todo Application by using the above PrimeFaces components.
