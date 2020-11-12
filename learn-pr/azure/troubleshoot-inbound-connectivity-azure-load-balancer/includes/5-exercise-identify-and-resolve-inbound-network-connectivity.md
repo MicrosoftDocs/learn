@@ -4,7 +4,13 @@ In this exercise, you'll use a script to reconfigure the environment and cause h
 
 ## Reconfigure load balancer and retest
 
-1. In Azure Cloud Shell, go to the **src/scripts** folder.
+1. In Azure Cloud Shell, set the resource group name.
+
+    ```bash
+    export RESOURCEGROUP=learn-ts-loadbalancer-rg
+    ```
+  
+1. Go to the **src/scripts** folder.
 
     ```bash
     cd ~/load-balancer/src/scripts
@@ -76,22 +82,10 @@ You can't ping the *appretailvm1* or *appretailvm2* virtual machines directly be
 1. Run the following command to send an HTTP GET request to the retailappvm1 virtual machine.
 
     ```bash
-    wget retailappvm1
+    curl -v http://retailappvm1
     ```
 
-    Again, this command should be successful. You can examine the page returned with the following command.
-
-    ```bash
-    cat index.html
-    ```
-
-    The file will contain the text **retailappvm1**. This is the response from the web app running on that virtual machine.
-
-1. Delete the *index.html* file.
-
-    ```bash
-    rm index.html
-    ```
+    Again, this command should be successful.
 
 ### Check health probes and routing rules
 

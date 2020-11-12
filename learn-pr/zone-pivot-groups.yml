@@ -324,3 +324,11 @@ groups:
       title: PowerShell
     - id: cli
       title: Azure CLI
+- id: cosmos-db-programming-model-java-spring
+  title: Cosmos DB programming model
+  prompt: Choose a Cosmos DB programming model
+  pivots:
+    - id: java
+      title: Java SDK for Azure Cosmos DB
+    - id: spring
+      title: Spring Data

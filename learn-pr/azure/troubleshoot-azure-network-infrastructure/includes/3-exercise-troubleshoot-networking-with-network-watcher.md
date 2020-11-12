@@ -134,9 +134,10 @@ Now let's use the Azure CLI to set up Network Watcher in the same region as the 
 To enable Network Watcher, run this command:
 
 ```azurecli
-az network watcher configure \
-    --resource-group $RG \
-    --enabled
+az network watcher configure \ 
+--resource-group $RG \ 
+--location <location> \ 
+--enabled true
 ```
 
 ## Use Network Watcher to show the topology

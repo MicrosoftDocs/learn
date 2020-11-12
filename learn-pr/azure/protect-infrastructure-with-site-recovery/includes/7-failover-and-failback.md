@@ -22,15 +22,15 @@ The flexibility of failing over single VMs, or failing over using a recovery pla
 
 Reprotecting takes anywhere between 45 minutes to 2 hours, depending on the size and type of VM. Unlike the other Site Recovery processes that can be monitored by watching the progress of the jobs, you must view reprotection progress at the VM level. This requirement is because the synchronization phase isn't listed as a site recovery job.
 
-![Screenshot showing the status of the patient-records VM, with the percentage synchronized highlighted](../media/7-reprotection-progress.png)
+This image shows the status of the protected item, with the percentage synchronized highlighted.
 
-The above image shows the status of the protected item, with the percentage synchronized highlighted.
+![Screenshot showing the status of the patient-records VM, with the percentage synchronized highlighted](../media/7-reprotection-progress.png)
 
 ## What is failback?
 
 Failback is the reverse of a failover. It's where a completed failover to a secondary region has been committed, and is now the production environment. Reprotection has completed for the failed-over environment, and the source environment is now its replica. In a failback scenario, Site Recovery will fail over back to the source VMs.
 
-The process to complete a failback is the same as a failover, even down to reusing the recovery plan. Selecting failover on your recovery plan has **from** set to the target region and the **to** set to the source region.
+The process to complete a failback is the same as a failover, even down to reusing the recovery plan. Selecting failover on your recovery plan has **from** set to the target region, and the **to** set to the source region.
 
 ## Managing failovers
 
@@ -38,7 +38,7 @@ Site Recovery can run failovers on demand. Test failovers are isolated, meaning 
 
 The recovery plans in Site Recovery also allow for customizing and sequencing failover and failback. The plans enable you to group machines and workloads.
 
-Flexibility can also apply to how you trigger the failover process. Manual failovers are easy to do via the Azure portal. PowerShell scripting or using runbooks in Azure Automation gives you automation options.
+Flexibility can also apply to how you trigger the failover process. Manual failovers are easy to do via the Azure portal. PowerShell scripting or using runbooks in Azure Automation also provide automation options.
 
 ### Fixing issues with a failover
 
