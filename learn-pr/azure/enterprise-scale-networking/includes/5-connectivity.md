@@ -2,7 +2,7 @@ This unit will look at connectivity to Azure, to the internet, and to platform a
 
 ## Connectivity to Azure
 
-Azure ExpressRoute is private dedicated connectivity to Azure and the preferred approach for the enterprise over virtual private network (VPN). You can use VPNs as a source of backup. Because VPNs use the internet, latency can be inconsistent. 
+Azure ExpressRoute is private dedicated connectivity to Azure and the preferred approach for the enterprise over virtual private network (VPN). VPN can be configured as a backup route if Express Route(s) fail. Because VPNs use the internet, latency can be inconsistent. 
 
 Select ExpressRoute Direct or a provider by matching your requirements for peering locations. Connect to the Microsoft network with as little latency as possible. If you need more than 10 Gbps or multiple circuits that total more than 10 Gbps, consider ExpressRoute Direct. ExpressRoute Direct is a layer 2 connection from your hardware to Microsoft's inside a peering location, and it goes up to 100 Gbps. 
 
@@ -14,7 +14,7 @@ Proactively monitor ExpressRoute circuits by using Network Performance Monitor. 
 
 ## Connectivity with the public internet
 
-Azure-native network security services such as Azure Firewall, Azure Web Application Firewall (WAF) on Azure Application Gateway, and Azure Front Door are fully managed services. So you don't incur the operational and management costs associated with infrastructure deployments, which can become complex at scale. However, the enterprise-scale architecture is fully compatible with third-party network virtual appliances if:
+Azure-native network security services such as Azure Firewall, Azure Web Application Firewall (WAF) on Azure Application Gateway, and Azure Front Door are fully managed services. Managed services assure you don't incur the operational and management costs associated with infrastructure deployments, which can become complex at scale. However, the enterprise-scale architecture is fully compatible with third-party network virtual appliances if:
 
 - Your organization prefers to use network virtual appliances.
 - Native services don't satisfy your organization's specific requirements. 

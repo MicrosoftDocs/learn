@@ -1,10 +1,10 @@
+In this exercise, we'll build a high-level Azure Sphere application that connects and sends environment telemetry to Azure IoT Hub.
+
+------
+
 ## Step 1: Prepare Azure resources
 
 You can prepare Azure cloud resources with the Azure CLI, the Azure portal (a web interface), or deployment templates. For this module, you'll use an Azure deployment template. Select **Deploy to Azure** to deploy a device provisioning service and a linked Azure IoT hub.
-
-<!-- [![Deploy to Azure](../media/deploy-azure-sphere.png)](https://azuredeploy.net/?repository=https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path/blob/master/zdocs-vs-code-iot-hub/Lab_2_Send_Telemetry_to_Azure_IoT_Central/setup) -->
-
-<!-- [Use a deployment button to deploy templates from GitHub repository](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-azure-button) -->
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2FAzure-Sphere-Developer-Learning-Path%2Fmaster%2Fdocs%2Fdocs_vs_code_iot_hub%2FLab_2_Send_Telemetry_to_Azure_IoT_Hub%2Fsetup%2Fazuredeploy.json)
 
@@ -22,6 +22,7 @@ You can prepare Azure cloud resources with the Azure CLI, the Azure portal (a we
 
 Don't close the Azure Web portal. You will need to access it again.
 
+------
 
 ## Step 2: Link your Azure Sphere device tenant to the device provisioning service
 
@@ -93,6 +94,7 @@ Devices claimed by your Azure Sphere device tenant are automatically enrolled wi
 
    ![Screenshot of Certificates and Certificate Details, with Verify highlighted.](../media/dps-certificate-verify-upload.png)
 
+------
 
 ## Step 3: Create a device provisioning service enrollment group
 
@@ -106,6 +108,7 @@ From the Azure portal:
 
    ![Screenshot of Add Enrollment Group dialog box.](../media/dps-enrollment-group-add.png)
 
+------
 
 ## Step 4: Explicitly allow connections to Azure IoT endpoints
 
@@ -139,6 +142,7 @@ Follow these steps:
 
    ![Screenshot of the overview page of IoT Hub.](../media/iot-hub-endpoint-url.png)
 
+------
 
 ## Step 5: Get the Azure Sphere tenant ID
 
@@ -156,6 +160,7 @@ Next, you need the ID of the Azure Sphere tenant that is now trusted by the devi
 
 2. Copy the tenant ID to Notepad, as you will need it soon.
 
+------
 
 ## Step 6: Open the project
 
@@ -167,7 +172,7 @@ Next, you need the ID of the Azure Sphere tenant that is now trusted by the devi
 
 4. Choose **Select Folder** to open the project.
 
-
+------
 
 ## Step 7: Set your developer board configuration
 
@@ -190,6 +195,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 4. Save the file. This will auto-generate the CMake cache.
    ![Screenshot of the CMake configuration.](../media/vs-code-open-cmake.png)
 
+------
 
 ## Step 8: Understand Azure Sphere security
 
@@ -210,18 +216,23 @@ From Visual Studio Code, open the **app_manifest.json** file. The resources this
   "Name": "AzureSphereIoTCentral",
   "ComponentId": "25025d2c-66da-4448-bae1-ac26fcdd3627",
   "EntryPoint": "/bin/app",
-  "CmdArgs": [ ],
+  "CmdArgs": [ "--ConnectionType", "DPS", "--ScopeID", "Your_ID_Scope" ],
   "Capabilities": {
     "Gpio": [
       "$BUTTON_A",
-      "$BUTTON_B",
-      "$LED1",
-      "$LED2",
       "$NETWORK_CONNECTED_LED",
-      "$RELAY"
+      "$ALERT_LED"
     ],
-    "I2cMaster": [ "$I2cMaster2" ],
-    "PowerControls": [ "ForceReboot" ]
+    "I2cMaster": [
+      "$I2cMaster2"
+    ],
+    "PowerControls": [
+      "ForceReboot"
+    ],
+    "AllowedConnections": [
+      "global.azure-devices-provisioning.net"
+    ],
+    "DeviceAuthentication": "Replace_with_your_Azure_Sphere_Tenant_ID"
   },
   "ApplicationType": "Default"
 }
@@ -274,7 +285,7 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
 
 3. Next, from Visual Studio Code, open the **main.c** file.
 
-
+------
 
 ## Step 9: Configure the Azure Sphere application
 
@@ -297,16 +308,12 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
        "Name": "AzureSphereIoTCentral",
        "ComponentId": "25025d2c-66da-4448-bae1-ac26fcdd3627",
        "EntryPoint": "/bin/app",
-       "CmdArgs": [ "0ne0099999D" ],
+       "CmdArgs": [ "--ConnectionType", "DPS", "--ScopeID", "0ne0099999D" ],
        "Capabilities": {
            "Gpio": [
                "$BUTTON_A",
-               "$BUTTON_B",
-               "$LED2",
                "$NETWORK_CONNECTED_LED",
-               "$LED_RED",
-               "$LED_GREEN",
-               "$LED_BLUE"
+               "$ALERT_LED"
            ],
            "I2cMaster": [ "$I2cMaster2" ],
            "PowerControls": [ "ForceReboot" ],
@@ -323,7 +330,7 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
 
 5. Copy the contents of your **app_manifest.json** file to Notepad. You'll need this configuration information for the next labs.
 
-
+------
 
 ## Step 10: Understand the Azure Sphere application
 
@@ -331,7 +338,8 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
 
 Open **main.c**, and scroll down to the `MeasureSensorHandler` function.
 
-In this function, there's a call to `SendMsgLedOn(msgBuffer);`.
+> [!NOTE]
+> Use **Go to Symbol in Editor** in Visual Studio Code. Use the keyboard shortcut Ctrl+Shift+O and start typing *measure*. You'll often see a function name listed twice in the drop-down. The first is the function prototype declaration, and the second is the implementation of the function.
 
 ```
 /// <summary>
@@ -339,41 +347,26 @@ In this function, there's a call to `SendMsgLedOn(msgBuffer);`.
 /// </summary>
 static void MeasureSensorHandler(EventLoopTimer* eventLoopTimer)
 {
-	static int msgId = 0;
-	static LP_ENVIRONMENT environment;
-	static const char* MsgTemplate = "{ \"Temperature\": \"%3.2f\", \"Humidity\": \"%3.1f\", \"Pressure\":\"%3.1f\", \"Light\":%d, \"MsgId\":%d }";
+    static int msgId = 0;
+    static LP_ENVIRONMENT environment;
 
-	if (ConsumeEventLoopTimerEvent(eventLoopTimer) != 0)
-	{
-		lp_terminate(ExitCode_ConsumeEventLoopTimeEvent);
-		return;
-	}
-
-	if (lp_readTelemetry(&environment))
-	{
-		if (snprintf(msgBuffer, JSON_MESSAGE_BYTES, MsgTemplate, environment.temperature, environment.humidity, environment.pressure, environment.light, msgId++) > 0)
-		{
-			SendMsgLedOn(msgBuffer);
-		}
-	}
+    if (ConsumeEventLoopTimerEvent(eventLoopTimer) != 0)
+    {
+        lp_terminate(ExitCode_ConsumeEventLoopTimeEvent);
+    }
+    else {
+        if (lp_readTelemetry(&environment) &&
+            snprintf(msgBuffer, JSON_MESSAGE_BYTES, msgTemplate,
+                environment.temperature, environment.humidity, environment.pressure, msgId++) > 0)
+        {
+            Log_Debug(msgBuffer);
+            lp_azureMsgSendWithProperties(msgBuffer, telemetryMessageProperties, NELEMS(telemetryMessageProperties));
+        }
+    }
 }
 ```
 
-The `SendMsgLedOn` function will turn on the send message LED. Then `SendMsg(message)` is called to send a JSON formatted message to Azure IoT Hub.
-
-```
-/// <summary>
-/// Turn on LED2, send message to Azure IoT and set a one shot timer to turn LED2 off
-/// </summary>
-static void SendMsgLedOn(char* message)
-{
-	lp_gpioOn(&sendMsgLed);
-	Log_Debug("%s\n", message);
-	lp_sendMsg(message);
-	lp_setOneShotTimer(&sendMsgLedOffOneShotTimer, &sendMsgLedBlinkPeriod);
-}
-```
-
+------
 
 ## Step 11: Deploy the application to Azure Sphere
 
@@ -399,7 +392,7 @@ static void SendMsgLedOn(char* message)
     > [!NOTE]
     > You might see a couple of error messages. These messages occur while the connection to Azure IoT is being negotiated.
 
-
+------
 
 ## Step 12: Expected device behavior
 
@@ -407,30 +400,22 @@ static void SendMsgLedOn(char* message)
 
 ![Photo of the Avnet Azure Sphere Kit.](../media/avnet-azure-sphere.jpg)
 
-1. The blue LED starts to blink.
-
-2. LED3 turns yellow when connected to Azure.
-
-3. Press **Button A** on the device to change the blink rate.
+1. The WLAN LED will blink every 5 seconds when connected to Azure.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
 ![Photo of the Seeed Studio Azure Sphere Kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
 
-1. The green LED starts to blink.
-
-2. The network LED turns red when connected to Azure.
-
-3. Press **Button A** on the device to change the blink rate.
+1. The WLAN LED will blink every 5 seconds when connected to Azure.
 
 
 ### Seeed Studio MT3620 Mini Dev Board
 
 ![Photo of the Seeed Studio Mini Azure Sphere Kit.](../media/seeed-studio-azure-sphere-mini.png)
 
-The green LED closest to the USB connector starts to blink.
+1. The User LED will blink every 5 seconds when connected to Azure.
 
-
+------
 
 ## Step 13: View the device telemetry from Azure Cloud Shell
 
