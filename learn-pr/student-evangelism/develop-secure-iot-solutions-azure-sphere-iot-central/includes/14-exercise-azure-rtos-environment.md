@@ -2,19 +2,17 @@
 
 1. There will be peripheral reassignments between the existing High-Level application that is running on the Azure Sphere and the new Real-Time application that will be deployed to the Azure Sphere in this exercise. So you need to delete any existing applications on the Azure Sphere to avoid clashes.
 
-    From the **Azure Sphere Developer Command Prompt**, delete the existing application by running
+    From the **Azure Sphere Developer Command Prompt** or Linux **Terminal**, delete the existing application by running
 
     ```
     azsphere device sideload delete
     ```
 
-2. You must restart the Azure Sphere device to clear the existing silicon firewall settings. From the **Azure Sphere Developer Command Prompt**, run
+2. You must restart the Azure Sphere device to clear the existing silicon firewall settings. From the **Azure Sphere Developer Command Prompt** or Linux **Terminal**, run
 
     ```
     azsphere device restart
     ```
-
-
 
 ## Step 2: Open the project
 

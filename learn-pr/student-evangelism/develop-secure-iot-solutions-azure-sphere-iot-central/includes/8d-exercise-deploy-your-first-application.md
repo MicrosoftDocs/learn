@@ -34,9 +34,10 @@
         "CmdArgs": [ "--ConnectionType", "DPS", "--ScopeID", "0ne0099999D" ],
         "Capabilities": {
             "Gpio": [
-                "$BUTTON_A",
                 "$NETWORK_CONNECTED_LED",
-                "$ALERT_LED"
+                "$LED_RED",
+                "$LED_GREEN",
+                "$LED_BLUE"
             ],
             "I2cMaster": [
                 "$I2cMaster2"
