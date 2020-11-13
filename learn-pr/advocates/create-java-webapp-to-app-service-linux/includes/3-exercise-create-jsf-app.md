@@ -1,13 +1,13 @@
-You've been asked to create a Java Server Faces web application that can handle Form submission. 
+You've been asked to create a Java Server Faces web application that can handle Form submissions. 
 You'll build a web application and deploy it locally to a Tomcat server.
 
 ## Create a Simple JSF Web app on Tomcat
 
-In the exercise, we'll create a Maven Project for Java Web Application. After created the project, we need configure three configurations as follows. First one is to add the dependency libraries to `pom.xml` file. Second is to create a CDI configuration file as `beans.xml` to use the CDI. Third is to configure the JSF on `web.xml` file. After the configurations, we can create a JSF Web Page and create the Backing Bean for server-side backend operation. Finally we'll evaluate it on local Tomcat environment.
+In the exercise, we'll create a Maven Project your Java Web application. After you have created the project, you need to configure three configurations. First one is to add the dependency libraries to `pom.xml` file. Second is to create a CDI configuration file as `beans.xml` to use the CDI. Third is to configure the JSF on `web.xml` file. After the configurations, we can create a JSF Web Page and create the Backing Bean for server-side backend operation. Finally we'll evaluate it on local Tomcat environment.
 
 ### Creating Maven project
 
-Execute the following command. This command will create a Maven project for your Java web application. We specified the architect type as, which, is provided by Maven to create a Maven Webapp project.
+Execute the following Maven archetype command. This command will create a Maven project for your Java web application:
 
    ```bash
    mvn archetype:generate \
@@ -35,7 +35,7 @@ You'll see following output:
    [INFO] ------------------------------------------------------------------------
    ```
 
-When you create a Maven project, the following files and directories will be created.
+The following files and directories are now available:
 
    ```xml
 ├── pom.xml
@@ -117,7 +117,7 @@ Replace the contents of your  `pom.xml` with the below:
 </project>
    ```
 
-If you would like to use the Java SE 11 instead of Java 8, modify the following `pom.xml` entry.
+If you would like to use the Java SE 11 instead of Java 8, modify the following `pom.xml` entry:
 
    ```xml
     <maven.compiler.source>11</maven.compiler.source>
@@ -179,7 +179,7 @@ mv index.jsp index.xhtml
 
 ### Creating a Basic Web Page for JSF
 
-Delete all the contents described in `index.xhtml` once and paste the following code by copy and paste.
+Delete all the contents described in `index.xhtml` and copy the following code:
 
    ```xml
 <?xml version='1.0' encoding='UTF-8' ?>
@@ -204,7 +204,7 @@ Delete all the contents described in `index.xhtml` once and paste the following 
 ### Create JSF Backing Bean
 
 Next, create a backing bean to implement server-side backend processing.
-Create a new directory for Java package, which will use to create the backing bean under the `src/main` directory.
+Create a new directory for your Java package, which will use to create the backing bean under the `src/main` directory.
 
 ```bash
 mkdir src/main/java
