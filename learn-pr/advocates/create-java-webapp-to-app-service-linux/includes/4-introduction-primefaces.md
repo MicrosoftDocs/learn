@@ -1,10 +1,10 @@
-In this module, we'll create a Todo application and learn about its PrimeFaces components.
+In this module, we'll create a `Todo` application and learn about its PrimeFaces components.
 
 :::image type="content" source="../media/primefaces-todo-list.png" alt-text="My ToDo List App":::
 
 ## PrimeFaces Component in the Application
 
-Next let's look at the PrimeFaces components that we 'll use to create your Todo application.
+Let's look at the PrimeFaces components that we 'll use to create your Todo application.
 
 ### PrimeFaces Layout
 
@@ -200,9 +200,9 @@ public class TodoItem implements Serializable {
 }
 ```
 
-If you code and execute the above DataTable, the following screen will be displayed.
+After you execute the above DataTable, the following screen will be displayed:
 
 :::image type="content" source="../media/primefaces-datatable.png" alt-text="PrimeFaces DataTable":::
 
 In this section, we discussed how to use PrimeFaces Components.  
-In the next section, we'll create your Todo Application by using the above PrimeFaces components.
+In the next section, we'll create your `Todo` Application by using the above PrimeFaces components.
