@@ -6,7 +6,7 @@ The need to model the whole enterprise is becoming more, and more evident. Azure
 
 Think of a customer that is able to model not only their factories, but also their suppliers, and resellers, this would allow them to further automate their operations: For example, they could capture the signal from their users’ experience or in-store demand, and tie them in real time to the production line to have visibility of the production capacity, and capability to meet the demand. They could even take it one step further by closing the loop with supplier of the raw materials that is required to meet the demand in the specific timeline. This also allows better visibility of the product, and their traceability.
 
-On the other hand, Azure Digital twins is bridging the gap between the inception, and engineering of any products, and its operations. With digital twins, and simulations, customers can do what-if analysis on their products, testing situations before they even occur. For example, before ordering a whole new part of an expensive asset, customers could simulate the impact of a change in the configuration or a repair. Coupled with AI, this gets us to a true self-healing assets, and advanced root cause analysis.
+On the other hand, the service Azure Digital twins is bridging the gap between the inception, and engineering of any products, and its operations. With digital twins, and simulations, customers can do what-if analysis on their products, testing situations before they even occur. For example, before ordering a whole new part of an expensive asset, customers could simulate the impact of a change in the configuration or a repair. Coupled with AI, this gets us to a true self-healing assets, and advanced root cause analysis.
 
 With Azure Digital Twins, customers are empowered to gain insights that drive better products, optimization of operations, cost reduction, and breakthrough customer experiences, across entire environments of all types such as buildings, factories, farms, energy networks, railways, stadiums, cities, etc. with inputs from IoT devices or any business system.
 
@@ -29,12 +29,12 @@ Many industries can benefit by innovating with IoT. Examples of industries inclu
 
 :::image type="content" source="../media/adt-ge-aviation-example.png" alt-text="GE Aviation Digital Group example of using Azure Digital Twins" lightbox="../media/adt-ge-aviation-example.png":::
 
-GE Aviation is using Azure Digital Twins to combine data from two disparate systems for creating a living replica of an aircraft. One system keeps track of the performance of an aircraft when it’s in the air. The other system keeps track of everything that happens to an aircraft once it lands on the ground. Currently it’s a very manual process to connect the data from these systems for auditing, and tracking purposes.
+GE Aviation is using Azure Digital Twins to combine data from two disparate systems for creating a living replica of the aircraft. One system keeps track of the performance of the aircraft when it’s in the air. The other system keeps track of everything that happens to the aircraft once it lands on the ground. Currently it’s a very manual process to connect the data from these systems for auditing, and tracking purposes.
 
 With the new system in place, GE Aviation will have a living database that tracks the performance of an airplane.
 
-Moving beyond tracking the performance of an aircraft in its current configuration, GE Aviation is using Azure Digital Twins to model, and maintain a record of each component, and part of the aircraft. They will be able to see previous aircrafts a part was on, the performance of the part on each  aircraft, the maintenance of the part on the previous aircraft, and the performance of the part on the current aircraft.
+Moving beyond tracking the performance of the aircraft in its current configuration, GE Aviation is using Azure Digital Twins to model, and maintain a record of each component, and part of the aircraft. They will be able to see the previous aircraft, the performance of the part on each aircraft, the maintenance of the part on the previous aircraft, and the performance of the part on the current aircraft.
 
-This new insight into the historical performance of the components of an aircraft will help them identify potential issues, diagnose current issues, and ultimately decrease the cost of maintaining the aircraft.
+This new insight into the historical performance of the components of the aircraft will help them identify potential issues, diagnose current issues, and ultimately decrease the cost of maintaining the aircraft.
 
 :::image type="content" source="../media/adt-telstra-purple-example.png" alt-text="Telstra Purple example of using Azure Digital Twins" lightbox="../media/adt-telstra-purple-example.png":::
