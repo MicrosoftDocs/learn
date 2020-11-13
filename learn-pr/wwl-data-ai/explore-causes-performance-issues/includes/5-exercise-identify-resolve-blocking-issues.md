@@ -168,3 +168,5 @@ You have been hired as a database administrator to identify performance related 
 1. Consider why the query in step 3 now completes whereas in the previous task it was blocked by the UPDATE.
 
 Read Commit Snapshot Isolation is an optimistic form of transaction isolation and the last query will show the latest committed version of the data, rather than being blocked.
+
+To finish this exercise select End below.
