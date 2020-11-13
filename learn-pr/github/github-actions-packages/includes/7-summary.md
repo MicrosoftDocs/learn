@@ -8,9 +8,9 @@ You learned about:
 - Build a container image in CI
 - Run locally a container image hosted on GitHub Docker Registry
 
-By using GitHub Actions, we were able to build our code and test it, build a container image and then publish it to GitHub Packages.
+By using GitHub Actions, we build our code and tested it, build a container image and then publish it to GitHub Packages.
 
-While you can do all these steps in your local environment, we've automated the process. So, it will now run each time you made a change 
+While you can do all these steps in your local environment, we've automated the process. It will now run each time you made a change 
 in the `Dockerfile`. With a small modification, we can run this automated process each time a pull request is opened, or merged into your main branch.
 
 ## Learn more

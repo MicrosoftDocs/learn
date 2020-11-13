@@ -1,6 +1,6 @@
 In the previous unit, you saw how to use GitHub Actions to build and publish container images.
 
-In this module, we will take a look at the other packages supported by GitHub Packages.
+In this module, we'll take a look at the other packages supported by GitHub Packages.
 GitHub Packages work with your current project's ecosystem tooling: npm for npm packages, nuget.exe, or dotnet CLI for NuGet packages, etc.
 
 ## Authenticating to GitHub Packages
@@ -32,20 +32,18 @@ The following table shows you the command tu run to authenticate to GitHub Packa
 | RubyGems     | `echo ":github: Bearer GH_TOKEN" >> ~/.gem/credentials` |
 | Maven & Gradle | You can directly authenticate while pushing.
 
-If you want to learn more about how to use GitHub Packages with your project's ecosystem, you can [read the documentation here](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem?azure-portal=true).
+If you want to learn more about how to use GitHub Packages with your project's environment, you can [read the documentation here](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem?azure-portal=true).
 
 ### Installing a package
 
-When you're authenticated, you can easily use published packages in your projects. Each package home page shows you the command to run, depending on your project ecosystem.
+When you're authenticated, you can easily use published packages in your projects. Each package home page shows you the command to run, depending on your project environment.
 
-:::image type="content" source="../media/5-github-packages-install.png" alt-text="A Package page displays information about how to install it into your project, depending on the project ecosystem." border="false":::
+:::image type="content" source="../media/5-github-packages-install.png" alt-text="A Package page displays information about how to install it into your project, depending on the project environment." border="false":::
 
 ### Managing packages
 
 GitHub Packages offer you several ways to easily manage your packages lifecycle and workflows.
 
-First, GitHub Packages features are available through GitHub API and GraphQL API. These APIs allows you to support advanced integrations scenarios through
+You can manage GitHub Packages through GitHub API and GraphQL API. These APIs allows you to support advanced integrations scenarios. For example, with the Webhook feature of GitHub, you can run code when a new package is published. Imagine you're a maintainer of an open-source project. With webhooks, you could automatically publish a new Tweet or a blog post when a new package is published.
 
-Through the Webhook feature of GitHub, you can run code when a new package is published. Imagine you're a maintainer of an open-source project. With webhooks, you could automatically publish a new Tweet or a blog post when a new package is published.
-
-Last but not least, you can use GitHub Actions to automate package management. Thanks to [delete-package-versions](https://github.com/marketplace/actions/delete-package-versions?azure-portal=true) action, you can prune automatically oldest versions of your packages while publishing a new version.
+Last but not least, you can use GitHub Actions to automate package management. With [delete-package-versions](https://github.com/marketplace/actions/delete-package-versions?azure-portal=true) action, you can automatically prune oldest versions of your packages while publishing a new version.
