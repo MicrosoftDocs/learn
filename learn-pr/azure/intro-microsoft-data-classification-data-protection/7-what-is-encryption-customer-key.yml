@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.classification-and-protection.7-what-is-encryption-customer-key
+title: What is Service encryption with Customer Key? 
+metadata:
+  title: What is Service encryption with Customer Key? 
+  description: What is Service encryption with Customer Key? 
+  ms.date: 11/13/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-what-is-encryption-customer-key.md)]

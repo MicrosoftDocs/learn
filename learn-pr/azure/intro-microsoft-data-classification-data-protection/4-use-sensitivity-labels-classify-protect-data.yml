@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.classification-and-protection.4-use-sensitivity-labels-classify-protect-data
+title: How to use sensitivity labels to classify and protect data
+metadata:
+  title: How to use sensitivity labels to classify and protect data
+  description: How to use sensitivity labels to classify and protect data
+  ms.date: 11/13/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-use-sensitivity-labels-classify-protect-data.md)]
