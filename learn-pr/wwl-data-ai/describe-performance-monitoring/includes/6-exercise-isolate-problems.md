@@ -76,4 +76,6 @@ Notice that you can find details of the performance metrics for each query.
 
     :::image type="content" source="../media/intelligentperformance.png" alt-text="Intelligent Performance":::
  
- For this query, you can see that the total duration was over 20 seconds and that it ran 10,000 times.
+    For this query, you can see that the total duration was over 20 seconds and that it ran 10,000 times.
+
+To finish this exercise select End below.
