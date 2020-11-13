@@ -40,7 +40,7 @@ units:
 - learn.azure.classification-and-protection.4-common-scenarios-classification
 - learn.azure.classification-and-protection.5-classification-integrate-protection
 - learn.azure.classification-and-protection.6-what-is-data-loss-prevention
-- learn.azure.classification-and-protection.7-ms-tech-classification-protection.
+- learn.azure.classification-and-protection.7-ms-tech-classification-protection
 - learn.azure.classification-and-protection.8-summary
 badge:
   uid: learn.azure.classification-and-protection.badge
