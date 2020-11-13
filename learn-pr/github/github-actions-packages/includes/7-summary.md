@@ -1,5 +1,3 @@
-# Summary
-
 Our goal in this module was to automate building and publishing container images into GitHub Packages.
 
 You learned about: 

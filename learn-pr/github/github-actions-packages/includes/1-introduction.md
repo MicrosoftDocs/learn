@@ -1,5 +1,3 @@
-# Introduction
-
 Package registries allow developers to share and use code libraries easily and across development
 workstations. If developers are familiar with public package registries, like npm or NuGet, deploying private
 packages is another story.
