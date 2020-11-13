@@ -6,7 +6,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-azure-sentinel%2Fazuredeploy.json)
 
-2. You will be promted to sign in your Azure subscription.
+2. You will be prompted to sign in your Azure subscription.
 3. On the **Custom deployment** page, provide the following information:
 
 |||
@@ -35,12 +35,12 @@ In this task, you will deploy an Azure Sentinel connector to Azure Activity.
 3. In the **Data connectors** pane, search for and select **Azure Activity**. In the details pane, select **Open connector page**.
 4. In the **Azure Activity** pane, select the **Configure Azure Activity logs** link.
 5. Select your subscription, and then select **Connect**.
-6. When you receive a status pf **Connected**, close all open blades to return to the **Azure Sentinel| Data connector** blade.
+6. When you receive a status of **Connected**, close all open blades to return to the **Azure Sentinel| Data connector** blade.
 
 :::image type="content" source="../media/07-Azure-Sentinel-Connector.PNG" alt-text="Screenshot of the Azure Sentinel connector." border="true":::
 
 > [!Note]
-> The connector for Azure Activity could take 15 minutes to deply. Wait till a date displays in Azure Sentinel. <!--Marjan, please check this sentence. I was not able to understand what the "date" meant here."-->
+> The connector for Azure Activity could take 15 minutes to deply. Wait till a date displays in Azure Sentinel. 
 
 ## Check the resources created
 
