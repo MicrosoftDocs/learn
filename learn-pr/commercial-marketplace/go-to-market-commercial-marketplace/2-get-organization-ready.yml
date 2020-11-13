@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.go-to-market-commercial-marketplace.2-get-organization-ready
+title: Get your organization ready
+metadata:
+  title: Get your organization ready
+  description: In this unit, we will explore some of the ways that you can prepare your organization to sell through the commercial marketplace
+  ms.date: 11/10/2020
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-get-organization-ready.md)]
