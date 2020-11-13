@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.classification-and-protection.7-ms-tech-classification-protection
+title: What are the Microsoft technologies for data classification and protection? 
+metadata:
+  title: What are the Microsoft technologies for data classification and protection? 
+  description: What are the Microsoft technologies for data classification and protection? 
+  ms.date: 11/13/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-ms-tech-classification-protection.md)]
