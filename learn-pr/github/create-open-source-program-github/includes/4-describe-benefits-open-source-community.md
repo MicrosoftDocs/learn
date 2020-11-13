@@ -14,7 +14,7 @@ Use your CONTRIBUTING file to provide details about the type of contributions yo
 
 Often, when working on an open-source project the documentation focus falls on technical documentation. A great way to include the community in your project is going beyond the technical docs. Items that can also be openly documented are: your project's roadmap and governance, contribution processes, and meeting minutes.
 
-A great way to document important discussions and gather community and contributors' feedback is using [GitHub discussions](https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/about-team-discussions). This way you can start discussions with your team and the broader community. You can even reference these discussions in issues and Pull Requests.
+You can document important discussions and gather community and contributors' feedback using [GitHub discussions](https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/about-team-discussions). This way you can start discussions with your team and the broader community. You can even reference these discussions in issues and Pull Requests.
 Keeping communication public - except for certain cases such as code of conduct incidents - ensures everyone has the same information.
 
 ## Project community profiles on GitHub
