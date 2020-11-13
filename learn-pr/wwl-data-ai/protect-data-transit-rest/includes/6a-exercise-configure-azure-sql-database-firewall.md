@@ -137,3 +137,5 @@ You've been hired as a Senior Database Administrator help ensure the security of
     :::image type="content" source="../media/dp-3300-module-33-lab-20.png" alt-text="Screenshot showing selecting a New Query.":::
 
 The results show the logged in user, containeddemo.
+
+To finish this exercise select End below.
