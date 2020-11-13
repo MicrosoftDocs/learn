@@ -35,7 +35,7 @@ public async Task<ActionResult<Product>> GetById(int id)
 The preceding action:
 
 * Responds only to the HTTP GET verb, as denoted by the `[HttpGet]` attribute.
-* Requires that the `id` value is included in the URL segment after `products/`. Remember, the `/products` pattern was defined by the controller-level `[Route]` attribute.
+* Requires that the `id` parameter's value is included in the URL segment after `products/`. Remember, the `/products` pattern was defined by the controller-level `[Route]` attribute.
 * Queries the database for a product matching the provided `id` parameter.
 
 Each `ActionResult` used in the preceding action is mapped to the corresponding HTTP status code in the following table.
@@ -100,8 +100,8 @@ public async Task<IActionResult> Update(int id, Product product)
 The preceding action:
 
 * Responds only to the HTTP PUT verb, as denoted by the `[HttpPut]` attribute.
+* Requires that the `id` parameter's value is included in the URL segment after `products/`.
 * Returns `IActionResult` because the `ActionResult` return type isn't known until runtime. The `BadRequest` and `NoContent` methods return `BadRequestResult` and `NoContentResult` types, respectively.
-* Requires that the `id` value is included in the URL segment after `products/`.
 * Updates the `Name` and `Price` properties of the product. The following code instructs EF Core to mark all of the `Product` entity's properties as modified:
 
     ```csharp
@@ -151,7 +151,7 @@ public async Task<IActionResult> Delete(int id)
 The preceding action:
 
 * Responds only to the HTTP DELETE verb, as denoted by the `[HttpDelete]` attribute.
-* Requires that `id` is included in the URL path.
+* Requires that `id` parameter's value is included in the URL segment after `products/`.
 * Queries the database for a product matching the provided `id` parameter.
 
 Each `ActionResult` used in the preceding action is mapped to the corresponding HTTP status code in the following table.
