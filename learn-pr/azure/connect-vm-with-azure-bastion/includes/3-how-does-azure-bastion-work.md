@@ -1,5 +1,5 @@
 
-An Azure Bastion deployment is per virtual network or peered virtual network. It's not per subscription, account, or virtual machine. After you provision an Azure Bastion service in your virtual network, the RDP or SSH experience is available to all your VMs in the same virtual network.
+An Azure Bastion deployment is per virtual network or peered virtual network. It's not per subscription, account, or virtual machine (VM). After you provision an Azure Bastion service in your virtual network, the RDP or SSH experience is available to all your VMs in the same virtual network.
 
 The following diagram shows an overview of how Azure Bastion works.
 

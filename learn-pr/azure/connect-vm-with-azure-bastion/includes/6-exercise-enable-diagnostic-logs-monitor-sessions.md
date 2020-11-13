@@ -2,7 +2,7 @@ In this unit, you'll see how to monitor current sessions and force a disconnect.
 
 ## Generate session data
 
-Connect to your VM in two different browser windows to create two Azure Bastion sessions.
+Connect to your virtual machine (VM) in two different browser windows to create two Azure Bastion sessions.
 
 1. In the [Azure portal](https://portal.azure.com/), select or search for **Virtual machines**.
 1. Select the virtual machine **internalappvm**.

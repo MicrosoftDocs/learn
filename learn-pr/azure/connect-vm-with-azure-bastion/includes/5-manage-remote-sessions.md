@@ -15,6 +15,7 @@ In the Azure Bastion resource, you add diagnostic settings under **Monitoring**.
 1. Select the Azure Bastion resource.
 1. Under **Monitoring**, select **Diagnostics settings**.
 1. Select **Add diagnostic setting**.
+
    :::image type="content" source="../media/5-bastion-diagnostics-settings.png" alt-text="Screenshot that shows the Add diagnostic settings link within the Diagnostics settings page.":::
 1. Enter a name for **Diagnostic setting name**.
 1. Under **log**, select **BastionAuditLogs**.
@@ -70,7 +71,7 @@ Download the .json file to view the session details. When you open the file, it 
 
 ## Manage current remote sessions
 
-Azure Bastion session monitoring lets you view which users are connected to which VMs. It shows the IP that the user connected from, how long they've been connected, and when they connected. You can select an ongoing session and force-disconnect the session to disconnect the user from the session.
+Azure Bastion session monitoring lets you view which users are connected to which virtual machines. It shows the IP that the user connected from, how long they've been connected, and when they connected. You can select an ongoing session and force-disconnect the session to disconnect the user from the session.
 
 :::image type="content" source="../media/5-delete-remote-session.png" alt-text="Screenshot of the Azure Bastion sessions page with the delete option selected for one of the two sessions.":::
 

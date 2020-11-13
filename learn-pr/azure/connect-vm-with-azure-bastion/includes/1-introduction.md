@@ -4,7 +4,7 @@ The jumpbox is an Azure VM that has a public IP, which you connect to by using R
 
 You've locked down network traffic to the jumpbox by using an Azure network security group. The network security group allows RDP and SSH requests from the local Azure virtual network and denies all other inbound requests to the public IP, across all ports.
 
-To keep your internal app VM remotely accessible, you have to maintain the jumpbox by applying updates and security patches. This maintenance work takes time away from other projects. So you'd like to investigate another way to remotely connect and manage the app VM without having to publicly expose the internal HR app or manage an additional VM.
+To keep your internal app VM remotely accessible, you have to maintain the jumpbox by applying updates and security patches. This maintenance work takes time away from other projects. So you want to investigate another way to remotely connect and manage the app VM without having to publicly expose the internal HR app or manage an additional VM.
 
 ## Learning objectives
 
