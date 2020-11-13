@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.classification-and-protection.2-what-is-sensitive-info-type
+title: What is a sensitive information type?
+metadata:
+  title: What is a sensitive information type?
+  description: What is a sensitive information type?
+  ms.date: 11/13/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-what-is-sensitive-info-type.md)]
