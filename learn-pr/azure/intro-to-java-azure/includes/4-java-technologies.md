@@ -2,13 +2,19 @@ It's necessary to distinguish between the different types of Java application be
 
 You can distinguish your type of application specification wise. The most famous ones are:
 
-## Jakarta EE, the Java for Enterprises
+## MicroProfile and Jakarta EE, the Java for Enterprises
 
-Formerly known as Oracle's Java Enterprise Edition (Java EE), is Jakarta EE open source and aims to be cloud native for java development. It's a set of specifications to enable java developers world wide to work together on java enterprise applications. The modularized structure enables developers to create straight forward and efficient software solutions. Jakarta EE was donated to the Eclipse Foundation. Jakarta EE applications can be packaged as archives with the .ear extension (EAR files) or as archives with the .war extension (WAR files).
+MicroProfile and Jakarta EE can be seen as the open source follow-up of the Java Enterprise Edition.
+
+### MicroProfile
+
+is a set of specifications for Microservice Architectures. They call themselves an _open forum to optimize Enterprise Java for a microservices architecture_. The MicroProfile aims to innovate across multiple implementations and collaborate on common areas of interest. The goal remains standardization.
+
+### Jakarta EE
+
+Jakarta EE aims to be cloud native for Java development. It's a set of specifications to enable java developers world wide to work together on java enterprise applications. The modularized structure enables developers to create straight forward and efficient software solutions. Jakarta EE was donated to the Eclipse Foundation. Jakarta EE applications can be packaged as archives with the .ear extension (EAR files) or as archives with the .war extension (WAR files).
 
 - **WebProfile** is a properly defined subset of Jakarta EE for backend services with Web focus. But no worries! You can add specific APIs of the Enterprise platform on top of it.
-
-- **MicroProfile** is a subset of Jakarta EE for Microservice Architectures. They call themselves an _open forum to optimize Enterprise Java for a microservices architecture_. The MicroProfile aims to innovate across multiple implementations and collaborate on common areas of interest. The goal remains standardization.
 
 ## Spring Framework and the Spring Ecosystem
 
