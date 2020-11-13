@@ -17,20 +17,7 @@ The following sections demonstrate how to support each of these four actions in 
 
 Replace the `// GET by ID action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following code:
 
-```csharp
-[HttpGet("{id}")]
-public async Task<ActionResult<Product>> GetById(int id)
-{
-    var product = await _context.Products.FindAsync(id);
-
-    if (product == null)
-    {
-        return NotFound();
-    }
-
-    return product;
-}
-```
+:::code language="csharp" source="../code/controllers/productscontroller.cs" id="snippet_Get":::
 
 The preceding action:
 
@@ -49,16 +36,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 Replace the `// POST action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following code:
 
-```csharp
-[HttpPost]
-public async Task<IActionResult> Create(Product product)
-{
-    _context.Products.Add(product);
-    await _context.SaveChangesAsync();
-
-    return CreatedAtAction(nameof(GetById), new { id = product.Id }, product);
-}
-```
+:::code language="csharp" source="../code/controllers/productscontroller.cs" id="snippet_Post":::
 
 The preceding action:
 
@@ -81,21 +59,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 Replace the `// PUT action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following code:
 
-```csharp
-[HttpPut("{id}")]
-public async Task<IActionResult> Update(int id, Product product)
-{
-    if (id != product.Id)
-    {
-        return BadRequest();
-    }
-
-    _context.Entry(product).State = EntityState.Modified;
-    await _context.SaveChangesAsync();
-
-    return NoContent();
-}
-```
+:::code language="csharp" source="../code/controllers/productscontroller.cs" id="snippet_Put":::
 
 The preceding action:
 
@@ -130,28 +94,13 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 Replace the `// DELETE action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following code:
 
-```csharp
-[HttpDelete("{id}")]
-public async Task<IActionResult> Delete(int id)
-{
-    var product = await _context.Products.FindAsync(id);
-
-    if (product == null)
-    {
-        return NotFound();
-    }
-
-    _context.Products.Remove(product);
-    await _context.SaveChangesAsync();
-
-    return NoContent();
-}
-```
+:::code language="csharp" source="../code/controllers/productscontroller.cs" id="snippet_Delete":::
 
 The preceding action:
 
 * Responds only to the HTTP DELETE verb, as denoted by the `[HttpDelete]` attribute.
 * Requires that `id` parameter's value is included in the URL segment after `products/`.
+* Returns `IActionResult` because the `ActionResult` return type isn't known until runtime. The `NotFound` and `NoContent` methods return `NotFoundResult` and `NoContentResult` types, respectively.
 * Queries the database for a product matching the provided `id` parameter.
 
 Each `ActionResult` used in the preceding action is mapped to the corresponding HTTP status code in the following table.
