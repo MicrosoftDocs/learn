@@ -44,10 +44,11 @@ It will take a few minutes to deploy the server with sample data. Once it's comp
 SQL IP brings a set of advanced services and SQL capabilities, forming a new information protection paradigm in SQL aimed
 at protecting the data, not just the database:
 
-* **Discovery & recommendations** – The classification engine scans your database and identifies columns containing potentially sensitive data. It then provides you an easy way to review and apply the appropriate classification recommendations via the Azure portal.
-* **Labeling** – Sensitivity classification labels can be persistently tagged on columns using new classification metadata attributes introduced into the SQL Engine. This metadata can then be utilized for advanced sensitivity-based auditing and protection scenarios.
-* **Monitoring/Auditing** – Sensitivity of the query result set is calculated in real time and used for auditing access to sensitive data (currently in Azure SQL DB only).
-* **Visibility** – The database classification state can be viewed in a detailed dashboard in the portal. Additionally, you can download a report (in Excel format) to be used for compliance & auditing purposes, as well as other needs.
+* **Azure SQL Auditing** – Azure SQL Auditing tracks database events and writes them to an audit log in your Azure storage account, Log Analytics workspace or Event Hub.
+* **Data Discovery & Classifications** – Is built into Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics. It provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your databases.
+* **Dynamic data masking** – Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics support dynamic data masking. Dynamic data masking limits sensitive data exposure by masking it to non-privileged users.
+* **Security Center** – Scans your database and makes recomendations to improve security. Also alowes you to set up and and monitor **Security Alerts**.
+* **Transparent data encryption** – Transparent data encryption encrypts your databases, backups, and logs at rest without any changes to your application. To enable encryption, go to each database.
 
 ### Classify your SQL DB
 
@@ -56,19 +57,19 @@ Let's classify the data in this sample Azure SQL database.
 1. Under the **Security** heading in the Azure SQL Database pane, navigate to **Security Center**.
 1. If Advanced Data Security isn't enabled, select the **Settings** at the top, and then **Enable** button to enable it. As noted in the instructions above, you can turn this on as part of the DB creation. This will take a minute to activate.
 
-1. Select the **Data Discovery and Classification** on the left.
+1. Select the **Security Center** on the left.
 
-    ![Screenshot of the Advanced Threat Protection pane, with the Data Discovery and Classification preview card called out.](../media/M4_01_02_01.png)
+    :::image type="content" source="../media/M4_01_02_01.png" alt-text="Screenshot of the Advanced Threat Protection pane, with the Data Discovery and Classification preview card called out.":::
 
-1. The initial state will have recommended columns - 15 in this case, but none of them will be classified yet. Select the recommendations info tip at the top of the screen to see the recommended columns.
+1. Select **Data Discovery & Classification** initial state will have recommended - 15 in this case. Select Security check to review the recomendations.  If you have not yet run the check do so now.
 
     ‎![Screenshot of the Data discovery and classification (preview) pane, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_02.png)
 
 1. Select all the columns and then **Accept selected recommendations**.
 
-1. Select **Save** to save the recommendations, and then switch back to the **Overview** tab.
+1. Select **Save** to save the recommendations, and then switch back to the **Data Discovery & Classification**.
 
-1. Review the **Overview** tab. Notice that it includes a summary of the current classification state of the database, including a detailed list of all classified columns. You can also filter this view to only see specific schema parts, information types, and labels.
+1. Review the **Data Discovery & Classification**. Notice that it includes a summary of the current classification state of the database, including a detailed list of all classified columns. You can also filter this view to only see specific schema parts, information types, and labels.
 
     ‎![Screenshot of the Data discovery and classification (preview) pane, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_021.png)
 
@@ -90,7 +91,7 @@ You can either take the suggested classifications as we did earlier, or manually
 
     ![Screenshot of the Data discovery and classification (preview) pane with Add classification selected.](../media/M4_01_02_06.png)
 
-1. In the Add classification pane, configure the five fields that display, and then select Add classification:
+1. In the Add classification pane, configure the five fields that display, and then select **+ Add classification**:
    * Schema name
    * Table name
    * Column name
@@ -99,11 +100,11 @@ You can either take the suggested classifications as we did earlier, or manually
 
     ![In the Add classification pane, the previously mentioned fields are called out.](../media/M4_01_02_07.png)
 
-1. To complete your classification and persistently label (tag) the database columns with the new classification metadata, in the top menu of the window, select **Save**.
+1. To complete your classification and persistently label (tag) the database columns with the new classification metadata, in the top menu of the window, select **+ Add classification** at the bottom of the form and **Save** on the **Data Discovery & Classification** overview page.
 
-1. Switch back to the **Overview** tab to now see **16** columns identified.
+1. You should now see **Overview  & Classification** tabs at the top.
 
-1. Try changing some of the other classifications for identified columns - for example, setting the password data to **Highly Confidential**.
+1. Select the Clasification Tab, and changing some of the classifications for identified columns - for example, setting the PasswordHash to **Highly Confidential** in the Seneitivity label columns.
 
 1. You can also filter the data being viewed through the filter boxes right below the graphs on the **Overview** tab.
 
