@@ -1,4 +1,6 @@
-This exercise is optional. To complete it, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+<!-- Jason: This exercise is exactly the same, I think, as the one I commented on in Module 5 so if you found any of those comments useful I'd deploy them here. --> 
+
+This exercise is optional. To complete it, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin. 
 
 To deploy the prerequisites for the exercise, perform the following steps.
 
