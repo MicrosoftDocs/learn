@@ -1,15 +1,14 @@
-In this section, in order to deploy your Java Web Application, we will use the `Maven Plugin for Azure App Service`.  
-At first, we will add and configure the plugin. After the configuration, you will create an artifact of the Maven project as `war` file. After that you can deploy it to the `Azure App Service` from the Maven command. Then you can access to your application on Azure by using your Web Browser. If you have Azure CLI command, you can also see the Application log stream from the command line.
+In this section, you'll use the `Maven Plugin for Azure App Service`, to deploy your application to Azure.
 
 ## Configure Maven Plugin for Azure App Service
 
-In order to add and configure the `Maven Plugin for Azure App Service`, please execute the following command.
+To configure the `Maven Plugin for Azure App Service`, execute the following command:
 
 ```bash
 mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 ```
 
-When you execute the command, some question items will be displayed at the prompt, so enter and select the appropriate items and set them. Please enter the following contents this time.
+After the command, some question will be displayed at the prompt, so enter and select the appropriate items and set them. Enter the following options:
 
 |  Item  |  Input value  |
 | ---- | ---- |
@@ -20,7 +19,7 @@ When you execute the command, some question items will be displayed at the promp
 |  Define value for Runtime Stack  |  3: TOMCAT 9.0 |
 |  Confirm (Y/N)  |  Y |
 
-When you execute it, the following will be displayed.
+After you execute the command, the results will be displayed:
 
 ```bash
 mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
@@ -84,12 +83,12 @@ Confirm (Y/N) [Y]: y
 [INFO] ------------------------------------------------------------------------
 ```
 
-When you succeeded the command, the `<plugins>` entry similar to the following will be added to the `pom.xml` file.
+You'll see a new section in the `<plugins>` section in your `pom.xml` file.
 
-If you want to change the resource group name, instance name, and deployment location, please change the `<resourceGroup>`, `<appName>`, and `<region>`, entries respectively.
+If you want to change the resource group name, instance name, and deployment location, change `<resourceGroup>`, `<appName>`, and `<region>`.
 
-Also, in order to listen to the PORT number 80 on Azure App Services, we need to configure the port transfer setting on `PORT` and `WEBSITES_PORT` inside of the `<appSettings>`.
-Because Tomcat start the service with port number 8080 by default.
+To listen to the PORT 80 on Azure App Services, we need to configure the port setting on `PORT` and `WEBSITES_PORT` inside `<appSettings>`.
+This port change is because Tomcat starts its service on port 8080 by default.
 And also we need to configure the timeout of startup time on  `WEBSITES_CONTAINER_START_TIME_LIMIT`.
 
 ```xml
@@ -143,7 +142,7 @@ And also we need to configure the timeout of startup time on  `WEBSITES_CONTAINE
 
 ### Compile & Deploy to Azure  App Services
 
-Now that the settings for deploying to Azure App Services are complete, so please compile the source code again.
+Now that the settings for deploying to Azure App Services are complete, compile the source code again:
 
 ```bash
 mvn clean package
@@ -153,7 +152,7 @@ Once compiled, use the `Maven Plugin for Azure Web Apps` command to deploy your 
 Execute the following command.
 
 ```bash
-mvn azure-webapp:deploy
+mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
 ```
 
 When the deployment is completed, the following message will be output.
@@ -168,7 +167,8 @@ When the deployment is completed, the following message will be output.
 [INFO] ------------------------------------------------------------------------
 ```
 
-When you check the message, the public URL of the deployed application is displayed in `Successfully deployed the artifact to`, so access the URL with a browser.
+The public URL of the deployed application is displayed in `Successfully deployed the artifact to`.
+ Access your URL with a browser.
 
 `https://azure-javaweb-app-1601463451101.azurewebsites.net`
 
@@ -176,9 +176,7 @@ When you check the message, the public URL of the deployed application is displa
 
 ## Confirm the Log Stream from Command Line
 
-To confirm the Log Stream, Azure CLI provide the sub command. In this command, you can see the application log on your terminal.  
-
-Execute the following command?
+To access the Log Stream, execute the following CLI command?
 
 ```azurecli
 az webapp log tail -g azure-javaweb-app -n azure-javaweb-app-1601463451101
@@ -190,4 +188,4 @@ Then you can see the following result.
 
 ## Completed the Exercise
 
-Now you finished all of exercises. In this module, you could learn how to create and package the Java Web Application, how to use the `Maven Plugin for Azure Web Apps` and deploy your application to Azure App Service. This procedure is applicable not only for JSF Application but also general Java Web Application like JAX-RS. So if you create Java Web Application, please use this step and deploy your application to Azure App Service.
+In this module, you learned how to create and package a Java Web Application, how to use the `Maven Plugin for Azure Web Apps` and deploy your application to Azure App Service. These steps are applicable not only for JSF applications but also most Java Web Application like JAX-RS.
