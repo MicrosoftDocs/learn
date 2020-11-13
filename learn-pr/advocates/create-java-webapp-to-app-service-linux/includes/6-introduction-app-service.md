@@ -13,7 +13,6 @@ Azure allows you to deploy Java web applications to different environments:
 
 Azure provides Azure App Service as Platform as a Service as the environment for running Tomcat.
 It features a Window and Linux environments, security, load balancing, autoscaling, and DevOps integration.
-
 You can leave OS and Tomcat management to Azure, and concentrate on building applications.
 
 :::image type="content" source="../media/app-service-portal-screen.png" alt-text="Azure portal Screen":::
