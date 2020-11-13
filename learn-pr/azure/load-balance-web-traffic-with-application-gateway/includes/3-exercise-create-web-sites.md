@@ -50,7 +50,9 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
       --nsg "" \
       --custom-data module-files/scripts/vmconfig.sh \
       --no-wait
-
+    ```
+    
+    ```azurecli
     az vm create \
       --resource-group $RG \
       --name webServer2 \

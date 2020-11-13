@@ -48,6 +48,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
     --public-ip-address appGatewayPublicIp \
     --http-settings-protocol Http \
     --http-settings-port 8080 \
+    --private-ip-address 10.0.0.4 \
     --frontend-port 8080
     ```
 
@@ -57,27 +58,28 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 1. To find the private IP addresses of  `webServer1` and `webServer2`, run the following commands. You will save these to variables to use in the next command.
 
     ```azurecli
-    WEBSERVER1IP="$(az vm list-ip-addresses \
+    az vm list-ip-addresses \
       --resource-group $RG \
       --name webServer1 \
       --query [0].virtualMachine.network.privateIpAddresses[0] \
-      --output tsv)"
-
-    WEBSERVER2IP="$(az vm list-ip-addresses \
+      --output tsv
+    ```
+    ```azurecli
+    az vm list-ip-addresses \
       --resource-group $RG \
       --name webserver2 \
       --query [0].virtualMachine.network.privateIpAddresses[0] \
-      --output tsv)"
+      --output tsv
     ```
 
-1. Next, we'll add the back-end pools for each web site. First, create the back-end pool for the vehicle registration site running on virtual machines. We'll use the variables with the IP addresses for each VM from the previous command.
+1. Next, we'll add the back-end pools for each web site. First, create the back-end pool for the vehicle registration site running on virtual machines. Make sure that the IP addresses in the command below match the IP addresses that were output from the previous commands.
 
     ```azurecli
     az network application-gateway address-pool create \
       --gateway-name vehicleAppGateway \
       --resource-group $RG \
       --name vmPool \
-      --servers $WEBSERVER1IP $WEBSERVER2IP
+      --servers 10.0.1.4 10.0.1.5
     ```
 
 1. To create a back-end pool for the license renewal site running on App Service, run the following command.
@@ -107,6 +109,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
         --resource-group $RG \
         --name vehicleListener \
         --frontend-port port80 \
+        --frontend-ip appGatewayFrontendIP \
         --gateway-name vehicleAppGateway
     ```
 

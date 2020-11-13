@@ -13,7 +13,7 @@ Compute targets are cloud-based resources on which you can run model training an
     - **Virtual Machine type**: CPU
     - **Virtual Machine size**: Standard_DS11_v2
     - **Compute name**: *enter a unique name*
-    * **Enable SSL configuration**: Unselected
+    * **Enable SSH access**: Unselected
 3. While the compute instance is being created, switch to the **Compute Clusters** tab, and add a new compute cluster with the following settings. You'll use this to train a machine learning model:
     - **Virtual Machine priority**: Dedicated
     - **Virtual Machine type**: CPU
@@ -22,7 +22,7 @@ Compute targets are cloud-based resources on which you can run model training an
     - **Minimum number of nodes**: 2
     - **Maximum number of nodes**: 2
     - **Idle seconds before scale down**: 120
-    * **Enable SSL configuration**: Unselected
+    * **Enable SSH access**: Unselected
 
 > [!NOTE]
 > In a production environment, you'd typically set the **minimum number of nodes** value to 0 so that compute is only started when it is needed. However, compute can take a while to start, so to reduce the amount of time you spend waiting for it in this module, you've initialized it with two permanently running nodes.
