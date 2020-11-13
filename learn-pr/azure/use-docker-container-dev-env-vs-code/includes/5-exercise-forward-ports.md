@@ -7,7 +7,7 @@ Port forwarding allows you to access a resource inside your container by forward
 1. Ensure you have "Containers" selected from the top dropdown menu.
 1. Observe port 5000 is forwarded.
 
-:::image type="content" source="../media/Remote-explorer-containers.png" alt-text="Screenshot of Remote Explorer with containers view in Visual Studio Code":::
+:::image type="content" source="../media/remote-explorer-containers.png" alt-text="Screenshot of Remote Explorer with containers view in Visual Studio Code":::
 
 ## Launch the forwarded port
 
@@ -20,7 +20,7 @@ Port forwarding allows you to access a resource inside your container by forward
 1. You'll notice port 5000 is still being used by the container but no longer being forwarded.
 1. Try navigating to http://127.0.0.1:5000/ - the page won't load since the container's port 5000 is no longer being properly forwarded.
 
-:::image type="content" source="../media/Port-5000-not-forwarded.png" alt-text="Screenshot of Port 5000 not forwarded in Forwarded Ports section of Remote Explorer in Visual Studio Code":::
+:::image type="content" source="../media/port-5000-not-forwarded.png" alt-text="Screenshot of Port 5000 not forwarded in Forwarded Ports section of Remote Explorer in Visual Studio Code":::
 
 ## Forward to a new port
 
@@ -40,7 +40,7 @@ In case you no longer want to use localhost port 5000, let's forward to a new po
 
 1. Stop forwarding port 5000.
 1. Notice the port disappears and the view is replaced with "Forward a Port...". Since the app isn't running, it isn't using port 5000, so it doesn't list port 5000 as an available but "Not Forwarded" port as it did earlier.
-1. Enter the following command in the terminal to start the project...
+1. Enter the following command in the terminal to start the project:
 
    ```bash
    python app.py

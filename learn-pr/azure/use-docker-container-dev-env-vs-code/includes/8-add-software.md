@@ -17,7 +17,7 @@ But if you make changes to your ".devcontainer" folder and need to rebuild your 
 
 However, the most efficient practice of all that persists your changes even after rebuilding is to install software through your Dockerfile.
 
-## Installing software via Dockerfile
+## Install software via Dockerfile
 
 A look at installing software via the Dockerfile is as follows:
 

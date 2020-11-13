@@ -26,12 +26,12 @@ The project should now be open in VS Code. Next, you'll install the Remote - Con
 
 The Remote - Containers extension will install, and you'll have access to the commands it adds to VS Code. Next, you'll add a dev container to this project. You'll be able to run the project, even if you don't have Python installed.
 
-## Add a Dev Container
+## Add a dev container
 
 1. Open the Command Palette.
 2. Type "add dev container."
 3. Select "Remote-Containers: Add Development Container Configuration Files."
-4. Select the following options...
+4. Select the following options:
 
    | Option                                      | Value       |
    | ------------------------------------------- | ----------- |
@@ -65,7 +65,7 @@ The container will begin building. The initial build may take a few minutes as a
 
 1.  Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the integrated terminal in VS Code.
 1.  Notice that the terminal probably looks different than your normal terminal.
-1.  Run the following command to ensure Python is there...
+1.  Run the following command to ensure Python is there:
 
     ```bash
     python --version
@@ -73,9 +73,9 @@ The container will begin building. The initial build may take a few minutes as a
 
     The terminal should output the version of Python being used in the container, i.e. "Python 3.9.0"
 
-## Install Project Dependencies
+## Install project dependencies
 
-Run the following command in the terminal to install the Flask dependencies needed to run the project...
+Run the following command in the terminal to install the Flask dependencies needed to run the project:
 
 ```bash
 pip3 install --user -r requirements.txt
@@ -83,7 +83,7 @@ pip3 install --user -r requirements.txt
 
 ## Run the project
 
-1.  Enter the following command in the terminal to start the project...
+1.  Enter the following command in the terminal to start the project:
 
     ```bash
     python app.py

@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-use-as-dev-env.md)]
+  [!include[](includes/2-use-as-development-environment.md)]

@@ -16,7 +16,7 @@ You can seamlessly switch your entire development environment just by connecting
 
 :::image type="content" source="../media/2-architecture-containers.png" alt-text="Diagram explaining split architecture of Remote - Containers":::
 
-## Adding a dev container to a project
+## Add a dev container to a project
 
 VS Code has an interface for selecting a pre-configured development container definition. This adds a ".devcontainer" folder to your project.
 

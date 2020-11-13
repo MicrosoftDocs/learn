@@ -42,7 +42,7 @@ VS Code automatically detects and forwards port 5000. It's a good practice to ma
 
 Right now, a developer setting up the project for the first time has to know to run "pip3 install --user -r requirements.txt" to install dependencies. Without these dependencies, the project won't run, and other developers might not know why.
 
-1.  Uncomment out the "postCreateCommand" option.
+Uncomment out the "postCreateCommand" option.
 
 ```json
 "postCreateCommand": "pip3 install --user -r requirements.txt"
@@ -70,11 +70,11 @@ The container will be rebuilt with the changes you've specified in the "devconta
 ## Run the app
 
 1.  Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the VS Code integrated terminal.
-1.  Run the app with the following command...
+1.  Run the app with the following command:
 
-```bash
-python app.py
-```
+    ```bash
+    python app.py
+    ```
 
 1.  Notice that you didn't have to install any dependencies. The application simply runs.
 
