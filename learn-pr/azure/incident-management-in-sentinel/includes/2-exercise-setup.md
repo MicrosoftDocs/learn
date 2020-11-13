@@ -1,6 +1,10 @@
+<!-- Jason: Up to you, but a sentence about purpose would be nice. "Complete this optional excercise to practice creating resouces in Azure" or whatever. --> 
+
 This exercise is optional. To complete it, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-To deploy the prerequisites for the exercise, perform the following steps.
+<!-- Jason: Suggested rewrite (if you don't include a sentence about the purpose): To complete this optional exercise, you need access to an Azure subscription to create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin. --> 
+
+To deploy the prerequisites for the exercise, perform the following steps <!-- Jason: Consider replacing "the following steps" with "both of the following tasks" or "task 1" depending on which you mean. --> 
 
 ## Task 1: Deploy the Azure Resource Manager template for the exercise environment
 
