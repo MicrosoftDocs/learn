@@ -30,5 +30,5 @@ In this module, you will begin to discover:
 - [Azure Static Web Apps extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps?azure-portal=true)
 - [CodeTour extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour?azure-portal=true)
 - A local Python environment set up, as seen in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa?azure-portal=true)
-- An [Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account?azure-portal=true)
-- A [GitHub account](https://docs.microsoft.com/learn/modules/introduction-to-github?azure-portal=true)
+- An [Azure account](/learn/modules/create-an-azure-account?azure-portal=true)
+- A [GitHub account](/learn/modules/introduction-to-github?azure-portal=true)
