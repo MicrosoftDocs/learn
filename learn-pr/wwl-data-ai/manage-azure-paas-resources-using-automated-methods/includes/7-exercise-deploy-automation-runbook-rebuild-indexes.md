@@ -206,3 +206,5 @@ Next you will schedule the runbook to execute on a regular basis.
     :::image type="content" source="../media/dp-3300-module-66-lab-53.png" alt-text="Screenshot of the created schedule.":::
 
 By completing this exercise you have automated the task of defragging a SQL server databases indexes at 4am every day.
+
+To finish this exercise select End below.
