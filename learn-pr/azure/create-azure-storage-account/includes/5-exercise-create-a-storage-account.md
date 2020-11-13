@@ -55,21 +55,21 @@ The following screenshot shows the completed settings for the **Basics** tab. Th
 
 1. Set the **Connectivity method** option to *Public endpoint (all networks)*. We want to allow public Internet access. Our content is public facing and you need to allow access from public clients.
 
-1. Set the **Network routing** option to *Microsoft network routing (default)*. We want to make use of the Microsoft global network that is optimized for low-latency path selection.
+1. Set the **Routing preference** option to *Microsoft network routing (default)*. We want to make use of the Microsoft global network that is optimized for low-latency path selection.
 
 :::image type="content" source="../media/5-create-storage-account-network.png" border="true" alt-text="Screenshot of a Create a storage account pane with the Networking tab selected.":::
 
 ### Configure the Data Protection options
 
-1. Leave the **Blob soft delete** option set to _Disabled_. Soft delete lets you recover your blob data in many cases where blobs or blob snapshots are deleted accidentally or overwritten.
+Boxes checked are enabled, boxes that are not checked are disabled. 
 
-1. Leave the **File share soft delete** option set to _Disabled_. File share soft delete lets you recover your blob data more easily at the folder level.
+1. Leave the **soft delete for blobs** option set to _Disabled_. Soft delete lets you recover your blob data in many cases where blobs or blob snapshots are deleted accidentally or overwritten.
+
+1. Leave the **soft delete for file shares** option set to _Disabled_. File share soft delete lets you recover your blob data more easily at the folder level.
 
 :::image type="content" source="../media/5-create-storage-account-data-protection.png" border="true" alt-text="Screenshot of a Create a storage account pane with the Advanced tab selected.":::
 
 ### Configure the advanced options
-
-1. Select the **Advanced** tab, set the **Access tier** to _Hot_. This setting is only used for Blob storage. The **Hot Access Tier** is ideal for frequently accessed data, and the **Cool Access Tier** is better for infrequently accessed data. This setting only sets the _default_ value - when you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so you'll use the high-performance option for your blobs.
 
 1. Set **Secure transfer required** to *Enabled*. The **Secure transfer required** setting controls whether **HTTP** can be used for the REST APIs used to access data in the Storage account. Setting this option to _Enabled_ will force all clients to use SSL (**HTTPS**). Most of the time you'll want to set this to _Enabled_ as using HTTPS over the network is considered a best practice.
 
@@ -80,9 +80,12 @@ The following screenshot shows the completed settings for the **Basics** tab. Th
 
 1. Set **Allow Blob public access** to *Enabled*. We'll allow clients to read data in that container without authorizing the request.
 
-1. Leave the **Large file shares** option set to _Disabled_. Large file shares provide support up to a 100 TiB, however this type of storage account can't convert to a Geo-redundant storage offering, and upgrades are permanent.
+1. Set the **Access tier** to _Hot_. This setting is only used for Blob storage. The **Hot Access Tier** is ideal for frequently accessed data, and the **Cool Access Tier** is better for infrequently accessed data. This setting only sets the _default_ value - when you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so you'll use the high-performance option for your blobs.
 
 1. Leave the **Data Lake Storage Gen2** option as _Disabled_. This is for big-data applications that aren't relevant to this module.
+
+1. Leave the **Large file shares** option set to _Disabled_. Large file shares provide support up to a 100 TiB, however this type of storage account can't convert to a Geo-redundant storage offering, and upgrades are permanent.
+
 
 The following screenshot shows the completed settings for the **Advanced** tab.
 
