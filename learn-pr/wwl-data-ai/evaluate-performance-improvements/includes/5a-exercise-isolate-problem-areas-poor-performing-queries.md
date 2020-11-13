@@ -281,3 +281,5 @@ Based on the column statistics the query optimizer has chosen a different execut
     Note that the query optimizer has been able to choose a different execution plan.
 
 You can see in the message tab that the difference between local reads is 68% (689 versus 409) more for the query without the query hint.
+
+To finish this exercise select End below.
