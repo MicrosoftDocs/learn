@@ -3,7 +3,7 @@ uid: learn.github.contribute-opensource.6-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Four multiple-choice questions
+  description: Three multiple-choice questions
   ms.date: 12/11/2020
   author: sinedied
   ms.author: yolasors
@@ -29,3 +29,30 @@ quiz:
         - content: The LICENSE file
           isCorrect: false
           explanation: "The license file describe how you can use, redistribute and modify the project."
+    - content: What is the preferred way to ask for help or reviews on a pull request?
+      choices:
+        - content: Yell at the maintainers on Twitter
+          isCorrect: false
+          explanation: "This is probably never a good way to ask for help. Always be courteous when communicating with maintainers and keep in mind that most open-source project are run on their free time."
+        - content: Create an issue
+          isCorrect: false
+          explanation: "Issues are useful to open up a discussion about a new subject or raising a bug, but you already have a place for that with your pull request."
+        - content: Add comment in the pull request
+          isCorrect: true
+          explanation: "You can either directly request a review or add a comment to your pull request to discuss anything about it."
+        - content: Send an email to a random committer on the project
+          isCorrect: false
+          explanation: "Harassing maintainers on their private inbox is never a good way to a quick answer. You should always use the public communication channels indicated by the project."
+    - content: What is needed before creating a pull request on GitHub?
+      choices:
+        - content: Send a patch file to maintainers via email
+          isCorrect: false
+          explanation: "You'll probably never get an answer by doing that. You should use the provided tools on GitHub."
+        - content: Clone a repo, commit changes and force push
+          isCorrect: false
+          explanation: "While you can clone any public GitHub repository, by default you don't have the right to push any modifications. You need to create your own copy of the repo first."
+        - content: Read contribution guidelines
+          isCorrect: true
+        - content: Fork a repo, clone it, commit changes and push
+          isCorrect: true
+
