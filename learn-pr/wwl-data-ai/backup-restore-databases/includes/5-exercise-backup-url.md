@@ -67,7 +67,7 @@ occurred.
     az storage container list --account-name “dp300storage" --account-key "storage_key"
     ```
 
-    where sdp300storage is the storage account name used you created and storage_key is the key you generated above. The output should return something similar to below:
+    where **dp300storage** is the storage account name used you created and storage_key is the key you generated above. The output should return something similar to below:
 
     :::image type="content" source="../media/storage-list.png" alt-text="Container list":::
 
@@ -79,7 +79,7 @@ occurred.
 
     where **dp300storage** is the storage account name you created above, **storage_key** is the key generated above, and **date_in_the_future** is a time later than now. **date_in_the_future** must be in UTC. An example is **2020-12-31T00:00Z** which translates to expiring at Dec 31, 2020 at midnight.
 
-    The output should return something similar to below which will be used in the next task:
+    The output should return something similar to below. Copy the shared access signature and paste it in **Notepad**, because it will be used in the next task:
 
     :::image type="content" source="../media/storage-key.png" alt-text="Shared access signature":::
 
@@ -115,16 +115,12 @@ Now that the functionality is configured, you can generate a backup file as a bl
 
     where **dp300storage** is the storage account name used in **Task 1**.
 
-    If successful, you should see output similar to this:
-
-    :::image type="content" source="../media/lab9.png" alt-text="Backup database output":::
-
     If something is configured incorrectly, you will see an error message similar to the following:
 
     :::image type="content" source="../media/backup-error.png" alt-text="Backup error":::
 
     If an error occurs, check that you did not mistype anything and that everything was created successfully.
-1.	To see that the file is actually in Azure, you can use Storage Explorer or Azure Cloud Shell. The syntax in Bash is:
+1.	To see that the file is actually in Azure, you can use Storage Explorer or Azure Cloud Shell. The Azure Cloud Shell syntax in Bash is:
 
     ```bash
     az storage blob list -c "backups" --account-name "dp300storage" --account-key "storage_key"
@@ -175,3 +171,6 @@ This task will show you how to restore a database.
     The output should be similar to this:
 
     :::image type="content" source="../media/restore-database.png" alt-text="Restore database":::
+1.	Re-run **Step 2** to verify that the data has been restored.
+
+You have now seen that you can back up a database to a URL in Azure and, if necessary, restore it.
