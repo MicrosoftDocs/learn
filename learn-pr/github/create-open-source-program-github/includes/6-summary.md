@@ -5,6 +5,7 @@ You learned about:
 - Assessing your organization's existing open-source efforts
 - Establishing the goals of an open-source program
 - Creating a repository for your open-source program, complete with contributing and communication guidelines, codes of conduct, templates, and maintainer guides
+- Exploring the community features on GitHub
 - Abiding by existing open-source licenses
 - Choosing a license for releasing an open-source project
 

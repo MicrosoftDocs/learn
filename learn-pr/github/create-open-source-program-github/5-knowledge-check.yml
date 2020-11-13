@@ -48,3 +48,14 @@ quiz:
         - content: "`LICENSE`"
           isCorrect: false
           explanation: "Not having a license can discourage participation because contributors may not be able to use your project to begin with. Having an explicit license makes it easier for them to clear usage and contribution."
+    - content: "How can you check how your project compares to community standards?"
+      choices:
+        - content: "Sending polls through your project's mailing list."
+          isCorrect: false
+          explanation: "This might give you opinions about your community but not check for community widely adopted best practices."
+        - content: "Starting a discussion for your community in GitHub discussions."
+          isCorrect: false
+          explanation: "You should use GitHub discussions to establish open dialogues with your team and communities."
+        - content: "Go to Insights>Community in your repository's main page."
+          isCorrect: true
+          explanation: "By checking your community insights you can get a better idea on what you can improve to make your project more welcoming to your community."
