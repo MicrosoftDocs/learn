@@ -81,7 +81,7 @@ Let's classify the data in this sample Azure SQL database.
 
 The **Classification** tab lists the columns and how the data is classified.
 
-   ![Screenshot of the Classification tab.](../media/M4_01_02_04.png)
+:::image type="content" source="../media/M4_01_02_04.png" alt-text="Screenshot of the Classification tab.":::
 
 As you saw earlier, the classification engine scans your database for columns containing potentially sensitive data and provides a list of recommended column classifications.
 
