@@ -59,23 +59,32 @@ az identity delete \
 
 ## Using managed identity with Azure Key Vault
 
-Use Azure Key Vault to delegate the authentication process. The `AzureTokenServiceProvider` class has the `KeyVaultTokenCallback` property, which returns a delegate. An application uses this delegate to generate and authenticate the access token for the Key Vault service, based on the managed identity of the app. 
+Using the [DefaultAzureCredential](https://github.com/Azure/azure-sdk-for-js/blob/master/sdk/identity/identity/README.md#defaultazurecredential) provider shown below, we can authenticate with a managed identity when in production, and also leverage local developer credentials during development. To use it, you'll need to install the Azure.Identity package:
 
-A `KeyVaultClient` object is used to access secrets in a key vault. This object can use an `AuthenticationCallback` object to invoke the delegate. The following code shows how to create a `KeyVaultClient` object that authenticates the managed identity of an app.
-
-```C#
-KeyVaultClient keyVaultClient = new KeyVaultClient(
-    new KeyVaultClient.AuthenticationCallback(azureServiceTokenProvider.KeyVaultTokenCallback));
+```PowerShell
+dotnet install Azure.Identity
 ```
 
-After you authenticate the managed identity, you can call the `GetSecretAsync` method of the `KeyVaultClient` object to retrieve a named secret.
+Using the `DefaultAzureCredential` we can now create an authenticated `SecretClient`
 
-```C#
-string keyVaultName = ...;
-string keyVaultSecretName = ...;
-var secret = await keyVaultClient
-    .GetSecretAsync($"https://{keyVaultName}.vault.azure.net/secrets/{keyVaultSecretName}")
-    .ConfigureAwait(false);
+```csharp
+var client = new SecretClient(vaultUri: new Uri(keyVaultUrl), credential: new DefaultAzureCredential());
+```
 
-Console.WriteLine($"Secret: {secret.Value}");
+After creating our client, we can list all the secrets in the Key Vault. List operations don't return the secrets with values. Instead, they return the name and other information about the secret. So, for each returned secret name we must call GetSecret to get the secret with its secret value.
+
+```csharp
+AsyncPageable<SecretProperties> allSecrets = client.GetPropertiesOfSecretsAsync();
+
+await foreach (SecretProperties secretProperties in allSecrets)
+{
+    // Getting a disabled secret will fail, so skip disabled secrets.
+    if (!secret.Enabled.GetValueOrDefault())
+    {
+        continue;
+    }
+
+    KeyVaultSecret secretWithValue = await client.GetSecretAsync(secret.Name).ConfigureAwait(false);
+    Console.WriteLine(secretWithValue.Value);
+}
 ```
