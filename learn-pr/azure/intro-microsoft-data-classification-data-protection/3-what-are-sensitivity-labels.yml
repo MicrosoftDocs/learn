@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.data-classification-and-data-protection.3-what-is-data-classification
+uid: learn.azure.data-classification-and-data-protection.3-what-are-sensitivity-labels
 title: What are sensitivity labels?
 metadata:
   title: What are sensitivity labels?
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-what-is-data-classification.md)]
+  [!include[](includes/3-what-are-sensitivity-labels.md)]
