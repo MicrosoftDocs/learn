@@ -1,8 +1,8 @@
-We have described the most typical deployment types for Java applications. Let's now see which Azure service can work best, depending on the deployment type you need.
+We've described the most typical deployment types for Java applications. Let's now see which Azure service can work best, depending on the deployment type you need.
 
 ## Azure App Service
 
-Azure App Service is a Platform as a Service (PaaS) solution provided by Azure. It offers an easy-to-use service for running Java Web applications, with automatic OS and JVM updates and patches, as well as auto-scaling or monitoring out-of-the-box.
+Azure App Service is a Platform as a Service (PaaS) solution provided by Azure. It offers an easy-to-use service for running Java Web applications, with automatic OS and JVM updates and patches, as well as autoscaling or monitoring.
 
 App Service can run any executable Jar file, like the ones provided by Spring Boot, and can also deploy any War application on top of popular application servers like Tomcat or JBoss.
 
@@ -14,7 +14,7 @@ If you need more control about what you are deploying, App Service also supports
 
 Azure Function is the serverless platform provided by Azure, and it supports running Java workloads.
 
-Running a Java application on Azure Functions usually requires some minor configuration and setup. By nature, serverless functions will have short lives (a few minutes usually), so some of the services that you would traditionally use (like an in-memory cache) might not be as efficient or practical as with Azure App Service.
+Running a Java application on Azure Functions usually requires some minor configuration and setup. By nature, serverless functions will have short lives (a few minutes usually), so some of the services that you would traditionally use might not be as efficient or practical as with Azure App Service.
 
 As a result, Azure Functions is tailored for applications that need a lot of scalability: they can be stopped regularly to reduce cost, and they can scale up to response to high load.
 
@@ -38,6 +38,6 @@ Concerning Java specifically, the main usages are usually:
 
 - Installing and running a Java Web application manually on top of Windows or Linux
 - Installing and running Docker (or even Kubernetes) to run an image containing a Java Web application
-- Using one of the supported offers, for example Oracle Weblogic, to run Java Web applications on it
+- Using one of the supported offers, for example Oracle WebLogic, to run Java Web applications on it
 
 There is no limit to what you can install and run here, as you have full control on your Virtual Machines. The main issues you will have, however, will be to maintain those machines and to secure them. On Virtual Machines, this maintenance work is your full responsibility.
