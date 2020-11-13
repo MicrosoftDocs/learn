@@ -10,10 +10,9 @@ Platform-as-a-Service offers are easier to use, and are favored as they offer a 
 - If you have high availability, security or compliance requirements, as those features are provided out-of-the-box by a managed service.
 - If you don't have the resources, or the will to maintain a production-grade infrastructure.
 
-But some people will prefer to have a full control on their infrastructure, mostly for the two following reasons:
+But some people will prefer to have a full control on their infrastructure, mostly for the following reasons:
 
 - If you're using some specific proprietary software, or some non-common Java features, a managed service might not be the right fit for you. For example, you might want to use network broadcasting to find your application nodes, and this feature won't be available on a managed service. Or you might want to use some specific native library, which also will not be able to run on a managed service.
-- If you need to be multi-cloud, for example because you provide software to many heterogenous customers. Other clouds might not provide a Platform-as-a-Service solution, or will not offer the same level of support, making it challenging to run the same application on all of them.
 
 ## Choosing a Platform-as-a-Service solution on Azure
 
