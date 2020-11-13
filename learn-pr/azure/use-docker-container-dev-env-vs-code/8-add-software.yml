@@ -4,7 +4,7 @@ title: Add software to an existing container
 metadata:
   title: Add software to an existing container 
   description: Explore the different methods of installing additional software in an existing container, including introducing the most robust mechanism through the Dockerfile.
-  ms.date: 10/13/2020
+  ms.date: 11/13/2020
   author: bamurtaugh
   ms.author: brmurtau
   ms.topic: interactive-tutorial

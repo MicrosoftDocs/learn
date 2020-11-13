@@ -3,7 +3,7 @@ uid: learn.use-docker-container-dev-env-vs-code
 metadata:
   title: Use a Docker container as a development environment with Visual Studio Code
   description: Create and configure a full-featured container based development environment with the Visual Studio Code Remote - Containers extension. Open any folder or repository in a container and take advantage of VS Code's full feature set, like IntelliSense (completions), code navigation, and debugging.
-  ms.date: 10/06/2020
+  ms.date: 11/13/2020
   author: burkeholland
   ms.author: buhollan
   ms.topic: interactive-tutorial
@@ -29,7 +29,7 @@ prerequisites: |
        - Mac: [Docker Desktop](https://www.docker.com/products/docker-desktop) 2.0+.
        - Linux: [Docker CE/EE](https://docs.docker.com/install/#supported-platforms) 18.06+ and [Docker Compose](https://docs.docker.com/compose/install) 1.21+.
   - [Git](https://git-scm.com/downloads) and basic knowledge of GitHub, i.e. what is a repository
-iconUrl: ""
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
