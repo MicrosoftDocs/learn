@@ -1,53 +1,55 @@
-Azure Sentinel Logs provides you with the access of the various logs collected from the security connectors. The logs are collected from the connectors that are integrated with Azure Sentinel and they are stored into Azure Log Analytic Workspace.
-The Log Analytic Workspace is a repository that store data and configuration information.
-You can create queries that can filter important information and can be used in creation of the analytics rules and threat hunting.
-For example, Contoso can use Azure Sentinel Logs, to search the data from multiple sources, aggregate large data sets and perform complex operations to locate potential security threats and vulnerabilities.
+Azure Sentinel Logs provide you access to the various logs collected from the security connectors. Azure Sentinel collects these logs from its integrated connectors and stores them in the Azure Log Analytic workspace.
+
+## Log Analytic workspace
+
+The Log Analytic workspace is a repository that stores data and configuration information. You can create queries to filter important information, which you can then use to create analytics rules and detect threats.
+For example, you can use Azure Sentinel Logs in Contoso to search data from multiple sources, aggregate large data sets, and perform complex operations to locate potential security threats and vulnerabilities.
 
 ## Exploring the Azure Sentinel Logs page
 
-You search for the logs in Azure Sentinel Logs page. You can access **Logs** page in Azure Sentinel from the navigation pane on the left.
+You can search for specific logs on the **Azure Sentinel Logs** page, which you can access from the navigation pane in Azure Sentinel .
 
-The **Logs** page has four main parts:
+The **Logs** page has four main parts: <!--Marjan, what is the exact title of the page? Is Azure Sentinel Logs or just Logs-->
 
 - The page header contains links to the **Queries**, **Query explorer**, settings and help section.
-- Tables pane is presenting collected data from the logs in tables, each composed with multiple columns.
+- The **Tables** pane displays collected data from the logs in tables, each comprising multiple columns.
 - The query pane is where you write your own query expressions.
-- The query result pane shows the results of the queries
+- The query result pane displays the results of your queries.
 
 ![Screenshot that present default Logs page](../media/02-LOGS.png)
 
 ### Queries
 
-If you select the Queries link in the page header, you will open a new window where you can select from some of the predefined sample queries.
-From the **Queries** drop-down menu you can filter these queries based on:
+When you select the **Queries** link on the page header, a new window opens,  where you can select from some of the predefined sample queries. From the **Queries** drop-down menu, you can filter these queries based on:
 
 - Category
 - Resource Type
 - Solution
 - Topic
 
-You can start predefined queries by selecting **Run**, which will redirect you in the query pane, where you can observe the query structure and the results.
-Contoso is concerned about unauthorized uses, and they can select the predefined query **Unauthorized Users**, as shown in the following screenshot:
+You can start predefined queries by selecting **Run**, which will redirect you to the query pane, where you can observe the query structure and the results. To address Contoso's concern about unauthorized users, you can select the predefined query **Unauthorized Users**, as depicted in the following screenshot:
 
 ![Screenshot that present Unauthorized users](../media/02-Unauthorized-Users.png)
 
 ### Query Explorer
 
-The Query Explorer link in the page header helps you to access your previously saved queries. You can also access some **Solution Queries** that basically filter most common queries that you can use to filter the data. From the **Solution Queries**, you can either run the query or organize the query in the favorites section by clicking on the star symbol.
+You can use the **Query Explorer** link on the page header to access your previously saved queries. You can also access some **Solution Queries** that basically filter the most common queries that you can use to filter the data. From the **Solution Queries** list, you can either run the query or organize the query in the favorites section by selecting the star symbol.
 
-### Table pane
+### Table pane 
 
-The **Tables** pane is grouping logs from different solutions into tables. You can expand the solution group and see all the logs that are collected. You can select one of the logs from the tables pane, and you can either preview the data, or add that log in Favorites section.
+<!--Marjan, looking at the screenshot, it appears to be 
+Tables, Queries. Please advise fi we shoudl change the section headings accordingly.-->
 
-The following screenshot presents the logs collected in Azure Sentinel solution.
+The **Tables** pane groups logs from different solutions into tables. You can expand the solution group and see all the logs that are collected. You can also select one of the logs from the tables pane, and then you can either preview the data or add that log to the **Favorites** section.
+
+The following screenshot displays the logs collected in Azure Sentinel solution.
 
 ![Screenshot presenting Tables view](../media/02-Logs-Azure-Sentinel.png)
 
 ### Query pane
 
-You can use the Query pane to write queries that will retrieve data based on the expression that you provide. The query pane can help you in writing a right query by providing a suggestion and automatic filling of the expected elements of the query.
-You can use rich capabilities of Kusto query language (KQL) to write a query that retrieves data from the logs. One example that identify deleted virtual machines is listed in the following query code:
-
+You can use the **Query** <!-- Should this be Queries-->pane to create queries that retrieve data based on the expression that you provide. The **Query** pane can help you in writing a right query by providing suggestions and automatically filling the expected elements of the query.
+You can use the capabilities of the Kusto query language (KQL) to write a query that retrieves data from the logs. The following example illustrates how to use KQL code in your queries to identify deleted virtual machines.
 
 ```kusto
 AzureActivity
@@ -59,26 +61,26 @@ AzureActivity
 
 ### Header toolbar
 
-The header toolbar provides additional interaction with the query, as shown in the following screenshot:
+The header toolbar provides additional interaction with the query, as displayed in the following screenshot:
 
 ![Screenshot presenting Tables view](../media/02-Header-Toolbar.png)
 
-You can save the query from the query pane by selecting **Save**. That will open a new window on the right side, where you are prompted to enter the name of the saved query and category. Saved queries appear in query explorer.
-The **Time Range** field lets you change the time in the past from when the results of the query will be shown.
-You can also create a link for the query and share with other colleagues by selecting **Copy link to query.** You can also copy the query text.
-From the header toolbar in the query pane, you can create either a **New Azure Monitor alert**, or **New Azure Sentinel alert.** If you select to create a new Azure Sentinel alert, you will be directed to the steps of creation of analytics rule.
+You can save the query from the **Query** pane by selecting **Save**. This opens a new window on the right side, where you are prompted to enter the name of the saved query and category. Saved queries appear in the query explorer.
+In the **Time Range** field, you can provide a different time to change the time range for which you want to display the results of the query.
+You can also create a link for the query and share with other team members by selecting **Copy link to query**. You can also copy the query text.
+From the header toolbar in the **Query** pane, you can create either a **New Azure Monitor alert** or a **New Azure Sentinel alert**. If you opt to create a new Azure Sentinel alert, you will be directed to the next steps for creating an analytics rule.
 You can export the query into one of the following formats:
 
-- **Export to CSV**. This will export all the columns both visible and hidden into a CSV file, that you can open, for example,  with Microsoft Excel.
-- **Export to CSV-Displayed Columns**. This will only export those columns that are shown in the results windows of the query
-- **Export to Pover BI (M query)**. This will create and download a file **PowerBIQuery.txt**, that you can open with Microsoft Power BI application.
+- **Export to CSV**. Use this option to export all the columns, both visible and hidden, into a CSV file that you can open with Microsoft Excel.
+- **Export to CSV-Displayed Columns**. Use this option to  export only those columns that are shown in the results windows of the query.
+- **Export to Power BI (M query)**. Use this option to create and download a **PowerBIQuery.txt** file that you can open with Microsoft Power BI application.
 
-You can pin the results of the query into a private or shared dashboard, so you can quickly examine the results of the query.
-Format query, in the header toolbar can be used to make the query more readable.
+You can pin the results of the query into a private or shared dashboard so you can quickly examine the results of the query.
+You can use Format query on the header toolbar to make the query more readable.
 
 > [!Note]
 
-> You can export or pin the query, only if the query expression generate data in the query result section.
+> You can export or pin the query only if the query expression generates data in the query result section.
 
 ### Query results
 
