@@ -97,7 +97,7 @@ The `pom.xml` file has now added the required plugin for the automatically maven
 
 ```xml
  <plugin>
-        <groupId>com.microsoft.azure</groupId>  
+    <groupId>com.microsoft.azure</groupId>  
         <artifactId>azure-webapp-maven-plugin</artifactId>  
         <version>1.11.0</version>  
         <configuration>
@@ -123,7 +123,7 @@ The `pom.xml` file has now added the required plugin for the automatically maven
             </resources>
           </deployment>
         </configuration>
-      </plugin>
+  </plugin>
 ```
 
 ## Deploy the application with maven
