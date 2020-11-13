@@ -45,15 +45,13 @@ Under **INSTANCE DETAILS**:
 
 1. Select _Locally redundant storage (LRS)_ for the **Replication** option. Data in Azure storage accounts are always replicated to ensure high availability - this option lets you choose how far away the replication occurs to match your durability requirements. In our case, the images and videos quickly become out-of-date and are removed from the site. As a result, there's little value to paying extra for global redundancy. If a catastrophic event results in data loss, you can restart the site with fresh content from your users.
 
-1. Set the **Access tier** to _Hot_. This setting is only used for Blob storage. The **Hot Access Tier** is ideal for frequently accessed data, and the **Cool Access Tier** is better for infrequently accessed data. This setting only sets the _default_ value - when you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so you'll use the high-performance option for your blobs.
-
 The following screenshot shows the completed settings for the **Basics** tab. The resource group, subscription, and name will have different values.
 
 :::image type="content" source="../media/5-create-storage-account-basics.png" border="true" alt-text="Screenshot of a Create a storage account pane with the Basics tab selected.":::
 
 ### Configure the networking options
 
-1. Click the **Next: Networking >** button to move to the **Networking** tab, or select the **Networking** tab at the top of the screen.
+1. Select the **Networking** tab at the top of the screen.
 
 1. Set the **Connectivity method** option to *Public endpoint (all networks)*. We want to allow public Internet access. Our content is public facing and you need to allow access from public clients.
 
@@ -71,16 +69,16 @@ The following screenshot shows the completed settings for the **Basics** tab. Th
 
 ### Configure the advanced options
 
-1. Click the **Next: Advanced >** button to move to the **Advanced** tab, or select the **Advanced** tab at the top of the screen.
+1. Select the **Advanced** tab, set the **Access tier** to _Hot_. This setting is only used for Blob storage. The **Hot Access Tier** is ideal for frequently accessed data, and the **Cool Access Tier** is better for infrequently accessed data. This setting only sets the _default_ value - when you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so you'll use the high-performance option for your blobs.
 
 1. Set **Secure transfer required** to *Enabled*. The **Secure transfer required** setting controls whether **HTTP** can be used for the REST APIs used to access data in the Storage account. Setting this option to _Enabled_ will force all clients to use SSL (**HTTPS**). Most of the time you'll want to set this to _Enabled_ as using HTTPS over the network is considered a best practice.
+
+1. Set **Minimum TLS version** to *Version 1.2*. TLS 1.2 is the most secure version of TLS and is used by Azure Storage on public HTTPS endpoints. TLS 1.1 and 1.0 is supported for backwards compatibility.
 
     > [!WARNING]
     > If this option is enabled, it will enforce some additional restrictions. Azure files service connections without encryption will fail, including scenarios using SMB 2.1 or 3.0 on Linux. Because Azure storage doesn't support SSL for custom domain names, this option cannot be used with a custom domain name.
 
-1. Set **Blob public access** to *Enabled*. We'll allow clients to read data in that container without authorizing the request.
-
-1. Set **Minimum TLS version** to *Version 1.2*. TLS 1.2 is the most secure version of TLS and is used by Azure Storage on public HTTPS endpoints. TLS 1.1 and 1.0 is supported for backwards compatibility.
+1. Set **Allow Blob public access** to *Enabled*. We'll allow clients to read data in that container without authorizing the request.
 
 1. Leave the **Large file shares** option set to _Disabled_. Large file shares provide support up to a 100 TiB, however this type of storage account can't convert to a Geo-redundant storage offering, and upgrades are permanent.
 
