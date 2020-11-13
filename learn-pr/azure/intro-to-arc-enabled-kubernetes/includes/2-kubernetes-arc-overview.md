@@ -1,0 +1,83 @@
+Before we focus on how Azure Arc optimizes management of Kubernetes clusters and their workloads, it is important to have clear understanding of the fundamental characteristics of each of these technologies. 
+
+## What is Kubernetes?
+
+Kubernetes is an extensible, Linux-based, open-source platform for orchestrating containerized workloads. To ensure resiliency, each Kubernetes deployment consists of multiple, clustered servers. Some of them form function as control plane nodes, responsible for management of the remaining, worker nodes, hosting containerized workloads. In case of Kubernetes, these workloads run as pods. 
+
+> [!NOTE] 
+> A pod corresponds roughly to a container, although it can include multiple, tightly-coupled containers running on the same cluster node.
+
+Besides container-based isolation, Kubernetes offers the ability to isolate pods and other cluster resources, such as deployments, into namespaces. Namespaces form logical boundaries, which allow you to restrict access to create, view, or manage resources within the cluster. You can also use namespaces to provide isolation between users and external applications accessing different containerized workloads. 
+
+### What are the key benefits of Azure Arc?
+
+Kubernetes abstracts away the complexity of a multi-container environment that combines compute, networking, and storage components that hundreds or thousands of containers rely on. It offers declarative management model, in which you simply describe the target desired configuration and leave its implementation details for the Kubernetes control plane. In addition, the control plane delivers such benefits as 
+
+- Self-healing of pods.
+- Auoscaling of pods and, in virtualized scenarios, cluster nodes. 
+- Automatic rolling updates and rollbacks of pod deployments. 
+- Auto-discovery of new pod deployments. 
+- Load balancing across pods running the same workloads.
+
+With Kubernetes, you can view your datacenter as one large compute resource. You don't worry about how and where you deploy your containers, only about deploying and scaling your apps as needed.
+
+However, it's important to understand that Kubernetes is an highly customizable orchestration platform, which requires proper configuration, management, and maintenance:
+
+- Aspects such as deployment, scaling, load balancing, logging, and monitoring are all optional. It is up to you to identify and implement the optimal configuration addressing your specific needs.
+- Kubernetes doesn't natively provide middleware, data-processing frameworks, or databases. However, you have the option of implementing any of the corresponding functionality by using containers.
+- You're responsible for maintaining your Kubernetes environment. For example, you need to manage operating system upgrades and Kubernetes upgrades. You also manage the hardware resources available to cluster nodes, such as networking, memory, and storage.
+
+> [!NOTE] 
+> Managed Kubernetes offerings, such Azure Kubernetes Service (AKS), minimize or even eliminate some of these challenges.  
+
+## What is Azure Arc?
+
+Business technology landscape continuously evolves and becomes increasingly complex with multiple applications running on different hardware across on-premises datacenters, multiple public and private clouds, and the edge. Managing these disparate environments at scale, enhancing security across an entire organization so that it cannot be compromised, and enabling developer agility and innovation are critical for businesses to succeed and thrive. Microsoft provides tools and solutions that help customers like Contoso to innovate their hybrid environments in the secure manner and with a minimized management overhead. 
+
+Azure Arc is an example of such solution. It consists of a set of technologies that you can use to simplify administration of complex, distributed, hybrid environments. It provides a centralized, scalable, and consistent multi-cloud and on-premises governance and management platform. It facilitates adoption of automation, single-pane of glass monitoring and comprehensive security, and promotes the cloud-first strategy, regardless of where your resources are located. At the same time, Azure Arc still allows you to continue using traditional ITOps tools and practices, as you transition to the the DevOps model to fully benefit from cloud native architectural and operational patterns.
+
+:::image type="content" source="../media/2-arc-overview.png" alt-text="An administrator using Azure management tools via Azure Arc to connect and manage resources in multi-cloud, edge, and on-premises scenarios." border="false":::
+
+:::image type="content" source="../media/2-arc-management.png" alt-text="Azure management tools being used to manage both Azure hosted resources, and through Azure Arc, resources located elsewhere." border="false":::
+
+### What types of resources support Azure Arc?
+
+Azure Arc supports Azure integration in several scenarios for different types of resources residing outside of Azure via the following offerings:
+
+- Azure Arc enabled servers - physical and virtual machines running Windows or Linux operating system. 
+- Azure Arc enabled SQL Server - SQL Server instances running on Azure Arc enabled servers
+- Azure Arc enabled Kubernetes - a wide range of Kubernetes distributions.
+- Azure Stack HCI - physical clusters with virtualized workloads and containerized workloads
+- Azure Kubernetes Service on Azure Stack HCI - Azure Kubernetes Service (AKS) running on Azure Stack HCI clusters.
+- Azure Arc enabled data services - Azure SQL Managed Instance and PostgreSQL Hyperscale services running on Azure Arc enabled Kubernetes or Azure Kubernetes Service on Azure Stack HCI.
+
+> [!NOTE]
+> Verify that the Azure Arc features you intend to use in your production environment are generally available.
+
+In each of the Azure Arc enabled scenarios, Azure Arc leverages locally installed agents to establish a logical connection between the local resource and Azure. By virtue of establishing this connection, a non-Azure resource automatically becomes a hybrid Azure resource, with its own identity represented by an Azure Resource Manager resource ID. Azure Resource Manager serves as the management interface that allows you to create, modify, and delete Azure resources. Once you Arc-enable an non-Azure resource, you can use Azure Resource Manager to manage and monitor its configuration and operations. 
+
+### What are the key benefits of Azure Arc?
+
+A number of Azure Arc benefits are independent of the resouce type, since they reflect the capabilities of Azure Resource Manager. These benefits include:
+
+- The ability to organize all organizational resources by using Azure management groups, subscriptions, resource groups, and tags.
+- A single, comprehensive inventory of organizational assets across multi-clouds and on-premises, including support for searching and indexing by using Azure Resource Graph.
+- A consolidated view of Azure and Azure Arc enabled resources via the Azure portal, Azure CLI, Azure PowerShell, and Azure REST API.
+- Delegation of permissions on the management plane by using Azure Role Based Access Control (RBAC).
+- Support for the resource context access to Log Analytics data. Resource context allows you to restrict the scope of access to Log Analytics data based on the permissions to the corresponding Azure resource. Because each Azure Arc enabled server, cluster, or data service exists as an Azure resource, you can control access to its Log Analytics logs by relying on RBAC permissions assigned to that resource.
+- Integration with Azure Monitor. You can use Azure Monitor to help monitor and manage your server resources. Azure Monitor is a core component of the Microsoft strategy to extend comprehensive, cloud-based monitoring functionality beyond Azure to on-premises datacenters and to Microsoft and other cloud providers.
+
+There are also resource type-specific benefits relevant in the context of this module, such as:
+
+- Azure Arc enabled Kubernetes and AKS on Azure Stack HCI
+
+  - Enforcement of run-time policies affecting the cluster and its pods by using Azure Policy for Kubernetes and centralized reporting of the corresponding policy compliance. This allows you, for example to enforce the use of HTTPS for ingress traffic targeting Kubernetes cluster or to ensure that containers listen only on specific ports that you designate.
+  - Enhanced support for automated updates to cluster configuration by using GitOps. GitOps is the practice of automatic deployment of code residing in a Git repository. In this scenario, that code describes the desired state of Kubernetes configuration. You have the option to enforce specific GitOps-based configurations by using Azure Policy, which also provide centralized reporting of the corresponding policy compliance.
+
+> [!NOTE]
+> You will learn more about these features in the subsequent units of this module.
+
+- Azure Arc enabled data services
+
+  - Automatic upgrades and updates without any service downtime. Azure Arc enabled data services receive updates on a frequent basis including servicing patches and new features, which mirrors the update management model of their Azure counterparts. 
+  - Support for automatic scaling. Azure Arc enabled data services can auto-scale dynamically to limits dependent on the capacity of your infrastructure hosting the Kubbernetes clusters.
