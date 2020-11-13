@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.azure.classification-and-protection
+metadata:
+  title: Introduction to data classification and protection 
+  description: Learners should know and be able to describe data classification and data protection key concepts.
+  ms.date: 11/13/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to data classification and protection 
+summary: Learners should know and be able to describe data classification and data protection key concepts.
+abstract: |
+  By the end of this module, you will be able to answer:
+  - What is a sensitive information type?
+  - What is data classification?
+  - Data classification in the context of data governance and privacy compliance
+  - What are the common scenarios for using data classification?
+  - How does data classification integrate with data protection?
+  - What is data loss prevention?
+  - What are the Microsoft technologies for data classification and protection? 
+prerequisites: |
+  -Basic experience with Azure services
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- devops-engineer
+- solution-architect
+- security-engineer
+products:
+- azure
+- azure-active-directory
+- m365-information-protection
+units:
+- learn.azure.classification-and-protection.1-introduction
+- learn.azure.classification-and-protection.2-what-is-sensitive-info-type
+- learn.azure.classification-and-protection.3-what-is-data-classification
+- learn.azure.classification-and-protection.4-common-scenarios-classification
+- learn.azure.classification-and-protection.5-classification-integrate-protection
+- learn.azure.classification-and-protection.6-what-is-data-loss-prevention
+- learn.azure.classification-and-protection.7-ms-tech-classification-protection.
+- learn.azure.classification-and-protection.8-summary
+badge:
+  uid: learn.azure.classification-and-protection.badge
