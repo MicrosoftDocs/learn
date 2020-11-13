@@ -87,8 +87,8 @@ You'll see a new section in the `<plugins>` section in your `pom.xml` file.
 
 If you want to change the resource group name, instance name, and deployment location, change `<resourceGroup>`, `<appName>`, and `<region>`.
 
-To listen to the PORT 80 on Azure App Services, we need to configure the port setting on `PORT` and `WEBSITES_PORT` inside `<appSettings>`.
-This port change is because Tomcat starts its service on port 8080 by default.
+To listen to PORT 80 on Azure App Services, we need to configure the port setting on `PORT` and `WEBSITES_PORT` inside `<appSettings>`.
+This port change is necessary because Tomcat starts its service on port 8080 by default.
 And also we need to configure the timeout of startup time on  `WEBSITES_CONTAINER_START_TIME_LIMIT`.
 
 ```xml
@@ -149,7 +149,7 @@ mvn clean package
 ```
 
 Once compiled, use the `Maven Plugin for Azure Web Apps` command to deploy your application.
-Execute the following command.
+Execute the following command:
 
 ```bash
 mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
@@ -188,4 +188,4 @@ Then you can see the following result.
 
 ## Completed the Exercise
 
-In this module, you learned how to create and package a Java Web Application, how to use the `Maven Plugin for Azure Web Apps` and deploy your application to Azure App Service. These steps are applicable not only for JSF applications but also most Java Web Application like JAX-RS.
+In this module, you learned how to create and package a Java Web Application, how to use the `Maven Plugin for Azure Web Apps` and deploy your application to Azure App Service. These steps are applicable not only for JSF applications but also most Java Web Application.
