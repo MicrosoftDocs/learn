@@ -20,10 +20,10 @@ quiz:
       explanation: Bastion is a fully managed PaaS service that supports connections to VMs in the same virtual network or in a peered virtual network over the internet.
     - content: The organization can eliminate all of its VM management work.
       isCorrect: false
-      explanation: Bastion simplifies the management of your internal VMs by providing a secure connection to those VMs over the internet without making you install anything.
+      explanation: Bastion simplifies the management of internal VMs by providing a secure connection to those VMs over the internet without requiring the installation of anything.
     - content: The organization can simplify the management of its VMs.
       isCorrect: true
-      explanation: Bastion is a fully managed PaaS service. It provides seamless RDP/SSH access to VMs over the internet without making you install connection software like Remote Desktop. 
+      explanation: Bastion is a fully managed PaaS service. It provides seamless RDP/SSH access to VMs over the internet without requiring the installation of connection software like Remote Desktop. 
   - content: "At what resource level or scope does an Azure Bastion connection apply to?"
     choices:
     - content: Resource group
@@ -62,9 +62,9 @@ quiz:
     - content: Deny all inbound TCP network traffic to the Azure Bastion public IP
       isCorrect: false
       explanation: For Azure Bastion to work, your network security group needs to allow TCP access from the internet and from Azure Gateway Manager on ports 443 or 4443 to the Azure Bastion public IP.
-    - content: Apply the least privilege role-based access controls (RBAC) to use and manage Azure Bastion
+    - content: Apply role-based access control (RBAC) and the principle of least privilege to use and manage Azure Bastion
       isCorrect: true
-      explanation: Use Azure RBAC to apply the least privilege to use Azure Bastion. Apply just the reader role on the Azure Bastion resource, on the virtual machine, and on the NIC with private IP of the virtual machine.
+      explanation: Use Azure RBAC to apply the least privilege to use Azure Bastion. Apply just the reader role on the Azure Bastion resource, on the virtual machine, and on the NIC with the private IP of the virtual machine.
     - content: Remove the reader role on the Azure Bastion resource for all users
       isCorrect: false
-      explanation: For you to connect to the VM resource by using Azure Bastion, you must have the reader role on the Azure Bastion resource. You also need the reader role on the virtual machine, and on the NIC with private IP of the virtual machine.
+      explanation: For you to connect to the VM resource by using Azure Bastion, you must have the reader role on the Azure Bastion resource. You also need the reader role on the virtual machine, and on the NIC with the private IP of the virtual machine.
