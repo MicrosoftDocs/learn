@@ -18,6 +18,7 @@ abstract: |
 prerequisites: |
   - Before taking this module, it is recommended that you complete Data Fundamentals.
 iconUrl: /learn/achievements/introduction-to-azure-synapse-analytics.svg
+hidden: true
 levels:
 - beginner
 roles:
