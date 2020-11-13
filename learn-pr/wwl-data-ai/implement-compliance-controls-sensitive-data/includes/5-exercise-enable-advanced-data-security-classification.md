@@ -103,3 +103,5 @@ You've been hired as a Senior Database Administrator help ensure the security of
     :::image type="content" source="../media/dp-3300-module-33-lab-31.png" alt-text="SQL Query results":::
 
 Note that the results show that the 15 classifications have been created in the database.
+
+To finish this exercise select End below.
