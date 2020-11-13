@@ -33,9 +33,9 @@ As a database administrator, you'll set up a new Azure Database for PostgreSQL f
 1. Complete the Single Server Basics screen with the following information:
 
     ‎:::image type="content" source="../media/dp-3300-module-22-lab-38.png" alt-text="Screenshot of single server options completed.":::
-postgresql
+
     - Resource Group: **DeploySQLAzure**
-    - Server Name: **postgresql-azure-&lt;your initials&gt;** (add additional characters as a server name must be unique)
+    - Server Name: **postgresql-azure-\<your initials\>** (add additional characters as a server name must be unique)
     - Data source: **None**
     - Location: Select the Region closest to you, which has been used throughout this lab.
     - Version: **10**
@@ -96,13 +96,13 @@ postgresql
 
     - Authentication Type: **Password**
 
-    - User name: **labadmin@postgresql-azure-&lt;your initials&gt;** (note that the user name must include the hostname. This is the first part up to the period in the server name.)
+    - User name: **labadmin@postgresql-azure-\<your initials\>** (note that the user name must include the hostname. This is the first part up to the period in the server name.)
 
     - Password: **Azur3Pa$$2020**
 
-    - Database name: **&lt;default&gt;**
+    - Database name: **\<default\>**
 
-    - Server group: **&lt;default&gt;**
+    - Server group: **\<default\>**
 
     - Name (optional): You can add a friendly name for the database server if you like. It can be left blank.
 
@@ -132,3 +132,5 @@ postgresql
 1. View the results from the query.
 
 You've now seen how easy it is to create a hosted version of PostgreSQL on Azure.
+
+To finish this exercise select End below.
