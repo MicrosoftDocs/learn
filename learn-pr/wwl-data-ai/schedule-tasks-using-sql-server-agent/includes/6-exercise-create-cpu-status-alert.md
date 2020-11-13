@@ -81,3 +81,5 @@ An email like this is sent to the email address that you entered, once the rule 
 With the alert in place, if the CPU usage on average exceeds 80%, an email like this is sent.
 
 :::image type="content" source="../media/email-alert-received.png" alt-text="Screenshot of the confirmation email.":::
+
+To finish this exercise select End below.
