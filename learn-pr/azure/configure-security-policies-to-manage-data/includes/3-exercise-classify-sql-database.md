@@ -47,7 +47,7 @@ at protecting the data, not just the database:
 * **Azure SQL Auditing** – Azure SQL Auditing tracks database events and writes them to an audit log in your Azure storage account, Log Analytics workspace or Event Hub.
 * **Data Discovery & Classifications** – Is built into Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics. It provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your databases.
 * **Dynamic data masking** – Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics support dynamic data masking. Dynamic data masking limits sensitive data exposure by masking it to non-privileged users.
-* **Security Center** – Scans your database and makes recommendations to improve security. Also alowes you to set up and and monitor **Security Alerts**.
+* **Security Center** – Scans your database and makes recommendations to improve security. Also allows you to set up and monitor **Security Alerts**.
 * **Transparent data encryption** – Transparent data encryption encrypts your databases, backups, and logs at rest without any changes to your application. To enable encryption, go to each database.
 
 ### Classify your SQL DB
