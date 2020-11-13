@@ -47,7 +47,7 @@ at protecting the data, not just the database:
 * **Azure SQL Auditing** – Azure SQL Auditing tracks database events and writes them to an audit log in your Azure storage account, Log Analytics workspace or Event Hub.
 * **Data Discovery & Classifications** – Is built into Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics. It provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your databases.
 * **Dynamic data masking** – Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics support dynamic data masking. Dynamic data masking limits sensitive data exposure by masking it to non-privileged users.
-* **Security Center** – Scans your database and makes recomendations to improve security. Also alowes you to set up and and monitor **Security Alerts**.
+* **Security Center** – Scans your database and makes recommendations to improve security. Also alowes you to set up and and monitor **Security Alerts**.
 * **Transparent data encryption** – Transparent data encryption encrypts your databases, backups, and logs at rest without any changes to your application. To enable encryption, go to each database.
 
 ### Classify your SQL DB
@@ -61,7 +61,7 @@ Let's classify the data in this sample Azure SQL database.
 
     :::image type="content" source="../media/M4_01_02_01.png" alt-text="Screenshot of the Advanced Threat Protection pane, with the Data Discovery and Classification preview card called out.":::
 
-1. Select **Data Discovery & Classification** initial state will have recommended - 15 in this case. Select Security check to review the recomendations.  If you have not yet run the check do so now.
+1. Select **Data Discovery & Classification** initial state will have recommended - 15 in this case. Select Security check to review the recommendations.  If you have not yet run the check do so now.
 
     ‎![Screenshot of the Data discovery and classification (preview) pane, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_02.png)
 
@@ -104,7 +104,7 @@ You can either take the suggested classifications as we did earlier, or manually
 
 1. You should now see **Overview  & Classification** tabs at the top.
 
-1. Select the Clasification Tab, and changing some of the classifications for identified columns - for example, setting the PasswordHash to **Highly Confidential** in the Seneitivity label columns.
+1. Select the Classification Tab, and changing some of the classifications for identified columns - for example, setting the PasswordHash to **Highly Confidential** in the **Sensitivity** label columns.
 
 1. You can also filter the data being viewed through the filter boxes right below the graphs on the **Overview** tab.
 
