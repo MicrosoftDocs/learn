@@ -9,20 +9,19 @@ The state is saved when a new page is requested and is restored when returned.
 
 ### JSF Basic Functionality
 
-JSF applications are roughly divided into the following two functions.
+JSF applications are roughly divided into the following two functions:
 
--**Facelets**: Facelets is an XHTML-based template engine that describes screen layouts
--**BakingBean**: Java class that binds to Facelets and sets and processes values
+-**Facelets**: a XHTML-based template engine that describes screen layouts
+-**BakingBean**: a Java class that binds to Facelets and sets and processes values
 
-`Facelets` is an XHTML-based template engine that describes screen layouts, written by XHTML. XHTML conforms to the Document Type Definition (DTD) defined in W3C and is described as a file with a xhtml extension.
-JSF 2.3 is available for Jakarta EE 8 based applications.
+`Facelets` is an XHTML-based template engine that describes screen layouts, written by XHTML. XHTML conforms to the Document Type Definition (DTD) defined in W3C and is described as a file with a `xhtml` extension.
 
 `BackingBean` is a Java Class linked a JSF Page. It contains Action methods, Action Listeners, and Value Change listeners.
-In Java EE 6, Backing Beans were implemented with JSF-Managed Beans. Since Java EE 7, Context and Dependency Injection(CDI) beans are used as an implementation.
+In Java EE 6, Backing Beans were implemented with JSF-Managed Beans. Since Java EE 7, Context and Dependency Injection(CDI) beans are used as the implementation.
 
 ## Create a JSF Page with PrimeFaces
 
-PrimeFaces is a third-party implementation that makes it easy to create JSF web components.
+PrimeFaces is a third-party JSF implementation that makes it easy to create JSF web components.
 PrimeFaces is a lightweight library with one jar, zero-configuration, and no required dependencies. You just need to download PrimeFaces, add the primefaces-{version}.jar to your classpath and import the namespace to get started - `xmlns:p="http://primefaces.org/ui"`
 
 Let's look at an example: In the below PrimeFaces page, the `p:outputLabel`,`p:inputText`, and `p:commandButton` tags are used to display labels, input fields, and buttons.
