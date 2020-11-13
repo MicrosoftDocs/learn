@@ -21,6 +21,7 @@ abstract: |
 prerequisites: |
   * Before taking this module, it is recommended that you complete Data Fundamentals.
 iconUrl: /learn/achievements/design-a-modern-data-warehouse-using-azure-synapse-analytics.svg
+hidden: true
 levels:
 - beginner
 roles:
