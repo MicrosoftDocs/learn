@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Three multiple-choice questions
-  ms.date: 12/11/2020
+  ms.date: 11/13/2020
   author: sinedied
   ms.author: yolasors
   ms.topic: interactive-tutorial
@@ -55,4 +55,3 @@ quiz:
           isCorrect: true
         - content: Fork a repo, clone it, commit changes and push
           isCorrect: true
-
