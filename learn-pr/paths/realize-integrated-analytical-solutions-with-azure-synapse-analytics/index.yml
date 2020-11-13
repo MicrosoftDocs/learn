@@ -14,6 +14,7 @@ prerequisites: |
 summary: |
   Learn how Azure Synapse Analytics enables you to perform different types of analytics through its’ components that can be used to build Modern Data Warehouses through to Advanced Analytical solutions.
 iconUrl: /learn/achievements/realize-integrated-analytical-solutions-with-azure-synapse-analytics.svg
+hidden: true
 levels:
 - beginner
 roles:
