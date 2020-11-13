@@ -10,7 +10,7 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
 > [!NOTE]
 > If you choose to perform the exercise in this module, be aware you may incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/)
 
-## Task 1: Create an analytics rule from analytics rule wizard 
+## Task 1: Create an analytics rule from the analytics rule wizard 
 <!-- Missing "the". Sentence should be "Create an analytics rule from analytics rule wizard" -->
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Sentinel workspace.
 2. On the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
