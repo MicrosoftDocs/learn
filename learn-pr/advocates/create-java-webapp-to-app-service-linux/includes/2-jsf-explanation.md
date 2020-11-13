@@ -5,7 +5,7 @@ In this module, we'll use JavaServer Faces (JSF) as a "View" Technology to learn
 JSF was adopted as a specification in the Java Platform, Enterprise Edition (Java EE) as part of Java EE 5 (2006). Initially, JSF used Java Server Pages (JSP) to render HTML pages. Since version 2.0, Facelets, which is closer to ordinary HTML, has been used.
 
 JSF is a component-based application Framework. Each component's state is saved depending on the client's interaction.
-The state is saved a new page is requested and is restored when returned.
+The state is saved when a new page is requested and is restored when returned.
 
 ### JSF Basic Functionality
 
