@@ -24,7 +24,7 @@ The preceding command installs a specific version of the .NET SDK in the Azure C
     dotnet new webapi -o aspnet-learn/src/ContosoPets.Api
     ```
 
-    The preceding command uses an ASP.NET Core project template, aliased as *:::no-loc text="webapi":::*, to scaffold a C#-based starter web API project. The *:::no-loc text="aspnet-learn/src/ContosoPets.Api":::* directory structure is created, which contains an ASP.NET Core project running on .NET. The project name matches the *:::no-loc text="ContosoPets.Api":::* directory name.
+    The preceding command uses an ASP.NET Core project template, aliased as *:::no-loc text="webapi":::*, to scaffold a C#-based web API project. The *:::no-loc text="aspnet-learn/src/ContosoPets.Api":::* directory structure is created, which contains an ASP.NET Core project running on .NET. The project name matches the *:::no-loc text="ContosoPets.Api":::* directory name.
 
 1. Run the following command in the command shell:
 
@@ -85,11 +85,11 @@ The preceding command installs a specific version of the .NET SDK in the Azure C
 
     The preceding command uses:
 
-    * HTTPS to send a request to the web API running on port 5001 of localhost. The `WeatherForecastController` class' parameterless `Get` action method handles the request.
+    * HTTPS to send a request to the web API running on port 5001 of localhost. The `WeatherForecastController` class's parameterless `Get` action method handles the request.
     * The `-k` option to indicate that `curl` should allow insecure server connections when using HTTPS. The .NET SDK includes an HTTPS development certificate for testing. By default, `curl` rejects secure connections using this certificate.
     * The `-s` option to suppress all output except the JSON payload. The JSON is sent to the *:::no-loc text="jq":::* command-line JSON processor for improved display.
 
-    The following represents an excerpt of the JSON that is returned:
+    The following output represents an excerpt of the JSON that is returned:
 
     ```json
     [

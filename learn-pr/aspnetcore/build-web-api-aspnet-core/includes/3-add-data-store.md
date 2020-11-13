@@ -1,4 +1,4 @@
-A type of class called a *Model* is needed to represent a dog toy in inventory. The Model must include the properties of a product and is used to pass data in the web API. The Model is also used to persist dog toys in a data store. In this unit, that data store will be created as an [in-memory EF Core database](/ef/core/providers/in-memory/).
+A type of class called a *Model* is needed to represent a dog toy in inventory. The Model contains properties that represent characteristics of a product. The Model is used to pass data in the web API and to persist dog toys in a data store. In this unit, that data store will be created as an [in-memory EF Core database](/ef/core/providers/in-memory/).
 
 An in-memory database is used in this unit for simplicity. Choose a different data store for production environments, such as SQL Server or Azure SQL Database.
 
@@ -32,7 +32,7 @@ An in-memory database is used in this unit for simplicity. Choose a different da
     > [!NOTE]
     > The `touch` command is specific to Linux, the Cloud Shell's underlying OS.
 
-    A *:::no-loc text="Models":::* directory is created in the project root with an empty *:::no-loc text="Product.cs":::* file. The directory name *:::no-loc text="Models":::* is a convention. The directory name comes from the **Model**-View-Controller architecture used by the web API.
+    The project root now contains a *:::no-loc text="Models":::* directory with an empty *:::no-loc text="Product.cs":::* file. The directory name *:::no-loc text="Models":::* is a convention. The directory name comes from the **Model**-View-Controller architecture used by the web API.
 
 1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 
@@ -55,7 +55,7 @@ An in-memory database is used in this unit for simplicity. Choose a different da
 
     [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
 
-    The `Name` and `Price` properties are marked as required to ensure values are provided when creating a `Product` object. Additionally, the `Price` property enforces minimum and maximum values.
+    The `Name` and `Price` properties are annotated with attributes to constrain the values used to create a `Product` object. Specifically, the `[Required]` attribute enforces that the provided name isn't empty. The `[Range]` attribute ensures that the provided price is at least 0.01, but not higher than 9,999.99.
 
 1. Run the following command:
 
