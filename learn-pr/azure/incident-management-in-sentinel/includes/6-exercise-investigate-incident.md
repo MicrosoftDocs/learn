@@ -15,7 +15,9 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Sentinel workspace.
 2. On the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
 3. On the **Azure Sentinel | Analytics** blade, select **Create** and then select **Scheduled Query Rule**.
-4. On the **General** page, provide the inputs in the following table, and then select  **Next:Set rule logic**.
+4. On the **General** page, provide the inputs in the following table, and then select **Next:Set rule logic**.
+
+<!-- Jason: If I recall correctly, tables need headings or maybe make it a list? --> 
 
   |||
   | --- | --- |
@@ -40,6 +42,8 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
 6. In the **Result simulation** section, select **Test with current data**, and then observe the results.
 
 :::image type="content" source="../media/6-rule-logic.png" alt-text="Screenshot Analytics Rule Logic." border="true":::
+
+<!-- Jason: Steps 7 through 11 seem different than the others because they aren't steps but rather just info... maybe a list within these set of steps? --> 
 
 7. In the  **Map entities**  section, you can define the entities that are returned as part of the query rule and that you can use to perform in-depth analysis.
 8. In the **Query Scheduling** section, you can configure how often the query should run, and how far in history to look back. Accept the default values.
@@ -72,6 +76,8 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
 After completing this exercise, you will have created an incident rule from an existing template and created a scheduled query rule by using your own query code.
 
 ## Clean up the resources
+
+<!-- Jason: Probably ought to have a sentence introducing the list. "Next, you'll want to clean up the resources you have created. Complete the following steps:" Some of the othe topics don't have an intro sentence either so whatever you decide, I guess I'd keep it consistent. --> 
 
 1. In the Azure portal, search for **Resource groups**.
 2. Select **azure-sentinel-rg**.
