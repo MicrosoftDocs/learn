@@ -222,3 +222,8 @@ achievements:
   title: Differentiate Azure management tools
   summary: In this module, we'll showcase Azure portal, Azure PowerShell, Azure CLI, and Azure Cloud Shell. We'll also look at Azure Advisor, which provides recommendations on high availability, security, performance, and cost.
   iconUrl: /learn/achievements/differentiate-azure-management-tools.svg
+- uid: learn.wwl.secure-network-connectivity.badge
+  type: badge
+  title: Secure network connectivity
+  summary: Secure network connectivity
+  iconUrl: /learn/achievements/secure-network-connectivity.svg
