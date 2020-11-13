@@ -13,7 +13,7 @@ Compute targets are cloud-based resources on which you can run model training an
     - **Virtual Machine type**: CPU
     - **Virtual Machine size**: Standard_DS11_v2
     - **Compute name**: *enter a unique name*
-    - **Enable SSL configuration**: Unselected
+    - **Enable SSH access**: Unselected
 3. While the compute instance is being created, switch to the **Compute Clusters** tab, and add a new compute cluster with the following settings. You'll use this to train a machine learning model:
     - **Virtual Machine priority**: Dedicated
     - **Virtual Machine type**: CPU
@@ -22,7 +22,7 @@ Compute targets are cloud-based resources on which you can run model training an
     - **Minimum number of nodes**: 2
     - **Maximum number of nodes**: 2
     - **Idle seconds before scale down**: 120
-    - **Enable SSL configuration**: Unselected
+    - **Enable SSH access**: Unselected
 4. While the compute cluster is being created, switch to the  **Inference Clusters** tab, and add a new cluster with the following settings. You'll use this to deploy your model as a service.
     * **Kubernetes Service**: Create new
     * **Region**: *Select any available region*
@@ -31,7 +31,7 @@ Compute targets are cloud-based resources on which you can run model training an
     * **Cluster purpose**: Dev-test
     * **Number of nodes**: 2
     * **Network configuration**: Basic
-    * **Enable SSL configuration**: Unselected
+    * **Enable SSH access**: Unselected
 5. Verify that the inference cluster is in the *Creating* state - it will take a while to be created, so leave it for now.
 
 > [!NOTE]
