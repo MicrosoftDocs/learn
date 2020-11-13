@@ -1,8 +1,8 @@
-<!-- Jason: This exercise is exactly the same, I think, as the one I commented on in Module 5 so if you found any of those comments useful I'd deploy them here. --> 
+To complete this optional exercise, you need access to an Azure subscription to create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-This exercise is optional. To complete it, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin. 
+To deploy the prerequisites for the exercise, perform the following tasks.
 
-To deploy the prerequisites for the exercise, perform the following steps.
+## Task 1: Deploy the Azure Resource Manager template for the exercise environment
 
 1. Click the link below.
 
@@ -21,14 +21,12 @@ To deploy the prerequisites for the exercise, perform the following steps.
 | **Simplevm Name** | Accept the default value **simple-vm**.|
 | **Simplevm Windows OS Version** | Accept the default value **2016-Datacenter**.|
 
-4. Select the checkbox for **I agree to the terms and conditions stated above** and then select **Purchase**
-
-![Screenshot for Custom Deployment](../media/02-Custom-Deployment.PNG)
+4. Select the checkbox for **I agree to the terms and conditions stated above** and then select **Purchase**.
 
 > [!Note]
 > Wait for the deployment to complete. The deployment should take less than 5 minute.
 
-**Task 2: Configure Azure Sentinel Connectors**
+## Task 2: Configure Azure Sentinel Connectors
 
 In this task, you will deploy Azure Sentinel connector to Azure Activity.
 
@@ -39,10 +37,8 @@ In this task, you will deploy Azure Sentinel connector to Azure Activity.
 5. Click on your subscription and then click **Connect.**
 6. When you receive status **Connected** , you can close all open blades to return on **Azure Sentinel | Data connector** blade.
 
-![Screenshot for Azure Sentinel Connector](../media/02-Azure-Sentinel-Connector.PNG)
-
 > [!Note]
-> The connector for Azure Activity could take 15 minutes until shows some date in the Azure Sentinel.
+> The connector for Azure Activity could take 15 minutes until it shows some date in the Azure Sentinel.
 
 ## Check resources created
 
