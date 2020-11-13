@@ -18,3 +18,7 @@ A great way to document important discussions and gather community and contribut
 Keeping communication public - except for certain cases such as code of conduct incidents - ensures everyone has the same information.
 
 ## Project community profiles on GitHub
+
+To see how your project compares to community standards navigate to the main page of your repository. Under your repository name, select "Insights". In the left sidebar, select "Community". Most all files are right there to add. Think of adding templates for Issues and Pull Requests, further taking away barriers for people to report bugs, submit code, and just getting involved with your project.
+
+For more community best practices, check out [GitHub's Open Source Guides](https://opensource.guide/).
