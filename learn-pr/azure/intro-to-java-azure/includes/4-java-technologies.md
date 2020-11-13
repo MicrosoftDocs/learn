@@ -51,10 +51,9 @@ Java EE applications must be deployed onto Java EE-compliant application servers
 
 About 54% of Java applications are running on Tomcat the rest is splitting as the following graphic is illustrating.
 
-(Add image to show usage like:)
-![Usage of Application Servers for Java Enterprise applications](../media/4-javaee.png)
+- **Apache Tomcat** is the most used HTTP server and a Java Servlet container meaning it's an open-source implementation of the Java Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket technologies. The Java Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket specifications are developed under the Java Community Process. Tomcat is a reference implementation for the Servlet and JSP specification.
 
-- **Apache Tomcat** is the most used Enterprise Server for Java applications. It's an open-source implementation of the Java Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket technologies. The Java Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket specifications are developed under the Java Community Process.
+- **Oracle Glassfish** is the Open Source Java EE Reference Implementation; as such, they welcome external contributions. It's the reference implementation of the Java EE standard (which includes Servlet and JSP).
 
 - The **Oracle Weblogic Server** is a unified and extensible platform for developing, deploying, and running enterprise applications, such as Java, for on-premises and in the cloud. WebLogic Server offers a robust, mature, and scalable implementation of Java Enterprise Edition (EE) and Jakarta EE.
 
