@@ -8,7 +8,7 @@ As folks engage with and interact with your open-source projects, there will be 
 
 Your goal when running an open-source program is to help reduce friction and enhance the contributors' experience. Even if someone is a casual or one-time contributor your job is making it easy to contribute to your project. A good starting point is setting expectations and ground-rules through the `README`, `CONTRIBUTING`, and `CODE_OF_CONDUCT` files. Think of your project's README as the landing page for your project. Rather than a set of instructions to install your tool or framework.
 
-Use your CONTRIBUTING to provide details about the type of contributions you're looking for and how you review and accept them. Also, explain the criteria for getting triage and commit rights to the repository.
+Use your CONTRIBUTING file to provide details about the type of contributions you're looking for and how you review and accept them. Also, explain the criteria for getting triage and commit rights to the repository.
 
 ## Open communication
 
