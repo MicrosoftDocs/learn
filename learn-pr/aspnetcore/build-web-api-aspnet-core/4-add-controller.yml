@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-aspnetcore
 title: Exercise - Add a controller
 azureSandbox: true
-interactive: bash-editor
+interactive: bash
 durationInMinutes: 4
 content: |
   [!include[](includes/4-add-controller.md)]

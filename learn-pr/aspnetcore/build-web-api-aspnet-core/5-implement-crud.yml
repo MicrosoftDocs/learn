@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-aspnetcore
 title: Exercise - Implement CRUD operations
 azureSandbox: true
-interactive: bash-editor
+interactive: bash
 durationInMinutes: 10
 content: |
   [!include[](includes/5-implement-crud.md)]

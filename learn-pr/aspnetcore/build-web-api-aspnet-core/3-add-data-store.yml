@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-aspnetcore
 title: Exercise - Add a data store
 azureSandbox: true
-interactive: bash-editor
+interactive: bash
 durationInMinutes: 9
 content: |
   [!include[](includes/3-add-data-store.md)]

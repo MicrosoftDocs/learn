@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-aspnetcore
 title: Exercise - Test web API actions
 azureSandbox: true
-interactive: bash-editor
+interactive: bash
 durationInMinutes: 8
 content: |
   [!include[](includes/6-test-web-api.md)]
