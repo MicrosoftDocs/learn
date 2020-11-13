@@ -12,11 +12,11 @@ You can head to [https://github.com/search](https://github.com/search) and type 
 
 Let's say you're interested in Machine Learning.
 
-:::image type="content" source="../../media/2-code-search.png" alt-text="Github search topics":::
+:::image type="content" source="../media/2-code-search.png" alt-text="Github search topics":::
 
 You can then narrow your search clicking on **Topics** on the left sidebar.
 
-:::image type="content" source="../../media/2-topic-search.png" alt-text="Github narrow search":::
+:::image type="content" source="../media/2-topic-search.png" alt-text="Github narrow search":::
 
 From there, you can find repositories relevant to your search keyword and repositories curated by community members.
 
@@ -46,7 +46,7 @@ Great, you have found a project, read the contribution guidelines and now you're
 
 Perhaps you've already identified something to work on such as fixing broken links or update the docs. A good way to find beginner-friendly issues to help with is visiting the project's `/contribute` URL (for example [https://github.com/jupyter/notebook/contribute](https://github.com/jupyter/notebook/contribute)).
 
-:::image type="content" source="../../media/2-contribute.png" alt-text="Contribute to a project":::
+:::image type="content" source="../media/2-contribute.png" alt-text="Contribute to a project":::
 
 You'll notice that most of the issues displayed in the `contribute` URL will have labels such as `good-first-issue`, `help wanted`, `beginner-friendly`, and so on. Labels are often used to provide top-level information of the issue and the type of help needed.
 
@@ -54,7 +54,7 @@ You can head to the labels page (for example [https://github.com/jupyter/noteboo
 
 As you explore issues, you might also notice that some have other issues or pull requests linked.
 
-:::image type="content" source="../../media/2-linkedPR.png" alt-text="PR linked to project":::
+:::image type="content" source="../media/2-linkedPR.png" alt-text="PR linked to project":::
 
 ## Sponsoring a project
 
@@ -64,8 +64,8 @@ Open-source heavily relies on volunteer work. GitHub Sponsors allow you to fund 
 
 If a project is eligible for sponsorship through GitHub sponsors, you'll find a **Sponsor** button on the project's main page.
 
-:::image type="content" source="../../media/2-sponsor.png" alt-text="Sponsor a project":::
+:::image type="content" source="../media/2-sponsor.png" alt-text="Sponsor a project":::
 
 You can select the sponsorship tier and if you want your contribution to be public.
 
-:::image type="content" source="../../media/2-tier.png" alt-text="Sponsorship tiers":::
+:::image type="content" source="../media/2-tier.png" alt-text="Sponsorship tiers":::
