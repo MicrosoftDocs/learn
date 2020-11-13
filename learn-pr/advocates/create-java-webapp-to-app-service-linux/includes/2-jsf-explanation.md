@@ -45,14 +45,14 @@ Let's look at an example: In the below PrimeFaces page, the `p:outputLabel`,`p:i
 </html>
 ```
 
-Writing the above XHTML code, the following screen will be displayed.
+Writing the above XHTML code, the following screen will be displayed:
 
 :::image type="content" source="../media/simple-jsf-facelets-primefaces-ajax.png" alt-text="JSF Facelets Sample":::
 
 ### PrimeFaces Ajax Support
 
-JSF supports Ajax application creation by default. You can dynamically update a part of the screen without refreshing the screen.
-PrimeFaces makes use of the `update` attribute to make it easier to implement the Ajax support provided by JSF. Specify which component should be update with the target ID. In the example below, the `update ="ajaxUpdateText"` attribute is added to `p:commandButton`, so the `<div id ="ajaxUpdateText">` part is updated when the button is pressed. The `id` here can be specified for any HTML component.
+JSF supports Ajax applications by default. You can dynamically update a part of the screen without refreshing the screen.
+PrimeFaces makes use of the `update` attribute to make it easier to implement the Ajax support provided by JSF. You specify which component should be updated with its target ID. In the example below, the `update ="ajaxUpdateText"` attribute is added to `p:commandButton`, so the `<div id ="ajaxUpdateText">` part is updated when the button is pressed. The `id` here can be specified for any HTML component.
 
 ```xml
 <div id="ajaxUpdateText">
