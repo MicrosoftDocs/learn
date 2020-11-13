@@ -1,20 +1,22 @@
 You've been hired as a Senior Database Administrator help ensure the security of the database environment. These tasks will focus on Azure SQL Database. You'll learn how to configure authentication and authorization to the Azure SQL database.
 
-## Authorize Access to Azure SQL Database with Azure Active Directory
+## Connect to the lab environment
 
 1. When the VM lab environment opens, use the password on the **Resources** tab above for the **Student** account to sign in to Windows.
 
 1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/). This should be the home page of the browser.
 
-1. The username and password information to sign into the Azure Portal are in the  **Resources** tab above these instructions. If you select the **Username** it will be filled in for you.
+1. The username and password information to sign into the Azure portal are in the  **Resources** tab above these instructions. If you select the **Username** it will be filled in for you.
 
 1. Select **Next**.
 
-1. Select the **Password** field to have that filled in for you, then select **Sign in**.
+1. Select the **Password** text in the **Resources** tab to have that filled in for you, then select **Sign in**.
 
 1. Select **Yes**.
 
 1. On the **Welcome to Azure** popup, select **Maybe later**.
+
+## Authorize Access to Azure SQL Database with Azure Active Directory
 
 1. On the Azure portal home page select **All resources**.
 
@@ -44,19 +46,19 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
     :::image type="content" source="../media/dp-3300-module-33-lab-23.png" alt-text="Connect to server":::
 
-    In the User name select the Azure username from the Resources tab.
+    In the **User name** select the Azure **Username** from the **Resources** tab.
 
 1. Select **Connect**.
 
 > [!NOTE]
-> When you first try to sign in to an Azure SQL database your client IP address needs to be added to the firewall. SQL Server Management Studio can do this for you. Use the Azure Portal password form the Resources tab, then select **Sign in**, choose your Azure credentials and then select **OK**.
+> When you first try to sign in to an Azure SQL database your client IP address needs to be added to the firewall. SQL Server Management Studio can do this for you. Use the Azure Portal **password** form the **Resources** tab, then select **Sign in**, choose your Azure credentials and then select **OK**.
 > :::image type="content" source="../media/dp-3300-module-33-lab-24.png" alt-text="Connect to server":::
 
 ## Manage access to database objects
 
 In this task you will manage access to the database and its objects. The first thing you will do is create two users in the AdventureWorks database.
 
-1. Use the **Object Explorer** and expand the databases. 
+1. Use the **Object Explorer** and expand **Databases**.
 1. Right-click on **AdventureWorksLT**, and select **New Query**.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-25.png" alt-text="Connect to server":::
@@ -87,16 +89,7 @@ In this task you will manage access to the database and its objects. The first t
     GO
     ```
 
-    Next grant permissions to the role. In this case you are assigning **SELECT** and **EXECUTE** on the **SalesLT** schema.
-
-1. Execute the below T-SQL to grant the permissions to the role.
-
-    ```sql
-    GRANT SELECT, EXECUTE ON SCHEMA::SalesLT TO [SalesReader];
-    GO
-    ```
-
-    Next create a new stored procedure in the **SalesLT** schema. You'll note this procedure access a table in the Product schema.
+    Next create a new stored procedure in the **SalesLT** schema.
 
 1. Execute the below T-SQL in your query window.
 
@@ -112,7 +105,7 @@ In this task you will manage access to the database and its objects. The first t
     GO
     ```
 
-    Next use the **EXECUTE AS USER** syntax to test out the security you just created. This allows the database engine to execute a query in the context of your user.
+    Next use the **EXECUTE AS USER** syntax to test out the security. This allows the database engine to execute a query in the context of your user.
 
 1. Execute the following T-SQL.
 
@@ -121,4 +114,29 @@ In this task you will manage access to the database and its objects. The first t
     EXECUTE SalesLT.DemoProc
     ```
 
-In this exercise you've seen how you can use Azure Active Directory to rant Azure credentials  access to a SQL Server hosted in Azure.
+    This will fail with the message:
+
+    :::image type="content" source="../media/sql-statement-error.png" alt-text="Connect to server":::
+
+1. Next grant permissions to the role to allow it to execute the store procedure. Execute the below T-SQL.
+
+    ```sql
+    REVERT;
+    GRANT EXECUTE ON SCHEMA::SalesLT TO [SalesReader];
+    GO
+    ```
+
+    The first command reverts the execution context back to the database owner.
+
+1. Rerun the previous T-SQL.
+
+    ```sql
+    EXECUTE AS USER = 'DP300User1'
+    EXECUTE SalesLT.DemoProc
+    ```
+
+    :::image type="content" source="../media/sql-statement-suceeds.png" alt-text="Connect to server":::
+
+In this exercise you've seen how you can use Azure Active Directory to rant Azure credentials  access to a SQL Server hosted in Azure. You've also used T-SQL statement to create new database users and granted them permissions to run stored procedures.
+
+To finish this exercise select **End** below.
