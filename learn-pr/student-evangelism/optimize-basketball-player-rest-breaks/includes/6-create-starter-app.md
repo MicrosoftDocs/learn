@@ -3,7 +3,7 @@ To create our Azure Static Web App, you will use a GitHub template repository to
 In this case, we will leverage the Static Web Vanilla Basic repo template. Before continuing, make sure you have your GitHub account and you are signed in on the browser of your choice. 
 
 >[!NOTE] 
->You can also create a basic web app without deploying it to Azure, which you can setup by following [this Learn module](https://docs.microsoft.com/learn/modules/build-simple-website?azure-portal=true). 
+>You can also create a basic web app without deploying it to Azure, which you can setup by following [this Learn module](/learn/modules/build-simple-website?azure-portal=true). 
 
 ## Create the Azure Static Web App repo
 
@@ -61,7 +61,7 @@ Clicking on "Show Actions" will take you to the Actions page of your space-jam-w
 
 :::image type="content" source="../media/action-on-github.png" alt-text="Screenshot showing GitHub Action for this web app.":::
 
-If you want, you can click on the Action and then click on "Workflow file" to see the workflow that was generated. This Action will take all pushed to the main branch and deploy them to the Azure Static Web App that is saved in the secret GitHub token that was setup when you connected the repo to Azure in Visual Studio Code. GitHub Actions is beyond the scope of this module, but if you want to learn more you can check out the [GitHub Actions Learn module](https://docs.microsoft.com/learn/modules/github-actions-ci?azure-portal=true).
+If you want, you can click on the Action and then click on "Workflow file" to see the workflow that was generated. This Action will take all pushed to the main branch and deploy them to the Azure Static Web App that is saved in the secret GitHub token that was setup when you connected the repo to Azure in Visual Studio Code. GitHub Actions is beyond the scope of this module, but if you want to learn more you can check out the [GitHub Actions Learn module](/learn/modules/github-actions-ci?azure-portal=true).
 
 For the purposes of this module, all you have to know is that if you push changes to your main branch, they will get rendered on the static web app.
 
