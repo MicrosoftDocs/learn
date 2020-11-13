@@ -3,7 +3,7 @@ uid: learn.wwl.describe-sql-server-query-plans
 metadata:
   title: Describe SQL Server query plans
   description: "Describe SQL Server query plans"
-  ms.date: 11/12/2020
+  ms.date: 11/13/2020
   author: wwlpublish
   ms.author: kadelaney
   ms.topic: interactive-tutorial

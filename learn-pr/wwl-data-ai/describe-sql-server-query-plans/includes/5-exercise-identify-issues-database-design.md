@@ -131,3 +131,5 @@ CREATE TABLE [HumanResources].[Employee](
     ```
 
 Examine the query plan and note that you can now use a number for the **NationalIDNumber**. The SQL query optimizer can now generate and execute the most optimal plan.
+
+To finish this exercise select End below.
