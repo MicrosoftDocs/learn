@@ -12,7 +12,7 @@ The state is saved when a new page is requested and is restored when returned.
 JSF applications are roughly divided into the following two functions:
 
 -**Facelets**: a XHTML-based template engine that describes screen layouts
--**BakingBean**: a Java class that binds to Facelets and sets and processes values
+-**BackingBean**: a Java class that binds to Facelets and sets and processes values
 
 `Facelets` is an XHTML-based template engine that describes screen layouts, written by XHTML. XHTML conforms to the Document Type Definition (DTD) defined in W3C and is described as a file with a `xhtml` extension.
 
