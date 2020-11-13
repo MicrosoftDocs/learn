@@ -22,11 +22,11 @@ As a DBA within AdventureWorks you need to know how to enable geo-replication fo
 
     :::image type="content" source="../media/sql-databases.png" alt-text="SQL databases":::
 
-1. Click on the **adventureworks** Azure SQL Database.
+1. Click on the **AdventureWorks** Azure SQL Database.
 
     :::image type="content" source="../media/adventureworks.png" alt-text="Adventureworks":::
 
-1. On the blade for the database, select **Geo-Replication**.
+1. On the blade for the database, in **Settings**, select **Geo-Replication**.
 
     :::image type="content" source="../media/geo-replication.png" alt-text="Geo-Replication":::
 
@@ -54,3 +54,5 @@ blade.
 1. Now that the Azure SQL Database is configured with geo-replication, you will perform a failover. Select your secondary server, and, on the blade, click **Forced Failover**.
 1. When prompted, click **Yes**.
 1. The status of the primary replica will switch to **Pending** and the secondary, **Failover**. The process will take a few minutes. When complete, the roles will switch with the secondary becoming the new primary and the old primary the secondary.
+
+You have now seen how to enable geo-replication for Azure SQL Database, ensure it is working, and manually fail it over to another region using the portal.
