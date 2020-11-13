@@ -188,4 +188,7 @@ You have been hired as a database administrator to identify performance related 
     
     GO
     ```
+
 Because the index has been rebuilt, it will now be as efficient as possible and the logical reads should reduce. You have now seen that index maintenance can have an effect on query performance.
+
+To finish this exercise select End below.
