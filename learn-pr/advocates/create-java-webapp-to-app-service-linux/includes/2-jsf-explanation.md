@@ -99,3 +99,6 @@ public class IndexController implements Serializable {
 ```
 
 In this way, JSF allows the View (Facelets) and Controller (Backing Bean) that make up the screen to be implemented separately.
+
+In this section, we introduced JSF.  
+In the next section, we'll create a JSF application and run it locally.
