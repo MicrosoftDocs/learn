@@ -45,7 +45,7 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 1. Compare the two strings. If they match, process the request, as follows:
 
     ```JavaScript
-    if (shaSignature.localeCompare(gitHubSignature)) {
+    if (!shaSignature.localeCompare(gitHubSignature)) {
         // Existing code
         if (req.body.pages[0].title) {
             ...
@@ -59,7 +59,7 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 1. If the strings don't match, return an HTTP 401 (Unauthorized) response, with a message telling the sender that the signatures don't match.
 
     ```JavaScript
-    if (shaSignature.localeCompare(gitHubSignature))
+    if (!shaSignature.localeCompare(gitHubSignature))
     {
         ...
     }
