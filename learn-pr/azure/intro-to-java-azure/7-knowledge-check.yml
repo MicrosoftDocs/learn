@@ -34,17 +34,17 @@ quiz:
     - content: "Yes. Maven can not only package our application, but also add the required plugin and run the deployment to Azure App Service."
       isCorrect: true
       explanation: "Yes. The statement is correct. Maven is a powerful tool. So is gradle."
-  - content: "Which of the following statements is true?"
+  - content: "What types of Java applications can be deployed on Azure?"
     choices:
-    - content: "Stacks, which aren't intended to be cloud-native can't run in the cloud."
+    - content: "Desktop applications"
       isCorrect: false
-      explanation: "You can mirror your data center also with cloud resources such as VMs."
-    - content: "Every application can easily run in the Azure Cloud as well."
-      isCorrect: false
-      explanation: "It depends on your applications. Have a look at its type and configuration first."
-    - content: "To use the Cloud the most efficient way, the architecture needs to become more cloud-native."
+      explanation: "Desktop applications do have to run on the client side."
+    - content: "Microservices"
       isCorrect: true
-      explanation: "Correct. With the _Lift and Shift_ approach, you can benefit step by step more and more from the Cloud."
-    - content: "The overall way of deployments needs to become automatic."
+      explanation: "Microservices are the cloud native applications."
+    - content: "Monolithic application."
       isCorrect: false
-      explanation: "No. Even though CI/CD pipelines are the preferred way for productive environments, not everything has to be adopted from the very beginning."
+      explanation: "Monolithic applications might be able to lift and shift towards Azure."
+    - content: "All the three above."
+      isCorrect: false
+      explanation: "It depends for specific application."

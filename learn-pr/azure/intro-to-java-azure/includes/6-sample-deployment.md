@@ -24,14 +24,6 @@ Opening in the browser, it should like this.
 
 ![Clicking through the local deployment of the sample pet clinic application](../media/6-sample.gif)
 
-## Choose the right Service
-
-Before you decide which Service is the best for you to use, have a look at the following flowchart. It should be simple to follow. This chart helps you decide if using, for example, an Azure App Service is the best solution for your application code.
-
-![Flowchart about when to choose which service](../media/5-flowchart-deployment-opportunities.png)
-
-For the single deployment of the pet clinic, we'll take App Service.
-
 ## Prepare the sample application to be cloud ready
 
 As you as a Java developer are used to, you'll find all the relevant code in the src folder. It's following the Spring Boots architecture with Object, Controller, and Repository classes and they're separated by functionality.
@@ -60,8 +52,8 @@ Please choose which part to config:
   2: Runtime
   3: DeploymentSlot
 Enter your choice: 1
-Define value for appName [spring-petclinic-1604321597200]:
-Define value for resourceGroup [spring-petclinic-1604321597200-rg]:
+Define value for appName [spring-petclinic-XXXX200]:
+Define value for resourceGroup [spring-petclinic-XXXX200-rg]:
 Define value for region [westeurope]:
 Define value for pricingTier(P1v2):
    1: b1
@@ -80,7 +72,7 @@ Please confirm webapp properties
 AppName : spring-petclinic-XXXX200
 ResourceGroup : spring-petclinic-XXXX200-rg
 Region : westeurope
-PricingTier : Basic_B1
+PricingTier : Basic_B2
 OS : Linux
 RuntimeStack : JAVA 8-jre8
 Deploy to slot : false
@@ -105,7 +97,7 @@ The `pom.xml` file has now added the required plugin for the automatically maven
           <subscriptionId>XXX-XXX-XXX</subscriptionId>  
           <resourceGroup>spring-petclinic-XXX200-rg</resourceGroup>  
           <appName>spring-petclinic-XXX200</appName>  
-          <pricingTier>B1</pricingTier>  
+          <pricingTier>B2</pricingTier>  
           <region>westeurope</region>  
           <runtime>
             <os>linux</os>  

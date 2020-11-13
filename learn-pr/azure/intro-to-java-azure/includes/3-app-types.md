@@ -1,4 +1,4 @@
-It's necessary to distinguish between the different types of Java application before choosing the matching cloud solution.
+It's necessary to distinguish between the different types of server side Java application before choosing the matching cloud solution.
 
 ## Monolithic Applications
 
