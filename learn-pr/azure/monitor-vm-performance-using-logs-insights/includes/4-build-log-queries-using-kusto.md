@@ -1,5 +1,5 @@
 
-Azure Monitor Logs are based upon Azure Data Explorer. In order to unlock the full range of possibilities with Azure Monitor Logs, you will need to use log queries. These queries help you obtain a deep understanding of data collected in Azure Monitor Logs. The underlying Kusto Query Language (KQL) allows for complex operations with minimal code. Kusto is a rich language designed to be easy to read and author. All data generated in Azure Monitor logs is available to both collect and examine through log queries. Different Azure data sources write to different log tables. 
+Azure Monitor Logs are based upon Azure Data Explorer. A Log Analytics workspace is the equivalent of a database inside the Azure Data Explorer service. For the most part, log data table structure is the same and both resources use the Kusto Query Language (KQL) to extract data. In order to unlock the full range of possibilities with Azure Monitor Logs, you will need to use log queries. These queries help you obtain a deep understanding of data collected in Azure Monitor Logs. The underlying query language allows for complex operations with minimal code. Kusto is a rich language designed to be easy to read and author. All data generated in Azure Monitor Logs is available to both collect and examine through log queries. Different Azure data sources write to different log tables. 
 
 Log Analytics is the primary tool used for writing log queries and analyzing results. Even if a log query is used elsewhere in Azure Monitor, you'll typically write and test the query using Log Analytics.
 
@@ -8,7 +8,7 @@ In addition to writing and working with log queries in Log Analytics, you can us
 | Feature | Description
 | ---- | ----
 | Alert rules | Proactively identify issues related to Azure resources reporting into your workspace. Each alert rule consists of a log search, which automatically runs at regular intervals and results are inspected to determine if an alert should be created.
-| Dashboards | Results of any query can be pinned to an Azure dashboard. A pinned query on a dashboard allows visualization of log and metric data together. 
+| Dashboards | Results of any query can be pinned to an Azure dashboard. A pinned query on a dashboard allows visualization of log and metric data together.
 | Export | Azure Monitor data can be imported into Excel or Power BI. Prior to the import, you create a log query that defines all data to export.
 | PowerShell | A PowerShell script can be run from a command line or an Azure Automation runbook. The script retrieves log data from Azure Monitor and determines the data to collect based upon the query. 
 | Azure Monitor Logs API | Allows for any REST API client to receive and collect log data from the workspace. The API request includes a query, which runs against Azure Monitor to determine all necessary data to retrieve.
@@ -43,7 +43,7 @@ One of the tables captured by Azure Monitor is the Heartbeat table. This table c
 
 In the results pane at the bottom of logs, you will see some of the following fields in the screenshot: TimeGenerated [UTC], SourceComputerId, ComputerIP, Computer, Category, OSType, and so on. Each of these columns is a data point you can filter on.
 
-The tabular operators can be applied to help the query return more relevant and detailed information. Recall that tabular operators help you filter upon extracted data. The results received from Heartbeat seem to be a lot in this example and you know from the previous module that there are only two virtual machines reporting to the Log Analytics workspace. In order to make sure there are only two virtual machines reporting to the workspace, let's add the distinct operator to this query.
+The tabular operators can be applied to help the query return more relevant and specific information you wish to examine. Recall that tabular operators help you filter upon extracted data. The results received from Heartbeat seem to be a lot in this example and you know from the previous module that there are only two virtual machines reporting to the Log Analytics workspace. In order to make sure there are only two virtual machines reporting to the workspace, let's add the distinct operator to this query.
 
 :::image type="content" source="../media/4-distinct-operator.png" alt-text="Screen shot showcasing Heartbeat query with the pipe and a distinct Computer listed.":::
 

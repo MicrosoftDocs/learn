@@ -1,10 +1,10 @@
-In the previous unit, recall that you need to explore Azure native monitoring tools for workloads being deployed in Azure. To further your knowledge, you'll need to know how to provision a Log Analytics workspace with the right permissions model, connect virtual machines to the workspace, and also need to onboard Virtual Machine Insights to complete the process.
+In the previous unit, recall that you need to explore Azure native monitoring tools for workloads being deployed in Azure. To further your knowledge, you'll need to know how to provision a Log Analytics workspace with the right permissions model, connect virtual machines to the workspace, and also need to onboard Azure Monitor for VMs to complete the process.
 
 In this unit, you'll:
 
 1. Create a Log Analytics workspace.
 1. Configure the Log Analytics workspace permissions model for the environment you're supporting.
-1. Create two virtual machines and onboard both to Log Analytics and Virtual Machine Insights.
+1. Create two virtual machines and onboard both Azure Monitor for VMs.
 
 ## Create and configure Log Analytics workspace
 
@@ -57,42 +57,46 @@ In this unit, you'll:
 
 1. Run the command above once more, but change the virtual machine name to **SampleVM2**. This way you'll have two virtual machines to experiment with as you move on in the module.
 
-## Onboard virtual machines to Log Analytics workspace
-
-1. After both virtual machines are created, select the Log Analytics workspace resource you created earlier in this unit.
-
-1. Underneath Workspace Data Sources, select **Virtual machines**.
-
-1. Once the results display on the right, you should see the **Log Analytics connection status** for the virtual machines.
-
-1. You should notice that the virtual machines are listed as **Not connected**.
-
-1. Select **Connect** on each virtual machine.
-
-    :::image type="content" source="../media/3-connected-not-connected-disconnect.png" alt-text="Screen shot of virtual machine not connected to a Log Analytics workspace.":::
-
-1. After connecting the virtual machines, the Log Analytics virtual machine extension will automatically install and be configured for your Log Analytics workspace.
-
-1. This process takes a few minutes, during which time the **Status** shows as **Connecting**. Once connected, the status will show as **Connected**.
-
-## Onboard virtual machines to Virtual Machine Insights
-
-1. Once both virtual machines are connected to your Log Analytics workspace, you'll need to onboard both to Virtual Machine Insights.
+## Onboard virtual machines to Azure Monitor for VMs
 
 1. Select each virtual machine from the portal.
 
-1. Select **Insights** on the far left and select **Enable**. Onboarding Virtual Machine Insights takes a few minutes.
+1. Select **Insights** on the far left and select **Enable**.
 
-    :::image type="content" source="../media/3-enable-virtual-machine-insights.png" alt-text="Screen shot of enabling Virtual Machine Insights.":::
+    :::image type="content" source="../media/3-enable-virtual-machine-insights.png" alt-text="Screen shot of enabling Azure Monitor for VMs.":::
+
+1. This will open up another pane for some additional selections.
+
+1. Leave the **Workspace Subscription** unchanged and select the Log Analytics workspace you just configured for **Choose a Log Analytics Workspace** (note: onboarding Azure Monitor for VMs takes a few minutes).
+
+    :::image type="content" source="../media/3-enable-azure-monitor-vms.png" alt-text="Enable Azure Monitor for VMs after selecting the right subscription and Log Analytics workspace.":::
 
 1. Once enabled, go into the **Insights** section of each VM underneath the Monitoring area.
 
-1. After the pane opens, select **Performance.**
+1. After the pane opens, examine the **Map**.
 
-    :::image type="content" source="../media/3-virtual-machine-insights.png" alt-text="Screen shot after enabling Virtual Machine Insights.":::
+1. This will show you a map of dependencies like processes running, ports open, along with information about connection details, health of the virtual machine, machine properties, and Azure virtual machine properties.
+
+    :::image type="content" source="../media/3-azure-monitor-vms-map.png" alt-text="Azure Monitor for VMs screen shot, showcasing dependences and information about virtual machine.":::
+
+1. From there, select **Performance.**
+
+    :::image type="content" source="../media/3-virtual-machine-insights.png" alt-text="Screen shot after enabling Azure Monitor for VMs.":::
 
 1. Explore the different graphs for: Logical Disk Performance, CPU Utilization, Available Memory, Logical Disk IOPS, Logical Disk MB/s, Logical Disk Latency (ms), Max Logical Disk Used %, Bytes Sent Rate, and Bytes Received Rate.
 
 1. Experiment with different settings. Move from **Avg**, to **Min**, to **Max**, and so on.
 
-1. Take note of how easy it is to drill into Log Events on the far right-hand side of the page.
+1. Select **Log Events** on the right-hand side of the page.
+
+    :::image type="content" source="../media/3-log-events.png" alt-text="Screenshot of where Log Events show up within Azure Monitor for VMs.":::
+
+1. This will bring up a summary pane that highlights the event type and count of captured Azure Monitor Logs data that can be further analyzed inside a Log Analytics workspace.
+
+    :::image type="content" source="../media/3-azure-monitor-logs-data-summary.png" alt-text="Screen shot after selecting Log Events from the Azure Monitor for VMs pane.":::
+
+1. Select the **InsightsMetrics** table.
+
+1. The logs section of a Log Analytics workspace will open and you will see a pre-populated query that outlines the data being collected inside that table after enabling Azure Monitor for VMs.
+
+    :::image type="content" source="../media/3-insights-metrics-log-analytics.png" alt-text="Screen shot after selecting the InsightsMetrics table and Log Analytics opening up for further query writing.":::

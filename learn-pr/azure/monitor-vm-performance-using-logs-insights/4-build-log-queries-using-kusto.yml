@@ -16,15 +16,15 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What are Azure Monitor Logs based on?'
+  - content: 'How does Azure Monitor organize log data for queries?'
     choices:
-    - content: Azure Data Explorer
+    - content: Azure Monitor organizes log data into tables.
       isCorrect: true
-      explanation: Azure Monitor Logs is based on Azure Data Explorer. A Log Analytics workspace is roughly the equivalent of a database in Azure Data Explorer, tables are structured the same, and both use the Kusto Query Language.
-    - content: Log Analytics workspace
+      explanation: Azure Monitor organizes log data in tables, each composed of multiple columns. Each query data that's organized into a hierarchy similar to SQL (databases, tables, and columns).
+    - content: Azure Monitor organizes log data into tabular operators.
       isCorrect: false
-      explanation: Data collected by Azure Monitor Logs is stored in a Log Analytics workspace.
-    - content: Kusto Query Language
+      explanation: A tabular operator is a statement that produces data arranged in a table-like mesh of columns and rows.
+    - content: Azure Monitor organizes log data into the Kusto Query Language.
       isCorrect: false
       explanation: The Kusto Query Language is used to query Azure Monitor Logs for information about Azure resources.
   - content: 'What is the schema?'
