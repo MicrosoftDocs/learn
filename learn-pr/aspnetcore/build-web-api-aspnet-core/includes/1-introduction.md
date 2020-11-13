@@ -2,7 +2,7 @@ Imagine you're an employee of an online dog toy retailer named Contoso Pets. You
 
 This module explores creating a cross-platform RESTful service using ASP.NET Core web API with .NET and C#. An in-memory database will be created to persist the products data. Entity Framework (EF) Core will be used as the **O**bject-**R**elational **M**apper (O/RM) for reading and managing products data.
 
-This module uses the [.NET CLI](/dotnet/core/tools/) to demonstrate web API development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or Visual Studio Code (Windows, Linux, & macOS).
+This module uses the [.NET CLI](/dotnet/core/tools/) in the Azure Cloud Shell to demonstrate web API development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or Visual Studio Code (Windows, Linux, & macOS). If you'd rather use your locally installed development environment to create a web API, see [Tutorial: Create a web API with ASP.NET Core](/aspnet/core/tutorials/first-web-api).
 
 ## Learning objectives
 
@@ -15,5 +15,5 @@ In this module, you will:
 
 ## Prerequisites
 
-* Experience writing C# at the beginner level
+* Ability to write C# at the beginner level
 * Familiarity with RESTful service concepts and HTTP action verbs, such as GET, POST, PUT, and DELETE

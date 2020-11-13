@@ -17,7 +17,7 @@ abstract: |
   - Add support for CRUD operations.
   - Test web API action methods from the command shell.
 prerequisites: |
-  - Experience writing C# at the beginner level
+  - Ability to write C# at the beginner level
   - Familiarity with RESTful service concepts and HTTP action verbs, such as GET, POST, PUT, and DELETE
 levels:
 - beginner
