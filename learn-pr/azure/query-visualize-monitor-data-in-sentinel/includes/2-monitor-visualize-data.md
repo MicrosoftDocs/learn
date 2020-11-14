@@ -79,7 +79,6 @@ You can pin the results of the query into a private or shared dashboard so you c
 You can use Format query on the header toolbar to make the query more readable.
 
 > [!Note]
-
 > You can export or pin the query only if the query expression generates data in the query result section.
 
 ### Query results
