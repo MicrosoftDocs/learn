@@ -1,18 +1,8 @@
-After you connect to your cluster, you can use GitOps in the connected cluster, or you can use Azure Policy to manage the cluster.
+One of the primary benefits of Azure Arc is facilitating implemenation of DevOps principles that apply established development practices to operations. This results in improved agility, without jeopardizing the stability of IT environment. One way to promote DevOps principles is to implement GitOps, which streamline releases of new versions of applications by eliminating the manual effort involved in their deployment. Azure Arc enabled Kubernetes clusters offer support for GitOps.
 
-## What is Azure Arc enabled Kubernetes?
+## What is GitOps?
 
-Using Azure Arc, you can attach and then configure Kubernetes clusters, whether they're hosted on Azure or elsewhere. Similar to the way that you onboard servers to Azure Arc, you must also deploy agents to your Kubernetes clusters. The Kubernetes agent is responsible for:
+GitOps is a DevOps practice that relies on a Git repository to store code or configuration representing the current state of a resource external to the repository. An approved change to this repository leads automatically to an update of the corresponding resource.
 
-- Connectivity to Azure.
-- Collecting Azure Arc logs and metrics.
-- Monitoring configuration requests.
-
-After you deploy the agent, you can implement Azure Arc-enabled Kubernetes to:
-
-- Support Kubernetes that's deployed outside Azure for inventorying, grouping, and tagging.
-- Use GitOps-based configuration management to deploy applications and apply configurations.
-- Use Azure Policy to apply policies to Kubernetes clusters.
-- Use Azure Monitor for containers to display and monitor your clusters.
-
+In the context of Azure  Arc enabled Kubernetes clusters, a Git repository hosts configuration of a Kubernetes cluster. A pod or a set of pods running on the cluster polls the status of the repository and, once it detects a change, it applies the new configuration to the cluster. 
 

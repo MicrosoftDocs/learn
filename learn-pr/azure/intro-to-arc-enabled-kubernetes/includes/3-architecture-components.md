@@ -4,17 +4,12 @@ Azure Arc leverages locally installed agents to establish a trusted channel with
 
 For Kubernetes clusters and AKS clusters running on Azure Stack HCI, connection to Azure requires a deployment of several agents as containers within a designated cluster namespace. The agents are responsible for maintaining connectivity to Azure, collecting Azure Arc logs and metrics, and processing configuration requests. 
 
-These agents run in the Kubernetes cluster that you deploy to the `azure-arc` namespace. The following table describes these agents.
+These agents run in the Kubernetes cluster that you deploy to the `azure-arc` namespace. The Kubernetes agents are responsible for:
 
-|Agent|Description|
-|---|---|
-|`deployment.apps/config-agent`|Monitors the connected cluster for updates, compliance state, and source control configuration resources applied on the cluster.|
-|`deployment.apps/controller-manager`|Orchestrates interactions between Azure Arc components.|
-|`deployment.apps/metrics-agent`|Collects metrics from other Azure Arc agents to optimize the performance of these other agents.|
-|`deployment.apps/cluster-metadata-operator`|Gathers cluster metadata, including cluster version, node count, and Azure Arc agent version.|
-|`deployment.apps/resource-sync-agent`|Syncs cluster metadata to Azure.|
-|`deployment.apps/clusteridentityoperator`|Maintains the certificate for the managed identities for Azure resources that other agents use for communication with Azure.|
-|`deployment.apps/flux-logs-agent`|Collects logs from the flux operators that deploy as a part of source control configuration.|
+- Maintaining authenticated connection to to Azure and synchronizing cluster metadata with the corresponding Azure resource.
+- Gathering cluster metadata, including cluster version, node count, and Azure Arc agent version.
+- Monitoring for updates, compliance state, and source control configuration resources applied on the cluster.
+- Orchestrating interactions between Azure Arc components.
 
 ### What are the key benefits of Azure Arc enabled Kubernetes?
 
