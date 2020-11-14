@@ -11,7 +11,12 @@ Besides container-based isolation, Kubernetes offers the ability to isolate pods
 
 ### What are the key benefits of Kubernetes?
 
-Kubernetes abstracts away the complexity of a multi-container environment that combines compute, networking, and storage components that hundreds or thousands of containers rely on. It offers declarative management model, in which you simply describe the target desired configuration and leave its implementation details for the Kubernetes control plane. In addition, the control plane delivers such benefits as:
+Kubernetes abstracts away the complexity of a multi-container environment that combines compute, networking, and storage components that hundreds or thousands of containers rely on. It offers declarative management model, in which you simply describe the target desired configuration and leave its implementation details for the Kubernetes control plane. 
+
+> [!NOTE] 
+> With the declaritive management model, you can use YAML-formatted manifest files to control provision, modify, and delete Kubernetes resources, such as pods or deployments. Alternatively, you can use for this purpose packaged collections of YAML files, referred to as Helm charts. Helm, currently in version 3, is a package manager for Kubernetes, which also provides the ability to deploy packaged applications to Kubernetes clusters.
+
+In addition, the control plane delivers such benefits as:
 
 - Self-healing of pods.
 - Auoscaling of pods and, in virtualized scenarios, cluster nodes. 
@@ -19,7 +24,7 @@ Kubernetes abstracts away the complexity of a multi-container environment that c
 - Auto-discovery of new pod deployments. 
 - Load balancing across pods running the same workloads.
 
-With Kubernetes, you can view your datacenter as one large compute resource. You don't worry about how and where you deploy your containers, only about deploying and scaling your apps as needed.
+Effectively, Kubernetes allows you to treat your datacenter as a unified compute resource. You don't worry about how and where you deploy your containers, only about deploying and scaling your apps as needed.
 
 However, it's important to understand that Kubernetes is an highly customizable orchestration platform, which requires proper configuration, management, and maintenance:
 
@@ -52,9 +57,12 @@ Azure Arc supports Azure integration in several scenarios for different types of
 - Azure Arc enabled data services - Azure SQL Managed Instance and PostgreSQL Hyperscale services running on Azure Arc enabled Kubernetes or Azure Kubernetes Service on Azure Stack HCI.
 
 > [!NOTE]
+> You can use Azure Arc enabled servers to manage nodes of Kubernetes clusters.
+
+> [!NOTE]
 > Verify that the Azure Arc features you intend to use in your production environment are generally available.
 
-In each of the Azure Arc enabled scenarios, Azure Arc establishes a logical connection between the local resource and Azure. By virtue of establishing this connection, a non-Azure resource automatically becomes a hybrid Azure resource, with its own identity represented by an Azure Resource Manager resource ID. Azure Resource Manager serves as the management interface that allows you to create, modify, and delete Azure resources. Once you Arc-enable an non-Azure resource, you can use Azure Resource Manager to manage and monitor its configuration and operations. 
+In each of the Azure Arc enabled scenarios, Azure Arc relies on a locally installed agent to establish a logical connection between the local resource and Azure. By virtue of establishing this connection, a non-Azure resource automatically becomes a hybrid Azure resource, with its own identity represented by an Azure Resource Manager resource ID. Azure Resource Manager serves as the management interface that allows you to create, modify, and delete Azure resources. Once you Arc-enable an non-Azure resource, you can use Azure Resource Manager to manage and monitor its configuration and operations. 
 
 ### What are the key benefits of Azure Arc?
 
