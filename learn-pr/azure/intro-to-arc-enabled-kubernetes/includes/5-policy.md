@@ -20,7 +20,6 @@ For example, Contoso could use Azure Policy to implement the following rules:
 
 
 
-
 Azure Arc enables you to extend some capabilities of *Azure Policy* to operating systems of computers that are in on-premises datacenters or are hosted on another cloud provider. This functionality applies to auditing the compliance of settings for the OS, applications, and environment.
 
 Additionally, you can configure the time zone on servers that are running the Windows Server OS. You can also use Azure Policy to manage and evaluate compliance for Azure Arc enabled Kubernetes clusters. Enabling this functionality requires that you install the Azure Connected Machine agent on each computer in the scope of management.

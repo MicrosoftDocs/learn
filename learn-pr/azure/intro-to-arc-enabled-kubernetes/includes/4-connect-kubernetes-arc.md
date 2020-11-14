@@ -26,8 +26,8 @@ To connect a Kubernetes cluster to Azure Arc, you need to deploy Azure Arc Agent
 
 After you deploy the agent, you can leverage Azure Arc-enabled Kubernetes functionality to:
 
-- Automate cluster configuration by using GitOps-based configuration management. 
 - Implement governance and validate compliance of the cluster and its pods by using Azure Policy.
+- Automate cluster configuration by using GitOps-based configuration management. 
 - Monitor status of the cluster and its workloads by using Azure Monitor.
 - Organize and track Kubernetes clusters by using Azure Resource Manager and Azure Graph Explorer.
 
