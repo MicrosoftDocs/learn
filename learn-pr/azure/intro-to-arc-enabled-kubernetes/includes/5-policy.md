@@ -57,5 +57,3 @@ For Azure Arc enabled Kubernetes, the implementation consists of the following h
 1. Verify connectivity to the Kubernetes cluster. 
 1. Installing the Azure Policy Add-on using its Helm chart.
 1. Creating a policy assignment using one of the Kubernetes-specific policy definitions.
-
-

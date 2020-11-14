@@ -1,36 +1,64 @@
-Contoso could use Azure Monitor to help monitor and manage their existing on-premises server resources. By integrating with Azure Arc, Contoso could extend comprehensive, cloud-based monitoring functionality beyond Azure to their on-premises resources, or to those hosted by third-party providers.
+Monitoring is an important aspect of operationalizing any technology. Considering the complexity of Kubernetes deployments, with multiple layers of abstraction hiding its implemenation details and hundreds or thousands of containers hosting is workloads, being able to gain a comprehensive insight into the state of entire Kubernetes environment is essential for operational stability and business continuity. To accomplish this goal, companies like Contoso can use Azure Monitor. 
 
-By maintaining their on-premises infrastructures, Contoso can benefit from this functionality when tracking, auditing, or troubleshooting past events. Using Monitor, you can monitor resources such as your onboarded servers. For example, you can select **Insights** to review a map of your resources' network connections.
+## What is Azure Monitor?
 
-:::image type="content" source="../media/7-insights-map.png" alt-text="Screenshot that depicts the Map tab on the Insights page for a VM in Azure. ContosoVM1 is displayed with details of open TCP ports. A VM summary is also displayed, detailing the VM's operating system, IP address, and links for Health, Machine properties, and Azure VM properties. Three buttons are displayed for access to Properties (selected), Log Events, Alerts, and Connections." border="false":::
+Azure Monitor is a core component of the Microsoft strategy to extend comprehensive cloud-based monitoring functionality beyond Azure to on-premises datacenters and non-Microsoft cloud providers. Customers maintaining their on-premises infrastructure can benefit from this functionality when tracking, auditing, or troubleshooting past events, optimizing administration of their existing deployments, and forecasting and planning the capacity of future deployments.
 
-## How can you use Azure Monitor?
+Azure Monitor supports collection and monitoring of metrics, activity and diagnostics logs, and events from a wide range of Azure services and computers residing in on-premises datacenters and third-party cloud providers. It provides a quick way to assess the status of your environment in the Azure portal. You can also access its data by using Azure PowerShell, Azure CLI, REST API, and .NET SDK. Additionally, Azure Monitor allows you to archive collected data for long-term analysis or compliance purposes in Azure Storage or route it to Azure Stream Analytics or non-Microsoft services by using Event Hub. You also can store and analyze near real-time and historical data by using Log Analytics. 
 
-You can use Monitor to optimize the administration of your existing deployments and to forecast capacity requirements for future deployments. Monitor provides three main capabilities, which the following table describes.
+Regardless of the resource being monitored, Azure Monitor offers a consistent interface for configuring and using its features, including:
 
-|Capability|Description|
-|------------------------------------|------------------------------------------------------------|
-|Monitoring and metrics visualization|Metrics are numerical values that represent the health status of monitored systems.|
-|Querying and analyzing logs|Logs include activity, diagnostics, and telemetry. Their analysis provides deep insights into the state of monitored systems and helps facilitate troubleshooting.|
-|Alerting and remediation|You can configure these to automatically trigger corrective actions to remediate any issues.|
+- Dashboards and workbooks.
+- Metrics analysis via tools such as Metrics Explorer or Power BI.
+- Common action groups that designate alert-triggered actions and alert recipients.
 
-Monitor delivers focused, in-depth monitoring capabilities through:
-
-- Deep infrastructure monitoring. This category includes Log Analytics combined with monitoring solutions, such as Service Map, and network monitoring tools, such as Network Watcher and Azure ExpressRoute Monitor.
-- Deep application monitoring. This category includes Application Insights, which facilitates monitoring of performance, availability, and usage of web-based applications, regardless of their locations.
-
-Both infrastructure and application monitoring services share capabilities that provide a consistent approach to configuring alerts, including:
-
-- Common action groups that designate alert-triggered actions and recipients of the alerts.
-- Designing custom dashboards.
-- Analyzing metrics by using tools such as Metrics Explorer or Power BI.
-
-Monitor supports collecting and monitoring metrics, activity and diagnostics logs, and events from a wide range of Azure services and computers both in on-premises datacenters and with other cloud providers. It provides a quick way to assess the status of your environment by using the Azure portal. Monitor presents a summary of triggered alerts, logs, metrics, and application-related telemetry originating from Application Insights. You can also access its data by using Azure PowerShell, the Azure CLI, REST APIs, and the Microsoft .NET SDK.
-
-Additionally, Monitor enables you to archive collected data in Azure Storage for long-term analysis or compliance purposes. You can also route the data to Azure Stream Analytics or to services from Microsoft and others by using Azure Event Hubs. You set up and use alerts to:
+You set up and use alerts to:
 
 - Trigger notifications via text message or email.
-- Trigger a remediation action as implemented by Azure Logic Apps, Azure Functions, or a runbook in Azure Automation.
-- Raise an incident and work items by taking advantage of the integration between Monitor and your internal IT service Management platform.
+- Trigger a remediation action.
+- Raise an incident and work items by taking advantage of the integration between Monitor and your internal IT Service Management platform.
 
-You can also store and analyze near real-time and historical data by using Log Analytics. For on-premises computers and Azure VMs, this requires installing the Log Analytics agent, and in some cases, the Dependency Agent as well. This agent-based approach enables you to monitor the OS and its workloads by using Automation-based or Monitor-based solutions such as Update Management or Change Tracking and Inventory. You can also use Azure Security Center to identify vulnerabilities and potential threats.
+## What is Azure Monitor for containers?
+
+Azure Monitor for containers is a feature of Azure Monitor that facilitates monitor the performance of containerized workloads running on:
+
+- Managed Kubernetes clusters hosted on Azure Kubernetes Service (AKS)
+- Self-managed Kubernetes clusters hosted on Azure using AKS Engine
+- Azure Container Instances
+- Self-managed Kubernetes clusters hosted on Azure Stack or on-premises
+- Azure Red Hat OpenShift
+- Azure Arc enabled Kubernetes
+
+With Azure Monitor for containers you can:
+
+- Identify containers running on each cluster node and their average processor and memory utilization. This helps identifying resource bottlenecks.
+- Identify containers running in individual pods. This allows you to track pod's overall performance.
+- Evaluate the resource utilization of workloads running on the host that are unrelated to the standard processes that support the pod.
+- Determine the behavior of the cluster under average and heaviest loads. This helps with assessing capacity needs and estimating the maximum load that the cluster can sustain.
+- Configure alerts to proactively notify you when resource utilization exceeds acceptable thresholds or when a health state change occurs in the cluster.
+
+## How to implement monitoring of Azure Arc enabled Kubernetes clusters?
+
+Azure Monitor for containers relies on a containerized version of the Log Analytics agent for Linux running in the monitored cluster to collects performance metrics and logs from its nodes and containers. The agent interacts directly with Kubernetes Metrics API and uploads the collected telemetry to Azure. Metrics reside in the metrics store, while log data is persists in the logs store in the Log Analytics workspace you designate.
+
+You can perform setup of Azure Monitor for containers for Azure Arc enabled Kubernetes deployments by using either a PowerShell or Bash script. The implementation consists of the following high-level steps:
+
+1. Verifying that you satisfy all the prerequisites. You'll need:
+
+- An Azure Arc enabled Kubernetes cluster.
+- An Azure Log Analytics workspace that will host Kubernetes cluster metrics and logs.
+- Access to the cluster with a user account that has the cluster-admin role.
+- A work or school account in the Azure Active Directory (Azure AD) tenant associated with the subscription that hosts the Azure Arc enabled Kubernetes resource. This account should have, at minimum, the Contributor role within the Log Analytics workspace and the Azure Arc enabled Kubernetes resource.
+- Helm 3. Consider installing its latest release. 
+- Azure Command Line Interface (CLI) version 2.12.0 or newer or PowerShell Core.
+- Outbound connectivity to Azure. For details regarding target URLs and ports, refer to Microsoft Docs.
+- Azure Resource ID of the Azure Arc enabled Kubernetes cluster
+
+1. Starting an Azure CLI or PowerShell Core session on a computer with connectivity to the Kubernetes cluster and to Azure. 
+1. Signing in to the Azure AD tenant associated with the subscription that hosts the Azure Arc enabled Kubernetes resource. 
+1. Identifying the Log Analytics workspace ID.
+1. Verify connectivity to the Kubernetes cluster. 
+1. Downloading and installing the bash or PowerShell script that configures the Kubernetes cluster with the containerized version of the Log Analytics agent.
+1. Configuring limited connectivity from the pods running the Log Analytics agent to all nodes in the cluster to collect performance metrics.
+1. Configuring limited connectivity from the pods running the Log Analytics agent to the control plane to allow collecting cluster inventory data. 
+
