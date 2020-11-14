@@ -8,4 +8,6 @@ With this approach, Contoso will benefit from the centralized, at-scale manageme
 
 You can learn more by visiting the following webpages:
 
-- [Azure Stack HCI solution overview](https://docs.microsoft.com/azure-stack/hci/overview)
+- [What is Azure Resource Manager?](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview).
+- [Azure Arc overview](https://docs.microsoft.com/azure/azure-arc/overview)
+- [What is Azure Arc enabled servers?](https://docs.microsoft.com/en-us/azure/azure-arc/servers/overview)
