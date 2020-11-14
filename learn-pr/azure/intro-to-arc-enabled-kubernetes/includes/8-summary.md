@@ -1,6 +1,6 @@
-Contoso will need to continue to operate an on-premises environment for some time after it begins migrating workloads to Azure IaaS VMs. Consequently, being able to apply Azure policies to on-premises Windows Server workloads is proving to be important. Additionally, administrators need to be able to review on-premises Windows Server instances in the Azure portal. Not only that, but it's important that administrators can use the Azure portal to review Kubernetes clusters.
+In this module, you learned how Azure Arc enabled Kubernetes clusters can help customers like Contoso to optimize and simplify their operations. 
 
-In this module, you learned about Azure Arc enabled servers. You also learned about Azure Arc enabled Kubernetes clusters.
+While Contoso will need to continue to operate in a hybrid environment for the forseeable future, its IT staff will be able minimize management overhead of their containerized workloads by leveraging the Azure Arc enabled Kubernetes technology. This will allow them to extend the scope of such services as Azure Policy and Azure Monitor to on-premises Kubernetes clusters. By embracing the GitOps approach, Contoso will streamline updates to cluster configuration across their entire environment and minimize the risks associated with configuration drift. 
 
 ## Learn more
 
