@@ -17,7 +17,7 @@ The following sections demonstrate how to support each of these four actions in 
 
 Replace the `// GET by ID action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following code:
 
-:::code language="csharp" source="../code/controllers/productscontroller.cs" id="snippet_Get":::
+:::code language="csharp" source="../code/controllers/productscontroller.cs" id="snippet_GetById":::
 
 The preceding action:
 
