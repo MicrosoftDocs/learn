@@ -15,31 +15,31 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "What type of agent does GitOps rely on when used on Azure Arc enabled Kubernetes clusters?"
     choices:
-    - content: "Answer 1"
+    - content: "Flux"
+      isCorrect: true
+      explanation: "Azure Arc enabled Kubernetes clusters rely on Flux, an open source GitOps deployment tool to implement the pods responsible for tracking changes to the Git repository you designate and applying them to the local cluster."
+    - content: "Istio"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "Istio is an open source service mesh platform that provides a way to control how microservices share data with one another. It is not used directly by Azure Arc enabled Kubernetes functionality to implement GitOps."
+    - content: "omsagent"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "omsagent is the agent that implements Azure Monitor functionality on Kubernetes clusters. It is not used directly by Azure Arc enabled Kubernetes functionality to implement GitOps."
+    - content: "CoreDNS"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
-  - content: "Question 2"
+      explanation: "CoreDNS provides name resolution in Kubernetes clusters. It is not used directly by Azure Arc enabled Kubernetes functionality to implement GitOps."
+  - content: "Which tool can be used to automate configuration of GitOps for Azure Arc enabled Kubernetes clusters?"
     choices:
-    - content: "Answer 1"
+    - content: "Azure Policy"
+      isCorrect: true
+      explanation: "Azure Policy automates GitOps configuration, allowing you to apply it consistently to all resources in entire subscription or indiviual resource groups you designate."
+    - content: "Azure Security Center"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "Azure Security Center does not provide this functionality"
+    - content: "Azure Advisor"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "Azure Advisor does not provide this functionality"
+    - content: "Azure Resource Locks"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "Azure Resource Locks do not provide this functionality"

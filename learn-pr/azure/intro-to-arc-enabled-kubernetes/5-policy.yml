@@ -15,31 +15,31 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "Which Kubernetes component is used to run the Azure Policy for Kubernetes agents"
     choices:
-    - content: "Answer 1"
+    - content: "service"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "A service provides internal or external inbound connectivity, not applicable in this case."
+    - content: "admission controller"
+      isCorrect: true
+      explanation: "Azure Policy for Kubernetes takes the form of an extension of Gatekeeper, which is an open source admission controller Kubernetes-based implementation of OPA."
+    - content: "ingress controller"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "An ingress controller provides inbound connectivity, not applicable in this case."
+    - content: "namespace"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
-  - content: "Question 2"
+      explanation: "A namespace is not capable of running an agent."
+  - content: "Which of the following types of Kubernetes lacks support by Azure Policy"
     choices:
-    - content: "Answer 1"
+    - content: "Azure Kubernetes Service running on Azure Stack HCI"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "This is supported."
+    - content: "Azure Arc enabled Kubernetes"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "This is supported."
+    - content: "AKS Engine"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "This is supported."
+    - content: "OpenShift"
+      isCorrect: true
+      explanation: "This is unsupported."

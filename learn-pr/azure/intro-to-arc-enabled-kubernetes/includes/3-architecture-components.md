@@ -2,7 +2,7 @@ Azure Arc leverages locally installed agents to establish a trusted channel with
 
 ## Architecture of the Azure Arc enabled Kubernetes
 
-For Kubernetes clusters and AKS clusters running on Azure Stack HCI, connection to Azure requires a deployment of several agents as containers within a designated cluster namespace. The agents are responsible for maintaining connectivity to Azure, collecting Azure Arc logs and metrics, and processing configuration requests. 
+For Kubernetes clusters and AKS clusters running on Azure Stack HCI, connection to Azure requires a deployment of several agents as pods within a dedicated cluster namespace. The agents are responsible for maintaining connectivity to Azure, collecting Azure Arc logs and metrics, and processing configuration requests. 
 
 These agents run in the Kubernetes cluster that you deploy to the `azure-arc` namespace. The Kubernetes agents are responsible for:
 
@@ -26,4 +26,4 @@ In addition to the resource type-independent benefits described in the previous 
 - Azure Arc enabled data services
 
   - Automatic upgrades and updates without any service downtime. Azure Arc enabled data services receive updates on a frequent basis including servicing patches and new features, which mirrors the update management model of their Azure counterparts. 
-  - Support for automatic scaling. Azure Arc enabled data services can auto-scale dynamically to limits dependent on the capacity of your infrastructure hosting the Kubbernetes clusters.
+  - Support for automatic scaling. Azure Arc enabled data services can auto-scale dynamically to limits dependent on the capacity of your infrastructure hosting the Kubernetes clusters.

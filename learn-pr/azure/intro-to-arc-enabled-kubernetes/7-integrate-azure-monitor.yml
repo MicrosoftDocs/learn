@@ -15,31 +15,31 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "What component is used to implement Azure Monitor for containers?"
     choices:
-    - content: "Answer 1"
+    - content: "omsagent"
+      isCorrect: true
+      explanation: "Azure Monitor for containers relies on a containerized version of the Log Analytics agent for Linux named omsagent, running in the monitored cluster."
+    - content: "Flux"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "Flux is used to implement Azure Policy for Azure Arc enabled Kubernetes"
+    - content: "Istio"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "Istio is an open source service mesh platform that provides a way to control how microservices share data with one another. It is not used directly by Azure Arc enabled Kubernetes functionality to implement Azure Monitor."
+    - content: "CoreDNS"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
-  - content: "Question 2"
+      explanation: "CoreDNS provides name resolution in Kubernetes clusters. It is not used directly by Azure Arc enabled Kubernetes functionality to implement Azure Monitor."
+  - content: "What Azure resource do you have to provision first before you implement Azure Monitor for Containers"
     choices:
-    - content: "Answer 1"
+    - content: "Automation account"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "Azure Monitor for Containers does not depend on an Automation account"
+    - content: "Key vault"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "Azure Monitor for Containers does not depend on a Key vault"
+    - content: "Storage account"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "Azure Monitor for Containers does not depend on a Storage account"
+    - content: "Log Analytics workspace"
+      isCorrect: true
+      explanation: "An Azure Log Analytics workspace is a prerequisite since this is where Kubernetes cluster telemetry will reside."

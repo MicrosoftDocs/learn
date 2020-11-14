@@ -15,31 +15,31 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "Which version of Helm is required to implement an Azure Arc-enabled Kubernetes cluster"
     choices:
-    - content: "Answer 1"
+    - content: "1"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "You need to use Helm 3."
+    - content: "2"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "You need to use Helm 3."
+    - content: "3"
+      isCorrect: true
+      explanation: "You need to use Helm 3."
+    - content: "4"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
-  - content: "Question 2"
+      explanation: "This version is not available yet."
+  - content: "Which tool do you have to use to run the command that connects a Kubernetes cluster to Azure"
     choices:
-    - content: "Answer 1"
+    - content: "Azure CLI"
+      isCorrect: true
+      explanation: "You connecting the Kubernetes cluster to Azure by running the az connectedk8s connect Azure CLI command"
+    - content: "PowerShell Core"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "This functionality is not available in PowerShell Core"
+    - content: "Command Prompt"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "This functionality is not available from Command Prompt"
+    - content: "Cloud Shell"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "This functionality is not available in Cloud Shell"

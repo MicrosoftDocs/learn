@@ -15,31 +15,31 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "What is the format of the Kubernetes manifest files?"
     choices:
-    - content: "Answer 1"
+    - content: "XML"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "Kubernetes does not recognize the XML format"
+    - content: "YAML"
+      isCorrect: true
+      explanation: "Kubernetes manifest files use the YAML format"
+    - content: "JSON"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "Kubernetes does not recognize the JSON format"
+    - content: "TXT"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
-  - content: "Question 2"
+      explanation: "Kubernetes does not recognize the TXT format"
+  - content: "Which technology makes possible to deploy Azure Kubernetes Service (AKS) in on-premises data centers?"
     choices:
-    - content: "Answer 1"
+    - content: "Azure Stack Hub"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "Azure Stack Hub does not support AKS at this point"
+    - content: "Azure Stack Edge"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "Azure Stack Edge does not support AKS at this point"
+    - content: "Azure Stack HCI"
+      isCorrect: true
+      explanation: "The only solution that allows running AKS in an on-premises data center is Azure Stack HCI"
+    - content: "OpenShift"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "OpenShift is a third party containerization platform and it does not support AKS"

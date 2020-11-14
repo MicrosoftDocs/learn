@@ -18,7 +18,7 @@ To connect a Kubernetes cluster to Azure Arc, you need to deploy Azure Arc Agent
 1. Registering the Azure resource providers that implement the Azure Arc-enabled Kubernetes functionality.
 1. Creating a new or designate an existing Azure resource group that will host the resource representing the Azure Arc-enabled Kubernetes cluster.
 1. Verifying connectivity to the Kubernetes cluster. 
-1. Connecting the Kubernetes cluster to Azure by running the `az connectedk8s connect` Azure CLI command. The command requires that you specify the name of the target cluster and the name of the resource group that will host the resource representing the Azure Arc-enabled Kubernetes cluster.
+1. Connecting the Kubernetes cluster to Azure by running the `az connectedk8s connect` Azure CLI command. The command requires that you specify the name of the target cluster and the name of the resource group that will host the resource representing the Azure Arc-enabled Kubernetes cluster. It automatically deploys the Helm 3-based package containing the agents.
 1. Verifying the outcome by running the `az connectedk8s list` command to list the connected clusters. The command requires that you specify the name of the resource group you specified in the previous step.
 
 > [!NOTE] 
@@ -30,7 +30,3 @@ After you deploy the agent, you can leverage Azure Arc-enabled Kubernetes functi
 - Automate cluster configuration by using GitOps-based configuration management. 
 - Monitor status of the cluster and its workloads by using Azure Monitor.
 - Organize and track Kubernetes clusters by using Azure Resource Manager and Azure Graph Explorer.
-
-
-
-

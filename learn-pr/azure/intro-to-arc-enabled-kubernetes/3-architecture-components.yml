@@ -15,31 +15,31 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "Which namespace hosts the Azure Arc enabled Kubernetes agents"
     choices:
-    - content: "Answer 1"
+    - content: "azure-arc"
+      isCorrect: true
+      explanation: "Azure Arc enabled Kubernetes agents run in the azure-arc namespace"
+    - content: "default"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "This namespace is used by application workloads"
+    - content: "kube-system"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "This namespace is used by core system workloads"
+    - content: "kube-public"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
-  - content: "Question 2"
+      explanation: "This namespace is meant by shared application workloads"
+  - content: "What is the benefit provided by Kubernetes clusters to Azure Arc enabled data services"
     choices:
-    - content: "Answer 1"
+    - content: "GitOps-based updates"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "GitOps-based updates is the benefit of Azure Arc enabled Kubernetes"
+    - content: "Azure Policy-based runtime policies"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "Azure Policy-based runtime policies is the benefit of Azure Arc enabled Kubernetes"
+    - content: "tagging"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "Tagging is a benefit provided by Azure Resource Manager"
+    - content: "Autoscaling"
+      isCorrect: true
+      explanation: "Azure Arc enabled data services can auto-scale dynamically to limits dependent on the capacity of your infrastructure hosting the Kubernetes clusters"
