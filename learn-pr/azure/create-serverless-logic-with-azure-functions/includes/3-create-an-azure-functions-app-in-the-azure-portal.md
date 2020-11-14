@@ -44,7 +44,7 @@ Let's create a function app in the Azure portal.
 
 1. Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function.
 
-1. Select **Create**; deployment will take a few minutes. You'll receive a notification once it's complete.
+1. Select **Review + create**, then select **Create**; deployment will take a few minutes. You'll receive a notification after it's complete.
 
 ::: zone-end
 
