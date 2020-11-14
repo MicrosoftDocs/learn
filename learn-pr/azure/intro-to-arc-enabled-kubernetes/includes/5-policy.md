@@ -1,64 +1,61 @@
-
-
-
-Azure Policy is a service that can help organizations manage and evaluate internal and regulatory compliance of their Arc enabled servers, in addition to a wide range of Azure services. Azure Policy uses declarative rules based on properties of target resource types, including Windows and Linux operating systems. These rules form policy definitions, which administrators can apply through policy assignment to resource groups, subscriptions, or management groups that host Azure Arc enabled servers. To simplify management of policy definitions, it is possible to combine multiple policies into initiatives, and then create a few of initiative assignments in lieu of multiple policy assignments.
-
-Azure Policy supports auditing the state of Arc enabled server with Guest Configuration policies. Guest Configuration policies do not apply configurations, but they audit settings within the target operating system and evaluate their compliance. You can, however, use Azure Policy to apply configuration of the Azure resource representing an Arc enabled server. You also have the ability to use Azure Policy to deploy configurations by leveraging VM extensions.
-
-For example, Contoso could use Azure Policy to implement the following rules:
-
-- Assigning a specific tag to resources representing Arc enabled servers during their registration.
-- Identify Arc enabled servers running Windows with Windows Defender Exploit Guard disabled.
-- Identify Arc enabled servers running Windows that are not joined to a specific Active Directory Domain Services (AD DS) domain.
-- Identify Arc enabled servers running Windows or Linux without Log Analytics agent installed.
-- Identify Arc enabled servers running Linux that are not using SSH keys for authentication.
-
-:::image type="content" source="../media/3-assign-policy.png" alt-text="The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies." border="false":::
-
-
-
-
-
-
-Azure Arc enables you to extend some capabilities of *Azure Policy* to operating systems of computers that are in on-premises datacenters or are hosted on another cloud provider. This functionality applies to auditing the compliance of settings for the OS, applications, and environment.
-
-Additionally, you can configure the time zone on servers that are running the Windows Server OS. You can also use Azure Policy to manage and evaluate compliance for Azure Arc enabled Kubernetes clusters. Enabling this functionality requires that you install the Azure Connected Machine agent on each computer in the scope of management.
-
-> [!NOTE]
-> Currently, you can only audit settings in this context. Auto-remediation is not yet available.
+Azure Arc centralizes and streamlines management by leveraging a range of Azure services, such as Azure Policy. With Azure Policy, companies like Contoso can enforce uniform governance rules across all of their Azure Arc enabled Kubernetes estate and detect any instances of non-compliance with organizational standards. 
 
 ## What is Azure Policy?
 
-*Azure Policy* is a service that can help organizations manage and evaluate compliance for their Azure environments' organizational standards. Azure Policy uses declarative rules based on properties of target Azure resource types. These rules form policy definitions, which administrators can apply through policy assignment to a resource group or subscription.
+Azure Policy is a service that helps manage and evaluate internal and regulatory compliance of cloud and on-premises environments. Azure Policy uses declarative rules based on properties of target resource types, including Kubernetes clusters and their components. These rules form policy definitions, which administrators can apply through policy assignment to resource groups, subscriptions, or management groups that host Azure and Azure Arc enabled resources. To simplify management of policy definitions, it is possible to combine multiple policies into initiatives, and then create a few of initiative assignments in lieu of multiple policy assignments.
 
-For example, to simplify management of policy definitions, Contoso could consider combining multiple policies into initiatives and then create a few initiative assignments instead of multiple policy assignments.
+## What is Azure Policy for Kubernetes?
 
-Azure Policy functionality groups into four main categories:
+Azure Policy for Kubernetes leverages the Open Policy Agent (OPA), which is an open source, general-purpose, platform-agnostic, policy engine that provides policy evaluation and enforcement functionality. OPA provides a declarative language that allows you to create policy definitions along with the corresponding Application Programming Interface (API). 
 
-- Enforcing compliance when provisioning new Azure resources.
-- Auditing the compliance of existing Azure resources.
-- Remediating noncompliance of existing Azure resources.
-- Auditing the compliance of the OS, application configuration, and environment settings within Azure VMs.
+Azure Policy for Kubernetes takes the form of an extension of Gatekeeper, which is an open source admission controller Kubernetes-based implementation of OPA. The admission controller intercepts requests targeting the control plane of a Kubernetes cluster to create or update its resources, such as pods or deployments. The admission controller evaluates each request against the policies you define and, depending on the outcome of that evaluation, allows or blocks the corresponding action. In addition, each request that is subject to evaluation is logged. 
 
-> [!TIP]
-> The last of these categories implements by using the Azure Policy Guest Configuration client, which is available as an Azure VM extension. Azure Arc for servers uses the same client to provide auditing functionality in hybrid scenarios.
+Azure Policy for Kubernetes facilitates at-scale policy enforcements and safeguards Kubernetes clusters integrated with Azure in a centralized, uniform manner. It serves the following functions:
 
-Specifically, Contoso IT support could use Azure Policy to assign tags to resources during their deployment.
+- Checks periodically for Azure Policy assignments targeting the Kubernetes cluster hosting the admission controller pods
+- Deploys policy definitions into the cluster as custom resources that apply constraints, which, in turn, are enforced by the admission controller pods
+- Reports auditing and compliance data to Azure Policy, allowing you to review their status via the Azure portal, the same way as with any other Azure or Azure Arc enabled resource.
 
-After you install the agent, it requires outbound connectivity to Azure Arc over TCP port 443. At that point, any Azure Policy Guest Configuration client-based configuration that's in the assigned policy or initiative definition will automatically take effect.
+Azure Policy for Kubernetes supports the following types of Kubernetes environments:
 
-### Assign policies with Azure Arc
+- Azure Kubernetes Service (AKS), including AKS deployments on Azure Stack HCI
+- Azure Arc enabled Kubernetes
+- AKS Engine
 
-To manage and assign Azure Arc policies for a computer, browse to Azure Arc in the Azure portal. In the returned list of managed servers, select the appropriate server, and then assign a policy to it. You'll need to configure the:
+Azure Policy offers a number of built-in definitions for Azure Arc enabled Kubernetes, including the following:
 
-- Scope and any exclusions from the scope of the policy.
-- Policy definition.
-- Assignment name.
-- Description.
-- Policy enforcement (Enabled or Disabled).
+|Policy name|Policy description|
+|-----------|------------------|
+|Do not allow privileged containers in Kubernetes cluster|Prevents creation of privileged containers|
+|Enforce HTTPS ingress in Kubernetes cluster|Ensures that HTTPS is used for ingress connections|
+|Enforce internal load balancers in Kubernetes cluster|Prevents the use of public IP addresses for load balancers|
+|Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster|Enforces container CPU and memory resource limits|
+|Ensure containers listen only on allowed ports in Kubernetes cluster|Restricts containers to listen only on allowed ports|
+|Ensure only allowed container images in Kubernetes cluster|Restricts images that can be used to deploy containers|
+|Kubernetes clusters should not allow container privilege escalation|Prevents containers from using privilege escalation|
 
-:::image type="content" source="../media/6-assign-policy.png" alt-text="The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies." border="false":::
+## How to implement Azure Policy for Kubernetes?
 
-After assigning policies, you can review the policy settings on the selected server from Azure Arc.
+To implement Azure Policy for Kubernetes, you need to install an Azure Policy Add-on. Such add-on is available for each of the three supported types of Kubernetes environments. 
 
-:::image type="content" source="../media/6-review-policies.png" alt-text="The screenshot depicts the applied policies on ContosoVM1. Two policies are applied, and the VM is compliant with one but not the other." border="false":::
+For Azure Arc enabled Kubernetes, the implementation consists of the following high-level steps:
+
+1. Verifying that you satisfy all the prerequisites. You'll need:
+
+- An Azure Arc enabled Kubernetes cluster.
+- Access to the cluster with a user account that has the cluster-admin role.
+- A work or school account in the Azure Active Directory (Azure AD) tenant associated with the subscription that hosts the Azure Arc enabled Kubernetes resource. To account for the need to register a provider, this account should be the subscription owner. It should also have permissions to create service principals in the Azure AD tenant.
+- Helm 3. Consider installing its latest release. 
+- Azure Command Line Interface (CLI) version 2.12.0 or newer. 
+- Outbound connectivity to Azure. For details regarding target URLs and ports, refer to Microsoft Docs.
+- Azure Resource ID of the Azure Arc enabled Kubernetes cluster
+
+1. Starting an Azure CLI session on a computer with connectivity to the Kubernetes cluster and to Azure. 
+1. Signing in to the Azure AD tenant associated with the subscription that hosts the Azure Arc enabled Kubernetes resource. 
+1. Registering the Azure Policy resource provider if you haven't used the Azure Policy functionality in the target subscription before.
+1. Granting the **Policy Insights Data Writer (Preview)** RBAC privileges to the Azure Arc enabled Kubernetes cluster
+1. Verify connectivity to the Kubernetes cluster. 
+1. Installing the Azure Policy Add-on using its Helm chart.
+1. Creating a policy assignment using one of the Kubernetes-specific policy definitions.
+
+
