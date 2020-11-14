@@ -38,13 +38,13 @@ products:
 modules:
 - learn.configure-the-network-for-your-virtual-machines
 - learn.design-ip-addressing-for-azure
-- learn.azure.host-domain-azure-dns
 - learn.integrate-vnets-with-vnet-peering
+- learn.secure-and-isolate-with-nsg-and-service-endpoints
 - learn.connect-vm-with-azure-bastion
+- learn.azure.host-domain-azure-dns
 - learn.control-network-traffic-flow-with-routes
 - learn.connect-on-premises-network-with-vpn-gateway
 - learn.connect-on-premises-network-with-expressroute
-- learn.secure-and-isolate-with-nsg-and-service-endpoints
 - learn.load-balance-web-traffic-with-application-gateway
 - learn.improve-app-scalability-resiliency-with-load-balancer
 - troubleshoot-inbound-network-connectivity-azure-load-balancer
