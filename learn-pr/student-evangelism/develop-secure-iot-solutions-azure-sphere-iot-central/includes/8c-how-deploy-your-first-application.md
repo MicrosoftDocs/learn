@@ -15,7 +15,7 @@ The following outlines how the Azure Sphere stream telemetry to IoT Central.
 
 ## Understanding the Azure Sphere application
 
-The application declares a **measureSensorTimer**. When initialized, this timer will trigger every 6 seconds calling the **MeasureSensorHandler** handler function.
+The application declares **measureSensorTimer**. When initialized, this timer will trigger every 6 seconds calling the **MeasureSensorHandler** handler function.
 
 ```c
 static LP_TIMER measureSensorTimer = {

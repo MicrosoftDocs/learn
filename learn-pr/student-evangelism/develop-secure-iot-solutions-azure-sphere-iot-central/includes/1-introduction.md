@@ -28,7 +28,7 @@ High-level applications running on the Cortex-A7 Linux kernel are used for less 
 
 ## Developer tools
 
-You can develop Azure Sphere applications from Windows and Linux. On Windows you can use either [Visual Studio 2019 or later](https://visualstudio.microsoft.com/downloads) (free community edition or better) or [Visual Studio Code](https://code.visualstudio.com). On Linux, you use [Visual Studio Code](https://code.visualstudio.com). You can simultaneously develop and debug applications running on all three cores.
+You can develop Azure Sphere applications from Windows and Linux. On Windows you can use either [Visual Studio 2019 or later](https://visualstudio.microsoft.com/downloads?azure-portal=true) (free community edition or better) or [Visual Studio Code](https://code.visualstudio.com?azure-portal=true). On Linux, you use [Visual Studio Code](https://code.visualstudio.com?azure-portal=true). You can simultaneously develop and debug applications running on all three cores.
 
 This learning module supports developers on Linux and Windows using Visual Studio Code. If you are a Windows user comfortable using Visual Studio, then use Visual Studio appreciating the IDE screenshots included in this module will be different.
 
