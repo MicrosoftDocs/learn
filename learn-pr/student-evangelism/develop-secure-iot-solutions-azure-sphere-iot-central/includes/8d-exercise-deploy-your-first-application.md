@@ -1,4 +1,4 @@
-## Step 1: Open the lab project
+In this exercise, we'll deploy a high-level application to your Azure Sphere.
 
 1. Start Visual Studio Code.
 
