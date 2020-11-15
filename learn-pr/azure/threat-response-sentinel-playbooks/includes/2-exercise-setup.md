@@ -41,7 +41,39 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 > [!Note]
 
-> The connector for Azure Activity could take 15 minutes until shows some date in the Azure Sentinel.
+> The connector for Azure Activity could take 15 minutes until shows some date in the Azure Sentinel. You can continue working with rest of the steps and with additional units from this module.
+
+## Task 3: Create an analytics rule 
+
+1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Sentinel workspace.
+2. On the **Azure Sentinel** page, on the menu bar, in the **Configuration** section, select **Analytics**.
+3. On the **Azure Sentinel | Analytics** page, select **Create** and then select **Scheduled Query Rule**.
+4. On the **General** page, provide the inputs in the following table, and then select  **Next:Set rule logic**.
+
+  |||
+  | --- | --- |
+  | Name | Provide a descriptive name to explain what type of suspicious activity the alert detects. |
+  | Description | Enter a detailed description that will help other security analysts understand what the rule does. |
+  | Tactics | From the **Tactics** drop-down menu, choose one among the available categories of attacks to classify the rule following the MITRE tactics. |
+  | Severity | Select the **Severity** drop-down menu to categorize the level of importance of the alert as one of four options: High, Medium, Low, or Informational. |
+  | Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generate large number of false    positives. |
+
+5. On the **Set rule logic** page, in the **Rule query** section, enter the following query:
+
+```kusto
+  AzureActivity
+  | where OperationName == 'Delete Virtual Machine'
+  | where ActivityStatus == 'Accepted'
+  | extend AccountCustomEntity = Caller
+  | extend IPCustomEntity = CallerIpAddress
+```
+
+6. In the **Query Scheduling** section, you can configure how often the query should run. Select query to run on every 5 min.
+7. Accept the default values for all other settings and then select **Next: Incident setting (preview)**.
+8. In the **Incident setting (preview)** tab, ensure that **Enabled** is selected for creation of incidents from alerts triggered by this analytics rule. And then select **Next: Automated response**.
+9.	In the **Automated response** tab you can select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
+10.	Click on the **Next:Review**.
+11.	In the **Review and Create** page, verify that validation passed and select **Create**.
 
 ## Check resources created
 
@@ -58,4 +90,3 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | **simple-vmNetworkInterface** | Network interface | Network interface for the  VM. |
     | **st1*xxxxx*** | Storage account | Storage account used by the virtual machine. |
     | **vnet1** | Virtual network | Virtual network for the VM. |
-
