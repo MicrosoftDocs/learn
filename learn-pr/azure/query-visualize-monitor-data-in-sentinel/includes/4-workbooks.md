@@ -80,7 +80,7 @@ You can rearrange the placement of different tables in the workbook by selecting
 
 For advanced customization, you can select **Advanced Editor** to open the JSON representation of the current workbook, and then further customize it in the text editor as the following screenshot displays.
 
-![Screenshot of advanced editor](04-JSON.PNG)
+![Screenshot of advanced editor](../media/04-JSON.PNG)
 
 You can save your changes in the existing workbook or save as another workbook. When you are done with all the customization, you can exit the edit mode by selecting **Done Editing**.
 
