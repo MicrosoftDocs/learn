@@ -46,8 +46,9 @@
 13. Select **Add parameter.**
 14. In the **New Parameter** page, enter the following values:
 
-| **Parameter name\*** | Level |
+|||
 | --- | --- |
+| **Parameter name*** | Level |
 | **Display name** | Level |
 | **Parameter type** | From the drop-down menu select **Drop down** |
 | **Required?** | Select checkbox |
