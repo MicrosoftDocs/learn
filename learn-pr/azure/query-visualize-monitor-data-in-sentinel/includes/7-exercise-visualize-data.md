@@ -15,16 +15,16 @@
 
 ![](RackMultipart20201113-4-15gkrx6_html_fa1e185a64b4c3ba.png)
 
-1. In the Query section, you can observe the query structure. This query will search and present the last 10 events from the Azure Activity log. The first raw in the query, **AzureActivity** specify the table used in the query. The second line contains a **where** statement, which filters the records from the last day. The third contains another statement **where,** to filter only the last 10 events.
-2. The query results section present the results of the query. You can expand any of the records, to view the values from the table. Click on the name of any column to sort the results by that column. Click on the filter icon next to it to provide a filter condition. This is similar to adding a filter condition to the query itself except that this filter is cleared if the query is run again. If you select **Columns** drop-down menu, you can filter which column from the table to be presented. By selecting **Group columns** , you can group records by a particular column.
+3. In the Query section, you can observe the query structure. This query will search and present the last 10 events from the Azure Activity log. The first raw in the query, **AzureActivity** specify the table used in the query. The second line contains a **where** statement, which filters the records from the last day. The third contains another statement **where,** to filter only the last 10 events.
+4. The query results section present the results of the query. You can expand any of the records, to view the values from the table. Click on the name of any column to sort the results by that column. Click on the filter icon next to it to provide a filter condition. This is similar to adding a filter condition to the query itself except that this filter is cleared if the query is run again. If you select **Columns** drop-down menu, you can filter which column from the table to be presented. By selecting **Group columns** , you can group records by a particular column.
 
 ![](RackMultipart20201113-4-15gkrx6_html_eed495108fc09ab1.png)
 
-1. Click on  **Queries**  in the left pane. This pane includes example queries that you can add to the query window. If you&#39;re using your own workspace, you should have a variety of queries in multiple categories, but if you&#39;re using the demo environment, you may only see a single  **Log Analytics workspaces**  category.
+5. Click on  **Queries**  in the left pane. This pane includes example queries that you can add to the query window. If you&#39;re using your own workspace, you should have a variety of queries in multiple categories, but if you&#39;re using the demo environment, you may only see a single  **Log Analytics workspaces**  category.
 
 > [!Note]
 
-> You can try to practive writing queries in the following [Demo environment](https://ms.portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade).
+> You can try to practice writing queries in the following [Demo environment](https://ms.portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade).
 
 **Task 1: Work with Workbooks in Azure Sentinel**
 
