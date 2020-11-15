@@ -7,7 +7,7 @@ You can create a custom workbook by selecting **+Add workbook** on the header ba
 > [!Tip]
 > Each workbook that you create is saved as a workbook resource in the Azure Sentinel resource group.
 
-![Screenshot of empty new workbook](../media/05-New-Workbook.png)
+![Screenshot of empty new workbook](../media/05-New-Workbook.PNG)
 
 You can start building your workbook by selecting **Edit** on the **New Workbook** page, and then again select the **Edit** option to change the text that appears in the new workbook template. 
 
