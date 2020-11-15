@@ -7,9 +7,9 @@ You can create a custom workbook by selecting **+Add workbook** on the header ba
 > [!Tip]
 > Each workbook that you create is saved as a workbook resource in the Azure Sentinel resource group.
 
-![](RackMultipart20201108-4-10kj3z7_html_faa6cadbe1d32d14.png)
+![Screenshot of empty new workbook](../media/05-New-Workbook.png)
 
-You can start building your workbook by selecting **Edit** on the **New Workbook** page, and then select the **Edit** option to change the text that appears in the new workbook template. <!--Marjan, please check if the edits are okay in this sentence.-->
+You can start building your workbook by selecting **Edit** on the **New Workbook** page, and then again select the **Edit** option to change the text that appears in the new workbook template. 
 
 Each workbook provides a rich set of capabilities for visualizing the security data collected from the connectors. You can design your workbook with the following visualization types and elements:
 
@@ -21,7 +21,7 @@ Each workbook provides a rich set of capabilities for visualizing the security d
 
 You can add a new element to your workbook by selecting **+Add** as the following screenshot depicts.
 
-![](RackMultipart20201108-4-10kj3z7_html_fe37c8ffceef563f.png)
+![Screenshot of adding new step in the workbook](../media/05-Add-visualization.PNG)
 
 ## Text visualizations
 
@@ -32,9 +32,7 @@ You can use text blocks to interpret your security data, section headings, telem
 
 After you add the text, you can select the **Preview** tab to preview how your content will appear. Finally, when you complete editing the text, select the **Done Editing** option.
 
-![](RackMultipart20201108-4-10kj3z7_html_84741b6d55068e0d.png)
-
-##
+![Screenshot of text visualization step](../media/05-Text-Visualization.png)
 
 ## Query item
 
@@ -51,7 +49,7 @@ You can create a different query from the logs and visualize the data as text, c
 
 When you create a query, Azure Sentinel adds a new step to the workbook as the following screenshot depicts:
 
-![](RackMultipart20201108-4-10kj3z7_html_4b90a0fa7f08caeb.png)
+![Screenshot of Query visualization step](../media/05-Query-Visualization.PNG)
 
 On the header bar, there are several fields that provide you options to tune the output of the query.
 
@@ -66,14 +64,14 @@ On the header bar, there are several fields that provide you options to tune the
 | Size | Use this option to choose the size of the visualization element. |
 | Color palette | Use this option to choose specific series colors in chart settings. |
 
-On the **Advanced Settings** tab, you can provide additional customization for the settings and the styles of your query step. On the **Advanced Settings** tab, you can modify properties in the following two tabs: <!--Marjan, please check if this is correct. The Advanced Settings tab has two tabs?-- >
+On the **Advanced Settings** tab, you can provide additional customization for the settings and the styles of your query step. On the **Advanced Settings** tab, you can modify properties in the following two tabs:
 
 - **Settings** tab. Use this tab to provide values that affect how the step will appear.
 - **Style** tab. Use this tab to set the values that affect how this step will appear.
 
 For example, on the **Settings** tab, you can enter the **Chart title**, as the following screenshot depicts.
 
-![](RackMultipart20201108-4-10kj3z7_html_9b52d138cff37780.png)
+![Screenshot of advanced tab](../media/05-Advanced-Settings.PNG)
 
 You can use the **Style** tab to adjust the margin and padding element in the step. After you are done customizing the settings and styles, remember to save the step by selecting **Done Editing**.
 
@@ -100,7 +98,7 @@ SecurityAlert
 
 In the previous example, the query indicated the visualization type for the data. You can also use the query without including the *render* parameter, and then use the **Visualization** drop-down menu to select one of the offered types of visualizations. The following screenshot illustrates the drop-down menu options.
 
-## ![](RackMultipart20201108-4-10kj3z7_html_88ea913b4aad37f6.png)
+![Screenshot of the Visiolaziation menu](../media/05-Visualization-Menu.PNG)
 
 ## Grid visualizations
 
@@ -108,7 +106,7 @@ You can use the grid visualization option from the **Visualization** drop-down m
 
 On the **Edit Column settings** tab, you can select a different column renderer such as, heatmap, bar, and spark area. If you select **Custom formatting**, you can set units, style, and formatting options for number values, as the following screenshot depicts.
 
-![](RackMultipart20201108-4-10kj3z7_html_d2a4e739aee8224.png)
+![Screenshot of the column settngs](../media/05-Edit-column-settings.PNG)
 
 ## Parameters
 
@@ -116,7 +114,7 @@ You can use parameters in your interactive workbook to manipulate the results of
 
 You can create the following parameter types:
 
-- You can enter arbitrary text. <!--Marjan, is the title of this parameter missing? Some of these list items have a title followed by description while others don;t. Can we make it consistent?-->
+- Text. You can enter arbitrary text. 
 - Drop-down. You can modify the appearance of a query step to include a drop-down menu, in which you can select a value from a set of values. In this parameter type, you can enter a KQL query or a JSON string to provide the choices for the drop-down list.
 - Options group. You can group multiple properties into group.
 - Time range picker. You can select from prepopulated time ranges or select a custom range.
@@ -143,8 +141,6 @@ You can add a links/tabs step to customize the navigation in the workbook with t
 - **Style**. Use this option to select between Link, Button (primary), Button (secondary) style.
 
 You can add a new tab by selecting **TABS** from the **Style** drop-down menu on the header bar.
-
-![](RackMultipart20201108-4-10kj3z7_html_fc81737adf1438e1.png)
 
 ## Metric steps
 
