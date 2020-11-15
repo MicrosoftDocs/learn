@@ -1,3 +1,5 @@
+In this exercise, we'll send Azure RTOS real-time room environment sensor data to IoT Central.
+
 ## Step 1: Open the project
 
 1. Start Visual Studio Code to open your project.
