@@ -65,6 +65,7 @@ To combine the records from two sources (tables), you can use the **join** opera
 ## Learn more
 
 Microsoft provides a nice [Log analytics tutorial](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/log-analytics-tutorial) that uses features of Log Analytics to build and run a query instead of working with the query itself. 
+
 You can also use [Azure Data explorer tutorial](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/tutorial?pivots=azuredataexplorer) to learn about the Kusto query language.
 
 ## Azure Monitor Community repository on GitHub
