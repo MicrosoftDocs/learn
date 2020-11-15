@@ -62,4 +62,17 @@ You can combine your queries with some of the most commonly used operators:
 
 To combine the records from two sources (tables), you can use the **join** operator. The **union** command combines two or more tables into one.
 
+**Azure Sentinel repository on GitHub**
+
+```kusto
+  let timeframe = 7d;
+  AzureActivity
+  | where TimeGenerated >= ago(timeframe)
+  | where OperationName == "Create role assignment"
+  | where ActivityStatus == "Succeeded" 
+  | project Caller, CallerIpAddress
+  | evaluate basket()
+  | extend AccountCustomEntity = Caller, IPCustomEntity = CallerIpAddress
+```
+
 If you want to try some examples, you can use [this demo environment](https://ms.portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade).
