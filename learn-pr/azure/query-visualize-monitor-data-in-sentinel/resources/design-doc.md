@@ -172,7 +172,7 @@ In this exercise, you will learn to:
 - Create a new Azure Sentinel workbook.
 - Visualize data by adding text, queries, and a graph into your workbook.
 
-Review the steps for this exercise: Create an Azure Sentinel<!-- an Azure Sentinel what? --> using the portal.<!-- "using the Azure portal?" If not, then which portal? Also, online 142, the lab title is "Create a workbook from a template."-->
+Review the steps for this exercise: Create an Azure Sentinel workbook using the Azure portal.
 
 To repeat these steps, sign up for a free trial Azure subscription.
 
