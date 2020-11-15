@@ -23,7 +23,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 4. Select the **I agree to the terms and conditions stated above** check box, and then select **Purchase**.
 
-![Screenshot of the Custom Deployment page](../media/07-Custom-Deployment.PNG)
+![Screenshot of the Custom Deployment page](../media/02-Custom-Deployment.PNG)
 
 > [!Note]
 > Wait for the deployment to complete. The deployment should take less than 5 minutes.
