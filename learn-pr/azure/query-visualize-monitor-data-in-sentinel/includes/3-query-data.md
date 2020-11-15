@@ -62,7 +62,19 @@ You can combine your queries with some of the most commonly used operators:
 
 To combine the records from two sources (tables), you can use the **join** operator. The **union** command combines two or more tables into one.
 
+**Learn more**
+
+Microsoft provides a nice [Log analytics tutorial](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/log-analytics-tutorial) that uses features of Log Analytics to build and run a query instead of working with the query itself. 
+You can also use [Azure Data explorer tutorial](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/tutorial?pivots=azuredataexplorer) to learn about the Kusto query language.
+
+**Azure Monitor Community repository on GitHub**
+
+[Azure Monitor Community](https://github.com/microsoft/AzureMonitorCommunity) repository on GitHub contains log queries, workbooks, and alerts, shared by Microsoft and community contributers to help Azure Monitor users make the most of it. Many of these ready to use queries and workbooks can be used in Azure Sentinel for queries, visualization and reporting on security threats and vulnerabilities.
+
 **Azure Sentinel repository on GitHub**
+
+You can also use [Azure Sentinel repository](https://github.com/Azure/Azure-Sentinel) on GitHub to search for specilized queries and workbooks to secure your environment and hunt for threats.
+For example the following query from Azure Sentinel GitHub repo, shows suspicios delegation of permisisons to account. The query analyze the ip address form where administrative user grant to others access on Azure resources. If an operation is not from this IP address, it signals suspicios activity, that can be further investigate.
 
 ```kusto
   let timeframe = 7d;
