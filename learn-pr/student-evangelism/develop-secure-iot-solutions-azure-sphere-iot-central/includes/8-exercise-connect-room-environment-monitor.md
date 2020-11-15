@@ -155,7 +155,10 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 5. Copy the verification code to the clipboard.
 
-   ![The illustration shows how to verify a certificate.](../media/iot-central-certificate-verify.png)
+   <!-- ![The illustration shows how to verify a certificate.](../media/iot-central-certificate-verify.png) -->
+
+   > [!div class="mx-imgBorder"]
+   > ![The illustration shows how to verify a certificate.](../media/iot-central-certificate-verify.png)  
 
 ### Verify the tenant CA certificate
 
@@ -177,7 +180,10 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 3. Click **Close** to dismiss the box.
 
-   ![The illustration shows a verified certificate.](../media/iot-central-certificate-verified.png)
+   <!-- ![The illustration shows a verified certificate.](../media/iot-central-certificate-verified.png) -->
+
+   > [!div class="mx-imgBorder"]
+   > ![The illustration shows a verified certificate.](../media/iot-central-certificate-verified.png)
 
 4. Click **Save**.
 
