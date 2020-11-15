@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.query-visualize-monitor-data-in-sentinel.3-query-data
+uid: learn.azure.query-visualize-monitor-data-in-sentinel.4-query-data
 metadata:
   title: Query data using Kusto Query Language
   description: Query data using Kusto Query Language
@@ -11,7 +11,7 @@ metadata:
 title: Query data using Kusto Query Language
 durationInMinutes: 5
 content: |
-  [!include[] includes/3-query-data.md)]
+  [!include[] includes/4-query-data.md)]
 quiz:
   title: Check your knowledge
   questions:
@@ -31,9 +31,9 @@ quiz:
     - content: "Pipe (|)"
       isCorrect: true
       explanation: "You can use the pipe (|) character to separate commands. "
-    - content: "" ## Marjan please provide the options and explanations for the remaining two options. 
+    - content: "Hyphen (-)"  
       isCorrect: false
       explanation: "You can use the pipe (|) character to separate commands."
-    - content: "Answer 3"
+    - content: "Underscore (_)"
       isCorrect: false
       explanation: "You can use the pipe (|) character to separate commands."
