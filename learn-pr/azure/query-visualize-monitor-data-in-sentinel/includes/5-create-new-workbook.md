@@ -32,7 +32,7 @@ You can use text blocks to interpret your security data, section headings, telem
 
 After you add the text, you can select the **Preview** tab to preview how your content will appear. Finally, when you complete editing the text, select the **Done Editing** option.
 
-![Screenshot of text visualization step](../media/05-Text-Visualization.png)
+![Screenshot of text visualization step](../media/05-Text-Visualization.PNG)
 
 ## Query item
 
