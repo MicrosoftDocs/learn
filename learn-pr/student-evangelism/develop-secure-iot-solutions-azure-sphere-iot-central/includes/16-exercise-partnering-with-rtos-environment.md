@@ -1,4 +1,4 @@
-In this exercise, we'll send Azure RTOS real-time room environment sensor data to IoT Central.
+In this exercise, we'll partner a high-level application to send Azure RTOS real-time room environment sensor data to IoT Central.
 
 ## Step 1: Open the project
 
@@ -100,13 +100,15 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 1. Scroll down to the function named **InterCoreHandler**.
     > [!NOTE]
-    > Use **Go to Symbol in Editor** in Visual Studio Code. Use the keyboard shortcut Ctrl+Shift+O and start typing *intercore_thread*. You'll often see a function name listed twice in the drop-down. The first is the function prototype or forward signature declaration, and the second is the implementation of the function.
+    > Use **Go to Symbol in Editor** in Visual Studio Code. Use the keyboard shortcut Ctrl+Shift+O and start typing *InterCoreHandler*. You'll often see a function name listed twice in the drop-down. The first is the function prototype or forward signature declaration, and the second is the implementation of the function.
 
-1. Set a breakpoint in the *intercore_thread* function on the line that reads **switch (ic_message_block->cmd)**
+1. Set a breakpoint in the *InterCoreHandler* function on the line that reads **switch (ic_message_block->cmd)**
     > [!NOTE]
     > You can learn how to set breakpoints from this [Visual Studio Code Debugging](https://code.visualstudio.com/docs/editor/debugging#_debug-actions?azure-portal=true) article.
 
-    ![Set a breakpoint in the inter-core callback function](../media/visual-studio-debug-intercore-callback.png)
+    <!-- ![Set a breakpoint in the inter-core callback function](../media/visual-studio-debug-intercore-callback.png) -->
+
+    :::image type="content" source="../media/visual-studio-debug-intercore-callback.png" alt-text="The illustration shows how to set a breakpoint in the InterCoreHandler callback function":::
 
 
 
@@ -171,7 +173,9 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
     > [!NOTE]
     > Azure IoT Central does not update immediately. It might take a minute or two for the device telemetry to be displayed.
 
-![The illustration shows how to display telemetry.](../media/iot-central-display-telemetry.png)
+<!-- ![The illustration shows how to display telemetry.](../media/iot-central-display-telemetry.png) -->
+
+:::image type="content" source="../media/iot-central-display-telemetry.png" alt-text="The illustration shows how to display telemetry.":::
 
 
 
@@ -194,9 +198,9 @@ To set the desired temperature:
 
 2. Save the property. This will send the desired temperature property to Azure Sphere. The RGB LED color will change depending on the desired temperature chosen.
 
-![The illustration shows display settings.](../media/iot-central-display-settings.png)
+<!-- ![The illustration shows display settings.](../media/iot-central-display-settings.png) -->
 
-
+:::image type="content" source="../media/iot-central-display-settings.png" alt-text="The illustration shows display settings.":::
 
 ## Close Visual Studio
 

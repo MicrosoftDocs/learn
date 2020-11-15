@@ -173,10 +173,12 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 1. Return to Azure IoT Central and click **Verify**.
 
-2. When prompted, select the validation certificate that you generated in the previous step. When the verification process is complete, the **Primary Certificate** dialog box displays the **Verified** message. Click **Close** to dismiss the box.
+2. When prompted, select the validation certificate that you generated in the previous step. When the verification process is complete, the **Primary Certificate** dialog box displays the **Verified** message.
+
+3. Click **Close** to dismiss the box.
 
    ![The illustration shows a verified certificate.](../media/iot-central-certificate-verified.png)
 
-3. Click **Save**.
+4. Click **Save**.
 
 After you complete these steps, any device that is claimed into your Azure Sphere tenant will automatically be enrolled in your Azure IoT Central application when it first connects.

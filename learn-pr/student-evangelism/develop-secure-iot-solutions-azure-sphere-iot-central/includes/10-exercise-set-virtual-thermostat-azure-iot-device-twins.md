@@ -93,7 +93,9 @@ To set the desired temperature:
 1. Update the **Desired Temperature** value.
 1. Save the property. This will send the desired temperature property to Azure Sphere. The RGB LED color will change depending on the desired temperature chosen.
 
-    ![The illustration shows display settings.](../media/iot-central-display-settings.png)
+    <!-- ![The illustration shows display settings.](../media/iot-central-display-settings.png) -->
+
+    :::image type="content" source="../media/iot-central-display-settings.png" alt-text="The illustration shows display settings.":::
 
 1. The Desired Temperature property status will change to **Accepted now**.
 1. If the HVAC operation mode changes then the **Last reported HVAC operating mode** property will also be updated.

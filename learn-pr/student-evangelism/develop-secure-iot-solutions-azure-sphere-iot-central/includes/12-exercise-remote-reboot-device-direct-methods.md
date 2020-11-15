@@ -91,6 +91,8 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
    ![The illustration shows how to control the device with a command.](../media/iot-central-device-command-run.png)
 
+   :::image type="content" source="../media/iot-central-device-command-run.png" alt-text="The illustration shows how to control the device with a command.":::
+
 1. Switch back to Azure IoT Central and click the **Command History** button to view the result of the command.
 
 ## Close Visual Studio

@@ -16,12 +16,12 @@ In this exercise, we'll deploy a high-level application to your Azure Sphere.
 
 1. Update the connection properties for the Azure IoT Central application.
 
-   - Update **CmdArgs** with your Azure IoT Central ID scope.
-   - Update **DeviceAuthentication** with your Azure Sphere Tenant ID. Remember, this was the numeric value returned from running the **azsphere tenant show-selected** command.
+    - Update **CmdArgs** with your Azure IoT Central ID scope.
+    - Update **DeviceAuthentication** with your Azure Sphere Tenant ID. Remember, this was the numeric value returned from running the **azsphere tenant show-selected** command.
 
 2. Update the **AllowedConnections** with the Azure IoT Central application endpoints you copied to Notepad.
 
-3. You can format the app_manifest.json document by pressing **Shift+Alt+F**.
+3. You can format the app_manifest.json document by right mouse clicking on the document and selecting **Format Document** from the context menu.
 
 4. Review your updated **app_manifest.json** file. It should look similar to the following.
 
@@ -66,7 +66,7 @@ In this exercise, we'll deploy a high-level application to your Azure Sphere.
 
 5. Save the updated app_manifest.json file.
 
-6. **IMPORTANT**. Copy the contents of your **app_manifest.json** file to Notepad, as you'll need this configuration information for the next labs.
+6. **IMPORTANT**. Copy the contents of your **app_manifest.json** file to Notepad or your text editor of choice, as you'll need this configuration information for the next labs.
 
 
 
@@ -171,7 +171,9 @@ Switch back to the Azure IoT Central web portal.
     > [!NOTE]
     > Azure IoT Central does not update immediately. It may take a minute or two for the temperature, humidity, and pressure telemetry to be displayed. You can check that data is flowing into IoT Central by checking the **Raw data** tab.
 
-![The illustration shows how to display measurements.](../media/iot-central-display-measurements.png)
+<!-- ![The illustration shows how to display measurements.](../media/iot-central-display-measurements.png) -->
+
+:::image type="content" source="../media/iot-central-display-measurements.png" alt-text="The illustration shows how to display measurements.":::
 
 
 

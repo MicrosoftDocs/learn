@@ -1,3 +1,5 @@
+In this exercise, we'll deploy a real-time application to your Azure Sphere.
+
 ## Step 1: Delete the existing applications on the Azure Sphere
 
 1. There will be peripheral reassignments between the existing High-Level application that is running on the Azure Sphere and the new Real-Time application that will be deployed to the Azure Sphere in this exercise. So you need to delete any existing applications on the Azure Sphere to avoid clashes.
@@ -60,13 +62,15 @@ The default developer board configuration is for the AVENT Azure Sphere Starter 
 You can debug the Azure RTOS application running on Azure Sphere Cortex M4 Real-Time Core.
 
 1. From Visual Studio Code, navigate to the **demo_threadx** directory, and open the **demo_azure_rtos.c** file.
-2. Scroll down to the function named **inter-core_thread**.
+2. Scroll down to the function named **intercore_thread**.
     > [!NOTE]
-    > Use **Go to Symbol in Editor** in Visual Studio Code. Use the keyboard shortcut Ctrl+Shift+O and start typing *inter-core_thread*. You'll often see a function name listed twice in the drop-down. The first is the function prototype or forward signature declaration, and the second is the implementation of the function.
-3. Set a breakpoint in the **inter-core_thread** function on the line that reads **switch (ic_control_block.cmd)**
+    > Use **Go to Symbol in Editor** in Visual Studio Code. Use the keyboard shortcut Ctrl+Shift+O and start typing *intercore_thread*. You'll often see a function name listed twice in the drop-down. The first is the function prototype or forward signature declaration, and the second is the implementation of the function.
+3. Set a breakpoint in the **intercore_thread** function on the line that reads **switch (ic_control_block.cmd)**
     > [!NOTE]
     > You can learn how to set breakpoints from this [Visual Studio Code Debugging](https://code.visualstudio.com/docs/editor/debugging#_debug-actions?azure-portal=true) article.
 
-    ![Set a breakpoint in Visual Studio Code](../media/visual-studio-debug-intercore-thread.png)
+    <!-- ![Set a breakpoint in Visual Studio Code](../media/visual-studio-debug-intercore-thread.png) -->
+
+    :::image type="content" source="../media/visual-studio-debug-intercore-thread.png" alt-text="The illustration shows how to set a breakpoint in Visual Studio Code.":::
 
 4. Leave Visual Studio Code and the app running with the breakpoint set. Next we are going to deploy a High Level app application to the Cortex A7 core which will request environment telemetry from the Real Time app running on the Cortex M4 core.
