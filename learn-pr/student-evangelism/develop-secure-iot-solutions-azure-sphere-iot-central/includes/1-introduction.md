@@ -6,7 +6,7 @@ You can build applications with Visual Studio or Visual Studio Code or integrate
 
 ## What is Azure Sphere
 
-[Azure Sphere](https://azure.microsoft.com/en-au/services/azure-sphere?azure-portal=true) is a comprehensive IoT security solution – including hardware, OS, and cloud components – to actively protect your devices, your business, and your customers.
+[Azure Sphere](https://azure.microsoft.com/services/azure-sphere?azure-portal=true) is a comprehensive IoT security solution – including hardware, OS, and cloud components – to actively protect your devices, your business, and your customers.
 
 Azure Sphere is made up of the following components:
 
