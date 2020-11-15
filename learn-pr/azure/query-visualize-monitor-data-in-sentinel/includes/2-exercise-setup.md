@@ -1,4 +1,4 @@
-The Threat detection with Azure Sentinel Analytics exercise in this module is an optional unit. However, if you want to perform this exercise, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+The Query and visualize exercise data in Azure Sentinel exercise in this module is an optional unit. However, if you want to perform this exercise, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 To deploy the prerequisites for the exercise, perform the following tasks.
 
@@ -37,10 +37,10 @@ In this task, you will deploy an Azure Sentinel connector to Azure Activity.
 5. Select your subscription, and then select **Connect**.
 6. When you receive a status of **Connected**, close all open blades to return to the **Azure Sentinel| Data connector** blade.
 
-:::image type="content" source="../media/07-Azure-Sentinel-Connector.PNG" alt-text="Screenshot of the Azure Sentinel connector." border="true":::
+:::image type="content" source="02-Azure-Sentinel-Connector.PNG" alt-text="Screenshot of the Azure Sentinel connector." border="true":::
 
 > [!Note]
-> The connector for Azure Activity could take 15 minutes to deply. Wait till a date displays in Azure Sentinel.
+> The connector for Azure Activity could take 15 minutes to deploy. You can proceed with the rest of the steps in the exercise and with next units in this module.
 
 ## Check the resources created
 
