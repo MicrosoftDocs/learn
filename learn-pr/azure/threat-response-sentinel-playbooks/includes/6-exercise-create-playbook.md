@@ -32,11 +32,11 @@ In this exercise, you will explore the Azure Sentinel playbooks. You will perfor
 8. In the search field type and select **Azure Sentinel**.
 9. In the Triggers tab, select **When a response to an Azure Sentinel Alert is triggered (preview)**.
 
-![](RackMultipart20201115-4-1yrme86_html_985baf0d737c4c8a.png)
+![Screenshot of Azure Sentinel trigger](../media/06-Azure-Sentinel-Triger.PNG)
 
 10. In the Azure Sentinel, verify that for the Tenant in the drop-down menu, **Default Directory** is selected and then select **Sign in.**
 
-![](RackMultipart20201115-4-1yrme86_html_70cdc921bd1e87c2.png)
+![Screenshot of authorizing API connection](../media/06-Sign-in-AADTenant.PNG)
 
 11. Provide the credential for your Azure subscription and then select **+ New step.**
 12. In the **Choose an operation** window, in the search field type and select **Azure Sentinel**.
@@ -45,22 +45,25 @@ In this exercise, you will explore the Azure Sentinel playbooks. You will perfor
 
 > [!Tip]
 
-> When you select the field, a new window will pop up to help you filling these entries with dynamic content. Under the **Dynamic content** tab, in the search box you can start typing
+> When you select the field, a new window will pop up to help you filling these entries with dynamic content. Under the **Dynamic content** tab, in the search box you can start typing for example **Resource group**, and then you can select the entry from the list, as shown in the following screenshot:
 
-| Specify subscription id: | **Subscription ID** |
+
+![Screenshot of Get Incident](../media/06-Get-Incident.PNG)
+
+|||
 | --- | --- |
+| Specify subscription id: | **Subscription ID** |
 | Specify resource group: | **Resource group** |
 | Specify workspace id: | **Workspace ID** |
 | Specify alert id: | **System Alert ID** |
-
-![](RackMultipart20201115-4-1yrme86_html_81ef71a7e187add6.png)
 
 15. In the **Choose an operation** window, in the search field type and select **Azure Sentinel.**
 16. From the **Actions** tab, locate and select **Change incident status (Preview).**
 17. In the **Change incident status (Preview)** provide the following inputs:
 
-| Specify subscription id: | **Subscription ID** |
+|||
 | --- | --- |
+| Specify subscription id: | **Subscription ID** |
 | Specify resource group: | **Resource group** |
 | Specify workspace id: | **Workspace ID** |
 | Identifier | From the drop-down menu select **Alert** |
@@ -69,7 +72,7 @@ In this exercise, you will explore the Azure Sentinel playbooks. You will perfor
 | Close reason | From the drop-down menu select **Custom Value** and then type **Incident Resolved** |
 | Close reason text | Write descriptive text |
 
-![](RackMultipart20201115-4-1yrme86_html_4a68b097a4c7f7ca.png)
+![Screenshot of Get Incident Status](../media/06-Change-Incident-Status.PNG)
 
 18. Once that you save the logic app, you can close the Logic Apps Designer.
 
@@ -85,7 +88,7 @@ In this exercise, you will explore the Azure Sentinel playbooks. You will perfor
 8. Close the **Alert** page, and then close **Incident** page to return on **Azure Sentinel | Incidents** page.
 9. In the **Azure Sentinel | Incidents** page, in the header bar select **Refresh.** You will notice that the incident will disappear from the pane. From the **Status** menu select **Closed** and select **OK.**
 
-![](RackMultipart20201115-4-1yrme86_html_9317719c2500d4a4.png)
+![Screenshot of the the header](../media/06-header-refresh.png)
 
 10. Verify that the incident is shown again, but notice the **Status** column, it states that is **Closed.**
 
