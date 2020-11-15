@@ -35,10 +35,7 @@ You can start predefined queries by selecting **Run**, which will redirect you t
 
 You can use the **Query Explorer** link on the page header to access your previously saved queries. You can also access some **Solution Queries** that basically filter the most common queries that you can use to filter the data. From the **Solution Queries** list, you can either run the query or organize the query in the favorites section by selecting the star symbol.
 
-### Table pane 
-
-<!--Marjan, looking at the screenshot, it appears to be 
-Tables, Queries. Please advise fi we shoudl change the section headings accordingly.-->
+### Tables pane 
 
 The **Tables** pane groups logs from different solutions into tables. You can expand the solution group and see all the logs that are collected. You can also select one of the logs from the tables pane, and then you can either preview the data or add that log to the **Favorites** section.
 
@@ -46,9 +43,9 @@ The following screenshot displays the logs collected in Azure Sentinel solution.
 
 ![Screenshot presenting Tables view](../media/02-Logs-Azure-Sentinel.png)
 
-### Query pane
+### Queries pane
 
-You can use the **Query** <!-- Should this be Queries-->pane to create queries that retrieve data based on the expression that you provide. The **Query** pane can help you in writing a right query by providing suggestions and automatically filling the expected elements of the query.
+You can use the **Queries** pane to create queries that retrieve data based on the expression that you provide. The **Query** pane can help you in writing a right query by providing suggestions and automatically filling the expected elements of the query.
 You can use the capabilities of the Kusto query language (KQL) to write a query that retrieves data from the logs. The following example illustrates how to use KQL code in your queries to identify deleted virtual machines.
 
 ```kusto
