@@ -28,14 +28,14 @@ quiz:
       isCorrect: true
       explanation: "That's correct. In each of the Azure Arc enabled scenarios, Azure Arc leverages the locally installed Connected Machine agents to establish a logical connection between the local resource and Azure."
 
-  - content: "What is necessary in order to integrate an Azure Stack HCI cluster with Azure Arc?"
+  - content: "Which of the following operating systems is not supported by Azure Arc enabled servers?"
     choices:
-    - content: "Install the Connected Machine agent on each Azure Stack HCI cluster node."
+    - content: "Windows Server 2012 R2"
       isCorrect: false
-      explanation: "That's incorrect. In case of Azure Stack HCI clusters, the Azure Arc agent is already included as part of the operating system of cluster nodes, so there is no need to install it."
-    - content: "Install the Microsoft Dependency agent on each Azure Stack HCI cluster node."
+      explanation: "That's incorrect. The Azure Connected Machine agent supports all versions of Windows Server operating system that have not reached their end of support stage."
+    - content: "Red Hat Enterprise Linux 7 (x64)."
       isCorrect: false
-      explanation: "That's incorrect. The Microsoft Dependency agent is not required when integrating Azure Stack HCI with Azure Arc."
-    - content: "Register the Azure Stack HCI cluster with Azure."
+      explanation: "That's incorrect. The Azure Connected Machine agent supports Red Hat Enterprise Linux 7 (x64)."
+    - content: "macOS 10.15."
       isCorrect: true
-      explanation: "That's correct. To integrate an Azure Stack HCI cluster with Azure, you need to register it with Azure."
+      explanation: "That's correct. The Azure Connected Machine agent supports only Windows Server and major Linux distributions."

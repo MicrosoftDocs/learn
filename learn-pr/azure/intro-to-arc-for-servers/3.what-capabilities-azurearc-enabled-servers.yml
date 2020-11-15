@@ -28,14 +28,14 @@ quiz:
       isCorrect: true
       explanation: "That's correct. This VM extension allows you to apply a PowerShell DSC configuration on Arc enabled servers."
 
-  - content: "Which software component allows you to use Azure Policy to audit settings within the operating system of Arc enabled servers to evaluate their compliance?"
+  - content: "What can you do in order to audit changes the state of operating system of Azure Arc enabled servers?"
     choices:
-    - content: "DSC."
+    - content: "Review Azure Advisor."
       isCorrect: false
-      explanation: "That's incorrect. This is a VM extension that allows you to apply a PowerShell DSC configuration on Arc enabled servers."
-    - content: "Microsoft Dependency agent."
+      explanation: "That's incorrect. Azure Advisor is limited to cloud resources only."
+    - content: Search through the activity logs in the Azure portal."
       isCorrect: false
-      explanation: "That's incorrect. This is an agent that facilitates identifying internal and external dependencies of server workloads."
-    - content: "Guest Configuration."
+      explanation: "That's incorrect. The activity log records events affecting the Azure resources only."
+    - content: "Apply Azure Guest Configuration-based policy."
       isCorrect: true
-      explanation: "That's correct. Guest Configuration policies do not apply configurations, but they audit settings within the target operating system and evaluate their compliance."
+      explanation: "That's correct. Guest Configuration policies allow you to audit settings within the target operating system and evaluate their compliance."
