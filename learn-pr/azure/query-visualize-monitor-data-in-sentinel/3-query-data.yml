@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which one of the following tools you can use to query data in Azure Sentinel?"
+  - content: "Which one of the following tools can an administrator use to query data in Azure Sentinel?"
     choices:
     - content: "Structured Query Language (SQL)"
       isCorrect: false
@@ -25,13 +25,13 @@ quiz:
       explanation: "PowerShell is a cross-platform task automation and configuration management framework, consisting of a command-line shell and scripting language."
     - content: "Azure Data Explorer"
       isCorrect: true
-      explanation: "Azure Data Explorer a.k.a Kusto is a log analytics cloud platform optimized for ad-hoc big data queries."
-  - content: "Which one of the following characters you can use to separate the commands in the query."
+      explanation: "Azure Data Explorer, which is also known as Kusto, is a log analytics cloud platform optimized for ad-hoc big data queries."
+  - content: "Which one of the following characters can an administrator use to separate the commands in the query."
     choices:
     - content: "Pipe (|)"
       isCorrect: true
       explanation: "You can use the pipe (|) character to separate commands. "
-    - content: ""
+    - content: "" ## Marjan please provide the options and explanations for the remaining two options. 
       isCorrect: false
       explanation: "You can use the pipe (|) character to separate commands."
     - content: "Answer 3"

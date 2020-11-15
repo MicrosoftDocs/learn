@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which one of the elements cannot be part of the workbook?"
+  - content: "Which one of the following elements cannot be part of the workbook?"
     choices:
     - content: "Charts"
       isCorrect: false
@@ -25,15 +25,15 @@ quiz:
       explanation: "You can create a workbook that contains tables."
     - content: "Videos"
       isCorrect: true
-      explanation: "Workbook cannot contains videos."
-  - content: "In which section of the Azure AD Sign-in logs workbook you can find information that users were required Multifactor authentication MFA to validate their identity."
+      explanation: "A workbook cannot contain videos."
+  - content: "In which section of the Azure AD Sign-in logs workbook can an administrator find information that users are required to perform multifactor authentication (MFA) to validate their identity."
     choices:
     - content: "Sign-in Location"
       isCorrect: false
-      explanation: "Sign-in Location shows from which location the user sign-in"
+      explanation: "Sign-in Location shows from which location the user signed in."
     - content: "Conditional access status"
       isCorrect: true
-      explanation: "Conditional access status table shows which users were required multifactor authentication MFA to validate their identity."
+      explanation: "The Conditional access status table shows which users are required to perform MFA to validate their identity."
     - content: "Sign-ins by Device."
       isCorrect: false
-      explanation: "Sign-ins by Device list devices used by the users to sign-in in Azure AD."
+      explanation: "Sign-ins by Device lists devices used by the users to sign in to Azure AD."
