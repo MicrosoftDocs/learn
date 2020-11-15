@@ -1,4 +1,11 @@
-**Exercise**
+**Exercise: Query and visualize data with Azure Sentinel Workbooks**
+
+As a security engineer working for Contoso, you notice suspicios activities in your Azure subscription. You want to analyze the logs in Azure Sentinel from Azure Activity connector. You want to then further implement visualization of the data, and save this data in customized workbook. 
+
+In this exercise, you will explore logs and Azure Sentinel workbooks. You will perform the following tasks:
+
+- Interact with logs data in Azure Sentinel logas page.
+- Create and edit a custom workbook to visualize important data.
 
 **Task 1: Work with Logs in Azure Sentinel**
 
