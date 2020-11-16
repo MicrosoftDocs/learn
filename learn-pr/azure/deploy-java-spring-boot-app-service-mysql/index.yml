@@ -3,7 +3,7 @@ uid: learn.azure.deploy-java-spring-boot-app-service-mysql
 metadata:
   title: Create and deploy a data-driven Spring Boot Java application to Azure App Service with Spring Initializr and Maven
   description: Create a Spring Boot application, connect it to a MySQL database and then deploy to Azure App Service.
-  ms.date: 10/05/2020
+  ms.date: 11/16/2020
   author: roryp
   ms.author: ropreddy
   ms.topic: interactive-tutorial
