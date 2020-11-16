@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-stack-hci-plan-deploy.3-azure-stack-hci-workloads
+metadata:
+  title: Plan for Azure Stack HCI workloads
+  description: Identify hardware for Azure Stack HCI workloads, Azure Stack HCI compute considerations, Azure Stack HCI storage considerations, and Azure Stack HCI network considerations.
+  ms.date: 09/21/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan for Azure Stack HCI workloads
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-azure-stack-hci-workloads.md)]
