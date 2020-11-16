@@ -2,13 +2,13 @@ After having identified an area where you can contribute, the next step is to pr
 
 Communication is a key factor of success here. Even if sometimes it can be more comfortable to work things on your own and just submit the result, that's also taking the risk of working on something already done or not aligning with the project's values or best practices, resulting in a waste of time for everyone.
 
-There are a few steps you can take to reduce the chance of something like this happening. The first rule is to always keep an open mind, be open to feedback, and do not be in a rush. Open source project maintainers most likely have daily jobs too and their own life to care for, so if you don't get an immediate answer on something you ask please be patient.
+There are a few steps you can take to reduce the chance of something like this happening. Try to always keep an open mind, be open to feedback, and practise patience. Open source project maintainers most likely have a day job, as well as a private life to tend to. If you don't get an answer immediately, please wait a little (longer) before pinging the maintainers.
 
 ## Communicating your intent to maintainers
 
 You should always start by communicating your intent to contribute before doing any actual work. Unless it's indicated otherwise in the README, the issue tracker is usually the best place for that.
 
-- If you want to work on an existing issue, check that nobody is assigned to it by looking at the **assignees**. Also check that there's no **linked pull requests**, that would mean somebody is already working on it. Look through the comments to see if someone manifested its interest to work on the issue. If everything's clear, you may post a comment on the issue to indicate your interest to work on it. That way you're making clear to people that may come later that someone's working on it, and if needed maintainers can reply to you with some guidance and advices.
+- If you want to work on an existing issue, check that nobody is assigned to it by looking at the **assignees**. Also check that there's no **linked pull requests**, that would mean somebody is already working on it. Look through the comments to see if someone manifested their interest to work on the issue. If everything's clear, you may post a comment on the issue to indicate your interest to work on it. That way you're making clear to people that may come later that someone's working on it, and if needed maintainers can reply to you with guidance and advice.
 
     :::image type="content" source="../media/3-checks.png" alt-text="Screenshot showing the assignees and linked pull request sections":::
 
@@ -19,11 +19,11 @@ You should always start by communicating your intent to contribute before doing 
 Great, you've communicated your intent to help the project, you're now ready to start working on your actual contribution.
 
 1. Open the GitHub page of the project you want to contribute.
-1. Click on the **Fork** button to create a copy of the repository on your GitHub account. This is necessary as by default your don't have the permissions to make any changes on a public repository, unless it's your own. By forking the project, you're creating a copy on which on can make changes.
+1. Click on the **Fork** button to create a copy of the repository on your GitHub account. This is necessary as by default your don't have the permissions to make any changes on a public repository, unless it's your own (copy). By forking the project, you're creating a copy to which you can make changes.
 
     :::image type="content" source="../media/3-fork.png" alt-text="Screenshot showing the fork button of a GitHub project":::
 
-1. Click on the **Code** button to get information on how to clone the git repository on your local machine.
+1. Click on the **Code** button to get information on how to "clone" the git repository to your local machine.
 
     :::image type="content" source="../media/3-clone.png" alt-text="Screenshot showing the options for cloning a GitHub project":::
 
@@ -33,7 +33,7 @@ Great, you've communicated your intent to help the project, you're now ready to 
     git clone <REPOSITORY_URL>
     ```
 
-    Alternatively, you can use [GitHub Desktop](https://desktop.github.com/) if you prefer using an application, or [GitHub Codespaces](https://github.com/features/codespaces) if the option is proposed to you.
+    Alternatively, you can use [GitHub Desktop](https://desktop.github.com/) if you prefer using an application, or [GitHub Codespaces](https://github.com/features/codespaces) if the option is proposed to you. If you're a VS Code user, Codespaces will feel very familiar to you.
 
 1. Once the project has finished cloning, enter the project folder:
 
@@ -74,20 +74,20 @@ Great, you've communicated your intent to help the project, you're now ready to 
 
     :::image type="content" source="../media/3-create-pr.png" alt-text="Screenshot showing pull request creation interface":::
 
-    If there's a template for the pull request description, take the time to fill in all required information. If there's not, make sure to provide enough context for maintainers to understand what changes you are proposing and why. You should also link back to the related issue by mentioning it's number using the `#<ISSUE_NUMBER>`. You can find the issue number next to its title.
+    If there's a template for the pull request description, take the time to fill in all required information. If there isn't now, make sure to provide enough context for maintainers to understand what changes you are proposing and why. You should also link back to the related issue by mentioning its number using the `#<ISSUE_NUMBER>`. You can find the issue number next to its title.
 
     :::image type="content" source="../media/3-issue-number.png" alt-text="Screenshot showing issue number":::
 
 ## Asking for guidance or reviews on pull requests
 
-If you're unsure about some changes you made and would like to get the maintainers' opinion, the best way to do that is to comment directly on the pull requests. And if you consider your changes a work-in-progress, you also have the option to create a **draft pull request** instead to ask for guidance or help from other contributors.
+If you're unsure about some changes you made and would like to get the maintainers' opinion, the best way to do that is to comment directly on the pull request(s). And if you consider your changes a work-in-progress, you also have the option to create a **draft pull request** instead to ask for guidance or help from other contributors.
 
 :::image type="content" source="../media/3-draft-pr.png" alt-text="Screenshot showing the draft pull request option":::
 
 Once the project maintainers comes by your pull request, they can reply to the conversation or directly review your changes. There are multiple possible outcomes following a pull request review:
 
 - Your changes are approved, congratulations!
-- You pull request require some changes. Don't get discouraged! Look closely at the feedback provided, if you make the requested changes, there's a good chance that your pull request get accepted. If you push new commits to your branch, the pull request will automatically be updated with the new changes.
+- You pull request requires some changes. Don't get discouraged! Look closely at the feedback provided, if you make the requested changes, there's a good chance that your pull request get accepted. If you push new commits to your branch, the pull request will automatically update with the new changes.
 - The reviewer made some comments. This usually means that more details are needed about you changes or the motivation behind it.
 
-Remember to always be respectful in all your exchanges, and to act in accordance to the CODE_OF_CONDUCT. It's likely that before your changes can be accepted, there will be an ongoing discussion with the maintainers or other contributors. Contributing to open-source also requires patience, as sometimes you don't get an immediate feedback. Don't reach out to the maintainers privately via email, Twitter or any other means in hope to get a faster answer, this is considered harmful behavior. Discussing things publicly also gives the chance to other contributors or passersby to learn about the process behind the changes and the best practices to follow.
+Remember to always be respectful in all your exchanges, and to act in accordance to the CODE_OF_CONDUCT. It's likely that before your changes can be accepted, there will be an ongoing discussion with the maintainers or other contributors. Contributing to open-source requires patience, sometimes you don't get immediate feedback. Don't reach out to the maintainers privately via email, Twitter or any other means hoping to get a faster answer, this is considered harmful behavior. Discussing things publicly also gives the chance to other contributors or passersby to learn about the process behind the changes and the best practices to follow.
