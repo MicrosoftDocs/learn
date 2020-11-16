@@ -11,10 +11,14 @@ An in-memory database is used in this unit for simplicity. Choose a different da
 
     The preceding command:
 
-    * Adds the specified NuGet package reference to the project.
     * Downloads the specified NuGet package and its dependencies.
+    * Adds the specified NuGet package reference to the project.
 
-    The `Microsoft.EntityFrameworkCore.InMemory` package is required to use an EF Core in-memory database.
+    The `Microsoft.EntityFrameworkCore.InMemory` package is required to use an EF Core in-memory database. Notice the following element was added to the *:::no-loc text="ContosoPets.Api.csproj":::* file:
+
+    ```xml
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.0" />
+    ```
 
 1. Run the following command:
 
