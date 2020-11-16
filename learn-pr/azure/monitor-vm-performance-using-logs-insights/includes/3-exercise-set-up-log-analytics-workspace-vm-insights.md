@@ -16,9 +16,10 @@ In this unit, you'll:
 
     | Field | Value |
     | ---- | ---- |
-    | Subscription |  Select your subscription       |
-    | Resource group | <rgn>[sandbox resource group name]</rgn>-la |
+    | Subscription |  Select your subscription |
+    | Resource group | Select Learn resource group |
     | Region | Choose a region near you |
+
     :::image type="content" source="../media/3-create-log-analytics-workspace.png" alt-text="Screen shot of declaring the Log Analytics resource name, placing everything in the Concierge Subscription for Learn, and selecting Review + Create.":::
 
 1. Once all fields are filled out, select **Review + Create**.
