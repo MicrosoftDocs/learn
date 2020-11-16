@@ -5,7 +5,7 @@ metadata:
   description: In this tutorial, you'll learn about running your Java applications on Azure, and choose the best option between Virtual Machines, Azure App Services, Serverless functions, Kubernetes and Azure Spring Cloud.
   author: judubois
   ms.author: judubois
-  ms.date: 10/12/2020
+  ms.date: 11/16/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose an Azure service for deploying your Java application
@@ -34,6 +34,6 @@ units:
 - learn.java-target-destinations.3-matrix-of-solutions
 - learn.java-target-destinations.4-choosing-the-right-destination
 - learn.java-target-destinations.5-knowledge-check
-- learn.java-target-destinations.6-conclusion
+- learn.java-target-destinations.6-summary
 badge:
   uid: learn.java-target-destinations.badge

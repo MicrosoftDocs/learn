@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.java-target-destinations.6-conclusion
-title: Conclusion
+uid: learn.java-target-destinations.6-summary
+title: Summary
 metadata:
-  title: Conclusion
+  title: Summary
   description: Conclusion on running Java applications on Azure
   author: judubois
   ms.author: judubois
-  ms.date: 10/12/2020
+  ms.date: 11/16/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-conclusion.md)]
+  [!include[](includes/6-summary.md)]
