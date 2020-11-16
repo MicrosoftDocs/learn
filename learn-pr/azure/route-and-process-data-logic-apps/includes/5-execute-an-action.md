@@ -24,7 +24,7 @@ This type of action helps you send out data for processing or pull data into you
 
 Let's look at an example. If you've used Twitter for a while, you might be familiar with their URL pattern to link to a specific tweet:
 
-```
+```language-plaintext
 https://twitter.com/[username]/status/[id]
 ```
 
@@ -32,7 +32,7 @@ This type of link could be useful in the social-media app. You might want to sto
 
 The data you get from the Twitter trigger does not include this complete URL. However, it does contain the username in the **TweetedBy** field and the ID in the **TweetId** field. You can use the **Compose** data operation to put the pieces together into the URL. Conceptually, the operation would be:
 
-```
+```language-plaintext
 Compose: "https://twitter.com/" + [TweetedBy] + "/status/" + [TweetId]
 ```
 
