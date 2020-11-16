@@ -14,13 +14,6 @@ In this unit, you'll:
 
 1. Enter the following values to build the Log Analytics workspace (note, the Log Analytics workspace name must be globally unique, so take the subscription name and add **-la** at the end).
 
-    | Field | Value |
-    | ---- | ---- |
-    | Subscription |  Select your subscription |
-    | Resource group | Select Learn resource group |
-    | Instance name | Use the Learn resource group name and add **-la** at the end
-    | Region | Choose a region near you |
-
     :::image type="content" source="../media/3-create-log-analytics-workspace.png" alt-text="Screen shot of declaring the Log Analytics resource name, placing everything in the Concierge Subscription for Learn, and selecting Review + Create.":::
 
 1. Once all fields are filled out, select **Review + Create**.
