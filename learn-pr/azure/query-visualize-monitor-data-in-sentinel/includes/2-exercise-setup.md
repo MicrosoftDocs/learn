@@ -1,4 +1,4 @@
-The Query and visualize exercise data in Azure Sentinel exercise in this module is an optional unit. However, if you want to perform this exercise, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+The Query and visualize data in Azure Sentinel exercise in this module is an optional unit. However, if you want to perform this exercise, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 To deploy the prerequisites for the exercise, perform the following tasks.
 
@@ -40,14 +40,14 @@ In this task, you will deploy an Azure Sentinel connector to Azure Activity.
 :::image type="content" source="02-Azure-Sentinel-Connector.PNG" alt-text="Screenshot of the Azure Sentinel connector." border="true":::
 
 > [!Note]
-> The connector for Azure Activity could take 15 minutes to deploy. You can proceed with the rest of the steps in the exercise and with next units in this module.
+> The connector for Azure Activity could take 15 minutes to deploy. You can proceed with the rest of the steps in the exercise and with the subsequent units in this module.
 
 ## Check the resources created
 
 1. In the Azure portal, search for **Resource groups**.
 1. Select **azure-sentinel-rg**.
 1. Sort the list of resources by **Type**.
-1. The resource group should contain the resources listed inthe following table.
+1. The resource group should contain the resources listed in the following table.
 
     | Name  | Type  | Description |
     |---|---|---|

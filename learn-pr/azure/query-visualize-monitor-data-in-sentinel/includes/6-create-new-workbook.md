@@ -7,9 +7,9 @@ You can create a custom workbook by selecting **+Add workbook** on the header ba
 > [!Tip]
 > Each workbook that you create is saved as a workbook resource in the Azure Sentinel resource group.
 
-![Screenshot of empty new workbook](../media/05-New-Workbook.PNG)
+:::image type="content" source="../media/05-New-Workbook.PNG" alt-text="Screenshot of an empty workbook." border="true":::
 
-You can start building your workbook by selecting **Edit** on the **New Workbook** page, and then again select the **Edit** option to change the text that appears in the new workbook template. 
+You can start building your workbook by selecting **Edit** on the **New Workbook** page, and then again select the **Edit** option to change the text that appears in the new workbook template.
 
 Each workbook provides a rich set of capabilities for visualizing the security data collected from the connectors. You can design your workbook with the following visualization types and elements:
 
@@ -21,7 +21,7 @@ Each workbook provides a rich set of capabilities for visualizing the security d
 
 You can add a new element to your workbook by selecting **+Add** as the following screenshot depicts.
 
-![Screenshot of adding new step in the workbook](../media/05-Add-visualization.PNG)
+:::image type="content" source="../media/05-Add-visualization.PNG" alt-text="Screenshot of adding a new step in the workbook." border="true":::
 
 ## Text visualizations
 
@@ -32,7 +32,7 @@ You can use text blocks to interpret your security data, section headings, telem
 
 After you add the text, you can select the **Preview** tab to preview how your content will appear. Finally, when you complete editing the text, select the **Done Editing** option.
 
-![Screenshot of text visualization step](../media/05-Text-Visualization.PNG)
+:::image type="content" source="../media/05-Text-Visualization.PNG" alt-text="Screenshot of a text visualization step." border="true":::
 
 ## Query item
 
@@ -49,7 +49,7 @@ You can create a different query from the logs and visualize the data as text, c
 
 When you create a query, Azure Sentinel adds a new step to the workbook as the following screenshot depicts:
 
-![Screenshot of Query visualization step](../media/05-Query-Visualization.PNG)
+:::image type="content" source="../media/05-Query-Visualization.PNG" alt-text="Screenshot of the Query visualization step." border="true":::
 
 On the header bar, there are several fields that provide you options to tune the output of the query.
 
@@ -71,7 +71,7 @@ On the **Advanced Settings** tab, you can provide additional customization for t
 
 For example, on the **Settings** tab, you can enter the **Chart title**, as the following screenshot depicts.
 
-![Screenshot of advanced tab](../media/05-Advanced-Settings.PNG)
+:::image type="content" source="../media/05-Advanced-Settings.PNG" alt-text="Screenshot of the Advanced tab." border="true":::
 
 You can use the **Style** tab to adjust the margin and padding element in the step. After you are done customizing the settings and styles, remember to save the step by selecting **Done Editing**.
 
@@ -98,7 +98,7 @@ SecurityAlert
 
 In the previous example, the query indicated the visualization type for the data. You can also use the query without including the *render* parameter, and then use the **Visualization** drop-down menu to select one of the offered types of visualizations. The following screenshot illustrates the drop-down menu options.
 
-![Screenshot of the Visiolaziation menu](../media/05-Visualization-Menu.PNG)
+:::image type="content" source="../media/05-Visualization-Menu.PNG" alt-text="Screenshot of the Visualization menu." border="true":::
 
 ## Grid visualizations
 
@@ -106,7 +106,7 @@ You can use the grid visualization option from the **Visualization** drop-down m
 
 On the **Edit Column settings** tab, you can select a different column renderer such as, heatmap, bar, and spark area. If you select **Custom formatting**, you can set units, style, and formatting options for number values, as the following screenshot depicts.
 
-![Screenshot of the column settngs](../media/05-Edit-column-settings.PNG)
+:::image type="content" source="../media/05-Edit-column-settings.PNG" alt-text="Screenshot of the column settings." border="true":::
 
 ## Parameters
 
@@ -114,13 +114,13 @@ You can use parameters in your interactive workbook to manipulate the results of
 
 You can create the following parameter types:
 
-- Text. You can enter arbitrary text. 
+- Text. You can enter arbitrary text.
 - Drop-down. You can modify the appearance of a query step to include a drop-down menu, in which you can select a value from a set of values. In this parameter type, you can enter a KQL query or a JSON string to provide the choices for the drop-down list.
 - Options group. You can group multiple properties into group.
 - Time range picker. You can select from prepopulated time ranges or select a custom range.
 - Resource picker. You can select one or more Azure resources.
 - You can select one or more Azure subscription resources.
-- Resource Type. You can select one or more Azure resource type values.
+- Resource type. You can select one or more Azure resource type values.
 - You can select one or more Azure location values.
 
 You can reference parameter values in other parts of the workbooks either by using bindings or by using value expansions.
