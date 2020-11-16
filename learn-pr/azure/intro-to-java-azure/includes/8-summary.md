@@ -3,6 +3,8 @@ After you identified the type of your java application, you can choose between o
 
 Next Steps:
 
-- Deploy Spring Boot Apps to Azure
-- Deploy a Java Web App to Azure
-- Deploy distributed Spring Microservice Apps to Azure
+- [Create a free Account to try Java on Azure](https://azure.microsoft.com/free/java/?azure-portal=true&WT.mc_id=java-5404-sakriema)
+- [Deploy Spring Boot Apps to Azure](https://azure.microsoft.com/resources/videos/deploy-a-spring-boot-app-to-azure/?WT.mc_id=java-5404-sakriema)
+- [Migrate your Java applications to Azure](https://docs.microsoft.com/azure/developer/java/migration/migration-overview/?WT.mc_id=java-5404-sakriema)
+- [Deploy distributed Spring Microservice Apps to Azure](https://azure.microsoft.com/resources/templates/101-azure-spring-cloud/?WT.mc_id=java-5404-sakriema)
+- [Know when to choose which service](https://azure.microsoft.com/blog/how-i-choose-which-services-to-use-in-azure/?WT.mc_id=java-5404-sakriema)
