@@ -24,7 +24,7 @@ security and compliance are all provided. As a result, this option is usually mo
 some scalability features, which should allow your application to adapt better to your customer's needs, resulting in better
 performance under load and lower prices when there is less traffic.
 
-To benefit fully from a Platform-as-a-Service solution, applications sometimes need to be rearchitected. They can then enjoy cloud-native features like automatic configuration and secret management (using Azure Key Vault), monitoring and application profiling (using Azure Application Insights), and zero-downtime deployment.
+You can achieve more using a Platform-as-a-Service solution : you can setup automatic configuration, manage and load secrets (for example using Azure Key Vault), monitor your application, launch a live profiling session, and enable zero-downtime deployment.
 
 ## Deployment options
 
