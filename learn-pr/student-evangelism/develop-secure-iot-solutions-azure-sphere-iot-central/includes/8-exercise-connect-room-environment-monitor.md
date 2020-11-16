@@ -185,6 +185,10 @@ A capability model is a JSON document that describes the shape of the telemetry 
    > [!div class="mx-imgBorder"]
    > ![The illustration shows a verified certificate.](../media/iot-central-certificate-verified.png)
 
+   <br/>
+
+   :::image type="content" source="../media/iot-central-certificate-verified.png" alt-text="The illustration shows a verified certificate.":::
+
 4. Click **Save**.
 
 After you complete these steps, any device that is claimed into your Azure Sphere tenant will automatically be enrolled in your Azure IoT Central application when it first connects.
