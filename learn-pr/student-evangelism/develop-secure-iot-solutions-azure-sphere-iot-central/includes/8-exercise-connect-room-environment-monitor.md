@@ -12,11 +12,13 @@ In this exercise, we'll build a high-level Azure Sphere application that connect
 
 4. Expand the sidebar menu by clicking on the **Menu** icon.
 
-   ![The illustration shows how to expand the sidebar menu.](../media/iot-central-burger-menu.png)
+   > [!div class="mx-imgBorder"]
+   > ![The illustration shows how to expand the sidebar menu.](../media/iot-central-burger-menu.png)
 
 5. Navigate to **Build**, and select **Custom apps**.
 
-   ![The illustration shows how to create custom app.](../media/iot-central-new-application.png)
+   > [!div class="mx-imgBorder"]
+   > ![The illustration shows how to create custom app.](../media/iot-central-new-application.png)
 
 6. Specify the **Application name**, specify the **URL**, select the **Free** pricing plan, and complete the registration form.
 
@@ -48,7 +50,7 @@ A capability model is a JSON document that describes the shape of the telemetry 
 1. Click **Import capability model**.
 
    > [!div class="mx-imgBorder"]
-   > ![Import IoT Central capability model](../media/iot-central-import-capability-model.png)
+   > ![The illustration shows how to import IoT Central capability model](../media/iot-central-import-capability-model.png)
 
 2. Navigate to the **Azure-Sphere** lab folder.
 

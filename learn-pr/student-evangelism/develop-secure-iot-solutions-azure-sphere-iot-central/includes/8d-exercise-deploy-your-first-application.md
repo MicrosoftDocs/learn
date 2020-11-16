@@ -154,7 +154,9 @@ Switch back to the Azure IoT Central web portal.
 1. Select your Azure Sphere device.
 
 1. Click **Migrate**.
-    ![Migrate a device in IoT Central](../media/iot-central-migrate-device.png)
+
+    > [!div class="mx-imgBorder"]
+    > ![The illustration shows how to migrate a device in IoT Central](../media/iot-central-migrate-device.png)
 
 1. Select the **Azure Sphere** template.
 
@@ -171,11 +173,8 @@ Switch back to the Azure IoT Central web portal.
     > [!NOTE]
     > Azure IoT Central does not update immediately. It may take a minute or two for the temperature, humidity, and pressure telemetry to be displayed. You can check that data is flowing into IoT Central by checking the **Raw data** tab.
 
-<!-- ![The illustration shows how to display measurements.](../media/iot-central-display-measurements.png) -->
-
-:::image type="content" source="../media/iot-central-display-measurements.png" alt-text="The illustration shows how to display measurements.":::
-
-
+> [!div class="mx-imgBorder"]
+> ![The illustration shows how to display measurements.](../media/iot-central-display-measurements.png)
 
 ## Close Visual Studio Code
 

@@ -106,11 +106,8 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
     > [!NOTE]
     > You can learn how to set breakpoints from this [Visual Studio Code Debugging](https://code.visualstudio.com/docs/editor/debugging#_debug-actions?azure-portal=true) article.
 
-    <!-- ![Set a breakpoint in the inter-core callback function](../media/visual-studio-debug-intercore-callback.png) -->
-
-    :::image type="content" source="../media/visual-studio-debug-intercore-callback.png" alt-text="The illustration shows how to set a breakpoint in the InterCoreHandler callback function":::
-
-
+    > [!div class="mx-imgBorder"]
+    > ![The illustration shows how to set a breakpoint in the InterCoreHandler callback function](../media/visual-studio-debug-intercore-callback.png)
 
 ## Step 5: Start the app build deploy process
 
@@ -173,11 +170,8 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
     > [!NOTE]
     > Azure IoT Central does not update immediately. It might take a minute or two for the device telemetry to be displayed.
 
-<!-- ![The illustration shows how to display telemetry.](../media/iot-central-display-telemetry.png) -->
-
-:::image type="content" source="../media/iot-central-display-telemetry.png" alt-text="The illustration shows how to display telemetry.":::
-
-
+> [!div class="mx-imgBorder"]
+> ![The illustration shows how to display telemetry.](../media/iot-central-display-telemetry.png)
 
 ## Step 9: Set the desired temperature
 
@@ -198,9 +192,8 @@ To set the desired temperature:
 
 2. Save the property. This will send the desired temperature property to Azure Sphere. The RGB LED color will change depending on the desired temperature chosen.
 
-<!-- ![The illustration shows display settings.](../media/iot-central-display-settings.png) -->
-
-:::image type="content" source="../media/iot-central-display-settings.png" alt-text="The illustration shows display settings.":::
+> [!div class="mx-imgBorder"]
+> ![The illustration shows display settings.](../media/iot-central-display-settings.png)
 
 ## Close Visual Studio
 
