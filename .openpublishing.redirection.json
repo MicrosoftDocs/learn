@@ -3849,6 +3849,41 @@
       "source_path": "learn-pr/wwl-azure/secure-network-connectivity/9-walkthrough-traffic.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-core-identity-services/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-core-identity-services/2-compare-authentication-authorization.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-core-identity-services/3-explore-azure-active-directory.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-core-identity-services/4-explore-azure-multi-factor-authentication.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-core-identity-services/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-core-identity-services/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-core-identity-services/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
     }
   ]
 }

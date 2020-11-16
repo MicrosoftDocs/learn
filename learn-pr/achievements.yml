@@ -227,3 +227,8 @@ achievements:
   title: Secure network connectivity
   summary: Secure network connectivity
   iconUrl: /learn/achievements/secure-network-connectivity.svg
+- uid: learn.wwl.examine-core-identity-services.badge
+  type: badge
+  title: Examine core identity services
+  summary: Examine core identity services
+  iconUrl: /learn/achievements/examine-core-identity-services.svg

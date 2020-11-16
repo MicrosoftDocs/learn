@@ -12,11 +12,17 @@ In this exercise, we'll build a high-level Azure Sphere application that connect
 
 4. Expand the sidebar menu by clicking on the **Menu** icon.
 
-   ![The illustration shows how to expand the sidebar menu.](../media/iot-central-burger-menu.png)
+   <!-- > [!div class="mx-imgBorder"]
+   > ![The illustration shows how to expand the sidebar menu.](../media/iot-central-burger-menu.png) -->
+
+   :::image type="content" source="../media/iot-central-burger-menu.png" alt-text="The illustration shows how to expand the sidebar menu.":::
 
 5. Navigate to **Build**, and select **Custom apps**.
 
-   ![The illustration shows how to create custom app.](../media/iot-central-new-application.png)
+   <!-- > [!div class="mx-imgBorder"]
+   > ![The illustration shows how to create custom app.](../media/iot-central-new-application.png) -->
+
+   :::image type="content" source="../media/iot-central-new-application.png" alt-text="The illustration shows how to create custom app.":::
 
 6. Specify the **Application name**, specify the **URL**, select the **Free** pricing plan, and complete the registration form.
 
@@ -28,7 +34,10 @@ A device template is a blueprint that defines the characteristics and behaviors 
 
 1. Navigate to **Device templates**, then **+ New**.
 
-   ![The illustration shows how to create IoT device templates.](../media/iot-central-new-iot-device-template.png)
+   <!-- > [!div class="mx-imgBorder"]
+   > ![The illustration shows how to create IoT device templates.](../media/iot-central-new-iot-device-template.png) -->
+
+   :::image type="content" source="../media/iot-central-new-iot-device-template.png" alt-text="The illustration shows how to create IoT device templates.":::
 
 1. Select **IoT device**.
 
@@ -45,7 +54,11 @@ A device template is a blueprint that defines the characteristics and behaviors 
 A capability model is a JSON document that describes the shape of the telemetry sent by a device and the interactions between the device and IoT Central.
 
 1. Click **Import capability model**.
-   ![Import IoT Central capability model](../media/iot-central-import-capability-model.png)
+
+   <!-- > [!div class="mx-imgBorder"]
+   > ![The illustration shows how to import IoT Central capability model](../media/iot-central-import-capability-model.png) -->
+
+   :::image type="content" source="../media/iot-central-import-capability-model.png" alt-text="The illustration shows how to import IoT Central capability model.":::
 
 2. Navigate to the **Azure-Sphere** lab folder.
 
@@ -58,7 +71,11 @@ A capability model is a JSON document that describes the shape of the telemetry 
 1. Navigate to the **Views** menu.
 
 2. Select **Visualizing the device**.
-   ![The illustration shows how add tile status.](../media/iot-central-add-view.png)
+
+   <!-- > [!div class="mx-imgBorder"]
+   > ![The illustration shows how add tile status.](../media/iot-central-add-view.png) -->
+
+   :::image type="content" source="../media/iot-central-add-view.png" alt-text="The illustration shows how add tile status.":::
 
 3. Name the view **Telemetry**.
 
@@ -72,14 +89,21 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 8. Click **Save** to save the view.
 
-![The illustration shows telemetry items.](../media/iot-central-add-tile-environment.png)
+<!-- > [!div class="mx-imgBorder"]
+> ![The illustration shows telemetry items.](../media/iot-central-add-tile-environment.png) -->
+
+:::image type="content" source="../media/iot-central-add-tile-environment.png" alt-text="The illustration shows telemetry items.":::
 
 ### Create a properties form
 
 1. Navigate to the **Views** menu.
 
 2. Select **Editing device and cloud data**.
-   ![The illustration shows how to edit device and cloud data.](../media/iot-central-view-properties-create.png)
+
+   <!-- > [!div class="mx-imgBorder"]
+   > ![The illustration shows how to edit device and cloud data.](../media/iot-central-view-properties-create.png) -->
+
+   :::image type="content" source="../media/iot-central-view-properties-create.png" alt-text="The illustration shows how to edit device and cloud data.":::
 
 3. Name the form **Properties**.
 
@@ -99,13 +123,17 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 9. Click **Save** to save the form.
 
-![The illustration shows the properties section.](../media/iot-central-add-tile-form.png)
+<!-- > [!div class="mx-imgBorder"]
+> ![The illustration shows the properties section.](../media/iot-central-add-tile-form.png) -->
+
+:::image type="content" source="../media/iot-central-add-tile-form.png" alt-text="The illustration shows the properties section.":::
 
 ### Publish the device template
 
 1. Click **Publish** to publish the template. Publishing the template makes it available for devices.
 
-   ![The illustration shows how to publish a device template.](../media/iot-central-template-publish.png)
+   > [!div class="mx-imgBorder"]
+   > ![The illustration shows how to publish a device template.](../media/iot-central-template-publish.png)
 
 2. Confirm and click **Publish**.
 
@@ -155,7 +183,10 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 5. Copy the verification code to the clipboard.
 
-   ![The illustration shows how to verify a certificate.](../media/iot-central-certificate-verify.png)
+   <!-- > [!div class="mx-imgBorder"]
+   > ![The illustration shows how to verify a certificate.](../media/iot-central-certificate-verify.png)   -->
+
+   :::image type="content" source="../media/iot-central-certificate-verify.png" alt-text="The illustration shows how to verify a certificate.":::
 
 ### Verify the tenant CA certificate
 
@@ -173,10 +204,15 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 1. Return to Azure IoT Central and click **Verify**.
 
-2. When prompted, select the validation certificate that you generated in the previous step. When the verification process is complete, the **Primary Certificate** dialog box displays the **Verified** message. Click **Close** to dismiss the box.
+2. When prompted, select the validation certificate that you generated in the previous step. When the verification process is complete, the **Primary Certificate** dialog box displays the **Verified** message.
 
-   ![The illustration shows a verified certificate.](../media/iot-central-certificate-verified.png)
+3. Click **Close** to dismiss the box.
 
-3. Click **Save**.
+   <!-- > [!div class="mx-imgBorder"]
+   > ![The illustration shows a verified certificate.](../media/iot-central-certificate-verified.png) -->
+
+   :::image type="content" source="../media/iot-central-certificate-verified.png" alt-text="The illustration shows a verified certificate.":::
+
+4. Click **Save**.
 
 After you complete these steps, any device that is claimed into your Azure Sphere tenant will automatically be enrolled in your Azure IoT Central application when it first connects.
