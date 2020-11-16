@@ -2,7 +2,7 @@ The .NET CLI is the simplest way to create an ASP.NET Core web API. The CLI is p
 
 In this unit, you'll use the .NET CLI to create a web API within the Cloud Shell command shell to the right. You'll also gain an understanding of the resulting project.
 
-## Set up development environment
+## Set up the development environment
 
 Run the following command in the command shell:
 
@@ -14,9 +14,7 @@ Run the following command in the command shell:
 
 The preceding command installs a specific version of the .NET SDK in the Cloud Shell environment.
 
-## Create a web API project
-
-### Scaffold and explore a web API project
+## Create and explore a web API project
 
 1. Run the following .NET CLI command in the command shell:
 
@@ -51,7 +49,7 @@ The preceding command installs a specific version of the .NET SDK in the Cloud S
     | *:::no-loc text="Startup.cs":::*             | Configures services and the app's HTTP request pipeline.        |
     | *:::no-loc text="ContosoPets.Api.csproj":::* | Contains configuration metadata for the project.                |
 
-## Build and test
+## Build and test the web API
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 
