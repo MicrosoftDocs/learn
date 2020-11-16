@@ -68,23 +68,11 @@ dotnet install Azure.Identity
 Using the `DefaultAzureCredential` we can now create an authenticated `SecretClient`
 
 ```csharp
-var client = new SecretClient(vaultUri: new Uri(keyVaultUrl), credential: new DefaultAzureCredential());
+var client = new SecretClient(new Uri(keyVaultUrl), new DefaultAzureCredential());
 ```
 
-After creating our client, we can list all the secrets in the Key Vault. List operations don't return the secrets with values. Instead, they return the name and other information about the secret. So, for each returned secret name we must call GetSecret to get the secret with its secret value.
+After creating our client, we retrieve a named secret.
 
 ```csharp
-AsyncPageable<SecretProperties> allSecrets = client.GetPropertiesOfSecretsAsync();
-
-await foreach (SecretProperties secretProperties in allSecrets)
-{
-    // Getting a disabled secret will fail, so skip disabled secrets.
-    if (!secret.Enabled.GetValueOrDefault())
-    {
-        continue;
-    }
-
-    KeyVaultSecret secretWithValue = await client.GetSecretAsync(secret.Name).ConfigureAwait(false);
-    Console.WriteLine(secretWithValue.Value);
-}
+KeyVaultSecret secretWithValue = await client.GetSecretAsync(secret.Name).ConfigureAwait(false);
 ```

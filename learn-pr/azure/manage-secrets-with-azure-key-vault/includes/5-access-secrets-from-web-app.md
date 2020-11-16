@@ -6,7 +6,7 @@ Now that you know how enabling managed identities for Azure resources creates an
 
 The Azure Key Vault API is a REST API that handles all management and usage of keys and vaults. Each secret in a vault has a unique URL, and secret values are retrieved with HTTP GET requests.
 
-The official Key Vault client for .NET Core is the `KeyVaultClient` class in the Azure.Security.KeyVault.Secrets NuGet package. However, you don't need to use it directly. With ASP.NET Core's `AddAzureKeyVault` method, you can load all the secrets from a vault into the Configuration API at startup. This technique enables you to access all of your secrets by name using the same `IConfiguration` interface you use for the rest of your configuration. Apps that use `AddAzureKeyVault` require both **Get** and **List** permissions to the vault.
+The official Key Vault client for .NET Core is the `SecretClient` class in the Azure.Security.KeyVault.Secrets NuGet package; however, you don't need to use it directly. With ASP.NET Core's `AddAzureKeyVault` method, you can load all the secrets from a vault into the Configuration API at startup. This technique enables you to access all of your secrets by name using the same `IConfiguration` interface you use for the rest of your configuration. Apps that use `AddAzureKeyVault` require both **Get** and **List** permissions to the vault.
 
 > [!TIP]
 > Regardless of the framework or language you use to build your app, you should design it to cache secret values locally or load them into memory at startup unless you have a specific reason not to. Reading them directly from the vault every time you need them is unnecessarily slow and expensive.
@@ -21,9 +21,9 @@ The official Key Vault client for .NET Core is the `KeyVaultClient` class in the
 
 The Azure Key Vault API is a REST API that handles all management and usage of keys and vaults. Each secret in a vault has a unique URL, and secret values are retrieved with HTTP GET requests.
 
-The official Key Vault client for Node.js apps is the `KeyVaultClient` class in the `@azure/keyvault-secrets` npm package. Apps that include secret names in their configuration or code will generally only need to use its `getSecret` method, which loads a secret value given its name. `getSecret` requires your app's identity to have the **Get** permission on the vault. Apps designed to load all secrets from a vault will also use the `getSecrets` method, which loads a list of secrets and requires the **List** permission.
+The official Key Vault client for Node.js apps is the `SecretClient` class in the `@azure/keyvault-secrets` npm package. Apps that include secret names in their configuration or code will generally only need to use its `getSecret` method, which loads a secret value given its name. `getSecret` requires your app's identity to have the **Get** permission on the vault. Apps designed to load all secrets from a vault will also use the `listPropertiesOfSecrets` method, which loads a list of secrets and requires the **List** permission.
 
-Before your app can create a `KeyVaultClient` instance, it must get a credential object for authenticating to the vault. To authenticate, use the `DefaultAzureCredential` provided by the `@azure/identity` npm package. The `DefaultAzureCredential` is appropriate for most scenarios where the application is intended to ultimately be run in the Azure Cloud. This is because the `DefaultAzureCredential` combines credentials commonly used to authenticate when deployed, with credentials used to authenticate in a development environment. The `DefaultAzureCredential` will attempt to authenticate via the following mechanisms in order:
+Before your app can create a `SecretClient` instance, it must get a credential object for authenticating to the vault. To authenticate, use the `DefaultAzureCredential` provided by the `@azure/identity` npm package. The `DefaultAzureCredential` is appropriate for most scenarios where the application is intended to ultimately be run in the Azure Cloud. This is because the `DefaultAzureCredential` combines credentials commonly used to authenticate when deployed, with credentials used to authenticate in a development environment. The `DefaultAzureCredential` will attempt to authenticate via the following mechanisms in order:
 
 * Environment - The `DefaultAzureCredential` will read account information specified via environment variables and use it to authenticate.
 * Managed Identity - If the application is deployed to an Azure host with Managed Identity enabled, the `DefaultAzureCredential` will authenticate with that account.
@@ -197,8 +197,8 @@ First, paste the following code into the editor to set up the application. This 
 
 ```javascript
 // Importing dependencies
-const DefaultAzureCredential = require("@azure/identity");
-const SecretClient = require("@azure/keyvault-secrets");
+const { DefaultAzureCredential } = require("@azure/identity");
+const { SecretClient } = require("@azure/keyvault-secrets");
 const app = require('express')();
 
 // Initialize port
@@ -218,8 +218,8 @@ Next, we'll add the code to authenticate to the vault and load the secrets. We'l
 
 ```javascript
 const getKeyVaultSecrets = async => {
-  // Create a key vault client
-  let keyVaultClient = new SecretClient(vaultUri, new DefaultAzureCredential());
+  // Create a key vault secret client
+  let secretClient = new SecretClient(vaultUri, new DefaultAzureCredential());
   try {
     // Iterate through each secret in the vault
     listPropertiesOfSecrets = client.listPropertiesOfSecrets();
