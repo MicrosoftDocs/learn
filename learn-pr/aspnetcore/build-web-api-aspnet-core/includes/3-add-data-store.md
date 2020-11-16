@@ -5,8 +5,7 @@ An in-memory database is used in this unit for simplicity. Choose a different da
 1. Run the following command:
 
     ```dotnetcli
-    dotnet add package Microsoft.EntityFrameworkCore.InMemory \
-        --version 5.0.0
+    dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 5.0.0
     ```
 
     The preceding command:

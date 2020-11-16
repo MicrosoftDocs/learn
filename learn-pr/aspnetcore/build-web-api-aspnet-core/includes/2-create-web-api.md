@@ -56,8 +56,7 @@ The preceding command installs a specific version of the .NET SDK in the Cloud S
 1. Run the following .NET CLI command in the command shell:
 
     ```dotnetcli
-    dotnet ./bin/Debug/net5.0/ContosoPets.Api.dll \
-        > ContosoPets.Api.log &
+    dotnet ./bin/Debug/net5.0/ContosoPets.Api.dll > ContosoPets.Api.log &
     ```
 
     The preceding command:
