@@ -89,7 +89,7 @@ The successful retrieval of the product results in an HTTP 404 status code in th
 
 :::code language="csharp" source="../code/controllers/productscontroller.cs" id="snippet_GetById" highlight="8":::
 
-### HTTP GET: Retrieve a product
+### HTTP GET: Retrieve a valid product
 
 An HTTP GET request was sent to retrieve the Plush Squirrel product by its unique identifier, which is 3. The following response is generated:
 
