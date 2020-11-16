@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.date: 11/16/2020
 azureSandbox: false
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/4-build-log-queries-using-kusto.md)]
 quiz:
