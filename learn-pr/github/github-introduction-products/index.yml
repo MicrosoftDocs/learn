@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.languages.github-introduction-products
+metadata:
+  title: Introduction to GitHub's Products
+  description: TODO
+  ms.date: 11/16/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to GitHub's Products
+summary: TODO
+abstract: |
+  After completing this module, you will be able to:
+  - Explain the different GitHub plans, features, and privacy options. 
+  - Discuss the pricing options of each GitHub plan and paid features.
+  - Describe licensing and privacy features for GitHub Actions, Learning Lab, and codespaces.
+prerequisites: |
+  - Familiarity with GitHub, repositories, and the basics of managing individual accounts is required
+  - A high level familiarity with GitHub's product plans and features would be helpful, but not required
+ratingEnabled: true
+iconUrl: /learn/achievements/github-introduction-products.svg
+levels:
+- intermediate
+roles:
+- administrator
+- devops-engineer
+- technology-manager
+products:
+- github
+units:
+- learn.languages.github-introduction-products.introduction
+- learn.languages.github-introduction-products.what-are-github-products
+- learn.languages.github-introduction-products.how-privacy-licensing-works
+- learn.languages.github-introduction-products.knowledge-check
+- learn.languages.github-introduction-products.summary
+
+badge:
+  uid: learn.languages.github-introduction-products.badge

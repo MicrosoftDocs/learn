@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.github-introduction-products.knowledge-check
+title: Knowledge check
+metadata:
+  title: Check your knowledge
+  description: Review what you've learned.
+  ms.date: 11/16/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "?"
+    choices:
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: true
+      explanation: ""

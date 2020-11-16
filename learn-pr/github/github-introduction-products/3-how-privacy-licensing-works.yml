@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.github-introduction-products.how-privacy-licensing-works
+title: How does privacy and licensing work for GitHub features?
+metadata:
+  title: How does privacy and licensing work for GitHub features?
+  description: TODO
+  ms.date: 11/16/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-how-privacy-licensing-works.md)]
