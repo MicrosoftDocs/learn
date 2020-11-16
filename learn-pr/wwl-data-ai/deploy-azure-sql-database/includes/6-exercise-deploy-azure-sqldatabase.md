@@ -244,3 +244,5 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
 1. From the **File** menu, select **Open File**, and open the notebook you just saved. Observe that query results were saved along with the queries in the notebook.
 
 On completing this exercise you've seen how to create a SQL database in Azure and connect to it securely from a client machine.
+
+To finish this exercise select End below.
