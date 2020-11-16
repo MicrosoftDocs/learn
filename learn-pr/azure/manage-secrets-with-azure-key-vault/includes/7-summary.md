@@ -19,5 +19,5 @@ If this was a real app, what would come next?
 
 - [Key Vault documentation](https://docs.microsoft.com/azure/key-vault/)
 - [More about AddAzureKeyVault and its advanced options](https://docs.microsoft.com/aspnet/core/security/key-vault-configuration?view=aspnetcore-2.1&tabs=aspnetcore2x)
-- [This tutorial](https://docs.microsoft.com/azure/key-vault/key-vault-use-from-web-application) walks through using `KeyVaultClient`, including manually authenticating it to Azure Active Directory using a client secret instead of using a managed identity.
+- [This tutorial](https://docs.microsoft.com/azure/key-vault/key-vault-use-from-web-application) walks through using a Key Vault `SecretClient`, including manually authenticating it to Azure Active Directory using a client secret instead of using a managed identity.
 - [Managed identities for Azure resources token service documentation](https://docs.microsoft.com/azure/app-service/app-service-managed-service-identity#using-the-rest-protocol), for implementing the authentication workflow yourself.
