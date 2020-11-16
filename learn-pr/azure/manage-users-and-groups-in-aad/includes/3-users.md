@@ -99,4 +99,4 @@ To use a CSV with Azure PowerShell:
 
 ### Other options
 
-You can also add users to Azure AD programmatically using the Azure AD Graph API, or through the Office 365 Admin Center and the Microsoft Intune Admin console if you are sharing the same directory.
+You can also add users to Azure AD programmatically using the Azure AD Graph API, or through the Microsoft 365 Admin Center and the Microsoft Intune Admin console if you are sharing the same directory.

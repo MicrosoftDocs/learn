@@ -32,6 +32,7 @@ units:
 - learn.student-evangelism.collect-manipulate-data-python-nasa.4-import-data
 - learn.student-evangelism.collect-manipulate-data-python-nasa.5-clean-data
 - learn.student-evangelism.collect-manipulate-data-python-nasa.6-evaluate-data
+- learn.student-evangelism.collect-manipulate-data-python-nasa.6a-knowledge-check
 - learn.student-evangelism.collect-manipulate-data-python-nasa.7-summary
 badge:
   uid: learn.student-evangelism.collect-manipulate-data-python-nasa.badge 

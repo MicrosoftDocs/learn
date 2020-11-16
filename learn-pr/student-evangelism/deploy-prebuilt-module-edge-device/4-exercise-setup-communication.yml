@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.deploy-prebuilt-module-edge-device.4-exercise-setup-communication
-title: Exercise - Set up communication between IoT Hub and IoT Edge	
+title: Exercise - Set up communication between IoT Hub and IoT Edge
 metadata:
-  title: Exercise - Set up communication between IoT Hub and IoT Edge	
-  description: In this section, there's an exercise and it guides the learner how to set up communication between IoT Hub and IoT Edge	
+  title: Exercise - Set up communication between IoT Hub and IoT Edge
+  description: In this unit, there's an exercise and it guides the learner how to set up communication between IoT Hub and IoT Edge
   ms.date: 12/5/2019
   author: leestott
   ms.author: leestott

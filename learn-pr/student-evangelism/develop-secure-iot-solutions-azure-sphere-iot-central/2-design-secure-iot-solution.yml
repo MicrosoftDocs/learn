@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere.design-secure-iot-solution
-title: Design secure IoT solution with Azure Sphere
+title: Design a secure IoT solution with Azure Sphere
 metadata:
-  title: Design secure IoT solution with Azure Sphere
-  description: In this section, we help the learner to design IoT solution securely using Azure Sphere.
+  title: Design a secure IoT solution with Azure Sphere
+  description: In this section, we help the learner to design an IoT solution securely using Azure Sphere.
   ms.date: 06/30/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-central
-durationInMinutes: 4 # dummy number at present
+durationInMinutes: 2 # dummy number at present
 content: |
   [!include[](includes/2-design-secure-iot-solution.md)]

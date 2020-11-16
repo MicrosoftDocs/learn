@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "In a Security Center application control policy, an administrator can move VMs from one group to another. When they do, what happens to the application control policy applied to the moved VM?"
+    choices:
+    - content: "It remains the same."
+      isCorrect: false
+      explanation: "That's incorrect. It changes to the settings of the group to which you moved the VM."
+    - content: "It changes to the settings of the group to which you moved it."
+      isCorrect: true
+      explanation: "That's correct."
+    - content: "It's removed and the VM has no policy."
+      isCorrect: false
+      explanation: "That's incorrect. It changes to the settings of the group to which you moved the VM."
+  - content: "When configuring **Group settings** for an application control policy, in the **File type protection mode** section, what are all the file types can you protect?"
+    choices:
+    - content: ".exe and .cmd."
+      isCorrect: false
+      explanation: "That's incorrect. You can also protect .msi file types."
+    - content: ".exe and .msi."
+      isCorrect: false
+      explanation: "That's incorrect. You can also protect the .script file type."
+    - content: ".exe, .msi, and .script."
+      isCorrect: true
+      explanation: "That's correct. You can protect all three file types."

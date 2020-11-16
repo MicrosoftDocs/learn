@@ -1,0 +1,48 @@
+### YamlMime:LearningPath
+uid: learn.wwl.monitor-maintain-windows-server-iaas-vm
+metadata:
+  title: Monitor and maintain Windows Server IaaS Virtual Machine
+  description: In this learning path, you’ll learn how to implement remote administration and management in Azure. After completing this path, you’ll be able to monitor your Azure resources, and plan for scale and high-availability.
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitor and maintain Windows Server IaaS Virtual Machine
+prerequisites: |
+  - Experience with managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including AD DS, DNS, DFS, Hyper-V, and File and Storage Services.
+  - Experience with common Windows Server management tools (implied by the first prerequisite).
+  - Basic knowledge of core Microsoft compute, storage, networking, and virtualization technologies (implied by the first prerequisite).
+  - Basic knowledge of on-premises resiliency Windows Server-based compute and storage technologies (Failover Clustering, Storage Spaces).
+  - Basic experience with implementing and managing IaaS services in Microsoft Azure.
+  - Basic knowledge of Azure Active Directory.
+  - Basic understanding security-related technologies (firewalls, encryption, multi-factor authentication, SIEM/SOAR).
+  - Basic knowledge of PowerShell scripting.
+  - An understanding of the following concepts as related to Windows Server technologies:
+    - High Availability and Disaster Recovery
+    - Automation
+    - Monitoring
+summary: |
+  In this learning path, you’ll learn how to implement remote administration and management in Azure. After completing this path, you’ll be able to monitor your Azure resources, and plan for scale and high-availability.
+iconUrl: /learn/achievements/monitor-and-maintain-windows-server-iaas-vm.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- student
+- technology-manager
+products:
+- azure
+- azure-cloud-shell
+- azure-monitor
+- azure-portal
+- azure-virtual-machines
+modules:
+- learn.wwl.administer-manage-windows-server-iaas-vm-remotely
+- learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances
+- learn.wwl.understand-windows-server-iaas-vm-cost-management
+- learn.wwl.implement-scale-high-availability-with-windows-server-vm
+- learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas
+trophy:
+  uid: learn.wwl.monitor-maintain-windows-server-iaas-vm.trophy

@@ -36,6 +36,7 @@ units:
 - learn.student-evangelism.count-moon-rocks-python-nasa.4-write-function
 - learn.student-evangelism.count-moon-rocks-python-nasa.5-add-call-to-function
 - learn.student-evangelism.count-moon-rocks-python-nasa.6-output-and-summarize-data
+- learn.student-evangelism.count-moon-rocks-python-nasa.6a-knowledge-check
 - learn.student-evangelism.count-moon-rocks-python-nasa.7-summary
 badge:
   uid: learn.student-evangelism.count-moon-rocks-python-nasa.badge

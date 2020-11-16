@@ -115,7 +115,7 @@ We can track the progress of the deployment at any time.
 
     [![Screenshot of Azure portal showing details of the deployment notification, stating "Your deployment is underway".](../media/4-deployment-progress.png)](../media/4-deployment-progress-expanded.png#lightbox)
 
-1. Once the deployment status message change to **Your deployment is complete**, you'll notice the status in the notification dialogue changes to **Deployment succeeded**. Select **Go to resource** to navigate to the App Service overview.
+1. Once the deployment status message changes to **Your deployment is complete**, you'll notice the status in the notification dialogue changes to **Deployment succeeded**. Select **Go to resource** to navigate to the App Service overview.
 
     ![Screenshot of Azure portal showing deployment notification, stating "Deployment succeeded".](../media/4-deployment-complete.png)
 

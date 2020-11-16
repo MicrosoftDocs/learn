@@ -16,7 +16,7 @@ Select **File shares** in the main pane of the **Overview** page for an Azure St
 > [!div class="mx-imgBorder"]
 > ![Image of the **Overview** page for a storage account in the Azure portal. The user has selected the **File shares** command](../media/5-file-shares.png)
 
-On the **File shares** page, select **+ File share**. Give the file share a name, and optionally specify a quota. Azure allows you to store up to 5120 GB of files across all files shares in a storage account. A quota enables you to limit the amount of space an individual file share consumes, to prevent it from starving other file shares of file storage. If you have only one file share, you can leave the quota empty.
+On the **File shares** page, select **+ File share**. Give the file share a name, and optionally specify a quota. Azure allows you to store up to 5 PiB of files across all files shares in a storage account. A quota enables you to limit the amount of space an individual file share consumes, to prevent it from starving other file shares of file storage. If you have only one file share, you can leave the quota empty.
 
 > [!div class="mx-imgBorder"]
 > ![Image of the **File shares** page for a storage account in the Azure portal. The user is creating a new file share named **reports**](../media/5-new-share.png)

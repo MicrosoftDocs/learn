@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.administer-manage-windows-server-iaas-vm-remotely
+metadata:
+  title: Administer and manage Windows Server IaaS Virtual Machine remotely
+  description: "You’ll be able to select and use suitable tools and techniques to remotely manage Windows IaaS VMs, and restrict administrative connections to those VMs."
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Administer and manage Windows Server IaaS Virtual Machine remotely
+summary: You’ll be able to use suitable tools and techniques to manage Windows IaaS VMs remotely. You'll also be able to restrict administrative connections to those VMs.
+abstract: |
+  After completing this module, you'll be able to:
+  - Select appropriate remote administration tools.
+  - Secure management connections to Windows Azure IaaS VMs with Azure Bastion.
+  - Configure JIT VM access.
+prerequisites: |
+  In order to get the best learning experience from this module, you should have knowledge and experience of:
+  - Windows Server workloads in on-premises scenarios
+  - Common Windows Server management tools
+  - Core Microsoft compute, storage, networking, and virtualization technologies
+  - On-premises resiliency Windows Server-based compute and storage technologies
+  - Implementing and managing IaaS services in Azure
+  - Azure Active Directory (Azure AD)
+  - Security-related technologies (firewalls, encryption, multi-factor authentication)
+  - Windows PowerShell scripting
+  - Automation and monitoring
+iconUrl: /learn/achievements/administer-and-manage-windows-server-iaas-vm-remotely.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-cloud-shell
+- azure-portal
+- azure-virtual-machines
+units:
+- learn.wwl.administer-manage-windows-server-iaas-vm-remotely.introduction
+- learn.wwl.administer-manage-windows-server-iaas-vm-remotely.select-appropriate-remote-administration-tools
+- learn.wwl.administer-manage-windows-server-iaas-vm-remotely.vms-with-bastion
+- learn.wwl.administer-manage-windows-server-iaas-vm-remotely.create-azure-bastion-host
+- learn.wwl.administer-manage-windows-server-iaas-vm-remotely.configure-just-time-administration
+- learn.wwl.administer-manage-windows-server-iaas-vm-remotely.knowledge-check
+- learn.wwl.administer-manage-windows-server-iaas-vm-remotely.summary
+badge:
+  uid: learn.wwl.administer-manage-windows-server-iaas-vm-remotely.badge

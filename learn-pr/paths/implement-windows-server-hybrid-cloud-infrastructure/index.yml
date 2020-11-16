@@ -1,0 +1,49 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-windows-server-hybrid-cloud-infrastructure
+metadata:
+  title: Implement a Windows Server hybrid cloud infrastructure
+  description: You will learn how to address problems relating to the migration of on-premises workloads into Azure. After completing the learning path, you will be able to implement a hybrid Azure infrastructure.
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement a Windows Server hybrid cloud infrastructure
+prerequisites: |
+  - Experience with managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including AD DS, DNS, DFS, Hyper-V, and File and Storage Services.
+  - Experience with common Windows Server management tools (implied by the first prerequisite).
+  - Basic knowledge of core Microsoft compute, storage, networking, and virtualization technologies (implied by the first prerequisite).
+  - Basic knowledge of on-premises resiliency Windows Server-based compute and storage technologies (Failover Clustering, Storage Spaces).
+  - Basic experience with implementing and managing IaaS services in Microsoft Azure.
+  - Basic knowledge of Azure Active Directory.
+  - Basic understanding security-related technologies (firewalls, encryption, multi-factor authentication, SIEM/SOAR).
+  - Basic knowledge of PowerShell scripting.
+  - An understanding of the following concepts as related to Windows Server technologies:
+    - High Availability and Disaster Recovery
+    - Automation
+    - Monitoring
+summary: |
+  You will learn how to address problems relating to the migration of on-premises workloads into Azure. After completing the learning path, you will be able to implement a hybrid Azure infrastructure.
+iconUrl: /learn/achievements/implement-a-windows-server-hybrid-cloud-infrastructure.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-portal
+- azure-storage
+- azure-virtual-machines
+modules:
+- learn.wwl.implement-hybrid-network-infrastructure
+- learn.wwl.implement-hybrid-identity-with-windows-server
+- learn.wwl.migrate-premises-windows-server-instances-to-azure-iaas-vms
+- learn.wwl.implement-hybrid-file-server-infrastructure
+- learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas
+- learn.wwl.implement-scale-high-availability-with-windows-server-vm
+trophy:
+  uid: learn.wwl.implement-windows-server-hybrid-cloud-infrastructure.trophy

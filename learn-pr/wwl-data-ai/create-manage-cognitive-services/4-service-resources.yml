@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-cognitive-services.service-resources
+title: Create and manage service resources
+metadata:
+  title: Create and manage service resources
+  description: "Create and manage service resources"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-service-resources.md)]

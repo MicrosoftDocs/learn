@@ -7,7 +7,7 @@ To access these classes in your Xamarin.Forms apps, add the **Xamarin.Forms.Dual
 
 ## Use TwoPaneView
 
-The TwoPaneView is a layout control that positions two views side-by-side (or above & below each other, depending on the orientation). To use the TwoPaneView in a Content Page, first add a namespace that references the DualScreen NuGet:
+The TwoPaneView is a layout control that positions two views side-by-side (or above and below each other, depending on the orientation). To use the TwoPaneView in a content page, first add a namespace that references the Xamarin.Forms.DualScreen NuGet:
 
 ```xaml
 xmlns:dualScreen="clr-namespace:Xamarin.Forms.DualScreen;assembly=Xamarin.Forms.DualScreen"

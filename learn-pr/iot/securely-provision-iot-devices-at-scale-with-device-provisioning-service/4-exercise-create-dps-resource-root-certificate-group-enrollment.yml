@@ -4,7 +4,7 @@ metadata:
   description: In this unit, a Device Provisioning Service (DPS) is first created, then linked to the IoT Hub created previously. Then, an X.509 root certificate is created, and validated. Finally, a Group Enrollment is added for the DPS resource.
   ms.date: 3/15/2020
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Create a Device Provisioning Service, root certificate, and group enrollment

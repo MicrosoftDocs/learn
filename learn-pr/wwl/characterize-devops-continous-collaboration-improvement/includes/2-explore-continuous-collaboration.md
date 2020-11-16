@@ -2,10 +2,6 @@
 
 Continuous Collaboration is one of the eight capabilities in the DevOps taxonomy.
 
-![Diagram shows the eight DevOps capabilities. It lists example practices for Continuous Collaboration: Culture collaboration, alignment and autonomy, Kanban collaboration, Wiki and Teams collaboration, ChatOps collaboration, and Feature team and SRE.](../media/6-2-capabilities.png)
-
-Each capability identifies example practices. They aren't exhaustive lists.
-
 ### Discover why Continuous Collaboration is necessary
 
 Often, communication challenges affect the ability to resolve an incident. For example, a ticket might get created but a support engineer might not be monitoring email. Or a support engineer’s work transitions to a colleague when their shift ends, and context can be lost as the new engineer sorts through all the communication that occurred.

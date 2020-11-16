@@ -20,7 +20,7 @@ If you want to install the toolkit using your own SQL Server instance, create a 
 The **MAP Sample Documents** are useful for showing the potential data you can gather. For example, if members of your operations team want to adopt the toolkit, give them sample files to show what data is gathered in the inventory. This action might help them to see the benefits across your whole organizational infrastructure. MAP can provide audit information on, for example:
 
 - Exchange Server usage
-- Office 365
+- Microsoft 365
 - Remote desktop licensing
 - SharePoint server usage
 

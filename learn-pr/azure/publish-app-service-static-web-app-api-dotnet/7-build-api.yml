@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-and-api-dotnet.7-build-api
+metadata:
+  title: Build an API with Azure Functions
+  description: Build an API with Azure Functions
+  ms.date: 09/22/2020
+  author: aaronpowell
+  ms.author: aapowell
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build an API with Azure Functions
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-build-api.md)]

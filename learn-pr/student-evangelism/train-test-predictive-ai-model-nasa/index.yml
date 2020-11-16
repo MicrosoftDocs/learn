@@ -34,6 +34,7 @@ units:
 - learn.student-evangelism.train-test-predictive-ai-model-nasa.5-determine-accuracy
 - learn.student-evangelism.train-test-predictive-ai-model-nasa.6-predict-rock-types
 - learn.student-evangelism.train-test-predictive-ai-model-nasa.7-analyze-predictions
+- learn.student-evangelism.train-test-predictive-ai-model-nasa.7a-knowledge-check
 - learn.student-evangelism.train-test-predictive-ai-model-nasa.8-summary
 badge:
   uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.badge

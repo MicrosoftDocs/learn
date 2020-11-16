@@ -13,8 +13,8 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
 1. Run the following command to create a resource group. Replace `EastUS` with the value of a location near you.
 
     ```powershell
-    $resourceGroup = 'learn-file-sync-rg' `
-    $location = 'EastUS' `
+    $resourceGroup = 'learn-file-sync-rg'
+    $location = 'EastUS'
     New-AzResourceGroup -Name $resourceGroup -Location $location
     ```
 
@@ -33,7 +33,7 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
     -Name Syncvnet `
     -AddressPrefix 10.0.0.0/16 `
     -Location $location `
-    -ResourceGroupName $resourceGroup`
+    -ResourceGroupName $resourceGroup `
     -Subnet $subnetConfig
 
     ```

@@ -4,7 +4,7 @@ By integrating AI, astronauts could more quickly and accurately locate and ident
 
 ## AI on Earth
 
-As we mentioned earlier, AI performs better when the sample data is cleaner. We mean not only when the rocks are physically clean, but when the photos of the rocks are similar in lighting (and therefore, the visual coloring of the rock is consistent), when edges between the rock and the background are clean and consistent, and each photo has a clear indication of scale. An AI model that would help identify, classify, and track these samples would provide clear instructions for how to take the photos to fit the current model. [Lunar rock curation](https://curator.jsc.nasa.gov/?azure-portal=true) and lunar rock research would move toward answering even more nuanced research questions. Additionally, we could use a rover and AI on Earth to collect meteorites in Antarctica.
+As we mentioned earlier, AI performs better when the sample data is cleaner. We mean not only when the rocks are physically clean, but when the photos of the rocks have similar lighting (so the visual coloring of the rock is consistent), when edges between the rock and the background are clean and consistent, and when each photo has a clear indication of scale. An AI model that would help identify, classify, and track these samples would provide clear instructions about how to take the photos to fit the current model. With an AI model that fits these criteria, [lunar rock curation](https://curator.jsc.nasa.gov/?azure-portal=true) and lunar rock research would move toward answering even more nuanced research questions. Additionally, we could use a rover and AI on Earth to collect meteorites in Antarctica.
 
 ## The future of AI in space 
 

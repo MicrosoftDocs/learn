@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.join-transform-shared-owned-data
+title: Join and transform shared and owned data with Mapping Flow in Azure Data Factory
+metadata:
+  title: Join and transform shared and owned data with Mapping Flow in Azure Data Factory
+  description: "Join and transform shared and owned data with Mapping Flow in Azure Data Factory"
+  ms.date: 11/10/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-join-transform-shared-owned-data.md)]

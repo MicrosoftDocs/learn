@@ -36,6 +36,7 @@ units:
 - learn.student-evangelism.introduction-artificial-intelligence-nasa.5-teach-machines-classify-space-rocks
 - learn.student-evangelism.introduction-artificial-intelligence-nasa.6-common-ai-libraries
 - learn.student-evangelism.introduction-artificial-intelligence-nasa.7-install-ai-libraries
+- learn.student-evangelism.introduction-artificial-intelligence-nasa.7a-knowledge-check
 - learn.student-evangelism.introduction-artificial-intelligence-nasa.8-summary
 badge:
   uid: learn.student-evangelism.introduction-artificial-intelligence.nasa.badge

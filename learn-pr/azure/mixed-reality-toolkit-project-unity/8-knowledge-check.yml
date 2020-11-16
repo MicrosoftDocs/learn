@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.mixed-reality-toolkit-project-unity.8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Five multiple-choice questions
+  ms.date: 08/11/2020
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "In the Unity Build Settings, which platform should be selected to target Windows Mixed Reality?"
+      choices:
+        - content: "WebGL"
+          isCorrect: false
+          explanation: "The WebGL platform is used to publish an application to a web browser."
+        - content: "PC, Mac & Linux Standalone"
+          isCorrect: false
+          explanation: "The PC, Mac and Linux Standalone platform is used to build standalone applications for most desktop platforms."
+        - content: "Universal Windows Platform"
+          isCorrect: true
+          explanation: "To target Windows Mixed Reality, your Unity project must be set to export as a Universal Windows Platform app."
+    - content: "Which Mixed Reality Toolkit package is the only package required to be imported and configured to use the Mixed Reality Toolkit?"
+      choices:
+        - content: "Microsoft.MixedRealityToolkit.Unity.Extensions.unitypackage"
+          isCorrect: false
+          explanation: "The extensions package provides a set of useful optional components for the Mixed Reality Toolkit."
+        - content: "Microsoft.MixedRealityToolkit.Unity.Foundation.unitypackage"
+          isCorrect: true
+          explanation: "The foundation package is the only required package and includes the core components required to create a mixed reality application."
+        - content: "Microsoft.MixedRealityToolkit.Unity.Examples.unitypackage"
+          isCorrect: false
+          explanation: "The examples package is optional and contains useful demonstration scenes for current Mixed Reality Toolkit features."
+    - content: "After the Mixed Reality Toolkit is added to a Unity scene, what happens to the Main Camera object?"
+      choices:
+        - content: "The Main Camera object is moved as a child to the MixedRealityToolkit object."
+          isCorrect: false
+          explanation: "The MixedRealityToolkit object contains the toolkit itself."
+        - content: "The Main Camera object is moved as a child to the MixedRealityPlayspace object."
+          isCorrect: true
+          explanation: "This allows the playspace to manage the camera simultaneously with the SDKs."
+        - content: "The Main Camera object is deleted as it is not needed for mixed reality development."
+          isCorrect: false
+          explanation: "The Main Camera object is needed to capture and display the world to the user."
+    - content: "A mixed reality experience guides construction workers through a task that requires the use of two hands for the real world task. Which modality would be best suited so that the worker can interact with the experience?"
+      choices:
+        - content: "Voice input"
+          isCorrect: true
+          explanation: "The use of voice input would eliminate the need of the user to use their hands to interact with the experience."
+        - content: "Gaze and commit with hand gestures"
+          isCorrect: false
+          explanation: "Although the user could use their head or eyes to gaze, the user would be required to use their hands to interact with the mixed reality experience."
+        - content: "Motion controllers"
+          isCorrect: false
+          explanation: "The use of a motion controller would require the user to hold a device with their hands to interact with the experience."
+    - content: "What is the purpose of the ObjectManipulator script?"
+      choices:
+        - content: "This script makes an object movable, scalable and rotatable using one or two hands."
+          isCorrect: true
+          explanation: "The ObjectManipulator script makes an object movable, scalable, and rotatable using one or two hands."
+        - content: "This script makes an object grabbable from a close distance."
+          isCorrect: false
+          explanation: "The NearInteractionGrabbable script enables the user to grab an object from a close distance."
+        - content: "This script makes an object change color when a user gazes at the object."
+          isCorrect: false
+          explanation: "A configuration which involves gaze and commit would be required for this type of interaction."

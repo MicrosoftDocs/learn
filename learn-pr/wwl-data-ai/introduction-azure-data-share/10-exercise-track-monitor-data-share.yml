@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-azure-data-share.exercise-track-monitor-data-sharing
+title: 'Exercise: Track and monitor data sharing using Azure Data Share'
+metadata:
+  title: 'Exercise: Track and monitor data sharing using Azure Data Share'
+  description: "Exercise: Track and monitor data sharing using Azure Data Share"
+  ms.date: 11/09/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-exercise-track-monitor-data-share.md)]

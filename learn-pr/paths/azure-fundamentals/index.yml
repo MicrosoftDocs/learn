@@ -11,17 +11,25 @@ metadata:
   ms.prod: learning-azure
 title: Azure fundamentals
 summary: |
-  Interested in the cloud, but aren't quite sure what it can do for you? This path is the place to start.
+  New to the cloud? Azure fundamentals teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free.
 
+  > [!NOTE]
+  > Azure fundamentals is being updated to a new series of learning paths.
+  > 
+  > If you’ve already started this path, you can continue until it’s retired on January 31, 2021. **It’ll be hidden from navigation on November 9, 2020**, so **bookmark it** before then.
+  >   
+  > Haven’t started yet? Begin the new series with: [Azure Fundamentals part 1: Describe core Azure concepts](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/).
+  
   In this learning path, you will:
     - Learn cloud concepts such as High Availability, Scalability, Elasticity, Agility, Fault Tolerance, and Disaster Recovery
     - Understand the benefits of cloud computing in Azure and how it can save you time and money
     - Compare and contrast basic strategies for transitioning to the Azure cloud
     - Explore the breadth of services available in Azure including compute, network, storage, and security
   
-  For specific training for the AZ-900 certification and information on how to register for the exam, see [AZ900 Microsoft Azure Fundamentals Exam](https://www.microsoft.com/learning/exam-AZ-900.aspx).
+  Visit the [Exam AZ-900: Microsoft Azure Fundamentals](https://www.microsoft.com/learning/exam-AZ-900.aspx) page to find training and resources to help you prepare and to schedule your exam.
 prerequisites: None
 iconUrl: /learn/achievements/azure-fundamentals.svg
+hidden: true
 levels:
 - beginner
 roles:

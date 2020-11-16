@@ -3,12 +3,13 @@ uid: learn.azure.publish-static-web-app-and-api.1-introduction
 metadata:
   title: Introduction
   description: Publish an Azure Static Web App
-  ms.date: 05/08/2020
+  ms.date: 11/09/2020
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: dev-javascript-framework
 title: Introduction
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]

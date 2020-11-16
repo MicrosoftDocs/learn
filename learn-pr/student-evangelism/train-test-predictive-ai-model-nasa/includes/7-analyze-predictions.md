@@ -27,4 +27,4 @@ plt.show()
 
 The example images are labeled *Actual Rock Type: True / False*.
 
-*True* and *False* indicate whether our AI system correctly classified it.
+*True* and *False* indicate whether our AI system correctly classified the rock in an image.

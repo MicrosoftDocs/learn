@@ -8,7 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Classify space rocks Like a machine by using AI
+title: Classify space rocks like a machine by using AI
 durationInMinutes: 4
 content: |
   [!include[](includes/5-teach-machines-classify-space-rocks.md)]
