@@ -1,4 +1,4 @@
-In the previous unit, recall that you need to explore Azure native monitoring tools for workloads being deployed in Azure. To further your knowledge, you'll need to know how to provision a Log Analytics workspace with the right permissions model, connect virtual machines to the workspace, and also need to onboard Azure Monitor for VMs to complete the process.
+In the previous unit, recall that you need to explore Azure native monitoring tools for your company. To further your knowledge, you'll need to know how to provision a Log Analytics workspace with the right permissions model, and you'll need to configure Azure Monitor for VMs to complete the process.
 
 In this unit, you'll:
 
@@ -27,11 +27,11 @@ In this unit, you'll:
 
 1. After the resource deploys, select **Properties** underneath the **General** section of the Log Analytics workspace resource.
 
-1. Look for the access control mode and select **Use resource or workspace permissions**. This changes the access mode to use resource permissions.
+1. Look for the access control mode and select **Use resource or workspace permissions**. This setting changes the access mode to use resource permissions.
 
     :::image type="content" source="../media/3-check-log-analytics-resource-context.png" alt-text="Screen shot of changing access control mode for Log Analytics workspace." lightbox="../media/3-check-log-analytics-resource-context.png":::
 
-1. Configuring this setting after building the workspace ensures the deployment matches your company's want for individual business units to only see log data for the Azure resources they deploy.
+    If you configure this setting after building the workspace, it ensures the deployment matches your company's want for log access.
 
 ## Set up your environment
 
@@ -62,21 +62,30 @@ In this unit, you'll:
 
 1. Select **Insights** on the far left under **Monitoring** and select **Enable**.
 
-1. Leave the **Workspace Subscription** unchanged and select the Log Analytics workspace you just configured for **Choose a Log Analytics Workspace** (note: onboarding Azure Monitor for VMs takes a few minutes).
+1. Leave the **Workspace Subscription** unchanged and select the Log Analytics workspace you configured for **Choose a Log Analytics Workspace** (note: onboarding Azure Monitor for VMs takes a few minutes).
 
     :::image type="content" source="../media/3-enable-azure-monitor-vms.png" alt-text="Enable Azure Monitor for VMs after selecting the right subscription and Log Analytics workspace." lightbox="../media/3-enable-azure-monitor-vms.png":::
 
-1. After approximately 5-10 minutes have passed, go into the **Insights** section of each virtual machine underneath the **Monitoring** section.
+1. After 5-10 minutes have passed, go into the **Insights** section of each virtual machine underneath the **Monitoring** section.
 
 1. The first view into this section will show you a map of dependencies like processes running, ports open, along with information about connection details, health of the virtual machine, machine properties, and Azure virtual machine properties.
 
-    :::image type="content" source="../media/3-azure-monitor-vms-map.png" alt-text="Azure Monitor for VMs screen shot, showcasing dependences and information about virtual machine." lightbox="../media/3-azure-monitor-vms-map.png":::
+    :::image type="content" source="../media/3-azure-monitor-vms-map.png" alt-text="Azure Monitor for VMs screenshot, showcasing dependences and information about virtual machine." lightbox="../media/3-azure-monitor-vms-map.png":::
 
 1. Next, select **Performance** at the top, right next to **Map**.
 
     :::image type="content" source="../media/3-virtual-machine-insights.png" alt-text="Screen shot after enabling Azure Monitor for VMs." lightbox="../media/3-virtual-machine-insights.png":::
 
-1. Explore the different graphs for: Logical Disk Performance, CPU Utilization, Available Memory, Logical Disk IOPS, Logical Disk MB/s, Logical Disk Latency (ms), Max Logical Disk Used %, Bytes Sent Rate, and Bytes Received Rate.
+1. Explore the different graphs for: 
+- Logical Disk Performance
+- CPU Utilization
+- Available Memory
+- Logical Disk IOPS
+- Logical Disk MB/s
+- Logical Disk Latency (ms)
+- Max Logical Disk Used %
+- Bytes Sent Rate
+- Bytes Received Rate.
 
 1. Experiment with different settings by moving from **Avg**, to **Min**, to **Max**, and so on (note, the virtual machines were only created a few minutes ago, so there might not be a lot of data generated).
 

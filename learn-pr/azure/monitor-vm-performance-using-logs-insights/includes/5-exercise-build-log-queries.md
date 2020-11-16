@@ -4,23 +4,25 @@ In the previous units, remember you need to explore Azure native monitoring tool
 In this unit, you'll:
 
 1. Take an existing query, load the query into the editor, and run the query to see results.
-1. Adjust the existing query and analyze the results.
+1. Adjust the existing query, analyze the results, and pin to a dashboard.
 
 ## Build a query using the query pane
 
-1. Data collecting in a Log Analytics workspace from Azure resources may take some time to populate. You can either use the Log Analytics workspace you provisioned earlier in the module, or open up browser and go to Microsoft's Log Analytics demo workspace (https://portal.loganalytics.io/demo) to run queries (note the unit focuses on using the demo Log Analytics workspace).
-
-1. If you're reusing queries or storing them in source control, you'll want to let an engineer or administrator know how to use the query. Commenting out helpful descriptors is done by using // before guiding someone on how to use the query.
+1. To start, if you're reusing queries or storing them in source control, you'll want to let an engineer or administrator know how to use the query. Commenting out a helpful description is done by using // before guiding how to use the query.
 
     :::image type="content" source="../media/5-commenting-on-query.png" alt-text="Showcasing how to comment out text that helps guide engineers or administrators who may reuse the query.":::
 
-1. The idea behind query writing is to never start from scratch. By using examples within Log Analytics workspaces, you'll be able to achieve the results you are looking for to properly track and monitor your Azure resources over time.
+1. The idea behind query writing is you do not have to start from scratch. By using query examples within Log Analytics workspaces, you'll be able to achieve the results you are looking for to track and monitor your Azure resources over time.
 
-1. Select **Queries** from the upper left of the **Logs** resource, which displays an overlay pane of information about all pre-populated queries any engineer or admin could run. Additionally, there are two links at the top: the community GitHub repo and a link to Microsoft's documentation.
+1. Switch back to the logs pane you have open from unit 2 and select **Queries** from the upper left of the **Logs** resource.
 
-    :::image type="content" source="../media/5-queries-pane.png" alt-text="Screen shot of the queries pane that showcases where both the GitHub repo and documentation links exist.":::
+    :::image type="content" source="../media/4-queries-logs-pane.png" alt-text="Screen shot showing where to select Queries from within the logs pane." lightbox="../media/4-queries-logs-pane.png":::
 
-1. Ensure you remove the **Log Analytics workspaces** filter at the top and focus on Virtual Machines on the far left, underneath **All Queries**.
+1. Selecting queries opens up a dialogue pane of information about all pre-populated queries any engineer or admin could run.
+
+1. Ensure you remove the **Log Analytics workspaces** filter at the top and focus on Virtual Machine Scale Sets on the far left, underneath **All Queries**.
+
+    
 
 1. Focus on the **Virtual Machine free disk space** query.
 

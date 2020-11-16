@@ -4,7 +4,13 @@ Azure Monitor for VMs is a feature of Azure Monitor that relies on Azure Monitor
 
 ## What is the relationship between all the Azure native monitoring tools?
 
-There are a few different resources and services that complete the native monitoring toolkit in Azure. Azure Monitor becomes the service at the top, which spans across all monitoring tools with everything else lives underneath. The service collects and analyzes data generated from Azure resources. Azure Monitor can capture application monitoring data, guest OS monitoring data, Azure resource monitoring data, Azure subscription monitoring data, and Azure tenant monitoring data.
+There are a few different resources and services that complete the native monitoring toolkit in Azure. Azure Monitor becomes the service at the top, which spans across all monitoring tools with everything else lives underneath. The service collects and analyzes data generated from Azure resources. Azure Monitor captures monitoring data from the following sources:
+
+-    Application
+-    Guest OS
+-    Azure resources
+-    Azure subscriptions
+-    Azure tenant
 
 Data collected by Azure Monitor is composed of metrics (Azure Monitor Metrics) and logs (Azure Monitor Logs). Azure Monitor Metrics are lightweight numerical values stored in a time-series database that can be used for near real time (NRT) alerting. Some examples of metrics captured include IOPS percentages and CPU cycles. As we covered earlier, Azure Monitor Logs collects and organizes log data from Azure resources. The major difference between Azure Monitor Metrics and Azure Monitor Logs is the structure of data generated. Azure Monitor Metrics only store numeric data using a specific structure. Azure Monitor Logs can store Azure Monitor Metric data and a variety of other data types, each using their own structure.
 
@@ -25,7 +31,7 @@ A number of Azure features help Log Analytics workspace adoption within enterpri
 | Feature | Description | Notes
 | ---- | ---- | ---- |
 | Access mode | Involves how users access a Log Analytics workspace, plus defines data scope | Two options: 1) workspace-context - provides access to all logs in a workspace where the permission is assigned. Queries are scoped to all data in all tables. 2) resource-context - provides access to view logs for resources in all tables you have access to. Queries are scoped to only data associated with that resource.
-Access control mode | Defines how permissions work for any given Log Analytics workspace. | Require workspace permissions means a user would have access to all data in any table where permissions have been defined, which does not allow granular role-based access control (RBAC). Then there's the use resource or workspace permissions, which allows for granular RBAC, as users can only see log data for resources they are permitted to view. Permissions can be applied to an individual or to groups of users for the workspace or resource.
+Access control mode | Defines how permissions work for any given Log Analytics workspace. | **Require workspace permissions** means a user would have access to all data in any table where permissions have been defined, which does not allow granular role-based access control (RBAC). Then there's the **use resource or workspace permissions**, which allows for granular RBAC, as users can only see log data for resources they are permitted to view. Permissions can be applied to an individual or to groups of users for the workspace or resource.
 | Table level RBAC | Provides a mechanism to define more granular data control inside a Log Analytics workspace in conjunction with other permissions listed in the table. | This feature allows an administrator to define what specific data types are accessible to a set of users. Configuring table level RBAC requires Azure custom roles to either grant or deny access to specific tables. These roles are applied to Log Analytics workspaces, with either workspace-context or resource-context access modes configured.
 
 From a daily operations point of view, the best strategy is to limit the total number of workspaces required for daily operations. Reducing the number of workspaces will make administration and query experience easier and quicker. Multiple workspaces may still need to be a design consideration for certain companies. An example may be if you are employed by a global company and require data sovereignty.
