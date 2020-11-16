@@ -185,9 +185,6 @@ A capability model is a JSON document that describes the shape of the telemetry 
    > [!div class="mx-imgBorder"]
    > ![The illustration shows a verified certificate.](../media/iot-central-certificate-verified.png)
 
-   <br/>
-
-   :::image type="content" source="../media/iot-central-certificate-verified.png" alt-text="The illustration shows a verified certificate.":::
 
 4. Click **Save**.
 
