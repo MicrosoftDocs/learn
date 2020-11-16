@@ -28,7 +28,8 @@ A device template is a blueprint that defines the characteristics and behaviors 
 
 1. Navigate to **Device templates**, then **+ New**.
 
-   ![The illustration shows how to create IoT device templates.](../media/iot-central-new-iot-device-template.png)
+   > [!div class="mx-imgBorder"]
+   > ![The illustration shows how to create IoT device templates.](../media/iot-central-new-iot-device-template.png)
 
 1. Select **IoT device**.
 
@@ -45,7 +46,9 @@ A device template is a blueprint that defines the characteristics and behaviors 
 A capability model is a JSON document that describes the shape of the telemetry sent by a device and the interactions between the device and IoT Central.
 
 1. Click **Import capability model**.
-   ![Import IoT Central capability model](../media/iot-central-import-capability-model.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![Import IoT Central capability model](../media/iot-central-import-capability-model.png)
 
 2. Navigate to the **Azure-Sphere** lab folder.
 
@@ -58,7 +61,9 @@ A capability model is a JSON document that describes the shape of the telemetry 
 1. Navigate to the **Views** menu.
 
 2. Select **Visualizing the device**.
-   ![The illustration shows how add tile status.](../media/iot-central-add-view.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![The illustration shows how add tile status.](../media/iot-central-add-view.png)
 
 3. Name the view **Telemetry**.
 
@@ -72,14 +77,17 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 8. Click **Save** to save the view.
 
-![The illustration shows telemetry items.](../media/iot-central-add-tile-environment.png)
+> [!div class="mx-imgBorder"]
+> ![The illustration shows telemetry items.](../media/iot-central-add-tile-environment.png)
 
 ### Create a properties form
 
 1. Navigate to the **Views** menu.
 
 2. Select **Editing device and cloud data**.
-   ![The illustration shows how to edit device and cloud data.](../media/iot-central-view-properties-create.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![The illustration shows how to edit device and cloud data.](../media/iot-central-view-properties-create.png)
 
 3. Name the form **Properties**.
 
@@ -99,13 +107,15 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 9. Click **Save** to save the form.
 
-![The illustration shows the properties section.](../media/iot-central-add-tile-form.png)
+> [!div class="mx-imgBorder"]
+> ![The illustration shows the properties section.](../media/iot-central-add-tile-form.png)
 
 ### Publish the device template
 
 1. Click **Publish** to publish the template. Publishing the template makes it available for devices.
 
-   ![The illustration shows how to publish a device template.](../media/iot-central-template-publish.png)
+   > [!div class="mx-imgBorder"]
+   > ![The illustration shows how to publish a device template.](../media/iot-central-template-publish.png)
 
 2. Confirm and click **Publish**.
 
@@ -155,8 +165,6 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 5. Copy the verification code to the clipboard.
 
-   <!-- ![The illustration shows how to verify a certificate.](../media/iot-central-certificate-verify.png) -->
-
    > [!div class="mx-imgBorder"]
    > ![The illustration shows how to verify a certificate.](../media/iot-central-certificate-verify.png)  
 
@@ -180,11 +188,8 @@ A capability model is a JSON document that describes the shape of the telemetry 
 
 3. Click **Close** to dismiss the box.
 
-   <!-- ![The illustration shows a verified certificate.](../media/iot-central-certificate-verified.png) -->
-
    > [!div class="mx-imgBorder"]
    > ![The illustration shows a verified certificate.](../media/iot-central-certificate-verified.png)
-
 
 4. Click **Save**.
 
