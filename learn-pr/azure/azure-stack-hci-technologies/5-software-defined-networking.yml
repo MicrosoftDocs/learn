@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-stack-hci-technologies.5-software-defined-networking
+metadata:
+  title: What is Windows Server software-defined networking?
+  description: Describe Windows Server software-defined networking
+  ms.date: 09/21/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What is Windows Server software-defined networking?
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-software-defined-networking.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-stack-hci-technologies.4-software-defined-storage
+metadata:
+  title: What is Windows Server software-defined storage?
+  description: Describe Windows Server software-defined storage
+  ms.date: 09/21/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What is Windows Server software-defined storage?
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-software-defined-storage.md)]

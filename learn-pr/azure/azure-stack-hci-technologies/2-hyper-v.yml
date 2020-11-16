@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-stack-hci-technologies.2-hyper-v
 metadata:
-  title: Unit title
-  description: TODO
+  title: What is Hyper-V?
+  description: Describe Windows Server Hyper-V and its components
   ms.date: 09/21/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Unit title
+title: What is Hyper-V?
 durationInMinutes: 10
 content: |
   [!include[](includes/2-hyper-v.md)]
