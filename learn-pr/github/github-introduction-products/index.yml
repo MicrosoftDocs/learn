@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.languages.github-introduction-products
+uid: learn.github.github-introduction-products
 metadata:
   title: Introduction to GitHub's Products
   description: TODO
@@ -29,11 +29,11 @@ roles:
 products:
 - github
 units:
-- learn.languages.github-introduction-products.introduction
-- learn.languages.github-introduction-products.what-are-github-products
-- learn.languages.github-introduction-products.how-privacy-licensing-works
-- learn.languages.github-introduction-products.knowledge-check
-- learn.languages.github-introduction-products.summary
+- learn.github.github-introduction-products.introduction
+- learn.github.github-introduction-products.what-are-github-products
+- learn.github.github-introduction-products.how-privacy-licensing-works
+- learn.github.github-introduction-products.knowledge-check
+- learn.github.github-introduction-products.summary
 
 badge:
-  uid: learn.languages.github-introduction-products.badge
+  uid: learn.github.github-introduction-products.badge
