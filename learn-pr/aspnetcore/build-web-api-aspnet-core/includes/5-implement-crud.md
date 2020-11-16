@@ -1,4 +1,4 @@
-When the retailer's storefront UI is built, it should display all products in the inventory. To fulfill such a requirement, an action responding to an HTTP GET action verb is needed.
+The retailer's storefront UI should display all products in the inventory. To fulfill such a requirement, an action responding to an HTTP GET action verb is needed.
 
 The following table depicts the relationship between HTTP action verbs, CRUD operations, and ASP.NET Core attributes. For example, an HTTP PUT action verb is most often used to support an update operation. Such an action is annotated with the `[HttpPut]` attribute.
 
@@ -17,25 +17,12 @@ The following sections demonstrate how to support each of these four actions in 
 
 Replace the `// GET by ID action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following code:
 
-```csharp
-[HttpGet("{id}")]
-public async Task<ActionResult<Product>> GetById(long id)
-{
-    var product = await _context.Products.FindAsync(id);
-
-    if (product == null)
-    {
-        return NotFound();
-    }
-
-    return product;
-}
-```
+:::code language="csharp" source="../code/controllers/productscontroller.cs" id="snippet_GetById":::
 
 The preceding action:
 
 * Responds only to the HTTP GET verb, as denoted by the `[HttpGet]` attribute.
-* Requires that the `id` value is included in the URL segment after `products/`. Remember, the `/products` pattern was defined by the controller-level `[Route]` attribute.
+* Requires that the `id` parameter's value is included in the URL segment after `products/`. Remember, the `/products` pattern was defined by the controller-level `[Route]` attribute.
 * Queries the database for a product matching the provided `id` parameter.
 
 Each `ActionResult` used in the preceding action is mapped to the corresponding HTTP status code in the following table.
@@ -49,16 +36,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 Replace the `// POST action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following code:
 
-```csharp
-[HttpPost]
-public async Task<IActionResult> Create(Product product)
-{
-    _context.Products.Add(product);
-    await _context.SaveChangesAsync();
-
-    return CreatedAtAction(nameof(GetById), new { id = product.Id }, product);
-}
-```
+:::code language="csharp" source="../code/controllers/productscontroller.cs" id="snippet_Post":::
 
 The preceding action:
 
@@ -81,27 +59,13 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 Replace the `// PUT action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following code:
 
-```csharp
-[HttpPut("{id}")]
-public async Task<IActionResult> Update(long id, Product product)
-{
-    if (id != product.Id)
-    {
-        return BadRequest();
-    }
-
-    _context.Entry(product).State = EntityState.Modified;
-    await _context.SaveChangesAsync();
-
-    return NoContent();
-}
-```
+:::code language="csharp" source="../code/controllers/productscontroller.cs" id="snippet_Put":::
 
 The preceding action:
 
 * Responds only to the HTTP PUT verb, as denoted by the `[HttpPut]` attribute.
+* Requires that the `id` parameter's value is included in the URL segment after `products/`.
 * Returns `IActionResult` because the `ActionResult` return type isn't known until runtime. The `BadRequest` and `NoContent` methods return `BadRequestResult` and `NoContentResult` types, respectively.
-* Requires that the `id` value is included in the URL segment after `products/`.
 * Updates the `Name` and `Price` properties of the product. The following code instructs EF Core to mark all of the `Product` entity's properties as modified:
 
     ```csharp
@@ -130,28 +94,13 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 Replace the `// DELETE action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following code:
 
-```csharp
-[HttpDelete("{id}")]
-public async Task<IActionResult> Delete(long id)
-{
-    var product = await _context.Products.FindAsync(id);
-
-    if (product == null)
-    {
-        return NotFound();
-    }
-
-    _context.Products.Remove(product);
-    await _context.SaveChangesAsync();
-
-    return NoContent();
-}
-```
+:::code language="csharp" source="../code/controllers/productscontroller.cs" id="snippet_Delete":::
 
 The preceding action:
 
 * Responds only to the HTTP DELETE verb, as denoted by the `[HttpDelete]` attribute.
-* Requires that `id` is included in the URL path.
+* Requires that `id` parameter's value is included in the URL segment after `products/`.
+* Returns `IActionResult` because the `ActionResult` return type isn't known until runtime. The `NotFound` and `NoContent` methods return `NotFoundResult` and `NoContentResult` types, respectively.
 * Queries the database for a product matching the provided `id` parameter.
 
 Each `ActionResult` used in the preceding action is mapped to the corresponding HTTP status code in the following table.
@@ -161,15 +110,14 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 |`NoContent`                  |204             |The product was deleted from the database.|
 |`NotFound`                   |404             |A product matching the provided `id` parameter doesn't exist in the database.|
 
-## Build and run
+## Build and run the web API
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
 1. Start the web API by running the following command:
 
     ```dotnetcli
-    dotnet ./bin/Debug/netcoreapp3.1/ContosoPets.Api.dll \
-        > ContosoPets.Api.log &
+    dotnet ./bin/Debug/net5.0/ContosoPets.Api.dll > ContosoPets.Api.log &
     ```
 
     The web API is running and is ready for testing via `curl`.
