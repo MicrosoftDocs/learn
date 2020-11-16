@@ -2,22 +2,7 @@ A type of class called a *Model* is needed to represent a dog toy in inventory. 
 
 An in-memory database is used in this unit for simplicity. Choose a different data store, such as SQL Server or Azure SQL Database, for production environments.
 
-1. Run the following command:
-
-    ```dotnetcli
-    dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 5.0.0
-    ```
-
-    The preceding command:
-
-    * Downloads the specified NuGet package and its dependencies.
-    * Adds the specified NuGet package reference to the project.
-
-    The `Microsoft.EntityFrameworkCore.InMemory` package is required to use an EF Core in-memory database. Notice the following element was added to the *:::no-loc text="ContosoPets.Api.csproj":::* file:
-
-    ```xml
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.0" />
-    ```
+## Create a product Model
 
 1. Run the following command:
 
@@ -52,6 +37,25 @@ An in-memory database is used in this unit for simplicity. Choose a different da
     [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
 
     The `Name` and `Price` properties are annotated with attributes to constrain the values used to create a `Product` object. Specifically, the `[Required]` attribute enforces that the provided name isn't empty. The `[Range]` attribute ensures that the provided price is at least 0.01, but not higher than 9,999.99.
+
+## Add data management and seeding support
+
+1. Run the following command:
+
+    ```dotnetcli
+    dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 5.0.0
+    ```
+
+    The preceding command:
+
+    * Downloads the specified NuGet package and its dependencies.
+    * Adds the specified NuGet package reference to the project.
+
+    The `Microsoft.EntityFrameworkCore.InMemory` package is required to use an EF Core in-memory database. Notice the following element was added to the *:::no-loc text="ContosoPets.Api.csproj":::* file:
+
+    ```xml
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.0" />
+    ```
 
 1. Run the following command:
 
