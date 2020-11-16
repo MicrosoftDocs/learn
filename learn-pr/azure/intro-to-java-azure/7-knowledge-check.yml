@@ -38,13 +38,13 @@ quiz:
     choices:
     - content: "Desktop applications"
       isCorrect: false
-      explanation: "Desktop applications do have to run on the client side."
+      explanation: "Desktop applications do have to run on the client side. However, you can spin up a VM on Azure to do so. But don't you miss something?"
     - content: "Microservices"
-      isCorrect: true
-      explanation: "Microservices are the cloud native applications."
+      isCorrect: false
+      explanation: "Microservices are the cloud native applications. Indeed. But don't you miss something?"
     - content: "Monolithic application."
       isCorrect: false
       explanation: "Monolithic applications might be able to lift and shift towards Azure."
     - content: "All the three above."
-      isCorrect: false
-      explanation: "It depends for specific application."
+      isCorrect: true
+      explanation: "Even though, it always depends for the specific application, Azure do offer services for all of these applications."

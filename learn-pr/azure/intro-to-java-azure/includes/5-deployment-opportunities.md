@@ -1,6 +1,6 @@
 Azure offers different deployment solutions for Java applications. We'll just look at a few of them here.
 
-![Deployment Opportunities on Azure for different types of Java Applications](../media/4-java-on-azure-info-graphic.jpg)
+![Deployment Opportunities on Azure for different types of Java Applications](../media/5-java-on-azure-info-graphic.jpg)
 
 ## Virtual Machines  
 

@@ -1,6 +1,6 @@
 It's necessary to distinguish between the different types of Java application before choosing the matching cloud solution.
 
-You can distinguish your type of application specification wise. The most famous ones are:
+You can distinguish your type of application specification wise. The most famous ones are the following.
 
 ## Spring Framework and the Spring Ecosystem
 
