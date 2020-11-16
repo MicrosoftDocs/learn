@@ -74,7 +74,7 @@ Great, you've communicated your intent to help the project, you're now ready to 
 
     :::image type="content" source="../media/3-create-pr.png" alt-text="Screenshot showing pull request creation interface":::
 
-    If there's a template for the pull request description, take the time to fill in all required information. If there isn't onw, make sure to provide enough context for maintainers to understand what changes you are proposing and why. You should also link back to the related issue by mentioning its number using the `#<ISSUE_NUMBER>`. You can find the issue number next to its title.
+    If there's a template for the pull request description, take the time to fill in all required information. If there isn't now, make sure to provide enough context for maintainers to understand what changes you are proposing and why. You should also link back to the related issue by mentioning its number using the `#<ISSUE_NUMBER>`. You can find the issue number next to its title.
 
     :::image type="content" source="../media/3-issue-number.png" alt-text="Screenshot showing issue number":::
 
