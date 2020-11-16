@@ -2,7 +2,7 @@ Azure offers different deployment solutions for Java applications. We'll just lo
 
 ![Deployment Opportunities on Azure for different types of Java Applications](../media/5-java-on-azure-info-graphic.jpg)
 
-## Virtual Machines  
+## Virtual machines  
 
 Just like in your own data center, Virtual Machines (VMs) are available on Azure. You can choose between different flavors on Windows also on Linux, such as Ubuntu, Red Hat, or Suse.
 VMs are usually the starting point for the Lift and Shift approach.

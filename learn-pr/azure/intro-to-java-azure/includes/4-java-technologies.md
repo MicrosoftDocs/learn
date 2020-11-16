@@ -2,7 +2,7 @@ It's necessary to distinguish between the different types of Java application be
 
 You can distinguish your type of application specification wise. The most famous ones are the following.
 
-## Spring Framework and the Spring Ecosystem
+## Spring Framework and the Spring ecosystem
 
 The Spring Framework is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE (Enterprise Edition) platform. Although the framework doesn't impose any specific programming model, it has become popular in the Java community as an addition to the Enterprise JavaBeans (EJB) model. The Spring Framework is open source.
 The Spring Framework brings the core functionality and supports:
@@ -45,7 +45,7 @@ Jakarta EE aims to be cloud native for Java development. It's a set of specifica
 
 - **WebProfile** is a properly defined subset of Jakarta EE for backend services with Web focus. But no worries! You can add specific APIs of the Enterprise platform on top of it.
 
-## Application Servers
+## Application servers
 
 Java EE applications must be deployed onto Java EE-compliant application servers (such as WebLogic, WebSphere, WildFly, GlassFish, Payara, and others).
 
@@ -63,7 +63,7 @@ Java EE applications must be deployed onto Java EE-compliant application servers
 
 - **Oracle GlassFish** is the Open Source Java EE Reference Implementation; as such, they welcome external contributions. It's the reference implementation of the Java EE standard (which includes Servlet and JSP).
 
-## Other Frameworks for Microservice-oriented Architectures
+## Other frameworks for microservice-oriented architectures
 
 - **Netty** is a NIO client-server framework, which enables quick and easy development of network applications such as protocol servers and clients. It greatly simplifies and streamlines network programming such as TCP and UDP socket server. Netty is an asynchronous event-driven network application framework for rapid development of maintainable high-performance protocol servers & clients.
 

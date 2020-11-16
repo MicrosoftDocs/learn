@@ -1,6 +1,6 @@
 It's necessary to distinguish between the different types of server side Java application before choosing the matching cloud solution.
 
-## Monolithic Applications
+## Monolithic applications
 
 The *All in One* solution that still fits for many projects from smaller ones over *Self-contained Systems* to *Contain it all* are the Monolithic applications. A Monolithic application is a good start for prototyping and startups. It's simple to develop, easy to debug and to test, and simple to deploy. They bring little cross-cutting concerns such as logging, caching, or monitoring. Depending on the functionality, they're scalable but only as a whole.
 
