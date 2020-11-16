@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.github.github-introduction-administration
+metadata:
+  title: Introduction to GitHub Administration
+  description: TODO
+  ms.date: 11/16/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to GitHub Administration
+summary: TODO
+abstract: |
+  By the end of this module, you will be able to:
+ - Describe how GitHub administrators can utilize various technologies to enable a secure authentication strategy allowing them to centrally manage repository access.
+ - Describe how GitHub administrators can organizes members into organizations and teams to control access and privacy.
+ - Describe how GitHub administrators can centrally manage teams and members using existing directory information services.
+ - Describe how GitHub can itself be used as an identity provider for authentication and authorization.
+prerequisites: |
+ - Familiarity with GitHub, repositories, and the basics of managing individual accounts is required
+ - Familiarity with personal and organizational authentication technologies and processes would be very helpful
+ratingEnabled: true
+iconUrl: /learn/achievements/github-introduction-administration.svg
+levels:
+- intermediate
+roles:
+- administrator
+- devops-engineer
+- technology-manager
+products:
+- github
+units:
+- learn.github.github-introduction-administration.introduction
+- learn.github.github-introduction-administration.what-is-github-administration
+- learn.github.github-introduction-administration.how-github-authentication-works
+- learn.github.github-introduction-administration.how-github-organization-permission-works
+- learn.github.github-introduction-administration.knowledge-check
+- learn.github.github-introduction-administration.summary
+
+badge:
+  uid: learn.github.github-introduction-administration.badge
