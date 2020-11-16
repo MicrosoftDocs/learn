@@ -84,23 +84,24 @@ An in-memory database is used in this unit for simplicity. Choose a different da
 
     The preceding code creates a Contoso Pets-specific implementation of an EF Core `DbContext` object. The `ContosoPetsContext` class provides access to an in-memory database, as configured in the next step.
 
-1. Add the following highlighted code to the *:::no-loc text="Startup.cs":::* file's `ConfigureServices` method. Save your changes.
+1. Apply the following changes to the *:::no-loc text="Startup.cs":::* file:
+    1. Add the following highlighted code to the `ConfigureServices` method:
 
-    [!code-csharp[](../code/3-add-db-context.cs?highlight=3-4)]
+        [!code-csharp[](../code/3-add-db-context.cs?highlight=3-4)]
 
-    The preceding code:
+        The preceding code:
 
-    * Registers the custom `DbContext` class, named `ContosoPetsContext`, with ASP.NET Core's [dependency injection](/aspnet/core/fundamentals/dependency-injection) system.
-    * Defines an in-memory database named *:::no-loc text="ContosoPets":::*.
+        * Registers the custom `DbContext` class, named `ContosoPetsContext`, with ASP.NET Core's [dependency injection](/aspnet/core/fundamentals/dependency-injection) system.
+        * Defines an in-memory database named *:::no-loc text="ContosoPets":::*.
 
-1. Add the following code to the top of *:::no-loc text="Startup.cs":::*. Save your changes.
+    1. Add the following code to the top of the file. Save your changes.
 
-    ```csharp
-    using Microsoft.EntityFrameworkCore;
-    using ContosoPets.Api.Data;
-    ```
+        ```csharp
+        using Microsoft.EntityFrameworkCore;
+        using ContosoPets.Api.Data;
+        ```
 
-    The `Microsoft.EntityFrameworkCore` namespace resolves the `UseInMemoryDatabase` method call. The `ContosoPets.Api.Data` namespace resolves the `ContosoPetsContext` reference.
+        The `Microsoft.EntityFrameworkCore` namespace resolves the `UseInMemoryDatabase` method call. The `ContosoPets.Api.Data` namespace resolves the `ContosoPetsContext` reference.
 
 1. Add the following code to *:::no-loc text="Data/SeedData.cs":::*. Save your changes.
 
@@ -164,6 +165,8 @@ An in-memory database is used in this unit for simplicity. Choose a different da
 
     The `CreateHostBuilder` method is the first code to execute when the app starts. With the preceding changes, seeding of the in-memory database is triggered via a call to `SeedData.Initialize`. This database seeding strategy isn't recommended in a production environment. Consider seeding during database deployment instead.
 
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
+## Build the web API project
+
+[!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 
 The `Product` Model and `ContosoPetsContext` class will be used by the controller created in the next unit.

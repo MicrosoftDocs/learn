@@ -110,7 +110,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 |`NoContent`                  |204             |The product was deleted from the database.|
 |`NotFound`                   |404             |A product matching the provided `id` parameter doesn't exist in the database.|
 
-## Build and run
+## Build and run the web API
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
