@@ -1,4 +1,4 @@
-The .NET CLI is the simplest way to create an ASP.NET Core web API. The CLI is pre-installed in the Azure Cloud Shell environment used in this unit.
+The .NET CLI is the simplest way to create an ASP.NET Core web API. The CLI is pre-installed in the Cloud Shell environment used in this unit.
 
 In this unit, you'll use the .NET CLI to create a web API within the Cloud Shell command shell to the right. You'll also gain an understanding of the resulting project.
 
@@ -12,7 +12,7 @@ Run the following command in the command shell:
 
 [!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
-The preceding command installs a specific version of the .NET SDK in the Azure Cloud Shell environment.
+The preceding command installs a specific version of the .NET SDK in the Cloud Shell environment.
 
 ## Create a web API project
 
@@ -44,12 +44,12 @@ The preceding command installs a specific version of the .NET SDK in the Azure C
 
 1. Examine the following files and directories:
 
-    |Name              |Description                                                    |
-    |------------------|---------------------------------------------------------------|
-    |*:::no-loc text="Controllers/":::*          |Contains classes with public methods exposed as HTTP endpoints.|
-    |*:::no-loc text="Program.cs":::*            |Contains a `Main` method&mdash;the app's managed entry point.|
-    |*:::no-loc text="ContosoPets.Api.csproj":::*|Contains configuration metadata for the project.|
-    |*:::no-loc text="Startup.cs":::*            |Configures services and the app's HTTP request pipeline.|
+    | Name                                         | Description                                                     |
+    |----------------------------------------------|-----------------------------------------------------------------|
+    | *:::no-loc text="Controllers/":::*           | Contains classes with public methods exposed as HTTP endpoints. |
+    | *:::no-loc text="Program.cs":::*             | Contains a `Main` method&mdash;the app's managed entry point.   |
+    | *:::no-loc text="Startup.cs":::*             | Configures services and the app's HTTP request pipeline.        |
+    | *:::no-loc text="ContosoPets.Api.csproj":::* | Contains configuration metadata for the project.                |
 
 ## Build and test
 

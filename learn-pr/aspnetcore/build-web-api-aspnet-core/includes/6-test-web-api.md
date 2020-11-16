@@ -40,7 +40,7 @@ Transfer-Encoding: chunked
 
 An HTTP 400 status code is returned because the controller's `[ApiController]` attribute triggers Model validation on the request body. ASP.NET Core MVC's Model binder attempts to serialize the curl command's `-d` JSON to a `Product` object. Model validation fails because the request's `Price` value is less than the minimum value of 0.01.
 
-An error result has a status code of 400 or higher. ASP.NET Core MVC transforms an error result to a [ProblemDetails](/dotnet/api/microsoft.aspnetcore.mvc.problemdetails) type. `ProblemDetails` provides a machine-readable error format that adheres to the [RFC 7807 specification](https://tools.ietf.org/html/rfc7807). The `application/problem+json` media type in the `Content-Type` response header indicates the response is of type `ProblemDetails`.
+An error result has a status code of 400 or higher. ASP.NET Core MVC transforms an error result to a :::no-loc text="[ProblemDetails](/dotnet/api/microsoft.aspnetcore.mvc.problemdetails)"::: type. `ProblemDetails` provides a machine-readable error format that adheres to the [RFC 7807 specification](https://tools.ietf.org/html/rfc7807). The `application/problem+json` media type in the `Content-Type` response header indicates the response is of type `ProblemDetails`.
 
 ### HTTP POST: Add a valid product
 
@@ -91,7 +91,7 @@ The successful retrieval of the product results in an HTTP 404 status code in th
 
 ### HTTP GET: Retrieve a product
 
-An HTTP GET request was sent to retrieve the Plush Squirrel product by its unique identifier (3). The following response is generated:
+An HTTP GET request was sent to retrieve the Plush Squirrel product by its unique identifier, which is 3. The following response is generated:
 
 ```console
 HTTP/1.1 200 OK
