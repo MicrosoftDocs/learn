@@ -88,6 +88,6 @@ In this unit, you'll:
 
     :::image type="content" source="../media/3-azure-monitor-logs-data-summary.png" alt-text="Screen shot after selecting Log Events from the Azure Monitor for VMs pane.":::
 
-1. The logs section of a Log Analytics workspace will open and you will see a pre-populated query that outlines the data being collected inside that table after enabling Azure Monitor for VMs.
+1. The logs section of a Log Analytics workspace opens with a pre-populated query showing the data being collected.
 
     :::image type="content" source="../media/3-insights-metrics-log-analytics.png" alt-text="Screen shot after selecting the InsightsMetrics table and Log Analytics opening up for further query writing." lightbox="../media/3-insights-metrics-log-analytics.png":::
