@@ -56,3 +56,5 @@ blade.
 1. The status of the primary replica will switch to **Pending** and the secondary, **Failover**. The process will take a few minutes. When complete, the roles will switch with the secondary becoming the new primary and the old primary the secondary.
 
 You have now seen how to enable geo-replication for Azure SQL Database, ensure it is working, and manually fail it over to another region using the portal.
+
+To finish this exercise select End below.
