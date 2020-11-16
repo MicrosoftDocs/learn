@@ -128,7 +128,7 @@ mvn package azure-webapp:deploy
 
 This command will run the tests, and then automatically spin up an Azure App Service on Azure and deploy the packaged application.
 
-![Clicking through the local deployment of the sample pet clinic application](../media/6-deployed.gif)
+![Screenshot of the deployed sample pet clinic application](../media/6-deployed.gif)
 
 Congratulations! The app got successfully deployed to Azure App Service.
 You just used the commands, which are in more real world scenarios run by the CI/CD tool of your choice.
