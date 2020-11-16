@@ -98,7 +98,9 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 1. Select **CMake: [Debug]: Ready** from the Visual Studio Code status bar.
 
-   ![The illustration shows CMake status.](../media/visual-studio-code-start-application.png)
+   <!-- ![The illustration shows CMake status.](../media/visual-studio-code-start-application.png) -->
+
+   :::image type="content" source="../media/visual-studio-code-start-application.png" alt-text="The illustration shows CMake status.":::
 
 1. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application now running the Azure Sphere device.
 
@@ -155,8 +157,10 @@ Switch back to the Azure IoT Central web portal.
 
 1. Click **Migrate**.
 
-    > [!div class="mx-imgBorder"]
-    > ![The illustration shows how to migrate a device in IoT Central](../media/iot-central-migrate-device.png)
+    <!-- > [!div class="mx-imgBorder"]
+    > ![The illustration shows how to migrate a device in IoT Central](../media/iot-central-migrate-device.png) -->
+
+    :::image type="content" source="../media/iot-central-migrate-device.png" alt-text="The illustration shows how to migrate a device in IoT Central.":::
 
 1. Select the **Azure Sphere** template.
 
@@ -173,8 +177,10 @@ Switch back to the Azure IoT Central web portal.
     > [!NOTE]
     > Azure IoT Central does not update immediately. It may take a minute or two for the temperature, humidity, and pressure telemetry to be displayed. You can check that data is flowing into IoT Central by checking the **Raw data** tab.
 
-> [!div class="mx-imgBorder"]
-> ![The illustration shows how to display measurements.](../media/iot-central-display-measurements.png)
+<!-- > [!div class="mx-imgBorder"]
+> ![The illustration shows how to display measurements.](../media/iot-central-display-measurements.png) -->
+
+:::image type="content" source="../media/iot-central-display-measurements.png" alt-text="The illustration shows how to display measurements.":::
 
 ## Close Visual Studio Code
 
