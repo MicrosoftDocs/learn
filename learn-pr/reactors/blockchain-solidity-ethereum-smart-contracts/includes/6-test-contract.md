@@ -5,7 +5,7 @@ In this part, we write a new JavaScript test for our shipping contract. We could
 Let's begin by creating a new test file.
 
 1. Go to **Terminal** > **New Terminal**.
-1. In the new terminal, type `truffle create test ShippingStatus`. This creates a new file in the test folder called called *ShippingStatus.js*.  
+1. In the new terminal, type `truffle create test ShippingStatus`. This creates a new file in the test folder called *ShippingStatus.js*.  
 1. Replace the code in the file by pasting the following code:
 
     ```javascript
