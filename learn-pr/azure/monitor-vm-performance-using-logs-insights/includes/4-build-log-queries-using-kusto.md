@@ -23,15 +23,15 @@ Tabular operators will predominantly be the way you interact with and query moni
 
 ## Understanding the schema and schema pane
 
-The **schema** is a series of tables logically grouped together. The schema allows for an easy understanding behind how Log Analytics stores logs. The schema displays on the **schema pane** (far left of a Log Analytics workspace) and becomes an extra added helper in crafting out queries.
+The **schema** is a series of tables logically grouped together. The schema allows for an easy understanding behind how Log Analytics stores data. The schema displays on the **schema pane** (far left of a Log Analytics workspace) and becomes an extra added helper in crafting out queries.
 
-By taking a look at the schema pane, you will begin to understand that no query should be built from scratch. You are able to favorite a table, change scopes so you only see the relevant tables for the resource(s) you select, display metadata to easily find what you need, and you have capacity to use a preview pane that provides insight into a table's content, along with additional information and metadata.
+By taking a look at the schema pane, you will begin to understand that you don't have to build a query from scratch. You are able to favorite a table, change scopes so you only see the relevant tables for the resource(s) you select, display metadata to easily find what you need, and you have capacity to use a preview pane that provides insight into a table's content, along with additional information and metadata.
 
 :::image type="content" source="../media/4-schema-pane-location.png" alt-text="Screen shot of schema pane in the Logs section of a Log Analytics workspace.":::
 
 ## Writing a new query
 
-Queries can start with either a table name or the **search** command. With the way Azure Data Explorer processes queries, starting with a table name is the right way to configure queries. The lone caveat here is search becomes helpful if you are trying to determine what the table names are. Using the approach of starting with a table name defines a clear scope for the query, which improves query performance and relevance of the results. Using search may provide more information on how to locate the table name and build a better query where you target the table name.
+Starting with a table name is the right way to configure log queries. Using a table name defines a clear scope for the query, which improves query performance and relevance of the results.
 
 One additional thing to note is the Kusto Query Language is case-sensitive. Language keywords are typically written in lower-case (consume, count, distinct, evaluate, join, limit, project, etc.). When using names of tables or columns in a query, make sure to use the correct case. If you are ever stuck, the schema pane will showcase how to use correct casing for the table name.
 
