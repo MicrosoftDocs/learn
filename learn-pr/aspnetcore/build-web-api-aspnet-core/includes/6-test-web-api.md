@@ -174,4 +174,4 @@ The successful retrieval of the products list results in:
 
   :::code language="csharp" source="../code/controllers/productscontroller.cs" id="snippet_GetAll" highlight="3":::
 
-* A JSON representation of the Plush Squirrel product.
+* A JSON representation of the products in inventory.
