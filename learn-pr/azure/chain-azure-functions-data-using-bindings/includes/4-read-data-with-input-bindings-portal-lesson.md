@@ -29,7 +29,7 @@ A binding expression is specialized text in **function.json**, function paramete
 - New GUID
 - Current date and time
 
-Most expressions are identified by wrapping them in curly braces. However, app setting binding expressions are wrapped in percent signs rather than curly braces. For example if the blob output binding path is `{Environment}/newblob.txt` and the Environment app setting value is Development, a blob will be created in the Development container.
+Most expressions are identified by wrapping them in curly braces. However, app setting binding expressions are wrapped in percent signs rather than curly braces. For example if the blob output binding path is `%Environment%/newblob.txt` and the Environment app setting value is Development, a blob will be created in the Development container.
 
 ## Summary
 
