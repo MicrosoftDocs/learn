@@ -8,11 +8,11 @@ Run the following command:
 . <(wget -q -O - https://aka.ms/build-web-api-aspnet-core-test)
 ```
 
-The command downloads and runs a script that sends six sequential requests to the web API. See the Cloud Shell for the individual `curl` commands that were sent.
+The command downloads and runs a script that sends seven sequential requests to the web API. See the Cloud Shell for the individual `curl` commands that were sent.
 
 ## Review the web API test results
 
-The following headings appear in the order in which the six requests were sent.
+The following headings appear in the order in which the seven requests were sent.
 
 ### HTTP POST: Add an invalid product
 
