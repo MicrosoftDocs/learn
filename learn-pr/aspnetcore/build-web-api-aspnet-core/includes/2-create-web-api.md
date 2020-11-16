@@ -77,7 +77,7 @@ The preceding command installs a specific version of the .NET SDK in the Cloud S
     curl -k -s https://localhost:5001/weatherforecast | jq
     ```
 
-    :::no-loc text="[curl](https://curl.haxx.se)"::: is a cross-platform command-line tool for testing web APIs and other HTTP endpoints. The preceding command uses:
+    [curl](https://curl.haxx.se) is a cross-platform command-line tool for testing web APIs and other HTTP endpoints. The preceding command uses:
 
     * HTTPS to send a request to the web API running on port 5001 of localhost. The `WeatherForecastController` class's parameterless `Get` action method handles the request.
     * The `-k` option to indicate that `curl` should allow insecure server connections when using HTTPS. The .NET SDK includes an HTTPS development certificate for testing. By default, `curl` rejects secure connections using this certificate.
