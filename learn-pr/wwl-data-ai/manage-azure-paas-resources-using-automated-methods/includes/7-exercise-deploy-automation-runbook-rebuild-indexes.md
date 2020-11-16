@@ -173,7 +173,9 @@ You have been hired as a Senior Data Engineer to help automate day to day operat
 
 1. On Line 1 of the file paste in the **Server name** you copied in the steps above. Select all of the text ( <kbd>CTRL</kbd> + <kbd>A</kbd> ) and copy it to your clipboard ( <kbd>CTRL</kbd> + <kbd>C</kbd> ).
 
-1. Navigate back to your automation runbook in the Microsoft Edge browser, and paste in the PowerShell code you copied. Then select **Save** and then select **Publish**.
+1. Navigate back to your automation runbook in the Microsoft Edge browser, and paste in the PowerShell code you copied. 
+
+1. Select **Save**, and then select **Publish**.
 
     :::image type="content" source="../media/dp-3300-module-66-lab-48.png" alt-text="Screenshot of pasting the PowerShell into the Azure portal.":::
 
@@ -199,12 +201,12 @@ Next you will schedule the runbook to execute on a regular basis.
 
     :::image type="content" source="../media/dp-3300-module-66-lab-52.png" alt-text="Screenshot of the New Schedule pop out completed with example information.":::
 
-1. Select **OK**.
+1. Select **Create**, and then select **OK**.
 
 1. The schedule is now linked to the runbook.
 
     :::image type="content" source="../media/dp-3300-module-66-lab-53.png" alt-text="Screenshot of the created schedule.":::
 
-By completing this exercise you have automated the task of defragging a SQL server databases indexes at 4am every day.
+By completing this exercise you've automated the defragging of indexes on a SQL server database, every day, at 4am.
 
-To finish this exercise select End below.
+To finish this exercise select **End** below.
