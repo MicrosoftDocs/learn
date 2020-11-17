@@ -6,6 +6,7 @@ Contoso is a medium-size financial services company with its headquarters in Lon
 To address the capacity and agility challenges, Contoso's IT management decided to migrate a significant portion of its containerized workloads to cloud. Wary of developing a single-vendor dependency, Contoso wants to leverage multiple cloud providers, although it is considering choosing Microsoft Azure as its main deployment target. This consideration is heavily influenced not only by the advantages of the Azure Kubernetes Service offering, but also by a wide range of hybrid benefits associated with Azure Arc, with its centralized, multi-platform management capabilities playing the primary role.
 
 The Contoso IT Engineering team was tasked with exploring and evaluating Azure Arc capabilities in regard to Kubernetes-based workloads. It is your responsibility, as the lead system engineer to determine how Contoso can benefit from its hybrid management model while pursuing a multi-vendor strategy and maintaining some on-premises containerized workloads.
+<!-- Replace "system" with "systems". It should be systems since I'm/he is being tasked with engineering more than one host/system. -->
 
 Over the course of this module, you'll learn about Azure Arc capabilities targeting management and monitoring of Kubernetes clusters. By the end of this module, you'll be able to describe how these capabilities can help customers like Contoso to optimize and simplify their operations. 
 
