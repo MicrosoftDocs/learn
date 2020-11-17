@@ -47,7 +47,6 @@ In this step, you're going to use the Azure portal to enable application logging
 
 You'll now set up the application logging.
 
-1. Switch to the tab showing the Azure portal.
 1. On the left-hand side, scroll down to the **Monitoring** section, and then click **App Service Logs**.
 1. Under **Application logging (Filesystem)**, click **On**, and in the **Level** box, click **Error**.
 1. Under **Application logging (Blob)**, click **On**, and in the **Level** box, click **Verbose**.
