@@ -6,7 +6,7 @@ A number of Azure Arc benefits are independent of the resouce type, since they r
 
 - The ability to organize all organizational resources by using Azure management groups, subscriptions, resource groups, and tags.
 - A single, comprehensive inventory of organizational assets across multi-clouds and on-premises, including support for searching and indexing by using Azure Resource Graph.
-- A consolidated view of Azure and Azure Arc enabled resources via the Azure portal, Azure CLI, Azure PowerShell, and Azure REST API. 
+- A consolidated view of Azure and Azure Arc enabled resources via the Azure portal, Azure CLI, Azure PowerShell, and Azure REST API. <!--Marcin: did you explain these acronyms yet? Or are they very common?--> 
 - Direct access from the Azure portal to the majority of management features of the Azure Arc enabled servers: 
 
 | Setting | Explanation |
