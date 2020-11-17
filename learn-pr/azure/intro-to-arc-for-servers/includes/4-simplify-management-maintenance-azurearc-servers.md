@@ -50,7 +50,7 @@ In general, Update Management allows you to:
 
 PowerShell DSC is a technology that implements declarative configuration management through a combination of PowerShell scripts and operating system features. You can deploy DSC configuration in either push mode or pull mode. The push mode involves invoking deployment from a management computer against one or more managed computers. In the pull mode, managed computers perform deployment automatically, based on configuration data from a designated location, referred to as a *pull server*. Azure Automation includes a managed, Azure-resident DSC pull server. You can apply this configuration to non-Azure computers, including Azure Arc enabled servers. 
 
-### Are there any additional benefits specific to Azure Arc enabled servers?
+## Are there any additional benefits specific to Azure Arc enabled servers? <!--Marcin: I erased one # as it seamed more logic. Do you aggree?-->
 
 All of the services described in this unit are available to non-Azure servers, including those which are not Azure Arc enabled. However, Azure Arc offers advantages when it comes to the onboarding process, since you can use VM extensions or Azure Policy to deploy the Log Analytics agent. 
 
