@@ -1,4 +1,4 @@
-Identity management is key to granting access and to the security enhancement of corporate assets. To secure and control your cloud-based assets you must manage identity and access for your Azure administrators, application developers, and application users.
+Identity management is key to granting access and to the security enhancement of corporate assets. To secure and control your cloud-based assets, you must manage identity and access for your Azure administrators, application developers, and application users.
 
 ## IAM recommendations
 
@@ -11,8 +11,8 @@ Here are the recommendations for identity and access management. Included with e
 
 All non-Administrators should not have access due to the sensitive data and the rules of least privilege.
 
-1. Sign in to the Azure portal.
-1. On the left, select **Azure Active Directory** > **Users** or **Groups**.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
+1. On the top left, select the three bars and then **Azure Active Directory** > **Users** or **Groups**.
 1. Go to **User settings**.
 1. Ensure that **Restrict access to Azure AD administration portal** is set to **Yes**. Setting this value to **Yes** restricts all non-administrators from accessing any Azure AD data in the administration portal, but does not restrict such access using PowerShell or another client such as Visual Studio.
 
@@ -22,9 +22,9 @@ All non-Administrators should not have access due to the sensitive data and the 
 
 Enable it for privileged and non-privileged users.
 
-1. Sign in to the Azure portal.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 1. On the left, select **Azure Active Directory** > **Users** > **All users**.
-1. Select **Multi-Factor Authentication**. This will open a new window.
+1. Select **Multi-Factor Authentication**.
 1. Ensure that **Multi-Factor Authentication Status** is **Enabled** for all users who are co-Administrators, Owners, or Contributors
 
     ![Screenshot of the Azure portal showing the Multi-Factor Authentication option in the AAD pane](../media/2-mfa-ad-portal.png)
@@ -33,7 +33,7 @@ Enable it for privileged and non-privileged users.
 
 Remember Multi-Factor Authentication feature for devices and browsers that are trusted by the user is a free feature for all Multi-Factor Authentication users. Users can bypass subsequent verifications for a specified number of days, after they've successfully signed-in to a device by using Multi-Factor Authentication. **If an account or device is compromised, remembering Multi-Factor Authentication for trusted devices can negatively affect security**.
 
-1. Sign in to the Azure portal.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 1. On the left, select **Azure Active Directory** > **Users** > **All users**.
 1. Select **Multi-Factor Authentication**.
 1. Select **users**, then click **Manage users settings**.
@@ -45,9 +45,9 @@ Remember Multi-Factor Authentication feature for devices and browsers that are t
 
 Ensure that no guest users exist, or alternatively if the business requires guest users, ensure to limit their permissions.
 
-1. Sign in to the Azure portal.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 1. On the left, select **Azure Active Directory** > **Users** > **All users**.
-1. Select the **Show** drop down and select **Guest users only**.
+1. Select the **Show** drop-down and select **Guest users only**.
 1. Verify that there are no guest users listed (`USER TYPE=Guest`).
 
     ![Screenshot of the Azure portal showing AAD listing guest users](../media/2-guest-users.png)
@@ -60,7 +60,7 @@ Ensure that no guest users exist, or alternatively if the business requires gues
 
 With dual identification set, an attacker would require compromising both the identity forms before they could maliciously reset a user's password.
 
-1. Sign in to the Azure portal.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 1. On the left, select **Azure Active Directory** > **Users**.
 1. Select **Password reset**.
 1. Go to **Authentication methods**.
@@ -70,13 +70,13 @@ With dual identification set, an attacker would require compromising both the id
 
 ### Establish an interval for reconfirming user authentication methods - Level 1
 
-If authentication reconfirmation is set to disabled, register users will never be prompted to re-confirm their authentication information.
+If authentication reconfirmation is set to disabled, register users will never be prompted to reconfirm their authentication information.
 
-1. Sign in to the Azure portal.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 1. On the left, select **Azure Active Directory** > **Users**.
 1. Go to **Password reset**.
 1. Go to **Registration**
-1. Ensure that **Number of days before users are asked to re-confirm their authentication information** is not set to **0**. The default is 180 days.
+1. Ensure that **Number of days before users are asked to reconfirm their authentication information** is not set to **0**. The default is 180 days.
 
     ![Screenshot of the Azure portal showing the form for number of days to re-confirm info](../media/2-days-till-re-confirm.png)
 
@@ -84,7 +84,7 @@ If authentication reconfirmation is set to disabled, register users will never b
 
 This should be set to **No**. Restricting invitations through administrators only ensures that only authorized accounts have access Azure resources.
 
-1. Sign in to the Azure portal.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 1. On the left, select **Azure Active Directory** > **Users**.
 1. Go to **User settings**.
 1. Go to **External users**, click **Manage external collaboration settings**.
@@ -96,7 +96,7 @@ This should be set to **No**. Restricting invitations through administrators onl
 
 When this feature is enabled, all users in AAD are allowed to create new security groups. Security Group creation should be restricted to administrators.
 
-1. Sign in to the Azure portal.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 1. On the left, select **Azure Active Directory** > **Groups**
 1. Go to **General settings**.
 1. Ensure that **Users can create security groups** is set to **No**.
@@ -105,9 +105,9 @@ When this feature is enabled, all users in AAD are allowed to create new securit
 
 ### Self-service group management enabled - Level 2
 
-Until your business requires this delegation to various users, it is a best practice to disable this feature.
+Until your business requires this delegation to various users it is a best practice to disable this feature.
 
-1. Sign in to the Azure portal.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 1. On the left, select **Azure Active Directory** > **Groups**
 1. Go to **General settings**.
 1. Ensure that **Self-service group management enabled** is set to **No**.
@@ -118,7 +118,7 @@ Until your business requires this delegation to various users, it is a best prac
 
 Require administrators to register custom applications.
 
-1. Sign in to the Azure portal.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 1. On the left, select **Azure Active Directory** > **Users**
 1. Go to **User settings**.
 1. Ensure that **User can register applications** is set to **No**.
