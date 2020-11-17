@@ -5,6 +5,7 @@ Contoso is a medium-size financial services company with its headquarters in Lon
 In addition, the Contoso's IT team is exploring the option of migrating to the cloud some of its on-premises server workloads running on legacy infrastructure which is reaching end-of-life. Contoso is considering several different cloud providers, with the possibility of the multi-cloud strategy. The primary concern of the Contoso's Chief Information Officer (CIO) is that such strategy might further exacerbate operational complexity and management overhead that Contoso's IT is trying to minimize. 
 
 Given these challenges, the Contoso's CIO wants to identify technologies that promise to bridge the gap between the administrative model of on-premises and multi-cloud services, regardless of the server operating system and the hardware or virtualization platform. While attending the most recent Ignite event, the CIO heard about the hybrid capabilities of Azure Arc and tasked you, the IT Engineering team lead, with evaluating the extent to which Azure Arc enabled servers can help with building a consistent, unified management model.
+<!--Marcin: please include a sentence ' By the end of this module, you'll be able to...'--> 
 
 ## Learning objectives
 
@@ -15,7 +16,7 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-For the best learning experience from this module, you should have knowledge of:
+For the best learning experience from this module, you should have knowledge of, and experience with, the following:
 
 - Basic concepts of cloud technologies
 - Basic characteristics of Azure services
