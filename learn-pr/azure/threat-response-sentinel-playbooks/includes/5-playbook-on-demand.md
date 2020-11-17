@@ -4,7 +4,7 @@ Some incidents at Contoso might require further investigation before you run a p
 
 You can configure playbooks to run on demand based on incident details, to trigger specific steps as part of the investigation, or to conduct some remediation action.
 
-Consider the scenario where suspicious users are prevented from accessing corporate resources. As the Contoso security administrator, you find one false positive incident. Some users at Contoso were accessing resources over a VPN connection from remote computers while being connected to the office computers at the same time. Microsoft security graph <!-- Marjan on the website, I see this as Microsoft Graph Security API. Is this the same or a different prduct? We need to use casing as it appears in the formal product name--> received signals and based on the vulnerability that detects potential threat from atypical travel locations, it tagged the users as medium risk.
+Consider the scenario where suspicious users are prevented from accessing corporate resources. As the Contoso security administrator, you find one false positive incident. Some users at Contoso were accessing resources over a VPN connection from remote computers while being connected to the office computers at the same time. Microsoft Cloud Security received signals and based on the vulnerability that detects potential threat from atypical travel locations, it tagged the users as medium risk.
 
 You can use a playbook that can automatically dismiss this risky user property in Azure AD.
 
