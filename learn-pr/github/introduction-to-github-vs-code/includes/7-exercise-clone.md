@@ -6,12 +6,12 @@ Let's see how you can use Visual Studio Code to start a new project by cloning t
 
     :::image type="content" source="../media/clone-from-gh.png" alt-text="Repo on github.com":::
 
-2. Click the **Clone from GitHub** option from the dropdown and you will find a list of your repositories. You can also search for other repositories on Github. Search for a repository using this path "MicrosoftDocs/mslearn-python-products" and click the first option
+2. Select the **Clone from GitHub** option from the dropdown and you will find a list of your repositories. You can also search for other repositories on Github. Search for a repository using this path "MicrosoftDocs/mslearn-python-products" and select the first option
 
     :::image type="content" source="../media/find-repo-to-clone.png" alt-text="Repo on github.com":::
 
 3. Choose a location on your computer where you want the repository to be cloned into.
-4. Click **Open** from the pop up that appears after VS Code has cloned the repository:
+4. Select **Open** from the pop-up that appears after VS Code has cloned the repository:
     
     :::image type="content" source="../media/open-cloned-repo.png" alt-text="Repo on github.com":::
    
@@ -22,6 +22,6 @@ Let's see how you can use Visual Studio Code to start a new project by cloning t
 
     :::image type="content" source="../media/open-timeline.png" alt-text="Repo on github.com":::
    
-7. Click on the commit made by the user *Burke Holland*. This will open a read-only diff view so you can see all the changes associated with the commit. The green highlight shows that Burke has added those lines to the original content
+7. Select the commit made by the user *Burke Holland*. This will open a read-only diff view so you can see all the changes associated with the commit. The green highlight shows that Burke has added those lines to the original content
 
 :::image type="content" source="../media/timeline-view.png" alt-text="Repo on github.com":::
