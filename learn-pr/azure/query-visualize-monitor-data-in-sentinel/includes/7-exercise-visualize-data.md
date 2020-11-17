@@ -18,12 +18,12 @@ In this exercise, you will explore logs and Azure Sentinel workbooks. You will p
 > [!Note]
 > When you open the **Logs** page for the first time, you may be redirected to the **Queries** window. Close the **Queries** window and return to the **New Query 1** section.
 
-4. In the **Tables** list <!--Marjan, in the previous step we called this the Tables pane. Please advise if this is pane or list.-->, expand the **Azure Resources** category,  move the mouse over the **Azure Activity** table, and then select **Preview data**.
-5. In the **AzureActivity** window, <!--Marjan, should there be a space between Azure and Activity?--> select **See in query editor**. This option enables you to preview the data and to check if the results will be as you expect before you actually run a query with it.
+4. In the **Tables** pane, from the list of tables, expand the **Azure Resources** category,  move the mouse over the **Azure Activity** table, and then select **Preview data**.
+5. In the **AzureActivity** window, select **See in query editor**. This option enables you to preview the data and to check if the results will be as you expect before you actually run a query with it.
 
 :::image type="content" source="../media/07-Tables-Pane.png" alt-text="Screenshot of the Tables pane." border="true":::
 
-6. In the **Query** section, you can observe the query structure. This query searches and presents the last 10 events from the Azure Activity log. The first row in the query, **AzureActivity** <!--Marjan, should there be a space between Azure and Activity?-->specifies the table used in the query. The second line contains a **where** statement, which filters the records from the last day. The third line contains another statement **where** to filter only the last 10 events.
+6. In the **Query** section, you can observe the query structure. This query searches and presents the last 10 events from the Azure Activity log. The first row in the query, **AzureActivity** specifies the table used in the query. The second line contains a **where** statement, which filters the records from the last day. The third line contains another statement **where** to filter only the last 10 events.
 7. The query results section present the results of the query. You can expand any of the records to review the values in the table. Select the name of any column to sort the results by that column. Select the filter icon next to it to provide a filter condition. This is similar to adding a filter condition to the query itself except that this filter is cleared if you run the query is run again. If you select the **Columns** drop-down menu, you can filter the columns from the table that you want to be displayed. By selecting **Group columns**, you can group records by a particular column.
 
 :::image type="content" source="../media/07-Query-Result.png" alt-text="Screenshot of the Query results." border="true":::
@@ -58,7 +58,7 @@ In this exercise, you will explore logs and Azure Sentinel workbooks. You will p
 | --- | --- |
 | **Parameter name*** | Level |
 | **Display name** | Level |
-| **Parameter type** | From the drop-down menu, select **Drop down** | <!--Marjan, please confirm there is no hyphen in "drop down" in the UI-->
+| **Parameter type** | From the drop-down menu, select **Drop down** | 
 | **Required?** | Select this check box. |
 | **Allow multiple selections** | Select this check box. |
 | **Limit multiple selections** | Do not select this check box. |
