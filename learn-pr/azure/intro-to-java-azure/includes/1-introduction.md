@@ -1,4 +1,4 @@
-Java is the most used language not only among enterprises. For almost over two decades, it is in the top five of the popular languages according to Stackoverflow and GitHub. And during the last five years Java was solid in the top three. No wonders. The JVM offers a mature and agnostic way to run Java applications efficiently.
+Java is the one of the most used languages not only among enterprises, but for almost over two decades, it is in the top five of the popular languages according to Stackoverflow and GitHub. And during the last five years Java was solid in the top three. No wonders. The JVM offers a mature and agnostic way to run Java applications efficiently.
 
 Azure offers various ways to deploy your Java applications. No matter what types of Java applications you're running. Azure has a solution for all the different kinds from Batch processes, over Nano- and Microservices all the way up to JavaEE, and JakartaEE applications.
 
