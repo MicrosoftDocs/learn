@@ -4,8 +4,6 @@ You can configure Azure Sentinel playbooks at Contoso to respond to security thr
 
 You can automate responses to threats on the **Playbooks** page. On this page, you can see all the playbooks that are created from Azure Logic Apps. The column **Trigger kind** presents what type of connectors are used in the logic app.
 
-:::image type="content" source="../media/04-PLaybooks-page.PNG" alt-text="Screenshot of the playbook page." border="true":::
-
 You can use the header bar, as displayed in the following diagram, to create new playbooks or to enable or disable existing playbooks.
 
 :::image type="content" source="../media/04-PLaybooks-header.PNG" alt-text="Screenshot of the header bar." border="true":::
@@ -27,8 +25,6 @@ Contoso wants to use automated actions to prevent suspicious users from accessin
 - **Log Analytics**. If you enable log analytics, you can get information about playbook&#39;s runtime events.
 
 After providing these inputs, select **Review + Create** button, and then select **Create**.
-
-:::image type="content" source="../media/04-Logic-App.PNG" alt-text="Screenshot of the logic app." border="true":::
 
 ## Logic Apps Designer
 
@@ -72,11 +68,7 @@ After you provide all the steps in the Logic Apps Designer, save the logic app t
 
 The playbooks you create appear on the **Playbooks** page, and you can further edit them. From the **Playbooks** page, you can select an existing playbook and that will open the Logic Apps page for that playbook in Azure Sentinel.
 
-You can run several actions on the playbook from the Logic Apps header bar as the following screenshot displays.
-
-:::image type="content" source="../media/04-Header.PNG" alt-text="Screenshot of the header bar." border="true":::
-
-<!--Marjan, this image is not displayng. Can you please check if the file name is correct?-->
+You can run several actions on the playbook from the Logic Apps header bar:
 
 - **Run Trigger**. Use to run the logic app to test the playbook.
 - **Refresh**. Use to refresh the status of the logic app to retrieve the status of the activity.
