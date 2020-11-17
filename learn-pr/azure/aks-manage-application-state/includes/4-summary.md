@@ -43,4 +43,4 @@ To learn more about Azure Kubernetes Service, see the following articles:
 - [AKS documentation on Microsoft Docs](https://docs.microsoft.com/azure/aks/)
 - [Azure Kubernetes Service (AKS) Production Baseline](/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)
 - [Deploy an AKS cluster](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-deploy-cluster)
-- [Storage concepts with AKS](https://docs.microsoft.com/en-us/azure/aks/concepts-storage)
+- [Storage concepts with AKS](https://docs.microsoft.com/azure/aks/concepts-storage)
