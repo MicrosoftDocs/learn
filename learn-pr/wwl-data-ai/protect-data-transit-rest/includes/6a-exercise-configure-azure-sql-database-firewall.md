@@ -104,7 +104,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 1. Attempt to connect with the credentials you created in step 4.
 
     - Login: **containeddemo**
-    - Password: ** P@ssw0rd! **
+    - Password: **P@ssw0rd!**
 
     :::image type="content" source="../media/dp-3300-module-33-lab-15.png" alt-text="Connect to Server Error.":::
 
@@ -138,4 +138,4 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 The results show the logged in user, containeddemo.
 
-To finish this exercise select End below.
+To finish this exercise select **End** below.
