@@ -4,7 +4,7 @@ Some incidents at Contoso might require further investigation before you run a p
 
 You can configure playbooks to run on demand based on incident details, to trigger specific steps as part of the investigation, or to conduct some remediation action.
 
-Consider the scenario where suspicious users are prevented from accessing corporate resources. As the Contoso security administrator, you find one false positive incident. Some users at Contoso were accessing resources over a VPN connection from remote computers while being connected to the office computers at the same time. Microsoft Cloud Security received signals and based on the vulnerability that detects potential threat from atypical travel locations, it tagged the users as medium risk.
+Consider the scenario where suspicious users are prevented from accessing corporate resources. As the security administrator at Contoso, you find one false positive incident. Some users at Contoso were accessing resources over a virtual private network connection from remote computers while being connected to the office computers at the same time. Microsoft Cloud Security received signals and based on the vulnerability that detects potential threat from atypical travel locations, it tagged the users as medium risk.
 
 You can use a playbook that can automatically dismiss this risky user property in Azure AD.
 
@@ -21,7 +21,7 @@ The name of each API connection is appended with **azuresentinel** prefix. You c
 
 ## Attach a playbook on existing incident
 
-After your playbook is ready, you can open the **Incident** page in Azure Sentinel, and then select the existing incident. In the details pane on the right, you can select **View full details** to explore the properties of the incident. From the **Alerts blade,** you can select **View playbooks**, and then you can run one of the existing playbooks.
+After your playbook is ready, you can open the **Incident** page in Azure Sentinel, and then select the existing incident. In the details pane, you can select **View full details** to explore the properties of the incident. From the **Alerts blade,** you can select **View playbooks**, and then you can run one of the existing playbooks.
 The following screenshot depicts the suspicious user activity example for which you can attach the **Dismiss-AADRiskyUser** playbook.
 
 :::image type="content" source="../media/05-Investigate.PNG" alt-text="Screenshot of the Incident page." border="true":::

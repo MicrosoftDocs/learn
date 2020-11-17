@@ -1,17 +1,21 @@
-In addition to assessing and addressing problems with their security configuration, Contoso must also monitor for new problems and threats, and then respond appropriately. Azure Sentinel is both a Security Information and Event Management (SIEM) and Security Orchestration, Automation and Response (SOAR) solution that&#39;s designed for hybrid environments.
+In addition to assessing and addressing problems with their security configuration, Contoso must also monitor for new problems and threats, and then respond appropriately. 
+
+## Azure Sentinel as a SIEM and SOAR solution
+
+Azure Sentinel is both a Security Information and Event Management (SIEM) and Security Orchestration, Automation and Response (SOAR) solution that&#39;s designed for hybrid environments.
 
 > [!Note]
 > SIEM solutions provide storage and analysis of logs, events, and alerts that other systems generate. You can configure these solutions to raise their own alerts. SOAR solutions support the remediation of vulnerabilities and the overall automation of security processes.
 
 Azure Sentinel uses built-in and custom detections to alert you to potential security threats such as attempts to access Contoso&#39;s resources from outside its infrastructure or when data from Contoso appears to be sent to a known malicious IP address. You can also create incidents based on these alerts.
 
-## Azure Sentinel playbooks 
+## Azure Sentinel playbooks
 
 You can create security playbooks in Azure Sentinel to respond to alerts. *Security playbooks* are collections of procedures based on Azure Logic Apps that run in response to an alert. You can run these security playbooks manually in response to your investigation of an incident or you can configure an alert to run a playbook automatically.
 
 With the ability to respond to incidents automatically, you can automate some of your security operations and make your Service Organization Controls (SOC) more productive.
 
-For example, to address Contoso's concerns, you can develop a workflow with defined steps that can block a suspicious user name from accessing resources from a non-secure IP address. Alternatively, you can configure the playbook to perform a simple operation such as notifying the SecOps team about a high-level security alert. 
+For example, to address Contoso's concerns, you can develop a workflow with defined steps that can block a suspicious user name from accessing resources from a non-secure IP address. Alternatively, you can configure the playbook to perform a simple operation such as notifying the SecOps team about a high-level security alert.
 
 ## Azure Logic Apps
 
@@ -60,7 +64,6 @@ The following table lists all the current actions for the Azure Sentinel connect
 | Remove labels from incident | Removes the labels for the selected incident. |
 
 > [!Note]
-
 > Actions that have **(V2)** or a higher number provide a new version of the action and may differ from the old functionality of the action.
 
 Some actions require integration with actions from another connectors. For example, if Contoso wants to identify all suspicious accounts returned in the alert from the defined entities, you must combine the **Entities - Get Accounts** action with the **For Each** action. Similarly, to get all individual hosts in an incident that detect suspicious hosts, you must combine the **Entities - Get Accounts** action with the **For Each** action.

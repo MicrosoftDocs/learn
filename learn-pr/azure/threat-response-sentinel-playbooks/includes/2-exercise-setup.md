@@ -8,7 +8,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-azure-sentinel%2Fazuredeploy.json)
 
-2. You will be promted to sign in to your Azure subscription.
+2. You will be prompted to sign in to your Azure subscription.
 3. On the **Custom deployment** page, provide the following information:
 
 |||
@@ -31,7 +31,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 ## Task 2: Configure Azure Sentinel Connectors
 
 1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
-2. On the **Azure Sentinel** page, on the menu bar on the left, in the **Configuration** section, select **Data connectors**.
+2. On the **Azure Sentinel** page, on the menu bar, in the **Configuration** section, select **Data connectors**.
 3. In the **Data connectors** pane, search for and select **Azure Activity**. In the details pane, select **Open connector page**.
 4. In the **Azure Activity** pane, select the **Configure Azure Activity logs** link.
 5. Select your subscription, and then select **Connect**.
@@ -69,17 +69,17 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 6. In the **Query Scheduling** section, you can configure how often the query should run. Select query to run on every 5 min.
 7. Accept the default values for all other settings and then select **Next: Incident setting (preview)**.
-8. In the **Incident setting (preview)** tab, ensure that **Enabled** is selected for creation of incidents from alerts triggered by this analytics rule. And then select **Next: Automated response**.
-9.	In the **Automated response** tab you can select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
-10.	Click on the **Next:Review**.
-11.	In the **Review and Create** page, verify that validation passed and select **Create**.
+8. On the **Incident setting (preview)** tab, ensure that **Enabled** is selected for creation of incidents from alerts triggered by this analytics rule. And then select **Next: Automated response**.
+9.	On the **Automated response** tab, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
+10.	Select **Next:Review**.
+11.	On the **Review and Create** page, verify that the validation passed, and then select **Create**.
 
 ## Check the resources created
 
 1. In the Azure portal, search for **Resource groups**.
 1. Select **azure-sentinel-rg**.
 1. Sort the list of resources by **Type**.
-1. The resource group should contain the resources shown in this table.
+1. The resource group should contain the resources shown in the following table.
 
     | Name  | Type  | Description |
     |---|---|---|
@@ -88,4 +88,4 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | **simple-vm**| Virtual machine | Virtual machine used in the demonstration. |
     | **simple-vmNetworkInterface** | Network interface | Network interface for the VM. |
     | **st1*xxxxx*** | Storage account | Storage account used by the virtual machine. |
-    | **vnet1** | Virtual network | Virtual network for the VM. |
+    | **vnet1** | Virtual network | Virtual network for the virtual machine. |

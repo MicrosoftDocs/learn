@@ -10,21 +10,21 @@ You can use the header bar, as displayed in the following diagram, to create new
 
 The header bar provides the following options:
 
-- Use the **Add Playbook** button to create a new playbook.
-- Use the **Refresh** button to refresh the display, for example, after you create a new playbook.
-- Use the drop-down time field to filter the status of the running of the playbooks. 
-- The **Enable**, **Disable**, and **Delete** buttons are only available if you select one or more logic apps.
-- Use the **Logic Apps documentation** button to review links to official Microsoft documentation for more information on logic apps.
+- Use the **Add Playbook** option to create a new playbook.
+- Use the **Refresh** option to refresh the display, for example, after you create a new playbook.
+- Use the drop-down time field to filter the status of the running of the playbooks.
+- The **Enable**, **Disable**, and **Delete** option are only available if you select one or more logic apps.
+- Use the **Logic Apps documentation** option to review links to official Microsoft documentation for more information on logic apps.
 
 Contoso wants to use automated actions to prevent suspicious users from accessing their network. As their security administrator, you can create a playbook to implement this action. To create a new playbook, select **Add Playbook**. You will be directed to the page where you should create a new Logic App by providing inputs for the following settings:
 
-- **Subscription**. Select the subscription that contains the Azure Sentinel. 
+- **Subscription**. Select the subscription that contains the Azure Sentinel.
 - **Resource Group**. You can use an existing resource group or create a new one.
 - **Logic App name**. Provide a descriptive name for the logic app.
 - **Location**. Select the same location as where your Log Analytics workspace is located.
 - **Log Analytics**. If you enable log analytics, you can get information about playbook&#39;s runtime events.
 
-After providing these inputs, select **Review + Create** button, and then select **Create**.
+After providing these inputs, select the **Review + Create** option, and then select **Create**.
 
 ## Logic Apps Designer
 
@@ -53,7 +53,8 @@ Each step in the workflow design has different fields that you must fill. For ex
 
 :::image type="content" source="../media/04-Dynamic-Content.PNG" alt-text="Screenshot that displays dynamic content." border="true":::
 
-You can also add a control actions group that lets your logic app make decisions. The control actions group can include logical conditions, switch case conditions, or loops. 
+You can also add a control actions group that lets your logic app make decisions. The control actions group can include logical conditions, switch case conditions, or loops.
+
 A **condition** action is an **if** statement that lets your app perform different actions based on the data you're processing. It consists of a Boolean expression and two actions. At runtime, the execution engine evaluates the expression and chooses an action based on whether the expression is true or false.
 For example, Contoso receives a large volume of alerts, many of them with recurring patterns, which cannot be processed or investigated. Using real-time automation, the Contoso SecOps teams can significantly reduce their workload by fully automating the routine responses to recurring types of alerts.
 The following screenshot presents a similar situation, where based on the user input, the playbook can change the status of the alert. The control action intercepts the user input, and if the expression evaluates to be a true statement, the playbook changes the status of the alert. In case the control action evaluates the expression to be false, the playbook can run other activities, such as sending an email as depicted in the following screenshot.
