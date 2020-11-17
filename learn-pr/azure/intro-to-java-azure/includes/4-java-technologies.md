@@ -1,4 +1,4 @@
-In this unit, we distinguish between the different types of Java applications and matching them to a cloud solution.
+In this unit, we distinguish between the different types of Java frameworks, servers and platforms.
 
 ## Spring Framework
 
