@@ -104,8 +104,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 1. Attempt to connect with the credentials you created in step 4.
 
     - Login: **containeddemo**
-    - Password: **P\@ssw0rd\!**
-
+    - Password: <strong>P@ssw0rd!</strong>
 
     :::image type="content" source="../media/dp-3300-module-33-lab-15.png" alt-text="Connect to Server Error.":::
 
@@ -138,5 +137,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
     :::image type="content" source="../media/dp-3300-module-33-lab-20.png" alt-text="Screenshot showing the results of running the query.":::
 
 The results show the logged in user, containeddemo.
+
+In this exercis you've seen how to add a client IP address to enable SSMS to connect to a database in Azure. You did this in the Azure portal, and you created a firewall rule using T-SQL.
 
 To finish this exercise select **End** below.
