@@ -13,39 +13,38 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 |||
 | --- | --- |
-| **Subscription** | Select your Azure subscription |
-| **Resource Group*** | Select **Create new** and provide name for the resource group, for example **azure-sentinel-rg** .|
-| **Locations*** | From the drop-down menu select the location where you deployng the Azure Sentinel. |
-| **Workspace name***  | Provide unique name for the Azure Sentinel Workspace, for example ***yourname*-sentinel**. |
-| **Location** | Accept the default value **[resourceGroup().location]**. |
-| **Simplevm Name** | Accept the default value **simple-vm**.|
-| **Simplevm WIndows OS Version** | Accept the default value **2016-Datacenter**.|
+| **Subscription** | Select your Azure subscription. |
+| **Resource Group*** | Select **Create new** and provide a name for the resource group such as **azure-sentinel-rg**.|
+| **Locations*** | From the drop-down menu, select the location where you want to deploy the Azure Sentinel. |
+| **Workspace name***  | Provide a unique name for the Azure Sentinel workspace such as ***yourname*-sentinel**. |
+| **Location** | Accept the default value of **[resourceGroup().location]**. |
+| **Simplevm Name** | Accept the default value of **simple-vm**.|
+| **Simplevm WIndows OS Version** | Accept the default value of **2016-Datacenter**.|
 
 4. Select the **I agree to the terms and conditions stated above** check box, and then select **Purchase**.
 
-![Screenshot of the Custom Deployment page](../media/02-Custom-Deployment.PNG)
+:::image type="content" source="../media/02-Custom-Deployment.PNG" alt-text="Screenshot of the Custom Deployment page." border="true":::
 
 > [!Note]
 > Wait for the deployment to complete. The deployment should take less than 5 minutes.
 
 ## Task 2: Configure Azure Sentinel Connectors
 
-1. In the Azure portal, search for and select Azure Sentinel and select the previously created Sentinel workspace.
-2. In the **Azure Sentinel** page, on the left side in the menu bar, in the **Configuration** section, select **Data connectors.**
-3. In the **Data connectors** pane, search for and select **Azure Activity.** In the detailed pane on the right site click on **Open connector page.**
-4. In the **Azure Activity** pane, click on the link **Configure Azure Activity logs**.
-5. Click on your subscription and then click **Connect.**
-6. When you receive status **Connected** , you can close all open blades to return on **Azure Sentinel| Data connector** blade.
+1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
+2. On the **Azure Sentinel** page, on the menu bar on the left, in the **Configuration** section, select **Data connectors**.
+3. In the **Data connectors** pane, search for and select **Azure Activity**. In the details pane, select **Open connector page**.
+4. In the **Azure Activity** pane, select the **Configure Azure Activity logs** link.
+5. Select your subscription, and then select **Connect**.
+6. When you receive a status of **Connected**, close all open blades to return to the **Azure Sentinel | Data connector** blade.
 
-![Screenshot that present Azure Sentinel Connector](../media/02-Azure-Sentinel-Connector.png)
+:::image type="content" source="../media/02-Azure-Sentinel-Connector.png" alt-text="Screenshot that displays the Azure Sentinel connector." border="true":::
 
 > [!Note]
-
-> The connector for Azure Activity could take 15 minutes until shows some date in the Azure Sentinel. You can continue working with rest of the steps and with additional units from this module.
+> The connector for Azure Activity could take 15 minutes until Azure Sentinel displays a date. You can continue performing the rest of the steps and continue with the subsequent units in this module.
 
 ## Task 3: Create an analytics rule 
 
-1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Sentinel workspace.
+1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Azure Sentinel workspace.
 2. On the **Azure Sentinel** page, on the menu bar, in the **Configuration** section, select **Analytics**.
 3. On the **Azure Sentinel | Analytics** page, select **Create** and then select **Scheduled Query Rule**.
 4. On the **General** page, provide the inputs in the following table, and then select  **Next:Set rule logic**.
@@ -75,7 +74,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 10.	Click on the **Next:Review**.
 11.	In the **Review and Create** page, verify that validation passed and select **Create**.
 
-## Check resources created
+## Check the resources created
 
 1. In the Azure portal, search for **Resource groups**.
 1. Select **azure-sentinel-rg**.
@@ -84,9 +83,9 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
     | Name  | Type  | Description |
     |---|---|---|
-    | ***yourname*-sentinel** | Log Analytics Workspace | Log Analytics workspace used by Azure Sentinel |
-    | **SecurityInsights(*yourname*-sentinel** | Solution | Security insights for Azure Sentinel |
-    | **simple-vm**| Virtual machine | Virtual machine used in the demonstration |
-    | **simple-vmNetworkInterface** | Network interface | Network interface for the  VM. |
+    | ***yourname*-sentinel** | Log Analytics Workspace | Log Analytics workspace used by Azure Sentinel. |
+    | **SecurityInsights(*yourname*-sentinel** | Solution | Security insights for Azure Sentinel. |
+    | **simple-vm**| Virtual machine | Virtual machine used in the demonstration. |
+    | **simple-vmNetworkInterface** | Network interface | Network interface for the VM. |
     | **st1*xxxxx*** | Storage account | Storage account used by the virtual machine. |
     | **vnet1** | Virtual network | Virtual network for the VM. |
