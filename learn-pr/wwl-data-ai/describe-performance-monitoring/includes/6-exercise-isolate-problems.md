@@ -27,33 +27,50 @@ You have been hired as a database administrator to identify performance related 
     :::image type="content" source="../media/adventureworks.png" alt-text="Adventureworks":::
 
 1. Select **Set server firewall**.
+
     :::image type="content" source="../media/firewall.png" alt-text="Set server firewall":::
+
 1. Select **Add client IP** and select **Save**.
+
     :::image type="content" source="../media/clientip.png" alt-text="Add client IP":::
+
 1. Select **OK**.
-1. Select **AdventureWorks**.
-    :::image type="content" source="../media/firewalladventureworks.png" alt-text="AdventureWorks":::
-1. Select **Query editor**.
+
+1. In the navigation above **Firewall settings**, select the link that begins with **AdventureWorks**.
+
+    :::image type="content" source="../media/firewalladventureworks.png" alt-text="Screenshot showing selecting AdventureWorks.":::
+
+1. In the left navigation, select **Query editor (preview)**.
+
+    :::image type="content" source="../media/select-query-editor.png" alt-text="Screenshot showing selecting the query editor (preview) link.":::
+
+    > [!NOTE]
+    > Please note that this feature is in preview.
+
 1. In **Password**, type **Pa55w.rd** and select **OK**.
+
 1. In **Query 1**, type the following query and select **Run**:
 
-   ```tsql
-   DECLARE @Counter INT 
+    ```sql
+    DECLARE @Counter INT 
     SET @Counter=1
     WHILE ( @Counter <= 10000)
     BEGIN
         SELECT AVG(UnitPrice)
-	    FROM SalesLT.SalesOrderDetail
-	    GROUP BY ModifiedDate
+        FROM SalesLT.SalesOrderDetail
+        GROUP BY ModifiedDate
         SET @Counter  = @Counter  + 1
     END
-   ``` 
+    ```
 
     :::image type="content" source="../media/query1.png" alt-text="Query":::
 
+    > [!NOTE]
+    > If you'd like to copy and paste the code you can find the code in the D:\exercise_steps.txt file.
+
 1. Wait for the query to complete.
 1. Locate the **Metrics** icon on the **Monitoring** section of the blade for the AdventureWorks database.
-    
+
     :::image type="content" source="../media/metrics.png" alt-text="Metrics icon":::
 
 1. Change the **Metric** menu option to reflect **CPU Percentage**.
@@ -61,6 +78,8 @@ You have been hired as a database administrator to identify performance related 
     :::image type="content" source="../media/cpu-percentage.png" alt-text="CPU Percentage":::
 
 1. Select an **Aggregation** of **Avg**. This will display the average CPU Percentage for the given time frame.
+
+    :::image type="content" source="../media/average-cpu-graph.png" alt-text="CPU Percentage":::
 
 ## Identify high CPU consuming queries
 
@@ -71,11 +90,10 @@ You have been hired as a database administrator to identify performance related 
 
 1. Click on the query in the grid below the graph. If you do not see a query, wait for 2 minutes and select **Refresh**.
 
-
 Notice that you can find details of the performance metrics for each query.
 
-    :::image type="content" source="../media/intelligentperformance.png" alt-text="Intelligent Performance":::
- 
-    For this query, you can see that the total duration was over 20 seconds and that it ran 10,000 times.
+:::image type="content" source="../media/intelligentperformance.png" alt-text="Intelligent Performance":::
 
-To finish this exercise select End below.
+For this query, you can see that the total duration was over 20 seconds and that it ran 10,000 times.
+
+To finish this exercise select **End** below.
