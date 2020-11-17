@@ -2,7 +2,7 @@ You needed to support a whole operating platform by managing the application sta
 
 By creating a new instance of CosmosDB you managed to delegate the management of the database to Azure, this way you don't need to worry about availability since CosmosDB better supports multi-region and multi-master deployments and the application would be able to grow across many regions in the world without any added complexity.
 
-Along with that, you were able to understand and better secure the managed application state using secrets to keep the connection string safe and still be able to deploy your application without any problems. Now your cluster have a better handling of application states and is also scalable to the point where you can handle multiple users without needing to configure the database.
+Along with that, you were able to understand and better secure the managed application state using secrets to keep the connection string safe and still be able to deploy your application without any problems. Now your cluster has a better handling of application states and is also scalable to the point where you can handle multiple users without needing to configure the database.
 
 ## Clean up resources
 
@@ -43,4 +43,4 @@ To learn more about Azure Kubernetes Service, see the following articles:
 - [AKS documentation on Microsoft Docs](https://docs.microsoft.com/azure/aks/)
 - [Azure Kubernetes Service (AKS) Production Baseline](/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)
 - [Deploy an AKS cluster](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-deploy-cluster)
-- [Storage concepts with AKS](https://docs.microsoft.com/en-us/azure/aks/concepts-storage)
+- [Storage concepts with AKS](https://docs.microsoft.com/azure/aks/concepts-storage)
