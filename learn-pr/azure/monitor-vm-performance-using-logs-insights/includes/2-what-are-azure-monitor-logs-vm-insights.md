@@ -1,22 +1,24 @@
-Azure Monitor Logs collect and organize log data generated from Azure resources. Log data is stored in a Log Analytics workspace. Data living in the workspace can be queried for trend analysis, reporting, and alerting. Some examples of logs captured include Windows event logs, Heartbeat logs, Perf logs, and syslogs.
+Azure Monitor Logs collects and organizes log data generated from Azure resources. Log data is stored in a Log Analytics workspace. Data living in the workspace can be queried for trend analysis, reporting, and alerting. Some examples of data captured include Windows event logs, Heartbeat logs, performance data, and syslogs.
 
-Azure Monitor Logs are based upon Azure Data Explorer. A Log Analytics workspace is the equivalent of a database inside the Azure Data Explorer service. For the most part, log data table structure is the same and both resources use the Kusto Query Language (KQL) to extract data.
-
-Virtual Machine Insights is a set of features, which allow you to monitor virtual machines in greater detail from within the Azure portal. The solution uses a table named InsightsMetrics. Administrators can query performance and usage for virtual machines in near real time using that table. The data generated allows you to display everything in a meaningful way. Virtual Machine Insights also allows administrators an ability to process log data without exposing the underlying queries.
+Azure Monitor for VMs is a feature of Azure Monitor that relies on Azure Monitor Logs. Think of Azure Monitor for VMs as a feature that provides a predefined, curated monitoring experience, with little configuration required. Azure Monitor for VMs uses a table named InsightsMetrics. Administrators can query performance and usage for virtual machines in near real time using that table. The data generated allows you to display everything in a meaningful way. Azure Monitor for VMs also allows administrators an ability to process log data without exposing the underlying queries.
 
 ## What is the relationship between all the Azure native monitoring tools?
 
-There are a few different resources and services that complete the native monitoring toolkit in Azure. Azure Monitor becomes the service at the top, which spans across all monitoring tools with everything else living underneath. The service collects and analyzes data generated from Azure resources. Azure Monitor can capture application monitoring data, guest OS monitoring data, Azure resource monitoring data, Azure subscription monitoring data, and Azure tenant monitoring data.
+There are a few different resources and services that complete the native monitoring toolkit in Azure. Azure Monitor becomes the service at the top, which spans across all monitoring tools with everything else lives underneath. The service collects and analyzes data generated from Azure resources. Azure Monitor captures monitoring data from the following sources:
 
-Data collected by Azure Monitor is composed of metrics (Azure Monitor Metrics) and logs (Azure Monitor Logs). Azure Monitor Metrics are lightweight numerical values stored in a time-series database that can be used for near real time (NRT) alerting. Some examples of metrics captured include IOPS percentages and CPU cycles. As we covered earlier, Azure Monitor Logs collects and organizes log data from Azure resources. The major difference between Azure Monitor Metrics and Azure Monitor Logs surrounds the structure of data generated. Azure Monitor Metrics can only store numeric data using a specific structure, while Azure Monitor Logs can store a variety of data types, each using their own structure. Azure Monitor Logs can also store Azure Monitor Metric data as well.
+-    Application
+-    Guest OS
+-    Azure resources
+-    Azure subscriptions
+-    Azure tenant
 
-The following image shows how applications, resources, workloads, tenant data, and custom sources funnel into Azure Monitor (either metrics or logs). Once the data lives in metrics or logs, there are a number of different ways to visualize, analyze, respond, integrate, and view overall resource health.
+Data collected by Azure Monitor is composed of metrics (Azure Monitor Metrics) and logs (Azure Monitor Logs). Azure Monitor Metrics are lightweight numerical values stored in a time-series database that can be used for near real time (NRT) alerting. Some examples of metrics captured include IOPS percentages and CPU cycles. As we covered earlier, Azure Monitor Logs collects and organizes log data from Azure resources. The major difference between Azure Monitor Metrics and Azure Monitor Logs is the structure of data generated. Azure Monitor Metrics only store numeric data using a specific structure. Azure Monitor Logs can store Azure Monitor Metric data and a variety of other data types, each using their own structure.
+
+The following image shows how applications, resources, workloads, tenant data, and custom sources funnel into Azure Monitor (to either metrics or logs). When the data is in metrics or logs, there are a number of different ways to visualize, analyze, respond, integrate, and view overall resource health.
 
 :::image type="icon" source="../media/2-azure-monitor-overview.png" border="false" alt-text="Diagram that shows Azure resources generating data into metrics and logs, along with the Azure Monitor tooling you can use to consume data.":::
 
-## But wait, there's **MORE** logging
-
-In addition to logs and metrics, Azure resources also emit Azure platform logs as well. Platform logs provide comprehensive diagnostic and auditing information for Azure resources and the underlying Azure platform. Platform logs are resource logs (formerly known as diagnostic logs), activity logs, and Azure Active Directory logs. All resources automatically generate platform logs and send data to Azure Monitor. Administrators need to configure certain platform logs to be forwarded to one or more destinations (like Log Analytics) in order to be retained.
+In addition to logs and metrics, Azure resources also emit Azure platform logs, which are collected by Azure Monitor. Platform logs provide comprehensive diagnostic and auditing information for Azure resources and the underlying Azure platform. Platform logs are resource logs (formerly known as diagnostic logs), activity logs, and Azure Active Directory logs. All resources automatically generate platform logs and send data to Azure Monitor. Administrators may need to configure certain platform logs to be forwarded to one or more destinations (like Log Analytics) in order to be kept.
 
 ## Plan a Log Analytics workspace deployment
 
@@ -29,25 +31,23 @@ A number of Azure features help Log Analytics workspace adoption within enterpri
 | Feature | Description | Notes
 | ---- | ---- | ---- |
 | Access mode | Involves how users access a Log Analytics workspace, plus defines data scope | Two options: 1) workspace-context - provides access to all logs in a workspace where the permission is assigned. Queries are scoped to all data in all tables. 2) resource-context - provides access to view logs for resources in all tables you have access to. Queries are scoped to only data associated with that resource.
-Access control mode | Defines how permissions work for any given Log Analytics workspace. | Require workspace permissions means a user would have access to all data in any table where permissions have been defined, which does not allow granular role-based access control (RBAC). Then there's the use resource or workspace permissions, which allows for granular RBAC, as users can only see log data for resources they are permitted to view. Permissions can be applied to an individual or to groups of users for the workspace or resource.
+Access control mode | Defines how permissions work for any given Log Analytics workspace. | **Require workspace permissions** means a user would have access to all data in any table where permissions have been defined, which does not allow granular role-based access control (RBAC). Then there's the **use resource or workspace permissions**, which allows for granular RBAC, as users can only see log data for resources they are permitted to view. Permissions can be applied to an individual or to groups of users for the workspace or resource.
 | Table level RBAC | Provides a mechanism to define more granular data control inside a Log Analytics workspace in conjunction with other permissions listed in the table. | This feature allows an administrator to define what specific data types are accessible to a set of users. Configuring table level RBAC requires Azure custom roles to either grant or deny access to specific tables. These roles are applied to Log Analytics workspaces, with either workspace-context or resource-context access modes configured.
 
-From a daily operations point of view, the best strategy is to limit the total number of workspaces required for daily operations. Reducing the number of workspaces will make administration and query experience easier and quicker. Multiple workspaces may still need to be a design consideration for certain companies. An example may be if you are employed by a global company and require data sovereignty.
+The best strategy is to limit the total number of workspaces required for daily operations. Reducing the number of workspaces will make administration and query experience easier and quicker. Multiple workspaces may still need to be a design consideration for certain companies. An example may be if you are employed by a global company and require data sovereignty.
 
 ## Azure collects compute monitoring data by using agents
 
 Compute resources in Azure require a number of agents to help collect monitoring data inside Log Analytics and Azure Monitor. Each agent allows customers to measure performance, responsiveness, and availability of guest operating systems and underlying workloads.
 
-The following table lists each agent.
+The following table lists each agent:
 
 | Agent | Description | Notes
 | ---- | ---- | ---- |
-| Log Analytics agent | Collects logs and performance data for virtual machines in Azure, other clouds, or on-premises. | Allows the onboarding of Azure Security Center and Azure Sentinel. The agent also works in conjunction with Azure Automation accounts to onboard solutions like Azure Update Management, Azure Automation State Configuration, along with Azure Automation Change Tracking and Inventory.
-| Azure diagnostics extension | Enables customers to receive additional data from guest operating systems and workloads living on compute resources. | This data can be sent to a third-party tool by using Azure Event Hubs, sent to Azure Storage for archival, sent to Azure Monitor Metrics, or collect boot diagnostics that help with investigation for virtual machine boot issues.
+| Log Analytics agent | Collects logs and performance data for virtual machines in Azure, other clouds, or on-premises. | Allows the onboarding of Azure Security Center and Azure Sentinel. The agent also works in conjunction with Azure Automation accounts to onboard Azure Update Management, Azure Automation State Configuration, along with Azure Automation Change Tracking and Inventory.
+| Azure diagnostics extension | Enables customers to receive additional data from guest operating systems and workloads living on compute resources. | Data primarily captured with this extension will be sent to Azure Monitor Metrics, which can be collected and analyzed inside a Log Analytics workspace. If necessary, this data could also be sent to a third-party tool by using Azure Event Hubs, sent to Azure Storage for archival, or you could collect boot diagnostics, which helps with investigations for virtual machine boot issues.
 | Dependency agent | Collects discovered data about certain processes running on virtual machines. | Maps all dependencies between virtual machines and any external process dependencies.
 
-As referenced earlier, Virtual Machine Insights also needs to be installed in order for a given Log Analytics workspace to be used with Azure Monitor virtual machine log data. Virtual Machine Insights is a new service that provides additional visibility and capabilities for data collection of virtual machines.
+As referenced earlier, Azure Monitor for VMs needs to be configured for the Log Analytics workspace. Azure Monitor for VMs is a newer service that provides additional visibility and capabilities for data collection of virtual machines.
 
-Lastly, there are a number of solutions an administrator can install or enable, which provides deeper analytics on any given Azure application or service. Each monitoring solution requires a Log Analytics workspace to store collected data. Some solutions also require an Automation Account as well, which contain resources like runbooks that help complete the solution.
-
-In the next unit, we'll show you how to deploy a Log Analytics workspace with the right access control. From there, we'll walk through deploying the Log Analytics extension and enabling Virtual Machine Insights.
+In the next unit, we'll show you how to deploy a Log Analytics workspace with the right access control. From there, we'll walk through enabling Azure Monitor for VMs, which also onboards the virtual machines to a Log Analytics workspace.

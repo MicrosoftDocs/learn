@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-vm-performance-using-logs-insights.exercise-set-up-log-analytics-workspace-vm-insights
-title: Exercise - Set up a Log Analytics workspace and Virtual Machine Insights
+title: Exercise - Set up a Log Analytics workspace and Azure Monitor for VMs
 metadata:
   description: ''
-  title: Exercise - Set up a Log Analytics workspace and Virtual Machine Insights
+  title: Exercise - Set up a Log Analytics workspace and Azure Monitor for VMs
   ms.author: shkuehn
   author: sbkuehn
   ms.prod: learning-azure
