@@ -42,7 +42,7 @@ VM extensions are lightweight software components that automate post-operating s
 | Log Analytics agent | Installs the Log Analytics agent on the target Arc enabled server and configures it for log forwarding to a Log Analytics workspace. |
 | Microsoft Dependency agent | Installs the Dependency agent on the target Arc enabled server to facilitate identifying internal and external dependencies of server workloads. |
 
-> !NOTE] 
+> [!NOTE] 
 > The equivalent VM extensions are available for Arc enabled servers running Linux.
 
 ### What is the role of Azure Policy in managing Arc enabled Azure Stack HCI VMs?
@@ -58,10 +58,7 @@ For example, Contoso could use Azure Policy to implement the following rules:
 - Identify Arc enabled servers running Windows that are not joined to a specific Active Directory Domain Services (AD DS) domain.
 - Identify Arc enabled servers running Windows or Linux without Log Analytics agent installed.
 - Identify Arc enabled servers running Linux that are not using SSH keys for authentication.
-
-:::image type="content" source="../media/3-assign-policy.png" alt-text="The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies." border="false":::
-
-:::image type="content" source="../media/3-review-policies.png" alt-text="The screenshot depicts the applied policies on ContosoVM1. Two policies are applied, and the VM is compliant with one but not the other." border="false":::
+<!--Marcin: I deleted the two links here. I hope this is correct? They were the same as in the next subtitle-->
 
 ### Assign policies to Azure Arc enabled servers
 
