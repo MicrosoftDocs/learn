@@ -76,6 +76,15 @@ In this exercise, you will explore the Azure Sentinel playbooks. You will perfor
 
 18. Once that you save the logic app, you can close the Logic Apps Designer.
 
+### Task 3: Invoke an incident and review the associated actions.
+
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **virtual machines** and press **Enter**.
+2. In the **Virtual machines** page, locate and select **simple-vm** virtual machine and then from the header bar select **Delete**.
+
+> [!Note]
+
+> This task create an incident, based on the analytics rule that has been created in the second unit. Incident creation can take up to 5 minutes. Wait before proceed on the next step. 
+
 ### Task 2: Assign the Playbook on existing incident.
 
 1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
