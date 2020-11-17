@@ -106,6 +106,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
     - Login: **containeddemo**
     - Password: **P@ssw0rd!**
 
+
     :::image type="content" source="../media/dp-3300-module-33-lab-15.png" alt-text="Connect to Server Error.":::
 
     This error occurred because the connection attempted to sign in to the master database and not AdventureWorks where the user was created.
