@@ -1,4 +1,4 @@
-Your customized container is coming along well for your agency. With the power of Remote - Containers, you've been able to add a preconfigured dev container. And through the exercises so far, you've customized your experience through the devcontainer.json file. But what if we want to add software beyond what's available in those images or preconfigured dev containers?
+Your customized container is coming along well for your agency. With the power of Remote - Containers, you've been able to add a preconfigured dev container. And through the exercises so far, you've customized your experience through the devcontainer.json file. But what if you want to add software beyond what's available in those images or preconfigured dev containers?
 
 ## Introduction to installing additional software
 
@@ -34,4 +34,4 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 - The `DEBIAN_FRONTEND` export avoids warnings when you go on to work with your container. When you're adding other software, you might instead use other flags or parameters, such as `-y`.
 - The `-y` part ensures that `apt-get` doesn't prompt you to confirm that you want to finish the installation. These prompts would cause the container build to fail because nobody would be there to select `Y` or `N`.
 
-In the next exercise, you'll modify the Dockerfile to install Node.js. You'll then verify that Node.js available in the running container.
+In the next exercise, you'll modify the Dockerfile to install Node.js. You'll then verify that Node.js is available in the running container.

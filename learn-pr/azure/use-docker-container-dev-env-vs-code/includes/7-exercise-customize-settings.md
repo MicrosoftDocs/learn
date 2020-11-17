@@ -4,7 +4,7 @@ In this exercise, you'll use the devcontainer.json file to smooth these edges an
 
 ## Reopen the project locally
 
-Before you make tweaks to the container configuration, you need to reopen the project locally.
+Before you change the container configuration, you need to reopen the project locally.
 
 1. Press <kbd>F1</kbd> to open the Command Palette.
 1. Type **locally** and select **Remote-Containers: Reopen Locally**.
@@ -66,7 +66,7 @@ The container will be rebuilt with the changes you've specified in the devcontai
 ## Examine syntax highlighting provided by the Jinja extension
 
 1. Open the template/index.html file.
-1. Scroll down to line 33 and notice that there's syntax highlighting on the `for` loop.
+1. Scroll down to line 33 and notice that syntax highlighting is on the `for` loop.
    :::image type="content" source="../media/for-loop.jpg" alt-text="Screenshot of a Jinja template, emphasizing a for loop with syntax highlighting.":::
 
 ## Run the app

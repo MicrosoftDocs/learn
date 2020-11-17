@@ -1,6 +1,6 @@
 As you've noticed during your time at the agency, it can be a major hassle for developers to get started with new projects. Each one requires developers to install and manage specific or complicated sets of dependencies and technology stacks. 
 
-Ideally, each project would be contained in its own preconfigured, containerized environment. Containerized development is made possible with Docker and Visual Studio Code through the Remote - Containers extension.
+Ideally, each project is contained in its own preconfigured, containerized environment. Docker and Visual Studio Code make containerized development possible through the Remote - Containers extension.
 
 ## What the extension is
 
@@ -8,7 +8,7 @@ The Remote - Containers extension for Visual Studio Code lets you use a Docker c
 
 ## How the extension works
 
-The Remote - Containers extension lets you grab a dev container with the specific technology stack or dependencies already set up for you, open a project, and find that your code just works. You don't need to download anything on your local machine. Remote - Containers works by connecting Visual Studio Code to a running container. Workspace files are mounted from the local file system or copied or cloned into the container.
+The Remote - Containers extension lets you grab a dev container with the specific technology stack or dependencies already set up for you, open a project, and find that your code just works. You don't need to download anything on your local machine. Remote - Containers works by connecting Visual Studio Code to a running container. Workspace files are mounted from the local file system, or they're copied or cloned into the container.
 
 Visual Studio Code extensions are installed and run inside the container. There, they have full access to the tools, platform, and file system. To you, the developer, the experience is the same as if you had opened the project normally in Visual Studio Code.
 
@@ -20,7 +20,7 @@ You can seamlessly switch your entire development environment just by connecting
 
 Visual Studio Code has an interface for selecting a preconfigured definition for a development container. This adds a .devcontainer folder to your project.
 
-The .devcontainer folder contains two files: a Dockerfile and a devcontainer.json file. These files allow you to define the container environment and control the configuration of your project within that container.
+The .devcontainer folder contains two files: a Dockerfile and a devcontainer.json file. You can use these files to define the container environment and control the configuration of your project within that container.
 
 ### Dockerfile
 

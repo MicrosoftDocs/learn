@@ -1,4 +1,4 @@
-The Dockerfile is the best tool for adding new software to your container. You might remember that you had the option to install Node.js while adding your container configuration files at the beginning of this process. You didn't select yes, but now you want to include Node.js as part of your dev container. 
+The Dockerfile is the best tool for adding new software to your container. You might remember that you had the option to install Node.js while adding your container configuration files at the beginning of this process. You didn't choose that option, but now you want to include Node.js as part of your dev container. 
 
 In this exercise, we'll look at how you can install a technology stack like Node in your container at any point.
 

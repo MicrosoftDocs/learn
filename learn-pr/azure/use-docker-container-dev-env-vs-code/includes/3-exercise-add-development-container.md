@@ -26,7 +26,7 @@ The project should now be open in Visual Studio Code.
 1. Type **remote containers**.
 1. Locate the **Remote - Containers** extension and select the **Install** button.
 
-The Remote - Containers extension will be installed, and you'll have access to the commands it adds to Visual Studio Code.
+The Remote - Containers extension will be installed, and you'll have access to the commands that it adds to Visual Studio Code.
 
 ## Add a dev container
 
@@ -41,7 +41,7 @@ The Remote - Containers extension will be installed, and you'll have access to t
    | Python version                              | 3 (default) |
    | Install Nodejs                              | Clear     |
 
-5. Selection **OK**.
+5. Select **OK**.
 
 A Remote Container configuration will be added to your project. Visual Studio Code will notify you that you can now open the project in a container. For now, dismiss this notification.
 
@@ -58,7 +58,7 @@ A Remote Container configuration will be added to your project. Visual Studio Co
 1. Type **reopen in container**.
 1. Select **Reopen in Container** from the list of available options.
 
-The container will begin building. The initial build might take a few minutes because a new image has to be pulled down and built on your machine. After the container has been built the first time, subsequent builds will be much faster.
+The container will begin building. The initial build might take a few minutes because a new image has to be pulled down and built on your machine. After the container has been built the first time, later builds will be much faster.
 
 > [!IMPORTANT]
 > If you're on Windows, you might see a Windows notification from Docker Desktop warning you that performance might be affected. You can safely ignore this warning for this tutorial.
@@ -97,6 +97,6 @@ pip3 install --user -r requirements.txt
 
     :::image type="content" source="../media/products-dashboard.jpg" alt-text="Screenshot of the Python Products Dashboard application.":::
 
-Great work! You've got a Python web application with Flask running on your machine, and you might not know what those things even are. That's OK! You don't have to. The container takes care of setting up the entire environment.
+Great work! You have a Python web application with Flask running on your machine, and you might not know what those things even are. That's OK! You don't have to. The container takes care of setting up the entire environment.
 
-You might have noticed in the last notification that Visual Studio Code said: "127.0.0.1:5000 on remote is now forwarded to 127.0.0.1:5000 locally." This is called *Port Forwarding*, and it's what allows you to access an application running inside the container. In the next section, you'll learn more about Port Forwarding and how you can use it to make anything in a container feel like it's running locally.
+You might have noticed in the last notification that Visual Studio Code said: "127.0.0.1:5000 on remote is now forwarded to 127.0.0.1:5000 locally." This is called *port forwarding*, and it's what allows you to access an application running inside the container. In the next section, you'll learn more about port forwarding and how you can use it to make anything in a container feel like it's running locally.

@@ -4,7 +4,7 @@ Port forwarding allows you to access a resource inside your container by forward
 
 1. Press <kbd>F1</kbd> to open the Command Palette.
 1. Type **remote explorer** and select **View: Show Remote Explorer**.
-1. Ensure that you have **Containers** selected from the top drop-down menu.
+1. Ensure that you have **Containers** selected from the drop-down menu.
 1. Observe that port 5000 is forwarded.
 
 :::image type="content" source="../media/remote-explorer-containers.png" alt-text="Screenshot of Remote Explorer with containers view in Visual Studio Code.":::
@@ -16,8 +16,8 @@ Port forwarding allows you to access a resource inside your container by forward
 
 ## Stop forwarding a port
 
-1. Stop forwarding port 5000 by right-clicking and then selecting **Stop Forwarding Port**, or by select **X** next to the globe.
-1. You'll notice that port 5000 is still being used by the container but no longer being forwarded.
+1. Stop forwarding port 5000 by right-clicking and then selecting **Stop Forwarding Port**, or by selecting **X** next to the globe.
+1. Notice that the container is still using port 5000, but the port is no longer being forwarded.
 1. Try going to http://127.0.0.1:5000/. The page won't load because the container's port 5000 is no longer being properly forwarded.
 
 :::image type="content" source="../media/port-5000-not-forwarded.png" alt-text="Screenshot that shows port 5000 not forwarded in the Forwarded Ports section of Remote Explorer in Visual Studio Code.":::
@@ -32,7 +32,7 @@ In case you no longer want to use localhost port 5000, let's forward to a new po
 
 ## Stop the web app
 
-1. Stop the your web app from running by using <kbd>Ctrl</kbd> + <kbd>c</kbd> in the integrated terminal.
+1. Stop your web app from running by using <kbd>Ctrl</kbd> + <kbd>c</kbd> in the integrated terminal.
 1. Select the globe icon next to **5000 -> 127.0.0.1:5000**.
 1. Notice that your app no longer loads.
 

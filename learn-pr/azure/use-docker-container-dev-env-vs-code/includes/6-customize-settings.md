@@ -1,10 +1,10 @@
 You've set up a dev container for one of your agency's projects. It will now "just work" for anyone who has Docker and the Remote - Containers extension. Almost. They'll still have to install dependences and be aware of the port forwarding. They might also need some Visual Studio Code extensions that they don't know about. 
 
-Fortunately, you can fully customize and automate all the project setup by using the *devcontainer.json* file.
+Fortunately, you can fully customize and automate all the project setup by using the devcontainer.json file.
 
 ## A closer look at devcontainer.json
 
-Let's look at the main options in the .devcontainer/devcontainer.json file from the Products Dashboard project. It's a bit long to look at all at once, so let's look at in sections.
+Let's look at the main options in the .devcontainer/devcontainer.json file from the Products Dashboard project. It's a bit long to look at all at once, so let's look at it in sections.
 
 ### Build configuration
 
@@ -26,7 +26,7 @@ The `build` section defines how the container will be created. You'll recognize 
 
 - The `context` section would allow you to specify which directory your project is in. By default, you don't need to touch this section because it already knows that your project is in the parent directory.
 
-- The `args` section specifies some options that you can set to tweak the environment without touching the Dockerfile. For instance, you can change the Python version by changing the `variant` option. You can also have Node.js installed in the container by setting the `INSTALL_NODE` option to `true`. These `args` options are passed to the `docker build` command when the container is built by the extension.
+- The `args` section specifies some options that you can set to tweak the environment without touching the Dockerfile. For instance, you can change the Python version by changing the `variant` option. You can also have Node.js installed in the container by setting the `INSTALL_NODE` option to `true`. These `args` options are passed to the `docker build` command when the extension builds the container.
 
 ### Settings
 
