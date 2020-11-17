@@ -20,6 +20,7 @@ In addition, the control plane delivers such benefits as:
 
 - Self-healing of pods.
 - Auoscaling of pods and, in virtualized scenarios, cluster nodes. 
+<!-- Replace "Auoscaling" with "Autoscaling".  -->
 - Automatic rolling updates and rollbacks of pod deployments. 
 - Auto-discovery of new pod deployments. 
 - Load balancing across pods running the same workloads.
@@ -38,6 +39,7 @@ However, it's important to understand that Kubernetes is an highly customizable 
 ## What is Azure Arc?
 
 Business technology landscape continuously evolves and becomes increasingly complex with multiple applications running on different hardware across on-premises datacenters, multiple public and private clouds, and the edge. Managing these disparate environments at scale, enhancing security across an entire organization so that it cannot be compromised, and enabling developer agility and innovation are critical for businesses to succeed and thrive. Microsoft provides tools and solutions that help customers like Contoso to innovate their hybrid environments in the secure manner and with a minimized management overhead. 
+<!-- In the very last sentence, replace "the" with "a" since there's not only one (absolute) way. Sentence should be "Microsoft provides tools and solutions that help customers like Contoso to innovate their hybrid environments in a secure manner and with a minimized management overhead."  -->
 
 Azure Arc is an example of such solution. It consists of a set of technologies that you can use to simplify administration of complex, distributed, hybrid environments. It provides a centralized, scalable, and consistent multi-cloud and on-premises governance and management platform. It facilitates adoption of automation, single-pane of glass monitoring and comprehensive security, and promotes the cloud-first strategy, regardless of where your resources are located. At the same time, Azure Arc still allows you to continue using traditional ITOps tools and practices, as you transition to the the DevOps model to fully benefit from cloud native architectural and operational patterns.
 
