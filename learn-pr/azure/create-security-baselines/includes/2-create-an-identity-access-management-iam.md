@@ -18,7 +18,7 @@ All non-Administrators should not have access due to the sensitive data and the 
 
     ![Screenshot of the Azure portal showing the Restrict access to Azure AD administration portal option](../media/2-restrict-access-ad-portal.png)
 
-### Enable Azure Multi-Factor Authentication (MFA) - Level 2
+### Enable Azure AD Multi-Factor Authentication (MFA) - Level 2
 
 Enable it for privileged and non-privileged users.
 
