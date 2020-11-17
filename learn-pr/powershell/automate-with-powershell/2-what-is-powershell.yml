@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.automate-with-powershell.2-what-is-powershell
-title: Discover PowerShell and what it can be used for.
+title: What is PowerShell?
 metadata:
-  title: Discover PowerShell and what it can be used for.
+  title: What is PowerShell?
   description: This unit introduces what PowerShell is and what you can use it for.
   author: softchris
   ms.author: chnoring

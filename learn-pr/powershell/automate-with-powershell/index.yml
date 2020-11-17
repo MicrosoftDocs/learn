@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.automate-with-powershell
 metadata:
-  title: Manage and automate your machine by using PowerShell commands 
-  description: This module teaches you what PowerShell is and what it's used for. It also teaches you how to use compiled commands, cmdlets. Additionally it teaches you to construct powerful pipelines using pipes and more than one cmdlets in a pipeline and how to filter and format.   
+  title: Introduction to PowerShell
+  description: An introduction to PowerShell, a cross-platform command-line shell and scripting language built for task automation and configuration management. You'll learn what PowerShell is, what it's used for, and get a taste for how to use it.
   ms.date: 11/06/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Manage and automate your machine by using PowerShell commands 
-summary: This module teaches you what PowerShell is and what it's used for. It also teaches you how to use compiled commands, cmdlets. Additionally it teaches you to construct powerful pipelines using pipes and more than one cmdlets in a pipeline and how to filter and format.
+title: Introduction to PowerShell
+summary: An introduction to PowerShell, a cross-platform command-line shell and scripting language built for task automation and configuration management. You'll learn what PowerShell is, what it's used for, and get a taste for how to use it.
 abstract: |
   After completing this module, you'll be able to:
   - Understand what PowerShell is and what you can use it for.
@@ -23,7 +23,10 @@ roles:
   - developer
 products:
   - vs
-prerequisites: None
+prerequisites: |
+  - Basic familiarity with interacting with a computer through a command-line shell like Command Prompt or Bash
+  - Visual Studio Code installed and ability to install Visual Studio Code extensions
+  - Ability to install software on your computer (if not using a Windows PC)
 units:
   - learn.automate-with-powershell.1-introduction
   - learn.automate-with-powershell.2-what-is-powershell

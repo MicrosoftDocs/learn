@@ -17,9 +17,26 @@ PowerShell also has features that it shares with traditional shells like:
 
 ## Installation
 
-There's different ways to install PowerShell depending on what OS you use. It's recommended you have a closer look for the specific installation instructions for your OS, [install PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7).
+In this module, you'll practice using PowerShell on your computer. PowerShell is available cross-platform, but if you're using a computer that's running Linux, MacOS, or an older version of Windows, you'll need to install it.
 
-Throughout this module, you will be using the PowerShell extension for Visual Studio Code to author your PowerShell scripts and to run your commands in. The advantages of using said extension is that it not only let's you run commands but also helps you with snippets, code completion, syntax highlighting and more. Here's the link to install the extension [install PowerShell Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
+Instructions for installing PowerShell are different for each OS. Before you move on, take a few minutes to install PowerShell or verify your PowerShell installation.
+
+### Windows
+
+If you're running Windows 8 or later, a version of PowerShell, called **Windows PowerShell**, should already be installed. There are slight differences between this version of PowerShell and the most up-to-date PowerShell release, but it will work fine for learning. 
+
+You can launch Windows PowerShell from the Start menu.
+
+<insert image if you want>
+
+### Other operating systems
+
+If your computer runs something other than Windows 8 or later, you'll need to install PowerShell. You can find the specific installation instructions for your OS, [on ther PowerShell documentation site](https://docs.microsoft.com/powershell/scripting/install/installing-powershell).
+
+
+### PowerShell extension for Visual Studio Code
+
+We recommend you use the [PowerShell extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell) to author your PowerShell scripts and to run your commands while completing this module. The advantages of using said extension is that it not only let's you run commands but also helps you with snippets, code completion, syntax highlighting and more. 
 
 ## Execution policy
 
