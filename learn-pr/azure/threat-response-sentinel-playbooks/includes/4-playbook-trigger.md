@@ -32,8 +32,6 @@ Azure Sentinel creates the Logic App, and then you are directed to the **Logic A
 
 The Logic App Designer provides a design canvas that you use to add a trigger and actions to your workflow. For example, you can configure the trigger to come from the Azure Sentinel Connector when a new security incident is created. The Logic App Designer page provides many predefined templates that you can use. However, to create a playbook, you should start with the **Blank Logic App** template to design the logic app from scratch.
 
-:::image type="content" source="../media/04-Logic-App-Designer.PNG" alt-text="Screenshot of Logic App Designer." border="true":::
-
 The automated activity in the playbook is initiated by the Azure Sentinel trigger. You can search for the Azure Sentinel trigger in the search box of the design canvas, and then select one of the following two available triggers:
 
 - When a response to an Azure Sentinel alert is triggered
