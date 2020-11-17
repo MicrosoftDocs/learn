@@ -2,11 +2,13 @@ To make it easier for you to start working on a GitHub project, you can authenti
 
 ## How can I authenticate with GitHub?
 
-You can click on the accounts icon at the bottom of the activity bar and sign in with your GitHub account. This will open a browser window where you will be granting permission to VS Code to access GitHub. This step is needed to connect VS Code to GitHub and does not store any sensitive information. Once you click "Continue", you will be redirected back to VS Code.  
+You can select the accounts icon at the bottom of the activity bar and sign in with your GitHub account. A browser window will open and you'll be asked to grant permission for VS Code to access GitHub. This step is needed to connect VS Code to GitHub and doesn't store any sensitive information. Once you select "Continue", you'll be redirected back to VS Code.  
 
 ## What is VS Code doing with this authorization?
 
-When you sign in to your GitHub account in VS Code, there are various extensions or parts of VS Code that can now access your GitHub account information and provide specific features or streamlined experiences. After you have signed in, you can choose which VS Code extensions can use your GitHub authentication. When you click on the account icon, click on your GitHub user name, and choose "Manage Trusted Extensions", you can see all the extensions that are using your GitHub account. "GitHub" refers to the built-in GitHub and source control features in VS Code. You can see the GitHub Pull Requests and Issues extension we installed earlier also has access and you can check or uncheck this later. You can always sign out of your GitHub account in VS Code through the gear menu as well. 
+When you sign in to your GitHub account in VS Code, there are various extensions or parts of VS Code that can now access your GitHub account information. After you've signed in, you can choose which VS Code extensions are allowed to use your GitHub authentication. 
+
+When you select the account icon, select your GitHub user name, and choose "Manage Trusted Extensions". You can see all the extensions that are using your GitHub account. "GitHub" refers to the built-in GitHub and source control features in VS Code. You'll also see the GitHub Pull Requests and Issues extension we installed earlier also has access. The access that the GitHub Issues and Pull Requests extension has can be revoked at any time. You can always sign out of your GitHub account in VS Code through the gear menu as well. 
 
 ![Trusted extensions](../media/3-trusted-extensions.png)
 

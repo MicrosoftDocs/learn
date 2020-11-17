@@ -1,4 +1,4 @@
-Now that you have authenticated to GitHub, you can publish a project from your local machine using the built-in GitHub integration in Visual Studio Code.
+Now that you've authenticated to GitHub, you can publish a project from your local machine using the built-in GitHub integration in Visual Studio Code.
 
 ## Create a new project
 
@@ -22,9 +22,9 @@ The README file is what is scene when people go to your GitHub repo.
 1. Select the "File" menu and select "Save".
 1. Save the file as "README.MD".
 
-### Create .env.develpment
+### Create .env.development
 
-Many programs use a .env file type to define program information that is confidential (such as connection strings) that should **not** be pushed to GitHub.
+Many programs use a `.env` file type to define program information that is confidential. Confidential information such as database connection strings should **not** be pushed to GitHub.
 
 1. Select the "File" menu and select "New File".
 1. Add the following text to the file.
@@ -38,18 +38,18 @@ Many programs use a .env file type to define program information that is confide
 
 ## Publish to GitHub
 
-1. Open the Source Control Management (SCM) View by clicking on the SCM icon in the activity bar.
+1. Open the Source Control Management (SCM) View by selecting the SCM icon in the activity bar.
 
-1. Click the "Publish to GitHub" button.
+1. Select the "Publish to GitHub" button.
 
    :::image type="content" source="../media/scm-publish.jpg" alt-text="The SCM publish view":::
 
 1. In the prompt, select "Publish to GitHub public repository".
-1. Uncheck the ".env.development" file as we do not want to publish that to GitHub.
+1. Uncheck the ".env.development" file as we don't want to publish that to GitHub.
 
    ![Selecting which files to publish](../media/files-to-publish.jpg)
 
-1. Click "OK"
+1. Select "OK"
 
    The project will now be published to GitHub.
 
