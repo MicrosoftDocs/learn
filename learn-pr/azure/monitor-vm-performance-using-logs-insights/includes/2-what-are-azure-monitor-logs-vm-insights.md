@@ -18,7 +18,7 @@ The following image shows how applications, resources, workloads, tenant data, a
 
 :::image type="icon" source="../media/2-azure-monitor-overview.png" border="false" alt-text="Diagram that shows Azure resources generating data into metrics and logs, along with the Azure Monitor tooling you can use to consume data.":::
 
-In addition to logs and metrics, Azure resources also emit Azure platform logs which are collected by Azure Monitor. Platform logs provide comprehensive diagnostic and auditing information for Azure resources and the underlying Azure platform. Platform logs are resource logs (formerly known as diagnostic logs), activity logs, and Azure Active Directory logs. All resources automatically generate platform logs and send data to Azure Monitor. Administrators may need to configure certain platform logs to be forwarded to one or more destinations (like Log Analytics) in order to be kept.
+In addition to logs and metrics, Azure resources also emit Azure platform logs, which are collected by Azure Monitor. Platform logs provide comprehensive diagnostic and auditing information for Azure resources and the underlying Azure platform. Platform logs are resource logs (formerly known as diagnostic logs), activity logs, and Azure Active Directory logs. All resources automatically generate platform logs and send data to Azure Monitor. Administrators may need to configure certain platform logs to be forwarded to one or more destinations (like Log Analytics) in order to be kept.
 
 ## Plan a Log Analytics workspace deployment
 
@@ -34,20 +34,20 @@ A number of Azure features help Log Analytics workspace adoption within enterpri
 Access control mode | Defines how permissions work for any given Log Analytics workspace. | **Require workspace permissions** means a user would have access to all data in any table where permissions have been defined, which does not allow granular role-based access control (RBAC). Then there's the **use resource or workspace permissions**, which allows for granular RBAC, as users can only see log data for resources they are permitted to view. Permissions can be applied to an individual or to groups of users for the workspace or resource.
 | Table level RBAC | Provides a mechanism to define more granular data control inside a Log Analytics workspace in conjunction with other permissions listed in the table. | This feature allows an administrator to define what specific data types are accessible to a set of users. Configuring table level RBAC requires Azure custom roles to either grant or deny access to specific tables. These roles are applied to Log Analytics workspaces, with either workspace-context or resource-context access modes configured.
 
-From a daily operations point of view, the best strategy is to limit the total number of workspaces required for daily operations. Reducing the number of workspaces will make administration and query experience easier and quicker. Multiple workspaces may still need to be a design consideration for certain companies. An example may be if you are employed by a global company and require data sovereignty.
+The best strategy is to limit the total number of workspaces required for daily operations. Reducing the number of workspaces will make administration and query experience easier and quicker. Multiple workspaces may still need to be a design consideration for certain companies. An example may be if you are employed by a global company and require data sovereignty.
 
 ## Azure collects compute monitoring data by using agents
 
 Compute resources in Azure require a number of agents to help collect monitoring data inside Log Analytics and Azure Monitor. Each agent allows customers to measure performance, responsiveness, and availability of guest operating systems and underlying workloads.
 
-The following table lists each agent.
+The following table lists each agent:
 
 | Agent | Description | Notes
 | ---- | ---- | ---- |
-| Log Analytics agent | Collects logs and performance data for virtual machines in Azure, other clouds, or on-premises. | Allows the onboarding of Azure Security Center and Azure Sentinel. The agent also works in conjunction with Azure Automation accounts to onboard solutions like Azure Update Management, Azure Automation State Configuration, along with Azure Automation Change Tracking and Inventory.
+| Log Analytics agent | Collects logs and performance data for virtual machines in Azure, other clouds, or on-premises. | Allows the onboarding of Azure Security Center and Azure Sentinel. The agent also works in conjunction with Azure Automation accounts to onboard Azure Update Management, Azure Automation State Configuration, along with Azure Automation Change Tracking and Inventory.
 | Azure diagnostics extension | Enables customers to receive additional data from guest operating systems and workloads living on compute resources. | Data primarily captured with this extension will be sent to Azure Monitor Metrics, which can be collected and analyzed inside a Log Analytics workspace. If necessary, this data could also be sent to a third-party tool by using Azure Event Hubs, sent to Azure Storage for archival, or you could collect boot diagnostics, which helps with investigations for virtual machine boot issues.
 | Dependency agent | Collects discovered data about certain processes running on virtual machines. | Maps all dependencies between virtual machines and any external process dependencies.
 
 As referenced earlier, Azure Monitor for VMs needs to be configured for the Log Analytics workspace. Azure Monitor for VMs is a newer service that provides additional visibility and capabilities for data collection of virtual machines.
 
-In the next unit, we'll show you how to deploy a Log Analytics workspace with the right access control. From there, we'll walk through deploying the Log Analytics extension and enabling Azure Monitor for VMs.
+In the next unit, we'll show you how to deploy a Log Analytics workspace with the right access control. From there, we'll walk through enabling Azure Monitor for VMs, which also onboards the virtual machines to a Log Analytics workspace.

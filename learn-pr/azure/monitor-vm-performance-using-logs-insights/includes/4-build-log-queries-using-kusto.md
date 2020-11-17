@@ -3,7 +3,7 @@ Azure Monitor Logs are based upon Azure Data Explorer. A Log Analytics workspace
 
 Log Analytics is the primary tool used for writing log queries and analyzing results. Even if a log query is used elsewhere in Azure Monitor, you'll typically write and test the query using Log Analytics.
 
-In addition to writing and working with log queries in Log Analytics, you can use log queries in the following areas as well:
+In addition to writing and working with log queries in Log Analytics, you can use log queries in the following areas:
 
 | Feature | Description
 | ---- | ----
@@ -37,7 +37,7 @@ One additional thing to note is the Kusto Query Language is case-sensitive. Lang
 
 ## Basic query understanding
 
-One of the tables captured by Azure Monitor is the Heartbeat table. This table contains a number of useful columns. Heartbeat will capture data on everything from OS type, OS major version, resource ID, resource group, etc. To begin understanding all columns that make up this table, running a query with only Heartbeat will start to show what makes up this table.
+One of the tables captured by Azure Monitor is the Heartbeat table. This table contains a number of useful columns. Heartbeat will capture data on everything from OS type, OS major version, resource ID, resource group, etc. To understand all columns that make up this table, run a query with only Heartbeat will start to show what makes up this table.
 
 :::image type="content" source="../media/4-heartbeat-query.png" alt-text="Screen shot of running Heartbeat as the most basic query to start." lightbox="../media/4-heartbeat-query.png":::
 
@@ -49,4 +49,4 @@ The tabular operators can be applied to help the query return more relevant and 
 
 The results now show only two virtual machines are reporting to the workspace. Heartbeat acts like an inventory of all virtual machines reporting to a specific workspace. The distinct operator produces a table with the distinct combination columns requested within the input query.
 
-In the next unit, we'll show you how to take an existing query and produce results. From there, we'll build upon that query to gather the exact data you need from your environment in order to create an alert.
+In the next unit, we'll show you how to take an existing query and produce results. From there, we'll build upon that query to gather the additional relevant data and pin that to a dashboard.

@@ -87,7 +87,7 @@ In this unit, you'll:
 - Bytes Sent Rate
 - Bytes Received Rate.
 
-1. Experiment with different settings by moving from **Avg**, to **Min**, to **Max**, and so on (note, the virtual machines were only created a few minutes ago, so there might not be a lot of data generated).
+1. Experiment with different settings by moving from **Avg**, to **Min**, to **Max**, and so on (note, the virtual machines were only created a few minutes ago, so there might not be much data generated).
 
 1. Select **Log Events** on the right-hand side of the page.
 
