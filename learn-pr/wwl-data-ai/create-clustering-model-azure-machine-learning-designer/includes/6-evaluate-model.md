@@ -3,7 +3,7 @@ Evaluating a clustering model is made difficult by the fact that there are no pr
 ## Add an Evaluate Model module
 
 1. Open the **Train Penguin Clustering** pipeline you created in the previous unit if it's not already open.
-2. In the pane on the left, on the **Modules** tab, in the **Model Scoring & Evaluation** section, drag an **Evaluate Model** module to the canvas, under the **Assign Data to Clusters** module, and connect the output of the **Assign Data to Clusters** module to the **Scored dataset** (left) input of the **Evaluate Model** module.
+2. In the pane on the left, in the **Model Scoring & Evaluation** section, drag an **Evaluate Model** module to the canvas, under the **Assign Data to Clusters** module, and connect the output of the **Assign Data to Clusters** module to the **Scored dataset** (left) input of the **Evaluate Model** module.
 3. Ensure your pipeline looks like this:
 
 > [!div class="centered"]
@@ -15,7 +15,7 @@ Evaluating a clustering model is made difficult by the fact that there are no pr
     - **Average Distance to Other Center**: This indicates how close, on average, each point in the cluster is to the centroids of all other clusters.
     - **Average Distance to Cluster Center**: This indicates how close, on average, each point in the cluster is to the centroid of the cluster.
     - **Number of Points**: The number of points assigned to the cluster.
-    - **Maximal Distance to Cluster Center**: The sum of the distances between each point and the centroid of that point’s cluster. If this number is high, the cluster may be widely dispersed. This statistic in combination with the **Average Distance to Cluster Center** helps you determine the cluster’s *spread*.
+    - **Maximal Distance to Cluster Center**: The maximum of the distances between each point and the centroid of that point’s cluster. If this number is high, the cluster may be widely dispersed. This statistic in combination with the **Average Distance to Cluster Center** helps you determine the cluster’s *spread*.
 
 7. Close the **Evaluate Model result visualization** window.
 

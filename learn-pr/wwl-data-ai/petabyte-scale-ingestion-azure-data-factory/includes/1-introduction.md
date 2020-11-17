@@ -2,6 +2,8 @@ The first stage of data integration work is to ingest source data from any numbe
 
 Regardless of which method you choose, you must set up the appropriate infrastructure to support the data ingestion method through integration runtimes. In addition, you must also make sure that the data ingestion is secure in each data store, and whilst in transit
 
+## Learning objectives
+
 In this module, you will:
 
 - Describe the data ingestion methods

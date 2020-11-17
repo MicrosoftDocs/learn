@@ -38,7 +38,7 @@ To get started with Azure machine Learning designer, first you must create a pip
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true) for your workspace, view the **Designer** page and create a new pipeline.
 2. In the **Settings** pane, change the default pipeline name (**Pipeline-Created-on-*date***) to **Train Penguin Clustering** (if the **Settings** pane is not visible, click the **&#9881;** icon next to the pipeline name at the top).
 3. Note that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, click **Select compute target** and select the compute cluster you created previously.
-4. On the left side of the designer, select the **Datasets** (&#8981;) tab, expand the **Datasets** section, and drag the **penguin-data** dataset you created in the previous exercise onto the canvas.
+4. In the pane on the left side of the designer, expand the **Datasets** section, and drag the **penguin-data** dataset you created in the previous exercise onto the canvas.
 5. Right-click (Ctrl+click on a Mac) the **penguin-data** dataset on the canvas, and on the **Visualize** menu, select **Dataset output**.
 6. Review the schema of the data, noting that you can see the distributions of the various columns as histograms. Then select the **CulmenLength** column. The dataset should look similar to this:
 
@@ -49,7 +49,7 @@ To get started with Azure machine Learning designer, first you must create a pip
 
     - The dataset includes the following columns:
         - **CulmenLength**: Length of the penguin's bill in millimeters.
-        - **CulmenDepth**: Length of the penguin's bill in millimeters.
+        - **CulmenDepth**: Depth of the penguin's bill in millimeters.
         - **FlipperLength**: Length of the penguin's flipper in millimeters.
         - **BodyMass**: Weight of the penguin in grams.
         - **Species**: Species indicator (0:"Amelie", 1:"Gentoo", 2:"Chinstrap")
@@ -62,7 +62,7 @@ To get started with Azure machine Learning designer, first you must create a pip
 
 To cluster the penguin observations, we're going to use only the measurements; so we'll discard the species column. We also need to remove rows where values are missing, and normalize the numeric measurement values so they're on a similar scale.
 
-1. In the pane on the left, view the **Modules** (&#8862;) tab and expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
+1. In the pane on the left, expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
 2. To cluster the penguin observations, we're going to use only the measurements - we'll ignore the species column. So, drag a **Select Columns in Dataset** module to the canvas, below the **penguin-data** module and connect the output at the bottom of the **penguin-data** module to the input at the top of the **Select Columns in Dataset** module, like this:
 
 > [!div class="centered"]

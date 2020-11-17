@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.azure.deploy-templates-command-line-github-actions
+metadata:
+  description: Learn how to deploy Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and GitHub Actions.
+  ms.date: 10/15/2020
+  author: pierreroman
+  ms.author: pierrer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Automate the deployment of ARM templates by using GitHub Actions
+summary: Learn how to deploy Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and GitHub Actions. Use linked templates to break down complex templates into templates that are more modular. 
+abstract: |
+  After completing this module, you'll be able to:
+
+  - Choose the best way to deploy ARM templates, based on your needs.
+  - Modularize your templates by using linked templates.
+  - Learn how to create GitHub Actions to deploy templates.
+prerequisites: |
+  - Ability to go to the Azure the portal
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+  - [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true)
+  - Either:
+    - The latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true)
+    - The latest version of [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azure-cli-latest&azure-portal=true)
+  - A [GitHub](https://github.com?azure-portal=true) account
+  - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
+iconUrl: /learn/achievements/deploy-templates-command-line-github-actions.svg
+ratingEnabled: true
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- vs-code
+units:
+- learn.azure.deploy-templates-command-line-github-actions.1-introduction
+- learn.azure.deploy-templates-command-line-github-actions.2-single-deployment
+- learn.azure.deploy-templates-command-line-github-actions.3-exercise-single-deployment
+- learn.azure.deploy-templates-command-line-github-actions.4-linked-templates
+- learn.azure.deploy-templates-command-line-github-actions.5-exercise-linked-templates.md
+- learn.azure.deploy-templates-command-line-github-actions.6-github-actions
+- learn.azure.deploy-templates-command-line-github-actions.7-exercise-github-actions
+- learn.azure.deploy-templates-command-line-github-actions.8-knowledge-check
+- learn.azure.deploy-templates-command-line-github-actions.9-summary
+badge:
+  uid: learn.azure.deploy-templates-command-line-github-actions.badge

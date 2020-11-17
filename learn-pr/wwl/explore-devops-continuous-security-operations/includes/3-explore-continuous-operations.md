@@ -2,10 +2,6 @@
 
 Continuous Operations is one of the eight capabilities in the DevOps taxonomy.
 
-![Diagram shows the eight DevOps capabilities. It lists example practices for Continuous Operations: Site Reliability Engineering (SRE), Telemetry/monitoring, Application performance monitoring, Auto failover & scaling & DR, Modern Service Management, Secure access/app/data, High availability/security/cost and performance advisory, Secure Dev/Ops ChatOps, Shift-right testing, Secrets management, Governance.](../media/5-3-capabilities.png)
-
-Each capability identifies example practices. They aren't exhaustive lists.
-
 ### Discover why Continuous Operations is necessary
 
 Complex systems do fail and can cause costly outages and interruptions. Let's look at some examples.
@@ -29,7 +25,7 @@ The costs of a breach often go well beyond the loss of sales and trust in a comp
 - Lawsuits and settlements
   - Target paid $18.5 million to 47 US states.
 - Regulatory fines and responses
-  - With the new data protection policies, the fine is 4% of annual revenue or €20 million, whichever is greater.
+  - With the new data protection policies effective in the European Union since 2018, the fine is 4% of annual revenue or €20 million, whichever is greater.
 - Brand recovery costs
   - Mining technology firm Codan saw revenue drop from $45 million to $9.2 million within a year.
 - Other liabilities

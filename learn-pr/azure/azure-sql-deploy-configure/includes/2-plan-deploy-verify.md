@@ -85,13 +85,13 @@ In Azure SQL Database, you can't set the server collation. It's set at the defau
 
 Other options are available. Examples are character widths and UTF-8 encoding. You can find more details about what you can and can't do with Azure SQL in the documentation. (Search for "collation and unicode support.")
 
-### Opt-in for Advanced Data Security
+### Opt-in for Azure Defender
 
-When you deploy Azure SQL Database in the portal, you're prompted about whether you want to enable Advanced Data Security in a free trial. Select **Start free trial**. After the free trial, it's billed according to the Azure Security Center Standard Tier pricing. 
+When you deploy Azure SQL Database in the portal, you're prompted about whether you want to enable Azure Defender in a free trial. Select **Start free trial**. After the free trial, it's billed according to the Azure Security Center Standard Tier pricing. 
 
-After you enable it, you get functionality related to data discovery and classification, identifying/mitigating potential database vulnerabilities, and threat detection. You'll learn more about these capabilities in the next security module of this learning path. 
+After you enable it, you get functionality related to identifying/mitigating potential database vulnerabilities and threat detection. You'll learn more about these capabilities in the next security module of this learning path. 
 
-In Azure SQL Managed Instance, you can enable Advanced Data Security on the instance after deployment.  
+In Azure SQL Managed Instance, you can enable Azure Defender on the instance after deployment.  
 
 ### Review of selections
 
@@ -149,16 +149,17 @@ SELECT @@VERSION
 SELECT * FROM sys.databases
 SELECT * FROM sys.objects
 SELECT * FROM sys.dm_os_schedulers
-SELECT * FROM sys.dm_os_sys_info --Not supported in Azure SQL Database
+SELECT * FROM sys.dm_os_sys_info
 SELECT * FROM sys.dm_os_process_memory --Not supported in Azure SQL Database
 SELECT * FROM sys.dm_exec_requests
 SELECT SERVERPROPERTY('EngineEdition')
 SELECT * FROM sys.dm_user_db_resource_governance -- Available only in Azure SQL Database and SQL Managed Instance
+SELECT * FROM sys.dm_instance_resource_governance -- Available only in Azure SQL Managed Instance
 SELECT * FROM sys.dm_os_job_object -- Available only in Azure SQL Database and SQL Managed Instance
 ```
 
-Two queries related to OS system information and OS process memory are not supported in Azure SQL Database, even though they might appear to work. These queries aren't supported because with Azure SQL Database, some things related to the OS are abstracted away from you so you can focus on the database.  
+One query related to the OS process memory is not supported in Azure SQL Database, even though it might appear to work. This query isn't supported because with Azure SQL Database, some things related to the OS are abstracted away from you so you can focus on the database.  
 
-The last two queries are available only in Azure SQL Database and Azure SQL Managed Instance. The first, `sys.dm_user_db_resource_governance`, will return the configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool. The second, `sys.dm_os_job_object`, will return a single row that describes the configuration of the job object that manages the SQL Server process, as well as resource consumption statistics.
+The last three queries are available only in Azure SQL Database and/or Azure SQL Managed Instance. The first, `sys.dm_user_db_resource_governance`, will return the configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool. You can get similar information for an Azure SQL Managed Instance with the second, `sys.dm_instance_resource_governance`. The third, `sys.dm_os_job_object`, will return a single row that describes the configuration of the job object that manages the SQL Server process, as well as resource consumption statistics.
 
 The next two exercises will go through all the details involved in deploying Azure SQL Database or Azure SQL Managed Instance. You'll use the sandbox environment to deploy Azure SQL Database. After deployment, you'll use various verification queries and pre-run SQL notebooks in Azure Data Studio to compare SQL Database, SQL Managed Instance, and SQL Server 2019.  

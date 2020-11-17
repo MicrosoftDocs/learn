@@ -21,7 +21,7 @@ It can take up to 15 minutes for the first successful backup to finish. We need 
 
     ```output
     ResourceGroupName        : <rgn>[sandbox resource group name]</rgn>
-    ServerName               : ERPServer-53903
+    ServerName               : erpserver-53903
     DatabaseName             : sql-erp-db
     Location                 : East US
     RestorePointType         : CONTINUOUS
@@ -74,7 +74,7 @@ The **Person** table was mistakenly deleted. Now, let's restore the database to 
     | Select source | Point-in-time |
     | Database name | sql-erp-db-restored |
     | Restore point | Select a time 10 minutes ago, before you dropped the **Person** table |
-    | Target server | ERPServer |
+    | Target server | erpserver-53903 |
     | Elastic pool | None |
     | Pricing tier | Default value |
     | | |

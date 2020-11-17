@@ -24,36 +24,36 @@ The self-hosted integration runtime is logically registered to the Azure Data Fa
 ## Create a self-hosted Integration Runtime within Azure Data Factory
 
 1. On the Let's get started page of Azure Data Factory UI, select the Author tab on the leftmost pane.
-
-    ![The home page author button](../media/home-page-author-button.png)
+    > [!div class="mx-imgBorder"]
+    > ![The home page author button](../media/home-page-author-button.png)
 
 1. Select Manage in the leftmost pane, and select Integration runtimes. Select +New.
-
-    ![Create an integration runtime](../media/create-integration-runtime.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Create an integration runtime](../media/create-integration-runtime.png)
 
 1. On the Integration runtime setup page, select Azure, Self-Hosted, and then select Continue.
-
-    ![Create a selfhosted IR](../media/self-hosted-ir.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Create a selfhosted IR](../media/self-hosted-integration-runtime.png)
 
 1. On the Integration runtime setup page, type in a name of MySelfHostedIR, and click Create 
-
-    ![Integration runtime setup](../media/integration-runtime-setup.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Integration runtime setup](../media/integration-runtime-setup.png)
 
 1. Copy and paste the authentication key. Select Download and install integration runtime.
-
-    ![Integration runtime setup](../media/integration-runtime-setup-keys.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Integration runtime setup](../media/integration-runtime-setup-keys.png)
 
 1. Download the self-hosted integration runtime on a local Windows machine. Run the installer.
 
 1. On the Register Integration Runtime (Self-hosted) page, paste the key you saved earlier, and select Register.
-
-    ![Register the integration runtime](../media/register-integration-runtime.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Register the integration runtime](../media/register-integration-runtime.png)
 
 1. On the New Integration Runtime (Self-hosted) Node page, select Finish.
 
 1. After the self-hosted integration runtime is registered successfully, you see the following window:
-
-    ![Successful registration](../media/successful-registration.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Successful registration](../media/successful-registration.png)
 
 ## Automated deployments
 

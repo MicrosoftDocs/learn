@@ -2,8 +2,8 @@
 uid: learn.advocates.azure-functions-and-signalr
 metadata:
   title: Enable automatic updates in a web application using Azure Functions and SignalR Service
-  description: Update a web app's notification mechanism from polling to push-based architecture with SignalR Service, Azure Cosmos DB and Azure Functions.
-  ms.date: 05/31/19
+  description: Update a web app's notification mechanism from polling to push-based architecture with SignalR Service, Azure Cosmos DB and Azure Functions. Use Vue.js and JavaScript to use SignalR using Visual Studio Code.
+  ms.date: 05/31/2019
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: interactive-tutorial

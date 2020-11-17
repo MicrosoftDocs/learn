@@ -63,198 +63,194 @@ It is possible to create a LUIS application through code.  You may want to creat
 
 1. Ensure that you have followed the instructions earlier in this unit to create a LUIS resource.
 1. Copy the key and endpoint from the LUIS resource.  It will be required during the app creation.
-1. Start by opening a browser tab or window and navigating to [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/).
 
-    > [!NOTE]
-    > At this time, Safari is not a supported browser for Visual Studio Codespaces.
+    The environment for this exercise will make use of Visual Studio Code as the editor. Depending on the programming language you choose, the setup will differ. Follow the steps outlined here to configure your local computer for completion of the exercises.
 
-    An Azure subscription is required to create an environment for Visual Studio Codespaces.
-1. Select the **Get started** button.
-1. Sign in using the Microsoft Account that is linked to your Azure subscription.
-1. The first time you use Visual Studio Codespaces, you need to create a new plan, which should be selected in the drop-down at the top of the page.
-1. Select **Create Codespace**.
-1. Select your Subscription in the **Select Billing** pane and choose a location for the service.
-1. Select **Create**.
-1. Once your plan is created, you can then create your first codespace.
+1. Install [Visual Studio Code](https://code.visualstudio.com/) for your operating system.
+
+### Python
+
+1. If you will be completing your coding with Python, ensure you have a [Python environment](https://www.python.org/downloads/) installed locally.
+1. Once you have Python installed, you will need to [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) for VS Code.
+
+### C#
+
+1. If you will be using C# as your code language, start by installing the latest [.NET Core](https://docs.microsoft.com/dotnet/core/install/windows?tabs=netcore31) package for your platform. You can choose Windows, Linux, or macOS from the drop-down on this page.
+1. Once you have .NET Core installed, you will need to add the C# Extension to VS Code. Select the **Extensions** option in the left nav pane, or press **CTRL+SHIFT+X** and enter C# in the search dialog.
+
+With your environment setup, you are now ready to begin the coding exercise.
 
 :::zone pivot="csharp"
 
-This exercise demonstrates how to create a LUIS application using a .NET Core console application and the C# programming language.
+This exercise demonstrates how to create a Language Understanding application using a .NET Core console application and the C# programming language.
 
-1. If the **Create Codespace** panel does not open automatically, select **Create Codespace**.
-1. Enter an environment name of your choosing, example **CreateLUISCS**.
-1. Leave the rest of the settings at their default and select **Create**.
-1. It will take a few minutes for the environment to be created.
-1. Once the codespace indicates that it is available, select the hamburger menu in the upper left corner and choose **Terminal, New Terminal**.
-1. Once the new terminal opens, verify your prompt is **codespace:~/workspace$**.
-1. Type in the command
-   
-   ```dotnetcli
-   dotnet new console -n create-luis-app
-   ```
+1. Using Windows Explorer, create a folder on your local drive to store the project files.  Name the folder **LU_Csharp**.
+1. Open Visual Studio Code.
+1. Open the folder you just created.
+1. You will create a .NET Core application so right-click the **LU_Csharp** folder and choose **Open in Terminal**
+1. Type in the command ```dotnet new console``` and press Enter.
+1. A new C# dotnet core project structure is set up for you complete with a Program.cs file, a workspace.csproj file, and the obj folder. You may need to expand the csharp folder to see the new files.
+1. Select the Program.cs file and inspect its contents. You will modify and add code to this file for the exercise.
 
-1. Codespaces will create a skeleton .NET Core application for you using the name you provided.
-1. We will do our work inside of the Program.cs class so select the **Program.cs** file in the file panel to open it in the editor.
-1. To get a larger space in which to work, close the **Welcome** and **Creation Log** tabs.
-1. You may be prompted to install the C# extension.  Select **Install** when prompted, then select **Reload Required** to apply the extension to the environment.
-1. The next prompt asks you to install required assets.  Select **Yes** to install these assets.
+    >[!NOTE]
+    >If you are prompted to install the C# Extension, select Install. Then select the reload option.
+    >After the reload, you may also be prompted to install extensions, choose to install them
+
+1. You may get another prompt asking you to install required assets.  Select **Yes** to install these assets.
 1. You will also need to install the **LUIS Authoring SDK**.  
-1. You now need to ensure that you are in the proper project folder so right-click the **create-luis-app** folder in the **Folder** pane of Visual Studio Codespaces and select **Open in Terminal**.
-1. Once the new terminal window is open, enter this command in the terminal window.
+1. Enter this command in the terminal window.
 
-   ```dotnetcli
-   dotnet add package Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring --version 3.0.0
-   ```
+    ```dotnetcli
+    dotnet add package Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring --version 3.0.0
+    ```
 
 1. You can now start to enter some code for the application.
 1. You will require several libraries for the Text Analytics functionality so paste these **using** statements into your **Program.cs** file.
 
-   ```csharp
-   using Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring;
-   using Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models;
-   
-   using System;
-   using System.Collections.Generic;
-   using System.Linq;
-   using System.Security;
-   using System.Threading.Tasks;
-   ```
+    ```csharp
+    using Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring;
+    using Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models;
+
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Security;
+    using System.Threading.Tasks;
+    ```
 
 1. The next step is to create the variables to hold the key and endpoint for client authorization.  Paste the following code inside the **Program.cs** class file, before the **Main()** method.
 
-   ```csharp
-   private static readonly string authoring_key = "YOUR_LUIS_KEY";
-   private static readonly string authoring_endpoint = "YOUR_LUIS_ENDPOINT";
-   ```
+    ```csharp
+    private static readonly string authoring_key = "YOUR_LUIS_KEY";
+    private static readonly string authoring_endpoint = "YOUR_LUIS_ENDPOINT";
+    ```
 
 1. Paste your key and endpoint into the placeholders in the variables.
 1. Create an ApiKeyServiceClientCredentials object with your key, and use it with your endpoint to create an LUISAuthoringClient object. Paste this code into **Main()** and replace the existing line of code there.
 
-   ```csharp
-   // Generate the credentials and create the client.
-   var credentials = new Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.ApiKeyServiceClientCredentials(authoring_key);
-   var client = new LUISAuthoringClient(credentials, new System.Net.Http.DelegatingHandler[] { })
-   {
-       Endpoint = authoring_endpoint
-   };
-   ```
+    ```csharp
+    // Generate the credentials and create the client.
+    var credentials = new Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.ApiKeyServiceClientCredentials(authoring_key);
+    var client = new LUISAuthoringClient(credentials, new System.Net.Http.DelegatingHandler[] { })
+    {
+        Endpoint = authoring_endpoint
+    };
+    ```
 
 1. You will also create a C# struct to hold the application information, **ID** and **Version**.  Place this code inside the namespace and before the **Program.cs** class.
 
-   ```csharp
-       // <ApplicationInfo>
-       struct ApplicationInfo
-       {
-           public Guid ID;
-           public string Version;
-       }
-       // </ApplicationInfo>
-   ```
+    ```csharp
+        // <ApplicationInfo>
+        struct ApplicationInfo
+        {
+            public Guid ID;
+            public string Version;
+        }
+        // </ApplicationInfo>
+    ```
 
 1. Create a new method to perform the task of creating the application.
 
-   ```csharp
-           // Return the application ID and version.
-           async static Task<ApplicationInfo> CreateApplication(LUISAuthoringClient client)
-           {
-               string app_name = String.Format("PictureBotLUIS");
-               string app_description = "LUIS app built with LUIS .NET SDK.";
-               string app_version = "0.1";
-               string app_culture = "en-us";
-   
-               var app_info = new ApplicationCreateObject()
-               {
-                   Name = app_name,
-                   InitialVersionId = app_version,
-                   Description = app_description,
-                   Culture = app_culture
-               };
-               var app_id = await client.Apps.AddAsync(app_info);
-               Console.WriteLine("Created new LUIS application {0}\n with ID {1}.", app_info.Name, app_id);
-               return new ApplicationInfo() { ID = app_id, Version = app_version };
-           }
-   ```
+    ```csharp
+        // Return the application ID and version.
+        async static Task<ApplicationInfo> CreateApplication(LUISAuthoringClient client)
+        {
+            string app_name = String.Format("PictureBotLUIS");
+            string app_description = "LUIS app built with LUIS .NET SDK.";
+            string app_version = "0.1";
+            string app_culture = "en-us";
+
+            var app_info = new ApplicationCreateObject()
+            {
+                Name = app_name,
+                InitialVersionId = app_version,
+                Description = app_description,
+                Culture = app_culture
+            };
+            var app_id = await client.Apps.AddAsync(app_info);
+            Console.WriteLine("Created new LUIS application {0}\n with ID {1}.", app_info.Name, app_id);
+            return new ApplicationInfo() { ID = app_id, Version = app_version };
+        }
+    ```
 
 1. Call the **CreateApplication()** method from Main with the following code.
 
-   ```csharp
-   ApplicationInfo appInfo = await CreateApplication(client);
-   ```
+    ```csharp
+    ApplicationInfo appInfo = await CreateApplication(client);
+    ```
 
 1. You will also need to modify the signature of Main() due to the asynchronous operation.
 
-   ```csharp
-   async static Task Main(string[] args)
-   ```
+    ```csharp
+    async static Task Main(string[] args)
+    ```
 
 1. Your completed code should look like the following:
 
-   ```csharp
-   using Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring;
-   using Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models;
-   
-   using System;
-   using System.Collections.Generic;
-   using System.Linq;
-   using System.Security;
-   using System.Threading.Tasks;
-   
-   namespace create_luis_app
-   {
+    ```csharp
+    using Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring;
+    using Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.Models;
 
-       // <ApplicationInfo>
-       struct ApplicationInfo
-       {
-           public Guid ID;
-           public string Version;
-       }
-       // </ApplicationInfo>
-   
-       class Program
-       {
-           private static readonly string authoring_key = "YOUR_LUIS_KEY";
-           private static readonly string authoring_endpoint = "YOUR_LUIS_ENDPOINT";
-   
-           async static Task Main(string[] args)
-           {
-               // Generate the credentials and create the client.
-               var credentials = new Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.ApiKeyServiceClientCredentials(authoring_key);
-               var client = new LUISAuthoringClient(credentials, new System.Net.Http.DelegatingHandler[] { })
-               {
-                   Endpoint = authoring_endpoint
-               };
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Security;
+    using System.Threading.Tasks;
 
-               ApplicationInfo appInfo = await CreateApplication(client);
-           }
+    namespace create_luis_app
+    {
 
-           // Return the application ID and version.
-           async static Task<ApplicationInfo> CreateApplication(LUISAuthoringClient client)
-           {
-               string app_name = String.Format("PictureBotLUIS");
-               string app_description = "Picture Bot app built with LUIS .NET SDK.";
-               string app_version = "0.1";
-               string app_culture = "en-us";
-   
-               var app_info = new ApplicationCreateObject()
-               {
-                   Name = app_name,
-                   InitialVersionId = app_version,
-                   Description = app_description,
-                   Culture = app_culture
-               };
-               var app_id = await client.Apps.AddAsync(app_info);
-               Console.WriteLine("Created new LUIS application {0}\n with ID {1}.", app_info.Name, app_id);
-               return new ApplicationInfo() { ID = app_id, Version = app_version };
-           }
-       }
-   }
+        // <ApplicationInfo>
+        struct ApplicationInfo
+        {
+            public Guid ID;
+            public string Version;
+        }
+        // </ApplicationInfo>
 
-   ```
+        class Program
+        {
+            private static readonly string authoring_key = "YOUR_LUIS_KEY";
+            private static readonly string authoring_endpoint = "YOUR_LUIS_ENDPOINT";
 
-   >[!CAUTION]
-   >If you decide to run the code now, it will create a LUIS app for you however, the units in this module will build on this LUIS app code by adding intents, utterances, and entities.  If you run this code now, you will need to either delete the LUIS app before running the subsequent topic code, or comment out the call to **CreateApplication()**.
+            async static Task Main(string[] args)
+            {
+                // Generate the credentials and create the client.
+                var credentials = new Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring.ApiKeyServiceClientCredentials(authoring_key);
+                var client = new LUISAuthoringClient(credentials, new System.Net.Http.DelegatingHandler[] { })
+                {
+                    Endpoint = authoring_endpoint
+                };
 
-1. Do not delete this codespace as it you will continue to build your LUIS app in the remaining units of this module.
+                ApplicationInfo appInfo = await CreateApplication(client);
+            }
+
+            // Return the application ID and version.
+            async static Task<ApplicationInfo> CreateApplication(LUISAuthoringClient client)
+            {
+                string app_name = String.Format("PictureBotLUIS");
+                string app_description = "Picture Bot app built with LUIS .NET SDK.";
+                string app_version = "0.1";
+                string app_culture = "en-us";
+
+                var app_info = new ApplicationCreateObject()
+                {
+                    Name = app_name,
+                    InitialVersionId = app_version,
+                    Description = app_description,
+                    Culture = app_culture
+                };
+                var app_id = await client.Apps.AddAsync(app_info);
+                Console.WriteLine("Created new LUIS application {0}\n with ID {1}.", app_info.Name, app_id);
+                return new ApplicationInfo() { ID = app_id, Version = app_version };
+            }
+        }
+    }
+
+    ```
+
+    >[!CAUTION]
+    >If you decide to run the code now, it will create a LUIS app for you however, the units in this module will build on this LUIS app code by adding intents, utterances, and entities.  If you run this code now, you will need to either delete the LUIS app before running the subsequent topic code, or comment out the call to **CreateApplication()**.
 
 :::zone-end
 
@@ -262,73 +258,71 @@ This exercise demonstrates how to create a LUIS application using a .NET Core co
 
 This exercise demonstrates creating a LUIS application with Python code.
 
-1. If the **Create Codespace** panel does not open automatically, select **Create Codespace**.
-1. Enter an environment name of your choosing, example **CreateLUISPy**.
-1. Leave the rest of the settings at their default and select **Create**.
-1. It will take a few minutes for the environment to be created.
-1. Once the codespace indicates that it is available, select the **WORKSPACE[CODESPACES]** folder.
+1. Using Windows Explorer, create a folder on your local drive to store the project files.  Name the folder **LU_Python**.
+1. Open Visual Studio Code.
+1. Open the folder you just created.
 1. Select the **New File** button and create a Python file called **create_luis.py**.
-1. When you press Enter after creating the file, Codespaces will prompt you to install the extension for Python.  Choose **Yes**.
-1. Once the extension is installed, select **Reload Required**.
 1. Right-click the python file name and select **Open in Terminal**.
-1. Once the new terminal opens, verify your prompt is **codespace:~/workspace$**.
 1. You will need to install the LUIS package to gain access to the SDK.
 1. Type in the command, ``` sudo pip install azure-cognitiveservices-language-luis ```.
+
+    >[!Note]
+    >Your command may differ depending on your Python environment.  You may need to use just ```pip install``` or ```python3 install```
+
 1. Once the package is installed, you can begin to enter the code.
 1. Add the necessary import statements to the top of your Python file.
 
-   ```python
-   from azure.cognitiveservices.language.luis.authoring import LUISAuthoringClient
-   from msrest.authentication import CognitiveServicesCredentials
-   
-   import datetime, json, os, time
-   ```
+    ```python
+    from azure.cognitiveservices.language.luis.authoring import LUISAuthoringClient
+    from msrest.authentication import CognitiveServicesCredentials
+
+    import datetime, json, os, time
+    ```
 
 1. You will also require variables to store your key and endpoint.
 
-   ```python
-   authoring_key = 'YOUR_LUIS_KEY'
-   
-   authoring_endpoint = 'YOUR_LUIS_ENDPOINT'
-   ```
+    ```python
+    authoring_key = 'YOUR_LUIS_KEY'
+
+    authoring_endpoint = 'YOUR_LUIS_ENDPOINT'
+    ```
 
 1. The next step is to instantiate a client object and authenticate to the service.
 
-   ```python
-   # Instantiate a LUIS client
-   client = LUISAuthoringClient(authoring_endpoint, CognitiveServicesCredentials(authoring_key))
-   ```
+    ```python
+    # Instantiate a LUIS client
+    client = LUISAuthoringClient(authoring_endpoint, CognitiveServicesCredentials(authoring_key))
+    ```
 
 1. This next function handles the work of creating the LUIS app with the client information.
 
-   ```python
-   def create_app():
-       # Create a new LUIS app
-       app_name    = "PictureBotLUIS")
-       app_desc    = "Picture Bot app built with LUIS Python SDK."
-       app_version = "0.1"
-       app_locale  = "en-us"
-   
-       app_id = client.apps.add(dict(name=app_name,
-                                       initial_version_id=app_version,
-                                       description=app_desc,
-                                       culture=app_locale))
-   
-       print("Created LUIS app {}\n    with ID {}".format(app_name, app_id))
-       return app_id, app_version
-   ```
+    ```python
+    def create_app():
+        # Create a new LUIS app
+        app_name    = "PictureBotLUIS"
+        app_desc    = "Picture Bot app built with LUIS Python SDK."
+        app_version = "0.1"
+        app_locale  = "en-us"
+
+        app_id = client.apps.add(dict(name=app_name,
+                                    initial_version_id=app_version,
+                                    description=app_desc,
+                                    culture=app_locale))
+
+        print("Created LUIS app {}\n    with ID {}".format(app_name, app_id))
+        return app_id, app_version
+    ```
 
 1. Almost all the pieces are in place, the last bit of code is a call to the **create_app** function so add this line to the end of you Python code.
 
-   ```python
-   create_app()
-   ```
+    ```python
+    create_app()
+    ```
 
 1. Paste your key and endpoint into the placeholders in the code.
 
     >[!CAUTION]
     >If you decide to run the code now, it will create a LUIS app for you however, the units in this module will build on this LUIS app code by adding intents, utterances, and entities.  If you run this code now, you will need to either delete the LUIS app before running the subsequent topic code, or comment out the call to **create_app()**.
 
-1. Do not delete the codespace as it will be required in later units in this module.
 
 :::zone-end

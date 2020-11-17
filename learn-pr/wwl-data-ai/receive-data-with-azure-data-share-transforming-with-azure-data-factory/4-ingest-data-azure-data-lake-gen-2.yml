@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.ingest-data-azure-data-lake-gen-2
+title: Ingest data into Azure Data Lake Gen 2 using Azure Data Factory
+metadata:
+  title: Ingest data into Azure Data Lake Gen 2 using Azure Data Factory
+  description: "Ingest data into Azure Data Lake Gen 2 using Azure Data Factory"
+  ms.date: 11/10/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-ingest-data-azure-data-lake-gen-2.md)]

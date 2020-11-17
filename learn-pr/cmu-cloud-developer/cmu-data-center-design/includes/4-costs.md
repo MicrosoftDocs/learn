@@ -47,10 +47,10 @@ One of the biggest operating expenses in running a datacenter is the power. It c
 
 ### References
 
-1. _Rachel Dines, et al. (2011). [Build or Buy? The Economics of Data Center Facilities Forrester Research - PDF](https://epictomorrow.org/wp-content/uploads/2017/07/Data-Center-Study.pdf)_
+1. _Rachel Dines, et al. (2011). [Build or Buy? The Economics of Data Center Facilities Forrester Research - PDF](https://www.anixter.com/content/dam/Suppliers/Viavi%20Solutions/Data%20Centre%20Case%20Studies.pdf)_
 2. _U.S. Energy Information Administration.  (May 7, 2014). [Annual Energy Outlook 2014](http://www.eia.gov/electricity/)_
 3. _Barroso, Luiz André, and Hölzle, Urs.  (2009). [The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines](http://bnrg.eecs.berkeley.edu/~randy/Courses/CS294.F09/wharehousesizedcomputers.pdf)_
 
-[^1]: <https://epictomorrow.org/wp-content/uploads/2017/07/Data-Center-Study.pdf> "Rachel Dines, et al. (2011). *Build or Buy? The Economics of Data Center Facilities Forrester Research* PDF"
+[^1]: <https://www.anixter.com/content/dam/Suppliers/Viavi%20Solutions/Data%20Centre%20Case%20Studies.pdf> "Rachel Dines, et al. (2011). *Build or Buy? The Economics of Data Center Facilities Forrester Research* PDF"
 [^2]: <http://www.eia.gov/electricity/> "U.S. Energy Information Administration. (May 7, 2014). *Annual Energy Outlook 2014*"
 [^3]: <http://bnrg.eecs.berkeley.edu/~randy/Courses/CS294.F09/wharehousesizedcomputers.pdf> "Barroso, Luiz André, and Hölzle, Urs. (2009). *The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines*"

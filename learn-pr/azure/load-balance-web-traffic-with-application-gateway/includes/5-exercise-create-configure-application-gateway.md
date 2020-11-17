@@ -12,7 +12,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     ```azurecli
     az network vnet subnet create \
-      --resource-group $rg \
+      --resource-group $RG \
       --vnet-name vehicleAppVnet  \
       --name appGatewaySubnet \
       --address-prefixes 10.0.0.0/24
@@ -22,7 +22,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     ```azurecli
     az network public-ip create \
-      --resource-group $rg \
+      --resource-group $RG \
       --name appGatewayPublicIp \
       --sku Standard \
       --dns-name vehicleapp${RANDOM}
@@ -39,7 +39,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     ```azurecli
     az network application-gateway create \
-    --resource-group $rg \
+    --resource-group $RG \
     --name vehicleAppGateway \
     --sku WAF_v2 \
     --capacity 2 \
@@ -48,6 +48,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
     --public-ip-address appGatewayPublicIp \
     --http-settings-protocol Http \
     --http-settings-port 8080 \
+    --private-ip-address 10.0.0.4 \
     --frontend-port 8080
     ```
 
@@ -57,34 +58,35 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 1. Run the following commands to find the private IP addresses of  `webServer1` and `webServer2`. We will save these to variables to use in the next command.
 
     ```azurecli
-    WEBSERVER1IP="$(az vm list-ip-addresses \
-      --resource-group $rg \
+    az vm list-ip-addresses \
+      --resource-group $RG \
       --name webServer1 \
       --query [0].virtualMachine.network.privateIpAddresses[0] \
-      --output tsv)"
-
-    WEBSERVER2IP="$(az vm list-ip-addresses \
-      --resource-group $rg \
+      --output tsv
+    ```
+    ```azurecli
+    az vm list-ip-addresses \
+      --resource-group $RG \
       --name webserver2 \
       --query [0].virtualMachine.network.privateIpAddresses[0] \
-      --output tsv)"
+      --output tsv
     ```
 
-1. Next, we'll add the back-end pools for each web site. First, create the back-end pool for the vehicle registration site running on virtual machines. We'll use the variables with the IP addresses for each VM from the previous command.
+1. Next, we'll add the back-end pools for each web site. First, create the back-end pool for the vehicle registration site running on virtual machines. Make sure that the IP addresses in the command below match the IP addresses that were output from the previous commands.
 
     ```azurecli
     az network application-gateway address-pool create \
       --gateway-name vehicleAppGateway \
-      --resource-group $rg \
+      --resource-group $RG \
       --name vmPool \
-      --servers $WEBSERVER1IP $WEBSERVER2IP
+      --servers 10.0.1.4 10.0.1.5
     ```
 
 1. Now run the following command to create a back-end pool for the license renewal site running on App Service.
 
     ```azurecli
     az network application-gateway address-pool create \
-        --resource-group $rg \
+        --resource-group $RG \
         --gateway-name vehicleAppGateway \
         --name appServicePool \
         --servers $APPSERVICE.azurewebsites.net
@@ -94,7 +96,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     ```azurecli
     az network application-gateway frontend-port create \
-        --resource-group $rg \
+        --resource-group $RG \
         --gateway-name vehicleAppGateway \
         --name port80 \
         --port 80
@@ -104,9 +106,10 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     ```azurecli
     az network application-gateway http-listener create \
-        --resource-group $rg \
+        --resource-group $RG \
         --name vehicleListener \
         --frontend-port port80 \
+        --frontend-ip appGatewayFrontendIP \
         --gateway-name vehicleAppGateway
     ```
 
@@ -118,7 +121,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     ```azurecli
     az network application-gateway probe create \
-        --resource-group $rg \
+        --resource-group $RG \
         --gateway-name vehicleAppGateway \
         --name customProbe \
         --path / \
@@ -133,7 +136,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     ```azurecli
     az network application-gateway http-settings update \
-        --resource-group $rg \
+        --resource-group $RG \
         --gateway-name vehicleAppGateway \
         --name appGatewayBackendHttpSettings \
         --host-name-from-backend-pool true \
@@ -149,7 +152,7 @@ Now we need to configure path-based routing for our Application gateway. We'll r
 
     ```azurecli
     az network application-gateway url-path-map create \
-        --resource-group $rg \
+        --resource-group $RG \
         --gateway-name vehicleAppGateway \
         --name urlPathMap \
         --paths /VehicleRegistration/* \
@@ -161,7 +164,7 @@ Now we need to configure path-based routing for our Application gateway. We'll r
 
     ```azurecli
     az network application-gateway url-path-map rule create \
-        --resource-group $rg \
+        --resource-group $RG \
         --gateway-name vehicleAppGateway \
         --name appServiceUrlPathMap \
         --paths /LicenseRenewal/* \
@@ -174,7 +177,7 @@ Now we need to configure path-based routing for our Application gateway. We'll r
 
     ```azurecli
     az network application-gateway rule create \
-        --resource-group $rg \
+        --resource-group $RG \
         --gateway-name vehicleAppGateway \
         --name appServiceRule \
         --http-listener vehicleListener \
@@ -187,7 +190,7 @@ Now we need to configure path-based routing for our Application gateway. We'll r
 
     ```azurecli
     az network application-gateway rule delete \
-        --resource-group $rg \
+        --resource-group $RG \
         --gateway-name vehicleAppGateway \
         --name rule1
     ```
