@@ -1,22 +1,20 @@
 You've been hired as a Senior Database Administrator help ensure the security of the database environment. These tasks will focus on Azure SQL Database. You will learn how to configure advanced security and classification.
 
-## Connect to the lab environment
+## Enable Advanced Data Security and Data Classification
 
-1. When the VM lab environment opens, use the password on the **Resources** tab above for the **Student** account to sign in to Windows.
+1. When the VM lab environment opens use the password on the **Resources** tab for the Student account to sign in to Windows.
 
 1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/). This should be the home page of the browser.
 
-1. The username and password information to sign into the Azure portal are in the  **Resources** tab above these instructions. If you select the **Username** it will be filled in for you.
+1. The username and password information to sign into the Azure Portal are in the  **Resources** tab above these instructions. If you select the **Username**, it will be filled in for you.
 
 1. Select **Next**.
 
-1. Select the **Password** text in the **Resources** tab to have that filled in for you, then select **Sign in**.
+1. Select the **Password** field to have that filled in for you, then select **Sign in**.
 
 1. Select **Yes**.
 
 1. On the **Welcome to Azure** popup, select **Maybe later**.
-
-## Enable Advanced Data Security and Data Classification
 
 1. On the Azure portal home page, select **All resources**.
 
@@ -56,6 +54,8 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. Copy the **Server name** to use later in this exercise.
 
+    :::image type="content" source="../media/copy-servername.png" alt-text="dp300-lab-adw server":::
+
 1. Navigate to the **AdventureWorksLT** database in the Azure portal by scrolling down in the overview screen for Azure SQL server and select the database name.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-27.png" alt-text="dp300-lab-adw server":::
@@ -74,6 +74,9 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 ## View data classification in SQL Server Management Studio
 
+> [!NOTE]
+> If you'd like to copy and paste the code you can find the code in the D:\exercise_steps.txt file.
+
 1. Open SQL Server Management Studio by navigating to **Microsoft SQL Server Tools 18** > **SQL Server Management Studio** from the Start menu. Paste in the name of your Azure SQL database server and login with these credentials:
 
     - Server admin login: **labadmin**
@@ -85,7 +88,13 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. You'll be prompted to add your client IP address as a new firewall rule. Sign in with the Azure credentials in the Resources tab. Then select **OK**.
 
-1. In the **Object Explorer**, expand the server node, and open a new query window. Using the AdventureWorksLT database execute the following query.
+1. In the **Object Explorer**, expand the server node, and expand the **Databases** node.
+
+    :::image type="content" source="../media/new-query.png" alt-text="SQL Query results":::  
+
+1. Right-click on the **AdventureWorksLT** database, and select **New Query**.
+
+1. Execute the following query in the new query window.
 
     ```sql
     SELECT o.name AS [Table Name]
@@ -104,4 +113,6 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 Note that the results show that the 15 classifications have been created in the database.
 
-To finish this exercise select End below.
+In this exercise you've seen how the Azure portal can automatically classify columns in a database table for you.
+
+To finish this exercise select **End** below.
