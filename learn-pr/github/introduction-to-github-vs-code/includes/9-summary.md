@@ -1,3 +1,0 @@
-The streamlined GitHub functionality in Visual Studio Code makes you more productive because there are fewer manual steps to complete. It's also easier to see what you are doing as Visual Studio Code gives you a user interface for interacting with GitHub.
-
-In this module, you've learned how Visual Studio Code handles authentication with GitHub. You've also learned how to easily publish a project, how to clone GitHub projects from Visual Studio Code, and how to review repository history with the timeline view.

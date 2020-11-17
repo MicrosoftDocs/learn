@@ -2,11 +2,11 @@ Let's see how you can use Visual Studio Code to start a new project by cloning t
 
 ## Clone a new repository from GitHub
 
-1. Open a new VS Code window. From the File Explorer view, you can click on **Clone Repository**. You should see an option to clone from GitHub. 
+1. Open a new VS Code window. From the File Explorer view, you can click on **Clone Repository**. You should see an option to clone from GitHub.
 
     :::image type="content" source="../media/clone-from-gh.png" alt-text="Clone from GitHub option":::
 
-2. Select the **Clone from GitHub** option from the dropdown and you will find a list of your repositories. You can also search for other repositories on Github. Search for a repository using this path "MicrosoftDocs/mslearn-python-products" and select the first option
+2. Select the **Clone from GitHub** option from the dropdown and you will find a list of your repositories. You can also search for other repositories on Github. Search for a repository using this path "MicrosoftDocs/mslearn-python-products" and select the first option.
 
     :::image type="content" source="../media/find-repo-to-clone.png" alt-text="Repo to clone":::
 

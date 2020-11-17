@@ -1,12 +1,10 @@
 ## Authenticate with your GitHub account
 
-1. Make sure you have the latest version of VS Code installed. If you don't, select on the gear icon in the bottom of the activity bar and choose "Check for Updates..." and install the latest. 
+1. Make sure you have the latest version of VS Code installed. If you don't, select on the gear icon in the bottom of the activity bar and choose "Check for Updates..." and install the latest.
 
-1. Select the extensions icon in the activity bar. You can also get to the Extensions explorer view by selecting View -> Extensions.
+2. Select the extensions icon in the activity bar. Search for the "GitHub Pull Requests and Issues" extension and install it. 
 
-1. Search for the "GitHub Pull Requests and Issues" extension and install it. 
-
-![Install extension](../media/1-ghpri.png)
+![Install extension](../media/ghpri.png)
 
 3. Once you install the extension, you can select the gear icon at the bottom of the activity bar and select "Sign into use GitHub Pull Requests and Issues". A browser window will open and you'll be prompted to grant permission for VS Code to access GitHub.
 
