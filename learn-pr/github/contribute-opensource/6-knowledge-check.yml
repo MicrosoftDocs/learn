@@ -51,7 +51,8 @@ quiz:
         - content: Clone a repo, commit changes and force push
           isCorrect: false
           explanation: "While you can clone any public GitHub repository, by default you don't have the right to push any modifications. You need to create your own copy of the repo first."
-        - content: Read contribution guidelines
-          isCorrect: true
+        - content: Get accepted as a team member
+          isCorrect: false
+          explanation: "You don't need to be part of the project's team to propose a pull request."
         - content: Fork a repo, clone it, commit changes and push
           isCorrect: true
