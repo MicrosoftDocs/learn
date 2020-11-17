@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.introduction-to-github-vs-code.9-knowledge-check
+uid: learn.github.introduction-to-github-vs-code.8-knowledge-check
 title: Summary
 metadata:
   title: Summary
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/9-knowledge-check.md)]
+  [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
