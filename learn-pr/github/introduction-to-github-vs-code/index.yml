@@ -42,5 +42,7 @@ units:
 - learn.github.introduction-to-github-vs-code.5-exercise-publish
 - learn.github.introduction-to-github-vs-code.6-lesson-clone
 - learn.github.introduction-to-github-vs-code.7-exercise-clone
+- learn.github.introduction-to-github-vs-code.8-knowledge-check
+- learn.github.introduction-to-github-vs-code.9-summary
 badge:
   uid: learn.github.introduction-to-github-vs-code.badge
