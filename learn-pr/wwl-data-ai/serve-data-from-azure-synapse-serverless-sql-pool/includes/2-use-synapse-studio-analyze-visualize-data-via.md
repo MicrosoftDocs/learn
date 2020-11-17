@@ -10,7 +10,7 @@ This will open the Synapse Studio related to the Synapse workspace you navigated
 
 1.	Click on question mark icon in top right corner and select Knowledge center
 
-    ![Navigating to the knowledge center](../media/navigate-to-knowledge-center.png)
+    ![Navigating to the knowledge center](../media/navigate-knowledge-center.png)
 
 2.	Click on the Knowledge center link in Useful links section.
  
