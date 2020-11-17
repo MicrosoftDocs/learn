@@ -29,7 +29,7 @@ The Dockerfile is the best tool with which to add new software to your container
 
 ## Check Node version
 
-1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the integrated terminal in VS Code.
+1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the integrated terminal in Visual Studio Code.
 1. Type the following to check your version of Node.
 
    ```bash
@@ -40,4 +40,4 @@ The Dockerfile is the best tool with which to add new software to your container
 
 Congratulations, you just customized your dev container even further by installing additional software!
 
-Continue to the next section for a quick knowledge check about dev containers in VS Code, followed by a summary of what we've covered in this Learn module.
+Continue to the next section for a quick knowledge check about dev containers in Visual Studio Code, followed by a summary of what we've covered in this Learn module.

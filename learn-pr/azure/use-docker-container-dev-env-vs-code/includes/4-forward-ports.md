@@ -6,7 +6,7 @@ Containers are isolated environments, so if you want to access a server, service
 
 ## How do we forward ports in containers?
 
-In the last exercise, VS Code forwarded the port for your container automatically. The notification read, "127.0.0.1:5000 on remote is now forwarded to 127.0.0.1:5000 locally," meaning your web app was running at port 5000 in the dev container and was sent to port 5000 of your host machine.
+In the last exercise, Visual Studio Code forwarded the port for your container automatically. The notification read, "127.0.0.1:5000 on remote is now forwarded to 127.0.0.1:5000 locally," meaning your web app was running at port 5000 in the dev container and was sent to port 5000 of your host machine.
 
 ### Varying port numbers
 

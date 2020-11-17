@@ -1,4 +1,4 @@
-The `devcontainer.json` helps you configure a variety of settings in your containerized VS Code setup. So far, you've configured a dev container for a Python project. However, there are still some rough edges and setup tasks that you can further automate. In this exercise, you'll use the `devcontainer.json` file to smooth these edges and make the project work with no setup steps from the developer.
+The `devcontainer.json` helps you configure a variety of settings in your containerized Visual Studio Code setup. So far, you've configured a dev container for a Python project. However, there are still some rough edges and setup tasks that you can further automate. In this exercise, you'll use the `devcontainer.json` file to smooth these edges and make the project work with no setup steps from the developer.
 
 ## Reopen project locally
 
@@ -8,7 +8,7 @@ Before you make tweaks to the container configuration, you need to reopen the pr
 1. Type "locally" and select "Remote-Containers: Reopen Locally."
 1. Open the `devcontainer.json` file in the ".devcontainer" folder if it is not open already.
 
-## Install VS Code extensions
+## Install Visual Studio Code extensions
 
 The container comes with the Microsoft Python extension. They Python extension enables snippets, linting, and intellisense in Python files. But the "index.html" file in the "templates" folder is a Jinja template, and a different extension needs to be installed to get syntax highlighting in that file.
 
@@ -28,7 +28,7 @@ The container comes with the Microsoft Python extension. They Python extension e
 
 ## Forward port 5000
 
-VS Code automatically detects and forwards port 5000. It's a good practice to make the port forwarding an explicit part of the project configuration. Doing so will ensure that the port gets forwarded instead of relying on the editor.
+Visual Studio Code automatically detects and forwards port 5000. It's a good practice to make the port forwarding an explicit part of the project configuration. Doing so will ensure that the port gets forwarded instead of relying on the editor.
 
 1.  Open the `devcontainer.json` file in the ".devcontainer" folder.
 1.  Uncomment out the "forwardPorts" option, and add 5000 to the array.
@@ -69,7 +69,7 @@ The container will be rebuilt with the changes you've specified in the "devconta
 
 ## Run the app
 
-1.  Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the VS Code integrated terminal.
+1.  Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the Visual Studio Code integrated terminal.
 1.  Run the app with the following command:
 
     ```bash

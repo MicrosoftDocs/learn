@@ -46,8 +46,8 @@ In case you no longer want to use localhost port 5000, let's forward to a new po
    python app.py
    ```
 
-1. Notice VS Code automatically takes care of port forwarding again!
+1. Notice that Visual Studio Code automatically takes care of port forwarding again!
 
-Great work! We've now explored port forwarding with a dev container in VS Code.
+Great work! We've now explored port forwarding with a dev container in Visual Studio Code.
 
 Rather than using the Remote Explorer or **Forward a Port** command from the Command Palette, you could also specify a list of ports you always want to forward when attaching or opening a folder in container through the `forwardPorts` property in `devcontainer.json`. We'll explore customizing our container's setup through properties like this in `devcontainer.json` in the next section.

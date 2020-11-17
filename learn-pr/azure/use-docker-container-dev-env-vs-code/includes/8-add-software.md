@@ -4,7 +4,7 @@ Your customized container is coming along great for your agency. With the power 
 
 Additional software could include another tech stack for your agency. For instance, you may want to include Node.js in any of your dev containers since you know that's part of many development workflows.
 
-When you ran **Remote-Containers: Add Development Container Configuration Files...**, a ".devcontainer" folder was added to your app, which included a `devcontainer.json` and a Dockerfile. These files came from the [VS Code dev containers](https://github.com/microsoft/vscode-dev-containers) repo. While this repo gives us many great options for our team, we still may want to iterate on them even further by installing more software.
+When you ran **Remote-Containers: Add Development Container Configuration Files...**, a ".devcontainer" folder was added to your app, which included a `devcontainer.json` and a Dockerfile. These files came from the [Visual Studio Code dev containers](https://github.com/microsoft/vscode-dev-containers) repo. While this repo gives us many great options for our team, we still may want to iterate on them even further by installing more software.
 
 ## Methods to install software
 

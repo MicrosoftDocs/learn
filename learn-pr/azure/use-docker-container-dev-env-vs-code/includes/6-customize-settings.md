@@ -1,4 +1,4 @@
-You've set up a dev container for one of your agency's projects. It will now "just work" for anyone who has Docker and the Remote - Containers extension. Almost. They'll still have to install dependences, be aware of the port forwarding, and they might need some VS Code extensions that they don't know about. Fortunately, you can fully customize and automate all the project setup with the `devcontainer.json` file.
+You've set up a dev container for one of your agency's projects. It will now "just work" for anyone who has Docker and the Remote - Containers extension. Almost. They'll still have to install dependences, be aware of the port forwarding, and they might need some Visual Studio Code extensions that they don't know about. Fortunately, you can fully customize and automate all the project setup with the `devcontainer.json` file.
 
 ## A closer look at devcontainer.json
 
@@ -39,7 +39,7 @@ The "settings" option copies machine-specific settings into the container.
 },
 ```
 
-These are settings that you might have in your own VS Code setup. In this Python container, some of these settings are setting the terminal shell. Some are setting Python editing options in VS Code. These options will give the user an opinionated Python editing experience.
+These are settings that you might have in your own Visual Studio Code setup. In this Python container, some of these settings are setting the terminal shell. Some are setting Python editing options in Visual Studio Code. These options will give the user an opinionated Python editing experience.
 
 ### Project settings
 
@@ -61,9 +61,9 @@ The last section of the file deals directly with project configuration.
 "remoteUser": "vscode"
 ```
 
-- The "extensions" array allows you to specify which VS Code extensions should be installed in VS Code when it connects to the container. Your normal VS Code setup and all the extensions you already have won't be present when you are using Remote - Containers. Extensions are specified here with their ID. The ID can be found by searching the extension gallery for an extension, right-clicking that extension and selecting "Copy Extension ID." When you have the Remote - Containers extension installed, you can also right-click an extension and choose "Add to devcontainer.json."
+- The "extensions" array allows you to specify which Visual Studio Code extensions should be installed in Visual Studio Code when it connects to the container. Your normal Visual Studio Code setup and all the extensions you already have won't be present when you are using Remote - Containers. Extensions are specified here with their ID. The ID can be found by searching the extension gallery for an extension, right-clicking that extension and selecting "Copy Extension ID." When you have the Remote - Containers extension installed, you can also right-click an extension and choose "Add to devcontainer.json."
 
-- The "fowardPorts" section lets you specify up front which ports you would like to forward. While VS Code detects many ports automatically when you run a project, there are cases where you will need to manually forward ports for an app to work.
+- The "fowardPorts" section lets you specify up front which ports you would like to forward. While Visual Studio Code detects many ports automatically when you run a project, there are cases where you will need to manually forward ports for an app to work.
 
 - The "postCreateCommand" lets you run any commands that you want after the container is created. If you remember from the first exercise, you had to run the "pip3" command to install dependencies. But how would you know to do that? You might not. So you can configure it here so that it will happen automatically and others won't have to worry about it.
 
