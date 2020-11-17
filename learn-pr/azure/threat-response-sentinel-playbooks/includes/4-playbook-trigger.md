@@ -59,7 +59,7 @@ Each step in the workflow design has different fields that you must fill. For ex
 
 :::image type="content" source="../media/04-Dynamic-Content.PNG" alt-text="Screenshot that displays dynamic content." border="true":::
 
-You can also add a control action that lets your logic app make decisions. The control action can include logical conditions, switch case conditions, or loops. <!--Marjan, should it be a control action or condition action? We seem to be using both-->
+You can also add a control actions group that lets your logic app make decisions. The control actions group can include logical conditions, switch case conditions, or loops. 
 A **condition** action is an **if** statement that lets your app perform different actions based on the data you're processing. It consists of a Boolean expression and two actions. At runtime, the execution engine evaluates the expression and chooses an action based on whether the expression is true or false.
 For example, Contoso receives a large volume of alerts, many of them with recurring patterns, which cannot be processed or investigated. Using real-time automation, the Contoso SecOps teams can significantly reduce their workload by fully automating the routine responses to recurring types of alerts.
 The following screenshot presents a similar situation, where based on the user input, the playbook can change the status of the alert. The control action intercepts the user input, and if the expression evaluates to be a true statement, the playbook changes the status of the alert. In case the control action evaluates the expression to be false, the playbook can run other activities, such as sending an email as depicted in the following screenshot.
