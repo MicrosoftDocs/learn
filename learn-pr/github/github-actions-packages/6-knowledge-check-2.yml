@@ -13,7 +13,7 @@ durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
-  - content: "In which scenarios you should NOT use GitHub Packages?"
+  - content: "In which scenarios should you NOT use GitHub Packages?"
     choices:
     - content: "When I want to share code between methods of my application."
       isCorrect: true

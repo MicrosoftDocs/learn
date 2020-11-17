@@ -31,7 +31,7 @@ quiz:
       explanation: "While you can use docker push command to publish a container image, you've used a different method."
     - content: "docker/build-push action step"
       isCorrect: true
-      explanation: "This GitHub action builds and push image to a container registry automatically."
+      explanation: "This GitHub action builds and pushes an image to a container registry automatically."
     - content: "npm publish"
       isCorrect: false
       explanation: "While this command publishes an npm package to an npm registry, we've published a container image with the docker/build-push action."
