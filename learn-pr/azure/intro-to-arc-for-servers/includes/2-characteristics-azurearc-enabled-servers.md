@@ -21,5 +21,5 @@ The Connected Machine agent allows you to enhance management of Windows and Linu
 - Red Hat Enterprise Linux (RHEL) 7 (x64)
 - Amazon Linux 2 (x64)
 
-
+<!--Marcin: I suppose there was no knowledge check planned for the intro?-->
 
