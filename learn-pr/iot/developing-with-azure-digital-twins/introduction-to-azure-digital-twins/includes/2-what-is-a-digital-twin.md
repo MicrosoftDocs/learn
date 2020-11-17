@@ -6,7 +6,7 @@ The Internet of Things gives businesses unprecedented insights into their assets
 
 Examples include Buildings, Factories, Farms, Energy Networks, Railways, Stadiums – even entire Cities. Yet modeling, and creating a digital representation of an environment can be difficult for even the most sophisticated enterprises.
 
-Azure Digital Twins makes this easy. It enables customers to model an environment,and then bring this digital twin to life – scalable, and secure. Businesses can connect assets such as IoT devices, as well as existing business systems to Azure Digital Twins. Azure Digital Twins helps break down silos that previously stood in the way of insights, and provides a robust platform to build dynamic business logic on.
+Azure Digital Twins makes this easy. It enables customers to model an environment, and then bring this digital twin to life – scalable, and secure. Businesses can connect assets such as IoT devices, as well as existing business systems to Azure Digital Twins. Azure Digital Twins helps break down silos that previously stood in the way of insights, and provides a robust platform to build dynamic business logic on.
 
 Azure Digital Twins seamlessly integrates with Azure data, analytics, and AI services to make it easy to track the past, and then predict the future – giving businesses the edge they need to meet the challenges they face today… and tomorrow.
 
