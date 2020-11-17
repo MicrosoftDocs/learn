@@ -1,52 +1,51 @@
-## Exercise: Threat response using Azure Sentinel Plabooks
+As a security engineer working for Contoso, you recently notice that a significant number of alerts are generated when someone deletes a virtual machine. You want to analyze such occurrences in the future and reduce the alerts generated for false positive occurrences.
 
-As a security engineer working for Contoso, you recently notice that significant number of alerts are generated when someone delete a virtual machine. You want to analyze that occurrence in the future and reduce the alerting of fault postive occurence.
-You decide to implement Azure Sentinel playbook to automate respond on an incident.
+## Exercise: Threat response using Azure Sentinel playbooks
 
-In this exercise, you will explore the Azure Sentinel playbooks. You will perform the following tasks:
-- Create a playbook to automate an action to respond on incidents.
-- Create a playbook from Azure Sentinel repo on Github
+You decide to implement an Azure Sentinel playbook to automate responses to an incident.
 
-### Task 1: Work with Azure Sentinel Playbooks
+In this exercise, you will explore the Azure Sentinel playbooks by performing the following tasks:
+- Create a playbook to automate an action to respond to incidents.
+- Create a playbook from the Azure Sentinel repository on Github.
 
-1. In the Azure portal, search for and select Azure Sentinel and select the previously created Sentinel workspace.
-2. In the **Azure Sentinel** blade, on the left side in the menu bar, in the **Configuration** section, select **Playbooks.**
-3. Click on **+Add Playbook.**
-4. On the  **Logic App** blade, in the **Basics** tab, specify the following settings:
+### Task 1: Work with Azure Sentinel playbooks
+
+1. In the Azure portal, search for and select Azure Sentinel, and select the previously created Azure Sentinel workspace.
+2. In the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Playbooks**.
+3. Select **+Add Playbook**.
+4. In the  **Logic App** blade, on the **Basics** tab, specify the following settings:
 
 | **Settings** | **Value** |
 | --- | --- |
-| Subscription | the name of the Azure subscription you are using in this lab |
-| Resource group | Select the resource group of your Azure Sentinel service |
-| Logic App name | **ClosingIncident** _(you can choose any name)_ |
+| Subscription | Provide a name for the Azure subscription you are using in this lab. |
+| Resource group | Select the resource group of your Azure Sentinel service. |
+| Logic App name | **ClosingIncident** *(you can choose any name)* |
 | Select the location | **Region** |
-| Location | Select same location as the location of the Azure Sentinel |
+| Location | Select the same location as the location of Azure Sentinel. |
 | Log Analytics | **Off** |
 
-5. Select  **Review + Create**  and then select  **Create**.
+5. Select  **Review + Create**, and then select  **Create**.
 
 **Note** : Wait for the deployment to complete. The deployment should take less than 1 minute.
 
-6. Once the deployment is complete, select **Go to resource**.
-7. In the Logic Apps Designer pane, scroll down and select **Blank Logic App.**
-8. In the search field type and select **Azure Sentinel**.
-9. In the Triggers tab, select **When a response to an Azure Sentinel Alert is triggered (preview)**.
+6. After the deployment is complete, select **Go to resource**.
+7. In the **Logic Apps Designer** pane, scroll down and select **Blank Logic App.**
+8. In the search field, enter and select **Azure Sentinel**.
+9. On the **Triggers** tab, select **When a response to an Azure Sentinel Alert is triggered (preview)**.
 
 ![Screenshot of Azure Sentinel trigger](../media/06-Azure-Sentinel-Triger.PNG)
 
-10. In the Azure Sentinel, verify that for the Tenant in the drop-down menu, **Default Directory** is selected and then select **Sign in.**
+10. On the **Azure Sentinel** page, verify that for the tenant in the drop-down menu, **Default Directory** is selected, and then select **Sign in**.
 
 ![Screenshot of authorizing API connection](../media/06-Sign-in-AADTenant.PNG)
 
-11. Provide the credential for your Azure subscription and then select **+ New step.**
-12. In the **Choose an operation** window, in the search field type and select **Azure Sentinel**.
-13. From the **Actions** tab, locate and select **Alert-Get Incident (Preview).**
-14. In the **Alert-Get Incident (Preview)** provide the following inputs and then select **New Step.**
+11. Provide the credentials for your Azure subscription, and then select **+ New step**.
+12. In the **Choose an operation** window, in the search field, enter and select **Azure Sentinel**.
+13. On the **Actions** tab, locate and select **Alert-Get Incident (Preview)**.
+14. In the **Alert-Get Incident (Preview)** window, provide the following inputs, and then select **New Step**.
 
 > [!Tip]
-
-> When you select the field, a new window will pop up to help you filling these entries with dynamic content. Under the **Dynamic content** tab, in the search box you can start typing for example **Resource group**, and then you can select the entry from the list, as shown in the following screenshot:
-
+> When you select a field, a new window opens to help you fill these fields with dynamic content. On the **Dynamic content** tab, in the search box, you can start entering **Resource group** for example, and then you can select the entry from the list, as the following screenshot displays.
 
 ![Screenshot of Get Incident](../media/06-Get-Incident.PNG)
 
@@ -57,47 +56,45 @@ In this exercise, you will explore the Azure Sentinel playbooks. You will perfor
 | Specify workspace id: | **Workspace ID** |
 | Specify alert id: | **System Alert ID** |
 
-15. In the **Choose an operation** window, in the search field type and select **Azure Sentinel.**
-16. From the **Actions** tab, locate and select **Change incident status (Preview).**
-17. In the **Change incident status (Preview)** provide the following inputs:
+15. In the **Choose an operation** window, in the search field, enter and select **Azure Sentinel**.
+16. From the **Actions** tab, locate and select **Change incident status (Preview)**.
+17. In the **Change incident status (Preview)** window, provide the following inputs:
 
 |||
 | --- | --- |
 | Specify subscription id: | **Subscription ID** |
 | Specify resource group: | **Resource group** |
 | Specify workspace id: | **Workspace ID** |
-| Identifier | From the drop-down menu select **Alert** |
+| Identifier | From the drop-down menu, select **Alert**. |
 | Specify alert / incident | **System Alert ID** |
-| Specify status | From the drop-down menu select **Closed** |
-| Close reason | From the drop-down menu select **Custom Value** and then type **Incident Resolved** |
-| Close reason text | Write descriptive text |
+| Specify status | From the drop-down menu, select **Closed**. |
+| Close reason | From the drop-down menu select **Custom Value**, and then type **Incident Resolved**. |
+| Close reason text | Write descriptive text. |
 
 ![Screenshot of Get Incident Status](../media/06-Change-Incident-Status.PNG)
 
-18. Once that you save the logic app, you can close the Logic Apps Designer.
+18. After you save the logic app, close the Logic Apps Designer.
 
-### Task 3: Invoke an incident and review the associated actions.
+### Task 3: Invoke an incident and review the associated actions
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **virtual machines** and press **Enter**.
-2. In the **Virtual machines** page, locate and select **simple-vm** virtual machine and then from the header bar select **Delete**.
+1. In the Azure portal, in the **Search resources, services, and docs** text box, enter **virtual machines**, and then select **Enter**.
+2. On the **Virtual machines** page, locate and select the **simple-vm** virtual machine, and then on the header bar, select **Delete**.
 
 > [!Note]
+> This task creates an incident based on the analytics rule that you created earlier in the exercise setup unit. Incident creation can take up to 5 minutes. Wait for it to complete before proceeding to the next step.
 
-> This task create an incident, based on the analytics rule that has been created in the second unit. Incident creation can take up to 5 minutes. Wait before proceed on the next step. 
-
-### Task 2: Assign the Playbook on existing incident.
+### Task 2: Assign the playbook to an existing incident
 
 1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
-2. In the **Azure Sentinel | Overview** page, in the menu bar, in the **Threat management** section, select **Incidents.**
-3. In the **Azure Sentinel | Incidents** page, select the incident that has been created based on deletion of the VM.
-4. In the detailed pane, on the right side, select **View full details.**
-5. In the **Incident** page, in the detailed pane, in the list of the **Alerts,** in the rightest position, select the link **View playbooks.**
-6. In the **Alert playbooks** page, select **ClosingIncident** playbook and then select **Run.**
-7. Verify that you receive the message **Playbook was triggered successfully.**
-8. Close the **Alert** page, and then close **Incident** page to return on **Azure Sentinel | Incidents** page.
-9. In the **Azure Sentinel | Incidents** page, in the header bar select **Refresh.** You will notice that the incident will disappear from the pane. From the **Status** menu select **Closed** and select **OK.**
+2. On the **Azure Sentinel | Overview** page, on the menu bar, in the **Threat management** section, select **Incidents**.
+3. On the **Azure Sentinel | Incidents** page, select the incident that has been created based on the deletion of the virtual machine.
+4. In the details pane, select **View full details**.
+5. On the **Incident** page, in the details pane, in the **Alerts** list, select the **View playbooks** link.
+6. On the **Alert playbooks** page, select the **ClosingIncident** playbook, and then select **Run**.
+7. Verify that you receive the message **Playbook was triggered successfully**.
+8. Close the **Alert** page, and then close the **Incident** page to return to the **Azure Sentinel | Incidents** page.
+9. In the **Azure Sentinel | Incidents** page, on the header bar, select **Refresh**. You will notice that the incident disappears from the pane. On the **Status** menu, select **Closed**, and then select **OK**.
 
 ![Screenshot of the the header](../media/06-header-refresh.png)
 
-10. Verify that the incident is shown again, but notice the **Status** column, it states that is **Closed.**
-
+10. Verify that the incident displays again, and notice the **Status** column to check that it is **Closed**.
