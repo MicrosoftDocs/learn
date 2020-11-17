@@ -27,7 +27,7 @@ Another option for data preparation is Azure Databricks - to shape the data form
 
 At the heart of a modern data warehouse, and cloud scale analytical solution was Azure Synapse Analytics (Formerly SQL Data Warehouse).  This implemented a Massively Parallel Processing that brings together enterprise data warehousing and Big Data analytics. 
 
-## Providing access to the data, sin a shaped format so that it can easily be consumed by data visualization tools 
+## Providing access to the data, that it can easily be consumed by data visualization tools 
 
 Power BI enables customers to build visualizations on massive amounts of data and ensure that data insights are available to everyone across their organization. 
 
