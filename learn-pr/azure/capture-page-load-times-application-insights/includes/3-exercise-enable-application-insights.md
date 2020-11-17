@@ -18,7 +18,7 @@ We'll start by creating a web app to monitor. Follow these steps:
 
 ## Configure the web app
 
-You need to set up a name, a resource group, a location, and some other properties for your web app. Follow these steps:
+You will need to set up a name, a resource group, a location, and some other properties for your web app. Follow these steps:
 
 1. In the **Subscription** list, select the Azure subscription you'd like to use for this exercise.
 1. Under **Resource Group**, select **Create new** and name the new resource group **mslearn-appinsights**.
@@ -48,7 +48,7 @@ To enable Application Insights on an app, follow these steps:
 1. On the **Application Insights** page, make sure **Enable** is selected.
 1. Under **Change your resource**, in the **Create new resource** box, enter **videoappinsights**.
 1. In the **Location** list, select a location, and then select **Apply**. If the **Apply monitoring settings** box appears, select **Yes**.
-1. After the changes are applied, in the Azure portal, select **Application Insights** from the left menue and click on **videoappinsights** (blue text).
+1. After the changes are applied, in the Azure portal, select **Application Insights** from the left menu and click on **videoappinsights** (blue text).
 1. In the **Application Insights** pane, select **Application Dashboard**. Note the charts shown by default in the dashboard. If the charts don't appear within a few seconds, select F5 to refresh the page.
 
 ## Inject the Application Insights JavaScript SDK into the web app
@@ -64,4 +64,4 @@ Because you can inject the Application Insights JavaScript SDK into the video we
 1. In the **Enter a name** box, enter **APPINSIGHTS_JAVASCRIPT_ENABLED**.
 1. In the **Enter a value** box, enter **true**.
 1. At the bottom of the **Application Settings** page, select **OK** and at the top of the **App Services** page select **Save**.
-1. In the top left corner of the **App Service** pane, select **Overview**, select **Restart**, and then select **Yes**.
+1. In the top-left corner of the **App Service** pane, select **Overview**, select **Restart**, and then select **Yes**.
