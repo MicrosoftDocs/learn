@@ -33,11 +33,11 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 8. In the search field, enter and select **Azure Sentinel**.
 9. On the **Triggers** tab, select **When a response to an Azure Sentinel Alert is triggered (preview)**.
 
-![Screenshot of Azure Sentinel trigger](../media/06-Azure-Sentinel-Triger.PNG)
+:::image type="content" source="../media/06-Azure-Sentinel-Triger.PNG" alt-text="Screenshot of the Azure Sentinel trigger." border="true":::
 
 10. On the **Azure Sentinel** page, verify that for the tenant in the drop-down menu, **Default Directory** is selected, and then select **Sign in**.
 
-![Screenshot of authorizing API connection](../media/06-Sign-in-AADTenant.PNG)
+:::image type="content" source="../media/06-Sign-in-AADTenant.PNG" alt-text="Screenshot of the authorizing API connection." border="true":::
 
 11. Provide the credentials for your Azure subscription, and then select **+ New step**.
 12. In the **Choose an operation** window, in the search field, enter and select **Azure Sentinel**.
@@ -47,7 +47,7 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 > [!Tip]
 > When you select a field, a new window opens to help you fill these fields with dynamic content. On the **Dynamic content** tab, in the search box, you can start entering **Resource group** for example, and then you can select the entry from the list, as the following screenshot displays.
 
-![Screenshot of Get Incident](../media/06-Get-Incident.PNG)
+:::image type="content" source="../media/06-Get-Incident.PNG" alt-text="Screenshot of Get Incident." border="true":::
 
 |||
 | --- | --- |
@@ -71,11 +71,11 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 | Close reason | From the drop-down menu select **Custom Value**, and then type **Incident Resolved**. |
 | Close reason text | Write descriptive text. |
 
-![Screenshot of Get Incident Status](../media/06-Change-Incident-Status.PNG)
+:::image type="content" source="../media/06-Change-Incident-Status.PNG" alt-text="Screenshot of the Get Incident status." border="true":::
 
 18. After you save the logic app, close the Logic Apps Designer.
 
-### Task 3: Invoke an incident and review the associated actions
+### Task 2: Invoke an incident and review the associated actions
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box, enter **virtual machines**, and then select **Enter**.
 2. On the **Virtual machines** page, locate and select the **simple-vm** virtual machine, and then on the header bar, select **Delete**.
@@ -83,7 +83,7 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 > [!Note]
 > This task creates an incident based on the analytics rule that you created earlier in the exercise setup unit. Incident creation can take up to 5 minutes. Wait for it to complete before proceeding to the next step.
 
-### Task 2: Assign the playbook to an existing incident
+### Task 3: Assign the playbook to an existing incident
 
 1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
 2. On the **Azure Sentinel | Overview** page, on the menu bar, in the **Threat management** section, select **Incidents**.
@@ -95,6 +95,6 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 8. Close the **Alert** page, and then close the **Incident** page to return to the **Azure Sentinel | Incidents** page.
 9. In the **Azure Sentinel | Incidents** page, on the header bar, select **Refresh**. You will notice that the incident disappears from the pane. On the **Status** menu, select **Closed**, and then select **OK**.
 
-![Screenshot of the the header](../media/06-header-refresh.png)
+:::image type="content" source="../media/06-header-refresh.png" alt-text="Screenshot of the the header bar." border="true":::
 
 10. Verify that the incident displays again, and notice the **Status** column to check that it is **Closed**.
