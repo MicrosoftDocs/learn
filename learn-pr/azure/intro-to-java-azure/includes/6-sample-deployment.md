@@ -1,8 +1,8 @@
-Probably you're more than curious how a deployment of a Java application in Azure can look like! No worries! We got you.
+You're probably curious about what a deployment of a Java application in Azure looks like. Let's cover that.
 
 ## Sample application
 
-You can go with an example, you've created by yourself. Or you succeed with a common Spring Boot example that can be found at the spring starters.
+You can go with an example that you've created by yourself. Or you can succeed with a common Spring Boot example that from the Spring starters.
 
 Clone in your favorite command-line tool.
 
@@ -10,7 +10,7 @@ Clone in your favorite command-line tool.
 git clone https://github.com/spring-projects/spring-petclinic.git
 ```
 
-And then run it locally.
+Then run it locally.
 
 ``` bash
 cd spring-petclinic
