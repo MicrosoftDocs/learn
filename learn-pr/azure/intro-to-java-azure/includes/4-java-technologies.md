@@ -5,7 +5,7 @@ In this unit, we distinguish between the different types of Java frameworks, ser
 The Spring Framework is an application framework and inversion of control container. Spring has historically been used to compliment the Enterprise JavaBeans (EJB) model.
 Its core functionalities are:
 
-- Dependency Injection
+- Dependency injection
 - Aspect-oriented programming
 - Business abstraction
 
@@ -23,19 +23,19 @@ Spring Security is de-facto standard for securing Spring-based applications. It 
 
 ### Spring Cloud
 
-Spring Cloud is used for distributed system. Spring Cloud comes with Service Discovery, Scalability, Configuration Management, Monitoring, and a good developer experience.
+Spring Cloud is used for distributed system. Spring Cloud comes with service discovery, configuration management, monitoring, and a good developer experience.
 
 ### Spring Batch
 
 Spring Batch is a lightweight framework for robust batch applications vital for daily operations.
 
-## MicroProfile and Jakarta EE, the Java for Enterprises
+## MicroProfile and Jakarta EE
 
 MicroProfile and Jakarta EE can be seen as the open source follow-up of the Java Enterprise Edition specifications.
 
 ### MicroProfile
 
-Microprofile is a set of specifications for microservice Architectures. They call themselves an _open forum to optimize Enterprise Java for a microservices architecture_. The MicroProfile aims to innovate across multiple implementations and collaborate on common areas of interest.
+Microprofile is a set of specifications for microservice Architectures. They call themselves an _open forum to optimize Enterprise Java for a microservices architecture_.  MicroProfile aims to innovate across multiple implementations and collaborate on common areas of interest.
 
 ### Jakarta EE
 
@@ -49,7 +49,7 @@ Java EE applications must be deployed onto Java EE-compliant application servers
 
 - **Apache Tomcat** is an HTTP server and a Java Servlet container. It implements the Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket specifications.
 
-- The **Oracle Weblogic Server** is a unified and extensible platform for developing, deploying, and running enterprise applications. WebLogic Server offers a robust, mature implementation of Java Enterprise Edition (EE) and Jakarta EE.
+- **Oracle Weblogic Server** is a unified and extensible platform for developing, deploying, and running enterprise applications. WebLogic Server offers a robust, mature implementation of Java Enterprise Edition (EE) and Jakarta EE.
 
 - **Red Hat JBoss Enterprise Application Platform** delivers enterprise-grade security, performance for on-premise; virtual; or in private, public, or hybrid clouds.
 
@@ -59,12 +59,12 @@ Java EE applications must be deployed onto Java EE-compliant application servers
 
 - **Open Liberty**, is the community driven, open-source version of the WAS.
 
-- **Oracle GlassFish** is the Open Source Java EE Reference Implementation. It's the reference implementation of the Java EE standard (which includes Servlet and JSP).
+- **Oracle GlassFish** is the reference implementation of many Java EE web standards (which includes Servlet and JSP).
 
 ## Other frameworks for microservice-oriented architectures
 
 - **Netty** is a NIO client-server framework, which enables quick and easy development of network applications such as protocol servers and clients. It greatly simplifies and streamlines network programming such as TCP and UDP socket server. Netty is an asynchronous event-driven network application framework for rapid development of maintainable high-performance protocol servers & clients.
 
-- **Quarkus** is a Kubernetes Native Java stack tailored for OpenJDK HotSpot and GraalVM. Quarkus is getting more and more momentum. By the way, there are more performance-focused frameworks like this, such as Vert.x, Helidon, Payara Micro, and KumuluzEE.
+- **Quarkus** is a Kubernetes native Java stack tailored for OpenJDK HotSpot and GraalVM. Quarkus is getting more and more momentum. By the way, there are more performance-focused frameworks like this, such as Vert.x, Helidon, Payara Micro, and KumuluzEE.
 
 - **Micronaut** is a modern, JVM-based, full-stack framework for building modular, easily testable microservice, and serverless applications. Micronaut features a dependency injection and aspect-oriented programming runtime that uses no reflection. That makes it easier for Micronaut applications to run on GraalVM.

@@ -5,8 +5,8 @@ Azure offers different deployment solutions for Java applications. In this unit,
 ## Virtual machines  
 
 Azure Virtual Machines (VMs) are available for Windows and Linux. Linux VMs allow you to choose between different distributions like Ubuntu, Red Hat, or Suse.
-VMs are usually the starting point for Lift and Shift. Life and shift is the process to migrate existing machines into Azure.
-You'll have to take care of OS updates, Java runtime, Network settings, and port forwarding and Security.
+VMs are usually the starting point for Lift and Shift. Life and Shift is the process to migrate existing machines into Azure.
+You'll have to take care of OS updates, Java runtime, network settings, and port forwarding and Security.
 
 ## Containers
 
@@ -19,7 +19,7 @@ You'll have to take care of OS updates, Java runtime, Network settings, and port
 ## Azure App Service
 
 One of the easiest and straight forward deployment opportunities for Java applications on Azure are Azure App Service.
-It comes with autoscaling, integrated Monitoring, and security.
+It comes with autoscaling, integrated monitoring, and security.
 
 ## Azure Spring Cloud
 
@@ -34,5 +34,5 @@ You can deploy your Java code as Azure Functions as well. You'll benefit from gr
 Sample scenarios for Functions are
 
 - Web, mobile and IoT-connected backends
-- Bot or Real-time file and stream processing
+- Bot or real-time file and stream processing
 - Automation of scheduled tasks
