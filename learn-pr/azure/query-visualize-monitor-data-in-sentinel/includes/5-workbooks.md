@@ -27,7 +27,7 @@ On the **Azure AD Sign-in logs** page, you can expand the time range or filter t
 
 :::image type="content" source="../media/04-Filter-Users.PNG" alt-text="Screenshot that displays the filtering of users." border="true":::
 
-Contoso is interested in identifying the failed sign-in attempts, so that they can display these accounts by selecting the information tiles, and then selecting a tile or a row to display more information such as: 
+Contoso is interested in identifying the failed sign-in attempts, so that they can display these accounts by selecting the information tiles, and then selecting a tile or a row to display more information such as:
 
 - **Sign-in Location**. This section indicates the location from which the user signed in to Azure AD.
 - **Location Sign-in details**. This section on the right displays the users, their sign-in status, and the time of the sign-in attempt.
@@ -36,29 +36,28 @@ Contoso is interested in identifying the failed sign-in attempts, so that they c
 
 This information tile in the background is configured to run the query and filter the data collected from the Azure AD connector. Azure Sentinel then visualizes and presents the data collected with tables that are more meaningful and provide useful insight on user sign-in attempts.
 
-![Screenshot that present filtering users](../media/04-Failure-sign.PNG) 
+:::image type="content" source="../media/04-Failure-sign.PNG" alt-text="Screenshot that displays the filtering of users." border="true":::
 
 The workbook contains additional tiles that indicate the users who signed in using conditional access. From the **Conditional access status** table, you can review users who required multifactor authentication (MFA) to validate their identity.
 
-![Screenshot that present Conditional Access activity](../media/04-Conditional-Access.PNG)
+:::image type="content" source="../media/04-Conditional-Access.PNG" alt-text="Screenshot that depicts the Conditional Access activity." border="true":::
 
 The rest of the page also contains tables and charts that are interactive and by selecting some of the rows or tiles, you can filter the data that is presented. Some tables are created with links to corresponding logs as displayed in the following screenshot:
 
-![Screenshoot of the links](../media/04-Links.PNG)
+:::image type="content" source="../media/04-Links.PNG" alt-text="Screenshot of the links." border="true":::
 
 > [!Note]
 You can also pin the query step in the private or shared dashboard for quick retrieval.
 
 ## Edit the query from the workbook
 
-
 For example, Contoso wants to search the logs for more information that presents the failed user sign-in and they are redirected to the Azure Data Explorer, where Azure Sentinel performs the log query to filter the information.
 
-![Screenshot of Data Explorer](../media/04-Data-Explorer.png)
+:::image type="content" source="../media/04-Data-Explorer.png" alt-text="Screenshot of Data Explorer." border="true":::
 
 ## Explore saved workbooks
 
-From the **Templates** page, you can save <!--Azu, we can save the templates without opening.--> a workbook from existing templates by selecting one of the templates, and then selecting **Save.** You must provide a location to indicate where you want to save the workbook. This creates an Azure resource based on the template with template&#39;s JSON file.
+From the **Templates** page, you can save a workbook from existing templates by selecting one of the templates, and then selecting **Save.** You must provide a location to indicate where you want to save the workbook. This creates an Azure resource based on the template with template&#39;s JSON file.
 
 Saved workbooks are available on the **My Workbooks** tab, and you can further customize them. You can open saved workbooks by selecting **View saved workbook**. This opens the same page as the template workbook page, but you can customize this one based on Contoso's requirements.
 
@@ -66,21 +65,21 @@ You can select **Edit** to open the workbook in the edit mode, where you can add
 
 The header bar in the editing mode contains several options, which the following screenshot depicts.
 
-![Screenshot of Editing mode](../media/04-Editing-options.PNG)
+:::image type="content" source="../media/04-Editing-options.PNG" alt-text="Screenshot of the Editing mode." border="true":::
 
 When you switch to the editing mode, you will notice a number of **Edit** options that appear on the right, which correspond to each individual aspect of your workbook.
 
-If you select one of those edit options, you can examine the query that Azure Sentinel uses to filter the data from the corresponding log. 
+If you select one of those edit options, you can examine the query that Azure Sentinel uses to filter the data from the corresponding log.
 
 When you select the gear icon, the **Settings** page opens, where you can provide additional resources that you want to use in the workbook. You can also change the style of the workbook, provide tagging, or pin an item in the workbook.
 
-![Screenshot of Settings](../media/04-Settings.PNG)
+:::image type="content" source="../media/04-Settings.PNG" alt-text="Screenshot of the Settings page." border="true":::
 
 You can rearrange the placement of different tables in the workbook by selecting **Show Pin Options**.
 
 For advanced customization, you can select **Advanced Editor** to open the JSON representation of the current workbook, and then further customize it in the text editor as the following screenshot displays.
 
-![Screenshot of advanced editor](../media/04-JSON.PNG)
+:::image type="content" source="../media/04-JSON.PNG" alt-text="Screenshot of the advanced editor." border="true":::
 
 You can save your changes in the existing workbook or save as another workbook. When you are done with all the customization, you can exit the edit mode by selecting **Done Editing**.
 

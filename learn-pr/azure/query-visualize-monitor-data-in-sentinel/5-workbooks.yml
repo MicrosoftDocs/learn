@@ -2,7 +2,7 @@
 uid: learn.azure.query-visualize-monitor-data-in-sentinel.5-workbooks
 metadata:
   title: Use default Azure Sentinel workbooks
-  description: Use default Azure Sentinel workbooks
+  description: Use default Azure Sentinel workbooks.
   ms.date: 11/10/2020
   author: jboeshart
   ms.author: jaboes

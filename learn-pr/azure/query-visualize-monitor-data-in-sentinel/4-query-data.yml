@@ -2,7 +2,7 @@
 uid: learn.azure.query-visualize-monitor-data-in-sentinel.4-query-data
 metadata:
   title: Query data using Kusto Query Language
-  description: Query data using Kusto Query Language
+  description: Query data using Kusto Query Language.
   ms.date: 11/09/2020
   author: jboeshart
   ms.author: jaboes

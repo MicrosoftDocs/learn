@@ -2,7 +2,7 @@
 uid: learn.azure.query-visualize-monitor-data-in-sentinel.7-exercise-visualize-data
 metadata:
   title: Exercise - Visualize data using Azure Sentinel workbooks
-  description: TODO
+  description: Visualize data by using Azure Sentinel workbooks.
   ms.date: TODO
   author: jboeshart
   ms.author: jaboes

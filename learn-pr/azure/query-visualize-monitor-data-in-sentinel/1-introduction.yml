@@ -2,7 +2,7 @@
 uid: learn.azure.query-visualize-monitor-data-in-sentinel.1-introduction
 metadata:
   title: Introduction
-  description: Introduction
+  description: Provide an introduction to querying, visualizing, and monitoring data with Azure Sentinel.
   ms.date: 11/10/2020
   author: jboeshart
   ms.author: jaboes
