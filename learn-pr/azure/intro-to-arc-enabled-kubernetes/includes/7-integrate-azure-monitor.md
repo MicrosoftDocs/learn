@@ -1,4 +1,4 @@
-Monitoring is an important aspect of operationalizing any technology. Considering the complexity of Kubernetes deployments, with multiple layers of abstraction hiding its implemenation details and hundreds or thousands of containers hosting is workloads, being able to gain a comprehensive insight into the state of entire Kubernetes environment is essential for operational stability and business continuity. To accomplish this goal, companies like Contoso can use Azure Monitor. 
+Monitoring is an important aspect of operationalizing any technology. Considering the complexity of Kubernetes deployments, with multiple layers of abstraction hiding its implemenation details and hundreds or thousands of containers hosting is workloads, being able to gain a comprehensive insight into the state of entire Kubernetes environment is essential for operational stability and business continuity. To accomplish this goal, companies like Contoso can use Azure Monitor. In this unit you'll learn what is Azure Monitor for containers and how to implement it.<!--Marcin: ok?-->
 
 ## What is Azure Monitor?
 
@@ -8,9 +8,9 @@ Azure Monitor supports collection and monitoring of metrics, activity and diagno
 
 Regardless of the resource being monitored, Azure Monitor offers a consistent interface for configuring and using its features, including:
 
-- Dashboards and workbooks.
-- Metrics analysis via tools such as Metrics Explorer or Power BI.
-- Common action groups that designate alert-triggered actions and alert recipients.
+- Dashboards and workbooks
+- Metrics analysis via tools such as Metrics Explorer or Power BI <!--Marcin: spell out BI?-->
+- Common action groups that designate alert-triggered actions and alert recipients
 
 You set up and use alerts to:
 
@@ -22,7 +22,7 @@ You set up and use alerts to:
 
 Azure Monitor for containers is a feature of Azure Monitor that facilitates monitor the performance of containerized workloads running on:
 
-- Managed Kubernetes clusters hosted on Azure Kubernetes Service (AKS)
+- Managed Kubernetes clusters hosted on AKS
 - Self-managed Kubernetes clusters hosted on Azure using AKS Engine
 - Azure Container Instances
 - Self-managed Kubernetes clusters hosted on Azure Stack or on-premises
@@ -43,14 +43,14 @@ Azure Monitor for containers relies on a containerized version of the Log Analyt
 
 You can perform setup of Azure Monitor for containers for Azure Arc enabled Kubernetes deployments by using either a PowerShell or Bash script. The implementation consists of the following high-level steps:
 
-1. Verifying that you satisfy all the prerequisites. You'll need:
+1. Verifying that you satisfy all the prerequisites. You'll need: <!--Marcin: again change 'varifying' to 'varify' etc.?-->
 
-- An Azure Arc enabled Kubernetes cluster.
-- An Azure Log Analytics workspace that will host Kubernetes cluster metrics and logs.
-- Access to the cluster with a user account that has the cluster-admin role.
+- An Azure Arc enabled Kubernetes cluster
+- An Azure Log Analytics workspace that will host Kubernetes cluster metrics and logs
+- Access to the cluster with a user account that has the cluster-admin role
 - A work or school account in the Azure Active Directory (Azure AD) tenant associated with the subscription that hosts the Azure Arc enabled Kubernetes resource. This account should have, at minimum, the Contributor role within the Log Analytics workspace and the Azure Arc enabled Kubernetes resource.
 - Helm 3. Consider installing its latest release. 
-- Azure Command Line Interface (CLI) version 2.12.0 or newer or PowerShell Core.
+- Azure Command Line Interface (CLI) version 2.12.0 or newer or PowerShell Core
 - Outbound connectivity to Azure. For details regarding target URLs and ports, refer to Microsoft Docs.
 - Azure Resource ID of the Azure Arc enabled Kubernetes cluster
 
