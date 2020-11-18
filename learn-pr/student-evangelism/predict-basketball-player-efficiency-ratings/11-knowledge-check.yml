@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.11-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Answer the multiple choice questions to check your understanding of data cleansing and manipulation.
+  ms.date: 11/11/2020
+  author: sguthals
+  ms.author: shanama 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 5
+content: |
+  Answer questions to check your understanding of data cleansing and manipulation.
+quiz:
+  questions:
+  - content: "What does PER stand for in basketball stats?"
+    choices:
+    - content: "Player Efficiency Rating"
+      isCorrect: true
+      explanation: "Correct. The PER is the player efficiency rating, which is calculated using a complex algorithm and measurable game stats per player."
+    - content: "Player Earned Rebound"
+      isCorrect: false
+      explanation: "Incorrect. Rebounds are counted in three columns: ORR, DRR, and REBR for offensive and deffensive rebound rates and overall rebound rate."
+    - content: "Player Effective Role"
+      isCorrect: false
+      explanation: "Incorrect. Each player has a position, but that is not data captured with numerical data."
+    - content: "Player Elbow Rating"
+      isCorrect: false
+      explanation: "Incorrect. While 'elbow' is used to describe the upper corner of the lane on either end of the free-throw line, it isn't a stat that is often kept track of."
+  - content: "How did you impute data that is normally distributed in this module?"
+    choices:
+    - content: "Regression Imputation"
+      isCorrect: false
+      explanation: "Incorrect. While regression imputation is effective, it might be too much effort for data that has a normal distribution."
+    - content: "Mean Imputation"
+      isCorrect: true
+      explanation: "Correct. When data is normally distributed, but the ordering of the data is unknown, using the average can be an effective imputation strategy."
+    - content: "Zero Value Imputation"
+      isCorrect: false
+      explanation: "Incorrect. Replacing missing values with zero could be effective depending on the data set, but using the average is more likely to yield a close-to accurate value."
+    - content: "Above or Below Imputation"
+      isCorrect: false
+      explanation: "Incorrect. When the order of data is unknown, filling missing values with the value in the row before or after the current row is less likely to yield a close-to accurate value."
+  - content: "What is cross-validation?"
+    choices:
+    - content: "A methodology for creating data-related hypothesis."
+      isCorrect: false
+      explanation: "Incorrect. Cross-validation is used in machine model training, not in data exploration."
+    - content: "A methodology for data collection to ensure authenticity of your dataset."
+      isCorrect: false
+      explanation: "Incorrect. Cross-validation is used in machine model training, not in data gathering."
+    - content: "A programmatic way to check the accuracy of your dataset."
+      isCorrect: false
+      explanation: "Incorrect. Cross-validation is used in machine model training, not in dataset cleansing."
+    - content: "A programmatic way to split your data into `n` training and testing subsets to test the accuracy of your model."
+      isCorrect: true
+      explanation: "Correct. Rather than doing one split on your data to test the accuracy, cross-validation will randomly select `n`-splits to ensure an accurate score."
