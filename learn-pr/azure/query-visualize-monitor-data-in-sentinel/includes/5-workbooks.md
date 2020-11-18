@@ -19,8 +19,6 @@ From the **Templates** page, you can select an existing workbook to display a de
 
 As mentioned earlier, Contoso is concerned about compromised identities. As the security administrator, you can examine the existing **Audit AD Sign-in logs** workbook by selecting the template in the template section, and then selecting **View template** in the details pane.
 
-:::image type="content" source="../media/04-View-Existing-workbook.PNG" alt-text="Screenshot that displays existing workbooks." border="true":::
-
 The **Azure AD Sign-in logs** workbook contains predefined charts, graphs, and tables that can provide important insight about the sign-in activity in Azure AD. You can find information about user sign-ins and locations, email addresses, and IP addresses of your users. In addition, you can also review information about failed activities and the errors that triggered the failures.
 
 On the **Azure AD Sign-in logs** page, you can expand the time range or filter the apps and users that have sign-in privileges in the Azure AD. For example, Contoso wants to identify users that have the ability to sign-in to the Azure portal, so they can filter the data as displayed in the following screenshot:
@@ -35,8 +33,6 @@ Contoso is interested in identifying the failed sign-in attempts, so that they c
 - **Device Sign-in details**. This section displays the users that signed in on a particular device and the time they signed in.
 
 This information tile in the background is configured to run the query and filter the data collected from the Azure AD connector. Azure Sentinel then visualizes and presents the data collected with tables that are more meaningful and provide useful insight on user sign-in attempts.
-
-:::image type="content" source="../media/04-Failure-sign.PNG" alt-text="Screenshot that displays the filtering of users." border="true":::
 
 The workbook contains additional tiles that indicate the users who signed in using conditional access. From the **Conditional access status** table, you can review users who required multifactor authentication (MFA) to validate their identity.
 
@@ -77,9 +73,7 @@ When you select the gear icon, the **Settings** page opens, where you can provid
 
 You can rearrange the placement of different tables in the workbook by selecting **Show Pin Options**.
 
-For advanced customization, you can select **Advanced Editor** to open the JSON representation of the current workbook, and then further customize it in the text editor as the following screenshot displays.
-
-:::image type="content" source="../media/04-JSON.PNG" alt-text="Screenshot of the advanced editor." border="true":::
+For advanced customization, you can select **Advanced Editor** to open the JSON representation of the current workbook, and then further customize it in the text editor. 
 
 You can save your changes in the existing workbook or save as another workbook. When you are done with all the customization, you can exit the edit mode by selecting **Done Editing**.
 
