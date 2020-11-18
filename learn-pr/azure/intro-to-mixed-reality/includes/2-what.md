@@ -6,7 +6,7 @@ In visual terms, imagine Mixed Reality as a creative space that exists between t
 
 :::image type="content" source="../media/mixed-reality-spectrum.png" alt-text="Image of the Mixed Reality spectrum with the physical world on the left and the digital world on the right.":::
 
-Because Mixed Reality covers such a broad range of possible user experiences, it comes with a set of coexisting features that are entirely unique, including but not limited to:
+Because Mixed Reality covers such a broad range of possible user experiences, it comes with a set of interaction types that are entirely unique, including but not limited to:
 
 * **Environmental input** – capturing a user’s position in the world, mapping surfaces and boundaries in the area
 * **Spatialized sound** – 3D sound that has position and depth in a virtual space, just like in the real-world

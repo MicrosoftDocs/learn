@@ -22,6 +22,6 @@ Virtual Reality applications are great for training and for simulations where us
 
 :::image type="content" source="../media/vr-01.jpg" alt-text="Image of a user wearing an immersive headset and holding a motion controller.":::
 
-The next logical question you’re probably asking yourself is – “With all these choices, how do I decide between AR and VR when I start developing an MR application?”. The easy answer is that we have a video for just that scenario to round out our discussion:
+The next logical question you’re probably asking yourself is – “With all these choices, how do I decide which part of the Mixed Reality spectrum I start developing an MR application. Would my application be better in AR or VR?”. The easy answer is that we have a video for just that scenario to round out our discussion:
 
 ![Choosing between AR and VR development video](https://www.youtube.com/watch?v=wJyiRRN9CjY&feature=emb_title&ab_channel=WindowsDeveloper)
