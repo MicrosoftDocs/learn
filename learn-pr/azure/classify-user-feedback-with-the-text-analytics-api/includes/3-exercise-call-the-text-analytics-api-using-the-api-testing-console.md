@@ -35,7 +35,7 @@ Now that we have our Cognitive Services account, let's find the access key so we
 
 1. Click on the **Go to resource** button on the *Deployment succeeded* notification. This action opens the account Quickstart.
 
-1. Select the **Keys** menu item from the menu on the left, or in the *Grab your keys* section of the quickstart. This action opens the **Manage keys** page.
+1. Select the **Keys and Endpoint** menu item from the menu on the left, or in the *Grab your keys* section of the quickstart. This action opens the **Manage keys** page.
 
 1. Copy one of the keys using the copy button.
 

@@ -2,7 +2,7 @@ Now let's look at another process from our bike rental business and decide what 
 
 ## Scenario
 
-Your bike technicians currently use a spreadsheet to record the actions they took to repair and maintain each bike when it arrives back from a customer. Difficulties have arisen when spare parts are needed, because the staff have no way of knowing when a bike is waiting for repairs or parts. This problem has resulted in bikes being rented to customers with worn brake pads, flat tires, and other faults that may damage our brand as a high-quality bike rental company.
+Your bike technicians, currently use a spreadsheet, to record the actions they took to repair and maintain each bike. Difficulties have arisen when spare parts are needed, because the staff have no way of knowing when a bike is waiting for repairs or parts. This problem has resulted in bikes being rented to customers with worn brake pads, flat tires, and other faults that may damage the companies brand as a high-quality bike rental company.
 
 You want to build a system that governs the maintenance and repair process and allows everyone to find answers to the following questions.
 

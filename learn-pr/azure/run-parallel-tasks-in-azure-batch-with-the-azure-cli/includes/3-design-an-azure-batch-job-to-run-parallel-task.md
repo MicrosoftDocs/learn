@@ -12,7 +12,7 @@ To get to grips with Azure Batch and the CLI, you decide on a simple proof-of-co
 
 This kind of proof-of-concept actually underlies many real-world applications of Azure Batch. For example, in the OCR scenario, tasks would also install software like Imagemagick in order to convert the uploaded water purification images to the TIF format, and would then install Tesseract to perform the work of conversion. These tasks would be partitioned in such a way that each worker node would perform a portion of the OCR work in parallel with the others in order to complete faster.
 
-Even this proof-of-concept will demonstrate important components of Azure Batch working in concert together. As shown in the graphic below, you'll create a pool, you'll create worker nodes, you'll create a job, and you'll create tasks, all using the Azure CLI to issue commands and get immediate feedback.
+Even this proof-of-concept will demonstrate important components of Azure Batch working in concert together. You'll create a pool, you'll create worker nodes, you'll create a job, and you'll create tasks, all using the Azure CLI to issue commands and get immediate feedback.
 
 <!-- TODO: Add a stripped-down version of the linked graphic below; it only needs the bottom half, without reference to Azure storage.  Please also replace 'Application or service' with 'Azure CLI' and an image of a terminal window https://docs.microsoft.com/azure/batch/batch-technical-overview -->
 

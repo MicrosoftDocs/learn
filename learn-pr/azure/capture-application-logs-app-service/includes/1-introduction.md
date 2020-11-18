@@ -2,15 +2,17 @@ Suppose you are the lead web developer for an online fashion site based on Azure
 
 In this module, to record traces in your web apps, you will enable app logging. You will enable logging, monitor a live log stream, and retrieve logs from Azure.
 
+
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
-- Enable app logging on an Azure Web App
-- View live app logging activity with the log streaming service
-- Retrieve app log files from an app with Kudu or the Azure CLI
+- Enable app logging on an Azure Web App.
+- View live app logging activity with the log streaming service.
+- Retrieve app log files from an app with Kudu or the Azure CLI.
 
 ## Prerequisites
 
 - Experience in basic web app development and deployment, including creating trace output from apps.
+
 - In the Azure portal, know how to navigate resources.
