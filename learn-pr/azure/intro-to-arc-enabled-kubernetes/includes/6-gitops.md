@@ -20,7 +20,7 @@ GitOps associates your Kubernetes cluster with one or more Git repositories, whe
 > [!NOTE] 
 > For examples of manifest files illustrating configuration of Azure Arc enabled Kubernetes clusters, refer to [the official, Microsoft-curated GitHub repository](https://github.com/Azure/arc-k8s-demo). <!--Marcin: is this an ancillary portal? If yes, please add '?azure-portal=true' at the end of the URL, please. If not, you would have to remove it from here, please.-->
 
-:::image type="content" source="../media/arc_enabled_k8s_gitops.png" alt-text="A graphic depicts the process of applying GitOps-based configuration to multiple Azure Arc enabled clusters." border="false":::
+:::image type="content" source="../media/arc_enabled_k8s_gitops.png" alt-text="A graphic depicts the process of applying GitOps-based configuration to multiple Azure Arc enabled clusters." border="false":::  <!--Marcin: please include the unit number in the title for your graphic. In which unit is the other graphic safed in the media folder?-->
 
 Each association between an Azure Arc enabled Kubernetes cluster configuration and the corresponding GitOps repository resides in Azure, as part of the Azure Resource Manager resource representing the Azure Arc enabled Kubernetes clusters. You can configure that association via traditional Azure management interfaces, such as the Azure portal or Azure CLI. Alternatively, you can use for this purpose Azure Policy, which automates this process, allowing you to apply it consistently to all resources in entire subscription or indiviual resource groups you designate.
 
