@@ -10,8 +10,8 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
 > [!NOTE]
 > If you choose to perform the exercise in this module, be aware you may incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/)
 
-## Task 1: Create an analytics rule from the analytics rule wizard 
-<!-- Missing "the". Sentence should be "Create an analytics rule from analytics rule wizard" -->
+### Task 1: Create an analytics rule from the analytics rule wizard 
+
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Sentinel workspace.
 2. On the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
 3. On the **Azure Sentinel | Analytics** blade, select **Create** and then select **Scheduled Query Rule**.
@@ -42,7 +42,7 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
   :::image type="content" source="../media/07-Rule-Logic.PNG" alt-text="Screenshot Analytics Rule Logic." border="true":::
 
 7. In the  **Map entities**  section, you can define the entities that are returned as part of the query rule and that you can use to perform in-depth analysis.
-8. In the **Query Scheduling** section, you can configure how often the query should run, and how far in history to look back. Accept the default values.
+8. In the **Query Scheduling** section, you can configure how often the query should run, and how far in history to look back. Select query to run on every 5 min.
 9. In the **Alert threshold** section, you can specify the number of positive results that can be returned for the rule before an alert gets generated. Accept the default values.
 10. In the **Event grouping** section, accept the default selection to **Group all events into a single alert.**
 11. In the **Suppression** section, you can configure **Stop running the Query after the alert is generated** to  **On**  or  **Off.** 
@@ -57,8 +57,16 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
 17. Select **Next:Review**.
 18. In the **Review and Create** page, verify that the validation was successful, and then select **Create**.
 
-**Task 2: Create an analytics rule from an existing template
-<!-- Missing "##" before "Task 2" -->
+### Task 2: Invoke an incident and review the associated actions
+
+1. In the Azure portal, in the **Search resources, services, and docs** text box, enter **virtual machines**, and then select **Enter**.
+2. On the **Virtual machines** page, locate and select the **simple-vm** virtual machine, and then on the header bar, select **Delete**.
+
+> [!Note]
+> This task creates an incident based on the analytics rule that you created in Task 1. Incident creation can take up to 5 minutes. You can proceed with rest of the steps of this unit and then observe the results at later time.
+
+### Task 3: Create an analytics rule from an existing template
+
 1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Sentinel workspace.
 2. On the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
 3. On the **Azure Sentinel | Analytics** blade, select **Rule templates.**
@@ -70,11 +78,11 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
 9. If you want to further filter the alerts from Azure Security Center, you can add additional text in **Include specific alerts** or **Exclude specific alerts**.
 10. Select **Next:Review**, and then on the **Review and Create** page, select **Create**.
 
-## Results
+### Results
 
 After completing this exercise, you will have created an incident rule from an existing template and created a scheduled query rule by using your own query code.
 
-## Clean up the resources
+### Clean up the resources
 
 1. In the Azure portal, search for **Resource groups**.
 1. Select **azure-sentinel-rg**.
