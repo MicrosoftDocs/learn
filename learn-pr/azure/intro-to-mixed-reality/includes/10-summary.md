@@ -10,7 +10,7 @@ The journey isn’t over yet - consider following up on the industry-based use c
 - [Healthcare](https://www.microsoft.com/hololens/industry-healthcare)
 - [Education](https://www.microsoft.com/hololens/industry-education)
 
-## Further Reading
+## Further reading
 
 - Learn more about the [HoloLens](https://www.microsoft.com/hololens)
 - Learn more about [Windows Mixed Reality immersive headsets](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)

@@ -11,7 +11,7 @@ By the end of this module, you’ll be able to confidently discuss Mixed Reality
 By the end of this module, you'll be able to:
 
 - Define Mixed Reality
-- Differentiate between Virtual and Augmented reality
+- Differentiate between Virtual and Augmented Reality
 - Identify Mixed Reality hardware devices
 - Describe the core ideas behind holograms
 - Start designing for 3D applications and interactions
@@ -21,4 +21,4 @@ By the end of this module, you'll be able to:
 
 ## Prerequisites
 
-This learn module has no prerequisites, come as you are and dive into Mixed Reality!
+This Learn module has no prerequisites, come as you are and dive into Mixed Reality!
