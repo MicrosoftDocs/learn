@@ -1,61 +1,20 @@
 You're a new developer at Tailwind Traders. Before you can start, you'll need to get your development environment configured. Don't worry, Tailwind Traders has made the onboarding process easy. There are just a few small steps you need to follow to get up and running.
 
-## Create the database
+## Scaffold the project resources
 
-1. Sign into the sandbox (also known as, "Tailwind Traders Production Environment") as indicated at the top of this page.
+1. Sign into the Sandbox (also known as, "Tailwind Traders Production Environment") as indicated at the top of this page.
 
-1. Copy the following command into the Sandbox, and to get the tenant ID for your sandbox subscription, press **Enter**.
-
-   ```bash
-   az account list --query "[?name=='Concierge Subscription'].tenantId" -o tsv
-   ```
-
-1. In the sandbox, highlight the ID, and copy it to your clipboard.
-
-## Set up Visual Studio Code
-
-1. Open Visual Studio Code.
-
-1. In Visual Studio Code, to open settings, press <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>,</kbd>.
-
-1. Enter "azure tenant".
-
-1. Enter the tenant from your clipboard into the **Azure: Tenant** textbox.
-
-   :::image type="content" source="../media/azure-tenant.png" alt-text="Screenshot of Visual Studio Code settings with a red box outlining the Azure Tenant setting." loc-scope="vs-code":::
-
-> [!IMPORTANT]
-> If you are already signed in to Azure under a different account, you will need to log out of Azure and then log back in with the account you used to access this Learn Module.
-
-1. To open the Command Palette, press <kbd>F1</kbd>.
-
-1. Enter "select subscription".
-
-1. Select "Azure: Select Subscriptions".
-
-1. Select "Concierge Subscription" by checking the box next to it.
-
-   :::image type="content" source="../media/select-subscription.png" alt-text="Screenshot of Visual Studio Code Command Palette displaying available Azure Subscriptions to connect to." loc-scope="vs-code":::
-
-## Create the database
-
-1. To open the Command Palette, press <kbd>F1</kbd>.
-
-1. Enter "Cloud Shell", and select "Azure: Open Bash in Cloud Shell".
-
-   :::image type="content" source="../media/vs-code-cloud-shell.png" alt-text="Screenshot of the cloud shell inside of a Visual Studio Code terminal instance." loc-scope="vs-code":::
-
-1. Copy the following line, and paste it into the Cloud Shell terminal instance in Visual Studio Code.
+1. Copy the following line, and paste it into the Sandbox terminal to the right.
 
    ```bash
    git clone https://github.com/MicrosoftDocs/mslearn-build-api-azure-functions && cd mslearn-build-api-azure-functions/DB_SETUP && ./CREATE_DATABASE.sh
    ```
 
-   This will create a new Azure Cosmos DB account, database, and collection populated with product data. This process can take up to 10 minutes. Feel free to continue with the Learn Module. Just make sure to keep the terminal instance open until the process is complete.
+   This will create a new Azure Cosmos DB account, database, and collection populated with product data. This process can take up to 10 minutes. Feel free to continue with the Learn Module. The databse should be ready by the time we need it for this module.
 
-## Clone the existing project
+## Clone the project in Visual Studio Code
 
-Fortunately, someone has already written the front end part of the app. They have creatively named it, "Products Manager." All you need to do is create an API for it. First, though, you need to pull down and set up the Products Manager project.
+1. Open Visual Studio Code.
 
 1. To open the Command Palette in Visual Studio Code, press <kbd>F1</kbd>.
 
