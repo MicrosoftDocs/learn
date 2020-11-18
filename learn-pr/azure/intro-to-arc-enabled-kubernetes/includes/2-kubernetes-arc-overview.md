@@ -1,4 +1,4 @@
-Before we focus on how Azure Arc optimizes management of Kubernetes clusters and their workloads, it is important to have clear understanding of the fundamental characteristics of each of these technologies. 
+Before we focus on how Azure Arc optimizes management of Kubernetes clusters and their workloads, it is important to have clear understanding of the fundamental characteristics of each of these technologies. In this unit you'll learn about Kubernetes and Azure Arc, and their benefits. <!--Marcin: I added this sentence to maintain the standard wording, ok for you?-->
 
 ## What is Kubernetes?
 
@@ -11,7 +11,7 @@ Besides container-based isolation, Kubernetes offers the ability to isolate pods
 
 ### What are the key benefits of Kubernetes?
 
-Kubernetes abstracts away the complexity of a multi-container environment that combines compute, networking, and storage components that hundreds or thousands of containers rely on. It offers declarative management model, in which you simply describe the target desired configuration and leave its implementation details for the Kubernetes control plane. 
+Kubernetes abstracts away the complexity of a multi-container environment that combines compute, networking, and storage components that hundreds or thousands of containers rely on. It offers a declarative management model, in which you simply describe the target desired configuration and leave its implementation details for the Kubernetes control plane. 
 
 > [!NOTE] 
 > With the declaritive management model, you can use YAML-formatted manifest files to control provision, modify, and delete Kubernetes resources, such as pods or deployments. Alternatively, you can use for this purpose packaged collections of YAML files, referred to as Helm charts. Helm, currently in version 3, is a package manager for Kubernetes, which also provides the ability to deploy packaged applications to Kubernetes clusters.
@@ -24,7 +24,7 @@ In addition, the control plane delivers such benefits as:
 - Auto-discovery of new pod deployments. 
 - Load balancing across pods running the same workloads.
 
-Effectively, Kubernetes allows you to treat your datacenter as a unified compute resource. You don't worry about how and where you deploy your containers, only about deploying and scaling your apps as needed.
+Effectively, Kubernetes allows you to treat your datacenter as a unified compute resource. You don't have to worry about how and where you deploy your containers, only about deploying and scaling your apps as needed.
 
 However, it's important to understand that Kubernetes is an highly customizable orchestration platform, which requires proper configuration, management, and maintenance:
 
@@ -47,10 +47,10 @@ Azure Arc is an example of such solution. It consists of a set of technologies t
 
 Azure Arc supports Azure integration in several scenarios for different types of resources residing outside of Azure via the following offerings:
 
-- Azure Arc enabled servers - physical and virtual machines running Windows or Linux operating system. 
-- Azure Arc enabled SQL Server - SQL Server instances running on Azure Arc enabled servers
+- Azure Arc enabled servers - physical and virtual machines (VMs) running Windows or Linux operating system. 
+- Azure Arc enabled SQL Server - SQL Server instances running on Azure Arc enabled servers.
 - Azure Arc enabled Kubernetes - a wide range of Kubernetes distributions.
-- Azure Stack HCI - physical clusters with virtualized workloads and containerized workloads
+- Azure Stack HCI - physical clusters with virtualized workloads and containerized workloads.
 - Azure Kubernetes Service on Azure Stack HCI - Azure Kubernetes Service (AKS) running on Azure Stack HCI clusters.
 - Azure Arc enabled data services - Azure SQL Managed Instance and PostgreSQL Hyperscale services running on Azure Arc enabled Kubernetes or Azure Kubernetes Service on Azure Stack HCI.
 
@@ -68,7 +68,9 @@ A number of Azure Arc benefits are independent of the resouce type, since they r
 
 - The ability to organize all organizational resources by using Azure management groups, subscriptions, resource groups, and tags.
 - A single, comprehensive inventory of organizational assets across multi-clouds and on-premises, including support for searching and indexing by using Azure Resource Graph.
-- A consolidated view of Azure and Azure Arc enabled resources via the Azure portal, Azure CLI, Azure PowerShell, and Azure REST API.
+- A consolidated view of Azure and Azure Arc enabled resources via the Azure portal, Azure CLI, Azure PowerShell, and Azure REST API. <!--Marcin: I think it might be good to spell out this acronym. What do you think?-->
 - Delegation of permissions on the management plane by using Azure Role Based Access Control (RBAC).
 - Support for the resource context access to Log Analytics data. Resource context allows you to restrict the scope of access to Log Analytics data based on the permissions to the corresponding Azure resource. Because each Azure Arc enabled server, cluster, or data service exists as an Azure resource, you can control access to its Log Analytics logs by relying on RBAC permissions assigned to that resource.
 - Integration with Azure Monitor. You can use Azure Monitor to help monitor and manage your server resources. Azure Monitor is a core component of the Microsoft strategy to extend comprehensive, cloud-based monitoring functionality beyond Azure to on-premises datacenters and to Microsoft and other cloud providers.
+
+<!--Marcin: I am not sure, but should you include a knowledge check in each unit?-->
