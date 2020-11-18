@@ -33,11 +33,12 @@ You can use the following example command to create a storage account. Remember 
 
 ```azurecli
 az storage account create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --kind StorageV2 \
-        --sku Standard_LRS \
-        --access-tier Cool \
-        --name <name>
+    --name <name> \
+    --resource-group learn-5234087c-98f2-4fcd-9df4-245776491cfd \
+    --location eastus \
+    --kind BlobStorage \
+    --sku Standard_LRS \
+    --access-tier cool
 ```
 
 > [!TIP]
