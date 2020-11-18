@@ -2,7 +2,7 @@ In this unit, we'll distinguish between the different types of server-side Java 
 
 ## Monolithic applications
 
-A monolithic application is  an *All in One* solution that still fits for many projects. A Monolithic application is a good start for prototyping and startups. It's simple to develop, easy to debug and to test, and simple to deploy. They bring little cross-cutting concerns such as logging, caching, or monitoring.
+A monolithic application is  an *All in One* solution that still fits for many projects. A Monolithic application is a good start for prototyping and startups. It's simple to develop, easy to debug and to test, and simple to deploy.
 
 Traditionally your monolithic applications run on application servers and scale the entire application as a whole.
 
@@ -14,7 +14,7 @@ In a Cross-functional team, you can deliver features as independently as possibl
 
 ## Batch
 
-Some applications are intended to run briefly. They execute a particular workload, and then exit rather than wait for requests or user input. Batch Jobs are a solution for this use-case. Even though some batches can last for hours. Sometimes jobs need to run once or at regular, scheduled intervals. On premises, such jobs are often invoked from a server's crontab.
+Some applications are intended to run briefly. They execute a particular workload, and then exit rather than wait for requests or user input. Batch Jobs are a solution for this use-case. Even though some batches can last for hours. Sometimes jobs need to run once or at regular, scheduled intervals.
 
 ## Serverless
 

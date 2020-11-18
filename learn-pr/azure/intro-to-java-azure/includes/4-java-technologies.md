@@ -2,7 +2,7 @@ In this unit, we distinguish between the different types of Java frameworks, ser
 
 ## Spring Framework
 
-The Spring Framework is an application framework and inversion of control container. Spring doesn't impose any specific programming model as an addition to the Enterprise JavaBeans (EJB) model.
+The Spring Framework is an application framework and inversion of control container. Spring has historically been used to compliment the Enterprise JavaBeans (EJB) model.
 Its core functionalities are:
 
 - Dependency Injection
@@ -31,17 +31,17 @@ Spring Batch is a lightweight framework for robust batch applications vital for 
 
 ## MicroProfile and Jakarta EE, the Java for Enterprises
 
-MicroProfile and Jakarta EE can be seen as the open source follow-up of the Java Enterprise Edition.
+MicroProfile and Jakarta EE can be seen as the open source follow-up of the Java Enterprise Edition specifications.
 
 ### MicroProfile
 
-is a set of specifications for Microservice Architectures. They call themselves an _open forum to optimize Enterprise Java for a microservices architecture_. The MicroProfile aims to innovate across multiple implementations and collaborate on common areas of interest. The goal remains standardization.
+Microprofile is a set of specifications for microservice Architectures. They call themselves an _open forum to optimize Enterprise Java for a microservices architecture_. The MicroProfile aims to innovate across multiple implementations and collaborate on common areas of interest.
 
 ### Jakarta EE
 
 Jakarta EE is a set of specifications for building enterprise applications. Its modularized structure enables developers to create efficient software solutions. Jakarta EE applications can be packaged as either EAR files or WAR files.
 
-- **WebProfile** is a properly defined subset of Jakarta EE for backend services with Web focus. But no worries! You can add specific APIs of the Enterprise platform on top of it.
+- **WebProfile** is a subset of Jakarta EE for backend services with a Web focus. But no worries! You can add specific APIs of the Enterprise platform on top of it.
 
 ## Application servers
 
@@ -53,13 +53,13 @@ Java EE applications must be deployed onto Java EE-compliant application servers
 
 - **Red Hat JBoss Enterprise Application Platform** delivers enterprise-grade security, performance for on-premise; virtual; or in private, public, or hybrid clouds.
 
-- **WildFly** is the open source upstream for JBoss EAP. The community driven flavor is great for development and testing.
+- **WildFly** is the open source upstream for JBoss EAP. This community driven flavor is great for development and testing.
 
 - **IBM WebSphere Application Server** (WAS) is a flexible, security-rich Java server runtime environment for enterprise applications. It focuses on high reliability. WAS supports microservices and standards-based programming models. You can modernize at your own pace, gain greater visibility across workloads, analyze enterprise applications, and advance your journey to Kubernetes.
 
 - **Open Liberty**, is the community driven, open-source version of the WAS.
 
-- **Oracle GlassFish** is the Open Source Java EE Reference Implementation; as such, they welcome external contributions. It's the reference implementation of the Java EE standard (which includes Servlet and JSP).
+- **Oracle GlassFish** is the Open Source Java EE Reference Implementation. It's the reference implementation of the Java EE standard (which includes Servlet and JSP).
 
 ## Other frameworks for microservice-oriented architectures
 

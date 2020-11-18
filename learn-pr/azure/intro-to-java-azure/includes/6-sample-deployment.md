@@ -1,8 +1,6 @@
-In this unit, you'll configure a Spring Boot application to be deployed via Maven and then create and deploy to an Azure App Service instance.
+In this unit, you'll configure a Spring Boot application to be deployed via Maven and then create and deploy it to an Azure App Service instance.
 
 ## Sample application
-
-You can go with an example, you've created by yourself. Or you succeed with a common Spring Boot example that can be found at the spring starters.
 
 Clone in your favorite command-line tool.
 
