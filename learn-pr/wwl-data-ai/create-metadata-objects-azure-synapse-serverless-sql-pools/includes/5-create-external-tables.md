@@ -3,7 +3,7 @@ External tables are useful when you want to control access to external data in S
 -	Public storage where users access public storage files. 
 -	Protected storage where users access storage files using SAS credential, Azure AD identity, or Managed Identity of Synapse workspace. 
 
-[!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Introduction-to-Polybase/player?format=ny] 
+> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Introduction-to-Polybase/player?format=ny] 
 
 ## Prerequisites 
 Your first step is to create a database where the tables will be created. Then initialize the objects by executing [setup script]( https://github.com/Azure-Samples/Synapse/blob/master/SQL/Samples/LdwSample/SampleDB.sql) on that database. This setup script will create the following objects that are used in this sample: 

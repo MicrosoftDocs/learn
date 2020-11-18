@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/17/2020
+  ms.date: 11/18/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ quiz:
       explanation: "Incorrect. An EXTERNAL TABLE creates the table object without selecting data into it."
     - content: "CREDENTIAL."
       isCorrect: false
-      explanation: "Incorrect. A CREDENTIAL is an object that contains a user, managed identitiy or shared access signature to access a data source."
+      explanation: "Incorrect. A CREDENTIAL is an object that contains a user, managed identity or shared access signature to access a data source."
   - content: "Which metadata object provides the connection information to the files in a data lake store?"
     choices:
     - content: "DATABASE."
@@ -31,13 +31,13 @@ quiz:
       explanation: "Incorrect. A DATABASE is an object held within a serverless SQL pool to hold data and metadata objects."
     - content: "DATA SOURCE."
       isCorrect: true
-      explanation: "Correct. a DATA SOURCE provides the connection information to the files in a data lake store ."
+      explanation: "Correct. a DATA SOURCE provides the connection information to the files in a data lake store."
     - content: "EXTERNAL TABLE."
       isCorrect: false
       explanation: "Incorrect. An EXTERNAL TABLE creates the table object without selecting data into it."
   - content: "Which CREDENTIAL identity type can be time limited?"
     choices:
-    - content: "Azure Active Directory user ."
+    - content: "Azure Active Directory user."
       isCorrect: false
       explanation: "Incorrect. An Azure Active Directory user cannot be set to a time limit."
     - content: "Managed identity."
