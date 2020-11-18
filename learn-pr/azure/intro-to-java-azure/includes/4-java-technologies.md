@@ -1,4 +1,4 @@
-In this unit, we distinguish between the different types of Java frameworks, servers and platforms.
+In this unit, we distinguish between the different types of Java frameworks, servers, and platforms.
 
 ## Spring Framework
 
