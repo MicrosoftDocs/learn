@@ -1,29 +1,21 @@
-[topic sentence]
+GitHub products marry features to licensing plans and understanding the various products, features, and licensing is an important consideration when using GitHub in organizations and enterprises.
 
-The C# programming language allows you to build many types of applications, from business applications to analyze and process data, dynamic web applications, games, financial or scientific applications, cloud-based applications, mobile applications and more.
+Suppose you work at a company that needs to rethink their existing source code management strategy.  They know they want to use GitHub, but are unsure which features they need, how much it would cost, and how to get started.  Your company's VP of software development wants to better understand the costs associated with GitHub and asked you to become the subject matter expert as the VP seeks to make this change in the organization.
 
-[scenario]
+In this module, you'll discover GitHub's products and associated features.  You'll learn how each product is priced, and discover how other features are licensed.
 
-Since you’re just getting started, suppose you simply want to create a MadLibs-style game that prompts a user for the names of people, places, and things and combines them in a humorous way and displays them back to the user. You would need to create simple logic to accept user input, combine user input with pre-written hard-coded text, and display it to the user.
-
-[prose TOC]
-
-In this module, you will create an application that accepts user input from the keyboard, combine that input with hard-coded text, and present the final result back to the user. You’ll learn some initial concepts like basic C# syntax including several common operators, the string data type and how to create literal strings, how to initialize variables then set and retrieve values from a variable, why you would want to comment out a line of code, how your code is structured into classes and methods and how to call methods.
-
-[goal]
-
-By the end of this module, you will be able to build simple applications that can accept user input, combine that input with literal text, and output the result to the user.
+By the end of this module, you will be able to discuss GitHub's products, features, and licensing.
 
 ## Learning objectives
 
-After completing this module, you will be able to:
+After completing this module, you'll be able to:
 
-- Explain the different GitHub plans, features, and privacy options. 
-- Discuss the pricing options of each GitHub plan and paid features.
-- Describe licensing and privacy features for GitHub Actions, Learning Lab, and codespaces.
+- Explain the difference between each GitHub product, and which features are available with each product.
+- Make key distinctions between plans, account types, teams, repository permissions, organization permission levels, and so on.
+- Describe licensing terms for GitHub Actions, GitHub Packages, and Codespaces.
 
 ## Prerequisites
 
 - Familiarity with GitHub, repositories, and the basics of managing individual accounts is required
-- A high level familiarity with GitHub's product plans and features would be helpful, but not required
+- A high-level familiarity with GitHub's product plans and features would be helpful, but not required
 
