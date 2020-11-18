@@ -39,7 +39,7 @@ To get a detailed view of the individual activity runs of a specific pipeline ru
 
 The list view shows activity runs that correspond to each pipeline run. Hover over the specific activity run to get run-specific information such as the JSON input, JSON output, and detailed activity-specific monitoring experiences. Activities such as data flow, copy, and Azure Databricks have a dedicated view that can be seen by clicking on the eyeglasses icon.
 
-![List view for monitoring activity runs](../media/activity-runs.png)
+![View the activity runs in the monitoring tool](../media/activity-runs.png)
 
 | **Column name** | **Description** |
 | --- | --- |
@@ -56,7 +56,7 @@ The list view shows activity runs that correspond to each pipeline run. Hover ov
 
 If an activity failed, you can see the detailed error message by clicking on the icon in the error column. 
 
-![List view for monitoring activity runs](../media/activity-run-error.png)
+![Viewing activity run errors](../media/activity-run-error.png)
 
 ## Gantt view
 
@@ -70,7 +70,7 @@ The length of the bar informs the duration of the pipeline. You can also select 
 
 ## Monitor data flow debug sessions
 
-Mapping data flows allow you to build code-free data transformation logic that runs at scale. When building your logic, you can turn on a debug session to interactively work with your data using a live Spark cluster. To learn more, read about [mapping data flow debug mode](concepts-data-flow-debug-mode.md).
+Mapping data flows allow you to build code-free data transformation logic that runs at scale. When building your logic, you can turn on a debug session to interactively work with your data using a live Spark cluster.
 
 You can monitor active data flow debug sessions across a factory in the **Monitor** experience.
 
@@ -80,7 +80,7 @@ You can monitor active data flow debug sessions across a factory in the **Monito
 
 To view a high-level visual display of your pipeline, activity, and trigger runs, go to the **Dashboards** pane. Here you can see the number of successes and failures over a specified time period.
 
-![Gantt chart duration](../media/monitor-dashboard.png)
+![reading the monitor dashboard](../media/monitor-dashboard.png)
 
 ## Monitor using Azure Monitor
 

@@ -1,4 +1,4 @@
-While most Azure Data Factory users develop using the user experience, ADF is available in a variety of software development kits (SDKs) for those who wish to develop programmatically. When using a SDK, a user works directly against the Azure Data Factory service and all updates are immediately applied to the factory. 
+While most Azure Data Factory users develop using the user experience, ADF is available in a variety of software development kits (SDKs) for anyone who wish to develop programmatically. When using a SDK, a user works directly against the Azure Data Factory service and all updates are immediately applied to the factory. 
 
 There are Azure Data Factory libraries for Python that enables you to perform the management of the service.
 
@@ -8,7 +8,7 @@ You can install the following package
 pip install azure-mgmt-datafactory 
 ```
 
-From there you can perform a range activities, such as creating Azure Data Factory in your subscription on the East US region, as shown in the following code.
+From there you can perform a range of activities, such as creating Azure Data Factory in your subscription on the East US region, as shown in the following code.
 
 ```Python
 from azure.common.credentials import ServicePrincipalCredentials
@@ -35,10 +35,10 @@ while df.provisioning_state != 'Succeeded':
 
 In addition to Python, you can also programmatically interact with Azure Data Factory with the other languages and SDKs as listed:
 
-- .Net
+- .NET
 - REST APIs
 - PowerShell
 - Azure Resource Manager Templates
-- Data FLow scripts
+- Data flow scripts
 
 Data flow script (DFS) is the underlying metadata, similar to a coding language, that is used to execute the transformations that are included in a mapping data flow. Every transformation is represented by a series of properties that provide the necessary information to run the job properly. The script is visible and editable from ADF by clicking on the "script" button on the top ribbon of the browser UI.

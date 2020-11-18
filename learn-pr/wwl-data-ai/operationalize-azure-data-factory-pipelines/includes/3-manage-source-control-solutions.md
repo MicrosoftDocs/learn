@@ -96,7 +96,7 @@ A side pane will open where you confirm that the publish branch and pending chan
 Typically you don't want every team member to have permissions to update the Data Factory. The following permissions settings are recommended:
 
 *   All team members should have read permissions to the Data Factory.
-*   Only a select set of people should be allowed to publish to the Data Factory. To do so, they must have the **Data Factory contributor** role on the **Resource Group** that contains the Data Factory. For more information on permissions, see [Roles and permissions for Azure Data Factory](concepts-roles-permissions.md).
+*   Only a select set of people should be allowed to publish to the Data Factory. To do so, they must have the **Data Factory contributor** role on the **Resource Group** that contains the Data Factory.
 
 It's recommended to not allow direct check-ins to the collaboration branch. This restriction can help prevent bugs as every check-in will go through a pull request review process.
 

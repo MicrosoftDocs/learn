@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/17/2020
+  ms.date: 11/18/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 4
 quiz:
   questions:
   - content: "Which version control software does Azure Data Factory integrate with?"
@@ -24,7 +24,7 @@ quiz:
     - content: "Git repositories."
       isCorrect: true
       explanation: "Correct. Azure Data Factory allows you to configure a Git repository with either Azure Repos or GitHub, and is a version control system that allows for easier change tracking and collaboration."
-  - content: "Which feature do you use to commit the changes you have made in your branch of Azure Data Factory work with the main branch in a Git repository?"
+  - content: "Which feature commits the changes of Azure Data Factory work in a custom branch created with the main branch in a Git repository?"
     choices:
     - content: "Repo."
       isCorrect: false
