@@ -11,7 +11,7 @@ Microsoft provides two graphical tools you can use to create and manage file sha
 
 ### Use the Azure portal
 
-Select **File shares** in the main pane of the **Overview** page for an Azure Storage account, and also available in the **File service** section of the command bar:
+Select **File shares** in the main pane of the **Overview** page for an Azure Storage account (this is also available in the **File service** section of the command bar):
 
 > [!div class="mx-imgBorder"]
 > ![Image of the **Overview** page for a storage account in the Azure portal. The user has selected the **File shares** command](../media/5-file-shares.png)
