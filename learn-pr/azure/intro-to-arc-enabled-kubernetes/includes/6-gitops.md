@@ -36,3 +36,5 @@ To create an Azure Policy assignment in the Azure portal, you would use the foll
 - Create a remediation task and enable the **Create a managed identity** option. Verify that the identity will have Contributor permissions. 
 
 The policy definition automatically applies the GitOps-based configuration to each Azure Arc enabled Kubernetes cluster you create, as long as its Azure Resource Manager resoure is in the scope of the assignment. For existing clusters, you need to manually run the remediation task. The policy assignment typically takes effect within 20 minutes from the time you create it. 
+
+Choose the best response for each of the following questions. Then select "Check your answers".
