@@ -26,7 +26,7 @@ In this unit, you'll:
 
 1. When you hover over **Run**, another box to the right of Run displays, stating you could also **Load to the editor**. Select **Load to the editor**.
 
-1. Examine the query in the editor, take note of the comments that indicate what the query displays, and then select **Run** in the query editor.
+1. Examine the query in the editor, read through the comments that indicate what the query displays, and then select **Run** in the query editor.
 
     ```kusto
     // Chart CPU usage trends by computer 
@@ -71,8 +71,8 @@ In this unit, you'll:
 
 1. Each of these visualizations can be pinned to a dashboard by selecting **Pin to dashboard** at the top and specifying the following details:
 
-- Create a new dashboard or add to an existing dashboard.
-- If existing, deploy the new visualization to the right shared or private dashboard.
-- If new, determine if the dashboard will be a private or shared dashboard.
-- If new, name the dashboard.
-- If new, specify where the dashboard will be deployed.
+    - Create a new dashboard or add to an existing dashboard.
+    - If existing, deploy the new visualization to the right shared or private dashboard.
+    - If new, determine if the dashboard will be a private or shared dashboard.
+    - If new, name the dashboard.
+    - If new, specify where the dashboard will be deployed.
