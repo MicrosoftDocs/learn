@@ -40,6 +40,9 @@ There are several ways to generate an execution plan in SQL Server Management St
     GO
     ```
 
+    > [!NOTE]
+    > If you'd like to copy and paste the SQL commands in this exercise they are available in the **D:\LabFiles\Query Performance\exercise_steps.sql** file.
+
     In your results you'll see a text version of the execution plan, instead of the results of running the **SELECT** statement.
 
     :::image type="content" source="../media/dp-3300-module-55-lab-06.png" alt-text="Text version":::
@@ -65,6 +68,7 @@ There are several ways to generate an execution plan in SQL Server Management St
     FROM [AdventureWorks2017].[Sales].[SalesOrderDetail]
     WHERE [ModifiedDate] > '2012/01/01' AND [ProductID] = 772;
     ```
+
     :::image type="content" source="../media/dp-3300-module-55-lab-07.png" alt-text="Screenshot showing the execution plan for the query":::
 
     When reviewing the execution plan you will note there is a key lookup. If you hover your mouse over the icon, you will see that the properties indicate it is performed for each row retrieved by the query. You can see the execution plan is performing a Key Lookup operation.
@@ -98,7 +102,7 @@ There are several ways to generate an execution plan in SQL Server Management St
     GO
     ```
 
-1. Rerun the query you have open. Make note of the changes to the logical reads and execution plan changes. The plan now only needs to use the nonclustered index.
+1. Rerun the query from step 1. Make note of the changes to the logical reads and execution plan changes. The plan now only needs to use the nonclustered index.
 
     :::image type="content" source="../media/improved-execution-plan.png" alt-text="Screenshot showing the improved execution plan":::
 
@@ -124,16 +128,20 @@ Next you'll run a workload to generate query statistics for QS, examine Top Reso
     GO
     ```
 
-    Changing the compatibility level is like moving the databases back in time. It restricts the features SQL server can use to those that were available in SQL Server 2008.
+    Changing the compatibility level is like moving the database back in time. It restricts the features SQL server can use to those that were available in SQL Server 2008.
 
 1. Select the **File** > **Open** > **File** menu in SQL Server Management Studio.
+
 1. Navigate to the **D:\Labfiles\Query Performance\CreateRandomWorkloadGenerator.sql** file.
+
 1. Select the file to load it into Management Studio and then select **Execute** or press <kbd>F5</kbd> to execute the query.
 
     :::image type="content" source="../media/dp-3300-module-55-lab-09.png" alt-text="Open File":::
 
-1. Run a workload to generate statistics for Query Store.
-1. Navigate back to the **D:\Labfiles\Query Performance\ExecuteRandomWorkload.sql** script to execute a workload.
+1. Select the **File** > **Open** > **File** menu in SQL Server Management Studio.
+
+1. Navigate to the **D:\Labfiles\Query Performance\ExecuteRandomWorkload.sql** script and open it.
+
 1. Select **Execute** or press <kbd>F5</kbd> to run the script.
 
     After execution completes, run the script a second time to create additional load on the server. Leave the query tab open for this query.
@@ -148,7 +156,7 @@ Next you'll run a workload to generate query statistics for QS, examine Top Reso
     GO
     ```
 
-1. Navigate back to the query tab from step 3, and re-execute.
+1. Navigate back to the query tab from step 6, and re-execute.
 
 ## Examine Top Resource Consuming Queries to identify poor performance
 
@@ -235,7 +243,7 @@ Run the queries below, examine the Actual Execution Plan.
 
     :::image type="content" source="../media/dp-3300-module-55-lab-20.png" alt-text="SalesPersonID = 277":::
 
-Based on the column statistics the query optimizer has chosen a different execution plan because of the different values in the WHERE clause. Because this query uses a constant in its WHERE clause, the optimizer sees each of these queries as unique and generates a different execution plan each time.
+Based on the index statistics the query optimizer has chosen a different execution plan because of the different values in the WHERE clause. Because this query uses a constant in its WHERE clause, the optimizer sees each of these queries as unique and generates a different execution plan each time.
 
 ## Change the query to use a parameter and use a Query Hint
 
@@ -275,11 +283,11 @@ Based on the column statistics the query optimizer has chosen a different execut
     SELECT SalesOrderId, OrderDate
     FROM Sales.SalesOrderHeader
     WHERE SalesPersonID= @SalesPersonID
-    OPTION (OPTIMIZE FOR (@SalesPersonID = 288));
+    OPTION (RECOMPILE);
     ```
 
-    Note that the query optimizer has been able to choose a different execution plan.
+    Note that the query optimizer has been able to choose a more efficient execution plan. The RECOMPILE option causes the query compiler to replace the variable with its value.
 
-You can see in the message tab that the difference between local reads is 68% (689 versus 409) more for the query without the query hint.
+You can see in the message tab that the difference between logical reads is 68% (689 versus 409) more for the query without the query hint.
 
-To finish this exercise select End below.
+To finish this exercise select **End** below.
