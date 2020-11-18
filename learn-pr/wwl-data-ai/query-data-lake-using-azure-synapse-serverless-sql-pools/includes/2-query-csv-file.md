@@ -1,4 +1,4 @@
-CSV files are a very common file format within many busiesses, and you can query a single CSV file using serverless SQL pool. CSV files may have different formats: 
+CSV files are a common file format within many businesses, and you can query a single CSV file using serverless SQL pool. CSV files may have different formats: 
 -	With and without a header row 
 -	Comma and tab-delimited values 
 -	Windows and Unix style line endings 
@@ -45,7 +45,7 @@ from openrowset(
     ) as rows
 ```
 
-If a data source is protected with SAS key or custom identity you can configure [data source with database scoped credential]( https://docs.microsoft.com/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#database-scoped-credential).
+If a data source is protected with SAS key or custom identity, you can configure [data source with database scoped credential]( https://docs.microsoft.com/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#database-scoped-credential).
 
 ## Explicitly specify a schema
 
@@ -68,13 +68,14 @@ from openrowset(
 
 The numbers after a data type in the WITH clause represent column location, known as a column index in the CSV file. 
 
-In the following sections you can see how to query various types of CSV files. All the following examples require files that have specific row delimiter, column delimiter, escape character, etc. To be able to execute the upcoming examples, your first step is to create a database where the objects will be created. Then initialize the objects by executing the following [setup script]( https://github.com/Azure-Samples/Synapse/blob/master/SQL/Samples/LdwSample/SampleDB.sql) on that database. This setup script will create the data sources, database scoped credentials, and external file formats that are used in these samples.
+In the following sections, you can see how to query various types of CSV files. All the following examples require files that have specific row delimiter, column delimiter, escape character, etc. To be able to execute the upcoming examples, your first step is to create a database where the objects will be created. Then initialize the objects by executing the following [setup script]( https://github.com/Azure-Samples/Synapse/blob/master/SQL/Samples/LdwSample/SampleDB.sql) on that database. This setup script will create the data sources, database scoped credentials, and external file formats that are used in these samples.
 
 ## Read windows style new line files
 
 The following query shows how to read a CSV file without a header row, with a Windows-style new line, and comma-delimited columns, as shown in the following file preview example:
  
-![The source file to create a windows style new line file](../media/windows-style-new-line-file.png)
+> [!div class="mx-imgBorder"]
+> ![The source file to create a windows style new line file](../media/windows-style-new-line-file.png)
 
 The code to achieve this is:
 
@@ -102,7 +103,8 @@ WHERE
 
 The following query shows how to read a file without a header row, with a Unix-style new line, and comma-delimited columns as shown in the following file preview. 
  
-![The source file to create a Unix style new line file](../media/unix-style-new-line-file.png)
+> [!div class="mx-imgBorder"]
+> ![The source file to create a Unix style new line file](../media/unix-style-new-line-file.png)
 
 The code to achieve this is as follows. You can see in this example the different location of the file as compared to the other examples.
 
@@ -126,11 +128,12 @@ WHERE
 
 ## Work with header rows in a file
 
-The following query shows how to a read file with a header row, with a Unix-style new line, and comma-delimited columns, as shown in the following file preview
+The following query shows how to a read a file with a header row, with a Unix-style new line, and comma-delimited columns, as shown in the following file preview.
  
-![The source file to omit headers in a file](../media/omit-headers-new-file.png)
+> [!div class="mx-imgBorder"]
+> ![The source file to omit headers in a file](../media/omit-headers-new-file.png)
 
-The code to achieve this is as follows where you use the **firstrow** variable to work omit the header row
+The code to achieve this is as follows where you use the **firstrow** variable to omit the header row.
 
 ```sql
 SELECT * 
@@ -154,7 +157,8 @@ WHERE
 
 The following query shows how to read a file with a header row, with a Unix-style new line, comma-delimited columns, and quoted value as shown in the following file preview.
  
-![The source file to work with custom quote characters in a file](../media/custom-quote-new-file.png)
+> [!div class="mx-imgBorder"]
+> ![The source file to work with custom quote characters in a file](../media/custom-quote-new-file.png)
 
 The code to achieve this is as follows.
 
@@ -186,7 +190,8 @@ WHERE
 
 The following query shows how to read a file with a header row, with a Unix-style new line, comma-delimited columns, and an escape char used for the field delimiter (comma) within values, as shown in the following	file preview.
  
-![The source file to work with escape characters in a file](../media/escape-char-new-file.png)
+> [!div class="mx-imgBorder"]
+> ![The source file to work with escape characters in a file](../media/escape-char-new-file.png)
 
 The code to achieve this is as follows.
 
@@ -218,7 +223,8 @@ WHERE
 
 The following query shows how to read a file with a header row, with a Unix-style new line, comma-delimited columns, and an escaped double quote char within values as shown in the following file preview.
  
-![The source file to work with escape quoting characters in a file](../media/escape-quoting-char-new-file.png)
+> [!div class="mx-imgBorder"]
+> ![The source file to work with escape quoting characters in a file](../media/escape-quoting-char-new-file.png)
 
 The code to achieve this is as follows.
 
@@ -249,7 +255,8 @@ WHERE
 
 The following query shows how to read a file with a header row, with a Unix-style new line, and tab-delimited columns, as shown in the following file preview.
  
-![The source file to work with tab delimiters in a file](../media/tab-delimeters-new-file.png)
+> [!div class="mx-imgBorder"]
+> ![The source file to work with tab delimiters in a file](../media/tab-delimeters-new-file.png)
 
 The code to achieve this is as follows.
 

@@ -60,7 +60,7 @@ from
 
 ```
 
-The JSON document in the preceding sample query includes an array of objects. The query returns each object as a separate row in the result set. Make sure that you can access this file. If your file is protected with SAS key or custom identity, you would need to setup [server level credential for sql login]( https://docs.microsoft.com/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#server-scoped-credential)
+The JSON document in the preceding sample query includes an array of objects. The query returns each object as a separate row in the result set. Make sure that you can access this file. If your file is protected with SAS key or custom identity, you would need to set up [server level credential for sql login]( https://docs.microsoft.com/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#server-scoped-credential)
 
 ## Define a data source
 
@@ -103,12 +103,13 @@ The queries in the previous examples return every JSON document as a single stri
 PARSE JSON DOCUMENTS
 
 |date_rep|cases|geo_id|
+|--|--|--|
 |2020-07-24|3|AF|
 |2020-07-25|7|AF|
 |2020-07-26|4|AF|
 |2020-07-27|8|AF|
 
-Which is a json files containing the following structure:
+Which is a json file containing the following structure:
 
 ```json
 { 

@@ -4,7 +4,7 @@ title: Query a Parquet file using Azure Synapse serverless SQL pools
 metadata:
   title: Query a Parquet file using Azure Synapse serverless SQL pools
   description: "Query a Parquet file using Azure Synapse serverless SQL pools"
-  ms.date: 11/17/2020
+  ms.date: 11/18/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial

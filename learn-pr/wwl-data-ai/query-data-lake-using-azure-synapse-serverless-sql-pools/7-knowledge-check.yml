@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/17/2020
+  ms.date: 11/18/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -17,10 +17,10 @@ quiz:
     choices:
     - content: "FORMAT."
       isCorrect: false
-      explanation: "Incorrect. FORMAT is a clause within the OPENROWSET function to determine the file type to be read."
+      explanation: "Incorrect. The FORMAT is a clause within the OPENROWSET function to determine the file type to be read."
     - content: "ROWSET."
       isCorrect: false
-      explanation: "Correct. ROWSET is not a valid function."
+      explanation: "Incorrect. The ROWSET is not a valid function."
     - content: "OPENROWSET."
       isCorrect: true
       explanation: "Correct. The OPENROWSET is used to read the data in files stored in a data lake."
@@ -28,7 +28,7 @@ quiz:
     choices:
     - content: "0b0x."
       isCorrect: false
-      explanation: "Incorrect. 0b0x is not the value should be set in the fieldterminator and fieldquote variables to read JSON files.."
+      explanation: "Incorrect. 0b0x is not the value should be set in the fieldterminator and fieldquote variables to read JSON files."
     - content: "00xb."
       isCorrect: false
       explanation: "Incorrect. 00xb is not the value should be set in the fieldterminator and fieldquote variables to read JSON files."
@@ -41,8 +41,8 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The ampersand character is used to concantenate fields in the files together."
     - content: "*."
-      isCorrect: false
-      explanation: "Correct. The asterisk character in file path can be used to select all the file or folders that match rest of the path  ."
-    - content: "/."
       isCorrect: true
-      explanation: "Incorrect. The forward slash is wused as a directory separator in folder and file path."
+      explanation: "Correct. The asterisk character in file path can be used to select all the file or folders that match rest of the path."
+    - content: "/."
+      isCorrect: false
+      explanation: "Incorrect. The forward slash is used as a directory separator in folder and file path."
