@@ -6,7 +6,7 @@ In this module, you will:
 
 - Evaluate Azure Monitor Logs and Azure Monitor for VMs
 - Configure Log Analytics workspace
-- Build queries from heartbeat and insights tables
+- Build queries from heartbeat and insights metrics tables
 
 ## Prerequisites
 
