@@ -13,7 +13,7 @@ There are different aspects to creating many instances, and iterating over const
 
 One of the general benefits of using looping constructs is saving you keystrokes. If what you need is repeated over and over, fairly similar in name and type, and so on, and there are only slight differences, then it's a good use case for something called the *copy element*.
 
-The *copy element* is piece of JSON that can be used on many types of constructs like resources, properties, variables, and output. The syntax for the *copy element* consists of the key _copy_ and with an array as value, like so **"copy": []**.  The array takes a number of elements and each element is an object `{}` consisting of set of properties. What these properties are depends on what type of construct they are used on. Typically all of the _copy_ element constructs have one property in common `count`. This property decides on how many instances you want of a certain type of construct. Most constructs also allow for a `name` property that gives you a reference that you can refer to in other parts of your code. Other properties used are usually construct-specific.
+The *copy element* is piece of JSON that can be used on many types of constructs like resources, properties, variables, and output. The syntax for the *copy element* consists of the key _copy_ and with an array as value, like so **"copy": []**.  The array takes a number of elements and each element is an object `{}` consisting of set of properties. What these properties are depends on what type of construct they are used on. Typically all of the _copy_ element constructs have one property in common `count`. This property decides on how many instances you want of a certain type of construct. Most constructs also allow for a `name` property that gives you a reference that you can refer to in other parts of your code. Other properties used are construct-specific.
 
 ### What to choose
 
@@ -23,7 +23,7 @@ It all depends on your use case. A _resource iteration_ allows you to create man
 
 ### How does it work
 
-Ok, say I elect to use the _copy element_ how does it work, what's the end result? It works by  your _copy_ statement being evaluated and replaced. The replacement is the result of what you define within the _copy_ statement repeated as many time as you instructed in the `copy` field. 
+Ok, say I elect to use the _copy element_ how does it work, what's the end result? It works by  your _copy_ statement being evaluated and replaced. The replacement is the result of what you define within the _copy_ statement repeated as many times as you instructed in the `copy` field. 
 
 Below JSON is an example of what a definition using _copy_ can look like:
 
@@ -75,7 +75,7 @@ There are helper functions that help you refer to specific indexes in the array.
 copyIndex(loopName, offset)
 ```
 
-The `copyIndex()` function has two different input parameters `loopName` and `offset`. The `offset` is always optional and is used to _offset_ you from the current index. What ever you add as `offset` value is added to the current index. If the current index returns `2` and you specify `1` as offset the `copyIndex()` function would return `3`.
+The `copyIndex()` function has two different input parameters `loopName` and `offset`. The `offset` is always optional and is used to _offset_ you from the current index. What ever you add as `offset` value is added to the current index. If the current index returns `2`, and you specify `1` as offset the `copyIndex()` function would return `3`.
 
 The `loopName` parameter is either optional or mandatory depending on where it's used. 
 
@@ -111,7 +111,7 @@ The `loopName` parameter is either optional or mandatory depending on where it's
   }
   ```
 
-   Above a resource is being declared and `copyIndex()` is called with no parameters as it's being used in the context of a resource.
+   The above JSON shows a resource being declared and `copyIndex()` is called with no parameters, as it's being used in the context of a resource.
   
 ## Configure the deployment
 

@@ -1,4 +1,4 @@
-You will need to create resources that need passwords set during deployment. A template should not contain passwords so you need to store your secrets in a safe place. Additionally you need to read those secrets when you deploy the template.
+You will often need to deploy resources, like a VM, that need passwords set during deployment. One way to solve that scenario would be to set a password via a parameter, during deployment. A better way is to store passwords in a Key Vault and read from said Key Vault during deployment.
 
 ::: zone pivot="powershell"
 

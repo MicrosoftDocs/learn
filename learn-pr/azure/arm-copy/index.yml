@@ -13,7 +13,7 @@ summary: This module teaches you how to use advanced ARM features to manage comp
 abstract: |
   After completing this module, you'll be able to:
   - Control the deployment order of resources by using the _dependsOn_ construct.
-  - Securely assign secrets like passwords to resources in your templates by using an Azure KeyVault and ARM template configuration.
+  - Securely assign secrets like passwords to resources in your templates by using an Azure Key Vault and ARM template configuration.
   - Conditionally deploy resources by using the _condition_ construct and parameters at deployment time.
   - Deploy multiple resources of the same type by using the _copy_ construct and thereby reducing repetitive configuration. 
 iconUrl: /learn/achievements/undefined.svg

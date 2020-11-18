@@ -1,67 +1,19 @@
 Here you will deploy a KeyVault, add a secret and then deploy a VM that reads a secret from said KeyVault.
 
-## Prerequisites
-
-- **Install Visual Studio Code extension**. This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools?azure-portal=true). Be sure to install this extension in Visual Studio Code.
-
-- **Install latest Azure CLI**. To use what-if in Azure CLI, you must have Azure CLI 2.5.0 or later. If needed, [install the latest version of Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true).
-
 ## Exercise overview
 
 Here's an overview of the steps you are about to carry out:
 
-- **Sign in to Azure**. You will be able to sign in using Visual Studio Code and using the integrated terminal.
-- **Set the active subscription**. This can be accomplished by invoking a Azure CLI command.
-- **Set default resource group**. This can be accomplished by invoking a Azure CLI command. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
-- **Carry out the deployment**. This step involves using the command **az deployment group create** with a URL to a template as an argument.
-
-## Sign in to Azure
-
-1. Open the integrated terminal in Visual Studio Code. Be sure you are signing in to the same account that activated the sandbox.
-
-1. Run `az login` to login from the Visual Studio Code terminal.
-
-    ```azurecli
-    az login
-    ```
-
-1. Select an appropriate user in the browser and close browser window when prompted.
-
-   Once you are logged in, you see a list, in JSON format. The list contains subscriptions associated with this account in the terminal, if you activated the sandbox.
-
-## Set the active subscription
-
-Run `az account set` to set a specific subscription as active:
-
-```azurecli
-   az account set -s "Concierge Subscription"
-```
-
-This will set the active subscription to that of the *Concierge Subscription*.
-
 > [!NOTE]
-> if it fails, run `az account list --refresh --all` and then rerun the command
+> If you already have a working Sandbox where you've done steps 1-3, then there's no need to repeat them.
 
-## Set the default resource group
+1. **Sign in to Azure**. You will be able to sign in using Visual Studio Code and using the integrated terminal.
 
-You now need to set the resource group created for you in the sandbox as the default resource group.
+2. **Set the active subscription**. This can be accomplished by invoking a Azure CLI command.
 
-1. Run `az group list` to get the resource group name.
+3. **Set default resource group**. This can be accomplished by invoking a Azure CLI command. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
 
-   ```azurecli
-   az group list -o table
-   ```
-
-1. Run `az configure` to set the default name.
-
-   ```azurecli
-   az configure --defaults group=<rgn>resource group name</rgn>
-   ```
-
-  Use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**). Using the name, will allow you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
-
-  > [!NOTE]
-  > Normally, when you use an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **az configure** Azure CLI command.
+4. **Carry out the deployment**. This step involves using the command **az deployment group create** with a URL to a template as an argument.
 
 ## Deploy a KeyVault
 
@@ -91,13 +43,17 @@ You need to both deploy the KeyVault and once created you will need to add a sec
    az keyvault secret set --vault-name $vaultName --name $secretName --value $secretPlainText
    ```
 
-   The above command ensures the plain text password is converted to a so called secure string. Thereafter the name of the secret and the now encoded secret value  is being added to the KeyVault you've just created.
+   The above command ensures the plain text password is converted to a secure string. Thereafter the name of the secret and the now encoded secret value  is being added to the KeyVault you've just created.
 
    Everything should be set up at this point so you can deploy the VM next.  
 
 ## Deploy a VM and set password based on a KeyVault secret
 
-1. Fetch the following ARM template from the URL `https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json` and store it locally as a file `vmdeploy.json`.
+1. Run `wget` to fetch the following ARM template:
+
+   `wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json` 
+
+   and store it locally as a file `vmdeploy.json`.
 
 1. Run the command `az keyvault show`:
 
@@ -107,7 +63,11 @@ You need to both deploy the KeyVault and once created you will need to add a sec
 
    Make a note of the value from the field `Resource ID`. You will need this value to modify the file `vmdeploy.json`.
 
-1. Save down the following file `https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.parameters.json` and name it `vmdeploy.parameters.json`
+1. Run `wget` to store the following parameters file:
+
+   `wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.parameters.json`
+
+   name it `vmdeploy.parameters.json`
 
 1. Locate the parameters section in `vmdeploy.parameters.json` and the `adminPassword` parameter. Replace it's content with the following text:
 
@@ -135,10 +95,10 @@ You need to both deploy the KeyVault and once created you will need to add a sec
 
 ### Verify deployment
 
-1. Navigate to portal.azure.com
-1. Select Resource groups > **\<rgn>your resource group\</rgn>** > simple-vm.
-1. Select connect at the top.
+1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Select **Resource groups** > **\<rgn>your resource group\</rgn>** > **simple-vm**.
+1. Select **Connect** at the top.
 
-1. Select Download RDP File, and then follow the instructions to sign in to the virtual machine by using the password that's stored in the key vault.
+1. Select **Download RDP File**, and then follow the instructions to sign in to the virtual machine by using the password that's stored in the key vault.
 
-Congrats, you've managed to deploy an Azure KeyVault. Additionally you've managed to create a VM while reading from the Azure KeyVault.
+Congratulations, you've managed to deploy an Azure KeyVault. Additionally you've managed to create a VM while reading from the Azure KeyVault.

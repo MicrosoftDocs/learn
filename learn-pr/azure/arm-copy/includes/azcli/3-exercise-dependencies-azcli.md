@@ -1,5 +1,3 @@
-Here you will deploy a VM containing dependencies using Azure CLI.
-
 ## Prerequisites
 
 - **Install Visual Studio Code extension**. This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools?azure-portal=true). Be sure to install this extension in Visual Studio Code.
@@ -17,9 +15,11 @@ Here's an overview of the steps you are about to carry out:
 
 ## Sign in to Azure
 
-1. Open the integrated terminal in Visual Studio Code. Be sure you are signing in to the same account that activated the sandbox.
+You can sign into your Azure account from either the terminal (running `az login`), or from Visual Studio Code, using the built-in terminal. Below instruction shows how to sign in using the Visual Studio Code.
 
-1. Run `az login` to login from the Visual Studio Code terminal.
+1. In Visual Studio Code, open up the command palette, select **Terminal: Create new integrated terminal** . Be sure you are signing in to the same account that activated the sandbox.
+
+1. Run `az login`:.
 
     ```azurecli
     az login
@@ -46,22 +46,14 @@ This will set the active subscription to that of the *Concierge Subscription*.
 
 You now need to set the resource group created for you in the sandbox as the default resource group.
 
-1. Run `az group list` to get the resource group name.
+Run `az configure` to set the default name.
 
-   ```azurecli
-   az group list -o table
-   ```
+```azurecli
+az configure --defaults group=<rgn>resource group name</rgn>
+```
 
-1. Run `az configure` to set the default name.
-
-   ```azurecli
-   az configure --defaults group=<rgn>resource group name</rgn>
-   ```
-
-  Use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**). Using the name, will allow you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
-
-  > [!NOTE]
-  > Normally, when you use an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **az configure** Azure CLI command.
+> [!NOTE]
+> Normally, when you use an Azure CLI command, you need to specify a resource group. You are bypassing this requirement by setting the context of your deployment, using **az configure**.
 
 ## Deploy a VM with dependencies
 
@@ -81,31 +73,34 @@ The following resource types needs to be deployed as you deploy a VM:
 
 - **Microsoft.Compute/virtualMachines**. This is the primary resource you are looking to deploy. It in turn is dependent on two different resources namely a storage account and network interfaces.
 
-Fortunately there's a template you can grab that contains all the above resources.
+Fortunately there's a template you can grab off the Internet that contains all the above resources needed to deploy a VM.
 
-1. Grab the Azure template file from `https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json` and save it to a local file `azuredeploy.json`
+1. Run `wget` to grab the Azure template file:
+
+   `wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json`
+
+    and save it to a local file `azuredeploy.json`
 
 1. Run the command `az deployment group create`:
 
     ```azurecli
     read -p "Enter a location (i.e. centralus)" location
-    export rg=<rgn>resource group name</rgn>
     read -p "Enter a name for your VM" vmName
     read -p "Enter an admin user name" adminUserName
-    export adminPassword="abc123"
+    read -p "Enter a password" adminPassword
 
     az deployment group create \
-      --resource-group $rg \
+      --resource-group <rgn>resource group name</rgn> \
       --template-file './azuredeploy.json' \
       --parameters adminUserName=$adminUserName vmName=$vmName adminPassword=$adminPassword
     ```
 
 ### Verify deployment
 
-1. Navigate to portal.azure.com
-1. Select Resource groups > **\<rgn>your resource group\</rgn>** > {what you named the VM}.
-1. Select connect at the top.
+1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Select **Resource groups** > **\<rgn>your resource group\</rgn>** > **{what you named the VM}**.
+1. Select **Connect** at the top.
 
-1. Select Download RDP File, and then follow the instructions to sign in to the virtual machine by using the password that's stored in the key vault.
+1. Select **Download RDP File**, and then follow the instructions to sign in to the virtual machine by using the password that you've entered when deploying.
 
-Congrats, you've managed to deploy a VM containing dependencies.
+Congratulations, you've managed to deploy a VM containing dependencies.

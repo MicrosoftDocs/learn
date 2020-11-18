@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.arm-copy.4-secure-parameters
-title: Manage secrets in your ARM template by reading from a KeyVault at deployment time 
+title: Manage secrets in your ARM template by reading from an Azure Key Vault at deployment time 
 metadata:
-  title: Manage secrets in your ARM template by reading from a KeyVault at deployment time
+  title: Manage secrets in your ARM template by reading from an Azure Key Vault at deployment time
   description: Describe unit
   author: softchris
   ms.author: chnoring

@@ -1,67 +1,19 @@
 Here you will deploy an ARM template, with a condition construct, using Azure CLI.
 
-## Prerequisites
-
-- **Install Visual Studio Code extension**. This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools?azure-portal=true). Be sure to install this extension in Visual Studio Code.
-
-- **Install latest Azure CLI**. To use what-if in Azure CLI, you must have Azure CLI 2.5.0 or later. If needed, [install the latest version of Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true).
-
 ## Exercise overview
 
 Here's an overview of the steps you are about to carry out:
 
-- **Sign in to Azure**. You will be able to sign in using Visual Studio Code and using the integrated terminal.
-- **Set the active subscription**. This can be accomplished by invoking a Azure CLI command.
-- **Set default resource group**. This can be accomplished by invoking a Azure CLI command. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
-- **Carry out the deployment**. This step involves using the command **az deployment group create** with a URL to a template as an argument.
-
-## Sign in to Azure
-
-1. Open the integrated terminal in Visual Studio Code. Be sure you are signing in to the same account that activated the sandbox.
-
-1. Run `az login` to login from the Visual Studio Code terminal.
-
-    ```azurecli
-    az login
-    ```
-
-1. Select an appropriate user in the browser and close browser window when prompted.
-
-   Once you are logged in, you see a list, in JSON format. The list contains subscriptions associated with this account in the terminal, if you activated the sandbox.
-
-## Set the active subscription
-
-Run `az account set` to set a specific subscription as active:
-
-```azurecli
-   az account set -s "Concierge Subscription"
-```
-
-This will set the active subscription to that of the *Concierge Subscription*.
-
 > [!NOTE]
-> if it fails, run `az account list --refresh --all` and then rerun the command
+> If you already have a working Sandbox where you've done steps 1-3, then there's no need to repeat them.
 
-## Set the default resource group
+1. **Sign in to Azure**. You will be able to sign in using Visual Studio Code and using the integrated terminal.
 
-You now need to set the resource group created for you in the sandbox as the default resource group.
+1. **Set the active subscription**. This can be accomplished by invoking a Azure CLI command.
 
-1. Run `az group list` to get the resource group name.
+1. **Set default resource group**. This can be accomplished by invoking a Azure CLI command. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
 
-   ```azurecli
-   az group list -o table
-   ```
-
-1. Run `az configure` to set the default name.
-
-   ```azurecli
-   az configure --defaults group=<rgn>resource group name</rgn>
-   ```
-
-  Use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**). Using the name, will allow you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
-
-  > [!NOTE]
-  > Normally, when you use an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **az configure** Azure CLI command.
+1. **Carry out the deployment**. This step involves using the command **az deployment group create** with a URL to a template as an argument.
 
 ## Conditionally deploy a resource
 

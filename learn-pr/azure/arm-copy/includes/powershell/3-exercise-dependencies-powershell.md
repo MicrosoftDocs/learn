@@ -1,5 +1,3 @@
-Here you will deploy a VM containing dependencies using Azure CLI.
-
 ## Prerequisites
 
 Before installing the required PowerShell module, make sure you have PowerShell Core (6.x or 7.x)
@@ -7,6 +5,9 @@ Before installing the required PowerShell module, make sure you have PowerShell 
 - **Upgrade to/Install latest PowerShell**. If you have Windows PowerShell 5.x or earlier or PowerShell Core 6.2.3 or earlier, [install the latest version of PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.4.0&azure-portal=true) You can't install the required module on Windows PowerShell 5.x or earlier.
 
 - **Install the Az Module**. To use *what-if* in PowerShell, you must have version **4.2 or later of the Az module**.
+
+   > [!NOTE]
+   > The Az module is a PowerShell module dedicated to managing cloud resources on Azure. It's needed for the upcoming exercises in this module. 
 
 ## Verify installation
 
@@ -32,7 +33,7 @@ There are potentially two different paths here:
 > [!NOTE]
 > In order to avoid using PowerShell in an *elevated mode* you can use the argument `-Scope CurrentUser` to install or update modules on your user.
 
-- **You DON'T have the module installed previously**. Install this module use the following command:
+- **You don't have the module installed previously**. Install this module using the following command:
 
    ```powershell
    Install-Module -Name Az -Force -Scope CurrentUser
@@ -55,12 +56,9 @@ Here's an overview of the steps you are about to carry out:
 
 ## Sign in to Azure
 
-You can sign into your Azure account from the terminal. If you are on Windows, the terminal will default to PowerShell. On other OSs, you can use the command line executable `pwsh` to launch a PowerShell shell from the terminal.
+You can sign into your Azure account from either the terminal (running `pwsh`), or from Visual Studio Code, using the extension. Below instruction shows how to sign in using the PowerShell extension in Visual Studio Code.
 
-1. Open the integrated terminal in Visual Studio Code. Be sure you are signing in to the same account that activated the sandbox.
-
-   > [!IMPORTANT]
-   > If you have a non-Windows OS, type `pwsh` to ensure the PowerShell shell is running.
+1. In Visual Studio Code, open up the command palette, select **PowerShell: Show integrated console** . Be sure you are signing in to the same account that activated the sandbox.
 
 1. Run `Connect-AzAccount` to sign in to your account.
 
@@ -98,22 +96,14 @@ The command you are about to run will list your subscriptions and their IDs. The
 
 You need to set the resource group created for you in the sandbox as the default resource group. You will accomplish this task in two steps:
 
-   1. Run `Get-AzResourceGroup` to get the resource group name.
+Run `Set-AzDefault` to set the default Resource Group.
 
-      ```powershell
-      Get-AzResourceGroup
-      ```
+```powershell
+Set-AzDefault -ResourceGroupName <rgn>resource group name</rgn>
+```
 
-   1. Run `Set-AzDefault` to set the default Resource Group.
-
-      ```powershell
-      Set-AzDefault -ResourceGroupName <rgn>resource group name</rgn>
-      ```
-
-       Use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**).
-
-      > [!NOTE]
-      > Normally, when you use a PowerShell or an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[Set-AzDefault](https://docs.microsoft.com/powershell/module/az.accounts/set-azdefault?view=azps-4.5.0)** PowerShell command.
+> [!NOTE]
+> Normally, when you use PowerShell to deploy resource on Azure, you need to specify a resource group. You are bypassing this requirement by setting the context of your deployment, using **Set-AzDefault**.
 
 ## Deploy a VM with dependencies
 
@@ -135,19 +125,22 @@ The following resource types needs to be deployed as you deploy a VM:
 
 Fortunately there's a template you can grab that contains all the above resources.
 
-1. Grab the Azure template file from `https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json` and save it to a local file `azuredeploy.json`
+1. Run `wget` to grab the Azure template file:
+
+   `wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json`
+
+   and save it to a local file `azuredeploy.json`
 
 1. Run the command `New-AzResourceGroupDeployment`:
 
     ```powershell
     $location = Read-Host -Prompt "Enter a location (i.e. centralus)"
-    $rg = <rgn>resource group name</rgn>
     $vmName = Read-Host -Prompt "Enter a name for your VM"
     $adminUserName = Read-Host -Prompt "Enter an admin user name";
-    $adminPassword = "abc123";
+    $adminPassword = Read-Host -Prompt "Enter an admin password";
 
     New-AzResourceGroupDeployment `
-    -ResourceGroupName $rg `
+    -ResourceGroupName <rgn>resource group name</rgn> `
     -TemplateFile "./azuredeploy.json" `
     -adminUserName $adminUserName `
     -vmName $vmName `
@@ -156,10 +149,10 @@ Fortunately there's a template you can grab that contains all the above resource
 
 ### Verify deployment
 
-1. Navigate to portal.azure.com
-1. Select Resource groups > **\<rgn>your resource group\</rgn>** > {what you named the VM}.
-1. Select connect at the top.
+1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Select **Resource groups** > **\<rgn>your resource group\</rgn>** > **{what you named the VM}**.
+1. Select **Connect** at the top.
 
-1. Select Download RDP File, and then follow the instructions to sign in to the virtual machine by using the password that's stored in the key vault.
+1. Select **Download RDP File**, and then follow the instructions to sign in to the virtual machine by using the password that you used upon deployment.
 
-Congrats, you've managed to deploy a VM containing dependencies.
+Congratulations, you've managed to deploy a VM containing dependencies.
