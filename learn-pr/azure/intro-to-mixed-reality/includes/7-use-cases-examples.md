@@ -4,7 +4,7 @@ The first revolution in computing happened with the creation of mainframe comput
 
 We believe third wave of computing is going to include many devices to manage data and include IoT sensors and Mixed Reality devices. We have more data than ever before, and leveraging or applying that data through Machine Learning or with Artificial Intelligence has never been more powerful. To be able to process the data and make informed decisions, we need to have access to the data in the right time and right place. Mixed Reality is able to bring that data into our context, real world.
 
-:::image type="content" source="../media/why-01.png" alt-text="Image of common Mixed Reality use-cases in real-world production.":::
+:::image type="content" source="../media/why-01.png" alt-text="Photograph of common Mixed Reality use-cases in real-world production.":::
 
 ## Common use-cases
 
