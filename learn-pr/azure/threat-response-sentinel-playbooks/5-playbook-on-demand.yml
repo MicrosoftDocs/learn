@@ -9,20 +9,20 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Run playbooks on demand
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
   [!include[]includes/5-playbook-on-demand.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You want to attach a playbook to your existing incident. You start to investigate the incident. Which button should you select to attach the playbook?"
+  - content: "An administrator wants to attach a playbook to an existing incident and starts to investigate the incident. Which option should the administrator select to attach the playbook?"
     choices:
     - content: "New"
       isCorrect: false
-      explanation: "No. The New button changes the status of the incident."
+      explanation: "No. The New option changes the status of the incident."
     - content: "Unassigned"
       isCorrect: false
-      explanation: "No. The Unassigned button assigns the incident to a user from your organization."
+      explanation: "No. The Unassigned option assigns the incident to a user from your organization."
     - content: "Name of the incident"
       isCorrect: true
       explanation: "Yes. When you select the name of the incident, you can start the process to run a playbook on demand in response to an existing incident."
