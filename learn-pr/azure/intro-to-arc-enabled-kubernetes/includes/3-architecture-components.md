@@ -27,3 +27,5 @@ In addition to the resource type-independent benefits described in the previous 
 
   - Automatic upgrades and updates without any service downtime. Azure Arc enabled data services receive updates on a frequent basis including servicing patches and new features, which mirrors the update management model of their Azure counterparts. 
   - Support for automatic scaling. Azure Arc enabled data services can auto-scale dynamically to limits dependent on the capacity of your infrastructure hosting the Kubernetes clusters.
+
+Choose the best response for each of the following questions. Then select "Check your answers".
