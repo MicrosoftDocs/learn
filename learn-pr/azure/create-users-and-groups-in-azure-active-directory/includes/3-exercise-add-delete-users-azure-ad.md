@@ -4,7 +4,7 @@ In this exercise, you'll create a new Azure Active Directory (Azure AD) organiza
 
 ## Create an Azure AD organization
 
-Create a new organization to hold all of the users you create in this exercise.
+To hold all of the users you create in this exercise, create a new organization.
 
 1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>) with the same account you used to activate the sandbox.
 
@@ -19,7 +19,7 @@ Create a new organization to hold all of the users you create in this exercise.
 
 1. Select **Create**.
 
-1. Wait for the creation of your organization to be completed. Note the full domain name, which includes onmicrosoft.com. When complete, switch to the new organization by selecting the link in the gray box under the **Country or region** field. 
+1. Wait for the creation of your organization to be completed. Note the full domain name, which includes onmicrosoft.com. When complete, to switch to the new organization, under the **Country or region** field, select the link in the gray box.
 
     ![Screenshot that shows the link to manage your new organization](../media/3-switch-directory.png)
 
@@ -27,12 +27,13 @@ Create a new organization to hold all of the users you create in this exercise.
 
 ## Get a free trial for Azure AD Premium
 
-You'll need to activate a free trial for Azure AD Premium to complete all the exercises in this module.
+For Azure AD Premium to complete all the exercises in this module, you'll need to activate a free trial.
 
 1. In the organization you just created, select **Getting started**.
 1. Under **Getting started with Azure AD**, select **Get a free trial for Azure AD Premium**.
 
     ![Screenshot that shows the link to create trial](../media/3-ad-get-started-get-trial.png)
+
 1. Under **Azure AD Premium 2**, select **Free trial** > **Activate**. If you don't have that option, that's ok. You can complete most of the exercises without it.
 1. In the left pane, select **Overview**.
 1. Refresh the browser until you see **Azure AD Premium P2** under the organization name. It may take a couple of minutes.
@@ -41,7 +42,7 @@ You'll need to activate a free trial for Azure AD Premium to complete all the ex
 
 ## Add a new user
 
-1. First, let's make sure you're logged in as an administrator for the organization you created earlier.
+1. First, let's make sure you're logged in as an admin for the organization you created earlier.
 
    In the Azure AD organization you created, under **Manage**, select **Roles and administrators**. Your role should be set as **Global Administrator**.
 
@@ -49,10 +50,10 @@ You'll need to activate a free trial for Azure AD Premium to complete all the ex
    
     If it's not, in the upper-right corner of the Azure portal, select your profile and select **Switch directory**. Under **All directories**, select the organization you created.
 
-1. Now let's create a user account.
+1. Now, let's create a user account.
 
    In the Azure AD organization you created, under **Manage**, select **Users** > **New User**.
-1. The **User** pane now appears. Provide the following values:
+1. The **User** pane now appears. Enter the following values:
 
     - **User Name**: chris@contosomarketingXXXXXX.onmicrosoft.com. Use the domain name you noted earlier.
     - **Name**: *Chris Green*
@@ -68,7 +69,7 @@ You've now created a new user.
 You can delete users after they're created.
 
 1. In your Azure AD organization, under **Manage**, select **Users**.
-1. Select **Chris Green** from the list.
+1. From the list, select **Chris Green**.
 1. Select **Delete user**. If you don't see that option, select **More**.
 1. When you're asked to confirm your deletion, select **Yes**.
 
@@ -81,7 +82,7 @@ You can restore deleted users. View the list of the deleted users, and then rest
 1. In your Azure AD organization, under **Manage**, select **Users** > **Deleted users**.
 1. You now see all of the users that were deleted within the last 30 days.
 1. Select **Chris Green** and **Restore user**.
-1. Select **Yes** to confirm.
-1. Verify that Chris Green's account is recovered by selecting **All users** to see it in the list.
+1. To confirm, select **Yes**.
+1. To verify that Chris Green's account is recovered, to see it in the list, select **All users**.
 
 You've now recovered a deleted user.
