@@ -1,4 +1,4 @@
-Students from around the world learn programming with Java and it remains the most used language among enterprises. It can help you solve business requirements at all levels. With million of Java developers around the globe, Java's success speaks for itself.
+Students from around the world learn programming with Java and it remains one of the most used languages among enterprises. It can help you solve business requirements at all levels. With million of Java developers around the globe, Java's success speaks for itself.
 
 Java is a strategic language of choice on Azure.
 We support Java developers on multiple levels to deploy their Java Applications. No matter how your architecture looks like, Azure has a solution for you - from monolithic application towards Microservices or even serverless applications.

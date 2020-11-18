@@ -8,15 +8,13 @@ Traditionally your monolithic applications run on application servers and scale 
 
 ## Microservices
 
-Today businesses are asked to adapt and fail fast, expect the unexpected to succeed. To achieve a reduced time to market, more engineers get hired. But the outcome might be the opposite! It results in a higher time to market as you do have more communication effort when more engineers need to collaborate. The solution here is to divide and conquer.
+Today businesses are asked to adapt and fail fast and expect the unexpected to succeed. To achieve a reduced time to market, more engineers get hired. But the outcome might be the opposite! It results in a higher time to market as you do have more communication effort when more engineers need to collaborate. The solution here is to divide and conquer.
 
 In a Cross-functional team, you can deliver features as independently as possible. Each team should be responsible for their own dedicated part of their software.
 
 ## Batch
 
 Some applications are intended to run briefly. They execute a particular workload, and then exit rather than wait for requests or user input. Batch Jobs are a solution for this use-case. Even though some batches can last for hours. Sometimes jobs need to run once or at regular, scheduled intervals. On premises, such jobs are often invoked from a server's crontab.
-
-These applications are packaged into archives with the .jar extension (JAR files).
 
 ## Serverless
 
