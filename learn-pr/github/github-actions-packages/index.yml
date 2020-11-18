@@ -2,7 +2,7 @@
 uid: learn.github.github-actions-packages
 metadata:
   title: Leverage GitHub Actions to publish to GitHub Packages
-  description: TODO
+  description: Publish automatically and securely your code libraries or Docker images with GitHub Packages.
   ms.date: 10/19/2020
   author: cmaneu
   ms.author: chmaneu
@@ -23,7 +23,7 @@ prerequisites: |
 ratingEnabled: true
 iconUrl: /learn/achievements/github-actions-packages.svg
 levels:
-- beginner
+- intermediate
 roles:
 - devops-engineer
 - developer

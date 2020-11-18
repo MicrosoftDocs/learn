@@ -1,5 +1,6 @@
 GitHub Packages is a package management service that makes it easy to publish public or private packages next to your source code.
 
+> [!NOTE]
 > If you're discovering GitHub, checkout [Introduction to GitHub](https://docs.microsoft.com/learn/modules/introduction-to-github/) Learn module.
 
 ## GitHub Packages is a package registry
@@ -18,7 +19,7 @@ Are you publishing an open-source package? Most open-source projects have their 
 
 :::image type="content" source="../media/2-github-packages-npmpackage.png" alt-text="GitHub NPM package page, with description, and instructions about how to install it." border="false":::
 
-At the time of writing, GitHub Packages is compatible with the following package manager: 
+At the time of writing, GitHub Packages is compatible with the following package managers: 
 
 - NPM, a NodeJS package manager
 - NuGet, the .NET package manager,
@@ -31,9 +32,9 @@ From complete applications to CLI utilities, containers are another form of
 distributing code. GitHub Packages allow you to publish and distribute container
 images. Once published - in public or in private - these images can be used from anywhere you want, including: 
 
-- In your local development environment,
-- As a base image from your [GitHub Codespaces](https://github.com/features/codespaces) development environment,
-- As a step to execute into your Continuous Integration (CI) / Continuous Deployment (CD) workflow with [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/finding-and-customizing-actions#referencing-a-container-on-docker-hub),
+- In your local development environment.
+- As a base image from your [GitHub Codespaces](https://github.com/features/codespaces) development environment.
+- As a step to execute into your Continuous Integration (CI) / Continuous Deployment (CD) workflow with [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/finding-and-customizing-actions#referencing-a-container-on-docker-hub).
 - On a server or a cloud service.
 
 :::image type="content" source="../media/2-github-packages-dockerimage.png" alt-text="GitHub container image page, with image versions listing, statistics and instructions about how to install it." border="false":::
@@ -49,6 +50,7 @@ Now with GitHub Packages, you can use a single set of credentials across your so
 
 [GitHub Actions](https://github.com/features/actions) is another feature of GitHub that allow you to automate your software workflows. You can build, test, and deploy your code right from GitHub. 
 
+> [!TIP]
 > If you want to learn more about GitHub Actions, checkout *[Build continuous integration (CI) workflows by using GitHub Actions](https://docs.microsoft.com/learn/modules/github-actions-ci/)* Learn module.
 
 By combining GitHub Actions and GitHub Packages, you can build a workflow that will build and test your code, and then publish it to GitHub Packages by simply pushing code to your repository.
