@@ -11,4 +11,3 @@ When you're working in your own subscription, it's a good idea at the end of a p
 - [Azure Storage redundancy](https://docs.microsoft.com/azure/storage/common/storage-redundancy)
 - [Change how a storage account is replicated](https://docs.microsoft.com/azure/storage/common/redundancy-migration?tabs=portal)
 - [Disaster recovery and storage account failover](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance)
-
