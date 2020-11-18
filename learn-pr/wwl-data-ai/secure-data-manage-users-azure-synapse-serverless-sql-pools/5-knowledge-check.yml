@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/17/2020
+  ms.date: 11/18/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ quiz:
     - content: "Local authentication."
       isCorrect: false
       explanation: "Incorrect. Local authentication is not a valid authentication method."
-    - content: "SQL Authentication ."
+    - content: "SQL Authentication."
       isCorrect: true
       explanation: "Correct. SQL Authentication uses  an authentication method of a username and password stored within the serverless SQL pool."
     - content: "Azure Active Directory."
@@ -34,7 +34,7 @@ quiz:
       explanation: "Incorrect. The data hub does not enable you to assign administrator privileges to an Azure Synapse workspace."
     - content: "Develop."
       isCorrect: false
-      explanation: "Incorrect. The develop hub does not enable you to assign administrator privileges to an Azure Synapse workspace.."
+      explanation: "Incorrect. The develop hub does not enable you to assign administrator privileges to an Azure Synapse workspace."
   - content: "Which role enables a user to create external table as select (CETAS) against an Azure Data Lake Gen2 data store?"
     choices:
     - content: "Storage Blob Data Reader."

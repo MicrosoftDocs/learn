@@ -48,8 +48,6 @@ Supported storages and authorization types can be found in the table below:
 
 |Authorization type|Blob Storage|ADLS Gen1|ADLS Gen2|
 |---|---|---|---|
-|User Identity|Supported*|Not supported|Supported*|
+|User Identity|Supported - SAS token can be used to access storage that is not protected with firewall |Not supported|Supported - SAS token can be used to access storage that is not protected with firewall|
 |SAS|Supported|Supported|Supported|
 |Managed Identity|Supported|Supported|Supported|
-
-* SAS token can be used to access storage that is not protected with firewall.

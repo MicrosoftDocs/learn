@@ -16,8 +16,9 @@ Both access ACLs and default ACLs have the same structure.
 The permissions on a container object are Read, Write, and Execute, and they can be used on files and directories as shown in the following table:
 
 **Levels of permissions**
+
 |Permission|File|Directory|
-|---|---|---|
+|--|--|--|
 |Read (R)|Can read the contents of a file|Requires Read and Execute to list the contents of the directory|
 |Write (W)|Can write or append to a file|Requires Write and Execute to create child items in a directory|
 |Execute (X)|Does not mean anything in the context of Data Lake Storage Gen2|Required to traverse the child items of a directory|
@@ -42,7 +43,8 @@ If a user in the service engineering team leaves the company, you could just rem
 For users which need **read only** access you should assign role named **Storage Blob Data Reader**.
 
 For users which need **read/write** access you should assign role named **Storage Blob Data Contributor**. Read/Write access is needed if user should have access to create external table as select (CETAS).
-> Note
+
+> [!NOTE]
 > If user has a role Owner or Contributor, that role is not enough. Azure Data Lake Storage gen 2 has super-roles which should be assigned.
 
 ## Database level permission
