@@ -1,6 +1,6 @@
 One of the central questions that new Mixed Reality learners ask is always some variation of “Well, what’s the difference between AR, VR, and MR then”. Before we dive into the Webster’s dictionary definitions, watch the following video and see if your mental model starts to line up with this new paradigm:
 
-![Differences between AR and VR](https://www.youtube.com/watch?v=gR1KkNuCAxY&feature=emb_title&ab_channel=WindowsDeveloper)
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Whats-the-difference-between-AR-VR-and-MR--One-Dev-Question/player?format=ny]
 
 Now that you’ve got the basics down, let’s define AR on a more granular level:
 
@@ -24,4 +24,5 @@ Virtual Reality applications are great for training and for simulations where us
 
 The next logical question you’re probably asking yourself is – “With all these choices, how do I decide which part of the Mixed Reality spectrum I start developing an MR application. Would my application be better in AR or VR?”. The easy answer is that we have a video for just that scenario to round out our discussion:
 
-![Choosing between AR and VR development video](https://www.youtube.com/watch?v=wJyiRRN9CjY&feature=emb_title&ab_channel=WindowsDeveloper)
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-the-best-reality-for-my-app--One-Dev-Question/player?format=ny]
+
