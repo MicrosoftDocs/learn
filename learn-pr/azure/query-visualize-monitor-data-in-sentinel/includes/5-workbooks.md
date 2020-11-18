@@ -17,15 +17,15 @@ From the **Templates** page, you can select an existing workbook to display a de
 
 ## Review an existing workbook template
 
-As mentioned earlier, Contoso is concerned about compromised identities. As the security administrator, you can examine the existing **Audit AD Sign-in logs** workbook by selecting the template in the template section, and then selecting **View template** in the details pane. 
+As mentioned earlier, Contoso is concerned about compromised identities. As the security administrator, you can examine the existing **Audit AD Sign-in logs** workbook by selecting the template in the template section, and then selecting **View template** in the details pane.
 
-![Screenshot that present existing workbooks](../media/04-View-Existing-workbook.PNG)
+:::image type="content" source="../media/04-View-Existing-workbook.PNG" alt-text="Screenshot that displays existing workbooks." border="true":::
 
 The **Azure AD Sign-in logs** workbook contains predefined charts, graphs, and tables that can provide important insight about the sign-in activity in Azure AD. You can find information about user sign-ins and locations, email addresses, and IP addresses of your users. In addition, you can also review information about failed activities and the errors that triggered the failures.
 
 On the **Azure AD Sign-in logs** page, you can expand the time range or filter the apps and users that have sign-in privileges in the Azure AD. For example, Contoso wants to identify users that have the ability to sign-in to the Azure portal, so they can filter the data as displayed in the following screenshot:
 
-![Screenshot that present filtering users](../media/04-Filter-Users.PNG)
+:::image type="content" source="../media/04-Filter-Users.PNG" alt-text="Screenshot that displays the filtering of users." border="true":::
 
 Contoso is interested in identifying the failed sign-in attempts, so that they can display these accounts by selecting the information tiles, and then selecting a tile or a row to display more information such as: 
 

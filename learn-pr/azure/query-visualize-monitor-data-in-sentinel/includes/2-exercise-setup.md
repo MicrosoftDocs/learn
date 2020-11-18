@@ -57,4 +57,3 @@ In this task, you will deploy an Azure Sentinel connector to Azure Activity.
     | **simple-vmNetworkInterface** | Network interface | Network interface for the  VM. |
     | **st1*xxxxx*** | Storage account | Storage account used by the virtual machine. |
     | **vnet1** | Virtual network | Virtual network for the VM. |
-

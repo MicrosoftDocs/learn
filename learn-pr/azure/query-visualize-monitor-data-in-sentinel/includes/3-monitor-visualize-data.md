@@ -5,11 +5,11 @@ Azure Sentinel Logs provide you access to the various logs collected from the se
 The Log Analytic workspace is a repository that stores data and configuration information. You can create queries to filter important information, which you can then use to create analytics rules and detect threats.
 For example, you can use Azure Sentinel Logs in Contoso to search data from multiple sources, aggregate large data sets, and perform complex operations to locate potential security threats and vulnerabilities.
 
-## Exploring the Azure Sentinel Logs page
+## Explore the Azure Sentinel Logs page
 
 You can search for specific logs on the **Azure Sentinel Logs** page, which you can access from the navigation pane in Azure Sentinel .
 
-The **Logs** page has four main parts: <!--Marjan, what is the exact title of the page? Is Azure Sentinel Logs or just Logs-->
+The **Logs** page has four main parts:
 
 - The page header contains links to the **Queries**, **Query explorer**, settings and help section.
 - The **Tables** pane displays collected data from the logs in tables, each comprising multiple columns.
@@ -31,12 +31,11 @@ You can start predefined queries by selecting **Run**, which will redirect you t
 
 :::image type="content" source="../media/02-Unauthorized-Users.png" alt-text="Screenshot that presents unauthorized users." border="true":::
 
-
 ### Query Explorer
 
 You can use the **Query Explorer** link on the page header to access your previously saved queries. You can also access some **Solution Queries** that basically filter the most common queries that you can use to filter the data. From the **Solution Queries** list, you can either run the query or organize the query in the favorites section by selecting the star symbol.
 
-### Tables pane 
+### Tables pane
 
 The **Tables** pane groups logs from different solutions into tables. You can expand the solution group and see all the logs that are collected. You can also select one of the logs from the tables pane, and then you can either preview the data or add that log to the **Favorites** section.
 
@@ -74,7 +73,7 @@ You can export the query into one of the following formats:
 - **Export to Power BI (M query)**. Use this option to create and download a **PowerBIQuery.txt** file that you can open with Microsoft Power BI application.
 
 You can pin the results of the query into a private or shared dashboard so you can quickly examine the results of the query.
-You can use Format query on the header toolbar to make the query more readable.
+You can use **Format query** on the header toolbar to make the query more readable.
 
 > [!Note]
 > You can export or pin the query only if the query expression generates data in the query result section.

@@ -2,7 +2,7 @@ Azure Sentinel provides the Azure Data Explorer that you can use to search and f
 
 ## Kusto query language
 
-The Azure Data Explorer provides you the ability to create, store, and run interactive analytics on collected data by using the Kusto query language (KQL). Azure Data Explorer offers different tools and integrations to perform data ingestion, queries, visualization, orchestration, and other operations. Azure Sentinel uses KQL to visualize and analyze the important data. You can use KQL to create complex analytical queries that include some of the following operators:
+The Azure Data Explorer provides you the ability to create, store, and run interactive analytics on collected data by using KQL. Azure Data Explorer offers different tools and integrations to perform data ingestion, queries, visualization, orchestration, and other operations. Azure Sentinel uses KQL to visualize and analyze the important data. You can use KQL to create complex analytical queries that include some of the following operators:
 
 - Calculated columns
 - Join functions
@@ -62,20 +62,18 @@ You can combine your queries with some of the most commonly used operators:
 
 To combine the records from two sources (tables), you can use the **join** operator. The **union** command combines two or more tables into one.
 
-## Learn more
+For more information, refer to the Microsoft [Log analytics tutorial](https://docs.microsoft.com/azure/azure-monitor/log-query/log-analytics-tutorial) that uses features of Log Analytics to build and run a query instead of working with the query itself. 
 
-Microsoft provides a nice [Log analytics tutorial](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/log-analytics-tutorial) that uses features of Log Analytics to build and run a query instead of working with the query itself. 
-
-You can also use [Azure Data explorer tutorial](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/tutorial?pivots=azuredataexplorer) to learn about the Kusto query language.
+You can also use [Azure Data explorer tutorial](https://docs.microsoft.com/azure/data-explorer/kusto/query/tutorial?pivots=azuredataexplorer) to learn about KQL.
 
 ## Azure Monitor Community repository on GitHub
 
-[Azure Monitor Community](https://github.com/microsoft/AzureMonitorCommunity) repository on GitHub contains log queries, workbooks, and alerts, shared by Microsoft and community contributers to help Azure Monitor users make the most of it. Many of these ready to use queries and workbooks can be used in Azure Sentinel for queries, visualization and reporting on security threats and vulnerabilities.
+The [Azure Monitor Community](https://github.com/microsoft/AzureMonitorCommunity) repository on GitHub contains log queries, workbooks, and alerts, shared by Microsoft and community contributors to help Azure Monitor users make the most of it. You can use many of these ready-to-use queries and workbooks in Azure Sentinel for queries, visualization, and reporting on security threats and vulnerabilities.
 
 ## Azure Sentinel repository on GitHub
 
-You can also use [Azure Sentinel repository](https://github.com/Azure/Azure-Sentinel) on GitHub to search for specilized queries and workbooks to secure your environment and hunt for threats.
-For example the following query from Azure Sentinel GitHub repo, shows suspicios delegation of permisisons to account. The query analyze the ip address form where administrative user grant to others access on Azure resources. If an operation is not from this IP address, it signals suspicios activity, that can be further investigate.
+You can also use the [Azure Sentinel repository](https://github.com/Azure/Azure-Sentinel) on GitHub to search for specialized queries and workbooks to help secure your environment and hunt for threats.
+For example, the following query from Azure Sentinel GitHub repository displays suspicious delegation of permissions to user accounts. The query analyzes the IP address from where the administrator grants access to other users to Azure resources. If an operation is not from a valid IP address, the query signals suspicious activity, which you can further investigate.
 
 ```kusto
   let timeframe = 7d;
@@ -88,4 +86,4 @@ For example the following query from Azure Sentinel GitHub repo, shows suspicios
   | extend AccountCustomEntity = Caller, IPCustomEntity = CallerIpAddress
 ```
 
-If you want to try some examples, you can use [this demo environment](https://ms.portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade).
+If you want to try some examples, use [the demonstration environment on the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade).
