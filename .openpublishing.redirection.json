@@ -4229,6 +4229,66 @@
       "source_path": "learn-pr/wwl-azure/privacy-compliance-data-protection-standards/11-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-network-connectivity/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-network-connectivity/8-choose-azure-security-solutions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-network-connectivity/7-define-application-security-groups.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-network-connectivity/6-define-network-security-groups.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-network-connectivity/3-define-shared-security.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-network-connectivity/5-explore-azure-distributed-denial-service-protection.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-network-connectivity/4-explore-azure-firewall.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-network-connectivity/2-explore-defense-depth.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-network-connectivity/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-network-connectivity/10-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-network-connectivity/11-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-network-connectivity/9-walkthrough-traffic.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
+      "redirect_document_id": false
     }
   ]
 }
