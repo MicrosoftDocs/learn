@@ -58,3 +58,4 @@ If it says **Storage not configured**, select that text, and follow the previous
 1. Select **asplogs**, and then select **Select**.
 1. In the **Retention Period (Days)** box, enter **5**.
 1. To close the **logs** pane, and update the log settings, select **Save**.
+
