@@ -1,4 +1,4 @@
-An Azure Function runs in the cloud in the context of an Azure Function App. A function app is a container that specifies the operating system for running an Azure Function, together with the resources available, such as the memory, computing power, and disk space.  The Azure Function App also provides the public URL for running your functions. Behind the scenes, an Azure Function App is a collection of one or more virtual machines, running a web server. When you publish an Azure Function, you deploy it to these virtual machines.
+An Azure Function runs in the cloud in the context of an Azure Function App. A function app is a container that specifies the operating system for running an Azure Function, together with the resources available, such as the memory, computing power, and disk space. The Azure Function App also provides the public URL for running your functions. Behind the scenes, an Azure Function App is a collection of one or more virtual machines (VMs), running a web server. When you publish an Azure Function, you deploy it to these VMs.
 
 In the luxury watch online website scenario, you'll deploy the Azure Functions you create to the cloud. You need to create an Azure Function App, and then publish your functions to this app. You want to determine the best way to do this.
 
@@ -28,7 +28,7 @@ Continuous deployment is a great option for projects where multiple and frequent
 
 ![Screenshot of the Deployment Center page in an Azure Functions App](../media/4-deployment-center.png)
 
-You can configure continuous deployment from the Azure portal, using the *Deployment Center* feature of an Azure Function App. Deployment is configured on a per-function app basis.
+You can configure continuous deployment from the Azure portal, using the **Deployment Center** feature of an Azure Function App. Deployment is configured on a per-function app basis.
 
 ## Zip deployment
 
