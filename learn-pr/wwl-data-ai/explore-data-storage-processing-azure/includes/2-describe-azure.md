@@ -34,7 +34,7 @@ The processing engine is provided by Apache Spark. Spark is a parallel-processin
 
 You can write the Spark application code using several languages, such as Python, R, Scala, Java, and SQL. Spark has a number of libraries for these languages, providing complex analytical routines that have been optimized for the clustered environment. These libraries include modules for machine learning, statistical analysis, linear and non-linear modeling, predictive analytics, and graphics.
 
-You write Databricks applications using a *Notebook*. A notebook contains a series of steps (*cells*), each of which contains a block of code. For example, one cell might contain the code that connects to a data source, the next cell reads the data from that source and converts it into a model in-memory, the next cell plots a graph, and a final cell saves the data from the in-memory model to a repository.
+You write Databricks applications using a *Notebook*. A notebook contains a series of steps (*cells*), each of which contains a block of code. For example, one cell might contain the code that connects to a data source, the next cell reads the data from that source and converts it into a model in-memory, the next cell plots a graph, and a final cell saves the data from the in-memory model to a repository. The first line in the cell is %language. For example, %scala.
 
 > [!div class="mx-imgBorder"]
 > ![Image showing the elements of Azure Databricks](../media/2-databricks.png)
