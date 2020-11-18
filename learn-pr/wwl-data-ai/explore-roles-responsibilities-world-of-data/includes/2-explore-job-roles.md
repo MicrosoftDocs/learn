@@ -2,7 +2,11 @@ There's a wide variety of roles involved in managing, controlling, and using dat
 
 ## What are the roles in the world of data?
 
-There are three key job roles that deal with data in most organizations. Database Administrators manage databases, assigning permissions to users, storing backup copies of data and restore data in case of any failures. Data Engineers are vital in working with data, applying data cleaning routines, identifying business rules, and turning data into useful information. Data Analysts explore and analyze data to create visualizations and charts to enable organizations to make informed decisions.
+There are three key job roles that deal with data in most organizations:
+
+- **Database Administrators** manage databases, assigning permissions to users, storing backup copies of data and restore data in case of any failures.
+- **Data Engineers** are vital in working with data, applying data cleaning routines, identifying business rules, and turning data into useful information.
+- **Data Analysts** explore and analyze data to create visualizations and charts to enable organizations to make informed decisions.
 
 ## Azure Database Administrator role
 

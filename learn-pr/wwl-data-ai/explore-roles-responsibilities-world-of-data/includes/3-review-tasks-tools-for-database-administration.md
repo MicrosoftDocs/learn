@@ -17,7 +17,6 @@ Some of the most common roles and responsibilities of a database administrator i
 - Contacting database vendor for technical support.
 - Generating various reports by querying from database as per need.
 - Managing and monitoring data replication.
-- Acting as liaison with users.
 
 ## Common database administrator tools
 
