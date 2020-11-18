@@ -62,3 +62,4 @@ You can perform setup of Azure Monitor for containers for Azure Arc enabled Kube
 1. Configuring limited connectivity from the pods running the Log Analytics agent to all nodes in the cluster to collect performance metrics.
 1. Configuring limited connectivity from the pods running the Log Analytics agent to the control plane to allow collecting cluster inventory data. 
 
+Choose the best response for each of the following questions. Then select "Check your answers".
