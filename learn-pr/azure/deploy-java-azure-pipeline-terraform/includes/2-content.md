@@ -1,11 +1,31 @@
-<!-- Guidance on writing the introductory text in a learning unit: https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductions?branch=master#use-the-standard-learning-unit-introduction-format -->
+In this unit, you'll learn about Terraform with Azure.
 
-<!-- Use this syntax for any TODOs or notes to yourself or reviewers -->
+# Terraform with Azure
 
-<!-- If you have any relevant links to other content (in Learn, Docs or anywhere else), include it only in the Learn More section in the final Summary unit. -->
+Terraform is an open-source tool for provisioning and managing cloud infrastructure. It codifies infrastructure in configuration files that describe the topology of cloud resources. These resources include  virtual machines, storage accounts, and networking interfaces. The Terraform CLI provides a simple mechanism to deploy and version the configuration files to Azure.
 
-<!-- Images: all images must be original. Work with the team to submit an image creation request if new art is needed. See here for requirements on screenshots: https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-create-screenshot?branch=master -->
+This article describes the benefits of using Terraform to manage Azure infrastructure.
 
-<!-- Don't include a summary section in individual units -->
+## Automate infrastructure management
 
-<!-- Don't include a sentence or section to transition to the next unit. The platform will insert the name of the next unit above the navigation button at the bottom -->
+Terraform's template-based configuration files enable you to define, provision, and configure Azure resources in a repeatable and predictable manner. Automating infrastructure has several benefits:
+
+- Lowers the potential for human errors while deploying and managing infrastructure.
+- Deploys the same template multiple times to create identical development, test, and production environments.
+- Reduces the cost of development and test environments by creating them on-demand.
+
+## Understand infrastructure changes before being applied
+
+As a resource topology becomes complex, understanding the meaning and impact of infrastructure changes can be difficult.
+
+The Terraform CLI enables users to validate and preview infrastructure changes before application. Previewing infrastructure changes in a safe manner has several benefits:
+- Team members can collaborate more effectively by quickly understanding proposed changes and their impact.
+- Unintended changes can be caught early in the development process
+
+## Deploy infrastructure to multiple clouds
+
+Terraform is adept at deploying an infrastructure across multiple cloud providers. It enables developers to use consistent tooling to manage each infrastructure definition.
+
+## Next steps
+
+Now that you have an overview of Terraform and its benefits, here are suggested next steps.

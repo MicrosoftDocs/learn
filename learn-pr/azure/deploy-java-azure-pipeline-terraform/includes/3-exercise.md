@@ -1,23 +1,53 @@
-<!-- See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductions?branch=master#use-the-standard-exercise-unit-introduction-format -->
+In this unit, you'll configure your Database and Spring Boot application to be deployed via Terraform which will then create and deploy to an Azure App Service instance.
 
-<!-- The titles of exercise units specified in the YAML should be prefixed with "Exercise - " -->
+<!-- 
+terraform basic azure
+https://github.com/jdubois/spring-petclinic/tree/deploy-to-azure
 
-<!-- Keep module prerequisites in mind when writing instructions for readers. Don't spend lots of words on instructions about steps that they should generally already know how to do. Focus on the configuration options and items they need to select. -->
+github actions
+https://docs.microsoft.com/en-us/azure/spring-cloud/spring-cloud-howto-github-actions?pivots=programming-language-java
 
-<!-- The CLI is more time- and space-efficient for tasks that are not directly relevant to the module. For example, if your exercise requires creating an App Service web app to host an app, but the module isn't directly about creating App Service instances, strongly consider using the CLI. -->
+https://docs.microsoft.com/en-us/azure/spring-cloud/spring-cloud-howto-cicd?pivots=programming-language-java
 
-<!-- If you have sample code, include it with the content. Assume that it will end up in a public git repo for consumption during the exercise (and write your instructions with that assumption, but leave a TODO for the repo name). The Learn team will work with you to get it into the right place.-->
-
-<!-- Exercises should generally make use of the sandbox. See the following:
-  - https://review.docs.microsoft.com/en-us/learn-docs/docs/unit-enable-azure-sandbox?branch=master
-  - https://review.docs.microsoft.com/en-us/learn-docs/docs/unit-add-embedded-interactivity?branch=master
-
-    The most important things to keep in mind are:
-  - Include the proper YAML markup for the unit
-  - Don't ask the user to create a resource group; use <rgn>[Sandbox resource group]</rgn> to specify the sandbox resource group name (search the repo for "<rgn>" for examples)
-  - Use [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to link to the portal
-  - Use the appropriate region includes (search the repo for "azure-sandbox-regions" for examples. There are four includes for different situations - the "friendly" ones are for activities in the portal as opposed to the CLI, and the "first mention" includes are to be used at the first mention of location specification in a module exercise)
-  - There's also an include (azure-sandbox-activate.md) that should precede the first interactive directions that require the sandbox to have been activated
+https://medium.com/faun/azure-deployments-made-easy-with-terraform-and-github-actions-d459ae5ab7c7
 -->
 
-<!-- Keep bulleted/numbered lists to seven items max. Break them up into groups with headers if necessary -->
+# Spring PetClinic Sample Application
+
+```bash
+mkdir source-code
+git clone https://github.com/jdubois/spring-petclinic/tree/deploy-to-azure
+```
+
+## Deploying to Azure
+
+We use Terraform to create an Azure resource group with a MySQL database and an Azure App Service web application.
+
+You will probably want to customize your application name, and maybe your resource group name: edit the `terraform/variables.tf` for this.
+
+To create your Azure resources, install Terraform and run it:
+
+```bash
+cd terraform
+terraform init
+terraform apply
+cd ..
+```
+
+To delete your resources, you will also be able to use Terraform:
+
+```bash
+cd terraform
+terraform destroy
+cd ..
+```
+
+To deploy the application, you will need to edit the `pom.xml` and edit the `azure-webapp-maven-plugin` plugin
+section, in order to configure the resource group and the application name (which should be the same as
+the ones configured in Terraform).
+
+Then, deploy the application by running:
+
+```bash
+./mvnw azure-webapp:deploy
+```
