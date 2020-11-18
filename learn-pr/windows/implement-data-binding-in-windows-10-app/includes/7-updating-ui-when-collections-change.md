@@ -2,7 +2,7 @@
 
 ![Tech logo](../media/tech-uwp.png)
 
-In this lesson, the user will select favorite colors. The available colors are listed in a dropdown (a `ComboBox` control). The user selects a color, and adds it to his or her favorites by pressing a button. The favorite colors are displayed below. Selecting a favorite color also displays a button that allows the user to remove the selected color from their favorites.
+In this lesson, the user will select favorite colors. The available colors are listed in a dropdown (a `ComboBox` control). The user selects a color, and add it to your favorites by pressing a button. The favorite colors are displayed below. Selecting a favorite color also displays a button that allows the user to remove the selected color from their favorites.
 
 ![Screenshot of sample app](../media/lesson7-finished.png)
 
@@ -26,7 +26,7 @@ public ColorDescriptor SelectedColor
 }
 ```
 
-This pattern should be pretty familiar by now. It is a standard property, decorated with the `INotifyPropertyChanged` mechanism, with the help of the `ObservableObject` base class.
+This pattern should be familiar by now. It is a standard property, decorated with the `INotifyPropertyChanged` mechanism, with the help of the `ObservableObject` base class.
 
 #### 2. Create the `FavoriteColors` list
 
@@ -54,7 +54,7 @@ With this, we're done with the code (for now). Let's turn our attention to the X
 
 #### 4. Change the `ListBox` to a `ComboBox`
 
-Because we want to have the full list of colors to be shown in a dropdown (which is a `ComboBox` control), we need to change the XAML. Luckily, both `ListBox` and `ComboBox` are descendants of the `ItemsControl` control, and they work very similarly despite there being a lot of difference in how they look and behave. All we have to do is replace `ListBox` with `ComboBox` in the ColorList.xaml file. You can use the **Edit** > **Find and Replace** > **Quick Replace** command (CtrlL+H) for this. 
+Because we want to have the full list of colors to be shown in a dropdown (which is a `ComboBox` control), we need to change the XAML. Luckily, both `ListBox` and `ComboBox` are descendants of the `ItemsControl` control, and they work similarly despite there being a difference in how they look and behave. All we have to do is replace `ListBox` with `ComboBox` in the ColorList.xaml file. You can use the **Edit** > **Find and Replace** > **Quick Replace** command (CtrlL+H) for this. 
 
 ![Screenshot of Quick Replace command](../media/quickreplace.png)
 
@@ -133,7 +133,7 @@ The UI is simple. All of the controls (the dropdown, the **Add to Favorites** bu
 </StackPanel>
 ```
 
-Note that there's a `TwoWay` binding between the currently selected item in the `ComboBox` and the `SelectedColor` property of the `ColorListDataContext` class. 
+There's a `TwoWay` binding between the currently selected item in the `ComboBox` and the `SelectedColor` property of the `ColorListDataContext` class. 
 
 #### 7. Run the app
 
@@ -249,7 +249,7 @@ public ColorDescriptor SelectedColor
 }
 ```
 
-This pattern should be pretty familiar by now. It's a standard property, decorated with the `INotifyPropertyChanged` mechanism, with the help of the `ObservableObject` base class.
+This pattern should be familiar by now. It's a standard property, decorated with the `INotifyPropertyChanged` mechanism, with the help of the `ObservableObject` base class.
 
 #### 2. Create the `FavoriteColors` list
 
@@ -277,7 +277,7 @@ With this, we're done with the code (for now). Let's turn our attention to the X
 
 #### 4. Change the `ListBox` to a `ComboBox`
 
-Because we want to have the full list of colors to be shown in a dropdown (which is a `ComboBox` control), we need to change the XAML. Luckily, both `ListBox` and `ComboBox` are descendants of the `ItemsControl` control, and they work very similarly despite there being a lot of difference in how they look and behave. All we have to do is replace `ListBox` with `ComboBox` in the ColorList.xaml file. You can use the **Edit** > **Find and Replace** > **Quick Replace** command (CtrlL+H) for this. 
+Because we want to have the full list of colors to be shown in a dropdown (which is a `ComboBox` control), we need to change the XAML. Luckily, both `ListBox` and `ComboBox` are descendants of the `ItemsControl` control, and they work similarly despite there being numerous difference in how they look and behave. All we have to do is replace `ListBox` with `ComboBox` in the ColorList.xaml file. You can use the **Edit** > **Find and Replace** > **Quick Replace** command (CtrlL+H) for this. 
 
 ![Screenshot of Quick Replace command](../media/quickreplace.png)
 
@@ -362,7 +362,7 @@ The UI is simple. All of the controls (the dropdown, the **Add to Favorites** bu
 </StackPanel>
 ```
 
-Note that there's a `TwoWay` binding between the currently selected item in the `ComboBox` and the `SelectedColor` property of the `ColorListDataContext` class.
+There's a `TwoWay` binding between the currently selected item in the `ComboBox` and the `SelectedColor` property of the `ColorListDataContext` class.
 
 #### 7. Create the Click handler for the `Add to Favorites` button
 
@@ -374,7 +374,7 @@ Double-click the `Add to Favorites` button in the visual designer in Visual Stud
 <Button ... Click="Button_Click">Add to Favorites</Button>
 ```
 
-Rename the `Button_Click` method to `AddToFavorites_Click` in both the codebehind and the XAML. You can do this by renaming it in the code, and then using the lighbulb icon, selecting "Rename `Button_Click` to `AddToFavorites_Click`". This will take care of changing the method's name in the XAML file, too.
+Rename the `Button_Click` method to `AddToFavorites_Click` in both the codebehind and the XAML. You can do this by renaming it in the code, and then using the lightbulb icon, selecting "Rename `Button_Click` to `AddToFavorites_Click`". This will take care of changing the method's name in the XAML file, too.
 
 ![Screenshot of Visual Studio option to rename method](../media/rename_addtofavorites_click_wpf.png).
 
@@ -384,7 +384,7 @@ Add a convenience property to the top of the `ColorList` class to make it easier
 private ColorListDataContext DC => (ColorListDataContext)DataContext;
 ```
 
-Then, in the `AddToFavorites_Click` method, simply invoke the previously written logic from the `ColorListDataContext` class:
+Then, in the `AddToFavorites_Click` method, invoke the previously written logic from the `ColorListDataContext` class:
 
 ```cs
 private void AddToFavorites_Click(object sender, RoutedEventArgs e)
