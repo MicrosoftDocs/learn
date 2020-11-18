@@ -5,8 +5,8 @@ metadata:
   title: Understanding holograms
   description: Learn how holograms are rendered, placed, and saved in Mixed Reality environments. 
   ms.date: 11/17/2020
-  author: hferrone
-  ms.author: v-hferrone
+  author: Sean-Kerawala
+  ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

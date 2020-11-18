@@ -5,8 +5,8 @@ metadata:
   title: Mixed Reality cloud services
   description: Learn about the variety of cloud services that can be integrated with Mixed Reality applications, including Azure Spatial Anchors, Azure Remote Rendering, and cognitive services.
   ms.date: 11/17/2020
-  author: hferrone
-  ms.author: v-hferrone
+  author: Sean-Kerawala
+  ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

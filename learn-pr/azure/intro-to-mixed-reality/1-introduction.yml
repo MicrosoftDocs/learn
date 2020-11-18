@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: An introduction to the Learn module, it's objectives, and prerequisites.
   ms.date: 11/17/2020
-  author: hferrone
-  ms.author: v-hferrone
+  author: Sean-Kerawala
+  ms.author: sekerawa 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
