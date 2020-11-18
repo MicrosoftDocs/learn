@@ -50,7 +50,7 @@ Ensure that no guest users exist, or alternatively if the business requires gues
 1. Select the **Show** drop-down and select **Guest users only**.
 1. Verify that there are no guest users listed (`USER TYPE=Guest`).
 
-    ![Screenshot of the Azure portal showing AAD all users listing with a single guest user shown.](../media/2-guest-users.png)
+    ![Screenshot of the Azure portal showing Azure AD all users listing with a single guest user shown.](../media/2-guest-users.png)
 
 ### Password options
 
@@ -66,7 +66,7 @@ With dual identification set, an attacker would require compromising both the id
 1. Go to **Authentication methods**.
 1. Set the **Number of methods required to reset** to **2**.
 
-    ![Screenshot of the Azure portal showing AAD password reset authentication methods pane with number of methods required to reset set to 2.](../media/2-require-two-methods.png)
+    ![Screenshot of the Azure portal showing Azure AD password reset authentication methods pane with number of methods required to reset set to 2.](../media/2-require-two-methods.png)
 
 ### Establish an interval for reconfirming user authentication methods - Level 1
 
@@ -90,7 +90,7 @@ This should be set to **No**. Restricting invitations through administrators onl
 1. Go to **External users**, click **Manage external collaboration settings**.
 1. Ensure that **Members can invite** is set to **No**.
 
-    :::image type="complex" source="../media/2-members-can-invite.png" alt-text="Screenshot of the Azure portal showing AAD external collaboration settings with the members can invite setting tip shown.":::
+    :::image type="complex" source="../media/2-members-can-invite.png" alt-text="Screenshot of the Azure portal showing Azure AD external collaboration settings with the members can invite setting tip shown.":::
         Members can invite tip says, "Yes means that non-admin members of your directory can invite guests to collaborate on resources secured by your Azure AD, such as SharePoint sites or Azure resources. No means that only administrators can invite guests to your directory."
     :::image-end:::
 
