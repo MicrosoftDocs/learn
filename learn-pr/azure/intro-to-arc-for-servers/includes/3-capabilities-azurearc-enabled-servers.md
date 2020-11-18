@@ -6,7 +6,7 @@ A number of Azure Arc benefits are independent of the resouce type, since they r
 
 - The ability to organize all organizational resources by using Azure management groups, subscriptions, resource groups, and tags.
 - A single, comprehensive inventory of organizational assets across multi-clouds and on-premises, including support for searching and indexing by using Azure Resource Graph.
-- A consolidated view of Azure and Azure Arc enabled resources via the Azure portal, Azure CLI, Azure PowerShell, and Azure REST API. <!--Marcin: did you explain these acronyms yet? Or are they very common?--> 
+- A consolidated view of Azure and Azure Arc enabled resources via the Azure portal, Azure Command Line Interface (CLI), Azure PowerShell, and Representational state transfer (REST) Application Programming Interface (API). 
 - Direct access from the Azure portal to the majority of management features of the Azure Arc enabled servers: 
 
 | Setting | Explanation |
@@ -58,7 +58,6 @@ For example, Contoso could use Azure Policy to implement the following rules:
 - Identify Arc enabled servers running Windows that are not joined to a specific Active Directory Domain Services (AD DS) domain.
 - Identify Arc enabled servers running Windows or Linux without Log Analytics agent installed.
 - Identify Arc enabled servers running Linux that are not using SSH keys for authentication.
-<!--Marcin: I deleted the two links here. I hope this is correct? They were the same as in the next subtitle-->
 
 ### Assign policies to Azure Arc enabled servers
 
