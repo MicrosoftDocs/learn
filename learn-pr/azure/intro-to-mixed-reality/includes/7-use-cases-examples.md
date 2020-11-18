@@ -1,5 +1,3 @@
-## Historical context
-
 The first revolution in computing happened with the creation of mainframe computers: computers that, at times, occupied a whole room. Mainframes were used by large organizations such as NASA for critical applications that process data. The second wave of computing is defined by the Personal Computers(PC) becoming widely available.
 
 We believe third wave of computing is going to include many devices to manage data and include IoT sensors and Mixed Reality devices. We have more data than ever before, and leveraging or applying that data through Machine Learning or with Artificial Intelligence has never been more powerful. To be able to process the data and make informed decisions, we need to have access to the data in the right time and right place. Mixed Reality is able to bring that data into our context, real world.
