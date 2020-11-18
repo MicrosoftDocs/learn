@@ -55,3 +55,5 @@ PowerShell DSC is a technology that implements declarative configuration managem
 All of the services described in this unit are available to non-Azure servers, including those which are not Azure Arc enabled. However, Azure Arc offers advantages when it comes to the onboarding process, since you can use VM extensions or Azure Policy to deploy the Log Analytics agent. 
 
 In addition, integration with Azure Resource Manager provides support for the resource context access to Log Analytics data. Resource context allows you to restrict the scope of access to Log Analytics data based on the permissions to the corresponding Azure resource. Because each Azure Arc enabled server exists as an Azure resource, you can control access to its Log Analytics logs by relying on RBAC permissions assigned to that resource.
+
+Choose the best response for each of the following questions. Then select "Check your answers".
