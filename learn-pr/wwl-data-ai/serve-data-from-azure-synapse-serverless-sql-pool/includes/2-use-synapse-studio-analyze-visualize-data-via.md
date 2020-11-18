@@ -2,13 +2,13 @@ Azure Synapse serverless SQL pool provides look and feel of a SQL Server to the 
 
 Azure Synapse Studio is the web-native experience that ties everything together for data engineers, providing one location to do every task you need to build a complete solution.
 
-To open Synapse Studio, navigate to Synapse workspace resource in Azure Portal and click on the “Open” link available in the overview page:
+To open Synapse Studio, navigate to Synapse workspace resource in Azure portal and click on the “Open” link available in the overview page:
  
 ![Open Azure Synapse Studio](../media/open-azure-synapse-studio.png)
 
 This will open the Synapse Studio related to the Synapse workspace you navigated to. The easiest way to start issuing serverless SQL pool queries is to use Knowledge center feature. There are two ways to launch knowledge center wizard:
 
-1.	Click on question mark icon in top right corner and select Knowledge center
+1.	Click on question mark icon in top-right corner and select Knowledge center
 
     ![Navigating to the knowledge center](../media/navigate-knowledge-center.png)
 
@@ -36,9 +36,9 @@ This will open the Synapse Studio related to the Synapse workspace you navigated
  
     ![Visualizing script execution results](../media/visualize-script-execution-results.png)
 
-That’s it! In just few clicks you ran the query on serverless SQL pool and visualized the results.
+That’s it! In just a few clicks, you ran the query on serverless SQL pool and visualized the results.
 
-You can now start querying your own data. Best way to start is to open your Storage and start browsing the files. You can do that by clicking on Data in the menu on the left side, click on Linked tab, select storage and filesystem/container you are interested in. Than navigate to the files you would like to start querying.
+You can now start querying your own data. Best way to start is to open your Storage and start browsing the files. You can do that by clicking on Data in the menu on the left side, click on Linked tab, select storage and filesystem/container you are interested in. Then navigate to the files you would like to start querying.
  
 ![Viewing files in a data lake](../media/view-files-data-lake.png)
 
@@ -52,9 +52,9 @@ You can now start querying your own data. Best way to start is to open your Stor
 
 3. Hit run and results will appear at the bottom of the screen.
 
-You will notice in command bar of this SQL Script you are connected to “Built-in” pool. This is the serverless SQL pool you get immediately when creating a Synapse workspace. Right from it, you can see list of databases that are created on this serverless SQL pool. From the drop-down menu you can select the database on which you want to execute the query.
+You will notice in command bar of this SQL Script you are connected to “Built-in” pool. This is the serverless SQL pool you get immediately when creating a Synapse workspace. Right from it, you can see list of databases that are created on this serverless SQL pool. From the drop-down menu, you can select the database on which you want to execute the query.
 
-In Synapse Studio, once you click on the Data item in the menu on the left, in Workspace tab, you can see the list of all the database that belong to this workspace. Databases with this icon:
+In Synapse Studio, once you click on the Data item in the menu on the left, in Workspace tab, you can see the list of all the database that belongs to this workspace. Databases with this icon:
  
 ![Database icon](../media/database-icon.png)
 

@@ -16,8 +16,6 @@ Once singed in, click connect. New page will open where you can select the views
 
 You will be asked to choose between direct query and import mode. Let’s use import mode for this example. Once selected, loading of the data will start, and after it’s done you can start building your report.
  
-![Building reports in Power BI](../media/build-reports-power-bi.png)
-
 When done, save the report and publish it to Power BI server by clicking on File, Publish, Publish to Power BI.
  
 ![Publishing reports in Power BI](../media/publish-reports-power-bi.png)
@@ -27,7 +25,5 @@ New page will appear where you should select the Power BI instance you linked to
 ![Publishing confirmation in Power BI](../media/publish-confirmation-power-bi.png)
 
 Now go back to Synapse Studio and select Develop tab in menu on the left, expand Power BI item, expand your Power BI instance item, and expand Power BI reports item. In the list you will be able to find the new report you have just built. Click on and it will open the report designer right as a new tab in Synapse Studio.
- 
-![Viewing Power BI in Azure Synapse Studio](../media/view-power-bi-studio.png)
 
 You can continue working on your report directly from Synapse Studio.

@@ -39,7 +39,5 @@ At the top of the pipeline designer in command bar click on validate button. The
 ![Validating pipeline in Azure Synapse Studio](../media/validate-pipelines.png)
 
 Now click on Debug button in pipeline designer command bar and you pipeline will start executing.
- 
-![Debugging pipeline execution in Azure Synapse Studio](../media/debug-pipeline-execution.png)
 
 Once pipeline finishes, you will see the status change to Completed. You can now go and check the files that were outputted. To operationalize this pipeline, make sure you give it a proper name, configure proper triggers that will start the pipeline, and publish it. 

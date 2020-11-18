@@ -1,4 +1,4 @@
-Given serverless SQL pool provides look and feel of SQL Server, in addition to using clients that work with SQL Server, you can connect and execute queries programmatically. Here is an example of a C# app that connects to serverless SQL pool using the AAD identity.
+Given serverless SQL pool provides look and feel of SQL Server, in addition to using clients that work with SQL Server, you can connect and execute queries programmatically. Here is an example of a C# app that connects to serverless SQL pool using the Azure Active Directory identity.
 
 Here is the code sample you can use to get started with:
 
@@ -167,6 +167,6 @@ namespace ADInteractive5
 } // EONamespace.  End of entire program source code.
 ```
 
-To configure the Azure Active Directory to use this example you can follow [this article]( https://docs.microsoft.com/azure/azure-sql/database/active-directory-interactive-connect-azure-sql-db).
+To configure the Azure Active Directory to use this example, you can follow [this article]( https://docs.microsoft.com/azure/azure-sql/database/active-directory-interactive-connect-azure-sql-db).
 
 

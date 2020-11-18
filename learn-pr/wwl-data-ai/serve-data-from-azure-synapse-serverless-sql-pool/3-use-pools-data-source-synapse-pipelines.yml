@@ -4,7 +4,7 @@ title: Use Azure Synapse serverless SQL pools as a data source in Synapse Pipeli
 metadata:
   title: Use Azure Synapse serverless SQL pools as a data source in Synapse Pipelines
   description: "Use Azure Synapse serverless SQL pools as a data source in Synapse Pipelines"
-  ms.date: 11/17/2020
+  ms.date: 11/18/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
