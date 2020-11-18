@@ -26,7 +26,7 @@ quiz:
     - content: "Name of the incident"
       isCorrect: true
       explanation: "Yes. When you select the name of the incident, you can start the process to run a playbook on demand in response to an existing incident."
-  - content: "You want to search for a" ## Marjan this is incomplete.
+  - content: "You want to search for a suitable threat detection query or a workbook that you can use for your requirements. Where can you search for such items?"
     choices:
     - content: "Azure Architecture Center"
       isCorrect: false
