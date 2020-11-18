@@ -69,3 +69,5 @@ You can manage and assign Azure policies to Azure Arc enabled servers directly f
 Once you create a policy assignment, shortly afterwards, you will be able to review the outcome of the policy evaluation on the target Azure Arc enabled servers.
 
 :::image type="content" source="../media/3-review-policies.png" alt-text="The screenshot depicts the applied policies on ContosoVM1. Two policies are applied, and the VM is compliant with one but not the other." border="false":::
+
+Choose the best response for each of the following questions. Then select "Check your answers".
