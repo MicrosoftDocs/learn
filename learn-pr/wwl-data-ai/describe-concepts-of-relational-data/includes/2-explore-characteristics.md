@@ -70,4 +70,8 @@ For example, if you have a collection of music, video, or other media files, att
 
 Relational databases are commonly used in ecommerce systems, but one of the major use cases for using relational databases is Online Transaction Processing (OLTP). OLTP applications are focused on transaction-oriented tasks that process a very large number of transactions per minute. Relational databases are well suited for OLTP applications because they naturally support insert, update, and delete operations. A relational database can often be tuned to make these operations fast. Also, the nature of SQL makes it easy for users to perform ad-hoc queries over data.
 
-Examples of OLTP applications that use relational databases are banking solutions, online retail applications, flight reservation systems, and many online purchasing applications.
+Examples of OLTP applications that use relational databases are:
+- Banking solutions
+- Online retail applications
+- Flight reservation systems
+- Many online purchasing applications.
