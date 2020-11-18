@@ -4,13 +4,13 @@ The first revolution in computing happened with the creation of mainframe comput
 
 We believe third wave of computing is going to include many devices to manage data and include IoT sensors and Mixed Reality devices. We have more data than ever before, and leveraging or applying that data through Machine Learning or with Artificial Intelligence has never been more powerful. To be able to process the data and make informed decisions, we need to have access to the data in the right time and right place. Mixed Reality is able to bring that data into our context, real world.
 
-![Why Mixed Reality is important diagram](../media/why-01.png)
+:::image type="content" source="../media/why-01.png" alt-text="Image of common Mixed Reality use-cases in real-world production.":::
 
 ## Common use-cases
 
 - *Design & Prototyping:* Enables real-time collaborative iteration of 3D physical and virtual models across cross-functional teams and stakeholders.
 - *Training & Development:* Provides instructors with better tools to facilitate teaching/coaching sessions. It offers trainees an enhanced and engaging learning experiences through 3D visualizations and interactivity.
-- *Geospatial Planning:* Enables the assessment and planning of indoor and outdoor environments (i.e. future construction sites, new store locations, interior designs) and removing the need for manual execution.
+- *Geospatial Planning:* Enables the assessment and planning of indoor and outdoor environments, for instance future construction sites, new store locations, interior designs) and removing the need for manual execution.
 - *Sales Assistance:* Improves the effectiveness of individuals in sales-oriented roles by providing tools such as 3D catalogs and virtual product experiences that increase customer engagement and strengthen buyer confidence.
 - *Field Service:* Improves the first-visit resolution and customer satisfaction of customer support issues. It is typically used for complex products that would otherwise require a field visit. It can serve as a platform for targeted up-sell opportunities, as well.
-- *Productivity & Collaboration:* Transform the space around you into a shared augmented workplace. Remote users can collaborate, search, brainstorm and share content as if they were in the same room
+- *Productivity & Collaboration:* Transform the space around you into a shared augmented workplace. Remote users can collaborate, search, brainstorm, and share content as if they were in the same room

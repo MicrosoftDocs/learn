@@ -1,27 +1,26 @@
 One of the central questions that new Mixed Reality learners ask is always some variation of “Well, what’s the difference between AR, VR, and MR then”. Before we dive into the Webster’s dictionary definitions, watch the following video and see if your mental model starts to line up with this new paradigm:
 
-
 ![Differences between AR and VR](https://www.youtube.com/watch?v=gR1KkNuCAxY&feature=emb_title&ab_channel=WindowsDeveloper)
 
 Now that you’ve got the basics down, let’s define AR on a more granular level:
 
 *Augmented Reality is any technology that creates a composite viewing experience by superimposing a computer-generated image over a user’s view of the real world.*
 
-Augmented Reality experiences are not limited to visual addition to our world. You can create augmented experiences that are only audio addition to your physical world or both audio and visual.
+Augmented Reality experiences aren't limited to visual addition to our world. You can create augmented experiences that are only audio addition to your physical world or both audio and visual.
 
-![AR interaction sample scene](../media/ar-01.png)
+:::image type="content" source="../media/ar-01.png" alt-text="Image of a user interacting with holographic content over a physical table.":::
 
 Augmented Reality experiences are also not limited to headsets like HoloLens. Today, millions of mobile devices have depth-sensing capabilities to augment your real world with digital information.
 
-![AR game interaction gif](../media/ar-02.gif)
+:::image type="content" source="../media/ar-02.gif" alt-text="GIF of two users playing an augmented reality game on a physical surface together from their phones.":::
 
 On the other side of the spectrum, VR is defined as:
 
 *Any technology or experience that absolutely immerses a user into a virtual world through the use of a headset, effectively severing their connection to the sights and sounds of the real world.*
 
-Virtual Reality applications are great for training and for simulations where users would benefit from total immersion to replicate the real life situation. Some examples include training for firefighters, emergency room healthcare providers and flight simulations.
+Virtual Reality applications are great for training and for simulations where users would benefit from total immersion to replicate the real life situation. Some examples include training for firefighters, emergency room healthcare providers, and flight simulations.
 
-![User with immersive headset and motion controllers](../media/vr-01.jpg)
+:::image type="content" source="../media/vr-01.jpg" alt-text="Image of a user wearing an immersive headset and holding a motion controller.":::
 
 The next logical question you’re probably asking yourself is – “With all these choices, how do I decide between AR and VR when I start developing an MR application?”. The easy answer is that we have a video for just that scenario to round out our discussion:
 

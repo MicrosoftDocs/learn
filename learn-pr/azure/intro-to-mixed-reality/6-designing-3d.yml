@@ -3,12 +3,12 @@ uid: learn.intro-to-mixed-reality.6-designing-3d
 title: Designing in 3D
 metadata:
   title: Designing in 3D
-  description: Designing in 3D
+  description: Learn about different design processes that are useful for Mixed Reality and 3D content, including bodystorming, acting, and storyboarding.
   ms.date: 11/17/2020
   author: hferrone
   ms.author: v-hferrone
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 5
 content: |
   [!include[](includes/6-designing-3d.md)]

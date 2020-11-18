@@ -49,7 +49,7 @@ quiz:
     choices:
     - content: "Bodystorming"
       isCorrect: true
-      explanation: "Bodystorming allows anyone involved in the design process to try out the proposed interactions, features, and mechanics without having to fully prototype them."
+      explanation: "Bodystorming allows you to try out the proposed interactions, features, and mechanics without having to fully prototype them."
     - content: "Storyboarding"
       isCorrect: false
       explanation: "Storyboarding is a 2D design process that is better suited to advertising content to non-technical team members or stakeholders."
@@ -60,10 +60,10 @@ quiz:
     choices:
     - content: "Humans, computers, and environments."
       isCorrect: true
-      explanation: Explanation 1
-    - content: ""
+      explanation: "The intersection of computer processing, human input, and environmental understanding is where Mixed Reality lives, where it’s power, creativity, and emerging capabilities comes to life."
+    - content: "Hardware, software, and industry."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "While hardware, software, and the tech industry are important to Mixed Reality, they are not the core of what makes Mixed Reality possible."
+    - content: "Manufacturing, education, and training."
       isCorrect: false
-      explanation: Explanation 3
+      explanation: "Manufacturing, education, and training are common industry use-cases and applications for Mixed Reality."

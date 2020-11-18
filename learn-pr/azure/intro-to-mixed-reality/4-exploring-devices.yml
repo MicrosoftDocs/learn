@@ -3,12 +3,12 @@ uid: learn.intro-to-mixed-reality.4-exploring-devices
 title: Exploring Mixed Reality devices
 metadata:
   title: Exploring Mixed Reality devices
-  description: Exploring Mixed Reality devices
+  description: Explore the range of Mixed Reality devices, the capabilities they offer, and where they fit on the Mixed Reality spectrum.
   ms.date: 11/17/2020
   author: hferrone
   ms.author: v-hferrone
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/4-exploring-devices.md)]
