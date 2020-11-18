@@ -1,7 +1,7 @@
 
 Tailwind Traders allows delivery drivers to use their own mobile devices to access scheduling and logistics applications. Some delivery drivers are permanent employees of Tailwind Traders. Others work on short-term contract. How can the IT department ensure that an access attempt is really from a valid Tailwind Traders worker? 
 
-In this part, you'll learn about two processes that enable secure authentication: Azure Multi-Factor Authentication and Conditional Access. Let's start with a brief look at what multifactor authentication is in general.
+In this part, you'll learn about two processes that enable secure authentication: Azure AD Multi-Factor Authentication and Conditional Access. Let's start with a brief look at what multifactor authentication is in general.
 
 ## What's multifactor authentication?
 
@@ -29,22 +29,22 @@ Multifactor authentication increases identity security by limiting the impact of
 
 Compare multifactor authentication with single-factor authentication. Under single-factor authentication, an attacker would need only a username and password to authenticate. Multifactor authentication should be enabled wherever possible because it adds enormous benefits to security.
 
-## What's Azure Multi-Factor Authentication?
+## What's Azure AD Multi-Factor Authentication?
 
-Azure Multi-Factor Authentication is a Microsoft service that provides multifactor authentication capabilities. Azure Multi-Factor Authentication enables users to choose an additional form of authentication during sign-in, such as a phone call or mobile app notification.
+Azure AD Multi-Factor Authentication is a Microsoft service that provides multifactor authentication capabilities. Azure AD Multi-Factor Authentication enables users to choose an additional form of authentication during sign-in, such as a phone call or mobile app notification.
 
-These services provide Azure Multi-Factor Authentication capabilities:
+These services provide Azure AD Multi-Factor Authentication capabilities:
 
 * **Azure Active Directory**
 
-    The Azure Active Directory free edition enables Azure Multi-Factor Authentication for administrators with the *global admin* level of access, via the Microsoft Authenticator app, phone call, or SMS code. You can also enforce Azure Multi-Factor Authentication for all users via the Microsoft Authenticator app only, by enabling *security defaults* in your Azure AD tenant.
+    The Azure Active Directory free edition enables Azure AD Multi-Factor Authentication for administrators with the *global admin* level of access, via the Microsoft Authenticator app, phone call, or SMS code. You can also enforce Azure AD Multi-Factor Authentication for all users via the Microsoft Authenticator app only, by enabling *security defaults* in your Azure AD tenant.
 
-    Azure Active Directory Premium (P1 or P2 licenses) allows for comprehensive and granular configuration of Azure Multi-Factor Authentication through Conditional Access policies (explained shortly).
+    Azure Active Directory Premium (P1 or P2 licenses) allows for comprehensive and granular configuration of Azure AD Multi-Factor Authentication through Conditional Access policies (explained shortly).
 * **Multifactor authentication for Office 365**
 
-    A subset of Azure Multi-Factor Authentication capabilities is part of your Office 365 subscription.
+    A subset of Azure AD Multi-Factor Authentication capabilities is part of your Office 365 subscription.
 
-For more information on licenses and Azure Multi-Factor Authentication capabilities, see [Available versions of Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-licensing#available-versions-of-azure-multi-factor-authentication?azure-portal=true).
+For more information on licenses and Azure AD Multi-Factor Authentication capabilities, see [Available versions of Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-licensing#available-versions-of-azure-multi-factor-authentication?azure-portal=true).
 
 ## What's Conditional Access?
 

@@ -6,21 +6,21 @@ In this challenge, you'll implement business rules that restrict access to users
 
 ### Step 1 - Delete all of the code in the .NET Editor from the earlier exercise.
 
-Select all of the code in the .NET Editor then select the `del` or backspace key to delete it.
+Select all of the code in the .NET Editor, and to delete it, select the `del` or backspace key.
 
 ### Step 2: Add code as a starting point
 
-The following code is sample data that you'll use to test your Boolean expression logic.
+To test your Boolean expression logic, use the following code of sample data.
 
 ```csharp-interactive
 string permission = "Admin|Manager";
-int level = 53;
+int level = 55;
 ```
 
-You may need to use additional data to sufficiently test all of the scenarios described in Step 3, below.
+To sufficiently test all of the scenarios described in Step 3, you may need to use additional data.
 
 > [!IMPORTANT]
-> Use the `Contains()` helper method of a string to determine whether the `permission` variable's value contains one of the permission values you'll be checking for in the "business rules".  Example: `permission.Contains("Admin")` would return `true`. 
+> To determine whether the `permission` variable's value contains one of the permission values you'll be checking for in the "business rules", use the `Contains()` helper method of a string.  Example: `permission.Contains("Admin")` would return `true`.
 
 ### Step 3 - Implement business rules
 
@@ -58,11 +58,10 @@ You may need to use additional data to sufficiently test all of the scenarios de
 
 ### Step 4 - Make sure you get the output given the sample data
 
-When you run the code, including the sample data from step 2, you should see the following output:
+When you run the code, including the sample data from Step 2, you should see the following output:
 
 ```output
 Welcome, Admin user.
 ```
-
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.

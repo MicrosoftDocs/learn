@@ -8,7 +8,7 @@ In this unit you will install the Azure Cosmos DB extension for Visual Studio, a
 
 1. When the extension tab loads in Visual Studio Code, click **Install**.
 
-1. After installation is complete, click **Reload**.
+1. After installation is complete, click **Restart** to update.  You can restart by clicking on the gear icon on the bottom left-hand corner icon.  
 
     Visual Studio Code displays the Azure icon on the left side of the screen after the extension is installed and reloaded.
 
