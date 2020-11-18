@@ -8,6 +8,8 @@ By the end of this module, you’ll be able to confidently discuss Mixed Reality
 
 ## Learning objectives
 
+By the end of this module, you'll be able to:
+
 - Define Mixed Reality
 - Differentiate between Virtual and Augmented reality
 - Identify Mixed Reality hardware devices
@@ -19,4 +21,4 @@ By the end of this module, you’ll be able to confidently discuss Mixed Reality
 
 ## Prerequisites
 
-- This learn module has no prerequisites, come as you are and dive into Mixed Reality!
+This learn module has no prerequisites, come as you are and dive into Mixed Reality!

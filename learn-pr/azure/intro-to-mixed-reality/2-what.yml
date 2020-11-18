@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-mixed-reality.2-what
+title: What is Mixed Reality?
+metadata:
+  title: What is Mixed Reality?
+  description: What is Mixed Reality?
+  ms.date: 11/17/2020
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what.md)]

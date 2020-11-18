@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-mixed-reality.3-making-sense
+title: Making sense of Augmented Reality, Virtual Reality and Mixed Reality
+metadata:
+  title: Making sense of Augmented Reality, Virtual Reality and Mixed Reality
+  description: Making sense of Augmented Reality, Virtual Reality and Mixed Reality
+  ms.date: 11/17/2020
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-making-sense.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-mixed-reality.5-understanding-holograms
+title: Understanding holograms
+metadata:
+  title: Understanding holograms
+  description: Understanding holograms
+  ms.date: 11/17/2020
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-understanding-holograms.md)]

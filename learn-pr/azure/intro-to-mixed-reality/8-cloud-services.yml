@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-mixed-reality.8-cloud-services
+title: Mixed Reality cloud services
+metadata:
+  title: Mixed Reality cloud services
+  description: Mixed Reality cloud services
+  ms.date: 11/17/2020
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-cloud-services.md)]
