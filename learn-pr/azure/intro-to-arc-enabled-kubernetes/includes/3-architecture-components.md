@@ -1,8 +1,8 @@
-Azure Arc leverages locally installed agents to establish a trusted channel with Azure Resource Manager. Implementation details of the agent and the corresponding architecture depends in part on the type of resource you integrate with Azure. 
+Azure Arc leverages locally installed agents to establish a trusted channel with Azure Resource Manager. Implementation details of the agent and the corresponding architecture depends in part on the type of resource you integrate with Azure. In this unit you'll learn about the architecture of Azure Arc enabled Kubernetes and its benefits. 
 
 ## Architecture of the Azure Arc enabled Kubernetes
 
-For Kubernetes clusters and AKS clusters running on Azure Stack HCI, connection to Azure requires a deployment of several agents as pods within a dedicated cluster namespace. The agents are responsible for maintaining connectivity to Azure, collecting Azure Arc logs and metrics, and processing configuration requests. 
+For Kubernetes clusters and Azure Kubernetes Services (AKS) clusters running on Azure Stack HCI, connection to Azure requires a deployment of several agents as pods within a dedicated cluster namespace. The agents are responsible for maintaining connectivity to Azure, collecting Azure Arc logs and metrics, and processing configuration requests. 
 
 These agents run in the Kubernetes cluster that you deploy to the `azure-arc` namespace. The Kubernetes agents are responsible for:
 
