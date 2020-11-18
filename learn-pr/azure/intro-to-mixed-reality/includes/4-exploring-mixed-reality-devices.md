@@ -22,6 +22,4 @@ If we take another look at the Mixed Reality spectrum in diagram form, you can s
 
 While there isn’t a single device that can run the entire gambit of the Mixed Reality spectrum in today’s technological landscape, the hope is that future holographic devices will become more immersive, while immersive devices will become more holographic. 
 
-## Mixed Reality development tools
 
-TBD

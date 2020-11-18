@@ -11,3 +11,7 @@ You can place them in a specific location within an augmented reality space, giv
 ![Example scene of users standing in front of hologram](../media/02_MixedRealitySlashMixedReality.png)
 
 One of the most wonderful aspects of holograms and augmented reality is that they can appear to interact with the physical world. For example, you could place a holographic ball above a table in the real world and have it bounce when a user makes a gesture or says the word “bounce”. Adding sound effects or occlusion behind real-world objects can give your holograms an added bit of physicality and realness. 
+
+## Mixed Reality development tools
+
+When it comes to working with holograms in your applications, it’s easiest to use some of Microsoft’s pre-made development tool like the Mixed Reality Toolkit for Unity and Unreal Engine. MRTK is an open-source, cross-platform development kit that provides an input system, foundational components, and common building blocks for spatial interactions.
