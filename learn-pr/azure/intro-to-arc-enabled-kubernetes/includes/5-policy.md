@@ -1,4 +1,4 @@
-Azure Arc centralizes and streamlines management by leveraging a range of Azure services, such as Azure Policy. With Azure Policy, companies like Contoso can enforce uniform governance rules across all of their Azure Arc enabled Kubernetes estate and detect any instances of non-compliance with organizational standards. In this unit you'll learn what is Azure Policy for Kubernetes and how to implement it.<!--Marcin: I added this sentence, ok?-->
+Azure Arc centralizes and streamlines management by leveraging a range of Azure services, such as Azure Policy. With Azure Policy, companies like Contoso can enforce uniform governance rules across all of their Azure Arc enabled Kubernetes estate and detect any instances of non-compliance with organizational standards. In this unit you'll learn what is Azure Policy for Kubernetes and how to implement it.
 
 ## What is Azure Policy?
 
@@ -38,7 +38,7 @@ Azure Policy offers a number of built-in definitions for Azure Arc enabled Kuber
 
 To implement Azure Policy for Kubernetes, you need to install an Azure Policy Add-on. Such add-on is available for each of the three supported types of Kubernetes environments. 
 
-For Azure Arc enabled Kubernetes, the implementation consists of the following high-level steps:<!--Marcin: would it be ok to change 'varifiying' into 'varify' etc.?-->
+For Azure Arc enabled Kubernetes, the implementation consists of the following high-level steps:
 
 1. Verifying that you satisfy all the prerequisites. You'll need:
 
@@ -53,7 +53,7 @@ For Azure Arc enabled Kubernetes, the implementation consists of the following h
 1. Starting an Azure CLI session on a computer with connectivity to the Kubernetes cluster and to Azure. 
 1. Signing in to the Azure AD tenant associated with the subscription that hosts the Azure Arc enabled Kubernetes resource. 
 1. Registering the Azure Policy resource provider if you haven't used the Azure Policy functionality in the target subscription before.
-1. Granting the **Policy Insights Data Writer (Preview)** RBAC privileges to the Azure Arc enabled Kubernetes cluster.<!--Marcin: maybe you should spell out RBAC?-->
+1. Granting the **Policy Insights Data Writer (Preview)** RBAC privileges to the Azure Arc enabled Kubernetes cluster.
 1. Verify connectivity to the Kubernetes cluster. 
 1. Installing the Azure Policy Add-on using its Helm chart.
 1. Creating a policy assignment using one of the Kubernetes-specific policy definitions.
