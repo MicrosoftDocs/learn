@@ -2,7 +2,7 @@ Azure Arc also simplifies the process of centralizing and standardizing enterpri
 
 ## What are the benefits of Azure Monitor in hybrid scenarios?
 
-With Azure Arc enabled servers, the Azure portal can serve as a centralized dashboard for status monitoring and a launching pad for management of all your Azure Arc enabled servers, along with all of your Azure and Azure Arc enabled resources. The home page of the Azure Arc enabled servers lists all of your servers, along with their resource group, location, and associated subscription. For each server, you can readily identify its name, OS version, OS build, manufacturer, model, serial number, the number of CPU cores, and the amount of memory. 
+With Azure Arc enabled servers, the Azure portal can serve as a centralized dashboard for status monitoring and a launching pad for management of all your Azure Arc enabled servers, along with all of your Azure and Azure Arc enabled resources. The home page of the Azure Arc enabled servers lists all of your servers, along with their resource group, location, and associated subscription. For each server, you can readily identify its name, OS version, OS build, manufacturer, model, serial number, the number of CPU cores, and the amount of memory. <!--Marcin: is it necessary to spell out CPU? Or is it too common?--> 
 
 More in-depth monitoring, alerting, log collection, and log analytics are available through integration with Azure Monitor. Azure Monitor is a comprehensive solution for collecting, analyzing, and responding to telemetry from cloud and on-premises environments. Azure Monitor offers three main capabilities:
 
@@ -29,7 +29,7 @@ Security Center is a cloud-based service for managing the security of your cloud
 Security Center relies on the Log Analytics agent to collect security-related events, application crash dumps, and operating system configuration settings. It continuously analyzes collected data, provides you with remediation recommendations, and generates security alerts in response to attempted and actual security breaches and exploits. 
 
 > [!NOTE] 
-> Azure Defender functionality requires the Standard Pricing tier of Azure Security Center. Security assessment and recomendation, along with the Azure secure score are part of the free tier offering.
+> Azure Defender functionality requires the Standard Pricing tier of Azure Security Center. Security assessment and recomendation, along with the Azure secure score are part of the free tier offering. <!--Marcin: is this a necessary information?-->
 
 
 ## What are the benefits of Azure Automation Update Management in hybrid scenarios?
@@ -43,15 +43,17 @@ Just as Azure Security Center, the Update Management solution relies on data col
 In general, Update Management allows you to:
 
 - Track the status of updates on your servers. The service includes the Azure portal-based interface where you can review the status of updates across your managed environment.
-- Configure dynamic groups of machines to target deployments of updates. The service support targeting updates to groups based on Log Analytics queries or groups imported from another source like WSUS or Endpoint Configuration Manager.
-- Search Azure Monitor logs. The service provides the ability run queries against logs stored in Log Analytics.
+- Configure dynamic groups of machines to target deployments of updates. The service supports targeting updates to groups based on Log Analytics queries or groups imported from another source like WSUS or Endpoint Configuration Manager.
+- Search Azure Monitor logs. The service provides the ability to run queries against logs stored in Log Analytics.
 
 ## What are the benefits of the Azure Automation Desired State Configuration (DSC) in hybrid scenarios?
 
 PowerShell DSC is a technology that implements declarative configuration management through a combination of PowerShell scripts and operating system features. You can deploy DSC configuration in either push mode or pull mode. The push mode involves invoking deployment from a management computer against one or more managed computers. In the pull mode, managed computers perform deployment automatically, based on configuration data from a designated location, referred to as a *pull server*. Azure Automation includes a managed, Azure-resident DSC pull server. You can apply this configuration to non-Azure computers, including Azure Arc enabled servers. 
 
-### Are there any additional benefits specific to Azure Arc enabled servers?
+## Are there any additional benefits specific to Azure Arc enabled servers? <!--Marcin: I erased one # as it seamed more logic. Do you aggree?-->
 
 All of the services described in this unit are available to non-Azure servers, including those which are not Azure Arc enabled. However, Azure Arc offers advantages when it comes to the onboarding process, since you can use VM extensions or Azure Policy to deploy the Log Analytics agent. 
 
 In addition, integration with Azure Resource Manager provides support for the resource context access to Log Analytics data. Resource context allows you to restrict the scope of access to Log Analytics data based on the permissions to the corresponding Azure resource. Because each Azure Arc enabled server exists as an Azure resource, you can control access to its Log Analytics logs by relying on RBAC permissions assigned to that resource.
+
+Choose the best response for each of the following questions. Then select "Check your answers".
