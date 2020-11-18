@@ -2,7 +2,7 @@
 uid: learn.azure.intro-to-arc-enabled-kubernetes.4-connect-kubernetes-arc
 metadata:
   title: Connect Kubernetes clusters to Azure Arc
-  description: TODO
+  description: In this unit you'll learn how to connect an Azure Arc-enabled Kubernetes cluster.
   ms.date: TODO
   author: jboeshart
   ms.author: jaboes
@@ -19,21 +19,21 @@ quiz:
     choices:
     - content: "1"
       isCorrect: false
-      explanation: "You need to use Helm 3."
+      explanation: "The administrator needs to use Helm 3."
     - content: "2"
       isCorrect: false
-      explanation: "You need to use Helm 3."
+      explanation: "The administrator needs to use Helm 3."
     - content: "3"
       isCorrect: true
-      explanation: "You need to use Helm 3."
+      explanation: "The administrator needs to use Helm 3."
     - content: "4"
       isCorrect: false
       explanation: "This version is not available yet."
-  - content: "Which tool do you have to use to run the command that connects a Kubernetes cluster to Azure"
+  - content: "Which tool uses the administrator to run the command that connects a Kubernetes cluster to Azure"
     choices:
     - content: "Azure CLI"
       isCorrect: true
-      explanation: "You connecting the Kubernetes cluster to Azure by running the az connectedk8s connect Azure CLI command"
+      explanation: "The administrator is connecting the Kubernetes cluster to Azure by running the az connectedk8s connect Azure CLI command"
     - content: "PowerShell Core"
       isCorrect: false
       explanation: "This functionality is not available in PowerShell Core"
