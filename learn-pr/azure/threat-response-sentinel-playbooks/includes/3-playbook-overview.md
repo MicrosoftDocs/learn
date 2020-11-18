@@ -21,7 +21,7 @@ For example, to address Contoso's concerns, you can develop a workflow with defi
 
 Azure Logic Apps is a cloud service that automates the operation of your business processes. You use a graphical design tool called the *Logic Apps Designer* to arrange prebuilt components into the sequence you need.
 
-:::image type="content" source="../03-Log-App-Designer.PNG" alt-text="Screenshot of the Logic Apps Designer." border="true":::
+:::image type="content" source="../media/03-Log-App-Designer.PNG" alt-text="Screenshot of the Logic Apps Designer." border="true":::
 
 ## Logic Apps Connector
 
