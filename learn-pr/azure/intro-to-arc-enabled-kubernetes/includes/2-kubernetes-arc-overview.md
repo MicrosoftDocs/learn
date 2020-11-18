@@ -73,4 +73,4 @@ A number of Azure Arc benefits are independent of the resouce type, since they r
 - Support for the resource context access to Log Analytics data. Resource context allows you to restrict the scope of access to Log Analytics data based on the permissions to the corresponding Azure resource. Because each Azure Arc enabled server, cluster, or data service exists as an Azure resource, you can control access to its Log Analytics logs by relying on RBAC permissions assigned to that resource.
 - Integration with Azure Monitor. You can use Azure Monitor to help monitor and manage your server resources. Azure Monitor is a core component of the Microsoft strategy to extend comprehensive, cloud-based monitoring functionality beyond Azure to on-premises datacenters and to Microsoft and other cloud providers.
 
-<!--Marcin: I am not sure, but should you include a knowledge check in each unit?-->
+Choose the best response for each of the following questions. Then select "Check your answers".
