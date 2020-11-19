@@ -66,7 +66,7 @@ You have been hired as a database administrator to identify performance related 
     :::image type="content" source="../media/query1.png" alt-text="Query":::
 
     > [!NOTE]
-    > If you'd like to copy and paste the code you can find the code in the D:\exercise_steps.txt file.
+    > If you'd like to copy and paste the code you can find the code in the **D:\LabFiles\Monitor Resources\exercise_steps.sql** file.
 
 1. Wait for the query to complete.
 1. Locate the **Metrics** icon on the **Monitoring** section of the blade for the AdventureWorks database.
