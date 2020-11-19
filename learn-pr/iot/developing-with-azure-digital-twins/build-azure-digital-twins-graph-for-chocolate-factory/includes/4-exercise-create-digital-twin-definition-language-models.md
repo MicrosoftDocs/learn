@@ -258,7 +258,7 @@ The new concept that the production line step models bring, is that of _extendin
 
 ### Create the roasting step model
 
-[![Graphical representation of the roasting step](../media/adt-roasting.png)](../media/adt-roasting.png#lightbox)
+:::image type="content" source="../media/adt-roasting.png" alt-text="Graphical representation of the roasting step" lightbox="../media/adt-roasting.png":::
 
 The roasting model needs a few physics related properties.
 
@@ -313,7 +313,7 @@ FanSpeed | Property | The speed of the roasting fan. Now you know why the proces
 
 ### Create the grinding step model
 
-[![Graphical representation of the grinding step](../media/adt-grinding.png)](../media/adt-grinding.png#lightbox)
+:::image type="content" source="../media/adt-grinding.png" alt-text="Graphical representation of the grinding step" lightbox="../media/adt-grinding.png":::
 
 The next step is grinding, with similar properties to roasting.
 
@@ -367,7 +367,7 @@ Force | Property | The force, in pounds, of the steel grinding plates.
 
 ### Create the molding step model
 
-[![Graphical representation of the molding step](../media/adt-molding.png)](../media/adt-molding.png#lightbox)
+:::image type="content" source="../media/adt-molding.png" alt-text="Graphical representation of the molding step" lightbox="../media/adt-molding.png":::
 
 The final step is molding, with just a couple of properties.
 

@@ -1,12 +1,12 @@
 
-In this unit, we go over the digital twin graph query language. 
+In this unit, we go over the digital twin graph query language.
 
 The digital twin graph that we've just built can be queried to get information about the digital twins and relationships it contains. These queries are written in a custom SQL-like query language, referred to as the _Azure Digital Twins query language_. This language is also similar to the query language for IoT Hub.
 
 Queries _can_ be made through the Digital Twins API. In this module, we'll be using the Explorer tool to handle the API calls for us.
 
->[!Note]
->All Azure Digital Twins query operations are case-sensitive.
+> [!NOTE]
+> All Azure Digital Twins query operations are case-sensitive.
 
 Get digital twins by their model, properties, interface, or relationships. Let's examine the most useful of these options.
 
@@ -14,7 +14,7 @@ Get digital twins by their model, properties, interface, or relationships. Let's
 
 The `IS_OF_MODEL` operator can be used to filter based on the twin's model. It supports inheritance, and has several overload options.
 
-### Examples
+### Examples with models
 
 Example | Description
 ------- | -----------
@@ -22,29 +22,27 @@ Example | Description
 `SELECT * FROM DIGITALTWINS DT WHERE IS_OF_MODEL(DT, 'dtmi:sample:thing;1')` | To specify a twin collection, to search when there's more than one, add the `twinCollection` parameter. This might occur when a `JOIN` is used. 
 `SELECT * FROM DIGITALTWINS WHERE IS_OF_MODEL('dtmi:sample:thing;1', exact)` | To do an exact match, add the exact parameter.
 
->[!Note]
->You can pass all three arguments: `IS_OF_MODEL(twinCollection, twinTypeName, exact)`. 
-
+> [!NOTE]
+> You can pass all three arguments: `IS_OF_MODEL(twinCollection, twinTypeName, exact)`. 
 
 ## Properties
 
 You can query for digital twins by properties, including ID, tags, and metadata. The ID of a digital twin is queried using the metadata field `$dtId`.
 
-### Examples
+### Examples with properties
 
-In these examples, assume there's a range of models, some containing a `Temperature` property, some containing a `firmwareVersion` property. 
+In these examples, assume there's a range of models, some containing a `Temperature` property, some containing a `firmwareVersion` property.
 
 Example | Description
 ------- | -----------
-`SELECT * FROM DigitalTwins T WHERE T.Temperature >= 70` | Return all the model twins with a `Temperature` property, where the current value is greater than 70 degrees.
-`SELECT * FROM DigitalTwins T WHERE T.firmwareVersion = '1.1' AND T.$dtId in ['123', '456'] AND T.Temperature = 70` | Return all model twins with a firmware version of "1.1", an ID of either "123" or "456", and with a temperature of 70 degrees.
+`SELECT * FROM DIGITALTWINS T WHERE T.Temperature >= 70` | Return all the model twins with a `Temperature` property, where the current value is greater than 70 degrees.
+`SELECT * FROM DIGITALTWINS T WHERE T.firmwareVersion = '1.1' AND T.$dtId in ['123', '456'] AND T.Temperature = 70` | Return all model twins with a firmware version of "1.1", an ID of either "123" or "456", and with a temperature of 70 degrees.
 `SELECT * FROM DIGITALTWINS WHERE IS_DEFINED(Location)` | Return all the model twins which have a `Location` property defined.
-`SELECT * from digitaltwins where is_defined(tags.red)` | Returns all the twins tagged with `red`.
+`SELECT * from DIGITALTWINS where is_defined(tags.red)` | Returns all the twins tagged with `red`.
 `SELECT * FROM DIGITALTWINS T WHERE IS_NUMBER(T.Temperature)` | Returns twins whose `Temperature` property is a number.
 
->[!Note]
->In the second example, see how the `in ['123', '456']` construct is used to return true, if a property occurs within the specified list. The following is also an example of a legitimate list: `WHERE Floor.$dtId IN ['floor1','floor2', ..'floorn']`, showing how to validate against a longer list.
-
+> [!NOTE]
+> In the second example, see how the `in ['123', '456']` construct is used to return true, if a property occurs within the specified list. The following is also an example of a legitimate list: `WHERE Floor.$dtId IN ['floor1','floor2', ..'floorn']`, showing how to validate against a longer list.
 
 ## Relationships
 
@@ -61,9 +59,9 @@ To get a dataset that includes relationships, use a single FROM statement follow
 Example | Description
 ------- | -----------
 `SELECT T, CT FROM DIGITALTWINS T JOIN CT RELATED T.contains WHERE T.$dtId = 'ABC'` | Select all the digital twins with an ID property of 'ABC', and all digital twins related to these digital twins via a `contains` relationship.
- 
->[!Note]
->The developer doesn't need to correlate this JOIN with a key value in the WHERE clause, nor specify a key value inline with the JOIN definition. This correlation is computed automatically by the system, as the relationship properties themselves identify the target entity.
+
+> [!NOTE]
+> The developer doesn't need to correlate this JOIN with a key value in the WHERE clause, nor specify a key value inline with the JOIN definition. This correlation is computed automatically by the system, as the relationship properties themselves identify the target entity.
 
 ### Query the properties of a relationship
 
@@ -86,6 +84,3 @@ When constructing a query, consider the following elements of the query language
 - During preview, up to five levels of JOIN are allowed.
 
 Now, let's try using the language on our factory graph.
-
-
-

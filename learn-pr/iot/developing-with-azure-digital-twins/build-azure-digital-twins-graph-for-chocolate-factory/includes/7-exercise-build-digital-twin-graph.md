@@ -13,19 +13,19 @@ In this exercise, first you download and extract the Azure Digital Twins Explore
 
 1. With the overview page for your app on display, click **Authentication** in the left menu, then **+ Add a platform**. And select the **Web application** tile.
 
-    [![Screenshot showing how to add a Web platform to a registered app](../media/adt-web-app.png)](../media/adt-web-app.png#lightbox)
-    
+    :::image type="content" source="../media/adt-web-app.png" alt-text="Screenshot showing how to add a Web platform to a registered app" lightbox="../media/adt-web-app.png":::
+
 1. Add **http://localhost:3000** as the **Redirect URI**.
-    
+
 1. Click **Configure**.
 
 1. Back on the **Authentication** page, scroll down a bit and make sure the **Access tokens** checkbox is selected, in the **Implicit grant** section.
 
-    [![Screenshot showing the location of the Access Tokens checkbox](../media/adt-implicit-grant.png)](../media/adt-implicit-grant.png#lightbox)
+    :::image type="content" source="../media/adt-implicit-grant.png" alt-text="Screenshot showing the location of the Access Tokens checkbox" lightbox="../media/adt-implicit-grant.png":::
 
 1. Click **Save**. Then verify the **Web** settings on the **Authentication** page include the redirect URI.
 
-    [![Screenshot showing the Redirect URL for the web platform](../media/adt-web-redirect-url.png)](../media/adt-web-redirect-url.png#lightbox)
+   :::image type="content" source="../media/adt-web-redirect-url.png" alt-text="Screenshot showing the Redirect URL for the web platform" lightbox="../media/adt-web-redirect-url.png":::
 
 ## Run ADT Explorer
 
@@ -33,12 +33,12 @@ In this exercise, first you download and extract the Azure Digital Twins Explore
 
 1. Type **npm install**. This command will install all the required dependencies of the explorer tool.
 
-    [![Command prompt help output when running npm install](../media/adt-explorer-npm-install.png)](../media/adt-explorer-npm-install.png#lightbox)
+    :::image type="content" source="../media/adt-explorer-npm-install.png" alt-text="Command prompt help output when running npm install" lightbox="../media/adt-explorer-npm-install.png":::
 
 1. Start the explorer tool by typing **npm run start**. It might take a few seconds before the opening screen of the tool appears in your web browser.
 
 1. Now, click the **Sign in** button at the top of the tool window. Carefully copy and paste the following three values from your text file, into the window:
-    
+
     - Application (client) ID
     - Directory (tenant) ID
     - Azure Digital Twins URL - this string has the format of **https://** followed by the host name.
@@ -78,7 +78,7 @@ To create a relationship, hold down the Ctrl key, and select the _source_ twin, 
 
 1. Locate the **Add Relationship** icon, along the range of icons for the graph view. Don't select it yet.
 
-    [![Screenshot showing the Add Relationship icon of the ADTExplorer tool](../media/adt-explorer-add-relationship-icon.png)](../media/adt-explorer-add-relationship-icon.png#lightbox)
+    :::image type="content" source="../media/adt-explorer-add-relationship-icon.png" alt-text="Screenshot showing the Add Relationship icon of the ADTExplorer tool" lightbox="../media/adt-explorer-add-relationship-icon.png":::
 
 1. Hold down the Ctrl key. Select your **factory** twin circle. Then, select the **floor** twin. From the list of relationships, select **rel_has_floors**.
 
@@ -88,7 +88,7 @@ To create a relationship, hold down the Ctrl key, and select the _source_ twin, 
 
 1. Repeat the previous step for the **grinding** twin, then again for the **molding** twin.
 
-    [![Screenshot showing the completed graph in the ADTExplorer tool](../media/adt-explorer-graph-relationships.png)](../media/adt-explorer-graph-relationships.png#lightbox)
+    :::image type="content" source="../media/adt-explorer-graph-relationships.png" alt-text="Screenshot showing the completed graph in the ADTExplorer tool" lightbox="../media/adt-explorer-graph-relationships.png":::
 
 ## Explore the graph layout options
 
@@ -99,6 +99,3 @@ To create a relationship, hold down the Ctrl key, and select the _source_ twin, 
 1. Notice that you can zoom in and out, and that there are some other helpful icons to fit your graph to your screen.
 
 Feel free to explore the graph view. However, you've completed all the steps for this unit. In the next unit, we go into the digital twin query language.
-
-
-

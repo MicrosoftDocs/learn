@@ -10,7 +10,7 @@ In this module, you learned how to:
 
 You also learned a bit about chocolate production!
 
-[![Photograph of roasted chocolate nibs](../media/adt-chocolate-nibs3.png)](../media/adt-chocolate-nibs3.png#lightbox)
+:::image type="content" source="../media/adt-chocolate-nibs3.png" alt-text="Photograph of roasted chocolate nibs" lightbox="../media/adt-chocolate-nibs3.png":::
 
 ## Clean up
 
@@ -35,6 +35,3 @@ Take your interest further with:
 And look for additional Learn modules that take the chocolate factory scenario further.
 
 To finish this module and earn your rewards, complete a final knowledge check.
-
-
-

@@ -26,7 +26,7 @@ C:\Users\<your alias>\Downloads\DTDL_Validator\DTDLValidator-Sample\DTDLValidato
     DTDLValidator --help
     ```
 
-    [![Command prompt help output for the DTDLValidator tool](../media/adt-dtdl-validator-help.png)](../media/adt-dtdl-validator-help.png#lightbox)
+    :::image type="content" source="../media/adt-dtdl-validator-help.png" alt-text="Command prompt help output for the DTDLValidator tool" lightbox="../media/adt-dtdl-validator-help.png":::
 
 1. Leave the Command Prompt window open.
 
@@ -48,7 +48,7 @@ First, let's check the models we've given you are valid!
     **********************************************
     ```
 
-1.  If your models are invalid, you'll need to edit them. Let's look at what might go wrong.
+1. If your models are invalid, you'll need to edit them. Let's look at what might go wrong.
 
 ## Run the validation tool on a faulty model
 
@@ -61,7 +61,8 @@ In this section, we'll deliberately create a corrupted model, to test the valida
 1. Edit the file by making the following changes.
     - Locate the field **@type** on line 4, and change it to **@typo**.
     - Locate the field **name** on line 30, and delete the line.
-    - Locate the field **schema** on line 19, and add a line before it: 
+    - Locate the field **schema** on line 19, and add a line before it:
+
     ```
     "glitch" : "nonsense",
     ```
@@ -74,7 +75,7 @@ In this section, we'll deliberately create a corrupted model, to test the valida
 
 1. Correct the duplicate error, by changing the ID. Change "grinding" to "crunching", on line 3.
 
-    [![Photoraph of roasted chocolate nibs](../media/adt-chocolate-nibs-v.png)](../media/adt-chocolate-nibs-v.png#lightbox)
+    :::image type="content" source="../media/adt-chocolate-nibs-v.png" alt-text="Photoraph of roasted chocolate nibs" lightbox="../media/adt-chocolate-nibs-v.png":::
 
 1. Save off **ProductionStepGrinding - Copy.json**, leaving it open for editing.
 
@@ -91,7 +92,3 @@ In this section, we'll deliberately create a corrupted model, to test the valida
 1. Close the command window for the validator tool.
 
 Now we change tack, and look at how our models make up a digital twin graph.
-
-
-
-

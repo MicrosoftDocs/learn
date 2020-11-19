@@ -13,7 +13,7 @@ Now, go through this process three times, one for each production step.
 
 ### Set the roasting step properties
 
-[![Graphical representation of the roasting step](../media/adt-roasting.png)](../media/adt-roasting.png#lightbox)
+:::image type="content" source="../media/adt-roasting.png" alt-text="Graphical representation of the roasting step" lightbox="../media/adt-roasting.png":::
 
 1. Set **ChasisTemperature** to **120**.
 1. Set **TimeSpan** to **35**.
@@ -23,7 +23,7 @@ Now, go through this process three times, one for each production step.
 
 ### Set the grinding step properties
 
-[![Graphical representation of the grinding step](../media/adt-grinding.png)](../media/adt-grinding.png#lightbox)
+:::image type="content" source="../media/adt-grinding.png" alt-text="Graphical representation of the grinding step" lightbox="../media/adt-grinding.png":::
 
 1. Set **ChasisTemperature** to **40**.
 1. Set **TimeSpan** to **45**.
@@ -33,7 +33,7 @@ Now, go through this process three times, one for each production step.
 
 ### Set the molding step properties
 
-[![Graphical representation of the molding step](../media/adt-molding.png)](../media/adt-molding.png#lightbox)
+:::image type="content" source="../media/adt-molding.png" alt-text="Graphical representation of the molding step" lightbox="../media/adt-molding.png":::
 
 1. Set **ChasisTemperature** to **55**.
 1. Set **PowerUsage** to **80**.
@@ -67,8 +67,7 @@ Let's now run through a range of queries. Copy and paste the following queries i
     SELECT  *  FROM DIGITALTWINS T   WHERE ENDSWITH(T.$dtId,'ing')
     ```
 
-    [![Screenshot showing a query based on the ENDSWITH function](../media/adt-explorer-query.png)](../media/adt-explorer-query.png#lightbox)
-
+    :::image type="content" source="../media/adt-explorer-query.png" alt-text="Screenshot showing a query based on the ENDSWITH function" lightbox="../media/adt-explorer-query.png":::
 
 1. String comparisons will work with a single letter.
 
@@ -99,7 +98,6 @@ Let's now run through a range of queries. Copy and paste the following queries i
     ```sql
     SELECT  *  FROM DIGITALTWINS T   WHERE T.PowerUsage > 100 AND T.ChasisTemperature >= 55
     ```
-
 
 ## Next steps
 
