@@ -75,7 +75,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 ## View data classification in SQL Server Management Studio
 
 > [!NOTE]
-> If you'd like to copy and paste the code you can find the code in the D:\exercise_steps.txt file.
+> If you'd like to copy and paste the code you can find the code in the **D:\LabFiles\Secure Environment\exercise_steps.sql** file.
 
 1. Open SQL Server Management Studio by navigating to **Microsoft SQL Server Tools 18** > **SQL Server Management Studio** from the Start menu. Paste in the name of your Azure SQL database server and login with these credentials:
 
