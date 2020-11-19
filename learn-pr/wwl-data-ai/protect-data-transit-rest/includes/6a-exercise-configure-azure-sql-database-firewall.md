@@ -71,6 +71,9 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 ## Create a firewall rule using SQL statements
 
+> [!NOTE]
+> If you'd like to copy and paste the code you can find the code in the **D:\LabFiles\Secure Environment\exercise_steps.sql** file.
+
 1. In the **Object Explorer**, right-click on the AdventureWorks database you just imported.
 1. Select **New Query**.
 
