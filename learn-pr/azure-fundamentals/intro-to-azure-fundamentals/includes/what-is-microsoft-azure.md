@@ -80,6 +80,8 @@ The Azure portal is designed for resiliency and continuous availability. It main
 
 [![Screenshot that shows the Azure portal.](../media/azure-portal.png)](../media/azure-portal.png#lightbox)
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ICN6]
+
 ## What is Azure Marketplace?
 
 [Azure Marketplace](https://azuremarketplace.microsoft.com?azure-portal=true) helps connect users with Microsoft partners, independent software vendors, and startups that are offering their solutions and services, which are optimized to run on Azure. Azure Marketplace customers can find, try, purchase, and provision applications and services from hundreds of leading service providers. All solutions and services are certified to run on Azure.
