@@ -1,4 +1,4 @@
-In this module, you learned how to create a Java Web Application, how to use the `Maven Plugin for Azure Web Apps` and how to deploy your application to Azure App Service.
+In this module, you learned how to create a Java Web application, how to use the `Maven Plugin for Azure Web Apps` and how to deploy your application to Azure App Service.
 
 ## Clean up resources
 
