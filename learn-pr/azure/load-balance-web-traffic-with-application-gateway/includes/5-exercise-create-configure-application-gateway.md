@@ -8,7 +8,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
 ## Configure the network for Application Gateway
 
-1. Run the following command to create the private subnet required by Application Gateway. The subnet is named `appGatewaySubnet`, in the `vehicleAppVnet` virtual network that you created in the previous exercise.
+1. To create the private subnet required by Application Gateway, run the following command. The subnet is named `appGatewaySubnet`, in the `vehicleAppVnet` virtual network that you created in the previous exercise.
 
     ```azurecli
     az network vnet subnet create \
@@ -18,7 +18,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
       --address-prefixes 10.0.0.0/24
     ```
 
-1. Run the following command to create a public IP address and DNS label for Application Gateway. The DNS label must be globally unique. The code below uses the `$RANDOM` function to generate a label.
+1. To create a public IP address and DNS label for Application Gateway, run the following command. The DNS label must be globally unique. To generate a label, the following code uses the `$RANDOM` function.
 
     ```azurecli
     az network public-ip create \
@@ -32,10 +32,10 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
 1. Create an application gateway named `vehicleAppGateway` with the following configuration:
 
-    - A back-end pool containing the IP addresses of the web server virtual machines
-    - A firewall that blocks malicious requests, such as those used by SQL Injection and Cross-Site Scripting attacks
-    - A temporary listener that listens to port 8080, this will be replaced in a later step but is required for Application Gateway creation
-    - A rule that routes (and load balances) these requests to the web servers in the back-end pool
+    - A back-end pool containing the IP addresses of the web server virtual machines.
+    - A firewall that blocks malicious requests, such as those used by SQL Injection and Cross-Site Scripting attacks.
+    - A temporary listener that listens to port 8080, this will be replaced in a later step but is required for Application Gateway creation.
+    - A rule that routes (and load balances) these requests to the web servers in the back-end pool.
 
     ```azurecli
     az network application-gateway create \
@@ -55,7 +55,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
     > [!NOTE]
     > This command can take several minutes to complete.
 
-1. Run the following commands to find the private IP addresses of  `webServer1` and `webServer2`. We will save these to variables to use in the next command.
+1. To find the private IP addresses of  `webServer1` and `webServer2`, run the following commands. You will save these to variables to use in the next command.
 
     ```azurecli
     az vm list-ip-addresses \
@@ -82,7 +82,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
       --servers 10.0.1.4 10.0.1.5
     ```
 
-1. Now run the following command to create a back-end pool for the license renewal site running on App Service.
+1. To create a back-end pool for the license renewal site running on App Service, run the following command.
 
     ```azurecli
     az network application-gateway address-pool create \
@@ -92,7 +92,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
         --servers $APPSERVICE.azurewebsites.net
     ```
 
-1. We will now create a front-end port for port 80.
+1. For port 80, create a front-end port.
 
     ```azurecli
     az network application-gateway frontend-port create \
@@ -102,7 +102,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
         --port 80
     ```
 
-1. Now we will create the listener to handle requests on port 80.
+1. To handle requests on port 80, create the listener.
 
     ```azurecli
     az network application-gateway http-listener create \
@@ -115,9 +115,9 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
 ## Add a health probe
 
-1. Create a health probe that tests the availability of a web server. The health probe runs every 15 seconds (`--interval 15`) and sends an HTTP GET request to the root path of the web app. If the web app doesn't respond within 10 seconds (`--timeout 10`), the probe times out. The web server is marked as unhealthy if the probe fails three times in succession (`--threshold 3`).
+1. Create a health probe that tests the availability of a web server. The health probe runs every 15 seconds (`--interval 15`), and sends an HTTP GET request to the root path of the web app. If the web app doesn't respond within 10 seconds (`--timeout 10`), the probe times out. The web server is marked as unhealthy if the probe fails three times in succession (`--threshold 3`).
 
-    Since we're using App Service as one of our back-ends, we will set the host header to the name of the App Service. Without this setting, the App Service won't respond and will not show as healthy.
+    Because you're using App Service as one of our back-ends, you will set the host header to the name of the App Service. Without this setting, the App Service won't respond and will not show as healthy.
 
     ```azurecli
     az network application-gateway probe create \
@@ -132,10 +132,10 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
         --host-name-from-http-settings true
     ```
 
-1. Next, create the HTTP Settings for the gateway to use the health probe we created.
+1. Next, to use the health probe you created, create the HTTP Settings for the gateway.
 
     ```azurecli
-    az network application-gateway http-settings update \
+    az network application-gateway http-settings create \
         --resource-group $RG \
         --gateway-name vehicleAppGateway \
         --name appGatewayBackendHttpSettings \
@@ -148,7 +148,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
 Now we need to configure path-based routing for our Application gateway. We'll route requests to **/VehicleRegistration/** to the **vmPool** and requests to **/LicenseRenewal/** to the **appServicePool**. Any requests without any URL context will be routed to the **vmPool** as a default.
 
-1. Run the following command to create the path map for the **vmPool**.
+1. To create the path map for the **vmPool**, run the following command.
 
     ```azurecli
     az network application-gateway url-path-map create \
@@ -160,7 +160,7 @@ Now we need to configure path-based routing for our Application gateway. We'll r
         --address-pool vmPool
     ```
 
-1. Run the following command to create the path map rule for the **appServicePool**.
+1. To create the path map rule for the **appServicePool**, run the following command.
 
     ```azurecli
     az network application-gateway url-path-map rule create \
@@ -173,7 +173,7 @@ Now we need to configure path-based routing for our Application gateway. We'll r
         --path-map-name urlPathMap
     ```
 
-1. Now, create a new routing rule using the path map we created.
+1. Now, create a new routing rule using the path map you created.
 
     ```azurecli
     az network application-gateway rule create \
@@ -186,7 +186,7 @@ Now we need to configure path-based routing for our Application gateway. We'll r
         --url-path-map urlPathMap
     ```
 
-1. The last piece of configuration is to delete the rule that was created when we initially deployed the Application Gateway. With our custom rule in place, we no longer need it.
+1. The last piece of configuration is to delete the rule that was created when we initially deployed the Application Gateway. With your custom rule in place, you no longer need it.
 
     ```azurecli
     az network application-gateway rule delete \
@@ -195,4 +195,4 @@ Now we need to configure path-based routing for our Application gateway. We'll r
         --name rule1
     ```
 
-With everything set up it's time to test it out.
+With everything set up, it's time to test it out.
