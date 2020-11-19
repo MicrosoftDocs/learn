@@ -65,6 +65,9 @@ Now you'll set up the git client in Cloud Shell and use it to clone a sample web
 
     ```bash
     mkdir demoapp
+    ```
+    
+     ```bash
     cd demoapp
     ```
 
