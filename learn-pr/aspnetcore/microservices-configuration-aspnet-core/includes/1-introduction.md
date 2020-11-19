@@ -6,9 +6,9 @@ This module guides you through implementing a feature flags library. With that l
 
 ## Learning objectives
 
-- Review ASP.NET Core and Kubernetes configuration concepts.
-- Learn to implement real-time feature toggling capabilities.
-- Learn to implement a centralized Azure App Configuration store.
+- Review ASP.NET Core and Kubernetes app configuration concepts.
+- Implement real-time feature toggling with the .NET Feature Manager library.
+- Implement a centralized Azure App Configuration store.
 
 ## Prerequisites
 

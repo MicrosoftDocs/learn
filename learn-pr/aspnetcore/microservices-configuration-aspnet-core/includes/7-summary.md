@@ -1,28 +1,19 @@
 In this module, you:
 
-- Created an AKS cluster with an initial e-commerce application.
-- Reviewed some important ASP.NET Core concepts.
-- Created an ACR instance
-- Implemented a feature flag to enable the discount coupon feature using configuration values.
-- Created an Azure App Configuration store to enable the discount coupon feature in real time from the Azure Portal.
-- Deployed the updated e-commerce application to the AKS cluster.
+- Reviewed ASP.NET Core and Kubernetes app configuration concepts.
+- Implemented real-time feature toggling with the .NET Feature Manager library.
+- Implemented a centralized Azure App Configuration store.
 
-## Clean up Azure resources
+[!INCLUDE[de-provision your Azure resources](../../includes/microservices/remove-az-resources.md)]
 
-> **IMPORTANT**
->
-> It's very important you deallocate the Azure resources used in this module so that you don't get billed or spend your free account with unwanted charges.
+[!INCLUDE[revert the .NET Core SDK changes](../../includes/microservices/revert-dotnet-sdk-changes.md)]
 
-You have to:
+[!INCLUDE[download files](../../includes/summary-download-cloud-drive.md)]
 
-### 1. - De-provision all the resources created in this module
+[!INCLUDE[reset the Azure Cloud Shell](../../includes/microservices/reset-az-cloud-shell.md)]
 
-Use the following command:
+[!INCLUDE[learn more with these resources](../../includes/microservices/learn-more.md)]
 
-```bash
-az group delete --name eshop-learn-rg --yes
-```
+## Learn more about Azure App Configuration
 
-### 2. - De-provision the storage account used by the Cloud Shell
-
-If you let the Cloud Shell create the storage using the default options, you should have a resource group named `cloud-shell-storage-{region}`. To delete the storage account you can delete the resource group from the Azure portal. You won't be able to delete the storage account from **az cli**.
+[Azure App Configuration documentation](/azure/azure-app-configuration/)
