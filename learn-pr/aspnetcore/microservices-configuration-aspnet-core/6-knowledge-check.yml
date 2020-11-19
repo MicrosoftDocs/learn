@@ -28,14 +28,14 @@ quiz:
         - content: Azure App Configuration
           isCorrect: false
           explanation: "Azure App Configuration is a centralized configuration service useful in microservices apps. In an ASP.NET Core app, Azure App Configuration is registered as another configuration provider."
-    - content: In ASP.NET Core Razor Pages, `<Feature>` Tag Helper is included by default. True or False?
+    - content: `<feature>` tag part of the `Microsoft.FeatureManagement.AspNetCore` NuGet package serves what purpose in ASP.NET Core Razor pages?
       choices:
-        - content: "True"
+        - content: "`<feature>` tags are irrelevant to ASP.NET Core Razor Pages. They are added to the Angular view to render content based on a feature's state."
           isCorrect: false
-          explanation: "`<Feature>` Tag Helper is part of the `Microsoft.FeatureManagement.AspNetCore` NuGet package. Add this package to your projects, and register the feature manager Tag Helper using an `@addTagHelper` directive to use them in Razor pages."
-        - content: "False"
+          explanation: "`<feature>` tags are a feature specific to ASP.NET Core Razor pages that help render content based on a feature's state."
+        - content: "`<feature>` tags are used to conditionally render content based on a feature's state in ASP.NET Core Razor Pages. "
           isCorrect: true
-          explanation: "`<Feature>` Tag Helper is part of the `Microsoft.FeatureManagement.AspNetCore` NuGet package. Add this package to your projects, and register the feature manager Tag Helper using an `@addTagHelper` directive to use them in Razor pages."
+          explanation: "The `<feature>` tag can also be used to show content if any or all features in a list are enabled. To display alternate content when the requirements are not met the `negate` attribute can be used."
     - content: Which of the following statements is **NOT** true about Azure App Configuration?
       choices:
         - content: Azure App Configuration provides a service to centrally manage application settings and feature flags.
