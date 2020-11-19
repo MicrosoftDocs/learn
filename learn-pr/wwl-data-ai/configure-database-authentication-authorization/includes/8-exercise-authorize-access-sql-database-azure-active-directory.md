@@ -59,7 +59,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 In this task you will manage access to the database and its objects. The first thing you will do is create two users in the AdventureWorks database.
 
 > [!NOTE]
-> If you'd like to copy and paste the code you can find the code in the D:\exercise_steps.txt file.
+> If you'd like to copy and paste the code you can find the code in the **D:\LabFiles\Secure Environment\exercise_steps.sql** file.
 
 1. Use the **Object Explorer** and expand **Databases**.
 1. Right-click on **AdventureWorksLT**, and select **New Query**.
