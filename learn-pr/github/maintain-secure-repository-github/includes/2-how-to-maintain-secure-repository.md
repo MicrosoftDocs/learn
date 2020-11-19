@@ -18,7 +18,7 @@ There are many aspects to building and deploying secure applications. Here are t
 
 ### Security at every step
 
-:::image type="content" source="../media/shift-left2.png" alt-text="Security is a part of every step.":::
+:::image type="content" source="../media/shift-left-2.png" alt-text="Security is a part of every step.":::
 
 Security isn't something you can just add to an application or a system later. Secure development must be part of every stage of the software development life cycle. This is even more important for critical applications and those that process sensitive or highly confidential information.
 
