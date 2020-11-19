@@ -1,16 +1,16 @@
-Azure Sentinel Analytics helps you detect, investigate, and remediate cyber security threats. The Contoso SecOps team can use Azure Sentinel Analytics to set up analytics rules and queries to detect issues in your environment.
+Azure Sentinel Analytics helps you detect, investigate, and remediate cybersecurity threats. The Contoso SecOps team can use Azure Sentinel Analytics to set up analytics rules and queries to detect issues in your environment.
 
-## What is Azure Sentinel Analytics
+## What is Azure Sentinel Analytics?
 
 Azure Sentinel Analytics provides several functionalities that you can use to implement security for the data and resources at Contoso.
 
 You can analyze both real-time and historical data collected from your workstations, servers, networking devices, firewalls, intrusion prevention, sensors, and so on. Azure Sentinel Analytics analyzes data from various sources to identify correlations and anomalies.
 By using analytics rules, you can trigger alerts based on the techniques that are used by known malicious actors. You can set up these rules to help ensure the right people are being alerted at the right level.
 
-## Why use analytics rules for security
+## Why use analytics rules for security?
 
 Although some of the other products that Contoso has implemented can help you identify threats, Azure Sentinel Analytics plays an important part in the overall detection of the security threat
- by correlating and matching the signals that impact the presence of a cyber security threat. With the proper analytics rule, you can get insights into where an attack originated from, what resources were compromised, potential data lost, along with the timeline for the incident.
+ by correlating and matching the signals that impact the presence of a cybersecurity threat. With the proper analytics rule, you can get insights into where an attack originated from, what resources were compromised, potential data lost, along with the timeline for the incident.
 
 Common security analytics use cases include:
 
@@ -41,7 +41,7 @@ The **Analytics** home page has three main parts:
 
 ## Filter the rule templates
 
-Currently Microsoft has preloaded over 150 template rules from the Azure Sentinel GitHub repository. To search these templates and to access the appropriate rule, you need to apply filters. For example, you might want to see only template rules that detect threats with a high severity level or rules from specific data sources.
+Currently Microsoft has preloaded over 150 template rules from the Azure Sentinel GitHub repository. To search these templates and to access the appropriate rule, you need to apply filters. For example, you might want to review only template rules that detect threats with a high severity level or rules from specific data sources.
 
 To use filters, in the header bar, select the filters you want to use.
 
@@ -55,4 +55,4 @@ The **Analytics** home page provides the following filters:
 - **Data Sources**. Use to filter the rules by the data source connector that generates the alert.
 
 > [!NOTE]
-> MITRE ATT&amp;CK is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&amp;CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cyber security product and service community.
+> MITRE ATT&amp;CK is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&amp;CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.

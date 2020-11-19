@@ -1,21 +1,21 @@
 ## Exercise: Threat detection with Azure Sentinel Analytics
 
-As a security engineer working for Contoso, you recently notice that a significant number of VMs has been deleted from your Azure subscription. You want to analyze this  occurrence and be alerted when a similar activity occurs in the future. You decide to implement an analytics rule to create an incident when someone deletes an existing VM.
+As a security engineer working for Contoso, you recently noticed that a significant number of VMs has been deleted from your Azure subscription. You want to analyze this  occurrence and be alerted when a similar activity occurs in the future. You decide to implement an analytics rule to create an incident when someone deletes an existing VM.
 
-In this exercise, you will explore an Azure Sentinel analytics rule. You will perform the following tasks:
+In this exercise, you'll explore an Azure Sentinel analytics rule and perform the following tasks:
 - Create an incident rule from an existing template.
 - Create a scheduled query rule by using your own KQL code.
 - Adjust KQL from an existing analytic rule.
 
 > [!NOTE]
-> If you choose to perform the exercise in this module, be aware you may incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/)
+> If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/)
 
 ### Task 1: Create an analytics rule from the analytics rule wizard 
 
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Sentinel workspace.
 2. On the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
 3. On the **Azure Sentinel | Analytics** blade, select **Create** and then select **Scheduled Query Rule**.
-4. On the **General** page, provide the inputs in the following table, and then select  **Next:Set rule logic**.
+4. On the **General** page, provide the inputs in the following table, and then select  **Next:Set rule logic**. <!--ID/SME, please confirm that in the UI, there shouldn't be a space between "Next:Set". It seems wrong without a space, but if that's how it truly is in the UI, then that's OK. Please fix globally across files if you determine it should indeed have a space.-->
 
   |||
   | --- | --- |
@@ -23,7 +23,7 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
   | Description | Enter a detailed description that will help other security analysts understand what the rule does. |
   | Tactics | From the **Tactics** drop-down menu, choose one among the available categories of attacks to classify the rule following the MITRE tactics. |
   | Severity | Select the **Severity** drop-down menu to categorize the level of importance of the alert as one of four options: High, Medium, Low, or Informational. |
-  | Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generate large number of false    positives. |
+  | Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generates large numbers of false positives. |
 
   :::image type="content" source="../media/07-Analytics-rule-wizzard-Create-new-rule.PNG" alt-text="Screenshot Analytics Rule wizard-Create new rule." border="true":::
 
@@ -42,7 +42,7 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
   :::image type="content" source="../media/07-Rule-Logic.PNG" alt-text="Screenshot Analytics Rule Logic." border="true":::
 
 7. In the  **Map entities**  section, you can define the entities that are returned as part of the query rule and that you can use to perform in-depth analysis.
-8. In the **Query Scheduling** section, you can configure how often the query should run, and how far in history to look back. Select query to run on every 5 min.
+8. In the **Query Scheduling** section, you can configure how often the query should run, and how far in history to search. Select query to run on every 5 min.
 9. In the **Alert threshold** section, you can specify the number of positive results that can be returned for the rule before an alert gets generated. Accept the default values.
 10. In the **Event grouping** section, accept the default selection to **Group all events into a single alert.**
 11. In the **Suppression** section, you can configure **Stop running the Query after the alert is generated** to  **On**  or  **Off.** 
@@ -80,13 +80,13 @@ In this exercise, you will explore an Azure Sentinel analytics rule. You will pe
 
 ### Results
 
-After completing this exercise, you will have created an incident rule from an existing template and created a scheduled query rule by using your own query code.
+After completing this exercise, you'll have created an incident rule from an existing template and created a scheduled query rule by using your own query code.
 
 ### Clean up the resources
 
 1. In the Azure portal, search for **Resource groups**.
 1. Select **azure-sentinel-rg**.
 1. On the header bar, select **Delete resource group**.
-1. In the **TYPE THE RESOURCE GROUP NAME:** <!--Marjan, please confirm that the field name is in all capital case in the UI.--> field type the name of the resource group **azure-sentinel-rg** and select **Delete**. 
+1. In the **TYPE THE RESOURCE GROUP NAME:** <!--Marjan, please confirm that the field name is in all capital case in the UI.--> field, enter the name of the resource group **azure-sentinel-rg** and select **Delete**. 
 
 

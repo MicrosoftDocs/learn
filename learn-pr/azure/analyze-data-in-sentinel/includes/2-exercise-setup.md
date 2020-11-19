@@ -6,7 +6,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-azure-sentinel%2Fazuredeploy.json)
 
-2. You will be prompted to sign in your Azure subscription.
+2. You'll be prompted to sign in your Azure subscription.
 3. On the **Custom deployment** page, provide the following information:
 
 |||
@@ -26,9 +26,9 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 > [!Note]
 > Wait for the deployment to complete. The deployment should take less than 5 minutes.
 
-## Task 2: Configure Azure Sentinel connectors
-
-In this task, you will deploy an Azure Sentinel connector to Azure Activity.
+## Task 2: Configure Azure Sentinel connectors 
+<!-- ID/SME: You indicate the line above is "Task 2" but then there's no Task 1 listed in this file, nor other numbered tasks?! Please review. -->
+In this task, you'll deploy an Azure Sentinel connector to Azure Activity.
 
 1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
 2. On the **Azure Sentinel** page, on the menu bar on the left, in the **Configuration** section, select **Data connectors**.
@@ -47,7 +47,7 @@ In this task, you will deploy an Azure Sentinel connector to Azure Activity.
 1. In the Azure portal, search for **Resource groups**.
 1. Select **azure-sentinel-rg**.
 1. Sort the list of resources by **Type**.
-1. The resource group should contain the resources listed inthe following table.
+1. The resource group should contain the resources listed in the following table.
 
     | Name  | Type  | Description |
     |---|---|---|

@@ -65,10 +65,10 @@ You can filter these alerts by severity and by specific text that is contained i
 
 ## Machine learning behavioral analytics
 
-Azure Sentinel Analytics includes built-in machine learning behavioral analytics rules. You cannot edit these built-in rules or review the rule settings. These rules use Microsoft machine learning algorithms to detect suspicious activity. Machine Learning algorithms correlate several low fidelity incidents into a high fidelity security incidents. This saves hours that you might otherwise spend manually analyzing numerous alerts from different products and correlating them. Machine learning algorithms that analytics rules use also help reduce the noise around alerts by quickly ingesting and connecting the important data.
+Azure Sentinel Analytics includes built-in machine learning behavioral analytics rules. You can't edit these built-in rules or review the rule settings. These rules use Microsoft machine learning algorithms to detect suspicious activity. Machine Learning algorithms correlate several low-fidelity incidents into a high-fidelity security incident. This saves hours that you might otherwise spend manually analyzing numerous alerts from different products and correlating them. Machine learning algorithms that analytics rules use also help reduce the noise around alerts by quickly ingesting and connecting the important data.
 
 For example, with machine learning behavioral analytics rule you can detect anomalous secure shell protocol (SSH) Login or remote desktop protocol (RDP) Login activity.
 
 ## Scheduled alerts
 
-Scheduled alerts analytics rules provide you the highest level of customization. You can define your own kusto query language (KQL) code to filter the security events, and you can set up a schedule for the rule to run.
+Scheduled alerts analytics rules provide you the highest level of customization. You can define your own Kusto Query Language (KQL) code to filter the security events, and you can set up a schedule for the rule to run.

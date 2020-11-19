@@ -25,8 +25,8 @@ You can disable a rule when you are performing an activity that can trigger the 
 
 ## Duplicate rules
 
-When you duplicate a rule, the rule contains all the configuration provided from the original rule. You can further modify the configuration based on your requirements. Do not forget to change the name of the duplicated rule because by default, the duplicate rule has the same name as the original rule with the string **Copy** appended to it.
+When you duplicate a rule, the rule contains all the configuration provided from the original rule. You can further modify the configuration based on your requirements. Don't forget to change the name of the duplicated rule because by default, the duplicate rule has the same name as the original rule with the string **Copy** appended to it.
 
 ## Delete rules
 
-Deleting the rule prompts you for confirmation before Azure Sentinel Analytics removes it from the set of active rules. or example, you can delete a rule about a service or a resource that is no longer in use, and eliminates the need for the rule. Be aware that the deletion of a rule is permanent and there is no undo feature. Therefore, as a recommended practice, you should first disable the rule for a period of time until you can be sure that you don't need that rule.
+Deleting the rule prompts you for confirmation before Azure Sentinel Analytics removes it from the set of active rules. For example, you can delete a rule about a service or a resource that isn't in use, which eliminates the need for the rule. Be aware that deleting a rule is permanent, and there isn't an undo feature. Therefore, we recommend you first disable the rule for a period of time until you're sure you don't need it.
