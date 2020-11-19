@@ -1,15 +1,20 @@
-### YamlMime:Module
 uid: learn.automate-with-powershell
 metadata:
   title: Introduction to PowerShell
-  description: An introduction to PowerShell, a cross-platform command-line shell and scripting language built for task automation and configuration management. You'll learn what PowerShell is, what it's used for, and get a taste for how to use it.
+  description: An introduction to PowerShell, a cross-platform command-line shell
+    and scripting language built for task automation and configuration
+    management. You'll learn what PowerShell is, what it's used for, and get a
+    taste for how to use it.
   ms.date: 11/06/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to PowerShell
-summary: An introduction to PowerShell, a cross-platform command-line shell and scripting language built for task automation and configuration management. You'll learn what PowerShell is, what it's used for, and get a taste for how to use it.
+summary: An introduction to PowerShell, a cross-platform command-line shell and
+  scripting language built for task automation and configuration management.
+  You'll learn what PowerShell is, what it's used for, and get a taste for how
+  to use it.
 abstract: |
   After completing this module, you'll be able to:
   - Understand what PowerShell is and what you can use it for.
@@ -23,19 +28,24 @@ roles:
   - developer
 products:
   - vs
-prerequisites: |
-  - Basic familiarity with interacting with a computer through a command-line shell like Command Prompt or Bash
+prerequisites: >
+  - Basic familiarity with interacting with a computer through a command-line
+  shell like Command Prompt or Bash
+
   - Visual Studio Code installed and ability to install Visual Studio Code extensions
+
   - Ability to install software on your computer (if not using a Windows PC)
 units:
   - learn.automate-with-powershell.1-introduction
   - learn.automate-with-powershell.2-what-is-powershell
   - learn.automate-with-powershell.3-exercise-powershell
-  - learn.automate-with-powershell.4-commandlets
-  - learn.automate-with-powershell.5-exercise-commandlets
-  - learn.automate-with-powershell.6-pipe
-  - learn.automate-with-powershell.7-exercise-pipe
-  - learn.automate-with-powershell.8-knowledge-check
-  - learn.automate-with-powershell.9-summary
+  - learn.automate-with-powershell.4-execution-policy
+  - learn.automate-with-powershell.5-exercise-execution-policy
+  - learn.automate-with-powershell.6-commandlets
+  - learn.automate-with-powershell.7-exercise-commandlets
+  - learn.automate-with-powershell.8-pipe
+  - learn.automate-with-powershell.9-exercise-pipe
+  - learn.automate-with-powershell.10-knowledge-check
+  - learn.automate-with-powershell.11-summary
 badge:
   uid: learn.automate-with-powershell.badge

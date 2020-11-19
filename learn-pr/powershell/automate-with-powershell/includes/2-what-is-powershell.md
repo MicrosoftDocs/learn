@@ -4,16 +4,16 @@ A command-line shell lacks a graphical interface where you would use a mouse to 
 
 ## Features
 
-PowerShell differentiates from a traditional command-line shell in a few ways, namely:
-
-- **It operates on objects over text**. Using commands in a command-line shell means that you run scripts whose output and input may differ which leads you to spend time on formatting output and extracting the data you need. By using objects as input and output, it reduces the need to spend time on such tasks.
-- **It has cmdlets**. PowerShell has the idea of traditional scripts but it also has another concepts of cmdlets, modules that operate on objects as inputs and that return objects in turn. These cmdlets is something you can build yourself using .NET Core, even if PowerShell comes with numerous cmdlets at install.
-
-PowerShell also has features that it shares with traditional shells like:
+PowerShell has features that it shares with traditional shells like:
 
 - **Aliases**. Supporting aliases mean supporting the execution of commands by using an alternate name. PowerShell supports the use of common commands like `cls` (clearing screen) and `ls` (listing files). Thereby a new user can leverage the knowledge they already have instead of having to remember the PowerShell name for said commands.
 - **Built-in help system**. Most shells have the idea of a help system in which you can learn more about a command, what it does and what parameters it supports and more. PowerShell has a powerful help system that not only allows you to learn more about commands but it also integrates with online help articles.
 - **Pipeline**. The idea with a pipeline is to run many commands after one another and have the output of one command serve as the input for the next command in line. PowerShell has this concept implemented as well but differs as it operates on objects over text. More on that in upcoming units in this module.
+
+PowerShell differentiates from a traditional command-line shell in a few ways, namely:
+
+- **It operates on objects over text**. Using commands in a command-line shell means that you run scripts whose output and input may differ which leads you to spend time on formatting output and extracting the data you need. By using objects as input and output, it reduces the need to spend time on such tasks.
+- **It has cmdlets**. PowerShell has the idea of traditional scripts but it also has another concepts of cmdlets, modules that operate on objects as inputs and that return objects in turn. These cmdlets is something you can build yourself using .NET Core, even if PowerShell comes with numerous cmdlets at install.
 
 ## Installation
 
@@ -33,24 +33,6 @@ You can launch Windows PowerShell from the Start menu.
 
 If your computer runs something other than Windows 8 or later, you'll need to install PowerShell. You can find the specific installation instructions for your OS, [on ther PowerShell documentation site](https://docs.microsoft.com/powershell/scripting/install/installing-powershell).
 
-
 ### PowerShell extension for Visual Studio Code
 
 We recommend you use the [PowerShell extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell) to author your PowerShell scripts and to run your commands while completing this module. The advantages of using said extension is that it not only let's you run commands but also helps you with snippets, code completion, syntax highlighting and more. 
-
-## Execution policy
-
-There's a concept called execution policy. It governs whether you have the right to run a script or not. It does not stop you from running a command interactively. Scripts are seen as insecure. The recommendation is therefore to ensure that any scripts you run is signed by a trusted publisher.
-
-There are cmdlets created to help you manage your execution policy, so that you can both query the current state as well as changing it to your looking, namely:
-
-- **Get-ExecutionPolicy**. Depending on what operating system you are on it will return with different values. The values you can get from running this command is:
-
-   - **Unrestricted**. This value is not recommended as it allows you to run scripts, whether it's created by a trusted publisher or not.
-   - **Restricted**. Getting this as a response means you cannot execute scripts at all.
-   - **RemoteSigned**. This response means you can run scripts if it's signed by a trusted publisher. Therefore setting this as your execution is a recommended thing to do.
-
-- **Set-ExecutionPolicy**. This command changes the execution policy. To run it, you need to specify it with the flag **-ExecutionPolicy**
-
-   > [!NOTE]
-   > This command is not supported on all platforms. If it is supported, consider running it to ensure you don't run malicious scripts.

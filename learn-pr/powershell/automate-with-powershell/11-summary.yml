@@ -1,5 +1,4 @@
-### YamlMime:ModuleUnit
-uid: learn.automate-with-powershell.9-summary
+uid: learn.automate-with-powershell.11-summary
 title: Summary
 metadata:
   title: Summary
@@ -11,4 +10,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/11-summary.md)]

@@ -43,18 +43,3 @@ To make sure you are correctly set up to work in PowerShell, running a command t
     ```
 
     The information above is narrowed down to give you more information on the version of PowerShell you are running. The learning here is that running the command `$PSVersionTable` results in an output looking like a table but is an actuality an object. You can therefore you can use a dot, `.` to access a specific property like `PSVersion`.
-
-## Check execution policy
-
-Checking the execution policy is about knowing whether you are allowed to run PowerShell scripts or not. Instead of running interactive commands in the terminal you are running files ending with _.ps1_. Generally a script should not be trusted unless it comes from a trusted publisher, so its good idea to restrictive with the execution policy.
-
-Run the command `Get-ExecutionPolicy`:
-
-```powershell
-Get-ExecutionPolicy
-```
-
-Your output prints either `Restricted`, `Unrestricted` or `RemoteSigned`, depending on how the execution pollicy is currently configured on your machine.
-
-> [!NOTE]
-> If your platform supports it, it's a good idea to ensure your execution policy is set to `RemoteSigned` with the command `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`.
