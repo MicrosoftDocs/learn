@@ -11,7 +11,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 1. Select the created storage account that should be named **learnazurefileshare** followed by random numbers.
 1. Under **Settings**, select **Configuration**.
 
-    ![Screenshot of the configuration page of storage accounts](../media/5-secure-transfer.png)
+    :::image type="content" source="../media/5-secure-transfer.png" alt-text="Screenshot of the configuration page of storage accounts.":::
 
 1. Check that **Secure transfer required** is enabled.
 
