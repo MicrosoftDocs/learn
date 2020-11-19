@@ -9,9 +9,11 @@ You have been hired as a database administrator to identify performance related 
 
     :::image type="content" source="../media/new-query-button.png" alt-text="New Query button"::: 
 
+    > [!NOTE]
+    > If you'd like to copy and paste the code you can find the code in the **D:\LabFiles\Monitor Resources\Monitor Resources scripts.sql** file.
+
 1. Copy and paste the code below into your query window. 
 
- 
     ```tsql
     USE MASTER
 
