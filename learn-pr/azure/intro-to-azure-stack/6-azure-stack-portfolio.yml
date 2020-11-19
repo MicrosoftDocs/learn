@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-stack.6-azure-stack-portfolio
+metadata:
+  title: Compare Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge
+  description: TODO
+  ms.date: 09/21/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Compare Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-azure-stack-portfolio.md)]
