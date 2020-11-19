@@ -1,10 +1,10 @@
 When it comes to Mixed Reality projects, familiar design processes you or your team use won't automatically transfer to designing 3D content. For instance, when you’re brainstorming a registration screen for a mobile app or website, a simple rectangle is enough. 
 
-Designing for three dimensions instead of two can be more time consuming, as drawing or sketching in 3D is much harder than in 2D. There are 3D tools that exist for gaming and engineering, but are harder to use and require a high skill level. This lack of fast, lightweight tools can impact your design pipeline and overload the person developing the actual application. 
+Designing for three dimensions instead of two can be more time consuming, as drawing or sketching in 3D is much harder than in 2D. There are 3D tools that exist for gaming and engineering, but are harder to use and require a high skill level. This lack of fast, lightweight tools can impact your design pipeline and overload the person developing the actual application.
 
 Luckily, there are a few techniques that can help effectively iterate through ideas and get your content fleshed out. These techniques also allow different team members and disciplines to have a voice.
 
-:::image type="content" source="../media/mr-design-process.png" alt-text="Diagram of a design process with steps for bodystorming, acting, and storyboarding.":::
+:::image type="content" source="../media/design-process.png" alt-text="Diagram of a design process with steps for bodystorming, acting, and storyboarding.":::
 
 ## Bodystorming
 

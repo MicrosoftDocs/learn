@@ -6,13 +6,13 @@ Mixed Reality cloud services like **Azure Remote Rendering** and **Azure Spatial
 
 Azure Remote Rendering lets you render highly complex 3D models in real time and stream them directly to a device by moving the rendering workload to high-end GPUs in the cloud. This service is especially important for applications that you may be developing for untethered devices, as they have less computational rendering power.
 
-:::image type="content" source="../media/arr-engine.png" alt-text="Photograph of two 3D car engine models, the left model with a high triangle count, the right model with low triangle count.":::
+:::image type="content" source="../media/azure-remote-rendering-engine.png" alt-text="Photograph of two 3D car engine models, the left model with a high triangle count, the right model with low triangle count.":::
 
 ## Azure Spatial Anchors
 
 Azure Spatial Anchors lets you build spatially aware applications, meaning you can map, persist, and share holographic content across multiple devices at real-world scale. This service is cross-platform and is uniquely suited to way-finding, multi-user experiences, and saving your object information.
 
-:::image type="content" source="../media/persistence.gif" alt-text="Animated photograph of a spatial anchor persisting on a table between application sessions.":::
+:::image type="content" source="../media/persistence.gif" alt-text="Animated illustration of a spatial anchor persisting on a table between application sessions.":::
 
 ## Cognitive Services
 
