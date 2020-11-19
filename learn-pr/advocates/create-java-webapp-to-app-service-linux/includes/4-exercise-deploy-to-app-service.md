@@ -141,10 +141,6 @@ You'll see a new section in the `<plugins>` section in your `pom.xml` file.
 
 If you want to change the resource group name, instance name, and deployment location, change `<resourceGroup>`, `<appName>`, and `<region>`.
 
-To listen to PORT 80 on Azure App Services, we need to configure the port setting on `PORT` and `WEBSITES_PORT` inside `<appSettings>`.
-This port change is necessary because Tomcat starts its service on port 8080 by default.
-And also we need to configure the timeout of startup time on  `WEBSITES_CONTAINER_START_TIME_LIMIT`.
-
 ```xml
     <plugins>
       <plugin>
@@ -163,22 +159,6 @@ And also we need to configure the timeout of startup time on  `WEBSITES_CONTAINE
             <javaVersion>Java 8</javaVersion>
             <webContainer>TOMCAT 9.0</webContainer>
           </runtime>
-
-          <appSettings>
-            <property>
-              <name>PORT</name>
-              <value>8080</value>
-            </property>
-            <property>
-              <name>WEBSITES_PORT</name>
-              <value>8080</value>
-            </property>
-            <property>
-              <name>WEBSITES_CONTAINER_START_TIME_LIMIT</name>
-              <value>600</value>
-            </property>
-          </appSettings>
-
           <deployment>
             <resources>
               <resource>
@@ -206,7 +186,7 @@ Once compiled, use the `Maven Plugin for Azure Web Apps` command to deploy your 
 Execute the following command:
 
 ```bash
-mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
+mvn azure-webapp:deploy
 ```
 
 When the deployment is completed, the following message will be output.
@@ -216,8 +196,8 @@ When the deployment is completed, the following message will be output.
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  01:35 min
-[INFO] Finished at: 2020-09-30T20:02:37+09:00
+[INFO] Total time:  02:15 min
+[INFO] Finished at: 2020-11-19T15:55:55+09:00
 [INFO] ------------------------------------------------------------------------
 ```
 
