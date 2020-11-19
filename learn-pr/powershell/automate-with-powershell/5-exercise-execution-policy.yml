@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.automate-with-powershell.5-exercise-execution-policy
-title: Unit
+title: Exercise - manage execution policy
 metadata:
-  title: Unit
+  title: Exercise - manage execution policy
   description: Describe unit
-  author: undefined
-  ms.author: undefined
-  ms.date: 04/14/2020
+  author: softchris
+  ms.author: chnoring
+  ms.date: 11/19/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

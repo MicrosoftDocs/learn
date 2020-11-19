@@ -10,7 +10,8 @@ There are some things you should know about _execution policy_
 
 - **It behaves differently on Windows and OSs**. Being able to set the execution policy, and thereby control what scripts can run, is for now a Windows only feature. On other operating systems the policy is set to `Unrestricted` and is not possible to change. It may sound like running PowerShell on Unix or macOS would be more insecure but the fact is these OSs have an underlying security model, a _default deny_ behavior, where you need to be explicit on what can run.
 
-   > [!NOTE] There are cmdlets available to both reading and changing the execution policy but non Windows systems will respond with an unsupported message, if you were to try changing the policy.  
+   > [!NOTE]
+   > There are cmdlets available to both reading and changing the execution policy but non Windows systems will respond with an unsupported message, if you were to try changing the policy.  
 
 - **Enables granular control**. It's important to be able to manage the policies around security in an efficient way. What's not efficient is having to set a policy on each and every machine separately. Fortunately PowerShell comes with a granular control mechanism that helps you to not only set a policy, but also enables you define on what level it's being applied, its _scope_.
 

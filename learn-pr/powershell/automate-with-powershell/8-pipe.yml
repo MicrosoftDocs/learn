@@ -1,3 +1,4 @@
+### YamlMime:ModuleUnit
 uid: learn.automate-with-powershell.8-pipe
 title: Create powerful pipelines by connecting cmdlets
 metadata:
@@ -7,7 +8,7 @@ metadata:
     help you filter and format your data.
   author: softchris
   ms.author: chnoring
-  ms.date: 11/10/2020
+  ms.date: 11/19/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

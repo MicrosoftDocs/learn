@@ -1,9 +1,10 @@
+### YamlMime:ModuleUnit
 uid: learn.automate-with-powershell.10-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: Four multiple-choice questions
-  ms.date: 11/06/2020
+  ms.date: 11/19/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
