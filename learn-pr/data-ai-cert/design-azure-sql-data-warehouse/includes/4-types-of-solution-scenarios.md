@@ -11,6 +11,6 @@ SQL Analytics stores data in relational tables with columnar storage. This forma
 
 ## Advanced Analytical Workloads
 
-You can perform advanced analytics in the form of predictive or preemptive analytics using Azure Synapse Analytics, with the tight integration with Spark, and the hybrid data integration engine with Data Integration. In a cloud data solution, data is ingested into big data stores from a variety of sources. Once in a big data store, Hadoop, Spark, and machine learning algorithms prepare and train the data. When the data is ready for complex analysis, SQL Analytics uses PolyBase to query the big data stores.
+You can perform advanced analytics in the form of predictive or preemptive analytics using Azure Synapse Analytics, with the tight integration with Spark, and the hybrid data integration engine with Data Integration. In a cloud data solution, data is ingested into big data stores from a variety of sources. Once in a big data store, Hadoop, Spark, and machine learning algorithms prepare and train a *Model* of the data. When the data is ready for complex analysis, SQL Analytics uses PolyBase to query the big data stores.
 
-PolyBase uses standard T-SQL queries to bring the data into SQL Analytics tables. As a result, the worlds of the Modern Data Warehouse and the Advanced Analytical Workloads are brought together
+PolyBase uses standard T-SQL queries to bring the data into SQL Analytics tables. As a result, the worlds of the Modern Data Warehouse and the Advanced Analytical Workloads are brought together.
