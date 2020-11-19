@@ -49,7 +49,7 @@ Let's take the query you just used and make an edit to build a different data vi
     1. Takes data from the InsightsMetrics table.
     1. Looks at all data values ingested over the last hour underneath the Processor namespace.
     1. Returns the rounded maximum value in 5 minute intervals for both machines.
-    :::image type="content" source="../media/5-cpu-trends-max.png" alt-text="Screenshot showing arg_max operator vs. average." lightbox="../media/5-cpu-trends-arg-max.png":::
+    :::image type="content" source="../media/5-cpu-trends-max.png" alt-text="Screenshot showing arg_max operator vs. average." lightbox="../media/5-cpu-trends-max.png":::
 
     Each of these visualizations can be pinned to a dashboard by selecting **Pin to dashboard** at the top and then specify the following details:
 
