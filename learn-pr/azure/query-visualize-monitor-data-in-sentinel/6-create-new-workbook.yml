@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.query-visualize-monitor-data-in-sentinel.5-create-new-workbook
+uid: learn.azure.query-visualize-monitor-data-in-sentinel.6-create-new-workbook
 metadata:
   title: Create a new Azure Sentinel workbook
-  description: Create a new Azure Sentinel workbook
+  description: Create a new Azure Sentinel workbook.
   ms.date: 11/10/2020
   author: jboeshart
   ms.author: jaboes
@@ -11,11 +11,11 @@ metadata:
 title: Create a new Azure Sentinel workbook
 durationInMinutes: 5
 content: |
-  [!include[] includes/5-create-new-workbook.md)]
+  [!include[] includes/6-create-new-workbook.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which formatting is used to format the text in the workbook with text visualization?"
+  - content: "Which formatting does Azure Sentinel use to format the text in the workbook with text visualization?"
     choices:
     - content: "Microsoft Word"
       isCorrect: false
@@ -25,8 +25,8 @@ quiz:
       explanation: "HTML text formatting is not used for formatting the text steps in the workbook."
     - content: "Markdown"
       isCorrect: true
-      explanation: "The text is edited through a Markdown formatting, that provides different heading and font styles, hyperlinks, tables."
-  - content: "You create a custom workbook and you want to show the data in table. Which visualization steps you should use in the workbook?"
+      explanation: "The text is edited through a Markdown formatting, which provides different heading and font styles, hyperlinks, tables."
+  - content: "An administrator creates a custom workbook and wants to display the data in table. Which visualization steps should the administrator use in the workbook?"
     choices:
     - content: "Text visualization"
       isCorrect: false
