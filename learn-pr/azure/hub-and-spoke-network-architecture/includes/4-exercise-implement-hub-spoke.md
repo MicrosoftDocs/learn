@@ -22,17 +22,17 @@ You can create a virtual network with the Azure portal, Azure CLI, or Azure Powe
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account you used to activate the sandbox.
 
-1. Select **Create a Resource** in the upper left of the Azure portal.
+1. In the upper left of the Azure portal, select **Create a Resource**.
 
 1. In the search box, enter **Virtual Network**, and then select the link with the same title in the list.
 
-1. Select **Create** to start configuring the virtual network.
+1. To start configuring the virtual network, select **Create**.
 
 ## Configure the virtual network settings
 
 The resource creation experience on the portal is a wizard that walks you through the initial configuration for the virtual network.
 
-1. Use the values below to create the virtual network:
+1. To create the virtual network, use the following values:
 
     |Property name | Field property  |
     |---------|---------|
@@ -48,7 +48,7 @@ The resource creation experience on the portal is a wizard that walks you throug
 
     ![Screenshot of Create virtual network options](../media/4-create-vnet.png)
 
-1. Select **Create** to start provisioning the virtual network.
+1. To start provisioning the virtual network, select **Create**.
 
 ## Configure the hub virtual network peering
 
@@ -58,7 +58,7 @@ Now that you've created the third spoke, you need to configure the virtual netwo
 
 1. Select **HubVNet**.
 
-1. Select the **Peerings** pane in the settings menu on the left.
+1. In the settings menu on the left, select the **Peerings** pane.
 
 1. On the **Peerings** pane, select **Add**, and fill in the fields as follows:
 
@@ -75,7 +75,7 @@ Now that you've created the third spoke, you need to configure the virtual netwo
     |Allow forwarded traffic from hubVnet to HRappVnet  |   **Disabled**     |
     |Configure gateways transit settings         |   **Unchecked**    |
 
-1. Select **OK** to create the peering.
+1. To create the peering, select **OK**.
 
 1. Close the **hubVNet** pane.
 
@@ -85,25 +85,25 @@ You've now peered the hub virtual network to the spoke virtual network. You've a
 
 To configure traffic flow, create a network security group.
 
-1. Select **Create a Resource** in the upper left corner of the Azure portal.
+1. In the upper left corner of the Azure portal, select **Create a Resource**.
 
 1. In the search box, enter **network security group**, and then select the link with the same title in the list.
 
-1. Select **Create** to start configuring the virtual network.
+1. To start configuring the virtual network, select **Create**.
 
-1. Enter **HRNsg** for the name. Then select the **<rgn>[sandbox resource group name]</rgn>** resource group and the same location as **HRappVnet**.
+1. For the name, enter **HRNsg**. Then, select the **<rgn>[sandbox resource group name]</rgn>** resource group and the same location as **HRappVnet**.
 
-1. Select **Create** to provision the network security group.
+1. To provision the network security group, select **Create**.
 
 You've created a network security group that can be assigned to each of the virtual networks.
 
 ## Associate the network security group to the new HR virtual network
 
-Now you associate the network security group to the virtual network.
+Now, you associate the network security group to the virtual network.
 
-1. Select **All services** in the upper left corner of the Azure portal.
+1. In the upper left corner of the Azure portal, select **All services**.
 
-1. In the search box, type **Network security group**, and then select **Network security groups**.
+1. In the search box, enter **Network security group**, and then select **Network security groups**.
 
 1. In the **Network security groups** pane, you should see the network security groups you created.
 
@@ -117,13 +117,13 @@ Now you associate the network security group to the virtual network.
 
 1. Select the **HRsystems** subnet.
 
-1. Select **OK** to associate the network security group.
+1. To associate the network security group, select **OK**.
 
 ## Configure the network security group rule to stop inbound HTTP traffic
 
 You have a security requirement to meet for the HR application to be hosted on HRappVnet. There shouldn't be any inbound HTTP traffic from the spoke, because only internal employees need access. Configure the network security group rule to meet this requirement.
 
-1. On the **HRNsg** pane, select **Inbound security rules** in the menu.
+1. On the **HRNsg** pane, in the menu, select **Inbound security rules**.
 
 1. On the **Inbound security rules** pane, select **Add**.
 
@@ -138,7 +138,7 @@ You have a security requirement to meet for the HR application to be hosted on H
     |Priority  | 100      |
     |Name      | Block-Inbound-HTTP-HTTPS |
 
-1. Select **Add** to add the rule.
+1. To add the rule, select **Add**.
 
 You've now blocked inbound HTTP access from the spoke on port 80 and 443.
 
