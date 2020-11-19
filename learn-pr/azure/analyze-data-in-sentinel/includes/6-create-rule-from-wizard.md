@@ -2,7 +2,7 @@ You can create a custom analytics rule to search for suspicious activities and t
 
 ## Create an analytics rule by using the wizard
 
-Creating a custom rule from the scheduled query rule type provides you with the highest level of customization. You can define, your own Kusto Query Language (KQL) code, set a schedule to run the alerts, or provide an automated action by associating an Azure Sentinel Playbook.
+Creating a custom rule from the scheduled query rule type provides you with the highest level of customization. You can define, your own KQL code, set a schedule to run the alerts, or provide an automated action by associating an Azure Sentinel Playbook.
 
 To create an analytics rule, in the Azure portal, under **Azure Sentinel**, select  **Analytics**. In the top menu bar, select  **+Create**, and then select  **Scheduled query rule.**
 
@@ -16,7 +16,7 @@ The following table lists the inputs you must provide on the **General** page.
 | Description | Enter a detailed description that will help other security analysts understand what the rule does. |
 | Tactics | From the **Tactics** drop-down menu, choose one among the available categories of attacks to classify the rule following the MITRE tactics. |
 | Severity | Select the **Severity** drop-down menu to categorize the level of importance of the alert as one of four options: High, Medium, Low, or Informational. |
-| Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generate large number of false positives. |
+| Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generates a large number of false positives. |
 
 ## Set rule logic
 
@@ -37,15 +37,15 @@ AzureActivity
 
 > [!**Tip**]
 
-> **For assistance with the query language, see the Query Language Reference at [**https://docs.microsoft.com/en-us/azure/kusto/query/**](https://docs.microsoft.com/en-us/azure/kusto/query/)
+> **For assistance with the query language, refer to the Query Language Reference at [**https://docs.microsoft.com/en-us/azure/kusto/query/**](https://docs.microsoft.com/en-us/azure/kusto/query/)
 
 ### Map entities
 
-In the  **Map entities**  section, you can define the entities that are returned as part of the query rule. You can then use these entities to perform in-depth analysis by selecting  **Add** to add these entities in the query rule. These entities can help you perform a visual investigation because they will appear as a group on the **Incident** tab. Some of the entities contain information that represents a user, a host, or an IP address.
+In the  **Map entities**  section, you can define the entities that are returned as part of the query rule, and then use these entities to perform in-depth analysis by selecting  **Add** to add these entities in the query rule. These entities can help you perform a visual investigation because they will appear as a group on the **Incident** tab. Some of the entities contain information that represents a user, a host, or an IP address.
 
 ### Query Scheduling
 
-In the **Query Scheduling** section, you can configure how often the query should run, and how far back in history the query should search the data. It's important that you don't search for data that is older then the query's run frequency because that can create duplicate alerts.
+In the **Query Scheduling** section, you can configure how often the query should run, and how far back in history the query should search the data. It's important that you don't search for data that is older than the query's run frequency because that can create duplicate alerts.
 
 ### Alert threshold
 
@@ -61,7 +61,7 @@ In the **Alert threshold** section, you can specify the number of a positive res
 In the **Event grouping** section, you can select one of the following two options:
 
 - **Group all events into a single alert**. This is the default option, and it creates a single alert if the query returns more results than that the specified alert threshold.
-- **Trigger an alert for each event**. This option create unique alerts for each event returned by the query.
+- **Trigger an alert for each event**. This option creates unique alerts for each event returned by the query.
 
 ### Suppression 
 

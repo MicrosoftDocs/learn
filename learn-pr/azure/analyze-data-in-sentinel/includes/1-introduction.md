@@ -24,7 +24,7 @@ The IT director believes that Azure Sentinel Analytics will help the security an
 
 In this module, you'll understand the importance of using Azure Sentinel Analytics, create and implement analytics rules from existing templates, create new rules and queries using the wizard, and manage rules with modifications.
 
-By the end of this module, you'll be able to set up analytics rules in Azure Sentinel to help the SecOps team identify and stop cyber attacks.
+By the end of this module, you'll be able to set up analytics rules in Azure Sentinel to help the SecOps team identify and stop cyberattacks.
 
 ## Learning objectives
 
@@ -42,4 +42,4 @@ By the end of this module, you'll be able to set up analytics rules in Azure Sen
 - Azure Sentinel instance in your Azure subscription
 
 > [!NOTE]
-> If you choose to perform the exercise in this module, be aware you may incur costs in your Azure Subscription. To estimate the cost refer to [Azure Sentinel Pricing] (<https://azure.microsoft.com/pricing/details/azure-sentinel/>)
+> If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost refer to [Azure Sentinel Pricing] (<https://azure.microsoft.com/pricing/details/azure-sentinel/>)
