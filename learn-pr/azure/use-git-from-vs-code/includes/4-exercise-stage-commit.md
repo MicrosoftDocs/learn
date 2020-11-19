@@ -8,7 +8,7 @@ Having made a change to the source code in the preceding exercise, you now have 
 
 In Visual Studio Code, select the Source Control icon in the left column.  The Source Control view shows both staged and unstaged changes.  Your goal is to create a commit, which you can also do from this view.  But first you must decide which changes should be added to your commit.
 
-:::image type="content" source="../media/3-exercise-stage-commit-01.png" alt-text="Screenshot of the Visual Studio Code Source Control view with the file containing changes listed in the Changes section.":::
+:::image type="content" source="../media/4-exercise-stage-commit-01.png" alt-text="Screenshot of the Visual Studio Code Source Control view with the file containing changes listed in the Changes section.":::
 
 You can see that your *index.js* file is listed under **Changes**.  To the right of the file name are four icons:
 
@@ -46,7 +46,7 @@ To complete the commit, select <kbd>Ctrl+Enter</kbd> or select the checkmark ico
 
 In the preceding unit, we talked about the **Synchronize Changes** (two clockwise arrows) icon in the Status Bar. As shown in the following image, to the right of the icon is a down arrow with a zero (0) next to it, indicating that there are no commits to *pull*.  Next to that is an up arrow with a one (1) next to it, indicating that there is one commit to *push* to the repository.
 
-![Screenshot of the Status Bar, with an icon indicating the number of commits to be pushed to the repository.](../media/3-exercise-stage-commit-02.png)
+![Screenshot of the Status Bar, with an icon indicating the number of commits to be pushed to the repository.](../media/4-exercise-stage-commit-02.png)
 
 Select the **Synchronize Changes** icon now to perform a `git pull` and then a `git push`.  There should be nothing new to pull, but the action should push your latest commit to your branch on your forked repository.
 
@@ -58,11 +58,11 @@ Select the **Branch: master** drop-down arrow to display a list of all the branc
 
 Select **update-response**, the branch that you created in this exercise.
 
-![Screenshot of the GitHub Branches list displaying the new "update-response" branch.](../media/3-exercise-stage-commit-03.png)
+![Screenshot of the GitHub Branches list displaying the new "update-response" branch.](../media/4-exercise-stage-commit-03.png)
 
 Next, select the **Commits** link above the **Branch: update-response** button.  Selecting this link displays all commits in this branch, and the commit you created earlier in this exercise should be listed at the top.
 
-![Screenshot of the GitHub "Commits" page, listing all the commits added to the currently selected branch.](../media/3-exercise-stage-commit-04.png)
+![Screenshot of the GitHub "Commits" page, listing all the commits added to the currently selected branch.](../media/4-exercise-stage-commit-04.png)
 
 ## Next steps
 
