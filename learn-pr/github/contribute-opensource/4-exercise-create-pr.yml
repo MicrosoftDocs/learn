@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.contribute-opensource.4-exercise-create-pr
-title: Unit
+title: Describe your contribution
 metadata:
   title: Unit
-  description: Describe unit
+  description: Writing a good commit message, and Pull Request
   author: floord
   ms.author: fldrees
-  ms.date: 04/14/2020
+  ms.date: 11/19/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
