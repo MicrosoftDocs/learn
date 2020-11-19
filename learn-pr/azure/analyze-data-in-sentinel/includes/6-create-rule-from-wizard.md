@@ -83,7 +83,7 @@ In the **Re-open closed matching incidents** section, you can configure Azure Se
 
 You can use the **Automated Response** section to select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
 
-For more details on how to create a playbook and run the automated activity on an incident creation, refer to the "Threat response with Sentinel Playbooks" module.
+For more details on how to create a playbook and run the automated activity on an incident creation, refer to the "Threat response with Azure Sentinel Playbooks" module.
 
 ## Review and create
 
