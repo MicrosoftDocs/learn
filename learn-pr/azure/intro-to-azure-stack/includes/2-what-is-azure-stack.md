@@ -12,7 +12,7 @@ Despite their differences, Azure Stack products share some characteristics that 
 - Close integration with Azure
 - Modern technologies that accelerate replacement and consolidation of legacy infrastructure
 - Pay-as-you-use pricing, leveraging the same subscriptions, monetary commitments, and billing tools as Azure
-- Pre-built, pre-configured, and Microsoft-certified hardware available either from Microsoft or third-party vendors
+- Purpose-built, pre-configured, and Microsoft-certified hardware available either from Microsoft or third-party vendors
 
 ## Azure Arc and Azure Stack
 
