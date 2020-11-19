@@ -1,0 +1,188 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workspaceName": {
+            "type": "String"
+        },
+        "location": {
+            "defaultValue": "[resourceGroup().location]",
+            "type": "String"
+        },
+        "simplevmName": {
+            "defaultValue": "simple-vm",
+            "minLength": 1,
+            "type": "String"
+        },
+        "simplevmWindowsOSVersion": {
+            "defaultValue": "2016-Datacenter",
+            "type": "String"
+        }
+    },
+    "variables": {
+        "vnet1Prefix": "10.0.0.0/16",
+        "vnet1Subnet1Name": "Subnet-1",
+        "vnet1Subnet1Prefix": "10.0.0.0/24",
+        "vnet1Subnet2Name": "Subnet-2",
+        "vnet1Subnet2Prefix": "10.0.1.0/24",
+        "st1Name": "[concat('st1', uniqueString(resourceGroup().id))]",
+        "st1Type": "Standard_LRS",
+        "simplevmImagePublisher": "MicrosoftWindowsServer",
+        "simplevmImageOffer": "WindowsServer",
+        "simplevmOSDiskName": "simplevmOSDisk",
+        "simplevmVmSize": "Standard_D1_v2",
+        "simplevmVnetID": "[resourceId('Microsoft.Network/virtualNetworks', 'vnet1')]",
+        "simplevmSubnetRef": "[concat(variables('simplevmVnetID'), '/subnets/', variables('vnet1Subnet1Name'))]",
+        "simplevmStorageAccountContainerName": "vhds",
+        "simplevmNicName": "[concat(parameters('simplevmName'), 'NetworkInterface')]"
+    },
+    "resources": [
+        {
+            "type": "Microsoft.OperationalInsights/workspaces",
+            "apiVersion": "2020-08-01",
+            "name": "[parameters('workspaceName')]",
+            "location": "[parameters('location')]",
+            "properties": {
+                "features": {
+                    "immediatePurgeDataOn30Days": true
+                },
+                "sku": {
+                    "name": "Free"
+                }
+            }
+        },
+        {
+            "type": "Microsoft.OperationsManagement/solutions",
+            "apiVersion": "2015-11-01-preview",
+            "name": "[concat('SecurityInsights','(', parameters('workspaceName'),')')]",
+            "location": "[parameters('location')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.OperationalInsights/workspaces/', parameters('workspaceName'))]"
+            ],
+            "plan": {
+                "name": "[concat('SecurityInsights','(', parameters('workspaceName'),')')]",
+                "product": "OMSGallery/SecurityInsights",
+                "publisher": "Microsoft",
+                "promotionCode": ""
+            },
+            "properties": {
+                "workspaceResourceId": "[resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspaceName'))]"
+            }
+        },
+        {
+            "type": "Microsoft.Network/virtualNetworks",
+            "apiVersion": "2015-06-15",
+            "name": "vnet1",
+            "location": "[resourceGroup().location]",
+            "dependsOn": [],
+            "tags": {
+                "displayName": "vnet1"
+            },
+            "properties": {
+                "addressSpace": {
+                    "addressPrefixes": [
+                        "[variables('vnet1Prefix')]"
+                    ]
+                },
+                "subnets": [
+                    {
+                        "name": "[variables('vnet1Subnet1Name')]",
+                        "properties": {
+                            "addressPrefix": "[variables('vnet1Subnet1Prefix')]"
+                        }
+                    },
+                    {
+                        "name": "[variables('vnet1Subnet2Name')]",
+                        "properties": {
+                            "addressPrefix": "[variables('vnet1Subnet2Prefix')]"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2015-06-15",
+            "name": "[variables('st1Name')]",
+            "location": "[resourceGroup().location]",
+            "dependsOn": [],
+            "tags": {
+                "displayName": "st1"
+            },
+            "properties": {
+                "accountType": "[variables('st1Type')]"
+            }
+        },
+        {
+            "type": "Microsoft.Network/networkInterfaces",
+            "apiVersion": "2015-06-15",
+            "name": "[variables('simplevmNicName')]",
+            "location": "[resourceGroup().location]",
+            "dependsOn": [
+                "[concat('Microsoft.Network/virtualNetworks/', 'vnet1')]"
+            ],
+            "tags": {
+                "displayName": "simplevmNic"
+            },
+            "properties": {
+                "ipConfigurations": [
+                    {
+                        "name": "ipconfig1",
+                        "properties": {
+                            "privateIPAllocationMethod": "Dynamic",
+                            "subnet": {
+                                "id": "[variables('simplevmSubnetRef')]"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "Microsoft.Compute/virtualMachines",
+            "apiVersion": "2015-06-15",
+            "name": "[parameters('simplevmName')]",
+            "location": "[resourceGroup().location]",
+            "dependsOn": [
+                "[concat('Microsoft.Storage/storageAccounts/', variables('st1Name'))]",
+                "[concat('Microsoft.Network/networkInterfaces/', variables('simplevmNicName'))]"
+            ],
+            "tags": {
+                "displayName": "simplevm"
+            },
+            "properties": {
+                "hardwareProfile": {
+                    "vmSize": "[variables('simplevmVmSize')]"
+                },
+                "osProfile": {
+                    "computerName": "[parameters('simplevmName')]",
+                    "adminUsername": "Student",
+                    "adminPassword": "Pa55w.rd1234"
+                },
+                "storageProfile": {
+                    "imageReference": {
+                        "publisher": "[variables('simplevmImagePublisher')]",
+                        "offer": "[variables('simplevmImageOffer')]",
+                        "sku": "[parameters('simplevmWindowsOSVersion')]",
+                        "version": "latest"
+                    },
+                    "osDisk": {
+                        "name": "simplevmOSDisk",
+                        "vhd": {
+                            "uri": "[concat('http://', variables('st1Name'), '.blob.core.windows.net/', variables('simplevmStorageAccountContainerName'), '/', variables('simplevmOSDiskName'), '.vhd')]"
+                        },
+                        "caching": "ReadWrite",
+                        "createOption": "FromImage"
+                    }
+                },
+                "networkProfile": {
+                    "networkInterfaces": [
+                        {
+                            "id": "[resourceId('Microsoft.Network/networkInterfaces', variables('simplevmNicName'))]"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
