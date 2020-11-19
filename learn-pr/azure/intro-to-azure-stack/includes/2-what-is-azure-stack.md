@@ -4,14 +4,15 @@ Cloud computing isn't an all-or-nothing proposition. Customers can choose to use
 
 Azure Stack is a family of products that provide an extension of Azure to consistently build and run hybrid applications across datacenters, edge locations, remote offices, and cloud. Azure Stack family consists of Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge. 
 
-As part of its hybrid cloud strategy, Microsoft has structured its offerings in a way that helps provide a clear implementation path for customers seeking to innovate the way they provision and manage their on-premises workloads. As a result, Microsoft has rebranded Microsoft Azure Stack, which it introduced in 2017, as Azure Stack Hub. In addition, in November 2019, Microsoft announced two additional products named Azure Stack Hyperconverged Infrastructure (HCI) and Azure Stack Edge. Each of these products is intended to address different sets of needs, which this module will explore in further detail. The different features and functionalities of these three products of the Azure Stack family complement each other.
+As part of its hybrid cloud strategy, Microsoft has structured its offerings in a way that helps provide a clear implementation path for customers such as Contoso that are seeking to innovate the way they provision and manage their on-premises workloads. As a result, Microsoft has rebranded Microsoft Azure Stack, which it introduced in 2017, as *Azure Stack Hub*. In addition, in November 2019, Microsoft announced two additional products: *Azure Stack HCI* and *Azure Stack Edge*. Although each of these products is intended to address different sets of hybrid cloud needs, distinct features and functionalities of these three products of the Azure Stack family complement each other. This module will explore these products and their interconnectedness in further detail.
 
-Despite their differences, the Azure Stack products share some characteristics that facilitate transition to the hybrid cloud model by using the following Azure-based capabilities:
+Despite their differences, Azure Stack products share some characteristics that facilitate transition to the hybrid cloud model, including:
 
 - On-premises deployments
 - Close integration with Azure
 - Modern technologies that accelerate replacement and consolidation of legacy infrastructure
 - Pay-as-you-use pricing, leveraging the same subscriptions, monetary commitments, and billing tools as Azure
+- Pre-built, pre-configured, and Microsoft-certified hardware available either from Microsoft or third-party vendors
 
 ## Azure Arc and Azure Stack
 
