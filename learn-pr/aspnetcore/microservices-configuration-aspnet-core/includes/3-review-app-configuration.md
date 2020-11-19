@@ -14,7 +14,7 @@ You'll review the:
 
 Configuration in an ASP.NET Core project is supported by one or more .NET Core *configuration providers*. A [configuration provider](/aspnet/core/fundamentals/configuration/#configuration-providers) is an abstraction over a specific configuration source, such as a JSON file. The configuration source's values are represented as a collection of key-value pairs.
 
-An ASP.NET Core app can register a chain of configuration providers to read settings from multiple sources. With the default application host, the following configuration sources are automatically registered in the order listed:
+An ASP.NET Core app can register multiple configuration providers to read settings from various sources. With the default application host, the following configuration sources are automatically registered in the order listed:
 
 1. JSON file (*:::no-loc text="appsettings.json":::*)
 1. JSON file (*:::no-loc text="appsettings.{environment}.json":::*)
@@ -49,13 +49,13 @@ Environment variables are a cross-platform mechanism for providing runtime confi
 
 A centralized configuration service is especially useful in microservices apps and other distributed apps. In this module, you'll use Azure App Configuration to manage app settings and feature flags.
 
-In an ASP.NET Core app, Azure App Configuration is registered as another configuration provider. The rest of the app doesn't know about the App Configuration service as it works with configuration values.
+In an ASP.NET Core app, Azure App Configuration is registered as a configuration provider. Aside from the provider registration, the app doesn't know about the App Configuration store. Configuration values can be retrieved from it via .NET Core's configuration abstraction&mdash;the `IConfiguration` interface.
 
 ## Feature Management library
 
 The *Feature Management* library provides standardized .NET APIs for managing feature flags within apps. It's distributed via NuGet in the form of two different packages named `Microsoft.FeatureManagement` and `Microsoft.FeatureManagement.AspNetCore`. The latter package provides Tag Helpers for use in an ASP.NET Core project's Razor files. The former package is sufficient when the Tag Helpers aren't needed or when not using with an ASP.NET Core project.
 
-The library is built atop the `IConfiguration` interface&mdash;.NET Core's configuration abstraction. Therefore, the library is compatible with any .NET Core configuration provider, including the provider for Azure App Configuration. Because the library is decoupled from Azure App Configuration, integration of the two is made possible via the configuration provider. Combining this library with Azure App Configuration enables you to dynamically toggle features without implementing supporting infrastructure.
+The library is built atop `IConfiguration`. Therefore, the library is compatible with any .NET Core configuration provider, including the provider for Azure App Configuration. Because the library is decoupled from Azure App Configuration, integration of the two is made possible via the configuration provider. Combining this library with Azure App Configuration enables you to dynamically toggle features without implementing supporting infrastructure.
 
 ### Integration with Azure App Configuration
 
@@ -83,12 +83,14 @@ To make a feature configurable, you have to make several changes to your app. So
 
 The *WebSPA* app is an ASP.NET Core project that uses a JavaScript SPA framework from Google called Angular. Knowledge of Angular isn't required. It's more important to understand the app's architecture.
 
-<!--TODO: finish writing this paragraph-->
-The JavaScript can't access .NET's configuration system.
+The JavaScript on the client can't access .NET's `IConfiguration` interface. To solve that problem, an ASP.NET Core middleware component:
+
+* Enables the client to inquire about a feature's status via an HTTP request.
+* Communicates with the .NET Feature Management library to access feature flags via `IConfiguration`.
 
 ### Feature flag directive for the views
 
-You're provided with a custom Angular *attribute directive*&mdash;a component that changes the appearance of DOM elements. In this case, the directive considers a feature flag to toggle the visibility of the discount coupon DOM elements. The directive is implemented with the following files in the *src\Web\WebSPA\Client\src\modules\shared* directory:
+You're provided with a custom Angular *attribute directive*&mdash;a component that changes the appearance of DOM elements. In this app, the directive considers a feature flag to toggle the visibility of the discount coupon DOM elements. The directive is implemented with the following files in the *src\Web\WebSPA\Client\src\modules\shared* directory:
 
 * *directives\featureFlag.directive.ts*
 * *models\featureFlag.model.ts*
@@ -112,7 +114,7 @@ The feature flag directive is used in any `div` element to determine whether it 
 
 ### Feature Management middleware for querying values
 
-A custom middleware, found at *src\Web\WebSPA\Infrastructure\Middlewares\FeatureManagementMiddleware.cs*, is a key component of the SPA's feature flag system. The middleware queries the specific feature flag values so they can be used in the SPA:
+The custom middleware at *src\Web\WebSPA\Infrastructure\Middlewares\FeatureManagementMiddleware.cs* is a key component of the SPA's feature flag system. The middleware queries the specific feature flag values so they can be used in the SPA:
 
 :::code language="csharp" source="../code/src/web/webspa/infrastructure/middlewares/featuremanagementmiddleware.cs" id="snippet_Invoke" highlight="8":::
 
