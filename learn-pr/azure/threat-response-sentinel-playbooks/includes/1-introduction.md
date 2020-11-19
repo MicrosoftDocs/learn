@@ -35,4 +35,3 @@ By the end of this module, you'll be able to set up security playbooks in Azure 
 
 > [!NOTE]
 > If you choose to perform the exercise in this module, be aware you may incur costs in your Azure Subscription. To estimate the cost refer to [Azure Sentinel Pricing] (<https://azure.microsoft.com/pricing/details/azure-sentinel/>)
-

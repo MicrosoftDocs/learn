@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Trigger a playbook in real-time
-durationInMinutes: 5
+durationInMinutes: 12
 content: |
   [!include[]includes/4-playbook-trigger.md)]
 quiz:
@@ -26,7 +26,7 @@ quiz:
     - content: "List of dynamic users."
       isCorrect: false
       explanation: "Dynamic content displays any available outputs from the previous step, which you can use as inputs for the current action."
-  - content: "You create a new playbook to notify you each time a user is delegated the role of Global Administrator. Which connector should you select in your logic app?"
+  - content: "An administrator creates a new playbook to receive a notification each time a user is delegated the role of Global Administrator. Which connector should the administrator select in the logic app?"
     choices:
     - content: "Azure Active Directory connector."
       isCorrect: false

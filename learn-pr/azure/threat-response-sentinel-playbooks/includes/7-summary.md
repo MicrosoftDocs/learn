@@ -1,20 +1,7 @@
 ## Resolution of module problem
 
-<!--Marjan, I believe the summary should contain the following:
-
-What did Contoso want to do?
-What was the problem it was facing?
-How did Azure Sentinel help in resolving the problem?
-What was the difference earlier when they did not use playbooks?
-
-Can you please provide a few lines according to that template? Thanks-->
->
-<!--Anu, i will have to rewrite the lab steps, and that will impact the summary section>
-
-Contoso SecOps can now react more quickly to security incidents by using Azure Sentinel SOAR capabilities.
-Sentinel playbooks are based on Logic Apps with an Azure Sentinel connector and provide near real-time responses.
-In this module, you learned how to create Sentinel playbooks that can respond near real time on a security thread.
-You also learned how to start a playbook on demand as response to investigation on a security alert.
+Contoso SecOps wanted to improve their response time to security incidents and prevent future incidents. Contoso decides to use Azure Sentinel playbooks, which are based on Logic Apps with an Azure Sentinel connector to provide near real-time responses.
+In this module, you learned how to create Sentinel playbooks that can respond almost in real time on a security thread. You also learned how to start a playbook on demand as response to investigation on a security alert.
 
 ## Learn more
 

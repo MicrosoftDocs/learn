@@ -29,11 +29,12 @@ products:
 - azure
 units:
 - learn.azure.threat-response-sentinel-playbooks.1-introduction
-- learn.azure.threat-response-sentinel-playbooks.2-playbook-overview
+- learn.azure.threat-response-sentinel-playbooks.2-exercise-setup
+- learn.azure.threat-response-sentinel-playbooks.3-playbook-overview
 - learn.azure.threat-response-sentinel-playbooks.4-playbook-trigger
-- learn.azure.threat-response-sentinel-playbooks.4-playbook-on-demand
-- learn.azure.threat-response-sentinel-playbooks.5-exercise-create-playbook
-- learn.azure.threat-response-sentinel-playbooks.6-summary
+- learn.azure.threat-response-sentinel-playbooks.5-playbook-on-demand
+- learn.azure.threat-response-sentinel-playbooks.6-exercise-create-playbook
+- learn.azure.threat-response-sentinel-playbooks.7-summary
 badge:
   uid: learn.learn.azure.threat-response-sentinel-playbooks
 

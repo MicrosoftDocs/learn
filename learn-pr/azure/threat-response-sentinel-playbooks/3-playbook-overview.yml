@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You need to create a Azure Sentinel playbook. You create a logic app and start Logic Apps Designer. Which of the following connector should you use as a trigger to your playbook?"
+  - content: "An administrator needs to create a Azure Sentinel playbook. The administrator creates a logic app and starts Logic Apps Designer. Which of the following connector should the administrator use as a trigger to your playbook?"
     choices:
     - content: "Office 365 connector"
       isCorrect: false
