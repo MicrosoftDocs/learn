@@ -1,4 +1,4 @@
-In this module you’ve learned how to perform threat hunting using the tools available in Azure Sentinel, including proactively identifying threat behaviors using Azure Sentinel queries. You've also continued the hunt using bookmarks and livestream to identify specific account usage patterns for Contoso's Azure environment.
+In this module you’ve learned how to perform threat hunting using the tools available in Azure Sentinel, including proactively identifying threat behaviors using Azure Sentinel queries. You've also continued the hunt using bookmarks and livestream to identify specific account usage patterns for Contoso's Azure environment.<!-- Review the Problems pane to fix problems such as trailing spaces, multiple blanks, etc. -->
 
 <!-- Jason: Problem, Learned, Solution/Product. Maybe something like this... 
 

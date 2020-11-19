@@ -1,6 +1,6 @@
 ## Exercise: Hunt threats with Azure Sentinel
-
-As a security engineer working for Contoso, you recently notice that a significant number of VMs has been deleted from your Azure subscription. You want to simulate a deleted VM, analyze this occurrence and understand the the key elements of the potential threat in Azure Sentinel.
+<!-- Review errors in the Problems pane at the bottom." -->
+As a security engineer working for Contoso, you recently notice that a significant number of VMs has been deleted from your Azure subscription. You want to simulate a deleted VM, analyze this occurrence and understand the key elements of the potential threat in Azure Sentinel.
 In this exercise, you will delete a VM, manage threat hunting queries, and save key findings with bookmarks.
 
 - Delete a VM
@@ -15,12 +15,12 @@ In this exercise, you will delete a VM, manage threat hunting queries, and save 
 In this task, you'll delete a VM to test rule detection and incident creation.
 
 1. In the Azure portal, search for and select **Virtual machines**.
-2. On the Virtual machines page, select the checkbox beside the virtual machine labeled **simple-vm**, and then select **Delete** from the toolbar.
-3. In the **Delete Resources** pane, type **yes** in the **Confirm delete** field and then select **Delete**.
+2. On the Virtual machines page, select the check box<!-- Remember that per MS Style: "Use check box, not box or checkbox, to refer to a check box in UI." --> beside the virtual machine labeled **simple-vm**, and then select **Delete** from the toolbar.
+3. In the **Delete Resources** pane, type<!-- Type is a non-accessibility word, as not everyone uses a keyboard. Search and replace with "enter." --> **yes** in the **Confirm delete** field and then select **Delete**.
 
 ## Task 2: Manage Azure Sentinel threat hunting queries
 
-In this task, you'll create and manage threat hunting queries to view events related to deleting the VM in task 1. It may take up to 5 minutes after deleting the VM for the event to appear in Azure Sentinel.
+In this task, you'll create and manage threat hunting queries to review events related to deleting the VM in task 1. It may take up to 5 minutes after deleting the VM for the event to appear in Azure Sentinel.
 
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Sentinel workspace.
 2. On the **Azure Sentinel** blade, on the menu bar, in the **Threat management** section, select **Hunting**.
@@ -46,13 +46,13 @@ In this task, you'll create and manage threat hunting queries to view events rel
 8. On the Logs page, in the Results section, select the event listed. It should have **{ "action": "Microsoft.Compute/virtualMachines/delete"** in the Authorization column. This is the event from the Azure Activity log that indicates the VM was deleted.
 9. Remain on this page for the next task.
 
-## Task 3: Save key findings with bookmarks.
+## Task 3: Save key findings with bookmarks
 
 In this task, you will use bookmarks to save events and do more hunting.
 
-1. On the **Logs** page, in the **Results** section, select the checkbox beside the event listed and then select **Add bookmark**.
+1. On the **Logs** page, in the **Results** section, select the check box beside the event listed and then select **Add bookmark**.
 2. In the **Add bookmark** pane, select **Create**.
-3. At the top of the page, select **Azure Sentinel** on the breadcrumb trail.
+3. At the top of the page, select **Azure Sentinel** on the breadcrumb trail<!-- Is there another phrase we could use besides "breadcrumb trail?" It might not globalize well. -->.
 4. On Hunting page, select the Bookmarks tab.
 5. In the list of bookmarks, select the bookmark that begins with **Deleted VMs**.
 6. In the details page, select **Investigate**.
