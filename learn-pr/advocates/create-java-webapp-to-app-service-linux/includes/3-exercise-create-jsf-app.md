@@ -140,7 +140,7 @@ Create a `beans.xml` file under the `src/main/WEB-INF` directory and describe th
 
 ### Enable JSF
 
-Next, to recognize all files with the `xhtml` extension as JSF Facelets, make the following settings for `web.xml` under the `WEB-INF` directory.
+Next, to recognize all files with the `xhtml` extension as JSF Facelets, make the following changes to `web.xml` under the `WEB-INF` directory.
 
    ```xml
 <?xml version="1.0" encoding="UTF-8"?>
