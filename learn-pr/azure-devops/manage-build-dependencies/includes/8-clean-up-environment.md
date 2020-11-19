@@ -13,7 +13,7 @@ At the end of each sprint, or work iteration, you and your team might hold a ret
 
 To complete the work item:
 
-1. From Azure DevOps, go to **Boards**, and then select **Boards** from the menu.
+1. From Azure DevOps, go to **Boards**, and from the menu, select **Boards**.
 1. Move the **Move model data to its own package** work item from the **Doing** column to the **Done** column.
 
     ![Screenshot of Azure Boards, showing the card in the Done column](../media/8-azure-boards-wi6-done.png)
@@ -28,22 +28,22 @@ Choose one of the following options.
 
 ### Option 1: Disable the pipeline
 
-This option disables the pipeline so that it doesn't process further build requests. You can re-enable the build pipeline later if you want to. Choose this option if you want to keep your Azure DevOps project and your build pipeline for future reference.
+This option disables the pipeline so that it doesn't process further build requests. You can re-enable the build pipeline later if you want to. Select this option if you want to keep your Azure DevOps project and your build pipeline for future reference.
 
 To disable the pipeline:
 
 1. In Azure Pipelines, navigate to your pipeline.
-1. From the drop-down menu, select **Settings**:
+1. From the dropdown, select **Settings**.
 
     ![The Settings menu option in Azure Pipelines](../../shared/media/azure-pipelines-settings-button.png)
-1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
+1. Under **Processing of new run requests**, select **Disabled**, and then select **Save**.
 
     Your pipeline will no longer process build requests.
 1. Repeat the process for the second pipeline.
 
 ### Option 2: Delete the Azure DevOps project
 
-This option deletes your Azure DevOps project, including what's on Azure Boards and your build pipeline. In future modules, you'll be able to run another template that brings up a new project in a state where this one leaves off. Choose this option if you don't need your Azure DevOps project for future reference.
+This option deletes your Azure DevOps project, including what's on Azure Boards and your build pipeline. In future modules, you'll be able to run another template that brings up a new project in a state where this one leaves off. Select this option if you don't need your Azure DevOps project for future reference.
 
 To delete the project:
 
@@ -56,6 +56,6 @@ To delete the project:
 1. From the **Project details** area, scroll to the bottom, and select **Delete**.
 
     ![Screenshot of Azure DevOps showing the Delete button](../../shared/media/azure-devops-delete-project.png)
-1. From the window that appears, enter the project name and select **Delete** a second time.
+1. From the window that appears, enter the project name, and select **Delete** a second time.
 
     Your project is now deleted.
