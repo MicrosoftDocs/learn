@@ -16,11 +16,11 @@ In this unit, you'll:
 
 1. Clear the **Log Analytics workspaces** filter at the top.
 
-    :::image type="content" source="../media/5-clear-log-analytics-filter.png" alt-text="Screen shot of clearing Log Analytics workspaces filter.":::
+    :::image type="content" source="../media/5-clear-log-analytics-filter.png" alt-text="Screen shot of clearing Log Analytics workspaces filter." lightbox="../media/5-clear-log-analytics-filter.png":::
 
 1. Select **Virtual Machine Scale Sets** on the far left, underneath **All Queries**.
 
-    :::image type="content" source="../media/5-virtual-machine-scale-set-queries.png" alt-text="Screen shot of Virtual Machine Scale Set queries.":::
+    :::image type="content" source="../media/5-virtual-machine-scale-set-queries.png" alt-text="Screen shot of Virtual Machine Scale Set queries." lightbox="../media/5-cpu-usage-trends.png":::
 
 1. Select the **Chart CPU usage trends by computer** query.
 
@@ -35,7 +35,7 @@ In this unit, you'll:
     1. Looks at all data values ingested over the last hour underneath the Processor namespace.
     1. Returns the rounded average value in 5 minute intervals for both machines.
 
-    :::image type="content" source="../media/5-cpu-trends-timechart.png" alt-text="Screenshot showing utilization percentage for the processor namespace." lightbox="../media/5-cpu-trends-timechart.png":::
+    :::image type="content" source="../media/5-cpu-trends-timechart.png" alt-text="Screenshot showing average value for CPU usage trends." lightbox="../media/5-cpu-trends-timechart.png":::
 
 ## Edit existing query and analyze results
 
@@ -49,7 +49,7 @@ Let's take the query you just used and make an edit to build a different data vi
     1. Takes data from the InsightsMetrics table.
     1. Looks at all data values ingested over the last hour underneath the Processor namespace.
     1. Returns the rounded maximum value in 5 minute intervals for both machines.
-    :::image type="content" source="../media/5-cpu-trends-max.png" alt-text="Screenshot showing arg_max operator vs. average." lightbox="../media/5-cpu-trends-max.png":::
+    :::image type="content" source="../media/5-cpu-trends-max.png" alt-text="Screenshot showing maximum value vs. average value for CPU usage trends." lightbox="../media/5-cpu-trends-max.png":::
 
     Each of these visualizations can be pinned to a dashboard by selecting **Pin to dashboard** at the top and then specify the following details:
 

@@ -81,11 +81,11 @@ In this unit, you'll:
 
 1. Review the map, which displays dependencies like processes running, ports open, connection details, health of the virtual machine, machine properties, and Azure virtual machine properties.
 
-    :::image type="content" source="../media/3-azure-monitor-vms-map.png" alt-text="Azure Monitor for VMs screenshot, showcasing dependences and information about virtual machine." lightbox="../media/3-azure-monitor-vms-map.png":::
+    :::image type="content" source="../media/3-azure-monitor-vms-map.png" alt-text="Screen shot of Azure Monitor map, showcasing dependencies and information about virtual machine." lightbox="../media/3-azure-monitor-vms-map.png":::
 
 1. Next, select **Performance** at the top, right next to **Map**.
 
-    :::image type="content" source="../media/3-virtual-machine-insights.png" alt-text="Screen shot after enabling Azure Monitor for VMs." lightbox="../media/3-virtual-machine-insights.png":::
+    :::image type="content" source="../media/3-virtual-machine-insights.png" alt-text="Screen shot after of performance after enabling Azure Monitor for VMs." lightbox="../media/3-virtual-machine-insights.png":::
 
 1. Explore the different graphs for: 
     - Logical Disk Performance
@@ -110,4 +110,4 @@ In this unit, you'll:
 
 1. The logs section of a Log Analytics workspace opens with a pre-populated query showing the data being collected.
 
-    :::image type="content" source="../media/3-insights-metrics-log-analytics.png" alt-text="Screen shot after selecting the InsightsMetrics table and Log Analytics opening up for further query writing." lightbox="../media/3-insights-metrics-log-analytics.png":::
+    :::image type="content" source="../media/3-insights-metrics-log-analytics.png" alt-text="Screen shot after selecting the InsightsMetrics table and Log Analytics opens up for further query writing." lightbox="../media/3-insights-metrics-log-analytics.png":::
