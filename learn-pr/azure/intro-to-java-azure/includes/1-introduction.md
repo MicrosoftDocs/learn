@@ -8,7 +8,7 @@ This module is for Java Developers and System Administrators with experience wit
 
 ## Learning objectives
 
-In this module, you will:
+By the end of this module, you will be able to:
 
 - Differentiate between types of Java applications.
 - Explain the opportunities for Java developers on Azure.
