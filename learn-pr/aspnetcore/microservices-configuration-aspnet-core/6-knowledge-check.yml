@@ -30,12 +30,12 @@ quiz:
           explanation: "Azure App Configuration is a centralized configuration service useful in microservices apps. In an ASP.NET Core app, Azure App Configuration is registered as another configuration provider."
     - content: "`<feature>` tag part of the `Microsoft.FeatureManagement.AspNetCore` NuGet package serves what purpose in ASP.NET Core Razor pages?"
       choices:
-        - content: "`<feature>` tags are irrelevant to ASP.NET Core Razor Pages. They are added to the Angular view to render content based on a feature's state."
+        - content: "`<feature>` tags are irrelevant to ASP.NET Core Razor Pages. They're added to the Angular view to render content based on a feature's state."
           isCorrect: false
           explanation: "`<feature>` tags are a feature specific to ASP.NET Core Razor pages that help render content based on a feature's state."
         - content: "`<feature>` tags are used to conditionally render content based on a feature's state in ASP.NET Core Razor Pages. "
           isCorrect: true
-          explanation: "The `<feature>` tag can also be used to show content if any or all features in a list are enabled. To display alternate content when the requirements are not met the `negate` attribute can be used."
+          explanation: "The `<feature>` tag can also be used to show content if any or all features in a list are enabled. To display alternate content when the requirements aren't met, the `negate` attribute can be used."
     - content: Which of the following statements is **NOT** true about Azure App Configuration?
       choices:
         - content: Azure App Configuration provides a service to centrally manage application settings and feature flags.
@@ -44,7 +44,7 @@ quiz:
         - content: The easiest way to add an App Configuration store to your .NET Core app is through a client library provided by Microsoft.
           isCorrect: false
           explanation: "The NuGet package `Microsoft.Azure.AppConfiguration.AspNetCore` can be added to your projects to configure the Azure Configuration provider for your ASP.NET Core app."
-        - content: Azure App Configuration does not encrypt my app settings.
+        - content: Azure App Configuration doesn't encrypt your app settings.
           isCorrect: true
           explanation: "App Configuration encrypts all key values it holds, and it encrypts network communication. Key names and labels are used as indexes for retrieving configuration data and aren't encrypted."
         - content: Feature Management can be used to test a new business functionality in production.
