@@ -62,7 +62,7 @@ Those criteria can be one or more of:
 - Approved application
 - Need for an app protection policy
 
-If your organization uses Azure Multi-Factor Authentication, users don't have to do multifactor authentication when they're using a device that's mobile device management (MDM) compliant and Azure AD joined. You can select the option **Require one of the selected controls** with your grant controls selected. If you need extra security for something like a payroll app, select **Require all the selected controls** to require multifactor authentication and a compliant device. 
+If your organization uses Azure AD Multi-Factor Authentication, users don't have to do multifactor authentication when they're using a device that's mobile device management (MDM) compliant and Azure AD joined. You can select the option **Require one of the selected controls** with your grant controls selected. If you need extra security for something like a payroll app, select **Require all the selected controls** to require multifactor authentication and a compliant device. 
 
 >[!div class="mx-imgBorder"]
 >![Screenshot of the access control grant settings with the options selected: Require multifactor authentication, Require device compliant, and Require one of the selected controls.](../media/2-access-controls-grant.png)
@@ -74,7 +74,7 @@ Many organizations have common access concerns that conditional access policies 
 - Requiring multifactor authentication for users who have administrative roles.
 - Requiring multifactor authentication for Azure management tasks.
 - Blocking sign-ins for users who are trying to use older authentication protocols.
-- Requiring trusted locations for Azure Multi-Factor Authentication registration.
+- Requiring trusted locations for Azure AD Multi-Factor Authentication registration.
 - Blocking or granting access from specific locations.
 - Blocking risky sign-in behaviors.
 - Requiring organization-managed devices for specific applications.
