@@ -1,8 +1,8 @@
 The **Publish** wizard in the Azure Functions template provides the most straightforward way to deploy Azure Functions, especially for testing purposes.
 
-In the luxury watch online website scenario, you decide to use Visual Studio to deploy your functions to an Azure Functions App in the cloud. First, you'll create an Azure Function App, and you'll use the **Publish** wizard in Visual Studio to deploy your functions.
+In the luxury watch online website scenario, you decide to use Visual Studio to deploy your functions to an Azure Functions App in the cloud. First, you'll create an Azure Function App, and to deploy your functions, in Visual Studio, you'll use the **Publish** wizard.
 
-In this exercise, you'll see how to use the Azure portal to create an Azure Functions App. Then, you'll deploy the **WatchInfo** function. Finally, you'll test the function to verify that it has been deployed correctly.
+In this exercise, you'll see how to use the Azure portal to create an Azure Functions App. Then, you'll deploy the **WatchInfo** function. Lastly, you'll test the function to verify that it has been deployed correctly.
 
 ## Create an Azure Functions App using the Azure portal
 
@@ -18,10 +18,10 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
     <!-- [!include[](../../includes/functions-classic-workaround.md)] -->
 
-1. In the **Function App** window, specify the following settings:
+1. In the **Function App** window, specify the following settings.
 
     > [!NOTE]
-    > The function app must have a unique name. We suggest using something like **\<*your name or initials*\>watchfunctions**. Use this name wherever you see *\<your-function-app-name\>* in this exercise.
+    > The function app must have a unique name. We suggest using something like **\<*your name or initials*\>watchfunctions**. In this exercise, use this name wherever you see *\<your-function-app-name\>*.
 
     | Property  | Value  |
     |---|---|
@@ -34,32 +34,32 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
     | Runtime Stack | .NET |
     | Storage | Create new, accept the default name |
 
-1. Click **Create**, and wait while the function app is created before continuing.
+1. Select **Create**, and wait while the function app is created before continuing.
 
 ## Deploy the WatchInfo function to the Azure Functions App
 
 1. On your desktop, return to Visual Studio.
 
-1. In the **Solution Explorer** window, right-click the **WatchPortalFunction** project, and then click **Publish**.
+1. In the **Solution Explorer** window, right-click the **WatchPortalFunction** project, and then select **Publish**.
 
     :::image type="content" source="../media/5-start-publish-from-visual-studio.png" alt-text="Screenshot of Visual Studio, showing the Publish option for the WatchPortalFunctions project." loc-scope="vs":::
 
-1. In the **Pick a publish target** window, under **Azure App Service**, click **Select Existing**, and then click **Publish**
+1. In the **Pick a publish target** window, under **Azure App Service**, select **Select Existing**, and then select **Publish**.
 
     :::image type="content" source="../media/5-pick-a-publish-target.png" alt-text="Screenshot of the Pick a public target window. The user has chosen the Select Existing option." loc-scope="vs":::
 
-1. In the **App Service** window, select your Azure account. If you aren't already signed in to Azure, then click **Add an account** first and sign in.
+1. In the **App Service** window, select your Azure account. If you aren't already signed in to Azure, select **Add an account** first, and sign in.
 
     :::image type="content" source="../media/5-add-account.png" alt-text="[Screenshot of the App Service window. The user isn't currently signed in, so needs to click Add an account." loc-scope="vs":::
 
-1. After signing in, enter the following details in the **App Service** window.
+1. After signing in, in the **App Service** window, enter the following details.
 
     | Property  | Value  |
     |---|---|
     | Subscription | Concierge Subscription  |
     | View | Resource Group |
 
-1. In the lower **Search** box, expand the resource group that is displayed, click your Azure Functions App, and then click **OK**. 
+1. In the lower **Search** box, expand the resource group that is displayed, select your Azure Functions App, and then select **OK**.
 
 1. Wait for your functions to be deployed. The **Output** window in Visual Studio shows the progress of the build and publish processes. If everything works, the final two messages should be **Publish Succeeded** and **Publish completed**.
 
@@ -80,11 +80,11 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
     > [!NOTE]
     > The functions are marked as *Read Only*. You cannot modify their settings or configuration from the Azure portal because you published them from Visual Studio. If you need to update either of these functions, make the changes in Visual Studio and publish them again.
 
-1. In the right pane, click the **URL** (highlighted in the image above). A browser window will open, and confirm that the functions app is up and running.
+1. In the right pane, select the **URL** (highlighted in the image above). A browser window will open, and confirm that the functions app is up and running.
 
     ![Screenshot of web browser window confirming that the functions app is running.](../media/5-functions-app-running.png)
 
-1. Append the URL of the **watchinfo** function, `api/watchinfo` to the URL in the browser and refresh the display. This invokes the **WatchInfo** function without a query string. You'll see the error response with the message *Please provide a watch model in the query string*.
+1. Append the URL of the **watchinfo** function, `api/watchinfo` to the URL in the browser, and refresh the display. This invokes the **WatchInfo** function without a query string. You'll see the error response with the message *Please provide a watch model in the query string*.
 
     :::image type="content" source="../media/5-function-error.png" alt-text="Screenshot of web browser window showing the error message from the function." loc-scope="other"::: <!-- no-loc -->
 
