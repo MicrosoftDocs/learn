@@ -5,7 +5,7 @@ metadata:
   description: Check your knowledge.
   author: scottaddie
   ms.author: scaddie
-  ms.date: 10/16/2020
+  ms.date: 11/19/2020
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
 title: Knowledge check
@@ -28,14 +28,20 @@ quiz:
         - content: Azure App Configuration
           isCorrect: false
           explanation: "Azure App Configuration is a centralized configuration service useful in microservices apps. In an ASP.NET Core app, Azure App Configuration is registered as another configuration provider."
-    - content: "`<feature>` tag part of the `Microsoft.FeatureManagement.AspNetCore` NuGet package serves what purpose in ASP.NET Core Razor pages?"
+    - content: "The `<feature>` Tag Helper serves what purpose in ASP.NET Core Razor pages?"
       choices:
-        - content: "`<feature>` tags are irrelevant to ASP.NET Core Razor Pages. They're added to the Angular view to render content based on a feature's state."
+        - content: The "`<feature>` tag is irrelevant to ASP.NET Core Razor Pages. It's used in an Angular view to render content based on a feature's state."
           isCorrect: false
           explanation: "`<feature>` tags are a feature specific to ASP.NET Core Razor pages that help render content based on a feature's state."
-        - content: "`<feature>` tags are used to conditionally render content based on a feature's state in ASP.NET Core Razor Pages. "
+        - content: The "`<feature>` tag conditionally renders content based on a feature's state in ASP.NET Core Razor Pages."
           isCorrect: true
           explanation: "The `<feature>` tag can also be used to show content if any or all features in a list are enabled. To display alternate content when the requirements aren't met, the `negate` attribute can be used."
+        - content: "The `<feature>` tag defines a new feature flag, in the Razor markup, to be used in Azure App Configuration."
+          isCorrect: false
+          explanation: "Feature flags are defined either with the Feature Management library or in Azure App Configuration."
+        - content: "The `<feature>` tag defines a new feature flag, in the project file, to be used in Azure App Configuration."
+          isCorrect: false
+          explanation: "The `<feature>` tag is only recognized in an ASP.NET Core Razor Pages project's CSHTML files."
     - content: Which of the following statements is **NOT** true about Azure App Configuration?
       choices:
         - content: Azure App Configuration provides a service to centrally manage application settings and feature flags.
@@ -50,12 +56,3 @@ quiz:
         - content: Feature Management can be used to test a new business functionality in production.
           isCorrect: false
           explanation: "Use feature flags to grant early access to new functionality in production. For example, you can limit access to team members or to internal beta testers."
-
-# 7. Mark all the correct statements about the Azure App Configuration store.
-
-#     - You can handle any configuration item in the App Configuration store. - **CORRECT ANSWER**
-#     - You can only handle a configuration value in App Configuration if it's been already defined in the ConfigMap.
-#     - You need to restart the server application to take new values from the App Configuration store.
-#     - You can use and App Configuration store in an ASP.NET Core application without any code change.
-#     - You have to add the AppConfiguration provider during application startup to get values from the App Configuration store. - **CORRECT ANSWER**
-
