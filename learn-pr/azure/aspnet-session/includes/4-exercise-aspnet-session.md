@@ -110,7 +110,7 @@ In this exercise, you'll create an instance of the Azure Cache for Redis service
         <add name="MySessionStateStore" 
              type="Microsoft.Web.Redis.RedisSessionStateProvider" 
              host="<youralias>-workshop-cache.redis.cache.windows.net" 
-             accessKey="<primarykey"> 
+             accessKey="<primarykey>"
              ssl="true" />
       </providers>
     </sessionState>
