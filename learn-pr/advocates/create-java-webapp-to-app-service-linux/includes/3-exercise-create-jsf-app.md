@@ -265,6 +265,8 @@ The directory structure after implementing the program is as follows.
 
 ### Run in local tomcat environment
 
+If you installed Tomcat 9.0.x on your local environment, proceed the following step? If you don't install the Tomcat, then go to next section.
+
 Compile the source code and run it in a locally installed Tomcat environment.
 Execute the following command.
 
