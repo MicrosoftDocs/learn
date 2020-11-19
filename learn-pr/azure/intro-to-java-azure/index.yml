@@ -2,14 +2,14 @@
 uid: learn.azure.intro-to-java-azure
 metadata:
   title: Introduction to Java on Azure
-  description: Goal of this module is to welcome you as Java Developers on Azure. In this module, you'll begin to discover the opportunities for Java developers on Azure.
+  description: Goal of this module is to welcome Java Developers to Azure. In this module, you'll begin to discover many opportunities for Java developers on Azure.
   ms.date: 11/16/2020
   author: SandraAhlgrimm
   ms.author: sakriema
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Java on Azure
-summary: In this module, we demonstrate Java's importance, and discuss its various appearances. Finally, we'll give an overview of typical deployment offers for your Java Solutions on Azure.
+summary: In this module, we discuss Java's various frameworks and architectures. Finally, we'll give an overview of typical deployment offers for your Java solutions on Azure.
 abstract: |
  By the end of this module, you will be able to:
 
