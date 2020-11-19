@@ -15,7 +15,7 @@ First, you'll create a resource group, the virtual network, and subnets for your
 1. To create a variable to store your resource group name, and a resource group for your resources, in the Cloud Shell, run the following command. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
 
     ```azurecli
-    rg=<resource group name>
+    $rg=<resource group name>
 
     az group create --name $rg --location <location>
     ```
@@ -195,7 +195,7 @@ As you've now experienced, the default rules in your **ERP-SERVERS-NSG** network
 
 1. Enter the password you used when you created the VM.
 
-1. tT close the **AppServer** session, enter `exit`.
+1. Close the **AppServer** session, enter `exit`.
 
 1. To check whether you can now connect to your **DataServer** VM, in the Cloud Shell, run the following command.
 

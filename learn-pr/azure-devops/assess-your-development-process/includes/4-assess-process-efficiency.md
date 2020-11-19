@@ -44,7 +44,9 @@ Eventually, Tim deploys the feature and the feature makes it to the customer her
 
 Now we can look at the key performance metrics and see how we measure up.
 
-*Total lead time* is the time it takes for a feature to make it to the customer. *Process time* is the time spent on a feature that has value to the customer. The *activity ratio* is process time divided by total lead time:
+*Total lead time* is the time it takes for a feature to make it to the customer. Here, the total time is 22 days. *Process time* is the time spent on a feature that has value to the customer. Here, the process time includes four days for coding plus one day to deploy the feature, which gives a total of five days.
+
+The *activity ratio* is process time divided by total lead time:
 
 $${Activity\ ratio = }{\dfrac{Process\ time}{Total\ lead\ time}}$$
 
@@ -54,7 +56,7 @@ Substitute our numbers and we get:
 
 $${Activity\ ratio\ =\ }{\dfrac{5\ days}{22\ days}}{ = .23}$$
 
-Multiply the result by 100% and you get **23%**.
+Multiply the result by 100 and you get **23%**.
 
 As you can see, we have a lot of room for improvement. And taking 22 days to develop a feature is too long.
 

@@ -1,9 +1,12 @@
 ## Step 1: Open the project
 
-1. Start Visual Studio Code.
-2. Select **Open folder**, and open the **Azure-Sphere** lab folder.
-3. Open the **Lab_3_Device_Twins** folder.
-4. Choose **Select Folder** to open the project.
+1. Start Visual Studio Code to open your project.
+2. Click **Open folder**.
+3. Open the **Azure-Sphere lab** folder.
+4. Open the **Lab_3_Device_Twins** folder.
+5. Click **Select Folder** or the **OK** button to open the project.
+
+------
 
 ## Step 2: Set your developer board configuration
 
@@ -12,18 +15,18 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 The default developer board configuration is for the Avnet Azure Sphere Starter Kit. If you have this board, there's no additional configuration required.
 
 1. Open the **CMakeList.txt** file.
-
 2. Add a `#` at the beginning of the set Avnet line to disable it.
-
 3. Uncomment the `set` command that corresponds to your Azure Sphere device developer board.
 
    ```
-   set(AVNET TRUE "AVNET Azure Sphere Starter Kit")                
+   set(AVNET TRUE "AVNET Azure Sphere Starter Kit")
    # set(SEEED_STUDIO_RDB TRUE "Seeed Studio Azure Sphere MT3620 Development Kit (aka Reference Design Board or rdb)")
    # set(SEEED_STUDIO_MINI TRUE "Seeed Studio Azure Sphere MT3620 Mini Dev Board")
    ```
 
 4. Save the file. This will auto-generate the CMake cache.
+
+------
 
 ## Step 3: Configure the Azure IoT connection information
 
@@ -31,13 +34,15 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 2. You'll need to redo the settings for this file. Either copy from Notepad, if you still have it open, or copy from the **app_manifest.json** file that you created in the previous exercise.
 3. Paste the contents of the clipboard into **app_manifest.json** and save the file.
 
+------
+
 ## Step 4: Start the app build deploy process
 
 1. Ensure main.c is open.
-
 2. Select **CMake: [Debug]: Ready** from the Visual Studio Code Status Bar.
-
 3. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application that's now running the Azure Sphere device.
+
+------
 
 ## Step 5: Expected device behavior
 
@@ -45,26 +50,23 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 ![Photo of the Avnet Azure Sphere Kit.](../media/avnet-azure-sphere.jpg)
 
-1. The RGB LED5 starts to blink. In the next section, you'll be setting the desired temperature, which will determine the RGB LED color.
-2. LED4 turns yellow when connected to Azure.
-3. LED3 blinks when telemetry is sent to IoT Hub.
-4. Press **Button A** or **Button B** on the device to change the blink rate of LED5, and to update the **Actual Temperature** device twin property in IoT Hub.
+1. The WLAN LED will blink every 5 seconds when connected to Azure.
+1. The RGB LED will turn red if the measured temperature is less than the desired temperature, blue if the measured temperature is greater than the desired temperature and green if the measured temperature is the same as the desired temperature.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
 ![Photo of the Seeed Studio Azure Sphere Kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
 
-1. The RGB LED1 starts to blink. In the next section, you'll be setting the desired temperature, which will determine the RGB LED color.
-2. The network LED turns red when connected to Azure.
-3. LED4 blinks blue when telemetry is sent to IoT Hub.
-4. Press **Button A** or **Button B** on the device to change the blink rate of RGB LED1, and to update the **Actual Temperature** device twin property in IoT Hub.
+1. The WLAN LED will blink every 5 seconds when connected to Azure.
+1. The RGB LED will turn red if the measured temperature is less than the desired temperature, blue if the measured temperature is greater than the desired temperature and green if the measured temperature is the same as the desired temperature.
 
 ### Seeed Studio MT3620 Mini Dev Board
 
 ![Photo of the Seeed Studio Mini Azure Sphere Kit.](../media/seeed-studio-azure-sphere-mini.png)
 
-1. The green LED closest to the USB connector starts to blink.
-2. Because this device has no built-in buttons, virtual **Button A** and **Button B** presses are generated every 10 seconds. The blink rate changes and the **Actual Temperature** device twin property in IoT Hub is updated.
+1. The User LED will blink every 5 seconds when connected to Azure.
+
+------
 
 ## Step 6: Display the actual temperature device twin
 
@@ -72,11 +74,8 @@ We're going to use the Azure command-line tool to view and update the IoT hub de
 
 Follow these steps to show the actual temperature recorded by the device:
 
-1. For Azure Sphere devices with buttons, press **Button A** or **Button B**. Virtual button presses are generated for devices without buttons.
-
-2. You need the name of the Azure IoT hub you created. You can get the name from the Azure portal.
-
-3. You need the Azure Sphere device ID. Run the following command from the **Azure Sphere Developer Command Prompt**.
+1. You need the name of the Azure IoT hub you created. You can get the name from the Azure portal.
+2. You need the Azure Sphere device ID. Run the following command from the **Azure Sphere Developer Command Prompt**.
 
    ```
    azsphere dev show-attached
@@ -111,7 +110,7 @@ Follow these steps to show the actual temperature recorded by the device:
     > [!NOTE]
     > IoT Hub requires device IDs to be lowercase. The bash command `"${DEVICE_ID,,}"` in the `device-twin show` command converts the device ID to lowercase.
 
-9. Review the device twin `reported` section and look for the updated `ActualTemperature` property.
+9. Review the device twin `reported` section and look for the updated `ReportedTemperature` property.
 
    ```
    {
@@ -135,12 +134,12 @@ Follow these steps to show the actual temperature recorded by the device:
        "reported": {
          "$metadata": {
            "$lastUpdated": "2020-06-22T05:52:58.8264962Z",
-           "ActualTemperature": {
+           "ReportedTemperature": {
              "$lastUpdated": "2020-06-22T05:52:58.8264962Z"
            }
          },
          "$version": 2,
-         "ActualTemperature": 29.0
+         "ReportedTemperature": 29.0
        }
      },
      "status": "enabled",
@@ -163,9 +162,9 @@ Setting the desired temperature is like setting a thermostat in a room. A desire
 
 When the temperature sensor is read on the Azure Sphere device, it's compared to the desired temperature.
 
-- If the temperature is greater than the desired temperature, the blinking LED turns blue to indicate the cooler needs be turned on.
-- If the temperature is less than the desired temperature, the blinking LED turns red to indicate the heater needs to be turned on.
-- If the temperature is the same as the desired temperature, the blinking LED turns green to indicate no action is required.
+- If the temperature is greater than the desired temperature, the RGB LED turns blue to indicate the cooler needs be turned on.
+- If the temperature is less than the desired temperature, the RGB LED turns red to indicate the heater needs to be turned on.
+- If the temperature is the same as the desired temperature, the RGB LED turns green to indicate no action is required.
 
 The Avnet Azure Sphere Starter Kit has a built-in temperature sensor. For other boards, a random temperature 25 +/- 5 degrees celsius is generated.
 
@@ -176,13 +175,13 @@ To set the desired temperature:
 2. Run the IoT hub device twin update.
 
    ```
-   az iot hub device-twin update --device-id "${DEVICE_ID,,}" -n $HUB_NAME --set properties.desired='{"DesiredTemperature":{"value":25}}'
+   az iot hub device-twin update --device-id "${DEVICE_ID,,}" -n $HUB_NAME --set properties.desired='{"DesiredTemperature":25}'
    ```
 
     > [!NOTE]
     > IoT Hub requires device IDs to be lowercase. The bash command `"${DEVICE_ID,,}"` in the `device-twin show` command converts the device ID to lowercase.
 
-3. The blinking LED on the Azure Sphere device might change color, depending on the desired temperature you set.
+3. The RGB LED on the Azure Sphere device will change color, depending on the desired temperature you set.
 
 4. Show the latest state of the device twin. Review the `desired` and `reported` sections for the `DesiredTemperature` property.
 
@@ -194,4 +193,8 @@ To set the desired temperature:
 
 6. Close Cloud Shell by typing `exit`.
 
-Now you can close Visual Studio.
+------
+
+## Close Visual Studio
+
+Now close Visual Studio.

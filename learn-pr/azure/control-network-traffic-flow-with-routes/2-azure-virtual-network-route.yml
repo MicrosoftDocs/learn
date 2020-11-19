@@ -32,7 +32,7 @@ quiz:
         explanation: "This answer is incorrect. Custom routes aren't used to control access to resources in other virtual networks."
     - content: "Why might you use virtual network peering?"
       choices:
-      - content: "To connect virtual networks together in the same region."
+      - content: "To connect virtual networks together in the same region or across regions."
         isCorrect: true
         explanation: "This is the correct answer. Virtual network peering is used to connect multiple virtual networks together. Once peered, the networks become one network, and resources across virtual networks can communicate with one another."
       - content: "To assign public IP addresses to all of your resources across multiple virtual networks."
