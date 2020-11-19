@@ -128,7 +128,7 @@ WHERE
 
 ## Work with header rows in a file
 
-The following query shows how to a read a file with a header row, with a Unix-style new line, and comma-delimited columns, as shown in the following file preview.
+The following query shows how to read a file with a header row, with a Unix-style new line, and comma-delimited columns, as shown in the following file preview.
  
 > [!div class="mx-imgBorder"]
 > ![The source file to omit headers in a file](../media/omit-headers-new-file.png)
