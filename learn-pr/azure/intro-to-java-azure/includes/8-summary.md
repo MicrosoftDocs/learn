@@ -1,8 +1,6 @@
-Even though Microsoft hasn't invented Java, we don't doubt its relevance. Java is one of the most used languages and platforms among enterprises. 
+In this module, we discussed the many features and benefits of Java on Azure.
 
-We love Java. So it's only natural that Azure supports Java deployments in various ways. We've seen a simple deployment in a pet clinic example that uses Azure App Service. You might have tested it yourself.
-
-After you identify the type of your Java application, you can choose among suitable Azure services. An integration with other evergreen Azure services is possible. You can benefit from the global high availability that Azure offers.
+We also deployed a sample application by using Maven, Spring, and Azure App Service.
 
 ## Next steps
 

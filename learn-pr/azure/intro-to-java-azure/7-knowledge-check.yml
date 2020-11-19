@@ -28,23 +28,23 @@ quiz:
       explanation: "Whether you're at the beginning of a _lift and shift_ migration toward the cloud or you start cloud native, Azure provides various services that you can choose from."
   - content: "Maven helps to automatically deploy the application to Azure App Service."
     choices:
-    - content: "No. You must go through the portal to deploy an application to Azure App Service."
+    - content: "No. The Azure portal is the only way to deploy an application to Azure App Service."
       isCorrect: false
       explanation: "Even though you can easily deploy the Maven or Gradle packaged application via the Azure portal, it might not be the only solution that Azure provides for you."
     - content: "Yes. Maven can not only package the application, but also add the required plug-in and run the deployment to Azure App Service."
       isCorrect: true
-      explanation: "The statement is correct. Maven is a powerful tool. So is Gradle."
+      explanation: "The statement is correct. Maven is a powerful build tool."
   - content: "What types of Java applications can be deployed on Azure?"
     choices:
     - content: "Desktop applications"
       isCorrect: false
-      explanation: "Desktop applications do have to run on the client side. You can spin up a VM on Azure to do so. But didn't you miss something?"
+      explanation: "Yes, but did you miss some other choices?"
     - content: "Microservices"
       isCorrect: false
-      explanation: "Microservices are cloud-native applications. But didn't you miss something?"
-    - content: "Monolithic applications"
+      explanation: "Yes, but did you miss some other choices?"
+    - content: "Monolithic application"
       isCorrect: false
-      explanation: "Monolithic applications might be able to lift and shift toward Azure."
+      explanation: "Yes, but did you miss some other choices?"
     - content: "All the above"
       isCorrect: true
-      explanation: "Even though it depends on the specific application, Azure does offer services for all of these applications."
+      explanation: "Even though it always depends on the specific application, Azure offers services for all of these application types."
