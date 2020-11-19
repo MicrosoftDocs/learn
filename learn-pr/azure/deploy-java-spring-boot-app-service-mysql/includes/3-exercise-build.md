@@ -1,8 +1,8 @@
-In this unit, you'll create a basic Spring Boot application by using the Azure CLI and an IDE of your choice to edit the code. You'll use a terminal of your choice to run the code.
+In this unit, you'll create a basic Spring Boot application. You'll use the Azure CLI and an integrated development environment (IDE) of your choice to edit the code. Use a terminal of your choice to run the code.
 
-# Prepare the working environment
+## Prepare the working environment
 
-First, set up some environment variables by using the following commands:
+Set up some environment variables by using the following commands:
 
 ```bash
 AZ_RESOURCE_GROUP=azure-spring-workshop
@@ -13,14 +13,14 @@ AZ_MYSQL_PASSWORD=<YOUR_MYSQL_PASSWORD>
 AZ_LOCAL_IP_ADDRESS=<YOUR_LOCAL_IP_ADDRESS>
 ```
 
-Replace the placeholders with the following values, which are used throughout this article:
+In your code, replace the placeholders with the values in the following table. These values are used throughout this module.
 
 | Variable | Description |
 |-|-|
 | <YOUR_DATABASE_NAME> | The name of your MySQL server. It should be unique across Azure. |
-| <YOUR_AZURE_REGION> | The Azure region you'll use. You can use `eastus` by default, but we recommend that you configure a region closer to where you live. You can have the full list of available regions by entering `az account list-locations` |
-| <YOUR_MYSQL_PASSWORD> | The password of your MySQL database server. That password should have a minimum of eight characters. The characters should be from three of the following categories: English uppercase letters, English lowercase letters, numbers (0-9), and non-alphanumeric characters (!, $, #, %, and so on). |
-| <YOUR_LOCAL_IP_ADDRESS> | The IP address of your local computer, from which you'll run your Spring Boot application. To find it, point your browser to [whatismyip.akamai.com](http://whatismyip.akamai.com/?azure-portal=true). |
+| <YOUR_AZURE_REGION> | The Azure region you'll use. You can use `eastus` by default, but we recommend that you use a region close to where you live. To see the full list of available regions, enter `az account list-locations` |
+| <YOUR_MYSQL_PASSWORD> | The password of your MySQL database server. That password should have a minimum of eight characters. The characters should be from three of the following categories: English uppercase letters, English lowercase letters, numbers (0 through 9), and nonalphanumeric characters (!, $, #, %, and so on). |
+| <YOUR_LOCAL_IP_ADDRESS> | The IP address of the local computer from which you'll run your Spring Boot application. To find the IP address, point your browser to [whatismyip.akamai.com](http://whatismyip.akamai.com/?azure-portal=true). |
 
 Next, create a resource group:
 
@@ -32,17 +32,18 @@ az group create \
 ```
 
 > [!NOTE]
-> We use the `jq` utility, which is installed by default on [Azure Cloud Shell](https://shell.azure.com/) to display JSON data and make it more readable.
-> If you don't like that utility, you can safely remove the `| jq` part of all the commands we'll use.
+> This module uses the `jq` tool, which is installed by default on [Azure Cloud Shell](https://shell.azure.com/) to display JSON data and make it more readable.
+>
+> If you don't want to use the `jq` tool, you can safely remove the `| jq` part of all the commands in this module.
 
-## Create an Azure Database for MySQL instance
+## Create an instance of Azure Database for MySQL
 
-The first thing we'll create is a managed MySQL server.
+Now you'll create a managed MySQL server.
 
 > [!NOTE]
-> If you want to know more about az mysql server create and other Azure CLI commands, you can find a link to documentation at the end of this tutorial".
+> If you want to know more about `az mysql server create` and other Azure CLI commands, you can find a link to the relevant documentation at the end of this module.
 
-Run the following script to create a small Azure MySQL Database with 1 CPU and 2-GB RAM:
+Run the following script to create a small instance of Azure Database for MySQL. The database has 1 CPU and 2 GB of RAM.
 
 ```bash
 az mysql server create \
@@ -56,11 +57,11 @@ az mysql server create \
     | jq
 ```
 
-This command creates a small MySQL server using the variables we setup earlier.
+This script creates a small MySQL server that uses the variables you set up earlier.
 
 ### Configure a firewall rule for your MySQL server
 
-Azure Database for MySQL is secured by default. They have a firewall that doesn't allow any incoming connection. You'll need to add a firewall rule that will allow the local IP address to access the database server.
+Azure Database for MySQL is secured by default. Its firewall allows no incoming connections. You need to add a firewall rule to allow the local IP address to access the database server.
 
 Run the following command to open the server's firewall:
 
@@ -74,7 +75,7 @@ az mysql server firewall-rule create \
     | jq
 ```
 
-Run the following command to allow Firewall access from Azure resources:
+Run the following command to allow firewall access from Azure resources:
 
 ```bash
 az mysql server firewall-rule create \
@@ -87,7 +88,7 @@ az mysql server firewall-rule create \
 
 ### Configure a MySQL database
 
-The MySQL server that you created earlier is empty. It doesn't have any database that you can use with the Spring Boot application. Create a new database called `demo`:
+The MySQL server that you created earlier is empty. It has no database that you can use with the Spring Boot application. Create a new database called `demo`:
 
 ```bash
 az mysql db create \
@@ -99,12 +100,13 @@ az mysql db create \
 
 ## Generate the application by using Spring Initializr
 
-The Spring Initializr is a web application that generates a Spring Boot project structure for you.
-The Spring Initializr doesn’t generate any application code, but it will give you a basic project structure and a Maven build specification.
-Next we'll generate our application scaffold with three dependencies: web, mysql, and data-jpa.
-Notice we don't need to specify Azure dependencies as we plan to run our application locally also.
+Spring Initializr is a web application that generates a Spring Boot project structure for you.
+Spring Initializr doesn't generate any application code, but it gives you a basic project structure and a Maven build specification.
 
-Generate the application on the command line by entering:
+Next you'll generate your application scaffold with three dependencies: `web`, `mysql`, and `data-jpa`.
+You don't need to specify Azure dependencies because you'll run your application locally.
+
+At a command prompt, generate the application:
 
 ```bash
 curl https://start.spring.io/starter.tgz -d dependencies=web,data-jpa,mysql -d baseDir=azure-spring-workshop -d bootVersion=2.3.2.RELEASE -d javaVersion=1.8 | tar -xzvf -
@@ -112,7 +114,7 @@ curl https://start.spring.io/starter.tgz -d dependencies=web,data-jpa,mysql -d b
 
 ### Configure Spring Boot to use Azure Database for MySQL
 
-Open the *src/main/resources/application.properties* file, and add the following properties. Be sure to replace the two `$AZ_DATABASE_NAME` variables and the `$AZ_MYSQL_PASSWORD` variable with the values that you configured at the beginning of this article.
+Open the *src/main/resources/application.properties* file and add some properties. Be sure to replace the two `$AZ_DATABASE_NAME` variables and the `$AZ_MYSQL_PASSWORD` variable with the values that you set up earlier.
 
 ```properties
 logging.level.org.hibernate.SQL=DEBUG
@@ -126,10 +128,10 @@ spring.jpa.hibernate.ddl-auto=create-drop
 ```
 
 > [!WARNING]
-> The configuration property `spring.jpa.hibernate.ddl-auto=create-drop` means that Spring Boot will automatically create a database schema at application start-up, and will try to delete it when it shuts down. This is great for testing, but this shouldn't be used in production!
+> The configuration property `spring.jpa.hibernate.ddl-auto=create-drop` means that Spring Boot will automatically create a database schema at application start-up and will try to delete the database schema when it shuts down. This property is great for testing, but it shouldn't be used in production!
 
 > [!NOTE]
-> We append `?serverTimezone=UTC` to the configuration property `spring.datasource.url`, to tell the JDBC driver to use the UTC date format (or Coordinated Universal Time) when connecting to the database. Otherwise, our Java server would not use the same date format as the database, which would result in an error.
+> You append `?serverTimezone=UTC` to the configuration property `spring.datasource.url`. This setup tells the Java Database Connectivity (JDBC) driver to use the UTC date format (or Coordinated Universal Time) when connecting to the database. Otherwise, our Java server would not use the same date format as the database, which would result in an error.
 
 Now start your application by using the provided Maven wrapper:
 
