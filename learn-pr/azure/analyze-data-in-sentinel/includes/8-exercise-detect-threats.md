@@ -12,7 +12,7 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 
 ### Task 1: Create an analytics rule from the analytics rule wizard 
 
-1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Sentinel workspace.
+1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Azure Sentinel workspace.
 2. On the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
 3. On the **Azure Sentinel | Analytics** blade, select **Create** and then select **Scheduled Query Rule**.
 4. On the **General** page, provide the inputs in the following table, and then select  **Next: Set rule logic**. 
