@@ -1,6 +1,6 @@
 In this unit, you'll configure a Spring Boot application to be deployed via Maven. You'll then deploy the application to an Azure App Service instance. This unit shows the example of a pet clinic.
 
-## Sample application
+## Example application
 
 Clone in your favorite command-line tool.
 
@@ -20,7 +20,7 @@ java -jar target/*.jar
 
 When you open the example in the browser, it should like this:
 
-![Screenshot that shows clicking through the local deployment of the sample pet clinic application.](../media/6-sample.gif)
+![Screenshot that shows clicking through the local deployment of the example pet clinic application.](../media/6-sample.gif)
 
 ## Prepare the example application to be cloud ready
 
@@ -34,7 +34,7 @@ Because Java is platform independent, you're free to choose the OS. But the Java
 </properties>
 ```
 
-The example is using Java 8. So our Azure App Service instance, whether Linux or Windows, should also use Java 8. Because the platform doesn't matter, we'll use Linux for our example.
+The example uses Java 8. So our Azure App Service instance, whether Linux or Windows, should also use Java 8. Because the platform doesn't matter, we'll use Linux for our example.
 
 We have to add some Azure dependencies to the pom.xml file. Adding the dependencies can happen automatically if you run the following command.
 
@@ -126,6 +126,6 @@ mvn package com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
 
 This command runs the tests. It then automatically spins up an Azure App Service instance and deploys the packaged application.
 
-![Screenshot of the deployed sample pet clinic application.](../media/6-deployed.gif)
+![Screenshot of the deployed example pet clinic application.](../media/6-deployed.gif)
 
 Congratulations! The app is successfully deployed to Azure App Service.

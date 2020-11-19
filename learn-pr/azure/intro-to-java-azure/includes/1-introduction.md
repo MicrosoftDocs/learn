@@ -6,7 +6,7 @@ In this module, we look at Java's powerful features and give an overview of Azur
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+By the end of this module, you'll be able to:
 
 - Differentiate between types of Java applications.
 - Explain the opportunities for Java developers on Azure.

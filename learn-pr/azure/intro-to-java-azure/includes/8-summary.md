@@ -1,6 +1,6 @@
 In this module, we discussed the many features and benefits of Java on Azure.
 
-We also deployed a sample application by using Maven, Spring, and Azure App Service.
+We also deployed an example application by using Maven, Spring, and Azure App Service.
 
 ## Next steps
 

@@ -12,7 +12,7 @@ VMs are usually the starting point for *lift and shift*, which is the process to
 
 - **Azure Kubernetes Service** (AKS) is a managed Kubernetes service. Kubernetes is the de facto standard to orchestrate your containerized applications. It's perfect for microservices and for midsized applications. AKS comes with service discovery, autoscaling, and monitoring. Microsoft is a collaborator in Kubernetes projects, such as Virtual Kubelet, Dapr, and Open Application Model.
 
-- **Azure RedHat OpenShift** is the Red Hat-managed variety of Kubernetes.
+- **Azure Red Hat OpenShift** is the Red Hat-managed variety of Kubernetes.
 
 - **Azure Container Instances** is a solution for quick tests, proofs of concept, and sidecar containers.
 
