@@ -2,9 +2,9 @@ In this section, you'll deploy your application to Azure App Service.
 
 ## What is Azure App Service
 
-Azure provides Azure App Service as Platform as a Service as the environment for running Tomcat.
-It features a Window and Linux environments, security, load balancing, autoscaling, and DevOps integration.
-You can leave OS and Tomcat management to Azure, and concentrate on building applications.
+Azure provides Azure App Service as a Platform as a Service for running Tomcat.
+It features a Window and Linux environment, security, load balancing, autoscaling, and DevOps integration.
+You can leave the OS and Tomcat management to Azure, and concentrate on building applications.
 
 :::image type="content" source="../media/app-service-portal-screen.png" alt-text="Azure portal Screen":::
 
@@ -17,7 +17,7 @@ In order to deploy a Java Web Application, you can get a PrimeFaces JSF Web Appl
 git clone https://github.com/yoshioterada/Deploy-PrimeFaces-JSF-Web-App-on-Tomcat-9.0
 ```
 
-Then you can see following files in the directory.
+Then you will see following files in the directory:
 
 ```
 Deploy-PrimeFaces-JSF-Web-App-on-Tomcat-9.0
@@ -48,13 +48,11 @@ Deploy-PrimeFaces-JSF-Web-App-on-Tomcat-9.0
             └── index.xhtml
 ```
 
-
 ## Maven Plugin for Azure App Service
 
 Microsoft provides the `Maven Plugins for Azure Services` to make it easier for Java developers to deploy applications to Azure.
 By using this plugin, you can easily configure and deploy your application to Azure.
 Execute the following command to use `Maven Plugin for Azure App Service`.
-
 
 ### Configure Maven Plugin for Azure App Service
 
@@ -232,16 +230,16 @@ The public URL of the deployed application is displayed in `Successfully deploye
 
 ## Confirm the Log Stream from Command Line
 
-To access the Log Stream, execute the following CLI command?
+To access the Log Stream, execute the following CLI command:
 
 ```azurecli
 az webapp log tail -g azure-javaweb-app -n azure-javaweb-app-1601463451101
 ```
 
-Then you can see the following result.
+Then you can see the following result:
 
 :::image type="content" source="../media/azure-cli-log-stream.png" alt-text="Execution of the Log Stream":::
 
 ## Completed the Exercise
 
-In this module, you learned how to create and package a Java Web Application, how to use the `Maven Plugin for Azure Web Apps` and deploy your application to Azure App Service. These steps are applicable not only for JSF applications but also most Java Web Application.
+In this module, you learned how to create and package a Java Web application, how to use the `Maven Plugin for Azure Web Apps` and deploy your application to Azure App Service. These steps are applicable not only for JSF applications but also most Java Web applications.
