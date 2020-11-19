@@ -13,7 +13,7 @@ summary: Learn how to implement a feature flag in your cloud-native ASP.NET Core
 abstract: |
   In this module, you will:
   - Review ASP.NET Core and Kubernetes app configuration concepts.
-  - Implement real-time feature toggling with the .NET Feature Manager library.
+  - Implement real-time feature toggling with the .NET Feature Management library.
   - Implement a centralized Azure App Configuration store.
 prerequisites: |
   - Familiarity with C# and ASP.NET Core development at the beginner level

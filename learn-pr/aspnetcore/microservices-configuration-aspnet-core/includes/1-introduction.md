@@ -10,7 +10,7 @@ You'll use your own Azure subscription to deploy the resources in this module. T
 ## Learning objectives
 
 - Review ASP.NET Core and Kubernetes app configuration concepts.
-- Implement real-time feature toggling with the .NET Feature Manager library.
+- Implement real-time feature toggling with the .NET Feature Management library.
 - Implement a centralized Azure App Configuration store.
 
 ## Prerequisites

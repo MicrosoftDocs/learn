@@ -1,7 +1,7 @@
 In this module, you:
 
 - Reviewed ASP.NET Core and Kubernetes app configuration concepts.
-- Implemented real-time feature toggling with the .NET Feature Manager library.
+- Implemented real-time feature toggling with the .NET Feature Management library.
 - Implemented a centralized Azure App Configuration store.
 
 [!INCLUDE[de-provision your Azure resources](../../includes/microservices/remove-az-resources.md)]
