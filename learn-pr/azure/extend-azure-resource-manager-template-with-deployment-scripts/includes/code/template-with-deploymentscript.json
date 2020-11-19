@@ -94,9 +94,9 @@
             "properties": {
                 "azPowerShellVersion": "3.0",
                 "scriptContent": "
-                    Invoke-RestMethod -Uri 'https://aka.ms/devops/todo-placeholder' -outfile 'application.json'
+                    Invoke-RestMethod -Uri 'https://raw.githubusercontent.com/smurawski/azure-docs-json-samples/master/mslearn-arm-deploymentscripts-sample/appsettings.json' -outfile 'appsettings.json'
                     $StorageAccount = Get-AzStorageAccount -ResourceGroupName 'learndeploymentscript_exercise_1' | Where-Object {$_.StorageAccountName -like 'storage*'}
-                    $Blob = Set-AzStorageBlobContent -File 'application.json' -Container 'config' -blob 'application.json' -context $StorageAccount.Context
+                    $Blob = Set-AzStorageBlobContent -File 'appsettings.json' -Container 'config' -blob 'appsettings.json' -context $StorageAccount.Context
                     $DeploymentScriptOutputs = @{}
                     $DeploymentScriptOutputs['Uri'] = $Blob.ICloudBlob.Uri
                     $DeploymentScriptOutputs['StorageUri'] = $Blob.ICloudBlob.StorageUri

@@ -158,11 +158,24 @@ curl $uri
 
 You should see the following returned from the above command.
 
-```azurecli
+```json
 {
-    "environment": "testing",
-    "hostname": "testing.tailwindtraders.com",
-    "show-errors": true
+  "environment": "production",
+  "hostname": "tailwindtraders.com",
+  "Logging": {
+    "LogLevel": {
+      "Default": "Debug"
+    }
+  },
+  "ApplicationInsights": {
+    "InstrumentationKey": ""
+  },
+  "AllowedHosts": "*",
+  "CosmosDb": {
+    "Host": "",
+    "Key": "",
+    "Database": "Products"
+  }
 }
 ```
 
@@ -259,9 +272,12 @@ Invoke-RestMethod $FileUri
 You should see the following returned from the above command.
 
 ```azurepowershell
-environment hostname                    show-errors
------------ --------                    -----------
-testing     testing.tailwindtraders.com        True
+environment         : production
+hostname            : tailwindtraders.com
+Logging             : @{LogLevel=}
+ApplicationInsights : @{InstrumentationKey=}
+AllowedHosts        : *
+CosmosDb            : @{Host=; Key=; Database=Products}
 ```
 
 1. You can also review the logs (and other details about the deployment) from the Azure portal or with the following command line.

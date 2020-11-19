@@ -119,7 +119,7 @@ Now that you've got our template set, you can validate our new deployment script
     "parameters": {
         "filesToCopy": {
             "value": [
-                "appsettings.json",
+                "swagger.Staging.json",
                 "appsettings.Staging.json"
             ]
         }
@@ -174,7 +174,7 @@ You should see the following returned from the above command.
 
 ```azurecli
 [
-  "appsettings.json",
+  "swagger.Staging.json",
   "appsettings.Staging.json"
 ]
 ```
@@ -242,7 +242,7 @@ You should see the following returned from the above command.
 ```azurepowershell
 Name
 ----
-appsettings.json
+swagger.Staging.json
 appsettings.Staging.json
 ```
 
