@@ -3,9 +3,9 @@ Once you start using Azure Sentinel to generate incidents, you and the IT team a
 
 ## Investigate incidents
 
-To identify and resolve security issues at Contoso, you'll first want to investigate any incidents. The **Overview** page in Azure Sentinel provides a list of the most recent incidents for quick reference. For more details and a complete overview of the incidents at Contoso, you'll use the **Incidents** page, which shows all incidents in the current workspace and details about those incidents.
+To identify and resolve security issues at Contoso, you'll first want to investigate any incidents. The **Overview** page in Azure Sentinel provides a list of the most recent incidents for quick reference. For more details and a complete overview of the incidents at Contoso, you'll use the **Incidents** page, which displays all incidents in the current workspace and details about those incidents.
 
-:::image type="content" source="../media/5-incidents-page.png" alt-text="The screenshot shows the **Incidents** page in Azure Sentinel.":::
+:::image type="content" source="../media/5-incidents-page.png" alt-text="The screenshot displays the **Incidents** page in Azure Sentinel.":::
 
 From this page, you can take various steps to investigate incidents.
 
@@ -22,15 +22,15 @@ Selecting any incident will display more information about the incident in the d
 
 The details pane provides a description of the incident and lists the evidence, entities, and tactics related to the incident. It also contains links to associated workbooks and the analytic rule that generated the incident.
 
-:::image type="content" source="../media/5-incident-details.png" alt-text="The screenshot shows the **Incident details** page." :::
+:::image type="content" source="../media/5-incident-details.png" alt-text="The screenshot displays the **Incident details** page." :::
 
-All of these details can be referenced to better understand the context of the incident. For example, in a brute force attack incident you might navigate to the Log Analytics query for the alert to determine the number of attacks made.
+All these details can be referenced to better understand the context of the incident. For example, in a brute force attack incident you might navigate to the Log Analytics query for the alert to determine the number of attacks made.
 
 ### Manage incident ownership, status, and severity
 
 Each incident created in Azure Sentinel has manageable metadata attached to it. This information can help you set and track the status of an incident from creation to resolution, set and review severity, and assign and track ownership for the incident.
 
-:::image type="content" source="../media/5-incident-settings.png" alt-text="The screenshot shows the section of the **Incidents** page where you can assign ownership, status, and severity." :::
+:::image type="content" source="../media/5-incident-settings.png" alt-text="The screenshot displays the section of the **Incidents** page where you can assign ownership, status, and severity." :::
 
 #### Ownership
 
