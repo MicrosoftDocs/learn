@@ -2,7 +2,10 @@ Imagine you're a software developer for an online retailer named *:::no-loc text
 
 This module guides you through implementing a feature flags library. With that library, you'll create a feature flag to toggle the visibility of the discount coupon feature. The configuration values that support this feature flag will be centralized by using the Azure App Configuration service. You'll begin with a simplified, revamped version of [:::no-loc text="eShopOnContainers":::](https://github.com/dotnet-architecture/eShopOnContainers)&mdash;the companion reference app for the guide [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices). This new version includes the discount coupon feature.
 
-[!INCLUDE[Use your own Azure subscription](../../includes/microservices/your-own-az-subscription.md)]
+You'll use your own Azure subscription to deploy the resources in this module. To estimate the expected resource costs, see the [preconfigured Azure Calculator estimate](https://aka.ms/microservices-configuration-aspnet-core-estimate?azure-portal=true). If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/dotnet/?azure-portal=true) before you begin.
+
+> [!IMPORTANT]
+> This module uses your own Azure subscription. To avoid unnecessary charges in your Azure subscription, remember to de-provision your Azure resources when you're done with this module.
 
 ## Learning objectives
 
