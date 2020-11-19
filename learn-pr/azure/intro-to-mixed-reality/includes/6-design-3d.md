@@ -1,6 +1,6 @@
 When it comes to Mixed Reality projects, familiar design processes you or your team use won't automatically transfer to designing 3D content. For instance, when you’re brainstorming a registration screen for a mobile app or website, a simple rectangle is enough. 
 
-Designing for three dimensions instead of two can be more time consuming, as drawing or sketching in 3D is much harder than in 2D. There are 3D tools that exist for gaming and engineering, but are harder to use and require a high skill level. This lack of fast, lightweight tools can impact your design pipeline and overload the person developing the actual application.
+Designing for three dimensions instead of two can be more time consuming, as drawing or sketching in 3D is much harder than in 2D. There are 3D tools that exist for gaming and engineering, but usually require training. This lack of fast, lightweight tools can impact your design pipeline and overload the person developing the actual application.
 
 Luckily, there are a few techniques that can help effectively iterate through ideas and get your content fleshed out. These techniques also allow different team members and disciplines to have a voice.
 
@@ -25,3 +25,7 @@ Choosing the best method for getting your ideas and proposed experience always d
 :::image type="content" source="../media/storyboarding.png" alt-text="Diagram of a high-fidelity storyboard example.":::
 
 Whether the storyboards themselves are detailed or just sketches meant to evoke the broad strokes of an experience is up to you. 
+
+## Mixed Reality development tools
+
+When it comes to working with holograms in your applications, it’s easiest to use some of Microsoft’s pre-made development tool like the Mixed Reality Toolkit (MRTK) for Unity and Unreal Engine. MRTK is an open-source, cross-platform development kit that provides an input system, foundational components, and common building blocks for spatial interactions.

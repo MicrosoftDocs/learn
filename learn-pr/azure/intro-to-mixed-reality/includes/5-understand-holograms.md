@@ -2,9 +2,9 @@ Holograms and holographic experiences aren’t the fruit of pure science-fiction
 
 :::image type="content" source="../media/hologram-example-table.jpg" alt-text="Photograph of multiple users wearing HoloLens headsets standing around a holographic display and interactive menu on a tabletop.":::
 
-It’s important to note that holograms are only part of the augmented reality part of the Mixed Reality spectrum and shouldn’t be confused with virtual objects in immersive experiences.
+It’s important to note that holograms are only part of the augmented reality portion of the Mixed Reality spectrum and shouldn’t be confused with virtual objects in immersive experiences.
 
-## Placing holographic content
+## Place holographic content
 
 You can place them in a specific location within an augmented reality space, giving your users the ability to walk around or even away and have the hologram remain in place. If you’re creating a more interactive interaction, holograms can be set to follow a user, tagging along at a relative distance no matter where they are. You can even add something called a spatial anchor to have your application remember where you placed a hologram, effectively pinning it in place for you to come back to later.
 
@@ -12,6 +12,3 @@ You can place them in a specific location within an augmented reality space, giv
 
 One of the most wonderful aspects of holograms and augmented reality is that they can appear to interact with the physical world. For example, you could place a holographic ball above a table in the real world and have it bounce when a user makes a gesture or says the word “bounce”. Adding sound effects or occlusion behind real-world objects can give your holograms an added bit of physicality and realness.
 
-## Mixed Reality development tools
-
-When it comes to working with holograms in your applications, it’s easiest to use some of Microsoft’s pre-made development tool like the Mixed Reality Toolkit (MRTK) for Unity and Unreal Engine. MRTK is an open-source, cross-platform development kit that provides an input system, foundational components, and common building blocks for spatial interactions.
