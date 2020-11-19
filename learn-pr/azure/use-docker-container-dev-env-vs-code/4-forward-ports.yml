@@ -9,6 +9,6 @@ metadata:
   ms.author: brmurtau
   ms.topic: interactive-tutorial
   ms.prod: learning
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/4-forward-ports.md)]

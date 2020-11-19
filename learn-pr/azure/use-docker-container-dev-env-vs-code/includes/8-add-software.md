@@ -29,9 +29,9 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 ```
 
 - The `RUN` command creates a new *layer*. Layers are how the container knows what has changed and what in the container needs to be updated when you rebuild it. You should try to keep related logic together in the same `RUN` command so that you don't create unnecessary layers.
-- The `\` part denotes a line break at the end of a line. You need it for multiple-line commands.
-- The `&&` part is how you add a command to the `RUN` line.
+- The `\` denotes a line break at the end of a line. You need it for multiple-line commands.
+- The `&&` is how you add a command to the `RUN` line.
 - The `DEBIAN_FRONTEND` export avoids warnings when you go on to work with your container. When you're adding other software, you might instead use other flags or parameters, such as `-y`.
-- The `-y` part ensures that `apt-get` doesn't prompt you to confirm that you want to finish the installation. These prompts would cause the container build to fail because nobody would be there to select `Y` or `N`.
+- The `-y` ensures that `apt-get` doesn't prompt you to confirm that you want to finish the installation. These prompts would cause the container build to fail because nobody would be there to select `Y` or `N`.
 
 In the next exercise, you'll modify the Dockerfile to install Node.js. You'll then verify that Node.js is available in the running container.

@@ -2,9 +2,9 @@ As you've noticed during your time at the agency, it can be a major hassle for d
 
 Ideally, each project is contained in its own preconfigured, containerized environment. Docker and Visual Studio Code make containerized development possible through the Remote - Containers extension.
 
-## What the extension is
+## What is the Remote - Containers extension?
 
-The Remote - Containers extension for Visual Studio Code lets you use a Docker container as a full-featured development environment. You can use this extension to open any folder or repository in a container and take advantage of the full feature set of Visual Studio Code, like IntelliSense (completions), code navigation, and debugging.
+The [Remote - Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code lets you use a Docker container as a full-featured development environment. You can use this extension to open any folder or repository in a container and take advantage of the full feature set of Visual Studio Code, like IntelliSense (completions), code navigation, and debugging.
 
 ## How the extension works
 
