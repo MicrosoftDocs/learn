@@ -12,3 +12,30 @@ title: What is Azure Stack Edge?
 durationInMinutes: 10
 content: |
   [!include[](includes/5-what-is-azure-stack-edge.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What functionality does Field Programmable Gate Array provide in Azure Stack Edge?"
+    choices:
+    - content: "accelerated Artificial Intelligence-inferencing"
+      isCorrect: true
+      explanation: "That's correct. Azure Stack Edge appliances include either Graphical Processing Unit (GPU) or Field Programmable Gate Array (FPGA), which enable accelerated Artificial Intelligence-inferencing and provide the network storage gateway functionality."
+    - content: "administer and monitor multiple Azure Stack Edge physical appliances"
+      isCorrect: false
+      explanation: "That's incorrect. This is the role of Azure Stack Edge resource accessible via the Azure portal."
+    - content: "Graphical interface to an Azure Stack HCI appliance"
+      isCorrect: false
+      explanation: "That's incorrect. This is the role of Azure Stack Edge local web user interface (UI)."
+
+  - content: "Which technology in Azure Stack Edge is used to implement the IoT Edge modules?"
+    choices:
+    - content: "Service Fabric microservices"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Stack Edge does not rely on Service Fabric."
+    - content: "Azure Container Instance."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Stack Edge does not rely on Azure Container Instances."
+    - content: "Docker containers."
+      isCorrect: true
+      explanation: "That's correct. IoT Edge modules are implemented as Docker containers, hosting the relevant ML models."

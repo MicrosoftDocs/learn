@@ -25,7 +25,7 @@ To compare the three products, review the following table:
 |High availability for virtual machines|Yes|Yes|No|
 |Built-in disaster recovery capabilities|No|Yes|No|
 |Local Azure Resource Manager control plane|Yes|No|No|
-|Multi-tenancy and tenant isolation|Yes|No|No|
+|Built-in multi-tenancy and tenant isolation|Yes|No|No|
 |Form-factor choice|Yes|Yes|Yes|
 |Pre-configured private cloud|Yes|No|No|
 |Azure VMs supported through IaaS|Yes|No|No|
