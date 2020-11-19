@@ -24,7 +24,7 @@ Start by creating a new web app resource in the Azure portal:
     | **Resource Group** | Create a new resource group named **mslearn-slots** |
     | **Name** | *Enter a unique name* |
     | **Publish** | Code |
-    | **Runtime stack** | ASP.NET V4.7 |
+    | **Runtime stack** | ASP.NET V4.8 |
     | **Operating System** | Windows |
     | **Region** | *Select a region near you* |
     | **Windows Plan** | *Leave default* |
