@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.build-web-api-net-core.8-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 11/12/2020
+  author: scottaddie
+  ms.author: scaddie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: Summary
+azureSandbox: true
+interactive: bash
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]

@@ -15,36 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "When using linked templates, where can you store the linked artifacts?"
+  - content: "When you're using linked templates, where can you store the linked artifacts?"
     choices:
     - content: "On a networked server accessible over SMB."
       isCorrect: false
-      explanation: "When referencing a linked template, you cannot use a local file or a file that is only available on your local network."
-    - content: "On any publicly accessible endpoint accessible through http or https."
+      explanation: "When you're referencing a linked template, you can't use a local file or a file that's available only on your local network."
+    - content: "On any endpoint that's publicly accessible through HTTP or HTTPS."
       isCorrect: true
-      explanation: "When referencing a linked template, you must provide a URI value that downloadable as http or https."
-    - content: "On any publicly accessible endpoint accessible through FTP."
+      explanation: "When you're referencing a linked template, you must provide a URI value that's downloadable as HTTP or HTTPS."
+    - content: "On any endpoint that's publicly accessible through FTP."
       isCorrect: false
-      explanation: "When referencing a linked template, you must provide a URI value that downloadable as http or https."
-  - content: "When deploying a template through GitHub Actions, you must provide authentication credentials in what form?" 
+      explanation: "When you're referencing a linked template, you must provide a URI value that's downloadable as HTTP or HTTPS."
+  - content: "When you're deploying a template through GitHub Actions, you must provide authentication credentials in what form?" 
     choices:
-    - content: "You can provide your own username and template as part of a configured secret in your GitHub repository settings."
+    - content: "Provide a username and template as part of a configured secret in GitHub repository settings."
       isCorrect: false
-      explanation: "you can automate your workflow to do an Azure login using an Azure service principal."
-    - content: "You cannot use users credentials part of a configured secret in your GitHub repository settings."
+      explanation: "You can automate your workflow to do an Azure login by using an Azure service principal."
+    - content: "Use the user credentials part of a configured secret in GitHub repository settings."
       isCorrect: true
-      explanation: "You can provide Service Principal credentials part of a configured secret in your GitHub repository settings."
-    - content: "You can provide Shared Access Signature part of a configured secret in your GitHub repository settings."
+      explanation: "You can provide the service principal credentials part of a configured secret in your GitHub repository settings."
+    - content: "Provide the shared access signature (SAS) part of a configured secret in GitHub repository settings."
       isCorrect: false
-      explanation: "Shared Access Signature or SAS token are used to provides secure delegated access to resources in your storage account without compromising the security of your data."
-  - content: "what is the best way to modularize your resources for deployment?" 
+      explanation: "Shared access signatures or SAS tokens are used to provides secure delegated access to resources in your storage account without compromising the security of your data."
+  - content: "What's the best way to modularize your resources for deployment?" 
     choices:
-    - content: "To modularize your deployment using nested templates is the recommended way."
+    - content: "Use nested templates."
       isCorrect: false
-      explanation: "Nested templates allow you to store many individual templates in one main template file. But each file cannot be reused as easily as if they were separate files linked together."
-    - content: "To modularize your deployment using linked templates is the recommended way."
+      explanation: "Nested templates allow you to store many individual templates in one main template file. But each file can't be reused as easily as if separate files were linked together."
+    - content: "Use linked templates."
       isCorrect: true
-      explanation: "Linked templates allow you to create reusable, composable, and modular deployments comprised of many individual ARM templates."
-    - content: "The best way to modularize your deployment is to use GitHub Actions to control the deployment."
+      explanation: "Linked templates allow you to create reusable, composable, and modular deployments that comprise many individual ARM templates."
+    - content: "Use GitHub Actions to control the deployment."
       isCorrect: false
-      explanation: "GitHub Actions is a great way to deploy your Infrastructure as Code (IaC) in a controlled manner but it does not provide any benefits to modularize your templates."
+      explanation: "GitHub Actions are a great way to deploy your infrastructure as code (IaC) in a controlled manner, but they don't provide any benefits to modularize your templates."
