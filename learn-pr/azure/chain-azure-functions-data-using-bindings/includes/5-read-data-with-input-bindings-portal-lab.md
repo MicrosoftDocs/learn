@@ -134,9 +134,9 @@ You now have a few entries in your **Bookmarks** container. Your scenario will w
 
 ::: zone pivot="javascript"
 
-1. Navigate to the function app that you created in the preceding unit. Select **Home > (in recent) <name>Fuction App**.
+1. Navigate to the function app that you created in the preceding unit. Select **Home > (in recent) <name>Function App**.
 
-1. On the left-hand side menu, select **Fuctions**.
+1. On the left-hand side menu, select **Functions**.
 
 1. To start the function creation process, select the **Add** (**+**) button next to **Functions**. The page displays the complete set of supported triggers.
 
@@ -148,9 +148,9 @@ You now have a few entries in your **Bookmarks** container. Your scenario will w
 
 ::: zone pivot="powershell"
 
-1. Navigate to the function app that you created in the preceding unit. Select **Home > (in recent) <name>Fuction App**.
+1. Navigate to the function app that you created in the preceding unit. Select **Home > (in recent) <name>Function App**.
 	
-1. On the left-hand side menu, select **Fuctions**.
+1. On the left-hand side menu, select **Functions**.
 
 1. To start the function creation process, at the top, select **Add** (**+**). 
    The page displays the complete set of supported triggers.
@@ -167,7 +167,7 @@ You can verify what we have done so far by testing our new function as follows:
 
 1. In your new function, at the top right, select **Get function URL**, then select **default (Function key)**, and then select **Copy**.
 
-1. Paste the function URL you copied into your browser's address bar. Add the query string value `&name=<your fuction name>` to the end of the URL, and to execute the request, press **Enter**. You should get a response from the Azure Function in the browser.
+1. Paste the function URL you copied into your browser's address bar. Add the query string value `&name=<your function name>` to the end of the URL, and to execute the request, press **Enter**. You should get a response from the Azure Function in the browser.
 
 Now that we have our bare-bones function working, let's turn our attention to reading data from our Azure Cosmos DB, or in our scenario, our **Bookmarks** container.
 
