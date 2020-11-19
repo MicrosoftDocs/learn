@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-synapse-studio.understand-analytical-processes
+title: Understand the Azure Synapse Analytical processes
+metadata:
+  title: Understand the Azure Synapse Analytical processes
+  description: "Understand the Azure Synapse Analytical processes"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-understand-analytical-processes.md)]
