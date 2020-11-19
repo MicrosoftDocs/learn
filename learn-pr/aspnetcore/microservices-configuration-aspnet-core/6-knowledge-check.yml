@@ -28,7 +28,7 @@ quiz:
         - content: Azure App Configuration
           isCorrect: false
           explanation: "Azure App Configuration is a centralized configuration service useful in microservices apps. In an ASP.NET Core app, Azure App Configuration is registered as another configuration provider."
-    - content: `<feature>` tag part of the `Microsoft.FeatureManagement.AspNetCore` NuGet package serves what purpose in ASP.NET Core Razor pages?
+    - content: "`<feature>` tag part of the `Microsoft.FeatureManagement.AspNetCore` NuGet package serves what purpose in ASP.NET Core Razor pages?"
       choices:
         - content: "`<feature>` tags are irrelevant to ASP.NET Core Razor Pages. They are added to the Angular view to render content based on a feature's state."
           isCorrect: false
