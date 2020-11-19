@@ -33,7 +33,7 @@ By taking a look at the schema pane, you will begin to understand that you don't
 
 Starting with a table name is the right way to configure log queries. Using a table name defines a clear scope for the query, which improves query performance and relevance of the results.
 
-One additional thing to note is the Kusto Query Language is case-sensitive. Language keywords are typically written in lower-case (consume, count, distinct, evaluate, join, limit, project, etc.). When using names of tables or columns in a query, make sure to use the correct case. If you are ever stuck, the schema pane will showcase how to use correct casing for the table name.
+The Kusto Query Language is case-sensitive. Language keywords are typically written in lower-case (consume, count, distinct, evaluate, join, limit, project, etc.). When using names of tables or columns in a query, make sure to use the correct case. If you are ever stuck, the schema pane will showcase how to use correct casing for the table name.
 
 ## Basic query understanding
 

@@ -10,5 +10,5 @@ By learning about Azure Monitor Logs and Azure Monitor for VMs, you now have a b
 - [Azure Monitor Logs overview](https://docs.microsoft.com/azure/azure-monitor/platform/data-platform-logs)
 - [Get started with log queries in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries)
 - [Log Analytics overview](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent)
-- [What is Azure Monitor for VMs?](https://docs.microsoft.com/en-us/azure/azure-monitor/insights/vminsights-overview)
+- [What is Azure Monitor for VMs?](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview)
 - [Log Analytics demo workspace](https://portal.loganalytics.io/demo)
