@@ -23,15 +23,13 @@ Instructions for installing PowerShell are different for each OS. Before you mov
 
 ### Windows
 
-If you're running Windows 8 or later, a version of PowerShell, called **Windows PowerShell**, should already be installed. There are slight differences between this version of PowerShell and the most up-to-date PowerShell release, but it will work fine for learning. 
+If you're running Windows 8 or later, a version of PowerShell, called **Windows PowerShell**, should already be installed. There are slight differences between this version of PowerShell and the most up-to-date PowerShell release, but it will work fine for learning.
 
 You can launch Windows PowerShell from the Start menu.
 
-<insert image if you want>
-
 ### Other operating systems
 
-If your computer runs something other than Windows 8 or later, you'll need to install PowerShell. You can find the specific installation instructions for your OS, [on ther PowerShell documentation site](https://docs.microsoft.com/powershell/scripting/install/installing-powershell).
+If your computer runs something other than Windows 8 or later, you'll need to install PowerShell. You can find the specific installation instructions for your OS, [install PowerShell instructions](https://docs.microsoft.com/powershell/scripting/install/installing-powershell).
 
 ### PowerShell extension for Visual Studio Code
 
