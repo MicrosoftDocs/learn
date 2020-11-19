@@ -15,7 +15,7 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Sentinel workspace.
 2. On the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
 3. On the **Azure Sentinel | Analytics** blade, select **Create** and then select **Scheduled Query Rule**.
-4. On the **General** page, provide the inputs in the following table, and then select  **Next:Set rule logic**. <!--ID/SME, please confirm that in the UI, there shouldn't be a space between "Next:Set". It seems wrong without a space, but if that's how it truly is in the UI, then that's OK. Please fix globally across files if you determine it should indeed have a space.-->
+4. On the **General** page, provide the inputs in the following table, and then select  **Next: Set rule logic**. 
 
   |||
   | --- | --- |
@@ -54,7 +54,7 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
   :::image type="content" source="../media/07-Incident-Settings.PNG" alt-text="Screenshot Analytics Incident Settings." border="true":::
 
 16. In the **Automated response**  page, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
-17. Select **Next:Review**.
+17. Select **Next: Review**.
 18. In the **Review and Create** page, verify that the validation was successful, and then select **Create**.
 
 ### Task 2: Invoke an incident and review the associated actions
@@ -67,7 +67,7 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 
 ### Task 3: Create an analytics rule from an existing template
 
-1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Sentinel workspace.
+1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
 2. On the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
 3. On the **Azure Sentinel | Analytics** blade, select **Rule templates.**
 4. In the search field, enter and select **Create incidents based on Azure Security Center alerts**.  
@@ -76,7 +76,7 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 7. In the **Analytics rule logic** section, verify that in the drop-down menu for the Microsoft security service, **Azure Security Center** is selected.
 8. In the **Filter by severity** section, select **Custom**, and then in the drop-down menu, select **High** and **Medium**.
 9. If you want to further filter the alerts from Azure Security Center, you can add additional text in **Include specific alerts** or **Exclude specific alerts**.
-10. Select **Next:Review**, and then on the **Review and Create** page, select **Create**.
+10. Select **Next: Review**, and then on the **Review and Create** page, select **Create**.
 
 ### Results
 
