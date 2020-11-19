@@ -1,6 +1,62 @@
-In this section, you'll use the `Maven Plugin for Azure App Service`, to deploy your application to Azure.
+In this section, you'll deploy your application to Azure App Service.
 
-## Configure Maven Plugin for Azure App Service
+## What is Azure App Service
+
+Azure provides Azure App Service as Platform as a Service as the environment for running Tomcat.
+It features a Window and Linux environments, security, load balancing, autoscaling, and DevOps integration.
+You can leave OS and Tomcat management to Azure, and concentrate on building applications.
+
+:::image type="content" source="../media/app-service-portal-screen.png" alt-text="Azure portal Screen":::
+
+
+## Get Sample JSF Applications
+
+In order to deploy a Java Web Application, you can get a PrimeFaces JSF Web Application from GitHub as below.
+
+```bash
+git clone https://github.com/yoshioterada/Deploy-PrimeFaces-JSF-Web-App-on-Tomcat-9.0
+```
+
+Then you can see following files in the directory.
+
+```
+Deploy-PrimeFaces-JSF-Web-App-on-Tomcat-9.0
+├── pom.xml
+└── src
+    └── main
+        ├── java
+        │   └── com
+        │       └── microsoft
+        │           └── azure
+        │               └── samples
+        │                   ├── controller
+        │                   │   └── TodoListController.java
+        │                   ├── dao
+        │                   │   ├── ItemManagement.java
+        │                   │   └── TodoItemManagementInMemory.java
+        │                   └── model
+        │                       └── TodoItem.java
+        └── webapp
+            ├── META-INF
+            │   └── context.xml
+            ├── WEB-INF
+            │   ├── beans.xml
+            │   ├── classes
+            │   │   └── logging.properties
+            │   ├── faces-config.xml
+            │   └── web.xml
+            └── index.xhtml
+```
+
+
+## Maven Plugin for Azure App Service
+
+Microsoft provides the `Maven Plugins for Azure Services` to make it easier for Java developers to deploy applications to Azure.
+By using this plugin, you can easily configure and deploy your application to Azure.
+Execute the following command to use `Maven Plugin for Azure App Service`.
+
+
+### Configure Maven Plugin for Azure App Service
 
 To configure the `Maven Plugin for Azure App Service`, execute the following command:
 
