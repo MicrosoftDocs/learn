@@ -2,6 +2,9 @@ The Threat detection with Azure Sentinel Analytics exercise in this module is an
 
 To deploy the prerequisites for the exercise, perform the following tasks.
 
+
+## Task 1: Deploy Azure Sentinel using ARM template 
+
 1. Select the following link.
 
 [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-azure-sentinel%2Fazuredeploy.json)
@@ -27,7 +30,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 > Wait for the deployment to complete. The deployment should take less than 5 minutes.
 
 ## Task 2: Configure Azure Sentinel connectors 
-<!-- ID/SME: You indicate the line above is "Task 2" but then there's no Task 1 listed in this file, nor other numbered tasks?! Please review. -->
+
 In this task, you'll deploy an Azure Sentinel connector to Azure Activity.
 
 1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
