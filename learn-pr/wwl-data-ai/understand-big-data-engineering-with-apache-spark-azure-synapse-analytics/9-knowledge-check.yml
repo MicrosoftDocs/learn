@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is one of the differences between Azure Databricks and Synapse Analytics?"
+    choices:
+    - content: "With Azure Synapse Analytics you have to mount the storage that you read or write to."
+      isCorrect: false
+      explanation: "InCorrect. In Synapse, the underlying storage for the workspace is an ADLS Gen 2 storage. If you, for example, have files in the ADLS Gen 2 storage account, you could go through the Synapse Studio and create a new notebook, which automatically connects without having to mount a data lake like you have to do in Azure Databricks."
+    - content: "Azure Databricks has an integrated SQL engine."
+      isCorrect: false
+      explanation: "Incorrect. Azure Databricks, is truly built as a data platform for analytics with a strong focus on Spark, Databricks Delta, and others. However, it is not a one stop shop like Azure Synapse Analytics is considered to be, since it won't come with an integrated SQL Engine for data warehousing solutions as Synapse Analytics would."
+    - content: "With Azure Databricks you have to mount the storage that you read or write to."
+      isCorrect: true
+      explanation: "Correct, n Synapse, the underlying storage for the workspace is an ADLS Gen 2 storage. If you, for example, have files in the ADLS Gen 2 storage account, you could go through the Synapse Studio and create a new notebook, which automatically connects without having to mount a data lake like you have to do in Azure Databricks."
+  - content: "What is the difference between open-source Apache Spark and Apache Spark Pools in Azure Synapse Analytics?"
+    choices:
+    - content: "Open-source Apache Spark can not use the Spark console."
+      isCorrect: false
+      explanation: "Incorrect. At this moment, within Synapse Analytics the spark console is not available on Azure Synapse Spark pools, so therefore it is highly recommended to use the notebook or IntelliJ experiences instead. With open-source Apache Spark it is possible to use the Spark Console."
+    - content: "Azure Synapse Analytics currently supports the same version as open-source Apache Spark."
+      isCorrect: false
+      explanation: "Incorrect. Azure Synapse Analytics currently supports Spark 2.4 version."
+    - content: "The current version of open-source Apache Spark is 3.0.1."
+      isCorrect: true
+      explanation: "Correct. The Apache Spark version in its OSS form is currently 3.0.1, which was released in September 2020."

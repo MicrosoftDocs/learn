@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.differentiate-between-spark-pools
+title: Differentiate between apache spark and spark pools
+metadata:
+  title: Differentiate between apache spark and spark pools
+  description: "Differentiate between apache spark and spark pools"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-differentiate-between-spark-pools.md)]
