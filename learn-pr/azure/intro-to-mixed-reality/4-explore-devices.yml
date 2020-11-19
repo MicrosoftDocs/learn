@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-mixed-reality.4-exploring-devices
-title: Exploring Mixed Reality devices
+uid: learn.intro-to-mixed-reality.4-explore-devices
+title: Explore Mixed Reality devices
 metadata:
-  title: Exploring Mixed Reality devices
+  title: Explore Mixed Reality devices
   description: Explore the range of Mixed Reality devices, the capabilities they offer, and where they fit on the Mixed Reality spectrum.
   ms.date: 11/17/2020
   author: Sean-Kerawala
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-exploring-devices.md)]
+  [!include[](includes/4-explore-devices.md)]

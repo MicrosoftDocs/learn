@@ -39,10 +39,10 @@ products:
 units:
 - learn.intro-to-mixed-reality.1-introduction
 - learn.intro-to-mixed-reality.2-what
-- learn.intro-to-mixed-reality.3-making-sense
-- learn.intro-to-mixed-reality.4-exploring-devices
-- learn.intro-to-mixed-reality.5-understanding-holograms
-- learn.intro-to-mixed-reality.6-designing-3d
+- learn.intro-to-mixed-reality.3-make-sense
+- learn.intro-to-mixed-reality.4-explore-devices
+- learn.intro-to-mixed-reality.5-understand-holograms
+- learn.intro-to-mixed-reality.6-design-3d
 - learn.intro-to-mixed-reality.7-use-cases-examples
 - learn.intro-to-mixed-reality.8-cloud-services
 - learn.intro-to-mixed-reality.9-knowledge-check
