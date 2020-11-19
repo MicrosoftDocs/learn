@@ -1,8 +1,6 @@
 Web applications are used for accounting, inventory, and online web portals.
 Typically, your application accepts input from users, searches data for the input contents, displays a list, and updates it.  
-In this module, we'll create a `Todo` application by using JavaServer Faces.
-
-After creating the Application, you'll deploy it to Tomcat on Azure App Service.
+In this module, you'll deploy a Java Web Application to Tomcat on Azure App Service.
 
 :::image type="content" source="../media/primefaces-todo-list.png" alt-text="Java Todo Application Sample":::
 
