@@ -13,7 +13,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "An organization has set up virtual machines (VMs) to act as jumpboxes in each of its six virtual networks. Why should it consider using Azure Bastion?"
+  - content: "An organization has set up virtual machines (VMs) to act as jumpboxes in each of its six virtual networks. Why should the organization consider using Azure Bastion?"
     choices:
     - content: The organization can eliminate the need to manage its virtual networks.
       isCorrect: false
