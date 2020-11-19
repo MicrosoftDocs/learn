@@ -1,18 +1,18 @@
-Azure Sentinel contains powerful query tools that can help you, as part of the SecOps team, find and isolate secuirty threats and unwanted activity within Contoso's environment.
+Azure Sentinel contains powerful query tools that can help you, as part of the SecOps team, find and isolate security threats and unwanted activity within Contoso's environment.
 
 ## Hunt using built-in queries
 
 Azure Sentinel provides powerful hunting search and query tools to hunt for security threats and tactics throughout your environment. Hunting queries enable to filter through large amounts of events and security data sources to identify potential threats or track down known or expected threats.
 
-You can use the built-in queries in Azure Sentinel's Hunting page to guide your hunting process and pursue the appropriate hunting paths to uncover issues within your environment. Hunting queries can expose issues that aren't significant enough on their own to generate an alert, but have occurred frequently enough over time to warrant investigation.
+You can use the built-in queries in Azure Sentinel's Hunting page to guide your hunting process and pursue the appropriate hunting paths to uncover issues within your environment. Hunting queries can expose issues that aren't significant enough on their own to generate an alert but have occurred frequently enough over time to warrant investigation.
 
 :::image type="content" source="../media/3-hunting page.png" alt-text="The Hunting page in Azure Sentinel" :::
 
-The hunting page provides a list all hunting queries. You can filter and sort queries by query name, provider, data source, results, and tactics. You can save queries as favorites by selecting the star icon on the far left column. Whn q query is selected as a favorite, it runs automatically each time you open the hunting page.
+The hunting page provides a list all hunting queries. You can filter and sort queries by query name, provider, data source, results, and tactics. You can save queries as favorites by selecting the star icon on the far-left column<!-- A person using a screen reader will not know what a star icon is. Let's change to "You can save queries by selecting the Favorites star icon on the far-left column." -->. When a query is selected as a favorite, it runs automatically each time you open the hunting page.
 
 ### Manage hunting queries
 
-When you select a query from the list, the query details appear in a new pane. The query details pane contains a description of the query, query code, and other information about the query including entities involved and identified tacts. You can run a query interactively by selecting **Run Query** in the details pane.
+When you select a query from the list, the query details display in a new pane. The query details pane contains a description of the query, query code, and other information about the query including entities involved and identified tacts<!-- Should this be "facts?" -->. You can run a query interactively by selecting **Run Query** in the details pane.
 
 ### Hunt for threats using the MITRE ATT&CK framework
 
@@ -23,12 +23,12 @@ Azure Sentinel uses the MITRE ATT&CK timeline to categorize and order queries by
 Selecting any tactic will filter the available queries by the selected tactic. Tactics include:
 
 - **Initial access**. Tactics used by the adversary to gain entry to a network, such as targeted spear-phishing, exploiting vulnerabilities or configuration weaknesses in public-facing systems.
-- **Execution**. Tactics that result in an adversary running their code on a target system. For example, an attacker may run a PowerShell script to download additional attacker tools and/or scan other systems.
+- **Execution**. Tactics that result in an adversary running their code on a target system. For example, an attacker<!-- Per MS Style: Use malicious hacker to refer to an unauthorized user who accesses a system with the intent to cause harm. If the unauthorized user’s intent isn’t known or isn’t malicious, use unauthorized user. --> may run a PowerShell script to download additional attacker tools and/or scan other systems.
 - **Persistence**. Tactics that allow an adversary to maintain access to a target system, even following reboots and credential changes. An example of a persistence technique would be an attacker creating a scheduled task that runs their code at a specific time or on reboot.
 - **Privilege escalation**. Tactics leveraged by an adversary to gain higher-level privileges on a system, such as local administrator or root.
 - **Defense evasion**. Tactics used by attackers to avoid detection. Evasion tactics include hiding malicious code within trusted processes and folders, encrypting or obfuscating adversary code, or disabling security software.
 - **Credential access**. Tactics deployed on systems and networks to steal usernames and credentials for re-use.
-- **Discovery**. Tactics used by adversaries to obtain information about systems and networks that they are looking to exploit or use for their tactical advantage.
+- **Discovery**. Tactics used by adversaries to obtain information about systems and networks that they are wanting to exploit or use for their tactical advantage.
 - **Lateral movement**. Tactics that allow an attacker to move from one system to another within a network. Common techniques include “Pass-the-Hash” methods of authenticating users and the abuse of the remote desktop protocol.
 - **Collection**. Tactics used by an adversary to gather and consolidate the information they were targeting as part of their objectives.
 - **Command and control**. Tactics leveraged by an attacker to communicate with a system under their control. One example is that an attacker may communicate with a system over an uncommon or high-numbered port to evade detection by security appliances or proxies.
@@ -43,7 +43,7 @@ You can also create your own custom queries using Azure Data Explorer code to hu
 
 :::image type="content" source="../media/3-create-custom-query-page.png" alt-text="The Create custom query page in Azure Sentinel" :::
 
-Custom queries enable you define the following:
+Custom queries enable you define the following:<!-- Your personal information and a photo are visible in this screen capture. You should blur it out or it won't pass compliance. -->
 
 - **Name**. The custom query.
 - **Description**. A description of your query's functionality.
