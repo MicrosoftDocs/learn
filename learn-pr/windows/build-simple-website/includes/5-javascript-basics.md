@@ -66,7 +66,7 @@ The backslash in the word `here\'s` is an *escape character* that's needed to de
 
 ## Add a button
 
-You need some way to switch between the light and dark theme in your web page. In your HTML page, add a `<button>` element. Put the button at the end of the list.
+You need some way to let the user switch between the light and dark theme in your web page. In this scenario, we do that with a button element. In your HTML page, add a `<button>` element. Put the button at the end of the list.
 
 ```html
 <ul>
@@ -88,33 +88,48 @@ In your CSS file, add a selector for the button. To make the button label black,
 
 ## Add an event handler for the button
 
-To make the button do something when you press it, you need an event handler. For a button, you need a handler for a `click` event.
+To make the button do something when you press it, you need an event handler in your JavaScript file. For a button, you need an event handler for the `click` event.
+
+Before you can add the event handler, you need a reference to the button. In your JavaScript file, use `document.querySelector` to get the button reference.
 
 ```js
 const switcher = document.querySelector('button');
+```
 
-switcher.addEventListener('click', () => {
+Next, add the event listener and the event handler for the `click` event. In the following code, you add a listener for the `click` event. The function passed into the event listener is your actual event handler.
+
+```js
+switcher.addEventListener('click', function() {
     document.body.classList.toggle('dark-theme')
 });
 ```
 
-
+In the preceding code, you use the `toggle` method to switch the <body> element to the `dark-theme` class. This automatically gets the dark theme styles applied instead of light theme. However, the button label also needs to be updated to show the correct theme, so you need to add an `if` statement to check the button label and update it. Here is what the complete JavaScript code should look like.
 
 ```js
-const switcher = document.querySelector('button');
+'use strict'
 
-switcher.addEventListener('click', () => {
+const switcher = document.querySelector('.btn');
+
+switcher.addEventListener('click', function() {
     document.body.classList.toggle('dark-theme')
 
-    var btn = document.querySelector('button');
-    if(btn.textContent == "Go dark"){
-        btn.textContent = "Go light";
+    if(this.textContent == "Go dark"){
+        this.textContent = "Go light";
     }
     else {
-        btn.textContent = "Go dark";      
+        this.textContent = "Go dark";
     }
 });
 ```
+
+## Open in browser
+
+As before, even though you were just editing the `app.js` file, to preview the changes, you should select the `index.html` file.
+
+To preview using **Visual Studio Code**, select `index.html` and select **Open In Default Browser**.
+
+The webpage will open in your default browser.
 
 
 
