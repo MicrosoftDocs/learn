@@ -4,7 +4,7 @@ You decided that Contoso will benefit most from modernizing the two-tier Online 
 
 ## Learn more
 
-You can learn more by reviewing the following document:
+You can learn more by reviewing the following documents:
 
 - [Azure Stack](https://aka.ms/overview-azure-stack?azure-portal=true)
 - [Azure Stack Hub overview](https://docs.microsoft.com/azure-stack/operator/azure-stack-overview)
