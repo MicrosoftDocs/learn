@@ -6,7 +6,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. Select the following link.
 
-[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-azure-sentinel%2Fazuredeploy.json)
+[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FWayPointVenturesOrg%2Ftemplates%2Fmain%2Fsentinel-deploy%2FSentinelTemplate.json)
 
 2. You will be prompted to sign in to your Azure subscription.
 3. On the **Custom deployment** page, provide the following information:
@@ -14,11 +14,11 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 |||
 | --- | --- |
 | **Subscription** | Select your Azure subscription. |
-| **Resource Group** | Select **Create new** and provide a name for the resource group, for example **azure-sentinel-rg**.|
+| **Resource Group** | Select **Create new** and provide a name for the resource group, for example **azure-sentinel-rg**. |
 | **Locations** | From the drop-down menu select the location where you are deploying Azure Sentinel. |
 | **Workspace name**  | Provide a unique name for the Azure Sentinel workspace, for example ***yourname*-sentinel**. |
 | **Location** | Accept the default value **[resourceGroup().location]**. |
-| **Simplevm Name** | Accept the default value **simple-vm**.|
+| **Simplevm Name** | Accept the default value **simple-vm**. |
 | **Simplevm Windows OS Version** | Accept the default value **2016-Datacenter**.|
 
 4. Select the check box for **I agree to the terms and conditions stated above** and then select **Purchase**.
@@ -31,8 +31,8 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 In this task, you will deploy Azure Sentinel connector to Azure Activity.
 
 1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
-2. In the **Azure Sentinel** page, on the left side in the menu bar, in the **Configuration** section, select **Data connectors.**
-3. In the **Data connectors** pane, search for and select **Azure Activity.** In the **details** pane on the right side select **Open connector page.**
+2. In the **Azure Sentinel** page, on the menu bar, in the **Configuration** section, select **Data connectors.**
+3. In the **Data connectors** pane, search for and select **Azure Activity.** In the **details** pane, select **Open connector page.**
 4. In the **Azure Activity** pane, select the link **Configure Azure Activity logs**.
 5. Select your subscription and then select **Connect.**
 6. When you receive status **Connected**, you can close all open blades to return to **Azure Sentinel | Data connector** blade.
