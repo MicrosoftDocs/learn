@@ -4,7 +4,7 @@ In this unit, you create an Azure Function, send telemetry to an IoT hub, and co
 
 Next, you'll create an Event Hubs-triggered function inside a function app.
 
-This function will convert those twin update events from their original form as JSON Patch documents to JSON objects, containing only updated and added values from your twins.
+This function will add or update Twin's update events from original JSON patch and creates a JSON object.
 
 For more information about using Event Hubs with Azure functions, see [Azure Event Hubs trigger for Azure Functions](/azure/azure-functions/functions-bindings-event-hubs-trigger?tabs=csharp).
 
@@ -62,7 +62,7 @@ Later, you'll also set some environment variables that this function will use to
 
 ## Send telemetry to an event hub
 
-You will now create a second event hub, and configure your function to stream its output to that event hub. This event hub will then be connected to Time Series Insights.
+You will now create a second event hub, and configure your function to stream its output to the first event hub. This event hub will then be connected to Time Series Insights.
 
 ### Create an event hub
 

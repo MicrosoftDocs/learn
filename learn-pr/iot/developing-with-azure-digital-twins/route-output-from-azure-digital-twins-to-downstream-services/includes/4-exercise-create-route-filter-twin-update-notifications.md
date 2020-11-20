@@ -1,4 +1,4 @@
-In this section, you will be creating an Azure Digital Twins event route that will direct these update events to Azure Event Hubs for further processing.
+In this section, you'll be creating an Azure Digital Twins event route that will direct these update events to Azure Event Hubs for further processing.
 
 1. First, create an event hub namespace, which will receive events from your Azure Digital Twins instance.
 
@@ -37,4 +37,4 @@ In this section, you will be creating an Azure Digital Twins event route that wi
     az dt route create -n <your Azure Digital Twins instance name> --endpoint-name <Event Hub endpoint from above> --route-name <name for your route> --filter "type = 'Microsoft.DigitalTwins.Twin.Update'"
     ```
 
-Before moving on, take note of your Event Hubs namespace and resource group, as you will use them again to create another event hub later in this unit.
+Before moving on, take note of your Event Hubs namespace and resource group, as you'll use them later in this unit.

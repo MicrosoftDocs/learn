@@ -20,7 +20,7 @@ In this unit, you create an instance of a digital twins resource, and collect th
 
 1. Click **Review + create**. Then click **Create**.
 
-1. Wait a few moments whilst **Deployment in progress** appears, then click **Go to resource**. You should see a screen with the title **Get started with Azure Digital Twins**.
+1. Wait a few moments while the **Deployment in progress** appears, then click **Go to resource**. You should see a screen with the title **Get started with Azure Digital Twins**.
 
 The next step is to save some important data, used to connect other resources to your digital twins instance.
 
@@ -58,7 +58,7 @@ The next step is to save some important data, used to connect other resources to
 
 1. In the **Select** field, enter enough of your name, or email, so that your full name and email address appears in the search results list.
 
-1. Select your entry, and notice that your details now appear under a **Selected members:** title.
+1. Select your entry, and notice that your details now appear under **Selected members:** title.
 
 1. Click **Save**. After a few seconds, you should see your details added to the role assignments, but now with the correct role.
 
@@ -118,7 +118,7 @@ Read/Write access to the Azure Digital Twins API is required. Verify this access
 
 1. You should see that **Read/Write** access is granted.
 
-1. Click on the **Read.Write** link, to verify that admin consent is _not_required. It will certainly not be required if you're using a sandbox subscription. If you're using an organization’s subscription, and admin access _is_ required, you would have to approach the admin for the subscription, to approve the access.
+1. Click on the **Read.Write** link, to verify that admin consent is _not_required. It'll not be required if you're using a sandbox subscription. If you're using an organization’s subscription, and admin access _is_ required, you would have to approach the admin for the subscription, to approve the access.
 
 1. In the left menu, click **Overview**.
 

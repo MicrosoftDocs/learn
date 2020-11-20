@@ -29,10 +29,10 @@ quiz:
 
   - content: 'Event routes are defined using data plane APIs. A route definition contains?'
     choices: 
-    - content: 'The desired route id'
+    - content: 'The desired route ID'
       isCorrect: false
       explanation: tbd
-    - content: 'The desired endpoint id'
+    - content: 'The desired endpoint ID'
       isCorrect: false
       explanation: tbd
     - content: 'A filter that defines which events are sent to the endpoint'

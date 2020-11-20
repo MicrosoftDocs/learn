@@ -2,7 +2,7 @@
 uid: learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-create-connect-time-series-insights-instance
 title:  Exercise - create and connect a Time Series Insights instance
 metadata:
-  description: In this unit, you will set up a Time Series Insights instance to receive the data from your second event hub.
+  description: In this unit, you'll set up a Time Series Insights instance to receive the data from your second event hub.
   ms.date: 11/1/2020
   author: raniabayoumy
   ms.author: rabayoum

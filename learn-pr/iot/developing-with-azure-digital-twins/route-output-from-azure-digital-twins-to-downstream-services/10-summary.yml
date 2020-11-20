@@ -52,16 +52,16 @@ quiz:
 
   - content: 'What options do you have to create event routes?'
     choices: 
-    - content: 'Digital Twins APIs, Azure Cloud Shell, and via the Azure Portal.'
+    - content: 'Digital Twins APIs, Azure Cloud Shell, and in the Azure Portal.'
       isCorrect: false
       explanation: Close. But there is a broader option that using the Azure Cloud Shell.
-    - content: 'Digital Twins APIs, CLI commands, and via the Azure Portal.'
+    - content: 'Digital Twins APIs, CLI commands, and in the Azure Portal.'
       isCorrect: true
       explanation: And note all APIs come in synchronous and asynchronous versions.
     - content: 'C#  APIs, and CLI commands.'
       isCorrect: false
       explanation: The API calls are not C# specific.
-    - content: 'Digital Twins APIs, C# APIs, CLI commands, and via the Azure Portal.'
+    - content: 'Digital Twins APIs, C# APIs, CLI commands, and in the Azure Portal.'
       isCorrect: false
       explanation: There are only three current options.
 
