@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools
+metadata:
+  title: Secure data and manage users in Azure Synapse serverless SQL pools
+  description: "Secure data and manage users in Azure Synapse serverless SQL pools"
+  ms.date: 11/20/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Secure data and manage users in Azure Synapse serverless SQL pools
+summary: Learn how you can set up security when using Azure Synapse serverless SQL pools
+abstract: |
+  After the completion of this module, you will be able to:
+  - Choose an authentication method in Azure Synapse serverless SQL pools
+  - Manage users in Azure Synapse serverless SQL pools
+  - Manage user permissions in Azure Synapse serverless SQL pools
+prerequisites: |
+  - It is recommended that students have completed Data Fundamentals before starting this learning path.
+iconUrl: /learn/achievements/secure-data-and-manage-users-in-azure-synapse-serverless-sql-pools.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.introduction
+- learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.choose-authentication-method
+- learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.manage-users
+- learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.manage-user-permissions
+- learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.knowledge-check
+- learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.summary
+badge:
+  uid: learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.badge
