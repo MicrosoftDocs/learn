@@ -8,7 +8,7 @@ metadata:
   author: sbkuehn
   ms.prod: learning-azure
   ms.topic: interactive-tutorial
-  ms.date: 11/16/2020
+  ms.date: 11/20/2020
 azureSandbox: true
 interactive: bash
 durationInMinutes: 25

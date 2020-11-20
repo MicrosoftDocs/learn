@@ -77,13 +77,14 @@ In this unit, you'll:
 
 1. Repeat the same steps for SampleVM2.
 
-1. After 5-10 minutes have passed, under **Monitoring**, select **Insights**.
+1. Wait 5-10 minutes.
+1. Under **Monitoring** > **Insights**, select **Refresh** until you get results.
 
 1. Review the map, which displays dependencies like processes running, ports open, connection details, health of the virtual machine, machine properties, and Azure virtual machine properties.
 
     :::image type="content" source="../media/3-azure-monitor-vms-map.png" alt-text="Azure Monitor for VMs screenshot, showcasing dependences and information about virtual machine." lightbox="../media/3-azure-monitor-vms-map.png":::
 
-1. Next, select **Performance** at the top, right next to **Map**.
+1. Select the **Performance** tab.
 
     :::image type="content" source="../media/3-virtual-machine-insights.png" alt-text="Screen shot after enabling Azure Monitor for VMs." lightbox="../media/3-virtual-machine-insights.png":::
 
@@ -100,7 +101,7 @@ In this unit, you'll:
 
 1. Experiment with different settings by moving from **Avg**, to **Min**, to **Max**, and so on (the virtual machines were only created a few minutes ago, so there might not be much data generated).
 
-1. Select **Log Events** on the right-hand side of the page.
+1. Select **Log Events**.
 
     :::image type="content" source="../media/3-log-events.png" alt-text="Screenshot of where Log Events show up within Azure Monitor for VMs." lightbox="../media/3-log-events.png":::
 
