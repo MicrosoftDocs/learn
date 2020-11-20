@@ -2,7 +2,7 @@
 uid: learn.monitor-vm-performance-using-azure-monitor-for-vms.build-log-queries-using-kusto
 title: Build log queries by using the Kusto Query Language
 metadata:
-  description: ''
+  description: 'Build log queries by using the Kusto Query Language'
   title: Build log queries by using the Kusto Query Language
   ms.author: shkuehn
   author: sbkuehn
