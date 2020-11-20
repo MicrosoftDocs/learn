@@ -4,14 +4,13 @@ As a security engineer working for Contoso, you recently noticed that a signific
 
 In this exercise, you will create an Azure Sentinel analytics rule, delete a VM, and investigate the incident created by the rule. You will perform the following tasks:
 
-- Create an analytics rule from the Analytic rule wizard. <!--LM: Please check this term. In documentation, I found "Analytic rule wizard"==>
-- Delete a VM.
+- Create an analytics rule from the Analytics rule wizard.
 - Investigate an incident.
 
 > [!NOTE]
 > If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/)
 
-## Task 1: Create an analytics rule from the Analytic rule wizard
+## Task 1: Create an analytics rule from the Analytics rule wizard
 
 In this task, you'll create an analytics rule that will create an incident when a VM is deleted in the Contoso Azure subscription.
 
@@ -64,7 +63,7 @@ In this task, you'll delete a VM to test rule detection and incident creation.
 
 ## Task 3: Investigate an incident
 
-In this task, you'll investigate the incident created when you deleted the VM in Task 2. It might take up to five minutes for the incident to display in Azure Sentinel.
+In this task, you'll investigate the incident created when you deleted the VM in Task 2. It might take up to ten minutes for the incident to display in Azure Sentinel.
 
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Azure Sentinel workspace.
 2. On the **Azure Sentinel** blade, on the menu bar, in the **Threat management** section, select **Incidents**.
