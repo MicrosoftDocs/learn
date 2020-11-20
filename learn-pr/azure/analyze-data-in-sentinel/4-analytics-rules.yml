@@ -1,4 +1,4 @@
-### YamlMime:Module
+### YamlMime:ModuleUnit
 uid: learn.azure.analyze-data-in-sentinel.4-analytics-rules
 metadata:
   title: Types of analytics rules
@@ -15,18 +15,18 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which one of the analytics rules can an administrator customize with their own query rules?"
+  - content: "Which one of the analytics rules can you customize with your own query rules?"
     choices:
     - content: "Fusion"
       isCorrect: false
       explanation: "Fusion detection is enabled by default in Azure Sentinel."
-    - content: "Machine learning behavioral analytics"
+    - content: "Machine learning behavior analytics"
       isCorrect: false
       explanation: "Machine learning behavioral analytics rules are built-in rules and they cannot be edited."
     - content: "Scheduled analytic rules"
       isCorrect: true
       explanation: "Scheduled Analytic rules provide the highest level of customization."
-  - content: "Which one of the template rules can create incidents based on all alerts generated in Azure Security Center? "
+  - content: "Which one of the template rules can create incidents based on all alerts generated in Azure Security Center?"
     choices:
     - content: "Machine learning behavioral analytics"
       isCorrect: false
