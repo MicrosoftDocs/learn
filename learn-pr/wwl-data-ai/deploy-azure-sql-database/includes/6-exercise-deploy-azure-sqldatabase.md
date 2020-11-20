@@ -201,7 +201,7 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
 ‎
     :::image type="content" source="../media/dp-3300-module-22-lab-32.png" alt-text="Screenshot of selecting the code button.":::
 
-1. Paste the following SQL statement into the new cell
+1. Paste the following SQL statement into the new cell.
 
     ```sql
     SELECT TOP 10 cust.[CustomerID], cust.[CompanyName], SUM(sohead.[SubTotal]) AS OverallOrderSubTotal
@@ -211,6 +211,8 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
     GROUP BY cust.[CustomerID], cust.[CompanyName]
     ORDER BY [OverallOrderSubTotal] DESC
     ```
+    > [!NOTE]
+    > If you'd like to copy and paste the code you can find the code in the **D:\LabFiles\Deploy Azure SQL Database\Deploy Azure SQL Database.sql** file.
 
 1. Select the blue circle with the arrow to execute the query. Note how the results are included within the cell with the query.
 
