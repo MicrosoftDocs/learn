@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/19/2020
+  ms.date: 11/20/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -35,7 +35,7 @@ quiz:
     - content: "Commit."
       isCorrect: false
       explanation: "Incorrect. A commit is an aspect of working with a Git repository that will commit the work that you do to the repository that you are working on."
-  - content: "Which feature can you use in an alert to determine how an alert is fired?"
+  - content: "Which feature in alerts can be used to determine how an alert is fired?"
     choices:
     - content: "Add rule."
       isCorrect: false
