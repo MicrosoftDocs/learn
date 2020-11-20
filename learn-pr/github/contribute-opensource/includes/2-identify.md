@@ -52,7 +52,7 @@ Great, you have found a project, read the contribution guidelines and now you're
 
 Perhaps you've already identified something to work on such as fixing broken links or update the docs. A good way to find beginner-friendly issues to help with is visiting the project's `/contribute` URL (for example [https://github.com/jupyter/notebook/contribute](https://github.com/jupyter/notebook/contribute)).
 
-:::image type="content" source="../media/2-contribute.png" alt-text="Screenshot showing the \"Contribute to a project\" section on GitHub":::
+:::image type="content" source="../media/2-contribute.png" alt-text="Screenshot showing the 'Contribute to a project' section on GitHub":::
 
 You'll notice that most of the issues displayed in the `contribute` URL will have labels such as `good-first-issue`, `help wanted`, `beginner-friendly`, and so on. Labels are often used to provide top-level information of the issue and the type of help needed.
 
