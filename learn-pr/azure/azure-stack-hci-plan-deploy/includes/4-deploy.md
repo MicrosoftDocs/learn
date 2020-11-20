@@ -15,7 +15,7 @@ Next, create a failover cluster using Windows Admin Center or PowerShell. Ensure
 
 :::image type="content" source="../media/4-azs-hci-wac1.png" alt-text="The image illustrating the initial page of the Windows Admin Center Cluster Creation wizard." border="false":::
 
-The Create Cluster wizard of the Windows Admin Center guides you through four main deployment steps:
+The Create Cluster wizard of the Windows Admin Center guides you through five main deployment steps:
 
   1. Get Started - verifies prerequisites for cluster join on each server, including installation of all required operating system roles and features.
   1. Networking - assigns and configures network adapters and creates the virtual switches for each server.

@@ -51,6 +51,6 @@ Azure Site Recovery is a cloud-based disaster recovery service that protects on-
 
 In the context of Azure Stack HCI deployment, Azure Site Recovery provides support for the following disaster recovery scenarios:
 
-- Disaster recovery of Hyper-V VMs not managed by System Center Virtual Machine Manager (SCVMM) from an on-premises location to Azure with Site Recovery-based replication.
-- Disaster recovery of Hyper-V VMs managed by SCVMM from an on-premises location to Azure with Site Recovery-based replication.
-- Disaster recovery of Hyper-V VMs managed by SCVMM between two on-premises locations using Hyper-V Replica-based replication.
+- Disaster recovery of Hyper-V VMs not managed by System Center Virtual Machine Manager (SCVMM) from an Azure Stack HCI cluster to Azure with Site Recovery-based replication.
+- Disaster recovery of Hyper-V VMs managed by SCVMM from an Azure Stack HCI cluster to Azure with Site Recovery-based replication.
+- Disaster recovery of Hyper-V VMs managed by SCVMM between two Azure Stack HCI clusters by using Hyper-V Replica-based replication.

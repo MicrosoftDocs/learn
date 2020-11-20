@@ -34,7 +34,7 @@ In general, Storage Spaces Direct assigns drives to one of two categories based 
 
 In clusters with multiple types of drives, Storage Spaces Direct automatically assigns all of the fastest type of drives to the cache. The remaining drives are used for capacity. You have the option to set caching manually in cases where the default configuration doesn't yield the optimal performance.
 
-#### Drive symmetry considerations
+#### Drive symmetry
 
 Storage Spaces Direct works in the optimal manner when every server has the exact the same number and type of drives. In general, you should configure your Storage Spaces Direct cluster in such way that:
 
