@@ -1,5 +1,39 @@
 [JavaScript](https://developer.mozilla.org/docs/Glossary/JavaScript) or *ECMAScript* is a programming language that helps you add interactivity to your webpage. When you select a button, JavaScript is the code that defines the event or behavior that will happen, such as open a popup window. Using JavaScript, you can add or remove content like text from the webpage without reloading it. As a web developer, you can use the browser to test and get feedback about your scripts.
 
+## Link to JavaScript
+
+Like CSS, we could add JavaScript directly to the HTML page, but it's better not to. For example, you could create a popup alert, by adding `<script>alert('Hello World')</script>` anywhere in the body. The script tag `<script>` will let us link to an external JavaScript file.
+
+In **Visual Studio Code**, type `script:src` and press Enter (Return).
+
+![Screenshot of Visual Studio Code script:src Emmet entry](../media/vs-code-script-src-emmet.png)
+
+Adjust the script element to look like the following. Place it right after the list.
+
+```html
+<ul>
+  <li class="list">Edit the head</li>
+  <li class="list">Edit the body</li>
+  <li>Link to JavaScript</li>
+</ul>
+<script src="app.js"></script>
+```
+
+The script element could be placed in the `<head>` or elsewhere in the `<body>`. However, putting `<script>` at the end of the `<body>` section allows all the page content to display on the screen first, then load the script.
+
+## No script
+
+The `<noscript>` element can be used to show a message if JavaScript is deactivated.
+
+```html
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+```
+
+Using the `<noscript>` element is an example of *fault tolerance* or *graceful degradation*. We can detect and plan for when a feature isn't supported or available.
+
+Remember to save your changes with the keyboard shortcut Control+S (Windows) or Command+S (macOS).
+
 ## Use strict mode
 
 As you get started with JavaScript, the initial focus is often working with numbers, math, text manipulation, dates, and storing information. Sometimes JavaScript makes assumptions about the type of data you enter; assignment, math, or logical equality can give you unexpected results. JavaScript tries to be friendly, make your code work, and provide you with a solution even if the result should be an error. To combat these shortcomings, you can activate *strict mode*, which reduces silent errors, improves performance, provides more warnings, and fewer unsafe features.
@@ -11,7 +45,7 @@ In **Visual Studio Code**, open the `app.js` file and type the following.
 ```
 
 > [!NOTE]
-> You can [usually omit semicolons](https://news.codecademy.com/your-guide-to-semicolons-in-javascript/) in JavaScript; it's a good idea to brush up on [when semicolons are necessary](https://standardjs.com/rules.html#semicolons). There's a bit of debate about this topic in the JavaScript community. If your preference is to end statements with a semicolon `'use strict';`, feel free to add them.
+> You can usually omit semicolons in JavaScript, but it's a good idea to brush up on when semicolons are necessary before making any decisions about that. There's a bit of debate about this topic in the JavaScript community.
 
 ## Console message
 
@@ -22,7 +56,7 @@ You can create a hidden message that won't appear on your webpage. However, what
 console.log('Here\'s a hidden message');
 ```
 
-In **Visual Studio Code**, when in JavaScript file, you can use autocomplete by typing `log` then hitting enter (return).
+In **Visual Studio Code**, when in a JavaScript file, you can use autocomplete by typing `log` then hitting enter (return).
 
 ![Screenshot of Visual Studio Code log Emmet entry](../media/vs-code-js-log-emmet.png)
 
@@ -30,7 +64,61 @@ You can define a text *string* with single or double quotes around the text.
 
 The backslash in the word `here\'s` is an *escape character* that's needed to define the apostrophe as text. If you remove the backslash, you see an error in the console, "Uncaught SyntaxError: Unexpected identifier."
 
-## Commenting code
+## Add a button
+
+You need some way to switch between the light and dark theme in your web page. In your HTML page, add a `<button>` element. Put the button at the end of the list.
+
+```html
+<ul>
+  <li class="list">Add visual styles</li>
+  <li class="list">Add light and dark themes</li>
+  <li>Enable switching the theme</li>
+</ul>
+<button class="btn">Go dark</button>
+```
+
+In your CSS file, add a selector for the button. To make the button label black, irrespective of the light or dark theme, we set the `color` property in the button selector. This selector, specific to the button, overrides the universal selector (*) used to apply font colors in your CSS file.
+
+```css
+.btn {
+  font-family: helvetica, sans-serif;
+  color: black;
+}
+```
+
+## Add an event handler for the button
+
+To make the button do something when you press it, you need an event handler. For a button, you need a handler for a `click` event.
+
+```js
+const switcher = document.querySelector('button');
+
+switcher.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme')
+});
+```
+
+
+
+```js
+const switcher = document.querySelector('button');
+
+switcher.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme')
+
+    var btn = document.querySelector('button');
+    if(btn.textContent == "Go dark"){
+        btn.textContent = "Go light";
+    }
+    else {
+        btn.textContent = "Go dark";      
+    }
+});
+```
+
+
+
+## delete - Commenting code
 
 You can write *comments* in your JavaScript for one line with a double forward slash `//`. If you want to create a multi-line comment, use forward-slash star (or asterisk) `/*` to start and star forward-slash `*/` (or asterisk) to end. It's quite useful for troubleshooting to deactivate code by commenting it out.
 
@@ -56,7 +144,7 @@ In **Visual Studio Code**, you can select (highlight) one or more lines of code,
 
 Generally speaking, use comments sparingly as they tend to clutter your code visually. If you use comments strategically, they can be helpful to you or others—especially if you haven't looked at a *codebase* for a while. Be aware that code may not produce the behavior the author outlines in a comment. Also, if you *refactor* your code, remember to update the comment.
 
-## Add the date
+## delete - Add the date
 
 It would be convenient to see today's date on our webpage. There are a few main steps. First, you'll retrieve a new date from the built-in JavaScript *object*. It looks like this `new Date()`. Next, you can transform the date format by using `toDateString()`. The HTML needs to know where you want to add this information on the page or *document*, so retrieve an element using `getElementById('date')`. The final step is to insert the date string inside the selected element with `innerHTML`.
 
@@ -76,7 +164,7 @@ The main idea to remember here is that you can use JavaScript to select an ID (o
 
 ![Screenshot of Visual Studio Code app JavaScript file](../media/vs-code-js-add-the-date.png)
 
-## Open in browser
+## delete - Open in browser
 
 As before, even though you were just editing the `app.js` file, to preview the changes, you should select the `index.html` file.
 
@@ -84,7 +172,7 @@ To preview using **Visual Studio Code**, select `index.html` and select **Open I
 
 The webpage will open in your default browser.
 
-## Developer tools
+## delete - Developer tools
 
 In **Edge**, the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, you can view **Settings and more** with Alt+X and select **Developer Tools**. Then select the **Console tab** or press Control+2.
 
@@ -92,7 +180,7 @@ In **Edge**, the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alte
 
 In **Chrome**, the keyboard shortcut for **Console** in the Developer Tools is Option+Command+J.
 
-## To do
+## delete - To do
 
 1. Check that the date is showing on the page.
 2. Look for the `console.log` message, "Here's a hidden message."

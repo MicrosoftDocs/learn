@@ -106,7 +106,7 @@ There's no text between the open and closing `<p>` tags so nothing will appear o
 
 Each list item `<li>` element is grouped into an unordered list `<ul>`.
 
-## Link to JavaScript
+## delete - Link to JavaScript
 
 Like CSS, we could add JavaScript directly to the HTML page, but it's better not to. For example, you could create a popup alert, by adding `<script>alert('Hello World')</script>` anywhere in the body. The script tag `<script>` will let us link to an external JavaScript file.
 
