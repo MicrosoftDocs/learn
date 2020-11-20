@@ -9,15 +9,14 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Threat detection with Azure Sentinel analytics
-summary: In this module, you learned how Azure Sentinel Analytics can to help the SecOps team identify and stop cyber attacks.
+summary: In this module, you learned how Azure Sentinel Analytics can help the SecOps team identify and stop cyber attacks.
 abstract: |
-  In this module you will:
+  In this module, you will:
   - Explain the importance of Azure Sentinel Analytics.
   - Explain different types of analytics rules.
   - Create rules from templates.
   - Create new analytics rules and queries using the analytics rule wizard.
   - Manage rules with modifications.
-  
 prerequisites: |
   - Basic knowledge of Azure services
   - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
