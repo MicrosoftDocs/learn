@@ -16,6 +16,8 @@ IT management has started its search for a solution that would satisfy these req
 
 ## Learning objectives
 
+After completing this module, you'll be able to:
+
 - Describe the Azure Stack portfolio
 - Describe basic architecture, core capabilities, and primary use cases of Azure Stack Hub
 - Describe basic architecture, core capabilities, and primary use cases of Azure Stack HCI
