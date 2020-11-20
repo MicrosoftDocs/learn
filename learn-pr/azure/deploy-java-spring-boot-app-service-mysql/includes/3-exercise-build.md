@@ -19,7 +19,7 @@ In your code, replace the placeholders with the values in the following table. T
 |-|-|
 | <YOUR_DATABASE_NAME> | The name of your MySQL server. It should be unique across Azure. |
 | <YOUR_AZURE_REGION> | The Azure region you'll use. You can use `eastus` by default, but we recommend that you use a region close to where you live. To see the full list of available regions, enter `az account list-locations` |
-| <YOUR_MYSQL_PASSWORD> | The password of your MySQL database server. That password should have a minimum of eight characters. The characters should be from three of the following categories: English uppercase letters, English lowercase letters, numbers (0 through 9), and nonalphanumeric characters (!, $, #, %, and so on). |
+| <YOUR_MYSQL_PASSWORD> | The password of your MySQL database server. The password should have a minimum of eight characters. The characters should be from three of the following categories: English uppercase letters, English lowercase letters, numbers 0 through 9, and nonalphanumeric characters (!, $, #, %, and so on). |
 | <YOUR_LOCAL_IP_ADDRESS> | The IP address of the local computer from which you'll run your Spring Boot application. To find the IP address, point your browser to [whatismyip.akamai.com](http://whatismyip.akamai.com/?azure-portal=true). |
 
 Next, create a resource group:
@@ -34,7 +34,7 @@ az group create \
 > [!NOTE]
 > This module uses the `jq` tool, which is installed by default on [Azure Cloud Shell](https://shell.azure.com/) to display JSON data and make it more readable.
 >
-> If you don't want to use the `jq` tool, you can safely remove the `| jq` part of all the commands in this module.
+> If you don't want to use the `jq` tool, you can safely remove the `| jq` part of all commands in this module.
 
 ## Create an instance of Azure Database for MySQL
 
@@ -61,7 +61,7 @@ This script creates a small MySQL server that uses the variables you set up earl
 
 ### Configure a firewall rule for your MySQL server
 
-Azure Database for MySQL is secured by default. Its firewall allows no incoming connections. You need to add a firewall rule to allow the local IP address to access the database server.
+Azure Database for MySQL is secured by default. Its firewall allows no incoming connections. So add a firewall rule to allow the local IP address to access the database server.
 
 Run the following command to open the server's firewall:
 
@@ -103,7 +103,7 @@ az mysql db create \
 Spring Initializr is a web application that generates a Spring Boot project structure for you.
 Spring Initializr doesn't generate any application code, but it gives you a basic project structure and a Maven build specification.
 
-Next you'll generate your application scaffold with three dependencies: `web`, `mysql`, and `data-jpa`.
+You'll generate your application scaffold with three dependencies: `web`, `mysql`, and `data-jpa`.
 You don't need to specify Azure dependencies because you'll run your application locally.
 
 At a command prompt, generate the application:
@@ -131,7 +131,7 @@ spring.jpa.hibernate.ddl-auto=create-drop
 > The configuration property `spring.jpa.hibernate.ddl-auto=create-drop` means that Spring Boot will automatically create a database schema at application start-up and will try to delete the database schema when it shuts down. This property is great for testing, but it shouldn't be used in production!
 
 > [!NOTE]
-> You append `?serverTimezone=UTC` to the configuration property `spring.datasource.url`. This setup tells the Java Database Connectivity (JDBC) driver to use the UTC date format (or Coordinated Universal Time) when connecting to the database. Otherwise, our Java server would not use the same date format as the database, which would result in an error.
+> You append `?serverTimezone=UTC` to the configuration property `spring.datasource.url`. This setup tells the Java Database Connectivity (JDBC) driver to use the Coordinated Universal Time (UTC) date format when you connect to the database. Otherwise, your Java server won't use the same date format as the database, which will result in an error.
 
 Now start your application by using the provided Maven wrapper:
 
@@ -139,16 +139,17 @@ Now start your application by using the provided Maven wrapper:
 ./mvnw spring-boot:run
 ```
 
-Here's a screenshot of the application running for the first time:
+This screenshot shows the application running for the first time:
 
-![The running application.](../media/3-spring-boot-01.png)
+![Screenshot showing the running application.](../media/3-spring-boot-01.png)
 
 ## Code the application
 
-Next, add the below Java code that will use JPA to store and retrieve data from your MySQL server.
-You'll use a JPA Entity class to map a Java Todo object directly to the MySQL Todo table.
+Next, add the following Java code. It uses Java Persistence API (JPA) to store and retrieve data from your MySQL server.
 
-Create a new `Todo` Entity class, next to the `DemoApplication` class, and add the following code:
+You'll use a JPA entity class to map a Java `Todo` object directly to the MySQL `Todo` table.
+
+Next to the `DemoApplication` class, create a new `Todo` entity class. Then add the following code:
 
 ```java
 package com.example.demo;
@@ -229,9 +230,9 @@ public class Todo {
 }
 ```
 
-This class is a domain model mapped on the `todo` table, that will be automatically created by JPA.
+This class is a domain model that's mapped on the `Todo` table. It will be automatically created by JPA.
 
-To manage that class, you'll need a repository. Define a new `TodoRepository` interface in the same package:
+To manage that class, you need a repository. Define a new `TodoRepository` interface in the same package:
 
 ```java
 package com.example.demo;
@@ -242,9 +243,9 @@ public interface TodoRepository extends JpaRepository<Todo, Long> {
 }
 ```
 
-This repository is a JPA repository that Spring Data JPA manages. By extending JpaRepository we get a bunch of generic CRUD methods into our type that allows saving Todo Objects, deleting them and so on.
+This repository is a JPA repository that Spring Data JPA manages. By extending `JpaRepository`, you get a bunch of generic create, read, update, and delete (CRUD) methods for your type. So you can do things like saving and deleting `Todo` objects.
 
-Finish the application by creating a RestController that can publish REST interfaces to store and retrieve data via HTTP. Implement a `TodoController` class in the same package, and add the following code:
+Finish the application by creating a `RestController` that can publish REST interfaces to store and retrieve data by using HTTP. Implement a `TodoController` class in the same package. Then add the following code:
 
 ```java
 package com.example.demo;
@@ -275,22 +276,23 @@ public class TodoController {
 }
 ```
 
-Finally, halt the application and start it again using the following command:
+Finally, stop the application and then start it again by using the following command:
 
 ```bash
 ./mvnw spring-boot:run
 ```
 
 The Spring Boot application should start and connect to your database.
-Here's a screenshot of the application connecting to the database:
 
-![The running application connecting to database.](../media/3-spring-boot-02.png)
+This screenshot shows the application connecting to the database:
+
+![Screenshot showing the running application connecting to database.](../media/3-spring-boot-02.png)
 
 ## Test the application
 
-To test the application, you can use cURL.
+To test the application, you can use `cURL`.
 
-First, create a new "todo" item in the database using the following command:
+First, create a new to-do item in the database:
 
 ```bash
 curl --header "Content-Type: application/json" \
@@ -299,19 +301,19 @@ curl --header "Content-Type: application/json" \
     http://127.0.0.1:8080
 ```
 
-This command should return the created item as follows:
+This command should return the created item:
 
 ```json
 {"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot application correctly!","done":true}
 ```
 
-Next, retrieve the data by using a new cURL request as follows:
+Next, retrieve the data by using a new `cURL` request:
 
 ```bash
 curl http://127.0.0.1:8080
 ```
 
-This command will return the list of "todo" items, including the item you've created, as follows:
+This command returns the list of to-do items, including the item you created:
 
 ```json
 [{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot application correctly!","done":true}]
