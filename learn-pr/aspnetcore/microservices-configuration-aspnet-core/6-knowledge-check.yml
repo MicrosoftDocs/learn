@@ -28,12 +28,12 @@ quiz:
         - content: Azure App Configuration
           isCorrect: false
           explanation: "Azure App Configuration is a centralized configuration service useful in microservices apps. In an ASP.NET Core app, Azure App Configuration is registered as another configuration provider."
-    - content: "The `<feature>` Tag Helper serves what purpose in ASP.NET Core Razor pages?"
+    - content: "The Feature Management library's `<feature>` Tag Helper serves what purpose in ASP.NET Core Razor pages?"
       choices:
-        - content: The "`<feature>` tag is irrelevant to ASP.NET Core Razor Pages. It's used in an Angular view to render content based on a feature's state."
+        - content: The `<feature>` tag is irrelevant to ASP.NET Core Razor Pages. It's used in an Angular view to render content based on a feature's state.
           isCorrect: false
           explanation: "`<feature>` tags are a feature specific to ASP.NET Core Razor pages that help render content based on a feature's state."
-        - content: The "`<feature>` tag conditionally renders content based on a feature's state in ASP.NET Core Razor Pages."
+        - content: The `<feature>` tag conditionally renders content based on a feature's state in ASP.NET Core Razor Pages.
           isCorrect: true
           explanation: "The `<feature>` tag can also be used to show content if any or all features in a list are enabled. To display alternate content when the requirements aren't met, the `negate` attribute can be used."
         - content: "The `<feature>` tag defines a new feature flag, in the Razor markup, to be used in Azure App Configuration."
@@ -44,15 +44,15 @@ quiz:
           explanation: "The `<feature>` tag is only recognized in an ASP.NET Core Razor Pages project's CSHTML files."
     - content: Which of the following statements is **NOT** true about Azure App Configuration?
       choices:
-        - content: Azure App Configuration provides a service to centrally manage application settings and feature flags.
+        - content: App Configuration provides a service to centrally manage app settings and feature flags.
           isCorrect: false
           explanation: "A centralized configuration service is especially useful in apps that are distributed in nature. Use App Configuration to store all the settings for your app and secure their accesses in one place."
         - content: The easiest way to add an App Configuration store to your .NET Core app is through a client library provided by Microsoft.
           isCorrect: false
           explanation: "The NuGet package `Microsoft.Azure.AppConfiguration.AspNetCore` can be added to your projects to configure the Azure Configuration provider for your ASP.NET Core app."
-        - content: Azure App Configuration doesn't encrypt your app settings.
+        - content: App Configuration doesn't encrypt your app settings.
           isCorrect: true
           explanation: "App Configuration encrypts all key values it holds, and it encrypts network communication. Key names and labels are used as indexes for retrieving configuration data and aren't encrypted."
-        - content: Feature Management can be used to test a new business functionality in production.
+        - content: App Configuration can be integrated with the .NET Feature Management library.
           isCorrect: false
-          explanation: "Use feature flags to grant early access to new functionality in production. For example, you can limit access to team members or to internal beta testers."
+          explanation: "Azure App Configuration does integrate with the .NET Feature Management library."

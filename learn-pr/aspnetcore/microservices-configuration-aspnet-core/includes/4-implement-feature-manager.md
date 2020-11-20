@@ -8,7 +8,7 @@ In this unit, you will:
 * Set up feature management support with a .NET library.
 * Make the discount coupon feature configurable.
 * Deploy the SPA to your AKS cluster.
-* Disable the coupons feature.
+* Disable the *coupons* feature.
 
 > [!NOTE]
 > If your Cloud Shell session disconnects due to inactivity, reconnect and run the following command to return to this directory and open the Cloud Shell editor:
@@ -121,7 +121,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
         }
         ```
 
-        `MapFeatureManagement` is a custom extension method that's provided for you. It defines an endpoint at `/features` that responds to HTTP GET requests from the Angular client code. Those requests are delegated to a custom middleware class named `FeatureManagementMiddleware`.
+        `MapFeatureManagement` is a custom extension method that's provided for you in *src/Web/WebSPA/Extensions/EndpointRouteBuilderExtensions.cs*. It defines an endpoint at `/features` that responds to HTTP GET requests from the Angular client code. Those requests are delegated to a custom middleware class named `FeatureManagementMiddleware`.
 
         :::code language="csharp" source="../code/src/web/webspa/extensions/endpointroutebuilderextensions.cs" id="snippet_MapFeatureManagement":::
 
@@ -218,11 +218,11 @@ The preceding markup applies conditional logic against the feature flag by using
 
         :::image type="content" source="../media/4-implement-feature-manager/feature-middleware-response.png" alt-text="The JSON response from the middleware" border="true" lightbox="../media/4-implement-feature-manager/feature-middleware-response.png":::
 
-    1. Notice the JSON data indicates the coupons feature is enabled.
+    1. Notice the JSON data indicates the *coupons* feature is enabled.
 
-## Disable the coupons feature
+## Disable the *coupons* feature
 
-Complete the following steps to disable the coupons feature.
+Complete the following steps to disable the *coupons* feature.
 
 1. In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, set `FeatureManagement__Coupons` to `"False"`. Save your changes.
 
@@ -238,7 +238,7 @@ Complete the following steps to disable the coupons feature.
     deploy/k8s/deploy-application.sh --charts webspa
     ```
 
-1. Refresh the browser tab displaying the `/features` endpoint. Notice the value of the coupons feature's `enabled` property is now `false`.
+1. Refresh the browser tab displaying the `/features` endpoint. Notice the value of the *coupons* feature's `enabled` property is now `false`.
 
 1. After a few seconds, test the configuration change as follows:
     1. In the app, refresh the page. The SPA reloads.
@@ -246,4 +246,4 @@ Complete the following steps to disable the coupons feature.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
     1. Notice the discount coupon elements are no longer present.
 
-In this unit, you made the coupons feature configurable and deployed the updated app. Next, you'll modify the app to use values stored in Azure App Configuration.
+In this unit, you made the *coupons* feature configurable and deployed the updated app. Next, you'll modify the app to use values stored in Azure App Configuration.
