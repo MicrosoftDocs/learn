@@ -1,17 +1,17 @@
 You've created a wonderful API. It doesn't do much, but hey, it exists, and that's more than people who aren't building APIs right now can say.
 
-You created endpoints called CreateProduct, GetProducts, UpdateProduct, and DeleteProduct. Endpoints named that way follow a traditional API-naming pattern - Action/Resource.
+You have endpoints called CreateProduct, GetProducts, UpdateProduct, and DeleteProduct. Endpoints named that way follow a traditional API-naming pattern - Action/Resource.
 
 The "Action/Resource" naming pattern is fine for smaller APIs. Remember, though, that in this simulation, Tailwind Traders is an internet giant. The Products API could get unwieldy in a hurry. For instance, you could imagine that you might have a method called "GetProductByIdAndQuantityAndDate". Not only are these types of method names verbose, but they make code that consumes them look cluttered. Wordy API names also make it harder for developers to figure out how to use the API in their projects.
 
-What you need to do is make this API clean and intuitive. For that, look no further than REST.
+What you need to do is make this API clean and intuitive. For that, you are going to be using the REST pattern.
 
 ## What is REST?
 
 Representational State Transfer, or REST, is an architectural pattern that provides guidance about how to name and structure endpoints in an API. There are a lot of fancy ideas behind REST, but you only need to understand two:
 
-* Action defined by HTTP request method.
-* Organization by resource.
+- Action defined by HTTP request method.
+- Organization by resource.
 
 ### Action defined by HTTP request method
 

@@ -2,12 +2,12 @@ The acronym API stands for "Application Programming Interface". Sounds fancy, do
 
 But what is an "API"? It is an interface or protocol between different parts of an app. A shorter definition would be, "How parts of an app talk to each other".
 
-Let's look at the *parts* of the Products Manager app.
+Let's look at the _parts_ of the Products Manager app.
 
 In the Products Manager app, there are two distinct parts:
 
-* Website
-* Database
+- Website
+- Database
 
 ![Diagram displaying the two parts of the Products Manager application: the web site and the database with the products data.](../media/product-manager-parts.svg)
 
@@ -17,7 +17,7 @@ A better idea would be to put all of the database connection code into a separat
 
 ![Diagram displaying the parts of the application: web site, the API using Azure Functions, and the database with the products data.](../media/product-manager-all-parts.svg)
 
-In this module, you're going to build the API that the Products Manager app will use to interface with the database.
+In this module, you're going to build the API that the Products Manager app will use to interface with the database. You'll use Azure Functions to build this API.
 
 The API will be URLs that you can call, which will return data or perform some action on the database. These URLs are called "HTTP endpoints." These URLs are also sometimes called "Web services."
 
