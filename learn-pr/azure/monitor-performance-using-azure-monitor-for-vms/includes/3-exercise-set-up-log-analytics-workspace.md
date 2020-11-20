@@ -71,7 +71,7 @@ In this unit, you'll:
 
 1. For **Choose a Log Analytics Workspace**, select the Log Analytics workspace you created.
 
-1. Select **Enable** (onboarding Azure Monitor for VMs takes a few minutes).
+1. Select **Enable**.
 
     :::image type="content" source="../media/3-enable-azure-monitor-vms.png" alt-text="Enable Azure Monitor for VMs after selecting the right subscription and Log Analytics workspace.":::
 
