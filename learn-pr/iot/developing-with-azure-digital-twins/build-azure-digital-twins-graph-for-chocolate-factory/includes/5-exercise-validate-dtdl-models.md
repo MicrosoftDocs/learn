@@ -2,7 +2,7 @@ In this unit, you download and install the DTDL Validator tool. This is a comman
 
 ## Download and install the DTDL Validator tool
 
-1. Download the tool from [DTDL Validator](https://docs.microsoft.com/samples/azure-samples/dtdl-validator/dtdl-validator/).
+1. Download the tool from [DTDL Validator](/samples/azure-samples/dtdl-validator/dtdl-validator/).
 
 1. Extract the zip file to an appropriate location. The default location will be in your **Downloads** folder.
 

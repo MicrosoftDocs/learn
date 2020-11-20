@@ -1,7 +1,7 @@
 
 In this exercise, first you download and extract the Azure Digital Twins Explorer tool. Then you set the required permissions for the tool to communicate with your registered **chocolate-app**.
 
-1. Download the [Azure Digital Twins (ADT) explorer](https://docs.microsoft.com/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/), which is a locally hosted web application.
+1. Download the [Azure Digital Twins (ADT) explorer](/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/), which is a locally hosted web application.
 
 1. Extract all the files.
 
