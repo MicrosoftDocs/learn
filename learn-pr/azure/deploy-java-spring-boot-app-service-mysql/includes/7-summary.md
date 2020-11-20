@@ -35,7 +35,7 @@ This command might take a minute to run.
 
 For more information about Spring Data Java Database Connectivity (JDBC), see Spring's [reference documentation](https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/#reference&WT.mc_id=java-10785-ropreddy?azure-portal=true).
 
-For more information about Application Insights Spring Boot Starter for monitoring, see [Azure Application Insights](https://docs.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-java-applicationinsights/?WT.mc_id=java-10785-ropreddy?azure-portal=true).
+For more information about Application Insights for monitoring, see [Azure Application Insights](https://docs.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-java-applicationinsights/?WT.mc_id=java-10785-ropreddy&azure-portal=true).
 
 For more information about using Azure with Java, see [Azure for Java developers](https://docs.microsoft.com/azure/developer/java/?WT.mc_id=java-10785-ropreddy?azure-portal=true) and [Working with Azure DevOps and Java](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/java?WT.mc_id=java-10785-ropreddy?azure-portal=true).
 

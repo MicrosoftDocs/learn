@@ -1,6 +1,6 @@
 Developers can deploy to Azure directly from Eclipse, IntelliJ, or Maven. In the previous exercise, you created a to-do example Java web application and tested it locally. By adding Maven Plugin for Azure App Service to your project, you can deploy your application to Azure App Service.
 
-In this unit, you'll look at your company's options for hosting its applications on Azure App Service. Then you'll see how to add and configure `azure-webapp-maven-plugin` for your Maven project.
+In this unit, you'll see how to add and configure `azure-webapp-maven-plugin` for your Maven project.
 
 ## Add Maven Plugin for Azure App Service to your project
 

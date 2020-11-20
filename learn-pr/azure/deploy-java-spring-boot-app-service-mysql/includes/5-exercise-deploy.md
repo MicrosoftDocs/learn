@@ -10,7 +10,7 @@ Run the following Maven command to configure the deployment. This command helps 
 mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 ```
 
-1. When you're prompted with the **Subscription** option, select the proper subscription by entering the number print in the line start.
+1. When you're prompted with the **Subscription** option, select a subscription by entering the appropriate number at the beginning of the line.
 1. When you're prompted with the **Web App** option, accept the default option `<create>` by pressing Enter.
 1. When you're prompted with the **OS** option, select `linux` by pressing Enter.
 1. Choose the default Java version, 1.8, by pressing Enter.
