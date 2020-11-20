@@ -1,6 +1,6 @@
 In this section, you will be creating an Azure Digital Twins event route that will direct these update events to Azure Event Hubs for further processing.
 
-1.	First, create an event hub namespace, which will receive events from your Azure Digital Twins instance.
+1. First, create an event hub namespace, which will receive events from your Azure Digital Twins instance.
 
     ```cli
     # Create an Event Hubs namespace. Specify a name for the Event Hubs namespace.
@@ -10,9 +10,10 @@ In this section, you will be creating an Azure Digital Twins event route that wi
 1. Create an event hub within the namespace.
 
     ```cli
-    # Create an event hub to receive twin change events. Specify a name for the event hub. 
+    # Create an event hub to receive twin change events. Specify a name for the event hub.
     az eventhubs eventhub create --name <name for your Twins event hub> --resource-group <resource group name> --namespace-name <Event Hubs namespace from above>
     ```
+
 1. Create an [authorization rule](https://docs.microsoft.com/cli/azure/eventhubs/eventhub/authorization-rule?view=azure-cli-latest#az-eventhubs-eventhub-authorization-rule-create) with send and receive permissions.
 
     ```cli
@@ -21,6 +22,7 @@ In this section, you will be creating an Azure Digital Twins event route that wi
     ```
 
 1. Create an Azure Digital Twins endpoint that links your event hub to your Azure Digital Twins instance.
+
     ```cli
     az dt endpoint create eventhub --endpoint-name <name for your Event Hubs endpoint> --eventhub-resource-group <resource group name> --eventhub-namespace <Event Hubs namespace from above> --eventhub <Twins event hub name from above> --eventhub-policy <Twins auth rule from above> -n <your Azure Digital Twins instance name>
     ```
@@ -36,4 +38,3 @@ In this section, you will be creating an Azure Digital Twins event route that wi
     ```
 
 Before moving on, take note of your Event Hubs namespace and resource group, as you will use them again to create another event hub later in this unit.
-
