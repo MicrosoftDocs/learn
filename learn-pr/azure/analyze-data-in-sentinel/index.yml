@@ -40,4 +40,4 @@ units:
 - learn.azure.analyze-data-in-sentinel.8-exercise-detect-threats
 - learn.azure.analyze-data-in-sentinel.9-summary
 badge:
-  uid: learn.azure.analyze-data-in-sentinel
+  uid: learn.azure.analyze-data-in-sentinel.badge
