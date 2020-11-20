@@ -3,9 +3,9 @@ uid: learn.wwl.describe-sql-server-query-plans
 metadata:
   title: Describe SQL Server query plans
   description: "Describe SQL Server query plans"
-  ms.date: 11/13/2020
+  ms.date: 11/20/2020
   author: wwlpublish
-  ms.author: kadelaney
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe SQL Server query plans
