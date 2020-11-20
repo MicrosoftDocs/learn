@@ -3,7 +3,7 @@ uid: learn.azure.threat-hunting-sentinel.4-bookmarks
 metadata:
   title: Save key findings with bookmarks
   description: Save key findings with bookmarks
-  ms.date: 11/02/20
+  ms.date: 11/02/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

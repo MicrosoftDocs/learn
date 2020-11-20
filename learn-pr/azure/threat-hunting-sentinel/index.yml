@@ -3,7 +3,7 @@ uid: learn.azure.threat-hunting-sentinel
 metadata:
   title: Threat hunting with Azure Sentinel
   description: Threat hunting with Azure Sentinel
-  ms.date: 11/02/20
+  ms.date: 11/02/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
