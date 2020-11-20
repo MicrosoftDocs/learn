@@ -85,7 +85,7 @@ In this unit, you'll:
 
 1. Next, select **Performance** at the top, right next to **Map**.
 
-    :::image type="content" source="../media/3-virtual-machine-insights.png" alt-text="Screen shot after of performance after enabling Azure Monitor for VMs." lightbox="../media/3-virtual-machine-insights.png":::
+    :::image type="content" source="../media/3-virtual-machine-insights.png" alt-text="Screen shot of performance after enabling Azure Monitor for VMs." lightbox="../media/3-virtual-machine-insights.png":::
 
 1. Explore the different graphs for: 
     - Logical Disk Performance

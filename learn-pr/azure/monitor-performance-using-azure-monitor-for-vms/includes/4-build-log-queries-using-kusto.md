@@ -45,7 +45,7 @@ In the results pane at the bottom of logs, you will see some of the following fi
 
 The tabular operators can be applied to help the query return more relevant and specific information you wish to examine. Recall that tabular operators help you filter upon extracted data. The results received from Heartbeat seem to be a lot in this example and you know from the previous module that there are only two virtual machines reporting to the Log Analytics workspace. In order to make sure there are only two virtual machines reporting to the workspace, let's add the distinct operator to this query.
 
-:::image type="content" source="../media/4-distinct-operator.png" alt-text="Screen shot showcasing the Heartbeat query with the pipe and a distinct Computer listed." lightbox="../media/4-distinct-operator.png":::
+:::image type="content" source="../media/4-distinct-operator.png" alt-text="Screen shot showcasing the Heartbeat query with a pipe and distinct Computer listed." lightbox="../media/4-distinct-operator.png":::
 
 The results now show only two virtual machines are reporting to the workspace. Heartbeat acts like an inventory of all virtual machines reporting to a specific workspace. The distinct operator produces a table with the distinct combination columns requested within the input query.
 
