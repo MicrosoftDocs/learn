@@ -8,7 +8,7 @@ You can give administrator privileges to a user to Azure Synapse serverless SQL 
 
 4.	Choose **Workspace admin**
 
-    ![Creating a workspace admin in Azure Synapse workspace](../media/azure-synapse-workspace-admin.png)
+    [![Creating a workspace admin in Azure Synapse workspace](../media/azure-synapse-workspace-admin.png)](../media/azure-synapse-workspace-admin.png#lightbox)
 
 5.	Select a User or Security group (security group is a recommended option here)
 6.	Click **Apply**

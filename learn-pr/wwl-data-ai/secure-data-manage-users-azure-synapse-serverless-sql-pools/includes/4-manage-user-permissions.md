@@ -3,13 +3,14 @@ To secure data, Azure Storage implements an access control model that supports b
 You can associate a security principal with an access level for files and directories. These associations are captured in an access control list (ACL). Each file and directory in your storage account has an access control list. When a security principal attempts an operation on a file or directory, An ACL check determines whether that security principal (user, group, service principal, or managed identity) has the correct permission level to perform the operation.
 
 There are two kinds of access control lists:
-1.	**Access ACLs** 
 
-    Controls access to an object. Files and directories both have access ACLs.
+* **Access ACLs** 
 
-2.	**Default ACLs** 
+     Controls access to an object. Files and directories both have access ACLs.
 
-    Are templates of ACLs associated with a directory that determine the access ACLs for any child items that are created under that directory. Files do not have default ACLs.
+* **Default ACLs** 
+
+     Are templates of ACLs associated with a directory that determine the access ACLs for any child items that are created under that directory. Files do not have default ACLs.
 
 Both access ACLs and default ACLs have the same structure.
 
