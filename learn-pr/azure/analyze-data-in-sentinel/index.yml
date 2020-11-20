@@ -32,12 +32,13 @@ products:
 - azure
 units:
 - learn.azure.analyze-data-in-sentinel.1-introduction
-- learn.azure.analyze-data-in-sentinel.2-azure-sentinel-analytics-overview
-- learn.azure.analyze-data-in-sentinel.3-analytics-rules
-- learn.azure.analyze-data-in-sentinel.4-create-rule-from-templates
-- learn.azure.analyze-data-in-sentinel.5-create-rule-from-wizard
-- learn.azure.analyze-data-in-sentinel.6-manage-analytics-rules
-- learn.azure.analyze-data-in-sentinel.7-exercise-detect-threats
-- learn.azure.analyze-data-in-sentinel.8-summary
+- learn.azure.analyze-data-in-sentinel.2-exercise-setup
+- learn.azure.analyze-data-in-sentinel.3-azure-sentinel-analytics-overview
+- learn.azure.analyze-data-in-sentinel.4-analytics-rules
+- learn.azure.analyze-data-in-sentinel.5-create-rule-from-templates
+- learn.azure.analyze-data-in-sentinel.6-create-rule-from-wizard
+- learn.azure.analyze-data-in-sentinel.7-manage-analytics-rules
+- learn.azure.analyze-data-in-sentinel.8-exercise-detect-threats
+- learn.azure.analyze-data-in-sentinel.9-summary
 badge:
   uid: learn.azure.analyze-data-in-sentinel
