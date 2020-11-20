@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-stack-hci-plan-deploy.3-hardware
+uid: learn.azure.azure-stack-hci-plan-deploy.5-verify-deployment
 metadata:
   title: Unit title
   description: TODO
@@ -11,4 +11,4 @@ metadata:
 title: Unit title
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-hardware.md)]
+  [!include[](includes/5-verify-deployment.md)]

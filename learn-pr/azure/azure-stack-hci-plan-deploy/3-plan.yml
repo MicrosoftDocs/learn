@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-stack-hci-plan-deploy.4-integration-options
+uid: learn.azure.azure-stack-hci-plan-deploy.3-plan
 metadata:
   title: Unit title
   description: TODO
@@ -11,4 +11,4 @@ metadata:
 title: Unit title
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-integration-options.md)]
+  [!include[](includes/3-plan.md)]

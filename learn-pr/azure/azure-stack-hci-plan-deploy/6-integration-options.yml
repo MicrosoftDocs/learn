@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-stack-hci-plan-deploy.6-verify-deployment
+uid: learn.azure.azure-stack-hci-plan-deploy.6-integration-options
 metadata:
   title: Unit title
   description: TODO
@@ -11,4 +11,4 @@ metadata:
 title: Unit title
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-verify-deployment.md)]
+  [!include[](includes/6-integration-options.md)]

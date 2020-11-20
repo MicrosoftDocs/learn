@@ -27,10 +27,10 @@ products:
 units:
 - learn.azure.azure-stack-hci-plan-deploy.1-introduction
 - learn.azure.azure-stack-hci-plan-deploy.2-workloads
-- learn.azure.azure-stack-hci-plan-deploy.3-hardware
-- learn.azure.azure-stack-hci-plan-deploy.4-integration-options
-- learn.azure.azure-stack-hci-plan-deploy.5-deploy
-- learn.azure.azure-stack-hci-plan-deploy.6-verify-deployment
+- learn.azure.azure-stack-hci-plan-deploy.3-plan
+- learn.azure.azure-stack-hci-plan-deploy.4-deploy
+- learn.azure.azure-stack-hci-plan-deploy.5-verify-deployment
+- learn.azure.azure-stack-hci-plan-deploy.6-integration-options
 - learn.azure.azure-stack-hci-plan-deploy.7-knowledge-check
 - learn.azure.azure-stack-hci-plan-deploy.8-summary
 badge:
