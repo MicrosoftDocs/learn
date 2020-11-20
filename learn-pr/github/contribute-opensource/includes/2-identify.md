@@ -2,7 +2,7 @@ In this unit, we discuss how you can get started with open-source contributions.
 
 There are many ways to contribute to open-source projects. Making your first contribution can often be a scary experience. But it shouldn't be. Open-source is a place for everyone and contributions happen at all levels.
 
-## Finding a open source project that needs contributions
+## Finding a open-source project that needs contributions
 
 You can get started by thinking about the projects you already use, or want to use. Contributing is easier when you're familiar with the project and its community.
 
@@ -32,7 +32,7 @@ Something worth mentioning here is that every open-source community is different
 
 Most projects will have these documents at the top level of the repository.
 
-- **LICENSE**: the project must contain an [open-source](https://choosealicense.com/). If the project doesn't have a license, it's not open-source.
+- **LICENSE**: the project must contain an [open-source licence](https://choosealicense.com/). If the project doesn't have a license, it's not open source.
 - **README**: the README usually serves as the welcome page for the project. It usually provides information on how to get started using the project. It's also common for it to add information on how to engage with the community.
 - **CONTRIBUTING**: as its name suggests this document provides guidance on how to contribute to the project. It usually describes how the contribution process works and details on how to set your development environment.
 - **CODE_OF_CONDUCT**: the code of conduct sets ground rules for community members. By doing so, it helps make the community a safe and welcoming environment for all.
@@ -64,9 +64,9 @@ As you explore issues, you might also notice that some have other issues or pull
 
 ## Sponsoring a project
 
-There are many ways to contribute to open-source. You can financially support the folks who build and maintain the open-source ecosystem through code, leadership, mentorship, design, and beyond.
+There are many ways to contribute to open source. You can financially support the folks who build and maintain the open-source ecosystem through code, leadership, mentorship, design, and beyond.
 
-Open-source heavily relies on volunteer work. GitHub Sponsors allow you to fund projects and individuals. To help them keep doing their open-source work, while giving them the recognition they deserve.
+Open source heavily relies on volunteer work. GitHub Sponsors allow you to fund projects and individuals. To help them keep doing their open-source work, while giving them the recognition they deserve.
 
 If a project is eligible for sponsorship through GitHub sponsors, you'll find a **Sponsor** button on the project's main page.
 

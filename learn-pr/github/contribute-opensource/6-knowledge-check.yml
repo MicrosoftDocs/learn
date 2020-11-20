@@ -40,12 +40,12 @@ quiz:
           explanation: "You can either directly request a review or add a comment to your pull request to discuss anything about it."
         - content: Send an email to a random committer on the project
           isCorrect: false
-          explanation: "Contacting maintainers via their private inbox is not an effective means of discussing an open source project. Always use the public communication channels indicated by the project."
+          explanation: "Contacting maintainers via their private inbox is not an effective means of discussing an open-source project. Always use the public communication channels indicated by the project."
     - content: What is needed before creating a pull request on GitHub?
       choices:
         - content: Send a patch file to maintainers via email
           isCorrect: false
-          explanation: "Contributions sent via email is not an effective way to contribute to open source projects. Use the provided tools on GitHub."
+          explanation: "Contributions sent via email is not an effective way to contribute to open-source projects. Use the provided tools on GitHub."
         - content: Clone a repo, commit changes and force push
           isCorrect: false
           explanation: "While you can clone any public GitHub repository, by default you don't have the right to push any modifications. Fork the repository to create your own copy first."
