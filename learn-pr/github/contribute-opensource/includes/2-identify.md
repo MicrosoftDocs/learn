@@ -75,3 +75,18 @@ If a project is eligible for sponsorship through GitHub sponsors, you'll find a 
 You can select the sponsorship tier and if you want your contribution to be public.
 
 :::image type="content" source="../media/2-tier.png" alt-text="Screenshot showing sponsorship tiers":::
+
+## Unit Recap
+
+In this unit, you learned how to get started with open-source contributions. From choosing a project to work on to use GitHub issues and labels to identify tasks to work on.
+
+Here is a handy checklist when interacting with a project for the first time:
+
+- Does it have a license?
+- Are issues and pull requests discussions used actively by maintainers and contributors?
+- Does the project use labels like `help wanted` or `good first issue` for newcomers?
+- Does the project have a Code of Conduct?
+- Does the project have clear Contributing Guidelines?
+
+Finally, remember that all contributions are welcome, and the open-source ecosystem greatly benefits from your ideas and participation.
+There are many ways to contribute to open source, from submitting code or engaging in project discussions to sponsoring projects through GitHub sponsors.
