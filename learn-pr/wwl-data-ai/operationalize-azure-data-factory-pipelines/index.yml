@@ -11,14 +11,15 @@ metadata:
 title: Operationalize your Azure Data Factory pipelines
 summary: In this module, you will learn how you can publish your Azure Data Factory work between different environments.
 abstract: |
-  - Introduction
-  - Understand the language support in adf
-  - Manage source control of azure data factory solutions
-  - Monitor azure data factory pipelines
-  - Set-up alerts for adf
-  - Re-run adf pipelines
-  - Knowledge check
-  - Summary
+  In this module, you will:
+  - Configure a git repository with a development factory
+  - Create and merge a feature branch
+  - Deploy a release pipeline
+  - Visually monitor pipeline runs
+  - Integrate with Azure Monitor
+  - Set up alerts
+  - Rerun pipeline runs
+  - Learn about Azure Data Factory security
 prerequisites: |
   The student should be able to:
   - Log into the Azure portal
