@@ -18,7 +18,7 @@ This will open the Synapse Studio related to the Synapse workspace you navigated
 
 3. This will start the Knowledge center wizard. 
  
-    ![Knowledge center wizard](../media/knowledge-center-wizard.png)
+    [![Knowledge center wizard](../media/knowledge-center-wizard.png)](../media/knowledge-center-wizard.png#lightbox)
 
 4. Select **Use samples immediately**, and on the right side select **Query data with SQL**, and hit **Use sample**.
  
@@ -26,21 +26,21 @@ This will open the Synapse Studio related to the Synapse workspace you navigated
 
 5. A new SQL Script will be generated, querying the Azure Open Datasets and it will look like this:
  
-    ![Viewing knowledge center scripts](../media/view-knowledge-center-scripts.png)
+    [![Viewing knowledge center scripts](../media/view-knowledge-center-scripts.png)](../media/view-knowledge-center-scripts.png#lightbox)
 
 6. Select the query you want to execute and hit Run button in command menu. Once query is executed results will appear in the bottom part of the screen:
  
-    ![Executing scripts](../media/execute-scripts.png)
+    [![Executing scripts](../media/execute-scripts.png)](../media/execute-scripts.png#lightbox)
 
 7. You can switch between Table and Chart mode of displaying results. Choosing Chart allows you to visualize the results immediately – I have executed the last query in the sample script and visualized the number of rides available in the data set.
  
-    ![Visualizing script execution results](../media/visualize-script-execution-results.png)
+    [![Visualizing script execution results](../media/visualize-script-execution-results.png)](../media/visualize-script-execution-results.png#lightbox)
 
 That’s it! In just a few clicks, you ran the query on serverless SQL pool and visualized the results.
 
 You can now start querying your own data. Best way to start is to open your Storage and start browsing the files. You can do that by clicking on Data in the menu on the left side, click on Linked tab, select storage and filesystem/container you are interested in. Then navigate to the files you would like to start querying.
  
-![Viewing files in a data lake](../media/view-files-data-lake.png)
+[![Viewing files in a data lake](../media/view-files-data-lake.png)](../media/view-files-data-lake.png#lightbox)
 
 1. Right click on the file and select New SQL Script > SELECT TOP 100 rows.
  
