@@ -4,7 +4,7 @@ How can a business address their digital twin needs?
 
 And how can Microsoft help?
 
-On completing this module, you will be able to:
+On completing this module, you'll be able to:
 
 - Describe how Microsoft defines digital twins, the core concepts, and building blocks to implement a Digital Twin solution
 - List customer goals for digital twin applications
