@@ -1,5 +1,5 @@
 
-Azure Monitor Logs are based upon Azure Data Explorer. A Log Analytics workspace is the equivalent of a database inside the Azure Data Explorer service. For the most part, log data table structure is the same and both resources use the Kusto Query Language (KQL) to extract data. In order to unlock the full range of possibilities with Azure Monitor Logs, you will need to use log queries. These queries help you obtain a deep understanding of data collected in Azure Monitor Logs. The underlying query language allows for complex operations with minimal code. Kusto is a rich language designed to be easy to read and author. All data generated in Azure Monitor Logs is available to both collect and examine through log queries. Different Azure data sources write to different log tables. 
+Several Azure services use Azure Monitor Logs to store data and use the Kusto Query Language (KQL) to extract data. Azure Security Center, Azure Sentinel, and Azure Monitor Application Insights all use Log Analytics workspaces to store and query logs. Azure Monitor Logs are based upon Azure Data Explorer. A Log Analytics workspace is the equivalent of a database inside the Azure Data Explorer service. In order to unlock the full range of possibilities with Azure Monitor Logs, you will need to use log queries. These queries help you obtain a deep understanding of data collected in Azure Monitor Logs. The underlying query language allows for complex operations with minimal code. Kusto is a rich language designed to be easy to read and author. All data generated in Azure Monitor Logs is available to both collect and examine through log queries. Different Azure data sources write to different log tables. 
 
 Log Analytics is the primary tool used for writing log queries and analyzing results. Even if a log query is used elsewhere in Azure Monitor, you'll typically write and test the query using Log Analytics.
 
@@ -39,13 +39,13 @@ The Kusto Query Language is case-sensitive. Language keywords are typically writ
 
 One of the tables captured by Azure Monitor is the Heartbeat table. This table contains a number of useful columns. Heartbeat will capture data on everything from OS type, OS major version, resource ID, resource group, etc. To understand all columns that make up this table, run a query with only Heartbeat will start to show what makes up this table.
 
-:::image type="content" source="../media/4-heartbeat-query.png" alt-text="Screen shot of running Heartbeat as the most basic query to start." lightbox="../media/4-heartbeat-query.png":::
+:::image type="content" source="../media/4-heartbeat-query.png" alt-text="Screen shot of running the Heartbeat query." lightbox="../media/4-heartbeat-query.png":::
 
 In the results pane at the bottom of logs, you will see some of the following fields in the screenshot: TimeGenerated [UTC], SourceComputerId, ComputerIP, Computer, Category, OSType, and so on. Each of these columns is a data point you can filter on.
 
 The tabular operators can be applied to help the query return more relevant and specific information you wish to examine. Recall that tabular operators help you filter upon extracted data. The results received from Heartbeat seem to be a lot in this example and you know from the previous module that there are only two virtual machines reporting to the Log Analytics workspace. In order to make sure there are only two virtual machines reporting to the workspace, let's add the distinct operator to this query.
 
-:::image type="content" source="../media/4-distinct-operator.png" alt-text="Screen shot showcasing Heartbeat query with the pipe and a distinct Computer listed." lightbox="../media/4-distinct-operator.png":::
+:::image type="content" source="../media/4-distinct-operator.png" alt-text="Screen shot showcasing the Heartbeat query with a pipe and distinct Computer listed." lightbox="../media/4-distinct-operator.png":::
 
 The results now show only two virtual machines are reporting to the workspace. Heartbeat acts like an inventory of all virtual machines reporting to a specific workspace. The distinct operator produces a table with the distinct combination columns requested within the input query.
 
