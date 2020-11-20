@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.pool-stored-procedures-from-synapse-pipelines
+title: Use Azure Synapse serverless SQL pool stored procedures from Synapse Pipelines
+metadata:
+  title: Use Azure Synapse serverless SQL pool stored procedures from Synapse Pipelines
+  description: "Use Azure Synapse serverless SQL pool stored procedures from Synapse Pipelines"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-pool-stored-procedures-synapse-pipelines.md)]
