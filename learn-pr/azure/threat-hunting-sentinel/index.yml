@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Threat hunting with Azure Sentinel
-summary: TODO
+summary: Threat hunting with Azure Sentinel
 abstract: |
   In this module you will:
   - Use queries to hunt threats.
