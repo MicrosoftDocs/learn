@@ -43,7 +43,7 @@ Azure Backup implements backup of cloud-based and on-premises workloads, includi
 - Long-term storage of backups of Windows servers performed by using Microsoft Azure Backup Server with Recovery Services Agent installed on the Microsoft Azure Backup Server.
 - Long-term storage of backups of Windows servers performed by using System Center Data Protection Manager (DPM) with Recovery Services Agent installed on the DPM server.
 
-You can take advantage of the Azure Backup integration with Azure Stack HCI to offload SQL Server backups to cloud-based long-term storage hosted by Azure Site Recovery Vault, eliminating the need for alternative forms of backups. Azure Backup Server and System Center DPM fully support SQL Server protection.
+You can take advantage of the Azure Backup integration with Azure Stack HCI to offload SQL Server backups to cloud-based long-term storage hosted by Azure Site Recovery Vault <!--- This should probably be Recovery Services Vault --->, eliminating the need for alternative forms of backups. Azure Backup Server and System Center DPM fully support SQL Server protection.
 
 ### Integrating Azure Stack HCI with Azure Site Recovery
 
