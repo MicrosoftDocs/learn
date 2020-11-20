@@ -1,4 +1,5 @@
-This module introduces Azure Stack HCI technologies. You'll learn about the core Azure Stack HCI technologies, including Hyper-V, Failover Clustering, Windows Server software-defined storage, and Windows Server software-defined networking. 
+Before you explore Microsoft Azure Stack HCI architecture and functionality, it is important to understand the technologies that serve as its underlying core components. 
+In this module, you'll learn about the core Azure Stack HCI technologies, including Hyper-V, Failover Clustering, Windows Server software-defined storage, and Windows Server software-defined networking. 
 
 ## Scenario
 
