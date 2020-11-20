@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: Azure Monitor organizes log data into tables.
       isCorrect: true
-      explanation: Azure Monitor organizes log data in tables, each composed of multiple columns. Each query data that's organized into a hierarchy similar to SQL (databases, tables, and columns).
+      explanation: Azure Monitor organizes log data in tables, each composed of multiple columns. Every query contains data that's organized into a hierarchy similar to SQL (databases, tables, and columns).
     - content: Azure Monitor organizes log data into tabular operators.
       isCorrect: false
       explanation: A tabular operator is a statement that produces data arranged in a table-like mesh of columns and rows.
