@@ -1,7 +1,7 @@
 In the previous topic we have discussed the transfer of data to or from a SQL Pool within the workspace of Synapse Analytics using Azure AD with the Azure Synapse Apache Spark Pool to Synapse SQL connector.
 Another way to authenticate is using SQL Auth, instead of Azure AD with the Azure Synapse Apache Spark Pool to Synapse SQL connector.
 
-Why is this important?
+Why is this good to know?
 Currently, the Azure Synapse Apache Spark Pool to Synapse SQL connector does not support a token-based authentication to a dedicated SQL pool that is outside of the workspace of Synapse Analytics. 
 In order to establish and transfer data to a dedicated SQL pool that is outside of the workspace without Azure AD, you would have to use SQL Auth. 
 

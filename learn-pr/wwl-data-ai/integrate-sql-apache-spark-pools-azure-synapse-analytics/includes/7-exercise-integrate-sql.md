@@ -1,4 +1,4 @@
-In the following exerercise, we are going to use a fictuous company called Tailwind Traders. 
+In the following exercise, we are going to use a fictional company called Tailwind Traders. 
 The use case for Integrating SQL and Spark pools in Azure Synapse Analytics will be outlined.
 Continuously you will be shown exercises to see how you can integrate SQL and Spark Pools in Azure Synapse Analytics.
 However, it does require a set-up with instructions that can be found here:
@@ -89,7 +89,7 @@ The Azure Synapse Apache Spark pool to Synapse SQL connector is a data source im
     display(dfTopPurchasesFromSql.limit(10))
     ```
 
-    ![The dataframe code and output are displayed.](../media/df-top-purchases.png)
+    ![The dataframe code and output are displayed.](../media/dataframe-top-purchases.png)
 
 8. Execute the following in a new cell to join the data from the sales Parquet files and the `TopPurchases` SQL pool:
 

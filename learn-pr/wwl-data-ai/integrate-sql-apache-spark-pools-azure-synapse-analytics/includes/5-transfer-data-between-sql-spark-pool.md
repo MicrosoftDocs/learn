@@ -8,7 +8,7 @@ In addition to the above, the connector currently works only in scala.
 In this section, we will focus on transferring data to or from a dedicated SQL Pool that is attached within the workspace of Synapse Analytics. 
 It is based on the virtue that it goes through Azure AD.
 
-The first thing that is important is that the Constants and the SqlAnalyticsConnector are set up as shown below:
+The first thing that is imperative, is that the Constants and the SqlAnalyticsConnector are set up as shown below:
 
 ```scala
  import com.microsoft.spark.sqlanalytics.utils.Constants
