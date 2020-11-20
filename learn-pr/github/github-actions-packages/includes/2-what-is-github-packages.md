@@ -17,7 +17,7 @@ GitHub Packages is compatible with common package management clients, so you can
 
 Are you publishing an open-source package? Most open-source projects have their code on GitHub. So you can publish prerelease versions of your packages for testing within your community, and then easily promote specific versions to the public registry of your choice.
 
-:::image type="content" source="../media/2-github-packages-npmpackage.png" alt-text="GitHub NPM package page, with description, and instructions about how to install it." border="false":::
+:::image type="content" source="../media/2-github-packages-npm-package.png" alt-text="GitHub NPM package page, with description, and instructions about how to install it." border="false":::
 
 At the time of writing, GitHub Packages is compatible with the following package managers: 
 
@@ -37,7 +37,7 @@ images. Once published - in public or in private - these images can be used from
 - As a step to execute into your Continuous Integration (CI) / Continuous Deployment (CD) workflow with [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/finding-and-customizing-actions#referencing-a-container-on-docker-hub).
 - On a server or a cloud service.
 
-:::image type="content" source="../media/2-github-packages-dockerimage.png" alt-text="GitHub container image page, with image versions listing, statistics and instructions about how to install it." border="false":::
+:::image type="content" source="../media/2-github-packages-docker-image.png" alt-text="GitHub container image page, with image versions listing, statistics and instructions about how to install it." border="false":::
 
 ## Unified identity and permissions
 
