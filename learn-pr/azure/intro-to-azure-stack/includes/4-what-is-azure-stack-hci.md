@@ -11,7 +11,7 @@ Azure Stack HCI allows you to deploy Windows and Linux-based virtualized and con
 > In the context of software-defined technologies, the term *hyper-convergence* designates a system architecture that combines compute, storage, and networking resources by relying on software-based and hardware-based virtualization. Physical servers and their hardware components form a pool of resources, which you can arbitrarily allocate to individual server workloads.
 
 > [!NOTE]
-> As with Azure Stack Hub, Azure Stack HCI clusters are available from a range of hardware vendors, with configuration validated and certified by Microsoft.
+> As with Azure Stack Hub, Azure Stack HCI clusters are available as *integrated systems* from a range of hardware vendors, with configuration validated and certified by Microsoft.
 
 The clustered servers share common configuration and resources by leveraging the Windows Server Failover Clustering feature. Its shared resources include:
 
