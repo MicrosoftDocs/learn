@@ -14,9 +14,9 @@ Bodystorming is the process of prototyping interactions, digital objects, UI, an
 
 ## Acting and feedback
 
-After you've been through a bodystorming session or two, the next step is to stage how a user would move through your Mixed Reality experience. The acting phase is all about testing ideas in three-dimensional space, but also about allowing others to watch the interactions and events from the outside and provide feedback. This is especially important when you have non-technical team members or stakeholders. For example, if you're exploring a mixed reality experience designed for hospitals, acting out your thinking to a medical professional can provide invaluable feedback.
+After you've been through a bodystorming session or two, the next step is to stage how a user would move through your mixed-reality experience. The acting phase is all about testing ideas in three-dimensional space, but also about allowing others to watch the interactions and events from the outside and provide feedback. This is especially important when you have non-technical team members or stakeholders. For example, if you're exploring a mixed-reality experience that's designed for hospitals, acting out your thinking to a medical professional can provide invaluable feedback.
 
-:::image type="content" source="../media/acting-feedback.png" alt-text="Photograph of a design team using crafting materials to act out and receive feedback on Mixed Reality content and interactions.":::
+:::image type="content" source="../media/acting-feedback.png" alt-text="Photograph of a design team using crafting materials to act out and receive feedback on mixed-reality content and interactions.":::
 
 ## Storyboarding
 
