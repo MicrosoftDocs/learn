@@ -41,6 +41,9 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. A green checkmark icon denotes a healthy service. The page refreshes automatically, every 10 seconds.
 
+    > [!NOTE]
+    > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
+
 1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
     :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../../media/microservices/eshop-spa.png":::
@@ -53,11 +56,8 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 1. Scroll to the bottom of the checkout page. Notice the presence of a discount coupon feature comprised of the following elements:
     * **See Available Coupons** link
-    * **HAVE A DISCOUNT CODE?** label
     * **Coupon number** text box
     * **APPLY** button
-
-    <!--TODO: retake this screenshot to include the new link-->
 
     :::image type="content" source="../../microservices-configuration-aspnet-core/media/4-implement-feature-manager/discount-coupon-elements.png" alt-text="Discount coupon elements":::
 
@@ -110,7 +110,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
 
         The preceding code resolves the call to `AddFeatureManagement`.
 
-        As mentioned before, for the SPA to query the coupon's feature state, you need to expose an endpoint.
+        As mentioned before, for the SPA to query the coupon's feature state, you need to expose an endpoint. That endpoint is exposed in the next step.
 
     1. In the `Configure` method, replace the comment `// Add the MapFeatureManagement code` with the following code. Save your changes.
 
@@ -133,7 +133,7 @@ To add the `featureFlag` directive to the Angular views, run the following scrip
 deploy/implement-directive.sh
 ```
 
-The preceding script uses the Linux `sed` command to modify two Angular views. The `*featureFlag="'coupons'"` attribute is added to the subtotal and discount code `div` elements in *orders-detail/orders-detail.component.html* and *orders-new/orders-new.component.html* in *~/clouddrive/aspnet-learn/src/src/Web/WebSPA/Client/src/modules/orders*. The relevant portions of *orders-detail.component.html* are highlighted below.
+The preceding script uses the Linux `sed` command to modify two Angular views. The `*featureFlag="'coupons'"` attribute is added to the subtotal and discount code `div` elements in the *src/Web/WebSPA/Client/src/modules/orders* directory's *orders-detail/orders-detail.component.html* and *orders-new/orders-new.component.html* files. The relevant portions of *orders-detail.component.html* are highlighted below.
 
 :::code language="html" source="../code/src/web/webspa/client/src/modules/orders/orders-detail/orders-detail.component.html" highlight="1,6":::
 
@@ -154,7 +154,7 @@ Apply the following changes to the file *src/Web/WebSPA/Views/CouponStatus/Index
 
     The preceding code makes the `Microsoft.FeatureManagement.AspNetCore` assembly's Tag Helpers available inside the view.
 
-1. Replace the following `<partial>` Tag Helper:
+1. Replace the following ASP.NET Core `<partial>` Tag Helper:
 
     ```cshtml
     <partial name="_AvailableCoupons" model="allAvailableCoupons" />
@@ -171,7 +171,7 @@ Apply the following changes to the file *src/Web/WebSPA/Views/CouponStatus/Index
     </feature>
     ```
 
-The preceding markup applies conditional logic against the feature flag by using the `<feature>` Tag Helper. The Tag Helper's `name` property represents the feature flag name&mdash;*Coupons* in this case. The `negate` property is used to display alternate content when the *Coupons* feature flag is disabled. When the discount coupon feature is:
+The preceding markup applies conditional logic against the feature flag by using the Feature Management library's `<feature>` Tag Helper. The Tag Helper's `name` property represents the feature flag name&mdash;*Coupons* in this case. The `negate` property is used to display alternate content when the *Coupons* feature flag is disabled. When the discount coupon feature is:
 
 * Disabled, a **You're not subscribed to this feature.** message displays.
 * Enabled, a list of coupon codes that haven't been redeemed displays.
@@ -184,7 +184,7 @@ The preceding markup applies conditional logic against the feature flag by using
     deploy/k8s/build-to-acr.sh --services webspa
     ```
 
-    The script starts an [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) for the WebSPA service. A variation of the following line confirms that the WebSPA Docker image was pushed to ACR:
+    The script starts an [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) for the *WebSPA* app. A variation of the following line confirms that the *WebSPA* Docker image was pushed to ACR:
 
     ```console
     2020/10/26 21:57:23 Successfully pushed image: eshoplearn20201026212601002.azurecr.io/webspa:linux-latest
@@ -193,13 +193,13 @@ The preceding markup applies conditional logic against the feature flag by using
     > [!IMPORTANT]
     > The *WebSPA* project is built in ACR, rather than local to Cloud Shell, to take advantage of robust build hosts in ACR. If the ACR quick task fails, inspect the output for troubleshooting information. Run the above script again to attempt additional builds.
 
-1. Run the following script to deploy the updated WebSPA to AKS:
+1. Run the following script to deploy the updated SPA to AKS:
 
     ```bash
     deploy/k8s/deploy-application.sh --charts webspa
     ```
 
-    The preceding script uses Helm to deploy the WebSPA Docker image from your ACR instance to AKS. The script runs the `kubectl get pods` command, whose output contains entries for the SPA's pods. The `STATUS` and `AGE` column values indicate that the deployments were successful:
+    The preceding script uses Helm to deploy the *WebSPA* Docker image from your ACR instance to AKS. The script runs the `kubectl get pods` command, whose output contains entries for the SPA's pods. The `STATUS` and `AGE` column values indicate that the deployments were successful:
 
     ```console
     NAME                              READY   STATUS              RESTARTS   AGE
@@ -211,7 +211,7 @@ The preceding markup applies conditional logic against the feature flag by using
     1. In the app, refresh the page. The SPA reloads.
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
-    1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is still present.
+    1. Notice the discount coupon elements are still present.
 
 1. Verify the middleware is functioning as intended as follows:
     1. In another browser tab, navigate to `<your app's IP address>/features?featureName=coupons`:
@@ -244,6 +244,6 @@ Complete the following steps to disable the coupons feature.
     1. In the app, refresh the page. The SPA reloads.
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
-    1. Notice the **:::no-loc text="HAVE A DISCOUNT CODE?":::** field is no longer present.
+    1. Notice the discount coupon elements are no longer present.
 
 In this unit, you made the coupons feature configurable and deployed the updated app. Next, you'll modify the app to use values stored in Azure App Configuration.
