@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.operationalize-your-azure-data-factory-pipelines.re-run-azure-data-factory-pipelines
-title: Re-run Azure Data Factory pipelines
+title: Rerun Azure Data Factory pipelines
 metadata:
   title: Manage ADF security
-  description: "Re-run Azure Data Factory pipelines"
+  description: "Rerun Azure Data Factory pipelines"
   ms.date: 11/20/2020
   author: wwlpublish
   ms.author: chtestao
