@@ -1,4 +1,4 @@
-<!-- Is this supposed to be a heading? -->Use Azure Sentinel to hunt for security threats across on-premises and cloud environments using interactive queries and other tools.
+Use Azure Sentinel to hunt for security threats across on-premises and cloud environments using interactive queries and other tools.
 
 Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Endpoint Protection, and Microsoft Azure Information Protection.
 
@@ -16,7 +16,7 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-To get the best learning experience from this module, you should have knowledge of, and experience with, the following:<!-- The following bullets don't go with this sentence. For example, this reads, "...knowledge of and experience with familiarity with security operations." -->
+To get the best learning experience from this module, you should have the following:
 
 - Familiarity with security operations in an organization.
 - Basic experience with Azure services.

@@ -1,13 +1,14 @@
 You can use the hunting livestream to test queries against live events, as they occur. Livestream provides interactive sessions that can notify you when matching events for your query are found.
 
-A livestream is always based on a query. Typically, the query is used to narrow down streaming log events, so you see<!-- See is a non-accessibility sight word. Please replace. --> only the events that are related to your threat hunting efforts. You can use a livestream to:
+A livestream is always based on a query. Typically, the query is used to narrow down streaming log events, so only the events that are related to your threat hunting efforts are presented. You can use a livestream to:
 
 - Test new queries against live events.
 - Generate notifications for threats.
 - Launch investigations.
 
-## Create a livestream
+Livestream queries refresh every 30 seconds and generate Azure notifications of any new results from the query.
 
+## Create a livestream
 
 To create a livestream from the **Hunting** page in Azure Sentinel, select the **Livestream** tab and then select **New livestream** from the toolbar.  
 
@@ -15,12 +16,22 @@ To create a livestream from the **Hunting** page in Azure Sentinel, select the *
 
 ## View a livestream
 
-On the new **Livestream** page, specify a name for the livestream session and the query that will provide results for the session.
+On the new **Livestream** page, specify a name for the livestream session and the query that will provide results for the session. Notifications for livestream events will appear in your Azure Portal notifications.
 
 ## Manage a livestream
 
-You can play the livestream to view<!-- "view" is a sight word. Other options might be observe, can observe, review, refer to, notice, note, access. Please search for this term and replace. --> results or save the livestream for later reference. Saved livestreams can be viewed from the **Livestream** tab on the **Hunting** page. You can also elevate a livestream session to an alert by selecting **Elevate to alert** from the command bar of any livestream.
+You can play the livestream to review results or save the livestream for later reference. Saved livestreams can be viewed from the **Livestream** tab on the **Hunting** page. You can also elevate events from a livestream session to an alert by selecting the events and then selecting **Elevate to alert** from the command bar.
 
-:::image type="content" source="../media/4-livestream-session.png" alt-text="A livestream session in Azure Sentinel" :::<!-- This image is not present in the media folder. Are we referring to the "5-new-livestream.png" image?  -->
+You could use a livestream to track baseline activities for Azure resource deletion at Contoso and identify other Azure resources that should be tracked. For example, the following query will return any Azure Activity events that recorded a deleted resource:
 
-<!-- Jason: This unit also seems light. Do you think it adequately covers the topics from the design doc? (Which are: Add events to livestream, View livestream sessions, Manage livestream events and alerts). If so, consider adding: images, tables, lists, Contoso examples, analogies. If not, maybe cover one of the missing topics in greater depth. --> 
+```kusto
+  AzureActivity
+  | where OperationName has 'delete'
+  | where ActivityStatus == 'Accepted'
+  | extend AccountCustomEntity = Caller
+  | extend IPCustomEntity = CallerIpAddress
+  ```
+
+## Use a livestream query to create an analytics rule
+
+If the query returns significant results, you could select **Create analytics rule** from the command bar to create an analytics rule based on the query. After refining the query to identify the specific resources, this rule could generate alerts or incidents when the resources are deleted.
