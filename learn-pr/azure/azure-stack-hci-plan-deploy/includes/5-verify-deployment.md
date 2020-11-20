@@ -4,6 +4,8 @@ Before deploying production workloads into an Azure Stack HCI cluster, you shoul
 - validation of DCB configuration of the cluster by using the Validate-DCB tool.
 - validation of cluster performance by using synthetic workloads.
 
+The validation process should be also part of the cluster deployment process in the Contoso's proof-of-concept environment.
+
 ## Validation of cluster configuration by using Failover Clustering validation tools
 
 Windows Server Failover Clustering feature offers built-in functionality that provides the ability to run a set of tests on a collection of servers, networks, and associated storage that are either part of an existing cluster or are supposed to form a new one. The validation process tests the underlying hardware and software to assess whether the current configuration adheres to Microsoft support requirements. The test identifies all misconfigurations and generates a report containing a comprehensive summary of its findings.
