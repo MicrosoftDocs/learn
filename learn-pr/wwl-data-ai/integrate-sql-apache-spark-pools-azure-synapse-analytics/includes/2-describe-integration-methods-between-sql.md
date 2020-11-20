@@ -19,7 +19,7 @@ However, at the moment, the Azure Synapse Apache Spark to Synapse SQL connector 
 
 So, let's look at the following design:
 
-[Design SQL Spark Integration](../media/design-sql-spark-integration.png)
+![Design SQL Spark Integration](../media/design-sql-spark-integration.png)
 
 In the commonly used existing approach, you often see the use of the JDBC. 
 The JDBC would open the connection. 
