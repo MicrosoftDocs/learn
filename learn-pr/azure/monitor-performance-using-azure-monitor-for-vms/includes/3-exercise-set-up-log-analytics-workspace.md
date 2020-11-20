@@ -14,7 +14,7 @@ In this unit, you'll:
 
 1. Enter the following values to build the Log Analytics workspace. The Log Analytics workspace name must be globally unique, so we suggest using your initials and numbers (*xxxx-log-analytics* will represent the unique name for this module).
 
-    :::image type="content" source="../media/3-create-log-analytics-workspace.png" alt-text="Screen shot of declaring the Log Analytics resource name, placing everything in the Concierge Subscription for Learn, and selecting Review + Create.":::
+    :::image type="content" source="../media/3-create-log-analytics-workspace.png" alt-text="Screenshot of declaring the Log Analytics resource name, placing everything in the Concierge Subscription for Learn, and selecting Review + Create.":::
 
     | Property | Value |
     | ---- | ---- |
@@ -31,7 +31,7 @@ In this unit, you'll:
 
 1. Look for the access control mode and select **Use resource or workspace permissions**. This setting changes the access mode to use the resource-context.
 
-    :::image type="content" source="../media/3-check-log-analytics-resource-context.png" alt-text="Screen shot of changing access control mode for Log Analytics workspace.":::
+    :::image type="content" source="../media/3-check-log-analytics-resource-context.png" alt-text="Screenshot of changing access control mode for Log Analytics workspace.":::
 
 ## Set up your environment
 
@@ -48,7 +48,7 @@ In this unit, you'll:
       --verbose
     ```
 
-1. Once SampleVM1 finishes, run the the following command in Azure Cloud Shell:
+1. Once SampleVM1 finishes, run the following command in Azure Cloud Shell:
 
     ```bash
     az vm create \
@@ -71,21 +71,22 @@ In this unit, you'll:
 
 1. For **Choose a Log Analytics Workspace**, select the Log Analytics workspace you created.
 
-1. Select **Enable** (onboarding Azure Monitor for VMs takes a few minutes).
+1. Select **Enable**.
 
     :::image type="content" source="../media/3-enable-azure-monitor-vms.png" alt-text="Enable Azure Monitor for VMs after selecting the right subscription and Log Analytics workspace.":::
 
 1. Repeat the same steps for SampleVM2.
 
-1. After 5-10 minutes have passed, under **Monitoring**, select **Insights**.
+1. Wait 5-10 minutes.
+1. Under **Monitoring** > **Insights**, select **Refresh** until you get results.
 
 1. Review the map, which displays dependencies like processes running, ports open, connection details, health of the virtual machine, machine properties, and Azure virtual machine properties.
 
-    :::image type="content" source="../media/3-azure-monitor-vms-map.png" alt-text="Screen shot of Azure Monitor map, showcasing dependencies and information about virtual machine." lightbox="../media/3-azure-monitor-vms-map.png":::
+    :::image type="content" source="../media/3-azure-monitor-vms-map.png" alt-text="Screenshot of Azure Monitor map, showcasing dependencies and information about virtual machine." lightbox="../media/3-azure-monitor-vms-map.png":::
 
-1. Next, select **Performance** at the top, right next to **Map**.
+1. Select the **Performance** tab.
 
-    :::image type="content" source="../media/3-virtual-machine-insights.png" alt-text="Screen shot of performance after enabling Azure Monitor for VMs." lightbox="../media/3-virtual-machine-insights.png":::
+    :::image type="content" source="../media/3-virtual-machine-insights.png" alt-text="Screenshot of performance after enabling Azure Monitor for VMs." lightbox="../media/3-virtual-machine-insights.png":::
 
 1. Explore the different graphs for: 
     - Logical Disk Performance
@@ -98,16 +99,16 @@ In this unit, you'll:
     - Bytes Sent Rate
     - Bytes Received Rate
 
-1. Experiment with different settings by moving from **Avg**, to **Min**, to **Max**, and so on (the virtual machines were only created a few minutes ago, so there might not be much data generated).
+1. Experiment with different settings by moving from **Avg**, to **Min**, to **Max**, and so on. The virtual machines were only created a few minutes ago, so there might not be much data generated.
 
-1. Select **Log Events** on the right-hand side of the page.
+1. Select **Log Events**.
 
     :::image type="content" source="../media/3-log-events.png" alt-text="Screenshot of where Log Events show up within Azure Monitor for VMs." lightbox="../media/3-log-events.png":::
 
 1. Select the **InsightsMetrics** table.
 
-    :::image type="content" source="../media/3-azure-monitor-logs-data-summary.png" alt-text="Screen shot after selecting Log Events from the Azure Monitor for VMs pane.":::
+    :::image type="content" source="../media/3-azure-monitor-logs-data-summary.png" alt-text="Screenshot after selecting Log Events from the Azure Monitor for VMs pane.":::
 
 1. The logs section of a Log Analytics workspace opens with a pre-populated query showing the data being collected.
 
-    :::image type="content" source="../media/3-insights-metrics-log-analytics.png" alt-text="Screen shot after selecting the InsightsMetrics table and Log Analytics opens up for further query writing." lightbox="../media/3-insights-metrics-log-analytics.png":::
+    :::image type="content" source="../media/3-insights-metrics-log-analytics.png" alt-text="Screenshot after selecting the InsightsMetrics table and Log Analytics opens up for further query writing." lightbox="../media/3-insights-metrics-log-analytics.png":::

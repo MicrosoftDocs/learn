@@ -8,7 +8,7 @@ metadata:
   ms.author: shkuehn
   ms.prod: learning-azure
   ms.topic: interactive-tutorial
-  ms.date: 11/16/2020
+  ms.date: 11/20/2020
 summary: Evaluate Azure Monitor log tooling in your journey to improve the monitoring environment for your company. You'll deploy a Log Analytics workspace. After the Log Analytics workspace is ready, onboard VMs to the Log Analytics workspace and configure Azure Monitor for VMs. To understand the types of data you can extract, build familiarity with the syntax of Azure Monitor log queries inside Log Analytics workspace. When you feel comfortable with the structure, take pre-configured queries in a Log Analytics workspace and query performance of virtual machines by using the Kusto Query Language.
 abstract: |
   - Evaluate Azure Monitor Logs and Azure Monitor for VMs

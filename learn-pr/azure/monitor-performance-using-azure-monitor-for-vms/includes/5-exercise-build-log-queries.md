@@ -12,15 +12,15 @@ In this unit, you'll:
 
 1. Under **General**, select **Logs**. The Queries page should open. If it doesn't, from the top left of the logs editor, select **Queries**.
 
-    :::image type="content" source="../media/4-queries-logs-pane.png" alt-text="Screen shot showing where to select Queries from within the log editor pane." lightbox="../media/4-queries-logs-pane.png":::
+    :::image type="content" source="../media/4-queries-logs-pane.png" alt-text="Screenshot showing where to select Queries from within the log editor pane." lightbox="../media/4-queries-logs-pane.png":::
 
 1. Clear the **Log Analytics workspaces** filter at the top.
 
-    :::image type="content" source="../media/5-clear-log-analytics-filter.png" alt-text="Screen shot of where to clear Log Analytics workspaces filter." lightbox="../media/5-clear-log-analytics-filter.png":::
+    :::image type="content" source="../media/5-clear-log-analytics-filter.png" alt-text="Screenshot of where to clear Log Analytics workspaces filter." lightbox="../media/5-clear-log-analytics-filter.png":::
 
 1. Select **Virtual Machine Scale Sets** on the far left, underneath **All Queries**.
 
-    :::image type="content" source="../media/5-virtual-machine-scale-set-queries.png" alt-text="Screen shot of Virtual Machine Scale Set queries." lightbox="../media/5-virtual-machine-scale-set-queries.png":::
+    :::image type="content" source="../media/5-virtual-machine-scale-set-queries.png" alt-text="Screenshot of Virtual Machine Scale Set queries." lightbox="../media/5-virtual-machine-scale-set-queries.png":::
 
 1. Select the **Chart CPU usage trends by computer** query.
 
@@ -33,7 +33,7 @@ In this unit, you'll:
 1. Review the visualization. This query:
     1. Takes data from the InsightsMetrics table.
     1. Looks at all data values ingested over the last hour underneath the Processor namespace.
-    1. Returns the rounded average value in 5 minute intervals for both machines.
+    1. Returns the rounded average value in 5-minute intervals for both machines.
 
     :::image type="content" source="../media/5-cpu-trends-timechart.png" alt-text="Screenshot showing average value for CPU usage trends." lightbox="../media/5-cpu-trends-timechart.png":::
 
@@ -48,7 +48,7 @@ Let's take the query you just used and make an edit to build a different data vi
 1. Review the visualization. This edited query:
     1. Takes data from the InsightsMetrics table.
     1. Looks at all data values ingested over the last hour underneath the Processor namespace.
-    1. Returns the rounded maximum value in 5 minute intervals for both machines.
+    1. Returns the rounded maximum value in 5-minute intervals for both machines.
     :::image type="content" source="../media/5-cpu-trends-max.png" alt-text="Screenshot showing maximum value for CPU usage trends." lightbox="../media/5-cpu-trends-max.png":::
 
     Each of these visualizations can be pinned to a dashboard by selecting **Pin to dashboard** at the top and then specify the following details:

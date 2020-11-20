@@ -27,7 +27,7 @@ The **schema** is a series of tables logically grouped together. The schema allo
 
 By taking a look at the schema pane, you will begin to understand that you don't have to build a query from scratch. You are able to favorite a table, change scopes so you only see the relevant tables for the resource(s) you select, display metadata to easily find what you need, and you have capacity to use a preview pane that provides insight into a table's content, along with additional information and metadata.
 
-:::image type="content" source="../media/4-schema-pane-location.png" alt-text="Screen shot of schema pane in the Logs section of a Log Analytics workspace." lightbox="../media/4-schema-pane-location.png":::
+:::image type="content" source="../media/4-schema-pane-location.png" alt-text="Screenshot of schema pane in the Logs section of a Log Analytics workspace." lightbox="../media/4-schema-pane-location.png":::
 
 ## Writing a new query
 
@@ -39,13 +39,13 @@ The Kusto Query Language is case-sensitive. Language keywords are typically writ
 
 One of the tables captured by Azure Monitor is the Heartbeat table. This table contains a number of useful columns. Heartbeat will capture data on everything from OS type, OS major version, resource ID, resource group, etc. To understand all columns that make up this table, run a query with only Heartbeat will start to show what makes up this table.
 
-:::image type="content" source="../media/4-heartbeat-query.png" alt-text="Screen shot of running the Heartbeat query." lightbox="../media/4-heartbeat-query.png":::
+:::image type="content" source="../media/4-heartbeat-query.png" alt-text="Screenshot of running the Heartbeat query." lightbox="../media/4-heartbeat-query.png":::
 
 In the results pane at the bottom of logs, you will see some of the following fields in the screenshot: TimeGenerated [UTC], SourceComputerId, ComputerIP, Computer, Category, OSType, and so on. Each of these columns is a data point you can filter on.
 
 The tabular operators can be applied to help the query return more relevant and specific information you wish to examine. Recall that tabular operators help you filter upon extracted data. The results received from Heartbeat seem to be a lot in this example and you know from the previous module that there are only two virtual machines reporting to the Log Analytics workspace. In order to make sure there are only two virtual machines reporting to the workspace, let's add the distinct operator to this query.
 
-:::image type="content" source="../media/4-distinct-operator.png" alt-text="Screen shot showcasing the Heartbeat query with a pipe and distinct Computer listed." lightbox="../media/4-distinct-operator.png":::
+:::image type="content" source="../media/4-distinct-operator.png" alt-text="Screenshot showcasing the Heartbeat query with a pipe and distinct Computer listed." lightbox="../media/4-distinct-operator.png":::
 
 The results now show only two virtual machines are reporting to the workspace. Heartbeat acts like an inventory of all virtual machines reporting to a specific workspace. The distinct operator produces a table with the distinct combination columns requested within the input query.
 
