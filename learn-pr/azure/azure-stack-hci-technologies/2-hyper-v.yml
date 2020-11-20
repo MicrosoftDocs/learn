@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-stack-hci-technologies.2-hyper-v
 metadata:
-  title: Unit title
-  description: TODO
+  title: Introduction to Hyper-V
+  description: Introduction to Hyper-V
   ms.date: 09/21/2020
   author: jboeshart
   ms.author: jaboes

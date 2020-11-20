@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-stack-hci-technologies.6-software-defined-networking
+metadata:
+  title: Introduction to Software Defined Networking
+  description: Introduction to Software Defined Networking
+  ms.date: 09/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Unit title
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-software-defined-networking.md)]

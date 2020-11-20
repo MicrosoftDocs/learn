@@ -2,21 +2,24 @@
 uid: learn.azure.azure-stack-hci-technologies
 metadata:
   title: Introduction to Azure Stack HCI core technologies
-  description: TODO
+  description: Introduction to Azure Stack HCI core technologies
   ms.date: 09/21/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Stack HCI core technologies
-summary: TODO
+summary: This module introduces Azure Stack HCI technologies. You'll learn about the core Azure Stack HCI technologies, including Hyper-V, Failover Clustering, Windows Server software-defined storage, and Windows Server software-defined networking. 
 abstract: | 
   In this module, you will:
-  - TODO
-  - TODO
-  - TODO
+  - Describe Windows Server Hyper-V and its components
+  - Describe Windows Server Failover Clustering and its components
+  - Describe Windows Server software-defined storage
+  - Describe Windows Server software-defined networking
 prerequisites: | 
-  - TODO
+  - Basic knowledge of Windows Server Hyper-V
+  - Basic knowledge of Windows Server Failover Clustering
+  - Basic knowledge of Windows Server operating system management
 iconUrl: http://via.placeholder.com/120x120
 levels:
 - beginner
@@ -28,14 +31,9 @@ units:
 - learn.azure.azure-stack-hci-technologies.1-introduction
 - learn.azure.azure-stack-hci-technologies.2-hyper-v
 - learn.azure.azure-stack-hci-technologies.3-failover-clustering
-- learn.azure.azure-stack-hci-technologies.4-cluster-shared-volumes
-- learn.azure.azure-stack-hci-technologies.5-scale-out-file-servers
-- learn.azure.azure-stack-hci-technologies.6-software-defined-storage
-- learn.azure.azure-stack-hci-technologies.7-windows-admin-center
-- learn.azure.azure-stack-hci-technologies.8-software-defined-networking
-- learn.azure.azure-stack-hci-technologies.9-guarded-fabric
-- learn.azure.azure-stack-hci-technologies.10-cluster-sets
-- learn.azure.azure-stack-hci-technologies.11-knowledge-check
-- learn.azure.azure-stack-hci-technologies.12-summary
+- learn.azure.azure-stack-hci-technologies.4-software-defined-storage
+- learn.azure.azure-stack-hci-technologies.5-windows-admin-center
+- learn.azure.azure-stack-hci-technologies.6-software-defined-networking
+- learn.azure.azure-stack-hci-technologies.7-summary
 badge:
   uid: learn.azure.azure-stack-hci-technologies.badge

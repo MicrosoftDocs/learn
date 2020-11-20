@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-stack-hci-technologies.3-failover-clustering
 metadata:
-  title: Unit title
-  description: TODO
+  title: Introduction to Failover Clustering
+  description: Introduction to Failover Clustering
   ms.date: 09/21/2020
   author: jboeshart
   ms.author: jaboes

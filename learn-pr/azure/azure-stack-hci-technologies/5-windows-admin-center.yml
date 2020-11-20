@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-stack-hci-technologies.5-windows-admin-center
+metadata:
+  title: Introduction to Windows Admin Center
+  description: Introduction to Windows Admin Center
+  ms.date: 09/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Unit title
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-windows-admin-center.md)]

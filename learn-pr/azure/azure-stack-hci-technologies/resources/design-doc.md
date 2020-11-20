@@ -1,128 +1,133 @@
-# Module design
+# Module title: Introduction_to_Microsoft_Azure_Stack_HCI_Core_Technologies
 
-## Module: Introduction to Microsoft Azure Stack HCI Core Technologies
+## Learner roles
 
-### Summary description
+Choose all roles that apply, delete the others:
 
-This module introduces Azure Stack HCI technologies. You’ll learn about the main Azure Stack HCI technology parts, including Hyper-V
-replication, shared virtual hard disk (VHDX), scale-out file servers, Cluster Shared Volumes (CSVs), Software-Defined Networking (SDN), Storage Spaces Direct (S2D), guarded fabric, and cluster sets.
+- administrator
+- solution architect
+- student
+- technology manager
 
-**Problem statements:**
+## Learner level
 
-- "How can I use Azure Stack HCI core technologies to provide fault tolerance for server workloads?"
-- "How can I use Hyper-V and Hyper-V replication to protect critical virtual machines?"
-- "How can I use CSVs?"
-- "How can I use scale-out file servers?"
-- "How can I use SDN and S2D?"
-- "What are guarded fabric and cluster sets?"
+- **Intermediate**: Material that assumes some knowledge but little in-depth understanding of the topic. Provides a detailed overview of a topic's sub-areas.
 
-### Audience level
+## Product(s) taught
 
-Mark with an (X) which roles this module applies to.
+- Azure Stack HCI 
+- Windows Server Hyper-V
+- Windows Server Storage Spaces Direct
+- Windows Server Network Controller
 
-|          |     |              |     |          |     |
-|----------|-----|--------------|-----|----------|-----|
-| Beginner |     | Intermediate | X   | Advanced |     |
+## Prerequisites
 
-### Audience role(s)
+In order to get the best learning experience from this module, you should have the basic knowledge of:
 
-Mark with an (X) which roles this module applies to.
+- Windows Server Hyper-V
+- Window Server software-defined storage
+- Windows Server software-defined networking
+- Windows Server operating system management
+- Windows Server Failover Clustering.
 
-| Administrator    | X   | Data analyst    |     | Functional consultant |     |
-|------------------|-----|-----------------|-----|-----------------------|-----|
-| AI Edge engineer |     | Data engineer   |     | Maker                 |     |
-| AI engineer      |     | Data scientist  |     | Security engineer     |     |
-| Business analyst |     | Database admin  | X   | Solution architect    | X   |
-| Business owner   |     | Developer       |     | Student               | X   |
-| Business user    |     | DevOps engineer |     | Technology manager    | X   |
+## Module summary description
 
-### Product(s)
+This module introduces Azure Stack HCI technologies. You'll learn about the core Azure Stack HCI technologies, including Hyper-V, Windows Server software-defined storage, and Windows Server software-defined networking. 
 
-Mark with an (X) which products this module applies to.
+## Module learning objectives
 
-| azure                     | X   | azure-data-science-vm          |     | azure-machine-learning-studio |     |
-|---------------------------|-----|--------------------------------|-----|-------------------------------|-----|
-| azure-active-directory    |     | azure-data-share               |     | azure-maps                    |     |
-| azure-advisor             |     | azure-databricks               |     | azure-monitor                 |     |
-| azure-bot-service         |     | azure-digital-twins            |     | azure-portal                  | X   |
-| azure-cdn                 |     | azure-event-grid               |     | azure-redis-cache             |     |
-| azure-clis                |     | azure-event-hubs               |     | azure-resource-manager        |     |
-| azure-cloud-shell         | X   | azure-functions                |     | azure-sdks                    |     |
-| azure-cognitive-services  |     | azure-hdinsight                |     | azure-service-bus             |     |
-| azure-container-instances |     | azure-iot-central              |     | azure-sql-data-warehouse      |     |
-| azure-container-registry  |     | azure-iot-edge                 |     | azure-sql-database            |     |
-| azure-cosmos-db           |     | azure-iot-hub                  |     | azure-storage                 |     |
-| azure-cost-management     |     | azure-key-vault                |     | azure-stream-analytics        |     |
-| azure-data-catalog        |     | azure-language-understanding   |     | azure-virtual-machines        | X   |
-| azure-data-factory        |     | azure-machine-learning-service |     |                               |     |
+- Describe Windows Server Hyper-V and its components
+- Describe Windows Server Failover Clustering and its components
+- Describe Windows Server software-defined storage
+- Describe Windows Server software-defined networking
 
-### Prerequisites
+## Estimated module duration
 
-- Management of the Windows Server operating system.
-- Understanding of core Microsoft compute, storage, networking, and virtualization technologies.
-- Conceptual understanding of Hyper-V and Hyper-V Replica in Windows Server.
-- Conceptual understanding of failover clustering.
-- Basic understanding of SDN and S2D.
-- Familiarity with Windows PowerShell.
+53 minutes
 
-### Scenario with task(s) at end
+## Module outline of units
 
-Contoso is a medium-size financial-services company in London with a branch office in New York. Most of its compute environment runs on-premises on Windows Server, including virtualized workloads and cluster services on Windows Server 2012 R2 hosts. Contoso IT staff are migrating Contoso servers to Windows Server 2019, and
-the server vendors are guaranteeing their hardware meets the Microsoft Windows Server Hardware catalog requirements for HCI.
+### Number of units per module
 
-Contoso’s IT director realizes that Contoso has an outdated operational model with limited data-protection technologies and a reliance on dated technology. The Contoso IT Engineering team is exploring Azure capabilities, but still have business requirements that require on-premises services. They want to determine whether Azure Stack services might
-assist with modernizing the current on-premises failover clusters, especially regarding the new technologies that Windows Server 2019 and Azure Stack HCI provide.
+6
 
-As the lead system engineer and server administrator, you've been asked to set up a proof-of-concept environment to verify whether Azure Stack services can help modernize your IT infrastructure and meet business goals.
+## 1st unit: Introduction
 
-Contoso will continue to operate an on-premises environment after they begin migrating workloads to Azure infrastructure as a service (IaaS) virtual machines (VMs). Consequently, the ability to apply Azure Stack HCI technologies to on-premises Windows Server workloads will be important. Additionally, administrators need to
-understand SDN and S2D.
+**Type of unit:** Introduction unit
 
-In this module, you'll learn the purpose and features of Azure Stack HCI technologies and provide a plan that uses Azure Stack HCI with your new server purchases.
+**Estimated unit duration:** 3 mins
 
-### Learning objectives
+### Module scenario
 
-- Explain Hyper-V and Hyper-V replication.
-- Describe failover clustering.
-- Describe CSVs.
-- Implement scale-out file servers.
-- Describe software-defined storage.
-- Describe SDN.
-- Explain how to use guarded fabric and cluster sets.
+Contoso, Ltd. is a medium-size financial-services company with its headquarters in New York and branch offices across the United States. It's currently operating almost entirely on-premises, with the majority of its servers running either Windows Server 2012 R2 or one of several Linux distributions. 
 
-### References
+Contoso's IT director realizes that his organization has an outdated operational model with limited resiliency and hardware reaching end of life. The Contoso IT Engineering team is exploring the option of migrating some of the more critical workloads to Azure, however, due to regulatory and compliance constraints, in many cases, this is not the option. You, serving the role of the the lead system engineer, suggested evaluating Azure Stack HCI as an alternative approach to modernize on-premises workloads, increase their resiliency, and streamline their operational model. 
 
-- As below:
+In order to convince the IT management that this is the sound approach, you need to first explore and document the characteristics and capabilities of Azure Stack HCI technologies and implement a proof-of-concept environment that would help validate your suggestion. 
 
-### Related MS Learn content
 
-- Azure Stack HCI solution overview: [https://docs.microsoft.com/en-us/azure-stack/hci/overview](https://docs.microsoft.com/en-us/azure-stack/hci/overview)
-- Get started with Azure Stack HCI and Windows Admin Center: [https://docs.microsoft.com/en-us/azure-stack/hci/get-started](https://docs.microsoft.com/en-us/azure-stack/hci/get-started)
-- Fault tolerance and storage efficiency in Azure Stack HCI: [https://docs.microsoft.com/en-us/azure-stack/hci/concepts/fault-tolerance](https://docs.microsoft.com/en-us/azure-stack/hci/concepts/fault-tolerance)
-- Software Defined Networking (SDN): [ttps://docs.microsoft.com/en-us/windows-server/networking/sdn/](https://docs.microsoft.com/en-us/windows-server/networking/sdn/) 
+## 2nd unit: What is Hyper-V?
 
-### Learn module outline
+**Type of unit:** Learning content unit
 
-|#|Title|Duration|Source content|
-|---|---|---|---|
-|1|Introduction|2 minutes|WS-013 ILT course, Module 1: Introducing Azure Stack HCI, Lesson 2: Overview of Azure Stack HCI technologies|
-|2|Explain Hyper-V and Hyper-V replication |7 minutes   |   |
-|3|Describe failover clustering  |5 minutes   |   |
-|4|Use CSVs in failover clustering |5 minutes  |   |
-|5|Implement scale-out file servers |5 minutes   |   |
-|6|Use software-defined storage |9 minutes   |   |
-|7|Demonstration: Manage hyperconverged infrastructure with Windows Admin Center  |7 minutes  |   |
-|8|Describe Software-Defined Networking |5 minutes |   |
-|9|Explain guarded fabric  |5 minutes |  |
-|10|Explain cluster sets | 5 minutes |  |
-|12|Summary |2 minutes   |   |
+**Estimated unit duration:** 12 mins
 
-### Estimated module duration
+### Key content per learning objective
 
-60 minutes
+Describe Windows Server Hyper-V and its components
 
-### Demo details
+- Describe Hyper-V
+- Describe Live Migration
 
-|Title|Duration|Link to resource content|
-|---|---|---|
-| Demonstration: Manage hyperconverged infrastructure with Windows Admin Center|10 minutes|[https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/use/manage-hyper-converged](https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/use/manage-hyper-converged)|
+## 3rd unit: What is Failover Clustering?
+
+**Type of unit:** Learning content unit
+
+**Estimated unit duration:** 12 mins
+
+### Key content per learning objective
+
+Describe Windows Server Failover Clustering and its components
+
+- Describe Windows Server Failover Clustering
+- Describe Failover Clustering quorum and witness
+- Describe guest clustering with shared disks
+
+## 4th unit: What is Windows Server software-defined storage?
+
+**Type of unit:** Learning content unit
+
+**Estimated unit duration:** 12 mins
+
+### Key content per learning objective
+
+Describe Windows Server software-defined storage
+
+- Describe Cluster Shared Volumes (CSV)
+- Describe Storage Spaces
+- Describe Storage Spaces Direct
+- Describe Storage Replica
+
+## 5th unit: What is Windows Server software-defined networking?
+
+**Type of unit:** Learning content unit
+
+**Estimated unit duration:** 12 mins
+
+### Key content per learning objective
+
+Describe Windows Server software-defined networking
+
+- Describe Hyper-V virtual switch
+- Describe Network Controller
+- Describe Switch Embedded Teaming
+
+## 6th unit: Summary
+
+**Type of unit:** Summary unit
+
+**Estimated unit duration:** 2 mins
+
+### Resolution of module problem
+
+In this module, you learned the technological foundations of Azure Stack HCI. This knowledge helped you with a successful implementation of a PoC environment, which led to migration of regulated, on-premises workloads to the Azure Stack HCI platform.

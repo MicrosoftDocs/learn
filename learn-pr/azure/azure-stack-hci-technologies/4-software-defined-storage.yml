@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-stack-hci-technologies.4-software-defined-storage
+metadata:
+  title: Introduction to Software Defined Storage
+  description: Introduction to Software Defined Storage
+  ms.date: 09/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Unit title
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-software-defined-storage.md)]
