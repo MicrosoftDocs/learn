@@ -2,11 +2,11 @@ Open-source software heavily relies on the community for its long-term sustainab
 
 Suppose you have been using open-source libraries for your projects and at work for quite some time. In the spirit of open-source, you have decided to contribute back to some of these libraries and frameworks.
 
-You first need to find a project to contribute to on GitHub as well as familiarize yourself with the project and its community standards. You will also need to identify tasks to contribute to and learn the best practices to submit your contributions.
-As you contribute to the project, you realize that a crucial part is to communicate with the project's maintainers, ask for help and review your contributions. You might want to immerse yourself in the project's community further and connect with other contributors.
-And as you contribute to one project, you might find other projects could also benefit from a similar feature or API. And you might release an open-source project yourself. We just made a full circle!
+However, you've never contributed before and you're not sure how to get started.
 
-In this module, you will learn how to submit a successful contribution to an open-source project on GitHub by adopting best practices.
+In this module, you'll learn how to make meaningful contributions to open source projects. You'll learn about the kinds of projects and activities that will make an impact and how to familiarize yourself with the project and its community standards. You'll learn how to effectively use git and GitHub to make your improvement to code or documentation. You'll learn the do's and don'ts of communicating with the project's maintainers, how to ask for help, how to ask for a review, and how to review others' work in GitHub.
+
+By the end of this module, you will learn how to submit a successful contribution to an open-source project on GitHub by adopting best practices.
 
 ## Learning objectives
 
@@ -23,6 +23,7 @@ By the end of this module, you'll be able to:
 - The ability to navigate and edit files in GitHub
 - Familiarity with open-source libraries and frameworks
 
-This module covers how to make contributions to open-source projects on GitHub. To familiarize yourself with GitHub, you can complete the following module first:
-
-- [Introduction to GitHub](/learn/modules/introduction-to-github)
+> [!NOTE]
+> This module covers how to make contributions to open-source projects on GitHub. To familiarize yourself with GitHub, you can complete the following module first:
+>
+> - [Introduction to GitHub](/learn/modules/introduction-to-github)

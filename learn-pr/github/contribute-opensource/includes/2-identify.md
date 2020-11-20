@@ -1,9 +1,15 @@
-Here, we discuss how you can get started with open-source contributions. We'll also use issues and tags to find tasks to contribute to.
+In this unit, we discuss how you can get started with open-source contributions. We'll also use issues and tags to find tasks to contribute to.
 
 There are many ways to contribute to open-source projects. Making your first contribution can often be a scary experience. But it shouldn't be. Open-source is a place for everyone and contributions happen at all levels.
 
+## Finding a open source project that needs contributions
+
 You can get started by thinking about the projects you already use, or want to use. Contributing is easier when you're familiar with the project and its community.
+
 Perhaps while reading a project's README you find a broken link or some typos. Maybe you noticed something isn't working as expected or the documentation is out of date. These are all great opportunities to help and contribute to the project.
+
+> [!TIP]
+> One important tip: **all** kinds of contributions are valuable. Your level of experience or knowledge of the project does not matter here, we all have something we can contribute. Be confident in yourself, the most important thing here is the will to help.
 
 ## Using GitHub search
 
@@ -12,11 +18,11 @@ You can head to [https://github.com/search](https://github.com/search) and type 
 
 Let's say you're interested in Machine Learning.
 
-:::image type="content" source="../media/2-code-search.png" alt-text="Github search topics":::
+:::image type="content" source="../media/2-code-search.png" alt-text="Screenshot showing GitHub search topics":::
 
 You can then narrow your search clicking on **Topics** on the left sidebar.
 
-:::image type="content" source="../media/2-topic-search.png" alt-text="Github narrow search":::
+:::image type="content" source="../media/2-topic-search.png" alt-text="Screenshot showing the results of a GitHub narrow search":::
 
 From there, you can find repositories relevant to your search keyword and repositories curated by community members.
 
@@ -46,7 +52,7 @@ Great, you have found a project, read the contribution guidelines and now you're
 
 Perhaps you've already identified something to work on such as fixing broken links or update the docs. A good way to find beginner-friendly issues to help with is visiting the project's `/contribute` URL (for example [https://github.com/jupyter/notebook/contribute](https://github.com/jupyter/notebook/contribute)).
 
-:::image type="content" source="../media/2-contribute.png" alt-text="Contribute to a project":::
+:::image type="content" source="../media/2-contribute.png" alt-text="Screenshot showing the \"Contribute to a project\" section on GitHub":::
 
 You'll notice that most of the issues displayed in the `contribute` URL will have labels such as `good-first-issue`, `help wanted`, `beginner-friendly`, and so on. Labels are often used to provide top-level information of the issue and the type of help needed.
 
@@ -54,7 +60,7 @@ You can head to the labels page (for example [https://github.com/jupyter/noteboo
 
 As you explore issues, you might also notice that some have other issues or pull requests linked.
 
-:::image type="content" source="../media/2-linkedPR.png" alt-text="PR linked to project":::
+:::image type="content" source="../media/2-linkedPR.png" alt-text="Screenshot showing a pull request linked to an issue":::
 
 ## Sponsoring a project
 
@@ -64,8 +70,8 @@ Open-source heavily relies on volunteer work. GitHub Sponsors allow you to fund 
 
 If a project is eligible for sponsorship through GitHub sponsors, you'll find a **Sponsor** button on the project's main page.
 
-:::image type="content" source="../media/2-sponsor.png" alt-text="Sponsor a project":::
+:::image type="content" source="../media/2-sponsor.png" alt-text="Screenshot showing the sponsoring box on a GitHub project page":::
 
 You can select the sponsorship tier and if you want your contribution to be public.
 
-:::image type="content" source="../media/2-tier.png" alt-text="Sponsorship tiers":::
+:::image type="content" source="../media/2-tier.png" alt-text="Screenshot showing sponsorship tiers":::
