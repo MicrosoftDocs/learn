@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.introduction
-title: Introduction
+uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.knowledge-check
+title: Knowledge check
 metadata:
-  title: Introduction
-  description: "Introduction"
+  title: Knowledge check
+  description: "Knowledge check"
   ms.date: 11/20/2020
   author: wwlpublish
   ms.author: kawaaije

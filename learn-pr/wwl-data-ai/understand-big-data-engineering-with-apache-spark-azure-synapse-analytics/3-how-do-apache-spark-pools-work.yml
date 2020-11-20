@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.how-do-apache-spark-pools-work
+title: How do apache spark pools work in azure synapse analytics
+metadata:
+  title: How do apache spark pools work in azure synapse analytics
+  description: "How do apache spark pools work in azure synapse analytics"
+  ms.date: 11/20/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
