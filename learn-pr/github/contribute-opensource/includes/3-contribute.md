@@ -1,8 +1,8 @@
 After having identified an area where you can contribute, the next step is to prepare your contribution. We'll review here how you can communicate your intent to participate in a project, forge a pull request, and improve your chances of getting it accepted.
 
-Communication is a key factor of success here. Even if sometimes it can be more comfortable to work things on your own and just submit the result, that's also taking the risk of working on something that's already done or not aligning with the project's values or best practices, resulting in a waste of time for everyone.
+When it comes to contributing work to an open source project, communication is a key success factor. You may find it uncomfortable to communicate with others on your proposed changes or improvements. Often, this will lead to discussions and compromises of your original vision. However, avoiding active communication with others who are involved in the project means risking your time working on tasks that someone else is already working on, or working on features or improvements that do not align with the project's values or best practices. When this happens, it wastes everyone's time. Conversely, committing to active communication ensures that your work will be well received and impactful.
 
-There are a few steps you can take to reduce the chance of something like this happening. Try to always keep an open mind, be open to feedback, and practice patience. Open-source project maintainers most likely have a day job, and a private life to tend to. If you don't get an answer immediately, wait a little (longer) before pinging the maintainers.
+How can you ensure success when communicating with other project members about new features and changes? First, try to keep an open mind. Be open to feedback, and practice patience. Open-source project maintainers most likely have a day job, and a private life to tend to. If you don't get an answer immediately, wait a little (longer) before pinging the maintainers.
 
 ## Communicating your intent to maintainers
 
@@ -16,7 +16,19 @@ You should always start by communicating your intent to contribute before doing 
 
 ## Creating a pull request on a GitHub repository
 
-Great, you've communicated your intent to help the project, you're now ready to start working on your actual contribution.
+Once you've communicated your intent to help the project, you're now ready to start working on your actual contribution.
+
+Your contribution will take the form of a *Pull Request* or *PR*. A pull request is special place on GitHub that contains a few things:
+
+- A title and description for your changes.
+- One or more commits that constitutes the changes you're proposing.
+- Comments where everyone can participate to discuss about the changes.
+- Code reviews where you can find detailed feedback on your changes and eventually commit suggestions.
+- Status checks, coming for example from automated tests that the maintainers may have put in place. They can serve different purposes, for example to ensure that your changes follow the project's rules or that your change don't break the code.
+
+After a pull request is created, it can be updated with new commits, comments or code reviews until the project maintainers take the final decision to approve and merge the pull request, or reject the changes and close the pull request. When you pull request is merged, it means that your changes have been integrated in the project's codebase.
+
+### Creating a pull request step by step
 
 1. Open the GitHub page of the project you want to contribute.
 1. Click on the **Fork** button to create a copy of the repository on your GitHub account. This step is necessary as by default you don't have the permissions to make any changes on a public repository, unless it's your own (copy). By forking the project, you're creating a copy to which you can make changes.
@@ -32,6 +44,8 @@ Great, you've communicated your intent to help the project, you're now ready to 
     ```sh
     git clone <REPOSITORY_URL>
     ```
+
+    This command will create a copy of the repository on your local machine.
 
     Alternatively, you can use [GitHub Desktop](https://desktop.github.com/) if you prefer using an application, or [GitHub Codespaces](https://github.com/features/codespaces) if the option is proposed to you. If you're a VS Code user, Codespaces will feel familiar to you.
 
@@ -56,13 +70,18 @@ Great, you've communicated your intent to help the project, you're now ready to 
     git commit -m "<COMMIT_MESSAGE>"
     ```
 
-    Be sure to describe your changes accurately in the commit message. It's also a good idea to check if there are mentions in CONTRIBUTING file of a commit message convention you need to follow.
+    These commands will stage your changes for commit, then create a commit with the specified message. Be sure to describe your changes accurately in the commit message. It's also a good idea to check if there are mentions in CONTRIBUTING file of a commit message convention you need to follow.
 
 1. Push your changes to the remote using the command:
 
     ```sh
     git push --set-upstream origin <BRANCH_NAME>
     ```
+
+    This command will create a new branch on the upstream repository on GitHub (your fork), and push all your commits to it.
+
+    > ![NOTE]
+    > When we talk about *upstream* repository, we refer to the remote repository linked to your local repository. `origin` is the default alias for the repository URL, created by git in the step 1.
 
     If you didn't create a branch previously, enter only `git push`.
 
@@ -78,6 +97,18 @@ Great, you've communicated your intent to help the project, you're now ready to 
 
     :::image type="content" source="../media/3-issue-number.png" alt-text="Screenshot showing issue number":::
 
+## Passing the status checks
+
+After you've created the pull request, you may see a section with status checks at the bottom, like this:
+
+:::image type="content" source="../media/3-pr-checks.png" alt-text="Screenshot showing status checks results on a pull request":::
+
+These are automated checks that the maintainers have put in place to ensure a consistent quality of the project.
+
+To get your pull request accepted, it needs to pass all automated checks. If one is failing like in the screenshot above, you can click on the **Details** button to learn more about the failure, to find out what you need to fix it.
+
+If you're unsure about what to do with a failing check, you can always use the comments to ask for the maintainers guidance or help to fix it.
+
 ## Asking for guidance or reviews on pull requests
 
 If you're unsure about some changes you made and would like to get the maintainers' opinion, the best way to do that is to comment directly on the pull request(s). And if you consider your changes a work-in-progress, you also have the option to create a **draft pull request** instead to ask for guidance or help from other contributors.
@@ -89,5 +120,7 @@ Once the project maintainers come by your pull request, they can reply to the co
 - Your changes are approved, congratulations!
 - You pull request requires some changes. Don't get discouraged! Look closely at the feedback provided, if you make the requested changes, there's a good chance that your pull request get accepted. If you push new commits to your branch, the pull request will automatically update with the new changes.
 - The reviewer made some comments. It usually means that more details are needed about you changes or the motivation behind it.
+
+### Responding to comments on your pull request
 
 Remember to always be respectful in all your exchanges, and to act in accordance to the CODE_OF_CONDUCT. It's likely that before your changes can be accepted, there will be an ongoing discussion with the maintainers or other contributors. Contributing to open-source requires patience, sometimes you don't get immediate feedback. Don't reach out to the maintainers privately via email, Twitter or any other means hoping to get a faster answer, this is considered harmful behavior. Discussing things publicly also gives the chance to other contributors or passersby to learn about the process behind the changes and the best practices to follow.
