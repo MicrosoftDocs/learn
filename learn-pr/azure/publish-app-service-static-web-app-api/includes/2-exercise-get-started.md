@@ -66,8 +66,8 @@ You just created a GitHub repository named **my-static-web-app** in your GitHub 
    ```bash
    npm install
    ```
-    > [!NOTE] 
-    > If you get the error: Cannot find path - Download nodejs from: https://nodejs.org/en/
+> [!NOTE] 
+> If you get the error: Cannot find path - Download nodejs from: https://nodejs.org/en/
    
 
 1. Finally, run the front-end client application.
