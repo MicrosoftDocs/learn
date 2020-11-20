@@ -93,7 +93,7 @@ To use git to deploy the source code to the web app's production slot, set up yo
 
 1. In Console, run the following command to configure the URL as a git remote named "production". Replace `git-clone-url` with the URL from the previous step.
 
-  ```bash
+    ```bash
     cd app-service-web-dotnet-get-started
     ```
 
