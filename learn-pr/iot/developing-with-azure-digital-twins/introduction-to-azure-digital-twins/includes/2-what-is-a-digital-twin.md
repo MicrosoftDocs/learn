@@ -10,4 +10,4 @@ Azure Digital Twins makes this easy. It enables customers to model an environmen
 
 Azure Digital Twins seamlessly integrates with Azure data, analytics, and AI services to make it easy to track the past, and then predict the future – giving businesses the edge they need to meet the challenges they face today… and tomorrow.
 
-> [!VIDEO https://azure.microsoft.com/en-us/resources/videos/azure-digital-twins-introduction-video/]
+> [!VIDEO https://azure.microsoft.com/resources/videos/azure-digital-twins-introduction-video/]

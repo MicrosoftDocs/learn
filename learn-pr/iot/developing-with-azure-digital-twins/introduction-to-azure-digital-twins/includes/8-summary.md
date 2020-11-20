@@ -13,16 +13,16 @@
   - [Deep Dive: Integrating 3D Models and IoT data with iTwin and Azure Digital Twins](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Deep-Dive-Integrating-3D-Models-and-IoT-data-with-iTwin-and-Azure-Digital-Twins)
 
 - Azure Product Pages
-  - [Full announcement](https://azure.microsoft.com/en-us/blog/azure-digital-twins-powering-the-next-generation-of-iot-connected-solutions/) on the **Azure IoT blog**
-  - [ADT **product page**](https://azure.microsoft.com/en-us/services/digital-twins/)
-  - [ADT **sizzle video**](https://azure.microsoft.com/en-us/resources/videos/azure-digital-twins-introduction-video/)
-  - [Azure Digital Twins documentation](https://docs.microsoft.com/en-us/azure/digital-twins/) (including samples, C# SDK, CLI, DTDL & associated tooling, and more)
+  - [Full announcement](https://azure.microsoft.com/blog/azure-digital-twins-powering-the-next-generation-of-iot-connected-solutions/) on the **Azure IoT blog**
+  - [ADT **product page**](https://azure.microsoft.com/services/digital-twins/)
+  - [ADT **sizzle video**](https://azure.microsoft.com/resources/videos/azure-digital-twins-introduction-video/)
+  - [Azure Digital Twins documentation](/azure/digital-twins/) (including samples, C# SDK, CLI, DTDL & associated tooling, and more)
   - [Azure Portal](https://ms.portal.azure.com/)
 
 - [ADT Explorer](https://github.com/Azure-Samples/digital-twins-explorer)
 
 - Customer/Partner Stories
-  - ANSYS: [Engineering simulation giant Ansys unlocks value and opportunity with Azure Digital Twins](https://customers.microsoft.com/en-gb/story/795283-ansys-partner-professional-services-azure)
-  - BENTLEY: [Bentley Systems helps close the global productivity gap with Azure Digital Twins](https://customers.microsoft.com/en-us/story/806028-bentley-systems-partner-professional-services-azure)
-  - BOSCH: [Bosch expands energy efficiency offerings with connected building solution using Azure Digital Twins](https://customers.microsoft.com/en-us/story/790031-bosch-building-technologies-smart-spaces-azure)
-  - GE Aviation:  [GE Aviation’s Digital Group builds a holistic source of truth with Azure Digital Twins](https://customers.microsoft.com/en-us/story/846315-ge-aviation-manufacturing-azure)
+  - ANSYS: [Engineering simulation giant Ansys unlocks value and opportunity with Azure Digital Twins](https://customers.microsoft.com/story/795283-ansys-partner-professional-services-azure)
+  - BENTLEY: [Bentley Systems helps close the global productivity gap with Azure Digital Twins](https://customers.microsoft.com/story/806028-bentley-systems-partner-professional-services-azure)
+  - BOSCH: [Bosch expands energy efficiency offerings with connected building solution using Azure Digital Twins](https://customers.microsoft.com/story/790031-bosch-building-technologies-smart-spaces-azure)
+  - GE Aviation:  [GE Aviation’s Digital Group builds a holistic source of truth with Azure Digital Twins](https://customers.microsoft.com/story/846315-ge-aviation-manufacturing-azure)
