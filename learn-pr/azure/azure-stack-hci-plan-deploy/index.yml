@@ -31,7 +31,6 @@ units:
 - learn.azure.azure-stack-hci-plan-deploy.4-deploy
 - learn.azure.azure-stack-hci-plan-deploy.5-verify-deployment
 - learn.azure.azure-stack-hci-plan-deploy.6-integration-options
-- learn.azure.azure-stack-hci-plan-deploy.7-knowledge-check
-- learn.azure.azure-stack-hci-plan-deploy.8-summary
+- learn.azure.azure-stack-hci-plan-deploy.7-summary
 badge:
   uid: learn.azure.azure-stack-hci-plan-deploy.badge
