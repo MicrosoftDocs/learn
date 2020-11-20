@@ -14,6 +14,7 @@ In general, when planning for Azure Stack HCI implementation, you should conside
 - Disk performance. The performance considerations include the corresponding tiering and caching configuration.
 - The number and type of network adapters per server. This impacts throughput and latency of storage and network traffic.
 - The number and type of network switches per cluster. This also has impact on throughput and latency of storage and network traffic.
+- The Azure subscription in which you will register your Azure Stack HCI deployment. Note that your decision this has pricing implications, since the ongoing charges for Azure Stack HCI clusters are associated with that Azure subscription.
 
 There are also additional considerations that apply to stretched clusters. You need to determine how many servers you will need at each site, and whether the cluster configuration will be active/passive or active/active. In active-passive mode, a designated primary site unidirectionally replicates to another site that provides the disaster recovery capability. In active-active mode, two sites replicate their respective volumes unidirectionally to each other, providing failover capability in case of a failure in either site. The active-active mode helps minimize business continuity costs by eliminating the need for a dedicated disaster recovery site. 
 
