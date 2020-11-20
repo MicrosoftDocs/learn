@@ -6,9 +6,18 @@ But recently, researchers have been training AI models that can execute multiple
 
 ## Multitasking AI models are the future of AI
 
+:::row:::
+:::column span="2":::
 These multitasking models are called “large” or “massive” because they have billions of “parameters,” or connections between nodes in the model’s neural network. To illustrate just how powerful they are: models with only millions of parameters achieved human parity in object recognition, speech recognition, and translation. These cutting-edge models will jumpstart a whole new breed of AI applications that weren’t possible before.
 
 According to a 2018 OpenAI analysis,<sup>3</sup> from 2012 to 2018 the amount of compute used in the largest AI training runs grew more than 300,000 times with a 3.5-month doubling time. Just in the year 2020, the size of natural language generation (NLG) models has increased exponentially – from less than 20 billion parameters to 175 billion.
+:::column-end:::
+:::column span="2":::
+:::image type="complex" source="../media/implement-ai-organization-1.png" alt-text="Illustration of natural language generation (NLG) model growth.":::
+The y-axis represents number of parameters. It has three intervals: 25 billion, 100 billion, and 175 billion. The x-axis represents time and has the following years: 2018, 2019, and 2020. The graph shows exponential growth of parameters from 2018 to 2020, with a trend line curving from the bottom left of the graph to the top right. The trend line is near zero in 2018 and starts moving upward slightly in 2019. At the beginning of 2020, it’s just under 25 billion. This is marked with a circle with the text “Jan 2020.” The line then shoots upward to 175 billion by the middle of 2020, which is marked by a circle with the text “May 2020.”
+:::image-end:::
+:::column-end:::
+:::row-end:::
 
 As you can imagine, training these large, multi-tasking models requires expertise, years of work, and massive amounts of training data. It also requires the most advanced supercomputing infrastructure and techniques for training the models across many pieces of hardware.
 
@@ -16,9 +25,18 @@ As you can imagine, training these large, multi-tasking models requires expertis
 
 Through our AI at Scale initiative, we’re providing organizations with access to large multi-tasking AI models and the supercomputing resources needed to create them. This is dramatically reducing the barriers and costs associated with accessing next-generation AI capabilities.
 
+:::row:::
+:::column span="2":::
 In collaboration with OpenAI, we’ve built a supercomputer designed specifically for training large AI models.
 
 We’ve also developed our own family of large AI models, called the Microsoft Turing models. These include the world’s largest publicly available language model, the *Microsoft Turing model for natural language generation*, which has 17 billion parameters. This model has a deep understanding of grammar, context, and intended meaning. This has helped it set new benchmarks in many different language-related tasks, such as summarization, contextual prediction, and question answering.
+:::column-end:::
+:::column span="2":::
+:::image type="complex" source="../media/implement-ai-organization-2.png" alt-text="Graphic with the title “Leverage AI at Scale.”":::
+Within the graphic there are three different icons: In the top left there is a symbol showing circles connected by lines, with the text “Turing models” underneath it. In the top right, there is a cube icon that looks like a box, with the text “Microsoft products” underneath it. Finally, in the bottom center is an icon showing servers and a computer, with the text “supercomputer” underneath it.
+:::image-end:::
+:::column-end:::
+:::row-end:::
 
 By making this breakthrough technology available to all, we hope to empower organizations, developers, and employees to unlock innovation that was previously impossible.
 
