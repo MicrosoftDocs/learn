@@ -29,7 +29,7 @@ The Create Cluster wizard of the Windows Admin Center guides you through five ma
 
 > [!NOTE] 
 > To implement an SMB File Share witness, you can use an USB key attached to a network device accessible from all nodes. Azure Cloud Witness is particularly useful in scenarios where there is no additional on-premises infrastructure and when implementing stretched clusters.
-<!--- This comment is probably more for IDs; This list is not numbered correctly in the Preview, two items (before and after the note) are numbered with 1. ---> 
+
 1. Register with Azure. Azure Stack HCI is an Azure service and you need to register it with Azure within 30 days of installation. At the registration time, Azure Stack HCI itegrates automatically with Azure Arc, which provides monitoring, support, and billing, This integration also simplifies provisioning of such Azure hybrid services as Azure Monitor, Azure Backup, and Azure Site Recovery.
 
 1. Validate the cluster. Following the deployment, you run cluster validation tests to identify any potential hardware or configuration issues. 
