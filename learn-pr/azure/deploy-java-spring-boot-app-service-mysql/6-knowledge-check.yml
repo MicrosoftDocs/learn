@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-java-spring-boot-app-service-mysql.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 11/16/2020
+  author: roryp
+  ms.author: ropreddy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What service allows developers to scaffold out the structure of a Spring boot application?"
+    choices:
+    - content: "Maven"
+      isCorrect: false
+      explanation: "Maven is a build tool that allows you to configure dependencies and deploy your applications."
+    - content: "Spring Initializr"
+      isCorrect: true
+      explanation: "Correct. The Spring Initializr is a web application that generates a Spring Boot project structure for you."
+    - content: "Azure Command Line Interface (CLI)"
+      isCorrect: false
+      explanation: "Azure CLI is a command-line interface used to create and manage Azure resources."
+  - content: 'Which of the following Java Class types provides generic CRUD methods to manage JPA Objects?'
+    choices:
+    - content: Repository
+      isCorrect: true
+      explanation: "By extending JpaRepository, we get a bunch of generic CRUD methods allowing for management of JPA Objects."
+    - content: Controller
+      isCorrect: false
+      explanation: "A Controller publishes REST interfaces to store and retrieve data via HTTP."
+    - content: Entity
+      isCorrect: false
+      explanation: "A JPA Entity object maps Java Classes to Database Tables."
+  - content: "Which Maven command will create your Azure App Service instance in Azure?"
+    choices:
+    - content: "config"
+      isCorrect: false
+      explanation: "This command will set up your projects configuration with a subscription, Java Version, and operating system you specify."
+    - content: "deploy"
+      isCorrect: true
+      explanation: "This command creates your instance and copies your application and starts it."
+    - content: "package"
+      isCorrect: false
+      explanation: "This command bundles your application into an executable JAR file."
+

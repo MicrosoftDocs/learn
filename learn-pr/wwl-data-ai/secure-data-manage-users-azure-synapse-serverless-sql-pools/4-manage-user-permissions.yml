@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.manage-user-permissions
+title: Manage user permissions in Azure Synapse serverless SQL pools
+metadata:
+  title: Manage user permissions in Azure Synapse serverless SQL pools
+  description: "Manage user permissions in Azure Synapse serverless SQL pools"
+  ms.date: 11/20/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-manage-user-permissions.md)]
