@@ -1,5 +1,25 @@
 At the moment we have an empty HTML file. Let's add some code! The goal is to use hypertext markup language (HTML) to describe the web page the browser should display. Wouldn't it be nice to have a starting template? Editors can conveniently fill in some of the typical boilerplate or HTML structure for you.
 
+## TBD
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task Timeline</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Task Timeline</h1>
+    <ul>
+      <li class="list">Add visual styles</li>
+      <li class="list">Add light and dark themes</li>
+      <li>Enable switching the theme</li>
+    </ul>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+  </body>
+</html>
+
 ## Using autocomplete
 
 Visual Studio Code provides basic support for HTML programming out of the box. There is syntax highlighting, smart completions with IntelliSense, and customizable formatting. Visual Studio Code also includes great Emmet support (from the documentation on Emmet in Visual Studio Code).
