@@ -17,8 +17,6 @@ You can use Azure Spring Starter integration libraries to configure and set up c
 
 ## Create your resources by using the Azure CLI and Maven
 
-### Azure CLI
-
 You can use the Azure CLI to create and manage Azure resources.
 It runs on Linux, macOS, and Windows. The CLI allows administrators and developers to run commands by using a terminal or command-line prompt (or script) instead of a web browser. 
 
@@ -29,8 +27,6 @@ az account show
 ```
 
 In this module, you use the Azure CLI to spin up the Azure App Service and Azure Database for MySQL instance. Access the Azure CLI from a terminal or through Visual Studio Code. Or you can access it from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
-
-### Maven
 
 You'll use the Maven package manager to structure your project and pull in dependencies. Maven also provides the tools you need to configure and deploy your project to Azure App Service by using the Azure Web Apps plug-in.
 
