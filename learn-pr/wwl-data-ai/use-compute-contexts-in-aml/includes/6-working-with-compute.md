@@ -2,7 +2,7 @@ Now it's your chance to work with environments and compute targets in Azure Mach
 
 In this exercise, you will:
 
-- Create and use and environment.
+- Create and use an environment.
 - Create and use a compute target.
 
 ## Instructions
