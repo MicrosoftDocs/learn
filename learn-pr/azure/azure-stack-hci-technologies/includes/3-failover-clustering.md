@@ -1,4 +1,4 @@
-Most organizations and businesses, including Contoso, strive to ensure high availability of their mission critical workloads. Traditionally, this required specialized, costly, and complex to manage solutions. With Windows Server Failover Clustering, it is possible to accomplish the same objective in a cost effective manner on commodity hardware.
+Most organizations and businesses, including Contoso, strive to ensure high availability of their mission critical workloads. Traditionally, this required specialized, costly, and complex to manage solutions. With Windows Server Failover Clustering, it is possible to accomplish the same objective in a cost effective manner on commodity hardware. This will be a required component of your proof-of-concept environment. 
 
 # What is Failover Clustering?
 
