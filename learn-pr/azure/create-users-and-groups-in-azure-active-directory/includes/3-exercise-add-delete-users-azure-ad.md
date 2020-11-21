@@ -9,7 +9,7 @@ To hold all of the users you create in this exercise, create a new organization.
 1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>) with the same account you used to activate the sandbox.
 
 1. In the left navigation pane, select **Create a resource**.
-1. In the Marketplace search, search for **Azure Active Directory**.
+1. In the **Azure Marketplace**, search for **Azure Active Directory**.
 1. Select **Create**.
 1. On the **Create tenant** pane, enter the following values:
 
@@ -21,7 +21,7 @@ To hold all of the users you create in this exercise, create a new organization.
 1. Wait for the creation of your tenant to be completed.
 1. Switch to the new tenant.
 
-    :::image type="content" source="../media/3-switch-directory.png" alt-text="Screenshot that shows the link to manage your new organization":::
+    :::image type="content" source="../media/3-switch-directory.png" alt-text="Screenshot that shows the link to manage your new organization.":::
 
 ## Get a free trial for Azure AD Premium
 
@@ -39,7 +39,7 @@ For Azure AD Premium to complete all the exercises in this module, you'll need t
     :::image type="content" source="../media/3-azure-ad-premium-2.png" alt-text="Screenshot that shows trial enabled.":::
 
    You should also see your role listed as the **Global administrator**.
-1. Copy the **Primary domain** to use in the next section.
+1. Copy the **Primary domain** name to use in the next section.
 
 ## Add a new user
 
