@@ -33,3 +33,5 @@ To compare the three products, review the following table:
 |GPU support|Yes|Yes|Yes|
 |FPGA support|No|No|Yes|
 |Azure-managed appliance|No|No|Yes|
+
+Choose the best response for each of the questions below. Then select "Check our answers".
