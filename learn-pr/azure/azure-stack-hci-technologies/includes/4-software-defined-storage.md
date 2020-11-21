@@ -1,9 +1,9 @@
 Software-defined storage is another of the foundational building blocks of Azure Stack HCI. However, unlike Hyper-V or Failover Clustering, software-defined storage is not an individual server role or a feature, but instead consists of different, frequently complementing each other, technologies that you can combine in order to implement various storage virtualization scenarios, such as, for example, guest clustering or hyperconverged infrastructure. These technologies include Storage Spaces, Cluster Shared Volumes (CSV), Server Message Block (SMB), SMB Multichannel, SMB Direct, Scale Out File Server (SOFS), Storage Spaces Direct (S2D), and Storage Replica. 
 
 > [!NOTE] 
-> This is not the complete list, but is sufficient to gain basic understanding of the core software-defined storage functionality in Azure Stack HCI.
+> This is not the comprehensive list, but is sufficient to gain basic understanding of the core software-defined storage functionality in Azure Stack HCI.
 
-## What is Windows Server software-defined storage?
+## What is software-defined storage?
 
 Software-defined storage uses storage virtualization to separate storage management and presentation from the underlying physical hardware. One of the primary benefits of this approach is simplification of provisioning and accessing storage resources. 
 
