@@ -6,7 +6,7 @@ When it comes to analytics workloads, there are three major use cases:
 
 ## Data exploration 
 
-Data exploration enables you to browse the data lake and get initial insights about the data. This is easily achievable with Synapse Studio, where you can browse through the files, right click, and select TOP 100  rows just as you would do with a table in SQL Server. Once you are familiar with a data set, you can apply projections, filtering, grouping, and most of the operation over the data as if the data were in a regular SQL Server table.
+Data exploration enables you to browse the data lake and get initial insights about the data, and is easily achievable with Azure Synapse Studio. Using this tool you can browse through the files, right click, and select TOP 100  rows just as you would do with a table in SQL Server. Once you are familiar with a data set, you can apply projections, filtering, grouping, and most of the operation over the data as if the data were in a regular SQL Server table.
 
 ## Data transformation 
 
@@ -16,6 +16,6 @@ Azure Synapse Analytics provides great data transformations capabilities with Sy
 
 ## Logical data warehouse
 
-Once you are familiar with the data you are interested in, you can start creating objects (such as VIEWs and External Tables) that provide you with a SQL metadata layer over the data in the lake. Once these objects are created, any tool that can connect to serverless SQL pool will see these objects as regular SQL Server objects. Clients don’t even know that the underlying data is in the data lake. This makes serverless SQL pool a powerful lightweight layer between the data lake and a client.   Given that serverless SQL pool heavily relies on SQL Server, huge number of clients is supported. You can connect from BI tools like Power BI or Azure Analysis Service, from integration tools like Synapse Pipelines or Azure Data Factory, but also you can programmatically connect using any of the popular languages like C# or Python. All these work in the same fashion as if you were connecting to a regular SQL Server.
+Once you are familiar with the data you are interested in, you can start creating objects (such as VIEWs and External Tables) that provide you with a SQL metadata layer over the data in the lake. Once these objects are created, any tool that can connect to serverless SQL pool will see these objects as regular SQL Server objects. Clients don’t even know that the underlying data is in the data lake. This makes serverless SQL pool a powerful lightweight layer between the data lake and a client.   Given that serverless SQL pool heavily relies on SQL Server, huge number of clients is supported. You can connect from BI tools like Power BI or Azure Analysis Service, from integration tools like Synapse Pipelines or Azure Data Factory, but also you can programmatically connect using any of the popular languages like C# or Python.
 
 ![A logical data warehouse star schema](../media/relational-star-schema.png)
