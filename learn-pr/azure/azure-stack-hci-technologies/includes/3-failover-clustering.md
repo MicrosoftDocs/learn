@@ -4,7 +4,7 @@ Most organizations and businesses, including Contoso, strive to ensure high avai
 
 Failover clustering is a Windows Server feature that provides high availability of common Windows-based workloads, including file shares, virtual machines (VMs), database management systems, and messaging services. To accomplish this, you create a failover cluster consisting of multiple servers running Windows Server operating system. If a server that is part of a failover cluster fails or becomes unavailable, another server in the same failover cluster takes over the task of providing the services that the failed node was offering. This process is called failover and it results in minimal or, in certain cases, no service disruptions for clients that are accessing the service.
 
-## What are common use cases for Failover Clustering?
+## What are the reasons for using Failover Clustering?
 
 The most common uses of failover clustering include:
 

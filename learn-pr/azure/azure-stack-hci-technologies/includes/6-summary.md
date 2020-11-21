@@ -6,4 +6,5 @@ To learn more, review the following documents:
 
 - [Hyper-V Technology Overview](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-technology-overview)
 - [Failover Clustering in Windows Server](https://docs.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview)
+- [Overview of file sharing using the SMB 3 protocol in Windows Server](https://docs.microsoft.com/en-us/windows-server/storage/file-server/file-server-smb-overview)
 - [

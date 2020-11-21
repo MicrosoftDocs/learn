@@ -21,7 +21,7 @@ The diagram below shows Hyper-V with nested virtualization enabled. This allows 
 
 :::image type="content" source="../media/2-nested-hyper-v-architecture.png" alt-text=“Image of a nested virtualization environment, with CPU layer at bottom, on top of that is a Hypervisor layer, and then root host OS, also present now is an additional hypervisor layer and above that is the guest OS and root OS." :::
 
-## What are common use cases for Hyper-V?
+## What are the reasons for using Hyper-V?
 
 Hyper-V supports various scenarios ranging from hosting individual VMs to providing platform for complex, software-defined infrastructures. You can use Hyper-V to:
 
