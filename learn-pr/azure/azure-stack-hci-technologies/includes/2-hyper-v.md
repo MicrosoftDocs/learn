@@ -1,7 +1,7 @@
 To start your journey across Azure Stack HCI technologies, you will start with its core compute virtualization functionality provided by Hyper-V. Hyper-V is the Microsoft's implementation of hypervisor. Its role is to leverage the resources of a single *host* computer by dividing them across to multiple virtual machines (VMs) running on the same physical hardware. Hyper-V provides an isolated space for each VM to run its own operating system (OS) that's independent of the host's OS and other VMs.
 
 > [!NOTE]
-> Hyper-V is available as a server role for Windows Server, as a feature in 64-bit versions of Windows client OS, and as standalone product called *Microsoft Hyper-V Server*. Each Hyper-V version includes similar features, and this module focuses on the Hyper-V server role for Windows Server. <!--- Should Windows Server be replaced with Azure Stack HCI (As Azure Stack HCI is now different/separate OS)? Should Azure Stack HCI be mentioned also in the first sentence (together with Windows Server)? ---> 
+> Hyper-V is available as a server role for Windows Server and Azure Stack HCI, as a feature in 64-bit versions of Windows client OS, and as standalone product called *Microsoft Hyper-V Server*. Each Hyper-V version includes similar features, and this module focuses on the Hyper-V server role for Windows Server. 
 
 ## What is Hyper-V?
 
@@ -11,7 +11,7 @@ The diagram below shows the high-level architecture of Hyper-V. The Hyper-V hype
 
 :::image type="content" source="../media/2-hyper-v-architecture.png" alt-text="Image of a non-nested virtualization environment, with CPU layer at bottom, on top of that is a Hypervisor layer, and then root host OS ad guest OS." :::
 
-An operating system that runs in a VM is referred to as a *guest operating system*. Hyper-V in Windows Server <!--- Should Windows Server be replaced with Azure Stack HCI (As Azure Stack HCI is now different/separate OS)? ---> supports all current version of Windows Server and client operating systems and a number of Linux distributions, including CentOS, Red Hat Enterprise Linux, Debian, Oracle Linux, SUSE, and Ubuntu, as well as FreeBSD.
+An operating system that runs in a VM is referred to as a *guest operating system*. Hyper-V supports all current version of Windows Server and client operating systems and a number of Linux distributions, including CentOS, Red Hat Enterprise Linux, Debian, Oracle Linux, SUSE, and Ubuntu, as well as FreeBSD.
 
 ## What is nested virtualization?
 
@@ -27,21 +27,21 @@ Hyper-V supports various scenarios ranging from hosting individual VMs to provid
 
 - **Consolidate your server infrastructure**. With Hyper-V you can consolidate multiple physical servers on to fewer, more powerful computers to optimize space and energy usage.
 - **Provide a virtual development or test environment**. Virtualization provides the means to duplicate and restore development or test environments without having to purchase or maintain physical hardware or isolated network systems. Virtualized development or test environments can be configured quickly and reverted as needed without affecting production systems.
-- **Establish a virtual desktop infrastructure (VDI)**. Combining Hyper-V and Remote Desktop Virtualization with Windows Server <!--- Should Windows Server be replaced with Azure Stack HCI (As Azure Stack HCI is now different/separate OS)? ---> provides a centralized desktop management solution that uses VDI. This scenario helps you provide users with secure, agile and personalized virtual desktops or virtual desktop pools.
+- **Establish a virtual desktop infrastructure (VDI)**. Combining Hyper-V and Remote Desktop Virtualization provides a centralized desktop management solution that uses VDI. This scenario helps you provide users with secure, agile and personalized virtual desktops or virtual desktop pools.
 - **Implement a private cloud infrastructure**. Hyper-V accommodates flexible, on-demand services that function much like public cloud services. Azure Stack hyperconverged infrastructure (HCI) exemplifies how Hyper-V can integrate with other technologies such as Storage Spaces Direct (S2D) and Software Defined Networking (SDN) to run virtualized workloads on-premises.
 
-## What are general features of Hyper-V on Windows Server? <!--- Should Windows Server be replaced with Azure Stack HCI (or talk about general features of Hyper-V, without mentioning the OS)? Similar comment is about first sentence in this section. --->
+## What are general features of Hyper-V? 
 
 New releases of Windows Server and updates add features to Hyper-V for supporting different workloads, increase their performance and enhance their security. Hyper-V's general features can be grouped as follows:
 
-- **Management and connectivity**. You can manage your Hyper-V environment with the Hyper-V Manager, Hyper-V module for Windows PowerShell, Virtual Machine Connection (also referred to as VMConnect), and Windows PowerShell Direct. <!--- Should word "Direct" be removed and talk just about Windows PowerShell? Shpuld WAC also be mentioned? --->You install these tools on the computer with the Hyper-V server role, or you can install the tools on a remote management computer.
+- **Management and connectivity**. You can manage your Hyper-V environment with the Windows Admin Center, Hyper-V Manager, Hyper-V module for Windows PowerShell, and Virtual Machine Connection (also referred to as VMConnect). You install these tools on the computer with the Hyper-V server role, or you can install the tools on a remote management computer.
 - **Portability**. To make it easier to move or distribute a VM, Hyper-V provides features such as live migration, storage migration, and standard import/export functionality.
 
 > [!NOTE] 
 > Live Migration is a Hyper-V feature which allows you to seamlessly move running VMs from one Hyper-V host to another while maintaining the availability of VM workloads. The primary benefit of live migration is flexibility. For example, you can decommission or upgrade a Hyper-V host on an as needed basis, without having to schedule a maintenance window, by simply live migrating all of its VMs.
 
 > [!NOTE] 
-> With Storage Migration, you move VM disk files <!--- Should also other VM components, such as configuration or checkpoints be mentioned (as they can also be moved by using Storage migration)? --->while the corresponding VM is running. This helps with resolving disk space issues on Hyper-V hosts. For example, if you have storage available on another Hyper-V cluster, you can use storage migration to transfer existing VM disk files to it without affecting availability of your virtualized workloads.
+> With Storage Migration, you move VM files, including disks, configuration, and checkpoints while the corresponding VM is running. This helps with resolving disk space issues on Hyper-V hosts. For example, if you have storage available on another Hyper-V cluster, you can use storage migration to transfer existing VM disk files to it without affecting availability of your virtualized workloads.
 
 Another common reason for moving VM disk files is to update the underlying physical storage. You can also move VM disks between physical storage devices in response to reduced performance resulting from increased I/O demand on one of them.
 	
@@ -49,7 +49,7 @@ Another common reason for moving VM disk files is to update the underlying physi
 - **Security**: Hyper-V supports security features such as secure boot and shielded VMs. Secure boot verifies digital signatures on files during the boot process to protect against malware. Virtual disks in shielded VMs are encrypted to secure access and the VMs can only run on specific protected hosts.
 - **Optimization**. For all supported guest operating systems, Hyper-V includes a set of customized services and drivers called Integration Services. These Integration Services include Time Synchronization, Operating System Shutdown, Data Exchange, Heartbeat, Backup and Guest Services. Updates for Integration Services are obtained and delivered through Windows Update.
 
-## What are system requirements for Hyper-V on Windows Server? <!--- Should Windows Server be replaced with Azure Stack HCI (or talk about general features of Hyper-V, without mentioning the OS)? --->
+## What are system requirements for Hyper-V? 
 
 You should plan and carefully assess your VMs service, resource and capacity requirements before deploying production workloads to Hyper-V. The following are basic hardware requirements for a Hyper-V host:
 
@@ -72,9 +72,9 @@ The following is a list of hardware resources that the host will need for runnin
 
 To enable nested virtualization, you need to meet the following prerequisites:
 
-- Both the Hyper-V host and the guest VM must be Windows Server 2016 or later. <!--- Should Windows Server be replaced with Azure Stack HCI (as this is module on Azure Stack HCI, not Windows Server). --->
+- Both the Hyper-V host and the guest VM must be running Windows Server 2016 or Windows Server 2019. This functionality is also available on Azure Stack HCI.
 - The physical host computer must have an Intel processor with Virtual Machine Extensions (VT-x) and Extended Page Tables (EPT) capabilities.
 
-## How to install the Hyper-V Server role on Windows Server? <!--- Should Windows Server be replaced with Azure Stack HCI (or talk about general features of Hyper-V, without mentioning the OS)? --->
+## How to install the Hyper-V Server role? 
 
-To install the Hyper-V server role on local or remote Windows <!--- Should Windows hostr be replaced with Azure Stack HCI host (or talk about general hosst, without mentioning the OS)? --->hosts, you can use **Windows Admin Center (WAC)**, **Server Manager**, or the **Install-WindowsFeature** Windows PowerShell cmdlet.
+To install the Hyper-V server role on local or remote hosts, you can use **Windows Admin Center (WAC)**, **Server Manager**, or the **Install-WindowsFeature** Windows PowerShell cmdlet.
