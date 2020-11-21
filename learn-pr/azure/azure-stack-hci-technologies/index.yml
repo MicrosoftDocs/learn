@@ -32,8 +32,7 @@ units:
 - learn.azure.azure-stack-hci-technologies.2-hyper-v
 - learn.azure.azure-stack-hci-technologies.3-failover-clustering
 - learn.azure.azure-stack-hci-technologies.4-software-defined-storage
-- learn.azure.azure-stack-hci-technologies.5-windows-admin-center
-- learn.azure.azure-stack-hci-technologies.6-software-defined-networking
-- learn.azure.azure-stack-hci-technologies.7-summary
+- learn.azure.azure-stack-hci-technologies.5-software-defined-networking
+- learn.azure.azure-stack-hci-technologies.6-summary
 badge:
   uid: learn.azure.azure-stack-hci-technologies.badge

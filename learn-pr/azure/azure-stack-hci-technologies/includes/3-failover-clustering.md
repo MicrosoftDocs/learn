@@ -47,15 +47,3 @@ There are three types of quorum witness available to failover clustering.
 - Cloud Witness uses a blob in an Azure Storage account.
 
 When selecting the quorum witness type, you should make sure that the witness remains accessible in the majority of scenarios affecting the availability of cluster nodes.
-
-## What are Failover Clustering functional levels?
-
-Windows Server failover clustering capabilities depend on the cluster functional level. In general, you would want to ensure that the cluster uses the highest possible functional level. However, support for lower functional levels allows you to perform rolling upgrades of failover clusters running earlier operating system versions. This way, during an upgrade, it is possible to have Windows Server 2016 and Windows Server 2019 nodes in the same failover cluster, eliminating the need for downtime. After all of the nodes that were running Windows Server 2016 have been replaced with Windows Server 2019 nodes, you can update the cluster functional level. Keep in mind that this process is irreversible and that, once you complete it, the failover cluster can no longer include any nodes running the previous version of Windows Server.
-
-## What are Windows Server 2019 Failover Clustering enhancements? 
-
-Microsoft introduced a range of new and improved failover clustering features in Windows Server 2019, including: 
-
-- Windows Server System Insights. This machine learning (ML) and predictive analytics (AI)-based feature collects, stores, and analyzes operating system logs and metrics to faciliate capacity forecasting. 
-- Cross-domain Cluster Migration. With Windows Server 2019, you can migrate clusters from one Active Directory Domain Services (AD DS) domain to another, eliminating the need for installing a new cluster. 
-- In-place upgrade of cluster nodes. Windows Server 2019 introduced the ability to upgrade the operating system of a cluster node in-place, as part of rolling upgrades.
