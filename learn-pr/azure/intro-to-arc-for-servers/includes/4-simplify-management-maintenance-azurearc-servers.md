@@ -7,7 +7,7 @@ With Azure Arc enabled servers, the Azure portal can serve as a centralized dash
 More in-depth monitoring, alerting, log collection, and log analytics are available through integration with Azure Monitor. Azure Monitor is a comprehensive solution for collecting, analyzing, and responding to telemetry from cloud and on-premises environments. Azure Monitor offers three main capabilities:
 
 - Monitoring and metrics visualization. Metrics are numerical values that represent the health status of monitored systems.
-- Querying and analyzing logs. Logs include activity, diagnostic, and telemetry. Their analysis provides deep insights into the state of monitored systems, and helps facilitate troubleshooting.
+- Querying and analyzing logs. Logs include activity, diagnostic, and telemetry. Their analysis provides deep insights into the state of monitored systems and helps facilitate troubleshooting.
 - Alerting and remediation. Alerts notify you of anomalous conditions. You can also configure them to automatically initiate a corrective action to remediate the issue that resulted in the alert. It is also possible to configure alerts to raise an incident or create a work item through integration between Azure Monitor and your internal IT Service Management platform.
 
 You can store and analyze near real-time and historical data in a Log Analytics workspace. This requires installing the Log Analytics agent. For additional insight into interaction between servers and other systems in your environment, you can install the Dependency Agent. The same Log Analytics agent allows you to onboard your serves to other Azure services, such as Update Management, Change Tracking and Inventory, and Azure Security Center.
@@ -18,7 +18,7 @@ Once you install and configure the agent, servers will start forwarding telemetr
 
 ## What are the benefits of Azure Security Center in hybrid scenarios?
 
-To address the security challenges inherent to hybrid environment, such as high volatility and dependencies on external services, you need sophisticated tools that help assess your security posture as well as identify and remediate risks. Ideally, you want to deploy those tools with minimal effort. Security Center can help you address these requirements.
+To address the security challenges inherent to hybrid environment, such as high volatility and dependencies on external services, you need sophisticated tools that help assess your security posture and identify and remediate risks. Ideally, you want to deploy those tools with minimal effort. Security Center can help you address these requirements.
 
 Security Center is a cloud-based service for managing the security of your cloud and on-premises infrastructure and workloads. With Security Center capabilities, you can:
 
@@ -29,7 +29,7 @@ Security Center is a cloud-based service for managing the security of your cloud
 Security Center relies on the Log Analytics agent to collect security-related events, application crash dumps, and operating system configuration settings. It continuously analyzes collected data, provides you with remediation recommendations, and generates security alerts in response to attempted and actual security breaches and exploits. 
 
 > [!NOTE] 
-> Azure Defender functionality requires the Standard Pricing tier of Azure Security Center. Security assessment and recomendation, along with the Azure secure score are part of the free tier offering. 
+> Azure Defender functionality requires the Standard Pricing tier of Azure Security Center. Security assessment and recommendation, along with the Azure secure score are part of the free tier offering. 
 
 
 ## What are the benefits of Azure Automation Update Management in hybrid scenarios?
@@ -52,7 +52,7 @@ PowerShell DSC is a technology that implements declarative configuration managem
 
 ## Are there any additional benefits specific to Azure Arc enabled servers? <!--Marcin: I erased one # as it seamed more logic. Do you aggree?-->
 
-All of the services described in this unit are available to non-Azure servers, including those which are not Azure Arc enabled. However, Azure Arc offers advantages when it comes to the onboarding process, since you can use VM extensions or Azure Policy to deploy the Log Analytics agent. 
+All of the services described in this unit are available to non-Azure servers, including those which are not Azure Arc enabled. However, Azure Arc offers advantages when it comes to the onboarding process, because you can use VM extensions or Azure Policy to deploy the Log Analytics agent. 
 
 In addition, integration with Azure Resource Manager provides support for the resource context access to Log Analytics data. Resource context allows you to restrict the scope of access to Log Analytics data based on the permissions to the corresponding Azure resource. Because each Azure Arc enabled server exists as an Azure resource, you can control access to its Log Analytics logs by relying on RBAC permissions assigned to that resource.
 

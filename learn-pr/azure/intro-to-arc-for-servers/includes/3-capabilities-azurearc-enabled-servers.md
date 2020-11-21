@@ -2,19 +2,19 @@ Azure Arc allows you to extend the scope of several Azure services to non-Azure 
 
 ## What are the key capabilities of Azure Arc?
 
-A number of Azure Arc benefits are independent of the resouce type, since they reflect the capabilities of Azure Resource Manager. These benefits include:
+A number of Azure Arc benefits are independent of the resource type, since they reflect the capabilities of Azure Resource Manager. These benefits include:
 
 - The ability to organize all organizational resources by using Azure management groups, subscriptions, resource groups, and tags.
 - A single, comprehensive inventory of organizational assets across multi-clouds and on-premises, including support for searching and indexing by using Azure Resource Graph.
 - A consolidated view of Azure and Azure Arc enabled resources via the Azure portal, Azure Command Line Interface (CLI), Azure PowerShell, and Representational state transfer (REST) Application Programming Interface (API). 
-- Direct access from the Azure portal to the majority of management features of the Azure Arc enabled servers: 
+- Direct access from the Azure portal to most of the management features of the Azure Arc enabled servers: 
 
 | Setting | Explanation |
 | --- | --- |
 | Overview | Provides basic information about the Azure resource and the corresponding Arc enabled server, including status, location, subscription, computer name, operating system, and tags. |
 | Activity log | Lists Azure Resource Manager-based changes affecting the state of the Azure resource representing the Arc enabled server, including information identifying the initiator of that change. |
-| Access control | Enables you to view, grant, and revoke permissions to perform management tasks on the Azure resource representing the Arc enabled server. |
-| Tags | Allow you to view, assign, and remove tags consisting of name/value pairs, which provide you with a mechanism to label and categorize the Azure resource representing the Arc enabled server in an arbitrary manner. You can also use them to facilitate consolidated billing by applying tags that map to cost centers reflecting your charge-back policies. |
+| Access control | Enables you to observe, grant, and revoke permissions to perform management tasks on the Azure resource representing the Arc enabled server. |
+| Tags | Allow you to observe, assign, and remove tags consisting of name/value pairs, which provide you with a mechanism to label and categorize the Azure resource representing the Arc enabled server in an arbitrary manner. You can also use them to facilitate consolidated billing by applying tags that map to cost centers reflecting your charge-back policies. |
 | Extensions | Allow you to automate configuration of the operating system and applications running within the Arc enabled server by using VM extensions. |
 | Locks | Allow you to prevent accidental changes or deletions of the Azure resource corresponding to the Arc enabled server. |
 | Policies | Allow you to audit operating system and application settings of the Arc enabled server. |
@@ -47,9 +47,9 @@ VM extensions are lightweight software components that automate post-operating s
 
 ### What is the role of Azure Policy in managing Arc enabled Azure Stack HCI VMs?
 
-Azure Policy is a service that can help organizations manage and evaluate internal and regulatory compliance of their Arc enabled servers, in addition to a wide range of Azure services. Azure Policy uses declarative rules based on properties of target resource types, including Windows and Linux operating systems. These rules form policy definitions, which administrators can apply through policy assignment to resource groups, subscriptions, or management groups that host Azure Arc enabled servers. To simplify management of policy definitions, it is possible to combine multiple policies into initiatives, and then create a few of initiative assignments in lieu of multiple policy assignments.
+Azure Policy is a service that can help organizations manage and evaluate internal and regulatory compliance of their Arc enabled servers, in addition to a wide range of Azure services. Azure Policy uses declarative rules based on properties of target resource types, including Windows and Linux operating systems. These rules form policy definitions, which administrators can apply through policy assignment to resource groups, subscriptions, or management groups that host Azure Arc enabled servers. To simplify management of policy definitions, it is possible to combine multiple policies into initiatives, and then create a few initiative assignments in lieu of multiple policy assignments.
 
-Azure Policy supports auditing the state of Arc enabled server with Guest Configuration policies. Guest Configuration policies do not apply configurations, but they audit settings within the target operating system and evaluate their compliance. You can, however, use Azure Policy to apply configuration of the Azure resource representing an Arc enabled server. You also have the ability to use Azure Policy to deploy configurations by leveraging VM extensions.
+Azure Policy supports auditing the state of Arc enabled server with Guest Configuration policies. Guest Configuration policies do not apply configurations, but they audit settings within the target operating system and evaluate their compliance. You can, however, use Azure Policy to apply configuration of the Azure resource representing an Arc enabled server. You can also use Azure Policy to deploy configurations by leveraging VM extensions.
 
 For example, Contoso could use Azure Policy to implement the following rules:
 

@@ -1,4 +1,4 @@
-Over the course of this module, you have explored the features of Azure Arc enabled servers and the benefits they bring to customers like Contoso. You reviewed the primary use cases of Azure Arc enabled servers and verified that it will allow you to integrate with Azure all of the Contoso's on-premises resources. 
+Over the course of this module, you have explored the features of Azure Arc enabled servers and the benefits they bring to customers like Contoso. You reviewed the primary use cases of Azure Arc enabled servers and verified that it will allow you to integrate with Azure all of Contoso's on-premises resources. 
 
 Given the complexity, global presence, and hybrid nature of Contoso's computing environment, you concluded that the optimal way to streamline its management and maintenance was to leverage the functionality of Azure Arc enabled servers. With this approach, Contoso will benefit from the centralized, at-scale management provided by Azure Arc while still being able to retain some on-premises workloads. This will also address challenges associated with the multi-cloud strategy that Contoso wants to pursue. 
 
