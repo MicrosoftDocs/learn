@@ -35,6 +35,8 @@ The simplest example of software-defined storage in clustered scenarios is Clust
 
 Cluster Shared Volumes (CSV) is a clustered file system that enables multiple nodes of a Failover Cluster to simultaneously read from and write to the same set of storage volumes. The CSV volumes map to subdirectories within the C:\ClusterStorage\ directory on each cluster node. This means that cluster nodes can access the same content via the same file system path. While each node can independently read from and write to individual files on a given volume, a single cluster node serves a special role of the CSV owner (or, *coordinator*) of that volume. You have the option of assigning an individual volume to a specific owner, however, a failover cluster automatically distributes CSV ownership between cluster nodes. 
 
+:::image type="content" source="../media/4-csv-architecture.png" alt-text="The correlation between the storage pool, CSVs, and C:\ClusterStorage\ file system directories. CSVs correspond to individual volumes whih are part of the same storage pool." border="false":::
+
 When changes to file system metadata take place on a CSV volume, the owner is responsible for implementing them and managing their orchestration, synchronizing them across all cluster nodes with access to that volume. Such changes include, for example, creating or deleting a file. On the other hand, standard write and read operations to open files on a CSV volume doesn't affect metadata. Effectively, each cluster node with direct connectivity to the underlying storage can perform them independently, without relying on the CSV owner of that volume. 
 
 ### What are the reasons for using CSV?
@@ -104,6 +106,8 @@ In both of these secenarios, you can implement storage by using Storage Spaces D
 ## What is Storage Spaces Direct?
 
 Storage Spaces Direct represent the evolution of Storage Spaces. It leverages Storage Spaces, Failover Clustering, Cluster Shared Volumes (CSVs), and SMB 3.x to implement virtualized, highly-available clustered storage by using local disks on each of the Storage Spaces Direct cluster nodes. It is suitable for hosting highly-available workloads, including VMs and SQL Server databases. This eliminates the need for attaching storage devices to multiple cluster nodes in Failover Clustering scenarios.
+
+:::image type="content" source="../media/4-s2d-architecture.png" alt-text="The architecture of a typical Storage Spaces Direct implementation, including the storage pool, software storage bus, cluster, Storage Spaces, CSV, and Hyper-V VMs." border="false":::
 
 Using local disks in this manner requires a high-bandwidth, low-latency network between the nodes. To satisfy this requirement, you should deploy redundant network connections in combination with high-end RDMA network adapters. This allows you to benefit from technologies such as SMB 3.x, SMB Direct, and SMB Multichannel to deliver high-speed, low-latency, CPU-efficient storage access. 
 

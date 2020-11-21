@@ -12,3 +12,30 @@ title: Unit title
 durationInMinutes: 10
 content: |
   [!include[](includes/3-failover-clustering.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "?"
+    choices:
+    - content: "."
+      isCorrect: true
+      explanation: "That's correct. ."
+    - content: "."
+      isCorrect: false
+      explanation: "That's incorrect. ."
+    - content: "."
+      isCorrect: false
+      explanation: "That's incorrect. ."
+
+  - content: "?"
+    choices:
+    - content: ""
+      isCorrect: false
+      explanation: "That's incorrect. ."
+    - content: "."
+      isCorrect: false
+      explanation: "That's incorrect. ."
+    - content: "."
+      isCorrect: true
+      explanation: "That's correct. ."
