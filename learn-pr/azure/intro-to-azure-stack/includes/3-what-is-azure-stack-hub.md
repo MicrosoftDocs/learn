@@ -41,3 +41,5 @@ Azure Stack Hub delivers the most significant benefits in cases that involve:
 |Latency- and bandwidth-sensitive workloads|Azure Stack Hub helps address latency and connectivity constraints that preclude the use of Azure for workload hosting.|
 |Disconnected workloads|By leveraging the ability of Azure Stack Hub in the disconnected mode, you can introduce cloud capabilities to such environments as factory floors, cruise ships, or mine shafts.|
 |Workloads that are subject to residency requirements|Azure Stack Hub allows you to provision IaaS and PaaS workloads that are subject to compliance or regulatory restrictions, in the areas such as audit, financial reporting, foreign exchange trading, online gaming, or expense reporting.|
+
+Choose the best response for each of the questions below. Then select "Check our answers".
