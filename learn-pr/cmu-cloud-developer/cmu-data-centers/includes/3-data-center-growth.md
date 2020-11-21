@@ -62,7 +62,7 @@ Techniques to calculate and improve power efficiency in datacenters are covered 
 ***
 ### References
 
-1. _GeSI (2008). [SMART 2020: Enabling the low-carbon economy in the information age Global e-Sustainability Initiative Report](https://www.theclimategroup.org/sites/default/files/archive/files/Smart2020Report.pdf)_
+1. _GeSI (2008). [SMART 2020: Enabling the low-carbon economy in the information age Global e-Sustainability Initiative Report](https://ecocloud360.com/wp-content/uploads/2015/02/02_Smart2020Report.pdf)_
 
 ***
 

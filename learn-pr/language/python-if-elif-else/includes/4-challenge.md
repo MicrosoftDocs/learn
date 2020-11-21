@@ -2,13 +2,13 @@ Code challenges throughout these modules will reinforce what you've learned and 
 
 ### Step 1: Add a new file
 
-Create a new code file for this challenge. For example, you might create a file named `challenge.py`.
+For this challenge, create a new code file. For example, you might create a file named `challenge.py`.
 
 ### Step 2: Write code in the new file to solve the challenge
 
 Write a short program that prints one of several messages to the user based on their input.
 
-First, prompt the user about whether they want to continue or not.
+First, prompt the user about whether they want to continue.
 
 If the user responds with either `no` or `n`, print the phrase `Exiting`.
 
@@ -38,4 +38,4 @@ Would you like to continue? bob
 Please try again and respond with yes or no.
 ```
 
-Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.
+Whether you get stuck and need to peek at the solution or you finish successfully, to view a solution to this challenge, continue on.
