@@ -50,7 +50,7 @@ quiz:
     choices:  
     - content: 'Alerts, Metrics, Security Alerts, Custom Alerts, and Workbooks'
       isCorrect: false
-      explanation: Security Alerts and Custom Alerts fall under the <b>Security</b> heading.
+      explanation: Security Alerts and Custom Alerts fall under the **Security** heading.
     - content: 'Alerts, Metrics, Diagnostic settings, Logs, and Workbooks'
       isCorrect: true
       explanation: These entries are the five features of IoT Hub monitoring.
@@ -59,4 +59,4 @@ quiz:
       explanation: An Overview feature isn't available for Monitoring.
     - content: 'Alerts, Metrics, Diagnostic settings, Resource Health, and Workbooks'
       isCorrect: false
-      explanation: Resource Health is a feature of <b>Support + Troubleshooting</b>.
+      explanation: Resource Health is a feature of **Support + Troubleshooting**.
