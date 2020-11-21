@@ -1,0 +1,61 @@
+Most organizations and businesses, including Contoso, strive to ensure high availability of their mission critical workloads. Traditionally, this required specialized, costly, and complex to manage solutions. With Windows Server Failover Clustering, it is possible to accomplish the same objective in a cost effective manner on commodity hardware.
+
+# What is Failover Clustering?
+
+Failover clustering is a Windows Server feature that provides high availability of common Windows-based workloads, including file shares, virtual machines (VMs), database management systems, and messaging services. To accomplish this, you create a failover cluster consisting of multiple servers running Windows Server operating system. If a server that is part of a failover cluster fails or becomes unavailable, another server in the same failover cluster takes over the task of providing the services that the failed node was offering. This process is called failover and it results in minimal or, in certain cases, no service disruptions for clients that are accessing the service.
+
+## What are common use cases for Failover Clustering?
+
+The most common uses of failover clustering include:
+
+- Highly available services and applications that run on physical servers or in guest VMs hosted on clustered Hyper-V servers.
+- Highly available or continuously available file shares hosting Microsoft SQL Server databases and Microsoft Hyper-V VMs configuration and disk files.
+
+## What are components of Failover Clustering?
+
+A failover cluster consists of the following components:
+
+- Nodes. Nodes are Windows Server computers that are members of a failover cluster. These computers have the Failover Clustering feature installed, and they run highly available workloads consisting of services, applications, and resources that are associated with a cluster. A Windows Server failover cluster can consist of up to 64 nodes. A Hyper-V cluster can host up to 8,000 guest VMs, with up to 1,024 guest VMs per host.
+- Clients. Clients are computers that consume highly available services and applications running in a failover cluster. There should be multiple network paths between clients and the cluster. You should configure client applications to automatically attempt to reconnect to clustered services in case of their temporary unavailability.
+- Networks. Networks enable communication between nodes and computers consuming clustered workloads. In addition, nodes frequently use high-throughput, low-latency networks for accessing shared storage.
+- Clustered role. A clustered role is a highly available role or service that runs on the cluster node. Clients consume this service by connecting to the cluster node. If such a service becomes unavailable on one node, the failover cluster fails it over automatically to another node. The failover mechanism automatically redirects client requests for the service to the new node.
+- Resources. Resources are physical or logical elements such as a shared folder, disk, or IP address, which the failover cluster manages. Resources may provide service to clients or may be integral parts of highly available applications. Resources are the most basic and smallest configurable failover cluster components. A resource can run only on a single node at any given time.
+- Cluster storage. In addition to its own local storage, where the Windows Server operating system is installed, each cluster node has access to highly available shared storage, where application configuration and data reside. For example, cluster storage hosts configuration data and virtual hard disks of highly available guest VMs.
+
+:::image type="content" source="../media/3-failover-cluster-architecture.png" alt-text="A graphic depicts the architecture of a failover cluster with two nodes and shared storage." border="false":::
+
+> [!NOTE] 
+> Shared storage does not have to be directly attached to multiple nodes. The Storage Spaces Direct technology allows for sharing disks that are attached to individual nodes. 
+
+## What is Failover Clustering quorum?
+
+In a failover cluster, the term quorum represents the number of clustering components that must be available for that cluster to remain online. These components can include the cluster nodes and, optionally, a witness. The term witness designates a resource which role is to establish and maintain a quorum. For this purpose, a failover cluster can use a file share, a disk, or a blob in Azure Storage. The quorum is determined based on the number of votes associated with cluster nodes and the witness. The purpose of the quorum is to prevent the "split brain" scenario. In this scenario, due to internode connectivity issues, two sets of nodes in a cluster could potentially start operating independently of each other, resulting in the corruption of cluster state and its resources.
+
+The quorum management model defines allocation of votes. Windows Server Failover Clustering supports dynamic quorum management. Dynamic quorum provides higher availability within a failover cluster by continuously monitoring and adjusting the quorum model based on the available cluster nodes. Cluster quorum calculation is adjusted each time the number of nodes changes, so that even if a failover cluster has less than 50 percent of the original number of nodes, the failover cluster continues to work and cluster roles are still available. With dynamic quorum enabled, a failover cluster can survive with only one node up and running. 
+
+> [!NOTE] 
+> The dynamic quorum model is enabled by default.
+
+The functionality of a failover cluster depends not only on a quorum but also on the resources available to cluster nodes and their ability to run clustered workloads that fail over to that node. For example, a cluster with five nodes will still have a quorum even if two nodes fail. However, each remaining cluster node continues serving clients only if it has enough resources to run cluster roles that failed over to the remaining three nodes. These resources include storage, processing power, network bandwidth, and memory. You can configure VM priority, start order, preferred hosts, and anti-affinity to decide the nodes on which the cluster role can run.
+
+### What types of witness does Failover Clustering support?
+
+There are three types of quorum witness available to failover clustering.
+
+- Disk Witness uses a clustered disk resource in the same failover cluster. All nodes must have access to the shared disk.
+- File Share Witness uses an external file share. Starting with Windows Server 2019, it is possible to implement it by using a USB drive attached to a network network device accessible to all cluster nodes.
+- Cloud Witness uses a blob in an Azure Storage account.
+
+When selecting the quorum witness type, you should make sure that the witness remains accessible in the majority of scenarios affecting the availability of cluster nodes.
+
+## What are Failover Clustering functional levels?
+
+Windows Server failover clustering capabilities depend on the cluster functional level. In general, you would want to ensure that the cluster uses the highest possible functional level. However, support for lower functional levels allows you to perform rolling upgrades of failover clusters running earlier operating system versions. This way, during an upgrade, it is possible to have Windows Server 2016 and Windows Server 2019 nodes in the same failover cluster, eliminating the need for downtime. After all of the nodes that were running Windows Server 2016 have been replaced with Windows Server 2019 nodes, you can update the cluster functional level. Keep in mind that this process is irreversible and that, once you complete it, the failover cluster can no longer include any nodes running the previous version of Windows Server.
+
+## What are Windows Server 2019 Failover Clustering enhancements? 
+
+Microsoft introduced a range of new and improved failover clustering features in Windows Server 2019, including: 
+
+- Windows Server System Insights. This machine learning (ML) and predictive analytics (AI)-based feature collects, stores, and analyzes operating system logs and metrics to faciliate capacity forecasting. 
+- Cross-domain Cluster Migration. With Windows Server 2019, you can migrate clusters from one Active Directory Domain Services (AD DS) domain to another, eliminating the need for installing a new cluster. 
+- In-place upgrade of cluster nodes. Windows Server 2019 introduced the ability to upgrade the operating system of a cluster node in-place, as part of rolling upgrades.
