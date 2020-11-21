@@ -15,7 +15,7 @@ The simplest example of software-defined storage in non-clustered scenarios is S
 
 ## What are Storage Spaces?
 
-A storage space is a storage-virtualization capability built into Windows Server and Windows 10. The Storage Spaces feature consists of two components:
+A storage space is a storage-virtualization capability built into Windows Server and Windows 10. <!--- Should Azure Stack HCI also be mentioned (on the first place, as this is module on Azure Stack HCI). ---> The Storage Spaces feature consists of two components:
 
 - Storage pools. This is a collection of physical disks aggregated into a logical disk that you can manage as a single entity. The pool can contain physical disks of any type and size. 
 - Storage spaces. These are virtual disks that you can create from free space in a storage pool. Virtual disks are equivalent to LUNs on a SAN.
@@ -25,7 +25,7 @@ A storage space is a storage-virtualization capability built into Windows Server
 The most common reasons for using Storage Spaces include:
 
 - Increasing storage resiliency levels, such as mirroring and parity. Virtual disks resiliency resembles Redundant Array of Independent Disks (RAID) technologies.
-- Improving storage performance by using storage tiers. Storage tiers allow you optimize the use of different disk types in a storage space. For example, you could use very fast but small-capacity solid-state drives (SSDs) with slower, but large-capacity hard disks. When you use this combination of disks, Storage Spaces automatically moves data that is accessed frequently to the faster disks, and then moves data that is accessed less often to the slower disks. 
+- Improving storage performance by using storage tiers. Storage tiers allow you optimize the use of different disk types in a storage space. For example, you could use very fast but small-capacity solid-state drives (SSDs) <!--- Would it make sense to mention also NVMe and/or server class memory? ---> with slower, but large-capacity hard disks. When you use this combination of disks, Storage Spaces automatically moves data that is accessed frequently to the faster disks, and then moves data that is accessed less often to the slower disks. 
 - Improving storage performance by using write-back caching. The purpose of write-back caching is to optimize writing data to the disks in a storage space. Write-back caching works with storage tiers. If the server that is running the storage space detects a peak in disk-writing activity, it automatically starts writing data to the faster disks. 
 - Increasing storage efficiency by using thin provisioning. Thin provisioning enables storage to be allocated readily on as needed basis. Instead of the traditional fixed storage allocation method in which large portions of storage capacity are preallocated but might remain unused, thin provisioning optimizes any available storage by reclaiming storage that is no longer needed using a process known as trim.
 
@@ -54,7 +54,7 @@ The Server Message Block (SMB) protocol is a network file sharing protocol that 
 
 The most common uses of SMB include:
 
-- Storage for VM disk files (Hyper-V over SMB). Hyper-V can store virtual machine files, such as configuration, VM disk files, and snapshots, in file shares over the SMB 3.x protocol. This can be used for both stand-alone file servers and clustered file servers that use Hyper-V together with shared file storage for the cluster.
+- Storage for VM disk files (Hyper-V over SMB). Hyper-V can store virtual machine files, such as configuration, VM disk files, and snapshots <!--- Checkpoints should be used instead of snapshots. --->, in file shares over the SMB 3.x protocol. This can be used for both stand-alone file servers and clustered file servers that use Hyper-V together with shared file storage for the cluster.
 - Microsoft SQL Server over SMB. SQL Server can store user database files on SMB file shares. 
 - Traditional storage for end-user data. The SMB 3.x protocol supports the traditional information worker workloads. 
 
@@ -62,7 +62,7 @@ SMB 3.x provides support for SMB Multichannel and SMB Direct.
 
 ## What is SMB Multichannel?
 
-SMB Multichannel is part of the implementation of the SMB 3.x protocol, which significantly improves network performance and availability for Windows Servers operating as file servers. SMB Multichannel allows such servers to take advantage of multiple network connections to provide the following capabilities:
+SMB Multichannel is part of the implementation of the SMB 3.x protocol, which significantly improves network performance and availability for Windows Servers <!--- Should "and Azure Stack HCI" be added? ---> operating as file servers. SMB Multichannel allows such servers to take advantage of multiple network connections to provide the following capabilities:
 
 - Increased throughput. The file server can simultaneously transmit more data using multiple connections. This is particularly beneficial when using servers with multiple, high-speed network adapters.
 - Automatic configuration: SMB Multichannel automatically discovers multiple available network paths and dynamically adds connections as required.
@@ -70,7 +70,7 @@ SMB Multichannel is part of the implementation of the SMB 3.x protocol, which si
 
 ## What is SMB Direct?
 
-SMB Direct optimizes the use of RDMA network adapters for SMB traffic, allowing them to function at full speed with very low latency and low CPU utilization. This makes SMB Direct suitable for scenarios in which workloads such as Hyper-V or Microsoft SQL Server rely on remote SMB 3.x file servers to emulate local storage. SMB Direct is available and enabled by default on all currently supported versions of Windows Server.
+SMB Direct optimizes the use of RDMA network adapters for SMB traffic, allowing them to function at full speed with very low latency and low CPU utilization. This makes SMB Direct suitable for scenarios in which workloads such as Hyper-V or Microsoft SQL Server rely on remote SMB 3.x file servers to emulate local storage. SMB Direct is available and enabled by default on all currently supported versions of Windows Server. <!--- Should "and on Azure Stack HCI" be added? --->
 
 SMB Multichannel is responsible for detecting the RDMA capabilities of network adapters necessary to enable SMB Direct. It automatically creates two RDMA connections per interface. SMB clients automatically detect and use multiple network connections if an appropriate configuration is identified.
 
@@ -92,7 +92,7 @@ You can also use SOFS to implement guest clustering.
 
 ## What is guest clustering?
 
-You configure guest failover clustering similarly to physical-server failover clustering, except that the cluster nodes are VMs. In this scenario, you create two or more VMs and implement failover clustering within the guest operating systems. The application or service is then able to take advantage of high availability between the VMs. While you can place the VMs on a single host, in production scenarios, you should use separate, failover clustering–enabled Hyper-V host computers. With failover clustering implemented at both the host and VM levels, you can restart the resource regardless of whether the node that fails is a VM or a host.
+You configure guest failover clustering similarly to physical-server failover clustering, except that the cluster nodes are VMs. In this scenario, you create two or more VMs and implement failover clustering within the guest operating systems. The application or service is then able to take advantage of high availability between the VMs. While you can place the VMs on a single host, in production scenarios, <!--- Should this comma be deleted? ---> you should use separate, failover clustering–enabled Hyper-V host computers. With failover clustering implemented at both the host and VM levels, you can restart the resource regardless of whether the node that fails is a VM or a host.
 
 Hyper-V VMs can use shared storage. You can connect to such storage via Fibre Channel or Internet SCSI (iSCSI) from the clustered VMs. Alternatively, you can configure shared storage on the clustered Hyper-V hosts by using the shared virtual hard disk feature and then attach the shared disks to clustered VMs.
 
@@ -125,7 +125,7 @@ To provide additional resiliency for your Hyper-V worklods, you can use Storage 
 
 ## What is Storage Replica?
 
-Storage Replica enables storage-agnostic, block-level, synchronous and asynchronous replication between servers or clusters across different physical locations. 
+Storage Replica enables storage-agnostic, block-level, synchronous and<!--- Would it makes sense to replace word "and" with "or"? ---> asynchronous replication between servers or clusters across different physical locations. 
 
 ## What are the reasons for using Storage Replica?
 
