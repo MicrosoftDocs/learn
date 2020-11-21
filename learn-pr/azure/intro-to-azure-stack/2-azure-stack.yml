@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: What is Azure Stack?
-durationInMinutes: 10
+durationInMinutes: 4
 content: |
   [!include[](includes/2-what-is-azure-stack.md)]
 quiz:

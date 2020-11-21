@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: What is Azure Stack Hub?
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/3-what-is-azure-stack-hub.md)]
 quiz:

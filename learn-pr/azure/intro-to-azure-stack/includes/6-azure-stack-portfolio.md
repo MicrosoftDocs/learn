@@ -1,10 +1,10 @@
-While Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge have their distinct use cases, it might be sometimes difficult to determine which of them is optimal in a given scenario. You might have a good idea by now how to address Contoso's challenges, but before making the final decision, let's review their similiarities and differences.
+While Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge have their distinct use cases, it might be sometimes difficult to determine which of them is optimal in a given scenario. You might have a good idea by now how to address Contoso's challenges, but before making the final decision, let's review their similiarities and differences in this unit.
 
 ## Azure Stack portfolio
 
 The three products of the Azure Stack portfolio help you address the following needs:
 
-- Azure Stack Hub. Run your own private, autonomous, cloud-native applications in the cloud—connected or disconnected on-premises environment.
+- Azure Stack Hub: Run your own private, autonomous, cloud-native applications in the cloud—connected or disconnected on-premises environment.
 - Azure Stack HCI: Consolidate and modernize virtualized workloads by using on-premises hyperconverged infrastructure and integrate them with Azure.
 - Azure Stack Edge: Get immediate insights into your on-premises data with an Azure-managed, edge computing appliance by using hardware-accelerated machine learning.
 
@@ -33,3 +33,5 @@ To compare the three products, review the following table:
 |GPU support|Yes|Yes|Yes|
 |FPGA support|No|No|Yes|
 |Azure-managed appliance|No|No|Yes|
+
+Choose the best response for each of the questions below. Then select "Check our answers".
