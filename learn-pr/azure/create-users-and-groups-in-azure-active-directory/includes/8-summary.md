@@ -3,6 +3,8 @@ In this module, you've added a user and a group to an Azure Active Directory (Az
 
 Remember to clean up after you've finished. Delete all of the users and applications you created during this module. You can't delete the tenant you created. If you don't use the tenant going forward, it'll automatically be deleted after a few months.
 
+If you normally use a different Azure tenant, switch back to that tenant. In the upper-right corner of the Azure portal, select your profile. Sign in with a different account or, if your tenant is under the same account, select **Switch directory**. Under **All directories**, select the tenant you normally work in.
+
 ## Learn more
 
 [Azure Active Directory documentation](https://aka.ms/AzureADDocs)
