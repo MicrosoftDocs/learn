@@ -73,7 +73,6 @@ The following is a list of hardware resources that the host will need for runnin
 To enable nested virtualization, you need to meet the following prerequisites:
 
 - Both the Hyper-V host and the guest VM must be Windows Server 2016 or later.
-- The physical host computer must have a sufficient amount of static RAM.
 - The physical host computer must have an Intel processor with Virtual Machine Extensions (VT-x) and Extended Page Tables (EPT) capabilities.
 
 ## How to install the Hyper-V Server role on Windows Server?

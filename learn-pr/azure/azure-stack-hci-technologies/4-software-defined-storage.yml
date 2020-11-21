@@ -16,26 +16,26 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "?"
+  - content: "Which software-defined storage feature implements virtualized, highly-available clustered storage by using local disks on each node of a Windows Server 2019 failover cluster?"
     choices:
-    - content: "."
+    - content: "Storage Spaces Direct"
       isCorrect: true
-      explanation: "That's correct. ."
-    - content: "."
+      explanation: "That's correct. Storage Spaces Direct leverages Storage Spaces, Failover Clustering, Cluster Shared Volumes (CSVs), and SMB 3.x to implement virtualized, highly-available clustered storage by using local disks on each of nodes of a Windows Server 2019 failover cluster."
+    - content: "SMB Direct"
       isCorrect: false
-      explanation: "That's incorrect. ."
-    - content: "."
+      explanation: "That's incorrect. SMB Direct optimizes the use of RDMA network adapters for SMB traffic, allowing them to function at full speed with very low latency and low CPU utilization."
+    - content: "Storage Replica "
       isCorrect: false
-      explanation: "That's incorrect. ."
+      explanation: "That's incorrect. Storage Replica enables storage-agnostic, block-level, synchronous and asynchronous replication between servers or clusters across different physical locations."
 
-  - content: "?"
+  - content: "What is the minimum number of Windows Server failover clusters required in the disaggregated deployment model of Storage Spaces Direct?"
     choices:
-    - content: ""
+    - content: "1"
       isCorrect: false
-      explanation: "That's incorrect. ."
-    - content: "."
-      isCorrect: false
-      explanation: "That's incorrect. ."
-    - content: "."
+      explanation: "That's incorrect. The cluster hosting Hyper-V VMs must be separate from the cluster hosting storage."
+    - content: "2"
       isCorrect: true
-      explanation: "That's correct. ."
+      explanation: "That's correct. In the disaggregated model, the Hyper-V hosts (compute) are in a separate cluster from the Storage Spaces Direct hosts (storage)."
+    - content: "3"
+      isCorrect: false
+      explanation: "That's incorrect. You need at minimum 2 clusters."

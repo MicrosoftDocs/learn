@@ -16,26 +16,26 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "?"
+  - content: "Which of the following is not required to implement Hyper-V on a physical server?"
     choices:
-    - content: "."
+    - content: "A 64-bit processor with second-level address translation (SLAT) and VM Monitor Mode extensions."
+      isCorrect: false
+      explanation: "That's incorrect. A 64-bit processor with second-level address translation (SLAT) and VM Monitor Mode extensions is one of the requirements."
+    - content: "The guest VM must be running Windows Server 2016 or newer."
       isCorrect: true
-      explanation: "That's correct. ."
-    - content: "."
+      explanation: "That's correct. This is a requirement for nested virtualization, not for implementing Hyper-V on a physical server."
+    - content: "Hardware-enforced Data Execution Prevention (DEP) enabled."
       isCorrect: false
-      explanation: "That's incorrect. ."
-    - content: "."
-      isCorrect: false
-      explanation: "That's incorrect. ."
+      explanation: "That's incorrect. Hardware-enforced Data Execution Prevention (DEP) enabled is one of the requirements."
 
-  - content: "?"
+  - content: "Where can you obtain the Integration Services for Windows Server 2019 Hyper-V guest VMs?"
     choices:
-    - content: ""
+    - content: "Windows Server installation media"
       isCorrect: false
-      explanation: "That's incorrect. ."
-    - content: "."
+      explanation: "That's incorrect. Updates for Integration Services are obtained and delivered through Windows Update."
+    - content: "Microsoft Downloads"
       isCorrect: false
-      explanation: "That's incorrect. ."
-    - content: "."
+      explanation: "That's incorrect. Updates for Integration Services are obtained and delivered through Windows Update."
+    - content: "Windows Updates"
       isCorrect: true
-      explanation: "That's correct. ."
+      explanation: "That's correct. Updates for Integration Services are obtained and delivered through Windows Update."

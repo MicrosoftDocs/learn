@@ -16,26 +16,26 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "?"
+  - content: "Which component is necessary to implement Windows Server 2019-based SDN?"
     choices:
-    - content: "."
+    - content: "Network Controller"
       isCorrect: true
-      explanation: "That's correct. ."
-    - content: "."
+      explanation: "That's correct. Network Controller is a Windows Server role that serves as the centralized and programmable point of automation for the virtual and physical network infrastructure in SDN."
+    - content: "RDMA"
       isCorrect: false
-      explanation: "That's incorrect. ."
-    - content: "."
+      explanation: "That's incorrect. RDMA is a recommened component of Windows Server 2019-based SDN, but it is not required."
+    - content: "Datacenter Firewall"
       isCorrect: false
-      explanation: "That's incorrect. ."
+      explanation: "That's incorrect. Datacenter Firewall is the functionality you can implement as part of an SDN deployment, rather than one of its prerequisites."
 
-  - content: "?"
+  - content: "Which Windows Sever component aggregates network througput available for virtualized workloads by combining muliple network adapters?"
     choices:
-    - content: ""
+    - content: "VxLAN"
       isCorrect: false
-      explanation: "That's incorrect. ."
-    - content: "."
+      explanation: "That's incorrect. VxLAN is an SDN encapsulation protocol."
+    - content: "NVGRE"
       isCorrect: false
-      explanation: "That's incorrect. ."
-    - content: "."
+      explanation: "That's incorrect. NVGRE is an SDN encapsulation protocol."
+    - content: "SET"
       isCorrect: true
-      explanation: "That's correct. ."
+      explanation: "That's correct. Switch-Embedded Teaming (SET). SET enables you to combine up to eight identical physical network adapters directly into the Hyper-V virtual switch. This provides load balancing and bandwidth aggregation functionality, resulting in higher network througput for virtualized workloads."
