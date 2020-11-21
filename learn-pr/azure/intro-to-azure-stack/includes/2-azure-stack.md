@@ -2,7 +2,7 @@ Cloud computing isn't an all-or-nothing proposition. Customers can choose to use
 
 ## What is Azure Stack?
 
-Azure Stack is a family of products that provide an extension of Azure to consistently build and run hybrid applications across datacenters, edge locations, remote offices, and cloud. Azure Stack family consists of Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge. 
+Azure Stack is a family of products that provide an extension of Azure to consistently build and run hybrid applications across datacenters, edge locations, remote offices, and clouds. Azure Stack family consists of Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge. 
 
 As part of its hybrid cloud strategy, Microsoft has structured its offerings in a way that helps provide a clear implementation path for customers such as Contoso that are seeking to innovate the way they provision and manage their on-premises workloads. As a result, Microsoft has rebranded Microsoft Azure Stack, which it introduced in 2017, as *Azure Stack Hub*. In addition, in November 2019, Microsoft announced two additional products: *Azure Stack HCI* and *Azure Stack Edge*. Although each of these products is intended to address different sets of hybrid cloud needs, distinct features and functionalities of these three products of the Azure Stack family complement each other. This module will explore these products and their interconnectedness in further detail.
 
