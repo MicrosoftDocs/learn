@@ -35,7 +35,16 @@ The most common uses of CSV include:
 
 ## What is Server Message Block 3.x?
 
-Server Message Block 3.x 
+The Server Message Block (SMB) protocol is a network file sharing protocol that provides access to files over a traditional Ethernet network via TCP/IP transport protocol. SMB serves as one of the core components of software-defined storage technologies.
+
+### What are common use cases for SMB?
+
+The most common uses of SMB include:
+
+- Storage for VM disk files (Hyper-V over SMB). Hyper-V can store virtual machine files, such as configuration, Virtual hard disk (VHD) files, and snapshots, in file shares over the SMB 3.x protocol. This can be used for both stand-alone file servers and clustered file servers that use Hyper-V together with shared file storage for the cluster.
+- Microsoft SQL Server over SMB. SQL Server can store user database files on SMB file shares. 
+- Traditional storage for end-user data. The SMB 3.x protocol provides enhancements to the traditional information worker workloads. These enhancements include reducing the application latencies experienced by branch office users when accessing data over wide area networks (WAN) and protecting data from eavesdropping attacks.
+
 
 ## What is Storage Spaces Direct?
 
