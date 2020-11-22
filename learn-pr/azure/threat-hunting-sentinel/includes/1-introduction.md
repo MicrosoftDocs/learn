@@ -23,3 +23,6 @@ To get the best learning experience from this module, you should have the follow
 - Basic knowledge of operational concepts such as monitoring, logging, and alerting.
 - Basic Azure Sentinel functionality.
 - Access to a Microsoft Azure subscription for exercise tasks.
+
+> [!NOTE]
+> If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost refer to [Azure Sentinel Pricing](https://azure.microsoft.com/pricing/details/azure-sentinel)
