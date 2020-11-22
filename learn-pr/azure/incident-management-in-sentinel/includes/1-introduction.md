@@ -22,3 +22,6 @@ In this module, you will:
 - Basic experience with Azure services
 - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
 - Basic knowledge of Azure Sentinel rules
+
+> [!NOTE]
+> If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost refer to [Azure Sentinel Pricing](https://azure.microsoft.com/pricing/details/azure-sentinel)
