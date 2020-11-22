@@ -19,7 +19,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 | **Simplevm Name** | Accept the default value of **simple-vm**.|
 | **Simplevm WIndows OS Version** | Accept the default value of **2016-Datacenter**.|
 
-4. Select the **I agree to the terms and conditions stated above** check box, and then select **Purchase**.
+4. Select the **Review + create**, and then select **Create**.
 
 :::image type="content" source="../media/02-Custom-Deployment.PNG" alt-text="Screenshot of the Custom Deployment page." border="true":::
 
