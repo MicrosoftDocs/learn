@@ -1,17 +1,18 @@
-Most organizations and businesses, including Contoso, strive to ensure high availability of their mission critical workloads. Traditionally, this required specialized, costly, and complex to manage solutions. With Failover Clustering, it is possible to accomplish the same objective in a cost effective manner on commodity hardware. This will be a required component of your proof-of-concept environment. 
+Most organizations and businesses, including Contoso, strive to ensure high availability of their mission critical workloads. Traditionally, this required specialized, costly, and complex to manage solutions. With Failover Clustering, it is possible to accomplish the same objective in a cost effective manner on commodity hardware. This will be a required component of your proof-of-concept environment.
 
 # What is Failover Clustering?
 
-Failover clustering is a Windows Server and Azure Stack HCI feature that provides high availability of common workloads, including file shares, virtual machines (VMs), database management systems, and messaging services. To accomplish this, you create a failover cluster consisting of multiple servers running the Windows Server or Azure Stack HCI operating system. If a server that is part of a failover cluster fails or becomes unavailable, another server in the same failover cluster takes over the task of providing the services that the failed node was offering. This process is called failover and it results in minimal or, in certain cases, no service disruptions for clients that are accessing the service.
+Failover Clustering is a Windows Server and Azure Stack HCI feature that provides high availability of common workloads, including file shares, VMs, database management systems, and messaging services. To accomplish this, you create a failover cluster consisting of multiple servers running the Windows Server or Azure Stack HCI operating system. If a server that is part of a failover cluster fails or becomes unavailable, another server in the same failover cluster takes over the task of providing the services that the failed node was offering. This process is called failover and it results in minimal or, in certain cases, no service disruptions for clients that are accessing the service.
 
 ## What are the reasons for using Failover Clustering?
 
+<!--Marcin, I notice that all your section headings are in the form of questions. Was that a specific guidance that was provided to us? I did not see this being followed in the other modules I worked on and was wondering if we should change some of these headings to simple titles such as "Reasons for using.., Components of... etc. This is a global question for all topics. -->
 The most common uses of failover clustering include:
 
-- Highly available services and applications that run on physical servers or in guest VMs hosted on clustered Hyper-V servers.
-- Highly available or continuously available file shares hosting Microsoft SQL Server databases and Microsoft Hyper-V VMs configuration and disk files.
+- Highly available services and applications that run on physical servers or in guest VMs that clustered Hyper-V servers host.
+- Highly available or continuously available file shares hosting Microsoft SQL Server databases and Hyper-V VMs configuration and disk files.
 
-## What are components of Failover Clustering?
+## What are the components of Failover Clustering?
 
 A failover cluster consists of the following components:
 
@@ -24,26 +25,26 @@ A failover cluster consists of the following components:
 
 :::image type="content" source="../media/3-failover-cluster-architecture.png" alt-text="A graphic depicts the architecture of a failover cluster with two nodes and shared storage." border="false":::
 
-> [!NOTE] 
-> Shared storage does not have to be directly attached to multiple nodes. The Storage Spaces Direct technology allows for sharing disks that are attached to individual nodes. 
+> [!NOTE]
+> You do not have to attach shared storage directly to multiple nodes. <!-- Marcin, I changed the prev sentence to active voice. Please review. --> The Storage Spaces Direct technology allows for sharing disks that are attached to individual nodes.
 
-## What is Failover Clustering quorum?
+## What is the Failover Clustering quorum?
 
-In a failover cluster, the term quorum represents the number of clustering components that must be available for that cluster to remain online. These components can include the cluster nodes and, optionally, a witness. The term witness designates a resource which role is to establish and maintain a quorum. For this purpose, a failover cluster can use a file share, a disk, or a blob in Azure Storage. The quorum is determined based on the number of votes associated with cluster nodes and the witness. The purpose of the quorum is to prevent the "split brain" scenario. In this scenario, due to internode connectivity issues, two sets of nodes in a cluster could potentially start operating independently of each other, resulting in the corruption of cluster state and its resources.
+In a failover cluster, the term quorum represents the number of clustering components that must be available for that cluster to remain online. These components can include the cluster nodes and, optionally, a witness. The term *witness* designates a resource whose role is to establish and maintain a quorum. For this purpose, a failover cluster can use a file share, a disk, or a blob in Azure Storage. Windows Server determines <!--Marcin, I tried to make the prev sentence active voice. Please check if Windows server is correct or if it should be "Azure Stack HCI or "you"--> the quorum based on the number of votes associated with cluster nodes and the witness. The purpose of the quorum is to prevent the *split brain* scenario. In this scenario, due to internode connectivity issues, two sets of nodes in a cluster could potentially start operating independently of each other, resulting in the corruption of cluster state and its resources.
 
-The quorum management model defines allocation of votes. Failover Clustering supports dynamic quorum management. Dynamic quorum provides higher availability within a failover cluster by continuously monitoring and adjusting the quorum model based on the available cluster nodes. Cluster quorum calculation is adjusted each time the number of nodes changes, so that even if a failover cluster has less than 50 percent of the original number of nodes, the failover cluster continues to work and cluster roles are still available. With dynamic quorum enabled, a failover cluster can survive with only one node up and running. 
+The quorum management model defines allocation of votes. Failover Clustering supports dynamic quorum management. Dynamic quorum provides higher availability within a failover cluster by continuously monitoring and adjusting the quorum model based on the available cluster nodes. Cluster quorum calculation is adjusted each time the number of nodes changes, so that even if a failover cluster has less than 50 percent of the original number of nodes, the failover cluster continues to work and cluster roles are still available. With dynamic quorum enabled, a failover cluster can survive with only one node up and running.
 
-> [!NOTE] 
+> [!NOTE]
 > The dynamic quorum model is enabled by default.
 
 The functionality of a failover cluster depends not only on a quorum but also on the resources available to cluster nodes and their ability to run clustered workloads that fail over to that node. For example, a cluster with five nodes will still have a quorum even if two nodes fail. However, each remaining cluster node continues serving clients only if it has enough resources to run cluster roles that failed over to the remaining three nodes. These resources include storage, processing power, network bandwidth, and memory. You can configure VM priority, start order, preferred hosts, and anti-affinity to decide the nodes on which the cluster role can run.
 
 ### What types of witness does Failover Clustering support?
 
-There are three types of quorum witness available to failover clustering.
+There are three types of quorum witness available to failover clustering:
 
 - Disk Witness uses a clustered disk resource in the same failover cluster. All nodes must have access to the shared disk.
-- File Share Witness uses an external file share. In Windows Server 2019 and Azure Stack HCI it is possible to implement it by using a USB drive attached to a network network device accessible to all cluster nodes.
+- File Share Witness uses an external file share. In Windows Server 2019 and Azure Stack HCI, you can implement this by using a USB drive attached to a network network device accessible to all cluster nodes.
 - Cloud Witness uses a blob in an Azure Storage account.
 
 When selecting the quorum witness type, you should make sure that the witness remains accessible in the majority of scenarios affecting the availability of cluster nodes.
