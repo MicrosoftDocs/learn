@@ -60,7 +60,7 @@ AzureActivity
 
 The header toolbar provides additional interaction with the query, as displayed in the following screenshot:
 
-:::image type="content" source="../media/02-Header-Toolbar.png" alt-text="Screenshot displaying the header toolbar." border="true":::
+:::image type="content" source="../media/03-Header-Toolbar.png" alt-text="Screenshot displaying the header toolbar." border="true":::
 
 You can save the query from the **Query** pane by selecting **Save**. This opens a new window on the right side, where you are prompted to enter the name of the saved query and category. Saved queries appear in the query explorer.
 In the **Time Range** field, you can provide a different time to change the time range for which you want to display the results of the query.
