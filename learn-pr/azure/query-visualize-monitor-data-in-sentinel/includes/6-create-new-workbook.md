@@ -7,8 +7,6 @@ You can create a custom workbook by selecting **+Add workbook** on the header ba
 > [!Tip]
 > Each workbook that you create is saved as a workbook resource in the Azure Sentinel resource group.
 
-:::image type="content" source="../media/05-New-Workbook.PNG" alt-text="Screenshot of an empty workbook." border="true":::
-
 You can start building your workbook by selecting **Edit** on the **New Workbook** page, and then again select the **Edit** option to change the text that appears in the new workbook template.
 
 Each workbook provides a rich set of capabilities for visualizing the security data collected from the connectors. You can design your workbook with the following visualization types and elements:
@@ -21,7 +19,7 @@ Each workbook provides a rich set of capabilities for visualizing the security d
 
 You can add a new element to your workbook by selecting **+Add** as the following screenshot depicts.
 
-:::image type="content" source="../media/05-Add-visualization.PNG" alt-text="Screenshot of adding a new step in the workbook." border="true":::
+:::image type="content" source="../media/06-Add-visualization.PNG" alt-text="Screenshot of adding a new step in the workbook." border="true":::
 
 ## Text visualizations
 
@@ -31,8 +29,6 @@ You can use text blocks to interpret your security data, section headings, telem
 > Markdown is a markup language that you can use to format text in  plain-text documents. For more information on how to format text by using Markdown controls, refer to the following [Markdown guide](https://www.markdownguide.org/getting-started/).
 
 After you add the text, you can select the **Preview** tab to preview how your content will appear. Finally, when you complete editing the text, select the **Done Editing** option.
-
-:::image type="content" source="../media/05-Text-Visualization.PNG" alt-text="Screenshot of a text visualization step." border="true":::
 
 ## Query item
 
@@ -49,7 +45,7 @@ You can create a different query from the logs and visualize the data as text, c
 
 When you create a query, Azure Sentinel adds a new step to the workbook as the following screenshot depicts:
 
-:::image type="content" source="../media/05-Query-Visualization.PNG" alt-text="Screenshot of the Query visualization step." border="true":::
+:::image type="content" source="../media/06-Query-Visualization.PNG" alt-text="Screenshot of the Query visualization step." border="true":::
 
 On the header bar, there are several fields that provide you options to tune the output of the query.
 
@@ -71,7 +67,7 @@ On the **Advanced Settings** tab, you can provide additional customization for t
 
 For example, on the **Settings** tab, you can enter the **Chart title**, as the following screenshot depicts.
 
-:::image type="content" source="../media/05-Advanced-Settings.PNG" alt-text="Screenshot of the Advanced tab." border="true":::
+:::image type="content" source="../media/06-Advanced-Settings.PNG" alt-text="Screenshot of the Advanced tab." border="true":::
 
 You can use the **Style** tab to adjust the margin and padding element in the step. After you are done customizing the settings and styles, remember to save the step by selecting **Done Editing**.
 
@@ -98,7 +94,7 @@ SecurityAlert
 
 In the previous example, the query indicated the visualization type for the data. You can also use the query without including the *render* parameter, and then use the **Visualization** drop-down menu to select one of the offered types of visualizations. The following screenshot illustrates the drop-down menu options.
 
-:::image type="content" source="../media/05-Visualization-Menu.PNG" alt-text="Screenshot of the Visualization menu." border="true":::
+:::image type="content" source="../media/06-Visualization-Menu.PNG" alt-text="Screenshot of the Visualization menu." border="true":::
 
 ## Grid visualizations
 
@@ -106,7 +102,7 @@ You can use the grid visualization option from the **Visualization** drop-down m
 
 On the **Edit Column settings** tab, you can select a different column renderer such as, heatmap, bar, and spark area. If you select **Custom formatting**, you can set units, style, and formatting options for number values, as the following screenshot depicts.
 
-:::image type="content" source="../media/05-Edit-column-settings.PNG" alt-text="Screenshot of the column settings." border="true":::
+:::image type="content" source="../media/06-Edit-column-settings.PNG" alt-text="Screenshot of the column settings." border="true":::
 
 ## Parameters
 
