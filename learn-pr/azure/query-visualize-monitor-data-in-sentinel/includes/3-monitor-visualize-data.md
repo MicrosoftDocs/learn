@@ -16,7 +16,7 @@ The **Logs** page has four main parts:
 - The query pane is where you write your own query expressions.
 - The query result pane displays the results of your queries.
 
-:::image type="content" source="../media/02-LOGS.png" alt-text="Screenshot of the default Logs page." border="true":::
+:::image type="content" source="../media/03-LOGS.png" alt-text="Screenshot of the default Logs page." border="true":::
 
 ### Queries
 
@@ -29,7 +29,7 @@ When you select the **Queries** link on the page header, a new window opens,  wh
 
 You can start predefined queries by selecting **Run**, which will redirect you to the query pane, where you can observe the query structure and the results. To address Contoso's concern about unauthorized users, you can select the predefined query **Unauthorized Users**, as depicted in the following screenshot:
 
-:::image type="content" source="../media/02-Unauthorized-Users.png" alt-text="Screenshot that presents unauthorized users." border="true":::
+:::image type="content" source="../media/03-Unauthorized-Users.png" alt-text="Screenshot that presents unauthorized users." border="true":::
 
 ### Query Explorer
 
@@ -41,7 +41,7 @@ The **Tables** pane groups logs from different solutions into tables. You can ex
 
 The following screenshot displays the logs collected in Azure Sentinel solution.
 
-:::image type="content" source="../media/02-Logs-Azure-Sentinel.png" alt-text="Screenshot displaying the Tables view." border="true":::
+:::image type="content" source="../media/03-Logs-Azure-Sentinel.png" alt-text="Screenshot displaying the Tables view." border="true":::
 
 ### Queries pane
 
