@@ -10,7 +10,7 @@ We've covered a lot of ground in this module to create a baseline security check
 
 1. **Install a web application firewall** - Web application firewall (WAF) is a feature of Application Gateway that provides centralized protection of your web applications from common exploits and vulnerabilities.
 
-1. **Enforce multi-factor verification for users, especially your administrator accounts**- Azure Multi-Factor Authentication (Azure MFA) helps administrators protect their organizations and users with additional authentication methods.
+1. **Enforce multi-factor verification for users, especially your administrator accounts**- Azure AD Multi-Factor Authentication (Azure AD MFA) helps administrators protect their organizations and users with additional authentication methods.
 
 1. **Encrypt your virtual hard disk files** - This will help protect your boot volume and data volumes at rest in storage, along with your encryption keys and secrets.
 

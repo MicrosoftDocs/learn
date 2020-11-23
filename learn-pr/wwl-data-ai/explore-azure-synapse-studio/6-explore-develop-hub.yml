@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-synapse-studio.explore-develop-hub
+title: Explore the Develop hub
+metadata:
+  title: Explore the Develop hub
+  description: "Explore the Develop hub"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-explore-develop-hub.md)]

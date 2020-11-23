@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-tokens.6-write-token-project
+metadata:
+  title: Exercise - Write an ERC20 token contract
+  description: Add a new token smart contract to the Truffle project.
+  ms.date: 10/16/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Write an ERC20 token contract
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-write-token-project.md)]

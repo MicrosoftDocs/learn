@@ -6,15 +6,15 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 This tutorial uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
 
-The Azure sandbox that you just activated allows you to use Azure services without incurring any costs.
+The Azure sandbox that you activated allows you to use Azure services without incurring any costs.
 
 ## Install the Azure Static Web Apps extension for Visual Studio Code
 
 1. Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps&azure-portal=true) and install the **Azure Static Web Apps** extension for Visual Studio Code.
 
-1. When the extension tab loads in Visual Studio Code, click **Install**.
+1. When the extension tab loads in Visual Studio Code, click **Install** on the gear icon in the bottom left-hand side.
 
-1. After installation is complete, click **Reload**.
+1. After installation is complete, click **Restart to update**.
 
 ## Sign into Azure in Visual Studio Code
 
@@ -159,7 +159,10 @@ You can check the status of your build and deploy action by navigating to the Ac
 
 1. Click the link shown below in the screenshot
 
-    :::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
+   :::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
+   
+> [!NOTE] 
+> You can open the Azure page by right clicking on my-first-static-web-app in the Visual Studio Code editor, and selecting **Open in portal**.
 
 1. Click **Azure Static Web Apps CI/CD**
 1. Click the topmost commit titled similar to **ci: add Azure Static Web Apps workflow file**
@@ -179,7 +182,3 @@ Congratulations! You've deployed your first app to Azure Static Web Apps!
 
 > [!NOTE]
 > Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web Apps is created. So if you see the splash page, the app is still being deployed.
-
-## Next steps
-
-Next you'll learn how to handle all unmatched page requests to the server and map them to navigate to a valid page in your app.

@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.survey-components-of-azure-synapse-analytics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which Azure Service is Azure Synapse Pipelines based on?"
+    choices:
+    - content: "Azure Data Explorer."
+      isCorrect: false
+      explanation: "Incorrect. Azure Synapse Pipelines is not based on Azure Data Explorer."
+    - content: "Azure Stream Analytics."
+      isCorrect: false
+      explanation: "Incorrect. Azure Synapse Pipelines is not based on Azure Stream Analytics."
+    - content: "Azure Data Factory."
+      isCorrect: true
+      explanation: "Correct. Azure Synapse Pipelines is based in the Azure Data Factory service."
+  - content: "What component of Azure Synapse analytics allows the different engines to share the databases and tables between Spark pools and SQL on-demand engine?"
+    choices:
+    - content: "Azure Synapse Link."
+      isCorrect: false
+      explanation: "Incorrect. The serverless resource model is the ideal resource model in this scenario as it makes use of the resources when required."
+    - content: "Azure Synapse shared metadata."
+      isCorrect: true
+      explanation: "Correct. The shared metadata gives the workspace SQL engines access to databases and tables created with Spark."
+    - content: "Azure Synapse Spark pools."
+      isCorrect: false
+      explanation: "Incorrect. Pipelines are a component of Azure Synapse Analytics that enables you to ingest, prepare and serve data to other Azure Synapse Components or Azure services."
+  - content: "Which Azure Synapse Analytics component enables you to perform Hybrid Transactional and Analytical Processing?"
+    choices:
+    - content: "Azure Synapse Pipeline."
+      isCorrect: false
+      explanation: "Incorrect. Azure Synapse Pipelines provides the integration component of Azure Synapse Analytics."
+    - content: "Azure Synapse Studio."
+      isCorrect: false
+      explanation: "Incorrect. Azure Synapse Studio is where you can develop interact with the various components of the Azure Synapse Analytics Service."
+    - content: "Azure Synapse Link."
+      isCorrect: true
+      explanation: "Correct. Azure Synapse Link is the component that enables Hybrid Transactional and Analytical Processing."
