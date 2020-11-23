@@ -209,6 +209,9 @@ The preceding markup applies conditional logic against the feature flag by using
 
 1. After a few seconds, test the configuration change as follows:
     1. In the browser tab containing the *WebSPA* app, refresh the page. Log out and back in, if needed.
+
+        :::image type="content" source="../media/4-implement-feature-manager/webspa-log-out.png" alt-text="The Log Out option in WebSPA":::
+
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
     1. Notice the discount coupon elements are still present.
@@ -242,7 +245,7 @@ Complete the following steps to disable the *coupons* feature:
 
 1. After a few seconds, test the configuration change as follows:
     1. In the browser tab containing the *WebSPA* app, refresh the page. Log out and back in, if needed.
-    1. Select the shopping bag icon in the upper right.
+    1. Select the shopping bag icon.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
     1. Notice the discount coupon elements are no longer present.
 
