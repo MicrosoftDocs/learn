@@ -1,6 +1,6 @@
 In this exercise, you'll implement a feature flag to toggle the checkout page's discount coupon feature in real time. Feature flags allow you to toggle feature availability declaratively without including `if` statements in your code.
 
-You'll use a .NET Standard feature flag library named *Feature Management*. This library provides helpers to implement feature flags in your app. The library supports simple use cases like conditional statements to more advanced scenarios like conditionally adding routes or action filters. Additionally, it supports Feature Filters, which allows you to enable features based on other parameters. Examples of such parameters may include a window time, percentages, or a subset of users.
+You'll use a .NET Standard feature flag library named *Feature Management*. This library provides helpers to implement feature flags in your app. The library supports simple use cases like conditional statements to more advanced scenarios like conditionally adding routes or action filters. Additionally, it supports feature filters, which allow you to enable features based on specific parameters. Examples of such parameters include a window time, percentages, or a subset of users.
 
 In this unit, you will:
 
@@ -65,7 +65,7 @@ You've successfully verified the app was deployed to AKS. Additionally, you've s
 
 ## Set up the Feature Management library
 
-Complete the following steps to support toggling of the SPA's discount coupon feature in real time.
+Complete the following steps to support toggling of the SPA's discount coupon feature in real time:
 
 1. Install the NuGet package required to use the Feature Management library with ASP.NET Core:
 
@@ -83,7 +83,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
 
     :::code language="yaml" source="../code/deploy/k8s/helm-simple/webspa/templates/configmap.yaml" highlight="25-26":::
 
-    The preceding change defines two environment variables, named `UseFeatureManagement` and `FeatureManagement__Coupons`, for the *WebSPA* environment in Kubernetes. The environment variables are read by the *WebSPA* app at runtime. If defined in *WebSPA*'s *appsettings.json* file, the environment variables would override the following properties:
+    The preceding change defines two environment variables, named `UseFeatureManagement` and `FeatureManagement__Coupons`, for the *WebSPA* environment in Kubernetes. The environment variables are read by the *WebSPA* app at runtime. If defined in *WebSPA*'s *appsettings.json* file, the environment variables override the following properties:
 
     ```json
     "UseFeatureManagement": true,
@@ -104,7 +104,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
         }
         ```
 
-        The preceding code enables the Feature Management services to read the state of features in the `FeatureManagement` configuration section. `Coupons` in our case.
+        The preceding code enables the Feature Management services to read the state of features in the `FeatureManagement` configuration section. `Coupons` is the feature in this case.
 
     1. Uncomment the `//using Microsoft.FeatureManagement;` line at the top of the file.
 
