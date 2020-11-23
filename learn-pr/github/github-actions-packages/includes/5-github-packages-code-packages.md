@@ -5,7 +5,7 @@ GitHub Packages work with your current project's ecosystem tooling: npm for npm 
 
 ## Authenticating to GitHub Packages
 
-The way you're authenticating into your package manager will depend on your project's ecosystem. Whichever ecosystem you're working with, you will need three information: 
+The way you're authenticating into your package manager will depend on your project's ecosystem. Whichever ecosystem you're working with, you will need three pieces of information: 
 
 1. Your GitHub username
 1. A Personal Access Token

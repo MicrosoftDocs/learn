@@ -15,15 +15,15 @@ quiz:
   questions:
   - content: "In which file do you define the steps to execute in your GitHub Action?"
     choices:
-    - content: "In a workflow .yml (YAML) file"
+    - content: "In a workflow .yml (YAML) file."
       isCorrect: true
-      explanation: "The workflow .yml file, under the .github/workflows directory, contains the steps of your action"
+      explanation: "The workflow .yml file, under the .github/workflows directory, contains the steps of your action."
     - content: "In the Dockerfile"
       isCorrect: false
-      explanation: "The Dockerfile tells how to build your container, not the steps of your CI"
+      explanation: "The Dockerfile tells how to build your container, not the steps of your CI."
     - content: "In the package.json file"
       isCorrect: false
-      explanation: "The package.json file is widely used in NodeJS projects, it's not used to define a GitHub Action"
+      explanation: "The package.json file is widely used in NodeJS projects, it's not used to define a GitHub Action."
   - content: "During the lab, which action did you use to publish container image to GitHub Package?"
     choices:
     - content: "docker push command"
