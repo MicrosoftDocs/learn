@@ -4,7 +4,7 @@ title: Externalize the use of spark pools within azure synapse workspace
 metadata:
   title: Externalize the use of spark pools within azure synapse workspace
   description: "Externalize the use of spark pools within azure synapse workspace"
-  ms.date: 11/20/2020
+  ms.date: 11/23/2020
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial
