@@ -4,7 +4,7 @@ By using holograms, you learned how digital content can be made, placed, and int
 
 ## Next steps
 
-The journey isn't over yet. Consider following up on the following industry-based use cases for HoloLens:
+The journey isn't over yet. Consider following up on these industry-based use cases for HoloLens:
 
 - [Manufacturing](https://www.microsoft.com/hololens/industry-manufacturing)
 - [Healthcare](https://www.microsoft.com/hololens/industry-healthcare)

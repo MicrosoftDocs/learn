@@ -16,7 +16,7 @@ It's worth noting that whether a device is tethered to a PC or self-contained ha
 
 ## The mixed-reality spectrum revisited
 
-In the following diagram of the mixed-reality spectrum, you can see that choosing a target experience for your application corresponds to the type of device you can target. If you're creating an application that relies on the physical world around the user, HoloLens is the best bet. Conversely, if you're going to through your users into the deep end of the spectrum, then a Windows Mixed Reality immersive headset is the way to go.
+In the following diagram of the mixed-reality spectrum, you can see that choosing a target experience for your application corresponds to the type of device you can target. If you're creating an application that relies on the physical world around the user, HoloLens is the best bet. If you're going to throw your users into the deep end of the spectrum, then a Windows Mixed Reality immersive headset is the way to go.
 
 :::image type="content" source="../media/spectrum-with-devices.png" alt-text="Diagram of the mixed-reality spectrum with the physical world and augmented-reality devices on the left, and the digital world with virtual-reality devices on the right.":::
 

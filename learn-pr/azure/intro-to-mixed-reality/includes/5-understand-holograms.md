@@ -12,5 +12,5 @@ You can place holograms in a specific location within an augmented-reality space
 
 :::image type="content" source="../media/hologram-example.png" alt-text="Photograph of two users wearing HoloLens headsets and interacting with a stationary hologram.":::
 
-One of the most wonderful aspects of holograms and augmented reality is that they can appear to interact with the physical world. For example, you could place a holographic ball above a table in the real world and have it bounce when a user makes a gesture or says the word "bounce." Adding sound effects or occlusion behind real-world objects can give your holograms added physicality and realness.
+One of the most wonderful aspects of holograms and augmented reality is that they can appear to interact with the physical world. For example, you can place a holographic ball above a table in the real world and have it bounce when a user makes a gesture or says the word "bounce." Adding sound effects or occlusion behind real-world objects can give your holograms added physicality and realness.
 

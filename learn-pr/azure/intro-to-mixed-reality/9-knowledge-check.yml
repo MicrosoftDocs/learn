@@ -19,7 +19,7 @@ quiz:
       explanation: "Virtual-reality hardware devices are only a part of mixed reality."
     - content: "A spectrum of immersive experiences, connecting and blending physical and digital worlds together"
       isCorrect: true
-      explanation: "Mixed reality can include experiences that overlay virtual content over objects or places in the physical world, like in augmented-reality apps, or an immersive virtual experience where the user doesn't have any input from the real world, as in virtual-reality apps."
+      explanation: "Mixed reality can include experiences that overlay virtual content over objects or places in the physical world, as in augmented-reality apps, or an immersive virtual experience where the user doesn't have any input from the real world, as in virtual-reality apps."
     - content: "An augmented-reality platform application that comes with Microsoft HoloLens" 
       isCorrect: false
       explanation: "Mixed reality is not limited to augmented reality or Microsoft HoloLens."
