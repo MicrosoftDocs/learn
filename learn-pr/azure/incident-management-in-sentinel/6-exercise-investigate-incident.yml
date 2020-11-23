@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Investigate an incident
 durationInMinutes: 10
 content: |
-  [!include[]includes/6-exercise-investigate-incident.md)]
+  [!include[]includes/(6-exercise-investigate-incident.md)]
