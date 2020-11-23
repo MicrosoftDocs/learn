@@ -35,8 +35,8 @@ summary: |
   
   Through these modules, you will learn how to:
     - Gather data from multiple sources 
-    - Aggregate data into Pandas dataframes
-    - Use Python and Pandas to explore data 
+    - Aggregate data into pandas DataFrames
+    - Use Python and pandas to explore data 
     - The strategies for cleansing and manipulating your data
     - Create a good dataset of images for training AIs
     - Ensure ethical practices throughout AI development

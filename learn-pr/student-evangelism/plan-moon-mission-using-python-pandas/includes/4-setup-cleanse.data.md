@@ -22,13 +22,13 @@ rock_samples.head()
 
 Here we first modified the values in the **Weight(g)** column to be the same value multiplied by 0.001. Then we modified the name of the column to be more accurate by changing it to **Weight(kg)**.
 
-## Create a new dataframe
+## Create a new DataFrame
 
-Pandas, the Python library we are using to do our data analysis, has "dataframes," which are really effective for representing 2D data. You might have recognized that, when you run the `rock_samples.head()` code, what is printed out looks almost like a snapshot of an Excel worksheet, which is a great way to think about dataframes.
+Pandas, the Python library we are using to do our data analysis, has a structure called a DataFrame, and it's really effective for representing 2D data. You might have recognized that, when you run the `rock_samples.head()` code, what is printed out looks almost like a snapshot of an Excel worksheet, which is a great way to think about DataFrames in pandas.
 
-The `rock_samples` dataframe has a row for every sample that was collected but, as we mentioned earlier, we want to understand the rock samples in total as they relate to the specific rockets that brought them back. 
+The `rock_samples` DataFrame has a row for every sample that was collected but, as we mentioned earlier, we want to understand the rock samples in total as they relate to the specific rockets that brought them back. 
 
-Create a new dataframe called `missions` that will be a summary of data for each of the six Apollo missions that brought samples back. Create a column in this dataframe called **Mission** that has one row for each mission.
+Create a new DataFrame called `missions` that will be a summary of data for each of the six Apollo missions that brought samples back. Create a column in this DataFrame called **Mission** that has one row for each mission.
 
 ```python
 missions = pd.DataFrame()
@@ -56,7 +56,7 @@ missions.info()
 
 ## Sum total sample weight by mission
 
-Now you can add a new column to the `missions` dataframe to represent the sum of all samples collected on that mission. 
+Now you can add a new column to the `missions` DataFrame to represent the sum of all samples collected on that mission. 
 
 ```python
 sample_total_weight = rock_samples.groupby('Mission')['Weight(kg)'].sum()
@@ -98,17 +98,17 @@ Name: Weight (kg), dtype: float64
 
 The next line, `pd.merge(missions, sample_total_weight, on='Mission')`, can be described as:
 
-> Merge the `missions` dataframe with the `sample_total_weight` series by using the **Mission** column as the index to merge on. What the computer will do is basically this: for each value in the **Missions** column in the `missions` dataframe, find that same value in the  `sample_total_weight` series, and add the value from the series into the row as a new column in the dataframe.  
+> Merge the `missions` DataFrame with the `sample_total_weight` series by using the **Mission** column as the index to merge on. What the computer will do is basically this: for each value in the **Missions** column in the `missions` DataFrame, find that same value in the  `sample_total_weight` series, and add the value from the series into the row as a new column in the DataFrame.  
 
-This example is fairly straightforward, because there are only six rows. So we can confirm that the number 21.55424, for example, was added to the Apollo 11 row in the `missions` dataframe. 
+This example is fairly straightforward, because there are only six rows. So we can confirm that the number 21.55424, for example, was added to the Apollo 11 row in the `missions` DataFrame. 
 
 The next line simply renames the column, just as we did before, to ensure that we are being specific with our data. 
 
-The last line prints out the entire `missions` dataframe. Because there are only six missions, we can print out the entire dataframe and still understand what we are looking at. There is no need to use `head()` to print out only the first five rows.
+The last line prints out the entire `missions` DataFrame. Because there are only six missions, we can print out the entire DataFrame and still understand what we are looking at. There is no need to use `head()` to print out only the first five rows.
 
 ## Get the difference in weights across missions
 
-We're not rocket experts, so it's important to take a look at a lot of different cross sections of data that are available to you. In this case, we can see that the total weight of the samples increased with each mission, but it's hard to immediately see by how much. We can add one more column to the `missions` dataframe that simply grabs the difference between the current row and the row preceding it:
+We're not rocket experts, so it's important to take a look at a lot of different cross sections of data that are available to you. In this case, we can see that the total weight of the samples increased with each mission, but it's hard to immediately see by how much. We can add one more column to the `missions` DataFrame that simply grabs the difference between the current row and the row preceding it:
 
 ```python
 missions['Weight Diff'] = missions['Sample Weight(kg)'].diff()
@@ -141,7 +141,7 @@ missions
 | 5     | Apollo17 | 109.44402 | 16.98140 |
 
 This Python code did the following:
-- Looked only at the **Weight Diff** column in the `missions` dataframe
+- Looked only at the **Weight Diff** column in the `missions` DataFrame
 - Filled all "na" (or null) values with a certain value 
 - The value to fill in the na values is 0
 - Saved the modified list of values for that column back into the column

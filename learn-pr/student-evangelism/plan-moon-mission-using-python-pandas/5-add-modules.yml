@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.5-add-modules
 metadata:
   title: Add rocket weight data to the mission analysis
-  description: Include the weight of the various modules within the Apollo rockets in the dataframes for further insight.
+  description: Include the weight of the various modules within the Apollo rockets in the DataFrames for further insight.
   ms.date: 10/20/2020
   author: sguthals
   ms.author: shanama

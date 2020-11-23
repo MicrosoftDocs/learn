@@ -8,7 +8,7 @@ metadata:
   ms.author: shanama 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Understand the data in the missions dataframe
+title: Understand the data in the missions DataFrame
 durationInMinutes: 4
 content: |
   [!include[](includes/6-understand-modules.md)]

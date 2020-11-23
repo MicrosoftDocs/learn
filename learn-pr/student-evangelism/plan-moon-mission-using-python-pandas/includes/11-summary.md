@@ -5,7 +5,7 @@ NASA might have a lot more information and clearer standards than we can deciphe
 In this module, you have:
 - Gathered information about samples brought back from the Moon via the Apollo missions.
 - Acquired data about the types of spacecraft and rockets used for the Apollo and upcoming Artemis missions.
-- Compiled dataframes, or tables, of that data, which tells stories and provides insights.
+- Compiled DataFrames, or tables, of that data, which tells stories and provides insights.
 - Created a prediction of how much sample weight could be returned from the Artemis missions.
 - Made a recommendation for the amount and types of rocks the Artemis astronauts should focus their efforts on, based on the rocks that are currently being used for research here on Earth.
 

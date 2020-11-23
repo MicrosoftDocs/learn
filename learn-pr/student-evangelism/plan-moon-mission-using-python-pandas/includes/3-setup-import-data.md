@@ -35,7 +35,7 @@ Download the [*rocksamples.csv*](https://aka.ms/LearnWithDrG/OverTheMoon/Data2?a
 
 ![Local environment folder structure with data.](../media/vscode-data.png)
 
-In the first Python cell in your *sample-return.ipynb* file, import pandas and read the data file in it as a dataframe:
+In the first Python cell in your *sample-return.ipynb* file, import pandas and read the data file in it as a pandas DataFrame:
 
 ```python
 import pandas as pd 
@@ -43,7 +43,7 @@ import pandas as pd
 rock_samples = pd.read_csv('data/rocksamples.csv') 
 ```
 
-To make sure that everything is loaded in correctly, print the top five lines of the new dataframe by using `head()` and the information summary by using `info()`:
+To make sure that everything is loaded in correctly, print the top five lines of the new DataFrame by using `head()` and the information summary by using `info()`:
 
 ```python
 rock_samples.head()

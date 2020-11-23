@@ -1,6 +1,6 @@
 Congratulations! You now have a picture of each of the six Apollo missions that landed on the Moon. This picture contains information about the samples that each mission collected and the weights of each lunar and command module. 
 
-| Index | Mission | Sample Weight(kg) | Weight Diff | Lunar Module (LM) | LM Mass (kg) | LM Mass Diff | Command Module (CM) | CM Mass (kg) | CM Mass Diff | Total Weight (kg) | Total Weight Diff |
+| Index | Mission | Sample weight (kg) | Weight diff | Lunar module (LM) | LM mass (kg) | LM mass diff | Command module (CM) | CM mass (kg) | CM mass diff | Total weight (kg) | Total weight diff |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 0 | Apollo11 | 21.55424 | 0.00000 | Challenger (LM-12) | 15264 | 0.0 | Yankee Clipper (CM-108) | 5960 | 0.0 | 21224 | 0.0 |
 | 1 | Apollo12 | 34.34238 | 12.78814 | Orion (LM-11) | 15235 | -29.0 | Kitty Hawk (CM-110) | 5609 | -351.0 | 20844 | -380.0 |
@@ -26,13 +26,13 @@ We know that the Saturn V payload was 43,500 kg, and the weights of the modules 
 ```python
 # Sample-to-weight ratio
 saturnVPayload = 43500
-missions['Crewed Area : Payload'] = missions['Total Weight (kg)'] / saturnVPayload
-missions['Sample : Crewed Area'] = missions['Sample Weight(kg)'] / missions['Total Weight (kg)']
-missions['Sample : Payload'] = missions['Sample Weight(kg)'] / saturnVPayload
+missions['Crewed area : Payload'] = missions['Total weight (kg)'] / saturnVPayload
+missions['Sample : Crewed area'] = missions['Sample weight (kg)'] / missions['Total weight (kg)']
+missions['Sample : Payload'] = missions['Sample weight (kg)'] / saturnVPayload
 missions
 ```
 
-| Index | Mission | Sample Weight(kg) | Weight Diff | Lunar Module (LM) | LM Mass (kg) | LM Mass Diff | Command Module (CM) | CM Mass (kg) | CM Mass Diff | Total Weight (kg) | Total Weight Diff | Crewed Area : Payload | Sample : Crewed Area | Sample : Payload |
+| Index | Mission | Sample weight (kg) | Weight diff | Lunar module (LM) | LM mass (kg) | LM mass diff | Command module (CM) | CM mass (kg) | CM mass diff | Total weight (kg) | Total weight diff | Crewed area : Payload | Sample : Crewed area | Sample : Payload |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 0 | Apollo11 | 21.55424 | 0.00000 | Challenger (LM-12) | 15264 | 0.0 | Yankee Clipper (CM-108) | 5960 | 0.0 | 21224 | 0.0 | 0.487908 | 0.001016 | 0.000495 |
 | 1 | Apollo12 | 34.34238 | 12.78814 | Orion (LM-11) | 15235 | -29.0 | Kitty Hawk (CM-110) | 5609 | -351.0 | 20844 | -380.0 | 0.479172 | 0.001648 | 0.000789 |
@@ -42,15 +42,15 @@ missions
 | 5 | Apollo17 | 109.44402 | 16.98140 | Antares (LM-8) | 15103 | -1342.0 | Casper (CM-113) | 5758 | 198.0 | 20861 | -1144.0 | 0.479563 | 0.005246 | 0.002516 |
 
 > [!NOTE]
-> We're calling the two modules *crewed area* in the dataframe because those are the parts of the spacecraft where the crew can be, and likely where the samples would also reside.
+> We're calling the two modules *crewed area* in the DataFrame because those are the parts of the spacecraft where the crew can be, and likely where the samples would also reside.
 
 ## Save the ratios
 
 We can then use the `mean()` function to take the average of all those ratios across all the missions.
 
 ```python
-crewedArea_payload_ratio = missions['Crewed Area : Payload'].mean()
-sample_crewedArea_ratio = missions['Sample : Crewed Area'].mean()
+crewedArea_payload_ratio = missions['Crewed area : Payload'].mean()
+sample_crewedArea_ratio = missions['Sample : Crewed area'].mean()
 sample_payload_ratio = missions['Sample : Payload'].mean()
 print(crewedArea_payload_ratio)
 print(sample_crewedArea_ratio)

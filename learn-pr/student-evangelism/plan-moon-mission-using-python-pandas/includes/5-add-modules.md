@@ -30,20 +30,20 @@ By using the [NASA Space Science Data Coordinated Archive](https://nssdc.gsfc.na
 Fill in any `NaN` values with 0:
 
 ```python
-missions['Lunar Module (LM)'] = {'Eagle (LM-5)', 'Intrepid (LM-6)', 'Antares (LM-8)', 'Falcon (LM-10)', 'Orion (LM-11)', 'Challenger (LM-12)'}
-missions['LM Mass (kg)'] = {15103, 15235, 15264, 16430, 16445, 16456}
-missions['LM Mass Diff'] = missions['LM Mass (kg)'].diff()
-missions['LM Mass Diff'] = missions['LM Mass Diff'].fillna(value=0)
+missions['Lunar module (LM)'] = {'Eagle (LM-5)', 'Intrepid (LM-6)', 'Antares (LM-8)', 'Falcon (LM-10)', 'Orion (LM-11)', 'Challenger (LM-12)'}
+missions['LM mass (kg)'] = {15103, 15235, 15264, 16430, 16445, 16456}
+missions['LM mass diff'] = missions['LM mass (kg)'].diff()
+missions['LM mass diff'] = missions['LM mass diff'].fillna(value=0)
 
-missions['Command Module (CM)'] = {'Columbia (CSM-107)', 'Yankee Clipper (CM-108)', 'Kitty Hawk (CM-110)', 'Endeavor (CM-112)', 'Casper (CM-113)', 'America (CM-114)'}
-missions['CM Mass (kg)'] = {5560, 5609, 5758, 5875, 5840, 5960}
-missions['CM Mass Diff'] = missions['CM Mass (kg)'].diff()
-missions['CM Mass Diff'] = missions['CM Mass Diff'].fillna(value=0)
+missions['Command module (CM)'] = {'Columbia (CSM-107)', 'Yankee Clipper (CM-108)', 'Kitty Hawk (CM-110)', 'Endeavor (CM-112)', 'Casper (CM-113)', 'America (CM-114)'}
+missions['CM mass (kg)'] = {5560, 5609, 5758, 5875, 5840, 5960}
+missions['CM mass diff'] = missions['CM mass (kg)'].diff()
+missions['CM mass diff'] = missions['CM mass diff'].fillna(value=0)
 
 missions
 ```
 
-| Index | Mission | Sample Weight(kg) | Weight Diff | Lunar Module (LM) | LM Mass (kg) | LM Mass Diff | Command Module (CM) | CM Mass (kg) | CM Mass Diff |
+| Index | Mission | Sample weight (kg) | Weight diff | Lunar module (LM) | LM mass (kg) | LM mass diff | Command module (CM) | CM mass (kg) | CM mass diff |
 |---|---|---|---|---|---|---|---|---|---|
 | 0 | Apollo11 | 21.55424 | 0.00000 | Challenger (LM-12) | 15264 | 0.0 | Yankee Clipper (CM-108) | 5960 | 0.0 |
 | 1 | Apollo12 | 34.34238 | 12.78814 | Orion (LM-11) | 15235 | -29.0 | Kitty Hawk (CM-110) | 5609 | -351.0 |
@@ -55,12 +55,12 @@ missions
 We can add some totals for each mission across both the lunar and command modules:
 
 ```python
-missions['Total Weight (kg)'] = missions['LM Mass (kg)'] + missions['CM Mass (kg)']
-missions['Total Weight Diff'] = missions['LM Mass Diff'] + missions['CM Mass Diff']
+missions['Total weight (kg)'] = missions['LM mass (kg)'] + missions['CM mass (kg)']
+missions['Total weight diff'] = missions['LM mass diff'] + missions['CM mass diff']
 missions
 ```
 
-| Index | Mission | Sample Weight(kg) | Weight Diff | Lunar Module (LM) | LM Mass (kg) | LM Mass Diff | Command Module (CM) | CM Mass (kg) | CM Mass Diff | Total Weight (kg) | Total Weight Diff |
+| Index | Mission | Sample weight (kg) | Weight diff | Lunar module (LM) | LM mass (kg) | LM mass diff | Command module (CM) | CM mass (kg) | CM mass diff | Total weight (kg) | Total weight diff |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 0 | Apollo11 | 21.55424 | 0.00000 | Challenger (LM-12) | 15264 | 0.0 | Yankee Clipper (CM-108) | 5960 | 0.0 | 21224 | 0.0 |
 | 1 | Apollo12 | 34.34238 | 12.78814 | Orion (LM-11) | 15235 | -29.0 | Kitty Hawk (CM-110) | 5609 | -351.0 | 20844 | -380.0 |
