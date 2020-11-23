@@ -1,6 +1,6 @@
-In Azure Data Factory, you can raise alerts based upon metrics outputted by the monitoring service. These allow you to get alerted for a variety scenarios such as, but not limited to, failed pipelines, large factory sizes and integration runtime CPU utilization.
+In Azure Data Factory, you can raise alerts based upon metrics outputted by the monitoring service. Alerts allow you to get alerted for a variety of scenarios such as, but not limited to, failed pipelines, large factory sizes, and integration runtime CPU utilization.
 
-Alerts in the monitoring experience are based upon high level metrics such as pipeline failures. For custom alerting on specific conditions that may occur within a pipeline or based upon data quality, it is recommended to configure these using a pipeline activity.
+Alerts in the monitoring experience are based upon high-level metrics such as pipeline failures. For custom alerting on specific conditions that may occur within a pipeline or based upon data quality, it is recommended to configure these using a pipeline activity.
 
 To get started, go to the **Monitor** tab and select **Alerts & metrics**.
 
@@ -22,7 +22,7 @@ To get started, go to the **Monitor** tab and select **Alerts & metrics**.
 
     ![List of criteria](../media/add-criteria-3.png)
 
-    You can create alerts on various metrics, including those for ADF entity count/size, activity/pipeline/trigger runs, Integration Runtime (IR) CPU utilization/memory/node count/queue, as well as for SSIS package executions and SSIS IR start/stop operations.
+    You can create alerts on various metrics, including ADF entity count/size, activity/pipeline/trigger runs, Integration Runtime (IR) CPU utilization/memory/node count/queue, as well as for SSIS package executions and SSIS IR start/stop operations.
 
 1.  Configure the alert logic. You can create an alert for the selected metric for all pipelines and corresponding activities. You can also select a particular activity type, activity name, pipeline name, or failure type.
 
