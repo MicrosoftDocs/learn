@@ -1,4 +1,4 @@
-Normally you have to create a repository on GitHub before you can publish your code. Visual Studio Code lets you do that right from the editor. The following steps will guide you to create a new project and then publish that project to GitHub from VS Code.
+Normally you have to create a repository on GitHub before you can publish your code. Visual Studio Code lets you do that right from the editor. The following steps will guide you to create a new project and then publish that project to GitHub from Visual Studio Code.
 
 ## Step 1: Create a new project
 
@@ -42,7 +42,7 @@ Many programs use a `.env` file type to define program information that is confi
 
 1. Select the "Publish to GitHub" button.
 
-   :::image type="content" source="../media/scm-publish.jpg" alt-text="The SCM publish view":::
+   :::image type="content" source="../media/source-control-management-publish.jpg" alt-text="The SCM publish view":::
 
 1. In the prompt, select "Publish to GitHub public repository".
 1. Uncheck the ".env.development" file as we don't want to publish that to GitHub.

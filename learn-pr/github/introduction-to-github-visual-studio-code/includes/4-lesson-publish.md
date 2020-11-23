@@ -19,10 +19,10 @@ Visual Studio Code has a built-in "publish" feature that fully automates this pr
 
 ## Publishing to GitHub from Visual Studio Code
 
-There are two ways to publish a project to GitHub from VS Code - from the Source Control Management View (SCM View) and from the Command Palette. You must have a folder open in Visual Studio Code to see these options.
+There are two ways to publish a project to GitHub from Visual Studio Code - from the Source Control Management View (SCM View) and from the Command Palette. You must have a folder open in Visual Studio Code to see these options.
 
 > [!TIP]
-> You can always use the Git from the built-in terminal in VS Code as well (<kbd>Ctrl</kbd> + <kbd>`</kbd>). Just because you're using VS Code's visual source control tools doesn't mean that you have to completely forgo your beloved command line!
+> You can always use the Git from the built-in terminal in Visual Studio Code as well (<kbd>Ctrl</kbd> + <kbd>`</kbd>). Just because you're using Visual Studio Code's visual source control tools doesn't mean that you have to completely forgo your beloved command line!
 
 ### Publishing from the SCM View
 
@@ -30,7 +30,7 @@ If you haven't already initialized a repository for your project, you can publis
 
 The SCM View can be toggled in Visual Studio Code by selecting the SCM icon in the Activity Bar. You'll see a button that says "Publish to GitHub".
 
-:::image type="content" source="../media/scm-publish.jpg" alt-text="The SCM publish view":::
+:::image type="content" source="../media/sourfce-control-management-publish.jpg" alt-text="The SCM publish view":::
 
 Clicking this button will initialize the publish process...
 
@@ -43,7 +43,7 @@ Clicking this button will initialize the publish process...
 
 If your project has already been initialized for GitHub locally, you won't see the publish button in the SCM view. You can still publish your project to GitHub using the "Publish to GitHub" option in the Command Palette.
 
-:::image type="content" source="../media/publish-command.jpg" alt-text="The VS Code Command Palette showing the Publish to GitHub option":::
+:::image type="content" source="../media/publish-command.jpg" alt-text="The Visual Studio Code Command Palette showing the Publish to GitHub option":::
 
 The action will kick off the same workflow as the publish button in the SCM view does and has exactly the same steps. You won't be prompted for what items you want to push if your project already contains a `.gitignore`.
 

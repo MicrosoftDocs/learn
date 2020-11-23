@@ -11,4 +11,4 @@ Now that you know Visual Studio Code provides you with more options and features
 
 - [vscode.github.com](https://vscode.github.com) - 20 short video tips on using GitHub with Visual Studio Code
 - [Working With GitHub](https://code.visualstudio.com/docs/editor/github) - Learn how to do even more with Visual Studio Code and GitHub
-- [Version Control in VS Code](https://code.visualstudio.com/docs/editor/versioncontrol) - Everything you ever wanted to know about working with version control in VS Code
+- [Version Control in Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol) - Everything you ever wanted to know about working with version control in Visual Studio Code
