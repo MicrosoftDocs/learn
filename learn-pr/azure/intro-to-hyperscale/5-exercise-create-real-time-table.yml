@@ -2,7 +2,7 @@
 uid: learn.intro-to-hyperscale.5-exercise-create-real-time-table
 title: Exercise - Create a real time application table
 metadata:
-  title: Exercise - Create a real time application table
+  title: Exercise - Create a multi-tenant application table
   description: We connect to your database and create a basic schema
   ms.date: 10/23/2020
   author: tomreidnz

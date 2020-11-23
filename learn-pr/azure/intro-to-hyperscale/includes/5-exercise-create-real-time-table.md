@@ -1,6 +1,9 @@
 ## Use psql to connect in Azure Cloud Shell
 
-1. Select [Azure Cloud Shell](https://shell.azure.com)
+1. Select
+    > [!div class="nextstepaction"]
+    > [Azure Cloud Shell](https://shell.azure.com)
+
 2. Select **Bash**
 3. Select the subscription you used in the previous exercise to deploy the Hyperscale sever group
 
@@ -25,7 +28,7 @@ Let's now use the psql command-line utility to connect to the Hyperscale server 
 
 Now that you know how to connect to your Hyperscale server group, we can start to fill out the database. We'll:
 
-- create two tables
+- Create two tables
 - Tell Hyperscale to shard the two tables across the worker nodes
 - Insert payment and user data into the tables
 
@@ -55,7 +58,7 @@ CREATE TABLE payment_users
 
 The tables are on the coordinator node. To distribute the tables to the worker nodes, we have to run a `create_distributed_table` query with what `table` to distribute, and what `key` to shard it on.
 
-In our case, we have the **user_id** to shard.
+In our case, we have the **user_id** to shard and we want to distribute both the tables we created.
 
 > [!IMPORTANT]
 > Distributing tables is necessary to take advantage of Hyperscale worker nodes. If you don't distribute tables, the worker nodes can't help run queries involving those tables.
@@ -68,10 +71,12 @@ SELECT create_distributed_table('payment_users', 'user_id');
 
 Now we're ready to load in our **user data** `users.csv`, and **payment event data** `events.csv`.
 
-10. Run the follow command to download the CSV files of our user and payment event data.
+10. Run the following command to download the CSV files of our user and payment event data.
 
+```
 \! curl -0 https://raw.githubusercontent.com/TomReidNZ/CSV-Hosting/main/users.csv -o users.csv
 \! curl -0 https://raw.githubusercontent.com/TomReidNZ/CSV-Hosting/main/events.csv -o events.csv
+```
 
 11. Next, load the data from the CSV files into the distributed tables, `payment_users` and `payment_events`.
 
@@ -80,10 +85,6 @@ SET CLIENT_ENCODING TO 'utf8';
 
 \copy payment_users from 'users.csv' WITH CSV
 \copy payment_events from 'events.csv' WITH CSV
-
-
-SELECT count(*) from payment_users;
-SELECT count(*) from payment_events;
 ```
 
 ## Run queries
@@ -96,7 +97,7 @@ Our data is now loaded and distributed. Let's run a couple queries.
 SELECT count(*) from payment_events;
 ```
 
-13. Run the follow query to see how many transcactions we're having per hour
+13. Run the following query to see how many transcactions we're having per hour.
 
 ```sql
 SELECT date_trunc('hour', created_at) AS hour,
@@ -107,6 +108,8 @@ GROUP BY hour
 ORDER BY hour;
 ```
 
+And now run the follow query to see the accounts with high-frequency of events.
+
 ```sql
 
 SELECT users.login, count(*)
@@ -115,20 +118,5 @@ SELECT users.login, count(*)
     ON events.user_id = users.user_id
  WHERE events.event_type = 'SendFunds'
  GROUP BY users.login
- ORDER BY count(*) DESC;
-
-
- SELECT events.user_id, count(*)
-  FROM payment_events events
- WHERE events.event_type = 'SendFunds'
- GROUP BY events.user_id
- ORDER BY count(*) DESC;
-
- SELECT users.login, count(*)
- FROM payment_events events
- JOIN payment_users users
- ON events.user_id = users.user_id
- WHERE events.event_type = 'SendFunds'
- GROUP BY events.user_id
  ORDER BY count(*) DESC;
 ```
