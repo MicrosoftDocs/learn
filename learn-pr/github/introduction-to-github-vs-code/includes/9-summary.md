@@ -1,5 +1,4 @@
-Summary placeholder
-Well done! You've completed this module on using GitHub with Visual Studio Code. Let's review what you've learned so far...
+Well done! You've completed this module on using GitHub with Visual Studio Code. Let's review what you've learned so far:
 
 - Visual Studio Code handles GitHub authentication for you and allows extension to use that authentication to provide you additional GitHub functionality.
 - You can publish a project to GitHub from Visual Studio Code - no existing repository in GitHub required.

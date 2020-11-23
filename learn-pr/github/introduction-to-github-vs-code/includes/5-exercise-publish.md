@@ -1,6 +1,6 @@
-Now that you've authenticated to GitHub, you can publish a project from your local machine using the built-in GitHub integration in Visual Studio Code.
+Normally you have to create a repository on GitHub before you can publish your code. Visual Studio Code lets you do that right from the editor. The following steps will guide you to create a new project and then publish that project to GitHub from VS Code.
 
-## Create a new project
+## Step 1: Create a new project
 
 1. Create a folder on your machine called "mslearn-demo".
 1. In Visual Studio Code, select the "File" menu and choose "Open Folder".
@@ -8,7 +8,7 @@ Now that you've authenticated to GitHub, you can publish a project from your loc
 
 ### Create README.md
 
-The README file is what is scene when people go to your GitHub repo.
+The README file is what is seen when people visit your repo on github.com. For more information about the purpose and content of a REAMDE file, check out the
 
 1. Select the "File" menu and select "New File".
 1. Add the following text to the file.
@@ -36,7 +36,7 @@ Many programs use a `.env` file type to define program information that is confi
 1. Select the "File" menu and select "Save".
 1. Save the file as ".env.development".
 
-## Publish to GitHub
+## Step 2: Publish to GitHub
 
 1. Open the Source Control Management (SCM) View by selecting the SCM icon in the activity bar.
 
@@ -53,7 +53,7 @@ Many programs use a `.env` file type to define program information that is confi
 
    The project will now be published to GitHub.
 
-## View project On GitHub
+## Step 3: View project On GitHub
 
 1. Select "Open in GitHub" from the notification in Visual Studio Code
 1. View your repository on github.com
@@ -63,13 +63,22 @@ Many programs use a `.env` file type to define program information that is confi
 1. Notice that the commit message is set to "first commit".
 1. Notice that there is a new file called ".gitignore" in your project. This file was added by Visual Studio Code during the publish process.
 
-## Examine .gitignore in Visual Studio Code
+## Step 4: Examine .gitignore in Visual Studio Code
 
 1. In Visual Studio Code, select the "View" menu
 1. Select "Explorer" from the dropdown
 1. Select ".gitignore" file
 1. Notice that the ".env.development" file has been added to the ".gitignore". Any files or directories added here will **not** be pushed to GitHub.
 
-You've published a repository to GitHub from Visual Studio Code with just a few clicks. Visual Studio Code handled all of the tedious work that needs to happen behind the scenes to make that happen.
+## What you just did
+
+Let's recap what you did in this section.
+
+1. You created a new project and a README file.
+1. You published the project to GitHub from Visual Studio Code
+1. You saw that the repository was created on github.com
+1. You examined the `.gitignore` file that was automatically created when you chose _not_ to inlude the `.env.development` file.
+
+Visual Studio Code handled all of the tedious work that needs to happen behind the scenes to make this publish workflow seamless.
 
 Many times, though, we start a project from GitHub, not from our local machine. In the next section, you'll see how Visual Studio Code allows you to clone repositories from your editor.
