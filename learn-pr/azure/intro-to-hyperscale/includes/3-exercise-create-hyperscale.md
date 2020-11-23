@@ -1,4 +1,9 @@
-In this exercise, we're going to create a Hyperscale instance using the Azure Portal.
+In this exercise, we're going to create a Hyperscale instance using the Azure Portal. Our server group will have:
+
+* One coordinator node, with 4 vCores and 0.5 TiB of storage
+* Two worker nodes, each with 4 vCores and 0.5 TiB of storage
+
+For a total of 12 vCores and 1.5 TiB of storage.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -36,10 +41,13 @@ In this exercise, we're going to create a Hyperscale instance using the Azure Po
 
 5. Scroll to the bottom of the page and select the blue **Save** box.
 
-6. Scroll to the bottom of the page and Select the blue **Review + create** button.
+6. Select the **Networking** tab at the top of the page
+7. Select **Add All 0.0.0.0 - 255.255.255.255**
+
+8. Scroll to the bottom of the page and Select the blue **Review + create** button.
 
 *image goes here*
 
-7. Select the blue **Create** button at the bottom of the page.
+9. Select the blue **Create** button at the bottom of the page.
 
 Congratulations! Your Hyperscale server group is being deployed to Azure.

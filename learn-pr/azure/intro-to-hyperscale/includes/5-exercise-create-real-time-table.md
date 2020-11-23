@@ -1,114 +1,134 @@
-*Open up firewall ports in the portal*
-
-## Configure a server-level firewall rule
-
-Azure has an automatic firewall for our server - preventing all external parties from connecting to the server. In the portal, we'll create a firewall rule to allow us to connect externally.
-
-1. Click **All Resources** from the left-hand menu and type in the name **payment-server-demo** to search for your newly created server. Click the server name listed in the search result. The **Overview** page for your server opens and provides options for further configuration.
-
-   :::image type="content" source="../media/4-locate.png" alt-text="Azure Database for PostgreSQL - Search for server":::
-
-2. In the server page, select **Connection security**. 
-
-3. Click in the text box under **Rule Name,** and add a new firewall rule to specify the IP range for connectivity. Enter your IP range. Click **Save**.
-
-   :::image type="content" source="../media/5-firewall-2.png" alt-text="Azure Database for PostgreSQL - Create Firewall Rule":::
-
-4. Click **Save** and then click the **X** to close the **Connections security** page.
-
-*Save*
-
 ## Use psql to connect in Azure Cloud Shell
 
-*Write connection string*
+1. Select [Azure Cloud Shell](https://shell.azure.com)
+2. Select **Bash**
+3. Select the subscription you used in the previous exercise to deploy the Hyperscale sever group
 
-Let's now use the psql command-line utility to connect to the Azure Database for PostgreSQL server.
+*image goes here*
 
-To run the code in this article in Azure Cloud Shell:
+After a few seconds, a black cloud shell should appear
 
-1. Start Cloud Shell.
-2. Select the Copy button on the code block to copy the code.
+*image goes here*
+
+Let's now use the psql command-line utility to connect to the Hyperscale server group.
+
+4. Select the Copy button on the code block to copy the code, and replace the `{YOUR-PASSWORD-HERE}` with your password from the previous exercise.
 
    ```psql
-   psql --host=payment-server-demo.postgres.database.azure.com --port=5432 --username=paymentadmin@payment-server-demo.postgres.database.azure.com --dbname=postgres
+   psql "host=payment-server-demo-c.postgres.database.azure.com port=5432 dbname=citus user=citus password={YOUR-PASSWORD-HERE} sslmode=require"
    ```
 
-3. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux or by selecting Cmd+Shift+V on macOS.
-4. Select Enter to run the code to connect to your Azure Database for PostgreSQL database.
-5. Type in your password and select enter.
-
-*Create database and view*
-
-6. Once you are connected to the server, create a blank database at the prompt:
-   ```sql
-   CREATE DATABASE paymentapp;
-   ```
-
-7. At the prompt, execute the following command to switch connection to the newly created database **paymentapp**:
-   ```sql
-   \c paymentapp
-   ```
+5. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux or by selecting Cmd+Shift+V on macOS.
+6. Select Enter to run the code to connect to your Hyperscale server group.
 
 ## Create tables in the database
 
-*Add data to table and view*
+Now that you know how to connect to your Hyperscale server group, we can start to fill out the database. We'll:
 
-*Create table and view*
+- create two tables
+- Tell Hyperscale to shard the two tables across the worker nodes
+- Insert payment and user data into the tables
 
-Now that you know how to connect to the Azure Database for PostgreSQL, we can complete some basic tasks. We'll:
+First, create the event and user tables.
 
-- create a table
-- insert some account data into it
-- view the table
-- edit one of the values
+8. In the Cloud Shell window, run the following query to create our payment_events and payment_users tables:
 
-First, create a table and load it with some account data.
-8. In the Cloud Shell  window, run the following squery to create a table:
-```sql
-CREATE TABLE account (
-	id serial PRIMARY KEY, 
-	name VARCHAR(50), 
-	age INTEGER
+```SQL
+CREATE TABLE payment_events
+(
+    event_id bigint,
+    event_type text,
+    merchant_id bigint,
+    user_id bigint,
+    event_details jsonb,
+    created_at timestamp
+);
+
+CREATE TABLE payment_users
+(
+    user_id bigint,
+    url text,
+    login text,
+    avatar_url text
 );
 ```
 
-9. You can see the newly created table in the list of tables now by typing:
+The tables are on the coordinator node. To distribute the tables to the worker nodes, we have to run a `create_distributed_table` query with what `table` to distribute, and what `key` to shard it on.
 
+In our case, we have the **user_id** to shard.
+
+> [!IMPORTANT]
+> Distributing tables is necessary to take advantage of Hyperscale worker nodes. If you don't distribute tables, the worker nodes can't help run queries involving those tables.
+
+9. In the Cloud Shell window, run the following query to distribute our payment_events and payment_users tables to the worker nodes:
 ```sql
-\dt
+SELECT create_distributed_table('payment_events', 'user_id');
+SELECT create_distributed_table('payment_users', 'user_id');
 ```
 
-## Load data into the tables
+Now we're ready to load in our **user data** `users.csv`, and **payment event data** `events.csv`.
 
-Now that you have a table, insert some data into it.
+10. Run the follow command to download the CSV files of our user and payment event data.
 
-10. In the Cloud Shell  window, run the following query to insert some rows of data.
+\! curl -0 https://raw.githubusercontent.com/TomReidNZ/CSV-Hosting/main/users.csv -o users.csv
+\! curl -0 https://raw.githubusercontent.com/TomReidNZ/CSV-Hosting/main/events.csv -o events.csv
+
+11. Next, load the data from the CSV files into the distributed tables, `payment_users` and `payment_events`.
 
 ```sql
-INSERT INTO logins (id, name, age) VALUES (1, 'John', 45); 
-INSERT INTO logins (id, name, age) VALUES (2, 'Lauren', 32);
+SET CLIENT_ENCODING TO 'utf8';
+
+\copy payment_users from 'users.csv' WITH CSV
+\copy payment_events from 'events.csv' WITH CSV
+
+
+SELECT count(*) from payment_users;
+SELECT count(*) from payment_events;
 ```
 
-You have now two rows of sample data into the account table you created earlier.
+## Run queries
 
-## Query and update the data in the tables
+Our data is now loaded and distributed. Let's run a couple queries.
 
-*Edit data in table and view*
-
-11. Execute the following query to retrieve information from the account database table.
+12. Run the follow query in the cloud shell to see how many events we have stored.
 
 ```sql
-SELECT * FROM account;
+SELECT count(*) from payment_events;
 ```
 
-12. You can also update the data in the table.
+13. Run the follow query to see how many transcactions we're having per hour
 
 ```sql
-UPDATE account SET age = 20 WHERE name = 'John';
+SELECT date_trunc('hour', created_at) AS hour,
+       count(*) AS transactions
+FROM payment_events
+WHERE event_type = 'SendFunds'
+GROUP BY hour
+ORDER BY hour;
 ```
 
-13. You can see the updated values when you retrieve the data.
-
 ```sql
-SELECT * FROM account;
+
+SELECT users.login, count(*)
+  FROM payment_events events
+  JOIN payment_users users
+    ON events.user_id = users.user_id
+ WHERE events.event_type = 'SendFunds'
+ GROUP BY users.login
+ ORDER BY count(*) DESC;
+
+
+ SELECT events.user_id, count(*)
+  FROM payment_events events
+ WHERE events.event_type = 'SendFunds'
+ GROUP BY events.user_id
+ ORDER BY count(*) DESC;
+
+ SELECT users.login, count(*)
+ FROM payment_events events
+ JOIN payment_users users
+ ON events.user_id = users.user_id
+ WHERE events.event_type = 'SendFunds'
+ GROUP BY events.user_id
+ ORDER BY count(*) DESC;
 ```
