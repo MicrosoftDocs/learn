@@ -10,7 +10,9 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 1. The portal navigates you to the **Marketplace** page. From here, you can search for the resource you want to create or select one of the popular resources that people create in the Azure portal.
 
-1. Select **Web** > **Web App** to display the web app creation wizard.
+1. In the left navigation panel, select **Web**.
+
+1. In the Search box, search for **Web App**. The Web App resource appears. Select **Create.**
 
 1. Fill out the wizard with the following values:
 
@@ -46,12 +48,18 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | **Resource Group** | Select <rgn>[Sandbox resource group]</rgn> from the menu | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
 
     Under **Static Web App details**, continue filling out the wizard with the following values:
+
+    | Field | Value | Details |
+    |---|---|---|
     | **Name** | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
-    | **Region** | Select *West US* or *Central US* | The geographical region from which your app will be hosted. |
+    | **Region** | Select *West US 2* or *Central US* | The geographical region from which your app will be hosted. |
     | **SKU** | F1 | The pricing tier of the plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1** from the list, then select Apply. |
 
-1. From the **Tags** tab, under **Project Details**, fill out the wizard with the following values: 
-   | **Publish** | Code | The method you will use to publish your application. When publishing your application as code, you also must configure **Runtime stack** to prepare your App Service resources to run your app. |
+1. From the **Tags** tab, under **Project Details**, fill out the wizard with the following values:
+
+    | Field | Value | Details |
+    |---|---|---|
+    | **Publish** | Code | The method you will use to publish your application. When publishing your application as code, you also must configure **Runtime stack** to prepare your App Service resources to run your app. |
     | **Runtime stack** | Tomcat 9.0 | The platform on which your application runs. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
     | **Operating System** | Linux | The operating system used on the virtual servers that run your app. |
     | **Linux Plan** | *Leave default* | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
