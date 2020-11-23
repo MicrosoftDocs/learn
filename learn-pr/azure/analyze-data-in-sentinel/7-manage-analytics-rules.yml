@@ -11,7 +11,7 @@ metadata:
 title: Manage analytics rules
 durationInMinutes: 4
 content: |
-  [!include[] includes/7-manage-analytics-rules.md)]
+  [!include[](includes/7-manage-analytics-rules.md)]
 quiz:
   title: Check your knowledge
   questions:
