@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Detect threats with Azure Sentinel analytics
 durationInMinutes: 10
 content: |
-  [!include[]includes/2-exercise-setup.md)]
+  [!include[](includes/2-exercise-setup.md)]
