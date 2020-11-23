@@ -11,7 +11,7 @@ metadata:
 title: Describe incident management
 durationInMinutes: 5
 content: |
-  [!include[]includes/3-describe-incident-management.md)]
+  [!include[](includes/3-describe-incident-management.md)]
 quiz:
   title: Check your knowledge
   questions:
