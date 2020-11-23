@@ -7,10 +7,10 @@ Part of managing your machine can be to discover what processes run on it and ho
 Run the command `Get-Process`, using the cmdlets `Where-Object` and `Sort-Object` piped in:
 
 ```powershell
-Get-Process | Where-Object CPU -gt 1000 | Sort-Object CPU -Descending
+Get-Process | Where-Object CPU -gt 1000 | Sort-Object CPU -Descending | SelectObject -First 3
 ```
 
-The resulting output differs per machine, but should present all processes with a CPU value higher than a 1000 sorted in a descending order, that is the highest CPU value is presented on top and then the next highest and so on. Your output will look similar to this:
+The resulting output differs per machine, but should present the three first processes with a CPU value higher than a 1000, sorted in a descending order. The highest CPU value is presented on top and then the next highest and so on. Your output will look similar to this:
 
 ```output
  NPM(K)    PM(M)      WS(M)     CPU(s)      Id  SI ProcessName

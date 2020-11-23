@@ -1,4 +1,4 @@
-The pipe `|` character is used to connect several cmdlets, where one cmdlet's output serve as the input for the next cmdlet to the right of the pipe. This connection of cmdlets means you are creating a much more powerful and complex statement than a single cmdlet could have accomplished. The connection is referred to as a pipeline, consisting of many pipes and cmdlets.
+The pipe `|` character is used to connect several cmdlets, where one cmdlet's output serve as the input for the next cmdlet to the right of the pipe. This connection of cmdlets means you are creating a much more powerful and complex statement than a single cmdlet could have accomplished. The connection is referred to as a _pipeline_, consisting of one or more pipes and cmdlets.
 
 You've been creating pipelines already, in previous units in this module. For example, when you asked for the fields and columns of a process you had to _pipe_ the `Get-Command` cmdlet with `Get-Member`. What you did was asking for details on a specific process. By _piping_ `Get-Member` to the result you were able to have a look at the resulting object and inspect it for its types, events, methods and more.
 
@@ -18,7 +18,7 @@ As part of your learning journey it's important to understand how to interpret w
 
 It's not uncommon that a cmdlet takes more than parameter meant for the pipeline.
 
-But how do you know which of the parameter inputs it will try to use first? Let's explain the evaluation by looking at a real example. By running the command, help Get-Process -Full` you will get a detailed listing of the help section of the `Get-Process` command. The INPUTS and the PARAMETERS section reveal there are three possible inputs:
+But how do you know which of the parameter inputs it will try to use first? Let's explain the evaluation by looking at a real example. By running the command, `help Get-Process -Full` you will get a detailed listing of the help section of the `Get-Process` command. The INPUTS and the PARAMETERS section reveal there are three possible inputs:
 
 - `System.String[]`, this primitive type is connected to the parameter `-Name`.
 - `System.Int32`, the parameter for this one is called `-Id`.
@@ -87,7 +87,9 @@ Let's list some operators you are likely to use:
 
 ## Filtering left
 
-_Filtering left_ is a principle that means filtering down to the results you want to as early as possible in your pipeline statement. You can see the term _left_ equal to _early_, as you are executing a PowerShell statement from left to right. The idea is to make the statement as fast and efficient as possible by ensuring that the dataset you are operating on is as small as possible. Take the following statement:
+_Filtering left_ is a principle that means filtering down to the results you want to as early as possible in your pipeline statement. You can see the term _left_ equal to _early_, as you are executing a PowerShell statement from left to right. The idea is to make the statement as fast and efficient as possible by ensuring that the dataset you are operating on is as small as possible. Where this really comes in to play is when your commands are backed by larger data stores or your are bringing results back across the network.
+
+Take the following statement:
 
 ```powershell
 Get-Process | Select-Object Name | Where-Object Name -eq name-of-process
@@ -100,6 +102,14 @@ A better approach would be to do the filtering first and then the formatting lik
 ```powershell
 Get-Process | Where-Object Name -eq name-of-process | Select-Object Name
 ```
+
+Often, if a cmdlet offers filtering, that is more efficient than using `Where-Object` so an even more efficient version of the above statement would be the following invocation:
+
+```powershell
+Get-Process | -Name name-of-process | Select-Object Name
+```
+
+In this version, the parameter `-Name` is doing the filtering for you.
 
 ## Format right
 

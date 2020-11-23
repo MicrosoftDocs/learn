@@ -1,10 +1,10 @@
-Here you will run a command to verify your PowerShell installation. It's a good starting point to know that everything is installed correctly. Additionally you will also check the execution policy.
+Here you will run a command to verify your PowerShell installation. It's a good starting point to know that everything is installed correctly.
 
 ## Verify installation
 
 To make sure you are correctly set up to work in PowerShell, running a command to verify your installation is a good idea.  
 
-1. Run the command `$PSVersionTable`:
+1. Type `$PSVersionTable` and press `enter`:
 
    ```powershell
    $PSVersionTable
@@ -28,7 +28,7 @@ To make sure you are correctly set up to work in PowerShell, running a command t
 
    The output above is formatted as a table and gives you various information on not only what version of PowerShell you are running but what platform you are on, what edition and more. If you want to know what version of PowerShell you are running, you can narrow it down by running a modified version of `$PSVersionTable`.
 
-1. Run `$PSVersionTable.PSVersion`:
+1. Type `$PSVersionTable.PSVersion` and press `enter`:
 
    ```powershell
    $PSVersionTable.PSVersion
@@ -42,4 +42,4 @@ To make sure you are correctly set up to work in PowerShell, running a command t
     7      0      3  
     ```
 
-    The information above is narrowed down to give you more information on the version of PowerShell you are running. The learning here is that running the command `$PSVersionTable` results in an output looking like a table but is an actuality an object. You can therefore you can use a dot, `.` to access a specific property like `PSVersion`.
+    The information above is narrowed down to give you more information on the version of PowerShell you are running. The learning here is that running `$PSVersionTable` results in an output looking like a table but is an actuality an object. You can therefore you can use a dot, `.` to access a specific property like `PSVersion`.

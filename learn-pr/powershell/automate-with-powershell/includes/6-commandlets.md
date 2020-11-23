@@ -1,8 +1,15 @@
 A cmdlet is a compiled command and is pronounced command-let. A cmdlet can be developed in .NET or .NET Core and invoked as a command within PowerShell. There are thousands of cmdlets that come with your PowerShell installation already. The challenge lies in discovering what those are and what they can do for you.
 
-PowerShell has many different types of commands like functions, alias, and cmdlets. When you run a command, it's belongs to one of these three types. It's common to use the word command and cmdlet interchangeably as a cmdlet is a type of command. 
+Cmdlets are named according to a Verb-Noun naming standard, which makes it easier to understand what they do but also to search for them. Additionally it guides cmdlet developers in how their cmdlets should be named. There's also a list of approved verbs. You can use the `Get-Verb` cmdlet to show them all. It shows all verbs organized by activity type and what they do. Here's an extract of the output, from running `Get-Verb`:
 
-Cmdlets are named according to a Verb-Noun naming standard, which makes it easier to understand what they do but also to search for them. Additionally it guides cmdlet developers in how their cmdlets should be named.  
+```output
+Verb        AliasPrefix Group          Description
+----        ----------- -----          -----------
+Add         a           Common         Adds a resource to a container, or atta…
+Clear       cl          Common         Removes all the resources from a contai…
+```
+
+Above, the listing is showing the verb and what the verb does via it's description. So should make a note not only about using an _approved_ verb but to ensure that the verb you do use fits what your cmdlet does.
 
 There's three cmdlets that allow you delve deeper into what cmdlets exist and what they do. They are:
 
