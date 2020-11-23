@@ -77,7 +77,7 @@ Let's recap what you did in this section.
 1. You created a new project and a README file.
 1. You published the project to GitHub from Visual Studio Code
 1. You saw that the repository was created on github.com
-1. You examined the `.gitignore` file that was automatically created when you chose _not_ to inlude the `.env.development` file.
+1. You examined the `.gitignore` file that was automatically created when you chose _not_ to include the `.env.development` file.
 
 Visual Studio Code handled all of the tedious work that needs to happen behind the scenes to make this publish workflow seamless.
 
