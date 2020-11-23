@@ -8,7 +8,7 @@ When you clone a repository from GitHub, a copy of that repository is downloaded
 
 You can clone a repository from GitHub using the VS Code file explorer or the Command Palette. If you have a new window with no folder open, you can toggle the File Explorer from the activity bar or by clicking on View -> Explorer. You'll see a button to "Clone repository".
 
-:::image type="content" source="../media/4-clone.png" alt-text="Clone respository option in VS Code explorer view":::
+:::image type="content" source="../media/4-clone.png" alt-text="Clone repository option in VS Code explorer view":::
 
 If you have a folder open in VS Code, you won't see the "Clone Repository" button but you can still clone a repository from the Command Palette, by entering "Git: Clone".
 
