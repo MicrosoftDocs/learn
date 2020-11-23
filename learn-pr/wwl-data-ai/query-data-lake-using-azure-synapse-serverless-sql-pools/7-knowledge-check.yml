@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/19/2020
+  ms.date: 11/23/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -39,7 +39,7 @@ quiz:
     choices:
     - content: "&."
       isCorrect: false
-      explanation: "Incorrect. The ampersand character is used to concantenate fields in the files together."
+      explanation: "Incorrect. The ampersand character is used to concatenate fields in the files together."
     - content: "*."
       isCorrect: true
       explanation: "Correct. The asterisk character in file path can be used to select all the file or folders that match rest of the path."
