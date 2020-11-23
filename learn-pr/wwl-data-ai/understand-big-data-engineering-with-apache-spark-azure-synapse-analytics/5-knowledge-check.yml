@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/20/2020
+  ms.date: 11/23/2020
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ quiz:
     - content: "Spark Instance."
       isCorrect: true
       explanation: "Correct, The definition of a Spark pool is that, when instantiated, it is used to create a Spark instance that processes data."
-  - content: "In order to create a Spark pool in Azure Synapse Analytics, what would you have to create in order to do so?"
+  - content: "In order to create a Spark pool in Azure Synapse Analytics, what needs to be created in order to do so?"
     choices:
     - content: "Synapse Analytics Workspace."
       isCorrect: true
