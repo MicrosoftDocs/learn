@@ -10,7 +10,12 @@ The cloud is a powerful place that hosts many moving parts. To use the Microsoft
 
 ## How to use quantum services on Azure?
 
-Azure Quantum is a service on Azure. To use it, simply add a *Quantum Workspace* resource to the Azure subscription in the Azure portal. As Quantum Workspace resource is a collection of assets associated with running quantum computing or optimization applications.
+Azure Quantum is a service on Azure. To use it, you'll create a *Quantum Workspace* in your subscription, which is a resource that stores all the quantum programs and optimization problems (called *Jobs*) that you submit to the service.
+
+The Quantum Workspace will also contain a list of providers and targets that you've selected. *Providers* publish a set of *Targets*, each of which allows you to either run a quantum program or solve an optimization problem. Simulators, quantum computers, and optimization solvers are examples of targets.
+
+In the next section of this module you'll create a Quantum Workspace.
+
 
 ## Storage Account
 
