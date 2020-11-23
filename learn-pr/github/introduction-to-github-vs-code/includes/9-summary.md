@@ -10,5 +10,5 @@ Well done! You've completed this module on using GitHub with Visual Studio Code.
 Now that you know Visual Studio Code provides you with more options and features for working with GitHub, here are some additional things that you can do to put your newfound knowledge to work for you.
 
 - [vscode.github.com](https://vscode.github.com) - 20 short video tips on using GitHub with Visual Studio Code
-- [Working With Github](https://code.visualstudio.com/docs/editor/github) - Learn how to do even more with Visual Studio Code and GitHub
+- [Working With GitHub](https://code.visualstudio.com/docs/editor/github) - Learn how to do even more with Visual Studio Code and GitHub
 - [Version Control in VS Code](https://code.visualstudio.com/docs/editor/versioncontrol) - Everything you ever wanted to know about working with version control in VS Code
