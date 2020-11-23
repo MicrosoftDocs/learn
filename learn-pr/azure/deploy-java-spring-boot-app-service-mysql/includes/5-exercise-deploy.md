@@ -65,7 +65,7 @@ This screenshot shows the application deployed to Azure App Service:
 
 ## Test the Azure App Service application
 
-When the deployment finishes, your application is ready at `http://<appName>.azurewebsites.net/`. (In the demo, the URL is `http://demo-1604579125693.azurewebsites.net`.)
+When the deployment finishes, your application is ready at `http://<appName>.azurewebsites.net/`. 
 
 To test the application, you can use `cURL`.
 
@@ -93,7 +93,7 @@ curl http://<appName>.azurewebsites.net
 This command returns the list of to-do items, including the item you created:
 
 ```json
-[{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot App correctly!","done":true}]
+[{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot application correctly!","done":true}]
 ```
 
 > [!NOTE]

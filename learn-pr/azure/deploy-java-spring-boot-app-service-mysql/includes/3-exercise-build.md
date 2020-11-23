@@ -41,7 +41,7 @@ az group create \
 Now you'll create a managed MySQL server.
 
 > [!NOTE]
-> If you want to know more about `az mysql server create` and other Azure CLI commands, you can find a link to the relevant documentation at the end of this module.
+> To learn more about Azure Database for MySQL, at the end of this module, follow the link to the relevant documentation.
 
 Run the following script to create a small instance of Azure Database for MySQL. The database has 1 CPU and 2 GB of RAM.
 
