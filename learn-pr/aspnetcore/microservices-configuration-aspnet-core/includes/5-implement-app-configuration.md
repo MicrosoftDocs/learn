@@ -41,7 +41,7 @@ Complete the following steps to create an App Configuration instance in your Azu
 
 ## Store the App Configuration connection string
 
-In the *:::no-loc text="deploy\k8s\helm-simple\webspa\templates\configmap.yaml":::* file, uncomment the `AppConfig__Endpoint` line. Replace the `<connection-string>` placeholder with the connection string on your clipboard. Save your changes.
+In the *:::no-loc text="deploy/k8s/helm-simple/webspa/templates/configmap.yaml":::* file, uncomment the `AppConfig__Endpoint` line. Replace the `<connection-string>` placeholder with the connection string on your clipboard. Save your changes.
 
 The `AppConfig__Endpoint` line will resemble the following YAML:
 
@@ -60,8 +60,8 @@ In Azure App Configuration, create and enable a key-value pair to be treated as 
 
 1. In another browser tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Cloud Shell.
 1. Use the search box to find and open the App Configuration resource prefixed with *:::no-loc text="eshoplearn":::*.
-1. In the **:::no-loc text="Operations":::** section, select **:::no-loc text="Feature manager":::** > **:::no-loc text="Add":::**.
-1. Select the **:::no-loc text="Enable feature flag":::** check box, enter *Coupons* in the **:::no-loc text="Feature flag name":::** text box, and select the **:::no-loc text="Apply":::** button.
+1. In the **Operations** section, select **Feature manager** > **Add**.
+1. Select the **Enable feature flag** check box, enter *Coupons* in the **Feature flag name** text box, and select the **Apply** button.
 
 Now that the feature flag exists in the App Configuration store, the *:::no-loc text="WebSPA":::* project requires some changes to read it.
 
@@ -110,7 +110,7 @@ Apply the following changes to your *:::no-loc text="WebSPA":::* project:
 
     In the preceding code snippet:
 
-    * The `Connect` method authenticates to the App Configuration store. Recall that the connection string is stored in *:::no-loc text="deploy\k8s\helm-simple\webspa\templates\configmap.yaml":::* as an environment variable with the key `AppConfig__Endpoint`. The environment variables configuration provider replaces the double underscore (`__`) with a colon (`:`).
+    * The `Connect` method authenticates to the App Configuration store. Recall that the connection string is stored in *:::no-loc text="deploy/k8s/helm-simple/webspa/templates/configmap.yaml":::* as an environment variable with the key `AppConfig__Endpoint`. The environment variables configuration provider replaces the double underscore (`__`) with a colon (`:`).
     * The `UseFeatureFlags` method defines a cache expiration policy of five seconds for the feature flags. The default value is 30 seconds. Once five seconds have elapsed, the cache is refreshed with updated feature flag values.
     * The `ConfigureRefresh` method defines a cache expiration policy of five seconds for the `FeatureManagement:Coupons` key in the App Configuration store. The default value is 30 seconds. Once five seconds have elapsed, the cache is refreshed with an updated value for the `FeatureManagement:Coupons` key.
 
@@ -156,7 +156,7 @@ To verify the feature flag works as expected, start a purchase as follows:
 1. Select the shopping bag icon in the upper right.
 1. Select the **:::no-loc text="CHECKOUT":::** button.
 1. Notice the discount coupon elements are present because the *coupons* feature is enabled in the Azure portal.
-1. In the Azure portal, clear the *Coupons* feature's **:::no-loc text="Enabled":::** check box.
+1. In the Azure portal, clear the *Coupons* feature's **Enabled** check box.
 1. Refresh the browser tab displaying the `/features` endpoint. Notice the value of the *coupons* feature's `enabled` property is now `false`.
 1. Wait a few seconds. In the app, refresh the page. The SPA reloads.
 1. Select the shopping bag icon in the upper right.

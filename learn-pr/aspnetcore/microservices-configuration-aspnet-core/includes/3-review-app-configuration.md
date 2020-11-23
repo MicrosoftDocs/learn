@@ -27,7 +27,7 @@ Each configuration provider can contribute its own key value. Furthermore, any p
 Configuration key names can describe a hierarchy. For example, the notation `FeatureManagement:Coupons` refers to the `Coupons` key within the `FeatureManagement` section. This structure can also map configuration values to an object graph or an [array](/aspnet/core/fundamentals/configuration/#bind-an-array).
 
 > [!IMPORTANT]
-> Some platforms don't support a colon in environment variable names. To ensure cross-platform compatibility, a double underscore (`__`) is used instead of a colon (`:`) to delimit keys.
+> Some platforms don't support a colon in environment variable names. To ensure cross-platform compatibility, a double underscore (`__`) is used instead of a colon (`:`) to delimit keys. For example, `FeatureManagement__Coupons` is the cross-platform equivalent notation for `FeatureManagement:Coupons`.
 
 ASP.NET Core uses a [ConfigurationBinder](/dotnet/api/microsoft.extensions.configuration.configurationbinder) to map configuration values to objects and arrays. The mapping to key names occurs in a case-insensitive fashion. For example, `ConnectionString` and `connectionstring` are treated as equivalent keys. For more information, see [keys and values](/aspnet/core/fundamentals/configuration/#configuration-keys-and-values).
 
@@ -87,11 +87,11 @@ The *:::no-loc text="WebSPA":::* app contains both server-side and client-side c
 
 ### Feature flag directive for the Angular views
 
-You're provided with a custom Angular *attribute directive*. An attribute directive is a component that changes the appearance of DOM elements. The custom directive considers a feature flag to toggle the visibility of the discount coupon DOM elements. The directive is implemented with the following files in the *:::no-loc text="src\Web\WebSPA\Client\src\modules\shared":::* directory:
+You're provided with a custom Angular *attribute directive*. An attribute directive is a component that changes the appearance of DOM elements. The custom directive considers a feature flag to toggle the visibility of the discount coupon DOM elements. The directive is implemented with the following files in the *:::no-loc text="src/Web/WebSPA/Client/src/modules/shared":::* directory:
 
-* *:::no-loc text="directives\featureFlag.directive.ts":::*
-* *:::no-loc text="models\featureFlag.model.ts":::*
-* *:::no-loc text="services\featureFlag.service.ts":::*
+* *:::no-loc text="directives/featureFlag.directive.ts":::*
+* *:::no-loc text="models/featureFlag.model.ts":::*
+* *:::no-loc text="services/featureFlag.service.ts":::*
 
 An Angular component that contains the `featureFlag` attribute triggers the following sequence of events:
 
@@ -116,7 +116,7 @@ By default, the client can't access .NET's `IConfiguration` interface. To solve 
 * Enables the client to retrieve a feature's status via an HTTP request.
 * Communicates with the .NET Feature Management library to access feature flags via `IConfiguration`.
 
-You're provided with a custom middleware at *:::no-loc text="src\Web\WebSPA\Infrastructure\Middlewares\FeatureManagementMiddleware.cs":::*&mdash;a key component of the SPA's feature flag system:
+You're provided with a custom middleware at *:::no-loc text="src/Web/WebSPA/Infrastructure/Middlewares/FeatureManagementMiddleware.cs":::*&mdash;a key component of the SPA's feature flag system:
 
 :::code language="csharp" source="../code/src/web/webspa/infrastructure/middlewares/featuremanagementmiddleware.cs" id="snippet_Invoke" highlight="8":::
 

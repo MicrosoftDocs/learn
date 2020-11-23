@@ -77,7 +77,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
 
     The library retrieves feature flags using .NET Core's native configuration system. You can define your app's feature flags by using any configuration provider that .NET Core supports. In this case, you'll define the configuration in the :::no-loc text="ConfigMap"::: file of the SPA's Helm chart. The library also provides a `<feature>` Tag Helper that can be registered and used in Razor views.
 
-1. In the *:::no-loc text="deploy\k8s\helm-simple\webspa\templates\configmap.yaml":::* file, uncomment the `UseFeatureManagement` and `FeatureManagement__Coupons` lines. Save your changes.
+1. In the *:::no-loc text="deploy/k8s/helm-simple/webspa/templates/configmap.yaml":::* file, uncomment the `UseFeatureManagement` and `FeatureManagement__Coupons` lines. Save your changes.
 
     After the change, your file will resemble the following YAML snippet:
 
@@ -224,7 +224,7 @@ The preceding markup applies conditional logic against the feature flag by using
 
 Complete the following steps to disable the *coupons* feature.
 
-1. In the *:::no-loc text="deploy\k8s\helm-simple\webspa\templates\configmap.yaml":::* file, set `FeatureManagement__Coupons` to `"False"`. Save your changes.
+1. In the *:::no-loc text="deploy/k8s/helm-simple/webspa/templates/configmap.yaml":::* file, set `FeatureManagement__Coupons` to `"False"`. Save your changes.
 
     The `FeatureManagement__Coupons` line will now resemble the following YAML:
 
