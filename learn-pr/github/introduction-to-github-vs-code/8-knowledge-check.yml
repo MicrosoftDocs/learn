@@ -19,7 +19,7 @@ quiz:
       choices:
         - content: "Revoke access for Visual Studio Code in your GitHub settings."
           isCorrect: false
-          explanation: "This will revoke all of Visual Studio Code's access, not just the access for a paticular extension."
+          explanation: "This will revoke all of Visual Studio Code's access, not just the access for a particular extension."
         - content: "Deselect the extension from the 'Manage Trusted Extensions' menu on the user account item."
           isCorrect: true
           explanation: "You can revoke access for a specific extension at any time by visiting the 'Manage Trusted Extensions' option in the user account menu under your GitHub login."
