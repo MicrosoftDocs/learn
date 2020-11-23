@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-stack-hci-technologies.2-hyper-v
 metadata:
-  title: Introduction to Hyper-V
-  description: Introduction to Hyper-V
+  title: Introduction to Hyper-V ### Marcin, The design doc has "What is Hyper-V"" as the title for this unit. Please advise which one we shoudl retain."
+  description: Provide an introduction to Hyper-V. 
   ms.date: 09/21/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Unit title
-durationInMinutes: 10
+durationInMinutes: 12
 content: |
   [!include[](includes/2-hyper-v.md)]
 quiz:
@@ -28,7 +28,7 @@ quiz:
       isCorrect: false
       explanation: "That's incorrect. Hardware-enforced Data Execution Prevention (DEP) enabled is one of the requirements."
 
-  - content: "Where can you obtain the Integration Services for Windows Server 2019 Hyper-V guest VMs?"
+  - content: "Where can an administrator obtain the Integration Services for Windows Server 2019 Hyper-V guest VMs?"
     choices:
     - content: "Windows Server installation media"
       isCorrect: false
