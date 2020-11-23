@@ -55,7 +55,7 @@ In an ASP.NET Core app, Azure App Configuration is registered as a configuration
 
 The *Feature Management* library provides standardized .NET APIs for managing feature flags within apps. It's distributed via NuGet in the form of two different packages named `Microsoft.FeatureManagement` and `Microsoft.FeatureManagement.AspNetCore`. The latter package provides Tag Helpers for use in an ASP.NET Core project's Razor files. The former package is sufficient when the Tag Helpers aren't needed or when not using with an ASP.NET Core project.
 
-The library is built atop `IConfiguration`. Therefore, the library is compatible with any .NET Core configuration provider, including the provider for Azure App Configuration. Because the library is decoupled from Azure App Configuration, integration of the two is made possible via the configuration provider. Combining this library with Azure App Configuration enables you to dynamically toggle features without implementing supporting infrastructure.
+The library is built atop `IConfiguration`. For this reason, it's compatible with any .NET Core configuration provider, including the provider for Azure App Configuration. Because the library is decoupled from Azure App Configuration, integration of the two is made possible via the configuration provider. Combining this library with Azure App Configuration enables you to dynamically toggle features without implementing supporting infrastructure.
 
 ### Integration with Azure App Configuration
 
@@ -85,12 +85,12 @@ The *WebSPA* app is an ASP.NET Core project that uses a JavaScript SPA framework
 
 The JavaScript on the client can't access .NET's `IConfiguration` interface. To solve that problem, an ASP.NET Core middleware component:
 
-* Enables the client to inquire about a feature's status via an HTTP request.
+* Enables the client to retrieve a feature's status via an HTTP request.
 * Communicates with the .NET Feature Management library to access feature flags via `IConfiguration`.
 
 ### Feature flag directive for the views
 
-You're provided with a custom Angular *attribute directive*&mdash;a component that changes the appearance of DOM elements. In this app, the directive considers a feature flag to toggle the visibility of the discount coupon DOM elements. The directive is implemented with the following files in the *src\Web\WebSPA\Client\src\modules\shared* directory:
+You're provided with a custom Angular *attribute directive*&mdash;a component that changes the appearance of DOM elements. This directive considers a feature flag to toggle the visibility of the discount coupon DOM elements. The directive is implemented with the following files in the *src\Web\WebSPA\Client\src\modules\shared* directory:
 
 * *directives\featureFlag.directive.ts*
 * *models\featureFlag.model.ts*
@@ -114,11 +114,11 @@ The feature flag directive is used in any `div` element to determine whether it 
 
 ### Feature Management middleware for querying values
 
-The custom middleware at *src\Web\WebSPA\Infrastructure\Middlewares\FeatureManagementMiddleware.cs* is a key component of the SPA's feature flag system. The middleware queries the specific feature flag values so they can be used in the SPA:
+You're provided with a custom middleware at *src\Web\WebSPA\Infrastructure\Middlewares\FeatureManagementMiddleware.cs*&mdash;a key component of the SPA's feature flag system. The middleware queries the specific feature flag values so they can be used in the SPA:
 
 :::code language="csharp" source="../code/src/web/webspa/infrastructure/middlewares/featuremanagementmiddleware.cs" id="snippet_Invoke" highlight="8":::
 
-ASP.NET Core's request processing pipeline uses a middleware as a handler for HTTP requests. Think of it like a "light" controller that processes the raw `HttpContext` and returns a value by writing directly to the `Response` object. For more in-depth information, see the [ASP.NET Core Middleware](/aspnet/core/fundamentals/middleware/) document.
+ASP.NET Core's request processing pipeline uses a middleware as a handler for HTTP requests. Think of it as a lightweight controller that processes the raw `HttpContext` and returns a value by writing directly to the `Response` object. For more in-depth information, see the [ASP.NET Core Middleware](/aspnet/core/fundamentals/middleware/) document.
 
 The Feature Management library is implemented to work on the server side. That's fine when using MVC or Razor Pages, but you need to use the configuration data in the SPA. So the directive mentioned in the previous section will query the `/features` endpoint, implemented as this middleware, to get the feature state. The middleware retrieves the configuration values from the feature manager that, in turn, gets them from the ASP.NET Core configuration infrastructure.
 
