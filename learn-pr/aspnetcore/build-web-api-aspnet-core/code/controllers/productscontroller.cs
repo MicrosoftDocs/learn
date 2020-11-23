@@ -31,7 +31,7 @@ namespace ContosoPets.Api.Controllers
         {
             var product = await _context.Products.FindAsync(id);
 
-            if (product == null)
+            if (product is null)
             {
                 return NotFound();
             }
@@ -73,7 +73,7 @@ namespace ContosoPets.Api.Controllers
         {
             var product = await _context.Products.FindAsync(id);
 
-            if (product == null)
+            if (product is null)
             {
                 return NotFound();
             }
