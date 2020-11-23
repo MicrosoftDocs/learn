@@ -12,6 +12,7 @@ In this module, you will:
 - Establish the goals of an open-source program
 - Create a repository for your open-source program, complete with contributing and communication guidelines, codes of conduct, templates, and maintainer guides
 - Abide by existing open-source licenses
+- Explore the community features on GitHub
 - Choose a license for releasing an open-source project
 
 ## Prerequisites
