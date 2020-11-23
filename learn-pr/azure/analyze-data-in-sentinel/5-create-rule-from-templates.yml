@@ -11,7 +11,7 @@ metadata:
 title: Create an analytics rule from templates
 durationInMinutes: 8
 content: |
-  [!include[] includes/5-create-rule-from-templates.md)]
+  [!include[](includes/5-create-rule-from-templates.md)]
 quiz:
   title: Check your knowledge
   questions:
