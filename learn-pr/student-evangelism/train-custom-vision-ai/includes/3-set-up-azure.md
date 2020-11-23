@@ -84,7 +84,7 @@ You can see there are a number of resources in the menu on the left that start t
 
 Everything that you do in the Custom Vision portal will be using the compute resources that you provisioned here in the Custom Vision resource in Azure. Custom Vision also has an SDK. Like the portal, the calls to the SDK would be using what was provisioned on Azure as part of this resource.
 
-If you get inspired by this module, we encourage you to check out the other [Microsoft Learn modules we have on Custom Vision](https://docs.microsoft.com/learn/browse/?azure-portal=true?expanded=azure&terms=custom%20vision).
+If you get inspired by this module, we encourage you to check out the other [Microsoft Learn modules on Custom Vision](https://docs.microsoft.com/learn/browse/?azure-portal=true?expanded=azure&terms=custom%20vision).
 
 ### Custom Vision portal
 
