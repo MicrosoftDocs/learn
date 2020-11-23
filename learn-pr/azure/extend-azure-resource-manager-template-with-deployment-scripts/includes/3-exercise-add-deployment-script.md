@@ -1,5 +1,5 @@
 > [!NOTE]
-> This exercise requires an Azure subscription. If you do not have an Azure subscription, you can get a [free Azure subscription]((https://azure.microsoft.com/free/?azure-portal=true)).
+> This exercise requires an Azure subscription. If you do not have an Azure subscription, you can get a [free Azure subscription](https://azure.microsoft.com/free/?azure-portal=true).
 
 As part of your team's application deployment process, you need to create a storage account and stage a file in blob storage for the application to read. Up to this point, you've been manually copying the file every time a new environment has been set up. You decide to use a deployment script to automate this step as part of your environment creation process.
 

@@ -6,10 +6,10 @@ metadata:
   description: Update an ARM template with a deployment script resource
   author: smurawski
   ms.author: stmuraws
-  ms.date: 10/29/2020
+  ms.date: 11/23/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
-durationInMinutes: 1
+durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-add-deployment-script.md)]
