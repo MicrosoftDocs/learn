@@ -4,7 +4,7 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 
 ## Run deployment script
 
-Run the following command in the command shell:
+Run the following command in the command shell. Be patient, as setup can take several minutes to complete. Continue reading while the script runs.
 
 ```bash
 . <(wget -q -O - https://aka.ms/microservices-configuration-aspnet-core-setup)
