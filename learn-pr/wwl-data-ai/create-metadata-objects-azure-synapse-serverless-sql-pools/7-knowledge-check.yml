@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Which metadata object do you create that contains a query that reads data from a data lake?"
+    choices:
+    - content: "VIEW."
+      isCorrect: true
+      explanation: "Correct. A VIEW is a metadata object that contains a query that reads data from a data lake."
+    - content: "EXTERNAL TABLE."
+      isCorrect: false
+      explanation: "Incorrect. An EXTERNAL TABLE creates the table object without selecting data into it."
+    - content: "CREDENTIAL."
+      isCorrect: false
+      explanation: "Incorrect. A CREDENTIAL is an object that contains a user, managed identity or shared access signature to access a data source."
+  - content: "Which metadata object provides the connection information to the files in a data lake store?"
+    choices:
+    - content: "DATABASE."
+      isCorrect: false
+      explanation: "Incorrect. A DATABASE is an object held within a serverless SQL pool to hold data and metadata objects."
+    - content: "DATA SOURCE."
+      isCorrect: true
+      explanation: "Correct. a DATA SOURCE provides the connection information to the files in a data lake store."
+    - content: "EXTERNAL TABLE."
+      isCorrect: false
+      explanation: "Incorrect. An EXTERNAL TABLE creates the table object without selecting data into it."
+  - content: "Which CREDENTIAL identity type can be time limited?"
+    choices:
+    - content: "Azure Active Directory user."
+      isCorrect: false
+      explanation: "Incorrect. An Azure Active Directory user cannot be set to a time limit."
+    - content: "Managed identity."
+      isCorrect: false
+      explanation: "Incorrect. A Managed identity cannot be set to a time limit."
+    - content: "Shared access signature."
+      isCorrect: true
+      explanation: "Correct. A Shared access signature can be set to a time limit."

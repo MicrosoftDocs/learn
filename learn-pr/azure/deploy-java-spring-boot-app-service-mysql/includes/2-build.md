@@ -2,34 +2,34 @@ In this unit, you'll learn how to create a Spring application, connect it to a M
 
 ## Introduction to Azure App Service
 
-Azure App Service allows you to host your company's websites, web applications, REST APIs, and other application code on Azure.  Running your web application in Azure App Service provides you with all the benefits of running on Azure: your application is available, scales and has security and compliance built-in.
-You're looking at creating a Spring Boot application that hosts its logic in Azure App Service and its Database in an Azure MySQL Database.
+Azure App Service allows you to host your company's websites, web applications, REST APIs, and other application code on Azure.  Running your web application in Azure App Service provides you with all the benefits of running on Azure: your application is available, it scales, and it has built-in security and compliance.
+
+You want to create a Spring Boot application that hosts its logic in Azure App Service and hosts its database in an Azure MySQL database.
 
 ## Develop your Spring app
 
-Spring is the perfect framework to host and manage our applications. All we have to do is wire certain Spring components without managing the underlying server runtime.
-You've decided to use Spring Boot, which is self-hosted and provides support services to run your application.
+Spring is a great framework to host and manage your applications. You just wire certain Spring components without needing to manage the underlying server runtime.
 
-The Spring injection annotations use Dependency injection to process the Components.
-You can also use Azure Spring Starter integration libraries to configure and set up connections to Azure services.
+You've decided to use Spring Boot. This framework is self-hosted, and it provides support services to run your application.
 
-## Create your resources using the Azure CLI and Maven
+The Spring injection annotations use dependency injection to process the components.
+You can use Azure Spring Starter integration libraries to configure and set up connections to Azure services.
 
-### Azure CLI
+## Create your resources by using the Azure CLI and Maven
 
-Azure Command Line Interface (CLI) is a tool used to create and manage Azure resources.
-It runs on Linux, macOS, and Windows and allows administrators and developers to execute their commands through a terminal or command-line prompt (or script!) instead of a web browser. For example, to get the details of a subscription, you would use the following command:
+You can use the Azure CLI to create and manage Azure resources.
+It runs on Linux, macOS, and Windows. The CLI allows administrators and developers to run commands by using a terminal or command-line prompt (or script) instead of a web browser. 
+
+For example, to get the details of a subscription, you can use the following command:
 
 ```bash
 az account show
 ```
 
-In this module, you use the Azure CLI to spin up the Azure App Service and Azure Database for MySQL instance. You can access the Azure CLI from a terminal or through Visual Studio Code. You can also access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
+In this module, you use the Azure CLI to spin up the Azure App Service and Azure Database for MySQL instance. Access the Azure CLI from a terminal or through Visual Studio Code. Or you can access it from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
-### Maven
-
-We'll use the Maven package manager to structure our project and pull in dependencies. Maven also provides the tooling necessary to configure and deploy our project to the Azure App Service with the Azure WebApp Plugin.
+You'll use the Maven package manager to structure your project and pull in dependencies. Maven also provides the tools you need to configure and deploy your project to Azure App Service by using the Azure Web Apps plug-in.
 
 ### Azure Database for MySQL
 
-Whether you're building new applications that target MySQL or migrating legacy applications, Azure Database for MySQL provides the enterprise-ready solution needed for modern applications. To learn more, see [Azure Database for MySQL](https://azure.microsoft.com/services/mysql/?azure-portal=true&WT.mc_id=java-10785-ropreddy).
+Whether you're building new applications that target MySQL or you're migrating legacy applications, Azure Database for MySQL provides the enterprise-ready solution that modern applications need. For more information, see [Azure Database for MySQL](https://azure.microsoft.com/services/mysql/?azure-portal=true&WT.mc_id=java-10785-ropreddy).

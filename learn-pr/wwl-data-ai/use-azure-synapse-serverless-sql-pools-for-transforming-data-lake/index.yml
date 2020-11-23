@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake
+metadata:
+  title: Use Azure Synapse serverless SQL pools for transforming the data in the lake
+  description: "Use Azure Synapse serverless SQL pools for transforming the data in the lake"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use Azure Synapse serverless SQL pools for transforming the data in the lake
+summary: Learn how to use  CREATE EXTERNAL TABLE AS SELECT statements to transform data and encapsulate the transformation logic in stored procedures.
+abstract: |
+  After the completion of this module, you will be able to:
+  - Transform data with Azure Synapse serverless SQL pools using CREATE EXTERNAL TABLE AS SELECT statement
+  - Operationalize data transformation with Azure Synapse serverless SQL pools using stored procedures
+  - Use Azure Synapse serverless SQL pool stored procedures from Synapse Pipelines
+prerequisites: |
+  It is recommended that students have completed Data Fundamentals before starting this learning path.
+iconUrl: /learn/achievements/use-azure-synapse-serverless-sql-pools-for-transforming-the-data-in-the-lake.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.introduction
+- learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.transform-data-with-using-create-external-table-as-select-statement
+- learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.operationalize-data-transformation-with-using-stored-procedures
+- learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.pool-stored-procedures-from-synapse-pipelines
+- learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.knowledge-check
+- learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.summary
+badge:
+  uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.badge
