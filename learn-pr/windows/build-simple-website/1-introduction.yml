@@ -12,4 +12,4 @@ metadata:
   
 durationInMinutes: 10
 content: |
-    [!include[](includes/1-installation-and-setup.md)]
+    [!include[](includes/1-introduction.md)]

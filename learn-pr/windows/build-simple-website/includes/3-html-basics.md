@@ -1,24 +1,41 @@
 At the moment we have an empty HTML file. Let's add some code! The goal is to use hypertext markup language (HTML) to describe the web page the browser should display. Wouldn't it be nice to have a starting template? Editors can conveniently fill in some of the typical boilerplate or HTML structure for you.
 
-## TBD
+### Creating files
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Task Timeline</title>
-    <link rel="stylesheet" href="main.css">
-  </head>
-  <body>
-    <h1>Task Timeline</h1>
-    <ul>
-      <li class="list">Add visual styles</li>
-      <li class="list">Add light and dark themes</li>
-      <li>Enable switching the theme</li>
-    </ul>
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
-  </body>
-</html>
+Let's fix our somewhat empty *public* directory by creating a few new files. At first glance, the `touch` command updates directory or file dates. However, `touch` has dual functionality and creates a file if it doesn't exist. Try out the command `touch index.html main.css app.js` to generate project files and `ls` to see the result. Powerful, the command line is.
+
+In Visual Studio Code, you can also create files with the command `code index.html main.css app.js`. These files are immediately opened in the editor, saving you a step, but also requires you to save each file.
+
+Remember, now that you're a command line superhero, "With great power comes great responsibility!"
+
+> [!WARNING]
+> Entering a few characters in the wrong way can delete your entire computer, so please check your commands and type carefully. For example, see `man rm` for more details.
+
+Now, these are empty files, so it's not uncommon to immediately want to open everything up in a source code editor and get to work.
+
+Assuming that you're using Visual Studio Code, type `code .` in the command line to open the directory in that application. A period indicates the current directory. To illustrate this for Windows try `start .` or for macOS `open .`. These commands open a new window in the file system with your current directory.
+
+We could build a website all in one text file or HTML file. Here we're using an HTML file for content and page structure. A CSS file is for presentation and styling. The  file is for behaviors and interactivity.
+
+Setting up three files helps us stay organized. It's an example of *progressive enhancement*. If JavaScript isn't enabled or supported, the CSS and HTML will still work. However, if CSS doesn't work, at least the HTML content will be displayed.
+
+## Open with Visual Studio Code
+
+When you open Visual Studio Code, the **Welcome** page opens. Notice you can create a new file or open a folder. You can also accomplish this by going to **File > New File**.
+
+![Screenshot of Visual Studio Code welcome window](../media/vs-code-welcome.png)
+
+Select **Open folder** in the Start section, or go to **File > Open** and select the **public** folder we previously created on the Desktop.
+
+If not visible, you can display the **Welcome** window by navigating to **Help > Welcome**. Alternately, select **View > Command Palette** or the keyboard shortcut Shift+Command+P. Then in the search field enter **>Help: Welcome**.
+
+![Screenshot of Visual Studio Code open folder](../media/vs-code-open-folder.png)
+
+When opening a folder, the operating system provides a button to create a **New Folder**. We don't need a new folder at the moment, so select the **Open** button to view files in Visual Studio Code.
+
+Notice on the left-hand side of the window, in the activity bar, there is now a badge over the Git icon indicating three new changes. We'll return to this topic in the *Tracking changes* unit.
+
+![Screenshot of Visual Studio Code Git badge](../media/vs-code-git-badge-new-files.png)
 
 ## Using autocomplete
 
@@ -28,17 +45,25 @@ In **Visual Studio Code**, open `index.html` by selecting the `index.html` file.
 
 ![Screenshot of Visual Studio Code HTML5 Emmet entry](../media/vs-code-html-emmet.png)
 
-Edit your code so that it resembles the following, then save the file with Control+S (Windows) or Command+S (macOS).
+To save time, copy the following code and paste it into your HTML file, then save the file with Control+S (Windows) or Command+S (macOS).
 
 ```html
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Task Timeline</title>
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
-
+    <h1>Task Timeline</h1>
+    <p id="msg">Current tasks:</p>
+    <ul>
+      <li class="list">Add visual styles</li>
+      <li class="list">Add light and dark themes</li>
+      <li>Enable switching the theme</li>
+    </ul>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
   </body>
 </html>
 ```
@@ -54,7 +79,7 @@ The `meta` tag indicates *metadata* information that won't typically be visible 
 
 The *character set* (charset) UTF-8 may seem insignificant but is crucial for establishing how computers interpret characters. If missing, charset can lead to compromised security. There's quite a bit of history and technical information behind charset. The bigger picture here is that boilerplate provides some sensible defaults.
 
-## Edit the head
+## delete - Edit the head
 
 The *title* of a webpage appears at the top of a browser window and is significant in a few ways. First, the title is utilized by and displayed in search engines. Second, when a visitor bookmarks the page, the title becomes the default name for the bookmark. Third, the title helps visitors navigate by seeing what page they are viewing. Let's add a title.
 
@@ -83,7 +108,7 @@ In **Visual Studio Code**, type `link` and hit the Enter (Return) key. Update th
 ...
 ```
 
-## Edit the body
+## delete - Edit the body
 
 Let's start filling in the *body* element now. Add a *heading* `<h1>`, *paragraph* `<p>`, and create a *list item* `<li>`. Update your code so it looks like the following.
 
@@ -106,56 +131,7 @@ There's no text between the open and closing `<p>` tags so nothing will appear o
 
 Each list item `<li>` element is grouped into an unordered list `<ul>`.
 
-## delete - Link to JavaScript
-
-Like CSS, we could add JavaScript directly to the HTML page, but it's better not to. For example, you could create a popup alert, by adding `<script>alert('Hello World')</script>` anywhere in the body. The script tag `<script>` will let us link to an external JavaScript file.
-
-In **Visual Studio Code**, type `script:src` and press Enter (Return).
-
-![Screenshot of Visual Studio Code script:src Emmet entry](../media/vs-code-script-src-emmet.png)
-
-Adjust your code to look like the following.
-
-```html
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Task Timeline</title>
-    <link rel="stylesheet" href="main.css">
-  </head>
-  <body>
-    <h1>Task Timeline</h1>
-    <p id="date"></p>
-    <ul>
-      <li class="list">Edit the head</li>
-      <li class="list">Edit the body</li>
-      <li>Link to JavaScript</li>
-    </ul>
-    <script src="app.js"></script>
-  </body>
-</html>
-```
-
-The script element could be placed in the `<head>` or elsewhere in the `<body>`. However, putting `<script>` at the end of the `<body>` section allows all the page content to display on the screen first, then load the script.
-
-## No script
-
-The `<noscript>` element can be used to show a message if JavaScript is deactivated.
-
-```html
-...
-    <script src="app.js"></script>
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
-  </body>
-</html>
-```
-
-Using the `<noscript>` element is an example of *fault tolerance* or *graceful degradation*. We can detect and plan for when a feature isn't supported or available.
-
-Remember to save your changes with the keyboard shortcut Control+S (Windows) or Command+S (macOS).
-
-## Open in browser
+## delete - Open in browser
 
 You can preview your webpage locally by opening the HTML file in a browser. Instead of a website address that begins with `https://`, your browser points to the local file path. For example, the path might look similar to the following: *file:///Users/username/Desktop/public/index.html*.
 
@@ -187,7 +163,7 @@ Reload the page to see the `<noscript>` message.
 
 After seeing the `<noscript>` message, re-enable JavaScript, and reload the page.
 
-## Developer tools
+## delete - Developer tools
 
 You can inspect a webpage by using the developer tools in your browser. Let's give this a try.
 

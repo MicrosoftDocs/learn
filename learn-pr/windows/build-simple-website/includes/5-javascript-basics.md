@@ -86,7 +86,7 @@ In your CSS file, add a selector for the button. To make the button label black,
 }
 ```
 
-## Add an event handler for the button
+## Add an event handler
 
 To make the button do something when you press it, you need an event handler in your JavaScript file. For a button, you need an event handler for the `click` event.
 

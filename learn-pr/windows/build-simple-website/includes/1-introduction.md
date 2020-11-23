@@ -20,19 +20,35 @@ Visual Studio Code is a code editor that works across different operating system
 
 Our next step is to [download Visual Studio Code](https://code.visualstudio.com/Download) and install.
 
-You can read the [manual for Visual Studio Code](https://code.visualstudio.com/docs) if you have questions or would like more detail. Visual Studio Code uses the Electron software framework, which relies on the V8 JavaScript engine.
+Visual Studio Code uses the Electron software framework, which relies on the V8 JavaScript engine.
 
 If you're having trouble with installing Visual Studio Code, look through the [setup guide](https://code.visualstudio.com/docs/setup/setup-overview) for Windows, macOS, or Linux.
 
-### Additional tools
+### Install extensions or packages
 
-In addition to an editor, we'll need a browser to look at our website. The code we'll be writing in this module is generally well supported by older browsers, but it's a best practice to have the most up-to-date browser. Some HTML, CSS, and JavaScript features require newer browsers to work.
+You can extend the functionality of Visual Studio Code using the [extensions marketplace](https://code.visualstudio.com/docs/editor/extension-gallery). Keep in mind these are community developed resources. There are often a few solutions for the same type of feature. You can install extensions individually in your editor, or several at once with the command line. See the [Visual Studio Code manual](https://code.visualstudio.com/docs/editor/extension-gallery) for more details about customization.
 
-If you're using Windows 10, [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) is the default browser. If you're on macOS, [Safari](https://www.apple.com/safari/) is the default browser.
+For web development, the extensions and packages below will get you started.
 
-Alternately, you can [install Chrome](https://www.google.com/chrome/). Read the Chrome [installation instructions](https://support.google.com/chrome/answer/95346) if you need help. If you want your IDE to open Chrome for testing, set Chrome to be your default browser. Like Visual Studio Code, the Chrome browser also uses the V8 JavaScript engine.
+All we need right now is **open-in-browser**. To install a Visual Studio Code extension from the command line, use the following format.
 
-### Version control
+```bash
+code --install-extension techer.open-in-browser
+```
+
+You can take a peek at all the extensions you installed with the following command.
+
+```bash
+code --list-extensions
+```
+
+For more information about how to uninstall a an extension, visit the [Visual Studio Code user guide](https://code.visualstudio.com/docs/editor/extension-gallery).
+
+Way to go! Installation and setup can be hard work. Thankfully, we only need to install and setup once. Now we're ready to create a website.
+
+
+
+### delete - Version control
 
 A *version control system* tracks changes so you can recall or recover your work. [Git](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) is a distributed version control system that also helps you collaborate with other developers. Some projects become so large or complex over time, and it's hard to imagine not having a system like Git to help you resolve issues and track changes.
 
@@ -55,7 +71,7 @@ For macOS, you can find the CLI using one of the following methods.
 - Or in **Finder**, navigate to **Applications > Utilities > Terminal**
 - Or use the shortcut Command+Shift+U and select **Terminal** to open.
 
-### Install Git
+### delete - Install Git
 
 Before installing anything, you might want to check if you already have Git. In your command line interface, type `git --version` and then hit the enter (return) key.
 
@@ -78,9 +94,9 @@ brew install git
 
 Type `git --version` again to see that Git installed.
 
-## Customize and configure
+## delete - Customize and configure
 
-### Setup your Git identity
+### delete - Setup your Git identity
 
 Before committing changes to a project, it's a good idea to associate your information with Git, so you are set up for *distributed development*. The [first-time Git setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) guide walks you through the process.
 
@@ -102,7 +118,7 @@ git config --global --edit
 
 If you do enter the command, a built-in text editor called Vim will show the result. To exit Vim, press Control+C, then enter the characters `:qa!` and press Enter (return). We can avoid these type of commands and edit more easily by using Visual Studio Code.
 
-### Configure Git for your editor
+### delete - Configure Git for your editor
 
 After creating a Git identity to tag your projects with, it's useful to associate your source code editor with Git. As a result, you can use your editor to open and edit files with Git. Also, you'll gain syntax highlighting for Git changes and conflict resolution when merging with other peoples' work. Otherwise, Git editing would take place in the default CLI text editor, which can be inhospitable.
 
@@ -139,25 +155,3 @@ To compare the differences between files, copy and paste this code into the Visu
 For macOS, save your changes in **Visual Studio Code** by going to the **File** menu and selecting **Save**. Or use the keyboard shortcut Command+S.
 
 ![Screenshot of customizing Git configuration differences](../media/git-config-diff.png)
-
-### Install extensions or packages
-
-You can extend the functionality of Visual Studio Code using the [extensions marketplace](https://code.visualstudio.com/docs/editor/extension-gallery). Keep in mind these are community developed resources. There are often a few solutions for the same type of feature. You can install extensions individually in your editor, or several at once with the command line. See the [Visual Studio Code manual](https://code.visualstudio.com/docs/editor/extension-gallery) for more details about customization.
-
-For web development, the extensions and packages below will get you started.
-
-All we need right now is **open-in-browser**. To install a Visual Studio Code extension from the command line, use the following format.
-
-```bash
-code --install-extension techer.open-in-browser
-```
-
-You can take a peek at all the extensions you installed with the following command.
-
-```bash
-code --list-extensions
-```
-
-For more information about how to uninstall a an extension, visit the [Visual Studio Code user guide](https://code.visualstudio.com/docs/editor/extension-gallery).
-
-Way to go! Installation and setup can be hard work. Thankfully, we only need to install and setup once. Now we're ready to create a website.

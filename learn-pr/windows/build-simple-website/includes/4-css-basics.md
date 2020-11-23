@@ -133,7 +133,7 @@ body {
 
 ## View applied CSS
 
-**IMPORTANT Move to previous section, since we are not viewing in the browser.**
+**IMPORTANT Move this to previous section, since we are not viewing in the browser.**
 
 In **Edge**, the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, view **Settings and more** with Alt+X and select **Developer Tools**.
 
