@@ -34,7 +34,7 @@ quiz:
         - content: Run `Get-Process | Where-Object Name -eq name-of-process | Select-Object name-of-process`
           explanation: The filtering happens early, i.e _left_, but it would be even faster if the built-in filter was used.
           isCorrect: false
-        - content: Run `Get-Process | -Name name-of-process | Select-Object Name`.
+        - content: Run `Get-Process -Name name-of-process | Select-Object Name`.
           isCorrect: true
           explanation: This is the best solution, early filtering with a built-in filter.
     - content: How would you easiest find the returned type from a command?
