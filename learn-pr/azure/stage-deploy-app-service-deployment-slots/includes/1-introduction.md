@@ -16,3 +16,4 @@ In this module, you will:
 ## Prerequisites
 
 - Basic experience deploying apps to App Service
+- You must have your own Azure Subscription to complete this module
