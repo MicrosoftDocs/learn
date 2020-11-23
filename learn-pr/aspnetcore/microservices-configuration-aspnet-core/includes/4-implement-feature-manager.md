@@ -121,7 +121,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
         }
         ```
 
-        `MapFeatureManagement` is a custom extension method that's provided for you in *src/Web/WebSPA/Extensions/EndpointRouteBuilderExtensions.cs*. It defines an endpoint at `/features` that responds to HTTP GET requests from the Angular client code. Those requests are delegated to a custom middleware class named `FeatureManagementMiddleware`.
+        `MapFeatureManagement` is a custom extension method that's provided for you in *src/Web/WebSPA/Extensions/EndpointRouteBuilderExtensions.cs*. It defines an endpoint at `/features` that responds to HTTP GET requests from the client-side code. Those requests are delegated to a custom middleware class named `FeatureManagementMiddleware`.
 
         :::code language="csharp" source="../code/src/web/webspa/extensions/endpointroutebuilderextensions.cs" id="snippet_MapFeatureManagement":::
 
@@ -142,7 +142,7 @@ The preceding script uses the Linux `sed` command to modify two Angular views. T
 
 ## Use the feature flag in a Razor view
 
-The **See Available Coupons** link navigates to a route that renders an MVC Razor view. The view displays a list of coupon codes that haven't yet been consumed.
+The **See Available Coupons** link navigates to a route that renders an ASP.NET Core MVC Razor view. The view displays a list of coupon codes that haven't yet been consumed.
 
 Apply the following changes to the file *src/Web/WebSPA/Views/CouponStatus/Index.cshtml*:
 
