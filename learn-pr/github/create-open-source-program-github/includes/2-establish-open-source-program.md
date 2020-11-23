@@ -62,7 +62,7 @@ Employees may not have experience working with the open-source community. To hel
 
 - A **setup checklist** that includes all of the work items a team needs to complete before and after the launch of an open-sourced project. This list should include acquiring approval to open-source the project, code reviews to ensure sensitive data is removed before the project goes live, a trademark or [open-source project search](https://opensource.google/projects/search) to ensure there isn't a naming conflict, and so on.
 
-- A **contact list** for key people in your organization that may need to be contacted in a hurry if something goes sideways. This list should include people from software security, site security, legal, public relations, and so on.
+- A **contact list** for key people in your organization that may need to be contacted in case direct support from the maintainers is required. This list should include people from software security, site security, legal, public relations, and so on.
 
 - A link to a **starter repository** that can be cloned as a starting point. It should contain a sample README, license, code of conduct, contributing guide, and any other supporting files every open-source project from your company needs to have. It shouldn't contain anything you wouldn't want accidentally pushed to a public audience.
 
