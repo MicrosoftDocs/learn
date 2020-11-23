@@ -6,16 +6,16 @@ This module introduces a simplified way to examine data. Without using a lot of 
 
 ## Write the prediction function
 
-Let's review our four datasets. 
+Let's review our four datasets: 
 
 ```python
 meteor_showers.info()
 ```
 
-> [!Note]
+> [!NOTE]
 > The output is cut down to show only the columns.
 
-```output
+```Output
  #   Column               Non-Null Count  Dtype         
 ---  ------               --------------  -----         
  0   name                 5 non-null      object        
@@ -30,7 +30,7 @@ meteor_showers.info()
 moon_phases.info()
 ```
 
-```output
+```Output
  #   Column      Non-Null Count  Dtype         
 ---  ------      --------------  -----         
  0   date        366 non-null    datetime64[ns]
@@ -41,7 +41,7 @@ moon_phases.info()
 cities.info()
 ```
 
-```output
+```Output
  #   Column    Non-Null Count  Dtype  
 ---  ------    --------------  -----  
  0   city      256 non-null    object 
@@ -53,7 +53,7 @@ cities.info()
 constellations.info()
 ```
 
-```output
+```Output
  #   Column         Non-Null Count  Dtype 
 ---  ------         --------------  ----- 
  0   constellation  5 non-null      object
@@ -84,22 +84,25 @@ Here, we get into some tricky Python work. If you find it complicated, don't wor
 
 ```python
 def predict_best_meteor_shower_viewing(city):
-    # Get the latitude of the city from the cities data frame
+    # Get the latitude of the city from the cities DataFrame
     latitude = cities.loc[cities['city'] == city, 'latitude'].iloc[0]
 ```
 
 Let's break down this code.
 
-### `cities['city'] == city`  
+### `cities['city'] == city`
+
 The `cities['city'] == city` line of code creates a list of true and false values. `True` will be on the row where the city is equal to the city that's passed in as a parameter. 
 
 Consider this example:
+
 ```python
 print(cities['city'] == 'Abu Dhabi')
 ```
 
 This code gets the following output:
-```output
+
+```Output
 0       True
 1      False
 2      False
@@ -116,9 +119,10 @@ Name: city, Length: 256, dtype: bool
 
 ### `cities.loc[cities['city'] == city]`
 
-The `cities.loc[cities['city'] == city]` line of code returns the rows where the preceding true or false value is `True`. In this case, only one row is returned because our cities data frame has one row for each city. 
+The `cities.loc[cities['city'] == city]` line of code returns the rows where the preceding true or false value is `True`. In this case, only one row is returned because our cities DataFrame has one row for each city. 
 
 For example, you could write the following code:
+
 ```python
 print(cities.loc[cities['city'] == 'Abu Dhabi'])
 ```
@@ -140,21 +144,23 @@ print(cities.loc[cities['city'] == 'Abu Dhabi', 'latitude'])
 ```
 
 Here's the output:
-```output
+
+```Output
 0    24.47
 Name: latitude, dtype: float64
 ```
 
 ### `latitude = cities.loc[cities['city'] == city, 'latitude'].iloc[0]`
 
-Finally, the entire line of code returns the specific value of that column at row 0. 
+Finally, the entire line of code returns the specific value of that column at row 0:
+
 ```python
 print(cities.loc[cities['city'] == 'Abu Dhabi', 'latitude'].iloc[0])
 ```
 
 In this case, the returned value is 24.47:
 
-```output
+```Output
 24.47
 ```
 
@@ -164,7 +170,7 @@ Now that you have a value, test your function to make sure it's working as you e
 
 ```python
 def predict_best_meteor_shower_viewing(city):
-    # Get the latitude of the city from the cities dataframe
+    # Get the latitude of the city from the cities DataFrame
     latitude = cities.loc[cities['city'] == city, 'latitude'].iloc[0]
 
     return latitude
@@ -174,6 +180,6 @@ def predict_best_meteor_shower_viewing(city):
 print(predict_best_meteor_shower_viewing('Abu Dhabi'))
 ```
 
-```output
+```Output
 24.47
 ```

@@ -10,17 +10,20 @@ We know that Fei Fei travels to Lunaria after the Moon Festival. Though we don't
 
 The 2020 Chinese Moon Festival was on October 1. Because the rest of the dates that we use in this module are from 2020, let's use that date. 
 
-We need data for each of the data frames that we reference. So let's start with the meteor shower in the film. For Chang'e's meteor shower, let's choose the Draco constellation because it's where the Draconids meteor shower is likely to radiate from in early October. We'll use that meteor shower as inspiration for our fictional one:
+We need data for each of the DataFrames that we reference. So let's start with the meteor shower in the film. For Chang'e's meteor shower, let's choose the Draco constellation because it's where the Draconids meteor shower is likely to radiate from in early October. We'll use that meteor shower as inspiration for our fictional one:
+
 ```python
 change_meteor_shower = {'name':'Chang\'e','radiant':'Draco','bestmonth':'october','startmonth':'october','startday':1,'endmonth':'october','endday':31,'hemisphere':'northern','preferredhemisphere':'northern'}
 ```
 
 Next, create an entry for the Draco constellation:
+
 ```python
 draco_constellation = {'constellation':'Draco','bestmonth':'july','latitudestart':90,'latitudeend':-15,'besttime':2100,'hemisphere':'northern'}
 ```
 
-Now add these two entries to the data frames. Go to the top of your Python notebook file and add two cells after the second cell. Use the following code:
+Now add these two entries to the DataFrames. Go to the top of your Python notebook file and add two cells after the second cell. Use the following code:
+
 ```python
 change_meteor_shower = {'name':'Chang\'e','radiant':'Draco','bestmonth':'october','startmonth':'october','startday':1,'endmonth':'october','endday':31,'hemisphere':'northern','preferredhemisphere':'northern'}
 
@@ -39,7 +42,7 @@ Your code should look like this:
 
 Now rerun all of the code in your notebook:
 
-1. Select the **Clear all output** button. (It's a stack of rectangles and a letter *x*.)
+1. Select the **Clear all output** button. (It's a stack of rectangles and the letter *x*.)
 1. Select the **Restart iPython kernel** button. (It's a circle arrow.) 
 1. Select the **Run all cells** button. (It's a double right-arrow.)
 
@@ -51,7 +54,7 @@ print(predict_best_meteor_shower_viewing('Beijing'))
 
 Now you should see output that includes the Chang'e meteor shower!
 
-```output
+```Output
 In Beijing you can see the following meteor showers:
 Lyrids is best seen if you look towards the Lyra constellation on April 22, 2020.
 Eta Aquarids is best seen if you look towards the Aquarius constellation on April 22, 2020.
@@ -77,7 +80,7 @@ Let's make one last change to our predictive algorithm to align with the film. F
             meteor_shower_string += meteor_shower + " is best seen if you look towards the " + constellation + " constellation on " +  best_moon_date.to_pydatetime().strftime("%B %d, %Y") + ".\n"
 ```
 
-```output
+```Output
 In Beijing you can see the following meteor showers:
 Lyrids is best seen if you look towards the Lyra constellation on April 22, 2020.
 Eta Aquarids is best seen if you look towards the Aquarius constellation on April 22, 2020.
