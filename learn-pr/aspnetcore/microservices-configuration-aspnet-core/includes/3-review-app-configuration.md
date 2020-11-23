@@ -83,7 +83,7 @@ To make a feature configurable, you have to make several changes to the *:::no-l
 
 The *:::no-loc text="WebSPA":::* app contains both server-side and client-side code. Server-side processing is supported by a C#-based ASP.NET Core project. Client-side processing is supported by TypeScript and Angular&mdash;a JavaScript Single-Page Application (SPA) framework from Google. Knowledge of Angular isn't required. It's more important to understand the *:::no-loc text="WebSPA":::* application architecture.
 
-:::image type="content" source="../media/3-review-app-configuration/client-to-server-integration.png" alt-text="A diagram showing how Angular communicates with ASP.NET Core" border="true" lightbox="../media/3-review-app-configuration/client-to-server-integration.png":::
+:::image type="content" source="../media/3-review-app-configuration/client-to-server-integration.png" alt-text="Diagram showing how Angular communicates with ASP.NET Core." border="true" lightbox="../media/3-review-app-configuration/client-to-server-integration.png":::
 
 ### Feature flag directive for the Angular views
 

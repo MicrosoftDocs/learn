@@ -46,7 +46,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
-    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../../media/microservices/eshop-spa.png":::
+    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="Screenshot of the WebSPA application's products catalog page." border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
 1. Navigate to the checkout page as follows:
     1. Select the **:::no-loc text="LOGIN":::** link in the upper right to sign into the app. Sign in using the credentials provided on the page.
@@ -54,12 +54,12 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
 
-1. Scroll to the bottom of the checkout page. Notice the presence of a discount coupon feature comprised of the following elements:
+1. Scroll to the bottom of the checkout page. Notice the presence of a discount coupon feature comprised of the following UI elements:
     * **:::no-loc text="See Available Coupons":::** link
     * **:::no-loc text="Coupon number":::** text box
     * **:::no-loc text="APPLY":::** button
 
-    :::image type="content" source="../../microservices-configuration-aspnet-core/media/4-implement-feature-manager/discount-coupon-elements.png" alt-text="Discount coupon elements":::
+    :::image type="content" source="../../microservices-configuration-aspnet-core/media/4-implement-feature-manager/discount-coupon-elements.png" alt-text="Screenshot of the UI elements that make up the discount coupon feature.":::
 
 You've successfully verified the app was deployed to AKS. Additionally, you've seen the discount coupon feature that you're going to make configurable.
 
@@ -210,7 +210,7 @@ The preceding markup applies conditional logic against the feature flag by using
 1. After a few seconds, test the configuration change as follows:
     1. In the browser tab containing the *WebSPA* app, refresh the page. Log out and back in, if needed.
 
-        :::image type="content" source="../media/4-implement-feature-manager/webspa-log-out.png" alt-text="The Log Out option in WebSPA":::
+        :::image type="content" source="../media/4-implement-feature-manager/webspa-log-out.png" alt-text="Screenshot of the Log Out option from a menu in the WebSPA app.":::
 
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
@@ -219,7 +219,7 @@ The preceding markup applies conditional logic against the feature flag by using
 1. Verify the middleware is functioning as intended as follows:
     1. In another browser tab, navigate to `<your app's IP address>/features?featureName=coupons`:
 
-        :::image type="content" source="../media/4-implement-feature-manager/feature-middleware-response.png" alt-text="The JSON response from the middleware" border="true" lightbox="../media/4-implement-feature-manager/feature-middleware-response.png":::
+        :::image type="content" source="../media/4-implement-feature-manager/feature-middleware-response.png" alt-text="Screenshot of the JSON response from the custom middleware." border="true" lightbox="../media/4-implement-feature-manager/feature-middleware-response.png":::
 
     1. Notice the JSON data indicates the *coupons* feature is enabled.
 
