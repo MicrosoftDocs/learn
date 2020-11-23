@@ -11,7 +11,7 @@ metadata:
 title: Explore Azure Sentinel threat hunting query management and creation
 durationInMinutes: 10
 content: |
-  [!include[]includes/3-query-management-creation.md)]
+  [!include[](includes/3-query-management-creation.md)]
 quiz:
   title: Check your knowledge
   questions:
