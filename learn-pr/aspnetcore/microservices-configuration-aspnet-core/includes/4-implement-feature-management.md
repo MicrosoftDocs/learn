@@ -7,8 +7,8 @@ In this unit, you will:
 * Confirm the app's deployment to AKS.
 * Set up feature management support with a .NET library.
 * Make the discount coupon feature configurable.
-* Deploy the SPA to your AKS cluster.
-* Disable the *coupons* feature.
+* Deploy the *:::no-loc text="WebSPA":::* app to your AKS cluster.
+* Disable the discount coupon feature.
 
 > [!NOTE]
 > If your Cloud Shell session disconnects due to inactivity, reconnect and run the following command to return to this directory and open the Cloud Shell editor:
@@ -176,7 +176,7 @@ The preceding markup applies conditional logic against the feature flag by using
 * Disabled, a **:::no-loc text="You're not subscribed to this feature.":::** message displays.
 * Enabled, a list of coupon codes that haven't been redeemed displays.
 
-## Deploy the SPA to your AKS cluster
+## Deploy the updated app to AKS
 
 1. To deploy the updated *:::no-loc text="WebSPA":::* app, build and publish a new image to ACR with the following script:
 
@@ -208,7 +208,7 @@ The preceding markup applies conditional logic against the feature flag by using
     ```
 
 1. After a few seconds, test the configuration change as follows:
-    1. In the browser tab containing the *WebSPA* app, refresh the page. Sign out and back in, if needed.
+    1. In the browser tab containing the *:::no-loc text="WebSPA":::* app, refresh the page. Sign out and back in, if needed.
 
         :::image type="content" source="../media/4-implement-feature-manager/webspa-log-out.png" alt-text="Screenshot of the sign out option from a menu in the WebSPA app." border="true" lightbox="../media/4-implement-feature-manager/webspa-log-out.png":::
 
@@ -221,11 +221,11 @@ The preceding markup applies conditional logic against the feature flag by using
 
         :::image type="content" source="../media/4-implement-feature-manager/feature-middleware-response.png" alt-text="Screenshot of the JSON response from the custom middleware." border="true" lightbox="../media/4-implement-feature-manager/feature-middleware-response.png":::
 
-    1. Notice the JSON data indicates the *coupons* feature is enabled.
+    1. Notice the JSON data indicates the discount coupon feature is enabled.
 
-## Disable the *coupons* feature
+## Disable the discount coupon feature
 
-Complete the following steps to disable the *coupons* feature:
+Complete the following steps to disable the discount coupon feature:
 
 1. In the *:::no-loc text="deploy\/k8s\/helm-simple\/webspa\/templates\/configmap.yaml":::* file, set the `FeatureManagement__Coupons` environment variable to `"False"`. Save your changes.
 
@@ -241,12 +241,12 @@ Complete the following steps to disable the *coupons* feature:
     deploy/k8s/deploy-application.sh --charts webspa
     ```
 
-1. Refresh the browser tab displaying the `/features` endpoint. Notice the value of the *coupons* feature's `enabled` property is now `false`.
+1. Refresh the browser tab displaying the `/features` endpoint. Notice the value of the discount coupon feature's `enabled` property is now `false`.
 
 1. After a few seconds, test the configuration change as follows:
-    1. In the browser tab containing the *WebSPA* app, refresh the page. Sign out and back in, if needed.
+    1. In the browser tab containing the *:::no-loc text="WebSPA":::* app, refresh the page. Sign out and back in, if needed.
     1. Select the shopping bag icon.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
     1. Notice the discount coupon elements are no longer present.
 
-In this unit, you made the *coupons* feature configurable and deployed the updated app. Next, you'll modify the app to use values stored in Azure App Configuration.
+In this unit, you made the discount coupon feature configurable and deployed the updated app. Next, you'll modify the app to use values stored in Azure App Configuration.

@@ -1,10 +1,12 @@
+The Feature Management library has been installed and configured. Now it's time to implement a cloud-hosted, centralized configuration store in which the feature flag will be stored. For that job, Azure App Configuration will be used. You can then toggle the discount coupon feature on or off without the need to redeploy the *:::no-loc text="WebSPA":::* app.
+
 In this unit, you will:
 
 * Create an App Configuration instance in your Azure subscription.
 * Store the App Configuration service connection string.
 * Add a feature flag to the App Configuration store.
-* Connect the SPA to the App Configuration store.
-* Redeploy the SPA to AKS.
+* Connect the *:::no-loc text="WebSPA":::* app to the App Configuration store.
+* Redeploy the *:::no-loc text="WebSPA":::* app to AKS.
 * Test the newly created feature flag.
 
 ## Provision an App Configuration instance
@@ -54,7 +56,7 @@ The preceding line represents a key-value pair, in which `AppConfig__Endpoint` i
 > [!TIP]
 > Your Azure App Configuration connection string contains a plain-text secret. In real world apps, consider integrating App Configuration with Azure Key Vault for secure storage of secrets. Key Vault is out of scope for this module, but guidance can be found at [Tutorial: Use Key Vault references in an ASP.NET Core app](/azure/azure-app-configuration/use-key-vault-references-dotnet-core).
 
-## Add the feature flag for coupons
+## Add the feature flag to the App Configuration store
 
 In Azure App Configuration, create and enable a key-value pair to be treated as a feature flag. Complete the following steps:
 
@@ -135,7 +137,7 @@ Apply the following changes to your *:::no-loc text="WebSPA":::* project:
 
         :::code language="csharp" source="../code/src/web/webspa/startup.cs" id="snippet_ConfigureServices" highlight="6":::
 
-## Redeploy the app
+## Redeploy the app to AKS
 
 Redeploy the *:::no-loc text="WebSPA":::* app to confirm that it works as intended:
 
@@ -155,13 +157,13 @@ Redeploy the *:::no-loc text="WebSPA":::* app to confirm that it works as intend
 
 To verify the feature flag works as expected, start a purchase as follows:
 
-1. In the browser tab containing the *WebSPA* app, refresh the page. Sign out and back in, if needed.
+1. In the browser tab containing the *:::no-loc text="WebSPA":::* app, refresh the page. Sign out and back in, if needed.
 1. Select the shopping bag icon.
 1. Select the **:::no-loc text="CHECKOUT":::** button.
 1. Notice the discount coupon elements are present because the *coupons* feature is enabled in the Azure portal.
 1. In the Azure portal, clear the *Coupons* feature's **Enabled** check box.
 1. Refresh the browser tab displaying the `/features` endpoint. Notice the value of the *coupons* feature's `enabled` property is now `false`.
-1. In the browser tab containing the *WebSPA* app, refresh the page. Sign out and back in, if needed.
+1. In the browser tab containing the *:::no-loc text="WebSPA":::* app, refresh the page. Sign out and back in, if needed.
 1. Select the shopping bag icon.
 1. Select the **:::no-loc text="CHECKOUT":::** button.
 1. Notice the discount coupon elements aren't present.
