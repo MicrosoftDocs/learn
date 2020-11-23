@@ -22,7 +22,7 @@ An ASP.NET Core app can register multiple configuration providers to read settin
 1. Environment variables
 1. Command line
 
-Each configuration provider can contribute its own key value. Furthermore, any provider can override a value from a provider that was registered earlier in the chain than itself. Given the registration order in the preceding list, a `UseFeatureManagement` command-line parameter overrides a `UseFeatureManagement` environment variable. Likewise, a `UseFeatureManagement` key in *:::no-loc text="appsettings.json":::* can be overridden by a `UseFeatureManagement` key stored in *:::no-loc text="appsettings.Development.json":::*.
+Each configuration provider can contribute its own key value. Furthermore, any provider can override a value from a provider that was registered earlier in the chain than itself. Given the registration order in the preceding list, a `UseFeatureManagement` command-line parameter overrides a `UseFeatureManagement` environment variable. Likewise, a `UseFeatureManagement` key within *:::no-loc text="appsettings.json":::* can be overridden by a `UseFeatureManagement` key stored in *:::no-loc text="appsettings.Development.json":::*.
 
 Configuration key names can describe a hierarchy. For example, the notation `FeatureManagement:Coupons` refers to the `Coupons` key within the `FeatureManagement` section. This structure can also map configuration values to an object graph or an [array](/aspnet/core/fundamentals/configuration/#bind-an-array).
 
@@ -33,13 +33,13 @@ ASP.NET Core uses a [ConfigurationBinder](/dotnet/api/microsoft.extensions.confi
 
 ## Kubernetes configuration
 
-In Kubernetes, one abstraction to handle configuration as a collection of plain text key-value pairs is the *:::no-loc text="ConfigMap":::*. A typical [:::no-loc text="ConfigMap":::](https://kubernetes.io/docs/concepts/configuration/configmap) example looks like the following YAML:
+In Kubernetes, one abstraction to handle configuration as a key-value pairs collection is the [:::no-loc text="ConfigMap":::](https://kubernetes.io/docs/concepts/configuration/configmap). A typical *:::no-loc text="ConfigMap":::* example looks like the following YAML:
 
 :::code language="yaml" source="../code/deploy/k8s/helm-simple/webspa/templates/configmap.yaml" range="1-10" highlight="8-10":::
 
 The :::no-loc text="ConfigMap":::'s key-value pairs are:
 
-* Stored in the `data` field of the YAML, as highlighted in the preceding snippet.
+* Stored in the `data` field of the YAML as plain text, as highlighted in the preceding snippet.
 * Presented to the containerized app as environment variables.
 * The primary mechanism to persist .NET Core configuration values in microservices apps.
 
