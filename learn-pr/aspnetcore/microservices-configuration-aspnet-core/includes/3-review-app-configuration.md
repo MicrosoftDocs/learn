@@ -124,4 +124,4 @@ ASP.NET Core's request processing pipeline uses a middleware as a handler for HT
 
 The Feature Management library is implemented to work on the server side. Server-side execution is ideal when using the library with ASP.NET Core MVC or Razor Pages. However, you need to access the configuration data on the client side, in the SPA. To support the needs of the SPA, the Angular directive mentioned in the previous section will query the `/features` endpoint. This endpoint is mapped to the custom middleware, which supports retrieval of the feature state. More specifically, the middleware retrieves configuration values from the Feature Management library. The library then retrieves the values using the registered .NET configuration providers chain.
 
-Think of this middleware as a proxy or broker between the SPA and the Feature Management service.
+Think of this middleware as a proxy or broker between the SPA and the Feature Management library.
