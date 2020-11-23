@@ -55,7 +55,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
     :::image type="content" source="../media/dp-3300-module-33-lab-07.png" alt-text="Import Date-tier Application Introduction.":::
 
-1. In the Import Settings screen, select Browse and navigate to D:\Labfiles\Secure Environment folder and select the **AdventureWorks.bacpac** file and select **Open**. Then in the Import Data-tier application screen, select **Next**.
+1. In the Import Settings screen, select Browse and navigate to **D:\Labfiles\Secure Environment** folder and select the **AdventureWorks.bacpac** file and select **Open**. Then in the Import Data-tier application screen, select **Next**.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-08.png" alt-text="AdventureWorks bacpac file.":::
 
