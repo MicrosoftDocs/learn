@@ -11,7 +11,7 @@ metadata:
 title: Create an analytics rule from wizard
 durationInMinutes: 8
 content: |
-  [!include[] includes/6-create-rule-from-wizard.md)]
+  [!include[](includes/6-create-rule-from-wizard.md)]
 quiz:
   title: Check your knowledge
   questions:
