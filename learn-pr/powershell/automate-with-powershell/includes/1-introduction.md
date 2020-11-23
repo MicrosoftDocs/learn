@@ -9,6 +9,5 @@ You decide on evaluating PowerShell for the features it has on install to see if
 After completing this module, you'll be able to:
 
 - Understand what PowerShell is and what you can use it for.
-- Manage execution policies and run simpler commands.
 - Explore cmdlets and construct a sequence of them in a pipeline.
 - Apply sound principles to your commands by using filtering and formatting.

@@ -40,7 +40,7 @@ Locating commands is done with the `Get-Command` cmdlet. The cmdlet helps you se
 
 ## Use Get-Help to discover commands
 
-When you've tracked down a cmdlet you want to use, you want to know more about it like the different ways you can call it, with what parameters or maybe read up on some example usage cases. The `Get-Help` cmdlet is what you use for those scenarios. 
+When you've tracked down a cmdlet you want to use, you want to know more about it like the different ways you can call it, with what parameters or maybe read up on some example usage cases. The `Get-Help` cmdlet is what you use for those scenarios.
 
 1. Run the command `Get-Help`:
 
@@ -100,6 +100,36 @@ When you've tracked down a cmdlet you want to use, you want to know more about i
    ```
 
    Additionally you can use the arrow keys to navigate the results vertically, row by row, using the arrow keys. On top of that, you can also browse the results page by page using the space key.
+
+1 Run `help Get-FileHash -Examples`
+
+   ```powershell
+   help Get-FileHash -Examples
+   ```
+
+   You will see an out looking like the below text:
+
+   ```output
+   NAME
+    Get-FileHash
+    
+    SYNOPSIS
+        Computes the hash value for a file by using a specified hash algorithm.
+        
+        
+        --------- Example 1: Compute the hash value for a file ---------
+        
+        Get-FileHash /etc/apt/sources.list | Format-List
+        
+        Algorithm : SHA256
+        Hash      : 3CBCFDDEC145E3382D592266BE193E5BE53443138EE6AB6CA09FF20DF609E268
+        Path      : /etc/apt/sources.list
+   ```
+
+   The command produces an output containing a list of examples of using the cmdlet. Locate the part of the response containing the text `Example 1`. This portion of the text shows how you can use `Get-FileHash` with a file path and _piping_ it to the cmdlet `Format-List`.
+
+   > [!TIP]
+   > Adding the flag `-Examples`, when searching for help will quickly show you a working example, which can greatly speed up your learning.
 
 ## Discover object with Get-Member
 

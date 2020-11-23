@@ -41,23 +41,33 @@ There are flags you can use to target either the verb or the noun as you search 
 
 ## Discover your cmdlets using the help system and Get-Help
 
-> [!NOTE]
-> New versions of PowerShell doesn't ship with help system. The first you run Get-Help you will be asked to install the help files. You can also run Update-Help cmdlet to install the help files at a later stage.
-
-You can use the Get-Command to locate the specific command that you need. At this point, you might want to know more about what the command does and various ways in which you can call it. You can use the Get-Help core cmdlet to learn more about your chosen command. You would typically invoke the Get-Help cmdlet by specifying it by name and -Name flag containing the name of the cmdlet you want to see help on, like so:
+You can use the `Get-Command` to locate the specific command that you need. At this point, you might want to know more about what the command does and various ways in which you can call it. You can use the `Get-Help` core cmdlet to learn more about your chosen command. You would typically invoke the Get-Help cmdlet by specifying it by name and -Name flag containing the name of the cmdlet you want to see help on, like so:
 
 ```powershell
 Get-Help -Name name-of-command
 ```
 
+### Update help
+
+New versions of PowerShell doesn't ship with help system. The first you run `Get-Help` you will be asked to install the help files. You can also run `Update-Help` cmdlet to install the help files at a later stage. Because a call to `Update-Help` downloads a lot of help files, the command is limited to only this fetch once per day. You can override this fetching behavior by using the force, `-Force` flag.
+
+Updating the help files is done differently on Windows compared to Linux or macOS. It's because when you run `Update-Help` cmdlet, help files are fetched over the Internet matching your computer's culture. On Windows there's a culture already installed, but culture is missing on Linux and macOS. Therefore you need to be specify a culture when updating, like in this example command:
+
+```powershell
+Update-Help -UICulture en-US -Verbose
+```
+
+The command specifies the `-UICulture` flag and gives it the value `en-US` which fetches US english flavoured help files. Use a culture that corresponds to your machine's culture if using macOS or Linux, to update your help files.
+
 ### Help sections
 
-What's returned back from invoking Get-Help on a cmdlet is a help page. On that help page, there are many parts being listed. Below are some common help page parts you are likely to see:
+What's returned back from invoking `Get-Help` on a cmdlet is a help page. On that help page, there are many parts being listed. Below are some common help page parts you are likely to see:
 
 - NAME, this part states the name of the command
 - SYNTAX, the SYNTAX part shows various ways to call the command using a combination of flags and also allowed parameters in some cases.
 - ALIASES. An alias is a command with a different name that invokes the same command. If an alias exist for this command, it would be listed in this section.
 - REMARKS. here you can read more about what commands to run to get further help on this command.
+- PARAMETERS, this section tells you in detail about the parameter such as its type, a longer description and acceptable values, if applicable.
 
 ### Filter the help response
 
@@ -70,6 +80,12 @@ If you don't want the full help page to display, you can narrow down the respons
 - **Examples**, specifying this flag gives you only the examples back if there are any.
 - **Online**, this flag opens up web browser and the specific web page for your command
 - **Parameter**, this flag requires a parameter name as an argument as it looks to list a specific parameter's properties.
+
+You could for example ask for only the examples section of the help page with the following command:
+
+```powershell
+Get-Help Get-FileHash -Examples
+```  
 
 ### Improve the read experience
 

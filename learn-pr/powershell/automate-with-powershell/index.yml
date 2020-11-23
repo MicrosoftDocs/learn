@@ -19,7 +19,6 @@ summary: An introduction to PowerShell, a cross-platform command-line shell and
 abstract: |
   After completing this module, you'll be able to:
   - Understand what PowerShell is and what you can use it for.
-  - Manage execution policies and run simpler commands.
   - Explore cmdlets and construct a sequence of them in a pipeline.
   - Apply sound principles to your commands by using filtering and formatting. 
 iconUrl: /learn/achievements/automate-with-powershell.svg
@@ -38,13 +37,11 @@ units:
   - learn.automate-with-powershell.1-introduction
   - learn.automate-with-powershell.2-what-is-powershell
   - learn.automate-with-powershell.3-exercise-powershell
-  - learn.automate-with-powershell.4-execution-policy
-  - learn.automate-with-powershell.5-exercise-execution-policy
-  - learn.automate-with-powershell.6-commandlets
-  - learn.automate-with-powershell.7-exercise-commandlets
-  - learn.automate-with-powershell.8-pipe
-  - learn.automate-with-powershell.9-exercise-pipe
-  - learn.automate-with-powershell.10-knowledge-check
-  - learn.automate-with-powershell.11-summary
+  - learn.automate-with-powershell.4-commandlets
+  - learn.automate-with-powershell.5-exercise-commandlets
+  - learn.automate-with-powershell.6-pipe
+  - learn.automate-with-powershell.7-exercise-pipe
+  - learn.automate-with-powershell.8-knowledge-check
+  - learn.automate-with-powershell.9-summary
 badge:
   uid: learn.automate-with-powershell.badge

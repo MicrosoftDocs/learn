@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.automate-with-powershell.6-pipe
+title: Create powerful pipelines by connecting cmdlets
+metadata:
+  title: Create powerful pipelines by connecting cmdlets
+  description: In this unit you will learn more about pipeline construction and
+    pipeline input. You will also be introduced to helper constructs that will
+    help you filter and format your data.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 11/19/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-pipe.md)]

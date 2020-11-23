@@ -1,4 +1,4 @@
-In this module, you started by learning what PowerShell is and what you can use it for. You explored   its primary features and how it differs from tradition shells like Bash. Installing PowerShell was covered and the importance of having a reasonable execution policy was stressed, to ensure you only run trusted scripts.
+In this module, you started by learning what PowerShell is and what you can use it for. You explored its primary features and how it differs from tradition shells like Bash. You also looked at how to install PowerShell and briefly looked at authoring it with Visual Studio code and an extension.
 
 You were then introduced to compiled commands called cmdlets. Using three specific cmdlets, known as _core cmdlets_, they help with listing available commands, leveraging the built-in help system and helps inspect the results on any cmdlet. All put together, these commands helps you build out your knowledge on PowerShell in an efficient way.
 
