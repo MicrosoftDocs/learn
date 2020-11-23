@@ -58,7 +58,7 @@ In addition, your **code of conduct** is an important policy to express. The sta
 
 Employees may not have experience working with the open-source community. To help them prepare, it is recommended that the company offer a set of guides the cover the key things everyone should know before they get started. These guides should be posted to an internal repository or portal that is only accessible to company employees and regularly maintained. A few of the most important guides are listed below.
 
-- A **"Should we open-source this?" guide** that provides a framework for deciding whether or not a candidate project should be open-sourced. This guide could be structured as a flowchart, set of questions, or list of considerations.
+- A **"Should we open-source this project?" guide** that provides a framework for deciding whether or not a candidate project should be open-sourced. This guide could be structured as a flowchart, set of questions, or list of considerations.
 
 - A **setup checklist** that includes all of the work items a team needs to complete before and after the launch of an open-sourced project. This list should include acquiring approval to open-source the project, code reviews to ensure sensitive data is removed before the project goes live, a trademark or [open-source project search](https://opensource.google/projects/search) to ensure there isn't a naming conflict, and so on.
 

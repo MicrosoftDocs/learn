@@ -4334,6 +4334,17 @@
       "source_path": "learn-pr/azure/create-azure-db-for-postgresql-server/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-postgres/index",
       "redirect_document_id": false
+    },
+    {
+
+      "source_path": "learn-pr/github/create-open-source-program-github/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-open-source-program-github/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/create-open-source-program-github/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-open-source-program-github/6-summary",
+      "redirect_document_id": false
     }
   ]
 }
