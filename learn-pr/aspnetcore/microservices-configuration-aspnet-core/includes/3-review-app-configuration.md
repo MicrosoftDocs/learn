@@ -81,7 +81,7 @@ To make a feature configurable, you have to make several changes to the *WebSPA*
 
 ### WebSPA overview
 
-The *WebSPA* app contains both server-side and client-side code. Server-side processing is supported by a C#-based ASP.NET Core project. Client-side processing is supported by TypeScript and Angular&mdash;a JavaScript Single-Page Application (SPA) framework from Google. Knowledge of Angular isn't required. It's more important to understand the app's architecture.
+The *WebSPA* app contains both server-side and client-side code. Server-side processing is supported by a C#-based ASP.NET Core project. Client-side processing is supported by TypeScript and Angular&mdash;a JavaScript Single-Page Application (SPA) framework from Google. Knowledge of Angular isn't required. It's more important to understand the *WebSPA* app's architecture.
 
 :::image type="content" source="../media/3-review-app-configuration/client-to-server-integration.png" alt-text="A diagram showing how Angular communicates with ASP.NET Core" border="true" lightbox="../media/3-review-app-configuration/client-to-server-integration.png":::
 
@@ -125,3 +125,7 @@ ASP.NET Core's request processing pipeline uses a middleware as a handler for HT
 The Feature Management library is implemented to work on the server side. Server-side execution is ideal when using the library with ASP.NET Core MVC or Razor Pages. However, you need to access the configuration data on the client side, in the SPA. To support the needs of the SPA, the Angular directive mentioned in the previous section will query the `/features` endpoint. This endpoint is mapped to the custom middleware, which supports retrieval of the feature state. More specifically, the middleware retrieves configuration values from the Feature Management library. The library then retrieves the values using the registered .NET configuration providers chain.
 
 Think of this middleware as a proxy or broker between the SPA and the Feature Management library.
+
+### Feature Management Tag Helper for querying values
+
+*WebSPA* also includes an ASP.NET Core MVC view, whose purpose is to display a list of available coupon codes. Because the view is part of ASP.NET Core, the custom middleware isn't needed to query a feature's status. Instead, the Feature Management library's `<feature>` Tag Helper is used.
