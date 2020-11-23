@@ -60,6 +60,9 @@ In Azure App Configuration, create and enable a key-value pair to be treated as 
 
 1. In another browser tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Cloud Shell.
 1. Use the search box to find and open the App Configuration resource prefixed with *:::no-loc text="eshoplearn":::*.
+
+    :::image type="content" source="../media/5-implement-app-configuration/app-configuration-resource.png" alt-text="The Azure App Configuration resource prefixed with "eshoplearn"":::
+
 1. In the **Operations** section, select **Feature manager** > **Add**.
 1. Select the **Enable feature flag** check box, enter *Coupons* in the **Feature flag name** text box, and select the **Apply** button.
 
@@ -134,15 +137,15 @@ Apply the following changes to your *:::no-loc text="WebSPA":::* project:
 
 ## Redeploy the app
 
-Redeploy the SPA to confirm that it works as intended.
+Redeploy the *:::no-loc text="WebSPA":::* app to confirm that it works as intended:
 
-1. Just as you did before, begin by building the `webspa` service with the following script:
+1. As you did before, begin by building the *:::no-loc text="WebSPA":::* app with the following script:
 
     ```bash
     deploy/k8s/build-to-acr.sh --services webspa
     ```
 
-1. Run the following script to deploy to AKS:
+1. Run the following script to deploy the app to AKS:
 
     ```bash
     deploy/k8s/deploy-application.sh --charts webspa
@@ -152,13 +155,13 @@ Redeploy the SPA to confirm that it works as intended.
 
 To verify the feature flag works as expected, start a purchase as follows:
 
-1. In the app, refresh the page. The SPA reloads.
-1. Select the shopping bag icon in the upper right.
+1. In the browser tab containing the *WebSPA* app, refresh the page. Log out and back in, if needed.
+1. Select the shopping bag icon.
 1. Select the **:::no-loc text="CHECKOUT":::** button.
 1. Notice the discount coupon elements are present because the *coupons* feature is enabled in the Azure portal.
 1. In the Azure portal, clear the *Coupons* feature's **Enabled** check box.
 1. Refresh the browser tab displaying the `/features` endpoint. Notice the value of the *coupons* feature's `enabled` property is now `false`.
-1. Wait a few seconds. In the app, refresh the page. The SPA reloads.
-1. Select the shopping bag icon in the upper right.
+1. In the browser tab containing the *WebSPA* app, refresh the page. Log out and back in, if needed.
+1. Select the shopping bag icon.
 1. Select the **:::no-loc text="CHECKOUT":::** button.
 1. Notice the discount coupon elements aren't present.

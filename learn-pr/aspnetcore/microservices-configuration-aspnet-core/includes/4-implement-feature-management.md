@@ -67,7 +67,7 @@ You've successfully verified the app was deployed to AKS. Additionally, you've s
 
 Complete the following steps to support toggling of the SPA's discount coupon feature in real time:
 
-1. Install the NuGet package required to use the Feature Management library with ASP.NET Core:
+1. Run the following command in the command shell:
 
     ```dotnetcli
     pushd src/Web/WebSPA && \
@@ -75,7 +75,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
         popd
     ```
 
-    The library retrieves feature flags using .NET Core's native configuration system. You can define your app's feature flags by using any configuration provider that .NET Core supports. In this case, you'll define the configuration in the :::no-loc text="ConfigMap"::: file of the SPA's Helm chart. The library also provides a `<feature>` Tag Helper that can be registered and used in Razor views.
+    The preceding command installs the NuGet package required to use the Feature Management library with ASP.NET Core. The library retrieves feature flags using .NET Core's native configuration system. You can define your app's feature flags by using any configuration provider that .NET Core supports. In this case, you'll define the configuration in the :::no-loc text="ConfigMap"::: file of the SPA's Helm chart. The library also provides a `<feature>` Tag Helper that can be registered and used in Razor views.
 
 1. In the *:::no-loc text="deploy/k8s/helm-simple/webspa/templates/configmap.yaml":::* file, uncomment the `UseFeatureManagement` and `FeatureManagement__Coupons` lines. Save your changes.
 
@@ -178,7 +178,7 @@ The preceding markup applies conditional logic against the feature flag by using
 
 ## Deploy the SPA to your AKS cluster
 
-1. To deploy the updated SPA, build and publish a new image to ACR, with the following script:
+1. To deploy the updated *:::no-loc text="WebSPA":::* app, build and publish a new image to ACR with the following script:
 
     ```bash
     deploy/k8s/build-to-acr.sh --services webspa
@@ -193,7 +193,7 @@ The preceding markup applies conditional logic against the feature flag by using
     > [!IMPORTANT]
     > The *:::no-loc text="WebSPA":::* project is built in ACR, rather than local to Cloud Shell, to take advantage of robust build hosts in ACR. If the ACR quick task fails, inspect the output for troubleshooting information. Run the above script again to attempt additional builds.
 
-1. Run the following script to deploy the updated SPA to AKS:
+1. Run the following script to deploy the updated *:::no-loc text="WebSPA":::* app to AKS:
 
     ```bash
     deploy/k8s/deploy-application.sh --charts webspa
@@ -208,7 +208,7 @@ The preceding markup applies conditional logic against the feature flag by using
     ```
 
 1. After a few seconds, test the configuration change as follows:
-    1. In the app, refresh the page. The SPA reloads.
+    1. In the browser tab containing the *WebSPA* app, refresh the page. Log out and back in, if needed.
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
     1. Notice the discount coupon elements are still present.
@@ -222,9 +222,9 @@ The preceding markup applies conditional logic against the feature flag by using
 
 ## Disable the *coupons* feature
 
-Complete the following steps to disable the *coupons* feature.
+Complete the following steps to disable the *coupons* feature:
 
-1. In the *:::no-loc text="deploy/k8s/helm-simple/webspa/templates/configmap.yaml":::* file, set `FeatureManagement__Coupons` to `"False"`. Save your changes.
+1. In the *:::no-loc text="deploy\/k8s\/helm-simple\/webspa\/templates\/configmap.yaml":::* file, set `FeatureManagement__Coupons` to `"False"`. Save your changes.
 
     The `FeatureManagement__Coupons` line will now resemble the following YAML:
 
@@ -241,7 +241,7 @@ Complete the following steps to disable the *coupons* feature.
 1. Refresh the browser tab displaying the `/features` endpoint. Notice the value of the *coupons* feature's `enabled` property is now `false`.
 
 1. After a few seconds, test the configuration change as follows:
-    1. In the app, refresh the page. The SPA reloads.
+    1. In the browser tab containing the *WebSPA* app, refresh the page. Log out and back in, if needed.
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
     1. Notice the discount coupon elements are no longer present.
