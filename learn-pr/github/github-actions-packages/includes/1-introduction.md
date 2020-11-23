@@ -23,3 +23,4 @@ By the end of this module, you will:
 
 - A GitHub account
 - A basic knowledge about Docker and Docker Registry
+ 
