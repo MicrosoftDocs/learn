@@ -98,11 +98,11 @@ You're provided with a custom Angular *attribute directive*&mdash;a component th
 
 An Angular component that contains the `featureFlag` attribute triggers the following sequence of events:
 
-1. The Angular `featureFlag` directive, defined in *featureFlag.directive.ts*, calls the `getFeatures` function in *featureFlag.service.ts*:
+1. The Angular `featureFlag` directive, defined in *featureFlag.directive.ts*, calls the `getFeatures` function:
 
     :::code language="typescript" source="../code/src/web/webspa/client/src/modules/shared/directives/featureFlag.directive.ts" highlight="18":::
 
-1. The `getFeatures` function constructs a URL to send an HTTP GET request to the App Configuration store:
+1. The `getFeatures` function, defined in *featureFlag.service.ts*, constructs a URL to send an HTTP GET request to the App Configuration store:
 
     :::code language="typescript" source="../code/src/web/webspa/client/src/modules/shared/services/featureFlag.service.ts" id="snippet_getFeatures":::
 
@@ -120,6 +120,6 @@ You're provided with a custom middleware at *src\Web\WebSPA\Infrastructure\Middl
 
 ASP.NET Core's request processing pipeline uses a middleware as a handler for HTTP requests. Think of it as a lightweight controller that processes the raw `HttpContext` and returns a value by writing directly to the `Response` object. For more in-depth information, see the [ASP.NET Core Middleware](/aspnet/core/fundamentals/middleware/) document.
 
-The Feature Management library is implemented to work on the server side. That's fine when using MVC or Razor Pages, but you need to use the configuration data in the SPA. So the directive mentioned in the previous section will query the `/features` endpoint, implemented as this middleware, to get the feature state. The middleware retrieves the configuration values from the feature manager that, in turn, gets them from the ASP.NET Core configuration infrastructure.
+The Feature Management library is implemented to work on the server side. Server-side execution is ideal when using the library with ASP.NET Core MVC or Razor Pages. However, you need to access the configuration data on the client  side, in the SPA. To support the needs of the SPA, the directive mentioned in the previous section will query the `/features` endpoint. This endpoint is mapped to the custom middleware, which supports retrieval of the feature state. More specifically, the middleware retrieves configuration values from the Feature Management library. The library then retrieves the values using the registered .NET configuration providers chain.
 
 Think of this middleware as a proxy or broker between the SPA and the Feature Management service.
