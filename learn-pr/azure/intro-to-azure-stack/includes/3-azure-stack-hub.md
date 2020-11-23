@@ -12,7 +12,7 @@ From the hardware standpoint, each Azure Stack Hub instance is an *integrated sy
 > [!NOTE]
 > Integrated systems are available from a range of hardware vendors, with configuration validated and certified by Microsoft.
 
-:::image type="content" source="../media/3-azure_stack_hub.png" alt-text="Azure Stack Hub offers support for IaaS and PaaS Azure services, including VMs, database, storage, App Services, and other Azure services. The services are separated from underlying infrastructure, which includes the Hardware Lifecycle Host (HLH) as well as Top of Rack (ToR) and baseboard management controller (BMC) switches. The primary personas that interact with Azure Stack Hub are users, operators, and managed service providers." border="false":::
+:::image type="content" source="../media/3-azure_stack_hub.png" alt-text="Azure Stack Hub offers support for IaaS and PaaS Azure services, including VMs, database, storage, App Services, and other Azure services. The services are separated from underlying infrastructure, which includes the Hardware Lifecycle Host (HLH), Top of Rack (ToR), and baseboard management controller (BMC) switches. The primary personas that interact with Azure Stack Hub are users, operators, and managed service providers." border="false":::
 
 The use of equivalent set of tools makes it possible to design, develop, deploy, and manage services and applications in hybrid scenarios in the same, consistent manner, regardless of their location. This helps minimize administrative and development overhead. You also have the option of implementing Azure Stack Hub in fully disconnected scenarios, without direct connectivity to Azure.
 
@@ -25,7 +25,7 @@ Azure Stack Hub services support *multitenancy*. This means that as the host (or
 
 ## What Azure Stack Hub is not?
 
-While it's important to understand what Azure Stack Hub is, it's also helpful to realize what Azure Stack Hub is not. In particular, Azure Stack Hub is not:
+While it's important to understand what Azure Stack Hub is, it's also helpful to realize what Azure Stack Hub is not, which is:
 
 - A replacement for virtualization technology. Azure Stack Hub isn't designed to replace an existing on-premises private cloud. Instead, it's designed to introduce the public cloud operating model in your datacenter.
 - A customizable infrastructure. Azure Stack Hub relies on preconfigured systems that are in a constant known state, without support for customizing hardware.
@@ -42,4 +42,4 @@ Azure Stack Hub delivers the most significant benefits in cases that involve:
 |Disconnected workloads|By leveraging the ability of Azure Stack Hub in the disconnected mode, you can introduce cloud capabilities to such environments as factory floors, cruise ships, or mine shafts.|
 |Workloads that are subject to residency requirements|Azure Stack Hub allows you to provision IaaS and PaaS workloads that are subject to compliance or regulatory restrictions, in the areas such as audit, financial reporting, foreign exchange trading, online gaming, or expense reporting.|
 
-Choose the best response for each of the questions below. Then select "Check our answers".
+Choose the best response for each of the following questions, and then select **Check your answers**.

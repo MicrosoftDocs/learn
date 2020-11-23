@@ -1,4 +1,4 @@
-While Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge have their distinct use cases, it might be sometimes difficult to determine which of them is optimal in a given scenario. You might have a good idea by now how to address Contoso's challenges, but before making the final decision, let's review their similiarities and differences in this unit.
+While Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge have their distinct use cases, it might be sometimes difficult to determine which of them is optimal in a given scenario. You might have a good idea by now how to address Contoso's challenges, but before making the final decision, let's review their similarities and differences in this unit.
 
 ## Azure Stack portfolio
 
@@ -20,7 +20,7 @@ To compare the three products, review the following table:
 |Provide Azure Consistent IaaS and PaaS|Yes|No|No|
 |Build modern apps across cloud and on-premises using Azure services|Yes|No|No|
 |Small-footprint branch office scenarios|No|Yes|Yes|
-|Ruggedized form-factors in harsh or remote environments|No|No|Yes|
+|Ruggedized<!-- I'm not sure that ruggedized is an actual word. Can we pick another? If so, please s/r.--> form-factors in harsh or remote environments|No|No|Yes|
 |Trusted enterprise virtualization|No|Yes|No|
 |High availability for virtual machines|Yes|Yes|No|
 |Built-in disaster recovery capabilities|No|Yes|No|
@@ -34,4 +34,4 @@ To compare the three products, review the following table:
 |FPGA support|No|No|Yes|
 |Azure-managed appliance|No|No|Yes|
 
-Choose the best response for each of the questions below. Then select "Check our answers".
+Choose the best response for each of the following questions, and then select **Check your answers**.
