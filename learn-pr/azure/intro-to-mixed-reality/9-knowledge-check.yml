@@ -60,7 +60,7 @@ quiz:
     choices:
     - content: "Humans, computers, and environments"
       isCorrect: true
-      explanation: "The intersection of computer processing, human input, and environmental understanding is where mixed reality lives, where its power, creativity, and emerging capabilities come to life."
+      explanation: "The intersection of computer processing, human input, and environmental understanding is where the power, creativity, and emerging capabilities of mixed reality come to life."
     - content: "Hardware, software, and industry"
       isCorrect: false
       explanation: "Although hardware, software, and the tech industry are important to mixed reality, they're not the core of what makes mixed reality possible."

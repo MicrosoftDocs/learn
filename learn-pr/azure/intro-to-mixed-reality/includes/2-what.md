@@ -1,6 +1,6 @@
 The first step in any learning process is defining the core concept in simple terms. In our case, we need to pin down exactly what mixed reality means at its most basic level:
 
-*Mixed reality is a spectrum of immersive experiences, connecting and blending physical and digital worlds together in augmented and virtual reality applications.*
+*Mixed reality is a spectrum of immersive experiences, connecting and blending physical and digital worlds together in augmented-reality and virtual-reality applications.*
 
 In visual terms, imagine mixed reality as a creative space that exists between the extremes of the physical and digital worlds. Experiences range from overlaying virtual content on objects in the physical world, like in augmented-reality apps, to an entirely immersive experience where the user doesn't have any input from the real world, as in virtual reality.
 

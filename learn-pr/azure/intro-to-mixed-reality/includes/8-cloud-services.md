@@ -2,7 +2,7 @@ When you're developing mixed-reality content, you'll likely run into scenarios w
 
 ## Mixed-reality cloud services
 
-You can use *Azure Remote Rendering* to render highly complex 3D models in real time and stream them directly to a device by moving the rendering workload to high-end GPUs in the cloud. This service is especially important for applications that you might be developing for untethered devices, because they have less computational rendering power.
+You can use *Azure Remote Rendering* to render highly complex 3D models in real time and then stream them directly to a device by moving the rendering workload to high-end GPUs in the cloud. This service is especially important for applications that you might be developing for untethered devices, because they have less computational rendering power.
 
 :::image type="content" source="../media/azure-remote-rendering-engine.png" alt-text="Photograph of two 3D car engine models. The left model has a high triangle count, and the right model has a low triangle count.":::
 
