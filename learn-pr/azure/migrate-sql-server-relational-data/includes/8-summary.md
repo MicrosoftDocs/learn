@@ -6,7 +6,7 @@ In this module, you learned how to migrate your data by using Azure Database Mig
 
 ## Clean up
 
-Be sure to delete the resources that you created during this lesson to avoid any unwanted costs. 
+Be sure to delete the resources that you created during this lesson to avoid any unwanted costs.
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
@@ -14,9 +14,9 @@ Be sure to delete the resources that you created during this lesson to avoid any
 
 1. In the list of groups, select **admsdemorg**.
 
-1. On the pane for the resource group, select the **Delete resource group** button. 
+1. On the pane for the resource group, select **Delete resource group**.
 
-1. Enter the resource group name to confirm, and then select **Delete**.
+1. To confirm, enter the resource group name, and then select **Delete**.
 
 ## Learn more
 

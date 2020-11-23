@@ -33,7 +33,7 @@ Install [Git for Windows](https://git-scm.com/downloads?azure-portal=true).
 
 ### Install the GNU Arm Embedded Toolchain for Windows
 
-1. Download the [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) for Windows.
+1. Download the [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads?azure-portal=true) for Windows.
 2. Install the GNU Arm Embedded Toolchain
 
 
@@ -146,5 +146,5 @@ The Azure Sphere samples repository includes a tool required for listing Azure I
 Clone this repository into the same directory that you cloned the Azure Sphere Developer Learning Path into.
 
 ```
-git clone https://github.com/Azure/azure-sphere-samples.git
+git clone --depth 1 https://github.com/Azure/azure-sphere-samples.git
 ```

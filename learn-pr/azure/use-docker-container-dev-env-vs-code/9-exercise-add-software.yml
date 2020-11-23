@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.use-docker-container-dev-env-vs-code.9-exercise-add-software
+title: Exercise - Add software to an existing container
+metadata:
+  title: Exercise - Add software to an existing container
+  description: Modify your project's Dockerfile to install Node in your existing container.
+  ms.date: 11/13/2020
+  author: bamurtaugh
+  ms.author: brmurtau
+  ms.topic: interactive-tutorial
+  ms.prod: learning
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-exercise-add-software.md)]

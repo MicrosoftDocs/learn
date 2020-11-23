@@ -1,3 +1,5 @@
+In this exercise, we'll secure an Azure Sphere application
+
 ## Step 1: List your IoT Central network endpoints
 
 1. Open the command prompt.
