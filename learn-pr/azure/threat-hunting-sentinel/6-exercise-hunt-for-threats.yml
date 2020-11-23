@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Hunt for threats using Azure Sentinel
 durationInMinutes: 15
 content: |
-  [!include[]includes/6-exercise-hunt-for-threats.md)]
+  [!include[](includes/6-exercise-hunt-for-threats.md)]
