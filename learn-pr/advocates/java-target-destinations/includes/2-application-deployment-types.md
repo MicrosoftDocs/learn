@@ -4,11 +4,11 @@ There are several ways to deploy Java applications to the cloud. This unit explo
 
 The main question is whether you want or need to deploy your application on a virtual machine (VM), inside a container, or as a platform as a service (PaaS) solution.
 
-* With **virtual machines**, you're in a world similar to an on-premises or classical datacenter environment. Azure provides a set of preconfigured VMs that run the main operating systems, Windows and Linux, and it's up to you to configure and maintain those machines.
+* With **virtual machines**, you're in a world similar to an on-premises or classical datacenter environment. Azure provides a set of preconfigured VMs that run the main operating systems, Windows and Linux, and you'll need to configure and maintain those machines.
 
-   We suggest that you adopt this solution initially, because it's the closest to what enterprises are already using before they move to the cloud. They ordinarily install their own configuration management software, install their favorite version of Java, and can run their Java workload in a way that's similar how they've done it in the past.
+   We suggest that you adopt this solution initially, because it's the closest to what most enterprises are already using before they move to the cloud. They usually install their own configuration management software, install their favorite version of Java, and can then run their Java workload in a way that's similar how they've done it in the past.
 
-   VMs will work well if you have an experienced operations team that will configure and maintain them, and if you have specific use cases. For example, you might be using some native libraries or some proprietary software, such as Oracle WebLogic Server or IBM WebSphere Application Server.
+   The VM solution works well if you have an experienced operations team that will configure and maintain them, and if you have specific use cases. For example, you might be using some native libraries or some proprietary software, such as Oracle WebLogic Server or IBM WebSphere Application Server.
 
 * With **containers**, you still have most of the control you have with VMs, but with less operations effort. You can install your own Java Virtual Machine (JVM), or some specific software, and your containers will run either locally or on any cloud provider. 
 
@@ -30,7 +30,7 @@ These two deployment options are classical ways to run Java applications. For bo
 
 ## Serverless functions
 
-Serverless functions or, more specifically, Azure Functions, is a mix of various solutions we've seen and offers a very specific feature: serverless functions are meant to run for short periods of time. Usually, a function is awakened by an event, such as an HTTP request, and it stays "hot" for a few minutes, until it goes back to sleep.
+Serverless functions or, more specifically, Azure Functions, is a mix of various solutions we've seen and offers a very specific feature: serverless functions are meant to run for short periods of time. Usually, a function is awakened by an event, such as an HTTP request, and it stays "hot" for a few minutes until it goes back to sleep.
 
 Functions share features with the platform as a service solution we've described earlier. In Azure, our PaaS solution (Azure App Service) and our serverless solution (Azure Functions) are technically similar and share some common code and services.
 
