@@ -132,7 +132,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 1. In the new query window, type this command:
 
     ```sql
-    SELECT SUERS_NAME();
+    SELECT SUSER_NAME();
     ```
 
     Then select **Execute**.
