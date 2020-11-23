@@ -16,7 +16,7 @@ PowerShell differentiates from a traditional command-line shell in a few ways, n
 
 - **It operates on objects over text**. Using commands in a command-line shell means that you run scripts whose output and input may differ which leads you to spend time on formatting output and extracting the data you need. By using objects as input and output, it reduces the need to spend time on such tasks.
 - **It has cmdlets**. Commands in PowerShell are called cmdlets. Unlike many other shell environments, cmdlets are built on a common runtime rather than separate executables. This provides a consistent experience in parameter parsing and pipeline behavior. Cmdlets typically take object input and return objects. The core cmdlets in PowerShell are built in .NET Core and are open source. You can extend PowerShell with additional cmdlets, scripts, and functions from the community and other sources or you could build your own in .NET Core or PowerShell.
-- **Many types of commands**. Commands in PowerShell can be native executables, cmdlets, functions, scripts, or aliases. When you run a _command_, it's belongs to one of these three types. It's common to use the word command and cmdlet interchangeably as a cmdlet is a type of command.
+- **Many types of commands**. Commands in PowerShell can be native executables, cmdlets, functions, scripts, or aliases. When you run a _command_, it's belongs to one of these types. It's common to use the word command and cmdlet interchangeably as a cmdlet is a type of command.
 
 ## Installation
 

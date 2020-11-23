@@ -15,15 +15,38 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: First question
+    - content: What's the best way to use the help system to find out more about a command?
       choices:
-        - content: first choice
+        - content: Run `{your command} --help`
+          isCorrect: false
+        - content: Run `Get-Help {your command}`
+          isCorrect: false
+        - content: Run `help {your command}`
+          explanation: By using `help` you pipe `Get-Help` into a function and gain the ability to watch the help page, row by row and line by line if you wish.
           isCorrect: true
-          explanation: Correct. because reasons
-        - content: second choice
+        - content: man {your command}
           isCorrect: false
-        - content: third choice
+    - content: What statement is the best to use when _filtering left_?
+      choices:
+        - content: Run `Get-Process | Select-Object Name | Where-Object Name -eq name-of-process`
           isCorrect: false
-        - content: fourth choice
+          explanation: The filtering happens, last, i.e _right_. Filtering last is inefficient and slow, especially if the command is sent over the network and the data store is big.
+        - content: Run `Get-Process | Where-Object Name -eq name-of-process | Select-Object name-of-process`
+          explanation: The filtering happens early, i.e _left_, but it would be even faster if the built-in filter was used.
           isCorrect: false
-          explanation: Incorrect. because reasons
+        - content: Run `Get-Process | -Name name-of-process | Select-Object Name`.
+          isCorrect: true
+          explanation: This is the best solution, early filtering with a built-in filter.
+    - content: How would you easiest find the returned type from a command?
+      choices:
+        - content: Run `{command} --type`.
+          isCorrect: false
+        - content: Run `{command} | Get-Member`.
+          isCorrect: true
+          explanation: The cmdlet `Get-Member` lists the returned type at the top of the response. 
+        - content: Run `{command} | Get-Type`.
+          isCorrect: false
+        - content: Run `{command} Get-Member`.
+          isCorrect: false
+          explanation: The command needs to be _piped_ with `Get-Member`.
+

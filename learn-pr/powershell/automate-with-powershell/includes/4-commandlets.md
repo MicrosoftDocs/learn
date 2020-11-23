@@ -115,7 +115,7 @@ Name                       MemberType     Definition
 Handles                    AliasProperty  Handles = Handlecount
 ```
 
-The first row states that the type is `ystem.Diagnostics.Process`. You can now use this type information as a search argument in looking for other related cmdlets that use this type. Such a command would look like so:
+The first row states that the type is `System.Diagnostics.Process`. You can now use this type information as a search argument in looking for other related cmdlets that use this type. Such a command would look like so:
 
 ```powershell
 Get-Command -ParameterType Process
