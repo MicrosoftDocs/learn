@@ -1,4 +1,4 @@
-Configuration management in a microservices context can become a significant problem if not handled properly. A solution that separates the multiple services' code from configuration is ideal.
+Configuration management in a microservices context can become a significant problem if not handled properly. A solution that separates each service's code from configuration is ideal.
 
 In this unit, you'll explore how to integrate ASP.NET Core and Kubernetes configuration features with Azure App Configuration to tackle this scenario in an effective way.
 
@@ -14,7 +14,7 @@ You'll review the:
 
 Configuration in an ASP.NET Core project is supported by one or more .NET Core *configuration providers*. A [configuration provider](/aspnet/core/fundamentals/configuration/#configuration-providers) is an abstraction over a specific configuration source, such as a JSON file. The configuration source's values are represented as a collection of key-value pairs.
 
-An ASP.NET Core app can register multiple configuration providers to read settings from various sources. With the default application host, the following configuration sources are automatically registered in the order listed:
+An ASP.NET Core app can register multiple configuration providers to read settings from various sources. With the default application host, several configuration providers are automatically registered. The following configuration sources are available in the order listed:
 
 1. JSON file (*:::no-loc text="appsettings.json":::*)
 1. JSON file (*:::no-loc text="appsettings.{environment}.json":::*)
@@ -77,20 +77,17 @@ In the preceding `CreateHostBuilder` method fragment:
 
 ## Review the app's feature flag components
 
-To make a feature configurable, you have to make several changes to your app. Some components have already been implemented for you. What follows is a review of those components.
+To make a feature configurable, you have to make several changes to the *WebSPA* app. Some components have already been implemented for you. What follows is a review of those components.
+
+### WebSPA overview
+
+The *WebSPA* app contains both server-side and client-side code. Server-side processing is supported by a C#-based ASP.NET Core project. Client-side processing is supported by TypeScript and Angular&mdash;a JavaScript SPA framework from Google. Knowledge of Angular isn't required. It's more important to understand the app's architecture.
 
 :::image type="content" source="../media/3-review-app-configuration/client-to-server-integration.png" alt-text="A diagram showing how Angular communicates with ASP.NET Core" border="true" lightbox="../media/3-review-app-configuration/client-to-server-integration.png":::
 
-The *WebSPA* app is an ASP.NET Core project that uses a JavaScript SPA framework from Google called Angular. Knowledge of Angular isn't required. It's more important to understand the app's architecture.
+### Feature flag directive for the Angular views
 
-The JavaScript on the client can't access .NET's `IConfiguration` interface. To solve that problem, an ASP.NET Core middleware component:
-
-* Enables the client to retrieve a feature's status via an HTTP request.
-* Communicates with the .NET Feature Management library to access feature flags via `IConfiguration`.
-
-### Feature flag directive for the views
-
-You're provided with a custom Angular *attribute directive*&mdash;a component that changes the appearance of DOM elements. This directive considers a feature flag to toggle the visibility of the discount coupon DOM elements. The directive is implemented with the following files in the *src\Web\WebSPA\Client\src\modules\shared* directory:
+You're provided with a custom Angular *attribute directive*. An attribute directive is a component that changes the appearance of DOM elements. The custom directive considers a feature flag to toggle the visibility of the discount coupon DOM elements. The directive is implemented with the following files in the *src\Web\WebSPA\Client\src\modules\shared* directory:
 
 * *directives\featureFlag.directive.ts*
 * *models\featureFlag.model.ts*
@@ -114,12 +111,17 @@ The feature flag directive is used in any `div` element to determine whether it 
 
 ### Feature Management middleware for querying values
 
-You're provided with a custom middleware at *src\Web\WebSPA\Infrastructure\Middlewares\FeatureManagementMiddleware.cs*&mdash;a key component of the SPA's feature flag system. The middleware queries the specific feature flag values so they can be used in the SPA:
+By default, the client can't access .NET's `IConfiguration` interface. To solve that problem, an ASP.NET Core middleware component:
+
+* Enables the client to retrieve a feature's status via an HTTP request.
+* Communicates with the .NET Feature Management library to access feature flags via `IConfiguration`.
+
+You're provided with a custom middleware at *src\Web\WebSPA\Infrastructure\Middlewares\FeatureManagementMiddleware.cs*&mdash;a key component of the SPA's feature flag system:
 
 :::code language="csharp" source="../code/src/web/webspa/infrastructure/middlewares/featuremanagementmiddleware.cs" id="snippet_Invoke" highlight="8":::
 
 ASP.NET Core's request processing pipeline uses a middleware as a handler for HTTP requests. Think of it as a lightweight controller that processes the raw `HttpContext` and returns a value by writing directly to the `Response` object. For more in-depth information, see the [ASP.NET Core Middleware](/aspnet/core/fundamentals/middleware/) document.
 
-The Feature Management library is implemented to work on the server side. Server-side execution is ideal when using the library with ASP.NET Core MVC or Razor Pages. However, you need to access the configuration data on the client  side, in the SPA. To support the needs of the SPA, the directive mentioned in the previous section will query the `/features` endpoint. This endpoint is mapped to the custom middleware, which supports retrieval of the feature state. More specifically, the middleware retrieves configuration values from the Feature Management library. The library then retrieves the values using the registered .NET configuration providers chain.
+The Feature Management library is implemented to work on the server side. Server-side execution is ideal when using the library with ASP.NET Core MVC or Razor Pages. However, you need to access the configuration data on the client  side, in the SPA. To support the needs of the SPA, the Angular directive mentioned in the previous section will query the `/features` endpoint. This endpoint is mapped to the custom middleware, which supports retrieval of the feature state. More specifically, the middleware retrieves configuration values from the Feature Management library. The library then retrieves the values using the registered .NET configuration providers chain.
 
 Think of this middleware as a proxy or broker between the SPA and the Feature Management service.
