@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.contribute-opensource.5-next-steps
-title: Unit
+title: Next Steps
 metadata:
   title: Next steps
   description: Get involved in the open-source community
   author: floord
   ms.author: fldrees
-  ms.date: 11/19/2020
+  ms.date: 11/23/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
