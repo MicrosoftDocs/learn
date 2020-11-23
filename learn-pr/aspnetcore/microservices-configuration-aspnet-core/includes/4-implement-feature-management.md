@@ -54,7 +54,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
 
-1. Scroll to the bottom of the checkout page. Notice the presence of a discount coupon feature comprised of the following UI elements:
+1. Scroll to the bottom of the checkout page. Notice the presence of a discount coupon feature, formed by the following UI elements:
     * **:::no-loc text="See Available Coupons":::** link
     * **:::no-loc text="Coupon number":::** text box
     * **:::no-loc text="APPLY":::** button
@@ -142,7 +142,7 @@ The preceding script uses the Linux `sed` command to modify two Angular views. T
 
 ## Use the feature flag in a Razor view
 
-The **:::no-loc text="See Available Coupons":::** link navigates to a route that renders an ASP.NET Core MVC Razor view. The view displays a list of coupon codes that haven't yet been consumed.
+When selected, the **:::no-loc text="See Available Coupons":::** link renders an ASP.NET Core MVC view. The view displays coupon codes that haven't yet been consumed.
 
 Apply the following changes to the file *:::no-loc text="src/Web/WebSPA/Views/CouponStatus/Index.cshtml":::*:
 
@@ -184,7 +184,7 @@ The preceding markup applies conditional logic against the feature flag by using
     deploy/k8s/build-to-acr.sh --services webspa
     ```
 
-    The script starts an [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) for the *:::no-loc text="WebSPA":::* app. A variation of the following line confirms that the *:::no-loc text="WebSPA":::* Docker image was pushed to ACR:
+    The script starts an [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) for the *:::no-loc text="WebSPA":::* app. A variation of the following line confirms the Docker image was pushed to ACR:
 
     ```console
     2020/10/26 21:57:23 Successfully pushed image: eshoplearn20201026212601002.azurecr.io/webspa:linux-latest
@@ -208,9 +208,9 @@ The preceding markup applies conditional logic against the feature flag by using
     ```
 
 1. After a few seconds, test the configuration change as follows:
-    1. In the browser tab containing the *WebSPA* app, refresh the page. Log out and back in, if needed.
+    1. In the browser tab containing the *WebSPA* app, refresh the page. Sign out and back in, if needed.
 
-        :::image type="content" source="../media/4-implement-feature-manager/webspa-log-out.png" alt-text="Screenshot of the Log Out option from a menu in the WebSPA app." border="true" lightbox="../media/4-implement-feature-manager/webspa-log-out.png":::
+        :::image type="content" source="../media/4-implement-feature-manager/webspa-log-out.png" alt-text="Screenshot of the sign out option from a menu in the WebSPA app." border="true" lightbox="../media/4-implement-feature-manager/webspa-log-out.png":::
 
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
@@ -227,7 +227,7 @@ The preceding markup applies conditional logic against the feature flag by using
 
 Complete the following steps to disable the *coupons* feature:
 
-1. In the *:::no-loc text="deploy\/k8s\/helm-simple\/webspa\/templates\/configmap.yaml":::* file, set `FeatureManagement__Coupons` to `"False"`. Save your changes.
+1. In the *:::no-loc text="deploy\/k8s\/helm-simple\/webspa\/templates\/configmap.yaml":::* file, set the `FeatureManagement__Coupons` environment variable to `"False"`. Save your changes.
 
     The `FeatureManagement__Coupons` line will now resemble the following YAML:
 
@@ -244,7 +244,7 @@ Complete the following steps to disable the *coupons* feature:
 1. Refresh the browser tab displaying the `/features` endpoint. Notice the value of the *coupons* feature's `enabled` property is now `false`.
 
 1. After a few seconds, test the configuration change as follows:
-    1. In the browser tab containing the *WebSPA* app, refresh the page. Log out and back in, if needed.
+    1. In the browser tab containing the *WebSPA* app, refresh the page. Sign out and back in, if needed.
     1. Select the shopping bag icon.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
     1. Notice the discount coupon elements are no longer present.

@@ -155,13 +155,13 @@ Redeploy the *:::no-loc text="WebSPA":::* app to confirm that it works as intend
 
 To verify the feature flag works as expected, start a purchase as follows:
 
-1. In the browser tab containing the *WebSPA* app, refresh the page. Log out and back in, if needed.
+1. In the browser tab containing the *WebSPA* app, refresh the page. Sign out and back in, if needed.
 1. Select the shopping bag icon.
 1. Select the **:::no-loc text="CHECKOUT":::** button.
 1. Notice the discount coupon elements are present because the *coupons* feature is enabled in the Azure portal.
 1. In the Azure portal, clear the *Coupons* feature's **Enabled** check box.
 1. Refresh the browser tab displaying the `/features` endpoint. Notice the value of the *coupons* feature's `enabled` property is now `false`.
-1. In the browser tab containing the *WebSPA* app, refresh the page. Log out and back in, if needed.
+1. In the browser tab containing the *WebSPA* app, refresh the page. Sign out and back in, if needed.
 1. Select the shopping bag icon.
 1. Select the **:::no-loc text="CHECKOUT":::** button.
 1. Notice the discount coupon elements aren't present.
