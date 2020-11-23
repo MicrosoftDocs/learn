@@ -10,7 +10,8 @@ Quantum computers might be able help solve complex optimization problems, from c
 
 Emulating quantum effects on classical computers has led to the development of new types of quantum solutions that run
 on classical hardware, also called quantum-inspired algorithms. These algorithms allow us to exploit some of the advantages of
-quantum computing approaches today on classical hardware,providing a speedup over traditional approaches. Using
+quantum computing approaches today on classical hardware, providing a speedup over traditional approaches. Using
+
 quantum solutions on classical hardware also prepares us for the future of quantum optimization on actual quantum hardware.
 
 ## Application areas
