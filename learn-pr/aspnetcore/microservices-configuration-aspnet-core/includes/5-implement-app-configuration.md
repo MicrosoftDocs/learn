@@ -35,13 +35,13 @@ Complete the following steps to create an App Configuration instance in your Azu
     Endpoint=https://eshoplearn20201026204439872.azconfig.io;Id=<id>;Secret=<secret>
     ```
 
-    In the preceding output, the string prefixed with "Endpoint=" represents the App Configuration store's connection string.
+    In the preceding output, the string prefixed with `Endpoint=` represents the App Configuration store's connection string.
 
 1. Copy the connection string. You'll use it in a moment.
 
 ## Store the App Configuration connection string
 
-In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, uncomment the `AppConfig__Endpoint` line. Replace the `<connection-string>` placeholder with the connection string on your clipboard. Save your changes.
+In the *:::no-loc text="deploy\k8s\helm-simple\webspa\templates\configmap.yaml":::* file, uncomment the `AppConfig__Endpoint` line. Replace the `<connection-string>` placeholder with the connection string on your clipboard. Save your changes.
 
 The `AppConfig__Endpoint` line will resemble the following YAML:
 
@@ -49,7 +49,7 @@ The `AppConfig__Endpoint` line will resemble the following YAML:
 AppConfig__Endpoint: "Endpoint=https://eshoplearn20200630195254680.azconfig.io;Id=<id>;Secret=<secret>"
 ```
 
-The preceding line represents a key-value pair, in which `AppConfig__Endpoint` is an environment variable name. In the *WebSPA* ASP.NET Core project, the environment variables configuration provider will read its value.
+The preceding line represents a key-value pair, in which `AppConfig__Endpoint` is an environment variable name. In the *:::no-loc text="WebSPA":::* project, the environment variables configuration provider will read its value.
 
 > [!TIP]
 > Your Azure App Configuration connection string contains a plain-text secret. In real world apps, consider integrating App Configuration with Azure Key Vault for secure storage of secrets. Key Vault is out of scope for this module, but guidance can be found at [Tutorial: Use Key Vault references in an ASP.NET Core app](/azure/azure-app-configuration/use-key-vault-references-dotnet-core).
@@ -60,16 +60,16 @@ In Azure App Configuration, create and enable a key-value pair to be treated as 
 
 1. In another browser tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Cloud Shell.
 1. Use the search box to find and open the App Configuration resource prefixed with *:::no-loc text="eshoplearn":::*.
-1. In the **Operations** section, select **Feature manager** > **Add**.
-1. Select the **Enable feature flag** check box, enter *Coupons* in the **Feature flag name** text box, and select the **Apply** button.
+1. In the **:::no-loc text="Operations":::** section, select **:::no-loc text="Feature manager":::** > **:::no-loc text="Add":::**.
+1. Select the **:::no-loc text="Enable feature flag":::** check box, enter *Coupons* in the **:::no-loc text="Feature flag name":::** text box, and select the **:::no-loc text="Apply":::** button.
 
-Now that the feature flag exists in the App Configuration store, the *WebSPA* ASP.NET Core project requires some changes to read it.
+Now that the feature flag exists in the App Configuration store, the *:::no-loc text="WebSPA":::* project requires some changes to read it.
 
 ## Connect your app to the App Configuration store
 
-To access values from the App Configuration store in an ASP.NET Core app, the configuration provider for App Configuration is needed. A key in the App Configuration store overrides the same key in the ConfigMap. That's because the ConfigMap's `data` field is read by the environment variables provider. Recall that the environment variables provider was registered earlier than the App Configuration provider.
+To access values from the App Configuration store in an ASP.NET Core app, the configuration provider for App Configuration is needed. A key in the App Configuration store overrides the same key in the :::no-loc text="ConfigMap":::. That's because the :::no-loc text="ConfigMap":::'s `data` field is read by the environment variables provider. Recall that the environment variables provider was registered earlier than the App Configuration provider.
 
-Apply the following changes to your *WebSPA* ASP.NET Core project:
+Apply the following changes to your *:::no-loc text="WebSPA":::* project:
 
 1. Run the following command to install a NuGet package containing the .NET Core configuration provider for the App Configuration service:
 
@@ -79,7 +79,7 @@ Apply the following changes to your *WebSPA* ASP.NET Core project:
         popd
     ```
 
-1. In the `CreateHostBuilder` method of *src/Web/WebSPA/Program.cs*, replace the comment `// Add the AddAzureAppConfiguration code` with the following code. Save your changes.
+1. In the `CreateHostBuilder` method of *:::no-loc text="src/Web/WebSPA/Program.cs":::*, replace the comment `// Add the AddAzureAppConfiguration code` with the following code. Save your changes.
 
     ```csharp
     .ConfigureAppConfiguration((_, configBuilder) =>
@@ -110,11 +110,11 @@ Apply the following changes to your *WebSPA* ASP.NET Core project:
 
     In the preceding code snippet:
 
-    * The `Connect` method authenticates to the App Configuration store. Recall that the connection string is stored in *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* as an environment variable with the key `AppConfig__Endpoint`. The environment variables configuration provider replaces the double underscore (`__`) with a colon (`:`).
+    * The `Connect` method authenticates to the App Configuration store. Recall that the connection string is stored in *:::no-loc text="deploy\k8s\helm-simple\webspa\templates\configmap.yaml":::* as an environment variable with the key `AppConfig__Endpoint`. The environment variables configuration provider replaces the double underscore (`__`) with a colon (`:`).
     * The `UseFeatureFlags` method defines a cache expiration policy of five seconds for the feature flags. The default value is 30 seconds. Once five seconds have elapsed, the cache is refreshed with updated feature flag values.
     * The `ConfigureRefresh` method defines a cache expiration policy of five seconds for the `FeatureManagement:Coupons` key in the App Configuration store. The default value is 30 seconds. Once five seconds have elapsed, the cache is refreshed with an updated value for the `FeatureManagement:Coupons` key.
 
-1. Apply the following changes in *src/Web/WebSPA/Startup.cs*:
+1. Apply the following changes in *:::no-loc text="src/Web/WebSPA/Startup.cs":::*:
     1. In the `Configure` method, replace the comment `// Add the UseAzureAppConfiguration code` with the following code:
 
         ```csharp
@@ -156,7 +156,7 @@ To verify the feature flag works as expected, start a purchase as follows:
 1. Select the shopping bag icon in the upper right.
 1. Select the **:::no-loc text="CHECKOUT":::** button.
 1. Notice the discount coupon elements are present because the *coupons* feature is enabled in the Azure portal.
-1. In the Azure portal, clear the *Coupons* feature's **Enabled** check box.
+1. In the Azure portal, clear the *Coupons* feature's **:::no-loc text="Enabled":::** check box.
 1. Refresh the browser tab displaying the `/features` endpoint. Notice the value of the *coupons* feature's `enabled` property is now `false`.
 1. Wait a few seconds. In the app, refresh the page. The SPA reloads.
 1. Select the shopping bag icon in the upper right.

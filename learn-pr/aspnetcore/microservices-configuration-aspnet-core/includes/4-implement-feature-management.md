@@ -55,9 +55,9 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     1. Select the **:::no-loc text="CHECKOUT":::** button.
 
 1. Scroll to the bottom of the checkout page. Notice the presence of a discount coupon feature comprised of the following elements:
-    * **See Available Coupons** link
-    * **Coupon number** text box
-    * **APPLY** button
+    * **:::no-loc text="See Available Coupons":::** link
+    * **:::no-loc text="Coupon number":::** text box
+    * **:::no-loc text="APPLY":::** button
 
     :::image type="content" source="../../microservices-configuration-aspnet-core/media/4-implement-feature-manager/discount-coupon-elements.png" alt-text="Discount coupon elements":::
 
@@ -75,15 +75,15 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
         popd
     ```
 
-    The library retrieves feature flags using .NET Core's native configuration system. You can define your app's feature flags by using any configuration provider that .NET Core supports. In this case, you'll define the configuration the SPA Helm chart's ConfigMap file. The library also provides a `<feature>` Tag Helper that can be registered and used in Razor views.
+    The library retrieves feature flags using .NET Core's native configuration system. You can define your app's feature flags by using any configuration provider that .NET Core supports. In this case, you'll define the configuration in the :::no-loc text="ConfigMap"::: file of the SPA's Helm chart. The library also provides a `<feature>` Tag Helper that can be registered and used in Razor views.
 
-1. In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, uncomment the `UseFeatureManagement` and `FeatureManagement__Coupons` lines. Save your changes.
+1. In the *:::no-loc text="deploy\k8s\helm-simple\webspa\templates\configmap.yaml":::* file, uncomment the `UseFeatureManagement` and `FeatureManagement__Coupons` lines. Save your changes.
 
     After the change, your file will resemble the following YAML snippet:
 
     :::code language="yaml" source="../code/deploy/k8s/helm-simple/webspa/templates/configmap.yaml" highlight="25-26":::
 
-    The preceding change defines two environment variables, named `UseFeatureManagement` and `FeatureManagement__Coupons`, for the *WebSPA* environment in Kubernetes. The environment variables are read by the *WebSPA* app at runtime. If defined in *WebSPA*'s *appsettings.json* file, the environment variables override the following properties:
+    The preceding change defines two environment variables, named `UseFeatureManagement` and `FeatureManagement__Coupons`, for the *:::no-loc text="WebSPA":::* environment in Kubernetes. The environment variables are read by the *:::no-loc text="WebSPA":::* app at runtime. If defined in *:::no-loc text="WebSPA":::*'s *:::no-loc text="appsettings.json":::* file, the environment variables override the following properties:
 
     ```json
     "UseFeatureManagement": true,
@@ -92,9 +92,9 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
     },
     ```
 
-    Keeping the configuration in the *configmap.yaml* template enables clearer separation of configuration and code.
+    Keeping the configuration in the *:::no-loc text="configmap.yaml":::* template enables clearer separation of configuration and code.
 
-1. In the *src/Web/WebSPA/Startup.cs* file, apply the following changes:
+1. In the *:::no-loc text="src/Web/WebSPA/Startup.cs":::* file, apply the following changes:
     1. In the `ConfigureServices` method, replace the comment `// Add the AddFeatureManagement code` with the following code:
 
         ```csharp
@@ -121,7 +121,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
         }
         ```
 
-        `MapFeatureManagement` is a custom extension method that's provided for you in *src/Web/WebSPA/Extensions/EndpointRouteBuilderExtensions.cs*. It defines an endpoint at `/features` that responds to HTTP GET requests from the client-side code. Those requests are delegated to a custom middleware class named `FeatureManagementMiddleware`.
+        `MapFeatureManagement` is a custom extension method that's provided for you in *:::no-loc text="src/Web/WebSPA/Extensions/EndpointRouteBuilderExtensions.cs":::*. It defines an endpoint at `/features` that responds to HTTP GET requests from the client-side code. Those requests are delegated to a custom middleware class named `FeatureManagementMiddleware`.
 
         :::code language="csharp" source="../code/src/web/webspa/extensions/endpointroutebuilderextensions.cs" id="snippet_MapFeatureManagement":::
 
@@ -133,7 +133,7 @@ To add the `featureFlag` directive to the Angular views, run the following scrip
 deploy/implement-directive.sh
 ```
 
-The preceding script uses the Linux `sed` command to modify two Angular views. The `*featureFlag="'coupons'"` attribute is added to the subtotal and discount code `div` elements in the *src/Web/WebSPA/Client/src/modules/orders* directory's *orders-detail/orders-detail.component.html* and *orders-new/orders-new.component.html* files. The relevant portions of *orders-detail.component.html* are highlighted below.
+The preceding script uses the Linux `sed` command to modify two Angular views. The `*featureFlag="'coupons'"` attribute is added to the subtotal and discount code `div` elements in the *:::no-loc text="src/Web/WebSPA/Client/src/modules/orders":::* directory's *:::no-loc text="orders-detail/orders-detail.component.html":::* and *:::no-loc text="orders-new/orders-new.component.html":::* files. The relevant portions of *:::no-loc text="orders-detail.component.html":::* are highlighted below.
 
 :::code language="html" source="../code/src/web/webspa/client/src/modules/orders/orders-detail/orders-detail.component.html" highlight="1,6":::
 
@@ -142,9 +142,9 @@ The preceding script uses the Linux `sed` command to modify two Angular views. T
 
 ## Use the feature flag in a Razor view
 
-The **See Available Coupons** link navigates to a route that renders an ASP.NET Core MVC Razor view. The view displays a list of coupon codes that haven't yet been consumed.
+The **:::no-loc text="See Available Coupons":::** link navigates to a route that renders an ASP.NET Core MVC Razor view. The view displays a list of coupon codes that haven't yet been consumed.
 
-Apply the following changes to the file *src/Web/WebSPA/Views/CouponStatus/Index.cshtml*:
+Apply the following changes to the file *:::no-loc text="src/Web/WebSPA/Views/CouponStatus/Index.cshtml":::*:
 
 1. Replace the `@* Add the addTagHelper directive *@` comment with the following code:
 
@@ -173,7 +173,7 @@ Apply the following changes to the file *src/Web/WebSPA/Views/CouponStatus/Index
 
 The preceding markup applies conditional logic against the feature flag by using the Feature Management library's `<feature>` Tag Helper. The Tag Helper's `name` property represents the feature flag name&mdash;*Coupons* in this case. The `negate` property is used to display alternate content when the *Coupons* feature flag is disabled. When the discount coupon feature is:
 
-* Disabled, a **You're not subscribed to this feature.** message displays.
+* Disabled, a **:::no-loc text="You're not subscribed to this feature.":::** message displays.
 * Enabled, a list of coupon codes that haven't been redeemed displays.
 
 ## Deploy the SPA to your AKS cluster
@@ -184,14 +184,14 @@ The preceding markup applies conditional logic against the feature flag by using
     deploy/k8s/build-to-acr.sh --services webspa
     ```
 
-    The script starts an [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) for the *WebSPA* app. A variation of the following line confirms that the *WebSPA* Docker image was pushed to ACR:
+    The script starts an [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) for the *:::no-loc text="WebSPA":::* app. A variation of the following line confirms that the *:::no-loc text="WebSPA":::* Docker image was pushed to ACR:
 
     ```console
     2020/10/26 21:57:23 Successfully pushed image: eshoplearn20201026212601002.azurecr.io/webspa:linux-latest
     ```
 
     > [!IMPORTANT]
-    > The *WebSPA* project is built in ACR, rather than local to Cloud Shell, to take advantage of robust build hosts in ACR. If the ACR quick task fails, inspect the output for troubleshooting information. Run the above script again to attempt additional builds.
+    > The *:::no-loc text="WebSPA":::* project is built in ACR, rather than local to Cloud Shell, to take advantage of robust build hosts in ACR. If the ACR quick task fails, inspect the output for troubleshooting information. Run the above script again to attempt additional builds.
 
 1. Run the following script to deploy the updated SPA to AKS:
 
@@ -199,7 +199,7 @@ The preceding markup applies conditional logic against the feature flag by using
     deploy/k8s/deploy-application.sh --charts webspa
     ```
 
-    The preceding script uses Helm to deploy the *WebSPA* Docker image from your ACR instance to AKS. The script runs the `kubectl get pods` command, whose output contains entries for the SPA's pods. The `STATUS` and `AGE` column values indicate that the deployments were successful:
+    The preceding script uses Helm to deploy the *:::no-loc text="WebSPA":::* Docker image from your ACR instance to AKS. The script runs the `kubectl get pods` command, whose output contains entries for the SPA's pods. The `STATUS` and `AGE` column values indicate that the deployments were successful:
 
     ```console
     NAME                              READY   STATUS              RESTARTS   AGE
@@ -224,7 +224,7 @@ The preceding markup applies conditional logic against the feature flag by using
 
 Complete the following steps to disable the *coupons* feature.
 
-1. In the *deploy\k8s\helm-simple\webspa\templates\configmap.yaml* file, set `FeatureManagement__Coupons` to `"False"`. Save your changes.
+1. In the *:::no-loc text="deploy\k8s\helm-simple\webspa\templates\configmap.yaml":::* file, set `FeatureManagement__Coupons` to `"False"`. Save your changes.
 
     The `FeatureManagement__Coupons` line will now resemble the following YAML:
 
