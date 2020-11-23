@@ -1,6 +1,6 @@
 When it comes to mixed-reality projects, familiar design processes that you or your team uses won't automatically transfer to designing 3D content. For instance, when you're brainstorming a registration screen for a mobile app or website, a simple rectangle is enough. 
 
-Designing for three dimensions instead of two can be more time consuming, because drawing or sketching in 3D is much harder than in 2D. There are 3D tools that exist for gaming and engineering, but they usually require training. This lack of fast, lightweight tools can affect your design pipeline and overload the person who's developing the application.
+Designing for three dimensions instead of two can be more time consuming, because drawing or sketching in 3D is much harder than in 2D. Some 3D tools exist for gaming and engineering, but they usually require training. This lack of fast, lightweight tools can affect your design pipeline and overload the person who's developing the application.
 
 Luckily, a few techniques can help effectively iterate through ideas and get your content fleshed out. These techniques also allow different team members and disciplines to have a voice.
 
@@ -20,12 +20,12 @@ After you've been through a bodystorming session or two, the next step is to sta
 
 ## Storyboarding
 
-Choosing the best method for getting your ideas and proposed experience always depends on the target audience. If you need to present some new ideas to a development team, bodystorming and acting out the experience or new content can be more than enough to get the job done. However, when you need to convince stakeholders or non-technical team members, you may need to opt in for more high-fidelity assets like storyboarding. 
+Choosing the best method for getting your ideas and proposed experience always depends on the target audience. If you need to present some new ideas to a development team, bodystorming and acting out the experience or new content can be more than enough to get the job done. But when you need to convince stakeholders or non-technical team members, you might need to opt in for more high-fidelity assets like storyboarding. 
 
 :::image type="content" source="../media/storyboarding.png" alt-text="Diagram of a high-fidelity storyboard example.":::
 
-Whether the storyboards themselves are detailed or just sketches meant to evoke the broad strokes of an experience is up to you. 
+Whether the storyboards are detailed or just sketches meant to evoke the broad strokes of an experience is up to you. 
 
-## Mixed Reality development tools
+## Mixed-reality development tools
 
-When it comes to working with holograms in your applications, it's easiest to use some of Microsoft's pre-made development tool like the Mixed Reality Toolkit (MRTK) for Unity and Unreal Engine. MRTK is an open-source, cross-platform development kit that provides an input system, foundational components, and common building blocks for spatial interactions.
+When it comes to working with holograms in your applications, it's easiest to use some of Microsoft's premade development tools, like the Mixed Reality Toolkit (MRTK) for Unity and Unreal Engine. MRTK is an open-source, cross-platform development kit that provides an input system, foundational components, and common building blocks for spatial interactions.
