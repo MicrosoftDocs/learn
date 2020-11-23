@@ -50,7 +50,7 @@ quiz:
         - content: The easiest way to add an App Configuration store to your .NET Core app is through a client library provided by Microsoft.
           isCorrect: false
           explanation: "The NuGet package `Microsoft.Azure.AppConfiguration.AspNetCore` can be added to your projects to configure the Azure Configuration provider for your ASP.NET Core app."
-        - content: App Configuration doesn't encrypt your app settings.
+        - content: App Configuration doesn't encrypt your app settings at rest.
           isCorrect: true
           explanation: "App Configuration encrypts all key values it holds, and it encrypts network communication. Key names and labels are used as indices for retrieving configuration data and aren't encrypted."
         - content: App Configuration can be integrated with the .NET Feature Management library.
