@@ -19,19 +19,19 @@ occurred.
 
 ## Configure Backup to URL
 
-1. Open a **Cloud Shell** prompt by selecting the icon shown below in the upper right corner of the Azure portal.
+1. Open a **Cloud Shell** prompt by selecting the icon shown below.
 
     :::image type="content" source="../media/cloud-shell.png" alt-text="Cloud Shell":::
 
-1. At the bottom half of the portal, you may see a message welcoming you to Azure Cloud Shell, if you have not yet used Cloud Shell. Select **Bash**.
+1. At the bottom half of the portal, you may see a message welcoming you to the Azure Cloud Shell, if you have not yet used a Cloud Shell. Select **Bash**.
 
     :::image type="content" source="../media/welcome-to-cloud-shell.png" alt-text="Welcome to Azure Cloud Shell":::
 
-1. If you have not previously used Cloud Shell, you must give it storage. Click **Create Storage** in the dialog below:
+1. If you have not previously used a Cloud Shell, you must give it storage. Click **Create Storage** in the dialog below:
 
     :::image type="content" source="../media/create-storage.png" alt-text="Create storage":::
 
-1. If you have already used Cloud Shell, just make sure the upper level corner of the Cloud shell screen show **Bash**. You can use the drop down arrow to select either PowerShell or Bash.
+1. If you have already used a Cloud Shell, just make sure the upper level corner of the Cloud shell screen shows **Bash**. You can use the drop down arrow to select either PowerShell or Bash.
 
     Once complete, you will see a prompt similar to the one below.
 
