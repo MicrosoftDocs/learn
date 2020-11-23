@@ -1,4 +1,4 @@
-There are still many customers that are not ready to transition to the hybrid operational model and rely on traditional tools and methods to deploy and manage Windows or Linux servers running in on-premises datacenters. There are also some workloads that are better suited for the traditional on-premises operational model. The planned isolated VDI farm for users in Contoso’s investment banking department deployment is an example of such workload. Azure Stack HCI can help with implementing these types of scenarios in the optimal manner. In this unit you'll learn what is Azure Stack HCI and in which cases it delivers the most significant benefits. 
+There are still many customers that are not ready to transition to the hybrid operational model and rely on traditional tools and methods to deploy and manage Windows or Linux servers running in on-premises datacenters. There are also some workloads that are better suited for the traditional on-premises operational model. The planned isolated VDI farm for users in Contoso’s investment banking department deployment is an example of such workload. Azure Stack HCI can help with implementing these types of scenarios in the optimal manner. In this unit you'll learn what is Azure Stack HCI and in which cases it delivers the most significant benefits.
 
 ## What is Azure Stack HCI?
 
@@ -15,13 +15,13 @@ Azure Stack HCI allows you to deploy Windows and Linux-based virtualized and con
 
 The clustered servers share common configuration and resources by leveraging the Windows Server Failover Clustering feature. Its shared resources include:
 
-- Hyper-V-based compute resources
+- Hyper-V&ndash;based compute resources
 - Storage Spaces Direct (S2D)-based virtualized storage
 - optional Software-Defined Networking (SDN)-based virtualized networking using the Network Controller Windows Server role
 
-:::image type="content" source="../media/4-azure_stack_hci.png" alt-text="Azure Stack HCI consists of validated partner hardware that hosts Windows Server 2019 Datacenter edition with Hyper-V, S2D, and SDN, which is managed via Windows Admin Center UI. To simplify its management and maintenance, you can connect remotely to and use Azure services." border="false":::
+:::image type="content" source="../media/4-azure_stack_hci.png" alt-text="Azure Stack HCI consists of validated partner hardware that hosts Windows Server 2019 Datacenter edition with Hyper-V, S2D, and SDN, which is managed via the Windows Admin Center UI. To simplify its management and maintenance, you can connect remotely to, and use Azure services." border="false":::
 
-Unlike with Azure Stack Hub, which allows only a restricted set of administrative tasks via well-defined, constrained interfaces, you have full, direct access to the underlying hardware and the operating system running on cluster nodes. You can manage Azure Stack HCI operations the same way as any other Windows Server-based cluster, leveraging such tools as Windows PowerShell and Server Manager. Also, to optimize your experience, it is recommended to use Windows Admin Center. 
+Unlike with Azure Stack Hub, which allows only a restricted set of administrative tasks via well-defined, constrained interfaces, you have full, direct access to the underlying hardware and the operating system running on cluster nodes. You can manage Azure Stack HCI operations the same way as any other Windows Server-based cluster, leveraging such tools as Windows PowerShell and Server Manager. Also, to optimize your experience, it is recommended to use Windows Admin Center.
 
 Azure Stack HCI also offers disaster recovery capabilities that leverage its support for stretched clustering. By deploying a stretched Azure Stack HCI cluster, you can synchronously replicate its workloads across two separate on-premises locations and automatically failover between them.
 
@@ -41,4 +41,4 @@ Azure Stack HCI delivers the most significant benefits in cases that involve:
 |Azure Kubernetes Service (AKS)|You can leverage the Azure Stack HCI to host container-based deployments, which increases workload density and resource usage efficiency. Azure Stack HCI also further enhances the agility and resiliency inherent to Azure Kubernetes deployments. Azure Stack HCI manages automatic failover of VMs serving as Kubernetes cluster nodes in case of a localized failure of the underlying physical components. This supplements the high availability built into Kubernetes, which automatically restarts failed containers on the same or another VM.|
 |Disaster recovery for virtualized workloads|An Azure Stack HCI stretched cluster provides automatic failover of virtualized workloads to a secondary site following a primary site failure. Synchronous replication ensures crash consistency of virtual machine disks.|
 
-Choose the best response for each of the questions below. Then select "Check our answers".
+Choose the best response for each of the following questions, and then select **Check your answers**.
