@@ -41,6 +41,11 @@ Logistics;
 Risk management;
 
 
+----------------
+### Materials Design
+Many of the staples of modern life such as compact electronics, energy efficient transportation, and innovative buildings and construction techniques are owed to advancements in materials science that allow researchers to create materials whose chemical structures maximize certain physical properties such as strength, electrical characteristics, weight, or other features. However, designing materials to maximize these properties requires simulating the complex quantum physics that dictate how the atoms that make up these materials interact with the world around them. For most molecules, this simulation represents a problem that is intractable using traditional computers or methods.
+
+In this domain, quantum-inspired optimization can be applied to help achieve near-term advancements in state of the art materials. One example of this comes from OTI Lumionics who have applied optimization solvers in Azure Quantum to do materials simulations that they can apply to their R&D process as they design the next generation of OLED displays. To accomplish this, they leveraged the ability for Azure Quantum's solvers to support the native higher-order problem in a Polynomial Unconstrained Binary Optimization (PUBO) problem - reducing the problem definition from 58,265 variables to just 132. Making use of parameter-free solvers they were also able to save valuable time optimizing parameters.
 
 In addition to solving complex optimization problems, quantum computers may be able to aid in chemistry and materials development far beyond the capacity of present-day supercomputers. Such simulations could lead to breakthroughs in materials science such as batteries with greater capacity and longer life spans, high temperature superconductors, and new catalysts for converting and optimizing alternative fuel sources. In addition, because of the difficulty of simulating the characteristics of complex molecules, the development of new materials with specific properties—like next-gen batteries—poses huge computational challenges as well. And with quantum breakthroughs in material science, lower emissions and better efficiencies begin to come into focus. 
 
