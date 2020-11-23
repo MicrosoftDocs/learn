@@ -15,7 +15,7 @@ You can create security playbooks in Azure Sentinel to respond to alerts. *Secur
 
 With the ability to respond to incidents automatically, you can automate some of your security operations and make your Service Organization Controls (SOC) more productive.
 
-For example, to address Contoso's concerns, you can develop a workflow with defined steps that can block a suspicious user name from accessing resources from a non-secure IP address. Alternatively, you can configure the playbook to perform a simple operation such as notifying the SecOps team about a high-level security alert.
+For example, to address Contoso's concerns, you can develop a workflow with defined steps that can block a suspicious username from accessing resources from a non-secure IP address. Alternatively, you can configure the playbook to perform a simple operation such as notifying the SecOps team about a high-level security alert.
 
 ## Azure Logic Apps
 
@@ -32,7 +32,7 @@ Logic apps use connectors to connect to hundreds of services. A *connector* is a
 Azure Logic Apps use triggers and actions, which are defined as follows:
 
 - A *trigger* is an event that occurs when a specific set of conditions is satisfied. Triggers activate automatically when conditions are met. For example, a security incident occurs in Azure Sentinel, which is a trigger for an automated action.
-- An *action* is an operation that performs a task in the Logic Apps workflow. Actions run when a trigger activates or another action completes.
+- An *action* is an operation that performs a task in the Logic Apps workflow. Actions run when a trigger activates, or another action completes.
 
 ## Azure Sentinel Logic Apps connector
 
@@ -64,6 +64,6 @@ The following table lists all the current actions for the Azure Sentinel connect
 | Remove labels from incident | Removes the labels for the selected incident. |
 
 > [!Note]
-> Actions that have **(V2)** or a higher number provide a new version of the action and may differ from the old functionality of the action.
+> Actions that have **(V2)** or a higher number provide a new version of the action and might differ from the old functionality of the action.
 
 Some actions require integration with actions from another connectors. For example, if Contoso wants to identify all suspicious accounts returned in the alert from the defined entities, you must combine the **Entities - Get Accounts** action with the **For Each** action. Similarly, to get all individual hosts in an incident that detect suspicious hosts, you must combine the **Entities - Get Accounts** action with the **For Each** action.

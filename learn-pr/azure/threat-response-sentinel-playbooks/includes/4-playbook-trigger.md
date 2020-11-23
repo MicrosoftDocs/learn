@@ -2,7 +2,7 @@ You can configure Azure Sentinel playbooks at Contoso to respond to security thr
 
 ## Explore the Playbooks page
 
-You can automate responses to threats on the **Playbooks** page. On this page, you can see all the playbooks that are created from Azure Logic Apps. The column **Trigger kind** presents what type of connectors are used in the logic app.
+You can automate responses to threats on the **Playbooks** page. On this page, you can observe all the playbooks that are created from Azure Logic Apps. The column **Trigger kind** presents what type of connectors are used in the logic app.
 
 You can use the header bar, as displayed in the following diagram, to create new playbooks or to enable or disable existing playbooks.
 
@@ -18,7 +18,7 @@ The header bar provides the following options:
 
 Contoso wants to use automated actions to prevent suspicious users from accessing their network. As their security administrator, you can create a playbook to implement this action. To create a new playbook, select **Add Playbook**. You will be directed to the page where you should create a new Logic App by providing inputs for the following settings:
 
-- **Subscription**. Select the subscription that contains the Azure Sentinel.
+- **Subscription**. Select the subscription that contains Azure Sentinel.
 - **Resource Group**. You can use an existing resource group or create a new one.
 - **Logic App name**. Provide a descriptive name for the logic app.
 - **Location**. Select the same location as where your Log Analytics workspace is located.
@@ -79,5 +79,5 @@ You can run several actions on the playbook from the Logic Apps header bar:
 - **Export**. Use to export the logic app to Microsoft Power Automate and Microsoft Power Apps.
 
 The **Essentials** section  displays descriptive information about the logic app. For example, the logic app definition displays the number of triggers and actions that the logic app provides.
-You can use the **Summary** section, to review summarized information about the logic app. From this section, you can select the logic app link to open it in the Logic Apps Designer, or review the trigger history.
+You can use the **Summary** section, to review summarized information about the logic app. From this section, you can select the logic app link to open it in the Logic Apps Designer or review the trigger history.
 The **Runs history** section displays the previous runs of the logic app and whether they succeeded or failed.

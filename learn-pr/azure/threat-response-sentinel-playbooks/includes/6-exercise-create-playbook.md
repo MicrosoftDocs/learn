@@ -6,7 +6,7 @@ You decide to implement an Azure Sentinel playbook to automate responses to an i
 
 In this exercise, you will explore the Azure Sentinel playbooks by performing the following tasks:
 - Create a playbook to automate an action to respond to incidents.
-- Create a playbook from the Azure Sentinel repository on Github.
+- Create a playbook from the Azure Sentinel repository on GitHub.
 
 ### Task 1: Work with Azure Sentinel playbooks
 
@@ -26,7 +26,7 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 
 5. Select  **Review + Create**, and then select  **Create**.
 
-**Note** : Wait for the deployment to complete. The deployment should take less than 1 minute.
+**Note**: Wait for the deployment to complete. The deployment should take less than 1 minute.
 
 6. After the deployment is complete, select **Go to resource**.
 7. In the **Logic Apps Designer** pane, scroll down and select **Blank Logic App.**
@@ -68,7 +68,7 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 | Identifier | From the drop-down menu, select **Alert**. |
 | Specify alert / incident | **System Alert ID** |
 | Specify status | From the drop-down menu, select **Closed**. |
-| Close reason | From the drop-down menu select **Custom Value**, and then type **Incident Resolved**. |
+| Close reason | From the drop-down menu select **Custom Value**, and then enter **Incident Resolved**. |
 | Close reason text | Write descriptive text. |
 
 :::image type="content" source="../media/06-Change-Incident-Status.PNG" alt-text="Screenshot of the Get Incident status." border="true":::
@@ -81,7 +81,7 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 2. On the **Virtual machines** page, locate and select the **simple-vm** virtual machine, and then on the header bar, select **Delete**.
 
 > [!Note]
-> This task creates an incident based on the analytics rule that you created earlier in the exercise setup unit. Incident creation can take up to 5 minutes. Wait for it to complete before proceeding to the next step.
+> This task creates an incident based on the analytics rule that you created earlier in the exercise setup unit. Incident creation can take up to five minutes. Wait for it to complete before proceeding to the next step.
 
 ### Task 3: Assign the playbook to an existing incident
 
@@ -97,4 +97,4 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 
 :::image type="content" source="../media/06-header-refresh.png" alt-text="Screenshot of the the header bar." border="true":::
 
-10. Verify that the incident displays again, and notice the **Status** column to check that it is **Closed**.
+10. Verify that the incident displays again and notice the **Status** column to check that it is **Closed**.

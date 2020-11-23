@@ -1,7 +1,7 @@
 ## Resolution of module problem
 
 Contoso SecOps wanted to improve their response time to security incidents and prevent future incidents. Contoso decides to use Azure Sentinel playbooks, which are based on Logic Apps with an Azure Sentinel connector to provide near real-time responses.
-In this module, you learned how to create Sentinel playbooks that can respond almost in real time on a security thread. You also learned how to start a playbook on demand as response to investigation on a security alert.
+In this module, you learned how to create Sentinel playbooks that can respond in real time on a security thread. You also learned how to start a playbook on demand as response to investigation on a security alert.
 
 ## Learn more
 

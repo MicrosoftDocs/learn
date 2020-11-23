@@ -10,7 +10,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 2. You will be prompted to sign in to your Azure subscription.
 3. On the **Custom deployment** page, provide the following information:
-
+<!--LM: Global comment. Please note that tables should not have bold formatting and check all files for this. Also there are some extra * in the bolding that display in preview mode.-->
 |||
 | --- | --- |
 | **Subscription** | Select your Azure subscription. |
@@ -19,14 +19,14 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 | **Workspace name***  | Provide a unique name for the Azure Sentinel workspace such as ***yourname*-sentinel**. |
 | **Location** | Accept the default value of **[resourceGroup().location]**. |
 | **Simplevm Name** | Accept the default value of **simple-vm**.|
-| **Simplevm WIndows OS Version** | Accept the default value of **2016-Datacenter**.|
+| **Simplevm Windows OS Version** | Accept the default value of **2016-Datacenter**.|
 
-4. Select the **Review + create**, and then select **Create**.
+4. Select **Review + create**, and then select **Create**.
 
 :::image type="content" source="../media/02-Custom-Deployment.PNG" alt-text="Screenshot of the Custom Deployment page." border="true":::
 
 > [!Note]
-> Wait for the deployment to complete. The deployment should take less than 5 minutes.
+> Wait for the deployment to complete. The deployment should take less than five minutes.
 
 ## Task 2: Configure Azure Sentinel Connectors
 
@@ -42,7 +42,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 > [!Note]
 > The connector for Azure Activity could take 15 minutes until Azure Sentinel displays a date. You can continue performing the rest of the steps and continue with the subsequent units in this module.
 
-## Task 3: Create an analytics rule 
+## Task 3: Create an analytics rule
 
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Azure Sentinel workspace.
 2. On the **Azure Sentinel** page, on the menu bar, in the **Configuration** section, select **Analytics**.
@@ -55,7 +55,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
   | Description | Enter a detailed description that will help other security analysts understand what the rule does. |
   | Tactics | From the **Tactics** drop-down menu, choose one among the available categories of attacks to classify the rule following the MITRE tactics. |
   | Severity | Select the **Severity** drop-down menu to categorize the level of importance of the alert as one of four options: High, Medium, Low, or Informational. |
-  | Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generate large number of false    positives. |
+  | Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generates a large number of false positives. |
 
 5. On the **Set rule logic** page, in the **Rule query** section, enter the following query:
 
@@ -70,7 +70,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 6. In the **Query Scheduling** section, you can configure how often the query should run. Select query to run on every 5 min.
 7. Accept the default values for all other settings and then select **Next: Incident setting (preview)**.
 8. On the **Incident setting (preview)** tab, ensure that **Enabled** is selected for creation of incidents from alerts triggered by this analytics rule. And then select **Next: Automated response**.
-9.	On the **Automated response** tab, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
+9.	On the **Automated response** tab, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contain a Logic App Azure Sentinel connector are displayed.
 10.	Select **Next:Review**.
 11.	On the **Review and Create** page, verify that the validation passed, and then select **Create**.
 
@@ -79,7 +79,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 1. In the Azure portal, search for **Resource groups**.
 1. Select **azure-sentinel-rg**.
 1. Sort the list of resources by **Type**.
-1. The resource group should contain the resources shown in the following table.
+1. The resource group should contain the resources displayed in the following table.
 
     | Name  | Type  | Description |
     |---|---|---|
