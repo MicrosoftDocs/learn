@@ -59,7 +59,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     * **:::no-loc text="Coupon number":::** text box
     * **:::no-loc text="APPLY":::** button
 
-    :::image type="content" source="../../microservices-configuration-aspnet-core/media/4-implement-feature-manager/discount-coupon-elements.png" alt-text="Screenshot of the UI elements that make up the discount coupon feature.":::
+    :::image type="content" source="../../microservices-configuration-aspnet-core/media/4-implement-feature-manager/discount-coupon-elements.png" alt-text="Screenshot of the UI elements that make up the discount coupon feature." border="true" lightbox="../../microservices-configuration-aspnet-core/media/4-implement-feature-manager/discount-coupon-elements.png":::
 
 You've successfully verified the app was deployed to AKS. Additionally, you've seen the discount coupon feature that you're going to make configurable.
 
@@ -210,7 +210,7 @@ The preceding markup applies conditional logic against the feature flag by using
 1. After a few seconds, test the configuration change as follows:
     1. In the browser tab containing the *WebSPA* app, refresh the page. Log out and back in, if needed.
 
-        :::image type="content" source="../media/4-implement-feature-manager/webspa-log-out.png" alt-text="Screenshot of the Log Out option from a menu in the WebSPA app.":::
+        :::image type="content" source="../media/4-implement-feature-manager/webspa-log-out.png" alt-text="Screenshot of the Log Out option from a menu in the WebSPA app." border="true" lightbox="../media/4-implement-feature-manager/webspa-log-out.png":::
 
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
