@@ -16,7 +16,7 @@ https://medium.com/faun/azure-deployments-made-easy-with-terraform-and-github-ac
 
 ```bash
 mkdir source-code
-git clone https://github.com/jdubois/spring-petclinic/tree/deploy-to-azure
+git clone https://github.com/roryp/spring-petclinic/tree/deploy-to-azure
 ```
 
 ## Deploying to Azure
