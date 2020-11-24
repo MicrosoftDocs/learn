@@ -70,9 +70,9 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 6. In the **Query Scheduling** section, you can configure how often the query should run. Select query to run on every 5 min.
 7. Accept the default values for all other settings and then select **Next: Incident setting (preview)**.
 8. On the **Incident setting (preview)** tab, ensure that **Enabled** is selected for creation of incidents from alerts triggered by this analytics rule. And then select **Next: Automated response**.
-9.	On the **Automated response** tab, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contain a Logic App Azure Sentinel connector are displayed.
-10.	Select **Next:Review**.
-11.	On the **Review and Create** page, verify that the validation passed, and then select **Create**.
+9. On the **Automated response** tab, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contain a Logic App Azure Sentinel connector are displayed.
+10. Select **Next:Review**.
+11. On the **Review and Create** page, verify that the validation passed, and then select **Create**.
 
 ## Check the resources created
 
