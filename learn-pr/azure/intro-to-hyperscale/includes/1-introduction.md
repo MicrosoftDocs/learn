@@ -2,9 +2,18 @@ Hyperscale transforms PostgreSQL into a distributed database, letting you scale 
 
 ## Citus - Open-source scale
 
+:::row:::
+:::column span="2":::
+
 As modern workloads increased, relational databases struggled to scale to the same extent. Many solutions gave up standard features for scale. Citus, an open-source extension of PostgreSQL, was created in 2011 to solve this problem. Citus became so popular it was open-sourced in 2016.
 
 Hyperscale combines the benefits of PostgreSQL, Citus, and Azure, created by the same team from Citus Data. No more giving up transactions, joins, or foreign keys. Developers retain all of the benefits that two decades of open-source community development have given PostgreSQL.
+
+ :::column-end:::
+:::column span="2":::
+![Postgres logos](../media/1.png)
+:::column-end:::
+:::row-end:::
 
 ## What is Hyperscale?
 
@@ -25,7 +34,7 @@ Another example is Helsinki Region Transport Authority (HSL), responsible for mo
 
 ### The benefits of Hyperscale
 
-Hyperscale allows for easy "scale out" - letting a single PostgreSQL instance run on multiple servers, instead of a single server. Collectively, server groups can hold more data and use more CPU cores than a single server, while having shorter distances to users. This gives faster responses on large datasets, even over multiple regions.
+Hyperscale allows you to easily "scale out" - Letting a single PostgreSQL instance run on multiple servers, instead of a single server. Collectively, server groups can hold more data and use more CPU cores than a single server, while having shorter distances to users. This gives faster responses on large datasets, even over multiple regions.
 
 As an example, let’s say you work for Woodgrove Bank, and you’ve developed and trialed a contactless payment app that works from six feet away. Your app is currently using a single on-premises PostgreSQL server.
 
