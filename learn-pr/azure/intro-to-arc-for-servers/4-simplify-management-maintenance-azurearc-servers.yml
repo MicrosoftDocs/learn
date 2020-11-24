@@ -32,10 +32,10 @@ quiz:
     choices:
     - content: "The ability to capture diagnostics logs"
       isCorrect: false
-      explanation: "That's incorrect. This functionality is avaialble for both Azure Arc enabled servers and those which are not Azure Arc enabled."
+      explanation: "That's incorrect. This functionality is available for both Azure Arc enabled servers and those which are not Azure Arc enabled."
     - content: "The ability to generate alerts."
       isCorrect: false
-      explanation: "That's incorrect. This functionality is avaialble for both Azure Arc enabled servers and those which are not Azure Arc enabled."
+      explanation: "That's incorrect. This functionality is available for both Azure Arc enabled servers and those which are not Azure Arc enabled."
     - content: "The ability to deploy and configure the Log Analytics agent via VM extensions."
       isCorrect: true
       explanation: "That's correct. VM extensions are not available for non-Azure servers which are not Azure Arc enabled."
