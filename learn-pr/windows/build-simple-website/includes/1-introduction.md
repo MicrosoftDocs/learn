@@ -16,7 +16,7 @@ Imagine that you are a web developer, and asked to add support for light and dar
 
 When completed, your simple website will look like this, when the dark theme is selected.
 
-![Completed website with dark theme selected](../media/tbd.png)
+TBD
 
 ## Learning objectives
 
