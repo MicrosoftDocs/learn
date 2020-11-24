@@ -78,7 +78,7 @@ AzureActivity
 
 17. Confirm that the query result returns two type of events based on the level: **Informational, Warning**.
 
-:::image type="content" source="../media/07-Add-parameter.png" alt-text="Screenshot of the New Parameter pane, with steps for adding a new parameter." border="true":::
+:::image type="content" source="../media/07-Add-parameter.png" alt-text="Screenshot of the New Parameter pane, with steps for adding a new parameter. The Save, Query, Run query options and the AzureActivity section are highlghted in the screenshot." border="true":::
 
 18. Select **Save** to commit the changes in the step.
 19. Notice that the parameter step now includes one additional parameter name called **Level**.
