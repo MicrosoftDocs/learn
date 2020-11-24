@@ -1,4 +1,4 @@
-In addition to assessing and addressing problems with their security configuration, Contoso must also monitor for new problems and threats, and then respond appropriately. 
+In addition to assessing and addressing problems with their security configuration, Contoso must also monitor for new problems and threats, and then respond appropriately.
 
 ## Azure Sentinel as a SIEM and SOAR solution
 
