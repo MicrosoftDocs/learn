@@ -2,8 +2,8 @@
 uid: learn.azure.query-visualize-monitor-data-in-sentinel
 metadata:
   title: Query, visualize, and monitor data in Azure Sentinel
-  description: TODO
-  ms.date: TODO
+  description: Query, visualize, and monitor data in Azure Sentinel
+  ms.date: 11/10/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
