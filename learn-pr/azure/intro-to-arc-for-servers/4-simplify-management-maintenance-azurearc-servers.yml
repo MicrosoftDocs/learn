@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "What is the simplest method to to identify the manufacturer and model of hardware of an Azure Arc enabled server?"
+  - content:  "What is the simplest method to identify the manufacturer and model of hardware of an Azure Arc enabled server?"
     choices:
     - content: "Integrate the server with Azure Monitor and run a Log Analytics query."
       isCorrect: false
