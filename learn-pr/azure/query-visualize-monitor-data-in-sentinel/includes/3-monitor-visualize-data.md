@@ -45,7 +45,7 @@ The following screenshot displays the logs collected in Azure Sentinel solution.
 
 ### Queries pane
 
-You can use the **Queries** pane to create queries that retrieve data based on the expression that you provide. The **Query** pane can help you in writing a right<!-- Can we change this to "correct" or "accurate" so as to avoid confusion with the multiple meanings for "right?" --> query by providing suggestions and automatically filling the expected elements of the query.
+You can use the **Queries** pane to create queries that retrieve data based on the expression that you provide. The **Queries** pane can help you in writing an accurate query by providing suggestions and automatically filling the expected elements of the query.
 You can use the capabilities of the Kusto query language (KQL) to write a query that retrieves data from the logs. The following example illustrates how to use KQL code in your queries to identify deleted virtual machines.
 
 ```kusto
