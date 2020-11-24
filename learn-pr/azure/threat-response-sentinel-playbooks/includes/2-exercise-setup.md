@@ -84,7 +84,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | Name  | Type  | Description |
     |---|---|---|
     | *yourname*-sentinel | Log Analytics Workspace | Log Analytics workspace used by Azure Sentinel. |
-    | SecurityInsights(*yourname*-sentinel | Solution | Security insights for Azure Sentinel. |
+    | SecurityInsights(*yourname*-sentinel) | Solution | Security insights for Azure Sentinel. |
     | simple-vm| Virtual machine | Virtual machine used in the demonstration. |
     | simple-vmNetworkInterface | Network interface | Network interface for the VM. |
     | st1*xxxxx* | Storage account | Storage account used by the virtual machine. |
