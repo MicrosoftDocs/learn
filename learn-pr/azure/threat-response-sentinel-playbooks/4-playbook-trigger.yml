@@ -11,7 +11,7 @@ metadata:
 title: Trigger a playbook in real-time
 durationInMinutes: 12
 content: |
-  [!include[]includes/4-playbook-trigger.md)]
+  [!include[](includes/4-playbook-trigger.md)]
 quiz:
   title: Check your knowledge
   questions:
