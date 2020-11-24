@@ -4,12 +4,12 @@ title: 'Exercise: Deploy a PostgreSQL database server to Azure'
 metadata:
   title: 'Exercise: Deploy a PostgreSQL database server to Azure'
   description: "Exercise: Deploy a PostgreSQL database server to Azure"
-  ms.date: 11/13/2020
+  ms.date: 11/24/2020
   author: wwlpublish
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 82683
+labId: 84794
 durationInMinutes: 20
 content: |
   [!include[](includes/6-exercise-deploy-azure-database-postgresql.md)]
