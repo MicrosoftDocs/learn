@@ -1,4 +1,4 @@
-In this exercise, we're going to create a Hyperscale instance using the Azure Portal. Our server group will have:
+In this exercise, we're going to create a Hyperscale instance using the Azure portal. Our server group will have:
 
 * One coordinator node, with 4 vCores and 0.5 TiB of storage
 * Two worker nodes, each with 4 vCores and 0.5 TiB of storage
