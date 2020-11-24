@@ -1,4 +1,4 @@
-Some incidents at Contoso might require further investigation before you run a playbook. Azure Sentinel allows you to run playbooks on demand to facilitate in-depth investigations. 
+Some incidents at Contoso might require further investigation before you run a playbook. Azure Sentinel allows you to run playbooks on demand to facilitate in-depth investigations.
 
 ## Run a playbook on demand
 
@@ -19,7 +19,7 @@ The name of each API connection is appended with the **azuresentinel** prefix. Y
 
 :::image type="content" source="../media/05-Api-connection.PNG" alt-text="Screenshot that depicts the authorization of the API connection." border="true":::
 
-## Attach a playbook on existing incident
+## Attach a playbook to an existing incident
 
 After your playbook is ready, you can open the **Incident** page in Azure Sentinel, and then select the existing incident. In the details pane, you can select **View full details** to explore the properties of the incident. From the **Alerts blade,** you can select **View playbooks**, and then you can run one of the existing playbooks.
 The following screenshot depicts the suspicious user activity example for which you can attach the **Dismiss-AADRiskyUser** playbook.
