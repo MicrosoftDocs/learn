@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-stack-hci-technologies.3-failover-clustering
 metadata:
-  title: Introduction to Failover Clustering
+  title: Introduction to Failover Clustering ### Marcin, should this be What is Failover Clustering? as per the design doc? 
   description: Introduction to Failover Clustering
   ms.date: 09/21/2020
   author: jboeshart
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Unit title
-durationInMinutes: 10
+durationInMinutes: 12
 content: |
   [!include[](includes/3-failover-clustering.md)]
 quiz:
@@ -28,7 +28,7 @@ quiz:
       isCorrect: false
       explanation: "That's incorrect. A Windows Server failover cluster can consist of up to 64 nodes."
 
-  - content: "Which quorum witness can be implemented by using the USB drive in Windows Server 2019 failover clustering?"
+  - content: "Which quorum witness can an administrator implement by using the USB drive in Windows Server 2019 failover clustering?"
     choices:
     - content: "Disk Witness"
       isCorrect: false

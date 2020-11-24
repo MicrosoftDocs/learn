@@ -1,27 +1,30 @@
-Before you explore Microsoft Azure Stack HCI architecture and functionality, it is important to understand the technologies that serve as its underlying core components. 
-In this module, you'll learn about the core Azure Stack HCI technologies, including Hyper-V, Failover Clustering, Windows Server software-defined storage, and Windows Server software-defined networking. 
+Before you explore Microsoft Azure Stack Hyperconverged Infrastructure (HCI) architecture and functionality, it is important to understand the technologies that serve as its underlying core components.
 
-## Scenario
+<!--Marcin, I deleted the heading of Scenario, as I believe Jason had asked us to remove it in earlier reviews. Please let me know if the guidance is different now. -->
 
-Contoso, Ltd. is a medium-size financial-services company with its headquarters in New York and branch offices across the United States. It's currently operating almost entirely on-premises, with the majority of its servers running either Windows Server 2012 R2 or one of several Linux distributions. 
+Contoso, Ltd. is a medium-size financial-services company with its headquarters in New York and branch offices across the United States. It's currently operating almost entirely on-premises, with the majority of its servers running either Windows Server 2012 R2 or one of several Linux distributions.
 
-Contoso's IT director realizes that his organization has an outdated operational model with limited resiliency and hardware reaching end of life. The Contoso IT Engineering team is exploring the option of migrating some of the more critical workloads to Azure, however, due to regulatory and compliance constraints, in many cases, this is not the option. You, serving the role of the the lead system engineer, suggested evaluating Azure Stack HCI as an alternative approach to modernize on-premises workloads, increase their resiliency, and streamline their operational model. 
+Contoso's IT director realizes that their organization has an outdated operational model with limited resiliency and hardware reaching end of life. The Contoso IT Engineering team is exploring the option of migrating some of the more critical workloads to Azure. However, due to regulatory and compliance constraints, this is not the option in many cases. As the lead system engineer at Contoso, you suggest evaluating Azure Stack HCI as an alternative approach to modernize on-premises workloads, increase their resiliency, and streamline their operational model.
 
-In order to convince the IT management that this is the sound approach, you need to first explore and document the characteristics and capabilities of Azure Stack HCI technologies and implement a proof-of-concept environment that would help validate your suggestion. 
+To convince the IT management that this is an optimum approach, you need to first explore and document the characteristics and capabilities of Azure Stack HCI technologies and implement a proof-of-concept environment that would help validate your suggestion.
+
+In this module, you'll learn about the core Azure Stack HCI technologies, including Microsoft Hyper-V, Failover Clustering, Windows Server software-defined storage, and Windows Server software-defined networking (SDN).
 
 ## Learning objectives
 
-- Describe Windows Server Hyper-V and its components
-- Describe Windows Server Failover Clustering and its components
-- Describe Windows Server software-defined storage
-- Describe Windows Server software-defined networking
+After completing this module, you'll be able to:
+
+- Describe Windows Server Hyper-V and its components.
+- Describe Windows Server Failover Clustering and its components.
+- Describe Windows Server software-defined storage.
+- Describe Windows Server software-defined networking.
 
 ## Prerequisites
 
-In order to get the best learning experience from this module, you should have the basic knowledge of:
+To get the best learning experience from this module, you should have knowledge of, and experience with, the following:
 
-- Windows Server Hyper-V
+- Windows Server Hyper-V <!--Marcin, should this be Microsoft Hyper-V-->
 - Window Server software-defined storage
-- Windows Server software-defined networking
+- Windows Server software-defined networking (SDN)
 - Windows Server operating system management
-- Windows Server Failover Clustering.
+- Windows Server Failover Clustering

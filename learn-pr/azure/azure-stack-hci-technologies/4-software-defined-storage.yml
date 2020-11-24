@@ -2,14 +2,14 @@
 uid: learn.azure.azure-stack-hci-technologies.4-software-defined-storage
 metadata:
   title: Introduction to Software Defined Storage
-  description: Introduction to Software Defined Storage
+  description: Provide an introduction to Software Defined Storage.
   ms.date: 09/21/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Unit title
-durationInMinutes: 10
+durationInMinutes: 12
 content: |
   [!include[](includes/4-software-defined-storage.md)]
 quiz:
@@ -38,4 +38,4 @@ quiz:
       explanation: "That's correct. In the disaggregated model, the Hyper-V hosts (compute) are in a separate cluster from the Storage Spaces Direct hosts (storage)."
     - content: "3"
       isCorrect: false
-      explanation: "That's incorrect. You need at minimum 2 clusters."
+      explanation: "That's incorrect. You need at the minimum two clusters."
