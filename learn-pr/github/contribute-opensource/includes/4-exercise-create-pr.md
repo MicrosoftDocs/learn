@@ -1,4 +1,5 @@
-## Describe your changes 
+## Describe your changes
+
 You've learned how to create a pull request when there's guidance - either in a pull request template, or in a `CONTRIBUTING` file. But what if a project doesn't (yet) offer that guidance and documentation on conventions? A best practice writing a commit message, and subsequentially your pull request, is the following: 
 
 Your Git commit message subject line should complete the following sentence:

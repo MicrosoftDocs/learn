@@ -21,7 +21,6 @@ By the end of this module, you'll be able to:
 
 - A GitHub account
 - The ability to navigate and edit files in GitHub
-- Familiarity with open-source libraries and frameworks
 
 > [!NOTE]
 > This module covers how to make contributions to open-source projects on GitHub. To familiarize yourself with GitHub, you can complete the following module first:
