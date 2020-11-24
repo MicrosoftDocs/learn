@@ -21,7 +21,7 @@ To save time, copy the following code and paste it into your HTML file, then sav
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <h1>Task Timeline</h1>
+    <h1>Task List</h1>
     <p id="msg">Current tasks:</p>
     <ul>
       <li class="list">Add visual styles</li>
@@ -55,7 +55,7 @@ The *title* of a webpage appears at the top of a browser window and is significa
 ...
 <head>
   <meta charset="utf-8">
-  <title>Task Timeline</title>
+  <title>Task List</title>
 ...
 ```
 
@@ -67,7 +67,7 @@ In **Visual Studio Code**, type `link` and hit the Enter (Return) key. Update th
 ...
 <head>
   <meta charset="utf-8">
-  <title>Task Timeline</title>
+  <title>Task List</title>
   <link rel="stylesheet" href="main.css">
 </head>
 ...
