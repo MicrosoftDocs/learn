@@ -21,9 +21,9 @@ The official Key Vault client for .NET Core is the `KeyVaultClient` class in the
 
 The Azure Key Vault API is a REST API that handles all management and usage of keys and vaults. Each secret in a vault has a unique URL, and secret values are retrieved with HTTP GET requests.
 
-The official Key Vault client for Node.js apps is the `KeyVaultClient` class in the `azure-keyvault` npm package. Apps that include secret names in their configuration or code will generally only need to use its `getSecret` method, which loads a secret value given its name. `getSecret` requires your app's identity to have the **Get** permission on the vault. Apps designed to load all secrets from a vault will also use the `getSecrets` method, which loads a list of secrets and requires the **List** permission.
+The official Key Vault client for Node.js apps is the `SecretClient` class in the `@azure/keyvault-secrets` npm package. Apps that include secret names in their configuration or code will generally only need to use its `getSecret` method, which loads a secret value given its name. `getSecret` requires your app's identity to have the **Get** permission on the vault. Apps designed to load all secrets from a vault will also use the `listPropertiesOfSecrets` method, which loads a list of secrets and requires the **List** permission.
 
-Before your app can create a `KeyVaultClient` instance, it must get a credential object by authenticating to the vault. To authenticate, use the one of the login functions provided by the `ms-rest-azure` npm package. Each of these functions will return a credential object that can be used to create a `KeyVaultClient`. The `loginWithAppServiceMSI` function will automatically use the managed identity credentials that App Service makes available to your app via environment variables. For test environments or other non-App Service environments where your app does not have access to a managed identity, you can manually create a service principal for your app and use the `loginWithServicePrincipalSecret` function to authenticate.
+Before your app can create a `SecretClient` instance, it must get a credential object by authenticating to the vault. To authenticate, use `DefaultAzureCredential` provided by the `@azure/identity` npm package. This DefaultAzureCredential requires AZURE_CLIENT_ID, AZURE_TENANT_ID, AZURE_CLIENT_SECRET environment variables to be set in the system.
 
 > [!TIP]
 > Regardless of the framework or language you use to build your app, you should design it to cache secret values locally or load them into memory at startup unless you have a specific reason not to. Reading them directly from the vault every time you need them is unnecessarily slow and expensive.
@@ -163,7 +163,7 @@ Run `dotnet build` in the shell to make sure everything compiles. The app is rea
 
 ::: zone pivot="javascript"
 
-We'll create a new web API with Express.js and use the `azure-keyvault` and `ms-rest-azure` packages to load the secret from our vault.
+We'll create a new web API with Express.js and use the `@azure/keyvault-secrets` and `@azure/identity` packages to load the secret from our vault.
 
 ### Create the app
 
