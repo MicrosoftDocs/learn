@@ -31,16 +31,16 @@ quiz:
     choices:
     - content: "Antarctica"
       isCorrect: false
-      explanation: "It's typically easier to spot meteorites in Antarctica because of the high-contrast black rocks on white ice. But meteorites also can be found in other places."
+      explanation: "Incorrect. It's typically easier to spot meteorites in Antarctica because of the high-contrast black rocks on white ice. But meteorites also can be found in other places."
     - content: "The desert"
       isCorrect: false
-      explanation: "It's typically easier to spot meteorites in the desert because of the high-contrast black rocks on light sand. But meteorites also can be found in other places."
+      explanation: "Incorrect. It's typically easier to spot meteorites in the desert because of the high-contrast black rocks on light sand. But meteorites also can be found in other places."
     - content: "Your backyard"
       isCorrect: false
-      explanation: "It's typically extremely difficult to spot meteorites in your backyard because of the rocks and other debris scattered around. But meteorites can be found here and elsewhere."
+      explanation: "Incorrect. It's typically extremely difficult to spot meteorites in your backyard because of the rocks and other debris scattered around. But meteorites can be found here and elsewhere."
     - content: "All of the above"
       isCorrect: true
-      explanation: "Yes, meteorites can land anywhere on Earth. It's just much harder to find them when there is low contrast between the meteorites and their surroundings."
+      explanation: "Correct. Meteorites can land anywhere on Earth. It's just much harder to find them when there is low contrast between the meteorites and their surroundings."
   - content: "What would the following code return?
       `some_return_value = friends.loc[(friends['location'] == my_location) & (friends['hunger'] >= my_hunger), 'favorite_food'].tolist()`"
     choices:

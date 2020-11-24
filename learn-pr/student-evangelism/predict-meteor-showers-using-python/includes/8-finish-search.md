@@ -1,8 +1,9 @@
-So far we've used real-world data. But we can account for one more bit of information from *Over the Moon*. That is, when Chang'e cries, she creates star dust and meteor showers. 
+So far we've used real-world data. But we can account for one more bit of information from *Over the Moon*. That is, when Chang'e cries, she creates stardust and meteor showers. 
 
 Although we don't know when this crying might happen, we *do* know that it happened at one moment in the film. We can create new data that takes this phenomenon into account!
 
 :::image type="content" source="../media/change.png" alt-text="Image of Chang'e." border="false":::
+
 ## Determine the right data
 
 We know that Fei Fei travels to Lunaria after the Moon Festival. Though we don't know exactly how long it takes her to prototype, test, and build a rocket to the Moon, we can make a guess. 
