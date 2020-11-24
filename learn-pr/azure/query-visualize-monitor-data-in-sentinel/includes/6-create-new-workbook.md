@@ -2,7 +2,7 @@ In addition to using built-in templates to create a customized workbook, you can
 
 ## Create a custom workbook
 
-You can create a custom workbook by selecting **+Add workbook** on the header bar from the **Workbooks** page in Azure Sentinel. The  **New workbook** page opens, which contains a basic analytics query to get you started.
+You can create a custom workbook by selecting **+Add workbook** on the header bar from the **Workbooks** page in Azure Sentinel. The **New workbook** page opens, which contains a basic analytics query to get you started.
 
 > [!Tip]
 > Each workbook that you create is saved as a workbook resource in the Azure Sentinel resource group.
@@ -26,7 +26,7 @@ You can add a new element to your workbook by selecting **+Add** as the followin
 You can use text blocks to interpret your security data, section headings, telemetry data, and other information. You need to edit the text using the Markdown markup language, which provides different formatting options for headings, font styles, hyperlinks, and tables.
 
 > [!Note]
-> Markdown is a markup language that you can use to format text in  plain-text documents. For more information on how to format text by using Markdown controls, refer to the following [Markdown guide](https://www.markdownguide.org/getting-started/).
+> Markdown is a markup language that you can use to format text in plain-text documents. For more information on how to format text by using Markdown controls, refer to the following [Markdown guide](https://www.markdownguide.org/getting-started/).
 
 After you add the text, you can select the **Preview** tab to preview how your content will appear. Finally, when you complete editing the text, select the **Done Editing** option.
 
@@ -43,22 +43,22 @@ You can create a different query from the logs and visualize the data as text, c
 - Time charts
 - Tiles
 
-When you create a query, Azure Sentinel adds a new step to the workbook as the following screenshot depicts:
+When you create a query, Azure Sentinel adds a new Run Query step to the workbook as the following screenshot depicts:
 
-:::image type="content" source="../media/06-Query-Visualization.PNG" alt-text="Screenshot of the Query visualization step." border="true":::
+:::image type="content" source="../media/06-Query-Visualization.PNG" alt-text="Screenshot of the Query visualization step, with the Done editing button called out." border="true":::
 
 On the header bar, there are several fields that provide you options to tune the output of the query.
 
-| Run Query | Use this option to test the result of the query. |
-| --- | --- |
-| Samples | Microsoft provides sample code that contains sample queries that you can add to the workbook. |
-| Data Source | Use this option to specify the data source for the query. |
-| Resource type | Use this option select the type of the resource. |
-| Log Analytics workspace | Use this option if you want to query data against more than one resource. |
-| Time Range | USe this option to specify a time range parameter to use in the query. |
-| Visualization | Use this option to choose a specific visualization or choose **Set by query** to present the data in a different format. |
-| Size | Use this option to choose the size of the visualization element. |
-| Color palette | Use this option to choose specific series colors in chart settings. |
+|Run Query|Use this option to test the result of the query.|
+|---|---|
+|Samples|Microsoft provides sample code that contains sample queries that you can add to the workbook.|
+|Data Source|Use this option to specify the data source for the query.|
+|Resource type|Use this option select the type of resource.|
+|Log Analytics workspace|Use this option if you want to query data against more than one resource.|
+|Time Range|USe this option to specify a time range parameter to use in the query.|
+|Visualization|Use this option to choose a specific visualization or choose **Set by query** to present the data in a different format.|
+|Size|Use this option to choose the size of the visualization element.|
+|Color palette|Use this option to choose specific series colors in chart settings.|
 
 On the **Advanced Settings** tab, you can provide additional customization for the settings and the styles of your query step. On the **Advanced Settings** tab, you can modify properties in the following two tabs:
 
@@ -67,7 +67,7 @@ On the **Advanced Settings** tab, you can provide additional customization for t
 
 For example, on the **Settings** tab, you can enter the **Chart title**, as the following screenshot depicts.
 
-:::image type="content" source="../media/06-Advanced-Settings.PNG" alt-text="Screenshot of the Advanced tab." border="true":::
+:::image type="content" source="../media/06-Advanced-Settings.PNG" alt-text="Screenshot of the Advanced settings tab, with the chart title, Total number of Security Alerts." border="true":::
 
 You can use the **Style** tab to adjust the margin and padding element in the step. After you are done customizing the settings and styles, remember to save the step by selecting **Done Editing**.
 
@@ -92,9 +92,9 @@ SecurityAlert
 | render piechart
 ```
 
-In the previous example, the query indicated the visualization type for the data. You can also use the query without including the *render* parameter, and then use the **Visualization** drop-down menu to select one of the offered types of visualizations. The following screenshot illustrates the drop-down menu options.
+In the previous example, the query indicated the visualization type for the data. You can also use the query without including the *render* parameter, and then use the **Visualization** drop-down menu to select one of the offered types of visualizations, as indicated in the following screenshot.
 
-:::image type="content" source="../media/06-Visualization-Menu.PNG" alt-text="Screenshot of the Visualization menu." border="true":::
+:::image type="content" source="../media/06-Visualization-Menu.PNG" alt-text="Screenshot of the Visualization drop-down menu options." border="true":::
 
 ## Grid visualizations
 
