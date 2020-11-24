@@ -3,7 +3,7 @@ uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.10-knowledge
 metadata:
   title: Knowledge check
   description: Check your knowledge
-  ms.date: 10/20/2020
+  ms.date: 11/24/2020
   author: sguthals
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -14,28 +14,28 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "If you have a pandas DataFrame called <code>samples</code>, what would <code>samples.head()</code> output?"
+  - content: "If you have a pandas DataFrame called <code>samples</code>, what would the output be for <code>samples.head()</code>?"
     choices:
     - content: "The top row of the DataFrame"
       isCorrect: false
-      explanation: "While technically true, the <code>head()</code> function returns more than the top row."
+      explanation: "Although technically true, the <code>head()</code> function returns more than only the top row."
     - content: "The top five rows of the DataFrame"
       isCorrect: true
-      explanation: "Correct, and if you add a number (for example, <code>head(x)</code>) it would print the top x rows."
+      explanation: "Correct, and if you add a number (for example, <code>head(x)</code>) it would print the top <i>x</i> rows."
     - content: "10 random rows from the DataFrame"
       isCorrect: false
-      explanation: "The <code>head()</code> function returns the top rows from a DataFrame, not a random set."
+      explanation: "The <code>head()</code> function returns the top five rows (or the number indicated) from a DataFrame, not a random set."
     - content: "The column names of the DataFrame"
       isCorrect: false
-      explanation: "While technically true, the <code>head()</code> function returns more than the top row."
-  - content: "Pandas DataFrames and series are two names for the same kind of data type."
+      explanation: "Although technically true, the <code>head()</code> function returns more than the column names."
+  - content: "In pandas, DataFrame and series are two names for the same kind of data type."
     choices:
     - content: "True"
       isCorrect: false
-      explanation: "Incorrect. DataFrames represent 2D data, such as a table or an Excel worksheet, and series represent 1D data, such as a list."
+      explanation: "Incorrect. DataFrames represent two-dimensional data, like in a table or an Excel worksheet, and series represent one-dimensional data, like a list."
     - content: "False"
       isCorrect: true
-      explanation: "Correct. DataFrames and series are different. DataFrames represent 2D data, such as a table or an Excel worksheet, and series represent 1D data, such as a list."
+      explanation: "Correct. DataFrames and series are different. DataFrames represent two-dimensional data, like in a table or an Excel worksheet, and series represent one-dimensional data, like a list."
   - content: "What is the total weight of the samples that were brought back by the six Apollo missions that landed on the Moon?"
     choices:
     - content: "Over 825 lb, or 375 kg"
@@ -46,9 +46,9 @@ quiz:
       explanation: "Incorrect. Across the 2,229 samples, a lot more weight was returned."
     - content: "Over 136 lb, or 62 kg"
       isCorrect: false
-      explanation: "Incorrect. 62 kg was the average weight of the samples brought back per Apollo mission."
+      explanation: "Incorrect. 136 lb (62 kg) was the average weight of the samples brought back per Apollo mission."
     - content: "Over 490 lb, or 92 kg"
       isCorrect: false
-      explanation: "Incorrect. 92 kg is how much weight we estimated the three Artemis missions could bring back in total."
+      explanation: "Incorrect. 490 lb (92 kg) is how much weight we estimated the three Artemis missions could bring back in total."
 
 
