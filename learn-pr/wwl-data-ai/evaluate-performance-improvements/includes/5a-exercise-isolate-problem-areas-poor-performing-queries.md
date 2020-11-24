@@ -245,11 +245,11 @@ Run the queries below, examine the Actual Execution Plan.
 
 Based on the index statistics the query optimizer has chosen a different execution plan because of the different values in the WHERE clause. Because this query uses a constant in its WHERE clause, the optimizer sees each of these queries as unique and generates a different execution plan each time.
 
-## Change the query to use a parameter and use a Query Hint
+## Change the query to use a variable and use a Query Hint
 
 1. Change the query to use a variable value for SalesPersonID.
 
-1. Use the T-SQL **DECLARE** statement to declare **@SalesPersonID** so you can pass in a value instead of hard-code the value in the **WHERE** clause. You should ensure that the data type of your variable matches the data type of the column in the target table.
+1. Use the T-SQL **DECLARE** statement to declare <strong>@SalesPersonID</strong> so you can pass in a value instead of hard-code the value in the **WHERE** clause. You should ensure that the data type of your variable matches the data type of the column in the target table.
 
     ```sql
     USE AdventureWorks2017;
