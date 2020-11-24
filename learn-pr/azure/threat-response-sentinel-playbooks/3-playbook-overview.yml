@@ -11,7 +11,7 @@ metadata:
 title: What are Azure Sentinel playbooks?
 durationInMinutes: 10
 content: |
-  [!include[]includes/3-playbook-overview.md)]
+  [!include[](includes/3-playbook-overview.md)]
 quiz:
   title: Check your knowledge
   questions:
