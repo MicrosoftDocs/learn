@@ -1,6 +1,6 @@
-Configuration management in a microservices context can become a significant problem if not handled properly. A solution that separates each service's code from configuration is ideal.
+Creating microservices for a distributed environment presents a significant challenge. Cloud-hosted microservices often run in multiple containers in various regions. Implementing a solution that separates each service's code from configuration will ease the triaging of issues across all environments.
 
-In this unit, you'll explore how to integrate ASP.NET Core and Kubernetes configuration features with Azure App Configuration to tackle this scenario in an effective way.
+In this unit, you'll explore how to integrate ASP.NET Core and Kubernetes configuration features with Azure App Configuration to tackle this challenge in an effective way.
 
 You'll review the:
 
@@ -47,7 +47,9 @@ Environment variables are a cross-platform mechanism for providing runtime confi
 
 ## Azure App Configuration
 
-A centralized configuration service is especially useful in microservices apps and other distributed apps. In this module, you'll use Azure App Configuration to manage app settings and feature flags.
+A centralized configuration service is especially useful in microservices apps and other distributed apps. This module introduces Azure App Configuration as a service for centrally managing configuration values&mdash;specifically for feature flags. The service will ease the troubleshooting of errors that arise when configuration is deployed with an app.
+
+App Configuration is a fully managed service that encrypts key values both at rest and in transit. Configuration values stored with it can be updated in real time without the need to redeploy or restart an app.
 
 In an ASP.NET Core app, Azure App Configuration is registered as a configuration provider. Aside from the provider registration, the app doesn't know about the App Configuration store. Configuration values can be retrieved from it via .NET Core's configuration abstraction&mdash;the `IConfiguration` interface.
 
