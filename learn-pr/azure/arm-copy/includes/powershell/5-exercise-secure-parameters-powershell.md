@@ -13,9 +13,9 @@ Here's an overview of the steps you are about to carry out:
 
 1. **Carry out the deployment**. This step involves using the cmdlet **New-AzResourceGroupDeployment** with a URL to a template as an argument.
 
-## Deploy a KeyVault
+## Deploy a Key Vault
 
-You need to both deploy the KeyVault and once created you will need to add a secret.
+You need to both deploy the Key Vault and once created you will need to add a secret.
 
 1. Run the command `New-AzKeyVault`:
 
@@ -31,7 +31,7 @@ You need to both deploy the KeyVault and once created you will need to add a sec
       -EnabledForTemplateDeployment
     ```
 
-    The above command will create a KeyVault. The usage of the flag `-EnabledForTemplateDeployment` ensures it the KeyVault can be read from, from an ARM template.
+    The above command will create a Key Vault. The usage of the flag `-EnabledForTemplateDeployment` ensures it the Key Vault can be read from, from an ARM template.
 
 1. Run the command `Set-AzKeyVaultSecret`
 
@@ -48,7 +48,7 @@ You need to both deploy the KeyVault and once created you will need to add a sec
    > [!NOTE]
    >  You should avoid using plain text in script or the command line, as this can show up in event logs and command history logs. The secure string construct helps address this situation by constructing a type that's encrypted and not possible to print (it would only print its type rather than its value). It's even deleted from memory after it's been used.
 
-   Thereafter the name of the secret and the now encoded secret value  is being added to the KeyVault you've just created.
+   Thereafter the name of the secret and the now encoded secret value  is being added to the Key Vault you've just created.
 
    Everything should be set up at this point so you can deploy the VM next.  
 
@@ -60,7 +60,7 @@ You need to both deploy the KeyVault and once created you will need to add a sec
 
    Ensure the returned value corresponds to the value of parameter `$secretSecureString`.
 
-## Deploy a VM and set password based on a KeyVault secret
+## Deploy a VM and set password based on a Key Vault secret
 
 1. Run `wget` to fetch the following ARM template:
 
@@ -95,7 +95,7 @@ You need to both deploy the KeyVault and once created you will need to add a sec
    }
    ```
 
-   The `id` parameter's value needs to be replaced with the `Resource ID` of the KeyVault you were asked to note down.
+   The `id` parameter's value needs to be replaced with the `Resource ID` of the Key Vault you were asked to note down.
 
 1. Run the command `New-AzResourceGroupDeployment`:
 
@@ -116,4 +116,4 @@ You need to both deploy the KeyVault and once created you will need to add a sec
 
 1. Select **Download RDP File**, and then follow the instructions to sign in to the virtual machine by using the password that's stored in the Key Vault.
 
-Congratulations, you've managed to deploy an Azure KeyVault. Additionally you've managed to create a VM while reading from the Azure KeyVault.
+Congratulations, you've managed to deploy an Azure Key Vault. Additionally you've managed to create a VM while reading from the Azure Key Vault.

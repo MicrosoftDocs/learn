@@ -4,7 +4,7 @@ Here are few aspects to consider:
 
 - **Something needs to exist before something else can be deployed**
 
-    For example, say you need Azure Key Vault in order to fetch secrets that you need to load in a virtual machine (VM). When deploying Key Vault, you can at the same time deploy its secret within the same template. However, the Key Vault needs to be deployed before its secret. Therefore you can say that the secret would _depend_ on the Key Vault to exist. What happens in this case is that the Key Vault and the secret would be deployed serially, one after another, starting with the KeyVault, because of the dependency.
+    For example, say you need Azure Key Vault in order to fetch secrets that you need to load in a virtual machine (VM). When deploying Key Vault, you can at the same time deploy its secret within the same template. However, the Key Vault needs to be deployed before its secret. Therefore you can say that the secret would _depend_ on the Key Vault to exist. What happens in this case is that the Key Vault and the secret would be deployed serially, one after another, starting with the Key Vault, because of the dependency.
 
 - **Can I rely on how things work on ARM?**
 
@@ -31,7 +31,7 @@ A more elegant method you can use relies on how ARM works by default. Two constr
 
 ### What's the dependsOn construct?
 
-The _dependsOn_ construct is a key-value pair that enables you to define the deployment order between resources. Sometimes you need to ensure something exist before something else. A concrete example is a database that needs to exists before an app or that a secret resource needs to exist before a KeyVault.
+The _dependsOn_ construct is a key-value pair that enables you to define the deployment order between resources. Sometimes you need to ensure something exist before something else. A concrete example is a database that needs to exists before an app or that a secret resource needs to exist before a Key Vault.
 
 The idea is to place the _dependsOn_ construct on a resource that depends on other resources to be deployed first. A resource can depend on more than one resource, which is why the construct expects a list of dependent resources as its value.
 

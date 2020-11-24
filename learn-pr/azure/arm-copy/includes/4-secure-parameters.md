@@ -27,13 +27,13 @@ It's clear that the Key Vault service fulfills the needs we have to both manage 
 
 You've chosen a Key Vault as a service where you will store your credentials. From there, you want to be able _read_ secrets during deployment so that you can set the password of a virtual machine for example.
 
-There are several configuration steps you need to perform to set up the KeyVault so that it can be read from during deployment. The steps are:
+There are several configuration steps you need to perform to set up the Key Vault so that it can be read from during deployment. The steps are:
 
-- **Enable KeyVault for deployment**. The Key Vault needs to be allowed to be read from during deployment. You can pass this setting at creation or amend it later.
+- **Enable Key Vault for deployment**. The Key Vault needs to be allowed to be read from during deployment. You can pass this setting at creation or amend it later.
 
 - **User needs deployment permission on resource group**. This is no different than other deployment. However, if you haven't created the resource group, you can assign a role to ensure you can deploy to it.
 
-- **User needs proper access to the KeyVault**. You must ensure that you have the proper access to the Key Vault when you read from it during deployment.  
+- **User needs proper access to the Key Vault**. You must ensure that you have the proper access to the Key Vault when you read from it during deployment.  
 
 ### Configure Key Vault for deployment
 
