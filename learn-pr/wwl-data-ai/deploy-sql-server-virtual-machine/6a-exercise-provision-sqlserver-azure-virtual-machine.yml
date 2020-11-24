@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 85068
+labId: 85105
 durationInMinutes: 15
 content: |
   [!include[](includes/6a-exercise-provision-sqlserver-azure-virtual-machine.md)]
