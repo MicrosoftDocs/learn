@@ -5,6 +5,7 @@ As a security engineer working for Contoso, you recently notice that a significa
 You decide to implement an Azure Sentinel playbook to automate responses to an incident.
 
 In this exercise, you will explore the Azure Sentinel playbooks by performing the following tasks:
+
 - Create a playbook to automate an action to respond to incidents.
 - Create a playbook from the Azure Sentinel repository on GitHub.
 
