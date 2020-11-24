@@ -1,6 +1,5 @@
-## Introduction
 
-It's impressive what's possible to accomplish with a website today. You can build websites, or web apps, that look and feel like native applications, but that run in your web browser. But if you're interested in starting web development today, you may be faced by a dizzying array of options. In this module, we'll show you the basic components of a website, and the tools you can use to start web development. We'll use HTML, CSS, and Javascript together to build a simple website, and we'll use developer tools in the browser to check our work.
+It's impressive what's possible to accomplish with a website today. You can build websites, or web apps, that look and feel like native applications, but that run in your web browser. If you're interested in starting web development today, you may be faced by a dizzying array of options. In this module, we'll show you the basic components of a website, and the tools you can use to start web development. We'll use HTML, CSS, and Javascript together to build a simple website, and we'll use developer tools in the browser to check our work.
 
 With this fundamental experience in place, you will have a better context to make decisions in the future about such things as choosing a JavaScript framework to build a user interface (UI).
 
@@ -16,7 +15,7 @@ Imagine that you are a web developer, and asked to add support for light and dar
 
 When completed, your simple website will look like this, when the dark theme is selected.
 
-TBD
+TBD-screenshot
 
 ## Learning objectives
 
