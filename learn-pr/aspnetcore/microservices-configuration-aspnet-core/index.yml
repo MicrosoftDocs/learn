@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.microservices-configuration-aspnet-core
+metadata:
+  title: Implement feature flags in a cloud-native ASP.NET Core microservices app
+  description: This module guides you through implementing a feature flag in an ASP.NET Core microservices app using Azure App Configuration.
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 11/23/2020
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Implement feature flags in a cloud-native ASP.NET Core microservices app
+summary: Implement a feature flag in your cloud-native ASP.NET Core microservices app to enable or disable a feature in real time.
+abstract: |
+  In this module, you will:
+  - Review ASP.NET Core and Kubernetes app configuration concepts.
+  - Implement real-time feature toggling with the .NET Feature Management library.
+  - Implement a centralized Azure App Configuration store.
+prerequisites: |
+  - Familiarity with C# and ASP.NET Core development at the beginner level
+  - Familiarity with RESTful service concepts at the beginner level
+  - Conceptual knowledge of containers and AKS at the intermediate level
+  - Access to an Azure subscription with **Owner** privilege
+levels:
+  - intermediate
+roles:
+  - developer
+  - solution-architect
+products:
+  - dotnet
+  - aspnet-core
+  - dotnet-core
+  - azure
+  - azure-app-configuration
+  - azure-container-registry
+  - azure-kubernetes-service
+units:
+  - learn.microservices-configuration-aspnet-core.1-introduction
+  - learn.microservices-configuration-aspnet-core.2-environment-setup
+  - learn.microservices-configuration-aspnet-core.3-review-app-configuration
+  - learn.microservices-configuration-aspnet-core.4-implement-feature-management
+  - learn.microservices-configuration-aspnet-core.5-implement-app-configuration
+  - learn.microservices-configuration-aspnet-core.6-knowledge-check
+  - learn.microservices-configuration-aspnet-core.7-summary
+iconUrl: /learn/achievements/aspnetcore/microservices-configuration-aspnet-core.svg
+badge:
+  uid: learn.microservices-configuration-aspnet-core.badge

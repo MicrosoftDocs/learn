@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-configuration-aspnet-core.7-summary
+metadata:
+  title: Summary
+  description: Summary
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 11/23/2020
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]
