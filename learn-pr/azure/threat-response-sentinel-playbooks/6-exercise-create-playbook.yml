@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Create an Azure Sentinel playbook
 durationInMinutes: 10
 content: |
-  [!include[]includes/6-exercise-create-playbook.md)]
+  [!include[](includes/6-exercise-create-playbook.md)]
