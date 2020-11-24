@@ -30,11 +30,12 @@ products:
 - azure
 units:
 - learn.azure.query-visualize-monitor-data-in-sentinel.1-introduction
-- learn.azure.query-visualize-monitor-data-in-sentinel.2-monitor-visualize-data
-- learn.azure.query-visualize-monitor-data-in-sentinel.3-query-data
-- learn.azure.query-visualize-monitor-data-in-sentinel.4-workbooks
-- learn.azure.query-visualize-monitor-data-in-sentinel.5-create-new-workbook
-- learn.azure.query-visualize-monitor-data-in-sentinel.6-exercise-visualize-data
-- learn.azure.query-visualize-monitor-data-in-sentinel.7-summary
+- learn.azure.query-visualize-monitor-data-in-sentinel.2-exercise-setup
+- learn.azure.query-visualize-monitor-data-in-sentinel.3-monitor-visualize-data
+- learn.azure.query-visualize-monitor-data-in-sentinel.4-query-data
+- learn.azure.query-visualize-monitor-data-in-sentinel.5-workbooks
+- learn.azure.query-visualize-monitor-data-in-sentinel.6-create-new-workbook
+- learn.azure.query-visualize-monitor-data-in-sentinel.7-exercise-visualize-data
+- learn.azure.query-visualize-monitor-data-in-sentinel.8-summary
 badge:
   uid: learn.learn.azure.query-visualize-monitor-data-in-sentinel
