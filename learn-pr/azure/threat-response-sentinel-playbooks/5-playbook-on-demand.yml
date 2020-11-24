@@ -11,7 +11,7 @@ metadata:
 title: Run playbooks on demand
 durationInMinutes: 8
 content: |
-  [!include[]includes/5-playbook-on-demand.md)]
+  [!include[](includes/5-playbook-on-demand.md)]
 quiz:
   title: Check your knowledge
   questions:
