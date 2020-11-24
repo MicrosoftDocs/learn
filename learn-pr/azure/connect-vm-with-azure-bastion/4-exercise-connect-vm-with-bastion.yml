@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.connect-vm-with-azure-bastion.exercise-connect-to-vm-with-bastion
-title: Exercise – Connect to a virtual machine using the Bastion Service
+title: Exercise – Connect to a virtual machine by using Azure Bastion
 metadata:
-  title: Exercise – Connect to a virtual machine using the Bastion Service
-  description: Exercise – Connect to a virtual machine using the Bastion Service
+  title: Exercise – Connect to a virtual machine by using Azure Bastion
+  description: Exercise – Connect to a virtual machine by using Azure Bastion
   ms.date: 11/12/2020
   author: cwatson-cat
   ms.author: cwatson
