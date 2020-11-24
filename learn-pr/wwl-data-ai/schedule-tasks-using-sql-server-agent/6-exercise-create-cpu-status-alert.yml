@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 82845
+labId: 85104
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-create-cpu-status-alert.md)]
