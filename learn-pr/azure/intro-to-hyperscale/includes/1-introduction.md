@@ -27,7 +27,8 @@ Another example is Helsinki Region Transport Authority (HSL), responsible for mo
  :::column-end:::
 :::column span="2":::
 
-“Hyperscale (Citus) transforms PostgreSQL into a distributed database—giving developers game-changing performance improvements and delivering queries that are magnitudes faster than proprietary implementations of Postgres”
+**“Hyperscale (Citus) transforms PostgreSQL into a distributed database—giving developers game-changing performance improvements and delivering queries that are magnitudes faster than proprietary implementations of Postgres”**
+
 \- Umur Cubukcu, co-founder and CEO of Citus.
 :::column-end:::
 :::row-end:::

@@ -1,18 +1,30 @@
 Hyperscale works by splitting up your database across a server group the cloud. Your database is split between servers, known as nodes, which Hyperscale coordinates for you.
 
 ## What is a node?
-
+:::row:::
+:::column span="2":::
 A node is an instance of a database server. Hyperscale creates and coordinates nodes across the cloud, multiplying the compute and storage available to you. Hyperscale divides your database between nodes, so multiple CPUs work in parallel on your queries - Providing faster query performance.
 
 By leveraging multiple nodes, instead of a single node, you can “scale out”, otherwise known as horizontal scaling.
 
-For our payment app, we will have three nodes.
+For our payment app, we will start with three nodes.
+ :::column-end:::
+:::column span="2":::
+![Horizontal scale](../media/3b-scale.png)
+:::column-end:::
+:::row-end:::
+
 
 ## What is a shard?
 
 A shard is a portion of a database. When Hyperscale splits up your database into portions, the portions of your database are known as shards. The shards are split between different nodes.
 
 Shards bring efficiency to scale - Intelligently distributing your data across nodes.
+ :::column-end:::
+:::column span="2":::
+![Hyperscale nodes](../media/2a.png)
+:::column-end:::
+:::row-end:::
 
 ## How do the nodes work together?
 
@@ -24,6 +36,8 @@ Every server group has a coordinator node and multiple worker nodes. The coordin
 4. The coordinator node accumulates their results
 
 Applications can't connect directly to worker nodes. Nodes working together allows extremely large databases to be stored and queried with a level of performance that is impossible to achieve on a single server.
+
+![Hyperscale distribute queries](../media/2c-distribute.gif)
 
 For our payment app, the server group will have one coordinator node and two worker nodes. We will shard our data, storing it on the two worker nodes.
 
