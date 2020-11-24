@@ -22,7 +22,7 @@ The type of queries your application uses affect memory requirements. You can ea
 
 To add nodes, in the Azure portal go to the Compute + storage tab in your Hyperscale resource group. Dragging the slider for Worker node count changes the value.
 
-*Picture goes here*
+![Configure nodes and vCores](../media/configure-sliding.gif)
 
 ### Increase or decrease vCores on nodes
 
