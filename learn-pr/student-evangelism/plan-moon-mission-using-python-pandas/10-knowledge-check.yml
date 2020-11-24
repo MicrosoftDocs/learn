@@ -14,20 +14,20 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "If you have a pandas DataFrame called 'samples', what would 'samples.head()' output?"
+  - content: "If you have a pandas DataFrame called <code>samples</code>, what would <code>samples.head()</code> output?"
     choices:
     - content: "The top row of the DataFrame"
       isCorrect: false
-      explanation: "While technically true, the 'head()' function returns more than the top row."
+      explanation: "While technically true, the <code>head()</code> function returns more than the top row."
     - content: "The top five rows of the DataFrame"
       isCorrect: true
-      explanation: "Correct, and if you add a number (for example, 'head(x)'') it would print the top x rows."
-    - content: "Ten random rows from the DataFrame"
+      explanation: "Correct, and if you add a number (for example, <code>head(x)</code>) it would print the top x rows."
+    - content: "10 random rows from the DataFrame"
       isCorrect: false
-      explanation: "The 'head()' function returns the top rows from a DataFrame, not a random set."
+      explanation: "The <code>head()</code> function returns the top rows from a DataFrame, not a random set."
     - content: "The column names of the DataFrame"
       isCorrect: false
-      explanation: "While technically true, the 'head()' function returns more than the top row."
+      explanation: "While technically true, the <code>head()</code> function returns more than the top row."
   - content: "Pandas DataFrames and series are two names for the same kind of data type."
     choices:
     - content: "True"
@@ -46,9 +46,9 @@ quiz:
       explanation: "Incorrect. Across the 2,229 samples, a lot more weight was returned."
     - content: "Over 136 lb, or 62 kg"
       isCorrect: false
-      explanation: "Incorrect. This was the average weight of the samples brought back per Apollo mission."
+      explanation: "Incorrect. 62 kg was the average weight of the samples brought back per Apollo mission."
     - content: "Over 490 lb, or 92 kg"
       isCorrect: false
-      explanation: "Incorrect. This is how much weight we estimated the three Artemis missions could bring back in total."
+      explanation: "Incorrect. 92 kg is how much weight we estimated the three Artemis missions could bring back in total."
 
 

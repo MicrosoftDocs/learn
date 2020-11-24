@@ -2,9 +2,9 @@
 
 In the new movie [Over the Moon](https://www.youtube.com/watch?v=26DIABx44Tw?azure-portal=true), Fei Fei exhibits resourcefulness and creativity as she seeks to help her father remember the story of Chang'e with its message of everlasting true love. In the film, Fei Fei uses her STEM skills, determination, and passion to fly to the Moon. The love of her friends helps her to get home.
 
-Fei Fei didn't jump into artificial intelligence (AI) during her journey to the moon. Her dedication was inspired by wanting to help people, in particular, her family. As she struggles to make sense of love, life, and the legends she heard as a child, she creates a way to address her problems head on, with the help of her buddy Bungee, of course.
+Fei Fei didn't jump into artificial intelligence (AI) during her journey to the Moon. Her dedication was inspired by wanting to help people, in particular, her family. As she struggles to make sense of love, life, and the legends she heard as a child, she creates a way to address her problems head on, with the help of her buddy Bungee, of course.
 
-![Fei Fei and Bungee after a hard day's work building the rocket.](../media/fei-fei-bungee.png)
+:::image type="content" source="../media/fei-fei-bungee.png" alt-text="Image that shows Fei Fei and Bungee after a hard day's work building the rocket." border="false":::
 
 In this module, you will choose an animal, which could be your pet. You will train a Custom Vision AI to be able to identify your pet in an image. And you will do these tasks without needing to know how to code!
 
