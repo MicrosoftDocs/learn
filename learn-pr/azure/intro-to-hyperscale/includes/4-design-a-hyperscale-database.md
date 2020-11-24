@@ -15,7 +15,7 @@ Talking point: multi-tenant applications
 
 ### What are multi-tenant applications?
 
-Multi-Tenant Applications are typically SaaS applications that serve many customers, or multiple tenants - other companies, accounts, users, or organizations. These applications are inherently relational - with a natural dimension on which to distribute data across nodes: shard by tenant_id.
+Multi-Tenant applications are typically SaaS applications that serve many customers, or multiple tenants - other companies, accounts, users, or organizations. These applications are inherently relational - with a natural dimension on which to distribute data across nodes: shard by tenant_id.
 
 Examples: Websites which host store-fronts for other businesses, or sales automation tools.
 Characteristics: Queries relating to a single tenant rather than joining information across tenants. Having dozens or hundreds of tables in your database schema.

@@ -4,11 +4,19 @@ Hyperscale transforms PostgreSQL into a distributed database, letting you scale 
 
 *1b Talking point: Citus open source extension **Rework to 1 paragraph***
 
+Citus, an open-source extension of PostgreSQL, was created to introduce horizontal scaling functionality to relational databases. Instead of giving up transactions, joins, or foreign keys.
+
+By design, Postgres extensions can be loaded into the database and function like features that are built in. Citus, an open-source extension of PostgreSQL, was created to introduce horizontal scaling functionality to relational databases. Developers no longer had to sacrifice transactions, joins, or foreign keys for modern scale. Gaining popularity fast, Citus was open-sourced in 2016.
+
+Soon after, Microsoft acquired Citus Data part of their open-source strategy, leading to the formation of Hyperscale — Combining the benefits of PostgreSQL, Citus, and Azure. As Citus was created as an extension, Hyperscale users can still leverage all of the benefits that two decades of open-source community development has given PostgreSQL.
+
+------
 In 2011, effective horizontal scaling wasn’t available for relational databases - which led some developers towards NoSQL. So, three engineers set out to provide a horizontally scalable, resilient, and worry-free database. No more giving up transactions, joins, or foreign keys. Citus, an open-source extension of PostgreSQL, was born.
 
 Citus became so popular that it was open-sourced in 2016. Soon Microsoft, one of the biggest open-source contributors in the world, acquired Citus Data. It was part of their open-source strategy, leading to the formation of Hyperscale — Combining the benefits of PostgreSQL, Citus, and Azure.
 
 By design, Postgres extensions can be loaded into the database and function like features that are built in. Creating Citus as an extension, grants users all of the benefits that two decades of open-source community development has given PostgreSQL. Citus is compatible with many versions of Postgres, meaning users can easily hyperscale different versions of postgres.
+----
 
 ## What is Hyperscale?
 
