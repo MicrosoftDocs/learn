@@ -10,6 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labId: 84793
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-detect-correct-fragmentation-issues.md)]
