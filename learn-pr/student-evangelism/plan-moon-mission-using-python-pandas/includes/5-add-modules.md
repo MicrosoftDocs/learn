@@ -8,11 +8,11 @@ The Apollo program focused on using the Saturn V rocket to send humans into spac
 
 The first stage is the main thrust portion that gets the rocket to about 68 kilometers into the sky, and then it falls away back to Earth, making the rocket significantly lighter.  The second stage starts burning its engines until the rocket nearly reaches Earth's orbit and likewise falls back down to Earth. The final stage gets the spacecraft into Earth's orbit and thrusts it toward the Moon.
 
-![Fei Fei's rocket reaching altitude.](../media/rocket-flying.png)
+:::image type="content" source="../media/rocket-flying.png" alt-text="Image that shows Fei Fei's rocket reaching altitude." border="false":::
 
 As we know from the *Over the Moon* film, knowing exactly how much weight you can have at each stage significantly affects the outcome of the mission. We also know that astronauts in space require a lot of materials, such as food, water, oxygen, tools, and instruments. We got a glimpse of Fei Fei's supplies when she returned to find Gobi at her crash landing site:
 
-![Fei Fei and Gobi in front of her rocket.](../media/supplies.png)
+:::image type="content" source="../media/supplies.png" alt-text="Image that shows Fei Fei and Gobi in front of her rocket." border="false":::
 
 The last bit of relevant information about the Apollo program and Saturn V is that for lunar landings there are two important modules:
 - Command module: The module that astronauts live in. When two astronauts are down on the surface of the Moon, the third astronaut stays in the command module. This module is returned to Earth.

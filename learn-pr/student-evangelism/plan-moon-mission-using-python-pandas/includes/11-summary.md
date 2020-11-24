@@ -15,4 +15,4 @@ Remember, this module is a part of a multi-modal approach to learning, which mea
 
 And with that, Fei Fei ends her journey to the Moon.
 
-![Fei Fei returns to Earth.](../media/return.png)
+:::image type="content" source="../media/return.png" alt-text="Image that shows Fei Fei's return to Earth." border="false":::

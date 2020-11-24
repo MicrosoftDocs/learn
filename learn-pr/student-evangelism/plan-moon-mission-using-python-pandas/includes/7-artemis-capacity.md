@@ -2,7 +2,7 @@ As mentioned in the preceding unit, we can use the [NASA Factsheet on the Space 
 
 As a reminder, the [Artemis program](https://www.nasa.gov/specials/artemis/?azure-portal=true) is NASA's second set of missions to land humans on the surface of the Moon. The program will launch in 2024 and will send not only the next pair of humans, but also the first woman to set foot on the Moon. The preparation for this mission is even bigger than focusing on a Moon landing. It will also provide space for a commercial payload on the ship and is the first step along the [Moon to Mars program](https://www.nasa.gov/topics/moon-to-mars?azure-portal=true). So, while the Artemis missions will likely bring home additional samples, there are other goals that might affect the amount of capacity that's required to do so. 
 
-## Creating an Artemis mission DataFrame
+## Create an Artemis mission DataFrame
 
 We don't have all the details about the Artemis mission, but we do know currently that three iterations of the rocket will be cycled through for each mission. Each rocket will have one version meant to sustain a crew and one meant only for cargo. For the purposes of this module, we will focus only on the three rockets meant to house crew, to be more aligned with the Apollo missions. We also know that the expected payload of the Space Launch System (SLS) is expected to grow with each iteration, but that the current weight of Orion (the command and lunar modules combined) has one estimated weight today. 
 

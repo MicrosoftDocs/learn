@@ -13,7 +13,7 @@ summary: Use the Custom Vision service to analyze images of animals, like Bungee
 abstract:  |
   In this module, you will:
   - Create a good dataset of images for training AI.
-  - Train a Custom Vision AI on a particular animal.
+  - Train Custom Vision AI on a particular animal.
   - Test the model you trained.
   - Ensure ethical practices throughout AI development.
 prerequisites: | 

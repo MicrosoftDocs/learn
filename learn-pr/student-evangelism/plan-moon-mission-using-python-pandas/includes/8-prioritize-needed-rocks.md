@@ -47,7 +47,7 @@ low_samples.head()
 low_samples.info()
 ```
 
-```output
+```Output
  #   Column         Non-null count  Dtype  
 ---  ------         --------------  -----  
  0   ID             27 non-null     int64  
@@ -65,7 +65,7 @@ Twenty-seven samples seems like a small amount to base a recommendation on. We c
 low_samples.Type.unique()
 ```
 
-```output
+```Output
 array(['Basalt', 'Breccia', 'Soil', 'Core'], dtype=object)
 ```
 
@@ -73,7 +73,7 @@ array(['Basalt', 'Breccia', 'Soil', 'Core'], dtype=object)
 rock_samples.Type.unique()
 ```
 
-```output
+```Output
 array(['Soil', 'Basalt', 'Core', 'Breccia', 'Special', 'Crustal'], dtype=object)
 ```
 
@@ -86,7 +86,7 @@ low_samples.groupby('Type')['Weight (kg)'].count()
 > [!NOTE]
 > Here we are using the **Weight (kg)** column to count the number of rows for each type that we've grouped by. The actual weight has no impact.
 
-```output
+```Output
 Type
 Basalt     14
 Breccia     8
@@ -102,7 +102,7 @@ needed_samples = low_samples[low_samples['Type'].isin(['Basalt', 'Breccia'])]
 needed_samples.info()
 ```
 
-```output
+```Output
  #   Column         Non-null count  Dtype  
 ---  ------         --------------  -----  
  0   ID             22 non-null     int64  

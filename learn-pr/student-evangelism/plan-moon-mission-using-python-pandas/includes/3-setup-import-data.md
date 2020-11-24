@@ -24,8 +24,8 @@ After you have installed the three previously listed items, follow these steps t
 > Make sure you are using the conda environment that you set up earlier.
 
 Your environment should look like this: 
- 
-![Local Visual Studio Code environment example.](../media/vscode-sample-return.png)
+
+:::image type="content" source="../media/vscode-sample-return.png" alt-text="Screenshot that shows an example of a local Visual Studio Code environment.":::
 
 ## Collect and import data
 
@@ -33,7 +33,7 @@ The data that you'll explore during this module is a file full of all the sample
 
 Download the [*rocksamples.csv*](https://aka.ms/LearnWithDrG/OverTheMoon/Data2?azure-portal=true) file and save it to your data folder. Your Visual Studio Code environment should look like this:
 
-![Local environment folder structure with data.](../media/vscode-data.png)
+:::image type="content" source="../media/vscode-data.png" alt-text="Screenshot that shows an example of a local environment folder structure with data.":::
 
 In the first Python cell in your *sample-return.ipynb* file, import pandas and read the data file in it as a pandas DataFrame:
 
@@ -64,7 +64,7 @@ rock_samples.info()
 > [!NOTE]
 > The output is truncated to include only the table summary of data.
 
-```output
+```Output
  #   Column       Non-null count  Dtype  
 ---  ------       --------------  -----  
  0   ID           2229 non-null   int64  
