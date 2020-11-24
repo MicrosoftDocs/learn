@@ -1,6 +1,6 @@
 Now that you have trained your AI, you can do a quick test to see how accurate it is so far. Select the **Quick Test** button in the upper-right corner of the Azure Custom Vision portal.
 
-:::image type="content" source="../media/model-quick-test.png" alt-text="Screenshot that shows the Quick Test button in the Custom Vision portal."::
+:::image type="content" source="../media/model-quick-test.png" alt-text="Screenshot that shows the Quick Test button in the Custom Vision portal.":::
 
 Choose an image that you *didn't* use to train the AI, and remember that it has to be 4 MB or smaller.
 
