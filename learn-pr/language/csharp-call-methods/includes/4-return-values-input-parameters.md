@@ -21,7 +21,7 @@ Other methods are designed to accept one or more input parameters.  The input pa
 
 When calling methods, you separate each input parameter with a `,` symbol.
 
-In the following line of code, the two input parameters define the upper and lower boundaries, respectively, for the `Next()` method as it generates a new random number.
+In the following line of code, the two input parameters define the lower and upper boundaries, respectively, for the `Next()` method as it generates a new random number.
 
 ```csharp
 int roll = dice.Next(1, 7);
