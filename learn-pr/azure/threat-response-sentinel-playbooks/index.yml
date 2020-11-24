@@ -2,14 +2,14 @@
 uid: learn.azure.threat-response-sentinel-playbooks
 metadata:
   title: Threat response with Azure Sentinel playbooks
-  description: TODO
-  ms.date: TODO
+  description: Provide an introduction to implementing threat response with Azure Sentinel playbooks.
+  ms.date: 10/21/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Threat response with Azure Sentinel playbooks
-summary: TODO
+summary: This module describes how to create Azure Sentinel playbooks to respond to security threats.
 abstract: |
   In this module you will:
   - Explain Azure Sentinel SOAR capabilities.
