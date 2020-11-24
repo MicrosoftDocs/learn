@@ -16,7 +16,7 @@ The **Logs** page has four main parts:
 - The query pane is where you write your own query expressions.
 - The query result pane displays the results of your queries.
 
-:::image type="content" source="../media/03-LOGS.png" alt-text="Screenshot of the default Logs page that shows four elements, Header bar, Tables pane, Queries pane and Query results/history pane." border="true":::
+:::image type="content" source="../media/03-LOGS.png" alt-text="Screenshot of the default Logs page that shows four elements: the Header bar, the Tables pane, the Queries pane, and the Query results/history pane." border="true":::
 
 ### Queries
 
