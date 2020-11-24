@@ -36,9 +36,6 @@ az storage account create \
   --name [your-unique-storage-account-name]
 ```
 
-> [!NOTE]
-> Why `--kind StorageV2`? There are a few different kinds of storage accounts. For most scenarios, you should use general-purpose v2 accounts. The only reason you need to explicitly specify `--kind StorageV2` is that general-purpose v2 accounts have not yet been made the default kind in the Azure CLI.
-
 ### Container
 
 The app you'll be working with in this module uses a single container. You're going to follow the best practice of letting the app create the container at startup. However, container creation can be done from the Azure CLI. If you'd like to see the documentation, in the Cloud Shell terminal, run `az storage container create -h`.
