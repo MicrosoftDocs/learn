@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Query and visualize data with Azure Sentinel workbooks
 durationInMinutes: 10
 content: |
-  [!include[] (includes/2-exercise-setup.md)]
+  [!include[](includes/2-exercise-setup.md)]
