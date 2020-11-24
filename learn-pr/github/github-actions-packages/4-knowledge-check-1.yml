@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-actions-packages.knowledge-check-1
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge
+  ms.date: 10/19/2020
+  author: cmaneu
+  ms.author: chmaneu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "In which file do you define the steps to execute in your GitHub Action?"
+    choices:
+    - content: "In a workflow .yml (YAML) file."
+      isCorrect: true
+      explanation: "The workflow .yml file, under the .github/workflows directory, contains the steps of your action."
+    - content: "In the Dockerfile"
+      isCorrect: false
+      explanation: "The Dockerfile tells how to build your container, not the steps of your CI."
+    - content: "In the package.json file"
+      isCorrect: false
+      explanation: "The package.json file is widely used in NodeJS projects, it's not used to define a GitHub Action."
+  - content: "During the lab, which action did you use to publish container image to GitHub Package?"
+    choices:
+    - content: "docker push command"
+      isCorrect: false
+      explanation: "While you can use docker push command to publish a container image, you've used a different method."
+    - content: "docker/build-push action step"
+      isCorrect: true
+      explanation: "This GitHub action builds and pushes an image to a container registry automatically."
+    - content: "npm publish"
+      isCorrect: false
+      explanation: "While this command publishes an npm package to an npm registry, we've published a container image with the docker/build-push action."
+  - content: "When pulling the image to your local environment, which credentials are needed?"
+    choices:
+    - content: "Your GitHub username and a Personal Access Token"
+      isCorrect: true
+      explanation: "GitHub Packages use your GitHub identity to authenticate you."
+    - content: "The name of the organization and an API Key"
+      isCorrect: false
+      explanation: "While you can share packages only within your organization, you need to use your GitHub identity to log in."
+    - content: "The name of the package and a package key"
+      isCorrect: false
+      explanation: "Accessing packages and container images is tied to your GitHub account, and not to a specific package."
