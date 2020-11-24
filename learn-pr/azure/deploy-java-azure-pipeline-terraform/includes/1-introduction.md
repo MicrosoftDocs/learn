@@ -1,4 +1,4 @@
-Imagine you're a Java developer 
+Imagine you're a infrastructure manager.
 
 ## Learning objectives
 
