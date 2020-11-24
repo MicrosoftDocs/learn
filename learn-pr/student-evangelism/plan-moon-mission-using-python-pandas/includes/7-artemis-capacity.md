@@ -16,7 +16,7 @@ artemis_mission = pd.DataFrame({'Mission':['artemis1','artemis1b','artemis2'],
 artemis_mission
 ```
 
-| Index | Mission | Total Weight (kg) | Payload (kg) |
+| Index | Mission | Total weight (kg) | Payload (kg) |
 |---|---|---|---|
 | 0 | artemis1 | 26520 | 26988 |
 | 1 | artemis1b | 26520 | 37965 |

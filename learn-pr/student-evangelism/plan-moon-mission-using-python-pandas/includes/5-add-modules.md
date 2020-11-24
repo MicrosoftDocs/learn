@@ -23,9 +23,9 @@ The modules are critical parts of the ship because they are designed precisely t
 ## Add in command and lunar module data
 
 By using the [NASA Space Science Data Coordinated Archive](https://nssdc.gsfc.nasa.gov/nmc/SpacecraftQuery.jsp?azure-portal=true), we gathered information about each module used in each mission. As you did when you created the samples tables, create six new columns, three for the lunar modules and three for the command modules:
-- Module Name
-- Module Mass 
-- Module Mass Diff
+- Module name
+- Module mass 
+- Module mass diff
 
 Fill in any `NaN` values with 0:
 

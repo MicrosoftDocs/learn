@@ -43,8 +43,8 @@ needed_samples.info()
  2   Type           68 non-null     object 
  3   Subtype        68 non-null     object 
  4   Weight (kg)     68 non-null     float64
- 5   Pristine(%)    68 non-null     float64
- 6   Remaining(kg)  68 non-null     float64
+ 5   Pristine (%)    68 non-null     float64
+ 6   Remaining (kg)  68 non-null     float64
  ```
 
 ## Summary of needed samples
@@ -68,7 +68,7 @@ Next, we want the total weight of each type of rock that was originally collecte
 ```python
 needed_sample_weights = needed_samples.groupby('Type')['Weight (kg)'].sum().reset_index()
 needed_samples_overview = pd.merge(needed_samples_overview, needed_sample_weights, on='Type')
-needed_samples_overview.rename(columns={'Weight (kg)':'Total Weight (kg)'}, inplace=True)
+needed_samples_overview.rename(columns={'Weight (kg)':'Total weight (kg)'}, inplace=True)
 needed_samples_overview
 ```
 
@@ -83,11 +83,11 @@ When astronauts are up on the Moon, one way they can identify rocks is by their 
 ```python
 needed_sample_ave_weights = needed_samples.groupby('Type')['Weight (kg)'].mean().reset_index()
 needed_samples_overview = pd.merge(needed_samples_overview, needed_sample_ave_weights, on='Type')
-needed_samples_overview.rename(columns={'Weight (kg)':'Ave Weight (kg)'}, inplace=True)
+needed_samples_overview.rename(columns={'Weight (kg)':'Average weight (kg)'}, inplace=True)
 needed_samples_overview
 ```
 
-| Index | Type | Total weight (kg) | Avg. weight (kg) |
+| Index | Type | Total weight (kg) | Average weight (kg) |
 |---|---|---|---|
 | 0 | Basalt | 17.42340 | 1.244529 |
 | 1 | Breccia | 10.11850 | 1.264812 |
@@ -106,7 +106,7 @@ needed_samples_overview['Percentage of rocks'] = needed_samples_overview['Number
 needed_samples_overview
 ```
 
-| Index | Type | Total weight (kg) | Avg. weight (kg) | Number of samples | Percentage of rocks |
+| Index | Type | Total weight (kg) | Average weight (kg) | Number of samples | Percentage of rocks |
 |---|---|---|---|---|---|
 | 0 | Basalt | 17.42340 | 1.244529 | 351 | 0.258850 |
 | 1 | Breccia | 10.11850 | 1.264812 |959 | 0.707227 |
@@ -128,12 +128,12 @@ We can use this number to determine how many of each rock we want the astronauts
 ```python
 needed_samples_overview['Weight to collect'] = needed_samples_overview['Percentage of rocks'] * artemis_ave_weight
 
-needed_samples_overview['Rocks to collect'] = needed_samples_overview['Weight to collect'] / needed_samples_overview['Avg.weight (kg)']
+needed_samples_overview['Rocks to collect'] = needed_samples_overview['Weight to collect'] / needed_samples_overview['Average weight (kg)']
 
 needed_samples_overview
 ```
 
-| Index | Type | Total weight (kg) | Avg. weight (kg) | Number of samples | Percentage of rocks | Weight to collect | Rocks to collect |
+| Index | Type | Total weight (kg) | Average weight (kg) | Number of samples | Percentage of rocks | Weight to collect | Rocks to collect |
 |---|---|---|---|---|---|---|---|
 | 0 | Basalt | 17.42340 | 1.244529 | 351 | 0.258850 | 16.624842 | 13.358345 |
 | 1 | Breccia | 10.11850 | 1.264812 |959 | 0.707227 | 45.422289 | 35.912271 |
