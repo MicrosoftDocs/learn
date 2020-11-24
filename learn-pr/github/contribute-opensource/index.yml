@@ -16,7 +16,6 @@ abstract: |
   - Create Pull Requests to open-source projects
   - Implement best practices to communicate with open-source maintainers and perform code reviews
   - Find and engage with open-source communities
-iconUrl: /learn/achievements/contribute-opensource.svg
 levels:
   - beginner
 roles:
@@ -47,5 +46,6 @@ units:
   - learn.github.contribute-opensource.5-next-steps
   - learn.github.contribute-opensource.6-knowledge-check
   - learn.github.contribute-opensource.7-summary
+iconUrl: /learn/achievements/github/contribute-to-an-open-source-project-on-github.svg
 badge:
-  uid: learn.contribute-opensource.badge
+  uid: learn.github.contribute-opensource.badge
