@@ -49,7 +49,7 @@ For more information, refer to the Windows support article on [High-contrast](ht
 
 If you prefer to use your own color theme for design purposes instead of system colors, consider these guidelines:
 
-**Color contrast ratio**: The updated Section 508 of the Americans with Disability Act, as well as other legislation, requires that the default color contrast between text and its background must be at least 4.5:1. The ratio specifically refers to the luminance contrast of the text and background. One way to think of luminance contrast is the difference between the lightness and darkness of the text and background colors. For example, white text on a black background has a ratio of 21:1. More colorful schemes for text and backgrounds can be used, but the ratio should be at least 4.5:1 or better.
+**Color contrast ratio**: The updated Section 508 of the Rehabilitation Act, as well as other legislation, requires that the default color contrast between text and its background must be at least 4.5:1. The ratio specifically refers to the luminance contrast of the text and background. One way to think of luminance contrast is the difference between the lightness and darkness of the text and background colors. For example, white text on a black background has a ratio of 21:1. More colorful schemes for text and backgrounds can be used, but the ratio should be at least 4.5:1 or better.
 
 The ratios for large text do not have to be as great. For large text, the required default contrast is 3:1. Large text is defined as font size 18-point and larger, or 14-point and **bold** (and larger).
 

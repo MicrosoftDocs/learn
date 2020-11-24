@@ -6,7 +6,7 @@ There are several advantages that a cloud environment has over a physical enviro
 
 - **Scalability**: Apps in the cloud can scale *vertically* and *horizontally*:
 
-   - Scale horizontally to increase compute capacity by adding RAM or CPUs to a virtual machine.
+   - Scale vertically to increase compute capacity by adding RAM or CPUs to a virtual machine.
    - Scaling horizontally increases compute capacity by adding instances of resources, such as adding VMs to the configuration.
 
 - **Elasticity**: You can configure cloud-based apps to take advantage of autoscaling, so your apps always have the resources they need.
