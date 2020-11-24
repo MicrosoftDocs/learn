@@ -4,12 +4,12 @@ title: 'Exercise: Provision a SQL Server on an Azure Virtual Machine'
 metadata:
   title: 'Exercise: Provision a SQL Server on an Azure Virtual Machine'
   description: "Exercise: Provision a SQL Server on an Azure Virtual Machine"
-  ms.date: 11/13/2020
+  ms.date: 11/24/2020
   author: wwlpublish
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 82683
+labId: 85068
 durationInMinutes: 15
 content: |
   [!include[](includes/6a-exercise-provision-sqlserver-azure-virtual-machine.md)]
