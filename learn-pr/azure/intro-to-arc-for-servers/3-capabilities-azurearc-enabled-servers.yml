@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-arc-for-servers.3.what-capabilities-azurearc-enabled-servers
+uid: learn.azure.intro-to-arc-for-servers.3-capabilities-azurearc-enabled-servers
 title: What are the core capabilities of Azure Arc enabled servers?
 metadata:
   title: What are the core capabilities of Azure Arc enabled servers?
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/3.what-capabilities-azurearc-enabled-servers.md)]
+  [!include[](includes/3-capabilities-azurearc-enabled-servers.md)]
 quiz:
   title: Check your knowledge
   questions:

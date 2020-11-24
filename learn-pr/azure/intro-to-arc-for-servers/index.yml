@@ -30,8 +30,8 @@ products:
 - azure-arc
 units:
 - learn.azure.intro-to-arc-for-servers.1-introduction
-- learn.azure.intro-to-arc-for-servers.2.what-characteristics-azurearc-enabled-servers
-- learn.azure.intro-to-arc-for-servers.3.what-capabilities-azurearc-enabled-servers
+- learn.azure.intro-to-arc-for-servers.2.characteristics-azurearc-enabled-servers
+- learn.azure.intro-to-arc-for-servers.3.capabilities-azurearc-enabled-servers
 - learn.azure.intro-to-arc-for-servers.4.simplify-management-maintenance-azurearc-servers
 - learn.azure.intro-to-arc-for-servers.5-summary
 badge:
