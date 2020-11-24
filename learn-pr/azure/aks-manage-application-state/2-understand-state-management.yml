@@ -37,7 +37,7 @@ quiz:
         - content: "It uses a set of objects called `PersistentVolume` and `PersistentVolumeClaim`."
           isCorrect: true
           explanation: "Correct. Those objects use the cluster's nodes to attach disks and give a pod their claim on that space."
-    - content: "What's a best practices for handling state in Kubernetes applications?"
+    - content: "What's a best practice for handling state in Kubernetes applications?"
       choices:
         - content: "Store the state inside Kubernetes only."
           isCorrect: false
