@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes.8-integrate-azure-monitor
 metadata:
   title: Integrate an Azure Arc enabled Kubernetes cluster with Azure Monitor
   description: In this unit you'll learn what is Azure Monitor for containers and how to implement it.
-  ms.date: TODO
+  ms.date: 11/13/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
