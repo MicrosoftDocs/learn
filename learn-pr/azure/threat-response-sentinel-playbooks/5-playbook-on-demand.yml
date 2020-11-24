@@ -3,7 +3,7 @@ uid: learn.azure.threat-response-sentinel-playbooks.5-playbook-on-demand
 metadata:
   title: Run playbooks on demand
   description: Run playbooks to respond to existing incidents.
-  ms.date: 29/10/2020
+  ms.date: 10/29/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
