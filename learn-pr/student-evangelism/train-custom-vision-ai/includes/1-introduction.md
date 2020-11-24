@@ -1,4 +1,4 @@
-![Over the Moon title art](..\media\otm-logo.png)
+:::image type="content" source="../media/otm-logo.png" alt-text="Image that shows Over the Moon title art." border="false":::
 
 In the new movie [Over the Moon](https://www.youtube.com/watch?v=26DIABx44Tw?azure-portal=true), Fei Fei exhibits resourcefulness and creativity as she seeks to help her father remember the story of Chang'e with its message of everlasting true love. In the film, Fei Fei uses her STEM skills, determination, and passion to fly to the Moon. The love of her friends helps her to get home.
 
@@ -10,14 +10,14 @@ In this module, you will choose an animal, which could be your pet. You will tra
 
 Remember, while you can use technical skills to build almost anything, the ultimate goal should always be to help people. Designing technology to help people is something Microsoft is passionate about, *especially* when it applies to AI. We focus on [AI for Good](https://www.microsoft.com/ai/ai-for-good?azure-portal=true). We want to encourage you to start your AI journey by always thinking about how you can help improve our world.
 
-This module is a part of a multi-modal approach to learning. You can also follow along with a video tutorial on the [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG?azure-portal=true).
+This module is a part of a multimodal approach to learning. You can also follow along with a video tutorial on the [Learn with Dr. G Learn TV video series](https://aka.ms/LearnWithDrG?azure-portal=true).
 
 ## Learning objectives
 
 In this module, you will learn how to:
 
 - Create a good dataset of images for training AI.
-- Train a Custom Vision AI on a particular animal.
+- Train a Custom Vision AI model on a particular animal.
 - Test the model you trained.
 - Ensure ethical practices throughout AI development.
 
