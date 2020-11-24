@@ -10,16 +10,16 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 2. You will be prompted to sign in to your Azure subscription.
 3. On the **Custom deployment** page, provide the following information:
-<!--LM: Global comment. Please note that tables should not have bold formatting and check all files for this. Also there are some extra * in the bolding that display in preview mode.-->
+
 |||
 | --- | --- |
-| **Subscription** | Select your Azure subscription. |
-| **Resource Group*** | Select **Create new** and provide a name for the resource group such as **azure-sentinel-rg**.|
-| **Locations*** | From the drop-down menu, select the location where you want to deploy the Azure Sentinel. |
-| **Workspace name***  | Provide a unique name for the Azure Sentinel workspace such as ***yourname*-sentinel**. |
-| **Location** | Accept the default value of **[resourceGroup().location]**. |
-| **Simplevm Name** | Accept the default value of **simple-vm**.|
-| **Simplevm Windows OS Version** | Accept the default value of **2016-Datacenter**.|
+| Subscription | Select your Azure subscription. |
+| Resource Group* | Select Create new and provide a name for the resource group such as azure-sentinel-rg.|
+| Locations* | From the drop-down menu, select the location where you want to deploy the Azure Sentinel. |
+| Workspace name*  | Provide a unique name for the Azure Sentinel workspace such as *yourname*-sentinel. |
+| Location | Accept the default value of [resourceGroup().location]. |
+| Simplevm Name | Accept the default value of simple-vm.|
+| Simplevm Windows OS Version | Accept the default value of 2016-Datacenter.|
 
 4. Select **Review + create**, and then select **Create**.
 
@@ -83,9 +83,9 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
     | Name  | Type  | Description |
     |---|---|---|
-    | ***yourname*-sentinel** | Log Analytics Workspace | Log Analytics workspace used by Azure Sentinel. |
-    | **SecurityInsights(*yourname*-sentinel** | Solution | Security insights for Azure Sentinel. |
-    | **simple-vm**| Virtual machine | Virtual machine used in the demonstration. |
-    | **simple-vmNetworkInterface** | Network interface | Network interface for the VM. |
-    | **st1*xxxxx*** | Storage account | Storage account used by the virtual machine. |
-    | **vnet1** | Virtual network | Virtual network for the virtual machine. |
+    | *yourname*-sentinel | Log Analytics Workspace | Log Analytics workspace used by Azure Sentinel. |
+    | SecurityInsights(*yourname*-sentinel** | Solution | Security insights for Azure Sentinel. |
+    | simple-vm| Virtual machine | Virtual machine used in the demonstration. |
+    | simple-vmNetworkInterface | Network interface | Network interface for the VM. |
+    | st1*xxxxx* | Storage account | Storage account used by the virtual machine. |
+    | vnet1 | Virtual network | Virtual network for the virtual machine. |
