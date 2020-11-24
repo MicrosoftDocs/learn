@@ -1,10 +1,10 @@
-Recall that in our container ship problem, Contoso Logistics has to optimize how it distributes containers between two ships. In other words, we have a set of container weights, *w*, which we would like to partition into two sets.
+Recall that in our container ship problem, Contoso Logistics has to optimize how it distributes containers between two ships. In other words, we have a set of container weights, *w*, which we would like to partition into two sets: ${W_a}$ and ${W_b}$.
 
-This short animation shows one possible way to optimize the distribution:
+Those two sets correspond to whether the container is loaded onto ship *a* or ship *b*, and we define ${\Delta}$ as the weight difference between the two ships.
+
+This short animation shows one possible way an optimizer might distribute the containers. The running time of the optimizer is measured in steps. At each step, we show the best solution found so far.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Quantum-Optimization-Container-Demo/player?format=ny]
-
-Those two sets correspond to whether the container is loaded onto ship *a* or ship *b*. ${\Delta}$ is the weight difference between the two ships. The running time of the optimizer is measured in steps. At each step, we show the best solution found so far.
 
 In this part, we'll use quantum-inspired optimization to solve the problem.
 
