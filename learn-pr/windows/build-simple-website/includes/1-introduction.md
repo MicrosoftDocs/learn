@@ -1,157 +1,39 @@
 ## Introduction
 
-It's impressive what's possible to accomplish with a website today. Web applications look and feel like native applications, but run in your web browser. These web apps require no updates from the user. There is no app store approval process, so when you publish your changes, they are immediately available to visitors. Progressive Web Apps show us the potential for what we can accomplish with a website. Features include faster loading, improved search, offline data storage, multi-device support, and push notifications.
+It's impressive what's possible to accomplish with a website today. You can build websites, or web apps, that look and feel like native applications, but that run in your web browser. But if you're interested in starting web development today, you may be faced by a dizzying array of options. In this module, we'll show you the basic components of a website, and the tools you can use to start web development. We'll use HTML, CSS, and Javascript together to build a simple website, and we'll use developer tools in the browser to check our work.
 
-But if you're interested in starting web development today, you may be faced by a dizzying array of options. How do you choose from the many tools and frameworks out there? What are the best practices you should be aware of, and common pitfalls to avoid?
+With this fundamental experience in place, you will have a better context to make decisions in the future about such things as choosing a JavaScript framework to build a user interface (UI).
 
-In this module, we'll show you the basic components of a web application, and the tools you can use to start web development. We'll use HTML, CSS, and Javascript together to build a simple website, we'll use developer tools in the browser to check our work, and we'll use Git to track changes so we can collaborate and recover from problems when they occur.
+Let's get started by taking a look at where we want to go.
 
-Let's get started by installing the tools we need and setting up our developer environment.
+## What's in a web page?
 
-## Installation and Setup
+A design principle in modern programming is the separation of concerns. For example, in a web page, the content, style, and business logic are generally separated into HTML, CSS, and JavaScript pages, respectively. HTML is presented as your content, the appearance is defined by CSS, and JavaScript is used to support interactivity with the user, that is, your business logic. Among the many reasons to separate concerns, one is simplicity and re-use. For example, by styling elements using CSS, you can apply styles to all the elements on a page, no matter the page complexity, rather than coding the appearance separately within each HTML element.
 
-### Using a source code editor
+## Scenario
 
-You could write an entire webpage in a text editor and save the file with the `.html` extension. After all, computer code is just characters written in a language computers understand. However, using a *source code editor* or *integrated development environment* (IDE) can help us to write better code. We can save time and reduce errors with features like autocomplete, syntax highlighting, and error checking.
+Imagine that you are a web developer, and asked to add support for light and dark themes to your company's website to make your site appeal to more customers. You create a simple, proof-of-concept site to demonstrate support for themes using CSS, and your write a JavaScript function to toggle the theme.
 
-Visual Studio Code is a code editor that works across different operating systems: Windows, macOS, and Linux. You can read more about [why Visual Studio Code](https://code.visualstudio.com/docs/editor/whyvscode) get a taste of its features.
+When completed, your simple website will look like this, when the dark theme is selected.
 
-### Download and install
+![Completed website with dark theme selected](../media/tbd.png)
 
-Our next step is to [download Visual Studio Code](https://code.visualstudio.com/Download) and install.
+## Learning objectives
 
-Visual Studio Code uses the Electron software framework, which relies on the V8 JavaScript engine.
+In this module, you will:
 
-If you're having trouble with installing Visual Studio Code, look through the [setup guide](https://code.visualstudio.com/docs/setup/setup-overview) for Windows, macOS, or Linux.
+- Create a basic web page using HTML
+- Apply styles to page elements using CSS
+- Create themes using CSS
+- Add support for switching the theme using JavaScript
 
-### Install extensions or packages
+## Prerequisites
 
-You can extend the functionality of Visual Studio Code using the [extensions marketplace](https://code.visualstudio.com/docs/editor/extension-gallery). Keep in mind these are community developed resources. There are often a few solutions for the same type of feature. You can install extensions individually in your editor, or several at once with the command line. See the [Visual Studio Code manual](https://code.visualstudio.com/docs/editor/extension-gallery) for more details about customization.
-
-For web development, the extensions and packages below will get you started.
-
-All we need right now is **open-in-browser**. To install a Visual Studio Code extension from the command line, use the following format.
-
-```bash
-code --install-extension techer.open-in-browser
-```
-
-You can take a peek at all the extensions you installed with the following command.
-
-```bash
-code --list-extensions
-```
-
-For more information about how to uninstall a an extension, visit the [Visual Studio Code user guide](https://code.visualstudio.com/docs/editor/extension-gallery).
-
-Way to go! Installation and setup can be hard work. Thankfully, we only need to install and setup once. Now we're ready to create a website.
+- [Visual Studio Code](https://code.visualstudio.com), a cross-platform code editor.
+- Familiarity with at least one programming language and one markup language like HTML
+- A computer that's running one of the following:
+  - Windows: Windows 7, 8, 10
+  - Mac: macOS 10.9 or later
+  - Linux: Ubuntu, Debian, Red Hat, Fedora, or SUSE
 
 
-
-### delete - Version control
-
-A *version control system* tracks changes so you can recall or recover your work. [Git](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) is a distributed version control system that also helps you collaborate with other developers. Some projects become so large or complex over time, and it's hard to imagine not having a system like Git to help you resolve issues and track changes.
-
-Although Visual Studio Code includes Git support, the only way to access all commands is with a *[command line interface](https://code.visualstudio.com/docs/editor/command-line)* (CLI or command line). Having a basic grasp of the command line can assist you with future web developer tasks.
-
-There are multiple CLI options available for you in Windows 10, **Command Prompt** and **PowerShell**. After installing Git, we'll also have the *Git Bash* CLI. All of these options have different commands. For consistency across operating systems, on Windows, we'll only use **Git Bash** after installation.
-
-> [!NOTE]
-> You can also use [Windows Subsystem for Linux](https://docs.microsoft.com/windows/wsl/about) to install your preferred Linux distribution on Windows, and access the **Bash** command line from there.
-
-In **Windows 10**, navigate to the CLI using one of the following methods.
-
-- **Start menu > Windows System > Command Prompt**
-- **Start menu > Windows PowerShell > Windows PowerShell**
-- Windows Logo Key+X
-
-For macOS, you can find the CLI using one of the following methods.
-
-- In **Finder** menu bar, navigate to **Go > Utilities > Terminal**
-- Or in **Finder**, navigate to **Applications > Utilities > Terminal**
-- Or use the shortcut Command+Shift+U and select **Terminal** to open.
-
-### delete - Install Git
-
-Before installing anything, you might want to check if you already have Git. In your command line interface, type `git --version` and then hit the enter (return) key.
-
-![Screenshot of Windows Command Prompt Git version](../media/git-version.png)
-
-If you have Git, you'll see a version number, which means you can skip installing it again.
-
-> [!IMPORTANT]
-> For macOS, you may see the message, "Choose an option in the dialog to download the command line developer tools." It's not a problem if you want to install these additional tools; however, it isn't necessary either. After the installation and rechecking your Git version, you might see a message like, "git version 2.17.2 (Apple Git-113)". If this is the case, then you should still install Git from the download page or Homebrew.
-
-![Screenshot of Windows Command Prompt Git installed](../media/git-installed.png)
-
-There are different ways to install and configure Git. You can visit the [Git download page](https://git-scm.com/downloads) and follow the [installation instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Stick with the default options as you proceed through the installer steps. After completing the installation, on Windows, you'll have another CLI option called [Git Bash](https://gitforwindows.org) (GitBash, Git BASH, Bash, or BASH).
-
-A *package manager* like [Homebrew](https://brew.sh) is another way to install Git. Package managers help you securely install software, keep everything updated, and manage dependencies. After installing Homebrew, you can install Git in the command line with the following command.
-
-```bash
-brew install git
-```
-
-Type `git --version` again to see that Git installed.
-
-## delete - Customize and configure
-
-### delete - Setup your Git identity
-
-Before committing changes to a project, it's a good idea to associate your information with Git, so you are set up for *distributed development*. The [first-time Git setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) guide walks you through the process.
-
-Using **Git Bash** or **Terminal**, enter the following after replacing `<YourName>` and `<YourEmail>` using the format demonstrated below.
-
-```bash
-git config --global user.name "Your Name"
-git config --global user.email you@example.com
-```
-
-You can check your assigned username and email with the following command.
-
-> [!NOTE]
-> You can skip this step for now because it's easier to use your source code editor in the next step.
-
-```bash
-git config --global --edit
-```
-
-If you do enter the command, a built-in text editor called Vim will show the result. To exit Vim, press Control+C, then enter the characters `:qa!` and press Enter (return). We can avoid these type of commands and edit more easily by using Visual Studio Code.
-
-### delete - Configure Git for your editor
-
-After creating a Git identity to tag your projects with, it's useful to associate your source code editor with Git. As a result, you can use your editor to open and edit files with Git. Also, you'll gain syntax highlighting for Git changes and conflict resolution when merging with other peoples' work. Otherwise, Git editing would take place in the default CLI text editor, which can be inhospitable.
-
-Use **Git Bash** or **Terminal** to configure [Visual Studio Code as your Git editor](https://code.visualstudio.com/Docs/editor/versioncontrol).
-
-```bash
-git config --global core.editor "code --wait"
-```
-
-To edit your Git configuration with Visual Studio Code, run the following.
-
-```bash
-git config --global -e
-```
-
-If you see the following error after typing this command, close Visual Studio Code, then move the Visual Studio Code application from **Downloads** to the **Applications** folder. Reopen Visual Studio Code from the **Applications** folder.
-
-```bash
-hint: Waiting for your editor to close the file... code --wait: code: command not found
-error: There was a problem with the editor 'code --wait'.
-```
-
-Now that we have an editor, it's easier to edit and save changes.
-
-To compare the differences between files, copy and paste this code into the Visual Studio Code configuration.
-
-```bash
-[diff]
-    tool = default-difftool
-[difftool "default-difftool"]
-    cmd = code --wait --diff $LOCAL $REMOTE
-```
-
-For macOS, save your changes in **Visual Studio Code** by going to the **File** menu and selecting **Save**. Or use the keyboard shortcut Command+S.
-
-![Screenshot of customizing Git configuration differences](../media/git-config-diff.png)

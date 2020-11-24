@@ -1,41 +1,6 @@
 At the moment we have an empty HTML file. Let's add some code! The goal is to use hypertext markup language (HTML) to describe the web page the browser should display. Wouldn't it be nice to have a starting template? Editors can conveniently fill in some of the typical boilerplate or HTML structure for you.
 
-### Creating files
 
-Let's fix our somewhat empty *public* directory by creating a few new files. At first glance, the `touch` command updates directory or file dates. However, `touch` has dual functionality and creates a file if it doesn't exist. Try out the command `touch index.html main.css app.js` to generate project files and `ls` to see the result. Powerful, the command line is.
-
-In Visual Studio Code, you can also create files with the command `code index.html main.css app.js`. These files are immediately opened in the editor, saving you a step, but also requires you to save each file.
-
-Remember, now that you're a command line superhero, "With great power comes great responsibility!"
-
-> [!WARNING]
-> Entering a few characters in the wrong way can delete your entire computer, so please check your commands and type carefully. For example, see `man rm` for more details.
-
-Now, these are empty files, so it's not uncommon to immediately want to open everything up in a source code editor and get to work.
-
-Assuming that you're using Visual Studio Code, type `code .` in the command line to open the directory in that application. A period indicates the current directory. To illustrate this for Windows try `start .` or for macOS `open .`. These commands open a new window in the file system with your current directory.
-
-We could build a website all in one text file or HTML file. Here we're using an HTML file for content and page structure. A CSS file is for presentation and styling. The  file is for behaviors and interactivity.
-
-Setting up three files helps us stay organized. It's an example of *progressive enhancement*. If JavaScript isn't enabled or supported, the CSS and HTML will still work. However, if CSS doesn't work, at least the HTML content will be displayed.
-
-## Open with Visual Studio Code
-
-When you open Visual Studio Code, the **Welcome** page opens. Notice you can create a new file or open a folder. You can also accomplish this by going to **File > New File**.
-
-![Screenshot of Visual Studio Code welcome window](../media/vs-code-welcome.png)
-
-Select **Open folder** in the Start section, or go to **File > Open** and select the **public** folder we previously created on the Desktop.
-
-If not visible, you can display the **Welcome** window by navigating to **Help > Welcome**. Alternately, select **View > Command Palette** or the keyboard shortcut Shift+Command+P. Then in the search field enter **>Help: Welcome**.
-
-![Screenshot of Visual Studio Code open folder](../media/vs-code-open-folder.png)
-
-When opening a folder, the operating system provides a button to create a **New Folder**. We don't need a new folder at the moment, so select the **Open** button to view files in Visual Studio Code.
-
-Notice on the left-hand side of the window, in the activity bar, there is now a badge over the Git icon indicating three new changes. We'll return to this topic in the *Tracking changes* unit.
-
-![Screenshot of Visual Studio Code Git badge](../media/vs-code-git-badge-new-files.png)
 
 ## Using autocomplete
 
