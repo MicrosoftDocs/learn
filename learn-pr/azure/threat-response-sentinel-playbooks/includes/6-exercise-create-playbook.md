@@ -51,10 +51,10 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 
 |||
 | --- | --- |
-| Specify subscription id: | **Subscription ID** |
-| Specify resource group: | **Resource group** |
-| Specify workspace id: | **Workspace ID** |
-| Specify alert id: | **System Alert ID** |
+| Specify subscription id | **Subscription ID** |
+| Specify resource group | **Resource group** |
+| Specify workspace id | **Workspace ID** |
+| Specify alert id | **System Alert ID** |
 
 15. In the **Choose an operation** window, in the search field, enter and select **Azure Sentinel**.
 16. From the **Actions** tab, locate and select **Change incident status (Preview)**.
@@ -62,9 +62,9 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 
 |||
 | --- | --- |
-| Specify subscription id: | **Subscription ID** |
-| Specify resource group: | **Resource group** |
-| Specify workspace id: | **Workspace ID** |
+| Specify subscription id | **Subscription ID** |
+| Specify resource group | **Resource group** |
+| Specify workspace id | **Workspace ID** |
 | Identifier | From the drop-down menu, select **Alert**. |
 | Specify alert / incident | **System Alert ID** |
 | Specify status | From the drop-down menu, select **Closed**. |
