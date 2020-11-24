@@ -4,11 +4,12 @@ title: 'Exercise: Create a CPU status alert for a SQL Server'
 metadata:
   title: 'Exercise: Create a CPU status alert for a SQL Server'
   description: "Exercise: Create a CPU status alert for a SQL Server"
-  ms.date: 11/23/2020
+  ms.date: 11/24/2020
   author: wwlpublish
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labId: 82845
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-create-cpu-status-alert.md)]
