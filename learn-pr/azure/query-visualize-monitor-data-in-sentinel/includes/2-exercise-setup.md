@@ -37,7 +37,7 @@ In this task, you will deploy an Azure Sentinel connector to Azure Activity.
 5. Select your subscription, and then select **Connect**.
 6. When you receive a status of **Connected**, close all open blades to return to the **Azure Sentinel|Data connector** blade.
 
-:::image type="content" source="02-Azure-Sentinel-Connector.PNG" alt-text="Screenshot of the Azure Sentinel Data connectors page." border="true":::
+:::image type="content" source="../media/02-Azure-Sentinel-Connector.PNG" alt-text="Screenshot of the Azure Sentinel Data connectors page." border="true":::
 
 > [!Note]
 > The connector for Azure Activity could take 15 minutes to deploy. You can proceed with the rest of the steps in the exercise and with the subsequent units in this module.
