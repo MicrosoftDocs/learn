@@ -42,12 +42,12 @@ Many programs use a `.env` file type to define program information that is confi
 
 1. Select the "Publish to GitHub" button.
 
-   :::image type="content" source="../media/source-control-management-publish.jpg" alt-text="The SCM publish view":::
+   :::image type="content" source="../media/source-control-management-publish.jpg" alt-text="The source control management publish view in visual studio code with the publish to github button outlined":::
 
 1. In the prompt, select "Publish to GitHub public repository".
 1. Uncheck the ".env.development" file as we don't want to publish that to GitHub.
 
-   ![Selecting which files to publish](../media/files-to-publish.jpg)
+   :::image type="content" source="../media/files-to-publish.jpg" alt-text="The command palette showing a list of files in the current project with checkboxes and the .env.development option unchecked":::
 
 1. Select "OK"
 
@@ -58,7 +58,7 @@ Many programs use a `.env` file type to define program information that is confi
 1. Select "Open in GitHub" from the notification in Visual Studio Code
 1. View your repository on github.com
 
-   :::image type="content" source="../media/first-commit.jpg" alt-text="Repo on github.com":::
+   :::image type="content" source="../media/first-commit.jpg" alt-text="The repository page on github.com showing the README file":::
 
 1. Notice that the commit message is set to "first commit".
 1. Notice that there is a new file called ".gitignore" in your project. This file was added by Visual Studio Code during the publish process.

@@ -8,19 +8,19 @@ Let's see how you can use Visual Studio Code to start a new project by cloning t
 
 2. Select the **Clone from GitHub** option from the dropdown and you will find a list of your repositories. You can also search for other repositories on GitHub. Search for a repository using this path "MicrosoftDocs/mslearn-python-products" and select the first option.
 
-   :::image type="content" source="../media/find-repository-to-clone.png" alt-text="Repo to clone":::
+   :::image type="content" source="../media/find-repository-to-clone.png" alt-text="The explorer view in Visual Studio Code showing with the clone respository button outlined and the clone from github option in the command palette":::
 
 3. Choose a location on your computer where you want the repository to be cloned into.
 4. Select **Open** from the pop-up that appears after Visual Studio Code has cloned the repository:
 
-   :::image type="content" source="../media/open-cloned-repository.png" alt-text="Open notification in Visual Studio Code":::
+   :::image type="content" source="../media/open-cloned-repository.png" alt-text="A notification in Visual Studio Code asking to open the clone respository with the open button outlined":::
 
 ## Comparing changes in commit history to gain context
 
 1. Open the `README.md` file from the file explorer. Once you have the file in the editor, expand the **Timeline** Pane
 
-   :::image type="content" source="../media/open-timeline.png" alt-text="Explorer icon in Visual Studio Code":::
+   :::image type="content" source="../media/open-timeline.png" alt-text="The explorer icon in Visual Studio Code":::
 
 2. Select the commit made by the user _Burke Holland_. This will open a read-only diff view so you can see all the changes associated with the commit. The green highlight shows that Burke has added those lines to the original content
 
-   :::image type="content" source="../media/timeline-view.png" alt-text="Diff editor":::
+   :::image type="content" source="../media/timeline-view.png" alt-text="The Visual Studio Code diff editor showing the differences in a file bwetween 2 commits":::

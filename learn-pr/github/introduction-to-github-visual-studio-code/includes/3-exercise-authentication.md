@@ -4,7 +4,7 @@ In this exercise, you'll learn how to authentication to GitHub with Visual Studi
 
 2. Select the extensions icon in the activity bar. Search for the "GitHub Pull Requests and Issues" extension and install it.
 
-   :::image type="content" source="../media/github-pull-requests-and-issues.png" alt-text="Extensions view in Visual Studio Code":::
+   :::image type="content" source="../media/github-pull-requests-and-issues.png" alt-text="Extensions view in Visual Studio Code showing search results":::
 
 3. Once you install the extension, you can select the gear icon at the bottom of the activity bar and select "Sign into use GitHub Pull Requests and Issues". A browser window will open and you'll be prompted to grant permission for Visual Studio Code to access GitHub.
 

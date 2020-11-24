@@ -30,7 +30,7 @@ If you haven't already initialized a repository for your project, you can publis
 
 The SCM View can be toggled in Visual Studio Code by selecting the SCM icon in the Activity Bar. You'll see a button that says "Publish to GitHub".
 
-:::image type="content" source="../media/sourfce-control-management-publish.jpg" alt-text="The SCM publish view":::
+:::image type="content" source="../media/source-control-management-publish.jpg" alt-text="The source control management publish view in visual studio code with the publish to github button outlined":::
 
 Clicking this button will initialize the publish process...
 
