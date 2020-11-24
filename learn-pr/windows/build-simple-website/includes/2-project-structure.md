@@ -20,7 +20,7 @@ Go to the location where you want to create the new folder, and select **New Fol
 
 ## Create some files
 
-Select **New file** in the Start section of the Welcome page, or go to **File > New**.
+Go to **File > New**.
 
 Save the file with Control+S (Windows) or Command+S (macOS). Name the file index.html.
 
@@ -39,10 +39,12 @@ Setting up three files helps us stay organized. It's an example of *progressive 
 
 You can extend the functionality of Visual Studio Code using the extensions marketplace. Keep in mind these are community developed resources. There are often a few solutions for the same type of feature. You can install extensions individually in your editor, or several at once with the command line.
 
-For web development, all we need right now is **open-in-browser**. To install this extension, select the Extensions icon on the Activity Bar (left pane).
+For web development, all we need right now is **open-in-browser**. This extension helps us to quickly open the website in your default browser, instead of copying and pasting the file URL into your browser.
+
+To install this extension, select the Extensions icon on the Activity Bar (left pane).
 
 Next, type "open" in the search bar, then select **open in browser**, published by TechER, and choose **Install**. The extension gets installed.
 
 Switch back to the Explorer window.
 
-Way to go! Installation and setup can be hard work, but we only need to install and setup once. Now we're ready to create a website.
+Way to go! Installation and setup takes extra time, but we only need to install and setup once. Now we're ready to create a website.

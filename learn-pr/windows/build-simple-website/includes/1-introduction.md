@@ -1,21 +1,21 @@
 
-It's impressive what's possible to accomplish with a website today. You can build websites, or web apps, that look and feel like native applications, but that run in your web browser. If you're interested in starting web development today, you may be faced by a dizzying array of options. In this module, we'll show you the basic components of a website, and the tools you can use to start web development. We'll use HTML, CSS, and Javascript together to build a simple website, and we'll use developer tools in the browser to check our work.
+It's impressive what's possible to accomplish with a website today. You can build websites, or web apps, that look and feel like native applications, but that run in your web browser. If you're interested in starting web development today, you may be faced by a dizzying array of options. In this module, we'll show you the basic components of a website, and the tools you can use to start web development. You'll use HTML, CSS, and Javascript together to build a simple website, and you'll use developer tools in the browser to check our work.
 
-With this fundamental experience in place, you will have a better context to make decisions in the future about such things as choosing a JavaScript framework to build a user interface (UI).
+With this fundamental knowledge in place, you will have a better context to make decisions in the future about such things as choosing JavaScript frameworks to build your website.
 
 Let's get started by taking a look at where we want to go.
 
-## What's in a web page?
-
-A design principle in modern programming is the separation of concerns. For example, in a web page, the content, style, and business logic are generally separated into HTML, CSS, and JavaScript pages, respectively. HTML is presented as your content, the appearance is defined by CSS, and JavaScript is used to support interactivity with the user, that is, your business logic. Among the many reasons to separate concerns, one is simplicity and re-use. For example, by styling elements using CSS, you can apply styles to all the elements on a page, no matter the page complexity, rather than coding the appearance separately within each HTML element.
-
 ## Scenario
 
-Imagine that you are a web developer, and asked to add support for light and dark themes to your company's website to make your site appeal to more customers. You create a simple, proof-of-concept site to demonstrate support for themes using CSS, and your write a JavaScript function to toggle the theme.
+Imagine that you are a web developer, and asked to add support for light and dark themes to your company's website to make your site appeal to a broader set of customers. You create a simple, proof-of-concept site to demonstrate support for themes using CSS, and your write a JavaScript function to toggle the theme.
 
 When completed, your simple website will look like this, when the dark theme is selected.
 
 TBD-screenshot
+
+## What's in a web page?
+
+A design principle in modern programming is the separation of concerns. For example, in a web page, the content, style, and business logic are generally separated into HTML, CSS, and JavaScript pages, respectively. HTML is your content, the appearance of the page is defined by CSS, and JavaScript is used to provide interactivity with the user, that is, your business logic. Among the many reasons to separate concerns, one is simplicity and re-use. For example, by styling elements using CSS, you can apply styles to all the elements on a page, no matter the page complexity, rather than coding the appearance separately within each HTML element.
 
 ## Learning objectives
 

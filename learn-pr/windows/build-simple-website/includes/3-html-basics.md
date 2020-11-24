@@ -1,8 +1,8 @@
 At the moment we have an empty HTML file. Let's add some code! The goal is to use hypertext markup language (HTML) to describe the web page the browser should display. Wouldn't it be nice to have a starting template? Editors can conveniently fill in some of the typical boilerplate or HTML structure for you.
 
-## Using autocomplete
+## Add some HTML code
 
-Visual Studio Code provides basic support for HTML programming out of the box. There is syntax highlighting, smart completions with IntelliSense, and customizable formatting. Visual Studio Code also includes great Emmet support (from the documentation on Emmet in Visual Studio Code).
+Visual Studio Code provides basic support for HTML programming out of the box. There is syntax highlighting, smart completions with IntelliSense, and customizable formatting.
 
 In **Visual Studio Code**, open `index.html` by selecting the `index.html` file. Select the `index.html` page and type `html:5`, then hit Enter (Return).
 
@@ -60,7 +60,7 @@ In **Visual Studio Code**, go to the line after the `<title>` element, type `lin
 
 ## Edit the body
 
-Let's start filling in the *body* element now. Add a *heading* `<h1>`, *paragraph* `<p>`, and create a *list item* `<li>`. Update your code so it looks like the following.
+Let's start filling in the *body* element now. Add a *heading* `<h1>`, *paragraph* `<p>`, and create a *list item* `<li>`. Update your code, or copy and paste, so it looks like the following.
 
 ```html
 <!DOCTYPE html>
@@ -99,7 +99,7 @@ To preview using **Visual Studio Code**, select `index.html` and select **Open I
 
 The webpage will open in your default browser.
 
-## delete - Developer tools
+## Developer tools
 
 You can inspect a webpage by using the developer tools in your browser. Let's give this a try.
 
