@@ -29,12 +29,12 @@ quiz:
           explanation: "There is not a 'Trusted Extensions' setting in Visual Studio Code."
     - content: "What is the best way to prevent files from being published to GitHub when you are publishing a new project that has not yet been initialized with Git."
       choices:
-        - content: "Add a .gitignore to your project".
+        - content: "Add a .gitignore to your project."
           isCorrect: false
           explanation: "While this will work, it's an extra step that isn't required."
         - content: "Right-click files and select 'Add to .gitignore'."
           isCorrect: false
-          explanation: "There is no option in the right-click menu for 'Add to .gitignore'"
+          explanation: "There is no option in the right-click menu for 'Add to .gitignore'."
         - content: "Select 'Add .gitignore' during the publish process."
           isCorrect: false
           explanation: "There is not a 'Add .gitignore' option in the Publish To GitHub process."
