@@ -100,9 +100,7 @@ In the previous example, the query indicated the visualization type for the data
 
 You can use the grid visualization option from the **Visualization** drop-down menu to present data in tables, which provides an enriched UI for the reports. You can then select the **Column Settings** option to specify which column will be displayed in the table and to provide column labels, if necessary.
 
-On the **Edit Column settings** tab, you can select a different column renderer such as, heatmap, bar, and spark area. If you select **Custom formatting**, you can set units, style, and formatting options for number values, as the following screenshot depicts.
-
-:::image type="content" source="../media/06-Edit-column-settings.PNG" alt-text="Screenshot of the column settings." border="true":::
+On the **Edit Column settings** tab, you can select a different column renderer such as, heatmap, bar, and spark area. If you select **Custom formatting**, you can set units, style, and formatting options for number values.
 
 ## Parameters
 
