@@ -27,6 +27,6 @@ quiz:
       explanation: explanation 2
     - content: response 3
       isCorrect: true
-      explanation: explanation 3: correct
+      explanation: explanation 3 correct
       
 
