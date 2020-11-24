@@ -23,7 +23,7 @@ The **Azure AD Sign-in logs** workbook contains predefined charts, graphs, and t
 
 On the **Azure AD Sign-in logs** page, you can expand the time range or filter the apps and users that have sign-in privileges in the Azure AD. For example, Contoso wants to identify users that can sign in to the Azure portal, so they can filter the data as displayed in the following screenshot.
 
-:::image type="content" source="../media/05-Filter-Users.PNG" alt-text="Screenshot that displays the filtering of users." border="true":::
+:::image type="content" source="../media/05-Filter-Users.PNG" alt-text="Screenshot that displays Sign0in Analyses with filtering of the users that sign-in in the Azure Portal." border="true":::
 
 Contoso is interested in identifying the failed sign-in attempts, so that they can display these accounts by selecting the information tiles, and then selecting a tile or a row to display more information such as:
 
@@ -40,7 +40,7 @@ The workbook contains additional tiles that indicate the users who signed in usi
 
 The rest of the page also contains tables and charts that are interactive and by selecting some of the rows or tiles, you can filter the data that is presented. Some tables are created with links to corresponding logs as displayed in the following screenshot.
 
-:::image type="content" source="../media/05-Links.PNG" alt-text="Screenshot of the links." border="true":::
+:::image type="content" source="../media/05-Links.PNG" alt-text="Screenshot of the links that can open the query in Azure Data Explorer or pin the query in dashboard." border="true":::
 
 > [!Note]
 You can also pin the query step in the private or shared dashboard for quick retrieval.
