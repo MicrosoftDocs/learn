@@ -7,7 +7,7 @@ For example, you can use Azure Sentinel Logs in Contoso to search data from mult
 
 ## Explore the Azure Sentinel Logs page
 
-You can search for specific logs on the **Azure Sentinel Logs** page, which you can access from the navigation pane in Azure Sentinel .
+You can search for specific logs on the **Azure Sentinel Logs** page, which you can access from the navigation pane in Azure Sentinel.
 
 The **Logs** page has four main parts:
 
@@ -20,14 +20,14 @@ The **Logs** page has four main parts:
 
 ### Queries
 
-When you select the **Queries** link on the page header, a new window opens,  where you can select from some of the predefined sample queries. From the **Queries** drop-down menu, you can filter these queries based on:
+When you select the **Queries** link on the page header, a new window opens, where you can select from some of the predefined sample queries. From the **Queries** drop-down menu, you can filter these queries based on:
 
 - Category
 - Resource Type
 - Solution
 - Topic
 
-You can start predefined queries by selecting **Run**, which will redirect you to the query pane, where you can observe the query structure and the results. To address Contoso's concern about unauthorized users, you can select the predefined query **Unauthorized Users**, as depicted in the following screenshot:
+You can start predefined queries by selecting **Run**, which will redirect you to the query pane, where you can observe the query structure and the results. To address Contoso's concern about unauthorized users, you can select the predefined query **Unauthorized Users**, as depicted in the following screenshot.
 
 :::image type="content" source="../media/03-Unauthorized-Users.png" alt-text="Screenshot that presents unauthorized users." border="true":::
 
@@ -37,7 +37,7 @@ You can use the **Query Explorer** link on the page header to access your previo
 
 ### Tables pane
 
-The **Tables** pane groups logs from different solutions into tables. You can expand the solution group and see all the logs that are collected. You can also select one of the logs from the tables pane, and then you can either preview the data or add that log to the **Favorites** section.
+The **Tables** pane groups logs from different solutions into tables. You can expand the solution group and observe all the logs that are collected. You can also select one of the logs from the tables pane, and then you can either preview the data or add that log to the **Favorites** section.
 
 The following screenshot displays the logs collected in Azure Sentinel solution.
 
@@ -45,7 +45,7 @@ The following screenshot displays the logs collected in Azure Sentinel solution.
 
 ### Queries pane
 
-You can use the **Queries** pane to create queries that retrieve data based on the expression that you provide. The **Query** pane can help you in writing a right query by providing suggestions and automatically filling the expected elements of the query.
+You can use the **Queries** pane to create queries that retrieve data based on the expression that you provide. The **Query** pane can help you in writing a right<!-- Can we change this to "correct" or "accurate" so as to avoid confusion with the multiple meanings for "right?" --> query by providing suggestions and automatically filling the expected elements of the query.
 You can use the capabilities of the Kusto query language (KQL) to write a query that retrieves data from the logs. The following example illustrates how to use KQL code in your queries to identify deleted virtual machines.
 
 ```kusto
@@ -58,18 +58,18 @@ AzureActivity
 
 ### Header toolbar
 
-The header toolbar provides additional interaction with the query, as displayed in the following screenshot:
+The header toolbar provides additional interaction with the query, as displayed in the following screenshot.
 
-:::image type="content" source="../media/03-Header-Toolbar.png" alt-text="Screenshot displaying the header toolbar." border="true":::
+:::image type="content" source="../media/03-Header-Toolbar.png" alt-text="Screenshot of the header toolbar, with options described in the text following the image." border="true":::
 
-You can save the query from the **Query** pane by selecting **Save**. This opens a new window on the right side, where you are prompted to enter the name of the saved query and category. Saved queries appear in the query explorer.
+You can save the query from the **Query** pane by selecting **Save**. This opens a new window, where you are prompted to enter the name of the saved query and category. Saved queries appear in the query explorer.
 In the **Time Range** field, you can provide a different time to change the time range for which you want to display the results of the query.
 You can also create a link for the query and share with other team members by selecting **Copy link to query**. You can also copy the query text.
 From the header toolbar in the **Query** pane, you can create either a **New Azure Monitor alert** or a **New Azure Sentinel alert**. If you opt to create a new Azure Sentinel alert, you will be directed to the next steps for creating an analytics rule.
 You can export the query into one of the following formats:
 
 - **Export to CSV**. Use this option to export all the columns, both visible and hidden, into a CSV file that you can open with Microsoft Excel.
-- **Export to CSV-Displayed Columns**. Use this option to  export only those columns that are shown in the results windows of the query.
+- **Export to CSV-Displayed Columns**. Use this option to export only those columns that are shown in the results windows of the query.
 - **Export to Power BI (M query)**. Use this option to create and download a **PowerBIQuery.txt** file that you can open with Microsoft Power BI application.
 
 You can pin the results of the query into a private or shared dashboard so you can quickly examine the results of the query.
@@ -80,4 +80,4 @@ You can use **Format query** on the header toolbar to make the query more readab
 
 ### Query results
 
-In the **Query results** pane, you can observe the results of the query. You can also present the results using chart or hide and show additional columns to filter the results of the query.
+In the **Query results** pane, you can observe the results of the query. You can also present the results using a chart, or hide and show additional columns to filter the query results.

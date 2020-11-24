@@ -1,5 +1,4 @@
-The Contoso SecOps team had recently faced issues when users with compromised accounts had tried to access Contoso's customer data. Azure Sentinel provides several monitoring and reporting features that will help alert Contoso about potential security threats.
-Azure Sentinel workbooks provide interactive reports with graphs, charts, and tables, and security administrators can use these features to visualize their security data by using advanced filtering. The SecOps team can use these techniques to gain more insights into their data during their investigations.
+The Contoso SecOps team had recently encountered issues when users with compromised accounts had tried to access Contoso's customer data. Azure Sentinel provides several monitoring and reporting features that will help alert Contoso about potential security threats. Azure Sentinel workbooks provide interactive reports with graphs, charts, and tables, and security administrators can use these features to visualize their security data by using advanced filtering. The SecOps team can use these techniques to gain more insights into their data during their investigations.
 
 ## Learn more
 
