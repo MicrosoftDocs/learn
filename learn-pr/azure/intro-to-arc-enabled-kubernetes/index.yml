@@ -40,4 +40,4 @@ units:
 - learn.azure.intro-to-arc-enabled-kubernetes.7-integrate-azure-monitor
 - learn.azure.intro-to-arc-enabled-kubernetes.8-summary
 badge:
-  uid: learn.azure.intro-to-arc-enabled-kubernetes
+  uid: learn.azure.intro-to-arc-enabled-kubernetes.badge
