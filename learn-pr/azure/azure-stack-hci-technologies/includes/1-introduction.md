@@ -1,7 +1,5 @@
 Before you explore Microsoft Azure Stack Hyperconverged Infrastructure (HCI) architecture and functionality, it is important to understand the technologies that serve as its underlying core components.
 
-<!--Marcin, I deleted the heading of Scenario, as I believe Jason had asked us to remove it in earlier reviews. Please let me know if the guidance is different now. -->
-
 Contoso, Ltd. is a medium-size financial-services company with its headquarters in New York and branch offices across the United States. It's currently operating almost entirely on-premises, with the majority of its servers running either Windows Server 2012 R2 or one of several Linux distributions.
 
 Contoso's IT director realizes that their organization has an outdated operational model with limited resiliency and hardware reaching end of life. The Contoso IT Engineering team is exploring the option of migrating some of the more critical workloads to Azure. However, due to regulatory and compliance constraints, this is not the option in many cases. As the lead system engineer at Contoso, you suggest evaluating Azure Stack HCI as an alternative approach to modernize on-premises workloads, increase their resiliency, and streamline their operational model.
@@ -23,7 +21,7 @@ After completing this module, you'll be able to:
 
 To get the best learning experience from this module, you should have knowledge of, and experience with, the following:
 
-- Windows Server Hyper-V <!--Marcin, should this be Microsoft Hyper-V-->
+- Windows Server Hyper-V
 - Window Server software-defined storage
 - Windows Server software-defined networking (SDN)
 - Windows Server operating system management

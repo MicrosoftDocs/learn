@@ -1,19 +1,17 @@
 To start your exploration of Azure Stack HCI technologies, you'll start with its core compute virtualization functionality that Hyper-V provides.
 
-<!--Marcin, the opening sentence for the topic is supposed to be just a sentence or two. I moved the rest of the content to come under the following heading and I added another heading for the architecture. Please check that is okay.-->
-
 ## What is Hyper-V?
 
-Hyper-V is the Microsoft implementation of hypervisor. Hyper-V leverages the resources of a single *host* computer by distributing them across multiple virtual machines (VMs) running on the same physical hardware. <!--Marcin, I made a few edits to the prev sentence. please review--> Hyper-V provides an isolated space for each VM to run its own operating system (OS) that's independent of the host's OS and other VMs.
+Hyper-V is the Microsoft implementation of hypervisor. Hyper-V leverages the resources of a single *host* computer by distributing them across multiple virtual machines (VMs) running on the same physical hardware. Hyper-V provides an isolated space for each VM to run its own operating system (OS) that's independent of the host's OS and other VMs.
 
 > [!NOTE]
 > Hyper-V is available as a server role for Windows Server and Azure Stack HCI, as a feature in 64-bit versions of the Windows client OS, and as a standalone product called *Microsoft Hyper-V Server*. Each Hyper-V version includes similar features, and this module focuses on the Hyper-V server role for Windows Server.
 
 ## Hyper-V architecture
 
-When you install the Hyper-V server role, the installation process inserts a software layer known as the *hypervisor*  into the boot process. <!--Marcin, I changed this to active voice by saying "th installation process inserts". Please review if that is okay or should it be  Windows inserts?--> The hypervisor controls access to the host's physical hardware. The installation process installs all hardware drivers only in the host operating system (also known as the *parent partition*). All VMs running on the host communicate only with virtualized hardware.
+When you install the Hyper-V server role, the installation process implements a software layer known as the *hypervisor*. The hypervisor controls access to the host's physical hardware. The installation process installs all hardware drivers only in the host operating system (also known as the *parent partition*). All VMs running on the host communicate only with virtualized hardware.
 
-The following diagram depicts the high-level architecture of Hyper-V. The Hyper-V hypervisor takes full control of the hardware virtualization capabilities (orange arrow), <!--Marcin, we cannot refer to color indicators as color blind or visually impaired people will nto be able to make this out. Can we delete this or change this to "virtualization capabilities (depicted by the arrow going from the CPU layer to the Hypervisor layer)--> and does not expose them to the guest OS.
+The following diagram depicts the high-level architecture of Hyper-V. The Hyper-V hypervisor takes full control of the hardware virtualization capabilities (depicted by the arrow from the CPU layer to the Hypervisor layer) and does not expose them to the guest OS.
 
 :::image type="content" source="../media/2-hyper-v-architecture.png" alt-text="Image of a non-nested virtualization environment, with the CPU layer at the bottom, on top of which is a Hypervisor layer, followed by the root host OS and guest OS." :::
 
