@@ -24,7 +24,7 @@ If you are familiar with Apache Spark, you can find the standard Apache Spark hi
 
 The other possibility of opening the Apache Spark History server is by navigating to the Data tab, where if you create a notebook and read a dataframe you can go to the bottom of the page where you'll find the Spark History Server known as the Spark UI.  
 
-From your Azure Synapse Studio notebook, select **Open Spark UI** from the job execution output cell or from the status panel at the bottom of the notebook document. 
+1. From your Azure Synapse Studio notebook, select **Open Spark UI** from the job execution output cell or from the status panel at the bottom of the notebook document. 
 
    [![Open Spark UI through Data Tab](../media/spark-interface-data-tab-server.png "Spark UI")](../media/spark-interface-data-tab-server.png#lightbox)
 

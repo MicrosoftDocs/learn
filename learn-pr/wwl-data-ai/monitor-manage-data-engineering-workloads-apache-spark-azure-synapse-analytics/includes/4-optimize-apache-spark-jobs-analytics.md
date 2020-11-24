@@ -42,7 +42,7 @@ Why Parquet?
 It stores data in a columnar format, is compressed and highly optimized in Spark, as well ass, splittable in order to decompress. 
 
 When it comes to the caching, there is a native built in Spark caching mechanism. 
-It can be used through different methods like: .persist()`, `.cache()`, and `CACHE TABLE`. 
+It can be used through different methods like: `.persist()`, `.cache()`, and `CACHE TABLE`. 
 When using small datasets, it might be effective.
 In ETL pipelines where caching of intermediate results is necessary this might come in handy too. 
 Just take in mind that is you need to do partitioning, the spark native caching mechanism might have some downsides. 

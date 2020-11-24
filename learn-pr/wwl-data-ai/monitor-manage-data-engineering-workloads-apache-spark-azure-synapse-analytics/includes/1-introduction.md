@@ -9,7 +9,7 @@ After completing this module, you will be able to:
 * Optimize Apache Spark jobs in Azure synapse analytics
 * Automate scaling of Apache Spark pools in Azure synapse analytics
 
-## Prerequisite
+## Prerequisites
 Before taking this module, it is recommended that you complete the following modules:
 
 * Data Fundamentals
