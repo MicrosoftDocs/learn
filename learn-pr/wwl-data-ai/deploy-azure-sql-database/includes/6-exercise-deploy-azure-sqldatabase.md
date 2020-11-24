@@ -213,7 +213,7 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
     ORDER BY [OverallOrderSubTotal] DESC
     ```
     > [!NOTE]
-    > If you'd like to copy and paste the code you can find the code in the **D:\LabFiles\Deploy Azure SQL Database\Deploy Azure SQL Database.sql** file.
+    > If you'd like to copy and paste the code you can find the code in the **D:\LabFiles\Deploy Azure SQL Database\Lab Queries Notes.sql** file.
 
 1. Select the blue circle with the arrow to execute the query. Note how the results are included within the cell with the query.
 
