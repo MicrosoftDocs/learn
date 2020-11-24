@@ -42,7 +42,7 @@ Many programs use a `.env` file type to define program information that is confi
 
 1. Select the "Publish to GitHub" button.
 
-   :::image type="content" source="../media/source-control-management-publish.jpg" alt-text="The source control management publish view in visual studio code with the publish to github button outlined":::
+   :::image type="content" source="../media/source-control-management-publish.jpg" alt-text="The source control management publish view in visual studio code with the publish to GitHub button outlined.":::
 
 1. In the prompt, select "Publish to GitHub public repository".
 1. Uncheck the ".env.development" file as we don't want to publish that to GitHub.
@@ -53,7 +53,7 @@ Many programs use a `.env` file type to define program information that is confi
 
    The project will now be published to GitHub.
 
-## Step 3: View project On GitHub
+## Step 3: View project on GitHub
 
 1. Select "Open in GitHub" from the notification in Visual Studio Code
 1. View your repository on github.com
