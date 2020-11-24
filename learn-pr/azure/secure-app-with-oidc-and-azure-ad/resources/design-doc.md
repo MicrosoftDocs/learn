@@ -130,7 +130,7 @@ Identify the subtasks of *Secure your application with OpenID Connect and Azure 
 
 ## Notes
 
-- This sample shows how to use the OpenID Connect ASP.Net OWIN middleware to sign in users from a single Azure AD tenant. The middleware is initialized in the Startup.Auth.cs file, by passing it the Client ID of the application and the URL of the Azure AD tenant where the application is registered. The middleware then takes care of:
+- This sample shows how to use the OpenID Connect ASP.NET OWIN middleware to sign in users from a single Azure AD tenant. The middleware is initialized in the Startup.Auth.cs file, by passing it the Client ID of the application and the URL of the Azure AD tenant where the application is registered. The middleware then takes care of:
 - Downloading the Azure AD metadata
 - Processing OpenID Connect sign-in responses
 - Integrating with the session cookie

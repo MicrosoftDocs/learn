@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.publish-openapi-documentation
-title: Document an ASP.Net Core Web API with Swagger tools
+title: Document an ASP.NET Core Web API with Swagger tools
 metadata:
-  title: Document an ASP.Net Core Web API with Swagger tools
-  description: Document an ASP.Net Core Web API with Swagger tools
+  title: Document an ASP.NET Core Web API with Swagger tools
+  description: Document an ASP.NET Core Web API with Swagger tools
   ms.date: 05/06/2019
   author: rmcmurray
   ms.author: robmcm

@@ -1,6 +1,6 @@
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-Before you manage the Azure Batch services from a .Net application, you have to create the Azure Batch account and Storage account. You can use the Azure portal, Powershell, Azure CLI, or the Batch Management API to create these accounts.
+Before you manage the Azure Batch services from a .NET application, you have to create the Azure Batch account and Storage account. You can use the Azure portal, Powershell, Azure CLI, or the Batch Management API to create these accounts.
 
 In this unit, you'll create an Azure Batch and Azure Storage account using the Azure portal.
 
