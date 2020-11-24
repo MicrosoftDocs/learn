@@ -1,4 +1,5 @@
-![Fei Fei and her mother looking into the sky as her mother tells the story of Chang'e.](../media/fei-fei-mother-story.png)
+
+:::image type="content" source="../media/fei-fei-mother-story.png" alt-text="Image that shows Fei Fei and her mother looking into the sky as her mother tells the story of Chang'e." border="false":::
 
 In *Over the Moon*, Fei Fei's mother tells the story of Chang'e. Chang'e is the Moon Goddess who tried to escape with the love of her life but ended up living eternally alone on the Moon. Fei Fei and her mother gaze into the clear night sky as her mother tells Fei Fei that Chang'e's tears turn to star dust. That dust is what we see flying across our skies at night. 
 
@@ -20,7 +21,7 @@ You can learn more about meteors and meteor showers on the [NASA Solar System Ex
 
 . . . Or meteor showers could be flying frogs. Who's to say?
 
-![Frogs flying through space.](../media/flying-frogs.png)
+:::image type="content" source="../media/flying-frogs.png" alt-text="Image that shows frogs flying through space." border="false":::
 
 ### Meteors from comets 
 

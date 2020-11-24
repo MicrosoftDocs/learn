@@ -39,4 +39,4 @@ After you install everything, follow these steps to prepare your environment:
 
 Your environment should look like this screenshot:
 
-![Screenshot showing a local Visual Studio Code environment example.](../media/visual-studio-code-env.png)
+:::image type="content" source="../media/visual-studio-code-env.png" alt-text="Screenshot that shows a local Visual Studio Code environment example.":::
