@@ -1,9 +1,8 @@
-So far we've used real-world data. But we can account for one more bit of information from *Over the Moon*. That is, when Chang'e cries, she creates stardust and meteor showers. 
+So far we've used real-world data. But we can account for one more bit of information from *Over the Moon*. That is, when Chang'e cries, she creates star dust and meteor showers. 
 
 Although we don't know when this crying might happen, we *do* know that it happened at one moment in the film. We can create new data that takes this phenomenon into account!
 
-![Image of Chang'e.](../media/change.png)
-
+:::image type="content" source="../media/change.png" alt-text="Image of Chang'e." border="false":::
 ## Determine the right data
 
 We know that Fei Fei travels to Lunaria after the Moon Festival. Though we don't know exactly how long it takes her to prototype, test, and build a rocket to the Moon, we can make a guess. 
@@ -38,7 +37,7 @@ constellations = constellations.append(draco_constellation, ignore_index=True)
 
 Your code should look like this:
 
-![The code that includes the new Chang'e meteor shower at the top.](../media/add-change-draco.png)
+:::image type="content" source="../media/add-change-draco.png" alt-text="Screenshot that shows the code that includes the new Chang'e meteor shower at the top.":::
 
 Now rerun all of the code in your notebook:
 
@@ -91,4 +90,4 @@ Though the Moon will be bright, Chang'e's meteor shower is best seen if you look
 
 Now we know that when Fei Fei's family gathers for the Moon Festival, they might be able to look into the sky to see Chang'e showering them. We hope she showers them with tears of happiness and remembrance instead of sadness.
 
-![Fei Fei's family gathering for the Moon Festival.](../media/moon-festival-gathering.png)
+:::image type="content" source="../media/moon-festival-gathering.png" alt-text="Imagae that shows Fei Fei's family gathering for the Moon Festival." border="false":::

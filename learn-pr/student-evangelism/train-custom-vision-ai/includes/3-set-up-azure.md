@@ -22,7 +22,7 @@ To get started creating a resource group, follow these steps:
 1. Select **Review + create**.
 1. Select **Create**.
 
-![Creating a new resource group on Azure.](../media/create-resource-group.png)
+:::image type="content" source="../media/create-resource-group.png" alt-text="Screenshot that shows creating a new resource group on Azure.":::
 
 You can go to your resource group now. If you ever lose your resource group, you can find it by entering **Resource Group** in the top search bar again and then selecting the resource group.
 

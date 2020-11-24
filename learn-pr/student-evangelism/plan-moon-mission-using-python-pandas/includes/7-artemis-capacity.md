@@ -11,7 +11,7 @@ Again, we will call the command and lunar modules the *crewed area*, and we can 
 ```python
 artemis_crewedArea = 26520
 artemis_mission = pd.DataFrame({'Mission':['artemis1','artemis1b','artemis2'],
-                                 'Total Weight (kg)':[artemis_crewedArea,artemis_crewedArea,artemis_crewedArea],
+                                 'Total weight (kg)':[artemis_crewedArea,artemis_crewedArea,artemis_crewedArea],
                                  'Payload (kg)':[26988, 37965, 42955]})
 artemis_mission
 ```

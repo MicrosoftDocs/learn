@@ -49,7 +49,7 @@ To make sure that everything is loaded in correctly, print the top five lines of
 rock_samples.head()
 ```
 
-|   | ID | Mission | Type | Subtype | Weight(g) | Pristine(%) |
+|   | ID | Mission | Type | Subtype | Weight (g) | Pristine (%) |
 |---|---|---|---|---|---|---|
 | 0 | 10001 | Apollo11 | Soil | Unsieved | 125.8 | 88.36 |
 | 1 | 10002 | Apollo11 | Soil | Unsieved | 5629.0 | 93.73 |
@@ -65,7 +65,7 @@ rock_samples.info()
 > The output is truncated to include only the table summary of data.
 
 ```output
- #   Column       Non-Null Count  Dtype  
+ #   Column       Non-null count  Dtype  
 ---  ------       --------------  -----  
  0   ID           2229 non-null   int64  
  1   Mission      2229 non-null   object 
@@ -80,5 +80,5 @@ From this output, we can see that 2,229 samples were collected from the Apollo m
 - *Mission* - The mission responsible for retrieving the sample.
 - *Type* - The type of sample (type of rock or other classification).
 - *Subtype* - A more specific type classification.
-- *Weight(g)* - The original weight of the sample, in grams.
-- *Pristine(%)* - The percentage of the sample that remains (some sample is used up during research).
+- *Weight (g)* - The original weight of the sample, in grams.
+- *Pristine (%)* - The percentage of the sample that remains (some sample is used up during research).

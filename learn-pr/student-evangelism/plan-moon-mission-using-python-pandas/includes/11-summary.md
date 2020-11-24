@@ -1,6 +1,6 @@
 You've watched Fei Fei design, prototype, test, and ultimately succeed at creating a rocket that launched her to the Moon. And you've experienced a taste of what NASA scientists and engineers might analyze to determine how to account for every ounce of weight on a rocket. It's now clear why data-science skills and practices are so critical to space exploration. 
 
-NASA might have a lot more information and clearer standards than we can decipher online for this analysis, but the exploration and understanding of data from multiple sources is pervasive throughout many other industries as well. This means that you can apply the knowledge and skills you've acquired in the journey you've just completed to solving countless other problems. 
+NASA might have a lot more information and clearer standards than we can decipher online for this analysis, but the exploration and understanding of data from multiple sources is pervasive throughout many other industries as well. This means that you can apply the knowledge and skills you've acquired in the journey you just completed to solving countless other problems. 
 
 In this module, you have:
 - Gathered information about samples brought back from the Moon via the Apollo missions.

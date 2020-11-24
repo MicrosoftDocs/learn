@@ -2,7 +2,7 @@ Recall that in the data science project life cycle, after you have the data for 
 
 ## Exercise: Import data
 
-First, import the .csv files into your Python notebook. Import numpy and pandas:
+First, import the .csv files into your Python notebook. Import NumPy and pandas:
 
 ```python
 import numpy as np 
@@ -11,7 +11,7 @@ import pandas as pd
 
 Make sure you run the cell to ensure you have your environment set up. Your Visual Studio Code notebook should look like this:
 
-![Import pandas and numpy code in Visual Studio Code.](../media/import-pandas-numpy.png)
+:::image type="content" source="../media/import-pandas-numpy.png" alt-text="Screenshot that shows importing pandas and NumPy code in Visual Studio Code.":::
 
 Notice the `[1]` in the upper-left corner of the cell where you have your imported code. That number means that the cell has finished running. There's no output between the first and second cell, so you know the code was successful. 
 

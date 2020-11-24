@@ -68,7 +68,8 @@ Here's the data we've already gathered:
 - [cities.csv](https://aka.ms/LearnWithDrG/OverTheMoon/Data?azure-portal=true) - This file contains a list of country capitals and their associated latitudes. (Data acquired from [Wikipedia](https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude?azure-portal=true)) 
 
 Download these files and save them in your *over-the-moon/meteor-showers/data* folder:
-![Showing all four C S V data files in the data folder within Visual Studio Code.](../media/data-downloaded.png)
+
+:::image type="content" source="../media/data-downloaded.png" alt-text="Screenshot that shows all four C S V data files in the data folder in Visual Studio Code.":::
 
 ## Other data to consider
 
