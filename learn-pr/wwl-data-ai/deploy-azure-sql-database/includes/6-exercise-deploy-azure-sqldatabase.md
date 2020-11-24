@@ -77,7 +77,7 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
     - Location: Select the Region you selected in the previous steps
     - Select **OK**
 
-1. On the next page enter the following:
+1. Scroll down on the Create SQL Database Basics page, and enter the following:
 
     - Want to use Elastic Pool: **No**
     - Compute + Storage: Select **Configure database**
