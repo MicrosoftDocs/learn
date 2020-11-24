@@ -10,12 +10,22 @@ Since these are always defined within namespaces in Q#, we could consider a libr
 
 When such a library has been made available to a Q# project, its namespaces can then be accessed via standard `open NamespaceName;` statements at the beginning of your Q# file, and thus its operations, functions, and types can be utilized.
 
+> [!NOTE]
+> Namespaces can be also be partially defined in each of several different libraries.
+> In this case, the compiler will still recognize the namespace regardless, but if you try to call a function from a particular library that is missing, an error will be raised that the function is not found in the namespace. 
+
 ## How are Q# libaries distributed?
 
 Libraries in Q# are distributed as [NuGet](https://www.nuget.org/) packages.
-Since these can be directly added to your Q# projects, this also allows for the use of third-party libraries that are not released as part of the QDK. 
 
-TO DO: add mention of "per project" install stuff somewhere
+> [!NOTE]
+> NuGet is the primary package manager for .NET languages, enabling developers to produce, share, and consume useful code. 
+> A NuGet *package* is essentially a ZIP file containing compiled code and related files.
+
+The Quantum Development Kit uses NuGet to give Q# projects access to, and thus use the code from, any such package.
+Since they are all hosted through NuGet, users can easily use the Q# libraries produced by Microsoft, as well as other third-party libraries that are not released as part of the QDK. 
+
+As you will learn further below, the simple process of adding these libraries to your projects is the same regardless.
 
 ## What libraries come with the QDK?
 
@@ -34,8 +44,6 @@ Then, there are three libraries focused on more domain-specific functionality:
 > However, although the domain-specific libraries are also part of the QDK, this does not mean that your Q# projects will automatically have access to their contents. 
 > As we explain below, their respective packages must be explicitly added to each project. 
 
-### Third-party libraries
-FILL with quick mention
 
 ## How can I add a Q# library to my project?
 

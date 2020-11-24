@@ -1,7 +1,6 @@
-> [!NOTE]
-> Need: decision on whether to do a video to walk through of API doc page 
 
 When working with nearly any programming language, one of the most important development tools at your disposal is the API documentation itself.
+**Todo: define "API documentation"
 In this unit, you will familiarize yourself with the Q# API documentation: where to find it and how to read it. 
 
 ## Where is it?
@@ -36,7 +35,7 @@ We'll be using the `ControlledOnInt` function later in the module, so lets take 
 ## Where does it come from?
 
 The API documentation is automatically generated from the documentation comments within the Q# source code. 
-For the Q# libraries, this is located in the GitHub repository [microsoft/QuantumLibraries](https://github.com/microsoft/QuantumLibraries).
+For the Q# libraries, these API documentation comments are located in the [microsoft/QuantumLibraries](https://github.com/microsoft/QuantumLibraries), [microsoft/qsharp-runtime](https://github.com/microsoft/qsharp-runtime), and [microsoft/quantum-nc](https://github.com/microsoft/quantum-nc) repositories on GitHub.
 
 Later in the module, you'll learn more about how the documentation is written in the source code when you write documentation comments for your own operations.
 
