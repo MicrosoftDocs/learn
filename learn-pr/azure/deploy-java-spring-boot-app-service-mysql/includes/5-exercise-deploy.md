@@ -1,20 +1,20 @@
-In this unit, you'll configure your  Spring Boot application to be deployed via Maven and then create and deploy to an Azure App Service instance.
+In this unit, you'll configure your Spring Boot application to be deployed through Maven. Then you'll create and deploy to an Azure App Service instance.
 
-## Configure the Maven plugin
+## Configure the Maven plug-in
 
-The deployment process to Azure App Service will use your Azure credentials from the Azure CLI automatically.
+The deployment process to Azure App Service automatically uses your Azure credentials from the Azure CLI.
 
-Run the Maven command below to configure the deployment. This command will help you to set up the App Service operating system, Azure subscription, and Java version.
+Run the following Maven command to configure the deployment. This command helps you set up the App Service operating system, Azure subscription, and Java version.
 
 ```bash
 mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 ```
 
-1. When prompted with **Subscription** option, select the proper `Subscription` by entering the number print in the line start.
-1. When prompted with **Web App** option, accept the default option `<create>` by pressing enter.
-1. When prompted with **OS** option, select **linux** by pressing enter.
-1. Use the default Java version, 1.8, by pressing enter.
-1. Finally, press enter on the last prompt to confirm your selections.
+1. When you're prompted with the **Subscription** option, select a subscription by entering the appropriate number at the beginning of the line.
+1. When you're prompted with the **Web App** option, accept the default option `<create>` by pressing Enter.
+1. When you're prompted with the **OS** option, select `linux` by pressing Enter.
+1. Choose the default Java version, 1.8, by pressing Enter.
+1. At the last prompt, press Enter to confirm your selections.
 
     ```bash
     Please confirm webapp properties
@@ -38,9 +38,9 @@ mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 
 
 > [!IMPORTANT]
-> The default value for the region is "westeurope", but for better performance you will need to change it to "eastus" as this is where your database is located.
+> The default value for the region is `westeurope`. For the best performance, change the value to `eastus` because your database is located in this region.
 
-Change The following field in your project's `pom.xml` file:
+In your project's *pom.xml* file, change the following field.
 
 ```xml
     <configuration>
@@ -52,24 +52,24 @@ Change The following field in your project's `pom.xml` file:
 
 ## Deploy the app
 
-The maven deploy plugin will create your Azure App server, and copy your JAR file to the application server's "/local/site/wwwroot" directory.
-Finally it will start your application via your Spring Boot JAR file's embedded HTTP server.
+The Maven deployment plug-in creates your Azure App Service server. It copies your JAR file to the application server's */local/site/wwwroot* directory. Finally, the plug-in starts your application by using your Spring Boot JAR file's embedded HTTP server.
 
-Next, deploy your Spring Boot application to Azure using the following command:
+Next, deploy your Spring Boot application to Azure by using the following command:
 
 ```bash
 mvn package com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
 ```
-Here's a screenshot of the application deployed to the Azure app Service:
+This screenshot shows the application deployed to Azure App Service:
 
-![The deployed application.](../media/5-spring-boot-01.png)
+![Screenshot showing the deployed application.](../media/5-spring-boot-01.png)
 
 ## Test the Azure App Service application
 
-Once deployment has completed, your application will be ready at `http://<appName>.azurewebsites.net/`(`http://demo-1604579125693.azurewebsites.net` in the demo).
-To test the application, you can use cURL.
+When the deployment finishes, your application is ready at `http://<appName>.azurewebsites.net/`. 
 
-As we've redeployed our application, we cleared the database and now need to create a new "todo" item in the database using the following command:
+To test the application, you can use `cURL`.
+
+As you redeployed your application, you cleared the database. Now you need to create a new to-do item in the database:
 
 ```bash
 curl --header "Content-Type: application/json" \
@@ -78,23 +78,23 @@ curl --header "Content-Type: application/json" \
     http://<appName>.azurewebsites.net
 ```
 
-This command should return the created item as follows:
+This command should return the created item:
 
 ```json
 {"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot application correctly!","done":true}
 ```
 
-Next, retrieve the data by using a new cURL request as follows:
+Retrieve the data by using a new `cURL` request:
 
 ```bash
 curl http://<appName>.azurewebsites.net
 ```
 
-This command will return the list of "todo" items, including the item you've created, as follows:
+This command returns the list of to-do items, including the item you created:
 
 ```json
-[{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot App correctly!","done":true}]
+[{"id":1,"description":"configuration","details":"congratulations, you have set up your Spring Boot application correctly!","done":true}]
 ```
 
 > [!NOTE]
-> You can also open the url in a web browser to return the list of "todo" items.
+> You can also open the URL in a web browser to return the list of to-do items.
