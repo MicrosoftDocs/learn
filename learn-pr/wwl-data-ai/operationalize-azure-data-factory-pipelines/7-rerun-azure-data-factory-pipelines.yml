@@ -2,9 +2,9 @@
 uid: learn.wwl.operationalize-your-azure-data-factory-pipelines.re-run-azure-data-factory-pipelines
 title: Rerun Azure Data Factory pipelines
 metadata:
-  title: Manage ADF security
+  title: Rerun Azure Data Factory pipelines
   description: "Rerun Azure Data Factory pipelines"
-  ms.date: 11/23/2020
+  ms.date: 11/24/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-re-run-azure-data-factory-pipelines.md)]
+  [!include[](includes/7-rerun-azure-data-factory-pipelines.md)]

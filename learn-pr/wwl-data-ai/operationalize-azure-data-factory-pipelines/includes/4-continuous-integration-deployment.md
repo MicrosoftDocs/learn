@@ -2,7 +2,7 @@ Continuous integration is the practice of testing each change made to your codeb
 
 In Azure Data Factory, continuous integration and delivery (CI/CD) means moving Data Factory pipelines from one environment (development, test, production) to another. Azure Data Factory utilizes Azure Resource Manager templates to store the configuration of your various ADF entities (pipelines, datasets, data flows, and so on). There are two suggested methods to promote a data factory to another environment:
 
--    Automated deployment using Data Factory's integration with Azure pipelines.
+-    Automated deployment using Data Factory's integration with Azure Pipelines.
 -    Manually upload a Resource Manager template using Data Factory UX integration with Azure Resource Manager.
 
 
@@ -36,7 +36,7 @@ The following is a guide for setting up an Azure Pipelines release that automate
 ### Requirements
 
 -   An Azure subscription linked to Visual Studio Team Foundation Server or Azure Repos that uses the Azure Resource Manager service endpoint
-- 
+
 -   A data factory configured with Azure Repos Git integration.
 
 -   An Azure key vault that contains the secrets for each environment.
@@ -59,7 +59,7 @@ The following is a guide for setting up an Azure Pipelines release that automate
 
 1.  Select **Add artifact**, and then select the git repository configured with your development data factory. Select the publish branch of the repository for the **Default branch**. By default, this publish branch is `adf_publish`. For the **Default version**, select **Latest from default branch**.
 
-    ![Add an artifact](../media/continuous-integration-image-7.png)
+    [![Add an artifact](../media/continuous-integration-image-7.png)](../media/continuous-integration-image-7.png#lightbox)
 
 1.  Add an Azure Resource Manager Deployment task:
 
@@ -84,7 +84,7 @@ The following is a guide for setting up an Azure Pipelines release that automate
     > [!WARNING]
     > In Complete deployment mode, resources that exist in the resource group but aren't specified in the new Resource Manager template will be **deleted**.
 
-    ![Data Factory Prod Deployment](../media/continuous-integration-image-9.png)
+    [![Data Factory Prod Deployment](../media/continuous-integration-image-9.png)](../media/continuous-integration-image-9.png#lightbox)
 
 1.  Save the release pipeline.
 
@@ -130,7 +130,7 @@ There are two ways to handle secrets:
 
     1.  In the Key Vault task, select the subscription in which you created the key vault. Provide credentials if necessary, and then select the key vault.
 
-    ![Add a Key Vault task](../media/continuous-integration-image-8.png)
+    [![Add a Key Vault task](../media/continuous-integration-image-8.png)](../media/continuous-integration-image-8.png#lightbox)
 
 #### Grant permissions to the Azure Pipelines agent
 

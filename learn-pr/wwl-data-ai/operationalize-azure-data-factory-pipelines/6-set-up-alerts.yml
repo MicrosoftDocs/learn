@@ -2,9 +2,9 @@
 uid: learn.wwl.operationalize-your-azure-data-factory-pipelines.set-up-alerts-azure-data-factory
 title: Set up alerts for Azure Data Factory
 metadata:
-  title: Re-run ADF pipelines
+  title: Set up alerts for Azure Data Factory
   description: "Set up alerts for Azure Data Factory"
-  ms.date: 11/23/2020
+  ms.date: 11/24/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
