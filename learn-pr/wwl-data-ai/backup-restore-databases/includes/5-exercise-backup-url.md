@@ -31,7 +31,7 @@ occurred.
 
     :::image type="content" source="../media/create-storage.png" alt-text="Create storage":::
 
-1. If you have already used a Cloud Shell, just make sure the upper level corner of the Cloud shell screen shows **Bash**. You can use the drop down arrow to select either PowerShell or Bash.
+1. If you have already used a Cloud Shell, just make sure the upper left corner of the Cloud shell screen shows **Bash**.
 
     Once complete, you will see a prompt similar to the one below.
 
