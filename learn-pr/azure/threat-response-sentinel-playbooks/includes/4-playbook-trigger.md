@@ -1,4 +1,4 @@
-You can configure Azure Sentinel playbooks at Contoso to respond to security threats. 
+You can configure Azure Sentinel playbooks at Contoso to respond to security threats.
 
 ## Explore the Playbooks page
 
@@ -45,7 +45,7 @@ Each playbook starts with a trigger followed by actions that define the automate
 
 For example, you can add the trigger from an Azure Sentinel connector when an incident is triggered, follow it with an action that identifies the entities from the Azure Sentinel alert, and then another action that sends an email to an Office 365 email account. Azure Sentinel creates every action as a **New Step** and defines the activity that you are adding in the logic app.
 
-The following screenshot displays the incident triggered by Azure Sentinel connector, which detects a suspicious account and sends an email to the administrator. 
+The following screenshot displays the incident triggered by Azure Sentinel connector, which detects a suspicious account and sends an email to the administrator.
 
 :::image type="content" source="../media/04-Log-App-Designer.PNG" alt-text="Screenshot of the logic app with actions." border="true":::
 
