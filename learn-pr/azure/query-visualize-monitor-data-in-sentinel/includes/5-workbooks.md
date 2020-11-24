@@ -74,7 +74,6 @@ When you select the gear icon, the **Settings** page opens, where you can provid
 You can rearrange the placement of different tables in the workbook by selecting **Show Pin Options**.
 
 For advanced customization, you can select **Advanced Editor** to open the JSON representation of the current workbook, and then further customize it in the text editor.
-
 You can save your changes in the existing workbook or save as another workbook. When you are done with all the customization, you can exit the edit mode by selecting **Done Editing**.
 
 ## Explore the Azure Sentinel repository on GitHub
