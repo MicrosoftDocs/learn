@@ -46,5 +46,3 @@ If your project has already been initialized for GitHub locally, you won't see t
 :::image type="content" source="../media/publish-command.jpg" alt-text="The Visual Studio Code Command Palette showing the Publish to GitHub option":::
 
 The action will kick off the same workflow as the publish button in the SCM view does and has exactly the same steps. You won't be prompted for what items you want to push if your project already contains a `.gitignore`.
-
-In the next exercise, you'll publish a local project to GitHub and see the workflow in action for yourself.

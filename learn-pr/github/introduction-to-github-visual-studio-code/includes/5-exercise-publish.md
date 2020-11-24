@@ -8,7 +8,7 @@ Normally you have to create a repository on GitHub before you can publish your c
 
 ### Create README.md
 
-The README file is what is seen when people visit your repo on github.com. For more information about the purpose and content of a REAMDE file, check out the
+The README file is what is seen when people visit your repo on github.com. For more information about the purpose and content of a REAMDE file, check out the "Contribute to open source on GitHub" Module.
 
 1. Select the "File" menu and select "New File".
 1. Add the following text to the file.
