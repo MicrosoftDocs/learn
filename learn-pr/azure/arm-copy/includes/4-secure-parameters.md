@@ -1,15 +1,16 @@
-_Infrastructure as code_, IaC, is concept where you aim to describe your infrastructure in text files. That way you can version your infrastructure as well as know exactly what you have set up. When you deploy via ARM, you are using IaC. As part of the deployment process, you also need to ensure your global resources are protected by secure credentials.  However, sensitive credentials should not be listed explicitly in your templates so you need to find an approach that works.
+_Infrastructure as code_ (IaC) is concept where you describe your infrastructure requirements as human-readable text files. ARM templates are a form of IaC.
 
-Let's try to distill the problem a bit:
+Just like application code, you can manage your infrastructure code in a version control system such as Git. Doing so enables you to collaborate with others and trace changes to your infrastructure requirements as they evolve.
 
-- **Templates need to be checked in**. Your infrastructure is now expressed as text files. You also check in those files into a global repository like GitHub. Assume therefore that what gets checked into GitHub could be read by anyone with a read access.
-- **Secure credentials need to be stored in safe way**. Credentials like passwords, API keys and more should be stored in a safe way. Only specific individuals in your company should have access to them.
-- **Secrets should be easy to change with minimal service interruption**. It should be easy to _rotate keys_ at a regular interval. A change in a credential should not stop services in production.  
-- **The deployment template needs to be able read credentials**. As part of a deployment, the deployment process will need to have access to whatever service you are using to store your credentials.
+Like application code, you shouldn't hard-code sensitive information such as passwords and API keys into your ARM templates. Otherwise, anyone with read access to your repository will have access to this secret information.
 
-## Why use Azure Key Vault service
+While only authorized individuals in your organization should have access to sensitive information, your ARM templates require this information as well. Azure Key Vault is one way to help protect sensitive information.
 
-A KeyVault is capable of storing both keys and secrets. Its numerous features make it a good choice for managing your secrets, but also a good choice to use for your deployment process. Lets list some of the most compelling reasons of the Key Vault service:
+## How can Azure Key Vault help protect sensitive information?
+
+Azure Key Vault is a cloud service that works as a secure store for secrets. Key Vault allows you to create multiple secure containers, called vaults. These vaults are backed by hardware security modules (HSMs). Vaults help reduce the chances of accidental loss of security information by centralizing the storage of application secrets. Vaults also control and log the access to anything stored in them.
+
+Key Vault is capable of storing both keys and secrets. Its numerous features make it a good choice for managing your secrets, but also a good choice to use for your deployment process. Lets list some of the most compelling reasons of the Key Vault service:
 
 - **RBAC, Role-Based Access Control**. You can manage your Key Vault using various roles so you can ensure it's usable by apps as well as different levels of admins.
 
@@ -53,8 +54,8 @@ To grant this permission, you need to define a custom role in a JSON file where 
 
 For the Key Vault that means that the user needs to have one of two roles:
 
-   - `Owner`, if you created the Key Vault you automatically have this role.
-   - `Contributor`, this role you can be assigned to your user. The role grants you access to manage all the secrets. The only thing you can't do with this role is assigning roles via Azure RBAC.
+- `Owner`, if you created the Key Vault you automatically have this role.
+- `Contributor`, this role you can be assigned to your user. The role grants you access to manage all the secrets. The only thing you can't do with this role is assigning roles via Azure RBAC.
 
 ## Configure the deployment template  
 

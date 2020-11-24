@@ -136,13 +136,13 @@ Fortunately there's a template you can grab that contains all the above resource
     ```powershell
     $location = Read-Host -Prompt "Enter a location (i.e. centralus)"
     $vmName = Read-Host -Prompt "Enter a name for your VM"
-    $adminUserName = Read-Host -Prompt "Enter an admin user name";
+    $adminUsername = Read-Host -Prompt "Enter an admin user name";
     $adminPassword = Read-Host -Prompt "Enter an admin password";
 
     New-AzResourceGroupDeployment `
     -ResourceGroupName <rgn>resource group name</rgn> `
     -TemplateFile "./azuredeploy.json" `
-    -adminUserName $adminUserName `
+    -adminUsername $adminUsername `
     -vmName $vmName `
     -adminPassword $adminPassword
     ```

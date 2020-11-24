@@ -15,7 +15,7 @@ Here's an overview of the steps you are about to carry out:
 
 4. **Carry out the deployment**. This step involves using the command **az deployment group create** with a URL to a template as an argument.
 
-## Deploy a KeyVault
+## Deploy Key Vault
 
 You need to both deploy the KeyVault and once created you will need to add a secret.
 
@@ -26,10 +26,10 @@ You need to both deploy the KeyVault and once created you will need to add a sec
     read -p "Enter a location" location
 
     az keyvault create \
-    --name $vaultName \
-    --resource-group <rgn>name of resource group</rgn> \
-    --location $location \
-    --enabled-for-template-deployment true
+      --name $vaultName \
+      --resource-group <rgn>name of resource group</rgn> \
+      --location $location \
+      --enabled-for-template-deployment true
     ```
 
     The above command will create a KeyVault. The usage of the flag `-EnabledForTemplateDeployment` ensures it the KeyVault can be read from, from an ARM template.
@@ -51,7 +51,9 @@ You need to both deploy the KeyVault and once created you will need to add a sec
 
 1. Run `wget` to fetch the following ARM template:
 
-   `wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json` 
+   ```bash
+   wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json
+   ```
 
    and store it locally as a file `vmdeploy.json`.
 
