@@ -50,7 +50,7 @@ We’re also providing the tools you need to train large AI models on the superc
 
 ### Innovate on top of some of the most sophisticated models in the world
 
-If you’re interested in using the Microsoft Turing models for your own AI solutions, we’ve made them open source for organizations and developers to access. Our language understanding and language generation models are available today, with others coming soon.
+If you’re interested in using the Microsoft Turing models for your own AI solutions, we’ve made them open source for organizations and developers to access. Our language understanding and language generation models are available today.
 
 You can use the Turing models as they are or customize them for your own scenarios. After a model has been trained for general tasks, it can be fine-tuned for more specific tasks by training with additional data. For example, a company could take a pre-trained language model and teach it more specific vocabulary by training it with industry- and company-specific text. This same process is used to customize smaller models as well, but it’s even more beneficial for large models. We provide open- source guidance for customizing large models in the Azure Machine Learning platform.
 
