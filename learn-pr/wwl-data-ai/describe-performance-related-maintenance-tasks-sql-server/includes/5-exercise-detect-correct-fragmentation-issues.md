@@ -5,6 +5,11 @@ You have been hired as a database administrator to identify performance related 
 1. When the VM lab environment opens, use the password on the **Resources** tab above for the Student account to sign in to Windows.
 1. Start **SQL Server Management Studio**.
 1. You will be prompted to connect to your SQL Server. Enter **LON-SQL1** for the local server name, ensure that **Windows Authentication** is selected, and select **Connect**.
+
+    > [!NOTE]
+    > If you'd like to copy and paste the code you can find the code in the **D:\LabFiles\Monitor Resources\exercise_steps.sql** file.
+
+
 1. Select **New Query**. Copy and paste the following T-SQL code into the query window. Select **Execute** to execute this query. 
 
     ```sql
@@ -35,6 +40,10 @@ You have been hired as a database administrator to identify performance related 
     ```
      
     This query will report any indexes that have a fragmentation over 50%. You should not see any indexes with fragmentation.
+
+    > [!NOTE]
+    > If you'd like to copy and paste the code you can find the code in the **D:\LabFiles\Monitor Resources\Monitor Resources scripts.sql** file.
+
 1. Select **New Query**. Copy and paste the following T-SQL code into the query window. Select **Execute** to execute this query. 
 
     ```sql
