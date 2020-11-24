@@ -186,8 +186,8 @@ First, to set up the app, paste the following code into the editor. This will im
 
 ```javascript
 // Importing dependencies
-const msRestAzure = require('ms-rest-azure');
-const keyVault = require('azure-keyvault');
+const { DefaultAzureCredential } = require("@azure/identity");
+const { SecretClient } = require("@azure/keyvault-secrets");
 const app = require('express')();
 
 // Initialize port
@@ -208,17 +208,7 @@ Next, you'll add the code to authenticate to the vault and load the secrets. You
 ```javascript
 const authenticateToKeyVault = async () => {
   try {
-    let credentials;
-    if (process.env.NODE_ENV === 'production') {
-      credentials = await msRestAzure.loginWithAppServiceMSI({ resource: 'https://vault.azure.net' });
-    } else {
-      // For non-App Service environments. Set the APP_ID, APP_SECRET and TENANT_ID environment
-      // variables to use.
-      const appId = process.env.APP_ID;
-      const appSecret = process.env.APP_SECRET;
-      const tenantId = process.env.TENANT_ID;
-      credentials = await msRestAzure.loginWithServicePrincipalSecret(appId, appSecret, tenantId);
-    }
+    const credentials = new DefaultAzureCredential();
     return credentials;
   } catch(err) {
     throw err.message;
@@ -227,16 +217,19 @@ const authenticateToKeyVault = async () => {
 
 const getKeyVaultSecrets = async credentials => {
   // Create a key vault client
-  let keyVaultClient = new keyVault.KeyVaultClient(credentials);
+  let secretClient = new SecretClient(vaultUrl, credentials);
   try {
-    let secrets = await keyVaultClient.getSecrets(vaultUrl);
-    // For each secret name, get the secret value from the vault
-    for (const secret of secrets) {
+    const listPropertiesOfSecrets = secretClient.listPropertiesOfSecrets();
+    while (true) {
+      let { done, value } = await listPropertiesOfSecrets.next();
+      if (done) {
+        break;
+      }
+      // For each secret name, get the secret value from the vault
       // Only load enabled secrets - getSecret will return an error for disabled secrets
-      if (secret.attributes.enabled) {
-        let secretId = secret.id;
-        let secretName = secretId.substring(secretId.lastIndexOf('/') + 1);
-        let secretValue = await keyVaultClient.getSecret(vaultUrl, secretName, '');
+      if (value.enabled) {
+        const secretName = value.name;
+        const secretValue = await client.getSecret(secretName);
         vaultSecretsMap[secretName] = secretValue.value;
       }
     }
