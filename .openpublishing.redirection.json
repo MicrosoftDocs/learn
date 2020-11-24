@@ -4289,6 +4289,62 @@
       "source_path": "learn-pr/wwl-azure/secure-network-connectivity/9-walkthrough-traffic.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-db-for-postgresql-server/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-postgres/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-db-for-postgresql-server/2-postgresql-decision.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-postgres/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-db-for-postgresql-server/3-creating-postgresql-db-server-via-azure-portal.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-postgres/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-db-for-postgresql-server/4-creating-postgresql-db-server-via-azure-cli.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-postgres/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-db-for-postgresql-server/5-create-postgresql-db-server-via-azure-cli.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-postgres/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-db-for-postgresql-server/6-server-security-considerations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-postgres/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-db-for-postgresql-server/7-connecting-to-postgresql-db-server.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-postgres/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-db-for-postgresql-server/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-postgres/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-db-for-postgresql-server/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-postgres/index",
+      "redirect_document_id": false
+    },
+    {
+
+      "source_path": "learn-pr/github/create-open-source-program-github/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-open-source-program-github/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/create-open-source-program-github/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-open-source-program-github/6-summary",
+      "redirect_document_id": false
     }
   ]
 }
