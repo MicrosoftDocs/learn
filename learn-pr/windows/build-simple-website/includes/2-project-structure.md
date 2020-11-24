@@ -39,9 +39,7 @@ Setting up three files helps us stay organized. It's an example of *progressive 
 
 You can extend the functionality of Visual Studio Code using the extensions marketplace. Keep in mind these are community developed resources. There are often a few solutions for the same type of feature. You can install extensions individually in your editor, or several at once with the command line.
 
-For web development, the extensions and packages below will get you started.
-
-All we need right now is **open-in-browser**. To install this extension, select the Extensions icon on the Activity Bar (left pane).
+For web development, all we need right now is **open-in-browser**. To install this extension, select the Extensions icon on the Activity Bar (left pane).
 
 Next, type "open" in the search bar, then select **open in browser**, published by TechER, and choose **Install**. The extension gets installed.
 

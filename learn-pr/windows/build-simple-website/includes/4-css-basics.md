@@ -15,7 +15,7 @@ In the previous unit on HTML, we put our CSS in an external file and linked it t
 
 One benefits of external CSS is that multiple HTML pages can link to the same CSS file. If you make a change to the CSS, then your styling will update for each page. Designating an HTML file for the structure of the page, a CSS file for the styling, and JavaScript file for interaction or events is called *separation of concerns*.
 
-You can also write CSS directly in HTML, which is called internal CSS, but let's skip showing an example of that. Even for a basic website, there are so many CSS rules the HTML page becomes cluttered very quickly. With more than one page, the same CSS would often be repeated and challenging to manage.
+You can also write CSS directly in HTML, which is called internal CSS, but we will skip showing an example of that. Even for a basic website, there are so many CSS rules the HTML page becomes cluttered very quickly. With more than one page, the same CSS would often be repeated and challenging to manage.
 
 ## CSS rules
 
@@ -90,6 +90,20 @@ To preview using **Visual Studio Code**, select on `index.html` and select **Ope
 
 The webpage will open in your default browser. Notice that the light theme with a green background appears.
 
+## View applied CSS
+
+**IMPORTANT Move this to previous section, since we are not viewing in the browser.**
+
+In **Edge**, the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, view **Settings and more** with Alt+X and select **Developer Tools**.
+
+In **Chrome**, the keyboard shortcut for **Developer Tools** is Option+Command+I.
+
+1. Select the **Styles** tab.
+2. Select the **Elements** tab.
+3. Roll over and select the HTML elements.
+4. Open the disclosure triangles.
+5. Select a `<li>` element. Note the custom style `font-family: monospace;`.
+
 ## Add a dark theme
 
 For the dark theme, we want to set up the plumbing in preparation for the next unit, in which we will enable theme switching on the web page.
@@ -131,17 +145,4 @@ body {
 }
 ```
 
-## View applied CSS
-
-**IMPORTANT Move this to previous section, since we are not viewing in the browser.**
-
-In **Edge**, the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, view **Settings and more** with Alt+X and select **Developer Tools**.
-
-In **Chrome**, the keyboard shortcut for **Developer Tools** is Option+Command+I.
-
-1. Select the **Styles** tab.
-2. Select the **Elements** tab.
-3. Roll over and select the HTML elements.
-4. Open the disclosure triangles.
-5. Select a `<li>` element. Note the custom style `font-family: monospace;`.
-
+To view the dark theme, we could manually switch the default theme in the `<body>` element to dark theme. However, instead of this, in the next unit we will use JavaScript to provide interactivity and support switching of themes.

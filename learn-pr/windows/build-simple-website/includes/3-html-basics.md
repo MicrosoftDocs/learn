@@ -1,7 +1,5 @@
 At the moment we have an empty HTML file. Let's add some code! The goal is to use hypertext markup language (HTML) to describe the web page the browser should display. Wouldn't it be nice to have a starting template? Editors can conveniently fill in some of the typical boilerplate or HTML structure for you.
 
-
-
 ## Using autocomplete
 
 Visual Studio Code provides basic support for HTML programming out of the box. There is syntax highlighting, smart completions with IntelliSense, and customizable formatting. Visual Studio Code also includes great Emmet support (from the documentation on Emmet in Visual Studio Code).
@@ -10,7 +8,59 @@ In **Visual Studio Code**, open `index.html` by selecting the `index.html` file.
 
 ![Screenshot of Visual Studio Code HTML5 Emmet entry](../media/vs-code-html-emmet.png)
 
-To save time, copy the following code and paste it into your HTML file, then save the file with Control+S (Windows) or Command+S (macOS).
+Edit your code so that it resembles the following, then save the file with Control+S (Windows) or Command+S (macOS).
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+```
+
+There have been different versions of HTML. The document type `<!DOCTYPE html>` indicates this is HTML5 code.
+
+While we aren't going to delve deeply into the meaning of all the HTML elements, we will point out a few important items. The `meta` tag indicates *metadata* information that won't typically be visible to the viewer unless they view source code in their browser. Meta elements or tags provide descriptive information about the webpage. For example, they help search engines display results to people.
+
+The *character set* (charset) UTF-8 may seem insignificant but is crucial for establishing how computers interpret characters. If missing, charset can lead to compromised security. There's quite a bit of history and technical information behind charset. The bigger picture here is that boilerplate provides some sensible defaults.
+
+## Edit the head
+
+The *title* of a webpage appears at the top of a browser window and is significant in a few ways. For example, the title is utilized by and displayed in search engines. Let's add a title.
+
+> [!IMPORTANT]
+> From this point forward, the ellipsis (...) indicates that previously declared code precedes or follows. There should be enough code provided as context to make necessary changes or update to your work.
+
+```html
+...
+<head>
+  <meta charset="utf-8">
+  <title>Task List</title>
+...
+```
+
+To style the HTML elements on the page, you could write the CSS code directly in the head of the website, which is called *internal CSS*. However, it's a best practice to separate HTML structure and CSS styling. Having a separate CSS page is called *external CSS*. Code tends to be easier to read when it's concise and compartmentalized. You can use one or more external style sheets to service multiple webpages. Rather than updating each HTML page with duplicated CSS, you can make changes once and have those updates broadcast to all dependent pages. Let's link to an external stylesheet.
+
+In **Visual Studio Code**, go to the line after the `<title>` element, type `link` and hit the Enter (Return) key. Update the `href` to `main.css` and save the file with Control+S (Windows) or Command+S (macOS).
+
+```html
+...
+<head>
+  <meta charset="utf-8">
+  <title>Task List</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+...
+```
+
+## Edit the body
+
+Let's start filling in the *body* element now. Add a *heading* `<h1>`, *paragraph* `<p>`, and create a *list item* `<li>`. Update your code so it looks like the following.
 
 ```html
 <!DOCTYPE html>
@@ -28,75 +78,15 @@ To save time, copy the following code and paste it into your HTML file, then sav
       <li class="list">Add light and dark themes</li>
       <li>Enable switching the theme</li>
     </ul>
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
   </body>
 </html>
 ```
 
-> [!TIP]
-> You can click and drag to select a line, then use Command + Tab or Shift + Command + Tab to adjust the line indentation. In Visual Studio Code, the **Selection** menu has a list of helpful commands for navigating your code. For quick navigation, the left and right arrow keys are your friend.
-
-There have been different versions of HTML. The document type `<!DOCTYPE html>` indicates this is HTML5 code.
-
-HTML, head, and body are *elements* with opening and closing *tags*. *Attributes* in the *opening tag* provide more information about the element. For the `<html>` tag, the language is English, and text direction is left-to-right. Language `lang` is an attribute name, and English `"en"` is an *attribute value*.
-
-The `meta` tag indicates *metadata* information that won't typically be visible to the viewer unless they view source code in their browser. Meta elements or tags provide descriptive information about the webpage. For example, they help search engines display results to people.
-
-The *character set* (charset) UTF-8 may seem insignificant but is crucial for establishing how computers interpret characters. If missing, charset can lead to compromised security. There's quite a bit of history and technical information behind charset. The bigger picture here is that boilerplate provides some sensible defaults.
-
-## delete - Edit the head
-
-The *title* of a webpage appears at the top of a browser window and is significant in a few ways. First, the title is utilized by and displayed in search engines. Second, when a visitor bookmarks the page, the title becomes the default name for the bookmark. Third, the title helps visitors navigate by seeing what page they are viewing. Let's add a title.
-
-> [!IMPORTANT]
-> From this point forward, the ellipsis (...) indicates that previously declared code precedes or follows. There should be enough code provided as context to make necessary changes or update to your work.
-
-```html
-...
-<head>
-  <meta charset="utf-8">
-  <title>Task List</title>
-...
-```
-
-You could write the CSS code directly in the head of the website, which is called *internal CSS*. However, it's a best practice to separate HTML structure and CSS styling. Having a separate CSS page is called *external CSS*. Code tends to be easier to read when it's concise and compartmentalized. You can use one or more external style sheets to service multiple webpages. Rather than updating each HTML page with duplicated CSS, you can make changes once and have those updates broadcast to all dependent pages. Let's link to an external stylesheet.
-
-In **Visual Studio Code**, type `link` and hit the Enter (Return) key. Update the `href` to `main.css` and save the file with Control+S (Windows) or Command+S (macOS).
-
-```html
-...
-<head>
-  <meta charset="utf-8">
-  <title>Task List</title>
-  <link rel="stylesheet" href="main.css">
-</head>
-...
-```
-
-## delete - Edit the body
-
-Let's start filling in the *body* element now. Add a *heading* `<h1>`, *paragraph* `<p>`, and create a *list item* `<li>`. Update your code so it looks like the following.
-
-```html
-...
-<body>
-  <h1>Task Timeline</h1>
-  <p id="date"></p>
-  <ul>
-    <li class="list">Edit the head</li>
-    <li class="list">Edit the body</li>
-    <li>Link to JavaScript</li>
-  </ul>
-</body>
-```
-
-An ID attribute can be used for styling one element, while the class attribute is for styling one or more elements.
-
-There's no text between the open and closing `<p>` tags so nothing will appear on the page for that element yet. Yes, you can write markup without having any content.
+An ID attribute can be used for styling one element, while the class attribute is for styling all elements of the same class.
 
 Each list item `<li>` element is grouped into an unordered list `<ul>`.
 
-## delete - Open in browser
+## Open in browser
 
 You can preview your webpage locally by opening the HTML file in a browser. Instead of a website address that begins with `https://`, your browser points to the local file path. For example, the path might look similar to the following: *file:///Users/username/Desktop/public/index.html*.
 
@@ -108,25 +98,6 @@ To preview using **Visual Studio Code**, select `index.html` and select **Open I
 > If you're having trouble, make sure you're directly selecting on the filename icon or text.
 
 The webpage will open in your default browser.
-
-To test the `<noscript>` element, you can deactivate JavaScript and reload the page.
-
-If you're using the **Edge** browser, select the **More** menu (...), and select **Open with Internet Explorer**. Then follow the instructions for [how to enable JavaScript in Windows](https://support.microsoft.com/help/3135465/how-to-enable-javascript-in-windows). Once you have deactivated JavaScript and tested the `<noscript>` feature, don't forget to reenable JavaScript.
-
-![Screenshot of deactivated JavaScript in Explorer](../media/explorer-blocked-javascript.png)
-
-In **Chrome** go to **Chrome > Preferences > Advanced > Content settings > JavaScript**.
-
-- **Toggle allowed** or **blocked** to turn off or on.
-- Or open a new tab and enter chrome://settings/content/javascript
-
-![Screenshot of deactivating JavaScript in Chrome](../media/3-html-basics/chrome-blocked-javascript.png)
-
-Reload the page to see the `<noscript>` message.
-
-![Screenshot of no script result in Chrome](../media/chrome-noscript.png)
-
-After seeing the `<noscript>` message, re-enable JavaScript, and reload the page.
 
 ## delete - Developer tools
 
