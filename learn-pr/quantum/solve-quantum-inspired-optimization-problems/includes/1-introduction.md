@@ -12,3 +12,11 @@ In this module you'll:
 - See which kinds of problems are best suited to these techniques.
 - Understand how algorithms inspired by physical processes are used to solve difficult problems.
 - Apply quantum-inspired optimization to a real-world problem.
+
+## Prerequisites
+
+1. The latest version of the [Azure Quantum Optimization SDK](//TODO: Link)
+2. [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html)
+3. An Azure Quantum workspace
+
+If you don't have these tools yet, we recommend that you follow the [How to create an Azure Quantum workspace](//TODO link) module first.
