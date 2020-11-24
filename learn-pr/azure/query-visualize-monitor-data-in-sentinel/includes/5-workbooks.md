@@ -23,7 +23,7 @@ The **Azure AD Sign-in logs** workbook contains predefined charts, graphs, and t
 
 On the **Azure AD Sign-in logs** page, you can expand the time range or filter the apps and users that have sign-in privileges in the Azure AD. For example, Contoso wants to identify users that can sign in to the Azure portal, so they can filter the data as displayed in the following screenshot.
 
-:::image type="content" source="../media/05-Filter-Users.PNG" alt-text="Screenshot that displays Sign0in Analyses with filtering of the users that sign-in in the Azure Portal." border="true":::
+:::image type="content" source="../media/05-Filter-Users.PNG" alt-text="Screenshot that displays Sign-in Analysis with filtering of the users that sign in to the Azure Portal." border="true":::
 
 Contoso is interested in identifying the failed sign-in attempts, so that they can display these accounts by selecting the information tiles, and then selecting a tile or a row to display more information such as:
 
@@ -61,7 +61,7 @@ You can select **Edit** to open the workbook in the edit mode, where you can add
 
 The header bar in the editing mode contains several options, which the following screenshot depicts.
 
-:::image type="content" source="../media/05-Editing-options.PNG" alt-text="Screenshot of the Editing mode." border="true":::
+:::image type="content" source="../media/05-Editing-options.PNG" alt-text="Screenshot of the Editing mode that depicts the various editing options such as Save, Save As, Settings, Refresh, Share, Help, and more." border="true":::
 
 When you switch to the editing mode, you'll notice several **Edit** options that appear on the right<!-- This is a non-accessible descriptor. Can we reword this? For example, do the edit options appear in a pane, perhaps? -->, which correspond to each individual aspect of your workbook.
 
