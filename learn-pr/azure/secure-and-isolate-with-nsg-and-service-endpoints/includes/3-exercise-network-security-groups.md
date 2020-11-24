@@ -195,7 +195,7 @@ As you've now experienced, the default rules in your **ERP-SERVERS-NSG** network
 
 1. Enter the password you used when you created the VM.
 
-1. tT close the **AppServer** session, enter `exit`.
+1. Close the **AppServer** session, enter `exit`.
 
 1. To check whether you can now connect to your **DataServer** VM, in the Cloud Shell, run the following command.
 
