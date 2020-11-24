@@ -135,7 +135,7 @@ deploy/implement-directive.sh
 
 The preceding script uses the Linux `sed` command to modify two Angular views. The `*featureFlag="'coupons'"` attribute is added to the subtotal and discount code `div` elements in the *:::no-loc text="src/Web/WebSPA/Client/src/modules/orders":::* directory's *:::no-loc text="orders-detail/orders-detail.component.html":::* and *:::no-loc text="orders-new/orders-new.component.html":::* files. The relevant portions of *:::no-loc text="orders-detail.component.html":::* are highlighted below.
 
-:::code language="html" source="../code/src/web/webspa/client/src/modules/orders/orders-detail/orders-detail.component.html" highlight="1,6":::
+:::code language="html" source="../code/src/web/webspa/client/src/modules/orders/orders-detail/orders-detail-component.html" highlight="1,6":::
 
 > [!NOTE]
 > The implementation of Angular-specific functionality in this module has been scripted to maintain focus on .NET details.

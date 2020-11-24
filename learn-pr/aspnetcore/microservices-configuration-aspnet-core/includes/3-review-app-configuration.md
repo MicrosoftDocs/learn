@@ -97,15 +97,15 @@ An Angular component that contains the `featureFlag` attribute triggers the foll
 
 1. The Angular `featureFlag` directive, defined in *:::no-loc text="featureFlag.directive.ts":::*, calls the `getFeatures` function:
 
-    :::code language="typescript" source="../code/src/web/webspa/client/src/modules/shared/directives/featureflag.directive.ts" highlight="18":::
+    :::code language="typescript" source="../code/src/web/webspa/client/src/modules/shared/directives/featureflag-directive.ts" highlight="18":::
 
 1. The `getFeatures` function, defined in *:::no-loc text="featureFlag.service.ts":::*, constructs a URL to send an HTTP GET request to the App Configuration store:
 
-    :::code language="typescript" source="../code/src/web/webspa/client/src/modules/shared/services/featureflag.service.ts" id="snippet_getFeatures":::
+    :::code language="typescript" source="../code/src/web/webspa/client/src/modules/shared/services/featureflag-service.ts" id="snippet_getFeatures":::
 
 1. The response from the HTTP GET request is converted to an instance of `IFeatureFlag`:
 
-    :::code language="typescript" source="../code/src/web/webspa/client/src/modules/shared/models/featureflag.model.ts":::
+    :::code language="typescript" source="../code/src/web/webspa/client/src/modules/shared/models/featureflag-model.ts":::
 
 The feature flag directive is used in any `div` element to determine whether it should be rendered, depending on the result from the feature flag service. The feature flag service queries the feature management middleware to check the feature status.
 
