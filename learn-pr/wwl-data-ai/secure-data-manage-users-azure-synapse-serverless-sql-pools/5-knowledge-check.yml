@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/20/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which authentication method would be the likeliest choice to use for an individual who needs to access your serverless SQL pool who works for an external organization?"
+    choices:
+    - content: "Local authentication."
+      isCorrect: false
+      explanation: "Incorrect. Local authentication is not a valid authentication method."
+    - content: "SQL Authentication."
+      isCorrect: true
+      explanation: "Correct. SQL Authentication uses  an authentication method of a username and password stored within the serverless SQL pool."
+    - content: "Azure Active Directory."
+      isCorrect: false
+      explanation: "Incorrect. Azure Active Directory uses identities managed by Azure Active Directory."
+  - content: "Which Azure Synapse Studio hub is where you assign administrator privileges to an Azure Synapse workspace?"
+    choices:
+    - content: "Manage."
+      isCorrect: true
+      explanation: "Correct. The manage hub is the area of Azure Synapse Studio where you assign administrator privileges to an Azure Synapse workspace."
+    - content: "Data."
+      isCorrect: false
+      explanation: "Incorrect. The data hub does not enable you to assign administrator privileges to an Azure Synapse workspace."
+    - content: "Develop."
+      isCorrect: false
+      explanation: "Incorrect. The develop hub does not enable you to assign administrator privileges to an Azure Synapse workspace."
+  - content: "Which role enables a user to create external table as select (CETAS) against an Azure Data Lake Gen2 data store?"
+    choices:
+    - content: "Storage Blob Data Reader."
+      isCorrect: false
+      explanation: "Incorrect. This only allows a user to read the files held within a serverless sql pool."
+    - content: "Storage Blob Data Contributor."
+      isCorrect: true
+      explanation: "Correct. This provides the read/write access required to execute a create external table as select statement."
+    - content: "Executor."
+      isCorrect: false
+      explanation: "Incorrect. This role does not exist."

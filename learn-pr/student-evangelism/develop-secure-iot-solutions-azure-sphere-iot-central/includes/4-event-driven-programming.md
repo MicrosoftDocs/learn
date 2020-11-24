@@ -57,7 +57,7 @@ static void MeasureSensorHandler(EventLoopTimer* eventLoopTimer)
             snprintf(msgBuffer, JSON_MESSAGE_BYTES, msgTemplate,
                 environment.temperature, environment.humidity, environment.pressure, msgId++) > 0)
         {
-            Log_Debug(msgBuffer);
+            Log_Debug("%s\n", msgBuffer);
         }
     }
 }

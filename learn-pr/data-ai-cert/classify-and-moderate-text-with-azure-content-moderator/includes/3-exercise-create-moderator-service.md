@@ -10,7 +10,11 @@ In this exercise, you'll create a new Content Moderator resource in the Azure po
 1. From the search results, select **Content Moderator**.
 1. Select **Create**.
 1. Enter a unique name for your resource, choose a subscription, and select a location close to you.
-1. Select the pricing tier for this resource, then choose **S0**.
+1. Select the pricing tier for this resource, then choose **F0**.
+
+>[!Note]
+>If your current subscription is already using a free tier, you will need to choose **S0** for the pricing tier or remove the existing **F0** option.
+
 1. Create a new resource group named **LearnRG**.
 1. Select **Create**.
 

@@ -28,13 +28,13 @@ We can use the bool to take action on the value (like perform some calculation) 
 
 ### What is an out parameter?
 
-Methods can return a value upon completion or return "void", meaning they return no value.  They can also, optionally, return values throughout parameters, which are defined just like any other input parameters, but include the `out` keyword.
+Methods can return a value upon completion or return "void", meaning they return no value.  They can also, optionally, return values through out parameters, which are defined just like any other input parameters, but include the `out` keyword.
 
 When calling a method with an out parameter, you must also use the keyword `out` before the variable, which will hold the value.  So you have to define a variable before calling the method that will be used to store this out parameter value returned by the method.  You can then use the value containing the out parameter throughout the rest of your code.
 
 ### Step 1 - TryParse() a string into an int
 
-Delete or comment out all of the code in the .NET Editor from previous exercises, then add the following code.
+Delete or comment out all of the code in the .NET Editor from previous exercises, and then add the following code.
 
 ```csharp-interactive
 string value = "102";
@@ -53,7 +53,7 @@ Let's focus on this line:
 ```
 if (int.TryParse(value, out result))
 ```
-The int.TryParse() method will return `true` if it successfully converted our `string` variable `value` into an `int`.  Otherwise it will return `false`.  So, we surround the statement in an `if` statement then perform the decision logic accordingly.
+The int.TryParse() method will return `true` if it successfully converted our `string` variable `value` into an `int`.  Otherwise it will return `false`.  So, surround the statement in an `if` statement, then perform the decision logic accordingly.
 
 But also, the converted value will be stored in the `int` variable `result`.  Notice that the `int` variable `result` is declared and initialized before this line of code, so it should be accessible both *inside* the code blocks that belong to the `if` and `else` statements, as well as *outside* of them.  
 
@@ -101,7 +101,7 @@ Measurement (w/ offset): 152
 
 ### Step 3 - Modify the string variable to an unparseable value
 
-Finally, let's look at the other scenario -- where we intentionally give `TryParse()` a bad value that can't be converted into an `int`.
+Lastly, let's look at the other scenario -- where we intentionally give `TryParse()` a bad value that can't be converted into an `int`.
 
 Modify the first line of code reinitializing the variable `value` to a different value.
 
@@ -147,5 +147,5 @@ The `TryParse()` method is a valuable tool.  Here's a few quick ideas to remembe
 
 - Use `TryParse()` when converting a string into a numeric data type.
 - `TryParse()` returns `true` if the conversion was successful, `false` if it's unsuccessful.
-- An out parameter provides a secondary means of a method returning a value.  In this case, the out parameter returns the converted value.  
+- An out parameter provides a secondary means of a method returning a value. In this case, the out parameter returns the converted value.  
 - Use the keyword `out` when passing in an argument to a method that has defined an out parameter.
