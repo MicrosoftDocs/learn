@@ -1,4 +1,4 @@
-There are still many customers that are not ready to transition to the hybrid operational model and rely on traditional tools and methods to deploy and manage Windows or Linux servers running in on-premises datacenters. There are also some workloads that are better suited for the traditional on-premises operational model or must remain on-premises to satisfy regulatory or compliance requirements. The group of heavily utilized Microsoft SQL Server instances hosting transactional databases for the Contoso's loan origination department or the planned isolated VDI farm for users in Contoso’s investment banking department are examples of such workloads. Azure Stack HCI can help with implementing these types of scenarios in the optimal manner. 
+<!-- Marcin these are great examples but for the sake of keeping things brief in this first paragraph would it be ok to use just one example (not including the examples after "or")? If you need all to set things up that's fine. Rember to relate this back to the scenario if possible-->There are still many customers that are not ready to transition to the hybrid operational model and rely on traditional tools and methods to deploy and manage Windows or Linux servers running in on-premises datacenters. There are also some workloads that are better suited for the traditional on-premises operational model or must remain on-premises to satisfy regulatory or compliance requirements. The group of heavily utilized Microsoft SQL Server instances hosting transactional databases for the Contoso's loan origination department or the planned isolated VDI farm for users in Contoso’s investment banking department are examples of such workloads. Azure Stack HCI can help with implementing these types of scenarios optimally.
 
 ## What are typical Azure Stack HCI workloads?
 
@@ -7,7 +7,7 @@ Azure Stack HCI allows you to deploy Windows and Linux-based virtualized and con
 > [!NOTE]
 > Azure Stack HCI clusters are available as integrated systems from a range of hardware vendors, with configuration validated and certified by Microsoft.
 
-You can use Azure Stack HCI to virtualize classic enterprise apps, such as Microsoft Exchange, Microsoft SharePoint, and Microsof SQL Server. You also can use it to host VMs running a wide range of Windows Server roles, delivering such services as File Server, Domain Name System (DNS), Dynamic Host Configuration Protocol (DHCP), Internet Information Services (IIS), and Active Directory Domain Services (AD DS). 
+You can use Azure Stack HCI to virtualize classic enterprise apps, such as Microsoft Exchange, Microsoft SharePoint, and Microsoft SQL Server. You also can use it to host VMs running a wide range of Windows Server roles, delivering such services as File Server, Domain Name System (DNS), Dynamic Host Configuration Protocol (DHCP), Internet Information Services (IIS), and Active Directory Domain Services (AD DS).
 
 In addition, Azure Stack HCI provides built-in support for disaster recovery of virtualized workloads through stretched clustering. An Azure Stack HCI stretched cluster offers automatic failover of VMs to a secondary site following a primary site failure. Synchronous replication ensures crash consistency of VM disk files.
 
@@ -23,13 +23,13 @@ Azure Stack HCI provides reasonably priced yet highly available compute, storage
 
 ### Virtual desktop infrastructure
 
-Azure Stack HCI clusters are well suited for large-scale virtual desktop infrastructure (VDI) deployments, with Microsoft Remote Desktop Services or equivalent third-party offerings serving the role of a virtual desktop broker. Azure Stack HCI provides additional benefits in this use case, including centralized storage and enhanced security, which simplifies protecting user data and minimizing the risk of accidental or intentional data leaks. Estimating the best cluster size is relatively straightforward because you can base it on the anticipated number of VDI users.
+Azure Stack HCI clusters are well suited for large-scale virtual desktop infrastructure (VDI) deployments, with Microsoft Remote Desktop Services or equivalent third-party offerings serving the role of a virtual desktop broker. Azure Stack HCI provides additional benefits, in this use case, including centralized storage and enhanced security, which simplifies protecting user data and minimizing the risk of accidental or intentional data leaks. Estimating the best cluster size is relatively straightforward because you can base it on the anticipated number of VDI users.
 
 Running Windows VDI workloads on the Windows Server platform provides the benefits of minimizing potential compatibility issues, eliminating the need for multivendor support arrangements, and streamlining administrative tasks. VDI clients have direct access to other Windows-based services, such as file shares, running within the same cluster.
 
 ### High-performance Microsoft SQL Server
 
-Azure Stack HCI provides an additional layer of resiliency to highly available, mission-critical Always On Availability Groups-based deployments of SQL Server. Using Microsoft-certified and Windows Server 2019-based HCI running SQL Server workloads offers extra benefits associated with the single-vendor approach, including simplified support and performance optimizations built into the underlying platform.
+Azure Stack HCI provides an additional layer of resiliency to highly available, mission-critical, Always On Availability Groups-based deployments of SQL Server. Using Microsoft-certified and Windows Server 2019-based HCI running SQL Server workloads offers extra benefits associated with the single-vendor approach, including simplified support and performance optimizations built into the underlying platform.
 
 > [!NOTE]
 > Azure Stack HCI supports both Windows and Linux VMs, allowing you to choose between the Windows and Linux-based SQL Server versions.
