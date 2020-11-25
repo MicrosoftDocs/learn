@@ -14,8 +14,7 @@ The main question is whether you want or need to deploy your application on a vi
 
    Because containers offer a lot of freedom, they suffer from some of the same issues as VMs. If you provide your own JVM, you'll need to update and patch it, as necessary. As a result, Docker images require a good continuous integration and continuous delivery (CI/CD) toolchain to be able to maintain containers properly. Because Docker images can run locally and are lighter than VMs, they also provide a great developer experience.
 
-* With a **platform as a service** solution, most of the maintenance and operation burden is handled by the cloud provider. Operating system (OS) updates, Java patches, security, and compliance are all provided. As a result, this option is usually more secure and less costly. It also comes with some scalability features, which should allow your application to adapt better to your customers' needs. It also results in better
-performance under load and lower prices when there is less traffic.
+* With a **platform as a service** solution, most of the maintenance and operation burden is handled by the cloud provider. Operating system (OS) updates, Java patches, security, and compliance are all provided. As a result, this option is usually more secure and less costly. It also comes with some scalability features, which should allow your application to adapt better to your customers' needs. It also results in better performance under load and lower cost when there is less traffic.
 
 You can achieve more by using a PaaS solution. You can set up automatic configuration, manage and load secrets (for example, by using Azure Key Vault), monitor your application, launch a live profiling session, and enable zero-downtime deployment.
 
