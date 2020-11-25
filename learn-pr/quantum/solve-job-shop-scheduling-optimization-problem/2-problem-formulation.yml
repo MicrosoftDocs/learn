@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.module-name.2-problem-formulation
-title: Title of the unit
+uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.2-problem-formulation
+title: Problem Formulation
 metadata:
-  title: Title of the unit
-  description: Description of the unit.
+  title: Problem Formulation
+  description: Learn how to represent the problem mathematically.
   ms.date: 11/25/2020
   author: anraman
   ms.author: anraman

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.module-name.8-validate-solution
-title: Title of the unit
+uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.8-validate-solution
+title: Validate the solution
 metadata:
-  title: Title of the unit
-  description: Description of the unit.
+  title: Validate the solution
+  description: Learn how to write code to check that the solution does not violate any constraints.
   ms.date: 11/25/2020
   author: anraman
   ms.author: anraman

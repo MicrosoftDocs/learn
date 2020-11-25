@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.module-name.7-solve-problem
-title: Title of the unit
+uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.7-solve-problem
+title: Solving the problem
 metadata:
-  title: Title of the unit
-  description: Description of the unit.
+  title: Solving the problem
+  description: Learn how to submit the problem to Azure Quantum and understand the results.
   ms.date: 11/25/2020
   author: anraman
   ms.author: anraman

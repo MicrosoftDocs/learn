@@ -2,26 +2,28 @@
 uid: learn.quantum.solve-job-shop-scheduling-optimization-problem
 metadata:
   title: Solve the Job Shop Scheduling Optimization Problem with Azure Quantum
-  description: Description of the module.
+  description: Learn how to use Azure Quantum's optimization service to solve a simple job shop scheduling problem.
   ms.date: 11/25/2020
   author: anraman
   ms.author: anraman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Solve the Job Shop Scheduling Optimization Problem with Azure Quantum
-summary: Summary of the module.
+summary: Learn how to use Azure Quantum's optimization service to solve a simple job shop scheduling problem.
 abstract: |
-  After completing this module, you'll able to:
+  After completing this module, you'll be able to:
 
-  - A
-  - B
-  - C
-  - D
-prerequisites: TODO
+  - Identify and build problem constraints for the job shop scheduling problem
+  - Convert problem constraints to a penalty model
+  - Learn how to represent the penalty model using Azure Quantum
+  - Solve optimization problems using Azure Quantum
+prerequisites: 
+  The latest version of the Azure Quantum Optimization SDK
+  Visual Studio Code
 iconUrl: /learn/achievements/quantum/solve-job-shop-scheduling-optimization-problem.svg
 ratingEnabled: true
 levels:
-- beginner
+- intermediate
 roles:
 - developer
 products:
@@ -38,4 +40,4 @@ units:
 - learn.quantum.module-name.9-knowledge-check
 - learn.quantum.module-name.10-summary
 badge:
-  uid: learn.quantum.module-name.badge
+  uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.badge

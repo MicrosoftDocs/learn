@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.module-name.3-precedence-constraint
-title: Title of the unit
+uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.3-precedence-constraint
+title: The precedence constraint
 metadata:
-  title: Title of the unit
-  description: Description of the unit.
+  title: The precedence constraint
+  description: Learn how to formulate the precedence constraint.
   ms.date: 11/25/2020
   author: anraman
   ms.author: anraman

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.module-name.5-no-overlap-constraint
-title: Title of the unit
+uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.5-no-overlap-constraint
+title: The no overlap constraint
 metadata:
-  title: Title of the unit
-  description: Description of the unit.
+  title: The no overlap constraint
+  description: Learn how to formulate the no overlap constraint.
   ms.date: 11/25/2020
   author: anraman
   ms.author: anraman
