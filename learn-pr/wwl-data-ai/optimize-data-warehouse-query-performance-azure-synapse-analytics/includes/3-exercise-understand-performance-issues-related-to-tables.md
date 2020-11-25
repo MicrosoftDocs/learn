@@ -27,7 +27,7 @@
 
     The script takes up to **15 seconds** to execute and returns a count of ~ 340 million rows in the table.
 
-    > If the script is still running after 45 seconds, click on Cancel.
+    If the script is still running after 45 seconds, click on Cancel.
 
     > [!NOTE] 
     > _Do not_ execute this query ahead of time. If you do, the query may run faster during subsequent executions.
@@ -56,7 +56,7 @@
   
     The script takes up to **30 seconds** to execute and returns the result. There is clearly something wrong with the `Sale_Heap` table that induces the performance hit.
 
-    > If the script is still running after one minute, click on Cancel.
+    If the script is still running after one minute, click on Cancel.
 
     ![The query execution time of 32 seconds is highlighted in the query results.](../media/sale-heap-result.png "Sale Heap result")
 
