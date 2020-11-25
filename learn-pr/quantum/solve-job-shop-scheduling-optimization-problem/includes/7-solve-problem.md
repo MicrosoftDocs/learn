@@ -216,7 +216,7 @@ $$
      & \text{Task} & \text{Tool} & \text{Order}\\
     \hline
     J_{0} \text{:} & \text{Restart life support} & & \\ \hline
-    O_{0} & \text{Open panel in the life support module} & Universal multitool & 1\\
+    O_{0} & \text{Open wall panel in the life support module} & Universal multitool & 1\\
     O_{1} & \text{Replace fuse} & Universal multitool & 2\\
     \hline
 \end{array}
