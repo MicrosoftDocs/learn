@@ -31,6 +31,7 @@ Exam AZ-900 includes these six study areas:
 
 | AZ-900 Study Area | Weight |
 | - | - |
+| Describe cloud concepts | 20-25% |
 | Describe core Azure services | 15-20% |
 | Describe core solutions and management tools on Azure | 10-15% |
 | Describe general security and network security features | 10-15% |
