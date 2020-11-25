@@ -2,7 +2,7 @@ Azure Stack HCI provides a deep integration with Azure and leverages Azure Arc t
 
 ## What are the key benefits of Azure Arc?
 
-In case of Azure Stack HCI clusters, the Azure Arc agent is already included as part of the operating system of cluster nodes, so there is no need to install it. You activate it by registering your Azure Stack HCI cluster with Azure Arc, which automatically enables Azure-based monitoring, support, and billing. 
+In case of Azure Stack HCI clusters, the Azure Arc agent is already included as part of the operating system of cluster nodes, so there is no need to install it. You activate it by registering your Azure Stack HCI cluster with Azure Arc, which automatically enables Azure-based monitoring, support, and billing.
 
 In addition, Azure Arc makes possible to leverage capabilities of Azure Resource Manager for management and maintenance of Azure Stack HCI clusters, including:
 
@@ -20,7 +20,7 @@ To implement this integration, you need to install one or more agents onto on-pr
 
 Azure Backup and Azure Site Recovery rely on Microsoft Azure Recovery Services (MARS) agent that manages communication and data replication with Azure Recovery Services Vault providing cloud-based protection. Azure File Sync agent provides similar functionality for Azure File Sync.
 
-> [!NOTE] 
+> [!NOTE]
 > Windows Admin Center simplifies installation of the Log Analytics agent on Azure Stack HCI clusters.
 
 ### Integrating Azure Stack HCI with Azure Monitor

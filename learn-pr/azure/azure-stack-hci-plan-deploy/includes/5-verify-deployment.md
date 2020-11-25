@@ -1,8 +1,8 @@
 Before deploying production workloads into an Azure Stack HCI cluster, you should confirm that its intended configuration is valid and meets the intended performance objectives. There are several validation steps that deliver complementing set of checks:
 
-- validation of cluster configuration by using Failover Clustering validation tools.
-- validation of DCB configuration of the cluster by using the Validate-DCB tool.
-- validation of cluster performance by using synthetic workloads.
+- Validation of cluster configuration by using Failover Clustering validation tools.
+- Validation of DCB configuration of the cluster by using the Validate-DCB tool.
+- Validation of cluster performance by using synthetic workloads.
 
 The validation process should be also part of the cluster deployment process in the Contoso's proof-of-concept environment.
 
@@ -20,11 +20,11 @@ Cluster validation is intended for the following scenarios:
 - Restoring cluster configuration or its nodes from backup.
 - Performing diagnostic tests on an existing cluster.
 
-You can run cluster validation by using:
+You can run cluster validation by using the:
 
-- the Validate Cluster option in Windows Admin Center.
+- Validate Cluster option in Windows Admin Center.
 - Validate a Configuration Wizard in Failover Cluster Manager.
-- the **Test-Cluster** Windows PowerShell cmdlet.
+- **Test-Cluster** Windows PowerShell cmdlet.
 
 > [!CAUTION]
 > Running the Validate Cluster option in Windows Admin Center requires that you enable Credential Security Service Provider (CredSSP) authentication for the duration of the validation process. You should disable it afterwards for security reasons. You can enable and disable CredSSP directly from Windows Admin Center.

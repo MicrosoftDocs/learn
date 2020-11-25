@@ -1,4 +1,4 @@
-Once you verified that Azure Stack HCI is suitable for hosting your workload, you need to consider infrastructure requirements, including compute, storage, and networking components. These considerations are workload dependent, so in the case of Contoso, they should account for distinct performance requirements of Microsoft SQL Server and VDI.
+Once you verify that Azure Stack HCI is suitable for hosting your workload, you need to consider infrastructure requirements, including compute, storage, and networking components. These considerations are workload dependent, so in the case of Contoso, they should account for distinct performance requirements of Microsoft SQL Server and VDI.
 
 ## Plan for Azure Stack HCI
 
@@ -16,9 +16,9 @@ In general, when planning for Azure Stack HCI implementation, you should conside
 - The number and type of network switches per cluster. This also has impact on throughput and latency of storage and network traffic.
 - The Azure subscription in which you will register your Azure Stack HCI deployment. Note that your decision this has pricing implications, since the ongoing charges for Azure Stack HCI clusters are associated with that Azure subscription.
 
-There are also additional considerations that apply to stretched clusters. You need to determine how many servers you will need at each site, and whether the cluster configuration will be active/passive or active/active. In active-passive mode, a designated primary site unidirectionally replicates to another site that provides the disaster recovery capability. In active-active mode, two sites replicate their respective volumes unidirectionally to each other, providing failover capability in case of a failure in either site. The active-active mode helps minimize business continuity costs by eliminating the need for a dedicated disaster recovery site. 
+There are also additional considerations that apply to stretched clusters. You need to determine how many servers you will need at each site, and whether the cluster configuration will be active/passive or active/active. In active-passive mode, a designated primary site unidirectionally replicates to another site that provides the disaster recovery capability. In active-active mode, two sites replicate their respective volumes unidirectionally to each other, providing failover capability in case of a failure in either site. The active-active mode helps minimize business continuity costs by eliminating the need for a dedicated disaster recovery site.
 
-All of these considerations depend to large extent on the intended workloads. Effectively, the use cases mentioned earlier in this module serve as the basis for identifying the optimal Azure Stack HCI hardware configuration. The list of all Azure Stack HCI solutions offered by third-party hardware vendors that have been approved by Microsoft for these use cases is maintained in the Azure Stack HCI catalog. 
+All of these considerations depend to large extent on the intended workloads. Effectively, the use cases mentioned earlier in this module serve as the basis for identifying the optimal Azure Stack HCI hardware configuration. The list of all Azure Stack HCI solutions offered by third-party hardware vendors that have been approved by Microsoft for these use cases is maintained in the Azure Stack HCI catalog.
 
 ### Plan for Azure Stack HCI host storage
 
@@ -45,31 +45,31 @@ Storage Spaces Direct works in the optimal manner when every server has the exac
 
 #### Cluster and pool quorums
 
-In a failover cluster, the term quorum represents the number of clustering components that must be available for that cluster to remain online. These components can include the cluster nodes and, optionally, a witness. The term witness designates a resource dedicated exclusively to the purpose of establishing and maintaining a quorum. 
+In a failover cluster, the term quorum represents the number of clustering components that must be available for that cluster to remain online. These components can include the cluster nodes and, optionally, a witness. The term witness designates a resource dedicated exclusively to the purpose of establishing and maintaining a quorum.
 
 In the context of Storage Spaces Direct, there are two distinct quorum mechanisms:
 
 - *Cluster quorum*, which operates at the cluster level, and is based on votes from nodes and a witness. Storage Spaces Direct doesn't support Disk Witness, leaving Cloud Witness and the file share witness as the two viable options.
-- *Pool quorum*, which operates on the storage pool level, and is based on votes from nodes and storage resiliency. To optimize pool quorum configuration when implementing Storage Spaces Direct, ensure there's a matching storage configuration in each cluster node. 
+- *Pool quorum*, which operates on the storage pool level, and is based on votes from nodes and storage resiliency. To optimize pool quorum configuration when implementing Storage Spaces Direct, ensure there's a matching storage configuration in each cluster node.
 
 #### Volumes
 
 In the context of Storage Spaces Direct, volumes allow you to group the drives in the storage pool in the manner that yields the optimal combination of fault tolerance, scalability, and performance requirements. When planning for Storage Spaces Direct volumes, you should consider the following:
 
 - Number of volumes per cluster. To optimize storage performance, the number of volumes per server should be a multiple of the number of servers per cluster.
-- File system. Consider using the ReFS for Storage Spaces Direct volumes. 
-- Volume size. The size of a volume on an Azure Stack HCI cluster shouldn't exceed 64 TB. 
+- File system. Consider using the ReFS for Storage Spaces Direct volumes.
+- Volume size. The size of a volume on an Azure Stack HCI cluster shouldn't exceed 64 TB.
 - Reserve capacity. To optimize disk space usage, consider setting aside the equivalent of one capacity drive per server, up to 4 drives per server.
-- Resiliency type. Volume resiliency is the primary mechanism that protects data residing in the storage pool against hardware issues, such as drive or server failures. The choice of resiliency type is workload dependent. Workloads that have strict latency requirements or that perform large amounts of mixed random IOPS, such as Microsoft SQL Server databases or performance-sensitive Hyper-V VMs, should run on volumes that use mirroring to maximize performance. Workloads that have less demanding I/O requirements, such as file servers or Virtual Desktop Infrastructure (VDI), can use dual-parity to improve capacity efficiency. Workloads that perform large, sequential writes, such as backup software, are best suited for mirror-accelerated parity.
+- <!--Marcin can this content be broken/split into another bullet point? The content is longer than the other bullets (perhaps it just needs to be and we leave it as is) I'm just wondering about a way to balance things out a bit more. Maybe create a shorter bullet point about resiliency type and add a follow up consideration paragraph about mirroring? -->Resiliency type. Volume resiliency is the primary mechanism that protects data residing in the storage pool against hardware issues, such as drive or server failures. The choice of resiliency type is workload dependent. Workloads that have strict latency requirements or that perform large amounts of mixed random IOPS, such as Microsoft SQL Server databases or performance-sensitive Hyper-V VMs, should run on volumes that use mirroring to maximize performance. Workloads that have less demanding I/O requirements, such as file servers or Virtual Desktop Infrastructure (VDI), can use dual-parity to improve capacity efficiency. Workloads that perform large, sequential writes, such as backup software, are best suited for mirror-accelerated parity.
 
 ### Plan for Azure Stack HCI host networking
 
-In the simplest terms, planning for host networking in Azure Stack HCI involves identifying the optimal configuration of node interconnects, remote direct memory access (RDMA) adapters, datacenter integration, and bandwidth allocation. There are additional considerations for stretched clusters, such as inter-site network port requirements and latency. 
+In the simplest terms, planning for host networking in Azure Stack HCI involves identifying the optimal configuration of node interconnects, remote direct memory access (RDMA) adapters, datacenter integration, and bandwidth allocation. There are additional considerations for stretched clusters, such as inter-site network port requirements and latency.
 
-> [!NOTE] 
+> [!NOTE]
 > For details regarding the bandwidth allocation and network port requirements, refer to documents referenced in the Summary unit of this module.
 
-> [!NOTE] 
+> [!NOTE]
 > For stretched clusters, you should have at least one 1 Gb connection between sites with at most 5 ms round trip latency.
 
 #### Node interconnect
@@ -86,11 +86,11 @@ RDMA is a networking technology that provides high-throughput, low-latency commu
 - RDMA over Converged Ethernet (RoCE and RoCEv2) over UDP/IP, with Data Center Bridging (DCB) providing flow control and congestion management.
 - Internet Wide Area RDMA Protocol (iWarp) over TCP/IP, with TCP providing flow control and congestion management.
 
-Although the Microsoft RDMA implementation is RDMA-technology agnostic, RoCE and RoCEv2 installations are difficult to configure and problematic at any scale above a single rack. For all other scenarios, you should consider iWarp instead. iWarp does not require any configuration of DCB on network hosts or network switches and can operate over the same distances as any other TCP connection. 
+Although the Microsoft RDMA implementation is RDMA-technology agnostic, RoCE and RoCEv2 installations are difficult to configure and problematic at any scale above a single rack. For all other scenarios, you should consider iWarp instead. iWarp does not require any configuration of DCB on network hosts or network switches and can operate over the same distances as any other TCP connection.
 
 #### Datacenter integration
 
-Azure Stack HCI gives you the option to virtualize its network resources by implementing Software-Defined Networking (SDN). Because such SDN implementation is optional, you have the choice of integrating Azure Stack HCI into an existing Virtual Local Area Network (VLAN)-based infrastructure or isolating its workloads by making use of SDN-based network virtualization. 
+Azure Stack HCI gives you the option to virtualize its network resources by implementing Software-Defined Networking (SDN). Because such SDN implementation is optional, you have the choice of integrating Azure Stack HCI into an existing Virtual Local Area Network (VLAN)-based infrastructure or isolating its workloads by making use of SDN-based network virtualization.
 
-> [!NOTE] 
+> [!NOTE]
 > Coverage of the planning for SDN on Azure Stack HCI is beyond the scope of this module.
