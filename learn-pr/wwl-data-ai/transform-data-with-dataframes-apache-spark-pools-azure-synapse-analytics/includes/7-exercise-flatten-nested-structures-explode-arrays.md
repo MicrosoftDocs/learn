@@ -98,4 +98,4 @@ In order to go through this exercise, it require a set-up with instructions that
 
     Here we group by `visitorId` once again, but now we use a **`sum`** over the `itemsPurchasedLast12Months` column in the **`agg`** method. Notice that we included the `itemsPurchasedLast12Months` column in the `select` statement so we could use it in the `sum`.
 
-    ![The query output is displayed.](../media/spark-grouped-top-purchases-total-items.png "Grouped top total items output")
+    ![The query output for total items is displayed.](../media/spark-grouped-top-purchases-total-items.png "Grouped top total items output")

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/24/2020
+  ms.date: 11/25/2020
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ quiz:
       explanation: "InCorrect. Explode Arrays is a third step in flattening nested schema's. It is necessary to transform the array in the data frame into a new dataframe where the column that you want to select is defined."
   - content: "What is a dataframe?"
     choices:
-    - content: "A creation of a datastructure."
+    - content: "A creation of a data structure."
       isCorrect: true
       explanation: "Correct. A DataFrame creates a data structure and it's one of the core data structures in Spark."
     - content: "A parquet file."

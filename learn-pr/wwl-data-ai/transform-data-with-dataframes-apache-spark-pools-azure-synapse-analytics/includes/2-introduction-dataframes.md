@@ -3,17 +3,17 @@ Let's talk about dataframes.
 What are dataframes?
 
 Basically you could view DataFrames as you might see in excel.
-It's kind of like a box with squares in it, that organizes data, which we could also refer to as as table of data. 
+It's like a box with squares in it, that organizes data, which we could also refer to as table of data. 
 
 What does a table of data mean?
 
 It is a single set of two-dimensional data that can have multiple rows and columns in the data. 
 Each row, is a sample of data. 
-Each colum is a variable or parameter that is able to describe the row that contains the sample of data. 
+Each column is a variable or parameter that is able to describe the row that contains the sample of data. 
 
 Just like you organize your shoe cabinet. 
 Each row of shoes in the cabinet is a sample of data. 
-You might have different type of shoes i.e. sneakers, pumps, which you could organize accordingly. 
+You might have different type of shoes that is, sneakers, pumps, which you could organize accordingly. 
 These could become the variables or the column names for the shoes you put in the shoe cabinet. 
 
 What would happen though, if you have thousands and thousands of drawers?
@@ -21,8 +21,8 @@ What would happen though, if you have thousands and thousands of drawers?
 A DataFrame creates a data structure and it's one of the core data structures in Spark. 
 In Spark, it is a distributed collection of that data that is organized into columns that have names. 
 
-What you see in Data Engineering is that you start with reading or loading data that can be unstructured, semi-structured or structured, store it in a DataFrame and start transforming that data in order to get insights. 
-You can use different functionalities in order to do so like using Spark SQL, PySpark and others. 
+What you see in Data Engineering is that you start with reading or loading data that can be unstructured, semi-structured, or structured, store it in a DataFrame and start transforming that data in order to get insights. 
+You can use different functionalities in order to do so like using Spark SQL, PySpark, and others. 
 Usually when you see 'df' in some code it refers to a dataframe. 
 
 You can either create your own dataframe as this example shows:
@@ -33,7 +33,7 @@ You can either create your own dataframe as this example shows:
    demo_df.show()
    ```
 
-Or load a file that contains data into a dataframe like in the below example where the open taxidataset is used:
+Or load a file that contains data into a dataframe like in the below example where the open taxi dataset is used:
 
 ```python
 from azureml.opendatasets import NycTlcYellow

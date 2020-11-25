@@ -1,7 +1,7 @@
 In this exercise and following exercises we are going to use an example throughout this module using Tailwind Traders. 
 However, it does require a set-up with instructions that can be found here:
 [Set up](https://github.com/ctesta-oneillmsft/asa-vtd) 
-The following usecase will be used:
+The following use case will be used:
 
 Tailwind Traders has customer profile data from an e-commerce system that provides top product purchases for each visitor of the site (customer) over the past 12 months. This data is stored within JSON files in the data lake. They have struggled with ingesting, exploring, and transforming these JSON files and want your guidance. The files have a hierarchical structure that they want to flatten before loading into relational data stores. They also wish to apply grouping and aggregate operations as part of the data engineering process.
 You recommend using Synapse Notebooks to explore and apply data transformations on the JSON files.
@@ -52,7 +52,7 @@ This exercise will focus on how to load data into a spark dataframe.
 
     Notice that the output shows nested data for `topProductPurchases`, which includes an array of `productId` and `itemsPurchasedLast12Months` values. You can expand the fields by clicking the right triangle in each row.
 
-    ![JSON nested output.](media/spark-json-output-nested.png "JSON output")
+    ![JSON nested output.](../media/spark-json-output-nested.png "JSON output")
 
     This makes analyzing the data a bit difficult. This is because the JSON file contents look like the following:
 
