@@ -5,7 +5,7 @@
     > [Azure Cloud Shell](https://shell.azure.com)
 
 2. Select **Bash**
-3. Select the subscription you used in the previous exercise to deploy the Hyperscale sever group
+3. Select the subscription you used in the previous exercise to deploy the Hyperscale server group
 
 ![Select Subscription](../media/5a.png)
 
