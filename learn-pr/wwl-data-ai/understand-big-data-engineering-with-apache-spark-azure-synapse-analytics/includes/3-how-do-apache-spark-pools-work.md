@@ -65,7 +65,7 @@ Once you select 'Create', you'll have some parameters to fill out.
 Once you've filled out the parameters, select Create and wait until the resource gets deployed. 
 Once the resource that is, the Azure Synapse Analytics Workspace resource, is created, navigate to the resource and add a Spark Pool as follows:
 
-![Azure Synapse Analytics Add Spark Pool](../media/add-spark-pool.png)
+[![Azure Synapse Analytics Add Spark Pool](../media/add-spark-pool.png)](../media/add-spark-pool.png#lightbox)
 
 Once you've selected Create New Apache Spark pool, you'll be redirected to the following screen in which you'll have to specify a couple of parameters:
 

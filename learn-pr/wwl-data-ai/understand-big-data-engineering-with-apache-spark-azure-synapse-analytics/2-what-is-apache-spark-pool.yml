@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.what-is-apache-spark-pool
-title: What is an apache spark pool in Azure Synapse Analytics
+title: What is an Apache Spark pool in Azure Synapse Analytics
 metadata:
-  title: What is an apache spark pool in Azure Synapse Analytics
-  description: "What is an apache spark pool in Azure Synapse Analytics"
-  ms.date: 11/24/2020
+  title: What is an Apache Spark pool in Azure Synapse Analytics
+  description: "What is an Apache Spark pool in Azure Synapse Analytics"
+  ms.date: 11/25/2020
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial

@@ -10,7 +10,7 @@ After completing this module, you will be able to:
 * Understand the use-cases of data engineering with apache spark in Azure synapse analytics
 * Exercise: Create a spark pool in Azure synapse analytics
 
-**Prerequisite**
+## Prerequisite
 Before taking this module, it is recommended that you complete the following modules:
 
 * Data Fundamentals

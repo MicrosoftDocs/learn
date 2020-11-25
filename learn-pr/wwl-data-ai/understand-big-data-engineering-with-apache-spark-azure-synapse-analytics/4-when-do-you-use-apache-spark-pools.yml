@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.when-do-you-use-apache-spark-pools
-title: When do you use apache spark pools in Azure Synapse Analytics
+title: When do you use Apache Spark pools in Azure Synapse Analytics
 metadata:
-  title: When do you use apache spark pools in Azure Synapse Analytics
-  description: "When do you use apache spark pools in Azure Synapse Analytics"
-  ms.date: 11/24/2020
+  title: When do you use Apache Spark pools in Azure Synapse Analytics
+  description: "When do you use Apache Spark pools in Azure Synapse Analytics"
+  ms.date: 11/25/2020
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial
