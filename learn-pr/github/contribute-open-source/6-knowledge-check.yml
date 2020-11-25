@@ -54,3 +54,4 @@ quiz:
           explanation: "You don't need to be part of the project's team to propose a pull request."
         - content: Fork a repo, clone it, commit changes and push to your fork
           isCorrect: true
+          explanation: "While you can clone any public GitHub repository, by default you don't have the right to push any modifications. Fork the repository to create your own copy first."

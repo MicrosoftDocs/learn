@@ -21,7 +21,7 @@ Before you submit your pull request, check the sidebar for ways to complete your
 - (grey) duplicate: this issue or pull request already exists
 - (teal) enhancement: new feature or request
 
-Optionally you can *link issues* in the sidebar as well, where successfully merging a pull request may close the corresponding issue. And you can customize your subscription to *notifications* on the thread - some PRs receive a lot of comments, reviews, and CI/CD related notifications. You can chose between:
+Optionally you can *link issues* in the sidebar as well, where successfully merging a pull request may close the corresponding issue. And you can customize your subscription to *notifications* on the thread - some PRs receive a lot of comments, reviews, and CI/CD related notifications. You can choose between:
 
 - Not subscribed, and only receive notifications when you have participated or have been `@mentioned`.
 - Subscribed, and receive all notifications for this pull request.
