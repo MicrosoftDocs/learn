@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.module-name.2-problem-formulation
+title: Title of the unit
+metadata:
+  title: Title of the unit
+  description: Description of the unit.
+  ms.date: 11/25/2020
+  author: anraman
+  ms.author: anraman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-problem-formulation.md)]

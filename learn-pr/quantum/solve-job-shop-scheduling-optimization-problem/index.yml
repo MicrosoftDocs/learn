@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.quantum.solve-job-shop-scheduling-optimization-problem
+metadata:
+  title: Solve the Job Shop Scheduling Optimization Problem with Azure Quantum
+  description: Description of the module.
+  ms.date: 11/25/2020
+  author: anraman
+  ms.author: anraman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Solve the Job Shop Scheduling Optimization Problem with Azure Quantum
+summary: Summary of the module.
+abstract: |
+  After completing this module, you'll able to:
+
+  - A
+  - B
+  - C
+  - D
+prerequisites: TODO
+iconUrl: /learn/achievements/quantum/solve-job-shop-scheduling-optimization-problem.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure-quantum
+units:
+- learn.quantum.module-name.1-introduction
+- learn.quantum.module-name.2-problem-formulation
+- learn.quantum.module-name.3-precedence-constraint
+- learn.quantum.module-name.4-operation-once-constraint
+- learn.quantum.module-name.5-no-overlap-constraint
+- learn.quantum.module-name.6-putting-it-together
+- learn.quantum.module-name.7-solve-problem
+- learn.quantum.module-name.8-validate-solution
+- learn.quantum.module-name.9-knowledge-check
+- learn.quantum.module-name.10-summary
+badge:
+  uid: learn.quantum.module-name.badge
