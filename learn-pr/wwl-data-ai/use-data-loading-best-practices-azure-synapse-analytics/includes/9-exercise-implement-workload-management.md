@@ -41,7 +41,7 @@ Your organization has asked you if there is a way to mark queries executed by th
 
 7. Select the **Lab 08 - Execute Data Analyst and CEO Queries** Pipeline **(1)**, which will run / trigger the `asa.sql.workload01` and `asa.sql.workload02` queries. Select **Add trigger (2)**, then **Trigger now (3)**. In the dialog that appears, select **OK**.
 
-    ![The add trigger and trigger now menu items are highlighted.](../media/trigger-data-analyst-ceo-queries-pipeline.png)
+    ![The add trigger and trigger now menu items are highlighted.](../media/trigger-data-analyst-queries-pipeline.png)
 
 8. Let's see what happened to all the queries we just triggered as they flood the system. In the query window, replace the script with the following:
 
@@ -227,7 +227,8 @@ Let's start by experimenting with different parameters.
     END
     ```
 
-    > **Note**: Configuring workload containment implicitly defines a maximum level of concurrency. With a CAP_PERCENTAGE_RESOURCE set to 60% and a REQUEST_MIN_RESOURCE_GRANT_PERCENT set to 1%, up to a 60-concurrency level is allowed for the workload group. Consider the method included below for determining the maximum concurrency:
+    > [!NOTE] 
+    > Configuring workload containment implicitly defines a maximum level of concurrency. With a CAP_PERCENTAGE_RESOURCE set to 60% and a REQUEST_MIN_RESOURCE_GRANT_PERCENT set to 1%, up to a 60-concurrency level is allowed for the workload group. Consider the method included below for determining the maximum concurrency:
     > 
     > [Max Concurrency] = [CAP_PERCENTAGE_RESOURCE] / [REQUEST_MIN_RESOURCE_GRANT_PERCENT]
 
