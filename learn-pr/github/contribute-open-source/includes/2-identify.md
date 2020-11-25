@@ -60,7 +60,7 @@ You can head to the labels page (for example [https://github.com/jupyter/noteboo
 
 As you explore issues, you might also notice that some have other issues or pull requests linked.
 
-:::image type="content" source="../media/2-linkedPR.png" alt-text="Screenshot showing a pull request linked to an issue":::
+:::image type="content" source="../media/2-linked-pr.png" alt-text="Screenshot showing a pull request linked to an issue":::
 
 ## Sponsoring a project
 

@@ -29,7 +29,7 @@ Optionally you can *link issues* in the sidebar as well, where successfully merg
 
 ## Exercise
 
-Using the [First Contributions](https://github.com/firstcontributions/first-contributions?azure-portal=true) project practice forking, cloning, and ultimately submitting a pull request. The First Contributions project aims to "guide the way beginners make their first contribution", and has guides for both using the command line, as well as several GUIs (Graphical User Interfaces). The project also has support for several languages, make sure to check their `Translations` folder. 
+Using the [First Contributions](https://github.com/firstcontributions/first-contributions?azure-portal=true) project practice forking, cloning, and ultimately submitting a pull request. The First Contributions project aims to "guide the way beginners make their first contribution", and has guides for both using the command line, as well as several GUIs (Graphical User Interfaces). The project also has support for several languages, make sure to check their `Translations` folder.
 
 With the lessons from the previous module and the above in mind, now go back to a pull request you opened recently (or: navigate to the pull requests tab of a project you're watching), and find out how a good subject line can make all the difference. Consider updating a pull request accordingly. Put roughly as much time in writing your PR as you did making the change to the project, so to help the maintainer(s) to triage (categorize and prioritize) community contributions.
 
