@@ -44,15 +44,15 @@ CREATE TABLE payment_events
 (
     event_id bigint,
     event_type text,
+    user_id bigint,
     merchant_id bigint,
-    user_id bigint primary key,
     event_details jsonb,
     created_at timestamp
 );
 
 CREATE TABLE payment_users
 (
-    user_id bigint primary key references payment_events,
+    user_id bigint,
     url text,
     login text,
     avatar_url text
@@ -114,12 +114,16 @@ GROUP BY hour
 ORDER BY hour;
 ```
 
-14. And now, for some analytics, run the following query to see how many transactions are staying within our bank.
+14. And now, let's take a look for high activity and see if we can find anything interesting.
 
 ```sql
-SELECT count(*)
-  FROM payment_events events
-  JOIN payment_users users
-    ON events.user_id = users.user_id
- WHERE events.event_type = 'SendFunds';
+ SELECT users.login, count(*) as purchases
+ FROM payment_events events
+ JOIN payment_users users
+ ON events.user_id = users.user_id
+ WHERE events.event_type = 'SendFunds'
+ GROUP BY users.login
+ ORDER BY purchases DESC LIMIT 20;
 ```
+
+We can see our most active user is `LombiqBot`, with 2232 transactions within the four hour window. Interesting.
