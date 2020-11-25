@@ -1,4 +1,4 @@
-Software-defined storage is one of the foundational building blocks of Azure Stack HCI. However, unlike Hyper-V or failover clustering, software-defined storage is not an individual server role or a feature. Instead, it consists of different, frequently complementing each other, technologies that you can combine to implement various storage virtualization scenarios such as guest clustering or HCI. These technologies include Storage Spaces, Cluster Shared Volumes (CSV), Server Message Block (SMB), SMB Multichannel, SMB Direct, Scale Out File Server (SOFS), Storage Spaces Direct (S2D), and Storage Replica. To use Azure Stack HCI in your proof-of-concept environment, you'll rely on most of these technologies.
+Software-defined storage is one of the foundational building blocks of Azure Stack HCI. However, unlike Hyper-V or failover clustering, software-defined storage is not an individual server role or a feature. Instead, it consists of different technologies that frequently complement each other. You can combine these technologies to implement various storage virtualization scenarios such as guest clustering or HCI. These technologies include Storage Spaces, Cluster Shared Volumes (CSV), Server Message Block (SMB), SMB Multichannel, SMB Direct, Scale Out File Server (SOFS), Storage Spaces Direct (S2D), and Storage Replica. To use Azure Stack HCI in your proof-of-concept environment, you'll rely on most of these technologies.
 
 > [!NOTE]
 > This is not a comprehensive list, but is sufficient to gain a basic understanding of the core software-defined storage functionality in Azure Stack HCI.
@@ -9,13 +9,13 @@ Software-defined storage uses storage virtualization to separate storage managem
 
 ### Reasons for using software-defined storage
 
-With software-defined storage, implementing virtualized workloads no longer requires configuration of logical unit numbers (LUNs) and Storage Area Networks (SAN) switches according to third-party vendor specifications. Instead, you can manage storage in the same, consistent manner regardless of its underlying hardware. In addition, you've the option of replacing proprietary and expensive technologies with flexible and commodity hardware-based solutions. Rather than relying on dedicated SANs for highly available and high-performing storage, you have the option of using local disks by using enhancements in remote file sharing protocols and high-bandwidth, low-latency networking. 
+With software-defined storage, implementing virtualized workloads no longer requires configuration of logical unit numbers (LUNs) and Storage Area Networks (SAN) switches according to third-party vendor specifications. Instead, you can manage storage in the same, consistent manner regardless of its underlying hardware. In addition, you've the option of replacing proprietary and expensive technologies with flexible and economical hardware-based solutions. Rather than relying on dedicated SANs for highly available and high-performing storage, you can use local disks by using enhancements in remote file sharing protocols and high-bandwidth, low-latency networking. 
 
-The simplest example of software-defined storage in non-clustered scenarios is Storage Spaces.
+Storage spaces is the simplest example of software-defined storage in non-clustered scenarios.
 
 ## Storage spaces
 
-A storage space is a storage-virtualization capability that Microsoft has built into Azure Stack HCI, Windows Server, and Windows 10. The Storage Spaces feature consists of two components:
+A storage space is a storage-virtualization capability that Microsoft has built into Azure Stack HCI, Windows Server, and Windows 10. The storage spaces feature consists of two components:
 
 - Storage pools. This is a collection of physical disks aggregated into a logical disk that you can manage as a single entity. A storage pool can contain physical disks of any type and size.
 - Storage spaces. These are virtual disks that you can create from free space in a storage pool. Virtual disks are equivalent to LUNs on a SAN.
@@ -27,7 +27,7 @@ The most common reasons for using storage spaces include:
 - Increasing storage resiliency levels, such as mirroring and parity. Virtual disks resiliency resembles Redundant Array of Independent Disks (RAID) technologies.
 - Improving storage performance by using storage tiers. Storage tiers allow you optimize the use of different disk types in a storage space. For example, you could use very fast but small-capacity solid-state drives (SSDs) with slower, but large-capacity hard disks. When you use this combination of disks, Storage Spaces automatically moves data that is accessed frequently to the faster disks, and then moves data that is accessed less often to the slower disks.
 - Improving storage performance by using write-back caching. The purpose of write-back caching is to optimize writing data to the disks in a storage space. Write-back caching works with storage tiers. If the server that is running the storage space detects a peak in disk-writing activity, it automatically starts writing data to the faster disks.
-- Increasing storage efficiency by using thin provisioning. Thin provisioning enables storage to be allocated readily on as needed basis. Instead of the traditional fixed storage allocation method in which large portions of storage capacity are preallocated but might remain unused, thin provisioning optimizes any available storage by reclaiming storage that is no longer needed using a process known as trim.
+- Increasing storage efficiency by using thin provisioning. Thin provisioning enables storage to be allocated readily on as needed basis. Instead of the traditional fixed storage allocation method in which large portions of storage capacity are preallocated but might remain unused, thin provisioning optimizes any available storage by reclaiming storage that is no longer needed by using a process known as trim.
 
 The simplest example of software-defined storage in clustered scenarios is Cluster Shared Volumes (CSV).
 
@@ -54,7 +54,7 @@ The SMB protocol is a network file sharing protocol that provides access to file
 
 The most common uses of SMB include:
 
-- Storage for VM disk files (Hyper-V over SMB). Hyper-V can store virtual machine files, such as configuration, VM disk files, and checkpoints in file shares over the SMB 3.x protocol. This can be used for both stand-alone file servers and clustered file servers that use Hyper-V together with shared file storage for the cluster.
+- Storage for VM disk files (Hyper-V over SMB). Hyper-V can store VM files, such as configuration, VM disk files, and checkpoints in file shares over the SMB 3.x protocol. You can use these VM files for both standalone file servers and clustered file servers that use Hyper-V together with shared file storage for the cluster.
 - Microsoft SQL Server over SMB. SQL Server can store user database files on SMB file shares.
 - Traditional storage for end-user data. The SMB 3.x protocol supports the traditional information worker workloads.
 
@@ -62,7 +62,7 @@ SMB 3.x provides support for SMB Multichannel and SMB Direct.
 
 ## SMB Multichannel
 
-SMB Multichannel is part of the implementation of the SMB 3.x protocol, which significantly improves network performance and availability for Windows Servers or Azure Stack HCI cluster nodes operating as file servers. SMB Multichannel allows such servers to take advantage of multiple network connections to provide the following capabilities:
+SMB Multichannel is part of the implementation of the SMB 3.x protocol, which significantly improves network performance and availability for devices running Windows Server or Azure Stack HCI cluster nodes operating as file servers. SMB Multichannel allows such servers to take advantage of multiple network connections to provide the following capabilities:
 
 - Increased throughput. The file server can simultaneously transmit more data using multiple connections. This is particularly beneficial when using servers with multiple, high-speed network adapters.
 - Automatic configuration. SMB Multichannel automatically discovers multiple available network paths and dynamically adds connections as required.
@@ -74,7 +74,7 @@ SMB Direct optimizes the use of remote direct memory access (RDMA) network adapt
 
 SMB Multichannel is responsible for detecting the RDMA capabilities of network adapters necessary to enable SMB Direct. It automatically creates two RDMA connections per interface. SMB clients automatically detect and use multiple network connections if an appropriate configuration is identified.
 
-SMB 3.x technologies and CSV serve as the basis for Scale-Out File Servers.
+SMB 3.x technologies and CSV serve as the basis for SOFS.
 
 ## Scale-Out File Servers
 
@@ -86,17 +86,17 @@ SOFS provides the following benefits:
 
 - Improved scaling. Because clients access shared folders via multiple nodes, if the volume of access requests increases, you can add an additional node to the SOFS.
 - Load-balanced utilization. All failover cluster nodes can accept and process client read and write requests targeting one or more SOFS. When you combine their bandwidth and processor power, you can achieve higher utilization rates than with any single node. A single cluster node is no longer a potential bottleneck, because SOFS can support as many clients as all the cluster nodes can collectively facilitate.
-- Nondisruptive maintenance, updates, and node failures. Fixing disk corruption issues, performing maintenance, updating, or restarting a failover cluster node do not affect the availability of an SOFS. SOFS also provides transparent failover triggered by a node failure.
+- Nondisruptive maintenance, updates, and node failures. Fixing disk corruption issues, performing maintenance, updating, or restarting a failover cluster node does not affect the availability of an SOFS. SOFS also provides transparent failover triggered by a node failure.
 
 You can also use SOFS to implement guest clustering.
 
 ## Guest clustering
 
-You configure guest failover clustering similar to physical-server failover clustering, except that the cluster nodes are VMs. In this scenario, you create two or more VMs and implement failover clustering within the guest operating systems. The application or service is then able to take advantage of high availability between the VMs. Although you can place the VMs on a single host, in production scenarios, you should use separate failover clustering–enabled Hyper-V host computers. After you implement failover clustering at both the host and VM levels, you can restart the resource regardless of whether the node that fails is a VM or a host.
+You configure guest failover clustering similar to physical-server failover clustering, except that the cluster nodes are VMs. In this scenario, you create two or more VMs and implement failover clustering within the guest operating systems. The application or service can then take advantage of high availability between the VMs. Although you can place the VMs on a single host, in production scenarios, you should use separate failover clustering–enabled Hyper-V host computers. After you implement failover clustering at both the host and VM levels, you can restart the resource regardless of whether a VM or a host node fails.
 
 Hyper-V VMs can use shared storage that you can connect to by using Fibre Channel or Internet SCSI (iSCSI) from the clustered VMs. Alternatively, you can configure shared storage on the clustered Hyper-V hosts by using the shared virtual hard disk feature and then attach the shared disks to clustered VMs.
 
-You can use shared virtual hard disk in either of the following scenarios:
+You can use shared virtual hard disk in the following scenarios:
 
 - CSV on the Hyper-V host cluster. In this scenario, all virtual machine files, including the shared virtual hard disk files are stored on a CSV that is configured as shared storage for clustered VMs.
 - SOFS on a separate storage cluster. This scenario uses SMB file-based storage as the location of the shared virtual hard disk files. 
@@ -105,7 +105,7 @@ In both of these secenarios, you can implement storage by using Storage Spaces D
 
 ## Storage Spaces Direct
 
-Storage Spaces Direct represent the evolution of Storage Spaces. It leverages storage spaces, failover clustering, CSVs, and SMB 3.x to implement virtualized, highly-available clustered storage by using local disks on each of the Storage Spaces Direct cluster nodes. It is suitable for hosting highly-available workloads, including VMs and SQL Server databases. This eliminates the need for attaching storage devices to multiple cluster nodes in failover clustering scenarios.
+Storage Spaces Direct represents the evolution of storage spaces. It leverages storage spaces, failover clustering, CSVs, and SMB 3.x to implement virtualized, highly available clustered storage by using local disks on each of the Storage Spaces Direct cluster nodes. It is suitable for hosting highly available workloads, including VMs and SQL Server databases. This eliminates the need for attaching storage devices to multiple cluster nodes in failover clustering scenarios.
 
 :::image type="content" source="../media/4-s2d-architecture.png" alt-text="The architecture of a typical Storage Spaces Direct implementation, including the storage pool, software storage bus, cluster, Storage Spaces, CSV, and Hyper-V VMs." border="true":::
 
