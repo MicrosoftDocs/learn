@@ -1,4 +1,4 @@
-Software-defined storage is one of the foundational building blocks of Azure Stack HCI. However, unlike Hyper-V or Failover Clustering, software-defined storage is not an individual server role or a feature. Insteadm it consists of different, frequently complementing each other, technologies that you can combine to implement various storage virtualization scenarios such as guest clustering or HCI. These technologies include Storage Spaces, Cluster Shared Volumes (CSV), Server Message Block (SMB), SMB Multichannel, SMB Direct, Scale Out File Server (SOFS), Storage Spaces Direct (S2D), and Storage Replica. To use Azure Stack HCI in your proof-of-concept environment, you'll rely on most of these technologies.
+Software-defined storage is one of the foundational building blocks of Azure Stack HCI. However, unlike Hyper-V or failover clustering, software-defined storage is not an individual server role or a feature. Instead, it consists of different, frequently complementing each other, technologies that you can combine to implement various storage virtualization scenarios such as guest clustering or HCI. These technologies include Storage Spaces, Cluster Shared Volumes (CSV), Server Message Block (SMB), SMB Multichannel, SMB Direct, Scale Out File Server (SOFS), Storage Spaces Direct (S2D), and Storage Replica. To use Azure Stack HCI in your proof-of-concept environment, you'll rely on most of these technologies.
 
 > [!NOTE]
 > This is not a comprehensive list, but is sufficient to gain a basic understanding of the core software-defined storage functionality in Azure Stack HCI.
@@ -7,31 +7,31 @@ Software-defined storage is one of the foundational building blocks of Azure Sta
 
 Software-defined storage uses storage virtualization to separate storage management and presentation from the underlying physical hardware. One of the primary benefits of this approach is that it simplifies the provisioning and accessing of storage resources.
 
-### What are the reasons for using software-defined storage?
+### Reasons for using software-defined storage
 
 With software-defined storage, implementing virtualized workloads no longer requires configuration of logical unit numbers (LUNs) and Storage Area Networks (SAN) switches according to third-party vendor specifications. Instead, you can manage storage in the same, consistent manner regardless of its underlying hardware. In addition, you've the option of replacing proprietary and expensive technologies with flexible and commodity hardware-based solutions. Rather than relying on dedicated SANs for highly available and high-performing storage, you have the option of using local disks by using enhancements in remote file sharing protocols and high-bandwidth, low-latency networking. 
 
 The simplest example of software-defined storage in non-clustered scenarios is Storage Spaces.
 
-## What are Storage Spaces?
+## Storage spaces
 
 A storage space is a storage-virtualization capability that Microsoft has built into Azure Stack HCI, Windows Server, and Windows 10. The Storage Spaces feature consists of two components:
 
 - Storage pools. This is a collection of physical disks aggregated into a logical disk that you can manage as a single entity. A storage pool can contain physical disks of any type and size.
 - Storage spaces. These are virtual disks that you can create from free space in a storage pool. Virtual disks are equivalent to LUNs on a SAN.
 
-### What are the reasons for using Storage Spaces?
+### Reasons for using storage spaces
 
-The most common reasons for using Storage Spaces include:
+The most common reasons for using storage spaces include:
 
 - Increasing storage resiliency levels, such as mirroring and parity. Virtual disks resiliency resembles Redundant Array of Independent Disks (RAID) technologies.
 - Improving storage performance by using storage tiers. Storage tiers allow you optimize the use of different disk types in a storage space. For example, you could use very fast but small-capacity solid-state drives (SSDs) with slower, but large-capacity hard disks. When you use this combination of disks, Storage Spaces automatically moves data that is accessed frequently to the faster disks, and then moves data that is accessed less often to the slower disks.
 - Improving storage performance by using write-back caching. The purpose of write-back caching is to optimize writing data to the disks in a storage space. Write-back caching works with storage tiers. If the server that is running the storage space detects a peak in disk-writing activity, it automatically starts writing data to the faster disks.
 - Increasing storage efficiency by using thin provisioning. Thin provisioning enables storage to be allocated readily on as needed basis. Instead of the traditional fixed storage allocation method in which large portions of storage capacity are preallocated but might remain unused, thin provisioning optimizes any available storage by reclaiming storage that is no longer needed using a process known as trim.
 
-The simplest example of software-defined storage in clustered scenarios is Cluster Shared Volumes.
+The simplest example of software-defined storage in clustered scenarios is Cluster Shared Volumes (CSV).
 
-## What are Cluster Shared Volumes?
+## Cluster Shared Volumes
 
 CSV is a clustered file system that enables multiple nodes of a failover cluster to simultaneously read from and write to the same set of storage volumes. The CSV volumes map to subdirectories within the C:\ClusterStorage\directory on each cluster node. This means that cluster nodes can access the same content through the same file system path. While each node can independently read from and write to individual files on a given volume, a single cluster node serves a special role of the CSV owner (or, *coordinator*) of that volume. You've the option of assigning an individual volume to a specific owner. However, a failover cluster automatically distributes CSV ownership between cluster nodes.
 
@@ -39,18 +39,18 @@ CSV is a clustered file system that enables multiple nodes of a failover cluster
 
 When changes to file system metadata take place on a CSV volume, the owner is responsible for implementing them, managing their orchestration, and synchronizing them across all cluster nodes with access to that volume. Such changes include creating or deleting a file. However, standard write and read operations to open files on a CSV volume doesn't affect metadata. Effectively, each cluster node with direct connectivity to the underlying storage can perform them independently, without relying on the CSV owner of that volume.
 
-### What are the reasons for using CSV?
+### Reasons for using CSV
 
 The most common uses of CSV include:
 
 - Clustered Hyper-V VMs.
 - Scale-out file shares hosting application data accessible via SMB 3.x.
 
-## What is Server Message Block 3.x?
+## Server Message Block 3.x
 
 The SMB protocol is a network file sharing protocol that provides access to files over a traditional Ethernet network via TCP/IP transport protocol. SMB serves as one of the core components of software-defined storage technologies. Microsoft introduced SMB version 3.0 in Windows Server 2012 and has been incrementally improving it in subsequent releases.
 
-### What are the reasons for using SMB?
+### Reasons for using SMB
 
 The most common uses of SMB include:
 
@@ -60,7 +60,7 @@ The most common uses of SMB include:
 
 SMB 3.x provides support for SMB Multichannel and SMB Direct.
 
-## What is SMB Multichannel?
+## SMB Multichannel
 
 SMB Multichannel is part of the implementation of the SMB 3.x protocol, which significantly improves network performance and availability for Windows Servers or Azure Stack HCI cluster nodes operating as file servers. SMB Multichannel allows such servers to take advantage of multiple network connections to provide the following capabilities:
 
@@ -68,7 +68,7 @@ SMB Multichannel is part of the implementation of the SMB 3.x protocol, which si
 - Automatic configuration. SMB Multichannel automatically discovers multiple available network paths and dynamically adds connections as required.
 - Network fault tolerance. If an existing connection is terminated due to an issue along one of network paths to an SMB 3.x server, SMB 3.x clients have a built-in ability to automatically fail over to another one.
 
-## What is SMB Direct?
+## SMB Direct
 
 SMB Direct optimizes the use of remote direct memory access (RDMA) network adapters for SMB traffic, allowing them to function at full speed with very low latency and low CPU utilization. This makes SMB Direct suitable for scenarios in which workloads such as Hyper-V or Microsoft SQL Server rely on remote SMB 3.x file servers to emulate local storage. SMB Direct is available and enabled by default on all currently supported versions of Windows Server and Azure Stack HCI.
 
@@ -76,11 +76,11 @@ SMB Multichannel is responsible for detecting the RDMA capabilities of network a
 
 SMB 3.x technologies and CSV serve as the basis for Scale-Out File Servers.
 
-## What are Scale-Out File Servers?
+## Scale-Out File Servers
 
 SOFS is a CSV-based failover clustering feature. When you configure the File Services server role as a cluster role, you can set it up as *File Server for general use*, or as *Scale-Out File Server for application data*. The former option implements highly available shared folders accessible through one of the cluster nodes. If that node fails, another node takes ownership of the role and its resources, maintaining the availability of the shared folders. However, clients always access them through a single node. SOFS implements a different approach, in which shared folders reside on a CSV-based volume.
 
-### What are the reasons for using SOFS?
+### Reasons for using SOFS
 
 SOFS provides the following benefits:
 
@@ -90,7 +90,7 @@ SOFS provides the following benefits:
 
 You can also use SOFS to implement guest clustering.
 
-## What is guest clustering?
+## Guest clustering
 
 You configure guest failover clustering similar to physical-server failover clustering, except that the cluster nodes are VMs. In this scenario, you create two or more VMs and implement failover clustering within the guest operating systems. The application or service is then able to take advantage of high availability between the VMs. Although you can place the VMs on a single host, in production scenarios, you should use separate failover clustering–enabled Hyper-V host computers. After you implement failover clustering at both the host and VM levels, you can restart the resource regardless of whether the node that fails is a VM or a host.
 
@@ -103,15 +103,15 @@ You can use shared virtual hard disk in either of the following scenarios:
 
 In both of these secenarios, you can implement storage by using Storage Spaces Direct.
 
-## What is Storage Spaces Direct?
+## Storage Spaces Direct
 
-Storage Spaces Direct represent the evolution of Storage Spaces. It leverages Storage Spaces, Failover Clustering, Cluster Shared Volumes (CSVs), and SMB 3.x to implement virtualized, highly-available clustered storage by using local disks on each of the Storage Spaces Direct cluster nodes. It is suitable for hosting highly-available workloads, including VMs and SQL Server databases. This eliminates the need for attaching storage devices to multiple cluster nodes in Failover Clustering scenarios.
+Storage Spaces Direct represent the evolution of Storage Spaces. It leverages storage spaces, failover clustering, CSVs, and SMB 3.x to implement virtualized, highly-available clustered storage by using local disks on each of the Storage Spaces Direct cluster nodes. It is suitable for hosting highly-available workloads, including VMs and SQL Server databases. This eliminates the need for attaching storage devices to multiple cluster nodes in failover clustering scenarios.
 
 :::image type="content" source="../media/4-s2d-architecture.png" alt-text="The architecture of a typical Storage Spaces Direct implementation, including the storage pool, software storage bus, cluster, Storage Spaces, CSV, and Hyper-V VMs." border="true":::
 
 Using local disks in this manner requires a high-bandwidth, low-latency network between the nodes. To satisfy this requirement, you should deploy redundant network connections in combination with high-end RDMA network adapters. This allows you to benefit from technologies such as SMB 3.x, SMB Direct, and SMB Multichannel to deliver high-speed, low-latency, CPU-efficient storage access. 
 
-### What are two Hyper-V workload models of Storage Spaces Direct?
+### Hyper-V workload models of Storage Spaces Direct
 
 There are two deployment models of Hyper-V workloads using Storage Spaces Direct:
 
@@ -123,13 +123,13 @@ There are two deployment models of Hyper-V workloads using Storage Spaces Direct
 
 To provide additional resiliency for your Hyper-V workloads, you can use Storage Replica.
 
-## What is Storage Replica?
+## Storage Replica
 
 Storage Replica enables storage-agnostic, block-level, synchronous or asynchronous replication between servers or clusters across different physical locations.
 
-## What are the reasons for using Storage Replica?
+## Reasons for using Storage Replica
 
-You can use Storage Replica to create stretched failover clusters that span two distinct physical sites, with all nodes staying in sync. Synchronous replication replicates volumes between sites in relative proximity to each other. Replication is crash-consistent, which ensures zero data loss at the file system–level during a failover. Asynchronous replication enables replication across longer distances in cases where network round-trip latency exceeds 5 milliseconds (ms), but it is subject to data loss. The extent of data loss depends on the lag of replication between the source and target volumes.
+You can use Storage Replica to create stretched failover clusters that span two distinct physical sites, with all nodes staying in sync. Synchronous replication replicates volumes between sites in relative proximity to each other. Replication is crash-consistent, which helps ensure zero data loss at the file system–level during a failover. Asynchronous replication enables replication across longer distances in cases where network round-trip latency exceeds 5 milliseconds (ms), but it is subject to data loss. The extent of data loss depends on the lag of replication between the source and target volumes.
 
 > [!NOTE] 
 > Azure Stack HCI stretched clusters use Storage Replica.
