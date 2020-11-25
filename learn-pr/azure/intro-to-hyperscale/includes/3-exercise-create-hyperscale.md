@@ -14,7 +14,7 @@ For a total of 12 vCores and 1.5 TiB of storage.
 
 2. Next, select **Create a resource**, **Databases**, and **Azure Database for PostgreSQL**. You can also use the **Search** functionality to find this category.
 
-![Select create database](../media/3a.png)
+![Select create database](../media/3a-select-postgres.png)
 
 3. Select **Create** in the **Hyperscale (Citus) server group** box.
 

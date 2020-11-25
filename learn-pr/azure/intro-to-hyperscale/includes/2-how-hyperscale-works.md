@@ -6,7 +6,7 @@ A node is an instance of a database server. Hyperscale creates and coordinates n
 
 By leveraging multiple nodes, instead of a single node, you can scale out, otherwise known as horizontal scaling.
 
-![Hyperscale nodes](../media/2a.png)
+![Hyperscale nodes](../media/2a-nodes.png)
 
 We'll start with three nodes for our payment app. Later, we'll horizontally scale by creating extra nodes.
 
