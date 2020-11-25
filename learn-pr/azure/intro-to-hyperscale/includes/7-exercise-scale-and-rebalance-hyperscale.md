@@ -34,7 +34,7 @@ To take advantage of newly added nodes, we must rebalance distributed table shar
    psql "host=payment-server-demo-c.postgres.database.azure.com port=5432 dbname=citus user=citus password={YOUR-PASSWORD-HERE} sslmode=require"
    ```
     > [!NOTE]
-    > You can reset your in the Azure Portal. Select the `payment-server-demo` resource, then select`Reset password` 
+    > You can reset your in the Azure Portal. Select the `payment-server-demo` resource, then select `Reset password` 
 
 8. In the Cloud Shell window, run the following query to rebalance the shards for our payment_events and payment_users tables:
 
