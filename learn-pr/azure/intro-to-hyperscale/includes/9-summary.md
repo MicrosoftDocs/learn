@@ -12,8 +12,8 @@ It's important that you clean up any unused resources. You're charged for the co
 Now that you have reviewed this module, you should be able to:
 
 * Create a Hyperscale instance of Azure Database for PostgreSQL.
-* Shard and distribute tables in Hyperscale.
-* Scale and rebalance a Hyperscale database.
+* Automatically shard and distribute tables in Hyperscale.
+* Scale and rebalance a Hyperscale database without downtime.
 
 ## Use these resources to discover more
 

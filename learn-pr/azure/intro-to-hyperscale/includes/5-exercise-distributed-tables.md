@@ -37,7 +37,7 @@ Now that you know how to connect to your Hyperscale server group, we can start t
 
 First, create the event and user tables.
 
-8. In the Cloud Shell window, run the following query to create our payment_events and payment_users tables:
+1. In the Cloud Shell window, run the following query to create our payment_events and payment_users tables:
 
 ```SQL
 CREATE TABLE payment_events
@@ -63,28 +63,30 @@ The tables are on the coordinator node. To distribute the tables to the worker n
 
 In our case, we have the **user_id** to shard and we want to distribute both the tables we created. We'll shard the two tables from our previous step, `payment_events` and `payment_users`.
 
-9. In the Cloud Shell window, run the following query to distribute our payment_events and payment_users tables to the worker nodes:
+2. In the Cloud Shell window, run the following query to distribute our payment_events and payment_users tables to the worker nodes:
 
 ```sql
 SELECT create_distributed_table('payment_events', 'user_id');
 SELECT create_distributed_table('payment_users', 'user_id');
 ```
 
-That's it. You've now got a distributed database. Next, we'll load in some data.
+That's it. You've now got a distributed database.
 
 > [!IMPORTANT]
 > Distributing tables is necessary to take advantage of Hyperscale worker nodes. If you don't distribute tables, the worker nodes can't help run queries involving those tables.
 
+## Load and query data
+
 Now we're ready to load in our **user data** `users.csv`, and **payment event data** `events.csv`.
 
-10. Run the following command to download the CSV files of our user and payment event data.
+1. Run the following command to download the CSV files of our user and payment event data.
 
 ```
 \! curl -O https://raw.githubusercontent.com/TomReidNZ/CSV-Hosting/main/users.csv
 \! curl -O https://raw.githubusercontent.com/TomReidNZ/CSV-Hosting/main/events.csv
 ```
 
-11. Next, load the data from the CSV files into the distributed tables, `payment_users` and `payment_events`.
+2. Next, load the data from the CSV files into the distributed tables, `payment_users` and `payment_events`.
 
 ```sql
 SET CLIENT_ENCODING TO 'utf8';
@@ -93,11 +95,11 @@ SET CLIENT_ENCODING TO 'utf8';
 \copy payment_events from 'events.csv' WITH CSV;
 ```
 
-## Run queries
+### Run queries
 
 Our data is now loaded and distributed. Let's run a couple queries.
 
-12. Run the follow query in the Cloud Shell to see how many events we have stored.
+3. Run the follow query in the Cloud Shell to see how many events we have stored.
 
 ```sql
 SELECT count(*) from payment_events;
@@ -105,7 +107,7 @@ SELECT count(*) from payment_events;
 
 126,243 events. Let's look into the data further.
 
-13. Run the following query to see how many transactions we're having per hour.
+4. Run the following query to see how many transactions we're having per hour.
 
 ```sql
 SELECT date_trunc('hour', created_at) AS hour,
@@ -116,7 +118,7 @@ GROUP BY hour
 ORDER BY hour;
 ```
 
-14. And now, let's take a look for high activity and see if we can find anything interesting.
+5. And now, let's take a look for high activity and see if we can find anything interesting.
 
 ```sql
  SELECT users.login, count(*) as purchases

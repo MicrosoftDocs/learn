@@ -13,8 +13,8 @@ summary: When your database is small, it’s easy to throw more hardware at the 
 abstract: |
   In this module, you will:
   - Create a Hyperscale instance of Azure Database for PostgreSQL.
-  - Shard and distribute tables in Hyperscale.
-  - Scale and rebalance a Hyperscale database.
+  - Automatically shard and distribute tables in Hyperscale.
+  - Scale and rebalance a Hyperscale database without downtime.
 prerequisites: Basic knowledge of relational databases
 iconUrl: /learn/achievements/intro-to-hyperscale.svg
 levels:

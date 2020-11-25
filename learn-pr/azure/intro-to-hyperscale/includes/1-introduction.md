@@ -1,4 +1,4 @@
-Azure Database for PostgreSQL Hyperscale transforms PostgreSQL into a distributed database, letting you scale compute, memory, and storage. Your tables are broken into smaller parts and intelligently distributed over several servers.
+Azure Database for PostgreSQL Hyperscale (Citus) transforms PostgreSQL into a distributed database, letting you scale compute, memory, and storage. Your tables are broken into smaller parts and intelligently distributed over several servers.
 
 ## Citus - Open-source scale
 
@@ -17,7 +17,7 @@ Azure Database for PostgreSQL Hyperscale combines the benefits of PostgreSQL, Ci
 :::column-end:::
 :::row-end:::
 
-## What is Hyperscale?
+## What is Hyperscale (Citus)?
 
 :::row:::
 :::column span="2":::
@@ -58,5 +58,5 @@ In this module, we’ll create a Hyperscale instance on Azure, design how to eff
 In this module, you will:
 
 * Create a Hyperscale instance of Azure Database for PostgreSQL.
-* Shard and distribute tables in Hyperscale.
-* Scale and rebalance a Hyperscale database.
+* Automatically shard and distribute tables in Hyperscale.
+* Scale and rebalance a Hyperscale database without downtime.
