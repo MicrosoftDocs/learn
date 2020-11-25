@@ -4,7 +4,7 @@ Since you have completed this module, you are now able to:
 
 * Understand spark notebooks
 * Understand the use-cases for spark notebooks
-* Create a spark notebook in azure synapse analytics
+* Create a spark notebook in Azure Synapse Analytics
 * Discover supported languages in spark notebooks
 * Develop spark notebooks
 * Run spark notebooks

@@ -16,7 +16,7 @@ There are several ways to run the code in a cell.
 
    ![Run cell in notebook](../media/run-cell-notebook.png)
    
-* Use [Shortcut keys under command mode](#shortcut-keys-under-command-mode). Press **Shift+Enter** to run the current cell and select the cell below. Press **Alt+Enter** to run the current cell and insert a new cell below.
+* Use [Shortcut keys under command mode](https://docs.microsoft.com/azure/synapse-analytics/spark/apache-spark-development-using-notebooks#shortcut-keys-under-command-mode). Press **Shift+Enter** to run the current cell and select the cell below. Press **Alt+Enter** to run the current cell and insert a new cell below.
 
 **Run all cells**
 Select the **Run All** button to run all the cells in current notebook in sequence.

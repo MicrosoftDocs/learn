@@ -3,7 +3,7 @@ The notebook allows you to interact with your data, combine code with markdown, 
 
 From the Azure portal view for the Azure Synapse workspace you want to use, select Launch Synapse Studio.
 
-![Open Synapse Studio to Create a Notebook](../media/open-synapse-studio-to-create-notebook.png))
+![Open Synapse Studio to Create a Notebook](../media/open-synapse-studio-to-create-notebook.png)
 
 Once Synapse Studio has launched, select Develop. Then, select the "+" icon to add a new resource.
 ![Develop Hub Synapse Studio](../media/develop-hub-synapse.png)

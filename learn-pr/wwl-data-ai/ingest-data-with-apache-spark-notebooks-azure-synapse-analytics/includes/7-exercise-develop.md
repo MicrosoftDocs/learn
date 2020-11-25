@@ -16,7 +16,7 @@ In this exercise, we are walking you through the following development of notebo
 
     ![Add cell in notebook through button underneath cell](../media/add-cell-notebook-under-cell.png)
 
-3. Use [Shortcut keys under command mode](#shortcut-keys-under-command-mode). Press **A** to insert a cell above the current cell. Press **B** to insert a cell below the current cell.
+3. Use [Shortcut keys under command mode](https://docs.microsoft.com/azure/synapse-analytics/spark/apache-spark-development-using-notebooks#shortcut-keys-under-command-mode). Press **A** to insert a cell above the current cell. Press **B** to insert a cell below the current cell.
 
 
 **Undo cell operations**
@@ -27,7 +27,7 @@ Press **Ctrl+Z** to revoke the most recent cell operation.
 Select the ellipses (...) when you hover over the cell you want to move. Select **Move cell up** or **Move cell down** to move the current cell. 
 ![Move a cell up or down](../media/move-cell-up-down.png)
 
-You can also use [shortcut keys under command mode](#shortcut-keys-under-command-mode). Press **Ctrl+Alt+↑** to move up the current cell. Press **Ctrl+Alt+↓** to move the current cell down.
+You can also use [shortcut keys under command mode](https://docs.microsoft.com/azure/synapse-analytics/spark/apache-spark-development-using-notebooks#shortcut-keys-under-command-mode). Press **Ctrl+Alt+↑** to move up the current cell. Press **Ctrl+Alt+↓** to move the current cell down.
 
 **Delete a cell**
 
@@ -35,7 +35,7 @@ To delete a cell, hover over the far right-side of the cell and a garbage bin ic
 
 ![Delete a cell within a notebook](../media/delete-cell-notebook.png)
 
-You can also use [shortcut keys under command mode](#shortcut-keys-under-command-mode). Press **D,D** to delete the current cell.
+You can also use [shortcut keys under command mode](https://docs.microsoft.com/azure/synapse-analytics/spark/apache-spark-development-using-notebooks#shortcut-keys-under-command-mode). Press **D,D** to delete the current cell.
 
 **Collapse a cell input and output**
 Hover over the cell you want to see the input or output from. 
