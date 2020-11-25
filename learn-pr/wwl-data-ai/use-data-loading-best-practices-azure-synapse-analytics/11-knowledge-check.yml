@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/24/2020
+  ms.date: 11/25/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -15,16 +15,16 @@ quiz:
   questions:
   - content: "How does splitting source files help maintain good performance when loading into Synapse Analytics?"
     choices:
-    - content: "optimised processing of smaller file sizes."
+    - content: "optimized processing of smaller file sizes."
       isCorrect: false
       explanation: "Incorrect. SQL Pools can process large files more efficiently than smaller ones."
     - content: "Compute node to storage segment alignment."
       isCorrect: true
-      explanation: "Correct. SQL Pools have 60 storgae segments. Compute can also scale to 60 nodes and so optimising for alignment of these 2 resources can dramatically decrease load times."
+      explanation: "Correct. SQL Pools have 60 storgae segments. Compute can also scale to 60 nodes and so optimizing for alignment of these 2 resources can dramatically decrease load times."
     - content: "Reduced possibility of data corruptions."
       isCorrect: false
       explanation: "Incorrect. Data corruptions have an impact on success, not speed. Splitting files should affect probability of corruptions."
-  - content: "Which Workload Management Capability manages minimum and maximum resource allocations during peak periods?"
+  - content: "Which Workload Management capability manages minimum and maximum resource allocations during peak periods?"
     choices:
     - content: "Workload Isolation."
       isCorrect: true
@@ -35,7 +35,7 @@ quiz:
     - content: "Workload Containment."
       isCorrect: false
       explanation: "Incorrect. Workload Containment refers to limiting the amount of resources a workload group can consume."
-  - content: "Which T-SQL Statement allows you to load data directly from Azure Storage?"
+  - content: "Which T-SQL Statement loads data directly from Azure Storage?"
     choices:
     - content: "LOAD DATA."
       isCorrect: false

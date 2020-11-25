@@ -9,7 +9,7 @@ Dedicated SQL pool workload management in Azure Synapse consists of three high-l
 
 These capabilities give you more control over how your workload utilizes system resources.
 
-## Workload Classification
+## Workload classification
 
 Workload management classification allows workload policies to be applied to requests through assigning resource classes and importance.
 

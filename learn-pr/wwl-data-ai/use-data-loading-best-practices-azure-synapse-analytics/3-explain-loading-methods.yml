@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-data-loading-best-practices-azure-synapse-analytics.explain-loading-methods-into
-title: Explain loading methods into azure synapse analytics
+title: Explain load methods into azure synapse analytics
 metadata:
-  title: Explain loading methods into azure synapse analytics
-  description: "Explain loading methods into azure synapse analytics"
-  ms.date: 11/24/2020
+  title: Explain load methods into azure synapse analytics
+  description: "Explain load methods into azure synapse analytics"
+  ms.date: 11/25/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
