@@ -29,7 +29,8 @@
 
     > If the script is still running after 45 seconds, click on Cancel.
 
-    > [!Note] _Do not_ execute this query ahead of time. If you do, the query may run faster during subsequent executions.
+    > [!NOTE] 
+    > _Do not_ execute this query ahead of time. If you do, the query may run faster during subsequent executions.
 
     ![The COUNT_BIG result is displayed.](../media/count-big-1.png "SQL script")
 
@@ -59,7 +60,8 @@
 
     ![The query execution time of 32 seconds is highlighted in the query results.](../media/sale-heap-result.png "Sale Heap result")
 
-    > [!Note] the OPTION clause used in the statement. This comes in handy when you're looking to identify your query in the [sys.dm_pdw_exec_requests](https://docs.microsoft.com/sql/relational-databases/system-dynamic-management-views/sys-dm-pdw-exec-requests-transact-sql) DMV.
+    > [!Note] 
+    > The OPTION clause used in the statement. This comes in handy when you're looking to identify your query in the [sys.dm_pdw_exec_requests](https://docs.microsoft.com/sql/relational-databases/system-dynamic-management-views/sys-dm-pdw-exec-requests-transact-sql) DMV.
     >
     >```sql
     >SELECT  *
@@ -99,7 +101,8 @@
     )
     ```
 
-    > [!Note] *Do not* run this script! It is just for demonstration purposes to review the schema.
+    > [!Note] 
+    > *Do not* run this script! It is just for demonstration purposes to review the schema.
 
     You can immediately spot at least two reasons for the performance hit:
 
