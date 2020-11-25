@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.create-and-connect-to-azure-database-postgresql.8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Multiple-choice questions
+  ms.date: 10/23/2020
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'What can be stored and queried with Azure Database for PostgreSQL?'
+    choices:
+    - content: "Code modules, which can be run by queries"
+      isCorrect: false
+      explanation: "Azure Database for PostgreSQL can store code modules, but it can also store other data too."
+    - content: "Geometric data"
+      isCorrect: false
+      explanation: "Azure Database for PostgreSQL can store geometric data, but it can also store other data too."
+    - content: "Relational tables"
+      isCorrect: false
+      explanation: "Azure Database for PostgreSQL can store relational tables, but it can also store other data too."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct. One of the main benefits of a PostgreSQL database is the functionality and flexibility to store different ."
+  - content: 'Suppose you want your Azure Database for PostgreSQL server to have high-performance across several different regions. Which server option should you choose?'
+    choices:
+    - content: Single server
+      isCorrect: false
+      explanation: "Single server can have high performance, but is not a distributed database solution."
+    - content: Flexible server
+      isCorrect: false
+      explanation: "Flexible server is customizable, but is not a distributed database solution."
+    - content: Hyperscale
+      isCorrect: true
+      explanation: "Correct. Hyperscale offers you to scale up, providing high-performance, and scale out, allowing that high-performance across different regions."
+    - content: SQLite
+      isCorrect: false
+      explanation: "SQLite is not a deployment option for Azure Database for PostgreSQL."

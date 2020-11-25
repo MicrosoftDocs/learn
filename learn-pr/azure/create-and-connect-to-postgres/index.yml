@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.create-and-connect-to-azure-database-postgresql
+metadata:
+  title: Create and connect to an Azure Database for PostgreSQL
+  description: Learn how and when to utilize the relational database solution, Azure Database for PostgreSQL. You will review common tools used and leverage them to create a database and connect to it from an app.
+  ms.date: 10/23/2020
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create and connect to an Azure Database for PostgreSQL 
+summary: Learn how and when to utilize the relational database solution, Azure Database for PostgreSQL. You will review common tools used and leverage them to create a database and connect to it from an app.
+abstract: |
+  In this module, you will:
+  - Create an Azure Database for PostgreSQL instance using the CLI.
+  - Query the Azure Database for PostgreSQL instance using pgsql.
+  - Use a Django app to connect to the PostgreSQL database.
+prerequisites: Knowledge of relational databases
+iconUrl: /learn/achievements/intro-to-postgresql.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- azure
+- azure-virtual-machines
+units:
+- learn.create-and-connect-to-azure-database-postgresql.1-introduction
+- learn.create-and-connect-to-azure-database-postgresql.2-create-database-azure-database-postgresql
+- learn.create-and-connect-to-azure-database-postgresql.3-exercise-create-database
+- learn.create-and-connect-to-azure-database-postgresql.4-connect-and-develop-your-database
+- learn.create-and-connect-to-azure-database-postgresql.5-exercise-create-basic-schema
+- learn.create-and-connect-to-azure-database-postgresql.6-connect-an-app-to-database
+- learn.create-and-connect-to-azure-database-postgresql.7-exercise-use-database-in-app
+- learn.create-and-connect-to-azure-database-postgresql.8-knowledge-check
+- learn.create-and-connect-to-azure-database-postgresql.9-summary
+badge:
+  uid: learn.create-and-connect-to-azure-database-postgresql.badge

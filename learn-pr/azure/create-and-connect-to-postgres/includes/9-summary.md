@@ -1,0 +1,22 @@
+In this module, you learned about Azure Database for PostgreSQL. You also learned about Hyperscale, and other server deployment options.
+
+In this module, you've seen what the Azure Database for PostgreSQL offering looks like. You created an Azure Database for PostgreSQL server using the Azure portal and adjusted the firewall. Finally, you connected to the Azure Database for PostgreSQL server using psql in Azure Cloud Shell and queried the database.
+
+## Clean up
+
+The sandbox automatically cleans up your resources when you're finished with this module.
+
+When you're working in your own subscription, it's a good idea at the end of a project to identify whether you still need the resources you created. Resources left running can cost you money. You can delete resources individually or delete the resource group to delete the entire set of resources.
+
+Now that you have reviewed this module, you should be able to:
+
+* Create an Azure Database for PostgreSQL instance using the CLI
+* Query the Azure Database for PostgreSQL instance using pgsql
+* Use a Django app to connect to the PostgreSQL database
+
+## Use these resources to discover more
+
+[!include[](../../../includes/open-link-in-new-tab-note.md)]
+
+- [Azure Database for PostgreSQL documentation](https://docs.microsoft.com/azure/postgresql/)
+- [Azure Database for PostgreSQL - Hyperscale (Citus) documentation](https://docs.microsoft.com/azure/postgresql/hyperscale/)

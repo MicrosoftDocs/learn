@@ -1,0 +1,114 @@
+*Open up firewall ports in the portal*
+
+## Configure a server-level firewall rule
+
+Azure has an automatic firewall for our server - preventing all external parties from connecting to the server. In the portal, we'll create a firewall rule to allow us to connect externally.
+
+1. Click **All Resources** from the left-hand menu and type in the name **payment-server-demo** to search for your newly created server. Click the server name listed in the search result. The **Overview** page for your server opens and provides options for further configuration.
+
+   :::image type="content" source="../media/4-locate.png" alt-text="Azure Database for PostgreSQL - Search for server":::
+
+2. In the server page, select **Connection security**. 
+
+3. Click in the text box under **Rule Name,** and add a new firewall rule to specify the IP range for connectivity. Enter your IP range. Click **Save**.
+
+   :::image type="content" source="../media/5-firewall-2.png" alt-text="Azure Database for PostgreSQL - Create Firewall Rule":::
+
+4. Click **Save** and then click the **X** to close the **Connections security** page.
+
+*Save*
+
+## Use psql to connect in Azure Cloud Shell
+
+*Write connection string*
+
+Let's now use the psql command-line utility to connect to the Azure Database for PostgreSQL server.
+
+To run the code in this article in Azure Cloud Shell:
+
+1. Start Cloud Shell.
+2. Select the Copy button on the code block to copy the code.
+
+   ```psql
+   psql --host=payment-server-demo.postgres.database.azure.com --port=5432 --username=paymentadmin@payment-server-demo.postgres.database.azure.com --dbname=postgres
+   ```
+
+3. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux or by selecting Cmd+Shift+V on macOS.
+4. Select Enter to run the code to connect to your Azure Database for PostgreSQL database.
+5. Type in your password and select enter.
+
+*Create database and view*
+
+6. Once you are connected to the server, create a blank database at the prompt:
+   ```sql
+   CREATE DATABASE paymentapp;
+   ```
+
+7. At the prompt, execute the following command to switch connection to the newly created database **paymentapp**:
+   ```sql
+   \c paymentapp
+   ```
+
+## Create tables in the database
+
+*Add data to table and view*
+
+*Create table and view*
+
+Now that you know how to connect to the Azure Database for PostgreSQL, we can complete some basic tasks. We'll:
+
+- create a table
+- insert some account data into it
+- view the table
+- edit one of the values
+
+First, create a table and load it with some account data.
+8. In the Cloud Shell  window, run the following squery to create a table:
+```sql
+CREATE TABLE account (
+	id serial PRIMARY KEY, 
+	name VARCHAR(50), 
+	age INTEGER
+);
+```
+
+9. You can see the newly created table in the list of tables now by typing:
+
+```sql
+\dt
+```
+
+## Load data into the tables
+
+Now that you have a table, insert some data into it.
+
+10. In the Cloud Shell  window, run the following query to insert some rows of data.
+
+```sql
+INSERT INTO logins (id, name, age) VALUES (1, 'John', 45); 
+INSERT INTO logins (id, name, age) VALUES (2, 'Lauren', 32);
+```
+
+You have now two rows of sample data into the account table you created earlier.
+
+## Query and update the data in the tables
+
+*Edit data in table and view*
+
+11. Execute the following query to retrieve information from the account database table.
+
+```sql
+SELECT * FROM account;
+```
+
+12. You can also update the data in the table.
+
+```sql
+UPDATE account SET age = 20 WHERE name = 'John';
+```
+
+13. You can see the updated values when you retrieve the data.
+
+```sql
+SELECT * FROM account;
+```
