@@ -56,9 +56,11 @@ You recommend using the Data hub to view the Parquet files in the connected stor
 
     ![Run all is highlighted.](../media/notebook-run-all.png "Run all")
 
-    > **Note:** The first time you run a notebook in a Spark pool, Synapse creates a new session. This can take approximately 3-5 minutes.
+    > [!NOTE] 
+    > The first time you run a notebook in a Spark pool, Synapse creates a new session. This can take approximately 3-5 minutes.
 
-    > **Note:** To run just the cell, either hover over the cell and select the _Run cell_ icon to the left of the cell, or select the cell then type **Ctrl+Enter** on your keyboard.
+    > [!NOTE] 
+    > To run just the cell, either hover over the cell and select the _Run cell_ icon to the left of the cell, or select the cell then type **Ctrl+Enter** on your keyboard.
 
 9. After the cell run is complete, change the View to **Chart** in the cell output.
 

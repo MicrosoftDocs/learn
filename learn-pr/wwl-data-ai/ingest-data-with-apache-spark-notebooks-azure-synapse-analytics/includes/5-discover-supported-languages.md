@@ -22,7 +22,7 @@ In Spark, it is possible to reference a temporary table across languages.
 
 Here is an example of how to read a `Scala` DataFrame in `PySpark` and `SparkSQL` using a Spark temp table as a workaround.
 
-1. In Cell 1, the following code shows how you can read a DataFrame from a SQL pool connector using Scala.
+* In Cell 1, the following code shows how you can read a DataFrame from a SQL pool connector using Scala.
 It also shows how you can create a temporary table.
 
    ```scala
@@ -31,14 +31,14 @@ It also shows how you can create a temporary table.
    scalaDataFrame.createOrReplaceTempView( "mydataframetable" )
    ```
 
-2. If you want to query the data using Spark SQL, you can add a cell below the first cell and using the %%sql command enables you to use a SQL statement such as shown below where you would select everything from the 'mydataframetable'. 
+* If you want to query the data using Spark SQL, you can add a cell below the first cell and using the %%sql command enables you to use a SQL statement such as shown below where you would select everything from the 'mydataframetable'. 
    
    ```sql
    %%sql
    SELECT * FROM mydataframetable
    ```
 
-3. If you want to use the data in PySpark, below is given an example using the magic command %%pyspark, in which you create a new Python Dataframe based on the mydataframe table whilst using spark.sql to select everything from that table. 
+* If you want to use the data in PySpark, below is given an example using the magic command %%pyspark, in which you create a new Python Dataframe based on the mydataframe table whilst using spark.sql to select everything from that table. 
 
    ```python
    %%pyspark

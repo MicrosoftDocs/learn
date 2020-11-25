@@ -48,6 +48,6 @@ The number of tasks per each job or stage help you to identify the parallel leve
 
 You can specify the timeout duration, the number, and the size of executors to give to the current Spark session in **Configure session**. Restart the Spark session is for configuration changes to take effect. All cached notebook variables are cleared.
 
-[![Configure Spark Session](../media/configure-spark-session.png)
+![Configure Spark Session](../media/configure-spark-session.png)
 
 

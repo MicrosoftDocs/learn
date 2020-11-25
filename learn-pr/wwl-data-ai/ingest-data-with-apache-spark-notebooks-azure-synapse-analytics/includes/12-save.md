@@ -3,11 +3,11 @@ It is possible to save a single or all notebooks that you've created with Azure 
 
 You have the possibility to save a single notebook or all notebooks in your workspace.
 
-1. To save changes you made to a single notebook, select the **Publish** button on the notebook command bar.
+* To save changes you made to a single notebook, select the **Publish** button on the notebook command bar.
 
    ![Publish Notebook](../media/save-notebook-publish-upper-bar.png)
 
-2. To save all notebooks in your workspace, select the **Publish all** button on the workspace command bar. 
+* To save all notebooks in your workspace, select the **Publish all** button on the workspace command bar. 
 
    ![Save all notebooks through Publish All](../media/save-all-notebooks-publish-all.png)
 
