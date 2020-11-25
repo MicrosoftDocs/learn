@@ -48,8 +48,6 @@ For a total of 12 vCores and 1.5 TiB of storage.
 
 8. Scroll to the bottom of the page and Select the blue **Review + create** button.
 
-![Review and create](../media/3e-review.png)
-
 9. Select the blue **Create** button at the bottom of the page.
 
 Congratulations! Your Hyperscale server group is being deployed to Azure.

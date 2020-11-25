@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-hyperscale.5-exercise-create-real-time-table
-title: Exercise - Create a real time application table
+uid: learn.intro-to-hyperscale.5-exercise-distributed-database
+title: Exercise - Create a distributed database
 metadata:
-  title: Exercise - Create a multi-tenant application table
+  title: Exercise - Create a distributed database
   description: We connect to your database and create a basic schema
   ms.date: 10/23/2020
   author: tomreidnz
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-exercise-create-real-time-table.md)]
+  [!include[](includes/5-exercise-distributed-database.md)]

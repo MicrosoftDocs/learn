@@ -22,7 +22,7 @@ Let's now use the psql command-line utility to connect to the Hyperscale server 
    ```
 
     > [!NOTE]
-    > You can reset your in the Azure Portal. Select the `payment-server-demo` resource, then select `Reset password` 
+    > You can reset your password in the [Azure Portal](https://portal.azure.com). Select the `payment-server-demo` resource, then select `Reset password` 
 
 5. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux or by selecting Cmd+Shift+V on macOS.
 6. Select Enter to run the code to connect to your Hyperscale server group.
