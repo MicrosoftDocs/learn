@@ -22,7 +22,7 @@ You can achieve more by using a PaaS solution. You can set up automatic configur
 
 Whether you use VMs, containers, or a platform as a service solution, you can usually deploy your Java applications to the cloud in either of two ways:
 
-- **Source code deployment**: You commit your source code to a Git repository, and the cloud provider runs a process that compiles, builds, and packages the application
+- **Source code deployment**: You commit your source code to a Git repository, and the cloud provider runs a process that compiles, builds, and packages the application.
 - **JAR, WAR, or EAR file deployment**: You package your application, usually as an executable JAR (Java ARchive) file, but WAR (Web Application ARchive), EAR (Enterprise Application ARchive), and other file formats are also possible. The executable file is then run by the cloud provider.
 
 These two deployment options are classical ways to run Java applications. For both options, the build process is usually similar, and the main difference is where that process is run. Letting the cloud provider do the build is simpler and, with this approach, the cloud provider applies its own security checks and patches. By building the application locally or by using a CI/CD platform, such as GitHub Actions, you get more flexibility and control.
