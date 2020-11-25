@@ -7,7 +7,7 @@ Let's get started by taking a look at where we want to go.
 
 ## Scenario
 
-Imagine that you are a web developer, and asked to add support for light and dark themes to your company's website to make your site appeal to a broader set of customers. You create a simple, proof-of-concept site to demonstrate support for themes using CSS, and your write a JavaScript function to toggle the theme.
+Imagine that you're a web developer, and you're asked to add support for light and dark themes to your company's website to make your site appeal to a wider range of customers. You create a simple, proof-of-concept site to demonstrate support for themes using CSS, and you write a JavaScript function to toggle the theme.
 
 When completed, your simple website will look like this, when the dark theme is selected.
 
@@ -15,7 +15,7 @@ TBD-screenshot
 
 ## What's in a web page?
 
-A design principle in modern programming is the separation of concerns. For example, in a web page, the content, style, and business logic are generally separated into HTML, CSS, and JavaScript pages, respectively. HTML is your content, the appearance of the page is defined by CSS, and JavaScript is used to provide interactivity with the user, that is, your business logic. Among the many reasons to separate concerns, one is simplicity and re-use. For example, by styling elements using CSS, you can apply styles to all the elements on a page, no matter the page complexity, rather than coding the appearance separately within each HTML element.
+In a web page, the content, style, and business logic are generally separated into HTML, CSS, and JavaScript files, respectively. A design principle in modern programming is the separation of concerns. The HTML has your content, CSS defines the appearance of the page, and JavaScript is used to provide interactivity with the user, that is, your business logic. Among the many reasons to separate concerns, one is simplicity and re-use. For example, by styling elements using CSS, you can apply styles to all the elements on a page, no matter the page complexity, rather than coding the appearance separately within each HTML element.
 
 ## Learning objectives
 

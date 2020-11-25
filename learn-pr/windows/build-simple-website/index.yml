@@ -3,7 +3,7 @@ uid: learn-windows.introduction-to-web-development
 metadata:
   title: Build a simple website using HTML, CSS, and JavaScript
   description: Get started with web development using Visual Studio Code to build a website using HTML, CSS, and JavaScript using developer tools in the browser to check your work.
-  ms.date: 3/29/2019
+  ms.date: 11/24/2020
   author: mmpadget
   ms.author: quradic
   ms.topic: interactive-tutorial
@@ -36,7 +36,6 @@ units:
 - learn-windows.introduction-to-web-development.3-html-basics
 - learn-windows.introduction-to-web-development.4-css-basics
 - learn-windows.introduction-to-web-development.5-javascript-basics
-- learn-windows.introduction-to-web-development.6-tracking-changes
-- learn-windows.introduction-to-web-development.7-summary-and-knowledge-check
+- learn-windows.introduction-to-web-development.6-summary-and-knowledge-check
 badge:
   uid: learn-windows.introduction-to-web-development.badge

@@ -99,7 +99,7 @@ To preview using **Visual Studio Code**, select `index.html` and select **Open I
 
 The webpage will open in your default browser.
 
-## Developer tools
+## View the page using developer tools
 
 You can inspect a webpage by using the developer tools in your browser. Let's give this a try.
 
@@ -116,6 +116,6 @@ In **Chrome**, the keyboard shortcut for **Developer Tools** is Option+Command+I
 ![Screenshot of Chrome Developer Tools](../media/3-html-basics/chrome-developer-tools.png)
 
 > [!NOTE]
-> If using **Safari**, see the [Web Developer Tools](https://developer.apple.com/safari/tools/) and [Safari User Guide](https://support.apple.com/guide/safari/use-the-developer-tools-in-the-develop-menu-sfri20948/mac) for more information.
+> If you're using **Safari**, see the [Web Developer Tools](https://developer.apple.com/safari/tools/) and [Safari User Guide](https://support.apple.com/guide/safari/use-the-developer-tools-in-the-develop-menu-sfri20948/mac) for more information.
 
 Inspecting the page in a browser provides all sorts of useful information and can help you troubleshoot problems. You can also view CSS details with the inspector, as you'll see in the next section.

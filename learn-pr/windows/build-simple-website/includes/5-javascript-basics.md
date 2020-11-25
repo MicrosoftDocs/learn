@@ -1,4 +1,4 @@
-[JavaScript](https://developer.mozilla.org/docs/Glossary/JavaScript) or *ECMAScript* is a programming language that helps you add interactivity to your webpage. When you select a button, JavaScript is the code that defines the event or behavior that will happen, such as open a popup window. Using JavaScript, you can add or remove content like text from the webpage without reloading it. As a web developer, you can use the browser to test and get feedback about your scripts.
+JavaScript (or *ECMAScript*) is a programming language that helps you add interactivity to your webpage. When you select a button, JavaScript is the code that defines the event or behavior that will happen, such as open a popup window. Using JavaScript, you can add or remove content like text from the webpage without reloading it. As a web developer, you can use the browser to test and get feedback about your scripts.
 
 ## Link to JavaScript
 
@@ -6,15 +6,13 @@ Like CSS, we could add JavaScript directly to the HTML page, but it's better not
 
 In **Visual Studio Code**, type `script:src` and press Enter (Return).
 
-![Screenshot of Visual Studio Code script:src Emmet entry](../media/vs-code-script-src-emmet.png)
-
 Adjust the script element to look like the following. Place it right after the list.
 
 ```html
 <ul>
-  <li class="list">Edit the head</li>
-  <li class="list">Edit the body</li>
-  <li>Link to JavaScript</li>
+  <li class="list">Add visual styles</li>
+  <li class="list">Add light and dark themes</li>
+  <li>Enable switching the theme</li>
 </ul>
 <script src="app.js"></script>
 ```
@@ -47,23 +45,6 @@ In **Visual Studio Code**, open the `app.js` file and type the following.
 > [!NOTE]
 > You can usually omit semicolons in JavaScript, but it's a good idea to brush up on when semicolons are necessary before making any decisions about that. There's a bit of debate about this topic in the JavaScript community.
 
-## Console message
-
-You can create a hidden message that won't appear on your webpage. However, what you write in the console will show up in the browser developer tools. Using *console messages* can be really helpful for seeing the result of our code.
-
-```javascript
-...
-console.log('Here\'s a hidden message');
-```
-
-In **Visual Studio Code**, when in a JavaScript file, you can use autocomplete by typing `log` then hitting enter (return).
-
-![Screenshot of Visual Studio Code log Emmet entry](../media/vs-code-js-log-emmet.png)
-
-You can define a text *string* with single or double quotes around the text.
-
-The backslash in the word `here\'s` is an *escape character* that's needed to define the apostrophe as text. If you remove the backslash, you see an error in the console, "Uncaught SyntaxError: Unexpected identifier."
-
 ## Add a button
 
 You need some way to let the user switch between the light and dark theme in your web page. In this scenario, we do that with a button element. In your HTML page, add a `<button>` element. Put the button at the end of the list.
@@ -77,7 +58,7 @@ You need some way to let the user switch between the light and dark theme in you
 <button class="btn">Go dark</button>
 ```
 
-In your CSS file, add a selector for the button. To make the button label black, irrespective of the light or dark theme, we set the `color` property in the button selector. This selector, specific to the button, overrides the universal selector (*) used to apply font colors in your CSS file.
+In your CSS file, add a selector for the button. To make the button label black, irrespective of the light or dark theme, set the `color` property in the button selector. This selector, specific to the button, overrides the universal selector (*) used to apply font colors in your CSS file.
 
 ```css
 .btn {
@@ -114,14 +95,32 @@ const switcher = document.querySelector('.btn');
 switcher.addEventListener('click', function() {
     document.body.classList.toggle('dark-theme')
 
-    if(this.textContent == "Go dark"){
-        this.textContent = "Go light";
-    }
-    else {
+    var className = document.body.className;
+    if(className == "light-theme") {
         this.textContent = "Go dark";
     }
+    else {
+        this.textContent = "Go light";
+    }
+
 });
 ```
+
+## Console message
+
+You can create a hidden message that won't appear on your webpage. However, what you write in the console will show up in the browser developer tools. Using *console messages* can be really helpful for seeing the result of our code.
+
+Add a call to `console.log` after the `if` statement, but inside the event listener.
+
+```javascript
+...
+    console.log('current class name: ' + className);
+});
+```
+
+In **Visual Studio Code**, when in a JavaScript file, you can use autocomplete by typing `log` then hitting enter (return).
+
+You can define a text *string* with single or double quotes around the text.
 
 ## Open in browser
 

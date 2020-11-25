@@ -22,16 +22,17 @@ Go to the location where you want to create the new folder, and select **New Fol
 
 Go to **File > New**.
 
-Save the file with Control+S (Windows) or Command+S (macOS). Name the file index.html.
+Save the file with Control+S (Windows) or Command+S (macOS). Name the file `index.html`.
 
-Repeat the preceding steps to create two more files:
+Repeat the preceding steps to create two more files, `main.css` and `app.js`. When you're finished, your project folder will contain the following files that comprise your web site:
 
+- index.html
 - main.css
 - app.js
 
-Under the folder name in the Explorer window (middle left pane), you see the three files that make up your web site.
+Under the folder name in the Explorer window, you see the three files that make up your web site.
 
-We could build a website all in one text file or HTML file. Here we're using an HTML file for content and page structure. A CSS file is for presentation and styling. The JavaScript file is for behaviors and interactivity.
+You could build a website all in one text file or HTML file. Here you're using an HTML file for content and page structure. A CSS file is for presentation and styling. The JavaScript file is for behaviors and interactivity.
 
 Setting up three files helps us stay organized. It's an example of *progressive enhancement*. If JavaScript isn't enabled or supported, the CSS and HTML will still work. However, if CSS doesn't work, at least the HTML content will be displayed.
 

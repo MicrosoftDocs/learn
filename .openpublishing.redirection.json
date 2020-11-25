@@ -3271,6 +3271,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/windows/build-simple-website/1-installation-and-setup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-simple-website/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/6-tracking-changes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-simple-website",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/7-summary-and-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/6-summary-and-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwwl-data-ai/extract-insights-from-videos-with-video-indexer-service/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/1-introduction",
       "redirect_document_id": false

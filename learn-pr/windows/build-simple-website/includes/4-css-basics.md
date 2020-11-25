@@ -13,9 +13,9 @@ In the previous unit on HTML, we put our CSS in an external file and linked it t
 ...
 ```
 
-One benefits of external CSS is that multiple HTML pages can link to the same CSS file. If you make a change to the CSS, then your styling will update for each page. Designating an HTML file for the structure of the page, a CSS file for the styling, and JavaScript file for interaction or events is called *separation of concerns*.
+One benefit of external CSS is that multiple HTML pages can link to the same CSS file. If you make a change to the CSS, then your styling will update for each page. Designating an HTML file for the structure of the page, a CSS file for the styling, and JavaScript file for interaction or events is called *separation of concerns*.
 
-You can also write CSS directly in HTML, which is called internal CSS, but we will skip showing an example of that. Even for a basic website, there are so many CSS rules the HTML page becomes cluttered very quickly. With more than one page, the same CSS would often be repeated and challenging to manage.
+As mentioned previously, you can also write CSS directly in HTML, which is called internal CSS. Even for a basic website, there are so many CSS rules the HTML page becomes cluttered very quickly. With more than one page, the same CSS would often be repeated and challenging to manage.
 
 ## CSS rules
 
