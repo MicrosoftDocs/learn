@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.pause-compute
-title: Pause compute in azure synapse analytics
+title: Pause compute in Azure Synapse Analytics
 metadata:
-  title: Pause compute in azure synapse analytics
-  description: "Pause compute in azure synapse analytics"
+  title: Pause compute in Azure Synapse Analytics
+  description: "Pause compute in Azure Synapse Analytics"
   ms.date: 11/25/2020
   author: wwlpublish
   ms.author: chtestao

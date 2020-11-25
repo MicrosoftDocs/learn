@@ -71,7 +71,7 @@ Your organization has asked you if there is a way to mark queries executed by th
 
 7. Select the **Lab 08 - Execute Data Analyst and CEO Queries** Pipeline **(1)**, which will run / trigger the `asa.sql.workload01` and `asa.sql.workload02` queries. Select **Add trigger (2)**, then **Trigger now (3)**. In the dialog that appears, select **OK**.
 
-    ![The add trigger and trigger now menu items are highlighted.](../media/trigger-data-analyst-ceo-queries-pipeline.png "Add trigger")
+    ![The add trigger and trigger now menu items are highlighted](../media/trigger-data-analyst-ceo-queries-pipeline.png "Add trigger")
 
 8. Let's see what happened to all the queries we just triggered as they flood the system. In the query window, replace the script with the following:
 
@@ -129,7 +129,7 @@ Your organization has asked you if there is a way to mark queries executed by th
 
     You should see an output similar to the following:
 
-    ![SQL query results.](../media/sql-query-4-results.png "SQL script")
+    ![SQL query results](../media/sql-query-4-results.png "SQL script")
 
     Notice that the queries executed by the `asa.sql.workload01` user have a **high** importance.
 
@@ -139,7 +139,7 @@ Your organization has asked you if there is a way to mark queries executed by th
 
 16. Select **Pipeline runs (1)**, and then select **Cancel recursive (2)** for each running Lab 08 pipelines, marked **In progress (3)**. This will help speed up the remaining tasks.
 
-    ![The cancel recursive option is shown.](../media/cancel-recursive.png "Pipeline runs - Cancel recursive")
+    ![The cancel recursive option is shown screenshot 1.](../media/cancel-recursive.png "Pipeline runs - Cancel recursive")
 
 ### Reserve resources for specific workloads through workload isolation
 
@@ -236,7 +236,7 @@ Let's start by experimenting with different parameters.
 
 12. Select **Pipeline runs (1)**, and then select **Cancel recursive (2)** for each running Lab 08 pipelines, marked **In progress (3)**. This will help speed up the remaining tasks.
 
-    ![The cancel recursive option is shown.](../media/cancel-recursive-option.png "Pipeline runs - Cancel recursive")
+    ![The cancel recursive option is shown screenshot 2.](../media/cancel-recursive-option.png "Pipeline runs - Cancel recursive")
 
 13. Return to the query window under the **Develop** hub. In the query window, replace the script with the following to set 3.25% minimum resources per request:
 
@@ -283,7 +283,7 @@ Let's start by experimenting with different parameters.
 
     After several moments (up to a minute), we should see several concurrent executions by the `asa.sql.workload02` user running at **below_normal** importance. We have validated that the modified Workload Group and Workload Classifier works as expected.
 
-    ![The script results show that each session was executed with below normal importance.](../media/sql-result-below-normal-2.png "SQL script")
+    ![The script results show that each session was executed with below normal importance](../media/sql-result-below-normal-2.png "SQL script")
 
 18. Select the **Monitor** hub.
 
@@ -291,5 +291,5 @@ Let's start by experimenting with different parameters.
 
 19. Select **Pipeline runs (1)**, and then select **Cancel recursive (2)** for each running Lab 08 pipelines, marked **In progress (3)**. This will help speed up the remaining tasks.
 
-    ![The cancel recursive option is shown.](../media/cancel-recursive.png "Pipeline runs - Cancel recursive")
+    ![The cancel recursive option is shown screenshot 3.](../media/cancel-recursive.png "Pipeline runs - Cancel recursive")
 
