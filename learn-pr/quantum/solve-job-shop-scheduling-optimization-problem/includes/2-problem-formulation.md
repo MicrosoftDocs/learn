@@ -8,7 +8,7 @@ To illustrate the scenario, we are going to return to our spaceship, where a dis
 
 Back onboard the spaceship, warning lights are flashing and alarms are blaring. You have been hit by the electromagnetic fallout from a coronal mass ejection event of a nearby star and are experiencing multiple failures across different critical systems!
 
-Fortunately, you have the tools, team and expertise on board to fix all the issues, however it's important that you follow procedure to ensure the repairs are successful. Below is the list of repair tasks that you must complete:
+Fortunately, you have the tools, team, and expertise on board to fix all the issues, however it's important that you follow procedure to ensure the repairs are successful. Below is the list of repair tasks that you must complete:
 
 - Restart life support
   1. Open wall panel in the life support module (*2 minutes*)
@@ -24,7 +24,7 @@ Fortunately, you have the tools, team and expertise on board to fix all the issu
 
 Each step that makes up a task takes a specific amount of time, and must be completed in the correct order.
 
-To help you complete these tasks, you have access to your trusty **universal multi-tool** and the **ship computer** - these are the machines you will use to perform the repairs.
+To help you complete these tasks, you have access to your trusty **universal multi-tool** and the **ship computer** - you will use these machines to perform the repairs.
 
 The mission is to **complete all of these tasks in as short a time as possible**, so that you can avoid disaster. For safety reasons, you must ensure that you follow procedure and thus there are some constraints on the way you complete the tasks:
 
@@ -38,7 +38,7 @@ The rest of this learn module will be spent constructing what is known as a **co
 
 Each point on a cost function represents a different solution configuration - in this case, each configuration is a particular assignment of starting times for the operations you are looking to schedule. The goal of the optimization is to minimize the cost of the solution - in this instance the aim is to minimize the amount of time taken to complete all operations.
 
-Unfortunately, the Azure Quantum solvers can't accept the problem in its native format - the optimization task must be represented in a specific format that the solvers are able to deal with. This is done by creating an n-dimensional matrix of `Term` objects representing the various possible solution configurations, and adding penalties to terms that break the constraints - this increases the relative cost of those configurations and thus makes it unlikely that the optimizer will settle for these sub-optimal solutions.
+Unfortunately, the Azure Quantum solvers can't accept the problem in its native format - the optimization task must be represented in a specific format that the solvers are able to deal with. This is done by creating an n-dimensional matrix of `Term` objects representing the various possible solution configurations, and adding penalties to terms that break the constraints - this increases the relative cost of those configurations and thus makes it unlikely that the optimizer will settle for these suboptimal solutions.
 
 The idea is to make these invalid solutions so expensive that the solver can easily locate valid, low-cost solutions by navigating to low points (minima) in the cost function. However, you must also ensure that these solutions are not so expensive as to create peaks in the cost function that are so high that the solver can't travel over them to discover better optima on the other side.
 
@@ -80,7 +80,7 @@ Let's first introduce some notation because you don't have time during an emerge
   - $0_{4}$: Detach old transformer module (*1 minute*)
   - $0_{5}$: Install new transformer module (*2 minutes*)
 
-Above, you can see that the jobs have been labelled as $J$ and assigned index numbers $0$, $1$ and $2$, to represent each of the three tasks you have. The operations that make up each job have also been defined, and are represented by the letter $O$.
+Above, you can see that the jobs have been labeled as $J$ and assigned index numbers $0$, $1$ and $2$, to represent each of the three tasks you have. The operations that make up each job have also been defined, and are represented by the letter $O$.
 
 To make it easier to code up later, all operations are identified with a continuous index number rather than (for example) starting from $0$ for each job - this allows you to keep track of operations by this ID number in the code and schedule them according to the constraints and machine availability. You can tie the operations back to their jobs later on using a reference.
 
@@ -100,7 +100,7 @@ $$\vdots$$
 
 $$J_{n-1} = \{O_{k_{n-2}}, O_{k_{n-2}+1}, \ldots , O_{k_{n-1}-1}\} \text{, where } k_{n-1} = \text{ the total number of operations across all jobs }$$
 
-The next piece of notation you will need is a binary variable which will be called $x_{i, t}$
+The next piece of notation you will need is a binary variable, which will be called $x_{i, t}$
 
 You will use this variable to represent whether an operation starts at time $t$ or not:
 
@@ -110,7 +110,7 @@ $$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}
 > [!NOTE]
 > This makes this a binary optimization – more generally, this is called a polynomial unconstrained binary optimization (or PUBO) problem. You may also see these PUBO problems referred to as Higher Order Binomial Optimization (HOBO) problems - these terms both refer to the same thing.
 
-$t$ is used to represent the simulation time. It goes from time $0$ through to $T$ in integer steps. $T$ is the longest time the whole set of jobs can take in total (i.e. the max simulation time):
+$t$ is used to represent the simulation time. It goes from time $0$ through to $T$ in integer steps. $T$ is the longest time the whole set of jobs can take in total (the max simulation time):
 
 $$0 \leq t < T$$
 
@@ -125,7 +125,7 @@ The first step is to represent the constraints mathematically. This will be done
 
 | Constraint | Penalty condition |
 |---|---|
-|**Precedence constraint**<br>Operations in a job must take place in order.|Assign penalty every time $O_{i+1}$ starts before $O_{i}$ has finished (i.e. they start out of order).|
+|**Precedence constraint**<br>Operations in a job must take place in order.|Assign penalty every time $O_{i+1}$ starts before $O_{i}$ has finished (they start out of order).|
 |**Operation once constraint**<br>Each operation is started once and only once.|Assign penalty if an operation isn't scheduled within the allowed time.<br>**Assumption:** if an operation starts, it runs to completion.|
 |**No overlap constraint**<br>Machines can only do one thing at a time.|Assign penalty every time two operations on a single machine are scheduled to run at the same time.|
 
@@ -156,14 +156,14 @@ The weights represent how important each penalty function is, relative to all th
 From these mathematical representations, you will build out Python code which will output an array of terms, where each `Term` is an object that looks like:
 
 ```python
-(w: float, indices: []) # Constant terms e.g. +1
-(w: float, indices: [int]) # Linear terms e.g. x
-(w: float, indices: [int, int]) # Quadratic terms e.g. x^2
+(w: float, indices: []) # Constant terms like +1
+(w: float, indices: [int]) # Linear terms like x
+(w: float, indices: [int, int]) # Quadratic terms like x^2
 ```
 
 The `w` element represents the weight for each term, and the `indices` array represents the indices $i + t$ of the $x_{i+t}$ values.
 
-If there were higher order terms (e.g. cubed etc.), you would just add more elements to the indices array, like so:
+If there were higher order terms (cubed, for example), you would just add more elements to the indices array, like so:
 
 ```python
 (w: float, indices: [int, int, int, ...])

@@ -25,7 +25,7 @@ quiz:
       explanation: 'This is the operation once constraint.'
     - content: 'Jobs must take place in order.'
       isCorrect: false
-      explanation: 'Jobs are independent of one another (in the formulation used in this module) and thus operations in job 2 could be scheduled to start before those in job 1, as long as all the constraints are satisfied.'
+      explanation: 'Jobs are independent of one another (in the formulation used in this module) and so operations in job 2 could be scheduled to start before those in job 1, as long as all the constraints are satisfied.'
     - content: 'Operations in a job must take place in order.'
       isCorrect: true
       explanation: 'Correct! The precedence constraint ensures that operation i + 1 does not start before operation i finishes (assuming operations i and i + 1 belong to the same job).'

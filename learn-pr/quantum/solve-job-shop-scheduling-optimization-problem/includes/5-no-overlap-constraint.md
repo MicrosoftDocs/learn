@@ -19,7 +19,7 @@ Recall once more the variable $x_{i,t}$:
 $$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
 $$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
-Let's say that $O_{3}$ and $O_{4}$ must be completed using the same machine. To avoid violating the no overlap constraint, you must ensure that $O_{3}$ and $O_{4}$ begin at different times: i.e. $x_{3,t}$ and $x_{4,t}$ must not equal 1 at the same time.
+Let's say that $O_{3}$ and $O_{4}$ must be completed using the same machine. To avoid violating the no overlap constraint, you must ensure that $O_{3}$ and $O_{4}$ begin at different times: $x_{3,t}$ and $x_{4,t}$ must not equal 1 at the same time.
 
 One example of a valid configuration is shown below:
 
@@ -59,14 +59,14 @@ Let's break that down:
 
   For operation $i$ starting at time $t$, and operation $k$ starting at time $s$, you need to sum over all possible start times $0 \leq t < T$ and $0 \leq s < T$. This indicates the need for another nested `for` loop, like you saw for the precedence constraint.
   
-  For this summation, $i \neq k$ (i.e. you are always scheduling two different operations).
+  For this summation, $i \neq k$ (you should always be scheduling two different operations).
   
   For two operations happening on a single machine, $t \neq s$ or the constraint has been violated. If $t = s$ for the operations, they have been scheduled to start on the same machine at the same time, which isn't possible.
 
 
 - $x_{i,t}\cdot x_{k,s}$
 
-  This is the product you saw explicitly calculated in the rightmost columns of the tables from the worked example. If two different operations $i$ and $k$ start at the same time (i.e. $t = s$), this product will equal 1. Otherwise, it will equal 0.
+  This is the product you saw explicitly calculated in the rightmost columns of the tables from the worked example. If two different operations $i$ and $k$ start at the same time ($t = s$), this product will equal 1. Otherwise, it will equal 0.
   
 
 - $\sum(\dots) = 0 \text{ for each machine } \textit{m}$
@@ -79,7 +79,7 @@ Let's break that down:
   
 ### Code
 
-Using the above, you can transform the final penalty function into code which will generate the terms needed by the solver. As with the previous two penalty functions, the weight `w` is included in our definition of the `Term` objects:
+Using the above, you can transform the final penalty function into code that will generate the terms needed by the solver. As with the previous two penalty functions, the weight `w` is included in our definition of the `Term` objects:
 
 ```python
 def no_overlap_constraint(n:int, T:int, p:List[int], w:float, ops_machines_map:List[List[int]]):
@@ -112,9 +112,9 @@ def no_overlap_constraint(n:int, T:int, p:List[int], w:float, ops_machines_map:L
             for k in range(len(ops)):
                 # Loop over simulation time
                 for t in range(T):
-                    # When i != k (i.e. when you are scheduling two different operations)
+                    # When i != k (when you are scheduling two different operations)
                     if ops[i] != ops[k]:
-                        # t = s i.e. two operations scheduled to start at the same time on the same machine
+                        # t = s - two operations scheduled to start at the same time on the same machine
                         terms.append(Term(w = w*1, indices = [ops[i]*T+t, ops[k]*T+t]))
 
                     # When i < k, add penalty when O_k starts before O_i has finished

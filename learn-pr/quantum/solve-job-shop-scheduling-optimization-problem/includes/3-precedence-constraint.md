@@ -4,7 +4,7 @@ The precedence constraint is defined as follows:
 
 | Constraint | Penalty condition |
 |---|---|
-|**Precedence constraint**<br>Operations in a job must take place in order.|Assign penalty every time $O_{i+1}$ starts before $O_{i}$ has finished (i.e. they start out of order).|
+|**Precedence constraint**<br>Operations in a job must take place in order.|Assign penalty every time $O_{i+1}$ starts before $O_{i}$ has finished (they start out of order).|
 
 ### Worked example
 
@@ -42,7 +42,7 @@ To avoid violating this constraint, the start time of $O_{4}$ (denoted by $s$) m
 
 The ✔ means that any $s$ value in this column is valid, as it doesn't violate the precedence constraint.
 
-Conversely, if $s$ is less than $t + p_{3}$ (i.e. $O_{4}$ starts before $O_{3}$ finishes), you need to add a penalty. Invalid $s$ values for this example are shown in the rightmost column:
+Conversely, if $s$ is less than $t + p_{3}$ (meaning $O_{4}$ starts before $O_{3}$ finishes), you need to add a penalty. Invalid $s$ values for this example are shown in the rightmost column:
 
 | $t$ | $t = p_{3}$|$s \geq t+p_{3}$|$s < t+p_{3}$|
 |---|---|---|---|

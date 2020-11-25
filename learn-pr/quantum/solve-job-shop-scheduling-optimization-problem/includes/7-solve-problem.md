@@ -1,6 +1,6 @@
 ### Submit problem to Azure Quantum
 
-This code submits the terms to the Azure Quantum `SimulatedAnnealing` solver. You could also have used the same problem definition with any of the other Azure Quantum solvers available (e.g. `ParallelTempering`).
+This code submits the terms to the Azure Quantum `SimulatedAnnealing` solver. You could also have used the same problem definition with any of the other Azure Quantum solvers available (for example, `ParallelTempering`).
 
 The job is run synchronously in this instance, however this could also be submitted asynchronously as shown in the next subsection.
 
@@ -46,7 +46,7 @@ print(config)
 
 ### Map variables to operations
 
-This code snippet contains several helper functions which are used to parse the results returned from the solver and print them to screen in a user-friendly format.
+This code snippet contains several helper functions, which are used to parse the results returned from the solver and print them to screen in a user-friendly format.
 
 ```python
 def create_op_array(config: dict):
@@ -222,13 +222,13 @@ Translating back to the problem at hand, below is shown the order in which your 
 |$0_{4}$: Detach old transformer module (*1 minute*)|Universal multi-tool|3|
 |$0_{5}$: Install new transformer module (*2 minutes*)|Universal multi-tool|4|
 
-By inspection, you can tell that the solution above is valid (i.e. it does not violate any of the constraints defined previously):
+By inspection, you can tell that the solution above is valid (it does not violate any of the constraints defined previously):
 
 - Operations belonging to the same job happen in order
 - Each machine only has one operation running at a time
 - Operations are started once and only once
 
-For larger or more complex problems, it will not always be possible to verify the solution by eye. It is therefore common practice to implement some code to verify that solutions returned from the optimizer are valid, as well as evaluating how good the solutions are. This capability is also very useful when it comes to tuning weights and penalty functions.
+For larger or more complex problems, it will not always be possible to verify the solution by eye. It is therefore common practice to implement some code to verify that solutions returned from the optimizer are valid, as well as evaluating how good the solutions are. This capability is also useful when it comes to tuning weights and penalty functions.
 
 In this particular (simple) instance, the solver quickly returned the solution with the lowest possible cost - the global minimum. However, you must remember that these solvers are heuristics and are therefore not guaranteed to find the absolute minimum cost solution possible, particularly when the problem definition becomes more complex.
 

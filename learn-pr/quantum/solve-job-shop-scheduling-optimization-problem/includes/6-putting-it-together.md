@@ -4,7 +4,7 @@ As a reminder, here are the penalty terms:
 
 | Constraint | Penalty condition |
 |---|---|
-|**Precedence constraint**<br>Operations in a job must take place in order.|Assign penalty every time $O_{i+1}$ starts before $O_{i}$ has finished (i.e. they start out of order).|
+|**Precedence constraint**<br>Operations in a job must take place in order.|Assign penalty every time $O_{i+1}$ starts before $O_{i}$ has finished (they start out of order).|
 |**Operation once constraint**<br>Each operation is started once and only once.|Assign penalty if an operation isn't scheduled within the allowed time.<br>**Assumption:** if an operation starts, it runs to completion.|
 |**No overlap constraint**<br>Machines can only do one thing at a time.|Assign penalty every time two operations on a single machine are scheduled to run at the same time.|
 
@@ -29,11 +29,11 @@ $$\text{where }\alpha, \beta \text{ and } \gamma \text{ represent the different 
 The weights represent how important each penalty function is, relative to all the others.
 
 > [!NOTE]
-> Along with modifying your cost function (i.e. how you represent the penalties), tuning these weights will define how much success you will have solving your optimization problem. There are many ways to represent each optimization problem's penalty functions and many ways to manipulate their relative weights, so this may require some experimentation before you see success.
+> Along with modifying your cost function (how you represent the penalties), tuning these weights will define how much success you will have solving your optimization problem. There are many ways to represent each optimization problem's penalty functions and many ways to manipulate their relative weights, so this may require some experimentation before you see success.
 
 ### Code
 
-The code snippet below shows how to set problem parameters, assig weight values and assemble the penalty terms by summing the output of the penalty functions, as was just demonstrated mathematically. These terms represent the cost function and you will submit them to the solver.
+The code snippet below shows how to set problem parameters, assign weight values and assemble the penalty terms by summing the output of the penalty functions, as was just demonstrated mathematically. These terms represent the cost function and you will submit them to the solver.
 
 ```python
 # Set problem parameters

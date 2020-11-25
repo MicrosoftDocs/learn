@@ -33,7 +33,7 @@ Let’s take $O_{3}$ as an example again:
 |$\sum_t {x_{3,t}} =$|1|
 |**Valid configuration?**|✔|
 
-In the right hand column, you see that $O_{3}$ starts at time 1 and no other time ($x_{3,t} = 1$ at time $t = 1$ and is $0$ otherwise). The sum of $x_{i,t}$ values over all $t$ for this example is therefore 1, which is what is expected! This is therefore a valid solution.
+In the right-hand column, you see that $O_{3}$ starts at time 1 and no other time ($x_{3,t} = 1$ at time $t = 1$ and is $0$ otherwise). The sum of $x_{i,t}$ values over all $t$ for this example is therefore 1, which is what is expected! This is therefore a valid solution.
 
 In the example below, you see an instance where $O_{3}$ is scheduled more than once ($x_{3,t} = 1$ more than once), in violation of the constraint:
 
@@ -64,7 +64,7 @@ In summary:
 |$t$|$x_{3,t}$|$x_{3,t}$|$x_{3,t}$|
 |---|---|---|---|
 |0|0|0|0|
-|1|1|1|0
+|1|1|1|0|
 |2|0|1|0|
 |$\sum_t {x_{3,t}} =$|1|2|0|
 |**Valid configuration?**|✔|✘|✘|
@@ -83,9 +83,9 @@ Let's break that down:
 
   As you saw in the sum row of the tables in the worked example, $\sum_{0\leq t < T} x_{i,t}$ should always equal exactly 1 (meaning that an operation must be scheduled **once and only once** during the simulation). This means that $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1$ should always give 0. This means there is no penalty assigned when the constraint is not violated.
   
-  In the case where $\sum_{0\leq t < T} x_{i,t} > 1$ (i.e. an operation is scheduled to start more than once, like in the second example above), you now have a positive, non-zero penalty term as $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1 > 0$
+  In the case where $\sum_{0\leq t < T} x_{i,t} > 1$ (meaning an operation is scheduled to start more than once, like in the second example above), you now have a positive, non-zero penalty term as $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1 > 0$
   
-  In the case where $\sum_{0\leq t < T} x_{i,t} = 0$ (i.e. an operation is never scheduled to start, like in the last example above), you now have a $-1$ penalty term as $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1 = 0 - 1 = -1$
+  In the case where $\sum_{0\leq t < T} x_{i,t} = 0$ (meaning an operation is never scheduled to start, like in the last example above), you now have a $-1$ penalty term as $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1 = 0 - 1 = -1$
 
 
 - $\left(\sum\dots\right)^2$
@@ -122,7 +122,7 @@ $$= \left(x + y - 1\right)^2$$
 $$= (x + y - 1)\cdot(x + y - 1)$$
 $$= x^2 + y^2 + 2xy - 2x - 2y + 1$$
 
-Of course, if $T$ was larger, you would have more terms. The form of the equation would be the same however: still quadratic.
+If $T$ was larger, you would have more terms. The form of the equation would be the same however: still quadratic.
 
 ### Code
 
