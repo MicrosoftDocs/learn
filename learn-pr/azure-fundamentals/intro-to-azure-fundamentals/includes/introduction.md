@@ -4,11 +4,28 @@ In this module, you'll take an entry-level, end-to-end look at Azure and its cap
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Ibng]
 
-## Why should I take Azure fundamentals?
+## What is Azure fundamentals?
 
-Are you just beginning to work with cloud-based solutions and services? Or do you already have cloud experience and are new to Azure? Either way, the Azure fundamentals learning paths provide you with everything you need to get started with Azure. Technical IT experience is not required; however, having general IT knowledge will help you get the most from your learning experience.
+Azure fundamentals is a series of six learning paths that helps orient you to Azure and its many services and features.
 
-The Azure fundamentals learning paths can also help you prepare to earn official certification from Microsoft. The material you'll find here relates to [Exam AZ-900: Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900?azure-portal=true), and is where most people begin their certification journey. As you build proficiency in other areas, you can take additional exams to verify your knowledge.
+Whether you're interested in Azure's core compute, network, storage, and database services, learning about cloud security best practices, or exploring the cutting edge in IoT and machine learning, think of Azure fundamentals as your curated guide to Azure.
+
+Azure fundamentals includes interactive exercises that give you hands-on experience with Azure. Many exercises provide a temporary Azure environment called the sandbox, which allows you to learn for free and at your own pace.
+
+Technical IT experience is not required; however, having general IT knowledge will help you get the most from your learning experience.
+
+### Why should I take Azure fundamentals?
+
+Whether you're just beginning to work with the cloud or you already have cloud experience and are new to Azure, Azure fundamentals provides you with everything you need to get started.
+
+No matter your goals, Azure fundamentals has something for you. Take Azure fundamentals if you:
+
+* Have general interest in Azure or in the cloud.
+* Want to earn official certification from Microsoft.
+
+**Preparation for Exam AZ-900**
+
+Azure fundamentals can help you prepare to earn official certification from Microsoft. The material you find here relates to [Exam AZ-900: Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900?azure-portal=true), and is where most people begin their certification journey. As you build proficiency in other areas, you can take additional exams to verify your knowledge.
 
 Exam AZ-900 includes these six study areas:
 
@@ -20,7 +37,11 @@ Exam AZ-900 includes these six study areas:
 | Describe identity, governance, privacy, and compliance features | 20-25% |
 | Describe Azure cost management and Service Level Agreements | 10-15% |
 
+Each study area maps to an Azure fundamentals learning path.
+
 The percentages shown indicate the relative weight of each area on the exam. The higher the percentage, the more questions that part of the exam will contain. Be sure to read the exam page for specifics about what skills are covered in each area.
+
+Although Azure fundamentals provides broad coverage of what you'll find on the exam, having hands-on experience with Azure will help ensure that you're ready.
 
 ## Learning objectives
 
