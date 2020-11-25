@@ -5,7 +5,7 @@ It enables you to use both technologies within one platform, which allowed you t
 
 A spark orientated data engineer can now easily communicate with a SQL based data engineer and communicate together on the same platform. 
 
-The interoperability between Spark and SQL helps you achieve the following:
+The interoperability between Spark and SQL helps you achieve as follows:
 
 * A shared Hive-compatible metadata system enables you to define tables on files in the data lake such that it can be consumed by either Spark or Hive.
 * Both SQL and Spark can directly explore, and analyze Parquet, CSV, TSV, and JSON files stored in the data lake.
@@ -26,12 +26,12 @@ The JDBC would open the connection.
 Then, filters and projections would be applied and spark would read the data serially. 
 Given two distributed systems such as Spark and SQL pools, JDBC could become a bottleneck with serial data transfer.
 
-Therefore the New Approach we would take is JDBC and Polybase. 
+Therefore the New Approach we would take is JDBC and PolyBase. 
 First, the JDBC issues CETAS and send filters and projections. 
 Then filters and projections would be applied and the DataWarehouse exports the data in parallel. 
 Spark reads the data in parallel all based on the user provisioned workspace default data lake storage. 
 
-The Azure Synapse Apache Spark Pool to Synapse SQL connector would then be a data source implementation for apache spark where the ADLS Gen 2 is used as well as polybase in the dedicated SQL Pools to transfer data between the Spark instance and SQL pool efficiently. 
+The Azure Synapse Apache Spark Pool to Synapse SQL connector would then be a data source implementation for apache spark where the ADLS Gen 2 is used as well as PolyBase in the dedicated SQL Pools to transfer data between the Spark instance and SQL pool efficiently. 
 
 
 
