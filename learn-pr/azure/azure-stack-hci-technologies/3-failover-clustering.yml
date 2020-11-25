@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-stack-hci-technologies.3-failover-clustering
 metadata:
-  title: Introduction to Failover Clustering ### Marcin, should this be What is Failover Clustering? as per the design doc? 
-  description: Introduction to Failover Clustering
+  title: What is failover clustering? 
+  description: Provide an introduction to failover clustering.
   ms.date: 09/21/2020
   author: jboeshart
   ms.author: jaboes
