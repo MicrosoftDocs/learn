@@ -1,14 +1,14 @@
-Hyperscale provides self-service scaling to deal with increased load. The Azure portal makes it easy to add new worker nodes, and to increase the vCores and storage of existing nodes. Scaling causes no downtime, and doesn't interrupt queries.
+Hyperscale provides self-service scaling to deal with increased workloads. The Azure portal makes it easy to add new worker nodes, and to increase the vCores and storage of existing nodes. Scaling causes no downtime, and doesn't interrupt queries.
 
 However, before any scaling starts, you need to choose the initial capacity for your database.
 
 ## Multi-Tenant SaaS applications
 
-Different database solutions have different compute requirements. We've seen 2-3x performance improvements when moving to Hyperscale from a single-node PostgreSQL database, because sharding improves resource utilization. In these cases, we recommend choosing equal resources–for RAM and compute–as the original instance. Analytics are available through the Azure portal to then review if you should scale.
+Different database solutions have different compute requirements. We've seen 2-3x performance improvements when moving to Hyperscale from a single-node PostgreSQL database, because sharding improves resource utilization. In these cases, we recommend choosing equal resources–for RAM and compute–as the original instance. Analytics are available through the Azure portal to then review if you should change scale.
 
 RAM allocation is determined by vCore count, so the vCore count is essentially the real decision.
 
-The number of vCores required for the coordinator node depends on your existing workload (write/read throughput)
+The number of vCores required for the coordinator node depends on your existing workload (write/read throughput).
 
 Our payment app has a high throughput, due to the large number of transactions. As we're migrating from an on-premises server, we'll initially set the server group to have equal compute and RAM. We'll look at analytics, including the coordinator node's workload, to see if we need to change the number of vCores.
 

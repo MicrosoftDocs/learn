@@ -13,7 +13,7 @@ summary: When your database is small, it’s easy to throw more hardware at the 
 abstract: |
   In this module, you will:
   - Create a Hyperscale instance of Azure Database for PostgreSQL.
-  - Design a Hyperscale database for a real-time application.
+  - Shard a Hyperscale database for a multi-tenant application.
   - Scale and rebalance a Hyperscale database.
 prerequisites: Basic knowledge of relational databases
 iconUrl: /learn/achievements/intro-to-postgresql.svg

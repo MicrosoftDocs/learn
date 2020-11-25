@@ -42,7 +42,7 @@ For a total of 12 vCores and 1.5 TiB of storage.
 5. Increase compute and storage if you want. Next, scroll to the bottom of the page and select the blue **Save** box.
 
 6. Select the **Networking** tab at the top of the page
-7. Select **Add All 0.0.0.0 - 255.255.255.255**
+7. Select **Add 0.0.0.0 - 255.255.255.255**, then select **Continue**.
 
 ![Configure Hyperscale firewall](../media/3d-firewall.png)
 
