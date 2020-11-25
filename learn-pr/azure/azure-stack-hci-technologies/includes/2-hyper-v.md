@@ -13,7 +13,7 @@ When you install the Hyper-V server role, the installation process implements a 
 
 The following diagram depicts the high-level architecture of Hyper-V. The Hyper-V hypervisor takes full control of the hardware virtualization capabilities (depicted by the arrow from the CPU layer to the Hypervisor layer) and does not expose them to the guest OS.
 
-:::image type="content" source="../media/2-hyper-v-architecture.png" alt-text="Image of a non-nested virtualization environment, with the CPU layer at the bottom, on top of which is a Hypervisor layer, followed by the root host OS and guest OS.":::
+:::image type="content" source="../media/2-hyper-v-architecture.png" alt-text="Image of a non-nested virtualization environment, with the CPU layer at the bottom, on top of which is a Hypervisor layer, followed by the root host OS and guest OS." border="true":::
 
 An OS that runs in a VM is referred to as a *guest operating system*. Hyper-V supports all current versions of Windows Server and client operating systems in addition to a several Linux distributions, including CentOS, Red Hat Enterprise Linux, Debian, Oracle Linux, SUSE, and Ubuntu, as well as FreeBSD.
 
@@ -23,7 +23,7 @@ Nested virtualization is a Hyper-V feature that allows you to install and run Hy
 
 The following diagram depicts Hyper-V with nested virtualization enabled. This feature allows a guest VM to install its own hypervisor and run its own guest VM.
 
-:::image type="content" source="../media/2-nested-hyper-v-architecture.png" alt-text=“Image of a nested virtualization environment, with the CPU layer at the bottom, on top of which is a Hypervisor layer, followed by the root host OS. There is an additional hypervisor layer, followed by the guest OS and root OS.":::
+:::image type="content" source="../media/2-nested-hyper-v-architecture.png" alt-text="Graphic of a nested virtualization environment, with the CPU layer at the bottom, on top of which is a Hypervisor layer, followed by the root host OS. There is an additional hypervisor layer, followed by the guest OS and root OS." border="true":::
 
 ## Reasons for using Hyper-V
 
