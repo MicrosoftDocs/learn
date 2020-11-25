@@ -96,7 +96,7 @@ As a database administrator, you'll set up a new Azure Database for PostgreSQL f
 
     - Authentication Type: **Password**
 
-    - User name: <strong>labadmin@postgresql-azure-\<your initials\></strong> (note that the user name must include the hostname. This is the first part up to the period in the server name.)
+    - User name: <strong>labadmin@postgresql-azure-<your initials\></strong> (note that the user name must include the hostname. This is the first part up to the period in the server name.)
 
     - Password: **Azur3Pa$$2020**
 
