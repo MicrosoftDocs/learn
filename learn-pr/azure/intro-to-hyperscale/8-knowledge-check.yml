@@ -15,31 +15,31 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What can be stored and queried with Azure Database for PostgreSQL?'
+  - content: 'What are the characteristics of OLTP workloads?'
     choices:
-    - content: "Code modules, which can be run by queries"
+    - content: "High numbers of transactions with large amounts of data"
       isCorrect: false
-      explanation: "Azure Database for PostgreSQL can store code modules, but it can also store other data too."
-    - content: "Geometric data"
+      explanation: "Incorrect. Analytical workloads tend to have high amounts of data. OLTP workloads have high numbers of transacations, but not large amounts of data."
+    - content: "Business intelligence and analytical workloads"
       isCorrect: false
-      explanation: "Azure Database for PostgreSQL can store geometric data, but it can also store other data too."
-    - content: "Relational tables"
+      explanation: "Incorrect. OLTP workloads tend to be high numbers of transactions, not analytical workloads."
+    - content: "Time series data"
       isCorrect: false
-      explanation: "Azure Database for PostgreSQL can store relational tables, but it can also store other data too."
-    - content: "All of the above"
+      explanation: "Incorrect. Time series data is one of many data types usable in OLTP workloads."
+    - content: "High numbers of transactions with low amounts of data"
       isCorrect: true
-      explanation: "Correct. One of the main benefits of a PostgreSQL database is the functionality and flexibility to store different ."
-  - content: 'Suppose you want your Azure Database for PostgreSQL server to have high-performance across several different regions. Which server option should you choose?'
+      explanation: "Correct. OLTP workloads tend to have low amounts of data, with a high number of transactions, like text messages or purchasing items online."
+  - content: 'Why do multi-tenant applications provide massive cost savings?'
     choices:
-    - content: Single server
+    - content: "OLAP workloads involve low amounts of data"
       isCorrect: false
-      explanation: "Single server can have high performance, but is not a distributed database solution."
-    - content: Flexible server
+      explanation: "Incorrect. Multi-tenant applications usually have OLTP workloads, with large numbers of tenants."
+    - content: "The combined workloads of multiple tenants is low"
       isCorrect: false
-      explanation: "Flexible server is customizable, but is not a distributed database solution."
-    - content: Hyperscale
+      explanation: "Incorrect. Multi-tenant applications do not necessarily have low workloads, but the overall workload can be low on average with resources being shared between tenants."
+    - content: "Many customers share resources."
       isCorrect: true
-      explanation: "Correct. Hyperscale offers you to scale up, providing high-performance, and scale out, allowing that high-performance across different regions."
-    - content: SQLite
+      explanation: "Correct. Multi-tenant applications allow for high numbers of users sharing resources, which can provide savings per user."
+    - content: "Recent cloud advances in storing large amounts of data."
       isCorrect: false
-      explanation: "SQLite is not a deployment option for Azure Database for PostgreSQL."
+      explanation: "Incorrect. While the cost of cloud storage has fallen, there are other resources other than storage to take into account."
