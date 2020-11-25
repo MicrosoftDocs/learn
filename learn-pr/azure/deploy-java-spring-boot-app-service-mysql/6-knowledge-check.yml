@@ -12,36 +12,36 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "What service allows developers to scaffold out the structure of a Spring boot application?"
+  - content: "Which service allows developers to scaffold the structure of a Spring Boot application?"
     choices:
     - content: "Maven"
       isCorrect: false
-      explanation: "Maven is a build tool that allows you to configure dependencies and deploy your applications."
+      explanation: "Maven is a build tool that allows you to configure dependencies and deploy applications."
     - content: "Spring Initializr"
       isCorrect: true
-      explanation: "Correct. The Spring Initializr is a web application that generates a Spring Boot project structure for you."
-    - content: "Azure Command Line Interface (CLI)"
+      explanation: "Correct. Spring Initializr is a web application that generates a Spring Boot project structure for you."
+    - content: "The Azure CLI"
       isCorrect: false
-      explanation: "Azure CLI is a command-line interface used to create and manage Azure resources."
-  - content: 'Which of the following Java Class types provides generic CRUD methods to manage JPA Objects?'
+      explanation: "The Azure CLI is a command-line interface that you can use to create and manage Azure resources."
+  - content: 'Which of the following Java class types provides generic CRUD methods to manage JPA objects?'
     choices:
     - content: Repository
       isCorrect: true
-      explanation: "By extending JpaRepository, we get a bunch of generic CRUD methods allowing for management of JPA Objects."
+      explanation: "Correct. By extending `JpaRepository`, you get a bunch of generic CRUD methods that allow you to manage JPA objects."
     - content: Controller
       isCorrect: false
-      explanation: "A Controller publishes REST interfaces to store and retrieve data via HTTP."
+      explanation: "A `Controller` publishes REST interfaces to store and retrieve data through HTTP."
     - content: Entity
       isCorrect: false
-      explanation: "A JPA Entity object maps Java Classes to Database Tables."
+      explanation: "A JPA entity object maps Java classes to database tables."
   - content: "Which Maven command will create your Azure App Service instance in Azure?"
     choices:
     - content: "config"
       isCorrect: false
-      explanation: "This command will set up your projects configuration with a subscription, Java Version, and operating system you specify."
+      explanation: "This command sets up your project with a subscription, Java version, and operating system you specify."
     - content: "deploy"
       isCorrect: true
-      explanation: "This command creates your instance and copies your application and starts it."
+      explanation: "Correct. This command creates your instance. It copies your application and starts it."
     - content: "package"
       isCorrect: false
       explanation: "This command bundles your application into an executable JAR file."

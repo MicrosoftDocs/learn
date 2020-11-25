@@ -56,7 +56,9 @@ You're now ready to install the MonogoDB instance. Recall from earlier, that you
 
     ```bash
     helm install ratings bitnami/mongodb \
+
         --namespace ratingsapp \
+
         --set auth.username=<username>,auth.password=<password>,auth.database=ratingsdb
     ```
 
