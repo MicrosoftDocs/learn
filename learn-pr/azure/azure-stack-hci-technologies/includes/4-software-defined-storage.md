@@ -101,7 +101,7 @@ You can use shared virtual hard disk in the following scenarios:
 - CSV on the Hyper-V host cluster. In this scenario, all virtual machine files, including the shared virtual hard disk files are stored on a CSV that is configured as shared storage for clustered VMs.
 - SOFS on a separate storage cluster. This scenario uses SMB file-based storage as the location of the shared virtual hard disk files. 
 
-In both of these secenarios, you can implement storage by using Storage Spaces Direct.
+In both of these scenarios, you can implement storage by using Storage Spaces Direct.
 
 ## Storage Spaces Direct
 
