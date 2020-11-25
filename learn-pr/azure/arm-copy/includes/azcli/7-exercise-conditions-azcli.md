@@ -57,7 +57,7 @@ The template also defines two parameters:
       ],
       "outputs": {}
     }
-   ```
+    ```
 
 ## Provision the Dev environment
 

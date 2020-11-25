@@ -1,25 +1,9 @@
-Here you will deploy an ARM template, with a copy construct, using Azure CLI.
+## Create the ARM template
 
-## Exercise overview
+Here, you create an ARM template that defines a storage account resource. The template uses copy to create similar versions of the same resource a given number of times.
 
-Here's an overview of the steps you are about to carry out:
-
-> [!NOTE]
-> If you already have a working Sandbox where you've done steps 1-3, then there's no need to repeat them.
-
-1. **Sign in to Azure**. You will be able to sign in using Visual Studio Code and using the integrated terminal.
-
-1. **Set the active subscription**. This can be accomplished by invoking a Azure CLI command.
-
-1. **Set default resource group**. This can be accomplished by invoking a Azure CLI command. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
-
-1. **Carry out the deployment**. This step involves using the command **az deployment group create** with a URL to a template as an argument.
-
-## Deploy multiple resources of the same type
-
-Now that you have setup your subscription in the Visual Studio Code terminal, you are ready to deploy the ARM template to Azure.
-
-1. Create a file named *copy.json* and give it the following content:
+1. In Visual Studio Code, create a file named *copy.json* in the same directory that contains *azuredeploy.json*.
+1. Add these contents to *copy.json*:
 
     ```json
     {
@@ -44,42 +28,60 @@ Now that you have setup your subscription in the Visual Studio Code terminal, yo
       "functions": [],
       "variables": {},
       "resources": [
-      {
-        "name": "[concat(parameters('storageAccountName'), copyIndex())]",
-        "type": "Microsoft.Storage/storageAccounts",
-        "apiVersion": "2019-06-01",
-        "tags": {
-          "displayName": "storageaccount1"
-        },
-        "location": "[resourceGroup().location]",
-        "kind": "StorageV2",
-        "sku": {
-          "name": "Premium_LRS",
-          "tier": "Premium"
-        },
-        "copy": {
-          "name": "storagecopy",
-          "count": "[parameters('storageCount')]"
+        {
+          "name": "[concat(parameters('storageAccountName'), copyIndex())]",
+          "type": "Microsoft.Storage/storageAccounts",
+          "apiVersion": "2019-06-01",
+          "tags": {
+            "displayName": "storageaccount1"
+          },
+          "location": "[resourceGroup().location]",
+          "kind": "StorageV2",
+          "sku": {
+            "name": "Premium_LRS",
+            "tier": "Premium"
+          },
+          "copy": {
+            "name": "storagecopy",
+            "count": "[parameters('storageCount')]"
+          }
         }
-       }
-     ],
-     "outputs": {}
-   }
-   ```
+      ],
+      "outputs": {}
+    }
+    ```
 
-1. Run the command `az deployment group create`:
+The `storageCount` parameter defines the number of copies to create.
 
-   ```azurecli
-   az deployment group create \
-     --template-file "copy.json" \
-     --parameters storageAccountName=tailwindsa$RANDOM storageCount=2
-   ```
+Under `resources`, note the storage account resource. To make the storage account name unique, the template uses `copyIndex()` to append the current index to the storage account name.
+
+The `copy` section reads the number of copies to make from the `storageCount` parameter.
+
+## Deploy the template
+
+Here, you deploy the template as you did previously. The deployment step provisions two similar storage accounts.
+
+1. Create a Bash variable that holds the storage account name.
+
+    ```bash
+    STORAGE_ACCT_NAME=tailwindsa$RANDOM
+    ```
+
+1. Run the following `az deployment group create` command to deploy the template:
+
+    ```azurecli
+    az deployment group create \
+      --template-file copy.json \
+      --parameters storageAccountName=$STORAGE_ACCT_NAME storageCount=2
+    ```
+
+    Here, you set `storageCount` to 2 to provision two storage accounts.
 
 ## Verify the deployment
 
-Although the output shows the 
+Although the output shows that two storage accounts were created, here you run the `az deployment group show` command to focus on the output resources.
 
-1. BLAH
+1. Run the following `az deployment group show` command to display details about the deployment:
 
     ```azurecli
     az deployment group show \
@@ -88,17 +90,21 @@ Although the output shows the
       --output tsv
     ```
 
+    The `--query` argument specifies to show just the identifiers from the output resources.
+
+    Your output resembles this:
+
     ```output
     /subscriptions/4b328dc1-56b1-4031-89b0-c0898204f8a5/resourceGroups/<rgn>resource group name</rgn>/providers/Microsoft.Storage/storageAccounts/tailwindsa9820
     /subscriptions/4b328dc1-56b1-4031-89b0-c0898204f8a5/resourceGroups/<rgn>resource group name</rgn>/providers/Microsoft.Storage/storageAccounts/tailwindsa9821
     ```
-
-    By using the `copy` construct you've managed to create two instances of a storage account. The naming is a combination of the input parameter `storageAccountName` and the index of the loop.
 
     In this example:
 
     * **tailwindsa982** is the base name that was generated for the storage account (`tailwindsa$RANDOM`).
     * **tailwindsa9820** (the base name plus "0") is the first storage account.
     * **tailwindsa9821** (the base name plus "1") is the second storage account.
+
+Great work! As your needs change, such as the performance tier you need, you can modify your needs from a single location.
 
 [!include[](../../../../includes/azure-sandbox-cleanup.md)]

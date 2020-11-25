@@ -65,7 +65,7 @@ From the above expression, you can see that the value of the `name` property has
 There are limits to how much can be copied. Currently the limit is at 800 entries.
 
 > [!IMPORTANT]
-> Be sure to check this [Copy element page](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/copy-resources) to know the exact limitations.
+> Be sure to check this [Copy element page](https://docs.microsoft.com/azure/azure-resource-manager/templates/copy-resources) to know the exact limitations.
 
 ## Controlling the iteration
 

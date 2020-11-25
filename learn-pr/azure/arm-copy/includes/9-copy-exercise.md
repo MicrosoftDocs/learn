@@ -1,4 +1,6 @@
-You're part of a development team at the company Tailwind Traders. You want to ensure your deployment template are as efficient as possible. Part of that work means identifying parts of your template that has repeating parts and reduce that if possible. 
+In this final exercise, you continue to work with storage accounts. This time, you use copy to provision multiple storage accounts from a single definition.
+
+The copy construct gives you a single, central location that you need to update when your requirements change.
 
 ::: zone pivot="powershell"
 
