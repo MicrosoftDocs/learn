@@ -10,19 +10,17 @@ The in-memory state is the information that the application doesn't need to look
 
 ### Types of states
 
-There are two types of application states. The first type is the *ephemeral state*, which is the state that isn't persistent and will vanish as soon as the application is closed.
+There are two types of application states. The first type is the *ephemeral state*, which isn't persistent and will vanish as soon as the application is closed.
 
 Containers have an ephemeral state because all the data that's stored within their bounds is instantly lost when a container is deleted. Some applications can work with that alone, because they can regenerate the state from other sources and don't need the state to be stored locally. Those applications are called *:::no-loc text="stateless"::: applications*.
 
-In contrast, all the state that isn't ephemeral is called *persistent state*. It continues to exist after the life cycle of a container. Most container technologies that we use (like Docker) have the concept of *volume*, an in-disk location where the state exists.
-
-So, even if you remove the container and then turn it back on, the state remains stored in a safe location and can be used once again.
+In contrast, all the state that isn't ephemeral is called *persistent state*. It continues to exist after the life cycle of a container. Most container technologies that we use (like Docker) have the concept of *volume*, an in-disk location where the state exists. So, even if you remove the container and then turn it back on, the state remains stored in a safe location and can be used once again.
 
 Applications that rely on an external state to be retrieved are called *:::no-loc text="stateful"::: applications*.
 
 ## States and Kubernetes
 
-Kubernetes also has ways to deal both with stateless and stateful applications. Dealing with stateless apps is easier because we can focus only on the application itself and not on its state (which doesn't exist).
+Kubernetes has ways to deal both with stateless and stateful applications. Dealing with stateless apps is easier because we can focus only on the application itself and not on its state (which doesn't exist).
 
 For most stateless applications, a simple deployment workload with a pod would be enough for you to have a fully functioning system and to make the most of your cluster.
 
@@ -37,11 +35,11 @@ This is why Kubernetes also has the concept of *:::no-loc text="PersistentVolume
 
 You can use `PersistentVolumeClaims` to bind a `PersistentVolume` with a pod and use its space to store the needed data.
 
-All database providers are stateful applications. If you're deploying one in your cluster, you'll need a PV and a PVC to store the database data in a safe spot and allow it to retrieve that data even if its containers were deleted.
+All database providers are stateful applications. If you're deploying a database provider in your cluster, you'll need a PV and a PVC to store the database data in a safe spot and allow the provider to retrieve that data even if its containers were deleted.
 
 ## Best practices for state handling
 
-State is present in the vast majority of applications. However, the best practice that we can have when dealing with state is to not deal with the state at all.
+State is present in the vast majority of applications. However, a best practice for handling state is to not deal with it at all.
 
 You design any efficient application with the goal of making it highly available and scalable. State goes in the opposite direction. Despite the offers of storage providers and the ease of deployment and use, state doesn't scale easily. It's not highly available either.
 
@@ -63,4 +61,4 @@ On every database change, the state needs to be synchronized so that all disks c
 
 To solve both of these problems, Azure has platform as a service (PaaS) solutions like Azure Cosmos DB. These solutions are both highly available and scalable, solving most of the state management problems for us.
 
-Storing state externally and removing the need for maintenance help you to focus on the application and reduce the overhead of dealing with data integrity in your infrastructure.
+Storing state externally and removing the need for maintenance can help you to focus on the application and reduce the overhead of dealing with data integrity in your infrastructure.

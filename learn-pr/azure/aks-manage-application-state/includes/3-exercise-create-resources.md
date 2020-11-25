@@ -1,10 +1,10 @@
-Now that we understand the basic concepts of external states and how to deal with them by using Kubernetes, let's create the resources that will support the application and then create the application itself.
+Now that you understand the basic concepts of external states and how to deal with them by using Kubernetes, let's create the resources that will support the application and then create the application itself.
 
 ## Create the state
 
 As we discussed earlier, handling state in Kubernetes is possible. However, we don't recommend it because managing a highly available application state gets too difficult when you need to manage the state yourself.
 
-To solve that problem, we'll externalize the state to an application that's specialized in dealing with external state. We'll use Azure Cosmos DB.
+To solve that problem, we'll externalize the state to an application that specializes in dealing with external state. We'll use Azure Cosmos DB.
 
 > [!NOTE]
 > Although we're creating an Azure Cosmos DB instance as part of the required resources to run the application, Azure Kubernetes Service (AKS) and Azure Cosmos DB are *not* related to one another.
@@ -40,7 +40,7 @@ To create a new Azure Cosmos DB instance, we'll use the Azure CLI. You can insta
 
     The creation process can take a few moments to complete.
 
-1. Check if the creation has been completed by creating a new database and listing it:
+1. Check if the creation has finished by creating a new database and listing it:
 
     ```azurecli-interactive
     az cosmosdb mongodb database create --account-name $COSMOSDB_ACCOUNT_NAME --resource-group $RESOURCE_GROUP --name contoso-ship-manager
@@ -105,10 +105,10 @@ To create the application, you'll need to create the YAML files that will be dep
 
 ### Deploy the back-end API
 
-You need to create three main files. Let's start by creating the *deploy.yaml* file for the back end:
+You need to create three main files. Let's start by creating the *deploy.yaml* file for the back end.
 
 1. Create a new file called *backend-deploy.yaml*, and then open it in your favorite editor.
-1. In this file, you'll write the following deployment spec:
+1. In this file, you'll write the following deployment specification:
 
     ```yml
     apiVersion: apps/v1
@@ -282,8 +282,8 @@ You can check the status of the DNS zone by going to the Azure portal, entering 
 
 To create the front-end interface, you'll do a similar process:
 
-1. First, create a new file called *frontend-deploy.yaml*.
-1. Open this file in your favorite editor and paste the following spec:
+1. Create a new file called *frontend-deploy.yaml*.
+1. Open this file in your favorite editor and paste the following specification:
 
     ```yml
     apiVersion: apps/v1
