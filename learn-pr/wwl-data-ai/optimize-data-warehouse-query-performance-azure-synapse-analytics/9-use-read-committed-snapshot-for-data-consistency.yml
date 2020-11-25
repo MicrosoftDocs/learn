@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.use-read-committed-snapshot-for-data-consistency
-title: Use Read committed snapshot for data consistency
+title: Use read committed snapshot for data consistency
 metadata:
-  title: Use Read committed snapshot for data consistency
-  description: "Use Read committed snapshot for data consistency"
+  title: Use read committed snapshot for data consistency
+  description: "Use read committed snapshot for data consistency"
   ms.date: 11/25/2020
   author: wwlpublish
   ms.author: chtestao
