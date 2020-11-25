@@ -98,6 +98,6 @@ Any additional drives you create from scratch will need to be initialized and fo
 
 1. Open File Explorer and you should now see your data drive.
 
-1. Go ahead and close the RDP client to sign out of the VM. The server will continue to run.
+1. Go ahead and close the RDP client to disconnect from the VM. The server will continue to run.
 
 RDP allows you to work with the Azure VM just like a local computer. With Desktop UI access, you can administer this VM as you would any Windows computer: installing software, configuring roles, adjusting features and other common tasks. However, it's a manual process - if we always need to install some software, you might consider automating the process using scripting.
