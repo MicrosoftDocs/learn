@@ -101,4 +101,4 @@ Although the output shows the
     * **tailwindsa9820** (the base name plus "0") is the first storage account.
     * **tailwindsa9821** (the base name plus "1") is the second storage account.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+[!include[](../../../../includes/azure-sandbox-cleanup.md)]
