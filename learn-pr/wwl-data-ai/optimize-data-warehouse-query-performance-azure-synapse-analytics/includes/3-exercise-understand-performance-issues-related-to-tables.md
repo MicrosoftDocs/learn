@@ -1,8 +1,8 @@
 ## Identify performance issues related to tables
 
 1. Select the **Develop** hub.
-
-    ![The develop hub is highlighted.](../media/develop-hub.png "Develop hub")
+    > [!div class="mx-imgBorder"]  
+    > ![The develop hub is highlighted.](../media/develop-hub.png "Develop hub")
 
 2. From the **Develop** menu, select the **+** button **(1)** and choose **SQL Script (2)** from the context menu.
 
@@ -70,8 +70,8 @@
     >```
 
 8. Select the **Data** hub.
-
-    ![The data hub is highlighted.](../media/develop-hub.png "Data hub")
+    > [!div class="mx-imgBorder"]  
+    > ![The data hub is highlighted.](../media/develop-hub.png "Data hub")
 
 9. Expand the **SQLPool01** database and its list of **Tables (1)**. Right-click **`wwi_perf.Sale_Heap` (2)**, select **New SQL script (3)**, then select **CREATE (4)**.
 
@@ -115,7 +115,7 @@
     If we were to review the query plan in detail, we would clearly see the root cause of the performance problem: inter-distribution data movements.
 
     Data movement is an operation where parts of the distributed tables are moved to different nodes during query execution. This operation is required where the data is not available on the target node, most commonly when the tables do not share the distribution key. The most common data movement operation is shuffle. During shuffle, for each input row, Synapse computes a hash value using the join columns and then sends that row to the node that owns that hash value. Either one or both sides of join can participate in the shuffle. The diagram below displays shuffle to implement join between tables T1 and T2 where neither of the tables is distributed on the join column col2.
-
-    ![Shuffle move conceptual representation.](../media/shuffle-move.png "Shuffle move")
+    > [!div class="mx-imgBorder"]  
+    > ![Shuffle move conceptual representation.](../media/shuffle-move.png "Shuffle move")
 
     This is actually one of the simplest examples given the small size of the data that needs to be shuffled. You can imagine how much worse things become when the shuffled row size becomes larger.

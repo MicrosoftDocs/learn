@@ -1,8 +1,8 @@
 ## Create hash distribution table with a clustered columnstore index
 
 1. Select the **Develop** hub.
-
-    ![The develop hub is highlighted.](../media/develop-hub.png "Develop hub")
+    > [!div class="mx-imgBorder"]  
+    > ![The develop hub is highlighted.](../media/develop-hub.png "Develop hub")
 
 2. From the **Develop** menu, select the **+** button **(1)** and choose **SQL Script (2)** from the context menu.
 

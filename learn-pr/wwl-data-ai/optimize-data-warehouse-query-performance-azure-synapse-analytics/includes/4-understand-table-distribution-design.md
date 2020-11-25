@@ -9,8 +9,8 @@ There are three main table distributions available in Synapse Analytics SQL Pool
 Selecting the correct table distribution can have an impact on the data load and query performance as follows:
 
 ## Round robin distribution
- 
-![A round robin table distribution](../media/round-robin.png)
+> [!div class="mx-imgBorder"]  
+> ![A round robin table distribution](../media/round-robin.png)
 
 This is the default distribution created for a table and delivers fast performance when used for loading data.
 
@@ -21,8 +21,8 @@ It is quick to load data into a round-robin table, but query performance can oft
 Joins on round-robin tables may negatively affect query workloads, as data that is gathered for processing then has to be reshuffled to other compute nodes, which take additional time and processing.
 
 ## Hash distribution
- 
-![A hash table distribution](../media/hash-distribution.png)
+> [!div class="mx-imgBorder"]  
+> ![A hash table distribution](../media/hash-distribution.png)
 
 This distribution can deliver the highest query performance for joins and aggregations on large tables.
 
@@ -31,8 +31,8 @@ To shard data, a hash function is used to deterministically assign each row to a
 There are performance considerations for the selection of a distribution column, such as distinctness, data skew, and the types of queries that run on the system.
 
 ## Replicated tables
- 
-![A replicated table distribution](../media/replicated.png)
+> [!div class="mx-imgBorder"]  
+> ![A replicated table distribution](../media/replicated.png)
 
 A replicated table provides the fastest query performance for small tables.
 
