@@ -6,4 +6,4 @@ Since you have completed this module, you are now able to:
 * Load data into a spark dataframe
 * Create a spark table
 * Write data to and from a storage account
-* Flatten nested structures and explode arrays with apache spark
+* Flatten nested structures and explode arrays with Apache Spark

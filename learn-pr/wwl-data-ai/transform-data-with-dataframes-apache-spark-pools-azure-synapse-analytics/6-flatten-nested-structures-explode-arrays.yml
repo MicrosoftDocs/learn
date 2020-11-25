@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics.flatten-nested-structures-explode-arrays-with
-title: Flatten nested structures and explode arrays with apache spark
+title: Flatten nested structures and explode arrays with Apache Spark
 metadata:
-  title: Flatten nested structures and explode arrays with apache spark
-  description: "Flatten nested structures and explode arrays with apache spark"
+  title: Flatten nested structures and explode arrays with Apache Spark
+  description: "Flatten nested structures and explode arrays with Apache Spark"
   ms.date: 11/25/2020
   author: wwlpublish
   ms.author: kawaaije

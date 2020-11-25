@@ -25,7 +25,7 @@ In order to go through this exercise, it require a set-up with instructions that
 
     In the output, notice that we now have multiple rows for each `visitorId`.
 
-    ![The vistorId rows are highlighted.](../media/spark-toppurchases-output.png "topPurchases output")
+    ![The vistorId rows are highlighted.](../media/spark-top-purchases-output.png "topPurchases output")
 
 * Let's order the rows by the number of items purchased in the last 12 months. Create a new cell and execute the following code:
 
