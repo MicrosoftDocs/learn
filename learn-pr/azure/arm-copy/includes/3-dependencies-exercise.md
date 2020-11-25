@@ -1,4 +1,8 @@
-You're part of a development team at the company Tailwind Traders. You will from time to time need to deploy resources that are dependent on other resources to exist. Here you will deploy a common resource, a VM. A deployment template for a VM contains more resources than just the VM. Many of these resources _depend_ on the VM to exist.
+In this part, you start by performing a few basic setup tasks. In Visual Studio Code, you connect a terminal session to the Azure subscription that's provided by the free Azure sandbox environment. Doing so enables you to authenticate commands to Azure.
+
+Then, you run a basic ARM template that provisions a Linux virtual machine (VM). After the deployment completes, you verify that the VM is running and connectable.
+
+Although working with VMs is a common task, you discover that a VM resource requires networking and storage components that must exist before the VM can be created. You see how the _dependsOn_ construct enables you to set the order in which resources are provisioned.
 
 ::: zone pivot="powershell"
 

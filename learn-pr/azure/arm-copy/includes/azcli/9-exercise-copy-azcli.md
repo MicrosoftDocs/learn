@@ -17,51 +17,51 @@ Here's an overview of the steps you are about to carry out:
 
 ## Deploy multiple resources of the same type
 
-Now that you have setup your subscription in the Visual Studio Code (Visual Studio Code) terminal, you are ready to deploy the ARM template to Azure.
+Now that you have setup your subscription in the Visual Studio Code terminal, you are ready to deploy the ARM template to Azure.
 
-1. Create a file `copy.json` and give it the following content:
+1. Create a file named *copy.json* and give it the following content:
 
-   ```json
-   {
-     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-     "contentVersion": "1.0.0.0",
-     "parameters": {
-     "storageCount": {
-     "type": "int",
-       "defaultValue": 1,
-       "metadata": {
-       "description": "the number of storage accounts being deployed"
-     }
-    },
-    "storageAccountName": {
-      "type": "string",
-      "defaultValue": "storage",
-      "metadata": {
-        "description": "the name of the storage account"
-      }
-    }
-   },
-   "functions": [],
-   "variables": {},
-   "resources": [
+    ```json
     {
-      "name": "[concat(parameters('storageAccountName'), copyIndex())]",
-      "type": "Microsoft.Storage/storageAccounts",
-      "apiVersion": "2019-06-01",
-      "tags": {
-        "displayName": "storageaccount1"
+      "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "storageCount": {
+          "type": "int",
+          "defaultValue": 1,
+          "metadata": {
+            "description": "the number of storage accounts being deployed"
+          }
+        },
+        "storageAccountName": {
+          "type": "string",
+          "defaultValue": "storage",
+          "metadata": {
+            "description": "the name of the storage account"
+          }
+        }
       },
-      "location": "[resourceGroup().location]",
-      "kind": "StorageV2",
-      "sku": {
-        "name": "Premium_LRS",
-        "tier": "Premium"
-      },
-      "copy": {
-        "name": "storagecopy",
-        "count": "[parameters('storageCount')]"
-      }
-     }
+      "functions": [],
+      "variables": {},
+      "resources": [
+      {
+        "name": "[concat(parameters('storageAccountName'), copyIndex())]",
+        "type": "Microsoft.Storage/storageAccounts",
+        "apiVersion": "2019-06-01",
+        "tags": {
+          "displayName": "storageaccount1"
+        },
+        "location": "[resourceGroup().location]",
+        "kind": "StorageV2",
+        "sku": {
+          "name": "Premium_LRS",
+          "tier": "Premium"
+        },
+        "copy": {
+          "name": "storagecopy",
+          "count": "[parameters('storageCount')]"
+        }
+       }
      ],
      "outputs": {}
    }
@@ -70,91 +70,35 @@ Now that you have setup your subscription in the Visual Studio Code (Visual Stud
 1. Run the command `az deployment group create`:
 
    ```azurecli
-   az deployment group create --template-file "copy.json" \
-   --resource-group=<rgn>Sandbox resource group</rgn> \
-   --parameters storageAccountName={your chosen storage account name} storageCount=2
+   az deployment group create \
+     --template-file "copy.json" \
+     --parameters storageAccountName=tailwindsa$RANDOM storageCount=2
    ```
 
-   You will see an output similar to the below:
+## Verify the deployment
 
-   ```output
-    {- Finished ..
-      "id": "/subscriptions/11112222-3333-4444-5555-1111222233334444/resourceGroups/cambridge-resource-group/providers/Microsoft.Resources/deployments/copy",
-      "location": null,
-      "name": "copy",
-      "properties": {
-        "correlationId": "ac3d884d-7cb1-4ab6-8c05-447722c43c76",
-        "debugSetting": null,
-        "dependencies": [],
-        "duration": "PT23.4286888S",
-        "mode": "Incremental",
-        "onErrorDeployment": null,
-        "outputResources": [
-          {
-            "id": "/subscriptions/11112222-3333-4444-5555-1111222233334444/resourceGroups/cambridge-resource-group/providers/Microsoft.Storage/storageAccounts/{ your chosen storage account name }0",
-            "resourceGroup": "<rgn>sandbox storage account</rgn>"
-          },
-          {
-            "id": "/subscriptions/11112222-3333-4444-5555-1111222233334444/resourceGroups/cambridge-resource-group/providers/Microsoft.Storage/storageAccounts/{ your chosen storage account name }1",
-            "resourceGroup": "<rgn>sandbox storage account</rgn>"
-          }
-        ],
-        "outputs": {},
-        "parameters": {
-          "storageAccountName": {
-            "type": "String",
-            "value": "{your chosen storage account name}"
-          },
-          "storageCount": {
-            "type": "Int",
-            "value": 2
-          }
-        },
-        "parametersLink": null,
-        "providers": [
-          {
-            "id": null,
-            "namespace": "Microsoft.Storage",
-            "registrationPolicy": null,
-            "registrationState": null,
-            "resourceTypes": [
-              {
-                "aliases": null,
-                "apiVersions": null,
-                "capabilities": null,
-                "locations": [
-                  "northeurope"
-                ],
-                "properties": null,
-                "resourceType": "storageAccounts"
-              }
-            ]
-          }
-        ],
-        "provisioningState": "Succeeded",
-        "template": null,
-        "templateHash": "7860292668372410844",
-        "templateLink": null,
-        "timestamp": "2020-10-22T20:30:18.647980+00:00"
-      },
-      "resourceGroup": "cambridge-resource-group",
-      "type": "Microsoft.Resources/deployments"
-    }
+Although the output shows the 
+
+1. BLAH
+
+    ```azurecli
+    az deployment group show \
+      --name copy \
+      --query "properties.outputResources[].id" \
+      --output tsv
     ```
 
-    Part of the response above is of particular interest, namely this part:
-
     ```output
-    "outputResources": [
-      {
-        "id": "/subscriptions/11112222-3333-4444-5555-1111222233334444/resourceGroups/cambridge-resource-group/providers/Microsoft.Storage/storageAccounts/{your storageAccountName}0",
-        "resourceGroup": "<rgn>sandbox resource group</rgn>"
-      },
-      {
-        "id": "/subscriptions/11112222-3333-4444-5555-1111222233334444/resourceGroups/cambridge-resource-group/providers/Microsoft.Storage/storageAccounts/{your storage Account name}1",
-        "resourceGroup": "<rgn>sandbox resource group</rgn>"
-      }
-    ]
+    /subscriptions/4b328dc1-56b1-4031-89b0-c0898204f8a5/resourceGroups/<rgn>resource group name</rgn>/providers/Microsoft.Storage/storageAccounts/tailwindsa9820
+    /subscriptions/4b328dc1-56b1-4031-89b0-c0898204f8a5/resourceGroups/<rgn>resource group name</rgn>/providers/Microsoft.Storage/storageAccounts/tailwindsa9821
     ```
 
     By using the `copy` construct you've managed to create two instances of a storage account. The naming is a combination of the input parameter `storageAccountName` and the index of the loop.
+
+    In this example:
+
+    * **tailwindsa982** is the base name that was generated for the storage account (`tailwindsa$RANDOM`).
+    * **tailwindsa9820** (the base name plus "0") is the first storage account.
+    * **tailwindsa9821** (the base name plus "1") is the second storage account.
+
+[!include[](../../../includes/azure-sandbox-cleanup.md)]

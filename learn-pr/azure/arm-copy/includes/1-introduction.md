@@ -17,6 +17,6 @@ After completing this module, you'll be able to:
 
 - Familiarity with Azure, including the Azure portal, subscriptions, resource
 groups, and resource definitions.
-- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true).
+- Experience building and running basic ARM templates.
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
 - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.

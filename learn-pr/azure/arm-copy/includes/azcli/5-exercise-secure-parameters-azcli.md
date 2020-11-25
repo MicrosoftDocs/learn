@@ -1,103 +1,132 @@
-Here you will deploy a Key Vault, add a secret and then deploy a VM that reads a secret from said Key Vault.
+## Deploy Azure Key Vault
 
-## Exercise overview
+Create a Key Vault and add the VM password as a secure secret. To do so:
 
-Here's an overview of the steps you are about to carry out:
-
-> [!NOTE]
-> If you already have a working Sandbox where you've done steps 1-3, then there's no need to repeat them.
-
-1. **Sign in to Azure**. You will be able to sign in using Visual Studio Code and using the integrated terminal.
-
-2. **Set the active subscription**. This can be accomplished by invoking a Azure CLI command.
-
-3. **Set default resource group**. This can be accomplished by invoking a Azure CLI command. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
-
-4. **Carry out the deployment**. This step involves using the command **az deployment group create** with a URL to a template as an argument.
-
-## Deploy Key Vault
-
-You need to both deploy the Key Vault and once created you will need to add a secret.
-
-1. Run the command `az keyvault create`:
+1. Create a Bash variable that holds the Key Vault name.
 
     ```azurecli
     KVNAME=tailwind-secrets$RANDOM
+    ```
 
+    Key Vault names must be unique. The `$RANDOM` part ensures that the Key Vault name ends in a random series of numbers.
+
+1. Run the following `az keyvault create` command to create the Key Vault:
+
+    ```azurecli
     az keyvault create \
       --name $KVNAME \
       --enabled-for-template-deployment true
     ```
 
-    The above command will create a Key Vault. The usage of the flag `-EnabledForTemplateDeployment` ensures it the Key Vault can be read from, from an ARM template.
+    The `--enabled-for-template-deployment` argument permits the ARM template to retrieve secrets from the key vault.
 
-1. Run the command `az keyvault secret set`:
-
-   ```azurecli
-   export secretPlainText=abc123!
-   export secretName=vmPassword
-
-   az keyvault secret set --vault-name $vaultName --name $secretName --value $secretPlainText
-   ```
-
-   The above command ensures the plain text password is converted to a secure string. Thereafter the name of the secret and the now encoded secret value  is being added to the Key Vault you've just created.
-
-   Everything should be set up at this point so you can deploy the VM next.  
-
-## Deploy a VM and set password based on a Key Vault secret
-
-1. Run `wget` to fetch the following ARM template:
-
-   ```bash
-   wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json
-   ```
-
-   and store it locally as a file `vmdeploy.json`.
-
-1. Run the command `az keyvault show`:
+1. Run the following `az keyvault secret set` command to create a secret in the key vault named *vmPassword* with the value "insecurepassword123!":
 
    ```azurecli
-   az keyvault show --name $vaultName
+   az keyvault secret set \
+     --vault-name $KVNAME \
+     --name vmPassword \
+     --value 'insecurepassword123!'
    ```
 
-   Make a note of the value from the field `Resource ID`. You will need this value to modify the file `vmdeploy.json`.
+## Create the parameter file
 
-1. Run `wget` to store the following parameters file:
+Here, you create a parameter file that contains the VM's name, the administrator username, and a reference to the VM password in the key vault.
 
-   `wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.parameters.json`
+Recall that a parameter file is an alternative way to pass parameters to your ARM template during deployment.
 
-   name it `vmdeploy.parameters.json`
+1. Run the following `az keyvault show` command to print your key vault ID:
 
-1. Locate the parameters section in `vmdeploy.parameters.json` and the `adminPassword` parameter. Replace it's content with the following text:
+    ```azurecli
+    az keyvault show \
+      --name $KVNAME \
+      --query id \
+      --output tsv
+    ```
 
-   ```json
-   "adminPassword": {
-     "reference": {
-        "keyVault": {
-        "id": "/subscriptions/<SubscriptionID>/resourceGroups/mykeyvaultdeploymentrg/providers/Microsoft.KeyVault/vaults/<KeyVaultName>"
+    The output resembles this:
+
+    ```output
+    /subscriptions/7c7df858-93a0-4f38-8990-304c836a4e8d/resourceGroups/<rgn>[resource group name]</rgn>/providers/Microsoft.KeyVault/vaults/tailwind-secrets3020
+    ```
+
+    Note the output for the next step.
+
+1. In Visual Studio Code, create a file named *azuredeploy.parameters.json* in the same directory that contains *azuredeploy.json*.
+1. Add these contents to *azuredeploy.parameters.json*:
+
+    ```json
+    {
+      "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "adminUsername": {
+          "value": "azureuser"
         },
-        "secretName": "vmPassword"
-     }
-   }
-   ```
+        "vmName": {
+          "value": "vm2"
+        },
+        "adminPasswordOrKey": {
+          "reference": {
+             "keyVault": {
+             "id": ""
+             },
+             "secretName": "vmPassword"
+          }
+        }
+      }
+    }
+    ```
 
-   The `id` parameter's value needs to be replaced with the `Resource ID` of the Key Vault you were asked to note down.
+1. Replace the value of `id` with the value you copied in the previous step. Then save the file.
 
-1. Run the command `az deployment group create`:
+## Deploy a Linux VM
 
-   ```azurecli
-   az deployment group create \
-      --resource-group <rgn>resource group name</rgn> \
-      --template-file "./vmdeploy.json" \
-      --parameters "./vmdeploy.parameters.json"
-   ```
+Here, you deploy the same ARM template that you deployed in the previous exercise. This time, you provide the parameter file that references the VM password in the key vault.
 
-### Verify deployment
+Run the following `az deployment group create` command to deploy the template:
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-1. Select **Resource groups** > **\<rgn>your resource group\</rgn>** > **simple-vm**.
-1. Select **Connect** at the top.
+```azurecli
+az deployment group create \
+  --template-file azuredeploy.json \
+  --parameters @azuredeploy.parameters.json dnsLabelPrefix="vm2-$RANDOM"
+```
 
-1. Select **Download RDP File**, and then follow the instructions to sign in to the virtual machine by using the password that's stored in the key vault.
+In the previous exercise, you provided each key-value pair in the `--parameters` argument. Here, you specify `@azuredeploy.parameters.json` to provide your parameters file.
 
-Congratulations, you've managed to deploy an Azure Key Vault. Additionally you've managed to create a VM while reading from the Azure Key Vault.
+The `dnsLabelPrefix` is set to "vm2-" followed by a random number. This is required to ensure that the DNS name differs from the DNS name you used in the previous exercise.
+
+## Verify the deployment
+
+As you did in the previous exercise, verify that the VM is provisioned and is connectable over SSH. For brevity, this time you'll skip some of the intermediary steps.
+
+1. Run the following to connect to your VM over SSH:
+
+    ```azurecli
+    $(az deployment group show \
+      --name azuredeploy \
+      --query properties.outputs.sshCommand.value \
+      --output tsv)
+    ```
+
+    When prompted, enter *yes* to continue connecting. Then enter the administrator password "insecurepassword123!".
+
+1. From your SSH connection to the VM, run `hostname` to print the VM's hostname:
+
+    ```bash
+    hostname
+    ```
+
+    You see the VM's internal hostname, *vm2*:
+
+    ```output
+    vm2
+    ```
+
+1. Run `exit` to leave your SSH session.
+
+    ```bash
+    exit
+    ```
+
+Nice work! You've extended your deployment to include a parameters file that reads secret information from Key Vault.

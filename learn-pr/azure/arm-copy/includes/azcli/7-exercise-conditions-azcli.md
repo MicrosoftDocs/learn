@@ -17,7 +17,7 @@ Here's an overview of the steps you are about to carry out:
 
 ## Conditionally deploy a resource
 
-Now that you have setup your subscription in the Visual Studio Code (Visual Studio Code) terminal, you are ready to deploy the ARM template to Azure. The ARM template doesn't have any resources yet, so you won't see any resources being created. However, you'll see a successful deployment.
+Now that you have setup your subscription in the Visual Studio Code terminal, you are ready to deploy the ARM template to Azure. The ARM template doesn't have any resources yet, so you won't see any resources being created. However, you'll see a successful deployment.
 
 1. Create a file `conditionally-deploy.json` and give it the following content:
 
@@ -74,75 +74,50 @@ Now that you have setup your subscription in the Visual Studio Code (Visual Stud
 
    ```azurecli
    az deployment group create \
-      --template-uri "conditionally-deploy.json" \
-      --parameters storageAccountName={type a name environment=staging
+      --template-file "./conditionally-deploy.json" \
+      --parameters storageAccountName="tailwindsa$RANDOM" environment="staging"
    ```
-
-   The terminal output will show ```Running...```. When that finishes, the results of the above command will be something similar to the below output:
-
-   ```output
-   {
-      "id": "/subscriptions/00000000-1111-2222-333-4444444444444/resourceGroups/learn-2c05151d-0776-4ba4-b522-2543d030b66c/providers/Microsoft.Resources/deployments/conditional-deployment",
-      "location": null,
-      "name": "what-if-before",
-      "properties": {
-        "correlationId": "26078ea9-518b-43f7-923c-dd8cbf7d1f0e",
-        "debugSetting": null,
-        "dependencies": [],
-        "duration": "PT10.5969509S",
-        "mode": "Incremental",
-        "onErrorDeployment": null,
-            "id": "/subscriptions/00000000-1111-2222-3333-444455556666777/resourceGroups/learn-2c05151d-0776-4ba4-b522-2543d030b66c/providers/Microsoft.Network/virtualNetworks/vnet-001",
-            "resourceGroup": "learn-2c05151d-0776-4ba4-b522-2543d030b66c"
-          }
-        ],
-        "outputs": null,
-        "parameters": {},
-        "parametersLink": null,
-        "providers": [
-          {
-            "id": null,
-            "namespace": "Microsoft.Network",
-            "registrationPolicy": null,
-            "registrationState": null,
-            "resourceTypes": [
-              {
-                "aliases": null,
-                "apiVersions": null,
-                "capabilities": null,
-                "locations": [
-                  "westus"
-                ],
-                "properties": null,
-                "resourceType": "virtualNetworks"
-              }
-            ]
-          }
-        ],
-        "provisioningState": "Succeeded",
-        "template": null,
-        "templateHash": "1122925147183376254",
-        "templateLink": {
-          "contentVersion": "1.0.0.0",
-          "uri": "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json"
-        },
-        "timestamp": "2020-08-18T17:21:40.064344+00:00"
-      },
-      "resourceGroup": "learn-2c05151d-0776-4ba4-b522-2543d030b66c",
-      "type": "Microsoft.Resources/deployments"
-   }
-   ```
-
-  The above output says the deployment succeeded, but was the resource deployed? Let's verify what actually took place next.
 
 ## Verify the deployment
 
-After the deployment has finished you will verify that the `condition` construct has worked as intended. You passed the value `staging` to the `environment` parameter and based on how you formulated the `condition` construct, the resource should not have been deployed.  Let's verify that everything has worked as intended.
+After the deployment has finished you will verify that the `condition` construct has worked as intended. You passed the value `staging` to the `environment` parameter and based on how you formulated the `condition` construct, the resource should not have been deployed. Let's verify that everything has worked as intended.
+
+1. BLAH
+
+    ```azurecli
+    az deployment group list --output table
+    ```
+
+1. BLAH
+
+    ```azurecli
+    az deployment group show \
+      --name conditionally-deploy
+    ```
+
+1. BLAH
+
+    ```azurecli
+    STORAGE_ACCT_NAME=$(az deployment group show \
+      --name conditionally-deploy \
+      --query "properties.parameters.storageAccountName.value" \
+      --output tsv)
+    ```
+
+1. BLAH
+
+    ```azurecli
+    echo $STORAGE_ACCT_NAME
+    ```
+
+    ```output
+    tailwindsa32115
+    ```
 
 1. Run the command `az storage account check-name`
 
    ```azurecli
-    az storage account check-name --name {chosen name for storage account}
+   az storage account check-name --name $STORAGE_ACCT_NAME
    ```
 
    ```output
@@ -157,7 +132,7 @@ After the deployment has finished you will verify that the `condition` construct
 
 ## Deploy the resource
 
-To deploy the resource you need to pass a parameter value to the `environment` variable that ensures the `condition` construct evaluates to true. Let's quickly look at the `condition` construct and remind ourselves what it looks like:
+To deploy the resource, you need to pass a parameter value to the `environment` variable that ensures the `condition` construct evaluates to true. Let's quickly look at the `condition` construct and remind ourselves what it looks like:
 
 ```json
 "condition": "[equals(parameters('environment'),'production')]"
@@ -167,25 +142,27 @@ Based on the statement above, it needs you to pass the value `production`. Let's
 
 1. Run `az deployment group create` to deploy the template:
 
-   ```azurecli
-   az deployment group create \
-      --template-uri "conditionally-deploy.json"
-      --storageAccountName={type a name}
-      --environment=prod
-   ```
+    ```azurecli
+    az deployment group create \
+      --template-file "./conditionally-deploy.json" \
+      --parameters storageAccountName="$STORAGE_ACCT_NAME" environment="production"
+    ```
+
+## Verify the deployment again
 
 1. Run the command `az storage account check-name`
 
-   ```azurecli
-    az storage account check-name --name {chosen name for storage account}
-   ```
+    ```azurecli
+    az storage account check-name --name $STORAGE_ACCT_NAME
+    ```
 
-   This time around you will get a different output. Instead of an error message it indicates that the storage account name is taken, because the reason was created this time:
+   This time around you get different output. Instead of an error message, it indicates that the storage account name is taken, because the reason was created this time:
 
    ```output
    {
-     "message": "The storage account named {name of your storage account} is already taken.",
+     "message": "The storage account named tailwindsa15817 is already taken.",
      "nameAvailable": false,
      "reason": "AlreadyExists"
    }
    ```
+

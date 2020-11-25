@@ -1,24 +1,21 @@
 ## Prerequisites
 
-- **Install Visual Studio Code extension**. This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools?azure-portal=true). Be sure to install this extension in Visual Studio Code.
+Make sure that you have the following software installed in your development environment before you proceed:
 
-- **Install latest Azure CLI**. To use what-if in Azure CLI, you must have Azure CLI 2.5.0 or later. If needed, [install the latest version of Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true).
+- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+- [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools?azure-portal=true)
+- The [latest version of Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true)
 
-## Exercise overview
+## Setup
 
-Here's an overview of the steps you are about to carry out:
+Here, you open Visual Studio Code, create a terminal session, and connect to the Azure subscription that's provided by the free Azure sandbox environment.
 
-- **Sign in to Azure**. You will be able to sign in using Visual Studio Code and using the integrated terminal.
-- **Set the active subscription**. This can be accomplished by invoking a Azure CLI command.
-- **Set default resource group**. This can be accomplished by invoking a Azure CLI command. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
-- **Carry out the deployment**. This step involves using the command **az deployment group create** with a URL to a template as an argument.
+You need to perform these setup tasks one time during this module. You can refer back to these steps if you sign out or become disconnected in a later exercise.
 
-## Sign in to Azure
+### Sign in to Azure
 
-You can sign into your Azure account from either the terminal (running `az login`), or from Visual Studio Code, using the built-in terminal. Below instruction shows how to sign in using the Visual Studio Code.
-
-1. In Visual Studio Code, open up the command palette, select **Terminal: Create New Integrated Terminal**.
-
+1. Open Visual Studio Code.
+1. On the **Terminal** menu, select **New Terminal**.
 1. From the terminal, run `az login`:
 
     ```azurecli
@@ -27,106 +24,145 @@ You can sign into your Azure account from either the terminal (running `az login
 
     A browser window appears.
 
-1. Select an appropriate user in the browser and close browser window when prompted.
+1. Select the user that you used to activate the sandbox and close the browser window when prompted.
 
-   Once you are logged in, you see a list, in JSON format. The list contains subscriptions associated with this account in the terminal, if you activated the sandbox.
+### Set the active subscription
 
-## Set the active subscription
-
-Run `az account set` to set a specific subscription as active:
+Run the following `az account set` command to set the Azure sandbox environment as your active subscription:
 
 ```azurecli
 az account set -s "Concierge Subscription"
 ```
 
-This will set the active subscription to that of the *Concierge Subscription*.
-
 > [!NOTE]
-> If the command fails, run `az account list --refresh --all` and then rerun the command
+> If the command fails, run `az account list --refresh --all` and then rerun the `az account set` command.
 
-## Set the default resource group
+### Set the default resource group
 
-You now need to set the resource group created for you in the sandbox as the default resource group.
+Normally, when you run an Azure CLI command, you need to specify a resource group.
 
-Run `az configure` to set the default name.
+The sandbox provides a default resource group for you. To make the Azure CLI commands that follow easier to run, here you set the default resource group.
+
+Run the following `az configure` command to set the default resource group:
 
 ```azurecli
 az configure --defaults group=<rgn>resource group name</rgn>
 ```
 
-> [!NOTE]
-> Normally, when you use an Azure CLI command, you need to specify a resource group. You are bypassing this requirement by setting the context of your deployment, using **az configure**.
+## What's in a typical VM deployment?
 
-## Deploy a VM with dependencies
+When you deploy a VM, keep in mind that there are several resources that need to be deployed along with it in order for the VM to work.
 
-When you deploy a virtual machine, you should be aware that is has quite a few resources that needs to be deployed with it for it to work, it's not just a virtual machine resource.
+Here's a brief summary of the types of resources that typically need to be deployed along with a VM:
 
-The following resource types needs to be deployed as you deploy a VM:
-
-- **Microsoft.Storage/storageAccounts**. You will need a storage account.
-
-- **Microsoft.Network/publicIPAddresses**. Your VM will need a public IP.
-
+- **Microsoft.Storage/storageAccounts**. A storage account provides disk space for the OS and files.
+- **Microsoft.Network/publicIPAddresses**. A public IP address enables you to connect to the VM from the internet.
 - **Microsoft.Network/networkSecurityGroups**. A network security group contains rules for handling inbound and outbound traffic to your virtual network.
+- **Microsoft.Network/virtualNetworks**. Your VM needs to be placed in a virtual network. This resource requires the network security group to be deployed before it.
+- **Microsoft.Network/networkInterfaces**. This resource depends on two other resources: the public IP address and the virtual network.
+- **Microsoft.Compute/virtualMachines**. The virtual machine is the primary resource you want to deploy. It's dependent on two different resources: the storage account and the network interfaces.
 
-- **Microsoft.Network/virtualNetworks**. Your VM needs to be placed in a virtual network. This resource has a dependency. It expects the network security group to be deployed before it.
+## Deploy a Linux VM
 
-- **Microsoft.Network/networkInterfaces**. This resource depends on two other resources public IP addresses and virtual networks.
+Here, you download an ARM template from a GitHub repository that we provide for you. The template provisions a Linux VM and all of the resources necessary to run it.
 
-- **Microsoft.Compute/virtualMachines**. This is the primary resource you are looking to deploy. It in turn is dependent on two different resources namely a storage account and network interfaces.
-
-Fortunately there's a template you can grab off the Internet that contains all the above resources needed to deploy a VM.
-
-1. Run `wget` to grab the Azure template file:
+1. Run the following `wget` command to download the ARM template:
 
     ```bash
     wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json
     ```
 
-    and save it to a local file `azuredeploy.json`
+    If you don't have `wget` installed, you can run this `curl` command:
 
-1. Run the command `az deployment group create`:
+    ```bash
+    curl https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json > azuredeploy.json
+    ```
+
+1. Run the `az deployment group create` command to deploy the template:
 
     ```azurecli
     az deployment group create \
-      --template-file './azuredeploy.json' \
-      --parameters adminUsername='azureuser' vmName='vm1' adminPasswordOrKey='abc123!'
+      --template-file azuredeploy.json \
+      --parameters adminUsername=azureuser vmName=vm1 adminPasswordOrKey='insecurepassword123!'
     ```
 
-### Verify the deployment
+    The command can take a few minutes to run. While the command runs, you can [examine the Bash script](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json?azure-portal=true) from a separate browser tab if you'd like.
 
-```azurecli
-az deployment group list --output table
-```
+    Note the resource dependencies by searching for the `dependsOn` key. For example, the virtual machine resource depends on the network interface:
 
-```output
-Name         ResourceGroup                               State      Timestamp                         Mode
------------  ------------------------------------------  ---------  --------------------------------  -----------
-azuredeploy  learn-1ef901aa-3f6a-46aa-8e93-a7f11e5192b8  Succeeded  2020-11-24T17:55:39.762517+00:00  Incremental
-```
+    ```json
+    "type": "Microsoft.Compute/virtualMachines",
+    "apiVersion": "2020-06-01",
+    "name": "[parameters('vmName')]",
+    "location": "[parameters('location')]",
+    "dependsOn": [
+      "[resourceId('Microsoft.Network/networkInterfaces/', variables('networkInterfaceName'))]"
+    ],
+    ```
 
-```azurecli
-az deployment group show \
-  --name azuredeploy \
-  --query properties.outputs.sshCommand.value \
-  --output tsv
-```
+## Verify the deployment
 
-```output
-ssh azureuser@simplelinuxvm-a33zb3sc332ue.westus.cloudapp.azure.com
-```
+Verify that the VM is provisioned and is connectable over SSH. To do so:
 
-```azurecli
-$(az deployment group show \
-  --name azuredeploy \
-  --query properties.outputs.sshCommand.value \
-  --output tsv)
-```
+1. Run the following `az deployment group list` command to list the deployment groups in your subscription:
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-1. Select **Resource groups** > **<rgn>your resource group</rgn>** > **{what you named the VM}**.
-1. Select **Connect** at the top.
+    ```azurecli
+    az deployment group list --output table
+    ```
 
-1. Select **Download RDP File**, and then follow the instructions to sign in to the virtual machine by using the password that you've entered when deploying.
+    You see one deployment group, named *azuredeploy*:
 
-Congratulations, you've managed to deploy a VM containing dependencies.
+    ```output
+    Name         ResourceGroup                               State      Timestamp                         Mode
+    -----------  ------------------------------------------  ---------  --------------------------------  -----------
+    azuredeploy  learn-1ef901aa-3f6a-46aa-8e93-a7f11e5192b8  Succeeded  2020-11-24T17:55:39.762517+00:00  Incremental
+    ```
+
+1. Run the following `az deployment group show` command to show the SSH command you can use to connect to the VM:
+
+    ```azurecli
+    az deployment group show \
+      --name azuredeploy \
+      --query properties.outputs.sshCommand.value \
+      --output tsv
+    ```
+
+    The ARM template defines this property in the `output` section. Here's an example:
+
+    ```output
+    ssh azureuser@simplelinuxvm-a33zb3sc332ue.westus.cloudapp.azure.com
+    ```
+
+1. Run the command again, this time using the `$()` syntax to execute the SSH command:
+
+    ```azurecli
+    $(az deployment group show \
+      --name azuredeploy \
+      --query properties.outputs.sshCommand.value \
+      --output tsv)
+    ```
+
+    When prompted, enter *yes* to continue connecting. Then enter the administrator password "insecurepassword123!".
+
+    > [!IMPORTANT]
+    > In practice, keep passwords safe. Or use public key authentication, which is typically more secure than using passwords.
+
+1. From your SSH connection to the VM, run `hostname` to print the VM's hostname:
+
+    ```bash
+    hostname
+    ```
+
+    You see the VM's internal hostname, *vm1*:
+
+    ```output
+    vm1
+    ```
+
+1. Run `exit` to leave your SSH session.
+
+    ```bash
+    exit
+    ```
+
+Congratulations, you've successfully deployed a Linux VM by using an ARM template. A VM is a common resource type that includes dependent resources.

@@ -36,7 +36,7 @@ You need to both deploy the Key Vault and once created you will need to add a se
 1. Run the command `Set-AzKeyVaultSecret`
 
    ```powershell
-   $secretPlainText = abc123!
+   $secretPlainText = 'insecurepassword123!'
    $secretName = vmPassword
 
    $secretSecureString = ConvertTo-SecureString $secretPlainText -AsPlainText -Force
