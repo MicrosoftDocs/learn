@@ -23,14 +23,14 @@ Before you submit your pull request, check the sidebar for ways to complete your
 
 Optionally you can *link issues* in the sidebar as well, where successfully merging a pull request may close the corresponding issue. And you can customize your subscription to *notifications* on the thread - some PRs receive a lot of comments, reviews, and CI/CD related notifications. You can chose between:
 
-- Not subscribed, and only receive notifications when you have participated or have been @mentioned.
+- Not subscribed, and only receive notifications when you have participated or have been `@mentioned`.
 - Subscribed, and receive all notifications for this pull request.
 - Custom, and only be notified for the events you select
 
 ## Exercise
 
-With the lessons from the previous module and the above in mind, now go back to a pull request you opened recently (or: navigate to the pull requests tab of a project you're watching), and find out how a good subject line can make all the difference. Consider updating a pull request accordingly.
+Using the [First Contributions](https://github.com/firstcontributions/first-contributions?azure-portal=true) project practice forking, cloning, and ultimately submitting a pull request. The First Contributions project aims to "guide the way beginners make their first contribution", and has guides for both using the command line, as well as several GUIs (Graphical User Interfaces). The project also has support for several languages, make sure to check their `Translations` folder. 
 
-Put roughly as much time in writing your PR as you did making the change to the project, so to help the maintainer(s) to triage (categorize and prioritize) community contributions.
+With the lessons from the previous module and the above in mind, now go back to a pull request you opened recently (or: navigate to the pull requests tab of a project you're watching), and find out how a good subject line can make all the difference. Consider updating a pull request accordingly. Put roughly as much time in writing your PR as you did making the change to the project, so to help the maintainer(s) to triage (categorize and prioritize) community contributions.
 
 **Bonus:** check Microsoft's Accessibility Guidelines and Requirements, and in particular the bit about ["describing interactions with UI"](https://docs.microsoft.com/style-guide/procedures-instructions/describing-interactions-with-ui), to avoid ableist language in your Docs contributions. Customers interact with products using different input methods: keyboard, mouse, touch, voice, and more. You will want to use generic verbs that work with any input method, for instance "select" instead of the input-specific "click" or "swipe".
