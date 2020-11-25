@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.arm-copy
+uid: learn.manage-deployments-advanced-arm-template-features
 metadata:
   description: Use advanced constructs in Azure Resource Manager to manage complex scenarios such as deployment order, conditional deployments and secrets. 
   ms.date: 11/04/2020
@@ -33,16 +33,16 @@ prerequisites: |
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
   - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.
 units:
-  - learn.arm-copy.1-introduction
-  - learn.arm-copy.2-dependencies
-  - learn.arm-copy.3-dependencies-exercise
-  - learn.arm-copy.4-secure-parameters
-  - learn.arm-copy.5-secure-parameters-exercise
-  - learn.arm-copy.6-conditions
-  - learn.arm-copy.7-conditions-exercise
-  - learn.arm-copy.8-copy
-  - learn.arm-copy.9-copy-exercise
-  - learn.arm-copy.10-knowledge-check
-  - learn.arm-copy.11-summary
+  - learn.manage-deployments-advanced-arm-template-features.1-introduction
+  - learn.manage-deployments-advanced-arm-template-features.2-dependencies
+  - learn.manage-deployments-advanced-arm-template-features.3-dependencies-exercise
+  - learn.manage-deployments-advanced-arm-template-features.4-secure-parameters
+  - learn.manage-deployments-advanced-arm-template-features.5-secure-parameters-exercise
+  - learn.manage-deployments-advanced-arm-template-features.6-conditions
+  - learn.manage-deployments-advanced-arm-template-features.7-conditions-exercise
+  - learn.manage-deployments-advanced-arm-template-features.8-copy
+  - learn.manage-deployments-advanced-arm-template-features.9-copy-exercise
+  - learn.manage-deployments-advanced-arm-template-features.10-knowledge-check
+  - learn.manage-deployments-advanced-arm-template-features.11-summary
 badge:
-  uid: learn.arm-copy.badge
+  uid: learn.manage-deployments-advanced-arm-template-features.badge

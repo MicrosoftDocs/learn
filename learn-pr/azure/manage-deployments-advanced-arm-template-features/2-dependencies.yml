@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.arm-copy.2-dependencies
+uid: learn.manage-deployments-advanced-arm-template-features.2-dependencies
 title: Control deployment order by specifying dependencies
 metadata:
   description: Sometimes it's important to control what gets deployed when and it what order. By setting up a dependency between resources, you guarantee that resources are deployed in a set order.

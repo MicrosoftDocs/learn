@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.arm-copy.8-copy
+uid: learn.manage-deployments-advanced-arm-template-features.8-copy
 title: Handle template iterations with the copy element construct
 metadata:
   title: Handle template iterations with the copy element construct

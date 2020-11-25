@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.arm-copy.9-copy-exercise
+uid: learn.manage-deployments-advanced-arm-template-features.9-copy-exercise
 title: Exercise - Use the copy element to deploy less repetitive templates
 metadata:
   title: Exercise - Use the copy element to deploy less repetitive templates
