@@ -2,7 +2,7 @@ We've discussed the available options for deploying a Java application in the cl
 
 ## Platform as a service or infrastructure control?
 
-The first question to ask is whether you want full control over your application or you want use a platform as a service (PaaS) solution. Your answer usually depends on the needs of the team you're working with.
+The first question to ask is whether you want full control over your application or you want to use a platform as a service (PaaS) solution. Your answer usually depends on the needs of the team you're working with.
 
 Platform as a service solutions are easier to use. Many teams prefer them because they offer lower cost, better reliability, and greater security. 
 
