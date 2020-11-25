@@ -8,7 +8,7 @@ This module introduces those solutions, along with tools to help you choose the 
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+By the end of this module, you'll be able to:
 
 - Describe and differentiate the Azure deployment options that are available for Java applications.
 - Choose the best Azure service for deploying a Java application.
