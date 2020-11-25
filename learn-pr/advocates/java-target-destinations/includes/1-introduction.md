@@ -1,15 +1,17 @@
-Organizations often run many different Java workloads, from simple applications to highly complex, mission-critical microservices architectures.
+Organizations often run many different Java workloads, from simple applications to highly complex, mission-critical microservice architectures.
 
-An e-commerce Website could have a highly scalable customer-facing store that relies on hundreds of Spring Boot services, and also have monolithic back-office system to handle its catalog, and many smaller batch applications to update its stocks and notify its customers.
+An e-commerce website could have a highly scalable, customer-facing store that relies on hundreds of Spring Boot services. The site could also have a monolithic back-office system to handle its catalog, and many smaller batch applications to update its stocks and notify its customers.
 
-Azure provides many ways to run Java, from simple virtual machines to containers, managed services, or serverless functions: it will have one, or maybe even several solutions that will fit your needs, even in our example of a complex e-commerce website. This module will give you an introduction to those solutions, as well as tools to help you choose which ones are the most appropriate for your specific use-case.
+Azure provides many ways to run Java, from simple virtual machines to containers, managed services, or serverless functions. Azure offers one or maybe even several solutions that will fit your needs, including solutions for complex e-commerce scenarios. 
+
+This module introduces those solutions, along with tools to help you choose the most appropriate one for your specific use case.
 
 ## Learning objectives
 
 By the end of this module, you'll be able to:
 
-- Describe and differentiate the Azure deployment options available for Java applications
-- Choose the best Azure service for deploying a Java application
+- Describe and differentiate the Azure deployment options that are available for Java applications.
+- Choose the best Azure service for deploying a Java application.
 
 ## Prerequisites
 
