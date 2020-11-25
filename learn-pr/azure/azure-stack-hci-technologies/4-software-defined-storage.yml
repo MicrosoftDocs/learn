@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "Storage Spaces Direct"
       isCorrect: true
-      explanation: "That's correct. Storage Spaces Direct leverages Storage Spaces, Failover Clustering, Cluster Shared Volumes (CSVs), and SMB 3.x to implement virtualized, highly-available clustered storage by using local disks on each of nodes of a Windows Server 2019 failover cluster."
+      explanation: "That's correct. Storage Spaces Direct leverages Storage Spaces, failover clustering, CSVs, and SMB 3.x to implement virtualized, highly-available clustered storage by using local disks on each of nodes of a Windows Server 2019 failover cluster."
     - content: "SMB Direct"
       isCorrect: false
       explanation: "That's incorrect. SMB Direct optimizes the use of RDMA network adapters for SMB traffic, allowing them to function at full speed with very low latency and low CPU utilization."
