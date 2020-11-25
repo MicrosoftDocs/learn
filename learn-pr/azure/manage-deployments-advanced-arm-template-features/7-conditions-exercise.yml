@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.manage-deployments-advanced-arm-template-features.7-conditions-exercise
-title: Exercise - Add conditional logic to your ARM templates
+title: Exercise - Add conditional logic to your ARM template
 metadata:
-  title: Exercise - Add conditional logic to your ARM templates
+  title: Exercise - Add conditional logic to your ARM template
   description: Use the _condition_ construct with parameters, to define whether a resource should be deployed or not.
   author: softchris
   ms.author: chnoring

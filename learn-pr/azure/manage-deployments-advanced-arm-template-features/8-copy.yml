@@ -1,10 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.manage-deployments-advanced-arm-template-features.8-copy
-title: Handle template iterations with the copy element construct
+title: Create multiple resource instances by using the copy element
 metadata:
-  title: Handle template iterations with the copy element construct
-  description: A great way to manage repetitive code is by using the _copy_ element.
-    It allows you to express repeating pattern with very little code.
+  title: Create multiple resource instances by using the copy element
+  description: A great way to manage repetitive code is by using the _copy_ element. It allows you to express repeating pattern with very little code.
   author: softchris
   ms.author: chnoring
   ms.date: 11/04/2020

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.manage-deployments-advanced-arm-template-features.9-copy-exercise
-title: Exercise - Use the copy element to deploy less repetitive templates
+title: Exercise - Use copy to reduce repetition
 metadata:
-  title: Exercise - Use the copy element to deploy less repetitive templates
+  title: Exercise - Use copy to reduce repetition
   description: Use the _copy_ element to create multiple instances and remove repetitive parts of your template.
   author: softchris
   ms.author: chnoring

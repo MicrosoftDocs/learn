@@ -1,8 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.manage-deployments-advanced-arm-template-features.4-secure-parameters
-title: Manage secrets in your ARM template by reading from an Azure Key Vault at deployment time 
+title: Manage secrets in your ARM template by reading from Azure Key Vault
 metadata:
-  title: Manage secrets in your ARM template by reading from an Azure Key Vault at deployment time
   description: Describe unit
   author: softchris
   ms.author: chnoring
