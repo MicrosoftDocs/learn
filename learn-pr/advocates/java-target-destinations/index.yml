@@ -11,7 +11,7 @@ metadata:
 title: Choose the right Azure service for deploying your Java application
 summary: Explore the service options for deploying Java applications to Azure, and choose the one that best addresses your team's needs.
 abstract: | 
- By the end of this tutorial, you will be able to:
+ By the end of this tutorial, you'll be able to:
   - Describe and differentiate the Azure deployment options that are available for Java applications.
   - Choose the best Azure service for deploying a Java application.
 prerequisites:  |
