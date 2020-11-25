@@ -20,7 +20,7 @@ quiz:
       explanation: "Incorrect. SQL Pools can process large files more efficiently than smaller ones."
     - content: "Compute node to storage segment alignment."
       isCorrect: true
-      explanation: "Correct. SQL Pools have 60 storgae segments. Compute can also scale to 60 nodes and so optimizing for alignment of these 2 resources can dramatically decrease load times."
+      explanation: "Correct. SQL Pools have 60 storage segments. Compute can also scale to 60 nodes and so optimizing for alignment of these 2 resources can dramatically decrease load times."
     - content: "Reduced possibility of data corruptions."
       isCorrect: false
       explanation: "Incorrect. Data corruptions have an impact on success, not speed. Splitting files should affect probability of corruptions."
