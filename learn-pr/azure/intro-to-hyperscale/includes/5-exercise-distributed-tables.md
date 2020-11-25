@@ -7,11 +7,11 @@
 2. Select **Bash**
 3. Select the subscription you used in the previous exercise to deploy the Hyperscale server group
 
-![Select Subscription](../media/5a-subscription.png)
+:::image type="content" source="../media/5a-subscription.png" alt-text="Select Subscription.":::
 
 After a few seconds, a black Cloud Shell should appear
 
-![Azure Cloud Shell](../media/5b-shell.png)
+:::image type="content" source="../media/5b-shell.png" alt-text="Azure Cloud Shell.":::
 
 Let's now use the psql command-line utility to connect to the Hyperscale server group.
 

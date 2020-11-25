@@ -7,15 +7,15 @@ In this exercise, we're going to double the number of worker nodes. Then we'll r
 
 2. Next, select the **payment-server-demo** resource.
 
-![Payment server resource](../media/7a-resource.png)
+:::image type="content" source="../media/7a-resource.png" alt-text="Payment server resource.":::
 
 3. Then select the **Compute + storage** tab.
 
-![Compute and storage tab](../media/7b-password.png)
+:::image type="content" source="../media/7b-password.png" alt-text="Compute and storage tab.":::
 
 4. Now, select 4 worker nodes. Adjust the vCores for the coordinator node if you want, but the deployment process may take a few minutes longer.
 
-![Worker nodes and coordinator node vCores](../media/7c-workers.png)
+:::image type="content" source="../media/7c-workers.png" alt-text="Worker nodes and coordinator node vCores.":::
 
 > [!NOTE]
 > Once increased and saved, the number of worker nodes cannot be decreased using the slider.

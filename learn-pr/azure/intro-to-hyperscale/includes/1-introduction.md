@@ -11,7 +11,9 @@ Azure Database for PostgreSQL Hyperscale combines the benefits of PostgreSQL, Ci
 
  :::column-end:::
 :::column span="2":::
-![Postgres logos](../media/1-logo.png)
+
+:::image type="content" source="../media/1-logo.png" alt-text="Postgres logos.":::
+
 :::column-end:::
 :::row-end:::
 
