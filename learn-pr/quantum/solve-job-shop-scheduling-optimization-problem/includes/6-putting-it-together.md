@@ -2,25 +2,15 @@ Now that you have penalty terms to represent all of the constraints, you can fin
 
 As a reminder, here are the penalty terms:
 
-$$
-\begin{array}{ | l | l | }
-    \hline
-    \textbf{Constraint} & \textbf{Penalty Condition} \\ \hline
-    \textbf{Precedence constraint} & \text{Assign penalty every time } O_{i+1} \text{ starts before}\\
-    \text{Operations in a job must take place in order} & O_{i} \text{ has finished (i.e. they start out of order)} \\ \hline
-    \textbf{No overlap constraint} & \text{Assign penalty every time two operations on a single}\\
-    \text{Machines can only do one thing at a time} & \text{machine are scheduled to run at the same time} \\ \hline
-    \hline
-    \textbf{Operation once constraint} & \text{Assign penalty if an operation isn't scheduled within} \\
-    \text{Each operation is started once and only once} & \text{the allowed time } T \text{, or if scheduled more than once} \\
-    \text{Once an operation starts, it runs to completion} & \textit{Assumption: if an operation starts, it completes} \\ \hline
-    \hline
-\end{array}
-$$
+| Constraint | Penalty condition |
+|---|---|
+|**Precedence constraint**<br>Operations in a job must take place in order.|Assign penalty every time $O_{i+1}$ starts before $O_{i}$ has finished (i.e. they start out of order).|
+|**Operation once constraint**<br>Each operation is started once and only once.|Assign penalty if an operation isn't scheduled within the allowed time.<br>**Assumption:** if an operation starts, it runs to completion.|
+|**No overlap constraint**<br>Machines can only do one thing at a time.|Assign penalty every time two operations on a single machine are scheduled to run at the same time.|
 
 - **Precedence constraint**:
 
-$$f(x) = \mathop{\sum_{k_{n-1} \leq i < k_n}}_{t+p_i>s}x_{i,t}\cdot x_{i+1,s} \text{ for each job } \textit{n}$$
+$$f(x) = \sum_{k_{n-1} \leq i < k_n}_{t+p_i>s}x_{i,t}\cdot x_{i+1,s} \text{ for each job } \textit{n}$$
 
 - **Operation once constraint**:
 

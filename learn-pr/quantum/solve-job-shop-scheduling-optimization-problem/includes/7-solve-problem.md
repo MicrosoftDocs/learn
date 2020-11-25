@@ -208,39 +208,21 @@ print_jobs(n, o, matrix)
     [[0, 2], [0, 2], [3, 4]]
 ```
 
-Translating back to the problem at hand, below is shown the order in which your repair tasks should be completed to finish as quickly (and safely) as possible. If two tasks have the same order number, they can be performed at the same time by different crewmembers using different tools:
+Translating back to the problem at hand, below is shown the order in which your repair tasks should be completed to finish as quickly (and safely) as possible. If two tasks have the same order number, they can be performed at the same time by different crew members using different tools:
 
-$$
-\begin{array}[t]{ | cl | c | c | }
-    \hline
-     & \text{Task} & \text{Tool} & \text{Order}\\
-    \hline
-    J_{0} \text{:} & \text{Restart life support} & & \\ \hline
-    O_{0} & \text{Open wall panel in the life support module} & Universal multitool & 1\\
-    O_{1} & \text{Replace fuse} & Universal multitool & 2\\
-    \hline
-\end{array}
-\begin{array}[t]{ | cl | c | c | }
-    \hline
-     & \text{Task} & \text{Tool} & \text{Order}\\
-    \hline
-    J_{1} \text{:} & \text{Recalibrate navigation system} & & \\ \hline
-    O_{3} & \text{Reboot the system} & Ship computer & 1\\
-    O_{4} & \text{Locate the three nearest stellar landmarks} & Ship computer & 2\\
-    \hline
-\end{array}
-\begin{array}[t]{ | cl | c | c | }
-    \hline
-     & \text{Task} & \text{Tool} & \text{Order}\\
-    \hline
-    J_{2} \text{:} & \text{Replace power transformer in the reactor} & & \\ \hline
-    O_{6} & \text{Detach old transformer module} & Universal multitool & 3\\
-    O_{7} & \text{Install new transformer module} & Universal multitool & 4\\
-    \hline
-\end{array}
-$$
+|Repair task|Required tool|Order|
+|---|---|---|
+|**$J_{0}$: Restart life support**||
+|$0_{0}$: Open wall panel in the life support module (*2 minutes*)|Universal multi-tool|1|
+|$0_{1}$: Replace fuse (*1 minute*)|Universal multi-tool|2|
+|**$J_{1}$: Recalibrate navigation system**||
+|$0_{2}$: Reboot the system (*2 minutes*)|1|
+|$0_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)|2|
+|**$J_{2}$: Replace power transformer in the reactor**||
+|$0_{4}$: Detach old transformer module (*1 minute*)|3|
+|$0_{5}$: Install new transformer module (*2 minutes*)|4|
 
-By inspection, you can tell that the solution returned above is valid (i.e. it does not violate any of the constraints defined previously):
+By inspection, you can tell that the solution above is valid (i.e. it does not violate any of the constraints defined previously):
 
 - Operations belonging to the same job happen in order
 - Each machine only has one operation running at a time

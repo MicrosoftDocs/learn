@@ -24,12 +24,12 @@ Fortunately, you have the tools, team and expertise on board to fix all the issu
 
 Each step that makes up a task takes a specific amount of time, and must be completed in the correct order.
 
-To help you complete these tasks, you have access to your trusty **universal multitool** and the **ship computer** - these are the machines you will use to perform the repairs.
+To help you complete these tasks, you have access to your trusty **universal multi-tool** and the **ship computer** - these are the machines you will use to perform the repairs.
 
 The mission is to **complete all of these tasks in as short a time as possible**, so that you can avoid disaster. For safety reasons, you must ensure that you follow procedure and thus there are some constraints on the way you complete the tasks:
 
 1. Each of the steps (**operations**) in a repair task (**job**) must take place in order. You can't install the new transformer before removing the old one! This is called the **precedence constraint**.
-2. Each tool (**machine**) can only do one thing at a time. For example, you can't simultaneously use the multitool to do several things. This is the **no overlap constraint**.
+2. Each tool (**machine**) can only do one thing at a time. For example, you can't simultaneously use the multi-tool to do several things. This is the **no overlap constraint**.
 3. You start an operation only once, and once started it must be completed before you do anything else. You can't afford to procrastinate! This is called the **operation once constraint**.
 
 ### Cost functions
@@ -69,16 +69,16 @@ The first step is to take the constraints identified above and formulate them as
 Let's first introduce some notation because you don't have time during an emergency to write things out in long form!
 
 - $J_{0}$: Restart life support
-  $0_{0}$: Open wall panel in the life support module (*2 minutes*)
-  $0_{1}$: Replace fuse (*1 minute*)
+  - $0_{0}$: Open wall panel in the life support module (*2 minutes*)
+  - $0_{1}$: Replace fuse (*1 minute*)
 
 - $J_{1}$: Recalibrate navigation system
-  $0_{2}$: Reboot the system (*2 minutes*)
-  $0_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)
+  - $0_{2}$: Reboot the system (*2 minutes*)
+  - $0_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)
 
 - $J_{2}$: Replace power transformer in the reactor
-  $0_{4}$: Detach old transformer module (*1 minute*)
-  $0_{5}$: Install new transformer module (*2 minutes*)
+  - $0_{4}$: Detach old transformer module (*1 minute*)
+  - $0_{5}$: Install new transformer module (*2 minutes*)
 
 Above, you can see that the jobs have been labelled as $J$ and assigned index numbers $0$, $1$ and $2$, to represent each of the three tasks you have. The operations that make up each job have also been defined, and are represented by the letter $O$.
 
@@ -86,19 +86,19 @@ To make it easier to code up later, all operations are identified with a continu
 
 Below, you see how these definitions combine to give us a mathematical formulation for the jobs:
 
-$$J_{0} = O_{0}, O_{1}$$
-$$J_{1} = O_{2}, O_{3}$$
-$$J_{2} = O_{4}, O_{5}$$
+$$J_{0} = \{O_{0}, O_{1}\}$$
+$$J_{1} = \{O_{2}, O_{3}\}$$
+$$J_{2} = \{O_{4}, O_{5}\}$$
 
 **More generally:**
 
-$$J_{0} = O_{0}, O_{1}, \ldots , O_{k_{0}-1} \text{, where } k_{0} = x_{0} \text{, the number of operations in job } J_{0}$$
+$$J_{0} = \{O_{0}, O_{1}, \ldots , O_{k_{0}-1}\} \text{, where } k_{0} = x_{0} \text{, the number of operations in job } J_{0}$$
 
-$$J_{1} = O_{k_{0}}, O_{k_{0}+1}, \ldots , O_{k_{1}-1} \text{, where } k_{1} = x_{0} + x_{1} \text{, the number of operations in jobs } J_{0} \text{ and } J_{1} \text{ combined}$$
+$$J_{1} = \{O_{k_{0}}, O_{k_{0}+1}, \ldots , O_{k_{1}-1}\} \text{, where } k_{1} = x_{0} + x_{1} \text{, the number of operations in jobs } J_{0} \text{ and } J_{1} \text{ combined}$$
 
 $$\vdots$$
 
-$$J_{n-1} = O_{k_{n-2}}, O_{k_{n-2}+1}, \ldots , O_{k_{n-1}-1} \text{, where } k_{n-1} = \text{ the total number of operations across all jobs }$$
+$$J_{n-1} = \{O_{k_{n-2}}, O_{k_{n-2}+1}, \ldots , O_{k_{n-1}-1}\} \text{, where } k_{n-1} = \text{ the total number of operations across all jobs }$$
 
 The next piece of notation you will need is a binary variable which will be called $x_{i, t}$
 
@@ -125,8 +125,8 @@ The first step is to represent the constraints mathematically. This will be done
 | Constraint | Penalty condition |
 |---|---|
 |**Precedence constraint**<br>Operations in a job must take place in order.|Assign penalty every time $O_{i+1}$ starts before $O_{i}$ has finished (i.e. they start out of order).|
+|**Operation once constraint**<br>Each operation is started once and only once.|Assign penalty if an operation isn't scheduled within the allowed time.<br>**Assumption:** if an operation starts, it runs to completion.|
 |**No overlap constraint**<br>Machines can only do one thing at a time.|Assign penalty every time two operations on a single machine are scheduled to run at the same time.|
-|**Operation once constraint**<br>Each operation is started once and only once.|Assign penalty if an operation isn't scheduled within the allowed time.<br>Assumption: if an operation starts, it runs to completion.|
 
 ### Expressing a cost function using the Azure Quantum optimization SDK
 
@@ -170,4 +170,5 @@ If there were higher order terms (e.g. cubed etc.), you would just add more elem
 
 In the following sections, you will explore how to formulate each of these constraints mathematically, and how this translates to code.
 
-> **Note :** For this sample, penalties have not been added for operations that overrun the total simulation time $T$ - it is assumed that as long as an operation is started before the end of the simulation, it runs to completion.
+> [!NOTE]
+> For this sample, penalties have not been added for operations that overrun the total simulation time $T$ - it is assumed that as long as an operation is started before the end of the simulation, it runs to completion.

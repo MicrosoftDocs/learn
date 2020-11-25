@@ -2,28 +2,17 @@ In this section, the precedence constraint will be defined, and you will learn h
 
 The precedence constraint is defined as follows:
 
-$$
-\begin{array}{ | l | l | }
-    \hline
-    \textbf{Constraint} & \textbf{Penalty Condition} \\ \hline
-    \textbf{Precedence constraint} & \text{Assign penalty every time } O_{i+1} \text{ starts before}\\
-    \text{Operations in a job must take place in order} & O_{i} \text{ has finished (i.e. they start out of order)} \\ \hline
-\end{array}
-$$
+| Constraint | Penalty condition |
+|---|---|
+|**Precedence constraint**<br>Operations in a job must take place in order.|Assign penalty every time $O_{i+1}$ starts before $O_{i}$ has finished (i.e. they start out of order).|
 
 ### Worked example
 
 Let's take job 1 ($J_{1}$) as an example:
 
-$$
-\begin{array}{ | cl | }
-    \hline
-    J_{1} \text{:} & \text{Recalibrate navigation system} \\ \hline
-    O_{3} & \text{Reboot the system}\textit{(2 mins)}\\
-    O_{4} & \text{Locate the three nearest stellar landmarks}\textit{(2 mins)}\\
-    \hline
-\end{array}
-$$
+- $J_{1}$: Recalibrate navigation system
+  - $0_{2}$: Reboot the system (*2 minutes*)
+  - $0_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)
 
 Let's formulate the penalty conditions for $O_{3}$ and $O_{4}$: you want to add a penalty if $O_{4}$ starts before $O_{3}$ finishes. First, you'll define the terms and set some of their values:
 
@@ -36,48 +25,33 @@ $$O_{4} \text{ can start at time } s \geq t + p_{3} $$
 
 $O_{3}$’s finishing time is given by adding its processing time $p_{3}$ (which is 2 minutes) to its start time $t$. You can see the start and end times for $O_{3}$ in the table below:
 
-$$
-\begin{array}{ | c | c | c | c | }
-    \hline
-    t & t+p_{3}\\ \hline
-    0 & 2 \\ \hline
-    1 & 3 \\ \hline
-    2 & 4 \\ \hline
-    \hline
-\end{array}
-$$
+| $t$ | $t = p_{3}$|
+|---|---|
+|0|2|
+|1|3|
+|2|4|
 
 To avoid violating this constraint, the start time of $O_{4}$ (denoted by $s$) must be greater than or equal to the end time of $O_{3}$, like you see in the next column:
 
-$$
-\begin{array}{ | c | c | c | }
-    \hline
-    t & t+p_{3} & s \geq t+p_{3}\\ \hline
-    0 & 2 & 2, 3, 4 \\ \hline
-    1 & 3 & 3, 4 \\ \hline
-    2 & 4 & 4 \\ \hline
-    & \text{Valid?} & \checkmark \\
-    \hline
-\end{array}
-$$
+| $t$ | $t = p_{3}$|$s \geq t+p_{3}$|
+|---|---|---|
+|0|2|2, 3, 4|
+|1|3|3, 4|
+|2|4|4|
+||<div style="text-align: right">**Valid?**</div>|✔|
 
-The $\checkmark$ means that any $s$ value in this column is valid, as it doesn't violate the precedence constraint.
+The ✔ means that any $s$ value in this column is valid, as it doesn't violate the precedence constraint.
 
 Conversely, if $s$ is less than $t + p_{3}$ (i.e. $O_{4}$ starts before $O_{3}$ finishes), you need to add a penalty. Invalid $s$ values for this example are shown in the rightmost column:
 
-$$
-\begin{array}{ | c | c | c | c | }
-    \hline
-    t & t+p_{3} & s \geq t+p_{3} & s < t+p_{3}\\ \hline
-    0 & 2 & 2, 3, 4 & 0, 1 \\ \hline
-    1 & 3 & 3, 4 & 0, 1, 2 \\ \hline
-    2 & 4 & 4 & 0, 1, 2, 3 \\ \hline
-     & \text{Valid?} & \checkmark & \text{X} \\
-    \hline
-\end{array}
-$$
+| $t$ | $t = p_{3}$|$s \geq t+p_{3}$|$s < t+p_{3}$|
+|---|---|---|---|
+|0|2|2, 3, 4|0, 1|
+|1|3|3, 4|0, 1, 2|
+|2|4|4|0, 1, 2, 3|
+||<div style="text-align: right">**Valid?**</div>|✔|✘|
 
-In the table above, $\text{X}$ marks have been used to denote that any $s$ value in the last column is invalid, as it violates the precedence constraint.
+In the table above, ✘ has been used to denote that any $s$ value in the last column is invalid, as it violates the precedence constraint.
 
 ### Penalty formulation
 

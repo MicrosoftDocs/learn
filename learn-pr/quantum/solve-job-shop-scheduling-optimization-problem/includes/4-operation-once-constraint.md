@@ -2,39 +2,22 @@ In this section, the operation once constraint will be defined, and you will lea
 
 The operation once constraint is defined as follows:
 
-$$
-\begin{array}{ | l | l | }
-    \hline
-    \textbf{Constraint} & \textbf{Penalty Condition} \\ \hline
-    \textbf{Operation once constraint} & \text{Assign penalty if an operation isn't scheduled within} \\
-    \text{Each operation is started once and only once} & \text{the allowed time } T \text{, or if scheduled more than once} \\
-    \text{Once an operation starts, it runs to completion} & \textit{Assumption: if an operation starts, it completes} \\ \hline
-    \hline
-\end{array}
-$$
+| Constraint | Penalty condition |
+|---|---|
+|**Operation once constraint**<br>Each operation is started once and only once.|Assign penalty if an operation isn't scheduled within the allowed time.<br>**Assumption:** if an operation starts, it runs to completion.|
 
 ### Worked example
 
 Again, job 1 ($J_{1}$) will be used as an example:
 
-$$
-\begin{array}{ | cl | }
-    \hline
-    J_{1} \text{:} & \text{Recalibrate navigation system} \\ \hline
-    O_{3} & \text{Reboot the system}\textit{(2 mins)}\\
-    O_{4} & \text{Locate the three nearest stellar landmarks}\textit{(2 mins)}\\
-    \hline
-\end{array}
-$$
+- $J_{1}$: Recalibrate navigation system
+  - $0_{2}$: Reboot the system (*2 minutes*)
+  - $0_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)
 
 Recall the variable $x_{i,t}$:
 
-$$
-\begin{align}
-\text{If } x_{i,t} &= 1, \text{ } O_i\text{ starts at time } \textit{t} \\
-\text{If } x_{i,t} &= 0, \text{ } O_i\text{ does not start at time } \textit{t} \\
-\end{align}
-$$
+$$\text{If } x_{i,t} &= 1, \text{ } O_i\text{ starts at time } \textit{t}$$
+$$\text{If } x_{i,t} &= 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
 According to this constraint, $x_{i,t}$ for a specific operation should equal 1 **once and only once** during the entire simulation from $t = 0 \rightarrow T$ (because it should start once and only once during the allowed time).
 
@@ -42,75 +25,51 @@ So in this case, you need to assign a penalty if the sum of $x_{i,t}$ for each o
 
 Let’s take $O_{3}$ as an example again:
 
-$$
-\begin{array}{ | c | c | }
-    \hline
-    t & \text{  } x_{3,t} \text{  } \\ \hline
-    0 & 0 \\ \hline
-    1 & 1 \\ \hline
-    2 & 0 \\ \hline
-     & \\ \hline
-    \sum_t {x_{3,t}} = & 1 \\ \hline
-    \text{Valid?} & \checkmark \\
-    \hline
-\end{array}
-$$
+|$t$|$x_{3,t}$|
+|---|---|
+|0|0|
+|1|1|
+|2|0|
+|<div style="text-align: right">$\sum_t {x_{3,t}} =$</div>|1|
+|<div style="text-align: right">**Valid?**</div>|✔|
 
 In the right hand column, you see that $O_{3}$ starts at time 1 and no other time ($x_{3,t} = 1$ at time $t = 1$ and is $0$ otherwise). The sum of $x_{i,t}$ values over all $t$ for this example is therefore 1, which is what is expected! This is therefore a valid solution.
 
 In the example below, you see an instance where $O_{3}$ is scheduled more than once ($x_{3,t} = 1$ more than once), in violation of the constraint:
 
-$$
-\begin{array}{ | c | c | }
-    \hline
-    t & \text{  } x_{3,t} \text{  } \\ \hline
-    0 & 0 \\ \hline
-    1 & 1 \\ \hline
-    2 & 1 \\ \hline
-     &  \\ \hline
-    \sum_t {x_{3,t}} = & 2 \\ \hline
-    \text{Valid?} & \text{X} \\
-    \hline
-\end{array}
-$$
+|$t$|$x_{3,t}$|
+|---|---|
+|0|0|
+|1|1|
+|2|1|
+|<div style="text-align: right">$\sum_t {x_{3,t}} =$</div>|2|
+|<div style="text-align: right">**Valid?**</div>|✘|
 
 You can see from the above that $O_{3}$ has been scheduled to start at both time 1 and time 2, so the sum of $x_{i,t}$ values over all $t$ is now greater than 1. This violates the constraint and thus you must apply a penalty.
 
 In the last example, you see an instance where $O_{3}$ has not been scheduled at all:
 
-$$
-\begin{array}{ | c | c | }
-    \hline
-    t & \text{  } x_{3,t} \text{  } \\ \hline
-    0 & 0 \\ \hline
-    1 & 0 \\ \hline
-    2 & 0 \\ \hline
-     & \\ \hline
-    \sum_t {x_{3,t}} = & 0 \\ \hline
-    \text{Valid?} & \text{X} \\
-    \hline
-\end{array}
-$$
+|$t$|$x_{3,t}$|
+|---|---|
+|0|0|
+|1|0|
+|2|0|
+|<div style="text-align: right">$\sum_t {x_{3,t}} =$</div>|0|
+|<div style="text-align: right">**Valid?**</div>|✘|
 
 In this example, none of the $x_{3,t}$ values equal 1 for any time in the simulation, meaning the operation is never scheduled. This means that the sum of $x_{3,t}$ values over all $t$ is 0 - the constraint is once again violated and you must allocate a penalty.
 
 In summary:
 
-$$
-\begin{array}{ | c | c | c | c | }
-    \hline
-    t & \text{  } x_{3,t} \text{  } & \text{  } x_{3,t} \text{  } & \text{  } x_{3,t} \text{  } \\ \hline
-    0 & 0 & 0 & 0 \\ \hline
-    1 & 1 & 1 & 0 \\ \hline
-    2 & 0 & 1 & 0 \\ \hline
-     & & & \\ \hline
-    \sum_t {x_{3,t}} = & 1 & 2 & 0 \\ \hline
-    \text{Valid?} & \checkmark & \text{X} & \text{X} \\
-    \hline
-\end{array}
-$$
+|$t$|$x_{3,t}$|$x_{3,t}$|$x_{3,t}$|
+|---|---|---|---|
+|0|0|0|0|
+|1|1|1|0
+|2|0|1|0|
+|<div style="text-align: right">$\sum_t {x_{3,t}} =$</div>|1|2|0|
+|<div style="text-align: right">**Valid?**</div>|✔|✘|✘|
 
-Now you understand when to assign penalties, let's formulate the constraint mathematically.
+Now that you understand when to assign penalties, let's formulate the constraint mathematically.
 
 ### Penalty formulation
 
@@ -144,40 +103,24 @@ To translate this constraint to code form, you are going to need to expand the q
 
 To do this, you'll once again take $O_{3}$ as an example. You will set $T = 2$ so the $t$ values will be 0 and 1. The first step will be to substitute in our values:
 
-$$
-\begin{align}
-\sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2 &= \left(x_{3,0} + x_{3,1} - 1\right)^2
-\end{align}
-$$
+$$\sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2 = \left(x_{3,0} + x_{3,1} - 1\right)^2$$
 
 For simplicity, the $x_{3,t}$ variables will be renamed as follows:
 
-$$
-\begin{align}
-x_{3,0} &= x \\
-x_{3,1} &= y
-\end{align}
-$$
+$$x_{3,0} = x$$
+$$x_{3,1} = y$$
 
 Substituting these values in, you now have the following:
 
-$$
-\begin{align}
-\sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2 &= \left(x_{3,0} + x_{3,1} - 1\right)^2 \\
-&=\left(x + y - 1\right)^2
-\end{align}
-$$
+$$\sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2 = \left(x_{3,0} + x_{3,1} - 1\right)^2$$
+$$=\left(x + y - 1\right)^2$$
 
 Next, you need to expand out the bracket and multiply each term in the first bracket with all terms in the other bracket:
 
-$$
-\begin{align}
-\sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2 &= \left(x_{3,0} + x_{3,1} - 1\right)^2 \\
-&= \left(x + y - 1\right)^2 \\
-&= (x + y - 1)\cdot(x + y - 1) \\
-&= x^2 + y^2 + 2xy - 2x - 2y + 1
-\end{align}
-$$
+$$\sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2 = \left(x_{3,0} + x_{3,1} - 1\right)^2$$
+$$= \left(x + y - 1\right)^2$$
+$$= (x + y - 1)\cdot(x + y - 1)$$
+$$= x^2 + y^2 + 2xy - 2x - 2y + 1$$
 
 Of course, if $T$ was larger, you would have more terms. The form of the equation would be the same however: still quadratic.
 

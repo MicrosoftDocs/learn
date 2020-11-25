@@ -2,74 +2,50 @@ In this section, the no overlap constraint will be defined, and you will learn h
 
 The no overlap constraint is defined as follows:
 
-$$
-\begin{array}{ | l | l | }
-    \hline
-    \textbf{Constraint} & \textbf{Penalty Condition} \\ \hline
-    \textbf{No overlap constraint} & \text{Assign penalty every time two operations on a single}\\
-    \text{Machines can only do one thing at a time} & \text{machine are scheduled to run at the same time} \\ \hline
-    \hline
-\end{array}
-$$
+| Constraint | Penalty condition |
+|---|---|
+|**No overlap constraint**<br>Machines can only do one thing at a time.|Assign penalty every time two operations on a single machine are scheduled to run at the same time.|
 
 ### Worked example
 
 For this final constraint, $J_{1}$ will once again be used as an example:
 
-$$
-\begin{array}{ | cl | }
-    \hline
-    J_{1} \text{:} & \text{Recalibrate navigation system} \\ \hline
-    O_{3} & \text{Reboot the system}\textit{(2 mins)}\\
-    O_{4} & \text{Locate the three nearest stellar landmarks}\textit{(2 mins)}\\
-    \hline
-\end{array}
-$$
+- $J_{1}$: Recalibrate navigation system
+  - $0_{2}$: Reboot the system (*2 minutes*)
+  - $0_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)
 
 Recall once more the variable $x_{i,t}$:
 
-$$
-\begin{align}
-\text{If } x_{i,t} &= 1, \text{ } O_i\text{ starts at time } \textit{t} \\
-\text{If } x_{i,t} &= 0, \text{ } O_i\text{ does not start at time } \textit{t} \\
-\end{align}
-$$
+$$\text{If } x_{i,t} &= 1, \text{ } O_i\text{ starts at time } \textit{t}$$
+$$\text{If } x_{i,t} &= 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
 Let's say that $O_{3}$ and $O_{4}$ must be completed using the same machine. To avoid violating the no overlap constraint, you must ensure that $O_{3}$ and $O_{4}$ begin at different times: i.e. $x_{3,t}$ and $x_{4,t}$ must not equal 1 at the same time.
 
 One example of a valid configuration is shown below:
 
-$$
-\begin{array}{ | c | c | c | c | }
-    \hline
-    \text{  } t \text{  } & \text{  } x_{3,t} \text{  } & \text{  } x_{4,t} \text{  } & x_{3,t} \cdot x_{4,t}\\ \hline
-    0 & 1 & 0 & 0\\ \hline
-    1 & 0 & 1 & 0\\ \hline
-    2 & 0 & 0 & 0\\ \hline
-      &   & \sum_{t} x_{3,t} \cdot x_{4,t} = & 0 \\
-    \hline
-\end{array}
-$$
+|$t$|$x_{3,t}$|$x_{4,t}$|$x_{3,t} \cdot x_{4,t}$|
+|---|---|---|---|
+|0|1|0|0|
+|1|0|1|0|
+|2|0|0|0|
+|||<div style="text-align: right">$\sum_{t} x_{3,t} \cdot x_{4,t} =$</div>|0|
+|||<div style="text-align: right">**Valid?**</div>|✔|
 
 As you can see, when you compare $x_{i,t}$ values pairwise at each time in the simulation, their product always equals 0.
 
 Below, you see a configuration that violates the constraint:
 
-$$
-\begin{array}{ | c | c | c | c | }
-    \hline
-    \text{  } t \text{  } & \text{  } x_{3,t} \text{  } & \text{  } x_{4,t} \text{  } & x_{3,t} \cdot x_{4,t}\\ \hline
-    0 & 0 & 0 & 0\\ \hline
-    1 & 1 & 1 & 1\\ \hline
-    2 & 0 & 0 & 0\\ \hline
-      &   & \sum_{t} x_{3,t} \cdot x_{4,t} = & 1 \\
-    \hline
-\end{array}
-$$
+|$t$|$x_{3,t}$|$x_{4,t}$|$x_{3,t} \cdot x_{4,t}$|
+|---|---|---|---|
+|0|0|0|0|
+|1|1|1|1|
+|2|0|0|0|
+|||<div style="text-align: right">$\sum_{t} x_{3,t} \cdot x_{4,t} =$</div>|1|
+|||<div style="text-align: right">**Valid?**</div>|✘|
 
-In this instance, $O_{3}$ and $O_{4}$ are both scheduled to start at $t = 1$ and given they require the same machine, this means that the constraint has been violated. The pairwise product of $x_{i,t}$ values is therefore no longer always equal to 0, as for $t = 1$ we have: $x_{3,1} \cdot x_{4,1} = 1$ 
+In this instance, $O_{3}$ and $O_{4}$ are both scheduled to start at $t = 1$ and given they require the same machine, this means that the constraint has been violated. The pairwise product of $x_{i,t}$ values is therefore no longer always equal to 0, as for $t = 1$ we have: $x_{3,1} \cdot x_{4,1} = 1$
 
-You can now use this knowledge to mathematically formulate our constraint.
+You can now use this knowledge to mathematically formulate the constraint.
 
 ### Penalty formulation
 
