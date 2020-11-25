@@ -6,7 +6,7 @@ For the purposes of this module, we’ll consider data stored in structured and 
 
 Within Azure Synapse Studio, you can write Transact-SQL code that runs against any configured SQL Pools within the workspace. Similarly, within the same Transact-SQL script, you can read and digest data from Azure Blob Storage or Azure Data Lake and insert it into a table within the SQL Pool
 
-## Perform data loads using Azure synapse pipeline data Flows.
+## Perform data loads using Azure synapse pipeline data flows.
 
 Data flows are a key feature within the Azure Synapse Studio experience. You can access the data flows from the Integrate hub. From within the Develop hub, you’re able to access configured source repositories and run transformations against them to a variety of destinations referred to as sinks.
 

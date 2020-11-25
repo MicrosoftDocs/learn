@@ -59,7 +59,7 @@ Your organization has asked you if there is a way to mark queries executed by th
 
     You should see an output similar to the following:
 
-    ![SQL query results.](../media/sql-query-2-results.png)
+    ![Viewing the SQL query results.](../media/sql-query-2-results.png)
 
     Notice that the **Importance** level for all queries is set to **normal**.
 
@@ -109,7 +109,7 @@ Your organization has asked you if there is a way to mark queries executed by th
 
 16. Select **Pipeline runs (1)**, and then select **Cancel recursive (2)** for each running Lab 08 pipelines, marked **In progress (3)**. This will help speed up the remaining tasks.
 
-    ![The cancel recursive option is shown.](../media/cancel-recursive.png)
+    ![Cancel recursive option is shown.](../media/cancel-recursive.png)
 
 ### Reserve resources for specific workloads through workload isolation
 
@@ -177,7 +177,7 @@ Let's start by experimenting with different parameters.
 
 8. Select the **Lab 08 - Execute Business Analyst Queries** Pipeline **(1)**, which will run / trigger  `asa.sql.workload02` queries. Select **Add trigger (2)**, then **Trigger now (3)**. In the dialog that appears, select **OK**.
 
-    ![The add trigger and trigger now menu items are highlighted.](../media/trigger-business-analyst-queries-pipeline.png)
+    ![The add trigger menu item.](../media/trigger-business-analyst-queries-pipeline.png)
 
 9. In the query window, replace the script with the following to see what happened to all the `asa.sql.workload02` queries we just triggered as they flood the system:
 
@@ -196,7 +196,7 @@ Let's start by experimenting with different parameters.
 
     You should see an output similar to the following that shows the importance for each session set to `below_normal`:
 
-    ![The script results show that each session was executed with below normal importance.](../media/sql-result-below-normal.png "SQL script")
+    ![The script results shows the session was executed with below normal importance.](../media/sql-result-below-normal.png "SQL script")
 
     Notice that the running scripts are executed by the `asa.sql.workload02` user **(1)** with an Importance level of **below_normal (2)**. We have successfully configured the business analyst queries to execute at a lower importance than the CEO queries. We can also see that the `CEODreamDemo` Workload Classifier works as expected.
 
@@ -206,7 +206,7 @@ Let's start by experimenting with different parameters.
 
 12. Select **Pipeline runs (1)**, and then select **Cancel recursive (2)** for each running Lab 08 pipelines, marked **In progress (3)**. This will help speed up the remaining tasks.
 
-    ![The cancel recursive option is shown.](../media/cancel-recursive-option.png)
+    ![The cancel recursive option.](../media/cancel-recursive-option.png)
 
 13. Return to the query window under the **Develop** hub. In the query window, replace the script with the following to set 3.25% minimum resources per request:
 
