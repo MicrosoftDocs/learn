@@ -75,7 +75,7 @@ source ./venv/bin/activate
 
 ## Install Flask and other libraries
 
-With our virtual environment created and activated, we can now install the library we need for our website - Flask. We'll do this by following a common convention, creating a **requirements.txt** file. The **requirements.txt** file isn't special in and of itself; it's a text file where we list the libraries required for our application. But it is the convention typically used by developers, and makes it easier to manage applications where numerous libraries are dependencies. In fact, when we deploy to Azure the process will look for a **requirements.txt** file and automatically install the packages listed there.
+With our virtual environment created and activated, we can now install the library we need for our website - Flask. We'll do this by following a common convention, creating a **requirements.txt** file. The **requirements.txt** file isn't special in and of itself; it's a text file where we list the libraries required for our application. But it is the convention typically used by developers, and makes it easier to manage applications where numerous libraries are dependencies.
 
 During later exercises we will use a couple of other libraries including **requests** (to call Translator service), and **python-dotenv** (to manage our keys). While we don't need them quite yet, we're going to make our lives a little easier by installing them now.
 
