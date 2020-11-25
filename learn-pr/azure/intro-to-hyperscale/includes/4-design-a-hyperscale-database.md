@@ -54,7 +54,7 @@ Our contactless payment app will also need real-time analytics. These **OLAP wor
 
 ## Choose how to distribute data
 
-Choosing how to distribute, or shard, your data is one of the most important modeling decisions you'll make. Hyperscale distributes your data based on the distribution column.
+Choosing how to distribute, or shard, your data is one of the most important modeling decisions you'll make. Hyperscale distributes your data based on distribution columns you choose.
 
 **Multi-tenant apps** are usually distributed via a *tenant id*. Common instances include company, account, organization, or customer. The column name will be something like *company_id* or *customer_id*.
 
