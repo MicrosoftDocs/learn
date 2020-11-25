@@ -34,7 +34,7 @@ Let's create a new Azure VM with PowerShell.
 1. This will take a few minutes to complete. Once it does, you can query it and assign the VM object to a variable (`$vm`).
 
     ```powershell
-    $vm = {Get-AzVM -Name "testvm-eus-01" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>}
+    $vm = (Get-AzVM -Name "testvm-eus-01" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>)
     ```
 
 1. Then query the value to dump out the information about the VM:

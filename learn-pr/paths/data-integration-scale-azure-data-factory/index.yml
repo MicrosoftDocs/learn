@@ -3,7 +3,7 @@ uid: learn.wwl.data-integration-scale-azure-data-factory
 metadata:
   title: Data integration at scale Azure Data Factory
   description: Data integration at scale with Azure Data Factory
-  ms.date: 10/18/2020
+  ms.date: 11/25/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -11,9 +11,9 @@ metadata:
 title: Data integration at scale with Azure Data Factory
 prerequisites: |
   The following pre-requisite should be completed:
-  1. Successfully login to the Azure portal
-  2. Understand the Azure storage options
-  3. Understand the Azure compute options
+  -  Successfully login to the Azure portal
+  -  Understand the Azure storage options
+  - Understand the Azure compute options
 summary: |
   In this learning path, the students will learn how to create and manage data pipelines in the cloud using Azure Data Factory.
 iconUrl: /learn/achievements/data-integration-scale-azure-data-factory.svg
@@ -28,6 +28,9 @@ modules:
 - learn.wwl.integrate-data-azure-data-factory
 - learn.wwl.petabyte-scale-ingestion-azure-data-factory
 - learn.wwl.perform-code-free-transformation-scale-azure-data-factory
+- learn.wwl.orchestrate-data-movement-transformation-azure-data-factory
+- learn.wwl.execute-existing-ssis-packages-azure-data-factory
+- learn.wwl.operationalize-your-azure-data-factory-pipelines
 - learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory
 trophy:
   uid: learn.wwl.data-integration-scale-azure-data-factory.trophy

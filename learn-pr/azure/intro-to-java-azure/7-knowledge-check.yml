@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-java-azure.7-knowledge-check
+metadata:
+  title: Check your knowledge
+  description: Knowledge check
+  ms.date: 11/16/2020
+  author: SandraAhlgrimm
+  ms.author: sakriema
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Check your knowledge
+durationInMinutes: 4
+quiz:
+  questions:
+  - content: "Where can I deploy my maven packaged Spring Boot Application?"
+    choices:
+    - content: "App Service"
+      isCorrect: false
+      explanation: "You can easily deploy the maven or gradle packaged Spring Boot Application. But it might not be the only solution Azure provides for you."
+    - content: "VM"
+      isCorrect: false
+      explanation: "Even though it's possible to deploy the packaged Spring Boot Application on a VM in Azure. It's not the preferred way to do so, as Azure provides more support with other Services."
+    - content: "Spring Cloud"
+      isCorrect: false
+      explanation: "Spring Cloud is the home of distributed Spring Boot Services."
+    - content: "All three above."
+      isCorrect: true
+      explanation: "Given your overall situation, if you are at the beginning of a _Lift and Shift_ migration towards the cloud, or you start cloud native. Azure provides you with various services to choose from."
+  - content: "Maven helps to automatically deploy the application to Azure App Service."
+    choices:
+    - content: "No. The Azure portal is the only way to deploy an application to Azure App Service."
+      isCorrect: false
+      explanation: "Even though, you can easily deploy the maven or gradle packaged application via the Azure portal, it might not be the only solution Azure provides for you."
+    - content: "Yes. Maven can not only package our application, but also add the required plugin and run the deployment to Azure App Service."
+      isCorrect: true
+      explanation: "Yes. The statement is correct. Maven is a powerful build tool."
+  - content: "What types of Java applications can be deployed on Azure?"
+    choices:
+    - content: "Desktop applications"
+      isCorrect: false
+      explanation: "Yes, but did you miss some other choices?"
+    - content: "Microservices"
+      isCorrect: false
+      explanation: "Yes, but did you miss some other choices?"
+    - content: "Monolithic application."
+      isCorrect: false
+      explanation: "Yes, but did you miss some other choices?"
+    - content: "All the three above."
+      isCorrect: true
+      explanation: "Even though, it always depends for the specific application, Azure offers services for all of these application types."

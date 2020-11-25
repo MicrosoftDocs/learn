@@ -38,8 +38,8 @@ In this task, you create a SQL database based on the _AdventureWorksLT_ sample d
     | Setting | Value | 
     | --- | --- |
     | Connectivity method | **Public endpoint** (default) |    
-    
-    ![Screenshot of the Networking tab of the Create SQL Database pane with settings selected.](../media/tab.png)
+   
+    :::image type="content" source="../media/tab.png" alt-text="Screenshot of the Networking tab of the Create SQL Database pane with settings selected.":::
 
 1. Select the **Additional settings** at the top, and configure the following settings.
 
@@ -79,7 +79,7 @@ In this task, you configure the server and run a SQL query.
 
     ![Screenshot of the Query Editor sign-in page with the IP address error.](../media/query-editor-login.png)
 
-1. Select **Overview** > **Firewall settings**.
+1. Select **Overview** > **Set server firewall**.
 
 1. In **Client IP address** your IP will be shown, create a **Rule name** > Add your IP in both **Start IP and End IP** and then select **Save**. 
 

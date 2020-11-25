@@ -38,7 +38,7 @@ Where `NNN.NNN.NNN.NNN` is your public-facing IP address.
 
 Using the commands in the previous exercise creates an Azure storage account with secure transfer enabled by default. If your file shares were created without this feature enabled, it's easy to do that in the portal.
 
-![Screenshot of the configuration page of storage accounts](../media/5-secure-transfer.png)
+:::image type="content" source="../media/5-secure-transfer.png" alt-text="Screenshot of the configuration page of storage accounts.":::
 
 Or you can automate it with a PowerShell command:
 
@@ -84,4 +84,4 @@ The snapshots are easy to create in the Azure portal or with the REST API, clien
 
 Snapshots are at the root level of a file share and apply to all the folders and files contained in it.
 
-![Screenshot showing the Create Snapshot option](../media/5-create-snapshot.png)
+:::image type="content" source="../media/5-create-snapshot.png" alt-text="Screenshot showing the Create Snapshot option.":::

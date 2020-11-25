@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.use-docker-container-dev-env-vs-code.5-exercise-forward-ports
+title: Exercise - Forward ports for local development
+metadata:
+  title: Exercise - Forward ports for local development
+  description: Explore the port forwarding experience in Visual Studio Code and modify your existing port forwarding setup.
+  ms.date: 11/13/2020
+  author: bamurtaugh
+  ms.author: brmurtau
+  ms.topic: interactive-tutorial
+  ms.prod: learning
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-forward-ports.md)]
