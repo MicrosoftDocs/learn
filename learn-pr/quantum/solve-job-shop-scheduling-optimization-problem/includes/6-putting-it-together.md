@@ -10,7 +10,7 @@ As a reminder, here are the penalty terms:
 
 - **Precedence constraint**:
 
-$$f(x) = \sum_{k_{n-1} \leq i < k_n}_{t+p_i>s}x_{i,t}\cdot x_{i+1,s} \text{ for each job } \textit{n}$$
+$$f(x) = \sum_{k_{n-1} \leq i < k_n, s < t + p_{i}}x_{i,t}\cdot x_{i+1,s} \text{ for each job } \textit{n}$$
 
 - **Operation once constraint**:
 
@@ -28,6 +28,7 @@ $$\text{where }\alpha, \beta \text{ and } \gamma \text{ represent the different 
 
 The weights represent how important each penalty function is, relative to all the others.
 
+> [!NOTE]
 > Along with modifying your cost function (i.e. how you represent the penalties), tuning these weights will define how much success you will have solving your optimization problem. There are many ways to represent each optimization problem's penalty functions and many ways to manipulate their relative weights, so this may require some experimentation before you see success.
 
 ### Code

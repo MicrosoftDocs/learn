@@ -38,7 +38,7 @@ To avoid violating this constraint, the start time of $O_{4}$ (denoted by $s$) m
 |0|2|2, 3, 4|
 |1|3|3, 4|
 |2|4|4|
-||<div style="text-align: right">**Valid?**</div>|✔|
+||**Valid configuration?**|✔|
 
 The ✔ means that any $s$ value in this column is valid, as it doesn't violate the precedence constraint.
 
@@ -49,7 +49,7 @@ Conversely, if $s$ is less than $t + p_{3}$ (i.e. $O_{4}$ starts before $O_{3}$ 
 |0|2|2, 3, 4|0, 1|
 |1|3|3, 4|0, 1, 2|
 |2|4|4|0, 1, 2, 3|
-||<div style="text-align: right">**Valid?**</div>|✔|✘|
+||**Valid configuration?**|✔|✘|
 
 In the table above, ✘ has been used to denote that any $s$ value in the last column is invalid, as it violates the precedence constraint.
 
@@ -60,7 +60,7 @@ This is formulated as a penalty by counting every time consecutive operations $O
 As you saw above: for an operation $O_{i}$, if the start time of $O_{i + 1}$ (denoted by $s$) is less than the start time of $O_{i}$ (denoted by $t$) plus its processing time $p_{i}$, then that counts as a penalty. Mathematically, this penalty condition looks like: $s < t + p_{i}$
 
 You sum that penalty over all the operations of a job ($J_{n}$) for all the jobs:
-$$f(x) = \mathop{\sum_{k_{n-1} \leq i < k_n}}_{s < t + p_{i}}x_{i,t}\cdot x_{i+1,s} \text{ for each job } \textit{n} \text{,}$$
+$$f(x) = \sum_{k_{n-1} \leq i < k_n, s < t + p_{i}}x_{i,t}\cdot x_{i+1,s} \text{ for each job } \textit{n}$$
 
 Let's break that down:
 

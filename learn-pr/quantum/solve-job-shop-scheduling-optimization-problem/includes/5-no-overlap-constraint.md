@@ -16,8 +16,8 @@ For this final constraint, $J_{1}$ will once again be used as an example:
 
 Recall once more the variable $x_{i,t}$:
 
-$$\text{If } x_{i,t} &= 1, \text{ } O_i\text{ starts at time } \textit{t}$$
-$$\text{If } x_{i,t} &= 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
+$$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
+$$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
 Let's say that $O_{3}$ and $O_{4}$ must be completed using the same machine. To avoid violating the no overlap constraint, you must ensure that $O_{3}$ and $O_{4}$ begin at different times: i.e. $x_{3,t}$ and $x_{4,t}$ must not equal 1 at the same time.
 
@@ -28,8 +28,8 @@ One example of a valid configuration is shown below:
 |0|1|0|0|
 |1|0|1|0|
 |2|0|0|0|
-|||<div style="text-align: right">$\sum_{t} x_{3,t} \cdot x_{4,t} =$</div>|0|
-|||<div style="text-align: right">**Valid?**</div>|✔|
+|||$\sum_{t} x_{3,t} \cdot x_{4,t} =$|0|
+|||**Valid configuration?**|✔|
 
 As you can see, when you compare $x_{i,t}$ values pairwise at each time in the simulation, their product always equals 0.
 
@@ -40,8 +40,8 @@ Below, you see a configuration that violates the constraint:
 |0|0|0|0|
 |1|1|1|1|
 |2|0|0|0|
-|||<div style="text-align: right">$\sum_{t} x_{3,t} \cdot x_{4,t} =$</div>|1|
-|||<div style="text-align: right">**Valid?**</div>|✘|
+|||$\sum_{t} x_{3,t} \cdot x_{4,t} =$|1|
+|||**Valid configuration?**|✘|
 
 In this instance, $O_{3}$ and $O_{4}$ are both scheduled to start at $t = 1$ and given they require the same machine, this means that the constraint has been violated. The pairwise product of $x_{i,t}$ values is therefore no longer always equal to 0, as for $t = 1$ we have: $x_{3,1} \cdot x_{4,1} = 1$
 

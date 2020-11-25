@@ -107,6 +107,7 @@ You will use this variable to represent whether an operation starts at time $t$ 
 $$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
 $$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
+> [!NOTE]
 > This makes this a binary optimization – more generally, this is called a polynomial unconstrained binary optimization (or PUBO) problem. You may also see these PUBO problems referred to as Higher Order Binomial Optimization (HOBO) problems - these terms both refer to the same thing.
 
 $t$ is used to represent the simulation time. It goes from time $0$ through to $T$ in integer steps. $T$ is the longest time the whole set of jobs can take in total (i.e. the max simulation time):

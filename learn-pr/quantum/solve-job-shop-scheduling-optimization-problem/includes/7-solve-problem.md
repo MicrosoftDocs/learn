@@ -216,11 +216,11 @@ Translating back to the problem at hand, below is shown the order in which your 
 |$0_{0}$: Open wall panel in the life support module (*2 minutes*)|Universal multi-tool|1|
 |$0_{1}$: Replace fuse (*1 minute*)|Universal multi-tool|2|
 |**$J_{1}$: Recalibrate navigation system**||
-|$0_{2}$: Reboot the system (*2 minutes*)|1|
-|$0_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)|2|
+|$0_{2}$: Reboot the system (*2 minutes*)|Ship computer|1|
+|$0_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)|Ship computer|2|
 |**$J_{2}$: Replace power transformer in the reactor**||
-|$0_{4}$: Detach old transformer module (*1 minute*)|3|
-|$0_{5}$: Install new transformer module (*2 minutes*)|4|
+|$0_{4}$: Detach old transformer module (*1 minute*)|Universal multi-tool|3|
+|$0_{5}$: Install new transformer module (*2 minutes*)|Universal multi-tool|4|
 
 By inspection, you can tell that the solution above is valid (i.e. it does not violate any of the constraints defined previously):
 

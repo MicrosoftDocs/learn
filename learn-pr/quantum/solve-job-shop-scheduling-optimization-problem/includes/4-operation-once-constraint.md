@@ -16,8 +16,8 @@ Again, job 1 ($J_{1}$) will be used as an example:
 
 Recall the variable $x_{i,t}$:
 
-$$\text{If } x_{i,t} &= 1, \text{ } O_i\text{ starts at time } \textit{t}$$
-$$\text{If } x_{i,t} &= 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
+$$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
+$$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
 According to this constraint, $x_{i,t}$ for a specific operation should equal 1 **once and only once** during the entire simulation from $t = 0 \rightarrow T$ (because it should start once and only once during the allowed time).
 
@@ -30,8 +30,8 @@ Let’s take $O_{3}$ as an example again:
 |0|0|
 |1|1|
 |2|0|
-|<div style="text-align: right">$\sum_t {x_{3,t}} =$</div>|1|
-|<div style="text-align: right">**Valid?**</div>|✔|
+|$\sum_t {x_{3,t}} =$|1|
+|**Valid configuration?**|✔|
 
 In the right hand column, you see that $O_{3}$ starts at time 1 and no other time ($x_{3,t} = 1$ at time $t = 1$ and is $0$ otherwise). The sum of $x_{i,t}$ values over all $t$ for this example is therefore 1, which is what is expected! This is therefore a valid solution.
 
@@ -42,8 +42,8 @@ In the example below, you see an instance where $O_{3}$ is scheduled more than o
 |0|0|
 |1|1|
 |2|1|
-|<div style="text-align: right">$\sum_t {x_{3,t}} =$</div>|2|
-|<div style="text-align: right">**Valid?**</div>|✘|
+|$\sum_t {x_{3,t}} =$|2|
+|**Valid configuration?**|✘|
 
 You can see from the above that $O_{3}$ has been scheduled to start at both time 1 and time 2, so the sum of $x_{i,t}$ values over all $t$ is now greater than 1. This violates the constraint and thus you must apply a penalty.
 
@@ -54,8 +54,8 @@ In the last example, you see an instance where $O_{3}$ has not been scheduled at
 |0|0|
 |1|0|
 |2|0|
-|<div style="text-align: right">$\sum_t {x_{3,t}} =$</div>|0|
-|<div style="text-align: right">**Valid?**</div>|✘|
+|$\sum_t {x_{3,t}} =$|0|
+|**Valid configuration?**|✘|
 
 In this example, none of the $x_{3,t}$ values equal 1 for any time in the simulation, meaning the operation is never scheduled. This means that the sum of $x_{3,t}$ values over all $t$ is 0 - the constraint is once again violated and you must allocate a penalty.
 
@@ -66,8 +66,8 @@ In summary:
 |0|0|0|0|
 |1|1|1|0
 |2|0|1|0|
-|<div style="text-align: right">$\sum_t {x_{3,t}} =$</div>|1|2|0|
-|<div style="text-align: right">**Valid?**</div>|✔|✘|✘|
+|$\sum_t {x_{3,t}} =$|1|2|0|
+|**Valid configuration?**|✔|✘|✘|
 
 Now that you understand when to assign penalties, let's formulate the constraint mathematically.
 
