@@ -24,7 +24,7 @@ You need to perform these setup tasks one time during this module. You can refer
 
     A browser window appears.
 
-1. Select the user that you used to activate the sandbox and close the browser window when prompted.
+1. Select the account that you used to activate the sandbox and close the browser window when prompted.
 
 ### Set the active subscription
 
@@ -142,7 +142,7 @@ Verify that the VM is provisioned and is connectable over SSH. To do so:
       --output tsv)
     ```
 
-    When prompted, enter *yes* to continue connecting. Then enter the administrator password "insecurepassword123!".
+    When prompted, enter *yes* to continue connecting. Then enter the administrator password, *insecurepassword123!*.
 
     > [!IMPORTANT]
     > In practice, keep passwords safe. Or use public key authentication, which is typically more secure than using passwords.

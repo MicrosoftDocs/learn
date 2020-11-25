@@ -8,7 +8,7 @@ Let's say that you have three environments that you need to deploy to: _Dev_, _S
 
 As you move from _Dev_ to _Production_, you require additional infrastructure. For example, in _Production_, you require an additional storage account that you don't need in the previous environments.
 
-Here, you use a condition to control when a storage account is provisioned. Doing so enables you to support each of your infrastructure environments from just one ARM template.
+Here, you use a condition to control when a storage account is provisioned. Doing so enables you to support each of your infrastructure environments from the same ARM template.
 
 ::: zone pivot="powershell"
 

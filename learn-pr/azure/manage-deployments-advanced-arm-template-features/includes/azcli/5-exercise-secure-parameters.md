@@ -78,7 +78,7 @@ Recall that a parameter file is an alternative way to pass parameters to your AR
     }
     ```
 
-1. Replace the value of `id` with the value you copied in the previous step. Then save the file.
+1. Replace the value of `id` (the empty string) with the value you copied in the previous step. Then save the file.
 
 ## Deploy a Linux VM
 
@@ -109,7 +109,7 @@ As you did in the previous exercise, verify that the VM is provisioned and is co
       --output tsv)
     ```
 
-    When prompted, enter *yes* to continue connecting. Then enter the administrator password "insecurepassword123!".
+    When prompted, enter *yes* to continue connecting. Then enter the administrator password, *insecurepassword123!*.
 
 1. From your SSH connection to the VM, run `hostname` to print the VM's hostname:
 

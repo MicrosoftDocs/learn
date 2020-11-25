@@ -105,6 +105,6 @@ Although the output shows that two storage accounts were created, here you run t
     * **tailwindsa9820** (the base name plus "0") is the first storage account.
     * **tailwindsa9821** (the base name plus "1") is the second storage account.
 
-Great work! As your needs change, such as the performance tier you need, you can modify your needs from a single location.
+Great work! As your needs change, such as the performance tier you need, you can modify your resource definitions from a single location.
 
 [!include[](../../../../includes/azure-sandbox-cleanup.md)]
