@@ -45,3 +45,15 @@ The trial went well, and now you’re planning to start releasing your app to cu
 Hyperscale lets you scale out, seamlessly distributing and managing your data under the covers. Transactions will be spread across multiple servers, giving better transaction times, lower latency, and more room for analytical workloads.
 
 In this module, we’ll create a Hyperscale instance on Azure, design how to effectively distribute the postgres database, and then scale it. More importantly, we’ll explain what we’re doing, and why.
+
+## Prerequisites
+
+* Basic knowledge of relational databases
+
+## Learning objectives
+
+In this module, you will:
+
+* Create a Hyperscale instance of Azure Database for PostgreSQL.
+* Shard a Hyperscale database for a multi-tenant application.
+* Scale and rebalance a Hyperscale database.
