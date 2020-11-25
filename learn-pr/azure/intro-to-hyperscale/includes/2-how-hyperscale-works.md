@@ -28,12 +28,12 @@ Applications can't connect directly to worker nodes. Nodes working together allo
 
 ![Hyperscale distribute queries](../media/2c-distribute.gif)
 
-For our payment app, the server group will have one coordinator node and two worker nodes. We will shard our data, storing it on the two worker nodes.
+For our payment app, the server group will have one coordinator node and two worker nodes. We'll shard our data, storing it on the two worker nodes.
 
 ### How does Hyperscale keep track of data?
 
 Hyperscale distributes tables on different worker nodes, with metadata tables keeping track of which shards are stored where.
 
-Using the metadata tables, the coordinator node either routes queries to a single worker node, or parallelizes it across several nodes. Hyperscale evaluates whether the required data lives on a single node or multiple nodes.
+Using the metadata tables, the coordinator node either routes queries to a single worker node, or parallelizes it across several nodes. Hyperscale checks if the data lives on a single node or multiple nodes.
 
 The metadata tables also track statistics and the health of worker nodes.

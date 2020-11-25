@@ -2,9 +2,9 @@ There are, generally, two types of workloads for databases.
 
 ### What are OLTP workloads?
 
-Transactional workloads have small amounts of data with large numbers of transactions. An example could be sending a text message or purchasing clothes online. These transactions are commonly referred to as online transactional processing, or more simply **OLTP**, and are the most common type of workload.
+Transactional workloads have small amounts of data with large numbers of transactions. An example could be sending a text or purchasing clothes online. These transactions are commonly referred to as online transactional processing, or more simply **OLTP**, and are the most common type of workload.
 
-For our contactless payment app, our workloads will mostly be OLTP workloads - account-to-account transactions. The transactions will have small amounts of data, but occur in large numbers.
+Our contactless payment app will mostly have OLTP workloads - account-to-account transactions. The transactions will have small amounts of data, but occur in large numbers.
 
 ### What are OLAP workloads?
 
@@ -18,7 +18,7 @@ There are, broadly, two kinds of applications that work well on Hyperscale (Citu
 
 ### What are multi-tenant applications?
 
-Multi-Tenant applications are typically SaaS applications that serve many customers, or multiple tenants - other companies, accounts, users, or organizations. These applications are inherently relational - with a natural dimension on which to distribute data across nodes: shard by tenant_id.
+Multi-Tenant applications are typically SaaS applications that serve many customers, or multiple tenants - other companies, accounts, users, or organizations. These applications are inherently relational, with a natural dimension on which to distribute data across nodes: shard by tenant_id.
 
 **Examples**: Websites which host store-fronts for other businesses, or sales automation tools.
 **Characteristics**: Queries relating to a single tenant rather than joining information across tenants. Having dozens or hundreds of tables in your database schema. These applications have OLAP workloads for serving per-tenant analytical queries, and large OLTP workloads.

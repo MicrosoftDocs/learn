@@ -17,13 +17,13 @@ Hyperscale combines the benefits of PostgreSQL, Citus, and Azure, created by the
 
 ## What is Hyperscale?
 
-Hyperscale is a deployment option, built into Azure Database for PostgreSQL - A fully managed database-as-a-service. You keep the open-source Postgres relational database engine, while scaling as much as you want to.
 :::row:::
 :::column span="3":::
+Hyperscale is a deployment option, built into Azure Database for PostgreSQL - A fully managed database-as-a-service. You keep the open-source Postgres relational database engine, while scaling as much as you want to.
 
 Hyperscale is used when applications require high performance or massive scale.  Examples include Clearent, with over half a billion credit card transactions per year. Hyperscale takes care of the massive speed and analytical workloads for employees and customers alike.
 
-Another example is Helsinki Region Transport Authority (HSL), responsible for more than half of all public transportation in Finland. With over 1 million journeys every day made on HSL bus, train, Metro, tram, and ferry services, it’s critical to log and monitor this traffic efficiently.
+Another example is Helsinki Region Transport Authority (HSL), responsible for more than half of all public transportation in Finland. More than 1 million journeys are made every day across their bus, train, and ferry routes. It’s critical to log and monitor this traffic efficiently.
  :::column-end:::
 :::column span="2":::
 
@@ -43,4 +43,4 @@ The trial went well, and now you’re planning to start releasing your app to cu
 
 Hyperscale lets you scale out, seamlessly distributing and managing your data under the covers. Transactions will be spread across multiple servers, giving better transaction times and more room for analytical workloads.
 
-In this module, we’ll create a Hyperscale instance on Azure, design how to effectively distribute the postgres database, and scale it. More importantly, we’ll explain what we’re doing, and why.
+In this module, we’ll create a Hyperscale instance on Azure, design how to effectively distribute the postgres database, and then scale it. More importantly, we’ll explain what we’re doing, and why.

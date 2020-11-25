@@ -44,7 +44,7 @@ For a total of 12 vCores and 1.5 TiB of storage.
 6. Select the **Networking** tab at the top of the page
 7. Select **Add All 0.0.0.0 - 255.255.255.255**
 
-![Configure Hyperscale form](../media/3d-firewall.png)
+![Configure Hyperscale firewall](../media/3d-firewall.png)
 
 8. Scroll to the bottom of the page and Select the blue **Review + create** button.
 
