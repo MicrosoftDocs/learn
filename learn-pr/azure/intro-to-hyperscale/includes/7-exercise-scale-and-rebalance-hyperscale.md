@@ -30,11 +30,12 @@ To take advantage of newly added nodes, we must rebalance distributed table shar
 
 7. Connect to your Hyperscale instance with the following command, using your password:
 
-   ```psql
+```psql
    psql "host=payment-server-demo-c.postgres.database.azure.com port=5432 dbname=citus user=citus password={YOUR-PASSWORD-HERE} sslmode=require"
-   ```
-    > [!NOTE]
-    > You can reset your password in the [Azure Portal](https://portal.azure.com). Select the `payment-server-demo` resource, then select `Reset password` 
+```
+
+> [!NOTE]
+> You can reset your password in the [Azure Portal](https://portal.azure.com). Select the `payment-server-demo` resource, then select `Reset password` 
 
 8. In the Cloud Shell window, run the following query to rebalance the shards for our payment_events and payment_users tables:
 
