@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.configure-database-authentication-authorization.8-exercise-authorize-access-sql-database-azure-active-directory
+uid: learn.wwl.configure-database-authentication-authorization.exercise-authorize-access-sql-database-azure-active-directory
 title: 'Exercise: Authorize Access to Azure SQL Database with Azure Active Directory'
 metadata:
   title: 'Exercise: Authorize Access to Azure SQL Database with Azure Active Directory'
   description: "Exercise: Authorize Access to Azure SQL Database with Azure Active Directory"
-  ms.date: 11/24/2020
+  ms.date: 11/25/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
