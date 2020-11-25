@@ -11,8 +11,8 @@ The precedence constraint is defined as follows:
 Let's take job 1 ($J_{1}$) as an example:
 
 - $J_{1}$: Recalibrate navigation system
-  - $0_{2}$: Reboot the system (*2 minutes*)
-  - $0_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)
+  - $O_{2}$: Reboot the system (*2 minutes*)
+  - $O_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)
 
 Let's formulate the penalty conditions for $O_{3}$ and $O_{4}$: you want to add a penalty if $O_{4}$ starts before $O_{3}$ finishes. First, you'll define the terms and set some of their values:
 

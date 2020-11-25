@@ -213,14 +213,14 @@ Translating back to the problem at hand, below is shown the order in which your 
 |Repair task|Required tool|Order|
 |---|---|---|
 |**$J_{0}$: Restart life support**||
-|$0_{0}$: Open wall panel in the life support module (*2 minutes*)|Universal multi-tool|1|
-|$0_{1}$: Replace fuse (*1 minute*)|Universal multi-tool|2|
+|$O_{0}$: Open wall panel in the life support module (*2 minutes*)|Universal multi-tool|1|
+|$O_{1}$: Replace fuse (*1 minute*)|Universal multi-tool|2|
 |**$J_{1}$: Recalibrate navigation system**||
-|$0_{2}$: Reboot the system (*2 minutes*)|Ship computer|1|
-|$0_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)|Ship computer|2|
+|$O_{2}$: Reboot the system (*2 minutes*)|Ship computer|1|
+|$O_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)|Ship computer|2|
 |**$J_{2}$: Replace power transformer in the reactor**||
-|$0_{4}$: Detach old transformer module (*1 minute*)|Universal multi-tool|3|
-|$0_{5}$: Install new transformer module (*2 minutes*)|Universal multi-tool|4|
+|$O_{4}$: Detach old transformer module (*1 minute*)|Universal multi-tool|3|
+|$O_{5}$: Install new transformer module (*2 minutes*)|Universal multi-tool|4|
 
 By inspection, you can tell that the solution above is valid (it does not violate any of the constraints defined previously):
 

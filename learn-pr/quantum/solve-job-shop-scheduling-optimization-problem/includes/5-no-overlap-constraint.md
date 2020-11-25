@@ -11,8 +11,8 @@ The no overlap constraint is defined as follows:
 For this final constraint, $J_{1}$ will once again be used as an example:
 
 - $J_{1}$: Recalibrate navigation system
-  - $0_{2}$: Reboot the system (*2 minutes*)
-  - $0_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)
+  - $O_{2}$: Reboot the system (*2 minutes*)
+  - $O_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)
 
 Recall once more the variable $x_{i,t}$:
 

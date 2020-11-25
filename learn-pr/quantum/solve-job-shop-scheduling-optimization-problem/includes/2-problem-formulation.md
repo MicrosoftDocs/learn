@@ -69,16 +69,16 @@ The first step is to take the constraints identified above and formulate them as
 Let's first introduce some notation because you don't have time during an emergency to write things out in long form!
 
 - $J_{0}$: Restart life support
-  - $0_{0}$: Open wall panel in the life support module (*2 minutes*)
-  - $0_{1}$: Replace fuse (*1 minute*)
+  - $O_{0}$: Open wall panel in the life support module (*2 minutes*)
+  - $O_{1}$: Replace fuse (*1 minute*)
 
 - $J_{1}$: Recalibrate navigation system
-  - $0_{2}$: Reboot the system (*2 minutes*)
-  - $0_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)
+  - $O_{2}$: Reboot the system (*2 minutes*)
+  - $O_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)
 
 - $J_{2}$: Replace power transformer in the reactor
-  - $0_{4}$: Detach old transformer module (*1 minute*)
-  - $0_{5}$: Install new transformer module (*2 minutes*)
+  - $O_{4}$: Detach old transformer module (*1 minute*)
+  - $O_{5}$: Install new transformer module (*2 minutes*)
 
 Above, you can see that the jobs have been labeled as $J$ and assigned index numbers $0$, $1$ and $2$, to represent each of the three tasks you have. The operations that make up each job have also been defined, and are represented by the letter $O$.
 
