@@ -1,4 +1,4 @@
-To get started writing our Flask application with Python we need to setup our development environment, which will require a couple of items installed. Fortunately, the tools we'll use are relatively comm, so they will serve you well even beyond this module; you might even have them installed! We'll use these tools to develop and test locally, and deploy to Azure a little later in the exercise.
+To get started writing our Flask application with Python we need to setup our development environment, which will require a couple of items installed. Fortunately, the tools we'll use are relatively common, so they will serve you well even beyond this module; you might even have them installed! We'll use these tools to develop and test your application locally.
 
 In this unit, you'll learn how to install Python tooling and create a virtual Python environment. You'll install Flask, which is the framework we'll use for creating the website.
 
