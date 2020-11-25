@@ -29,7 +29,7 @@
 
     > If the script is still running after 45 seconds, click on Cancel.
 
-    > **Note to presenter**: _Do not_ execute this query ahead of time. If you do, the query may run faster during subsequent executions.
+    > [!Note] _Do not_ execute this query ahead of time. If you do, the query may run faster during subsequent executions.
 
     ![The COUNT_BIG result is displayed.](../media/count-big-1.png "SQL script")
 
@@ -59,7 +59,7 @@
 
     ![The query execution time of 32 seconds is highlighted in the query results.](../media/sale-heap-result.png "Sale Heap result")
 
-    > Note the OPTION clause used in the statement. This comes in handy when you're looking to identify your query in the [sys.dm_pdw_exec_requests](https://docs.microsoft.com/sql/relational-databases/system-dynamic-management-views/sys-dm-pdw-exec-requests-transact-sql) DMV.
+    > [!Note] the OPTION clause used in the statement. This comes in handy when you're looking to identify your query in the [sys.dm_pdw_exec_requests](https://docs.microsoft.com/sql/relational-databases/system-dynamic-management-views/sys-dm-pdw-exec-requests-transact-sql) DMV.
     >
     >```sql
     >SELECT  *
@@ -99,15 +99,14 @@
     )
     ```
 
-    > **Note to presenter**: *Do not* run this script! It is just for demonstration purposes to review the schema.
+    > [!Note] *Do not* run this script! It is just for demonstration purposes to review the schema.
 
     You can immediately spot at least two reasons for the performance hit:
 
     - The `ROUND_ROBIN` distribution
     - The `HEAP` structure of the table
 
-    > **NOTE**
-    >
+    > [!Note]
     > In this case, when we are looking for fast query response times, the heap structure is not a good choice as we will see in a moment. Still, there are cases where using a heap table can help performance rather than hurting it. One such example is when we're looking to ingest large amounts of data into the SQL pool.
 
     If we were to review the query plan in detail, we would clearly see the root cause of the performance problem: inter-distribution data movements.

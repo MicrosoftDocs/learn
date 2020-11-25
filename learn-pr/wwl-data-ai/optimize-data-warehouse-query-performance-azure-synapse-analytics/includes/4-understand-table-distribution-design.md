@@ -4,11 +4,11 @@ The design decisions around how to split and disperse this data among the nodes 
 
 There are three main table distributions available in Synapse Analytics SQL Pools that will be described below:
 
-[!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Table-Geometries/player?format=ny] 
+> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Table-Geometries/player?format=ny] 
 
 Selecting the correct table distribution can have an impact on the data load and query performance as follows:
 
-## Round Robin Distribution
+## Round robin distribution
  
 ![A round robin table distribution](../media/round-robin.png)
 
@@ -20,7 +20,7 @@ It is quick to load data into a round-robin table, but query performance can oft
 
 Joins on round-robin tables may negatively affect query workloads, as data that is gathered for processing then has to be reshuffled to other compute nodes, which take additional time and processing.
 
-## Hash Distribution
+## Hash distribution
  
 ![A hash table distribution](../media/hash-distribution.png)
 
@@ -30,7 +30,7 @@ To shard data, a hash function is used to deterministically assign each row to a
 
 There are performance considerations for the selection of a distribution column, such as distinctness, data skew, and the types of queries that run on the system.
 
-## Replicated Tables
+## Replicated tables
  
 ![A replicated table distribution](../media/replicated.png)
 

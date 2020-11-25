@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/24/2020
+  ms.date: 11/25/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -13,14 +13,14 @@ azureSandbox: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which is the default distribution used for a table in Synapse Analytics?”"
+  - content: "Which is the default distribution used for a table in Synapse Analytics?"
     choices:
     - content: "HASH."
       isCorrect: false
-      explanation: "Incorrect. Hash distributions are explicitly defined and require a hashing columns to be defined for the distribution function. These are best used for larger Fact tables."
+      explanation: "Incorrect. Hash distributions are explicitly defined and require a hashing columns to be defined for the distribution function. Hash distributions are best used for larger Fact tables."
     - content: "Round-Robin."
       isCorrect: true
-      explanation: "Correct. This is the default distribution created for a table and delivers fast performance when used for loading data but may negatively impact larger queries."
+      explanation: "Correct. Round-Robin is the default distribution created for a table and delivers fast performance when used for loading data but may negatively impact larger queries."
     - content: "Replicated Table."
       isCorrect: false
       explanation: "Incorrect. Replicated tables are explicitly defined and result in a copy of the table being made on each compute node."
@@ -28,7 +28,7 @@ quiz:
     choices:
     - content: "Columnstore."
       isCorrect: true
-      explanation: "Correct. This is the default index type created for a table. It works on segments of rows that get compressed and optimised by column."
+      explanation: "Correct. This is the default index type created for a table. It works on segments of rows that get compressed and optimized by column."
     - content: "Rowstore."
       isCorrect: false
       explanation: "Incorrect. Rowstore indexes write multiple data types and values per row of data and so compression functions are less likely to be able to reduce the size through pattern matching and offsets."

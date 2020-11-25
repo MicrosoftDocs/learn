@@ -3,7 +3,7 @@ uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics
 metadata:
   title: Optimize data warehouse query performance in Azure Synapse Analytics
   description: "Optimize data warehouse query performance in Azure Synapse Analytics"
-  ms.date: 11/24/2020
+  ms.date: 11/25/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Use indexes to improve query performance
   - Create statistics to improve query performance
   - Improve query performance with Materialized Views
-  - Use Read committed snapshot for data consistency
+  - Use read committed snapshot for data consistency
   - Optimize common queries with result-set caching
 prerequisites: |
   - Before taking this module, it is recommended that you complete Data Fundamentals.
@@ -40,5 +40,6 @@ units:
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.use-read-committed-snapshot-for-data-consistency
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.optimize-common-queries-with-result-set-caching
 - learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.knowledge-check
+- learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.summary
 badge:
   uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.badge

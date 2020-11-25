@@ -1,4 +1,4 @@
-## Create hash distribution table with a CLUSTERED COLUMNSTORE INDEX
+## Create hash distribution table with a clustered columnstore index
 
 1. Select the **Develop** hub.
 
@@ -34,8 +34,7 @@
 
     The query will take up to **4.5 minutes** to complete.
 
-    > **NOTE**
-    >
+    > [!Note]
     > CTAS is a more customizable version of the SELECT...INTO statement.
     > SELECT...INTO doesn't allow you to change either the distribution method or the index type as part of the operation. You create the new table by using the default distribution type of ROUND_ROBIN, and the default table structure of CLUSTERED COLUMNSTORE INDEX.
     >

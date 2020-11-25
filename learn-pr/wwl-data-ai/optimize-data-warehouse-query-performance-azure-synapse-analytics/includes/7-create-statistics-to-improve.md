@@ -13,7 +13,7 @@ When you create a database in a dedicated SQL pool in Azure Synapse Analytics, t
 -	DELETE
 -	EXPLAIN when containing a join or the presence of a predicate is detected
 
-It is important to note that when executing the above Transact-SQL statements, that the statistics creation is performed on the fly, and as a result, there can be a slight degradation in query performance. 
+When executing the above Transact-SQL statements, that the statistics creation is performed on the fly, and as a result, there can be a slight degradation in query performance. 
 
 To avoid this, statistics are also created on any index that you create that helps aid the query optimize process. As this is an action that is performed in advance of querying the table on which the index is based, it means that the statistics are created in advance. However, you must consider that as new data is loaded into the table, the statistics may become out of date.
 
