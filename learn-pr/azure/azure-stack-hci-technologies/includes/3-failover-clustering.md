@@ -22,7 +22,7 @@ A failover cluster consists of the following components:
 - Resources. Resources are physical or logical elements such as a shared folder, disk, or IP address, which the failover cluster manages. Resources may provide service to clients or may be integral parts of highly available applications. Resources are the most basic and smallest configurable failover cluster components. A resource can run only on a single node at any given time.
 - Cluster storage. In addition to its own local storage, where the Windows Server or the Azure Stack HCI operating system is installed, each cluster node has access to highly available shared storage, where application configuration and data reside. For example, cluster storage hosts configuration data and virtual hard disks of highly available guest VMs.
 
-:::image type="content" source="../media/3-failover-cluster-architecture.png" alt-text="A graphic depicting the architecture of a failover cluster with two nodes and shared storage." border="false":::
+:::image type="content" source="../media/3-failover-cluster-architecture.png" alt-text="A graphic depicting the architecture of a failover cluster with two nodes and shared storage." border="true":::
 
 > [!NOTE]
 > The Storage Spaces Direct technology allows for sharing disks that are attached to individual nodes.
