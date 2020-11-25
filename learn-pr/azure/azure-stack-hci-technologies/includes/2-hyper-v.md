@@ -5,7 +5,7 @@ To start your exploration of Azure Stack HCI technologies, you'll start with its
 Hyper-V is the Microsoft implementation of hypervisor. Hyper-V leverages the resources of a single *host* computer by distributing them across multiple virtual machines (VMs) running on the same physical hardware. Hyper-V provides an isolated space for each VM to run its own operating system (OS) that's independent of the host's OS and other VMs.
 
 > [!NOTE]
-> Hyper-V is available as a server role for Windows Server and Azure Stack HCI, as a feature in 64-bit versions of the Windows client OS, and as a standalone product called *Microsoft Hyper-V Server*. Each Hyper-V version includes similar features, and this module focuses on the Hyper-V server role for Windows Server.
+> Hyper-V is available as a server role for Windows Server and Azure Stack HCI, as a feature in 64-bit versions of the Windows client OS, and as a standalone product called Microsoft Hyper-V Server. Each Hyper-V version includes similar features, and this module focuses on the Hyper-V server role for Windows Server.
 
 ## Hyper-V architecture
 
@@ -13,9 +13,9 @@ When you install the Hyper-V server role, the installation process implements a 
 
 The following diagram depicts the high-level architecture of Hyper-V. The Hyper-V hypervisor takes full control of the hardware virtualization capabilities (depicted by the arrow from the CPU layer to the Hypervisor layer) and does not expose them to the guest OS.
 
-:::image type="content" source="../media/2-hyper-v-architecture.png" alt-text="Image of a non-nested virtualization environment, with the CPU layer at the bottom, on top of which is a Hypervisor layer, followed by the root host OS and guest OS." border="true":::
+:::image type="content" source="../media/2-hyper-v-architecture.png" alt-text="Diagram of a non-nested virtualization environment, with the CPU layer at the bottom, on top of which is a Hypervisor layer, followed by the root host OS and guest OS." border="true":::
 
-An OS that runs in a VM is referred to as a *guest operating system*. Hyper-V supports all current versions of Windows Server and client operating systems in addition to a several Linux distributions, including CentOS, Red Hat Enterprise Linux, Debian, Oracle Linux, SUSE, and Ubuntu, as well as FreeBSD.
+An OS that runs in a VM is referred to as a *guest OS*. Hyper-V supports all current versions of Windows Server and client operating systems in addition to a several Linux distributions, including CentOS, Red Hat Enterprise Linux, Debian, Oracle Linux, SUSE, and Ubuntu, as well as FreeBSD.
 
 ## What is nested virtualization?
 
