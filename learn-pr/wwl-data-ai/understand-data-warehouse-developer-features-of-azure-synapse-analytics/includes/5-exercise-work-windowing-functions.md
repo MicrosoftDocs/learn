@@ -32,7 +32,7 @@ One of the key components of window functions is the OVER clause. This clause de
 
 When we use PARTITION BY with the OVER clause (1), we divide the query result set into partitions. The window function is applied to each partition separately and computation restarts for each partition.
  
-    ![Using a windowing function with the row_number function](../media/window-row-number.png)
+    ![Using a window function with the row_number function](../media/window-row-number.png)
 
 The script we executed uses the OVER clause with ROW_NUMBER function (1) to display a row number for each row within a partition. The partition in our case is the Region column. The ORDER BY clause (2) specified in the OVER clause orders the rows in each partition by the column Quantity. The ORDER BY clause in the SELECT statement determines the order in which the entire query result set is returned.
 
@@ -66,7 +66,7 @@ Now  use aggregate functions with our window by expanding on our query that uses
 
 In our query, we added the SUM, AVG, COUNT, MIN, and MAX aggregate functions. Using the OVER clause is more efficient than using subqueries.
  
-    ![Using a windowing function with aggregate functions](../media/window-aggregates.png)
+    ![Using a window function with aggregate functions](../media/window-aggregates.png)
 
 ## Analytic functions
 
@@ -97,7 +97,7 @@ To do this, you decide to build window functions that use the PERCENTILE_CONT an
  
     ![Run item in the toolbar](../media/run-item-toolbar.png)
 
-    ![Using a windowing function with analytical functions](../media/window-analytical.png)
+    ![Using a window function with analytical functions](../media/window-analytical.png)
 
 In this query, we use PERCENTILE_CONT (1) and PERCENTILE_DISC (2) to find the median number of downloads in each book category. These functions may not return the same value. PERCENTILE_CONT interpolates the appropriate value, which may or may not exist in the data set, while PERCENTILE_DISC always returns an actual value from the set. To explain further, PERCENTILE_DISC computes a specific percentile for sorted values in an entire rowset or within a rowset's distinct partitions.
 
@@ -128,7 +128,7 @@ To accomplish this, you use the LAG analytic function. This function accesses da
  
     ![Run item in the toolbar](../media/run-item-toolbar.png)
 
-    ![Viewing windowing function with analytical functions results](../media/window-analytical-results.png)
+    ![Viewing window function with analytical functions results](../media/window-analytical-results.png)
 
 In this query, we use the LAG function (1) to return the difference in sales (2) for a specific product over peak sales hours (8-20). We also calculate the difference in sales from one row to the next (3). Notice that because there is no lag value available for the first row, the default of zero (0) is returned.
 
@@ -157,7 +157,7 @@ To achieve this, you use ROWS in combination with UNBOUNDED PRECEDING to limit t
  
     ![Run item in the toolbar](../media/run-item-toolbar.png)
 
-    ![Viewing windowing function with rows unbounded preceding results](../media/window-unbounded-preceding-results.png)
+    ![Viewing window function with rows unbounded preceding results](../media/window-unbounded-preceding-results.png)
 
 In this query, we use the FIRST_VALUE analytic function to retrieve the book title with the fewest downloads, as indicated by the ROWS UNBOUNDED PRECEDING clause over the Country partition (1). The UNBOUNDED PRECEDING option set the window start to the first row of the partition, giving us the title of the book with the fewest downloads for the country within the partition.
 
