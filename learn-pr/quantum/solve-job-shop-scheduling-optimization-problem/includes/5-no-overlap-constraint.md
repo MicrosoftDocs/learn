@@ -1,5 +1,3 @@
-## No Overlap Constraint
-
 In this section, the no overlap constraint will be defined, and you will learn how to represent it mathematically and then transform it to code.
 
 The no overlap constraint is defined as follows:
@@ -14,7 +12,7 @@ $$
 \end{array}
 $$
 
-### Worked Example
+### Worked example
 
 For this final constraint, $J_{1}$ will once again be used as an example:
 
@@ -73,7 +71,7 @@ In this instance, $O_{3}$ and $O_{4}$ are both scheduled to start at $t = 1$ and
 
 You can now use this knowledge to mathematically formulate our constraint.
 
-### Penalty Formulation
+### Penalty formulation
 
 As you saw from the tables in the worked example, for the configuration to be valid, the sum of pairwise products of $x_{i,t}$ values for a machine $m$ at any time $t$ must equal 0. This gives you the penalty function:
 

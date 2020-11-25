@@ -1,5 +1,3 @@
-## Operation Once Constraint
-
 In this section, the operation once constraint will be defined, and you will learn how to represent it mathematically and then transform it to code.
 
 The operation once constraint is defined as follows:
@@ -15,7 +13,7 @@ $$
 \end{array}
 $$
 
-### Worked Example
+### Worked example
 
 Again, job 1 ($J_{1}$) will be used as an example:
 
@@ -114,7 +112,7 @@ $$
 
 Now you understand when to assign penalties, let's formulate the constraint mathematically.
 
-### Penalty Formulation
+### Penalty formulation
 
 As seen previously, you want to assign a penalty whenever the sum of $x_{i,t}$ values across all possible $t$ values is not equal to 1. This is how you represent that mathematically:
 

@@ -1,5 +1,3 @@
-## Putting it all Together
-
 Now that you have penalty terms to represent all of the constraints, you can finally assemble the cost function, $H(x)$!
 
 As a reminder, here are the penalty terms:

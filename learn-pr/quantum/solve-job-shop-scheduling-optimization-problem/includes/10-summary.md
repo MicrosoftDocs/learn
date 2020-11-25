@@ -1,5 +1,3 @@
-Write the content of the unit here. Don't use a "# H1" headline.
-
 Congratulations! You saved the day and completed all the repair tasks before disaster occurred.
 
 In this module, you have learned:
@@ -10,7 +8,7 @@ In this module, you have learned:
 - How to submit the cost function to Azure Quantum
 - How to understand & parse the results
 
-## Next Steps
+### Next steps
 
 Now that you understand the problem scenario and how to define the cost function, there are a number of experiments you can perform to deepen your understanding and improve the solution defined above:
 
@@ -28,7 +26,7 @@ Now that you understand the problem scenario and how to define the cost function
 
 You can find this tutorial in Jupyter notebook format [here]() - this will allow you to modify and experiment with the code.
 
-## Learn more about Azure Quantum & the Quantum Development Kit
+### Learn more about Azure Quantum & the Quantum Development Kit
 
 If this has piqued your interest, be sure to check out our other Azure Quantum Learn Modules.
 

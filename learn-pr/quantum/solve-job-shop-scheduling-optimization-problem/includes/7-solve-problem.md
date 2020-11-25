@@ -1,4 +1,4 @@
-## Submit Problem to Azure Quantum
+### Submit problem to Azure Quantum
 
 This code submits the terms to the Azure Quantum `SimulatedAnnealing` solver. You could also have used the same problem definition with any of the other Azure Quantum solvers available (e.g. `ParallelTempering`).
 
@@ -25,7 +25,7 @@ print(config)
     {'0': 1, '5': 0, '6': 0, '1': 0, '7': 1, '2': 0, '8': 0, '3': 0, '9': 0, '4': 0, '10': 1, '15': 0, '16': 0, '11': 0, '17': 1, '12': 0, '18': 0, '13': 0, '19': 0, '14': 0, '20': 0, '21': 0, '22': 0, '23': 1, '24': 0, '25': 0, '26': 0, '27': 0, '28': 0, '29': 1}
 ```
 
-### Run Job Asynchronously
+### Run job asynchronously
 
 Alternatively, a job can be run asynchronously, as shown below:
 
@@ -44,7 +44,7 @@ config = result['configuration']
 print(config)
 ```
 
-### Map Variables to Operations
+### Map variables to operations
 
 This code snippet contains several helper functions which are used to parse the results returned from the solver and print them to screen in a user-friendly format.
 
@@ -158,7 +158,7 @@ def print_jobs(n:int, o:int, matrix:List[List[int]]):
     print(jobs)
 ```
 
-## Results
+### Results
 
 Finally, you take the config returned by the solver and read out the results.
 

@@ -1,5 +1,3 @@
-## Precedence Constraint
-
 In this section, the precedence constraint will be defined, and you will learn how to represent it mathematically and then transform it to code.
 
 The precedence constraint is defined as follows:
@@ -13,7 +11,7 @@ $$
 \end{array}
 $$
 
-### Worked Example
+### Worked example
 
 Let's take job 1 ($J_{1}$) as an example:
 
@@ -81,7 +79,7 @@ $$
 
 In the table above, $\text{X}$ marks have been used to denote that any $s$ value in the last column is invalid, as it violates the precedence constraint.
 
-### Penalty Formulation
+### Penalty formulation
 
 This is formulated as a penalty by counting every time consecutive operations $O_{i}$ and $O_{i + 1}$ in a job take place out of order.
   

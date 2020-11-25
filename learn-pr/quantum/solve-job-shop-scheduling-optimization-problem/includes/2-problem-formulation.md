@@ -44,7 +44,7 @@ The mission is to **complete all of these tasks in as short a time as possible**
 2. Each tool (**machine**) can only do one thing at a time. For example, you can't simultaneously use the multitool to do several things. This is the **no overlap constraint**.
 3. You start an operation only once, and once started it must be completed before you do anything else. You can't afford to procrastinate! This is called the **operation once constraint**.
 
-## Cost Functions
+### Cost functions
 
 The rest of this learn module will be spent constructing what is known as a **cost function**, which is used to represent the problem. This cost function is what will be submitted to the Azure Quantum Optimization solver.
 
@@ -54,7 +54,7 @@ Unfortunately, the Azure Quantum solvers can't accept the problem in its native 
 
 The idea is to make these invalid solutions so expensive that the solver can easily locate valid, low-cost solutions by navigating to low points (minima) in the cost function. However, you must also ensure that these solutions are not so expensive as to create peaks in the cost function that are so high that the solver can't travel over them to discover better optima on the other side.
 
-## Azure Quantum Setup
+### Azure Quantum setup
 
 Before you get started with formulating the problem, you need to import some Python modules and set up an Azure Quantum `Workspace`. You will need to enter your Azure Quantum workspace details in the cell below before you run it:
 
@@ -72,7 +72,7 @@ workspace = Workspace (
 workspace.login()
 ```
 
-## Problem Formulation
+### Problem formulation
 
 Now that you have set up our development environment, you can start to formulate the problem.
 
@@ -174,7 +174,7 @@ $$
 \end{array}
 $$
 
-### Expressing a Cost Function Using the Azure Quantum Optimization SDK
+### Expressing a cost function using the Azure Quantum optimization SDK
 
 As you will see during the exploration of the cost function and its constituent penalty terms below, the overall cost function is quadratic (because the highest order polynomial term you have is squared). This makes this problem a **Quadratic Unconstrained Binary Optimization (QUBO)** problem, which is a specific subset of **Polynomial Unconstrained Binary Optimization (PUBO)** problems (which allow for higher-order polynomial terms than quadratic). Fortunately, the Azure Quantum Optimization service is set up to accept PUBO (and Ising) problems, which means you don't need to modify our representation to fit the solver.
 

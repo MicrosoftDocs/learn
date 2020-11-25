@@ -7,7 +7,7 @@ Each job consists of a set of operations, and the operations must be performed i
 
 In this module, we'll introduce the necessary concepts and tools for describing this problem in terms of a penalty model, and then solve a simple example problem using the Azure Quantum optimization service.
 
-## Learning objectives
+### Learning objectives
 
 After completing this module, you'll be able to:
 
@@ -16,7 +16,7 @@ After completing this module, you'll be able to:
 - Learn how to represent the penalty model using Azure Quantum
 - Solve optimization problems using Azure Quantum
 
-## Prerequisites
+### Prerequisites
 
 - The latest version of the [Azure Quantum Optimization SDK](TODO: Link)
 - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
