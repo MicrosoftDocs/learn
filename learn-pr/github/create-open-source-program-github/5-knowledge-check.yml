@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.github.create-open-source-program-github.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check what you've learned.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which project is the best candidate for an open-source program?"
+      choices:
+        - content: "The custom BizTalk 2004 adapter that connects your legacy warehouse database management software with a proprietary in-house supply chain system."
+          isCorrect: false
+          explanation: "This project would likely offer little value to the open-source community because it's specifically tailored for your company's unique internal systems."
+        - content: "Your company's flagship AI service that is highly regarded and produces most of your company's revenue."
+          isCorrect: false
+          explanation: "The intellectual property of this service is extremely valuable and almost surely should not be opened to the general public."
+        - content: "A client library used by customers to consume your company's services."
+          isCorrect: true
+          explanation: "As this software is designed to be used by customers, open-sourcing it could provide a great way to attract community participation."
+    - content: "Suppose your organization has decided to open-source a project. What is a good reason for your team to decide **not** to go through with it?"
+      choices:
+        - content: "You don't want outsiders judging the code your team has written."
+          isCorrect: false
+          explanation: "Opening a project to the world puts your work into the public eye. However, keep in mind that there are millions of open-source developers who all had to get used to others reviewing their work."
+        - content: "Your team doesn't have the bandwidth to properly support essential tasks like addressing issues and reviewing pull requests."
+          isCorrect: true
+          explanation: "It would be a good idea to hold off until you can properly resource the effort."
+        - content: "If the community starts offering substantial contributions to your project, then management might wonder why they have in-house developers to begin with."
+          isCorrect: false
+          explanation: "Time has shown that this isn't the case. Companies always have a need for capable engineers, especially when they can scale up using the community."
+    - content: "Which of the following files is **least** essential to an open-source project?"
+      choices:
+        - content: "`pull_request_template.md`"
+          isCorrect: true
+          explanation: "While it can be helpful to offer a pull request template, it's not essential to the success of an open-source project."
+        - content: "`README.md`"
+          isCorrect: false
+          explanation: "This file is the landing page for your project and the first thing potential contributors see when they visit the repository. It's essential because it explains the project and attracts support."
+        - content: "`LICENSE`"
+          isCorrect: false
+          explanation: "Not having a license can discourage participation because contributors may not be able to use your project to begin with. Having an explicit license makes it easier for them to clear usage and contribution."
+    - content: "How can you check how your project compares to community standards?"
+      choices:
+        - content: "Sending polls through your project's mailing list."
+          isCorrect: false
+          explanation: "This might give you opinions about your community but not check for community widely adopted best practices."
+        - content: "Starting a discussion for your community in GitHub discussions."
+          isCorrect: false
+          explanation: "You should use GitHub discussions to establish open dialogues with your team and communities."
+        - content: "Go to Insights>Community in your repository's main page."
+          isCorrect: true
+          explanation: "By checking your community insights you can get a better idea on what you can improve to make your project more welcoming to your community."
