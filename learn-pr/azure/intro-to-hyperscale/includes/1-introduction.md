@@ -17,22 +17,12 @@ Hyperscale combines the benefits of PostgreSQL, Citus, and Azure, created by the
 
 ## What is Hyperscale?
 
-:::row:::
-:::column span="2":::
 
 Hyperscale is a deployment option, built into Azure Database for PostgreSQL - A fully managed database-as-a-service. You keep the open-source Postgres relational database engine, while scaling as much as you want to.
 
 Hyperscale is used when applications require high performance or massive scale.  Examples include Clearent, with over half a billion credit card transactions per year. Hyperscale takes care of the massive speed and analytical workloads for employees and customers alike.
 
 Another example is Helsinki Region Transport Authority, responsible for more than half of all public transportation in Finland. More than 1 million journeys are made every day across their bus, train, and ferry routes. It’s critical to log and monitor this traffic efficiently.
- :::column-end:::
-:::column span="2":::
-
-#### “Hyperscale (Citus) transforms PostgreSQL into a distributed database—giving developers game-changing performance improvements and delivering queries that are magnitudes faster than proprietary implementations of Postgres”
-
-###### \- Umur Cubukcu, co-founder and CEO of Citus.
-:::column-end:::
-:::row-end:::
 
 ### Scaling out
 
