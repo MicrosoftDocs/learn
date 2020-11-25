@@ -32,7 +32,7 @@ units:
 - learn.intro-to-hyperscale.2-how-hyperscale-works
 - learn.intro-to-hyperscale.3-exercise-create-hyperscale
 - learn.intro-to-hyperscale.4-design-a-hyperscale-database
-- learn.intro-to-hyperscale.5-exercise-create-real-time-table
+- learn.intro-to-hyperscale.5-exercise-distributed-tables
 - learn.intro-to-hyperscale.6-scale-up-scale-out
 - learn.intro-to-hyperscale.7-exercise-scale-and-rebalance-hyperscale
 - learn.intro-to-hyperscale.8-knowledge-check
