@@ -37,7 +37,6 @@ Another example is Helsinki Region Transport Authority (HSL), responsible for mo
 :::column-end:::
 :::row-end:::
 
-
 ### Scaling out
 
 Hyperscale allows you to easily "scale out" - Letting a single PostgreSQL instance run on multiple servers, instead of a single server. Collectively, server groups can hold more data and use more CPU cores than a single server, while having shorter distances to users. This gives faster responses on large datasets, even over multiple regions.
@@ -59,5 +58,5 @@ In this module, we’ll create a Hyperscale instance on Azure, design how to eff
 In this module, you will:
 
 * Create a Hyperscale instance of Azure Database for PostgreSQL.
-* Shard a Hyperscale database for a multi-tenant application.
+* Shard and distribute tables in Hyperscale.
 * Scale and rebalance a Hyperscale database.
