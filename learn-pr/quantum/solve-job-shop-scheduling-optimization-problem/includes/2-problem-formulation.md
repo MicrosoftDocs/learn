@@ -10,6 +10,16 @@ Back onboard the spaceship, warning lights are flashing and alarms are blaring. 
 
 Fortunately, you have the tools, team and expertise on board to fix all the issues, however it's important that you follow procedure to ensure the repairs are successful. Below is the list of repair tasks that you must complete:
 
+- [ ] Restart life support
+  1. Open wall panel in the life support module
+  2. Replace fuse
+- [ ] Recalibrate navigation system
+  1. Reboot the system
+  2. Locate the three nearest stellar landmarks
+- [ ] Replace power transformer in the reactor
+  1. Detach old transformer module
+  2. Install new transformer module
+
 $$
 \begin{array}[t]{ | l | }
     \hline

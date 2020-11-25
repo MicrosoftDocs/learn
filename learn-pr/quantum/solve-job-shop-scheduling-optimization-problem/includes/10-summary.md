@@ -24,7 +24,7 @@ Now that you understand the problem scenario and how to define the cost function
 - Change the values of the weights and see how this affects the solution quality
 - Try using a different solver (such as `ParallelTempering`)
 
-You can find this tutorial in Jupyter notebook format [here]() - this will allow you to modify and experiment with the code.
+You can find this tutorial in Jupyter notebook format [here](TODO: add link to the notebook, wherever it will live post-public-preview) - this will allow you to modify and experiment with the code.
 
 ### Learn more about Azure Quantum & the Quantum Development Kit
 
