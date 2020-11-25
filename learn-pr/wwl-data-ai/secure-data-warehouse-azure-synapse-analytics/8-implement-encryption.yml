@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics.implement-encryption
+title: Implement encryption in azure synapse analytics
+metadata:
+  title: Implement encryption in azure synapse analytics
+  description: "Implement encryption in azure synapse analytics"
+  ms.date: 11/25/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-implement-encryption.md)]
