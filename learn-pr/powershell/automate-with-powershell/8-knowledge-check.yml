@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.automate-with-powershell.8-knowledge-check
+uid: learn.powershell.intro-to-powershell.8-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -13,7 +13,6 @@ durationInMinutes: 4
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
   questions:
     - content: What's the best way to use the help system to find out more about a command?
       choices:

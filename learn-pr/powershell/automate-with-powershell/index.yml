@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.automate-with-powershell
+uid: learn.powershell.intro-to-powershell
 metadata:
   title: Introduction to PowerShell
   description: An introduction to PowerShell, a cross-platform command-line shell
@@ -34,14 +34,14 @@ prerequisites: >
   to install Visual Studio Code extensions - Ability to install software on your
   computer (if not using a Windows PC)
 units:
-  - learn.automate-with-powershell.1-introduction
-  - learn.automate-with-powershell.2-what-is-powershell
-  - learn.automate-with-powershell.3-exercise-powershell
-  - learn.automate-with-powershell.4-commandlets
-  - learn.automate-with-powershell.5-exercise-commandlets
-  - learn.automate-with-powershell.6-pipe
-  - learn.automate-with-powershell.7-exercise-pipe
-  - learn.automate-with-powershell.8-knowledge-check
-  - learn.automate-with-powershell.9-summary
+  - learn.powershell.intro-to-powershell.1-introduction
+  - learn.powershell.intro-to-powershell.2-what-is-powershell
+  - learn.powershell.intro-to-powershell.3-exercise-powershell
+  - learn.powershell.intro-to-powershell.4-commandlets
+  - learn.powershell.intro-to-powershell.5-exercise-commandlets
+  - learn.powershell.intro-to-powershell.6-pipe
+  - learn.powershell.intro-to-powershell.7-exercise-pipe
+  - learn.powershell.intro-to-powershell.8-knowledge-check
+  - learn.powershell.intro-to-powershell.9-summary
 badge:
-  uid: learn.automate-with-powershell.badge
+  uid: learn.powershell.intro-to-powershell.badge
