@@ -9,7 +9,7 @@
 
 ![Select Subscription](../media/5a.png)
 
-After a few seconds, a black cloud shell should appear
+After a few seconds, a black Cloud Shell should appear
 
 ![Azure Cloud Shell](../media/5b.png)
 
@@ -96,14 +96,14 @@ SET CLIENT_ENCODING TO 'utf8';
 
 Our data is now loaded and distributed. Let's run a couple queries.
 
-12. Run the follow query in the cloud shell to see how many events we have stored.
+12. Run the follow query in the Cloud Shell to see how many events we have stored.
 
 ```sql
 SELECT count(*) from payment_events;
 ```
 126,243 events. Let's look into the data further.
 
-13. Run the following query to see how many transcactions we're having per hour.
+13. Run the following query to see how many transactions we're having per hour.
 
 ```sql
 SELECT date_trunc('hour', created_at) AS hour,

@@ -17,8 +17,8 @@ In this exercise, we're going to double the number of worker nodes. Then we'll r
 
 ![Worker nodes and coordinator node vCores](../media/7c.png)
 
-    > [!NOTE]
-    > Once increased and saved, the number of worker nodes cannot be decreased using the slider.
+> [!NOTE]
+> Once increased and saved, the number of worker nodes cannot be decreased using the slider.
 
 5. At the bottom of the page, select the blue **Save** button, then select **Continue**.
 

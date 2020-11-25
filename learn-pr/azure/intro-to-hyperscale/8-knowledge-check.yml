@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "High numbers of transactions with large amounts of data"
       isCorrect: false
-      explanation: "Incorrect. Analytical workloads tend to have high amounts of data. OLTP workloads have high numbers of transacations, but not large amounts of data."
+      explanation: "Incorrect. Analytical workloads tend to have high amounts of data. OLTP workloads have high numbers of transactions, but not large amounts of data."
     - content: "Business intelligence and analytical workloads"
       isCorrect: false
       explanation: "Incorrect. OLTP workloads tend to be high numbers of transactions, not analytical workloads."
@@ -36,7 +36,7 @@ quiz:
       explanation: "Incorrect. Multi-tenant applications usually have OLTP workloads, with large numbers of tenants."
     - content: "The combined workloads of multiple tenants is low"
       isCorrect: false
-      explanation: "Incorrect. Multi-tenant applications do not necessarily have low workloads, but the overall workload can be low on average with resources being shared between tenants."
+      explanation: "Incorrect. Multi-tenant applications don't necessarily have low workloads, but the overall workload can be low on average with resources being shared between tenants."
     - content: "Many customers share resources."
       isCorrect: true
       explanation: "Correct. Multi-tenant applications allow for high numbers of users sharing resources, which can provide savings per user."

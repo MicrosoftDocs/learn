@@ -16,7 +16,7 @@ abstract: |
   - Shard a Hyperscale database for a multi-tenant application.
   - Scale and rebalance a Hyperscale database.
 prerequisites: Basic knowledge of relational databases
-iconUrl: /learn/achievements/intro-to-postgresql.svg
+iconUrl: /learn/achievements/intro-to-hyperscale.svg
 levels:
 - beginner
 roles:
