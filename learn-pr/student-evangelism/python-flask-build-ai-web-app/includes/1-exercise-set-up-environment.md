@@ -46,7 +46,7 @@ md contoso
 cd contoso
 
 ## macOS or Linux
-md contoso
+mkdir contoso
 cd contoso
 ```
 
