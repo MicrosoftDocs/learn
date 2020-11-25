@@ -57,7 +57,7 @@ cd contoso
 
 A Python virtual environment is not necessarily as complex as it sounds. Rather than creating a virtual machine or container, a virtual environment is a folder in which all of the libraries we need to run our application, including the Python runtime itself. By using a virtual environment we make our applications modular, allowing us to keep them separate from one another avoiding versioning issues. As a best practice you should always use virtual environments when working with Python.
 
-To use a virtual environment, we will create and activate it. We create it by using the `venv` module, which you installed earlier. When we activate it we tell our system to use the folder we created for all of its Python needs.
+To use a virtual environment, we will create and activate it. We create it by using the `venv` module, which you installed as part of your Python installation instructions earlier. When we activate it we tell our system to use the folder we created for all of its Python needs.
 
 ```bash
 # Windows
