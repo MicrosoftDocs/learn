@@ -6,12 +6,12 @@ Although working with VMs is a common task, you discover that a VM resource requ
 
 ::: zone pivot="powershell"
 
-[!include[](./powershell/3-exercise-dependencies-powershell.md)]
+[!include[](./powershell/3-exercise-dependencies.md)]
 
 ::: zone-end
 
 ::: zone pivot="cli"
 
-[!include[](./azcli/3-exercise-dependencies-azcli.md)]
+[!include[](./azcli/3-exercise-dependencies.md)]
 
 ::: zone-end

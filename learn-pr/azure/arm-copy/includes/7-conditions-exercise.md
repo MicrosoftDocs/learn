@@ -12,12 +12,12 @@ Here, you use a condition to control when a storage account is provisioned. Doin
 
 ::: zone pivot="powershell"
 
-[!include[](./powershell/7-exercise-conditions-powershell.md)]
+[!include[](./powershell/7-exercise-conditions.md)]
 
 ::: zone-end
 
 ::: zone pivot="cli"
 
-[!include[](./azcli/7-exercise-conditions-azcli.md)]
+[!include[](./azcli/7-exercise-conditions.md)]
 
 ::: zone-end

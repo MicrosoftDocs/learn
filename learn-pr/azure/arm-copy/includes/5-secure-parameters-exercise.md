@@ -4,12 +4,12 @@ This time, instead of passing the password as a parameter, you store the passwor
 
 ::: zone pivot="powershell"
 
-[!include[](./powershell/5-exercise-secure-parameters-powershell.md)]
+[!include[](./powershell/5-exercise-secure-parameters.md)]
 
 ::: zone-end
 
 ::: zone pivot="cli"
 
-[!include[](./azcli/5-exercise-secure-parameters-azcli.md)]
+[!include[](./azcli/5-exercise-secure-parameters.md)]
 
 ::: zone-end

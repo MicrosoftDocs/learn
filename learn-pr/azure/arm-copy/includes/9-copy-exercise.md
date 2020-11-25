@@ -4,12 +4,12 @@ The copy construct gives you a single, central location that you need to update 
 
 ::: zone pivot="powershell"
 
-[!include[](./powershell/9-exercise-copy-powershell.md)]
+[!include[](./powershell/9-exercise-copy.md)]
 
 ::: zone-end
 
 ::: zone pivot="cli"
 
-[!include[](./azcli/9-exercise-copy-azcli.md)]
+[!include[](./azcli/9-exercise-copy.md)]
 
 ::: zone-end
