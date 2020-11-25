@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-windows-server-secure-administration.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/25/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 3

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-windows-server-secure-administration.what-is-least-privilege-administration
+title: What is least privilege administration?
+metadata:
+  title: What is least privilege administration?
+  description: "What is least privilege administration?"
+  ms.date: 11/25/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 3
