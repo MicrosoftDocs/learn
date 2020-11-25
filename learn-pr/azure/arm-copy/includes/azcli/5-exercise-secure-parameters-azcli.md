@@ -4,7 +4,7 @@ Create a Key Vault and add the VM password as a secure secret. To do so:
 
 1. Create a Bash variable that holds the Key Vault name.
 
-    ```azurecli
+    ```bash
     KVNAME=tailwind-secrets$RANDOM
     ```
 

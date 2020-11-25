@@ -1,4 +1,14 @@
-You're part of a development team at the company Tailwind Traders. Sometimes you want the ability to control if something gets deployed. It could be that a specific resource should be there only in a prod environment but not in staging or dev. A way to implement such a scenario is by using a combination of a parameter and the _condition_ construct.
+In the previous exercises, you worked with Linux virtual machines (VMs). Here, you switch gears a bit and focus on managing storage accounts.
+
+Let's say that you have three environments that you need to deploy to: _Dev_, _Staging_, and _Production_.
+
+* The _Dev_ environment is the first place where everything your application needs comes together. This environment might include web servers, a load balancer, and a database.
+* The _Staging_ environment is where final testing happens before new application features are released to your end users.
+* The _Production_ environment is where your end users access your application.
+
+As you move from _Dev_ to _Production_, you require additional infrastructure. For example, in _Production_, you require an additional storage account that you don't need in the previous environments.
+
+Here, you use a condition to control when a storage account is provisioned. Doing so enables you to support each of your infrastructure environments from just one ARM template.
 
 ::: zone pivot="powershell"
 
