@@ -4,7 +4,7 @@ metadata:
   title: Use basketball stats to optimize gameplay with Visual Studio Code, inspired by the new film SPACE JAM A NEW LEGACY
   description: Develop data science skills to create an Azure static web app to determine the optimal time to give Tune Squad players a break during a game. Inspired by the new Space Jam A New Legacy film, coming to theaters Summer 2021.
   brand: vs-code
-  ms.date: 12/14/20
+  ms.date: 12/14/2020
   author: sguthals
   ms.author: shanama 
   ms.topic: interactive-tutorial
@@ -60,8 +60,8 @@ iconUrl: /learn/achievements/generic-trophy.svg # TODO change
 levels:
 - beginner
 roles:
-- data scientist
-- web developer
+- data-scientist
+- developer
 - student
 products:
 - vs-code 
