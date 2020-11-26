@@ -1,16 +1,16 @@
-Migrating your company's social media database is a multistep process. The workflow begins with a *pre-migration* phase, in which you determine which databases need to be migrated. You also look for any compatibility issues between your existing database and Azure SQL Database. 
+Migrating your company's social media database is a multi-step process. The workflow begins with a *pre-migration* phase, in which you determine which databases need to be migrated. You also look for any compatibility issues between your existing database and Azure SQL Database.
 
-After you resolve any incompatibility issues, you're ready for the *migration* phase. First, you migrate the schema to the Azure SQL Database service. Then you're ready to migrate the data itself by using Azure Database Migration Service.
+After you resolve any incompatibility issues, you're ready for the *migration* phase. First, you migrate the schema to the Azure SQL Database service. Then, you're ready to migrate the data itself by using Azure Database Migration Service.
 
-The last step in your workflow is the *post-migration* phase. During this phase, you do any required testing. Then you update applications, reports, and other tools that will need to use the new database for their data.
+The last step in your workflow is the *post-migration* phase. During this phase, you do any required testing. Then you update apps, reports, and other tools that will need to use the new database for their data.
 
 ![Migration workflow](../media/3-01-azure-sql-migration-sql-db.svg)
 
 ## Pre-migration
 
-The pre-migration phase begins with *discovery*, or taking inventory of your existing databases and the tools and applications that rely on them. For this simple exercise, we're concerned with only a single social database. In practice, it can be a much more complex step. 
+The pre-migration phase begins with *discovery*, or taking inventory of your existing databases and the tools and apps that rely on them. For this simple exercise, we're concerned with only a single social database. In practice, it can be a much more complex step.
 
-You need to identify everything that uses your existing database. Applications, SQL Server Report Services reports, Power BI reports, and export jobs written in PowerShell are all examples of things to note so you can update them after the migration to point to the new Azure SQL database.
+You need to identify everything that uses your existing database. Apps, SQL Server Report Services reports, Power BI reports, and export jobs written in PowerShell are all examples of things to note so you can update them after the migration to point to the new Azure SQL database.
 
 The second step in the pre-migration phase is the *assessment*. During the assessment, you examine the database for any incompatibilities between it and the Azure SQL Database platform. Because this can be a difficult task to perform manually, Microsoft has provided Data Migration Assistant. You can use Data Migration Assistant to automatically examine your source database for any compatibility issues with Azure SQL Database.
 

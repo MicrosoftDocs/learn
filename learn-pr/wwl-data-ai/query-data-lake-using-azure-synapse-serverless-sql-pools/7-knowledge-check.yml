@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/23/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "What function is used to read the data in files stored in a data lake?"
+    choices:
+    - content: "FORMAT."
+      isCorrect: false
+      explanation: "Incorrect. The FORMAT is a clause within the OPENROWSET function to determine the file type to be read."
+    - content: "ROWSET."
+      isCorrect: false
+      explanation: "Incorrect. The ROWSET is not a valid function."
+    - content: "OPENROWSET."
+      isCorrect: true
+      explanation: "Correct. The OPENROWSET is used to read the data in files stored in a data lake."
+  - content: "What value should be set in the fieldterminator and fieldquote variables to read JSON files?"
+    choices:
+    - content: "0b0x."
+      isCorrect: false
+      explanation: "Incorrect. 0b0x is not the value should be set in the fieldterminator and fieldquote variables to read JSON files."
+    - content: "00xb."
+      isCorrect: false
+      explanation: "Incorrect. 00xb is not the value should be set in the fieldterminator and fieldquote variables to read JSON files."
+    - content: "0x0b."
+      isCorrect: true
+      explanation: "Correct. 0x0b is the value should be set in the fieldterminator and fieldquote variables to read JSON files."
+  - content: "What character in file path can be used to select all the file/folders that match rest of the path?"
+    choices:
+    - content: "&."
+      isCorrect: false
+      explanation: "Incorrect. The ampersand character is used to concatenate fields in the files together."
+    - content: "*."
+      isCorrect: true
+      explanation: "Correct. The asterisk character in file path can be used to select all the file or folders that match rest of the path."
+    - content: "/."
+      isCorrect: false
+      explanation: "Incorrect. The forward slash is used as a directory separator in folder and file path."

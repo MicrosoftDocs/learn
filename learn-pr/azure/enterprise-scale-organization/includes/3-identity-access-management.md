@@ -1,6 +1,6 @@
 Identity provides the basis for a large part of security assurance. It enables access based on identity authentication and authorization controls in cloud services to protect data and resources and to decide which requests should be permitted.
 
-Identity and access management (IAM) is boundary security in the public cloud. It must be treated as the foundation of any secure and fully compliant public cloud architecture. Azure offers a comprehensive set of services, tools, and reference architectures to help organizations build highly secure, operationally efficient environments as outlined here.
+Identity and access management (IAM) is a security boundary in the public cloud. It must be treated as the foundation of any secure and fully compliant public cloud architecture. Azure offers a comprehensive set of services, tools, and reference architectures to help organizations build highly secure, operationally efficient environments as outlined here.
 
 This unit examines design considerations and recommendations related to IAM in an enterprise environment.
 
