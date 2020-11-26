@@ -20,15 +20,15 @@ As a DBA within AdventureWorks you need to know how to enable geo-replication fo
 
 1. From the Home screen, select the menu, and select **SQL databases**.
 
-    :::image type="content" source="../media/sql-databases.png" alt-text="SQL databases":::
+    :::image type="content" source="../media/sql-databases.png" alt-text="Screenshot showing selecting SQL databases.":::
 
 1. Click on the **AdventureWorks** Azure SQL Database.
 
-    :::image type="content" source="../media/adventureworks.png" alt-text="Adventureworks":::
+    :::image type="content" source="../media/adventureworks.png" alt-text="Screenshot showing selecting Adventureworks.":::
 
 1. On the blade for the database, in **Settings**, select **Geo-Replication**.
 
-    :::image type="content" source="../media/geo-replication.png" alt-text="Geo-Replication":::
+    :::image type="content" source="../media/geo-replication.png" alt-text="Screenshot showing selecting Geo-Replication.":::
 
     > [!NOTE]
     > The region where the database is currently configured is shown in a blue hexagon with a white checkmark. You will see that geo-replication is not configured.
@@ -39,7 +39,7 @@ As a DBA within AdventureWorks you need to know how to enable geo-replication fo
 1. In this example, **West US 2** was selected as can be seen on the **Create secondary**
 blade.
 
-    :::image type="content" source="../media/create-secondary.png" alt-text="Create secondary":::
+    :::image type="content" source="../media/create-secondary.png" alt-text="Screenshot showing selecting Create secondary.":::
 
 1. Select **Target server**.
 
