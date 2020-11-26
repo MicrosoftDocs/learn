@@ -41,7 +41,7 @@ As a database administrator, you'll set up a new Azure Database for PostgreSQL f
     - Version: **10**
     - Select **Configure Server** link under **Compute + Storage**.
 
-        :::image type="content" source="../media/dp-3300-module-22-lab-37.png" alt-text="Screenshot of ":::
+        :::image type="content" source="../media/dp-3300-module-22-lab-37.png" alt-text="Screenshot of the Single Server Basics screen.":::
 
         - Select **Basic** tab.
         - Slide the vCore slider all the way to the left to select **1 vCore**.
@@ -127,7 +127,7 @@ As a database administrator, you'll set up a new Azure Database for PostgreSQL f
 
 1. Select **Run Cells**.
 
-    :::image type="content" source="../media/dp-3300-module-22-lab-44.png" alt-text="Screenshot of ":::
+    :::image type="content" source="../media/dp-3300-module-22-lab-44.png" alt-text="Screenshot of results from SQL query.":::
 
 1. View the results from the query.
 
