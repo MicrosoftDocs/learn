@@ -14,10 +14,10 @@ Poor load performance may be reported by telemetry of the data loads through Azu
 
 You may receive reports from your users that they may be unable to connect to the data warehouse to execute reports or queries.
 
-The first response will be to ensure that the data warehouse is set to the appropriate service level range to ensure there is enough memory and concurrency slots available for multiple connections to the service. Scaling the service within the Azure portal, or Azure Synapse Studio, or issuing a Transact-SQL or the following PowerShell statement will achieve this.
+The first response will be to ensure that the data warehouse is set to the appropriate service level range to ensure there is enough memory and concurrency slots available for multiple connections to the service. Scaling the service within the Azure portal, or Azure Synapse Studio, or issuing a Transact-SQL or the following PowerShell statement will address the issue of low concurrency.
 
 ```Powershell
 Set-AzSqlDatabase -ResourceGroupName "resourcegroupname" -DatabaseName "mySampleDataWarehouse" -ServerName "sqlpoolservername" -RequestedServiceObjectiveName "DW300c"
 ```
 
-Even with these changes, this may not resolve your performance issue, and you would have to explore other areas that we will explore in this module to resolve the issue.
+Even with these changes, performance issue may not be resoved. Then you would have to explore other areas that we will explore in this module to resolve the issue.
