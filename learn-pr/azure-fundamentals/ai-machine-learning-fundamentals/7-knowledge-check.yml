@@ -31,11 +31,11 @@ quiz:
       explanation: "Although Azure Machine Learning could be used to create a natural language model, it would likely be cost and time prohibitive.  It should be eliminated as a candidate."
     - content: "Azure Cognitive Services"
       isCorrect: false
-      explanation: "Azure Cognitive Services provides natural language services. It should not be eliminated as a candidate."
+      explanation: "Azure Cognitive Services provides natural language services. It should be eliminated as a candidate."
     - content: "Azure Bot Service"
       isCorrect: true
       explanation: "Azure Bot Service creates virtual agent solutions that utilize natural language. It should not be eliminated as a candidate."
-  - content: "You need to identify the content of product images to automatically create alt tags for images formatted properly.  Which production option is the best candidate?"
+  - content: "You need to identify the content of product images to automatically create alt tags for images formatted properly.  Which product option is the best candidate?"
     choices:
     - content: "Azure Machine Learning"
       isCorrect: false
