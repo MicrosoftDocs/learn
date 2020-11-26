@@ -6,7 +6,7 @@ If you haven't yet installed Visual Studio Code, you can find guides on the [Vis
 
 ## Setting up Visual Studio Code with a new Jupyter file
 
-Once you have your environment setup, you should create a folder called space-jam-anl wherever you store code on your computer. This can be anywhere, for example, on your Desktop. You might already have this folder if you are contuining on from the [previous *Space Jam: A New Legacy* inspired module]().
+Once you have your environment setup, you should create a folder called space-jam-anl wherever you store code on your computer. This can be anywhere, for example, on your Desktop. You might already have this folder if you are contuining on from the [previous *Space Jam: A New Legacy* inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true).
 
 :::image type="content" source="../media/new-folder.png" alt-text="Screenshot showing The new space-jam-anl folder created on the desktop.":::
 
@@ -19,7 +19,7 @@ Create a new file in the space-jam-anl folder called space-jam-anl.ipynb by clic
 ![Create the space-jam-anl.ipynb file in Visual Studio Code](../media/new-file.png)
 
 >[!Note] 
->You can also just continue using the space-jam-anl.ipynb file that you created in the [previous *Space Jam: A New Legacy* inspired module]() if you already have that.
+>You can also just continue using the space-jam-anl.ipynb file that you created in the [previous *Space Jam: A New Legacy* inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true) if you already have that.
 
 Make sure the file opens into a notebook and that the Jupyter server is connected and the kernel is pointing to the desired Python version.
 
@@ -27,9 +27,9 @@ Make sure the file opens into a notebook and that the Jupyter server is connecte
 
 ## Downloading data with basketball stats and Tune Squad character names
 
-Next, you will need some data. You might already have this data from the [previous *Space Jam: A New Legacy* inspired module](), but if you don't, you can download a clean copy from [player_data_final.csv on GitHub](https://aka.ms/LearnWithDrG/SpaceJam/Data2?azure-portal=true) and downloading the CSV file. Make sure you save the data in a file called player_data_final.csv and save it in the space-jam-anl folder you just created. 
+Next, you will need some data. You might already have this data from the [previous *Space Jam: A New Legacy* inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true), but if you don't, you can download a clean copy from [player_data_final.csv on GitHub](https://aka.ms/LearnWithDrG/SpaceJamANewLegacy/Data2?azure-portal=true) and downloading the CSV file. Make sure you save the data in a file called player_data_final.csv and save it in the space-jam-anl folder you just created. 
 
-Then, you will need the Tune Squad character names, which is stored in [tune_squad.csv on GitHub](https://aka.ms/LearnWithDrG/SpaceJam/Data3?azure-portal=true). Make sure you save the data in a file called tune_squad.csv and save it in the space-jam-anl folder you just created. 
+Then, you will need the Tune Squad character names, which is stored in [tune_squad.csv on GitHub](https://aka.ms/LearnWithDrG/SpaceJamANewLegacy/Data3?azure-portal=true). Make sure you save the data in a file called tune_squad.csv and save it in the space-jam-anl folder you just created. 
 
 Visual Studio Code should show you this data if you click on the CSV file. 
 
@@ -39,7 +39,7 @@ Visual Studio Code should show you this data if you click on the CSV file.
 
 Now that you have your local environment and data ready to go, you should check to make sure everything is setup properly. 
 
-If this is a new file, in the top cell of the space-jam-anl.ipynb file, import the Pandas library as pd. If you are continuing on with the file created in the [previous *Space Jam: A New Legacy* inspired module](), skip this import step, but be sure to re-run your entire notebook to ensure everything is loaded into your python environment. This will allow you to call Pandas functions using `pd.`. 
+If this is a new file, in the top cell of the space-jam-anl.ipynb file, import the Pandas library as pd. If you are continuing on with the file created in the [previous *Space Jam: A New Legacy* inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true), skip this import step, but be sure to re-run your entire notebook to ensure everything is loaded into your python environment. This will allow you to call Pandas functions using `pd.`. 
 
 ```python
 import pandas as pd
@@ -56,7 +56,7 @@ Next, you will make sure you can import the data into your coding environment by
 player_df_final = pd.read_csv('player_data_final.csv')
 ```
 
-If that us successful, you should see a `[2]` next to the cell (if you're continuing on with the file created in the [previous *Space Jam: A New Legacy* inspired module]() then you might see a different number than 2) and no output.
+If that us successful, you should see a `[2]` next to the cell (if you're continuing on with the file created in the [previous *Space Jam: A New Legacy* inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true) then you might see a different number than 2) and no output.
 
 ![Showing a successful data import in Visual Studio Code](../media/successful-data-import.png)
 
