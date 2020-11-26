@@ -1,6 +1,6 @@
 ﻿In this unit, you'll learn how to create an Azure App Service web app using the Azure portal.
 
-## Why use the Azure portal?
+## Why use the Azure portal
 
 The first step in hosting your web application is to create a web app (an App Service app) inside your Azure subscription.
 
@@ -8,7 +8,7 @@ There are several ways you can create a web app. You can use the Azure portal, t
 
 The information presented below will discuss how to use the Azure portal to create a web app, and in the next exercise you will use this information to create a web app. For this module, we will demonstrate using the Azure portal because it's a graphical experience, which makes it a great learning tool. The portal helps you discover available features, add additional resources, and customize existing resources.
 
-## What is Azure App Service?
+## What is Azure App Service
 
 Azure App Service is a fully managed web application hosting platform. This platform as a service (PaaS) offered by Azure allows you to focus on designing and building your app while Azure takes care of the infrastructure to run and scale your applications.
 
