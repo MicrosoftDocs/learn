@@ -1,4 +1,4 @@
-Recall your results from the previous section:
+Recall your results from the previous unit:
 
 ```console
     Config dict:
@@ -177,3 +177,7 @@ The final step in solving this problem is to map this solution back to your repa
 |**$J_{2}$: Replace power transformer in the reactor**||
 |$O_{4}$: Detach old transformer module (*1 minute*)|Universal multi-tool|3|
 |$O_{5}$: Install new transformer module (*2 minutes*)|Universal multi-tool|4|
+
+Congratulations, you can now start the repairs and avoid disaster!
+
+![PLACEHOLDER IMAGE: Spaceship cross-section showing the navigation module, life support and reactor areas with check marks to indicate they have been repaired.](../media/spaceship_repairs_placeholder.png)

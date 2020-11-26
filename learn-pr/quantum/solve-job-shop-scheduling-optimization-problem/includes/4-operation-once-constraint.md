@@ -1,4 +1,4 @@
-In this section, the operation once constraint will be defined, and you will learn how to represent it mathematically and then transform it to code.
+In this unit, the operation once constraint will be defined, and you will learn how to represent it mathematically and then transform it to code.
 
 The operation once constraint is defined as follows:
 

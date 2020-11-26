@@ -1,5 +1,7 @@
 Congratulations! You saved the day and completed all the repair tasks before disaster occurred.
 
+![PLACEHOLDER IMAGE: Spaceship cross-section showing the navigation module, life support and reactor areas with check marks to indicate they have been repaired.](../media/spaceship_fixed_placeholder.png)
+
 In this module, you have learned:
 
 - What the job shop scheduling problem is and why it matters
@@ -19,12 +21,12 @@ Now that you understand the problem scenario and how to define the cost function
     - Change machine assignments
     - Add/remove machines
 - Rewrite the penalty functions to improve their efficiency
-- Implement the solution verifier as described in the previous section
+- Implement the solution verifier as described in the previous unit
 - Implement a solution quality evaluator to enable parameter tuning
 - Change the values of the weights and see how this affects the solution quality
 - Try using a different solver (such as `ParallelTempering`)
 
-You can find this tutorial in Jupyter notebook format [here](TODO: add link to the notebook, wherever it will live post-public-preview) - this will allow you to modify and experiment with the code.
+You can find this tutorial in Jupyter notebook format [here](TODO) - this will allow you to modify and experiment with the code.
 
 ### Learn more about Azure Quantum & the Quantum Development Kit
 

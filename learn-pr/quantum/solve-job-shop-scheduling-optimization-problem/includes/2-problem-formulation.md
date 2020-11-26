@@ -4,7 +4,7 @@ Each job consists of a set of operations, and the operations must be performed i
 
 To illustrate the scenario, we are going to return to our spaceship, where a disaster is brewing...
 
-![Image of the spaceship, preferably with bits on fire]()
+![PLACEHOLDER IMAGE: Spaceship cross-section showing warnings for the navigation module, life support and reactor areas.](../media/spaceship_emergency_placeholder.png)
 
 Back onboard the spaceship, warning lights are flashing and alarms are blaring. You have been hit by the electromagnetic fallout from a coronal mass ejection event of a nearby star and are experiencing multiple failures across different critical systems!
 
@@ -142,7 +142,7 @@ For $t = 0 \rightarrow t < T$ for every operation, you define an index $x_{i + t
 
 The operation starts at the value of $t$ for which $x_{i + t}$ equals 1.
 
-In the next sections, you will construct mathematical representations of the penalty terms and use these to build the cost function, which will be of the format:
+In the next units, you will construct mathematical representations of the penalty terms and use these to build the cost function, which will be of the format:
 
 $$H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x) $$
 
@@ -169,7 +169,7 @@ If there were higher order terms (cubed, for example), you would just add more e
 (w: float, indices: [int, int, int, ...])
 ```
 
-In the following sections, you will explore how to formulate each of these constraints mathematically, and how this translates to code.
+In the following units, you will explore how to formulate each of these constraints mathematically, and how this translates to code.
 
 > [!NOTE]
 > For this sample, penalties have not been added for operations that overrun the total simulation time $T$ - it is assumed that as long as an operation is started before the end of the simulation, it runs to completion.

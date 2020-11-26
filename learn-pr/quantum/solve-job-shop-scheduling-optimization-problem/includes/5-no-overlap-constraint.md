@@ -1,4 +1,4 @@
-In this section, the no overlap constraint will be defined, and you will learn how to represent it mathematically and then transform it to code.
+In this unit, the no overlap constraint will be defined, and you will learn how to represent it mathematically and then transform it to code.
 
 The no overlap constraint is defined as follows:
 

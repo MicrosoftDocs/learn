@@ -1,4 +1,4 @@
-In this section, the precedence constraint will be defined, and you will learn how to represent it mathematically and then transform it to code.
+In this unit, the precedence constraint will be defined, and you will learn how to represent it mathematically and then transform it to code.
 
 The precedence constraint is defined as follows:
 
@@ -115,4 +115,5 @@ def precedence_constraint(n: int, o:int, T:int, p:List[int], w:float):
     return terms
 ```
 
->Note: This nested loop structure is probably not the most efficient way to do this but it is the most direct comparison to the mathematical formulation.
+> [!NOTE]
+> This nested loop structure is probably not the most efficient way to do this but it is the most direct comparison to the mathematical formulation.

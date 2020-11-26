@@ -16,5 +16,5 @@ After completing this module, you'll be able to:
 
 ### Prerequisites
 
-- The latest version of the [Azure Quantum Optimization SDK](TODO: Link)
+- The latest version of the [Azure Quantum Optimization SDK](TODO)
 - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
