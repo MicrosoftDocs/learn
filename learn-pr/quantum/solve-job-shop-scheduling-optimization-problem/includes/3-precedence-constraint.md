@@ -25,7 +25,7 @@ $$O_{4} \text{ can start at time } s \geq t + p_{3} $$
 
 $O_{3}$’s finishing time is given by adding its processing time $p_{3}$ (which is 2 minutes) to its start time $t$. You can see the start and end times for $O_{3}$ in the table below:
 
-| $t$ | $t = p_{3}$|
+| $t$ | $t + p_{3}$|
 |---|---|
 |0|2|
 |1|3|
@@ -33,7 +33,7 @@ $O_{3}$’s finishing time is given by adding its processing time $p_{3}$ (which
 
 To avoid violating this constraint, the start time of $O_{4}$ (denoted by $s$) must be greater than or equal to the end time of $O_{3}$, like you see in the next column:
 
-| $t$ | $t = p_{3}$|$s \geq t+p_{3}$|
+| $t$ | $t + p_{3}$|$s \geq t+p_{3}$|
 |---|---|---|
 |0|2|2, 3, 4|
 |1|3|3, 4|
@@ -44,7 +44,7 @@ The ✔ means that any $s$ value in this column is valid, as it doesn't violate 
 
 Conversely, if $s$ is less than $t + p_{3}$ (meaning $O_{4}$ starts before $O_{3}$ finishes), you need to add a penalty. Invalid $s$ values for this example are shown in the rightmost column:
 
-| $t$ | $t = p_{3}$|$s \geq t+p_{3}$|$s < t+p_{3}$|
+| $t$ | $t + p_{3}$|$s \geq t+p_{3}$|$s < t+p_{3}$|
 |---|---|---|---|
 |0|2|2, 3, 4|0, 1|
 |1|3|3, 4|0, 1, 2|
