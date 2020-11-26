@@ -11,7 +11,7 @@ Imagine that you're a web developer, and you're asked to add support for light a
 
 When completed, your simple website will look like this, when the dark theme is selected.
 
-TBD-screenshot
+![Website showing dark theme](../media/chrome-themed-website.png)
 
 ## What's in a web page?
 

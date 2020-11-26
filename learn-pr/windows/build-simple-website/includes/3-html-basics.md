@@ -40,13 +40,13 @@ The *title* of a webpage appears at the top of a browser window and is significa
 ...
 <head>
   <meta charset="utf-8">
-  <title>Task List</title>
+  <title>Simple website</title>
 ...
 ```
 
 To style the HTML elements on the page, you could write the CSS code directly in the head of the website, which is called *internal CSS*. However, it's a best practice to separate HTML structure and CSS styling. Having a separate CSS page is called *external CSS*. Code tends to be easier to read when it's concise and compartmentalized. You can use one or more external style sheets to service multiple webpages. Rather than updating each HTML page with duplicated CSS, you can make changes once and have those updates broadcast to all dependent pages. Let's link to an external stylesheet.
 
-In **Visual Studio Code**, go to the line after the `<title>` element, type `link` and hit the Enter (Return) key. Update the `href` to `main.css` and save the file with Control+S (Windows) or Command+S (macOS).
+In **Visual Studio Code**, add a blank line after the `<title>` element, type `link` and hit the Enter (Return) key. Update the `href` to `main.css` and save the file with Control+S (Windows) or Command+S (macOS).
 
 ```html
 ...
@@ -67,7 +67,7 @@ Let's start filling in the *body* element now. Add a *heading* `<h1>`, *paragrap
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Task Timeline</title>
+    <title>Simple website</title>
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
@@ -105,15 +105,15 @@ You can inspect a webpage by using the developer tools in your browser. Let's gi
 
 In **Edge**, the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, view **Settings and more** with Alt+X and select **Developer Tools**.
 
-![Screenshot of Settings and more menu](../media/edge-settings-menu.png)
-
-In **Chrome**, the keyboard shortcut for **Developer Tools** is Option+Command+I.
+In **Chrome**, the keyboard shortcut for **Developer Tools** is Option+Command+I. (F12 also works.)
 
 1. Select the **Elements** tab.
 2. Roll over and select the HTML elements.
 3. Open the disclosure triangles.
 
 ![Screenshot of Chrome Developer Tools](../media/3-html-basics/chrome-developer-tools.png)
+
+The Elements tab in Developer tools shows you the document object model (DOM) as rendered in the browser. When debugging, it is often important to see how the browser interprets your source code.
 
 > [!NOTE]
 > If you're using **Safari**, see the [Web Developer Tools](https://developer.apple.com/safari/tools/) and [Safari User Guide](https://support.apple.com/guide/safari/use-the-developer-tools-in-the-develop-menu-sfri20948/mac) for more information.

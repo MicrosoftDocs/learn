@@ -10,7 +10,7 @@ If not visible, you can display the **Welcome** window by navigating to **Help >
 
 ## Create a new folder
 
-Select **Open folder** in the Start section of the Welcome page, or go to **File > Open**.
+Select **Open folder** in the Start section of the Welcome page, or go to **Folder > Open**.
 
 ![Screenshot of Visual Studio Code open folder](../media/vs-code-open-folder.png)
 
@@ -32,6 +32,8 @@ Repeat the preceding steps to create two more files, `main.css` and `app.js`. Wh
 
 Under the folder name in the Explorer window, you see the three files that make up your web site.
 
+![Screenshot of your files in VS Code Explorer view](../media/vs-code-explorer-view.png)
+
 You could build a website all in one text file or HTML file. Here you're using an HTML file for content and page structure. A CSS file is for presentation and styling. The JavaScript file is for behaviors and interactivity.
 
 Setting up three files helps us stay organized. It's an example of *progressive enhancement*. If JavaScript isn't enabled or supported, the CSS and HTML will still work. However, if CSS doesn't work, at least the HTML content will be displayed.
@@ -40,11 +42,13 @@ Setting up three files helps us stay organized. It's an example of *progressive 
 
 You can extend the functionality of Visual Studio Code using the extensions marketplace. Keep in mind these are community developed resources. There are often a few solutions for the same type of feature. You can install extensions individually in your editor, or several at once with the command line.
 
-For web development, all we need right now is **open-in-browser**. This extension helps us to quickly open the website in your default browser, instead of copying and pasting the file URL into your browser.
+For web development, all you need right now is **open-in-browser**. This extension helps you to quickly open the website in your default browser, instead of copying and pasting the file URL into your browser.
 
 To install this extension, select the Extensions icon on the Activity Bar (left pane).
 
-Next, type "open" in the search bar, then select **open in browser**, published by TechER, and choose **Install**. The extension gets installed.
+Next, type "open in" in the search bar, then select **open in browser**, published by TechER, and choose **Install**. The extension gets installed.
+
+![Screenshot of finding a VS Code extension](../media/vs-code-get-extension.png)
 
 Switch back to the Explorer window.
 

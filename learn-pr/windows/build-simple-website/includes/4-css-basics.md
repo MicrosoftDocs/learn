@@ -25,7 +25,7 @@ In **Visual Studio Code**, open the `main.css` file and type the following.
 
 ```css
 body {
-    font-family: helvetica;
+    font-family: monospace;
 }
   
 ul {
@@ -39,7 +39,7 @@ What you're selecting is an existing element that you previously defined in HTML
 
 ## Selectors
 
-*ID* and *class selectors* allow you to apply styles to custom attribute names in your HTML. An ID is used to style one element, whereas classes can style multiple elements. The custom attributes below are called `.list` and `#msg`. The ID selector is *msg* and has a pound sign prefix, while the class selector *list* has a period prefix. The names are arbitrary so long as they match what you've defined in the HTML.
+*ID* and *class selectors* allow you to apply styles to custom attribute names in your HTML. An ID is used to style one element, whereas classes can style multiple elements. The custom attributes below are called `.list` and `#msg`. The class selector *list* has a period prefix, while the ID selector is *msg* and has a pound sign prefix. The names are arbitrary so long as they match what you've defined in the HTML.
 
 ```css
 ...
@@ -52,7 +52,7 @@ li {
 }
 
 #msg {
-  font-family: sans-serif;
+  font-family: monospace;
 }
 ```
 
@@ -92,23 +92,21 @@ The webpage will open in your default browser. Notice that the light theme with 
 
 ## View applied CSS
 
-**IMPORTANT Move this to previous section, since we are not viewing in the browser.**
-
 In **Edge**, the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, view **Settings and more** with Alt+X and select **Developer Tools**.
 
-In **Chrome**, the keyboard shortcut for **Developer Tools** is Option+Command+I.
+In **Chrome**, the keyboard shortcut for **Developer Tools** is Option+Command+I. (F12 also works.)
 
 1. Select the **Styles** tab.
 2. Select the **Elements** tab.
 3. Roll over and select the HTML elements.
 4. Open the disclosure triangles.
-5. Select a `<li>` element. Note the custom style `font-family: monospace;`.
+5. Select a `<li>` element. Note the custom style `font-family: helvetica;`, which overrides the style for the `<body>` element.
 
 ## Add a dark theme
 
 For the dark theme, we want to set up the plumbing in preparation for the next unit, in which we will enable theme switching on the web page.
 
-To set up support for a dark theme, add some constants to the page root in your CSS file. The `:root` selector represents the `<html>` element in the HTML page. A best practice is to define a set of global CSS variables in the `:root` element. Here, you define three color variables attached to the page root.
+To set up support for a dark theme, add some constants to the page root in your CSS file. The `:root` selector represents the `<html>` element in the HTML page. For this kind of task, a best practice is to define a set of global CSS variables in the `:root` element. Here, you define three color variables attached to the page root.
 
 ```css
 :root {
@@ -145,4 +143,4 @@ body {
 }
 ```
 
-To view the dark theme, we could manually switch the default theme in the `<body>` element to dark theme. However, instead of this, in the next unit we will use JavaScript to provide interactivity and support switching of themes.
+To view the dark theme, we could manually switch the default theme in the `<body>` element to dark theme. However, instead of this, in the next unit we will use JavaScript to provide interactivity and support the switching of themes.
