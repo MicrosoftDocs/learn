@@ -71,7 +71,7 @@ Your organization has asked you if there is a way to mark queries executed by th
 
 7. Select the **Lab 08 - Execute Data Analyst and CEO Queries** Pipeline **(1)**, which will run / trigger the `asa.sql.workload01` and `asa.sql.workload02` queries. Select **Add trigger (2)**, then **Trigger now (3)**. In the dialog that appears, select **OK**.
 
-    ![The add trigger and trigger now menu items are highlighted](../media/trigger-data-analyst-ceo-queries-pipeline.png "Add trigger")
+    ![The add trigger and trigger now menu items.](../media/trigger-data-analyst-ceo-queries-pipeline.png "Add trigger")
 
 8. Let's see what happened to all the queries we just triggered as they flood the system. In the query window, replace the script with the following:
 
@@ -89,7 +89,7 @@ Your organization has asked you if there is a way to mark queries executed by th
 
     You should see an output similar to the following:
 
-    ![SQL query results.](../media/sql-query-2-results.png "SQL script")
+    ![Viewing SQL query results.](../media/sql-query-2-results.png "SQL script")
 
     Notice that the **Importance** level for all queries is set to **normal**.
 
@@ -139,7 +139,7 @@ Your organization has asked you if there is a way to mark queries executed by th
 
 16. Select **Pipeline runs (1)**, and then select **Cancel recursive (2)** for each running Lab 08 pipelines, marked **In progress (3)**. This will help speed up the remaining tasks.
 
-    ![The cancel recursive option is shown screenshot 1.](../media/cancel-recursive.png "Pipeline runs - Cancel recursive")
+    ![The cancel recursive option is displayed.](../media/cancel-recursive.png "Pipeline runs - Cancel recursive")
 
 ### Reserve resources for specific workloads through workload isolation
 
@@ -226,7 +226,7 @@ Let's start by experimenting with different parameters.
 
     You should see an output similar to the following that shows the importance for each session set to `below_normal`:
 
-    ![The script results show that each session was executed with below normal importance.](../media/sql-result-below-normal.png "SQL script")
+    ![The script results show each session was executed with below normal importance.](../media/sql-result-below-normal.png "SQL script")
 
     Notice that the running scripts are executed by the `asa.sql.workload02` user **(1)** with an Importance level of **below_normal (2)**. We have successfully configured the business analyst queries to execute at a lower importance than the CEO queries. We can also see that the `CEODreamDemo` Workload Classifier works as expected.
 
