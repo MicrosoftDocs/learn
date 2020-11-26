@@ -6,7 +6,7 @@ In this unit, you'll deploy your web application to App Service.
 
 Let's deploy our .NET application with zipdeploy.
 
-First, use `dotnet publish` to build the final app files and `zip` to package them into a zip file. 
+First, use `dotnet publish` to build the final app files and `zip` to package them into a zip file.
 
 ```bash
 cd ~/BestBikeApp
@@ -15,13 +15,13 @@ cd pub
 zip -r site.zip *
 ```
 
-Finally, perform the deployment with `az webapp deployment source config-zip`. Replace `<your-unique-app-name>` in the following command with the name of your Azure web app and run it.
+Finally, perform the deployment with `az webapp deployment source config-zip`. Replace `<your-app-name>` in the following command with the name of your Azure web app and run it.
 
 ```bash
 az webapp deployment source config-zip \
     --src site.zip \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --name <your-unique-app-name>
+    --name <your-app-name>
 ```
 
 The deployment will take a couple minutes, during which time you'll see status output.
@@ -74,24 +74,24 @@ Some App Service deployment techniques, including the one we'll use here, requir
 
 Instead of finding those credentials for each one of your apps and storing them somewhere, you can use an App Service feature called User Deployment Credentials to create your own username and password. The values you choose will work for deployments on *all* App Service web apps that you have permissions to, including new web apps that you create in the future. The username and password you select are tied to your Azure login and intended only for your use, so don't share them with others. You can change both the username and password at any time.
 
-The easiest way to create deployment credentials is from the Azure CLI. Run the following command in the Cloud Shell to set them up, substituting `[username]` and `[password]` with values you choose.
+The easiest way to create deployment credentials is from the Azure CLI. Run the following command in the Cloud Shell to set them up, substituting `<username>` and `<password>` with values you choose.
 
 ```azurecli
-az webapp deployment user set --user-name [username] --password [password]
+az webapp deployment user set --user-name <username> --password <password>
 ```
 
 ## Deploy the application package with wardeploy
 
 **Wardeploy** is an App Service deployment mechanism that is specifically designed for deploying WAR web application package files to Java web apps. Wardeploy is part of the Kudu REST API: an administrative service interface, available on all App Service web apps, that can be accessed over HTTP. The simplest way to use wardeploy is with the `curl` HTTP utility from the command line.
 
-Run the following commands to deploy your app with wardeploy. Replace `[username]` and `[password]` with the Deployment User username and password you created above, and replace `[web_app_name]` with the name of your web app.
+Run the following commands to deploy your app with wardeploy. Replace `<username>` and `<password>` with the Deployment User username and password you created above, and replace `<your-app-name>` with the name of your web app.
 
 ```console
 cd ~/helloworld/target
-curl -v -X POST -u [username]:[password] https://[sitename].scm.azurewebsites.net/api/wardeploy --data-binary @helloworld.war
+curl -v -X POST -u [username]:[password] https://<your-app-name>.scm.azurewebsites.net/api/wardeploy --data-binary @helloworld.war
 ```
 
-When the command finishes running, open a new browser tab and navigate to `https://[web_app_name].azurewebsites.net`. You'll see the greeting message from your app &mdash; you've deployed successfully!
+When the command finishes running, open a new browser tab and navigate to `https://<your-app-name>.azurewebsites.net`. You'll see the greeting message from your app &mdash; you've deployed successfully!
 
 ::: zone-end
 
