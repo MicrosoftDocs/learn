@@ -135,7 +135,8 @@ As you will see during the exploration of the cost function and its constituent 
 
 As introduced above, the binary variable you are optimizing for here is $x_{i,t}$, which can take a value of either 0 or 1, depending on if the operation $i$ starts at time $t$ or not:
 
-$$\begin{aligned} \text{If } x_{i,t} &= 1, \text{ } O_i\text{ starts at time } \textit{t} \\ \text{If } x_{i,t} &= 0, \text{ } O_i\text{ does not start at time } \textit{t} \end{aligned}$$
+$$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
+$$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
 For $t = 0 \rightarrow t < T$ for every operation, you define an index $x_{i + t}$, which means that every operation in a job contributes to $T$ indices.
 
