@@ -20,7 +20,7 @@ config = result['configuration']
 print(config)
 ```
 
-```output
+```console
     .....
     {'0': 1, '5': 0, '6': 0, '1': 0, '7': 1, '2': 0, '8': 0, '3': 0, '9': 0, '4': 0, '10': 1, '15': 0, '16': 0, '11': 0, '17': 1, '12': 0, '18': 0, '13': 0, '19': 0, '14': 0, '20': 0, '21': 0, '22': 0, '23': 1, '24': 0, '25': 0, '26': 0, '27': 0, '28': 0, '29': 1}
 ```
@@ -62,9 +62,8 @@ def create_op_array(config: dict):
         variables.insert(int(key), val)
     return variables
 
-def print_problem_details(n:int, o:int, p: List[int], ops_machines_map: List[List[int]]):
+def print_problem_details(n: int, o: int, p: List[int], ops_machines_map: List[List[int]]):
     """
-
     Print problem details e.g. operation runtimes and machine assignments.
 
     Keyword arguments:
@@ -95,7 +94,7 @@ def print_problem_details(n:int, o:int, p: List[int], ops_machines_map: List[Lis
     print(f" Assigned machine: {machines}")
     print()
 
-def split_array(T:int, array:List[int]):
+def split_array(T: int, array: List[int]):
     """
     Split array into rows representing the rows of the operation matrix.
 
@@ -112,7 +111,7 @@ def split_array(T:int, array:List[int]):
         i = i + T
     return ops
 
-def print_matrix(T:int, matrix:List[List[int]]):
+def print_matrix(T: int, matrix: List[List[int]]):
     """
     Print final output matrix.
 
@@ -133,7 +132,7 @@ def print_matrix(T:int, matrix:List[List[int]]):
         idx += 1
     print()
 
-def print_jobs(n:int, o:int, matrix:List[List[int]]):
+def print_jobs(n: int, o: int, matrix: List[List[int]]):
     """
     Group operations into jobs & print.
 
@@ -183,7 +182,7 @@ print("Operation start times (grouped into jobs):")
 print_jobs(n, o, matrix)
 ```
 
-```output
+```console
     Config dict:
     {'0': 1, '5': 0, '6': 0, '1': 0, '7': 1, '2': 0, '8': 0, '3': 0, '9': 0, '4': 0, '10': 1, '15': 0, '16': 0, '11': 0, '17': 1, '12': 0, '18': 0, '13': 0, '19': 0, '14': 0, '20': 0, '21': 0, '22': 0, '23': 1, '24': 0, '25': 0, '26': 0, '27': 0, '28': 0, '29': 1}
 
@@ -208,28 +207,6 @@ print_jobs(n, o, matrix)
     [[0, 2], [0, 2], [3, 4]]
 ```
 
-Translating back to the problem at hand, below is shown the order in which your repair tasks should be completed to finish as quickly (and safely) as possible. If two tasks have the same order number, they can be performed at the same time by different crew members using different tools:
-
-|Repair task|Required tool|Order|
-|---|---|---|
-|**$J_{0}$: Restart life support**||
-|$O_{0}$: Open wall panel in the life support module (*2 minutes*)|Universal multi-tool|1|
-|$O_{1}$: Replace fuse (*1 minute*)|Universal multi-tool|2|
-|**$J_{1}$: Recalibrate navigation system**||
-|$O_{2}$: Reboot the system (*2 minutes*)|Ship computer|1|
-|$O_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)|Ship computer|2|
-|**$J_{2}$: Replace power transformer in the reactor**||
-|$O_{4}$: Detach old transformer module (*1 minute*)|Universal multi-tool|3|
-|$O_{5}$: Install new transformer module (*2 minutes*)|Universal multi-tool|4|
-
-By inspection, you can tell that the solution above is valid (it does not violate any of the constraints defined previously):
-
-- Operations belonging to the same job happen in order
-- Each machine only has one operation running at a time
-- Operations are started once and only once
-
-For larger or more complex problems, it will not always be possible to verify the solution by eye. It is therefore common practice to implement some code to verify that solutions returned from the optimizer are valid, as well as evaluating how good the solutions are. This capability is also useful when it comes to tuning weights and penalty functions.
-
-In this particular (simple) instance, the solver quickly returned the solution with the lowest possible cost - the global minimum. However, you must remember that these solvers are heuristics and are therefore not guaranteed to find the absolute minimum cost solution possible, particularly when the problem definition becomes more complex.
+In this particular instance, the solver quickly returned the solution with the lowest possible cost - this is known as the global minimum. This means that the solution scheduled all the repair tasks in such a way that the **total time to complete all repair tasks was minimized**. However, you must remember that these solvers are heuristics and are therefore not guaranteed to find the absolute minimum cost solution possible, particularly when the problem definition becomes more complex.
 
 Depending on how well the cost function is defined and the weights are tuned, the solver will have varying degrees of success. This reinforces the importance of verifying and evaluating returned solutions, to enable tuning of the problem definition in order to improve solution quality.
