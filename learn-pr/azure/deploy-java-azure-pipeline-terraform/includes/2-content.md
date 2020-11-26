@@ -2,9 +2,9 @@ In this unit, you'll learn about Terraform with Azure.
 
 # Terraform with Azure
 
-Terraform is an open-source tool for provisioning and managing cloud infrastructure. It codifies infrastructure in configuration files that describe the topology of cloud resources. These resources include  virtual machines, storage accounts, and networking interfaces. The Terraform CLI provides a simple mechanism to deploy and version the configuration files to Azure.
+Terraform is an open-source tool for provisioning and managing cloud infrastructure. It manages "infrastructure as code" in configuration files that describe the topology of cloud resources. These resources include virtual machines, storage accounts, and networking interfaces.
 
-This article describes the benefits of using Terraform to manage Azure infrastructure.
+This module describes the benefits of using Terraform to manage Azure infrastructure.
 
 ## Automate infrastructure management
 
@@ -19,12 +19,13 @@ Terraform's template-based configuration files enable you to define, provision, 
 As a resource topology becomes complex, understanding the meaning and impact of infrastructure changes can be difficult.
 
 The Terraform CLI enables users to validate and preview infrastructure changes before application. Previewing infrastructure changes in a safe manner has several benefits:
+
 - Team members can collaborate more effectively by quickly understanding proposed changes and their impact.
 - Unintended changes can be caught early in the development process
 
 ## Deploy infrastructure to multiple clouds
 
-Terraform is adept at deploying an infrastructure across multiple cloud providers. It enables developers to use consistent tooling to manage each infrastructure definition.
+Terraform is adept at deploying an infrastructure across multiple cloud providers. It enables developers to use consistent tooling to manage each infrastructure definition. The Terraform CLI provides a simple mechanism to deploy and version the configuration files to Azure.
 
 ## Next steps
 

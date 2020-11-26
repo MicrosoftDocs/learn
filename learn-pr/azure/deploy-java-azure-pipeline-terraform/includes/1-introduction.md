@@ -1,12 +1,32 @@
-Imagine you're a infrastructure manager.
+Imagine you're an infrastructure manager and have been asked to provision resources using Terraform. Once you've created your project, you plan to use CI/CD to deploy to Azure.
+
+## Three pipelines
+
+![Build, Deploy and Provision Pipelines.](../media/1-pipelines.png)
+
+### Build
+
+- Maven
+
+### Deploy
+
+- Maven
+
+### Provision
+
+- IT infra team – provisions subscription, resource group, vnet, subnet, express route circuits …
+
+- Business project infra team - provisions database, cache, Azure Spring Cloud …
+
+- Business project app team – provisions apps and configures them
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+By the end of this module, you can:
 
 - Create a Terraform configuration for your Azure resources
 - Provision your Infrastructure and deploy to Azure
-- Setup your project for Continuous Integration and Deployment (CI/CD)
+- Set up your project for Continuous Integration and Deployment (CI/CD)
 
 ## Prerequisites
 
