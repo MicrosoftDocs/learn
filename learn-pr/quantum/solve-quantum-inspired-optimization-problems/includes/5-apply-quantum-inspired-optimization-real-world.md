@@ -1,21 +1,21 @@
-Recall that in our container ship problem, Contoso Logistics has to optimize how it distributes containers between two ships. In other words, we have a set of container weights, *w*, which we would like to partition into two sets: *W<sub>a</sub>* and *W<sub>b</sub>*.
+Now that you understand the basics of QIO, let's come back to our mineral shipment problem. Interplanet Express has to optimize how it distributes the mineral chunks between its two space ships. In other words, each chunk has a weight, *w*, associated to it, and we would like to partition these weights into two sets: *W<sub>a</sub>* and *W<sub>b</sub>*.
 
-Those two sets correspond to whether the container is loaded onto ship *a* or ship *b*, and we define ${\Delta}$ as the weight difference between the two ships.
+Those two sets correspond to whether a mineral chunk is loaded onto ship *a* or ship *b*, and we define ${\Delta}$ as the weight difference between the two ships.
 
-This short animation shows one possible way an optimizer might distribute the containers. The running time of the optimizer is measured in steps. At each step, we show the best solution found so far.
+This short animation shows one possible way an optimizer might distribute the mineral. The running time of the optimizer is measured in steps. At each step, we show the best solution found so far.
 
 > [!VIDEO <https://channel9.msdn.com/Shows/Learn-Azure/Quantum-Optimization-Container-Demo/player?format=ny>]
 
-In this part, we'll use quantum-inspired optimization to solve the problem.
+In this next part, we'll use quantum-inspired optimization to solve the problem.
 
 > [!NOTE]
-> This problem is known as a *number partitioning problem*. Although you can apply other heuristics to solve this type of problem, the container ship problem is a good introductory way to illustrate how to apply QIO concepts.
+> This problem is known as a *number partitioning problem*. Although you can apply other heuristics to solve this type of problem, the freight ship problem is a good introductory way to illustrate how to apply QIO concepts.
 
 ## Express the problem
 
-Let's start by coming up with an equation for the weight of a given ship, which is the sum of all the containers on the ship. This sum is expressed in the following equation, where *w<sub>i</sub>* is the weight of container *i*:
+Let's start by coming up with an equation for the weight of a given ship, which is the sum of all the mineral chunks on the ship. This sum is expressed in the following equation, where *w<sub>i</sub>* is the weight of chunk *i*:
 
-![An equation that shows the sum of container weights](../media/example-1.png)
+![An equation that shows the sum of mineral weights](../media/example-1.png)
 
 Ideally, we want a solution where the weight difference between the ships is as small as possible.
 
@@ -27,9 +27,9 @@ The letter *H* is used to represent a cost function. This notation originates fr
 
 ## Refine the problem
 
-Next, we introduce a variable, *x<sub>i</sub>*, to represent whether an individual container *i* is assigned to ship *a* or ship *b*.
+Next, we introduce a variable, *x<sub>i</sub>*, to represent whether an individual mineral chunk *i* is assigned to ship *a* or ship *b*.
 
-Because we can assign the container *i* to either ship, the variable *x<sub>i</sub>* can take on two different values, which makes it a binary variable. For convenience, we say the two values it can take on are *1* and *-1*. The value *1* represents that the container is placed on ship *a*, and *-1* represents that the container is placed on ship *b*. Because of our decision to make *x<sub>i</sub>* be either *1* or *-1*, our optimization problem is called an *Ising problem*.
+Because we can assign the chunk *i* to either ship, the variable *x<sub>i</sub>* can take on two different values, which makes it a binary variable. For convenience, we say the two values it can take on are *1* and *-1*. The value *1* represents that the mineral chunk is placed on ship *a*, and *-1* represents that the chunk is placed on ship *b*. Because of our decision to make *x<sub>i</sub>* be either *1* or *-1*, our optimization problem is called an *Ising problem*.
 
 By introducing this variable *x<sub>i</sub>*, we can simplify the equation as follows:
 
@@ -39,14 +39,14 @@ By introducing this variable *x<sub>i</sub>*, we can simplify the equation as fo
 
 There's one last change we need to make before we can solve our problem.
 
-If we look at our cost function *H*, there's a flaw: the solution with the least cost is to assign all containers to ship *b* by setting all of the *x<sub>i</sub>* variables equal to *-1*. But that's not correct! To fix this, we square the right-hand side of the equation to ensure that it cannot be negative.
+If we look at our cost function *H*, there's a flaw: the solution with the least cost is to assign the entirety of the extracted mineral to ship *b* by setting all of the *x<sub>i</sub>* variables equal to *-1*. But that's not correct! To fix this, we square the right-hand side of the equation to ensure that it cannot be negative.
 
 ![An equation that squares the previous computation to ensure that the cost function is not negative](../media/example-4.png)
 
 This final model gives us a cost function with the required properties.
 
-- If all the containers are on one ship, the function is at its highest value. This is the least optimal solution.
-- If the containers are perfectly balanced, the value of the summation inside the square is *0*. This means the function is at its lowest value.
+- If all the mineral is on one ship, the function is at its highest value. This is the least optimal solution.
+- If the freight ships are perfectly balanced, the value of the summation inside the square is *0*. This means the function is at its lowest, or optimal, value.
 
 ## Solving the Problem in Python
 
@@ -67,18 +67,18 @@ workspace = Workspace(
 workspace.login()
 ```
 
-Next, we'll define a function that takes an array of container weights and returns a `Problem` object that represents the cost function.
+Next, we'll define a function that takes an array of mineral weights and returns a `Problem` object that represents the cost function.
 
 ```python
 from typing import List
 from azure.quantum.optimization import Problem, ProblemType, Term
 
-def createProblemForContainerWeights(containerWeights: List[int]) -> Problem:
+def createProblemForMineralWeights(mineralWeights: List[int]) -> Problem:
     terms: List[Term] = []
 
     # Expand the squared summation
-    for i in range(len(containerWeights)):
-        for j in range(len(containerWeights)):
+    for i in range(len(mineralWeights)):
+        for j in range(len(mineralWeights)):
             if i == j:
                 # Skip the terms where i == j as they form constant terms in an Ising problem and can be disregarded:
                 # w_i∗w_j∗x_i∗x_j = w_i*w_j∗(x_i)^2 = w_i∗w_j
@@ -87,7 +87,7 @@ def createProblemForContainerWeights(containerWeights: List[int]) -> Problem:
 
             terms.append(
                 Term(
-                    w = containerWeights[i] * containerWeights[j],
+                    w = mineralWeights[i] * mineralWeights[j],
                     indices = [i, j]
                 )
             )
@@ -96,14 +96,14 @@ def createProblemForContainerWeights(containerWeights: List[int]) -> Problem:
     return Problem(name="Ship Sample Problem", problem_type=ProblemType.ising, terms=terms)
 ```
 
-Next, we'll define the list of containers and their weights and instantiate a problem:
+Next, we'll define the list of mineral chunks and their weights and instantiate a problem:
 
 ```python
-# This array contains a list of the weights of the containers
-containerWeights = [1, 5, 9, 21, 35, 5, 3, 5, 10, 11]
+# This array contains the weights of all the mineral chunks
+mineralWeights = [1, 5, 9, 21, 35, 5, 3, 5, 10, 11]
 
-# Create a problem for the list of containers:
-problem = createProblemForContainerWeights(containerWeights)
+# Create a problem for the given list of minerals:
+problem = createProblemForMineralWeights(mineralWeights)
 ```
 
 Now, submit it to Azure using the ParallelTempering solver:
@@ -138,18 +138,18 @@ def printResultSummary(result):
     # Print a summary of the result
     shipAWeight = 0
     shipBWeight = 0
-    for container in result['configuration']:
-        containerAssignment = result['configuration'][container]
-        containerWeight = containerWeights[int(container)]
+    for chunk in result['configuration']:
+        chunkAssignment = result['configuration'][chunk]
+        chunkWeight = mineralWeights[int(chunk)]
         ship = ''
-        if containerAssignment == 1:
+        if chunkAssignment == 1:
             ship = 'A'
-            shipAWeight += containerWeight
+            shipAWeight += chunkWeight
         else:
             ship = 'B'
-            shipBWeight += containerWeight
+            shipBWeight += chunkWeight
 
-        print(f'Container {container} with weight {containerWeight} was placed on Ship {ship}')
+        print(f'Mineral chunk {chunk} with weight {chunkWeight} was placed on Ship {ship}')
 
     print(f'\nTotal weights: \n\tShip A: {shipAWeight} tonnes \n\tShip B: {shipBWeight} tonnes')
 
@@ -157,16 +157,16 @@ printResultSummary(result)
 ```
 
 ```output
-Container 0 with weight 1 was placed on Ship A
-Container 1 with weight 5 was placed on Ship B
-Container 2 with weight 9 was placed on Ship A
-Container 3 with weight 21 was placed on Ship A
-Container 4 with weight 35 was placed on Ship B
-Container 5 with weight 5 was placed on Ship B
-Container 6 with weight 3 was placed on Ship B
-Container 7 with weight 5 was placed on Ship B
-Container 8 with weight 10 was placed on Ship A
-Container 9 with weight 11 was placed on Ship A
+Chunk 0 with weight 1 was placed on Ship A
+Chunk 1 with weight 5 was placed on Ship B
+Chunk 2 with weight 9 was placed on Ship A
+Chunk 3 with weight 21 was placed on Ship A
+Chunk 4 with weight 35 was placed on Ship B
+Chunk 5 with weight 5 was placed on Ship B
+Chunk 6 with weight 3 was placed on Ship B
+Chunk 7 with weight 5 was placed on Ship B
+Chunk 8 with weight 10 was placed on Ship A
+Chunk 9 with weight 11 was placed on Ship A
 
 Total weights:
     Ship A: 52 tonnes
@@ -178,33 +178,33 @@ Total weights:
 The cost function we've built works well so far, but let's take a closer look at the `Problem` that was generated:
 
 ```python
-print(f'The problem has {len(problem.terms)} terms for {len(containerWeights)} containers:')
+print(f'The problem has {len(problem.terms)} terms for {len(mineralWeights)} mineral chunks:')
 print(problem.terms)
 ```
 
 ```output
-The problem has 90 terms for 10 containers:
+The problem has 90 terms for 10 mineral chunks:
 [{'c': 5, 'ids': [0, 1]}, {'c': 9, 'ids': [0, 2]}, {'c': 21, 'ids': [0, 3]}, {'c': 35, 'ids': [0, 4]}, {'c': 5, 'ids': [0, 5]}, {'c': 3, 'ids': [0, 6]}, {'c': 5, 'ids': [0, 7]}, {'c': 10, 'ids': [0, 8]}, {'c': 11, 'ids': [0, 9]}, {'c': 5, 'ids': [1, 0]}, {'c': 45, 'ids': [1, 2]}, {'c': 105, 'ids': [1, 3]}, {'c': 175, 'ids': [1, 4]}, {'c': 25, 'ids': [1, 5]}, {'c': 15, 'ids': [1, 6]}, {'c': 25, 'ids': [1, 7]}, {'c': 50, 'ids': [1, 8]}, {'c': 55, 'ids': [1, 9]}, {'c': 9, 'ids': [2, 0]}, {'c': 45, 'ids': [2, 1]}, {'c': 189, 'ids': [2, 3]}, {'c': 315, 'ids': [2, 4]}, {'c': 45, 'ids': [2, 5]}, {'c': 27, 'ids': [2, 6]}, {'c': 45, 'ids': [2, 7]}, {'c': 90, 'ids': [2, 8]}, {'c': 99, 'ids': [2, 9]}, {'c': 21, 'ids': [3, 0]}, {'c': 105, 'ids': [3, 1]}, {'c': 189, 'ids': [3, 2]}, {'c': 735, 'ids': [3, 4]}, {'c': 105, 'ids': [3, 5]}, {'c': 63, 'ids': [3, 6]}, {'c': 105, 'ids': [3, 7]}, {'c': 210, 'ids': [3, 8]}, {'c': 231, 'ids': [3, 9]}, {'c': 35, 'ids': [4, 0]}, {'c': 175, 'ids': [4, 1]}, {'c': 315, 'ids': [4, 2]}, {'c': 735, 'ids': [4, 3]}, {'c': 175, 'ids': [4, 5]}, {'c': 105, 'ids': [4, 6]}, {'c': 175, 'ids': [4, 7]}, {'c': 350, 'ids': [4, 8]}, {'c': 385, 'ids': [4, 9]}, {'c': 5, 'ids': [5, 0]}, {'c': 25, 'ids': [5, 1]}, {'c': 45, 'ids': [5, 2]}, {'c': 105, 'ids': [5, 3]}, {'c': 175, 'ids': [5, 4]}, {'c': 15, 'ids': [5, 6]}, {'c': 25, 'ids': [5, 7]}, {'c': 50, 'ids': [5, 8]}, {'c': 55, 'ids': [5, 9]}, {'c': 3, 'ids': [6, 0]}, {'c': 15, 'ids': [6, 1]}, {'c': 27, 'ids': [6, 2]}, {'c': 63, 'ids': [6, 3]}, {'c': 105, 'ids': [6, 4]}, {'c': 15, 'ids': [6, 5]}, {'c': 15, 'ids': [6, 7]}, {'c': 30, 'ids': [6, 8]}, {'c': 33, 'ids': [6, 9]}, {'c': 5, 'ids': [7, 0]}, {'c': 25, 'ids': [7, 1]}, {'c': 45, 'ids': [7, 2]}, {'c': 105, 'ids': [7, 3]}, {'c': 175, 'ids': [7, 4]}, {'c': 25, 'ids': [7, 5]}, {'c': 15, 'ids': [7, 6]}, {'c': 50, 'ids': [7, 8]}, {'c': 55, 'ids': [7, 9]}, {'c': 10, 'ids': [8, 0]}, {'c': 50, 'ids': [8, 1]}, {'c': 90, 'ids': [8, 2]}, {'c': 210, 'ids': [8, 3]}, {'c': 350, 'ids': [8, 4]}, {'c': 50, 'ids': [8, 5]}, {'c': 30, 'ids': [8, 6]}, {'c': 50, 'ids': [8, 7]}, {'c': 110, 'ids': [8, 9]}, {'c': 11, 'ids': [9, 0]}, {'c': 55, 'ids': [9, 1]}, {'c': 99, 'ids': [9, 2]}, {'c': 231, 'ids': [9, 3]}, {'c': 385, 'ids': [9, 4]}, {'c': 55, 'ids': [9, 5]}, {'c': 33, 'ids': [9, 6]}, {'c': 55, 'ids': [9, 7]}, {'c': 110, 'ids': [9, 8]}]
 ```
 
-That's a lot of terms for just 10 containers! On closer inspection however, you'll note that there are essentially duplicated terms that result from having squared the right hand side of the equation when building our cost function. For example, look at the last term: `{'w': 110, 'ids': [9, 8]}`. If you look through the rest of the terms, you'll find a symmetrical copy of this term: `{'w': 110, 'ids': [8, 9]}`.
+That's a lot of terms for just 10 chunks! On closer inspection however, you'll note that there are essentially duplicated terms that result from having squared the right hand side of the equation when building our cost function. For example, look at the last term: `{'w': 110, 'ids': [9, 8]}`. If you look through the rest of the terms, you'll find a symmetrical copy of this term: `{'w': 110, 'ids': [8, 9]}`.
 
 This duplicate encodes the exact same information in our cost function. However, because we don't actually care about the value of the cost function (just the shape), we can omit these terms too by a slight modification to our cost function:
 
 $$ H^2 = \Large(\sum_{i<j} w_{i} x_{i})^2 $$
 
-In code, this means a small modification to the `createProblemForContainerWeights` function:
+In code, this means a small modification to the `createProblemForMineralWeights` function:
 
 ```python
-def createSimplifiedProblemForContainerWeights(containerWeights: List[int]) -> Problem:
+def createSimplifiedProblemForMineralWeights(mineralWeights: List[int]) -> Problem:
     terms: List[Term] = []
 
     # Expand the squared summation
-    for i in range(len(containerWeights)-1):
-        for j in range(i+1, len(containerWeights)):
+    for i in range(len(mineralWeights)-1):
+        for j in range(i+1, len(mineralWeights)):
             terms.append(
                 Term(
-                    w = containerWeights[i] * containerWeights[j],
+                    w = mineralWeights[i] * mineralWeights[j],
                     indices = [i, j]
                 )
             )
@@ -217,7 +217,7 @@ Let's check that this creates a smaller problem:
 
 ```python
 # Create the simplified problem
-simplifiedProblem = createSimplifiedProblemForContainerWeights(containerWeights)
+simplifiedProblem = createSimplifiedProblemForMineralWeights(mineralWeights)
 print(f'The simplified problem has {len(simplifiedProblem.terms)} terms')
 ```
 
@@ -241,16 +241,16 @@ printResultSummary(simplifiedResult)
 Submitting simplified problem...
 ......
 Result in 21.3847393989563 seconds:  {'version': '1.0', 'configuration': {'0': 1, '1': -1, '2': 1, '3': 1, '4': -1, '5': -1, '6': -1, '7': -1, '8': 1, '9': 1}, 'cost': -1026.0, 'parameters': {'all_betas': [0.00040816326530612246, 0.002006369056545571, 0.009862516138105735, 0.048480225637982856, 0.00040816326530612246, 0.0008283262589495933, 0.0016810047586003002, 0.0034114299382712347, 0.006923153646170291, 0.014049843401670412, 0.028512742848146536, 0.05786374135870263, 0.11742863820077845, 0.00040816326530612246, 0.0006433203910121752, 0.001013959757455542, 0.0015981374197104284, 0.0025188802548612886, 0.003970095224652018, 0.00625740587008283, 0.009862516138105737, 0.015544656458908674, 0.024500476454672904, 0.03861605742737167, 0.060864118050637114, 0.0959300641462203, 0.15119872762210523, 0.00040816326530612246, 0.0005707278344641172, 0.0007980391395286468, 0.0011158847173059405, 0.001560322847138076, 0.0021817732150494, 0.0030507368206765485, 0.004265794027002447, 0.005964788098887627, 0.00834046295705291, 0.011662329186672137, 0.01630723890971679, 0.022802138115127556, 0.03188384652361621, 0.044582646767983895, 0.062339165739196796, 0.08716780780834711, 0.12188528075433366, 0.17043013972803087, 0.00040816326530612246, 0.0005322267924038292, 0.0006940001284535482, 0.0009049453826219594, 0.0011800086368191764, 0.0015386789188685584, 0.002006369056545571, 0.002616216249991688, 0.0034114299382712343, 0.004448353313213404, 0.005800455397657764, 0.007563536538403329, 0.009862516138105733, 0.012860283556576787, 0.0167692392934654, 0.021866344178522693, 0.02851274284814652, 0.03717935188832539, 0.04848022563798284, 0.06321606371647785, 0.08243094290953187, 0.1074862930319301, 0.1401573581710174, 0.18275897786933026], 'replicas': 70, 'sweeps': 600}}
-Container 0 with weight 1 was placed on Ship A
-Container 1 with weight 5 was placed on Ship B
-Container 2 with weight 9 was placed on Ship A
-Container 3 with weight 21 was placed on Ship A
-Container 4 with weight 35 was placed on Ship B
-Container 5 with weight 5 was placed on Ship B
-Container 6 with weight 3 was placed on Ship B
-Container 7 with weight 5 was placed on Ship B
-Container 8 with weight 10 was placed on Ship A
-Container 9 with weight 11 was placed on Ship A
+Chunk 0 with weight 1 was placed on Ship A
+Chunk 1 with weight 5 was placed on Ship B
+Chunk 2 with weight 9 was placed on Ship A
+Chunk 3 with weight 21 was placed on Ship A
+Chunk 4 with weight 35 was placed on Ship B
+Chunk 5 with weight 5 was placed on Ship B
+Chunk 6 with weight 3 was placed on Ship B
+Chunk 7 with weight 5 was placed on Ship B
+Chunk 8 with weight 10 was placed on Ship A
+Chunk 9 with weight 11 was placed on Ship A
 
 Total weights:
     Ship A: 52 tonnes

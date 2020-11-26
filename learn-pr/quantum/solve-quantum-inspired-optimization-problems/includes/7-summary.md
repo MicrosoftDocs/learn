@@ -1,3 +1,5 @@
+Phew! Luckily, an intergalactic crisis could be averted, thanks to your clever use of a QIO algorithm to equitably distribute the rare mineral.
+
 You now have a basic understanding of QIO and some of the problems it can solve. Here's a brief recap:
 
 * There are many types of quantum-inspired algorithms. One commonly used quantum-inspired algorithm is based on a computational model called *adiabatic quantum computing*.
