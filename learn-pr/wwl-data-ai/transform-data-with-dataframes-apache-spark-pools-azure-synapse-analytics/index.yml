@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics
+metadata:
+  title: Transform data with DataFrames in Apache Spark Pools in Azure Synapse Analytics
+  description: "Transform data with DataFrames in Apache Spark Pools in Azure Synapse Analytics"
+  ms.date: 11/25/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Transform data with DataFrames in Apache Spark Pools in Azure Synapse Analytics
+summary: Learn how to transform data using DataFrames in Apache Spark Pools in Azure Synapse Analytics.
+abstract: |
+  After completing this module, you will be able to:
+  - Understand DataFrames in Spark Pools in Azure Synapse Analytics
+  - Load data into a Spark DataFrame
+  - Create a Spark table
+  - Write Data to and from a storage account
+  - Load a streaming DataFrame into Apache Spark
+  - Flatten nested structures and explode arrays with Apache Spark
+prerequisites: |
+  Before taking this module, it is recommended that you complete the following modules:
+  - Data Fundamentals
+  - Introduction to Azure Data Factory
+  - Introduction to Azure Synapse Analytics
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics.introduction
+- learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics.introduction-to-dataframes
+- learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics.load-data-into-spark-dataframe
+- learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics.exercise-load-data-into-spark-dataframe
+- learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics.exercise-create-spark-table
+- learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics.flatten-nested-structures-explode-arrays-with
+- learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics.exercise-flatten-nested-structures-explode-arrays-with-synapse
+- learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics.knowledge-check
+- learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics.summary
+badge:
+  uid: learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics.badge

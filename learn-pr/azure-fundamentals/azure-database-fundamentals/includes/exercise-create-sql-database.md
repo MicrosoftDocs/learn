@@ -79,7 +79,7 @@ In this task, you configure the server and run a SQL query.
 
     ![Screenshot of the Query Editor sign-in page with the IP address error.](../media/query-editor-login.png)
 
-1. Select **Overview** > **Firewall settings**.
+1. Select **Overview** > **Set server firewall**.
 
 1. In **Client IP address** your IP will be shown, create a **Rule name** > Add your IP in both **Start IP and End IP** and then select **Save**. 
 
