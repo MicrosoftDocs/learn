@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-java-azure-pipeline-terraform
 metadata:
-  title: Create a Terraform configuration, provision your Azure resources and setup your project for Continuous Integration and Deployment (CI/CD).
-  description: Create a Terraform configuration, provision your Azure resources and setup your project for Continuous Integration and Deployment (CI/CD).
+  title: Create a Terraform configuration, provision your Azure resources, and set up your project for Continuous Integration and Deployment (CI/CD).
+  description: Create a Terraform configuration, provision your Azure resources, and set up your project for Continuous Integration and Deployment (CI/CD).
   ms.date: 10/05/2020
   author: roryp
   ms.author: ropreddy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create a Terraform configuration, provision your Azure resources and setup your project for Continuous Integration and Deployment (CI/CD).
-summary: Create a Terraform configuration, provision your Azure resources and setup your project for Continuous Integration and Deployment (CI/CD).
+title: Create a Terraform configuration, provision your Azure resources, and set up your project for Continuous Integration and Deployment (CI/CD).
+summary: Create a Terraform configuration, provision your Azure resources, and set up your project for Continuous Integration and Deployment (CI/CD).
 abstract: |
   In this module, you will:
   - Create a Terraform configuration for your Azure resources
   - Provision your Infrastructure and deploy to Azure
-  - Setup your project for Continuous Integration and Deployment (CI/CD)
+  - Set up your project for Continuous Integration and Deployment (CI/CD)
 prerequisites: | 
   - An Azure Subscription
   - Local installations of Java JDK (1.8+), Maven (3.0+), and the Azure CLI (2.12+)
