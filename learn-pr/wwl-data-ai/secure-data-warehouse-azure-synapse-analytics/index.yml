@@ -36,7 +36,6 @@ units:
 - learn.wwl.secure-data-warehouse-azure-synapse-analytics.exercise-manage-authorization-through-column-row-level-security
 - learn.wwl.secure-data-warehouse-azure-synapse-analytics.manage-sensitive-data-with-dynamic-data-masking
 - learn.wwl.secure-data-warehouse-azure-synapse-analytics.implement-encryption
-- learn.wwl.secure-data-warehouse-azure-synapse-analytics.understand-advanced-data-security-options-for
 - learn.wwl.secure-data-warehouse-azure-synapse-analytics.knowledge-check
 - learn.wwl.secure-data-warehouse-azure-synapse-analytics.summary
 badge:
