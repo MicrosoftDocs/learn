@@ -161,4 +161,4 @@ To achieve this, you use ROWS in combination with UNBOUNDED PRECEDING to limit t
 
 In this query, we use the FIRST_VALUE analytic function to retrieve the book title with the fewest downloads, as indicated by the ROWS UNBOUNDED PRECEDING clause over the Country partition (1). The UNBOUNDED PRECEDING option set the window start to the first row of the partition, giving us the title of the book with the fewest downloads for the country within the partition.
 
-In the result set, we can scroll through the list that of books by country, sorted by number of downloads in ascending order. Here we see that for Germany, Harry Potter - The Ultimate Quiz Book (not to be confused with Harry Potter - The Ultimate Quiz, which had the most) had the fewest downloads, and Burn for Me had the fewest in Sweden (2).
+In the result set, we can scroll through the list that of books by country, sorted by number of downloads in ascending order.

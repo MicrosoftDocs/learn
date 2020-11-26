@@ -7,12 +7,13 @@ The Develop hub in Azure Synapse Studio is an interface you can use for developi
 -	Notebooks
 -	Azure Synapse Pipelines
 -	Power BI datasets and reports
- 
-    ![Defining scripts in Azure Synapse Analytics](../media/define-scripts-synapse.png)
+    > [!div class="mx-imgBorder"]  
+    > [![Defining scripts in Azure Synapse Analytics](../media/define-scripts-synapse.png)](../media/define-scripts-synapse.png#lightbox)
 
 In addition to this, you can also define Spark Job definitions, in either PySpark, Scala, or .NET Spark that can submit a batch job to the Azure Synapse Spark pool too
- 
-![Defining a Spark job definition](../media/spark-job-definition.png)
+
+> [!div class="mx-imgBorder"]  
+> ![Defining a Spark job definition](../media/spark-job-definition.png)
 
 ## Visual Studio and SQL Server Data Tools
 
