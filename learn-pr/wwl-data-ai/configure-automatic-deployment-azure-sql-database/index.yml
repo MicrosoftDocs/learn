@@ -3,7 +3,7 @@ uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database
 metadata:
   title: Configure automatic deployment for Azure SQL Database
   description: "Configure automatic deployment for Azure SQL Database"
-  ms.date: 11/23/2020
+  ms.date: 11/26/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial

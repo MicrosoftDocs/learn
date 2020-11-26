@@ -13,7 +13,7 @@ You've been hired as a Senior Data Engineer to help automate day to day operatio
 
 1. Right-click **azuredeploy.json**, and select **Open link in new tab**.
 
-    :::image type="content" source="../media/arm-json-template.png" alt-text="Screenshot of the GitHub repository.":::
+    :::image type="content" source="../media/arm-json-template.png" alt-text="Screenshot of the JSON file.":::
 
 1. Review the file. Scroll down to the variables and resources sections of the JSON. Note how you can write a template that can create a random server name, and that you can create databases inside a server.
 
