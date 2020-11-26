@@ -5,7 +5,7 @@ However, it does require a set-up with instructions that can be found here:
 [Set up](https://github.com/ctesta-oneillmsft/asa-vtd) 
 
 
-* Integrating SQL and Spark pools in Azure Synapse Analytics
+## Integrating SQL and Spark pools in Azure Synapse Analytics
 
 Tailwind Traders wants to write to the SQL pool after performing data engineering tasks in Spark, then reference the SQL pool data as a source for joining with Spark dataframes that contain data from other files.
 
@@ -44,7 +44,7 @@ The Azure Synapse Apache Spark pool to Synapse SQL connector is a data source im
 
 4. Select the **Workspace** tab **(1)**, expand the SQL pool, select the **ellipses (...)** on Tables **(2)** and select **Refresh (3)**. Expand the **`wwi.TopPurchases`** table and columns **(4)**.
 
-    ![The table is displayed.](../media/toppurchases-table.png)
+    ![The table is displayed.](../media/top-purchases-table.png)
 
     As you can see, the `wwi.TopPurchases` table was automatically created for us, based on the derived schema of the Spark dataframe. The Apache Spark pool to Synapse SQL connector was responsible for creating the table and efficiently loading the data into it.
 
@@ -116,6 +116,6 @@ The Azure Synapse Apache Spark pool to Synapse SQL connector is a data source im
 
     Finally, we displayed the joined and aggregated data in a table view.
 
-    > **Note to presenter**: Feel free to click on the column headers in the Table view to sort the result set.
+   Feel free to click on the column headers in the Table view to sort the result set.
 
     ![The cell contents and output are displayed.](../media/join-output.png)

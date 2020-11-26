@@ -1,4 +1,4 @@
-The use cases for apache spark and sql integration within Synapse analytics are as following:
+The use cases for Apache Spark and sql integration within Synapse analytics are as following:
 
 * Dealing with different type of analytics
 * Scalability 

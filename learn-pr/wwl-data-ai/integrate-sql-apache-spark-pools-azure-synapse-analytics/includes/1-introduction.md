@@ -11,7 +11,7 @@ After completing this module, you will be able to:
 * Externalize the use of spark pools within Azure Synapse Workspace
 * Transfer data outside the synapse workspace using SQL authentication
 * Transfer data outside the synapse workspace using the PySpark connector
-* Transform data in apache spark and write back to SQL pool in Azure Synapse Analytics
+* Transform data in Apache Spark and write back to SQL pool in Azure Synapse Analytics
 
 ## Prerequisite
 Before taking this module, it is recommended that you complete the following modules:
