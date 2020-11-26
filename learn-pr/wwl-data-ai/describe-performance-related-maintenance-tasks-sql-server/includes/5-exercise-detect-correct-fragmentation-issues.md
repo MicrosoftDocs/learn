@@ -126,7 +126,7 @@ You have been hired as a database administrator to identify performance related 
     
     Click on the **Messages** tab in the result pane of SQL Server Management Studio. Make note of the count of logical reads performed by the query.
 
-    :::image type="content" source="../media/results.png" alt-text="Results":::
+    :::image type="content" source="../media/results.png" alt-text="Screenshot showing the results of the query.":::
 
 ## Rebuild indexes
 
