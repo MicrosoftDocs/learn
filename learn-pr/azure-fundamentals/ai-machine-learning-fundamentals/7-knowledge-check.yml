@@ -13,7 +13,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You need to predict future behavior based on previous actions. Which product option should you eliminate as a candidate?"
+  - content: "You need to predict future behavior based on previous actions. Which product option should you select as a candidate?"
     choices:
     - content: "Azure Machine Learning"
       isCorrect: true
@@ -24,7 +24,7 @@ quiz:
     - content: "Azure Cognitive Services"
       isCorrect: false
       explanation: "The Personalizer service is part of Azure Cognitive Services and allows you to build recommendations to predict what a user might want.  It should not be eliminated as a candidate."
-  - content: "You need to create a human-computer interface that uses natural language to answer customer questions. Which product option should you eliminate as a candidate?"
+  - content: "You need to create a human-computer interface that uses natural language to answer customer questions. Which product option should you select as a candidate?"
     choices:
     - content: "Azure Machine Learning"
       isCorrect: false
