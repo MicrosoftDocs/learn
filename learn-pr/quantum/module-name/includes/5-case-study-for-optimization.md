@@ -1,20 +1,10 @@
-User case studies from white papers. 
-
-**Mike** The Traffic optimization section is a good example of how we applied QIO. But the other areas in the white papers are still too broad and too high-level. 
-
---------
-
-Complex optimization problems exist across every industry, such as vehicle routing, supply chain management, portfolio optimization, power grid management, and many others. Optimization algorithms are also at the core of many machine learning methods. These real-world problems are very valuable to solve in order to reduce costs, accelerate processes, or reduce risk. Many real-world optimization problems remain unsolvable by classical computing despite the remarkable advancement in both algorithms and computing power over the past decades.
-
-Quantum computers might be able help solve complex optimization problems, from combinatorial optimization to partial differential equations. Quantum computers can naturally represent random distributions as quantum states, and therefore have the potential to provide better solutions than today’s classical optimization algorithms.
+Complex optimization problems exist across every industry, such as vehicle routing, supply chain management, portfolio optimization, power grid management and many others. Optimization algorithms are also at the core of many machine learning methods. These real-world problems are very valuable to solve in order to reduce costs, accelerate processes, or reduce risks. Many real-world optimization problems remain unsolvable by classical computing despite the remarkable advancement in both algorithms and computing power over the past decades.
 
 Emulating quantum effects on classical computers has led to the development of new types of quantum solutions that run
 on classical hardware, also called quantum-inspired algorithms. These algorithms allow us to exploit some of the advantages of
-quantum computing approaches today on classical hardware, providing a speedup over traditional approaches. Using
+quantum computing approaches today on classical hardware, providing a speedup over traditional approaches. Using quantum solutions on classical hardware also prepares us for the future of quantum optimization on actual quantum hardware.
 
-quantum solutions on classical hardware also prepares us for the future of quantum optimization on actual quantum hardware.
-
-## Application areas
+## Application case studies
 
 ### Traffic optimization
 
@@ -24,35 +14,51 @@ case for vehicle routing is the efficient evacuation of large urban areas.
 An example of applying quantum-inspired optimization is to significantly reduce both congestion and travel time. Ford and Microsoft worked together on a solution that showed a more than 70% decrease in congestion, as well as a reduction of
 average travel time of approximately 8%  in preliminaries studies with up to 5,000 vehicles and compared to the best routes provided by Bing Maps. 
 
-Traffic optimizations of approximately 400 vehicles takes 20 seconds on a quantum annealing machine. In the case study, the
-quantum-inspired algorithms tackle a comparable problem in only 0.02 seconds on a single CPU core. This can be further
+Traffic optimizations of approximately 400 vehicles takes 20 seconds on a quantum annealing machine (ref.[Traffic flow optimization using a quantum annealer](https://arxiv.org/abs/1708.01625)). In the case study, the
+quantum-inspired algorithms tackle a comparable problem in only 0.02 seconds on a single CPU core. Larger problems could also be
 accelerated using specialized hardware, such as FPGAs available in Azure, by at least two orders of magnitude, which
 enables the speed required to address the scale of real-world routing complexity, well beyond simple toy problems. 
 
-### Fleet management
-
-### Supply chain optimization 
-Inventory optimization;
-
-Supply chain disruptions;
-
-Logistics;
-
-Risk management;
-
-
-----------------
 ### Materials Design
 Many of the staples of modern life such as compact electronics, energy efficient transportation, and innovative buildings and construction techniques are owed to advancements in materials science that allow researchers to create materials whose chemical structures maximize certain physical properties such as strength, electrical characteristics, weight, or other features. However, designing materials to maximize these properties requires simulating the complex quantum physics that dictate how the atoms that make up these materials interact with the world around them. For most molecules, this simulation represents a problem that is intractable using traditional computers or methods.
 
-In this domain, quantum-inspired optimization can be applied to help achieve near-term advancements in state of the art materials. One example of this comes from OTI Lumionics who have applied optimization solvers in Azure Quantum to do materials simulations that they can apply to their R&D process as they design the next generation of OLED displays. To accomplish this, they leveraged the ability for Azure Quantum's solvers to support the native higher-order problem in a Polynomial Unconstrained Binary Optimization (PUBO) problem - reducing the problem definition from 58,265 variables to just 132. Making use of parameter-free solvers they were also able to save valuable time optimizing parameters.
+In this domain, quantum-inspired optimization can be applied to help achieve near-term advancements in state of the art materials. One example of this comes from OTI Lumionics who have applied optimization solvers in Azure Quantum to do materials simulations that they can apply to their R&D process as they design the next generation of OLED displays. To accomplish this, they leveraged the ability for Azure Quantum's solvers to support the native higher-order problem in a Polynomial Unconstrained Binary Optimization (PUBO) problem - reducing the problem definition from 58,265 variables to just 132. Making use of parameter-free solvers they were also able to save valuable time optimizing parameters.  By using Azure Quantum’s optimization tools in their pipeline, OTI Lumionics successfully performed
+a complete active space configuration interaction simulation of an archetype green light
+emitting OLED material — Alq3 [Tris (8-hydroxyquinolinato) aluminum] (ref. [ Accelerating materials design with Azure Quantum](https://cloudblogs.microsoft.com/quantum/2020/01/21/oti-lumionics-accelerating-materials-design-microsoft-azure-quantum/)).
 
-In addition to solving complex optimization problems, quantum computers may be able to aid in chemistry and materials development far beyond the capacity of present-day supercomputers. Such simulations could lead to breakthroughs in materials science such as batteries with greater capacity and longer life spans, high temperature superconductors, and new catalysts for converting and optimizing alternative fuel sources. In addition, because of the difficulty of simulating the characteristics of complex molecules, the development of new materials with specific properties—like next-gen batteries—poses huge computational challenges as well. And with quantum breakthroughs in material science, lower emissions and better efficiencies begin to come into focus. 
+In addition to solving complex optimization problems, quantum computers may be able to aid in chemistry and materials development far beyond the capacity of present-day supercomputers. Such simulations could lead to breakthroughs in materials science such as batteries with greater capacity and longer life spans, high temperature superconductors, and new catalysts for converting and optimizing alternative fuel sources. In addition, because of the difficulty of simulating the characteristics of complex molecules, the development of new materials with specific properties — like next-gen batteries — poses huge computational challenges as well. With quantum breakthroughs in material science, lower emissions and better efficiencies begin to come into focus. 
 
 ### Energy and utility
-Load balancing
+Simulating aerodynamics is another area that requires heavy computation. On a windmill farm, design the placement of windmill locations is critical, as windmills harness power from the wind but can also disrupt airflow and hinder the farm from utilizing the wind's maximum power. 
 
+Although airflow and turbulence are seemingly classical and macroscopic phenomena, one can get inspiration from quantum mechanical systems, such as an electron behaving like a spinning top, approximating it as a mechanical engine of interacting rotors. 
 
-----------------
+Microsoft Quantum Network Member Qubit Engineering is creating
+rotor models to simulate what turbulence looks like in the air. Azure Quantum has tools to solve these rotor models in order to find
+minimum and maximum energy configurations, which helps Qubit Engineering apply quantum theories to calculate the optimum
+placement of windmills within a space.
+
+By understanding environmental factors and adding how each
+windmill might interact with each other, Qubit Engineering has created
+an abstract modeling scoring system to find optimal placement for
+maximum energy production under a variety of circumstances.
+
+### Signal processing
+Magnetic Resonance Imaging (MRI) is a key diagnostics tool in healthcare and has played a pivotal role in the treatment of the most harming
+diseases for humanity ranging from cancer to heart disease to Alzheimer’s. While much progress has been made in recent decades,
+improvements in imaging and scan times have been incremental, with significant improvements limited by computational challenges.
+
+Microsoft Quantum has teamed up with Case Western
+Reserve University (ref. [How the quest for a scalable quantum computer is helping fight cancer]( https://news.microsoft.com/innovation-stories/quantum-computing-mri-cancer-treatment/)) to use bespoke quantum-inspired optimization
+solutions running on classical hardware to develop new pulse sequences for MRI scans. The discoveries were significant:
+
+When optimizing for speed, the pulse sequences generated are typically shorter, resulting in up to three times faster scans, and delivery of comparable image quality. 
+
+When optimizing for scan precision, these sequences can yield as much as 30% improvement in resolution, potentially
+leading to earlier diagnostics and treatment.
+
+Faster imaging, as well as imaging with better precision at fixed scan time, can lead to new diagnostics tools that may help tackle today’s medical challenges while reducing the cost and side effects of the scans.
+
+Read more about applications of quantum-inspired optimizations in the [Quantum Impact case studies](https://azure.microsoft.com/en-us/resources/whitepapers/search/?term=quantum)
 
 Understanding the power of quantum-inspired optimization, you will work with your crew in the [module 9]() to help the logistics division efficiently load cargo vessels and in the [module 11]() with the maintenance division to prioritize all kinds of jobs on the spaceship. 
