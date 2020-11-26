@@ -20,19 +20,19 @@ You have been hired as a database administrator to identify performance related 
 
 1. From the Home screen, select the menu, and select **SQL databases**.
 
-    :::image type="content" source="../media/sql-databases.png" alt-text="SQL databases":::
+    :::image type="content" source="../media/sql-databases.png" alt-text="Screenshot showing selecting SQL databases.":::
 
 1. Click on the **AdventureWorks** Azure SQL Database.
 
-    :::image type="content" source="../media/adventureworks.png" alt-text="Adventureworks":::
+    :::image type="content" source="../media/adventureworks.png" alt-text="Screenshot showing selecting the Adventureworks database.":::
 
 1. Select **Set server firewall**.
 
-    :::image type="content" source="../media/firewall.png" alt-text="Set server firewall":::
+    :::image type="content" source="../media/firewall.png" alt-text="Screenshot showing selecting Set server firewall":::
 
 1. Select **Add client IP** and select **Save**.
 
-    :::image type="content" source="../media/clientip.png" alt-text="Add client IP":::
+    :::image type="content" source="../media/clientip.png" alt-text="Screenshot showing selecting Add client IP":::
 
 1. Select **OK**.
 
@@ -63,7 +63,7 @@ You have been hired as a database administrator to identify performance related 
     END
     ```
 
-    :::image type="content" source="../media/query1.png" alt-text="Query":::
+    :::image type="content" source="../media/query1.png" alt-text="Screenshot showing the Query.":::
 
     > [!NOTE]
     > If you'd like to copy and paste the code you can find the code in the **D:\LabFiles\Monitor Resources\exercise_steps.sql** file.
@@ -71,15 +71,15 @@ You have been hired as a database administrator to identify performance related 
 1. Wait for the query to complete.
 1. Locate the **Metrics** icon on the **Monitoring** section of the blade for the AdventureWorks database.
 
-    :::image type="content" source="../media/metrics.png" alt-text="Metrics icon":::
+    :::image type="content" source="../media/metrics.png" alt-text="Screenshot showing selecting the Metrics icon.":::
 
 1. Change the **Metric** menu option to reflect **CPU Percentage**.
 
-    :::image type="content" source="../media/cpu-percentage.png" alt-text="CPU Percentage":::
+    :::image type="content" source="../media/cpu-percentage.png" alt-text="Screenshot showing CPU Percentage.":::
 
 1. Select an **Aggregation** of **Avg**. This will display the average CPU Percentage for the given time frame.
 
-    :::image type="content" source="../media/average-cpu-graph.png" alt-text="CPU Percentage":::
+    :::image type="content" source="../media/average-cpu-graph.png" alt-text="Screenshot showing average aggregation.":::
 
 ## Identify high CPU consuming queries
 
