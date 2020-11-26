@@ -1,15 +1,15 @@
-Recall that in our container ship problem, Contoso Logistics has to optimize how it distributes containers between two ships. In other words, we have a set of container weights, *w*, which we would like to partition into two sets: ${W_a}$ and ${W_b}$.
+Recall that in our container ship problem, Contoso Logistics has to optimize how it distributes containers between two ships. In other words, we have a set of container weights, *w*, which we would like to partition into two sets: *W<sub>a</sub>* and *W<sub>b</sub>*.
 
 Those two sets correspond to whether the container is loaded onto ship *a* or ship *b*, and we define ${\Delta}$ as the weight difference between the two ships.
 
 This short animation shows one possible way an optimizer might distribute the containers. The running time of the optimizer is measured in steps. At each step, we show the best solution found so far.
 
-> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Quantum-Optimization-Container-Demo/player?format=ny]
+> [!VIDEO <https://channel9.msdn.com/Shows/Learn-Azure/Quantum-Optimization-Container-Demo/player?format=ny>]
 
 In this part, we'll use quantum-inspired optimization to solve the problem.
 
 > [!NOTE]
-> This problem is known as a _number partitioning problem_. Although you can apply other heuristics to solve this type of problem, the container ship problem is a good introductory way to illustrate how to apply QIO concepts.
+> This problem is known as a *number partitioning problem*. Although you can apply other heuristics to solve this type of problem, the container ship problem is a good introductory way to illustrate how to apply QIO concepts.
 
 ## Express the problem
 
@@ -21,15 +21,15 @@ Ideally, we want a solution where the weight difference between the ships is as 
 
 ![An equation that subtracts the total weights on one ship from the total weights on the other ship to produce a cost function](../media/example-2.png)
 
-This equation subtracts the sum of weights on ship _b_ from the sum of weights on ship _a_.
+This equation subtracts the sum of weights on ship *b* from the sum of weights on ship *a*.
 
-The letter *H* is used to represent a cost function. This notation originates from the model we are using to define our optimization problem, known as the _Ising model_. In this model, the energy (which represents the cost) is given by a Hamiltonian, whose variables take the value of +1 or -1. Our goal is to map the optimization to this form.
+The letter *H* is used to represent a cost function. This notation originates from the model we are using to define our optimization problem, known as the *Ising model*. In this model, the energy (which represents the cost) is given by a Hamiltonian, whose variables take the value of +1 or -1. Our goal is to map the optimization to this form.
 
 ## Refine the problem
 
 Next, we introduce a variable, *x<sub>i</sub>*, to represent whether an individual container *i* is assigned to ship *a* or ship *b*.
 
-Because we can assign the container *i* to either ship, the variable *x<sub>i</sub>* can take on two different values, which makes it a binary variable. For convenience, we say the two values it can take on are *1* and *-1*. The value *1* represents that the container is placed on ship *a*, and *-1* represents that the container is placed on ship *b*. Because of our decision to make *x<sub>i</sub>* be either *1* or *-1*, our optimization problem is called an _Ising problem_.
+Because we can assign the container *i* to either ship, the variable *x<sub>i</sub>* can take on two different values, which makes it a binary variable. For convenience, we say the two values it can take on are *1* and *-1*. The value *1* represents that the container is placed on ship *a*, and *-1* represents that the container is placed on ship *b*. Because of our decision to make *x<sub>i</sub>* be either *1* or *-1*, our optimization problem is called an *Ising problem*.
 
 By introducing this variable *x<sub>i</sub>*, we can simplify the equation as follows:
 
