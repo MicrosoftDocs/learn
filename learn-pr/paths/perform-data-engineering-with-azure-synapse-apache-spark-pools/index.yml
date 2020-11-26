@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.wwl.perform-data-engineering-with-azure-synapse-apache-spark-pools
+metadata:
+  title: Perform data engineering with Azure Synapse Apache Spark Pools
+  description: Perform data engineering with Azure Synapse Apache Spark Pools
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Perform data engineering with Azure Synapse Apache Spark Pools
+prerequisites: |
+  - It is recommended that students have completed Data Fundamentals before starting this learning path.
+summary: |
+  Learn how to perform data engineering with Azure Synapse Apache Spark Pools, which enable you to boost the performance of big-data analytic applications by in-memory cluster computing.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+modules:
+- learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics
+- learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics
+- learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics
+- learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics
+- learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt
+trophy:
+  uid: learn.wwl.perform-data-engineering-with-azure-synapse-apache-spark-pools.trophy
