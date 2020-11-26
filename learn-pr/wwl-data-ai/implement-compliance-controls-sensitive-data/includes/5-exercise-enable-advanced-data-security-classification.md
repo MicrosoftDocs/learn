@@ -26,17 +26,17 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. From the main blade of your Azure SQL server, navigate to the **Security** section, and select **Security Center**.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-24.png" alt-text="Security":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-24.png" alt-text="Screenshot of selecting the Security Center.":::
 
 1. Select the toggle switch under **AZURE DEFENDER FOR SQL** to **ON**, and then select **Storage account**.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-21.png" alt-text="Screenshot of selecting the Azure SQL server.":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-21.png" alt-text="Screenshot of switching on AZURE DEFENDER FOR SQL.":::
 
     On the **Choose storage account** page, select **+ Create new**.
 
 1. On the **Create storage account** page, in the **Name** field enter a unique name starting with **securesqllab** and append some additional random numbers until you have a valid name.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-22.png" alt-text="Screenshot of selecting the Azure SQL server.":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-22.png" alt-text="Screenshot of creating a storage account.":::
 
 1. Select **OK** and wait for the storage account to be created.
 
@@ -54,23 +54,23 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. Copy the **Server name** to use later in this exercise.
 
-    :::image type="content" source="../media/copy-servername.png" alt-text="dp300-lab-adw server":::
+    :::image type="content" source="../media/copy-servername.png" alt-text="Screenshot of copying the server name":::
 
 1. Navigate to the **AdventureWorksLT** database in the Azure portal by scrolling down in the overview screen for Azure SQL server and select the database name.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-27.png" alt-text="dp300-lab-adw server":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-27.png" alt-text="Screenshot showing selecting the AdventureWOrksLT database.":::
 
 1. Navigate to the Security section of the main blade for your Azure SQL Database and select **Data Discovery & Classification**.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-28.png" alt-text="Data Discovery & Classification":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-28.png" alt-text="Screenshot showing the Data Discovery & Classification":::
 
 1. On the **Data Discovery & Classification** screen you will see an informational message that reads **We have found 15 columns with classification recommendations**. Select that link.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-29.png" alt-text="Classification Recommendations":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-29.png" alt-text="Screenshot showing the Classification Recommendations":::
 
 1. On the next **Data Discovery & Classification** screen select the check box next to **Select all**, select **Accepted selected recommendations**, and then select **Save** to save the classifications into the database.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-30.png" alt-text="Accept selected recommendations":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-30.png" alt-text="Screenshot showing the Accept selected recommendations.":::
 
 ## View data classification in SQL Server Management Studio
 
@@ -82,7 +82,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
     - Server admin login: **labadmin**
     - Password: **Azur3Pa$$**
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-05.png" alt-text="Connect to Server.":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-05.png" alt-text="Screenshot showing the Connecting to Server.":::
 
     Select **Connect**.
 
@@ -90,7 +90,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. In the **Object Explorer**, expand the server node, and expand the **Databases** node.
 
-    :::image type="content" source="../media/new-query.png" alt-text="SQL Query results":::  
+    :::image type="content" source="../media/new-query.png" alt-text="Screenshot showing the New Query option.":::  
 
 1. Right-click on the **AdventureWorksLT** database, and select **New Query**.
 
@@ -109,7 +109,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
     This query will return the results of your classified columns as shown below.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-31.png" alt-text="SQL Query results":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-31.png" alt-text="SQL Query results.":::
 
 Note that the results show that the 15 classifications have been created in the database.
 
