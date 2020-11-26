@@ -14,11 +14,11 @@ There are several ways to generate an execution plan in SQL Server Management St
 
 1. You will be prompted to connect to your SQL Server. ‎Ensure that **Windows Authentication** is selected, and then select **Connect**.
 
-    :::image type="content" source="../media/connect-to-server.png" alt-text="Connect to Server":::
+    :::image type="content" source="../media/connect-to-server.png" alt-text="Screenshot showing the Connect to Server dialog.":::
 
 1. Start a new query by selecting **New Query**.
 
-    :::image type="content" source="../media/dp-3300-module-55-lab-01.png" alt-text="New Query":::
+    :::image type="content" source="../media/dp-3300-module-55-lab-01.png" alt-text="Screenshot showing the New Query option.":::
 
 1. Copy and paste the code below into a new query window and execute it by selecting **Execute** or press <kbd>F5</kbd>.
 
@@ -45,7 +45,7 @@ There are several ways to generate an execution plan in SQL Server Management St
 
     In your results you'll see a text version of the execution plan, instead of the results of running the **SELECT** statement.
 
-    :::image type="content" source="../media/dp-3300-module-55-lab-06.png" alt-text="Text version":::
+    :::image type="content" source="../media/dp-3300-module-55-lab-06.png" alt-text="Screenshot showing the text version of a query plan.":::
 
 1. Examine the text in the second row's StmtText field:
 
@@ -73,13 +73,13 @@ There are several ways to generate an execution plan in SQL Server Management St
 
     When reviewing the execution plan you will note there is a key lookup. If you hover your mouse over the icon, you will see that the properties indicate it is performed for each row retrieved by the query. You can see the execution plan is performing a Key Lookup operation.
 
-    :::image type="content" source="../media/dp-3300-module-55-lab-08.png" alt-text="NonClustered":::
+    :::image type="content" source="../media/dp-3300-module-55-lab-08.png" alt-text="Screenshot showing the output list of columns.":::
 
     Make a note of the columns in the Output list, as these fields need to be added to a covering index.
 
     To identify what index needs to be altered in order to remove the key lookup, you need to examine the index seek above it. Hover over the index seek operator with your mouse and the properties of the operator will appear.
 
-    :::image type="content" source="../media/execution-plan-for-index.png" alt-text="NonClustered":::
+    :::image type="content" source="../media/execution-plan-for-index.png" alt-text="Screenshot showing the NonClustered index.":::
 
 1. Fix the Key Lookup and rerun the query to see the new plan.
 
@@ -136,7 +136,7 @@ Next you'll run a workload to generate query statistics for QS, examine Top Reso
 
 1. Select the file to load it into Management Studio and then select **Execute** or press <kbd>F5</kbd> to execute the query.
 
-    :::image type="content" source="../media/dp-3300-module-55-lab-09.png" alt-text="Open File":::
+    :::image type="content" source="../media/dp-3300-module-55-lab-09.png" alt-text="Screenshot showing the Open File menu.":::
 
 1. Select the **File** > **Open** > **File** menu in SQL Server Management Studio.
 
@@ -193,11 +193,11 @@ Next you'll run a workload to generate query statistics for QS, examine Top Reso
 
 1. Select **Force Plan** under the summary chart. A confirmation window will popup, choose Yes to force the plan.
 
-    :::image type="content" source="../media/dp-3300-module-55-lab-16.png" alt-text="Confirmation":::
+    :::image type="content" source="../media/dp-3300-module-55-lab-16.png" alt-text="Screenshot showing the confirmation.":::
 
     Once forced you will see that the Forced Plan is now greyed out and the plan in the plan summary window now has a check mark indicating is it forced.
 
-    :::image type="content" source="../media/dp-3300-module-55-lab-17.png" alt-text="Forced check mark":::
+    :::image type="content" source="../media/dp-3300-module-55-lab-17.png" alt-text="Screenshot showing the forced check mark.":::
 
 There can be times when the query optimizer can make a poor choice on which execution plan to use. When this happens you can force SQL server to use the plan you want when you know it performs better.
 
@@ -226,7 +226,7 @@ Run the queries below, examine the Actual Execution Plan.
     WHERE SalesPersonID=288;
     ```
 
-    :::image type="content" source="../media/dp-3300-module-55-lab-19.png" alt-text="Execution Plan":::
+    :::image type="content" source="../media/dp-3300-module-55-lab-19.png" alt-text="Screenshot showing the updated execution plan":::
 
 1. Now run the next query.
 
@@ -241,7 +241,7 @@ Run the queries below, examine the Actual Execution Plan.
     WHERE SalesPersonID=277;
     ```
 
-    :::image type="content" source="../media/dp-3300-module-55-lab-20.png" alt-text="SalesPersonID = 277":::
+    :::image type="content" source="../media/dp-3300-module-55-lab-20.png" alt-text="Screenshot showing the sql statement.":::
 
 Based on the index statistics the query optimizer has chosen a different execution plan because of the different values in the WHERE clause. Because this query uses a constant in its WHERE clause, the optimizer sees each of these queries as unique and generates a different execution plan each time.
 

@@ -4,8 +4,9 @@ title: 'Exercise: Isolate problem areas in poorly performing queries in a SQL Da
 metadata:
   title: 'Exercise: Isolate problem areas in poorly performing queries in a SQL Database'
   description: "Exercise: Isolate problem areas in poorly performing queries in a SQL Database"
-  ms.date: 11/24/2020
+  ms.date: 11/26/2020
   author: wwlpublish
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
