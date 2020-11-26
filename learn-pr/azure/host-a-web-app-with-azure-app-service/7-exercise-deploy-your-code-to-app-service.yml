@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.host-a-web-application-with-azure-web-apps.6-exercise-deploy-your-code-to-app-service
+uid: learn.host-a-web-application-with-azure-web-apps.7-exercise-deploy-your-code-to-app-service
 title: Exercise - Deploy your code to App Service
 metadata:
   title: Exercise - Deploy your code to App Service
@@ -14,4 +14,4 @@ interactive: bash
 azureSandbox: true
 durationInMinutes: 20
 content: |
-  [!include[](includes/6-exercise-deploy-your-code-to-app-service.md)]
+  [!include[](includes/7-exercise-deploy-your-code-to-app-service.md)]

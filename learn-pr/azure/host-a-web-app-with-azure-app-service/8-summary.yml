@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.host-a-web-application-with-azure-web-apps.7-summary
+uid: learn.host-a-web-application-with-azure-web-apps.8-summary
 title: Summary
 metadata:
   title: Summary
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/8-summary.md)]
 quiz:
   title: Check your knowledge
   questions:

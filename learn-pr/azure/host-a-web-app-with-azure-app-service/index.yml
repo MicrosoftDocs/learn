@@ -33,9 +33,10 @@ units:
 - learn.host-a-web-application-with-azure-web-apps.1-introduction
 - learn.host-a-web-application-with-azure-web-apps.2-create-a-web-app-in-the-azure-portal
 - learn.host-a-web-application-with-azure-web-apps.3-exercise-create-a-web-app-in-the-azure-portal
-- learn.host-a-web-application-with-azure-web-apps.4-exercise-implement-a-web-application
-- learn.host-a-web-application-with-azure-web-apps.5-deploying-code-to-app-service
-- learn.host-a-web-application-with-azure-web-apps.6-exercise-deploy-your-code-to-app-service
-- learn.host-a-web-application-with-azure-web-apps.7-summary
+- learn.host-a-web-application-with-azure-web-apps.4-implement-a-web-app
+- learn.host-a-web-application-with-azure-web-apps.5-exercise-implement-a-web-application
+- learn.host-a-web-application-with-azure-web-apps.6-deploying-code-to-app-service
+- learn.host-a-web-application-with-azure-web-apps.7-exercise-deploy-your-code-to-app-service
+- learn.host-a-web-application-with-azure-web-apps.8-summary
 badge:
   uid: learn.host-a-web-application-with-azure-web-apps.badge
