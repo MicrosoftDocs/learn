@@ -85,3 +85,17 @@ Data Sources – the things you can reference
 - Use local modules to organize and encapsulate your code
 - Use the public Terraform Registry to find useful modules
 - Publish and share modules with your team
+
+## Workflow
+
+![Terraform Worflow.](../media/3-workflow.png)
+
+- Init: Initialize a working directory with Terraform configuration files
+
+- Validate: Validates configuration files in a directory without checking remotely
+
+- Plan: It creates an execution plan (aka         –WhatIf)
+
+- Apply: Deploy the changes required to reach the desired state
+
+- Destroy: Remove the TF manage infrastructure
