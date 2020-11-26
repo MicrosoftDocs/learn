@@ -12,7 +12,7 @@ title: Perform data engineering with Azure Synapse Apache Spark Pools
 prerequisites: |
   - It is recommended that students have completed Data Fundamentals before starting this learning path.
 summary: |
-  Learn how to perform data engineering with Azure Synapse Apache Spark Pools which enable you to boost the performance of big-data analytic applications by in-memory cluster computing.
+  Learn how to perform data engineering with Azure Synapse Apache Spark Pools, which enable you to boost the performance of big-data analytic applications by in-memory cluster computing.
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - intermediate
