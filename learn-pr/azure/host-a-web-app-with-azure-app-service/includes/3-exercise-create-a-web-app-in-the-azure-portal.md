@@ -122,7 +122,11 @@ Select **Review + Create** to navigate to the review page, and to create the app
 > [!NOTE]
 > It can take a few seconds to get your web app created and ready for your use.
 
-The portal will display the deployment page, where you can view the status of your deployment. After the app is ready, navigate to the new app in the Azure portal:
+The portal will display the deployment page, where you can view the status of your deployment.
+
+## Preview your web app
+
+After the app is ready, navigate to the new app in the Azure portal:
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**.
 
