@@ -13,7 +13,7 @@ metadata:
 # TODO:Consider Azure Portal Interactivity
 # interactive: azure-portal
 azureSandbox: true
-durationInMinutes: 10
+durationInMinutes: 5
 content: |
   [!include[](includes/3-exercise-create-a-web-app-in-the-azure-portal.md)]
 tasks:
