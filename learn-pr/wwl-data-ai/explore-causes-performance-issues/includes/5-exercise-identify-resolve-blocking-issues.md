@@ -7,7 +7,7 @@ You have been hired as a database administrator to identify performance related 
 1. You will be prompted to connect to your SQL Server. Enter **LON-SQL1** for the local server name, ensure that **Windows Authentication** is selected, and select **Connect**.
 1. Start a new query by selecting the **New Query** button in Management Studio.
 
-    :::image type="content" source="../media/new-query-button.png" alt-text="New Query button"::: 
+    :::image type="content" source="../media/new-query-button.png" alt-text="Screenshot showing the New Query button"::: 
 
     > [!NOTE]
     > If you'd like to copy and paste the code you can find the code in the **D:\LabFiles\Monitor Resources\Monitor Resources scripts.sql** file.
@@ -101,23 +101,23 @@ You have been hired as a database administrator to identify performance related 
 
 1. In Object Explorer, navigate to Management, and expand the hive by clicking the plus sign. Expand the Extended Events hive and then expand the Sessions Hive. Expand  Blocking. Right click on package0.ring_buffer and select View Target Data. 
 
-    :::image type="content" source="../media/view-target-data.png" alt-text="View target data":::
+    :::image type="content" source="../media/view-target-data.png" alt-text="View target data.":::
 
 1. Select the hyperlink.
 
-    :::image type="content" source="../media/hyperlink.png" alt-text="Hyperlink":::
+    :::image type="content" source="../media/hyperlink.png" alt-text="Screenshot showing the Hyperlink.":::
 
 1. The XML will show you which processes are being blocked and which process is causing the blocking. You can see the queries that ran in this process as well as system information. 
 
-    :::image type="content" source="../media/xml.png" alt-text="XML":::
+    :::image type="content" source="../media/xml.png" alt-text="Screenshot showing the XML.":::
 
 1. Right click **Blocking** and select **Stop Session**.
 
-    :::image type="content" source="../media/stop-session.png" alt-text="Stop Session":::
+    :::image type="content" source="../media/stop-session.png" alt-text="Screenshot showing selecting the Stop Session":::
 
 1. Navigate back to the query tab you opened in step 6, and type **ROLLBACK TRANSACTION** on the line below the query. Highlight **ROLLBACK TRANSACTION** and execute the command by selecting **Execute**.
 
-    :::image type="content" source="../media/rollback-transaction.png" alt-text="ROLLBACK TRANSACTION":::
+    :::image type="content" source="../media/rollback-transaction.png" alt-text="Screenshot showing the ROLLBACK TRANSACTION in the query.":::
 
 11. Navigate back to the query tab you opened in Step 7. You will notice that the query has now completed.
 
