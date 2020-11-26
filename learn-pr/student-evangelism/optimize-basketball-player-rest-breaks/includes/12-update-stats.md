@@ -100,3 +100,5 @@ function endGame() {
     document.getElementById('currentPER').innerHTML = "";
 }
 ```
+
+© 2020 Warner Bros. Ent. All Rights Reserved

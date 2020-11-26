@@ -42,3 +42,5 @@ function addStatsToGame() {
 We can test this out locally again by right-clicking the `index.html` file, choosing Copy Path, and pasting that path in a browser address bar. If you had the page open still from the last unit, make sure you do a hard refresh (ctrl+shift+r on Windows and cmd+shift+r on Mac). Re-upload the game_stats.csv file, and you should see the 16 players sitting on the bench, and the 16 player stat cards on the right-hand stat board.
 
 :::image type="content" source="../media/local-test-2.png" alt-text="Screenshot showing the test of the initial stat visualization.":::
+
+© 2020 Warner Bros. Ent. All Rights Reserved

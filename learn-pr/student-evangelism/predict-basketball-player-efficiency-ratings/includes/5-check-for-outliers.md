@@ -133,3 +133,5 @@ player_df.reset_index(drop=True, inplace=True)
 ```
 
 If you were to execute `player_df.tail(10)` again you would see the indices in order now until row 41.
+
+© 2020 Warner Bros. Ent. All Rights Reserved

@@ -166,3 +166,6 @@ You should test this functionality:
 - Try to add more than 5 players to the court and make sure the alert pops up
 - Add players to the court then move all of them back to the bench
 - Make sure the average PER for players on the court is accurate depending on the stats for the players for the given quarter
+
+
+© 2020 Warner Bros. Ent. All Rights Reserved

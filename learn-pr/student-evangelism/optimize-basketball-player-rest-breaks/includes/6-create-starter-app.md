@@ -9,7 +9,7 @@ In this case, we will leverage the Static Web Vanilla Basic repo template. Befor
 
 There are many ways to create an Azure Static Web App, and in later units we will introduce some others. For the puposes of this module, we will build a *very* simple web app and deploy it using GitHub Actions.
 
-To get started, you will need to create a repo based on this app. Go to [https://aka.ms/space-jam-template-app](https://github.com/microsoft/space-jam-template/generate?azure-portal=true) and fill out the form, naming your repo `space-jam-app`. You can make this repo public or private, but be sure to include all branches
+To get started, you will need to create a repo based on this app. Go to [https://aka.ms/space-jam-a-new-legacy-template-app](https://aka.ms/space-jam-a-new-legacy-template-app/generate?azure-portal=true) and fill out the form, naming your repo `space-jam-a-new-legacy-app`. You can make this repo public or private, but be sure to include all branches
 
 :::image type="content" source="../media/web-app-repo-setup.png" alt-text="Screenshot showing how to set up the new web app repo on GitHub.com.":::
 
@@ -24,7 +24,7 @@ Click on the Source Control menu on the left-hand side and choose "Clone Reposit
 
 ![The clone repository menu item in Visual Studio Code](../media/clone-repo-button.png)
 
-Then, back on GitHub.com in your space-jam-app repo, click the Clone button and copy the HTTPS URL:
+Then, back on GitHub.com in your space-jam-a-new-legacy-app repo, click the Clone button and copy the HTTPS URL:
 
 :::image type="content" source="../media/github-clone-url.png" alt-text="Screenshot showing how to get the HTTPS URL of the repo from GitHub.com.":::
 
@@ -46,7 +46,7 @@ Before we start modifying the web app, let's make sure it can deploy successfull
 ![Create an Azure Static Web App in VSCode](../media/create-static-web-app.png)
 
 Follow the prompts. All will be default except the name and the deployment branch:
-- *Static web app a name: `space-jam-app`
+- *Static web app a name: `space-jam-a-new-legacy-app`
 - *Deployment branch: `main`
 - Web App Location: `/`
 - Azure Functions Location: `/`
@@ -57,7 +57,7 @@ You will then be prompted to view the GitHub Action associated with this Static 
 
 ![VSCode prompting to view the GitHub Action](../media/action-prompt.png)
 
-Clicking on "Show Actions" will take you to the Actions page of your space-jam-web-app GitHub repo that you created at the beginning of this unit.
+Clicking on "Show Actions" will take you to the Actions page of your space-jam-a-new-legacy-app GitHub repo that you created at the beginning of this unit.
 
 :::image type="content" source="../media/action-on-github.png" alt-text="Screenshot showing GitHub Action for this web app.":::
 
@@ -67,12 +67,14 @@ For the purposes of this module, all you have to know is that if you push change
 
 ## View the web app live in the browser
 
-The final setup step is to make sure your web app is actually live. Back in Visual Studio Code in the Azure extension, right click on the production site for the space-jam-web-app and click "Browse Site".
+The final setup step is to make sure your web app is actually live. Back in Visual Studio Code in the Azure extension, right click on the production site for the space-jam-a-new-legacy-app and click "Browse Site".
 
 ![Locating the browse site menu in Visual Studio Code](../media/browse-site.png)
 
-You may have to authorize Visual Studio Code to open a new brower window or tab. After you've done this, your live web app will open in a browser tab and you should see the beginnings of a Looney Tunes basketball web app. 
+You may have to authorize Visual Studio Code to open a new brower window or tab. After you've done this, your live web app will open in a browser tab and you should see the beginnings of a Tune Squad basketball web app. 
 
 :::image type="content" source="../media/web-app-browser.png" alt-text="Screenshot showing the basketball web app with no functionality.":::
 
 Congratulations! You just deployed an Azure Static Web App! Now it's time to make this usable with our data.
+
+© 2020 Warner Bros. Ent. All Rights Reserved

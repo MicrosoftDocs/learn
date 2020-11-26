@@ -27,20 +27,22 @@ These are a lot of missing values, possibly spanning many more rows and that wou
 
 As a review, here is a breakdown of the data we working with in our dataset. The data in different columns can behave quite differently and we will want to apply some domain expertise to the data as we decide how to impute missing values:
 
-- **ID**: a unique identifier for each player in the dataset
-- **points**: total points scored by a player in a season
-- **possessions**: total possessions by a player in a season
-- **team_pace**: the average number of possessions a team uses per game
-- **GP**: games played by a player in a season
-- **MPG**: average minutes played by a player per game
-- **TS%**: True Shooting Percentage, a player's shooting percentage taking free throws and 3-pointers into account
-- **AST**: Assist Ratio, the percentage of a player's possessions that end in an assist
-- **TO**: Turnover Ratio, the percentage of a player's possessions that end in a turnover
-- **USG**: Usage Rate, the number of possessions a player uses per 40 minutes
-- **ORR**: Offensive rebound rate
-- **DRR**: Defensive rebound rate
-- **REBR**: Rebound Rate, the percentage of missed shots that a player rebounds
-- **PER**: the player efficiency rating (PER), a measure of a player's per-minute productivity on the court
+| Column Name | Column Description |
+|-------------|--------------------|
+| ID | a unique identifier for each player in the dataset |
+| points | total points scored by a player in a season |
+| possessions | total possessions by a player in a season |
+| team_pace | the average number of possessions a team uses per game |
+| GP | games played by a player in a season |
+| MPG | average minutes played by a player per game |
+| TS% | True Shooting Percentage, a player's shooting percentage taking free throws and 3-pointers into account |
+| AST | Assist Ratio, the percentage of a player's possessions that end in an assist |
+| TO | Turnover Ratio, the percentage of a player's possessions that end in a turnover |
+| USG | Usage Rate, the number of possessions a player uses per 40 minutes |
+| ORR | Offensive rebound rate |
+| DRR | Defensive rebound rate |
+| REBR | Rebound Rate, the percentage of missed shots that a player rebounds |
+| PER | the player efficiency rating (PER), a measure of a player's per-minute productivity on the court |
 
 One common strategy for imputation is to replace missing value with the value immediately above or below it. But given that our missing values are for PACE, points, possessions, and PER (and that we have no idea what the order of players might be in our DataFrame, such as consecutive players being on the same team), this is probably not a good strategy for us.
 
@@ -133,3 +135,5 @@ for i in range(len(cols)):
 ![DataFrame KDEs](../media/dataframe-kdes.png)
 
 Sure enough, many of these columns have KDEs with two very pronounced tops. Each top represents a mode of the data, or a value around which values in the dataset concentrate. The fact that so many of our columns are bimodal indicates that our dataset represents samples from two discrete populations.
+
+© 2020 Warner Bros. Ent. All Rights Reserved

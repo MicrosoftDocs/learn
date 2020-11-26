@@ -1,4 +1,4 @@
-Basketball is full of statistics, and we will use some of them to make decisions about our hypothetical basketball team. However, in order to make good decisions, we need good data. Throughout this module we will be using a dataset that is based on publicly available basketball data from [the NBA](https://www.nba.com/stats/leaders/?azure-portal=true) and stats created based on Looney Tunes characters to get a full picture. All of our data is anonymized to start with.
+Basketball is full of statistics, and we will use some of them to make decisions about our hypothetical basketball team. However, in order to make good decisions, we need good data. Throughout this module we will be using a dataset that is based on publicly available basketball data from [the NBA](https://www.nba.com/stats/leaders/?azure-portal=true) and stats created based on Tune Squad characters to get a full picture. All of our data is anonymized to start with.
 
 Because we cannot influence what data is gathered by the NBA, we can't do anything about the methodology used to get the data in first place. This introduces a number of questions about the data:
 
@@ -31,22 +31,24 @@ player_df.head()
 
 We can see that there are number of columns that are acronyms, let's break those down:
 
-- **ID**: a unique identifier for each player in the dataset
-- **points**: total points scored by a player in a season
-- **possessions**: total possessions by a player in a season
-- **team_pace**: the average number of possessions a team uses per game
-- **Unnamed: 4**: Unknown data
-- **Unnamed: 5**: Unknown data
-- **GP**: games played by a player in a season
-- **MPG**: average minutes played by a player per game
-- **TS%**: True Shooting Percentage, a player's shooting percentage taking free throws and 3-pointers into account
-- **AST**: Assist Ratio, the percentage of a player's possessions that end in an assist
-- **TO**: Turnover Ratio, the percentage of a player's possessions that end in a turnover
-- **USG**: Usage Rate, the number of possessions a player uses per 40 minutes
-- **ORR**: Offensive rebound rate
-- **DRR**: Defensive rebound rate
-- **REBR**: Rebound Rate, the percentage of missed shots that a player rebounds
-- **PER**: the player efficiency rating (PER), a measure of a player's per-minute productivity on the court
+| Column Name | Column Description |
+|-------------|--------------------|
+| ID | a unique identifier for each player in the dataset |
+| points | total points scored by a player in a season |
+| possessions | total possessions by a player in a season |
+| team_pace | the average number of possessions a team uses per game |
+| Unnamed: 4 | Unknown data |
+| Unnamed: 5 | Unknown data |
+| GP | games played by a player in a season |
+| MPG | average minutes played by a player per game |
+| TS% | True Shooting Percentage, a player's shooting percentage taking free throws and 3-pointers into account |
+| AST | Assist Ratio, the percentage of a player's possessions that end in an assist |
+| TO | Turnover Ratio, the percentage of a player's possessions that end in a turnover |
+| USG | Usage Rate, the number of possessions a player uses per 40 minutes |
+| ORR | Offensive rebound rate |
+| DRR | Defensive rebound rate |
+| REBR | Rebound Rate, the percentage of missed shots that a player rebounds |
+| PER | the player efficiency rating (PER), a measure of a player's per-minute productivity on the court |
 
 While a lot of these data points make sense in the context of basketball, we can still start to cleanse our data even without a very technical understanding of each of these columns, so if you're not well versed in these terms, don't worry! There is still a lot to do to gain insights into the data.
 
@@ -119,3 +121,5 @@ memory usage: 6.0 KB
 ```
 
 Since there are 47 rows and we can see that the two unnamed columns have 47 `NaN` values, we can deduce that there are at least two columns we can completely eliminate from our DataFrame.
+
+© 2020 Warner Bros. Ent. All Rights Reserved

@@ -4,8 +4,8 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 12/14/2020
-  author: sguthals # Your GitHub username (or whomever you'd like to give author attribution to)
-  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  author: sguthals 
+  ms.author: shanama 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary
