@@ -19,7 +19,7 @@ abstract: |
   - Use Dynamic Management Views to identify and troubleshoot query performance
 prerequisites: |
   - Before taking this module, it is recommended that you complete Data Fundamentals.
-iconUrl: /learn/achievements/manage-and-monitor-data-warehouse-activities-in-azure-synapse-analytics.svg
+iconUrl: /learn/achievements/manage-monitor-data-warehouse-activities-azure-synapse-analytics.svg
 levels:
 - beginner
 roles:
