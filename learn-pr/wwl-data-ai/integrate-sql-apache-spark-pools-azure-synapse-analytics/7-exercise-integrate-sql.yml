@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.exercise-integrate-sql
+title: 'Exercise: Integrate SQL and spark pools in Azure Synapse Analytics'
+metadata:
+  title: 'Exercise: Integrate SQL and spark pools in Azure Synapse Analytics'
+  description: "Exercise: Integrate SQL and spark pools in Azure Synapse Analytics"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-exercise-integrate-sql.md)]
