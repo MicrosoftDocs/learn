@@ -20,33 +20,45 @@ Next, run the following commands to create a new ASP.NET Core MVC application na
 dotnet new mvc --name BestBikeApp
 ```
 
-The command will create a new folder named "BestBikeApp" to hold your project. Run the following commands to change to the project folder, then build and run the application to verify it is complete.
+The command will create a new folder named "BestBikeApp" to hold your project.
 
-```bash
-cd BestBikeApp
-dotnet run
-```
+### Optionally test your web app
 
-You should get something like:
+If you open a second command shell session, for example by browsing to <https://shell.azure.com/>, you can test your application locally on Azure. To do so, use the following steps:
 
-```console
-info: Microsoft.Hosting.Lifetime[0]
-      Now listening on: https://localhost:5001
-info: Microsoft.Hosting.Lifetime[0]
-      Now listening on: http://localhost:5000
-info: Microsoft.Hosting.Lifetime[0]
-      Application started. Press Ctrl+C to shut down.
-info: Microsoft.Hosting.Lifetime[0]
-      Hosting environment: Development
-info: Microsoft.Hosting.Lifetime[0]
-      Content root path: /home/user/BestBikeApp
-```
+1. From your primary command shell session, run the following commands to build and run your web application:
 
-The output describes the situation after starting your app: the application is running and listening at port 5000.
+    ```bash
+    cd BestBikeApp
+    dotnet run
+    ```
 
-If we were running the app on our own machine, we'd be able to open a browser to `http://localhost:5000` and see our site. To make this accessible from outside of our own machine, we'll need to deploy the app to somewhere with a public endpoint. The App Service instance we created earlier is perfect for that.
+    You should get something like:
 
-Press <kbd>Ctrl+C</kbd> to shut down the running app.
+    ```console
+    info: Microsoft.Hosting.Lifetime[0]
+          Now listening on: https://localhost:5001
+    info: Microsoft.Hosting.Lifetime[0]
+          Now listening on: http://localhost:5000
+    info: Microsoft.Hosting.Lifetime[0]
+          Application started. Press Ctrl+C to shut down.
+    info: Microsoft.Hosting.Lifetime[0]
+          Hosting environment: Development
+    info: Microsoft.Hosting.Lifetime[0]
+          Content root path: /home/user/BestBikeApp
+    ```
+
+    The output describes the situation after starting your app: the application is running and listening at port 5000.
+
+1. From your second command shell session, run the following command to browse to your web application:
+
+    ```bash
+    curl -KL http://127.0.0.1:5000/
+    ```
+
+    You should see some HTML displayed:
+
+1. From your primary command shell session, press <kbd>Ctrl+C</kbd> to quit your web app.
 
 ::: zone-end
 
