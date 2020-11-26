@@ -1,12 +1,12 @@
 In this section, we are going to talk about Dynamic Data masking. 
 
-**What is Dynamic Data Masking**:
+**What is dynamic data masking**:
 
 Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics support dynamic data masking. 
-It's all in the name, dynamic data masking is masking and ensures limitate data exposure to non-privileged users, such that they can't see it. 
+It's all in the name, dynamic data masking is masking and ensures limited data exposure to non-privileged users, such that they can't see it. 
 It also helps you in preventing unauthorized access to sensitive data.
-The way Dynamic data masking does it, is helping customers to designate how much of the sensitive data to reveal such that it has minimal impact on the application layer. 
-Dynamic Data Masking is a policy-based security feature. 
+The way dynamic data masking does it, is helping customers to designate how much of the sensitive data to reveal such that it has minimal impact on the application layer. 
+Dynamic data masking is a policy-based security feature. 
 It will hide the sensitive data in a result set of a query that runs over designated database fields. However, the data in the database will not be changed.
 
 Let's give you an example how it works. 
@@ -21,16 +21,16 @@ Bear in mind that it won't be possible for Azure Synapse Analytics to set the dy
 You need to set it up using PowerShell or REST API as mentioned before. 
 However, the configuration of the dynamic data masking policy can be done by the Azure SQL Database admin, server admin, or SQL Security Manager roles.
 
-In Azure Synapse Analytics, you can find Dynamic Data Masking here;
+In Azure Synapse Analytics, you can find dynamic data masking here;
 
-[Dynamic Data Masking Azure Synapse Analytics](../media/dynamic-data-masking-sql-pool-synapse.png)
+![Dynamic data masking Azure Synapse Analytics](../media/dynamic-data-masking-sql-pool-synapse.png)
 
-**Looking into Dynamic Data Masking Policies**:
+**Looking into dynamic data masking Policies**:
 
 * **SQL users are excluded from masking** 
 
-A couple of SQL users or Azure AD identities can get unmasked data in the SQL query results. 
-Users with administrator privileges are always excluded from masking, and see the original data without any mask.
+    A couple of SQL users or Azure AD identities can get unmasked data in the SQL query results. 
+    Users with administrator privileges are always excluded from masking, and see the original data without any mask.
 
 * **Masking rules** - Masking rules are a set of rules that define the designated fields to be masked including the masking function that is used. The designated fields can be defined using a database schema name, table name, and column name.
 * **Masking functions** - Masking functions are a set of methods that control the exposure of data for different scenarios.
@@ -43,7 +43,9 @@ In this part, we are going to look into dynamic data masking for a database in A
 * Data masking policies
 
 - [Get-AzSqlDatabaseDataMaskingPolicy](/powershell/module/az.sql/Get-AzSqlDatabaseDataMaskingPolicy)
+
 The Get-AzSqlDatabaseDataMaskingPolicy gets the data masking policy for a database.
+
 The syntax for the Get-AzSqlDatabaseDataMaskingPolicy in PowerShell is as follows:
 
 ```
@@ -52,16 +54,19 @@ Get-AzSqlDatabaseDataMaskingPolicy [-ServerName] <String> [-DatabaseName] <Strin
  [<CommonParameters>]
 ```
 What the **Get-AzSqlDatabaseDataMaskingPolicy** cmdlet does, is getting the data masking policy of an Azure SQL database.
+
 To use this cmdlet in PowerShell, you'd have to specify the following parameters to identify the database:
+
 * *ResourceGroupName*: name of the resource group you deployed the database in
 * *ServerName*: sql server name 
 * *DatabaseName* : name of the database
-This cmdlet is also supported by the SQL Server Stretch Database service on Azure.
 
+This cmdlet is also supported by the SQL Server Stretch Database service on Azure.
 
 - [Set-AzSqlDatabaseDataMaskingPolicy](/powershell/module/az.sql/Set-AzSqlDatabaseDataMaskingPolicy)
 
 The Set-AzSqlDatabaseDataMaskingPolicy sets data masking for a database.
+
 The syntax for the Set-AzSqlDatabaseDataMaskingPolicy in PowerShell is as follows:
 
 ```
@@ -70,14 +75,19 @@ Set-AzSqlDatabaseDataMaskingPolicy [-PassThru] [-PrivilegedUsers <String>] [-Dat
  [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 What the **Set-AzSqlDatabaseDataMaskingPolicy** cmdlet does is setting the data masking policy for an Azure SQL database.
+
 To use this cmdlet in PowerShell, you'd have to specify the following parameters to identify the database:
+
 * *ResourceGroupName*: name of the resource group that you deployed the database in
 * *ServerName* : sql server name 
 * *DatabaseName* : name of the database
 
 In addition, you will need to set the *DataMaskingState* parameter to specify whether data masking operations are enabled or disabled.
+
 If the cmdlet succeeds and the *PassThru* parameter is used, it will return an object describing the current data masking policy in addition to the database identifiers.
+
 Database identifiers can include, **ResourceGroupName**, **ServerName**, and **DatabaseName**.
+
 This cmdlet is also supported by the SQL Server Stretch Database service on Azure.
 
 * Data masking rules
@@ -85,6 +95,7 @@ This cmdlet is also supported by the SQL Server Stretch Database service on Azur
 - [Get-AzSqlDatabaseDataMaskingRule](/powershell/module/az.sql/Get-AzSqlDatabaseDataMaskingRule)
 
 The Get-AzSqlDatabaseDataMaskingRule Gets the data masking rules from a database.
+
 The syntax for the Get-AzSqlDatabaseDataMaskingRule in PowerShell is as follows:
 
 ```
@@ -94,19 +105,25 @@ Get-AzSqlDatabaseDataMaskingRule [-SchemaName <String>] [-TableName <String>] [-
 ```
 
 What the **Get-AzSqlDatabaseDataMaskingRule** cmdlet does it getting either a specific data masking rule or all of the data masking rules for an Azure SQL database.
+
 To use the cmdlet in PowerShell, you'd have to specify the following parameters to identify the database:
+
 To use this cmdlet in PowerShell, you'd have to specify the following parameters to identify the database:
+
 * *ResourceGroupName*: name of the resource group that you deployed the database in
 * *ServerName* : sql server name 
 * *DatabaseName* : name of the database
-You'd also have to specify the *RuleId* parameter to specify which rule this cmdlet returns.
-If you do not provide *RuleId*, all the data masking rules for that Azure SQL database are returned.
-This cmdlet is also supported by the SQL Server Stretch Database service on Azure.
 
+You'd also have to specify the *RuleId* parameter to specify which rule this cmdlet returns.
+
+If you do not provide *RuleId*, all the data masking rules for that Azure SQL database are returned.
+
+This cmdlet is also supported by the SQL Server Stretch Database service on Azure.
 
 - [New-AzSqlDatabaseDataMaskingRule](/powershell/module/az.sql/New-AzSqlDatabaseDataMaskingRule)
 
 The New-AzSqlDatabaseDataMaskingRule creates a data masking rule for a database.
+
 The syntax for the New-AzSqlDatabaseDataMaskingRule in PowerShell is as follows:
 
 ```
@@ -118,19 +135,29 @@ New-AzSqlDatabaseDataMaskingRule -MaskingFunction <String> [-PrefixSize <UInt32>
 ```
 
 What the **New-AzSqlDatabaseDataMaskingRule** cmdlet does is creating a data masking rule for an Azure SQL database.
+
 To use this cmdlet in PowerShell, you'd have to specify the following parameters to identify the rule:
+
 * *ResourceGroupName*: name of the resource group that you deployed the database in
 * *ServerName* : sql server name 
 * *DatabaseName* : name of the database
+
 Providing the *TableName* and *ColumnName* is necessary in order to specify the target of the rule. 
+
 The *MaskingFunction* parameter is necessary to define how the data is masked.
+
 If *MaskingFunction* has a value of Number or Text, you can specify the *NumberFrom* and *NumberTo* parameters, for number masking, or the *PrefixSize*, *ReplacementString*, and *SuffixSize* for text masking.
+
 If the command succeeds and the *PassThru* parameter is used, the cmdlet returns an object describing the data masking rule properties in addition to the rule identifiers.
+
 Rule identifiers can be, for example, *ResourceGroupName*, *ServerName*, *DatabaseName*, and *RuleID*.
+
 This cmdlet is also supported by the SQL Server Stretch Database service on Azure.
 
 - [Remove-AzSqlDatabaseDataMaskingRule](/powershell/module/az.sql/Remove-AzSqlDatabaseDataMaskingRule)
+
 The Remove-AzSqlDatabaseDataMaskingRule removes a data masking rule from a database.
+
 The syntax for the Remove-AzSqlDatabaseDataMaskingRule in PowerShell is as follows:
 
 ```
@@ -140,16 +167,21 @@ Remove-AzSqlDatabaseDataMaskingRule [-PassThru] [-Force] -SchemaName <String> -T
 ```
 
 What the **Remove-AzSqlDatabaseDataMaskingRule** cmdlet does, is it removes a specific data masking rule from an Azure SQL database.
+
 To use this cmdlet in PowerShell, you'd have to specify the following parameters to identify the rule that needs to be removed:
+
 * *ResourceGroupName*: name of the resource group that you deployed the database in
 * *ServerName* : sql server name 
 * *DatabaseName* : name of the database
 * *RuleId* : identifier of the rule  
+
 This cmdlet is also supported by the SQL Server Stretch Database service on Azure.
 
 
 - [Set-AzSqlDatabaseDataMaskingRule](/powershell/module/az.sql/Set-AzSqlDatabaseDataMaskingRule)
+
 The Set-AzSqlDatabaseDataMaskingRule Sets the properties of a data masking rule for a database.
+
 The syntax for the Set-AzSqlDatabaseDataMaskingRule in PowerShell is as follows:
 
 ```
@@ -161,35 +193,48 @@ Set-AzSqlDatabaseDataMaskingRule [-MaskingFunction <String>] [-PrefixSize <UInt3
 ```
 
 What the **Set-AzSqlDatabaseDataMaskingRule** cmdlet does is setting a data masking rule for an Azure SQL database.
+
 To use this cmdlet in PowerShell, you'd have to specify the following parameters to identify the rule:
+
 * *ResourceGroupName*: name of the resource group that you deployed the database in
 * *ServerName* : sql server name 
 * *DatabaseName* : name of the database
 * *RuleId* : identifier of the rule  
 
 You can provide any of the parameters of *SchemaName*, *TableName*, and *ColumnName* to retarget the rule.
-Specify the *MaskingFunction* parameter to modify how the data is masked.
-If you specify a value of Number or Text for *MaskingFunction*, you can specify the *NumberFrom* and *NumberTo* parameters for number masking or the *PrefixSize*, *ReplacementString*, and *SuffixSize* parameters for text masking.
-If the command succeeds, and if you specify the *PassThru* parameter, the cmdlet returns an object that describes the data masking rule properties and the rule identifiers.
-Rule identifiers can be, **ResourceGroupName**, **ServerName**, **DatabaseName**, and **RuleId**.
-This cmdlet is also supported by the SQL Server Stretch Database service on Azure.
 
+Specify the *MaskingFunction* parameter to modify how the data is masked.
+
+If you specify a value of Number or Text for *MaskingFunction*, you can specify the *NumberFrom* and *NumberTo* parameters for number masking or the *PrefixSize*, *ReplacementString*, and *SuffixSize* parameters for text masking.
+
+If the command succeeds, and if you specify the *PassThru* parameter, the cmdlet returns an object that describes the data masking rule properties and the rule identifiers.
+
+Rule identifiers can be, **ResourceGroupName**, **ServerName**, **DatabaseName**, and **RuleId**.
+
+This cmdlet is also supported by the SQL Server Stretch Database service on Azure.
 
 **Set up dynamic data masking for your database in Azure Synapse Analytics using the REST API**
 
 For setting up dynamic data masking in Azure Synapse Analytics, the other possibility is make use of the REST API. 
+
 It will enable to programmatically manage data masking policy and rules. 
+
 The REST API will support the following operations:
 
 * Data masking policies
 
 - [Create Or Update](/rest/api/sql/datamaskingpolicies/createorupdate): Creates or updates a database data masking policy.
+
 The Create Or Update masking policy using the REST API will create or update a database data masking policy. 
+
 In HTTP the following request can be made:
 
+```http
 PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/dataMaskingPolicies/Default?api-version=2014-04-01
+```
 
 The following parameters need to be passed through:
+
 * *SubscriptionID*: the ID of the subscription
 * *ResourceGroupName*: name of the resource group that you deployed the database in
 * *ServerName* : sql server name 
@@ -200,10 +245,15 @@ The following parameters need to be passed through:
 - [Get](/rest/api/sql/datamaskingpolicies/get):  
 
 The Get policy, Gets a database data masking policy.
+
 In HTTP the following request can be made:
+
+```http
 GET https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/dataMaskingPolicies/Default?api-version=2014-04-01
+```
 
 The following parameters need to be passed through:
+
 * *SubscriptionID*: the ID of the subscription
 * *ResourceGroupName*: name of the resource group that you deployed the database in
 * *ServerName* : sql server name 
@@ -216,10 +266,15 @@ The following parameters need to be passed through:
 - [Create Or Update](/rest/api/sql/datamaskingrules/createorupdate): 
 
 The Create or Update masking rule creates or updates a database data masking rule. 
+
 In HTTP the following request can be made:
+
+```http
 PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/dataMaskingPolicies/Default/rules/{dataMaskingRuleName}?api-version=2014-04-01
+```
 
 The following parameters need to be passed through:
+
 * *SubscriptionID*: the ID of the subscription
 * *ResourceGroupName*: name of the resource group that you deployed the database in
 * *ServerName* : sql server name 
@@ -232,10 +287,15 @@ The following parameters need to be passed through:
 - [List By Database](/rest/api/sql/datamaskingrules/listbydatabase): Gets a list of database data masking rules.
 
 The List By Database request gets a list of database data masking rules.
+
 In HTTP the following request can be made:
+
+```http
 GET https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/dataMaskingPolicies/Default/rules?api-version=2014-04-01
+```
 
 The following parameters need to be passed through:
+
 * *SubscriptionID*: the ID of the subscription
 * *ResourceGroupName*: name of the resource group that you deployed the database in
 * *ServerName* : sql server name 

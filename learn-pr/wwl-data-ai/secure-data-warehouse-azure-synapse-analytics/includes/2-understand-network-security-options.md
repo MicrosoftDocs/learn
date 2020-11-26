@@ -6,11 +6,12 @@ There are a range of network security steps that you should consider to secure A
 
 ## Firewall rules
 
-Firewall rules enable you to define the type of traffic can is allowed or denied access to an Azure Synapse workspace using the originating IP address of the client that is trying to access the Azure Synapse Workspace. IP firewall rules configured at the workspace level apply to all public endpoints of the workspace including dedicated SQL pools, serverless SQL pool, and the development endpoint.
+Firewall rules enable you to define the type of traffic that is allowed or denied access to an Azure Synapse workspace using the originating IP address of the client that is trying to access the Azure Synapse Workspace. IP firewall rules configured at the workspace level apply to all public endpoints of the workspace including dedicated SQL pools, serverless SQL pool, and the development endpoint.
 
 You can choose to allow connections from all IP addresses as you are creating the Azure Synapse Workspaces, although this is not recommended as it does not allow for control access to the workspace. Instead, within the Azure portal, you can configure specific IP address ranges and associate them with a rule name so that you have greater control.
 
-![Configuring firewall settings in the Azure portal.](../media/firewall-settings-azure-portal.png)
+> [!div class="mx-imgBorder"]
+> ![Configuring firewall settings in the Azure portal.](../media/firewall-settings-azure-portal.png)
 
 Make sure that the firewall on your network and local computer allows outgoing communication on TCP ports 80, 443 and 1443 for Synapse Studio.
 
@@ -34,7 +35,8 @@ Dedicated SQL pool and serverless SQL pool are multi-tenant capabilities and the
 
 You can only choose to enable managed virtual networks as you are creating the Azure Synapse Workspaces.
 
-![Enabling a managed virtual network whilecreating an Azure Synapse Workspace.](../media/enable-managed-virtual-network.png)
+> [!div class="mx-imgBorder"]
+> ![Enabling a managed virtual network whilecreating an Azure Synapse Workspace.](../media/enable-managed-virtual-network.png)
 
 ## Private endpoints
 
@@ -42,6 +44,6 @@ Azure Synapse Analytics enables you to connect upto its various components throu
 
 When you use a private link, traffic between your Virtual Network and workspace traverses entirely over the Microsoft backbone network. Private Link protects against data exfiltration risks. You establish a private link to a resource by creating a private endpoint.
 
-Private endpoint uses a private IP address from your Virtual Network to effectively bring the service into your Virtual Network. Private endpoints are mapped to a specific resource in Azure and not the entire service. Customers can limit connectivity to a specific resource approved by their organization. You can manage the private endpoints in the Azure Synapse Studio manage hub
+Private endpoint uses a private IP address from your Virtual Network to effectively bring the service into your Virtual Network. Private endpoints are mapped to a specific resource in Azure and not the entire service. Customers can limit connectivity to a specific resource approved by their organization. You can manage the private endpoints in the Azure Synapse Studio manage hub.
 
 ![Adding managed private endpoints in Azure Synapse Studio.](../media/managed-private-endpoints.png)

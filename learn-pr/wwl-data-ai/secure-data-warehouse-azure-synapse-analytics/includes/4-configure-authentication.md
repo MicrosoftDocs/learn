@@ -22,7 +22,7 @@ The power of Azure Active Directory is that they only have to login once, and Az
 
 In this situation, it is normal for an Azure Administrator to create the user accounts and assign them to the appropriate roles and groups in Azure Active Directory. The Data Engineer will then add the user, or a group to which the user belongs to access a dedicated SQL pool.
 
-### Managed Identities
+### Managed identities
 
 Managed identity for Azure resources is a feature of Azure Active Directory. The feature provides Azure services with an automatically managed identity in Azure AD. You can use the Managed Identity capability to authenticate to any service that support Azure Active Directory authentication.
 
@@ -34,7 +34,8 @@ The workspace managed identity needs permissions to perform operations in the pi
 
 You can retrieve the managed identity in the Azure portal. Open your Azure Synapse workspace in Azure portal and select **Overview** from the left navigation. The managed identity's object ID is displayed to in the main screen.
  
-![Viewing managed identity informationin the Azure portal.](../media/view-managed-identity-azure-portal.png)
+> [!div class="mx-imgBorder"]
+> ![Viewing managed identity informationin the Azure portal.](../media/view-managed-identity-azure-portal.png)
 
 The managed identity information will also show up when you create a linked service that supports managed identity authentication from Azure Synapse Studio.
 
@@ -44,7 +45,8 @@ In the **New linked service** window, type Azure Data Lake Storage Gen2. Select 
 
 In the next window, choose **Managed Identity** for **Authentication method**. You'll see the managed identity's **Name** and **Object ID**.
  
-![Setting managed identity information in a linked service.](../media/linked-service-managed-identity.png)
+> [!div class="mx-imgBorder"]
+> ![Setting managed identity information in a linked service.](../media/linked-service-managed-identity.png)
 
 ### SQL Authentication
 
@@ -56,7 +58,8 @@ This approach is typically useful for external users who need to access the data
 
 Synapse SQL support connections from SQL Server Management Studio (SSMS) using Active Directory Universal Authentication.
  
-![Log in with multi-factor-authentication.](../media/log-multi-factor.png)
+> [!div class="mx-imgBorder"]
+> ![Log in with multi-factor-authentication.](../media/log-multi-factor.png)
 
 This enables you to operate in environments that use conditional access policies that enforce multi-factor authentication as part of the policy.
 
@@ -68,7 +71,7 @@ With storage account keys. Azure creates two of these keys (primary and secondar
 
 As a best practice, you shouldn't share storage account keys, and you can use Azure Key Vault to manage and secure the keys. 
 
-[!VIDEO  https://channel9.msdn.com/Shows/Learn-Azure/Azure-Key-Vault-Overview/player?format=ny ]
+> [!VIDEO  https://channel9.msdn.com/Shows/Learn-Azure/Azure-Key-Vault-Overview/player?format=ny]
 
 Azure Key Vault is a secret store: a centralized cloud service for storing app secrets - configuration values like passwords and connection strings that must remain secure at all times. Key Vault helps you control your apps' secrets by keeping them in a single central location and providing secure access, permissions control, and access logging.
 
@@ -84,7 +87,7 @@ Secrets are stored in individual vaults, which are Azure resources used to group
 
 If an external third-party application need access to your data, you'll need to secure their connections without using storage account keys. For untrusted clients, use a shared access signature (SAS). A shared access signature is a string that contains a security token that can be attached to a URI. Use a shared access signature to delegate access to storage objects and specify constraints, such as the permissions and the time range of access. You can give a customer a shared access signature token.
 
-Types of shared access signatures
+### Types of shared access signatures
 
 You can use a service-level shared access signature to allow access to specific resources in a storage account. You'd use this type of shared access signature, for example, to allow an app to retrieve a list of files in a file system or to download a file.
 

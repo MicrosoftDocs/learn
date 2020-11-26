@@ -22,17 +22,20 @@ To configure conditional access, you can perform the following steps:
 
 1. Sign in to the Azure portal, select **Azure Active Directory**, and then select **Conditional Access**.
  
-    ![Accessing conditional access in the Azure portal.](../media/conditional-access-azure-portal.png)
+    > [!div class="mx-imgBorder"]
+    > ![Accessing conditional access in the Azure portal.](../media/conditional-access-azure-portal.png)
 
 1. In the **Conditional Access-Policies** blade, click **New policy**, provide a name, and then click **Configure rules**.
 
 1. Under **Assignments**, select **Users and groups**, check **Select users and groups**, and then select the user or group for Conditional Access. Click **Select**, and then click **Done** to accept your selection.
  
-    ![Creating a conditional access policy in the Azure portal.](../media/create-conditional-access-azure-portal.png)
+    > [!div class="mx-imgBorder"]
+    > ![Creating a conditional access policy in the Azure portal.](../media/create-conditional-access-azure-portal.png)
 
 1. Select **Cloud apps**, click **Select apps**. You see all apps available for Conditional Access. Select **Azure SQL Database**, at the bottom click **Select**, and then click **Done**.
  
-    ![Selecting your service in a conditional access policy in the Azure portal.](../media/select-service-conditional-access-azure-portal.png)
+    > [!div class="mx-imgBorder"]
+    > ![Selecting your service in a conditional access policy in the Azure portal.](../media/select-service-conditional-access-azure-portal.png)
 
 1. If you can't find **Azure SQL Database** listed in the following third screenshot, complete the following steps:
     -	Connect to your database in Azure SQL Database by using SSMS with an Azure AD admin account.
@@ -41,4 +44,5 @@ To configure conditional access, you can perform the following steps:
 
 1. Select **Access controls**, select **Grant**, and then check the policy you want to apply. For this example, we select **Require multi-factor authentication**.
  
-    ![Select access controls in a conditional access policy in the Azure portal.](../media/access-controls-conditional-access-azure-portal.png)
+    > [!div class="mx-imgBorder"]
+    > ![Select access controls in a conditional access policy in the Azure portal.](../media/access-controls-conditional-access-azure-portal.png)

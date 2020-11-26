@@ -1,7 +1,7 @@
 In this topic, we'll go through how you can manage authorization through column and row level security within Azure Synapse Analytics. 
 We'll start off by talking about column level security in Azure Synapse Analytics, and finish with row level security. 
 
-## Column Level Security in Azure Synapse Analytics 
+## Column level security in Azure Synapse Analytics 
 
 Generally speaking, column level security is simplifying a design and coding for the security in your application. 
 It allows you  to restrict column access in order to protect sensitive data. 
@@ -44,7 +44,7 @@ Let's say you have a specific health care provider. This healthcare provider onl
 So how does column level security distinguishes from row-level security. 
 Let's look into that. 
 
-## Row Level Security in Azure Synapse Analytics
+## Row level security in Azure Synapse Analytics
 
 Row-level security (RLS) can help you to create a group membership or execution context in order to control not just columns in a database table, but actually, the rows. 
 RLS, just like column-level security, can simply help and enable your design and coding of your application security. 
@@ -133,7 +133,7 @@ With an indirect recursion we mean where a second function call the predicate fu
 
 It would also be recommended to avoid the use of excessive table joins in predicate functions.
 This would maximize performance.  
-Generally speaking when it comes to the logic of predicates, you should try to avoid logic that depends on session-specific [SET options](../../t-sql/statements/set-statements-transact-sql.md)Even though this is highly unlikely to be used in practical applications, predicate functions whose logic depends on certain session-specific **SET** options can leak information if users are able to execute arbitrary queries. For example, a predicate function that implicitly converts a string to **datetime** could filter different rows based on the **SET DATEFORMAT** option for the current session. 
+Generally speaking when it comes to the logic of predicates, you should try to avoid logic that depends on session-specific [SET options](../../t-sql/statements/set-statements-transact-sql.md). Even though this is highly unlikely to be used in practical applications, predicate functions whose logic depends on certain session-specific **SET** options can leak information if users are able to execute arbitrary queries. For example, a predicate function that implicitly converts a string to **datetime** could filter different rows based on the **SET DATEFORMAT** option for the current session. 
 
 
   

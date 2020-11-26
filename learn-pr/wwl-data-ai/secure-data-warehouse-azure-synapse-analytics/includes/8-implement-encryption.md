@@ -29,7 +29,7 @@ As Microsoft we automatically rotate the certificates in compliance with the int
 The root key is protected by a Microsoft internal secret store. 
 Microsoft also seamlessly moves and manages the keys as needed for geo-replication and restores.
 
-## Transparent data encryption with bring your own key for customer-managed transparent Data Encryption
+## Transparent data encryption with bring your own key for customer-managed transparent data encryption
 
 As stated above, the DEK that is protected by the Transparent Data Encryption Protector can also be customer managed by bringing an asymmetric key that is stored in Azure Key Vault (customer-managed transparent data encryption). 
 This is also referred to as Bring Your Own Key (BYOK) support for TDE. 
@@ -47,10 +47,12 @@ It also enables you for auditing and reporting on all the TDE protectors when us
 The reason for using Key Vault is that it provides you with a central key management system where tightly monitored HSMs are leveraged. 
 It also enables you to separate duties of management of keys and data in order to meet compliance with security policies. 
 
-**Manage TDE in the Azure portal. For Azure Synapse Analytics, you can manage TDE for the database in the Azure portal after you've signed in with the Azure Administrator or Contributor account. 
+## Manage transparent data encryption in the Azure portal. 
+
+For Azure Synapse Analytics, you can manage TDE for the database in the Azure portal after you've signed in with the Azure Administrator or Contributor account. 
 The TDE settings can be found under your user database. 
 
-[Transparent Data Encryption SQL Pool in Azure Synapse Analytics](../media/data-encryption-sql-pool-synapse.png)
+![Transparent Data Encryption SQL Pool in Azure Synapse Analytics](../media/data-encryption-sql-pool-synapse.png)
 
 It is by default that the service-managed TDE is used and therefore a TDE certificate is automatically generated for the server that contains that database. 
 
@@ -75,7 +77,7 @@ You need to make sure that you protect this BACPAC file and enable TDE as soon a
 ## Securing your credentials through linked services with TokenLibrary for Apache SPark
 
 It is quite a common pattern to access data from external sources. 
-Unless the external data source allows anonymous access, it is highly likely tha you need to secure your connection with a credential, secret, or connection string.
+Unless the external data source allows anonymous access, it is highly likely that you need to secure your connection with a credential, secret, or connection string.
 
 Within Azure Synapse Analytics, the integration process is simplified by providing linked services. 
 Doing so, the connection details can be stored in the linked service or an Azure Key Vault. 
@@ -86,7 +88,7 @@ However, to connect to other linked services, you are enabled to make a direct c
 
 An example can be found below:
 In order to connect to other linked services, you are enabled to make a direct call to the TokenLibrary by retrieving the connection string. 
-In order to retrieve the connection string, use the <b>getConnectionString</b> function and pass in the <b>linked service name</b>.
+In order to retrieve the connection string, use the **getConnectionString** function and pass in the **linked service name**.
 
 ```scala
 // Scala
@@ -112,11 +114,11 @@ print(connection_string)
 
 If you want to Get the connection string as map and parse specific values from a key pain in the connection string, you can find an example below:
 
-To parse specific values from a <i>key=value</i> pair in the connection string such as 
+To parse specific values from a _key=value_ pair in the connection string such as 
 
-<i>DefaultEndpointsProtocol=https;AccountName=\<AccountName>;AccountKey=\<AccountKey></i>
+_DefaultEndpointsProtocol=https;AccountName=\<AccountName\>;AccountKey=\<AccountKey\>_
 
-use the <b>getConnectionStringAsMap</b> function and pass the key to return the value.
+use the **getConnectionStringAsMap** function and pass the key to return the value.
 ```scala
 // Linked services can be used for storing and retreiving credentials (e.g, account key)
 // Example connection string (for storage): "DefaultEndpointsProtocol=https;AccountName=<accountname>;AccountKey=<accountkey>"
