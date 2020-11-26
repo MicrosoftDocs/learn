@@ -54,13 +54,6 @@ Azure, Kubernetes, Docker, VMware etc.
 Resources – the things you can create
 Data Sources – the things you can reference
 
-### Best Practices
-
-- Start writing your configuration with modules in mind
-- Use local modules to organize and encapsulate your code
-- Use the public Terraform Registry to find useful modules
-- Publish and share modules with your team
-
 ### Configuration Files
 
 - main.tf (Required): Main structure in order to deploy the complete infrastructure directly or through calls to modules
@@ -74,3 +67,21 @@ Data Sources – the things you can reference
 - versions.tf: Define mínimum version required for terraform and providers in a module
 
 ![Config structure for Terraform.](../media/3-config.png)
+
+### Main.tf
+
+![Main.tf structure.](../media/3-main.png)
+
+- Provider: API authentication & interaction
+- Terraform: Terraform version
+- Data: Get data from already existing services
+- Locals: generates new variables using functions and expressions
+- Resource: Describes resources & dependencies
+- Module: Reusability & complexity abstraction
+
+### Best Practices
+
+- Start writing your configuration with modules in mind
+- Use local modules to organize and encapsulate your code
+- Use the public Terraform Registry to find useful modules
+- Publish and share modules with your team
