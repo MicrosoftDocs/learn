@@ -28,7 +28,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. On the next screen, select **Set admin**.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-21.png" alt-text="Screenshot selecting Set admin":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-21.png" alt-text="Screenshot selecting Set admin.":::
 
 1. In the **Set admin** screen, search for the Azure username you logged into the Azure portal with.
 
