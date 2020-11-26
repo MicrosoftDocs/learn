@@ -20,4 +20,4 @@ The first response will be to ensure that the data warehouse is set to the appro
 Set-AzSqlDatabase -ResourceGroupName "resourcegroupname" -DatabaseName "mySampleDataWarehouse" -ServerName "sqlpoolservername" -RequestedServiceObjectiveName "DW300c"
 ```
 
-Even with these changes, performance issue may not be resoved. Then you would have to explore other areas that we will explore in this module to resolve the issue.
+Even with these changes, performance issue may not be resolved. Then you would have to explore other areas that we will explore in this module to resolve the issue.
