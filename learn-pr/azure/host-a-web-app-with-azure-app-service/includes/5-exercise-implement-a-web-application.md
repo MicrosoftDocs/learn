@@ -52,7 +52,7 @@ Press <kbd>Ctrl+C</kbd> to shut down the running app.
 
 ::: zone pivot="node"
 
-To create a starter Node.js web application, we'll use Node Package Manager (`npm`) along with some basic JavaScript code to run the actual web page processing.
+To create a starter Node.js web application, we'll use Node Package Manager (`npm`) along with some JavaScript code to run the actual web page processing.
 
 Run these commands in the Cloud Shell now to create a new `package.json` that will describe our Node.js application.
 
@@ -75,7 +75,7 @@ Now we have to make a few edits to both of our files. Type the following command
 code .
 ```
 
-Select the `package.json` file and make the following edits to the `scripts` section to use Node.js to launch the web app. You can also remove the `main` entry.
+Select the `package.json` file and make the following edits to the `scripts` section to use Node.js to launch the web app.
 
 ```json
 {
@@ -88,12 +88,12 @@ Select the `package.json` file and make the following edits to the `scripts` sec
 }
 ```
 
-Save the file.
+Save the file using the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
 
 > [!IMPORTANT]
 > Whenever you paste or change code into a file in the editor, make sure to save afterwards using the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
 
-Switch to the `index.js` file and add the following contents to it. This is a simple node program to always respond with "Hello World!" when any GET request is made to the server.
+Switch to the `index.js` file and add the following contents to it. This is a small Node.js program that always respond with "Hello World!" when any GET request is made to the server.
 
 ```javascript
 const http = require('http');
@@ -110,6 +110,31 @@ console.log("Server running at http://localhost:%d", port);
 ```
 
 Save the file and exit the editor. You can exit the editor through the "..." menu on the top right or through <kbd>Ctrl+Q</kbd>.
+
+### Optionally test your web app
+
+If you open a second command shell session, for example by browsing to <https://shell.azure.com/>, you can test your application locally on Azure. To do so, use the following steps:
+
+1. From your primary command shell session, run the following commands to start your web application:
+
+    ```bash
+    cd ~/helloworld
+    npm start
+    ```
+
+1. From your second command shell session, run the following command to browse to your web application:
+
+    ```bash
+    curl http://127.0.0.1:1337/
+    ```
+
+    You should see the following displayed:
+
+    ```html
+    <html><body><h1>Hello World!</h1></body></html>
+    ```
+
+1. From your primary command shell session, press <kbd>Ctrl+C</kbd> to quit your web app.
 
 ::: zone-end
 
@@ -131,7 +156,14 @@ cd helloworld
 mvn package
 ```
 
-When the command finishes running, if you change to the `target` directory and run `ls`, you'll see a file listed called `helloworld.war`. This is the web application package that we will deploy to App Service.
+When the command finishes running, type in these commands to open the "target" directory and list its content:
+
+```bash
+cd target
+ls
+```
+
+You'll see a file listed called `helloworld.war`. This is the web application package that we will deploy to App Service.
 
 ::: zone-end
 
@@ -152,7 +184,7 @@ mkdir ~/BestBikeApp
 cd ~/BestBikeApp
 ```
 
-Open the web-based Visual Studio Code editor to create and edit the *application.py* for your web app:
+Open the interactive editor to create and edit the *application.py* for your web app:
 
 ```bash
 code application.py
@@ -169,7 +201,7 @@ def hello():
     return "<html><body><h1>Hello Best Bike App!</h1></body></html>\n"
 ```
 
-Save the file and exit the editor. You can save the file and exit the editor through the "..." menu on the top right, or press <kbd>Ctrl+S</kbd> and <kbd>Ctrl+Q</kbd>.
+Save the file and exit the editor. You can save the file and exit the editor through the "..." menu on the top right, or use shortcuts (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
 
 In order to deploy your application to Azure, you will need to save your list of application requirements in a *requirements.txt* file. To do so, run the following command:
 
