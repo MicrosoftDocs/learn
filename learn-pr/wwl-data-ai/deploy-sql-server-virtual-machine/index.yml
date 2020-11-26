@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-sql-server-virtual-machine
 metadata:
   title: Deploy SQL Server in a virtual machine
   description: "Deploy SQL Server in a virtual machine"
-  ms.date: 11/24/2020
+  ms.date: 11/26/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial

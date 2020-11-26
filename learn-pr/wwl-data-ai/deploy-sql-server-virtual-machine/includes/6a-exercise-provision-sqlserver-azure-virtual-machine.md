@@ -82,7 +82,7 @@ You're a database administrator. You need to create a test environment for use i
 
 1. Select the existing rule under the **Inbound rules**.
 
-    :::image type="content" source="../media/dp-3300-module-11-lab-49.png" alt-text="Screenshot of the management tab.":::
+    :::image type="content" source="../media/dp-3300-module-11-lab-49.png" alt-text="Screenshot of the inbound rules.":::
 
     In the default-allow-rdp flyout enter this information:
 
@@ -111,21 +111,21 @@ You're a database administrator. You need to create a test environment for use i
 
 1. On the **Review + create** tab select **Create**.  
 ‎
-    :::image type="content" source="../media/dp-3300-module-11-lab-18.png" alt-text="Screenshot of ":::
+    :::image type="content" source="../media/dp-3300-module-11-lab-18.png" alt-text="Screenshot of review + create page.":::
 
 1. On the deployment blade, wait until the deployment is complete. The VM will take approximately 5-10 minutes to deploy. Then select **Go to resource**.
 
-    :::image type="content" source="../media/dp-3300-module-11-lab-19.png" alt-text="Screenshot of ":::
+    :::image type="content" source="../media/dp-3300-module-11-lab-19.png" alt-text="Screenshot of deployment blade.":::
 
 1. On the overview page for the virtual machine, scroll through the menu options for the resource to review what is available.
 
-    :::image type="content" source="../media/dp-3300-module-11-lab-20.png" alt-text="Screenshot of ":::
+    :::image type="content" source="../media/dp-3300-module-11-lab-20.png" alt-text="Screenshot of overview page of the new SQL server.":::
 
 1. Select **SQL Server configuration** from the left navigation, then select **Manage SQL virtual machine**.
 
 1. Review the information available in Azure about your SQL Server installation.
 
-    :::image type="content" source="../media/dp-3300-module-11-lab-50.png" alt-text="Screenshot of ":::
+    :::image type="content" source="../media/dp-3300-module-11-lab-50.png" alt-text="Screenshot of SQL server configuration information.":::
 
 The Azure portal gives you powerful tools to manage a SQL Server hosted in a virtual machine. These tools include control over automated patching, automated backups, and giving you an easy way to setup high availability.
 
