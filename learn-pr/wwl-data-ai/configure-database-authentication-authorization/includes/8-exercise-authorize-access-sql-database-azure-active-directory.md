@@ -16,19 +16,19 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. On the **Welcome to Azure** popup, select **Maybe later**.
 
-## Authorize Access to Azure SQL Database with Azure Active Directory
+## Authorize access to Azure SQL Database with Azure Active Directory
 
 1. On the Azure portal home page select **All resources**.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-19.png" alt-text="Screenshot of the Azure portal home page, selecting All resources":::
+    :::image type="content" source="../media/azure-portal-select-resources.png" alt-text="Screenshot of the Azure portal home page, selecting All resources":::
 
 1. Select the Azure SQL Database server **azuresql-lab-xxxxxx**, where **xxxxxx** is a random string, and select **Not Configured** next to **Active Directory Admin**.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-20.png" alt-text="Screenshot selecting Not Configured.":::
+    :::image type="content" source="../media/select-not-configured.png" alt-text="Screenshot selecting Not Configured.":::
 
 1. On the next screen, select **Set admin**.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-21.png" alt-text="Screenshot selecting Set admin.":::
+    :::image type="content" source="../media/active-directory-admin-not-set.png" alt-text="Screenshot selecting Set admin.":::
 
 1. In the **Set admin** screen, search for the Azure username you logged into the Azure portal with.
 
@@ -36,15 +36,15 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. Select **Save** to complete the process. This will make your username the Azure Active Directory admin for the server as shown below.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-22.png" alt-text="Screenshot of the Active Directory admin page":::
+    :::image type="content" source="../media/active-directory-admin-set.png" alt-text="Screenshot of the Active Directory admin page":::
 
 1. On the left select **Overview**, then copy the **Server name**.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-22a.png" alt-text="Screenshot showing where to copy the server name from.":::
+    :::image type="content" source="../media/copying-server-name.png" alt-text="Screenshot showing where to copy the server name from.":::
 
 1. Open SQL Server Management Studio and select **Connect** > **Database Engine**. In the **Server name** paste the name of your server. Change the authentication type to **Azure Active Directory Universal with MFA**.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-23.png" alt-text="Screenshot of the Connect to server dialog.":::
+    :::image type="content" source="../media/connect-server-dialog.png" alt-text="Screenshot of the Connect to server dialog.":::
 
     In the **User name** select the Azure **Username** from the **Resources** tab.
 
@@ -52,7 +52,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 > [!NOTE]
 > When you first try to sign in to an Azure SQL database your client IP address needs to be added to the firewall. SQL Server Management Studio can do this for you. Use the Azure Portal **password** form the **Resources** tab, then select **Sign in**, choose your Azure credentials and then select **OK**.
-> :::image type="content" source="../media/dp-3300-module-33-lab-24.png" alt-text="Screenshot of adding the client IP address.":::
+> :::image type="content" source="../media/new-firewall-rule.png" alt-text="Screenshot of adding the client IP address.":::
 
 ## Manage access to database objects
 
@@ -64,7 +64,7 @@ In this task you will manage access to the database and its objects. The first t
 1. Use the **Object Explorer** and expand **Databases**.
 1. Right-click on **AdventureWorksLT**, and select **New Query**.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-25.png" alt-text="Screenshot of the new query menu option.":::
+    :::image type="content" source="../media/new-query-menu.png" alt-text="Screenshot of the new query menu option.":::
 
 1.  In the new query window and copy and paste the below T-SQL into it. Execute the query to create the two users.
 
