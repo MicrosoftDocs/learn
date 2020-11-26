@@ -4,8 +4,9 @@ title: 'Exercise: Configure a server-based firewall rule using the Azure Portal'
 metadata:
   title: 'Exercise: Configure a server-based firewall rule using the Azure Portal'
   description: "Exercise: Configure a server-based firewall rule using the Azure Portal"
-  ms.date: 11/24/2020
+  ms.date: 11/26/2020
   author: wwlpublish
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
