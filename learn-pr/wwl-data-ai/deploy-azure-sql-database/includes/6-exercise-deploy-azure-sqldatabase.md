@@ -238,7 +238,7 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
 
 1. To run all cells in the notebook and present results, select the **Run Cells** button in the toolbar.
 ‎
-    :::image type="content" source="../media/dp-3300-module-22-lab-33.png" alt-text="Screenshot of selecting the Run cells button.":::
+    :::image type="content" source="../media/dp-3300-module-22-lab-33.png" alt-text="Screenshot of selecting Run cells.":::
 
 1. Within ADS, from **File** menu, select **Save** and then browse to the **D:\Labfiles\Deploy Azure SQL Database** directory.
 

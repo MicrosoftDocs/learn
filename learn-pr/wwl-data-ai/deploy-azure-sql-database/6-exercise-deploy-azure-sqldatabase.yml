@@ -4,8 +4,9 @@ title: 'Exercise: Deploy an Azure SQL Database'
 metadata:
   title: 'Exercise: Deploy an Azure SQL Database'
   description: "Exercise: Deploy an Azure SQL Database"
-  ms.date: 11/24/2020
+  ms.date: 11/26/2020
   author: wwlpublish
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
