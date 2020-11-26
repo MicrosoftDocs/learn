@@ -29,12 +29,12 @@ Use the above table to craft a command line in the Cloud Shell on the right to c
 
 ### Example command
 
-You can use the following example command to create a storage account. Remember to replace `<name>` with a unique value.
+You can use the following example command to create a storage account. Remember to replace `<name>` and `<learn-resource-group>` with a unique value. 
 
 ```azurecli
 az storage account create \
     --name <name> \
-    --resource-group learn-5234087c-98f2-4fcd-9df4-245776491cfd \
+    --resource-group <learn-resource-group> \
     --location eastus \
     --kind BlobStorage \
     --sku Standard_LRS \
