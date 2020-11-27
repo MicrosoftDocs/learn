@@ -4,21 +4,20 @@ Imagine you're an infrastructure manager and have been asked to provision resour
 
 ![Build, Deploy and Provision Pipelines.](../media/1-pipelines.png)
 
-### Build
-
-- Maven
-
-### Deploy
+### Build/Deploy
 
 - Maven
 
 ### Provision
 
+Multiple provisioning pipelines
+
 - IT infra team – provisions subscription, resource group, vnet, subnet, express route circuits …
 
-- Business project infra team - provisions database, cache, Azure App Service …
-
 - Business project app team – provisions apps and configures them
+
+- Business project infra team - provisions database, cache, Azure App Service …
+  - Use terraform
 
 ## Learning objectives
 

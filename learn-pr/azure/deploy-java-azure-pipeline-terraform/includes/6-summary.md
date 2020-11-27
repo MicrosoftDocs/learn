@@ -1,16 +1,16 @@
-Congratulations! You've deployed to a Spring Boot Web application to Azure App Service using Terraform.
+Congratulations! You've used Terraform to provision an Azure App Service, MySQL database, and deployed a SpringBoot web application.
 
-Your company wanted to learn how they could migrate their existing Spring Boot Java web applications to Azure App Service. You used the following steps:
+Your company wanted to learn how they could provision their existing Spring Boot Java web applications to Azure App Service. You used the following steps:
 
-1. You created a sample Spring Boot web application.
+1. You accessed a sample Spring Boot web application and tested it locally
 
-1. You created a MySQL database, connected your Spring Boot web application, and tested it locally.
+1. You provisioned a MySQL database, and an Azure App Service.
 
-1. Once you verified that your application was working successfully, you added the Maven Plugin for Azure App Service to your project and configured it interactively.
+1. Once you verified that your resources were provisioned, you added the Maven Plugin for Azure App Service to your project and configured it interactively.
 
 1. You updated your web application, redeployed it to Azure App Service, and tested it in the cloud.
 
-You're confident that you can recommend migrating your SpringBoot Java application code to Azure.
+You're confident that you can recommend Terraform to provision your SpringBoot Java applications to Azure.
 
 ## Get Log Stream
 
@@ -35,6 +35,6 @@ For more information about Spring Data JDBC, see Spring's [reference documentati
 
 For more information about Azure Application Insights Spring Boot Starter for monitoring, see [Azure Application insights](https://docs.microsoft.com/en-us/azure/developer/java/spring-framework/configure-spring-boot-java-applicationinsights/?WT.mc_id=java-10785-ropreddy)
 
-For more information about using Azure with Java, see [Azure for Java developers](https://docs.microsoft.com/en-us/azure/developer/java/?WT.mc_id=java-10785-ropreddy) and [Working with Azure DevOps and Java](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/java?WT.mc_id=java-10785-ropreddy).
+For more information about using Azure with Java, see [Azure for Java developers](https://docs.microsoft.com/en-us/azure/developer/java/?WT.mc_id=java-10785-ropreddy) and [Working with Azure Pipelines and Java](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/java?WT.mc_id=java-10785-ropreddy).
 
 You can read more detailed information about creating MySQL servers in [Create an Azure Database for MySQL server by using the Azure portal](https://docs.microsoft.com/en-us/azure/mysql/quickstart-create-mysql-server-database-using-azure-portal/?WT.mc_id=java-10785-ropreddy).
