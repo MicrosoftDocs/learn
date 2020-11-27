@@ -56,7 +56,7 @@ The TDE settings can be found under your user database.
 
 It is by default that the service-managed TDE is used and therefore a TDE certificate is automatically generated for the server that contains that database. 
 
-## Moving a transparent data encryption protected Database
+## Moving a transparent data encryption protected database
 
 In some use cases you need to move a database that is protected with TDE. 
 Within Azure, there is no need to decrypt the databases. 
@@ -74,7 +74,7 @@ This will be stored in an unencrypted BACPAC file.
 You need to make sure that you protect this BACPAC file and enable TDE as soon as the import of the bacpac file in the new database is finished. 
 
 
-## Securing your credentials through linked services with TokenLibrary for Apache SPark
+## Securing your credentials through linked services with TokenLibrary for Apache Spark
 
 It is quite a common pattern to access data from external sources. 
 Unless the external data source allows anonymous access, it is highly likely that you need to secure your connection with a credential, secret, or connection string.

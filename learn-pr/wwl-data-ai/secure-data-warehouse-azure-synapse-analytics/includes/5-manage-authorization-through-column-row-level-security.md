@@ -36,7 +36,7 @@ GRANT <permission> [ ,...n ] ON
 ```
 
 So when would you use column-level security?
-Let's say that you are a financial services firm, and can only have account manager allowed to have access to a customer's social security number, phone numbers or other PII (personal identifiable information). It is imperative to distinguish the role of an account manager versus the manager of the account managers. 
+Let's say that you are a financial services firm, and can only have account manager allowed to have access to a customer's social security number, phone numbers or other personal identifiable information. It is imperative to distinguish the role of an account manager versus the manager of the account managers. 
 
 Another use case might be related to the Healthcare Industry. 
 Let's say you have a specific health care provider. This healthcare provider only wants doctors and nurses to be able to access medical records. The billing department should not have access to view this data. Column-level security might be the option to use. 
@@ -112,7 +112,7 @@ If you have created a security policy where `SCHEMABINDING = OFF`, in order to q
 They also need permissions to any additional tables, views, or functions used within the predicate function. 
 If a security policy is created with `SCHEMABINDING = ON` (the default), then these permission checks are bypassed when users query the target table.  
 
-## Best Practices
+## Best practices
 
 There are some best practices to take in mind when you want to implement RLS. 
 We recommended creating a separate schema for the RLS objects. 
@@ -133,7 +133,8 @@ With an indirect recursion we mean where a second function call the predicate fu
 
 It would also be recommended to avoid the use of excessive table joins in predicate functions.
 This would maximize performance.  
-Generally speaking when it comes to the logic of predicates, you should try to avoid logic that depends on session-specific [SET options](../../t-sql/statements/set-statements-transact-sql.md). Even though this is highly unlikely to be used in practical applications, predicate functions whose logic depends on certain session-specific **SET** options can leak information if users are able to execute arbitrary queries. For example, a predicate function that implicitly converts a string to **datetime** could filter different rows based on the **SET DATEFORMAT** option for the current session. 
+
+Generally speaking when it comes to the logic of predicates, you should try to avoid logic that depends on session-specific SET options. Even though this is highly unlikely to be used in practical applications, predicate functions whose logic depends on certain session-specific **SET** options can leak information if users are able to execute arbitrary queries. For example, a predicate function that implicitly converts a string to **datetime** could filter different rows based on the **SET DATEFORMAT** option for the current session. 
 
 
   

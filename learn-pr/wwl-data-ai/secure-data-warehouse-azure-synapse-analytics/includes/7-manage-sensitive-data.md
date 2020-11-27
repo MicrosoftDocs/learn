@@ -1,12 +1,12 @@
-In this section, we are going to talk about Dynamic Data masking. 
+In this section, we are going to talk about Dynamic Data Masking. 
 
-**What is dynamic data masking**:
+**What is Dynamic Data Masking**:
 
-Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics support dynamic data masking. 
-It's all in the name, dynamic data masking is masking and ensures limited data exposure to non-privileged users, such that they can't see it. 
+Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics support Dynamic Data Masking. 
+It's all in the name, Dynamic Data Masking is masking and ensures limited data exposure to non-privileged users, such that they can't see it. 
 It also helps you in preventing unauthorized access to sensitive data.
-The way dynamic data masking does it, is helping customers to designate how much of the sensitive data to reveal such that it has minimal impact on the application layer. 
-Dynamic data masking is a policy-based security feature. 
+The way Dynamic Data Masking does it, is helping customers to designate how much of the sensitive data to reveal such that it has minimal impact on the application layer. 
+Dynamic Data Masking is a policy-based security feature. 
 It will hide the sensitive data in a result set of a query that runs over designated database fields. However, the data in the database will not be changed.
 
 Let's give you an example how it works. 
@@ -16,16 +16,16 @@ However, these data items, should not be fully exposed to the service representa
 If you would define a masking rule, that masks all but the last four digits for example of that credit card number, you would get a query that only gives as a result the last four digits of the credit card number.  
 If the caller, for example,  also had to provide the representative with personal information, that should not be seen by the developer that can query the production environments in order to troubleshoot, you should appropriately mask data in order to protect the given personal data such that compliance is not violated. 
 
-For Azure Synapse Analytics, the way to set up a dynamic data masking policy is using PowerShell or the REST API. 
-Bear in mind that it won't be possible for Azure Synapse Analytics to set the dynamic data masking policy in the Azure portal through selecting the Dynamic Data Masking page under Security in the SQL DB configuration pane. 
+For Azure Synapse Analytics, the way to set up a Dynamic Data Masking policy is using PowerShell or the REST API. 
+Bear in mind that it won't be possible for Azure Synapse Analytics to set the Dynamic Data Masking policy in the Azure portal through selecting the Dynamic Data Masking page under Security in the SQL DB configuration pane. 
 You need to set it up using PowerShell or REST API as mentioned before. 
-However, the configuration of the dynamic data masking policy can be done by the Azure SQL Database admin, server admin, or SQL Security Manager roles.
+However, the configuration of the Dynamic Data Masking policy can be done by the Azure SQL Database admin, server admin, or SQL Security Manager roles.
 
-In Azure Synapse Analytics, you can find dynamic data masking here;
+In Azure Synapse Analytics, you can find Dynamic Data Masking here;
 
-![Dynamic data masking Azure Synapse Analytics](../media/dynamic-data-masking-sql-pool-synapse.png)
+![Dynamic Data Masking Azure Synapse Analytics](../media/dynamic-data-masking-sql-pool-synapse.png)
 
-**Looking into dynamic data masking Policies**:
+**Looking into Dynamic Data Masking Policies**:
 
 * **SQL users are excluded from masking** 
 
@@ -36,13 +36,13 @@ In Azure Synapse Analytics, you can find dynamic data masking here;
 * **Masking functions** - Masking functions are a set of methods that control the exposure of data for different scenarios.
 
 
-**Set up dynamic data masking for your database in Azure Synapse Analytics using PowerShell cmdlets**
+**Set up Dynamic Data Masking for your database in Azure Synapse Analytics using PowerShell cmdlets**
 
-In this part, we are going to look into dynamic data masking for a database in Azure Synapse Analytics using PowerShell cmdlets. 
+In this part, we are going to look into Dynamic Data Masking for a database in Azure Synapse Analytics using PowerShell cmdlets. 
 
 * Data masking policies
 
-- [Get-AzSqlDatabaseDataMaskingPolicy](/powershell/module/az.sql/Get-AzSqlDatabaseDataMaskingPolicy)
+- Get-AzSqlDatabaseDataMaskingPolicy
 
 The Get-AzSqlDatabaseDataMaskingPolicy gets the data masking policy for a database.
 
@@ -63,7 +63,7 @@ To use this cmdlet in PowerShell, you'd have to specify the following parameters
 
 This cmdlet is also supported by the SQL Server Stretch Database service on Azure.
 
-- [Set-AzSqlDatabaseDataMaskingPolicy](/powershell/module/az.sql/Set-AzSqlDatabaseDataMaskingPolicy)
+- Set-AzSqlDatabaseDataMaskingPolicy
 
 The Set-AzSqlDatabaseDataMaskingPolicy sets data masking for a database.
 
@@ -92,7 +92,7 @@ This cmdlet is also supported by the SQL Server Stretch Database service on Azur
 
 * Data masking rules
 
-- [Get-AzSqlDatabaseDataMaskingRule](/powershell/module/az.sql/Get-AzSqlDatabaseDataMaskingRule)
+- Get-AzSqlDatabaseDataMaskingRule
 
 The Get-AzSqlDatabaseDataMaskingRule Gets the data masking rules from a database.
 
@@ -120,7 +120,7 @@ If you do not provide *RuleId*, all the data masking rules for that Azure SQL da
 
 This cmdlet is also supported by the SQL Server Stretch Database service on Azure.
 
-- [New-AzSqlDatabaseDataMaskingRule](/powershell/module/az.sql/New-AzSqlDatabaseDataMaskingRule)
+- New-AzSqlDatabaseDataMaskingRule
 
 The New-AzSqlDatabaseDataMaskingRule creates a data masking rule for a database.
 
@@ -154,7 +154,7 @@ Rule identifiers can be, for example, *ResourceGroupName*, *ServerName*, *Databa
 
 This cmdlet is also supported by the SQL Server Stretch Database service on Azure.
 
-- [Remove-AzSqlDatabaseDataMaskingRule](/powershell/module/az.sql/Remove-AzSqlDatabaseDataMaskingRule)
+- Remove-AzSqlDatabaseDataMaskingRule
 
 The Remove-AzSqlDatabaseDataMaskingRule removes a data masking rule from a database.
 
@@ -178,7 +178,7 @@ To use this cmdlet in PowerShell, you'd have to specify the following parameters
 This cmdlet is also supported by the SQL Server Stretch Database service on Azure.
 
 
-- [Set-AzSqlDatabaseDataMaskingRule](/powershell/module/az.sql/Set-AzSqlDatabaseDataMaskingRule)
+- Set-AzSqlDatabaseDataMaskingRule
 
 The Set-AzSqlDatabaseDataMaskingRule Sets the properties of a data masking rule for a database.
 
@@ -213,9 +213,9 @@ Rule identifiers can be, **ResourceGroupName**, **ServerName**, **DatabaseName**
 
 This cmdlet is also supported by the SQL Server Stretch Database service on Azure.
 
-**Set up dynamic data masking for your database in Azure Synapse Analytics using the REST API**
+**Set up Dynamic Data Masking for your database in Azure Synapse Analytics using the REST API**
 
-For setting up dynamic data masking in Azure Synapse Analytics, the other possibility is make use of the REST API. 
+For setting up Dynamic Data Masking in Azure Synapse Analytics, the other possibility is make use of the REST API. 
 
 It will enable to programmatically manage data masking policy and rules. 
 
@@ -223,7 +223,7 @@ The REST API will support the following operations:
 
 * Data masking policies
 
-- [Create Or Update](/rest/api/sql/datamaskingpolicies/createorupdate): Creates or updates a database data masking policy.
+- Create Or Update
 
 The Create Or Update masking policy using the REST API will create or update a database data masking policy. 
 
@@ -242,7 +242,7 @@ The following parameters need to be passed through:
 * *dataMaskingPolicyName*: the name of the data masking policy
 * *api version*: version of the api that is used.
 
-- [Get](/rest/api/sql/datamaskingpolicies/get):  
+- Get
 
 The Get policy, Gets a database data masking policy.
 
@@ -263,7 +263,7 @@ The following parameters need to be passed through:
 
 * Data masking rules
 
-- [Create Or Update](/rest/api/sql/datamaskingrules/createorupdate): 
+- Create Or Update
 
 The Create or Update masking rule creates or updates a database data masking rule. 
 
@@ -284,7 +284,7 @@ The following parameters need to be passed through:
 * *api version*: version of the api that is used.
 
 
-- [List By Database](/rest/api/sql/datamaskingrules/listbydatabase): Gets a list of database data masking rules.
+- List By Database
 
 The List By Database request gets a list of database data masking rules.
 
