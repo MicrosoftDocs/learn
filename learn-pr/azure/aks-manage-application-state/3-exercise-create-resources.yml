@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-manage-application-state.3-exercise-create-resources
+metadata:
+  title: Host a new database using CosmosDB
+  description: Host a new database using CosmosDB and create a new AKS cluster to save your API changes to the database
+  ms.date: 10/31/2020
+  author: khaosdoctor
+  ms.author: ludossan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Host a new database using CosmosDB
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-exercise-create-resources.md)]

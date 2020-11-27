@@ -2,18 +2,18 @@
 uid: learn.connect-vm-with-azure-bastion
 metadata:
   title: Connect to virtual machines through the Azure portal by using Azure Bastion
-  description: Learn how to deploy Azure Bastion to securely connect to Azure Virtual Machines directly within the Azure portal.
+  description: Learn how to deploy Azure Bastion to securely connect to Azure virtual machines directly within the Azure portal.
   ms.date: 11/12/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect to virtual machines through the Azure portal by using Azure Bastion
-summary: Evaluate Azure Bastion. Deploy Azure Bastion to securely connect to Azure Virtual Machines directly within the Azure portal, to effectively replace existing jumpbox solution. Monitor remote sessions by using diagnostic logs. Manage remote sessions by disconnecting a user session.
+summary: Evaluate Azure Bastion. Deploy Azure Bastion to securely connect to Azure virtual machines directly within the Azure portal, to effectively replace an existing jumpbox solution. Monitor remote sessions by using diagnostic logs. Manage remote sessions by disconnecting a user session.
 abstract: | 
   In this module, you will:
   - Evaluate Azure Bastion as a replacement for a VM jumpbox solution
-  - Configure Bastion to securely connect to VM
+  - Configure Bastion to securely connect to VMs
   - Manage remote sessions by enabling diagnostic logs and monitoring remote sessions
 prerequisites: | 
   - Experience managing remote connections to virtual machines

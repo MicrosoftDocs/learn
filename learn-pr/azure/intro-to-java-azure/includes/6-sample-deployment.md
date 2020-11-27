@@ -1,8 +1,6 @@
-Probably you're more than curious how a deployment of a Java application in Azure can look like! No worries! We got you.
+In this unit, you'll configure a Spring Boot application to be deployed via Maven and then create and deploy it to an Azure App Service instance.
 
 ## Sample application
-
-You can go with an example, you've created by yourself. Or you succeed with a common Spring Boot example that can be found at the spring starters.
 
 Clone in your favorite command-line tool.
 
@@ -26,7 +24,7 @@ Opening in the browser, it should like this.
 
 ## Prepare the sample application to be cloud ready
 
-As you as a Java developer are used to, you'll find all the relevant code in the src folder. It's following the Spring Boots architecture with Object, Controller, and Repository classes and they're separated by functionality.
+In the src folder you'll find Object, Controller, and Repository classes.
 
 As Java is platform independent, the OS is free to be chosen. But what's important for the deployment is the Java version. You find the version in the `pom.xml`.
 
@@ -36,12 +34,12 @@ As Java is platform independent, the OS is free to be chosen. But what's importa
 </properties>
 ```
 
-That example is using Java 8. So our App Service, Linux or Windows should use Java 8 as well. As the platform doesn't matter, we'll use Linux for our example.
+Your example is using Java 8. So our App Service, Linux or Windows should use Java 8 as well. As the platform doesn't matter, we'll use Linux for our example.
 
-Regardless of the Java version. We have to add some Azure dependencies to the `pom.xml` file. This adding can be done automatically for us by running
+We have to add some Azure dependencies to the `pom.xml` file. This adding can be done automatically for us by running
 
 ```bash
-mvn com.microsoft.azure:azure-webapp-maven-plugin:1.11.0:config
+mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 ```
 
 Running that command will ask for some options to be specified. Those options will be stored automatically in our `pom.xml`.
@@ -91,7 +89,7 @@ The `pom.xml` file has now added the required plugin for the automatically maven
  <plugin>
     <groupId>com.microsoft.azure</groupId>  
         <artifactId>azure-webapp-maven-plugin</artifactId>  
-        <version>1.11.0</version>  
+        <version>1.12.0</version>  
         <configuration>
           <schemaVersion>V2</schemaVersion>  
           <subscriptionId>XXX-XXX-XXX</subscriptionId>  
@@ -123,12 +121,11 @@ The `pom.xml` file has now added the required plugin for the automatically maven
 Great! We're already prepared for the deployment to Azure App Service.
 
 ```bash
-mvn package azure-webapp:deploy
+mvn package com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
 ```
 
-This command will run the tests, and then automatically spin up an Azure App Service on Azure and deploy the packaged application.
+This command will run the tests, and automatically spin up an Azure App Service and deploy the packaged application.
 
 ![Screenshot of the deployed sample pet clinic application](../media/6-deployed.gif)
 
-Congratulations! The app got successfully deployed to Azure App Service.
-You just used the commands, which are in more real world scenarios run by the CI/CD tool of your choice.
+Congratulations! The app is successfully deployed to Azure App Service.
