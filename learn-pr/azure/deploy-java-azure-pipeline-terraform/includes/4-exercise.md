@@ -1,17 +1,5 @@
 In this unit, you'll configure Terraform to provision your Database and Spring Boot application. Then you'll use Maven to deploy your application.
 
-<!-- 
-terraform basic azure
-https://github.com/jdubois/spring-petclinic/tree/deploy-to-azure
-
-github actions
-https://docs.microsoft.com/en-us/azure/spring-cloud/spring-cloud-howto-github-actions?pivots=programming-language-java
-
-https://docs.microsoft.com/en-us/azure/spring-cloud/spring-cloud-howto-cicd?pivots=programming-language-java
-
-https://medium.com/faun/azure-deployments-made-easy-with-terraform-and-github-actions-d459ae5ab7c7
--->
-
 # Spring PetClinic Sample Application
 
 ```bash
@@ -60,14 +48,14 @@ You'll customize your application name, and your resource group name: edit the `
 
 ## Deploy via Maven
 
-To deploy the application, you'll need to configure and edit the `azure-webapp-maven-plugin` plugin, to configure the resource group and the application name (which should be the same as
-the ones configured in Terraform).
-
-Configure the application by running:
+Configure your deployment by running:
 
 ```bash
 ./mvnw azure-webapp:config
 ```
+
+To deploy the application, you'll need to configure and edit the `azure-webapp-maven-plugin` plugin, to configure the resource group and the application name (which should be the same as
+the ones configured in Terraform).
 
 Then, deploy the application by running:
 

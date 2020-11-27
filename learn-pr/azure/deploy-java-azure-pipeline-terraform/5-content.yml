@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-java-azure-pipeline-terraform.6-summary
-title: Summary
+uid: learn.azure.deploy-java-azure-pipeline-terraform.5-content
+title: Content
 metadata:
-  title: Summary
-  description: Summary
+  title: Content
+  description: Content
   ms.date: 09/18/2020
   author: roryp
   ms.author: ropreddy
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/5-content.md)]
