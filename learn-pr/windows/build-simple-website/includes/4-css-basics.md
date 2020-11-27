@@ -71,7 +71,7 @@ Are the font styles what you expected to see? It's interesting how styles cascad
 
 ## Add a light theme
 
-Next, add support for a color theme for your website. Begin by defining a light-colored theme.
+Next, add support for a color theme for your website. Begin by defining a light-colored theme. For the light theme, use hex color codes for the font color (#000000, black) and for the background (#00FF00, a green hue).
 
 .light-theme {
   color: #000000;
@@ -88,7 +88,9 @@ In your HTML file, update the `<body>` element with a class name, `light-theme`,
 
 To preview using **Visual Studio Code**, select on `index.html` and select **Open In Default Browser**.
 
-The webpage will open in your default browser. Notice that the light theme with a green background appears.
+The webpage will open in your default browser. Notice that the light theme using a green background appears.
+
+![Screenshot of website with light theme applied](../media/chrome-light-theme.png)
 
 ## View applied CSS
 
@@ -101,6 +103,8 @@ In **Chrome**, the keyboard shortcut for **Developer Tools** is Option+Command+I
 3. Roll over and select the HTML elements.
 4. Open the disclosure triangles.
 5. Select a `<li>` element. Note the custom style `font-family: helvetica;`, which overrides the style for the `<body>` element.
+
+![Screenshot of website with light theme applied](../media/chrome-light-theme-in-dev-tools.png)
 
 ## Add a dark theme
 
@@ -138,9 +142,15 @@ Next, in your CSS file, add the following after the `:root` selector, replacing 
 }
 
 body {
-    font-family: helvetica, sans-serif;
+    font-family: monospace;
     background: var(--bg);
 }
 ```
 
-To view the dark theme, we could manually switch the default theme in the `<body>` element to dark theme. However, instead of this, in the next unit we will use JavaScript to provide interactivity and support the switching of themes.
+To view the dark theme, manually switch the default theme in the `<body>` element to dark theme (`dark-theme`), and then view the page in the browser.
+
+![Screenshot of website with dark theme applied](../media/chrome-dark-theme.png)
+
+Switch the `<body>` element back to light theme.
+
+In the next unit we will use JavaScript to provide interactivity and support the switching of themes.
