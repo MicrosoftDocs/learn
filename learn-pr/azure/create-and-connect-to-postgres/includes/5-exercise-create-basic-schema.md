@@ -1,4 +1,10 @@
-*Open up firewall ports in the portal*
+We need to set up our database and connect to it from an app. In this exercise we'll:
+
+* Configure the firewall so we can connect to the database service
+* Connect to the database service using Azure Cloud Shell
+* Create a database called `paymentapp`
+* Create a users table and load the names and age of two users
+* Run an update query to update a users age
 
 ## Configure a server-level firewall rule
 
@@ -16,11 +22,7 @@ Azure has an automatic firewall for our server - preventing all external parties
 
 4. Click **Save** and then click the **X** to close the **Connections security** page.
 
-*Save*
-
 ## Use psql to connect in Azure Cloud Shell
-
-*Write connection string*
 
 Let's now use the psql command-line utility to connect to the Azure Database for PostgreSQL server.
 
@@ -37,40 +39,44 @@ To run the code in this article in Azure Cloud Shell:
 4. Select Enter to run the code to connect to your Azure Database for PostgreSQL database.
 5. Type in your password and select enter.
 
-*Create database and view*
+## Create the paymentapp database
 
 6. Once you are connected to the server, create a blank database at the prompt:
+
    ```sql
    CREATE DATABASE paymentapp;
    ```
 
 7. At the prompt, execute the following command to switch connection to the newly created database **paymentapp**:
+
    ```sql
    \c paymentapp
    ```
 
-## Create tables in the database
-
-*Add data to table and view*
-
-*Create table and view*
+## Create and query tables in the payment app database
 
 Now that you know how to connect to the Azure Database for PostgreSQL, we can complete some basic tasks. We'll:
 
-- create a table
-- insert some account data into it
-- view the table
-- edit one of the values
+* create a table
+* insert some account data into it
+* view the table
+* edit one of the values
 
 First, create a table and load it with some account data.
-8. In the Cloud Shell  window, run the following squery to create a table:
+
+### Create the users table
+
+8. In the Cloud Shell  window, run the following query to create a table called `users`:
+
 ```sql
-CREATE TABLE account (
-	id serial PRIMARY KEY, 
-	name VARCHAR(50), 
+CREATE TABLE users (
+	id serial PRIMARY KEY,
+	name VARCHAR(50),
 	age INTEGER
 );
 ```
+
+The table is storing an id, name, and age.
 
 9. You can see the newly created table in the list of tables now by typing:
 
@@ -78,22 +84,20 @@ CREATE TABLE account (
 \dt
 ```
 
-## Load data into the tables
+### Load data into the users table
 
 Now that you have a table, insert some data into it.
 
 10. In the Cloud Shell  window, run the following query to insert some rows of data.
 
 ```sql
-INSERT INTO logins (id, name, age) VALUES (1, 'John', 45); 
-INSERT INTO logins (id, name, age) VALUES (2, 'Lauren', 32);
+INSERT INTO users (id, name, age) VALUES (1, 'John', 45); 
+INSERT INTO users (id, name, age) VALUES (2, 'Lauren', 32);
 ```
 
 You have now two rows of sample data into the account table you created earlier.
 
-## Query and update the data in the tables
-
-*Edit data in table and view*
+## Query and update the data the users tables
 
 11. Execute the following query to retrieve information from the account database table.
 
