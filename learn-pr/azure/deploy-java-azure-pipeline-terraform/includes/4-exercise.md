@@ -22,6 +22,7 @@ cd spring-petclinic
 git checkout deploy-to-azure
 mvn clean package -DskipTests
 mvn spring-boot:run
+http://localhost:8080/
 ```
 
 ## Deploying to Azure
