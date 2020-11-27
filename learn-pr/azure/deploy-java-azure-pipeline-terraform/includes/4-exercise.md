@@ -48,6 +48,10 @@ terraform destroy
 cd ..
 ```
 
+```bash
+mvn azure-webapp:config
+```
+
 To deploy the application, you will need to edit the `pom.xml` and edit the `azure-webapp-maven-plugin` plugin
 section, in order to configure the resource group and the application name (which should be the same as
 the ones configured in Terraform).
