@@ -5,14 +5,18 @@ In this unit, we look at Terraform.
 Terraform uses its own configuration language, designed to allow concise descriptions of infrastructure. The Terraform language is declarative, describing an intended goal rather than the steps to reach that goal.
 
 Using Terraform, you create configuration files using HCL syntax.
-The HCL syntax allows you to specify the cloud provider - such as Azure - and the elements that make up your cloud infrastructure. After you create your configuration files, you create an execution plan that allows you to preview your infrastructure changes before they're deployed. Once you verify the changes, you apply the execution plan to deploy the infrastructure.
+The HCL syntax allows you to specify the cloud provider - such as Azure - and the elements that make up your cloud infrastructure.
 
 ![Hashicorp Configuration Language.](../media/3-content.png)
 
 ### Interpolation
 
 <!-- elaborate-->
+It's easy to interpolate Strings into your Terraform scripts by using the following Syntax:
+
+```bash
 azure_instance.web.0.id
+```
 
 ### language
 
@@ -61,13 +65,9 @@ Use `terraform taint` to flag resources. Tainted resources will be destroyed and
 Configuration files describe the components needed to run applications.
 
 - main.tf (Required): Main structure to deploy the complete infrastructure directly or through calls to modules
-
 - output.tf: Identify each return value of a Terraform module
-
 - terraform.tfvars: Assign values to variables in a file instead of arguments in a command
-
 - variables.tf: Define variables required (or not) in main.tf, we need to define the var type and it allows to you assign a default value.
-
 - versions.tf: Define mínimum version required for terraform and providers in a module
 
 ![Config structure for Terraform.](../media/3-config.png)
@@ -102,11 +102,7 @@ A Terraform configuration file starts off with the specification of the provider
 ![Terraform Worflow.](../media/3-workflow.png)
 
 - Init: Initialize a working directory with Terraform configuration files
-
 - Validate: Validates configuration files in a directory without checking remotely
-
 - Plan: It creates an execution plan (also known as – WhatIf)
-
 - Apply: Deploy the changes required to reach the wanted state
-
 - Destroy: Remove the TF manage infrastructure
