@@ -3,7 +3,7 @@ uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics
 metadata:
   title: Secure a data warehouse in Azure Synapse Analytics
   description: "Secure a data warehouse in Azure Synapse Analytics"
-  ms.date: 11/26/2020
+  ms.date: 11/27/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
