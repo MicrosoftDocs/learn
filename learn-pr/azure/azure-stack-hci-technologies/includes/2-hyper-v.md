@@ -15,7 +15,7 @@ The following diagram depicts the high-level architecture of Hyper-V. The Hyper-
 
 :::image type="content" source="../media/2-hyper-v-architecture.png" alt-text="Diagram of a non-nested virtualization environment, with the CPU layer at the bottom, on top of which is a Hypervisor layer, followed by the root host OS and guest OS." border="true":::
 
-An OS that runs in a VM is referred to as a *guest OS*. Hyper-V supports all current versions of Windows Server and client operating systems in addition to a several Linux distributions, including CentOS, Red Hat Enterprise Linux, Debian, Oracle Linux, SUSE, and Ubuntu, as well as FreeBSD.
+An OS that runs in a VM is referred to as a *guest OS*. Hyper-V supports all current versions of Windows Server and client operating systems in addition to a several Linux distributions, including CentOS, Red Hat Enterprise Linux, Debian, Oracle Linux, SUSE, and Ubuntu, and FreeBSD.
 
 ## What is nested virtualization?
 
@@ -70,7 +70,7 @@ The list of hardware resources that the host will need for running VMs include:
 - Processor. Ensure the host has enough physical processor cores to support the VMs you plan to run.
 - Memory. Ensure there's enough memory in the Hyper-V host to support the number of VMs you intend to run.
 - Storage. Ensure your host has enough storage for the virtual hard disks used by your VMs. The storage subsystem also requires high throughput to support multiple VMs accessing the storage concurrently.
-- Network. The Hyper-V host must allocate sufficient network capacity to each VMs. In some cases, you might need to allocate a dedicated network adapters in the host.
+- Network. The Hyper-V host must allocate sufficient network capacity to each VMs. In some cases, you might need to allocate a dedicated network adapter in the host.
 
 ## Nested virtualization requirements
 
@@ -80,5 +80,5 @@ To enable nested virtualization, you need to meet the following prerequisites:
 - The physical host computer must have an Intel processor with Virtual Machine Extensions (VT-x) and Extended Page Tables (EPT) capabilities.
 
 ## Install the Hyper-V Server role
-
+<!--LM: Please check capitalization for Hyper-V server role in the heading and text.-->
 To install the Hyper-V server role on local or remote hosts, you can use **Windows Admin Center (WAC)**, **Server Manager**, or the **Install-WindowsFeature** Windows PowerShell cmdlet.

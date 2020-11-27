@@ -1,7 +1,7 @@
 Azure Stack HCI also relies heavily on SDN to implement its features. Similar to software-defined storage, this is not an individual server role or a feature. Instead, it is a collection of different technologies that enable a wide range of network virtualization scenarios. These technologies include Hyper-V Network Virtualization, Hyper-V virtual switch, Switch-Embedded Teaming (SET), and Network Controller. While Network Controller is optional in Azure Stack HCI, you might consider testing it in your proof-of-concept environment.
 
 > [!NOTE]
-> This is not a comprehensive list, but is sufficient to gain a basic understanding of the core software-defined networking functionality in Azure Stack HCI.
+> This is not a comprehensive list but is sufficient to gain a basic understanding of the core software-defined networking functionality in Azure Stack HCI.
 
 # What is SDN?
 
