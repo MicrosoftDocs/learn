@@ -2,6 +2,11 @@ In this unit we look at Terraform.
 
 ## Hashicorp Configuration Language (HCL)
 
+Terraform uses its own configuration language, designed to allow concise descriptions of infrastructure. The Terraform language is declarative, describing an intended goal rather than the steps to reach that goal.
+
+Using Terraform, you create configuration files using HCL syntax.
+The HCL syntax allows you to specify the cloud provider - such as Azure - and the elements that make up your cloud infrastructure. After you create your configuration files, you create an execution plan that allows you to preview your infrastructure changes before they're deployed. Once you verify the changes, you apply the execution plan to deploy the infrastructure.
+
 ![Hashicorp Configuration Language.](../media/3-content.png)
 
 ### Interpolation
@@ -48,12 +53,6 @@ Use `terraform taint` to flag resources. Tainted resources will be destroyed and
 - Knows that if the VM is deleted, to also delete the Disk(s)
 - Provides the ability to pass in previous deployments as parameters
 
-### Providers
-
-Azure, Kubernetes, Docker, VMware etc.
-Resources – the things you can create
-Data Sources – the things you can reference
-
 ### Configuration Files
 
 - main.tf (Required): Main structure in order to deploy the complete infrastructure directly or through calls to modules
@@ -67,6 +66,13 @@ Data Sources – the things you can reference
 - versions.tf: Define mínimum version required for terraform and providers in a module
 
 ![Config structure for Terraform.](../media/3-config.png)
+
+### Providers
+
+A Terraform configuration file starts off with the specification of the provider. When using Azure, you'll specify the Azure provider (azurerm) in the provider block
+- Azure, Kubernetes, Docker, VMware etc.
+- Resources – the things you can create
+- Data Sources – the things you can reference
 
 ### Main.tf
 

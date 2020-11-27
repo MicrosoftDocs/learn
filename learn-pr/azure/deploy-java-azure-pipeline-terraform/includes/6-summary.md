@@ -1,4 +1,4 @@
-Congratulations! You've used Terraform to provision an Azure App Service, MySQL database, and deployed a SpringBoot web application.
+Congratulations! You've used Terraform to provision an Azure App Service, MySQL database, and deployed a Spring Boot web application.
 
 Your company wanted to learn how they could provision their existing Spring Boot Java web applications to Azure App Service. You used the following steps:
 
