@@ -6,10 +6,10 @@ Imagine you're an infrastructure manager and have been asked to provision resour
 
 ### Build/Deploy
 
-- Maven
+<!-- Todo Maven -->
 
 ### Provision
-
+<!-- Elaborate -->
 Multiple provisioning pipelines
 
 - IT infra team – provisions subscription, resource group, vnet, subnet, express route circuits …

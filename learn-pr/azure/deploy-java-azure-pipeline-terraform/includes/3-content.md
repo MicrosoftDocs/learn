@@ -11,6 +11,7 @@ The HCL syntax allows you to specify the cloud provider - such as Azure - and th
 
 ### Interpolation
 
+<!-- elaborate-->
 azure_instance.web.0.id
 
 ### language
@@ -21,15 +22,15 @@ Values can be supplied as a '.tfvars' file containing simple key/value pairs, en
 
 #### Functions
 
-<!-- 
-String and math (all the usual)
-Count – simple method for deploying multiple resources
-Conditional "${var.env == "production" ? var.prod_subnet : var.dev_subnet}"
-CIDR
+<!-- elaborate
+- String and math (all the usual)
+- Count – simple method for deploying multiple resources
+-C onditional "${var.env == "production" ? var.prod_subnet : var.dev_subnet}"
+
 -->
 
 #### Provisioners
-
+<!-- elaborate -->
 local-exec, remote-exec, file
 
 #### Modules
@@ -44,7 +45,7 @@ A module is a set of configuration files in a single directory. Even a simple co
 ![Module structure for Terraform.](../media/3-modules.png)
 
 ### State
-
+<!--refine-->
 State is a necessary requirement for Terraform to function.
 When running a `terraform plan`, Terraform must know the current state of resources to effectively determine the changes that it needs to make to reach your wanted configuration.
 State can be stored local (single user – terraform.tfstate) or remote
