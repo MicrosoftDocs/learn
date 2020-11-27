@@ -1,4 +1,4 @@
-In this unit we look at Terraform.
+In this unit, we look at Terraform.
 
 ## Hashicorp Configuration Language (HCL)
 
@@ -17,14 +17,16 @@ azure_instance.web.0.id
 
 #### Variables
 
-Values can be supplied as a .tfvars file containing simple key/value pairs, env variables, or command parameters.
+Values can be supplied as a '.tfvars' file containing simple key/value pairs, env variables, or command parameters.
 
 #### Functions
 
+<!-- 
 String and math (all the usual)
 Count – simple method for deploying multiple resources
 Conditional "${var.env == "production" ? var.prod_subnet : var.dev_subnet}"
 CIDR
+-->
 
 #### Provisioners
 
@@ -32,19 +34,19 @@ local-exec, remote-exec, file
 
 #### Modules
 
-A module is a set of configuration files in a single directory. Even a simple configuration consisting of a single directory with one or more .tf files is a module.
+A module is a set of configuration files in a single directory. Even a simple configuration consisting of a single directory with one or more.tf files is a module.
 
 - Organize configuration
 - Encapsulate configuration
-- Re-use configuration
-- Provide consistency and ensure best practices
+- Reuse configuration
+- Provide consistency and ensure good practices
 
 ![Module structure for Terraform.](../media/3-modules.png)
 
 ### State
 
 State is a necessary requirement for Terraform to function.
-When running a `terraform plan`, Terraform must know the current state of resources in order to effectively determine the changes that it needs to make to reach your desired configuration.
+When running a `terraform plan`, Terraform must know the current state of resources to effectively determine the changes that it needs to make to reach your wanted configuration.
 State can be stored local (single user – terraform.tfstate) or remote
 Use `terraform taint` to flag resources. Tainted resources will be destroyed and recreated during `terraform apply`.
 
@@ -55,7 +57,9 @@ Use `terraform taint` to flag resources. Tainted resources will be destroyed and
 
 ### Configuration Files
 
-- main.tf (Required): Main structure in order to deploy the complete infrastructure directly or through calls to modules
+Configuration files describe the components needed to run applications.
+
+- main.tf (Required): Main structure to deploy the complete infrastructure directly or through calls to modules
 
 - output.tf: Identify each return value of a Terraform module
 
@@ -70,7 +74,7 @@ Use `terraform taint` to flag resources. Tainted resources will be destroyed and
 ### Providers
 
 A Terraform configuration file starts off with the specification of the provider. When using Azure, you'll specify the Azure provider (azurerm) in the provider block
-- Azure, Kubernetes, Docker, VMware etc.
+- Azure, Kubernetes, Docker, VMware, and so on
 - Resources – the things you can create
 - Data Sources – the things you can reference
 
@@ -100,8 +104,8 @@ A Terraform configuration file starts off with the specification of the provider
 
 - Validate: Validates configuration files in a directory without checking remotely
 
-- Plan: It creates an execution plan (aka – WhatIf)
+- Plan: It creates an execution plan (also known as – WhatIf)
 
-- Apply: Deploy the changes required to reach the desired state
+- Apply: Deploy the changes required to reach the wanted state
 
 - Destroy: Remove the TF manage infrastructure
