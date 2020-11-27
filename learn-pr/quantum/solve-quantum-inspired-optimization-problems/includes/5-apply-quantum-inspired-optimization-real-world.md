@@ -50,7 +50,7 @@ This final model gives us a cost function with the required properties.
 
 ## Solving the Problem in Python
 
-Now that you've learned how a real problem can be cast in Ising form, we are ready to invoke an Azure Quantum solver to compute solutions for us.
+Now that you've learned how our combinatorial optimization problem can be cast in Ising form, we are ready to invoke an Azure Quantum solver to compute solutions for us.
 
 First, we must instantiate a `Workspace` object which allows you to connect to the workspace you've previously deployed in Azure. Refer back to the [How to create an Azure Quantum workspace](//TODO link) module if you don't have a workspace set up yet. Be sure to fill in the settings below which can be retrieved by running `az quantum workspace show`.
 
