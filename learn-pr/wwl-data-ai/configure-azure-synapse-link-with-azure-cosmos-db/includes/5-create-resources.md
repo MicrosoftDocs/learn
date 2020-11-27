@@ -22,7 +22,8 @@ Let’s now connect to our Cosmos DB Cosmos DB Core (SQL) API analytical store u
 
     You should almost immediately see the query begin to execute and the shortly thereafter receive back a result set **(6)**
 
-    > [!Note]: That for records where data was not defined, such as the name column for the salesOrder record we get back a null value. 
+    > [!Note] 
+    > That for records where data was not defined, such as the name column for the salesOrder record we get back a null value. 
  
     ![Viewing JSON results in an analytical store.](../media/view-json-records.png)
 
@@ -50,7 +51,8 @@ Let’s now connect to our Azure Cosmos DB API for MongoDB analytical store usin
 
     You should almost immediately see the query begin to execute and the shortly thereafter receive back a result set **(6)**
 
-    > [!Note]: That for records where data was not defined, such as the name column for the salesOrder record we get back a null value, and that the name column now contains a JSON fragment with both the data type and value since the MongoDB API uses full fidelity schema mode by default.
+    > [!Note] 
+    > That for records where data was not defined, such as the name column for the salesOrder record we get back a null value, and that the name column now contains a JSON fragment with both the data type and value since the MongoDB API uses full fidelity schema mode by default.
 
     ![Viewing Spark query results.](../media/view-spark-query-results.png)
 
