@@ -16,7 +16,12 @@ https://medium.com/faun/azure-deployments-made-easy-with-terraform-and-github-ac
 
 ```bash
 mkdir source-code
-git clone https://github.com/roryp/spring-petclinic/tree/deploy-to-azure
+cd source-code
+git clone https://github.com/jdubois/spring-petclinic
+cd spring-petclinic
+git checkout deploy-to-azure
+mvn clean package -DskipTests
+mvn spring-boot:run
 ```
 
 ## Deploying to Azure

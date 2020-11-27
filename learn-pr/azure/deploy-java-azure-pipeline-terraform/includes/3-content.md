@@ -94,7 +94,7 @@ Data Sources – the things you can reference
 
 - Validate: Validates configuration files in a directory without checking remotely
 
-- Plan: It creates an execution plan (aka         –WhatIf)
+- Plan: It creates an execution plan (aka – WhatIf)
 
 - Apply: Deploy the changes required to reach the desired state
 
