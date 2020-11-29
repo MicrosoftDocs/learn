@@ -14,13 +14,13 @@ Azure has an automatic firewall for our server - preventing all external parties
 
    :::image type="content" source="../media/4-locate.png" alt-text="Azure Database for PostgreSQL - Search for server":::
 
-2. In the server page, select **Connection security**. 
+2. In the server page, select **Connection security**
 
-3. Click in the text box under **Rule Name,** and add a new firewall rule to specify the IP range for connectivity. Enter your IP range. Click **Save**.
+3. Select **Add 0.0.0.0 - 255.255.255.255**, then select **Continue**.
 
-   :::image type="content" source="../media/5-firewall-2.png" alt-text="Azure Database for PostgreSQL - Create Firewall Rule":::
+   :::image type="content" source="../media/5b-firewall.png" alt-text="Azure Database for PostgreSQL - Create Firewall Rule":::
 
-4. Click **Save** and then click the **X** to close the **Connections security** page.
+4. Click **Save**
 
 ## Use psql to connect in Azure Cloud Shell
 
@@ -47,7 +47,7 @@ To run the code in this article in Azure Cloud Shell:
    CREATE DATABASE paymentapp;
    ```
 
-7. At the prompt, execute the following command to switch connection to the newly created database **paymentapp**:
+7. At the prompt, execute the following command to **connect directly** to the newly created **paymentapp** database:
 
    ```sql
    \c paymentapp
@@ -66,7 +66,7 @@ First, create a table and load it with some account data.
 
 ### Create the users table
 
-8. In the Cloud Shell  window, run the following query to create a table called `users`:
+8. In the Cloud Shell window, run the following query to create a table called `users`:
 
 ```sql
 CREATE TABLE users (
@@ -102,17 +102,19 @@ You have now two rows of sample data into the account table you created earlier.
 11. Execute the following query to retrieve information from the account database table.
 
 ```sql
-SELECT * FROM account;
+SELECT * FROM users;
 ```
 
 12. You can also update the data in the table.
 
 ```sql
-UPDATE account SET age = 20 WHERE name = 'John';
+UPDATE users SET age = 21 WHERE id = 1;
 ```
 
 13. You can see the updated values when you retrieve the data.
 
 ```sql
-SELECT * FROM account;
+SELECT * FROM users;
 ```
+
+Well done. Now you can create a PostgreSQL database in Azure Database for PostgreSQL, create tables and query data.
