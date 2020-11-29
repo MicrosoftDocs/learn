@@ -38,7 +38,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 1. The portal navigates you to the **Azure Marketplace** page. From here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
 
-1. To display the web app creation wizard, select **Web** > **Static Web App**.
+1. To display the web app creation wizard, select **Web** > **Web App**.
 
 1. From the **Basics** tab, under **Project Details**, fill out the wizard with the following values:
 
@@ -47,7 +47,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | **Subscription** | Concierge Subscription | The web app you are creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you are creating it within the wizard). |
     | **Resource Group** | Select <rgn>[Sandbox resource group]</rgn> from the menu | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
 
-    Under **Static Web App details**, continue filling out the wizard with the following values:
+    Under **Web App details**, continue filling out the wizard with the following values:
 
     | Field | Value | Details |
     |---|---|---|
