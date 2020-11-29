@@ -109,51 +109,52 @@ Now let's add to the application the code to retrieve course data from the datab
 
 9.  Use the code editor to open the **DataAccessController.cs** file.
 
-        ```bash
-        code DataAccessController.cs
-        ```
+                ```bash
+                code DataAccessController.cs
+                ```
 
-        This file contains an empty class that's named `DataAccessController`.
+                This file contains an empty class that's named `DataAccessController`.
 
-        ```C#
+                ```C#
         using Microsoft.Extensions.Options;
         using System;
         using System.Collections.Generic;
         using System.Data;
-        using System.Data.SqlClient;
+        using Npgsql;
         using System.Linq;
         using System.Threading.Tasks;
 
-        namespace PaymentWebApp.Models
+        namespace PaymentUsersApp.Models
         {
             public class DataAccessController
-            {
-                // TODO: Add your connection string in the following statements
-                private string connectionString = "<Azure Database for PostgreSQL Connection String>";
 
-                // Retrieve all details of courses and their modules
-                public IEnumerable<CoursesAndModules> GetAllCoursesAndModules()
-                {
-                    List<CoursesAndModules> courseList = new List<CoursesAndModules>();
+    {
+    // TODO: Add your connection string in the following statements
+    private string connectionString = "<Azure Database for PostgreSQL Connection String>";
 
-                    // TODO: Connect to the database
-                    //using ()
+                    // Retrieve all details of courses and their modules
+        public IEnumerable<Users> GetAllUsers()
                     {
-                        // TODO: Specify the SQL query to run
+            List<Users> userList = new List<Users>();
 
-                        // TODO: Execute the query
+                        // TODO: Connect to the database
+                        //using ()
+                        {
+                            // TODO: Specify the SQL query to run
 
-                        // TODO: Read the data a row at a time
+                            // TODO: Execute the query
 
-                        // TODO: Close the database connection
+                            // TODO: Read the data a row at a time
+
+                            // TODO: Close the database connection
+                        }
+                        return courseList;
                     }
-                    return courseList;
                 }
             }
-        }
-        ```
+            ```
 
-    This class will contain the logic to:
+        This class will contain the logic to:
 
 - Connect the app to the database
 - Retrieve user data
@@ -201,7 +202,6 @@ The payment string read:
 16. Replace the comment `// TODO: Execute the query` with the following code.
 
     ```C#
-    con.Open();
                     var reader = command.ExecuteReader();
     ```
 
@@ -210,7 +210,6 @@ The payment string read:
 17. Replace the comment `// TODO: Read the data a row at a time` with the following block of code.
 
     ```C#
-    while (rdr.Read())
                     while (reader.Read())
                     {
                         string userID = reader.GetInt32(0).ToString();
@@ -233,51 +232,57 @@ The payment string read:
 
 19. The completed class should contain the following code, which includes the connection string for your database.
 
-        ```C#
+            ```C#
 
-    using Microsoft.Extensions.Options;
-    using System;
-    using System.Collections.Generic;
-    using System.Data;
-    using Npgsql;
-    using System.Linq;
-    using System.Threading.Tasks;
+        using Microsoft.Extensions.Options;
+        using System;
+        using System.Collections.Generic;
+        using System.Data;
+        using Npgsql;
+        using System.Linq;
+        using System.Threading.Tasks;
 
-namespace PaymentUsersApp.Models
-{
-public class DataAccessController
-{
-// Add your connection string in the following statements
-string connectionString = "Server=payment-server-demo.postgres.database.azure.com;Database=paymentapp;Port=5432;User Id=paymentadmin@payment-server-demo;Password=<password>;Ssl Mode=Require;";
+        namespace PaymentUsersApp.Models
 
-        // Retrieve all details of courses and their modules
-        public IEnumerable<Users> GetAllUsers()
-        {
-            List<Users> userList = new List<Users>();
+    {
+    public class DataAccessController
+    {
+    // TODO: Add your connection string in the following statements
+    string connectionString = "Server=payment-server-demo.postgres.database.azure.com;Database=paymentapp;Port=5432;User Id=paymentadmin@payment-server-demo;Password=<password>;Ssl Mode=Require;";
 
-            // Connect to the database
-            using (var conn = new NpgsqlConnection(connectionString))
-
+            // Retrieve all details of courses and their modules
+            public IEnumerable<Users> GetAllUsers()
             {
-                Console.Out.WriteLine("Opening connection");
-                conn.Open();
-                using (var command = new NpgsqlCommand("SELECT * FROM users", conn))
+                List<Users> userList = new List<Users>();
+
+            // TODO: Connect to the database
+            //using ()
+                using (var conn = new NpgsqlConnection(connectionString))
                 {
-                    var reader = command.ExecuteReader();
-                    while (reader.Read())
+                    Console.Out.WriteLine("Opening connection");
+                // TODO: Specify the SQL query to run
+                    conn.Open();
+                    using (var command = new NpgsqlCommand("SELECT * FROM users", conn))
                     {
-                        string userID = reader.GetInt32(0).ToString();
-                        string userName = reader.GetString(1);
-                        int moduleSequence = reader.GetInt32(2);
-                        Users user = new Users(userID, userName, moduleSequence);
-                        userList.Add(user);
+                // TODO: Execute the query
+                        var reader = command.ExecuteReader();
+
+                // TODO: Read the data a row at a time
+                        while (reader.Read())
+                        {
+                            string userID = reader.GetInt32(0).ToString();
+                            string userName = reader.GetString(1);
+                            int moduleSequence = reader.GetInt32(2);
+                            Users user = new Users(userID, userName, moduleSequence);
+                            userList.Add(user);
+                        }
                     }
+                // TODO: Close the database connection
+                    conn.Close();
                 }
-                conn.Close();
+                return userList;
             }
-            return userList;
         }
-    }
 
 }
 
@@ -289,7 +294,7 @@ string connectionString = "Server=payment-server-demo.postgres.database.azure.co
 
 The application can now retrieve the course data. Now, update the app to display the data to the user.
 
-1. In Cloud Shell, move to the **payment-app/Pages** folder.
+20. In Cloud Shell, move to the **payment-app/Pages** folder.
 
    ```bash
    cd ~/payment-app/Pages
@@ -297,7 +302,7 @@ The application can now retrieve the course data. Now, update the app to display
 
 This folder contains the .cshtml pages and code files that the web app uses to display information.
 
-1. Use the code editor to open the incomplete file **Index.cshtml**.
+21. Use the code editor to open the incomplete file **Index.cshtml**.
 
    ```bash
    code Index.cshtml
@@ -325,13 +330,13 @@ This folder contains the .cshtml pages and code files that the web app uses to d
                </tr>
            </thead>
            <tbody>
-               <!-- TODO: Display the data from the CoursesAndModules collection -->
+               <!-- TODO: Display the data from the Users collection -->
            </tbody>
        </table>
    </div>
    ```
 
-1. Replace the comment `<!-- TODO: Display the data from the CoursesAndModules collection --\>` with the following foreach loop.
+22. Replace the comment `<!-- TODO: Display the data from the Users collection --\>` with the following foreach loop.
 
    ```cshtml
            @foreach (var user in Model.Users)
@@ -352,7 +357,7 @@ This folder contains the .cshtml pages and code files that the web app uses to d
 
    This code iterates through the list of User object, and outputs the data in each field.
 
-1. The completed **Index.cshtml** file should contain the following code.
+23. The completed **Index.cshtml** file should contain the following code.
 
    ```cshtml
    @page
@@ -379,6 +384,7 @@ This folder contains the .cshtml pages and code files that the web app uses to d
             </tr>
         </thead>
         <tbody>
+               <!-- TODO: Display the data from the Users collection -->
             @foreach (var user in Model.Users)
             {
                 <tr>
