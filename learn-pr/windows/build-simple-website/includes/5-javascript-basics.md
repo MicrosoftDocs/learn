@@ -47,7 +47,7 @@ In **Visual Studio Code**, open the `app.js` file and type the following.
 
 ## Add a button
 
-You need some way to let the user switch between the light and dark theme in your web page. In this scenario, we do that with a button element. In your HTML page, add a `<button>` element. Put the button at the end of the list.
+You need some way to let the user switch between the light and dark theme in your web page. In this scenario, we do that with a button element. In your HTML page, add a `<button>` element. Put the button at the end of the list inside of a `<div>` element.
 
 ```html
 <ul>
@@ -55,15 +55,49 @@ You need some way to let the user switch between the light and dark theme in you
   <li class="list">Add light and dark themes</li>
   <li>Enable switching the theme</li>
 </ul>
-<button class="btn">Go dark</button>
+<div>
+  <button class="btn">Dark</button>
+</div>
 ```
 
-In your CSS file, add a selector for the button. To make the button label black, irrespective of the light or dark theme, set the `color` property in the button selector. This selector, specific to the button, overrides the universal selector (*) used to apply font colors in your CSS file.
+In your CSS file, add a selector for the button. To make the button colors different from the general light or dark theme colors, set the `color` and `background-color` properties in the button selector. This selector, specific to the button, overrides the universal selector (*) used to apply font colors in your CSS file. (We also add rules for the size, shape, and placement of the button, etc.)
 
 ```css
 .btn {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
   font-family: helvetica, sans-serif;
-  color: black;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+```
+
+To improve the button's appearance, add a pseudo-class selector, `btn:focus`, after the button selector. By setting the `outline-style` rule to `none`, you eliminate an outline when the button is selected.
+
+```css
+.btn:focus { outline-style: none; }
+```
+
+Next, update the CSS for the light and dark theme. Define some new variables, `btnBg` and `btnFontColor`, to specify the button-specific background color and font color.
+
+```css
+.light-theme {
+  --bg: var(--green);
+  --fontColor: var(--black);
+  --btnBg: var(--black);
+  --btnFontColor: var(--white);
+}
+
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--green);
+  --btnBg: var(--white);
+  --btnFontColor: var(--black);
 }
 ```
 
@@ -74,7 +108,7 @@ To make the button do something when you press it, you need an event handler in 
 Before you can add the event handler, you need a reference to the button. In your JavaScript file, use `document.querySelector` to get the button reference.
 
 ```js
-const switcher = document.querySelector('button');
+const switcher = document.querySelector('.btn');
 ```
 
 Next, add the event listener and the event handler for the `click` event. In the following code, you add a listener for the `click` event. The function passed into the event listener is your actual event handler.
@@ -85,7 +119,7 @@ switcher.addEventListener('click', function() {
 });
 ```
 
-In the preceding code, you use the `toggle` method to switch the <body> element to the `dark-theme` class. This automatically gets the dark theme styles applied instead of light theme. However, the button label also needs to be updated to show the correct theme, so you need to add an `if` statement to check the button label and update it. Here is what the complete JavaScript code should look like.
+In the preceding code, you use the `toggle` method to switch the <body> element to the `dark-theme` class. This automatically gets the dark theme styles applied instead of light theme. However, the button label also needs to be updated to show the correct theme, so you need to add an `if` statement to check the current theme and update the button label. Here is what the complete JavaScript code should look like.
 
 ```js
 'use strict'
@@ -97,14 +131,16 @@ switcher.addEventListener('click', function() {
 
     var className = document.body.className;
     if(className == "light-theme") {
-        this.textContent = "Go dark";
+        this.textContent = "Dark";
     }
     else {
-        this.textContent = "Go light";
+        this.textContent = "Light";
     }
 
 });
 ```
+
+It's a JavaScript convention to use *camel case* for variable names with more than one word—for example, the variable `className`.
 
 ## Console message
 
@@ -130,79 +166,28 @@ To preview using **Visual Studio Code**, select `index.html` and select **Open I
 
 The webpage will open in your default browser.
 
+![Screenshot of website with the button](../media/chrome-light-theme-with-button.png)
 
+Click the new **Dark** button to switch to the dark theme.
 
-## delete - Commenting code
+![Screenshot of website after switching to dark theme](../media/chrome-dark-theme-with-button.png)
 
-You can write *comments* in your JavaScript for one line with a double forward slash `//`. If you want to create a multi-line comment, use forward-slash star (or asterisk) `/*` to start and star forward-slash `*/` (or asterisk) to end. It's quite useful for troubleshooting to deactivate code by commenting it out.
+Make sure that everything looks correct.
 
-```javascript
-// This is a single-line comment.
-
-/* Here's a
-multi-line
-comment. */
-
-// console.log('This code is no longer active')
-```
-
-You can also write comments or deactivate code in HTML and CSS.
-
-```html
-<!-- This is an HTML comment. -->
-
-/* CSS comments are just like multi-line JavaScript ones.*/
-```
-
-In **Visual Studio Code**, you can select (highlight) one or more lines of code, then use the keyboard shortcut Control+/ (Windows) or Command+/ (macOS) to apply or un-apply the comment. The correct type of comment or *syntax* is automatically applied for HTML, CSS, and JavaScript. However, all multi-line JavaScript comments are applied as single line comments.
-
-Generally speaking, use comments sparingly as they tend to clutter your code visually. If you use comments strategically, they can be helpful to you or others—especially if you haven't looked at a *codebase* for a while. Be aware that code may not produce the behavior the author outlines in a comment. Also, if you *refactor* your code, remember to update the comment.
-
-## delete - Add the date
-
-It would be convenient to see today's date on our webpage. There are a few main steps. First, you'll retrieve a new date from the built-in JavaScript *object*. It looks like this `new Date()`. Next, you can transform the date format by using `toDateString()`. The HTML needs to know where you want to add this information on the page or *document*, so retrieve an element using `getElementById('date')`. The final step is to insert the date string inside the selected element with `innerHTML`.
-
-```javascript
-...
-let today = new Date();
-let formatDate = today.toDateString();
-let selectElement = document.getElementById('date');
-selectElement.innerHTML = formatDate;
-```
-
-Here we're using the word `let` to create a *variable* named `today`, which holds the date and time. It's a convention to use *camel case* for variable names with more than one word—for example, the variable `formatDate`.
-
-When you declare a variable, it holds a reference to the value you assign. Variables are a useful way of storing information temporarily so you can reuse the values. In the `selectElement` variable, you're saving the result of reformatting the date. In that step, you remove the time and timezone from using `toDateString()`.
-
-The main idea to remember here is that you can use JavaScript to select an ID (or class attribute) and then do something—like change HTML (or CSS styles) on the page.
-
-![Screenshot of Visual Studio Code app JavaScript file](../media/vs-code-js-add-the-date.png)
-
-## delete - Open in browser
-
-As before, even though you were just editing the `app.js` file, to preview the changes, you should select the `index.html` file.
-
-To preview using **Visual Studio Code**, select `index.html` and select **Open In Default Browser**.
-
-The webpage will open in your default browser.
-
-## delete - Developer tools
+## Check the page in the developer tools
 
 In **Edge**, the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, you can view **Settings and more** with Alt+X and select **Developer Tools**. Then select the **Console tab** or press Control+2.
 
-![Screenshot of console message in Edge](../media/edge-console-message.png)
+In **Chrome**, the keyboard shortcut for **Console** in the Developer Tools is Option+Command+J. (F12 also works.)
 
-In **Chrome**, the keyboard shortcut for **Console** in the Developer Tools is Option+Command+J.
+1. Select the **Styles** tab.
+2. Select the **Elements** tab.
+3. Select the `<body>` element. In the **Styles** tab, look at the applied theme. If the current theme is dark, the `dark-theme` styles are applied.
 
-## delete - To do
+Make sure the dark theme is selected.
 
-1. Check that the date is showing on the page.
-2. Look for the `console.log` message, "Here's a hidden message."
-3. In the editor, try commenting out `console.log('Here\'s a hidden message')`. Save and reload the page. The shortcut for reload is Control+R (Windows) or Command+R (macOS).
-4. Un-comment, then remove the escape character `\` in `here\'s`. Save and reload the page.
-5. Look for an error something like, "Uncaught SyntaxError: Unexpected identifier" or "Uncaught SyntaxError: missing ) after argument list."
-6. Undo the previous edit with the keyboard shortcut *Command+Z* (macOS), save, and test that the error went away.
+Select the **Console** tab to see the `console.log` message, "current class name: light-theme dark-theme".
 
-![Screenshot of console message in Chrome](../media/3-html-basics/chrome-console-message.png)
+![Screenshot of console message in Chrome](../media/chrome-console-output.png)
 
-![Screenshot of Visual Studio Code no escape error](../media/vs-code-js-no-escape.png)
+Using the console, you get an interesting look at how the CSS theme switching is handled. Both class names are applied to the `<body>` element. However, the last class name applied, the dark theme, takes precedence. In the **Styles** tab, you can see that the dark theme rules override the light theme rules, which are shown using strike though text.
