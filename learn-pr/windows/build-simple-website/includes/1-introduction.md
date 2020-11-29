@@ -36,5 +36,3 @@ In this module, you will:
   - Windows: Windows 7, 8, 10
   - Mac: macOS 10.9 or later
   - Linux: Ubuntu, Debian, Red Hat, Fedora, or SUSE
-
-

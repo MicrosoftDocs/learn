@@ -176,7 +176,7 @@ Make sure that everything looks correct.
 
 ## Check the page in the developer tools
 
-In **Edge**, the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, you can view **Settings and more** with Alt+X and select **Developer Tools**. Then select the **Console tab** or press Control+2.
+In **Edge**, the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, you can view **Settings and more** with Alt+X and select **Developer Tools**.
 
 In **Chrome**, the keyboard shortcut for **Console** in the Developer Tools is Option+Command+J. (F12 also works.)
 
