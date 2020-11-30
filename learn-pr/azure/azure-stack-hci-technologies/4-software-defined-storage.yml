@@ -28,7 +28,7 @@ quiz:
       isCorrect: false
       explanation: "That's incorrect. Storage Replica enables storage-agnostic, block-level, synchronous and asynchronous replication between servers or clusters across different physical locations."
 
-  - content: "What is the minimum number of Windows Server failover clusters required in the disaggregated deployment model of Storage Spaces Direct?"
+  - content: "What is the minimum number of Windows Server failover clusters that the disaggregated deployment model of Storage Spaces Direct requires?"
     choices:
     - content: "1"
       isCorrect: false
