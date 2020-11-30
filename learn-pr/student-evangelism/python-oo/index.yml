@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.python-oo
 metadata:
-  title: Introduction to
-  description: Learn how to
+  title: Introduction to Object oriented programming with Python
+  description: This module will teach you how to model problems using Object oriented programming concepts. Additionally you will learn to turn your model into working code using OOP concepts like classes, attributes and methods to do so. 
   ms.date: 06/04/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to
-summary: Learn how to
+title: Introduction to Object oriented programming with Python
+summary: This module will teach you how to model problems using Object oriented programming concepts. Additionally you will learn to turn your model into working code using OOP concepts like classes, attributes and methods to do so. 
 abstract: |
   After completing this module, you'll be able to:
-  - Transform simple procedural code into objected oriented code. 
+  - Model problems using OOP concepts. 
   - Describe the basic concepts involved in OO.
   - Distinguish classes from objects
 iconUrl: /learn/achievements/python-oo.svg
