@@ -1,11 +1,11 @@
-Let's get keys for the Translator service. As mentioned previously, we'll need an [Azure account](https://azure.microsoft.com/account/free?WT.mc_id=python-11210-chrhar?&zure-portal=true). We'll create the key using the Azure portal and store it in a **.env** file in our application.
+Let's get keys for the Translator service. As mentioned previously, we'll need an [Azure account](https://azure.microsoft.com/account/free?WT.mc_id=python-11210-chrhar&azure-portal=true). We'll create the key using the Azure portal and store it in a **.env** file in our application.
 
 ## Get Translator service key
 
 1. Browse to the [Azure portal](https://portal.azure.com?azure-portal=true)
 2. Select **Create a resource**
 
-![Azure portal Create a resource](../media/create-resource.png)
+![Screenshot showing the Create a resource option in the Azure portal.](../media/create-resource.png)
 
 3. In the **Search** box, enter **Translator**
 4. Select **Translator**
@@ -14,7 +14,7 @@ Let's get keys for the Translator service. As mentioned previously, we'll need a
 
 5. Select **Create**
 
-![Translator create dialog](../media/create-translator.png)
+![Screenshot showing the Translator create dialog.](../media/create-translator.png)
 
 6. Complete the Create Translator form with the following values:
   - **Subscription**: *Your subscription*
@@ -26,7 +26,7 @@ Let's get keys for the Translator service. As mentioned previously, we'll need a
   - **Name**: *A unique value, such as ai-yourname*
   - **Pricing tier**: **Free F0**
 
-![Completed Translator create form](../media/create-translator-form.png)
+![Screenshot showing the completed Translator create form.](../media/create-translator-form.png)
 
 7. Select **Review + create**
 8. Select **Create**
@@ -34,11 +34,11 @@ Let's get keys for the Translator service. As mentioned previously, we'll need a
 10. Select **Go to resource**
 11. Select **Keys and Endpoint** on the left side under **RESOURCE MANAGEMENT**
 
-![Keys and endpoints](../media/translator-key-endpoint.png)
+![Screenshot showing the keys and endpoints option on the menu.](../media/translator-key-endpoint.png)
 
 12. Next to **KEY 1**, select **Copy to clipboard**
 
-![Key dashboard](../media/translator-keys.png)
+![Screenshot showing the key dashboard.](../media/translator-keys.png)
 
 > [!NOTE]
 > There's no difference between Key 1 and Key 2. By providing two keys you have the opportunity to migrate to new keys, by regenerating one while using the other.

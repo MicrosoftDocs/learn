@@ -11,7 +11,7 @@ Typically, the entry point for Flask applications is a file named **app.py**. We
 
 1. Returning to the instance of Visual Studio Code we were using previously, create a new file named **app.py** by clicking **New file** in the **Explorer** tab
 
-![Visual Studio Code new file dialog](../media/create-file.png)
+![Screenshot showing the Visual Studio Code New File dialog.](../media/create-file.png)
 
 > [!IMPORTANT]
 > If this exercise is your first time using Visual Studio Code to create a Python application, you'll receive messages about installing the Python extension and the linter **pylint**. Select **Install** to install each of these add-ons.
@@ -44,7 +44,7 @@ By using `@app.route`, we indicate the route we want to create. The path will be
 
 ## Create the HTML template for our form
 
-Jinja, the templating engine for Flask, focuses quite heavily on HTML. As a result, we can use all the existing HTML skills and tools we already have. We're going to use [Bootstrap](https://getbootstrap.com?azure-portal=true) to lay out our page, to make it a little prettier. By using Bootstrap, we'll we use different CSS classes on our HTML. If you're not familiar with Bootstrap, you can ignore the classes and focus on the HTML (which is really the important part).
+Jinja, the templating engine for Flask, focuses quite heavily on HTML. As a result, we can use all the existing HTML skills and tools we already have. We're going to use [Bootstrap](https://getbootstrap.com?azure-portal=true) to lay out our page, to make it a little prettier. By using Bootstrap, we'll use different CSS classes on our HTML. If you're not familiar with Bootstrap, you can ignore the classes and focus on the HTML (which is really the important part).
 
 Templates for Flask need to be created in a folder named **templates**, which is fitting. Let's create the folder, the necessary file, and add the HTML.
 

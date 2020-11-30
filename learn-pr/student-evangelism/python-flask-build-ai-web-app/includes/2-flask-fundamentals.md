@@ -4,11 +4,11 @@ When creating a web application with any framework, there are a couple of core c
 
 ## Responding to user requests with routes
 
-When a user uses a web application, they indicate what they want to do, or the information they're seeking, by browsing to different uniform resource locators (or URLs). They might type out an address directly (say https://adventure-works.com), or click on a link or button that includes the appropriate URL. On an e-commerce site you might have URLs that look like the following:
+When a user uses a web application, they indicate what they want to do, or the information they're seeking, by browsing to different uniform resource locators (or URLs). They might type out an address directly (say `https://adventure-works.com`), or select a link, or a button that includes the appropriate URL. On an e-commerce site you might have URLs that look like the following:
 
-- https://adventure-works.com/ for the main page
-- https://adventure-works.com/products/widget for details on a Widget
-- https://adventure-works.com/cart/buy to complete a purchase
+- `https://adventure-works.com/` for the main page
+- `https://adventure-works.com/products/widget` for details on a Widget
+- `https://adventure-works.com/cart/buy` to complete a purchase
 
 As a developer, we actually don't need to worry about the first part of the URL, or the domain (**adventure-works.com** in our example). Our application is put into action based on whatever comes after the domain name, starting with the **/**. The portion after the domain name is what's known as a **route**.
 

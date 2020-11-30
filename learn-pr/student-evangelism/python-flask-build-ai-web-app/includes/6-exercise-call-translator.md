@@ -69,15 +69,15 @@ def index_post():
 
 The code is commented to describe the steps that are being taken. At a high level, here's what our code does:
 
-- Reads the **text** the user entered and the **language** they selected on the form
-- Reads the environmental variables we created earlier from our **.env** file
-- Creates the necessary path to call the Translator service, which includes the target language (the source language is automatically detected)
-- Creates the header information, which includes the key for the Translator service, the location of the service, and an arbitrary ID for the translation
-- Creates the body of the request, which includes the text we want to translate
-- Calls `post` on `requests` to call the Translator service
-- Retrieves the JSON response from the server, which includes the translated text
-- Retrieves the translated text (see the following note)
-- Calls `render_template` to display the response page
+1. Reads the **text** the user entered and the **language** they selected on the form
+1. Reads the environmental variables we created earlier from our **.env** file
+1. Creates the necessary path to call the Translator service, which includes the target language (the source language is automatically detected)
+1. Creates the header information, which includes the key for the Translator service, the location of the service, and an arbitrary ID for the translation
+1. Creates the body of the request, which includes the text we want to translate
+1. Calls `post` on `requests` to call the Translator service
+1. Retrieves the JSON response from the server, which includes the translated text
+1. Retrieves the translated text (see the following note)
+1. Calls `render_template` to display the response page
 
 > [!NOTE]
 > When calling the Translator service it's possible to have multiple statements translated into multiple languages in a single call. As a result, the JSON returned by the service contains a lot of information, of which we need only one small piece. As a result, we need to step down a few levels to get the translated text.
@@ -149,11 +149,13 @@ Return to the integrated terminal in Visual Studio Code (or reopen it with **Ctr
 3. Browse to **http://localhost:5000** to test your application
 4. Enter text into the text area, choose a language, and select **Translate**
 
-![Completed translation form with text I am going to Osaka and Japanese selected](../media/website-final-form.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot showing the completed translation form with text for translation that reads I am going to Osaka and Japanese selected as the language.](../media/website-final-form.png)
 
 5. You'll see the results!
 
-![Translation results](../media/website-results.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot showing the translation results.](../media/website-results.png)
 
 ## Congratulations
 

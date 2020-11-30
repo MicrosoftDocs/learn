@@ -7,11 +7,11 @@ In this unit, you'll learn how to install Python tooling and create a virtual Py
 
 At a high level, we'll perform the following steps:
 
-- Install Visual Studio Code (if not already installed)
-- Install Python (if not already installed)
-- Create a directory for your code
-- Create a virtual environment
-- Install Flask and other libraries
+1. Install Visual Studio Code (if not already installed)
+1. Install Python (if not already installed)
+1. Create a directory for your code
+1. Create a virtual environment
+1. Install Flask and other libraries
 
 ## Install Visual Studio Code
 
@@ -87,7 +87,7 @@ code .
 
 2. In Visual Studio Code, in the **Explorer** window, select **New File**
 
-![New file button in Visual Studio Code](../media/create-file.png)
+![Screenshot showing the New File button in Visual Studio Code.](../media/create-file.png)
 
 3. Name the file **requirements.txt**, and add the following text:
 
