@@ -11,7 +11,7 @@ metadata:
 title: Integrate an Azure Arc enabled Kubernetes cluster with Azure Policy for Kubernetes
 durationInMinutes: 6
 content: |
-  [!include[]includes/5-policy.md)]
+  [!include[](includes/5-policy.md)]
 quiz:
   title: Check your knowledge
   questions:
