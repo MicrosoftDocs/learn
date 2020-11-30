@@ -1,16 +1,16 @@
-In order to query the data within our Cosmos DB analytical store from Azure Synapse using Spark we need to configure a linked service 
+In order to query the data within our Cosmos DB analytical store from Azure Synapse using Spark, we need to configure a linked service 
 
 ## Configure Azure Synapse Linked Service for Azure Cosmos DB Core (SQL) API
 
-To configure the Azure Synapse Linked Service for Azure Cosmos DB Core (SQL) API perform the following steps:
+To configure the Azure Synapse Linked Service for Azure Cosmos DB Core (SQL) API, perform the following steps:
  
 ![Azure Synapse Studio.](../media/azure-synapse-studio.png)
 
-1.	Connect to a previous deployed Azure Synapse Workspace within which you have running an Azure Synapse SQL Serverless instance **(deployed by default with the workspace)** and an Azure Synapse Spark Pool **(you need to have previously deployed this)**. 
+1.	Connect to a previously deployed Azure Synapse Workspace running an Azure Synapse SQL Serverless instance **(deployed by default with the workspace)** and an Azure Synapse Spark Pool **(you need to have previously deployed this)**. 
  
     ![Adding a new resource in Azure Synapse Studio.](../media/new-resource-azure-synapse-studio.png)
 
-2.	In the left-hand menu select **Data (1)**
+2.	In the left-hand menu, select **Data (1)**
 
 3.	Click on the **Linked tab** in the explorer view **(2)**
 
@@ -46,11 +46,11 @@ You are done creating your Linked service for your Azure Cosmos DB Core **(SQL)*
 
 ## Configure Azure Synapse linked service for Azure Cosmos DB API for MongoDB
 
-To configure the Azure Synapse Linked Service for Azure Cosmos DB API for MongoDB perform the following steps:
+To configure the Azure Synapse Linked Service for Azure Cosmos DB API for MongoDB, perform the following steps:
 
 1.	Connect to a previous deployed Azure Synapse Workspace 
 
-2.	In the left-hand menu select **Data** 
+2.	In the left-hand menu, select **Data** 
 
 3.	Click on the **Linked tab** in the explorer view. 
 
@@ -58,7 +58,7 @@ To configure the Azure Synapse Linked Service for Azure Cosmos DB API for MongoD
 
 5.	Select **Connect to external data** from the list that pops up.
  
-    ![Configuring Cosmos DB linked service in Azure Synapse Studio.](../media/cosmos-db-mongodb-linked-service-azure-synapse-studio.png)
+    ![Configuring Cosmos DB linked service for Mongo DB in Azure Synapse Studio.](../media/cosmos-db-mongodb-linked-service-azure-synapse-studio.png)
 
 6.	Select **Azure Cosmos DB (MongoDB API) (5)**
 

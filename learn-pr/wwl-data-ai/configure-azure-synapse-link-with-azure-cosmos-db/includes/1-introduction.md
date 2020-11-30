@@ -17,4 +17,5 @@ Before taking this module, it is recommended that the student is able to:
 - Know how to deploy an Azure Synapse Analytics Workspace
 - Know how to deploy an Azure Cosmos DB Account
 
-> [!Note}: Throughout this module and those that follow we are going to be using two Azure Cosmos DB accounts, one configured for Azure Cosmos DB SQL (Core) API and a second account configured for the Azure Cosmos DB API for MongoDB in order to highlight the differences and similarities of the experience, specifically using their different default schema representation modes.
+> [!Note]
+> Throughout this module and those that follow we are going to be using two Azure Cosmos DB accounts, one configured for Azure Cosmos DB SQL (Core) API and a second account configured for the Azure Cosmos DB API for MongoDB in order to highlight the differences and similarities of the experience, specifically using their different default schema representation modes.
