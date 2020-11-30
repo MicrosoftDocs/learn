@@ -11,7 +11,7 @@ metadata:
 title: What is Azure Stack Edge?
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-what-is-azure-stack-edge.md)]
+  [!include[](includes/5-azure-stack-edge.md)]
 quiz:
   title: Check your knowledge
   questions:
