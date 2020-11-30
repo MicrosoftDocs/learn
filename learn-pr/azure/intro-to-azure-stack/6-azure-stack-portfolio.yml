@@ -36,6 +36,6 @@ quiz:
     - content: "Azure Stack Edge"
       isCorrect: false
       explanation: "That's incorrect. Azure Stack Edge does not support multi-tenancy."
-    - content: ""Azure Stack Hub"
+    - content: "Azure Stack Hub"
       isCorrect: true
       explanation: "That's correct. Azure Stack Hub is the only Azure Stack Hub product that supports built-in multi-tenancy and tenant isolation."
