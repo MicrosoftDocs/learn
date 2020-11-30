@@ -4,9 +4,7 @@ You'll configure your pipeline to act as soon as you push code to master (see on
 
 ## Set Up up your workflow
 
-You now need to allow access from your GitHub workflow to your Azure account. Open up a terminal and type the following command, replacing `$AZ_RESOURCE_GROUP` with the name of your resource group.
-
-🛑 Make sure you assign the name of your resource group to the variable `AZ_RESOURCE_GROUP` or replace the value for it in the commands below.
+You now need to allow access from your GitHub workflow to your Azure account. Open up a terminal and type the following command, replacing `yourServicePrincipalName` with the name of your service principal.
 
 Create a service principal to deploy to Azure:
 
@@ -14,7 +12,22 @@ Create a service principal to deploy to Azure:
 az ad sp create-for-rbac --name "yourServicePrincipalName" --role contributor --scopes /subscriptions/your-subscription-id --sdk-auth
 ```
 
-This output should output a JSON text, that you need to copy.
+This command will return JSON - copy it and keep it safe as we'll use it in the next step:
+
+```bash
+{
+  "clientId": "XXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXXX",
+  "clientSecret": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "subscriptionId": "XXXXXXXXX-XXXXX-XXXX-XXXX-XXXXXXXXXXXXX",
+  "tenantId": "XXXXXXXX-XXXXX-XXXX-XXXX-XXXXXXXXXXX",
+  ...
+}
+```
+
+You'll then need to go to Certificates & secrets section of your app registration and create a new client secret. Take note of this value also.
+
+## GitHub Secrets
+Once you have the required ID and Secrets, the next step is to add them the secret store in your GitHub project.
 
 Next you’ll create secrets to avoid exposing your service principal.
 In GitHub, we can specify them once we go to Settings -> Secrets.
@@ -27,7 +40,7 @@ The result will be something like this:
 
 ## Workflow file
 
-Inside the project directory, you'll see a  directory called `.github/workflows` and a file called `main.yml` in it. This file is a GitHub workflow and will use the secret we configured above to deploy the application to your Azure subscription.
+Inside the project directory, you'll see a directory called `.github/workflows` and a file called `main.yml` in it. This file is a GitHub workflow and will use the secret we configured above to deploy the application to your Azure subscription.
 
 In that file, you'll see the following content:
 
