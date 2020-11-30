@@ -11,7 +11,7 @@ metadata:
 title: Apply Azure Arc enabled Kubernetes cluster configurations by using GitOps
 durationInMinutes: 9
 content: |
-  [!include[]includes/6-gitops.md)]
+  [!include[](includes/6-gitops.md)]
 quiz:
   title: Check your knowledge
   questions:
