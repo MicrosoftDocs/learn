@@ -11,7 +11,7 @@ metadata:
 title: What are the architecture, components, and characteristics of Azure Arc Enabled Kubernetes?
 durationInMinutes: 4
 content: |
-  [!include[]includes/3-architecture-components.md)]
+  [!include[](includes/3-architecture-components.md)]
 quiz:
   title: Check your knowledge
   questions:
