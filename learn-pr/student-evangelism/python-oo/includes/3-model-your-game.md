@@ -15,7 +15,8 @@ Lets try to imagine an object in the real world, you are in a car park, what do 
 
 New scene, a deck of cards in Vegas. You look at two different cards, two objects and you realize they have some common properties namely suit, e.g clubs, heart, diamonds etc and what value they are like ace, king, nine etc.
 
-> [!TIP] Start looking at your surroundings, see if you can take two similar objects, like two books or two chairs and see if you can find the properties that best describes them and tells them apart.
+> [!TIP]
+> Start looking at your surroundings, see if you can take two similar objects, like two books or two chairs and see if you can find the properties that best describes them and tells them apart.
 
 ### Classes
 
@@ -82,4 +83,5 @@ print(car.color) # "Red"
 print(car.make) # would result in an error, `make` does not exist on the object
 ```
 
-> [!TIP] As a home exercise, try creating a class from a book you would read. Think about how you would write its class and what properties it should have.
+> [!TIP]
+> As a home exercise, try creating a class from a book you would read. Think about how you would write its class and what properties it should have.

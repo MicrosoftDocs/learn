@@ -21,7 +21,8 @@ Rock paper, scissor is a game played by two participants. The game consists of r
 
 1. Next, create a table with the columns `Phase`, `Object`, `Behavior` and `Data` and arrange the highlighted words where you think they should be placed.
 
-   > [!TIP] Spend a few minutes thinking this through and scroll down once you've given it some thought.
+   > [!TIP]
+   > Spend a few minutes thinking this through and scroll down once you've given it some thought.
 
    Here's what a resulting table can look like:
 
