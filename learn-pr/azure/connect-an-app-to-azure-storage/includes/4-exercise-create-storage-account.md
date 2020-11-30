@@ -36,7 +36,7 @@ az storage account create \
     --name <name> \
     --resource-group <learn-resource-group> \
     --location eastus \
-    --kind BlobStorage \
+    --kind StorageV2 \
     --sku Standard_LRS \
     --access-tier cool
 ```
