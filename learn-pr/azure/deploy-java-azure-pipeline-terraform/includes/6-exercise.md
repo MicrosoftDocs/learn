@@ -19,7 +19,7 @@ This output should output a JSON text, that you need to copy.
 Next you’ll create secrets to avoid exposing your service principal.
 In GitHub, we can specify them once we go to Settings -> Secrets.
 
-We'll need to create the secrets, `TF_VAR_agent_client_id`, `TF_VAR_agent_client_secret`, `TF_VAR_subscription_id`, and `TF_VAR_tenant_id`.
+We'll need to create the secrets, `AZURE_CLIENT_ID`, `AZURE_CLIENT_SECRET`, `AZURE_SUBSCRIPTION_ID`, and `AZURE_TENANT_ID`.
 Add the values to each variable from the ones you're copied when creating your service principal.
 The result will be something like this:
 
@@ -47,7 +47,7 @@ jobs:
       - name: "Terraform Format"
         uses: hashicorp/terraform-github-actions@master
         with:
-          tf_actions_version: 0.12.13
+          tf_actions_version: 0.12.24
           tf_actions_subcommand: "fmt"
           tf_actions_working_dir: "./terraform"
           tf_actions_comment: true
@@ -56,7 +56,7 @@ jobs:
       - name: "Terraform Init"
         uses: hashicorp/terraform-github-actions@master
         with:
-          tf_actions_version: 0.12.13
+          tf_actions_version: 0.12.24
           tf_actions_subcommand: "init"
           tf_actions_working_dir: "./terraform"
           tf_actions_comment: true
@@ -65,7 +65,7 @@ jobs:
       - name: "Terraform Validate"
         uses: hashicorp/terraform-github-actions@master
         with:
-          tf_actions_version: 0.12.13
+          tf_actions_version: 0.12.24
           tf_actions_subcommand: "validate"
           tf_actions_working_dir: "./terraform"
           tf_actions_comment: true
@@ -74,29 +74,29 @@ jobs:
       - name: "Terraform Plan"
         uses: hashicorp/terraform-github-actions@master
         with:
-          tf_actions_version: 0.12.13
+          tf_actions_version: 0.12.24
           tf_actions_subcommand: "plan"
           tf_actions_working_dir: "./terraform"
           tf_actions_comment: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TF_VAR_agent_client_id: ${{ secrets.TF_VAR_agent_client_id }}
-          TF_VAR_agent_client_secret: ${{ secrets.TF_VAR_agent_client_secret }}
-          TF_VAR_subscription_id: ${{ secrets.TF_VAR_subscription_id }}
-          TF_VAR_tenant_id: ${{ secrets.TF_VAR_tenant_id }}
+          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          ARM_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
       - name: "Terraform Apply"
         uses: hashicorp/terraform-github-actions@master
         with:
-          tf_actions_version: 0.12.13
+          tf_actions_version: 0.12.24
           tf_actions_subcommand: "apply"
           tf_actions_working_dir: "./terraform"
           tf_actions_comment: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TF_VAR_agent_client_id: ${{ secrets.TF_VAR_agent_client_id }}
-          TF_VAR_agent_client_secret: ${{ secrets.TF_VAR_agent_client_secret }}
-          TF_VAR_subscription_id: ${{ secrets.TF_VAR_subscription_id }}
-          TF_VAR_tenant_id: ${{ secrets.TF_VAR_tenant_id }}
+          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          ARM_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
 ```
 
 This workflow does the following actions:
@@ -110,7 +110,7 @@ There are many other [events that trigger GitHub actions](https://help.github.co
 
 You can now commit and push the `main.yml` file we created.
 
-Going to the `Actions` tab of your  GitHub project, you should see that your project is automatically built and deployed to your Azure Spring Cloud instance:
+Going to the `Actions` tab of your  GitHub project, you should see that your project is automatically built and deployed:
 
 ![GitHub workflow](media/01-github-workflow.png)
 
