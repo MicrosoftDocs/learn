@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.python-oo.4-exercise-model-your-game
+title: Exercise - Model and scaffold your game
+metadata:
+  title: Exercise - Model and scaffold your game
+  description: Describe unit
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-exercise-model-your-game.md)]
