@@ -70,7 +70,7 @@ The list of hardware resources that the host will need for running VMs include:
 - Processor. Ensure the host has enough physical processor cores to support the VMs you plan to run.
 - Memory. Ensure there's enough memory in the Hyper-V host to support the number of VMs you intend to run.
 - Storage. Ensure your host has enough storage for the virtual hard disks used by your VMs. The storage subsystem also requires high throughput to support multiple VMs accessing the storage concurrently.
-- Network. The Hyper-V host must allocate sufficient network capacity to each VMs. In some cases, you might need to allocate a dedicated network adapter in the host.
+- Network. The Hyper-V host must allocate sufficient network capacity to each VM. In some cases, you might need to allocate a dedicated network adapter in the host.
 
 ## Nested virtualization requirements
 
@@ -79,6 +79,6 @@ To enable nested virtualization, you need to meet the following prerequisites:
 - Both the Hyper-V host and the guest VM must be running Windows Server 2016 or Windows Server 2019. This functionality is also available on Azure Stack HCI.
 - The physical host computer must have an Intel processor with Virtual Machine Extensions (VT-x) and Extended Page Tables (EPT) capabilities.
 
-## Install the Hyper-V Server role
-<!--LM: Please check capitalization for Hyper-V server role in the heading and text.-->
+## Install the Hyper-V server role
+
 To install the Hyper-V server role on local or remote hosts, you can use **Windows Admin Center (WAC)**, **Server Manager**, or the **Install-WindowsFeature** Windows PowerShell cmdlet.
