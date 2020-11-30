@@ -3,7 +3,7 @@ uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory
 metadata:
   title: Petabyte-scale ingestion with Azure Data Factory
   description: "Petabyte-scale ingestion with Azure Data Factory or Azure Synapse Pipeline"
-  ms.date: 11/27/2020
+  ms.date: 11/30/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -33,6 +33,7 @@ roles:
 - data-scientist
 products:
 - azure-data-factory
+- azure-synapse-analytics
 units:
 - learn.wwl.petabyte-scale-ingestion-azure-data-factory.introduction
 - learn.wwl.petabyte-scale-ingestion-azure-data-factory.list-ingestion-methods
