@@ -36,6 +36,3 @@ quiz:
     - content: "SharePoint"
       isCorrect: true
       explanation: "Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
-    - content: "Dropbox"
-      isCorrect: false
-      explanation: "Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
