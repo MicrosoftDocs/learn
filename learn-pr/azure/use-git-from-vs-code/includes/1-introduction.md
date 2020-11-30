@@ -10,7 +10,7 @@ By the end of this module, you will have mastered your use of Git inside of Visu
 
 In this module, you will:
 
-- Learn how to clone repositories, and creating branches with Visual Studio Code's Command Palette
+- Perform common GitHub tasks by using the Command Palette in Visual Studio.
 - Monitor the status of your work
 - Commit your files to your repositories from the Source Control view
 
