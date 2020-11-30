@@ -48,17 +48,17 @@ quiz:
       isCorrect: false
       explanation: 'This scenario is valid: operation 2 starts two time steps after operation 1, allowing operation 1 to complete before the machine moves on to operation 2.'
 
-  - content: 'Which of these scenarios is a valid solution? The bit strings shown indicate the x_i,t values for one operation, from t = 0 to t = 3.'
+  - content: 'Which of these scenarios is a valid solution? The bit strings shown indicate the $x_{i,t}$ values for one operation, from $t = 0$ to $t = 3$. For simplicity, we will refer to $x_{i,t}$ as x in the answer explanations.'
     choices:
     - content: '1 0 1 0'
       isCorrect: false
-      explanation: 'In this example, the operation is scheduled to start twice (x_i,t = 1 twice during the simulation).'
+      explanation: 'In this example, the operation is scheduled to start twice (x = 1 twice during the simulation).'
     - content: '0 0 0 0'
       isCorrect: false
-      explanation: 'In this example, the operation is never scheduled to start (x_i,t never equals 1).'
+      explanation: 'In this example, the operation is never scheduled to start (x never equals 1).'
     - content: '1 0 1 1'
       isCorrect: false
-      explanation: 'In this example, the operation is scheduled to start three times (x_i,t = 1 three times during the simulation).'
+      explanation: 'In this example, the operation is scheduled to start three times (x = 1 three times during the simulation).'
     - content: '0 1 0 0'
       isCorrect: true
       explanation: 'Correct! The operation is scheduled to start once and only once during the simulation. This configuration therefore does not violate the operation once constraint (x_i,t = 1 once and only once).'
