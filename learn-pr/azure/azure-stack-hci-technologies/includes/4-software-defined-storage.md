@@ -1,7 +1,7 @@
 Software-defined storage is one of the foundational building blocks of Azure Stack HCI. However, unlike Hyper-V or failover clustering, software-defined storage is not an individual server role or a feature. Instead, it consists of different technologies that frequently complement each other. You can combine these technologies to implement various storage virtualization scenarios such as guest clustering or HCI. These technologies include Storage Spaces, Cluster Shared Volumes (CSV), Server Message Block (SMB), SMB Multichannel, SMB Direct, Scale Out File Server (SOFS), Storage Spaces Direct (S2D), and Storage Replica. To use Azure Stack HCI in your proof-of-concept environment, you'll rely on most of these technologies.
 
 > [!NOTE]
-> This is not a comprehensive list, but is sufficient to gain a basic understanding of the core software-defined storage functionality in Azure Stack HCI.
+> This is not a comprehensive list but is sufficient to gain a basic understanding of the core software-defined storage functionality in Azure Stack HCI.
 
 ## What is software-defined storage?
 
@@ -9,7 +9,7 @@ Software-defined storage uses storage virtualization to separate storage managem
 
 ### Reasons for using software-defined storage
 
-With software-defined storage, implementing virtualized workloads no longer requires configuration of logical unit numbers (LUNs) and Storage Area Networks (SAN) switches according to third-party vendor specifications. Instead, you can manage storage in the same, consistent manner regardless of its underlying hardware. In addition, you've the option of replacing proprietary and expensive technologies with flexible and economical hardware-based solutions. Rather than relying on dedicated SANs for highly available and high-performing storage, you can use local disks by using enhancements in remote file sharing protocols and high-bandwidth, low-latency networking. 
+With software-defined storage, implementing virtualized workloads no longer requires configuration of logical unit numbers (LUNs) and Storage Area Networks (SAN) switches according to third-party vendor specifications. Instead, you can manage storage in the same, consistent manner regardless of its underlying hardware. In addition, you have the option of replacing proprietary and expensive technologies with flexible and economical hardware-based solutions. Rather than relying on dedicated SANs for highly available and high-performing storage, you can use local disks by using enhancements in remote file sharing protocols and high-bandwidth, low-latency networking. 
 
 Storage spaces is the simplest example of software-defined storage in non-clustered scenarios.
 
@@ -33,7 +33,7 @@ The simplest example of software-defined storage in clustered scenarios is Clust
 
 ## Cluster Shared Volumes
 
-CSV is a clustered file system that enables multiple nodes of a failover cluster to simultaneously read from and write to the same set of storage volumes. The CSV volumes map to subdirectories within the C:\ClusterStorage\directory on each cluster node. This means that cluster nodes can access the same content through the same file system path. While each node can independently read from and write to individual files on a given volume, a single cluster node serves a special role of the CSV owner (or, *coordinator*) of that volume. You've the option of assigning an individual volume to a specific owner. However, a failover cluster automatically distributes CSV ownership between cluster nodes.
+CSV is a clustered file system that enables multiple nodes of a failover cluster to simultaneously read from and write to the same set of storage volumes. The CSV volumes map to subdirectories within the C:\ClusterStorage\directory on each cluster node. This means that cluster nodes can access the same content through the same file system path. While each node can independently read from and write to individual files on a given volume, a single cluster node serves a special role of the CSV owner (or, *coordinator*) of that volume. You have the option of assigning an individual volume to a specific owner. However, a failover cluster automatically distributes CSV ownership between cluster nodes.
 
 :::image type="content" source="../media/4-csv-architecture.png" alt-text="The correlation between the storage pool, CSVs, and C:\ClusterStorage\ file system directories. CSVs correspond to individual volumes, which are part of the same storage pool." border="true":::
 
@@ -66,7 +66,7 @@ SMB Multichannel is part of the implementation of the SMB 3.x protocol, which si
 
 - Increased throughput. The file server can simultaneously transmit more data using multiple connections. This is particularly beneficial when using servers with multiple, high-speed network adapters.
 - Automatic configuration. SMB Multichannel automatically discovers multiple available network paths and dynamically adds connections as required.
-- Network fault tolerance. If an existing connection is terminated due to an issue along one of network paths to an SMB 3.x server, SMB 3.x clients have a built-in ability to automatically fail over to another one.
+- Network fault tolerance. If an existing connection is terminated because of an issue along one of the network paths to an SMB 3.x server, SMB 3.x clients have a built-in ability to automatically fail over to another one.
 
 ## SMB Direct
 
@@ -99,9 +99,9 @@ Hyper-V VMs can use shared storage that you can connect to by using Fibre Channe
 You can use shared virtual hard disk in the following scenarios:
 
 - CSV on the Hyper-V host cluster. In this scenario, all virtual machine files, including the shared virtual hard disk files are stored on a CSV that is configured as shared storage for clustered VMs.
-- SOFS on a separate storage cluster. This scenario uses SMB file-based storage as the location of the shared virtual hard disk files. 
+- SOFS on a separate storage cluster. This scenario uses SMB file-based storage as the location of the shared virtual hard disk files.
 
-In both of these scenarios, you can implement storage by using Storage Spaces Direct.
+In both scenarios, you can implement storage by using Storage Spaces Direct.
 
 ## Storage Spaces Direct
 
