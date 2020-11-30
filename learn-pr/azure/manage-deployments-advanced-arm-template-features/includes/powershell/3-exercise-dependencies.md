@@ -105,54 +105,104 @@ Set-AzDefault -ResourceGroupName <rgn>resource group name</rgn>
 > [!NOTE]
 > Normally, when you use PowerShell to deploy resource on Azure, you need to specify a resource group. You are bypassing this requirement by setting the context of your deployment, using **Set-AzDefault**.
 
-## Deploy a VM with dependencies
+## What's in a typical VM deployment
 
-When you deploy a virtual machine, you should be aware that is has quite a few resources that needs to be deployed with it for it to work, it's not just a virtual machine resource.
+When you deploy a VM, keep in mind that there are several resources that need to be deployed along with it in order for the VM to work.
 
-The following resource types needs to be deployed as you deploy a VM:
+Here's a brief summary of the types of resources that typically need to be deployed along with a VM:
 
-- **Microsoft.Storage/storageAccounts**. You will need a storage account.
-
-- **Microsoft.Network/publicIPAddresses**. Your VM will need a public IP.
-
+- **Microsoft.Storage/storageAccounts**. A storage account provides disk space for the OS and files.
+- **Microsoft.Network/publicIPAddresses**. A public IP address enables you to connect to the VM from the internet.
 - **Microsoft.Network/networkSecurityGroups**. A network security group contains rules for handling inbound and outbound traffic to your virtual network.
+- **Microsoft.Network/virtualNetworks**. Your VM needs to be placed in a virtual network. This resource requires the network security group to be deployed before it.
+- **Microsoft.Network/networkInterfaces**. This resource depends on two other resources: the public IP address and the virtual network.
+- **Microsoft.Compute/virtualMachines**. The virtual machine is the primary resource you want to deploy. It's dependent on two different resources: the storage account and the network interfaces.
 
-- **Microsoft.Network/virtualNetworks**. Your VM needs to be placed in a virtual network. This resource has a dependency. It expects the network security group to be deployed before it.
+## Deploy a Linux VM
 
-- **Microsoft.Network/networkInterfaces**. This resource depends on two other resources public IP addresses and virtual networks.
+Here, you download an ARM template from a GitHub repository that we provide for you. The template provisions a Linux VM and all of the resources necessary to run it.
 
-- **Microsoft.Compute/virtualMachines**. This is the primary resource you are looking to deploy. It in turn is dependent on two different resources namely a storage account and network interfaces.
+1. Run the following `curl` command to download the ARM template:
 
-Fortunately there's a template you can grab that contains all the above resources.
-
-1. Run `wget` to grab the Azure template file:
-
-   `wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json`
-
-   and save it to a local file `azuredeploy.json`
-
-1. Run the command `New-AzResourceGroupDeployment`:
-
-    ```powershell
-    $location = Read-Host -Prompt "Enter a location (i.e. centralus)"
-    $vmName = Read-Host -Prompt "Enter a name for your VM"
-    $adminUsername = Read-Host -Prompt "Enter an admin user name";
-    $adminPassword = Read-Host -Prompt "Enter an admin password";
-
-    New-AzResourceGroupDeployment `
-    -ResourceGroupName <rgn>resource group name</rgn> `
-    -TemplateFile "./azuredeploy.json" `
-    -adminUsername $adminUsername `
-    -vmName $vmName `
-    -adminPassword $adminPassword
+    ```bash
+    curl -O 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json'
     ```
 
-### Verify deployment
+1. Run the command `ConvertTo-SecureString` and assign the results to a PowerShell variable `$secure`:
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-1. Select **Resource groups** > **\<rgn>your resource group\</rgn>** > **{what you named the VM}**.
-1. Select **Connect** at the top.
+   ```powershell
+    $secure = "insecurepassword123!"| ConvertTo-SecureString -AsPlainText -Force
+   ```
 
-1. Select **Download RDP File**, and then follow the instructions to sign in to the virtual machine by using the password that you used upon deployment.
+   Now you have an encrypted version of your password that you can pass the deployment script next.
 
-Congratulations, you've managed to deploy a VM containing dependencies.
+1. Run the command `New-AzResourceGroupDeployment` to deploy the template:
+
+    ```powershell
+    New-AzResourceGroupDeployment `
+    -TemplateFile "./azuredeploy.json" `
+    -adminUsername "azureuser" `
+    -vmName "vm1" `
+    -adminPasswordOrKey $secure
+    ```
+
+    The command can take a few minutes to run. While the command runs, you can [examine the Bash script](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json?azure-portal=true) from a separate browser tab if you'd like.
+
+    Note the resource dependencies by searching for the `dependsOn` key. For example, the virtual machine resource depends on the network interface:
+
+    ```json
+    "type": "Microsoft.Compute/virtualMachines",
+    "apiVersion": "2020-06-01",
+    "name": "[parameters('vmName')]",
+    "location": "[parameters('location')]",
+    "dependsOn": [
+      "[resourceId('Microsoft.Network/networkInterfaces/', variables('networkInterfaceName'))]"
+    ],
+    ```
+
+## Verify deployment
+
+Verify that the VM is provisioned and is connectable over SSH. To do so:
+
+1. Run the following command PowerShell query:
+
+   ```powershell
+   invoke-expression (Get-AzResourceGroupDeployment -Name azuredeploy -ResourceGroupName <rgn>your resource group</rgn>).outputs.sshCommand.value
+   ```
+
+   Your output is similar to:
+
+   ```output
+   ssh azureuser@simplelinuxvm-a33zb3sc332ue.westus.cloudapp.azure.com
+   ```
+  
+1. Run the SSH command from the previous step:
+
+   ```bash
+   ssh azureuser@simplelinuxvm-a33zb3sc332ue.westus.cloudapp.azure.com
+   ```
+
+   When prompted, enter *yes* to continue connecting. Then enter the administrator password, *insecurepassword123!*.
+
+    > [!IMPORTANT]
+    > In practice, keep passwords safe. Or use public key authentication, which is typically more secure than using passwords.
+
+1. From your SSH connection to the VM, run `hostname` to print the VM's hostname:
+
+    ```bash
+    hostname
+    ```
+
+    You see the VM's internal hostname, *vm1*:
+
+    ```output
+    vm1
+    ```
+
+1. Run `exit` to leave your SSH session.
+
+    ```bash
+    exit
+    ```
+
+Congratulations, you've successfully deployed a Linux VM by using an ARM template. A VM is a common resource type that includes dependent resources.

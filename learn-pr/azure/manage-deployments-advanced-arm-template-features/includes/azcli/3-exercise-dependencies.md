@@ -49,7 +49,7 @@ Run the following `az configure` command to set the default resource group:
 az configure --defaults group=<rgn>resource group name</rgn>
 ```
 
-## What's in a typical VM deployment?
+## What's in a typical VM deployment
 
 When you deploy a VM, keep in mind that there are several resources that need to be deployed along with it in order for the VM to work.
 

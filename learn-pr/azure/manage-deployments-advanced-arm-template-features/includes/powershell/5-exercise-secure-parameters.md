@@ -1,119 +1,149 @@
-## Exercise overview
-
-Here's an overview of the steps you are about to carry out:
-
-> [!NOTE]
-> If you already have a working Sandbox where you've done steps 1-3, then there's no need to repeat them.
-
-1. **Sign in to Azure**. You will be able to sign in using Visual Studio Code and using the integrated terminal.
-
-1. **Set the active subscription**. This task can be accomplished by invoking a PowerShell cmdlet.
-
-1. **Set default resource group**. Also this task can be carried out by invoking a PowerShell cmdlet. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
-
-1. **Carry out the deployment**. This step involves using the cmdlet **New-AzResourceGroupDeployment** with a URL to a template as an argument.
-
 ## Deploy a Key Vault
 
-You need to both deploy the Key Vault and once created you will need to add a secret.
+Create a Key Vault and add the VM password as a secure secret. To do so:
+
+1. Start a PowerShell session by typing `pwsh` in a terminal.
+
+1. Create a PowerShell variable that holds the Key Vault name:
+
+   ```powershell
+   $KVNAME=tailwind-secrets + (Get-Random -Count 1)
+   ```
+
+   Key Vault names must be unique. The call to `Get-Random` part ensures that the Key Vault name ends in a random series of numbers.
 
 1. Run the command `New-AzKeyVault`:
 
     ```powershell
-    $rg = <rgn>name of resource group</rgn>
-    $vaultName = Read-Host -Prompt "Enter a vault name"
-    $location = Read-Host -Prompt "Enter a location"
-
     New-AzKeyVault `
-      -VaultName $vaultName `
-      -resourceGroupName $rg `
-      -Location $location `
+      -VaultName $KVNAME `
       -EnabledForTemplateDeployment
     ```
 
-    The above command will create a Key Vault. The usage of the flag `-EnabledForTemplateDeployment` ensures it the Key Vault can be read from, from an ARM template.
+    The `-EnabledForTemplateDeployment` argument permits the ARM template to retrieve secrets from the key vault.
 
-1. Run the command `Set-AzKeyVaultSecret`
-
-   ```powershell
-   $secretPlainText = 'insecurepassword123!'
-   $secretName = vmPassword
-
-   $secretSecureString = ConvertTo-SecureString $secretPlainText -AsPlainText -Force
-   $secret = Set-AzKeyVaultSecret -VaultName ExampleVault -Name $vmPassword -SecretValue $secretSecureString
-   ```
-
-   The above command ensures the plain text password is converted to a secure string.
-
-   > [!NOTE]
-   >  You should avoid using plain text in script or the command line, as this can show up in event logs and command history logs. The secure string construct helps address this situation by constructing a type that's encrypted and not possible to print (it would only print its type rather than its value). It's even deleted from memory after it's been used.
-
-   Thereafter the name of the secret and the now encoded secret value  is being added to the Key Vault you've just created.
-
-   Everything should be set up at this point so you can deploy the VM next.  
-
-1. Run the command `Get-AzKeyVaultSecret`:
+1 Run the `ConvertTo-SecureString` command and assign it to the `secretSecureString` PowerShell variable:
 
    ```powershell
-   (Get-AzKeyVaultSecret -vaultName $vaultName  -name $secretName).SecretValueText
+   $secretSecureString = ConvertTo-SecureString 'insecurepassword123!' -AsPlainText -Force
    ```
 
-   Ensure the returned value corresponds to the value of parameter `$secretSecureString`.
-
-## Deploy a VM and set password based on a Key Vault secret
-
-1. Run `wget` to fetch the following ARM template:
-
-   `wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json` 
-
-   and store it locally as a file `vmdeploy.json`.
-
-1. Run the command `Get-AzKeyVault`:
+1. Run the following `Set-AzKeyVaultSecret` command to create a secret in the key vault named *vmPassword* with the value "insecurepassword123!":
 
    ```powershell
-   Get-AzKeyVault -VaultName $vaultName
+   $secret = Set-AzKeyVaultSecret -VaultName $KVNAME -Name vmPassword -SecretValue $secretSecureString
    ```
 
-   Make a note of the value from the field `Resource ID`. You will need this value to modify the file `vmdeploy.json`.
+## Create the parameter file
 
-1. Run `wget` to save save down the following parameter file:
+Here, you create a parameter file that contains the VM's name, the administrator username, and a reference to the VM password in the key vault.
 
-   `wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.parameters.json`
+Recall that a parameter file is an alternative way to pass parameters to your ARM template during deployment.
 
-   and name it `vmdeploy.parameters.json`
+1. Run the following `Get-AzKeyVault` command to print your key vault ID:
 
-1. Locate the parameters section in `vmdeploy.parameters.json` and the `adminPassword` parameter. Replace it's content with the following text:
+    ```powershell
+    Get-AzKeyVault -VaultName $KVNAME | Select-Object Id
+    ```
 
-   ```json
-   "adminPassword": {
-     "reference": {
-        "keyVault": {
-        "id": "/subscriptions/<SubscriptionID>/resourceGroups/mykeyvaultdeploymentrg/providers/Microsoft.KeyVault/vaults/<KeyVaultName>"
+    The output resembles this:
+
+    ```output
+    Id
+    --
+    /subscriptions/7c7df858-93a0-4f38-8990-304c836a4e8d/resourceGroups/<rgn>[resource group name]</rgn>/providers/Microsoft.KeyVault/vaults/tailwind-secrets3020
+    ```
+
+    Note the output for the next step.
+
+1. In Visual Studio Code, create a file named *azuredeploy.parameters.json* in the same directory that contains *azuredeploy.json*.
+1. Add these contents to *azuredeploy.parameters.json*:
+
+    ```json
+    {
+      "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "adminUsername": {
+          "value": "azureuser"
         },
-        "secretName": "vmPassword"
-     }
-   }
-   ```
+        "vmName": {
+          "value": "vm2"
+        },
+        "adminPasswordOrKey": {
+          "reference": {
+             "keyVault": {
+             "id": ""
+             },
+             "secretName": "vmPassword"
+          }
+        }
+      }
+    }
+    ```
 
-   The `id` parameter's value needs to be replaced with the `Resource ID` of the Key Vault you were asked to note down.
+1. Replace the value of `id` (the empty string) with the value you copied in the previous step. Then save the file.
 
-1. Run the command `New-AzResourceGroupDeployment`:
+## Deploy a Linux VM
+
+Here, you deploy the same ARM template that you deployed in the previous exercise. This time, you provide the parameter file that references the VM password in the key vault.
+
+1. Run the following command `New-AzResourceGroupDeployment`:
 
    ```powershell
    New-AzResourceGroupDeployment `
-    -ResourceGroupName $rg `
-    -TemplateFile "./vmdeploy.json" `
-    -TemplateParameterFile "./vmdeploy.parameters.json"
+    -TemplateFile "./azuredeploy.json" `
+    -TemplateParameterFile "./azuredeploy.parameters.json"
+    -dnsLabelPrefix=("vm2-" + (Get-Random -Count 1))
    ```
 
-   The above command will deploy the VM while reading parameter values from the parameter file.
+   In the previous exercise, you provided each key-value pair in the `-TemplateParameterFile` argument. Here, you specify `"./azuredeploy.parameters.json"` to provide your parameters file.
 
-### Verify deployment
+   The `dnsLabelPrefix` is set to "vm2-" followed by a random number. This is required to ensure that the DNS name differs from the DNS name you used in the previous exercise.
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-1. Select **Resource groups** > **\<rgn>your resource group\</rgn>** > **simple-vm**.
-1. Select **Connect** at the top.
+## Verify deployment
 
-1. Select **Download RDP File**, and then follow the instructions to sign in to the virtual machine by using the password that's stored in the Key Vault.
+Verify that the VM is provisioned and is connectable over SSH. To do so:
 
-Congratulations, you've managed to deploy an Azure Key Vault. Additionally you've managed to create a VM while reading from the Azure Key Vault.
+1. Run the following command PowerShell query:
+
+   ```powershell
+   invoke-expression (Get-AzResourceGroupDeployment -Name azuredeploy -ResourceGroupName <rgn>your resource group</rgn>).outputs.sshCommand.value
+   ```
+
+   Your output is similar to:
+
+   ```output
+   ssh azureuser@simplelinuxvm-a33zb3sc332ue.westus.cloudapp.azure.com
+   ```
+  
+1. Run the SSH command from the previous step:
+
+   ```bash
+   ssh azureuser@simplelinuxvm-a33zb3sc332ue.westus.cloudapp.azure.com
+   ```
+
+   When prompted, enter *yes* to continue connecting. Then enter the administrator password, *insecurepassword123!*.
+
+    > [!IMPORTANT]
+    > In practice, keep passwords safe. Or use public key authentication, which is typically more secure than using passwords.
+
+1. From your SSH connection to the VM, run `hostname` to print the VM's hostname:
+
+    ```bash
+    hostname
+    ```
+
+    You see the VM's internal hostname, *vm1*:
+
+    ```output
+    vm2
+    ```
+
+1. Run `exit` to leave your SSH session.
+
+    ```bash
+    exit
+    ```
+
+Congratulations, you've successfully deployed a Linux VM by using an ARM template. A VM is a common resource type that includes dependent resources.
