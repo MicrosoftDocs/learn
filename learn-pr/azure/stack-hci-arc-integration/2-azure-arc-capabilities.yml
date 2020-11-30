@@ -11,7 +11,7 @@ metadata:
 title: Characteristics and capabilities of Azure Arc
 durationInMinutes: 5
 content: |
-  [!include[]includes/2-azure-arc-capabilities.md)]
+  [!include[](includes/2-azure-arc-capabilities.md)]
 quiz:
   title: Check your knowledge
   questions:
