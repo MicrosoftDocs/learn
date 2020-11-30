@@ -27,7 +27,7 @@ quiz:
     - content: "Ensured that the voices of sales employees were heard."
       isCorrect: true
       explanation: "Correct. One of the guiding questions recommended for planning an AI project for sales is: How will you ensure the voices of all your sales employees are heard in developing and implementing AI?"
-    - content: "Showed employees how AI can reduce time to close a sale."
+    - content: "Showed employees that AI can reduce time to close a sale."
       isCorrect: false
       explanation: "Incorrect. This does not improve the culture."
   - content: "Based on the experience of Microsoft sales in implementing AI technology into their operations, what must be done to properly implement AI into an organization’s business operations?"
