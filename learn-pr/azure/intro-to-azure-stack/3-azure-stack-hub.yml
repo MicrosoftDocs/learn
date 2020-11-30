@@ -11,7 +11,7 @@ metadata:
 title: What is Azure Stack Hub?
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-what-is-azure-stack-hub.md)]
+  [!include[](includes/3-azure-stack-hub.md)]
 quiz:
   title: Check your knowledge
   questions:
