@@ -91,7 +91,10 @@ GitHub Free for organizations builds on GitHub Free for user accounts by adding 
 
 ## Paid products
 
-GitHub's Paid products are priced on a per account, per month basis.  Currently, the price is $4 per user per month for Pro and Team, and $21 per user per month for Enterprise.
+GitHub's Paid products are priced on a per account, per month basis.  
+
+> [!NOTE]
+> For current prices, please refer to [GitHub's pricing page](https://github.com/pricing?azure-portal=true).
 
 The paid products build on the free products by adding features and increasing limits.
 

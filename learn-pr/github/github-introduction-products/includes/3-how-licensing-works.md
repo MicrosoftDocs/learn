@@ -22,14 +22,8 @@ Finally, the free minutes reset each month.  You cannot "roll over" unused minut
 
 If your account's usage surpasses these limits and you have set a spending limit above $0, you will pay per-minute usage depending on the operating system used by the GitHub-hosted runner. GitHub rounds the minutes each job uses up to the nearest minute.
 
-| Operating system | Per-minute rate |
-|---|---:|
-| Linux | $0.008 |
-| macOS| $0.08 |
-| Windows | $0.016 |
-
 > [!NOTE]
-> Minute multipliers do not apply to the per-minute rates in this table.
+> For current prices, please refer to [GitHub's pricing page](https://github.com/pricing?azure-portal=true).
 
 ### Licensing GitHub Packages
 
@@ -43,18 +37,15 @@ GitHub calculates your storage usage for each month based on hourly usage during
 12 GB x 21 days x (24 hours per day) = 6,048 GB-Hours
 720 GB-Hours + 6,048 GB-Hours = 6,768 GB-Hours
 6,768 GB-Hours / (744 hours per month) = 9.0967 GB-Months
-At the end of the month, GitHub rounds your storage to the nearest MB. Therefore, your storage usage for March would be 9.097 GB.
 
-If your account's usage surpasses these limits and you have set a spending limit above $0, you will pay $0.25 USD per GB of storage per month.
+At the end of the month, GitHub rounds your storage to the nearest megabyte. Therefore, your storage usage for March would be 9.097 GB.
 
-### Calculating your total bill
+If your account's usage surpasses these limits and you have set a spending limit above $0, you incur a small additional fee per gigabyte of storage used per month.
 
-At the end of the month, GitHub calculates the cost of minutes and storage used over the amount included in your account. For example, if your organization uses GitHub Team and allows unlimited spending, using 15,000 minutes could have a total storage and minute overage cost of $56, depending on the operating systems used to run jobs.
+At the end of the month, GitHub calculates the cost of minutes and storage used over the amount included in your account.
 
-5,000 (3,000 Linux and 2,000 Windows) minutes = $56 ($24 + $32).
-3,000 Linux minutes at $0.008 per minute = $24.
-2,000 Windows minutes at $0.016 per minute = $32.
-At the end of the month, GitHub rounds your data transfer to the nearest GB.
+> [!NOTE]
+> For a specific scenario that demonstrates how your bill is calculated with actual dollar amounts, see the following article in GitHub's Docs, titled ["Calculating minute and storage spending"](https://docs.github.com/free-pro-team@latest/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-actions#calculating-minute-and-storage-spending?azure-portal=true).
 
 ### What are spending limits?
 
@@ -70,24 +61,16 @@ If your account has outstanding unpaid charges:
 
 ## Codespaces Billing
 
-When Codespaces becomes generally available, you will be billed for storage and compute usage.
-
 As of this writing, Codespaces is beta and during this period it is free to use. When Codespaces becomes generally available, you will be billed for storage and compute usage.
 
 Compute costs are incurred only when a codespace is active. When you're using a codespace, the codespace is active. After 30 minutes of inactivity, a codespace becomes suspended automatically.
 
 Compute usage is billed per hour, at a rate that depends on your codespace's instance type. During the beta, Codespaces offers a single, Linux instance type. At general availability, GitHub will support three Linux instance types.
 
-| Instance Type (Linux) | Per-hour rate |
-|---|---|
-| Basic (2 cores, 4-GB RAM, 32 GB SSD) | $0.085 |
-| Standard (4 cores, 8-GB RAM, 32 GB SSD) | $0.169 |
-| Premium (8 cores, 16-GB RAM, 32 GB SSD) | $0.339 |
-	
+- Basic (2 cores, 4-GB RAM, 32 GB SSD)
+- Standard (4 cores, 8-GB RAM, 32 GB SSD)
+- Premium (8 cores, 16-GB RAM, 32 GB SSD)
+
 Compute pricing may vary for additional instance types and operating systems supported in the future.
 
-Each codespace also incurs monthly storage costs until you delete the codespace. Storage costs for all instance types are $0.10 /GB-month.
-
-## GitHub Learning Lab Seats and GitHub On-Premise
-
-As you learned in the previous unit, GitHub Learning Lab is part of the GitHub One product.  As an enterprise customer, you can run GitHub on-prem.  In order to do this, GitHub provides a Reconciliation License.  Once a month, an administrator runs a report detailing the number of seats used and other metrics, and your enterprise is billed for usage.
+Each codespace also incurs monthly storage costs until you delete the codespace. Storage costs for all instance types incur a small additional fee per month per gigabyte of storage used.
