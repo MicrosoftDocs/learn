@@ -66,7 +66,7 @@ This example code creates a server that listens on port 3000 of your computer an
 
 ::: zone pivot="python"
 
-To create a new web application starter using a few lines of code, we'll use Flask, which is a commonly used web application framework. Flask can be installed using the command:
+To create a new web application starter using a few lines of code, you can use Flask, which is a commonly used web application framework. Flask can be installed using the command:
 
 ```bash
 pip install flask
