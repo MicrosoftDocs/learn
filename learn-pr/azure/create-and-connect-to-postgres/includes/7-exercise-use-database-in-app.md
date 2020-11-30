@@ -427,5 +427,3 @@ With the application fully configured to retrieve and display the course data to
 ```
 
 3. After the new web app is deployed, select the link for the app. It should now display a list of users with the data that's stored in the database.
-
-   :::image type="content" source="../media/5-web-app-with-data.png" alt-text="Screenshot of the education web app running, showing the data." loc-scope="other":::
