@@ -7,7 +7,7 @@ Create a Key Vault and add the VM password as a secure secret. To do so:
 1. Create a PowerShell variable that holds the Key Vault name:
 
    ```powershell
-   $KVNAME=tailwind-secrets + (Get-Random -Count 1)
+   $KVNAME="tailwind-secrets" + (Get-Random -Count 1)
    ```
 
    Key Vault names must be unique. The call to `Get-Random` part ensures that the Key Vault name ends in a random series of numbers.

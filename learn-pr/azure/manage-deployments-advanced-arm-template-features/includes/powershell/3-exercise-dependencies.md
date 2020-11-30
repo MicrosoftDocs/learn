@@ -7,7 +7,7 @@ Before installing the required PowerShell module, make sure you have PowerShell 
 - **Install the Az Module**. To use *what-if* in PowerShell, you must have version **4.2 or later of the Az module**.
 
    > [!NOTE]
-   > The Az module is a PowerShell module dedicated to managing cloud resources on Azure. It's needed for the upcoming exercises in this module. 
+   > The Az module is a PowerShell module dedicated to managing cloud resources on Azure. It's needed for the upcoming exercises in this module.
 
 ## Verify installation
 
@@ -131,7 +131,7 @@ Here, you download an ARM template from a GitHub repository that we provide for 
 1. Run the command `ConvertTo-SecureString` and assign the results to a PowerShell variable `$secure`:
 
    ```powershell
-    $secure = "insecurepassword123!"| ConvertTo-SecureString -AsPlainText -Force
+    $secure = "insecurepassword123!" | ConvertTo-SecureString -AsPlainText -Force
    ```
 
    Now you have an encrypted version of your password that you can pass the deployment script next.
