@@ -15,13 +15,13 @@ Azure has an automatic firewall for our server - preventing all external parties
     > [!div class="nextstepaction"]
     > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-   :::image type="content" source="../media/4-locate.png" alt-text="Azure Database for PostgreSQL - Search for server":::
+:::image type="content" source="../media/4-locate.png" alt-text="Azure Database for PostgreSQL - Search for server":::
 
 2. In the server page, select **Connection security**
 
 3. Select **Add 0.0.0.0 - 255.255.255.255**, then select **Continue**.
 
-   :::image type="content" source="../media/5b-firewall.png" alt-text="Azure Database for PostgreSQL - Create Firewall Rule":::
+:::image type="content" source="../media/5b-firewall.png" alt-text="Azure Database for PostgreSQL - Create Firewall Rule":::
 
 4. Select **Save**
 
@@ -34,9 +34,9 @@ To run the code in this article in Azure Cloud Shell:
 1. Start Cloud Shell.
 2. Select the Copy button on the code block to copy the code.
 
-   ```psql
-   psql --host=payment-server-demo.postgres.database.azure.com --port=5432 --username=paymentadmin@payment-server-demo.postgres.database.azure.com --dbname=postgres
-   ```
+```psql
+psql --host=payment-server-demo.postgres.database.azure.com --port=5432 --username=paymentadmin@payment-server-demo.postgres.database.azure.com --dbname=postgres
+```
 
 3. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux, or by selecting Cmd+Shift+V on macOS.
 4. Select Enter to run the code to connect to your Azure Database for PostgreSQL database.
@@ -46,15 +46,15 @@ To run the code in this article in Azure Cloud Shell:
 
 6. Once you're connected to the server, create a blank database at the prompt:
 
-   ```sql
-   CREATE DATABASE paymentapp;
-   ```
+```sql
+CREATE DATABASE paymentapp;
+```
 
 7. At the prompt, execute the following command to **connect directly** to the newly created **paymentapp** database:
 
-   ```sql
-   \c paymentapp
-   ```
+```sql
+\c paymentapp
+```
 
 ## Create and query tables in the payment app database
 

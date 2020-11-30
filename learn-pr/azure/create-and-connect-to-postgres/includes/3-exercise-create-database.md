@@ -22,17 +22,17 @@ The Azure Sandbox gives you a safe, sandboxed environment to use Azure resources
 
 4. On the **Basics** tab, enter the following information:  
 
-    |Parameter  |Value  |
-    |---------|---------|
-    |**Subscription**     |  Leave as **Concierge subscription**.       |
-    |**Resource group**     | learn-xxx       |
-    |         **Server name** |  **payment-server-demo** |
-    |         **Data source** |  Leave as **none**  |
-    |**Location**| Leave the default, or use a region that's close to you. |
-    |**Version**| Leave as **10** |
-    |**Compute + storage**     |  Leave the default of **General Purpose**.       |
-    | **Admin username**| **paymentadmin** |
-    | **Password/Confirm Password**|  Choose a password.|
+|Parameter  |Value  |
+|---------|---------|
+|**Subscription**     |  Leave as **Concierge subscription**.       |
+|**Resource group**     | learn-xxx       |
+|         **Server name** |  **payment-server-demo** |
+|         **Data source** |  Leave as **none**  |
+|**Location**| Leave the default, or use a region that's close to you. |
+|**Version**| Leave as **10** |
+|**Compute + storage**     |  Leave the default of **General Purpose**.       |
+| **Admin username**| **paymentadmin** |
+| **Password/Confirm Password**|  Choose a password.|
 
     1. Note the password down for later use.
     1. Select **Configure server** in the **Compute + storage** options.
