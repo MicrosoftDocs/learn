@@ -11,7 +11,7 @@ metadata:
 title: What is Azure Stack HCI?
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-what-is-azure-stack-hci.md)]
+  [!include[](includes/4-azure-stack-hci.md)]
 quiz:
   title: Check your knowledge
   questions:
