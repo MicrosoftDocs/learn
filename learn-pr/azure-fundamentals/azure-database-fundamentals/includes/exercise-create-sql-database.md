@@ -20,7 +20,7 @@ In this task, you create a SQL database based on the _AdventureWorksLT_ sample d
 
 1. For the **Server**, select **Create new**.
 
-    1. Enter the following information (replace **nnnn** in the name of the storage account with letters and digits, such that the name is globally unique).
+    1. Enter the following information (replace **nnnn** in the name of the server with letters and digits, such that the name is globally unique).
 
         | Setting | Value | 
         | --- | --- |
