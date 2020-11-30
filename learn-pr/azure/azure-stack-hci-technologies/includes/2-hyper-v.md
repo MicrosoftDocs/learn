@@ -32,7 +32,7 @@ Hyper-V supports various scenarios ranging from hosting individual VMs to provid
 - Consolidate your server infrastructure. You can use Hyper-V to consolidate multiple physical servers as fewer, more powerful computers to optimize space and energy usage.
 - Provide a virtual development or test environment. Virtualization provides you the means to duplicate and restore development or test environments without having to purchase or maintain physical hardware or isolated network systems. You can configure virtualized development or test environments quickly and revert them as needed without affecting production systems.
 - Establish a virtual desktop infrastructure (VDI). Combining Hyper-V and Remote Desktop Virtualization provides a centralized desktop management solution that uses virtual desktop infrastructure (VDI). This scenario helps you provide users with agile and personalized virtual desktops or virtual desktop pools with enhanced security.
-- Implement a private cloud infrastructure. Hyper-V accommodates flexible, on-demand services that function much like public cloud services. Azure Stack HCI exemplifies how Hyper-V can integrate with other technologies such as Storage Spaces Direct (S2D) and Software Defined Networking (SDN) to run virtualized workloads on-premises.
+- Implement a private cloud infrastructure. Hyper-V accommodates flexible, on-demand services that function much like public cloud services. Azure Stack HCI exemplifies how Hyper-V can integrate with other technologies such as Storage Spaces Direct and SDN to run virtualized workloads on-premises.
 
 ## General features of Hyper-V
 
