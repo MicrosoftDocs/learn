@@ -21,7 +21,7 @@ Using the Azure Cloud Shell, we can deploy a ASP.NET app,
 3. We're going to load more user data. The data is located in `payment-app/data`. Let's view the contents of the **users.csv** file.
 
    ```bash
-   cat payment-app/data/users.csv
+   cat users.csv
    ```
 
    This file contains the following comma-separated data. It includes a user_id, user_name, user_age for each user that we're going to load into the database.
@@ -58,8 +58,8 @@ Let's connect to our database again, and load the CSV data in there.
 SELECT count(*) from users;
 SET CLIENT_ENCODING TO 'utf8';
 
-\copy users from 'payment-app/data/users.csv' WITH CSV;
-SELECT count(*) from users;
+\copy users from 'users.csv' WITH CSV;
+SELECT * from users;
 
 ```
 
@@ -99,7 +99,7 @@ When the web application has been deployed, the output will show an _App_url_ wi
 
 Now let's add to the application the code to retrieve course data from the database.
 
-8.  In Cloud Shell, go to the **payment-app/Models** folder.
+8. In Cloud Shell, go to the **payment-app/Models** folder.
 
     ```bash
     cd ~/payment-app/Models
@@ -107,15 +107,15 @@ Now let's add to the application the code to retrieve course data from the datab
 
     This folder contains two files, **Users.cs** and **DataAccessController.cs**.
 
-9.  Use the code editor to open the **DataAccessController.cs** file.
+9. Use the code editor to open the **DataAccessController.cs** file.
 
-                ```bash
-                code DataAccessController.cs
-                ```
+    ```bash
+     code DataAccessController.cs
+    ```
 
-                This file contains an empty class that's named `DataAccessController`.
+This file contains an empty class that's named `DataAccessController`.
 
-                ```C#
+```C#
         using Microsoft.Extensions.Options;
         using System;
         using System.Collections.Generic;
@@ -152,9 +152,9 @@ Now let's add to the application the code to retrieve course data from the datab
                     }
                 }
             }
-            ```
+```
 
-        This class will contain the logic to:
+This class will contain the logic to:
 
 - Connect the app to the database
 - Retrieve user data
@@ -173,13 +173,13 @@ The data for each user will be _userID_, _userName_, and _userAge_.
 
     ![The connection string pane in the Azure portal.](../media/5-connection-string-annotated.png)
 
-13. Return to the code editor. Replace the value of the _connectionString_ variable with the value from the clipboard. In the connection string, replace the text `{your_password}` with the password for the database.
+13. Return to the code editor. Replace the value of the **_connectionString_ variable on line 14** with the value from the clipboard. In the connection string, **replace the text `{your_password}` with the password for the database**. Leave the quotation marks around your connection string.
 
-The payment string read:
+The payment string will read:
 
-    ```C#
+```C#
     private string connectionString = "Server=payment-server-demo.postgres.database.azure.com;Database=paymentapp;Port=5432;User Id=paymentadmin@payment-server-demo;Password={your_password};Ssl Mode=Require;";
-    ```
+```
 
 14. After the comment `//TODO: Connect to the database`, replace the commented-out `using` statement with the following code.
 
@@ -197,12 +197,12 @@ The payment string read:
                 using (var command = new NpgsqlCommand("SELECT * FROM users", conn))
     ```
 
-    The `SqlCommand` object contains an SQL statement that retrieves the data for all courses and modules. It joins them by using the information in the **StudyPlan** table.
+    The `NpgsqlCommand` object contains an SQL statement that retrieves the data for all users.
 
 16. Replace the comment `// TODO: Execute the query` with the following code.
 
     ```C#
-                    var reader = command.ExecuteReader();
+    var reader = command.ExecuteReader();
     ```
 
     These statements open the connection to the database and run the SQL statement. You can use the `SqlDataReader` object to fetch the results one row at a time.
@@ -224,15 +224,15 @@ The payment string read:
 
 18. Replace the comment `// TODO: Close the database connection` with the following statement.
 
-    ```C#
+```C#
     conn.Close();
-    ```
+```
 
     This statement closes the connection to the database and releases any resources that were held.
 
 19. The completed class should contain the following code, which includes the connection string for your database.
 
-            ```C#
+```C#
 
         using Microsoft.Extensions.Options;
         using System;
@@ -285,10 +285,11 @@ The payment string read:
         }
 
 }
+```
 
-````
+Later, if your program doesn't properly query the user data, come back to this file and replace the entire contents with the code block above, and save.
 
-    Save the file, and close the **Code** editor.
+Save the file, and close the **Code** editor.
 
 ## Add code to the web app to display the data
 
@@ -296,23 +297,23 @@ The application can now retrieve the course data. Now, update the app to display
 
 20. In Cloud Shell, move to the **payment-app/Pages** folder.
 
-   ```bash
+```bash
    cd ~/payment-app/Pages
-````
+```
 
 This folder contains the .cshtml pages and code files that the web app uses to display information.
 
 21. Use the code editor to open the incomplete file **Index.cshtml**.
 
-   ```bash
-   code Index.cshtml
-   ```
+```bash
+    code Index.cshtml
+```
 
-   This file contains the display logic for the webpage page. Our data is delivered by the `CoursesAndModulesModel` - It will return a list, containing the User information.
+This file contains the display logic for the webpage page. Our data is delivered by the `CoursesAndModulesModel` - It will return a list, containing the user information.
 
-   Currently, the page just displays the table headings. The table body (`<tbody>`) is empty.
+Currently, the page just displays the table headings. The table body (`<tbody>`) is empty.
 
-   ```cshtml
+```cshtml
    <h2>Woodward Payment App Users</h2>
    <div>
        <table class="table">
@@ -334,11 +335,11 @@ This folder contains the .cshtml pages and code files that the web app uses to d
            </tbody>
        </table>
    </div>
-   ```
+```
 
 22. Replace the comment `<!-- TODO: Display the data from the Users collection --\>` with the following foreach loop.
 
-   ```cshtml
+```cshtml
            @foreach (var user in Model.Users)
            {
                <tr>
@@ -353,19 +354,18 @@ This folder contains the .cshtml pages and code files that the web app uses to d
                    </td>
                </tr>
            }
-   ```
+```
 
-   This code iterates through the list of User object, and outputs the data in each field.
+   This code iterates through the list of User objects, and outputs the data in each field.
 
 23. The completed **Index.cshtml** file should contain the following code.
 
-   ```cshtml
+```cshtml
    @page
    @model UsersModel
    @{
     ViewData["Title"] = "Home page";
    }
-   ```
 
 <h2>Woodward Payment App Users</h2>
 <div>
@@ -402,7 +402,7 @@ This folder contains the .cshtml pages and code files that the web app uses to d
         </tbody>
     </table>
 </div>
-   ```
+```
 
 Save the file, and close the code editor.
 
@@ -412,18 +412,18 @@ With the application fully configured to retrieve and display the course data to
 
 1. In Cloud Shell, return to the **payment-app** folder.
 
-   ```bash
+```bash
    cd ~/payment-app
-   ```
+```
 
 2. Run the following commands to build and deploy the updated web app.
 
-   ```bash
+```bash
    az webapp up \
        --resource-group postgres \
        --name $WEBAPPNAME
-   ```
+```
 
-3. After the new web app is deployed, select the link for the app. It should now display a list of courses and modules with the data that's stored in the database.
+3. After the new web app is deployed, select the link for the app. It should now display a list of users with the data that's stored in the database.
 
    :::image type="content" source="../media/5-web-app-with-data.png" alt-text="Screenshot of the education web app running, showing the data." loc-scope="other":::

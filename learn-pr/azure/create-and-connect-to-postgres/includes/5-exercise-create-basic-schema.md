@@ -10,7 +10,10 @@ We need to set up our database and connect to it from an app. In this exercise w
 
 Azure has an automatic firewall for our server - preventing all external parties from connecting to the server. In the portal, we'll create a firewall rule to allow us to connect externally.
 
-1. Click **All Resources** from the left-hand menu and type in the name **payment-server-demo** to search for your newly created server. Click the server name listed in the search result. The **Overview** page for your server opens and provides options for further configuration.
+1. Go to the Azure Portal. Click **All Resources** from the left-hand menu and type in the name **payment-server-demo** to search for your newly created server. Click the server name listed in the search result. The **Overview** page for your server opens and provides options for further configuration.
+
+    > [!div class="nextstepaction"]
+    > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
    :::image type="content" source="../media/4-locate.png" alt-text="Azure Database for PostgreSQL - Search for server":::
 
