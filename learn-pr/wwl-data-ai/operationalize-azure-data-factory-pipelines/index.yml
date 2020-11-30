@@ -3,7 +3,7 @@ uid: learn.wwl.operationalize-your-azure-data-factory-pipelines
 metadata:
   title: Operationalize your Azure Data Factory or Azure Synapse Pipeline
   description: "Operationalize your Azure Data Factory or Azure Synapse Pipeline"
-  ms.date: 11/27/2020
+  ms.date: 11/30/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -33,6 +33,7 @@ roles:
 - data-scientist
 products:
 - azure-data-factory
+- azure-synapse-analytics
 units:
 - learn.wwl.operationalize-your-azure-data-factory-pipelines.introduction
 - learn.wwl.operationalize-your-azure-data-factory-pipelines.understand-language-support-azure-data-factory

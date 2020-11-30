@@ -20,6 +20,7 @@ summary: |
     - Understand the security controls provided by Azure Storage and Azure Synapse Analytics
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/implement-sql-data-warehouse-trophy.svg
+hidden: true
 levels:
 - beginner
 roles:
