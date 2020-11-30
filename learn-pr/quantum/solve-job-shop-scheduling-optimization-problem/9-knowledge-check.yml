@@ -61,4 +61,4 @@ quiz:
       explanation: 'In this example, the operation is scheduled to start three times (x = 1 three times during the simulation).'
     - content: '0 1 0 0'
       isCorrect: true
-      explanation: 'Correct! The operation is scheduled to start once and only once during the simulation. This configuration therefore does not violate the operation once constraint (x_i,t = 1 once and only once).'
+      explanation: 'Correct! The operation is scheduled to start once and only once during the simulation. This configuration therefore does not violate the operation once constraint (x = 1 once and only once).'
