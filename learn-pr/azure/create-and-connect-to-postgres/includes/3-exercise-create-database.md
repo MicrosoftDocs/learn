@@ -16,7 +16,7 @@ The Azure Sandbox gives you a safe, sandboxed environment to use Azure resources
 
 3. Select **Create** in the **Single server** box.
 
-![abc](../media/3b-create-single-server.png)
+![Create single server deployment.](../media/3b-create-single-server.png)
 
 > The portal will display a PostgreSQL server configuration screen.
 
@@ -37,7 +37,7 @@ The Azure Sandbox gives you a safe, sandboxed environment to use Azure resources
     1. Note the password down for later use.
     1. Select **Configure server** in the **Compute + storage** options.
 
-![abc](../media/3c-form.gif)
+![Configuration form.](../media/3c-form.gif)
 
 5. Scroll to the bottom of the page
     1. Select **35 days** in the **Backup Retention Period** section.
@@ -46,7 +46,7 @@ The Azure Sandbox gives you a safe, sandboxed environment to use Azure resources
     1. Select **OK**, in the blue box at the bottom of the page.
     1. Select **Review + create**, in the blue box at the bottom of the page.
 
-![abc](../media/3d-form-2.gif)
+![Configure server options form.](../media/3d-form-2.gif)
 
 6. Select **Create**, in the blue box at the bottom of the page.
 
