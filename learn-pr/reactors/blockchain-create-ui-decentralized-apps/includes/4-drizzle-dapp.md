@@ -1,7 +1,7 @@
 We can use [Truffle Boxes](https://www.trufflesuite.com/boxes?azure-portal=true) as boilerplates or templates that can contain helpful modules, Solidity contracts & libraries, front-end views and more; all the way up to complete
 example dapps.
 
-For this exercise we'll be using the[**Drizzle box**](https://www.trufflesuite.com/boxes/drizzle?azure-portal=true). This box will help us quickly and easily build our first dapp and provide an overview of Drizzle's capabilities.
+For this exercise we'll be using the [**Drizzle box**](https://www.trufflesuite.com/boxes/drizzle?azure-portal=true). This box will help us quickly and easily build our first dapp and provide an overview of Drizzle's capabilities.
 
 The **Drizzle** box comes with several out of the box smart contracts to check out and a
 simplified **truffle-config.js** designed for development and testing.
