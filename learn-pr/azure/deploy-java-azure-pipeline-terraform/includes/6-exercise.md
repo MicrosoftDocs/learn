@@ -6,10 +6,14 @@ You'll configure your pipeline to act as soon as you push code to master (see on
 
 You now need to allow access from your GitHub workflow to your Azure account. Open up a terminal and type the following command, replacing `yourServicePrincipalName` with the name of your service principal.
 
-Create a service principal to deploy to Azure:
+Create a service principal to deploy to Azure.
+
+> [!IMPORTANT]
+> Make sure you assign the name of your resource group to the variable `AZ_RESOURCE_GROUP` or substitute the value for it in the commands below.
 
 ```bash
-az ad sp create-for-rbac --name "yourServicePrincipalName" --role contributor --scopes /subscriptions/your-subscription-id --sdk-auth
+RESOURCE_ID=$(az group show --name "$AZ_RESOURCE_GROUP" --query id -o tsv)
+az ad sp create-for-rbac --name "yourServicePrincipalName" --role contributor --scopes "$RESOURCE_ID" --sdk-auth
 ```
 
 This command will return JSON - copy it and keep it safe as we'll use it in the next step:
@@ -27,6 +31,7 @@ This command will return JSON - copy it and keep it safe as we'll use it in the 
 You'll then need to go to Certificates & secrets section of your app registration and create a new client secret. Take note of this value also.
 
 ## GitHub Secrets
+
 Once you have the required ID and Secrets, the next step is to add them the secret store in your GitHub project.
 
 Next you’ll create secrets to avoid exposing your service principal.
