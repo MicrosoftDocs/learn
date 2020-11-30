@@ -1,4 +1,4 @@
-In this unit, we look at Terraform.
+In this unit, we look at Terraform setup and scripting.
 
 ## Hashicorp Configuration Language (HCL)
 
@@ -101,8 +101,12 @@ A Terraform configuration file starts off with the specification of the provider
 
 ![Terraform Worflow.](../media/3-workflow.png)
 
-- Init: Initialize a working directory with Terraform configuration files
+When running Terraform in automation, the focus is usually on the core plan/apply cycle.
+
+- Init: Initialize a working directory with Terraform configuration files.
+  - The terraform init command looks through all of the *.tf files in the current working directory and automatically downloads any of the providers required for them. In this example, it will download Azure provider as we are going to deploy Azure resource.
 - Validate: Validates configuration files in a directory without checking remotely
-- Plan: It creates an execution plan (also known as – WhatIf)
-- Apply: Deploy the changes required to reach the wanted state
+- Plan: Produce a plan for changing resources to match the current configuration.
+  - The terraform plan command is used to create an execution plan. Terraform determines what actions are necessary to achieve the desired state specified in the configuration files.
+- Apply: Apply the changes described by the plan.
 - Destroy: Remove the TF manage infrastructure

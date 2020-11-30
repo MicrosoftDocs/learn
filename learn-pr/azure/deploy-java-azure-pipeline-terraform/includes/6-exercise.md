@@ -4,12 +4,14 @@ You'll configure your pipeline to act as soon as you push code to master (see on
 
 ## Set Up up your workflow
 
-You now need to allow access from your GitHub workflow to your Azure account. Open up a terminal and type the following command, replacing `yourServicePrincipalName` with the name of your service principal.
+You now need to allow access from your GitHub workflow to your Azure account.
 
+It's recommended to use a Service Principal when running Terraform non-interactively (such as when running Terraform in a CI server).
 Create a service principal to deploy to Azure.
 
 > [!IMPORTANT]
 > Make sure you assign the name of your resource group to the variable `AZ_RESOURCE_GROUP` or substitute the value for it in the commands below.
+> Replace `yourServicePrincipalName` with a name of your service principal you choose.
 
 ```bash
 RESOURCE_ID=$(az group show --name "$AZ_RESOURCE_GROUP" --query id -o tsv)
@@ -34,11 +36,10 @@ You'll then need to go to Certificates & secrets section of your app registratio
 
 Once you have the required ID and Secrets, the next step is to add them the secret store in your GitHub project.
 
-Next you’ll create secrets to avoid exposing your service principal.
-In GitHub, we can specify them once we go to Settings -> Secrets.
+GitHub repositories have a feature known as Secrets that allow you to store sensitive information related to a project. For this exercise, store three secrets – `AZURE_CLIENT_ID`, `AZURE_CLIENT_SECRET`, `AZURE_SUBSCRIPTION_ID`, and `AZURE_TENANT_ID`. You'll create these secrets because they'll be used by Terraform to authenticate to Azure.
 
-We'll need to create the secrets, `AZURE_CLIENT_ID`, `AZURE_CLIENT_SECRET`, `AZURE_SUBSCRIPTION_ID`, and `AZURE_TENANT_ID`.
-Add the values to each variable from the ones you're copied when creating your service principal.
+To create the secrets, navigate to the GitHub repository, select the `Settings` menu and then on `Secrets`. Create a GitHub secret for each of four secrets using the values returned the Azure service principal.
+
 The result will be something like this:
 
 ![Github Secrets.](../media/6-secrets.png)
