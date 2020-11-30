@@ -10,7 +10,7 @@ We need to set up our database and connect to it from an app. In this exercise w
 
 Azure has an automatic firewall for our server - preventing all external parties from connecting to the server. In the portal, we'll create a firewall rule to allow us to connect externally.
 
-1. Go to the Azure Portal. Click **All Resources** from the left-hand menu and type in the name **payment-server-demo** to search for your newly created server. Click the server name listed in the search result. The **Overview** page for your server opens and provides options for further configuration.
+1. Go to the Azure portal. Select **All Resources** from the left-hand menu and type in the name **payment-server-demo** to search for your newly created server. Select the server name listed in the search result. The **Overview** page for your server opens and provides options for further configuration.
 
     > [!div class="nextstepaction"]
     > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
@@ -23,7 +23,7 @@ Azure has an automatic firewall for our server - preventing all external parties
 
    :::image type="content" source="../media/5b-firewall.png" alt-text="Azure Database for PostgreSQL - Create Firewall Rule":::
 
-4. Click **Save**
+4. Select **Save**
 
 ## Use psql to connect in Azure Cloud Shell
 
@@ -38,13 +38,13 @@ To run the code in this article in Azure Cloud Shell:
    psql --host=payment-server-demo.postgres.database.azure.com --port=5432 --username=paymentadmin@payment-server-demo.postgres.database.azure.com --dbname=postgres
    ```
 
-3. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux or by selecting Cmd+Shift+V on macOS.
+3. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux, or by selecting Cmd+Shift+V on macOS.
 4. Select Enter to run the code to connect to your Azure Database for PostgreSQL database.
 5. Type in your password and select enter.
 
 ## Create the paymentapp database
 
-6. Once you are connected to the server, create a blank database at the prompt:
+6. Once you're connected to the server, create a blank database at the prompt:
 
    ```sql
    CREATE DATABASE paymentapp;
