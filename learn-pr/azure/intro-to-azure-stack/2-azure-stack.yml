@@ -11,7 +11,7 @@ metadata:
 title: What is Azure Stack?
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-what-is-azure-stack.md)]
+  [!include[](includes/2-azure-stack.md)]
 quiz:
   title: Check your knowledge
   questions:
