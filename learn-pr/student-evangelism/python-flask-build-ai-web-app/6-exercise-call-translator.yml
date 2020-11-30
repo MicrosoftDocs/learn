@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.python-flask-build-ai-web-app.6-exercise-deploy-azure
-title: Exercise - Deploy a Flask website to Azure
+title: Exercise - Call Translator service
 metadata:
-  title: Exercise - Deploy a Flask website to Azure
-  description: Deploy a Flask website to Azure.
+  title: Exercise - Call Translator service
+  description: Write code to call your Translator service.
   ms.date: 10/23/2020
   author: GeekTrainer
   ms.author: shanama
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-python
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-exercise-deploy-azure.md)]
+  [!include[](includes/6-exercise-call-translator.md)]
 quiz:
     title: Check your knowledge
     questions:

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.python-flask-build-ai-web-app.3-exercise-upload-photos
-title: Exercise - Build a page for uploading photos
+title: Exercise - Create an app
 metadata:
-  title: Exercise - Build a page for uploading photos
-  description: Build a page that allows users to upload photos.
+  title: Exercise - Create an app
+  description: Create a Flask application with Python.
   ms.date: 10/23/2020
   author: GeekTrainer
   ms.author: shanama
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-python
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-exercise-upload-photos.md)]
+  [!include[](includes/3-exercise-create-app.md)]
 quiz:
   title: Check your knowledge
   questions:
