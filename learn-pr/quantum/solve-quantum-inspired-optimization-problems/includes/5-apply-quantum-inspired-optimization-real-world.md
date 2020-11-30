@@ -1,6 +1,6 @@
-Now that you understand the basics of QIO, let's come back to our mineral shipment problem. Interplanet Express has to optimize how it distributes the mineral chunks between its two space ships. In other words, each chunk has a weight, *w*, associated to it, and we would like to partition these weights into two sets: *W<sub>a</sub>* and *W<sub>b</sub>*.
+Now that you understand the basics of QIO, let's come back to our mineral shipment problem. Interplanet Express has to optimize how it distributes the mineral chunks between its two space ships. In other words, each chunk has a weight, $w$, associated to it, and we would like to partition these weights into two sets: $W_a$ and $W_b$.
 
-Those two sets correspond to whether a mineral chunk is loaded onto ship *a* or ship *b*, and we define ${\Delta}$ as the weight difference between the two ships.
+Those two sets correspond to whether a mineral chunk is loaded onto ship *a* or ship *b*, and we define $\Delta$ as the weight difference between the two ships.
 
 This short animation shows one possible way an optimizer might distribute the mineral. The running time of the optimizer is measured in steps. At each step, we show the best solution found so far.
 
@@ -13,7 +13,7 @@ In this next part, we'll use quantum-inspired optimization to solve the problem.
 
 ## Express the problem
 
-Let's start by coming up with an equation for the weight of a given ship, which is the sum of all the mineral chunks on the ship. This sum is expressed in the following equation, where *w<sub>i</sub>* is the weight of chunk *i*:
+Let's start by coming up with an equation for the weight of a given ship, which is the sum of all the mineral chunks on the ship. This sum is expressed in the following equation, where $w_i$ is the weight of chunk *i*:
 
 ![An equation that shows the sum of mineral weights](../media/example-1.png)
 
@@ -27,11 +27,11 @@ The letter *H* is used to represent a cost function. This notation originates fr
 
 ## Refine the problem
 
-Next, we introduce a variable, *x<sub>i</sub>*, to represent whether an individual mineral chunk *i* is assigned to ship *a* or ship *b*.
+Next, we introduce a variable, $x_i$, to represent whether an individual mineral chunk *i* is assigned to ship *a* or ship *b*.
 
-Because we can assign the chunk *i* to either ship, the variable *x<sub>i</sub>* can take on two different values, which makes it a binary variable. For convenience, we say the two values it can take on are *1* and *-1*. The value *1* represents that the mineral chunk is placed on ship *a*, and *-1* represents that the chunk is placed on ship *b*. Because of our decision to make *x<sub>i</sub>* be either *1* or *-1*, our optimization problem is called an *Ising problem*.
+Because we can assign the chunk *i* to either ship, the variable $x_i$ can take on two different values, which makes it a binary variable. For convenience, we say the two values it can take on are *1* and *-1*. The value *1* represents that the mineral chunk is placed on ship *a*, and *-1* represents that the chunk is placed on ship *b*. Because of our decision to make $x_i$ be either *1* or *-1*, our optimization problem is called an *Ising problem*.
 
-By introducing this variable *x<sub>i</sub>*, we can simplify the equation as follows:
+By introducing this variable $x_i$, we can simplify the equation as follows:
 
 ![An equation that introduces a binary variable to simplify the calculation of the cost function](../media/example-3.png)
 
@@ -39,7 +39,7 @@ By introducing this variable *x<sub>i</sub>*, we can simplify the equation as fo
 
 There's one last change we need to make before we can solve our problem.
 
-If we look at our cost function *H*, there's a flaw: the solution with the least cost is to assign the entirety of the extracted mineral to ship *b* by setting all of the *x<sub>i</sub>* variables equal to *-1*. But that's not correct! To fix this, we square the right-hand side of the equation to ensure that it cannot be negative.
+If we look at our cost function *H*, there's a flaw: the solution with the least cost is to assign the entirety of the extracted mineral to ship *b* by setting all of the $x_i$ variables equal to *-1*. But that's not correct! To fix this, we square the right-hand side of the equation to ensure that it cannot be negative.
 
 ![An equation that squares the previous computation to ensure that the cost function is not negative](../media/example-4.png)
 
