@@ -76,7 +76,7 @@ As of this writing, Codespaces is beta and during this period it is free to use.
 
 Compute costs are incurred only when a codespace is active. When you're using a codespace, the codespace is active. After 30 minutes of inactivity, a codespace becomes suspended automatically.
 
-Compute usage is billed per hour, at a rate that depends on your codespace's instance type. During the beta, Codespaces offers a single, Linux instance type. At general availability, we'll support three Linux instance types.
+Compute usage is billed per hour, at a rate that depends on your codespace's instance type. During the beta, Codespaces offers a single, Linux instance type. At general availability, GitHub will support three Linux instance types.
 
 | Instance Type (Linux) | Per-hour rate |
 |---|---|

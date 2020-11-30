@@ -57,7 +57,7 @@ GitHub's [pricing page](https://github.com/pricing?azure-portal=true) does a gre
 A few key features change based on the product, for example:
 
 - *GitHub Actions* - Automate CI/CD workflows to build, test, and deploy your code. Trigger actions from a large community of software integrations.  You get execution minutes for hosted runners to perform the automation.
-- *GitHub Packages storage* - Host and publish your packages, distributing them privately or publically via standard package managers. Packages are free for public repositories, so the limits on GitHub Packages storage describe the maximum private package capacity for a given product.
+- *GitHub Packages storage* - Host and publish your packages, distributing them privately or publicly via standard package managers. Packages are free for public repositories, so the limits on GitHub Packages storage describe the maximum private package capacity for a given product.
 
 At the free tier, the amount of GitHub Actions minutes and GitHub Packages storage should be sufficient enough for most users, and provide enough room to test the features out for more active users and organizations.
 
