@@ -82,29 +82,28 @@ Here, you deploy the template as you did previously. The deployment step provisi
 
 Although the output shows that two storage accounts were created, here you run the `az deployment group show` command to focus on the output resources.
 
-1. Run the following `invoke-expression` command to display details about the deployment:
-
-    TODO: this doesn't work
-
+1. Run the following `Get-AzResource` command to ensure the resources were deployed:
 
     ```powershell
-    invoke-expression (Get-AzResourceGroupDeployment -Name copy -ResourceGroupName <rgn>your resource group</rgn>).outputs.id
+    Get-AzResource -Name tailwindsa* -ResourceGroupName <rgn>resource group name</rgn> | Select-Object ResourceId
     ```
 
-    The `invoke-expression` argument specifies to show just the identifiers from the output resources.
+    The `tailwindsa*` argument specifies to show just the identifiers matching the name prefix you gave the resources.
 
     Your output resembles this:
 
     ```output
-    /subscriptions/4b328dc1-56b1-4031-89b0-c0898204f8a5/resourceGroups/<rgn>resource group name</rgn>/providers/Microsoft.Storage/storageAccounts/tailwindsa9820
-    /subscriptions/4b328dc1-56b1-4031-89b0-c0898204f8a5/resourceGroups/<rgn>resource group name</rgn>/providers/Microsoft.Storage/storageAccounts/tailwindsa9821
+    Name                 ResourceId
+    ----                 ----------
+    tailwindsa1852777810 /subscriptions/11112222-3333-4444-5555-1111222233334444/resourceGroups/<rgn>resoure group</rgn>/providers/Microsoft.Storage/storageAccount…
+    tailwindsa1852777811 /subscriptions/11112222-3333-4444-5555-1111222233334444/resourceGroups/<rgn>resoure group</rgn>/providers/Microsoft.Storage/storageAccount…
     ```
 
     In this example:
 
-    * **tailwindsa982** is the base name that was generated for the storage account (`tailwindsa$RANDOM`).
-    * **tailwindsa9820** (the base name plus "0") is the first storage account.
-    * **tailwindsa9821** (the base name plus "1") is the second storage account.
+    * **tailwindsa185277781** is the base name that was generated for the storage account ("tailwindsa" + Get-Random -Count 1).
+    * **tailwindsa1852777810** (the base name plus "0") is the first storage account.
+    * **tailwindsa1852777811** (the base name plus "1") is the second storage account.
 
 Great work! As your needs change, such as the performance tier you need, you can modify your resource definitions from a single location.
 
