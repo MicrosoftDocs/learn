@@ -1,7 +1,7 @@
 Azure Stack HCI also relies heavily on SDN to implement its features. Similar to software-defined storage, this is not an individual server role or a feature. Instead, it is a collection of different technologies that enable a wide range of network virtualization scenarios. These technologies include Hyper-V Network Virtualization, Hyper-V virtual switch, Switch-Embedded Teaming (SET), and Network Controller. While Network Controller is optional in Azure Stack HCI, you might consider testing it in your proof-of-concept environment.
 
 > [!NOTE]
-> This is not a comprehensive list but is sufficient to gain a basic understanding of the core software-defined networking functionality in Azure Stack HCI.
+> This is not a comprehensive list but is sufficient to gain a basic understanding of the core SDN functionality in Azure Stack HCI.
 
 # What is SDN?
 
@@ -25,4 +25,4 @@ Microsoft implementation of SDN includes the following components:
 - Network Controller. Network Controller is a Windows Server and Azure Stack HCI role that serves as the centralized and programmable point of automation for the virtual and physical network infrastructure in Windows Server-based SDN. Network Controller manages deployment and configuration of network services. This includes support for provisioning of virtual appliances that deliver the same functionality as hardware-based network devices. These virtual appliances include Software Load Balancer and Network Address Translation (NAT), Datacenter Firewall, and Remote Access Service (RAS) Gateway for SDN. Network Controller manages virtual network policies and relies on host agents running on managed Hyper-V hosts to implement policy enforcements in Hyper-V virtual switch.
 
 > [!NOTE]
-> An Azure Stack HCI cluster provides you the option to virtualize its network resources by implementing Software-Defined Networking (SDN). Because such SDN implementation is optional, you have the choice of integrating Azure Stack HCI into an existing virtual local area network (VLAN)-based infrastructure or isolating its workloads by making use of SDN-based network virtualization.
+> An Azure Stack HCI cluster provides you the option to virtualize its network resources by implementing SDN. Because such SDN implementation is optional, you have the choice of integrating Azure Stack HCI into an existing virtual local area network (VLAN)-based infrastructure or isolating its workloads by making use of SDN-based network virtualization.
