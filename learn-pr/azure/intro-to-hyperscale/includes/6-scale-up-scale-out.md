@@ -35,3 +35,18 @@ To take advantage of newly added nodes, you must rebalance shards - Where some s
 ```sql
 SELECT rebalance_table_shards('distributed_table_name');
 ```
+
+## Partition by time
+
+When data is sharded properly, it’s distributed effectively. Over time, these shards will hold increasing amounts of data, which can decrease performance. You can partition data by time in order to increase performance. Partitioning tables breaks big tables of time-ordered data into multiple inherited tables, with each containing different time ranges.
+
+Time partitioning makes most sense when you:
+
+* Most frequently query a very small subset of your most recent data
+* You actively delete/drop older data
+
+For example, with our payment app, we can partition the transactional data by time. A common query is when a customer wants to see their transactions for a particular month. In this case, we can dramatically increase the performance if we have partitioned the data by time - allowing us to query transactional data for a single month, rather than querying the customers data for every month.
+
+It’s very important to not shard by time, as data will be distributed seemingly at random. However, partitioning by time is a best-practice, and very recommended.
+
+PostgreSQL can natively partition by time. It’s recommended to use the postgres partman extension, pg_partman. The extension is highly effective and has great user experience.
