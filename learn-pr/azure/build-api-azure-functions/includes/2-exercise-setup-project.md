@@ -10,7 +10,7 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
    git clone https://github.com/MicrosoftDocs/mslearn-build-api-azure-functions && cd mslearn-build-api-azure-functions/DB_SETUP && ./CREATE_DATABASE.sh
    ```
 
-   This will create a new Azure Cosmos DB account, database, and collection populated with product data. This process can take up to 10 minutes. Feel free to continue with the Learn Module. The databse should be ready by the time we need it for this module.
+   This will create a new database with product data. This process can take up to 10 minutes. Feel free to continue on with the Learn Module. The process will continue to run even if you leave this page.
 
 ## Clone the project in Visual Studio Code
 
@@ -60,4 +60,4 @@ Two projects will appear in Visual Studio Code: "frontend" and "api". The "front
 
    :::image type="content" source="../media/products-manager-start.png" alt-text="Screenshot of the application running in a browser. No data is displayed and an error message explaining that the get operation failed." loc-scope="other"::: <!-- no-loc -->
 
-Excellent! You've successfully configured your environment to be a productive developer at Tailwind Traders. You've got Visual Studio Code connected to Azure and the front-end project is running locally on your machine. That means that it's time to create the Azure Functions project that will serve as the API for the Products Manager appl.
+Excellent! You've successfully configured your environment to be a productive developer at Tailwind Traders. That means that it's time to create the Azure Functions project that will serve as the API for the Products Manager application.
