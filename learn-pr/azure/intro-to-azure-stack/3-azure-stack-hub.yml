@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-azure-stack.3-what-is-azure-stack-hub
+uid: learn.azure.intro-to-azure-stack.3-azure-stack-hub
 metadata:
   title: What is Azure Stack Hub?
   description: Describe the basic architecture of Azure Stack Hub, core capabilities of Azure Stack Hub, and the primary use cases of Azure Stack Hub.
