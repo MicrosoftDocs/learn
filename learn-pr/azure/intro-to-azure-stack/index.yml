@@ -34,11 +34,11 @@ products:
  - azure-stack-edge
 units:
 - learn.azure.intro-to-azure-stack.1-introduction
-- learn.azure.intro-to-azure-stack.2-what-is-azure-stack
-- learn.azure.intro-to-azure-stack.3-what-is-azure-stack-hub
-- learn.azure.intro-to-azure-stack.4-what-is-azure-stack-hci
-- learn.azure.intro-to-azure-stack.5-what-is-azure-stack-edge
-- learn.azure.intro-to-azure-stack.6-compare-azure-stack-hub-hci-edge
+- learn.azure.intro-to-azure-stack.2-azure-stack
+- learn.azure.intro-to-azure-stack.3-azure-stack-hub
+- learn.azure.intro-to-azure-stack.4-azure-stack-hci
+- learn.azure.intro-to-azure-stack.5-azure-stack-edge
+- learn.azure.intro-to-azure-stack.6-azure-stack-portfolio
 - learn.azure.intro-to-azure-stack.7-summary
 badge:
   uid: learn.azure.intro-to-azure-stack.badge
