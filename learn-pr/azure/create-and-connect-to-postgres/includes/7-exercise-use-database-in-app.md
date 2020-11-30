@@ -148,7 +148,7 @@ This file contains an empty class that's named `DataAccessController`.
 
                             // TODO: Close the database connection
                         }
-                        return courseList;
+                        return userList;
                     }
                 }
             }
@@ -173,7 +173,7 @@ The data for each user will be _userID_, _userName_, and _userAge_.
 
     ![The connection string pane in the Azure portal.](../media/5-connection-string-annotated.png)
 
-13. Return to the code editor. Replace the value of the **_connectionString_ variable on line 14** with the value from the clipboard. In the connection string, **replace the text `{your_password}` with the password for the database**. Leave the quotation marks around your connection string.
+13. Return to the code editor. Replace the value of the **_connectionString_ variable on line 14** with the value from the clipboard. In the connection string, **replace the text `{your_password}` with the password for the database** and **replace the text {your_database} with `paymentapp`**. Leave the quotation marks around your connection string.
 
 The payment string will read:
 
@@ -195,6 +195,7 @@ The payment string will read:
                 Console.Out.WriteLine("Opening connection");
                 conn.Open();
                 using (var command = new NpgsqlCommand("SELECT * FROM users", conn))
+                {
     ```
 
     The `NpgsqlCommand` object contains an SQL statement that retrieves the data for all users.
@@ -218,6 +219,7 @@ The payment string will read:
                         Users user = new Users(userID, userName, moduleSequence);
                         userList.Add(user);
                     }
+                }
     ```
 
     This block iterates through the rows that are returned in the `SqlDataReader` object. The code extracts the data in the fields in each row and uses them to populate a new `Users` object. This object is then added to a list.
