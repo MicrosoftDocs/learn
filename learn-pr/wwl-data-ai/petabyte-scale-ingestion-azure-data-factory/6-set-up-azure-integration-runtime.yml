@@ -2,9 +2,9 @@
 uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory.set-up-azure-integration-runtime
 title: Set up the Azure integration runtime
 metadata:
-  title: Setup the Azure integration runtime
-  description: "Setup the Azure integration runtime"
-  ms.date: 09/27/2020
+  title: Set up the Azure integration runtime
+  description: "Set up the Azure integration runtime"
+  ms.date: 11/30/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial

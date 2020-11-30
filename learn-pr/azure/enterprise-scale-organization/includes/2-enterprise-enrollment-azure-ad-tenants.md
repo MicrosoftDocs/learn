@@ -20,19 +20,19 @@ EA enrollment roles link users with their functional role. The users can be used
 
 **Enterprise administrator**
 
-This role has the highest level of access and can manage account owners, enterprise administrators, and department administrators. The account can also view usage across departments and accounts as well as billed and unbilled charges. This role can also manage notification contacts.
+This role has the highest level of access and can manage account owners, enterprise admins, and department admins. The account can also view usage across departments and accounts as well as billed and unbilled charges. This role can also manage notification contacts.
 
 **Department administrator**
 
-This role allows you to manage your own departments, create new account owners under a department, view usage details for departments that are managed by the department administrator, and view cost. Deployment administrators can be granted read-only access. You might have multiple department administrators for each enterprise enrollment.
+This role allows you to manage your own departments, create new account owners under a department, view usage details for departments that are managed by the department admin, and view cost. Department admins can be granted read-only access. You might have multiple department admins for each enterprise enrollment.
 
 **Account owner**
 
-Account owners can create and manage subscriptions and view usage for subscriptions. Account Owner is the only EA portal role with direct access to all resources in a subscription. This user will be assigned as service administrator on subscription scope.
+Account owners can create and manage subscriptions and view usage for subscriptions. Account Owner is the only EA portal role with direct access to all resources in a subscription. This user will be assigned as service admin on subscription scope.
 
 **Service administrator**
 
-The service administrator role has permissions to manage services in the Azure portal and assign users to the co-administrator role.
+The service admin role has permissions to manage services in the Azure portal and assign users to the co-admin role.
 
 **Notification contact**
 
@@ -60,7 +60,7 @@ Review these design recommendations and considerations for designing your enterp
 
 - The enrollment provides a hierarchical organizational structure to govern the management of subscriptions.
 - Multiple environments can be separated at an EA-account level to support holistic isolation.
-- There can be multiple administrators appointed to a single enrollment.
+- There can be multiple admins appointed to a single enrollment.
 - Each subscription must have an associated account owner.
 - Each account owner will be made a subscription owner for any subscriptions provisioned under that account.
 - A subscription can belong to only one account at any given time.

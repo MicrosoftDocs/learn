@@ -3,12 +3,12 @@ uid: learn.use-docker-container-dev-env-vs-code.4-forward-ports
 title: Forward ports for local development
 metadata:
   title: Forward ports for local development
-  description: Take a closer look at what port forwarding means in remote development and when using the Remote - Containers extension.
+  description: Take a closer look at what port forwarding means in remote development and in using the Remote - Containers extension.
   ms.date: 11/13/2020
   author: bamurtaugh
   ms.author: brmurtau
   ms.topic: interactive-tutorial
   ms.prod: learning
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/4-forward-ports.md)]

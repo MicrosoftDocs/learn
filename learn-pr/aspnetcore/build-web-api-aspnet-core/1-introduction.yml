@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.build-web-api-net-core.1-introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 11/12/2020
+  author: scottaddie
+  ms.author: scaddie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: Introduction
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
