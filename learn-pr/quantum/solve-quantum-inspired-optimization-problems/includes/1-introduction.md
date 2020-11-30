@@ -11,7 +11,7 @@ In this module you'll:
 - Learn about the origins of quantum-inspired algorithms.
 - See which kinds of problems are best suited to these techniques.
 - Understand how algorithms inspired by physical processes are used to solve difficult problems.
-- Apply quantum-inspired optimization to a combinatorial optimization problem.
+- Solve a combinatorial optimization problem using the Azure Quantum optimization service.
 
 ## Prerequisites
 

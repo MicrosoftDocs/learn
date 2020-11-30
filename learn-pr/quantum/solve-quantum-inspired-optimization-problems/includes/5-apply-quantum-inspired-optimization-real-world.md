@@ -48,9 +48,11 @@ This final model gives us a cost function with the required properties.
 - If all the mineral is on one ship, the function is at its highest value. This is the least optimal solution.
 - If the freight ships are perfectly balanced, the value of the summation inside the square is *0*. This means the function is at its lowest, or optimal, value.
 
-## Solving the Problem in Python
+## Solving the Problem with Azure Quantum
 
-Now that you've learned how our combinatorial optimization problem can be cast in Ising form, we are ready to invoke an Azure Quantum solver to compute solutions for us.
+Now that you've learned how our combinatorial optimization problem can be cast in Ising form, we are ready to invoke a QIO solver to compute solutions for us. We will use Python to connect to the Azure Quantum services. As you make your way through the rest of this section, copy the code sequences into a Jupyter notebook to execute them. Feel free to play with the problem parameters and observe how the results change.
+
+### Setup
 
 First, we must instantiate a `Workspace` object which allows you to connect to the workspace you've previously deployed in Azure. Refer back to the [How to create an Azure Quantum workspace](//TODO link) module if you don't have a workspace set up yet. Be sure to fill in the settings below which can be retrieved by running `az quantum workspace show`.
 
@@ -66,6 +68,8 @@ workspace = Workspace(
 
 workspace.login()
 ```
+
+### Problem instantiation
 
 Next, we'll define a function that takes an array of mineral weights and returns a `Problem` object that represents the cost function.
 
@@ -96,7 +100,7 @@ def createProblemForMineralWeights(mineralWeights: List[int]) -> Problem:
     return Problem(name="Ship Sample Problem", problem_type=ProblemType.ising, terms=terms)
 ```
 
-Next, we'll define the list of mineral chunks and their weights and instantiate a problem:
+Let us instantiate a problem by defining a list of mineral chunks via their weights:
 
 ```python
 # This array contains the weights of all the mineral chunks
@@ -106,9 +110,12 @@ mineralWeights = [1, 5, 9, 21, 35, 5, 3, 5, 10, 11]
 problem = createProblemForMineralWeights(mineralWeights)
 ```
 
-Now, submit it to Azure using the ParallelTempering solver:
+### Submit to Azure Quantum
 
-> We'll use Parameter-Free Parallel Tempering with a timeout of 100 seconds. Solver selection and tuning is beyond the scope of this module.
+We are ready to submit our problem to Azure using the `ParallelTempering` solver:
+
+> [!NOTE]
+> Here we use a parameter-free Parallel Tempering solver with a timeout of 100 seconds. You can refer to the [Microsoft Quantum Solution provider](//TODO) for more information on available solvers, however, solver selection and tuning is beyond the scope of this module.
 
 ```python
 from azure.quantum.optimization import ParallelTempering
@@ -131,7 +138,7 @@ Submitting problem...
 Result in 35.41556143760681 seconds:  {'version': '1.0', 'configuration': {'0': 1, '1': -1, '2': 1, '3': 1, '4': -1, '5': -1, '6': -1, '7': -1, '8': 1, '9': 1}, 'cost': -2052.0, 'parameters': {'all_betas': [0.00020408163265306123, 0.0010031845282727856, 0.004931258069052868, 0.024240112818991428, 0.00020408163265306123, 0.00041416312947479666, 0.0008405023793001501, 0.0017057149691356173, 0.0034615768230851457, 0.007024921700835206, 0.014256371424073268, 0.028931870679351317, 0.058714319100389226, 0.00020408163265306123, 0.0003216601955060876, 0.000506979878727771, 0.0007990687098552142, 0.0012594401274306443, 0.001985047612326009, 0.003128702935041415, 0.0049312580690528685, 0.007772328229454337, 0.012250238227336452, 0.019308028713685834, 0.030432059025318557, 0.04796503207311015, 0.07559936381105262, 0.00020408163265306123, 0.0002853639172320586, 0.0003990195697643234, 0.0005579423586529702, 0.000780161423569038, 0.0010908866075247, 0.0015253684103382742, 0.0021328970135012235, 0.0029823940494438134, 0.004170231478526455, 0.0058311645933360684, 0.008153619454858395, 0.011401069057563778, 0.015941923261808107, 0.022291323383991948, 0.031169582869598398, 0.043583903904173556, 0.06094264037716683, 0.08521506986401543, 0.00020408163265306123, 0.0002661133962019146, 0.0003470000642267741, 0.0004524726913109797, 0.0005900043184095882, 0.0007693394594342792, 0.0010031845282727856, 0.001308108124995844, 0.0017057149691356171, 0.002224176656606702, 0.002900227698828882, 0.0037817682692016645, 0.004931258069052867, 0.006430141778288393, 0.0083846196467327, 0.010933172089261346, 0.01425637142407326, 0.018589675944162696, 0.02424011281899142, 0.031608031858238926, 0.04121547145476594, 0.05374314651596505, 0.0700786790855087, 0.09137948893466513], 'replicas': 70, 'sweeps': 600}}
 ```
 
-Lastly, print out a summary of what the solution means:
+Notice that the solver returned the results in the form of a Python dictionary, along with some metadata. For a more human-readable format, use the function below to print out a summary of what the solution means:
 
 ```python
 def printResultSummary(result):
@@ -173,6 +180,8 @@ Total weights:
     Ship B: 53 tonnes
 ```
 
+Great! The solver found a partition such that the ships are within 1 tonne of each other. A satisfactory outcome, as a perfectly balanced solution does not exist for this problem instance.
+
 ## Improving the Cost Function
 
 The cost function we've built works well so far, but let's take a closer look at the `Problem` that was generated:
@@ -187,9 +196,9 @@ The problem has 90 terms for 10 mineral chunks:
 [{'c': 5, 'ids': [0, 1]}, {'c': 9, 'ids': [0, 2]}, {'c': 21, 'ids': [0, 3]}, {'c': 35, 'ids': [0, 4]}, {'c': 5, 'ids': [0, 5]}, {'c': 3, 'ids': [0, 6]}, {'c': 5, 'ids': [0, 7]}, {'c': 10, 'ids': [0, 8]}, {'c': 11, 'ids': [0, 9]}, {'c': 5, 'ids': [1, 0]}, {'c': 45, 'ids': [1, 2]}, {'c': 105, 'ids': [1, 3]}, {'c': 175, 'ids': [1, 4]}, {'c': 25, 'ids': [1, 5]}, {'c': 15, 'ids': [1, 6]}, {'c': 25, 'ids': [1, 7]}, {'c': 50, 'ids': [1, 8]}, {'c': 55, 'ids': [1, 9]}, {'c': 9, 'ids': [2, 0]}, {'c': 45, 'ids': [2, 1]}, {'c': 189, 'ids': [2, 3]}, {'c': 315, 'ids': [2, 4]}, {'c': 45, 'ids': [2, 5]}, {'c': 27, 'ids': [2, 6]}, {'c': 45, 'ids': [2, 7]}, {'c': 90, 'ids': [2, 8]}, {'c': 99, 'ids': [2, 9]}, {'c': 21, 'ids': [3, 0]}, {'c': 105, 'ids': [3, 1]}, {'c': 189, 'ids': [3, 2]}, {'c': 735, 'ids': [3, 4]}, {'c': 105, 'ids': [3, 5]}, {'c': 63, 'ids': [3, 6]}, {'c': 105, 'ids': [3, 7]}, {'c': 210, 'ids': [3, 8]}, {'c': 231, 'ids': [3, 9]}, {'c': 35, 'ids': [4, 0]}, {'c': 175, 'ids': [4, 1]}, {'c': 315, 'ids': [4, 2]}, {'c': 735, 'ids': [4, 3]}, {'c': 175, 'ids': [4, 5]}, {'c': 105, 'ids': [4, 6]}, {'c': 175, 'ids': [4, 7]}, {'c': 350, 'ids': [4, 8]}, {'c': 385, 'ids': [4, 9]}, {'c': 5, 'ids': [5, 0]}, {'c': 25, 'ids': [5, 1]}, {'c': 45, 'ids': [5, 2]}, {'c': 105, 'ids': [5, 3]}, {'c': 175, 'ids': [5, 4]}, {'c': 15, 'ids': [5, 6]}, {'c': 25, 'ids': [5, 7]}, {'c': 50, 'ids': [5, 8]}, {'c': 55, 'ids': [5, 9]}, {'c': 3, 'ids': [6, 0]}, {'c': 15, 'ids': [6, 1]}, {'c': 27, 'ids': [6, 2]}, {'c': 63, 'ids': [6, 3]}, {'c': 105, 'ids': [6, 4]}, {'c': 15, 'ids': [6, 5]}, {'c': 15, 'ids': [6, 7]}, {'c': 30, 'ids': [6, 8]}, {'c': 33, 'ids': [6, 9]}, {'c': 5, 'ids': [7, 0]}, {'c': 25, 'ids': [7, 1]}, {'c': 45, 'ids': [7, 2]}, {'c': 105, 'ids': [7, 3]}, {'c': 175, 'ids': [7, 4]}, {'c': 25, 'ids': [7, 5]}, {'c': 15, 'ids': [7, 6]}, {'c': 50, 'ids': [7, 8]}, {'c': 55, 'ids': [7, 9]}, {'c': 10, 'ids': [8, 0]}, {'c': 50, 'ids': [8, 1]}, {'c': 90, 'ids': [8, 2]}, {'c': 210, 'ids': [8, 3]}, {'c': 350, 'ids': [8, 4]}, {'c': 50, 'ids': [8, 5]}, {'c': 30, 'ids': [8, 6]}, {'c': 50, 'ids': [8, 7]}, {'c': 110, 'ids': [8, 9]}, {'c': 11, 'ids': [9, 0]}, {'c': 55, 'ids': [9, 1]}, {'c': 99, 'ids': [9, 2]}, {'c': 231, 'ids': [9, 3]}, {'c': 385, 'ids': [9, 4]}, {'c': 55, 'ids': [9, 5]}, {'c': 33, 'ids': [9, 6]}, {'c': 55, 'ids': [9, 7]}, {'c': 110, 'ids': [9, 8]}]
 ```
 
-That's a lot of terms for just 10 chunks! On closer inspection however, you'll note that there are essentially duplicated terms that result from having squared the right hand side of the equation when building our cost function. For example, look at the last term: `{'w': 110, 'ids': [9, 8]}`. If you look through the rest of the terms, you'll find a symmetrical copy of this term: `{'w': 110, 'ids': [8, 9]}`.
+That's a lot of terms for just 10 chunks! On closer inspection, you'll note that there are essentially duplicated terms that result from having squared the right hand side of the equation when building our cost function. For example, look at the last term: `{'w': 110, 'ids': [9, 8]}`. If you look through the rest of the terms, you'll find a symmetrical copy of it: `{'w': 110, 'ids': [8, 9]}`.
 
-This duplicate encodes the exact same information in our cost function. However, because we don't actually care about the value of the cost function (just the shape), we can omit these terms too by a slight modification to our cost function:
+This duplicate encodes the exact same information in our cost function. However, because we don't actually care about the value of the cost function (just the shape), we can omit these terms by a slight modification to our cost function:
 
 $$ H^2 = \Large(\sum_{i<j} w_{i} x_{i})^2 $$
 
@@ -257,4 +266,4 @@ Total weights:
     Ship B: 53 tonnes
 ```
 
-As you can see, the quality of the solution is the same for both cost functions - the ships are loaded within 1 tonne of each other (a perfect solution does not exist). This reveals an important fact about using QIO solvers: it is often possible (and necessary) to optimize the cost function in order to generate more optimal solutions more quickly.
+As you can see, the quality of the solution is the same for both cost functions - the ships are loaded within 1 tonne of each other. This reveals an important fact about using QIO solvers: it is often possible (and necessary) to optimize the cost function in order to generate more optimal solutions more quickly.
