@@ -11,7 +11,7 @@ metadata:
 title: Connect Kubernetes clusters to Azure Arc
 durationInMinutes: 5
 content: |
-  [!include[]includes/4-connect-kubernetes-arc.md)]
+  [!include[](includes/4-connect-kubernetes-arc.md)]
 quiz:
   title: Check your knowledge
   questions:
