@@ -87,7 +87,8 @@ code .
 
 2. In Visual Studio Code, in the **Explorer** window, select **New File**
 
-![Screenshot showing the New File button in Visual Studio Code.](../media/create-file.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot showing the New File button in Visual Studio Code.](../media/create-file.png)
 
 3. Name the file **requirements.txt**, and add the following text:
 

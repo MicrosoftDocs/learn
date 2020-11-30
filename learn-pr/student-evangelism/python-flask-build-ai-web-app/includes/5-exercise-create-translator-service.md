@@ -5,16 +5,19 @@ Let's get keys for the Translator service. As mentioned previously, we'll need a
 1. Browse to the [Azure portal](https://portal.azure.com?azure-portal=true)
 2. Select **Create a resource**
 
-![Screenshot showing the Create a resource option in the Azure portal.](../media/create-resource.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot showing the Create a resource option in the Azure portal.](../media/create-resource.png)
 
 3. In the **Search** box, enter **Translator**
 4. Select **Translator**
 
-![Translator search results](../media/translator-search.png)
+> [!div class="mx-imgBorder"]
+> ![Translator search results](../media/translator-search.png)
 
 5. Select **Create**
 
-![Screenshot showing the Translator create dialog.](../media/create-translator.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot showing the Translator create dialog.](../media/create-translator.png)
 
 6. Complete the Create Translator form with the following values:
   - **Subscription**: *Your subscription*
@@ -26,7 +29,8 @@ Let's get keys for the Translator service. As mentioned previously, we'll need a
   - **Name**: *A unique value, such as ai-yourname*
   - **Pricing tier**: **Free F0**
 
-![Screenshot showing the completed Translator create form.](../media/create-translator-form.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot showing the completed Translator create form.](../media/create-translator-form.png)
 
 7. Select **Review + create**
 8. Select **Create**
@@ -34,11 +38,13 @@ Let's get keys for the Translator service. As mentioned previously, we'll need a
 10. Select **Go to resource**
 11. Select **Keys and Endpoint** on the left side under **RESOURCE MANAGEMENT**
 
-![Screenshot showing the keys and endpoints option on the menu.](../media/translator-key-endpoint.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot showing the keys and endpoints option on the menu.](../media/translator-key-endpoint.png)
 
 12. Next to **KEY 1**, select **Copy to clipboard**
 
-![Screenshot showing the key dashboard.](../media/translator-keys.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot showing the key dashboard.](../media/translator-keys.png)
 
 > [!NOTE]
 > There's no difference between Key 1 and Key 2. By providing two keys you have the opportunity to migrate to new keys, by regenerating one while using the other.

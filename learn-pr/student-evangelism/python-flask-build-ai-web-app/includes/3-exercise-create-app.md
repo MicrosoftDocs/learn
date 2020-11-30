@@ -11,7 +11,8 @@ Typically, the entry point for Flask applications is a file named **app.py**. We
 
 1. Returning to the instance of Visual Studio Code we were using previously, create a new file named **app.py** by clicking **New file** in the **Explorer** tab
 
-![Screenshot showing the Visual Studio Code New File dialog.](../media/create-file.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot showing the Visual Studio Code New File dialog.](../media/create-file.png)
 
 > [!IMPORTANT]
 > If this exercise is your first time using Visual Studio Code to create a Python application, you'll receive messages about installing the Python extension and the linter **pylint**. Select **Install** to install each of these add-ons.
