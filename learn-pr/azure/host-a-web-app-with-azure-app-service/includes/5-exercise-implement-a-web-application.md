@@ -62,6 +62,35 @@ If you open a second command shell session, for example by browsing to <https://
 
 ::: zone-end
 
+::: zone pivot="java"
+
+To create a starter web application, we'll use Maven, a commonly used project management and build tool for Java apps. We'll use the `maven-archetype-webapp` template to generate the code for our web application.
+
+Run these commands in the Cloud Shell now to create a new web app:
+
+```bash
+cd ~
+mvn archetype:generate -DgroupId=example.demo -DartifactId=helloworld -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp
+```
+
+Now, run these commands to change to the new "helloworld" application directory and package the application for deployment:
+
+```bash
+cd helloworld
+mvn package
+```
+
+When the command finishes running, type in these commands to open the "target" directory and list its content:
+
+```bash
+cd target
+ls
+```
+
+You'll see a file listed called `helloworld.war`. This is the web application package that we will deploy to App Service.
+
+::: zone-end
+
 ::: zone pivot="node"
 
 To create a starter Node.js web application, we'll use Node Package Manager (`npm`) along with some JavaScript code to run the actual web page processing.
@@ -118,7 +147,7 @@ const server = http.createServer(function(request, response) {
 const port = process.env.PORT || 1337;
 server.listen(port);
 
-console.log("Server running at http://localhost:%d", port);
+console.log(`Server running at http://localhost:${port}`);
 ```
 
 Save the file and exit the editor. You can exit the editor through the "..." menu on the top right or through <kbd>Ctrl+Q</kbd>.
@@ -150,38 +179,9 @@ If you open a second command shell session, for example by browsing to <https://
 
 ::: zone-end
 
-::: zone pivot="java"
-
-To create a starter web application, we'll use Maven, a commonly used project management and build tool for Java apps. Maven includes a feature called *archetypes* that can quickly create starter code for different kinds of applications. We can use the `maven-archetype-webapp` template to generate the code for a simple web app that displays "Hello World!" on its homepage.
-
-Run these commands in the Cloud Shell now to create a new web app:
-
-```bash
-cd ~
-mvn archetype:generate -DgroupId=example.demo -DartifactId=helloworld -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp
-```
-
-Now, run these commands to change to the new "helloworld" application directory and package the application for deployment:
-
-```bash
-cd helloworld
-mvn package
-```
-
-When the command finishes running, type in these commands to open the "target" directory and list its content:
-
-```bash
-cd target
-ls
-```
-
-You'll see a file listed called `helloworld.war`. This is the web application package that we will deploy to App Service.
-
-::: zone-end
-
 ::: zone pivot="python"
 
-To create a starter web application, we'll use Flask, which is a commonly used web application framework. Run the following commands to set up a virtual environment and install Flask in your profile:
+To create a starter web application, we'll use the web application framework Flask. Run the following commands to set up a virtual environment and install Flask in your profile:
 
 ```bash
 python3 -m venv venv
