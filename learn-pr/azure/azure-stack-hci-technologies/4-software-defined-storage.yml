@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-stack-hci-technologies.4-software-defined-storage
 metadata:
-  title: Introduction to Software Defined Storage
-  description: Provide an introduction to Software Defined Storage.
+  title: What is Windows Server software-defined storage?
+  description: Provide an introduction to software-defined storage.
   ms.date: 09/21/2020
   author: jboeshart
   ms.author: jaboes
@@ -16,14 +16,14 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Which software-defined storage feature implements virtualized, highly-available clustered storage by using local disks on each node of a Windows Server 2019 failover cluster?"
+  - content: "Which software-defined storage feature implements virtualized, highly available clustered storage by using local disks on each node of a Windows Server 2019 failover cluster?"
     choices:
     - content: "Storage Spaces Direct"
       isCorrect: true
-      explanation: "That's correct. Storage Spaces Direct leverages Storage Spaces, failover clustering, CSVs, and SMB 3.x to implement virtualized, highly-available clustered storage by using local disks on each of nodes of a Windows Server 2019 failover cluster."
+      explanation: "That's correct. Storage Spaces Direct leverages Storage Spaces, failover clustering, CSVs, and SMB 3.x to implement virtualized, highly available clustered storage by using local disks on each node of a Windows Server 2019 failover cluster."
     - content: "SMB Direct"
       isCorrect: false
-      explanation: "That's incorrect. SMB Direct optimizes the use of RDMA network adapters for SMB traffic, allowing them to function at full speed with very low latency and low CPU utilization."
+      explanation: "That's incorrect. SMB Direct optimizes the use of RDMA network adapters for SMB traffic, which allows them to function at full speed with very low latency and low CPU utilization."
     - content: "Storage Replica "
       isCorrect: false
       explanation: "That's incorrect. Storage Replica enables storage-agnostic, block-level, synchronous and asynchronous replication between servers or clusters across different physical locations."
