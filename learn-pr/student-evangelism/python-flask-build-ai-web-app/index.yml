@@ -17,8 +17,8 @@ abstract: |
   - Learn how to use Flask to build a form
   - Learn how to use the Translator service to translate text
 prerequisites: |
-  - Python 3.6 or later and VS code installed on your computer. Follow the steps in the [Install Python 3](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true) module. At the top of the article, choose the instructions for your configuration: Windows, Linux, or macOS.
-  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+  - Python 3.6 or later and VS code installed on your computer. Follow the steps in the [Install Python 3](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3) module. At the top of the article, choose the instructions for your configuration: Windows, Linux, or macOS.
+  - [Visual Studio Code](https://code.visualstudio.com)
 iconUrl: /learn/achievements/student-evangelism/python-flask-build-ai-web-app-badge.svg
 levels:
 - intermediate
