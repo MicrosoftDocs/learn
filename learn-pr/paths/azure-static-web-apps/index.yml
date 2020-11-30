@@ -21,7 +21,7 @@ summary: |
     - Seamless developer experience and CI/CD
     - Tailored developer experience that includes a Visual Studio Code extension
 prerequisites: None
-iconUrl: /learn/achievements/build-javascript-applications-nodejs.svg
+iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:
@@ -38,4 +38,4 @@ modules:
 - learn.azure.publish-app-service-static-web-app-api-dotnet
 - learn.azure.create-deploy-static-webapp-gatsby-app-service
 trophy:
-  uid: learn.azure-static-web-apps.trophy
+  uid: learn.azure-static-web-apps.generic-trophy
