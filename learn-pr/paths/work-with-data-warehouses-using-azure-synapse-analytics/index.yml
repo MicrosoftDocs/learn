@@ -28,6 +28,5 @@ modules:
 - learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics
 - learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics
 - learn.wwl.secure-data-warehouse-azure-synapse-analytics
-- learn.wwl.solve-common-data-warehouse-scenarios-with-azure-synapse-analytics
 trophy:
   uid: learn.wwl.work-with-data-warehouses-using-azure-synapse-analytics.trophy
