@@ -183,8 +183,8 @@ Going back to the terminal, type the following commands:
 - `npm rebuild` to run the build and recompile changes in the app/ folder
 - `npm run start` to start the web-pack dev server for React and opens up a new browser window for the React project.
 
-Your browser should now open at [http://localhost:3000](http://localhost:3000) showing a dapp where you can interact with the Shipping contract.
+Your browser should now open at [http://localhost:3000](http://localhost:3000?azure-portal=true) showing a dapp where you can interact with the Shipping contract.
 
 You should see the following:
 
-:::image type="content" source="media\shipping-dapp.png" alt-text="Image showing the dapp that is wired up to the shipping contract":::
+:::image type="content" source="../media/shipping-dapp.png" alt-text="Image showing the dapp that is wired up to the shipping contract":::

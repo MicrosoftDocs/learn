@@ -18,9 +18,9 @@ abstract:  |
  - Know how to use Drizzle to create apps
  - Build your own decentralized apps
 prerequisites: | 
-  - [Fundamental knowledge about blockchain](https://docs.microsoft.com/learn/modules/intro-to-blockchain/?azure-portal=true)
-  - [Solidity programming knowledge](https://docs.microsoft.com/learn/modules/blockchain-learning-solidity/?azure-portal=true)
-  - [Ethereum smart contract knowledge](https://docs.microsoft.com/learn/modules/blockchain-solidity-ethereum-smart-contracts/?azure-portal=true)
+  - <a href="https://docs.microsoft.com/learn/modules/intro-to-blockchain/" target="_blank">Fundamental knowledge about blockchain</a>
+  - <a href="https://docs.microsoft.com/learn/modules/blockchain-learning-solidity/" target="_blank">Solidity programming knowledge</a>
+  - <a href="https://docs.microsoft.com/learn/modules/blockchain-solidity-ethereum-smart-contracts/" target="_blank">Ethereum smart contract knowledge</a>
   - Previous experience with a programming language like C, Python, or JavaScript
   - Basic knowledge of programming concepts
   - Familiarity with the command line to create new directories and install programs

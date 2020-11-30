@@ -11,7 +11,7 @@ metadata:
 title: Knowledge check
 durationInMinutes: 7
 content: |
-  "Answer these questions to demonstrate what you've learned:"
+  Answer these questions to demonstrate what you've learned:
 quiz:
   questions:
   - content: "What is the most accurate definition of Drizzle?"
