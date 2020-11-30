@@ -15,31 +15,33 @@ This listing shows the verb and its description. Cmdlet developers should not on
 
 Three cmdlets allow you delve into what cmdlets exist and what they do:
 
-- **Get-Command**: Get-Command lists all the available cmdlets on your system but there are ways to filter down this response so you quickly find the command you need.
-- **Get-Help**: There's a built-in help system that you can use by invoking one of the mentioned core cmdlets `Get-Help`. There's also an alias help that invokes `Get-Help`. The `help` command does a little more as it improves the overall reading experience by paginating the response.
-- **Get-Member**: As part of getting a response from a cmdlet, keep in mind that the response you get back from calling a command, is an object that contains numerous properties. By utilizing the `Get-Member` core cmdlet, you can drill down into that response and learn more about it.
+- **Get-Command**: The `Get-Command` cmdlet lists all of the available cmdlets on your system. Filter the list to quickly find the command you need.
+- **Get-Help**: Use the `Get-Help` core cmdlet to invoke a built-in help system. Or use an alias `help` command to invoke `Get-Help` but improve the reading experience by paginating the response.
+- **Get-Member**: When you call a command, the response is an object that contains numerous properties. Use the `Get-Member` core cmdlet to drill down into that response and learn more about it.
 
-## Locate commands with Get-Command
+## Locate commands by using Get-Command
 
-By just running the `Get-Command` cmdlet in the shell, you will get a listing of every single command that's installed in PowerShell. It's not practical to list all of the commands, as there are thousands of them. What you want is a way to filter down the response so you can locate the command that you need quicker. A way to _filter_ down is to remember how the cmdlets are named that is according to a Verb-Noun naming standard, for example,  Get-Random with `Get` being the verb and `Random` the noun.
+When you run the `Get-Command` cmdlet in the shell, you get a list of every command that's installed in PowerShell. Because thousands of commands are installed, you need a way to filter the response so you can quickly locate the command that you need. 
 
-There are flags you can use to target either the verb or the noun as you search for the command you want. The flag you specify expects a value that's a string. You can add various pattern matching characters to that string to ensure you express that, for example,  a flag's value should start with, or end with, a certain string.  
+To filter the list, keep in mind the verb-noun naming standard for cmdlets. For example, in the `Get-Random` command, `Get` is the verb and `Random` is the noun. Use flags to target either the verb or the noun in the command you want. The flag you specify expects a value that's a string. You can add pattern-matching characters to that string to ensure you express that, for example, a flag's value should start or end with a certain string.  
 
-- **-Noun**. When used, the `-Noun` flag targets only the part of the command name that has to do with the noun, that is everything after the hyphen -. A typical search for the name can then look like this:
+These examples show how to use flags to filter a command list:
+
+- **-Noun**: The `-Noun` flag targets the part of the command name that's related to the noun. That is, it targets everything after the hyphen (`-`). Here's a typical search for a command name:
 
    ```powershell
    Get-Command -Noun a-noun*
    ```
 
-   The above would search for all cmdlets whose noun part starts with **a-noun**.
+   This command searches for all cmdlets whose noun part starts with `a-noun`.
 
-- **-Verb**. You can also choose to limit your search by specifying the `-Verb` flag. In fact, you can combine these two flags to create an even more detailed search query and type, for example, the following command:
+- **-Verb**: The `-Verb` flag targets the part of the command name that's related to the verb. You can combine the `-Noun` flag and the `-Verb` flag to create an even more detailed search query and type. Here's an example:
 
    ```powershell
    Get-Command -Verb Get -Noun a-noun*
    ```
 
-   Now you've narrowed down the search to say that the verb part needs to match **Get** and the noun part to still match **a-noun**.
+   Now you've narrowed the search to specify that the verb part needs to match `Get`, and the noun part needs to match `a-noun`.
 
 ## Discover your cmdlets using the help system and Get-Help
 
