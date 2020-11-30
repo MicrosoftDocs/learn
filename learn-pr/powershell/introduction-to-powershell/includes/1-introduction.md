@@ -1,6 +1,6 @@
 PowerShell is a command-line shell and a scripting language all in one. It was designed as a task engine that uses cmdlets to wrap tasks that people need to do. In PowerShell, you can run commands on local or remote machines. You can do tasks such as manage users and automate workflows.
 
-As a part of either an operations team or a development team that's adopting DevOps principles, you can rest assured that PowerShell can help you. You'll be able to address a variety of tasks, such as managing cloud resources and continuous integration and continuous delivery (CI/CD). PowerShell offers many helpful commands, but you can expand its capabilities at any time by installing modules.
+Whether you're part of an operations team or a development team that's adopting DevOps principles, PowerShell can help. You can use it to address a variety of tasks, such as managing cloud resources and continuous integration and continuous delivery (CI/CD). PowerShell offers many helpful commands, but you can expand its capabilities at any time by installing modules.
 
 When you install PowerShell, you can evaluate its features to see if it's a fit for your team.
 

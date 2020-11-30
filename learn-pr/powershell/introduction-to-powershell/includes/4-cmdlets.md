@@ -1,6 +1,8 @@
-A cmdlet is a compiled command and is pronounced command-let. A cmdlet can be developed in .NET or .NET Core and invoked as a command within PowerShell. There are thousands of cmdlets that come with your PowerShell installation already. The challenge lies in discovering what those are and what they can do for you.
+A _cmdlet_ is a compiled command. It's pronounced "command-let." A cmdlet can be developed in .NET or .NET Core and invoked as a command within PowerShell. Thousands of cmdlets are available in your PowerShell installation. The challenge lies in discovering what they are and what they can do for you.
 
-Cmdlets are named according to a Verb-Noun naming standard, which makes it easier to understand what they do but also to search for them. Additionally it guides cmdlet developers in how their cmdlets should be named. There's also a list of approved verbs. You can use the `Get-Verb` cmdlet to show them all. It shows all verbs organized by activity type and what they do. Here's an extract of the output, from running `Get-Verb`:
+Cmdlets are named according to a verb-noun naming standard. This pattern can help you to understand what they do and to search for them. It also helps cmdlet developers create consistent names. You can see the list of approved verbsby using the `Get-Verb` cmdlet. Verbs are organized by activity type and function. 
+
+Here's a part of the output from running `Get-Verb`:
 
 ```output
 Verb        AliasPrefix Group          Description
@@ -9,13 +11,13 @@ Add         a           Common         Adds a resource to a container, or attaâ€
 Clear       cl          Common         Removes all the resources from a contaiâ€¦
 ```
 
-Above, the listing is showing the verb and what the verb does via it's description. So should make a note not only about using an _approved_ verb but to ensure that the verb you do use fits what your cmdlet does.
+This listing shows the verb and its description. Cmdlet developers should not only use an approved verb but also  ensure that the verb description fits their cmdlet's function.
 
-There's three cmdlets that allow you delve deeper into what cmdlets exist and what they do. They are:
+Three cmdlets allow you delve into what cmdlets exist and what they do:
 
-- **Get-Command**. Get-Command lists all the available cmdlets on your system but there are ways to filter down this response so you quickly find the command you need.
-- **Get-Help**. There's a built-in help system that you can use by invoking one of the mentioned core cmdlets `Get-Help`. There's also an alias help that invokes `Get-Help`. The `help` command does a little more as it improves the overall reading experience by paginating the response.
-- **Get-Member**. As part of getting a response from a cmdlet, keep in mind that the response you get back from calling a command, is an object that contains numerous properties. By utilizing the `Get-Member` core cmdlet, you can drill down into that response and learn more about it.
+- **Get-Command**: Get-Command lists all the available cmdlets on your system but there are ways to filter down this response so you quickly find the command you need.
+- **Get-Help**: There's a built-in help system that you can use by invoking one of the mentioned core cmdlets `Get-Help`. There's also an alias help that invokes `Get-Help`. The `help` command does a little more as it improves the overall reading experience by paginating the response.
+- **Get-Member**: As part of getting a response from a cmdlet, keep in mind that the response you get back from calling a command, is an object that contains numerous properties. By utilizing the `Get-Member` core cmdlet, you can drill down into that response and learn more about it.
 
 ## Locate commands with Get-Command
 
