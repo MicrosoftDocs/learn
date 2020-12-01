@@ -149,9 +149,9 @@ The operation starts at the value of $t$ for which $x_{i + t}$ equals 1.
 
 In the next units, you will construct mathematical representations of the penalty terms and use these to build the cost function, which will be of the format:
 
-$$H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x) $$
+$$H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x) $$,
 
-Where:
+where:
 
 $$f(x) \text{, } g(x) \text{ and } h(x) \text{ represent the penalty functions.}$$
 $$\alpha, \beta \text{ and } \gamma \text{ represent the different weights assigned to the penalties.}$$
