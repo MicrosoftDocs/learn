@@ -1,4 +1,4 @@
-Our goal is to be able to use the data that we know about each Looney Tunes player to make quick decisions during the game. We know that we want to leverage the player efficiency rating (PER) because it is a per-minute measurement of the player's productivity on the court. While in professional basketball the PER is computed for players based on their performance over an entire season, we can use it as a loose proxy for player performance in a single game. To use the PER in this way, we will need the following statistics for each player:
+Our goal is to be able to use the data that we know about each Tune Squad player to make quick decisions during the game. We know that we want to leverage the player efficiency rating (PER) because it is a per-minute measurement of the player's productivity on the court. While in professional basketball the PER is computed for players based on their performance over an entire season, we can use it as a loose proxy for player performance in a single game. To use the PER in this way, we will need the following statistics for each player:
 
 * **TS%**: True Shooting Percentage, a player's shooting percentage taking free throws and 3-pointers into account
 * **AST**: Assist Ratio, the percentage of a player's possessions that end in an assist
@@ -17,12 +17,12 @@ To make this process easier, let's create a look-up Series for each stats' stand
 
 ```python
 # Create a list of just the column names we are interested in.
-game_stat_cols = list(lt_df.iloc[:, 7:-1])
+game_stat_cols = list(ts_df.iloc[:, 7:-1])
 game_stat_stdevs = []
 
 # Create a list of standard deviations for each stat.
 for stat in game_stat_cols:
-    game_stat_stdevs.append(lt_df[stat].std())
+    game_stat_stdevs.append(ts_df[stat].std())
 
 # Create a Series of the standard deviations with the stat names as the index.
 stdev_s = pd.Series(game_stat_stdevs, index=game_stat_cols)
@@ -44,7 +44,7 @@ With this Series we can run a simulation of our player data. We want to see if o
 
 ## Train a machine learning model based on player data
 
-To train a machine learning model to predit a player PER given particular player stats for a simulated game, we will leverage all of the data that we initially downloaded, including the human player data. To do this, we will need to split our data into two parts:
+To train a machine learning model to predict a player PER given particular player stats for a simulated game, we will leverage all of the data that we initially downloaded, including the human player data. To do this, we will need to split our data into two parts:
 * **`X`:** Input - Data used to predict `y`
 * **`y`:** Output - The value you are trying to have the machine learning model predict
 
@@ -90,13 +90,13 @@ for i in range(10):
 
     # Define an empty temporary DataFrame for each iteration.
     # The columns of this DataFrame are the player stats and the index is the players' names.
-    game_df = pd.DataFrame(columns=game_stat_cols, index=list(lt_df['player_name']))
+    game_df = pd.DataFrame(columns=game_stat_cols, index=list(ts_df['player_name']))
     
     # Loop over the each stat.
     for stat in game_stat_cols:
         
         # Each player's stats is used as an mean for purposed of generating a random value for each iteration.
-        game_df[stat] = list(lt_df[stat] + randn(len(lt_df)) * stdev_s[stat])
+        game_df[stat] = list(ts_df[stat] + randn(len(ts_df)) * stdev_s[stat])
     
     # Use the fitted model to predict players' PERs based on the randomized data.
     game_df['PER'] = lin_reg.predict(game_df)
@@ -105,7 +105,6 @@ for i in range(10):
     print('Iteration {}'.format(i+1) + ' \t' + game_df['PER'].idxmax() + ' \t' + game_df['PER'].idxmin())
 ```
 
-```output
 | Iteration # | high PER | low PER |
 |---|---|---|
 | Iteration 1 | Speedy Gonzales | Road Runner |
@@ -118,9 +117,10 @@ for i in range(10):
 | Iteration 8 | Lola Bunny | Penelope |
 | Iteration 9 | Speedy Gonzales | Penelope |
 | Iteration 10 | Elmer Fudd | Penelope |
-```
 
 >[!NOTE] 
 >Your data will be different from the data shown here because each time we run this code we are generating a random number within the standard deviation for each relevant stat column, so if it is identical then it was complete luck!
 
 Our methodology provides a variety of results that are pretty much inline with what we might expect given the stats - Lola and Speedy are likely some of the best players, based on PER. So, if we had in-game data, rather than random values based on the standard deviation, we could feasible feed that data into this machine learning model and determine which player (the lowest PER player) we should give a water break to, and which we should leave in (the highest PER player). As the game continues, the stats on each player will change, and if we see a high PER player start to drop down, we might consider giving them a water break because they are likely getting tired.
+
+© 2020 Warner Bros. Ent. All Rights Reserved

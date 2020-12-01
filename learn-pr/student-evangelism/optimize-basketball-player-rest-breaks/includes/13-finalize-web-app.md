@@ -53,7 +53,7 @@ It's finally time! The app is complete! We can now test our app. Remmeber, you w
 
 1. Choose 5 characters
 2. Press the "Start the Game!" button
-3. Adjust (or not) the players on the court vs taking a break
+3. When the timer stops, adjust (or not) the players on the court vs taking a break
 4. Press the "Start Q2" button when your lineup is locked in
 
 :::image type="content" source="../media/final-test-1.png" alt-text="Screenshot showing the test of the final web app.":::
@@ -80,4 +80,6 @@ Once you commit and push your changes (and wait a little while for the GitHub Ac
 
 ![Browse your completed site](../media/browse-site.png)
 
-For example, the one built during creation of this module can be found at [https://aka.ms/LearnWithDrG/SpaceJamWebApp](https://aka.ms/LearnWithDrG/SpaceJamWebApp?azure-portal=true).
+For example, the one built during creation of this module can be found at [https://aka.ms/LearnWithDrG/Basketball/WebApp](https://aka.ms/LearnWithDrG/Basketball/WebApp?azure-portal=true).
+
+© 2020 Warner Bros. Ent. All Rights Reserved

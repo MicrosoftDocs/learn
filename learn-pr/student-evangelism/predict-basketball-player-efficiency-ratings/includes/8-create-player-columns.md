@@ -1,4 +1,4 @@
-Since we have identified the groups of players by examining the bimodal histograms, let's make a column to indicate whether a row represents a human or Looney Tune and give each one a unique "name".
+Since we have identified the groups of players by examining the bimodal histograms, let's make a column to indicate whether a row represents a human or Tune Squad player and give each one a unique "name".
 
 First, we need to create the new column for the DataFrame. We do this by creating a list of values for the column and then assigning the column a name.
 
@@ -6,12 +6,12 @@ First, we need to create the new column for the DataFrame. We do this by creatin
 # Initialize the list to house the player data.
 pop_list = []
 
-# If the ID number is 30 or less, it is a human player; other, they are Looney Tunes.
+# If the ID number is 30 or less, it is a human player; other, they are Tune Squad players.
 for id in player_df['ID']:
     if id <= 30:
         pop_list.append('player'+str(id))
     else:
-        pop_list.append('looney_tune'+str(id%30))
+        pop_list.append('tune_squad'+str(id%30))
 
 pop_list
 ```
@@ -43,26 +43,26 @@ pop_list
  'player27',
  'player28',
  'player29',
- 'looney_tune1',
- 'looney_tune2',
- 'looney_tune3',
- 'looney_tune4',
- 'looney_tune5',
- 'looney_tune6',
- 'looney_tune7',
- 'looney_tune8',
- 'looney_tune9',
- 'looney_tune11',
- 'looney_tune12',
- 'looney_tune13',
- 'looney_tune14',
- 'looney_tune15',
- 'looney_tune16',
- 'looney_tune17']
+ 'tune_squad1',
+ 'tune_squad2',
+ 'tune_squad3',
+ 'tune_squad4',
+ 'tune_squad5',
+ 'tune_squad6',
+ 'tune_squad7',
+ 'tune_squad8',
+ 'tune_squad9',
+ 'tune_squad11',
+ 'tune_squad12',
+ 'tune_squad13',
+ 'tune_squad14',
+ 'tune_squad15',
+ 'tune_squad16',
+ 'tune_squad17']
 ```
 
 >[!NOTE]
->We did a quick shortcut with creating the numbers for the Looney Tunes players by using `str(id%30)`. The modulus operator (`%`) will divide and return the difference. So, for every id after 30, the code will enter the `else` branch. For example, for 31, the else branch will create a string that is `looney_tune` + `str(id%30)`, which would be `str(31%30)`. If you do the math, 31 divided by 30 is 0 remainder 1. So the player string for row with ID 31 would be `looney_tune_1`.
+>We did a quick shortcut with creating the numbers for the Tune Squad players by using `str(id%30)`. The modulus operator (`%`) will divide and return the difference. So, for every id after 30, the code will enter the `else` branch. For example, for 31, the else branch will create a string that is `tune_squad` + `str(id%30)`, which would be `str(31%30)`. If you do the math, 31 divided by 30 is 0 remainder 1. So the player string for row with ID 31 would be `tune_squad1`.
 
 Now, we can add this list of strings to the DataFrame.
 
@@ -106,4 +106,6 @@ player_df.head()
 4	5	player5	1721.0	1254.0	105.7	59.0	30.5	0.589	22.8	9.9	24.6	1.2	8.4	12.1	28.38
 ```
 
-Now we have a DataFrame that contains all of the player data with a new player column that represents whether the row is stats for a human player or a Looney Tunes player. But as you can see, there are still missing values that we need to impute.
+Now we have a DataFrame that contains all of the player data with a new player column that represents whether the row is stats for a human player or a Tune Squad player. But as you can see, there are still missing values that we need to impute.
+
+© 2020 Warner Bros. Ent. All Rights Reserved

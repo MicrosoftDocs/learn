@@ -1,40 +1,40 @@
-The `player_df_final` DataFrame contains data from 40 players. The first 26 rows represent human players and the last 17 rows represent Looney Tunes. We're going to build an app that helps Coach Daffy choose which player could use a water break during a game, while not risking winning the game, while also not wearing out any of the players. For the purposes of this module, we will only be dealing with a team of Looney Tunes, so we can focus on the last 16 rows of data. 
+The `player_df_final` DataFrame contains data from 40 players. The first 26 rows represent human players and the last 17 rows represent Tune Squad. We're going to build an app that helps the coach choose which player could use a water break during a game, while not risking winning the game, while also not wearing out any of the players. For the purposes of this module, we will only be dealing with the Tune Squad, so we can focus on the last 16 rows of data. 
 
 Before we get started building the app, we have to make sure we have the data in a state that will be ready to be ingested by the app.
 
-Let's start by creating a DataFrame to only represent the Looney Tunes players. This code will choose all rows, starting at row 27 (index 26 since this is a 0-based DataFrame), and all columns.
+Let's start by creating a DataFrame to only represent the Tune Squad players. This code will choose all rows, starting at row 27 (index 26 since this is a 0-based DataFrame), and all columns.
 
 ```python
-# Create a DataFrame of just Looney Tunes players.
-lt_df = player_df_final.iloc[26: , :]
-lt_df
+# Create a DataFrame of just Tune Squad players.
+ts_df = player_df_final.iloc[26: , :]
+ts_df
 ```
 
 **Output**
 
 || ID | player | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 26 | 31 | looney_tune1 | 2049.0 | 1434.0 | 110.0 | 64.000000 | 38.800000 | 0.619 | 31.5 | 14.9 | 35.5 | 8.3 | 17.6 | 12.8 | 28.440000 |
-| 27 | 32 | looney_tune2 | 1795.0 | 1481.8 | 112.1 | 62.000000 | 35.400000 | 0.608 | 31.9 | 14.5 | 32.0 | 6.5 | 22.5 | 12.9 | 23.340000 |
-| 28 | 33 | looney_tune3 | 1805.0 | 1509.9 | 108.6 | 64.000000 | 35.400000 | 0.622 | 27.9 | 13.9 | 36.0 | 5.9 | 27.7 | 12.2 | 22.410000 |
-| 29 | 34 | looney_tune4 | 1743.0 | 1422.4 | 112.9 | 64.000000 | 36.300000 | 0.619 | 30.9 | 15.6 | 34.5 | 5.9 | 18.9 | 14.8 | 29.858714 |
-| 30 | 35 | looney_tune5 | 1963.0 | 1539.1 | 117.4 | 59.972222 | 35.272973 | 0.633 | 32.3 | 16.2 | 34.0 | 5.9 | 19.8 | 13.1 | 27.160000 |
-| 31 | 36 | looney_tune6 | 2062.0 | 1505.7 | 111.5 | 59.972222 | 37.000000 | 0.620 | 29.8 | 15.6 | 36.2 | 4.9 | 23.9 | 14.7 | 27.860000 |
-| 32 | 37 | looney_tune7 | 1845.0 | 1435.7 | 113.1 | 69.000000 | 36.900000 | 0.634 | 33.2 | 14.0 | 36.5 | 4.1 | 21.5 | 16.4 | 34.260000 |
-| 33 | 38 | looney_tune8 | 1778.0 | 1526.4 | 109.3 | 66.000000 | 34.900000 | 0.612 | 30.6 | 15.9 | 35.9 | 5.5 | 18.8 | 13.7 | 28.650000 |
-| 34 | 39 | looney_tune9 | 1901.0 | 1444.1 | 109.7 | 67.000000 | 36.500000 | 0.609 | 27.2 | 14.8 | 35.5 | 5.0 | 21.8 | 8.9 | 20.120000 |
-| 35 | 41 | looney_tune11 | 2030.0 | 1431.0 | 112.3 | 68.000000 | 37.000000 | 0.618 | 32.5 | 15.3 | 34.5 | 5.7 | 15.7 | 13.2 | 30.070000 |
-| 36 | 42 | looney_tune12 | 1631.0 | 1465.7 | 110.1 | 66.000000 | 37.500000 | 0.613 | 28.4 | 14.4 | 35.7 | 6.5 | 20.7 | 14.0 | 28.400000 |
-| 37 | 43 | looney_tune13 | 1828.0 | 1507.2 | 112.7 | 64.000000 | 36.500000 | 0.618 | 31.3 | 14.0 | 34.9 | 5.9 | 21.3 | 14.5 | 29.102157 |
-| 38 | 44 | looney_tune14 | 1821.0 | 1443.7 | 118.8 | 66.000000 | 36.600000 | 0.609 | 27.3 | 13.5 | 35.8 | 7.0 | 23.8 | 11.5 | 22.960000 |
-| 39 | 45 | looney_tune15 | 1604.0 | 1526.5 | 114.5 | 67.000000 | 37.600000 | 0.633 | 28.2 | 13.0 | 34.2 | 6.1 | 19.0 | 16.3 | 33.890000 |
-| 40 | 46 | looney_tune16 | 1740.0 | 1443.9 | 114.1 | 68.000000 | 37.100000 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.220000 |
-| 41 | 47 | looney_tune17 | 1993.0 | 1459.0 | 112.5 | 59.972222 | 36.900000 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.760000 |
+| 26 | 31 | tune_squad1 | 2049.0 | 1434.0 | 110.0 | 64.000000 | 38.800000 | 0.619 | 31.5 | 14.9 | 35.5 | 8.3 | 17.6 | 12.8 | 28.440000 |
+| 27 | 32 | tune_squad2 | 1795.0 | 1481.8 | 112.1 | 62.000000 | 35.400000 | 0.608 | 31.9 | 14.5 | 32.0 | 6.5 | 22.5 | 12.9 | 23.340000 |
+| 28 | 33 | tune_squad3 | 1805.0 | 1509.9 | 108.6 | 64.000000 | 35.400000 | 0.622 | 27.9 | 13.9 | 36.0 | 5.9 | 27.7 | 12.2 | 22.410000 |
+| 29 | 34 | tune_squad4 | 1743.0 | 1422.4 | 112.9 | 64.000000 | 36.300000 | 0.619 | 30.9 | 15.6 | 34.5 | 5.9 | 18.9 | 14.8 | 29.858714 |
+| 30 | 35 | tune_squad5 | 1963.0 | 1539.1 | 117.4 | 59.972222 | 35.272973 | 0.633 | 32.3 | 16.2 | 34.0 | 5.9 | 19.8 | 13.1 | 27.160000 |
+| 31 | 36 | tune_squad6 | 2062.0 | 1505.7 | 111.5 | 59.972222 | 37.000000 | 0.620 | 29.8 | 15.6 | 36.2 | 4.9 | 23.9 | 14.7 | 27.860000 |
+| 32 | 37 | tune_squad7 | 1845.0 | 1435.7 | 113.1 | 69.000000 | 36.900000 | 0.634 | 33.2 | 14.0 | 36.5 | 4.1 | 21.5 | 16.4 | 34.260000 |
+| 33 | 38 | tune_squad8 | 1778.0 | 1526.4 | 109.3 | 66.000000 | 34.900000 | 0.612 | 30.6 | 15.9 | 35.9 | 5.5 | 18.8 | 13.7 | 28.650000 |
+| 34 | 39 | tune_squad9 | 1901.0 | 1444.1 | 109.7 | 67.000000 | 36.500000 | 0.609 | 27.2 | 14.8 | 35.5 | 5.0 | 21.8 | 8.9 | 20.120000 |
+| 35 | 41 | tune_squad11 | 2030.0 | 1431.0 | 112.3 | 68.000000 | 37.000000 | 0.618 | 32.5 | 15.3 | 34.5 | 5.7 | 15.7 | 13.2 | 30.070000 |
+| 36 | 42 | tune_squad12 | 1631.0 | 1465.7 | 110.1 | 66.000000 | 37.500000 | 0.613 | 28.4 | 14.4 | 35.7 | 6.5 | 20.7 | 14.0 | 28.400000 |
+| 37 | 43 | tune_squad13 | 1828.0 | 1507.2 | 112.7 | 64.000000 | 36.500000 | 0.618 | 31.3 | 14.0 | 34.9 | 5.9 | 21.3 | 14.5 | 29.102157 |
+| 38 | 44 | tune_squad14 | 1821.0 | 1443.7 | 118.8 | 66.000000 | 36.600000 | 0.609 | 27.3 | 13.5 | 35.8 | 7.0 | 23.8 | 11.5 | 22.960000 |
+| 39 | 45 | tune_squad15 | 1604.0 | 1526.5 | 114.5 | 67.000000 | 37.600000 | 0.633 | 28.2 | 13.0 | 34.2 | 6.1 | 19.0 | 16.3 | 33.890000 |
+| 40 | 46 | tune_squad16 | 1740.0 | 1443.9 | 114.1 | 68.000000 | 37.100000 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.220000 |
+| 41 | 47 | tune_squad17 | 1993.0 | 1459.0 | 112.5 | 59.972222 | 36.900000 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.760000 |
 
 
 Let's understand this data a bit more. We can see that there are number of columns that are acronyms, let's break those down:
 * **ID**: a unique identifier for each player in the dataset
-* **player**: a unique identifer created to track which player is a Looney Tune vs a human
+* **player**: a unique identifer created to track which player is a Tune Squad player vs a human
 * **points**: total points scored by a player in a season
 * **possessions**: total possessions by a player in a season
 * **team_pace**: the average number of possessions a team uses per game
@@ -55,14 +55,14 @@ The most important thing to understand is that each of these columns is data tha
 
 The calculation of PER isn't perfect, and some fans and data scientists might choose to evaluate players differently, but for the purposes of this module, we will use PER as the measurement to help make decisions regarding which player should be given a quick water break during a game.
 
-## Import Looney Tunes data to merge with player data
+## Import Tune Squad data to merge with player data
 
-Next, import the names of the Looney Tunes players for the game. Before doing this, open the looney_tunes.csv file in Visual Studio Code. You will see that the file is tab-separated rather than comma-separated, so set `sep='\t'` in your `pd.read_csv()` call.
+Next, import the names of the Tune Squad players for the game. Before doing this, open the tune_squad.csv file in Visual Studio Code. You will see that the file is tab-separated rather than comma-separated, so set `sep='\t'` in your `pd.read_csv()` call.
 
 ```python
-# Import Looney Tunes player names.
-lt_name_df = pd.read_csv('looney_tunes.csv', sep='\t')
-lt_name_df
+# Import Tune Squad player names.
+ts_name_df = pd.read_csv('tune_squad.csv', sep='\t')
+ts_name_df
 ```
 
 ```output
@@ -86,7 +86,7 @@ lt_name_df
 16	47	Daffy Duck
 ```
 
-The `lt_names_df` DataFrame contains the ID of the player, which matches the ID in the main DataFrame, and the players actual name.
+The `ts_names_df` DataFrame contains the ID of the player, which matches the ID in the main DataFrame, and the players actual name.
 
 ## Merge DataFrames to better qualify data
 
@@ -94,19 +94,19 @@ With two DataFrames that contain complementary data, we can merge the DataFrames
 
 ```python
 # Merge the two DataFrames.
-lt_df = pd.merge(lt_df, lt_name_df, on='ID', how='left', suffixes=('_type', '_name'))
-lt_df.head()
+ts_df = pd.merge(ts_df, ts_name_df, on='ID', how='left', suffixes=('_type', '_name'))
+ts_df.head()
 ```
 
 **Output**
 
 || ID | player_type | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER | player_name |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 0 | 31 | looney_tune1 | 2049.0 | 1434.0 | 110.0 | 64.000000 | 38.800000 | 0.619 | 31.5 | 14.9 | 35.5 | 8.3 | 17.6 | 12.8 | 28.440000 | Sylvester |
-| 1 | 32 | looney_tune2 | 1795.0 | 1481.8 | 112.1 | 62.000000 | 35.400000 | 0.608 | 31.9 | 14.5 | 32.0 | 6.5 | 22.5 | 12.9 | 23.340000 | Marvin the Martian |
-| 2 | 33 | looney_tune3 | 1805.0 | 1509.9 | 108.6 | 64.000000 | 35.400000 | 0.622 | 27.9 | 13.9 | 36.0 | 5.9 | 27.7 | 12.2 | 22.410000 | Road Runner |
-| 3 | 34 | looney_tune4 | 1743.0 | 1422.4 | 112.9 | 64.000000 | 36.300000 | 0.619 | 30.9 | 15.6 | 34.5 | 5.9 | 18.9 | 14.8 | 29.858714 | Foghorn Leghorn |
-| 4 | 35 | looney_tune5 | 1963.0 | 1539.1 | 117.4 | 59.972222 | 35.272973 | 0.633 | 32.3 | 16.2 | 34.0 | 5.9 | 19.8 | 13.1 | 27.160000 | Bugs Bunny |
+| 0 | 31 | tune_squad1 | 2049.0 | 1434.0 | 110.0 | 64.000000 | 38.800000 | 0.619 | 31.5 | 14.9 | 35.5 | 8.3 | 17.6 | 12.8 | 28.440000 | Sylvester |
+| 1 | 32 | tune_squad2 | 1795.0 | 1481.8 | 112.1 | 62.000000 | 35.400000 | 0.608 | 31.9 | 14.5 | 32.0 | 6.5 | 22.5 | 12.9 | 23.340000 | Marvin the Martian |
+| 2 | 33 | tune_squad3 | 1805.0 | 1509.9 | 108.6 | 64.000000 | 35.400000 | 0.622 | 27.9 | 13.9 | 36.0 | 5.9 | 27.7 | 12.2 | 22.410000 | Road Runner |
+| 3 | 34 | tune_squad4 | 1743.0 | 1422.4 | 112.9 | 64.000000 | 36.300000 | 0.619 | 30.9 | 15.6 | 34.5 | 5.9 | 18.9 | 14.8 | 29.858714 | Foghorn Leghorn |
+| 4 | 35 | tune_squad5 | 1963.0 | 1539.1 | 117.4 | 59.972222 | 35.272973 | 0.633 | 32.3 | 16.2 | 34.0 | 5.9 | 19.8 | 13.1 | 27.160000 | Bugs Bunny |
 
 
 ## Organize DataFrame for better readability
@@ -119,13 +119,13 @@ While it doesn't technically matter where each column is in a DataFrame, having 
 
 ```python
 # Rearrange the columns to put 'ID' and 'player_name' next to each other.
-column_list = list(lt_df)
+column_list = list(ts_df)
 
 player_name = column_list.pop()
 column_list[1] = player_name
 
-lt_df = lt_df[column_list]
-lt_df.head()
+ts_df = ts_df[column_list]
+ts_df.head()
 ```
 
 **Output**
@@ -139,3 +139,5 @@ lt_df.head()
 | 4 | 35 | Bugs Bunny | 1963.0 | 1539.1 | 117.4 | 59.972222 | 35.272973 | 0.633 | 32.3 | 16.2 | 34.0 | 5.9 | 19.8 | 13.1 | 27.160000 |
 
 Since the `player_type` column wasn't necessary now that we have the actual names of the players, it was easiest to replace the column with the `player_name` column, and now we don't have to explicitly drop the `player_type` column!
+
+© 2020 Warner Bros. Ent. All Rights Reserved

@@ -1,17 +1,17 @@
-We've now run into a problem. There is no way for us to watch a game of 16 Looney Tunes characters playing basketball to be able to test out our model in an actual app. There is no way for us to get real-time game data from the Looney Tunes playing. BUT, we *can* use the trick we learned to test our model to create a new dataset that would simulate a game!
+We've now run into a problem. There is no way for us to watch a game of 16 Tune Squad characters playing basketball to be able to test out our model in an actual app. There is no way for us to get real-time game data from the Tune Squad playing. BUT, we *can* use the trick we learned to test our model to create a new dataset that would simulate a game!
 
 The web app that we will build in the upcoming units will facilitate us decising which player to give a water break to every 12 minutes of a standard 48-minute game. So we should create a CSV file that will contain randomized player data over four iterations: 0 minutes (the start of the game), 12 mintues, 24 minutes, and 36 minutes.
 
 ```python
 # Initialize four empty DataFrames, one for each 12-minute period.
 number_of_iterations = 4
-df_list = [pd.DataFrame(columns=game_stat_cols, index=list(lt_df['player_name'])) for i in range(number_of_iterations)]
+df_list = [pd.DataFrame(columns=game_stat_cols, index=list(ts_df['player_name'])) for i in range(number_of_iterations)]
 
 # For each period, generate randomized player data and predict the PER.
 # Use the model fitted earlier.
 for df in df_list:
     for stat in game_stat_cols:
-        df[stat] = list(lt_df[stat] + randn(len(lt_df)) * stdev_s[stat])
+        df[stat] = list(ts_df[stat] + randn(len(ts_df)) * stdev_s[stat])
     df['PER'] = lin_reg.predict(df)
 
 # Concatenate the DataFrames and make the players' names the index.
@@ -19,7 +19,7 @@ game_df = pd.concat(df_list)
 game_df.rename_axis('player_name', inplace=True)
 
 # Now create another index for the period in quesiton.
-minutes = [(x // len(lt_df)) * 12 for x in range(len(game_df))]
+minutes = [(x // len(ts_df)) * 12 for x in range(len(game_df))]
 game_df['minutes'] = minutes
 game_df.set_index('minutes', append=True, inplace=True)
 game_df = game_df.swaplevel()
@@ -48,10 +48,12 @@ game_df
 The final DataFrame looks complete, so we can save it as a CSV file so that we can use it in our web app. When saving this DataFrame as a CSV file, we will want to keep the indices since we made them the player's names.
 
 ```python
-# Export the finished DataFrame to CSV. (Be sure to retain the indices!)
+# Export the finished DataFrame to CSV. 
 game_df.to_csv('game_stats.csv')
 ```
 
 A new CSV file should appear in your Visual Studio Code folder:
 
 ![The game_stats.csv file in the Visual Studio Code explorer](../media/game-stats-csv.png)
+
+© 2020 Warner Bros. Ent. All Rights Reserved

@@ -27,7 +27,7 @@ Once we have created the button, we can add it to the bench area that we identif
         newPlayer.onclick = movingPlayers;
 
         // Style the button
-        newPlayer.style.backgroundColor = "#F6FA1B";
+        newPlayer.style.backgroundColor = "#AC6FAA";
         newPlayer.style.width = "32%";
         
         // Add the players image to the button
@@ -106,3 +106,5 @@ function addPlayersToGame() {
     addStatsToGame();
 }
 ```
+
+© 2020 Warner Bros. Ent. All Rights Reserved

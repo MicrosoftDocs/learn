@@ -1,6 +1,6 @@
 Recognizing that data comes from different populations can be essential in business data analysis. Imagine that you were analyzing occupancy data for a lodging-rental business. Vacation renters and business renters (such as individuals renting for a temporary business trip) could distribute themselves very differently for length of stay, time of year, or types of amenities required. However, being able to separate out the different populations could be useful, such as for generating different marketing promotions for each population.
 
-In our case, we know that have a mixture of human basketball players and Looney Tunes players in our dataset. We can take a few of our more distinguished bimodal graphs, for example `points`, `DRR`, and `PER` and try to see if we can differentiate the two populations. First, let's look at each of these distributions on their own:
+In our case, we know that have a mixture of human basketball players and Tune Squad players in our dataset. We can take a few of our more distinguished bimodal graphs, for example `points`, `DRR`, and `PER` and try to see if we can differentiate the two populations. First, let's look at each of these distributions on their own:
 
 ```python
 # Plot the KDE for 'points' over the probability-density histogram.
@@ -11,7 +11,7 @@ sns.kdeplot(player_df['points']);
 
 ![Points histogram](../media/points-histogram.png)
 
-We can see that at around 1,600 is when the split across the two populations occurs. We can use that to explore the data further. One hypothesis is that Looney Tunes players might score more points because they often have additional skills that humans just don't have. We can start to see the rows where players have scored more than 1,600 points: 
+We can see that at around 1,600 is when the split across the two populations occurs. We can use that to explore the data further. One hypothesis is that Tune Squad players might score more points because they often have additional skills that humans just don't have. We can start to see the rows where players have scored more than 1,600 points: 
 
 ```python
 player_df.loc[player_df['points'] >= 1600].info()
@@ -41,7 +41,7 @@ dtypes: float64(13), int64(1)
 memory usage: 2.8 KB
 ```
 
-There are 24 rows that have players that have scored at least 1,600 points. Let's continue narrowing down the players that are more likely to be Looney Tunes. 
+There are 24 rows that have players that have scored at least 1,600 points. Let's continue narrowing down the players that are more likely to be part of the Tune Squad. 
 
 ```python
 # Plot the KDE for 'DRR' over the probability-density histogram.
@@ -52,7 +52,7 @@ sns.kdeplot(player_df['DRR']);
 
 ![DRR histogram](../media/drr-histogram.png)
 
-At around 15 defensive rebounds is where we see the distribution split. So we can see if that helps narrow down our population that we think might be Looney Tunes. Again, we could hypothesis that Looney Tunes are going to be more likely to try to get the ball in a defensive rebound because of their special skills, so we can count how many rows/players have scored more than 1,600 points and have a DRR of more than 15:
+At around 15 defensive rebounds is where we see the distribution split. So we can see if that helps narrow down our population that we think might be Tune Squad players. Again, we could hypothesis that the Tune Squad are going to be more likely to try to get the ball in a defensive rebound because of their special skills, so we can count how many rows/players have scored more than 1,600 points and have a DRR of more than 15:
 
 ```python
 player_df.loc[(player_df['points'] >= 1600) & (player_df['DRR'] >= 15)].info()
@@ -82,7 +82,7 @@ dtypes: float64(13), int64(1)
 memory usage: 2.2 KB
 ```
 
-Finally, we can take a look at PER. If our hypothesis is correct so far, then Looney Tunes probably have a higher PER.
+Finally, we can take a look at PER. If our hypothesis is correct so far, then Tune Squad players probably have a higher PER.
 
 ```python
 # Plot the KDE for 'PER' over the probability-density histogram.
@@ -118,7 +118,7 @@ player_df.loc[(player_df['points'] >= 1600) & (player_df['DRR'] >= 15) & (player
 | 40 | 46 | 1740.0 | 1443.9 | 114.1 | 68.0 | 37.1 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.22 |
 | 41 | 47 | 1993.0 | 1459.0 | 112.5 | NaN | 36.9 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.76 |
 
-We could reasonably expect these to represent the Looney Tunes players, and as part of this module I can tell you that the 16 Looney Tunes that we added to this data set were in fact added at the very end. If you didn't know that, though, you could reasonable assume that the data was compiled from two different datasets, where the second dataset was simply added to the end of the first. 
+We could reasonably expect these to represent the Tune Squad players, and as part of this module I can tell you that the 16 Tune Squad players that we added to this data set were in fact added at the very end. If you didn't know that, though, you could reasonable assume that the data was compiled from two different datasets, where the second dataset was simply added to the end of the first. 
 
 We can see that the rows for Player ID 34 and 40 are not a part of this set. We removed 40 because that was the row where the points were only 183, and looking at player ID 34:
 
@@ -133,3 +133,5 @@ player_df.loc[player_df['ID'] == 34]
 | 29 | 34 | 1743.0 | 1422.4 | 112.9 | 64.0 | 36.3 | 0.619 | 30.9 | 15.6 | 34.5 | 5.9 | 18.9 | 14.8 | NaN |
 
 The PER for Player 34 is `NaN`, since we haven't had a chance to impute data yet, so that makes sense.
+
+© 2020 Warner Bros. Ent. All Rights Reserved

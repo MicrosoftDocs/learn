@@ -4,9 +4,9 @@ PER is computed from the values of the nine columns before it in the DataFrame (
 
 We would like to build a simple linear regression model to estimate the missing `PER` values. However, as with any estimate, we have to ask ourselves how accurate it is.
 
-To get some sense of how accurate a model might be, it is common in machine learning to split ones data into two subsets: test and training. The training subset would be a portion of the data the is used to train the model, and the other subset would be used to test the model. A common split is to use 75% of the data to train the model and 25% of the data to test the model. However, what if we get unusually lucky or unlucky with our random split of test and training data? For example, what if you chose all human players to train the model, but then tested the accuracy of the model on the Looney Tunes players? It is unlikely to yield accurate results.
+To get some sense of how accurate a model might be, it is common in machine learning to split ones data into two subsets: test and training. The training subset would be a portion of the data the is used to train the model, and the other subset would be used to test the model. A common split is to use 75% of the data to train the model and 25% of the data to test the model. However, what if we get unusually lucky or unlucky with our random split of test and training data? For example, what if you chose all human players to train the model, but then tested the accuracy of the model on the Tune Squad players? It is unlikely to yield accurate results.
 
-To avoid this, statisticians and data scientists use a technique call cross validation. The idea is to iterate through the dataset splitting the data in different ways between training and test data. Doing this multiple times should give us a reasonable idea of how the model will work with new data, even if we only have limited data to work with. This graphic provides a visualization of the cross-validation process:
+To avoid this, statisticians and data scientists use a technique called cross validation. The idea is to iterate through the dataset splitting the data in different ways between training and test data. Doing this multiple times should give us a reasonable idea of how the model will work with new data, even if we only have limited data to work with. This graphic provides a visualization of the cross-validation process:
 
 ![K-fold cross validation](../media/k-fold-cross-validation.png)
 
@@ -188,7 +188,7 @@ PER            0
 dtype: int64
 ```
 
-Finally, let's review the entire DataFrame to see is not without any missing values.
+Next, let's review the entire DataFrame to see is not without any missing values.
 
 ```python
 # Display entire DataFrame.
@@ -251,6 +251,8 @@ player_df.to_csv('player_data_final.csv', index=False)
 >[!NOTE]
 >The `index=False` parameter ensures that the index that was added to the DataFrame when pandas initially read in the CSV file doesn't get written to the CSV file.
 
-You should now see a new CSV file in your space-jam folder.
+You should now see a new CSV file in your space-jam-anl folder.
 
 ![Final cleansed dataset ready for use](../media/output-csv.png)
+
+© 2020 Warner Bros. Ent. All Rights Reserved
