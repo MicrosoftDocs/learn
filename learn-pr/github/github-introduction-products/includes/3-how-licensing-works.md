@@ -59,7 +59,7 @@ If your account has outstanding unpaid charges:
 - For accounts with storage or minutes remaining for the current billing period, GitHub Actions and GitHub Packages will continue to be available until any included usage has been reached.
 - For accounts that have reached the included usage for the current billing period for GitHub Actions or GitHub Packages, both GitHub Actions and GitHub Packages will be disabled to prevent any further overages. If you pay your account by invoice, you must contact our account management team to process payment and reset your usage.
 
-## Codespaces Billing
+## Codespaces billing
 
 As of this writing, Codespaces is beta and during this period it is free to use. When Codespaces becomes generally available, you will be billed for storage and compute usage.
 

@@ -51,4 +51,4 @@ quiz:
       explanation: "A team does not allow a single user to log in using different accounts credentials."
     - content: "A team is intended to reflect a company or group's structure, and is used to provide cascading access permissions and make it easy to notify all team members via mentions"
       isCorrect: true
-      explanation: ""
+      explanation: "Correct!"
