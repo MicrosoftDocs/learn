@@ -43,3 +43,17 @@ quiz:
     - content: "Recent cloud advances in storing large amounts of data."
       isCorrect: false
       explanation: "Incorrect. While the cost of cloud storage has fallen, there are other resources other than storage to take into account."
+  - content: 'What is a benefit of sharding?'
+    choices:
+    - content: "OLAP workloads only need to access a single node to run queries"
+      isCorrect: false
+      explanation: "Incorrect. Sharding can provide extra performance to OLAP workloads by combining the resources of multiple nodes, which reduces latency."
+    - content: "Sharding allows efficient distribution of your data to multiple servers, allowing a level of performance that is impossible to achieve on a single server."
+      isCorrect: true
+      explanation: "Correct. Sharding allows your data to be distributed among nodes, which can leverage more resources than a single node."
+    - content: "Queries can be combined into a single, master query."
+      isCorrect: false
+      explanation: "Incorrect. Sharding allows for intelligent distribution of data, not combining queries."
+    - content: "Sharding allows applications to directly query worker nodes, removing the need for a coordinator node."
+      isCorrect: false
+      explanation: "Incorrect. When sharding has distributed data to worker nodes, applications can't directly connect to worker nodes. Queries are routed through the coordinator node."
