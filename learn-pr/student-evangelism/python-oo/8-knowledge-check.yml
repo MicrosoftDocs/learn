@@ -51,5 +51,5 @@ quiz:
           isCorrect: false
           explanation: It's true that `self` is passed as a parameter if the method wants to refer to members of the object. However, you need `self` as well when you add variables to the object instance at construction time. 
         - content: The `self` keyword refers to the object instance. Variables that are part of the object instance needs to be assigned to self.  The `self` keyword is also passed to every method of a class that needs to access the object instance.
-          isCorrect: false
+          isCorrect: true
           explanation: Python makes heavy use of decorators, these two mentioned decorators don't exist.
