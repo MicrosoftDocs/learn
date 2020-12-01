@@ -38,7 +38,7 @@ Exam AZ-900 includes these six study areas:
 | Describe identity, governance, privacy, and compliance features | 20-25% |
 | Describe Azure cost management and Service Level Agreements | 10-15% |
 
-Each study area maps to an Azure fundamentals learning path.
+Each study area maps to a learning path in Azure fundamentals.
 
 The percentages shown indicate the relative weight of each area on the exam. The higher the percentage, the more questions that part of the exam will contain. Be sure to read the exam page for specifics about what skills are covered in each area.
 
