@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.exercise-create-spark-notebook
+title: 'Exercise: Create a spark notebook in Azure Synapse Analytics'
+metadata:
+  title: 'Exercise: Create a spark notebook in Azure Synapse Analytics'
+  description: "Exercise: Create a spark notebook in Azure Synapse Analytics"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-exercise-create-spark-notebook.md)]
