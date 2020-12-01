@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.python-oo.7-exercise-extend-game
-title: Unit
+title: Exercise - Extend the game implementation with added rules
 metadata:
-  title: Unit
-  description: Describe unit
+  title: Exercise - extend the game implementation with added rules
+  description: In this unit you will add rules supporting a more advanced version of Rock, Paper, Scissor.
   author: softchris
   ms.author: chnoring
   ms.date: 12/01/2020
