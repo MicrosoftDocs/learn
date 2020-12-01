@@ -1,5 +1,3 @@
-# Summary
-
 In this module, you learned:
 
 - What types of applications can be built using Rust.
