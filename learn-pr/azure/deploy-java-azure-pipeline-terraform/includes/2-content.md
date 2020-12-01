@@ -1,10 +1,8 @@
-In this unit, you'll learn about Terraform with Azure.
+In this unit, you'll learn about the benefits of using Terraform to manage the provisioning of your infrastructure.
 
 # Terraform with Azure
 
 Terraform is an open-source tool for provisioning and managing cloud infrastructure. It manages "infrastructure as code" in configuration files that describe the topology of cloud resources. These resources include virtual machines, storage accounts, and networking interfaces.
-
-This module describes the benefits of using Terraform to manage Azure infrastructure.
 
 ## Automate infrastructure management
 
@@ -29,4 +27,4 @@ Terraform is adept at deploying an infrastructure across multiple cloud provider
 
 ## Next steps
 
-Now that you have an overview of Terraform and its benefits, here are suggested next steps.
+Now that you have an overview of Terraform and its benefits, the next unit will discuss the configuration of your Terraform environment and scripts.

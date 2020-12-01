@@ -1,18 +1,17 @@
-In this unit, we look at Terraform setup and scripting.
+In this unit, we look at Terraform configuration and scripting.
 
 ## Hashicorp Configuration Language (HCL)
 
-Terraform uses its own configuration language, designed to allow concise descriptions of infrastructure. The Terraform language is declarative, describing an intended goal rather than the steps to reach that goal.
-
-Using Terraform, you create configuration files using HCL syntax.
+Terraform uses its own configuration language, similar to YAML, designed to allow descriptions of infrastructure.
+You create configuration files using HCL (HashiCorp Configuration Language) syntax.
+HCL is declarative, describing an intended goal rather than the steps to reach that goal.
 The HCL syntax allows you to specify the cloud provider - such as Azure - and the elements that make up your cloud infrastructure.
 
 ![Hashicorp Configuration Language.](../media/3-content.png)
 
 ### Interpolation
 
-<!-- elaborate-->
-It's easy to interpolate Strings into your Terraform scripts by using the following Syntax:
+HCL2 simplifies the process of writing, inspecting, and applying the configuration to Azure resources. The first version of HCL in versions prior to Terraform 0.12 used string types while HCL2 in Terraform version 0.12 and higher leverages a generalized type system and stricter parsing of configuration. The new type system expands functionality such as list comprehension, null or unset values, and expanded deserialization of JSON and other formats.
 
 ```bash
 azure_instance.web.0.id
