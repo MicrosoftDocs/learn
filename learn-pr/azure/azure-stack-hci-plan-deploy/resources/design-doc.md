@@ -64,7 +64,7 @@ Contoso's Chief Information Officer (CIO) realizes that implementing these workl
 
 IT management has started its search for solutions that would satisfy these requirements. Your role, as the lead system engineer, is to assist with the search and implement a proof-of-concept environment that would help identify the most viable candidate.
 
-## 2nd unit: Is Azure Stack HCI right for my organization?
+## 2nd unit: What are the use caes of Azure Stack HCI?
 
 **Type of unit:** Learning content unit
 

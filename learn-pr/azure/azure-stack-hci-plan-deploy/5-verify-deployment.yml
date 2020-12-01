@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-stack-hci-plan-deploy.5-verify-deployment
 metadata:
-  title: Unit title
-  description: TODO
+  title: Validate deployment of Azure Stack HCI
+  description: An overview of validating a deployment of Azure Stack HCI
   ms.date: 09/21/2020
   author: jboeshart
   ms.author: jaboes

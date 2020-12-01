@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-stack-hci-plan-deploy.6-integration-options
 metadata:
-  title: Unit title
-  description: TODO
+  title: Integrate Azure Stack HCI with Azure
+  description: An overview of the integration capabilities between Azure Stack HCI and Azure
   ms.date: 09/21/2020
   author: jboeshart
   ms.author: jaboes
