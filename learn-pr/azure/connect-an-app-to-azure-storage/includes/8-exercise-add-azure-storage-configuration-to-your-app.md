@@ -38,17 +38,16 @@ Let's add support to our .NET core application to retrieve a connection string f
 
 1. Next, open the project file (**PhotoSharingApp.csproj**) in the editor.
 
-1. Add the following configuration block to include the new file in the project and copy it to the output folder. This ensures that the app configuration file is placed in the output directory when the app is compiled/built.
+1. Add the following configuration block to the file in the project. Add below < / ItemGroup > from the existing code. 
 
     ```xml
-    <Project Sdk="Microsoft.NET.Sdk">
-       ...
+   
         <ItemGroup>
             <None Update="appsettings.json">
               <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
             </None>
         </ItemGroup>
-    </Project>
+
     ```
 
 1. Save the file. (Make sure you do this or you will lose the change when you add the package below!)
