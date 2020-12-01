@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.wwl.work-with-data-warehouses-using-azure-synapse-analytics
+metadata:
+  title: Work with Data Warehouses using Azure Synapse Analytics
+  description: Work with Data Warehouses using Azure Synapse Analytics
+  ms.date: 11/30/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with Data Warehouses using Azure Synapse Analytics
+prerequisites: |
+  * It is recommended that students have completed Data Fundamentals before starting this learning path.
+summary: |
+  Explore the tools and techniques that can be used to work with Modern Data Warehouses productively and securely within Azure Synapse Analytics.
+iconUrl: /learn/achievements/work-with-data-warehouses-using-azure-synapse-analytics.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+modules:
+- learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics
+- learn.wwl.use-data-loading-best-practices-azure-synapse-analytics
+- learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics
+- learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics
+- learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics
+- learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics
+- learn.wwl.secure-data-warehouse-azure-synapse-analytics
+trophy:
+  uid: learn.wwl.work-with-data-warehouses-using-azure-synapse-analytics.trophy

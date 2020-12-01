@@ -45,7 +45,7 @@ Several tools and services are available to help you plan and complete the four 
 | [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview)                   | Assess and migrate   | Perform assessment and migration of VMware VMs, Hyper-V VMs, cloud VMs, and physical servers, as well as databases, data, virtual desktop infrastructure, and web applications, to Azure. |
 | [Service Map](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)           | Assess   | Maps communication between application components on Windows or Linux. Helps you identify dependencies when scoping what to migrate. |
 | [Azure TCO Calculator](https://azure.microsoft.com/pricing/tco/calculator)                   | Assess   | Estimates your monthly running costs in Azure versus on-premises. |
-| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview)        | Migrate  | Uses the Data Migration Assistant and the Azure portal to to migrate database workloads to Azure. |
+| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview)        | Migrate  | Uses the Data Migration Assistant and the Azure portal to migrate database workloads to Azure. |
 | [Data Migration Tool](https://docs.microsoft.com/azure/cosmos-db/import-data)                | Migrate  | Migrates existing databases to Azure Cosmos DB. |
 | [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/)                   | Optimize | Helps you monitor, control, and optimize ongoing Azure costs. |
 | [Azure Advisor](https://azure.microsoft.com/services/advisor/)                               | Optimize | Helps optimize your Azure resources for high availability, performance, and cost. |

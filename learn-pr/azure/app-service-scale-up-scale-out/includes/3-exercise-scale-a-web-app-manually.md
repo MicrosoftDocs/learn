@@ -29,7 +29,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     | Resource Group | Create a new resource group called **mslearn-scale** |
     | App name | \<your-webapp-name\> |
     | Publish | Code |
-    | Runtime stack | .Net Core 3.1 (LST)|
+    | Runtime stack | .NET Core 3.1 (LST)|
     | O/S | Windows|
     | App Service plan/Location | *Leave default* |
 
