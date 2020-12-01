@@ -1,22 +1,24 @@
-The pipe `|` character is used to connect several cmdlets, where one cmdlet's output serve as the input for the next cmdlet to the right of the pipe. This connection of cmdlets means you are creating a much more powerful and complex statement than a single cmdlet could have accomplished. The connection is referred to as a _pipeline_, consisting of one or more pipes and cmdlets.
+The pipe character (`|`) is used to connect cmdlets. The output of the cmdlet on the left of the pipe serves as the input for the cmdlet on the right of the pipe. This connection of cmdlets allows you to create a statement that's more powerful and complex than a single cmdlet. The connection is called a _pipeline_. It consists of one or more pipes and cmdlets.
 
-You've been creating pipelines already, in previous units in this module. For example, when you asked for the fields and columns of a process you had to _pipe_ the `Get-Command` cmdlet with `Get-Member`. What you did was asking for details on a specific process. By _piping_ `Get-Member` to the result you were able to have a look at the resulting object and inspect it for its types, events, methods and more.
+You've already created some pipelines in this module. For example, to find the fields and columns of a process, you _piped_ the `Get-Command` cmdlet with `Get-Member`. In effect, you asked for details about a specific process. By piping `Get-Member` to the result, you inspected the resulting object's types, events, and methods.
 
-When you start constructing pipelines more and more, it's good to know about concepts that make the construction process easier, namely:
+As you construct pipelines, apply these helpful concepts:
 
-- **Pipeline evaluation**. When a pipeline is being evaluated, it does so in a specific order. Learning how this process happen makes it easier to understand how to connect two or more cmdlets.
-- **Helper constructs**. As you construct more and more complex pipelines, you build longer and longer statements separated by the pipe character. Part of this connection process is being able to filter out the data you need. There are cmdlet helpers as well as operators that can make this _filtering_ task easier.
-- **Filtering and formatting principles**.  As you apply filtering functions and operators, it's good to know about some sound principles to ensure your constructed statement is written in an efficient way and that the end result is formatted in a readable and usable way.
+- **Pipeline evaluation**: A pipeline is evaluated in a specific order. By understanding this process, you can better understand how to connect two or more cmdlets.
+- **Helper constructs**: As your pipelines become more complex, you build longer statements separated by the pipe character. Part of this connection process is filtering out the data you need. Cmdlet helpers and operators can make this filtering task easier.
+- **Filtering and formatting principles**:  As you apply filtering functions and operators, follow filtering and formatting principles. Sound principles will help you write your statement efficiently so that the result is readable and usable.
 
 ## Pipeline input evaluation
 
-Most cmdlets lend themselves to be used in two different ways. Either you only call that specific cmdlet and assign values to the mandatory parameters. Or you use it as part of a pipeline, a longer expression where it operates on input that usually is the result of calling another cmdlet. PowerShell differs between these two types of usages by letting the author of the cmdlet specify a field **Accept pipeline input**. This field takes a boolean as a value and if set to true means it accepts pipeline data.
+Most cmdlets can be used in two ways. You can call only a specific cmdlet and assign values to the mandatory parameters. Or you can use the cmdlet in a pipeline, which is a long expression where the cmdlet operates on input that's usually the result of calling another cmdlet. 
 
-As part of your learning journey it's important to understand how to interpret what type of input parameters a cmdlet takes, in what order it's processed and how to provide data. It's important as it helps you understand how to combine suitable cmdlet statements in a useful way to solve your problems.
+PowerShell treats these two usages differently by letting the author of the cmdlet specify the field **Accept pipeline input**. This field takes a Boolean as a value. If the value is true, then PowerShell accepts pipeline data.
+
+As part of your learning journey, you need to understand what type of input parameters a cmdlet takes, in what order the parameters are processed, and how to provide data. This understanding helps you combine suitable cmdlet statements in a useful way to solve your problems.
 
 ### Evaluation order in the pipeline
 
-It's not uncommon that a cmdlet takes more than parameter meant for the pipeline.
+A cmdlet often takes more than parameter meant for the pipeline.
 
 But how do you know which of the parameter inputs it will try to use first? Let's explain the evaluation by looking at a real example. By running the command, `help Get-Process -Full` you will get a detailed listing of the help section of the `Get-Process` command. The INPUTS and the PARAMETERS section reveal there are three possible inputs:
 
