@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which one of the analytics rules can administrators customize with their own query rules?"
+  - content: "Which one of the analytics rules can you customize with your own query rules?"
     choices:
     - content: "Fusion"
       isCorrect: false
