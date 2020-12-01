@@ -38,7 +38,7 @@ Let's add support to our .NET core application to retrieve a connection string f
 
 1. Next, open the project file (**PhotoSharingApp.csproj**) in the editor.
 
-1. Add the following configuration block to the file in the project. Add the below code just under the </ItemGroup> from the existing code. 
+1. Add the following configuration block to the file in the project. Add below < / ItemGroup > from the existing code. 
 
     ```xml
    
