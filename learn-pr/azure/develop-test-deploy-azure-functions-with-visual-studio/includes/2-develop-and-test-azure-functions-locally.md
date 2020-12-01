@@ -44,7 +44,7 @@ An Azure Function is triggered by an event rather than being called directly fro
 
 :::image type="content" source="../media/2-function-triggers.png" alt-text="Screenshot showing the Azure Function triggers available, with HTTP Trigger highlighted." loc-scope="vs":::
 
-For Visual Studio 2019, in the **Configure your new project** page, in the **Project name** field, enter **WatchPortalFunction**. Keep the default for the **Location** field. The **Solution name** field should default to **WatchPortalFunction**. Select the checkbox **Place solution and project in the same directory**. Select **Create.** The **Create a new Azure Functions application** page appears.
+For Visual Studio 2019, in the **Configure your new project** page, in the **Project name** field, enter **WatchPortalFunction**. For the **Location** field, keep the default. The **Solution name** field should default to **WatchPortalFunction**. Select the checkbox **Place solution and project in the same directory**. Select **Create.** The **Create a new Azure Functions application** page appears.
 
 :::image type="content" source="../media/2-function-triggers-vs19.png" alt-text="Screenshot showing the Azure Function triggers available, with HTTP Trigger highlighted." loc-scope="vs":::
 
