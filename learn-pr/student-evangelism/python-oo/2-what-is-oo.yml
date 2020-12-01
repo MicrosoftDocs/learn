@@ -3,7 +3,7 @@ uid: learn.python-oo.2-what-is-oo
 title: What is Object oriented programming
 metadata:
   title: What is Object oriented programming
-  description: Describe unit
+  description: This unit covers the Object oriented programming paradigm. It talks about what makes it unique and how you can model a problem domain with it.
   author: softchris
   ms.author: chnoring
   ms.date: 12/01/2020

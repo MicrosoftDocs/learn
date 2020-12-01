@@ -3,7 +3,7 @@ uid: learn.python-oo.5-game-transitions-with-methods
 title: Add behavior with methods
 metadata:
   title: Add behavior with methods
-  description: Describe unit
+  description: This unit describes how to add behavioor to your objects. It also covers data encapsuation and the need to keep your object's data secret from other objects and how to do in Python. 
   author: softchris
   ms.author: chnoring
   ms.date: 12/01/2020
