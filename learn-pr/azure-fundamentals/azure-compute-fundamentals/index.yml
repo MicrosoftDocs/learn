@@ -36,7 +36,6 @@ products:
 - azure-container-instances
 - azure-container-registry
 - azure-kubernetes-service
-- azure-windows-virtual-desktop
 units:
 - learn.azure.azure-compute-fundamentals.introduction
 - learn.azure.azure-compute-fundamentals.overview
