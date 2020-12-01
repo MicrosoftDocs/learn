@@ -4,8 +4,8 @@ metadata:
   title: Introduction
   description: Provide an introduction to Azure Stack HCI core technologies.
   ms.date: 09/21/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction

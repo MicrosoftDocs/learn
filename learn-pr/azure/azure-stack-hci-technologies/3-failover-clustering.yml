@@ -2,14 +2,14 @@
 uid: learn.azure.azure-stack-hci-technologies.3-failover-clustering
 metadata:
   title: What is Failover Clustering? 
-  description: Provide an introduction to failover clustering.
+  description: Describe Windows Server Failover Clustering and its components
   ms.date: 09/21/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Unit title
 durationInMinutes: 12
+title: What is Failover Clustering?
 content: |
   [!include[](includes/3-failover-clustering.md)]
 quiz:
