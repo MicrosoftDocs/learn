@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-get-started.8-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 12/01/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 4
+content: |
+  Answer the following questions to demonstrate what you've learned:
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How does Rust code get to be executed?"
+    choices:
+    - content: "Scripts are interpreted by Rust."
+      isCorrect: false
+      explanation: "Explanation1"
+    - content: "Using a Virtual Machine."
+      isCorrect: false
+      explanation: "Explanation2"
+    - content: "Through compilation followed by direct execution."
+      isCorrect: true
+      explanation: "Explanation3"
+    - content: "Rust code must be included in a C/C++ source file."
+      isCorrect: false
+      explanation: "Explanation4"
+  - content: "What Cargo can't do?"
+    choices:
+    - content: "Build an existing Rust project"
+      isCorrect: false
+      explanation: "Explanation1"
+    - content: "Test a Rust project"
+      isCorrect: false
+      explanation: "Explanation2"
+    - content: "Update the installed rust compiler version"
+      isCorrect: true
+      explanation: "Explanation3"
+    - content: "Publish a library to Crates.io"
+      isCorrect: true
+      explanation: "Explanation4"
+ 
