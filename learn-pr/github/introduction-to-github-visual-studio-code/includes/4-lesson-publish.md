@@ -4,7 +4,7 @@ As a Visual Studio Code user who has authenticated to GitHub, you'll get some im
 
 If you're starting with a new project that you haven't yet pushed to GitHub, the process for getting it up on GitHub has quite a few steps:
 
-1. Create a GitHub repo on github.com.
+1. Create a GitHub repo on Github.com.
 1. Copy the remote endpoint.
 1. Run `git init` locally.
 1. Add the remote endpoint.
