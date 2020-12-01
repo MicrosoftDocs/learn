@@ -1,16 +1,18 @@
-Here you will run commands to aid your learning journey in PowerShell. PowerShell isn't something you just learn overnight but something that's learned command by command. However your learning journey can be greatly improved through an effective use of the core cmdlets.
+In this exercise, you'll run commands that will help you learn more about PowerShell. PowerShell isn't something you learn overnight. It's learned command by command. You can speed up your learning by effectively using the core cmdlets.
 
 ## Locate a command
 
-Locating commands is done with the `Get-Command` cmdlet. The cmdlet helps you search among all the available cmdlets installed on your system. With the help of flags, you can narrow it down to just the cmdlets that fits your scenario. In this scenario, you are looking for cmdlet that helps you work with files.
+Locate commands by using the `Get-Command` cmdlet. The cmdlet helps you search all of the cmdlets installed on your system. Use flags to narrow down your search results to just the cmdlets that fit your scenario. 
 
-1. Run the command `Get-Command` with the flag `-Noun` and with `File*` specified (anything related to files):
+In this scenario, you're looking for a cmdlet that can help you work with files.
+
+1. Run the command `Get-Command` with the flag `-Noun`. Specify `File*` to find anything related to files.
 
    ```powershell
     Get-Command -Noun File*
     ```
 
-    the response shows something similar to the below text:
+    The response shows something similar to the following text.
 
     ```output
     CommandType     Name                                               Version    Source
@@ -20,15 +22,15 @@ Locating commands is done with the `Get-Command` cmdlet. The cmdlet helps you se
     Cmdlet          Unblock-File                                       7.0.0.0    Microsoft.PowerShell.Utility
    ```
 
-   The cmdlets `Get-FileHash`, `Out-File` and `Unblock-File`, all matches your query. At this point, you have a manageable response, only three records matching your query. You could filter it down even more by adding a `-Verb` as parameter to your query next.
+   The cmdlets `Get-FileHash`, `Out-File`, and `Unblock-File` all match your query. Now you have a manageable response. To further filter the response, add the `-Verb` parameter to your query.
 
-1. Run the command `Get-Command` with flags `-Verb` and `-Noun` specified:
+1. Run `Get-Command`. Specify the flags `-Verb` and `-Noun`.
 
    ```powershell
    Get-Command -Verb Get -Noun File*
    ```
 
-   It produces an output similar to the below:
+   The result is similar to the following output.
 
    ```output
    CommandType     Name                                               Version    Source
@@ -36,19 +38,21 @@ Locating commands is done with the `Get-Command` cmdlet. The cmdlet helps you se
    Cmdlet          Get-FileHash                                       7.0.0.0    Microsoft.PowerShell.Utility
    ```
 
-   This time you only get one record to match given that you've specified both the parameters `-Noun` and `-Verb`. As you can see, by knowing the domain you work in, file management, you can specify that as the noun. If you have even more information on what, you want to do within that domain you can specify the `-Verb` parameters. The end result of using one or possibly two parameters is that you can quickly find the cmdlet that you need out of thousands.  
+   This time, only one record matches your search because you specified both the `-Noun` parameter and the `-Verb` parameter. 
+
+Because the domain you work in is file management, you specified `File` as the noun. If you know what you want to do within that domain, you can specify `-Verb` parameters. By using one or possibly two parameters, you can quickly find the cmdlet that you need.  
 
 ## Use Get-Help to discover commands
 
-When you've tracked down a cmdlet you want to use, you want to know more about it like the different ways you can call it, with what parameters or maybe read up on some example usage cases. The `Get-Help` cmdlet is what you use for those scenarios.
+After you find a cmdlet you want to use, you can learn more about it. For example, you can learn about the different ways to call it, what parameters you can use, or some example use cases. Use the `Get-Help` cmdlet to learn about cmdlets:
 
-1. Run the command `Get-Help`:
+1. Run the command `Get-Help`.
 
    ```powershell
    Get-Help -Name Get-FileHash
    ```
 
-   the above command produces an output similar to the below text:
+   This command produces an output similar to the following text.
 
    ```output
    NAME
@@ -73,15 +77,15 @@ When you've tracked down a cmdlet you want to use, you want to know more about i
                go to https://go.microsoft.com/fwlink/?LinkId=517145.
    ```
 
-   You feel the above output is not a great reading experience so you decide on using a little verbose alternative namely the `help` alias.
+   Because this output is a difficult to read, you decide to use a verbose alternative. That is, you use the `help` alias.
 
-1. Type the `help` command:
+1. Type the `help` command.
 
    ```powershell
    help Get-FileHash
    ```
 
-   You now get a reduced version of the help output that looks similar to this text:
+   You now get a reduced version of the help output. It looks like the following text.
 
    ```output
    NAME
@@ -99,15 +103,15 @@ When you've tracked down a cmdlet you want to use, you want to know more about i
         -Algorithm <string>
    ```
 
-   Additionally you can use the arrow keys to navigate the results vertically, row by row, using the arrow keys. On top of that, you can also browse the results page by page using the space key.
+   You can move through the results vertically, row by row, by using the arrow keys. To view the results page by page, use the spacebar.
 
-1 Run `help Get-FileHash -Examples`
+1. Run `help Get-FileHash -Examples`.
 
    ```powershell
    help Get-FileHash -Examples
    ```
 
-   You will see an out looking like the below text:
+   The output looks like the following text.
 
    ```output
    NAME
@@ -126,44 +130,46 @@ When you've tracked down a cmdlet you want to use, you want to know more about i
         Path      : /etc/apt/sources.list
    ```
 
-   The command produces an output containing a list of examples of using the cmdlet. Locate the part of the response containing the text `Example 1`. This portion of the text shows how you can use `Get-FileHash` with a file path and _piping_ it to the cmdlet `Format-List`.
+   The output contains a list of examples that use the cmdlet. Locate the part of the response that contains the text `Example 1`. This portion of the text shows how you can use `Get-FileHash` with a file path, piping it to the cmdlet `Format-List`.
 
    > [!TIP]
-   > Adding the flag `-Examples`, when searching for help will quickly show you a working example, which can greatly speed up your learning.
+   > To quickly see an example, add the flag `-Examples` when you search for help.
 
-## Discover object with Get-Member
+## Discover an object by using Get-Member
 
-Managing processes on a machine is a thing you are likely to do. You might want to keep track on what processes are running, how much resources they take up and what ID they have, should you need to close them down. You've found out that there's a cmdlet `Get-Process` that lists information on a process. At this point, you want to find what more cmdlets there are working with processes and what a process consists of. You will use the `Get-Member` cmdlet to tackle this scenario.
+In some scenarios, you'll need to manage processes on a machine. If you need to stop some of the processes, then you might want to track what processes are running, how much resources they're using, and what their process IDs are. You know that the cmdlet `Get-Process` lists information about processes. Now you want to find what other cmdlets work with processes and what a process consists of. 
 
-1. Run `Get-Process`:
+In this scenario, you'll use the `Get-Member` cmdlet.
+
+1. Run `Get-Process`.
 
    ```powershell
    Get-Process
    ```
 
-   You will see a table-like response consisting of all running processes on your machine. The exact response may wary depending on what's running on your machine. Pick a process name from the right-most column and use that as an argument for your next command:
+   The table-like response consists of all running processes on your machine. The exact response depends on what's running on your machine. Pick a process name from the column on the right, and use it as an argument for your next command.
 
-1. Run `Get-Process`, this time with process name and with `Get-Member` piped:
+1. Run `Get-Process` again. This time, use the process name and pipe `Get-Member`.
 
    ```powershell
    Get-Process -Name {selected process name} | Get-Member
    ```
 
-   The above command produces a lengthy response consisting of all the members, events, and methods and more. What you care about at this point, is the first line that lists the following information:
+   This command produces a long response that consists of all of the members, events, and methods. At this point, focus on the first line, which lists the following information.
 
    ```output
    TypeName: System.Diagnostics.Process
    ```
 
-   At this point, you know the type that's being dealt with. You can now learn more about what other cmdlets use this type and build out your knowledge, by using `Get-Command` with type as a parameter next.
+   Now you know the type is `Process`, so you can learn more about what other cmdlets use this type. Next, use `Get-Command` and add the type as a parameter.
 
-1. Run the command `Get-Command`:
+1. Run `Get-Command`.
 
    ```powershell
    Get-Command -ParameterType Process
    ```
 
-   The command produces a response similar to the below text:
+   This command produces a response similar to the following text.
 
    ```output
     CommandType     Name                                               Version    Source
@@ -176,4 +182,4 @@ Managing processes on a machine is a thing you are likely to do. You might want 
     Cmdlet          Wait-Process                                       7.0.0.0    Microsoft.PowerShell.Management
    ```
 
-   Congrats, by knowing the name of one cmdlet `Get-Process`, you've managed to discover other commands related to it. You can now continue to learn more about these new commands you've discovered by using `Get-Help`.
+Congratulations! By knowing the name of the cmdlet `Get-Process`, you've discovered related commands. You can continue to learn about these commands by using `Get-Help`.
