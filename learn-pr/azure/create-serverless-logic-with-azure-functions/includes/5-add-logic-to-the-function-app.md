@@ -184,7 +184,7 @@ HTTP triggers let you use API keys to block unknown callers by requiring the key
 
 Since we specified "Function" when we created this function, we will need to supply the key when we send the HTTP request. You can send it as a query string parameter named `code`, or as an HTTP header (preferred) named `x-functions-key`.
 
-The function and master keys are found in the **Fuction Keys** fron the left-hand menu. By default, they are hidden, and you need to display them.
+The function and master keys are found in the **Function Keys** from the left-hand menu. By default, they are hidden, and you need to display them.
 
 1. Show the default Function Key, and copy it to the clipboard.
 
@@ -192,7 +192,7 @@ The function and master keys are found in the **Fuction Keys** fron the left-han
 
 1. From Home, select your function and at the top-right copy your URL.
 
-1. Next, return to **Fuctions** select the **Http Trigger** select **Code + Test**  select **Test/Run** and in the command line body where you used the **cURL** command, paste the cURL command with the URL for your function, and the Function key.  Select **Run**.
+1. Next, return to **Functions** select the **Http Trigger** select **Code + Test**  select **Test/Run** and in the command line body where you used the **cURL** command, paste the cURL command with the URL for your function, and the Function key.  Select **Run**.
 
     - Use a `POST` request.
     - Add a `Content-Type` header value of type `application/json`.
