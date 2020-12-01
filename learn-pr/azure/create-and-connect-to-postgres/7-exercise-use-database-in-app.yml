@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 azureSandbox: true
-interactive: csharp
+interactive: bash
 content: |
   [!include[](includes/7-exercise-use-database-in-app.md)]

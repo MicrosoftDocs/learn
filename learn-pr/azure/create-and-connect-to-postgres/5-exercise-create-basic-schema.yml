@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
-interactive: bash
 azureSandbox: true
+interactive: bash
 content: |
   [!include[](includes/5-exercise-create-basic-schema.md)]
