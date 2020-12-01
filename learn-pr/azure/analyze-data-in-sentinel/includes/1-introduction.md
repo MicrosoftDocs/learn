@@ -18,9 +18,9 @@ Security analysts at Contoso face a huge triage burden. They deal with a high vo
 - Manually from different project dashboards
 - By using a traditional correlation engine
 
-Additionally, the time spent to set up and maintain IT infrastructure takes the security operations (SecOps) team away from its security tasks.
+Additionally, the time spent to set up and maintain IT infrastructure takes the Security Operations Center (SOC) team away from its security tasks.
 
-The IT director believes that Azure Sentinel Analytics will help the security analysts perform complex investigations faster and improve their SecOps. As Contoso's lead system engineer and Azure administrator, you've been asked to set up analytics rules in Azure Sentinel so that the SecOps team can identify and analyze attacks to Contoso's resources.
+The IT director believes that Azure Sentinel Analytics will help the security analysts perform complex investigations faster and improve their Security Operations Center (SOC). As Contoso's lead system engineer and Azure administrator, you've been asked to set up analytics rules in Azure Sentinel so that the SecOps team can identify and analyze attacks to Contoso's resources.
 
 In this module, you'll understand the importance of using Azure Sentinel Analytics, create and implement analytics rules from existing templates, create new rules and queries using the wizard, and manage rules with modifications.
 
