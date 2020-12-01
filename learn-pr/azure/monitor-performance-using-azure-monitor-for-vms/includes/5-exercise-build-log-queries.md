@@ -10,7 +10,7 @@ In this unit, you'll:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), search for and select **Log Analytics workspaces**.
 
-1. Under **General**, select **Logs**. The Queries page should open. If it doesn't, in the upper-right corner of the logs editor, select **Queries**.
+1. Under **General**, select **Logs**. The **Queries** page should open. If it doesn't, in the upper-right corner of the logs editor, select **Queries**.
 
     :::image type="content" source="../media/4-queries-logs-pane.png" alt-text="Screenshot showing where to select Queries from within the log editor pane." lightbox="../media/4-queries-logs-pane.png":::
 
@@ -18,7 +18,7 @@ In this unit, you'll:
 
     :::image type="content" source="../media/5-clear-log-analytics-filter.png" alt-text="Screenshot of where to clear Log Analytics workspaces filter." lightbox="../media/5-clear-log-analytics-filter.png":::
 
-1. Select **Virtual Machine Scale Sets** on the far left, underneath **All Queries**.
+1. Select **Virtual Machine Scale Sets** on the far left, under **All Queries**.
 
     :::image type="content" source="../media/5-virtual-machine-scale-set-queries.png" alt-text="Screenshot of Virtual Machine Scale Set queries." lightbox="../media/5-virtual-machine-scale-set-queries.png":::
 
