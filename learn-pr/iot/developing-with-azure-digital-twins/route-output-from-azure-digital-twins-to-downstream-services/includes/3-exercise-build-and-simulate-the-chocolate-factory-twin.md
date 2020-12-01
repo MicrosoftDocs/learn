@@ -17,7 +17,7 @@ This pattern relies on the twin updates, rather than forwarding telemetry from a
 
 To proceed, please choose one of the following options:
 
-- If you have been following the "Developing with Azure Digital Twins" Learning Path modules in sequence, and have successfully completed all exercises in "Module 3: Ingest Data into Azure Digital Twins," and retained the solution resources in your Azure Subscription, please skip to [Create a route and filter to twin update notifications](../includes/4-exercise-create-a-route-and-filter-to-twin-update-notifications.md).
+- If you have been following the "Developing with Azure Digital Twins" Learning Path modules in sequence, and have successfully completed all exercises in "Module 3: Ingest Data into Azure Digital Twins," and retained the solution resources in your Azure Subscription, please skip to [Create a route and filter to twin update notifications](/learn/modules/developing-with-azure-digital-twins/route-output-from-azure-digital-twins-to-downstream-services/4-exercise-create-a-route-and-filter-to-twin-update-notifications).
 
 - If you haven't completed the previous modules and would still like to proceed with the exercises in this module, please continue with the following steps.
 
