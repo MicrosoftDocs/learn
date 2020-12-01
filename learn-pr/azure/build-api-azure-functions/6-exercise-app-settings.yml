@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-api-azure-functions.8-exercise-app-settings
+uid: learn.azure.build-api-azure-functions.6-exercise-app-settings
 title: Exercise - Add connection string to Azure Functions app settings
 metadata:
   title: Exercise - Add connection string to Azure Functions app settings
@@ -13,4 +13,4 @@ interactive: bash
 azureSandbox: true
 durationInMinutes: 4
 content: |
-  [!include[](includes/8-exercise-app-settings.md)]
+  [!include[](includes/6-exercise-app-settings.md)]

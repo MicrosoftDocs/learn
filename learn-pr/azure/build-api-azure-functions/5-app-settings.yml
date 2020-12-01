@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-api-azure-functions.7-app-settings
+uid: learn.azure.build-api-azure-functions.5-app-settings
 title: Understand Azure Functions app settings
 metadata:
   title: Understand Azure Functions app settings
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-app-settings.md)]
+  [!include[](includes/5-app-settings.md)]

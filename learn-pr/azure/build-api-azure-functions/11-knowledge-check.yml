@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-api-azure-functions.10-knowledge-check
+uid: learn.azure.build-api-azure-functions.11-knowledge-check
 title: Knowledge Check
 metadata:
   title: Knowledge Check
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/10-knowledge-check.md)]
+  [!include[](includes/11-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
