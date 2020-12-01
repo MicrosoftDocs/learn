@@ -29,8 +29,9 @@ products:
   - vs
 prerequisites: >
   - Basic knowledge of Python including syntax, writing and invoking functions,
-  creating variables, reading inputs and outputs from the Python console.  -
-  Familiarity using a text editor or IDE  - Knowledge on how to execute a python
+  creating variables, reading inputs and outputs from the Python console.  
+  - Familiarity using a text editor or IDE  
+  - Knowledge on how to execute a python
   program
 units:
   - learn.python-oo.1-introduction
