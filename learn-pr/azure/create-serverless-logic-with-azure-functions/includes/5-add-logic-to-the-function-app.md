@@ -28,9 +28,9 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 
 1. In the list of all templates available to this function app, select **HTTP trigger** .
 
-1. Enter **DriveGearTemperatureService** in the name field of the **New Function** dialog that appears. Leave the Authorization level as "Function" and press the **Create** button to create the function.
+1. Select **Create** button to create the function.
 
-1. When your function creation completes, the code editor opens with the contents of the *index.js* code file. The default code that the template generated for us is listed in the following snippet.
+1. When your function creation completes, on the left-side the code editor is avalibal **Code + Test**.  Select *index.js* code file. The default code that the template generated for us is listed in the following snippet.
 
     ```javascript
     module.exports = async function (context, req) {
@@ -53,7 +53,7 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 
     Our function expects a name to be passed in either through the HTTP request query string or as part of the request body. The function responds by returning the message  **Hello, {name}**, echoing back the name that was sent in the request.
 
-    On the right-hand side of the source view, you'll find two tabs. The **View files** tab lists the code and config file for your function.  Select **function.json** to view the configuration of the function, which should look like the following:
+    On the top of the source view, you'll find the drop down.  Select **function.json** to view the configuration of the function, which should look like the following:
 
     ```javascript
     {
@@ -184,13 +184,15 @@ HTTP triggers let you use API keys to block unknown callers by requiring the key
 
 Since we specified "Function" when we created this function, we will need to supply the key when we send the HTTP request. You can send it as a query string parameter named `code`, or as an HTTP header (preferred) named `x-functions-key`.
 
-The function and master keys are found in the **Manage** section when the function is expanded. By default, they are hidden, and you need to display them.
+The function and master keys are found in the **Fuction Keys** fron the left-hand menu. By default, they are hidden, and you need to display them.
 
-1. Expand your function and select the **Manage** section, show the default Function Key, and copy it to the clipboard.
+1. Show the default Function Key, and copy it to the clipboard.
 
     ![Screenshot of the Azure portal showing the function Manage pane with the revealed function key highlighted.](../media/5-get-function-key.png)
 
-1. Next, from the command line where you installed the **cURL** tool, format a cURL command with the URL for your function, and the Function key.
+1. From Home, select your function and at the top-right copy your URL.
+
+1. Next, return to **Fuctions** select the **Http Trigger** select **Code + Test**  select **Test/Run** and in the command line body where you used the **cURL** command, paste the cURL command with the URL for your function, and the Function key.  Select **Run**.
 
     - Use a `POST` request.
     - Add a `Content-Type` header value of type `application/json`.
@@ -201,7 +203,7 @@ The function and master keys are found in the **Manage** section when the functi
     curl --header "Content-Type: application/json" --header "x-functions-key: <your-function-key>" --request POST --data "{\"name\": \"Azure Function\"}" https://<your-url-here>/api/DriveGearTemperatureService
     ```
 
-The function will respond back with the text `"Hello Azure Function"`.
+The function will respond back with the text `"200 OK"`.
 
 > [!CAUTION]
 > If you are on Windows, please run  `cURL` from the command prompt. PowerShell has a *curl* command, but it's an alias for Invoke-WebRequest and is not the same as `cURL`.
