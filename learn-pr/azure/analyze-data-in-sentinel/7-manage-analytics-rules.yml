@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Because of ongoing maintenance activity, you need to stop receiving alerts from analytic rules temporarily. Which action should you enable on the rule to achieve that configuration?"
+  - content: "Due to ongoing maintenance activity, you need to stop receiving alerts from analytic rules temporarily. Which action should you enable on the rule to achieve that configuration?"
     choices:
     - content: "Delete"
       isCorrect: false
@@ -26,7 +26,7 @@ quiz:
     - content: "Duplicate"
       isCorrect: false
       explanation: "Duplicating the rule will have the same logic as the original analytic rule and will continue to generate the alerts."
-  - content: "What is the most efficient way to tune an existing analytic rule?"
+  - content: "What is the most efficient way to edit an existing analytic rule?"
     choices:
     - content: "Delete and recreate the alert with the new logic."
       isCorrect: false
