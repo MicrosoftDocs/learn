@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.python-oo.2-what-is-oo
-title: What is Object oriented programming
+uid: learn.python-oo.7-exercise-extend-game
+title: Unit
 metadata:
-  title: What is Object oriented programming
+  title: Unit
   description: Describe unit
   author: softchris
   ms.author: chnoring
   ms.date: 12/01/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 7
+durationInMinutes: 2
 content: |
-  [!include[](includes/2-what-is-oo.md)]
+  [!include[](includes/7-exercise-extend-game.md)]

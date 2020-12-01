@@ -1,5 +1,5 @@
 
-Object oriented programming, OOP, is a programming paradigm. It has the idea of _grouping_ related data and functions into islands of information. These islands are known as objects.
+Object-oriented programming, OOP, is a programming paradigm. It has the idea of _grouping_ related data and functions into islands of information. These islands are known as objects.
 
 All paradigms of programming are centered around solving problems. Programs are constructed to go through roughly the same flow regardless of paradigm, namely:
 
@@ -9,7 +9,7 @@ All paradigms of programming are centered around solving problems. Programs are 
 
 Lets try to define what OOP is by comparing it to another paradigm, procedural programming. Procedural programming sets out to solve a given problem by calling procedures, also known as functions or methods. Functions and variables are constructed to address the various phases described above.
 
-The OOP paradigm is no different in that aspect, but what really makes it stand out is how it looks upon the world. Compared to procedural programming, OOP takes a step back and tries to look at the bigger picture. Rather than just working on data, and taking it from one phase to the next, it tries to understand the world in which the data operates. It does so by _modeling_ what it sees. During this _modeling_ phase, actors are identified as well as their traits and their behavior. Actors are made into objects, the traits are encoded as data on the objects and the behaviors are functions that also gets added to the object.
+The OOP paradigm is no different in that aspect, but what really makes it stand out is how it looks upon the world. Compared to procedural programming, OOP _takes a step_ back and tries to look at the bigger picture. Rather than just working on data, and taking it from one phase to the next, it tries to understand the world in which the data operates. It does so by _modeling_ what it sees. During this _modeling_ phase, actors are identified as well as their traits and their behavior. Actors are made into objects, the traits are encoded as data on the objects and the behaviors are functions that also get added to the object.
 
 The idea is then that data on objects, can be altered by calling functions on the objects themselves. There's also the notion that objects _interact_ with one another to achieve a tangible result.  
 
@@ -17,7 +17,7 @@ The idea is then that data on objects, can be altered by calling functions on th
 
 So why OOP, why not some other paradigm? Just to make it clear. OOP isn't better or worse than any other paradigm, there's pros and cons to everything, but it does have some nice benefits, and here are some of those benefits:
 
-- **Data encapsulation**. Data encapsulation is about hiding data away from the rest of the system and only allow access to parts of it. The reason is data holds _state_ and that state can be made up of one or more variables. If these variables needs to be changed at the same time, you need to protect them and only allow access via public methods, so that changes are made in a predictable way. OOP has mechanisms like access levels where data, that's on an object, can only be accessed by the object itself or can be made publicly available.
+- **Data encapsulation**. Data encapsulation is about hiding data away from the rest of the system and only allows access to parts of it. The reason is data holds _state_ and that state can be made up of one or more variables. If these variables need to be changed at the same time, you need to protect them and only allow access via public methods, so that changes are made in a predictable way. OOP has mechanisms like access levels where data, that's on an object, can only be accessed by the object itself or can be made publicly available.
 - **Simplicity**. Building large systems is a complex task, there are many problems to solve. Being able to break down the complexity into smaller problems, to objects, means you are able to _simplify_ the overall task.
 - **Easy to modify**. When you rely on objects and model your system with it, it becomes easier to track down what parts of the system needs modifying, if you need to correct a bug or add a new feature for example.
 - **Maintainability**. Maintaining code in general is hard, and it becomes harder over time. It requires discipline in the form of good naming and a clear and consistent architecture among other things. Using objects means it can be easier to locate a specific area of your code that needs maintaining.
@@ -25,18 +25,15 @@ So why OOP, why not some other paradigm? Just to make it clear. OOP isn't better
 
 ## Model an OOP system
 
-Software is often written to address a need to make something faster, more efficient and less error prone. People simply can't compete with software when it comes to speeding up a process in certain cases. Using OOP is as much a modeling exercise as it's about writing the code to implement its logic. Modeling is about learning to identify the actors of it, the data needed, and what type of interaction that takes place. You can model a system just by reading a description of it.
-
-> [!TIP]
-> It's additionally beneficial to draw up a representation of the system.
+Software is often written to address a need to make something faster, more efficient, and less error prone. People simply can't compete with software when it comes to speeding up a process in certain cases. Using OOP is as much a modeling exercise as it's about writing the code to implement its logic. Modeling is about learning to identify the actors of it, the data needed, and what type of interaction that takes place. You can model a system just by reading a description of it.
 
 ### A case study, an invoice management system
 
-Let's exemplify a manual flow that many companies struggle with, namely _invoice management_. Invoices are something many companies receive and that the company needs to pay on time, or there will be late fees, e.g wasted money. Before an invoice can be paid it needs to be _processed_. It's common for an invoice to pass a few hands before it ends up being registered somewhere and payment is made. It usually starts with an initial sorting phase where the invoice is sent to the _correct_ department. Then it's checked for correctness followed by an approval by someone who has the proper authorization level. Lastly the invoice is being paid. If you are a small business it might be the business owner that does all of the above. In a large company there might be a ton of people and process involved, and _invoice management_ becomes a really complex activity.
+Let's exemplify a manual flow that many companies struggle with, namely _invoice management_. Invoices are something many companies receive and that the company needs to pay on time, or there will be late fees, e.g wasted money. Before an invoice can be paid, it needs to be _processed_. It's common for an invoice to pass a few hands before it ends up being registered somewhere and payment is made. It usually starts with an initial sorting phase where the invoice is sent to the _correct_ department. Then it's checked for correctness followed by an approval by someone who has the proper authorization level. Lastly the invoice is being paid. If you are a small business, it might be the business owner that does all of the above. In a large company there might be a ton of people and process involved, and _invoice management_ becomes a complex activity.
 
-What does all of this have to do with OOP? If you were to take the above, which is often a manual flow, and turn that flow into written software, the first thing you would do is try to model the system. With the context of _invoice management_ you can start seeing actors (objects), behaviors and data by just reading a description of the problem domain.
+What does this description have to do with OOP? If you were to take the above, which is often a manual flow, and turn that flow into written software, the first thing you would do is try to model the system. With the context of _invoice management_ you can start seeing actors (objects), behaviors, and data by just reading a description of the problem domain.
 
-If you think about the described domain as having the phases, input, processing and output, you can start to fill things in like the below table:
+If you think about the described domain as having the phases, input, processing, and output, you can start to fill things in like the below table:
 
 |Phase      |What                         |
 |-----------|-----------------------------|
@@ -50,17 +47,17 @@ The above table describes what goes on at each phase and you've been able to fin
 
 You find the different artifacts of your system by asking questions like _who interacts with whom_ or _who does what to whom_.
 
-With such questions at the back of your mind you come up with statements. Let's highlight the different artifacts in these statements so it becomes clear what parts are important to our system.
+With such questions at the back of your mind, you come up with statements. Let's highlight the different artifacts in these statements so it becomes clear what parts are important to our system.
 
 1. The _Mail service_ _delivers_ an _Invoice_ to the system.
 
 1. The _Invoice_ is _sorted_ by either a _reference code_ or manually by a _Sorter_ to ensure it ends up in the correct department.
 
-1. The _Invoice_ is _approved_ or _rejected_ by an _Approver_ based on factors like for example correctness and size of the _amount_.
+1. The _Invoice_ is _approved_ or _rejected_ by an _Approver_ based on factors like, for example,  correctness and size of the _amount_.
 
 1. The _Invoice_ is _paid_ by a _Payment processor_, using the _payment information_ provided.
 
-You can now extract objects, data and behavior from the sentences and organize it in a table like so:
+You can now extract objects, data, and behavior from the sentences and organize it in a table like so:
 
 |Phase     | Object            |Behavior          | Data
 |----------|-------------------|------------------|------------------------------|
@@ -70,7 +67,7 @@ You can now extract objects, data and behavior from the sentences and organize i
 |Processing| Approver          | approves/rejects | Invoice(amount)              |
 |Output    | Payment processor | pays             | Invoice(payment information) |
 
-A lot has happened to the initial description of the invoice management system. Actors (objects) have been found. Important data has been identified and _grouped_ with identified objects. Behavior has been found as well which makes it clearer what actors (objects) interact with one another. Thereby you've been able to pinpoint _who_ does what behavior to _whom_. You've done an initial analysis at this point, a great start. But the question remains, how do you turn this analysis into code? The answer to that question is what we will be solving throughout this module.
+A lot has happened to the initial description of the invoice management system. Actors (objects) have been found. Important data has been identified and _grouped_ with identified objects. Behavior has been found as well, which makes it clearer what actors (objects) interact with one another. Thereby you've been able to pinpoint _who_ does what behavior to _whom_. You've done an initial analysis at this point, a great start. But the question remains, how do you turn this analysis into code? The answer to that question is what we will be solving throughout this module.
 
 > [!NOTE]
 > An actual invoice management system is likely a lot more complex and could rely on much more data and logic. Being able to model a system this way means you have a structured approach to think about the problem.
