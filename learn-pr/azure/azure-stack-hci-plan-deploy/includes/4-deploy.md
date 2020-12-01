@@ -1,10 +1,10 @@
-Microsoft offers Azure Stack HCI through partners as prebuilt and preconfigured integrated systems. This facilitates defining a consistent, structured deployment process, consisting of a sequence of steps that customers need to follow. Let's take a look at that process, the same process you can follow when implementing Azure Stack HCI in the Contoso's proof-of-concept environment.
+Microsoft offers Azure Stack HCI through partners as prebuilt and preconfigured integrated systems. This facilitates defining a consistent, structured deployment process, consisting of a sequence of steps that customers need to follow. Let's review that process, the same process you can follow when implementing Azure Stack HCI in the Contoso's proof-of-concept environment.
 
 ## Deploy Azure Stack HCI
 
 To implement Azure Stack HCI, use the following sequence of high-level steps:
 
-1. Set up the Azure Stack HCI hardware. Once you received an Azure Stack HCI integrated system purchased from the Azure Stack HCI Catalog through a Microsoft hardware partner, set it up in your datacenter. Note that the system should already have the Azure Stack HCI operating system pre-installed. As part of the initial setup, you need to configure network connectivity from your internal network to the cluster.
+1. Set up the Azure Stack HCI hardware. After you received an Azure Stack HCI&ndash;integrated system purchased from the Azure Stack HCI Catalog through a Microsoft hardware partner, set it up in your datacenter. Note that the system should already have the Azure Stack HCI operating system pre-installed. As part of the initial setup, you need to configure network connectivity from your internal network to the cluster.
 
 1. Create the cluster. Assign computer names that match your custom naming convention to Azure Stack HCI operating system instances running on Azure Stack HCI nodes and join them to your AD DS domain. While this typically is your existing domain, you also have the option of deploying a self-contained AD DS environment using Azure Stack HCI VMs, dedicated to the Azure Stack HCI environment. If you decide to take this approach, ensure you comply with the following rules:
 
@@ -30,7 +30,7 @@ The Create Cluster wizard of the Windows Admin Center guides you through five ma
 > [!NOTE]
 > To implement an SMB File Share witness, you can use an USB key attached to a network device accessible from all nodes. Azure Cloud Witness is particularly useful in scenarios where there is no additional on-premises infrastructure and when implementing stretched clusters.
 
-1. Register with Azure. Azure Stack HCI is an Azure service and you need to register it with Azure within 30 days of installation. At the registration time, Azure Stack HCI integrates automatically with Azure Arc, which provides monitoring, support, and billing, This integration also simplifies provisioning of such Azure hybrid services as Azure Monitor, Azure Backup, and Azure Site Recovery.
+1. Register with Azure. Azure Stack HCI is an Azure service and you need to register it with Azure within 30 days of installation. At the registration time, Azure Stack HCI integrates automatically with Azure Arc, which provides monitoring, support, and billing. This integration also simplifies provisioning of such Azure hybrid services as Azure Monitor, Azure Backup, and Azure Site Recovery.
 
 1. Validate the cluster. Following the deployment, you run cluster validation tests to identify any potential hardware or configuration issues.
 
