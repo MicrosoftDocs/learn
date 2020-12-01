@@ -1,4 +1,4 @@
-Azure Sentinel Analytics helps you detect, investigate, and remediate cybersecurity threats. The Contoso SecOps team can use Azure Sentinel Analytics to set up analytics rules and queries to detect issues in your environment.
+Azure Sentinel Analytics helps you detect, investigate, and remediate cybersecurity threats. The Contoso SOC team can use Azure Sentinel Analytics to set up analytics rules and queries to detect issues in your environment.
 
 ## What is Azure Sentinel Analytics?
 
@@ -24,11 +24,11 @@ Common security analytics use cases include:
 You might not be able to detect some of the threats by using conventional protection tools, such as firewalls or antimalware solutions. Certain threats can go undetected for months. Combining data, gathered by multiple tools and products, with the power of threat intelligence can help you to detect, analyze, and mitigate insider threats.
 
 You can also use analytics rules to create custom alerts that use indicators of attack. These indicators can identify potential attacks that are in progress in real time.
-Analytics will help the Contoso SecOps team to improve the efficiency of their complex investigation and detect threats faster.
+Analytics will help the Contoso SOC team to improve the efficiency of their complex investigation and detect threats faster.
 
 ## Exploring the Analytics home page
 
-You can create analytics rules from the **Analytics** home page. You can access the **Analytics** page in Azure Sentinel from the navigation pane on the left.
+You can create analytics rules from the **Analytics** home page. You can access the **Analytics** page in Azure Sentinel from the navigation pane.
 
 :::image type="content" source="../media/02-Analytics-page.png" alt-text="Screenshot of the Analytics home page." border="true":::
 
