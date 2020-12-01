@@ -38,4 +38,4 @@ modules:
 - learn.azure.publish-static-web-app-and-api-dotnet
 - learn.static-apps-gatsby
 trophy:
-  uid: learn.azure-static-web-apps.generic-trophy
+  uid: learn.azure-static-web-apps.trophy
