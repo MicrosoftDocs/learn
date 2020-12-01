@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-actions-packages.knowledge-check-2
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge
+  ms.date: 10/19/2020
+  author: cmaneu
+  ms.author: chmaneu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "In which scenarios should you NOT use GitHub Packages?"
+    choices:
+    - content: "When I want to share code between methods of my application."
+      isCorrect: true
+      explanation: "That's correct. Sharing code within your project is done through code constructs and design patterns."
+    - content: "When I want to share container images among developers of your team."
+      isCorrect: false
+      explanation: "GitHub Packages allow you to easily share container images with the same permissions than your GitHub repository."
+    - content: "When I want to publish a small code library as an open-source project"
+      isCorrect: false
+      explanation: "GitHub packages allow you to publish your libraries in public, and is free for public repositories. "
+  - content: "Which tool do you need to use a package hosted in GitHub Packages in your project?"
+    choices:
+    - content: "The GitHub Packages CLI."
+      isCorrect: false
+      explanation: "GitHub Packages is fully compatible with package managers, and don't require any specific tool."
+    - content: "The package manager tooling (npm, nuget.exe, ...)."
+      isCorrect: true
+      explanation: "GitHub Packages is fully compatible with package managers, and don't require any specific tool."
+    - content: "The GitHub CLI and the package manager tooling."
+      isCorrect: false
+      explanation: "GitHub Packages is fully compatible with package managers, and don't require any specific tool."
+  - content: "How can you authenticate to GitHub Packages from your local development environment"
+    choices:
+    - content: "With an API Key"
+      isCorrect: false
+      explanation: "API Keys can't be used to authenticate with your package manager."
+    - content: "With my GitHub Credentials (username and password)"
+      isCorrect: false
+      explanation: "Your GitHub Credentials can't be used to authenticate with your package manager."
+    - content: "With a Personal Access Token"
+      isCorrect: true
+      explanation: "Yes, with your GitHub username and a Personal Access Token."      

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-multiple-files-folders
+title: Query multiple files and folders using Azure Synapse serverless SQL pools
+metadata:
+  title: Query multiple files and folders using Azure Synapse serverless SQL pools
+  description: "Query multiple files and folders using Azure Synapse serverless SQL pools"
+  ms.date: 11/23/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-query-multiple-files-folders.md)]

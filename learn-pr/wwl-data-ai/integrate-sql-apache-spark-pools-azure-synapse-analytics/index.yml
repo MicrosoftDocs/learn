@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics
+metadata:
+  title: Integrate SQL and Apache Spark pools in Azure Synapse Analytics
+  description: "Integrate SQL and Apache Spark pools in Azure Synapse Analytics"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Integrate SQL and Apache Spark pools in Azure Synapse Analytics
+summary: Learn how to integrate SQL and Apache Spark pools in Azure Synapse Analytics.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe the integration methods between SQL and Spark Pools in Azure Synapse Analytics
+  - Understand the use-cases for SQL and Spark Pools integration
+  - Authenticate in Azure Synapse Analytics
+  - Transfer data between SQL and Spark Pool in Azure Synapse Analytics
+  - Authenticate between Spark and SQL Pool in Azure Synapse Analytics
+  - Integrate SQL and Spark Pools in Azure Synapse Analytics
+  - Externalize the use of Spark Pools within Azure Synapse workspace
+  - Transfer data outside the Synapse workspace using SQL Authentication
+  - Transfer data outside the Synapse workspace using the PySpark Connector
+  - Transform  data in Apache Spark and write back to SQL Pool in Azure Synapse Analytics
+prerequisites: |
+  Before taking this module, it is recommended that you complete the following modules:
+  - Data Fundamentals
+  - Introduction to Azure Data Factory
+  - Introduction to Azure Synapse Analytics
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.introduction
+- learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.describe-integration-methods-between-sql
+- learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.understand-use-cases-for-sql-integration
+- learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.authenticate
+- learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.transfer-data-between-sql-spark-pool
+- learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.authenticate-between-spark-sql-pool
+- learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.exercise-integrate-sql
+- learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.externalize-use-of-spark-pools-within-workspace
+- learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.transfer-data-outside-synapse-workspace-using-sql-authentication
+- learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.transfer-data-outside-synapse-workspace-using-pyspark-connector
+- learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.knowledge-check
+- learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.summary
+badge:
+  uid: learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.badge

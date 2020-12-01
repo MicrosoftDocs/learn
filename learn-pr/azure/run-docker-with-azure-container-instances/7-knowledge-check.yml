@@ -27,7 +27,7 @@ quiz:
       isCorrect: false
       explanation: "The restart policy **Always** will ensure needed processes continue to be available even if a restart is required."
 
-  - content: "True or false: by default, the values of an environment variable can be seen in the Azure portal and the Azure CLI output."
+  - content: "True or false: By default, the values of an environment variable can be seen in the Azure portal and the Azure CLI output."
     choices:
     - content: "True"
       isCorrect: true

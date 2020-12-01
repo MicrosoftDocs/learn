@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics.exercise-create-spark-table
+title: 'Exercise: Create a spark table'
+metadata:
+  title: 'Exercise: Create a spark table'
+  description: "Exercise: Create a spark table"
+  ms.date: 11/25/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-exercise-create-spark-table.md)]

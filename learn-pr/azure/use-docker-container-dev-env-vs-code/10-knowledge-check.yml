@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.use-docker-container-dev-env-vs-code.10-knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
-  description: A set of questions to check back on the knowledge gained through this Learn module about Remote - Containers in Visual Studio Code.
+  title: Knowledge check
+  description: A set of questions to check the knowledge you've gained through this Learn module about Remote - Containers in Visual Studio Code.
   ms.date: 11/13/2020
   author: bamurtaugh
   ms.author: brmurtau
   ms.topic: interactive-tutorial
   ms.prod: learning
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
@@ -19,41 +19,41 @@ quiz:
       choices:
         - content: "The project automatically opens in the container."
           isCorrect: false
-          explanation: "While VS Code might notify you that _can_ open the project in a dev container, it will not open in the container by default."
-        - content: "Select \"Add Development Configuration Files\" from the Command Palette."
+          explanation: "Although Visual Studio Code might notify you that it _can_ open the project in a dev container, it won't open in the container by default."
+        - content: "Select **Add Development Configuration Files** from the Command Palette."
           isCorrect: false
-          explanation: "This command will add a dev container configuration, but will not open the project in the container."
-        - content: "Use the \"Reopen in Container\" option in VS Code."
+          explanation: "This command will add a dev container configuration, but it won't open the project in the container."
+        - content: "Use the **Reopen in Container** option in Visual Studio Code."
           isCorrect: true
-          explanation: "The \"Reopen in Container\" option - either from the VS Code notification or Command Palette will load the project in the dev container."
+          explanation: "The **Reopen in Container** option, from either the Visual Studio Code notification or the Command Palette, will load the project in the dev container."
         - content: "Start the project from the terminal."
           isCorrect: false
-          explanation: "Starting the project will not automatically start the container."
+          explanation: "Starting the project won't automatically start the container."
     - content: "When you start a web project in a container, how do you access it from the browser?"
       choices:
         - content: "Use the port forwarding feature of dev containers."
           isCorrect: true
-          explanation: "Port forwarding allows you to access any port exposed in a container as if it were on your local machine."
+          explanation: "Port forwarding allows you to access any port exposed in a container as if it's on your local machine."
         - content: "Open a browser instance in the container."
           isCorrect: false
-          explanation: "The container does not have a user interface so it's not possible to open a browser instance inside of one."
-        - content: "The same as you would any other web project or URL."
+          explanation: "The container does not have a user interface, so it's not possible to open a browser instance inside one."
+        - content: "Access it the same way as you would any other web project or URL."
           isCorrect: false
-          explanation: "By default, applications exposed via URL's with ports like \"127.0.0.1:5000\" are not accessible from your local machine."
-        - content: "By exposing the port in the Dockerfile."
+          explanation: "By default, applications exposed via URLs with ports like 127.0.0.1:5000 are not accessible from your local machine."
+        - content: "Expose the port in the Dockerfile."
           isCorrect: false
-          explanation: "While you _can_ expose ports in a Dockerfile, it is not the best way to expose processes running in a dev container."
-    - content: "How would you go about installing additional software in a container so that it's saved as part of the configuration?"
+          explanation: "Although you _can_ expose ports in a Dockerfile, it's not the best way to expose processes running in a dev container."
+    - content: "How would you install additional software in a container so that it's saved as part of the configuration?"
       choices:
-        - content: "Use an `apt-get` command in the devcontainer.json file \"postSetupCommand\" option."
+        - content: "Use an `apt-get` command in the devcontainer.json file's `postSetupCommand` option."
           isCorrect: false
-          explanation: "The devcontainer.json file is primarily for project specific configuration, and not the place to run commands like `apt-get`"
-        - content: "Use the `apt-get` command in the Dockerfile file \"postSetupCommand\" option."
+          explanation: "The devcontainer.json file is primarily for project-specific configuration, and not the place to run commands like `apt-get`."
+        - content: "Use the `apt-get` command in the Dockerfile's `postSetupCommand` option."
           isCorrect: false
-          explanation: "The \"postSetupCommand\" is only available in the devcontainer.json file."
+          explanation: "The `postSetupCommand` option is available only in the devcontainer.json file."
         - content: "Install the software after the container loads via the terminal."
           isCorrect: false
-          explanation: "While this will work, it will be isolated to your container and not saved with the project configuration."
-        - content: "Add a \"RUN apt-get\" command in the Dockerfile."
+          explanation: "Although this will work, it will be isolated to your container and not saved with the project configuration."
+        - content: "Add a `RUN apt-get` command in the Dockerfile."
           isCorrect: true
-          explanation: "The Dockerfile is the right place to install additional software. Using the Dockerfile RUN command allows you to use the apt-get package manager."
+          explanation: "The Dockerfile is the right place to install additional software. Using the Dockerfile `RUN` command allows you to use the `apt-get` package manager."
