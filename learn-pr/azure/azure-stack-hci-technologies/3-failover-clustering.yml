@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-stack-hci-technologies.3-failover-clustering
 metadata:
-  title: What is failover clustering? 
+  title: What is Failover Clustering? 
   description: Provide an introduction to failover clustering.
   ms.date: 09/21/2020
   author: jboeshart
