@@ -80,7 +80,7 @@ An in-memory database is used in this unit for simplicity. Choose a different da
             {
             }
 
-            public DbSet<Product> Products { get; set; }
+            public DbSet<Product> Products { get; init; }
         }
     }
     ```
@@ -109,7 +109,6 @@ An in-memory database is used in this unit for simplicity. Choose a different da
 1. Add the following code to *:::no-loc text="Data/SeedData.cs":::*. Save your changes.
 
     ```csharp
-    using ContosoPets.Api.Models;
     using System.Linq;
 
     namespace ContosoPets.Api.Data
