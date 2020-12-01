@@ -14,7 +14,7 @@ summary: |
   Learning to code sometimes feels out of reach. But if we've learned anything from 
   the people who have burst through our atmosphere, orbited our Earth, or walked on
   the Moon, goals that seem out of reach simply require determination and passion. 
-  That's the goal of this <a href="https://www.youtube.com/watch?v=26DIABx44Tw" target="_blank">Over the Moon</a>–inspired learning path. 
+  That's the goal of this [Over the Moon](https://www.youtube.com/watch?v=26DIABx44Tw?azure-portal=true)–inspired learning path. 
  
   <i>Over the Moon</i> is a film about Fei Fei, a young girl who builds a rocket to the Moon 
   on a mission to prove the existence of a legendary Moon Goddess. Fei Fei is fueled 
@@ -28,19 +28,19 @@ summary: |
   artificial intelligence with tools like Python, Visual Studio Code, and Azure, these modules
   guide you through upskilling in tech while imagining how to solve space travel–related 
   challenges. These modules are part of a multimodal approach to learning—follow along with some video tutorials that are part of the 
-  <a href="https://aka.ms/LearnWithDrG" target="_blank">Learn with Dr. G Learn TV video series</a>. And don't forget
-  to watch <a href="https://www.youtube.com/watch?v=26DIABx44Tw" target="_blank">Over the Moon</a> on Netflix today!
+  [Learn with Dr. G Learn TV video series](https://aka.ms/LearnWithDrG?azure-portal=true). And don't forget
+  to watch [Over the Moon](https://www.youtube.com/watch?v=26DIABx44Tw?azure-portal=true) on Netflix today!
   
   Through these modules, you will learn how to:
     - Gather data from multiple sources 
     - Aggregate data into pandas DataFrames
     - Use Python and pandas to explore data 
-    - Use strategies that cleanse and manipulate your data
+    - Use smart strategies to cleanse and manipulate your data
     - Create a good dataset of images for training AIs
     - Ensure ethical practices throughout AI development
     - Hypothesize how much rock sample astronauts should collect
     - Identify and predict meteor showers
-    - Train Custom Vision AI on a particular animal
+    - Train a Custom Vision AI model on a particular animal
 
 prerequisites: None
 iconUrl: /learn/achievements/explore-space-using-python.svg

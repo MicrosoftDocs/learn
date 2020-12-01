@@ -18,7 +18,7 @@ abstract:  |
     - Hypothesize how much rock sample astronauts might bring back on the Artemis missions.
 
 prerequisites: |
-    - <a href="https://code.visualstudio.com/learntocode/?utm_source=MSLearn&utm_medium=direct&utm_campaign=PartnerLessons">Visual Studio Code, with the Python extension</a>
+    - [Visual Studio Code, with the Python extension](https://code.visualstudio.com/learntocode/?utm_source=MSLearn&utm_medium=direct&utm_campaign=PartnerLessons?azure-portal=true)
     - A local Python environment set up, as seen in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)
 iconUrl: /learn/achievements/student-evangelism/plan-moon-mission-using-python-pandas.svg
 levels:
