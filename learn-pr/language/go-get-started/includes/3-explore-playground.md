@@ -7,8 +7,8 @@ However, the Go Playground comes with a few limitations that might impact your l
 - Random numbers are deterministic
 - Time is constant. You get the same value every time.
 
-:::image type="content" source="media\go-playground.jpg" alt-text="Image showing the Go Playground":::
+:::image type="content" source="../media/go-playground.jpg" alt-text="Image showing the Go Playground":::
 
-Head over to the Go Playground, and click on the “Run” button.
+Head over to the Go Playground, and click on the "Run" button.
 
 Feel free to continue using this site for learning purposes, but we highly recommend installing Go locally and using an IDE to improve your development productivity.
