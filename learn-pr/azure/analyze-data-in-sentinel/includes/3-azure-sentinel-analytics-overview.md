@@ -44,7 +44,7 @@ Currently Microsoft has preloaded over 150 template rules from the Azure Sentine
 
 To use filters, in the header bar, select the filters you want to use.
 
-:::image type="content" source="../media/02-Filter-The-Rule-Templates.PNG" alt-text="Screenshot of the Analytics home page." border="true":::
+:::image type="content" source="../media/02-Filter-The-Rule-Templates.PNG" alt-text="Screenshot of filtering the Analytics home page." border="true":::
 
 The **Analytics** home page provides the following filters:
 
