@@ -5,7 +5,7 @@ Contoso, Ltd. is a midsize financial services company in London with a New York 
 - Microsoft 365
 - Azure Active Directory (Azure AD)
 - Azure AD Identity Protection
-- Cloud App Security
+- Microsoft Cloud App Security
 - Microsoft Defender for Identity
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
