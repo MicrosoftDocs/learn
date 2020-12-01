@@ -1,6 +1,6 @@
 Microsoft Azure Sentinel Analytics provides an intelligent solution that you can use to detect potential threats and vulnerabilities in your organizations.
 
-Imagine that you work as security operations center (SOC) analyst in Contoso, Ltd. Contoso is a midsize financial services company in London with a New York branch office. Contoso uses several Microsoft products and services to implement data security and threat protection for its resources. These products are:
+Imagine that you work as Security Operations Center (SOC) analyst in Contoso, Ltd. Contoso is a midsize financial services company in London with a New York branch office. Contoso uses several Microsoft products and services to implement data security and threat protection for its resources. These products are:
 
 - Microsoft 365
 - Azure Active Directory (Azure AD)
@@ -18,7 +18,7 @@ Security analysts at Contoso face a huge triage burden. They deal with a high vo
 - Manually from different project dashboards
 - By using a traditional correlation engine
 
-Additionally, the time spent to set up and maintain IT infrastructure takes the Security Operations Center (SOC) team away from its security tasks.
+Additionally, the time spent to set up and maintain IT infrastructure takes the SOC team away from its security tasks.
 
 The IT director believes that Azure Sentinel Analytics will help the security analysts perform complex investigations faster and improve their Security Operations Center (SOC). As Contoso's lead system engineer and Azure administrator, you've been asked to set up analytics rules in Azure Sentinel so that the SecOps team can identify and analyze attacks to Contoso's resources.
 
