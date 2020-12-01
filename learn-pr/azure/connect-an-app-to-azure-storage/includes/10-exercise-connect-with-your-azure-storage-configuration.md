@@ -289,7 +289,7 @@ To verify the container:
 
 1. Navigate to your storage account. You can use the **All Resources** section to find the storage account or search by name from the _search box_ at the top of the portal window.
 
-1. Select the **Blobs** entry of the storage account in the **Blob services** section.
+1. Select the **Blobs** entry of the storage account in the **Blob Containers** section.
 
 1. You should see your **photoblobs** container in the Blobs panel. You can delete the container through the "..." menu on the right-hand side of the entry to try recreating it with your app.
 

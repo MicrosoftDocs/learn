@@ -6,11 +6,11 @@ Now that you’ve got the basics down, let’s define AR on a more granular leve
 
 *Augmented Reality is any technology that creates a composite viewing experience by superimposing a computer-generated image over a user’s view of the real world.*
 
-Augmented Reality experiences aren't limited to visual addition to our world. You can create augmented experiences that are only audio addition to your physical world or both audio and visual.
+Augmented reality experiences aren't limited to visual addition to our world. You can create augmented experiences that are only audio addition to your physical world or both audio and visual.
 
 :::image type="content" source="../media/augmented-1.png" alt-text="Photograph of a user interacting with holographic content over a physical table.":::
 
-Augmented Reality experiences are also not limited to headsets like HoloLens. Today, millions of mobile devices have depth-sensing capabilities to augment your real world with digital information.
+Augmented reality experiences are also not limited to headsets like HoloLens. Today, millions of mobile devices have depth-sensing capabilities to augment your real world with digital information.
 
 :::image type="content" source="../media/augmented-2.gif" alt-text="Animated photograph of two users playing an augmented reality game on a physical surface together from their phones.":::
 
@@ -18,7 +18,7 @@ On the other side of the spectrum, VR is defined as:
 
 *Any technology or experience that absolutely immerses a user into a virtual world through the use of a headset, effectively severing their connection to the sights and sounds of the real world.*
 
-Virtual Reality applications are great for training and for simulations where users would benefit from total immersion to replicate the real life situation. Some examples include training for firefighters, emergency room healthcare providers, and flight simulations.
+Virtual reality applications are great for training and for simulations where users would benefit from total immersion to replicate the real life situation. Some examples include training for firefighters, emergency room healthcare providers, and flight simulations.
 
 :::image type="content" source="../media/headset-controller.jpg" alt-text="Photograph of a user wearing an immersive headset and holding a motion controller.":::
 
