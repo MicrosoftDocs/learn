@@ -2,20 +2,36 @@ In this unit, you'll configure Terraform to provision your Database and Spring B
 
 # Spring PetClinic Sample Application
 
+## Build the application and run locally
+
+In this module, we'll be checking out an existing project that contains all the code for our Terraform provisioning.
+Lets first get it running locally.
+
 ```bash
 mkdir source-code
 cd source-code
 git clone https://github.com/jdubois/spring-petclinic
 cd spring-petclinic
 git checkout deploy-to-azure
-mvn clean package -DskipTests
-mvn spring-boot:run
-http://localhost:8080/
 ```
+
+Build the PetClinic application:
+
+```bash
+mvn clean package -DskipTests
+```
+
+Run your Spring Boot application locally with an embedded database:
+
+```bash
+mvn spring-boot:run
+```
+
+Use a browser to access http://localhost:8080/
 
 ## Deploying to Azure
 
-We use Terraform to create an Azure resource group with a MySQL database and an Azure App Service web application.
+We'll use Terraform to create an Azure resource group with a MySQL database and an Azure App Service web application.
 
 You'll customize your application name, and your resource group name: edit the `terraform/variables.tf`.
 
@@ -51,7 +67,7 @@ You'll customize your application name, and your resource group name: edit the `
 Configure your deployment by running:
 
 ```bash
-./mvnw azure-webapp:config
+./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 ```
 
 To deploy the application, you'll need to configure and edit the `azure-webapp-maven-plugin` plugin, to configure the resource group and the application name (which should be the same as
@@ -60,5 +76,5 @@ the ones configured in Terraform).
 Then, deploy the application by running:
 
 ```bash
-./mvnw azure-webapp:deploy
+./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
 ```
