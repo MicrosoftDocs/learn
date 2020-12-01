@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt
+metadata:
+  title: Monitor and manage data engineering workloads with Apache Spark in Azure Synapse Analytics
+  description: "Monitor and manage data engineering workloads with Apache Spark in Azure Synapse Analytics"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitor and manage data engineering workloads with Apache Spark in Azure Synapse Analytics
+summary: Learn how to monitor and manage  data engineering workloads with Apache Spark in Azure Synapse Analytics.
+abstract: |
+  After completing this module, you will be able to:
+  - Monitor Spark Pools in Azure Synapse Analytics
+  - Understand Resource Utilization of Spark Pools in Azure Synapse Analytics
+  - Monitor Query activity of Spark Pools in Azure Synapse Analytics
+  - Base-line Apache Spark performance with Apache Spark History Server in Azure Synapse Analytics
+  - Optimize Apache Spark jobs in Azure Synapse Analytics
+  - Automate scaling of  Apache Spark pools in Azure Synapse Analytics
+prerequisites: |
+  Before taking this module, it is recommended that you complete the following modules:
+  -  Data Fundamentals
+  - Introduction to Azure Data Factory
+  - Introduction to Azure Synapse Analytics
+iconUrl: /learn/achievements/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.introduction
+- learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.monitor-spark-pools-analytics
+- learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.base-line-apache-spark-performance-history-server-azure-synapse-analytics
+- learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.optimize-apache-spark-jobs-analytics
+- learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.automate-scaling-of-apache-spark-pools-analytics
+- learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.knowledge-check
+- learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.summary
+badge:
+  uid: learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.badge

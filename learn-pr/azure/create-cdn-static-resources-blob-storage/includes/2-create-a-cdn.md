@@ -1,4 +1,4 @@
-Content Delivery Networks (CDNs) can significantly speed up the delivery of assets on a web site. However, as not all websites are the same, it's important to can determine whether your own deployments will benefit.
+Content Delivery Networks (CDNs) can significantly speed up the delivery of assets on a web site. However, as not all websites are the same, it's important to determine whether your own deployments will benefit.
 
 For a global training business that publishes significant numbers of videos, Azure blob storage is a good match to your business model. Azure Blob storage also enables simple web publishing. However, your company's plans to expand could overload a single point of distribution.
 

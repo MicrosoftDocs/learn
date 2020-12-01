@@ -8,7 +8,7 @@ As an initial troubleshooting step, you can check the status of a service by exa
 from azureml.core.webservice import AksWebservice
 
 # Get the deployed service
-service = AciWebservice(name='classifier-service', workspace=ws)
+service = AksWebservice(name='classifier-service', workspace=ws)
 
 # Check its state
 print(service.state)

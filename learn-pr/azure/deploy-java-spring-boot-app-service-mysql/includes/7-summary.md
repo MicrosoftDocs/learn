@@ -1,40 +1,42 @@
-Congratulations! You've deployed to a Spring Boot Web application to Azure App Service.
+Congratulations! You've deployed a Spring Boot web application to Azure App Service.
 
-Your company wanted to learn how they could migrate their existing Spring Boot Java web applications to Azure App Service. You used the following steps:
+Your company wanted to learn how to migrate its existing Spring Boot Java web applications to Azure App Service. You followed these steps:
 
-1. You created a sample Spring Boot web application.
+1. Create a sample Spring Boot web application.
 
-1. You created a MySQL database, connected your Spring Boot web application, and tested it locally.
+1. Create a MySQL database, connect your Spring Boot web application, and test it locally.
 
-1. Once you verified that your application was working successfully, you added the Maven Plugin for Azure App Service to your project and configured it interactively.
+1. Verify that your application works successfully. 
 
-1. You updated your web application, redeployed it to Azure App Service, and tested it in the cloud.
+1. Add Maven Plugin for Azure App Service to your project, and then configure it interactively.
 
-You're confident that you can recommend migrating your SpringBoot Java application code to Azure.
+1. Update your web application, redeploy it to Azure App Service, and test it in the cloud.
 
-## Get Log Stream
+You're now confident that you can recommend migrating your SpringBoot Java application code to Azure.
 
-Learn how Azure provides built-in diagnostics to assist with debugging in [this](https://docs.microsoft.com/en-us/azure/app-service/troubleshoot-diagnostic-logs/?WT.mc_id=java-10785-ropreddy) article.
+## Enable diagnostic logging
+
+Learn how Azure provides [built-in diagnostics to help with debugging](https://docs.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/?WT.mc_id=java-10785-ropreddy?azure-portal=true).
 
 ## Clean up resources
 
-In the preceding steps, you created Azure resources in a resource group. If you don't expect to need these resources in the future, delete the resource group from portal, or by running the following command in the Cloud Shell:
+In this module, you created Azure resources in a resource group. If you won't need these resources later, delete the resource group from the portal. Or run the following command in Azure Cloud Shell.
 
 ```bash
 az group delete --name <your resource group name> --yes
 ```
 
-This command may take a minute to run.
+This command might take a minute to run.
 
 > [!IMPORTANT]
-> It's important that you de-provision the Azure resources used in this module to avoid accruing unwanted charges.
+> Deprovision the Azure resources you used in this module to avoid unwanted charges.
 
 ## Additional resources
 
-For more information about Spring Data JDBC, see Spring's [reference documentation](https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/#reference&WT.mc_id=java-10785-ropreddy).
+For more information about Spring Data Java Database Connectivity (JDBC), see Spring's [reference documentation](https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/#reference&WT.mc_id=java-10785-ropreddy?azure-portal=true).
 
-For more information about Azure Application Insights Spring Boot Starter for monitoring, see [Azure Application insights](https://docs.microsoft.com/en-us/azure/developer/java/spring-framework/configure-spring-boot-java-applicationinsights/?WT.mc_id=java-10785-ropreddy)
+For more information about Application Insights for monitoring, see [Azure Application Insights](https://docs.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-java-applicationinsights/?WT.mc_id=java-10785-ropreddy&azure-portal=true).
 
-For more information about using Azure with Java, see [Azure for Java developers](https://docs.microsoft.com/en-us/azure/developer/java/?WT.mc_id=java-10785-ropreddy) and [Working with Azure DevOps and Java](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/java?WT.mc_id=java-10785-ropreddy).
+For more information about using Azure with Java, see [Azure for Java developers](https://docs.microsoft.com/azure/developer/java/?WT.mc_id=java-10785-ropreddy?azure-portal=true) and [Working with Azure DevOps and Java](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/java?WT.mc_id=java-10785-ropreddy?azure-portal=true).
 
-You can read more detailed information about creating MySQL servers in [Create an Azure Database for MySQL server by using the Azure portal](https://docs.microsoft.com/en-us/azure/mysql/quickstart-create-mysql-server-database-using-azure-portal/?WT.mc_id=java-10785-ropreddy).
+For more information about creating MySQL servers, see [Create an Azure Database for MySQL server by using the Azure portal](https://docs.microsoft.com/azure/mysql/quickstart-create-mysql-server-database-using-azure-portal/?WT.mc_id=java-10785-ropreddy?azure-portal=true).
