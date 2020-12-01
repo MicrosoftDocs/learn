@@ -94,7 +94,7 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 
     ![Screenshot of the Azure portal showing the All resources pane highlighted as well as the escalator function app we created.](../media/5-access-function-app.png)
 
-1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process.
+1. Select **Functions** on the left side menu. Select the **+ Add** at the top of the screen.  This action starts the function creation process.
 
 1. On the **Azure Functions for PowerShell - getting started** page, select **In-portal** and then select **Continue**.
 
