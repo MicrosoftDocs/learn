@@ -1,30 +1,22 @@
-[topic sentence]
+GitHub administrators perform vital tasks to ensure that their organization's code and content assets are adequately protected while providing each team access to the repositories they rely on to collaborate and share their work.
 
-The C# programming language allows you to build many types of applications, from business applications to analyze and process data, dynamic web applications, games, financial or scientific applications, cloud-based applications, mobile applications and more.
+Suppose you've been asked by your CIO for an adoption plan so that the entire company can benefit from GitHub.  You want to ensure every group has adequate access to the right repositories, and you want to ensure that there's a sustainable way to provide adequate permissions to the appropriate software development and content teams.  You will need to think through the kinds of tasks that administrators will need to perform, and assign the right level of access to the right administrators.  But first, you really need to understand what options are available to you from GitHub.
 
-[scenario]
+In this module, you will learn about the purpose and the administrative tasks at each hierarchical level.  You'll discover the various ways that administrators can configure authentication so that users can access GitHub via web browser and git client.  You'll learn about hierarchical permission levels and repository permissions, and what these permissions allow you to do in GitHub.
 
-Since you’re just getting started, suppose you simply want to create a MadLibs-style game that prompts a user for the names of people, places, and things and combines them in a humorous way and displays them back to the user. You would need to create simple logic to accept user input, combine user input with pre-written hard-coded text, and display it to the user.
-
-[prose TOC]
-
-In this module, you will create an application that accepts user input from the keyboard, combine that input with hard-coded text, and present the final result back to the user. You’ll learn some initial concepts like basic C# syntax including several common operators, the string data type and how to create literal strings, how to initialize variables then set and retrieve values from a variable, why you would want to comment out a line of code, how your code is structured into classes and methods and how to call methods.
-
-[goal]
-
-By the end of this module, you will be able to build simple applications that can accept user input, combine that input with literal text, and output the result to the user.
+By the end of this module, you will be able to describe GitHub's administrative tasks, hierarchical levels, permissions, and more.
 
 ## Learning objectives
 
-By the end of thsi module, you will be able to:
+By the end of this module, you will be able to:
 
 - Describe how GitHub administrators can utilize various technologies to enable a secure authentication strategy allowing them to centrally manage repository access.
-- Describe how GitHub administrators can organizes members into organizations and teams to control access and privacy.
+- Describe how GitHub administrators can organize members into organizations and teams to control access and privacy.
 - Describe how GitHub administrators can centrally manage teams and members using existing directory information services.
 - Describe how GitHub can itself be used as an identity provider for authentication and authorization.
 
 ## Prerequisites
 
 - Familiarity with GitHub, repositories, and the basics of managing individual accounts is required
-- Familiarity with personal and organizational authentication technologies and processes would be very helpful
+- Familiarity with personal and organizational authentication technologies and processes would be helpful
 

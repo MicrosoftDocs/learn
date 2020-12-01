@@ -3,12 +3,12 @@ uid: learn.github.github-introduction-administration.how-github-organization-per
 title: How does GitHub organization and permissions work?
 metadata:
   title: How does GitHub organization and permissions work?
-  description: TODO
+  description: Deep dive into the hierarchical structure of GitHub's permission levels.
   ms.date: 11/16/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/4-how-github-organization-permission-works.md)]

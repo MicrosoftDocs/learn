@@ -1,25 +1,7 @@
-[Summarize the problem]
-[How the tech solved the problem]
-[Experience without product]
-[Business impact]
-Example
+Our goal in this module was to develop a mental model of the roles and responsibilities for those users who perform administrations tasks for companies.  Whether it is setting up authentication schemes and enforcing organization or enterprise-wide policies, or designing cascading structures that represent the natural groupings within the company for the purpose of restricting access to appropriate repositories, GitHub supplies administrators the tools they need to flexibly control and protect the usage of their company's GitHub usage.
 
-[Summarize the problem]
+Hierarchical levels like Organizations, Teams, and Enterprises enable ways of setting up and controlling authentication and other security measures.  Permission levels allow for fine-grained control of specific tasks.  Repository permissions can be applied to individual users or teams of users, and cascade those permissions through child teams.
 
-Our goal in this module was to build a simple software application that could accept input from the user and display information to the user.
+Without these types of administrative controls, it would be impossible to adequately secure a company's GitHub implementation.
 
-[How the tech solved the problem]
-
-By using basic C# syntax, the dotnet CLI, the Console class in the .NET Base Class Library and several developer tools already installed into the Azure Cloud Shell, we were able to ask the user to enter their name, store it in a variable and combine it with literal string data to display a new message.
-
-[Experience without product]
-???
-
-[Business impact]
-
-While our application may seem mundane as modern games go, most applications will perform these same basic features, including:
-Displaying output to a user
-Requesting input from a user
-Processing information -- combining it, formatting it, calculating it, etc.
-
-And so you’ve just taken your first steps to building more sophisticated applications that can retrieve input from a variety of sources, display it back to the user in a more graphical means or in a more structured way, and performing logic to enforce business or game rules.
+GitHub administrators perform vital tasks that ensuring the security and viability of the repositories that each company relies on.
