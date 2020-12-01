@@ -7,7 +7,7 @@ Azure Storage provides a REST API to work with the containers and data stored in
 
 ## Using the REST API
 
-The Storage REST APIs are accessible from anywhere on the Internet, by any application that can send an HTTP/HTTPS request and receive an HTTP/HTTPS response.
+The Storage REST APIs are accessible from anywhere on the Internet, by any app that can send an HTTP/HTTPS request and receive an HTTP/HTTPS response.
 
 For example, if you wanted to list all the blobs in a container, you would send something like:
 
@@ -69,12 +69,13 @@ However, this approach requires a lot of manual parsing and the creation of HTTP
 
 ## Using a client library
 
-Client libraries can save a significant amount of work for application developers because the API is tested and it often provides nicer wrappers around the data models sent and received by the REST API.
+Client libraries can save a significant amount of work for app developers because the API is tested and it often provides nicer wrappers around the data models sent and received by the REST API.
 
 :::row:::  
     :::column:::  
-    Microsoft has Azure client libraries that support a number of languages and frameworks including:
+    Microsoft has Azure client libraries that support a number of languages and frameworks, including:
     - .NET
+    - Linux
     - Java
     - Python
     - Node.js
@@ -113,6 +114,6 @@ blobService.listBlobsSegmented(containerName, null, function (error, results) {
 ```
 
 > [!NOTE]
-> The client libraries are just thin _wrappers_ over the REST API. They are doing exactly what you would do if you used the web services directly. These libraries are also open source, making them very transparent. See the Additional Resources section at the end of this module for links to the source code for these libraries on GitHub.
+> The client libraries are just thin _wrappers_ over the REST API. They are doing exactly what you would do if you used the web services directly. These libraries are also open source, making them very transparent. For links to the source code for these libraries on GitHub, at the end of this module, see the *Additional Resources* section.
 
-Let's add client library support to our application.
+Let's add client library support to your app.

@@ -85,4 +85,4 @@ When you subscribe to a service like Azure or Microsoft 365, all of your identit
 |---------|---------|
 |Azure Active Directory B2B (Azure AD B2B)| Guest users access applications through a link in an invitation email or a link shared directly with them. These redemption links are stored in US datacenters. If a user unsubscribes from invitation messages, their email address is also stored in US datacenters.  |
 |Azure Active Directory B2C (Azure AD B2C)|No personal data is stored outside of Europe, but policy configuration data is stored in US datacenters.|
-|Azure Multi-Factor Authentication|Phone calls and text messages come from US datacenters, and global providers handle the routing. OAuth code validation happens in the US. Push notifications for the Microsoft Authenticator app come from US datacenters.|
+|Azure AD Multi-Factor Authentication|Phone calls and text messages come from US datacenters, and global providers handle the routing. OAuth code validation happens in the US. Push notifications for the Microsoft Authenticator app come from US datacenters.|
