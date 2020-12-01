@@ -42,7 +42,7 @@ Each study area maps to a learning path in Azure fundamentals.
 
 The percentages shown indicate the relative weight of each area on the exam. The higher the percentage, the more questions that part of the exam will contain. Be sure to read the exam page for specifics about what skills are covered in each area.
 
-Although Azure fundamentals provides broad coverage of what you'll find on the exam, having hands-on experience with Azure will help ensure that you're ready. There might be some questions on the exam that are not directly tied to an objective or measured skill.
+Although Azure fundamentals provides broad coverage of what you'll find on the exam, having hands-on experience with Azure will help ensure that you're ready. There might be questions on the exam that are not directly covered in Azure fundamentals.
 
 ## Learning objectives
 
