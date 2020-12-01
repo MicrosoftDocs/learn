@@ -16,7 +16,7 @@ abstract: |
   After completing this module, you'll be able to:
   - Perform custom steps in your ARM templates by using a deployment script.
   - Define parameters to make your deployment scripts more reusable.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/extend-azure-resource-manager-template-with-deployment-scripts.svg
 levels:
   - advanced
 roles:
