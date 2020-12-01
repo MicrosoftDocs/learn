@@ -26,7 +26,9 @@ roles:
 - student
 products:
 - azure
-- azure-virtual-machines
+- azure-database-postgresql
+- azure-web-apps
+- aspnet-core
 units:
 - learn.intro-to-hyperscale.1-introduction
 - learn.intro-to-hyperscale.2-how-hyperscale-works
