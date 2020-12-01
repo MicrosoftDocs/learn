@@ -15,15 +15,14 @@ content: |
 quiz:
     title: Check your knowledge
     questions:
-    - content: "Which of the following Azure CLI commands adds an application setting named API_KEY to an App Service instance named `contoso`?"
+    - content: "What is the name of the HTTP header that carries API keys in calls to Azure Cognitive Services?"
       choices:
-      - content: "`az webapp config appsettings set -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4`"
+      - content: "Ocp-Apim-Cognitive-Key"
+        isCorrect: false
+        explanation: "Incorrect. This isn't quite right. These API keys are frequently called \"subscription\" keys."
+      - content: "Ocp-Apim-Subscription-Key"
         isCorrect: true
-        explanation: "Correct! You use the `az webapp config appsettings set -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4` Azure CLI command to add the application setting."
-      - content: "`az webapp config appsettings add -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4`"
+        explanation: "Correct! Ocp-Apim-Subscription-Key is the name of the HTTP header that carries API keys in calls to Azure Cognitive Services."
+      - content: "Ocp-Apim-Auth-Key"
         isCorrect: false
-        explanation: "Incorrect. Think back to what CLI commands you ran before. What patterns can you see? Do you use the keyword `add`?"
-      - content: "`az appsvc config appsettings set -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4`"
-        isCorrect: false
-        explanation: "Incorrect. Think back to what CLI commands you ran before. What patterns can you see? Is `appsvc` the name of the command?"
-
+        explanation: "Incorrect. This isn't quite right. These API keys are frequently called \"subscription\" keys."
