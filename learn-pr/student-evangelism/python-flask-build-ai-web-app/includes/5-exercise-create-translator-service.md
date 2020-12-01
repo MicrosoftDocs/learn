@@ -1,4 +1,4 @@
-Let's get keys for the Translator service. As mentioned previously, we'll need an [Azure account](https://azure.microsoft.com/account/free?WT.mc_id=python-11210-chrhar&azure-portal=true). We'll create the key using the Azure portal and store it in a **.env** file in our application.
+Let's get keys for the Translator service. As mentioned previously, we'll need an [Azure account](https://azure.microsoft.com/free/?WT.mc_id=python-11210-chrhar&azure-portal=true). We'll create the key using the Azure portal and store it in a **.env** file in our application.
 
 ## Get Translator service key
 

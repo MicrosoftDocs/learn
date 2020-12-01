@@ -2,7 +2,7 @@ While solutions using machine learning or artificial intelligence have become in
 
 Azure provides a set of offerings called [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services?WT.mc_id=python-11210-chrhar&azure-portal=true), which include services for computer vision, speech to text and text to speech, and text translation. You can access any of these services via software developer kits (SDKs), or by calling them in the same way you'd call any other HTTP endpoint.
 
-To use Cognitive Services, you'll need an Azure account. If you're new to Azure, you can [sign-up for free](https://azure.microsoft.com/account/free?WT.mc_id=python-11210-chrhar&azure-portal=true), which will include $200 free credit for the first 30 days. If you're a student, you can [enroll for Azure for Students](https://azure.microsoft.com/free/students?WT.mc_id=python-11210-chrhar&azure-portal=true), which includes $100 to use across 12 months, and a host of other free services.
+To use Cognitive Services, you'll need an Azure account. If you're new to Azure, you can [sign-up for free](https://azure.microsoft.com/free/?WT.mc_id=python-11210-chrhar), which will include $200 free credit for the first 30 days. If you're a student, you can [enroll for Azure for Students](https://azure.microsoft.com/free/students?WT.mc_id=python-11210-chrhar&azure-portal=true), which includes $100 to use across 12 months, and a host of other free services.
 
 ## Translator service
 
