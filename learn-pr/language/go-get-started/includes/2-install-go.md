@@ -1,4 +1,3 @@
-# Exercise - Install Go
 Before you start creating applications with Go, you need to set up your development environment. 
 
 In case you don’t want to install Go locally, you can use the [Go Playground](https://play.golang.org/) which is a web service that can run applications written in Go in a browser. This is a great option when you want to quickly and easily run code examples. However, we do recommend setting up your local environment when building applications that require a more complex code organization.

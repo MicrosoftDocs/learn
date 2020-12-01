@@ -1,4 +1,3 @@
-# Exercise - Set up your development environment
 We mentioned early in this module that if you don’t want to install Go on your local workstation yet, you can use the [Go Playground](https://play.golang.org/), a website that compiles and runs Go code inside a sandbox environment. Typically, this is the tool you use for sharing code snippets with other developers when sharing a solution in forums.
 
 However, the Go Playground comes with a few limitations that might impact your learning journey, like:

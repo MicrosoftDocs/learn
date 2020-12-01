@@ -1,4 +1,3 @@
-# Exercise - Set up your development environment
 You can use any text editor to write Go applications, but when you use an IDE like Visual Studio Code (VS Code), you write code faster. Without an IDE, you’d have to write every line from scratch, which at the beginning could help to get familiar with the syntax, but in the long-term, you might need more time to write an application. Therefore, we recommend using an IDE. For instance, you could start using VS Code, which is free and open-source, which has an extension for Go to help you write code faster.
 
 When you have VS Code and the Go extension, you get the following benefits:
@@ -26,7 +25,7 @@ Locate the file you’ve just downloaded and open Finder. Drag and drop the Visu
 **Step 3: Start the app from the Applications folder**
 To start the Visual Studio Code app, double-click on the icon from the Applications folder.
 
-**> [!NOTE]**
+> [!NOTE]
 > You might see a warning that Visual Studio Code can't be opened because Apple can't check it for malicious software. If that happens, select OK to dismiss the message. Then right-click Visual Studio Code in the Applications folder and choose the Open menu. If you choose this option, Visual Studio Code should open without any further issues.
 
 ## Install Visual Studio Code on Linux

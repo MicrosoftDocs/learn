@@ -1,4 +1,3 @@
-# Summary
 Our goal in this module was to guide you through taking your first steps with Go, have a working environment where you can create more projects in Go, and use VS Code to write programs rapidly following the Go standards. With the typical **Hello World** program, you learned how to compile and run programs written in Go.
 
 To avoid having problems in the future, you need to keep in mind that all projects in Go share the same workspace on your computer. A recommended practice is that you create all of your projects within the **$GOPATH/src** directory. However, there are times when you need to create projects at a different location. We’ll talk about how you can have your project’s code at a different location in the upcoming module.

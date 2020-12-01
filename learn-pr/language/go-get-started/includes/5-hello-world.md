@@ -1,4 +1,3 @@
-# Exercise - Hello World
 In this section, you’ll write your first Go program that prints a message to the screen. Although this is the typical example to get started in a programming language, you’ll also learn more about the Go CLI, like building and running an application written in Go.
 
 ## Step 1: Head over to the Go workspace and launch VS Code
