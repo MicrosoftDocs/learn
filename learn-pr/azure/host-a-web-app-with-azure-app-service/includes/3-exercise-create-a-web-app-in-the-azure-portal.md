@@ -138,7 +138,7 @@ After the app is ready, navigate to the new app in the Azure portal:
 
     :::image type="content" source="../media/3-web-app-home.png" alt-text="Screenshot showing the App Service page with the URL link of the overview section highlighted.":::
 
-1. To preview your new web app's default content, click on its **URL** at the top right. The placeholder page that loads indicates that your web app is up and running and ready to receive deployment of your app's code.
+1. To preview your new web app's default content, select its **URL** at the top right. The placeholder page that loads indicates that your web app is up and running and ready to receive deployment of your app's code.
 
 ::: zone pivot="csharp"
 
