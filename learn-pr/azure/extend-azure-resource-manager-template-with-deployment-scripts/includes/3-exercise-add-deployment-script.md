@@ -76,7 +76,7 @@ Now that you have a deployment script uploading a file into Azure blob storage, 
 
 Your template should look like:
 
-:::code language="json" source="code/template-with-deploymentscript.json" :::
+:::code language="json" source="code/template-with-deploymentscript.json" highlight="9-11, 60-106, 108-113" :::
 
 If it does not, either copy the example or adjust your template to match the example.
 
