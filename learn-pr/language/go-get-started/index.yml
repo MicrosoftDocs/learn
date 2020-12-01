@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.language.go-get-started
+metadata:
+  title: Get started with Go
+  description: Take your first steps with Go.
+  ms.date: 12/01/2020
+  author: meaghanlewis
+  ms.author: shanama 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get started with Go
+summary: In this module, you’ll start taking your first steps with Go.
+abstract:  |
+  In this module, you will:
+  - Install and configure Go in your local workstation
+  - Install and configure VS Code and the Go extension
+  - Explore the Go Playground
+  - Create your first Go application
+prerequisites: |
+  - Programming basics in general
+  - Knowledge with at least one programming language
+  - Download / Install Software from the Internet
+iconUrl: /learn/achievements/generic-badge.svg # TODO change
+levels:
+- beginner
+roles:
+- student
+products:
+- azure
+units:
+- learn.language.go-get-started.0-introduction
+- learn.language.go-get-started.1-what-is-go
+- learn.language.go-get-started.2-install-go
+- learn.language.go-get-started.3-explore-playground
+- learn.language.go-get-started.4-install-visual-studio-code
+- learn.language.go-get-started.5-hello-world
+- learn.language.go-get-started.6-knowledge-check
+- learn.language.go-get-started.7-summary
+badge:
+  uid: ""
