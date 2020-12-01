@@ -15,7 +15,7 @@ abstract: |
   - Plan for Azure Stack HCI.
   - Deploy Azure Stack HCI.
   - Validate deployment of Azure Stack HCI.
-  - Itegrate Azure Stack HCI with Azure.
+  - Integrate Azure Stack HCI with Azure.
 prerequisites: | 
   In order to get the best learning experience from this module, you should have the basic knowledge of:
   - Azure
