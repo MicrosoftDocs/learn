@@ -10,8 +10,8 @@ The Azure Functions tools are a Visual Studio extension that enable you to creat
 
 To install the Azure Functions tools, in Visual Studio, in the **Tools** menu, navigate to the **Extensions and Updates** command. Search for **Azure Functions**, and then download and install the **Azure Functions and Web Job Tools** extension.
 
-    > [!NOTE]
-    > If you are using Visual Studio 2019, the **Azure Functions and Web Job Tools** functionality is already included.
+> [!NOTE]
+> If you are using Visual Studio 2019, the **Azure Functions and Web Job Tools** functionality is already included.
 
 :::image type="content" source="../media/2-azure-functions-and-web-jobs-extension.png" alt-text="Screenshot of the Extensions and Updates search page with the Azure Functions and Web Jobs Tools extension highlighted." loc-scope="vs":::
 
