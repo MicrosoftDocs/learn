@@ -1,14 +1,14 @@
-Normally you have to create a repository on GitHub before you can publish your code. Visual Studio Code lets you do that right from the editor. The following steps will guide you to create a new project and then publish that project to GitHub from Visual Studio Code.
+Normally, you have to create a repository on GitHub before you can publish your code. Visual Studio Code lets you do that right from the editor. The following steps will guide you to create a new project and then publish that project to GitHub from Visual Studio Code.
 
 ## Step 1: Create a new project
 
-1. Create a folder on your machine called "mslearn-demo".
-1. In Visual Studio Code, select the "File" menu and choose "Open Folder".
-1. Select the "mslearn-demo" folder you created in step 1.
+1. Create a folder on your machine called **mslearn-demo**.
+1. In Visual Studio Code, select the **File** menu and choose **Open Folder**.
+1. Select the **mslearn-demo** folder that you created in step 1.
 
 ### Create README.md
 
-The README file is what is seen when people visit your repo on github.com. For more information about the purpose and content of a REAMDE file, check out the "Contribute to open source on GitHub" Module.
+The README file is what is what people see when they visit your repo on github.com. For more information about the purpose and content of a REAMDE file, check out the "Contribute to open source on GitHub" module.
 
 1. Select the "File" menu and select "New File".
 1. Add the following text to the file.
