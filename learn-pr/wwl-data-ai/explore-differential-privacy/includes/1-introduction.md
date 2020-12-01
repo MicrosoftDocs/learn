@@ -14,8 +14,9 @@ In this module, you'll explore *differential privacy*, a technique that can help
 
 ## Learning objectives
 
-In this module, you will learn how:
+In this module, you will learn how to:
 
-- Differential privacy protects individual data values from being exposed in analyses.
-- Differential privacy is configured using an *epsilon* value to determine the tradeoff between privacy and accuracy.
-- The **SmartNoise** package provides an implementation of differential privacy that you can use to analyze data in Python.
+- Articulate the problem of data privacy
+- Describe how differential privacy works
+- Configure parameters for differential privacy
+- Perform differentially private data analysis
