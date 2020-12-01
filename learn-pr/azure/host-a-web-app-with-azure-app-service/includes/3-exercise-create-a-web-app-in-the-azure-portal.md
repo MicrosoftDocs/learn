@@ -28,7 +28,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | **Linux Plan** | *Leave default* | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
     | **Sku and size** | F1 | The pricing tier of the plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1** from the list, then select Apply. |
 
-    ![Screenshot showing web app creation details.](../media/3-create-web-app-dotnet.png)
+    :::image type="content" source="../media/3-create-web-app-dotnet.png" alt-text="Screenshot showing web app creation details.":::
 
 ::: zone-end
 
@@ -57,7 +57,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | **Linux Plan** | *Leave default* | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
     | **Sku and size** | F1 | The pricing tier of the plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1** from the list, then select Apply. |
 
-    ![Screenshot showing web app creation details.](../media/3-create-web-app-java.png)
+    :::image type="content" source="../media/3-create-web-app-java.png" alt-text="Screenshot showing web app creation details.":::
 
 ::: zone-end
 
@@ -85,7 +85,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | **Linux Plan** | *Leave default* | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
     | **Sku and size** | F1 | The pricing tier of the plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1** from the list, then select Apply. |
 
-    ![Screenshot showing web app creation details.](../media/3-create-web-app-node.png)
+    :::image type="content" source="../media/3-create-web-app-node.png" alt-text="Screenshot showing web app creation details.":::
 
 ::: zone-end
 
@@ -113,7 +113,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | **Linux Plan** | *Leave default* | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
     | **Sku and size** | F1 | The pricing tier of the plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1** from the list, then select Apply. |
 
-    ![Screenshot showing web app creation details.](../media/3-create-web-app-python.png)
+    :::image type="content" source="../media/3-create-web-app-python.png" alt-text="Screenshot showing web app creation details.":::
 
 ::: zone-end
 
@@ -132,11 +132,11 @@ After the app is ready, navigate to the new app in the Azure portal:
 
 1. Select the App Service for your web app from the list. Make sure to select the App Service, and not the App Service plan.
 
-    ![Screenshot showing an example search result within the all resources page with a newly created App Service highlighted.](../media/3-web-app.png)
+    :::image type="content" source="../media/3-web-app.png" alt-text="Screenshot showing an example search result within the all resources page with a newly created App Service highlighted.":::
 
     The portal displays the web app overview page.
 
-    ![Screenshot showing the App Service page with the URL link of the overview section highlighted.](../media/3-web-app-home.png)
+    :::image type="content" source="../media/3-web-app-home.png" alt-text="Screenshot showing the App Service page with the URL link of the overview section highlighted.":::
 
 1. To preview your new web app's default content, click on its **URL** at the top right. The placeholder page that loads indicates that your web app is up and running and ready to receive deployment of your app's code.
 
