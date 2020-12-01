@@ -1,21 +1,22 @@
 ### YamlMime:Module
 uid: learn.java-target-destinations
 metadata:
-  title: Choose an Azure service for deploying your Java application
-  description: In this tutorial, you'll learn about running your Java applications on Azure, and choose the best option between Virtual Machines, Azure App Services, Serverless functions, Kubernetes and Azure Spring Cloud.
+  title: Choose the right Azure service for deploying your Java application
+  description: In this module, you'll learn about running your Java applications on Azure. You'll also choose the best service option among virtual machines (VMs), Azure App Service, serverless functions, Azure Kubernetes Service (AKS), and Azure Spring Cloud.
   author: judubois
   ms.author: judubois
   ms.date: 11/16/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Choose an Azure service for deploying your Java application
-summary: Explore the options for deploying Java applications to Azure and choose the best fit for your application.
+title: Choose the right Azure service for deploying your Java application
+summary: Explore the service options for deploying Java applications to Azure, and choose the one that best addresses your team's needs.
 abstract: | 
- By the end of this tutorial, you will be able to:
-  - Describe and differentiate the Azure deployment options available for Java applications
-  - Choose the best Azure service for deploying a Java application
+ By the end of this tutorial, you'll be able to:
+  - Describe and differentiate the Azure deployment options that are available for Java applications.
+  - Choose the best Azure service for deploying a Java application.
 prerequisites:  |
- - Basic experience in developing Java applications
+  - Familiarity with developing and running Java applications
+  - Beginner-level experience with cloud infrastructure
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
