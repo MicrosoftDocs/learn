@@ -38,16 +38,16 @@ Let's get keys for the Translator service. As mentioned previously, we'll need a
 10. Select **Go to resource**
 11. Select **Keys and Endpoint** on the left side under **RESOURCE MANAGEMENT**
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot showing the keys and endpoints option on the menu.](../media/translator-key-endpoint.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot showing the keys and endpoints option on the menu.](../media/translator-key-endpoint.png)
 
 12. Next to **KEY 1**, select **Copy to clipboard**
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot showing the key dashboard.](../media/translator-keys.png)
-
-   > [!NOTE]
-   > There's no difference between Key 1 and Key 2. By providing two keys you have the opportunity to migrate to new keys, by regenerating one while using the other.
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot showing the key dashboard.](../media/translator-keys.png)
+    
+    > [!NOTE]
+    > There's no difference between Key 1 and Key 2. By providing two keys you have the opportunity to migrate to new keys, by regenerating one while using the other.
 
 13. Make a note of the **endpoint** and **location** values
 

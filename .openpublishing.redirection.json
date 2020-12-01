@@ -4348,22 +4348,22 @@
     },
     {
       "source_path": "learn-pr/student-evangelism/python-flask-build-ai-web-app/3-exercise-upload-photos.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/student-evangelism/python-flask-build-ai-web-app/3-exercise-create-app",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/3-exercise-create-app",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/student-evangelism/python-flask-build-ai-web-app/4-exercise-extract-text.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/student-evangelism/python-flask-build-ai-web-app/4-translation",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/4-translation",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/student-evangelism/python-flask-build-ai-web-app/5-exercise-translate-text.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/student-evangelism/python-flask-build-ai-web-app/5-exercise-create-translator-service",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/5-exercise-create-translator-service",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/student-evangelism/python-flask-build-ai-web-app/6-exercise-deploy-azure.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/student-evangelism/python-flask-build-ai-web-app/6-exercise-call-translator",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/6-exercise-call-translator",
       "redirect_document_id": false
     },
   ]
