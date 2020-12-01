@@ -36,7 +36,7 @@ After the installation is done, you can immediately start Visual Studio Code.
 
 ::: zone-end
 
-::: zone-pivot="macos"
+::: zone pivot="macos"
 
 ## Install Visual Studio Code on macOS
 
