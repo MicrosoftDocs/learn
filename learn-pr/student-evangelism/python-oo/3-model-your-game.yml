@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.python-oo.3-model-your-game
-title: Model your game using classes and variables
+title: Use classes and variables to transfer your OOP model into code
 metadata:
   title: Model your game using classes and variables
-  description: Describe unit
+  description: This unit covers what classes are in relation to objects. It also shows how instantiate objects from classes. Additionally it shows how to add data to your objects.
   author: softchris
   ms.author: chnoring
   ms.date: 12/01/2020

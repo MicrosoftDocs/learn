@@ -3,7 +3,7 @@ uid: learn.python-oo.6-exercise-game-transitions-with-methods
 title: Exercise - Add behavior to your game
 metadata:
   title: Exercise - Add behavior to your game
-  description: Describe unit
+  description: In this exercise you behavior to your game project. You end up adding methods to your objects and also implement them to get a fully working Rock, Paper, Scissors game.
   author: softchris
   ms.author: chnoring
   ms.date: 12/01/2020
