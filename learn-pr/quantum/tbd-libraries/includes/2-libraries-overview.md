@@ -1,6 +1,3 @@
-> [!NOTE]
-> Pending discussions on github
-
 The Quantum Development Kit includes several libraries which allow you to develop high-level quantum applications in Q# without worrying about the nitty-gritty details of the actual implementation on target machines.
 
 ## What is a Q# library?
@@ -19,10 +16,12 @@ When such a library has been made available to a Q# project, its namespaces can 
 Libraries in Q# are distributed as [NuGet](https://www.nuget.org/) packages.
 
 > [!NOTE]
-> NuGet is the primary package manager for .NET languages, enabling developers to produce, share, and consume useful code. 
+> NuGet is a package manager used for a variety of different platforms, and is the primary package manager used by most .NET languages.
+> It enables developers to produce, share, and consume useful code. 
 > A NuGet *package* is essentially a ZIP file containing compiled code and related files.
 
-The Quantum Development Kit uses NuGet to give Q# projects access to, and thus use the code from, any such package.
+The Quantum Development Kit uses NuGet to give Q# projects access to, and thus use the code from, any compatible package.
+Naturally only those packages meant for use with Q# can be used, such as those containing Q# libraries, new/custom simulators, or new magic commands for Q# Jupyter Notebooks.
 Since they are all hosted through NuGet, users can easily use the Q# libraries produced by Microsoft, as well as other third-party libraries that are not released as part of the QDK. 
 
 As you will learn further below, the simple process of adding these libraries to your projects is the same regardless.
@@ -48,22 +47,35 @@ Then, there are three libraries focused on more domain-specific functionality:
 ## How can I add a Q# library to my project?
 
 The standard library is included in every Q# project by default, but accessing other libraries requires adding their packages to the project.
-Depending on your Q# development setup, the method will vary:
 
-> [!NOTE]
-> NOTE TO REVIEWER: following taken from our docs. 
-> Has this changed/should we present it differently? 
-> E.g. should we more explicitly mention the `.csproj` file for the first option?
+Depending on your Q# development setup, the method will vary. 
+
+For Q# applications for the command line interface or with .NET interoperability, each Q# project includes a `.csproj` project file, which, among other things, defines any NuGet packages that have been added to the project.
+In this case, adding packages is as simple as running a single command.
+
+For the situations based on IQ#, Q# Jupyter Notebooks or interoperability with Python, project files are not a necessary part of the workflow.
+Instead, you can interactively add packages directly in your Notebook workspace or from the Python host file.
+
+Note that IQ# also supports using project files to define packages, so the instructions for Q# applications also apply in that scenario.
+Below, we only describe the methods to do so interactively. 
+
+
 
 ### [Q# applications or .NET interopability](#tab/tabid-csproj)
 
 **Command prompt or Visual Studio Code:** Using the command prompt on its own or from within Visual Studio Code, you can use the `dotnet` command to add a NuGet package reference to your project.
+
 For example, to add the [**Microsoft.Quantum.Numerics**](https://www.nuget.org/packages/Microsoft.Quantum.Numerics) package, run the following command:
 
 ```dotnetcli
 dotnet add package Microsoft.Quantum.Numerics
 ```
 
+Before adding any new packages, your project file will look similar to 
+![Project file before adding package](../media/2-project-file-before.png)
+
+After running the command and adding a package, you will see the corresponding update in the project file:
+![Project file after adding package](../media/2-project-file-after.png)
 
 ### [IQ# Notebooks](#tab/tabid-notebook)
 
