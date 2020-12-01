@@ -1,16 +1,18 @@
 ### Submit problem to Azure Quantum
 
-This code submits the terms to the Azure Quantum `SimulatedAnnealing` solver. You could also have used the same problem definition with any of the other Azure Quantum solvers available (for example, `ParallelTempering`).
+This code submits the terms to the Azure Quantum `SimulatedAnnealing` solver. You could also have used the same problem definition with any of the other Azure Quantum Optimization solvers available (for example, `ParallelTempering`). You can find further information on the various solvers available through the Azure Quantum Optimization service [here](TODO).
 
 The job is run synchronously in this instance, however this could also be submitted asynchronously as shown in the next subsection.
 
 ```python
-from azure.quantum.optimization import Problem, ProblemType, SimulatedAnnealing
+from azure.quantum.optimization import Problem, ProblemType
+from azure.quantum.optimization import SimulatedAnnealing # Change this line to match the Azure Quantum Optimization solver type you wish to use
 
 # Problem type is PUBO in this instance. You could also have chosen to represent our problem in Ising form.
 problem = Problem(name="Job shop sample", problem_type=ProblemType.pubo, terms=terms)
 
 # Provide details of your workspace, created at the beginning of this tutorial
+# Provide the name of the solver you wish to use for this problem (as imported above)
 solver = SimulatedAnnealing(workspace, timeout = 100) # Timeout in seconds
 
 # Run job synchronously
@@ -207,6 +209,4 @@ print_jobs(n, o, matrix)
     [[0, 2], [0, 2], [3, 4]]
 ```
 
-In this particular instance, the solver quickly returned the solution with the lowest possible cost - this is known as the global minimum. This means that the solution scheduled all the repair tasks in such a way that the **total time to complete all repair tasks was minimized**. However, you must remember that these solvers are heuristics and are therefore not guaranteed to find the absolute minimum cost solution possible, particularly when the problem definition becomes more complex.
-
-Depending on how well the cost function is defined and the weights are tuned, the solver will have varying degrees of success. This reinforces the importance of verifying and evaluating returned solutions, to enable tuning of the problem definition in order to improve solution quality.
+For this small problem instance, the solver quickly returned a solution. For bigger, more complex problems you may need to run the job asynchronously, as shown earlier in this unit.

@@ -31,6 +31,10 @@ By inspection, you can tell that the solution above is valid (it does not violat
 - Operations are started once and only once
 - Each machine only has one operation running at a time
 
+In this particular instance, you can also tell by inspection that the solver scheduled the repair tasks in such a way that the **total time to complete them all (the makespan) was minimized**. This is the solution with the lowest possible cost, also known as the global minimum for the cost function. However, you must remember that these solvers are heuristics and are therefore not guaranteed to find the best solution possible, particularly when the problem definition becomes more complex.
+
+Depending on how well the cost function is defined and the weights are tuned, the solver will have varying degrees of success. This reinforces the importance of verifying and evaluating returned solutions, to enable tuning of the problem definition in order to improve solution quality.
+
 For larger or more complex problems, it will not always be possible to verify the solution by eye. It is therefore common practice to implement some code to verify that solutions returned from the optimizer are valid, as well as evaluating how good the solutions are (at least relative to solutions returned previously). This capability is also useful when it comes to tuning weights and penalty functions.
 
 You can perform this validation using the following code snippet, which checks the solution against all three constraints before declaring the solution valid or not. If any of the constraints are violated, the solution will be marked as invalid. An example of an invalid solution has also been included, for comparison.
@@ -113,17 +117,18 @@ def validate_solution(matrix, ops_machines_map, p, jobs):
         print(f"\tOperation-once constraint violated: {operation_once_violated}")
         print(f"\tNo-overlap constraint violated: {no_overlap_violated}\n")
 
-# Validate Azure Quantum solution
+# Validate the solution returned by the Azure Quantum Optimization SDK
 print_problem_details(n, o, p, ops_machines_map)
 print("Azure Quantum solution:")
 print_matrix(T, matrix)
 validate_solution(matrix, ops_machines_map, p, jobs)
 
-# Demonstrate an invalid solution
+# Create an example of an invalid solution matrix
 bad_matrix = [[1, 0, 0, 0, 1], [1, 0, 0, 0, 0], [1, 0, 0, 0, 0], [0, 1, 0, 0, 0], [0, 0, 0, 1, 0], [0, 0, 1, 0, 0]]
 bad_jobs = extract_jobs(n, o, bad_matrix)
 
-print("Invalid solution:")
+# Test if the validation code correctly identifies the invalid solution
+print("Example invalid solution:")
 print_matrix(T, bad_matrix)
 validate_solution(bad_matrix, ops_machines_map, p, bad_jobs)
 ```
@@ -147,7 +152,7 @@ x_5,t: 0 0 0 0 1
 
 Solution is valid.
 
-Invalid solution:
+Example invalid solution:
     t: 0 1 2 3 4
 x_0,t: 1 0 0 0 1
 x_1,t: 1 0 0 0 0
@@ -162,7 +167,7 @@ Solution not valid. Details:
     No-overlap constraint violated: True
 ```
 
-As you can see, the result returned by the Azure Quantum solver has been confirmed as valid, and the invalid solution is correctly identified.
+As you can see, the result returned by the Azure Quantum solver has been confirmed as valid, and the dummy invalid solution is correctly identified.
 
 The final step in solving this problem is to map this solution back to your repair tasks - below is shown the order in which your repair tasks should be completed to finish as quickly (and safely) as possible. If two tasks have the same order number, they can be performed at the same time by different crew members using different tools:
 

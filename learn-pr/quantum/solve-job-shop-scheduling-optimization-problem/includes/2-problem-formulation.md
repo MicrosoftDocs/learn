@@ -1,4 +1,4 @@
-The job shop scheduling problem is defined as follows: you have a set of jobs $J_1, J_2, J_3,\dots, J_n$ which have various processing times and need to be processed using a set of machines $m_1, m_2, \dots, m_n$. The goal is to complete all jobs in the shortest time possible.
+The job shop scheduling problem is defined as follows: you have a set of jobs $J_1, J_2, J_3,\dots, J_n$ which have various processing times and need to be processed using a set of machines $m_1, m_2, \dots, m_n$. The goal is to complete all jobs in the shortest time possible (this is called minimizing the **makespan**).
 
 Each job consists of a set of operations, and the operations must be performed in the correct order to complete that job.
 
@@ -44,7 +44,7 @@ The idea is to make these invalid solutions so expensive that the solver can eas
 
 ### Azure Quantum setup
 
-Before you get started with formulating the problem, you need to import some Python modules and set up an Azure Quantum `Workspace`.
+The Azure Quantum Optimization service is exposed via a Python SDK, which you will be making use of during the rest of this module. This means that before you get started with formulating the problem, you first need to import some Python modules and set up an Azure Quantum `Workspace`.
 
 > [!NOTE]
 > If you haven't created an Azure Quantum Workspace yet, you can learn more about how to do this in [Module X](TODO).
@@ -134,7 +134,7 @@ The first step is to represent the constraints mathematically. This will be done
 |**Operation-once constraint**<br>Each operation is started once and only once.|Assign penalty if an operation isn't scheduled within the allowed time.<br>**Assumption:** if an operation starts, it runs to completion.|
 |**No-overlap constraint**<br>Machines can only do one thing at a time.|Assign penalty every time two operations on a single machine are scheduled to run at the same time.|
 
-### Expressing a cost function using the Azure Quantum optimization SDK
+### Expressing a cost function using the Azure Quantum Optimization SDK
 
 As you will see during the exploration of the cost function and its constituent penalty terms below, the overall cost function is quadratic (because the highest order polynomial term you have is squared). This makes this problem a **Quadratic Unconstrained Binary Optimization (QUBO)** problem, which is a specific subset of **Polynomial Unconstrained Binary Optimization (PUBO)** problems (which allow for higher-order polynomial terms than quadratic). Fortunately, the Azure Quantum Optimization service is set up to accept PUBO (and Ising) problems, which means you don't need to modify the above representation to fit the solver.
 
@@ -149,14 +149,14 @@ The operation starts at the value of $t$ for which $x_{i + t}$ equals 1.
 
 In the next units, you will construct mathematical representations of the penalty terms and use these to build the cost function, which will be of the format:
 
-$$H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x) $$,
+$$H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x),$$
 
 where:
 
 $$f(x) \text{, } g(x) \text{ and } h(x) \text{ represent the penalty functions.}$$
 $$\alpha, \beta \text{ and } \gamma \text{ represent the different weights assigned to the penalties.}$$
 
-The weights represent how important each penalty function is, relative to all the others.
+The weights represent how important each penalty function is, relative to all the others. In the following units, you will learn how to build these penalty functions, combine them to form the cost function $H(x)$, and solve the problem using Azure Quantum.
 
 From these mathematical representations, you will build out Python code which will output an array of terms, where each `Term` is an object that looks like:
 

@@ -57,10 +57,10 @@ In the table above, ✘ has been used to denote that any $s$ value in the last c
 
 This is formulated as a penalty by counting every time consecutive operations $O_{i}$ and $O_{i + 1}$ in a job take place out of order.
   
-As you saw above: for an operation $O_{i}$, if the start time of $O_{i + 1}$ (denoted by $s$) is less than the start time of $O_{i}$ (denoted by $t$) plus its processing time $p_{i}$, then that counts as a penalty. Mathematically, this penalty condition looks like: $s < t + p_{i}$
+As you saw above: for an operation $O_{i}$, if the start time of $O_{i + 1}$ (denoted by $s$) is less than the start time of $O_{i}$ (denoted by $t$) plus its processing time $p_{i}$, then that counts as a penalty. Mathematically, this penalty condition looks like: $s < t + p_{i}$.
 
 You sum that penalty over all the operations of a job ($J_{n}$) for all the jobs:
-$$f(x) = \sum_{k_{n-1} \leq i < k_n, s < t + p_{i}}x_{i,t}\cdot x_{i+1,s} \text{ for each job } \textit{n}$$
+$$f(x) = \sum_{k_{n-1} \leq i < k_n, s < t + p_{i}}x_{i,t}\cdot x_{i+1,s} \text{ for each job } \textit{n}.$$
 
 Let's break that down:
 
@@ -76,7 +76,7 @@ Let's break that down:
 
 - $x_{i, t}\cdot x_{i+1, s}$
   
-  This represents the table you saw in the example above, where $t$ is allowed to vary from $0 \rightarrow T$ and you assign a penalty whenever the constraint is violated (when $s < t + p_{i}$).
+  This represents the table you saw in the example above, where $t$ is allowed to vary from $0 \rightarrow T - 1$ and you assign a penalty whenever the constraint is violated (when $s < t + p_{i}$).
   
   This translates to a nested `for` loop: the outer loop has limits $0 \leq t < T$ and the inner loop has limits $0 \leq s < t + p_{i}$
 

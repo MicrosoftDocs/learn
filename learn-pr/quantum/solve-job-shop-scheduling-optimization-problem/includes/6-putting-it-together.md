@@ -63,3 +63,6 @@ w3 = no_overlap_constraint(n, T, p, gamma, ops_machines_map)
 # Combine terms:
 terms = w1 + w2 + w3
 ```
+
+> [!NOTE]
+> You can see the full Python script (including the code from all units in this module) [here](TODO), and an interactive Jupyter notebook of this sample can be found [here](TODO).

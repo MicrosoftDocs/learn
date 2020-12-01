@@ -19,7 +19,7 @@ Recall the variable $x_{i,t}$:
 $$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
 $$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
-According to this constraint, $x_{i,t}$ for a specific operation should equal 1 **once and only once** during the entire simulation from $t = 0 \rightarrow T$ (because it should start once and only once during the allowed time).
+According to this constraint, $x_{i,t}$ for a specific operation should equal 1 **once and only once** during the entire simulation, from $t = 0 \rightarrow T - 1$ (because it should start once and only once during the allowed time).
 
 So in this case, you need to assign a penalty if the sum of $x_{i,t}$ for each operation across the full simulation time doesn’t equal exactly 1.
 
@@ -75,7 +75,7 @@ Now that you understand when to assign penalties, let's formulate the constraint
 
 As seen previously, you want to assign a penalty whenever the sum of $x_{i,t}$ values across all possible $t$ values is not equal to 1. This is how you represent that mathematically:
 
-$$g(x) = \sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2$$
+$$g(x) = \sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2.$$
 
 Let's break that down:
 
@@ -83,14 +83,14 @@ Let's break that down:
 
   As you saw in the sum row of the tables in the worked example, $\sum_{0\leq t < T} x_{i,t}$ should always equal exactly 1 (meaning that an operation must be scheduled **once and only once** during the simulation). This means that $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1$ should always give 0. This means there is no penalty assigned when the constraint is not violated.
   
-  In the case where $\sum_{0\leq t < T} x_{i,t} > 1$ (meaning an operation is scheduled to start more than once, like in the second example above), you now have a positive, non-zero penalty term as $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1 > 0$
+  In the case where $\sum_{0\leq t < T} x_{i,t} > 1$ (meaning an operation is scheduled to start more than once, like in the second example above), you now have a positive, non-zero penalty term as $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1 > 0$.
   
-  In the case where $\sum_{0\leq t < T} x_{i,t} = 0$ (meaning an operation is never scheduled to start, like in the last example above), you now have a $-1$ penalty term as $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1 = 0 - 1 = -1$
+  In the case where $\sum_{0\leq t < T} x_{i,t} = 0$ (meaning an operation is never scheduled to start, like in the last example above), you now have a $-1$ penalty term as $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1 = 0 - 1 = -1$.
 
 
 - $\left(\sum\dots\right)^2$
 
-  Because the penalty terms must always be positive (otherwise you would be *reducing* the penalty when an operation isn't scheduled), you must square the result of $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1$
+  Because the penalty terms must always be positive (otherwise you would be *reducing* the penalty when an operation isn't scheduled), you must square the result of $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1$.
   
   This ensures that the penalty term is always positive (as $(-1)^2 = 1$).
   

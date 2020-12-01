@@ -5,7 +5,7 @@ This is an example of the **job shop scheduling** problem. Job shop scheduling i
 The job shop scheduling problem is defined as follows: we have a set of jobs $J_1, J_2, J_3,\dots, J_n$ which have various processing times and need to be processed using a set of machines $m_1, m_2, \dots, m_n$. The goal is to complete all jobs in the shortest time possible.
 Each job consists of a set of operations, and the operations must be performed in the correct order to complete that job.
 
-In this module, we'll introduce the necessary concepts and tools for describing this problem in terms of a penalty model, and then solve an example problem using the Azure Quantum optimization service.
+In this module, we'll introduce the necessary concepts and tools for describing this problem in terms of a penalty model, and then solve an example problem using the Azure Quantum Optimization service.
 
 ### Learning objectives
 
