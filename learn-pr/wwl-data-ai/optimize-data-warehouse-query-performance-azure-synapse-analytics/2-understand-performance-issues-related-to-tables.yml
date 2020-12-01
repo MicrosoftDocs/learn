@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.understand-performance-issues-related-to-tables
+title: Understand performance issues related to tables
+metadata:
+  title: Understand performance issues related to tables
+  description: "Understand performance issues related to tables"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-performance-issues-related-to-tables.md)]

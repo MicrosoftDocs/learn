@@ -12,7 +12,7 @@ By the end of this module, you'll be able to:
 
 - Define Mixed Reality and differentiate between virtual and augmented reality
 - Describe the core ideas behind holograms
-- Start designing for 3D applications and interactions
+- Start designing and developing 3D applications 
 - Understand what Mixed Reality offers in real-world apps
 - Leverage the power of the cloud for Mixed Reality
 
