@@ -1,6 +1,6 @@
-Microsoft Azure Sentinel Analytics provides an intelligent analytics solution that you can use to detect potential threats and vulnerabilities in your organizations.
+Microsoft Azure Sentinel Analytics provides an intelligent solution that you can use to detect potential threats and vulnerabilities in your organizations.
 
-Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses several Microsoft products and services to implement data security and threat protection for its resources. These products are:
+Imagine that you work as security operations center (SOC) analyst in Contoso, Ltd. Contoso is a midsize financial services company in London with a New York branch office. Contoso uses several Microsoft products and services to implement data security and threat protection for its resources. These products are:
 
 - Microsoft 365
 - Azure Active Directory (Azure AD)
