@@ -2,9 +2,9 @@ In this unit, you'll deploy your web application to App Service.
 
 ::: zone pivot="csharp"
 
-## Deploy with zipdeploy
+## Deploy with ZIP deploy
 
-Let's deploy our .NET application with zipdeploy.
+Let's deploy our .NET application with ZIP deploy.
 
 First, use `dotnet publish` to build the final app files and `zip` to package them into a zip file.
 
@@ -80,11 +80,11 @@ The easiest way to create deployment credentials is from the Azure CLI. Run the 
 az webapp deployment user set --user-name <username> --password <password>
 ```
 
-## Deploy the application package with wardeploy
+## Deploy the application package with WAR deploy
 
-**Wardeploy** is an App Service deployment mechanism that is specifically designed for deploying WAR web application package files to Java web apps. Wardeploy is part of the Kudu REST API: an administrative service interface, available on all App Service web apps, that can be accessed over HTTP. The simplest way to use wardeploy is with the `curl` HTTP utility from the command line.
+Let's deploy our Java application with WAR deploy. WAR deploy is part of the Kudu REST API: an administrative service interface, available on all App Service web apps, that can be accessed over HTTP. The simplest way to use WAR deploy is with the `curl` HTTP utility from the command line.
 
-Run the following commands to deploy your app with wardeploy. Replace `<username>` and `<password>` with the Deployment User username and password you created above, and replace `<your-app-name>` with the name of your web app.
+Run the following commands to deploy your app with WAR deploy. Replace `<username>` and `<password>` with the Deployment User username and password you created above, and replace `<your-app-name>` with the name of your web app.
 
 ```console
 cd ~/helloworld/target
