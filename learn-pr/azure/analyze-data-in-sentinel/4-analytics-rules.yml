@@ -26,7 +26,7 @@ quiz:
     - content: "Scheduled analytic rules"
       isCorrect: true
       explanation: "Scheduled Analytic rules provide the highest level of customization."
-  - content: "Which one of the template rules can create incidents based on all alerts generated in Azure Security Center?"
+  - content: "Which type of the template rules can create incidents based on all alerts generated in Azure Security Center?"
     choices:
     - content: "Machine learning behavioral analytics"
       isCorrect: false
