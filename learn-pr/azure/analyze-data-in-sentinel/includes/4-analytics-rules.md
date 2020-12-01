@@ -1,4 +1,4 @@
-By using Azure Sentinel Analytics rules, you can configure notification and alerts based of data coming from the sources that are connected to Azure Sentinel. These alerts will help ensure that the Contoso SOC team knows when a threat occurs and can then appropriately react to prevent the threat from reaching your corporate assets.
+By using Azure Sentinel Analytics rules, you can configure notification and alerts based on data coming from the sources that are connected to Azure Sentinel. These alerts will help ensure that the Contoso SOC team knows when a threat occurs, and the team can then appropriately react to prevent the threat from reaching your corporate assets.
 
 ## Types of analytics rules
 
@@ -18,7 +18,7 @@ Fusion alerts identify anomalous behaviors and suspicious activities at various 
 > [!Note]
 > The cyber kill chain describes the typical workflow, including techniques, tactics, and procedures (TTPs), used by attackers to infiltrate an organization’s networks and systems.
 
-By default, Fusion detection is enabled in Azure Sentinel. Microsoft is constantly updating Fusion detection scenarios for threat detection. At the time of writing this article for Fusion detection you must configure the following data connectors:
+By default, Fusion detection is enabled in Azure Sentinel. Microsoft is constantly updating Fusion detection scenarios for threat detection. At the time of writing this article, for Fusion detection, you must configure the following data connectors:
 
 - Azure Active Directory Identity Protection
 - Microsoft Cloud App Security
@@ -27,11 +27,11 @@ By default, Fusion detection is enabled in Azure Sentinel. Microsoft is constant
 
 Some of the common attack detection scenarios that Fusion alerts identify include:
 
-- **Data exfiltration**. Suspicious activity detected, such as suspicious forwarding rule in Office 365 mailbox, after a suspicious sign-in to Azure AD account can indicate compromised user account.
+- **Data exfiltration**. Suspicious activity detected, such as suspicious forwarding rule in Microsoft 365 mailbox, after a suspicious sign-in to Azure AD account can indicate compromised user account.
 - **Data destruction**. Anomalous number of unique files that were deleted after a suspicious sign-in to Azure AD account can signal that a compromised user account was used to destroy data.
-- **Denial of service**. Significant number of Azure virtual machines (VMs) were deleted after a suspicious sign-in to Azure AD account can signal compromised user account and is used to destroy the organization's assets.
-- **Lateral movement**. Significant number of impersonation actions occurred, after a suspicious sign-in to Azure AD account indicates compromised user account and was used for malicious purposes.
-- **Ransomware**. After a suspicious sign-in to Azure AD account, unusual user behavior used to encrypt data can trigger ransomware execution alert
+- **Denial of service**. Significant number of Azure virtual machines (VMs) deleted after a suspicious sign-in to Azure AD account can signal a compromised user account that can be used to destroy the organization's assets.
+- **Lateral movement**. Significant number of impersonation actions that occur after a suspicious sign-in to Azure AD account can indicate a compromised user account that was used for malicious purposes.
+- **Ransomware**. After a suspicious sign-in to an Azure AD account, unusual user behavior used to encrypt data can trigger a ransomware execution alert.
 
 > [!Note]
 > For more information on the Fusion technology in Azure Sentinel, refer to [Advanced multistage attack detection in Azure Sentinel](https://docs.microsoft.com/azure/sentinel/fusion)
@@ -65,12 +65,12 @@ You can filter these alerts by severity and by specific text that is contained i
 
 ## Machine learning behavioral analytics
 
-Azure Sentinel Analytics includes built-in machine learning behavioral analytics rules. You can't edit these built-in rules or review the rule settings. These rules use Microsoft machine learning algorithms to detect suspicious activity. Machine Learning algorithms correlate several low-fidelity incidents into a high-fidelity security incident. This saves hours that you might otherwise spend manually analyzing numerous alerts from different products and correlating them. Machine learning algorithms that analytics rules use also help reduce the noise around alerts by quickly ingesting and connecting the important data.
+Azure Sentinel Analytics includes built-in machine learning behavioral analytics rules. You can't edit these built-in rules or review the rule settings. These rules use Microsoft machine learning algorithms to detect suspicious activity. Machine Learning algorithms correlate several low-fidelity incidents into a high-fidelity security incident. This saves hours that you might otherwise spend manually analyzing numerous alerts from different products and correlating them. Machine learning algorithms that analytics rules use also help reduce the noise around alerts by quickly ingesting and connecting important data.
 
-For example, with machine learning behavioral analytics rule you can detect anomalous secure shell protocol (SSH) Login or remote desktop protocol (RDP) Login activity.
+For example, by using a machine learning behavioral analytics rule, you can detect an anomalous secure shell protocol (SSH) Login or remote desktop protocol (RDP) login activity.
 
 > [!Note]
-> Microsoft plan in the future to enable customers to edit and customized machine learning analytics rules.
+> In the future, Microsoft plans to allow customers to edit and customize machine learning analytics rules.
 
 ## Scheduled alerts
 
