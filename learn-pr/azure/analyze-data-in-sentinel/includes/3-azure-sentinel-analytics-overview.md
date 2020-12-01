@@ -4,13 +4,12 @@ Azure Sentinel Analytics helps you detect, investigate, and remediate cybersecur
 
 Azure Sentinel Analytics provides several functionalities that you can use to implement security for the data and resources at Contoso.
 
-You can analyze both real-time and historical data collected from your workstations, servers, networking devices, firewalls, intrusion prevention, sensors, and so on. Azure Sentinel Analytics analyzes data from various sources to identify correlations and anomalies.
-By using analytics rules, you can trigger alerts based on the techniques that are used by known malicious actors. You can set up these rules to help ensure the right people are being alerted at the right level.
+You can analyze historical data collected from your workstations, servers, networking devices, firewalls, intrusion prevention, sensors, and so on. Azure Sentinel Analytics analyzes data from various sources to identify correlations and anomalies.
+By using analytics rules, you can trigger alerts based on the attack techniques that are used by known malicious actors. You can set up these rules to help ensure your SOC is alerted to potential security incidents in your environment in a timely fashion.
 
 ## Why use analytics rules for security?
 
-Although some of the other products that Contoso has implemented can help you identify threats, Azure Sentinel Analytics plays an important part in the overall detection of the security threat
- by correlating and matching the signals that impact the presence of a cybersecurity threat. With the proper analytics rule, you can get insights into where an attack originated from, what resources were compromised, potential data lost, along with the timeline for the incident.
+Although some of the other products that Contoso has implemented can help you identify threats, Azure Sentinel Analytics plays an important part in the overall detection of the security threat by correlating and matching the signals that impact the presence of a cybersecurity threat. With the proper analytics rule, you can get insights into where an attack originated from, what resources were compromised, potential data lost, along with the timeline for the incident.
 
 Common security analytics use cases include:
 
