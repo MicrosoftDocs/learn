@@ -1,16 +1,16 @@
 ### YamlMime:Module
-uid: learn.iot.output-from-azure-digital-twins-to-downstream-services
-title: Route output from Azure Digital Twins to Downstream Services
+uid: learn.iot.output-from-adt-to-downstream-services
 metadata:
-  title: Route output from Azure Digital Twins to Downstream Services
-  description: This module covers routing data from Azure Digital Twins, through an IoT Hub and Azure Function, to Time Series Insights.
-  ms.date: 11/1/2020
+  title: Output from ADT to Downstream Services
+  description: In this module you will get to learn about how Azure Digital twins uses event routes to send data to consumers outside the service.
+  ms.date: 11/30/2020
   author: raniabayoumy
-  ms.author: rabayoum
+  ms.author: Rania.Bayoumy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+title: Output from ADT to Downstream Services
 summary: >
-  This module covers routing data from Azure Digital Twins, through an IoT Hub and Azure Function, to Time Series Insights.
+  In this module you will get to learn about how Azure Digital twins uses event routes to send data to consumers outside the service.
 abstract: |
   In this module, you will:
   - Build and simulate the Chocolate Factory Twin
@@ -20,27 +20,25 @@ abstract: |
   - Visualize and query your data in Time Series Insights
 prerequisites: |
   - Introductory knowledge of the purpose of Azure IoT
-  - Ability to use Node.js at the beginner level 
-  - Experience using Visual Studio or Visual Studio Code at the beginner level 
+  - Basic understanding of the Azure CLI
+  - Experience working with Azure Time Series Insights
 iconUrl: /learn/achievements/iot/output-from-adt-to-downstream-services.svg
 ratingEnabled: true
 levels:
 - beginner
 roles:
 - developer
+- solution-architect
 products:
 - azure-iot
-- azure-event-hubs
+- azure-digital-twins
 units:
-- learn.iot.output-from-azure-digital-twins-to-downstream-services.introduction
-- learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-create-digital-twins-instance
-- learn.iot.output-from-azure-digital-twins-to-downstream-services.create-route-filter-twin-update-notifications
-- learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-create-route-filter-twin-update-notifications
-- learn.iot.output-from-azure-digital-twins-to-downstream-services.create-configure-azure-function-send-telemetry-event-hub
-- learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-create-configure-azure-function-send-telemetry-event-hub
-- learn.iot.output-from-azure-digital-twins-to-downstream-services.create-connect-time-series-insights-instance
-- learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-create-connect-time-series-insights-instance
-- learn.iot.output-from-azure-digital-twins-to-downstream-services.exercise-visualize-data-in-time-series-insights
-- learn.iot.output-from-azure-digital-twins-to-downstream-services.summary
+- learn.iot.output-from-adt-to-downstream-services.introduction
+- learn.iot.output-from-adt-to-downstream-services.the-scenario
+- learn.iot.output-from-adt-to-downstream-services.exercise-build-and-simulate-the-chocolate-factory-twin
+- learn.iot.output-from-adt-to-downstream-services.exercise-create-a-route-and-filter-to-twin-update-notifications
+- learn.iot.output-from-adt-to-downstream-services.exercise-create-configure-and-deploy-an-azure-function
+- learn.iot.output-from-adt-to-downstream-services.exercise-visualize-your-data-in-time-series-insights
+- learn.iot.output-from-adt-to-downstream-services.summary-and-resources
 badge:
   uid: learn.iot.output-from-adt-to-downstream-services.badge
