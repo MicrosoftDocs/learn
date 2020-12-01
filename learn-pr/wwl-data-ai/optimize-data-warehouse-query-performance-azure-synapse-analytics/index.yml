@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics
+metadata:
+  title: Optimize data warehouse query performance in Azure Synapse Analytics
+  description: "Optimize data warehouse query performance in Azure Synapse Analytics"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Optimize data warehouse query performance in Azure Synapse Analytics
+summary: Learn the techniques that you can use to optimize query performance within Azure Synapse Analytics.
+abstract: |
+  In this module, you will:
+  - Understand performance issues related to tables
+  - Understand table distribution design
+  - Use indexes to improve query performance
+  - Create statistics to improve query performance
+  - Improve query performance with Materialized Views
+  - Use read committed snapshot for data consistency
+  - Optimize common queries with result-set caching
+prerequisites: |
+  - Before taking this module, it is recommended that you complete Data Fundamentals.
+iconUrl: /learn/achievements/optimize-data-warehouse-query-performance-in-azure-synapse-analytics.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.introduction
+- learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.understand-performance-issues-related-to-tables
+- learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.exercise-understand-performance-issues-related-to-tables
+- learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.understand-table-distribution-design
+- learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.use-indexes-to-improve
+- learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.exercise-use-table-distribution-indexes-to-improve-performance
+- learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.create-statistics-to-improve
+- learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.improve-with-materialized-views
+- learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.use-read-committed-snapshot-for-data-consistency
+- learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.optimize-common-queries-with-result-set-caching
+- learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.knowledge-check
+- learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.summary
+badge:
+  uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.badge
