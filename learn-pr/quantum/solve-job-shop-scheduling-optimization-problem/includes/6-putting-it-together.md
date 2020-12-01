@@ -5,18 +5,18 @@ As a reminder, here are the penalty terms:
 | Constraint | Penalty condition |
 |---|---|
 |**Precedence constraint**<br>Operations in a job must take place in order.|Assign penalty every time $O_{i+1}$ starts before $O_{i}$ has finished (they start out of order).|
-|**Operation once constraint**<br>Each operation is started once and only once.|Assign penalty if an operation isn't scheduled within the allowed time.<br>**Assumption:** if an operation starts, it runs to completion.|
-|**No overlap constraint**<br>Machines can only do one thing at a time.|Assign penalty every time two operations on a single machine are scheduled to run at the same time.|
+|**Operation-once constraint**<br>Each operation is started once and only once.|Assign penalty if an operation isn't scheduled within the allowed time.<br>**Assumption:** if an operation starts, it runs to completion.|
+|**No-overlap constraint**<br>Machines can only do one thing at a time.|Assign penalty every time two operations on a single machine are scheduled to run at the same time.|
 
 - **Precedence constraint**:
 
 $$f(x) = \sum_{k_{n-1} \leq i < k_n, s < t + p_{i}}x_{i,t}\cdot x_{i+1,s} \text{ for each job } \textit{n}$$
 
-- **Operation once constraint**:
+- **Operation-once constraint**:
 
 $$g(x) = \sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2$$
   
-- **No overlap constraint**:
+- **No-overlap constraint**:
 
 $$h(x) = \sum_{i,t,k,s} x_{i,t}\cdot x_{k,s} = 0 \text{ for each machine } \textit{m}$$
 
@@ -51,8 +51,8 @@ ops_machines_map = [
 # Generate terms to submit to solver using penalty functions defined above
 # Assign penalty term weights:
 alpha = 0.6  # Precedence constraint
-beta = 0.2   # Operation once constraint
-gamma = 0.2  # No overlap constraint
+beta = 0.2   # Operation-once constraint
+gamma = 0.2  # No-overlap constraint
 
 # Build terms:
 terms = []

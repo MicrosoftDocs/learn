@@ -1,10 +1,10 @@
-In this unit, the no overlap constraint will be defined, and you will learn how to represent it mathematically and then transform it to code.
+In this unit, the no-overlap constraint will be defined, and you will learn how to represent it mathematically and then transform it to code.
 
-The no overlap constraint is defined as follows:
+The no-overlap constraint is defined as follows:
 
 | Constraint | Penalty condition |
 |---|---|
-|**No overlap constraint**<br>Machines can only do one thing at a time.|Assign penalty every time two operations on a single machine are scheduled to run at the same time.|
+|**No-overlap constraint**<br>Machines can only do one thing at a time.|Assign penalty every time two operations on a single machine are scheduled to run at the same time.|
 
 ### Worked example
 
@@ -19,7 +19,7 @@ Recall once more the variable $x_{i,t}$:
 $$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
 $$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
-Let's say that $O_{3}$ and $O_{4}$ must be completed using the same machine. To avoid violating the no overlap constraint, you must ensure that $O_{3}$ and $O_{4}$ begin at different times: $x_{3,t}$ and $x_{4,t}$ must not equal 1 at the same time.
+Let's say that $O_{3}$ and $O_{4}$ must be completed using the same machine. To avoid violating the no-overlap constraint, you must ensure that $O_{3}$ and $O_{4}$ begin at different times: $x_{3,t}$ and $x_{4,t}$ must not equal 1 at the same time.
 
 One example of a valid configuration is shown below:
 
@@ -84,7 +84,7 @@ Using the above, you can transform the final penalty function into code that wil
 ```python
 def no_overlap_constraint(n:int, T:int, p:List[int], w:float, ops_machines_map:List[List[int]]):
     """
-    Construct penalty terms for the no overlap constraint.
+    Construct penalty terms for the no-overlap constraint.
 
     Keyword arguments:
 

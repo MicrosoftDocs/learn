@@ -29,12 +29,12 @@ To help you complete these tasks, you have access to your trusty **universal mul
 The mission is to **complete all of these tasks in as short a time as possible**, so that you can avoid disaster. For safety reasons, you must ensure that you follow procedure and thus there are some constraints on the way you complete the tasks:
 
 1. Each of the steps (**operations**) in a repair task (**job**) must take place in order. You can't install the new transformer before removing the old one! This is called the **precedence constraint**.
-2. Each tool (**machine**) can only do one thing at a time. For example, you can't simultaneously use the multi-tool to do several things. This is the **no overlap constraint**.
-3. You start an operation only once, and once started it must be completed before you do anything else. You can't afford to procrastinate! This is called the **operation once constraint**.
+2. You start an operation only once, and once started it must be completed before you do anything else. You can't afford to procrastinate! This is called the **operation-once constraint**.
+3. Each tool (**machine**) can only do one thing at a time. For example, you can't simultaneously use the multi-tool to do several things. This is the **no-overlap constraint**.
 
 ### Cost functions
 
-The rest of this learn module will be spent constructing what is known as a **cost function**, which is used to represent the problem. This cost function is what will be submitted to the Azure Quantum Optimization solver.
+The rest of this learn module will be spent constructing what is known as a **cost function**, which is used to represent the problem. This cost function is what will be submitted to the Azure Quantum Optimization solver. If you have completed Module 9, [Solve optimization problems by using quantum-inspired optimization](https://docs.microsoft.com/learn/modules/solve-quantum-inspired-optimization-problems/), this concept should already be familiar.
 
 Each point on a cost function represents a different solution configuration - in this case, each configuration is a particular assignment of starting times for the operations you are looking to schedule. The goal of the optimization is to minimize the cost of the solution - in this instance the aim is to minimize the amount of time taken to complete all operations.
 
@@ -44,7 +44,12 @@ The idea is to make these invalid solutions so expensive that the solver can eas
 
 ### Azure Quantum setup
 
-Before you get started with formulating the problem, you need to import some Python modules and set up an Azure Quantum `Workspace`. You will need to enter your Azure Quantum workspace details in the cell below before you run it:
+Before you get started with formulating the problem, you need to import some Python modules and set up an Azure Quantum `Workspace`.
+
+> [!NOTE]
+> If you haven't created an Azure Quantum Workspace yet, you can learn more about how to do this in [Module X](TODO).
+
+You will need to enter your Azure Quantum workspace details in the cell below before you run it:
 
 ```python
 from typing import List
@@ -82,7 +87,7 @@ Let's first introduce some notation because you don't have time during an emerge
 
 Above, you can see that the jobs have been labeled as $J$ and assigned index numbers $0$, $1$ and $2$, to represent each of the three tasks you have. The operations that make up each job have also been defined, and are represented by the letter $O$.
 
-To make it easier to code up later, all operations are identified with a continuous index number rather than (for example) starting from $0$ for each job - this allows you to keep track of operations by this ID number in the code and schedule them according to the constraints and machine availability. You can tie the operations back to their jobs later on using a reference.
+To make it easier to code up later, all operations are identified with a continuous index number rather than, for example, starting from $0$ for each job. This allows you to keep track of operations by their ID numbers in the code and schedule them according to the constraints and machine availability. You can tie the operations back to their jobs later on using a reference.
 
 Below, you see how these definitions combine to give us a mathematical formulation for the jobs:
 
@@ -100,7 +105,7 @@ $$\vdots$$
 
 $$J_{n-1} = \{O_{k_{n-2}}, O_{k_{n-2}+1}, \ldots , O_{k_{n-1}-1}\} \text{, where } k_{n-1} = \text{ the total number of operations across all jobs }$$
 
-The next piece of notation you will need is a binary variable, which will be called $x_{i, t}$
+The next piece of notation you will need is a binary variable, which will be called $x_{i, t}$.
 
 You will use this variable to represent whether an operation starts at time $t$ or not:
 
@@ -108,9 +113,9 @@ $$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
 $$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
 > [!NOTE]
-> This makes this a binary optimization – more generally, this is called a polynomial unconstrained binary optimization (or PUBO) problem. You may also see these PUBO problems referred to as Higher Order Binomial Optimization (HOBO) problems - these terms both refer to the same thing.
+> Because $x_{i, t}$ can take the value of either $0$ or $1$, this is known as a binary optimization problem. More generally, this is called a polynomial unconstrained binary optimization (or PUBO) problem. You may also see these PUBO problems referred to as Higher Order Binomial Optimization (HOBO) problems - these terms both refer to the same thing.
 
-$t$ is used to represent the simulation time. It goes from time $0$ through to $T$ in integer steps. $T$ is the longest time the whole set of jobs can take in total (the max simulation time):
+$t$ is used to represent the simulation time. It goes from time $0$ to $T - 1$ in integer steps. $T$ is the longest time the whole set of jobs can take in total (the max simulation time):
 
 $$0 \leq t < T$$
 
@@ -126,8 +131,8 @@ The first step is to represent the constraints mathematically. This will be done
 | Constraint | Penalty condition |
 |---|---|
 |**Precedence constraint**<br>Operations in a job must take place in order.|Assign penalty every time $O_{i+1}$ starts before $O_{i}$ has finished (they start out of order).|
-|**Operation once constraint**<br>Each operation is started once and only once.|Assign penalty if an operation isn't scheduled within the allowed time.<br>**Assumption:** if an operation starts, it runs to completion.|
-|**No overlap constraint**<br>Machines can only do one thing at a time.|Assign penalty every time two operations on a single machine are scheduled to run at the same time.|
+|**Operation-once constraint**<br>Each operation is started once and only once.|Assign penalty if an operation isn't scheduled within the allowed time.<br>**Assumption:** if an operation starts, it runs to completion.|
+|**No-overlap constraint**<br>Machines can only do one thing at a time.|Assign penalty every time two operations on a single machine are scheduled to run at the same time.|
 
 ### Expressing a cost function using the Azure Quantum optimization SDK
 

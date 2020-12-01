@@ -1,10 +1,10 @@
-In this unit, the operation once constraint will be defined, and you will learn how to represent it mathematically and then transform it to code.
+In this unit, the operation-once constraint will be defined, and you will learn how to represent it mathematically and then transform it to code.
 
-The operation once constraint is defined as follows:
+The operation-once constraint is defined as follows:
 
 | Constraint | Penalty condition |
 |---|---|
-|**Operation once constraint**<br>Each operation is started once and only once.|Assign penalty if an operation isn't scheduled within the allowed time.<br>**Assumption:** if an operation starts, it runs to completion.|
+|**Operation-once constraint**<br>Each operation is started once and only once.|Assign penalty if an operation isn't scheduled within the allowed time.<br>**Assumption:** if an operation starts, it runs to completion.|
 
 ### Worked example
 
@@ -131,7 +131,7 @@ You can now use this expanded version of the penalty function to build the penal
 ```python
 def operation_once_constraint(n: int, o: int, T:int, w:float):
     """
-    Construct penalty terms for the operation once constraint.
+    Construct penalty terms for the operation-once constraint.
     Penalty function is of form: x^2 + y^2 + 2xy - 2x - 2y + 1
 
     Keyword arguments:

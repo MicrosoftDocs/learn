@@ -55,7 +55,7 @@ def check_precedence(p: List[int], jobs: List[List[int]]):
 
 def check_operation_once(matrix: List[List[int]]):
     """
-    Check if a solution has violated the operation once constraint.
+    Check if a solution has violated the operation-once constraint.
 
     Keyword arguments:
     matrix (List[List[int]]): Matrix of x_i,t values
@@ -67,7 +67,7 @@ def check_operation_once(matrix: List[List[int]]):
 
 def check_no_overlap(jobs: List[List[int]], ops_machines_map: List[List[int]], p: List[int]):
     """
-    Check if a solution has violated the no overlap constraint.
+    Check if a solution has violated the no-overlap constraint.
 
     Keyword arguments:
     jobs (List[List[int]]): Mapping of operations to jobs
@@ -110,8 +110,8 @@ def validate_solution(matrix, ops_machines_map, p, jobs):
     else:
         print("Solution not valid. Details:")
         print(f"\tPrecedence constraint violated: {precedence_violated}")
-        print(f"\tOperation once constraint violated: {operation_once_violated}")
-        print(f"\tNo overlap constraint violated: {no_overlap_violated}\n")
+        print(f"\tOperation-once constraint violated: {operation_once_violated}")
+        print(f"\tNo-overlap constraint violated: {no_overlap_violated}\n")
 
 # Validate Azure Quantum solution
 print_problem_details(n, o, p, ops_machines_map)
@@ -158,8 +158,8 @@ x_5,t: 0 0 1 0 0
 
 Solution not valid. Details:
     Precedence constraint violated: True
-    Operation once constraint violated: True
-    No overlap constraint violated: True
+    Operation-once constraint violated: True
+    No-overlap constraint violated: True
 ```
 
 As you can see, the result returned by the Azure Quantum solver has been confirmed as valid, and the invalid solution is correctly identified.
