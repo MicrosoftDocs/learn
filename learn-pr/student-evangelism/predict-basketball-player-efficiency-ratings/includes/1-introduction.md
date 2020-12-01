@@ -6,7 +6,7 @@ Inspired by the film, this module explores the connection that data science and 
 
 Through this module, you will have an opportunity to explore stats related to basketball players (both human and Tune Squad). You will learn how various stats result in PER (player efficiency rating), which is a per-minute productivity rating of each player. Our goal is to use machine learning practices to create a clean data set of players to be used during games to make quick decisions and optimize a teams' chance of winning.
 
-This module is part of a multi-modal approach to learning, which means that you can also follow along with a video tutorial on the [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG/SpaceJamANewLegacy?azure-portal=true).
+This module is part of a multi-modal approach to learning, which means that you can also follow along with a video tutorial on the [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG/Basketball/Videos?azure-portal=true).
 
 © 2020 Warner Bros. Ent. All Rights Reserved
 

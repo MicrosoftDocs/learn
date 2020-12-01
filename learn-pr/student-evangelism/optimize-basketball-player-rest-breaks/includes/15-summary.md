@@ -10,7 +10,7 @@ You can continue exploring how to integrate Azure Static Web Apps and machine le
 
 We encourage you to make this app your own and use it as a place to test your creativity, determination, and skills. 
 
-Remember, this module is a part of a multi-modal approach to learning, which means that you can also follow along with a video tutorial on the [Learn with Dr G video series](https://aka.ms/LearnWithDrG/SpaceJamANewLegacy?azure-portal=true).
+Remember, this module is a part of a multi-modal approach to learning, which means that you can also follow along with a video tutorial on the [Learn with Dr G video series](https://aka.ms/LearnWithDrG/Basketball/Videos?azure-portal=true).
 
 ![Space Jam: A New Legacy Logo](../media/SpaceJamEndCard.png)
 

@@ -35,7 +35,7 @@ We can now leverage the HTML structure to figure out where the player currently 
 Within the if-statement, we need to make one check before we do anything else: You can only have 5 players on the court at any given time, so we want to make sure the coach isn't trying to add additional players. In this case, we will just alert the coach that this isn't allowed and not actually move the player.
 
 ```javascript
-    // If there are already 5 players on the court, don't let the player 
+        // If there are already 5 players on the court, don't let the player 
         // move to the court, alert the coach that there are enough players
         if(playersOnCourt >= maxPlayersOnCourt){
             alert("You can only have " + maxPlayersOnCourt + " players on the court at a time.");
@@ -71,6 +71,7 @@ Next, we want to support the coach moving players from the bench back to the cou
 4. Move the player to the bench
 
 ```javascript
+    } //Closes the outer if-statement
     else {
         // If the player is being taken off the court for a water break, decrement
         // the number of players on the bench and remove the player's PER from the

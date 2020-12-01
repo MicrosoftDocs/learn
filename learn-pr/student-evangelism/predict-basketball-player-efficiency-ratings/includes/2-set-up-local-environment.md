@@ -24,7 +24,7 @@ Make sure the file opens into a notebook and that the Jupyter server is connecte
 
 ## Download data with basketball stats
 
-Next, you will need some data. While you can gather data on your own, we have gathered data from 47 anonymous basketball players to use throughout this module. You can download the data by heading to the [player_data.csv on GitHub](https://aka.ms/LearnWithDrG/SpaceJamANewLegacy/Data1?azure-portal=true) and downloading the CSV file. Make sure you save the data in a file called player_data.csv and save it in the space-jam-anl folder you just created.
+Next, you will need some data. While you can gather data on your own, we have gathered data from 47 anonymous basketball players to use throughout this module. You can download the data by heading to the [player_data.csv on GitHub](https://aka.ms/LearnWithDrG/Basketball/Data1?azure-portal=true) and downloading the CSV file. Make sure you save the data in a file called player_data.csv and save it in the space-jam-anl folder you just created.
 
 Visual Studio Code should show you this data if you click on the CSV file.
 
@@ -51,7 +51,7 @@ Next, you will make sure you can import the data into your coding environment by
 player_df = pd.read_csv('player_data.csv')
 ```
 
-If that us successful, you should see a [2] next to the cell and no output.
+If that is successful, you should see a [2] next to the cell and no output.
 
 ![Showing a successful data import in Visual Studio Code](../media/successful-data-import.png)
 

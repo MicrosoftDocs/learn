@@ -10,7 +10,7 @@ Furthermore, we can start to experiment with how data can help inform a more nov
 
 Through this module, you will use the data that was cleansed and manipulated as part of the previous module in this Space Jam: A New Legacy inspired learning path to create an app for the Tune Squad's coach to use during an All Tune Squad game. This app will help the coach determine which player should sit out for a short water break. Your goal: To optimize the chances of the Tune Squad winning their game!
 
-This module is part of a multi-modal approach to learning, which means that you can also follow along with a video tutorial on the [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG/SpaceJamANewLegacy?azure-portal=true).
+This module is part of a multi-modal approach to learning, which means that you can also follow along with a video tutorial on the [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG/Basketball/Videos?azure-portal=true).
 
 © 2020 Warner Bros. Ent. All Rights Reserved
 

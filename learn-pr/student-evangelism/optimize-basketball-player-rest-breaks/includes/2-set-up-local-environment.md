@@ -27,9 +27,9 @@ Make sure the file opens into a notebook and that the Jupyter server is connecte
 
 ## Downloading data with basketball stats and Tune Squad character names
 
-Next, you will need some data. You might already have this data from the [previous *Space Jam: A New Legacy* inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true), but if you don't, you can download a clean copy from [player_data_final.csv on GitHub](https://aka.ms/LearnWithDrG/SpaceJamANewLegacy/Data2?azure-portal=true) and downloading the CSV file. Make sure you save the data in a file called player_data_final.csv and save it in the space-jam-anl folder you just created. 
+Next, you will need some data. You might already have this data from the [previous *Space Jam: A New Legacy* inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true), but if you don't, you can download a clean copy from [player_data_final.csv on GitHub](https://aka.ms/LearnWithDrG/Basketball/Data2?azure-portal=true) and downloading the CSV file. Make sure you save the data in a file called player_data_final.csv and save it in the space-jam-anl folder you just created. 
 
-Then, you will need the Tune Squad character names, which is stored in [tune_squad.csv on GitHub](https://aka.ms/LearnWithDrG/SpaceJamANewLegacy/Data3?azure-portal=true). Make sure you save the data in a file called tune_squad.csv and save it in the space-jam-anl folder you just created. 
+Then, you will need the Tune Squad character names, which is stored in [tune_squad.csv on GitHub](https://aka.ms/LearnWithDrG/Basketball/Data3?azure-portal=true). Make sure you save the data in a file called tune_squad.csv and save it in the space-jam-anl folder you just created. 
 
 Visual Studio Code should show you this data if you click on the CSV file. 
 

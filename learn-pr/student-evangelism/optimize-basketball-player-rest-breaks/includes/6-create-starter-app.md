@@ -9,7 +9,8 @@ In this case, we will leverage the Static Web Vanilla Basic repo template. Befor
 
 There are many ways to create an Azure Static Web App, and in later units we will introduce some others. For the puposes of this module, we will build a *very* simple web app and deploy it using GitHub Actions.
 
-To get started, you will need to create a repo based on this app. Go to [https://aka.ms/space-jam-a-new-legacy-template-app](https://aka.ms/space-jam-a-new-legacy-template-app/generate?azure-portal=true) and fill out the form, naming your repo `space-jam-a-new-legacy-app`. You can make this repo public or private, but be sure to include all branches
+To get started, you will need to create a repo based on this app. Go to [https://aka.ms/LearnWithDrG/Basketball/TemplateApp](	
+https://github.com/microsoft/space-jam-a-new-legacy-template/generate?azure-portal=true) and fill out the form, naming your repo `space-jam-a-new-legacy-app`. You can make this repo public or private, but be sure to include all branches
 
 :::image type="content" source="../media/web-app-repo-setup.png" alt-text="Screenshot showing how to set up the new web app repo on GitHub.com.":::
 
@@ -74,6 +75,9 @@ The final setup step is to make sure your web app is actually live. Back in Visu
 You may have to authorize Visual Studio Code to open a new brower window or tab. After you've done this, your live web app will open in a browser tab and you should see the beginnings of a Tune Squad basketball web app. 
 
 :::image type="content" source="../media/web-app-browser.png" alt-text="Screenshot showing the basketball web app with no functionality.":::
+
+>[!NOTE] 
+> If your Action on GitHub hasn't completed yet, you will see a generic Azure Static Web App page rather than the *Space Jam: A New Legacy* app that is shown above. Just wait until the Action completes and re-load the page to see the app.
 
 Congratulations! You just deployed an Azure Static Web App! Now it's time to make this usable with our data.
 

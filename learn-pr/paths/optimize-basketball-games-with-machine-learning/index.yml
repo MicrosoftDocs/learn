@@ -2,7 +2,7 @@
 uid: learn.optimize-basketball-games-with-machine-learning
 metadata:
   title: Use basketball stats to optimize gameplay with Visual Studio Code, inspired by the new film SPACE JAM A NEW LEGACY
-  description: Develop data science skills to create an Azure static web app to determine the optimal time to give Tune Squad players a break during a game. Inspired by the new Space Jam A New Legacy film, coming to theaters Summer 2021.
+  description: This SPACE JAM A NEW LEGACY inspired learning path aims to equip you with data science and web development skills and strategies to impact a game of basketball in real time, ensuring victory for the Tune Squad in their next game.
   brand: vs-code
   ms.date: 12/14/2020
   author: sguthals
@@ -39,7 +39,7 @@ summary: |
   
   These modules are a part of a 
   multi-modal approach to learning, meaning you can also follow along with some video tutorials that are a part of the 
-  [Learn with Dr G Learn TV video series](https://aks.ms/LearnWithDrG/SpaceJamANewLegacyVideos). And don't forget to watch SPACE JAM A NEW LEGACY in theaters Summer 2021!
+  [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG/Basketball/Videos?azure-portal=true). And don't forget to watch SPACE JAM A NEW LEGACY coming Summer 2021!
   
   In this learning path you will:
   - Use Python, Pandas, and Visual Studio Code to understand basketball stats

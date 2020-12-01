@@ -80,6 +80,6 @@ Once you commit and push your changes (and wait a little while for the GitHub Ac
 
 ![Browse your completed site](../media/browse-site.png)
 
-For example, the one built during creation of this module can be found at [https://aka.ms/LearnWithDrG/SpaceJamANewLegacyWebApp](https://aka.ms/LearnWithDrG/SpaceJamANewLegacyWebApp?azure-portal=true).
+For example, the one built during creation of this module can be found at [https://aka.ms/LearnWithDrG/Basketball/WebApp](https://aka.ms/LearnWithDrG/Basketball/WebApp?azure-portal=true).
 
 © 2020 Warner Bros. Ent. All Rights Reserved

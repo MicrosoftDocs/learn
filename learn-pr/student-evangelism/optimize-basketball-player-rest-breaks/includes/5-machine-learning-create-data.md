@@ -48,7 +48,7 @@ game_df
 The final DataFrame looks complete, so we can save it as a CSV file so that we can use it in our web app. When saving this DataFrame as a CSV file, we will want to keep the indices since we made them the player's names.
 
 ```python
-# Export the finished DataFrame to CSV. (Be sure to retain the indices!)
+# Export the finished DataFrame to CSV. 
 game_df.to_csv('game_stats.csv')
 ```
 

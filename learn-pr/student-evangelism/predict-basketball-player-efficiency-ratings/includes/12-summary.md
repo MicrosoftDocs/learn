@@ -6,7 +6,7 @@ Throughout this module you have taken publicly available data about professional
 
 With the `player_data_final.csv` file that you created, you can use the data to determine the best draft picks for a combination Human+Tune Squad team, or use this data to determine decisions in the heat of the game. For example, in the following module for this learning path inspired by *Space Jam: A New Legacy*, you will use this data to create an app that a coach can use to figure out which player should be given a water break during a game. 
 
-Remember, this module is a part of a multi-modal approach to learning, which means that you can also follow along with a video tutorial on the [Learn with Dr G video series](https://aka.ms/LearnWithDrG/SpaceJamANewLegacy?azure-portal=true).
+Remember, this module is a part of a multi-modal approach to learning, which means that you can also follow along with a video tutorial on the [Learn with Dr G video series](https://aka.ms/LearnWithDrG/Basketball/Videos?azure-portal=true).
 
 ![Space Jam: A New Legacy Logo](../media/SpaceJamEndCard.png)
 
