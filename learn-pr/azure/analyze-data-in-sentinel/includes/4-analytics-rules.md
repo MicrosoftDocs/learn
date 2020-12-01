@@ -1,4 +1,4 @@
-By using Azure Sentinel Analytics rules, you can configure notification and alerts for the security connectors. These alerts will help ensure that the Contoso SecOps team knows when a threat occurs and can then appropriately react to prevent the threat from reaching your corporate assets.
+By using Azure Sentinel Analytics rules, you can configure notification and alerts based of data coming from the sources that are connected to Azure Sentinel. These alerts will help ensure that the Contoso SOC team knows when a threat occurs and can then appropriately react to prevent the threat from reaching your corporate assets.
 
 ## Types of analytics rules
 
@@ -18,7 +18,7 @@ Fusion alerts identify anomalous behaviors and suspicious activities at various 
 > [!Note]
 > The cyber kill chain describes the typical workflow, including techniques, tactics, and procedures (TTPs), used by attackers to infiltrate an organization’s networks and systems.
 
-By default, Fusion detection is enabled in Azure Sentinel, but for successful threat detection, you must configure the following data connectors:
+By default, Fusion detection is enabled in Azure Sentinel. Microsoft is constantly updating Fusion detection scenarios for threat detection. At the time of writing this article for Fusion detection you must configure the following data connectors:
 
 - Azure Active Directory Identity Protection
 - Microsoft Cloud App Security
@@ -68,6 +68,9 @@ You can filter these alerts by severity and by specific text that is contained i
 Azure Sentinel Analytics includes built-in machine learning behavioral analytics rules. You can't edit these built-in rules or review the rule settings. These rules use Microsoft machine learning algorithms to detect suspicious activity. Machine Learning algorithms correlate several low-fidelity incidents into a high-fidelity security incident. This saves hours that you might otherwise spend manually analyzing numerous alerts from different products and correlating them. Machine learning algorithms that analytics rules use also help reduce the noise around alerts by quickly ingesting and connecting the important data.
 
 For example, with machine learning behavioral analytics rule you can detect anomalous secure shell protocol (SSH) Login or remote desktop protocol (RDP) Login activity.
+
+> [!Note]
+> Microsoft plan in the future to enable customers to edit and customized machine learning analytics rules.
 
 ## Scheduled alerts
 
