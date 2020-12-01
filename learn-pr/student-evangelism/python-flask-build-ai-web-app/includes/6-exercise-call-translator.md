@@ -10,62 +10,62 @@ With our back-end Translator service created on Azure and the variables stored r
 
 1. At the *very top* of **app.py**, add the following lines of code:
 
-```python
-import requests, os, uuid, json
-from dotenv import load_dotenv
-load_dotenv()
-```
+    ```python
+    import requests, os, uuid, json
+    from dotenv import load_dotenv
+    load_dotenv()
+    ```
 
 The top line will import libraries that we'll use later, when making the call to the Translator service. We also import `load_dotenv` from `dotenv` and execute the function, which will load the values from **.env**.
 
 2. At the *bottom* of **app.py**, add the following lines of code to create the route and logic for translating text:
 
-```python
-@app.route('/', methods=['POST'])
-def index_post():
-    # Read the values from the form
-    original_text = request.form['text']
-    target_language = request.form['language']
-
-    # Load the values from .env
-    key = os.environ['KEY']
-    endpoint = os.environ['ENDPOINT']
-    location = os.environ['LOCATION']
-
-    # Indicate that we want to translate and the API version (3.0) and the target language
-    path = '/translate?api-version=3.0'
-    # Add the target language parameter
-    target_language_parameter = '&to=' + target_language
-    # Create the full URL
-    constructed_url = endpoint + path + target_language_parameter
-
-    # Set up the header information, which includes our subscription key
-    headers = {
-        'Ocp-Apim-Subscription-Key': key,
-        'Ocp-Apim-Subscription-Region': location,
-        'Content-type': 'application/json',
-        'X-ClientTraceId': str(uuid.uuid4())
-    }
-
-    # Create the body of the request with the text to be translated
-    body = [{ 'text': original_text }]
-
-    # Make the call using post
-    translator_request = requests.post(constructed_url, headers=headers, json=body)
-    # Retrieve the JSON response
-    translator_response = translator_request.json()
-    # Retrieve the translation
-    translated_text = translator_response[0]['translations'][0]['text']
+    ```python
+    @app.route('/', methods=['POST'])
+    def index_post():
+        # Read the values from the form
+        original_text = request.form['text']
+        target_language = request.form['language']
     
-    # Call render template, passing the translated text,
-    # original text, and target language to the template
-    return render_template(
-        'result.html',
-        translated_text=translated_text,
-        original_text=original_text,
-        target_language=target_language
-    )
-```
+        # Load the values from .env
+        key = os.environ['KEY']
+        endpoint = os.environ['ENDPOINT']
+        location = os.environ['LOCATION']
+    
+        # Indicate that we want to translate and the API version (3.0) and the target language
+        path = '/translate?api-version=3.0'
+        # Add the target language parameter
+        target_language_parameter = '&to=' + target_language
+        # Create the full URL
+        constructed_url = endpoint + path + target_language_parameter
+    
+        # Set up the header information, which includes our subscription key
+        headers = {
+            'Ocp-Apim-Subscription-Key': key,
+            'Ocp-Apim-Subscription-Region': location,
+            'Content-type': 'application/json',
+            'X-ClientTraceId': str(uuid.uuid4())
+        }
+    
+        # Create the body of the request with the text to be translated
+        body = [{ 'text': original_text }]
+    
+        # Make the call using post
+        translator_request = requests.post(constructed_url, headers=headers, json=body)
+        # Retrieve the JSON response
+        translator_response = translator_request.json()
+        # Retrieve the translation
+        translated_text = translator_response[0]['translations'][0]['text']
+        
+        # Call render template, passing the translated text,
+        # original text, and target language to the template
+        return render_template(
+            'result.html',
+            translated_text=translated_text,
+            original_text=original_text,
+            target_language=target_language
+        )
+    ```
 
 The code is commented to describe the steps that are being taken. At a high level, here's what our code does:
 
@@ -108,35 +108,35 @@ Let's create the HTML template for the results page.
 2. Name the file **results.html**
 3. Add the following HTML to **results.html**
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <title>Result</title>
-</head>
-<body>
-    <div class="container">
-        <h2>Results</h2>
-        <div>
-            <strong>Original text:</strong> {{ original_text }}
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <title>Result</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Results</h2>
+            <div>
+                <strong>Original text:</strong> {{ original_text }}
+            </div>
+            <div>
+                <strong>Translated text:</strong> {{ translated_text }}
+            </div>
+            <div>
+                <strong>Target language code:</strong> {{ target_language }}
+            </div>
+            <div>
+                <a href="{{ url_for('index') }}">Try another one!</a>
+            </div>
         </div>
-        <div>
-            <strong>Translated text:</strong> {{ translated_text }}
-        </div>
-        <div>
-            <strong>Target language code:</strong> {{ target_language }}
-        </div>
-        <div>
-            <a href="{{ url_for('index') }}">Try another one!</a>
-        </div>
-    </div>
-</body>
-</html>
-```
+    </body>
+    </html>
+    ```
 
 You'll notice that we access `original_text`, `translated_text`, and `target_language`, which we passed as named parameters in `render_template` by using `{{ }}`. This operation tells Flask to render the contents as plain text. We're also using `url_for('index')` to create a link back to the default page. While we could, technically, type in the path to the original page, using `url_for` tells Flask to read the path for the function with the name we provide (`index` in this case). If we rearrange our site, the URL generated for the link will always be valid.
 
@@ -149,13 +149,13 @@ Return to the integrated terminal in Visual Studio Code (or reopen it with **Ctr
 3. Browse to **http://localhost:5000** to test your application
 4. Enter text into the text area, choose a language, and select **Translate**
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing the completed translation form with text for translation that reads I am going to Osaka and Japanese selected as the language.](../media/website-final-form.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing the completed translation form with text for translation that reads I am going to Osaka and Japanese selected as the language.](../media/website-final-form.png)
 
 5. You'll see the results!
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing the translation results.](../media/website-results.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing the translation results.](../media/website-results.png)
 
 ## Congratulations
 

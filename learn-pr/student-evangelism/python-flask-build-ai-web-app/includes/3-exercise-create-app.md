@@ -11,19 +11,19 @@ Typically, the entry point for Flask applications is a file named **app.py**. We
 
 1. Returning to the instance of Visual Studio Code we were using previously, create a new file named **app.py** by clicking **New file** in the **Explorer** tab
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing the Visual Studio Code New File dialog.](../media/create-file.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing the Visual Studio Code New File dialog.](../media/create-file.png)
 
-> [!IMPORTANT]
-> If this exercise is your first time using Visual Studio Code to create a Python application, you'll receive messages about installing the Python extension and the linter **pylint**. Select **Install** to install each of these add-ons.
+   > [!IMPORTANT]
+   > If this exercise is your first time using Visual Studio Code to create a Python application, you'll receive messages about installing the Python extension and the linter **pylint**. Select **Install** to install each of these add-ons.
 
 2. Add the code to create your Flask application
 
-```python
-from flask import Flask, render_template
+   ```python
+   from flask import Flask, render_template
 
-app = Flask(__name__)
-```
+   app = Flask(__name__)
+   ```
 
 The import statement includes references to `Flask`, which is the core of any Flask application. We'll use `render_template` in a while, when we want to return our HTML.
 
@@ -54,44 +54,44 @@ Templates for Flask need to be created in a folder named **templates**, which is
 3. Name the file **index.html**
 4. Add the following HTML
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <title>Translator</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Translation service</h1>
-        <div>Enter the text you wish to translate, choose the language, and click Translate!</div>
-        <div>
-            <form method="POST">
-                <div class="form-group">
-                    <textarea name="text" cols="20" rows="10" class="form-control"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="language">Language:</label>
-                    <select name="language" class="form-control">
-                        <option value="en">English</option>
-                        <option value="it">Italian</option>
-                        <option value="ja">Japanese</option>
-                        <option value="ru">Russian</option>
-                        <option value="de">German</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="submit" class="btn btn-success">Translate!</button>
-                </div>
-            </form>
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <title>Translator</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Translation service</h1>
+            <div>Enter the text you wish to translate, choose the language, and click Translate!</div>
+            <div>
+                <form method="POST">
+                    <div class="form-group">
+                        <textarea name="text" cols="20" rows="10" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="language">Language:</label>
+                        <select name="language" class="form-control">
+                            <option value="en">English</option>
+                            <option value="it">Italian</option>
+                            <option value="ja">Japanese</option>
+                            <option value="ru">Russian</option>
+                            <option value="de">German</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-success">Translate!</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
-</body>
-</html>
-```
+    </body>
+    </html>
+    ```
 
 The core components in the HTML above are the `textarea` for the text the user wishes to translate, and the dropdown list (`select`), which the user will use to indicate the target language. If you want to add more languages, you can consult the [list of supported languages](https://docs.microsoft.com/azure/cognitive-services/Translator/language-support?WT.mc_id=python-11210-chrhar&azure-portal=true) for other options. Set the `value` attribute to the language code, for example, **pl** for Polish.
 
@@ -102,19 +102,19 @@ With our initial site created, it's time to test it! We're going to use the inte
 1. Open the integrated terminal by selecting **Ctrl-\`** or **Cmd-\`** on a Mac
 2. Run the following command to set the Flask runtime to development, which means that the server will automatically reload with every change
 
-```bash
-# Windows
-set FLASK_ENV=development
-
-# Linux/macOS
-export FLASK_ENV=development
-```
+    ```bash
+    # Windows
+    set FLASK_ENV=development
+    
+    # Linux/macOS
+    export FLASK_ENV=development
+    ```
 
 3. Run the application!
 
-```bash
-flask run
-```
+    ```bash
+    flask run
+    ```
 
 4. Open the application in a browser by navigating to **http://localhost:5000**
 
