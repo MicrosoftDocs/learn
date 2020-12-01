@@ -38,7 +38,7 @@ Many programs use an .env file type to define program information that's confide
 
 ## Step 2: Publish to GitHub
 
-1. Open the Source Control Management (SCM) view by selecting the SCM icon on the activity bar.
+1. Open the Source Control Management (SCM) view by selecting the SCM icon on the Activity Bar.
 
 1. Select the **Publish to GitHub** button.
 

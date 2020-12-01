@@ -21,6 +21,6 @@ Let's see how you can use Visual Studio Code to start a new project by cloning t
 
    :::image type="content" source="../media/open-timeline.png" alt-text="Screenshot that shows the Explorer icon in Visual Studio Code.":::
 
-2. Select the commit made by the user _Burke Holland_. This will open a read-only diff view so you can see all the changes associated with the commit. The green highlight shows that Burke has added those lines to the original content.
+2. Select the commit made by the user _Burke Holland_. This step opens a read-only diff view so you can see all the changes associated with the commit. The green highlight shows that Burke has added those lines to the original content.
 
    :::image type="content" source="../media/timeline-view.png" alt-text="Screenshot of the Visual Studio Code diff editor, showing the differences in a file between two commits.":::

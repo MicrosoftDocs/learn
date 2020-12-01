@@ -21,9 +21,9 @@ quiz:
         - content: "Cancel the extension's selection from the **Manage Trusted Extensions** option on the user account menu."
           isCorrect: true
           explanation: "You can revoke access for a specific extension at any time by using the **Manage Trusted Extensions** option on the user account menu under your GitHub sign-in."
-        - content: "Right-click the extension and select **Manage Trusted Extensions**"
+        - content: "Right-click the extension and select **Manage Trusted Extensions**."
           isCorrect: false
-          explanation: "The **Manage Trusted Extensions** option is not found in the extension's shortcut menu."
+          explanation: "The **Manage Trusted Extensions** option is not found on the extension's shortcut menu."
         - content: "Modify the **Trusted Extensions** option in Visual Studio Code settings."
           isCorrect: false
           explanation: "There is no **Trusted Extensions** setting in Visual Studio Code."
@@ -37,7 +37,7 @@ quiz:
           explanation: "There is no option on the shortcut menu for **Add to .gitignore**."
         - content: "Select **Add .gitignore** during the publishing process."
           isCorrect: false
-          explanation: "There is no **Add .gitignore** option in the **Publish To GitHub** process."
+          explanation: "There is no **Add .gitignore** option in the **Publish to GitHub** process."
         - content: "Cancel the selection of items you don't want to publish when asked during the publishing process."
           isCorrect: true
           explanation: "Canceling the selection of items to publish when prompted after you start the publishing process will automatically create a .gitignore file and add the deselected files."
