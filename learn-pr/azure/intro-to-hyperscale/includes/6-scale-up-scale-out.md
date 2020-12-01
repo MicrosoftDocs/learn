@@ -2,7 +2,7 @@ Hyperscale provides self-service scaling to deal with increased workloads. The A
 
 However, before any scaling starts, you need to choose the initial capacity for your database.
 
-## Multi-Tenant SaaS applications
+## SaaS applications
 
 Different database solutions have different compute requirements. We've seen 2-3x performance improvements when moving to Hyperscale from a single-node PostgreSQL database, because sharding improves resource utilization. In these cases, we recommend choosing equal resources–for RAM and compute–as the original instance. Analytics are available through the Azure portal to then review if you should change scale.
 
@@ -12,7 +12,7 @@ The number of vCores required for the coordinator node depends on your existing 
 
 Our payment app has a high throughput, due to the large number of transactions. As we're migrating from an on-premises server, we'll initially set the server group to have equal compute and RAM. We'll look at analytics, including the coordinator node's workload, to see if we need to change the number of vCores.
 
-## Real-Time Analytics applications
+## Real-Time Applications
 
 Moving from a single-node database to Hyperscale, you can expect a linear performance with the number of worker cores. If you want to halve your current latency, double the number of worker cores.
 
