@@ -26,3 +26,4 @@ quiz:
       - content: "`az appsvc config appsettings set -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4`"
         isCorrect: false
         explanation: "Incorrect. Think back to what CLI commands you ran before. What patterns can you see? Is `appsvc` the name of the command?"
+

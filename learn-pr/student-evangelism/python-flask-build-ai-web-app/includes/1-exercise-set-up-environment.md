@@ -81,29 +81,29 @@ During later exercises, we'll use a couple of other libraries, including **reque
 
 1. In the command or terminal window, run the following command to open the directory in Visual Studio Code:
 
-```bash
-code .
-```
+    ```bash
+       code .
+       ```
 
 2. In Visual Studio Code, in the **Explorer** window, select **New File**
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing the New File button in Visual Studio Code.](../media/create-file.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing the New File button in Visual Studio Code.](../media/create-file.png)
 
 3. Name the file **requirements.txt**, and add the following text:
 
-```text
-flask
-python-dotenv
-requests
-```
+   ```text
+   flask
+   python-dotenv
+   requests
+   ```
 
 4. Save the file by clicking **Ctrl-S**, or **Cmd-S** on a Mac
 5. Return to the command or terminal window and perform the installation by using **pip** to run the following command:
 
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 The command downloads the necessary libraries and their dependencies.
 
