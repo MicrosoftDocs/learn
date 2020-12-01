@@ -1,4 +1,4 @@
-Azure Stack HCI provides a deep integration with Azure and leverages Azure Arc to deliver new capabilities to Azure Stack HCI administrators. This also facilitates implementing a number of Azure hybrid services, including Azure Monitor, Azure Backup, and Azure Site Recovery. These services could help Contoso streamline its operations and minimize administrative overhead.
+Azure Stack HCI provides a deep integration with Azure and leverages Azure Arc to deliver new capabilities to Azure Stack HCI administrators. This also facilitates implementing many Azure hybrid services, including Azure Monitor, Azure Backup, and Azure Site Recovery. These services could help Contoso streamline its operations and minimize administrative overhead.
 
 ## What are the key benefits of Azure Arc?
 
@@ -8,11 +8,11 @@ In addition, Azure Arc makes possible to leverage capabilities of Azure Resource
 
 - The ability to organize all organizational resources by using Azure management groups, subscriptions, resource groups, and tags.
 - A single, comprehensive inventory of organizational assets across multi-clouds and on-premises, including support for searching and indexing by using Azure Resource Graph.
-- A consolidated view of Azure and Azure Arc enabled resources via the Azure portal, Azure CLI, Azure PowerShell, and Azure REST API.
+- A consolidated display of Azure and Azure Arc enabled resources via the Azure portal, Azure CLI, Azure PowerShell, and Azure REST API.
 
 There are also workload-specific benefits applicable to VMs and Azure Kubernetes Services (AKS) running on Azure Stack HCI, but they are also available for servers and Kubernetes clusters running on any platform.
 
-## How does Azure Stack HCI benefits from integration with Azure hybrid services?
+## How does Azure Stack HCI benefit from integration with Azure hybrid services?
 
 Azure Stack HCI facilitates integration with several Azure services that provide such functionality as monitoring, backups and restores, and disaster recovery by leveraging, respectively, Azure Monitor, Azure Backup, and Azure Site Recovery.
 

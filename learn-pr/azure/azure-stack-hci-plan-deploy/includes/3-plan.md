@@ -14,11 +14,11 @@ In general, when planning for Azure Stack HCI implementation, you should conside
 - Disk performance. The performance considerations include the corresponding tiering and caching configuration.
 - The number and type of network adapters per server. This impacts throughput and latency of storage and network traffic.
 - The number and type of network switches per cluster. This also has impact on throughput and latency of storage and network traffic.
-- The Azure subscription in which you will register your Azure Stack HCI deployment. Note that your decision this has pricing implications, since the ongoing charges for Azure Stack HCI clusters are associated with that Azure subscription.
+- The Azure subscription in which you will register your Azure Stack HCI deployment. Note that your decision has pricing implications, because the ongoing charges for Azure Stack HCI clusters are associated with that Azure subscription.
 
 There are also additional considerations that apply to stretched clusters. You need to determine how many servers you will need at each site, and whether the cluster configuration will be active/passive or active/active. In active-passive mode, a designated primary site unidirectionally replicates to another site that provides the disaster recovery capability. In active-active mode, two sites replicate their respective volumes unidirectionally to each other, providing failover capability in case of a failure in either site. The active-active mode helps minimize business continuity costs by eliminating the need for a dedicated disaster recovery site.
 
-All of these considerations depend to large extent on the intended workloads. Effectively, the use cases mentioned earlier in this module serve as the basis for identifying the optimal Azure Stack HCI hardware configuration. The list of all Azure Stack HCI solutions offered by third-party hardware vendors that have been approved by Microsoft for these use cases is maintained in the Azure Stack HCI catalog.
+All these considerations depend to large extent on the intended workloads. Effectively, the use cases mentioned earlier in this module serve as the basis for identifying the optimal Azure Stack HCI hardware configuration. The list of all Azure Stack HCI solutions offered by third-party hardware vendors that have been approved by Microsoft for these use cases is maintained in the Azure Stack HCI catalog.
 
 ### Plan for Azure Stack HCI host storage
 
@@ -26,20 +26,20 @@ In the simplest terms, planning for Azure Stack HCI host storage involves identi
 
 #### Drives
 
-Storage Spaces Direct supports hard disk drives (HDDs), solid state drives (SSDs), and Non-Volatile Memory Express (NVMe) drives, including PMEM. The choice of the drive type directly impacts storage performance, due to differences in performance characteristics between each type, and the cache mechanism.
+Storage Spaces Direct supports hard disk drives (HDDs), solid state drives (SSDs), and Non-Volatile Memory Express (NVMe) drives, including PMEM. The choice of the drive type directly impacts storage performance due to differences in performance characteristics between each type, and the cache mechanism.
 
 #### Storage Spaces Direct cache
 
-In general, Storage Spaces Direct assigns drives to one of two categories based on the drive type: capacity, or cache. Cache drives don't contribute to the usable or raw storage capacity of a cluster, which means that the total raw storage capacity of a cluster is the sum of capacity drives on all of its nodes.
+In general, Storage Spaces Direct assigns drives to one of two categories based on the drive type: capacity, or cache. Cache drives don't contribute to the usable or raw storage capacity of a cluster, which means that the total raw storage capacity of a cluster is the sum of capacity drives on all its nodes.
 
-In clusters with multiple types of drives, Storage Spaces Direct automatically assigns all of the fastest type of drives to the cache. The remaining drives are used for capacity. You have the option to set caching manually in cases where the default configuration doesn't yield the optimal performance.
+In clusters with multiple drive types, Storage Spaces Direct automatically assigns all the fastest drive types to the cache. The remaining drives are used for capacity. You have the option to set caching manually in cases where the default configuration doesn't yield the optimal performance.
 
 #### Drive symmetry
 
 Storage Spaces Direct works in the optimal manner when every server has the exact the same number and type of drives. In general, you should configure your Storage Spaces Direct cluster in such way that:
 
-- All servers have the same types of drives.
-- All servers have the same number of drives of each type.
+- All servers have the same drive type.
+- All servers have the same number of drives per type.
 - All drives have the same model and firmware version.
 - All drives of the same type have the same size.
 
@@ -70,7 +70,7 @@ In the simplest terms, planning for host networking in Azure Stack HCI involves 
 > For details regarding the bandwidth allocation and network port requirements, refer to documents referenced in the Summary unit of this module.
 
 > [!NOTE]
-> For stretched clusters, you should have at least one 1 Gb connection between sites with at most 5 ms round trip latency.
+> For stretched clusters, you should have at least one 1 Gb connection between sites with at most 5 ms round-trip latency.
 
 #### Node interconnect
 
@@ -86,7 +86,7 @@ RDMA is a networking technology that provides high-throughput, low-latency commu
 - RDMA over Converged Ethernet (RoCE and RoCEv2) over UDP/IP, with Data Center Bridging (DCB) providing flow control and congestion management.
 - Internet Wide Area RDMA Protocol (iWarp) over TCP/IP, with TCP providing flow control and congestion management.
 
-Although the Microsoft RDMA implementation is RDMA-technology agnostic, RoCE and RoCEv2 installations are difficult to configure and problematic at any scale above a single rack. For all other scenarios, you should consider iWarp instead. iWarp does not require any configuration of DCB on network hosts or network switches and can operate over the same distances as any other TCP connection.
+Although the Microsoft RDMA implementation is RDMA-technology agnostic, RoCE and RoCEv2 installations are difficult to configure and problematic at any scale beyond a single rack. For all other scenarios, you should consider iWarp instead. iWarp does not require any configuration of DCB on network hosts or network switches and can operate over the same distances as any other TCP connection.
 
 #### Datacenter integration
 
