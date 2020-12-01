@@ -25,11 +25,9 @@ No matter your goals, Azure fundamentals has something for you. Take Azure funda
 
 **Preparation for Exam AZ-900**
 
-Azure fundamentals can help you prepare to earn official certification from Microsoft. The material you find here relates to [Exam AZ-900: Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900?azure-portal=true), and is where most people begin their certification journey. As you build proficiency in other areas, you can take additional exams to verify your knowledge.
+The Azure fundamentals learning path series can help you prepare for [Exam AZ-900: Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900?azure-portal=true). This exam includes six knowledge domain areas:
 
-Exam AZ-900 includes these six study areas:
-
-| AZ-900 Study Area | Weight |
+| AZ-900 Domain Area | Weight |
 | - | - |
 | Describe cloud concepts | 20-25% |
 | Describe core Azure services | 15-20% |
@@ -38,11 +36,11 @@ Exam AZ-900 includes these six study areas:
 | Describe identity, governance, privacy, and compliance features | 20-25% |
 | Describe Azure cost management and Service Level Agreements | 10-15% |
 
-Each study area maps to a learning path in Azure fundamentals.
+Each domain area maps to a learning path in Azure fundamentals.
 
 The percentages shown indicate the relative weight of each area on the exam. The higher the percentage, the more questions that part of the exam will contain. Be sure to read the exam page for specifics about what skills are covered in each area.
 
-Although Azure fundamentals provides broad coverage of what you'll find on the exam, having hands-on experience with Azure will help ensure that you're ready. There might be questions on the exam that are not directly covered in Azure fundamentals.
+This training helps you develop a broad understanding of Azure. Having real-world experience will help reinforce the concepts so that you're more fully prepared for the exam or to apply your skills on the job.
 
 ## Learning objectives
 
