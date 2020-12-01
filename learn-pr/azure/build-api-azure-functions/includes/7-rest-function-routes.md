@@ -6,49 +6,6 @@ The "Action/Resource" naming pattern is fine for smaller APIs. Remember, though,
 
 What you need to do is make this API clean and intuitive. For that, you are going to be using the REST pattern.
 
-## What is REST?
-
-Representational State Transfer, or REST, is an architectural pattern that provides guidance about how to name and structure endpoints in an API. There are a lot of fancy ideas behind REST, but you only need to understand two:
-
-- Action defined by HTTP request method.
-- Organization by resource.
-
-### Action defined by HTTP request method
-
-When you load a web page in the browser, the browser makes an HTTP request. That request is called a "GET." It's just that the browser does that automatically. All _you_ ever see is the URL and the page that gets returned.
-
-![Diagram showing an HTTP request from the browser to the server and the response returning HTML.](../media/request-response.svg)
-
-When you're calling an API, you can control the _method_ that is used to call a URL. The method is called the "HTTP request method". In a REST architecture, these HTTP request methods are used to define the action that you want to take on a resource. REST defines that HTTP request methods match up to what a service does.
-
-| Service action     | HTTP request method |
-| ------------------ | ------------------- |
-| Create something   | POST                |
-| Retrieve something | GET                 |
-| Update something   | PUT                 |
-| Delete something   | DELETE              |
-
-A service that returns a set of records from a database should listen for a GET request. When a service's job is to delete a record, the service should listen for the DELETE request method. You get the idea.
-
-> [!TIP]
-> Sometimes, people will refer to HTTP request methods as "verbs" or "HTTP verbs." It's a slightly cooler-sounding way of saying the same thing.
-
-### Organization by resource
-
-The second concept is called "Organization by resource." The URLs for your services should closely match the resources that they're managing. For example, if you have a service that retrieves all of the products in a database, then you would call that endpoint, "products."
-
-```http
-http://127.0.0.1:7071/api/products
-```
-
-The fact that "products" is plural indicates that it returns multiple results. If you are getting only one product, you would call a "product" endpoint, and pass the ID if the item you want as part of the route.
-
-```http
-http://127.0.0.1/api/product/1
-```
-
-You are are officially a REST expert. Kind of. Let's take a look at how you implement these ideas using Azure Functions.
-
 ### Azure Functions routes and HTTP request methods
 
 By default, any HTTP trigger function will respond to GET and POST requests. It also sets the URL of your function to the name of that function prefixed by "/api". Both of these things are configurable.

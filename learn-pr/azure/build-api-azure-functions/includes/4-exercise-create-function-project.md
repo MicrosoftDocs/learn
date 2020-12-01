@@ -1,4 +1,4 @@
-Tailwind Traders had planned on building a traditional API, but you deftly pointed out that serverless is perfect for APIs. It can also be done without disturbing their existing codebase. You're already doing so well. You have a long career in online hardware sales in your future.
+Tailwind Traders had planned on building a traditional API, but you deftly pointed out that serverless is perfect for APIs that experience unexpected traffic spikes. It can also be done without disturbing their existing codebase. You're already doing so well. You have a long career in online hardware sales in your future.
 
 It's time to deliver on those lofty buzzwords. Now, you need to create a new project in Azure Functions that will be the HTTP API for the "Products Manager" app. That means creating the Azure Functions project, complete with all of the endpoints that the Products Manager app is going to need to be able to create, read, update, and delete products.
 
@@ -27,31 +27,22 @@ The "api" folder in Visual Studio Code will now contain a new Azure Functions pr
 
    ```typescript
    import { AzureFunction, Context, HttpRequest } from "@azure/functions";
-   import { CosmosClient } from "@azure/cosmos";
+   import productsService from "../services/productsService";
 
    const httpTrigger: AzureFunction = async function (
      context: Context,
      req: HttpRequest
    ): Promise<void> {
+     let response;
+
      try {
-       const client = new CosmosClient(process.env.CONNECTION_STRING);
-
-       const database = client.database("tailwind");
-       const container = database.container("products");
-
-       let iterator = container.items.readAll();
-       let { resources } = await iterator.fetchAll();
-
-       context.res = {
-         // status: 200, /* Defaults to 200 */
-         body: resources
-       };
+       let products = await productsService.read();
+       response = { body: products, status: 200 };
      } catch (err) {
-       context.res = {
-         status: 500,
-         body: err.message
-       };
+       response = { body: err.message, status: 500 };
      }
+
+     context.res = response;
    };
 
    export default httpTrigger;
@@ -79,4 +70,4 @@ Azure Functions projects can be run and debugged locally from within Visual Stud
 
    :::image type="content" source="../media/functions-in-terminal.png" alt-text="Screenshot of the Visual Studio Code integrated terminal showing functions URLs." loc-scope="other"::: <!-- no-loc -->
 
-You've got all of the endpoints created and running in Azure Functions. Now, you can sit back and REST - Representational State Transfer Protocol. What is that? I'm glad you asked, because it's going to make your API the envy of apps everywhere. In the next section, you'll discover why.
+You've got all of the endpoints created and running in Azure Functions. At the moment, they won't work because you haven't setup the connection string for the database.
