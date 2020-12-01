@@ -33,7 +33,7 @@ Use a browser to access http://localhost:8080/
 
 We'll use Terraform to create an Azure resource group with a MySQL database and an Azure App Service web application.
 
-You'll customize your application name, and your resource group name: edit the `terraform/variables.tf`.
+1. Customize your application, and resource group name: edit `terraform/variables.tf`.
 
 1. To initialize the Terraform deployment, run 'terraform init'. This command downloads the Azure modules required to create an Azure resource group.
 
@@ -42,13 +42,13 @@ You'll customize your application name, and your resource group name: edit the `
     terraform init
     ```
 
-1. After initialization, you can view the  execution plan by running 'terraform plan'
+1. After initialization, view the execution plan and run 'terraform plan'
 
     ```bash
     terraform plan
     ```
 
-1. Once you're ready to apply the execution plan to your cloud infrastructure, you run 'terraform apply'
+1. Once you're ready to apply the execution plan to your cloud infrastructure, run 'terraform apply'
 
     ```bash
     terraform apply
@@ -56,7 +56,7 @@ You'll customize your application name, and your resource group name: edit the `
 
 ## Reverse a Terraform execution plan
 
-1. To reverse, or undo, the execution plan, you run 'terraform destroy'
+1. To reverse, or undo, the execution plan, run 'terraform destroy'
 
     ```bash
     terraform destroy
@@ -64,16 +64,15 @@ You'll customize your application name, and your resource group name: edit the `
 
 ## Deploy via Maven
 
-Configure your deployment by running:
+Configure your deployment with Maven:
 
 ```bash
 ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 ```
 
-To deploy the application, you'll need to configure and edit the `azure-webapp-maven-plugin` plugin, to configure the resource group and the application name (which should be the same as
-the ones configured in Terraform).
+To deploy the application, you'll need to configure and edit the `azure-webapp-maven-plugin` plugin, to configure the resource group and the application name (which should be the same as the ones configured in Terraform).
 
-Then, deploy the application by running:
+Then, deploy the application:
 
 ```bash
 ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy

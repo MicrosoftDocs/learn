@@ -21,9 +21,9 @@ The Terraform CLI enables users to validate and preview infrastructure changes b
 - Team members can collaborate more effectively by quickly understanding proposed changes and their impact.
 - Unintended changes can be caught early in the development process
 
-## Deploy infrastructure to multiple clouds
+## Deploy infrastructure to Azure
 
-Terraform is adept at deploying an infrastructure across multiple cloud providers. It enables developers to use consistent tooling to manage each infrastructure definition. The Terraform CLI provides a simple mechanism to deploy and version the configuration files to Azure.
+Terraform is great at deploying infrastructure across cloud providers. It enables developers to use consistent tooling to manage each infrastructure definition. The Terraform CLI provides a simple mechanism to deploy and version the configuration files to Azure.
 
 ## Next steps
 
