@@ -9,34 +9,10 @@ The HCL syntax allows you to specify the cloud provider - such as Azure - and th
 
 ![Hashicorp Configuration Language.](../media/3-content.png)
 
-### Interpolation
+> [!IMPORTANT]
+> More information on the HCL language syntax is provided at the end of the Module in the Summary unit
 
-HCL2 simplifies the process of writing, inspecting, and applying the configuration to Azure resources. The first version of HCL in versions prior to Terraform 0.12 used string types while HCL2 in Terraform version 0.12 and higher leverages a generalized type system and stricter parsing of configuration. The new type system expands functionality such as list comprehension, null or unset values, and expanded deserialization of JSON and other formats.
-
-```bash
-azure_instance.web.0.id
-```
-
-### language
-
-#### Variables
-
-Values can be supplied as a '.tfvars' file containing simple key/value pairs, env variables, or command parameters.
-
-#### Functions
-
-<!-- elaborate
-- String and math (all the usual)
-- Count – simple method for deploying multiple resources
--C onditional "${var.env == "production" ? var.prod_subnet : var.dev_subnet}"
-
--->
-
-#### Provisioners
-<!-- elaborate -->
-local-exec, remote-exec, file
-
-#### Modules
+### Modules
 
 A module is a set of configuration files in a single directory. Even a simple configuration consisting of a single directory with one or more.tf files is a module.
 
@@ -48,16 +24,14 @@ A module is a set of configuration files in a single directory. Even a simple co
 ![Module structure for Terraform.](../media/3-modules.png)
 
 ### State
-<!--refine-->
-State is a necessary requirement for Terraform to function.
-When running a `terraform plan`, Terraform must know the current state of resources to effectively determine the changes that it needs to make to reach your wanted configuration.
-State can be stored local (single user – terraform.tfstate) or remote
-Use `terraform taint` to flag resources. Tainted resources will be destroyed and recreated during `terraform apply`.
 
-- Responsible for mapping “azure_virtual_machine” “vm” to “/subscriptions/dcf628c7-fc9d-4e40-af2c-5c963345a237/resourceGroups/BDIterraformdemo/providers/Microsoft.Compute/virtualMachines/BDIvm-vm”
-- Tracks dependencies between resources
-- Knows that if the VM is deleted, to also delete the Disk(s)
-- Provides the ability to pass in previous deployments as parameters
+Terraform state is used to reconcile deployed resources with Terraform configurations. State allows Terraform to know what Azure resources to add, update, or delete. By default, Terraform state is stored locally when you run the terraform apply command. This configuration isn't ideal for the following reasons:
+
+- Local state doesn't work well in a team or collaborative environment.
+- Terraform state can include sensitive information.
+- Storing state locally increases the chance of inadvertent deletion.
+
+Terraform supports the persisting of state in remote storage. For More information on managing remote state, see the Summary unit.
 
 ### Configuration Files
 
@@ -103,9 +77,9 @@ A Terraform configuration file starts off with the specification of the provider
 When running Terraform in automation, the focus is usually on the core plan/apply cycle.
 
 - Init: Initialize a working directory with Terraform configuration files.
-  - The terraform init command looks through all of the *.tf files in the current working directory and automatically downloads any of the providers required for them. In this example, it will download Azure provider as we are going to deploy Azure resource.
+  - The terraform init command looks through all of the *.tf files in the current working directory and automatically downloads any of the providers required for them. In this example, it will download Azure provider as we're going to deploy Azure resource.
 - Validate: Validates configuration files in a directory without checking remotely
 - Plan: Produce a plan for changing resources to match the current configuration.
-  - The terraform plan command is used to create an execution plan. Terraform determines what actions are necessary to achieve the desired state specified in the configuration files.
+  - The terraform plan command is used to create an execution plan. Terraform determines what actions are necessary to achieve the wanted state specified in the configuration files.
 - Apply: Apply the changes described by the plan.
 - Destroy: Remove the TF manage infrastructure
