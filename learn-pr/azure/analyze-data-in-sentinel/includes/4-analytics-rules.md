@@ -74,4 +74,4 @@ For example, with machine learning behavioral analytics rule you can detect anom
 
 ## Scheduled alerts
 
-Scheduled alerts analytics rules provide you the highest level of customization. You can define your own Kusto Query Language (KQL) code to filter the security events, and you can set up a schedule for the rule to run.
+Scheduled alerts analytics rules provide you the highest level of customization. You can define your own expression using Kusto Query Language (KQL) to filter the security events, and you can set up a schedule for the rule to run.
