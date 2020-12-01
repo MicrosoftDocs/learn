@@ -42,4 +42,4 @@ By the end of this module, you'll be able to set up analytics rules in Azure Sen
 - Azure Sentinel instance in your Azure subscription
 
 > [!NOTE]
-> If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost refer to [Azure Sentinel Pricing] (https://azure.microsoft.com/pricing/details/azure-sentinel/)
+> If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost refer to - [Azure Sentinel Pricing] (https://azure.microsoft.com/pricing/details/azure-sentinel/)
