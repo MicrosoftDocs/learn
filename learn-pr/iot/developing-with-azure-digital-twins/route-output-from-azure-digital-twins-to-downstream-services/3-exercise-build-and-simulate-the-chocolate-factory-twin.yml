@@ -5,7 +5,7 @@ metadata:
   description: This unit covers setting up all the resources necessary for creating the chocolate factory twin and simulating data input to the twin
   ms.date: 11/30/2020
   author: raniabayoumy
-  ms.author: Rania.Bayoumy
+  ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build and simulate the chocolate factory twin
