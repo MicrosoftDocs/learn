@@ -4,7 +4,7 @@ metadata:
   description: This unit shows how to visualize the data ingested from Azure Digital Twins into Time Series Insights
   ms.date: 11/30/2020
   author: raniabayoumy
-  ms.author: Rania.Bayoumy
+  ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Visualize your data in Time Series Insights

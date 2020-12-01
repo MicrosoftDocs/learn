@@ -4,7 +4,7 @@ metadata:
   description: This unit covers setting up all the resources necessary for creating the chocolate factory twin and simulating data input to the twin
   ms.date: 11/30/2020
   author: raniabayoumy
-  ms.author: Rania.Bayoumy
+  ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build and simulate the chocolate factory twin
@@ -17,7 +17,7 @@ This pattern relies on the twin updates, rather than forwarding telemetry from a
 
 To proceed, please choose one of the following options:
 
-- If you have been following the "Developing with Azure Digital Twins" Learning Path modules in sequence, and have successfully completed all exercises in "Module 3: Ingest Data into Azure Digital Twins," and retained the solution resources in your Azure Subscription, please skip to [Create a route and filter to twin update notifications](4-exercise-create-a-route-and-filter-to-twin-update-notifications.md).
+- If you have been following the "Developing with Azure Digital Twins" Learning Path modules in sequence, and have successfully completed all exercises in "Module 3: Ingest Data into Azure Digital Twins," and retained the solution resources in your Azure Subscription, please skip to [Create a route and filter to twin update notifications](../includes/4-exercise-create-a-route-and-filter-to-twin-update-notifications.md).
 
 - If you haven't completed the previous modules and would still like to proceed with the exercises in this module, please continue with the following steps.
 

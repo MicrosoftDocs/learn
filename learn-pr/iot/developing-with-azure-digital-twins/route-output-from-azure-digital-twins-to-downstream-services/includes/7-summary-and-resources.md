@@ -4,7 +4,7 @@ metadata:
   description: This unit summarizes the Learn module and provides links to additional resources
   ms.date: 11/30/2020
   author: raniabayoumy
-  ms.author: Rania.Bayoumy
+  ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary and resources

@@ -4,7 +4,7 @@ metadata:
   description: This unit covers creating an Azure Digital Twins event route that routes update events to Azure Event Hubs for further processing through an Azure Function
   ms.date: 11/30/2020
   author: raniabayoumy
-  ms.author: Rania.Bayoumy
+  ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create a route and filter to twin update notifications

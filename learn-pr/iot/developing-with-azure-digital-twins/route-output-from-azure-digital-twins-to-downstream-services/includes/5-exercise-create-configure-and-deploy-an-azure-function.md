@@ -4,7 +4,7 @@ metadata:
   description: This unit guides you on creating, configuring, and deploying an Azure function to receive data from Azure Digital Twins to Time Series Insights 
   ms.date: 11/30/2020
   author: raniabayoumy
-  ms.author: Rania.Bayoumy
+  ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create, configure, and deploy an Azure Function
