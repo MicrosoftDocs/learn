@@ -81,9 +81,9 @@ During later exercises, we'll use a couple of other libraries, including **reque
 
 1. In the command or terminal window, run the following command to open the directory in Visual Studio Code:
 
-   ```bash
-   code .
-   ```
+    ```bash
+       code .
+       ```
 
 2. In Visual Studio Code, in the **Explorer** window, select **New File**
 
