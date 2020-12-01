@@ -30,7 +30,7 @@ roles:
  - student
 products:
  - azure-stack-hci
- - azure-stack-hub
+ - azure-stack
  - azure-stack-edge
 units:
 - learn.azure.intro-to-azure-stack.1-introduction
