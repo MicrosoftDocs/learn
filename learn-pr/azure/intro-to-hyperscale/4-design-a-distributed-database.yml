@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-hyperscale.4-design-a-hyperscale-database
-title: Design a Hyperscale database
+uid: learn.intro-to-hyperscale.4-design-a-distributed-database
+title: Design a distributed database
 metadata:
   title: Design a Hyperscale database
   description: Review the common tools for connecting to a database for development
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-design-a-hyperscale-database.md)]
+  [!include[](includes/4-design-a-distributed-database.md)]
