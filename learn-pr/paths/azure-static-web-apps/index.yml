@@ -20,7 +20,10 @@ summary: |
     - Streamlined management including custom domain configuration and authentication and authorization
     - Seamless developer experience and CI/CD
     - Tailored developer experience that includes a Visual Studio Code extension
-prerequisites: None
+prerequisites: |
+  - [Node.js LTS and Git](https://nodejs.org/)
+  - [GitHub](https://github.com) account
+  - [Visual Studio Code](https://code.visualstudio.com)
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
