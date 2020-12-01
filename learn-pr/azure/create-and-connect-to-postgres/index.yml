@@ -16,7 +16,7 @@ abstract: |
   - Query the Azure Database for PostgreSQL instance using pgsql.
   - Use a Django app to connect to the PostgreSQL database.
 prerequisites: Knowledge of relational databases
-iconUrl: /learn/achievements/intro-to-postgresql.svg
+iconUrl: /learn/achievements/create-and-connect-to-postgres.svg
 levels:
 - beginner
 roles:
