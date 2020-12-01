@@ -10,6 +10,9 @@ The Azure Functions tools are a Visual Studio extension that enable you to creat
 
 To install the Azure Functions tools, in Visual Studio, in the **Tools** menu, navigate to the **Extensions and Updates** command. Search for **Azure Functions**, and then download and install the **Azure Functions and Web Job Tools** extension.
 
+    > [!NOTE]
+    > If you are using Visual Studio 2019, the **Azure Functions and Web Job Tools** functionality is already included.
+
 :::image type="content" source="../media/2-azure-functions-and-web-jobs-extension.png" alt-text="Screenshot of the Extensions and Updates search page with the Azure Functions and Web Jobs Tools extension highlighted." loc-scope="vs":::
 
 ## Create an Azure Functions app
@@ -17,6 +20,14 @@ To install the Azure Functions tools, in Visual Studio, in the **Tools** menu, n
 When you've installed the extension, you create an Azure Functions app using the **Azure Functions** template. You'll find this template in the **Cloud** folder, under **Visual C#**, in the **New Project** dialog.
 
 :::image type="content" source="../media/2-create-project.png" alt-text="Screenshot of the New Project dialog box with the Azure Functions template highlighted." loc-scope="vs":::
+
+For Visual Studio 2019, select **Create a new project**. The **Create a new project** page appears.
+
+:::image type="content" source="../media/2-open-project-vs19.png" alt-text="Screenshot of the Visual Studio 2019 with Create a new project link." loc-scope="vs":::
+
+For Visual Studio 2019, scroll down and select **Azure Functions**, and select **Next**. The **Configure a new project** page appears.
+
+:::image type="content" source="../media/2-configure-project-vs19.png" alt-text="Screenshot of the Visual Studio 2019 with Configure your new project link." loc-scope="vs":::
 
 An Azure Function app hosts one or more Azure Functions. It provides the environment and runtime for the functions.
 
@@ -32,6 +43,10 @@ An Azure Function is triggered by an event rather than being called directly fro
 - **Timer trigger**. Use this event to run the Azure Function at regular intervals, following a schedule that you define.
 
 :::image type="content" source="../media/2-function-triggers.png" alt-text="Screenshot showing the Azure Function triggers available, with HTTP Trigger highlighted." loc-scope="vs":::
+
+For Visual Studio 2019, in the **Configure your new project** page, in the **Project name** field, enter **WatchPortalFunction**. Keep the default for the **Location** field. The **Solution name** field should default to **WatchPortalFunction**. Select the checkbox **Place solution and project in the same directory**. Select **Create.** The **Create a new Azure Functions application** page appears.
+
+:::image type="content" source="../media/2-function-triggers-vs19.png" alt-text="Screenshot showing the Azure Function triggers available, with HTTP Trigger highlighted." loc-scope="vs":::
 
 Azure currently provides two versions of the runtime environment required to run Azure Functions. Version 1 (v1) uses the .NET Framework 4.7; version 2 (v2x) runs using .NET Core 2; version 3  (v3x) contains JavaScript and .NET changes. Using v2 triggers enables you to develop and host the trigger in different environments. Version 1 triggers can only be created using Windows. Use v2 triggers wherever possible.
 
