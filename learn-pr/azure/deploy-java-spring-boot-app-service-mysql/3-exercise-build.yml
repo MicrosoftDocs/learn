@@ -3,7 +3,7 @@ uid: learn.azure.deploy-java-spring-boot-app-service-mysql.3-exercise-build
 title: Exercise - Create Azure resources and a Java Spring application
 metadata:
   title: Exercise - Create Azure resources and a Java Spring application
-  description: Build your Spring Boot application, set up its Azure resources and connect it to a MySQL database
+  description: Create Azure resources and a Java Spring application.
   ms.date: 11/16/2020
   author: roryp
   ms.author: ropreddy

@@ -1,4 +1,4 @@
-The Mixed Reality ecosystem is an emerging landscape of physical and digital interactions, limited only by your imagination. Because of its immersive nature, Mixed Reality is transforming the nature of on-the-job training, game development, and consumer application development. 
+The Mixed Reality ecosystem blends both the physical and digital world, defining the polar ends of a spectrum known as the virtuality continuum. Because of its immersive nature, Mixed Reality is transforming the nature of on-the-job training, game development, and consumer application development. 
 
 Whether you're an experienced developer or a new convert, it’s important to get a conceptual grip on what Mixed Reality is, what it can offer, and most importantly what it can add to your business or industry.
 
@@ -10,9 +10,9 @@ By the end of this module, you’ll be able to confidently discuss Mixed Reality
 
 By the end of this module, you'll be able to:
 
-- Define Mixed Reality and differentiate between Virtual and Augmented Reality
+- Define Mixed Reality and differentiate between virtual and augmented reality
 - Describe the core ideas behind holograms
-- Start designing for 3D applications and interactions
+- Start designing and developing 3D applications 
 - Understand what Mixed Reality offers in real-world apps
 - Leverage the power of the cloud for Mixed Reality
 

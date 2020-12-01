@@ -53,7 +53,7 @@ After Data Migration Assistant completes the assessment and you've made any chan
 
 Using Data Migration Assistant is not a requirement to use Azure Database Migration Service. You have the option of coding your new database in the Azure SQL Database service manually without trying to convert an existing database.
 
-As an example, let's say you're creating a staging database in Azure SQL Database that will later feed data into Azure SQL Data Warehouse. The staging database will be sourced from multiple systems, but it will migrate only small portions of the source data. In this situation, you might be better off manually crafting the new database directly on the Azure SQL Database service rather than trying to automate the job.
+As an example, let's say you're creating a staging database in Azure SQL Database that will later feed data into Azure Synapse Analytics. The staging database will be sourced from multiple systems, but it will migrate only small portions of the source data. In this situation, you might be better off manually crafting the new database directly on the Azure SQL Database service rather than trying to automate the job.
 
 ### Azure Database Migration Service
 
