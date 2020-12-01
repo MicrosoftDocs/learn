@@ -13,9 +13,8 @@ durationInMinutes: 4
 content: |
   Answer the following questions to demonstrate what you've learned:
 quiz:
-  title: Check your knowledge
   questions:
-  - content: "How does Rust code get to be executed?"
+  - content: "How is Rust code executed?"
     choices:
     - content: "Scripts are interpreted by Rust."
       isCorrect: false
@@ -29,7 +28,7 @@ quiz:
     - content: "Rust code must be included in a C/C++ source file."
       isCorrect: false
       explanation: "Explanation4"
-  - content: "What Cargo can't do?"
+  - content: "What can't Cargo do?"
     choices:
     - content: "Build an existing Rust project"
       isCorrect: false
@@ -41,6 +40,6 @@ quiz:
       isCorrect: true
       explanation: "Explanation3"
     - content: "Publish a library to Crates.io"
-      isCorrect: true
+      isCorrect: false
       explanation: "Explanation4"
  
