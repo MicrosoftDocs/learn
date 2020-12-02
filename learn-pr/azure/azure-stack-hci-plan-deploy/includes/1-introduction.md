@@ -2,7 +2,7 @@ To deploy Azure Stack HCI you’ll select supported workloads, determine the bes
 
 ## Scenario
 
-Contoso, Ltd. is a medium-size financial-services company with its headquarters in New York and a research facility in Dallas. It’s working almost entirely on site with most computers running either Winders Server or Linux operating system. Its internal IT staff is well versed in Microsoft technologies, including its virtualization and software-defined datacenter offerings.
+Contoso, Ltd. is a medium-size financial-services company with its headquarters in New York and a research facility in Dallas. It’s working almost entirely on site with most computers running either Winders Server or Linux operating systems. Its internal IT staff is well versed in Microsoft technologies, including its virtualization and software-defined datacenter offerings.
 
 In an effort to consolidate and modernize, Contoso IT migrated some applications to Azure IaaS and platform as a service (PaaS) services. A number of highly regulated workloads must remain in the on-premises datacenters.
 
