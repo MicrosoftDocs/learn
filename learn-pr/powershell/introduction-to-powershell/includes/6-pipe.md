@@ -25,7 +25,7 @@ This understanding helps you combine suitable cmdlet statements in a useful way 
 
 A cmdlet often takes more than just the parameters meant for the pipeline.
 
-How can you know which of the parameter inputs the system will try to use first? Consider a real example. The command `help Get-Process -Full` returns a detailed listing of the help section of the `Get-Process` command. The `INPUTS` section and the `PARAMETERS` section reveal three possible inputs:
+How can you know which of the parameter inputs the system will try to use first? Consider a real example. The command `help Get-Process -Full` returns a detailed listing of the help section for the `Get-Process` command. The `INPUTS` section and the `PARAMETERS` section reveal three possible inputs:
 
 - **System.String[]**: This primitive type is connected to the parameter `-Name`.
 - **System.Int32**: The parameter for this input is called `-Id`.

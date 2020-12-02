@@ -2,7 +2,7 @@ PowerShell is a command-line shell and a scripting language all in one. It was d
 
 Whether you're part of an operations team or a development team that's adopting DevOps principles, PowerShell can help. You can use it to address a variety of tasks, such as managing cloud resources and continuous integration and continuous delivery (CI/CD). PowerShell offers many helpful commands, but you can expand its capabilities at any time by installing modules.
 
-When you install PowerShell, you can evaluate its features to see if it's a fit for your team.
+When you install PowerShell, you can evaluate its features to see if it's a good fit for your team.
 
 ## Learning objectives
 
