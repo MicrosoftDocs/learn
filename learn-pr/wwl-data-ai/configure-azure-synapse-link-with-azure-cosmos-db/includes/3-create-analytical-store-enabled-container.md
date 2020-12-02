@@ -15,11 +15,11 @@ To create a new Azure Cosmos DB Core (SQL) API container with analytical store e
 
 4.	Click the **New Container** button at the top of screen. 
  
-    ![Selecting a new container in Data Explorer](../media/select-new-container.png)
+    [![Selecting a new container in Data Explorer](../media/select-new-container.png)](../media/select-new-container.png#lightbox)
 
     An Add Container dialog will appear.
  
-    ![The add container dialog box in Data Explorer](../media/add-new-container.png)
+    [![The add container dialog box in Data Explorer](../media/add-new-container.png)](../media/add-new-container.png#lightbox)
 
 5.	Enter the **new databases** and **container** information:
     a.	For the **Database ID** we choosing to use AdventureWorks **(5)**
@@ -29,7 +29,7 @@ To create a new Azure Cosmos DB Core (SQL) API container with analytical store e
 
 6.	Choose the throughput for your container by selecting **Autoscale** and **specify a Max RU/s of 4000 (9)**
  
-    ![Creating an analytical store in the add container dialog box.](../media/add-analytical-store.png)
+    [![Creating an analytical store in the add container dialog box.](../media/add-analytical-store.png)](../media/add-analytical-store.png#lightbox)
 
 7.	Scroll down and enable analytical store by ensuring that the **Analytical store** on radio button is selected **(A)**
 
@@ -63,7 +63,7 @@ Perform the following steps to load a couple of sample items into the newly crea
     b.	Enter customer profile JSON in the **edit pane (8)**
     c.	Click the **Save** button on the ribbon **(9)** to save the item.
  
-    ![Creating a customer profile.](../media/create-customer-profile.png)
+    [![Creating a customer profile.](../media/create-customer-profile.png)](../media/create-customer-profile.png#lightbox)
 
     You will now see a new row in the items list (A),and if you click on this row in the items list an updated version the item will appear in the items pane, that includes some additional item meta data the service automatically adds and maintains within the item body when an item is added or updated (B) 
 
@@ -72,12 +72,11 @@ Perform the following steps to load a couple of sample items into the newly crea
     b.	Copy the customer sales order JSON from below and past it in the edit pane **(D)**
     c.	Click the Same button on the ribbon **(9)** to save the item.
 
-    ![Creating a new sales order item.](../media/create-new-sales-order-item.png)
+    [![Creating a new sales order item.](../media/create-new-sales-order-item.png)](../media/create-new-sales-order-item.png#lightbox)
 
     And you will now see a second document in the Items list **(F)**
 
- 
-    ![Viewing a second document in the items list.](../media/view-second-document.png)
+    [![Viewing a second document in the items list.](../media/view-second-document.png)](../media/view-second-document.png#lightbox)
 
 7.	Let run a quick query against this data to retrieve customer profile and sales order information for a specific customer, this is typical of the queries our application runs:
     a.	Click the **New SQL Query** icon **(F)**
@@ -86,7 +85,7 @@ Perform the following steps to load a couple of sample items into the newly crea
 
     You will see the results immediately returned in the results pain including the content of both items we previously created (I)
 
-    ![Running a query.](../media/run-query.png)
+    [![Running a query.](../media/run-query.png)](../media/run-query.png#lightbox)
 
 ## Create a new Azure Cosmos DB API for MongoDB container
 
@@ -96,7 +95,7 @@ To create a new Azure Cosmos DB API for MongoDB container with analytical store 
 
 2.	Navigate to your previously created Azure Cosmos DB API for MongoDB account
 
-    ![Add a collection and database.](../media/add-collection.png)
+    [![Add a collection and database.](../media/add-collection.png)](../media/add-collection.png#lightbox)
 
 3.	Select **Data Explorer** on the left-hand menu (1).
 
@@ -113,7 +112,7 @@ To create a new Azure Cosmos DB API for MongoDB container with analytical store 
 
 6.	Choose the throughput for your container by selecting **Autoscale** and specify a Max RU/s of 4000 **(8)**
 
-    ![Enable an analytics store.](../media/enable-analytics-store.png)
+    [![Enable an analytics store.](../media/enable-analytics-store.png)](../media/enable-analytics-store.png#lightbox)
 
 7.	Scroll down and enable analytical store by ensuring that the **Analytical store** on radio button is selected **(A)**
 
@@ -127,7 +126,7 @@ Perform the following steps to load a couple of sample items into the newly crea
 
 2.	Navigate to your previously created Azure Cosmos DB API for MongoDB account
  
-    ![creating a customer profile in MongoDB.](../media/create-customer-profile-mongodb.png)
+    [![creating a customer profile in MongoDB.](../media/create-customer-profile-mongodb.png)](../media/create-customer-profile-mongodb.png#lightbox)
 
 3.	Select **Data Explorer** in the left-hand menu **(1)**
 
@@ -154,11 +153,11 @@ Perform the following steps to load a couple of sample items into the newly crea
 
 7.	Let’s run a quick query against this data to retrieve customer profile and sales order information for a specific customer, this is typical of the queries our application runs:
  
-    ![run a query to retrieve data.](../media/query-to-retrieve-data.png)
+    [![run a query to retrieve data.](../media/query-to-retrieve-data.png)](../media/query-to-retrieve-data.png#lightbox)
 
     a.	Click the New Shell **(A)**
  
-    ![Opening a mongo client shell within the portal..](../media/open-mongo-client-shell.png)
+    [![Opening a mongo client shell within the portal..](../media/open-mongo-client-shell.png)](../media/open-mongo-client-shell.png#lightbox)
 
     This will open a mongo client shell within the portal.
 

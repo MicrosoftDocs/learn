@@ -11,13 +11,13 @@ To enable Azure Synapse link on your previously created Azure Cosmos DB SQL (Cor
 
 2.	Navigate to your previously created Azure Cosmos DB SQL (Core) API account
  
-    ![How to enable Azure Synapse Link in the Azure portal](../media/enable-azure-synpase-link-sql-api.png)
+    [![How to enable Azure Synapse Link in the Azure portal](../media/enable-azure-synpase-link-sql-api.png)](../media/enable-azure-synpase-link-sql-api.png#lightbox)
 
 3.	Select **Data Explorer** in the left-hand menu **(3)**
 
 4.	Then click **Enable Azure Synapse Link** button at the top of the screen **(4)**
  
-    ![How to enable Azure Synapse Link on Cosmos DB in the Azure portal](../media/enable-azure-synpase-link-cosmos-db.png)
+    [![How to enable Azure Synapse Link on Cosmos DB in the Azure portal](../media/enable-azure-synpase-link-cosmos-db.png)](../media/enable-azure-synpase-link-cosmos-db.png#lightbox)
 
 5.	Then click **Enable Azure Synapse Link** on the pop-up dialog box.
 
@@ -25,7 +25,7 @@ To enable Azure Synapse link on your previously created Azure Cosmos DB SQL (Cor
 
     To verify that the Azure Synapse Link feature is enabled on the account follow the follow steps:
  
-    ![Validatin Azure Synapse Link is enables](../media/enable-azure-synpase-link-enabled.png)
+    [![Validatin Azure Synapse Link is enables](../media/enable-azure-synpase-link-enabled.png)](../media/enable-azure-synpase-link-enabled.png#lightbox)
 
 6.	Select **Features** in the left-hand menu **(1)**
 
@@ -39,15 +39,15 @@ We will now use an alternative and equally effective manner for enabling the Syn
 
 2.	Navigate to your previously created Azure Cosmos DB API for MongoDB account
  
-    ![Enable Azure Synapse Link in Cosmos DB Mongo DB API](../media/enable-azure-synpase-link-mongodb.png)
+    [![Enable Azure Synapse Link in Cosmos DB Mongo DB API](../media/enable-azure-synpase-link-mongodb.png)](../media/enable-azure-synpase-link-mongodb.png#lightbox)
 
 3.	Select **Features** in the left-hand menu **(3)**
  
-    ![Viewing Azure Synapse Link feature the in Cosmos DB Mongo DB API](../media/enable-azure-synpase-link-feature-mongodb.png)
+    [![Viewing Azure Synapse Link feature the in Cosmos DB Mongo DB API](../media/enable-azure-synpase-link-feature-mongodb.png)](../media/enable-azure-synpase-link-feature-mongodb.png#lightbox)
 
 4.	Then click on the **Azure Synapse Link** entry in the features table **(4)**.
  
-    ![Enable Azure Synapse Link](../media/enable-azure-synpase-link.png)
+    [![Enable Azure Synapse Link](../media/enable-azure-synpase-link.png)](../media/enable-azure-synpase-link.png#lightbox)
 
 5.	The click the **Enable** button on the dialog box on the right (5)
 

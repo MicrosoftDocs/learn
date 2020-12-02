@@ -4,11 +4,11 @@ In order to query the data within our Cosmos DB analytical store from Azure Syna
 
 To configure the Azure Synapse Linked Service for Azure Cosmos DB Core (SQL) API, perform the following steps:
  
-![Azure Synapse Studio.](../media/azure-synapse-studio.png)
+[![Azure Synapse Studio.](../media/azure-synapse-studio.png)](../media/azure-synapse-studio.png#lioghtbox)
 
 1.	Connect to a previously deployed Azure Synapse Workspace running an Azure Synapse SQL Serverless instance **(deployed by default with the workspace)** and an Azure Synapse Spark Pool **(you need to have previously deployed this)**. 
  
-    ![Adding a new resource in Azure Synapse Studio.](../media/new-resource-azure-synapse-studio.png)
+    [![Adding a new resource in Azure Synapse Studio.](../media/new-resource-azure-synapse-studio.png)](../media/new-resource-azure-synapse-studio.png#lightbox)
 
 2.	In the left-hand menu, select **Data (1)**
 
