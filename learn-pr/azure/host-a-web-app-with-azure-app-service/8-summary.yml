@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.host-a-web-application-with-azure-web-apps.7-summary
+uid: learn.host-a-web-application-with-azure-web-apps.8
 title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 12/12/2018
+  ms.date: 12/01/2020
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/8-summary.md)]
 quiz:
   title: Check your knowledge
   questions:
@@ -25,7 +25,7 @@ quiz:
       isCorrect: false
       explanation: "Azure App service has built-in auto scale support and will increase or decrease the resources allocated to run your app as needed, depending on the demand."
 
-  - content: "Which of the following is not a valid automated deployment source?"
+  - content: "Which of the following isn't a valid automated deployment source?"
     choices:
     - content: "GitHub"
       isCorrect: false
@@ -35,7 +35,4 @@ quiz:
       explanation: "Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
     - content: "SharePoint"
       isCorrect: true
-      explanation: "Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
-    - content: "Dropbox"
-      isCorrect: false
       explanation: "Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
