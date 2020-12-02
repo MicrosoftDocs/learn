@@ -43,7 +43,7 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
 
 1. On the function app page, find **Function** in the left side menu options below **Search**, and click on it.  Select the **+ Add** button at the top.
 
-1. Select **HTTP triggers** in the left-hand pane.
+1. Select **HTTP triggers** in the left-hand pane. Select **Add**.
 
    The portal will create a JavaScript function that looks similar to this:
    You must click on **Code + Test** to view it. 
