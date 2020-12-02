@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/01/2020
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -39,10 +39,10 @@ quiz:
     choices:
     - content: "as_mount()"
       isCorrect: true
-      explanation: "That is correct. To stream data directly from its source, use thr as_mount mode."
+      explanation: "That is correct. To stream data directly from its source, use the as_mount mode."
     - content: "as_download()"
       isCorrect: false
-      explanation: "That is incorrect. To stream data directly from its source, use thr as_mount mode."
+      explanation: "That is incorrect. To stream data directly from its source, use the as_mount mode."
     - content: "as_upload()"
       isCorrect: false
-      explanation: "That is incorrect. To stream data directly from its source, use thr as_mount mode."
+      explanation: "That is incorrect. To stream data directly from its source, use the as_mount mode."
