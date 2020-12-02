@@ -1,6 +1,6 @@
 Imagine you work for a freight company that transports goods all over the world by using ships. The operations department uses a small system that tracks where all the company's ships are docked. Due to staff increases, this system needs to be moved to Kubernetes.
 
-The system's application uses MongoDB as a database, and it's built through a separated back end. You have to solve the problem of how to manage your database access in this distributed environment, and how to deploy a new database to support this critical application.
+The system's application uses Azure Cosmos DB as a database, and it's built through a separated back end. You have to solve the problem of how to manage your database access in this distributed environment, and how to deploy a new database to support this critical application.
 
 ## Learning objectives
 

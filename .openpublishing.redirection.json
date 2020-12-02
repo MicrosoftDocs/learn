@@ -4385,6 +4385,16 @@
       "source_path": "learn-pr/azure/host-a-web-app-with-azure-app-service/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/host-a-web-app-with-azure-app-service",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-local-model-with-azure-mls/2-estimators.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls/2-training-scripts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/develop-secure-iot-solutions-azure-sphere-iot-central/4-event-driven-programming.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/develop-secure-iot-solutions-azure-sphere-iot-central/5-how-setup-azure-sphere",
+      "redirect_document_id": false
     }
   ]
 }
