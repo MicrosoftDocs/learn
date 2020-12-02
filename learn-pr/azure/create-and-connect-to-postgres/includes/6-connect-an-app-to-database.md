@@ -2,6 +2,9 @@ Azure Database for PostgreSQL supports many different libraries and drivers that
 
 Most language client libraries used to connect to PostgreSQL server are external projects and are distributed independently. The libraries listed below are supported on the Windows, Linux, and Mac platforms.
 
+
+
+
 *Talking point: Developing with postgres*
 
 ::: zone pivot="csharp"
