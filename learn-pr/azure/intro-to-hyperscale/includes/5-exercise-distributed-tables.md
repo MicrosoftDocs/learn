@@ -13,19 +13,24 @@ After a few seconds, a black Cloud Shell should appear
 
 :::image type="content" source="../media/5b-shell.png" alt-text="Azure Cloud Shell.":::
 
+4. To make things easier, we'll save the name of the server group in the cloud shell. Copy the code below, and replace the `{SERVER-NAME}` with the name you set for the server in the previous exercise.
+
+```bash
+SERVERNAME={SERVER-NAME}
+```
+
 Let's now use the psql command-line utility to connect to the Hyperscale server group.
 
-4. Select the Copy button on the code block to copy the code, and replace the `{YOUR-PASSWORD-HERE}` with your password from the previous exercise.
+5. Select the Copy button on the code block to copy the code, and paste it into the cloud shell.
 
 ```psql
-   psql "host=payment-server-demo-c.postgres.database.azure.com port=5432 dbname=citus user=citus password={YOUR-PASSWORD-HERE} sslmode=require"
+   psql "host=$SERVERNAME-c.postgres.database.azure.com port=5432 dbname=citus user=citus sslmode=require"
 ```
+
+6. At the prompt, type in your password, then Select Enter to connect to your Hyperscale server group.
 
 > [!NOTE]
 > You can reset your password in the [Azure Portal](https://portal.azure.com). Select the `payment-server-demo` resource, then select `Reset password` 
-
-5. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux or by selecting Cmd+Shift+V on macOS.
-6. Select Enter to run the code to connect to your Hyperscale server group.
 
 ## Create tables in the database
 
@@ -40,6 +45,14 @@ First, create the event and user tables.
 1. In the Cloud Shell window, run the following query to create our payment_events and payment_users tables:
 
 ```SQL
+CREATE TABLE payment_users
+(
+    user_id bigint,
+    url text,
+    login text,
+    avatar_url text
+);
+
 CREATE TABLE payment_events
 (
     event_id bigint,
@@ -49,15 +62,27 @@ CREATE TABLE payment_events
     event_details jsonb,
     created_at timestamp
 );
-
+```
+```SQL
 CREATE TABLE payment_users
 (
-    user_id bigint,
+    user_id bigint PRIMARY KEY,
     url text,
     login text,
     avatar_url text
 );
+
+CREATE TABLE payment_events
+(
+    event_id bigint,
+    event_type text,
+    user_id bigint references payment_users(user_id),
+    merchant_id bigint,
+    event_details jsonb,
+    created_at timestamp
+);
 ```
+
 
 The tables are on the coordinator node. To distribute the tables to the worker nodes, we have to run a `create_distributed_table` query with what `table` to distribute, and what `key` to shard it on. The syntax looks like `create_distributed_table('table', 'key')`
 
@@ -66,7 +91,7 @@ In our case, we have the **user_id** to shard and we want to distribute both the
 2. In the Cloud Shell window, run the following query to distribute our payment_events and payment_users tables to the worker nodes:
 
 ```sql
-SELECT create_distributed_table('payment_events', 'user_id');
+SELECT create_distributed_table('payment_events', 'event_id');
 SELECT create_distributed_table('payment_users', 'user_id');
 ```
 
@@ -105,7 +130,7 @@ Our data is now loaded and distributed. Let's run a couple queries.
 SELECT count(*) from payment_events;
 ```
 
-126,243 events. Let's look into the data further.
+126,195 events. Let's look into the data further.
 
 4. Run the following query to see how many transactions we're having per hour.
 
@@ -121,6 +146,7 @@ ORDER BY hour;
 5. And now, let's take a look for high activity and see if we can find anything interesting.
 
 ```sql
+ SET citus.enable_repartition_joins TO ON;
  SELECT users.login, count(*) as purchases
  FROM payment_events events
  JOIN payment_users users

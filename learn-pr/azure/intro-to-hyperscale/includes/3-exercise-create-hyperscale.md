@@ -28,13 +28,13 @@ For a total of 12 vCores and 1.5 TiB of storage.
     |---------|---------|
     |**Subscription**     |  Select **Free Trial** or **your existing subscription**       |
     |**Resource group**     | Select **Create new** and name your resource group **Hyperscale**       |
-    |         **Server name** |  Enter **payment-server-demo**  |
+    |         **Server name** |  **Choose a unique name**, such as payment-server-demo  |
     |**Location**| Use a region that's close to you, or leave as default |
     |**Compute + storage**     |  Leave as default, we'll configure this in the next step      |
     | **Admin username**| Citus will be selected by default |
     | **Password/Confirm Password**|  Choose a password |
 
-    1. Note the password down for later use.
+    1. Note the server name and password down for later use.
     1. Select **Configure server group** in the **Compute + storage** options.
 
 :::image type="content" source="../media/3c-form.png" alt-text="Configure Hyperscale form.":::

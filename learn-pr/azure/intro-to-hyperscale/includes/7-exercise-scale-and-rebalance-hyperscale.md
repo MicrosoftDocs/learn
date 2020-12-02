@@ -11,8 +11,6 @@ In this exercise, we're going to double the number of worker nodes. Then we'll r
 
 3. Then select the **Compute + storage** tab.
 
-:::image type="content" source="../media/7b-password.png" alt-text="Compute and storage tab.":::
-
 4. Now, select 4 worker nodes. Adjust the vCores for the coordinator node if you want, but the deployment process may take a few minutes longer.
 
 :::image type="content" source="../media/7c-workers.png" alt-text="Worker nodes and coordinator node vCores.":::
@@ -31,7 +29,7 @@ To take advantage of newly added nodes, we must rebalance distributed table shar
 7. Connect to your Hyperscale instance with the following command, using your password:
 
 ```psql
-   psql "host=payment-server-demo-c.postgres.database.azure.com port=5432 dbname=citus user=citus password={YOUR-PASSWORD-HERE} sslmode=require"
+   psql "host=$SERVERNAME-c.postgres.database.azure.com port=5432 dbname=citus user=citus sslmode=require"
 ```
 
 > [!NOTE]
