@@ -11,13 +11,13 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 ## Install the Cosmos DB extension for Visual Studio Code
 
-1. Start Visual Studio Code.
+1. Start Visual Studio Code. Click **Continue without code**
 
-2. On the **View** menu, select **Extensions** to open the extensions pane.
+2. On the **Extensions** menue at the top and select **Manage Extensions** to open the extensions pane.
 
-3. In the **Search Extensions in Marketplace** box, type **Cosmos DB**, and press Enter.
+3. In the **Search** box, type **Azure Cosmos DB**, and press Enter.
 
-4. In the list of extensions, select the **Azure Cosmos DB** extension published by Microsoft, and click **Install**.
+4. In the list of extensions, select the **Azure Cosmos DB** extension published by Microsoft, and click **Download**.  Install the package when the download is completed.
 
     :::image type="content" source="../media/3-install-cosmosdb-extension.png" alt-text="Screenshot of Visual Studio Code. The user has selected the Azure Cosmos DB extension." loc-scope="vs-code":::
 

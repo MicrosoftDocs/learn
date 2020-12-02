@@ -17,9 +17,14 @@ abstract: |
   - Predict and optimize costs with Azure Cost Management and Azure Advisor
   - Apply best practices for saving on infrastructure costs
   - Apply best practices for saving on licensing costs
+  > [!NOTE]
+  > This module has been updated to [Plan and manage your Azure costs](https://docs.microsoft.com/learn/modules/plan-manage-azure-costs/).
+  > 
+  > If you’ve already started this module, you can continue until it’s retired on January 31, 2021. **It’ll be hidden from navigation on November 9, 2020**, so **bookmark it** before then.
 prerequisites: |
   - An understanding of your options within Azure infrastructure components
 iconUrl: /learn/achievements/predict-costs-and-optimize-spending.svg
+hidden: true
 levels:
 - beginner
 roles:

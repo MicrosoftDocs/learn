@@ -1,4 +1,4 @@
-Cosmos DB provides a highly scalable document store suitable for holding a wide range of document types. The SQL API enables you to write applications that can easily query and maintain documents. 
+Cosmos DB provides a highly scalable document store suitable for holding a wide range of document types. The SQL API enables you to write applications that can easily query and maintain documents.
 
 In the sample scenario, you're using Cosmos DB to store the details of students, and the course grades they achieved. You've written and tested code to create student objects in memory. You now need to add functionality to save these documents to Cosmos DB, and to query documents held in Cosmos DB.
 
@@ -23,7 +23,7 @@ The first task is to enable your application to connect to the Cosmos DB account
 4. Add the following code to the studentgrades.js file, immediately above the **Student** class. This object wraps the connection, database, and container information you'll use to access documents in the Cosmos DB database:
 
     ```javascript
-    var config = {
+    let config = {
         connectionString: "YOUR CONNECTION STRING WILL GO HERE SHORTLY",
         database: "SchoolDB",
         container: "StudentCourseGrades"
@@ -45,7 +45,7 @@ The first task is to enable your application to connect to the Cosmos DB account
 9. Add the following code between the **config** object and the **Student** class:
 
     ```javascript
-    var cosmos = require("@azure/cosmos");
+    const cosmos = require("@azure/cosmos");
 
     const client = new cosmos.CosmosClient(config.connectionString);
     const databaseid = config.database;

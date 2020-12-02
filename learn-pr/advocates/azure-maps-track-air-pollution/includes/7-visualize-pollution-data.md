@@ -109,7 +109,7 @@ The Flask app will need to call the API to load the data for the visible portion
         if aqi <= 300: return "#660099"
         return "#7e0023"
 
-     def load_aqi_data(lon1, lat1, lon2, lat2):
+    def load_aqi_data(lon1, lat1, lon2, lat2):
         # Load the air quality data
         url = WAQI_API_URL.format(lat1, lon1, lat2, lon2, WAQI_API_KEY)
         aqi_data = requests.get(url)

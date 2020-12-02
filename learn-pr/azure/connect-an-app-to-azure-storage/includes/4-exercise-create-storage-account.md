@@ -10,9 +10,7 @@ We will use the `az storage account create` command to create a new storage acco
 > | `--name` | A **Storage account name**. The name will be used to generate the public URL used to access the data in the account. It must be unique across all existing storage account names in Azure. It must be 3 to 24 characters long and can contain only lowercase letters and numbers. |
 > | `--resource-group` | Use **<rgn>[sandbox resource group name]</rgn>** to place the storage account into the free sandbox. |
 > | `--location` | Select a location near you (see below). |
-> | `--kind` | This determines the storage account _type_. Options include `BlobStorage`, `Storage`, and `StorageV2`. |
 > | `--sku` | This decides the storage account performance and replication model. Options include `Premium_LRS`, `Standard_GRS`, `Standard_LRS`, `Standard_RAGRS`, and `Standard_ZRS`. |
-> | `--access-tier` | The **Access tier** is only used for Blob storage, available options are [`Cool` \| `Hot`]. The **Hot Access Tier** is ideal for frequently accessed data, and the **Cool Access Tier** is better for infrequently accessed data. Note that this only sets the _default_ value&mdash;when you create a Blob, you can set a different value for the data. |
     
 Use the above table to craft a command line in the Cloud Shell on the right to create the account.
 - Use a unique name. We recommend something like "photostore" with your initials and a random number. You will get an error if it's not unique.
@@ -29,15 +27,14 @@ Use the above table to craft a command line in the Cloud Shell on the right to c
 
 ### Example command
 
-You can use the following example command to create a storage account. Remember to replace `<name>` with a unique value.
+You can use the following example command to create a storage account. Remember to replace `<name>` and `<learn-resource-group>` with a unique value. 
 
 ```azurecli
 az storage account create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --kind StorageV2 \
-        --sku Standard_LRS \
-        --access-tier Cool \
-        --name <name>
+    --name <name> \
+    --resource-group <learn-resource-group> \
+    --location eastus \
+    --sku Standard_LRS
 ```
 
 > [!TIP]

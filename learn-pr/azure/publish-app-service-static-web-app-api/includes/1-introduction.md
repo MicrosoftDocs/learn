@@ -1,6 +1,12 @@
-Your company is launching a shopping list web app. Through the site, customers can add, edit, view, and remove items from their list.
+## Scenario
 
-As you build the app, your first concerns are that your app is hosted securely, is globally available, and published automatically. Rather than build a web server to handle all these concerns, you decide to use a hosting solution that serves your assets easily, without much setup or configuration.
+Your company is launching a shopping list web app. Through the site, customers can add, edit, view, and remove items such as food and household needs from their list.
+
+The site and APIs need to be secure to ensure customer privacy. Your users will be distributed all over the world and you want everyone to get great performance. You’d prefer a solution that removes as much of the infrastructure work, including building and publishing, as possible so you can concentrate on features and user experience.
+
+You could deploy your web assets to cloud storage, create, and assign your own SSL certificate, create your API on a cloud server, establish a reverse proxy that allows your app to make calls to the API, distribute the app globally, and set up your own CI/CD process.
+
+When you use Azure Static Web Apps, you get all of this out of the box.
 
 ## What is Azure Static Web Apps?
 

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-devops-devtest-labs.use-github
-title: Use GitHub to utilize and contribute to open-source software
+title: Use GitHub to contribute to open-source software
 metadata:
-  title: Use GitHub to utilize and contribute to open-source software
+  title: Use GitHub to contribute to open-source software
   description: Analyze a scenario that requires a platform for sharing code and gathering input.
   ms.date: 09/14/2020
   author: bobtabor-msft

@@ -21,7 +21,9 @@ Let's add support to our .NET core application to retrieve a connection string f
 
     ```json
     {
-      "StorageAccountConnectionString": "<value>"
+        "ConnectionStrings": {
+            "StorageAccountConnectionString": "<value>"
+        }
     }
     ```
 
@@ -38,17 +40,16 @@ Let's add support to our .NET core application to retrieve a connection string f
 
 1. Next, open the project file (**PhotoSharingApp.csproj**) in the editor.
 
-1. Add the following configuration block to include the new file in the project and copy it to the output folder. This ensures that the app configuration file is placed in the output directory when the app is compiled/built.
+1. Add the following configuration block to the file in the project. Add below < / ItemGroup > from the existing code. 
 
     ```xml
-    <Project Sdk="Microsoft.NET.Sdk">
-       ...
+   
         <ItemGroup>
             <None Update="appsettings.json">
               <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
             </None>
         </ItemGroup>
-    </Project>
+
     ```
 
 1. Save the file. (Make sure you do this or you will lose the change when you add the package below!)
@@ -131,17 +132,17 @@ Let's add support to our Node.js application to retrieve a connection string fro
     code .
     ```
 
-1. Select the **.env** file in the editor and add the following text. 
+1. Select the **.env** file in the editor and add the following text.
 
     > [!TIP]
     > You may need to click the refresh button in code to see the new files.
-    
+
     ```
     AZURE_STORAGE_CONNECTION_STRING=<value>
     ```
 
     > [!TIP]
-    > The **AZURE_STORAGE_CONNECTION_STRING** value is a hard-coded environment variable used for Storage APIs to look up access keys. You can use your own name if you prefer, but you must supply the name when you create the `BlobService` object in your Node.js app.
+    > The **AZURE_STORAGE_CONNECTION_STRING** value is a hard-coded environment variable used for Storage APIs to look up access keys. You can use your own name if you prefer, but you must supply the name when you create the `BlobServiceClient` object in your Node.js app.
 
 1. Save the file.
 
@@ -181,6 +182,7 @@ Now that we have added the required libraries to enable reading configuration, w
     require('dotenv').config();
     // ... more code follows
     ```
+
 ::: zone-end
 
 Now that we have that all wired up, we can start adding code to use our storage account.

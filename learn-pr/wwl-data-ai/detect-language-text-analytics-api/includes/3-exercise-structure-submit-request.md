@@ -84,7 +84,7 @@ With your environment setup, you are now ready to begin the coding exercise.
     {
         var client = new TextAnalyticsClient(endpoint, credentials);
 
-        LanguageDetectionExample(client);
+        DetectLanguage(client);
         Console.Write("Press any key to exit.");
         Console.ReadKey();
     }

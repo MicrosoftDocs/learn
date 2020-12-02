@@ -9,7 +9,7 @@ metadata:
   ms.date: 03/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 20
+durationInMinutes: 10
 content: |
   [!include[](includes/4-build-spring-boot-microservice.md)]
 quiz:

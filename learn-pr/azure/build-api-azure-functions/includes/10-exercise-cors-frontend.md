@@ -1,8 +1,8 @@
-CORS is nifty for production, but it's a bummer when you're trying to build an application locally. In this exercise, you'll disable it in development so that you can fully test your application and API.
+CORS is nifty for production, but it's inferior when you're trying to build an app locally. In this exercise, you'll disable it in development, so that you can fully test your app and API.
 
 ## Allow CORS access for development
 
-1. If the Function app is running, press the "disconnect" button in the debug bar to terminate it.im
+1. If the Function app is running, to terminate it.im, in the debug bar, press "disconnect."
 
     :::image type="content" source="../media/terminate-debug-process.png" alt-text="Screenshot of Visual Studio Code debug bar with a red box outlining the disconnect button." loc-scope="vs-code":::
 
@@ -26,7 +26,7 @@ CORS is nifty for production, but it's a bummer when you're trying to build an a
 
 1. Start the Function project with <kbd>F5</kbd>.
 
-## Connect the frontend web application
+## Connect the front-end web application
 
 1. Open the `frontend/index.js` file.
 
@@ -36,12 +36,12 @@ CORS is nifty for production, but it's a bummer when you're trying to build an a
    const API = "http://localhost:7071/api";
    ```
 
-1. The frontend application should still be running in a browser tab on port 5000. Refresh the page.
+1. The front-end app should still be running in a browser tab on port 5000. Refresh the page.
 
-1. The application loads in the data from the API.
+1. The app loads in the data from the API.
 
    :::image type="content" source="../media/working-application.png" alt-text="Screenshot of web browser displaying the Products Manager application shown populated with data." loc-scope="other":::
 
-1. Try creating, updating, and deleting products to ensure that all endpoints work.
+1. To ensure that all endpoints work, try creating, updating, and deleting products.
 
-That application looks good. It looks **very** good. None of it would be possible without your brilliant API. Are you ready to take this thing to production? Tailwind Traders is on a tight deadline to ship this. Going to production in Azure has its caveats, though. The first thing that you'll need to address is security. Wide-open APIs are OK in production, but you'll need to lock them down once they go live.
+That app looks good. It looks **very** good. None of it would be possible without your brilliant API. Are you ready to take this thing to production? Tailwind Traders is on a tight deadline to ship this. Going to production in Azure has its caveats, though. The first thing that you'll need to address is security. Wide-open APIs are OK in production, but you'll need to lock them down after they go live.

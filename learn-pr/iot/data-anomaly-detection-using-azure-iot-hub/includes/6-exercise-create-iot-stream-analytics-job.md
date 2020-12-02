@@ -9,11 +9,11 @@ In this unit, we'll create and test the logging route.
 
 1. Click **+ Add** to add the first route.
 
-1. Name the route "vibratonLoggingRoute".
+1. Name the route "VibrationLoggingRoute".
 
 1. Click **+ Add endpoint**, and select **Storage** from the drop-down list.
 
-1. Give the endpoint a descriptive name, such as "vibrationLogEndpoint".
+1. Give the endpoint a descriptive name, such as "VibrationLogEndpoint".
 
 1. Click the **Pick a container** box.
 

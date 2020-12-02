@@ -25,11 +25,12 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
     | Property  | Value  |
     |---|---|
-    | App name | \<your-webapp-name\> |
     | Subscription | Select the Azure subscription you'd like to use for this exercise  |
     | Resource Group | Create a new resource group called **mslearn-scale** |
-    | OS | Windows |
+    | App name | \<your-webapp-name\> |
     | Publish | Code |
+    | Runtime stack | .NET Core 3.1 (LST)|
+    | O/S | Windows|
     | App Service plan/Location | *Leave default* |
 
 1. Select **Create** and wait for the web app to be created.

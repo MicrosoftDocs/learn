@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-api-azure-functions.9-understand-cors
-title: Understanding CORS
+title: Understand CORS
 metadata:
-  title: Understanding CORS
-  description: Understanding CORS
+  title: Understand CORS
+  description: Understand CORS
   ms.date: 01/24/2020
   author: burkeholland
   ms.author: buhollan

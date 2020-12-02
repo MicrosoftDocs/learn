@@ -4,7 +4,7 @@ metadata:
   description: Summarizes the learning objectives, the scenario, next steps, and ends with a short knowledge check.
   ms.date: 6/1/2020
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary

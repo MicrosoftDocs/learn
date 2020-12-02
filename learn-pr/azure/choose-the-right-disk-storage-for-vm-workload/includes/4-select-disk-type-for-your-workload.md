@@ -8,7 +8,7 @@ In this unit, you'll examine the requirements for each virtual server in the pro
 
 ## Production database server
 
-First, you want to architect the virtual machine that will host the production database for your prescription drug stocks system. This system is business critical. It's used by the majority of your employees, all around the world, to do their jobs. The database server in the on-premises system is heavily utilized. The physical disks run close to their capacity in terms of IOPS and throughput. The database also contains highly sensitive patient data, so you want to ensure that it's encrypted on the disk.
+First, you want to architect the virtual machine that will host the production database for your prescription drug stocks system. This system is business critical. It's used by the majority of your employees, all around the world, to do their jobs. The database server in the on-premises system is heavily utilized. The physical disks run close to their capacity in terms of IOPS and throughput.
 
 You've monitored and analyzed the performance of your on-premises system, both during typical periods and during periods of peak demand, such as during a successful marketing campaign. This study shows that fast disks and low latency underpin the system and that any drop in performance will affect all your users. To ensure that your current good performance continues after the migration to the cloud, you want the disks that store the databases to support 50,000 IOPS and throughputs up to 1,000 MBps.
 

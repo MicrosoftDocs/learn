@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-sql-server-virtual-machine
 metadata:
   title: Deploy SQL Server in a virtual machine
   description: "Configure virtual machine sizing, storage, and networking options to ensure adequate performance for your database workloads. Choose and configure appropriate high availability options. Investigate options for migrating existing workloads."
-  ms.date: 10/01/2020
+  ms.date: 10/18/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial

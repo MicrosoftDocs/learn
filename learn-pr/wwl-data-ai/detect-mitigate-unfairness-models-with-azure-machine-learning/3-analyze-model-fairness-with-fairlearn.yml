@@ -3,8 +3,8 @@ uid: learn.wwl.detect-mitigate-unfairness-models-with-azure-machine-learning.ana
 title: Analyze model fairness with Fairlearn
 metadata:
   title: Analyze model fairness with Fairlearn
-  description: "Use Fairlearn to analyze model fairness"
-  ms.date: 09/24/2020
+  description: "Analyze model fairness with Fairlearn"
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

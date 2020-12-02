@@ -1,15 +1,15 @@
-One possible solution to Tailwind Traders' lack of physical servers is through the use of virtual machines.
+One possible solution to Tailwind Traders' lack of physical servers is through the use of virtual machines (VMs).
 
 :::row:::
   :::column span="3":::
 
-Azure Virtual Machines (VMs) let you create and use virtual machines in the cloud. They provide Infrastructure as a Service (IaaS) in the form of a virtualized server and can be used in many ways. Just like a physical computer, you can customize all of the software running on the VM. VMs are an ideal choice when you need:
+With Azure Virtual Machines, you can create and use VMs in the cloud. VMs provide infrastructure as a service (IaaS) in the form of a virtualized server and can be used in many ways. Just like a physical computer, you can customize all of the software running on the VM. VMs are an ideal choice when you need:
 
-- Total control over the operating system (OS)
-- The ability to run custom software, or
-- To use custom hosting configurations
+- Total control over the operating system (OS).
+- The ability to run custom software.
+- To use custom hosting configurations.
 
-An Azure VM gives you the flexibility of virtualization without having to buy and maintain the physical hardware that runs the VM. However, you still need to configure, update, and maintain the software that runs on the VM.
+An Azure VM gives you the flexibility of virtualization without having to buy and maintain the physical hardware that runs the VM. You still need to configure, update, and maintain the software that runs on the VM.
 
   :::column-end:::
   :::column:::
@@ -17,27 +17,24 @@ An Azure VM gives you the flexibility of virtualization without having to buy an
   :::column-end:::
 :::row-end:::
 
-You can create and provision a VM in minutes when you select a pre-configured VM image. Selecting an image is one of the most important decisions you'll make when creating a VM. An image is a template used to create a VM. These templates already include an OS and often other software, like development tools or web hosting environments.
+You can create and provision a VM in minutes when you select a preconfigured VM image. Selecting an image is one of the most important decisions you'll make when you create a VM. An image is a template used to create a VM. These templates already include an OS and often other software, like development tools or web hosting environments.
 
-### Examples of when to use virtual machines
+### Examples of when to use VMs
 
-- During testing and development. VMs provide a quick and easy way to create different OS and application configurations. Test and development personnel can then easily delete the VMs when they no longer need them.
+- **During testing and development.** VMs provide a quick and easy way to create different OS and application configurations. Test and development personnel can then easily delete the VMs when they no longer need them.
+- **When running applications in the cloud.** The ability to run certain applications in the public cloud as opposed to creating a traditional infrastructure to run them can provide substantial economic benefits. For example, an application might need to handle fluctuations in demand. Shutting down VMs when you don't need them or quickly starting them up to meet a sudden increase in demand means you pay only for the resources you use.
+- **When extending your datacenter to the cloud.** An organization can extend the capabilities of its own on-premises network by creating a virtual network in Azure and adding VMs to that virtual network. Applications like SharePoint can then run on an Azure VM instead of running locally. This arrangement makes it easier or less expensive to deploy than in an on-premises environment.
+- **During disaster recovery.** As with running certain types of applications in the cloud and extending an on-premises network to the cloud, you can get significant cost savings by using an IaaS-based approach to disaster recovery. If a primary datacenter fails, you can create VMs running on Azure to run your critical applications and then shut them down when the primary datacenter becomes operational again.
 
-- When running applications in the cloud. The ability to run certain applications in the public cloud as opposed to creating a traditional infrastructure to run them can provide substantial economic benefits. For example, if an application needs to handle fluctuations in demand, being able to shut down VMs when you don't need them or quickly start them up to meet a suddenly increased demand means you pay only for the resources you use.
+## Move to the cloud with VMs
 
-- When extending your datacenter to the cloud. An organization can extend the capabilities of its own on-premises network by creating a virtual network in Azure and adding VMs to that virtual network. Applications like SharePoint can then run on an Azure VM instead of running locally, making it easier or less expensive to deploy than in an on-premises environment.
+VMs are also an excellent choice when you move from a physical server to the cloud (also known as lift and shift). You can create an image of the physical server and host it within a VM with little or no changes. Just like a physical on-premises server, you must maintain the VM. You update the installed OS and the software it runs.
 
-- During disaster recovery. As with running certain types of applications in the cloud and extending an on-premises network to the cloud, you can get significant costs savings by using an IaaS-based approach to disaster recovery. If a primary datacenter fails, you can create VMs running on Azure to run your critical applications and then shut them down when the primary datacenter becomes operational again.
+## Scale VMs in Azure
 
-## Moving to the cloud with VMs
+You can run single VMs for testing, development, or minor tasks. Or you can group VMs together to provide high availability, scalability, and redundancy. No matter what your uptime requirements are, Azure has several features that can meet them. These features include:
 
-VMs are also an excellent choice when moving from a physical server to the cloud ("lift and shift"). You can create an image of the physical server and host it within a VM with little or no changes. Just like a physical on-premises server, you must maintain the VM. You update the installed OS and the software it runs.
-
-## Scaling VMs in Azure
-
-You can run single VMs for testing, development, or minor tasks; or you can group VMs together to provide high availability, scalability, and redundancy. Azure has several features such that, no matter what your uptime requirements are, Azure can meet them. These features include:
-
-- Virtual Machine Scale Sets
+- Virtual machine scale sets
 - Azure Batch
 
 [//]: # (NOTE: REMOVED THE FOLLOWING)
@@ -57,9 +54,9 @@ You can run single VMs for testing, development, or minor tasks; or you can grou
 
 ### What are virtual machine scale sets?
 
-Azure Virtual Machine Scale Sets let you create and manage a group of identical, load balanced VMs. Imagine you're running a website that enables scientists to upload astronomy images that need to be processed. If you duplicated the VM, you'd normally need to configure an additional service to route requests between multiple instances of the website. Virtual Machine Scale Sets could do that work for you.
+Virtual machine scale sets let you create and manage a group of identical, load-balanced VMs. Imagine you're running a website that enables scientists to upload astronomy images that need to be processed. If you duplicated the VM, you'd normally need to configure an additional service to route requests between multiple instances of the website. Virtual machine scale sets could do that work for you.
 
-Scale sets allow you to centrally manage, configure, and update a large number of VMs in minutes to provide highly available applications. The number of VM instances can automatically increase or decrease in response to demand or a defined schedule. With Virtual Machine Scale Sets, you can build large-scale services for areas such as compute, big data, and container workloads.
+Scale sets allow you to centrally manage, configure, and update a large number of VMs in minutes to provide highly available applications. The number of VM instances can automatically increase or decrease in response to demand or a defined schedule. With virtual machine scale sets, you can build large-scale services for areas such as compute, big data, and container workloads.
 
 ### What is Azure Batch?
 
@@ -67,11 +64,11 @@ Azure Batch enables large-scale parallel and high-performance computing (HPC) ba
 
 When you're ready to run a job, Batch does the following:
 
-- Starts a pool of compute VMs for you
-- Installs applications and staging data
-- Runs jobs with as many tasks as you have
-- Identifies failures
-- Requeues work
-- Scales down the pool as work completes
+- Starts a pool of compute VMs for you.
+- Installs applications and staging data.
+- Runs jobs with as many tasks as you have.
+- Identifies failures.
+- Requeues work.
+- Scales down the pool as work completes.
 
-There may be situations in which you need raw computing power or supercomputer level compute power. Azure provides these capabilities.
+There might be situations in which you need raw computing power or supercomputer-level compute power. Azure provides these capabilities.
