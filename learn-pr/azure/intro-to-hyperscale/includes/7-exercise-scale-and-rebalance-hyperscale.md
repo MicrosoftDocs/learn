@@ -29,7 +29,7 @@ To take advantage of newly added nodes, we must rebalance distributed table shar
 7. Connect to your Hyperscale instance with the following command, using your password:
 
 ```psql
-   psql "host=$SERVERNAME-c.postgres.database.azure.com port=5432 dbname=citus user=citus sslmode=require"
+psql "host=$SERVERNAME-c.postgres.database.azure.com port=5432 dbname=citus user=citus sslmode=require"
 ```
 
 > [!NOTE]

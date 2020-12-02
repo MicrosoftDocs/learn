@@ -19,6 +19,8 @@ After a few seconds, a black Cloud Shell should appear
 SERVERNAME={SERVER-NAME}
 ```
 
+:::image type="content" source="../media/5-server-name.png" alt-text="Configure Hyperscale form.":::
+
 Let's now use the psql command-line utility to connect to the Hyperscale server group.
 
 5. Select the Copy button on the code block to copy the code, and paste it into the cloud shell.
@@ -50,7 +52,8 @@ CREATE TABLE payment_users
     user_id bigint,
     url text,
     login text,
-    avatar_url text
+    avatar_url text,
+    primary key(user_id)
 );
 
 CREATE TABLE payment_events
@@ -60,29 +63,10 @@ CREATE TABLE payment_events
     user_id bigint,
     merchant_id bigint,
     event_details jsonb,
-    created_at timestamp
+    created_at timestamp,
+    primary key(event_id, user_id)
 );
 ```
-```SQL
-CREATE TABLE payment_users
-(
-    user_id bigint PRIMARY KEY,
-    url text,
-    login text,
-    avatar_url text
-);
-
-CREATE TABLE payment_events
-(
-    event_id bigint,
-    event_type text,
-    user_id bigint references payment_users(user_id),
-    merchant_id bigint,
-    event_details jsonb,
-    created_at timestamp
-);
-```
-
 
 The tables are on the coordinator node. To distribute the tables to the worker nodes, we have to run a `create_distributed_table` query with what `table` to distribute, and what `key` to shard it on. The syntax looks like `create_distributed_table('table', 'key')`
 
@@ -146,14 +130,13 @@ ORDER BY hour;
 5. And now, let's take a look for high activity and see if we can find anything interesting.
 
 ```sql
- SET citus.enable_repartition_joins TO ON;
- SELECT users.login, count(*) as purchases
- FROM payment_events events
- JOIN payment_users users
- ON events.user_id = users.user_id
- WHERE events.event_type = 'SendFunds'
- GROUP BY users.login
- ORDER BY purchases DESC LIMIT 20;
+SELECT users.login, count(*) as purchases
+FROM payment_events events
+JOIN payment_users users
+ON events.user_id = users.user_id
+WHERE events.event_type = 'SendFunds'
+GROUP BY users.login
+ORDER BY purchases DESC LIMIT 20;
 ```
 
 We can see our most active user is `LombiqBot`, with 2232 transactions within the four hour window. Interesting.
