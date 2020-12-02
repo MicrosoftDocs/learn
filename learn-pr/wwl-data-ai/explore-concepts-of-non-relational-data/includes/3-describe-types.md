@@ -116,7 +116,7 @@ Other formats you might see include *Avro*, *ORC*, and *Parquet*:
 
 Unstructured data is data that doesn't naturally contain fields. Examples include video, audio, and other media streams. Each item is an amorphous blob of binary data. You can't search for specific elements in this data. 
 
-You might choose to store data such as this in storage that is specifically designed for the purpose. In Azure, you would probably store video and audio data as block blobs in an Azure Storage account. (The term *blob* stands for Binary Large OBject*). A block blob only supports basic read and write operations.
+You might choose to store data such as this in storage that is specifically designed for the purpose. In Azure, you would probably store video and audio data as block blobs in an Azure Storage account. (The term *blob* stands for Binary Large Object*). A block blob only supports basic read and write operations.
 
 You could also consider files as a form of unstructured data, although in some cases a file might include metadata that indicates what type of file it is (photograph, Word document, Excel spreadsheet, and so on), owner, and other elements that could be stored as fields. However, the main content of the file is unstructured.
 
