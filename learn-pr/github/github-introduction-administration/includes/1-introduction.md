@@ -4,16 +4,15 @@ Suppose you've been asked by your CIO for an adoption plan so that the entire co
 
 In this module, you will learn about the purpose and the administrative tasks at each hierarchical level.  You'll discover the various ways that administrators can configure authentication so that users can access GitHub via web browser and git client.  You'll learn about hierarchical permission levels and repository permissions, and what these permissions allow you to do in GitHub.
 
-By the end of this module, you will be able to describe GitHub's administrative tasks, hierarchical levels, permissions, and more.
+By the end of this module, you will be able to describe GitHub's administrative tasks, hierarchical levels, and permissions.
 
 ## Learning objectives
 
 By the end of this module, you will be able to:
 
-- Describe how GitHub administrators can utilize various technologies to enable a secure authentication strategy allowing them to centrally manage repository access.
-- Describe how GitHub administrators can organize members into organizations and teams to control access and privacy.
-- Describe how GitHub administrators can centrally manage teams and members using existing directory information services.
-- Describe how GitHub can itself be used as an identity provider for authentication and authorization.
+- Summarize the organizational structures and permission levels that GitHub administrators can use to organize members in order to control access and security.
+- Identify the various technologies that enable a secure authentication strategy allowing administrators to centrally manage repository access.
+- Describe the technologies required to centrally manage teams and members using existing directory information services and how GitHub can itself be used as an identity provider for authentication and authorization.
 
 ## Prerequisites
 

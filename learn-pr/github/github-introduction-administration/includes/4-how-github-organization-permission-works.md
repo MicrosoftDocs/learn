@@ -31,11 +31,13 @@ There's one permission level at the team level: the team maintainer permission. 
 - Promote team members to also have the team maintainer permission
 - Remove the team's access to repositories
 - Manage code review assignment for the team
-- Manage schedule reminders for pull requests
+- Manage scheduled reminders for pull requests
 
 ### Enterprise permission levels
 
-There are three permission levels at the Organization level:
+Recall from earlier that enterprise accounts are collections of organizations.  By extension, each individual user account who is a member of an organization is also a member of the enterprise, and various settings related to authentication can be controlled from this higher level.
+
+There are three permission levels at the enterprise level:
 
 - Owner
 - Member

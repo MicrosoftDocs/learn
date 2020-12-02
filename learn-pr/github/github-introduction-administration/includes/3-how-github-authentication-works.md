@@ -20,7 +20,7 @@ Enterprise owners can enforce certain security policies for all organizations ow
 
 ### Authenticate using single sign-on (SSO)
 
-You can access an organization that uses Security Assertions Markup Language (SAML) single sign-on (SSO) by authenticating through an identity provider (IdP).To authenticate with the API or Git on the command line when an organization enforces SAML SSO, you must authorize your personal access token or SSH key.
+You can access an organization that uses Security Assertions Markup Language (SAML) single sign-on (SSO) by authenticating through an identity provider (IdP). To authenticate with the API or Git on the command line when an organization enforces SAML SSO, you must authorize your personal access token or SSH key.
 
 SAML single sign-on is available with GitHub Enterprise Cloud. This type of authentication gives organization owners and enterprise owners on GitHub a way to control and secure access to organization resources like repositories, issues, and pull requests. Organization owners can invite GitHub users to join the organization that uses SAML SSO, which allows those users to contribute to the organization and retain their existing identity and contributions on GitHub.
 
