@@ -16,41 +16,41 @@ quiz:
   questions:
     - content: To use the help system to find out more about a command, which command should you run?
       choices:
-        - content: `{your command} --help`
+        - content: "`{your command} --help`"
           explanation: Incorrect.
           isCorrect: false
-        - content: `Get-Help {your command}`
+        - content: "`Get-Help {your command}`"
           explanation: Incorrect.
           isCorrect: false
-        - content: `help {your command}`
+        - content: "`help {your command}`"
           explanation: Correct. By using `help`, you pipe `Get-Help` into a function so that you can see the help page. You can see it row by row and line by line if you want.
           isCorrect: true
-        - content: `man {your command}`
+        - content: "`man {your command}`"
           explanation: Incorrect.
           isCorrect: false
     - content: Which statement is the best choice to _filter left_?
       choices:
-        - content: `Get-Process | Select-Object Name | Where-Object Name -eq name-of-process`
+        - content: "`Get-Process | Select-Object Name | Where-Object Name -eq name-of-process`"
           isCorrect: false
-          explanation: In this statement, the filtering happens last (that is, on the _right_ side of the statement). Filtering last is inefficient and slow, especially if the command is sent over the network and the data store is big.
-        - content: `Get-Process | Where-Object Name -eq name-of-process | Select-Object name-of-process`
-          explanation: Close, but not quite right. In this statement, filtering happens early (that is, on the right side of the statement). But the statement would be faster if it used the built-in filter.
+          explanation: In this statement, the filtering happens last (that is, on the _right_ side of the statement). Filtering last is inefficient and slow, especially if the command is sent over the network and the data store is large.
+        - content: "`Get-Process | Where-Object Name -eq name-of-process | Select-Object name-of-process`"
+          explanation: Almost. In this statement, filtering happens early (that is, on the right side of the statement). But the statement would be faster if it used the built-in filter.
           isCorrect: false
-        - content: `Get-Process -Name name-of-process | Select-Object Name`
+        - content: "`Get-Process -Name name-of-process | Select-Object Name`"
           isCorrect: true
-          explanation: Correct. This is the best solution. The statement filters early and uses a built-in filter.
+          explanation: Correct. This solution is the best choice. The statement filters early and uses a built-in filter.
     - content: Which statement will most efficiently find the returned type from a command?
       choices:
-        - content: `{command} --type`
+        - content: "`{command} --type`"
           isCorrect: false
           explanation: Incorrect.
-        - content: `{command} | Get-Member`
+        - content: "`{command} | Get-Member`"
           isCorrect: true
           explanation: Correct. The cmdlet `Get-Member` lists the returned type at the top of the response. 
-        - content: `{command} | Get-Type`
+        - content: "`{command} | Get-Type`"
           isCorrect: false
           explanation: Incorrect.
-        - content: `{command} Get-Member`
+        - content: "`{command} Get-Member`"
           isCorrect: false
           explanation: Incorrect. The command needs to be piped with `Get-Member`.
 

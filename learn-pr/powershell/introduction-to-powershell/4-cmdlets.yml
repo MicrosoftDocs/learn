@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-commandlets.md)]
+  [!include[](includes/4-cmdlets.md)]
