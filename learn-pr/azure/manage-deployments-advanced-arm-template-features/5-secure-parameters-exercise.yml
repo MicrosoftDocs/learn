@@ -6,11 +6,11 @@ metadata:
   description: Read from an Azure Key Vault instance from within your ARM template at deployment time. 
   author: softchris
   ms.author: chnoring
-  ms.date: 11/04/2020
+  ms.date: 12/01/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
-durationInMinutes: 6
+durationInMinutes: 5
 azureSandbox: true
 content: |
   [!include[](includes/5-secure-parameters-exercise.md)]

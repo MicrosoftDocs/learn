@@ -6,11 +6,11 @@ metadata:
   description: Use the _condition_ construct with parameters, to define whether a resource should be deployed or not.
   author: softchris
   ms.author: chnoring
-  ms.date: 11/04/2020
+  ms.date: 12/01/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
-durationInMinutes: 6
+durationInMinutes: 5
 azureSandbox: true
 content: |
   [!include[](includes/7-conditions-exercise.md)]
