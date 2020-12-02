@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid:
+metadata:
+  title:
+  description:
+  ms.date:
+  author: trallard
+  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title:
+durationInMinutes:
+content: |
+  [!include[](includes/2-unit.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Question1"
+      choices:
+        - content: "Answer1"
+          isCorrect: false
+          explanation: "Explanation1"
+        - content: "Answer2"
+          isCorrect: false
+          explanation: "Explanation2"
+        - content: "Answer3"
+          isCorrect: false
+          explanation: "Explanation3"
+        - content: "Answer4"
+          isCorrect: true
+          explanation: "Explanation4"
+    - content: "Question2"
+      choices:
+        - content: "Answer1"
+          isCorrect: false
+          explanation: "Explanation1"
+        - content: "Answer2"
+          isCorrect: false
+          explanation: "Explanation2"
+        - content: "Answer3"
+          isCorrect: false
+          explanation: "Explanation3"
+        - content: "Answer4"
+          isCorrect: true
+          explanation: "Explanation4"
+    - content: "Question3"
+      choices:
+        - content: "Answer1"
+          isCorrect: false
+          explanation: "Explanation1"
+        - content: "Answer2"
+          isCorrect: false
+          explanation: "Explanation2"
+        - content: "Answer3"
+          isCorrect: false
+          explanation: "Explanation3"
+        - content: "Answer4"
+          isCorrect: true
+          explanation: "Explanation4"
