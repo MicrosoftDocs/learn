@@ -13,11 +13,10 @@ The container image is built from a Dockerfile. The file has a set of instructio
 
 If you look at the Dockerfile in the root of the fork you created, you see that the image starts by using another *nginx* image as its base. Instead of starting from scratch, you start with other images that have the files you need.
 
-You can build an image from a Dockerfile by using the `docker build` command. Try running it on the repository root and see how this works:
+You can build an image from a Dockerfile by using the `docker build` command.
 
-```bash
-docker build .
-```
+> [!IMPORTANT]
+> The `build` command for Docker will not work within CloudShell environment since the use of Docker inside a running container is disallowed as explained in [this doc](https://docs.microsoft.com/en-us/azure/cloud-shell/troubleshooting#bash-troubleshooting). If you want to test the `docker build .` command you'll need to clone the repository locally and run using your own Docker installation.
 
 ## Image tags
 

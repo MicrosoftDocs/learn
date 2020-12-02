@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics.introduction-to-dataframes
+title: Introduction to dataframes in spark pools in Azure Synapse Analytics
+metadata:
+  title: Introduction to dataframes in spark pools in Azure Synapse Analytics
+  description: "Introduction to dataframes in spark pools in Azure Synapse Analytics"
+  ms.date: 11/25/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-introduction-dataframes.md)]

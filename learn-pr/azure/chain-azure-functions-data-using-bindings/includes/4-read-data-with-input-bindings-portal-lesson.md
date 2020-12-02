@@ -8,11 +8,11 @@ There are multiple types of input. However, not all types support both input and
 
 - **Azure Cosmos DB** - The Azure Cosmos DB input binding uses the SQL API to retrieve one or more Azure Cosmos DB documents and passes them to the input parameter of the function. The document ID or query parameters can be determined based on the trigger that invokes the function.
 
-- **Microsoft Graph** - Microsoft Graph input bindings allow you to read files from OneDrive, read data from Excel, and get auth tokens so you can interact with any Microsoft Graph API.
-
 - **Mobile Apps** - The Mobile Apps input binding loads a record from a mobile table endpoint and passes it into your function.
 
 - **Table storage** - You can read data and work with Azure Table storage.
+
+A full listing of supported bindings is available: <a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp#supported-bindings" data-linktype="external" target="az-portal">Here<span class="docon docon-navigate-external" aria-hidden="true"></span></a>
 
 To create a binding as an input, you must define the `direction` as `in`. The parameters for each type of binding may vary.
 
@@ -29,7 +29,7 @@ A binding expression is specialized text in **function.json**, function paramete
 - New GUID
 - Current date and time
 
-Most expressions are identified by wrapping them in curly braces. However, app setting binding expressions are wrapped in percent signs rather than curly braces. For example if the blob output binding path is `{Environment}/newblob.txt` and the Environment app setting value is Development, a blob will be created in the Development container.
+Most expressions are identified by wrapping them in curly braces. However, app setting binding expressions are wrapped in percent signs rather than curly braces. For example if the blob output binding path is `%Environment%/newblob.txt` and the Environment app setting value is Development, a blob will be created in the Development container.
 
 ## Summary
 

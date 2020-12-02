@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-actions-packages.what-is-github-packages
+title: What is GitHub Packages?
+metadata:
+  title: What is GitHub Packages?
+  description: Discover the main features of GitHub Packages, and when to use it.
+  ms.date: 10/19/2020
+  author: cmaneu
+  ms.author: chmaneu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+azureSandbox: false
+content: |
+  [!include[](includes/2-what-is-github-packages.md)]

@@ -12,6 +12,7 @@ After completing this module, you'll be able to describe the benefits and usage 
 
 - Azure Cosmos DB
 - Azure SQL Database
+- Azure SQL Managed Instance
 - Azure Database for MySQL
 - Azure Database for PostgreSQL
 - Azure Synapse Analytics

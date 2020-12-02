@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.transfer-data-outside-synapse-workspace-using-sql-authentication
+title: Transfer data outside the synapse workspace using SQL authentication
+metadata:
+  title: Transfer data outside the synapse workspace using SQL authentication
+  description: "Transfer data outside the synapse workspace using SQL authentication"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-transfer-data-outside-synapse-workspace-using-sql-authentication.md)]

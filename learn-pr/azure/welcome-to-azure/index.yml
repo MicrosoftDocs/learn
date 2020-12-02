@@ -22,6 +22,7 @@ abstract: |
   > If you’ve already started this module, you can continue until it’s retired on January 31, 2021. **It’ll be hidden from navigation on November 9, 2020**, so **bookmark it** before then.
 prerequisites: None
 iconUrl: /learn/achievements/welcome-to-azure.svg
+hidden: true
 levels:
 - beginner
 roles:
