@@ -61,7 +61,7 @@ By convention, model class files are located in a *:::no-loc text="Models":::* d
 
 The *:::no-loc text="ContosoPets.UI":::* project has a model class file named *:::no-loc text="Product.cs":::* stored in the *:::no-loc text="Models":::* directory. The `Product` model class defines the data properties for a product. All PageModels in the project that center on CRUD operations for products use this single `Product` model.
 
-### DataAnnotations
+### Data annotations
 
 Models in ASP.NET Core often make use of data annotations to constrain or customize model properties. Data annotations are attributes used to specify behavior that you want to enforce on the model properties to which they're applied. For example, a range of minimum and maximum acceptable values. The *:::no-loc text="ContosoPets.UI":::* project has a model class file named *:::no-loc text="Product.cs":::* that uses data annotations to define constraints for its data properties. For example, a `Name` property is always required, and a `Price` property must have a value between the range of `0.01` and `9999.99`. Since this module often refers to the `Product` model and its data properties, it's important to understand where that model class is stored.
 
