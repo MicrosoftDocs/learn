@@ -28,14 +28,14 @@ quiz:
       isCorrect: false
       explanation: "That's incorrect. The number of servers in an Azure Stack HCI cluster must be between 2 and 16."
 
-  - content: "What is the maximum round trip latency supported for Azure Stack HCI stretched clusters?"
+  - content: "What is the maximum round-trip latency supported for Azure Stack HCI stretched clusters?"
     choices:
     - content: "1"
       isCorrect: false
-      explanation: "That's incorrect. For stretched clusters, you should have at least one 1 Gb connection between sites with at most 5 ms round trip latency."
+      explanation: "That's incorrect. For stretched clusters, you should have at least one 1-Gb connection between sites with at most 5-ms round-trip latency."
     - content: "5"
       isCorrect: true
-      explanation: "That's correct. For stretched clusters, you should have at least one 1 Gb connection between sites with at most 5 ms round trip latency."
+      explanation: "That's correct. For stretched clusters, you should have at least one 1-Gb connection between sites with at most 5-ms round-trip latency."
     - content: "250"
       isCorrect: false
-      explanation: "That's incorrect. For stretched clusters, you should have at least one 1 Gb connection between sites with at most 5 ms round trip latency."
+      explanation: "That's incorrect. For stretched clusters, you should have at least one 1-Gb connection between sites with at most 5-ms round-trip latency."
