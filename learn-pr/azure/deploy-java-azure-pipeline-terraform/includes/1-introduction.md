@@ -4,11 +4,22 @@ Imagine you're an infrastructure manager and have been asked to provision resour
 
 In this module, you'll be using Terraform to provision your resources and Maven to build and deploy your application.
 
-- IT infra team – provisions subscription, resource group, vnet, subnet, express route circuits ...
+Typically there are three steps to deliver application resources:
 
-- Business project app team – provisions apps and configures them
+1. Provision the Account – Provision Azure subscription and resource group.
 
-- Business project infra team - provisions database, cache, Azure App Service ...
+1. Provision the Application –  Build and deploy the application and configure it.
+
+1. Provision the Infrastructure - Provision database and Azure App Service.
+
+For step 1, you'll use a personal Azure account, with the following items installed:
+>  
+- An Azure Subscription
+- Local installations of Java JDK (1.8+), Maven (3.0+), and the Azure CLI (2.12+)
+>
+
+For step 2, you'll use Maven to build and deploy the application.
+For step 3, you'll use Terraform to provision the Azure infrastructure.
 
 ![Build, Deploy and Provision Pipelines.](../media/1-pipelines.png)
 
