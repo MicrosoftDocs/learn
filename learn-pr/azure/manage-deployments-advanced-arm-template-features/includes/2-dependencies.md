@@ -8,7 +8,10 @@ Here are few aspects to consider:
 
 - **Can I rely on how things work on ARM?**
 
-    Your first thought when checking whether another resource exists might be to use something like Azure PowerShell or the Azure CLI to check for a resource's existence. A more automated solution uses a an ARM feature called _incremental deployment_.
+    Your first thought when checking whether another resource exists might be to use something like Azure PowerShell or the Azure CLI to check for a resource's existence. A more automated solution uses a an ARM's built-in idempotency. The idea is that ARM if spots, a resource defined in a template, that already exist in the cloud it would not redeploy it. For this to be a valid approach you need to understand how ARM does the check.
+
+    > [!NOTE]
+    > What happens when existing resources identities match something defined in a template is that the resource manager compares the properties - if the properties match exactly, the resource is left alone. If they do not, the engine makes the changes - possibly redeploying the resource.
 
 - **Nested resources**
 
@@ -29,7 +32,7 @@ A more elegant method you can use relies on how ARM works by default. Two constr
 
     For the next part, the _dependsOn_ construct makes resources wait until the pointed out resource has finished deploying.
 
-### What's the dependsOn construct?
+### What's the dependsOn construct
 
 The _dependsOn_ construct is a key-value pair that enables you to define the deployment order between resources. Sometimes you need to ensure something exist before something else. A concrete example is a database that needs to exists before an app or that a secret resource needs to exist before a Key Vault.
 

@@ -6,7 +6,7 @@ Like application code, you shouldn't hard-code sensitive information such as pas
 
 While only authorized individuals in your organization should have access to sensitive information, your ARM templates require this information as well. Azure Key Vault is one way to help protect sensitive information.
 
-## How can Azure Key Vault help protect sensitive information?
+## How can Azure Key Vault help protect sensitive information
 
 Azure Key Vault is a cloud service that works as a secure store for secrets. Key Vault allows you to create multiple secure containers, called vaults. These vaults are backed by hardware security modules (HSMs). Vaults help reduce the chances of accidental loss of security information by centralizing the storage of application secrets. Vaults also control and log the access to anything stored in them.
 
@@ -39,43 +39,60 @@ There are several configuration steps you need to perform to set up the Key Vaul
 
 The Key Vault instance needs to be configured so that credentials can be read from it during deployment of an ARM template.
 
-To enable the Key Vault for deployment, there's a setting you can pass, either during creation of the Key Vault instance or something you can amend at a later point. The setting is a flag that if you are using PowerShell is called **-EnabledForTemplateDeployment** and in Azure CLI it's called **--enabled-for-template-deployment**. 
+To enable the Key Vault for deployment, there's a setting you can pass, either during creation of the Key Vault instance or something you can amend at a later point. In PowerShell it's a switch called   **-EnabledForTemplateDeployment**. In Azure CLI it's a parameter called **--enabled-for-template-deployment** that needs the value `true` to be passed as well.
 
 > [!NOTE]
 > Azure CLI additionally requires you to pass a boolean with the value `true`.
 
-### Ensure User has deployment permission on the resource group
+### User needs deployment permission on Key Vault and resource group
 
-The user deploying the template needs to have deployment permission on the resource group that will be used for the deployment.
-
-To grant this permission, you need to define a custom role in a JSON file where the permission `Microsoft.KeyVault/vaults/deploy/action` is specified. Thereafter you need to assign this role to the user.
-
-### User needs to have an allowed role on the Key Vault
-
-For the Key Vault that means that the user needs to have one of two roles:
+Before you attempt to deploy and read secrets from the Key Vault, you have to ensure you have a so called _deployment permission_. There are two roles that both give you this permission:
 
 - `Owner`, if you created the Key Vault you automatically have this role.
 - `Contributor`, this role you can be assigned to your user. The role grants you access to manage all the secrets. The only thing you can't do with this role is assigning roles via Azure RBAC.
 
-## Configure the deployment template  
+If you didn't create the Key Vault, the easiest approach is to give you the `Contributor` role.
 
-The deployment template file needs to be configured as well. It needs to point out the following things to be able to read a secrets value and assign it to the template:
+Another choice is to create and assign a custom role and ensure that role contains a permission looking like so:
 
-- **Identify the Key Vault**. The first step is to point to a Key Vault that you have deployment permission to.
-- **Read a specific secret**. Once you've managed to point to a specific Key Vault, you need to specify what secrets you are interested in. You point out the secret by name. During deployment, this configuration will resolve into the secrets value.
-- **Assign that to a resource**. Finally, once you've managed to read out the secret's value you need to assign it a resource's password, for example.
-
-You can set a parameter to read from a specific Key Vault and a particular secret if you have the Key Vault ID and the name of the secret. Instead of letting the value of parameter rely on a user's terminal input you can instead add the parameters in a parameter file. Below is the parameter `myPassword` being assigned a JSON object with the needed information to read a Key Vault's secret:
-
-```json
-"myPassword" : {
-  "reference": {
-    "keyVault": {
-      "id": "/subscriptions/<subscription-id>/resourceGroups/<rg-name>/providers/Microsoft.KeyVault/vaults/<vault-name>",
-      "secretName": "databaseSecret"
-    }
-  }
-}
+```bash
+Microsoft.KeyVault/vaults/deploy/action
 ```
 
-In the above JSON, you specify the full ID to the Key Vault and go on to ask for the secret `databaseSecret`. The value of this secret is then extracted and assigned to the `myPassword` parameter.
+## Configure the deployment parameters file  
+
+Instead of specifying each parameter and corresponding values as key-value pairs during deployment, you could use a parameters file.
+
+When reading a secret from a Key Vault, a parameter in this parameters file would need to be modified to specify which Key Vault and which secret in that Key Vault you are interested in. You would then update the deployment template to use said parameter.
+
+> [!NOTE]
+> The template does not have any notion of a Key Vault or its secret, its in the parameter file that the configuration takes place.
+
+The steps you would need to take to configure everything are:
+
+- **Configure Key Vault and secret for a parameter**. In the parameter file, and for a specific parameter, point to a Key Vault that you have deployment permission to. Next, specify what secret you are interested in. You point out the secret by name. During deployment, this configuration will resolve into the secrets value. Here's a parameter called `myPassword` being configured to use a specific Key Vault and using a secret called `databaseSecret`.
+
+   ```json
+   "myPassword" : {
+     "reference": {
+       "keyVault": {
+         "id": "/subscriptions/<subscription-id>/resourceGroups/<rg-name>/providers/Microsoft.KeyVault/vaults/<vault-name>",
+         "secretName": "databaseSecret"
+       }
+     }
+   }
+   ```
+
+   In the above JSON, you specify the full ID to the Key Vault and go on to ask for the secret `databaseSecret`. The value of this secret is then extracted and assigned to the `myPassword` parameter.
+
+- **Assign parameter to resource's password**
+
+   This step is not really related to the Key Vault but is about ensuring the intended resource makes use of the parameter configured to read the secret's value from the Key Vault. Below is a shortened snippet from a VM, in the template file, that shows the `adminPassword` element reading from the parameter `myPassword`. Thereby the secret's value will be read from the Key Vault at deployment time and be assigned to the element `adminPassword`.
+
+   ```json
+   {
+     "osProfile": {
+       "adminPassword": "[parameters('myPassword')]"
+     }
+   }
+   ```
