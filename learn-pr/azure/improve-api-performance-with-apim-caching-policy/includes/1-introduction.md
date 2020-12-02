@@ -2,7 +2,7 @@ Many organizations use APIs to publish data and services. Customers and partners
 
 Suppose you are a developer for a board game company. A product line produced by your company has recently become popular. The volume of requests from your retail partners to your inventory API is growing quickly: much faster than the rate that your inventory changes. You'd like your API to respond to requests rapidly without incurring load on your API.
 
-You use Azure API Management to host your API. You're considering using an API Management policy to cache compiled responses to requests. You think that this technique will be a way to optimize performance. You want to learn how to write API Management policies and how to use them to set up and control a cache. Then you want to write policy's that accelerates responses to users.
+You use Azure API Management to host your API. You're considering using an API Management policy to cache compiled responses to requests. You think that this technique will be a way to optimize performance. You want to learn how to write API Management policies and how to use them to set up and control a cache. Then you want to write policies that accelerate responses to users.
 
 ## Learning objectives
 
