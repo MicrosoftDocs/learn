@@ -10,37 +10,42 @@ We need to set up our database and connect to it from an app. In this exercise w
 
 Azure has an automatic firewall for our server - preventing all external parties from connecting to the server. In the portal, we'll create a firewall rule to allow us to connect externally.
 
-1. Go to the Azure portal. Select **All Resources** from the left-hand menu and type in the name **payment-server-demo** to search for your newly created server. Select the server name listed in the search result. The **Overview** page for your server opens and provides options for further configuration.
+1. Go to the Azure portal. Select **All Resources** from the left-hand menu and select your newly created server. The **Overview** page for your server opens and provides options for further configuration.
 
     > [!div class="nextstepaction"]
     > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    :::image type="content" source="../media/5a-firewall.png" alt-text="Azure Database for PostgreSQL - Search for server":::
 
-:::image type="content" source="../media/4-locate.png" alt-text="Azure Database for PostgreSQL - Search for server":::
+1. In the server page, select **Connection security**
 
-2. In the server page, select **Connection security**
+1. Select **Add 0.0.0.0 - 255.255.255.255**, then select **Continue**.
 
-3. Select **Add 0.0.0.0 - 255.255.255.255**, then select **Continue**.
+    :::image type="content" source="../media/5b-firewall.png" alt-text="Azure Database for PostgreSQL - Create Firewall Rule":::
 
-:::image type="content" source="../media/5b-firewall.png" alt-text="Azure Database for PostgreSQL - Create Firewall Rule":::
-
-4. Select **Save**
+1. Select **Save**
 
 ## Use psql to connect in Azure Cloud Shell
 
-Let's now use the psql command-line utility to connect to the Azure Database for PostgreSQL server.
+Let's now use the psql command-line utility to connect to the Azure Database for PostgreSQL server. To start with, we'll save the name of the database server in the Cloud Shell.
+
+Copy the code below, and replace `{server-name}` with the server name you chose in exercise 3.
+
+```bash
+SERVERNAME={server-name}
+```
 
 To run the code in this article in Azure Cloud Shell:
 
 1. Start Cloud Shell.
-2. Select the Copy button on the code block to copy the code.
+1. Select the Copy button on the code block to copy the code.
 
 ```psql
-psql --host=payment-server-demo.postgres.database.azure.com --port=5432 --username=paymentadmin@payment-server-demo.postgres.database.azure.com --dbname=postgres
+psql --host=$SERVERNAME.postgres.database.azure.com --port=5432 --username=paymentadmin@$SERVERNAME.postgres.database.azure.com --dbname=postgres
 ```
 
-3. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux, or by selecting Cmd+Shift+V on macOS.
-4. Select Enter to run the code to connect to your Azure Database for PostgreSQL database.
-5. Type in your password and select enter.
+1. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux, or by selecting Cmd+Shift+V on macOS.
+1. Select Enter to run the code to connect to your Azure Database for PostgreSQL database.
+1. Type in your password and select enter.
 
 ## Create the paymentapp database
 
@@ -60,10 +65,10 @@ CREATE DATABASE paymentapp;
 
 Now that you know how to connect to the Azure Database for PostgreSQL, we can complete some basic tasks. We'll:
 
-* create a table
-* insert some account data into it
-* view the table
-* edit one of the values
+* Create a table
+* Insert some account data into it
+* View the table
+* Edit one of the values
 
 First, create a table and load it with some account data.
 
@@ -94,7 +99,7 @@ Now that you have a table, insert some data into it.
 10. In the Cloud Shell  window, run the following query to insert some rows of data.
 
 ```sql
-INSERT INTO users (id, name, age) VALUES (1, 'John', 45); 
+INSERT INTO users (id, name, age) VALUES (1, 'John', 45);
 INSERT INTO users (id, name, age) VALUES (2, 'Lauren', 32);
 ```
 
@@ -111,7 +116,7 @@ SELECT * FROM users;
 12. You can also update the data in the table.
 
 ```sql
-UPDATE users SET age = 21 WHERE id = 1;
+UPDATE users SET age = 31 WHERE id = 2;
 ```
 
 13. You can see the updated values when you retrieve the data.

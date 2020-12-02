@@ -41,7 +41,7 @@ Let's connect to our database again, and load the CSV data in there.
 4. Run the following command to connect to the `payment-server-demo` server.
 
 ```psql
-psql --host=payment-server-demo.postgres.database.azure.com --port=5432 --username=paymentadmin@payment-server-demo.postgres.database.azure.com --dbname=postgres
+psql --host=$SERVERNAME.postgres.database.azure.com --port=5432 --username=paymentadmin@$SERVERNAME.postgres.database.azure.com --dbname=postgres
 ```
 
 Type in your password and select enter.
@@ -164,7 +164,8 @@ The data for each user will be _userID_, _userName_, and _userAge_.
 
 3. Leave the code editor open, and switch to the Azure portal.
 
-   > [!div class="nextstepaction"] > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    > [!div class="nextstepaction"]
+    > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
 4. In the Azure portal menu, select **payment-server-demo**.
 
