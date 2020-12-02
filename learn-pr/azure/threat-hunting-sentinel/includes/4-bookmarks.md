@@ -6,7 +6,8 @@ Hunting bookmarks in Azure Sentinel can help you hunt for threats by preserving 
 
 You can revisit your bookmarked data at any time on the Bookmarks tab of the Hunting pane. You can use filtering and search options to quickly find specific data for your current investigation. Alternatively, you can review your bookmarked data directly in the HuntingBookmark table in your Log Analytics workspace.
 
-Bookmarked events contain standard event information, but can be used in different ways throughout the Azure Sentinel interface.
+>[!NOTE]
+>Bookmarked events contain standard event information, but can be used in different ways throughout the Azure Sentinel interface.
 
 ## Create or add to incidents using bookmarks
 
@@ -29,3 +30,5 @@ You can select each entity on the graph to observe more information about the en
 ### Review bookmark details
 
 You can select the bookmark item on the graph to observe important bookmark metadata related to the bookmark's security and environment context.
+
+Choose the best response for each of the questions below. Then select “Check your answers.”

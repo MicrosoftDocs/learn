@@ -15,14 +15,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "How do bookmarks aid in the threat hunting process?"
+  - content: "Which of the following cannot be used in a livestream query?"
     choices:
-    - content: "T-SQL"
-      isCorrect: false
-      explanation: "Azure Sentinel hunting queries are built using Azure Data Explorer syntax"
-    - content: "Azure Data Explorer"
+    - content: "Time parameters"
       isCorrect: true
-      explanation: "Azure Sentinel hunting queries are built using Azure Data Explorer syntax"
-    - content: "JavaScript Object Notation (JSON)"
+      explanation: "Time parameters cannot be used because livestream queries run continuously."
+    - content: "Alert data parameters"
       isCorrect: false
-      explanation: "Azure Sentinel hunting queries are built using Azure Data Explorer syntax"
+      explanation: "Alert data can be used in livestream queries"
+    - content: "Event entities"
+      isCorrect: false
+      explanation: "Event entity parameters can be used in livestream queries."

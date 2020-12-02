@@ -12,6 +12,9 @@ Livestream queries refresh every 30 seconds and generate Azure notifications of 
 
 To create a livestream from the **Hunting** page in Azure Sentinel, select the **Livestream** tab and then select **New livestream** from the toolbar.  
 
+>[!NOTE]
+>Livestream queries run continuously against your live environment, so you cannot use time parameters in a livestream query.
+
 :::image type="content" source="../media/5-new-livestream.png" alt-text="The Livestream creation page in Azure Sentinel" :::
 
 ## View a livestream
@@ -35,3 +38,5 @@ You could use a livestream to track baseline activities for Azure resource delet
 ## Use a livestream query to create an analytics rule
 
 If the query returns significant results, you could select **Create analytics rule** from the command bar to create an analytics rule based on the query. After refining the query to identify the specific resources, this rule could generate alerts or incidents when the resources are deleted.
+
+Choose the best response for each of the questions below. Then select “Check your answers.”

@@ -26,14 +26,3 @@ quiz:
     - content: "JavaScript Object Notation (JSON)"
       isCorrect: false
       explanation: "Azure Sentinel hunting queries are built using Azure Data Explorer syntax"
-  - content: "What methods are available to refine your threat hunting process in Azure Sentinel?"
-    choices:
-    - content: "Bookmarks"
-      isCorrect: false
-      explanation: "Bookmarks can be used to refine your threat hunting process in Azure Sentinel."
-    - content: "Livestream"
-      isCorrect: false
-      explanation: "Livestream can be used to refine your threat hunting process in Azure Sentinel."
-    - content: "Playbooks"
-      isCorrect: true
-      explanation: "Azure Sentinel Playbooks are used for automated response to threats."

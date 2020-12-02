@@ -1,4 +1,4 @@
-Azure Sentinel contains powerful query tools that can help you, as part of the SecOps team, find and isolate security threats and unwanted activity within Contoso's environment.
+Azure Sentinel contains powerful query tools that can help you, as part of the Security operations center team, find and isolate security threats and unwanted activity within Contoso's environment.
 
 ## Hunt using built-in queries
 
@@ -8,7 +8,10 @@ You can use the built-in queries in Azure Sentinel's Hunting page to guide your 
 
 :::image type="content" source="../media/3-hunting page.png" alt-text="The Hunting page in Azure Sentinel" :::
 
-The hunting page provides a list all hunting queries. You can filter and sort queries by query name, provider, data source, results, and tactics. You can save queries by selecting the Favorites star icon for the query in the list. When a query is selected as a favorite, it runs automatically each time you open the hunting page.
+The hunting page provides a list all hunting queries. You can filter and sort queries by query name, provider, data source, results, and tactics. You can save queries by selecting the Favorites star icon for the query in the list.
+
+>[!TIP]
+>When a query is selected as a favorite, it runs automatically each time you open the hunting page.
 
 ### Manage hunting queries
 
@@ -16,7 +19,10 @@ When you select a query from the list, the query details display in a new pane. 
 
 ### Hunt for threats using the MITRE ATT&CK framework
 
-Azure Sentinel uses the MITRE ATT&CK timeline to categorize and order queries by tactics. ATT&CK is a knowledge base of tactics and techniques used and observed in the global threat landscape. You can use MITRE ATT&CK to develop and inform your threat hunting models and methods in Azure Sentinel. When threat hunting in Azure Sentinel, you can use the ATT&CK framework to categorize and run queries using the MITRE ATT&CK tactics timeline. You can select individual tactics from the timeline on the Hunting page.
+Azure Sentinel uses the MITRE ATT&CK framework to categorize and order queries by tactics. ATT&CK is a knowledge base of tactics and techniques used and observed in the global threat landscape. You can use MITRE ATT&CK to develop and inform your threat hunting models and methods in Azure Sentinel. When threat hunting in Azure Sentinel, you can use the ATT&CK framework to categorize and run queries using the MITRE ATT&CK tactics timeline.
+
+>[!NOTE]
+>You can select individual MITRE ATT&CK tactics from the timeline on the Hunting page.
 
 :::image type="content" source="../media/3-att&ck-timeline.png" alt-text="The MITRE ATT&CK timeline on the Hunting page in Azure Sentinel" :::
 
@@ -37,18 +43,20 @@ Selecting any tactic will filter the available queries by the selected tactic. T
 
 ## Create custom queries to refine threat hunting
 
-All Azure Sentinel hunting queries use the Azure Data Explorer syntax used in Log Analytics. You can modify a query in the details pane and run the new query or save it as a new query that can be reused within your Azure Sentinel workspace.
+All Azure Sentinel hunting queries use Kusto Query Language (KQL) syntax used in Log Analytics. You can modify a query in the details pane and run the new query or save it as a new query that can be reused within your Azure Sentinel workspace.
 
-You can also create your own custom queries using Azure Data Explorer code to hunt for threats.
+You can also create your own custom queries using KQL code to hunt for threats.
 
 :::image type="content" source="../media/3-create-custom-query-page.png" alt-text="The Create custom query page in Azure Sentinel" :::
 
 Custom queries enable you define the following:
 
-- **Name**. The custom query.
-- **Description**. A description of your query's functionality.
-- **Entity mapping**. You can map entity types to columns from your query result to populate your query results with more actionable information. Entities can also be mapped using code in your Azure Data Explorer query.
-- **Tactics**. You can specify the tactics that your query is designed to expose.
+| Query parameter | Description |
+|----------------------------------|------------------------------------------------------|
+| Name | The name of the custom query |
+| Description | A description of your query's functionality |
+| Entity mapping | You can map entity types to columns from your query result to populate your query results with more actionable information. Entities can also be mapped using code in your KQL query. |
+| Tactics | You can specify the tactics that your query is designed to expose |
 
 Custom queries are listed alongside built-in queries for management.
 
@@ -57,3 +65,5 @@ Custom queries are listed alongside built-in queries for management.
 The Azure Sentinel repository contains out of the box detections, exploration queries, hunting queries, workbooks, playbooks and much more to help you secure your environment and hunt for threats. Microsoft and the Azure Sentinel community contribute to this repo.
 
 The repo contains folders with contributed content for several areas of Azure Sentinel functionality, including hunting queries. You can use the code from these queries to create custom queries in your Azure Sentinel workspace.
+
+Choose the best response for each of the questions below. Then select “Check your answers.”
