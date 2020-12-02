@@ -6,7 +6,7 @@ However, consider a case where multiple analyses of the data result in reported 
 - An aggregated salary report that tells us the average salaries in New York, San Francisco, and Seattle
 - A worker location report that tells us that 10% of the study participants (in other words, a single person) is based in Seattle.
 
-![Two reports showing average salary by city, and worker counts by city](../media/09-revealing-analysis.png)
+![Two reports showing average salary by city, and worker counts by city](../media/09-reveal-analysis.png)
 
 From these two reports, we can easily determine the specific salary of the Seattle-based participant. Anyone reviewing both studies who happens to know a person from Seattle that participated, now knows that person's salary.
 
