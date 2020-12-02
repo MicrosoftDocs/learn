@@ -83,7 +83,7 @@ SSIS is an on-premises utility. However, Azure Data factory allows you to run yo
 The SSIS Feature Pack for Azure is an extension that provides  components that connect to Azure services, transfer data between Azure and on-premises data sources, and process data stored in Azure. The components in the feature pack support transfer to or from Azure storage, Azure Data Lake, and Azure HDInsight. Using these components, you can perform large-scale processing of ingested data.
 
 > [!div class="mx-imgBorder"]
-> ![Image showing SQL Database using PolyBase to access external data](../media/2-azure-connector-bigdata-scenario.png)
+> ![Showing SQL Database using PolyBase to access external data](../media/2-azure-connector-bigdata-scenario.png)
 
 ## Ingest data using Azure Databricks
 
