@@ -38,7 +38,7 @@ When you set up SSH, you'll generate an SSH key and add it to the ssh-agent and 
 
 SSH Keys can even be used with a repository owned by an organization that uses SAML single sign-on, however, you'll need to authorize it first.  Furthermore, if you're a member of an organization that provides SSH certificates, you can use your certificate to access that organization's repositories without adding the certificate to your GitHub account.
 
-## Controlling membership and authentication as a GitHub Administrator
+## Controlling membership and authentication as a GitHub administrator
 
 GitHub administrators have options when it comes to setting up and enforcing security.
 
