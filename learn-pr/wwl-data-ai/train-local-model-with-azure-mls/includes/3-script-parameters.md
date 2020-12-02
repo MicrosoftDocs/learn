@@ -2,7 +2,7 @@ You can increase the flexibility of script-based experiments by using arguments 
 
 ## Working with script arguments
 
-To use parameters in a script, you must use a library such as **argparse** to read the arguments passed to the script and assign them to variables. For example, the following script reads an argument named **--reg-rate**, which is used to set the regularization rate hyperparameter for the logistic regression algorithm used to train a model.
+To use parameters in a script, you must use a library such as `argparse` to read the arguments passed to the script and assign them to variables. For example, the following script reads an argument named `--reg-rate`, which is used to set the regularization rate hyperparameter for the logistic regression algorithm used to train a model.
 
 ```Python
 from azureml.core import Run
