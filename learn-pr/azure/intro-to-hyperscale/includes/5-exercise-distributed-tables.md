@@ -130,6 +130,7 @@ ORDER BY hour;
 5. And now, let's take a look for high activity and see if we can find anything interesting.
 
 ```sql
+SET citus.enable_repartition_joins TO ON;
 SELECT users.login, count(*) as purchases
 FROM payment_events events
 JOIN payment_users users
