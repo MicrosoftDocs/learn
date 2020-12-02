@@ -3,7 +3,7 @@ uid: learn.create-razor-pages-aspnet-core.5-new-razor-page-create-form
 metadata:
   title: Create the Razor page for a create product form
   description: Review the basic elements of a Razor Page and create a Razor Page form.
-  ms.date: 07/31/2019
+  ms.date: 12/02/2020
   author: wadepickett
   ms.author: wpickett
   ms.topic: interactive-tutorial

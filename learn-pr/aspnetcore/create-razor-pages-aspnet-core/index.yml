@@ -3,7 +3,7 @@ uid: learn.create-razor-pages-aspnet-core
 metadata:
   title: Create a web UI with ASP.NET Core
   description: "In this module, you'll learn how to create webpages using Razor with ASP.NET Core."
-  ms.date: 07/31/2019
+  ms.date: 12/02/2020
   author: wadepickett
   ms.author: wpickett
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
   - Add a reference to a Data Transfer Object (DTO).
   - Consume a RESTful service from your PageModel.
   - Walk through the life cycle of an example HTTP request.
-  - Deploy & Test.
+  - Deploy and test.
 prerequisites: |
   - Experience writing C# at the beginner level
   - Ability to write HTML at an intermediate level

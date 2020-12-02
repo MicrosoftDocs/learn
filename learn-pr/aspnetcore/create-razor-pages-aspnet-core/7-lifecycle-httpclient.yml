@@ -3,7 +3,7 @@ uid: learn.create-razor-pages-aspnet-core.7-lifecycle-httpclient
 metadata:
   title: The life cycle of the HTTP request logic 
   description: Walk through the life cycle of the HTTP request logic using a typed HTTPClient service architecture.
-  ms.date: 07/31/2019
+  ms.date: 12/02/2020
   author: wadepickett
   ms.author: wpickett
   ms.topic: interactive-tutorial
