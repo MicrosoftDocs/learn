@@ -33,3 +33,5 @@ An entity refers to a network or user resource involved with an event. You can u
 - FileHash
 
 For instance, entities would help you identify all of the alerts associated with a specific user at Contoso, the user's host machine, and other hosts the user has connected to. You can determine which IP addresses are associated with the user in question, exposing which events and alerts could be part of the same attack.
+
+Choose the best response for each of the questions below. Then select “Check your answers.”

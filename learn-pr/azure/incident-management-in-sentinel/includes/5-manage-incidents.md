@@ -63,3 +63,5 @@ You can select each entity on the graph to observe more information about the en
 #### Review incident details
 
 You can select the incident item on the graph to observe important incident metadata related to the incident's security and environment context.
+
+Choose the best response for each of the questions below. Then select “Check your answers.”

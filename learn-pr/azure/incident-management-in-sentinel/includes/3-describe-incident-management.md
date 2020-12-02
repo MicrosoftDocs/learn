@@ -21,3 +21,5 @@ Incident management in Azure Sentinel begins on the overview page, where you can
 :::image type="content" source="../media/3-sentinel-overview.png" alt-text="A screen capture of the Azure Sentinel overview page" border="false":::
 
 The overview page contains a list of most recent incidents along with other important Azure Sentinel information. This page enables you to understand the general security situation before investigating incidents.
+
+Choose the best response for each of the questions below. Then select “Check your answers.”
