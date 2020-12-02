@@ -47,3 +47,4 @@ quiz:
         - content: The `index()` function is what you need. 
           isCorrect:  false
         - content: There's a `currentIndex()` function that returns the current index value.
+          isCorrect: false
