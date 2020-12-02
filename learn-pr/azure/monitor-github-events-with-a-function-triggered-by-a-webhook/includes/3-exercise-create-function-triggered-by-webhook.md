@@ -41,7 +41,7 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
 
 1. In the top left-hand pane of the portal, select **All resources**, and then select the function app you just created.
 
-1. On the function app page, find **Function** in the options below **Search**, and click on it.  Select the **+ Add** button at the top.
+1. On the function app page, find **Function** in the left side menu options below **Search**, and click on it.  Select the **+ Add** button at the top.
 
 1. Select **HTTP triggers** in the left-hand pane.
 
