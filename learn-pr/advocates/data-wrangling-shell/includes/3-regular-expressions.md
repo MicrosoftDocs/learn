@@ -1,20 +1,20 @@
-In this unit you will be introduced to regular expressions. Regular expressions are handy to perform text pattern matching and are equally used by developers and data scientists.
+In this unit, you'll be introduced to regular expressions. Regular expressions are handy to do text pattern matching and are equally used by developers and data scientists.
 
 # Introduction to regular expressions
 
-Regular expressions are massively helpful and chances are you have encountered them at some point. This esoteric, miniature language can help with complex pattern matching and might look a bit intimidating at first. However, regular expressions are very powerful and can be found in most text editors and languages and tools such as Python, SQL, Go and Scala among many others.
+Regular expressions are massively helpful and chances are, you've come across them at some point. This esoteric, miniature language can help with complex pattern matching and might look a bit intimidating at first. However, regular expressions can be found in most text editors and languages and tools such as Python, SQL, Go, and Scala among many others. So they're definitely worth learning.
 
-A useful online tool to have in your bookmarks is [Regular Expressions 101](https://regex101.com/) which allows you to test a regex against test inputs.
+A useful online tool to have in your bookmarks is [Regular Expressions 101](https://regex101.com/), which allows you to test a regex against test inputs.
 
 ## Literals and special characters
 
 In brief, regex is an easy way to define a pattern of characters and is mostly used in pattern identification, text mining, or input validation.
-The pattern specified can be very broad or very specific and is **strictly** read left-to-right. It's input is a text string.
+The pattern specified can be broad or specific and is **strictly** read left-to-right. Its input is a text string.
 
-Most characters (alphabetic and numeric) do not have a special functionality and literally matches that character.
+Most characters (alphabetic and numeric) don't have a special functionality and literally match that character.
 
 
-Here is a very handy regex cheatsheet for you:
+Here's a handy regex cheatsheet for you:
 
 ```
 ^        Matches the beginning of a line

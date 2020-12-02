@@ -1,8 +1,8 @@
-# Perform basic files inspection in the Unix shell
+# Doing basic files inspection in the Unix shell
 
-Have you ever wanted to take data from one format into another? I am sure you have, or will have to do it in the future. This process is called data wrangling. And it's a common task faced by developers. But before we go ahead and learn how to wrangle data, we need some data files to work with.
+Have you ever wanted to take data from one format into another? I'm sure you have, or will have to do it in the future. This process is called data wrangling. And it's a common task faced by developers. But before we go ahead and learn how to wrangle data, we need some data files to work with.
 
-As a developer, you will often need to extract information from logs. In this module, we will use NASA logs and the command line. To get started you will need to download the datasets to your sandbox environment:
+As a developer, you'll often need to extract information from logs. In this module, we'll use NASA logs and the command line. To get started, you'll need to download the datasets to your sandbox environment:
 
 1. Make a directory called `data` and download the data set:
 
@@ -26,12 +26,12 @@ The first file `NASA-Software-API.txt` is an open dataset listing out all softwa
 
 ## Peeking into your files' contents
 
-Before jumping into making transformations to your data, it is useful to perform some basic file inspection to get an idea of how the raw data looks like.
+Before jumping into wrangling your data, it's useful to do some basic file inspection. This will help you get an idea of how the raw data looks like.
 ### `Head` and `tail` commands
 
 The `head` and `tail` commands are used to examine the top (head) or bottom (tail) parts of a file. By default both commands will display 10 rows of content. If you want to display more or less rows, you can use the option flag `-n` to specify the number of rows to be printed to `stdout`.
 
-We will use the `tail` and `head` commands to display the last and first 5 rows of the `NASA-software-API.txt` file, respectively:
+we'll use the `tail` and `head` commands to display the last and first five rows of the `NASA-software-API.txt` file, respectively:
 
 1. Type the command `tail` with the `-n` flag:
     ```bash
@@ -72,7 +72,7 @@ Let's use `nl` with the flag `-s` to use `=` as a delimiter:
 nl -s = NASA-software-API.txt
 ```
 
-The `nl` filter is quite versatile and has flags that allow you to change the increment value (`-i`), change the numbering format (`ln, rn, rz`) or the starting number (`-v`)
+The `nl` filter has flags that allow you to change the increment value (`-i`), change the numbering format (`ln, rn, rz`) or the starting number (`-v`)
 
 ### `wc` command 
 
@@ -90,7 +90,7 @@ Your output should look like this:
 703    8917   81115 NASA-software-API.txt
 ```
 
- This indicates that the file has 703 lines, 8917 and 81115 characters. Let's check the output from the previous command `nl`. The last printed line is:
+You can see from the output that the file has 703 lines, 8917 and 81115 characters. Let's check the output from the previous command `nl`. The last printed line is:
 
  ```output
  700=GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
@@ -98,7 +98,7 @@ Your output should look like this:
 
  Did you notice that the index of this line is 700 instead of 703? What is happening here?
 
- This index mismatch happens as by default, the command `nl` does not number empty lines. Let's run the command `nl` with the option flag `-b a` to count all the lines, including the empty ones:
+ This index mismatch happens as by default, the command `nl` doesn't number empty lines. Let's run the command `nl` with the option flag `-b a` to count all the lines, including the empty ones:
 
  ```bash
  nl -b a NASA-software-API.txt
