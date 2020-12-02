@@ -49,12 +49,12 @@ quiz:
       explanation: "Following least-privilege best practices, you grant only the access the user needs to do their job. In this case, you should set the scope to the resource group."
   - content: "Suppose an administrator needs to generate a report of the role assignments for the last week. Where in the Azure portal would they generate that report?"
     choices:
-    - content: "Search for Activity log and filter on the **Create role assignment (roleAssignments)** operation."
+    - content: "Search for **Activity log** and filter on the **Create role assignment (roleAssignments)** operation."
       isCorrect: true
       explanation: "In the Activity log, filter on the **Operation name** field to find role assignments."
     - content: "At the appropriate scope, go to **Access control (IAM)** > **Download role assignments**."
       isCorrect: false
       explanation: "Downloading role assignments gives you a file with a list of the current role assignments."
-    - content: "At the appropriate scope, go to Access control (IAM) > Role assignments."
+    - content: "At the appropriate scope, go to **Access control (IAM)** > **Role assignments**."
       isCorrect: false
       explanation: "The **Role assignments** page lists the current role assignments."    
