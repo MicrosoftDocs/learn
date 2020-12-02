@@ -17,17 +17,17 @@ This pattern relies on the twin updates, rather than forwarding telemetry from a
 
 To proceed, please choose one of the following options:
 
-- If you have been following the "Developing with Azure Digital Twins" Learning Path modules in sequence, and have successfully completed all exercises in "Module 3: Ingest Data into Azure Digital Twins," and retained the solution resources in your Azure Subscription, please skip to [Create a route and filter to twin update notifications](/learn/modules/developing-with-azure-digital-twins/route-output-from-azure-digital-twins-to-downstream-services/4-exercise-create-a-route-and-filter-to-twin-update-notifications).
+- If you have been following the "Developing with Azure Digital Twins" Learning Path modules in sequence, and have successfully completed all exercises in [Module 3: Ingest Data into Azure Digital Twins](https://review.docs.microsoft.com/en-us/learn/modules/ingest-data-into-azure-digital-twins/1-introduction?branch=pr-en-us-13242), and retained the solution resources in your Azure Subscription, please skip to [Create a route and filter to twin update notifications](/learn/modules/developing-with-azure-digital-twins/route-output-from-azure-digital-twins-to-downstream-services/4-exercise-create-a-route-and-filter-to-twin-update-notifications).
 
 - If you haven't completed the previous modules and would still like to proceed with the exercises in this module, please continue with the following steps.
 
 ## Deploy a PowerShell script
 
-This is required to re-provision the resources created in "Module 3: Ingest Data into Azure Digital Twins."
+This is required to re-provision the resources created in [Module 3: Ingest Data into Azure Digital Twins](https://review.docs.microsoft.com/en-us/learn/modules/ingest-data-into-azure-digital-twins/1-introduction?branch=pr-en-us-13242).
 
 1. Create a directory and clone the repo. Replace *username* with a valid directory:
 
-    ```powershell-interactive
+    ```powershell
     mkdir c:\users\<username>\repos
     cd c:\users\<username>\repos
     git clone https://github.com/Teodelas/digital-twins-samples
@@ -62,7 +62,7 @@ This is required to re-provision the resources created in "Module 3: Ingest Data
 
 1. In PowerShell, navigate to the SimulatedClient folder in the cloned repo and run the simulated client:
 
-    ```powershell-interactive
+    ```powershell
     cd C:\Users\<username>\repos\digital-twins-samples\handsonlab\SimulatedClient
     npm install
     node ./Sensor.js
@@ -74,7 +74,7 @@ This is required to re-provision the resources created in "Module 3: Ingest Data
 
 1. Validate that Azure Digital Twin is receiving data by looking at the values being updated in the Twin GrindingSensor by running the following command:
 
-    ```powershell-interactive
+    ```powershell
     az dt twin show -n $dtname --twin-id GrindingStep
     ```
 

@@ -16,13 +16,13 @@ This function will convert those twin update events from their original form as 
 
 1. Create an Azure Function by running the following command in PowerShell:
 
-    ```powershell-interactive
+    ```powershell
     az functionapp create --resource-group $rgname --consumption-plan-location $location --runtime dotnet --functions-version 3 --name $twinupdatefunctionname --storage-account  $functionstorage
     ```
 
 1. Add application configuration that stores the connection strings needed by the Azure Function:
 
-    ```powershell-interactive
+    ```powershell
     $adtehconnectionstring=$(az eventhubs eventhub authorization-rule keys list --resource-group $rgname --namespace-name $ehnamespace --eventhub-name twins-event-hub --name EHPolicy --query primaryConnectionString -o tsv)
     az functionapp config appsettings set --settings "EventHubAppSetting-Twins=$adtehconnectionstring" -g $rgname -n $twinupdatefunctionname
     ```
@@ -133,14 +133,14 @@ To create the second event hub, use the following PowerShell instructions:
 
 1. Create a new event hub:
 
-    ```powershell-interactive
+    ```powershell
     # Create an event hub. Specify a name "tsi-event-hub" for the event hub. 
     az eventhubs eventhub create --name "tsi-event-hub" --resource-group $rgname --namespace-name $ehnamespace
     ```
 
 1. Create an [authorization rule](https://docs.microsoft.com/en-us/cli/azure/eventhubs/eventhub/authorization-rule?view=azure-cli-latest#az-eventhubs-eventhub-authorization-rule-create) with send and receive permissions:
 
-    ```powershell-interactive
+    ```powershell
     # Create an authorization rule. Specify a name for the rule.
     az eventhubs eventhub authorization-rule create --rights Listen Send --resource-group $rgname --namespace-name $ehnamespace --eventhub-name "tsi-event-hub" --name EHPolicy
     ```
@@ -151,13 +151,13 @@ Next, you'll need to set environment variables in your function app from earlier
 
 1. Get the Twins [event hub connection string](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-get-connection-string), using the authorization rules you [created previously](#create-an-event-hub) for the Twins hub:
 
-    ```powershell-interactive
+    ```powershell
     $adtehconnectionstring=$(az eventhubs eventhub authorization-rule keys list --resource-group $rgname --namespace-name $ehnamespace --eventhub-name twins-event-hub --name EHPolicy --query primaryConnectionString -o tsv)
     ```
 
 1. Use the connection string you get as a result to create an app setting in your function app that contains your connection string:
 
-    ```powershell-interactive
+    ```powershell
     az functionapp config appsettings set --settings "EventHubAppSetting-Twins=$adtehconnectionstring" -g $rgname -n $twinupdatefunctionname
     ```
 
@@ -165,13 +165,13 @@ Next, you'll need to set environment variables in your function app from earlier
 
 1. Get the TSI [event hub connection string](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-get-connection-string), using the authorization rules you [created previously](#create-an-event-hub) for the Time Series Insights hub:
 
-    ```powershell-interactive
+    ```powershell
     $tsiehconnectionstring=$(az eventhubs eventhub authorization-rule keys list --resource-group $rgname --namespace-name $ehnamespace --eventhub-name tsi-event-hub --name EHPolicy --query primaryConnectionString -o tsv)
     ```
 
 1. In your function app, create an app setting containing your connection string:
 
-    ```powershell-interactive
+    ```powershell
     az functionapp config appsettings set --settings "EventHubAppSetting-TSI=$tsiehconnectionstring" -g $rgname -n $twinupdatefunctionname 
     ```
 

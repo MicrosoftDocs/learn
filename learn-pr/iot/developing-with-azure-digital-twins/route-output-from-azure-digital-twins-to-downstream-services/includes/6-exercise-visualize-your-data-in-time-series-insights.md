@@ -15,7 +15,7 @@ durationInMinutes: 5
 
 1. Enter the following command snippet in PowerShell to create a storage account (needed by TSI) and provision the TSI environment:
 
-    ```powershell-interactive
+    ```powershell
     $storage="adtholtsitorage"+(get-random -maximum 10000)
     $tsiname=$random+"tsienv"
     az storage account create -g $rgname -n $storage --https-only -l $location
@@ -25,7 +25,7 @@ durationInMinutes: 5
 
 1. After the TSI environment is provisioned, we need to set up an event source. We can use the Event Hub that receives the processed Twin Change events:
 
-    ```powershell-interactive
+    ```powershell
     $es_resource_id=$(az eventhubs eventhub show -n tsi-event-hub -g $rgname --namespace $ehnamespace --query id -o tsv)
     $shared_access_key=$(az eventhubs namespace authorization-rule keys list -g $rgname --namespace-name $ehnamespace -n RootManageSharedAccessKey --query primaryKey --output tsv)
     az timeseriesinsights event-source eventhub create -g $rgname --environment-name $tsiname -n tsieh --key-name RootManageSharedAccessKey --shared-access-key $shared_access_key --event-source-resource-id $es_resource_id --consumer-group-name '$Default'
@@ -33,7 +33,7 @@ durationInMinutes: 5
 
 1. Finally, configure the permissions to access the data in the TSI environment:
 
-    ```powershell-interactive
+    ```powershell
     $id=$(az ad user show --id $username --query objectId -o tsv)
 
     az timeseriesinsights access-policy create -g $rgname --environment-name $tsiname -n access1 --principal-object-id $id  --description "some description" --roles Contributor Reader

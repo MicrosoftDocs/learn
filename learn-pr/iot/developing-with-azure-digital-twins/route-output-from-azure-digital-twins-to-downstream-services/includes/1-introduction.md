@@ -17,7 +17,7 @@ In an Azure Digital Twins solution, you can route event notifications to downstr
 
 There are many other services where you may want to ultimately direct your data, such as [Azure Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction), [Azure Maps](https://docs.microsoft.com/en-us/azure/azure-maps/about-azure-maps), or [Time Series Insights](https://docs.microsoft.com/en-us/azure/time-series-insights/time-series-insights-update-overview) (TSI). To send your data to services like these, first you need to attach the destination service to an endpoint.
 
-## How Event Routes work
+## How do Event Routes work?
 
 Endpoints are attached to Azure Digital Twins using management APIs or the Azure portal. For more information on how to attach an endpoint to Azure Digital Twins, see the [guide for managing endpoints and routes](https://docs.microsoft.com/en-us/azure/digital-twins/how-to-manage-routes-apis-cli).
 
@@ -27,11 +27,11 @@ Endpoints are attached to Azure Digital Twins using management APIs or the Azure
 
 In this module we'll learn how to route events to Time Series Insights for querying and visualizing events received form Azure Digital Twins.
 
-## What is Time Series Insights
+## What is Time Series Insights?
 
 [Azure Time Series Insights](https://azure.microsoft.com/en-us/services/time-series-insights/) is an analytics platform to monitor, analyze, and visualize your industrial IoT data at scale. It also enables simple windowed compute in operational contexts to answer root-cause-analysis-type questions where operators and developers need more than last-known-values using real-time or near real-time insights from analytics to achieve operational optimization and excellence. For more information on TSI, see the [Time Series Insights Documentation](https://docs.microsoft.com/en-us/azure/time-series-insights/time-series-insights-overview) or the [Time Series Insights Learn module to explore and analyze time-stamped data](https://docs.microsoft.com/en-us/learn/modules/explore-analyze-time-series-insights/).
 
-## Azure Digital Twins emitted events
+## Azure Digital Twins Events
 
 In many cases, data from Azure Digital Twins (ADT) needs to be sent to downstream services for further analysis, integration, simulation, or processing. In this example, we'll explore how to send the data to a Time Series Insights (TSI) instance to record time series data of manufacturing process events for bulk analytics.
 

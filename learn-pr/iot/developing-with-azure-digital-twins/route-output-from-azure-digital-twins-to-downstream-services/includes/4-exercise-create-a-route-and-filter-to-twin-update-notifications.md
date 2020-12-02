@@ -15,7 +15,7 @@ In this section, you'll be creating an Azure Digital Twins event route that will
 
 1. Create an event hub namespace, which will receive events from your Azure Digital Twins instance:
 
-    ```powershell-interactive
+    ```powershell
     #Create an Event Hubs namespace leveraging the pre-defined variables.
     $ehnamespace = $dtname + "ehnamespace"
     az eventhubs namespace create --name $ehnamespace --resource-group $rgname -l $location
@@ -23,27 +23,27 @@ In this section, you'll be creating an Azure Digital Twins event route that will
 
 1. Create an event hub within the namespace:
 
-    ```powershell-interactive
+    ```powershell
     # Create an event hub to receive twin change events. Specify a name "twins-event-hub" for the event hub.
     az eventhubs eventhub create --name "twins-event-hub" --resource-group $rgname --namespace-name $ehnamespace 
     ```
 
 1. Create an authorization rule with send and receive permissions:
 
-    ```powershell-interactive
+    ```powershell
     # Create an authorization rule. Specify a name "twins-event-hub" or the rule.
     az eventhubs eventhub authorization-rule create --rights Listen Send --resource-group $rgname --namespace-name $ehnamespace --eventhub-name "twins-event-hub" --name EHPolicy 
     ```
 
 1. Create an Azure Digital Twins endpoint that links your event hub to your Azure Digital Twins instance:
 
-    ```powershell-interactive
+    ```powershell
     az dt endpoint create eventhub --endpoint-name EHEndpoint --eventhub-resource-group $rgname --eventhub-namespace $ehnamespace --eventhub "twins-event-hub" --eventhub-policy EHPolicy -n $dtname
     ```
 
 1. Create a route in Azure Digital Twins to send twin update events to your endpoint. The filter in this route will only allow twin update messages to be passed to your endpoint:
 
-    ```powershell-interactive
+    ```powershell
     az dt route create -n $dtname --endpoint-name EHEndpoint --route-name EHRoute --filter "type = 'Microsoft.DigitalTwins.Twin.Update'"
     ```
 
