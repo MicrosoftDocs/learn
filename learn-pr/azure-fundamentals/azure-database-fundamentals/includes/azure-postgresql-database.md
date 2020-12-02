@@ -49,6 +49,9 @@ The Single Server deployment option delivers:
 - Ability to protect sensitive data at-rest and in-motion.
 - Automatic backups and point-in-time-restore for up to 35 days.
 
+:::column-end::: 
+:::column:::
+
 All those capabilities require almost no administration, and all are provided at no additional cost. You can focus on rapid application development and accelerating your time to market, rather than having to manage virtual machines and infrastructure. You can continue to develop your application with the open-source tools and platform of your choice, without having to learn new skills.
 
 The Single Server deployment option offers three pricing tiers: Basic, General Purpose, and Memory Optimized. Each tier offers different resource capabilities to support your database workloads. You can build your first app on a small database for a few dollars a month, and then adjust the scale to meet the needs of your solution. Dynamic scalability enables your database to transparently respond to rapidly changing resource requirements. You only pay for the resources you need, and only when you need them.
