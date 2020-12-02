@@ -130,7 +130,7 @@ After you find a cmdlet you want to use, you can learn more about it. For exampl
         Path      : /etc/apt/sources.list
    ```
 
-   The output contains a list of examples that use the cmdlet. Locate the part of the response that contains the text `Example 1`. This portion of the text shows how you can use `Get-FileHash` with a file path, piping it to the cmdlet `Format-List`.
+   This output contains a list of examples that use the cmdlet. Locate the part of the response that contains the text `Example 1`. This portion of the text shows how you can use `Get-FileHash` with a file path, piping it to the cmdlet `Format-List`.
 
    > [!TIP]
    > To quickly see an example, add the flag `-Examples` when you search for help.

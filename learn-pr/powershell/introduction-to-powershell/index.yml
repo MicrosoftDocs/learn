@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to PowerShell
-summary: This module introduces PowerShell. This cross-platform command-line shell and scripting language is built for task automation and configuration management. You'll learn basics like what PowerShell is, what it's used for, and how to use it.
+summary: Learn about the basics of PowerShell. This cross-platform command-line shell and scripting language is built for task automation and configuration management. You'll learn basics like what PowerShell is, what it's used for, and how to use it.
 abstract: |
   After completing this module, you'll be able to:
   - Understand what PowerShell is and what you can use it for.
@@ -25,8 +25,7 @@ roles:
 products:
   - vs
 prerequisites: >
-  - Basic familiarity with using a command-line
-  shell like Command Prompt or Git Bash 
+  - Basic familiarity with using a command-line shell like Command Prompt or Git Bash 
   - Visual Studio Code installed 
   - Ability to install Visual Studio Code extensions 
   - Ability to install software on your computer, if you're not using a Windows operating system

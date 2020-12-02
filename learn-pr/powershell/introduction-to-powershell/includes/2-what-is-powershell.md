@@ -43,5 +43,5 @@ If your computer runs something other than Windows 8 or later, you need to insta
 
 ### PowerShell extension for Visual Studio Code
 
-We recommend that you use the [PowerShell extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell?azure-portal=true) to author your PowerShell scripts and to run the commands in this module. This extension not only lets you run commands but also helps you with snippets, code completion, and syntax highlighting. 
+We recommend that you use the [PowerShell extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell&azure-portal=true) to author your PowerShell scripts and to run the commands in this module. This extension not only lets you run commands but also helps you with snippets, code completion, and syntax highlighting. 
 
