@@ -118,3 +118,7 @@ Then, delete the workspace from GitHub Actions.
 <!--todo Elaborate -->
 
 Congratulations! Each time you `git push` your code, your TerraForm provisioned resources are now automatically deployed to production.
+
+## Next steps
+
+In the next unit, we'll summarize what we learnt about Terraform.

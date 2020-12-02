@@ -4,21 +4,17 @@ Your company wanted to learn how they could provision their existing Spring Boot
 
 1. You accessed a sample Spring Boot web application and tested it locally
 
-1. You provisioned a MySQL database, and an Azure App Service.
+1. You use Terraform to provision a MySQL database, and an Azure App Service.
 
 1. Once you verified that your resources were provisioned, you added the Maven Plugin for Azure App Service to your project and configured it interactively.
 
-1. You updated your web application, redeployed it to Azure App Service, and tested it in the cloud.
+1. Configured your web application to use GitHub actions to deploy it on demand.
 
 You're confident that you can recommend Terraform to provision your Spring Boot Java applications to Azure.
 
-## Get Log Stream
-
-Learn how Azure provides built-in diagnostics to assist with debugging in [this](https://docs.microsoft.com/en-us/azure/app-service/troubleshoot-diagnostic-logs/?WT.mc_id=java-10785-ropreddy) article.
-
 ## Clean up resources
 
-In the preceding steps, you created Azure resources in a resource group. If you don't expect to need these resources in the future, delete the resource group from portal, or by running the following command in the Cloud Shell:
+In the preceding steps, you created Azure resources. If you don't expect to need these resources in the future, either 'Terraform Destroy' or delete the resource group by running the following command in the Cloud Shell:
 
 ```bash
 az group delete --name <your resource group name> --yes
@@ -31,10 +27,6 @@ This command may take a minute to run.
 
 ## Additional resources
 
-For more information about Spring Data JDBC, see Spring's [reference documentation](https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/#reference&WT.mc_id=java-10785-ropreddy).
+For more information about Terraform on Azure. [Terraform on Azure documentation](https://docs.microsoft.com/en-us/azure/developer/terraform/&WT.mc_id=java-00000-ropreddy).
 
-For more information about Azure Application Insights Spring Boot Starter for monitoring, see [Azure Application insights](https://docs.microsoft.com/en-us/azure/developer/java/spring-framework/configure-spring-boot-java-applicationinsights/?WT.mc_id=java-10785-ropreddy)
-
-For more information about using Azure with Java, see [Azure for Java developers](https://docs.microsoft.com/en-us/azure/developer/java/?WT.mc_id=java-10785-ropreddy) and [Working with Azure Pipelines and Java](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/java?WT.mc_id=java-10785-ropreddy).
-
-You can read more detailed information about creating MySQL servers in [Create an Azure Database for MySQL server by using the Azure portal](https://docs.microsoft.com/en-us/azure/mysql/quickstart-create-mysql-server-database-using-azure-portal/?WT.mc_id=java-10785-ropreddy).
+For more information about using Azure with Java, see [Azure for Java developers](https://docs.microsoft.com/en-us/azure/developer/java/?WT.mc_id=java-10785-ropreddy)

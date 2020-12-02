@@ -83,3 +83,7 @@ When running Terraform in automation, the focus is usually on the core plan/appl
   - The terraform plan command is used to create an execution plan. Terraform determines what actions are necessary to achieve the wanted state specified in the configuration files.
 - Apply: Apply the changes described by the plan.
 - Destroy: Remove the TF manage infrastructure
+
+## Next steps
+
+In the next unit, we'll use Terraform to provision your environment.

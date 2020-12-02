@@ -76,3 +76,7 @@ Then, deploy the application:
 ```bash
 ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
 ```
+
+## Next steps
+
+In the next unit, we'll explain GitHub Actions and how they integrate with Terraform.
