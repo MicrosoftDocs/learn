@@ -27,6 +27,6 @@ This command may take a minute to run.
 
 ## Additional resources
 
-For more information about Terraform on Azure. [Terraform on Azure documentation](https://docs.microsoft.com/en-us/azure/developer/terraform/&WT.mc_id=java-00000-ropreddy).
+For more information about Terraform on Azure. [Terraform on Azure documentation](https://docs.microsoft.com/en-us/azure/developer/terraform/?WT.mc_id=java-00000-ropreddy).
 
 For more information about using Azure with Java, see [Azure for Java developers](https://docs.microsoft.com/en-us/azure/developer/java/?WT.mc_id=java-00000-ropreddy)
