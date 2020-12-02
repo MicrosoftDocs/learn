@@ -19,6 +19,11 @@ abstract: |
   - Create a graph of the models, using the ADT Explorer Tool
   - Query the graph, using SQL-like queries
 prerequisites: |
+  - A Basic understanding of the Azure CLI. Following [Control Azure services with the CLI](https://docs.microsoft.com/en-us/learn/modules/control-azure-services-with-cli/) module is recommended 
+  - [Azure Command Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+    - It is recommended to install AZ CLI locally 
+    - It is not recommended to use the Azure Cloud Shell as it will timeout due to the length of the lab 
+  - Access to an Azure subscription where you have Administrator role for your account as well as Azure Active Directory Tenant to complete the exercise units
   - Introductory knowledge of the purpose of Azure IoT
   - Ability to navigate the Azure IoT portal 
   - Ability to use the Azure Cloud Shell, and Command Prompt, command line windows

@@ -9,6 +9,5 @@ metadata:
   ms.prod: learning-azure
 title:  Exercise - build a digital twin graph
 durationInMinutes: 12
-azureSandbox: true
 content: |
   [!include[](includes/7-exercise-build-digital-twin-graph.md)]
