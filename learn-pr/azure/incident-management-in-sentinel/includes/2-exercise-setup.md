@@ -29,9 +29,9 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 ## Task 2: Check resources created
 
 1. In the Azure portal, search for **Resource groups**.
-1. Select **azure-sentinel-rg**.
-1. Sort the list of resources by **Type**.
-1. The resource group should contain the resources displayed in this table.
+2. Select **azure-sentinel-rg**.
+3. Sort the list of resources by **Type**.
+4. The resource group should contain the resources displayed in this table.
 
     | Name  | Type  | Description |
     |---|---|---|
