@@ -10,7 +10,7 @@ Your company wanted to learn how they could provision their existing Spring Boot
 
 1. You updated your web application, redeployed it to Azure App Service, and tested it in the cloud.
 
-You're confident that you can recommend Terraform to provision your SpringBoot Java applications to Azure.
+You're confident that you can recommend Terraform to provision your Spring Boot Java applications to Azure.
 
 ## Get Log Stream
 
