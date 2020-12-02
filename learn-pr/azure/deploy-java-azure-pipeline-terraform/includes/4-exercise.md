@@ -10,9 +10,8 @@ Lets first get it running locally.
 ```bash
 mkdir source-code
 cd source-code
-git clone https://github.com/jdubois/spring-petclinic
-cd spring-petclinic
-git checkout deploy-to-azure
+git clone https://github.com/MicrosoftDocs/mslearn-java-petclinic-simplified
+cd mslearn-java-petclinic-simplified
 ```
 
 Build the PetClinic application:
