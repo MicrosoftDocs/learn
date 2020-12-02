@@ -17,7 +17,7 @@ abstract: |
   - Explore cmdlets. 
   - Construct a sequence of cmdlets in a pipeline.
   - Apply sound filtering and formatting principles to your commands. 
-iconUrl: /learn/achievements/automate-with-powershell.svg
+iconUrl: /learn/achievements/powershell/introduction-to-powershell.svg
 levels:
   - beginner
 roles:
