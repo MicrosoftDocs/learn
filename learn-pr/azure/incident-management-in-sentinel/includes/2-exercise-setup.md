@@ -26,21 +26,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 > [!Note]
 > Wait for the deployment to complete. The deployment should take less than five minutes.
 
-## Task 2: Configure Azure Sentinel Connectors
-
-In this task, you will deploy Azure Sentinel connector to Azure Activity.
-
-1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
-2. In the **Azure Sentinel** page, on the menu bar, in the **Configuration** section, select **Data connectors.**
-3. In the **Data connectors** pane, search for and select **Azure Activity.** In the **details** pane, select **Open connector page.**
-4. In the **Azure Activity** pane, select the link **Configure Azure Activity logs**.
-5. Select your subscription and then select **Connect.**
-6. When you receive status **Connected**, you can close all open blades to return to **Azure Sentinel | Data connector** blade.
-
-> [!Note]
-> The connector for Azure Activity could take 15 minutes until it displays data in the Azure Sentinel.
-
-## Check resources created
+## Task 2: Check resources created
 
 1. In the Azure portal, search for **Resource groups**.
 1. Select **azure-sentinel-rg**.
@@ -55,3 +41,17 @@ In this task, you will deploy Azure Sentinel connector to Azure Activity.
     | **simple-vmNetworkInterface** | Network interface | Network interface for the VM. |
     | **st1*xxxxx*** | Storage account | Storage account used by the VM. |
     | **vnet1** | Virtual network | Virtual network for the VM. |
+
+## Task 3: Configure Azure Sentinel Connectors
+
+In this task, you will deploy Azure Sentinel connector to Azure Activity.
+
+1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
+2. In the **Azure Sentinel** page, on the menu bar, in the **Configuration** section, select **Data connectors.**
+3. In the **Data connectors** pane, search for and select **Azure Activity.** In the **details** pane, select **Open connector page.**
+4. In the **Azure Activity** pane, select the link **Configure Azure Activity logs**.
+5. Select your subscription and then select **Connect.**
+6. When you receive status **Connected**, you can close all open blades to return to **Azure Sentinel | Data connector** blade.
+
+> [!Note]
+> The connector for Azure Activity could take 15 minutes until it displays data in the Azure Sentinel.

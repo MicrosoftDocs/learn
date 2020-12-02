@@ -30,11 +30,11 @@ All these details can be referenced to better understand the context of the inci
 
 Each incident created in Azure Sentinel has manageable metadata attached to it. This information can help you set and track the status of an incident from creation to resolution, set and review severity, and assign and track ownership for the incident.
 
-:::image type="content" source="../media/5-incident-settings.png" alt-text="The screenshot displays the section of the **Incidents** page where you can assign ownership, status, and severity." :::
+:::image type="content" source="../media/5-incident-settings.png" alt-text="The screenshot displays the section of the Incidents page where you can assign ownership, status, and severity." :::
 
 #### Ownership
 
-In a typical environment, each incident should be assigned an owner from your security team. The incident owner is responsible for overall management of the incident, including investigation and status updates. You can change ownership at any time. Escalation is a common reason to reassign an incident to a new owner.
+In a typical environment, each incident should be assigned an owner from your security team. The incident owner is responsible for overall management of the incident, including investigation and status updates. You can change ownership at any time to assign the incident to another security team member for further investigation or escalation.
 
 #### Status
 
@@ -48,7 +48,7 @@ Every new incident that is created in Azure Sentinel is assigned a status of **N
 
 #### Severity
 
-Incident severity is typically set by the rule or Microsoft security source from which the incident is generated. In most cases, incident severity will remain unchanged, but you might manually set severity if you decide that the incident is more or less severe than initially classified. Severity options include **Informational, Low, Medium, and High**.
+Incident severity is set by the rule or Microsoft security source from which the incident is generated. In most cases, incident severity will remain unchanged, but you might manually set severity if you decide that the incident is more or less severe than initially classified. Severity options include **Informational, Low, Medium, and High**.
 
 ### Perform deep analysis with investigation graph
 

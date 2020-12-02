@@ -16,7 +16,7 @@ Most incidents are generated because of an analytics rule alert. Examples of ale
 - Detection of suspicious user activities
 - Attempted elevation of privilege
 
-Analytics rules generate alerts, either based on KQL queries or direct connection to Microsoft Security solutions such as Azure Security Center or Azure Advanced Threat Protection. If you enable alert grouping Azure Sentinel includes any related alerts evidence for the incident.
+Analytics rules generate alerts, either based on KQL queries or direct connection to Microsoft Security solutions such as Azure Security Center or Microsoft Defender 365. If you enable alert grouping Azure Sentinel includes any related alerts evidence for the incident.
 
 ### Bookmarks
 
@@ -24,11 +24,12 @@ While investigating an incident, you might identify events that you want to trac
 
 ## Incident entities
 
-An entity refers to a network or user resource involved with an event. You can use entities as entry points to explore all alerts and correlations associated with that entity. Entity relationships are useful when investigating incidents. Instead of analyzing the identity alerts, network alerts, and data access alerts individually, you can use entities to observe any alerts associated with a particular user, host, or address in your environment. Incidents can contain any of these four entity types:
+An entity refers to a network or user resource involved with an event. You can use entities as entry points to explore all alerts and correlations associated with that entity. Entity relationships are useful when investigating incidents. Instead of analyzing the identity alerts, network alerts, and data access alerts individually, you can use entities to observe any alerts associated with a particular user, host, or address in your environment. Some of the entity types include:
 
-- User
-- Host machine
-- IP address
-- Network connection
+- Account
+- Host
+- IP
+- URL
+- FileHash
 
 For instance, entities would help you identify all of the alerts associated with a specific user at Contoso, the user's host machine, and other hosts the user has connected to. You can determine which IP addresses are associated with the user in question, exposing which events and alerts could be part of the same attack.

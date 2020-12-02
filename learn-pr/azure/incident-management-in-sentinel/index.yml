@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Security incident management in Azure Sentinel
-summary: TODO
+summary: In this module, you will investigate Azure Sentinel incident management, learn about Azure Sentinel events and entities, and discover ways to resolve incidents.
 abstract: |
   In this module you will:
   - Understand Azure Sentinel incident management

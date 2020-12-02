@@ -21,7 +21,7 @@ In this task, you'll create an analytics rule that will create an incident when 
 
    - **Name**: **Deleted VMs**
    - **Description**: Enter a detailed description that will help other security analysts understand what the rule does.
-   - **Tactics**: Select **Initial Access**.
+   - **Tactics**: Select **Impact**.
    - **Severity**: Select **Medium**.
    - **Status**: Select **Enable.**
 
