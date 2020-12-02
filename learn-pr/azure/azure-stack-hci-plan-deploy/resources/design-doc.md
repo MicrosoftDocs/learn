@@ -43,7 +43,7 @@ In this module, you'll learn how to plan for and deploy Azure Stack HCI. This wi
 
 ### Number of units per module
 
-6
+7
 
 ## 1st unit: Introduction
 
@@ -100,13 +100,23 @@ Plan for Azure Stack HCI
 ### Key content per learning objective
 
 Deploy Azure Stack HCI
-Validate deployment of Azure Stack HCI
 
 - Describe the prerequistes for deploying Azure Stack HCI
 - Describe the deployment process of Azure Stack HCI
+
+## 5th unit: Deploy Azure Stack HCI
+
+**Type of unit:** Learning content unit
+
+**Estimated unit duration:** 10 mins
+
+### Key content per learning objective
+
+Validate deployment of Azure Stack HCI
+
 - Describe the process of validating deployment of Azure Stack HCI
 
-## 5th unit: Integrate Azure Stack HCI with Azure
+## 6th unit: Integrate Azure Stack HCI with Azure
 
 **Type of unit:** Learning content unit
 
@@ -122,7 +132,7 @@ Integrate Azure Stack HCI with Azure
 - Describe integration with Azure governance and compliance services
 - Describe integration with Azure business continuity services
 
-## 6th unit: Summary
+## 7th unit: Summary
 
 **Type of unit:** Summary unit
 
