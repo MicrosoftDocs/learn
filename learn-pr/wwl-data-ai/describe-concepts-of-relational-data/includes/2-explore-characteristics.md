@@ -18,7 +18,7 @@ The diagram also shows the relationships between the tables. The lines connectin
 The columns marked *FK* are *Foreign Key* columns. They reference, or link to, the primary key of another table, and are used to maintain the relationships between tables. A foreign key also helps to identify and prevent anomalies, such as orders for customers that don't exist in the Customers table. In the model below, the Customer ID and Product ID columns in the Orders table link to the customer that placed the order and the product that was ordered:
 
 > [!div class="mx-imgBorder"]
-> ![Example of a relational model, showing customers, orders, and products](../media/2-relations.png)
+> ![Example of relational model, showing customers, orders, and products](../media/2-relations.png)
 
 The main characteristics of a relational database are:
 
