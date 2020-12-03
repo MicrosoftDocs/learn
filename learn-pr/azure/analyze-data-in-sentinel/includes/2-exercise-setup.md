@@ -44,7 +44,7 @@ In this task, you'll deploy an Azure Sentinel connector to Azure Activity.
 :::image type="content" source="../media/07-Azure-Sentinel-Connector.PNG" alt-text="Screenshot of the Azure Sentinel connector." border="true":::
 
 > [!Note]
-> The connector for Azure Activity could take 15 minutes to send data in Azure Sentinel. You can proceed with rest of the steps and with other units of this module. 
+> The connector for Azure Activity could take 20 minutes to send data in Azure Sentinel. You can proceed with rest of the steps and with other units of this module. 
 
 ## Check the resources created
 
