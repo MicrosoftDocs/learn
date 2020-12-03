@@ -37,9 +37,9 @@ If you select the CSV file, you see this data in Visual Studio Code:
 
 ## Check the local setup with Python libraries
 
-Now that you have your local environment and data ready to go, check to make sure everything is set up properly. 
+Now that you have your local environment and data ready to go, check to make sure everything is set up properly.
 
-If this file is a new file, in the top cell of the *space-jam-anl.ipynb* file, import the pandas library as `pd`. If you're continuing on with the file created in the [preceding *Space Jam: A New Legacy*-inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true), skip this import step, but be sure to rerun your entire notebook to ensure that everything is loaded into your Python environment. This way, you can call pandas functions by using `pd`. 
+If this file is a new file, in the top cell of the *space-jam-anl.ipynb* file, import the pandas library as `pd`. If you're continuing on with the file created in the [preceding *Space Jam: A New Legacy*-inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true), skip this import step, but be sure to rerun your entire notebook to ensure that everything is loaded into your Python environment. This way, you can call pandas functions by using `pd`.
 
 ```python
 import pandas as pd

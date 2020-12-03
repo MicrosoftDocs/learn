@@ -16,7 +16,7 @@ function movingPlayers() {
 But first, we want to make sure the coach doesn't make changes to the players during a quarter. Although in a real basketball game that is definitely OK to do, in this version, we have only PER stats for each quarter start, so we want to limit the functionality. 
 
 ```javascript
-    // Do not let the coach change players during a quarter
+    // Don't let the coach change players during a quarter.
     if(quarterInPlay) {
         return;
     }
@@ -25,24 +25,25 @@ But first, we want to make sure the coach doesn't make changes to the players du
 Now we can use the HTML structure to figure out where the player currently is—the bench or the court. We know that the buttons were initially placed on a `div` that has the ID `playersOnBench`. We can start by testing whether the player is currently on the bench, which means that the coach is trying to move the player to the court.
 
 ```javascript
-    // Get the div where this button currently is (either bench or court)
+    // Get the div in which this button currently is (either bench or court).
     var parentDiv = this.parentElement;
 
-    // Check if the player is currently on the bench
+    // Check whether the player is currently on the bench.
     if(parentDiv.id == 'playersOnBench') {
 ```
 
-In the `if` statement, we need to make one check before we do anything else: You can have only 5 players on the court at any one time, so we want to make sure the coach isn't trying to add additional players. In this case, we'll just alert the coach that adding more players right now isn't allowed, and not actually move the player.
+In the `if` statement, we need to make one check before we do anything else: You can have only five players on the court at any one time, so we want to make sure the coach isn't trying to add additional players. In this case, we'll just alert the coach that adding more players right now isn't allowed, and not actually move the player.
 
 ```javascript
-        // If there are already 5 players on the court, don't let the player 
-        // move to the court; alert the coach that there are enough players
+        // If there are already five players on the court, don't let the player
+        // move to the court; alert the coach that there are enough players.
         if(playersOnCourt >= maxPlayersOnCourt){
             alert("You can only have " + maxPlayersOnCourt + " players on the court at a time.");
         }
 ```
 
 If there's room on the court for the player, we want to do a few things:
+
 1. Increase the count for number of players on the court.
 2. Get the player's PER for the current quarter.
 3. Calculate the average PER for all of the players currently on the court.
@@ -51,9 +52,9 @@ If there's room on the court for the player, we want to do a few things:
 
 ```javascript
         else {
-            // If there is room on the court, update the number of players on 
+            // If there is room on the court, update the number of players on
             // the court, and update the average PER for the quarter based on
-            // this player moving to the court
+            // this player moving to the court.
             playersOnCourt++;
             quarterPER += playerMap.get(this.id)[currentQuarter];
             quarterAvePER = quarterPER / playersOnCourt;
@@ -65,6 +66,7 @@ If there's room on the court for the player, we want to do a few things:
 ```
 
 Next, we want to support the coach moving players from the bench back to the court. We can put these steps in an `else` statement because there are only two places a player can be—the court or the bench. So, we'll do a couple things in this `else` statement:
+
 1. Decrement the count of players on the court.
 2. Calculate the PER for the players left on the court. If there are no more players on the court, set the PER to 0.
 3. Display the PER to the coach.
@@ -115,13 +117,13 @@ function movingPlayers() {
 
     // Check whether the player is currently on the bench.
     if(parentDiv.id == 'playersOnBench') {
-        // If there are already five players on the court, don't let the player 
+        // If there are already five players on the court, don't let the player
         // move to the court, and alert the coach that there are enough players.
         if(playersOnCourt >= maxPlayersOnCourt){
             alert("You can only have " + maxPlayersOnCourt + " players on the court at a time.");
         }
         else {
-            // If there is room on the court, update the number of players on 
+            // If there is room on the court, update the number of players on
             // the court, and update the average PER for the quarter based on
             // this player moving to the court.
             playersOnCourt++;
