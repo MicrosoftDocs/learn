@@ -141,4 +141,4 @@ CREATE TABLE MyTable
 );
 ```
 
-The datatypes available for columns in a table will vary between database management systems. However, most database management systems support numeric types such as INT, and string types such as VARCHAR (*VARCHAR* stands for variable length character data). For more information, see the documentation for your selected database management system.    
+The datatypes available for columns in a table will vary between database management systems. However, most database management systems support numeric types such as INT (an integer, or whole number), and string types such as VARCHAR (*VARCHAR* stands for variable length character data). For more information, see the documentation for your selected database management system.    

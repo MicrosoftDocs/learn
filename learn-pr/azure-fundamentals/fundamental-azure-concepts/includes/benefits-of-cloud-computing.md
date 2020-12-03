@@ -2,20 +2,20 @@
 
 There are several advantages that a cloud environment has over a physical environment that Tailwind Traders can use following its migration to Azure.
 
-- **High availability**: Depending on the service-level agreement (SLA) that you choose, your cloud-based applications can provide a continuous user experience with no apparent downtime, even when things go wrong.
+- **High availability**: Depending on the service-level agreement (SLA) that you choose, your cloud-based apps can provide a continuous user experience with no apparent downtime, even when things go wrong.
 
-- **Scalability**: Applications in the cloud can be scaled *vertically* and *horizontally*:
+- **Scalability**: Apps in the cloud can scale *vertically* and *horizontally*:
 
-   - Scale vertically to increase computing capacity by adding RAM or CPUs to a virtual machine.
-   - Scale horizontally to increase computing capacity by adding instances of a resource, such as adding virtual machines to your configuration.
+   - Scale vertically to increase compute capacity by adding RAM or CPUs to a virtual machine.
+   - Scaling horizontally increases compute capacity by adding instances of resources, such as adding VMs to the configuration.
 
-- **Elasticity**: You can configure cloud-based applications to take advantage of autoscaling, so your applications always have the resources they need.
+- **Elasticity**: You can configure cloud-based apps to take advantage of autoscaling, so your apps always have the resources they need.
 
-- **Agility**: Deploy and configure cloud-based resources quickly as your application requirements change.
+- **Agility**: Deploy and configure cloud-based resources quickly as your app requirements change.
 
-- **Geo-distribution**: You can deploy applications and data to regional datacenters around the globe, thereby ensuring that your customers always have the best performance in their region.
+- **Geo-distribution**: You can deploy apps and data to regional datacenters around the globe, thereby ensuring that your customers always have the best performance in their region.
 
-- **Disaster recovery**: By taking advantage of cloud-based backup services, data replication, and geo-distribution, you can deploy your applications with the confidence that comes from knowing that your data is safe in the event of disaster.
+- **Disaster recovery**: By taking advantage of cloud-based backup services, data replication, and geo-distribution, you can deploy your apps with the confidence that comes from knowing that your data is safe in the event of disaster.
 
 ## Cloud computing is a consumption-based model
 

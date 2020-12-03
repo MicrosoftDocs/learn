@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.go-to-market-commercial-marketplace.6-marketplace-rewards-program
+title: Marketplace Rewards program
+metadata:
+  title: Marketplace Rewards program
+  description: Overview of the Marketplace Rewards program for commercial marketplace publishers
+  ms.date: 11/10/2020
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-marketplace-rewards-program.md)]

@@ -5,9 +5,9 @@ In this exercise, you'll update your function to parse information from the GitH
 
 1. In the Azure portal, navigate to the function app that you created earlier.
 
-1. Expand **Functions** and select the function that you created.
+1. Select **Functions** and select the function that you created.
 
-1. Select **View files** on the far right of the portal UI, and then select **index.js**.
+1. Select **Code + Test** on the far right of the portal UI, and then select **index.js**.
 
 1. Update the index.js file by editing the code in the main window for the function. Replace the current `if...else` statement in the function body with the following code.
 

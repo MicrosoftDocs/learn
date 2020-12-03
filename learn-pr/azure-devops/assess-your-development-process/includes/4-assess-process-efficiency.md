@@ -56,7 +56,7 @@ Substitute our numbers and we get:
 
 $${Activity\ ratio\ =\ }{\dfrac{5\ days}{22\ days}}{ = .23}$$
 
-Multiply the result by 100% and you get **23%**.
+Multiply the result by 100 and you get **23%**.
 
 As you can see, we have a lot of room for improvement. And taking 22 days to develop a feature is too long.
 
