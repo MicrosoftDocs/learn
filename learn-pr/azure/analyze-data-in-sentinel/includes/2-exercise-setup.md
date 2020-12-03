@@ -21,7 +21,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 | **Workspace name***  | Provide a unique name for the Azure Sentinel Workspace such as ***yourname*-sentinel**. |
 | **Location** | Accept the default value of **[resourceGroup().location]**. |
 | **Simplevm Name** | Accept the default value of **simple-vm**.|
-| **Simplevm WIndows OS Version** | Accept the default value of **2016-Datacenter**.|
+| **Simplevm Windows OS Version** | Accept the default value of **2016-Datacenter**.|
 
 4. Select the **Review + create**, and then select **Create**.
 
@@ -39,7 +39,7 @@ In this task, you'll deploy an Azure Sentinel connector to Azure Activity.
 3. In the **Data connectors** pane, search for and select **Azure Activity**. In the details pane, select **Open connector page**.
 4. In the **Azure Activity** pane, select the **Configure Azure Activity logs** link.
 5. Select your subscription, and then select **Connect**.
-6. When you receive a status of **Connected**, close all open blades to return to the **Azure Sentinel| Data connector** blade.
+6. When you receive a status of **Connected**, close all open blades to return to the **Azure Sentinel | Data connector** blade.
 
 :::image type="content" source="../media/07-Azure-Sentinel-Connector.PNG" alt-text="Screenshot of the Azure Sentinel connector." border="true":::
 
