@@ -14,7 +14,7 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Azure Sentinel workspace.
 2. On the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
-3. On the **Azure Sentinel | Analytics** blade, select **Create** and then select **Scheduled Query Rule**.
+3. On the **Azure Sentinel | Analytics** blade, select **Create** and then select **Scheduled query rule**.
 4. On the **General** page, provide the inputs in the following table, and then select  **Next: Set rule logic**. 
 
   |||
@@ -46,7 +46,7 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 9. In the **Alert threshold** section, you can specify the number of positive results that can be returned for the rule before an alert gets generated. Accept the default values.
 10. In the **Event grouping** section, accept the default selection to **Group all events into a single alert.**
 11. In the **Suppression** section, you can configure **Stop running the Query after the alert is generated** to  **On**  or  **Off.** 
-12. Accept the default values and then select **Next: Incident setting (preview)**.
+12. Accept the default values and then select **Next: Incident setting (Preview)**.
 13. In the **Incident setting (preview)** page, ensure that **Enabled** is selected for creation of incidents from alerts triggered by this analytics rule.
 14. In the **Alert grouping** section, select **Enabled** to group related alerts into incidents, and ensure that **Grouping alerts into a single incident if all the entities match (recommended)** is selected.
 15. Ensure that **Re-open closed matching incidents** is **Disabled**, and then select **Next: Automated response**.
@@ -55,12 +55,12 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 
 16. In the **Automated response**  page, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
 17. Select **Next: Review**.
-18. In the **Review and Create** page, verify that the validation was successful, and then select **Create**.
+18. In the **Review and create** page, verify that the validation was successful, and then select **Create**.
 
 ### Task 2: Invoke an incident and review the associated actions
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box, enter **virtual machines**, and then select **Enter**.
-2. On the **Virtual machines** page, locate and select the **simple-vm** virtual machine, and then on the header bar, select **Delete**. In the **Delete virtual machine** select **Yes**.
+2. On the **Virtual machines** page, locate and select the **simple-vm** virtual machine, and then on the header bar, select **Delete**. In the **Delete virtual machine** prompt select **Yes**.
 
 > [!Note]
 > This task creates an incident based on the analytics rule that you created in Task 1. Incident creation can take up to 5 minutes. You can proceed with rest of the steps of this unit and then observe the results at later time.
@@ -81,6 +81,8 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 ### Results
 
 After completing this exercise, you'll have created an incident rule from an existing template and created a scheduled query rule by using your own query code.
+
+After you finished with the exercise you should delete resources to avoid incurring costs.
 
 ### Clean up the resources
 
