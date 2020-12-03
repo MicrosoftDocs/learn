@@ -5,7 +5,7 @@ In the previous unit, you learned that modeling your problem domain is an import
 However, in OOP there are constructs you should be using to take it to the next level, to turn your model into code. This unit will therefore focus on explaining the OOP concepts you need and start applying those concepts to your main task, your game. This unit will therefore explore the following parts:
 
 - **OO concepts**. To be able to reason in OOP, you need to understand some fundamental concepts like classes and objects and state, what's the difference between them and how they relate to one another.
-- **Analyzing a game for OO concepts**. As part of building a game in OOP you need to learn to recognize the OOP parts, what parts does a game consist of and what parts of these game parts are the actors and the state?
+- **Variables in OO**. How do you deal with variables and how do you add them to your objects. 
 
 ## OOP concepts, classes, and objects
 
