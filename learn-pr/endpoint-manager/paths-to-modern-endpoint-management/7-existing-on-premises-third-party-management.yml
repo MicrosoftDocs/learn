@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.paths-to-modern-endpoint-management.7-existing-on-premises-third-party-management
+title: Understand migration from an existing on-premises third-party management solution
+metadata:
+  title: Understand migration from an existing on-premises third-party management solution
+  description: Understand the endpoint management migration path when your organization uses an existing on-prem third-party management provider, where endpoint management infrastructure is significant and complex.
+  ms.date: 12/01/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-existing-on-premises-third-party-management.md)]
