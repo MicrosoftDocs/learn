@@ -13,7 +13,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 1. Start Visual Studio Code. Click **Continue without code**
 
-2. On the **Extensions** menue at the top and select **Manage Extensions** to open the extensions pane.
+2. On the **Extensions** menu at the top and select **Manage Extensions** to open the extensions pane.
 
 3. In the **Search** box, type **Azure Cosmos DB**, and press Enter.
 
@@ -89,7 +89,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 4. In the **Enter a value for the partition key** box, type **101**, and then press Enter.
 
-    The document will be created and displayed in Visual Studio Code, in JSON format. The **id** and **StudentNumber** fields will be populated with the values you specified. The document will also contain other fields that are added automatically by Cosmos DB for its own internal use.
+    The document will be created and displayed in Visual Studio Code, in JSON format. The **id** and **StudentNumber** fields will be populated with the values you specified. The document will also contain other fields that are added automatically by Cosmos DB for its internal use.
 
     :::image type="content" source="../media/3-new-document.png" alt-text="Screenshot of Visual Studio Code showing the newly created document." loc-scope="vs-code":::
 
