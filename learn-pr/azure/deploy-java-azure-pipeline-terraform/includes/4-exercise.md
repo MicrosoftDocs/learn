@@ -53,14 +53,6 @@ We'll use Terraform to create an Azure resource group with a MySQL database and 
     terraform apply
     ```
 
-## Reverse a Terraform execution plan
-
-1. To reverse, or undo, the execution plan, run 'terraform destroy'
-
-    ```bash
-    terraform destroy
-    ```
-
 ## Deploy via Maven
 
 Configure your deployment with Maven:
@@ -77,6 +69,16 @@ Then, deploy the application:
 ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
 ```
 
+Browse to the URL returned by the deploy action and verify you database and application is working:
+<
+!--todo add screen shot-->
+
 ## Next steps
+
+Before you move onto the next unit, delete your terraform resources and run 'terraform destroy'
+
+```bash
+terraform destroy
+```
 
 In the next unit, we'll explain GitHub Actions and how they integrate with Terraform.
