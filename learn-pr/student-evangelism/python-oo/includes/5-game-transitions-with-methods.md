@@ -74,7 +74,7 @@ square = Square()
 square._Square__height = 3 # is allowed
 ```
 
-Other languages implementing data protection might solve this differently, but essentially Python practices more different levels of suggestions than actual hiding.
+Many other languages implementing data protection solve this differently, Python is a little unique in that data protection is more like levels of suggestion rather than strictly implemented.
 
 ### Getters and setters
 

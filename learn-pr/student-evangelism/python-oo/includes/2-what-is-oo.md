@@ -1,13 +1,13 @@
 
 Object-oriented programming, OOP, is a programming paradigm. It has the idea of _grouping_ related data and functions into islands of information. These islands are known as objects.
 
-All paradigms of programming are centered around solving problems. Programs are constructed to go through roughly the same flow regardless of paradigm, namely:
+Regardless of paradigm, programs use the same series of steps to solve problems:
 
 1. **Data input**. Data is read from somewhere, could be a data storage like a file system or a database.
 1. **Processing**. At this point, the data is being interpreted and possibly altered to be prepared for display.
 1. **Data output**. Lastly the data is being presented so that it can be read and interacted with either by a physical user or by a system.
 
-Lets try to define what OOP is by comparing it to another paradigm, procedural programming. Procedural programming sets out to solve a given problem by calling procedures, also known as functions or methods. Functions and variables are constructed to address the various phases described above.
+Lets try to define what OOP is by comparing it to another paradigm: procedural programming. Procedural programming sets out to solve a given problem by calling procedures, also known as functions or methods. Functions and variables are constructed to address the various phases described above.
 
 The OOP paradigm is no different in that aspect, but what really makes it stand out is how it looks upon the world. Compared to procedural programming, OOP _takes a step_ back and tries to look at the bigger picture. Rather than just working on data, and taking it from one phase to the next, it tries to understand the world in which the data operates. It does so by _modeling_ what it sees. During this _modeling_ phase, actors are identified as well as their traits and their behavior. Actors are made into objects, the traits are encoded as data on the objects and the behaviors are functions that also get added to the object.
 
