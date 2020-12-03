@@ -17,7 +17,7 @@ rock_samples.describe()
 ```
 
 
-| ID | Weight(kg) | Pristine(%) | Remaining(kg) |
+| ID | Remaining(kg) | Weight(kg) | Pristine(%) |  |
 |---|---|---|---|---|
 | count | 2229.000000 | 2229.000000 | 2229.000000 | 2229.000000 |
 | mean | 52058.432032 | 0.168253 | 84.512764 | 0.138103 |
