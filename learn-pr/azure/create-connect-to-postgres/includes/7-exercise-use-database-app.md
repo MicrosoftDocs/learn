@@ -83,7 +83,7 @@ cd ~/payment-app
 ```bash
 WEBAPPNAME=payment-app-$RANDOM
 az webapp up \
-    --resource-group "<rgn>Sandbox resource group name</rgn>" \
+    --resource-group "<rgn>[Sandbox resource group name]</rgn>" \
     --location centralus \
     --sku F1 \
     --name $WEBAPPNAME
