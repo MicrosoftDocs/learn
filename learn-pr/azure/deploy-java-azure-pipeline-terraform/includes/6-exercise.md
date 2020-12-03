@@ -50,12 +50,15 @@ This file is a GitHub workflow and will use the secret we configured above to de
 In that file, you'll see the following content:
 
 ```yaml
-name: Terraform Plan
+name: CI
 
 on:
+  push:
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
+  workflow_dispatch:
 jobs:
   terraform:
     runs-on: ubuntu-latest
@@ -66,6 +69,9 @@ jobs:
       ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
 
+    defaults:
+      run:
+        working-directory: ./terraform
     steps:
       - uses: actions/checkout@v2
 
@@ -75,15 +81,11 @@ jobs:
       - name: Terraform Init
         run: terraform init
 
-      - name: Terraform Format
-        run: terraform fmt -check
-
       - name: Terraform Plan
         run: terraform plan
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
-
 ```
 
 This workflow does the following actions:
@@ -96,9 +98,8 @@ Your workflow will be triggered whenever code is pushed to the repository.
 
 ## Test the GitHub Action
 
-You can now commit and push the `main.yml` file we created.
-In GitHub, go to "Actions", then select the pull request you just merged.
-Then, select the "Terraform" workflow. Notice how the "Terraform Init", "Terraform Plan" and "Terraform Validate" steps have been skipped.
+You can now manually trigger the GitHub Actions workflow by going to "Actions", then select the terraform workflow.
+Then, select the "Terraform" workflow. Notice how the "Terraform Init", "Terraform Plan" and "Terraform Validate" steps have been triggered.
 
 ![GitHub workflow](media/01-github-workflow.png)
 
@@ -109,13 +110,17 @@ Verify your Azure App Instance is publicly available.
 
 Use Maven, as before, to deploy to your Azure instance.
 
+```bash
+./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
+```
+
 ## Destroy your resources
 
-Remember to destroy the resources you created for this tutorial.
+Remove the resources you created for this tutorial.
 
-Go to the GitHub actions workspace, queue a destroy plan, and apply it.
-Then, delete the workspace from GitHub Actions.
-<!--todo Elaborate -->
+```bash
+terraform destroy
+```
 
 Congratulations! Each time you `git push` your code, your TerraForm provisioned resources are now automatically deployed to production.
 
