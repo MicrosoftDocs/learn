@@ -11,22 +11,22 @@ metadata:
   ms.prod: learning-azure
 title: "Use basketball stats to optimize game play with Visual Studio Code, inspired by SPACE JAM: A NEW LEGACY"
 summary: | 
-  Inspired by the new film SPACE JAM: A NEW LEGACY, this learning path shows basketball fans how an understanding of data science and coding can support their passions, create opportunities, and even open doors to possible careers. Develop skills in Visual Studio Code, Azure, GitHub, JavaScript, and Python, to gain insights into how individual moments throughout a players history can lead to a critical game decision in the finals. 
+  Inspired by the new film SPACE JAM: A NEW LEGACY, this learning path shows basketball fans how an understanding of data science and coding can support their passions, create opportunities, and even open doors to possible careers. Develop skills in Visual Studio Code, Azure, GitHub, JavaScript, and Python, to gain insights into how individual moments throughout a player's history can lead to a critical game decision in the finals. 
 
-  **Welcome to the Jam!** NBA champion and cultural icon LeBron James goes on an epic adventure alongside timeless Tune Bugs Bunny. The animated/live-action event "Space Jam: A New Legacy" comes from director Malcolm D. Lee and an innovative filmmaking team, including Ryan Coogler and Maverick Carter. This transformational journey is a manic mashup of two worlds that shows just how far some parents will go to connect with their kids. 
-
+  **Welcome to the Jam!** In SPACE JAM: A NEW LEGACY, NBA champion and cultural icon LeBron James goes on an epic adventure alongside timeless Tune Bugs Bunny. This transformational journey is a manic mashup of two worlds that shows just how far some parents will go to connect with their kids. 
+  
   <details>
   <summary>
-  <i>See more details about the film</i>
+  <i>Expand to see more about the film.</i>
   </summary>
+  <br />
+  
+  The animated/live-action event "Space Jam: A New Legacy" comes from director Malcolm D. Lee and an innovative filmmaking team, including Ryan Coogler and Maverick Carter. 
   
   When LeBron and his young son Dom are trapped in a digital space by a rogue A.I., LeBron must get them home safe. He leads Bugs, Lola Bunny, and the whole gang of notoriously undisciplined Looney Tunes to victory over the A.I.'s digitized champions on the court: a powered-up roster of NBA and WNBA stars as you've never seen 
-  them before.  It's Tunes versus Goons in the highest-stakes challenge of LeBron's life. It'll redefine LeBron's bond with his son and shine a light on the power of being yourself. The ready-for-action Tunes destroy convention, supercharge their unique talents, and surprise even "King" James by playing the game their own way. 
+  them before. It's Tunes versus Goons in the highest-stakes challenge of LeBron's life - one that will redefine LeBron's bond with his son and shine a light on the power of being yourself. The ready-for-action Tunes destroy convention, supercharge their unique talents, and surprise even "King" James by playing the game their own way. 
   
   </details>
-  
-  These modules are a part of a multimodal approach to learning. You can follow along with some video tutorials that are a part of the 
-  [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG/Basketball/Videos?azure-portal=true). And don't forget to watch SPACE JAM: A NEW LEGACY coming Summer 2021!
   
   In this learning path you will:
   - Use Python, Pandas, and Visual Studio Code to understand basketball stats
@@ -36,6 +36,12 @@ summary: |
   - Create a Water Break App with JavaScript and Azure static web apps
   - Use GitHub Actions to deploy your app to the cloud
 
+  >[!TIP]
+  > These modules are a part of a multimodal approach to learning. You can follow along with some video tutorials that are a part of the 
+  [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG/Basketball/Videos?azure-portal=true).
+  
+  And don't forget to watch SPACE JAM: A NEW LEGACY coming Summer 2021!
+  
 prerequisites: | 
   - [Visual Studio Code, with the Python Extension installed](https://aka.ms/LearnOnVSCode)
   - A local Python environment set up, as seen in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)
