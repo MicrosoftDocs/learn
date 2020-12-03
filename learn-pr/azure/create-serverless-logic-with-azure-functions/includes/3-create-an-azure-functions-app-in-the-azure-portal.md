@@ -20,7 +20,7 @@ Let's create a function app in the Azure portal.
 
 ::: zone pivot="javascript"
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you activated the sandbox with.
 
 1. From the portal menu, select **Create a resource**.
 
@@ -44,7 +44,7 @@ Let's create a function app in the Azure portal.
 
 1. Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function.
 
-1. Select **Create**; deployment will take a few minutes. You'll receive a notification once it's complete.
+1. Select **Review + create**, then select **Create**; deployment will take a few minutes. You'll receive a notification after it's complete.
 
 ::: zone-end
 

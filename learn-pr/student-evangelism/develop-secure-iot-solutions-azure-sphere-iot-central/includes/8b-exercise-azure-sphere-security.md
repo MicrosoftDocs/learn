@@ -1,3 +1,5 @@
+In this exercise, we'll secure an Azure Sphere application
+
 ## Step 1: List your IoT Central network endpoints
 
 1. Open the command prompt.
@@ -33,13 +35,11 @@
 
 6. Copy the output from the **ShowIoTCentralConfig** tool to Notepad, as you'll need this information soon.
 
-
-
 ## Step 2: Get your Azure Sphere tenant ID
 
 We need the ID of the Azure Sphere tenant that is now trusted by Azure IoT Central.
 
-1. From the  **Azure Sphere Developer Command Prompt** or Linux **Terminal**, run the following command.
+1. From the  Windows **PowerShell command line** or Linux **Terminal**, run the following command.
 
    ```
    azsphere tenant show-selected
@@ -47,8 +47,12 @@ We need the ID of the Azure Sphere tenant that is now trusted by Azure IoT Centr
 
    The output of this command will look similar to the following.
 
-   ```
-   Default Azure Sphere tenant ID is '99999999-e021-43ce-9999-fa9999499994'.
-   ```
+    ```
+    ------------------------------------ -------------------
+    Id                                   Name
+    ========================================================
+    99999999-e021-43ce-9999-fa9999499994 yourSphereTenant
+    ------------------------------------ -------------------
+    ```
 
 2. Copy the Azure Sphere tenant ID to Notepad, as you'll need it soon.

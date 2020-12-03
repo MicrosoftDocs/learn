@@ -16,7 +16,7 @@ abstract: |
   - Configure Azure AD join to manage device identities
   - Configure Enterprise State Roaming to reduce the time that users need to configure a new device
 prerequisites: | 
-  - Basic knowledge of Azure Active Directory features such as Azure AD Connect, Azure AD Seamless Single Sign-On, and Azure Multi-Factor Authentication
+  - Basic knowledge of Azure Active Directory features such as Azure AD Connect, Azure AD Seamless Single Sign-On, and Azure AD Multi-Factor Authentication
   - Basic understanding of mobile device management software like Microsoft Intune 
 iconUrl: /learn/achievements/manage-device-identity-ad-join.svg
 levels:

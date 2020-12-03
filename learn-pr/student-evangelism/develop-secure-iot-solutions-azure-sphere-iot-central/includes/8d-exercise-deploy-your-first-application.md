@@ -16,14 +16,14 @@ In this exercise, we'll deploy a high-level application to your Azure Sphere.
 
 1. Update the connection properties for the Azure IoT Central application.
 
-   - Update **CmdArgs** with your Azure IoT Central ID scope.
-   - Update **DeviceAuthentication** with your Azure Sphere Tenant ID. Remember, this was the numeric value returned from running the **azsphere tenant show-selected** command.
+    - Update **CmdArgs** with your Azure IoT Central ID scope.
+    - Update **DeviceAuthentication** with your Azure Sphere Tenant ID. Remember, this was the numeric value returned from running the **azsphere tenant show-selected** command.
 
-2. Update the **AllowedConnections** with the Azure IoT Central application endpoints you copied to Notepad.
+1. Update the **AllowedConnections** with the Azure IoT Central application endpoints you copied to Notepad.
 
-3. You can format the app_manifest.json document by pressing **Shift+Alt+F**.
+1. You can format the app_manifest.json document by right mouse clicking on the document and selecting **Format Document** from the context menu.
 
-4. Review your updated **app_manifest.json** file. It should look similar to the following.
+1. Review your updated **app_manifest.json** file. It should look similar to the following.
 
     ```json
     {
@@ -64,15 +64,13 @@ In this exercise, we'll deploy a high-level application to your Azure Sphere.
     }
     ```
 
-5. Save the updated app_manifest.json file.
+1. Save the updated app_manifest.json file.
 
-6. **IMPORTANT**. Copy the contents of your **app_manifest.json** file to Notepad, as you'll need this configuration information for the next labs.
-
-
+1. **IMPORTANT**. Copy the contents of your **app_manifest.json** file to Notepad or your text editor of choice, as you'll need this configuration information for the next labs.
 
 ## Step 3: Select your developer board configuration
 
-These labs support developer boards from Avnet and Seeed Studio. You need to set the configuration that matches your developer board. The default developer board configuration is for the Avnet Azure Sphere Starter Kit. If you have this board, there is no additional configuration required.
+These labs support developer boards from Avnet and Seeed Studio. You need to set the configuration that matches your developer board. The default developer board configuration is for the Avnet Azure Sphere Starter Kit Revision 1. If you have this board, there is no additional configuration required.
 
 1. Open **CMakeLists.txt**.
 
@@ -80,15 +78,14 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 3. Uncomment the **set** command that corresponds to your Azure Sphere developer board.
 
-   ```text
-   set(AVNET TRUE "AVNET Azure Sphere Starter Kit")
-   # set(SEEED_STUDIO_RDB TRUE "Seeed Studio Azure Sphere MT3620 Development Kit (aka Reference Design Board or rdb)")
-   # set(SEEED_STUDIO_MINI TRUE "Seeed Studio Azure Sphere MT3620 Mini Dev Board")
-   ```
+    ```text
+    set(AVNET TRUE "AVNET Azure Sphere Starter Kit Revision 1 ")
+    # set(AVNET_REV_2 TRUE "AVNET Azure Sphere Starter Kit Revision 2 ")
+    # set(SEEED_STUDIO_RDB TRUE "Seeed Studio Azure Sphere MT3620 Development Kit (aka Reference Design Board or rdb)")
+    # set(SEEED_STUDIO_MINI TRUE "Seeed Studio Azure Sphere MT3620 Mini Dev Board")
+    ```
 
 4. Save the file. This will autogenerate the CMake cache.
-
-
 
 ## Step 4: Deploy the application to Azure Sphere
 
@@ -98,7 +95,9 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 1. Select **CMake: [Debug]: Ready** from the Visual Studio Code status bar.
 
-   ![The illustration shows CMake status.](../media/visual-studio-code-start-application.png)
+   <!-- ![The illustration shows CMake status.](../media/visual-studio-code-start-application.png) -->
+
+   :::image type="content" source="../media/visual-studio-code-start-application.png" alt-text="The illustration shows CMake status.":::
 
 1. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application now running the Azure Sphere device.
 
@@ -119,11 +118,9 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
     > [!NOTE]
     > You may see a couple of *ERROR: failure to create IoTHub Handle* messages displayed. These messages occur while the connection to Azure IoT Central is being negotiated.
 
-
-
 ## Step 5: Expected device behavior
 
-### Avnet Azure Sphere MT3620 Starter Kit
+### Azure Sphere MT3620 Starter Kit Revision 1 and 2
 
 ![The illustration shows the Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
 
@@ -141,39 +138,26 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 1. The User LED will blink every 5 seconds when connected to Azure.
 
-
-
 ## Step 6: Display the device telemetry in IoT Central
 
-Switch back to the Azure IoT Central web portal.
+1. Switch back to the **IoT Central** web portal.
 
-### Migrate your device
+1. From the sidebar menu, select **Devices**, then the **Learning Path Lab Monitor** template, then your **device**.
 
-1. Click **Devices** on the sidebar.
+    The device name is your Azure Sphere Device ID. You can display your Device ID by running the following command from the Windows **PowerShell command line** or Linux **Terminal**.
 
-1. Select your Azure Sphere device.
+   ```
+   azsphere device show-attached
+   ```
 
-1. Click **Migrate**.
-    ![Migrate a device in IoT Central](../media/iot-central-migrate-device.png)
-
-1. Select the **Azure Sphere** template.
-
-1. Click **Migrate**.
-
-### Display device telemetry
-
-1. Click your device to display the device dashboard.
-
-1. Select the **Telemetry** tab to view the device telemetry.
+1. Select the **Overview** tab to view the device telemetry.
 
 1. Optional. You can also rename your device. Click the **Rename** button and give your device a friendly name.
 
     > [!NOTE]
     > Azure IoT Central does not update immediately. It may take a minute or two for the temperature, humidity, and pressure telemetry to be displayed. You can check that data is flowing into IoT Central by checking the **Raw data** tab.
 
-![The illustration shows how to display measurements.](../media/iot-central-display-measurements.png)
-
-
+:::image type="content" source="../media/iot-central-display-measurements.png" alt-text="The illustration shows how to display measurements.":::
 
 ## Close Visual Studio Code
 

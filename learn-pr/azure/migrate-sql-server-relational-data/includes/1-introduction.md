@@ -1,4 +1,4 @@
-Azure Database Migration Service automates the task of migrating your databases to the Azure SQL Database service. 
+Azure Database Migration Service automates the task of migrating your databases to the Azure SQL Database service.
 
 Suppose you work for a company that aggregates social media links to provide recommendations to users of its website. The current infrastructure is having problems scaling up to handle the current demands. In addition, the infrastructure is becoming more expensive to maintain as the equipment ages.
 
@@ -18,8 +18,8 @@ In this module, you will:
 
 ## Prerequisites
 
-- Access to an Azure subscription to complete the exercises
-- Basic knowledge of the T-SQL language
-- Basic familiarity with relational data, such as tables, rows, and database schemas
-- Basic familiarity with SQL Server administration and configuration
-- Basic familiarity with Azure SQL Database
+- Access to an Azure subscription to complete the exercises.
+- Basic knowledge of the T-SQL language.
+- Basic familiarity with relational data, such as tables, rows, and database schemas.
+- Basic familiarity with SQL Server administration and configuration.
+- Basic familiarity with Azure SQL Database.
