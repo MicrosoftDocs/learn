@@ -21,7 +21,7 @@ It's time to deliver on those lofty buzzwords. Now, you need to create a new pro
    | Name          | GetProducts  |
    | Authorization | Function     |
 
-The "api" folder in Visual Studio Code will now contain a new Azure Functions project along with a new function called "GetProducts".
+The "api" folder in Visual Studio Code will now contain an Azure Functions project along with a new function called "GetProducts".
 
 1. Replace the code in the "GetProducts/index.ts" file with the following...
 
