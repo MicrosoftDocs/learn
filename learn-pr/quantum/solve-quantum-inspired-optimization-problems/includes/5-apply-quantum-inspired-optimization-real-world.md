@@ -9,7 +9,7 @@ This short animation shows one possible way an optimizer might distribute the mi
 In this next part, we'll use quantum-inspired optimization to solve the problem.
 
 > [!NOTE]
-> This problem is known as a *number partitioning problem*. Although you can apply other heuristics to solve this type of problem, the freight ship problem is a good introductory way to illustrate how to apply QIO concepts.
+> This problem is known as a *number partitioning problem*. We'll use the freight ship problem to illustrate QIO concepts and how to use the Azure Quantum service, as it is a familiar and easily understood example. Although we are using QIO, many other heuristics can be successfully applied to find a solution. In later modules, we'll tackle a more challenging example, where we see an advantage with QIO.
 
 ## Express the problem
 
