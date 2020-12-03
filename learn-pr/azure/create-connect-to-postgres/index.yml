@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.create-connect-to-azure-database-postgresql
+uid: learn.create-and-connect-to-azure-database-postgresql
 metadata:
   title: Create and connect to an Azure Database for PostgreSQL
   description: Azure Database for PostgreSQL is a fully managed relational database solution. Learn how - and when - to use it. You’ll review common tools, and use them to create a database and query it from an ASP.NET app.
@@ -28,14 +28,14 @@ products:
 - azure
 - azure-database-postgresql
 units:
-- learn.create-connect-to-azure-database-postgresql.1-introduction
-- learn.create-connect-to-azure-database-postgresql.2-create-database-azure-database-postgresql
-- learn.create-connect-to-azure-database-postgresql.3-exercise-create-database
-- learn.create-connect-to-azure-database-postgresql.4-connect-develop-your-database
-- learn.create-connect-to-azure-database-postgresql.5-exercise-create-basic-schema
-- learn.create-connect-to-azure-database-postgresql.6-connect-app-to-database
-- learn.create-connect-to-azure-database-postgresql.7-exercise-use-database-app
-- learn.create-connect-to-azure-database-postgresql.8-knowledge-check
-- learn.create-connect-to-azure-database-postgresql.9-summary
+- learn.create-and-connect-to-azure-database-postgresql.1-introduction
+- learn.create-and-connect-to-azure-database-postgresql.2-create-database-azure-database-postgresql
+- learn.create-and-connect-to-azure-database-postgresql.3-exercise-create-database
+- learn.create-and-connect-to-azure-database-postgresql.4-connect-develop-your-database
+- learn.create-and-connect-to-azure-database-postgresql.5-exercise-create-basic-schema
+- learn.create-and-connect-to-azure-database-postgresql.6-connect-app-to-database
+- learn.create-and-connect-to-azure-database-postgresql.7-exercise-use-database-app
+- learn.create-and-connect-to-azure-database-postgresql.8-knowledge-check
+- learn.create-and-connect-to-azure-database-postgresql.9-summary
 badge:
-  uid: learn.create-connect-to-azure-database-postgresql.badge
+  uid: learn.create-and-connect-to-azure-database-postgresql.badge
