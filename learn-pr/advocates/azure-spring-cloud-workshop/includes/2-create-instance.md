@@ -21,6 +21,12 @@ Ensure your default subscription is the one you intend to use for this lab, and 
 az account set --subscription <SUBSCRIPTION_ID>
 ```
 
+Install the `spring-cloud` extension for Azure CLI, by running:
+
+```bash
+az extension add -n spring-cloud -y
+```
+
 **Congratulations, the Azure CLI is now ready to create your first cluster!**
 
 ## Create an Azure Spring Cloud instance
