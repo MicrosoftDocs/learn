@@ -17,7 +17,7 @@ quiz:
 
   - content: "What is a role definition in Azure?"
     choices:
-    - content: "A collection of permissions with a name that is assignable to a user, group, or application"
+    - content: "A collection of permissions with a name that is assignable to a user, group, or application."
       isCorrect: true
       explanation: "A role definition in Azure is a collection of permissions with a name that you can assign to a user, group, or application."
     - content: "The collection of users, groups, or applications that have permissions to a role."
