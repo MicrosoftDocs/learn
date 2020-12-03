@@ -54,7 +54,7 @@ name: Terraform Plan
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   terraform:
