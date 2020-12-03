@@ -1,14 +1,14 @@
 Identity provides the basis for a large part of security assurance. It enables access based on identity authentication and authorization controls in cloud services to protect data and resources and to decide which requests should be permitted.
 
-Identity and access management (IAM) is a security boundary in the public cloud. It must be treated as the foundation of any secure and fully compliant public cloud architecture. Azure offers a comprehensive set of services, tools, and reference architectures to help organizations build highly secure, operationally efficient environments as outlined here.
+Identity and access management (IAM) is a security boundary in the public cloud. The foundation of any secure and fully compliant public cloud architecture. Azure offers a comprehensive set of services, tools, and reference architectures to help organizations build highly secure, operationally efficient environments as outlined here.
 
 This unit examines design considerations and recommendations related to IAM in an enterprise environment.
 
 ## Plan for identity and access management
 
-Enterprise organizations typically follow a least-privileged approach to operational access. This model should be expanded to consider Azure through Azure Active Directory (Azure AD) role-based access control (RBAC) and custom role definitions. It's critical to plan how to govern control-plane and data-plane access to resources in Azure. Any design for IAM and RBAC must meet regulatory, security, and operational requirements before it can be accepted.
+Enterprise organizations typically follow a least-privileged approach to operational access. This model should be considered for Azure through the Azure Active Directory (Azure AD) role-based access control (RBAC) and custom role definitions. It's critical to plan how to govern control-plane and data-plane access to resources in Azure. Any design for IAM and RBAC must meet regulatory, security, and operational requirements before it can be accepted.
 
-Identity and access management is a multistep process that involves careful planning for identity integration and other security considerations, such as blocking legacy authentication and planning for modern passwords. Staging planning also involves selection of business-to-business or business-to-consumer identity and access management. While these requirements vary, there are common design considerations and recommendations to consider for an enterprise landing zone.
+Identity and access management is a multistep process that involves careful planning for identity integration and other security considerations, such as blocking legacy authentication and planning for modern passwords. Staging planning also involves the selection of business-to-business or business-to-consumer identity and access management. While these requirements vary, there are common design considerations and recommendations to consider for an enterprise landing zone.
 
 :::image type="content" source="../media/3-identity-access-management.png" alt-text="Diagram that shows identity and access management." lightbox="../media/3-identity-access-management-large.png":::
 
@@ -87,14 +87,14 @@ When you plan for role-based access, use custom RBAC role definitions within the
   }
   ```
 
-- **Subscription owner**: Delegated role for subscription owner derived from subscription owner role.
+- **Subscription owner**: A delegated role for subscription owner derived from subscription owner role.
 
   ```json
   {
     "Name": "Subscription owner",
     "Id": "88888888-8888-8888-8888-888888888888",
     "IsCustom": true,
-    "Description": "Delegated role for subscription owner derived from subscription owner role.",
+    "Description": "A delegated role for subscription owner derived from subscription owner role.",
     "Actions": [
       "*"
     ],
@@ -171,7 +171,7 @@ Don't add users directly to Azure resource scopes. This lack of centralized mana
 
 ## Plan for authentication inside a landing zone
 
-A critical design decision that an enterprise organization must make when adopting Azure is whether to extend an existing on-premises identity domain into Azure or to create a brand new one. Requirements for authentication inside the landing zone should be thoroughly assessed and incorporated into plans to deploy Active Directory Domain Services (AD DS) in Windows Server, Azure AD DS, or both. Most Azure environments will use at least Azure AD for Azure fabric authentication and AD DS local host authentication and group policy management.
+A critical design decision that an enterprise organization must make when adopting Azure is whether to extend an existing on-premises identity domain into Azure or to create a brand new one. Requirements for authentication inside the landing zone should be thoroughly assessed and incorporated into plans to deploy Active Directory Domain Services (AD DS) in Windows Server, Azure AD DS, or both. Most Azure environments will use at least Azure AD for Azure fabric authentication and AD DS localhost authentication and group policy management.
 
 ### Design recommendations and considerations for authentication inside a landing zone
 
