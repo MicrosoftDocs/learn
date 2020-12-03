@@ -34,7 +34,7 @@ units:
 - learn.create-connect-to-azure-database-postgresql.4-connect-develop-your-database
 - learn.create-connect-to-azure-database-postgresql.5-exercise-create-basic-schema
 - learn.create-connect-to-azure-database-postgresql.6-connect-app-to-database
-- learn.create-connect-to-azure-database-postgresql.7-exercise-use-database-in-app
+- learn.create-connect-to-azure-database-postgresql.7-exercise-use-database-app
 - learn.create-connect-to-azure-database-postgresql.8-knowledge-check
 - learn.create-connect-to-azure-database-postgresql.9-summary
 badge:
