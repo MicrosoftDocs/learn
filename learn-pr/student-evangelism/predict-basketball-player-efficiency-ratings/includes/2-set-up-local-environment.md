@@ -1,60 +1,60 @@
-In *Space Jam: A New Legacy* we see NBA star LeBron James, passionate about basketball and his son, Dom, passionate about digital technology. Inspired by their passions that are seemingly so different, we're going to dive into how coding can play a role in basketball, particularly in understanding players based on their stats.
+In *Space Jam: A New Legacy* we see NBA star LeBron James, passionate about basketball, in contrast to his son, Dom, who is passionate about digital technology. With those seemingly different passions in mind, you'll now dive into how coding can play a role in basketball, particularly in understanding players based on their stats.
 
-Before jumping into the module, be sure to make sure your environment is setup and ready to go. For this module, you will need a coding editor (we use Visual Studio Code), Python, and Jupyter notebooks (we use the Python extension for Visual Studio Code).
+Before jumping into the module, make sure your environment is set up and ready to go. You'll need a coding editor (we use Visual Studio Code), Python, and Jupyter notebooks. If you're using Visual Studio Code, make sure you have the Python extension installed.
 
-If you haven't yet installed Visual Studio Code, you can find guides on the [Visual Studio Code Learn to Code site](https://aka.ms/LearnOnVSCode?azure-portal=true). Here, you can also find a Coding Pack for Python for Windows that will install everything you need for this module. If you're not on Windows, you can find a guide for setting up your environment on the [Data Science in Visual Studio Code docs page](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true).
+If you haven't yet installed Visual Studio Code, you can find guides on the Visual Studio Code [Learn to Code site](https://aka.ms/LearnOnVSCode?azure-portal=true). On the site, you can also find a Python coding pack for Windows that will install everything you need for this module. If you don't use Windows and you want a guide to help you set up your environment, see [Data science in Visual Studio Code](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true).
 
-## Set up Visual Studio Code with a new Jupyter file
+## Create a new Jupyter file in Visual Studio Code
 
-Once you have your environment setup, you should create a folder called space-jam-anl wherever you store code on your computer. This can be anywhere, for example, on your Desktop. 
+After you set up your environment, create a folder called *space-jam-anl* wherever you store code on your computer. For example, you can place the folder on your desktop: 
 
-![New space-jam-anl folder created on the Desktop](../media/new-folder.png)
+:::image type="content" source="../media/new-folder.png" alt-text="Screenshot showing the new space-jam-anl folder created on the desktop.":::
 
-Open Visual Studio Code, and from the Welcome tab, click "Open Folder". You can also do this by clicking File -> Open... and navigating to the folder you just created.
+Open Visual Studio Code. Then on the **Welcome** tab, select **Open Folder**. You can also open the folder by selecting **File** > **Open** and then going to the folder you created.
 
-![Open the space-jam-anl folder in Visual Studio Code](../media/open-folder.png)
+:::image type="content" source="../media/open-folder.png" alt-text="Screenshot showing the open space-jam-anl folder in Visual Studio Code.":::
 
-Create a new file in the space-jam-anl folder called space-jam-anl.ipynb by clicking on the new file icon next to the folder name in the Explorer.
+In the **Explorer**, select the **New File** icon next to the *space-jam-anl* folder, and then create a new file called *space-jam-anl.ipynb*.
 
-![Create the space-jam-anl.ipynb file in Visual Studio Code](../media/new-file.png)
+:::image type="content" source="../media/new-file.png" alt-text="Screenshot showing where to create the new file in Visual Studio Code.":::
 
-Make sure the file opens into a notebook and that the Jupyter server is connected and the kernel is pointing to the desired Python version.
+Make sure that the file opens in a notebook, that the Jupyter server is connected, and that the kernel points to the correct Python version.
 
-![Screenshot of Visual Studio Code showing the space-jam-anl.ipynb file loaded.](../media/jupyter-file.png)
+:::image type="content" source="../media/jupyter-file.png" alt-text="Screenshot of Visual Studio Code, showing the loaded file.":::
 
-## Download data with basketball stats
+## Download data for basketball players
 
-Next, you will need some data. While you can gather data on your own, we have gathered data from 47 anonymous basketball players to use throughout this module. You can download the data by heading to the [player_data.csv on GitHub](https://aka.ms/LearnWithDrG/Basketball/Data1?azure-portal=true) and downloading the CSV file. Make sure you save the data in a file called player_data.csv and save it in the space-jam-anl folder you just created.
+Next, you need some data. You can gather data on your own, but in this module you'll use data we gathered from 47 anonymous basketball players. Download the CSV file at [*player_data.csv* on GitHub](https://aka.ms/LearnWithDrG/Basketball/Data1?azure-portal=true). Save the *player_data.csv* file in your *space-jam-anl* folder.
 
-Visual Studio Code should show you this data if you click on the CSV file.
+Select the CSV file to see the data in Visual Studio Code.
 
-![Viewing the CSV file in Visual Studio Code](../media/csv-in-visual-studio-code.png)
+:::image type="content" source="../media/csv-in-visual-studio-code.png" alt-text="Screenshot showing the CSV file in Visual Studio Code.":::
 
-## Check local setup with Python libraries
+## Check the local setup with Python libraries
 
-Now that you have your local environment and data ready to go, you should check to make sure everything is setup properly.
+Now that your local environment and data are ready to go, make sure everything is set up properly.
 
-In the top cell of the space-jam-anl.ipynb file, import the Pandas library as pd. This will allow you to call Pandas functions using `pd.`.
+In the top cell of the *space-jam-anl.ipynb* file, import the pandas library as `pd`. This setting allows you to call pandas functions by using `pd.`.
 
 ```python
 import pandas as pd
 ```
 
-If that completes, successfully, you should see a [1] next to the cell and no output.
+If that command finishes successfully, you should see **[1]** next to the cell and no output.
 
-![Showing a successful Pandas import in Visual Studio Code](../media/successful-pandas-import.png)
+:::image type="content" source="../media/successful-pandas-import.png" alt-text="Screenshot showing a successful pandas import in Visual Studio Code.":::
 
-Next, you will make sure you can import the data into your coding environment by using the Pandas function `read_csv`. 
+Next, make sure you can import the data into your coding environment by using the pandas function `read_csv`. 
 
 ```python
-# Import data from the CSV file to a DataFrame.
+# Import data from the CSV file to a pandas DataFrame.
 player_df = pd.read_csv('player_data.csv')
 ```
 
-If that is successful, you should see a [2] next to the cell and no output.
+If that command succeeds, you should see **[2]** next to the cell and no output.
 
-![Showing a successful data import in Visual Studio Code](../media/successful-data-import.png)
+:::image type="content" source="../media/successful-data-import.png" alt-text="Screenshot showing a successful data import in Visual Studio Code.":::
 
-Now you're ready to start exploring and cleansing your data!
+Now you're ready to start exploring and cleansing your data.
 
-© 2020 Warner Bros. Ent. All Rights Reserved
+© 2020 Warner Bros. Ent. All Rights Reserved.

@@ -1,4 +1,4 @@
-![Logo for Space Jam: A New Legacy.](../media/SpaceJamEndCard.png)
+:::image type="content" source="../media/SpaceJamEndCard.png" alt-text="Logo for Space Jam: A New Legacy.":::
 
 Welcome to the jam! In the animated and live-action film *Space Jam: A New Legacy*, NBA champion and cultural icon LeBron James goes on an epic adventure alongside the timeless character Bugs Bunny. Along with director Malcolm D. Lee, the innovative filmmaking team includes Ryan Coogler and Maverick Carter.  
 
@@ -16,7 +16,7 @@ This module is part of a multimodal approach to learning. So you can also follow
 
  In this module, you will:
 
-- Use Python, Pandas, and Visual Studio Code.
+- Use Python, pandas, and Visual Studio Code.
 - Cleanse and manipulate data that requires critical analysis.
 - Use machine learning to cleanse and complete data.
 - Prepare data to be used for multiple customer-facing needs.
