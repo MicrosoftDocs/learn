@@ -1,4 +1,4 @@
-In this module, you'll learn about quantum-inspired algorithms. In particular, you'll see how they can be applied to solve optimization problems, which is an area called quantum-inspired optimization (QIO). In this module, we'll look at Interplanet Express, a space freight company that specializes in mineral transports.
+In this module, you'll learn about an area called quantum-inspired optimization (QIO). These are quantum-inspired algorithms that are applied to solve optimization problems. In this module, we'll look at Interplanet Express, a space freight company that specializes in mineral transports.
 
 ![An illustration that shows two space ships that need to be loaded with minerals as evenly as possible](../media/interplanet_express.png)
 
@@ -8,7 +8,7 @@ Interplanet Express has just been hired to transport a rare mineral from a recen
 
 In this module you'll:
 
-- Learn about the origins of quantum-inspired algorithms.
+- Learn about the origins of quantum-inspired optimization.
 - See which kinds of problems are best suited to these techniques.
 - Understand how algorithms inspired by physical processes are used to solve difficult problems.
 - Solve a combinatorial optimization problem using the Azure Quantum optimization service.
