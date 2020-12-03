@@ -9,7 +9,6 @@ metadata:
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: dev-lang-csharp-java-node-python-etc
 durationInMinutes: 3
 content: |
   [!include[](includes/6-connect-an-app-to-database.md)]

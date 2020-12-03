@@ -171,8 +171,6 @@ The data for each user will be _userID_, _userName_, and _userAge_.
 
 5. Under **Settings**, select **Connection strings**. Copy the **ADO.NET** connection string to the clipboard.
 
-   ![The connection string pane in the Azure portal.](../media/5-connection-string-annotated.png)
-
 6. Return to the code editor. Replace the value of the **_connectionString_ variable on line 14** with the value from the clipboard. In the connection string, **replace the text `{your_password}` with the password for the database** and **replace the text {your_database} with `paymentapp`**. Leave the quotation marks around your connection string.
 
 The payment string will read:

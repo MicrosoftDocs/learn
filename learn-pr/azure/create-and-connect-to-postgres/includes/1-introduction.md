@@ -25,7 +25,7 @@ Throughout this module, we’ll be using an example scenario to explain key Post
 
 In this scenario, you work for Woodgrove Bank, and you’ve been asked to develop a new contactless payment app that works from six feet away. You’ve already created a proof-of-concept app that uses a relational database, hosted on an on-premises server. Development continues, with plans to trial the app in a small city.
 
-You realise the trial will bring many new users and high volumes of new data. The on-premises server could become overloaded, causing slow transaction times or timeout errors. The database solution must be scaled, both for capacity and performance. For maximum utility and data redundancy, it’s also better to host data in more than one location, which will require a move away from the current on-premises database server - without compromising security.
+You realize the trial will bring many new users and high volumes of new data. The on-premises server could become overloaded, causing slow transaction times or timeout errors. The database solution must be scaled, both for capacity and performance. For maximum utility and data redundancy, it’s also better to host data in more than one location, which will require a move away from the current on-premises database server - without compromising security.
 
 With this scenario in mind, over the rest of the module, we’ll set up an Azure Database for PostgreSQL instance and connect it to an ASP.NET app for development. We’ll go through the concepts that underlie how we’re going about doing this, and why. 
 
