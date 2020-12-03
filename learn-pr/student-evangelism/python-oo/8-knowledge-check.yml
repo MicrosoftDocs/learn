@@ -19,8 +19,10 @@ quiz:
       choices:
         - content: They're the same thing.
           isCorrect: false
-        - content: A class is a blueprint. An object is the concrete instance you built from the blueprint.
+          explanation: They're not the same thing. A class is a blueprint. The object is what you create from the blueprint and what actual is created when you run your program.
+        - content: A class is a blueprint. An object is the concrete instance you build from the blueprint.
           isCorrect: true
+          explanation: A class is where you write all the code. You later create an instance of a the class, a so called object.
         - content: A class has data, an object does not.
           isCorrect: false
           explanation: The class is the object's blueprint. Whatever the class has, the object has as well.
@@ -29,8 +31,9 @@ quiz:
           explanation: The class is the object's blueprint. Whatever the class has, the object has as well.
     - content: How does Python implement accessors?
       choices:
-        - content: It uses prefixes, one underscore `_` in the beginning of the name indicates this variable is internal. Two underscores `__` will make the variable _private_ and will raise an exception if assigned.
+        - content: It uses prefixes, one underscore `_` in the beginning of the name indicates this variable is _protected_. Two underscores `__` will make the variable _private_ and will raise an exception if assigned.
           isCorrect: true
+          explanation: Using prefixes to the variable name is how Python using accessors and able to hide your data at different levels.
         - content: It uses the keyword _private_ and _public_.
           isCorrect: false
           explanation: Languages like Java and C# for example uses private and public. Python uses prefixes on the naming of the variable.
@@ -47,9 +50,10 @@ quiz:
           explanation: While it's true that `self` refers to the object instance, you cannot use the `this` keyword to refer to an object instance.
         - content: The `self` keyword refers to underlying class of the object.
           isCorrect: false
+          explanation: The `self` keyword refers to the underlying object instance, not the class.
         - content: The only time the `self` keyword is used is to refer to members of the object, and is passed as a parameter.
           isCorrect: false
           explanation: It's true that `self` is passed as a parameter if the method wants to refer to members of the object. However, you need `self` as well when you add variables to the object instance at construction time. 
         - content: The `self` keyword refers to the object instance. Variables that are part of the object instance needs to be assigned to self.  The `self` keyword is also passed to every method of a class that needs to access the object instance.
           isCorrect: true
-          explanation: Python makes heavy use of decorators, these two mentioned decorators don't exist.
+          explanation: The `self` keyword is passed to methods that needs access to members on the object. In any kind of communication with the object instance, the `self` keyword needs to be used. It's used to refer to attribute on the instance as well as methods. 

@@ -9,7 +9,11 @@ All paradigms of programming are centered around solving problems. Programs are 
 
 Lets try to define what OOP is by comparing it to another paradigm, procedural programming. Procedural programming sets out to solve a given problem by calling procedures, also known as functions or methods. Functions and variables are constructed to address the various phases described above.
 
-The OOP paradigm is no different in that aspect, but what really makes it stand out is how it looks upon the world. Compared to procedural programming, OOP _takes a step_ back and tries to look at the bigger picture. Rather than just working on data, and taking it from one phase to the next, it tries to understand the world in which the data operates. It does so by _modeling_ what it sees. During this _modeling_ phase, actors are identified as well as their traits and their behavior. Actors are made into objects, the traits are encoded as data on the objects and the behaviors are functions that also get added to the object.
+The OOP paradigm is no different in that aspect, but what really makes it stand out is how it looks upon the world. Compared to procedural programming, OOP _takes a step_ back and tries to look at the bigger picture. Rather than just working on data, and taking it from one phase to the next, it tries to understand the world in which the data operates. It does so by _modeling_ what it sees.
+
+### OOP Modeling, identify concepts
+
+During this _modeling_ phase, you look at a description of a domain and try to analyze the text on what takes place. The first step is in identifying Actors. They are called Actors as they _act_ and performs an action, for example a printer (actor) prints (action). Once actors are identified, you look at _what_ they do, their behavior. Then you look at description of the actors and any data that's needed to carry out the action. Actors are made into objects, the traits are encoded as data on the objects and the behaviors are functions that also get added to the object.
 
 The idea is then that data on objects, can be altered by calling functions on the objects themselves. There's also the notion that objects _interact_ with one another to achieve a tangible result.  
 

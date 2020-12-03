@@ -52,7 +52,7 @@ The way Python accomplishes data hiding is by adding prefixes to attribute names
   square._height = 3 # not a square anymore
 ```
 
-One leading underscore still allows for data to be modified, in Python referred to as _protected_. Can we do this better? Yes we can, by having two leading underscores `__`, so your square class now looks like this code:
+One leading underscore still allows for data to be modified, in Python referred to as _protected_. Can we do this better? Yes we can, by having two leading underscores `__`, referred to as _private_, so your square class now looks like this code:
 
 ```python
   class Square:
