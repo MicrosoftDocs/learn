@@ -165,9 +165,9 @@ Now, we can refresh the local web app in the browser and test the functionality 
 :::image type="content" source="../media/move-to-court.png" alt-text="Screenshot that shows moving players to the court.":::
 
 You should test this functionality:
+
 - Try to add more than five players to the court, and make sure the alert pops up.
 - Add players to the court, and then move them all back to the bench.
-- Make sure that the average PER for players on the court is accurate depending on the stats for the players for the given quarter.
-
+- Make sure that the average PER for players on the court is accurate depending on the stats for the players for a specific quarter.
 
 © 2020 Warner Bros. Ent. All Rights Reserved

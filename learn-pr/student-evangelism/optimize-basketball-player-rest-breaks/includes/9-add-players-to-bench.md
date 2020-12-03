@@ -8,6 +8,7 @@ Before we create a button for each player, we need to get the `div` in which the
 ```
 
 Now, we need to create an HTML button element for each player. This button element needs to have these elements:
+
 - `id`: We'll set the ID to the player's name so that it's easy to identify later on.
 - `className`: In the *styles.css* file, we can see a `playerButton` class, so we'll assign it here.
 - `onclick`: This function is what we want our app to call when the button is selected.
@@ -45,8 +46,9 @@ After we create the button, we can add the button to the bench area that we iden
 Before continuing, let's make sure that our app is working so far. If we tried to test our app at this point, we should be able to upload our *game_stats.csv* file. Then, the 16 characters should be added as buttons to the bench area.
 
 We can test our app in two ways:
-* Commit our changes to the main branch on GitHub, triggering the GitHub Action and redeploying our code to our Azure static web app. We'll do this option in a later unit.
-* Save the *main.js* file and open *index.html* locally in a browser. We'll do this option this time to save on testing time while we are still building our app. 
+
+- Commit our changes to the main branch on GitHub, triggering the GitHub Action and redeploying our code to our Azure static web app. We'll do this option in a later unit.
+- Save the *main.js* file and open *index.html* locally in a browser. We'll do this option this time to save on testing time while we are still building our app. 
 
 To test your web app locally, right-click the *index.html* file, and then select **Copy Path**.
 
@@ -55,6 +57,7 @@ To test your web app locally, right-click the *index.html* file, and then select
 Then, open a browser and paste the path in the address bar. You should see the same app that we saw when we first deployed it, but this time, we can actually start using it!
 
 In the upper-left corner of the app, select the **Choose File** button and find your *game_stats.csv* file. After the file uploads, a couple things should happen:
+
 1. The file name should appear next to the **Choose File** button.
 2. Your 16 players should be added to the bench.
 

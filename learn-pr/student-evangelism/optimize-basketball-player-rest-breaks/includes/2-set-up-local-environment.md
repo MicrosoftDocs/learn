@@ -18,7 +18,7 @@ Create a new file named *space-jam-anl.ipynb* in the *space-jam-anl* folder. To 
 
 :::image type="content" source="../media/new-file.png" alt-text="Screenshot that shows creating the *space-jam-anl.ipynb* file in Visual Studio Code.":::
 
-> [!NOTE] 
+> [!NOTE]
 > You also can just continue using the *space-jam-anl.ipynb* file that you created in the [preceding *Space Jam: A New Legacy*-inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true), if you already have that.
 
 Make sure the file opens into a notebook and that the Jupyter server is connected and the kernel is pointing to the correct Python version.

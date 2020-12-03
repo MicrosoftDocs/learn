@@ -2,7 +2,7 @@ To create a web app by using the Azure Static Web Apps extension, you'll use a G
 
 In this case, we'll use the Static Web Vanilla Basic repo template. Before continuing, make sure you have your GitHub account, and that you're signed in to GitHub in a web browser.
 
-> [!NOTE] 
+> [!NOTE]
 > You also can create a basic web app without deploying it to Azure. For the steps to follow, see the [Build a simple website](/learn/modules/build-simple-website?azure-portal=true) Learn module.
 
 ## Create the static web app repo
@@ -46,16 +46,17 @@ Before we start modifying the web app, let's make sure it can deploy successfull
 :::image type="content" source="../media/create-static-web-app.png" alt-text="Screenshot that shows creating a static web app in Visual Studio Code.":::
 
 Follow the prompts. Accept all the default prompts except the name and the deployment branch:
-- **Static web app a name**: `space-jam-a-new-legacy-app`
-- **Deployment branch**: `main`
-- **Web App Location**: `/`
-- **Azure Functions Location**: `/`
-- **Build path**: `build`
-- **Location**: `WESTUS2` (or whatever is closest to you geographically!)
+
+- **Static web app a name**: *space-jam-a-new-legacy-app*
+- **Deployment branch**: *main*
+- **Web App Location**: */*
+- **Azure Functions Location**: */*
+- **Build path**: *build*
+- **Location**: *WESTUS2* (or whatever is closest to you geographically!)
 
 Then, you'll be prompted to view the GitHub action that's associated with this static web app. 
 
-![VSCode prompting to view the GitHub Action](../media/action-prompt.png)
+:::image type="content" source="../media/action-prompt.png" alt-text="Screenshot that shows a Visual Studio Code prompt to view the GitHub action.":::
 
 To go to the Actions page of your *space-jam-a-new-legacy-app* GitHub repo that you created at the beginning of this unit, select **Show Actions**.
 

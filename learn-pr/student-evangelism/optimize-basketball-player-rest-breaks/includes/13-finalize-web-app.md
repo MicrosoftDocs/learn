@@ -56,11 +56,11 @@ It's finally time! The app is finished! Now, we can test our app. Remember that 
 3. When the timer stops, adjust (or not) the players on the court versus players taking a break.
 4. When your lineup is locked in, select the **Start Q2** button. 
 
-:::image type="content" source="../media/final-test-1.png" alt-text="Screenshot that shows the test of the final web app.":::
+:::image type="content" source="../media/final-test-third-quarter.png" alt-text="Screenshot that shows the test of the final web app.":::
 
-Repeat steps 3 and 4 for all four quarters, and you should get to the end of the game!
+Repeat steps 3 and 4 for all four quarters, and then you should be at the end of the game!
 
-:::image type="content" source="../media/final-test-2.png" alt-text="Screenshot that shows finishing the first game in the web app.":::
+:::image type="content" source="../media/final-test-end.png" alt-text="Screenshot that shows finishing the first game in the web app.":::
 
 Congratulations! You finished your web app!
 

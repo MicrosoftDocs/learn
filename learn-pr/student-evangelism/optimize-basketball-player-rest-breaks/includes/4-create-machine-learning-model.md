@@ -48,7 +48,8 @@ With this Series, we can run a simulation of our player data. We want to see whe
 
 ## Train a machine learning model based on player data
 
-To train a machine learning model to predict a player PER by using specific player stats for a simulated game, we'll use all the data that we initially downloaded, including the human player data. To do this, we will need to split our data into two parts:
+To train a machine learning model to predict a player PER by using specific player stats for a simulated game, we'll use all the data that we initially downloaded, including the human player data. To do this, we'll need to split our data into two parts:
+
 * `X`: The *input* data we use to predict `y`.
 * `y`: The *output* value that you want the machine learning model to predict.
 
@@ -64,7 +65,7 @@ X = player_df_final.iloc[:, 7:-1].to_numpy()
 y = player_df_final.iloc[:, -1]
 ```
 
-Next, we need to train, or fit, the machine learning model. We're using scikit-learn's LinearRegression library, which is a pre-written linear regression machine learning model that will automatically learn how to predict `y` given `X`. For more information about how this training works, you can check out the [Developer's Intro to Data Science video series](https://www.youtube.com/playlist?list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE?azure-portal=true) and other [Microsoft Learn modules about data science](https://www.aka.ms/DevIntroDS_Learn?azure-portal=true).
+Next, we need to train, or fit, the machine learning model. We're using scikit-learn's LinearRegression library, which is a pre-written linear regression machine learning model that will automatically learn how to predict `y` based on `X`. For more information about how this training works, you can check out the [Developer's Intro to Data Science video series](https://www.youtube.com/playlist?list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE?azure-portal=true) and other [Microsoft Learn modules about data science](https://www.aka.ms/DevIntroDS_Learn?azure-portal=true).
 
 ```python
 # Define and fit the model.
@@ -72,13 +73,14 @@ lin_reg = LinearRegression()
 lin_reg.fit(X, y)
 ```
 
-With this code, we have a machine learning model (`lin_reg`) that we can use to predict PER given a set of the seven input stats that we used to train the model (TS%, AST, TO, USG, ORR, DRR, and REBR).
+With this code, we have a machine learning model (`lin_reg`) that we can use to predict PER based on a set of the seven input stats that we used to train the model (TS%, AST, TO, USG, ORR, DRR, and REBR).
 
 ## Test a machine learning model with random numbers based on standard deviation
 
-When you have fit that model, we can use the model to predict PER for a player given new data in the seven columns. Let's explore how this model performs. We can use the model to predict the PER for randomized data for the players over 10 iterations.
+When you have fit that model, we can use the model to predict PER for a player based on new data in the seven columns. Let's explore how this model performs. We can use the model to predict the PER for randomized data for the players over 10 iterations.
 
 For each iteration, we're doing to do the following:
+
 1. Create an empty DataFrame that contains only the player's names.
 1. For each of the stats for that player, generate a random number within the standard deviation for that player for that stat.
 1. Save that randomly generated number in the DataFrame.
@@ -109,7 +111,7 @@ for i in range(10):
     print('Iteration {}'.format(i+1) + ' \t' + game_df['PER'].idxmax() + ' \t' + game_df['PER'].idxmin())
 ```
 
-**Output**:
+Here's the output:
 
 | Iteration # | high PER | low PER |
 |---|---|---|
@@ -124,9 +126,10 @@ for i in range(10):
 | Iteration 9 | Speedy Gonzales | Penelope |
 | Iteration 10 | Elmer Fudd | Penelope |
 
-> [!NOTE] 
+
+> [!NOTE]
 > Your data will be different from the data shown here because each time we run this code, we generate a random number within the standard deviation for each relevant stat column. If it *is* identical, it was complete luck!
 
-Our methodology provides a variety of results that are inline with what we might expect given the stats: Lola and Speedy likely are some of the best players, based on PER. So, if we had in-game data, rather than random values based on the standard deviation, we could feasibly feed that data into this machine learning model and determine which player (the lowest PER player) we should give a water break to, and which we should leave in (the highest PER player). As the game continues, the stats for each player will change. If we see a high PER player's PER start to drop, we might consider giving that player a water break. The player's lower PER probably means that they're getting tired.
+Our methodology provides a variety of results that are inline with what we might expect based on the stats: Lola and Speedy likely are some of the best players, based on PER. So, if we had in-game data, rather than random values based on the standard deviation, we could feasibly feed that data into this machine learning model and determine which player (the lowest PER player) we should give a water break to, and which we should leave in (the highest PER player). As the game continues, the stats for each player will change. If we see a high PER player's PER start to drop, we might consider giving that player a water break. The player's lower PER probably means that they're getting tired.
 
 © 2020 Warner Bros. Ent. All Rights Reserved

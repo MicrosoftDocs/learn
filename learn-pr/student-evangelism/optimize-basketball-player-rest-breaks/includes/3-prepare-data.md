@@ -10,7 +10,7 @@ ts_df = player_df_final.iloc[26: , :]
 ts_df
 ```
 
-**Output**:
+Here's the output:
 
 || ID | player | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -34,6 +34,7 @@ ts_df
 <!--- Is tune_squad10, player ID 40, missing from this table? -->
 
 Let's understand this data a bit more. We can see that there are a number of columns that are acronyms. Let's break down our column names:
+
 * **ID**: A unique identifier for each player in the dataset
 * **player**: A unique identifer created to track which player is a Tune Squad player versus a human
 * **points**: Total points scored by a player in a season
@@ -54,7 +55,7 @@ Although many of these data points make sense in the context of basketball, we c
 
 The most important thing to understand is that each of these columns is data that can be counted during a game, expect for PER. PER, or *player efficiency rating*, is a calculation based on all the other player stats. PER determines "how good" a player is. This column can be used to predict how effective a player is during a game. When this module was written, the NBA player with the highest PER was Michael Jordan, with a rating of 27.91. The NBA player with the second highest rating, and with the highest rating of currently active NBA players, was LeBron James, with a score of 27.49.
 
-The calculation of PER isn't perfect, and some fans and data scientists might choose to evaluate players differently. But for the purposes of this module, we will use PER as the measurement to help make decisions about which player should be given a quick water break during a game.
+The calculation of PER isn't perfect, and some fans and data scientists might choose to evaluate players differently. But in this module, we' will use PER as the measurement to help make decisions about which player should be given a quick water break during a game.
 
 ## Import Tune Squad data to merge with player data
 
@@ -99,7 +100,7 @@ ts_df = pd.merge(ts_df, ts_name_df, on='ID', how='left', suffixes=('_type', '_na
 ts_df.head()
 ```
 
-**Output**:
+Here's the output:
 
 || ID | player_type | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER | player_name |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -109,10 +110,10 @@ ts_df.head()
 | 3 | 34 | tune_squad4 | 1743.0 | 1422.4 | 112.9 | 64.000000 | 36.300000 | 0.619 | 30.9 | 15.6 | 34.5 | 5.9 | 18.9 | 14.8 | 29.858714 | Foghorn Leghorn |
 | 4 | 35 | tune_squad5 | 1963.0 | 1539.1 | 117.4 | 59.972222 | 35.272973 | 0.633 | 32.3 | 16.2 | 34.0 | 5.9 | 19.8 | 13.1 | 27.160000 | Bugs Bunny |
 
-
 ## Organize the DataFrame for better readability
 
 Although it doesn't technically matter where each column is in a DataFrame, having the player name at the left, near the ID, makes most sense for readability. To move that column over so that's it's next to the ID column, we:
+
 1. Create a list of the columns.
 1. Remove the **player_name** column from the list (we know it's at the end, so we can simply pop it off the list).
 1. Put **player_name** in the second position of the column list, replacing the **player_type** column.
@@ -129,7 +130,7 @@ ts_df = ts_df[column_list]
 ts_df.head()
 ```
 
-**Output**:
+Here's the output:
 
 | | ID | player_name | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|

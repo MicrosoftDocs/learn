@@ -27,7 +27,7 @@ game_df = game_df.swaplevel()
 game_df
 ```
 
-**Output**:
+Here's the output:
 
 | minutes | player_name | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
 |--|--|--|--|--|--|--|--|--|--|

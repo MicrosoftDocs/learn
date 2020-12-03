@@ -3,6 +3,7 @@ Now that you have your Azure Static Web Apps project created on GitHub and conne
 We'll build a *very* basic app. If you want, you can continue building up your web app after you complete the module to make it look better. We're going to focus on the functionality of connecting data with a web app.
 
 Although the rest of this module will include explanations for the code that we're writing, you have two options for actually writing the functionality for this web app:
+
 * Use [CodeTour](https://aka.ms/codetour-mslearn) and be guided through writing the JavaScript from within Visual Studio Code.
 * Copy and paste code from this module as you did with Python code for the Jupyter notebooks.
 

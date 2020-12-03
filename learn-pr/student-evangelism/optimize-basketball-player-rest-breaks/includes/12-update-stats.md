@@ -5,39 +5,40 @@ Three functions are needed for the coach to actually run each quarter of the gam
 At the end of each quarter, we'll want to make sure that the coach can see the updated PER stats for each player, so the coach can decide whether they want to change the lineup. This function is similar to the `addStatsToGame()` function that we wrote in a previous unit. 
 
 The two differences with this new function are:
+
 - We can update the player cards instead of creating them.
 - We now have players on the court, and we can calculate the PER based on the new stats for that quarter.
 
 ```javascript
-// At the start of each quarter to do two things: 1. Ensure the players
-// currently on the court have the correct PER represented and 2. Update the stats 
-// for each player for the current quarter
+// At the start of each quarter to do two things: 1) Ensure the players
+// currently on the court have the correct PER represented, and 2) Update the stats
+// for each player for the current quarter.
 function updateStatsInGame() {
-    // For each player, update their player stat card to show the PER for that player for the 
-    // given quarter
+    // For each player, update their player stat card to show the PER for that player for 
+    // a specific quarter.
     for (let [playerName, playerStats] of playerMap.entries()) {
         document.getElementById(playerName+"_card").children[1].innerHTML = "PER: "+playerStats[currentQuarter];
     }
 
-    // Reset the current quarter's total PER
+    // Reset the current quarter's total PER.
     quarterPER = 0;
     quarterAvePER = 0;
 
-    // Get a list of all of the players currently on the court
+    // Get a list of all of the players currently on the court.
     var currentPlayers = document.getElementById('playersOnCourt').children;
 
-    // Loop through each of the players currently on the court
+    // Loop through each of the players currently on the court.
     for( var playerIndex = 0; playerIndex < currentPlayers.length; playerIndex++) {
-        // Get the PER for each player for the given quarter
+        // Get the PER for each player for a specific quarter.
         playerName = currentPlayers[playerIndex].id;
         playerPER = playerMap.get(playerName)[currentQuarter];
         quarterPER += playerPER;
     }
 
-    // Get the average PER for the start of the quarter
+    // Get the average PER for the start of the quarter.
     quarterAvePER = quarterPER / playersOnCourt;
 
-    // Update the Current PER with the new average PER for the quarter now that the 
+    // Update the Current PER with the new average PER for the quarter now that the
     // stats have been updated.
     document.getElementById('currentPER').innerHTML = "Current PER: "+ quarterAvePER.toPrecision(4);
 }
@@ -46,6 +47,7 @@ function updateStatsInGame() {
 ## Write functionality for ending a quarter and the game
 
 We'll need two functions that act as "wrap-up" functions for our app:
+
 - `endQuarter()`: The purpose of this function is to preserve the PER of the quarter that finished and to initiate the next quarter to start (calling the `updateStatsInGame()` function).
 - `endGame()`: The purpose of this function is to let the coach know how they did!
 

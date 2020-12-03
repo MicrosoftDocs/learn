@@ -3,6 +3,7 @@
 Throughout this module, you used previously cleansed basketball data related to Tune Squad characters to train a machine learning model to create a sample dataset of PER values for 16 characters based on the standard deviation of the characters' statistics. Then, you used the generated dataset to create a web app that can be used between each quarter to optimize the PER of the players on the court and hopefully optimize the coaches chances of winning the game!
 
 You can continue exploring how to integrate Azure Static Web Apps and machine learning to create support applications for sports coaches, here are just a few ideas:
+
 - Sort the player cards based on the PER stat for that function.
 - Write an algorithm to determine the best lineup for each quarter.
 - Deploy your machine learning model and call it dynamically from within the web app.
