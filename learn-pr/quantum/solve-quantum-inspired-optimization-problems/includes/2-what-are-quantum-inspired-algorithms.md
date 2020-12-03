@@ -1,4 +1,6 @@
-There are many types of quantum-inspired algorithms. One commonly used quantum-inspired algorithm is based on a computational model called *adiabatic quantum computing*. This approach uses a concept from quantum physics known as the adiabatic theorem. When you apply that theorem to solve a problem, you:
+There are many types of quantum-inspired algorithms. Put simply, they are classical algorithms based on a quantum algorithms, where the essential quantum phenomenon that would provide the speed up can be classically emulated.
+
+Quantum-inspired optimization is a quantum-inspired algorithm based on emulating quantum tunneling as used in the adiabatic quantum optimization algorithm. This approach uses a concept from quantum physics known as the adiabatic theorem. When you apply that theorem to solve a problem, you:
 
 - First prepare a system and initialize it to its lowest energy state. For a simple system, one which we completely understand, this is easy to do.
 - Next, slowly transform that system into a more complex one that describes the problem you are trying to solve. The adiabatic theorem states that, as long as this transformation happens slowly enough, the system has time to adapt and will stay in that lowest energy configuration. When we're done with our transformations, we've solved our problem.
@@ -6,6 +8,8 @@ There are many types of quantum-inspired algorithms. One commonly used quantum-i
 A good analogy of this is to imagine you have a glass of water. If you move that glass slowly across a table, the contents won't spill because the system has time to adapt to its new configuration. If you were to move the glass quickly however, the system has been forced to change too quickly, and we have water everywhere.
 
 Adiabatic quantum computation is an area of active research that's already being used in the industry. A number of techniques have been developed to simulate this type of physics. These kinds of classical algorithms, which we can run on classical computers today, are also known as _quantum-inspired optimization_.
+
+In this module, we'll focus on quantum-inspired optimization, although it's important to remember that quantum-inspired is not just optimization, and similarly there are quantum optimization algorithms that do not have a quantum-inspired counterpart.
 
 ## What is quantum-inspired optimization (QIO)?
 
