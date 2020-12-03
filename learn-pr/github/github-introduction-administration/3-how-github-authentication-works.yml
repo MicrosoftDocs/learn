@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-introduction-administration.how-github-authentication-works
+title: How does GitHub authentication work?
+metadata:
+  title: How does GitHub authentication work?
+  description: Discover the ways in which administrators can configure GitHub authentication.
+  ms.date: 11/16/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-how-github-authentication-works.md)]

@@ -3,7 +3,7 @@ uid: learn.wwl.explore-roles-responsibilities-world-of-data
 metadata:
   title: Explore roles and responsibilities in the world of data
   description: "Explore roles and responsibilities in the world of data"
-  ms.date: 10/04/2020
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -23,7 +23,6 @@ roles:
 - administrator
 - business-user
 - data-engineer
-- student
 products:
 - azure
 units:
