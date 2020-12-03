@@ -70,8 +70,8 @@ Then, deploy the application:
 ```
 
 Browse to the URL returned by the deploy action and verify you database and application is working:
-<
-!--todo add screen shot-->
+
+<!--todo add screen shot-->
 
 ## Next steps
 
