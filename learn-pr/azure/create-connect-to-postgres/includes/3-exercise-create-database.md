@@ -14,11 +14,11 @@ The Azure Sandbox gives you a safe, sandboxed environment to use Azure resources
 
 1. Next, select **Create a resource**, **Databases**, and **Azure Database for PostgreSQL**. You can also use the **Search** functionality to find this category.
 
-    ![Create Azure Database for PostgreSQL.](../media/3a-create.png)
+    :::image type="content" source="../media/3a-create.png" alt-text="Create Azure Database for PostgreSQL":::
 
 1. Select **Create** in the **Single server** box.
 
-    ![Create single server deployment.](../media/3b-create-single-server.png)
+    :::image type="content" source="../media/3b-create-single-server.png" alt-text="Create single server deployment.":::
      > The portal will display a PostgreSQL server configuration screen.
 
 1. On the **Basics** tab, enter the following information:  
@@ -38,8 +38,8 @@ The Azure Sandbox gives you a safe, sandboxed environment to use Azure resources
     1. Note the password and server name down for later use.
     1. Select **Configure server** in the **Compute + storage** options.
     
-    ![Configuration form.](../media/3d-form.png)
-    
+    :::image type="content" source="../media/3d-form.png" alt-text="Configuration form.":::
+
 1. Scroll to the bottom of the page
     1. Select **35 days** in the **Backup Retention Period** section.
     1. Select **Geo-Redundant** in the **Backup Redundancy Options** section.
@@ -47,7 +47,7 @@ The Azure Sandbox gives you a safe, sandboxed environment to use Azure resources
     1. Select **OK**, in the blue box at the bottom of the page.
     1. Select **Review + create**, in the blue box at the bottom of the page.
 
-    ![Configure server options form.](../media/3e-form.png)
+    :::image type="content" source="../media/3e-form.png" alt-text="Configure server options form.":::
 
 1. Select **Create**, in the blue box at the bottom of the page.
 
