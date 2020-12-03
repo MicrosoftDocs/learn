@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-and-connect-to-azure-database-postgresql.7-exercise-use-database-in-app
+uid: learn.create-connect-to-azure-database-postgresql.7-exercise-use-database-app
 title: Exercise - Use a database in your app
 metadata:
   title: Exercise - Use a database in your app
@@ -13,4 +13,4 @@ durationInMinutes: 15
 azureSandbox: true
 interactive: bash
 content: |
-  [!include[](includes/7-exercise-use-database-in-app.md)]
+  [!include[](includes/7-exercise-use-database-app.md)]

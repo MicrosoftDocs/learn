@@ -34,10 +34,12 @@ The Azure Sandbox gives you a safe, sandboxed environment to use Azure resources
     |**Compute + storage**     |  Leave the default of **General Purpose**.       |
     |**Admin username**| **paymentadmin** |
     |**Password/Confirm Password**|  Choose a password.|
+    
     1. Note the password and server name down for later use.
     1. Select **Configure server** in the **Compute + storage** options.
+    
     ![Configuration form.](../media/3d-form.png)
-
+    
 1. Scroll to the bottom of the page
     1. Select **35 days** in the **Backup Retention Period** section.
     1. Select **Geo-Redundant** in the **Backup Redundancy Options** section.
