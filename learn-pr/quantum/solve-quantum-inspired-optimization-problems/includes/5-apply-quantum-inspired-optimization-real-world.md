@@ -198,11 +198,13 @@ The problem has 90 terms for 10 mineral chunks:
 
 That's a lot of terms for just 10 chunks! On closer inspection, you'll note that there are essentially duplicated terms that result from having squared the right hand side of the equation when building our cost function. For example, look at the last term: `{'w': 110, 'ids': [9, 8]}`. If you look through the rest of the terms, you'll find a symmetrical copy of it: `{'w': 110, 'ids': [8, 9]}`.
 
-This duplicate encodes the exact same information in our cost function. However, because we don't actually care about the value of the cost function (just the shape), we can omit these terms by a slight modification to our cost function:
+This duplicate encodes the exact same information in our cost function. However, because we don't actually care about the value of the cost function (just the shape), we can omit these terms as follows:
 
 ![An equation that reduces the number of terms in the previous cost function](../media/costfun-5.svg)
 
-In code, this means a small modification to the `createProblemForMineralWeights` function:
+Notice that we've expanded the square in our previous cost function to a summation over two indices $i$ and $j$. With the constraint $i<j$ we exclude symmetric copies of terms (as well as "constant" $i=j$ terms).
+
+Modify your `createProblemForMineralWeights` function as follows to implement the improved cost function:
 
 ```python
 def createSimplifiedProblemForMineralWeights(mineralWeights: List[int]) -> Problem:
