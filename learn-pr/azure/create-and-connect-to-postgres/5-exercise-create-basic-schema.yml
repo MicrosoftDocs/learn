@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-and-connect-to-azure-database-postgresql.5-exercise-create-basic-schema
-title: Exercise - Create a basic schema
+title: Exercise - Create a basic database schema
 metadata:
-  title: Exercise - Create a basic schema
+  title: Exercise - Create a basic database schema
   description: We connect to your database and create a basic schema
   ms.date: 10/23/2020
   author: tomreidnz

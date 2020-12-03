@@ -1,19 +1,32 @@
-Azure Database for PostgreSQL supports many different libraries and drivers that developers can use to develop applications. Most popular programming languages have libraries to connect and develop PostgreSQL databases.
+Another key feature of Azure Database for PostgreSQL is flexibility. It supports many different libraries and drivers that developers can use to develop applications. Nearly all popular  programming languages have libraries to connect and develop PostgreSQL databases.
 
 Most language client libraries used to connect to PostgreSQL server are external projects and are distributed independently. The libraries listed below are supported on the Windows, Linux, and Mac platforms.
 
+## Advantages of developing applications with PostgreSQL
 
+:::row:::
+:::column span="2":::
 
+PostgreSQL is a great database choice for most applications - it’s easy to use, and it’s flexible enough to survive requirement changes. As you develop your application, you may need to store new types of data. You can count on postgres to support your data types not available in other database solutions, such as MySQL. You can also add your own data types, operators, and index types.
 
-*Talking point: Developing with postgres*
+ :::column-end:::
+:::column span="2":::
+
+#### "If you're not tied to any legacy system and have the freedom to choose a database back-end, we recommend PostgreSQL, which achieves a fine balance between cost, features, speed and stability."
+
+###### \- The Definitive Guide to Django
+:::column-end:::
+:::row-end:::
+
+In our scenario, we’re rapidly developing our contactless payment app. Using Azure Database for PostgreSQL, we’ve done everything we need to set up the database for the app’s test deployment. We've hosted the database server and connected to it. Now we can quickly integrate our existing ASP.NET application with our database, and get back to developing the application, instead of spending time and money on managing the database. In the next exercise, we’ll walk you through how to close the loop - connecting your app to your postgres database.
 
 ::: zone pivot="csharp"
-Npgsql is an open-source ADO.NET Data Provider for PostgreSQL, it allows programs written in C#, Visual Basic, F# to access the PostgreSQL database server. It is implemented in 100% C# code, is free and is open source.
+Npgsql is an open-source ADO.NET Data Provider for PostgreSQL, it allows programs written in C#, Visual Basic, F# to access the PostgreSQL database server. It's implemented in 100% C# code, is free and is open source.
 
 Also, providers have been written for Entity Framework Core and for Entity Framework 6.x.
 ::: zone-end
 ::: zone pivot="java"
-JDBC is a Type 4 JDBC driver. The PostgreSQL JDBC Driver (PgJDBC for short) allows Java programs to connect to a PostgreSQL database using standard, database independent Java code. Is an open-source JDBC driver written in Pure Java (Type 4), and communicates in the PostgreSQL native network protocol.
+JDBC is a Type 4 JDBC driver. The PostgreSQL JDBC Driver (PgJDBC for short) allows Java programs to connect to a PostgreSQL database using standard, database-independent Java code. Is an open-source JDBC driver written in Pure Java (Type 4), and communicates in the PostgreSQL native network protocol.
 ::: zone-end
 ::: zone pivot="node"
 node-postgres is a Pure JavaScript non-blocking client and available as an npm package.
@@ -50,7 +63,7 @@ In most cases, clients will use the database/sql package instead of using this p
 php-pgsql is a database extension for php. To use PostgreSQL support, you need PostgreSQL 6.5 or later, PostgreSQL 8.0 or later to enable all PostgreSQL module features.
 ::: zone-end
 ::: zone pivot="odbc"
-psqlODBC is the official PostgreSQL ODBC Driver. It is released under the Library General Public License, or LGPL.
+psqlODBC is the official PostgreSQL ODBC Driver. It's released under the Library General Public License, or LGPL.
 
 The driver is currently maintained by a number of contributors to the PostgreSQL project.
 ::: zone-end
