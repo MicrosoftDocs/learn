@@ -19,13 +19,8 @@ Today, we can emulate adiabatic quantum algorithms by using quantum-inspired tec
 - In healthcare, QIO algorithms have been applied to optimize the pulse sequences that are used in an MRI scanner. With improved sequences, scans can be provided up to three times faster than previous ones. [1]
 - In materials design, OTI Lumionics have used QIO algorithms via Azure Quantum to achieve more accurate simulations for computational chemistry. [2]
 
-Applying QIO to real-world problems may offer businesses new insights or help lower costs by making their processes more efficient. QIO gives us the opportunity to:
-
-- Find a solution faster than other optimization techniques for a fixed use case and fixed quality of solution.
-- Find a higher quality solution than other optimization techniques for a fixed problem and fixed amount of time.
-- Use a more realistic model than other optimization techniques by extending the problem to consider more variables.
-
-Since QIO methods are heuristics, they're not guaranteed to find the optimal solution. Also, they don't always outperform other optimization techniques. In reality, it depends on the problem, and discovering what makes QIO perform better than other methods in some situations and not others is still an active area of research.
+Since QIO methods are heuristics, they're not guaranteed to find the optimal solution. Also, they don't always outperform other optimization techniques. In reality, it depends on the problem, and discovering what makes QIO perform better than other methods in some situations and not others is still an active area of research. However, as in the cases above, we have found that applying QIO to real-world problems can offer new insights and solutions across a range of industries [1], [2], [3].
 
 [1] https://news.microsoft.com/innovation-stories/quantum-computing-mri-cancer-treatment/
 [2] https://cloudblogs.microsoft.com/quantum/2020/01/21/oti-lumionics-accelerating-materials-design-microsoft-azure-quantum/
+[3] https://cloudblogs.microsoft.com/quantum/2020/08/04/jij-toyota-azure-quantum-reducing-carbon-emissions/
