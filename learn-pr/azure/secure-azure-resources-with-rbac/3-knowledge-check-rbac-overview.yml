@@ -17,13 +17,13 @@ quiz:
 
   - content: "What is a role definition in Azure?"
     choices:
-    - content: "A collection of permissions with a name that is assignable to a user, group, or application."
+    - content: "A collection of permissions with a name that is assignable to a user, group, or application"
       isCorrect: true
       explanation: "A role definition in Azure is a collection of permissions with a name that you can assign to a user, group, or application."
-    - content: "The collection of users, groups, or applications that have permissions to a role."
+    - content: "The collection of users, groups, or applications that have permissions to a role"
       isCorrect: false
       explanation: "You can view role assignments to see the list of users, groups, or applications that have permissions to a role."
-    - content: " The binding of a role to a security principal at a specific scope, to grant access."
+    - content: " The binding of a role to a security principal at a specific scope, to grant access"
       isCorrect: false
       explanation: "A role assignment is the process of binding a role to a security principal at a particular scope, for the purpose of granting access."
   - content: "Suppose an administrator wants to assign a role to allow a user to create and manage Azure resources but not be able to grant access to others. Which of the following built-in roles would support this?"
