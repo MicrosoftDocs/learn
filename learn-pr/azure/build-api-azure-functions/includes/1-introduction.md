@@ -11,15 +11,15 @@ Logistics specialists need to manage the inventory from all over the globe. You 
 In this module, you will:
 
 - Build an HTTP API using the Azure Functions extension for Visual Studio Code.
-- Connect the API to a Azure Cosmos DB database.
-- Secure the API with keys and implement CORS.
-- Consume the API from a web app.
+- Securely store sensitive data like database connection strings.
+- Learn how to modify Azure Functions to make them RESTful.
+- Specify who can access the API using CORS.
 
 ## Prerequisites
 
 Must have:
 
-- Basic understanding of web services and API concepts
+- Basic understanding of web services and API concepts, including HTTP Methods and REST
 - Knowledge of Azure Functions, including HTTP Triggers
 - [Node.js](https://nodejs.org/en/) installed
 - [Visual Studio Code](https://code.visualstudio.com/) installed
