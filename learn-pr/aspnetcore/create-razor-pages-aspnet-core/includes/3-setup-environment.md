@@ -51,13 +51,13 @@ The *:::no-loc text="Pages":::* directory is where all Razor Pages are stored an
 
 A Razor page has a *:::no-loc text=".cshtml":::* file extension. By convention, its associated *:::no-loc text="PageModel":::* C# class file uses the same name but with a *:::no-loc text=".cs":::* appended. For example, the Razor page *:::no-loc text="Index.cshtml":::* has an associated *:::no-loc text="PageModel":::* class file for *:::no-loc text="Index.cshtml.cs":::*.
 
-A model object defines data properties and encapsulates logic or operations related to those data properties. A *:::no-loc text="PageModel":::* is essentially the same thing, but is a model that more specifically encapsulates the data properties and logic operations scoped just to its Razor page. The `PageModel` class allows separation of the logic of a Razor page from its presentation. It defines page handler methods for requests sent to the page and for the data used to render the page. A handler method is the method that is executed as a result of a request. For example, an `OnGet` method in the Razor pages's `PageModel` class would be automatically executed for an HTTP GET request.
+A model object defines data properties and encapsulates logic or operations related to those data properties. A *:::no-loc text="PageModel":::* is essentially the same thing, but is a model that more specifically encapsulates the data properties and logic operations scoped just to its Razor page. The `PageModel` class allows separation of the logic of a Razor page from its presentation. It defines page handler methods for requests sent to the page and for the data used to render the page. A handler method is the method that is executed as a result of a request. For example, an `OnGet` method in the Razor Page's `PageModel` class would be automatically executed for an HTTP GET request.
 
 ## Models and the *:::no-loc text="Models":::* directory
 
 By convention, model class files are located in a *:::no-loc text="Models":::* directory. As previously mentioned, a model object defines data properties and encapsulates logic or operations related to those data properties.
 
-The *:::no-loc text="ContosoPets.Ui":::* project has a model class file named *:::no-loc text="Product.cs":::* stored in the *:::no-loc text="Models":::* directory. The `Product` model class defines the data properties for a product. All PageModels in the project that center on CRUD operations for products use this single `Product` model.
+The *:::no-loc text="ContosoPets.Ui":::* project has a model class file named *:::no-loc text="Product.cs":::* stored in the *:::no-loc text="Models":::* directory. The `Product` model class defines the data properties for a product. All PageModels in the project that focus on CRUD operations for products use this single `Product` model.
 
 ### Data annotations
 

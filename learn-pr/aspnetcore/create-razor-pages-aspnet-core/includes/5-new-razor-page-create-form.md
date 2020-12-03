@@ -23,13 +23,13 @@ The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently o
 
     * Creates a new Razor page named *:::no-loc text="Create.cshtml":::*.
     * Creates the Razor page's *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::*.
-    * Stores both new files in the *:::no-loc text="ContosoPets.Ui/Pages/Products":::* directory. By convention, the Razor page and its *:::no-loc text="PageModel":::* class file share the same name and location.
+    * Stores both new files in the *:::no-loc text="Pages/Products":::* directory. By convention, the Razor page and its *:::no-loc text="PageModel":::* class file share the same name and location.
 
 ## Examine the structure of a basic Razor Page
 
 1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 
-1. Open the new *:::no-loc text="Create.cshtml":::* Razor page, located in the *:::no-loc text="ContosoPets.Ui/Pages/Products":::* directory. Examine the file's markup:
+1. Open the new *:::no-loc text="Create.cshtml":::* Razor page, located in the *:::no-loc text="Pages/Products":::* directory. Examine the file's markup:
 
 	```cshtml
 	@page
@@ -67,7 +67,7 @@ A Razor Page supports Razor syntax which HTML and C# to be combined. The C# code
 
 ## Add form markup to the Create Razor page
 
-Open the *:::no-loc text="Create.cshtml":::* Razor page, located in the *:::no-loc text="ContosoPets.Ui/Pages/Products":::* directory. Replace the contents with the following, and save the changes.
+Open the *:::no-loc text="Create.cshtml":::* Razor page, located in the *:::no-loc text="Pages/Products":::* directory. Replace the contents with the following, and save the changes.
 
 ```cshtml
 @page
