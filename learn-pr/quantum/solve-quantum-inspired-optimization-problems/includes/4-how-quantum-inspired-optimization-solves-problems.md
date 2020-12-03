@@ -29,3 +29,17 @@ In quantum annealing, we frame our problem by giving assignments to our variable
 Initially we begin with the quantum state in a broad superposition over many possible assignments to the variables. Instead of varying the temperature, as we did in simulated annealing, we vary a parameter called the *quantum field strength*.
 
 This parameter defines the radius of neighboring states we can move to. As time goes on and we get closer to a solution, this radius becomes smaller and smaller. By the end of the annealing process, the system has settled into one particular low-energy configuration that can then be measured, which gives us the solution to the optimization problem. The most mathematically clean formulation of quantum annealing is called *adiabatic quantum optimization*, and this is what quantum-inspired methods attempt to emulate.
+
+## Bringing it all together
+
+In Azure Quantum we make available a range of physics-inspired and quantum-inspired techniques to solve discrete and combinatorial optimization problems:
+
+- **Simulated annealing**: A classical stochastic simulation method mimicking the slow cooling of a material (annealing) to remove imperfections [1]. A temperature is reduced according to a schedule. Thermal hops assist in escaping from local minima in the search space.
+- **Parallel tempering**:  A related classical optimization approach, where copies of a system are kept at different temperatures, automating the repeated heating and cooling in tempering approaches [2]. It can be used to accelerate both classical and (simulated) quantum annealing, as well as many other heuristics.
+- **Quantum Monte Carlo**: A quantum-inspired method. 
+
+Note that this is just a small subset of available techniques[3] and we continue to develop and add new solvers to the service.
+
+[1] S. Kirkpatrick, C. D. Gelatt, Jr., and M. P. Vecchi, “Optimization by Simulated Annealing,” Science (80-. )., vol. 220, p. 671, 1983. 
+[2] K. Hukushima and K. Nemoto, “Exchange {M}onte {C}arlo method and application to spin glass simulations,” J. Phys. Soc. Jpn., vol. 65, p. 1604, 1996.
+[3]	S. Mandrà, Z. Zhu, W. Wang, A. Perdomo-Ortiz, and H. ~G. Katzgraber, “Strengths and weaknesses of weak-strong cluster problems: A detailed overview of state-of-the-art classical heuristics versus quantum approaches,” Phys. Rev. A, vol. 94, p. 22337, 2016. 
