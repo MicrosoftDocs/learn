@@ -24,18 +24,18 @@ quiz:
     - content: "A modern endpoint management solution must provide data protection, ensure proper credentials are used, safeguard the devices and apps, and confirm security rules are in place based on your organizations requirements."
       isCorrect: true
       explanation: ""
-  - content: "What are the four Mobile Device Management (MDM) migration paths mentioned in this module?"
+  - content: "What are the five Mobile Device Management (MDM) migration paths mentioned in this module?"
     choices:
-    - content: "Migration paths: Limited or no existing management tools, existing third-party cloud management provider, existing on-premises management using Configuration Manager, and existing on-prem third-party management."
+    - content: "Migration paths: Limited or no existing management tools, existing third-party cloud management provider, existing on-premises management using Configuration Manager, existing on-premises group policy, and existing on-prem third-party management."
       isCorrect: true
       explanation: ""
     - content: "Migration paths: Limited devices, existing third-party devices, and existing on-premises devices."
       isCorrect: false
-      explanation: "Devices are part of what needs to be managed when determining your organization's future MDM direction."
+      explanation: "Devices are only a part of what needs to be managed when determining your organization's future MDM direction."
     - content: "Migration paths: No current end users, existing end users using third-party devices, and existing end users using on-premises devices."
       isCorrect: false
       explanation: "End users devices, apps, access, and security are part of what needs to be managed when determining your organization's future MDM direction."
-  - content: "If your organization has little to no modern endpoint management tools in use, what is the recommended path to endpoint management that is recommended in this module?"
+  - content: "If your organization has little to no modern endpoint management tools in use, what is the recommended path to endpoint management as mentioned in this module?"
     choices:
     - content: "Consider moving directly to the Azure cloud."
       isCorrect: false
@@ -45,4 +45,4 @@ quiz:
       explanation: ""
     - content: "Consider moving directly to co-management using with Microsoft Intune."
       isCorrect: false
-      explanation: "Microsoft Intune, which is available within Microsoft Endpoint Manager, is a cloud-based mobile device management (MDM) and mobile application management (MAM) provider for your apps and devices."
+      explanation: "If don't need to manage on-premises devices, Microsoft Intune will provide cloud-based mobile device management (MDM) and mobile application management (MAM) for your apps and devices. Co-management is concurrently managing on-premises Windows 10 devices with both Configuration Manager and Microsoft Intune."

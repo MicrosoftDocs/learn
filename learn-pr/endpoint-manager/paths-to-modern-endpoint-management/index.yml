@@ -17,10 +17,9 @@ abstract: |
   - Learn about the different benefits that each migration path offers.
   - Start planning the migration process to modern endpoint management. 
 prerequisites: | 
-  - Basic knowledge of endpoint management concepts
-  - Basic knowledge of Microsoft Endpoint Manager, Microsoft Intune, and Microsoft Endpoint Configuration Manager
+  - Basic knowledge of Microsoft Endpoint Manager and endpoint management concepts, see [Microsoft Endpoint Manager fundamentals](https://docs.microsoft.com/learn/paths/endpoint-manager-fundamentals/).
 iconUrl: http://via.placeholder.com/120x120
-ratingEnabled: false
+ratingEnabled: true
 levels:
 - beginner
 roles:

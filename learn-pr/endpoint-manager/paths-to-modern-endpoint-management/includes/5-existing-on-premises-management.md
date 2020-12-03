@@ -21,10 +21,15 @@ Benefits of using co-management:
 - Configuration Manager client health  
 - Azure Active Directory (Azure AD)  
 - Modern provisioning - Windows Autopilot  
-- Web-based admin for Config Manager 
+- Web-based admin for Configuration Manager 
 - Unified helpdesk and troubleshooting 
 - Cloud intelligence drive management 
 
+There are two main paths to reach co-management:
+
+- **Existing Configuration Manager clients**: You have Windows 10 devices that are already Configuration Manager clients. You set up hybrid Azure AD, and enroll them into Intune.
+- **New internet-based devices**: You have new Windows 10 devices that join Azure AD and automatically enroll to Intune. You install the Configuration Manager client to reach a co-management state.
+
 ## Next steps
 
-For detailed guidance when you currently use Microsoft Endpoint Configuration Manager as your on-premises management solution and need to understand your cloud management options, see the [Currently use Configuration Manager](https://docs.microsoft.com/mem/intune/fundamentals/deployment-guide-intune-setup#currently-use-configuration-manager?azure-portal=true).
+For detailed guidance when you currently use Microsoft Endpoint Configuration Manager as your on-premises management solution and need to understand your endpoint management options, see the [Currently use Configuration Manager](https://docs.microsoft.com/mem/intune/fundamentals/deployment-guide-intune-setup?azure-portal=true#currently-use-configuration-manager).

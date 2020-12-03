@@ -113,7 +113,7 @@ Identify the subtasks of *Learn about paths to modern endpoint management*
             - Safeguard the devices and apps that access your organization resources.
             - Confirm security rules are in place based on your organizations requirements.
     - Question #2: What are the four Mobile Device Management (MDM) migration paths mentioned in this module?
-        - Migration paths: Limited or no existing management tools, existing third-party cloud management provider, existing on-premises management using Configuration Manager, and existing on-prem third-party management.
+        - Migration paths: Limited or no existing management tools, existing third-party endpoint management provider, existing on-premises management using Configuration Manager, and existing on-prem third-party management.
     - Question #3: If you currently have no Mobile Device Management (MDM) solution and need to keep your corporate data safe by protecting data, apps, and devices that your employees use, as well as maximize the return on your investment, which endpoint management solution should you consider?
         - Move directly to cloud endpoint management using Microsoft Intune. For on-premises devices, use tenant attach or co-management with Microsoft Endpoint Configuration Manager.
 

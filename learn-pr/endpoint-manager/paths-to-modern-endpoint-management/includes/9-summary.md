@@ -5,7 +5,7 @@ In this module, you learned how to:
   - Determine your organization's endpoint migration starting point.
   - Understand the possible endpoint migrations paths.
   - Recognize the different benefits that each migration path offers.
-  - Begin the migration process to modern endpoint management. 
+  - Begin planning your migration process to modern endpoint management.
 
 Determine your mobile device management and mobile application management needs:
 -	[Get a free 90-day trial, evaluate Enterprise Mobility + Security (EMS)](https://go.microsoft.com/fwlink/p/?LinkID=2077047?azure-portal=true)

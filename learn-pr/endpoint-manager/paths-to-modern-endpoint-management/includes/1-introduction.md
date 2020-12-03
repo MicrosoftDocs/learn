@@ -1,8 +1,4 @@
-This module helps explain the basic paths you can follow to migrate from your existing endpoint management state to Microsoft Endpoint Manager. 
-
-Microsoft Endpoint Manager is a single, modern, integrated management platform for managing, protecting, and monitoring all of your organization's endpoints.
-
-Endpoints include the mobile devices, desktop computers, virtual machines, embedded devices, and servers that your organization uses. Additionally, endpoints also include the apps used by your organization. 
+This module explains the basic paths you can follow to migrate from your existing endpoint management state to Microsoft Endpoint Manager. Microsoft Endpoint Manager is a single, modern, integrated management platform for managing, protecting, and monitoring all of your organization's endpoints. Endpoints include the mobile devices, desktop computers, virtual machines, embedded devices, and servers that your organization uses. Additionally, endpoints include the apps used by your organization.
 
 By protecting and monitoring your organization's endpoints using Microsoft Endpoint Manager, you accomplish the following actions:
 - Protect the data that the people at your organization are accessing.
@@ -25,5 +21,4 @@ In this module, you will:
 
 ## Prerequisites
 
-  - Basic knowledge of endpoint management concepts
-  - Basic knowledge of Microsoft Endpoint Manager, Microsoft Intune, and Microsoft Endpoint Configuration Manager
+  - Basic knowledge of Microsoft Endpoint Manager and endpoint management concepts, see [Microsoft Endpoint Manager fundamentals](https://docs.microsoft.com/learn/paths/endpoint-manager-fundamentals/).
