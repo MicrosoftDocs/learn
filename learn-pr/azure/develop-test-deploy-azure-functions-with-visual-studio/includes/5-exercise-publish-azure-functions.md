@@ -23,16 +23,16 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
     > [!NOTE]
     > The function app must have a unique name. We suggest using something like **\<*your name or initials*\>watchfunctions**. In this exercise, use this name wherever you see *\<your-function-app-name\>*.
 
-Under the **Basics** tab, in the **Project Details** section, specify:
+1. Under the **Basics** tab, in the **Project Details** section, specify:
  
-   | Property  | Value  |
+    | Property  | Value  |
     |---|---|
     | Subscription | Concierge Subscription  |
     | Resource Group | Use the existing resource group <rgn>[Sandbox resource group]</rgn> |
 
-IIn the **Instance Details** seciton, specify:
+1. In the **Instance Details** section, specify:
 
-   | Property  | Value  |
+    | Property  | Value  |
     |---|---|
     | Function App name | *\<your-function-app-name\>* |
     | Publish | Code |
@@ -40,27 +40,27 @@ IIn the **Instance Details** seciton, specify:
     | Version | 3.1 |
     | Region | Accept the default location |
 
-Select **Next : Hosting**.
+1. Select **Next : Hosting**.
 
-Under the **Hosting** tab, in the **Storage** section, specify:
+1. Under the **Hosting** tab, in the **Storage** section, specify:
 
-   | Property  | Value  |
+    | Property  | Value  |
     |---|---|
     | Storage account | Accept the default name |
 
-Under the**Operating system** section, specify:
+1. Under the**Operating system** section, specify:
 
-   | Property  | Value  |
+    | Property  | Value  |
     |---|---|
     | Operating System | Windows |
 
-Under the **Plan** section, specify:
+1. Under the **Plan** section, specify:
 
-   | Property  | Value  |
+    | Property  | Value  |
     |---|---|
     | Plan type | Consumption (Serverless) |
 
-1. Select **Review + create**, then select **Create**, and wait while the Function App is created before continuing.
+1. Select **Review + create**, then select **Create**. Wait while the Function App is created before continuing.
 
 ## Deploy the WatchInfo function to the Azure Functions App
 
@@ -70,19 +70,19 @@ Under the **Plan** section, specify:
 
     :::image type="content" source="../media/5-start-publish-from-visual-studio.png" alt-text="Screenshot of Visual Studio, showing the Publish option for the WatchPortalFunctions project." loc-scope="vs":::
 
-1. In the **Publish** wizard window, select **Azure**, and hen select **Next**.
+1. In the **Publish** window, select **Azure**, and then select **Next**.
 
     :::image type="content" source="../media/5-publish-target.png" alt-text="Screenshot of the Public target window. The user has chosen the Azure option." loc-scope="vs":::
 
-1. The **Publish** wizard window reappears.
+1. The **Publish** window reappears. In the **Subscription** dropdown, select **Concierge Subscription**. In the **View** dropdown, select **Resource group**, and on top of the **Function Apps** field, select the **+** (Create a new Azure Function) icon.
 
     :::image type="content" source="../media/5-publish-functions-instance.png" alt-text="Screenshot of the Publish Functions instance window. The user to select Function Apps." loc-scope="vs":::
 
-1. In the **Subscription** dropdown, select **Concierge Subscription**. In the **View** dropdown, select **Resource group**, and on top of the Function Apps field, select the **+** (Create a new Azure Function) icon. The **Function App (Windows)** window appears. Maintain all the default selections, and select **Create**.
+1.  The **Function App (Windows)** window appears. Maintain all the default selections, and select **Create**.
 
     :::image type="content" source="../media/5-function-app-windows.png" alt-text="Screenshot of the Function App (Windows) window. The user to select Create." loc-scope="vs":::
 
-1. The **Publish** wizard window reappears with the Function Apps appearing. Select **Finish**.
+1. The **Publish** window reappears with the Function Apps appearing. Select **Finish**.
 
     :::image type="content" source="../media/5-function-app-publish.png" alt-text="Screenshot of the Function App (Windows) window. The user to select Finish." loc-scope="vs":::
 

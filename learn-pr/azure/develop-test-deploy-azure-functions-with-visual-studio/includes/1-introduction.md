@@ -10,8 +10,8 @@ In this module, you will:
 
 - Develop an Azure Function in Visual Studio 2019
 - Test and debug an Azure Function in Visual Studio 2019
-- Deploy an Azure Functions directly from Visual Studio 2019 to Azure
-- Manage Azure Function code
+- Deploy an Azure Function directly from Visual Studio 2019 to Azure
+- Manage Azure Functions code
 
 ## Prerequisites
 

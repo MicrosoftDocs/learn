@@ -12,11 +12,11 @@ The first step is to create a project that contains your unit tests, and add it 
 
     :::image type="content" source="../media/6-add-new-project-to-solution.png" alt-text="Screenshot of Solution Explorer, showing the Add new project to solution command." loc-scope="vs":::
 
-1. In the **Add a new project** dialog, scroll down, and select the **xUnit Test Project (.NET Core)** template, and select **Next**.
+1. In the **Add a new project** window, scroll down, select the **xUnit Test Project (.NET Core)** template, and then select **Next**.
 
-    :::image type="content" source="../media/6-add-xunit-project.png" alt-text="Screenshot of Add New Project dialog box. The user has selected the xUnit Test Project template." loc-scope="vs":::
+    :::image type="content" source="../media/6-add-xunit-project.png" alt-text="Screenshot of Add New Project window. The user has selected the xUnit Test Project template." loc-scope="vs":::
 
-1. The **Configure your new project** dialog appears. In the **Project name** field, enter **WatchFunctionsTests**. Aside the **Location** field, select the browse icon, and then select **WatchPortalFunction**. Select **Create.**
+1. The **Configure your new project** window appears. In the **Project name** field, enter **WatchFunctionsTests**. Aside the **Location** field, select the browse icon, and then select **WatchPortalFunction**. Select **Create.**
 
 1. When the project has been added, right-click the **WatchFunctionTests** project in the **Solution Explorer** window, and then select **Manage NuGet Packages**.
 

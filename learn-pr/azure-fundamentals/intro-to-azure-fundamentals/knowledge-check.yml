@@ -41,7 +41,7 @@ quiz:
       choices:
         - content: "True"
           isCorrect: false
-          explanation: "In an IaaS environment, the cloud tenant is responsible for any hardware maintenance."
+          explanation: "In an IaaS environment, the cloud provider is responsible for any hardware maintenance."
         - content: "False"
           isCorrect: true
           explanation: "In an IaaS environment, the cloud provider is responsible for any hardware maintenance."
