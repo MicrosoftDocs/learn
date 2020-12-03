@@ -866,7 +866,7 @@
                     "zh-cn",
                     "zh-tw"
                 ],
-                "wwl-wwl-sci/**/*.yml": [
+                "wwl-sci/**/*.yml": [
                     "ja-jp",
                     "ko-kr",
                     "zh-cn",
