@@ -62,3 +62,5 @@ In this task, you'll deploy an Azure Sentinel connector to Azure Activity.
     | **st1*xxxxx*** | Storage account | Storage account used by the virtual machine. |
     | **vnet1** | Virtual network | Virtual network for the VM. |
 
+> [!Note]
+> The resources deployed and configuration steps completed in this exercise are required in the next exercise. If you intended completing the next exercise do not delete the resources from this exercise.
