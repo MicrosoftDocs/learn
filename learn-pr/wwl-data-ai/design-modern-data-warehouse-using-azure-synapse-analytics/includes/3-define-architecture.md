@@ -23,7 +23,7 @@ Another option for data preparation is Azure Databricks - to shape the data form
 
 At the heart of a modern data warehouse, is Azure Synapse Analytics (Formerly SQL Data Warehouse).  This is implemented using a Massively Parallel Processing architecture that brings together enterprise data warehousing and Big Data analytics capabilities. 
 
-## Providing access to the data, sin a shaped format so that it can easily be consumed by data visualization tools. 
+## Providing access to the data, in a shaped format so that it can easily be consumed by data visualization tools. 
 
 Power BI enables customers to build visualizations on massive amounts of data and ensures that data insights are available to everyone across their organization. Power BI supports an enormous set of data sources, which can be queried live, or be used to model and ingest for detailed analysis and visualization. Brought together with AI capabilities, it’s a powerful tool to build and deploy dashboards in the enterprise, through rich visualizations, and features like natural language querying. 
 
@@ -32,3 +32,5 @@ Power BI enables customers to build visualizations on massive amounts of data an
 With the release of Azure Synapse Analytics, you have a choice. You can either use Azure Synapse exclusively, which works well for green field projects. But for organizations with existing investments in Azure with Azure Data Factory, Azure Databricks and Power BI, you can take a hybrid approach and combine them with Azure Synapse Analytics.
  
 ![Building modern data warehouses with Azure Synapse Analytics](../media/modern-data-warehouses-process-with-synapse.png)
+
+There are a variety of tools and techniques that can be used to implement the various stages of a modern data warehouse architecture. This module will show examples that have a specific focus on the components of Azure Synapse Analytics. Whilst other technologies and services can also be used as illustrated above, it is also important to understand that you can also use a range of languages to ingest data, clean, transform and serve the data. These languages can include the SQL, Python and Scala language. All of which can be used within Azure Synapse Analytics.

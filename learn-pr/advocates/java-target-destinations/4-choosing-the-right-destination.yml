@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.java-target-destinations.4-choosing-the-right-destination
+title: Choose the right destination
+metadata:
+  title: Choose the right destination
+  description: In this unit, you choose the correct destination for running your Java application on Azure.
+  author: judubois
+  ms.author: judubois
+  ms.date: 11/16/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-choosing-the-right-destination.md)]
