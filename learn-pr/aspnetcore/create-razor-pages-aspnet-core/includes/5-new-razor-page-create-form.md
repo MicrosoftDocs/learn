@@ -1,8 +1,8 @@
-In this unit, you'll create a form in the *:::no-loc text="ContosoPets.UI":::* project using Razor Pages to separate the logic of the page from its presentation.
+In this unit, you'll create a form in the *:::no-loc text="ContosoPets.Ui":::* project using Razor Pages to separate the logic of the page from its presentation.
 
-## Use the .NET Core CLI to create a new Razor Page
+## Use the .NET CLI to create a new Razor Page
 
-The *:::no-loc text="ContosoPets.UI":::* project directory should be currently open in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor). If it's not, repeat the setup steps in the *Set up the environment* unit.
+The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently open in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor). If it's not, repeat the setup steps in the *Set up the environment* unit.
 
 1. Run the following command in the command shell:
 
@@ -12,46 +12,46 @@ The *:::no-loc text="ContosoPets.UI":::* project directory should be currently o
 
 	The current directory changes to the *:::no-loc text="Products/":::* directory.
 
-1. Run the following .NET Core CLI command in the command shell at the current directory.
+1. Run the following .NET CLI command in the command shell at the current directory.
 
 	```dotnetcli
 	dotnet new page --name Create \
         --namespace ContosoPets.Ui.Pages.Products
 	```
 
- The preceding .NET Core CLI command:
+    The preceding command:
 
-* Creates a new Razor page named *:::no-loc text="Create.cshtml":::*.
-* Creates the Razor page's *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::*.
-* Stores both new files in the *:::no-loc text="ContosoPets.Ui/Pages/Products":::* directory. By convention, the Razor page and its *:::no-loc text="PageModel":::* class file share the same name and location.
+    * Creates a new Razor page named *:::no-loc text="Create.cshtml":::*.
+    * Creates the Razor page's *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::*.
+    * Stores both new files in the *:::no-loc text="ContosoPets.Ui/Pages/Products":::* directory. By convention, the Razor page and its *:::no-loc text="PageModel":::* class file share the same name and location.
 
 ## Examine the structure of a basic Razor Page
 
 1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 
-1. Open the new *:::no-loc text="Create.cshtml":::* Razor page, located in the *:::no-loc text="ContosoPets.Ui/Pages/Products":::* directory, to examine the contents. It looks like the following markup:
+1. Open the new *:::no-loc text="Create.cshtml":::* Razor page, located in the *:::no-loc text="ContosoPets.Ui/Pages/Products":::* directory. Examine the file's markup:
 
 	```cshtml
 	@page
-	@model ContosoPets.Ui.Pages.CreateModel
+	@model ContosoPets.Ui.Pages.Products.CreateModel
 	@{
 	}
 	```
 
- The preceding default Razor Page contains:
+    The preceding Razor Page contains:
 
-* Reserved Razor keywords:
-  * The `@page` directive is what makes the page a Razor page. It indicates the page can handle HTTP requests. The `@page` directive must be the first directive on a Razor page.
-  * The `@model` directive is Razor syntax specifying the type of the model made available to the Razor page. In this case, the `ContosoPets.UI.Pages.Products.Create` `PageModel`-derived class. `ContosoPets.UI.Pages.Products.CreateModel` was automatically defined in the *:::no-loc text="Create.cshtml.cs":::* class file. *:::no-loc text="Create.cshtml.cs":::* was generated the new Razor page named *:::no-loc text="Create":::* was made.
-  * HTML: Such as an `<h1>` tag.
-  * C# code: The `@` character starts single-statement C# blocks. Multi-statement C# blocks can be created when using `@{}`. For example:
+    * Reserved Razor keywords:
+      * The `@page` directive is what makes the page a Razor page. It indicates the page can handle HTTP requests. The `@page` directive must be the first directive on a Razor page.
+      * The `@model` directive is Razor syntax specifying the type of the model made available to the Razor page. In this case, the `ContosoPets.Ui.Pages.Products.Create` `PageModel`-derived class. `ContosoPets.Ui.Pages.Products.CreateModel` was automatically defined in the *:::no-loc text="Create.cshtml.cs":::* class file. *:::no-loc text="Create.cshtml.cs":::* was generated the new Razor page named *:::no-loc text="Create":::* was made.
+    * HTML: Such as an `<h1>` tag.
+    * C# code: The `@` character starts single-statement C# blocks. Multi-statement C# blocks can be created when using `@{}`. For example:
 
-	```cshtml
-	@{
-    	var pageTitle = "Home page";
-    	ViewData["Title"] = pageTitle;
-	}
-	```
+    	```cshtml
+    	@{
+        	var pageTitle = "Home page";
+        	ViewData["Title"] = pageTitle;
+    	}
+    	```
 
 ## Render HTML and transition to C#
 
@@ -135,8 +135,8 @@ The *:::no-loc text="Input Tag Helper":::*:
 * Evaluates the `Product.Name` property, like the *:::no-loc text="Label Tag Helper":::*.
 * Is defined in the *:::no-loc text="PageModel":::* in C#.
 * Adds an `id` and `name` based on that property.
-* Sets the input type appropriately. For example, if the specified property is a *:::no-loc text="Boolean":::*, then an input type of *:::no-loc text="checkbox":::* would be dynamically generated in the HTML output. In this case, the `Product.Name` property is a *:::no-loc text="String":::*. The `Product.Name` property is set by the model's data annotation attributes, which will be reviewed later in this module.
-* Provides client-side validation using JQuery, based on the model's data annotation attributes provided through the *:::no-loc text="PageModel":::*.
+* Sets the input type appropriately. For example, if the specified property is a *:::no-loc text="Boolean":::*, then an input type of `checkbox` is dynamically generated in the HTML output. In this case, the `Product.Name` property is a *:::no-loc text="String":::*. The `Product.Name` property is set by the model's data annotation attributes, which will be reviewed later in this module.
+* Provides client-side validation using jQuery, based on the model's data annotation attributes provided through the *:::no-loc text="PageModel":::*.
 * Prompts the Razor engine to provide additional, more robust server-side validation, if client-side validation was successful. The *:::no-loc text="Create":::* Razor Page's HTTP POST event lifecycle, which includes client-side and server-side input validation, is walked through later in this module.
 
 The following HTML output is generated from the *:::no-loc text="Input Tag Helper":::* located in the *:::no-loc text="Create":::* page:
@@ -165,6 +165,6 @@ The `type`, `data-val-range-min`, `data-val-range-max`, and error response are d
 
 The following page is the *:::no-loc text="Create":::* form. The *:::no-loc text="Create":::* form is rendered in the browser displaying its validation messages after the user's input failed to pass data validation.
 
-![Completed Create Product Form](../media/5-new-razor-page-create-form/createproduct-validation.png)
+:::image type="content" source="../media/5-new-razor-page-create-form/createproduct-validation.png" alt-text="The completed create product form." border="true" lightbox="../media/5-new-razor-page-create-form/createproduct-validation.png":::
 
 The *:::no-loc text="Create":::* Razor Page form has been created. Let's explore its *:::no-loc text="PageModel":::* class file and modify it to handle the *:::no-loc text="Create":::* page's HTTP POST event and data.
