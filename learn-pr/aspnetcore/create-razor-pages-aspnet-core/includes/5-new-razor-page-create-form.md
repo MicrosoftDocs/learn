@@ -2,7 +2,7 @@ In this unit, you'll create a form in the *:::no-loc text="ContosoPets.Ui":::* p
 
 ## Use the .NET CLI to create a new Razor Page
 
-The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently open in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor). If it's not, repeat the setup steps in the *Set up the environment* unit.
+The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently open in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor).
 
 1. Run the following command in the command shell:
 
@@ -97,7 +97,7 @@ Open the *:::no-loc text="Create.cshtml":::* Razor page, located in the *:::no-l
 
 [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
 
-The *:::no-loc text="Create":::* Razor Page now contains HTML plus Razor syntax for a basic form. The *:::no-loc text="Create":::* page's purpose is to allow a user to create a new ContosoPets product entry with *:::no-loc text="Name":::* and *:::no-loc text="Price":::* values. With relatively little markup, dynamic features have been provided through Razor Tag Helpers.
+The *:::no-loc text="Create":::* Razor Page now contains HTML plus Razor syntax for a basic form. The *:::no-loc text="Create":::* page allows a user to create a new product entry with **:::no-loc text="Name":::** and **:::no-loc text="Price":::** values. With relatively little markup, dynamic features have been provided through Razor Tag Helpers.
 
 ## Razor Tag Helpers
 

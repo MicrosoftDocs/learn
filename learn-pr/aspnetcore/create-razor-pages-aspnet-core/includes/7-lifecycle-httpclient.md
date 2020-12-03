@@ -1,4 +1,4 @@
-In this unit, you'll step through the lifecycle of the *:::no-loc text="ContosoPets.Ui":::* project's `ProductService` class HTTP request logic.
+In this unit, you'll step through the lifecycle of the project's `ProductService` class HTTP request logic.
 
 ## Advantages of using a typed *:::no-loc text="HttpClient":::* service architecture
 
@@ -142,6 +142,6 @@ As pointed out previously, the `ProductService` service was injected directly in
   
 Once the ASP.NET Core runtime determines the `HttpClient` instance is no longer in use, it automatically disposes of it.
 
-You now have a completed project that includes a new *:::no-loc text="Create":::* RazorPage and its `PageModel` class. We've also walked through how your new `Create` RazorPage and its `PageModel` injects and calls the *:::no-loc text="ContosoPets.Ui":::* project's `ProductService` class methods that encapsulate HTTP request logic.
+You now have a completed project that includes a new *:::no-loc text="Create":::* Razor page and its `PageModel` class. You've also walked through how the `PageModel` injects and calls the `ProductService` class methods that encapsulate HTTP request logic.
 
 Next let's build, deploy, and test your updated project.

@@ -190,7 +190,7 @@ public class CreateModel : PageModel
     }
 ```
 
-ASP.NET Core supports the Inversion of Control (IoC) pattern using DI. This pattern allows the `ProductService` service to be injected directly into the constructor of this class where it's used. The framework takes on the responsibility of creating an instance of the class and disposing of it when it's no longer needed. The `ProductService` class defines a constructor, `CreateModel` that the service provides to the app. This interface is implemented by a concrete type, `ProductService`. This IoC design pattern allows ASP.NET Core developers to avoid the inherent costs of a class taking a direct dependency on another class.
+ASP.NET Core supports the Inversion of Control (IoC) pattern using DI. This pattern allows the `ProductService` service to be injected directly into the constructor of this class where it's used. The framework creates an instance of the class and disposes of the resulting object when it's no longer needed. The `ProductService` class defines a constructor, `CreateModel` that the service provides to the app. This interface is implemented by a concrete type, `ProductService`. This IoC design pattern allows ASP.NET Core developers to avoid the inherent costs of a class taking a direct dependency on another class.
 
 The following code calls the `CreateProduct` method, passing the `Product` Data Transfer Object (DTO) which will be sent by HTTP request to the web API.
 
@@ -216,4 +216,4 @@ Now that the *:::no-loc text="Create.cshtml":::* Razor Page and its *:::no-loc t
 
 The preceding highlighted code uses an *:::no-loc text="Anchor Tag Helper":::* to direct the user to the *:::no-loc text="Pages/Products/Create.cshtml":::* Razor Page located in the same directory as the Index page. The *:::no-loc text="Anchor Tag Helper":::* enhances the standard HTML anchor (`<a ... ></a>`) tag by adding new attributes, such as the `asp-page-handler` attribute used to route to specific page handlers or the `asp-page` attribute, as used here, to set an anchor tag's `href` attribute value to a specific page.
 
-Next, you'll explore the lifecycle of the *:::no-loc text="ContosoPets.Ui":::* project's `ProductService` HTTP request logic.
+Next, you'll explore the lifecycle of the project's `ProductService` HTTP request logic.
