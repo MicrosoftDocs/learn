@@ -1,9 +1,9 @@
 In this module, we will build Spring Boot microservice that is cloud-enabled: it uses a Spring Cloud Service Registry and a [Spring Cloud Config Server](https://cloud.spring.io/spring-cloud-config) which are both managed and supported by Azure Spring Cloud.
 
-This microservice will use Spring Data MongoDB to read and write data from an [Azure Cosmos DB database](https://docs.microsoft.com/azure/cosmos-db/?WT.mc_id=azurespringcloud-mslearn-judubois) database:
+This microservice will use Spring Data JPA to read and write data from an [Azure database for MySQL](https://docs.microsoft.com/azure/mysql/?WT.mc_id=azurespringcloud-mslearn-judubois) database:
 
 - That database will be automatically bound to our service by Azure Spring Cloud.
-- Azure Cosmos DB is a globally-distributed database, which supports the MongoDB protocol, so in this (simplified) case, we will use it as if it was a normal MongoDB database.
+- Azure database for MySQL is a fully managed version of MySQL, running on Azure.
 
 ## Create the application on Azure Spring Cloud
 
@@ -16,9 +16,6 @@ az spring-cloud app create -n todo-service
 ## Create a MySQL database
 
 Now create an Azure database for MySQL:
-
-- Azure database for MySQL is a fully managed version of MySQL, running on Azure.
-- For this module, we will use it as the our data store.
 
 ```bash
 az mysql server create \
@@ -219,7 +216,7 @@ You can now use cURL to test the endpoint. Your test command should look like:
 curl https://primary:XXXXXXXXXXXXXXXXXXXXXXXXXXXXX@azure-spring-cloud-workshop.test.azuremicroservices.io/todo-service/default/
 ```
 
-And the result of this command should be the three items that were previously inserted in the Azure Cosmos DB database:
+And the result of this command should be the three items that were previously inserted in the MySQL database:
 
 ```json
 [{"id":"1","description":"First item","done":true},{"id":"2","description":"Second item","done":true},{"id":"3","description":"Third item","done":false}]

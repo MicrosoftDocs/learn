@@ -2,7 +2,7 @@ Monitor our services with Azure Spring Cloud's distributed tracing mechanism, to
 
 We now have a complete microservices stack:
 
-- A Spring Boot microservice, that stores its data in Azure Cosmos DB.
+- A Spring Boot microservice, that stores its data in MySQL.
 - A gateway based on Spring Cloud Gateway.
 
 However, even with only those two components, it already is quite challenging to monitor and study performance issues in our architecture.
