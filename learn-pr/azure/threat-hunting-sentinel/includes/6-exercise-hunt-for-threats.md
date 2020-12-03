@@ -8,7 +8,7 @@ In this exercise, you will delete a VM, manage threat hunting queries, and save 
 - Save key findings with bookmarks.
 
 > [!NOTE]
-> If you choose to perform the exercise in this module, be aware you may incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/)
+> To complete this exercise, you need to have completed the setup exercise earlier in the module. If you have done done so, please complete it now.
 
 ## Task 1: Delete a VM
 
@@ -38,14 +38,17 @@ In this task, you'll create and manage threat hunting queries to review events r
   | extend AccountCustomEntity = Caller
   | extend IPCustomEntity = CallerIpAddress
   ```
-
-   - **Tactics**: Select **Initial Access**.
+   - **Tactics**: Select **Impact**.
 
 5. On the **Hunting** page, on the **Queries** tab, enter **Deleted VMs** in the **Search queries field**.
 6. In the list of queries, select the star icon beside **Deleted VMs** to mark the query as a favorite.
-7. Select the Deleted VMs query and then, in the details pane, select **View Results**.
+7. Select the **Deleted VMs** query and then, in the details pane, select **View Results**.
+
+>[!NOTE]
+>It might take up to 15 minutes for the deleted VM event to be sent to Azure Sentinel
+
 8. On the Logs page, in the Results section, select the event listed. It should have **{ "action": "Microsoft.Compute/virtualMachines/delete"** in the Authorization column. This is the event from the Azure Activity log that indicates the VM was deleted.
-9. Remain on this page for the next task.
+9.  Remain on this page for the next task.
 
 ## Task 3: Save key findings with bookmarks
 
@@ -66,7 +69,7 @@ After completing this exercise, you will have deleted a VM, managed threat hunti
 
 ## Clean up the resources
 
-Next, you'll want to clean up the resources you have created. Complete the following steps:
+When you are finished with the resources, you'll want to delete the Azure resources you have created in this exercise to avoid incurring costs. To do this, complete the following steps:
 
 1. In the Azure portal, search for **Resource groups**.
 2. Select **azure-sentinel-rg**.

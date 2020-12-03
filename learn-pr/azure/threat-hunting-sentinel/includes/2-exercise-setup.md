@@ -1,5 +1,8 @@
 To complete this optional exercise, you need access to an Azure subscription to create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
+> [!NOTE]
+> If you choose to perform the exercise in this module, be aware you may incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/)
+
 To deploy the prerequisites for the exercise, perform the following tasks.
 
 ## Task 1: Deploy the Azure Resource Manager template for the exercise environment
@@ -21,7 +24,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 | **Simplevm Name** | Accept the default value **simple-vm**. |
 | **Simplevm Windows OS Version** | Accept the default value **2016-Datacenter**.|
 
-4. Select the check box for **I agree to the terms and conditions stated above** and then select **Purchase**.
+4. Select **Review + create**, and then select **Create**.
 
 > [!NOTE]
 > Wait for the deployment to complete. The deployment should take less than five minutes.
@@ -52,6 +55,7 @@ In this task, you will deploy Azure Sentinel connector to Azure Activity.
 4. In the **Azure Activity** pane, select the link **Configure Azure Activity logs**.
 5. Select your subscription and then select **Connect.**
 6. When you receive status **Connected**, you can close all open blades to return to **Azure Sentinel | Data connector** blade.
+7. On the Azure Sentinel | Data connectors pane ensure the Azure Activity connector has a status of connected.
 
 > [!NOTE]
-> The connector for Azure Activity could take 15 minutes until it displays data in the Azure Sentinel.
+> The connector for Azure Activity could take 15-30 minutes until it displays a status of connected.

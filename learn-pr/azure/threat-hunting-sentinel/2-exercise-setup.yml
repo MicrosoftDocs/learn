@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise setup
-durationInMinutes: 5
+durationInMinutes: 20
 content: |
   [!include[](includes/2-exercise-setup.md)]
