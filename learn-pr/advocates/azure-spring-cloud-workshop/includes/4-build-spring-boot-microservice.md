@@ -71,7 +71,7 @@ Now that we've provisioned the Azure Spring Cloud instance and configured the se
 To create our microservice, we will use [https://start.spring.io/](https://start.spring.io/) with the command line:
 
 ```bash
-curl https://start.spring.io/starter.tgz -d dependencies=web,mysql,data-jpa,cloud-eureka,cloud-config-client -d baseDir=todo-service -d bootVersion=2.4.0.RELEASE -d javaVersion=1.8 | tar -xzvf -
+curl https://start.spring.io/starter.tgz -d dependencies=web,mysql,data-jpa,cloud-eureka,cloud-config-client -d baseDir=todo-service -d bootVersion=2.3.6.RELEASE -d javaVersion=1.8 | tar -xzvf -
 ```
 
 > [!NOTE]
@@ -177,6 +177,14 @@ public class TodoController {
         return todoRepository.findAll();
     }
 }
+```
+
+## Configure Spring Boot to create the database tables
+
+In order to automatically generate the database tables when the application is deployed, add this line to your `src/main/resources/application.properties` configuration file:
+
+```yaml
+spring.jpa.hibernate.ddl-auto=create-drop
 ```
 
 ## Deploy the application
