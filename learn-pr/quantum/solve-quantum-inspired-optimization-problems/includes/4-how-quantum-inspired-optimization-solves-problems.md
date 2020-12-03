@@ -24,8 +24,8 @@ In this graph, you can see the difference between a thermal jump (where thermal 
 
 ### How does quantum annealing work?
 
-In quantum annealing, we frame our problem by giving assignments to qubits, which are our variables. The energy of a given assignment to the qubits is the value of the cost function.
+In quantum annealing, we frame our problem by giving assignments to our variables, the energy of which is the value of the cost function.
 
-Initially we begin with the quantum state in a broad superposition over many possible assignments to the qubits. Instead of varying the temperature, as we did in simulated annealing, we vary a parameter called the *quantum field strength*.
+Initially we begin with the quantum state in a broad superposition over many possible assignments to the variables. Instead of varying the temperature, as we did in simulated annealing, we vary a parameter called the *quantum field strength*.
 
 This parameter defines the radius of neighboring states we can move to. As time goes on and we get closer to a solution, this radius becomes smaller and smaller. By the end of the annealing process, the system has settled into one particular low-energy configuration that can then be measured, which gives us the solution to the optimization problem. The most mathematically clean formulation of quantum annealing is called *adiabatic quantum optimization*, and this is what quantum-inspired methods attempt to emulate.
