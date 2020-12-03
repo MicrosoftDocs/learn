@@ -22,7 +22,7 @@ Quantum annealing is a quantum algorithm that is similar in spirit to simulated 
 
 In this graph, you can see the difference between a thermal jump (where thermal fluctuations help a walker overcome an energy barrier) and quantum tunneling (where quantum effects allow a walker to pass through the energy barrier).
 
-### How does quantum annealing work?
+### How can quantum annealing be used to solve optimization problems?
 
 In quantum annealing, we frame our problem by giving assignments to our variables, the energy of which is the value of the cost function.
 
