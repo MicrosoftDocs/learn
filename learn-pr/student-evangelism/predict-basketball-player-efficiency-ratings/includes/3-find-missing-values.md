@@ -1,6 +1,6 @@
-Basketball is full of statistics. You'll use some of them to make decisions about our hypothetical basketball team. 
+Basketball is full of statistics. You'll use some of them to make decisions about the hypothetical basketball team in this module. 
 
-To make good decisions, you need good data. Throughout this module you'll use a dataset that's based on publicly available [stats from the NBA](https://www.nba.com/stats/leaders/?azure-portal=true) and stats we created based on Tune Squad characters. All of the data is anonymized.
+To make good decisions, you need good data. Throughout this module, you'll use a dataset that's based on publicly available [stats from the NBA](https://www.nba.com/stats/leaders/?azure-portal=true). You'll also use stats we created based on Tune Squad characters. All of the data is anonymized.
 
 As fans, we can't influence the methodology the NBA follows to gather data. This detail introduces some questions:
 
@@ -8,16 +8,16 @@ As fans, we can't influence the methodology the NBA follows to gather data. This
 - Were biases introduced in the data?
 - Is there data that wasn't gathered that could influence our findings?
 
-Because we're fans of the sport, and not necessarily the scientists who gather the data, we'll explore the data by looking for missing values, outlying values, and patterns.
+Because we're fans of the sport, and not necessarily the scientists who gather the data, you'll explore the data by looking for missing values, outlying values, and patterns.
 
-Data scientists commonly find themselves in this sort of situation. Collecting data can take years, so when we're first starting out in an area, we might have to rely on previously collected data to guide initial findings. As we know from the [data science lifecyle](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/overview?azure-portal=true), the data science process is iterative. If we can discover patterns and insights from the current data, we can perhaps influence the data that's collected in the future! 
+Data scientists commonly find themselves in this sort of situation. Collecting data can take years. So when you're first starting out in an area, you might have to rely on previously collected data to guide initial findings. As you know from the [data science lifecyle](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/overview?azure-portal=true), the data science process is iterative. If you discover patterns and insights from the current data, you can perhaps influence the data that's collected in the future! 
 
 ## Explore the data
 
 Before you jump into modifying the data, you can begin to explore it. Explore it by opening the CSV file in Visual Studio Code. Or explore it by using common pandas functions:
 
 ```python
-# Print out the first five rows of the player_df data frame.
+# Print out the first five rows of the player_df DataFrame.
 player_df.head()
 ```
 
@@ -31,7 +31,7 @@ player_df.head()
 | 3 | 4 | 1282.0 | 1235.9 | 100.7 | NaN | NaN | 54.0 | 37.6 | 0.636 | 29.5 | 11.0 | 22.3 | 4.8 | 4.6 | 5.6 | 22.35 |
 | 4 | 5 | 1721.0 | 1254.0 | 105.7 | NaN | NaN | 59.0 | 30.5 | 0.589 | 22.8 | 9.9 | 24.6 | 1.2 | 8.4 | 12.1 | 28.38 |
 
-The output shows several ambiguous column headings. Let's break those down:
+The output shows several ambiguous column headings. Let's break down those headings:
 
 | Column name | Description |
 |-------------|--------------------|
@@ -43,7 +43,7 @@ The output shows several ambiguous column headings. Let's break those down:
 | Unnamed: 5 | Unknown data |
 | GP | Games played by a player in a season |
 | MPG | Average minutes played by a player per game |
-| TS% | True shooting percentage, a player's shooting percentage taking free throws and three-pointers into account |
+| TS% | True shooting percentage, a player's shooting percentage, taking free throws and three-pointers into account |
 | AST | Assist ratio, the percentage of a player's possessions that end in an assist |
 | TO | Turnover ratio, the percentage of a player's possessions that end in a turnover |
 | USG | Usage rate, the number of possessions a player uses per 40 minutes |
@@ -52,24 +52,24 @@ The output shows several ambiguous column headings. Let's break those down:
 | REBR | Rebound rate, the percentage of missed shots that a player rebounds |
 | PER | Player efficiency rating, a measure of a player's per-minute productivity on the court |
 
-A lot of these data points make sense in the context of basketball. But even without a technical understanding of each of these columns, you can still start to cleanse the data. So if you're not well-versed in these terms, don't worry! You can still gain many insights into the data.
+A lot of these data points make sense in the context of basketball. But even without a technical understanding of each of these columns, you can still start to cleanse the data. So if you're not well versed in these terms, don't worry! You can still gain many insights into the data.
 
-The most important thing to understand is that each of these columns is data that can be counted during a game, except for PER. *PER* (player efficiency rating) is a calculation based on all of the other player stats. It determines "how good" a player is. 
+The important thing to understand is that each of these columns lists data that can be counted during a game, except for the PER column. *PER* (player efficiency rating) is a calculation based on all of the other player stats. It determines "how good" a player is. 
 
-You can use the PER column to predict how effective a player is during a game. As of this writing, the NBA player who has the highest PER is Michael Jordan, with a rating of 27.91. The NBA player who has the second-highest rating, as well as the highest rating of currently active NBA players, is LeBron James, with a score of 27.49.
+You can use the PER column to predict how effective a player is during a game. As of this writing, the NBA player who has the highest PER is Michael Jordan. His score is 27.91. The NBA player who has the second-highest rating, and the highest rating of currently active NBA players, is LeBron James. His score is 27.49.
 
 The calculation of PER isn't perfect. Some fans and data scientists might choose to evaluate players differently. But in this module, you'll use PER as the measurement to help make decisions about players before and during games.
 
 ## Find missing values
 
-Missing values are very common in organically collected datasets. To look for missing values, use the built-in `isna()` function in pandas DataFrames. By default, this function flags each occurrence of a `NaN` value in a row in the DataFrame. Earlier you saw at least two columns that have a lot of `NaN` values, so you should start here with your cleansing.
+Missing values are common in organically collected datasets. To look for missing values, use the built-in `isna()` function in pandas DataFrames. By default, this function flags each occurrence of a `NaN` value in a row in the DataFrame. Earlier you saw at least two columns that have many `NaN` values, so you should start here with your cleansing.
 
-`NaN` stands for "not a number." It's a special floating-point value that represents an undefined value. It's different from, say, using `''` or `0`, because it literally has no value. You imported this value from empty cells in the CSV file.
+`NaN` stands for "not a number." It's a special floating-point value that represents an undefined value. It's different from, say, using `''` or `0`, because `NaN` literally has no value. You imported this value from empty cells in the CSV file.
 
-Because you're most interested in seeing how many `NaN` values are in each row of the DataFrame, pair the `isna()` function with the DataFrame `sum()` function. A nice thing about pandas is that you can just keep tacking on functions one after another to create powerful, concise code. For example:
+Because you're most interested in seeing how many `NaN` values are in each row of the DataFrame, pair the `isna()` function with the DataFrame `sum()` function. A nice thing about pandas is that you can tack on functions one after another to create powerful, concise code. For example:
 
 ```python
-# Total up how many NaN values there are in each row of the DataFrame.
+# Total up the number of NaN values in each row of the DataFrame.
 player_df.isna().sum()
 ```
 
@@ -93,10 +93,10 @@ PER            10
 dtype: int64
 ```
 
-We know that we have 47 rows of data, because we can see that in the CSV file, as well as when we print out the information for the DataFrame:
+You know that you have 47 rows of data, because you can see that in the CSV file and in the printout for the DataFrame:
 
 ```python
-# Print out the information about the DataFrame
+# Print out the information about the DataFrame.
 player_df.info()
 ```
 
@@ -124,6 +124,6 @@ dtypes: float64(15), int64(1)
 memory usage: 6.0 KB
 ```
 
-Since there are 47 rows and we can see that the two unnamed columns have 47 `NaN` values, we can deduce that there are at least two columns we can completely eliminate from our DataFrame.
+There are 47 rows, and you see that the two unnamed columns have 47 `NaN` values. So you can deduce at least two columns can be eliminated from the DataFrame.
 
 © 2020 Warner Bros. Ent. All Rights Reserved.

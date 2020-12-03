@@ -1,12 +1,12 @@
-One of the quickest ways to cleanse data is to drop columnd and rows that do not add value to the data discovery journey you're on. In the previous unit we discovered that there are two columns that have only `NaN` values for each row. They were unnamed columns, and therefore probably a mistake that they were included in the original dataset. Those will be straitforward to drop.
+One of the quickest ways to cleanse data is to drop columns and rows that don't add value to your data-discovery goals. In the previous unit, you discovered two columns that have only `NaN` values for each row. They were unnamed columns, so they were probably included in the original dataset by mistake. Those columns are straightforward to drop.
 
-## Drop Columns
+## Drop columns
 
-To drop columns, we will use the `dropna()` method. Like `isna()`, `dropna()` looks for `NaN` values, but it goes a step further and removes either the rows or the columns that contain `NaN` values. We will need to set some paramaters to the method to do this, though:
+To drop columns, you'll use the `dropna()` method. Like `isna()`, `dropna()` looks for `NaN` values. But it goes a step further and removes either the rows or the columns that contain `NaN` values. Start by setting some parameters to the method:
 
-- By default, `dropna()` removes rows, so we will need to specify that we want to remove columns using the `axis` parameter.
-- `dropna()` usually returns a new DataFrame; the `inplace` parameter will tell it to drop these columns in our original `player_df` DataFrame.
-- We also want `dropna()` to only remove columns in which all of the values are missing, so we will set the `how` parameter to `'all'`.
+- By default, `dropna()` removes rows, so specify that you want to remove columns by using the `axis` parameter.
+- The `dropna()` method usually returns a new DataFrame. Use the `inplace` parameter to tell it to drop these columns in the original `player_df` DataFrame.
+- You also want `dropna()` to remove only columns in which all of the values are missing. So set the `how` parameter to `'all'`.
 
 ```python
 # Drop columns that have no values.
@@ -32,7 +32,7 @@ PER            10
 dtype: int64
 ```
 
-We successfully removed the empty columns, we can see that if we call `.info()` again:
+You successfully removed the empty columns. You see that if you call `.info()` again:
 
 ```python
 player_df.info()
@@ -60,11 +60,11 @@ dtypes: float64(13), int64(1)
 memory usage: 5.2 KB
 ```
 
-We can see that we now only have 14 columns, instead of 16, and that the majority of of rows have data for each column.
+You now have only 14 columns instead of 16. Most of the rows have data for each column.
 
-## Drop Rows
+## Drop rows
 
-We should also have to deal with the fact we might have an entire row of missing values (that is, one of the players in our DataFrame might have no values). We can try to address this missing row as we did last time, with `dropna()`, this time using its default, row-based behavior.
+You should also address the possibility that an entire row is missing values. That is, one of the players in the DataFrame might have no stats. You can try to address this missing row as you did last time, by using `dropna()`. But this time, use the method's default row-based behavior.
 
 ```python
 # Drop rows that have no values.
@@ -90,9 +90,9 @@ PER            10
 dtype: int64
 ```
 
-Hmmm. No change, so we don't have a single row with all `NaN` values - which is great!
+Hmmm. No change. So you know that no row has all `NaN` values. That's great!
 
-Let's look at the DataFrame itself. It is big enough that we wouldn't want to print all of the rows all the time, but no so big that it will be unmanageable to look at here once.
+Now look at the DataFrame itself. It's large enough that you wouldn't want to print all of the rows all the time. But it's not so large that it's unmanageable to print it here once.
 
 ```python
 # Show the entire DataFrame.
@@ -151,19 +151,19 @@ player_df
 | 45 | 46 | 1740.0 | 1443.9 | 114.1 | 68.0 | 37.1 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.22 |
 | 46 | 47 | 1993.0 | 1459.0 | 112.5 | NaN | 36.9 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.76 |
 
-Ah, we actually have three rows missing the same three values and another row missing 10 values in a row. This tells us two things:
+Now you see that three rows are missing the same three values. Another row is missing 10 values. This information indicates two things:
 
-1. Our dataset likely comes from two different datasets that were joined together (and both of this earlier datasets had missing rows).
-2. We will need to use critical thinking to determine an accurate way to remove these rows.
+- The dataset likely comes from two datasets that were joined together, and both of these earlier datasets had missing rows.
+- You'll need to use critical thinking to determine how to remove these rows.
 
-Our dataset is small enough that we could manually drop the rows in question, but that wouldn't give us practice dealing with much larger datasets where manual removal is not practical. We will use the built-in pandas methods.
+The dataset is small enough that you could manually drop the problem rows. But that shortcut wouldn't give you practice dealing with larger datasets, where manual removal isn't practical. So use the built-in pandas methods instead.
 
-The `how` parameter in `dropna()` can only be set to `'any'` or `'all'` and neither of those settings will get us what we need. Instead, we will use the `thresh` parameter.
+The `how` parameter in `dropna()` can be set to only `'any'` or `'all'`. Neither of those settings will get you what you need. Instead, use the `thresh` parameter.
 
-`thresh` is short for *threshold* and it lets us set the minimum number of non-`NaN` values a row (or column) need to have to not be dropped by `dropna()`. In order to remove just the rows we want out of our DataFrame, we will set `thresh=12`.
+`thresh` is short for *threshold*. This parameter lets you set the minimum number of non-`NaN` values a row or column needs to avoid being dropped by `dropna()`. To remove specific rows from the DataFrame, set `thresh` to `12`.
 
 ```python
-# Drop all rows that do not have at least 12 non-NaN values.
+# Drop all rows that don't have at least 12 non-NaN values.
 player_df.dropna(inplace=True, thresh=12)
 player_df.isna().sum()
 ```
@@ -186,14 +186,14 @@ PER            9
 dtype: int64
 ```
 
-Now we only have three columns with missing values, but these rows have so few missing values, that it would be best if we could retain these rows and fill in the missing values with likely numbers. We will address these in another unit. 
+Now only three columns are missing values. But the rows have so few missing values that it's best to keep the rows and fill in the missing values with likely numbers. You'll address these rows in another unit. 
 
-## Reset DataFrame Index
+## Reset the DataFrame index
 
-Because we have dropped rows, the index in our DataFrame has been compromised. We can see this if we print out the first 10 rows of our DataFrame:
+Because you've dropped rows, the index in the DataFrame is compromised. You see this problem if you print out the first 10 rows of the DataFrame:
 
 ```python
-# Print the first 10 rows of the player_df DataFrame
+# Print the first 10 rows of the player_df DataFrame.
 player_df.head(10)
 ```
 
@@ -212,12 +212,12 @@ player_df.head(10)
 | 9 | 10 | 1468.0 | 1400.9 | 93.7 | 61.0 | 35.6 | 0.547 | 22.9 | 12.2 | 22.7 | 5.8 | 6.4 | -2.9 | NaN |
 | 10 | 11 | 1856.0 | 1303.8 | 93.4 | 55.0 | 33.6 | 0.563 | 28.9 | 14.7 | 26.7 | 1.4 | 17.3 | 4.3 | 9.67 |
 
-We can see that the index counts 0 through 10, skipping 8. This is because the row that had the index of 8 was dropped because it had more than 2 `NaN` values. With only 14 columns, having 3 `NaN` values means it didn't meet the threshold of 12 we set when we dropped rows above.
+You see that the index counts 0 through 10, skipping 8. The row that had the index of 8 was dropped because it had more than two `NaN` values. In the 14 columns, the rows that had three or more `NaN` values didn't meet the threshold of 12 you set when you dropped rows earlier.
 
-To fix this, we should reset the index for the DataFrame. Doing this save us from problems working with our DataFrame down the road. Let's also take a look at our now smaller DataFrame while we are at it.
+To fix this problem, reset the index for the DataFrame. This fix saves you from problems down the road when you're working with the DataFrame. While you're at it, take a look at the now smaller DataFrame.
 
 ```python
-# Renumber the DataFrame index to reflect the dropped rows.
+# Renumber the DataFrame index to account for the dropped rows.
 player_df.reset_index(drop=True, inplace=True)
 player_df.info()
 ```
@@ -244,6 +244,6 @@ dtypes: float64(13), int64(1)
 memory usage: 4.8 KB
 ```
 
-We can see that we now only have 43 players in our DataFrame, and there are only three columns that are missing some values throughout.
+You see that you now have only 43 players in the DataFrame. Only three columns are missing some values.
 
-© 2020 Warner Bros. Ent. All Rights Reserved
+© 2020 Warner Bros. Ent. All Rights Reserved.

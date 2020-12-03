@@ -1,6 +1,8 @@
-Recognizing that data comes from different populations can be essential in business data analysis. Imagine that you were analyzing occupancy data for a lodging-rental business. Vacation renters and business renters (such as individuals renting for a temporary business trip) could distribute themselves very differently for length of stay, time of year, or types of amenities required. However, being able to separate out the different populations could be useful, such as for generating different marketing promotions for each population.
+Recognizing that data comes from different populations can be essential in data analysis for business. Imagine that you're analyzing occupancy data for a lodging-rental business. Vacation renters and business renters (such as individuals renting for a temporary business trip) could distribute themselves very differently for length of stay, time of year, or types of amenities required. Separating the two populations would be useful for purposes such as generating different marketing promotions for each population.
 
-In our case, we know that have a mixture of human basketball players and Tune Squad players in our dataset. We can take a few of our more distinguished bimodal graphs, for example `points`, `DRR`, and `PER` and try to see if we can differentiate the two populations. First, let's look at each of these distributions on their own:
+In your basketball scenario, you know you have a mixture of human basketball players and Tune Squad players in the dataset. You can take a few of the more distinguished bimodal graphs, for example `points`, `DRR`, and `PER`, and try to see if you can differentiate the two populations. 
+
+First, look at each distribution on its own:
 
 ```python
 # Plot the KDE for 'points' over the probability-density histogram.
@@ -9,9 +11,11 @@ plt.title('Points histogram')
 sns.kdeplot(player_df['points']);
 ```
 
-![Points histogram](../media/points-histogram.png)
+:::image type="content" source="../media/points-histogram.png" alt-text="Screenshot showing a points histogram.":::
 
-We can see that at around 1,600 is when the split across the two populations occurs. We can use that to explore the data further. One hypothesis is that Tune Squad players might score more points because they often have additional skills that humans just don't have. We can start to see the rows where players have scored more than 1,600 points: 
+You see that at around 1,600, the two populations split. Use that information to explore the data further. For example, you could hypothesize that Tune Squad players might score more points because they have skills that humans just don't have. 
+
+You can start to see the rows where players scored more than 1,600 points: 
 
 ```python
 player_df.loc[player_df['points'] >= 1600].info()
@@ -41,7 +45,9 @@ dtypes: float64(13), int64(1)
 memory usage: 2.8 KB
 ```
 
-There are 24 rows that have players that have scored at least 1,600 points. Let's continue narrowing down the players that are more likely to be part of the Tune Squad. 
+Twenty-four rows include players who scored at least 1,600 points. 
+
+Continue to narrow down the players who are likely to be part of the Tune Squad: 
 
 ```python
 # Plot the KDE for 'DRR' over the probability-density histogram.
@@ -50,9 +56,11 @@ plt.title('DRR histogram')
 sns.kdeplot(player_df['DRR']);
 ```
 
-![DRR histogram](../media/drr-histogram.png)
+:::image type="content" source="../media/drr-histogram.png" alt-text="Screenshot showing a D R R histogram.":::
 
-At around 15 defensive rebounds is where we see the distribution split. So we can see if that helps narrow down our population that we think might be Tune Squad players. Again, we could hypothesis that the Tune Squad are going to be more likely to try to get the ball in a defensive rebound because of their special skills, so we can count how many rows/players have scored more than 1,600 points and have a DRR of more than 15:
+At around 15 defensive rebounds, you see the distribution split. Check to see if that information helps narrow down the population that might be Tune Squad players. 
+
+Again, you could hypothesize that the Tune Squad players are more likely to try to get the ball in a defensive rebound because of their special skills. So count how many players (rows) scored more than 1,600 points and have a DRR of more than 15:
 
 ```python
 player_df.loc[(player_df['points'] >= 1600) & (player_df['DRR'] >= 15)].info()
@@ -82,7 +90,7 @@ dtypes: float64(13), int64(1)
 memory usage: 2.2 KB
 ```
 
-Finally, we can take a look at PER. If our hypothesis is correct so far, then Tune Squad players probably have a higher PER.
+Finally, take a look at PER. If our hypothesis is correct so far, then Tune Squad players probably have a higher PER.
 
 ```python
 # Plot the KDE for 'PER' over the probability-density histogram.
