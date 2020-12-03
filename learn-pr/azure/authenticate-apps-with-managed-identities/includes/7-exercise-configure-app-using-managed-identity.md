@@ -67,7 +67,6 @@ In this exercise, you'll edit your app to use the new key vault. Then you'll gra
     ```
 
     Replace `"<key vault name>"` with your key vault name. This code uses the `DefaultAzureCredential` to authenticate the client that will make the request. Behind the scenes, this code obtains the system-managed identity for the VM that runs the code. It then generates an instance of `SecretClient` that will utilize this authentication scheme. You can use this `SecretClient` instance to access secrets in the key vault.
-    For more information on how the `DefaultAzureCredential` works, see the [documentation](https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/identity/Azure.Identity/README.md#defaultazurecredential).
 
 1. Look at the next part of the code:
 
