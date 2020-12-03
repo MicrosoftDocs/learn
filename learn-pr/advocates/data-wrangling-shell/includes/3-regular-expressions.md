@@ -79,7 +79,7 @@ NASA/NESSUS 6.2c Probabilistic Structural Analysis
 
 When you match sequences that appear at the specific part of a line of characters or a word, it’s called anchoring. You use the caret (`^`) symbol to indicate the search pattern should only consider a character sequence a match if it appears at the start of a line. The `$` symbol is used to indicate that the search patter should only consider a match if it appears at the end of a line.
 
-So you can now write regex that will match numbers at the beginning of a line: `^[0-9]` or the end of a line `[0-9]$`.
+So you can now write a regex that will match numbers at the beginning of a line: `^[0-9]` or the end of a line `[0-9]$`.
 
 ### Escaping characters
 
@@ -91,12 +91,13 @@ Let’s say we want to find lines in which a period (`.`) is the last character.
 
 But this regex will not return what we're after. As we covered earlier, the period (`.`) matches any single character. Because every line ends with a character, every line was returned in the results.
 
-So, how do you prevent a special character from doing its regex function when you just want to search for that actual character? To do this, you use a backslash (`\`) to escape the character.
+So, how do you prevent a special character from doing its regex function when you simply want to search for that actual character? To do this, you use a backslash (`\`) to escape the character.
+
 ## Regex cheatsheet
 
 This unit was a brief introduction to regular expressions and what you can accomplish with them. There are many other complex patterns you can build with regular expressions. In the meantime here's a handy regex cheatsheet for you:
 
-```
+```output
 ^        Matches the beginning of a line
 $        Matches the end of the line
 .        Matches any character
@@ -114,3 +115,5 @@ $        Matches the end of the line
 (        Indicates where string extraction is to start
 )        Indicates where string extraction is to end
 ```
+
+You can also learn more about VSCOde and regular expressions in the [VSCode documentation](https://docs.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio?view=vs-2019).
