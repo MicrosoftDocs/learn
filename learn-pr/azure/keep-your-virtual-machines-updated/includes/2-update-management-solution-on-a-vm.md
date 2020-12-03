@@ -35,9 +35,7 @@ The following configurations are used to perform assessment and update deploymen
 
 The following diagram shows a conceptual view of the behavior and data flow with how the solution assesses and applies security updates to all connected Windows Server and Linux computers in a workspace.
 
-:::image type="complex" source="../media/2-conceptual-view-data-flow.png" alt-text="Diagram that shows how the solution assesses and applies security updates to all connected Windows Server and Linux computers in a workspace." border="false":::
-
-:::image-end:::
+:::image type="content" source="../media/2-conceptual-view-data-flow.png" alt-text="Diagram that shows how the solution assesses and applies security updates to all connected Windows Server and Linux computers in a workspace." border="false":::
 
 ### Hybrid Worker Groups
 
