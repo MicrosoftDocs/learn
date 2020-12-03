@@ -14,10 +14,10 @@ https://github.com/microsoft/space-jam-a-new-legacy-template/generate?azure-port
 
 :::image type="content" source="../media/web-app-repo-setup.png" alt-text="Screenshot showing how to set up the new web app repo on GitHub.com.":::
 
-## Clone your repo using Visual Studio Code
+## Clone your repo by using Visual Studio Code
 
 >[!NOTE] 
-> You may be prompted to sign in to Azure or GitHub throughout the remaining steps in this unit. If so, follow the instructions to authorize Visual Studio Code to access this specific repository and your Azure subscription if you feel comfortable doing so. This is necessary to complete the module.
+> You might be prompted to sign in to Azure or GitHub throughout the remaining steps in this unit. If so, follow the instructions to authorize Visual Studio Code to access this specific repository and your Azure subscription if you feel comfortable doing so. This is necessary to complete the module.
 
 One your repo is created, you can clone it (make a copy onto your local computer) using Visual Studio Code. First, open a new Visual Studio Code window by clicking "File -> New Window".
 

@@ -1,12 +1,12 @@
-There are three functions needed to enable the coach to actually run each quarter of the game. This unit will introduce these three functions.
+Three functions are needed for the coach to actually run each quarter of the game. This unit introduces these three functions.
 
 ## Update the stats at the end of each quarter
 
-At the end of each quarter we will want to make sure that the coach can see the updated PER stats for each player so that they can make a decision if they want to change the line up. This function will be similar to the `addStatsToGame()` function that we wrote in a previous unit. 
+At the end of each quarter, we'll want to make sure that the coach can see the updated PER stats for each player, so the coach can decide whether they want to change the lineup. This function is similar to the `addStatsToGame()` function that we wrote in a previous unit. 
 
 The two differences with this new function is:
-- We can update the player cards instead of creating them
-- We now have players on the court and can calculate the PER based on the new stats for that quarter
+- We can update the player cards instead of creating them.
+- We now have players on the court and can calculate the PER based on the new stats for that quarter.
 
 ```javascript
 // At the start of each quarter to do two things: 1. Ensure the players
@@ -45,8 +45,8 @@ function updateStatsInGame() {
 
 ## Write functionality for ending a quarter and the game
 
-We will need two functions that act as "wrap up" functions for our app:
-- `endQuarter()` - The purpose of this function is to preserve the PER of the quarter that completed and initiate the next quarter to start (calling the `updateStatsInGame()` function above)
+We'll need two functions that act as "wrap-up" functions for our app:
+- `endQuarter()` - The purpose of this function is to preserve the PER of the quarter that finished and to initiate the next quarter to start (calling the `updateStatsInGame()` function).
 - `endGame()` - The purpose of this function is to let the coach know how they did!
 
 ```javascript

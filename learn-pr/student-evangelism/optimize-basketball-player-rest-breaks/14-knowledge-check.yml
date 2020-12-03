@@ -14,16 +14,16 @@ quiz:
   questions:
   - content: "What type of machine learning model is effective for predicting one value based on many other values?"
     choices:
-    - content: "Decision Tree"
+    - content: "Decision tree"
       isCorrect: false
-      explanation: "Incorrect. Decision trees are typically used in classification problems."
+      explanation: "Incorrect. Decision trees typically are used in classification problems."
     - content: "PCA"
       isCorrect: false
-      explanation: "Incorrect. PCA (Principal Component Analysis) is typically used in anomoly detection problems."
+      explanation: "Incorrect. Principal Component Analysis (PCA) typically is used in anomoly detection problems."
     - content: "K-Means"
       isCorrect: false
-      explanation: "Incorrect. K-Means is typically used in clustering problems."
-    - content: "Linear Regression"
+      explanation: "Incorrect. K-Means typically is used in clustering problems."
+    - content: "Linear regression"
       isCorrect: true
       explanation: "Correct. Regression is the act of taking many complex data pieces and determining a numerical outcome."
   - content: "What is one way to create randomized sample data that is close to accurate?"
@@ -31,15 +31,15 @@ quiz:
     - content: "Use a random number within the standard deviation of input values for a machine learning algorithm."
       isCorrect: true
       explanation: "Correct. The standard deviation represents a reasonable range of values for an accurate prediction."
-    - content: "Using the `random.randrange` using the smallest and largest number on input values"
+    - content: "Use `random.randrange`, with the smallest and largest number on input values"
       isCorrect: false
-      explanation: "Incorrect. While it is *possible* that a random number within that range is effective, the standard deviation will give a more accurate range."
-    - content: "It is never useful to create randomized sample data."
+      explanation: "Incorrect. Although it's *possible* that a random number within that range is effective, the standard deviation will give a more accurate range."
+    - content: "It's never useful to create randomized sample data."
       isCorrect: false
-      explanation: "Incorrect. While randomized sample data shouldn't be used to make critical decisions, they can serve as effective testing data."
+      explanation: "Incorrect. Although randomized sample data shouldn't be used to make critical decisions, they can serve as effective testing data."
     - content: "Any integer between 0 and 100."
       isCorrect: false
-      explanation: "Incorrect. While it is *possible* that a random number within that range is effective, the standard deviation will give a more accurate range."
+      explanation: "Incorrect. Although it's *possible* that a random number within that range is effective, the standard deviation will give a more accurate range."
   - content: "Azure Static Web Apps take significant expertise to develop and deploy."
     choices:
     - content: "True - Azure Static Web Apps are typically used by web developers with decades of experience."

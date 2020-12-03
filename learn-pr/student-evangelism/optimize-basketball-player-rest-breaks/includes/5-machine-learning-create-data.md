@@ -1,6 +1,6 @@
-We've now run into a problem. There is no way for us to watch a game of 16 Tune Squad characters playing basketball to be able to test out our model in an actual app. There is no way for us to get real-time game data from the Tune Squad playing. BUT, we *can* use the trick we learned to test our model to create a new dataset that would simulate a game!
+Now, we've run into a problem. There's no way for us to watch a game of 16 Tune Squad characters playing basketball and test out our model in an actual app. There's no way for us to get real-time game data from the Tune Squad playing. *But*, we *can* use the trick we learned about testing our model to create a new dataset that would simulate a game!
 
-The web app that we will build in the upcoming units will facilitate us decising which player to give a water break to every 12 minutes of a standard 48-minute game. So we should create a CSV file that will contain randomized player data over four iterations: 0 minutes (the start of the game), 12 mintues, 24 minutes, and 36 minutes.
+The web app that we'll build in the upcoming units will help us decide which player to give a water break to every 12 minutes of a standard 48-minute game. So, we should create a CSV file that will contain randomized player data over four iterations: 0 minutes (the start of the game), 12 mintues, 24 minutes, and 36 minutes.
 
 ```python
 # Initialize four empty DataFrames, one for each 12-minute period.
@@ -18,7 +18,7 @@ for df in df_list:
 game_df = pd.concat(df_list)
 game_df.rename_axis('player_name', inplace=True)
 
-# Now create another index for the period in quesiton.
+# Create another index for the period in question.
 minutes = [(x // len(ts_df)) * 12 for x in range(len(game_df))]
 game_df['minutes'] = minutes
 game_df.set_index('minutes', append=True, inplace=True)
@@ -27,7 +27,7 @@ game_df = game_df.swaplevel()
 game_df
 ```
 
-**Output**
+**Output**:
 
 | minutes | player_name | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
 |--|--|--|--|--|--|--|--|--|--|
@@ -45,7 +45,7 @@ game_df
 
 64 rows × 8 columns
 
-The final DataFrame looks complete, so we can save it as a CSV file so that we can use it in our web app. When saving this DataFrame as a CSV file, we will want to keep the indices since we made them the player's names.
+The final DataFrame looks complete, so we can save it as a CSV file, so we can use it in our web app. When saving this DataFrame as a CSV file, we'll want to keep the indices because we made them the player's names.
 
 ```python
 # Export the finished DataFrame to CSV. 
@@ -54,6 +54,6 @@ game_df.to_csv('game_stats.csv')
 
 A new CSV file should appear in your Visual Studio Code folder:
 
-![The game_stats.csv file in the Visual Studio Code explorer](../media/game-stats-csv.png)
+:::image type="content" source="../media/game-stats-csv.png" alt-text="Screenshot that shows the game_stats.csv file in Visual Studio Code Explorer":::
 
 © 2020 Warner Bros. Ent. All Rights Reserved
