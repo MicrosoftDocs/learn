@@ -59,7 +59,7 @@ Azure Spring Cloud can automatically bind the MySQL database we created to our m
     2. In the **Binding type** list, select **Azure database for MySQL**.
     3. The **Resource name** should be the one of the MySQL database you created earlier.
     4. The **Database name** should be **todos**
-    5. The **User name** should be **spring@todos** (this is the administrator login of the MySQL database, and the database name).
+    5. The **User name** should be **spring@YOUR_DATABASE_NAME**, with **YOUR_DATABASE_NAME** being the name of your database, that we set up earlier as **${SPRING_CLOUD_NAME}-mysql** when creating it.
     6. The **Password** is the **password** attribute that we copied earlier, when creating the server.
 
 Click on **Create** and your Spring Boot application will have the MySQL database connection set up.
