@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools
+metadata:
+  title: Query data in the lake using Azure Synapse serverless SQL pools
+  description: "Query data in the lake using Azure Synapse serverless SQL pools"
+  ms.date: 11/23/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Query data in the lake using Azure Synapse serverless SQL pools
+summary: Learn how you can query the different file types that can be stored in a data lake.
+abstract: |
+  After the completion of this module, you will be able to:
+  - Query a CSV file using Azure Synapse serverless SQL pools
+  - Query a Parquet file using Azure Synapse serverless SQL pools
+  - Query a JSON file using Azure Synapse serverless SQL pools
+  - Query multiple files and folders using Azure Synapse serverless SQL pools
+  - Understand storage considerations when using Azure Synapse serverless SQL pools
+prerequisites: |
+  - It is recommended that students have completed Data Fundamentals before starting this learning path.
+iconUrl: /learn/achievements/query-data-in-the-lake-using-azure-synapse-serverless-sql-pools.svg
+levels:
+- beginner
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.introduction
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-csv-file
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-parquet-file
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-json-file
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-multiple-files-folders
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.storage-considerations-when
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.knowledge-check
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.summary
+badge:
+  uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.badge

@@ -45,7 +45,7 @@ The structure of an IPv4 address is four decimal numbers in the range of 0 to 25
 
 There are two parts to an IP address, the network and the host. Let's use the address `192.168.0.1` as an example.
 
-The network part of an IP address covers the first set of decimal numbers. In the example, that's `192.168.0`. This number is unique to the network and specifies the class of the network. The are a number of network classes available, which we'll discuss next.
+The network part of an IP address covers the first set of decimal numbers. In the example, that's `192.168.0`. This number is unique to the network and specifies the class of the network. There are a number of network classes available, described next.
 
 The host part of the IP address covers the next set of decimal numbers. In the example, that's `1`. This number represents the device and has to be unique within the network to avoid address conflicts. Each device on a network segment must have a unique address.
 
