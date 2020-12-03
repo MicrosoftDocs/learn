@@ -1,4 +1,4 @@
-Determining which types of samples to collect from the Moon definitely requires expertise, but we can start to make some assumptions for the purpose of learning how to clean and manipulate data.
+Determining which types of samples to collect from the Moon requires expertise, but we can start to make some assumptions to learn how to clean and manipulate data.
 
 First, we can determine how much remains of each sample that was returned from the Apollo missions, given the amount that was originally collected and the percentage of remaining pristine sample.
 
@@ -10,7 +10,7 @@ rock_samples.head()
 > [!NOTE]
 > You need to multiply the **Pristine(%)** column by 0.01, because it was being represented as a whole number.
 
-Looking at the `head()` or `info()` of the `rock_samples` dataframe isn't actually useful at this point. With over 2,000 samples, it's difficult to get an understanding of what the values are. For that, you can use the `describe()` function:
+Looking at the `head()` or `info()` of the `rock_samples` data frame isn't useful at this point. With over 2,000 samples, it's difficult to get an understanding of what the values are. For that, you can use the `describe()` function:
 
 ```python
 rock_samples.describe()
@@ -59,7 +59,7 @@ low_samples.info()
  6   Remaining(kg)  27 non-null     float64
  ```
 
-Twenty-seven samples seems like a small amount to base a recommendation on. We can probably find some other samples that are needed for more research here on Earth. To discover them, we can use the `unique()` function to see how many unique types we have across the `low_samples` and `rock_samples` dataframes.
+Twenty-seven samples seem like a small amount to base a recommendation on. We can probably find some other samples that are needed for more research here on Earth. To discover them, we can use the `unique()` function to see how many unique types we have across the `low_samples` and `rock_samples` data frames.
 
 ```python
 low_samples.Type.unique()
@@ -77,7 +77,7 @@ rock_samples.Type.unique()
 array(['Soil', 'Basalt', 'Core', 'Breccia', 'Special', 'Crustal'], dtype=object)
 ```
 
-We can see that, although six unique types were collected across all samples, the samples that are running low are from only four unique types. But this doesn't tell us everything about the samples we might want to focus on. For example, in our `low_samples` dataframe, how many of each type are actually considered low?
+We can see that, although six unique types were collected across all samples, the samples that are running low are from only four unique types. But this doesn't tell us everything about the samples we might want to focus on. For example, in our `low_samples` data frame, how many of each type are considered low?
 
 ```python
 low_samples.groupby('Type')['Weight(kg)'].count()
@@ -113,4 +113,4 @@ needed_samples.info()
  6   Remaining(kg)  22 non-null     float64
 ```
 
-But are Basalt and Breccia really the only two types of rocks we want to look for?
+But are Basalt and Breccia the only two types of rocks we want to look for?
