@@ -1,8 +1,8 @@
-The `player_df_final` pandas DataFrame contains data from 40 players. The first 26 rows represent human players and the last 17 rows represent Tune Squad. We're going to build an app that helps the coach choose which player could use a water break during a game, while not risking winning the game, but also not wearing out any of the players. For the purposes of this module, we'll deal only with the Tune Squad. This means we can focus on the last 16 rows of data. 
+The `player_df_final` pandas DataFrame contains data from 40 players. The first 26 rows represent human players and the last 17 rows represent Tune Squad. We're going to build an app that helps the coach choose which player could use a water break during a game, while not risking winning the game, but also not wearing out any of the players. For the purposes of this module, we'll deal only with the Tune Squad. We can focus on the last 16 rows of data. 
 
 Before we get started building the app, we have to make sure we have the data in a state that will be ready for the app to ingest.
 
-Let's start by creating a DataFrame to represent only the Tune Squad players. This code will choose all rows, starting at row 27 (index 26, because this is a 0-based DataFrame), and all columns.
+Let's start by creating a DataFrame to represent only the Tune Squad players. This code will choose all rows, starting at row 27 (index 26, because the DataFrame is zero-based), and all columns.
 
 ```python
 # Create a DataFrame of only Tune Squad players.
@@ -41,7 +41,7 @@ Let's understand this data a bit more. We can see that there are a number of col
 * **team_pace**: Average number of possessions a team uses per game
 * **GP**: Games played by a player in a season
 * **MPG**: Average minutes played by a player per game
-* **TS%**: True shooting percentage, a player's shooting percentage, taking free throws and 3-pointers into account
+* **TS%**: True shooting percentage, a player's shooting percentage, taking free throws and three-pointers into account
 * **AST**: Assist ratio, the percentage of a player's possessions that end in an assist
 * **TO**: Turnover ratio, the percentage of a player's possessions that end in a turnover
 * **USG**: Usage rate, the number of possessions a player uses per 40 minutes
@@ -50,15 +50,15 @@ Let's understand this data a bit more. We can see that there are a number of col
 * **REBR**: Rebound rate, the percentage of missed shots that a player rebounds
 * **PER**: The player efficiency rating (PER), a measure of a player's per-minute productivity on the court
 
-Although a lot of these data points make sense in the context of basketball, we can still start to cleanse our data even without a very technical understanding of each of these columns. So, if you're not well versed in these terms, don't worry! There's still a lot to do to gain insights into the data. 
+Although many of these data points make sense in the context of basketball, we can still start to cleanse our data even without a highly technical understanding of each of these columns. So, if you're not well versed in these terms, don't worry! We still have a lot to do to gain insights into the data. 
 
-The most important thing to understand is that each of these columns is data that can be counted during a game, expect for PER. PER, or *player efficiency rating*, is a calculation based on all the other player stats. PER determines "how good" a player is. This column can be used to predict how effective a player is during a game. As of writing this module, the NBA player with the highest PER is Michael Jordan, with a rating of 27.91, and the NBA player with the second highest rating, as well as the highest rating of currently active NBA players, is LeBron James, with a score of 27.49.
+The most important thing to understand is that each of these columns is data that can be counted during a game, expect for PER. PER, or *player efficiency rating*, is a calculation based on all the other player stats. PER determines "how good" a player is. This column can be used to predict how effective a player is during a game. When this module was written, the NBA player with the highest PER was Michael Jordan, with a rating of 27.91. The NBA player with the second highest rating, and with the highest rating of currently active NBA players, was LeBron James, with a score of 27.49.
 
-The calculation of PER isn't perfect, and some fans and data scientists might choose to evaluate players differently. But for the purposes of this module, we will use PER as the measurement to help make decisions regarding which player should be given a quick water break during a game.
+The calculation of PER isn't perfect, and some fans and data scientists might choose to evaluate players differently. But for the purposes of this module, we will use PER as the measurement to help make decisions about which player should be given a quick water break during a game.
 
 ## Import Tune Squad data to merge with player data
 
-Next, import the names of the Tune Squad players for the game. Before doing this, open the tune_squad.csv file in Visual Studio Code. You will see that the file is tab-separated rather than comma-separated, so set `sep='\t'` in your `pd.read_csv()` call.
+Next, import the names of the Tune Squad players for the game. But before taking the next step, open the *tune_squad.csv* file in Visual Studio Code. You'll see that the file is tab-separated rather than comma-separated, so set `sep='\t'` in your `pd.read_csv()` call:
 
 ```python
 # Import Tune Squad player names.
@@ -91,7 +91,7 @@ The `ts_names_df` DataFrame contains the ID of the player, which matches the ID 
 
 ## Merge DataFrames to better qualify data
 
-With two DataFrames that contain complementary data, we can merge the DataFrames on the ID column, because we know those match.
+With two DataFrames that contain complementary data, we can merge the DataFrames on the ID column, because we know those columns match:
 
 ```python
 # Merge the two DataFrames.
@@ -112,7 +112,7 @@ ts_df.head()
 
 ## Organize the DataFrame for better readability
 
-Although it doesn't technically matter where each column is in a DataFrame, having the player name at the left, near the ID, makes most sense in terms of readability. To move that column over so that's it's next to the ID column, we:
+Although it doesn't technically matter where each column is in a DataFrame, having the player name at the left, near the ID, makes most sense for readability. To move that column over so that's it's next to the ID column, we:
 1. Create a list of the columns.
 1. Remove the **player_name** column from the list (we know it's at the end, so we can simply pop it off the list).
 1. Put **player_name** in the second position of the column list, replacing the **player_type** column.

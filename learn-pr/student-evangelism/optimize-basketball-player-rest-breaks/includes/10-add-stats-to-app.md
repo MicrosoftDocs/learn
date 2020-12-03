@@ -39,7 +39,7 @@ function addStatsToGame() {
 
 ## Test the initial stat display locally
 
-We can test this locally: right-click the *index.html* file, select **Copy Path**, and then paste that path in a browser address bar. If you had the page open from the last unit, make sure you do a hard refresh (Ctrl+Shift+R on Windows and Cmd+Shift+R on Mac). Upload the *game_stats.csv* file again, and you should see the 16 players sitting on the bench, with the 16 player stat cards on the right stat board.
+We can test the initial stat display locally: right-click the *index.html* file, select **Copy Path**, and then paste that path in a browser address bar. If you had the page open from the last unit, make sure you do a hard refresh (Ctrl+Shift+R on Windows and Cmd+Shift+R on Mac). Upload the *game_stats.csv* file again, and you should see the 16 players sitting on the bench, with the 16 player stat cards on the right stat board.
 
 :::image type="content" source="../media/local-test-2.png" alt-text="Screenshot that shows the test of the initial stat visualization.":::
 

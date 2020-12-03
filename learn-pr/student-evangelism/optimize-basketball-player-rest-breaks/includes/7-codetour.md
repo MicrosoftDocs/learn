@@ -2,21 +2,21 @@ Now that you have your Azure Static Web Apps project created on GitHub and conne
 
 We'll build a *very* basic app. If you want, you can continue building up your web app after you complete the module to make it look better. We're going to focus on the functionality of connecting data with a web app.
 
-Although the rest of this module will include explanations for the code that we are writing, in this module, you have two options for actually writing the functionality for this web app:
+Although the rest of this module will include explanations for the code that we're writing, you have two options for actually writing the functionality for this web app:
 * Use [CodeTour](https://aka.ms/codetour-mslearn) and be guided through writing the JavaScript from within Visual Studio Code.
 * Copy and paste code from this module as you did with Python code for the Jupyter notebooks.
 
-Using CodeTour offers you an opportunity to see how well you can write code when you're given instructions but not the exact code to copy and paste. If you want to challenge yourself, try starting with CodeTour. And you have nothing to worry about because you can always take a look at the code in this module to get you back on track if you get stuck. Whichever learning journey you choose today, you *will* be able to complete this module and create a functional app that helps Tune Squad basketball coaches choose which player to give a water break to, while optimizing their chances of winning the game.
+Using CodeTour offers you an opportunity to see how well you can write code when you have instructions, but not the exact code to copy and paste. If you want to challenge yourself, try starting with CodeTour. And you have nothing to worry about because you can always look at the code in this module to get back on track if you get stuck. Whichever learning journey you choose today, you *will* be able to complete this module and create a functional app that helps Tune Squad basketball coaches choose which player to give a water break to, while optimizing their chances of winning the game.
 
 ## Using CodeTour
 
-Using [CodeTour](https://aka.ms/codetour-mslearn) is super easy. In fact, CodeTour is already set up in the repo that you cloned in the last unit!
+Using [CodeTour](https://aka.ms/codetour-mslearn) is easy. In fact, CodeTour is already set up in the repo that you cloned in the last unit!
 
-Open the CodeTour extension in your Visual Studio Code Explorer. You should see *X* tours. Each tour has a few steps in it to guide you through your code writing.
+Open the CodeTour extension in Visual Studio Code Explorer. You should see *X* tours. Each tour has a few steps in it to guide you through your code writing.
 
 :::image type="content" source="../media/initial-codetour.png" alt-text="Screenshot that shows CodeTour in Visual Studio Code":::
 
-To get started using CodeTour, select the green arrow for the first Tour, called `readStatData`. When you do this, a step pops up on line 19 of your `main.js` file, even if you didn't have it open. Follow the instructions in the step, and then select the **Next** button at the bottom of the window to go to the next step.
+To get started using CodeTour, select the green arrow for the first tour, called `readStatData`. When you do this, a step pops up on line 19 of your *main.js* file, even if you didn't have it open. Follow the instructions in the step, and then select the **Next** button at the bottom of the window to go to the next step.
 
 :::image type="content" source="../media/codetour-step-main.png" alt-text="Screenshot that shows the first step in a CodeTour file.":::
 

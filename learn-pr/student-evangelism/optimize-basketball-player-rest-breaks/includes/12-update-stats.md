@@ -4,9 +4,9 @@ Three functions are needed for the coach to actually run each quarter of the gam
 
 At the end of each quarter, we'll want to make sure that the coach can see the updated PER stats for each player, so the coach can decide whether they want to change the lineup. This function is similar to the `addStatsToGame()` function that we wrote in a previous unit. 
 
-The two differences with this new function is:
+The two differences with this new function are:
 - We can update the player cards instead of creating them.
-- We now have players on the court and can calculate the PER based on the new stats for that quarter.
+- We now have players on the court, and we can calculate the PER based on the new stats for that quarter.
 
 ```javascript
 // At the start of each quarter to do two things: 1. Ensure the players
@@ -46,8 +46,8 @@ function updateStatsInGame() {
 ## Write functionality for ending a quarter and the game
 
 We'll need two functions that act as "wrap-up" functions for our app:
-- `endQuarter()` - The purpose of this function is to preserve the PER of the quarter that finished and to initiate the next quarter to start (calling the `updateStatsInGame()` function).
-- `endGame()` - The purpose of this function is to let the coach know how they did!
+- `endQuarter()`: The purpose of this function is to preserve the PER of the quarter that finished and to initiate the next quarter to start (calling the `updateStatsInGame()` function).
+- `endGame()`: The purpose of this function is to let the coach know how they did!
 
 ```javascript
 // At the end of each quarter, show the coach the average PER

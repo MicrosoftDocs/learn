@@ -3,9 +3,9 @@ The final function is the one that will simulate the game actually running. In t
 The `startNextQuarter()` function is called from the button that is defined in *index.html*. Locate the `div` that has the ID `start` to see the `onclick` declaration. 
 
 ```javascript
-// This function is called when the Game button is clicked. Each time the button is clicked
-// it will run through a 12-second timer (simulating 12 minutes) and then update the game
-// to the next quarter
+// This function is called when the Game button is selected. Each time the button is selected,
+// it runs through a 12-second timer (simulating 12 minutes) and then updates the game
+// to the next quarter.
 function startNextQuarter() {
     // If there aren't exactly 5 players on the court, alert the coach that the game can't start
     if(playersOnCourt != maxPlayersOnCourt){
@@ -15,23 +15,23 @@ function startNextQuarter() {
 
     document.getElementById("start").innerHTML = "Q" + (currentQuarter+1) + " is in progress";
 
-    // Define the interval period for the quarter, in this case, 12 seconds
+    // Define the interval period for the quarter; in this case, it's 12 seconds.
     var interval = secondsInQuarter;
 
     // Set the quarterInplay variable to true so that the coach can't move players during
-    // gameplay
+    // gameplay.
     quarterInPlay = true;
 
-    // Update the count down every 1 second, as indicated by the `1000` as the second parameter
-    // to the setInterval function
+    // Update the count down every 1 second, as indicated by 1000 as the second parameter
+    // to the setInterval function.
     var x = setInterval(function() {        
-        // Display the current time on the court board
+        // Display the current time on the court board.
         document.getElementById("timer").innerHTML = "Q "+ (currentQuarter+1) + " Timer: " + ((secondsInQuarter - interval)+1);
 
-        // Decrement the interval counter for this quarter
+        // Decrement the interval counter for this quarter.
         interval--;
 
-        // If the quarter has ended, reset the interval timer, and get ready for the next quarter
+        // If the quarter has ended, reset the interval timer and get ready for the next quarter.
         if (interval < 0) {
             clearInterval(x);
             if(currentQuarter < 3) {
@@ -51,14 +51,14 @@ Although the interval functionality is beyond the scope of this module, a critic
 
 It's finally time! The app is finished! Now, we can test our app. Remember that you'll want to test all the functionality (including trying to add too many players to the court, or starting the game when there are too few players on the court).
 
-1. Choose 5 characters.
+1. Choose five players.
 2. Press the **Start the Game!** button.
 3. When the timer stops, adjust (or not) the players on the court versus players taking a break.
-4. When your lineup is locked in, selects the **Start Q2** button. 
+4. When your lineup is locked in, select the **Start Q2** button. 
 
 :::image type="content" source="../media/final-test-1.png" alt-text="Screenshot that shows the test of the final web app.":::
 
-Repeat steps 3 and 4 this for all four quarters, and you should get to the end of the game!
+Repeat steps 3 and 4 for all four quarters, and you should get to the end of the game!
 
 :::image type="content" source="../media/final-test-2.png" alt-text="Screenshot that shows finishing the first game in the web app.":::
 
@@ -66,9 +66,9 @@ Congratulations! You finished your web app!
 
 ## Deploy your final web app
 
-Now that you have finished your web app and you were able to test it locally, you can deploy it to the web! This is actually fairly easy. All you have to do is push your changes to your main branch! 
+Now that you have finished your web app and you tested it locally, you can deploy it to the web! Deploying your app to the web is fairly easy. All you have to do is push your changes to your main branch! 
 
-To commit and push your changes, go to the source control extension, add a commit mesage, and select the check mark at the top. 
+To commit and push your changes, go to the source control extension, add a commit message, and select the check mark at the top. 
 
 :::image type="content" source="../media/commit-code.png" alt-text="Screenshot that shows committing main.js changes.":::
 

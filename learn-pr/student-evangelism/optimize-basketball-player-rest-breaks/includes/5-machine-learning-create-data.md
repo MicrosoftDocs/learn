@@ -1,6 +1,6 @@
-Now, we've run into a problem. There's no way for us to watch a game of 16 Tune Squad characters playing basketball and test out our model in an actual app. There's no way for us to get real-time game data from the Tune Squad playing. *But*, we *can* use the trick we learned about testing our model to create a new dataset that would simulate a game!
+Now, we've run into a problem. There's no way for us to watch a game of 16 Tune Squad characters playing basketball and test out our model in an actual app. We can't get real-time game data from the Tune Squad playing. *But*, we *can* use the trick we learned about testing our model to create a new dataset that would simulate a game!
 
-The web app that we'll build in the upcoming units will help us decide which player to give a water break to every 12 minutes of a standard 48-minute game. So, we should create a CSV file that will contain randomized player data over four iterations: 0 minutes (the start of the game), 12 mintues, 24 minutes, and 36 minutes.
+The web app that we'll build in the upcoming units will help us decide which player to give a water break to every 12 minutes of a standard 48-minute game. So, we should create a CSV file that will contain randomized player data over four iterations: 0 minutes (the start of the game), 12 minutes, 24 minutes, and 36 minutes.
 
 ```python
 # Initialize four empty DataFrames, one for each 12-minute period.
@@ -54,6 +54,6 @@ game_df.to_csv('game_stats.csv')
 
 A new CSV file should appear in your Visual Studio Code folder:
 
-:::image type="content" source="../media/game-stats-csv.png" alt-text="Screenshot that shows the game_stats.csv file in Visual Studio Code Explorer":::
+:::image type="content" source="../media/game-stats-csv.png" alt-text="Screenshot that shows the game_stats . c s v file in Visual Studio Code Explorer.":::
 
 © 2020 Warner Bros. Ent. All Rights Reserved
