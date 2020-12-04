@@ -40,5 +40,6 @@ modules:
 - learn.github.github-actions-ci
 - learn.github.github-actions-cd
 - learn.github.automate-github-using-github-script
+- learn.github.github-actions-packages 
 trophy:
   uid: learn.automate-workflow-github-actions.trophy
