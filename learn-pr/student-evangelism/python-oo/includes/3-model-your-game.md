@@ -11,8 +11,6 @@ The concept of objects has been mentioned a few times already as part of trying 
 
 Lets try to imagine an object in the real world, you are in a car park, what do you see? You are likely to see cars, lots of them, of all shapes, sizes, and colors. To describe a car you can use properties like make, model, color, type of car, like a four-wheel drive and so on. If you assign values to these properties, it quickly becomes clear whether you are talking about red Ferrari or a four-wheel drive Jeep or a yellow Mustang and so on.
 
-:::image type="content" source="../media/object-car.png" alt-text="A car object with properties color and make":::
-
 New scene, a deck of cards in Vegas. You look at two different cards, two objects and you realize they have some common properties namely suit, e.g clubs, heart, diamonds etc. and what value they are like ace, king, nine etc.
 
 > [!TIP]
@@ -31,8 +29,6 @@ You've learned that an OOP system has objects and that those objects have proper
 |Description of ice cream              | Strawberry, chocolate, or vanilla ice cream  |
 
 The way you go about creating an object from a class is similar to how you would create a car from a blueprint. When you create an object your program asks the operating system for resources, memory, to be able to construct the object. Conversely when a car is made from a blueprint the factory asks for resources like metal, rubber, glass etc. to be able to assemble the car.
-
-:::image type="content" source="../media/factory.png" alt-text="Assembling a car in a factory":::
 
 ## How to create a class
 
