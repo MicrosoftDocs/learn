@@ -30,4 +30,49 @@ cat NASA-software-API.txt | sed ''
 
 ## Text substitution with sed
 
-Text substitution is perhaps the most well-known use for `sed`
+Text substitution is perhaps the most well-known use for `sed`. As we learned before, `sed` can search for test patterns using regular expressions. But `sed` can also replace the matched text with something else.
+
+The basic syntax for text substitution is:
+
+```bash
+sed s'/old_text/new_text/'
+```
+
+where the `s` is the substitute command and the three forward slashes `/` are used to separate the text fields. 
+
+Imagine you have the following URL https://www.nasa.gov/about/sites/index.html and you want to replace `index.html` with `home`. You can achieve this with the following command:
+
+```bash
+echo "https://www.nasa.gov/about/sites/index.html" | sed s'/index.html/home/'
+```
+
+The output shows the modified URL:
+
+```output
+https://www.nasa.gov/about/sites/homes
+```
+
+Let's replace the `NASA` occurrences for 'National Aerospace Agency' in the `NASA-software-API.txt` file:
+
+
+```bash
+ sed 's/NASA/National Aerospace Agency/' NASA-software-API.txt
+```
+
+You'll notice that the substitution happened on all matches for NASA but the command `sed` printed out all of the lines in the file. This is the default behavior of `sed`.
+
+Let's say we only want to print the lines in which the pattern was replaced. We can use the flag `-n` to suppress automatic printing and pass the option `p` to the replacement flag, like so;
+
+```bash
+sed -n 's/NASA/National Aerospace Agency/p' NASA-software-API.txt
+```
+
+## Writing to a file
+
+There's one more flag that can follow the third delimiter. With it, you can specify a file that will receive the modified data. An example is the following, which will write all lines in which we replaced `NASA` before:
+
+```bash
+sed -n 's/NASA/National Aerospace Agency/w NASA-replaced.txt' NASA-software-API.txt
+```
+
+You should now have a new file `NASA-replaced.txt`.

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid:
 metadata:
-  title:
-  description:
+  title: Introduction to the stream editor (`sed`)
+  description: In this unit, you will be introduced to the stream editor (`sed`). You will also learn how to use `sed` with regular expressions to modify text files from the command line.
   ms.date:
   author: trallard
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title:
-durationInMinutes:
+title: Introduction to the stream editor (`sed`)
+durationInMinutes: 3
 content: |
   [!include[](includes/1-unit.md)]
