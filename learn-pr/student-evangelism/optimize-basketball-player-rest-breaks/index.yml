@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create a web app that uses data to make decisions on the basketball court
-summary: Create a web app by using JavaScript, Azure, GitHub, and Visual Studio Code to help the Tune Squad coach use data to make decisions on the basketball court, inspired by SPACE JAM A NEW LEGACY.
+summary: Use JavaScript, Azure, GitHub, and Visual Studio Code to write a web app that helps the Tune Squad coach make data-based decisions on the basketball court, inspired by SPACE JAM A NEW LEGACY.
 abstract:  |
   In this module, you will begin to discover:
   - Python, pandas, and machine learning
@@ -21,7 +21,7 @@ abstract:  |
   - JavaScript to create functionality for your app
 prerequisites: | 
   - [Visual Studio Code, with the Python extension](https://aka.ms/LearnOnVSCode)
-  - [Azure Static Web Apps (Preview) extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps&azure-portal=azure)
+  - [Azure Static Web Apps (Preview) extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps)
   - [CodeTour extension for Visual Studio Code](https://aka.ms/codetour-mslearn)
   - A local Python environment set up, as seen in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)
   - An [Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/)

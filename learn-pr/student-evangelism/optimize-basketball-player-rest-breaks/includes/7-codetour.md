@@ -4,8 +4,8 @@ We'll build a *very* basic app. If you want, you can continue building up your w
 
 Although the rest of this module will include explanations for the code that we're writing, you have two options for actually writing the functionality for this web app:
 
-* Use [CodeTour](https://aka.ms/codetour-mslearn) and be guided through writing the JavaScript from within Visual Studio Code.
-* Copy and paste code from this module, like you did with Python code for the Jupyter Notebook files.
+- Use [CodeTour](https://aka.ms/codetour-mslearn) and be guided through writing the JavaScript from within Visual Studio Code.
+- Copy and paste code from this module, like you did with Python code for the Jupyter Notebook files.
 
 Using CodeTour offers you an opportunity to see how well you can write code when you have instructions, but not the exact code to copy and paste. If you want to challenge yourself, try starting with CodeTour. And you have nothing to worry about because you can always look at the code in this module to get back on track if you get stuck.
 
@@ -17,7 +17,7 @@ Using [CodeTour](https://aka.ms/codetour-mslearn) is easy. In fact, CodeTour is 
 
 Open the CodeTour extension in Visual Studio Code Explorer. You should see *X* tours. Each tour has a few steps in it to guide you through your code writing.
 
-:::image type="content" source="../media/initial-codetour.png" alt-text="Screenshot that shows CodeTour in Visual Studio Code, with the green arrow selected.":::
+:::image type="content" source="../media/initial-codetour.png" alt-text="Screenshot that shows CodeTour in Visual Studio Code, with the green arrow highlighted.":::
 
 To get started using CodeTour, select the green arrow for the first tour, called `readStatData`. When you do this, a step pops up on line 19 of your *main.js* file, even if you didn't have it open. Follow the instructions in the step, and then select the **Next** button at the bottom of the window to go to the next step.
 

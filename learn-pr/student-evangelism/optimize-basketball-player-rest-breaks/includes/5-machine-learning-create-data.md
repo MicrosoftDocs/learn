@@ -56,6 +56,6 @@ game_df.to_csv('game_stats.csv')
 
 A new CSV file should appear in your Visual Studio Code folder:
 
-:::image type="content" source="../media/game-stats-csv.png" alt-text="Screenshot that shows the game_stats C S V file in Visual Studio Code Explorer.":::
+:::image type="content" source="../media/game-stats-csv.png" alt-text="Screenshot that shows the game stats C S V file in Visual Studio Code Explorer.":::
 
 © 2020 Warner Bros. Ent. All Rights Reserved

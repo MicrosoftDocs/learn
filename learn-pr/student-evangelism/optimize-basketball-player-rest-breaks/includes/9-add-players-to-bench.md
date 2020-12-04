@@ -52,7 +52,7 @@ We can test our app in two ways:
 
 To test your web app locally, right-click the *index.html* file, and then select **Copy Path**:
 
-:::image type="content" source="../media/local-copy-path.png" alt-text="Screenshot that shows copying the local path to the index H T M L file.":::
+:::image type="content" source="../media/local-copy-path.png" alt-text="Screenshot that shows copying the local path to the H T M L index file.":::
 
 Then, open a browser and paste the path in the address bar. You should see the same app that we saw when you first deployed it, but this time, you can actually start using it!
 

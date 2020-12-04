@@ -140,6 +140,6 @@ Here's the output:
 | 3 | 34 | Foghorn Leghorn | 1743.0 | 1422.4 | 112.9 | 64.000000 | 36.300000 | 0.619 | 30.9 | 15.6 | 34.5 | 5.9 | 18.9 | 14.8 | 29.858714 |
 | 4 | 35 | Bugs Bunny | 1963.0 | 1539.1 | 117.4 | 59.972222 | 35.272973 | 0.633 | 32.3 | 16.2 | 34.0 | 5.9 | 19.8 | 13.1 | 27.160000 |
 
-In the code to rearrange the columns, because the `player_type` column wasn't necessary now that we have the actual names of the players, it was easiest to replace the column with the `player_name` column. We didn't have to explicitly drop the `player_type` column!
+In the code to rearrange the columns, because the **player_type** column wasn't necessary now that we have the actual names of the players, it was easiest to replace the column with the **player_name** column. We didn't have to explicitly drop the **player_type** column!
 
 © 2020 Warner Bros. Ent. All Rights Reserved

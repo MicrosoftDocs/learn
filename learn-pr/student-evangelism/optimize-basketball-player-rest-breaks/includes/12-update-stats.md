@@ -38,7 +38,7 @@ function updateStatsInGame() {
     // Get the average PER for the start of the quarter.
     quarterAvePER = quarterPER / playersOnCourt;
 
-    // Update the current PER with the new average PER for the quarter now that the
+    // Update Current PER with the new average PER for the quarter now that the
     // stats have been updated.
     document.getElementById('currentPER').innerHTML = "Current PER: "+ quarterAvePER.toPrecision(4);
 }
