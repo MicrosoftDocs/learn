@@ -1,4 +1,4 @@
-We know that we have missing values throughout our data still, let's remind ourselves which columns are missing values.
+You know that values are missing throughout the data. Take another look at the columns that are missing values.
 
 ```python
 # Recheck the totals for NaN values by row.
@@ -24,7 +24,7 @@ PER            9
 dtype: int64
 ```
 
-First, let's revisit the histograms for `GP` and `MPG`:
+First, revisit the histograms for `GP` and `MPG`:
 
 ```python
 # Plot the KDE for 'GP' over the probability-density histogram.
@@ -33,7 +33,7 @@ plt.title('GP histogram')
 sns.kdeplot(player_df['GP']);
 ```
 
-![GP historgram](../media/gp-histogram.png)
+:::image type="content" source="../media/gp-histogram.png" alt-text="Screenshot showing the G P histogram.":::
 
 ```python
 # Plot the KDE for 'MPG' over the probability-density histogram.
@@ -42,9 +42,9 @@ plt.title('MPG histogram')
 sns.kdeplot(player_df['MPG']);
 ```
 
-![MPG historgram](../media/mpg-histogram.png)
+:::image type="content" source="../media/mpg-histogram.png" alt-text="Screenshot showing the M P G histogram.":::
 
-If we squint hard enough, `GP` and `MPG` are both close enough to normally distributed that we can justify impute their missing values using an average value for each respective column. However, this is not the case with `PER`:
+If you squint hard, you'll probably agree that `GP` and `MPG` are both close enough to a normal distribution that you can justify imputing their missing values by using the average value for each column. But this solution won't work for `PER`:
 
 ```python
 # Plot the KDE for 'PER' over the probability-density histogram.
@@ -53,19 +53,19 @@ plt.title('PER histogram')
 sns.kdeplot(player_df['PER']);
 ```
 
-![PER historgram](../media/per-histogram.png)
+:::image type="content" source="../media/per-histogram.png" alt-text="Screenshot showing the P E R histogram.":::
 
-So we will have to handle that one differently, in the next unit.
+You'll have to handle `PER` differently, in the next unit.
 
-## Impute missing values with average values
+## Impute missing values by using average values
 
-In order to impute the missing values in our normally-enough distributed columns, we will use the `fillna()` DataFrame method. In our code, we will state that we are working with only three of our columns (`player_df[['GP','MPG']]`) and that we want to replace `NaN` values in each of those columns with those columns' respective mean values (`fillna(value=player_df[['GP','MPG']].mean())`). (Once again, stringing pandas methods together makes our job much, much easier.)
+To impute the missing values in the normally-enough distributed columns, use the `fillna()` DataFrame method. In the code, state that you're working with only three of the columns (`player_df[['GP','MPG']]`). Also state that you want to replace the `NaN` values in each of those columns with those columns' respective mean values (`fillna(value=player_df[['GP','MPG']].mean())`). (Once again, stringing together pandas methods makes your job much easier.)
 
 ```python
 # Replace the missing values in 'GP' and 'MPG' with the mean values of the respective columns.
 player_df[['GP','MPG']] = player_df[['GP','MPG']].fillna(value=player_df[['GP','MPG']].mean())
 
-# Recheck the totals for NaN values by row to ensure that the expected missing values have been filled in.
+# Recheck the totals for NaN values by row to ensure that the expected missing values are filled in.
 player_df.isna().sum()
 ```
 
@@ -89,6 +89,6 @@ PER            9
 dtype: int64
 ```
 
-We nearly have cleansed data! Only one column left to manipulate.
+Your data is nearly cleansed! You have only one column left to manipulate.
 
-© 2020 Warner Bros. Ent. All Rights Reserved
+© 2020 Warner Bros. Ent. All Rights Reserved.

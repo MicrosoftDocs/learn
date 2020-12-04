@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.2-set-up-local-environment
 metadata:
-  title: Set up your local environment for data science coding, and download data for basketball analysis
+  title: Set up your local environment for data science coding
   description: Ensure your local environment is set up for data science coding, and download data for basketball analysis.
   ms.date: 11/11/2020
   author: sguthals
