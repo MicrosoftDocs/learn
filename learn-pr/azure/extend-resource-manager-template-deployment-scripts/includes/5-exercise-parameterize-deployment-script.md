@@ -233,7 +233,7 @@ Once the deployment is complete, you can validate both files were copied to your
     ```azurepowershell
     $StorageAccountName = (Get-AzResourceGroupDeployment -ResourceGroupName $ResourceGroupName -Name $DeploymentName).Outputs.storageAccountName.Value
     $StorageAccount = Get-AzStorageAccount -ResourceGroupName $ResourceGroupName
-    Get-AzStorageAccountBlob -Context $StorageAccount.Context -Container config |
+    Get-AzStorageBlob -Context $StorageAccount.Context -Container config |
         Select-Object Name
     ```
 

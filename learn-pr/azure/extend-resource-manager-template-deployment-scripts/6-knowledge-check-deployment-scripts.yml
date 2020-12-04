@@ -37,14 +37,14 @@ quiz:
       - content: "To create the deployment script resource."
         isCorrect: false
         explanation: "The deployment script resource is created by user deploying the template. The managed identity is used to authenticate the Azure CLI or Azure PowerShell session used to execute the deployment script."
-  - content: "What are the two ways that data can be passed to deployment scripts?"
+  - content: "What are the direct ways that data can be passed to deployment scripts?"
     choices:
-      - content: "Deployment scripts can access template parameters."
+      - content: "Deployment scripts can access template parameters and variables."
         isCorrect: false
-        explanation: "Deployment scripts cannot directly reference template variables unless they are included in the arguments or environment variables provided to the ACI container running the deployment script."
+        explanation: "Deployment scripts cannot directly reference template parameters or variables unless they are included in the arguments or environment variables provided to the ACI container running the deployment script."
       - content: "Deployment script resources can be passed arguments and access environment variables."
         isCorrect: true
-        explanation: "Arguments and environmental variables are the two ways to pass data in to a deployment script."
+        explanation: "Arguments and environmental variables are the two direct ways to pass data in to a deployment script."
       - content: "Deployment scripts can only use output of resources they depend on."
         isCorrect: false
         explanation: "Outputs of prior resources cannot be directly referenced from a deployment script, but they can be used to populate the arguments or environment variables."
