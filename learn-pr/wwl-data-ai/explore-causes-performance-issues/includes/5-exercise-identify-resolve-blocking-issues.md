@@ -171,4 +171,4 @@ You have been hired as a database administrator to identify performance related 
 
 Read Commit Snapshot Isolation is an optimistic form of transaction isolation and the last query will show the latest committed version of the data, rather than being blocked.
 
-To finish this exercise select End below.
+To finish this exercise select **Done** below.
