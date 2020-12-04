@@ -31,7 +31,23 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 > [!Note]
 > Wait for the deployment to complete. The deployment should take less than five minutes.
 
-## Task 2: Configure Azure Sentinel Connectors
+## Task 2: Check the resources created
+
+1. In the Azure portal, search for **Resource groups**.
+2. Select **azure-sentinel-rg**.
+3. Sort the list of resources by **Type**.
+4. The resource group should contain the resources displayed in the following table.
+
+    | Name  | Type  | Description |
+    |---|---|---|
+    | *yourname*-sentinel | Log Analytics Workspace | Log Analytics workspace used by Azure Sentinel. |
+    | SecurityInsights(*yourname*-sentinel) | Solution | Security insights for Azure Sentinel. |
+    | simple-vm| Virtual machine | Virtual machine used in the demonstration. |
+    | simple-vmNetworkInterface | Network interface | Network interface for the VM. |
+    | st1*xxxxx* | Storage account | Storage account used by the virtual machine. |
+    | vnet1 | Virtual network | Virtual network for the virtual machine. |
+
+## Task 3: Configure Azure Sentinel Connectors
 
 1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
 2. On the **Azure Sentinel** page, on the menu bar, in the **Configuration** section, select **Data connectors**.
@@ -45,7 +61,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 > [!Note]
 > The connector for Azure Activity could take 15 minutes until Azure Sentinel displays a date. You can continue performing the rest of the steps and continue with the subsequent units in this module.
 
-## Task 3: Create an analytics rule
+## Task 4: Create an analytics rule
 
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Azure Sentinel workspace.
 2. On the **Azure Sentinel** page, on the menu bar, in the **Configuration** section, select **Analytics**.
@@ -77,18 +93,3 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 10. Select **Next:Review**.
 11. On the **Review and Create** page, verify that the validation passed, and then select **Create**.
 
-## Check the resources created
-
-1. In the Azure portal, search for **Resource groups**.
-2. Select **azure-sentinel-rg**.
-3. Sort the list of resources by **Type**.
-4. The resource group should contain the resources displayed in the following table.
-
-    | Name  | Type  | Description |
-    |---|---|---|
-    | *yourname*-sentinel | Log Analytics Workspace | Log Analytics workspace used by Azure Sentinel. |
-    | SecurityInsights(*yourname*-sentinel) | Solution | Security insights for Azure Sentinel. |
-    | simple-vm| Virtual machine | Virtual machine used in the demonstration. |
-    | simple-vmNetworkInterface | Network interface | Network interface for the VM. |
-    | st1*xxxxx* | Storage account | Storage account used by the virtual machine. |
-    | vnet1 | Virtual network | Virtual network for the virtual machine. |
