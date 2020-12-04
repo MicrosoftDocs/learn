@@ -248,4 +248,4 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
 
 On completing this exercise you've seen how to create a SQL database in Azure and connect to it securely from a client machine.
 
-To finish this exercise select End below.
+To finish this exercise select **Done** below.
