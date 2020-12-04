@@ -26,7 +26,23 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 > [!Note]
 > Wait for the deployment to complete. The deployment should take less than 5 minutes.
 
-## Task 2: Configure Azure Sentinel connectors
+## Task 2: Check the resources created
+
+1. In the Azure portal, search for **Resource groups**.
+1. Select **azure-sentinel-rg**.
+1. Sort the list of resources by **Type**.
+1. The resource group should contain the resources listed in the following table.
+
+    |Name|Type|Description|
+    |---|---|---|
+    |*yourname*-sentinel|Log Analytics workspace|Log Analytics workspace used by Azure Sentinel.|
+    |SecurityInsights(*yourname*-sentinel|Solution|Security insights for Azure Sentinel.|
+    |simple-vm|Virtual machine|Virtual machine used in the demonstration.|
+    |simple-vmNetworkInterface|Network interface|Network interface for the VM.|
+    |st1*xxxxx*|Storage account|Storage account used by the virtual machine.|
+    |vnet1|Virtual network|Virtual network for the VM.|
+
+## Task 3: Configure Azure Sentinel connectors
 
 In this task, you will deploy an Azure Sentinel connector to Azure Activity.
 
@@ -42,18 +58,3 @@ In this task, you will deploy an Azure Sentinel connector to Azure Activity.
 > [!Note]
 > The connector for Azure Activity could take 15 minutes to deploy. You can proceed with the rest of the steps in the exercise and with the subsequent units in this module.
 
-## Check the resources created
-
-1. In the Azure portal, search for **Resource groups**.
-1. Select **azure-sentinel-rg**.
-1. Sort the list of resources by **Type**.
-1. The resource group should contain the resources listed in the following table.
-
-    |Name|Type|Description|
-    |---|---|---|
-    |*yourname*-sentinel|Log Analytics workspace|Log Analytics workspace used by Azure Sentinel.|
-    |SecurityInsights(*yourname*-sentinel|Solution|Security insights for Azure Sentinel.|
-    |simple-vm|Virtual machine|Virtual machine used in the demonstration.|
-    |simple-vmNetworkInterface|Network interface|Network interface for the VM.|
-    |st1*xxxxx*|Storage account|Storage account used by the virtual machine.|
-    |vnet1|Virtual network|Virtual network for the VM.|
