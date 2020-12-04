@@ -2,7 +2,7 @@
 uid: learn.create-razor-pages-aspnet-core.6-create-pagemodel
 metadata:
   title: Exercise - Modify the page model 
-  description: Review a basic Razor Pages `PageModel` class elements and add a Post handler method.
+  description: Review a basic Razor Pages `PageModel` class elements and add an HTTP POST handler.
   ms.date: 12/02/2020
   author: wadepickett
   ms.author: wpickett

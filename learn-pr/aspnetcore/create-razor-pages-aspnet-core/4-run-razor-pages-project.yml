@@ -2,7 +2,7 @@
 uid: learn.create-razor-pages-aspnet-core.4-run-razor-pages-project
 metadata:
   title: Exercise - Compile and run the Razor Pages project
-  description: Compile, run, and tour the example Razor Pages project.
+  description: Compile, run, and tour the ASP.NET Core Razor Pages project.
   ms.date: 12/02/2020
   author: wadepickett
   ms.author: wpickett
