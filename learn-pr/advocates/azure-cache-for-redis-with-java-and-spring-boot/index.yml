@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure-cache-for-redis-with-java-and-spring-boot
+metadata:
+  title: Use Azure Cache for Redis with Java and Spring Boot
+  description: In this module, you'll learn what Azure Cache for Redis is, and how to use it with a Java and Spring Boot application. You will use it to cache some business data using Spring Data Redis, and you will also use it to store HTTP session data using Spring Session.
+  author: judubois
+  ms.author: judubois
+  ms.date: 12/04/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: How to use Azure Cache for Redis with a Java and Spring Boot application
+summary: Explore Azure Cache for Redis, and learn how to use it with a Java and Spring Boot application.
+abstract: | 
+ By the end of this tutorial, you'll be able to:
+  - Describe the main usages of Azure Cache for Redis.
+  - Use Azure Cache for Redis for Spring Data Redis to cache business data.
+  - Use Azure Cache for Redis to store HTTP session data using Spring Session.
+prerequisites:  |
+  - Familiarity with developing and running Java applications
+  - Beginner-level experience with cloud infrastructure
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-cache-redis
+- azure-app-service
+units:
+- learn.azure-cache-for-redis-with-java-and-spring-boot.1-introduction
+- learn.azure-cache-for-redis-with-java-and-spring-boot.2-what-is-azure-cache-for-redis
+- learn.azure-cache-for-redis-with-java-and-spring-boot.3-configure-an-azure-cache-for-redis-instance
+- learn.azure-cache-for-redis-with-java-and-spring-boot.4-use-azure-cache-for-redis-with-spring-data-redis
+- learn.azure-cache-for-redis-with-java-and-spring-boot.5-use-spring-session-to-store-data-in-redis
+- learn.azure-cache-for-redis-with-java-and-spring-boot.6-deploy-a-spring-boot-and-redis-application-to-azure-app-service
+- learn.azure-cache-for-redis-with-java-and-spring-boot.7-knowledge-check
+- learn.azure-cache-for-redis-with-java-and-spring-boot.8-summary
+badge:
+  uid: learn.azure-cache-for-redis-with-java-and-spring-boot.badge
