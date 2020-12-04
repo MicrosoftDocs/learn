@@ -10,6 +10,9 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 > [!NOTE]
 > If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/)
 
+> [!NOTE] 
+> You need to complete the Exercise Setup unit, in order to be able to complete this exercise. If you not done so, complete it now and that continuie with the exercise steps.
+
 ### Task 1: Create an analytics rule from the analytics rule wizard 
 
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Azure Sentinel workspace.
