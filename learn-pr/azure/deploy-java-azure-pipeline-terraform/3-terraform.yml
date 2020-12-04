@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-java-azure-pipeline-terraform.3-content
-title: Content
+uid: learn.azure.deploy-java-azure-pipeline-terraform.3-terraform
+title: Terraform
 metadata:
-  title: Content
+  title: Terraform
   description: Content
   ms.date: 09/18/2020
   author: roryp
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/3-content.md)]
+  [!include[](includes/3-terraform.md)]
