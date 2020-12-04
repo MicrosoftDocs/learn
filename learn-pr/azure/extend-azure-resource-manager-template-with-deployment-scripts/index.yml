@@ -25,6 +25,7 @@ roles:
   - administrator
 products:
   - azure
+  - azure-resource-manager
 prerequisites: |
   - Familiarity with Azure, including the Azure portal, subscriptions, resource
   groups, and resource definitions.
