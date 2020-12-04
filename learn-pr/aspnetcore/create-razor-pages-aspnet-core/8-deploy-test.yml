@@ -8,7 +8,6 @@ metadata:
   ms.author: wpickett
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  ROBOTS: NOINDEX
 title: Exercise - Deploy and test the ContosoPets.UI project
 azureSandbox: true
 interactive: bash

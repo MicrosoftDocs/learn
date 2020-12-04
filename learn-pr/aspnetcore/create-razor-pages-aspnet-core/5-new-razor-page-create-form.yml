@@ -8,7 +8,6 @@ metadata:
   ms.author: wpickett
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  ROBOTS: NOINDEX
 title: Exercise - Create the Razor page for a create product form
 azureSandbox: true
 interactive: bash-editor

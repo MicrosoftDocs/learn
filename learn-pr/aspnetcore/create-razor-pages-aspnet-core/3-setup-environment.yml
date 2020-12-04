@@ -8,7 +8,6 @@ metadata:
   ms.author: wpickett
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  ROBOTS: NOINDEX
 title: Exercise - Set up the environment
 azureSandbox: true
 interactive: bash

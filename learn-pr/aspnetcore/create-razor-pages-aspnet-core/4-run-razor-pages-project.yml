@@ -8,7 +8,6 @@ metadata:
   ms.author: wpickett
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  ROBOTS: NOINDEX
 title: Exercise - Compile and run the Razor Pages project
 azureSandbox: true
 interactive: bash
