@@ -1,10 +1,10 @@
-In a previous module, we introduced a smart contract to capture the shipping status of an item from Pending to Shipped to Delivered. The contract also adds a counter which keeps track of the number of times that state of the shipping contract is updated and will display that in the frontend interface.
+In a previous module, we introduced a smart contract to capture the shipping status of an item from **Pending** to **Shipped** to **Delivered**. The contract also adds a counter, which keeps track of the number of times that the state of the shipping contract is updated. The counter displays that number in the front-end interface.
 
 In this exercise, we'll wire up the contract to a simple dapp to see the status and the number of times that state has been updated.
 
 ## Add the shipping contract to the Drizzle project
 
-The shipping contract that we'll be using in this example is displayed below. Copy this code into a new file in VS Code to the same project used in the last unit. The new file should be added in the **contracts/** folder in a file named **Shipping.sol**.
+The following code is the shipping contract that we'll use in this example. Copy this code into a new file in Visual Studio Code to the same project used in the last unit. The new file should be added in the **contracts/** folder in a file named **Shipping.sol**.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -62,34 +62,34 @@ contract Shipping
 
 ## Modify the migration
 
- Now, you need to modify **./migrations/2_deploy_contracts.js** to include the Shipping contract.
+ Now, you need to modify **./migrations/2_deploy_contracts.js** to include the shipping contract.
 
-On line 4 add:
+On line 4, add:
 
 ```javascript
 const Shipping = artifacts.require("Shipping");
 ```
 
-And in the body of the function add a line to deploy the Shipping contract on line 10:
+In the body of the function, add a line to deploy the shipping contract on line 10:
 
 ```javascript
     deployer.deploy(Shipping);
 ```
 
-You can now compile and migrate the contract. Going to the terminal, confirm that Ganache CLI is running. If it's not running in a terminal window, type: `ganache-cli`.
+You can now compile and migrate the contract. Going to the terminal, confirm that Ganache CLI is running. If it's not running in a terminal window, enter `ganache-cli`.
 
-Open up another terminal window by right-clicking into the terminal and selecting **New Terminal**.
+Open another terminal window by right-clicking into the terminal and selecting **New Terminal**.
 
-In that new terminal window, type:
+In that new terminal window, enter:
 
-- `truffle compile` to compile the Shipping contract
-- `truffle migrate --network develop` to migrate the Shipping contract
+- `truffle compile` to compile the shipping contract.
+- `truffle migrate --network develop` to migrate the shipping contract.
 
-## Wiring up the frontend to the Shipping contract
+## Wiring up the front end to the shipping contract
 
 ### Create a loading component
 
-Next, create a loading component for the Shipping contract called **ShipComponent.js** in the folder **app/src/**. You can do that right-clicking on **app/src** and selecting to create a new file. Then copy the code below into the new file.
+Next, create a loading component for the shipping contract called **ShipComponent.js** in the folder **app/src/**. You can do that by right-clicking **app/src** and selecting the option to create a new file. Then copy the following code into the new file.
 
 ```javascript
 import React from "react";
@@ -141,13 +141,13 @@ export default ({ drizzle, drizzleState }) => {
 };
 ```
 
-This loading component defines what the frontend looks like and what interaction it allows with users.
+This loading component defines what the front end looks like and what interaction it allows with users.
 
 ### Modify Drizzle's options
 
-Navigate to **./app/src/drizzleOptions.js** to make a few changes.
+Go to **./app/src/drizzleOptions.js** to make a few changes.
 
-On line 5, add the following to import **Shipping.json.**
+On line 5, add the following code to import **Shipping.json**.
 
 ```javascript
 import Shipping from "./contracts/Shipping.json";
@@ -161,30 +161,30 @@ contracts: [SimpleStorage, ComplexStorage, TutorialToken, Shipping]
 
 ### Modify App.js
 
-Then modify **/app/src/App.js** to replace **MyComponent** with **ShipComponent** on line 5:
+Modify **/app/src/App.js** to replace `MyComponent` with `ShipComponent` on line 5:
 
 ```javascript
 import ShipComponent from "./ShipComponent";
 ```
 
-And also replace **ShipComponent** on line 22:
+And replace `ShipComponent` on line 22:
 
 ```javascript
 <ShipComponent drizzle={drizzle} drizzleState={drizzleState} />
 ```
 
-## Running the Shipping Example Code
+## Running the Shipping example code
 
-You have now completed all the steps to wire up the shipping contract, so that means it's time to run the dapp and check out how it works.
+You've now completed all the steps to wire up the shipping contract. That means it's time to run the dapp and see how it works.
 
-Going back to the terminal, type the following commands:
+Going back to the terminal, enter the following commands:
 
-- `cd app` to move to the app folder
-- `npm rebuild` to run the build and recompile changes in the app/ folder
-- `npm run start` to start the web-pack dev server for React and opens up a new browser window for the React project.
+- `cd app` to move to the app folder.
+- `npm rebuild` to run the build and recompile changes in the **app/** folder.
+- `npm run start` to start the web-pack development server for React. This command opens a new browser window for the React project.
 
-Your browser should now open at [http://localhost:3000](http://localhost:3000?azure-portal=true) showing a dapp where you can interact with the Shipping contract.
+Your browser should now open at [http://localhost:3000](http://localhost:3000?azure-portal=true) and show a dapp where you can interact with the shipping contract.
 
 You should see the following:
 
-:::image type="content" source="../media/shipping-dapp.png" alt-text="Image showing the dapp that is wired up to the shipping contract":::
+:::image type="content" source="../media/shipping-dapp.png" alt-text="Screenshot that shows the dapp that's wired up to the shipping contract.":::

@@ -16,7 +16,7 @@ quiz:
   questions:
   - content: "What is the most accurate definition of Drizzle?"
     choices:
-    - content: "Drizzle is a development framework used to make managing Ethereum projects easier."
+    - content: "Drizzle is a development framework to make managing Ethereum projects easier."
       isCorrect: false
       explanation: "This definition best explains Truffle."
     - content: "Drizzle is a collection of libraries to make writing dapps easier."
@@ -25,35 +25,35 @@ quiz:
     - content: "Drizzle is an Ethereum blockchain to run tests and execute commands."
       isCorrect: false
       explanation: "This definition best explains Ganache."
-    - content: "Drizzle is a set of boilerplates that contain contracts, libraries and dapps."
+    - content: "Drizzle is a set of boilerplates that contain contracts, libraries, and dapps."
       isCorrect: false
       explanation: "This definition best explains Truffle boxes."
   - content: "How do dapps operate?"
     choices:
-    - content: "They have frontend code that connects in the backend to smart contracts on a blockchain network."
+    - content: "They have front-end code that connects in the back end to smart contracts on a blockchain network."
       isCorrect: true
-      explanation: "Correct. Dapps have a frontend interface like a traditional web app, and connect to a smart contract backend."
-    - content: "They operate just like traditional apps with a frontend that connects to a centralized backend server."
+      explanation: "Correct. Dapps have a front-end interface like a traditional web app, and they connect to a smart contract back end."
+    - content: "They operate just like traditional apps with a front end that connects to a centralized back-end server."
       isCorrect: false
-      explanation: "Dapps are different than traditional apps because their backend is decentralized."
-    - content: "They have frontend code that runs on it's own and do not require a backend to hook up to."
+      explanation: "Dapps are different from traditional apps because their back end is decentralized."
+    - content: "They have front-end code that runs on its own, and they don't require a back end to hook up to."
       isCorrect: false
-      explanation: "Apps that allow for user interaction must have a backend server or blockchain network to connect to."
-    - content: "They are a set of smart contracts that allow you to interact with them directly by calling their functions."
+      explanation: "Apps that allow for user interaction must have a back-end server or blockchain network to connect to."
+    - content: "They're a set of smart contracts that allow you to interact with them directly by calling their functions."
       isCorrect: false
-      explanation: "Not quite. Dapps do connect to smart contracts in the backend, and must also have a frontend interface."
-  - content: "Using the Drizzle Truffle Box, we can start up the web server for the project by running which command?"
+      explanation: "Not quite. Dapps do connect to smart contracts in the back end, and they must also have a front-end interface."
+  - content: "Using the Drizzle Truffle Box, we can start the web server for the project by running which command?"
     choices:
     - content: "npm rebuild"
       isCorrect: false
       explanation: "This command recompiles changes in the React project."
     - content: "npm run start"
       isCorrect: true
-      explanation: "Correct. This command starts the dev server for React."
+      explanation: "Correct. This command starts the development server for React."
     - content: "npm build"
       isCorrect: false
-      explanation: "This command compiles the changes in the the React project."
+      explanation: "This command compiles the changes in the React project."
     - content: "npm run"
       isCorrect: false
-      explanation: "The run command is used immediately before running a custom defined command such as start."
+      explanation: "The run command is used immediately before you run a custom-defined command such as start."
       
