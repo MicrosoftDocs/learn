@@ -101,8 +101,6 @@ Your workflow will be triggered whenever code is pushed to the repository.
 You can now manually trigger the GitHub Actions workflow by going to "Actions", then select the terraform workflow.
 Then, select the "Terraform" workflow. Notice how the "Terraform Init", "Terraform Plan" and "Terraform Validate" steps have been triggered.
 
-![GitHub workflow](../media/03-workflow.png)
-
 Expand the "Terraform Apply" step. Terraform has created the resources and displayed the Azure Instance URL.
 Verify your Azure App Instance is publicly available.
 
