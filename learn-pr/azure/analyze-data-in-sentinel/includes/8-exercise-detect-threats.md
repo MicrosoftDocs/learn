@@ -64,9 +64,10 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box, enter **virtual machines**, and then select **Enter**.
 2. On the **Virtual machines** page, locate and select the **simple-vm** virtual machine, and then on the header bar, select **Delete**. In the **Delete virtual machine** prompt select **Yes**.
+3. In the **Delete virtual machine** prompt, select **Yes** to delete the virtual machine.
 
 > [!Note]
-> This task creates an incident based on the analytics rule that you created in Task 1. Incident creation can take up to 5 minutes. You can proceed with rest of the steps of this unit and then observe the results at later time.
+> This task creates an incident based on the analytics rule that you created in Task 1. Incident creation can take up to 15 minutes. You can proceed with rest of the steps of this unit and then observe the results at later time.
 
 ### Task 3: Create an analytics rule from an existing template
 
