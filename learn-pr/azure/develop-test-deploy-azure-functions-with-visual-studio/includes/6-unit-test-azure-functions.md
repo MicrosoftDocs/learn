@@ -137,7 +137,6 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
     [Fact]
     public void TestWatchFunctionFailureNoQueryString()
     {
-        var httpContext = new DefaultHttpContext();
         var request = new DefaultHttpRequest(new DefaultHttpContext());
         var logger = NullLoggerFactory.Instance.CreateLogger("Null Logger");
 
@@ -155,7 +154,6 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
     [Fact]
     public void TestWatchFunctionFailureNoModel()
     {
-        var httpContext = new DefaultHttpContext();
         var queryStringValue = "abc";
         var request = new DefaultHttpRequest(new DefaultHttpContext())
         {

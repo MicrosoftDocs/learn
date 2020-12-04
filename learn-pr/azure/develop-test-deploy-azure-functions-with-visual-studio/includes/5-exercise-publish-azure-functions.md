@@ -38,7 +38,7 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
     | Publish | Code |
     | Runtime stack | .NET Core |
     | Version | 3.1 |
-    | Region | Accept the default location |
+    | Region | *Accept the default location* |
 
 1. Select **Next : Hosting**.
 
@@ -46,9 +46,9 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
     | Property  | Value  |
     |---|---|
-    | Storage account | Accept the default name |
+    | Storage account | *Accept the default name* |
 
-1. Under the**Operating system** section, specify:
+1. Under the **Operating system** section, specify:
 
     | Property  | Value  |
     |---|---|
