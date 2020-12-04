@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.understand-well-defined-schemas
+title: Understand well defined schemas
+metadata:
+  title: Understand well defined schemas
+  description: "Understand well defined schemas"
+  ms.date: 12/02/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-understand-well-defined-schemas.md)]

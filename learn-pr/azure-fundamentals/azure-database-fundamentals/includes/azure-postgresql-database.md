@@ -24,20 +24,9 @@ Moreover, Azure Database for PostgreSQL delivers the following benefits:
 
 Azure Database for PostgreSQL is available in two deployment options: **Single Server** and **Hyperscale (Citus)**.
 
-:::row:::
-  :::column:::
+
 
 **Single Server**
-
-  :::column-end:::
-  :::column:::
-
-**Hyperscale (Citus)**
-
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
 
 The Single Server deployment option delivers:
 
@@ -49,16 +38,16 @@ The Single Server deployment option delivers:
 - Ability to protect sensitive data at-rest and in-motion.
 - Automatic backups and point-in-time-restore for up to 35 days.
 
+
 All those capabilities require almost no administration, and all are provided at no additional cost. You can focus on rapid application development and accelerating your time to market, rather than having to manage virtual machines and infrastructure. You can continue to develop your application with the open-source tools and platform of your choice, without having to learn new skills.
 
 The Single Server deployment option offers three pricing tiers: Basic, General Purpose, and Memory Optimized. Each tier offers different resource capabilities to support your database workloads. You can build your first app on a small database for a few dollars a month, and then adjust the scale to meet the needs of your solution. Dynamic scalability enables your database to transparently respond to rapidly changing resource requirements. You only pay for the resources you need, and only when you need them.
 
-  :::column-end:::
-  :::column:::
+
+**Hyperscale (Citus)**
 
 The Hyperscale (Citus) option horizontally scales queries across multiple machines by using sharding. Its query engine parallelizes incoming SQL queries across these servers for faster responses on large datasets. It serves applications that require greater scale and performance, generally workloads that are approaching, or already exceed, 100 GB of data.
 
 The Hyperscale (Citus) deployment option supports multi-tenant applications, real-time operational analytics, and high throughput transactional workloads. Applications built for PostgreSQL can run distributed queries on Hyperscale (Citus) with standard connection libraries and minimal changes.
 
-  :::column-end:::
-:::row-end:::
+
