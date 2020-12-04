@@ -143,4 +143,4 @@ The results show the logged in user, containeddemo.
 
 In this exercis you've seen how to add a client IP address to enable SSMS to connect to a database in Azure. You did this in the Azure portal, and you created a firewall rule using T-SQL.
 
-To finish this exercise select **End** below.
+To finish this exercise select **Done** below.
