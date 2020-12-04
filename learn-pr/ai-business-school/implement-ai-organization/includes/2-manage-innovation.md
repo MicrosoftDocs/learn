@@ -12,7 +12,7 @@ In this unit, we'll share some guidance on how to be an innovative organization.
 
 ## Enable a culture of meaningful innovation
 
-"Meaningful" innovation means innovation with a purpose – not just innovation for its own sake. We aim to set the foundation for meaningful innovation by fostering an innovative mindset across the company. We also have a business group dedicated to solving difficult problems through technological innovation. 
+"Meaningful" innovation means innovation with a purpose—not just innovation for its own sake. We aim to set the foundation for meaningful innovation by fostering an innovative mindset across the company. We also have a business group dedicated to solving difficult problems through technological innovation. 
 
 ### Foster an innovative mindset across the organization
 
