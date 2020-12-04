@@ -20,7 +20,7 @@ abstract: |
   - Deploy an Azure Functions application.
 prerequisites: |
   - Must have a working knowledge of Azure Functions
-  - Must have basic knowledge of Azure Cosmos DB
+  - Must be familiar with fundemantal API concepts
   - Must have [Node.js](https://nodejs.org/en/) installed
   - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
   - Must have [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed

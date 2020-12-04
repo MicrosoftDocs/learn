@@ -20,6 +20,10 @@ In this exercise, you'll configure CORS in Azure Functions and see the Product M
    }
    ```
 
+1. If the API is still running, restart the process by clicking on the "disconnect" button in the debug bar and then press <kbd>F5</kbd> to start it again.
+
+## Check the frontend app
+
 1. The front-end app should still be running in a browser tab on port 5000. Refresh the page.
 
 1. The app loads in the data from the API.

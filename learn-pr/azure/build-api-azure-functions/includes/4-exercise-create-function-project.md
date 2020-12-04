@@ -12,7 +12,7 @@ It's time to deliver on those lofty buzzwords. Now, you need to create a new pro
 
 1. Select the **api** folder.
 
-1. When prompted, enter the following values.
+1. When prompted, enter the following values. Do **not** overwrite the "package.json" file when prompted.
 
    | Name          | Value        |
    | ------------- | ------------ |
@@ -20,6 +20,8 @@ It's time to deliver on those lofty buzzwords. Now, you need to create a new pro
    | Template      | HTTP trigger |
    | Name          | GetProducts  |
    | Authorization | Function     |
+
+1. When asked to overwrite the `package.json` file, make sure you select **no**.
 
 The "api" folder in Visual Studio Code will now contain an Azure Functions project along with a new function called "GetProducts".
 
