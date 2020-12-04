@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-stack-hci-plan-deploy.1-introduction
+uid: learn.azure.azure-stack-hci-plan-deploy.4-integration-options
 metadata:
-  title: Introduction
+  title: Unit title
   description: TODO
   ms.date: 09/21/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction
-durationInMinutes: 2
+title: Unit title
+durationInMinutes: 10
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/4-integration-options.md)]
