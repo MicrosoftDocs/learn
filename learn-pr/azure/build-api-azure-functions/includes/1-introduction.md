@@ -4,7 +4,7 @@ Pretend for a moment, if you will, that you work for a large online hardware ret
 
 Tailwind Traders is a global corporation with a massive online retail operation. You also have brick-and-mortar stores in just about every major city in the world. One of your most critical tasks is keeping up with the inventory of products that you carry.
 
-Logistics specialists need to manage the inventory from all over the globe. You never know when the buying mood will strike, so customer demand can dramatically increase and decrease without warning. When that happens, usage of the inventory management tool spikes as well as thousands of inventor managers use the tool to keep up with demand. Your mission is to create an HTTP API that can be consumed by a lightweight web front end. The whole app needs to be fast and global. It also needs to scale-up automatically when traffic unexepectedly spikes, without costing a fortune when traffic is low.
+Logistics specialists need to manage the inventory from all over the globe. You never know when the buying mood will strike, so customer demand can dramatically increase and decrease without warning. When that happens, usage of the inventory management tool spikes as well as thousands of inventor managers use the tool to keep up with demand. Your mission is to create an HTTP API that can be consumed by a lightweight web front end. The whole app needs to be fast and global. It also needs to scale-up automatically when traffic unexpectedly spikes, without costing a fortune when traffic is low.
 
 ## Learning objectives
 
