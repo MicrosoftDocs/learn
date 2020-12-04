@@ -24,7 +24,7 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
     > The function app must have a unique name. We suggest using something like **\<*your name or initials*\>watchfunctions**. In this exercise, use this name wherever you see *\<your-function-app-name\>*.
 
 1. Under the **Basics** tab, in the **Project Details** section, specify:
- 
+
     | Property  | Value  |
     |---|---|
     | Subscription | Concierge Subscription  |
@@ -34,7 +34,7 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
     | Property  | Value  |
     |---|---|
-    | Function App name | *\<your-function-app-name\>* |
+    | Function App name | *<\your-function-app-name\>* |
     | Publish | Code |
     | Runtime stack | .NET Core |
     | Version | 3.1 |
