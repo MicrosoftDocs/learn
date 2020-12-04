@@ -8,9 +8,10 @@ Run the following command in the command shell. Be patient, as setup can take a 
 . <(wget -q -O - https://aka.ms/create-razor-pages-aspnet-core-setup)
 ```
 
-The preceding command installs a specific version of the .NET SDK in the Cloud Shell environment.
+The preceding command:
 
-
+* Installs a specific version of the .NET SDK in the Cloud Shell environment.
+* 
 
 When the development environment has completed setup, the *:::no-loc text="ContosoPets.Ui":::* project directory opens in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor).
 
@@ -100,7 +101,7 @@ The following are routing examples for this completed project.
 
 ### Organize groups of related Razor pages
 
-The *:::no-loc text="ContosoPets.Ui":::* project's purpose is to provide a basic UI client to execute CRUD operations through your company's web API endpoint to manage product listings. The *:::no-loc text="Pages/Product":::* directory groups all the Razor pages that provide the UI for those CRUD operations and their *:::no-loc text="PageModel":::* class files. For the *:::no-loc text="ContosoPets.Ui":::* app, the same model validation will be used for more than one Razor page for HTTP requests to the hosted web API.
+The *:::no-loc text="ContosoPets.Ui":::* project's purpose is to provide a basic UI client to execute CRUD operations through your company's web API endpoint to manage product listings. The *:::no-loc text="Pages/Products":::* directory groups all the Razor pages that provide the UI for those CRUD operations and their *:::no-loc text="PageModel":::* class files. For the *:::no-loc text="ContosoPets.Ui":::* app, the same model validation will be used for more than one Razor page for HTTP requests to the hosted web API.
 
 ### The HTTP request service
 
