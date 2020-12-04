@@ -94,7 +94,7 @@ You've now created the virtual machines running the vehicle registration web app
     APPSERVICE="licenserenewal$RANDOM"
     ```
 
-1. Next, to create the app service plan the web app will use, run the following command.
+1. Next, to create the App Service plan the web app will use, run the following command.
 
     ```azurecli
     az appservice plan create \
