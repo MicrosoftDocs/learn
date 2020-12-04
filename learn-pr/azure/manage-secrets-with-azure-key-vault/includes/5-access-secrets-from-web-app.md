@@ -21,9 +21,9 @@ The official Key Vault client for .NET Core is the `KeyVaultClient` class in the
 
 The Azure Key Vault API is a REST API that handles all management and usage of keys and vaults. Each secret in a vault has a unique URL, and secret values are retrieved with HTTP GET requests.
 
-The official Key Vault client for Node.js apps is the `KeyVaultClient` class in the `azure-keyvault` npm package. Apps that include secret names in their configuration or code will generally only need to use its `getSecret` method, which loads a secret value given its name. `getSecret` requires your app's identity to have the **Get** permission on the vault. Apps designed to load all secrets from a vault will also use the `getSecrets` method, which loads a list of secrets and requires the **List** permission.
+The official Key Vault client for Node.js apps is the `SecretClient` class in the `@azure/keyvault-secrets` npm package. Apps that include secret names in their configuration or code will generally only need to use its `getSecret` method, which loads a secret value given its name. `getSecret` requires your app's identity to have the **Get** permission on the vault. Apps designed to load all secrets from a vault will also use the `listPropertiesOfSecrets` method, which loads a list of secrets and requires the **List** permission.
 
-Before your app can create a `KeyVaultClient` instance, it must get a credential object by authenticating to the vault. To authenticate, use the one of the login functions provided by the `ms-rest-azure` npm package. Each of these functions will return a credential object that can be used to create a `KeyVaultClient`. The `loginWithAppServiceMSI` function will automatically use the managed identity credentials that App Service makes available to your app via environment variables. For test environments or other non-App Service environments where your app does not have access to a managed identity, you can manually create a service principal for your app and use the `loginWithServicePrincipalSecret` function to authenticate.
+Before your app can create a `SecretClient` instance, it must get a credential object by authenticating to the vault. To authenticate, use `DefaultAzureCredential` provided by the `@azure/identity` npm package. This DefaultAzureCredential requires AZURE_CLIENT_ID, AZURE_TENANT_ID, AZURE_CLIENT_SECRET environment variables to be set in the system.
 
 > [!TIP]
 > Regardless of the framework or language you use to build your app, you should design it to cache secret values locally or load them into memory at startup unless you have a specific reason not to. Reading them directly from the vault every time you need them is unnecessarily slow and expensive.
@@ -163,7 +163,7 @@ Run `dotnet build` in the shell to make sure everything compiles. The app is rea
 
 ::: zone pivot="javascript"
 
-We'll create a new web API with Express.js and use the `azure-keyvault` and `ms-rest-azure` packages to load the secret from our vault.
+We'll create a new web API with Express.js and use the `@azure/keyvault-secrets` and `@azure/identity` packages to load the secret from our vault.
 
 ### Create the app
 
@@ -186,8 +186,8 @@ First, to set up the app, paste the following code into the editor. This will im
 
 ```javascript
 // Importing dependencies
-const msRestAzure = require('ms-rest-azure');
-const keyVault = require('azure-keyvault');
+const { DefaultAzureCredential } = require("@azure/identity");
+const { SecretClient } = require("@azure/keyvault-secrets");
 const app = require('express')();
 
 // Initialize port
@@ -208,17 +208,7 @@ Next, you'll add the code to authenticate to the vault and load the secrets. You
 ```javascript
 const authenticateToKeyVault = async () => {
   try {
-    let credentials;
-    if (process.env.NODE_ENV === 'production') {
-      credentials = await msRestAzure.loginWithAppServiceMSI({ resource: 'https://vault.azure.net' });
-    } else {
-      // For non-App Service environments. Set the APP_ID, APP_SECRET and TENANT_ID environment
-      // variables to use.
-      const appId = process.env.APP_ID;
-      const appSecret = process.env.APP_SECRET;
-      const tenantId = process.env.TENANT_ID;
-      credentials = await msRestAzure.loginWithServicePrincipalSecret(appId, appSecret, tenantId);
-    }
+    const credentials = new DefaultAzureCredential();
     return credentials;
   } catch(err) {
     throw err.message;
@@ -227,16 +217,19 @@ const authenticateToKeyVault = async () => {
 
 const getKeyVaultSecrets = async credentials => {
   // Create a key vault client
-  let keyVaultClient = new keyVault.KeyVaultClient(credentials);
+  let secretClient = new SecretClient(vaultUrl, credentials);
   try {
-    let secrets = await keyVaultClient.getSecrets(vaultUrl);
-    // For each secret name, get the secret value from the vault
-    for (const secret of secrets) {
+    const listPropertiesOfSecrets = secretClient.listPropertiesOfSecrets();
+    while (true) {
+      let { done, value } = await listPropertiesOfSecrets.next();
+      if (done) {
+        break;
+      }
+      // For each secret name, get the secret value from the vault
       // Only load enabled secrets - getSecret will return an error for disabled secrets
-      if (secret.attributes.enabled) {
-        let secretId = secret.id;
-        let secretName = secretId.substring(secretId.lastIndexOf('/') + 1);
-        let secretValue = await keyVaultClient.getSecret(vaultUrl, secretName, '');
+      if (value.enabled) {
+        const secretName = value.name;
+        const secretValue = await client.getSecret(secretName);
         vaultSecretsMap[secretName] = secretValue.value;
       }
     }

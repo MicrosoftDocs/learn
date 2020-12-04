@@ -29,7 +29,7 @@ prerequisites: |
        - Mac: [Docker Desktop](https://www.docker.com/products/docker-desktop) 2.0+.
        - Linux: [Docker CE/EE](https://docs.docker.com/install/#supported-platforms) 18.06+ and [Docker Compose](https://docs.docker.com/compose/install) 1.21+.
   - [Git](https://git-scm.com/downloads) and basic knowledge of GitHub, such as what a repository is
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/use-docker-container-dev-env-vs-code.svg
 levels:
   - beginner
 roles:

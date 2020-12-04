@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-data-loading-best-practices-azure-synapse-analytics.implement-workload-management
+title: Implement workload management
+metadata:
+  title: Implement workload management
+  description: "Implement workload management"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-implement-workload-management.md)]
