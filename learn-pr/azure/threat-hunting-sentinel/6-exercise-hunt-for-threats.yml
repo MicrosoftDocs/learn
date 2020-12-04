@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Hunt for threats using Azure Sentinel
-durationInMinutes: 15
+durationInMinutes: 20
 content: |
   [!include[](includes/6-exercise-hunt-for-threats.md)]
