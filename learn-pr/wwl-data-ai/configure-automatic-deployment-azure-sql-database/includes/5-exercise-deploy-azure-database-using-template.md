@@ -53,4 +53,4 @@ You've been hired as a Senior Data Engineer to help automate day to day operatio
 
 You've just seen how, with a single click on an Azure ARM template link, you can create both an Azure SQL server and database in minutes.
 
-To finish this exercise select End below.
+To finish this exercise select "Done" below.
