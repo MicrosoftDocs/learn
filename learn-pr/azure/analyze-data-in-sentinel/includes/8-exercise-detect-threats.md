@@ -8,7 +8,7 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 - Adjust KQL from an existing analytic rule.
 
 > [!NOTE] 
-> You need to complete the Exercise Setup unit, in order to be able to complete this exercise. If you not done so, complete it now, and then continue with the exercise steps.
+> You need to complete the Exercise Setup unit, in order to be able to complete this exercise. If you have not done so, complete it now, and then continue with the exercise steps.
 
 ### Task 1: Create an analytics rule from the analytics rule wizard 
 
