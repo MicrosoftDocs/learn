@@ -1,0 +1,1 @@
+This module walked you through deploying the Azure Digital Twins service and creating a Digital Twin of a Grinding Step.  Next an IoT Hub and Azure Function were created.  Event Grid was configured to send device telemetry from IoT Hub to the Azure Function.  The Azure Digital Twins SDK was used in the Azure Function to publish data to the Grinding Step digital twin.
