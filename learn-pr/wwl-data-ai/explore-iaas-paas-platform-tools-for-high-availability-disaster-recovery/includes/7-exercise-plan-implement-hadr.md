@@ -57,4 +57,4 @@ blade.
 
 You have now seen how to enable geo-replication for Azure SQL Database, ensure it is working, and manually fail it over to another region using the portal.
 
-To finish this exercise select End below.
+To finish this exercise select **Done** below.
