@@ -86,8 +86,8 @@ To use git to deploy the source code to the web app's production slot, set up yo
 
 :::image type="content" source="../media/3-copy-git-clone-url.png" alt-text="Copy the git clone URL."::: 
 
-    > [!NOTE]
-    > If you don't see the git clone URL where it's shown in the preceding screenshot, refresh the portal.
+> [!NOTE]
+> If you don't see the git clone URL where it's shown in the preceding screenshot, refresh the portal.
     
 1. In the Azure portal, on the web app's Overview page, next to Git clone url, select the Copy button. Note that the URL contains your deployment username.
 
@@ -115,9 +115,9 @@ To use git to deploy the source code to the web app's production slot, set up yo
 
 ## Create a new staging slot
 
-For the new the web app, you created only one slot: the production slot. You deployed source code to this slot.
+For the new web app, you created only one slot: the production slot. You deployed source code to this slot.
 
-Next you'll create a deployment slot where you can stage new versions of the web app:
+Next, you'll create a deployment slot where you can stage new versions of the web app:
 
 1. On the Azure portal menu or from the **Home** page, select **All resources** and then select the web app.
 
