@@ -10,22 +10,13 @@ rock_samples.head()
 > [!NOTE]
 > You need to multiply the **Pristine (%)** column by 0.01, because it was being represented as a whole number.
 
-<<<<<<< HEAD
-Looking at the `head()` or `info()` of the `rock_samples` DataFrame isn't actually useful at this point. With over 2,000 samples, it's difficult to get an understanding of what the values are. For that, you can use the `describe()` function:
-=======
-Looking at the `head()` or `info()` of the `rock_samples` data frame isn't useful at this point. With over 2,000 samples, it's difficult to get an understanding of what the values are. For that, you can use the `describe()` function:
->>>>>>> 5ad8625499a61768b2c96c656f4fb4558393444e
+Looking at the `head()` or `info()` of the `rock_samples` DataFrame isn't useful at this point. With over 2,000 samples, it's difficult to get an understanding of what the values are. For that, you can use the `describe()` function:
 
 ```python
 rock_samples.describe()
 ```
 
-
-<<<<<<< HEAD
-| ID | Weight (kg) | Pristine (%) | Remaining (kg) |
-=======
-| ID | Remaining(kg) | Weight(kg) | Pristine(%) |  |
->>>>>>> 5ad8625499a61768b2c96c656f4fb4558393444e
+| ID | Remaining (kg) | Weight (kg) | Pristine (%) |  |
 |---|---|---|---|---|
 | count | 2229.000000 | 2229.000000 | 2229.000000 | 2229.000000 |
 | mean | 52058.432032 | 0.168253 | 84.512764 | 0.138103 |
@@ -55,8 +46,8 @@ low_samples.head()
 low_samples.info()
 ```
 
-```Output
- #   Column         Non-null count  Dtype  
+```output
+ #   Column         Non-Null Count  Dtype  
 ---  ------         --------------  -----  
  0   ID             27 non-null     int64  
  1   Mission        27 non-null     object 
@@ -67,11 +58,7 @@ low_samples.info()
  6   Remaining (kg)  27 non-null     float64
  ```
 
-<<<<<<< HEAD
-Twenty-seven samples seems like a small amount to base a recommendation on. We can probably find some other samples that are needed for more research here on Earth. To discover them, we can use the `unique()` function to see how many unique types we have across the `low_samples` and `rock_samples` DataFrames.
-=======
-Twenty-seven samples seem like a small amount to base a recommendation on. We can probably find some other samples that are needed for more research here on Earth. To discover them, we can use the `unique()` function to see how many unique types we have across the `low_samples` and `rock_samples` data frames.
->>>>>>> 5ad8625499a61768b2c96c656f4fb4558393444e
+Twenty-seven samples seem like a small amount to base a recommendation on. We can probably find some other samples that are needed for more research here on Earth. To discover them, we can use the `unique()` function to see how many unique types we have across the `low_samples` and `rock_samples` DataFrames.
 
 ```python
 low_samples.Type.unique()
@@ -89,11 +76,7 @@ rock_samples.Type.unique()
 array(['Soil', 'Basalt', 'Core', 'Breccia', 'Special', 'Crustal'], dtype=object)
 ```
 
-<<<<<<< HEAD
-We can see that, although six unique types were collected across all samples, the samples that are running low are from only four unique types. But this doesn't tell us everything about the samples we might want to focus on. For example, in our `low_samples` DataFrame, how many of each type are actually considered low?
-=======
-We can see that, although six unique types were collected across all samples, the samples that are running low are from only four unique types. But this doesn't tell us everything about the samples we might want to focus on. For example, in our `low_samples` data frame, how many of each type are considered low?
->>>>>>> 5ad8625499a61768b2c96c656f4fb4558393444e
+We can see that, although six unique types were collected across all samples, the samples that are running low are from only four unique types. But this doesn't tell us everything about the samples we might want to focus on. For example, in our `low_samples` DatFrame, how many of each type are considered low?
 
 ```python
 low_samples.groupby('Type')['Weight (kg)'].count()
@@ -102,7 +85,7 @@ low_samples.groupby('Type')['Weight (kg)'].count()
 > [!NOTE]
 > Here we are using the **Weight (kg)** column to count the number of rows for each type that we've grouped by. The actual weight has no impact.
 
-```Output
+```output
 Type
 Basalt     14
 Breccia     8
@@ -118,8 +101,8 @@ needed_samples = low_samples[low_samples['Type'].isin(['Basalt', 'Breccia'])]
 needed_samples.info()
 ```
 
-```Output
- #   Column         Non-null count  Dtype  
+```output
+ #   Column         Non-Null Count  Dtype  
 ---  ------         --------------  -----  
  0   ID             22 non-null     int64  
  1   Mission        22 non-null     object 

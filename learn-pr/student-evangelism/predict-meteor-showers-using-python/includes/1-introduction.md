@@ -8,7 +8,7 @@ This film, along with the real-life ingenuity of space exploration, inspired thi
 
 This module focuses on a real-world event, meteor showers. It guides you to use data science to predict the best day to see a meteor shower in your general location. Just like Fei Fei, you'll hone new skills, develop persistence, and be inspired by the story to build something that brings you closer to the universe. 
 
-This module is a part of a multimodal approach to learning. You can also follow along with a video tutorial in the [Learn with Dr. G video series](https://aka.ms/LearnWithDrG?azure-portal=true).
+This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module in a new tab](https://aka.ms/LearnWithDrG?azure-portal=true).
 
 ## Learning objectives
 

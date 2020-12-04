@@ -48,7 +48,7 @@ meteor_showers.info()
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 5 entries, 0 to 4
 Data columns (total 9 columns):
- #   Column               Non-null count  Dtype 
+ #   Column               Non-Null Count  Dtype 
 ---  ------               --------------  ----- 
  0   name                 5 non-null      object
  1   radiant              5 non-null      object
@@ -84,7 +84,7 @@ moon_phases.info()
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 366 entries, 0 to 365
 Data columns (total 4 columns):
- #   Column        Non-null count  Dtype 
+ #   Column        Non-Null Count  Dtype 
 ---  ------        --------------  ----- 
  0   month         366 non-null    object
  1   day           366 non-null    int64 
@@ -114,7 +114,7 @@ constellations.info()
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 5 entries, 0 to 4
 Data columns (total 6 columns):
- #   Column         Non-null count  Dtype 
+ #   Column         Non-Null Count  Dtype 
 ---  ------         --------------  ----- 
  0   constellation  5 non-null      object
  1   bestmonth      5 non-null      object
@@ -146,7 +146,7 @@ cities.info()
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 256 entries, 0 to 255
 Data columns (total 3 columns):
- #   Column    Non-null count  Dtype  
+ #   Column    Non-Null Count  Dtype  
 ---  ------    --------------  -----  
  0   city      256 non-null    object 
  1   latitude  256 non-null    float64
@@ -195,7 +195,7 @@ meteor_showers.info()
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 5 entries, 0 to 4
 Data columns (total 9 columns):
- #   Column               Non-null count  Dtype 
+ #   Column               Non-Null Count  Dtype 
 ---  ------               --------------  ----- 
  0   name                 5 non-null      object
  1   radiant              5 non-null      object
@@ -282,7 +282,7 @@ One of the .csv files is particularly interesting. The output of `moon_phases.in
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 366 entries, 0 to 365
 Data columns (total 2 columns):
- #   Column      Non-null count  Dtype         
+ #   Column      Non-Null Count  Dtype         
 ---  ------      --------------  -----         
  0   date        366 non-null    datetime64[ns]
  1   percentage  50 non-null     float64       
@@ -317,7 +317,7 @@ You could get more detailed by figuring out a more accurate percentage on your o
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 366 entries, 0 to 365
     Data columns (total 2 columns):
-     #   Column      Non-null count  Dtype         
+     #   Column      Non-Null Count  Dtype         
     ---  ------      --------------  -----         
      0   date        366 non-null    datetime64[ns]
      1   percentage  366 non-null    float64       
