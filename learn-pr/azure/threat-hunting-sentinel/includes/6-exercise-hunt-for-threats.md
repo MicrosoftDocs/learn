@@ -38,6 +38,7 @@ In this task, you'll create and manage threat hunting queries to review events r
   | extend AccountCustomEntity = Caller
   | extend IPCustomEntity = CallerIpAddress
   ```
+  
    - **Tactics**: Select **Impact**.
 
 5. On the **Hunting** page, on the **Queries** tab, enter **Deleted VMs** in the **Search queries field**.
