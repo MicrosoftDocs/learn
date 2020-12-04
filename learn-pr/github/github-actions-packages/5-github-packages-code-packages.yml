@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-actions-packages.github-packages-code-packages
+title: GitHub Packages for code packages
+metadata:
+  title: GitHub Packages for code packages
+  description: Briefly introduce how you can host your code libraries on GitHub Packages.
+  ms.date: 10/19/2020
+  author: cmaneu
+  ms.author: chmaneu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+azureSandbox: false
+content: |
+  [!include[](includes/5-github-packages-code-packages.md)]
