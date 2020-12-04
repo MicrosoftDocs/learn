@@ -1,4 +1,4 @@
-In this unit, you'll review the structure of a basic Razor Page *:::no-loc text="PageModel":::* class and its elements. You'll add an HTTP POST event handler method for the *:::no-loc text="Create":::* Razor Page form. Finally, you'll walk through the `Product` model class and its DataAttributes that drive both client-side and server-side validation.
+In this unit, you'll review the structure of a basic Razor Page *:::no-loc text="PageModel":::* class and its elements. You'll add an HTTP POST event handler method for the *:::no-loc text="Create":::* Razor Page form. Finally, you'll walk through the `Product` model and its data annotations that drive both client-side and server-side validation.
 
 ## Examine the structure of a basic Razor Pages *:::no-loc text="PageModel":::* class file
 
@@ -126,7 +126,7 @@ return RedirectToPage("Index");
 
 ## Define validation rules for the product model using data annotations
 
-This project uses a central model file *:::no-loc text="Product.cs":::* for `Product` model validation and operations. It's used by all Razor Page *:::no-loc text="PageModels":::* involved in UI for Product CRUD operations, and is used to validate product data received from the web api. By convention, it's stored in the *:::no-loc text="Models":::* directory. The `Product` model class namespace is `ContosoPets.Ui.Models`.
+This project uses a central model file *:::no-loc text="Product.cs":::* for `Product` model validation and operations. It's used by all Razor Page *:::no-loc text="PageModels":::* involved in UI for Product CRUD operations, and is used to validate product data received from the web api. By convention, it's stored in the *:::no-loc text="Models":::* directory. The `Product` model's namespace is `ContosoPets.Ui.Models`.
 
 Your new `CreateModel` class gained access to any model types defined in the `ContosoPets.Ui.Models` namespace, including the `Product` model, with the following `using` directive:
 

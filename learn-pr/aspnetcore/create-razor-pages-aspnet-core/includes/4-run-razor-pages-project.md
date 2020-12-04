@@ -4,6 +4,7 @@ The .NET CLI:
 
 * Offers the simplest way to create, compile, and run an ASP.NET Core web app.
 * Is already installed in the Cloud Shell environment.
+* Provides a consistent experience across Windows, Linux, and macOS.
 
 ## Run the Razor Pages project and explore its UI
 

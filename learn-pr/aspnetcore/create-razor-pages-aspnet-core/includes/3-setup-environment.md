@@ -1,4 +1,4 @@
-In this unit, you'll set up the development environment for the module, and explore *:::no-loc text="ContosoPets.Ui":::* starter project.
+In this unit, you'll set up the development environment for the module and explore the *:::no-loc text="ContosoPets.Ui":::* starter project.
 
 ## Set up development environment
 
@@ -8,7 +8,11 @@ Run the following command in the command shell. Be patient, as setup can take a 
 . <(wget -q -O - https://aka.ms/create-razor-pages-aspnet-core-setup)
 ```
 
-When the development environment has completed set up, the project *:::no-loc text="ContosoPets.Ui":::* project directory opens in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor).
+The preceding command installs a specific version of the .NET SDK in the Cloud Shell environment.
+
+
+
+When the development environment has completed setup, the *:::no-loc text="ContosoPets.Ui":::* project directory opens in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor).
 
 You'll see the following list of *:::no-loc text="ContosoPets.Ui":::* project directories and files:
 
@@ -30,7 +34,7 @@ In addition, a web API has been deployed to a public endpoint. The *:::no-loc te
 
 The *:::no-loc text="ContosoPets.Ui":::* project directory is currently open in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor).
 
-Examine the following *:::no-loc text="ContosoPets.Ui":::* files and directories by clicking on them in the Cloud Shell window on the right:
+The following table outlines noteworthy project files and directories. Examine each of them in the Cloud Shell editor window.
 
 | Name                                        | Description                                                                                  |
 |---------------------------------------------|----------------------------------------------------------------------------------------------|
@@ -39,15 +43,15 @@ Examine the following *:::no-loc text="ContosoPets.Ui":::* files and directories
 |                                             | * A *:::no-loc text=".cshtml.cs":::* `PageModel` class file that defines:                    |
 |                                             | * Page handlers for requests sent to the page.                                               |
 |                                             | * Data used to render the page.                                                              |
-| *:::no-loc text="wwwroot/":::*              | Contains static assets, such as HTML files, JavaScript files, and CSS files.                 |
+| *:::no-loc text="wwwroot/":::*              | Contains static asset files, such as HTML, JavaScript, and CSS.                              |
 | *:::no-loc text="Models/":::*               | Contains Model files. This project uses one central model file for model validation.         |
-| *:::no-loc text="Program.cs":::*            | Contains a `Main` method, the app's managed entry point.                                     |
+| *:::no-loc text="Program.cs":::*            | Contains the app's managed entry point.                                                      |
 | *:::no-loc text="ContosoPets.Ui.csproj":::* | Contains configuration metadata for the project, such as dependencies.                       |
 | *:::no-loc text="Startup.cs":::*            | Configures app behavior, such as routing between pages.                                      |
 
 ### Razor page files and their paired *PageModel* class file
 
-The *:::no-loc text="Pages":::* directory is where all Razor Pages are stored and organized in your ASP.NET Core app.
+By convention, the *:::no-loc text="Pages":::* directory is where all Razor Pages are stored and organized in an ASP.NET Core app.
 
 A Razor page has a *:::no-loc text=".cshtml":::* file extension. By convention, its associated *:::no-loc text="PageModel":::* C# class file uses the same name but with a *:::no-loc text=".cs":::* appended. For example, the Razor page *:::no-loc text="Index.cshtml":::* has an associated *:::no-loc text="PageModel":::* class file for *:::no-loc text="Index.cshtml.cs":::*.
 
@@ -55,13 +59,13 @@ A model object defines data properties and encapsulates logic or operations rela
 
 ## Models and the *:::no-loc text="Models":::* directory
 
-By convention, model class files are located in a *:::no-loc text="Models":::* directory. As previously mentioned, a model object defines data properties and encapsulates logic or operations related to those data properties.
+By convention, model files are located in a *:::no-loc text="Models":::* directory. As previously mentioned, a model object defines data properties and encapsulates logic or operations related to those data properties.
 
-The *:::no-loc text="ContosoPets.Ui":::* project has a model class file named *:::no-loc text="Product.cs":::* stored in the *:::no-loc text="Models":::* directory. The `Product` model class defines the data properties for a product. All PageModels in the project that focus on CRUD operations for products use this single `Product` model.
+The project has a `Product` model in *:::no-loc text="Models/Product.cs":::*. The `Product` model is implemented as a C# [record](/dotnet/csharp/whats-new/csharp-9#record-types) that defines the data properties for a product. Each PageModel that focuses on CRUD operations for products uses this `Product` model.
 
 ### Data annotations
 
-Models in ASP.NET Core often make use of data annotations to constrain or customize model properties. Data annotations are attributes used to specify behavior that you want to enforce on the model properties to which they're applied. For example, a range of minimum and maximum acceptable values. The *:::no-loc text="ContosoPets.Ui":::* project has a model class file named *:::no-loc text="Product.cs":::* that uses data annotations to define constraints for its data properties. For example, a `Name` property is always required, and a `Price` property must have a value between the range of `0.01` and `9999.99`. Since this module often refers to the `Product` model and its data properties, it's important to understand where that model record is stored.
+Models in ASP.NET Core often make use of data annotations to constrain or customize model properties. Data annotations are attributes used to specify behavior that you want to enforce on the model properties to which they're applied. For example, a range of minimum and maximum acceptable values. The project has a model file named *:::no-loc text="Product.cs":::* that uses data annotations to define constraints for its data properties. For example, a `Name` property is always required, and a `Price` property must have a value between the range of `0.01` and `9999.99`. Since this module often refers to the `Product` model and its data properties, it's important to understand where that model record is stored.
 
 ## The *Pages/Shared* directory
 
@@ -96,9 +100,7 @@ The following are routing examples for this completed project.
 
 ### Organize groups of related Razor pages
 
-The *:::no-loc text="ContosoPets.Ui":::* project's purpose is to provide a basic UI client to execute CRUD operations through your company's web API endpoint to manage product listings.
-The *:::no-loc text="Pages/Product":::* directory groups all the Razor pages that provide the UI for those CRUD operations and their *:::no-loc text="PageModel":::* class files.
-For the *:::no-loc text="ContosoPets.Ui":::* app, the same model validation will be used for more than one Razor page for HTTP requests to the hosted web API.
+The *:::no-loc text="ContosoPets.Ui":::* project's purpose is to provide a basic UI client to execute CRUD operations through your company's web API endpoint to manage product listings. The *:::no-loc text="Pages/Product":::* directory groups all the Razor pages that provide the UI for those CRUD operations and their *:::no-loc text="PageModel":::* class files. For the *:::no-loc text="ContosoPets.Ui":::* app, the same model validation will be used for more than one Razor page for HTTP requests to the hosted web API.
 
 ### The HTTP request service
 
