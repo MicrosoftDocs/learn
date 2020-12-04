@@ -1,13 +1,13 @@
 The final function is the one that will simulate the game actually running. In this case, instead of waiting 12 minutes, we'll pretend that a quarter is only 12 seconds. 
 
-The `startNextQuarter()` function is called from the button that is defined in *index.html*. Locate the `div` that has the ID `start` to see the `onclick` declaration. 
+The `startNextQuarter()` function is called from the button that is defined in *index.html*. Locate the `div` that has the ID `start` to see the `onclick` declaration: 
 
 ```javascript
 // This function is called when the Game button is selected. Each time the button is selected,
 // it runs through a 12-second timer (simulating 12 minutes) and then updates the game
 // to the next quarter.
 function startNextQuarter() {
-    // If there aren't exactly 5 players on the court, alert the coach that the game can't start
+    // If there aren't exactly five players on the court, alert the coach that the game can't start.
     if(playersOnCourt != maxPlayersOnCourt){
         alert("Choose exactly " + maxPlayersOnCourt + " players to be on the court.");
         return;
@@ -45,7 +45,7 @@ function startNextQuarter() {
 }
 ```
 
-Although the interval functionality is beyond the scope of this module, a critical piece (especially when you're testing new functionality) is that you can modify the interval timing, which is the second parameter in the `setInterval()` function; in this case, it's set to 1000. You can set this to 100 if you want the quarters to go by quicker to more quickly test new changes.
+Although the interval functionality is beyond the scope of this module, a critical piece (especially when you're testing new functionality) is that you can modify the interval timing, which is the second parameter in the `setInterval()` function; in this case, it's set to 1000. You can set this to 100 if you want the quarters shorter to more quickly test new changes.
 
 ## Test your new app
 
@@ -70,16 +70,16 @@ Now that you have finished your web app and you tested it locally, you can deplo
 
 To commit and push your changes, go to the source control extension, add a commit message, and select the check mark at the top. 
 
-:::image type="content" source="../media/commit-code.png" alt-text="Screenshot that shows committing main.js changes.":::
+:::image type="content" source="../media/commit-code.png" alt-text="Screenshot that shows committing main J S file changes.":::
 
 Next, push your changes: select the up and down arrows at the bottom of the Visual Studio Code window (be sure that you're on the main branch).
 
-:::image type="content" source="../media/push-changes.png" alt-text="Screenshot that shows pushing main.js changes.":::
+:::image type="content" source="../media/push-changes.png" alt-text="Screenshot that shows pushing main J S file changes.":::
 
-After you commit and push your changes (and wait a little while for the GitHub Action to be triggered and completed), you can go back to the Azure extension, right-click the production app, and then select **Browse Site**.
+After you commit and push your changes (and wait a little while for the GitHub action to be triggered and completed), you can go back to the Azure extension, right-click the Production app, and then select **Browse Site**.
 
 :::image type="content" source="../media/browse-site.png" alt-text="Screenshot that shows browsing your finished site.":::
 
-To see an example, see the static web app that built during the creation of this module, at [https://aka.ms/LearnWithDrG/Basketball/WebApp](https://aka.ms/LearnWithDrG/Basketball/WebApp?azure-portal=true).
+To see an example, see the static web app that we built during the creation of this module, at [https://aka.ms/LearnWithDrG/Basketball/WebApp](https://aka.ms/LearnWithDrG/Basketball/WebApp?azure-portal=true).
 
 © 2020 Warner Bros. Ent. All Rights Reserved

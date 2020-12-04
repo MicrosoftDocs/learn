@@ -2,19 +2,19 @@ Three functions are needed for the coach to actually run each quarter of the gam
 
 ## Update the stats at the end of each quarter
 
-At the end of each quarter, we'll want to make sure that the coach can see the updated PER stats for each player, so the coach can decide whether they want to change the lineup. This function is similar to the `addStatsToGame()` function that we wrote in a previous unit. 
+At the end of each quarter, we'll want to make sure that the coach can see the updated PER stats for each player, so the coach can decide whether they want to change the lineup. This function is similar to the `addStatsToGame()` function that we wrote in an earlier unit. 
 
 The two differences with this new function are:
 
 - We can update the player cards instead of creating them.
-- We now have players on the court, and we can calculate the PER based on the new stats for that quarter.
+- We now have players on the court, and we can calculate PER based on the new stats for that quarter.
 
 ```javascript
-// At the start of each quarter to do two things: 1) Ensure the players
+// At the start of each quarter, do two things: 1) Ensure the players
 // currently on the court have the correct PER represented, and 2) Update the stats
 // for each player for the current quarter.
 function updateStatsInGame() {
-    // For each player, update their player stat card to show the PER for that player for 
+    // For each player, update their player stat card to show PER for that player for 
     // a specific quarter.
     for (let [playerName, playerStats] of playerMap.entries()) {
         document.getElementById(playerName+"_card").children[1].innerHTML = "PER: "+playerStats[currentQuarter];
@@ -24,7 +24,7 @@ function updateStatsInGame() {
     quarterPER = 0;
     quarterAvePER = 0;
 
-    // Get a list of all of the players currently on the court.
+    // Get a list of all the players currently on the court.
     var currentPlayers = document.getElementById('playersOnCourt').children;
 
     // Loop through each of the players currently on the court.
@@ -38,7 +38,7 @@ function updateStatsInGame() {
     // Get the average PER for the start of the quarter.
     quarterAvePER = quarterPER / playersOnCourt;
 
-    // Update the Current PER with the new average PER for the quarter now that the
+    // Update the current PER with the new average PER for the quarter now that the
     // stats have been updated.
     document.getElementById('currentPER').innerHTML = "Current PER: "+ quarterAvePER.toPrecision(4);
 }
@@ -54,48 +54,48 @@ We'll need two functions that act as "wrap-up" functions for our app:
 ```javascript
 // At the end of each quarter, show the coach the average PER
 // for that quarter, allow the coach to make changes to the
-// players on the court again, and add the stats for the next quarter to the game
+// players on the court again, and add the stats for the next quarter to the game.
 function endQuarter() {
-    // Allow the coach to move players again
+    // Allow the coach to move players again.
     quarterInPlay = false;
 
-    // Add the average PER of the quarter to the total count
+    // Add the average PER of the quarter to the total count.
     totalAvePER += parseFloat(quarterAvePER.toPrecision(4));
 
-    // Add the value to the display counter above the stats column
+    // Add the value to the display counter above the stats column.
     document.getElementById('averagePER').innerHTML += quarterAvePER.toPrecision(4) + " + ";
 
-    // Progress ot the next quarter
+    // Progress to the next quarter.
     currentQuarter++;
 
-    // Update the stats so that they reflect the next quarter
+    // Update the stats so that they reflect the next quarter.
     updateStatsInGame();
 
-    // Let the coach know that the new PER stats are up to date 
+    // Let the coach know that the new PER stats are up to date. 
     alert("Q" + (currentQuarter+1) + " PER stats are in!");
 
-    // Encourage the coach to consider new players
+    // Encourage the coach to consider new players.
     document.getElementById("quarter").innerHTML = "Choose Players for Q"+(currentQuarter+1);
 
-    // Update the button text
+    // Update the button text.
     document.getElementById("start").innerHTML = "Start Q"+(currentQuarter+1);
 }
 
 // At the end of the game, show the coach the average PER
-// for the entire game and clean up the final view of the app
+// for the entire game and clean up the final view of the app.
 function endGame() {
-    // Don't let the coach move players around, the game is over
+    // Don't let the coach move players around; the game is over.
     quarterInPlay = true;
 
-    // Calculate the average PER for the entire game, including the last quarter
+    // Calculate the average PER for the entire game, including the last quarter.
     totalAvePER += parseFloat(quarterAvePER.toPrecision(4));
     var averagePER = totalAvePER/numQuarters;
 
-    // Let the coach know that the game is over and what the PER was for the game
+    // Let the coach know that the game is over and what the PER was for the game.
     alert("Game Over. Game Average PER was: " + averagePER.toPrecision(4));
     document.getElementById('averagePER').innerHTML += quarterAvePER.toPrecision(4) + " = " + averagePER.toPrecision(4);
 
-    // Clean up the web app view
+    // Clean up the web app view.
     document.getElementById("timer").innerHTML = "That's All Folks!";
     document.getElementById("gameButton").innerHTML = "";
     document.getElementById("quarter").innerHTML = "";

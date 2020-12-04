@@ -1,19 +1,19 @@
-This web app won't be useful if the coach can't make a decision about which players were taking a water break and which were on the court. Now that the coach can see the PER for each player for the first quarter, we want to help the coach visualize what the average PER for a starting lineup would be as they choose move players between the court and the bench.
+This web app won't be useful if the coach can't make a decision about which players should take a water break and which to put on the court. Now that the coach can see PER for each player for the first quarter, we want to help the coach visualize what the average PER for a starting lineup would be as they choose to move players between the court and the bench.
 
 ## Write the functionality to move players 
 
 This unit fills in the `movingPlayers()` function:
 
 ```javascript
-// This function is called each time a player button is clicked. A player
-// button being clicked indicates the players is either moving to the court
-// or to the bench for a water break
+// This function is called each time a player button is selected. A player
+// button being selected indicates that the player either is moving to the
+// court or moving to the bench for a water break.
 function movingPlayers() {
 
 }
 ```
 
-But first, we want to make sure the coach doesn't make changes to the players during a quarter. Although in a real basketball game that is definitely OK to do, in this version, we have only PER stats for each quarter start, so we want to limit the functionality. 
+But first, we want to make sure the coach doesn't make changes to the players during a quarter. Although in a real basketball game, that's definitely OK to do, in this version, we have only PER stats for each quarter start, so we want to limit the functionality. 
 
 ```javascript
     // Don't let the coach change players during a quarter.
@@ -22,7 +22,7 @@ But first, we want to make sure the coach doesn't make changes to the players du
     }
 ```
 
-Now we can use the HTML structure to figure out where the player currently is—the bench or the court. We know that the buttons were initially placed on a `div` that has the ID `playersOnBench`. We can start by testing whether the player is currently on the bench, which means that the coach is trying to move the player to the court.
+Now, we can use the HTML structure to figure out where the player currently is—the bench or the court. We know that the buttons were initially placed on a `div` that has the ID `playersOnBench`. We can start by testing whether the player is currently on the bench, which means that the coach is trying to move the player to the court.
 
 ```javascript
     // Get the div in which this button currently is (either bench or court).
@@ -46,8 +46,8 @@ If there's room on the court for the player, we want to do a few things:
 
 1. Increase the count for number of players on the court.
 2. Get the player's PER for the current quarter.
-3. Calculate the average PER for all of the players currently on the court.
-4. Update the Current PER for the court. 
+3. Calculate the average PER for all the players currently on the court.
+4. Update the current PER for the court. 
 5. Move the player to the court.
 
 ```javascript
@@ -68,8 +68,8 @@ If there's room on the court for the player, we want to do a few things:
 Next, we want to support the coach moving players from the bench back to the court. We can put these steps in an `else` statement because there are only two places a player can be—the court or the bench. So, we'll do a couple things in this `else` statement:
 
 1. Decrement the count of players on the court.
-2. Calculate the PER for the players left on the court. If there are no more players on the court, set the PER to 0.
-3. Display the PER to the coach.
+2. Calculate the PER for the players left on the court. If there are no more players on the court, set PER to 0.
+3. Display PER to the coach.
 4. Move the player to the bench.
 
 ```javascript
@@ -103,9 +103,9 @@ Next, we want to support the coach moving players from the bench back to the cou
 The entire `movingPlayers()` function should be like this code:
 
 ```javascript
-// This function is called each time a player button is selected. A player
-// button being selected indicates the player is either moving to the court
-// or to the bench for a water break.
+// This function is called each time a player button is selected. A player's
+// button being selected indicates that the player either moving to the
+// court or moving to the bench for a water break.
 function movingPlayers() {
     // Don't let the coach change players during a quarter.
     if(quarterInPlay) {

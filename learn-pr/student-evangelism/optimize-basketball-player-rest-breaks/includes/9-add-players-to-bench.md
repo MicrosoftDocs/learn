@@ -1,4 +1,4 @@
-In the next function, `addPlayersToGame`, we initialize the players in the web app. Because we want our coach to be able to move players from the bench to the court and back depending on each player's PER for a specific quarter, we need to create HTML elements for each player, which can have actions associated with them. One of the easiest ways to do this is to use buttons. 
+In the next function, `addPlayersToGame`, we initialize the players in the web app. Because we want our coach to be able to move players from the bench to the court and back depending on each player's PER for a specific quarter, we need to create HTML elements for each player. The HTML elements can have actions associated with them. One of the easiest ways to do this is to use buttons. 
 
 Before we create a button for each player, we need to get the `div` in which the players will be displayed in our web app. If we take a look at the *index.html* file, we can see that there is a `div` that has the ID `bench`. Nested in that `div` is another `div` called `playersOnBench`. This probably is where we want the player buttons to appear.
 
@@ -13,7 +13,7 @@ Now, we need to create an HTML button element for each player. This button eleme
 - `className`: In the *styles.css* file, we can see a `playerButton` class, so we'll assign it here.
 - `onclick`: This function is what we want our app to call when the button is selected.
 - `style`: We can set a couple style attributes, like background color and width.
-- `playerImage`: We'll add the player's image to the button, instead of to their name.
+- `playerImage`: We'll add the player's image to the button, instead of their name.
 
 After we create the button, we can add the button to the bench area that we identified earlier, and then repeat the process for each player:
 
@@ -47,14 +47,14 @@ Before continuing, let's make sure that our app is working so far. If we tried t
 
 We can test our app in two ways:
 
-- Commit our changes to the main branch on GitHub, triggering the GitHub Action and redeploying our code to our Azure static web app. We'll do this option in a later unit.
-- Save the *main.js* file and open *index.html* locally in a browser. We'll do this option this time to save on testing time while we are still building our app. 
+- Commit our changes to the main branch on GitHub, triggering the GitHub action and redeploying our code to our static web app in Azure. We'll do this option in a later unit.
+- Save the *main.js* file and open *index.html* locally in a browser. We'll do this option now to save on testing time while we are still building our app. 
 
-To test your web app locally, right-click the *index.html* file, and then select **Copy Path**.
+To test your web app locally, right-click the *index.html* file, and then select **Copy Path**:
 
-:::image type="content" source="../media/local-copy-path.png" alt-text="Screenshot that shows copying the local path to the index . h t m l file.":::
+:::image type="content" source="../media/local-copy-path.png" alt-text="Screenshot that shows copying the local path to the index H T M L file.":::
 
-Then, open a browser and paste the path in the address bar. You should see the same app that we saw when we first deployed it, but this time, we can actually start using it!
+Then, open a browser and paste the path in the address bar. You should see the same app that we saw when you first deployed it, but this time, you can actually start using it!
 
 In the upper-left corner of the app, select the **Choose File** button and find your *game_stats.csv* file. After the file uploads, a couple things should happen:
 
@@ -66,12 +66,12 @@ In the upper-left corner of the app, select the **Choose File** button and find 
 
 :::image type="content" source="../media/first-test.png" alt-text="Screenshot that shows the first functionality test of the web app.":::
 
-## Add the PER for the first quarter to the app
+## Add PER for the first quarter to the app
 
 Finally, we add the PER values for each player for the first quarter to the app. This happens in the next unit, but we know we need to call the function that will perform this task: 
 
 ```javascript
-    // Call the function to add the PER for each player to the game.
+    // Call the function to add PER for each player to the game.
     addStatsToGame();
 ```
 
@@ -105,7 +105,7 @@ function addPlayersToGame() {
         bench.appendChild(newPlayer);
     }
 
-    // Call the function to add the PER for each player to the game.
+    // Call the function to add PER for each player to the game.
     addStatsToGame();
 }
 ```

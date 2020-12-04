@@ -1,26 +1,28 @@
-Our goal is to use the data that we know about each Tune Squad player to make quick decisions during the game. We know we want to use the PER because it's a per-minute measurement of the player's productivity on the court. Although in professional basketball, the PER is computed for players based on their performance over an entire season, we can use PER as a loose proxy for player performance in a single game. To use the PER this way, we'll need the following statistics for each player:
+Our goal is to use the data that we have about each Tune Squad player to make quick decisions during the game. We know we want to use the PER because it's a per-minute measurement of the player's productivity on the court. Although in professional basketball, PER is computed for players based on the player's performance over an entire season, we can use PER as a loose proxy for player performance in a single game. To use PER this way, we'll need the following statistics for each player:
 
-* **TS%**: A player's shooting percentage, taking free throws and three-pointers into account.
-* **AST**: The percentage of a player's possessions that end in an assist.
-* **TO**: The percentage of a player's possessions that end in a turnover.
-* **USG**: The number of possessions a player uses per 40 minutes.
-* **ORR**: Offensive rebound rate.
-* **DRR**: Defensive rebound rate.
-* **REBR**: The percentage of missed shots that a player rebounds.
+* **TS%**: A player's shooting percentage, taking free throws and three-pointers into account
+* **AST**: The percentage of a player's possessions that end in an assist
+* **TO**: The percentage of a player's possessions that end in a turnover
+* **USG**: The number of possessions a player uses per 40 minutes
+* **ORR**: The player's offensive rebound rate
+* **DRR**: The player's defensive rebound rate
+* **REBR**: The percentage of missed shots that a player rebounds
 
 > [!NOTE]
-> Technically, PER also uses players' games-played and minutes-player-per-game statistics. But, because those stats span multiple games, we'll leave them out.
+> Technically, PER also uses a player's games-played and minutes-player-per-game statistics. Because those stats span multiple games, we'll leave them out.
 
 We don't have an actual game to follow because the film doesn't come out until Summer 2021. But, we can simulate a game by using math!
 
-We'll use the standard deviation of players' stats to simulate how they might perform in a game. Because we don't have data from multiple games for our players, we'll take the standard deviation of each stat for the players we have. Of course, this approach won't give us an accurate view of how we might expect players to perform in an actual game, but we can use this data to meet our primary objective: learning how we *can* use data science in a real-world scenario.
+We'll use the standard deviation of players' stats to simulate how they might perform in a game. Because we don't have data from multiple games for our players, we'll take the standard deviation of each stat for the players we have. 
 
-After you finish this module, you'll be able to use actual player and game stats to test whether this approach is effective in the real world!
+Of course, this approach won't give us an accurate view of how we might expect players to perform in an actual game, but we can use this data to meet our primary objective: learning how we *can* use data science in a real-world scenario.
 
-To make this process easier, let's create a look-up pandas Series for each stat's standard deviations. A Series basically is a single-column DataFrame. Set the stat names as the Series index to make looking them up easier later on.
+When you finish this module, you'll be able to use actual player and game stats to test whether this approach is effective in the real world!
+
+To make this process easier, let's create a lookup pandas Series for each stat's standard deviations. A Series basically is a single-column DataFrame. Set the stat names as the Series index to make looking them up easier later on.
 
 ```python
-# Create a list of just the column names we are interested in.
+# Create a list of only the column names we are interested in.
 game_stat_cols = list(ts_df.iloc[:, 7:-1])
 game_stat_stdevs = []
 
@@ -50,22 +52,22 @@ With this Series, we can run a simulation of our player data. We want to see whe
 
 To train a machine learning model to predict a player PER by using specific player stats for a simulated game, we'll use all the data that we initially downloaded, including the human player data. To do this, we'll need to split our data into two parts:
 
-* `X`: The *input* data we use to predict `y`.
-* `y`: The *output* value that you want the machine learning model to predict.
+* `X`: The *input* data we use to predict `y`
+* `y`: The *output* value that you want the machine learning model to predict
 
-The input data (`X`) is all the data that you want your machine learning model to use to predict the output (`y`). In this case, we want `X` to represent the seven columns described earlier. The output data (`y`) is the number that we want to predict when all the columns in `X` are considered. In our case, `y` will be `PER`. To create these two variables, we just need to grab the last eight columns, minus the last column, and use that for `X`. We'll grab only the last column to use for `y`.
+The input data (`X`) is all the data that you want your machine learning model to use to predict the output (`y`). In this case, we want `X` to represent the seven columns we are especially interested in. The output data (`y`) is the number that we want to predict when all the columns in `X` are considered. In our case, `y` will be `PER`. To create these two variables, we just need to grab the last eight columns, minus the last column, and use that for `X`. We'll grab only the last column to use for `y`.
 
 ```python
-# Import the necessary modules.
+# Import the models and libraries we need.
 from sklearn.linear_model import LinearRegression
 from numpy.random import randn
 
-# Get the dependent and independent variables for model the PER.
+# Get the dependent and independent variables for modeling the PER.
 X = player_df_final.iloc[:, 7:-1].to_numpy()
 y = player_df_final.iloc[:, -1]
 ```
 
-Next, we need to train, or fit, the machine learning model. We're using scikit-learn's LinearRegression library, which is a pre-written linear regression machine learning model that will automatically learn how to predict `y` based on `X`. For more information about how this training works, you can check out the [Developer's Intro to Data Science video series](https://www.youtube.com/playlist?list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE?azure-portal=true) and other [Microsoft Learn modules about data science](https://www.aka.ms/DevIntroDS_Learn?azure-portal=true).
+Next, we need to train, or fit, the machine learning model. We're using the scikit-learn LinearRegression library, which is a pre-written linear regression machine learning model that will automatically learn how to predict `y` based on `X`. For more information about how this training works, you can check out the [Developer's Intro to Data Science video series](https://www.youtube.com/playlist?list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE&azure-portal=true) and other [Microsoft Learn modules about data science](https://www.aka.ms/DevIntroDS_Learn?azure-portal=true).
 
 ```python
 # Define and fit the model.
@@ -73,16 +75,16 @@ lin_reg = LinearRegression()
 lin_reg.fit(X, y)
 ```
 
-With this code, we have a machine learning model (`lin_reg`) that we can use to predict PER based on a set of the seven input stats that we used to train the model (TS%, AST, TO, USG, ORR, DRR, and REBR).
+This code gives us a machine learning model (`lin_reg`) that we can use to predict PER based on a set of the seven input stats that we used to train the model (TS%, AST, TO, USG, ORR, DRR, and REBR).
 
 ## Test a machine learning model with random numbers based on standard deviation
 
-When you have fit that model, we can use the model to predict PER for a player based on new data in the seven columns. Let's explore how this model performs. We can use the model to predict the PER for randomized data for the players over 10 iterations.
+After fitting the model, we can use the model to predict PER for a player based on new data in the seven columns. Let's explore how this model performs. We can use the model to predict the PER for randomized data for the players over 10 iterations.
 
-For each iteration, we're doing to do the following:
+For each iteration, we'll do the following steps:
 
 1. Create an empty DataFrame that contains only the player's names.
-1. For each of the stats for that player, generate a random number within the standard deviation for that player for that stat.
+1. For each stat for that player, generate a random number within the standard deviation for that player for that stat.
 1. Save that randomly generated number in the DataFrame.
 1. Predict the PER for each player based on the new DataFrame of randomly generated numbers.
 1. Print each iteration, with the lowest `PER` player and the highest `PER` player.
@@ -91,14 +93,14 @@ For each iteration, we're doing to do the following:
 # Print the player with the highest and lower PER for each iteration.
 print('Iteration # \thigh PER \tlow PER')
 
-# Run the simulation ten times.
+# Run the simulation 10 times.
 for i in range(10):
 
     # Define an empty temporary DataFrame for each iteration.
-    # The columns of this DataFrame are the player stats, and the index is the players' names.
+    # The columns of this DataFrame are the player stats and the index is the players' names.
     game_df = pd.DataFrame(columns=game_stat_cols, index=list(ts_df['player_name']))
     
-    # Loop through the each stat.
+    # Loop through each stat.
     for stat in game_stat_cols:
         
         # Each player's stats are used to generate a random value for each iteration.
@@ -130,6 +132,10 @@ Here's the output:
 > [!NOTE]
 > Your data will be different from the data shown here because each time we run this code, we generate a random number within the standard deviation for each relevant stat column. If it *is* identical, it was complete luck!
 
-Our methodology provides a variety of results that are inline with what we might expect based on the stats: Lola and Speedy likely are some of the best players, based on PER. So, if we had in-game data, rather than random values based on the standard deviation, we could feasibly feed that data into this machine learning model and determine which player (the lowest PER player) we should give a water break to, and which we should leave in (the highest PER player). As the game continues, the stats for each player will change. If we see a high PER player's PER start to drop, we might consider giving that player a water break. The player's lower PER probably means that they're getting tired.
+Our methodology provides a variety of results that are in line with what we might expect based on the stats: Lola and Speedy likely are some of the best players, based on PER.
+
+So, if we had in-game data instead of random values based on the standard deviation, we could feasibly feed that data into this machine learning model and determine which player (the lowest PER player) should take a water break and which should stay in the game (the highest PER player).
+
+As the game continues, the stats for each player will change. If we see a high PER player's PER start to drop, we might consider giving that player a water break. The player's lower PER probably means that they're getting tired.
 
 © 2020 Warner Bros. Ent. All Rights Reserved

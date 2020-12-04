@@ -8,7 +8,7 @@ Like before, we can revisit the *index.html* file to find there is a `div` with 
 // This function is called at the beginning of the game play to initialize
 // PER for each player.
 function addStatsToGame() {
-    // Get the div where the stats will be shown.
+    // Get the div in which the stats will be shown.
     var stats = document.getElementById("playerStats");
 
     // For each player, create a player stat card to show the PER for that player for a 

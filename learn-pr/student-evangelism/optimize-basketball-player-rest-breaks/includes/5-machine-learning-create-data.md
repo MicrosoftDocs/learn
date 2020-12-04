@@ -1,6 +1,8 @@
-Now, we've run into a problem. There's no way for us to watch a game of 16 Tune Squad characters playing basketball and test out our model in an actual app. We can't get real-time game data from the Tune Squad playing. *But*, we *can* use the trick we learned about testing our model to create a new dataset that would simulate a game!
+We've run into a problem. We can't get real-time game data from the Tune Squad playing. There's no way for us to watch a game of 16 Tune Squad characters playing basketball and test out our model in an actual app.
 
-The web app that we'll build in the upcoming units will help us decide which player to give a water break to every 12 minutes of a standard 48-minute game. So, we should create a CSV file that will contain randomized player data over four iterations: 0 minutes (the start of the game), 12 minutes, 24 minutes, and 36 minutes.
+*But*, we *can* use the trick we learned about testing our model to create a new dataset that will simulate a game!
+
+The web app that we'll build in the upcoming units will help us decide which player to give a water break to every 12 minutes of a standard 48-minute game. So, we should create a CSV file that will contain randomized player data over four iterations: 0 minutes (the start of the game), 12 minutes, 24 minutes, and 36 minutes:
 
 ```python
 # Initialize four empty DataFrames, one for each 12-minute period.
@@ -45,15 +47,15 @@ Here's the output:
 
 64 rows × 8 columns
 
-The final DataFrame looks complete, so we can save it as a CSV file, so we can use it in our web app. When saving this DataFrame as a CSV file, we'll want to keep the indices because we made them the player's names.
+The final DataFrame looks complete. We can save it as a CSV file, so we can use it in our web app. When saving this DataFrame as a CSV file, we'll want to keep the indices, because we made them the player's names.
 
 ```python
-# Export the finished DataFrame to CSV. 
+# Export the finished DataFrame to CSV.
 game_df.to_csv('game_stats.csv')
 ```
 
 A new CSV file should appear in your Visual Studio Code folder:
 
-:::image type="content" source="../media/game-stats-csv.png" alt-text="Screenshot that shows the game_stats . c s v file in Visual Studio Code Explorer.":::
+:::image type="content" source="../media/game-stats-csv.png" alt-text="Screenshot that shows the game_stats C S V file in Visual Studio Code Explorer.":::
 
 © 2020 Warner Bros. Ent. All Rights Reserved
