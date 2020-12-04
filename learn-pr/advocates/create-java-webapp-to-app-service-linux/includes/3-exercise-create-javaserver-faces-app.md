@@ -1,11 +1,11 @@
 You've been asked to create a Java Server Faces web application that can handle Form submissions. 
 You'll build a web application and deploy it locally to a Tomcat server.
 
-## Create a Simple JSF Web app on Tomcat
+## Create a simple JSF Web app on Tomcat
 
 In the exercise, we'll create a Maven Project your Java Web application. After you have created the project, you need to configure three configurations. First one is to add the dependency libraries to `pom.xml` file. Second is to create a CDI configuration file as `beans.xml` to use the CDI. Third is to configure the JSF on `web.xml` file. After the configurations, we can create a JSF Web Page and create the Backing Bean for server-side backend operation. Finally we'll evaluate it on local Tomcat environment.
 
-### Creating Maven project
+### Create a Maven project
 
 Execute the following Maven archetype command. This command will create a Maven project for your Java web application:
 
@@ -48,7 +48,7 @@ The following files and directories are now available:
             └── index.jsp
    ```
 
-### Modify Maven pom.xml File
+### Modify Maven pom.xml file
 
 To use the JSF libraries, we need to add the following dependency libraries into `pom.xml`.
 
@@ -177,7 +177,7 @@ JSF web pages are written in XHTML file format instead of JSP, as set in `web.xm
 mv index.jsp index.xhtml
    ```
 
-### Creating a Basic Web Page for JSF
+### Create a basic web page for JSF
 
 Delete all the contents described in `index.xhtml` and copy the following code:
 
@@ -201,7 +201,7 @@ Delete all the contents described in `index.xhtml` and copy the following code:
 </html>
    ```
 
-### Create JSF Backing Bean
+### Create JSF backing bean
 
 Next, create a backing bean to implement server-side backend processing.
 Create a new directory for your Java package, which will use to create the backing bean under the `src/main` directory.
@@ -263,14 +263,14 @@ The directory structure after implementing the program is as follows.
             └── index.xhtml
 ```
 
-### Run in local tomcat environment
+### Run in local Tomcat environment
 
 If you installed Tomcat 9.0.x on your local environment, go to the next step, else go to the next section.
 
 Compile the source code and run it in a locally installed Tomcat environment.
 Execute the following command.
 
-#### Compile and Package the Java Project
+#### Compile and package the Java project
 
 Execute the following command to compile the code.
 
@@ -278,7 +278,7 @@ Execute the following command to compile the code.
 mvn clean package
 ```
 
-#### Copy the artifact to the Deployment Directory on Tomcat
+#### Copy the artifact to the deployment directory on Tomcat
 
 Copy the artifact war file to the directory in the Tomcat.
 
@@ -296,6 +296,6 @@ $INSTALL_DIR/apache-tomcat-9.0.39/bin/startup.sh
 
 After you start Tomcat, browse to `http://localhost:8080/azure-javaweb-app/` and you'll see the screen below.
 
-:::image type="content" source="../media/jsf-helloworld.png" alt-text="JSF HelloWorld Page":::
+:::image type="content" source="../media/javaserver-faces-helloworld.png" alt-text="JSF HelloWorld Page":::
 
 You have successfully run your JSF web application in your local Tomcat environment.

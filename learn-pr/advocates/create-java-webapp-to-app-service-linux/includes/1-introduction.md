@@ -4,13 +4,13 @@ In this module, you'll deploy a Java Web Application to Tomcat on Azure App Serv
 
 :::image type="content" source="../media/primefaces-todo-list.png" alt-text="Java Todo Application Sample":::
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, you can:
 
 - Create a Java (JSF) Web Application
 - Run the application locally
-- Deploy your application to Azure App Services
+- Deploy your application to Azure App Service
 
 ## Prerequisites
 

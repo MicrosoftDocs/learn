@@ -8,8 +8,7 @@ You can leave the OS and Tomcat management to Azure, and concentrate on building
 
 :::image type="content" source="../media/app-service-portal-screen.png" alt-text="Azure portal Screen":::
 
-
-## Get Sample JSF Applications
+## Get sample JSF applications
 
 In order to deploy a Java Web Application, you can get a PrimeFaces JSF Web Application from GitHub as below.
 
@@ -50,7 +49,7 @@ Deploy-PrimeFaces-JSF-Web-App-on-Tomcat-9.0
 
 ## Maven Plugin for Azure App Service
 
-Microsoft provides the `Maven Plugins for Azure Services` to make it easier for Java developers to deploy applications to Azure.
+Microsoft provides the `Maven Plugins for Azure Service` to make it easier for Java developers to deploy applications to Azure.
 By using this plugin, you can easily configure and deploy your application to Azure.
 Execute the following command to use `Maven Plugin for Azure App Service`.
 
@@ -174,9 +173,9 @@ If you want to change the resource group name, instance name, and deployment loc
     </plugins>
 ```
 
-### Compile & Deploy to Azure  App Services
+### Compile and deploy to Azure App Service
 
-Now that the settings for deploying to Azure App Services are complete, compile the source code again:
+Now that the settings for deploying to Azure App Service are complete, compile the source code again:
 
 ```bash
 mvn clean package
@@ -206,7 +205,7 @@ The public URL of the deployed application is displayed in `Successfully deploye
 
 `https://azure-javaweb-app-1601463451101.azurewebsites.net`
 
-:::image type="content" source="../media/deployed-to-the-appservices.png" alt-text="Deployed Web App on Azure App Services":::
+:::image type="content" source="../media/deployed-to-app-service.png" alt-text="Deployed Web App on Azure App Service":::
 
 ## Confirm the Log Stream from Command Line
 

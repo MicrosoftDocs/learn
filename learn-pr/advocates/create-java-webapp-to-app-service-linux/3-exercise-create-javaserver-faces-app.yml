@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-exercise-create-jsf-app.md)]
+  [!include[](includes/3-exercise-create-javaserver-faces-app.md)]

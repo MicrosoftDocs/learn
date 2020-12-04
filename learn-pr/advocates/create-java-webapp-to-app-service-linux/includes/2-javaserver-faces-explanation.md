@@ -1,26 +1,25 @@
 In this module, we'll use JavaServer Faces (JSF) as a "View" Technology to learn the basic concept of JSF.
 
-## What is JavaServer Faces(JSF)
+## What is JavaServer Faces (JSF)
 
 JSF was adopted as a specification in the Java Platform, Enterprise Edition (Java EE) as part of Java EE 5 (2006). Initially, JSF used Java Server Pages (JSP) to render HTML pages. Since version 2.0, Facelets, which is closer to ordinary HTML, has been used.
 
 JSF is a component-based application Framework. Each component's state is saved depending on the client's interaction.
 The state is saved when a new page is requested and is restored when returned.
 
-### JSF Basic Functionality
+### JSF basic functionality
 
 JSF applications are roughly divided into the following two functions:
 
--**Facelets**: a XHTML-based template engine that describes screen layouts
-
--**BackingBean**: a Java class that binds to Facelets and sets and processes values
+- **Facelets**: a XHTML-based template engine that describes screen layouts
+- **BackingBean**: a Java class that binds to Facelets and sets and processes values
 
 `Facelets` is an XHTML-based template engine that describes screen layouts, written by XHTML. XHTML conforms to the Document Type Definition (DTD) defined in W3C and is described as a file with a `xhtml` extension.
 
 `BackingBean` is a Java Class linked a JSF Page. It contains Action methods, Action Listeners, and Value Change listeners.
 In Java EE 6, Backing Beans were implemented with JSF-Managed Beans. Since Java EE 7, Context and Dependency Injection(CDI) beans are used as the implementation.
 
-## Create a JSF Page with PrimeFaces
+## Create a JSF page with PrimeFaces
 
 PrimeFaces is a third-party JSF implementation that makes it easy to create JSF web components.
 PrimeFaces is a lightweight library with one jar, zero-configuration, and no required dependencies. You just need to download PrimeFaces, add the primefaces-{version}.jar to your classpath and import the namespace to get started - `xmlns:p="http://primefaces.org/ui"`
@@ -48,9 +47,9 @@ Let's look at an example: In the below PrimeFaces page, the `p:outputLabel`,`p:i
 
 Writing the above XHTML code, the following screen will be displayed:
 
-:::image type="content" source="../media/simple-jsf-facelets-primefaces-ajax.png" alt-text="JSF Facelets Sample":::
+:::image type="content" source="../media/simple-javaserver-faces-facelets-primefaces-ajax.png" alt-text="JSF Facelets Sample":::
 
-### PrimeFaces Ajax Support
+### PrimeFaces Ajax support
 
 JSF supports Ajax applications by default. You can dynamically update a part of the screen without refreshing the screen.
 PrimeFaces makes use of the `update` attribute to make it easier to implement the Ajax support provided by JSF. You specify which component should be updated with its target ID. In the example below, the `update ="ajaxUpdateText"` attribute is added to `p:commandButton`, so the `<div id ="ajaxUpdateText">` part is updated when the button is pressed. The `id` here can be specified for any HTML component.
@@ -64,7 +63,7 @@ PrimeFaces makes use of the `update` attribute to make it easier to implement th
    value="Submit" action="#{indexcontroller.submitButtonAction()}"/>
 ```
 
-## JSF Backing Bean
+## JSF backing bean
 
 Backing beans are Java classes that implement the backend processing associated with a JSF View.
 In the next example, we'll reference a backing bean, `IndexController`, linked to the above XHTML. We'll use the `@Named` annotations to configure our JavaServer Faces applications so that it can be referenced from our JSF Facelets.
