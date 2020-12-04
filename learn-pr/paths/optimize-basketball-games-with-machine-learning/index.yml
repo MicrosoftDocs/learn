@@ -28,6 +28,8 @@ summary: |
   
   </details>
   
+    And don't forget to watch SPACE JAM: A NEW LEGACY coming Summer 2021!
+    
   In this learning path you will:
   - Use Python, Pandas, and Visual Studio Code to understand basketball stats
   - Use machine learning to cleanse and impute missing data from datasets
@@ -37,10 +39,9 @@ summary: |
   - Use GitHub Actions to deploy your app to the cloud
 
   >[!TIP]
-  > These modules are a part of a multimodal approach to learning. You can follow along with some video tutorials that are a part of the 
+  > This learning path is part of a multimodal learning experience. Start the first module to see how you can follow along!
   [Learn with Dr G Learn TV video series](https://aka.ms/LearnWithDrG/Basketball/Videos).
   
-  And don't forget to watch SPACE JAM: A NEW LEGACY coming Summer 2021!
   
 prerequisites: | 
   - [Visual Studio Code, with the Python Extension installed](https://aka.ms/LearnOnVSCode)
