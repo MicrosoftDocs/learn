@@ -2,7 +2,7 @@ Before you begin writing code that retrieves and displays metrics in an app, you
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to use the REST API to retrieve metrics.
-> If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+> If you want to complete this exercise but don't have an Azure subscription or prefer not to use your own account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 ## Create a Storage Account
 
@@ -35,7 +35,7 @@ A REST API responds to requests sent through the HTTP protocol. For this reason,
 
 1. In the Azure portal, select **Cloud Shell (&gt;_)** on the toolbar at the top of the window, and, if prompted, select the **Bash** shell option.
 
-1. To retrieve an authentication token, type the following command and then press Enter:
+1. To retrieve an authentication token, type the following command, and then press Enter:
 
     ```bash
     AUTH_HEADER="Authorization: Bearer $(az account get-access-token --query accessToken -o tsv)"
@@ -48,29 +48,32 @@ A REST API responds to requests sent through the HTTP protocol. For this reason,
     RG_NAME="<Resource Group Name>"
     SA_NAME="<Storage Account Name>"
     ```
+    > [!NOTE] 
+    > In this **curl** command, the **Subscription ID** and **Resource Group Name** are at the top of the Overvieew page.  The **Storage Account Name** is thee name of the storage account you just created / page you should be on.
 
-1. To formulate the correct URL for a query to list metrics, type the following command and then press Enter:
+
+1. To formulate the correct URL for a query to list metrics, type the following command, and then press Enter:
 
     ```bash
     LIST_METRICS_URL="https://management.azure.com/subscriptions/$SUB_ID/resourceGroups/$RG_NAME/providers/Microsoft.Storage/storageAccounts/$SA_NAME/providers/microsoft.insights/metricdefinitions?api-version=2018-01-01"
     ```
 
-1. To make a query against the REST API, type the following command and then press Enter. Examine the results and identify the available metrics:
+1. To make a query against the REST API, type the following command, and then press Enter. Examine the results and identify the available metrics:
 
     ```bash
     curl -s -H "$AUTH_HEADER" "$LIST_METRICS_URL" | jq
     ```
 
     > [!NOTE] 
-    In this **curl** command, the **-s** option suppresses the progress bar and the -H option passes the authentication token. The JSON results are piped to the **jq** tool for a more readable presentation.
+    > In this **curl** command, the **-s** option suppresses the progress bar and the -H option passes the authentication token. The JSON results are piped to the **jq** tool for a more readable presentation.
 
-1. To formulate the correct URL for a query to list metrics, type the following command and then press Enter:
+1. To formulate the correct URL for a query to list metrics, type the following command, and then press Enter:
 
     ```bash
     AVAILABILITY_URL="https://management.azure.com/subscriptions/$SUB_ID/resourceGroups/$RG_NAME/providers/Microsoft.Storage/storageAccounts/$SA_NAME/providers/microsoft.insights/metrics?metricnames=Availability&aggregation=Average&interval=PT1H&api-version=2018-01-01"
     ```
 
-1. To make a query against the REST API, type the following command and then press Enter. Examine the results and identify the available metrics:
+1. To make a query against the REST API, type the following command, and then press Enter. Examine the results and identify the available metrics:
 
     ```bash
     curl -s -H "$AUTH_HEADER" "$AVAILABILITY_URL" | jq
