@@ -115,4 +115,4 @@ Note that the results show that the 15 classifications have been created in the 
 
 In this exercise you've seen how the Azure portal can automatically classify sensitive columns in a database table for you.
 
-To finish this exercise select **End** below.
+To finish this exercise select **Done** below.
