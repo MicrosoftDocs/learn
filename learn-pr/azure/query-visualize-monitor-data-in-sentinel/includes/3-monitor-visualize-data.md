@@ -1,8 +1,8 @@
-Azure Sentinel Logs provide you access to the various logs collected from the security connectors. Azure Sentinel collects these logs from its integrated connectors and stores them in the Azure Log Analytic workspace.
+Azure Sentinel Logs provide you access to the various logs collected from the security connectors. Azure Sentinel collects these logs from its integrated connectors and stores them in the Azure Log Analytics workspace.
 
-## Log Analytic workspace
+## Log Analytics workspace
 
-The Log Analytic workspace is a repository that stores data and configuration information. You can create queries to filter important information, which you can then use to create analytics rules and detect threats.
+The Log Analytics workspace is a repository that stores data and configuration information. You can create queries to filter important information, which you can then use to create analytics rules and detect threats.
 For example, you can use Azure Sentinel Logs in Contoso to search data from multiple sources, aggregate large data sets, and perform complex operations to locate potential security threats and vulnerabilities.
 
 ## Explore the Azure Sentinel Logs page
