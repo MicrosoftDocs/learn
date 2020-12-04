@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When could SQL Auth be used for transferring Data between a dedicated SQL Pool and a serverless Apache Spark Pool using the Azure Synapse Apache Spark Pool to Synapse SQL connector?"
+    choices:
+    - content: "Always, anytime you want to transfer data between the SQL and Spark Pool."
+      isCorrect: false
+      explanation: "InCorrect. Currently, the Azure Synapse Apache Spark Pool to Synapse SQL connector does not support a token-based authentication to a dedicated SQL pool that is outside of the workspace of Synapse Analytics. In order to establish and transfer data to a dedicated SQL pool that is outside of the workspace without Azure AD, you would have to use SQL Auth."
+    - content: "Never, it is not necessary to use SQL Auth when transferring data between a SQL or Spark Pool."
+      isCorrect: false
+      explanation: "Incorrect. Currently, the Azure Synapse Apache Spark Pool to Synapse SQL connector does not support a token-based authentication to a dedicated SQL pool that is outside of the workspace of Synapse Analytics. In order to establish and transfer data to a dedicated SQL pool that is outside of the workspace without Azure AD, you would have to use SQL Auth."
+    - content: "When you need a token-based authentication to a dedicated SQL outside of the Synapse Analytics workspace."
+      isCorrect: true
+      explanation: "Correct. Currently, the Azure Synapse Apache Spark Pool to Synapse SQL connector does not support a token-based authentication to a dedicated SQL pool that is outside of the workspace of Synapse Analytics. In order to establish and transfer data to a dedicated SQL pool that is outside of the workspace without Azure AD, you would have to use SQL Auth."
+  - content: "When is it unnecessary to use import statements for transferring data between a dedicated SQL and Spark pool?"
+    choices:
+    - content: "Use the integrated notebook experience from Azure Synapse Studio."
+      isCorrect: true
+      explanation: "Correct. Import statements are not needed since they are pre-loaded in case you use the Azure Synapse Studio integrated notebook experience."
+    - content: "Use the PySpark connector."
+      isCorrect: false
+      explanation: "Incorrect. Import statements are not needed since they are pre-loaded in case you use the Azure Synapse Studio integrated notebook experience."
+    - content: "Use token-based authentication."
+      isCorrect: false
+      explanation: "Incorrect. Import statements are not needed since they are pre-loaded in case you use the Azure Synapse Studio integrated notebook experience."

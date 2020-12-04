@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which statement enables you to transform your data using Transact-SQL and materialize the query results to a data lake?"
+    choices:
+    - content: "CREATE EXTERNAL DATA SOURCE."
+      isCorrect: false
+      explanation: "Incorrect. CREATE EXTERNAL DATA SOURCE provides the connection details to the source files that you are reading."
+    - content: "CREATE EXTERNAL TABLE AS SELECT ."
+      isCorrect: true
+      explanation: "Correct. CREATE EXTERNAL TABLE AS SELECT enables you to transform your data using Transact-SQL and materialize the query results to a data lake."
+    - content: "CREATE EXTERNAL TABLE."
+      isCorrect: false
+      explanation: "Incorrect. CREATE EXTERNAL TABLE just creates the table object without selecting data into it."
+  - content: "What are the required permissions on CETAS destination location?"
+    choices:
+    - content: "READ."
+      isCorrect: false
+      explanation: "Incorrect. The READ permission do not provide the required permissions on the CETAS destination location."
+    - content: "WRITE."
+      isCorrect: true
+      explanation: "Correct. The WRITE permission is the required permissions on CETAS destination location."
+    - content: "LIST."
+      isCorrect: false
+      explanation: "Incorrect. The LIST permission does not provide the required permissions on the CETAS destination location."
+  - content: "The LOCATION argument in CETAS is used for?"
+    choices:
+    - content: "Defines the path to file."
+      isCorrect: true
+      explanation: "Correct. The LOCATION argument defines the path to file."
+    - content: "Defines the format of the file."
+      isCorrect: false
+      explanation: "Incorrect. The format argument defines the format of the file being read."
+    - content: "Defines the parser value."
+      isCorrect: false
+      explanation: "Incorrect. The parser value is not a valid argument."

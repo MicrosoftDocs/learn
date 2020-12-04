@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "True or false: The database connection string can be securely saved in the *appsettings.json* file of an ASP.NET Core web app."
+  - content: "True or false: The database connection string can be securely saved in the *appsettings.json* file of an ASP.NET Core web app in Azure?"
     choices:
     - content: "True"
       isCorrect: false

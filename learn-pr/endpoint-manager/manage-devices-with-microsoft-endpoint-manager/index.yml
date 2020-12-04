@@ -23,7 +23,7 @@ levels:
 roles:
 - administrator
 products:
-- azure
+- mem
 units:
 - learn.manage-devices-with-microsoft-endpoint-manager.1-introduction
 - learn.manage-devices-with-microsoft-endpoint-manager.2-understand-provisioning
