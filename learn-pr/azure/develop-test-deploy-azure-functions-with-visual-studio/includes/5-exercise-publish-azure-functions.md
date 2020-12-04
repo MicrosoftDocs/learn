@@ -34,7 +34,7 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
     | Property  | Value  |
     |---|---|
-    | Function App name | *<\your-function-app-name\>* |
+    | Function App name | *\<your-function-app-name\>* |
     | Publish | Code |
     | Runtime stack | .NET Core |
     | Version | 3.1 |
