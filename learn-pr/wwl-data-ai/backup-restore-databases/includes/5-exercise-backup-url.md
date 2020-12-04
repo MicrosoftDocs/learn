@@ -212,4 +212,4 @@ This task will show you how to restore a database.
 
 You have now seen that you can back up a database to a URL in Azure and, if necessary, restore it.
 
-To finish this exercise select **End** below.
+To finish this exercise select **Done** below.
