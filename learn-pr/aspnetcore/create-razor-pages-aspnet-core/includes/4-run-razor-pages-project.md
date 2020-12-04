@@ -25,7 +25,7 @@ The .NET CLI:
     * Compiles the project code.
     * Hosts the web app with ASP.NET Core's Kestrel web server.
 
-    The web app is hosted at both `http://localhost:5000` and `https://localhost:5001` by default. This module uses the secure URL beginning with `https`.
+    The web app is hosted at both `http://localhost:5000` and `https://localhost:5001`. This module uses the secure URL beginning with `https`.
 
     You can't view the app's pages in a browser, since it isn't yet hosted on a public endpoint. You'll host the app on a public endpoint in a following step.
 
