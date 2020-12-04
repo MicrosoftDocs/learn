@@ -9,6 +9,9 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 - Create a playbook to automate an action to respond to incidents.
 - Create a playbook from the Azure Sentinel repository on GitHub.
 
+> [!NOTE]
+> If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/)
+
 ### Task 1: Work with Azure Sentinel playbooks
 
 1. In the Azure portal, search for and select Azure Sentinel, and select the previously created Azure Sentinel workspace.
@@ -45,7 +48,7 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 13. On the **Actions** tab, locate and select **Alert-Get Incident (Preview)**.
 14. In the **Alert-Get Incident (Preview)** window, provide the following inputs, and then select **New Step**.
 
-> [!Tip]
+> [!TIP]
 > When you select a field, a new window opens to help you fill these fields with dynamic content. On the **Dynamic content** tab, in the search box, you can start entering **Resource group** for example, and then you can select the entry from the list, as the following screenshot displays.
 
 :::image type="content" source="../media/06-Get-Incident.PNG" alt-text="Screenshot of Get Incident." border="true":::
@@ -81,13 +84,17 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 1. In the Azure portal, in the **Search resources, services, and docs** text box, enter **virtual machines**, and then select **Enter**.
 2. On the **Virtual machines** page, locate and select the **simple-vm** virtual machine, and then on the header bar, select **Delete**.
 
-> [!Note]
-> This task creates an incident based on the analytics rule that you created earlier in the exercise setup unit. Incident creation can take up to five minutes. Wait for it to complete before proceeding to the next step.
+> [!NOTE]
+> This task creates an incident based on the analytics rule that you created earlier in the exercise setup unit. Incident creation can take up to 15 minutes. Wait for it to complete before proceeding to the next step. 
 
 ### Task 3: Assign the playbook to an existing incident
 
 1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
 2. On the **Azure Sentinel | Overview** page, on the menu bar, in the **Threat management** section, select **Incidents**.
+
+> [!NOTE]
+> Incident creration can take up to 15 minutes. Refresh the page until incident appeatr in the **Incidents** page.
+
 3. On the **Azure Sentinel | Incidents** page, select the incident that has been created based on the deletion of the virtual machine.
 4. In the details pane, select **View full details**.
 5. On the **Incident** page, in the details pane, in the **Alerts** list, select the **View playbooks** link.
@@ -96,6 +103,18 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 8. Close the **Alert** page, and then close the **Incident** page to return to the **Azure Sentinel | Incidents** page.
 9. In the **Azure Sentinel | Incidents** page, on the header bar, select **Refresh**. You will notice that the incident disappears from the pane. On the **Status** menu, select **Closed**, and then select **OK**.
 
+> [!NOTE]
+> It could take up to 5 minute for Alerts to be shown as **Closed**
+
 :::image type="content" source="../media/06-header-refresh.png" alt-text="Screenshot of the the header bar." border="true":::
 
 10. Verify that the incident displays again and notice the **Status** column to check that it is **Closed**.
+
+### Clean up the resources
+
+1. In the Azure portal, search for **Resource groups**.
+1. Select **azure-sentinel-rg**.
+1. On the header bar, select **Delete resource group**.
+1. In the **TYPE THE RESOURCE GROUP NAME:** field, enter the name of the resource group **azure-sentinel-rg** and select **Delete**. 
+
+
