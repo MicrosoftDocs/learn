@@ -210,7 +210,7 @@ az storage blob delete ^
 
 ### Use Azure PowerShell
 
-Use the [`Remove-AzStorageBlob`](https://docs.microsoft.com/powershell/module/az.storage/remove-azstorageblob) cmdlet to delete a storage blob from Azure PowerShell. By default, deletion is silent. You can add the `-Confirm` flag to prompt the user to confirm that they really want to delete the blob:
+Use the [`Remove-AzStorageBlob`](https://docs.microsoft.com/powershell/module/az.storage/remove-azstorageblob) cmdlet to delete a storage blob from Azure PowerShell. By default, deletion runs without prompts. You can add the `-Confirm` flag to prompt the user to confirm that they really want to delete the blob:
 
 ```PowerShell
 Get-AzStorageAccount `

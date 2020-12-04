@@ -8,7 +8,7 @@ Let's have a look at some of this information.
 
     ![Screenshot of Azure portal showing several resources in the all resources widget of a dashboard.](../media/5-dashboard-resources.png)
 
-1. Select the **App Service** with the name you chose it in the previous exercise.
+1. Select the **App Service** with the name you chose in the previous exercise.
 
     ![Screenshot of Azure portal showing the dashboard all resources widget with the learn-blog App Service highlighted.](../media/5-select-app-service.png)
 

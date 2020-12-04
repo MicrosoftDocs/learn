@@ -3,7 +3,7 @@ uid: learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics
 metadata:
   title: Ingest data with Apache Spark notebooks in Azure Synapse Analytics
   description: "Ingest data with Apache Spark notebooks in Azure Synapse Analytics"
-  ms.date: 11/25/2020
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ prerequisites: |
   - Data Fundamentals
   - Introduction to Azure Data Factory
   - Introduction to Azure Synapse Analytics
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/ingest-data-with-apache-spark-notebooks-in-azure-synapse-analytics.svg
 levels:
 - intermediate
 roles:
