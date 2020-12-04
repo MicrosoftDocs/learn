@@ -58,12 +58,12 @@ In this task, you'll create an analytics rule that will create an incident when 
 In this task, you'll delete a VM to test rule detection and incident creation.
 
 1. In the Azure portal, search for and select **Virtual machines**.
-2. On the Virtual machines page, select the check box beside the virtual machine labeled **simple-vm**, and then select **Delete** from the toolbar.
+2. On the **Virtual machines** page, select the check box beside the virtual machine labeled **simple-vm**, and then select **Delete** from the toolbar.
 3. On the **Delete Resources** pane, type **yes** in the **Confirm delete** field, and then select **Delete**.
 
 ## Task 3: Investigate an incident
 
-In this task, you'll investigate the incident created when you deleted the VM in Task 2. It might take up to ten minutes for the incident to display in Azure Sentinel.
+In this task, you'll investigate the incident created when you deleted the VM in Task 2. It might take up to 20 minutes for the incident to display in Azure Sentinel.
 
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Azure Sentinel workspace.
 2. On the **Azure Sentinel** blade, on the menu bar, in the **Threat management** section, select **Incidents**.
@@ -77,7 +77,7 @@ In this task, you'll investigate the incident created when you deleted the VM in
 10. On the **Investigation page**, select **Deleted VMs** in the center of the page and observe the details of the incident.
 11. On the **Investigation page**, select the entity on the graph that represents a user. Note that this is your user account, indicating that you deleted the VM.
 12. On the **Investigation page**, select **Status**, and then select **Closed**.
-13. In the **Select classification** drop-down menu, select **Benign positive - suspicious but expected**.
+13. In the **Select classification** drop-down menu, select **Benign Positive - suspicious but expected**.
 14. In the **Comment** field, enter **Testing incident creation and resolution steps**, and then select **Apply**.
 15. At the top of the page, select **Azure Sentinel** to return to the Azure Sentinel home page, and then select **Incidents** in the menu pane.
 16. on the **Incidents** page, note that **Open incidents** and **Active incidents** now have values of 0.
