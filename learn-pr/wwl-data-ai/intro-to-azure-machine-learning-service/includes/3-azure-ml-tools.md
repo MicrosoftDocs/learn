@@ -38,7 +38,7 @@ You can install the Azure Machine Learning SDK for Python by using the `pip` pac
 pip install azureml-sdk
 ```
 
-The SDK includes optional *extras* that aren't required for core operations, but can be useful in some scenarios. For example, the **notebooks** extra include widgets for displaying detailed output in Jupyter Notebooks, the **automl** extra includes packages for automated machine learning training, and the **explain** extra includes packages for generating model explanations. To install extras, specify them in brackets as shown here:
+The SDK includes optional *extras* that aren't required for core operations, but can be useful in some scenarios. For example, the **notebooks** extra include widgets for displaying detailed output in Jupyter Notebooks, the **AutoML** extra includes packages for automated machine learning training, and the **explain** extra includes packages for generating model explanations. To install extras, specify them in brackets as shown here:
 
 ```bash
 pip install azureml-sdk[notebooks,automl,explain]
