@@ -98,10 +98,18 @@ namespace PhotoSharingApp
 
 Build and run the application to verify everything works and upload your image to Azure Blob Storage. **Note:** make sure you're in the correct working directory.
 
-    ```dotnetcli
-    dotnet run
-    ```
 
+``` csharp
+    dotnet run
+```  
+::: zone-end
+
+::: zone pivot="javascript"
+```javascript
+    dotnetcli
+```
+::: zone-end
+::: zone pivot="csharp"
 ## Congratulations
 
 You have learned the essentials of working with **Azure Storage Blobs** SDK package and Azure Blob Storage.  If you want, explore further by creating another container, uploading additional images to your storage account or deleting an image.  You can learn more at the [Azure Storage Blobs client library for .NET GitHub page](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Storage.Blobs_12.7.0/sdk/storage/Azure.Storage.Blobs).
