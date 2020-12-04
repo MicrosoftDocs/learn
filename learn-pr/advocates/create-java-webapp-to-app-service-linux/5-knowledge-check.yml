@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-webapp-java-tomcat.5-knowledge-check
+uid: learn.azure.build-webapp-java-tomcat.5
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
   author: yoshioterada
   ms.author: yoterada
-  ms.date: 11/05/2020
+  ms.date: 12/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

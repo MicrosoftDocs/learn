@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-webapp-java-tomcat.6-summary
+uid: learn.azure.build-webapp-java-tomcat.6
 title: Summary
 metadata:
   title: Summary
   description: Summary and cleanup of Azure resources.
   author: yoshioterada
   ms.author: yoterada
-  ms.date: 11/05/2020
+  ms.date: 12/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.build-webapp-java-tomcat
 metadata:
-  title: Deploy Java Web Application to Azure
-  description: You'll learn how to create a Java web application and deploy it to Azure App Services.
-  ms.date: 11/02/2020
+  title: Deploy a Java web app to Azure
+  description: You'll learn how to create a Java web application and deploy it to Azure App Service.
+  ms.date: 12/04/2020
   author: yoshioterada
   ms.author: yoterada
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploy Java Web Application to Azure
+title: Deploy a Java web app to Azure
 summary: In this module, you'll look at practices to create and deploy a Java Web Application on Azure App Service.
 abstract: |
   After completing this module, you can:
@@ -27,12 +27,12 @@ prerequisites: |
   - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada) installed on your computer
   - [JDK 8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) and [Tomcat 9.0.x](https://tomcat.apache.org/download-90.cgi) installed on your computer
 units:
-  - learn.azure.build-webapp-java-tomcat.1-introduction
-  - learn.azure.build-webapp-java-tomcat.2-jsf-explanation
-  - learn.azure.build-webapp-java-tomcat.3-exercise-create-jsf-app
-  - learn.azure.build-webapp-java-tomcat.4-exercise-deploy-to-app-service
-  - learn.azure.build-webapp-java-tomcat.5-knowledge-check
-  - learn.azure.build-webapp-java-tomcat.6-summary
+  - learn.azure.build-webapp-java-tomcat.1
+  - learn.azure.build-webapp-java-tomcat.2
+  - learn.azure.build-webapp-java-tomcat.3
+  - learn.azure.build-webapp-java-tomcat.4
+  - learn.azure.build-webapp-java-tomcat.5
+  - learn.azure.build-webapp-java-tomcat.6
 
 badge:
   uid: learn.azure.build-webapp-java-tomcat.badge
