@@ -34,7 +34,7 @@ units:
   - learn.azure.extend-resource-manager-template-deployment-scripts.2-explore-deployment-scripts
   - learn.azure.extend-resource-manager-template-deployment-scripts.3-exercise-add-deployment-script
   - learn.azure.extend-resource-manager-template-deployment-scripts.4-parameterize-deployment-scripts
-  - learn.extend-azure-resource-manager-template-with-deployment-scripts.5-exercise-parameterize-deployment-script
+  - learn.extend-azure-resource-manager-template-deployment-scripts.5-exercise-parameterize-deployment-script
   - learn.azure.extend-resource-manager-template-deployment-scripts.6-knowledge-check-deployment-scripts
   - learn.azure.extend-resource-manager-template-deployment-scripts.7-summary
 badge:
