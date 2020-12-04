@@ -7,10 +7,18 @@ In this unit, you'll configure Terraform to provision your Database and Spring B
 In this module, we'll be checking out an existing project that contains all the code for our Terraform provisioning.
 Lets first get it running locally.
 
+Log-in to Github an Fork the following repository:
+
+```html
+https://github.com/MicrosoftDocs/mslearn-java-petclinic-simplified
+```
+
+Checkout your forked repository:
+
 ```bash
 mkdir source-code
 cd source-code
-git clone https://github.com/MicrosoftDocs/mslearn-java-petclinic-simplified
+git clone https://github.com/<your github username>/mslearn-java-petclinic-simplified
 cd mslearn-java-petclinic-simplified
 ```
 

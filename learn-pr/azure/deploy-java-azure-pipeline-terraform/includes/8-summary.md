@@ -8,7 +8,7 @@ Your company wanted to learn how they could provision their existing Spring Boot
 
 1. Once you verified that your resources were provisioned, you added the Maven Plugin for Azure App Service to your project and configured it interactively.
 
-1. Configured your web application to use GitHub actions to deploy it on demand.
+1. Configured your GIT repository to use GitHub actions to provision its resources on demand.
 
 You're confident that you can recommend Terraform to provision your Spring Boot Java applications to Azure.
 
