@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.use-docker-container-dev-env-vs-code.6-customize-settings
+title: Customize project and editor settings 
+metadata:
+  title: Customize project and editor settings 
+  description: Learn how to customize settings for your project and editor through the devcontainer.json file.
+  ms.date: 11/13/2020
+  author: bamurtaugh
+  ms.author: brmurtau
+  ms.topic: interactive-tutorial
+  ms.prod: learning
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-customize-settings.md)]

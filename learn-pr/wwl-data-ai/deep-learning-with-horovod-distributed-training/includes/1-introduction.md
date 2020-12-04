@@ -6,7 +6,7 @@ Imagine that you work as a data scientist for a large online retail store. You h
 
 In this module, you'll:
 
-* Learn how you can use Azure Databricks and Horovod to run long-running, distributed deep learning training jobs on Spark
+* Learn how you can use Azure Databricks and how to run long-running, distributed deep learning training jobs on Spark
 * Use Petastorm to enable training and evaluation of deep learning models from datasets in Apache Parquet format
 
 ## Prerequisites

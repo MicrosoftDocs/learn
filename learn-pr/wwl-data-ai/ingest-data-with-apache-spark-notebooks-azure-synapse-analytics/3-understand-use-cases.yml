@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.understand-use-cases-for
+title: Understand the use-cases for  spark notebooks
+metadata:
+  title: Understand the use-cases for  spark notebooks
+  description: "Understand the use-cases for  spark notebooks"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-understand-use-cases.md)]

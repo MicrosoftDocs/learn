@@ -51,23 +51,23 @@ In Azure Cosmos DB, a *container* holds arbitrary user-generated entities. Insid
 
 Let's use the Data Explorer tool in the Azure portal to create a database and collection.
 
-1. Select **Data Explorer** from the left hand side menue, and then **New Container**.
+1. From the left-hand side menu, select **Data Explorer**, and then select **New Container**.
 
     >[!TIP]
-    >The **Add Container** area is displayed on the far right. You may need to scroll right to see it.
+    >The **Add Container** area appears on the far right. To see it, you may need to scroll right.
 
     | Property | Suggested value | Description |
     |---|---|---|
     | **Database ID** | _func-io-learn-db_ | Database names must contain from 1 through 255 characters, and they cannot contain /, \\, #, ?, or a trailing space.<br><br>You are free to enter whatever you want here, but we suggest _func-io-learn-db_ as the name for the new database, and that's what we'll refer to in this unit. |
     | **Container ID** | _Bookmarks_ | Enter _Bookmarks_ as the name for our new collection. Container IDs have the same character requirements as database names. |
-    | **Partition key** | _/id_ | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. We will use the `id` field as a convenience, as we are not concerned with database performance in this module. If you would like to learn more about Azure Cosmos DB partition key strategies, please explore the Microsoft Learn Azure Cosmos DB modules. |
+    | **Partition key** | _/id_ | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. You will use the `id` field as a convenience, as you are not concerned with database performance in this module. If you would like to learn more about Azure Cosmos DB partition key strategies, explore the Microsoft Learn Azure Cosmos DB modules. |
     | **Throughput** | _1000 RU_ |Change the throughput to 1000 request units per second (RU/s). If you want to reduce latency, you can scale up the performance later. |
 
-1. Select **OK**. The Data Explorer displays the new database and container. Inside the database, we've defined a container. Next, we'll add some data, also known as items.
+1. Select **OK**. The Data Explorer displays the new database and container. Inside the database, you've defined a container. Next, you'll add some data, also known as items.
 
 ### Add test data
 
-We've defined a container in our database called **Bookmarks**. We want to store a URL and ID in each item, like a list of web page bookmarks.
+You've defined a container in our database called **Bookmarks**. You want to store a URL and ID in each item, like a list of web page bookmarks.
 
 You'll add data to the new container using Data Explorer.
 
@@ -94,7 +94,7 @@ You'll add data to the new container using Data Explorer.
     | `_attachments` | The addressable path for the attachments resource. |
     | `_ts` | The time stamp of the last update of this resource. |
 
-1. Let's add a few more items into the container by clicking **New Item** at the top. Create four more items with the following content. Remember to save your work.
+1. To add a few more items into the container, at the top, select **New Item**. Create four more items with the following content. Remember to save your work.
 
     ```json
     {
@@ -124,42 +124,40 @@ You'll add data to the new container using Data Explorer.
     }
     ```
 
-1. When you've finished, your container should look like the following:
+1. When you've finished, your container should look like the following.
 
     :::image type="content" source="../media/5-db-bookmark-coll.PNG" alt-text="Screenshot of the SQL API UI in the portal, showing the list of entries you added to your bookmarks container.":::
 
-You now have a few entries in your **Bookmarks** container. Our scenario will work as follows. If a request arrives with, for example, "id=docs", you'll look up that ID in your bookmarks container and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in this container.
+You now have a few entries in your **Bookmarks** container. Your scenario will work as follows. If a request arrives with, for example, "id=docs", you'll look up that ID in your bookmarks container, and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in this container.
 
 ## Create your function
 
 ::: zone pivot="javascript"
 
-1. Navigate to the function app that you created in the preceding unit. Click **Home > (in recent) <name>Fuction App**.
+1. Navigate to the function app that you created in the preceding unit. Select **Home > (in recent) <name>Function App**.
 
-1. Click **Fuctions** on the left side menue.
+1. On the left-hand side menu, select **Functions**.
 
-1. Select the **Add** (**+**) button next to **Functions** to start the function creation process. The page displays the complete set of supported triggers.
+1. To start the function creation process, select the **Add** (**+**) button next to **Functions**. The page displays the complete set of supported triggers.
 
-1. Select **HTTP trigger**
+1. Select **HTTP trigger**.
 
-
-1. Select **Create** to create your function. This action opens the *index.js* file in the code editor and displays a default implementation of the HTTP-triggered function.
+1. To create your function, select **Create**. This action opens the *index.js* file in the code editor, and displays a default implementation of the HTTP-triggered function.
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. Navigate to the function app that you created in the preceding unit. Click **Home > (in recent) <name>Fuction App**.
+1. Navigate to the function app that you created in the preceding unit. Select **Home > (in recent) <name>Function App**.
 	
-1. Click **Fuctions** on the left side menue.
+1. On the left-hand side menu, select **Functions**.
 
-1. Select the **Add** (**+**) button at the top to start the function creation process. 
+1. To start the function creation process, at the top, select **Add** (**+**). 
    The page displays the complete set of supported triggers.
 
-1. Select **HTTP trigger**
+1. Select **HTTP trigger**.
 
-
-1. Select **Create** to create your function. This action opens the *run.ps1* file in the code editor and displays a default implementation of the HTTP-triggered function.
+1. To create your function, select **Create**. This action opens the *run.ps1* file in the code editor, and displays a default implementation of the HTTP-triggered function.
 
 ::: zone-end
 
@@ -167,9 +165,9 @@ You now have a few entries in your **Bookmarks** container. Our scenario will wo
 
 You can verify what we have done so far by testing our new function as follows:
 
-1. In your new function, click **Get function URL** at the top right, select **default (Function key)**, and then click **Copy**.
+1. In your new function, at the top right, select **Get function URL**, then select **default (Function key)**, and then select **Copy**.
 
-1. Paste the function URL you copied into your browser's address bar. Add the query string value `&name=<your fuction name>` to the end of the URL and press **Enter** to execute the request. You should get a response from the Azure Function right in the browser.
+1. Paste the function URL you copied into your browser's address bar. Add the query string value `&name=<your function name>` to the end of the URL, and to execute the request, press **Enter**. You should get a response from the Azure Function in the browser.
 
 Now that we have our bare-bones function working, let's turn our attention to reading data from our Azure Cosmos DB, or in our scenario, our **Bookmarks** container.
 
@@ -177,18 +175,18 @@ Now that we have our bare-bones function working, let's turn our attention to re
 
 To read data from the database, you need to define an input binding. As you'll see, you can configure a binding that can talk to your database in just a few steps.
 
-1. Select **Integrate** in the left pane to open the integration tab. The template you used created an HTTP trigger and an HTTP output binding. Now add your new Azure Cosmos DB input binding.
+1. To open the **Integration** tab, in the left pane, select **Integrate**. The template you used created an HTTP trigger and an HTTP output binding. Now add your new Azure Cosmos DB input binding.
 
-1. Select **+Add Input**. A list of all possible input binding types is displayed in the drop down menue on the right.
+1. Select **+Add Input**. A list of all possible input binding types appears in the dropdown on the right.
 
-1. In the list, select **Azure Cosmos DB**, and then select **New** under the Cosmos DB account connection. This action opens the Azure Cosmos DB input configuration page. Next, you'll set up a connection to your database.
+1. In the list, select **Azure Cosmos DB**, and under the Cosmos DB account connections, select **New**. This action opens the Azure Cosmos DB input configuration page. Next, you'll set up a connection to your database.
 
-1. If the following message appears in the **Azure Cosmos DB input** configuration UI telling you that you must install an extension, select **Install**. 
+1. If the following message appears in the **Azure Cosmos DB input** configuration user interface informing that you must install an extension, select **Install**.
 
     ![Screenshot of error message that the integration requires the Microsoft.Azure.WebJobs.Extensions.CosmosDB extension to be installed.](../media/extension-not-installed.png)
 
     > [!NOTE]
-    > It can take a while to install an extension, so please wait for installation to complete before proceeding to the next step.
+    > It can take a while to install an extension, so before proceeding to the next step, wait for installation to complete.
 
 1. Next to the **Azure Cosmos DB account connection** box, select **new**. This action opens the **Connection** window, where you will enter the settings for the new connection.
 
@@ -198,12 +196,12 @@ To read data from the database, you need to define an input binding. As you'll s
     | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use for this Azure Cosmos DB account. |
     | **Database account** | Cosmos DB account | Select the **Account Name** that you specified when you created your Azure Cosmos DB account. |
 
-1. Select **Select** to create your connection.
+1. To create your connection, select **Select**.
 
     A new connection to the database is configured and is shown in the **Azure Cosmos DB account connection** field.
 
     > [!NOTE]
-    > If you're curious about the connection endpoint, click *show value* to reveal the connection string.
+    > If you're curious about the connection endpoint, to reveal the connection string, select *show value*.
 
     You want to look up a bookmark with a specific ID, so let's tie an ID that we receive in the query string to the binding.
 
@@ -211,17 +209,17 @@ To read data from the database, you need to define an input binding. As you'll s
 
     This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Since IDs are unique in our collection, the binding will return either 0 (not found) or 1 (found) documents.
 
-1. Carefully fill out the remaining fields on this page using the values in the following table. At any time, you can click on the information icon to the right of each field name to learn more about the purpose of each field.
+1. Carefully fill out the remaining fields on this page using the values in the following table. At any time, to learn more about the purpose of each field, you can select the information icon to the right of each field name.
 
     | Property | Suggested value | Description |
     |---|---|---|
     | **Document parameter name** | _bookmark_ | The name used to identify this binding in your code. |
     | **Database name** | _func-io-learn-db_ | The database to work with. This value is the database name we set earlier in this lesson. |
     | **Collection Name** | _Bookmarks_ | The collection from which we'll read data. This setting was defined earlier in the lesson. |
-    | **SQL Query (optional)** | Leave blank | We are only retrieving one document at a time based on the ID. So, filtering with the Document ID field is a better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = {id}`). That query would indeed return a document, but it would return it in a document collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
-    | **Partition key (optional)** | _{id}_ | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB collection earlier. The key entered here (specified in input binding format `{<key>}`) must match the one in the collection. |
+    | **SQL Query (optional)** | Leave blank | You are only retrieving one document at a time based on the ID. So, filtering with the Document ID field is a better than using a SQL Query in this instance. You could craft a SQL Query to return one entry (`SELECT * from b where b.ID = {id}`). That query would indeed return a document, but it would return it in a document collection. Your code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
+    | **Partition key (optional)** | _{id}_ | Add the partition key that you defined when you created the _Bookmarks_ Azure Cosmos DB collection earlier. The key entered here (specified in input binding format `{<key>}`) must match the one in the collection. |
 
-9. Select **OK** to save all changes to this binding configuration.
+9. To save all changes to this binding configuration, select **OK**.
 
 Now that you have your binding defined, it's time to use it in your function.
 
@@ -229,9 +227,9 @@ Now that you have your binding defined, it's time to use it in your function.
 
 ::: zone pivot="javascript"
 
-1. Select your function by clicking on **Integration**, Under **Fuction** you should see your **HTTPTrigger**, select it. At the top click **Test/Run**.
+1. To select your function, select **Integration**. Under **Function**, you should see your **HTTPTrigger**. Select it. At the top, select **Test/Run**.
 
-1. Replace all code in **Body** with the code from the following snippet and hit **Save**.
+1. Replace all code in **Body** with the code from the following snippet, and select **Save**.
 
    [!code-javascript[](../code/find-bookmark-single.js)]
 
@@ -239,9 +237,9 @@ Now that you have your binding defined, it's time to use it in your function.
 
 ::: zone pivot="powershell"
 
-1. Select your function by clicking on **Integration**, Under **Fuction** you should see your **HTTPTrigger**, select it. At the top click **Test/Run**.
+1. To select your function, select **Integration**. Under **Function**, you should see your **HTTPTrigger**. Select it. At the top, select **Test/Run**.
 
-1. Replace all code in **Body** with the code from the following snippet and hit **Save**.
+1. Replace all code in **Body** with the code from the following snippet, and select **Save**.
 
     ```powershell
     using namespace System.Net
@@ -267,19 +265,19 @@ Now that you have your binding defined, it's time to use it in your function.
 
 ::: zone-end
 
-An incoming HTTP request triggers the function, and an `id` query parameter is passed to the Azure Cosmos DB input binding. If the database finds a document that matches this ID, then the `bookmark` parameter will be set to the located document. In that case, we construct a response that contains the URL value found in the bookmarked document. If no document is found matching this key, we would respond with a payload and status code that tells the user the bad news.
+An incoming HTTP request triggers the function, and an `id` query parameter is passed to the Azure Cosmos DB input binding. If the database finds a document that matches this ID, the `bookmark` parameter will be set to the located document. In that case, you construct a response that contains the URL value found in the bookmarked document. If no document is found matching this key, you would respond with a payload and status code that tells the user the bad news.
 
 ## Try it out
 
-1. Select **Get function URL** at the top right, select **default (Function key)**, and then select **Copy** to copy the function's URL.
+1. At the top right, select **Get function URL**, then select **default (Function key)**, and to copy the function's URL, select **Copy**.
 
-2. Paste the function URL you copied into your browser's address bar. Add the query string value `&id=docs` to the end of this URL and press the `Enter` key on your keyboard to execute the request. You should see a response that includes a URL to that resource.
+2. Paste the function URL you copied into your browser's address bar. Add the query string value `&id=docs` to the end of this URL, and to execute the request, press `Enter`. You should see a response that includes a URL to that resource.
 
 3. Replace `&id=docs` with `&id=missing`, and observe the response.
 
     >[!TIP]
     >You can also test the function using the **Test** tab in the function portal UI. You can add a query parameter or supply a request body to get the same results as described in the preceding steps.
 
-In this unit, we created our first input binding manually to read from an Azure Cosmos DB database. The amount of code we wrote to search our database and read data was minimal, thanks to bindings. We did most of our work configuring the binding declaratively, and the platform took care of the rest.
+In this unit, you created your first input binding manually to read from an Azure Cosmos DB database. The amount of code you wrote to search our database and read data was minimal, thanks to bindings. You did most of our work configuring the binding declaratively, and the platform took care of the rest.
 
-In the next unit, we'll add more data to our bookmarks collection through an Azure Cosmos DB output binding.
+In the next unit, you'll add more data to our bookmarks collection through an Azure Cosmos DB output binding.
