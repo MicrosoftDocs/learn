@@ -1,6 +1,6 @@
 Azure Sentinel provides several templates that are ready for use. You can use these templates to create your own workbook and then modify them as needed for Contoso.
 
-## Azure Sentinel workbooks
+## Azure Sentinel Workbooks
 
 Most of the data connectors Azure Sentinel uses to ingest data come with their own workbooks. You can get better insight into the data that is being ingested by using tables and visualizations, including bar and pie charts. You can also make your own workbooks from the beginning instead of using the predefined templates.
 
