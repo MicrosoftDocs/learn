@@ -133,4 +133,4 @@ As a database administrator, you'll set up a new Azure Database for PostgreSQL f
 
 You've now seen how easy it is to create a hosted version of PostgreSQL on Azure.
 
-To finish this exercise select End below.
+To finish this exercise select **Done** below.
