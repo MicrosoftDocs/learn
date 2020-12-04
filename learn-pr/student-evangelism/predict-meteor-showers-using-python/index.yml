@@ -15,6 +15,10 @@ abstract:  |
   - The basics of meteor showers: what they are and why we see them.
   - How to choose and collect appropriate data.
   - Strategies to cleanse and manipulate your data.
+
+  >[!TIP]
+  > This learning path is part of a multimodal learning experience. Start the first module to see how you can follow along!
+
 prerequisites: |
   - [Visual Studio Code, with the Python extension](https://code.visualstudio.com/learntocode/?utm_source=MSLearn&utm_medium=direct&utm_campaign=PartnerLessons?azure-portal=true)
   - A local Python environment set up, as seen in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)

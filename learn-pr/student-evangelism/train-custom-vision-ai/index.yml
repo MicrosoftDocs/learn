@@ -16,6 +16,10 @@ abstract:  |
   - Train a Custom Vision AI model on a particular animal.
   - Test the model you trained.
   - Ensure ethical practices throughout AI development.
+
+  >[!TIP]
+  > This learning path is part of a multimodal learning experience. Start the first module to see how you can follow along!
+
 prerequisites: | 
   None
 iconUrl: /learn/achievements/student-evangelism/train-custom-vision-ai.svg

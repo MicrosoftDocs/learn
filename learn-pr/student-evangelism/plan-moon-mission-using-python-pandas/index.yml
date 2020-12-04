@@ -17,6 +17,9 @@ abstract:  |
     - Use data cleansing techniques to get a clear representation of data.
     - Hypothesize how much rock sample astronauts might bring back on the Artemis missions.
 
+  >[!TIP]
+  > This learning path is part of a multimodal learning experience. Start the first module to see how you can follow along!
+
 prerequisites: |
     - [Visual Studio Code, with the Python extension](https://code.visualstudio.com/learntocode/?utm_source=MSLearn&utm_medium=direct&utm_campaign=PartnerLessons?azure-portal=true)
     - A local Python environment set up, as seen in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)
