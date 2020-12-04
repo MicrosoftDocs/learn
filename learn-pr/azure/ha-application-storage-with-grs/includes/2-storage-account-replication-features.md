@@ -66,11 +66,11 @@ A new feature currently in preview allows you to start a failover between primar
 
 After the failover and DNS endpoint updates are complete, the storage account is set back to LRS. You're responsible for reverting the replication settings from LRS to RA-GRS or GRS after the primary region becomes available again.
 
-### What is geo-zone-redundant storage?
+### What is geo-zone-redundant storage (GZRS)?
 
 Geo-zone-redundant storage (GZRS) combines the high availability benefits of ZRS with GRS. With this replication type, your data is copied across three availability zones in one region. Data is also replicated three times to another secondary region that's paired with it. This way, your zone-redundant data is also secure from regional level outage.
 
-### What is read-access geo-zone-redundant storage
+### What is read-access geo-zone-redundant storage (RA-GZRS)?
 
 Read-access geo-zone-redundant storage (RA-GZRS) uses the same replication method as GZRS but lets you read from the secondary region. If you want to read the data that's replicated to the secondary region, even if your primary isn't experiencing downtime, use RA-GZRS for your replication type.
 
