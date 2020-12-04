@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-data-loading-best-practices-azure-synapse-analytics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "How does splitting source files help maintain good performance when loading into Synapse Analytics?"
+    choices:
+    - content: "optimized processing of smaller file sizes."
+      isCorrect: false
+      explanation: "Incorrect. SQL Pools can process large files more efficiently than smaller ones."
+    - content: "Compute node to storage segment alignment."
+      isCorrect: true
+      explanation: "Correct. SQL Pools have 60 storage segments. Compute can also scale to 60 nodes and so optimizing for alignment of these 2 resources can dramatically decrease load times."
+    - content: "Reduced possibility of data corruptions."
+      isCorrect: false
+      explanation: "Incorrect. Data corruptions have an impact on success, not speed. Splitting files should affect probability of corruptions."
+  - content: "Which Workload Management capability manages minimum and maximum resource allocations during peak periods?"
+    choices:
+    - content: "Workload Isolation."
+      isCorrect: true
+      explanation: "Correct. Workload Isolation assigns maximum and minimum usage values for varying resources under load. These adjustments can be done live without having to take the SQL Pool offline."
+    - content: "Workload Importance."
+      isCorrect: false
+      explanation: "Incorrect. Workload Importance allows higher priority queries to receive resources immediately regardless of queue length."
+    - content: "Workload Containment."
+      isCorrect: false
+      explanation: "Incorrect. Workload Containment refers to limiting the amount of resources a workload group can consume."
+  - content: "Which T-SQL Statement loads data directly from Azure Storage?"
+    choices:
+    - content: "LOAD DATA."
+      isCorrect: false
+      explanation: "Incorrect. LOAD DATA is a databricks command that loads data into a Hive table from a directory or file."
+    - content: "COPY."
+      isCorrect: true
+      explanation: "Correct. The T-SQL COPY Statement reads data from Azure Blob Storage or the Azure Data Lake and inserts it into a table within the SQL Pool."
+    - content: "INSERT FROM FILE."
+      isCorrect: false
+      explanation: "Incorrect. Insert from file is not a valid T-SQL Statement."

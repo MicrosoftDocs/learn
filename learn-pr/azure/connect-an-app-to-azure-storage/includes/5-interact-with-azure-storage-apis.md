@@ -75,7 +75,6 @@ Client libraries can save a significant amount of work for app developers becaus
     :::column:::  
     Microsoft has Azure client libraries that support a number of languages and frameworks, including:
     - .NET
-    - Linux
     - Java
     - Python
     - Node.js
@@ -89,28 +88,26 @@ Client libraries can save a significant amount of work for app developers becaus
 For example, to retrieve the same list of blobs in C#, we could use the following code snippet:
 
 ```csharp
-CloudBlobDirectory directory = ...;
-foreach (IEnumerable<IListBlobItem> blob in directory.ListBlobs(
-                useFlatBlobListing: true,
-                blobListingDetails: BlobListingDetails.All))
+string containerName = "...";
+BlobContainerClient container = new BlobContainerClient(connectionString, containerName);
+
+var blobs = container.GetBlobs();
+foreach (var blob in blobs)
 {
-    // Work with blob item .. could be page blob, block blob, etc.
+    Console.WriteLine($"{blob.Name} --> Created On: {blob.Properties.CreatedOn:YYYY-MM-dd HH:mm:ss}  Size: {blob.Properties.ContentLength}");
 }
 ```
 
 Or in JavaScript:
 
 ```javascript
-const containerName = "...";
-const blobService = storage.createBlobService();
+const containerName = '...';
+const containerClient = blobServiceClient.getContainerClient(containerName);
 
-blobService.listBlobsSegmented(containerName, null, function (error, results) {
-    if (results) {
-        for (var i = 0, blob; blob = results.entries[i]; i++) {
-            // Work with blob item .. could be page blob, block blob, etc.
-        }
-    }
-});
+let blobs = containerClient.listBlobsFlat();
+for await (const blob of blobs) {
+  console.log(`${blob.name} --> Created: ${blob.properties.createdOn}   Size: ${blob.properties.contentLength}`);
+}
 ```
 
 > [!NOTE]

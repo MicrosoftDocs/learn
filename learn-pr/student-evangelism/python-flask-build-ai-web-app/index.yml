@@ -11,16 +11,14 @@ metadata:
 title: Build an AI web app by using Python and Flask
 summary: Use Python, Flask, and Azure Cognitive Services to build a web app that incorporates AI
 abstract: | 
-  In this module, you will:
-  - Learn how to set up a development environment for Flask and Python
-  - Learn how to build and test a Flask website locally
-  - Learn how to use Azure Cognitive Services to extract text from images
-  - Learn how to use Azure Cognitive Services to translate text
-  - Learn how to deploy a Flask website to Azure
+  In this module, you'll build a website using Flask and Cognitive Services to translate text.
+
+  - Learn how to set up a Flask development environment
+  - Learn how to use Flask to build a form
+  - Learn how to use the Translator service to translate text
 prerequisites: |
-  - [Python 3.6 or later and VS code installed on your computer](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true)
-  - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?azure-portal=true)
-  - [git](https://github.com/git-guides/install-git?azure-portal=true)
+  - Python 3.6 or later and VS code installed on your computer. Follow the steps in the [Install Python 3](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3) module. At the top of the article, choose the instructions for your configuration: Windows, Linux, or macOS.
+  - [Visual Studio Code](https://code.visualstudio.com)
 iconUrl: /learn/achievements/student-evangelism/python-flask-build-ai-web-app-badge.svg
 levels:
 - intermediate
