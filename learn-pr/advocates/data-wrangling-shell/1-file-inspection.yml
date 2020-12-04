@@ -11,4 +11,4 @@ metadata:
 title: Perform file inspection in the Unix Shell
 durationInMinutes: 4
 content: |
-  [!include[](includes/1-unit.md)]
+  [!include[](includes/1-file-inspection.md)]
