@@ -12,28 +12,31 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "What service allows developers to scaffold out the structure of a Spring boot application?"
+  - content: "Which of the following Terraform commands will initialize your directory to be used for Terraform?"
     choices:
-    - content: "Maven"
+    - content: "plan"
       isCorrect: false
-      explanation: "Maven is a build tool that allows you to configure dependencies and deploy your applications."
-    - content: "Spring Initializr"
+      explanation: "The plan command is used to create an execution plan."
+    - content: "apply"
+      isCorrect: false
+      explanation: "The apply command is used to apply the changes required to reach the wanted state."
+    - content: "destroy"
+      isCorrect: false
+      explanation: "The destroy command is used to destroy the Terraform-managed infrastructure."
+    - content: "None of the Above"
       isCorrect: true
-      explanation: "Correct. The Spring Initializr is a web application that generates a Spring Boot project structure for you."
-    - content: "Azure Command Line Interface (Cli)"
-      isCorrect: false
-      explanation: "Azure CLI is a command-line interface used to create and manage Azure resources."
-  - content: 'Which of the following Java Class types provides generic CRUD methods to manage JPA Objects?'
+      explanation: "The init command is used to initialize a working directory containing Terraform configuration files."      
+  - content: 'What is the recommended way to restrict access to Azure resources?'
     choices:
-    - content: Repository
+    - content: Service Principal
       isCorrect: true
-      explanation: "By extending JpaRepository, we get a bunch of generic CRUD methods allowing for management of JPA Objects."
-    - content: Controller
+      explanation: "An Azure service principal is an identity created for use with applications, hosted services, and automated tools to access Azure resources."
+    - content: GitHub Secrets
       isCorrect: false
-      explanation: "A Controller publishes REST interfaces to store and retrieve data via HTTP."
-    - content: Entity
+      explanation: Secrets are encrypted environment variables that you create in a repository or organization
+    - content: Plain Text Passwords
       isCorrect: false
-      explanation: "A JPA Entity object maps Java Classes to Database Tables."
+      explanation: "A Password is an insecure mechanism."
   - content: "Which Maven command will create your Azure App Service instance in Azure?"
     choices:
     - content: "config"
