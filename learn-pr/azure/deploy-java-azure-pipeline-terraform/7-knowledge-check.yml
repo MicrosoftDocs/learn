@@ -37,14 +37,14 @@ quiz:
     - content: Plain Text Passwords
       isCorrect: false
       explanation: "A Password is an insecure mechanism."
-  - content: "Which Maven command will create your Azure App Service instance in Azure?"
+  - content: "Which of the following options aren't valid GitHub Actions Types?"
     choices:
-    - content: "config"
-      isCorrect: false
-      explanation: "This command will set up your projects configuration with a subscription, Java Version, and operating system you specify."
-    - content: "deploy"
+    - content: "JavaScript"
       isCorrect: true
-      explanation: "This command creates your instance and copies your application and starts it."
-    - content: "package"
+      explanation: "JavaScript actions can run directly on a runner machine, and separate the action code from the environment used to run the code."
+    - content: "Container"
+      isCorrect: true
+      explanation: "Docker containers package the environment with the GitHub Actions code."
+    - content: "Kubernetes"
       isCorrect: false
-      explanation: "This command bundles your application into an executable JAR file."
+      explanation: "This action isn't a valid GitHub Action Type."
