@@ -9,26 +9,25 @@ metadata:
   ms.author: shanama 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Use basketball stats to optimize game play with Visual Studio Code, inspired by SPACE JAM: A NEW LEGACY"
+title: "Use basketball stats to optimize game play with Visual Studio Code, inspired by _Space Jam: A New Legacy_"
 summary: | 
-  Inspired by the new film SPACE JAM: A NEW LEGACY, this learning path shows basketball fans how an understanding of data science and coding can support their passions, create opportunities, and even open doors to possible careers. Develop skills in Visual Studio Code, Azure, GitHub, JavaScript, and Python, to gain insights into how individual moments throughout a player's history can lead to a critical game decision in the finals. 
+  Inspired by the new film _Space Jam: A New Legacy_, this learning path shows basketball fans how an understanding of data science and coding can support their passions, create opportunities, and even open doors to possible careers. Develop skills in Visual Studio Code, Azure, GitHub, JavaScript, and Python, to gain insights into how individual moments throughout a player's history can lead to a critical game decision in the finals. 
 
-  **Welcome to the Jam!** In SPACE JAM: A NEW LEGACY, NBA champion and cultural icon LeBron James goes on an epic adventure alongside timeless Tune Bugs Bunny. This transformational journey is a manic mashup of two worlds that shows just how far some parents will go to connect with their kids. 
+  _**Welcome to the Jam!** In SPACE JAM: A NEW LEGACY, NBA champion and cultural icon LeBron James goes on an epic adventure alongside timeless Tune Bugs Bunny. This transformational journey is a manic mashup of two worlds that shows just how far some parents will go to connect with their kids._ 
   
   <details>
   <summary>
-  <i>Expand to see more about the film.</i>
+  Expand to see more about the film.
   </summary>
   <br />
   
-  The animated/live-action event "Space Jam: A New Legacy" comes from director Malcolm D. Lee and an innovative filmmaking team, including Ryan Coogler and Maverick Carter. 
+  _The animated/live-action event "Space Jam: A New Legacy" comes from director Malcolm D. Lee and an innovative filmmaking team, including Ryan Coogler and Maverick Carter._ 
   
-  When LeBron and his young son Dom are trapped in a digital space by a rogue A.I., LeBron must get them home safe. He leads Bugs, Lola Bunny, and the whole gang of notoriously undisciplined Looney Tunes to victory over the A.I.'s digitized champions on the court: a powered-up roster of NBA and WNBA stars as you've never seen 
-  them before. It's Tunes versus Goons in the highest-stakes challenge of LeBron's life - one that will redefine LeBron's bond with his son and shine a light on the power of being yourself. The ready-for-action Tunes destroy convention, supercharge their unique talents, and surprise even "King" James by playing the game their own way. 
+  _When LeBron and his young son Dom are trapped in a digital space by a rogue A.I., LeBron must get them home safe. He leads Bugs, Lola Bunny, and the whole gang of notoriously undisciplined Looney Tunes to victory over the A.I.'s digitized champions on the court: a powered-up roster of NBA and WNBA stars as you've never seen them before. It's Tunes versus Goons in the highest-stakes challenge of LeBron's life - one that will redefine LeBron's bond with his son and shine a light on the power of being yourself. The ready-for-action Tunes destroy convention, supercharge their unique talents, and surprise even "King" James by playing the game their own way._
   
   </details>
   
-    And don't forget to watch SPACE JAM: A NEW LEGACY coming Summer 2021!
+  And don't forget to watch _Space Jam: A New Legacy_ coming Summer 2021!
     
   In this learning path you will:
   - Use Python, Pandas, and Visual Studio Code to understand basketball stats
