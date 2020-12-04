@@ -209,4 +209,4 @@ Next you will schedule the runbook to execute on a regular basis.
 
 By completing this exercise you've automated the defragging of indexes on a SQL server database, every day, at 4am.
 
-To finish this exercise select **End** below.
+To finish this exercise select **Done** below.
