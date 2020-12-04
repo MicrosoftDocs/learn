@@ -8,9 +8,11 @@ In this module, you've set up a working environment for web development. You've 
 - Added JavaScript to enable custom interaction with the page and switching between themes.
 - Learned how to create a console message.
 
-We're gathering tools and building a foundation. It can be challenging to get started, but it will be easier next time. Remember you can reuse your website as a template for future projects. As your skills and knowledge grow, you'll be more able to fulfill the vision you have for your site. It's also empowering to see an idea come to life.
+We're gathering tools and building a foundation. Remember you can reuse your website as a template for future projects. As your skills and knowledge grow, you'll be more able to fulfill the vision you have for your site. It's also empowering to see an idea come to life.
 
 ## Additional resources
+
+One way to deploy your website is to use Azure Static Web Apps.
 
 **Azure Static Web Apps**
 
