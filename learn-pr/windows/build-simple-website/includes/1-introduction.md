@@ -15,7 +15,7 @@ When completed, your simple website will look like this, when the dark theme is 
 
 ## What's in a web page?
 
-In a web page, HTML provides your content, cascading style sheets (CSS) defines the appearance of the page, and JavaScript is used to provide interactivity with the user, that is, your business logic.
+In a web page, hypertext markup language (HTML) provides your content, cascading style sheets (CSS) define the appearance of the page, and JavaScript is used to provide interactivity with the user, that is, your business logic.
 
 The content, style, and business logic are generally separated into HTML, CSS, and JavaScript files, respectively. A design principle in modern programming is the separation of concerns. Among the many reasons to separate concerns, one is simplicity and re-use. For example, by styling elements using CSS, you can apply styles to all the elements on a page, no matter the page complexity, rather than coding the appearance separately within each HTML element.
 
@@ -27,6 +27,8 @@ In this module, you will:
 - Apply styles to page elements using CSS
 - Create themes using CSS
 - Add support for switching the theme using JavaScript
+
+You will run the site in local browser. At the end of the module, we will link to other modules that show you how to deploy the website using Azure Static Web Apps.
 
 ## Prerequisites
 

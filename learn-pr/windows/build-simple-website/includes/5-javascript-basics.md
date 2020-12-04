@@ -60,7 +60,17 @@ You need some way to let the user switch between the light and dark theme in you
 </div>
 ```
 
-In your CSS file, add a selector for the button. To make the button colors different from the general light or dark theme colors, set the `color` and `background-color` properties in the button selector. This selector, specific to the button, overrides the universal selector (*) used to apply font colors in your CSS file. (We also add rules for the size, shape, and placement of the button, etc.)
+In your CSS file, add a selector for the button. To make the button colors different from the general light or dark theme colors, set the `color` and `background-color` properties in the button selector. This selector, specific to the button, overrides the universal selector (*) used to apply font colors in your CSS file.
+
+```css
+.btn {
+  font-family: helvetica;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+```
+
+Then, add some rules for the size, shape, appearance, and placement of the button. The following CSS creates a round button to the right of the page heading.
 
 ```css
 .btn {
@@ -71,13 +81,13 @@ In your CSS file, add a selector for the button. To make the button colors diffe
   width: 50px;
   border-radius: 50%;
   border: none;
-  font-family: helvetica, sans-serif;
+  font-family: helvetica;
   color: var(--btnFontColor);
   background-color: var(--btnBg);
 }
 ```
 
-To improve the button's appearance, add a pseudo-class selector, `btn:focus`, after the button selector. By setting the `outline-style` rule to `none`, you eliminate an outline when the button is selected.
+To improve the button's appearance, add a pseudo-class selector, `btn:focus`, after the button selector. By setting the `outline-style` rule to `none`, you eliminate a rectangular outline when the button is selected (receives focus).
 
 ```css
 .btn:focus { outline-style: none; }
