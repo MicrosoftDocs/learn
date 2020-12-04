@@ -6,7 +6,9 @@ Fei Fei has shown us that through passion and love you can achieve more than you
 
 The next time you are looking up at the Moon, think about the inspiration not only from *Over the Moon* and Fei Fei but from the nonfictional humans who have stepped foot on it. Think about the dedication Fei Fei had and how similar it was to the dedication that NASA had when they sent the Apollo 11 crew to land on the Moon for the first time in human history. What we can imagine from stories, we can turn into reality through collaboration, hard work, and a bit of creativity.
 
-In this module, you began to explore the world of AI through the lens of a beautifully drawn story. You learned a bit about how AI works, and the ethics behind using it to impact our world and societies. With these skills and inspiration, you should feel confident to continue exploring, learning, and failing forward toward making an impact that is meaningful to you! And remember, this module is a part of a multi-modal approach to learning. You can also follow along with a video tutorial on the [Learn with Dr. G Learn TV video series](https://aka.ms/LearnWithDrG?azure-portal=true).
+In this module, you began to explore the world of AI through the lens of a beautifully drawn story. You learned a bit about how AI works, and the ethics behind using it to impact our world and societies. With these skills and inspiration, you should feel confident to continue exploring, learning, and failing forward toward making an impact that is meaningful to you! 
+
+Remember, this module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module in a new tab](https://aka.ms/LearnWithDrG?azure-portal=true).
 
 Keep hold of your wonder!
 

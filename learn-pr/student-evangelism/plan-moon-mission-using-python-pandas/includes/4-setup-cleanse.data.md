@@ -49,7 +49,7 @@ missions.info()
 ```
 
 ```Output
- #   Column   Non-null count  Dtype 
+ #   Column   Non-Null Count  Dtype 
 ---  ------   --------------  ----- 
  0   Mission  6 non-null      object
 ```

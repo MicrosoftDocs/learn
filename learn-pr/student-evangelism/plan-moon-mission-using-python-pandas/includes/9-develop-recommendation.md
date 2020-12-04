@@ -36,7 +36,7 @@ needed_samples.info()
 ```
 
 ```Output
- #   Column         Non-null count  Dtype  
+ #   Column         Non-Null Count  Dtype  
 ---  ------         --------------  -----  
  0   ID             68 non-null     int64  
  1   Mission        68 non-null     object 

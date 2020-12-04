@@ -47,7 +47,7 @@ low_samples.info()
 ```
 
 ```output
- #   Column         Non-null count  Dtype  
+ #   Column         Non-Null Count  Dtype  
 ---  ------         --------------  -----  
  0   ID             27 non-null     int64  
  1   Mission        27 non-null     object 
@@ -102,7 +102,7 @@ needed_samples.info()
 ```
 
 ```Output
- #   Column         Non-null count  Dtype  
+ #   Column         Non-Null Count  Dtype  
 ---  ------         --------------  -----  
  0   ID             22 non-null     int64  
  1   Mission        22 non-null     object 
