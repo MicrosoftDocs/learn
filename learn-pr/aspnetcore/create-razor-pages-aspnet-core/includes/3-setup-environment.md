@@ -1,4 +1,4 @@
-In this unit, you'll set up the development environment for the module and explore the *:::no-loc text="ContosoPets.Ui":::* starter project.
+In this unit, you'll set up the development environment for the module and explore the starter project.
 
 ## Set up development environment
 
@@ -44,7 +44,12 @@ By convention, the *:::no-loc text="Pages":::* directory is where all Razor Page
 
 A Razor page has a *:::no-loc text=".cshtml":::* file extension. By convention, its associated *:::no-loc text="PageModel":::* C# class file uses the same name but with a *:::no-loc text=".cs":::* appended. For example, the Razor page *:::no-loc text="Index.cshtml":::* has an associated *:::no-loc text="PageModel":::* class file for *:::no-loc text="Index.cshtml.cs":::*.
 
-A model object defines data properties and encapsulates logic or operations related to those data properties. A *:::no-loc text="PageModel":::* is essentially the same thing, but is a model that more specifically encapsulates the data properties and logic operations scoped just to its Razor page. The `PageModel` class allows separation of the logic of a Razor page from its presentation. It defines page handler methods for requests sent to the page and for the data used to render the page. A handler method is the method that is executed as a result of a request. For example, an `OnGet` method in the Razor Page's `PageModel` class would be automatically executed for an HTTP GET request.
+A model object defines data properties and encapsulates logic or operations related to those data properties. A *:::no-loc text="PageModel":::* is essentially the same thing, but is a model that more specifically encapsulates the data properties and logic operations scoped just to its Razor page. The `PageModel` class:
+
+* Allows for separation of the logic of a Razor page from its presentation.
+* Defines page handlers for requests sent to the page and for the data used to render the page.
+
+A *page handler* is the method that's executed as a result of an HTTP request. For example, an `OnGet` method in the Razor Page's `PageModel` class is automatically executed for an HTTP GET request.
 
 ## Models and the *:::no-loc text="Models":::* directory
 
@@ -54,38 +59,35 @@ The project has a `Product` model in *:::no-loc text="Models/Product.cs":::*. Th
 
 ### Data annotations
 
-Models in ASP.NET Core often make use of data annotations to constrain or customize model properties. Data annotations are attributes used to specify behavior that you want to enforce on the model properties to which they're applied. For example, a range of minimum and maximum acceptable values. The project has a model file named *:::no-loc text="Product.cs":::* that uses data annotations to define constraints for its data properties. For example, a `Name` property is always required, and a `Price` property must have a value between the range of `0.01` and `9999.99`. Since this module often refers to the `Product` model and its data properties, it's important to understand where that model record is stored.
+Models in ASP.NET Core often make use of data annotations to constrain or customize model properties. Data annotations are C# attributes used to specify behaviors to enforce on the model properties to which they're applied. For example, a range of minimum and maximum acceptable values. The project has a model file named *:::no-loc text="Product.cs":::* that uses data annotations to define constraints for its data properties. For example, a `Name` property is always required, and a `Price` property must have a value between the range of `0.01` and `9999.99`. Since this module often refers to the `Product` model and its data properties, it's important to understand where that model record is stored.
 
 ## The *Pages/Shared* directory
 
-Partial markup elements that are shared across several Razor pages are located by convention in a *:::no-loc text="Pages/Shared":::* directory.
-
-The *:::no-loc text="ContosoPets.Ui":::* app uses three shared partial views, which are included when you create a new **ASP.NET Core Web Application** project:
+Partial markup elements that are shared across several Razor pages are located by convention in a *:::no-loc text="Pages/Shared":::* directory. The *:::no-loc text="ContosoPets.Ui":::* app uses two shared partial views, which are included when you create a new **ASP.NET Core Web Application** project:
 
 * *:::no-loc text="_Layout.cshtml":::*: Provides common layout elements across multiple Razor Pages.
-* *:::no-loc text="_CookieConsentPartial.cshtml":::*: Provides a cookie consent alert and functionality incorporated in all Razor Pages in this project.
 * *:::no-loc text="_ValidationScriptsPartial.cshtml":::*: Provides validation functionality such as client-side form input validation and cross-site antiforgery validation, available to all Razor Pages in this project.
 
 ### Layouts and partial view files
 
 * Layouts: In ASP.NET Core, layouts are *:::no-loc text=".cshtml":::* files that define a top-level template for views in the app. Apps don't require a layout. Apps can define more than one layout, with different views specifying different layouts. Most web apps have a common layout that provides a consistent user experience. The layout typically includes common UI elements such as the app header, navigation or menu elements, and footer. Common HTML structures such as scripts and stylesheets are also frequently used by many pages within an app. All of these shared elements may be defined in a layout file, which can then be referenced by any view used within the app. Layouts reduce duplicate code in views.
 
-* Partial view: A partial view is a Razor markup file (*:::no-loc text=".cshtml":::*) that renders HTML output within another markup file's rendered output. Partial views are used to break up large markup files into smaller components. They also reduce the duplication of common markup content across markup files. Partial views aren't used to maintain common layout elements. Common layout elements are specified in a *:::no-loc text="Layout.cshtml":::* file.
+* Partial view: A partial view is a Razor markup file (*:::no-loc text=".cshtml":::*) that renders HTML output within another markup file's rendered output. Partial views are used to break up large markup files into smaller components. They also reduce the duplication of common markup content across markup files. Partial views aren't used to maintain common layout elements. Common layout elements are specified in a *:::no-loc text="_Layout.cshtml":::* file.
 
-Layouts and partial views are outside of the scope of this module. At the end of the module, links are provided that will allow you to take a deeper dive on features and concepts introduced here.
+Layouts and partial views are outside of the scope of this module. At the end of the module, links are provided to take a deeper dive on features and concepts introduced here.
 
 ## The *Pages* directory structure and routing requests
 
-Razor Pages uses the directory structure within the *:::no-loc text="Pages":::* directory as the convention for routing requests by default. An index page located in the root of the *:::no-loc text="Pages":::* directory, for example, is the default page for the app's site. In the *:::no-loc text="ContosoPets.Ui":::* project's *:::no-loc text="Pages/Products":::* directory, you'll find a collection of Razor pages, including an *:::no-loc text="Index.cshtml":::* page. Requests routed to *:::no-loc text="/Product/":::* will be directed to use the default *:::no-loc text="Index.cshtml":::* page physically located at *:::no-loc text="/Products/Index.cshtml":::*, for example. The *:::no-loc text="ContosoPets.Ui":::* project has all of its Razor Pages (*:::no-loc text=".cshtml":::*) and related *:::no-loc text="PageModel":::* class files (*:::no-loc text=".cshtml.cs":::*) grouped conveniently in *:::no-loc text="/Pages/Products":::*. Any passed route parameter values are made accessible through a property. ASP.NET Core offers robust routing features. For the scope of this project, you'll use simple project directory for route mapping.
+Razor Pages uses the directory structure within the *:::no-loc text="Pages":::* directory as the convention for routing requests by default. An index page located in the root of the *:::no-loc text="Pages":::* directory, for example, is the default page for the app's site. In the *:::no-loc text="ContosoPets.Ui":::* project's *:::no-loc text="Pages/Products":::* directory, you'll find a collection of Razor pages, including an *:::no-loc text="Index.cshtml":::* page. Requests routed to *:::no-loc text="/Product/":::* will be directed to use the default *:::no-loc text="Index.cshtml":::* page physically located at *:::no-loc text="Products/Index.cshtml":::*, for example. The project's Razor pages (*:::no-loc text=".cshtml":::*) and accompanying *:::no-loc text="PageModel":::* classes (*:::no-loc text=".cshtml.cs":::*) are grouped conveniently in *:::no-loc text="Pages/Products":::*. Any passed route parameter values are made accessible through a property. ASP.NET Core offers robust routing features.
 
-The following are routing examples for this completed project.
+The following table provides routes to be used in this module's completed project.
 
 | URL                                                  | Maps to this Razor Page                             |
 |------------------------------------------------------|-----------------------------------------------------|
-| *:::no-loc text="www.domain.com":::*                 | *:::no-loc text="/Pages/Index.cshtml":::*           |
-| *:::no-loc text="www.domain.com/index":::*           | *:::no-loc text="/Pages/Index.cshtml":::*           |
-| *:::no-loc text="www.domain.com/products":::*        | *:::no-loc text="/Pages/Products/Index.cshtml":::*  |
-| *:::no-loc text="www.domain.com/products/create":::* | *:::no-loc text="/Pages/Products/Create.cshtml":::* |
+| *:::no-loc text="www.domain.com":::*                 | *:::no-loc text="Pages/Index.cshtml":::*           |
+| *:::no-loc text="www.domain.com/index":::*           | *:::no-loc text="Pages/Index.cshtml":::*           |
+| *:::no-loc text="www.domain.com/products":::*        | *:::no-loc text="Pages/Products/Index.cshtml":::*  |
+| *:::no-loc text="www.domain.com/products/create":::* | *:::no-loc text="Pages/Products/Create.cshtml":::* |
 
 ### Organize groups of related Razor pages
 
@@ -93,4 +95,4 @@ The *:::no-loc text="ContosoPets.Ui":::* project's purpose is to provide a basic
 
 ### The HTTP request service
 
-This *:::no-loc text="ContosoPets.Ui":::* project has its `Product`-related HTTP request logic and properties encapsulated in a class. It handles all `Product`-related requests to the web API endpoint. It's made available for use throughout the scope of the app as a service. The class file for that service has been stored in a *:::no-loc text="Services":::* directory, by convention. You'll examine this service in detail later in this module.
+This *:::no-loc text="ContosoPets.Ui":::* project has its `Product`-related HTTP request logic and properties encapsulated in a class. It handles all `Product`-related requests to the web API endpoint. It's made available for use throughout the scope of the app as a service. That service's class file has been stored in a *:::no-loc text="Services":::* directory, by convention. You'll examine this service in detail later in this module.
