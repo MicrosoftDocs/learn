@@ -1,4 +1,4 @@
-We can use [Truffle Boxes](https://www.trufflesuite.com/boxes?azure-portal=true) as boilerplates or templates that can contain helpful modules, Solidity contracts and libraries, front-end views, and more; all the way up to complete example dapps.
+We can use [Truffle boxes](https://www.trufflesuite.com/boxes?azure-portal=true) as boilerplates or templates that can contain helpful modules, Solidity contracts and libraries, front-end views, and more. We can even get complete example dapps.
 
 For this exercise, we'll use the [Drizzle box](https://www.trufflesuite.com/boxes/drizzle?azure-portal=true). This box will help us quickly and easily build our first dapp and provide an overview of Drizzle's capabilities.
 
@@ -11,7 +11,7 @@ folder, and select **unbox** > **Drizzle**. Then copy over the smart contracts, 
 
 Unboxing Drizzle results in essentially two separate projects within a
 single directory: a **truffle** project and a **drizzle-react client**
-project. If you already have experience with Truffle, the directory structure will look familiar in the smart contract area. The
+project. If you already have experience with Truffle, the directory structure will look familiar in the area for smart contracts. The
 main difference is how you wire it to Web3. You also need to take configurations for modification into account.
 
 ## Get started with the Drizzle box
@@ -20,17 +20,14 @@ We'll begin by creating a new directory to house the Truffle Drizzle project. Ma
 
 1. Open your terminal and create a new empty directory by entering `mkdir drizzle_tutorial`.
 2. Go to the directory by entering `cd drizzle_tutorial`.
-3. After you're in the **drizzle_tutorial** folder, indicate that you want to use the Truffle Drizzle box by entering: `truffle unbox drizzle`. 
+3. After you're in the **drizzle_tutorial** folder, indicate that you want to use the Truffle Drizzle box by entering `truffle unbox drizzle`. 
 
    Wait a few minutes for the box to be set up. You'll then see the message **Unbox successful, sweet!**.
-4. Open the project in Visual Studio Code, and take a look at the folder structure.
+4. Open the project in Visual Studio Code, and look at the folder structure.
 
 ## Compile, migrate, and test the project
 
-The Truffle Drizzle box comes with three contracts that use the
-Drizzle components for connecting to a dapp. The contracts directory
-contains the files **ComplexStorage.sol**, **SimpleStorage.sol**, and
-**TutorialToken.sol**. The Drizzle tutorial uses them.
+The Truffle Drizzle box comes with three contracts that use the Drizzle components for connecting to a dapp. The **contracts** directory contains the files **ComplexStorage.sol**, **SimpleStorage.sol**, and **TutorialToken.sol**. The Drizzle tutorial uses them.
 
 Let's compile, migrate, and test these contracts before we explore the app components in detail.
 
@@ -38,7 +35,7 @@ Let's compile, migrate, and test these contracts before we explore the app compo
 1. Open another terminal window by right-clicking the terminal and selecting **New Terminal**.
 1. In that new terminal window, enter `truffle compile` to compile the contracts. Wait for the compilation to successfully finish.
 1. After the compilation is complete, you can test the contracts. The Truffle box comes with the file **simplestorage.js** for testing the **Simple Storage** smart contract. In the terminal window, enter `truffle test`.
-1. After the tests successfully run, you can deploy the contracts. The migrations folder has JavaScript files that help you deploy contracts to the network of your choice. The **2_deploy_contracts.js** file in the migrations folder will migrate the smart contracts in this project. 
+1. After the tests successfully run, you can deploy the contracts. The **migrations** folder has JavaScript files that help you deploy contracts to the network of your choice. The **2_deploy_contracts.js** file in the **migrations** folder will migrate the smart contracts in this project. 
 
    Enter `truffle migrate --network develop`. Then wait for the migration to successfully finish.
 

@@ -4,7 +4,7 @@ In this exercise, we'll wire up the contract to a simple dapp to see the status 
 
 ## Add the shipping contract to the Drizzle project
 
-The following code is the shipping contract that we'll use in this example. Copy this code into a new file in Visual Studio Code to the same project used in the last unit. The new file should be added in the **contracts/** folder in a file named **Shipping.sol**.
+The following code is the shipping contract that we'll use in this example. Copy this code into a new file in Visual Studio Code to the same project that we used in the last unit. Add the new file in the **contracts/** folder and name it **Shipping.sol**.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -76,16 +76,16 @@ In the body of the function, add a line to deploy the shipping contract on line 
     deployer.deploy(Shipping);
 ```
 
-You can now compile and migrate the contract. Going to the terminal, confirm that Ganache CLI is running. If it's not running in a terminal window, enter `ganache-cli`.
+You can now compile and migrate the contract. Go to the terminal and confirm that Ganache CLI is running. If it's not running in a terminal window, enter `ganache-cli`.
 
-Open another terminal window by right-clicking into the terminal and selecting **New Terminal**.
+Open another terminal window by right-clicking in the terminal and selecting **New Terminal**.
 
 In that new terminal window, enter:
 
 - `truffle compile` to compile the shipping contract.
 - `truffle migrate --network develop` to migrate the shipping contract.
 
-## Wiring up the front end to the shipping contract
+## Wire up the front end to the shipping contract
 
 ### Create a loading component
 
@@ -173,11 +173,11 @@ And replace `ShipComponent` on line 22:
 <ShipComponent drizzle={drizzle} drizzleState={drizzleState} />
 ```
 
-## Running the Shipping example code
+## Run the shipping example code
 
 You've now completed all the steps to wire up the shipping contract. That means it's time to run the dapp and see how it works.
 
-Going back to the terminal, enter the following commands:
+Go back to the terminal and enter the following commands:
 
 - `cd app` to move to the app folder.
 - `npm rebuild` to run the build and recompile changes in the **app/** folder.
@@ -185,6 +185,6 @@ Going back to the terminal, enter the following commands:
 
 Your browser should now open at [http://localhost:3000](http://localhost:3000?azure-portal=true) and show a dapp where you can interact with the shipping contract.
 
-You should see the following:
+You should see the following test information:
 
 :::image type="content" source="../media/shipping-dapp.png" alt-text="Screenshot that shows the dapp that's wired up to the shipping contract.":::

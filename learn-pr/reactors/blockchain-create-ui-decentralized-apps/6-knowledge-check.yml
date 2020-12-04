@@ -22,7 +22,7 @@ quiz:
     - content: "Drizzle is a collection of libraries to make writing dapps easier."
       isCorrect: true
       explanation: "Correct. Drizzle provides tools to make it easier to write dapps."
-    - content: "Drizzle is an Ethereum blockchain to run tests and execute commands."
+    - content: "Drizzle is an Ethereum blockchain to run tests and run commands."
       isCorrect: false
       explanation: "This definition best explains Ganache."
     - content: "Drizzle is a set of boilerplates that contain contracts, libraries, and dapps."
