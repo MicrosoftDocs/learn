@@ -41,8 +41,8 @@ summary: |
     - Identify and predict meteor showers
     - Train a Custom Vision AI model on a particular animal
 
-> [!TIP]
-> This learning path is part of a multimodal learning experience. Start the first module to see how you can follow along!
+  > [!TIP]
+  > This learning path is part of a multimodal learning experience. Start the first module to see how you can follow along!
 
 prerequisites: None
 iconUrl: /learn/achievements/explore-space-using-python.svg
