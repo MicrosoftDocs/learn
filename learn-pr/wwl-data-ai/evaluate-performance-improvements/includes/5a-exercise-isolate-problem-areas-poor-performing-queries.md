@@ -290,4 +290,4 @@ Based on the index statistics the query optimizer has chosen a different executi
 
 You can see in the message tab that the difference between logical reads is 68% (689 versus 409) more for the query without the query hint.
 
-To finish this exercise select **End** below.
+To finish this exercise select **Done** below.
