@@ -18,7 +18,7 @@ summary: This module will teach you how to model problems using Object oriented
 abstract: |
   After completing this module, you'll be able to:
   - Model problems using OOP concepts. 
-  - Describe the basic concepts involved in OO.
+  - Describe the basic concepts involved in OOP.
   - Distinguish classes from objects
 iconUrl: /learn/achievements/python-oo.svg
 levels:
@@ -33,6 +33,8 @@ prerequisites: >
   - Familiarity using a text editor or IDE  
   - Knowledge on how to execute a python
   program
+  - Python keywords
+  - Knowing how to raise Exceptions in Python
 units:
   - learn.python-oo.1-introduction
   - learn.python-oo.2-what-is-oo

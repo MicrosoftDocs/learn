@@ -4,13 +4,13 @@ Now that you have added classes and data to your rock paper scissors game, it's 
 
 You've been taught that to build a program in OOP style you model first and then you code. The modeling produced an output, a table that represented what objects, data, and behavior your program seems to consist of. Here's that same table again:
 
-|Phase     | Object            |Behavior          | Data                                        |
-|----------|-------------------|------------------|---------------------------------------------|
-|Input     | Participant       | chooses          | Symbol (rock, paper, scissor)               |
-|Processing| GameRound         | compares         | Symbols checked against Game rules          |
-|Processing| GameRound         | awards           | Points to Participant                       |
-|Processing| Game              | checks           | End condition                               |
-|Output    | Game              | determines       | Winner, select Participant with most points |
+|Phase     | Actor             |Behavior                                 | Data                                            |
+|----------|-------------------|-----------------------------------------|-------------------------------------------------|
+|Input     | Participant       | chooses symbol                          | Symbol save as _choice_ on Participant(choice)  |
+|Processing| GameRound         | compares choices against game rules     | _Result_ inspected                              |
+|Processing| GameRound         | awards points based on result value     | _Points_ added to winning Participant(point)    |
+|Processing| Game              | check continue answer                   | answer is true, continue, else quit             |
+|Output    | Game              | new game round or game end credit       |                                                 |
 
 This time you will focus on the column `Behavior` and populate the column with methods that will be added to your classes. Additionally you will add code to those methods so they work the way they should.
 
@@ -33,7 +33,7 @@ class Game:
 
 ### Start a game
 
-The first part of the game involves setting it up which means to instantiate the game itself and take the game to a point where it's waiting for the participants to act.
+The first part of the game involves setting it up, which means to instantiate the game itself and take the game to a point where it's waiting for the participants to act.
 
 1. Replace the content of `rock-paper-scissors.py` with this code:
 
@@ -73,7 +73,17 @@ game = Game()
 game.start()
 ```
 
-You've added the methods from your table to each object. Additionally you've implemented the `choose()` method on the `Participant` class.
+You've added the methods from your table to each object. The changes you've made can be expressed by a table so it's easier to see what behavior led to what method being added.
+
+|Behavior              |Method              | Actor       |
+|----------------------|--------------------|-------------|
+|chooses symbol        | choose()           | Participant |
+|compares choices      | compareChoices()   | GameRound   |
+|awards points         | awardPoints()      | GameRound   |  
+|check continue answer | checkEndCondition()| Game        |
+|game end credit       | determineWinner()  | Game        |
+
+Most of the behavior in the above table corresponds to methods with similar names. The exception is the _game end credit_ which becomes `determineWinner()`. The reason is that as part of ending a game it's nice if you can check who won and print that out. It's up to you if you want to name this method something else.
 
 1. Run the code by invoking `python3`:
 
@@ -100,9 +110,27 @@ You've added the methods from your table to each object. Additionally you've imp
    Kirk selects paper
    ```
 
+> [!NOTE]
+> The solution for this exercise can be found at: [Start a game - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-0.py)
+
 ### Implement rules
 
-To implement the rules, you will do so using a matrix. The idea of using a matrix is to express what combination wins over what other combination. A winning move gets a `1`, a draw a `0` and a loosing move gets a `-1`. Below is a matrix over Rock Paper Scissors:
+From the problem description you read that certain choices beats other choices. For example rock beats scissor, scissor beats paper and so on. It's tempting to write code that looks like so:
+
+```python
+if choice1 == "rock" and choice2 == "scissor":
+  return 1
+elif choice1 == "paper" and choice2 == "scissor":
+  return -1
+else:
+  # something else
+
+# and so on
+```
+
+It results in a lot of code written and becomes a bit unwieldy. What if the game needs to expand its rule set that might make the code even harder to maintain?
+
+Fortunately there's a better way. A better approach is to think about the rules as a matrix. The idea of using a matrix is to express what combination wins over what other combination. A winning move gets a `1`, a draw a `0` and a loosing move gets a `-1`. Below is a matrix over Rock Paper Scissors:
 
 |Choice   |Rock     |Paper    |Scissor  |
 |---------|---------|---------|---------|
@@ -177,6 +205,9 @@ rules[0][1] # Rock vs Paper = -1, Paper wins over Rock
 
    The above code introduces the field `rules`, which contain an implementation of the rules for rock paper scissors. Additionally, the call to `self.compareChoices()` _compares_ the two choices made. Lastly, there's a row that prints reader-friendly result to the screen.
 
+> [!NOTE]
+> The solution for this exercise can be found at: [Implement rules - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-1.py)
+
 ### Score game
 
 Scoring the game is about assigning points to the correct player after. The winning player gets one point, a draw, or loss gets no points.
@@ -199,6 +230,9 @@ Scoring the game is about assigning points to the correct player after. The winn
    elif result < 0:
      p2.incrementPoint()
    ```
+
+> [!NOTE]
+> The solution for this exercise can be found at: [Score game - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-2.py)
 
 ### Add continuation query
 
@@ -259,6 +293,9 @@ A continuation query is a question at the end of the game round asking the playe
    Game ended, Spock has 0, and Kirk has 1
    Winner is Kirk
    ```
+
+> [!NOTE]
+> The solution for this exercise can be found at: [Continuation query - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-3.py)
 
 Congrats, you did it. You've implemented an OOP version of Rock, Paper, Scissors.
 

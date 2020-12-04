@@ -4,11 +4,18 @@ The end goal of a system is to produce useful output. To get there, you need to 
 
 Methods, regardless of paradigm used, have the ability to carry out an action. That action can be a computation that only relies on inputs or it can change the value of a variable.
 
-Methods on objects, in OOP, come in two flavors, external facing methods, that other objects can invoke, and internal methods that help carry out a task. Regardless of what type of method, they can change the value of the data on an object, its _state_. The notion of state, and who and what can change it, is an important topic, and an important part of designing your classes and object. These questions lead us into our next section, _encapsulation_.
+Methods on objects, in OOP, come in two flavors:
+
+- **External methods**, that other objects can invoke.
+- **Internal methods**. These methods are not reachable by other objects. Additionally such methods help carry out a task, started by an invocation to an external method.
+
+Regardless of what type of method, they can change the value of an object's attribute, its _state_.
+
+The notion of state, and _who_ and _what_ can change it, is an important topic, and an important part of designing your classes and object. These questions lead us into our next section, _encapsulation_.
 
 ## Encapsulation, protect your data
 
-The general idea of encapsulation is that the data on an object is _internal_, something that only concerns the object. Data is needed for the object and the methods to do its job, to carry out a task. By saying it's internal, you are saying that it should be protected from other outside manipulation, or rather _uncontrolled_ outside manipulation. The question is why?
+The general idea of encapsulation is that the data on an object is _internal_, something that only concerns the object. Data is needed for the object and the methods to do their job, to carry out a task. By saying it's _internal_, you are saying that it should be protected from other outside manipulation, or rather _uncontrolled_ outside manipulation. The question is why?
 
 ### Why you need it
 
@@ -76,9 +83,11 @@ square._Square__height = 3 # is allowed
 
 Many other languages implementing data protection solve this differently, Python is a little unique in that data protection is more like levels of suggestion rather than strictly implemented.
 
-### Getters and setters
+### What are getters and setters
 
-Now, we've said so far that data in general should not be touched from the outside, they are the concern of the object. As with all rules and strong recommendations there are exceptions, sometimes you need to change that data or it's simpler than having to add a bunch of code. Getters and Setters, also known as _accessors_ and _mutators_, are methods dedicated to reading or changing your data. The Getters plays the part of making your inner data readable to the outside, doesn't sound so bad does it?  Setters on the other hand are methods that can change your data directly. The idea is for these methods to act as a guard so a _bad_ value can't be set. Lets bring up our square class again and see getter and setters in action:
+Now, we've said so far that data in general should not be touched from the outside, they are the concern of the object. As with all rules and strong recommendations there are exceptions. Sometimes you need to change that data or it's simpler than having to add a bunch of code.
+
+Getters and Setters, also known as _accessors_ and _mutators_, are methods dedicated to reading or changing your data. The getters plays the part of making your inner data readable to the outside, doesn't sound so bad does it?  Setters on the other hand are methods that can change your data directly. The idea is for a setter to act as a guard so a _bad_ value can't be set. Lets bring up our square class again and see getters and setters in action:
 
 ```python
   class Square:
@@ -100,7 +109,20 @@ Now, we've said so far that data in general should not be touched from the outsi
   square.__height = 3 # raises AttributeError
 ```
 
-The method `set_height()` protects you from setting the value to anything. Python has a more elegant approach to getting and setting data on an object, namely the decorator `@property`. This decorator does two things for you, it saves you from creating the underlying private variable and it allows you to decorate which methods should handle the getting and setting of your data. Lets see an example of this feature:
+The method `set_height()` protects you from setting the value to something negative. If you do, it will raise an exception
+
+### Using decorators for getters and setters
+
+Decorators is an important topic in Python. It's part of a larger topic called _meta programming_. Decorators are functions that take your function as an input. The idea is to encode reusable functionality as _decorator functions_ and then _decorate_ other functions with it. The purpose is to give your function a feature it didn't have before. A decorator can for example, add fields to your object, measure the time it takes to invocate a function and much more.
+
+In the context of OOP and getters and setters, a specific decorator `@property` can help you remove some boiler plate code when adding getters and setters. The `@property` decorator does the following things for you:
+
+- **Creates a backing field**. When you decorate a function with the `@property` decorator, it creates a backing private field. You can override this behavior if you want, but it's nice to have a default behavior.
+- **Identifies a setter**. A setter method can change the backing field.
+- **Identifies a getter**. This function should return the backing field.
+- **Identifies a delete function**. This function can delete the field.
+
+Lets see this decorator in action:
 
 ```python
 class Square:
@@ -114,7 +136,7 @@ class Square:
 
   @property
   def height(self):
-    return self.__x
+    return self.__height
 
   @height.setter
   def height(self, new_value):
@@ -124,4 +146,6 @@ class Square:
       raise Exception("Value must be larger than 0")
 ```
 
-Being able to manipulate the height separate from the width will still cause a problem. So you will need to understand what the class does before you consider allowing getters and setters.
+In the above code, there's a function `height()`, it's decorated by the decorator `@property`. This _decoration_ action creates a private field `__height`. The field `__height` is not defined in the constructor `__init__()` as the decorator does that already. There's also another decoration happening, namely `@height.setter`. This decoration points out a similar looking `height()` method as the _setter_. The new height method takes an additional parameter `value` as its second parameter.
+
+Being able to manipulate the height separate from the width will still cause a problem. So you will need to understand what the class does before you consider allowing getters and setters, because you are introducing risk.

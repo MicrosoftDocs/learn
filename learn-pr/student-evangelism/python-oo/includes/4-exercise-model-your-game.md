@@ -22,24 +22,24 @@ Rock paper, scissor is a game played by two participants. The game consists of r
 
    Rock paper, scissor is a _game_ played by two participants. The game consists of _rounds_. In each round, a _participant_ chooses a _symbol_, _rock_, _paper_, or _scissor_ and the other _participant_ does the same. Then a _winner_ of the round is determined by _comparing_ the chosen symbols. The _rules_ of the game states that rock wins over scissor, scissor beats (cuts) paper and paper beats (covers) rock. Thereafter the winner is awarded a _point_. The game goes on for as many rounds as the participants agreed on. The winner is the participant with the most number of points_.
 
-1. Next, create a table with the columns `Phase`, `Object`, `Behavior`, and `Data` and arrange the highlighted words where you think they should be placed.
+1. Next, create a table with the columns `Phase`, `Actor`, `Behavior`, and `Data` and arrange the highlighted words where you think they should be placed.
 
    > [!TIP]
    > Spend a few minutes thinking this through and scroll down once you've given it some thought.
 
    Here's what a resulting table can look like:
 
-    |Phase     | Object            |Behavior          | Data                                        |
-    |----------|-------------------|------------------|---------------------------------------------|
-    |Input     | Participant       | chooses          | Symbol (rock, paper, scissor)              |
-    |Processing| GameRound         | compares         | Symbols checked against Game rules          |
-    |Processing| GameRound         | awards           | Points to Participant                       |
-    |Processing| Game              | checks           | End condition                               |
-    |Output    | Game              | determines       | Winner, select Participant with most points |
+    |Phase     | Actor             |Behavior                                 | Data                                            |
+    |----------|-------------------|-----------------------------------------|-------------------------------------------------|
+    |Input     | Participant       | chooses symbol                          | Symbol save as _choice_ on Participant(choice)  |
+    |Processing| GameRound         | compares choices against game rules     | _Result_ inspected                              |
+    |Processing| GameRound         | awards points based on result value     | _Points_ added to winning Participant(point)    |
+    |Processing| Game              | check continue answer                   | answer is true, continue, else quit             |
+    |Output    | Game              | new game round or game end credit       |                                                 |
 
 ## Create classes and state
 
-Now you will create the classes and data needed to support the game.
+The table above tells the story of how the game progresses through different phases. By focusing on the two columns `Behavior` and `Data`, you are able to _scaffold_ some initial code that will help support the creation of the game.
 
 1. Create a file `rock-paper-scissor.py` and give it the following content:
 
@@ -69,4 +69,8 @@ Now you will create the classes and data needed to support the game.
 
    ```
 
-   You've added classes to your game and created data, attributes that you've assigned to the created classes. At this point, you have a good starting code. It doesn't do much yet, it needs behavior. You will add behavior in the next exercise unit.
+   The `Participant` class was given the attributes `points` and `choice` as indicated by the first and third line of your table.
+
+   The `Game` has been given the fields `endGame` as a result of the fourth line. Additionally, the `Game` class has two participants, `participant` and `secondParticipant`. Looking back at the conceptual part, there were to roles a variable on an object could have, a state, like the floor of an elevator or a descriptive attribute. The `points` and `choice` attributes are in this context state variables, whereas the participants on the `Game` class are descriptive attributes, a game _has_ participants.
+ 
+   Congrats! You've added classes to your game and created data, attribute,s that you've assigned to the created classes. At this point, you have a good starting code. It doesn't do much yet, it needs behavior. You will add behavior in the next exercise unit.
