@@ -127,7 +127,7 @@ Next, you'll create a deployment slot where you can stage new versions of the we
 
 1. On the **Deployment slots** page, select **Add slot**.
 
-1. In the **Name** box, enter **Staging**, leave **Clone settings from** defult, and then select **Add**.
+1. In the **Name** box, enter **Staging**, leave **Clone settings from** default, and then select **Add**.
 
 1. After the deployment slot is added, select **Close**.
 
