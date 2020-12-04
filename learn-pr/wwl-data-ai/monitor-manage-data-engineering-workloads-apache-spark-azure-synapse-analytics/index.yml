@@ -3,7 +3,7 @@ uid: learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure
 metadata:
   title: Monitor and manage data engineering workloads with Apache Spark in Azure Synapse Analytics
   description: "Monitor and manage data engineering workloads with Apache Spark in Azure Synapse Analytics"
-  ms.date: 11/24/2020
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ prerequisites: |
   -  Data Fundamentals
   - Introduction to Azure Data Factory
   - Introduction to Azure Synapse Analytics
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse.svg
 levels:
 - intermediate
 roles:
