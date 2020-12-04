@@ -30,7 +30,7 @@ Use a browser to access http://localhost:8080/
 
 ## Deploying to Azure
 
-We'll use Terraform to create an Azure resource group with a MySQL database and an Azure App Service web application.
+Next we'll use Terraform to provision an Azure resource group with a MySQL database and an Azure App Service.
 
 1. Customize your application, and resource group name: edit `terraform/variables.tf`.
 
@@ -55,7 +55,7 @@ We'll use Terraform to create an Azure resource group with a MySQL database and 
 
 ## Deploy via Maven
 
-Configure your deployment with Maven:
+Next we'll configure your application to be deployed with Maven:
 
 ```bash
 ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
@@ -81,4 +81,4 @@ Before you move onto the next unit, delete your terraform resources and run 'ter
 terraform destroy
 ```
 
-In the next unit, we'll explain GitHub Actions and how they integrate with Terraform.
+In the next unit, we'll explain how to setup GitHub Actions with Terraform.

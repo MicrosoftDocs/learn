@@ -39,9 +39,7 @@ Configuration files describe the components needed to run applications.
 
 - main.tf (Required): Main structure to deploy the complete infrastructure directly or through calls to modules
 - output.tf: Identify each return value of a Terraform module
-- terraform.tfvars: Assign values to variables in a file instead of arguments in a command
 - variables.tf: Define variables required (or not) in main.tf, we need to define the var type and it allows to you assign a default value.
-- versions.tf: Define mínimum version required for terraform and providers in a module
 
 ![Config structure for Terraform.](../media/3-config.png)
 
