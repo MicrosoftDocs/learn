@@ -13,12 +13,15 @@ To simplify our scenario so that we can focus on the Storage APIs, we will creat
     ```bash
     dotnet new console --name PhotoSharingApp
     ```
-
-1. Run the app to make sure it builds and executes correctly. It should display "Hello World!" to the console.
+1. Change into the application directory
 
     ```bash
     cd PhotoSharingApp
-    
+    ```
+
+1. Run the app to make sure it builds and executes correctly. It should display "Hello World!" to the console.
+
+    ```dotnetcli
     dotnet run
     ```
 ::: zone-end

@@ -1,4 +1,8 @@
+![Environments, in containers, in compute targets](../media/05-compute-contexts.png)
+
 Python code runs in the context of a *virtual environment* that defines the version of the Python runtime to be used as well as the installed packages available to the code. In most Python installations, packages are installed and managed in environments using **Conda** or **pip**.
+
+To improve portability, we usually create environments in docker containers that are in turn be hosted in compute targets, such as your development computer, virtual machines, or clusters in the cloud.
 
 ## Environments in Azure Machine Learning
 
@@ -59,6 +63,38 @@ env = Environment('training_environment')
 deps = CondaDependencies.create(conda_packages=['scikit-learn','pandas','numpy'],
                                 pip_packages=['azureml-defaults'])
 env.python.conda_dependencies = deps
+```
+
+## Configuring environment containers
+
+Usually, you should create environments in containers (this is the default unless the **docker.enabled** property is set to **False**, in which case the environment is created directly in the compute target)
+
+```Python
+env.docker.enabled = True
+deps = CondaDependencies.create(conda_packages=['scikit-learn','pandas','pip'],                      
+                                pip_packages=['azureml-defaults']
+env.python.conda_dependencies = deps
+```
+
+Azure Machine Learning uses a library of base images for containers, choosing the appropriate base for the compute target you specify (for example, including Cuda support for GPU-based compute). If you have created custom container images and registered them in a container registry, you can override the default base images and use your own.
+
+```Python
+env.docker.base_image='my-base-image'
+env.docker.base_image_registry='myregistry.azurecr.io/myimage'
+```
+
+Alternatively, you can have an image created on-demand based on the base image and additional settings in a dockerfile.
+
+```Python
+env.docker.base_image = None
+env.docker.base_dockerfile = './Dockerfile'
+```
+
+By default, Azure machine Learning handles Python paths and package dependencies. If your image already includes an installation of Python with the dependencies you need, you can override this behavior by setting **python.user_managed_dependencies** to **True** and setting an explicit Python path for your installation.
+
+```Python
+env.python.user_managed_dependencies=True
+env.python.interpreter_path = '/opt/miniconda/bin/python'
 ```
 
 ## Registering and reusing environments
