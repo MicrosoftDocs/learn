@@ -26,6 +26,10 @@ The first file `NASA-Software-API.txt` is an open dataset listing out all softwa
 
 ## Peeking into your files' contents
 
+**As a refresher**: in UNIX a terminal by default has three streams. An input stream and two output-based streams. The input stream is referred to as `stdin` (standard input), and is generally mapped to the keyboard. The standard output stream or `stdout` generally prints to the terminal or might be consumed by another program or process. The other output stream stderr primarily used for status reporting usually prints to the terminal like `stdout`.
+
+You might be wondering why you needed that refresher, though. Well, in the following units we will be talking about programs and filters as well as their standard input and output. So you will need a basic understanding on how these are related. This will all make much more sense as you move forward in the module.
+
 Before jumping into wrangling your data, it's useful to do some basic file inspection. This will help you get an idea of how the raw data looks like.
 ### `Head` and `tail` commands
 
