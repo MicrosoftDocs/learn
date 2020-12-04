@@ -1,6 +1,6 @@
 In this module, we will build Spring Boot microservice that is cloud-enabled: it uses a Spring Cloud Service Registry and a [Spring Cloud Config Server](https://cloud.spring.io/spring-cloud-config) which are both managed and supported by Azure Spring Cloud.
 
-This microservice will use Spring Data JPA to read and write data from an [Azure database for MySQL](https://docs.microsoft.com/azure/mysql/?WT.mc_id=azurespringcloud-mslearn-judubois) database:
+This microservice will use Spring Data JPA to read and write data from an [Azure database for MySQL](https://docs.microsoft.com/azure/mysql/) database:
 
 - That database will be automatically bound to our service by Azure Spring Cloud.
 - Azure database for MySQL is a fully managed version of MySQL, running on Azure.
@@ -59,7 +59,7 @@ Azure Spring Cloud can automatically bind the MySQL database we created to our m
     5. The **User name** should be **spring@YOUR_DATABASE_NAME**, with **YOUR_DATABASE_NAME** being the name of your database, that we set up earlier as **${SPRING_CLOUD_NAME}-mysql** when creating it.
     6. The **Password** is the **password** attribute that we copied earlier, when creating the server.
 
-Click on **Create** and your Spring Boot application will have the MySQL database connection set up.
+Select **Create**, and your Spring Boot application will have the MySQL database connection set up.
 
 ## Create a Spring Boot microservice
 

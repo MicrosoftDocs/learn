@@ -48,9 +48,9 @@ cd ..
 ### Once everything is deployed
 
 1. Go to [the Azure portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois).
-2. Go to the overview page of your Azure Spring Cloud cluster and select "Distributed tracing" in the menu.
-3. This setting should already be on "Enable".
-4. You will have access to an "application map", storing your tracing data.
+2. Go to the overview page of your Azure Spring Cloud cluster and select **Distributed tracing** in the menu.
+3. This setting should already be on **Enable**.
+4. You will have access to an **application map**, storing your tracing data.
 
 > [!TIP]
 > Tracing data can take a couple of minutes to be ingested by the system, so use this time to generate some load, and wait for the data to arrive.
