@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics.understand-network-security-options-for
+title: Understand network security options for Azure Synapse Analytics
+metadata:
+  title: Understand network security options for Azure Synapse Analytics
+  description: "Understand network security options for Azure Synapse Analytics"
+  ms.date: 11/27/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-network-security-options.md)]
