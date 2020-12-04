@@ -19,32 +19,32 @@ quiz:
       choices:
         - content: "It's the type of state that continues to exist even after the application has been closed."
           isCorrect: true
-          explanation: "While state itself is all the contents of an application stored in memory, the persistent state is the one that needs to be stored persistently across the life cycle of the application."
-        - content: "The state that's stored in-memory or locally on the container."
+          explanation: "Although state itself is all the contents of an application stored in memory, the persistent state is the one that needs to be stored persistently across the life cycle of the application."
+        - content: "It's the state that's stored in memory or locally on the container."
           isCorrect: false
-          explanation: "This is what is called the ephemeral state, it's only stored in local memory or in the local container filesystem and destroyed once the application or container is closed."
-        - content: "All the disks and volumes that compose the application."
+          explanation: "This is the ephemeral state. It's stored only in local memory or in the local container's file system and destroyed after the application or container is closed."
+        - content: "It's all the disks and volumes that compose the application."
           isCorrect: false
-          explanation: "Disks and volumes are what makes a persistent state be persistent, but they only store the state."
-    - content: "How do Kubernetes handle states?"
+          explanation: "Disks and volumes make a state persistent, but they store only the state."
+    - content: "How does Kubernetes handle states?"
       choices:
-        - content: "It doesn't, Kubernetes don't have state handling features."
+        - content: "It doesn't. Kubernetes don't have state-handling features."
           isCorrect: false
-          explanation: "Kubernetes support state handling through a series of objects."
-        - content: "By externalizing the state to another Node outside of the cluster."
+          explanation: "Kubernetes supports state handling through a series of objects."
+        - content: "It externalizes the state to another node outside the cluster."
           isCorrect: false
-          explanation: "Kubernetes does not have access to external nodes outside of the cluster."
-        - content: "Through a set of objects called PersistentVolume and PersistentVolumeClaim."
+          explanation: "Kubernetes does not have access to external nodes outside the cluster."
+        - content: "It uses a set of objects called `PersistentVolume` and `PersistentVolumeClaim`."
           isCorrect: true
-          explanation: "Correct; Those objects use the cluster's nodes to attach disks and give a pod their claim on that space."
-    - content: "What are the best practices when it comes to handling state in Kubernetes applications?"
+          explanation: "Correct. Those objects use the cluster's nodes to attach disks and give a pod their claim on that space."
+    - content: "What's a best practice for handling state in Kubernetes applications?"
       choices:
         - content: "Store the state inside Kubernetes only."
           isCorrect: false
-          explanation: "While it's possible to store state in Kubernetes, the complexity of maintaining that for a highly available and scalable application doesn't pay off."
+          explanation: "Although it's possible to store state in Kubernetes, the complexity of maintaining that for a highly available and scalable application doesn't pay off."
         - content: "Remove any possible state and use only ephemeral storage."
           isCorrect: false
-          explanation: "While this is the easiest solution, it's nearly impossible to hold a large system together without any state management."
+          explanation: "Although this is the easiest solution, it's nearly impossible to hold a large system together without any state management."
         - content: "Delegate the state management to external specialized solutions."
           isCorrect: true
-          explanation: "To solve all the scalability and availability problems fast, the best option is to externalize the state to specialized applications such as CosmosDB."
+          explanation: "To solve all the scalability and availability problems fast, the best option is to externalize the state to specialized applications such as Azure Cosmos DB."

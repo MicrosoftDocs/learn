@@ -51,7 +51,7 @@ Let's get things set up!
     Your output resembles this. Keep this handy, you'll need this command to connect to your database later in this module. Note the `[username]` and `[password]` placeholders in the command that you will want to replace with the `ADMINLOGIN` and `PASSWORD` credentials you specified in variables earlier.
 
     ```output
-    sqlcmd -S tcp:server12345.database.windows.net,1433 -d marketplaceDb -U [username] -P [password] -N -l 30
+    sqlcmd -S tcp:server12345.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
 ## Create and configure a Linux virtual machine

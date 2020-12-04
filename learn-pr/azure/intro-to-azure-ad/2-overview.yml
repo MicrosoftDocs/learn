@@ -28,13 +28,13 @@ quiz:
       explanation: A tenant represents an organization.
   - content: What is an identity security score?
     choices:
-    - content: It's a number between 1 and 243 that indicates exactly how many identities are secured in your organization.
+    - content: It's a number between 1 and 223 that indicates exactly how many identities are secured in your organization.
       isCorrect: false
       explanation: An identity security score indicates how well your security aligns with Microsoft best practices.
-    - content: It's a number between 1 and 243 that indicates how aligned your security is with Microsoft best practices.
+    - content: It's a number between 1 and 223 that indicates how aligned your security is with Microsoft best practices.
       isCorrect: true
       explanation: Use an identity security score to see how secure your Azure AD instance is. 
-    - content: It's a number between 1 and 243 that indicates how well your organization's tenants align with each other.
+    - content: It's a number between 1 and 223 that indicates how well your organization's tenants align with each other.
       isCorrect: false
       explanation: An identity security score indicates how aligned your security is with Microsoft best practices.
 

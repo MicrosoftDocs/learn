@@ -1,14 +1,14 @@
 When you list your company’s products and services in the commercial marketplace, customers will be able to find them in multiple places, also known as sales channels. Commercial marketplace sales channels include:
 
 - Two **online stores**—**[Microsoft AppSource](https://appsource.microsoft.com)** and **[Azure Marketplace](https://azuremarketplace.microsoft.com)**
-- **In Microsoft products** like Microsoft 365, Dynamics 365, the Power Platform, and Azure
+- **In Microsoft products** like Microsoft 365, Dynamics 365, Microsoft Power Platform, and Azure
 - Microsoft’s network of over 90,000 reseller partners, also known as **Cloud Solution Provider (CSP)** partners
 - In direct collaboration with Microsoft sales professionals through the **Co-sell program**
 
 > [!Note]
 >The Co-sell program is reserved for software built with your intellectual property (IP) as repeatable, packaged offers and for services with Microsoft technology embedded. If you’re interested in learning more about Co-sell program eligibility and benefits, you can reference the **[Co-sell partner engagement article](https://docs.microsoft.com/azure/marketplace/marketplace-co-sell)** in our documentation.
 
-Now we'll share some considerations to take as you prepare to sell your products and services through each channel.
+Now we'll share some things you can consider as you prepare to sell your products and services through each channel.
 
 :::image type="complex" source="../media/1-marketplace-sales-channels.png" alt-text="A diagram depicting the commercial marketplace sales channels" lightbox="../media/1-marketplace-sales-channels.png":::
    The left side of the diagram represents that sellers list their solution through Partner Center. The right side of the diagram depicts the three commercial marketplace sales channels where customers can find your products and services. Going clockwise, the first channel is direct, which includes the online stores and in-product experiences. Second is Microsoft sales, which represents the Co-sell program. Third is the Cloud Solution Provider program, which lets resellers sell your solution to their customers. At the center of the diagram is the Microsoft commerce platform, which facilitates the commercial marketplace.
@@ -18,7 +18,7 @@ Now we'll share some considerations to take as you prepare to sell your products
 
 When you publish your solution to the commercial marketplace from Partner Center, it will be placed in one or both online stores—[Microsoft AppSource](https://appsource.microsoft.com) and [Azure Marketplace](https://azuremarketplace.microsoft.com). Your product and the information you tell us about it determines where we place your product. For the most part, business solutions appear in Microsoft AppSource, while IT solutions are found in Azure Marketplace. For more information about online store product selection, read our [documentation on selecting an online store](https://docs.microsoft.com/azure/marketplace/determine-your-listing-type#selecting-an-online-store)
 
-Customers will also be able to find your software in Microsoft products including Microsoft 365, Dynamics 365, the Power Platform, and Azure. Software from Azure Marketplace is also found in by browsing resources in the Azure portal. Add-ins and software from AppSource can also be found on Microsoft 365, Dynamics 365, and the Power Platform.
+Customers will also be able to find your software in Microsoft products including Microsoft 365, Dynamics 365, Microsoft Power Platform, and Azure. Software from Azure Marketplace is also found by browsing resources in the Azure portal. Add-ins and software from AppSource can also be found on Microsoft 365, Dynamics 365, and Microsoft Power Platform.
 
 #### Cloud Solution Providers
 

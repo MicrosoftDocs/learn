@@ -1,6 +1,6 @@
 C# Arrays allow you to store sequences of values in a single data structure.  In other words, imagine a single variable that can hold many values.  Once you have a single variable that stores all the values, you can sort the values, reverse the order of the values, loop through each value and inspect it individually, and so on.
 
-Suppose we work in the fraud department of a company that matches online sellers with commission-based advertisers.  We've been asked to write C# code that will iterate through the Order IDs of incoming orders.  We need to inspect each Order ID to identify orders that may be fraudulent.  How can we programmatically collect a sequence of OrderIDs, then iterate through and process each Order ID?
+Suppose we work in the anti-fraud department of a company that matches online sellers with commission-based advertisers.  We've been asked to write C# code that will iterate through the Order IDs of incoming orders.  We need to inspect each Order ID to identify orders that may be fraudulent.  How can we programmatically collect a sequence of OrderIDs, then iterate through and process each Order ID?
 
 In this module, you'll create and initialize arrays.  You'll set and retrieve values from elements in an array accessing each element using its index.  You'll create looping logic that allows you to work with each element in an array.
 
