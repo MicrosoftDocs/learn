@@ -31,7 +31,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     :::image type="content" source="../media/3-command-palette-cosmosdb.png" alt-text="Screenshot of the command palette in Visual Studio Code. The user has selected the Focus on Azure DB View command." loc-scope="vs-code":::
 
-    The Databases pane will appear (if not already visable).
+    The Databases pane will appear (if not already visible).
 
     :::image type="content" source="../media/3-cosmosdb-pane.png" alt-text="Screenshot of the Azure DB pane in Visual Studio Code." loc-scope="vs-code":::
 
