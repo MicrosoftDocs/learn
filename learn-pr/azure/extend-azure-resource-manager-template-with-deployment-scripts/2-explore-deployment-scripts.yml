@@ -6,7 +6,7 @@ metadata:
   description: Understand deployment scripts and how to use them to add custom behavior to Azure Resource Manager templates.
   author: smurawski
   ms.author: stmuraws
-  ms.date: 11/23/2020
+  ms.date: 12/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
