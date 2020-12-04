@@ -13,13 +13,13 @@ Before we go further, let's briefly define cloud computing.
     :::column span="3":::
 **What is cloud computing?**
 
-Cloud computing is the delivery of computing services over the Internet using a **pay-as-you-go** pricing model. Put another way; it's a way to rent compute power and storage from someone else's data center.
+Cloud computing is the delivery of computing services over the Internet using a **pay-as-you-go** pricing model. Put another way, renting computing power and storage from someone else's data center.
 
 Instead of maintaining CPUs and storage in your data center, you rent them for the time that you need them. The cloud provider takes care of maintaining the underlying infrastructure for you.
 
-You can treat cloud resources like you would your resources in your own data center. When you're done using them, you give them back. You're billed only for what you use.
+You can treat cloud resources like you would your resources in your own data center. When done using them, you give them back. You're billed only for what you use.
 
-While this approach is great, the real value of the cloud is that it enables you to quickly solve your toughest business challenges and bring cutting edge solutions to your users.
+While this approach is the real value of the cloud is that it enables you to quickly solve your toughest business challenges and bring cutting edge solutions to your users.
 
   :::column-end:::
 :::row-end:::

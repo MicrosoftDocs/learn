@@ -3,8 +3,8 @@ uid: learn.wwl.explain-machine-learning-models-with-azure-machine-learning.using
 title: Using explainers
 metadata:
   title: Using explainers
-  description: "Learn how to create and use explainers."
-  ms.date: 08/30/2020
+  description: "Using explainers"
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
