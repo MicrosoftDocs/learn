@@ -73,10 +73,12 @@ Are the font styles what you expected to see? It's interesting how styles cascad
 
 Next, add support for a color theme for your website. Begin by defining a light-colored theme. For the light theme, use hex color codes for the font color (#000000, black) and for the background (#00FF00, a green hue).
 
+```css
 .light-theme {
   color: #000000;
   background: #00FF00;
 }
+```
 
 In your HTML file, update the `<body>` element with a class name, `light-theme`, so the class selector for light theme will apply the styles correctly.
 
@@ -147,10 +149,10 @@ body {
 }
 ```
 
-To view the dark theme, manually switch the default theme in the `<body>` element to dark theme (`dark-theme`), and then view the page in the browser.
+To view the dark theme, manually edit the default theme in the `<body>` element to dark theme (`dark-theme`), and then view the page in the browser.
 
 ![Screenshot of website with dark theme applied](../media/chrome-dark-theme.png)
 
-Switch the `<body>` element back to light theme.
+Edit the `<body>` element to switch the default back to light theme.
 
-In the next unit we will use JavaScript to provide interactivity and support the switching of themes.
+In the next unit, you will use JavaScript to provide interactivity and support the switching of themes.

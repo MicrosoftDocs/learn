@@ -154,7 +154,7 @@ It's a JavaScript convention to use *camel case* for variable names with more th
 
 ## Console message
 
-You can create a hidden message that won't appear on your webpage. However, what you write in the console will show up in the browser developer tools. Using *console messages* can be really helpful for seeing the result of our code.
+You can create a hidden message that won't appear on your webpage. However, what you write in the console will show up in the browser developer tools. Using *console messages* can be really helpful for seeing the result of your code.
 
 Add a call to `console.log` after the `if` statement, but inside the event listener.
 
