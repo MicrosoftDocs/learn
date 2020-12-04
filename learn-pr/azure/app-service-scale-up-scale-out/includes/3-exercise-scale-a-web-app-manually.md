@@ -37,7 +37,7 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 ## Build and deploy the web app
 
-1. Open the Cloud Shell in the Azure portal. Run this command to download the source code for the hotel reservation system:
+1. Open the Cloud Shell in the Azure portal (at the top-right, looks like a square with >_ inside). Run this command to download the source code for the hotel reservation system:
 
      ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-hotel-reservation-system.git
@@ -125,10 +125,10 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. Add the following metrics to the chart, set the time range to **Last 30 minutes**, and then pin the chart to the current dashboard.
 
-   - CPU Time. Select the Sum aggregation.
-   - Http Server Errors. Select the Sum aggregation.
-   - Http 4.xx. Select the Sum aggregation.
-   - Average Response Time. Select the Avg aggregation.
+   - Select **Add metric** CPU Time. Select the Sum aggregation.
+   - Select **Add metric** Http Server Errors. Select the Sum aggregation.
+   - Select **Add metric** Http 4.xx. Select the Sum aggregation.
+   - Select **Add metric** Average Response Time. Select the Avg aggregation.
 
 1. Allow the system to run for five minutes to stabilize, and then note the CPU Time, the number of HTTP 4.xx errors, and the average response time. You should see a significant number of HTTP 4xx errors (these are HTTP 408 Timeout errors), and that the average response time is several seconds. You might see the occasional HTTP server error, depending on how the webserver is coping with the burden.
 
@@ -154,4 +154,4 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. Return to the Cloud Shell that's running the client app. Select Enter to stop the app.
 
-1. In the Azure portal, set the instance count for the App Service plan back to 1.
+1. In the Azure portal, set the instance count for the App Service plan back to 1. 
