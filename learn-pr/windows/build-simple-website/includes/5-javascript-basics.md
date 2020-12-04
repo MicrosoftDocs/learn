@@ -200,4 +200,4 @@ Select the **Console** tab to see the `console.log` message, "current class name
 
 ![Screenshot of console message in Chrome](../media/chrome-console-output.png)
 
-Using the console, you get an interesting look at how the CSS theme switching is handled. Both class names are applied to the `<body>` element. However, the last class name applied, the dark theme, takes precedence. In the **Styles** tab, you can see that the dark theme rules override the light theme rules, which are shown using strike though text.
+Using the console, you get an interesting look at how the CSS theme switching is handled. Both class names are applied to the `<body>` element when you switch to dark theme. However, the last class name applied, the dark theme, takes precedence. In the **Styles** tab, you can see that the dark theme rules override the light theme rules, which are shown using strike though text.

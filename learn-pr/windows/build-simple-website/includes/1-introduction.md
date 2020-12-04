@@ -1,5 +1,5 @@
 
-It's impressive what's possible to accomplish with a website today. You can build websites, or web apps, that look and feel like native applications, but that run in your web browser. If you're interested in starting web development today, you may be faced by a dizzying array of options. In this module, we'll show you the basic components of a website, and the tools you can use to start web development. You'll use HTML, CSS, and Javascript together to build a simple website, and you'll use developer tools in the browser to check our work.
+It's impressive what's possible to accomplish with a website today. You can build websites, or web apps, that look and feel like native applications, but that run in your web browser. If you're interested in starting web development today, you may be faced by a dizzying array of options. In this module, we'll show you the basic components of a website, and the tools you can use to start web development. You'll use HTML, CSS, and Javascript together to build a simple website, and you'll use developer tools in the browser to understand what's happening.
 
 With this fundamental knowledge in place, you will have a better context to make decisions in the future about such things as choosing JavaScript frameworks to build your website.
 
@@ -9,7 +9,7 @@ Let's get started by taking a look at where we want to go.
 
 Imagine that you're a web developer, and you're asked to add support for light and dark themes to your company's website to make your site appeal to a wider range of customers. You create a simple, proof-of-concept site to demonstrate support for themes using CSS, and you write a JavaScript function to toggle the theme.
 
-When completed, your simple website will look like this, when the dark theme is selected.
+When completed, the simple website will look like this, when the dark theme is selected.
 
 ![Website showing dark theme](../media/chrome-themed-website.png)
 
@@ -17,7 +17,7 @@ When completed, your simple website will look like this, when the dark theme is 
 
 In a web page, hypertext markup language (HTML) provides your content, cascading style sheets (CSS) define the appearance of the page, and JavaScript is used to provide interactivity with the user, that is, your business logic.
 
-The content, style, and business logic are generally separated into HTML, CSS, and JavaScript files, respectively. A design principle in modern programming is the separation of concerns. Among the many reasons to separate concerns, one is simplicity and re-use. For example, by styling elements using CSS, you can apply styles to all the elements on a page, no matter the page complexity, rather than coding the appearance separately within each HTML element.
+The content, style, and business logic are separated into HTML, CSS, and JavaScript files, respectively. A design principle in modern programming is the separation of concerns. Among the many reasons to separate concerns, one is simplicity and re-use. For example, by styling elements using CSS, you can apply styles to all the elements on a page, no matter the page complexity, rather than coding the appearance separately within each HTML element.
 
 ## Learning objectives
 
@@ -27,8 +27,9 @@ In this module, you will:
 - Apply styles to page elements using CSS
 - Create themes using CSS
 - Add support for switching the theme using JavaScript
+- Inspect the website using browser developer tools
 
-You will run the site in local browser. At the end of the module, we will link to other modules that show you how to deploy the website using Azure Static Web Apps.
+You will run the site in your default browser. At the end of the module, we link to other modules that show how to deploy the website using Azure Static Web Apps.
 
 ## Prerequisites
 

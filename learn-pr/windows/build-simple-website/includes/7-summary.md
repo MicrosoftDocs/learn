@@ -1,12 +1,12 @@
 In this module, you've set up a working environment for web development. You've also created a website and tested that everything is working in a browser. We've covered a lot of ground. Look at all you've accomplished! You have:
 
-1. Downloaded and installed the tools you need for web development, and customized the editor with basic packages.
-2. Created a project directory and files to build a website.
-3. Created a heading, a paragraph, a list, and other page elements, and then linked to external files and tested the page in a browser.
-4. Applied styles to different elements and tested your site in the browser.
-5. Added support for themes using CSS.
-6. Added JavaScript to enable custom interaction with the page and switching between themes.
-7. Learned how to create a console message.
+- Downloaded and installed the tools you need for web development, and customized the editor with basic packages.
+- Created a project directory and the files to build a website.
+- Created a heading and other page elements, and then linked to external files and tested the page in a browser.
+- Applied styles to different elements and tested your site in the browser.
+- Added support for themes using CSS.
+- Added JavaScript to enable custom interaction with the page and switching between themes.
+- Learned how to create a console message.
 
 We're gathering tools and building a foundation. It can be challenging to get started, but it will be easier next time. Remember you can reuse your website as a template for future projects. As your skills and knowledge grow, you'll be more able to fulfill the vision you have for your site. It's also empowering to see an idea come to life.
 

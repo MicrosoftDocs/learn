@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+title: Summary and knowledge check
+uid: learn-windows.introduction-to-web-development.7-summary
+metadata:
+  title: Summary and knowledge check
+  description: Check your knowledge of the basics of web development, and review what you've learned and where to learn more.
+  ms.date: 12/4/2020
+  author: mmpadget
+  ms.author: quradic
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows
+  
+durationInMinutes: 5
+content: |
+    [!include[](includes/7-summary.md)]
