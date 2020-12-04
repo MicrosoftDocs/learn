@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Four multiple-choice questions
-  ms.date: 05/08/2020
+  ms.date: 11/18/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ quiz:
         - content: "Create a Markdown file and place it in the `pages` directory."
           isCorrect: false
           explanation: "Gatsby can be made to process Markdown files, but React components are what ultimately render the Markdown content. React components are also what is placed in the `pages` directory."
-    - content: "How would you set up a route for a page component?"
+    - content: "How would you set up a default url for a page component?"
       choices:
         - content: "You wouldn't. Gatsby does this for you."
           isCorrect: true
@@ -53,10 +53,10 @@ quiz:
           isCorrect: false
     - content: "What pre-steps would you need to take to deploy a Gatsby app using the Azure Static Web Apps service?"
       choices:
-        - content: "Initialize a Git repo, build the project, and push it to GitHub"
+        - content: "Commit changes to the Git repo, build the project, and push it to GitHub"
           isCorrect: false
           explanation: "These steps are mostly correct except for the `build` part. There's no need to build the project first. Azure Static Web Apps service will look for a `build` task in the `scripts` section of your package.json file and invoke that."
-        - content: "Initialize a Git repo and push it to GitHub"
+        - content: "Commit changes to the Git repo and push it to GitHub"
           isCorrect: true
           explanation: "That is all you need to do to set up automated deployment. Azure Static Web Apps uses your GitHub repository information to create a GitHub Action that automatically builds and deploys your app."
         - content: "Run `gatsby build` to create a deployable directory. Compress the resulting `build` directory into a tarball. The tarball can now be uploaded to Azure Static Web Apps service."
