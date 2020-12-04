@@ -50,7 +50,8 @@ The diagram shows your e-commerce site running in three Azure regions: East US, 
   :::column-end:::
   :::column span="3":::
 
-One answer is **Azure Traffic Manager**. Traffic Manager uses the DNS server that's closest to the user to direct user traffic to a globally distributed endpoint.
+One answer is **Azure Traffic Manager**. Traffic Manager can route traffic in a few different ways, such as to the endpoint with the lowest latency or by geography.
+With geographic traffic routing, Traffic Manager directs users to specific endpoints based on which geographic location their DNS query originates from.
   :::column-end:::
 :::row-end:::
 
@@ -58,8 +59,7 @@ The following illustration shows the role of the Traffic Manager.
 
 ![An illustration showing Azure Traffic Manager routing a user request to the nearest data center. ](../media/4-traffic-manager.png)
 
-Traffic Manager doesn't see the traffic that's passed between the client and server. Rather, it directs the client web browser to a preferred endpoint. Traffic Manager can route traffic in a few different ways, such as to the endpoint with the lowest latency.
-
+Traffic Manager doesn't see the traffic that's passed between the client and server. Rather, it directs the client web browser to a preferred endpoint. 
 Although not shown here, this setup could also include your on-premises deployment running in California. You can connect Traffic Manager to your own on-premises networks, enabling you to maintain your existing data center investments. Or you can move your application entirely to the cloud. The choice is yours.
 
 ## Compare Load Balancer to Traffic Manager
