@@ -2,7 +2,7 @@ Azure Sentinel provides the Azure Data Explorer that you can use to search and f
 
 ## Kusto Query Language
 
-The Azure Data Explorer provides you the ability to create, store, and run interactive analytics on collected data by using KQL. Azure Data Explorer offers different tools and integrations to perform data ingestion, queries, visualization, orchestration, and other operations. Azure Sentinel uses KQL to visualize and analyze the important data. You can use KQL to create complex analytical queries that include some of the following operators:
+The Azure Data Explorer provides you the ability to create,  store, and run interactive analytics on collected data by using KQL. Azure Data Explorer offers different tools and integrations to perform data ingestion, queries, visualization, orchestration, and other operations. Azure Sentinel uses KQL to visualize and analyze the important data. You can use KQL to create complex analytical queries that include some of the following operators:
 
 - Calculated columns
 - Join functions
