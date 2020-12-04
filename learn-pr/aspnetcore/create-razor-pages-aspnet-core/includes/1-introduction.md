@@ -1,4 +1,4 @@
-Imagine your company offers product data through a web API. You want to create a web UI that allows your team to manage the data exposed by the web API. You also want to structure the app in a way that you can expand and build upon. The app should be built in such a way that the view and data model concerns are separated.
+Imagine that your employer, Contoso Pets, offers product data through a web API. You want to create a web UI that allows your team to manage the data exposed by the web API. You also want to structure the app in a way that you can expand and build upon. The app should be built in such a way that the view and data model concerns are separated.
 
 In this module, you'll build a cross-platform ASP.NET Core Razor Pages web app with .NET and C#. The web app will consume an existing ASP.NET Core web API, which supports **Create**, **Read**, **Update**, and **Delete** (CRUD) operations on product data.
 

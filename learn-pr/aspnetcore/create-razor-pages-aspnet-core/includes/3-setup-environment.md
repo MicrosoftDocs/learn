@@ -11,31 +11,19 @@ Run the following command in the command shell. Be patient, as setup can take a 
 The preceding command:
 
 * Installs a specific version of the .NET SDK in the Cloud Shell environment.
-* 
+* Clones the ASP.NET Core starter code from a GitHub repository.
+* Builds the ASP.NET Core starter code.
+* Provisions an Azure App Service instance for the web API and deploys the web API's code to it.
+* Provisions an App Service instance for the Razor Pages app.
+* Displays the URL for the web API hosted in App Service.
+* Sets environment variables that are required for this module.
+* Launches the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor) to view the starter code.
 
-When the development environment has completed setup, the *:::no-loc text="ContosoPets.Ui":::* project directory opens in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor).
-
-You'll see the following list of *:::no-loc text="ContosoPets.Ui":::* project directories and files:
-
-* *:::no-loc text="Extensions/":::*
-* *:::no-loc text="Models/":::*
-* *:::no-loc text="Pages/":::*
-* *:::no-loc text="Services/":::*
-* *:::no-loc text="wwwroot/":::*
-* *:::no-loc text=".gitignore":::*
-* *:::no-loc text="appsettings.Development.json":::*
-* *:::no-loc text="appsettings.json":::*
-* *:::no-loc text="ContosoPets.Ui.csproj":::*
-* *:::no-loc text="Program.cs":::*
-* *:::no-loc text="Startup.cs":::*
-
-In addition, a web API has been deployed to a public endpoint. The *:::no-loc text="ContosoPets.Ui":::* project will provide a client front end for the web API. This endpoint will be called in a later step.
+The starter code cloned by the setup script consists of two projects. One project is an ASP.NET Core web API that vends product data. The other project is an ASP.NET Core Razor Pages project named *:::no-loc text="ContosoPets.Ui":::*. The Razor Pages project will serve as a web UI for interacting with the web API. This web API will be consumed in a later step.
 
 ## Examine the project
 
-The *:::no-loc text="ContosoPets.Ui":::* project directory is currently open in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor).
-
-The following table outlines noteworthy project files and directories. Examine each of them in the Cloud Shell editor window.
+The *:::no-loc text="ContosoPets.Ui":::* project directory is currently open in the Cloud Shell editor. The following table outlines noteworthy project files and directories. Examine each of them in the Cloud Shell editor window.
 
 | Name                                        | Description                                                                                  |
 |---------------------------------------------|----------------------------------------------------------------------------------------------|
