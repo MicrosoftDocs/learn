@@ -26,26 +26,3 @@ quiz:
       - content: "Python only"
         isCorrect: true
         explanation: "Correct! Flask is a framework for building Python web apps."
-    - content: "Which of the following are valid expression delimiters in Jinja?"
-      choices:
-      - content: "`{{` and `}}`"
-        isCorrect: false
-        explanation: "Incorrect. `{{` and `}}` are valid, but not the only valid expression delimiters in Jinja."
-      - content: "`{%` and `%}`"
-        isCorrect: false
-        explanation: "Incorrect. `{%` and `%}` are valid, but not the only valid expression delimiters in Jinja."
-      - content: "Both `{{` and `}}` and `{%` and `%}`"
-        isCorrect: true
-        explanation: "Correct! Valid expression delimiters in Jinja are `{{`, `}}`, `{%`, and `%}`. `{{`, `}}` is used for referencing template variables, and `{%`, and `%}` is used for control-of-flow statements."
-    - content: "In what subdirectory should Jinja template files be stored by default?"
-      choices:
-      - content: "<b>templates</b>"
-        isCorrect: true
-        explanation: "Correct! By default, HTML files served up by Flask must be located in a subdirectory named **templates**."
-      - content: "<b>static</b>"
-        isCorrect: false
-        explanation: "Incorrect. Flask looks in the **static** subdirectory for images, style sheets, and other static files that don't change as the application runs."
-      - content: "<b>html</b>"
-        isCorrect: false
-        explanation: "Incorrect. Flask does not look for a subdirectory named **html**."
-

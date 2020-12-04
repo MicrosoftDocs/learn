@@ -1,0 +1,3 @@
+The Azure Cosmos DB analytical store is read-only from the point of view of analytical workloads; however, there are scenarios whereby the results of analytical queries needs to be retrieved by clients that are using the Cosmos DB transactional store. 
+
+For these requirements, the results of analytical queries run against a Cosmos DB analytical store, can be written back to the Cosmos DB transactional store using Azure Synapse Apache Spark.
