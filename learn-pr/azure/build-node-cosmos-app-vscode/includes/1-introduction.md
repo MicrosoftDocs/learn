@@ -2,7 +2,7 @@ Node.js is a popular platform for building JavaScript applications that run outs
 
 Imagine you work as a software developer that builds applications for schools. You've been asked to develop an application that keeps track of students' grades for the various courses they've taken. You decide to use Cosmos DB to store the information about course grades. The application must be portable, so you decide to use JavaScript running in Node.js. Also, you're going to use Visual Studio Code as the development environment.
 
-In this module, you'll learn how to build databases with Cosmos DB. You'll use Visual Studio Code as a tool for managing Cosmos DB, and as an  environment for building the course grades application. Finally, you'll learn how to insert, update, delete, and query documents in a Cosmos DB container.
+In this module, you'll learn how to build databases with Cosmos DB. You'll use Visual Studio Code as a tool for managing Cosmos DB, and as an environment for building the course grades application. Finally, you'll learn how to insert, update, delete, and query documents in a Cosmos DB container.
 
 By the end of this module, you'll know how to use Node.js with Visual Studio Code to create and run Cosmos DB applications.
 

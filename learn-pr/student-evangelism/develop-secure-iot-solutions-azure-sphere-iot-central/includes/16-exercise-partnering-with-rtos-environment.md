@@ -12,14 +12,13 @@ In this exercise, we'll partner a high-level application to send Azure RTOS real
 
 5. Click **Select Folder** or the **OK** button to open the project.
 
-6. If you installed the Visual Studio Code Peacock extension then Visual Studio Code will turn blue. The blue colored instance is connected to the High-level application running on the Cortex-A7 core.
-
+6. If you installed the Visual Studio Code Peacock extension then Visual Studio Code will turn blue. The blue colored instance is connected to the high-level application running on the Cortex-A7 core.
 
 ## Step 2: Set your developer board configuration
 
 These labs support developer boards from Avnet and Seeed Studio. You need to set the configuration that matches your developer board.
 
-The default developer board configuration is for the Avnet Azure Sphere Starter Kit. If you have this board, there's no additional configuration required.
+The default developer board configuration is for the Avnet Azure Sphere Starter Kit Revision 1. If you have this board, there's no additional configuration required.
 
 1. Open the **CMakeList.txt** file.
 
@@ -27,15 +26,14 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 3. Uncomment the `set` command that corresponds to your Azure Sphere device developer board.
 
-   ```text
-   set(AVNET TRUE "AVNET Azure Sphere Starter Kit")
-   # set(SEEED_STUDIO_RDB TRUE "Seeed Studio Azure Sphere MT3620 Development Kit (aka Reference Design Board or rdb)")
-   # set(SEEED_STUDIO_MINI TRUE "Seeed Studio Azure Sphere MT3620 Mini Dev Board")
-   ```
+    ```text
+    set(AVNET TRUE "AVNET Azure Sphere Starter Kit Revision 1 ")
+    # set(AVNET_REV_2 TRUE "AVNET Azure Sphere Starter Kit Revision 2 ")
+    # set(SEEED_STUDIO_RDB TRUE "Seeed Studio Azure Sphere MT3620 Development Kit (aka Reference Design Board or rdb)")
+    # set(SEEED_STUDIO_MINI TRUE "Seeed Studio Azure Sphere MT3620 Mini Dev Board")
+    ```
 
 4. Save the file. This will auto-generate the CMake cache.
-
-
 
 ## Step 3: Configure the Azure IoT connection information
 
@@ -92,8 +90,6 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
     }
     ```
 
-
-
 ## Step 4: Set a breakpoint in the InterCoreHandler callback function
 
 1. Open **main.c**.
@@ -117,27 +113,23 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 2. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application that's now running the Azure Sphere device.
 
+## Step 6: Debugging high-level and real-time core applications
 
+1. When the high-level application has started it will request environment data from the real-time core application.
 
-## Step 6: Debugging High-level and Real-time core applications
+2. Without closing or stopping the high-level application, switch to the instance of Visual Studio code that you left connected to the real-time core.
 
-1. When the High-level application has started it will request environment data from the Real-time core application.
+3. In a moment or two the code execution will stop at the breakpoint set in the real-time code.
 
-2. Without closing or stopping the High-level application, switch to the instance of Visual Studio code that you left connected to the Real-time core.
+4. Step through the code on the real-time code and then press **F5** to continue execution.
 
-3. In a moment or two the code execution will stop at the breakpoint set in the Real-time code.
-
-4. Step through the code on the Real-time code and then press **F5** to continue execution.
-
-5. Switch back to the instance of Visual Studio Code connected to the High-level application. The code execution should have stopped at the breakpoint you set in the InterCoreHandler function.
+5. Switch back to the instance of Visual Studio Code connected to the high-level application. The code execution should have stopped at the breakpoint you set in the InterCoreHandler function.
 
 6. Repeat this process a few times and then remove the breakpoints so code continues to execute
 
-
-
 ## Step 7: Expected device behavior
 
-### Avnet Azure Sphere MT3620 Starter Kit
+### Azure Sphere MT3620 Starter Kit Revision 1 and 2
 
 ![The illustration shows the Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
 
@@ -159,23 +151,15 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 1. The User LED will blink every 5 seconds when connected to Azure.
 
+## Step 8: Display the last reported temperature property
 
+1. Switch to IoT Central in your browser.
 
-## Step 8: Display the actual temperature property
+1. From the sidebar menu, select **Devices**, then the **Learning Path Lab Monitor** template, then your **device**.
 
-1. Switch to Azure IoT Central in your browser.
+1. Select the **Properties** tab.
 
-2. Select **Devices**, then the **Azure Sphere** template, then your device.
-
-3. Select the **Properties** tab.
-
-    > [!NOTE]
-    > Azure IoT Central does not update immediately. It might take a minute or two for the device telemetry to be displayed.
-
-<!-- > [!div class="mx-imgBorder"]
-> ![The illustration shows how to display telemetry.](../media/iot-central-display-telemetry.png) -->
-
-:::image type="content" source="../media/iot-central-display-telemetry.png" alt-text="The illustration shows how to display telemetry.":::
+:::image type="content" source="../media/iot-central-properties-last-reported-temperature.png" alt-text="The illustration shows how to display telemetry.":::
 
 ## Step 9: Set the desired temperature
 
@@ -194,12 +178,12 @@ To set the desired temperature:
 
 1. Update the **Desired Temperature** value.
 
-2. Save the property. This will send the desired temperature property to Azure Sphere. The RGB LED color will change depending on the desired temperature chosen.
+1. Save the property. This will send the desired temperature property to Azure Sphere. The RGB LED color will change depending on the desired temperature chosen.
 
-<!-- > [!div class="mx-imgBorder"]
-> ![The illustration shows display settings.](../media/iot-central-display-settings.png) -->
+    :::image type="content" source="../media/iot-central-display-settings.png" alt-text="The illustration shows display settings.":::
 
-:::image type="content" source="../media/iot-central-display-settings.png" alt-text="The illustration shows display settings.":::
+1. Update the **Desired Sample Rate in Seconds [1..60]** value.
+1. **Save** the property. This will send the desired sample rate property to the Azure Sphere high-level application. This property will then be forwarded to the real-time core application and the sensor sample rate property will be updated.
 
 ## Close Visual Studio
 
