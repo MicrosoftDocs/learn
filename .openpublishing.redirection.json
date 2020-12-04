@@ -4334,6 +4334,67 @@
       "source_path": "learn-pr/azure/create-azure-db-for-postgresql-server/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-postgres/index",
       "redirect_document_id": false
+    },
+    {
+
+      "source_path": "learn-pr/github/create-open-source-program-github/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-open-source-program-github/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/github/create-open-source-program-github/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-open-source-program-github/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/python-flask-build-ai-web-app/3-exercise-upload-photos.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/3-exercise-create-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/python-flask-build-ai-web-app/4-exercise-extract-text.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/4-translation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/python-flask-build-ai-web-app/5-exercise-translate-text.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/5-exercise-create-translator-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/python-flask-build-ai-web-app/6-exercise-deploy-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-flask-build-ai-web-app/6-exercise-call-translator",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/host-a-web-app-with-azure-app-service/4-exercise-implement-a-web-application.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/host-a-web-app-with-azure-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/host-a-web-app-with-azure-app-service/5-deploying-code-to-app-service.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/host-a-web-app-with-azure-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/host-a-web-app-with-azure-app-service/6-exercise-deploy-your-code-to-app-service.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/host-a-web-app-with-azure-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/host-a-web-app-with-azure-app-service/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/host-a-web-app-with-azure-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-local-model-with-azure-mls/2-estimators.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls/2-training-scripts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/develop-secure-iot-solutions-azure-sphere-iot-central/4-event-driven-programming.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/develop-secure-iot-solutions-azure-sphere-iot-central/5-how-setup-azure-sphere",
+      "redirect_document_id": false
     }
   ]
 }
