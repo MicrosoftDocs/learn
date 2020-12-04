@@ -69,9 +69,7 @@ Then, deploy the application:
 ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
 ```
 
-Browse to the URL returned by the deploy action and verify you database and application is working:
-
-<!--todo add screen shot-->
+Browse to the URL returned by the deploy action and verify your database and application are working:
 
 ## Next steps
 

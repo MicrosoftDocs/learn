@@ -23,7 +23,11 @@ The `hashicorp/setup-terraform` action is a JavaScript action that sets up Terra
 
 ## Connecting to Azure
 
-It's recommended to use an Azure Service Principal when running Terraform non-interactively (such as when running Terraform in a CI server).
+An Azure service principal is an identity created for use with applications, hosted services, and automated tools to access Azure resources.
+
+This access is restricted by the roles assigned to the service principal, giving you control over which resources can be accessed and at which level.
+
+When you create a Service Principal for GitHub Actions, it requires Contributor access to an Azure subscription.
 
 ## Next steps
 
