@@ -2,6 +2,9 @@ The Create an Azure Sentinel playbook exercise in this module is an optional uni
 
 To deploy the prerequisites for the exercise, perform the following tasks.
 
+> [!NOTE]
+> If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/)
+
 ## Task 1: Deploy Azure Sentinel
 
 1. Select the following link:
