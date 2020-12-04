@@ -1,6 +1,6 @@
 Thanks to you, the Tailwind Traders Products Manager app is finished! The project was a success, and Tailwind Traders doubled, no... they TRIPLED their sales during the next holiday season thanks to their ability to quickly update their product inventory. There's a fake bonus coming your way. Don't spend it all in one place.
 
-You've done so well to get through this module. You've learned about how to read and write data to Azure Cosmos DB, what REST is and how to design APIs with it, how to configure CORS to protect your API, how to further secure your API with function keys, and you did it all from Visual Studio Code.
+You've done so well to get through this module. You've learned about how to create HTTP endpoints with Azure Functions, how to configure those endpoints to be RESTful, and how to configure CORS to protect your API. And you did it all from Visual Studio Code.
 
 Take a break, and then come back. There are many more Learn Modules waiting for you. Many more amazing things to learn and build.
 
