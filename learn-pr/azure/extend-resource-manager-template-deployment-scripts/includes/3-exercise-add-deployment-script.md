@@ -66,7 +66,7 @@ Now, you have all the prerequisites for the deployment script. You'll start with
 
 ## Add a template output
 
-Now that you have a deployment script uploading a file into Azure blob storage, you may need to reference that file location in later automation (perhaps a test to validate the file is where you think it should be?).
+Now that you have a deployment script uploading a file into Azure blob storage, you may need to reference that file location in later automation (perhaps a test to validate the file is where you think it should be.)
 
 1. After the `resources` section of the ARM template, add an output that references the URI for file as reported by the deployment script.
 
@@ -121,7 +121,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 Next, you need to create a resource group to contain the resources you will create as part of this exercise. By using a new resource group, cleaning up after the exercise will be much easier.
 
-1. From the terminal in Visual Studio Code, run this command to create the resource group for this exercise.
+From the terminal in Visual Studio Code, run this command to create the resource group for this exercise:
 
 ```azurecli
 resourceGroupName="learndeploymentscript_exercise_1"
@@ -151,39 +151,39 @@ Once the deployment is complete, you will be given a URL that points to the file
 
 1. Retrieve that file using the URL output from the template deployment to confirm our deployment script worked properly.
 
-```azurecli
-uri=$(az deployment group show --resource-group $resourceGroupName --name $deploymentName --query 'properties.outputs.fileUri.value' --output tsv)
-curl $uri
-```
+    ```azurecli
+    uri=$(az deployment group show --resource-group $resourceGroupName --name $deploymentName --query 'properties.outputs.fileUri.value' --output tsv)
+    curl $uri
+    ```
 
-You should see the following returned from the above command.
+    You see the following returned from the above command.
 
-```json
-{
-  "environment": "production",
-  "hostname": "tailwindtraders.com",
-  "Logging": {
-    "LogLevel": {
-      "Default": "Debug"
+    ```json
+    {
+      "environment": "production",
+      "hostname": "tailwindtraders.com",
+      "Logging": {
+        "LogLevel": {
+          "Default": "Debug"
+        }
+      },
+      "ApplicationInsights": {
+        "InstrumentationKey": ""
+      },
+      "AllowedHosts": "*",
+      "CosmosDb": {
+        "Host": "",
+        "Key": "",
+        "Database": "Products"
+      }
     }
-  },
-  "ApplicationInsights": {
-    "InstrumentationKey": ""
-  },
-  "AllowedHosts": "*",
-  "CosmosDb": {
-    "Host": "",
-    "Key": "",
-    "Database": "Products"
-  }
-}
-```
+    ```
 
 1. You can also review the logs (and other details about the deployment) from the Azure portal or with the following command line.
 
-```azurecli
-az deployment-scripts show-log --resource-group $resourceGroupName --name CopyConfigScript
-```
+    ```azurecli
+    az deployment-scripts show-log --resource-group $resourceGroupName --name CopyConfigScript
+    ```
 
 ### Clean up the resource group
 
@@ -235,7 +235,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 Next, you need to create a resource group to contain the resources you will create as part of this exercise. By using a new resource group, cleaning up after the exercise will be much easier.
 
-1. From the terminal in Visual Studio Code, run this command to create the resource group for this exercise.
+From the terminal in Visual Studio Code, run this command to create the resource group for this exercise:
 
 ```azurepowershell
 $ResourceGroupName="learndeploymentscript_exercise_1"
@@ -264,27 +264,27 @@ Once the deployment is complete, you will be given a URL that points to the file
 
 1. Retrieve that file using the URL output from the template deployment to confirm our deployment script worked properly.
 
-```azurepowershell
-$FileUri = Get-AzResourceGroupDeployment -ResourceGroupName $ResourceGroupName -Name $DeploymentName).Outputs.fileUri.Value
-Invoke-RestMethod $FileUri
-```
+    ```azurepowershell
+    $FileUri = (Get-AzResourceGroupDeployment -ResourceGroupName $ResourceGroupName -Name $DeploymentName).Outputs.fileUri.Value
+    Invoke-RestMethod $FileUri
+    ```
 
-You should see the following returned from the above command.
+    You see the following returned from the above command.
 
-```azurepowershell
-environment         : production
-hostname            : tailwindtraders.com
-Logging             : @{LogLevel=}
-ApplicationInsights : @{InstrumentationKey=}
-AllowedHosts        : *
-CosmosDb            : @{Host=; Key=; Database=Products}
-```
+    ```azurepowershell
+    environment         : production
+    hostname            : tailwindtraders.com
+    Logging             : @{LogLevel=}
+    ApplicationInsights : @{InstrumentationKey=}
+    AllowedHosts        : *
+    CosmosDb            : @{Host=; Key=; Database=Products}
+    ```
 
 1. You can also review the logs (and other details about the deployment) from the Azure portal or with the following command line.
 
-```azurepowershell
-Get-AzDeploymentScriptLog -ResourceGroupName $ResourceGroupName -Name CopyConfigScript
-```
+    ```azurepowershell
+    Get-AzDeploymentScriptLog -ResourceGroupName $ResourceGroupName -Name CopyConfigScript
+    ```
 
 ### Clean up the resource group
 

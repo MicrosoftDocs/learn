@@ -50,10 +50,10 @@ quiz:
         explanation: "Outputs of prior resources cannot be directly referenced from a deployment script, but they can be used to populate the arguments or environment variables."
   - content: "Deployment scripts require:"
     choices:
-      - content: "A custom container image"
+      - content: "A custom container image."
         isCorrect: false
         explanation: "There are default container images that are used by deployment scripts. A storage account (either pre-existing or created by the deployment scripts resource) is required."
-      - content: "An Azure Automation environment"
+      - content: "An Azure Automation environment."
         isCorrect: false
         explanation: "Deployment scripts are not associated to Azure Automation or Azure Functions (which are more general ways to execute automation in Azure). A storage account (either pre-existing or created by the deployment scripts resource) is required."
       - content: "A storage account."

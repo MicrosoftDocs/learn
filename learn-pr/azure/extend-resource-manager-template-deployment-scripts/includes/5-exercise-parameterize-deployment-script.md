@@ -21,9 +21,9 @@ You start with the template you created in the last exercise.
 
 Since the other team has done the hard work in creating a PowerShell script to copy multiple files, you decide to use their script in your template.
 
-1. Edit the `scriptContent` in the `properties` section to include the script provided by your partner team.
+Edit the `scriptContent` in the `properties` section to include the script provided by your partner team.
 
-    :::code language="powershell" source="code/template-with-deploymentscript-parameters.json" range="121-134" :::
+:::code language="powershell" source="code/template-with-deploymentscript-parameters.json" range="121-134" :::
 
 ## Add an environment variable
 
@@ -43,7 +43,7 @@ The script you've adopted requires some environment variables. You can specify t
 
 1. Add environment variable for `StorageContainerName`
 
-:::code language="powershell" source="code/template-with-deploymentscript-parameters.json" range="105-118" highlight="10-13":::
+    :::code language="powershell" source="code/template-with-deploymentscript-parameters.json" range="105-118" highlight="10-13":::
 
 > [!TIP]
 > Use [template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions-resource) to access common values like `[resourceGroup().name]` and `[variables()]`.
@@ -67,15 +67,15 @@ Next, you can take the parameter you just defined and pass it in to the deployme
 
 1. Add an `arguments` property to the deployment script.  The PowerShell script takes a parameter named `File`, which is a string of file names that should come from the `filesToCopy` template parameter. Make sure there are quotes around the whole argument so it gets passed in properly.
 
-> [!CAUTION]
-> This `arguments` property is invalid. If you are using the Azure Resource Manager extension in VS Code, it may flag this line. You will fix this problem in the next steps.
+    > [!CAUTION]
+    > This `arguments` property is invalid. If you are using the Azure Resource Manager extension in VS Code, it may flag this line. You will fix this problem in the next steps.
 
-```json
-"arguments": "[concat( '-File '', string(parameters('filesToCopy')), ''' )]",
-```
+    ```json
+    "arguments": "[concat( '-File '', string(parameters('filesToCopy')), ''' )]",
+    ```
 
-> [!TIP]
-> Quoting things in JSON can be hard, especially when passing in command line arguments. You can use a template variable to represent a character that's hard to escape.
+    > [!TIP]
+    > Quoting things in JSON can be hard, especially when passing in command line arguments. You can use a template variable to represent a character that's hard to escape.
 
 1. Add a template variable to represent the single quote character.
 
@@ -109,23 +109,23 @@ If it does not, either copy the example or adjust your template to match the exa
 
 Now that you've got our template set, you can validate our new deployment script by using a parameters file with new files specified.
 
-1. Either create an `azuredeploy.parameters.json` file manually or use [the VS Code extension](https://docs.microsoft.com/azure/azure-resource-manager/templates/quickstart-create-templates-use-visual-studio-code?tabs=CLI#create-a-parameter-file) to do so.
+1. Either create an *azuredeploy.parameters.json* file manually or use [the VS Code extension](https://docs.microsoft.com/azure/azure-resource-manager/templates/quickstart-create-templates-use-visual-studio-code?tabs=CLI#create-a-parameter-file) to do so.
 1. Edit the file to have two files specified:
 
-```json
-{
-    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-        "filesToCopy": {
-            "value": [
-                "swagger.Staging.json",
-                "appsettings.Staging.json"
-            ]
+    ```json
+    {
+        "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+        "contentVersion": "1.0.0.0",
+        "parameters": {
+            "filesToCopy": {
+                "value": [
+                    "swagger.Staging.json",
+                    "appsettings.Staging.json"
+                ]
+            }
         }
     }
-}
-```
+    ```
 
 ## Deploy the template
 
@@ -135,7 +135,7 @@ Now that you've got our template set, you can validate our new deployment script
 
 You need to create a resource group to contain the resources you will create as part of this exercise. By using a new resource group, cleaning up after the exercise will be much easier.
 
-1. From the terminal in Visual Studio Code, run this command to create the resource group for this exercise.
+From the terminal in Visual Studio Code, run this command to create the resource group for this exercise.
 
 ```azurecli
 resourceGroupName="learndeploymentscript_exercise_2"
@@ -165,25 +165,25 @@ Once the deployment is complete, you can validate both files were copied to your
 
 1. List the contents of the blob container.
 
-```azurecli
-storageAccountName=$(az deployment group show --resource-group $resourceGroupName --name $deploymentName --query 'properties.outputs.storageAccountName.value' --output tsv)
-az storage blob list --account-name $storageAccountName --container-name config
-```
+    ```azurecli
+    storageAccountName=$(az deployment group show --resource-group $resourceGroupName --name $deploymentName --query 'properties.outputs.storageAccountName.value' --output tsv)
+    az storage blob list --account-name $storageAccountName --container-name config
+    ```
 
-You should see the following returned from the above command.
+    You should see the following returned from the above command.
 
-```azurecli
-[
-  "swagger.Staging.json",
-  "appsettings.Staging.json"
-]
-```
+    ```azurecli
+    [
+      "swagger.Staging.json",
+      "appsettings.Staging.json"
+    ]
+    ```
 
 1. You can also review the logs (and other details about the deployment) from the Azure portal or with the following command line.
 
-```azurecli
-az deployment-scripts show-log --resource-group $resourceGroupName --name CopyConfigScript
-```
+    ```azurecli
+    az deployment-scripts show-log --resource-group $resourceGroupName --name CopyConfigScript
+    ```
 
 ### Clean up the resource group
 
@@ -201,7 +201,7 @@ az group delete --name $resourceGroupName
 
 You need to create a resource group to contain the resources you will create as part of this exercise. By using a new resource group, cleaning up after the exercise will be much easier.
 
-1. From the terminal in Visual Studio Code, run this command to create the resource group for this exercise.
+From the terminal in Visual Studio Code, run this command to create the resource group for this exercise.
 
 ```azurepowershell
 $ResourceGroupName="learndeploymentscript_exercise_2"
@@ -218,7 +218,7 @@ $TemplateParameterFile = "azuredeploy.parameters.json"
 $Today=Get-Date -Format "MM-dd-yyyy"
 $DeploymentName="deploymentscript-"+"$Today"
 New-AzResourceGroupDeployment `
-    -ResourceGroupName $ResourceGroupName
+    -ResourceGroupName $ResourceGroupName `
     -Name $DeploymentName `
     -TemplateFile $TemplateFile `
     -TemplateParameterFile $TemplateParameterFile
@@ -230,27 +230,27 @@ Once the deployment is complete, you can validate both files were copied to your
 
 1. List the contents of the blob container.
 
-```azurepowershell
-$StorageAccountName = Get-AzResourceGroupDeployment -ResourceGroupName $ResourceGroupName -Name $DeploymentName).Outputs.storageAccountName.Value
-$StorageAccount = Get-AzStorageAccount -ResourceGroupName $ResourceGroupName
-Get-AzStorageAccountBlob -Context $StorageAccount.Context -Container config |
-    Select-Object Name
-```
+    ```azurepowershell
+    $StorageAccountName = (Get-AzResourceGroupDeployment -ResourceGroupName $ResourceGroupName -Name $DeploymentName).Outputs.storageAccountName.Value
+    $StorageAccount = Get-AzStorageAccount -ResourceGroupName $ResourceGroupName
+    Get-AzStorageAccountBlob -Context $StorageAccount.Context -Container config |
+        Select-Object Name
+    ```
 
-You should see the following returned from the above command.
+    You should see the following returned from the above command.
 
-```azurepowershell
-Name
-----
-swagger.Staging.json
-appsettings.Staging.json
-```
+    ```azurepowershell
+    Name
+    ----
+    swagger.Staging.json
+    appsettings.Staging.json
+    ```
 
 1. You can also review the logs (and other details about the deployment) from the Azure portal or with the following command line.
 
-```azurepowershell
-Get-AzDeploymentScriptLog -ResourceGroupName $ResourceGroupName -Name CopyConfigScript
-```
+    ```azurepowershell
+    Get-AzDeploymentScriptLog -ResourceGroupName $ResourceGroupName -Name CopyConfigScript
+    ```
 
 ### Clean up the resource group
 

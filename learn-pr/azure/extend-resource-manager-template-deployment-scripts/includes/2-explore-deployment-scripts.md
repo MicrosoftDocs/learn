@@ -8,7 +8,7 @@ Azure Resource Manager templates are wonderful things.  They allow us to declare
 
 Deployment scripts use a [managed service identity](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) to authenticate to Azure. A managed service identity is a service principal whose credential and lifecycle are managed by the Azure platform. This identity is what the Azure PowerShell or Azure CLI commands will use to act on the environment.  Because you assign the identity, you control the scope of what the `deploymentScripts` can affect.
 
-Like other resources, the `deploymentScripts` resource can produce output that can be used by other resources in the deployment.  This lets us look up information from an external systems or provide data based on the current state of our environment to impact the remainder of the deployment.
+Like other resources, the `deploymentScripts` resource can produce output that can be used by other resources in the deployment.  This lets us look up information from an external system or provide data based on the current state of our environment to impact the remainder of the deployment.
 
 ## How deployment scripts work
 
