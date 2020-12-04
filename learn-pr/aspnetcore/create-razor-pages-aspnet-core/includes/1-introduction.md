@@ -10,7 +10,7 @@ In this module, you will:
 
 * Understand when and why to use Razor Pages for your ASP.NET Core app.
 * Use the .NET CLI to create a Razor page and its accompanying C# PageModel class.
-* Create a form that supports the app's CRUD requirements.
+* Create a form that supports the app's product data management requirements.
 * Add built-in, client-side form input validation using Razor's Input Tag Helper.
 * Add built-in, server-side model validation using data annotations.
 * Add a reference to a Data Transfer Object (DTO).
