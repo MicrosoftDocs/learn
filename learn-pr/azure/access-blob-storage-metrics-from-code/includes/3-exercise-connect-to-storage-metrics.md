@@ -49,7 +49,7 @@ A REST API responds to requests sent through the HTTP protocol. For this reason,
     SA_NAME="<Storage Account Name>"
     ```
     > [!NOTE] 
-    > In this **curl** command, the **Subscription ID** and **Resource Group Name** are at the top of the Overvieew page.  The **Storage Account Name** is thee name of the storage account you just created / page you should be on.
+    > In this **curl** command, the **Subscription ID** and **Resource Group Name** are at the top of the Overvieew page.  The **Storage Account Name** is the name of the storage account you just created / page you should be on.
 
 
 1. To formulate the correct URL for a query to list metrics, type the following command, and then press Enter:
