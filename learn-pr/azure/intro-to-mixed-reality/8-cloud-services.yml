@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-mixed-reality.8-cloud-services
+title: Mixed-reality cloud services and applications
+metadata:
+  title: Mixed-reality cloud services and applications
+  description: Learn about the variety of cloud services and applications that can be integrated with mixed-reality applications, including Azure Spatial Anchors, Azure Remote Rendering, and cognitive services.
+  ms.date: 11/17/2020
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-cloud-services.md)]

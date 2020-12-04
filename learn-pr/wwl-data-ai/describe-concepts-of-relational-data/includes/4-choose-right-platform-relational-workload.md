@@ -12,6 +12,8 @@ Hosting a relational database on-premises requires that an enterprise not only p
 
 A cloud-based approach uses virtual technology to host a company’s applications offsite. There are no capital expenses, data can be backed up regularly, and companies only have to pay for the resources they use. For those organizations that plan aggressive expansion on a global basis, the cloud has even greater appeal because it allows you to connect with customers, partners, and other businesses anywhere with minimal effort. Additionally, cloud computing gives you nearly instant provisioning because everything is already configured. Thus, any new software that is integrated into your environment is ready to use immediately once a company has subscribed. With instant provisioning, any time spent on installation and configuration is eliminated and users can access the application right away.
 
+:::image type="content" source="../media/4-on-premises-cloud.png" alt-text="Compare on-premises with cloud":::
+
 ## Understand IaaS and PaaS
 
 You generally have two options when moving your operations and databases to the cloud. You can select an IaaS approach, or PaaS.

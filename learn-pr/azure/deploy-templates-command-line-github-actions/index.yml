@@ -1,24 +1,24 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-templates-command-line-github-actions
 metadata:
-  description: Learn how to deploy Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and from GitHub Actions.
+  description: Learn how to deploy Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and GitHub Actions.
   ms.date: 10/15/2020
   author: pierreroman
   ms.author: pierrer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Automate the deployment of ARM templates by using GitHub Actions
-summary: Learn how to deploy Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and from GitHub Actions. Use linked templates to break down complex templates into templates that are more modular. 
+summary: Learn how to deploy Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and GitHub Actions. Use linked templates to break down complex templates into templates that are more modular. 
 abstract: |
   After completing this module, you'll be able to:
 
   - Choose the best way to deploy ARM templates, based on your needs.
   - Modularize your templates by using linked templates.
-  - Learn how to create a GitHub Actions to deploy templates.
+  - Learn how to create GitHub Actions to deploy templates.
 prerequisites: |
-  - Ability to navigate the Azure the portal
+  - Ability to go to the Azure the portal
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-  - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true)
+  - [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true)
   - Either:
     - The latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true)
     - The latest version of [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azure-cli-latest&azure-portal=true)

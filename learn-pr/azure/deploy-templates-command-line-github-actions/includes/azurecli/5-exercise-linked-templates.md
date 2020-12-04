@@ -1,19 +1,19 @@
 ### Sign in to Azure
 
-1. From the terminal in Visual Studio Code, run this command to sign in to Azure. Running this command will open a browser that allows you to sign in to your account.
+1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. Running this command will open a browser that allows you to sign in to your account.
 
     ```azurecli
     az login
     ```
 
-1. Once you are logged in, you see a JSON list of the subscriptions associated with this account in the terminal. If you activated the sandbox.
-1. Get the subscription ID. The command will list your subscriptions and their IDs. The subscription ID is the second column. Look for Concierge Subscription and copy the SubscriptionId (third column). It will look something like cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0
+1. After you're signed in, you see a JSON list of the subscriptions associated with this account in the terminal. If you activated the sandbox, the Concierge Subscription should be in this list.
+1. Get the subscription ID. The following command will list your subscriptions and their IDs. The subscription ID is the third column. Look for `Concierge Subscription` and copy the third column. It will look something like `cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0`.
 
     ```azurecli
     az account list -o table
     ```
 
-1. Change your active subscription to the Concierge Subscription. Be sure to substitute {Your subscription ID} with the ID of the Concierge Subscription you just got in the last command.
+1. Change your active subscription to the Concierge Subscription. Be sure to substitute `{Your subscription ID}` with the ID of the Concierge Subscription that you got in the previous command.
 
     ```azurecli
     az account set -s {Your subscription ID}
@@ -21,31 +21,33 @@
 
 ### Set the default resource group
 
-1. You now need to set the resource group created for you in the sandbox as the default resource group.  To perform that operation you first need to get the resource group name by using the following command.
+You now need to set the resource group created for you in the sandbox as the default resource group. To perform that operation, you first need to get the resource group name by using the following command:
 
-    ```azurecli
-    az group list -o table
-    ```
+```azurecli
+az group list -o table
+```
 
-    And use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**) This allows you to omit that parameter from the rest of the Azure CLI commands in this exercise.
+In this command, use the name of the resource name that you got from the previous command. (It will look like something like `learn-a73131a1-b618-48b8-af70-21af7ca420c4`.) This allows you to omit that parameter from the rest of the Azure CLI commands in this exercise.
 
-    > [!NOTE]
-    > Normally, when you use an Azure CLI command to deploy a template you need to specify the target **resource group** name. In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the [az configure](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&azure-portal=true) Azure CLI command.
+> [!NOTE]
+> Normally, when you use an Azure CLI command to deploy a template, you need to specify the target resource group name. In the exercise in this module, we're bypassing this requirement by setting the context of our deployment. We're specifying our sandbox resource group name in the next step by using the [az configure](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&azure-portal=true) Azure CLI command.
 
-    ```azurecli
-    az configure --defaults group={Resource Group Name}
-    ```
+```azurecli
+az configure --defaults group={Resource Group Name}
+```
 
-## Deploying a linked template
+## Deploy a linked template
 
-In this exercise, we will review and deploy a template that includes two linked templates.
+In this exercise, we'll review and deploy a template that includes two linked templates.
 
-1. To add a linked template to your ARM template, add a **Microsoft.Resources/deployments** resource and the **templateLink** property configured with the location of the template. In the sample template below, you will notice that there are two variables that define remote or external templates located on a GitHub repo.
+1. To add a linked template to your ARM template, add a `Microsoft.Resources/deployments` resource and the `templateLink` property configured with the location of the template. 
 
-    - "linked-template": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json"
-    - "linked-template-2": "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json"
+1. In the following sample template, notice that two variables define remote or external templates located in a GitHub repo:
 
-    Review the template and note the **"type": "Microsoft.Resources/deployments"** sections that define where and how the linked templates will be deployed.
+    - [linked-template](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json)
+    - [linked-template-2](https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json)
+
+    Review the template and note the `"type": "Microsoft.Resources/deployments"` sections that define where and how the linked templates will be deployed.
 
     The first linked template deploys a storage account. It consumes the parent parameters and deploys the storage template.
 
@@ -101,9 +103,9 @@ In this exercise, we will review and deploy a template that includes two linked 
     }
     ```
 
-1. To get started copy and paste the content of the following template code, into a file in a local directory. **C:\JSON\linkedtemplate.json** or **/mnt/c/Users/you/json/linkedtemplate.json** for example.
+1. Copy and paste the content of the preceding template into a file in a local directory. Use `C:\JSON\linkedtemplate.json or /mnt/c/Users/you/json/linkedtemplate.json`, for example.
 
-      Once you have saved that file locally, you can proceed to deploy it using the Azure CLI command to deploy at the resource group level. Namely, **[az deployment group create](https://docs.microsoft.com/cli/azure/deployment/group?view=azure-cli-latest&azure-portal=true#az-deployment-group-create)**
+1. After you've saved that file locally, deploy it at the resource group level by using the following Azure CLI command. Namely, use [az deployment group create](https://docs.microsoft.com/cli/azure/deployment/group?view=azure-cli-latest&azure-portal=true#az-deployment-group-create).
 
       ```bash
       templateFile=/mnt/c/Users/<UserName>/json/linkedtemplate.json
@@ -115,7 +117,7 @@ In this exercise, we will review and deploy a template that includes two linked 
       --template-file $templateFile
       ```
 
-      Once it completes, you should have results like the example below. Just check the **"provisioningState"** to ensure it succeeded.
+      After it finishes, you should have results like the following example. Check the `"provisioningState"` value to ensure that the deployment succeeded.
 
       ```json
       {- Finished ..
@@ -195,15 +197,15 @@ In this exercise, we will review and deploy a template that includes two linked 
       }
       ```
 
-1. To validate the results in the Azure portal, navigate to [Azure](https://portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+1. Validate the results:
 
-    1. On the left side panel, choose *Resource groups*.
+    1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription. To do that, select your avatar in the upper-right corner of the page. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+    1. On the left panel, select **Resource groups**.
     1. Select <rgn>[sandbox resource group name]</rgn>.
-    1. In the *Overview*, you see the deployment has succeeded.
-    1. Select *3 Succeeded* to see the details of the deployment. *(There may be more completed deployment depending on whether you performed the previous unit's exercises)*
+    1. In the **Overview** area, you see that the deployment has succeeded. Select **3 Succeeded** to see the details of the deployment. (There might be more completed deployments, depending on whether you performed the previous unit's exercises.)
 
     :::image type="content" source="../../media/7-portal-deployment-details.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status.":::
 
-1. You will notice that you deployed one template but 3 are listed in the deployment pane of the portal. Those three deployments correspond to the main template and the two linked templates.
+    Notice that you deployed one template, but three are listed on the deployment pane of the portal. Those three deployments correspond to the main template and the two linked templates.
 
-      :::image type="content" source="../../media/7-portal-deployment-listing.png" alt-text="Azure portal interface for the specific deployment with no resources listed.":::
+    :::image type="content" source="../../media/7-portal-deployment-listing.png" alt-text="Azure portal interface for the specific deployment with no resources listed.":::

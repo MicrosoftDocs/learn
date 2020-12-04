@@ -4,7 +4,7 @@ In this exercise, you'll create an Azure Cosmos DB Gremlin API account, database
 
 ## Create an Azure Cosmos DB account
 
-Start by creating the database in Azure, by adding an Azure Cosmos DB account that uses the Graph API.
+Start by creating the database in <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>, by adding an Azure Cosmos DB account that uses the Graph API.
 
 1. On the Azure portal menu, select **Create a resource**.
 

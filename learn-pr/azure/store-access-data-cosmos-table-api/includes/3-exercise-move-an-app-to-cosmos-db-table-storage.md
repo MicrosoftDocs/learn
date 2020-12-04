@@ -27,15 +27,13 @@ Let's start by creating a storage account. Later, you'll configure the app to st
    | Performance | Standard |
    | Account kind | StorageV2 (general-purpose v2) |
    | Replication | Locally redundant storage (LRS) |
-   | Access tier | Cool |
 
-   ![Create a storage account](../media/3-create-storage-account.png)
 
-1. On the **Advanced** page, next to **Secure transfer required**, click **Disabled** and then click **Review + create**.
+1. Click **Review + create**.
 
-1. Check your configuration, and then click **Create**.
+1. Check your configuration, and then click **Create**.  It might take a few minutes for Azure to create your new storage account.
 
-It might take a few minutes for Azure to create your new storage account.
+1. Click **Configuration** on the left hand menu. Select **Secure transfer required** set to **Disabled**.
 
 ## Clone the Lenses app
 
@@ -63,7 +61,7 @@ Next, you will configure the lenses app with the connection string of the storag
 
 1. Under **Settings**, click **Access Keys**.
 
-1. To the right of the **key1 Connection string** textbox, click the **Copy** button.
+1. To the right of the **key1 Connection string** textbox, click the **Copy** button. Save this in a note pad for latter use. 
 
    ![Copy the storage account connection string](../media/3-copy-storage-account-connection.png)
 
