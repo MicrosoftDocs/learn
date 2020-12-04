@@ -129,4 +129,4 @@ You're a database administrator. You need to create a test environment for use i
 
 The Azure portal gives you powerful tools to manage a SQL Server hosted in a virtual machine. These tools include control over automated patching, automated backups, and giving you an easy way to setup high availability.
 
-To finish this exercise select End below.
+To finish this exercise select **Done** below.
