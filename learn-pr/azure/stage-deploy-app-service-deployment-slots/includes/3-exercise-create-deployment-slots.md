@@ -107,7 +107,7 @@ To use git to deploy the source code to the web app's production slot, set up yo
     git push production
     ```
 
-1. When the deployment finishes, in the Azure portal, go to the web app's **Overview** page and then select **Browse**. Azure displays the web app:
+1. When the deployment finishes, in the Azure portal, go to the web app's **Overview** page and then select **URL**. You can double click of copy and paste. 
 
     ![The web app in the production slot](../media/3-web-app-production-slot.png)
 
@@ -127,7 +127,7 @@ Next, you'll create a deployment slot where you can stage new versions of the we
 
 1. On the **Deployment slots** page, select **Add slot**.
 
-1. In the **Name** box, enter **Staging** and then select **Add**.
+1. In the **Name** box, enter **Staging**, leave **Clone settings from** defult, and then select **Add**.
 
 1. After the deployment slot is added, select **Close**.
 
@@ -135,7 +135,7 @@ Next, you'll create a deployment slot where you can stage new versions of the we
 
 Set up the new slot to use git deployment, just like you did for the production slot. Follow these steps:
 
-1. On the Azure portal menu or from the **Home** page, select **All resources**. In the list of all resources, you'll now see two web app entries: deployment slots are represented as separate apps in the portal. Select the entry representing the staging slot to go to its **Overview** page.
+1. On the Azure portal menu or from the **Home** page, select **All resources**. In the list of all resources, you'll now see two App Service entries: deployment slots are represented as separate apps in the portal. Select the entry representing the staging slot to go to its **Overview** page.
 
 1. Under **Deployment**, select **Deployment Center**.
 
@@ -147,15 +147,15 @@ Set up the new slot to use git deployment, just like you did for the production 
 
 To use the git client to deploy source code to the new slot, add an extra remote to the git configuration. Follow these steps:
 
-1. In the Azure portal, go to the **Overview** page of the staging slot. Near the top of the page, next to **Git clone url**, select the **Copy** button.
+1. In the Azure portal, go to the **Overview** page of the staging slot. Near the top of the page, next to **Git clone uri**, select the **Copy** button.
 
     > [!NOTE]
     > If you don't see the git clone URL where it's shown in the preceding screenshot, refresh the portal. Note that the git URL for the staging slot is slightly different from the URL for the production slot, and includes the slot name.
 
-1. To add the remote for the staging slot, run the following command in the Console. Replace `git-clone-url` with the URL from the previous step.
+1. To add the remote for the staging slot, run the following command in the Console. Replace `git-clone-uri` with the URI from the previous step.
 
     ```bash
-    git remote add staging <git-clone-url>
+    git remote add staging <git-clone-uri>
     ```
 
 ## Modify the app source code and deploy the app to the staging slot
