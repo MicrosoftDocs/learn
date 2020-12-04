@@ -3,7 +3,7 @@ uid: learn.azure.build-api-azure-functions
 metadata:
   title: Build Serverless APIs with Azure Functions
   description: Use Visual Studio Code to build a JavaScript and Vue.js dashboard with a Serverless API powered by Azure Functions and Node.js.
-  ms.date: 10/02/2019
+  ms.date: 12/04/2020
   author: burkeholland
   ms.author: buhollan
   ms.topic: interactive-tutorial

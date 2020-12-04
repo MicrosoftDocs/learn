@@ -7,7 +7,7 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 1. Copy the following line, and paste it into the Sandbox terminal to the right.
 
    ```bash
-   git clone https://github.com/MicrosoftDocs/mslearn-build-api-azure-functions && cd mslearn-build-api-azure-functions/DB_SETUP && ./CREATE_DATABASE.sh
+   git clone https://github.com/MicrosoftDocs/mslearn-build-api-azure-functions && ./mslearn-build-api-azure-functions/DB_SETUP/CREATE_DATABASE.sh
    ```
 
    This will create a new database with product data. This process can take up to 10 minutes. Feel free to continue on with the Learn Module. The process will continue to run even if you leave this page.
