@@ -96,4 +96,4 @@ Notice that you can find details of the performance metrics for each query.
 
 For this query, you can see that the total duration was over 20 seconds and that it ran approximately 10,000 times.
 
-To finish this exercise select **End** below.
+To finish this exercise select **Done** below.
