@@ -43,7 +43,7 @@ def predict_best_meteor_shower_viewing(city):
 print(predict_best_meteor_shower_viewing('Abu Dhabi'))
 ```
 
-```Output
+```output
 ['Lyra', 'Aquarius', 'Orion', 'Perseus']
 ```
 
@@ -68,7 +68,7 @@ This string will return before anything else happens in the code, making sure an
 print(predict_best_meteor_shower_viewing('San Diego'))
 ```
 
-```Output
+```output
 Unfortunately, San Diego isn't available for a prediction at this time.
 ```
 
@@ -217,7 +217,7 @@ print(predict_best_meteor_shower_viewing('Abu Dhabi'))
 
 Here's your result:
 
-```Output
+```output
 In Abu Dhabi you can see the following meteor showers:
 Lyrids is best seen if you look towards the Lyra constellation on April 22, 2020.
 Eta Aquarids is best seen if you look towards the Aquarius constellation on April 22, 2020.

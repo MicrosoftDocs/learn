@@ -64,7 +64,7 @@ rock_samples.info()
 > [!NOTE]
 > The output is truncated to include only the table summary of data.
 
-```Output
+```output
  #   Column       Non-Null Count  Dtype  
 ---  ------       --------------  -----  
  0   ID           2229 non-null   int64  

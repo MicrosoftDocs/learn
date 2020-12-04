@@ -54,7 +54,7 @@ print(predict_best_meteor_shower_viewing('Beijing'))
 
 Now you should see output that includes the Chang'e meteor shower!
 
-```Output
+```output
 In Beijing you can see the following meteor showers:
 Lyrids is best seen if you look towards the Lyra constellation on April 22, 2020.
 Eta Aquarids is best seen if you look towards the Aquarius constellation on April 22, 2020.
@@ -80,7 +80,7 @@ Let's make one last change to our predictive algorithm to align with the film. F
             meteor_shower_string += meteor_shower + " is best seen if you look towards the " + constellation + " constellation on " +  best_moon_date.to_pydatetime().strftime("%B %d, %Y") + ".\n"
 ```
 
-```Output
+```output
 In Beijing you can see the following meteor showers:
 Lyrids is best seen if you look towards the Lyra constellation on April 22, 2020.
 Eta Aquarids is best seen if you look towards the Aquarius constellation on April 22, 2020.

@@ -57,7 +57,7 @@ print(sample_crewedArea_ratio)
 print(sample_payload_ratio)
 ```
 
-```Output
+```output
 0.49630268199233724
 0.0028946732226251396
 0.0014369195019157093

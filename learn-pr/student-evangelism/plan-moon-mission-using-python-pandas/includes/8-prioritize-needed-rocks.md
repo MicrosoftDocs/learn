@@ -64,7 +64,7 @@ Twenty-seven samples seem like a small amount to base a recommendation on. We ca
 low_samples.Type.unique()
 ```
 
-```Output
+```output
 array(['Basalt', 'Breccia', 'Soil', 'Core'], dtype=object)
 ```
 
@@ -72,7 +72,7 @@ array(['Basalt', 'Breccia', 'Soil', 'Core'], dtype=object)
 rock_samples.Type.unique()
 ```
 
-```Output
+```output
 array(['Soil', 'Basalt', 'Core', 'Breccia', 'Special', 'Crustal'], dtype=object)
 ```
 

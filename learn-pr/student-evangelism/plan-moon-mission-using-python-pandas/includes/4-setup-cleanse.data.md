@@ -48,7 +48,7 @@ missions.head()
 missions.info()
 ```
 
-```Output
+```output
  #   Column   Non-Null Count  Dtype 
 ---  ------   --------------  ----- 
  0   Mission  6 non-null      object
@@ -85,7 +85,7 @@ sample_total_weight = rock_samples.groupby('Mission')['Weight (kg)'].sum()
 sample_total_weight
 ```
 
-```Output
+```output
 Mission
 Apollo11     21.55424
 Apollo12     34.34238

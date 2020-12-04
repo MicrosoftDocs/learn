@@ -44,7 +44,7 @@ meteor_showers.head()
 meteor_showers.info()
 ```
 
-```Output
+```output
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 5 entries, 0 to 4
 Data columns (total 9 columns):
@@ -80,7 +80,7 @@ moon_phases.head()
 moon_phases.info()
 ```
 
-```Output
+```output
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 366 entries, 0 to 365
 Data columns (total 4 columns):
@@ -110,7 +110,7 @@ constellations.head()
 constellations.info()
 ```
 
-```Output
+```output
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 5 entries, 0 to 4
 Data columns (total 6 columns):
@@ -142,7 +142,7 @@ cities.head()
 cities.info()
 ```
 
-```Output
+```output
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 256 entries, 0 to 255
 Data columns (total 3 columns):
@@ -191,7 +191,7 @@ meteor_showers.head()
 meteor_showers.info()
 ```
 
-```Output
+```output
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 5 entries, 0 to 4
 Data columns (total 9 columns):
@@ -278,7 +278,7 @@ Now it's time to fill in the missing data.
 
 One of the .csv files is particularly interesting. The output of `moon_phases.info()` shows the following information:
 
-```Output
+```output
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 366 entries, 0 to 365
 Data columns (total 2 columns):
@@ -313,7 +313,7 @@ You could get more detailed by figuring out a more accurate percentage on your o
     moon_phases.info()
     ```
     
-    ```Output
+    ```output
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 366 entries, 0 to 365
     Data columns (total 2 columns):

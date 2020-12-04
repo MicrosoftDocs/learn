@@ -4,7 +4,7 @@ Let's take a step back and see how the number of samples compares to the amount 
 needed_samples.groupby('Type')['Weight (kg)'].sum()
 ```
 
-```Output
+```output
 Type
 Basalt     17.4234
 Breccia    10.1185
@@ -15,7 +15,7 @@ Name: Weight (kg), dtype: float64
 rock_samples.groupby('Type')['Weight (kg)'].sum()
 ```
 
-```Output
+```output
 Type
 Basalt      93.14077
 Breccia    168.88075
@@ -35,7 +35,7 @@ needed_samples = needed_samples.append(rock_samples.loc[rock_samples['Type'] == 
 needed_samples.info()
 ```
 
-```Output
+```output
  #   Column         Non-Null Count  Dtype  
 ---  ------         --------------  -----  
  0   ID             68 non-null     int64  
@@ -119,7 +119,7 @@ artemis_ave_weight = artemis_mission['Estimated sample weight (kg)'].mean()
 artemis_ave_weight
 ```
 
-```Output
+```output
 64.22588520079607
 ```
 

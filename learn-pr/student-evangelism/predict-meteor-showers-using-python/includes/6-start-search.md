@@ -15,7 +15,7 @@ meteor_showers.info()
 > [!NOTE]
 > The output is cut down to show only the columns.
 
-```Output
+```output
  #   Column               Non-Null Count  Dtype         
 ---  ------               --------------  -----         
  0   name                 5 non-null      object        
@@ -30,7 +30,7 @@ meteor_showers.info()
 moon_phases.info()
 ```
 
-```Output
+```output
  #   Column      Non-Null Count  Dtype         
 ---  ------      --------------  -----         
  0   date        366 non-null    datetime64[ns]
@@ -41,7 +41,7 @@ moon_phases.info()
 cities.info()
 ```
 
-```Output
+```output
  #   Column    Non-Null Count  Dtype  
 ---  ------    --------------  -----  
  0   city      256 non-null    object 
@@ -53,7 +53,7 @@ cities.info()
 constellations.info()
 ```
 
-```Output
+```output
  #   Column         Non-Null Count  Dtype 
 ---  ------         --------------  ----- 
  0   constellation  5 non-null      object
@@ -102,7 +102,7 @@ print(cities['city'] == 'Abu Dhabi')
 
 This code gets the following output:
 
-```Output
+```output
 0       True
 1      False
 2      False
@@ -145,7 +145,7 @@ print(cities.loc[cities['city'] == 'Abu Dhabi', 'latitude'])
 
 Here's the output:
 
-```Output
+```output
 0    24.47
 Name: latitude, dtype: float64
 ```
@@ -160,7 +160,7 @@ print(cities.loc[cities['city'] == 'Abu Dhabi', 'latitude'].iloc[0])
 
 In this case, the returned value is 24.47:
 
-```Output
+```output
 24.47
 ```
 
@@ -180,6 +180,6 @@ def predict_best_meteor_shower_viewing(city):
 print(predict_best_meteor_shower_viewing('Abu Dhabi'))
 ```
 
-```Output
+```output
 24.47
 ```
