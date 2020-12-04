@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-stack-hci-plan-deploy.8-summary
+uid: learn.azure.azure-stack-hci-plan-deploy.6-summary
 metadata:
   title: Summary
-  description: TODO
+  description: Summary
   ms.date: 09/21/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary
 durationInMinutes: 2
 content: |
-  [!include[](includes/8-summary.md)]
+  [!include[](includes/6-summary.md)]

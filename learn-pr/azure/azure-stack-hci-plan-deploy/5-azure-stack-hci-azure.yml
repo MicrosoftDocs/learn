@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-stack-hci-plan-deploy.5-azure-stack-hci-azure
+metadata:
+  title: Integrate Azure Stack HCI with Azure
+  description: Describe the primary integration options, integration with Azure management services, integration with Azure security services, integration with Azure governance and compliance services, and integration with Azure business continuity services.
+  ms.date: 09/21/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Integrate Azure Stack HCI with Azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-azure-stack-hci-azure.md)]
