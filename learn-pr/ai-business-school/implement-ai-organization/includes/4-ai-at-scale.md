@@ -23,15 +23,13 @@ The y-axis represents number of parameters. It has three intervals: 25 billion, 
 
 ## Microsoft AI at Scale initiative
 
-Through our AI at Scale initiative, we’re providing organizations with access to large multi-tasking AI models and the supercomputing resources needed to create them. This is dramatically reducing the barriers and costs associated with accessing next-generation AI capabilities.
+Through our AI at Scale initiative, we’re providing organizations with access to large multi-tasking AI models and the supercomputing resources needed to create them. Our goal is to dramatically reduce the barriers and costs associated with accessing next-generation AI capabilities.
 
 :::row:::
 :::column span="2":::
 In collaboration with OpenAI, we’ve built a supercomputer designed specifically for training large AI models.
 
-We’ve also developed our own family of large AI models, called the Microsoft Turing models. These include the world’s largest publicly available language model, the *Microsoft Turing model for natural language generation*, which has 17 billion parameters. This model has a deep understanding of grammar, context, and intended meaning. This has helped it set new benchmarks in many different language-related tasks, such as summarization, contextual prediction, and question answering.
-
-By making this breakthrough technology available to all, we hope to empower organizations, developers, and employees to unlock innovation that was previously impossible.
+We’ve also developed our own family of large AI models, called the Microsoft Turing models. These include the world’s largest publicly available language model, the *Microsoft Turing model for natural language generation*, which has 17 billion parameters. This model has a deep understanding of grammar, context, and intended meaning. It had set new benchmarks in many different language-related tasks, such as summarization, contextual prediction, and question answering.
 :::column-end:::
 :::column span="2":::
 :::image type="complex" source="../media/implement-ai-organization-2.png" alt-text="Graphic with the title “Leverage AI at Scale.”":::
@@ -41,6 +39,8 @@ Within the graphic there are three different icons: In the top left there is a s
 :::row-end:::
 
 ## Three ways to take advantage
+
+By making this breakthrough technology available to all, we hope to empower organizations, developers, and employees to unlock innovation that was previously impossible.
 
 ### Create your own multi-tasking AI models with our supercomputer
 
