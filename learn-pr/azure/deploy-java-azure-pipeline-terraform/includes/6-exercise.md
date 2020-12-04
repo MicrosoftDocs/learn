@@ -1,6 +1,6 @@
 In this unit, you'll configure GitHub actions to provision your Terraform resources.
 
-You'll configure your pipeline to act as soon as you push code to master (see on: push: branches: master), then you'll check out the code (actions/checkout@master), then do a terraform format, terraform init, terraform validate, terraform plan, terraform apply
+You'll configure your pipeline to act as soon as you push code to master (see on: push: branches: master), then you'll check out the code (actions/checkout@master), then do a terraform init, terraform plan and terraform apply.
 
 ## Set Up up your workflow
 
@@ -35,7 +35,7 @@ Once you have the required ID and Secrets, the next step is to add them the secr
 GitHub repositories have a feature known as Secrets that allow you to store sensitive information related to a project. For this exercise, store three secrets – `AZURE_CLIENT_ID`, `AZURE_CLIENT_SECRET`, `AZURE_SUBSCRIPTION_ID`, and `AZURE_TENANT_ID`.
 You'll create these secrets because they'll be used by Terraform to authenticate to Azure.
 
-To create the secrets, navigate to the GitHub repository, select the `Settings` menu and then on `Secrets`.
+To create the secrets, navigate to your forked GitHub repository, select the `Settings` menu and then on `Secrets`.
 Create a GitHub secret for each of four secrets using the values returned the Azure service principal.
 
 The result will be something like this:
