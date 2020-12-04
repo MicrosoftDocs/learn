@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.python-oo
+metadata:
+  title: Introduction to Object oriented programming with Python
+  description: This module will teach you how to model problems using Object
+    oriented programming concepts. Additionally you will learn to turn your
+    model into working code using OOP concepts like classes, attributes and
+    methods to do so.
+  ms.date: 06/04/2020
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Object oriented programming with Python
+summary: This module will teach you how to model problems using Object oriented
+  programming concepts. Additionally you will learn to turn your model into
+  working code using OOP concepts like classes, attributes and methods to do so.
+abstract: |
+  After completing this module, you'll be able to:
+  - Model problems using OOP concepts. 
+  - Describe the basic concepts involved in OOP.
+  - Distinguish classes from objects
+iconUrl: /learn/achievements/python-oo.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - vs
+prerequisites: >
+  - Basic knowledge of Python including syntax, writing and invoking functions,
+  creating variables, reading inputs and outputs from the Python console.  
+  - Familiarity using a text editor or IDE  
+  - Knowledge on how to execute a python
+  program
+  - Python keywords
+  - Knowing how to raise Exceptions in Python
+units:
+  - learn.python-oo.1-introduction
+  - learn.python-oo.2-what-is-oo
+  - learn.python-oo.3-model-your-game
+  - learn.python-oo.4-exercise-model-your-game
+  - learn.python-oo.5-game-transitions-with-methods
+  - learn.python-oo.6-exercise-game-transitions-with-methods
+  - learn.python-oo.7-exercise-extend-game
+  - learn.python-oo.8-knowledge-check
+  - learn.python-oo.9-summary
+badge:
+  uid: learn.python-oo.badge
