@@ -37,14 +37,14 @@ quiz:
     - content: Plain Text Passwords
       isCorrect: false
       explanation: "A Password is an insecure mechanism."
-  - content: "Which of the following options aren't valid GitHub Actions Types?"
+  - content: "Which of the following options isn't a valid GitHub Actions Type?"
     choices:
     - content: "JavaScript"
-      isCorrect: true
+      isCorrect: false
       explanation: "JavaScript actions can run directly on a runner machine, and separate the action code from the environment used to run the code."
     - content: "Container"
-      isCorrect: true
+      isCorrect: false
       explanation: "Docker containers package the environment with the GitHub Actions code."
     - content: "Kubernetes"
-      isCorrect: false
+      isCorrect: true
       explanation: "This action isn't a valid GitHub Action Type."
