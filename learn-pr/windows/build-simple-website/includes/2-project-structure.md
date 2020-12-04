@@ -52,4 +52,4 @@ Next, type "open in" in the search bar, then select **open in browser**, publish
 
 Switch back to the Explorer window.
 
-Way to go! Installation and setup takes a little extra time, but we only need to install and setup once. Now we're ready to create a website.
+Way to go! Installation and setup takes a little extra time, but you only need to install and setup once. Now we're ready to create a website.

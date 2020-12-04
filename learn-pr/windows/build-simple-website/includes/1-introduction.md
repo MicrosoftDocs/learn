@@ -7,7 +7,7 @@ Let's get started by taking a look at where we want to go.
 
 ## Scenario
 
-Imagine that you're a web developer, and you're asked to add support for light and dark themes to your company's website to make your site appeal to a wider range of customers. You create a simple, proof-of-concept site to demonstrate support for themes using CSS, and you write a JavaScript function to toggle the theme.
+Imagine that you're a web developer, and you're asked to make your company's website appeal to a broader range of customers, and you decide to add support for light and dark themes. You create a simple, proof-of-concept site to demonstrate support for themes using CSS, and you write a JavaScript function to toggle the theme.
 
 When completed, the simple website will look like this, when the dark theme is selected.
 

@@ -2,7 +2,7 @@ JavaScript (or *ECMAScript*) is a programming language that helps you add intera
 
 ## Link to JavaScript
 
-Like CSS, we could add JavaScript directly to the HTML page, but it's better not to. For example, you could create a popup alert, by adding `<script>alert('Hello World')</script>` anywhere in the body. The script tag `<script>` will let us link to an external JavaScript file.
+Like CSS, you could add JavaScript directly to the HTML page, but it's better not to. For example, you could create a popup alert, by adding `<script>alert('Hello World')</script>` anywhere in the body. The script tag `<script>` will let us link to an external JavaScript file.
 
 In **Visual Studio Code**, type `script:src` and press Enter (Return).
 
@@ -47,7 +47,7 @@ In **Visual Studio Code**, open the `app.js` file and type the following.
 
 ## Add a button
 
-You need some way to let the user switch between the light and dark theme in your web page. In this scenario, we do that with a button element. In your HTML page, add a `<button>` element. Put the button at the end of the list inside of a `<div>` element.
+You need some way to let the user switch between the light and dark theme in your web page. In this scenario, you do that with a button element. In your HTML page, add a `<button>` element. Put the button at the end of the list inside of a `<div>` element.
 
 ```html
 <ul>

@@ -2,7 +2,7 @@ Cascading Style Sheets (CSS) let you specify how your page should look. The basi
 
 ## External CSS
 
-In the previous unit on HTML, we put our CSS in an external file and linked it to the HTML.
+In the previous unit on HTML, you linked to an external CSS file from HTML.
 
 ```html
 ...
@@ -67,7 +67,7 @@ To preview using **Visual Studio Code**, select on `index.html` and select **Ope
 
 The webpage will open in your default browser.
 
-Are the font styles what you expected to see? It's interesting how styles cascade from `body` to `h1`. We didn't define anything for `h1`, so it inherits styling from the `body`. However, `li` takes precedence over the `body` tag because we specifically defined a style for it.
+Are the font styles what you expected to see? It's interesting how styles cascade from `body` to `h1`. We didn't define anything for `h1`, so it inherits styling from the `body`. However, `li` takes precedence over the `body` tag because you specifically defined a style for it.
 
 ## Add a light theme
 
@@ -110,7 +110,7 @@ In **Chrome**, the keyboard shortcut for **Developer Tools** is Option+Command+I
 
 ## Add a dark theme
 
-For the dark theme, we want to set up the plumbing in preparation for the next unit, in which we will enable theme switching on the web page.
+For the dark theme, you set up the plumbing in preparation for the next unit, in which you will enable theme switching on the web page.
 
 To set up support for a dark theme, add some constants to the page root in your CSS file. The `:root` selector represents the `<html>` element in the HTML page. For this kind of task, a best practice is to define a set of global CSS variables in the `:root` element. Here, you define three color variables attached to the page root.
 
