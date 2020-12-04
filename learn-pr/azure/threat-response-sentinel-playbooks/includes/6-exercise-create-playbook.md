@@ -83,6 +83,7 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box, enter **virtual machines**, and then select **Enter**.
 2. On the **Virtual machines** page, locate and select the **simple-vm** virtual machine, and then on the header bar, select **Delete**.
+3. In the **Delete virtual machine** prompt, select **Yes** to delete the virtual machine.
 
 > [!NOTE]
 > This task creates an incident based on the analytics rule that you created earlier in the exercise setup unit. Incident creation can take up to 15 minutes. Wait for it to complete before proceeding to the next step. 
