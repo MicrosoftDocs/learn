@@ -32,7 +32,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 > [!Note]
 > Wait for the deployment to complete. The deployment should take less than 5 minutes.
 
-## Task 3: Check the resources created
+## Task 2: Check the resources created
 
 1. In the Azure portal, search for **Resource groups**.
 1. Select **azure-sentinel-rg**.
