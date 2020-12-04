@@ -1,4 +1,4 @@
-You're working on an API that connects to a database. Your API connects to that database via a database connection string. In this module, you'll learn best practices for storing sensitive information like connection strings in an Azure Functions API.
+You're working on an API that connects to a database. Your API will connect to that database via a database connection string. In this module, you'll learn best practices for storing sensitive information like connection strings in an Azure Functions API.
 
 ## Store connection strings in Azure Functions
 
@@ -39,4 +39,4 @@ To access these configuration values in your Azure Functions from JavaScript, se
 let client = new CosmosClient(process.env.CONNECTION_STRING);
 ```
 
-You now know how to securely store a connection string, and how to reference that string in your application. In the next section, you'll add the database connection to your Azure Functions app and light up your API so it works.
+You now know how to securely store a connection string, and how to reference that string in your application.

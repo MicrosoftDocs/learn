@@ -5,7 +5,7 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 1. Paste the following code into the Sandbox on the right and press enter.
 
    ```bash
-   cd mslearn-build-api-azure-functions/DB_SETUP && ./CREATE_DATABASE.sh
+   cd mslearn-build-api-azure-functions/DB_SETUP && ./GET_CONNECTION_STRING.sh
    ```
 
 1. Copy the database connection string that is returned in the terminal.
