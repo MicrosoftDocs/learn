@@ -65,7 +65,7 @@ To preview using **Visual Studio Code**, select on `index.html` and select **Ope
 > [!IMPORTANT]
 > Even though you were just editing the `main.css` file, to preview the changes, you should select the `index.html` file.
 
-The webpage will open in your default browser.
+The webpage opens in your default browser.
 
 Are the font styles what you expected to see? It's interesting how styles cascade from `body` to `h1`. We didn't define anything for `h1`, so it inherits styling from the `body`. However, `li` takes precedence over the `body` tag because you specifically defined a style for it.
 
@@ -90,7 +90,7 @@ In your HTML file, update the `<body>` element with a class name, `light-theme`,
 
 To preview using **Visual Studio Code**, select on `index.html` and select **Open In Default Browser**.
 
-The webpage will open in your default browser. Notice that the light theme using a green background appears.
+The webpage opens in your default browser. Notice that the light theme using a green background appears.
 
 ![Screenshot of website with light theme applied](../media/chrome-light-theme.png)
 

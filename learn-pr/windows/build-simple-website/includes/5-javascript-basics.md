@@ -174,7 +174,7 @@ As before, even though you were just editing the `app.js` file, to preview the c
 
 To preview using **Visual Studio Code**, select `index.html` and select **Open In Default Browser**.
 
-The webpage will open in your default browser.
+The webpage opens in your default browser.
 
 ![Screenshot of website with the button](../media/chrome-light-theme-with-button.png)
 

@@ -95,7 +95,7 @@ To preview using **Visual Studio Code**, select `index.html` and select **Open I
 > [!IMPORTANT]
 > If you're having trouble, make sure you're directly selecting on the filename icon or text.
 
-The webpage will open in your default browser.
+The webpage opens in your default browser.
 
 ## View the page using developer tools
 
