@@ -9,7 +9,7 @@ In this exercise, you will create an Azure Sentinel analytics rule, delete a VM,
 - Investigate an incident.
 
 > [!NOTE]
-> To complete this exercise, you need to have completed the setup exercise earlier in the module. If you have done done so, please complete it now.
+> To complete this exercise, you need to have completed the setup exercise earlier in the module. If you have not done so, please complete it now.
 
 ## Task 1: Create an analytics rule from the Analytics rule wizard
 
