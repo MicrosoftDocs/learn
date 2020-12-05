@@ -80,7 +80,7 @@ Let's start filling in the *body* element now. Add a *heading* `<h1>`, *paragrap
 </html>
 ```
 
-An ID attribute can be used for styling one element, while the class attribute is for styling all elements of the same class.
+An ID attribute (used in the `<p>`) can be used for styling one element, while the class attribute (used in the `<li>`) is for styling all elements of the same class.
 
 Each list item `<li>` element is grouped into an unordered list `<ul>`.
 
@@ -105,11 +105,13 @@ In **Edge**, the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alte
 
 In **Chrome**, the keyboard shortcut for **Developer Tools** is Option+Command+I. (F12 also works.)
 
+![Screenshot of the Chrome developer tools](../media/chrome-developer-tools-elements-tab.png)
+
 1. Select the **Elements** tab.
 2. Roll over and select the HTML elements.
 3. Open the disclosure triangles.
 
-The Elements tab in Developer tools shows you the document object model (DOM) as rendered in the browser. When debugging, it is often important to see how the browser interprets your source code.
+The Elements tab in developer tools shows you the document object model (DOM) as rendered in the browser. When debugging, it is often important to see how the browser interprets your source code.
 
 > [!NOTE]
 > If you're using **Safari**, see the [Web Developer Tools](https://developer.apple.com/safari/tools/). When installed, choose **Safari > Preferences**, and choose **Advanced**. At the bottom of the pane, select the **Show Develop menu in menu bar** checkbox. Choose **Develop > Show Web Inspector**. For more information, check the Safari Web Inspector documentation.
