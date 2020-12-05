@@ -1,24 +1,24 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings
 metadata:
-  title: Predict basketball player efficiency ratings with machine learning and Visual Studio Code
-  description: With anonymized data from real basketball players and the Tune Squad from the upcoming film SPACE JAM A NEW LEGACY, create a machine learning model to cleanse data to be used during games and explore bimodal data distributions with Python in Visual Studio Code.
+  title: Predict basketball player efficiency ratings by using machine learning and Visual Studio Code
+  description: "Use data from basketball players in the film *Space Jam: A New Legacy* to create a machine learning model to cleanse data and explore bimodal data distributions."
   ms.date: 11/11/2020
   author: sguthals
   ms.author: shanama 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Predict basketball player efficiency ratings with machine learning and Visual Studio Code
-summary: With anonymized data from real basketball players and the Tune Squad from the upcoming film SPACE JAM A NEW LEGACY, create a machine learning model to cleanse data to be used during games and explore bimodal data distributions with Python in Visual Studio Code.
+title: Predict basketball player efficiency ratings by using machine learning and Visual Studio Code
+summary: "By using anonymized data from real and animated basketball players in the upcoming film *Space Jam: A New Legacy*, create a machine learning model to cleanse data to be used during games. Also explore bimodal data distributions by using Python in Visual Studio Code."
 abstract:  |
   In this module, you will:
-  - Use Python, Pandas, and Visual Studio Code
-  - Cleanse and manipulate data that require critical analysis
-  - Use machine learning to cleanse and complete data 
-  - Prepare data to be used for multiple customer-facing uses
+  - Use Python, pandas, and Visual Studio Code.
+  - Cleanse and manipulate data that requires critical analysis.
+  - Use machine learning to cleanse and complete data. 
+  - Prepare data to be used for multiple customer-facing purposes.
 prerequisites: | 
-  - [Visual Studio Code, with the Python Extension installed](https://aka.ms/LearnOnVSCode)
-  - A local Python environment set up, as seen in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)
+  - [Visual Studio Code, with the Python extension installed](https://aka.ms/LearnOnVSCode)
+  - A local Python environment, such as the one used in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)
 iconUrl: /learn/achievements/generic-badge.svg # TODO change
 levels:
 - beginner
