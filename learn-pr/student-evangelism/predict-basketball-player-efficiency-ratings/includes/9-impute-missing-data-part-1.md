@@ -59,7 +59,7 @@ You'll have to handle `PER` differently, in the next unit.
 
 ## Impute missing values by using average values
 
-To impute the missing values in the normally-enough distributed columns, use the `fillna()` DataFrame method. In the code, state that you're working with only three of the columns (`player_df[['GP','MPG']]`). Also state that you want to replace the `NaN` values in each of those columns with those columns' respective mean values (`fillna(value=player_df[['GP','MPG']].mean())`). (Once again, stringing together pandas methods makes your job much easier.)
+To impute the missing values in the normally-enough distributed columns, use the `fillna()` DataFrame method. In the code, state that you're working with only three of the columns (`player_df[['GP','MPG']]`). Also state that you want to replace the `NaN` values in each of those columns with those columns' respective mean values: `fillna(value=player_df[['GP','MPG']].mean())`. (Once again, stringing together pandas methods makes your job much easier.)
 
 ```python
 # Replace the missing values in 'GP' and 'MPG' with the mean values of the respective columns.

@@ -10,7 +10,7 @@ As fans, we can't influence the methodology the NBA follows to gather data. This
 
 Because we're fans of the sport, and not necessarily the scientists who gather the data, you'll explore the data by looking for missing values, outlying values, and patterns.
 
-Data scientists commonly find themselves in this sort of situation. Collecting data can take years. So when you're first starting out in an area, you might have to rely on previously collected data to guide initial findings. As you know from the [data science lifecyle](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/overview?azure-portal=true), the data science process is iterative. If you discover patterns and insights from the current data, you can perhaps influence the data that's collected in the future! 
+Data scientists commonly find themselves in this sort of situation. Collecting data can take years. So when you're first starting out in an area, you might have to rely on previously collected data to guide initial findings. As you know from the [data science lifecycle](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/overview?azure-portal=true), the data science process is iterative. If you discover patterns and insights from the current data, you can perhaps influence the data that's collected in the future! 
 
 ## Explore the data
 
@@ -43,16 +43,16 @@ The output shows several ambiguous column headings. Let's break down those headi
 | Unnamed: 5 | Unknown data |
 | GP | Games played by a player in a season |
 | MPG | Average minutes played by a player per game |
-| TS% | True shooting percentage, a player's shooting percentage, taking free throws and three-pointers into account |
+| TS% | True shooting percentage, the player's shooting percentage, taking into account free throws and three-pointers |
 | AST | Assist ratio, the percentage of a player's possessions that end in an assist |
 | TO | Turnover ratio, the percentage of a player's possessions that end in a turnover |
 | USG | Usage rate, the number of possessions a player uses per 40 minutes |
 | ORR | Offensive rebound rate |
 | DRR | Defensive rebound rate |
 | REBR | Rebound rate, the percentage of missed shots that a player rebounds |
-| PER | Player efficiency rating, a measure of a player's per-minute productivity on the court |
+| PER | Player efficiency rating, the measure of a player's per-minute productivity on the court |
 
-A lot of these data points make sense in the context of basketball. But even without a technical understanding of each of these columns, you can still start to cleanse the data. So if you're not well versed in these terms, don't worry! You can still gain many insights into the data.
+Many of these data points make sense in the context of basketball. But even without a technical understanding of each of these columns, you can still start to cleanse the data. So if you're not well versed in these terms, don't worry! You can still gain many insights into the data.
 
 The important thing to understand is that each of these columns lists data that can be counted during a game, except for the PER column. *PER* (player efficiency rating) is a calculation based on all of the other player stats. It determines "how good" a player is. 
 
@@ -124,6 +124,6 @@ dtypes: float64(15), int64(1)
 memory usage: 6.0 KB
 ```
 
-There are 47 rows, and you see that the two unnamed columns have 47 `NaN` values. So you can deduce at least two columns can be eliminated from the DataFrame.
+There are 47 rows, and you see that the two unnamed columns have 47 `NaN` values. So you can deduce that at least two columns can be eliminated from the DataFrame.
 
 © 2020 Warner Bros. Ent. All Rights Reserved.

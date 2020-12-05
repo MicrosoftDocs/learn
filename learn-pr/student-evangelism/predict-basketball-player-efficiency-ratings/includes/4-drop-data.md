@@ -160,7 +160,7 @@ The dataset is small enough that you could manually drop the problem rows. But t
 
 The `how` parameter in `dropna()` can be set to only `'any'` or `'all'`. Neither of those settings will get you what you need. Instead, use the `thresh` parameter.
 
-`thresh` is short for *threshold*. This parameter lets you set the minimum number of non-`NaN` values a row or column needs to avoid being dropped by `dropna()`. To remove specific rows from the DataFrame, set `thresh` to `12`.
+The `thresh` parameter refers to *threshold*. This parameter lets you set the minimum number of non-`NaN` values a row or column needs to avoid being dropped by `dropna()`. To remove specific rows from the DataFrame, set `thresh` to `12`.
 
 ```python
 # Drop all rows that don't have at least 12 non-NaN values.

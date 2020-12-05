@@ -35,7 +35,7 @@ As a review, the following table describes the data you're working with in the d
 | team_pace | Average number of possessions a team uses per game |
 | GP | Games played by a player in a season |
 | MPG | Average minutes played by a player per game |
-| TS% | True shooting percentage, the player's shooting percentage, taking free throws and three-pointers into account |
+| TS% | True shooting percentage, the player's shooting percentage, taking into account free throws and three-pointers  |
 | AST | Assist ratio, the percentage of a player's possessions that end in an assist |
 | TO | Turnover ratio, the percentage of a player's possessions that end in a turnover |
 | USG | Usage rate, the number of possessions a player uses per 40 minutes |

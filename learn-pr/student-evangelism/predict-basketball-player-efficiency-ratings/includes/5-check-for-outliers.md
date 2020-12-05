@@ -21,7 +21,7 @@ player_df.describe()
 | 75% | 36.500000 | 1824.500000 | 1451.550000 | 112.150000 | 64.000000 | 36.900000 | 0.619000 | 30.500000 | 14.750000 | 34.800000 | 5.900000 | 20.150000 | 13.000000 | 28.395000 |
 | max | 47.000000 | 2062.000000 | 1542.000000 | 118.800000 | 69.000000 | 38.800000 | 0.645000 | 33.200000 | 16.200000 | 36.700000 | 8.300000 | 29.400000 | 16.400000 | 34.260000 |
 
-Here you see, for example, that the mean points for all 43 players is 24.27. But look at the numbers for min (1), 25% (12.5), 50% (24), 75% (36.5), and max (47). Here, the min points (1) might be an outlier. You can use box plots to visualize the values and determine possible outliers.
+Here you see, for example, that the mean for all 43 players is 24.27 points. But look at the numbers for min (1), 25% (12.5), 50% (24), 75% (36.5), and max (47). Here, the min points (1) might be an outlier. You can use box plots to visualize the values and determine possible outliers.
 
 ## Create box plots for columns
 

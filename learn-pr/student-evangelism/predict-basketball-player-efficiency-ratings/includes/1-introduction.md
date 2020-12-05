@@ -1,4 +1,4 @@
-:::image type="content" source="../media/SpaceJamEndCard.png" alt-text="Logo for Space Jam: A New Legacy.":::
+:::image type="content" source="../media/space-jam-end-card.png" alt-text="Logo for Space Jam: A New Legacy.":::
 
 Welcome to the jam! In the animated and live-action film *Space Jam: A New Legacy*, NBA champion and cultural icon LeBron James goes on an epic adventure alongside the timeless character Bugs Bunny. Along with director Malcolm D. Lee, the innovative filmmaking team includes Ryan Coogler and Maverick Carter.  
 
