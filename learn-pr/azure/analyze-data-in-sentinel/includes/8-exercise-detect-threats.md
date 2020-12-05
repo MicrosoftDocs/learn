@@ -4,8 +4,8 @@ As a security engineer working for Contoso, you recently noticed that a signific
 
 In this exercise, you'll explore an Azure Sentinel analytics rule and perform the following tasks:
 - Create an incident rule from an existing template.
-- Create a scheduled query rule by using your own KQL code.
-- Adjust KQL from an existing analytic rule.
+- Invoke an incident and review the associated actions.
+- Create an analytics rule from an existing template.
 
 > [!NOTE] 
 > You need to complete the Exercise Setup unit, in order to be able to complete this exercise. If you have not done so, complete it now, and then continue with the exercise steps.
