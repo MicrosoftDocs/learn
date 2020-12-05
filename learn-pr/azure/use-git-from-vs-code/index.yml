@@ -31,6 +31,7 @@ units:
 - learn.azure.use-git-from-vs-code.introduction
 - learn.azure.use-git-from-vs-code.clone-branch
 - learn.azure.use-git-from-vs-code.exercise-clone-branch
+- learn.azure.use-git-from-vs-code.stage-commit
 - learn.azure.use-git-from-vs-code.exercise-stage-commit
 - learn.azure.use-git-from-vs-code.knowledge-check
 - learn.azure.use-git-from-vs-code.summary

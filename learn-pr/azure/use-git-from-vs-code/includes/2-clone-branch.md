@@ -34,19 +34,3 @@ Creating a new branch and committing some new code creates a new commit at the e
 ## Next steps
 
 While those steps can be done from the command line or many editors, we're going to reproduce that structure in the next exercise with the help of Visual Studio Code's tight integration with Git.
-
-
-----
-<!-- 
-
-### Local vs Remotes
-
-### What is a unstaged changes?
-
-### What is a staged changes?
-
-### What is a commit?
-
-### What is a push?
-
- -->
