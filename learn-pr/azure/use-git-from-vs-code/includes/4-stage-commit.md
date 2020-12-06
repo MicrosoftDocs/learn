@@ -25,13 +25,13 @@ A staged change is a file has been added to the staging area. They are part of t
 
 A commit is a combination of a log message and the content of the files that were previously staged. This new commit has a hash assigned and will represent the new modifications to your files. The staging area is then cleared as the changes are now persisted into the local repository.
 
-:::image type="content" source="../media/4-exercise-stage-commit-03.png" alt-text="Staging files from your working directory":::
+:::image type="content" source="../media/4-exercise-stage-commit-03.png" alt-text="Committing files to your local repository":::
 
 ### What is a `push` command?
 
 The push command updates your remote repository with your local changes. This command is the final step to ensure your local changes become permanent on GitHub. Once the `push` command has been done, any contributors to your GitHub project will have access to new updated repository.
 
-:::image type="content" source="../media/4-exercise-stage-commit-04.png" alt-text="Staging files from your working directory":::
+:::image type="content" source="../media/4-exercise-stage-commit-04.png" alt-text="Pushing files from the local repository to the remote repository":::
 
 ## Next Steps
 
