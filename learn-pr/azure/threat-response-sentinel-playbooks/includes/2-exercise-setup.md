@@ -38,14 +38,14 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 3. Sort the list of resources by **Type**.
 4. The resource group should contain the resources displayed in the following table.
 
-    | Name  | Type  | Description |
+    |Name|Type|Description|
     |---|---|---|
-    | *yourname*-sentinel | Log Analytics Workspace | Log Analytics workspace used by Azure Sentinel. |
-    | SecurityInsights(*yourname*-sentinel) | Solution | Security insights for Azure Sentinel. |
-    | simple-vm| Virtual machine | Virtual machine used in the demonstration. |
-    | simple-vmNetworkInterface | Network interface | Network interface for the VM. |
-    | st1*xxxxx* | Storage account | Storage account used by the virtual machine. |
-    | vnet1 | Virtual network | Virtual network for the virtual machine. |
+    |*yourname*-sentinel|Log Analytics workspace|Log Analytics workspace used by Azure Sentinel.|
+    |simple-vmNetworkInterface|Network interface|Network interface for the VM.|
+    |SecurityInsights(*yourname*-sentinel)|Solution|Security insights for Azure Sentinel.|
+    |st1*xxxxx*|Storage account|Storage account used by the virtual machine.|
+    |simple-vm|Virtual machine|Virtual machine used in the demonstration.|
+    |vnet1|Virtual network|Virtual network for the VM.|
 
 ## Task 3: Configure Azure Sentinel Connectors
 
