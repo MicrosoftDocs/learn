@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Visualize data using Azure Sentinel workbooks
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
   [!include[](includes/7-exercise-visualize-data.md)]
