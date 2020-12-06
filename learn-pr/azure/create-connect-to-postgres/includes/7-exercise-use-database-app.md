@@ -5,7 +5,7 @@ Using the Azure Cloud Shell, we can deploy a ASP.NET app,
 1. In the Azure Cloud Shell window on the right side of your screen, run the following command to download the data files and application code for the university system.
 
 ```bash
-git clone https://github.com/TomReidNZ/payment-app.git payment-app
+git clone https://github.com/MicrosoftDocs/mslearn-create-connect-postgresql.git payment-app
 ```
 
 2. Run these commands to move the sample data to its own folder and list the files in the folder.
