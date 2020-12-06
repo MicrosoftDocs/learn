@@ -15,7 +15,8 @@ In this exercise, you will explore logs and Azure Sentinel workbooks. You will p
 2. On the **Azure Sentinel** page, on the menu bar on the left, in the **General** section, select **Logs**.
 3. On the **Azure Sentinel | Logs** page, in the **Tables** pane, from the **Group by: Solution** drop-down menu, select **Category**.
 
-> [!Note]
+> [!NOTE]
+
 > When you open the **Logs** page for the first time, you may be redirected to the **Queries** window. Close the **Queries** window and return to the **New Query 1** section.
 
 4. In the **Tables** pane, from the list of tables, expand the **Azure Resources** category, move the mouse<!-- This won't pass compliance, as not everyone uses a mouse. Suggest changing to "hover." --> over the **Azure Activity** table, and then select **Preview data**.
@@ -30,7 +31,7 @@ In this exercise, you will explore logs and Azure Sentinel workbooks. You will p
 
 5. Select **Queries** in the left pane. This pane includes example queries that you can add to the query window. If you&#39;re using your own workspace, you should have a variety of queries in multiple categories, but if you&#39;re using the demonstration environment, you might only see a single **Log Analytics workspaces** category.
 
-> [!Note]
+> [!NOTE]
 
 > You can try to practice writing queries in the following [demonstration environment](https://ms.portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade).
 
