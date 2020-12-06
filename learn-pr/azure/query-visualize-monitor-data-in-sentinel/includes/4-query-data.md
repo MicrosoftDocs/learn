@@ -1,8 +1,8 @@
-Azure Sentinel provides the Azure Data Explorer that you can use to search and filter collected data.
+Azure Sentinel provides the Kusto Query Language that you can use to search and filter collected data.
 
 ## Kusto Query Language
 
-The Azure Data Explorer provides you the ability to create,  store, and run interactive analytics on collected data by using KQL. Azure Data Explorer offers different tools and integrations to perform data ingestion, queries, visualization, orchestration, and other operations. Azure Sentinel uses KQL to visualize and analyze the important data. You can use KQL to create complex analytical queries that include some of the following operators:
+The Kusto Query Language provides you the ability to create,  store, and run interactive analytics on collected data by using KQL. Azure Data Explorer offers different tools and integrations to perform data ingestion, queries, visualization, orchestration, and other operations. Azure Sentinel uses KQL to visualize and analyze the important data. You can use KQL to create complex analytical queries that include some of the following operators:
 
 - Calculated columns
 - Join functions
@@ -66,9 +66,9 @@ For more information, refer to the Microsoft [Log analytics tutorial](https://do
 
 You can also use [Azure Data explorer tutorial](https://docs.microsoft.com/azure/data-explorer/kusto/query/tutorial?pivots=azuredataexplorer) to learn about KQL.
 
-## Azure Monitor Community repository on GitHub
+> [!NOTE]
 
-The [Azure Monitor Community](https://github.com/microsoft/AzureMonitorCommunity) repository on GitHub contains log queries, workbooks, and alerts, shared by Microsoft and community contributors to help Azure Monitor users make the most of it. You can use many of these ready-to-use queries and workbooks in Azure Sentinel for queries, visualization, and reporting on security threats and vulnerabilities.
+Azure Sentinel Log Analytics doesn't support all the KQL syntax that is used in Azure Data Explorer.
 
 ## Azure Sentinel repository on GitHub
 
