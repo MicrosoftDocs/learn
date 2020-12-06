@@ -42,8 +42,8 @@ The rest of the page also contains tables and charts that are interactive and by
 
 :::image type="content" source="../media/05-Links.PNG" alt-text="Screenshot of the links that can open the query in Azure Data Explorer or pin the query in dashboard." border="true":::
 
-> [!Note]
-You can also pin the query step in the private or shared dashboard for quick retrieval.
+> [!NOTE]
+> You can also pin the query step in the private or shared dashboard for quick retrieval.
 
 ## Edit the query from the workbook
 
