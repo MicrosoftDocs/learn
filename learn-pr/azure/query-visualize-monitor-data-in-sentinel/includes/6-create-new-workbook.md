@@ -4,7 +4,7 @@ In addition to using built-in templates to create a customized workbook, you can
 
 You can create a custom workbook by selecting **+Add workbook** on the header bar from the **Workbooks** page in Azure Sentinel. The **New workbook** page opens, which contains a basic analytics query to get you started.
 
-> [!Tip]
+> [!TIP]
 > Each workbook that you create is saved as a workbook resource in the Azure Sentinel resource group.
 
 You can start building your workbook by selecting **Edit** on the **New Workbook** page, and then again select the **Edit** option to change the text that appears in the new workbook template.
@@ -25,7 +25,7 @@ You can add a new element to your workbook by selecting **+Add** as the followin
 
 You can use text blocks to interpret your security data, section headings, telemetry data, and other information. You need to edit the text using the Markdown markup language, which provides different formatting options for headings, font styles, hyperlinks, and tables.
 
-> [!Note]
+> [!NOTE]
 > Markdown is a markup language that you can use to format text in plain-text documents. For more information on how to format text by using Markdown controls, refer to the following [Markdown guide](https://www.markdownguide.org/getting-started/).
 
 After you add the text, you can select the **Preview** tab to preview how your content will appear. Finally, when you complete editing the text, select the **Done Editing** option.
