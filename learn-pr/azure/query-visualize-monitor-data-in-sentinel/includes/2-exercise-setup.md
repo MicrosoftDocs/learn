@@ -2,11 +2,14 @@ The Query and visualize data in Azure Sentinel exercise in this module is an opt
 
 To deploy the prerequisites for the exercise, perform the following tasks.
 
+> [!NOTE]
+> If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/)
+
 1. Select the following link.
 
 [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FWayPointVenturesOrg%2Ftemplates%2Fmain%2Fsentinel-deploy%2FSentinelTemplate.json)
 
-2. You will be prompted to sign in your Azure subscription.
+2. You will be prompted to sign in to your Azure subscription.
 3. On the **Custom deployment** page, provide the following information:
 
 |||
@@ -29,9 +32,9 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 ## Task 2: Check the resources created
 
 1. In the Azure portal, search for **Resource groups**.
-1. Select **azure-sentinel-rg**.
-1. Sort the list of resources by **Type**.
-1. The resource group should contain the resources listed in the following table.
+2. Select **azure-sentinel-rg**.
+3. Sort the list of resources by **Type**.
+4. The resource group should contain the resources listed in the following table.
 
     |Name|Type|Description|
     |---|---|---|
@@ -41,6 +44,9 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     |simple-vmNetworkInterface|Network interface|Network interface for the VM.|
     |st1*xxxxx*|Storage account|Storage account used by the virtual machine.|
     |vnet1|Virtual network|Virtual network for the VM.|
+    
+> [!Note]
+> The resources deployed and configuration steps completed in this exercise are required in the next exercise. If you intended completing the next exercise do not delete the resources from this exercise.
 
 ## Task 3: Configure Azure Sentinel connectors
 
