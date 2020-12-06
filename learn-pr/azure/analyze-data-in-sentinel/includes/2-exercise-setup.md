@@ -27,7 +27,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 4. Select the **Review + create**, and then select **Create**.
 
-:::image type="content" source="../media/07-Custom-Deployment.PNG" alt-text="Screenshot of the Custom Deployment page." border="true":::
+:::image type="content" source="../media/02-Custom-Deployment.PNG" alt-text="Screenshot of the Custom Deployment page." border="true":::
 
 > [!Note]
 > Wait for the deployment to complete. The deployment should take less than 5 minutes.
