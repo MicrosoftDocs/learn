@@ -24,7 +24,7 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 
 | **Settings** | **Value** |
 | --- | --- |
-| Subscription | Provide a name for the Azure subscription you are using in this lab. |
+| Subscription | Select your Azure subscription. |
 | Resource group | Select the resource group of your Azure Sentinel service. |
 | Logic App name | **ClosingIncident** *(you can choose any name)* |
 | Select the location | **Region** |
@@ -39,18 +39,18 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 6. After the deployment is complete, select **Go to resource**.
 7. In the **Logic Apps Designer** pane, scroll down and select **Blank Logic App.**
 8. In the search field, enter and select **Azure Sentinel**.
-9. On the **Triggers** tab, select **When a response to an Azure Sentinel Alert is triggered (preview)**.
+9. On the **Triggers** tab, select **When a response to an Azure Sentinel alert is triggered (preview)**.
 
 :::image type="content" source="../media/06-Azure-Sentinel-Triger.PNG" alt-text="Screenshot of the Azure Sentinel trigger." border="true":::
 
-10. On the **Azure Sentinel** page, verify that for the tenant in the drop-down menu, **Default Directory** is selected, and then select **Sign in**.
+10. On the **Azure Sentinel** page, set the drop-down menu to **Default Directory**, and then select **Sign in**.
 
 :::image type="content" source="../media/06-Sign-in-AADTenant.PNG" alt-text="Screenshot of the authorizing API connection." border="true":::
 
 11. Provide the credentials for your Azure subscription, and then select **+ New step**.
 12. In the **Choose an operation** window, in the search field, enter and select **Azure Sentinel**.
-13. On the **Actions** tab, locate and select **Alert-Get Incident (Preview)**.
-14. In the **Alert-Get Incident (Preview)** window, provide the following inputs, and then select **New Step**.
+13. On the **Actions** tab, locate and select **Alert-Get incident (Preview)**.
+14. In the **Alert-Get Incident (Preview)** window, provide the following inputs, and then select **+ New step**.
 
 > [!TIP]
 > When you select a field, a new window opens to help you fill these fields with dynamic content. On the **Dynamic content** tab, in the search box, you can start entering **Resource group** for example, and then you can select the entry from the list, as the following screenshot displays.
@@ -76,12 +76,12 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 | Identifier | From the drop-down menu, select **Alert**. |
 | Specify alert / incident | **System Alert ID** |
 | Specify status | From the drop-down menu, select **Closed**. |
-| Close reason | From the drop-down menu select **Custom Value**, and then enter **Incident Resolved**. |
+| Close reason | From the drop-down menu select **Enter custom value**, and then enter **Incident Resolved**. |
 | Close reason text | Write descriptive text. |
 
 :::image type="content" source="../media/06-Change-Incident-Status.PNG" alt-text="Screenshot of the Get Incident status." border="true":::
 
-18. After you save the logic app, close the Logic Apps Designer.
+18. Choose **Save**, and then close the Logic Apps Designer.
 
 ### Task 2: Invoke an incident and review the associated actions
 
