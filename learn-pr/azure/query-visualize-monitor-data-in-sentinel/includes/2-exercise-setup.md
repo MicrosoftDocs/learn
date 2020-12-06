@@ -26,7 +26,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 :::image type="content" source="../media/02-Custom-Deployment.PNG" alt-text="Screenshot of the Custom Deployment page." border="true":::
 
-> [!Note]
+> [!NOTE]
 > Wait for the deployment to complete. The deployment should take less than 5 minutes.
 
 ## Task 2: Check the resources created
@@ -45,7 +45,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     |st1*xxxxx*|Storage account|Storage account used by the virtual machine.|
     |vnet1|Virtual network|Virtual network for the VM.|
     
-> [!Note]
+> [!NOTE]
 > The resources deployed and configuration steps completed in this exercise are required in the next exercise. If you intended completing the next exercise do not delete the resources from this exercise.
 
 ## Task 3: Configure Azure Sentinel connectors
@@ -61,6 +61,6 @@ In this task, you will deploy an Azure Sentinel connector to Azure Activity.
 
 :::image type="content" source="../media/02-Azure-Sentinel-Connector.PNG" alt-text="Screenshot of the Azure Sentinel Data connectors page." border="true":::
 
-> [!Note]
+> [!NOTE]
 > The connector for Azure Activity could take 15 minutes to deploy. You can proceed with the rest of the steps in the exercise and with the subsequent units in this module.
 
