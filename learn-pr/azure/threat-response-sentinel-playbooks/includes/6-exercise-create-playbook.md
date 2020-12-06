@@ -33,7 +33,8 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 
 5. Select  **Review + Create**, and then select  **Create**.
 
-**Note**: Wait for the deployment to complete. The deployment should take less than 1 minute.
+> [!NOTE]
+> Wait for the deployment to complete. The deployment should take less than 1 minute.
 
 6. After the deployment is complete, select **Go to resource**.
 7. In the **Logic Apps Designer** pane, scroll down and select **Blank Logic App.**
