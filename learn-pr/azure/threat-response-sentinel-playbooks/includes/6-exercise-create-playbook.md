@@ -12,6 +12,9 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 > [!NOTE]
 > If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/)
 
+> [!NOTE] 
+> You need to complete the Exercise Setup unit, in order to be able to complete this exercise. If you have not done so, complete it now, and then continue with the exercise steps.
+
 ### Task 1: Work with Azure Sentinel playbooks
 
 1. In the Azure portal, search for and select Azure Sentinel, and select the previously created Azure Sentinel workspace.
@@ -114,8 +117,8 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 ### Clean up the resources
 
 1. In the Azure portal, search for **Resource groups**.
-1. Select **azure-sentinel-rg**.
-1. On the header bar, select **Delete resource group**.
-1. In the **TYPE THE RESOURCE GROUP NAME:** field, enter the name of the resource group **azure-sentinel-rg** and select **Delete**. 
+2. Select **azure-sentinel-rg**.
+3. On the header bar, select **Delete resource group**.
+4. In the **TYPE THE RESOURCE GROUP NAME:** field, enter the name of the resource group **azure-sentinel-rg** and select **Delete**. 
 
 
