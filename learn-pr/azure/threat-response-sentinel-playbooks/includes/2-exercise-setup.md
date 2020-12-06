@@ -49,8 +49,8 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 ## Task 3: Configure Azure Sentinel Connectors
 
-1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
-2. On the **Azure Sentinel** page, on the menu bar, in the **Configuration** section, select **Data connectors**.
+1. In the Azure portal, search for **Azure Sentinel**, and then select the previously created Azure Sentinel workspace.
+2. On the **Azure Sentinel | Overview** page, on the menu bar, in the **Configuration** section, select **Data connectors**.
 3. In the **Data connectors** pane, search for and select **Azure Activity**. In the details pane, select **Open connector page**.
 4. In the **Azure Activity** pane, select the **Configure Azure Activity logs** link.
 5. Select your subscription, and then select **Connect**.
@@ -66,13 +66,13 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Azure Sentinel workspace.
 2. On the **Azure Sentinel** page, on the menu bar, in the **Configuration** section, select **Analytics**.
 3. On the **Azure Sentinel | Analytics** page, select **Create** and then select **Scheduled Query Rule**.
-4. On the **General** page, provide the inputs in the following table, and then select  **Next:Set rule logic**.
+4. On the **General** page, provide the inputs in the following table, and then select  **Next: Set rule logic >**.
 
   |||
   | --- | --- |
-  | Name | Provide a descriptive name to explain what type of suspicious activity the alert detects. |
+  | Name | Provide a descriptive name such as **Delete Virtual Machines** to explain what type of suspicious activity the alert detects. |
   | Description | Enter a detailed description that will help other security analysts understand what the rule does. |
-  | Tactics | From the **Tactics** drop-down menu, choose one among the available categories of attacks to classify the rule following the MITRE tactics. |
+  | Tactics | From the **Tactics** drop-down menu, choose **Initial Access** category to classify the rule following the MITRE tactics. |
   | Severity | Select the **Severity** drop-down menu to categorize the level of importance of the alert as one of four options: High, Medium, Low, or Informational. |
   | Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generates a large number of false positives. |
 
@@ -87,7 +87,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 ```
 
 6. In the **Query Scheduling** section, you can configure how often the query should run. Select query to run on every 5 min.
-7. Accept the default values for all other settings and then select **Next: Incident setting (preview)**.
+7. Accept the default values for all other settings and then select **Next: Incident setting (Preview)**.
 8. On the **Incident setting (preview)** tab, ensure that **Enabled** is selected for creation of incidents from alerts triggered by this analytics rule. And then select **Next: Automated response**.
 9. On the **Automated response** tab, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contain a Logic App Azure Sentinel connector are displayed.
 10. Select **Next:Review**.
