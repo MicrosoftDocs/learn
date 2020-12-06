@@ -47,6 +47,9 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     |simple-vm|Virtual machine|Virtual machine used in the demonstration.|
     |vnet1|Virtual network|Virtual network for the VM.|
 
+> [!Note]
+> The resources deployed and configuration steps completed in this exercise are required in the next exercise. If you intended completing the next exercise do not delete the resources from this exercise.
+
 ## Task 3: Configure Azure Sentinel Connectors
 
 1. In the Azure portal, search for **Azure Sentinel**, and then select the previously created Azure Sentinel workspace.
