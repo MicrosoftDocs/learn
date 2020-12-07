@@ -2,7 +2,7 @@ The Azure Databases extension enables you to create and manage Azure databases, 
 
 In the sample scenario, you want to work within Visual Studio Code Application, both as a development environment for building applications and as a tool for managing your Azure databases.
 
-In this exercise, you'll install the Azure Databases extension extension for Visual Studio Code. Then you'll use the extension to connect to your Azure account and create an Azure account. You'll add a database and container for holding students' course grade information to the Azure Databases extension account. Finally, you'll create some test documents in the container, then view and update them.
+In this exercise, you'll install the Azure Databases extension for Visual Studio Code. Then you'll use the extension to connect to your Azure account and create an Azure account. You'll add a database and container for holding students' course grade information to the Azure Databases extension account. Finally, you'll create some test documents in the container, then view and update them.
 
 This exercise runs on your desktop computer and uses an Azure sandbox for your resources.
 
