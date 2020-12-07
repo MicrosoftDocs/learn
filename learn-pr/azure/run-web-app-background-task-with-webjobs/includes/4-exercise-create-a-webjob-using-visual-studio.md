@@ -10,7 +10,7 @@ Here, you will create a web app from a template and then add a WebJob project to
 
 The WebJob that you will create in this unit will write messages to a queue in an Azure Storage account. We'll start by creating that account, as well as a resource group to put it in.
 
-Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) and use the Cloud Shell to run the following commands. In the `az group create` command, replace `<location>` with an Azure region name of your choosing. You can list all available regions with `az account list-locations --query [].name`.
+Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true). Use the Cloud Shell (top-right **>_** inside a box) to run the following commands. In the `az group create` command, replace `<location>` with an Azure region name of your choosing. You can list all available regions with `az account list-locations --query [].name`.
 
 When the last command completes, make a note of the storage account name it created. This will also store the connection string for the storage account in a shell variable, which we'll use shortly.
 
