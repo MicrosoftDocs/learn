@@ -2,19 +2,19 @@ After you identify an area where you can contribute, the next step is to prepare
 
 When it comes to contributing work to an open-source project, communication is a key success factor. You might find it uncomfortable to communicate with others on your proposed changes or improvements. Often, this dialogue will lead to discussions and compromises on your original vision.
 
-Avoiding active communication with others who are involved in an open-source project means risking your time working on tasks that someone else is already working on, or working on features or improvements that don't align with the project's values or best practices. When this situation happens, everyone's time is wasted. Conversely, committing to active communication ensures that your work will be well received and impactful.
+Avoiding active communication with others who are involved in an open-source project means risking your time working on tasks that someone else is already working on. Or, you might work on features or improvements that don't align with the project's values or best practices. In either case, everyone's time is wasted. Conversely, committing to active communication ensures that your work will be well received and impactful.
 
-How can you ensure success when you communicate with other project members about new features and changes? First, try to keep an open mind. Be open to feedback, and practice patience. Open-source project maintainers most likely have a day job and a private life to tend to. If you don't get an answer immediately, wait a little (longer) before you ping the maintainers.
+How can you ensure success when you communicate with other project members about new features and changes? First, try to keep an open mind. Be open to feedback, and practice patience. Open-source project maintainers most likely have a day job and a private life to tend to. If you don't get an answer immediately, wait a little longer before you ping the maintainers.
 
 ## Communicate your intent to maintainers
 
 You should always start by communicating your intent to contribute before you do any actual work. Unless indicated otherwise in the README, the issue tracker is usually the best place for doing that.
 
-- If you want to work on an existing issue, check that nobody is assigned to it by looking at the **Assignees**. Also check that there are no **Linked pull requests** that would mean somebody is already working on it. Look through the comments to see if someone stated their interest to work on the issue. If everything's clear, post a comment on the issue to indicate your interest to work on it. That way you're telling people who might come later that someone's working on the issue, and, if needed, maintainers can reply to you with guidance and advice.
+- If you want to work on an existing issue, check that nobody is assigned to it by looking at the **Assignees** section. Also check the **Linked pull requests** section. A linked pull request means somebody is already working on it. Look through the comments to see if someone stated their interest to work on the issue. If everything's clear, post a comment on the issue to indicate your interest to work on it. That way you're telling people who might come later that someone's working on the issue. Also, if needed, maintainers can reply to you with guidance and advice.
 
-    :::image type="content" source="../media/3-checks.png" alt-text="Screenshot showing the assignees and linked pull request sections.":::
+    :::image type="content" source="../media/3-checks.png" alt-text="Screenshot showing the Assignees and Linked pull requests sections.":::
 
-- If you want to work on a new feature or a bug that's not already present in the issue tracker, you should create a new issue. Make sure to follow the issue template if one is proposed, and clearly express your intent to work on the issue. If it's a new feature proposition or if the issue requires many changes, make sure to get the maintainers' approval before you move on to the next step.
+- If you want to work on a new feature or a bug that's not already present in the issue tracker, create a new issue. Make sure to follow the issue template if one is proposed, and clearly express your intent to work on the issue. If it's a new feature proposition or if the issue requires many changes, make sure to get the maintainers' approval before you move on to the next step.
 
 ## Create a pull request on a GitHub repository
 
@@ -28,16 +28,16 @@ Your contribution will take the form of a *pull request* or *PR*. A pull request
 - Code reviews where you can find detailed feedback on your changes and eventually commit suggestions.
 - Status checks that come, for example, from automated tests that the maintainers might have put in place. Status checks can serve different purposes. For example, they can ensure that your changes follow the project's rules or that your changes don't break the code.
 
-After a pull request is created, it can be updated with new commits, comments, or code reviews until the project maintainers make the final decision to approve and merge the pull request or reject the changes and close the pull request. When your pull request is merged, it means that your changes have been integrated into the project's codebase.
+After a pull request is created, it can be updated with new commits, comments, or code reviews. This process continues until the project maintainers approve and merge the pull request or reject the changes and close the pull request. When your pull request is merged, it means that your changes have been integrated into the project's codebase.
 
 ### Create a pull request step by step
 
 1. Open the GitHub page of the project you want to contribute to.
-1. Select the **Fork** button to create a copy of the repository on your GitHub account. This step is necessary because by default you don't have the permissions to make any changes on a public repository unless it's your own (copy). By forking the project, you're creating a copy where you can make changes.
+1. Select the **Fork** button to create a copy of the repository on your GitHub account. This step is necessary because by default you don't have the permissions to make any changes on a public repository unless it's your own copy. By forking the project, you're creating a copy where you can make changes.
 
     :::image type="content" source="../media/3-fork.png" alt-text="Screenshot showing the Fork button of a GitHub project.":::
 
-1. Select the **Code** button to get information on how to "clone" the git repository to your local machine.
+1. Select the **Code** button to get information on how to "clone" the Git repository to your local machine.
 
     :::image type="content" source="../media/3-clone.png" alt-text="Screenshot showing the options for cloning a GitHub project.":::
 
@@ -80,10 +80,10 @@ After a pull request is created, it can be updated with new commits, comments, o
     git push --set-upstream origin <BRANCH_NAME>
     ```
 
-    This command creates a new branch on the upstream repository on GitHub (your fork), and pushed all your commits to it.
+    This command creates a new branch on the upstream repository on GitHub (your fork), and pushes all your commits to it.
 
     > [!NOTE]
-    > When we talk about an *upstream* repository, we refer to the remote repository linked to your local repository. The `origin` is the default alias for the repository URL, which was created by git in step 1.
+    > When we talk about an *upstream* repository, we refer to the remote repository linked to your local repository. The `origin` is the default alias for the repository URL, which was created by Git in step 2.
 
     If you didn't create a branch previously, enter only `git push`.
 
@@ -113,7 +113,7 @@ If you're unsure about what to do with a failing check, you can always use the c
 
 ## Ask for guidance or reviews on pull requests
 
-If you're unsure about some changes you made and want to get the maintainers' opinion, the best way to do that is to comment directly on the pull requests. If you consider your changes a work-in-progress, you also have the option to create a *draft pull request* instead to ask for guidance or help from other contributors.
+You might be unsure about some changes you made and want to get the maintainers' opinions. The best way to do that is to comment directly on the pull requests. If you consider your changes a work-in-progress, you also have the option to create a *draft pull request* instead to ask for guidance or help from other contributors.
 
 :::image type="content" source="../media/3-draft-pr.png" alt-text="Screenshot showing the draft pull request option.":::
 
@@ -125,6 +125,6 @@ After the project maintainers come by your pull request, they can reply to the c
 
 ### Respond to comments on your pull request
 
-Remember to always be respectful in all your exchanges and to follow the CODE_OF_CONDUCT. It's likely that before your changes can be accepted there will be an ongoing discussion with the maintainers or other contributors.
+Remember to always be respectful in all your exchanges and to follow the CODE_OF_CONDUCT. It's likely that before your changes can be accepted, there will be an ongoing discussion with the maintainers or other contributors.
 
 Contributing to open source requires patience. Sometimes you don't get immediate feedback. Don't reach out to the maintainers privately via email, Twitter, or any other means hoping to get a faster answer. This behavior is considered harmful. Discussing things publicly also gives other contributors or passersby the opportunity to learn about the process behind the changes and the best practices to follow.
